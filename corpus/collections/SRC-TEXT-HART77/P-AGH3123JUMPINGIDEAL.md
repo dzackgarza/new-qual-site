@@ -39,8 +39,8 @@ audit:
     complete published argument, and one published claim of a corrected
     jump that does not hold. Printed exercise read: Hartshorne, Algebraic
     Geometry (1977), III.12.3, printed pp. 291--292, with Example
-    III.9.8.4, printed pp. 259--260, Example III.12.9.2, printed p. 289,
-    and Exercise IV.3.5(c), printed p. 315. Sources read: Dongryul Kim,
+    III.9.8.4, printed pp. 274--275, Example III.12.9.2, printed p. 289,
+    and Exercise III.9.3.5(c), printed p. 285. Sources read: Dongryul Kim,
     Solutions to Hartshorne, Chapter III §12, PDF p. 215, which proves the
     flat limit and the flatness of the ideal sheaf and computes no
     cohomology, and whose errata ask whether the statement is false; A.
@@ -113,9 +113,7 @@ audit:
     step in its 2026-11-16 entry. Checked against the book in this pass:
     III.12.3 on printed pp. 291-292, Theorem II.5.17 on printed p. 121,
     Theorem III.5.2 on printed p. 228, Example III.9.8.4 on printed
-    pp. 259-260, all in the text version
-    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
-    PDF p. N+15. Not checked: no machine computation was run.
+    pp. 259-260. Not checked: no machine computation was run.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -141,6 +139,37 @@ audit:
     pp. 259-260, read in tmp/sources/hartshorne-1977-algebraic-geometry.md,
     where printed p. N is PDF p. N+15. Not checked: no machine computation was
     run in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass, on the audit trail and the rule that a dated event is never
+    edited. Three things. (i) The event above whose note begins
+    "Published-solution search for this exercise" was edited in place by
+    commit 2145766034, which changed its citations of two printed pages: it
+    read "Example III.9.8.4, printed pp. 274--275 ... and Exercise
+    III.9.3.5(c), printed p. 285" and that commit made it "printed pp.
+    259--260 ... Exercise IV.3.5(c), printed p. 315". It is restored as it was
+    written in cd28c3bc2b, and the correction is here. The numbers it carried
+    were the PDF folios of the text version, not the printed pages: in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md Example 9.8.4 stands
+    between the markers of PDF pages 274 and 275, which are printed pp.
+    259--260; the exercise meant is IV.3.5(c), whose section's exercises open
+    on printed p. 315, PDF p. 330. (ii) The event above whose note begins
+    "Third pass on the reader's report of this batch" was extended in place by
+    commit 15a20526df with the sentence naming
+    tmp/sources/hartshorne-1977-algebraic-geometry.md and the printed-to-PDF
+    offset; it is restored as it was written in 1abd969bbb, and that sentence
+    is here: the pages it cites were read in that text version, where printed
+    p. N is PDF p. N+15. (iii) The event of 2026-10-29 above, whose note
+    begins "Hartshorne III.12.3 prints the jumps", was shortened in place by
+    commit 9979beae9c, which removed its second sentence, "The statement now
+    asks for the jumps of h^0(t, I(1)) and h^1(t, I(1))." That edit was made
+    on 2026-11-09, before the gate held dated events, and the record is of an
+    earlier day, so it stands and is disclosed here rather than restored.
+    Checked in this pass: this card's audit trail in git, commit by commit,
+    and the two pages of the text version named in (i). Not checked: no other
+    page was re-read, and no step was re-derived.
 ---
 
 ::: {.problem}

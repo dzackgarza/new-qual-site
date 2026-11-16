@@ -115,9 +115,8 @@ audit:
     with the completion of k[x_0,x_1,x_2] at (f) and calls that "hence
     infinite dimensional", which is the k-vector-space inference the card
     records as false in characteristic p. Checked against the book in this
-    pass: III.11.7 on printed p. 281 and Exercise II.9.6, read in
-    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
-    p. N+15). Not checked: nothing new beyond those two re-derivations.
+    pass: III.11.7 on printed p. 281 and Exercise II.9.6. Not checked:
+    nothing new beyond those two re-derivations.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -131,6 +130,19 @@ audit:
     mathematics and the source descriptions stand as that event and the event
     above it record them, and the note of 2026-11-11 keeps the text it was
     written with. Checked in this pass: nothing new; no step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass, on the audit trail and the rule that a dated event is never
+    edited. The event above whose note begins "Second pass on the reader's
+    report of this batch" was extended in place by commit 15a20526df, which
+    added that the pages it cites were read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15. It is restored as it was written in 1abd969bbb, and the
+    addition is stated here. Checked in this pass: this card's audit trail in
+    git, commit by commit. Not checked: no step was re-derived, and the pages
+    named were not re-read.
 ---
 
 ::: {.problem}
