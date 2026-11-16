@@ -220,6 +220,44 @@ audit:
     $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on printed p. 12, and the trace computation remains the
     card's own.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report on this round: four repairs, and the rendered text now carries citations
+    only. (1) The construction step said "This is Dugger's construction", which is wrong: Dugger
+    §2.7, printed pp. 11--12, constructs only the antipodal map $x\mapsto -x$ of a standardly
+    embedded $T_g\subset\RR^3$, and Proposition 2.8, printed p. 12, states the equivariant
+    isomorphism $T^{\mathrm{anti}}_{2g}\cong S^2_a\#_2T_g$ with the printed proof "Left to the
+    reader". The card's model — antipodal pairs of punctured tori in the charts $h_i$ and
+    $\restrictionof{\alpha\circ h_i}{\partial T}$, the Euler characteristic count, the band
+    comparison — is not in Dugger, and the step now says the model is the card's own while §2.7 and
+    Proposition 2.8 are what name the involution and identify the model with it. The notation is
+    Dugger's, $\#_2$, not the $\#_{\mathrm{eq}}$ the card had used. (2) The freeness step said
+    Theorem 4.1(a) is "proved at the end of §4 by the quotient computation $T_g/C_2=N_{g+1}$ on
+    printed p. 12". Dugger's proof does not use the p. 12 computation: it puts $Q=T_g/C_2$, reads
+    $\chi(Q)=\tfrac12\chi(T_g)=1-g$, concludes that $Q$ is nonorientable for $g$ even and so
+    $Q\cong N_{g+1}$, and then cites his own list for $N_{g+1}$. The card now gives that proof, at
+    the pages it is printed on. (3) The Lefschetz computation keeps the text it had before this
+    round, so it stays word for word; the three steps of it now open with the one-sentence marker
+    that the argument is the card's own, and the talk about what Dugger does not compute, about
+    published solutions and about `COMPLAINTS.md` is out of the rendered text. (4) The remark said
+    Example 2C.4, printed p. 181, computes $\tau(f)=1-0-1$; that is false and is corrected. Hatcher
+    writes that $f_*$ on $H_0$ contributes $1$, that $f_*$ on $H_1$ "contributes $-2$" — it
+    interchanges $\alpha_1$ with $\alpha_3$ and $\beta_1$ with $\beta_3$ and fixes $\beta_2$ and
+    the class of $\alpha_2$ — and that $f_*$ on $H_2$ "is the identity", which he checks by the
+    commutative diagram through $H_2(X,X-\{x\})$. So $\tau(f)=1-2+1=0$ there, and it is the
+    even-genus analog on this card that computes $1-0-1$. Where and how the sources were read:
+    Dugger in `tmp/sources/dugger-involutions-surfaces-2016.md`, whose printed page 11 opens §2.7
+    ("2.7. Constructions of free actions") and whose page 12 carries the two quotient isomorphisms,
+    Proposition 2.8 and its "Left to the reader"; the printed folios confirmed against pages 11, 12,
+    18 and 31 of `tmp/sources/dugger-involutions-surfaces-2016.pdf`, which carry them; Hatcher in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, with Example 2C.4 read at PDF pages 190--191
+    of `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed 181--182) and the exercise at PDF
+    page 193 (printed 184). No source read on this machine works Exercise 2.C.6 or computes the
+    Lefschetz number of this involution, so the trace computation remains without a published
+    proof; `COMPLAINTS.md` records that on this date.
+
 ---
 
 ::: {.problem}
@@ -227,7 +265,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12**, read in `tmp/sources/dugger-involutions-surfaces-2016.md` (the PDF is `tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere carrying $m$ antipodal pairs of genus handles, each genus handle a punctured torus glued to one hole of a pair: a pair of them adds two punctured tori to the sphere, so $m$ pairs give genus $2m$, since $\chi(M_{2m})=(2-2m)-2m=2-4m$. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
+Use the centered antipodal action of the standardly embedded torus: Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12, with Proposition 2.8 on printed p. 12, where $T^{\mathrm{anti}}_{2g}\cong S^2_a\#_2T_g$ is an antipodal sphere with paired handles, and Theorem 4.1(a) on printed p. 18, which identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T^{\mathrm{anti}}_{2m}$, and regard it as a central sphere carrying $m$ antipodal pairs of genus handles, each handle a punctured torus glued to one hole of a pair: a pair of them adds two punctured tori to the sphere, so $m$ pairs give genus $2m$, since $\chi(M_{2m})=(2-2m)-2m=2-4m$. The quotient $T^{\mathrm{anti}}_g/C_2\cong N_{g+1}$ of the same printed page shows that the involution is orientation reversing.
 
 ::: pf
 
@@ -237,9 +275,9 @@ Define a homeomorphism $f:M_{2m}\to M_{2m}$ by the antipodal map on the central 
 
 ::: pf-proof
 
-This is Dugger's construction, and the model is his Proposition 2.8: *Involutions on Surfaces*, §2.7, printed pp. 11--12, for the antipodal involution $x\mapsto -x$ of the standardly embedded torus, and Proposition 2.8 on printed p. 12 for the equivariant splitting $T^{\mathrm{anti}}_{2g}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, whose printed proof reads "Left to the reader". Read in `tmp/sources/dugger-involutions-surfaces-2016.md`, whose printed page 12 is PDF page 12 of `tmp/sources/dugger-involutions-surfaces-2016.pdf`.
+The antipodal involution $x\mapsto -x$ of a standardly embedded $T_g\subset\RR^3$ is Dugger's, *Involutions on Surfaces*, §2.7, printed pp. 11--12, and his Proposition 2.8 on printed p. 12 states the equivariant isomorphism $T^{\mathrm{anti}}_{2g}\cong S^2_a\#_2T_g$ with the printed proof "Left to the reader". The model below, in charts, is the card's own, and Proposition 2.8 is what identifies it with that involution.
 
-Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by an embedding $h_{i'}:T\to M_{2m}$ whose attaching chart on $\partial T$ is $\restrictionof{\alpha\circ h_i}{\partial T}$, a chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Only this boundary chart is defined by $\alpha$; the interior of the partner copy carries its own embedding, since $h_i(T)$ lies largely outside the sphere on which $\alpha$ is defined. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands. A band $D^1\times D^1$ attached along $S^0\times D^1$ lowers $\chi$ by $1$ --- the band has $\chi=1$ and the attaching region $S^0\times D^1$ has $\chi=2$ --- and whether it raises the genus depends on the attaching data: a band whose two attaching intervals lie on distinct boundary circles merges them and raises the genus by one, while one attached with both intervals on the same boundary circle splits that circle and leaves the genus unchanged. A count of $2m$ bands therefore does not determine the genus by itself, and the construction here is specified by its pieces. This is Dugger's $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
+Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by an embedding $h_{i'}:T\to M_{2m}$ whose attaching chart on $\partial T$ is $\restrictionof{\alpha\circ h_i}{\partial T}$, a chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Only this boundary chart is defined by $\alpha$; the interior of the partner copy carries its own embedding, since $h_i(T)$ lies largely outside the sphere on which $\alpha$ is defined. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands. A band $D^1\times D^1$ attached along $S^0\times D^1$ lowers $\chi$ by $1$ --- the band has $\chi=1$ and the attaching region $S^0\times D^1$ has $\chi=2$ --- and whether it raises the genus depends on the attaching data: a band whose two attaching intervals lie on distinct boundary circles merges them and raises the genus by one, while one attached with both intervals on the same boundary circle splits that circle and leaves the genus unchanged. A count of $2m$ bands therefore does not determine the genus by itself, and the construction here is specified by its pieces. By Proposition 2.8 this surface is $T^{\mathrm{anti}}_{2m}=S^2_a\#_2T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
 
 Define $f$ by $f=\alpha$ on $A$ and, on the copies of $T$, by
 $$
@@ -257,7 +295,7 @@ The map $f$ has no fixed points.
 
 ::: pf-proof
 
-That the antipodal involution of the even-genus torus is free is Dugger, *Involutions on Surfaces*, Theorem 4.1(a), printed p. 18: "When $g$ is even there is a unique free $C_2$-structure on $T_g$; it is represented by the antipodal action", proved at the end of §4 by the quotient computation $T_g/C_2=N_{g+1}$ on printed p. 12. That is the statement that the homeomorphism of this step has no fixed point at all; the verification from the model is the same count: the antipodal map has no fixed point on the central sphere, and every point in an attached handle is carried into the distinct partner handle, so no point of the whole surface is fixed.
+That the antipodal involution of the even-genus torus is free is Dugger, *Involutions on Surfaces*, Theorem 4.1(a), printed p. 18: "When $g$ is even there is a unique free $C_2$-structure on $T_g$; it is represented by the antipodal action". His proof, at the end of §4, takes a free action and puts $Q=T_g/C_2$, so that $Q$ is a closed surface with $\chi(Q)=\tfrac12\chi(T_g)=1-g$; for $g$ even $Q$ must then be nonorientable, hence $Q\cong N_{g+1}$, and the only element of his list for $N_{g+1}$ whose underlying space is $T_g$ is the antipodal one. The verification from the model is the same count: the antipodal map has no fixed point on the central sphere, and every point in an attached handle is carried into the distinct partner handle, so no point of the whole surface is fixed.
 
 :::
 
@@ -269,7 +307,7 @@ On $H_1(M_{2m};\ZZ)$, the map $f_*$ has trace zero.
 
 ::: pf-proof
 
-This step is the card's own: Dugger computes no Lefschetz number and no induced map on $H_1$, so nothing here is transcribed. By Mayer--Vietoris for $M_{2m}=A\cup B$, where $B$ is the disjoint union of the $2m$ punctured tori, the boundary circle of a punctured torus is a commutator in that torus and hence zero in $H_1(T;\ZZ)$, while the $2m$ boundary circles generate $H_1(A;\ZZ)$ with the single relation that their sum is zero; hence
+The argument of this step is the card's own. By Mayer--Vietoris for $M_{2m}=A\cup B$, where $B$ is the disjoint union of the $2m$ punctured tori, the boundary circle of a punctured torus is a commutator in that torus and hence zero in $H_1(T;\ZZ)$, while the $2m$ boundary circles generate $H_1(A;\ZZ)$ with the single relation that their sum is zero; hence
 $$
 H_1(M_{2m};\ZZ)\cong H_1(A;\ZZ)\big/\langle\partial H_j\rangle\ \oplus\ \bigoplus_i H_1(T_i;\ZZ)\cong\bigoplus_{i=1}^{2m}H_1(T_i;\ZZ),
 $$
@@ -285,7 +323,7 @@ On $H_2(M_{2m};\ZZ)\cong\ZZ$, the map $f_*$ is multiplication by $-1$.
 
 ::: pf-proof
 
-The local-degree argument is the card's own; what Dugger publishes about the orientation is the quotient $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ of §2.7, printed p. 12, nonorientable for $g=2m$, which is the independent confirmation at the end of this step. Let $p$ be a point of the central sphere outside the attaching regions, so that a neighbourhood of $p$ in the sphere is a neighbourhood of $p$ in $M_{2m}$ and $f$ is the antipodal map there. The antipodal map of $S^2$ is a homeomorphism of degree $-1$, so its local degree at $p$ is $-1$, and hence the local degree of $f$ at $p$ is $-1$ as well. For a homeomorphism of the connected closed orientable surface $M_{2m}$, the induced map on $H_2$ is multiplication by its degree, and its degree is the local degree at any single point, because $f^{-1}(f(p))=\{p\}$. Hence $f_*$ is multiplication by $-1$ on $H_2(M_{2m};\ZZ)$. Equivalently, Dugger's quotient $T_{2m}^{\mathrm{anti}}/C_2\cong N_{2m+1}$ is nonorientable, so the involution is orientation reversing in the published construction as well.
+The argument of this step is the card's own. Let $p$ be a point of the central sphere outside the attaching regions, so that a neighbourhood of $p$ in the sphere is a neighbourhood of $p$ in $M_{2m}$ and $f$ is the antipodal map there. The antipodal map of $S^2$ is a homeomorphism of degree $-1$, so its local degree at $p$ is $-1$, and hence the local degree of $f$ at $p$ is $-1$ as well. For a homeomorphism of the connected closed orientable surface $M_{2m}$, the induced map on $H_2$ is multiplication by its degree, and its degree is the local degree at any single point, because $f^{-1}(f(p))=\{p\}$. Hence $f_*$ is multiplication by $-1$ on $H_2(M_{2m};\ZZ)$. Equivalently, the quotient $T^{\mathrm{anti}}_{2m}/C_2\cong N_{2m+1}$ is nonorientable, so $f$ is orientation reversing.
 
 :::
 
@@ -301,7 +339,7 @@ as required by the Lefschetz theorem for a fixed-point-free map.
 
 ::: pf-proof
 
-The addition is the card's own, on the traces of steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. The trace on $H_0$ is $1$ because the surface is connected, step [](#s3){.pf-ref} gives the $H_1$ trace, and step [](#s4){.pf-ref} gives the $H_2$ trace.
+The argument of this step is the card's own. The trace on $H_0$ is $1$ because the surface is connected, step [](#s3){.pf-ref} gives the $H_1$ trace, and step [](#s4){.pf-ref} gives the $H_2$ trace.
 
 :::
 
@@ -313,5 +351,5 @@ This gives the even-genus counterpart of Example 2C.4. Additional symmetric pair
 :::
 
 ::: {.remark title="Sources"}
-Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the exercise is Exercise 6 of §2.C, printed p. 184, and Example 2C.4, the genus-$3$ case it modifies, is printed p. 181 with the trace computation $\tau(f)=1-0-1$. Dugger, *Involutions on surfaces*, was read in the text version `tmp/sources/dugger-involutions-surfaces-2016.md` (the PDF is `tmp/sources/dugger-involutions-surfaces-2016.pdf`): Proposition 2.8 and the quotient $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on printed p. 12, and Theorem 4.1(a) on printed p. 18. Proposition 2.8's printed proof is "Left to the reader". Dugger works no Lefschetz number and does not treat the exercise: the identification of the involution and of its freeness is his, and the trace computation on $H_1$ and $H_2$ and the addition of the three traces are the card's own, as each step says. No published solution of Exercise 2.C.6 was located, and `COMPLAINTS.md` records that on this date.
+Hatcher, *Algebraic Topology* (2002): the exercise is Exercise 6 of §2.C, printed p. 184. Example 2C.4, the genus-$3$ case it modifies, is printed p. 181, where $f_*$ on $H_0$ contributes $1$, on $H_1$ contributes $-2$ and on $H_2$ is the identity, so $\tau(f)=1-2+1=0$. Dugger, *Involutions on Surfaces*: §2.7 on printed pp. 11--12, Proposition 2.8 on printed p. 12, and Theorem 4.1(a) on printed p. 18.
 :::
