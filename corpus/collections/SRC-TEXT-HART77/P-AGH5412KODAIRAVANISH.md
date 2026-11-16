@@ -48,15 +48,19 @@ audit:
     "PDF pages 101-119") and against the folios of the PDF, asserts in its
     second sentence that an ample divisor D on the cubic surface has
     H^0(X, L(D)) = k on the ground that it is very ample; that is false, since
-    a very ample D embeds X in P^3 and h^0 >= 4. That false k is the source of
+    a very ample D embeds X in P^(h^0-1), so h^0 >= 3 (h^0 = 3 would put the
+    surface in P^2). That false k is the source of
     the k -> k in the sequence he then writes, whose true cokernel is O_C. The
     remark now records it. (ii) Egbert's V.4.12, printed p. 292 in the PDF and
     in the MinerU text version tmp/sources/hartshorne-solutions-egbert.md
-    (entry 5.4.13, line 12488), is wholly on that one page; his closing step
-    "by V.4.11, this effective divisor should meet at least one line with
-    negative intersection" is sound, the criterion meant being Theorem 4.11 of
-    the text, whose (iii) with the equivalence makes an ample D very ample and
-    so positive on every curve. COMPLAINTS.md had recorded that step as a
+    (entry 5.4.13, line 12488), is wholly on that one page; his closing step,
+    that an effective divisor linearly equivalent to -D must meet some line
+    negatively, is no contradiction as it stands, a line in the support of an
+    effective divisor meeting it negatively, and the completion is the card's:
+    D very ample gives D.C > 0 on every irreducible curve, hence D.E > 0 on
+    every nonzero effective E, while E ~ -D gives D.E = -D^2 < 0. The number
+    his sentence cites is Theorem 4.11 of the text, whose (iii) with the
+    equivalence makes an ample D very ample. COMPLAINTS.md had recorded that step as a
     misuse of (4.11) and the entry as printed pp. 292-293; both are corrected
     there. The card's own proof is unchanged.
 ---
@@ -285,20 +289,26 @@ $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$ term by term, and closes by contradiction: "
 divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line
 with negative intersection which is silly."
 
-That closing step is sound, and the number it cites needs care because two results share it. The exercise
+His closing step needs a completion, and the completion is the card's. A negative intersection with a line is
+no contradiction: an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$, so a line contained in the support
+of an effective divisor can meet that divisor negatively. The contradiction is with very ampleness, directly.
+$D$ very ample gives $D\cdot C>0$ for every irreducible curve $C$, hence $D\cdot E>0$ for every nonzero
+effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$, which $D^2>0$ excludes. So no effective divisor is
+linearly equivalent to $-D$, and the vanishing follows from the exact sequence. The number his sentence cites
+needs care because two results share it. The exercise
 printed as 4.11 in §4 is the Weyl groups exercise, which says nothing about divisors; the criterion meant is
 **Theorem 4.11** of the text, "The following conditions are equivalent, for a divisor $D$ on the cubic surface
 $X$: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$;
 (iv) for every line $L\subseteq X$, $D\cdot L>0$." By (iii) with the equivalence, an ample $D$ is very ample,
-hence $D\cdot C>0$ for every irreducible curve $C$, so $D\cdot E=-D^2<0$ rules out a nonzero effective
-$E\sim-D$. What his entry does not supply is the existence of a nonsingular member $C\in\abs{D}$, which step
+which is the step used above. What his entry does not supply is the existence of a nonsingular member $C\in\abs{D}$, which step
 [](#nonsingular-curve-in-class){.pf-ref} takes from (4.11) and V.4.8.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.4.12, printed p. 111, is defective at its second sentence:
 "Clearly we have $H^0(X,\OO_X)=k$, $H^1(X,\OO_X)=0$. Then for any ample divisor $D$, it is very ample by
-theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor on the cubic
-surface embeds $X$ in $\PP^3$, so $h^0(\mathcal L(D))\ge4$: the image spans $\PP^{h^0-1}$ and has dimension
-$2$, so $h^0\ge3$, and $h^0=3$ would make the image all of $\PP^2$, that is $X\cong\PP^2$. That false $k$ is
+theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor $D$ on the
+cubic surface embeds $X$ in $\PP^{h^0(\mathcal L(D))-1}$, so $h^0(\mathcal L(D))\ge3$: the image spans that
+projective space and has dimension $2$, and $h^0=3$ would make the image all of $\PP^2$, that is
+$X\cong\PP^2$. That false $k$ is
 the source of his "$k\to k$". His next display is a sequence of $\OO_X$-modules,
 $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, "i.e."
 $0\to H^0(X,\mathcal L(-D))\to k\to k\to H^1(X,\mathcal L(-D))\to0$, in which the second $k$ is his

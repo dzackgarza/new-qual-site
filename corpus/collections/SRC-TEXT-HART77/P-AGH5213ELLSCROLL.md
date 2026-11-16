@@ -61,7 +61,7 @@ audit:
     h^0(C_0+(A+B)f) = h^0(C_0+Bf) + 2 = 4 and h^0(C_0+(A+B-P-Q)f) = 0. The true
     values are 3, 5 and 1. With e = -1 the surface is P(E) for the unique
     nontrivial extension 0 -> O_C -> E -> L(P) -> 0 of (2.11.6), so
-    deg E = -deg fraktur-e = 1 by Theorem 2.15; pi_*O(C_0+bf) = E tensor O(b) is
+    deg E = deg fraktur-e = -e = 1 by Notation 2.8.1; pi_*O(C_0+bf) = E tensor O(b) is
     indecomposable of degree 1 + 2 deg b, and Riemann-Roch with h^1 = 0 above
     degree 2g-1 gives h^0 = 2 deg b + 1, i.e. 3, 5, 1 at deg b = 1, 2, 0. His own
     5.2.13 count 2n-e gives the same 3 at n = 1, so his two entries disagree.
@@ -70,7 +70,10 @@ audit:
     conclusions survive while the absolute values do not. The cause is his p. 104
     display, which keeps only the h^0(b+fraktur-e) summand of the decomposable
     splitting of 5.2.11 and then subtracts an unrelated h^1; the two-term split
-    value coincides with the truth for deg b >= 1 and differs at deg b = 0, so the
+    value coincides with the truth for deg b >= 1 and for every nontrivial b of
+    degree 0, the terms being h^0(b) = 0 and h^0(b+fraktur-e) = 1 there, and it
+    differs only at b ~ 0, where it gives 2 against the true 1 -- the one class
+    at which the split formula and the indecomposable bundle part company, so the
     splitting's validity at e = -1 is not what the numbers turn on. The card's own
     steps use none of his numbers and are unchanged.
 ---
@@ -358,7 +361,7 @@ The very-ampleness step it imports is its own 5.2.12(b), and the two absolute va
 same amount, so the step survives while its arithmetic does not. On printed p. 104 it writes
 $h^0(\mathcal L_X(C_0+Bf))=h^0(\mathcal L_C(\mathfrak e+B))=2$ at $e=-1$, $B$ of degree $1$; the true value is
 $3$, because the surface is $\mathbf P(\mathcal E)$ for the unique nontrivial extension
-$0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), hence $\deg\mathcal E=-e=1$ (Theorem 2.15),
+$0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), hence $\deg\mathcal E=\deg\mathfrak e=-e=1$ (Notation 2.8.1),
 $\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $3$, and Riemann--Roch with
 $h^1=0$ at degree $\ge1$ gives $h^0=3$ --- the value its own 5.2.13 formula $2n-e$ gives at $n=1$. On p. 105 it
 then writes $h^0(C_0+(A+B)f)=h^0(C_0+Bf)+2=4$, true $5$, and $h^0(C_0+(A+B-P-Q)f)=0$, true $1$. Both tests it
@@ -369,8 +372,10 @@ decomposable case $\mathcal E\cong\OO\oplus\mathcal L$ with $e\ge0$ (Theorem 2.1
 case $e=-1$, where $\mathcal E$ is indecomposable, yet there the two-term value is right for
 $\deg\mathfrak b\ge1$ (both equal $2\deg\mathfrak b-e$). His p. 104 display keeps only the
 $h^0(\mathfrak b+\mathfrak e)$ summand and then subtracts $h^1(\mathcal L_X(Bf-Pf))$ to reach the $0$; at
-$\deg\mathfrak b=0$ the two-term value is $2$ against the true $1$. None of these numbers is used by the steps
-above.
+$\deg\mathfrak b=0$ the two-term value is $2$ only for $\mathfrak b\sim0$, against the true $1$, and for a
+nontrivial $\mathfrak b$ of degree $0$, $A+B-P-Q$ say, it is $1$, which is the true value. So the class
+$\mathfrak b\sim0$ is the one at which the split formula and the indecomposable bundle part company. None of
+these numbers is used by the steps above.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
 $$

@@ -44,10 +44,14 @@ audit:
     A complete published solution located, on a third pass over issue #121, and
     the card's obligation under it discharged. Algebraic Geometry II, National
     Taiwan University, 2020 Spring (course of Chin-Lung Wang), Chapter V
-    Surfaces homework, Exercise 14 of section 4 (by Ping-Hsun Chuang), PDF p. 18
-    of tmp/sources/ntu-ag2-chapter5.pdf, cites Corollary 4.13 for the
-    very-ampleness criterion and its nonsingular-member half and exhibits one
-    class for each of the nine printed pairs. Each row was recomputed here:
+    Surfaces homework, Exercise 14 of section 4 (by Ping-Hsun Chuang), printed
+    p. 18 of tmp/sources/ntu-ag2-chapter5.pdf, whose printed folio is the PDF
+    page number, read also in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md. It states only the very-ampleness
+    criterion of Corollary 4.13 and then writes "we only need to find such a
+    and b_i", so its use of 4.13(b), the irreducible nonsingular member, is
+    implicit; it exhibits one class for each of the nine printed pairs. Each
+    row was recomputed here:
     (8,6) a=8 b=(4,3,3,2,2,2); (8,7) a=8 b=(3,3,3,3,2,2); (9,7) a=9
     b=(4,4,4,2,2,2); (9,8) a=9 b=(4,4,3,3,2,2); (9,9) a=9 b=(4,3,3,3,3,2);
     (10,8) a=10 b=(6,3,3,3,3,2); (10,9) a=12 b=(5,5,5,5,3,3); (10,10) a=11
@@ -267,16 +271,20 @@ existence criterion, and step [](#nonsingular-irreducible-member){.pf-ref} suppl
 :::
 
 ::: {.remark title="Published solutions"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294 (space curves on the
-cubic surface and the degree-genus count), works one case and defers the rest to his V.4.9.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.14, printed p. 294, read in
+`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md`, records which pairs remain after (4.7), sets up the $d=8$, $g=6$
+adjunction equation and does not solve it, deferring the other cases to his V.4.9.
 
 **The exercise is closed by a complete published solution**: Algebraic Geometry II, National Taiwan University,
 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework, Exercise 14 of §4 (by Ping-Hsun Chuang),
-PDF p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf` (the set carries no printed folio), with the argument on that
-page. It quotes Corollary 4.13 --- a class $D\sim a\ell-\sum_ib_ie_i$ is very ample if and only if $b_i>0$ for
-all $i$, $a>b_i+b_j$ for all $i,j$ and $2a>\sum_{j\ne i}b_j$ for all $j$, and a class satisfying these
-conditions contains an irreducible nonsingular curve, which is part (b) of the same corollary --- and then
-exhibits one class for each of the nine printed pairs, computing $\deg D=3a-\sum_ib_i$ and
+printed p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf`, whose printed folio is the PDF page number, read also in its
+MinerU text version `tmp/sources/ntu-ag2-chapter5.md`. It states the very-ampleness criterion of Corollary 4.13
+--- a class $D\sim a\ell-\sum_ib_ie_i$ is very ample if and only if $b_i>0$ for all $i$, $a>b_i+b_j$ for all
+$i,j$ and $2a>\sum_{j\ne i}b_j$ for all $i$ --- and then writes "we only need to find such $a$ and $b_i$": the
+half turning a class that satisfies the criterion into a linear system with an irreducible nonsingular member
+is 4.13(b), which the set uses without stating it. It exhibits one class for each of the nine printed pairs,
+computing $\deg D=3a-\sum_ib_i$ and
 $p_a(D)=\frac12(a-1)(a-2)-\frac12\sum_ib_i(b_i-1)$:
 
 | $(d,g)$ | $a$ | $(b_1,\dots,b_6)$ | $\deg D=3a-\sum b_i$ | $p_a(D)$ |
@@ -295,7 +303,9 @@ Every row was checked here against the criterion: $\deg D$ and $p_a(D)$ reproduc
 $a>b_i+b_j$ for every pair and $2a>\sum_{j\ne i}b_j$ for every $i$; so each of the nine classes is very ample
 on the cubic surface and contains a nonsingular curve of the requested degree and genus. Its two slips are
 typographical: the third condition is printed with $b_i$ where the summand runs over $j$, and Corollary 4.13 is
-called "the theorem V.4.13". Yang Pi-Yeh gives the same nine pairs at printed p. 112 as a table of classes, and
+called "the theorem V.4.13". Yang Pi-Yeh, *Hartshorne Solutions*, printed p. 112 of
+`tmp/sources/lfwin-hartshorne-solutions.pdf`, read also in its MinerU text version
+`tmp/sources/lfwin-hartshorne-solutions.md`, gives the same nine pairs as a table of classes, and
 that entry does not close the exercise, since it shows no member of any class to be nonsingular; the
 National Taiwan University argument does, through 4.13(b).
 :::

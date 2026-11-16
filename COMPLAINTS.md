@@ -700,9 +700,17 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - V.4.9, printed **p. 290**: the entry is an abandoned manipulation of the genus formula, printed with its working notes ("move $2.5\sum b_i$ here", "schwarz won't help", "let's evict $\frac12$", "hmm move 2.5 bi here"), which never states the bound $g\ge\frac12(d-6)$, $\frac12(d-5)$ nor derives it; the following "Existence" paragraph is a separate sum-of-five-squares construction that does not meet the exercise's classes.
 - V.4.10, printed **p. 291**: the whole entry is "No algebraic geometry here. If your interested, see Nagata Rational Surfaces I, and proceed by cases" — a citation and no argument.
 - V.4.11, printed **pp. 291–292**: parts (a) and (b) have no entry at all, the page carries "I don't care about group theory", and the starred part (c) is the entry `5.4.12 b.` reading "see above".
-- V.4.12, printed **p. 292** (the whole entry, in the PDF and in the MinerU text version `tmp/sources/hartshorne-solutions-egbert.md`, where it is entry `5.4.13` at line 12488): the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; on the cubic surface $K_X=-H$, so $H^2(X,\OO_X)=H^0(X,\OO_X(-H))=0$ and the conclusion survives the error. Its closing step is sound: "Suppose there is an effective divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line with negative intersection which is silly." The number $4.11$ is carried by two different things, the Weyl-groups exercise printed as 4.11 in §4 and **Theorem 4.11** of the text, whose (iii) is "$D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$"; by (iii) with the theorem's equivalence an ample $D$ is very ample, hence $D\cdot C>0$ for every irreducible curve, so $D\cdot E=-D^2<0$ excludes an effective $E\sim-D$. An earlier pass recorded the step as a misuse of (4.11); that was wrong. What Egbert does not supply is a nonsingular member of $|D|$, the C of the divisor sequence, and his own $X\approx\PP^2$.
+- V.4.12, printed **p. 292** (the whole entry, in the PDF and in the MinerU text version `tmp/sources/hartshorne-solutions-egbert.md`, where it is entry `5.4.13` at line 12488): the entry computes on $\PP^2$ ("Recall $X\approx\PP^2$ which has known cohomology", $H^2(X,\OO_X)=H^0(X,\OO_X(-3))=p_g$) although the cubic surface is $\PP^2$ with six points blown up, so the dimensions it lists are those of $\PP^2$ and the sequence is the wrong one; on the cubic surface $K_X=-H$, so $H^2(X,\OO_X)=H^0(X,\OO_X(-H))=0$ and the conclusion survives the error. Its closing step is no contradiction as it stands: nothing says why an effective divisor linearly equivalent to
+  $-D$ must meet some line negatively, or why that would be absurd, and a line in the support of an effective divisor
+  can meet it negatively, since an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$. The completion, and the
+  card's own, is with very ampleness directly: $D$ very ample gives $D\cdot C>0$ for every irreducible curve, so
+  $D\cdot E>0$ for every nonzero effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$. The number $4.11$ is
+  carried by two different things, the Weyl-groups exercise printed as 4.11 in §4 and **Theorem 4.11** of the text,
+  whose (iii) is "$D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$"; by (iii) with the theorem's
+  equivalence an ample $D$ is very ample, which is the step used. An earlier pass recorded the step as a misuse of
+  (4.11); that was wrong. What Egbert does not supply is a nonsingular member of $|D|$, the C of the divisor sequence, and his own $X\approx\PP^2$.
 - V.4.13, printed **pp. 292–294**: part (a) is complete modulo one step — the 16 classes and the Schwarz count $4a^2-6a-4\le0$ are there, but $C^2=-1$ is assumed for a degree-one curve and has to be derived by adjunction. Part (b) is closed by Egbert only at "Now use $\star$.", the star attached on p. 293 to $\OO_X(-2K_X)\cong\OO_X(2)$: p. 294 opens "Note that by Ramanujam vanishing and Serre duality, $H^1(X,\OO_X(-2K_X))=0$" and completes the count $h^0=13$ with it, "$15-13=2$" is printed nowhere, and the conclusion is never drawn, so the degree comparison that identifies $X$ with the complete intersection is missing. His Ramanujam citation is bare, the same defect this entry charges to Dolgachev. **Part (b) stays open**: Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves the projective normality (his 8.4.5, printed p. 280), the dimension count $h^0(\OO_X(2))=13$ (his 8.3.1, printed p. 272) and the diagonal form of the two quadrics, and then jumps from $15-13=2$ to "$X$ is the base locus of a pencil" without showing that the quadrics have no common component or that the degree-four complete intersection is $X$ --- the same gap as the entry above. His Lemma 8.3.1 invokes Ramanujam's vanishing theorem by name with no reference; the Lazarsfeld citation for it is in his Lemma 8.1.4's proof, printed p. 248. Part (a) is not in the book either (printed p. 293 uses "the 16 lines on $X$" without the count), while Egbert's part (a) does settle it modulo one step, the adjunction derivation of $C^2=-1$ for a line, and writes $\Pic X$ as $\ZZ^6$ with generators $l,e_1,\dots,e_6$ for a five-point blow-up. The card now says all of this.
-- V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", works one case ($d=8$, $g=6$) and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". No class is exhibited for the other eight pairs, and the cited method is the V.4.9 entry above.
+- V.4.14, printed **p. 294**: the entry lists which degree–genus pairs remain after V.4.7, then says "For these remaining rest, I use the method of exc V.4.9 (Read that exercise solution first or this will be nonsense!)", sets up the adjunction equation for $d=8$, $g=6$ and ends "Solve for this using sum of 5 squares as in exc V.4.9 and the rest follow similarly". That one case is left unsolved, and no class is exhibited for the other eight pairs; the cited method is the V.4.9 entry above.
 - V.4.15, printed **pp. 294–295**: parts (a) and (b) have no entry; part (c) is argued (`5.4.18 c.`); part (d) is the sketch `5.4.19 d.` counting $14+42=56$ and listing eight families for $r=8$ without proving that no other negative curves exist; the starred part (e) is `5.4.17 b.`, "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem" — a citation.
 - V.4.16, printed **p. 296**: the entry records a parametrization and the blowup description of the 27 lines but no equations of the lines in the Fermat coordinates (the exercise asks for the equations and the incidence relations), and its answer to the automorphism question is "Automorphism group? $E_6$. A proof is in Hirschfeld Finite projective spaces in three dimensions 20.3.1" — the group of the 27-line configuration, not the surface's automorphism group, and a citation.
 - V.5.1, printed **p. 297**: the entry applies (3.9) and then asserts the decisive step: "Now how will further blowing-up make the resulting curves disjoint? Ok, further blowing up will make the curves disjoint because you have simple normal crossings to start. Now the blowing-up surface separates tangent directions at the node." Nothing shows that the blowups terminate, which is the only content beyond the printed hint.
@@ -2217,8 +2225,8 @@ requirement for the reason given. No card is closed on this reading.
   sequence belonging to a divisor is $0\to\mathcal L(-D)\to\OO_X\to\OO_C\to0$ with $C\in\abs D$, and the
   cohomology he then computes is that of his own display. His second sentence is false outright: "Then for any
   ample divisor $D$, it is very ample by theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." A very ample
-  divisor on the cubic surface embeds $X$ in $\PP^3$, so $h^0\ge4$ (the image spans $\PP^{h^0-1}$ and has
-  dimension $2$; $h^0=3$ would put $X$ in $\PP^2$ as a surface, i.e. $X\cong\PP^2$), and that false $k$ is
+  divisor embeds $X$ in $\PP^{h^0-1}$; the image has dimension $2$ and spans that projective space, so
+$h^0\ge3$, and $h^0=3$ would put $X$ in $\PP^2$ as a surface, i.e. $X\cong\PP^2$; that false $k$ is
   exactly the second $k$ of the "$k\to k$" he writes next. His closing step is otherwise the card's: for
   $s\in H^0(X,\mathcal L(-D))$ nonzero with $C=\operatorname{Supp}s$ and a line $E\not\subseteq C$, $C\cdot E\ge0$
   gives $D\cdot E\le0$, against (4.11). Open.
@@ -2227,9 +2235,11 @@ requirement for the reason given. No card is closed on this reading.
   the word "nonsingular": no member of any of the nine classes is shown to be nonsingular, and the table
   carries no argument at all. **Closed on 2026-11-15** by a source outside the retained sets: Algebraic
   Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces*
-  homework, Exercise 14 of §4 (by Ping-Hsun Chuang), PDF p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf`. It
-  quotes Corollary 4.13 for the very-ampleness criterion and for the nonsingular member, and exhibits one class
-  per printed pair; the rows are $(8,6)$ $a=8$, $b=(4,3,3,2,2,2)$; $(8,7)$ $a=8$, $b=(3,3,3,3,2,2)$; $(9,7)$
+  homework, Exercise 14 of §4 (by Ping-Hsun Chuang), printed p. 18 of
+  `tmp/sources/ntu-ag2-chapter5.pdf`, whose folio is the PDF page number, read also in its text version
+  `tmp/sources/ntu-ag2-chapter5.md`. It states the very-ampleness criterion of Corollary 4.13 and then writes that it
+  only needs to find such $a$ and $b_i$, so it uses 4.13(b), the irreducible nonsingular member, without stating it,
+  and exhibits one class per printed pair; the rows are $(8,6)$ $a=8$, $b=(4,3,3,2,2,2)$; $(8,7)$ $a=8$, $b=(3,3,3,3,2,2)$; $(9,7)$
   $a=9$, $b=(4,4,4,2,2,2)$; $(9,8)$ $a=9$, $b=(4,4,3,3,2,2)$; $(9,9)$ $a=9$, $b=(4,3,3,3,3,2)$; $(10,8)$
   $a=10$, $b=(6,3,3,3,3,2)$; $(10,9)$ $a=12$, $b=(5,5,5,5,3,3)$; $(10,10)$ $a=11$, $b=(5,5,4,3,3,3)$;
   $(10,11)$ $a=10$, $b=(5,3,3,3,3,3)$. Recomputed here, every row has the printed degree and $p_a$, and satisfies
@@ -2257,12 +2267,26 @@ requirement for the reason given. No card is closed on this reading.
   card's group. It does not close the exercise: its displayed identity equates the two products
   $(x_0+x_1)(x_0+\omega x_1)(x_0+\omega^2x_1)$ and $(x_2+x_3)(x_2+\omega x_3)(x_2+\omega^2x_3)$ where the Fermat
   cubic is their sum; it assumes $\operatorname{char}k\ne2$ where the lines need $\operatorname{char}k\ne3$;
-  its incidence count $18\times3+27\times3=27\times10\div2$ is wrong, the configuration having $18$ points on
-  three lines and $81$ on two ($18\cdot3+81\cdot1=135$, recomputed here over $\QQ(\omega)$: $135$ intersecting
-  pairs, $18$ points of multiplicity three and $81$ of multiplicity two, those $81$ being the points whose four
-  coordinates are all of the form $\pm\omega^r$ with an even number of minus signs,
-  $\binom42\cdot3^4/6=81$); and it computes the group only among the automorphisms induced by
+  its incidence count $18\times3+27\times3=27\times10\div2$ is right, and was recorded here as wrong on a
+  misreading: the $18\cdot3=54$ counts the pairs at the $18$ points lying on three of the lines, and $27\times3$
+  counts the $27$ points $(1,-\omega^i,\omega^j,-\omega^k)$ under three sign patterns, which are the $81$ points
+  lying on two of them, one pair each, so $54+81=135$; recomputed here over $\QQ(\omega)$ the configuration has
+  $135$ intersecting pairs, $18$ points of multiplicity three and $81$ of multiplicity two, those $81$ being the
+  points whose four coordinates are all of the form $\pm\omega^r$ with exactly two minus signs,
+  $\binom42\cdot3^4/6=81$, none or four minus signs making the sum of the cubes $\pm4$; and it computes the group
+  only among the automorphisms induced by
   $\operatorname{Aut}(\PP^3)$, with no order. Open.
+  **A third source, read on this pass.** S. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15
+  with its proof, in §8.2.4 (printed pp. 261--262: the printed contents place §8.2.6, the next subsection, at
+  p. 263), read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9865 and in the PDF. It classifies the
+  vectors $v$ with $k_N\cdot v=-1$ and $v^2=-1$, which on the blow-up of $\PP^2$ at $N$ points are the
+  $(-1)$-classes, by solving $d^2-\sum m_i^2=-1$ and $3d-\sum m_i=1$, bounding $d$ by $4$ through
+  $(3d-1)^2\le N(d^2+1)$, listing the vectors for each $N$, and counting them: $56$ at $N=7$ and $240$ at $N=8$.
+  The completeness of the list is proved there, by Noether's inequality and the reflection $r_{\alpha_{123}}$
+  lowering $d$. That is the counting half of (d) for the seven- and eight-point blowups, in print and with a
+  proof. It is not the whole of (d), whose second half --- that no other irreducible curve of the surface has
+  negative self-intersection --- Dolgachev does not state, and (a), (b), (c) and (e) are untouched by it. V.4.15
+  stays open.
 - **V.4.3** (`P-AGH543ORDINARYSING`), Yang printed p. 109. The quadratic-transformation loop is there, but the
   multiplicity drop $\mu(R_i)<\mu(P_1)$ is asserted and the termination at ordinary singularities is inferred
   from it without the intersection-number computation that produces it, so the entry does not prove the
@@ -2278,8 +2302,7 @@ requirement for the reason given. No card is closed on this reading.
   further wrong values, recorded here and on the card.** On p. 104 he writes
   $h^0(\mathcal L_X(C_0+Bf))=h^0(\mathcal L_C(\mathfrak e+B))=2$; the true value is $3$. With $e=-1$ the
   surface is $\mathbf P(\mathcal E)$ for the unique nontrivial extension
-  $0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), so $\deg\mathcal E=\deg\mathfrak e=-e=1$ by
-  (2.8.1) and Theorem 2.15; $\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $1+2\cdot1=3$, and
+  $0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), so $\deg\mathcal E=\deg\mathfrak e=-e=1$ by (2.8.1); $\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $1+2\cdot1=3$, and
   Riemann--Roch with $h^1=0$ for degree $\ge2g-1=1$ gives $h^0=3$. His own 5.2.13 formula $2n-e$ gives the
   same $3$ at $n=1$, so his two entries disagree. On p. 105 he then takes
   $h^0(C_0+(A+B)f)=h^0(C_0+Bf)+2=4$, true $5$, and $h^0(C_0+(A+B-P-Q)f)=0$, true $1$. The errors cancel in
@@ -2293,8 +2316,9 @@ requirement for the reason given. No card is closed on this reading.
   $\deg\mathfrak b\ge1$ (both equal $2\deg\mathfrak b-e$), so what fails is not the formula. On p. 104 he keeps
   only the $h^0(\mathfrak b+\mathfrak e)$ summand, two terms becoming one, and then subtracts
   $h^1(\mathcal L_X(Bf-Pf))$, an $h^1$ of a different sheaf, to reach his $0$; on p. 105 the same one-short
-  value is carried forward by $+2$. At $\deg\mathfrak b=0$ the two-term value itself is $2$ against the true
-  $1$, which is the one place the split formula and the indecomposable bundle part company. Recorded, not
+  value is carried forward by $+2$. At $\deg\mathfrak b=0$ the two-term value is $1$, the true value, unless $\mathfrak b\sim0$, where it is $2$
+  against the true $1$; the class $\mathfrak b\sim0$ is the one place the split formula and the indecomposable
+  bundle part company. Recorded, not
   repaired: the card's own steps use none of his numbers. Open.
 - **I.2.9(b)** (`P-AGH29PROJCLOSURE`), Shichijo Chapter 1 section 2, Exercise 2.9(b), printed p. 7. His (b) is
   the book's own counterexample: $xy-zw\in I_p(\bar T)$ but $xy-zw\notin\langle yw-x^2,zw^2-x^3\rangle$, the
@@ -2310,7 +2334,7 @@ and the obligation recorded in their sections.
 **The four repairs.** Egbert's MinerU text version now exists and is cited on the cards that read him
 (`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; the copy read here at
 21:30 rendered the star of pp. 293--294 as "?" at line 12563, and the regenerated copy of 21:36 renders it
-as "*", so the file carries it and a symbol is still confirmed on the page image). V.5.5 now quotes his paragraph
+as "*", so the file carries it and a symbol is still confirmed on the page image). V.5.5 now quotes Yang Pi-Yeh's paragraph
 verbatim, "So we may blow-up $X$ and $X'$ more and assume $\mathfrak e=\mathfrak e'$". V.4.12 records Yang's
 false $h^0$ at printed p. 111 and its source, the $k\to k$ of his sequence, and the V.4.12 entry above is
 corrected on two points: Egbert's page is p. 292 alone, and his closing step is not a misuse of (4.11) --- the
@@ -2320,10 +2344,13 @@ values in its input 5.2.12 (p. 104: $2$ against the true $3$; p. 105: $4$ agains
 which cancel in the two drops he tests.
 
 **V.4.14 is closed** on a source outside the retained sets, the National Taiwan University Chapter V homework,
-Exercise 14 (PDF p. 18): nine classes, one per printed pair, each verified against Corollary 4.13. **V.4.16 is
+Exercise 14 (printed p. 18): nine classes, one per printed pair, each verified against Corollary 4.13(a), the
+nonsingular member being 4.13(b), which the set uses without stating. **V.4.16 is
 not closed**: the same set's Exercise 16 gives the 27 lines and the shape of the group but with a sign slip, the
-wrong characteristic hypothesis, an incidence count of 27 double points where there are 81, and the group only
-among the automorphisms induced by $\operatorname{Aut}(\PP^3)$.
+wrong characteristic hypothesis, and the group only among the automorphisms induced by
+$\operatorname{Aut}(\PP^3)$. Its incidence count was recorded here as wrong on a misreading of $27\times3$:
+that factor counts the 27 listed points under three sign patterns, the 81 double points, and $18\cdot3+81=135$
+matches $27\cdot10\div2$.
 
 **What remains on this list.** V.4.7, V.4.9, V.4.10, V.4.15, V.4.16, V.4.3, I.2.9(b), and the earlier entries of
 this file's Chapter V, II.2.15, II.3.15, I.3.16, I.5, I.6, I.7 and III.7.4(b),(d) sections. The next card to

@@ -786,6 +786,15 @@ starred $r=9$ assertion (e).
 :::
 :::
 
-::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 (admissible transformations and general position).
+::: {.remark title="Published solutions"}
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294, read in
+`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md` (admissible transformations and general position); it does not prove
+the starred part.
+
+S. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, in §8.2.4, printed
+pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9865 and in
+`tmp/sources/dolgachev-topics-classical-ag.pdf`, classifies and counts the classes with $K_X\cdot v=-1$ and
+$v^2=-1$ --- the $(-1)$-classes on the blowup of $\PP^2$ at $N$ points --- at $56$ for $N=7$ and $240$ for $N=8$.
+That is the counting half of part (d) and nothing else of the exercise; the exercise stays open on it.
 :::

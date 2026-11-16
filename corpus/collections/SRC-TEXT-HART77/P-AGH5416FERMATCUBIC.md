@@ -53,22 +53,28 @@ audit:
     A published attempt located and checked on a third pass over issue #121;
     the exercise stays open on it. Algebraic Geometry II, National Taiwan
     University, 2020 Spring (course of Chin-Lung Wang), Chapter V Surfaces
-    homework, Exercise 16 of section 4 (by Po-Sheng Wu), PDF p. 18 of
-    tmp/sources/ntu-ag2-chapter5.pdf, gives the 27 lines as
+    homework, Exercise 16 of section 4 (by Po-Sheng Wu), printed pp. 18-19 of
+    tmp/sources/ntu-ag2-chapter5.pdf, whose printed folio is the PDF page
+    number, read also in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md, gives the 27 lines as
     x_0 + w^i x_1 = x_2 + w^j x_3 = 0 over the three coordinate pairings, which
     agrees with this card's first step, and describes the automorphism group as
     diag(1, w^i, w^j, w^k) composed with a coordinate permutation, which agrees
-    with the group computed below. Four defects: the displayed identity equates
+    with the group computed below. Three defects: the displayed identity equates
     the two products instead of adding them, the Fermat cubic being
     x_0^3 + x_1^3 + x_2^3 + x_3^3 = 0; it assumes char k != 2 where the lines
-    need char k != 3; the incidence count "18 x 3 + 27 x 3 = 27 x 10 / 2" is
-    wrong, since the configuration has 18 points lying on three of the lines and
-    81 lying on two -- recomputed here over Q(w): 135 intersecting pairs, 18
-    points of multiplicity three and 81 of multiplicity two, the 81 being the
-    points with all four coordinates of the form +-w^r and an even number of
-    minus signs, of which there are binom(4,2) 3^4 / 6 = 81; and the group is
-    computed only among the automorphisms induced by Aut(P^3), with no order
-    stated. The set therefore supplies the explicit lines and the shape of the
+    need char k != 3; and the group is computed only among the automorphisms
+    induced by Aut(P^3), with no order stated. Its incidence count is right,
+    and was misread here before: "18 x 3 + 27 x 3 = 27 x 10 / 2" adds 18 x 3 =
+    54 pairs at the 18 points lying on three of the lines to the 27 listed
+    points (1, -w^i, w^j, -w^k) taken under three sign patterns, which are the
+    81 points lying on two of the lines, one pair each; 54 + 81 = 135 =
+    27 x 10 / 2. Recomputed here over Q(w): 135 intersecting pairs, 18 points
+    of multiplicity three and 81 of multiplicity two, the 81 being the points
+    with all four coordinates of the form +-w^r and exactly two minus signs,
+    of which there are binom(4,2) 3^4 / 6 = 81 -- none or four minus signs make
+    the sum of the cubes +-4, which is not 0 in characteristic not 2. The set
+    therefore supplies the explicit lines and the shape of the
     group, not a proof of the incidence relations nor of the group. No card claim
     changes.
 ---
@@ -695,13 +701,17 @@ apply.
 :::
 
 ::: {.remark title="Published solutions"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.16, printed p. 296, gives a
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.16, printed p. 296, read in
+`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md`, gives a
 parametrisation of the $27$ lines and their incidence pattern read off the blow-up description, and no
 automorphism group.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces*
-homework, Exercise 16 of §4 (by Po-Sheng Wu), PDF p. 18 of `tmp/sources/ntu-ag2-chapter5.pdf` (the set carries
-no printed folio), is the closest published attempt, and it does not close the exercise. What it gets right:
+homework, Exercise 16 of §4 (by Po-Sheng Wu), printed pp. 18--19 of `tmp/sources/ntu-ag2-chapter5.pdf`, whose
+printed folio is the PDF page number, read also in its MinerU text version
+`tmp/sources/ntu-ag2-chapter5.md`, is the closest published attempt, and it does not close the exercise. What
+it gets right:
 the $27$ lines, as $\{x_0+\omega^ix_1=x_2+\omega^jx_3=0\}$ for $i,j\in\{0,1,2\}$ together with the two further
 coordinate pairings, which are the lines of this card's first step; and the shape of the automorphism group,
 "a composition of $\operatorname{diag}\cdot(1,\omega^i,\omega^j,\omega^k)$ with a permutation on coordinates".
@@ -709,10 +719,11 @@ What it does not: its displayed identity sets
 $(x_0+x_1)(x_0+\omega x_1)(x_0+\omega^2x_1)=(x_2+x_3)(x_2+\omega x_3)(x_2+\omega^2x_3)$, whereas the Fermat
 cubic is the sum of the two sides, the two sides being $x_0^3+x_1^3$ and $x_2^3+x_3^3$; it assumes
 $\operatorname{char}k\ne2$, where the lines need $\operatorname{char}k\ne3$ and a primitive cube root in $k$;
-its incidence count is wrong, "the only intersections" being $18\times3+27\times3=135$, which mixes points with
-pairs --- the configuration has $18$ points on three of the lines and $81$ points on two, giving
-$18\cdot3+81\cdot1=135$ pairs and $27\cdot10/2=135$, as recomputed here (a point of the surface with all four
-coordinates $\pm\omega^r$ has an even number of minus signs, so there are
+its incidence count is right rather than wrong, "the only intersections" being $18\times3+27\times3=135$: it adds $18\cdot3=54$ pairs at the $18$ points lying on three of the lines to the
+$27$ listed points $(1,-\omega^i,\omega^j,-\omega^k)$ taken under three sign patterns, which are the $81$
+points at which two of the lines meet, one pair each, so $54+81=135=27\cdot10/2$; the configuration does have
+$18$ points of multiplicity three and $81$ of multiplicity two, as recomputed here (a point of the surface
+with all four coordinates $\pm\omega^r$ has exactly two minus signs, so there are
 $\binom42\cdot3^4/6=81$ of them); and the group is computed only among the automorphisms induced by
 $\operatorname{Aut}(\PP^3)$, with no order stated, whereas the exercise asks for the group itself, which the
 anticanonical argument of this card's step reduces to that case.
