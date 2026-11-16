@@ -209,6 +209,27 @@ audit:
     checked: no other source was read in this pass, and steps s5 and s6 were
     not re-derived.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card and on nothing else.
+    Three places said what had been read rather than what the mathematics is:
+    the opening sentence of step s5's proof, "No source read for this card
+    proves this step"; the opening sentence of step s6's proof, "No source read
+    for this card states or proves the failure in positive characteristic"; and
+    the closing sentence of the remark, "no published source read here gives
+    it". Each now carries the mark that the step is the card's own, which is
+    what the reader's report asks for, and the description of what Kim and Yang
+    do, and of what their arguments leave unproved, is kept as it stood. No
+    mathematics changes: s5 and s6 are the card's own, as the events of even
+    date above record and as the steps now say. Where and how the sources were
+    read stays in those events, among them
+    tmp/sources/lfwin-hartshorne-solutions.md for Yang and
+    tmp/sources/hartshorne-solutions-kim.md for Kim, and it does not appear on
+    the page. Not checked: no step was re-derived, no source was re-read, and no
+    machine computation was run in this pass.
+
 ---
 
 ::: {.problem}
@@ -473,7 +494,7 @@ In particular $V_r\ne0$ for all sufficiently large $r$, so the filtration in ste
 If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional $k$-vector space.
 
 ::: pf-proof
-No source read for this card proves this step.  Kim, Exercise 3.11.7(a), PDF p. 213, asserts the $k$-vector-space structure in a parenthesis --- the kernel "is the inverse limit of $k$-vector spaces, hence is a $k$-vector space" --- which is the assertion under proof, and Yang, Solution 3.11.7(a), printed p. 82, deduces it from the identification with a completion.  The argument below is the card's.
+The argument below is the card's.  Kim, Exercise 3.11.7(a), PDF p. 213, asserts the $k$-vector-space structure in a parenthesis --- the kernel "is the inverse limit of $k$-vector spaces, hence is a $k$-vector space" --- which is the assertion under proof, and Yang, Solution 3.11.7(a), printed p. 82, deduces it from the identification with a completion.
 
 Let
 $$
@@ -556,7 +577,7 @@ This proves the vector-space assertion in part (a) when $\operatorname{char}k=0$
 In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is false in general.
 
 ::: pf-proof
-No source read for this card states or proves the failure in positive characteristic; the computation below is the card's.
+The computation below is the card's; neither source states the failure in positive characteristic.
 
 Take
 $$
@@ -752,5 +773,5 @@ Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
 ::: {.remark title="Published solution"}
 Neither published solution proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, runs the same argument and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
 
-The parenthetical inference is the false step in characteristic $p$: an inverse limit of $k$-vector spaces with non-linear transition maps is not a $k$-vector space, and the kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group, not an additive one.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's: no published source read here gives it.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
+The parenthetical inference is the false step in characteristic $p$: an inverse limit of $k$-vector spaces with non-linear transition maps is not a $k$-vector space, and the kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group, not an additive one.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
 :::
