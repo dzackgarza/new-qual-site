@@ -198,6 +198,49 @@ audit:
     Math StackExchange answer 795440 to question 666444 (a diagram invoking "problem 3" and
     "problem 4(a)" of that thread, declaring $f$ zero and a contradiction) is accurate.
     Not claimed: a published solution of Exercise 2.B.4.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 batch, the two published sources for part (a). Read at the cited place in its text
+    version: tom Dieck, §2.8.3 "Complements of spheres", printed p. 52, in
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and Koukpari's solution to §2.B
+    Exercise 4, printed p. 16, in `tmp/sources/koukpari-hatcher-solutions.md`. Checked: both
+    display the same homeomorphism of $S^{p+q-1}-S^{p-1}$ with $S^{q-1}\times\RR^p$: Koukpari's
+    Koukpari's $\phi(u,v)=(v,u)/\sqrt{1+\norm v^2}$, whose image misses $S^{p-1}$ because the
+    last $q$ coordinates $u/\sqrt{1+\norm v^2}$ are nonzero, and tom Dieck's
+    $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$, which is the same map with the two blocks of
+    coordinates in the opposite order and the $\RR^p$ factor reparametrized onto the open unit
+    ball. Defect in the source, verified against the printed page rather than the extraction:
+    tom Dieck's target $S^m\times E^n$ has an exponent one too small, since the displayed $y$
+    lies in the second block $\RR^{n+1}$ of the ambient $\RR^{m+n+2}$ and
+    $(1-\norm y^2)+\norm y^2=1$ places the image on $S^{m+n+1}$, with the image of
+    $\norm y\le1$ equal to the complement for $\norm y<1$; with $(m,n)=(q-1,p-1)$ the corrected
+    statement is part (a) as printed. Koukpari's solution to part (b) on the same printed p. 16
+    assumes $S^{p-1}=D^p\cap S^{p+q-1}$, which Hatcher's printed statement (p. 176, re-read
+    here) does not give, so it is not a published proof of (b) as printed; tom Dieck's
+    following paragraph on the two circles in $S^3$ is the $\pi_1$ linking statement, also not
+    the exercise. Not claimed: a published proof of part (b) as printed.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (a) transcribed from the two sources into steps #s1 and #s2, each step naming its
+    source, the numbered statement and the printed page: #s1 the homeomorphism, from
+    Koukpari's solution to §2.B Exercise 4(a), printed p. 16, whose displayed $\phi$ it
+    reproduces in coordinates, and tom Dieck's §2.8.3, printed p. 52, which displays the same
+    map in the other direction; #s2 the deformation retraction, from the same two passages.
+    The inverse $\phi^{-1}(x,y)=(y/\norm y,x/\norm y)$ and the two composites are computed on
+    the card because Koukpari leaves them as "clearly ... with continuous inverse"; both are
+    verified. Part (b), steps #degenerate and #s3 onward, is unchanged mathematics: it was and
+    remains the card's own argument from §2.B Exercise 3 (printed p. 176) and Theorem 2B.3
+    (printed p. 172). The Sources remark was rewritten to name the two publications with their
+    numbered statements, printed pages and text versions, to state tom Dieck's printed exponent
+    and its correction, to record that Koukpari's (b) assumes a hypothesis Hatcher does not
+    print, and to say that part (b) still has no located published proof; the earlier claim
+    that part (a)'s homology content is Proposition 2B.1(b), pp. 169--170, is dropped from it,
+    no step using that proposition. `COMPLAINTS.md` carries the record of this date for the
+    open part (b) obligation.
 ---
 
 ::: {.problem}
@@ -218,7 +261,7 @@ S^{q-1}=\{(0,y):\norm{y}=1\},
 $$
 so $S^{p-1}\cap S^{q-1}=\emptyset$ and both are contained in $S^{n-1}$.
 
-The exercise is read as printed, for all $p,q\ge0$: at $p=0$ the sphere $S^{p-1}$ is the empty sphere $S^{-1}$ and $\partial D^0=\emptyset$, and at $q=0$ likewise, and step [](#degenerate){.pf-ref} settles those two cases. The rest of the argument assumes $p,q\ge1$, where $S^{p-1}$ and $S^{q-1}$ are nonempty spheres in $S^{n-1}$. The results of the book used are Exercise 3 of §2.B, printed p. 176 — for a pair of subspaces $(D,S)\subset(D^n,S^{n-1})$ homeomorphic to $(D^k,S^{k-1})$ with $D\cap S^{n-1}=S$, the inclusion $S^{n-1}-S\hookrightarrow D^n-D$ induces an isomorphism on homology — and Invariance of Domain, Theorem 2B.3 (p. 172), in the two degenerate cases. Part (a) is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}; part (b) is the rest.
+The exercise is read as printed, for all $p,q\ge0$: at $p=0$ the sphere $S^{p-1}$ is the empty sphere $S^{-1}$ and $\partial D^0=\emptyset$, and at $q=0$ likewise, and step [](#degenerate){.pf-ref} settles those two cases. The rest of the argument assumes $p,q\ge1$, where $S^{p-1}$ and $S^{q-1}$ are nonempty spheres in $S^{n-1}$. The results of the book used are Exercise 3 of §2.B, printed p. 176 — for a pair of subspaces $(D,S)\subset(D^n,S^{n-1})$ homeomorphic to $(D^k,S^{k-1})$ with $D\cap S^{n-1}=S$, the inclusion $S^{n-1}-S\hookrightarrow D^n-D$ induces an isomorphism on homology — and Invariance of Domain, Theorem 2B.3 (p. 172), in the two degenerate cases. Part (a) is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, transcribed from the two published solutions named in the Sources remark at the end; part (b) is the rest, and no published proof of part (b) as printed was located.
 
 ::: pf
 
@@ -231,15 +274,25 @@ $$
 
 ::: pf-proof
 
-On the complement one has $y\ne0$. Define
+Write $X=S^{p+q-1}-S^{p-1}$, on which $y\ne0$, and put
 $$
-\Phi(x,y)=\left(\frac y{\norm{y}},\frac x{\norm{y}}\right).
+\phi(u,v)=\frac{(v,u)}{\sqrt{1+\norm{v}^2}},\qquad (u,v)\in S^{q-1}\times\RR^p .
 $$
-Its inverse is
+The vector $\phi(u,v)$ has norm one and its last $q$ coordinates are $u/\sqrt{1+\norm{v}^2}\ne0$, so $\phi$ maps into $X$, and it is continuous because the denominator never vanishes. These are the map and the observations of the solution to §2.B Exercise 4(a), printed p. 16, where the formula is written out in coordinates as
 $$
-\Phi^{-1}(u,v)=\frac{(v,u)}{\sqrt{1+\norm{v}^2}}.
+(s_{p+1},\ldots,s_{p+q},v_1,\ldots,v_p)\longmapsto\frac{(v_1,\ldots,v_p,s_{p+1},\ldots,s_{p+q})}{\sqrt{s_{p+1}^2+\cdots+s_{p+q}^2+v_1^2+\cdots+v_p^2}} .
 $$
-These formulas are continuous and inverse to one another.
+The inverse is
+$$
+\phi^{-1}(x,y)=\left(\frac y{\norm{y}},\frac x{\norm{y}}\right),
+$$
+which is continuous on $X$, and the two composites are the identity. For the first, $\norm{\phi(u,v)}^2=(\norm v^2+1)/(1+\norm v^2)=1$, so $\phi^{-1}\phi(u,v)=(u,v)$; for the second, $\norm x^2+\norm y^2=1$ gives
+$$
+\phi\phi^{-1}(x,y)=\frac{(x,y)}{\norm y\sqrt{1+\norm x^2/\norm y^2}}=\frac{(x,y)}{\sqrt{\norm y^2+\norm x^2}}=(x,y).
+$$
+That the inverse is continuous and that the composites are the identity is what that source leaves as "clearly we have a continuous map (with continuous inverse), since the denominator in the image is never zero", and it is checked here.
+
+tom Dieck, §2.8.3, printed p. 52, displays the same homeomorphism, in the direction of $\phi$ and with the two blocks of coordinates in the opposite order: for $S^{m+n+1}\subset\RR^{m+1}\oplus\RR^{n+1}$ and $(m,n)=(q-1,p-1)$ his map is $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$, restricted to $\norm y<1$, with $x$ the unit vector in the direction of the last $q$ coordinates of the image and $y$ the first $p$. The reparametrization $y\mapsto y/\sqrt{1+\norm y^2}$ of the $\RR^p$ factor, a homeomorphism of $\RR^p$ onto the open unit ball, carries his formula to $\phi$. The exponent printed there in the target, $S^m\times E^n$, is one too small; the printed page and the correction are recorded in the Sources remark.
 
 :::
 
@@ -251,7 +304,7 @@ Hence $S^{p+q-1}-S^{p-1}$ deformation retracts onto the coordinate sphere $S^{q-
 
 ::: pf-proof
 
-Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor linearly to $0$. The subspace $S^{q-1}$ corresponds exactly to $S^{q-1}\times\{0\}$.
+Under the homeomorphism $\phi$ of step [](#s1){.pf-ref} the coordinate sphere $S^{q-1}$ of $X$ corresponds to $S^{q-1}\times\{0\}$, because $\phi(u,0)=(0,u)$. The linear contraction $H(u,v,t)=(u,(1-t)v)$ retracts $S^{q-1}\times\RR^p$ onto that subspace through maps of it into itself and fixes it pointwise, so it is a deformation retraction; conjugating it by $\phi$ gives one of $X$ onto $S^{q-1}$. That is the argument of the solution to §2.B Exercise 4(a), printed p. 16: $S^{q-1}\times\RR^p$ deformation retracts to $S^{q-1}\times\{0\}=S^{q-1}$, hence by that homeomorphism $X$ deformation retracts to $S^{q-1}$. It gives the $h$-equivalence of $X$ with $S^{q-1}$ stated in tom Dieck, §2.8.3, printed p. 52.
 
 :::
 
@@ -391,5 +444,13 @@ Suppose $f,g$ are as in the exercise. If $p=0$ or $q=0$ the claim is step [](#de
 :::
 
 ::: {.remark title="Sources"}
-Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the statement is Exercise 4 of §2.B, printed p. 176. Part (a)'s homology content is Proposition 2B.1(b) with its printed proof, pp. 169--170; part (b) is §2.B Exercise 3 (printed p. 176) applied to the collared disks, with the cases $p=0$ and $q=0$ settled by Invariance of Domain, Theorem 2B.3, printed p. 172. No published solution of the exercise is claimed: the one Math StackExchange thread on part (b), question 666444, carries a commutative-diagram sketch as its accepted answer and no complete argument.
+Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the statement is Exercise 4 of §2.B, printed p. 176, and it carries no hypothesis on the two disks beyond disjointness; its printed hint is Exercise 3 of §2.B, printed p. 176, whose hypothesis $D\cap S^{n-1}=S$ is what step [](#collar){.pf-ref} arranges; Invariance of Domain is Theorem 2B.3, printed p. 172.
+
+Part (a) is transcribed from two published solutions.
+
+**Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**, §2.8.3 "Complements of spheres", printed p. 52, read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`. For $S_0^m=S^{m+n+1}\cap(\RR^{m+1}\times0)$ and $S_1^n=S^{m+n+1}\cap(0\times\RR^{n+1})$ it states that $X=S^{m+n+1}-S_1^n$ is homeomorphic to $S^m\times E^n$, displays the homeomorphism $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$, and concludes that $X$ is $h$-equivalent to $S^m$. The exponent printed there in the target is one too small: the printed $y$ lies in the second block $\RR^{n+1}$ of the ambient $\RR^{m+n+2}$, and $(1-\norm y^2)+\norm y^2=1$ puts $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$ on $S^{m+n+1}$, its image being the complement exactly for $\norm y<1$, so the statement is $S^m\times E^{n+1}$; nothing else in the passage is affected. With $(m,n)=(q-1,p-1)$ that is part (a) as printed, his first block being the last $q$ coordinates of the image and his second block the first $p$.
+
+**Tiam Koukpari, *Hatcher's Algebraic Topology - Solutions*** (IMPA), solution to §2.B Exercise 4, printed p. 16, read in `tmp/sources/koukpari-hatcher-solutions.md`. It displays the homeomorphism $\phi(u,v)=(v,u)/\sqrt{1+\norm v^2}$ from $S^{q-1}\times\RR^p$ onto $S^{p+q-1}-S^{p-1}$, checks that the image misses $S^{p-1}$ and that the denominator in it does not vanish, and reads the deformation retraction off $S^{q-1}\times\RR^p\to S^{q-1}\times\{0\}=S^{q-1}$. Both sources display $\phi$, and the inverse and the two composites in step [](#s1){.pf-ref} are the check this one leaves as evident.
+
+Part (b) has no located published proof of the statement as printed, and its proof on this card is the card's own. Koukpari's solution to (b) on the same printed p. 16 assumes the inclusion $S^{p-1}=D^p\cap S^{p+q-1}$ as "the assumption of the question", which Hatcher's printed statement does not give, and under that hypothesis its ladder is the argument of step [](#proper-case){.pf-ref}. tom Dieck's §2.8.3 continues on the same printed p. 52 with the two standard circles in $S^3$, that $W=S^1\times\{0\}$ spans no disk in the complement of the axis $Z$ because it is a nonzero class in $\pi_1$ of that complement, which is the linking obstruction in its $\pi_1$ form and not the exercise. The one Math StackExchange thread on part (b), question 666444, carries a commutative-diagram sketch as its accepted answer and no complete argument. The published-solution obligation of issue #123 for part (b) therefore remains open, and `COMPLAINTS.md` records it on 2026-11-16.
 :::
