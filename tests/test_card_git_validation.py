@@ -14,7 +14,7 @@ import pytest
 
 import yaml
 
-from qualc.authoring import commit_day, dated_records, previous_source, source_identity
+from qualc.authoring import RESTORED_SECTIONS, commit_day, dated_records, previous_source, source_identity
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -383,6 +383,66 @@ def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: p
         assert "dated 2026-11-11" in result.stderr
         if case in ("same-identity-twin-delete", "same-identity-history-delete"):
             assert "The local group is Hatcher" in result.stderr
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
+def test_reordering_then_duplicating_an_event_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """An exact reorder does not make B into A's earlier record or permit A's deletion."""
+    first = "- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: The statement matches the printed exercise.\n"
+    second = "- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: The local group is Hatcher's `M|x` on printed p. 234.\n"
+    reordered = TWICE_RECORDED.replace(first + second, second + first)
+    duplicated = reordered.replace(first, second)
+    assert duplicated != reordered
+    card = repo / "corpus/one card.md"
+    for source, stamp in (
+        (TWICE_RECORDED, "2026-11-11T09:00:00 +0000"),
+        (reordered, "2026-11-14T09:00:00 +0000"),
+    ):
+        card.write_text(source)
+        git(repo, "add", "corpus/one card.md")
+        monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+        git(repo, "commit", "-qm", "record or reorder the dated events")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    card.write_text(duplicated)
+    git(repo, "add", "corpus/one card.md")
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "corpus/one card.md")
+
+    assert result.returncode == 1, result.stdout
+    assert "multiple dated audit events share one identity" in result.stderr
+    assert "The statement matches the printed exercise." in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
+def test_reordering_then_duplicating_a_complaint_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """The same reorder-then-duplicate history is ambiguous for COMPLAINTS records."""
+    first = "**Searched outside the retained sets (2026-11-10).** The observation."
+    second = "**A second search on the same day (2026-11-10).** Another observation."
+    reordered = TWICE_RECORDED_COMPLAINTS.replace(f"{first}\n\n{second}", f"{second}\n\n{first}")
+    duplicated = reordered.replace(first, second)
+    assert duplicated != reordered
+    path = repo / "COMPLAINTS.md"
+    for source, stamp in (
+        (TWICE_RECORDED_COMPLAINTS, "2026-11-10T09:00:00 +0000"),
+        (reordered, "2026-11-14T09:00:00 +0000"),
+    ):
+        path.write_text(source)
+        git(repo, "add", "COMPLAINTS.md")
+        monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+        git(repo, "commit", "-qm", "record or reorder the dated complaints")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    path.write_text(duplicated)
+    git(repo, "add", "COMPLAINTS.md")
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "COMPLAINTS.md")
+
+    assert result.returncode == 1, result.stdout
+    assert "multiple dated COMPLAINTS records share one identity" in result.stderr
+    assert "Searched outside the retained sets" in result.stderr
+    assert "QUAL-11" in result.stderr
 
 
 def test_restoring_one_event_does_not_excuse_a_rewrite_of_another(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -774,10 +834,32 @@ def test_a_numbered_complaint_is_one_record_with_its_continuation(repo: Path, mo
     assert appended.returncode == 0, appended.stderr
 
 
-def test_a_day_in_the_middle_of_a_heading_is_not_a_record() -> None:
-    """Only a heading's leading day dates it; no named-heading fallback exists."""
-    heading = "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved"
-    assert dated_records(f"{heading}\n\nWhat the section says.\n") == []
+def test_a_restored_heading_is_read_as_the_record_of_its_own_day() -> None:
+    """A restored heading states its day mid-title, and the gate reads it there."""
+    heading, day = next(iter(RESTORED_SECTIONS.items()))
+    assert [found for found, _ in dated_records(f"{heading}\n\nWhat the section says.\n")] == [day]
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
+def test_a_restored_complaints_section_is_protected_through_the_shared_gate(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """The named restored section is a dated record in both validator modes."""
+    heading, day = next(iter(RESTORED_SECTIONS.items()))
+    path = repo / "COMPLAINTS.md"
+    path.write_text(f"{heading}\n\nWhat that day found.\n")
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", f"{day.isoformat()}T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the restored section")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    path.write_text(f"{heading}\n\nAn edited record.\n")
+    git(repo, "add", "COMPLAINTS.md")
+
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "COMPLAINTS.md")
+
+    assert result.returncode == 1, result.stdout
+    assert f"COMPLAINTS.md: the record dated {day}" in result.stderr
+    assert "QUAL-11" in result.stderr
 
 
 def test_deleting_the_complaints_file_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
