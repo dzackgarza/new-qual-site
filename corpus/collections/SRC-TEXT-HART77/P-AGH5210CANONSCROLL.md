@@ -152,6 +152,24 @@ audit:
     these events, and its Egbert entry states what his reference is rather than
     what is absent from a directory. Not checked: nothing new; the mathematics
     of the steps is as recorded above.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the card again on 2026-11-16 on the reader's report, after the
+    event above of the same date, which is left as written. The event above
+    says that the three places naming printed p. 380 for Corollary 2.19 now say
+    p. 381; one of them did not. The count h^0(O_X(H)) = 2n-e+2 in the proof of
+    step s5 still named p. 380 and now names p. 381, which was checked again
+    here in the text version of the book: Corollary 2.19 and its proof sit
+    under the marker for PDF page 396, printed p. 381 at the offset 15 this
+    extraction takes, while Corollary 2.18 and its proof sit under the marker
+    for PDF page 395, printed p. 380. Step s5's restriction isomorphism is the
+    card's own, as the record of this date says and as its event should have
+    made the step say; the step now marks it so where the isomorphism is used.
+    The remark's sentence "which neither source states" is removed in favour of
+    the two vanishings and their reason: whether a source states a step is not
+    content for a rendered remark, and the absence is recorded here.
 ---
 
 ::: {.problem}
@@ -269,11 +287,11 @@ Because $Y\sim D=H-K_X$, restriction gives
 $$
 0\longrightarrow\OO_X(K_X)\longrightarrow\OO_X(H)\longrightarrow\OO_Y(H)\longrightarrow0 .
 $$
-The first cohomology group vanishes, $H^0(X,\OO_X(K_X))=0$, since an effective canonical divisor would meet a general fibre nonnegatively whereas $K_X\cdot f=-2$; and $H^1(X,\OO_X(K_X))\cong H^1(X,\OO_X)^\vee=0$ by Serre duality, with $H^1(X,\OO_X)=0$ because $X$ is ruled over $\PP^1$ and $q(X)$ is the genus of the base, Corollary 2.5, printed p. 371. Hence $h^0(\OO_Y(H))=h^0(\OO_X(H))$, and the proof of Corollary 2.19, printed p. 380, computes
+The first cohomology group vanishes, $H^0(X,\OO_X(K_X))=0$, since an effective canonical divisor would meet a general fibre nonnegatively whereas $K_X\cdot f=-2$; and $H^1(X,\OO_X(K_X))\cong H^1(X,\OO_X)^\vee=0$ by Serre duality, with $H^1(X,\OO_X)=0$ because $X$ is ruled over $\PP^1$ and $q(X)$ is the genus of the base, Corollary 2.5, printed p. 371. Hence $h^0(\OO_Y(H))=h^0(\OO_X(H))$, and the proof of Corollary 2.19, printed p. 381, computes
 $$
 h^0(X,\OO_X(H))=h^0(\PP^1,\OO(n))+h^0(\PP^1,\OO(n-e))=2n-e+2=d+2,
 $$
-which is $g(Y)$ by step [](#s4){.pf-ref}. The hyperplane sections of $Y$ therefore span the whole of $H^0(Y,K_Y)$, and the embedding of $Y$ in $\PP^{d+1}$ is the complete canonical one, $\PP^{d+1}=\PP H^0(Y,K_Y)^\vee$.
+which is $g(Y)$ by step [](#s4){.pf-ref}. The hyperplane sections of $Y$ therefore span the whole of $H^0(Y,K_Y)$, and the embedding of $Y$ in $\PP^{d+1}$ is the complete canonical one, $\PP^{d+1}=\PP H^0(Y,K_Y)^\vee$. The isomorphism itself is the card's own, assembled from the count in the proof of Corollary 2.19 and the two vanishings above.
 
 :::
 
@@ -322,7 +340,7 @@ Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} produce the nonsingular curve $Y$ of 
 :::
 
 ::: {.remark title="Published solution"}
-Hartshorne's own Corollary 2.18(b), printed p. 380, is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19, printed p. 381, is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them; step [](#s5){.pf-ref} adds the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$, which neither source states and which follows from $K_X\cdot f=-2$ and from $q(X)=0$.
+Hartshorne's own Corollary 2.18(b), printed p. 380, is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19, printed p. 381, is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them; step [](#s5){.pf-ref} adds the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$, which follow from $K_X\cdot f=-2$ and from $q(X)=0$.
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 10 of §2 (solution by Chi-Kang), printed p. 8 of that set, runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18 (printed page 380) has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s7){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s5){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.10, printed p. 104, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
