@@ -907,7 +907,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
 **Object and need.** Three cards of `SRC-TEXT-HART77` §I.3 carry a proof that no retained published set supplies: `P-AGH316QPPRODUCT` (I.3.16(c), printed p. 22, starred, the product in the category of varieties for quasi-projective $X$ and $Y$), `P-AGH319JACOBIAN` (I.3.19(a), printed p. 22, the Jacobian of a polynomial automorphism is a nonzero constant) and `P-AGH320EXTENDREG` (I.3.20, printed p. 22, extension of a regular function across a normal point in dimension at least two, both parts).
 
-**Observed evidence.** Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), has no 3.16, 3.19 or 3.20: PDF p. 4 runs 3.1--3.13 and PDF p. 5 carries 3.13--3.14 before the §4 answers begin on PDF p. 6. William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, proves (a) and (b) and stops before (c); it has no 3.19 or 3.20. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36, likewise proves (a) and (b) only, with "similar" for (b) and nothing for (c); Exercise I.3.19, PDF p. 38, writes that if any $f_i\in k$ the map is not surjective and that "computing the derivative of a linear, nonconstant polynomial gives a jacobian in $k^\times$", which establishes the conclusion only for linear maps, and marks the converse "SKIP"; Exercise I.3.20, PDF p. 38, gives "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b). Jinhyun Park, *Hartshorne Exercise Solutions*, covers Chapter I §1 only and passes to Spec of rings at Chapter II Section 2.
+**Observed evidence.** Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), has no 3.16, 3.19 or 3.20: PDF p. 4 runs 3.1--3.13 and PDF p. 5 carries 3.14 before the §4 answers begin on PDF p. 6. William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, proves (a) and (b) and stops before (c); it has no 3.19 or 3.20. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36, likewise proves (a) and (b) only, with "similar" for (b) and nothing for (c); Exercise I.3.19, PDF p. 38, writes that if any $f_i\in k$ the map is not surjective and that "computing the derivative of a linear, nonconstant polynomial gives a jacobian in $k^\times$", which establishes the conclusion only for linear maps, and marks the converse "SKIP"; Exercise I.3.20, PDF p. 38, gives "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b). Jinhyun Park, *Hartshorne Exercise Solutions*, covers Chapter I §1 only and passes to Spec of rings at Chapter II Section 2.
 
 **Impact and owner.** All three cards keep a complete proof: (c) of 3.16 constructs the two ambient projections on the Segre charts, reads local closedness and irreducibility off those charts, and transports the affine universal property of Exercise 3.15; 3.19(a) differentiates $\psi\circ\phi=\mathrm{id}$ and takes determinants, which gives a unit $J_\psi\circ\phi$ without asserting linearity of the coordinates; 3.20 reduces to $\mco_{P,Y}$, finds a closed point of $V(\mathfrak p)$ other than $P$ to place the function in every height-one localization, and applies the height-one intersection theorem for Noetherian normal domains, with $1/x$ on $\AA^1\setminus\{0\}$ for (b). What is missing is a published argument to check each against.
 
@@ -2750,15 +2750,17 @@ says "four" is pushed history and is not amended; the count is five, as the list
 The reader of the nine Chapter I cards of the 2026-11-16 batch accepted five --- I.3.19(a), I.5.6(b),
 I.5.8, I.5.12(b) and I.5.13 --- and returned four: I.2.9(b), I.3.16(c), I.3.20 and I.5.5. Each returned
 item was checked against the card, the text version and the commit it names before anything was edited.
-No mathematical claim of the four cards was found false and the four proofs stand; the repairs are of the
-audit trail and of exposition, except the one sentence of the I.3.16(c) remark that gave a false reason.
+No step of the four proofs was found false and the four proofs stand; the repairs are of the audit trail and
+of exposition, apart from the false reason in one sentence of the I.3.16(c) remark.
 
 - **I.2.9(b)** (`P-AGH29PROJCLOSURE`): the proof and the Troiani quotation are right, and the defect is in
   the audit trail. The event of 2026-11-16 had been rewritten in place by `68e411a312`; its text at its date
   is restored, and a new event states the attribution the text version's headers record: 161648 (score 19,
   accepted) and 160964 (score 9) are Georges Elencwajg's answers, and 160932 (score 2) is sebigu's. So the
   restored note's "his other two answers" is inaccurate as to the Maple answer, and the second-pass insert
-  "neither of them his --- Elencwajg's own answer 160964" contradicted itself. The remark is unchanged.
+  "neither of them his --- Elencwajg's own answer 160964" contradicted itself. The remark is unchanged, except
+  that its Borcherds citation said PDF p. 3 where Exercise 2.9 is on PDF p. 2 --- the page carries 2.1 to 2.11
+  --- which is corrected; the reader did not name that.
 - **I.3.16(c)** (`P-AGH316QPPRODUCT`): three repairs. (1) The source-checked event of 2026-11-16 had been
   rewritten in place by `20b8b3a16b`, and `4ab4e4ef6a` then changed the witness inside that appended text;
   its text at its date is restored, with the correction in a new event. (2) The remark's reason, "his $X$ is
@@ -2775,7 +2777,8 @@ audit trail and of exposition, except the one sentence of the I.3.16(c) remark t
   valid. The every-column, every-row reading stands. The "State after the 2026-11-16 pass" paragraph above
   no longer says Bertram's Proposition 4.3 "and the three displays after it" is raised to varieties: it now
   says what the source does --- universality for $\PP^m\times\PP^n$ in prevarieties, the subvariety case one
-  sentence, and the $Y\times Z$ display false as printed.
+  sentence, and the $Y\times Z$ display false as printed. The Borcherds table in that section is off by one at
+  its second page too: 3.13 is on PDF p. 4 with 3.1--3.13, and p. 5 carries 3.14.
 - **I.3.20** (`P-AGH320EXTENDREG`): the mathematics is right --- hwong557's answer has the gap at its decisive
   inference, Xu's answer is the one that chooses the representation at the point and is read whole, step
   `s5` is at its place, and step `s3` carries Vakil 13.5.19. The event of 2026-11-16 had been rewritten in
