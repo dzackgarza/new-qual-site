@@ -125,6 +125,41 @@ audit:
     p. N+15): II.3.10 on printed p. 92. Not checked: no source was re-read
     in this pass beyond the passages quoted, and no step was re-derived.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, two items. (i) The letter exchange the
+    previous pass announced was incomplete. This proof writes B for the base
+    ring and A for the coordinate ring of the total space; two places kept
+    Cais's letters. The first is his display in step
+    reduce-fibre-topology-to-affine, which read X_y = (X times_Y Spec A)
+    times_{Spec A} Spec kappa(y) while the sentence introducing it says it is
+    in the letters of this proof; with Spec B the affine neighbourhood of y
+    it is (X times_Y Spec B) times_{Spec B} Spec kappa(y). The second is the
+    image in step uy-homeomorphism-onto-fiber, written Spec phi(Spec B): phi
+    there has source Spec(A tensor_B B_m), and the image lies in Spec A, so
+    it is Spec phi(Spec(A tensor_B B_m)). Nothing else moves; Cais's own
+    factorization and his S = g(A - p) remain quoted in his letters with the
+    note already there. (ii) Two sentences of process left the rendered
+    card: the pf-qed's "are the published proof of (a)" and the remark's
+    "Two of the six parts are not published in the form the exercise prints"
+    with its "asserted by the four sources rather than proved". What they
+    recorded belongs here. The five steps of (a) are Cais's argument with
+    Kim's reduction, Shichijo's affine computation and Egbert's chain, as the
+    remark cites them; the two-point assertion is published by all four
+    sources only under char k not 2, none of them saying that the roots must
+    be distinct, and the failure in characteristic two is recorded only at
+    Math StackExchange 1709194; the irreducibility of t^2 - s over k(s) is
+    asserted by the four sources and proved on the card by the valuation. The
+    pf-qed and the remark now state the mathematics, the remark keeping the
+    characteristic hypothesis and the pointer to the quoted comments. Checked
+    against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    (printed p. N is PDF p. N+15): II.3.10 on printed p. 92; Cais's Exercise
+    3.10(a) re-read in tmp/sources/hartshorne-solutions-cais.md at PDF p. 12
+    of 29. Not checked: no step was re-derived in this pass, and no source
+    beyond Cais's passage was re-read.
+
 ---
 
 ::: {.problem}
@@ -158,7 +193,7 @@ Cais, Exercise 3.10(a), PDF p. 12: for an affine neighbourhood $\Spec B$ of $y$,
 $$
 X_y
 =
-(X\times_Y\Spec A)\times_{\Spec A}\Spec\kappa(y),
+(X\times_Y\Spec B)\times_{\Spec B}\Spec\kappa(y),
 $$
 and for $U\subseteq X$ open, $p^{-1}(U)=U\times_Y\Spec\kappa(y)$, so the affine statements glue.
 
@@ -245,7 +280,7 @@ $$
 \Spec A,
 $$
 his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged.
-The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec B)$. With $\ker\psi=\mfp A$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. With $\ker\psi=\mfp A$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
@@ -392,7 +427,7 @@ Shichijo, Exercise 3.10(b), printed p. 8: the quotient is a field, so $X_y=\Spec
 :::
 
 ::: pf-qed
-Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} are the published proof of (a). Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref} and [](#fibre-two-points-char-neq-2){.pf-ref} are the published proof of the two-point assertion, which they give under $\operatorname{char}k\ne2$; [](#fibre-nonreduced-a-zero){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} are the published proof of the other two assertions of (b), in every characteristic. Step [](#char-two-fibre-not-two-points){.pf-ref} is the published statement of the defect in characteristic two together with the card's computation of the fibre there.
+Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove (a). Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref} and [](#fibre-two-points-char-neq-2){.pf-ref} prove the two-point assertion, under $\operatorname{char}k\ne2$; [](#fibre-nonreduced-a-zero){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the other two assertions of (b), in every characteristic. Step [](#char-two-fibre-not-two-points){.pf-ref} computes the fibre over $a\ne0$ when $\operatorname{char}k=2$, where it is one nonreduced point with residue field $k$, so the two-point assertion fails there.
 :::
 
 :::
@@ -406,5 +441,5 @@ The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, a
 ::: {.remark title="Published solution"}
 For (a), Cais, Exercise 3.10(a), PDF p. 12, is the complete argument --- reduction to $Y=\Spec B$ and $X=\Spec A$ by the universal property, the factorization of $p$ through $\Spec(A\otimes_BB_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 6, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(A_{\mfp}/\mfp A_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover.  Kim, Cais and Egbert write the two rings with the opposite letters to those used here; their displays are transcribed above with $A$ and $B$ exchanged, the statements unchanged. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
 
-Two of the six parts are not published in the form the exercise prints. The two-point assertion for $a\ne0$ is published only under $\operatorname{char}k\ne2$: all four sources pass from $k[t]/(t^2-a)$ to $k\times k$ without saying that the two roots must be distinct, and only Math StackExchange 1709194 records that the printed claim fails in characteristic two (comments 3488648 and 3489729, quoted in step [](#char-two-fibre-not-two-points){.pf-ref}). The irreducibility of $t^2-s$ over $k(s)$, finally, is asserted by the four sources rather than proved; the valuation check in step [](#t2-s-irreducible){.pf-ref} is the card's.
+The two-point assertion for $a\ne0$ needs the two roots of $t^2-a$ to be distinct, that is $\operatorname{char}k\ne2$: the passage from $k[t]/(t^2-a)$ to $k\times k$ is the Chinese remainder theorem for coprime factors, and in characteristic two the polynomial is $(t-r)^2$ with $r^2=a$. Math StackExchange 1709194 records that the printed claim fails there (comments 3488648 and 3489729, quoted in step [](#char-two-fibre-not-two-points){.pf-ref}). The irreducibility of $t^2-s$ over $k(s)$ is step [](#t2-s-irreducible){.pf-ref}, by the $s$-adic valuation, which needs no separability and so holds in every characteristic.
 :::
