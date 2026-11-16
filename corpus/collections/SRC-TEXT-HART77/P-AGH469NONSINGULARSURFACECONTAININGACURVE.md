@@ -102,8 +102,10 @@ audit:
     MathOverflow text version is accurate, and the remark keeps those
     descriptions. Checked against the book in this pass: the printed
     exercise and its hint on printed p. 355, Proposition II.7.13(a) on
-    printed p. 164, Corollary III.11.5 on printed p. 280. Not checked: the
-    rest of the proof was not re-derived in this pass.
+    printed p. 164, Corollary III.11.5 on printed p. 280, all read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15). Not checked: the rest of the proof was not re-derived in this
+    pass.
 ---
 
 ::: {.problem}

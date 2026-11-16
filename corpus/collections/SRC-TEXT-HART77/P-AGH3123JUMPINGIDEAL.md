@@ -88,7 +88,9 @@ audit:
     step in its 2026-11-16 entry. Checked against the book in this pass:
     III.12.3 on printed pp. 291-292, Theorem II.5.17 on printed p. 121,
     Theorem III.5.2 on printed p. 228, Example III.9.8.4 on printed
-    pp. 259-260. Not checked: no machine computation was run.
+    pp. 259-260, all in the text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15. Not checked: no machine computation was run.
 ---
 
 ::: {.problem}

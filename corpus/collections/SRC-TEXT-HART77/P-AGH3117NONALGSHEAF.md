@@ -95,8 +95,9 @@ audit:
     with the completion of k[x_0,x_1,x_2] at (f) and calls that "hence
     infinite dimensional", which is the k-vector-space inference the card
     records as false in characteristic p. Checked against the book in this
-    pass: III.11.7 on printed p. 281 and Exercise II.9.6. Not checked:
-    nothing new beyond those two re-derivations.
+    pass: III.11.7 on printed p. 281 and Exercise II.9.6, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15). Not checked: nothing new beyond those two re-derivations.
 ---
 
 ::: {.problem}

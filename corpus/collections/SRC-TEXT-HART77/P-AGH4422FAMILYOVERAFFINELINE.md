@@ -69,8 +69,10 @@ audit:
     solution located for this exercise", is restored as it was written and
     is named here. Checked against the book in this pass: IV.4.22 on printed
     p. 340, Exercise III.11.2 on printed p. 280, IV.4.1 and IV.4.4, IV.4.5
-    on printed pp. 317-318. Not checked: simple connectivity of A^1_C in the
-    etale topology is taken from the printed hint, as the card says.
+    on printed pp. 317-318, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15). Not checked: simple connectivity of A^1_C in the etale
+    topology is taken from the printed hint, as the card says.
 ---
 
 ::: {.problem}
