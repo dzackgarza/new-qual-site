@@ -251,6 +251,46 @@ audit:
     onto p. 354, which step #sigma-six-action cites as pp. 353--354; and Hou's
     part (b) on printed p. 5 alone. Nothing on the rendered page changes, and
     nothing of the events before this date is touched.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round: one line of the card's own
+    inside "His proof" that was not marked, one sentence of Hou's that was quoted
+    short of the group it names, one slip of his that was passed over, and one
+    sentence of process in the rendered remark.
+
+    The identity $u^rf(1/u)=\prod_i(1-\mathfrak p_iu)=(-1)^r(\prod_i\mathfrak
+    p_i)\prod_i(u-1/\mathfrak p_i)$ in step #cover-determined-by-branch is the
+    card's own: Vakil's proof goes from the second chart's display to
+    $z^2=u^rf(1/u)$ without it. The step now says so.
+
+    Hou's sentence at §2 Exercise 2(e), printed p. 6, was quoted only up to
+    $[\beta_1,\beta_2,\beta_3]$, which cut off his "modulo $S_3$-action described
+    in (d)" — the wrong group, already recorded in this date's COMPLAINTS record.
+    The quotation in step #bijection now runs to the end of his sentence, and the
+    step names the group he writes against the $\Sigma_6$ the exercise defines and
+    his own (d) describes.
+
+    Hou's part (b), printed p. 5, concludes "f is only branched at
+    $y-\alpha_i\in\Spec k[y]$" in the chart $y=1/x$, where the branch points are
+    $y=1/\alpha_i$; his own $\tilde h(y)=\prod_i(1/\alpha_i-y)$ shows it. Step
+    #kummer-cover-ramification now names that slip beside the conclusion it
+    restates.
+
+    In the published-solution remark, "and the solution transcribes its proof"
+    said how the card was written and is out; the sentence now ends with
+    Proposition 19.5.2 as the statement of part (e)'s uniqueness.
+
+    Where and how this pass read its sources: Vakil in
+    tmp/sources/vakil-rising-sea-2025-10-21.md, Proposition 19.5.2's proof from
+    line 13483 to line 13511 of that file, printed pp. 546--547, the printed
+    folios being the PDF pages of tmp/sources/vakil-rising-sea-2025-10-21.pdf; and
+    Hou in tmp/sources/ntu-ag2-chapter4.md, part (b)'s chart change at line 188 and
+    parts (d) and (e) at lines 200--206, printed pp. 5--6, the printed folios being
+    the PDF pages of tmp/sources/ntu-ag2-chapter4.pdf. Not read in this pass:
+    Reiser, Gruenewald, Egbert and the book, whose pages are those of the events
+    above.
 review: draft
 ---
 
@@ -402,7 +442,12 @@ Hou, §2 Exercise 2(b), printed p. 5, checks the same point by a chart change on
 $\PP^1$, and writes the transformed equation as
 $\tilde z^2=\alpha_1\cdots\alpha_6\tilde h(y)$ with
 $\tilde h(y)=\prod_i(1/\alpha_i-y)$, separating out the case in which one of the
-$\alpha_i$ is $0$, before drawing the same conclusion. The normalization in
+$\alpha_i$ is $0$, before drawing the same conclusion. His conclusion is printed
+as "f is only branched at $y-\alpha_i\in\Spec k[y]$"; in that chart the coordinate
+is $y=1/x$, and the branch points of the chart are $y=1/\alpha_i$, as his own
+$\tilde h(y)=\prod_i(1/\alpha_i-y)$ shows, so the printed $y-\alpha_i$ is a slip of
+his and the branch points of $f$ are the six points $x=\alpha_i$, equivalently
+$y=1/\alpha_i$, with $y=0$ unramified. The normalization in
 which the equation reads $\tilde z^2=\prod_i(1-\alpha_i y)$, with value $1$ at
 $y=0$, is the card's own.
 
@@ -604,7 +649,9 @@ C''=\Spec k[Z,u]/(Z^2-(u-1/\mathfrak p_1)\cdots(u-1/\mathfrak p_r))
 $$
 The two displays are one equation, because
 $u^rf(1/u)=\prod_i(1-\mathfrak p_iu)=(-1)^r\bigl(\prod_i\mathfrak p_i\bigr)
-\prod_i(u-1/\mathfrak p_i)$. So a double cover of all of $\PP^1$ is obtained by
+\prod_i(u-1/\mathfrak p_i)$; that identity is the card's own one-line computation,
+his proof passing from the second display straight to the equation of the next
+paragraph. So a double cover of all of $\PP^1$ is obtained by
 gluing the two patches, and in $K(C)$,
 $$
 z^2=u^rf(1/u)=f(x)/x^r=y^2/x^r ,
@@ -644,7 +691,12 @@ of step [](#normalize-three-points){.pf-ref} a triple in $U$ by step
 [](#normal-form){.pf-ref}; changing the ordering changes the triple by exactly
 the action of step [](#sigma-six-action){.pf-ref}, so $X$ determines a
 well-defined element of $U/\Sigma_6$. Hou's sentence for that is "We then get an
-equivalence class $[\beta_1,\beta_2,\beta_3]$". For an isomorphism
+equivalence class $[\beta_1,\beta_2,\beta_3]$ modulo $S_3$-action described in (d)",
+where the group he names is $S_3$ and not the $\Sigma_6$ of the exercise: his own
+(d) permutes the six-tuple $(0,1,\infty,\beta_1,\beta_2,\beta_3)$ and renormalizes,
+which is the action of $\Sigma_6$, and the group of the classification is
+$\Sigma_6$, of order $720$, as step [](#parameters){.pf-ref} has it. The class here
+is taken modulo the action of $\Sigma_6$. For an isomorphism
 $\varphi:X\to X'$ it argues from $\varphi^*K_{X'}\sim K_X$: the complete linear
 system of $\varphi^*K_{X'}$ gives a morphism to $\PP^1$ which differs from the
 one given by $\abs{K_X}$ by a $\psi\in\Aut(\PP^1)$, so the two branch sets
@@ -719,7 +771,7 @@ Steps [](#canonical-degree-two){.pf-ref} and
 
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::
