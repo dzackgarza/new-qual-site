@@ -143,6 +143,17 @@ audit:
     Remark 23, printed p. 28, which says that an ordinary multiple point
     contributes nothing to g*, is false as printed, an ordinary double point
     contributing 1, and is used nowhere on the card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Page correction to the event above, which is left as written. The formulas
+    (1), (2) and (3) of Fulton's §7.4 all stand on printed p. 88, not across
+    pp. 88-89: PDF p. 96 of the retained PDF, whose head reads 88, carries all
+    three, and printed p. 89 carries (5) and (6). The solution's first step and
+    the remark now say p. 88 for all three; (4) on p. 88, (5) and (6) on p. 89,
+    excellent position, g*, (8) and Lemma 1 on p. 90 and Theorem 2 on p. 91 are
+    as the event above records, and no mathematical claim changes.
 ---
 
 ::: {.problem}
@@ -206,7 +217,7 @@ $$
 with the symmetric formulas $\mu_{P'}(C')=n-r-r''$ and $\mu_{P''}(C')=n-r-r'$; $F'$ is irreducible, $(F')'=F$, and $C'=V(F')$ is the strict transform of $C$.
 
 ::: pf-proof
-This is the opening of Fulton, §7.4, printed p. 87, with (1), (2) and (3) of that section, printed pp. 88--89. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
+This is the opening of Fulton, §7.4, printed p. 87, with (1), (2) and (3) of that section, all three printed p. 88. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
 
 For (1), write $F=F_r(X,Y)Z^{n-r}+\cdots+F_n(X,Y)$ with $F_i$ a form of degree $i$; substituting $YZ$, $XZ$, $XY$ for $X$, $Y$, $Z$ gives
 $$
@@ -354,7 +365,7 @@ Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-positio
 ::: {remark title="Published solution"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15); its statement directs the reader to (3.8), and its notion of ordinary singularity is that of (I, Ex. 5.14).
 
-The proof on the card is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations", text version `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md` (printed page = its marker minus 8): the standard quadratic transformation on printed p. 87, the transform formulas (1), (2), (3) on printed pp. 88--89, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90 resting on Problem 5.26 on printed p. 60 and on Theorem 2 of §5.4 on printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. It proves the exercise in every characteristic, and the two places where the book leaves work to the reader are carried out on the card: the calculation in (8), which is step [](#genus-invariant-drops){.pf-ref}, and the passage from (6) to the ordinariness of the three fundamental images, which is step [](#excellent-position){.pf-ref}.
+The proof on the card is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations", text version `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md` (printed page = its marker minus 8): the standard quadratic transformation on printed p. 87, the transform formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90 resting on Problem 5.26 on printed p. 60 and on Theorem 2 of §5.4 on printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. It proves the exercise in every characteristic, and the two places where the book leaves work to the reader are carried out on the card: the calculation in (8), which is step [](#genus-invariant-drops){.pf-ref}, and the passage from (6) to the ordinariness of the three fundamental images, which is step [](#excellent-position){.pf-ref}.
 
 Thomas Rüd, *Resolution of singularities on projective curves* (semester project, January 6 2015), text version `tmp/sources/rud-2015-resolution-singularities-curves.md` (printed page = the PDF page minus one), proves the same theorem by the same route: Proposition 19 on printed p. 25 for excellent position, Propositions 20 and 21 on printed pp. 26--27 for the multiple points of the transform, Proposition 22 on printed p. 28 for the nonnegativity of $g^*$, Theorem 13 on printed p. 28 for the finite sequence, and §7.3 on printed p. 40 for the case of a positive characteristic, including the bound $p\mid n-r$ for a terrible point and the preparatory transformation. Rüd's Remark 23 on printed p. 28, which says that an ordinary multiple point contributes nothing to $g^*$, is false as printed --- an ordinary double point contributes $1$ --- and nothing on the card uses it.
 :::

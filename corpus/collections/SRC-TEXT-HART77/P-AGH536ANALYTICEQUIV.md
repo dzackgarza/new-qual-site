@@ -185,6 +185,22 @@ audit:
     Shustin, only the text version beside the retained PDF being read; and the
     cross-reference to Proposition 3.21 of that book, cited inside Proposition
     3.41's proof and not read here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Page correction to the event above, which is left as written. The system of
+    multiplicity sequences is defined on printed p. 215, not p. 216: in the
+    retained PDF of Greuel-Lossen-Shustin the paragraph "System of
+    Multiplicity Sequences" opens PDF p. 226, whose running head reads 215,
+    while printed p. 216 carries the list of further data equivalent to it and
+    Proposition 3.41. The step topological-type-multiplicity-sequences and the
+    remark now say p. 215; what the event above records at p. 216 --- the list
+    naming the resolution graph, the Puiseux pairs, the characteristic
+    exponents and the iterated torus knots --- keeps that page, so its argument
+    about what the source leaves unproved is unaffected. Nothing else changes:
+    Theorem 3.42 remains on printed p. 217, Definition 3.30 on p. 202, Example
+    3.43.1(a) on p. 218 and Remark 3.43.3 on p. 219.
 ---
 
 ::: {.problem}
@@ -213,7 +229,7 @@ The exercise's own notion is the one Hartshorne states just before (I, 5.6.1), p
 Two reduced plane curve singularities are topologically equivalent if and only if they have the same system of multiplicity sequences. Hence analytically isomorphic plane curve singularities have the same system of multiplicity sequences.
 
 ::: pf-proof
-This is Greuel--Lossen--Shustin, Theorem 3.42, printed p. 217, a result they attribute to Brauner and Zariski. The system of multiplicity sequences is defined earlier on printed p. 216: for an irreducible germ it is the sequence
+This is Greuel--Lossen--Shustin, Theorem 3.42, printed p. 217, a result they attribute to Brauner and Zariski. The system of multiplicity sequences is defined earlier on printed p. 215: for an irreducible germ it is the sequence
 $$
 (m_0,m_1,\ldots,m_{n-1}),\qquad m_0=\mu_0(C),\quad m_i=\mu_{q^{(i)}}(C^{(i)}),
 $$
@@ -587,7 +603,7 @@ isomorphic, proving that the converse fails.
 ::: {remark title="Published solution"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4) on printed p. 393 and of analytic isomorphism before (I, 5.6.1) on printed p. 34, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
-Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), text version `tmp/sources/greuel-lossen-shustin-2007-singularities-deformations-pp200-220.md` (printed page = its marker minus 11), carries the frame of both halves. Definition 3.30, printed p. 202, states analytic and topological equivalence of a germ side by side; Theorem 3.42, printed p. 217, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 216; Proposition 3.41, printed pp. 216--217, identifies that data with the characteristic exponents and the pairwise intersection numbers. Example 3.43.1(a), printed p. 218, gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, printed p. 219, records that the Tjurina number is an analytic invariant.
+Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), text version `tmp/sources/greuel-lossen-shustin-2007-singularities-deformations-pp200-220.md` (printed page = its marker minus 11), carries the frame of both halves. Definition 3.30, printed p. 202, states analytic and topological equivalence of a germ side by side; Theorem 3.42, printed p. 217, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 215; Proposition 3.41, printed pp. 216--217, identifies that data with the characteristic exponents and the pairwise intersection numbers. Example 3.43.1(a), printed p. 218, gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, printed p. 219, records that the Tjurina number is an analytic invariant.
 
 The published argument stops at that data, and the card's steps [](#ambient-automorphism-lift){.pf-ref}, [](#automorphism-identifies-resolution-data){.pf-ref} and [](#c1-c2-equivalent){.pf-ref} carry the passage to (3.9.4): the first two lift an isomorphism of completed local rings to a formal coordinate change and follow it through the blowup of a point, which is a Rees-algebra construction, and the third computes both blowup chains and their common last pair $x=-y^{\prime\prime3}$. The two Tjurina numbers are printed by the source and computed on steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref}.
 
