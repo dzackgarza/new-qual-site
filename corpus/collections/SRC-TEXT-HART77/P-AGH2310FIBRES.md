@@ -23,7 +23,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point, so the printed two-point assertion is false there. The card keeps the printed hypothesis and proves the two-point assertion under char k != 2, with the characteristic-2 fibre computed as a counterexample.
+  note: Hartshorne II.3.10(b) assumes only that k is algebraically closed, and in characteristic 2 the fibre over a != 0 is one nonreduced point. The statement now assumes k algebraically closed of characteristic different from 2.
 
 - event: source-checked
   by: claude
@@ -32,16 +32,15 @@ audit:
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), II.3.10(b),
     printed p. 92. A further published solution was located outside the twelve
     retained sets and it repeats the defect rather than repairing it:
-    A. Shichijo, R.Hartshorne "Algebraic Geometry" 演習問題への解答
-    (2020/March), <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>,
-    Chapter 2 section 3, Exercise 3.10(b), printed p. 7, read in the MinerU
-    extraction tmp/sources/shitijyou-ch2-section3.md, computes
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 2
+    section 3, Exercise 3.10(b), printed p. 7 of
+    tmp/sources/shitijyou-ch2-section3.pdf, computes
     k[s,t]/(s-t^2) tensor_{k[s]} k[s,u]/(s-a,u) = k[t]/(t^2-a) and then writes
     that ring as k[t]/(t-sqrt a) x k[t]/(t+sqrt a) by the Chinese remainder
     theorem. That factorization needs the two roots distinct, i.e. char k != 2;
     in characteristic 2, a = r^2 and t^2-a = (t-r)^2, the ring is k[t]/((t-r)^2),
     one nonreduced point with residue field k, exactly the counterexample this
-    card keeps as a step. The same slip is at Kim, PDF p. 23, text version `tmp/sources/hartshorne-solutions-kim.md` and Cais, 3.10(b).
+    card keeps as a step. The same slip is at Kim, PDF p. 23 and Cais, 3.10(b).
     So no located source proves the printed two-point assertion in
     characteristic 2, and none can: the printed statement is false there. The
     card keeps its characteristic-two computation and the repair stays open on an
@@ -298,6 +297,56 @@ audit:
     printed pages were not in hand, Egbert's printed p. 84 and Shichijo's
     printed p. 8 being read in the two text versions named; the other five
     sources were not reopened, and no step was re-derived in this pass.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    QUAL-11 restoration, found while reading this card's audit trail against
+    its own history. The event of 2026-10-29 by claude-opus-5-5 was rewritten in
+    place by commit 9022131e94, which replaced its two sentences with a longer
+    note saying that the card keeps the printed hypothesis and proves the
+    two-point assertion under char k != 2. It is restored to the text it
+    carried when written in 8f4787b3b4, which is the text of that day. What
+    that text says that no longer holds is corrected here and not in it: its
+    second sentence records that the statement of 2026-10-29 assumed k
+    algebraically closed of characteristic different from 2, whereas the
+    statement of this card now carries the printed hypothesis with the
+    characteristic-two case recorded and the two-point assertion printed under
+    "and char k neq 2", as the events of 2026-11-15 and 2026-11-16 record; and
+    its first sentence says nothing about the four published solutions that
+    repeat the defect, which the event of 2026-11-15 supplies. Checked in this
+    pass: this card's history at 8f4787b3b4, 9022131e94 and HEAD, and the
+    present statement's hypothesis. Not checked: no source was read for this
+    event, and no page or step of the card was re-read.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    QUAL-11 restoration, the second found in this card's history. The event of
+    2026-11-15 whose note begins "Printed exercise read" was edited in place
+    twice: on its own day, by commit 96b162602a, which replaced the name of
+    Shichijo's document and its path with his title in Japanese, his URL and the
+    extraction file, and on the next day, by commit f67ed2b29e, which inserted
+    the path of Kim's text version into its sentence "The same slip is at Kim,
+    PDF p. 23 and Cais, 3.10(b)". It is restored to the text it carried when
+    written in 9bb4dbad80, which is the text of that day's first commit, and
+    what the two edits added is stated here, with the paths and the pages of
+    the sources staying in the transcription event of even date, which names
+    them all. Shichijo's document is A. Shichijo, *R.Hartshorne "Algebraic
+    Geometry" 演習問題への解答* (2020/March),
+    <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, read in the
+    MinerU extraction tmp/sources/shitijyou-ch2-section3.md, its printed p. 7
+    being p. 7 of tmp/sources/shitijyou-ch2-section3.pdf; and Kim's Exercise
+    2.3.10(b) is at PDF p. 23 of
+    tmp/sources/dongryul-kim-hartshorne-solutions.md, whose text version is
+    tmp/sources/hartshorne-solutions-kim.md, a second copy of the same file
+    under another name. Nothing else about that event changes, and no rendered
+    text of the card moves. Checked in this pass: this card's history at
+    9bb4dbad80, 96b162602a, f67ed2b29e^ and HEAD, and the two Kim files, which
+    are byte-identical. Not checked: no source was reopened and no step was
+    re-read.
 
 ---
 
