@@ -405,6 +405,30 @@ audit:
     this date that reports the round, both repeat the incomplete cube argument and credit it to tom
     Dieck. The first is restored to the text it carried when written, and the correction of both is
     a new record of this date in that file; no dated record is edited in place.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report on this round, correcting the completion that the event above of this date
+    states for the withdrawn cube argument. That completion is wrong in three places. (1) The piece
+    $I^{n-1}\times I\times I$ is not given. It is prescribed by $\varphi$ on $I^{n-1}\times0\times I$,
+    by $V$ on $I^{n-1}\times I\times0$, by $W$ on $I^{n-1}\times I\times1$ and by $\hat\psi$ on
+    $\partial I^{n-1}\times I\times I$: that is its boundary but for the face $I^{n-1}\times1\times I$,
+    and its interior is prescribed by nothing. So "with that the whole of $T$ is prescribed" is
+    false, $T$ containing the piece whose interior is still to be filled. (2) The piece must be
+    filled into $A$, not into $X$. Filled in $X$, its face $I^{n-1}\times1\times I$ can leave $A$,
+    and then the restriction to $I^n\times1\times I$ is not a homotopy of maps of triples, the free
+    face $I^{n-1}\times\{1\}$ lying in $\partial I^n$; such a restriction does not show
+    $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$. (3) The completion has two steps, each the retraction of a cube
+    onto its $J$-configuration. First the piece: what is prescribed on it is a $J$-configuration of
+    the $(n+1)$-cube into $A$, every prescribed face being carried into $A$ — $\varphi$, $V$ and $W$
+    because $I^{n-1}\subset\partial I^n$ and they are homotopies of maps of triples, $\hat\psi$
+    because $J^{n-1}$ is pinned at $v(t)$ — so it extends over the piece into $A$. Then the whole of
+    $T$, now prescribed, is the $J$-configuration of the $(n+1)$-cube in $I^{n+2}$ that the source's
+    retraction fills in $X$. An extension into $A$ is therefore needed, which is what the passes
+    before this round said and what this round wrote away. The card uses the argument nowhere: the
+    independence of the chosen extension is proved by May, as the event above records. The correction
+    is also a new record of this date in `COMPLAINTS.md`; no dated event or record is edited in place.
 
 ---
 
