@@ -109,6 +109,48 @@ audit:
     2026-11-16 put into it being removed; Yang Pi-Yeh's text version is
     tmp/sources/lfwin-hartshorne-solutions.md and Egbert's is
     tmp/sources/hartshorne-solutions-egbert.md.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121 on 2026-11-16: parts (a) and (b) now cite
+    the published arguments at the steps that use them, and the two steps no
+    source carries are marked as this card's own. Read at the cited places: Ted
+    Shifrin's answer 1583486 to Math StackExchange question 1583326, text
+    version tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md,
+    for part (a) by transition functions; Yang Pi-Yeh, Hartshorne Solutions,
+    text version tmp/sources/lfwin-hartshorne-solutions.md, Solution 5.2.17,
+    printed pp. 106-107, for both parts by the Jacobian presentation; and
+    Eisenbud and Van de Ven, On the Normal Bundles of Smooth Rational Space
+    Curves, Math. Ann. 256 (1981), 453-463, text version
+    tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.md
+    with its PDF, Proposition 6, whose statement and the two proofs run from
+    printed p. 458 to p. 460, the printed page being the PDF page plus 452.
+    Checked against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where printed p. N is PDF p. N+15: V.2.17 as printed on pp. 385-386, starred,
+    with its answer "If char k != 2, then l = m = -7; if char k = 2, then
+    l, m = -6, -8". Three things this pass establishes beyond the events
+    above. Part (a): Shifrin's frames and transition matrix are printed in
+    step s5, and Eisenbud and Van de Ven's Proposition 6 is an independent
+    published statement of the same answer for a smooth rational curve of
+    degree at least 3 on a smooth quadric, over a field of characteristic 0 as
+    that paper assumes. Part (b): Yang's 5.2.17(b) is a complete published
+    argument in characteristic 2 and in every characteristic except 3, and it
+    puts characteristic 3 in the split case, contradicting the printed answer;
+    Eisenbud and Van de Ven, Proposition 6 at n = 4, gives l = m = -7 in
+    characteristic 0. The correction of the step: the second elementary
+    operation of step s5 was written the wrong way round, as adding -2t^{-1}
+    times the FIRST column to the SECOND, which leaves the entry -2t^{-6} and
+    does not reduce the matrix; the operation that does reduce it, and the one
+    now stated, is adding -2t^{-1} times the SECOND column to the FIRST, over
+    k[t^{-1}], which leaves t^{-5} times the identity. The event of 2026-11-16
+    above states the earlier direction and is left as it was written. Part (b)
+    in characteristic 3 has no published proof in the sources read, and the
+    card's own step s3, the extension class (n-1) eta, is what decides it; a
+    COMPLAINTS record of this date names that. Not checked: no source beyond
+    the three named and the book was read in this pass, and no machine
+    computation was run.
+
 ---
 
 ::: {.problem}
@@ -125,6 +167,8 @@ audit:
 :::
 
 ::: {.solution}
+Parts (a) and (b) are proved here from the published arguments, each cited at the step that uses it: Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, text version `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, for (a) by transition functions; Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic except $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, text version `tmp/sources/eisenbud-van-de-ven-1981-normal-bundles-rational-space-curves.md`, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes. Steps that no source carries are marked as this card's, and one of them, the extension class of step [](#s3){.pf-ref}, is what decides characteristic $3$.
+
 For $n\ge2$, consider the parametrized rational curve
 $$
 \varphi_n:\PP^1\longrightarrow\PP^3,
@@ -137,7 +181,7 @@ part (b).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The image $C_n$ lies on the smooth quadric
 $$
@@ -155,6 +199,8 @@ $$
 ::: pf-proof
 
 The parametrization satisfies
+Eisenbud and Van de Ven, *Sketch of an Algebraic Proof of Proposition 6*, printed p. 459, put the same reduction in published form: "Suppose $C$ is contained in the quadric $x_0x_2-x_1x_3=0$. Realising $C$ as the graph of an $(n-1)$-to-$1$ map, we may write it parametrically as $\PP^1\ni(s,t)\mapsto(p_0,p_1,p_2,p_3)\in\PP^3$, where each $p_i$ is a form of degree $n$ in 2 variables, and $p_0=sp$, $p_1=sq$, $p_2=tp$, $p_3=tq$ for some relatively prime forms $p$ and $q$", their quadric being this one after a permutation of coordinates.
+
 $$
 x_0x_3-x_1x_2
 =
@@ -203,6 +249,8 @@ $$
 $$
 
 ::: pf-proof
+
+This step and the next two are this card's own general computation for every $n$, and no source carries them; the degree they give agrees with the printed one, $\deg c_1(N)=4n-2$ for a smooth rational curve of degree $n$ in $\PP^3$, from $\deg c_1(\PP^3)=4$ and $\deg c_1(\PP^1)=2$, printed p. 453 of Eisenbud and Van de Ven. Here $\deg E_n=-4n-2$, the sum of the two degrees in the displayed sequence.
 
 For the regular immersions
 $$
@@ -393,6 +441,8 @@ $$
 ::: pf-proof
 
 The zero-class assertion is exactly the definition of a split extension.
+This step is also this card's own; it is the Birkhoff--Grothendieck argument that turns the extension class of step [](#s3){.pf-ref} into a splitting type.
+
 
 Assume the class is nonzero and twist the exact sequence of step [](#s2){.pf-ref} by
 $\OO(2n)$:
@@ -451,6 +501,8 @@ $$
 $$
 
 ::: pf-proof
+
+The independent published statement is Eisenbud and Van de Ven, Proposition 6, printed p. 458: "A smooth rational space-curve $C$ of degree $n\ge3$ which is contained in a smooth quadric has normal bundle $N_C\cong\OO_C(2n-1)\oplus\OO_C(2n-1)$", over a field of characteristic $0$ as their introduction assumes. At $n=3$ that is $N\cong\OO(5)\oplus\OO(5)$, that is $l=m=-5$.
 
 Here $n=2$. By step [](#s3){.pf-ref} the extension class is
 $$
@@ -532,7 +584,7 @@ t^{-5} & 0\\
 2t^{-6} & t^{-5}
 \end{pmatrix},
 $$
-and adding $-2t^{-1}$ times the first column to the second, a column operation
+and adding $-2t^{-1}$ times the second column to the first, a column operation
 over $k[t^{-1}]$, gives
 $$
 t^{-5}
@@ -576,6 +628,10 @@ E_3
 \OO(-6)\oplus\OO(-8).
 $$
 This is exactly the answer stated in part (b).
+
+The published argument for the same splitting is Yang Pi-Yeh, Solution 5.2.17(b), printed p. 107: he computes it by the Jacobian presentation, "If $\operatorname{char}(k)\ne2,3$, all things are like (a). So $0\to\mathcal T_C\xrightarrow{\phi}\mathcal T_{\PP^3}\restrictof_C\to\mathcal N_C\to0$, and $F(\phi):R(-5)\oplus R(-5)\oplus R(-6)\to R(-2)$ given by matrix $(t^3,u^3,6t^2u^2)$. So here $\ker F(\phi)=R(-7)\oplus R(-7)$, i.e. $\varphi^*(\mathcal I/\mathcal I^2)=\OO_{\PP^1}(-7)\oplus\OO_{\PP^1}(-7)$. If $\operatorname{char}(k)=2,3$, $F(\phi)$ is given by $(t^3,u^3,0)$. So $\ker F(\phi)=R(-8)\oplus R(-6)$." That is a complete published argument for every characteristic but $3$, and it agrees with Eisenbud and Van de Ven, Proposition 6, printed p. 458, which at $n=4$ gives $N\cong\OO(7)\oplus\OO(7)$, that is $l=m=-7$, in characteristic $0$. Its characteristic $3$ is wrong: the book prints the split case at $\operatorname{char}k=2$ alone, and the class of step [](#s3){.pf-ref} is $2\eta$, which does not vanish when $2\ne0$.
+
+So part (b) is published in characteristic $2$ and in every characteristic but $2$ and $3$; characteristic $3$, and with it the printed answer's "$\operatorname{char}k\ne2$", rests on this card's step [](#s3){.pf-ref}, which is its own.
 
 :::
 
