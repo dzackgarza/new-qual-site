@@ -155,6 +155,50 @@ audit:
     COMPLAINTS record of 2026-11-16. Not checked: no source beyond the two
     named and the book was read in this pass, and no machine computation was
     run.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report on the transcription, and the one repair it required.
+    Step s4 had Fuentes' Proposition 1.5 as making the generic element
+    irreducible when deg b >= 1+e, which is that proposition's case e not
+    equivalent to 0 alone; its case e equivalent to 0 requires deg b >= 2 or
+    b equivalent to 0, so at e = 0 the earlier sentence named a bound one
+    degree too small. Re-read in the paper's own folios, in
+    tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.pdf, whose
+    page images carry the numbers: Lemma 1.2 opens on p. 2 with its item 1 and
+    its item 2 on p. 3; Proposition 1.3 and its proof are on p. 3, Proposition
+    1.4 on p. 3, and Proposition 1.5's statement closes p. 3 with its two cases
+    and its proof on p. 4. The step now states the two cases as printed and
+    checks the exercise's m >= e+2 against each: at e = 0 with e equivalent to
+    0 the exercise's bound is exactly the 2 of case (1), and with e not
+    equivalent to 0 it gives m >= 2 > 1 = 1+e; at e = -1 the divisor e has
+    degree 1 and case (2) asks for m >= 1+e = 0; at e >= 1 the divisor e is not
+    equivalent to 0 and m >= e+2 >= 1+e. The conclusion of part (a) is
+    unchanged, and the correction of the citation changes no other step. The
+    record of 2026-11-16 that reports this batch gave this proposition as p. 4
+    and gave Lemma 1.2 as p. 3, Proposition 1.3 as pp. 3--4 and
+    Fuentes--Pedreira's Corollary 2.13 as pp. 14--15; the paper's folios give
+    pp. 2--3, p. 3, p. 3 and p. 14, and the correction is stated in a record of
+    this date rather than in that one. Not checked in this pass: nothing else
+    of Fuentes was re-read; the prose of the 2026-11-16 event above, which says
+    this card carries no COMPLAINTS record of this date, is left as written.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Out of the rendered solution's preamble and out of the remark went the
+    tmp/sources paths that named this VM's copies of the sets cited there, on
+    the reader's finding against the same paths on a sibling card of this
+    batch. They are bookkeeping and belong here: Fuentes is read in
+    tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md with its
+    PDF beside it, Fuentes and Pedreira in
+    tmp/sources/projective-theory-ruled-surfaces.md with its PDF, Egbert in
+    tmp/sources/hartshorne-solutions-egbert.md, Yang Pi-Yeh in
+    tmp/sources/lfwin-hartshorne-solutions.md, the National Taiwan University
+    set in tmp/sources/ntu-ag2-chapter5.md beside its PDF, and the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No citation, page or
+    statement changed.
 
 ---
 
@@ -170,7 +214,7 @@ The case $e=-1$ will require special attention.
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source, numbered statement and printed page it transcribes: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`, Lemma 1.2 and Propositions 1.3, 1.4, 2.3, 2.10 and 2.11, printed pp. 3--15; and, for the very-ampleness criterion on a decomposable surface, Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed p. 18, with Corollary 2.13, printed p. 14, and Corollary 2.9, printed p. 11, which prove it. Fuentes numbers the second paper [2], and his notation is the book's: $\mfe$ is the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ is the section of minimum self-intersection, and he writes $X_0$ and $\mathfrak b$ for $C_0$ and $\mfb$.
+Every step below transcribes a published argument and names the source, numbered statement and printed page it transcribes: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Lemma 1.2 and Propositions 1.3, 1.4, 2.3, 2.10 and 2.11, printed pp. 3--15; and, for the very-ampleness criterion on a decomposable surface, Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.9(3), printed p. 18, with Corollary 2.13, printed p. 14, and Corollary 2.9, printed p. 11, which prove it. Fuentes numbers the second paper [2], and his notation is the book's: $\mfe$ is the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ is the section of minimum self-intersection, and he writes $X_0$ and $\mathfrak b$ for $C_0$ and $\mfb$.
 
 Put
 $$
@@ -226,9 +270,9 @@ Every ruled surface over the elliptic curve $C$ is decomposable with $e\ge0$, or
 ::: pf-proof
 Hartshorne, Theorem V.2.12, printed p. 376, gives $e\ge0$ for a decomposable normalized bundle, and Theorem V.2.15, printed p. 377, gives $e=0$ or $-1$ for a ruled surface over an elliptic curve corresponding to an indecomposable $\mathcal E$. Fuentes, Theorem 2.7, printed p. 13, proves the same second half; it is the theorem his page 13 introduces with "Thus, we have actually proved the following theorem", from Theorem 2.1 with Propositions 2.5 and 2.6.
 
-Part (a) asks for a section, and a complete system without base points gives only an effective member, which may be $C_0'$ together with fibres. The irreducible member comes from the same paper. For a decomposable surface, Proposition 1.5, printed p. 4, makes the generic element of $\linearsystem{X_0+\mfb f}$ irreducible when $\deg\mfb\ge1+e$, the alternatives $\mfb\sim0$ and $\mfb\sim-\mfe$ being the systems $\linearsystem{X_0}$ and $\linearsystem{X_0-\mfe f}$; for an indecomposable surface with $e=0$, Proposition 2.2, printed p. 9, does when $\mfb\sim0$ or $\deg\mfb\ge1$; and with $e=-1$, Proposition 2.3, printed p. 10, does when $\deg\mfb\ge0$. An irreducible member of the class $C_0+\mfb f$ meets each fibre once, so it is a section. Fuentes--Pedreira's Corollary 2.9, printed p. 11, gives the same conclusion a second way, a section of that class existing as soon as $\mfb$ and $\mfb+\mfe$ are effective without common base points and $\mfb$ is nonspecial.
+Part (a) asks for a section, and a complete system without base points gives only an effective member, which may be $C_0'$ together with fibres. The irreducible member comes from the same paper. For a decomposable surface, Proposition 1.5, printed pp. 3--4, makes the generic element of $\linearsystem{X_0+\mfb f}$ irreducible in two cases: when $\mfe\sim0$, with $\deg\mfb\ge2$ or $\mfb\sim0$; and when $\mfe\not\sim0$, with $\deg\mfb\ge1+e$, the alternatives $\mfb\sim0$ and $\mfb\sim-\mfe$ being the systems $\linearsystem{X_0}$ and $\linearsystem{X_0-\mfe f}$; for an indecomposable surface with $e=0$, Proposition 2.2, printed p. 9, does when $\mfb\sim0$ or $\deg\mfb\ge1$; and with $e=-1$, Proposition 2.3, printed p. 10, does when $\deg\mfb\ge0$. An irreducible member of the class $C_0+\mfb f$ meets each fibre once, so it is a section. Fuentes--Pedreira's Corollary 2.9, printed p. 11, gives the same conclusion a second way, a section of that class existing as soon as $\mfb$ and $\mfb+\mfe$ are effective without common base points and $\mfb$ is nonspecial.
 
-The hypotheses hold here. At $e=0$ the exercise assumes $m\ge e+2=2$, and $m\ge2\ge1$; at $e=-1$ it assumes $m\ge1$, and $m\ge1\ge0$; at $e\ge1$ it assumes $m\ge e+2\ge1+e$. So in each case there is a section $D\sim C_0+\mfb f$, and $\linearsystem{L}$ has no base points by step [](#s2){.pf-ref} or step [](#s3){.pf-ref}.
+The hypotheses hold here, case by case. At $e=0$ the exercise assumes $m\ge e+2=2$: with $\mfe\sim0$ that is the bound $2$ of Proposition 1.5(1), and with $\mfe\not\sim0$ it gives $m\ge2>1=1+e$. At $e=-1$ the invariant is $-1$ with $\deg\mfe=1$, so $\mfe\not\sim0$, and the exercise assumes $m\ge1=1+e$. At $e\ge1$ the exercise assumes $m\ge e+2\ge1+e$, and $\mfe\not\sim0$ because $e\ge1$. So in each case there is a section $D\sim C_0+\mfb f$, and $\linearsystem{L}$ has no base points by step [](#s2){.pf-ref} or step [](#s3){.pf-ref}.
 :::
 
 :::
@@ -289,9 +333,9 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), st
 ::: {.remark title="Published solution"}
 The four statements transcribed above are Fuentes' own classification of base-point-free and very ample unisecant systems on an elliptic ruled surface, and they cover the exercise completely, both parts and both the decomposable and the indecomposable case.
 
-Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1, 6 September 2000), text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`, printed pp. 3--15: Lemma 1.2, printed pp. 2--3, is the degree criterion on an elliptic curve; Proposition 1.3, printed p. 3, is base-point freeness on a decomposable surface, with the exceptions $\mfb\sim0$ at $\mfe\sim0$ and $\mfb\sim-\mfe$ at $e\ge2$; Proposition 1.4, printed p. 3, is very ampleness on a decomposable surface; Proposition 2.10, printed pp. 14--15, is base-point freeness on an indecomposable one; Proposition 2.11, printed p. 15, is very ampleness on an indecomposable one. The exercise's hypotheses $m\ge e+2$ and $m\ge e+3$ fall in the main alternatives of Propositions 1.3 and 2.10, since $e\ge0$ there and $m\ge e+2$ excludes $\mfb\sim0$ at $e=0$ and $\mfb\sim-\mfe$ at $e\ge2$. Theorem 2.7, printed p. 13, which reduces the indecomposable case to $e=0$ and $e=-1$, is proved there from Theorem 2.1 with Propositions 2.5 and 2.6, as its page 13 says in introducing it; the book's Theorem V.2.15, printed p. 377, proves the same reduction independently. Steps [](#s4){.pf-ref} cites both, and Proposition 1.5 with Propositions 2.2 and 2.3 supply the irreducible member that makes the member of the system a section.
+Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1, 6 September 2000), printed pp. 3--15: Lemma 1.2, printed pp. 2--3, is the degree criterion on an elliptic curve; Proposition 1.3, printed p. 3, is base-point freeness on a decomposable surface, with the exceptions $\mfb\sim0$ at $\mfe\sim0$ and $\mfb\sim-\mfe$ at $e\ge2$; Proposition 1.4, printed p. 3, is very ampleness on a decomposable surface; Proposition 2.10, printed pp. 14--15, is base-point freeness on an indecomposable one; Proposition 2.11, printed p. 15, is very ampleness on an indecomposable one. The exercise's hypotheses $m\ge e+2$ and $m\ge e+3$ fall in the main alternatives of Propositions 1.3 and 2.10, since $e\ge0$ there and $m\ge e+2$ excludes $\mfb\sim0$ at $e=0$ and $\mfb\sim-\mfe$ at $e\ge2$. Theorem 2.7, printed p. 13, which reduces the indecomposable case to $e=0$ and $e=-1$, is proved there from Theorem 2.1 with Propositions 2.5 and 2.6, as its page 13 says in introducing it; the book's Theorem V.2.15, printed p. 377, proves the same reduction independently. Steps [](#s4){.pf-ref} cites both, and Proposition 1.5 with Propositions 2.2 and 2.3 supply the irreducible member that makes the member of the system a section.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, is the paper Fuentes cites as [2] throughout, in an earlier numbering: its Theorem 3.9(3), printed p. 18, is the very-ampleness criterion $\linearsystem{X_0+\mfb f}$ very ample if and only if $\mfb$ and $\mfb+\mfe$ are, which Fuentes cites as [2, Theorem 2.8]; its Corollary 2.13, printed p. 14, is the criterion $h^0(H-(P+Q)f)=h^0(H)-4$, cited as [2, Theorem 1.10]; its Corollary 2.4, printed p. 9, is the base-point-free criterion $h^0(H-Pf)=h^0(H)-2$, cited as [2, Corollary 1.4]; its Corollary 2.9, printed p. 11, is the base-point-free criterion for a section $\linearsystem{X_0+\mfb f}$, cited as [2, Corollary 1.8]; its Theorem 3.2(1), printed p. 15, is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.6, printed p. 17, is the irreducible-element criterion, cited as [2, Theorem 2.5]; and its Proposition 3.4, printed p. 16, is the base-point criterion on a decomposable surface, cited as [2, Proposition 2.3]. Each number Fuentes cites, including [2, Corollary 1.8] in Propositions 2.2 and 2.10, points at one of these. Every one of those is proved in that paper, and Corollary 2.13's two directions are Theorem 2.11, printed pp. 12--13, and the two base-point criteria.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is the paper Fuentes cites as [2] throughout, in an earlier numbering: its Theorem 3.9(3), printed p. 18, is the very-ampleness criterion $\linearsystem{X_0+\mfb f}$ very ample if and only if $\mfb$ and $\mfb+\mfe$ are, which Fuentes cites as [2, Theorem 2.8]; its Corollary 2.13, printed p. 14, is the criterion $h^0(H-(P+Q)f)=h^0(H)-4$, cited as [2, Theorem 1.10]; its Corollary 2.4, printed p. 9, is the base-point-free criterion $h^0(H-Pf)=h^0(H)-2$, cited as [2, Corollary 1.4]; its Corollary 2.9, printed p. 11, is the base-point-free criterion for a section $\linearsystem{X_0+\mfb f}$, cited as [2, Corollary 1.8]; its Theorem 3.2(1), printed p. 15, is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.6, printed p. 17, is the irreducible-element criterion, cited as [2, Theorem 2.5]; and its Proposition 3.4, printed p. 16, is the base-point criterion on a decomposable surface, cited as [2, Proposition 2.3]. Each number Fuentes cites, including [2, Corollary 1.8] in Propositions 2.2 and 2.10, points at one of these. Every one of those is proved in that paper, and Corollary 2.13's two directions are Theorem 2.11, printed pp. 12--13, and the two base-point criteria.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.12, PDF pp. 268--269, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its two absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, and the values $4$ and $0$ it gives are $5$ and $1$. Algebraic Geometry II, National Taiwan University, 2020 Spring, text version `tmp/sources/ntu-ag2-chapter5.md`, has no entry for Exercise 12 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, PDF pp. 268--269, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its two absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, and the values $4$ and $0$ it gives are $5$ and $1$. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 12 of §2.
 :::
