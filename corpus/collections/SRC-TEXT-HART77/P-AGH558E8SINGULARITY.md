@@ -215,6 +215,29 @@ audit:
     which the NTU set states and does not derive. Those four were on the card
     before this batch and are kept, not rewritten. Not checked: whether the
     eight blowups are minimal, and Brieskorn's table of Satz 2.11 row by row.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repaired on a reader's third report of this date, which is right on both
+    points. The paragraph that stood in step third-blowup-two-points and
+    identified Yang's chart y_3=1 with the card's germ X^2+zY(Y+z), and then
+    named his printed chart z_3=1 as not being the strict transform, is source
+    reading in a rendered proof and is removed from the card. Read there, in
+    tmp/sources/lfwin-hartshorne-solutions.md, solution 5.5.8(b), printed
+    pp. 114--115 of tmp/sources/lfwin-hartshorne-solutions.pdf: the chart
+    y_3=1 of his third blowup reads x_3^2+z_2^2z_3+z_2z_3^2, which is the
+    card's germ; his chart z_3=1 reads z_2^3+y_1y_3^2+y_1z_2, whose quadratic
+    part y_1z_2 has rank two, where the strict transform there is
+    x_3^2+y_1y_3+y_1^2y_3^3, of quadratic rank three, so that printed
+    equation is not the strict transform. The card uses none of his charts of
+    that blowup: the two germs of step third-blowup-two-points are the NTU
+    set's items (iii), which the step now names as that set's rather than as
+    "the same set" after the Yang paragraph that was removed.
+
+    Not checked: nothing new in this pass; the charts were not recomputed.
+    The fourth and later blows of Yang's entry are recorded in the event above
+    of this date, which is where the reading of them belongs.
 ---
 
 ::: {.problem}
@@ -639,13 +662,6 @@ X^2+zY(Y+z)=0.
 $$
 It is the intersection of the strict transform of $E_2$ with $E_3$.
 
-Yang Pi-Yeh, solution 5.5.8(b), printed p. 114, has the chart $y_3=1$ of this
-blowup as $x_3^2+z_2^2z_3+z_2z_3^2$, which is $X^2+zY(Y+z)$; his chart
-$z_3=1$ is printed as $z_2^3+y_1y_3^2+y_1z_2$, and that is not the strict
-transform, which is $x_3^2+y_1y_3+y_1^2y_3^3$ there: the quadratic form
-$x_3^2+y_1y_3$ has rank three where the printed expression's $y_1z_2$ has
-rank two.
-
 Thus after the third blowup the incidence graph of the old exceptional
 curves is
 $$
@@ -653,7 +669,8 @@ E_1-E_3-E_2,
 $$
 with the two displayed intersection points still singular.
 
-The two germs are items (iii) of the same set, PDF p. 21,
+The two germs are items (iii) of Exercise 8 of §5 of the NTU *Chapter V
+Surfaces* homework, PDF p. 21,
 $x_3^2+z_3y_1+y_1^2z_3^3$ and $x_3^2+z_2y_3^2+y_3z_2^2$; that the second of
 them is $X^2+zY(Y+z)$ and the first is $X^2+yZ+y^2Z^3$, and that their
 exceptional curves are the strict transforms of $E_1$ and $E_2$ meeting
