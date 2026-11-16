@@ -22,6 +22,8 @@ Add a descriptive heading in the appropriate section below, with:
 
 - **Repair:** link the existing issue when available and state the result that would resolve the observation.
 
+A record that is dated states its own day first: a section heading begins with it (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or numbered item carries it (`**Searched outside the retained sets (issue #131, 2026-11-11).**`). A day the record only mentions follows its own, so a lead with no day records none. The gate refuses a commit that changes or deletes a dated record of an earlier day; a heading without a leading day, or a lead without a day, is not a record and may be edited.
+
 A missing hypothesis with a concrete counterexample is a mathematical issue.
 An unreadable source is an unresolved source question.
 An unsolved problem is ordinary authoring work, not by itself a defect.
@@ -32,7 +34,7 @@ Preserve concurrent entries.
 If the selected proof requires a repair, link that dependency and resolve it before relying on the statement; recording it does not make the proof valid.
 Continue independent assigned mathematics.
 
-After verifying the full repair, remove the resolved entry with evidence in the fixing commit; retain any unresolved portion.
+After verifying the full repair, remove an undated entry with evidence in the fixing commit and retain any unresolved portion; a dated record is not removed, and a new record of the fixing commit's date states the resolution (QUAL-11).
 Put durable mathematical errata on the owning card and durable policy in CONTRIBUTING. Keep process notes out of public mathematical remarks.
 
 ## Mathematical issues and source questions
@@ -1518,7 +1520,7 @@ A set not read before was located and is held: Yougi, *Munkres Topology Solution
 
 **Repair.** Two cards were corrected. `E-LHQJE` concluded $n(f,a)=\deg h$ by calling both sides "the change in the lift of $g$", which is the definition of $n(f,a)$ on printed p. 403 but not that of $\deg h$: §58 Exercise 9 defines the degree by $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, and the card now identifies the two through the isomorphism $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ of Theorem 54.5 (printed p. 345). `E-2B91X` cited the closed-surjection normality statement as "Exercise 6 of §32, printed p. 199"; the exercise is Exercise 6 of **§31**, printed p. 199. The other nine keep the substance of the proofs their cards carried --- for §68.4 and §73.4 the argument of the published proof transcribed in this pass --- and those proofs were re-read against the book's numbered results: §66.2 against the definition of $n(f,a)$ (printed p. 403) and Green's theorem; §68.1 against Example 1 (printed p. 414); §68.4 against Lemma 68.3 and Theorem 68.4 (printed p. 418); §69.2 against Lemma 68.3 (printed p. 418) and Lemma 67.5 (printed p. 410); §70.1 against Theorem 70.1 (printed p. 426); §70.2 against Theorem 70.1 and §59; §72.1 against Corollary 70.4 (printed p. 432) and Theorem 59.3 (printed p. 369); §72.2 against Lemma 73.3 (printed p. 443); §72.3 against Theorem 72.1 (printed p. 439) and the definition of the fundamental group in §52 (printed p. 331); §73.4 against Theorem 34.1 (printed p. 215) and Theorem 26.2 (printed p. 165).
 
-## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved
+## 2026-11-15: `SRC-TEXT-HART77`, the #121 pass, the cards listed, and what the sources outside the retained sets proved
 
 **Object and need.** [Issue #121](https://github.com/dzackgarza/new-qual-site/issues/121): every Hartshorne card whose
 entry here says it has no complete published solution is to carry a proof transcribed from a published
@@ -2377,7 +2379,7 @@ therefore carries five sentences of his entry, one of them begun on p. 113, and 
 two, and then three, undercounted it. The card's published-solution remark and the entry above now cite
 pp. 113--114, name p. 114 as the page of the decisive passage, and quote the fraktur.
 
-## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)
+## 2026-11-15: `SRC-TEXT-HART77` #121, the remaining cards against the MinerU text versions, second pass
 
 **Stack Exchange was not searchable.** The throttle on this VM's address runs to about 03:00Z on
 2026-11-16; this pass ran from 20:31Z on 2026-11-15, so no query was sent and no thread is cited. That is a
@@ -2529,7 +2531,7 @@ $h^0\ge3$, and $h^0=3$ would put $X$ in $\PP^2$ as a surface, i.e. $X\cong\PP^2$
 **No closure.** The three reader items of the pass are in $d387252b70$; the cards above keep their own proofs
 and the obligation recorded in their sections.
 
-## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards
+## 2026-11-15: `SRC-TEXT-HART77` #121, the third pass, four repairs and the next two cards
 
 **The four repairs.** Egbert's MinerU text version now exists and is cited on the cards that read him
 (`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; the copy read here at
@@ -2560,7 +2562,7 @@ read is **V.4.15** (the 56 and 240 negative curves and the admissible-transforma
 The Chapter I items of this list that this file's sections record as closed on 2026-11-16 are I.2.9(b),
 I.3.16(c), I.3.19(a), I.3.20, I.5.5 ($p=3$ included), I.5.6(b), I.5.8, I.5.12(b) and I.5.13.
 
-## `SRC-TEXT-HART77` #121: the batch of 2026-11-16, nine Chapter I cards
+## 2026-11-16: `SRC-TEXT-HART77` #121, the batch, nine Chapter I cards
 
 One chat of the parallel #121 batches, on the nine Chapter I cards named in its brief: I.2.9(b), I.3.16(c),
 I.3.19(a), I.3.20, I.5.5 with $p=3$, I.5.6(b), I.5.8, I.5.12(b), I.5.13. Four of them had no located
@@ -2635,7 +2637,7 @@ linear factors independent, so the case $c\ell^2$ is the card's; and the equatio
 I.5.5, which covers every $p\mid d$ at once, is not in any source found and is kept only as a checked
 alternative. The card I.5.5 no longer rests on it.
 
-## `SRC-TEXT-HART77` #121: the Chapter I reader's report of 2026-11-16, Batch A of two
+## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter I reader's report, Batch A of two
 
 A local reader reported on the nine Chapter I cards of the batch above. Batch B of its report is another
 chat's; this section is Batch A only, and each item was checked against the card, the text version and the
@@ -2820,7 +2822,7 @@ of exposition, apart from the false reason in one sentence of the I.3.16(c) rema
   points $2x+y^{d-1}=3x=3y^{d-1}$, so "$3y^{d-1}$" was right and the missing condition is what the line now
   states.
 
-## `SRC-TEXT-HART77` #121: the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation in a new entry
+## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation in a new entry
 
 The reader of the last round returned one item, and it is right: the paragraph "**Searched outside the
 retained sets (issue #131, 2026-11-11).**" of the I.5 entry is a dated record, and the two commits before
@@ -2849,8 +2851,8 @@ it was written on 2026-11-11, and the correction is this entry.
   states", which described the rewritten paragraph. With the paragraph restored, the condition is stated
   here and in that item itself, not in the 2026-11-11 entry; nothing in the item's mathematics changes.
 
-*This entry is of 2026-11-16. The date in its heading, 2026-11-11, is the date of the note it restores, not
-this correction's; the correction's dated entry is below.*
+*This entry is of 2026-11-16, the day its heading begins with. The 2026-11-11 it names is the date of the
+note it restores, not this correction's; the correction's dated entry is below.*
 
 ## `SRC-TEXT-HART77` #121: the five complaint edits `27598ae933` carried from other batches, and two dates of the round under review
 
@@ -2890,13 +2892,13 @@ The `E-HAT-2.C-6`, `E-HAT-2.C-1`, `E-HAT-3.A-1`/`4.1-1` and `E-HAT-4.1-9` paragr
 - **`E-HAT-4.1-7`.** The paragraph says the piece over $\partial I^n\times I\times I$ is filled by a map into $A$ from three faces of a square, "a subcomplex of the cube", and that this gives the homotopy of triples from $V_1$ to $W_1$. That is false. The three prescribed faces do not force the value $v(s)$ on $J^{n-1}\times I\times I$, so the value on $J^{n-1}\times\{1\}\times I$ need not be $a_1$; and an arbitrary subspace $A$ has no cell-extension property, so a map on a subcomplex of the cube into $A$ need not extend over the cube. The fill and the sentence that $I^{n+2}$ is $J^{n+1}$ with one cell attached along $\partial I^{n+1}\subset J^{n+1}$ are withdrawn. The lemma is now proved by May's fibration $p:(X,A)^{(CS^{n-1},S^{n-1})}\to A$ and the homotopy lifting property, with no extension into $A$: two lifts of the path $v$ with the same initial point are homotopic through lifts, and the track at $s=1$ joins $V_1$ to $W_1$ in the fibre $F_{a_1}$. May, *A Concise Course in Algebraic Topology*, §5, printed pp. 68--69. The card's event restored from `1f84ed8f2c` was added by `91078b37d9`, not pushed by `58a42f4703`, which touched only `E-HAT-3.B-4`; and Davis--Kirk's text version is `tmp/sources/davis-kirk-lecture-notes-algebraic-topology.md`.
 - **`E-HAT-4.1-9`.** The paragraph says the surjectivity half at the window centred at $\pi_2(X,A,x_0)$ is open. It is not: the boundary map factors as $h=q\circ\partial$ with $\partial$ a homomorphism into $\pi_1(A)$ and $q$ the map of the pair sequence whose kernel is the image of $\pi_1(B)$, so the fibres of $h$ are cosets of $\ker h=\operatorname{im}(\pi_2(X,B)\to\pi_2(X,A))$; the same holds for $h'$ on the triple $(Y,C,D)$, and the chase then writes $c'=\gamma(g(b)a)$ for an arbitrary $c'\in\pi_2(Y,C)$. Both directions at that window are proved on the card. **Open, and stated as open:** both directions at the two $\pi_1$ pointed-set windows, where the chase gives only triviality of the fibre over the base point.
 
-## `SRC-TEXT-HART77` #121: the fourth pass's correction is dated 2026-11-16, and its $d=2$ second equation reads $x=1$
+## 2026-11-16: `SRC-TEXT-HART77` #121, the fourth pass's correction, and its $d=2$ second equation reads $x=1$
 
 The entry "the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation
-in a new entry" above is the correction the last review required; the note at its foot dates it 2026-11-16,
-and its heading's only day, 2026-11-11, is the date of the paragraph it restores. QUAL-11 dates an entry by
-the first date on its opening line, so the section reads as one of 2026-11-11 and is left as written. This
-entry is the correction's dated entry, and it records the one mathematical repair the correction needs.
+in a new entry" above is the correction the last review required; its heading begins with the day it was
+written, 2026-11-16, and the 2026-11-11 it names is the date of the paragraph it restores. QUAL-11 dates a
+section by the day its heading begins with and a paragraph by the day its lead carries first, so that
+section is a record of 2026-11-16 and this one states the one mathematical repair the correction needs.
 
 Its "The computation, stated here" bullet specializes the two partial-vanishing equations at $d=2$ as
 "$1=y$ and $x=y$". The second displayed equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not

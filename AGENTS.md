@@ -1013,3 +1013,9 @@ dates, at the foot, under `Audit trail`. An event dated before the commit that
 carries it is a record, not a draft: the local gate refuses a commit that
 changes or deletes one, so a correction is a new event dated the commit's date
 (`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
+`COMPLAINTS.md`'s dated records are held to the same rule and state their own
+day first: a section heading begins with it (`## 2026-11-16: …`), and the bold
+or italic lead that opens a paragraph or numbered item carries it. A push
+replays each published commit against its own parent and its own committer day,
+so a sanctioned `--no-verify` content commit is still judged by the day it was
+written.
