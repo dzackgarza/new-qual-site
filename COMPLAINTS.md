@@ -3411,6 +3411,7 @@ open is unchanged: the printed parenthetical of IV.2.3(h) and the two identifica
 II.5.14(d) and has no published proof located that can be cited without repair, under
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121). Nothing in this record supersedes an
 earlier entry of this file.
+
 ## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the parts that stay open
 
 The batch is the four cards `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15),
