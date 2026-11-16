@@ -206,6 +206,20 @@ audit:
     p. 184, and Example 2C.4 on printed p. 181 = PDF page 190. Not claimed: a published solution of
     Exercise 2.C.6, and no page was read from a rendered image.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A page range in the construction step, which the event above introduced: it said Dugger's
+    §2.7 is on printed p. 12, and the section opens on printed p. 11, where page 11 of
+    `tmp/sources/dugger-involutions-surfaces-2016.pdf` carries the running head "INVOLUTIONS ON
+    SURFACES 11" and the line "2.7. Constructions of free actions. Let T_g be the genus g torus. If
+    we assume"; the two quotient computations and Proposition 2.8 follow on printed p. 12. The card
+    now writes "§2.7, printed pp. 11--12" for the antipodal involution and keeps Proposition 2.8 on
+    printed p. 12. Nothing else changes: Theorem 4.1(a) is on printed p. 18, the quotient
+    $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on printed p. 12, and the trace computation remains the
+    card's own.
+
 ---
 
 ::: {.problem}
@@ -223,7 +237,7 @@ Define a homeomorphism $f:M_{2m}\to M_{2m}$ by the antipodal map on the central 
 
 ::: pf-proof
 
-This is Dugger's construction, and the model is his Proposition 2.8: *Involutions on Surfaces*, §2.7, printed p. 12, for the antipodal involution $x\mapsto -x$ of the standardly embedded torus, and Proposition 2.8 on the same printed page for the equivariant splitting $T^{\mathrm{anti}}_{2g}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, whose printed proof reads "Left to the reader". Read in `tmp/sources/dugger-involutions-surfaces-2016.md`, whose printed page 12 is PDF page 12 of `tmp/sources/dugger-involutions-surfaces-2016.pdf`.
+This is Dugger's construction, and the model is his Proposition 2.8: *Involutions on Surfaces*, §2.7, printed pp. 11--12, for the antipodal involution $x\mapsto -x$ of the standardly embedded torus, and Proposition 2.8 on printed p. 12 for the equivariant splitting $T^{\mathrm{anti}}_{2g}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, whose printed proof reads "Left to the reader". Read in `tmp/sources/dugger-involutions-surfaces-2016.md`, whose printed page 12 is PDF page 12 of `tmp/sources/dugger-involutions-surfaces-2016.pdf`.
 
 Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by an embedding $h_{i'}:T\to M_{2m}$ whose attaching chart on $\partial T$ is $\restrictionof{\alpha\circ h_i}{\partial T}$, a chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Only this boundary chart is defined by $\alpha$; the interior of the partner copy carries its own embedding, since $h_i(T)$ lies largely outside the sphere on which $\alpha$ is defined. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands. A band $D^1\times D^1$ attached along $S^0\times D^1$ lowers $\chi$ by $1$ --- the band has $\chi=1$ and the attaching region $S^0\times D^1$ has $\chi=2$ --- and whether it raises the genus depends on the attaching data: a band whose two attaching intervals lie on distinct boundary circles merges them and raises the genus by one, while one attached with both intervals on the same boundary circle splits that circle and leaves the genus unchanged. A count of $2m$ bands therefore does not determine the genus by itself, and the construction here is specified by its pieces. This is Dugger's $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
 
