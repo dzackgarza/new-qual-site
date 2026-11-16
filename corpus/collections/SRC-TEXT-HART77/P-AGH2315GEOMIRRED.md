@@ -160,9 +160,8 @@ audit:
     three other cards of the round.
     (3) The event above says that the COMPLAINTS.md edits of that pass "were
     carried into commit 493cf6e98d, which is another chat's". That commit
-    carries none of them: `git show 493cf6e98d -- COMPLAINTS.md` changes only
-    the V.3.7 sentence of the Chapter V state paragraph, the V.4.4(b)
-    paragraph and the V.5.8(b) paragraph. They entered
+    carries none of them: `git show 493cf6e98d -- COMPLAINTS.md` is the
+    V.3.6, V.3.7, V.4.3, V.4.4(b) and V.5.8(b) paragraphs only. They entered
     through 89d13d01e14 (2026-11-16 07:13:27), whose COMPLAINTS diff carries
     the II.3.15 header, the Cais paragraph, the duplicated sentence of the
     II.2.15(c) entry and the I.7.6(a) sentence of the I.7.7(b) correction.
@@ -170,6 +169,23 @@ audit:
     89d13d01e14. Not checked in this pass: the mathematics of the rest of the
     card, which the reader accepted, and part (c)'s three examples, which
     were not changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, sixth pass: the fourth-pass event above was
+    rewritten in place by 104d6c8646, and it is restored here to the text it
+    had on its date, as d6dd20ac0c committed it. The rewrite was false as well
+    as in place. The restored enumeration is right: `git show 493cf6e98d --
+    COMPLAINTS.md` has three hunks, and what they add is the V.3.7 sentence of
+    the Chapter V state paragraph and four new paragraphs, V.3.6, V.4.4(b),
+    V.4.3 and V.5.8(b). The five the event names are therefore V.3.6, V.3.7,
+    V.4.3, V.4.4(b) and V.5.8(b), the V.3.7 change being the sentence appended
+    to that paragraph rather than one of the four new ones; the rewrite
+    dropped V.3.6 and V.4.3, and both are in that diff. The commit the event
+    corrects is unchanged: the II.3.15 edits entered through 89d13d01e14, not
+    493cf6e98d. Nothing in the problem, the solution or the pages changes, and
+    no page was re-read.
 - event: source-corrected
   by: claude
   date: 2026-11-16
