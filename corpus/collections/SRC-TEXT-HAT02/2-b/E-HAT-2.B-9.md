@@ -118,6 +118,25 @@ audit:
     cochain sequence (4.3.9) $0\to C^*(X)\xrightarrow{C^*p}C^*(\tilde X)\xrightarrow{tr^*}C^*(X)\to0$;
     and against Hatcher (2002), §2.B Exercise 9 on printed p. 177 and the transfer of printed
     pp. 174--175.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader batch. The reader found no defect in the mathematics. Two repairs. (1) One
+    parenthetical of the 2026-11-14 `solution-written` note is wrong: it says the exercise
+    stands on printed p. 177 because "printed p. 176 (PDF page 185) ends at Exercise 8". Printed
+    p. 176 ends at **Exercise 6**, and printed p. 177 opens with Exercise 7 and runs to
+    Exercise 11; the page for Exercise 9 is p. 177 either way and the card's statement, proof
+    and remark are unchanged, but the support given for the page is corrected. Checked in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, where Exercise 7 heads the 2.B list
+    continued after Exercise 6, and in the PDF text layer (PDF page 185 carries Exercises 1--6
+    on printed p. 176, PDF page 186 carries Exercises 7--11 on printed p. 177). (2) The
+    citations now name the text versions: Hatcher in
+    `tmp/sources/hatcher-2002-algebraic-topology.md` (the exercise, printed p. 177; the
+    transfer, printed pp. 174--175), Hausmann in
+    `tmp/sources/hausmann-mod-two-homology-cohomology.md` (Proposition 4.3.9, printed p. 123;
+    Lemma 4.3.6(3), printed p. 120; Exercise 4.4 of Chapter 4, printed p. 166). Not claimed: a
+    printed solution of Hausmann's Exercise 4.4 or of Hatcher's Exercise 2.B.9.
 ---
 
 ::: {.problem}
@@ -191,5 +210,5 @@ $$
 in each degree, which is the same two-sheet computation at the cochain level: over $\ZZ_2$ the cochain complex of $\tilde X$ is $C^*(X;\ZZ_2)\oplus C^*(X;\ZZ_2)$, and $C^*p$ is the diagonal while $\tau^*$ is addition, because $C_*p(a,b)=a+b$ is addition and $\tau(c)=(c,c)$ is the diagonal. The sequence splits by $\alpha\mapsto(\alpha,0)$, so $H^m(\tilde X;\ZZ_2)\cong H^m(X;\ZZ_2)^{\oplus2}$ for every $m$. Hausmann asks for exactly this computation as Exercise 4.4 of Chapter 4, printed p. 166, "Write the transfer exact sequence for a trivial 2-fold covering", and prints no solution to it; the two-sheet coordinates supplied here are the cohomological counterpart of those of the exercise as Hatcher states it.
 
 ::: {.remark title="Published solution"}
-Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), the transfer for a two-sheeted covering, printed pp. 174--175: $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$.
+Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), read in `tmp/sources/hausmann-mod-two-homology-cohomology.md`: Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the transfer for a two-sheeted covering, printed pp. 174--175, $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$.
 :::
