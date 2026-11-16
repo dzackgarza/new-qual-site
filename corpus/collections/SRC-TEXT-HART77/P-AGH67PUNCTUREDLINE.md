@@ -164,9 +164,7 @@ audit:
     a9d902a1a9 (committer date 2026-11-16 07:15:38) and the four further
     repairs in 27598ae933 (committer date 2026-11-16 07:30:29). A record
     carries the day of the commit that lands it, so both are dated 2026-11-16
-    now, and their text is untouched. The "Record of a date" event below left
-    the dates as written; the reader of this pass requires the field itself to
-    carry the commit's day. Nothing else on the card changes.
+    now, and their text is untouched. Nothing else on the card changes.
 
 ---
 

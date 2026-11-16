@@ -116,10 +116,8 @@ audit:
     source-corrected event above is dated 2026-11-17, a day that had not
     happened when it was written and committed, in a9d902a1a9 (committer date
     2026-11-16 07:15:38). A record carries the day of the commit that lands
-    it, so its date is now 2026-11-16, and its text is untouched. The "Record
-    of a date" event below left the date as written; the reader of this pass
-    requires the field itself to carry the commit's day. Nothing else on the
-    card changes.
+    it, so its date is now 2026-11-16, and its text is untouched. Nothing else
+    on the card changes.
 
 ---
 
