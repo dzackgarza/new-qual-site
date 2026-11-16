@@ -178,6 +178,24 @@ audit:
     characteristic 0. The claims of steps nonsingular-members and conclusion no
     longer assert attainment at every d > 0 without a hypothesis. No proof was
     added for d = 4 in characteristic p, and none is claimed.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass, on the reader's third report: one page in the third pass's
+    event of this date is wrong. That event cites "III.7.9.1, printed p. 273"
+    for the connectedness of the hyperplane section. Remark 7.9.1 is printed
+    on p. 245, in the text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md under the marker for PDF
+    page 260, where printed p. N is PDF p. N+15. The other page that event
+    cites was rechecked here and stands: Corollary 10.9, printed p. 274, is
+    under the marker for PDF page 289. The argument does not move with the
+    number: II.8.18, printed p. 179, gives the regular hyperplane section for a
+    nonsingular closed subvariety of projective space over an algebraically
+    closed field in every characteristic, and Remark 7.9.1 adds that the
+    section is connected, hence irreducible and nonsingular, when dim X >= 2.
+    The event that carried the wrong page is left as written, and the
+    correction is the record of this date in COMPLAINTS.md.
 ---
 
 ::: {.problem}
