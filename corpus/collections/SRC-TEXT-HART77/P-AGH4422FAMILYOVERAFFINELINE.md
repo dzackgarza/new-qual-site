@@ -181,6 +181,39 @@ audit:
     that Yang's Solution 4.4.22 stops at the constancy of lambda, and Youcis's
     Theorem 8 does not follow the printed hint at all. Nothing in the problem
     statement changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's report, and the record of what
+    the events of this date above left out. (i) Step abelian-scheme is the
+    card's own and unproved, which commit 64d0d101ab made it: the step now
+    says that the passage from a pointed family of elliptic curves over S to a
+    smooth proper group scheme over S, hence to a family of abelian varieties
+    in Youcis's sense, needs the fibrewise group laws to be restrictions of
+    morphisms E x_S E -> E and E -> E over S, equivalently the
+    representability of the relative Picard functor together with the
+    identification of E with it, and that neither Youcis nor the book at this
+    exercise supplies them. No event recorded that repair until this one.
+    (ii) Corrected here, the events above not being rewritable: the
+    solution-written event's "step abelian-scheme from the printed hint's
+    first clause and Youcis's definition of an abelian scheme", and the
+    source-checked event's "is a family of abelian varieties in Youcis's sense
+    once the section fixes the origin on each fibre, which is the first clause
+    of the printed hint". The printed hint's first clause asks for exactly
+    what step abelian-scheme states and does not prove. (iii) The remark and
+    the conclusion of the solution are now relative to that step: the remark
+    says that Theorem 8 proves the exercise once the family is one of abelian
+    varieties in Youcis's sense and names step abelian-scheme as the card's
+    own and unproved passage, and the conclusion's proof says so before
+    applying the theorem. (iv) The paragraph in step deligne-argument that
+    reads Youcis's cyclic kernel as a finite constant group scheme, through
+    the triviality of a finite étale cover of a base with simply connected
+    analytification, now says that it is the card's own; the post asserts the
+    cyclic kernel with no argument. Not read in this pass: Deligne, Théorie de
+    Hodge II, 4.4.3, and the rigidity result of Peters and Steenbrink, as
+    before; the card's own steps were not re-derived. Checked against the book
+    in this pass: Hartshorne IV Ex. 4.22 on printed p. 340, unchanged.
 ---
 
 ::: {.problem}
@@ -264,7 +297,7 @@ Third, "Since $V^\text{an}$ is compactifiable by Hironaka's theorem and by the d
 
 Fourth, "the kernel of some isogeny $\underline A\to\mathscr A$ must be a finite group constant group scheme $\underline{\ZZ/n\ZZ}$. Thus, $\mathscr A\cong\underline{A/(\ZZ/n\ZZ)}$ as desired."
 
-The group $\ZZ/n\ZZ$ in that sentence is the source's, and it is more special than the argument yields: what the third move produces is a finite étale subgroup scheme of the constant family $\underline A$, and a finite étale cover of a variety with simply connected analytification is trivial, so the kernel is a finite constant group scheme, which need not be cyclic. The conclusion uses constancy alone, so the argument stands with $\ZZ/n\ZZ$ read as a finite constant group scheme.
+The group $\ZZ/n\ZZ$ in that sentence is the source's, and it is more special than the argument yields: what the third move produces is a finite étale subgroup scheme of the constant family $\underline A$, and a finite étale cover of a variety with simply connected analytification is trivial, so the kernel is a finite constant group scheme, which need not be cyclic. The conclusion uses constancy alone, so the argument stands with $\ZZ/n\ZZ$ read as a finite constant group scheme. This paragraph is the card's own: the source writes $\ZZ/n\ZZ$ with no argument for it, and the triviality of a finite étale cover of a simply connected base is not in the post.
 
 The third move is where the hypothesis that $V$ is algebraic enters, as his remark after the proof says: Deligne's classification needs algebraicity of $V$, and the compactifiability is that of an algebraic variety.
 
@@ -282,7 +315,8 @@ $$
 
 Take $V=S=\AA^1_\CC$ in step [](#theorem-eight){.pf-ref}.
 $S$ is a smooth connected algebraic variety over $\CC$, and $S^\text{an}=\CC$ is simply connected, being contractible: the homotopy $x\mapsto(1-s)x$, $0\le s\le1$, contracts $\CC$ to the origin.
-Step [](#abelian-scheme){.pf-ref} makes $E\to S$ a family of abelian varieties over $V=S$, so Theorem 8 applies through its proof in step [](#deligne-argument){.pf-ref} and $E\to S$ is isotrivial, that is, by step [](#constant-family){.pf-ref}, a product $E_0\times_\CC\AA^1_\CC$ over $\AA^1_\CC$.
+Step [](#abelian-scheme){.pf-ref} is what makes $E\to S$ a family of abelian varieties over $V=S$; that step is the card's own and unproved, so what follows is relative to it.
+With it, Theorem 8 applies through its proof in step [](#deligne-argument){.pf-ref} and $E\to S$ is isotrivial, that is, by step [](#constant-family){.pf-ref}, a product $E_0\times_\CC\AA^1_\CC$ over $\AA^1_\CC$.
 That is the triviality the exercise asks for.
 
 :::
@@ -295,7 +329,8 @@ That is the triviality the exercise asks for.
 
 ::: {.remark title="Published solution"}
 
-Youcis's Theorem 8, section "The case over the complex line", proves the exercise and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
+Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
+The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}, which is the card's own and unproved.
 Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, which he takes from the rigidity result of Peters and Steenbrink.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
