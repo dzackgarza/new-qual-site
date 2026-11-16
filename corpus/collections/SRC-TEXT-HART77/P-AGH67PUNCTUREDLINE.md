@@ -270,9 +270,51 @@ audit:
     corrects. The event above stands as written, a dated event being a record
     of its date. Nothing in the problem, the solution or the pages changes,
     and no page was re-read.
-
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.6.7, printed
+    p. 47, which asks r = s and then "Is the converse true?". Read each source
+    at its cited place in its text version: A. Shichijo, Chapter 1 section 6,
+    Exercise 6.7, printed pp. 5-6 (the extension of the birational map P^1 -->
+    P^1 to an automorphism, and the converse left as an assertion with the
+    author's own footnote 4 giving a configuration in A^3); A. Kock, Abstract
+    Projective Lines (2009), Theorem 1 on printed p. 6, the paragraph after (8)
+    on printed p. 5, the permutation laws (4)-(7) on printed p. 4, and Section 4
+    on printed pp. 8-11 with the determinant formula for the cross ratio and the
+    fractional linear form of a projectivity; and the accepted answer 834758,
+    the six values from the transpositions (12), (13), (14). Folios verified in
+    the copies: Kock's Theorem 1 is on the page whose folio reads 6, the
+    permutation laws on the page whose folio reads 4, Section 4 begins on the
+    page whose folio reads 8, and Shichijo's Exercise 6.7 begins on his printed
+    p. 5 and ends with footnote 4 on p. 6. Checked against the book:
+    Proposition I.6.7 is on printed p. 42, Proposition I.6.8 on p. 43 and
+    Corollary I.6.12 on p. 45, read in tmp/sources/hartshorne-1977-algebraic-
+    geometry.pdf and located by the section headings of those pages; the
+    exercise is over the algebraically closed k of Chapter I, which is infinite,
+    so the choice of mu outside six values is available. Not checked in this
+    pass: the card's unit-group route to r = s, which was read and accepted
+    earlier, and Shichijo's Exercise 6.3 block, which the card cites through his
+    own reference rather than reads.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The converse's step now names its sources at each paragraph, and the pages
+    of the book it cites: Kock's Theorem 1 on printed p. 6 for the uniqueness
+    of the projectivity through three points, with Section 4 on printed
+    pp. 8-11 for the identification with P(k^2) and the determinant cross
+    ratio; Kock's printed p. 5 for the invariance of the cross ratio under
+    projectivities; and the permutation laws (4)-(7) on printed p. 4 quoted in
+    full, with answer 834758 beside them for the same six values from the
+    transpositions (12), (13), (14). The published-solution remark now names
+    Kock's paper and answer 834758 and says that no located source states the
+    counterexample itself. No mathematics changes: the values 1/lambda,
+    1 - lambda and 1/lambda, the six-value orbit, the invariance and the
+    threshold r <= 2 are as before, and the pages of Propositions I.6.7 and
+    I.6.8 are added to the step that uses them.
 ---
-
 ::: {.problem}
 Let $P_1, \ldots, P_r, Q_1, \ldots, Q_s$ be distinct points of $\AA^1$.
 If
@@ -360,7 +402,7 @@ $$
 \boxed{r=s}.
 $$
 
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, reaches the same conclusion by another route: $\AA^1\sm\theset{P_1,\ldots,P_r}=\PP^1\sm(\theset{P_1,\ldots,P_r}\union\theset{\infty})$, the isomorphism gives a birational map $\PP^1\dashrightarrow\PP^1$, and that map extends to an automorphism $\bar\phi'$, which then carries the omitted sets to one another. His extension step is referred to his own Exercise 6.3 block, which rests on Corollary I.6.12; it is not Exercise I.6.8, which says that a nonsingular projective curve is determined by its function field. His displayed identity
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, text version `tmp/sources/shitijyou-ch1-section6.md`, proves this step by the published route: $\AA^1\sm\theset{P_1,\ldots,P_r}=\PP^1\sm(\theset{P_1,\ldots,P_r}\union\theset{\infty})$, the isomorphism gives a birational map $\PP^1\dashrightarrow\PP^1$, and that map extends to an automorphism $\bar\phi'$, which then carries the omitted sets to one another. His extension step is referred to his own Exercise 6.3 block, which rests on Corollary I.6.12 (printed p. 45), not on Exercise I.6.8, which says that a nonsingular projective curve is determined by its function field; Proposition I.6.8 states the extension in the form used in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} and is printed p. 43. His displayed identity
 $$
 \bar\phi'(\theset{P_n})=\PP^1-\bar\phi'(\PP^1-\theset{P_n})=\PP^1-(\PP^1-\theset{Q_n})=\theset{Q_n}
 $$
@@ -380,7 +422,7 @@ of $\PP^1$ are carried to one another by a fractional linear transformation.
 
 ::: pf-proof
 Let $\phi:U\to V$ be an isomorphism.
-Both $U$ and $V$ are nonsingular quasi-projective curves, hence abstract nonsingular curves by Proposition I.6.7, and $\PP^1$ is projective, so Proposition I.6.8, which is stated for abstract nonsingular curves, applies to them.
+Both $U$ and $V$ are nonsingular quasi-projective curves, hence abstract nonsingular curves by Proposition I.6.7 (printed p. 42), and $\PP^1$ is projective, so Proposition I.6.8 (printed p. 43), which is stated for abstract nonsingular curves, applies to them.
 Apply Proposition I.6.8 successively at the finitely many omitted points to extend the composite
 $$
 U\xrightarrow{\phi}V\hookrightarrow\PP^1
@@ -408,7 +450,16 @@ S_\lambda=\{\infty,0,1,\lambda\}\subseteq\PP^1.
 $$
 Write $[a,b,c,d]$ for the image of $d$ under the unique fractional linear transformation carrying $a,b,c$ to $\infty,0,1$, the uniqueness being the case that fixes $\infty$, $0$ and $1$: such a transformation is $x\mapsto(\alpha x+\beta)/(\gamma x+\delta)$, fixing $\infty$ forces $\gamma=0$, then fixing $0$ forces $\beta=0$, and then fixing $1$ forces $\alpha=\delta$.
 
-So an element of $\PGL(1)$ is determined by its values at three distinct points, and $[\phi a,\phi b,\phi c,\phi d]=[a,b,c,d]$ for every fractional linear $\phi$: the composite $\rho\circ\phi^{-1}$, where $\rho$ carries $a,b,c$ to $\infty,0,1$, carries $\phi a,\phi b,\phi c$ to $\infty,0,1$, so it is the normalizing transformation used in the definition of $[\phi a,\phi b,\phi c,\phi d]$, and it carries $\phi d$ to $\rho(d)$.
+Kock, *Abstract Projective Lines* (4 December 2009), Theorem 1, printed p. 6, is this existence and uniqueness in general form and for the projective line over any field: for three distinct points $A,B,C$ of one projective line and three distinct points $A',B',C'$ of another, there is a unique projectivity carrying $A$ to $A'$, $B$ to $B'$ and $C$ to $C'$, and his proof defines $\phi(D)$ to be the unique point with $(A',B';C',D')=(A,B;C,D)$. Section 4, printed pp. 8--11, identifies $\PP^1=\PP(k^2)$ with an abstract projective line, gives the cross ratio there as the determinant expression
+$$
+(A,B;C,D)=\frac{\abs{a,c}\cdot\abs{b,d}}{\abs{a,d}\cdot\abs{b,c}},
+$$
+and records that every projectivity of $\PP^1$ is tracked by a linear automorphism, the fractional linear transformation
+$$
+x\mapsto\frac{\alpha_{21}+\alpha_{22}x}{\alpha_{11}+\alpha_{12}x}.
+$$
+
+So an element of $\PGL(1)$ is determined by its values at three distinct points, and $[\phi a,\phi b,\phi c,\phi d]=[a,b,c,d]$ for every fractional linear $\phi$: the composite $\rho\circ\phi^{-1}$, where $\rho$ carries $a,b,c$ to $\infty,0,1$, carries $\phi a,\phi b,\phi c$ to $\infty,0,1$, so it is the normalizing transformation used in the definition of $[\phi a,\phi b,\phi c,\phi d]$, and it carries $\phi d$ to $\rho(d)$. Kock records the invariance as a consequence of the definitions, on printed p. 5: "projectivities, in the sense defined here, commute with composition, since they are functors. Hence it is clear that projectivities preserve cross ratios."
 
 The cross ratios of the other orderings are computed with $\rho$ normalizing $(a,b,c)$, so that $\rho(d)=[a,b,c,d]=\lambda$:
 $$
@@ -418,7 +469,23 @@ $$
 \qquad
 [a,b,d,c]=\frac{\rho(c)}{\lambda}=\frac1\lambda
 $$
-where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $b,a,c$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $a,c,b$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $a,b,d$ to $\infty,0,1$. The transpositions $(ab)$, $(bc)$ and $(cd)$ generate the group of all orderings of the four points, so every ordering of $S_\lambda$ is reached by a composite of them, and the substitutions $\lambda\mapsto1/\lambda$ and $\lambda\mapsto1-\lambda$ generate the six-element group
+where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $b,a,c$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $a,c,b$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $a,b,d$ to $\infty,0,1$. These are Kock's permutation laws (4)--(7) on printed p. 4, stated there for $\mu=(A,B;C,D)$:
+$$
+(A,B;C,D)=(B,A;D,C)=(C,D;A,B)=(D,C;B,A),
+$$
+$$
+(A,B;D,C)=\mu^{-1},
+\qquad
+(A,C;B,D)=1-\mu,
+\qquad
+(A,C;D,B)=(1-\mu)^{-1},
+$$
+$$
+(A,D;B,C)=\frac{\mu-1}{\mu},
+\qquad
+(A,D;C,B)=\frac{\mu}{\mu-1},
+$$
+and the accepted answer 834758 to Mathematics Stack Exchange question 834693 computes the same six values from the transpositions $(12)$, $(13)$ and $(14)$, which generate $S_4$, getting $1/\lambda$, $\lambda/(\lambda-1)$ and $1-\lambda$. The transpositions $(ab)$, $(bc)$ and $(cd)$ generate the group of all orderings of the four points, so every ordering of $S_\lambda$ is reached by a composite of them, and the substitutions $\lambda\mapsto1/\lambda$ and $\lambda\mapsto1-\lambda$ generate the six-element group
 $$
 \lambda,\quad1-\lambda,\quad\lambda^{-1},\quad
 (1-\lambda)^{-1},\quad
@@ -453,7 +520,9 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, stops at §I.5 and gives no solution to 6.7.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise I.6.7, PDF p. 55: "we can extend any map between the two curves to a map $\PP^1\to\PP^1$; since $P_i$ must map to $Q_j$ thus $r=s$. The converse is only true for $r\le3$ by virtue of the fact that mobius transformations can take at most $3$ distinct points in $\PP^1$ to any other $3$ distinct points."
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$. Any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, text version `tmp/sources/shitijyou-ch1-section6.md`, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
 
-Borcherds, Egbert and Cutrone--Marshburn answer $r=s$ as step [](#r-equals-s){.pf-ref} does, and all three state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there; so the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
+Anders Kock, *Abstract Projective Lines* (4 December 2009), text version `tmp/sources/kock-2009-abstract-projective-lines.md`, prints the three facts step [](#converse-fails){.pf-ref} uses: Theorem 1 on printed p. 6, that a projectivity is determined by the images of three distinct points; the paragraph after (8) on printed p. 5, that projectivities preserve cross ratios; and the permutation laws (4)--(7) on printed p. 4, which give the six values of the cross ratio under the orderings. Section 4, printed pp. 8--11, is the identification of $\PP^1$ with an abstract projective line and of its projectivities with the fractional linear transformations, and the determinant formula for the cross ratio. The accepted answer 834758 to Mathematics Stack Exchange question 834693, text version `tmp/sources/mse-834693-six-cross-ratio-values.md`, computes the same six values from the three transpositions that generate $S_4$. No located source states the counterexample to I.6.7 itself.
+
+Borcherds, Egbert and Cutrone--Marshburn answer $r=s$ as step [](#r-equals-s){.pf-ref} does, and all three state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there; so the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is that obstruction at $r=3$, assembled from the facts printed by Kock and in answer 834758. Recorded in COMPLAINTS.md for the converse half.
 :::
