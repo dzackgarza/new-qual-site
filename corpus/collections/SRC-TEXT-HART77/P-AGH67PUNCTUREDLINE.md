@@ -74,6 +74,28 @@ audit:
     converse-fails' cross ratio separates them. Checked against Borcherds p. 8, text version `tmp/sources/hartshorne-solutions-borcherds.md`,
     Egbert p. 55, text version `tmp/sources/hartshorne-solutions-egbert.md` and Cutrone--Marshburn p. 25, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`: all three state the threshold
     r <= 3, which is what makes the count matter.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121. Step converse-fails now proves what it
+    used to assert: that an element of PGL(1) fixing infinity, 0 and 1 is the
+    identity, hence that an element is determined by three values, hence
+    invariance of the cross ratio, and then the six values of the orderings
+    from the three transposition computations (ab), (ac) and (cd), which
+    generate the orderings and give the substitutions 1/lambda and 1-lambda.
+    The threshold for the converse is r <= 2, not r <= 3: the retained sets'
+    r <= 3 is one too high because the four-point sets of step converse-fails
+    are already separated by the cross ratio. Vakil, The Rising Sea
+    (21 October 2025), text version
+    tmp/sources/vakil-rising-sea-2025-10-21.md, prints the uniqueness of the
+    normalizing automorphism in 19.9.7 (line 13770) and the six values in
+    (19.9.7.1) (line 13797); his Exercise 19.9.B (line 13774) leaves the
+    classification of four ordered points, and Exercise 19.9.C the S_4 action
+    on the cross ratio, to the reader. Not checked in this pass: the card's
+    own proof of r = s, which the reader accepted, and the Math Stack Exchange
+    search for a thread on the converse, which the reader ran and which agrees
+    with the record kept in COMPLAINTS.md.
 ---
 
 ::: {.problem}
@@ -205,21 +227,33 @@ Conversely, any fractional linear transformation carrying one displayed finite s
 The converse to $r=s$ is false in general.
 
 ::: pf-proof
-Take $r=s=3$.
-For $\lambda\in k\setminus\{0,1\}$ consider the four-point subset
+Take $r=s=3$ and let $\lambda\in k\setminus\{0,1\}$; put
 $$
 S_\lambda=\{\infty,0,1,\lambda\}\subseteq\PP^1.
 $$
-The cross ratio of four ordered points is invariant under fractional linear transformations.
-Changing the ordering replaces $\lambda$ by one of the finitely many values
+Write $[a,b,c,d]$ for the image of $d$ under the unique fractional linear transformation carrying $a,b,c$ to $\infty,0,1$, the uniqueness being the case that fixes $\infty$, $0$ and $1$: such a transformation is $x\mapsto(\alpha x+\beta)/(\gamma x+\delta)$, fixing $\infty$ forces $\gamma=0$, then fixing $0$ forces $\beta=0$, and then fixing $1$ forces $\alpha=\delta$.
+
+So an element of $\PGL(1)$ is determined by its values at three distinct points, and $[\phi a,\phi b,\phi c,\phi d]=[a,b,c,d]$ for every fractional linear $\phi$: the composite $\rho\circ\phi$, where $\rho$ carries $a,b,c$ to $\infty,0,1$, again carries them there, hence equals $\rho$.
+
+The cross ratios of the other orderings are computed with $\rho$ normalizing $(a,b,c)$, so that $\rho(d)=[a,b,c,d]=\lambda$:
+$$
+[b,a,c,d]=\frac{1}{\rho(d)}=\frac1\lambda,
+\qquad
+[a,c,b,d]=1-\rho(d)=1-\lambda,
+\qquad
+[a,b,d,c]=\frac{\rho(c)}{\lambda}=\frac1\lambda
+$$
+where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $b,a,c$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $a,c,b$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $a,b,d$ to $\infty,0,1$. The transpositions $(ab)$, $(ac)$ and $(cd)$ generate the group of all orderings of the four points, so every ordering of $S_\lambda$ is reached by a composite of them, and the substitutions $\lambda\mapsto1/\lambda$ and $\lambda\mapsto1-\lambda$ generate the six-element group
 $$
 \lambda,\quad1-\lambda,\quad\lambda^{-1},\quad
 (1-\lambda)^{-1},\quad
 \frac{\lambda}{\lambda-1},\quad
 \frac{\lambda-1}{\lambda}.
 $$
-Because the algebraically closed field $k$ is infinite, choose $\mu\in k\setminus\{0,1\}$ outside this finite set.
-Then no fractional linear transformation carries $S_\lambda$ to $S_\mu$.
+So the cross ratios of the orderings of a four-point subset of cross ratio $\lambda$ are exactly these six values, which form the orbit of $\lambda$ under a group; hence $\mu$ lies in the set attached to $\lambda$ exactly when $\lambda$ lies in the set attached to $\mu$.
+
+Because the algebraically closed field $k$ is infinite, choose $\mu\in k\setminus\{0,1\}$ outside the six values attached to $\lambda$.
+Then no fractional linear transformation carries $S_\lambda$ to $S_\mu$: such a transformation would make $\lambda$ the cross ratio of an ordering of $S_\mu$, hence one of the six values attached to $\mu$, and then $\mu$ would be one of the six values attached to $\lambda$.
 By step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref},
 $$
 \AA^1\setminus\{0,1,\lambda\}
@@ -246,5 +280,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$; any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
 A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
 
-All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
+All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there; so the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
 :::
