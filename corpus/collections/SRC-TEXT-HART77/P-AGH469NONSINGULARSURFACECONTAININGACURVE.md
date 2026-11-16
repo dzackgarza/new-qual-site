@@ -233,9 +233,8 @@ Apply Bertini's theorem to the projective embedding of $\tilde{\PP}$ correspondi
 
 ::: {.solution}
 Put $n=1$, so that $\PP^3=\PP^{2n+1}$ and the curve $X=Z$ is a nonsingular subscheme of $\PP^3$ of codimension $n+1=2$.
-The proof below is the one in A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018, text version `tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md`, and each step names the numbered statement and the printed page of that paper that it transcribes.
-Their Theorem 3.3 is a restatement of S. L. Kleiman and A. B. Altman, *Bertini's theorem for hypersurface sections containing a subscheme*, Communications in Algebra 7 (1979), Theorem 7, which is cited on the card as the paper proves it.
-The one step that is not Dan--Kaur's is step [](#regularity){.pf-ref}, and it says so.
+The proof is A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018.
+Their Theorem 3.3 restates S. L. Kleiman and A. B. Altman, *Bertini's theorem for hypersurface sections containing a subscheme*, Communications in Algebra 7 (1979), Theorem 7.
 
 ::: pf
 
@@ -275,33 +274,6 @@ No hypothesis on the ground field is stated there, and the paper's own context i
 
 :::
 
-::: {.pf-step #regularity}
-$X$ is $m-1$-regular in the sense of Castelnuovo--Mumford for every sufficiently large integer $m$.
-This step is the card's: Dan--Kaur do not state it, and it is a direct consequence of Serre vanishing.
-
-::: pf-proof
-
-By the definition of Castelnuovo--Mumford regularity, $X\subseteq\PP^3$ is $m-1$-regular exactly when
-$$
-H^i\bigl(\PP^3,\mci_X(m-1-i)\bigr)=0
-\qquad\text{for every }i\ge1 .
-$$
-The ideal sheaf $\mci_X$ is coherent on the projective space $\PP^3$, so Serre's vanishing theorem, [[T-COHSVAN|Serre vanishing]] [@Har77, Theorem III.5.2], printed p. 228, gives for each $i\ge1$ an integer $k_i$ with
-$$
-H^i\bigl(\PP^3,\mci_X(k)\bigr)=0
-\qquad\text{for every }k\ge k_i .
-$$
-Let
-$$
-m_0\coloneqq\max_{1\le i\le3}\bigl(k_i+i+1\bigr).
-$$
-For $m\ge m_0$ and $1\le i\le3$ one has $m-1-i\ge k_i$, so all three groups above vanish, and only $i=1,2,3$ can contribute on $\PP^3$.
-Hence $X$ is $m-1$-regular for every $m\ge m_0$.
-
-:::
-
-:::
-
 ::: {.pf-step #conclusion}
 For every $m\gg0$ there is a nonsingular surface $F\subseteq\PP^3$ of degree $m$ containing $X$.
 $$
@@ -310,10 +282,10 @@ $$
 
 ::: pf-proof
 
-Fix $m\ge m_0$ of step [](#regularity){.pf-ref}.
-Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$, and step [](#regularity){.pf-ref} supplies the hypothesis of its second clause, $X$ being $m-1$-regular.
-Applying the second clause of Theorem 3.3, printed p. 3, to $Z=X$, $d=m$ and $n=1$ gives a smooth hypersurface $F\subseteq\PP^3$ of degree $m$ containing $X$.
-A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $m$ containing $X$, which is the assertion of the exercise.
+Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$.
+Dan--Kaur apply it in the first sentence of their proof of Theorem 1.1, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3."
+So for every $d\gg0$ there is a smooth hypersurface $F\subseteq\PP^3$ of degree $d$ containing $X$.
+A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $d$ containing $X$, for every $d\gg0$, which is the assertion of the exercise.
 
 :::
 
@@ -325,8 +297,8 @@ A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingulari
 
 ::: {.remark title="Published solution"}
 A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, prove the assertion of this exercise twice over, and the stronger statement beside it.
-Theorem 3.3, printed p. 3, is the existence statement transcribed above, restating Kleiman--Altman's Theorem 7.
-Theorem 1.1, printed p. 2, adds that the containing hypersurface can be chosen so that $Z$ is semi-regular in it, and the first sentence of its proof, printed p. 4, reads "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3", which is this exercise in their notation.
+Theorem 3.3, printed p. 3, is the existence statement the argument uses, restating Kleiman--Altman's Theorem 7.
+Theorem 1.1, printed p. 2, adds that the containing hypersurface can be chosen so that $Z$ is semi-regular in it, and its first sentence, printed p. 4, draws this exercise from Theorem 3.3.
 The rest of that proof, printed pp. 4--5, proves the surjectivity that semi-regularity asks for, through Proposition 3.4, printed p. 3, and Serre vanishing.
 
 The exercise's own hint asks for the blowup $\pi:\widetilde{\PP}\to\PP^3$ of $X$ and Bertini applied to the embedding given by $\mci_Y\tensor\pi^*\OO_{\PP^3}(m)$.
