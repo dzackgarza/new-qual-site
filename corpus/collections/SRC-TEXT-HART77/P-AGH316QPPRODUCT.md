@@ -57,17 +57,6 @@ audit:
     closed Y, Z and U x V = Y x Z - pi_2^{-1}(Z-V) - pi_1^{-1}(Y-U) for open
     U, V. Verified each against the card: projections in step s1, local
     closedness and irreducibility in s2, closedness in s3, universality in s4.
-    Corrected 2026-11-16 on the reader's report: that Y x Z display was
-    recorded above as verified and is false as printed --- it uses only the
-    zeroth column and row, so the point of the Segre variety with a_0 = b_0 = 0
-    satisfies both sets of generators, F_i(0,...,0) = 0 and G_j(0,...,0) = 0
-    since both are homogeneous of positive degree, and need not lie in Y x Z;
-    for Y = V(x_1) and Z = V(y_1) the point (0:1:0:..) x (0:1:0:..) is such a
-    point and its first factor has x_1 != 0. The row-and-column reading that is
-    true holds the generators in every column and every row. Nor does his
-    universality cover subvarieties: it is proved for P^m x P^n, and the
-    passage to Y, Z is the one sentence "This extends in a straightforward
-    manner to projective varieties".
     Recorded as a gap: Bertram's universality is in prevarieties, so his
     Proposition 4.3 alone does not give (c) in the category of varieties, whose
     objects Hartshorne takes irreducible; the irreducibility of X x Y is this
@@ -94,6 +83,33 @@ audit:
     depend on the charts carrying the two factors. Not checked: Bertram's
     graded-ring display Y x Z = mproj(oplus R_d otimes Q_d), which the card
     does not use.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third-pass reader's report on this card, each item checked against the
+    Bertram text version. (1) The source-checked event of 2026-11-16 above was
+    rewritten in place by 20b8b3a16b, which appended a correction to it, and
+    4ab4e4ef6a then changed the witness inside that appended text; a dated
+    event is not edited, so its text at its date is restored here and the
+    correction is carried by this event. (2) The remark said "his X is
+    irreducible, being a projective space". That is false: his X is the Segre
+    variety V(<x_ij x_kl - x_il x_jk>), which he calls a projective variety at
+    line 195, not a projective space. Its irreducibility, which Hartshorne's
+    varieties require, is the case X = P^m, Y = P^n of step s2, whose affine
+    charts are the products U_i x V_j with coordinate rings k[U_i] tensor
+    k[V_j] (his Corollary 4.1); the remark now says that. (3) The witness of
+    the event of 2026-11-16 that was added by 20b8b3a16b, Y = V(x_0),
+    Z = V(y_0) and the point (1:0:..) x (0:1:0:..), is a valid witness to
+    Bertram's false display, but not as an instance of the sentence before it:
+    that point has a_0 = 1, not a_0 = b_0 = 0. It satisfies the display because
+    b_0 = 0 kills the zeroth column, and the zeroth row is the second factor,
+    which lies in V(y_0). So 4ab4e4ef6a's premise, that the witness itself
+    needed correcting, is wrong; the sentence around it did. The remark and
+    COMPLAINTS.md carry the witness that does fit the sentence, Y = V(x_1),
+    Z = V(y_1) and (0:1:0:..) x (0:1:0:..), whose zeroth column and zeroth row
+    both vanish; both witnesses are valid, and the two files agree on one.
+    (4) The every-column-every-row reading of what is true is unchanged.
 
 ---
 
@@ -280,7 +296,7 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), re
 :::
 
 ::: {.remark title="Published solution"}
-The published argument is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6, text version `tmp/sources/bertram-utah-6130-varieties.md`: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. That universality is proved for $W\to\PP^m\times\PP^n$, that is for the two projective spaces themselves, and it is stated "in the category of prevarieties"; his $X$ is irreducible, being a projective space, so there the prevariety and the variety coincide. For subvarieties he writes one sentence, "This extends in a straightforward manner to projective varieties", and the display that follows it is not correct: for closed $Y=V(\langle F_1,\ldots,F_a\rangle)$ and $Z=V(\langle G_1,\ldots,G_b\rangle)$ it gives
+The published argument is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6, text version `tmp/sources/bertram-utah-6130-varieties.md`: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. That universality is proved for $W\to\PP^m\times\PP^n$, that is for the two projective spaces themselves, and it is stated "in the category of prevarieties"; his $X$ is the Segre variety $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$, which he calls a projective variety at line 195, not a projective space, and its irreducibility, which Hartshorne's varieties require, is the case $X=\PP^m$, $Y=\PP^n$ of step [](#s2){.pf-ref}: its affine charts $U_i\times V_j$ have coordinate rings $k[U_i]\otimes_k k[V_j]$ by his Corollary 4.1, so with that step his prevariety-universality is universality among varieties. For subvarieties he writes one sentence, "This extends in a straightforward manner to projective varieties", and the display that follows it is not correct: for closed $Y=V(\langle F_1,\ldots,F_a\rangle)$ and $Z=V(\langle G_1,\ldots,G_b\rangle)$ it gives
 $$
 Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle),
 $$
