@@ -61,11 +61,9 @@ audit:
     of any dimension. Step cohomology-invariance now cites the printed
     statement of A. Chatzistamatiou and K. Ruelling, Vanishing of the higher
     direct images of the structure sheaf, Compositio Math. 151 (2015)
-    2131-2144, Theorem 1.1, p. 1 of the preprint arXiv:1404.1827v2, which is
-    the version retained in tmp/sources as
-    chatzistamatiou-rulling-2015-higher-direct-images.pdf; the page is the
-    preprint's and not the journal printing's, which was not consulted, and
-    neither has a text version in tmp/sources yet: the higher direct
+    2131-2144, Theorem 1.1, printed p. 1 (a preimage of the published version,
+    arXiv:1404.1827v2, was added to tmp/sources as
+    chatzistamatiou-rulling-2015-higher-direct-images.pdf): the higher direct
     images of O_X under a projective birational morphism between excellent
     regular schemes vanish. With pi_* O = O_X (the proof of III.11.4) and
     Exercise III.8.1 that gives H^i(X-tilde,O) = H^i(X,O), hence equality of
@@ -81,6 +79,29 @@ audit:
     monoidal case, and the card's remark now says so. Not checked: the proof
     of Theorem 1.1 itself, a duality argument, was not read; the step uses
     only its statement.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Text version of the cited theorem located in tmp/sources for issue #121.
+    Chatzistamatiou-Ruelling, Vanishing of the higher direct images of the
+    structure sheaf, arXiv:1404.1827v2, is retained twice: as the PDF named
+    above and as the extraction
+    tmp/sources/chatzistamatiou-rulling-2015-higher-direct-images.md, which
+    runs over the whole preprint, title page to references, and states
+    Theorem 1.1 on its first page: a projective and birational morphism between excellent and
+    regular schemes has R^i f_* O_X = 0 for i >= 1. The card said tmp/sources
+    held no text version of the paper; that is withdrawn, and the remark on
+    the preprint page now names the extraction beside the PDF. The page stays
+    the preprint's p. 1, the folio its first page prints, and not the
+    Compositio 2131 of the journal printing. Checked: the statement of
+    Theorem 1.1 was read in the extraction and compared with the PDF text
+    layer of its first page, and the two agree wording for wording; the
+    extraction's first page marker is PDF pages 1-14 and the PDF has fourteen
+    pages. Not checked: no part of the proof of Theorem 1.1 was read, that is
+    Sections 2 to 5, a Grothendieck-Serre duality argument; the Compositio
+    printing, 151 (2015) 2131-2144, was not consulted, so no page of the
+    printed article is given.
 ---
 
 ::: {.problem}
@@ -128,11 +149,14 @@ $$
 $$
 The Leray spectral sequence now gives the displayed isomorphisms.
 
-The theorem's page is that of the preprint: the retained copy,
-`tmp/sources/chatzistamatiou-rulling-2015-higher-direct-images.pdf`, is
-arXiv:1404.1827v2, whose first page carries Theorem 1.1 and the footer "1";
-the journal printing in Compositio Math. 151 (2015) 2131--2144 was not
-consulted, and `tmp/sources` holds no text version of either, so this
+The theorem's page is that of the preprint: the retained copy
+`tmp/sources/chatzistamatiou-rulling-2015-higher-direct-images.pdf` is
+arXiv:1404.1827v2, whose first page carries Theorem 1.1 and the footer "1",
+and its text version is the extraction
+`tmp/sources/chatzistamatiou-rulling-2015-higher-direct-images.md`, which
+runs over those same fourteen pages and carries Theorem 1.1 on its first one,
+under the marker the extraction writes for PDF pages 1--14. The journal
+printing in Compositio Math. 151 (2015) 2131--2144 was not consulted, so this
 citation gives no page of the printed article.
 :::
 

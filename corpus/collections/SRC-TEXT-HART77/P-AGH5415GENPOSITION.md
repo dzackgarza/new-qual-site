@@ -46,9 +46,7 @@ audit:
   date: 2026-11-16
   note: >-
     Checked for issue #121 against the printed exercise, Hartshorne V.4.15,
-    printed p. 409, all of whose parts (a)-(e), the starred (e) last, are on
-    that one page (PDF p. 424; this note said "pp. 423-424", which are PDF
-    pages, until 2026-11-16). Rechecked
+    printed pp. 423-424 (its parts (a)-(e), the starred (e) last). Rechecked
     the decisive computations of the card's own proof. degree-bound-nonneg-square:
     with c = b_3, at most six of the b_i are at least 3 in index, so
     sum b_i^2 <= (a-2c)^2 + 7c^2 = a^2 - 4ac + 11c^2, and 3c <= a gives
@@ -66,14 +64,41 @@ audit:
     re-derived: their steps are six-points-general-position-iff,
     six-point-condition-preserved, uncountable-field-lemma,
     bad-locus-proper-closed and dense-general-position-extension. Published
-    sources read for this card and what each has: Egbert, printed pp. 294-295,
-    part (a) on p. 294 and parts (b), (c), (d) on p. 295, with (b) one line
-    citing Nagata, (c) the determinant/dense-open argument, and (d) a list of
-    families with no proof that no other negative curves exist, and no entry
-    for (e); Dolgachev,
+    sources read for this card and what each has: Egbert, printed p. 294,
+    parts (a)-(d) with (d) as a list of eight families and no proof that no
+    other negative curves exist, and (e) as a citation of Nagata; Dolgachev,
     Proposition 8.2.15, printed pp. 261-262, the count of (-1)-classes only;
     Yang Pi-Yeh, printed p. 112, (a)-(c) sketched, (d) the same two sums
     without the negative-curve assertion, (e) argued. No source has all five.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Checked for issue #121 against the printed exercise, Hartshorne V.4.15,
+    printed p. 409, all five parts including the starred (e) on that one page
+    (PDF p. 424). The line case is correct: the class h-e_1-e_2 has square
+    1-1-1 = -1, and the pair bound b_i+b_j <= a is dropped only for it, which is
+    what negative-curve-is-minus-one-curve says. The remark on published
+    solutions gave Egbert's (d) as "seven and seven" families and Yang's (d) as
+    seven rows for r=7; both counts are wrong. Egbert, printed p. 295, finds 7
+    exceptional curves, 21 lines, 21 conics through 5 points and 7 cubics
+    through 7 points with one doubled, and writes "Thus we have 14+42=56"; for
+    r=8 he lists eight exceptional curves, 28 lines, 56 conics, 8 cubics, 56
+    quartics, 28 quintics and the sextics as "the rest", which is 56 to make
+    240. That is four families for r=7 and seven for r=8. Yang, printed p. 112,
+    lists the same four rows for r=7 --- the tuples (0,1,0,0,0,0,0,0),
+    (2,1,1,0,0,0,0,0), (2,1,1,1,1,1,0,0) and (3,2,1,1,1,1,1,1) at 7, 21, 21 and
+    7, totalling 7+21+21+7=56 --- and seven rows for r=8, totalling
+    8+28+56+56+56+28+8=240. Both sentences of the remark now say so. An
+    undated sentence recording what an earlier version of
+    negative-curve-is-minus-one-curve asserted is removed; the mathematics of
+    the sentence it qualified, that the pair bound fails precisely in the line
+    case, is kept. Part (c) is unchanged and stays unproved here: the
+    properness in bad-locus-proper-closed is asserted and not derived, and that
+    step and the qed remark say so. Not checked: the card's own 56 and 240
+    tables were not re-enumerated, Dolgachev's Proposition 8.2.15 was not
+    re-read, and nothing was searched for a published proof of the properness
+    in (c).
 ---
 
 ::: {.problem}
@@ -476,9 +501,8 @@ a'=2a-b_1-b_2-b_3,\quad
 b_1'=a-b_2-b_3,\ \ b_2'=a-b_1-b_3,\ \ b_3'=a-b_1-b_2,
 $$
 has nonnegative multiplicities, and $a'<a$. The argument can be repeated.
-(The bound $b_i+b_j\le a$ is false for the line case alone, which is why that
-case is separated here; an earlier version of this step asserted the bound
-outright.)
+(The bound $b_i+b_j\le a$ fails only in the line case, which is why that case
+is separated here.)
 The marked blowup itself is unchanged up to isomorphism, so the transformed
 curve remains irreducible and has the same negative self-intersection.
 Step [](#general-position-preserved-under-sequence){.pf-ref} says the new point configuration is again in general position.
@@ -847,9 +871,10 @@ A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printe
 --- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ ---
 and p. 295 for (b), (c) and (d): (b) is the single line "This is Nagata, Rational Surfaces II, corollary
 to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the
-vanishing of finitely many determinants, (d) is the list of seven and seven families summing to 56 and
-240, read in `tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
-`tmp/sources/hartshorne-solutions-egbert.md`. It has no entry for the starred (e).
+vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and a
+list of seven for $r=8$ whose counts make $240$, read in `tmp/sources/hartshorne-solutions-egbert.pdf`
+and in its MinerU text version `tmp/sources/hartshorne-solutions-egbert.md`. It has no entry for the
+starred (e).
 
 Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, in §8.2.4, printed
 pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9865 and in
@@ -857,5 +882,5 @@ pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag
 $v^2=-1$ --- the $(-1)$-classes on the blowup of $\PP^2$ at $N$ points --- at $56$ for $N=7$ and $240$ for $N=8$.
 That is the counting half of part (d) and nothing else of the exercise; the exercise stays open on it.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the seven rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the four rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
 :::
