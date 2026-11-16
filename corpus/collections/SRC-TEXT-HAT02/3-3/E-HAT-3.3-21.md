@@ -308,6 +308,27 @@ audit:
     nonvanishing; neither solution set treats the bracketed question. The bracketed question has no
     published solution in what was read, and `COMPLAINTS.md` records that on this date.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report on this round: the citation this day's event says is "confined to degree
+    one" was not on the card at all. Commit 60cb0e4c52 removed the sentence that cited answer 4391062
+    from step `degree-one` as well as the one that cited it in degree two, so the rendered body named
+    it nowhere, and the event's parenthetical "where the card also had it" was false of the text
+    committed. Answer 4391062 (Thorgott, 2022-02-25) to Math Stack Exchange question 4390308, read in
+    `tmp/sources/mse-4390308-cech-cohomology-manifold-complement-hatcher-3321.md`, states for
+    singular cohomology that $H^1(X,S)\cong H^1(X)$ for a singleton $S$, from the exact sequence of
+    the pair $(X,S)$, which is exactly the identification step `degree-one` uses at $(E,\infty)$;
+    the step cites it there again, and only there, so the citation is confined to degree one as the
+    event said it would be. The degree-two identification stays the card's own long-exact-sequence
+    argument, which is what that event required, and the answer's general paragraph on \v{C}ech
+    cohomology of nerves is not used. Also read for this event: the step's opening, which said the
+    whole argument was the card's, now says that the comparison of the two values is, the pair
+    sequence being the answer's statement. Not checked in this pass: the answer was read in the API's
+    text of question 4390308 and not at the site; `COMPLAINTS.md` carries the correction in a new
+    record of this date, and no dated record is edited in place.
+
 ---
 
 ::: {.problem}
@@ -386,13 +407,13 @@ For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\inft
 
 ::: pf-proof
 
-The argument of this step is the card's own, comparing the two values. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
+The comparison of the two values is the card's own. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
 
 $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
 $$
 
-"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$: the map $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is onto, so the image of $H^0(\{\infty\};\ZZ)$ in $H^1(E,\infty;\ZZ)$ is $H^0(\{\infty\};\ZZ)$ modulo the image of $H^0(E;\ZZ)$, which is zero, and $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ is injective by exactness; while $H^1(\{\infty\};\ZZ)=0$ makes it surjective. The tail of that sequence is thus the short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
+"a free abelian group on countably many generators": the map $H^1(E;\ZZ)\to\operatorname{Hom}_{\ZZ}(\bigoplus_{\NN}\ZZ,\ZZ)$ induced by $H_1(\iota)$ is injective with image $\bigoplus_{\NN}\ZZ$, and $H^1(E;\ZZ)\cong\operatorname{Hom}_{\ZZ}(H_1(E;\ZZ),\ZZ)$ because $H_0(E;\ZZ)$ is free. That the pair sequence of a one-point subspace identifies the relative group with the absolute one is **answer 4391062 (Thorgott, 2022-02-25) to Math Stack Exchange question 4390308**, which states for singular cohomology that $H^1(X,S)\cong H^1(X)$ for a singleton $S$, from the exact sequence of the pair $(X,S)$. The exact sequence of the pair $(E,\infty)$ then gives $H^1(E,\infty;\ZZ)\cong H^1(E;\ZZ)$: the map $H^0(E;\ZZ)=\ZZ\to H^0(\{\infty\};\ZZ)=\ZZ$ is onto, so the image of $H^0(\{\infty\};\ZZ)$ in $H^1(E,\infty;\ZZ)$ is $H^0(\{\infty\};\ZZ)$ modulo the image of $H^0(E;\ZZ)$, which is zero, and $H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)$ is injective by exactness; while $H^1(\{\infty\};\ZZ)=0$ makes it surjective. The tail of that sequence is thus the short exact sequence $0\to H^1(E,\infty;\ZZ)\to H^1(E;\ZZ)\to0$. Both groups are thus free abelian on countably many generators, and no argument in degree one can decide the bracketed question.
 
 :::
 
