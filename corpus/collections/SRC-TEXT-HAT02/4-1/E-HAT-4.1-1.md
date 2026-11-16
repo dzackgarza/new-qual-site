@@ -95,7 +95,7 @@ audit:
     its own because no publication prints one, is printed as the accepted answer 161511 (KReiser,
     posted 2012-06-22) to Math Stack Exchange question 161507, read in
     `tmp/sources/mse-161507-eckmann-hilton-higher-homotopy.md`. The answer writes both
-    $(f\cdot g)\star(h\cdot i)$ and $(f\star h)\cdot(g\star i)$ as one piecewise map with the same
+    $(f\cdot g)\star(h\cdot i)$ and $(f\star h)\cdot(g\cdot i)$ as one piecewise map with the same
     four clauses the card's paragraph states, one per quarter of $I^2$, and concludes from the
     Eckmann--Hilton argument that the two compositions coincide and are commutative. It is a user
     answer and not a publication, and the card says so. Every step of the solution now names its
@@ -146,6 +146,21 @@ audit:
     `tmp/sources/hatcher-2002-algebraic-topology.pdf`. Davis--Kirk, Exercise 111 on printed p. 154,
     and May's *Concise Course*, Chapter 9 §1, print no two-coordinate identity, so a printed
     verification of the commutation rule was not located; `COMPLAINTS.md` records that on this date.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report on the round, correcting a rewrite made in place. The `source-checked` event
+    of this date above is restored to the text it carried when written, which writes answer 161511's
+    second term as $(f\star h)\cdot(g\cdot i)$; commit bce0d2e4c2 had changed that formula inside the
+    event, and a dated event records what its session found, so the original stands as the record. The
+    correction is this event: answer 161511 writes both $(f\cdot g)\star(h\cdot i)$ and
+    $(f\star h)\cdot(g\star i)$ as its displayed piecewise map, the second being the right side of the
+    exercise's own identity, and the rendered solution carries that form. Read again for this event in
+    `tmp/sources/mse-161507-eckmann-hilton-higher-homotopy.md`: the answer is a user answer to Math
+    Stack Exchange question 161507, its four clauses are one displayed map, and its last sentence
+    invokes the Eckmann--Hilton argument. The same restoration and correction are recorded in a new
+    `COMPLAINTS.md` record of this date. Nothing in the statement or the proof changes.
 review: draft
 ---
 
