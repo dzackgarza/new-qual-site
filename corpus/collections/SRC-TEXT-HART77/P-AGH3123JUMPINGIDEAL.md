@@ -241,6 +241,23 @@ audit:
     left as written; the pages this pass verified are the two just given.
     Not checked: no other page was re-read.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Provenance of the two MathOverflow answer ids now on the card. The ids
+    90316 for S. Kovacs and 206742 for J. Bohm are the ones the batch names
+    for this card; the text version
+    tmp/sources/mo-90260-trouble-with-semicontinuity.md records each
+    answer with its author, date and score and no id, so the ids were not
+    checked against the site. An attempt to confirm them through the Stack
+    Exchange API in this pass returned
+    error_name "throttle_violation", error_message "too many requests from
+    this IP, more requests available in 35152 seconds", so nothing was
+    confirmed and the attempt was not repeated. The authors, dates and
+    contents cited beside the ids are the text version's. Not checked: the
+    ids themselves.
+
 ---
 
 ::: {.problem}
