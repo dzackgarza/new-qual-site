@@ -53,14 +53,11 @@ audit:
     "up to isomorphism" cannot hold and the classification is up to tensor
     equivalence. Searched outside the twelve retained sets: Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 8
-    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`), whose (c) is the sentence "This is just
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), whose (c) is the sentence "This is just
     the proof of Theorem 2.12, combined with (b)"; Yang Pi-Yeh, Hartshorne
     Solutions, exercise 5.2.8, printed pp. 103-104
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), which repeats "up to
-    isomorphism"; and Egbert, PDF pp. 265-266, text version
-    `tmp/sources/hartshorne-solutions-egbert.md`. None repairs the printed clause.
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), which repeats "up to
+    isomorphism"; and Egbert, PDF pp. 265-266. None repairs the printed clause.
     Not checked: whether Hartshorne intended the clause to classify the
     normalized models only; the card states the printed wording and proves the
     tensor-equivalence reading.
@@ -73,14 +70,31 @@ audit:
     part (c); its Theorem 3.2 is a citation of the book's Theorem V.2.12. Two
     Math StackExchange threads were saved for the section, neither bearing on (c):
     4398506, tmp/sources/mse-4398506-hart77-v25-linear-system-notation.md, asks
-    only what the notation |D+K-E|+E of V.2.5(b) means, and 5101697,
+    only what the notation $\linearsystem{D+K-E}+E$ of V.2.5(b) means, and 5101697,
     tmp/sources/mse-5101697-hart77-v2-elementary-transformation.md, asks how
     Hartshorne's E' = pi_*(O(1) x I_P) realises the elementary transformation of
-    V.2.11, which the questioner proves and KReiser's accepted answer confirms,
-    with a proof that a section through the blown-up point exists. No complete published argument for (c) was located, and the
+    Example V.5.7.1, printed p. 416, which the questioner proves and KReiser's
+    accepted answer confirms, with a proof that a section through the blown-up
+    point exists. No complete published argument for (c) was located, and the
     printed "up to isomorphism" stays defective as recorded at the head of the
     solution: a bundle and its twist by a line bundle of nonzero degree carry the
     same triple and have different determinants.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the reference in the event above and restored the event of
+    2026-11-11 to its text of that date. The elementary transformation is the
+    book's Example V.5.7.1, printed p. 416, where the monoidal transform at a
+    point of a fibre is blown down along the strict transform of that fibre; it
+    is not V.2.11, which is the base-point-freeness and very-ampleness criterion
+    for C_0 + bf. The page was read in the text version of the book: the example
+    sits on the PDF page before the marker for PDF p. 432, so printed p. 416 at
+    the offset 15 this book's extractions take. The text-version names that a
+    later commit of 2026-11-16 put into the event of 2026-11-11 are removed, and
+    every source cited in the remark names its text version. Nothing else in the
+    audit changes: no complete published argument for (c) was located, and the
+    printed "up to isomorphism" stays defective.
 ---
 
 ::: {.problem}

@@ -46,11 +46,9 @@ audit:
     dimension is at most 2d-3 against dim P(V^*) = g+d-2, and both the dimension
     and the properness of the image were checked. Searched outside the twelve
     retained sets: Algebraic Geometry II, National Taiwan University, 2020
-    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`), which has no entry for Exercise 5 of
+    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf), which has no entry for Exercise 5 of
     section 2; Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.5, printed p. 103
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), which treats all four parts
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), which treats all four parts
     and whose (a) infers a nonzero section from nonnegative degree, an inference
     that fails for e >= g-1, so (a) is not a complete published proof; Egbert,
     PDF pp. 263-264, proves (b) and cites Fuentes-Pedreira and Maruyama for (a)
@@ -103,6 +101,30 @@ audit:
     introduction, and it is listed open in COMPLAINTS for that reason. Not
     checked: whether Theorem 4.12(4) iterates, since its hypothesis asks for a
     decomposable surface and its conclusion is an indecomposable one.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read Theorem 4.12(4) against its proof in the text version of Fuentes and
+    Pedreira on 2026-11-16 and corrected the earlier reading of it, and made step
+    s15 say what it is. That theorem does not need to be iterated: applied once
+    to the decomposable surface with invariant e+1 it returns an indecomposable
+    surface with invariant (e+1)-1 = e, and the decomposable surfaces of every
+    invariant e >= 0 exist by the book's Theorem 2.12(a) and by the paper's own
+    Theorem 3.2(1), so one application reaches every 0 <= e <= 2g-2. What the
+    theorem asks for and the paper does not construct is the point P of the base
+    that is a base point of the linear system of -me; it exists whenever h^0(-me) = 1, the system
+    then having the single member -me whose support is its base locus, and in
+    general it is a condition on the divisor class. The events above say that the
+    theorem is "one step of a construction" and this card's remark said the same;
+    both now say that one application suffices given such a P, and the card does
+    not claim part (a) closed on the theorem. Step s15 is now what it should have
+    been: part (d) is the case g = 2 of the printed Note and of Nagata's paper
+    behind it, nothing in tmp/sources proves it, and the book's own argument in
+    Theorem 2.12 reaches only e >= -2g, that is e >= -4 at g = 2, the dimension
+    count of step s12 covering d <= g only. The events above and the earlier
+    step said nothing false about the bound itself but the qed claimed part (d)
+    proved, which it is not.
 ---
 
 ::: {.problem}
@@ -610,24 +632,28 @@ This proves part (c).
 
 ::: {.pf-step #s15}
 
-If $g=2$, every ruled surface over $C$ has
+Part (d), the bound
 $$
-\boxed{e\ge-2}.
+e\ge-2
 $$
+for $g=2$, is the case $g=2$ of the printed Note. It is not proved on this
+card.
 
 ::: pf-proof
 
-The note printed with this exercise cites Nagata [8] for the general theorem
-$$
-e\ge-g
-$$
-for a ruled surface over a genus-$g$ curve. The retained companion source also
-identifies part (d) as a direct application of Theorem 1 in Nagata's cited
-self-intersection paper. Specializing the stated theorem to $g=2$ gives
-$$
-e\ge-2,
-$$
-as required.
+The Note printed with the exercise reads "It has been shown that $e\geqslant-g$
+for any ruled surface (Nagata [8])", and cites M. Nagata, "On self-intersection
+number of a section on a ruled surface", Nagoya Math. J. 37 (1970), 191-196,
+which is not in tmp/sources and is not readable from here. What the book proves
+itself is weaker: the second half of the proof of Theorem 2.12 runs the
+Riemann-Roch count with an invertible sheaf $\mathcal M$ of degree $-1$ and
+concludes $e\ge-2g$, which for $g=2$ is $e\ge-4$. Steps [](#s1){.pf-ref} to
+[](#s14){.pf-ref} do not sharpen it either: the dimension count of step
+[](#s12){.pf-ref} covers $d\le g$, and for $g=2$ and $d\ge3$ the incidence
+variety has the dimension of the whole projective space of classes, so it
+decides nothing. Part (d) therefore rests on the printed Note and on the two
+secondary statements of the bound in Fuentes--Pedreira recorded in the events
+above, and it is listed as open in COMPLAINTS.
 
 :::
 
@@ -635,9 +661,8 @@ as required.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (b), steps
-[](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (c), and step [](#s15){.pf-ref} proves part (d) from the general
-Nagata bound explicitly cited by the exercise.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (b), and steps
+[](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (c). Part (d) is not proved here: step [](#s15){.pf-ref} records the printed Note and its reference to Nagata, whose paper was not read, and states what the book's own argument gives instead.
 
 :::
 
@@ -646,7 +671,7 @@ Nagata bound explicitly cited by the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.5, PDF pp. 263--264. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4": that is Fuentes--Pedreira's Theorem 4.12(4), printed pp. 31--32, which takes a decomposable surface and an elementary transformation at a point outside $X_0$ and $X_1$ over a base point of $-\mfe$, and returns an indecomposable surface with invariant $e-1$; it is one step of a construction and not a proof that every $0\le e\le2g-2$ occurs, and part (a) is supplied here by steps [](#s1){.pf-ref} to [](#s3){.pf-ref} instead. For (c) he writes "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama", a citation to Maruyama's book, which is not retained. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct (a) from a nonzero class in $H^1(\OO_C(K_C-A))$ with $A$ effective, and steps [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove (c) by a dimension count on the bad classes in $\PP H^1(\OO_C(-D))$; step [](#s15){.pf-ref} takes (d) from the printed Note. Matches on (b); (a) and (c) are supplied here.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.5, PDF pp. 263--264. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4": that is Fuentes--Pedreira's Theorem 4.12(4), printed pp. 31--32, which takes a decomposable surface and an elementary transformation at a point outside $X_0$ and $X_1$ over a base point $P$ of $-\mfe$, and returns an indecomposable surface with invariant $e-1$. One application to the decomposable surface of invariant $e+1$, which exists for every $e\ge0$ by the book's Theorem V.2.12(a), gives an indecomposable surface of invariant $e$, so no iteration is needed and the theorem covers every $0\le e\le2g-2$ once a base point $P$ of $\linearsystem{-\mfe}$ is produced. That is the one thing the paper leaves to the reader, and it is available when $h^0(-\mfe)=1$, $\linearsystem{-\mfe}$ then having the single member $-\mfe$, whose support is its base locus; in general it is a condition on the divisor class, and this card does not settle it. Part (a) is proved here by steps [](#s1){.pf-ref} to [](#s4){.pf-ref} without that condition. For (c) he writes "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama", a citation to Maruyama's book, which is not retained. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note, and the card records that citation without claiming the bound proved. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct (a) from a nonzero class in $H^1(\OO_C(K_C-A))$ with $A$ effective, and steps [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove (c) by a dimension count on the bad classes in $\PP H^1(\OO_C(-D))$; step [](#s15){.pf-ref} records (d)'s citation. Matches on (b); (a) and (c) are supplied here, and (d) is not proved on this card.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.5, printed p. 103, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s12){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
 

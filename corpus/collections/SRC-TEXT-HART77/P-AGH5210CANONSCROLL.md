@@ -50,14 +50,12 @@ audit:
     Rechecked against the printed exercise, printed page 385, and against two
     published treatments outside the twelve retained sets. Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 10
-    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf, text version
-    `tmp/sources/ntu-ag2-chapter5.md`), carries the same
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), carries the same
     construction and cites Corollary 2.18, printed page 380, for the nonsingular
     member; it does not prove that the embedding of Y is complete, which is step
     s6 here and needs H^0(O_X(H)) = H^0(Y,K_Y) together with
     h^0(O_X(H)) = 2n-e+2. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.10,
-    printed p. 104 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), computes the
+    printed p. 104 (tmp/sources/lfwin-hartshorne-solutions.pdf), computes the
     genus and the g_3^1 and never shows the member nonsingular or K_Y the
     restricted hyperplane class. All eight steps were re-read: the pushforward
     pi_*O(aC_0+bf) as the sum of O(b-ie) with b-3e = n-2e+2 >= 0 for
@@ -71,7 +69,7 @@ audit:
   date: 2026-11-16
   note: >-
     Read Fuentes and Pedreira (arXiv:math/0006204v3), Sections 2 and 3, printed
-    pp. 11 to 22, on 2026-11-16: their results are base-point and very-ampleness
+    pp. 7 to 25, on 2026-11-16: their results are base-point and very-ampleness
     criteria for the linear system of the divisor C_0 + bf, and they contain no
     statement that a curve of genus d+2 inside the rational scroll is canonical in
     its embedding, so the exercise is not in the paper. Sections 5 and 6 introduce
@@ -90,6 +88,19 @@ audit:
     3E_n + ((g+3n+2)/2)F_n in the Hirzebruch surface, which again begins with the
     curve and so is not the existence construction of this exercise. No complete
     published argument located; steps s1 to s5 remain the card's.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Restored the event of 2026-11-11 above to its text of that date, removing the
+    text-version names that a later commit of 2026-11-16 inserted into it. The
+    two sources it cites are in tmp/sources/ntu-ag2-chapter5.md and
+    tmp/sources/lfwin-hartshorne-solutions.md, beside their PDFs, and the remark
+    names the text version of each source it cites. Also corrected the page range
+    of Fuentes--Pedreira's Sections 2 and 3 in the event above, which read "pp. 11
+    to 22": section 2 begins on printed p. 7 and section 4 has begun by printed
+    p. 25, whose text is item 7 of the list in Proposition 4.2, so the range is
+    pp. 7 to 25. Nothing else in the audit changes.
 ---
 
 ::: {.problem}

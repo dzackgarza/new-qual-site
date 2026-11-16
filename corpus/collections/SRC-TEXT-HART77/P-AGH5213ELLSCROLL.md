@@ -98,6 +98,23 @@ audit:
     is outside the paper, whose Section 3 treats decomposable surfaces only, and
     the Atiyah surface there is indecomposable; step s1 constructs it and steps s3
     to s7 carry it through, and Yang Pi-Yeh's count, recorded above, agrees.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the remark's use of Fuentes--Pedreira's Theorem 3.10(1) on
+    2026-11-16. That theorem gives N = h^0(O_X(b)) + h^0(O_X(b+e)) - 1, where N
+    is the dimension of the projective space in which the scroll lies, together
+    with deg S = 2 deg b - e; the remark read the first formula as the number of
+    sections, which is the confusion it records against Egbert elsewhere, and it
+    now says that on an elliptic base the section counts are n and n-e, so that
+    h^0 = d = 2n-e and N = d-1, the scroll lying in P^{d-1}, which is what step
+    s6 computes directly and what the event above states correctly. Also
+    recorded here, since dated events are not rewritten: the event of 2026-11-11
+    cites Yang Pi-Yeh by PDF, whose text version is
+    tmp/sources/lfwin-hartshorne-solutions.md, and the National Taiwan University
+    set, whose text version is tmp/sources/ntu-ag2-chapter5.md beside its PDF;
+    the remark's citation of Yang names his.
 ---
 
 ::: {.problem}
@@ -379,7 +396,7 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 ::: {.remark title="Published solution"}
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, settle the case $e\ge0$: Theorem 3.2(1), printed p. 15, has every $e\ge0$ occurring for a decomposable surface; Theorem 3.9(3), printed p. 18, makes $\linearsystem{X_0+\mfb f}$ very ample exactly when $\mfb$ and $\mfb+\mfe$ are; and Theorem 3.10(1), printed p. 19, gives $h^0=h^0(\mfb)+h^0(\mfb+\mfe)-1$ and degree $2\deg\mfb-e$, so that $n\ge e+3$ on an elliptic base gives $\PP^{d-1}$ with $d=2n-e$. That is steps [](#s3){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} for $e\ge0$ on a decomposable surface. Their §3 covers decomposable surfaces only, so the Atiyah surface $e=-1$ is outside it, and step [](#s1){.pf-ref} is what supplies that case.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, settle the case $e\ge0$: Theorem 3.2(1), printed p. 15, has every $e\ge0$ occurring for a decomposable surface; Theorem 3.9(3), printed p. 18, makes $\linearsystem{X_0+\mfb f}$ very ample exactly when $\mfb$ and $\mfb+\mfe$ are; and Theorem 3.10(1), printed p. 19, gives $N=h^0(\mfb)+h^0(\mfb+\mfe)-1$ and degree $2\deg\mfb-e$, where $N$ is the dimension of the projective space containing the scroll and not the number of sections; on an elliptic base the two section counts are $n$ and $n-e$, so $h^0=d=2n-e$ and $N=d-1$, and the scroll lies in $\PP^{d-1}$, which is what step [](#s6){.pf-ref} computes directly. That is steps [](#s3){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} for $e\ge0$ on a decomposable surface. Their §3 covers decomposable surfaces only, so the Atiyah surface $e=-1$ is outside it, and step [](#s1){.pf-ref} is what supplies that case.
 
 The very-ampleness step it imports is its own 5.2.12(b), and the two absolute values there are wrong by the
 same amount, so the step survives while its arithmetic does not. On printed p. 104 it writes

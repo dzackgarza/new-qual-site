@@ -63,8 +63,7 @@ audit:
     section of class C_0-f would have b = -1 < 0. Searched outside the twelve
     retained sets: NTU 2020 has no entry for Exercise 15 of section 2; Yang
     Pi-Yeh, Hartshorne Solutions, printed pp. 105-106
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), has the (a) computation and
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), has the (a) computation and
     garbled (b) and (c). Egbert, PDF pp. 271-273, cites Miyanishi for (c). Not
     checked: whether Y as constructed is singular with delta = 1; the card
     asserts it from p_a(Y) - p_a(C) = 1 and does not compute the singularity.
@@ -91,6 +90,17 @@ audit:
     tmp/sources. No complete published argument located; steps s7 to s10 remain
     the card's, and the defect of the printed "nonsingular", recorded at the head
     of the solution, stands.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Restored the event of 2026-11-11 above to its text of that date, removing the
+    text-version name that a later commit of 2026-11-16 inserted into it. Yang
+    Pi-Yeh's text version is tmp/sources/lfwin-hartshorne-solutions.md beside his
+    PDF, and the remark's citation of him names that file; Egbert's is
+    tmp/sources/hartshorne-solutions-egbert.md. The event of 2026-11-16 above,
+    which records that the National Taiwan University set's text version had
+    arrived, stays as it was written.
 ---
 
 ::: {.problem}

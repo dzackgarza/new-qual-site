@@ -49,8 +49,7 @@ audit:
     subtracting a point for nonspeciality in the elliptic case). Searched
     outside the twelve retained sets: NTU 2020 has no entry for Exercise 12 of
     section 2; Yang Pi-Yeh, Hartshorne Solutions, printed pp. 104-105
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), disposes of e >= 0 as trivial
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), disposes of e >= 0 as trivial
     and its e = -1 computation is garbled. Egbert, PDF pp. 268-269, cites
     Fuentes-Pedreira 1.3 and 1.4 alone. Not checked: Fuentes-Pedreira, which is
     not in tmp/sources, so its criterion is neither used nor verified here.
@@ -68,7 +67,7 @@ audit:
   date: 2026-11-16
   note: >-
     Read Fuentes and Pedreira (arXiv:math/0006204v3), Sections 2 and 3, printed
-    pp. 11 to 22, on 2026-11-16. Its Theorem 3.9(3), printed p. 18, states for a
+    pp. 7 to 25, on 2026-11-16. Its Theorem 3.9(3), printed p. 18, states for a
     decomposable ruled surface that the system of C_0 + bf is very ample exactly
     when b and b+e are very ample. For an elliptic base with e at least zero that
     gives the criterion behind this exercise: both degrees must reach three, and
@@ -77,8 +76,8 @@ audit:
     invokes Corollary 2.13, printed p. 14, whose criterion is
     h^0(H - (P+Q)f) = h^0(H) - 4 for all P and Q in the base, and that corollary
     is proved --- its converse is Proposition 2.3, printed p. 8, applied to the
-    system |H - Pf|, a point at which the map fails being a base point of some
-    |H - Pf| by Theorem 2.11, printed pp. 12--13. An earlier note here recorded
+    system $\linearsystem{H-Pf}$, a point at which the map fails being a base point
+    of some $\linearsystem{H-Pf}$ by Theorem 2.11, printed pp. 12--13. An earlier note here recorded
     the converse as an assertion and the two-fibre condition as blind to tangent
     directions; both readings are withdrawn, since the case Q = P is exactly what
     Theorem 2.11 supplies. Proposition 2.15, printed p. 15, rests on the same
@@ -88,9 +87,30 @@ audit:
     Theorem V.2.15 shows is the only indecomposable elliptic ruled surface with
     negative e, and the indecomposable bundles of invariant e = 0, which Section 3
     excludes with all indecomposable ones. For e = -1 sufficiency is step s9 and
-    necessity step s10; for an indecomposable e = 0 the same two steps apply,
-    sufficiency through the book's V.2.11(b) as in step s7 and necessity through
-    the restriction to C_0.
+    necessity step s10; for an indecomposable e = 0 sufficiency is step s7, which
+    covers every e at least zero through the book's V.2.11(b), and necessity is
+    step s10, the restriction to C_0.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Three corrections on 2026-11-16. The event of 2026-11-11 is restored to its
+    text of that date, the text-version names a later commit had put into it
+    being removed, and the event of 2026-11-16 that recorded their restoration
+    stays as what that reading did; where a source is cited in the remark it
+    names its text version, and the two sets the 2026-11-11 event cites without
+    one are the National Taiwan University homework, text version
+    tmp/sources/ntu-ag2-chapter5.md beside its PDF, and Egbert, text version
+    tmp/sources/hartshorne-solutions-egbert.md beside his. The page range of
+    Fuentes--Pedreira's Sections 2 and 3 was wrong: section 2 begins on printed
+    p. 7, after the end of section 1 on that page, and section 4 has begun by
+    printed p. 25, whose text is item 7 of the list in Proposition 4.2, so the
+    two sections run from p. 7 to p. 25 if not a page further; the printed
+    pages of that paper are its PDF pages, Theorem 3.9(3) on p. 18 as cited. And
+    the event above had the exceptional cases the wrong way round: for an
+    indecomposable bundle of invariant zero, sufficiency is step s7, which is
+    the e at least zero case, and only necessity is step s10; steps s8 and s9
+    are the Atiyah surface e = -1.
 ---
 
 ::: {.problem}
@@ -541,5 +561,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.12, printed pp. 104--105, treats $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" without checking that $\linearsystem{\mathfrak b}$ and $\linearsystem{\mathfrak b+\mathfrak e}$ are base-point-free and that $\mathfrak b$ is nonspecial, which on an elliptic curve is the content of step [](#s1){.pf-ref}; for $e=-1$ its computation is garbled, "$h^0(L_X(C_0+\mathfrak b f-Pf))=h^0(L_C(\mathfrak E+\mathfrak B-P))-h^1(L_X(\mathfrak b f-Pf))=1-1=0$" both in the subtraction of an $h^1$ that vanishes and in the resulting value. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 12 of §2.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), Theorem 3.9(3), printed p. 18, states for a decomposable ruled surface that the system of $C_0+\mfb f$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are. For $e\ge0$ on an elliptic base that is the criterion of part (b): both degrees must reach three, and $\deg(\mfb+\mfe)=m-e$ because $\deg\mfe=-e$, so the bound is $m\ge e+3$, as printed. The proof of that equivalence is complete. It invokes the paper's Corollary 2.13, printed p. 14, whose criterion is $h^0(H-(P+Q)f)=h^0(H)-4$ for all $P,Q$ in the base, and that corollary is proved: the forward direction is Theorem 2.11, printed pp. 12--13, and the converse is Proposition 2.3, printed p. 8, applied to $|H-Pf|$, a point at which the map fails being a base point of some $|H-Pf|$. An earlier reading here held the converse to be an assertion and the condition blind to a tangent direction transverse to a fibre; both are withdrawn, the case $Q=P$ being what Theorem 2.11 supplies for the differential. Proposition 2.15, printed p. 15, rests on the same corollary and is sound on the same footing, and Proposition 2.14, printed p. 14, is the embedding off the section. What the paper leaves open here is what its Section 3 does not reach, an indecomposable bundle: the Atiyah surface with $e=-1$, whose very ampleness steps [](#s8){.pf-ref} and [](#s9){.pf-ref} settle, and the indecomposable bundles with $e=0$, for which steps [](#s7){.pf-ref} and [](#s10){.pf-ref} are the argument since the book's Exercise V.2.11(b) needs no decomposability.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), Theorem 3.9(3), printed p. 18, states for a decomposable ruled surface that the system of $C_0+\mfb f$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are. For $e\ge0$ on an elliptic base that is the criterion of part (b): both degrees must reach three, and $\deg(\mfb+\mfe)=m-e$ because $\deg\mfe=-e$, so the bound is $m\ge e+3$, as printed. The proof of that equivalence is complete. It invokes the paper's Corollary 2.13, printed p. 14, whose criterion is $h^0(H-(P+Q)f)=h^0(H)-4$ for all $P,Q$ in the base, and that corollary is proved: the forward direction is Theorem 2.11, printed pp. 12--13, and the converse is Proposition 2.3, printed p. 8, applied to $\linearsystem{H-Pf}$, a point at which the map fails being a base point of some $\linearsystem{H-Pf}$. An earlier reading here held the converse to be an assertion and the condition blind to a tangent direction transverse to a fibre; both are withdrawn, the case $Q=P$ being what Theorem 2.11 supplies for the differential. Proposition 2.15, printed p. 15, rests on the same corollary and is sound on the same footing, and Proposition 2.14, printed p. 14, is the embedding off the section. What the paper leaves open here is what its Section 3 does not reach, an indecomposable bundle: the Atiyah surface with $e=-1$, whose very ampleness steps [](#s8){.pf-ref} and [](#s9){.pf-ref} settle, and the indecomposable bundles with $e=0$, for which steps [](#s7){.pf-ref} and [](#s10){.pf-ref} are the argument since the book's Exercise V.2.11(b) needs no decomposability.
 :::

@@ -47,8 +47,7 @@ audit:
     characteristic 3 but the resulting coefficient of h is 2 = -1, so the class
     is still 2 eta. Searched outside the twelve retained sets: Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.2.17, printed pp. 106-107
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
-    `tmp/sources/lfwin-hartshorne-solutions.md`), computes both parts by the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), computes both parts by the
     Jacobian presentation and adds characteristic 3 to the split case, which
     contradicts its own 2 eta; Algebraic Geometry II, National Taiwan
     University, 2020 Spring, has no entry for Exercise 17 of section 2. Egbert,
@@ -84,6 +83,32 @@ audit:
     the change of coordinates between the two charts and the two elementary
     operations on the transition matrix, which his answer leaves as "here is where
     you have to do some work".
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected step s5's two elementary operations on 2026-11-16. The matrix
+    relates the two frames, (tau_1, tau_2) = (sigma_1, sigma_2)M, so changing the
+    first frame is a row operation with a matrix over k[t], the coordinate ring of
+    the chart x_0 != 0 that carries sigma, and changing the second is a column
+    operation with a matrix over k[t^{-1}], the ring of the chart x_3 != 0 that
+    carries tau; the step had them the other way round, and the two operations it
+    wrote -- (2/3)t^{-1} times the first row added to the second and -(2/3)t times
+    the first column added to the second -- are then not changes of frame at all,
+    so as it stood the reduction proved nothing even though its answer was right.
+    The valid pair, verified by multiplying the two matrices out, is 2t times the
+    second row added to the first, which is a row operation over k[t] and gives
+    [[t^{-5}, 0], [2t^{-6}, t^{-5}]], and then -2t^{-1} times the first column
+    added to the second, a column operation over k[t^{-1}], which gives t^{-5}
+    times the identity. Equivalently M = t^{-5}AB with A = [[1,-2t],[0,1]] and
+    B = [[1,0],[2t^{-1},1]], of determinant one, A over k[t] and B over k[t^{-1}],
+    so the sheaf is O(-5) + O(-5) and l = m = -5, which steps s3 and s4 already
+    give. The remark now states the two operations in the same order, and names
+    the saved file of Elencwajg's answer 569653. The event of 2026-11-11 above is
+    restored to its text of that date, the text-version name a later commit of
+    2026-11-16 put into it being removed; Yang Pi-Yeh's text version is
+    tmp/sources/lfwin-hartshorne-solutions.md and Egbert's is
+    tmp/sources/hartshorne-solutions-egbert.md.
 ---
 
 ::: {.problem}
@@ -490,25 +515,33 @@ $$
 \end{pmatrix}.
 $$
 
-Two elementary operations reduce that matrix. Adding $\frac23t^{-1}$ times the
-first row to the second, a row operation over $k[t^{-1}]$, gives
+The matrix relates the two frames, so a change of the first frame is a row
+operation and a change of the second is a column operation on it: replacing
+$(\sigma_1,\sigma_2)$ by $(\sigma_1,\sigma_2)S$ with $S\in\GL_2(k[t])$,
+which is a change of frame over the chart $x_0\ne0$ whose coordinate ring is
+$k[t]$, replaces $M$ by $S^{-1}M$, and replacing $(\tau_1,\tau_2)$ by
+$A(\tau_1,\tau_2)$ with $A\in\GL_2(k[t^{-1}])$, a change of frame over
+$x_3\ne0$, replaces $M$ by $MA$. The row operations are therefore over $k[t]$
+and the column operations over $k[t^{-1}]$.
+
+Two of them reduce the matrix. Adding $2t$ times the second row to the first, a
+row operation over $k[t]$, gives
 $$
 \begin{pmatrix}
--3t^{-5} & -2t^{-4}\\
-0 & -\frac13t^{-5}
+t^{-5} & 0\\
+2t^{-6} & t^{-5}
 \end{pmatrix},
 $$
-and adding $-\frac23t$ times the first column to the second, a column operation
-over $k[t]$, gives
+and adding $-2t^{-1}$ times the first column to the second, a column operation
+over $k[t^{-1}]$, gives
 $$
 t^{-5}
 \begin{pmatrix}
--3 & 0\\
-0 & -\frac13
+1 & 0\\
+0 & 1
 \end{pmatrix}.
 $$
-Changing each frame by a constant rescales the two entries to $t^{-5}$, so the
-conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$.
+So the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$.
 
 :::
 
@@ -563,6 +596,6 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
-Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), saved as `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, is a complete published proof of part (a) by another route: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrict_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix. Step [](#s5){.pf-ref} carries that computation: the two frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$, the transition matrix and its reduction to $t^{-5}$ times the identity by one column operation over $k[t]$ and one row operation over $k[t^{-1}]$. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b), and step [](#s3){.pf-ref} covers both parts by one computation, which is the card's own and not a transcription of either.
+Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), saved as `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`, is a complete published proof of part (a) by another route: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrict_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix. Step [](#s5){.pf-ref} carries that computation: the two frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$, the transition matrix and its reduction to $t^{-5}$ times the identity by one row operation over $k[t]$ and one column operation over $k[t^{-1}]$. Georges Elencwajg's answer 569653 to question 569237, saved as `tmp/sources/mse-569237-hart77-v217-twisted-cubic-normal-bundle-2.md`, records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b), and step [](#s3){.pf-ref} covers both parts by one computation, which is the card's own and not a transcription of either.
 
 :::
