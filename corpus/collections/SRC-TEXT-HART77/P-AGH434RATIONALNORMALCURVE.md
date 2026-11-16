@@ -318,6 +318,53 @@ audit:
     Where: tmp/sources/ntu-ag2-chapter4.pdf, PDF page 9, whose printed folio is 9,
     the folio read in its own footer. Not read in this pass: any other page, and
     the book, Egbert and Reiser, whose pages are those of the events above.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's final recheck of this batch, limited to its four
+    blocking findings on this card and their records.
+
+    The card's own alternative proofs of the two halves of (a) are withdrawn
+    because Hou prints proofs of both, on the same source-governs ground on which
+    the card's own proof of (b) was withdrawn above. Step
+    #surjective-restriction and the Exercise II.5.14(d) route in
+    #projective-normality are removed, as is the straightening route in
+    #quadrics-generate. The published toric and division arguments remain.
+
+    The two expansions that remain inside those transcriptions now say that they
+    are the card's own: the generation of $\ZZ^2\cap\sigma$ by $(1,i)$ with its
+    decomposition and the lattice map with its inverse, which verify Hou's
+    printed identification of $V$ with the affine toric variety of $\sigma$; and
+    the distinct-exponent completion with pure powers included, which his false
+    exclusion of them had omitted. The lattice calculation and the exponent
+    calculation were checked by hand; no alternative proof is added.
+
+    Correction of the event immediately above and of this date's COMPLAINTS
+    record headed "The cone's inequality sign is the text version's loss": both
+    say that the text version renders Hou's $x_i^n$ as $x_i^l$. That is false.
+    Printed p. 9, observation (1), reads "$r$ contains no monomial of the form
+    $-x_i^l$, for $i=1,\ldots,d-1$". His later sentence after the decomposition
+    says that each $h_i$ "contains no term like $x_i^n$". The text version
+    faithfully carries the first at line 302 and the second at line 312. Only its
+    loss of the cone's greater-or-equal sign stands as an extraction defect.
+    Step #quadrics-generate now distinguishes the two sentences and no longer
+    paraphrases observation (1) with $x_i^n$. The earlier event and record stand
+    as written, and a new COMPLAINTS record of this date carries the correction.
+
+    The solution's opening no longer says that four of ten steps are the card's
+    own: after the removals there are nine steps, one wholly the card's own and
+    three transcriptions carrying expansions marked as the card's own. The pf-qed
+    and the published-solution remark no longer name the withdrawn routes.
+
+    Read for this repair: the whole card; Hartshorne IV.3.4 on printed p. 315
+    (PDF p. 330) in tmp/sources/hartshorne-1977-algebraic-geometry.md at lines
+    9855--9863; Hou's complete §3 Exercise 4 in
+    tmp/sources/ntu-ag2-chapter4.md at lines 276--340, and printed pp. 8--10 of
+    tmp/sources/ntu-ag2-chapter4.pdf, with observation (1), the later $x_i^n$
+    sentence and $\RR_{\ge0}$ checked on printed p. 9. Not re-read in this pass:
+    Egbert, Reiser and any source outside those two; their unchanged citations
+    are those of the earlier events. No statement or part of (b) changes.
 ---
 
 ::: {.problem}
@@ -337,7 +384,7 @@ A curve of degree 3 in any $\PP^n$ must be either a plane cubic curve, or the tw
 :::
 
 ::: {.solution}
-Each step names the published argument it transcribes, or says that it is the card's own. The transcription is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou — part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10 — and, for the degree and the genus of part (b), A. Egbert's *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b), printed p. 220. Four of the ten steps are the card's own.
+Each step names the published argument it transcribes, or says that it is the card's own. The transcription is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou — part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10 — and, for the degree and the genus of part (b), A. Egbert's *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b), printed p. 220. One of the nine steps is wholly the card's own, and three transcribed steps carry expansions marked as the card's own.
 
 Write $S(X)=k[x_0,\ldots,x_d]/I(X)$ for the homogeneous coordinate ring of
 $$
@@ -347,34 +394,6 @@ graded so that $\deg x_i=1$, and write $\theta:k[x_0,\ldots,x_d]\to k[t_0,t_1]$ 
 
 ::: pf
 
-::: {.pf-step #surjective-restriction}
-
-For every $m\ge0$ the restriction map
-$$
-H^0(\PP^d,\mco_{\PP^d}(m))\longrightarrow H^0(\PP^1,\mco_{\PP^1}(md))
-$$
-is surjective, and $\dim\bigl(S(X)\bigr)_m=md+1$.
-
-::: pf-proof
-
-This step is the card's own. The identification
-$S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ is (I, Ex. 2.12), and is stated at Hou,
-§3 Exercise 4(a), printed p. 8; the monomial count is the card's.
-
-The map sends $x_i\mapsto s^{d-i}t^i$ in coordinates $[s:t]$ on $\PP^1$. The
-target has basis
-$$
-s^{md-r}t^r,\qquad 0\le r\le md.
-$$
-Write $r=qd+a$ with $0\le a<d$. If $q<m$, the monomial is the image of
-$x_d^q x_a x_0^{m-q-1}$; if $q=m$, then $a=0$ and it is the image of $x_d^m$. So
-every basis monomial is in the image, and the image has dimension $md+1$, which
-is $\dim H^0(\PP^1,\mco_{\PP^1}(md))$; hence the image is the whole target.
-
-:::
-
-:::
-
 ::: {.pf-step #projective-normality}
 
 $X$ is projectively normal.
@@ -382,7 +401,7 @@ $X$ is projectively normal.
 ::: pf-proof
 
 This step transcribes Hou, §3 Exercise 4(a), printed pp. 8--9, in the second of
-his two arguments, and keeps the card's own route beside it.
+his two arguments.
 
 $S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ is the semigroup algebra of the monoid
 $M\subseteq\ZZ^2$ generated by the exponent pairs of its monomials,
@@ -393,6 +412,8 @@ and $V=\Spec S(X)$ is the affine cone over $X$, whose cone is Hou's:
 $$
 \sigma=\RR_{\ge0}\bigl\langle e_1,\,e_1+de_2\bigr\rangle\subset\RR^2.
 $$
+The generation of $\ZZ^2\cap\sigma$, its decomposition, and the lattice map
+with its inverse below are the card's own verification of Hou's identification.
 The cone $\sigma$
 is strongly convex polyhedral, and $\ZZ^2\cap\sigma$ is generated by
 $(1,0),(1,1),\ldots,(1,d)$: a lattice point $(x,y)$ of $\sigma$ has
@@ -410,17 +431,6 @@ integrally closed in its fraction field; hence $k[\ZZ^2\cap\sigma]$ is normal an
 $V$ is normal. Hou's closing sentence is the definition: an affine cone over a
 projective variety is normal exactly when the variety is projectively normal.
 So $X$ is projectively normal.
-
-The card's own route, carried before this round, is Exercise II.5.14(d). By step
-[](#surjective-restriction){.pf-ref} the restriction map
-$$
-H^0(\PP^d,\mco_{\PP^d}(m))\longrightarrow
-H^0(X,\mco_X(m))=H^0(\PP^1,\mco_{\PP^1}(md))
-$$
-is surjective for every $m\ge0$, and by
-[[P-AGH2514PROJNORM|Exercise II.5.14(d)]] normality of $X$, which is $\PP^1$,
-together with that surjectivity in every degree is equivalent to projective
-normality of $X$.
 
 Hou's other argument at the same place, integral closedness of $S(X)$ through the
 equation $f^n+a_{n-1}f^{n-1}+\cdots+a_0=0$, has two false statements in it. He
@@ -460,9 +470,9 @@ The $g_{ij}$ generate $I(X)$.
 
 ::: pf-proof
 
-This step transcribes Hou, §3 Exercise 4(a), printed p. 9, whose division
-argument is complete once his first observation is dropped, and keeps the card's
-own straightening argument beside it.
+This step transcribes Hou, §3 Exercise 4(a), printed p. 9. His false exclusion
+of pure powers is named, and the completion with pure powers included is marked
+as the card's own.
 
 Let $J$ be the ideal generated by the $g_{ij}$, so that $J\subseteq I(X)$ by step
 [](#quadrics-vanish){.pf-ref}. For $f\in I(X)$ homogeneous of degree $n$, divide
@@ -474,11 +484,13 @@ in which two indices differ by at least $2$, and is therefore a sum
 $$
 r=h_0(x_0,x_1)+h_1(x_1,x_2)+\cdots+h_{d-1}(x_{d-1},x_d)
 $$
-with each $h_i$ homogeneous of degree $n$. His first observation, that $r$
-contains no pure power $x_i^n$ for $1\le i\le d-1$, is false: the leading
+with each $h_i$ homogeneous of degree $n$. His observation (1) says that $r$
+contains no monomial of the form $-x_i^l$ for $1\le i\le d-1$; after giving the
+decomposition he separately writes that each $h_i$ contains no term like $x_i^n$.
+Both sentences exclude pure powers, and that exclusion is false: the leading
 monomial of $g_{i-1,i}=x_{i-1}x_{i+1}-x_i^2$ is $x_{i-1}x_{i+1}$, which divides
-no pure power, so $x_i^n$ survives the division. The argument does not need the
-observation. Every monomial of $r$ is
+no pure power, so $x_i^n$ survives the division. The following completion of his
+argument with pure powers included is the card's own. Every monomial of $r$ is
 $$
 x_i^{\,n-k}x_{i+1}^{\,k},\qquad 0\le i\le d-1,\quad 0\le k\le n,
 $$
@@ -493,30 +505,6 @@ $(j-1,n)$, with the same monomial and the same image either way. Hence
 $\theta(r)=0$ forces $r=0$, that is $f\in J$. (His printed display of $h_0$ and
 $h_{d-1}$ closes with $x_1^d$ where $x_d^n$ is meant, and his display of
 $\theta(r)=0$ carries $t_1^{r+k}$ where $t_1^{i+k}$ is meant; neither is used.)
-
-The card's own route straightens monomials instead. Write $R=k[x_0,\ldots,x_d]$.
-For a degree-$m$ monomial $M=x_{i_1}\cdots x_{i_m}$, whenever two of its indices
-satisfy $b-a\ge2$ the relation
-$$
-x_ax_b\equiv x_{a+1}x_{b-1}\pmod J
-$$
-replaces them by two closer indices while preserving their sum, and the sum of
-the squares of the indices strictly decreases; so repeated straightening
-terminates. Every degree-$m$ monomial is therefore congruent modulo $J$ to one
-whose indices differ by at most $1$. If the sum of its indices is
-$r=mq+a$ with $0\le a<m$, that monomial is $x_q^{m-a}x_{q+1}^{a}$, with the
-evident reading $x_d^m$ when $r=md$. So $(R/J)_m$ is spanned by the $md+1$
-monomials belonging to the index sums $0,\ldots,md$.
-
-Their images in $(S(X))_m$ are the distinct monomials
-$$
-s^{md-r}t^r,\qquad 0\le r\le md,
-$$
-which are linearly independent, so those classes are a basis of $(R/J)_m$ and
-$\dim (R/J)_m=md+1$. By step [](#surjective-restriction){.pf-ref},
-$\dim (R/I_X)_m=\dim(S(X))_m=md+1$ as well, and $J\subseteq I_X$ makes
-$(R/J)_m\to(R/I_X)_m$ surjective; equal dimensions force
-$(I_X)_m=J_m$ for every $m$, hence $I_X=J$.
 
 :::
 
@@ -676,8 +664,8 @@ the image of $\nu_3$ is the twisted cubic.
 
 ::: pf-qed
 
-Steps [](#surjective-restriction){.pf-ref}, [](#projective-normality){.pf-ref},
-[](#quadrics-vanish){.pf-ref} and [](#quadrics-generate){.pf-ref} prove part
+Steps [](#projective-normality){.pf-ref}, [](#quadrics-vanish){.pf-ref} and
+[](#quadrics-generate){.pf-ref} prove part
 (a), steps [](#hyperplane-divisor){.pf-ref}, [](#strict-inequality){.pf-ref},
 [](#genus-zero){.pf-ref} and [](#is-rational-normal){.pf-ref} prove part (b), and
 steps [](#degree-two){.pf-ref} and [](#degree-three){.pf-ref} prove its two
@@ -691,7 +679,7 @@ consequences.
 
 
 ::: {.remark title="Published solution"}
-Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by the toric argument that $\Spec S(X)$ is the affine toric variety of the cone $\sigma=\RR_{\ge0}\langle e_1,e_1+de_2\rangle$, whose monoid $\ZZ^2\cap\sigma$ is isomorphic to the exponent monoid of $S(X)$ and is saturated, and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^n$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card carries both of Hou's arguments in (a), with his false first observation named, keeps its own proof of projective normality from Exercise II.5.14(d) beside them, and takes part (b)'s degree and genus from Egbert's solutions of the same exercise, printed p. 220, with Exercise IV.1.5 for the bound that chain uses and IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by the toric argument that $\Spec S(X)$ is the affine toric variety of the cone $\sigma=\RR_{\ge0}\langle e_1,e_1+de_2\rangle$, whose monoid $\ZZ^2\cap\sigma$ is isomorphic to the exponent monoid of $S(X)$ and is saturated, and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^n$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card carries both of Hou's arguments in (a), with his false first observation named, and takes part (b)'s degree and genus from Egbert's solutions of the same exercise, printed p. 220, with Exercise IV.1.5 for the bound that chain uses and IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed pp. 219--220, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal. If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
 :::
