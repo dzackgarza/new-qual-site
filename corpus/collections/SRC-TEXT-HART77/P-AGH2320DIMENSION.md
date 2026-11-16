@@ -146,6 +146,35 @@ audit:
     (a), (b), (e) and (f) were not re-read in this pass, and no step was
     re-derived beyond the two passages above.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the correspondence cited in step
+    codim-z-equals-dim-op. Corollary I.1.4, printed p. 4, is the one-to-one
+    inclusion-reversing correspondence between the algebraic sets in A^n and the
+    radical ideals of k[x_1,...,x_n], with an algebraic set irreducible exactly
+    when its ideal is prime; k is algebraically closed there, and the ring in
+    this step is a finitely generated algebra over an arbitrary field, not the
+    coordinate ring of an affine variety, so the corollary does not state what
+    the step uses and does not apply. The step now cites the correspondence
+    between the irreducible closed subsets of Spec A and the prime ideals of A
+    where it is stated for Spec of a ring, A. Shichijo's Claim Ex3.20.1, printed
+    p. 17, and says that his citation of Ch. I Prop. 1.7 there is the analogue
+    for an affine variety. The audit event of even date above, which introduced
+    the citation of Corollary I.1.4, is left as written; its item (ii) does not
+    hold, for the reason just given, and this event is its correction. Read in
+    this pass: Corollary I.1.4 and Proposition I.1.7 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is PDF
+    p. N+15, Corollary I.1.4 standing on PDF p. 19 (printed p. 4) and
+    Proposition I.1.7 on printed p. 6; and Shichijo, Claim Ex3.20.1 with the
+    proof of Exercise 3.20(c), in tmp/sources/shitijyou-ch2-section3.md, the
+    heading "Ex3.20 Dimension" at line 791 of the extraction, printed p. 17,
+    which is page 17 of tmp/sources/shitijyou-ch2-section3.pdf, its printed
+    folio being its page. Not checked: II.3.20 itself was not re-read in this
+    pass, Shichijo's printed pp. 18--20 were not opened, and no step was
+    re-derived.
+
 ---
 
 ::: {.problem}
@@ -349,7 +378,7 @@ Shichijo, Exercise 3.20(c), printed p. 18: take $Z=V(\mathfrak p_Z)\subseteq\Spe
 $$
 (0)\subsetneq\cdots\subsetneq\mathfrak p_Z,
 $$
-whose length is $\codim(Z,X)$ by the order-reversing correspondence between irreducible closed subsets of an affine variety and prime ideals of its coordinate ring, Corollary I.1.4, printed p. 4.  Shichijo states that correspondence for $\Spec R$ of a ring in his Claim Ex3.20.1, and cites Ch. I Prop. 1.7 there for $\dim R=\dim\Spec R$; Proposition I.1.7, printed p. 6, is the equality of the dimension of an affine algebraic set with that of its coordinate ring.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
+whose length is $\codim(Z,X)$ by the order-reversing correspondence between the irreducible closed subsets of $\Spec A$ and the prime ideals of $A$.  Shichijo states that correspondence for $\Spec R$ of a ring in his Claim Ex3.20.1, printed p. 17, where the irreducible closed subsets of $\Spec R$ stand in bijection with the primes of $R$ and the inclusion is reversed, and cites Ch. I Prop. 1.7 there only as the analogue for an affine variety; Proposition I.1.7, printed p. 6, is the equality of the dimension of an affine algebraic set with that of its coordinate ring.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
 $$
 (0)_{\mathfrak p_Z}\subsetneq\cdots\subsetneq(\mathfrak p_Z)_{\mathfrak p_Z},
 $$
