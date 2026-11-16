@@ -190,6 +190,35 @@ audit:
     delta deg Z, E^r = (-1)^{r-1} from the normal bundle O(-1), and
     (beta^*H)^{r-i} E^i = 0. Nothing is asserted there that the removed steps
     did not prove, and the card's proof of (b) no longer rests on it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on a local reader's report against the sources, four items, and the
+    survey of the retained sets removed from the rendered card. (1) Part (a) is
+    now answer 4656385 transcribed in two steps, not the card's own argument
+    with the answer as a gloss: step join-irreducible-dim-bound is its
+    rational map (D(x_0) cap Y) x A^1 -> X with the function-field bound, and
+    step point-of-x-not-in-y is its induction on dim Y, with the Jacobian
+    choice of H, Theorem I.5.1, Exercise I.3.11, its length lemma, Theorem I.7.7
+    and the two cases, quoted. (2) The incidence-variety argument and the
+    tangent-space argument that were the card's proof of part (a) are now one
+    step, join-equals-y-forces-linear, marked as the card's own, and
+    join-dimension-r-plus-one is the one-line conclusion from the two
+    transcribed steps. (3) The identification of X with the cone over Z is
+    marked as the card's own, with the two nearest printed statements named and
+    the reason they do not apply: Harris's Example 3.1 on printed p. 36 defines
+    the cone as the union of joins, and his Example 3.10 on printed p. 37
+    identifies the cone with the cone over the projection only for p not lying
+    on the variety, whereas P does lie on Y. (4) The multiplicity of the
+    nonsingular point, which Mumford's Definition 2.2 and Harris's transversality
+    sentence give between them but neither states, is marked as the card's own
+    and now states what was missing: the multiplicity of a point is that of the
+    maximal ideal of the local ring, O_{Y,P} is regular of dimension r, and the
+    associated graded ring of a regular local ring is a polynomial ring, so the
+    Hilbert-Samuel polynomial is binomial(n+r-1,r) with normalized leading
+    coefficient 1. Not checked in this pass: the blow-up remark, unchanged from
+    the commit of this date that introduced it.
 ---
 ::: {.problem}
 Let $Y$ be a variety of dimension $r$ and degree $d > 1$ in $\PP^n$.
@@ -217,35 +246,58 @@ Thus the variety in the problem is $X=J_P(Y)$.
 The join $X$ is irreducible and has dimension at most $r+1$.
 
 ::: pf-proof
-Consider the incidence set
-$$
-I^\circ
-=\{(Q,R)\in (Y\setminus\{P\})\times\PP^n:R\in\overline{PQ}\}.
-$$
-Over $Y\setminus\{P\}$ its first projection has fibres projective lines.
-On an affine chart containing $P$, the line through $P$ and $Q$ is parametrized algebraically by one projective parameter, so $I^\circ$ is locally a product with $\PP^1$.
-Hence $I^\circ$ is irreducible of dimension $r+1$.
+Answer 4656385: "Without loss of generality, suppose $P\in D(x_0)$ and consider the rational map $Y\times\PP^1\to X$ given on $(D(x_0)\cap Y)\times\AA^1$ by $(Q,t)\mapsto P+Qt$.
+This surjects on to an open dense set of the collection of points $R$ which are on a line of the form $\overline{PQ}$ for $Q\neq P$, of which $X$ is the closure.
+As $Y\times\PP^1$ is irreducible, $(D(x_0)\cap Y)\times\AA^1$ is irreducible, the image of $(D(x_0)\cap Y)\times\AA^1$ is irreducible, and the closure of its image is irreducible, so $X$ is irreducible and this rational map from $Y\times\PP^1$ is dominant.
+Thus we have an inclusion of function fields $k(X)\hookrightarrow k(Y\times\PP^1)$, so $\dim X\le\dim Y+1$."
+That is the whole of this step, $X$ irreducible and $\dim X\le r+1$.
 
-The second projection has image equal to the union of the secant lines in the definition of $X$.
-The closure of the image of an irreducible variety is irreducible, so $X$ is irreducible.
-Since $I^\circ\to X$ is dominant,
+:::
+
+:::
+
+::: {.pf-step #point-of-x-not-in-y}
+
+$X\setminus Y$ is nonempty, so $\dim X>r$.
+
+::: pf-proof
+
+Answer 4656385: "On the other hand, $Y\subset X$, so $\dim X\ge\dim Y$. All we need to do in order to show that $\dim X=\dim Y+1$ is to find a point in $X$ not in $Y$", and he does that by induction on $\dim Y$.
+
+If $\dim Y=1$, then "for any $Q\in Y$ distinct from $P$, the intersection $\overline{PQ}\cap Y$ is a proper subset of $\overline{PQ}$. If it is not, then $\overline{PQ}\subset Y$, and by irreducibility, $Y=\overline{PQ}$, which is a linear variety. But by exercise I.7.6, this implies $Y$ has degree one, which is not the case." So the line $\overline{PQ}$ contains a point of $X$ that is not in $Y$.
+
+If $\dim Y>1$, then $r<n$, "otherwise $Y=\PP^n$, which is linear, contradicting the fact that $\deg Y>1$". After a change of coordinates he takes $P=[1:0:\cdots:0]$ and works in $U_0$, where "$Y\cap U_0$ is cut out by an ideal $(g_1,\cdots,g_m)\subset k[x_1,\cdots,x_n]$, and the Jacobian criterion says that $P$ is smooth if the Jacobian matrix at $P$, $\frac{\partial(g_1,\cdots,g_m)}{\partial(x_1,\cdots,x_n)}(P)$, has rank $n-r$"; since $r<n$ he chooses $(a_1,\cdots,a_n)$ so that appending that row gives rank $n-r+1$, sets $f=\sum a_ix_i$, $\overline f=\sum a_iX_i$ and $H=V(\overline f)$, and shows that $H\cap Y$ is smooth at $P$: the Jacobian of $(g_1,\cdots,g_m,f)$ has rank $n-r+1$, so by Theorem I.5.1 the local ring $(k[x_1,\cdots,x_n]/(g_1,\cdots,g_m,f))_{\mathfrak m_P}$ is regular, hence a domain, hence $(f)_{\mathfrak m_P}$ is radical, and the local ring of $H\cap Y$ at $P$ is that regular local ring. "In particular, there is only one irreducible component of $Y\cap H$ through $P$ by exercise I.3.11, the fact that regular local rings are domains, and the correspondence between irreducible components and minimal primes"; call it $Z$.
+
+His lemma computes the intersection multiplicity from the affine open. For a noetherian graded ring $S$, a graded $S$-module $M$ with a minimal homogeneous prime $\mathfrak p$, and a homogeneous $f\in S_1$ with $f\notin\mathfrak p$, the length of $M_{(\mathfrak p)}$ over $S_{(\mathfrak p)}$ equals the length of $M_{\mathfrak p}$ over $S_{\mathfrak p}$; he proves it by showing that $M\mapsto M_{(f)}$ is exact on graded modules and that $M_{(\mathfrak p)}=(M_{(f)})_{\mathfrak p'}$, and then reads both lengths off the filtration of Proposition I.7.4. Hence "$i(Y,H;Z)$ is equal to the length of $(k[Y\cap U_0]/(f))_{I_{Z\cap U_0}}$ over $k[Y\cap U_0]_{I_{Z\cap U_0}}$", and that length is one, because localizing further at $I_{Z\cap U_0}$ gives $k[Z\cap U_0]_{I_{Z\cap U_0}}$, of length one over itself.
+
+"By an application of theorem I.7.7", if $Y\cap H$ is irreducible then it "is a variety of dimension $r-1$ and degree $d$ with a smooth point $P$", and the induction applies to it; if $Y\cap H$ is reducible, with $Z=Z_1$ the component through $P$ and $Z_2$ another component, he takes $Q\in Z_2\setminus Z_1$, notes that $Y\cap\overline{PQ}=(Y\cap H)\cap\overline{PQ}$ is the union of the closed sets $\overline{PQ}\cap Z_j$, and concludes that it is a proper subset of $\overline{PQ}$, "as no $Z_j$ with $j>1$ contains $P$, and $Z_1$ doesn't contain $Q$". So again there is a point of $X$ outside $Y$.
+
+:::
+
+:::
+
+::: {.pf-step #join-dimension-r-plus-one}
+
 $$
-\dim X\le r+1.
+\boxed{\dim X=r+1}.
 $$
 
-These two statements are the opening of KReiser's accepted answer 4656385 to Mathematics Stack Exchange question 4656099, which makes the first one explicit: the lines $PQ$ with $Q\in Y\setminus\{P\}$ are the image of
-$$
-(Q,t)\mapsto P+Qt
-$$
-on $(D_+(x_0)\cap Y)\times\AA^1$, the coordinates being chosen so that $P\in D_+(x_0)$; that image is dense in $X$ and irreducible because $(D_+(x_0)\cap Y)\times\AA^1$ is, and the resulting inclusion $k(X)\hookrightarrow k(Y\times\PP^1)$ gives $\dim X\le\dim Y+1$.
+::: pf-proof
+
+Steps [](#join-irreducible-dim-bound){.pf-ref} and [](#point-of-x-not-in-y){.pf-ref} give $\dim X\le r+1$ and $\dim X>r$, hence $\dim X=r+1$, which is part (a).
+The card's own shorter route to the inequality $\dim X>r$, which replaces the induction of step [](#point-of-x-not-in-y){.pf-ref}, is step [](#join-equals-y-forces-linear){.pf-ref}.
+
 :::
 
 :::
 
 ::: {.pf-step #join-equals-y-forces-linear}
-The equality $X=Y$ would force $Y$ to be a linear variety.
+
+The card's own route: the equality $X=Y$ would force $Y$ to be a linear variety.
 
 ::: pf-proof
+
+This step is the card's own, and nothing here is taken from a source.
 Assume $X=Y$.
 Then for every $Q\in Y\setminus\{P\}$ the whole line $\overline{PQ}$ lies in $Y$.
 Its tangent direction at $P$ is therefore contained in the projective tangent space $T_PY$.
@@ -257,25 +309,8 @@ $$
 Y\subseteq T_PY\cong\PP^r.
 $$
 Both are irreducible closed subsets of dimension $r$, so $Y=T_PY$.
-Hence $Y$ is linear.
-:::
+Hence $Y$ is linear, of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], which contradicts $d>1$; therefore $\dim X>r$, and with step [](#join-irreducible-dim-bound){.pf-ref} this gives part (a) again.
 
-:::
-
-::: {.pf-step #join-dimension-r-plus-one}
-The variety $X$ has dimension
-$$
-\boxed{\dim X=r+1}.
-$$
-
-::: pf-proof
-We have $Y\subseteq X$, so $\dim X\ge r$.
-If equality held, irreducibility of both $Y$ and $X$ and the inclusion $Y\subseteq X$ would imply $X=Y$.
-Step [](#join-equals-y-forces-linear){.pf-ref} would then make $Y$ linear, hence of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], contradicting $d>1$.
-Therefore $\dim X>r$.
-Together with step [](#join-irreducible-dim-bound){.pf-ref} this gives $\dim X=r+1$, proving part (a).
-
-Answer 4656385 proves this inequality by induction on $\dim Y$ instead: for $\dim Y=1$ the intersection $\overline{PQ}\cap Y$ is a proper subset of the line $\overline{PQ}$, since otherwise $Y=\overline{PQ}$ by irreducibility and $Y$ would be linear of degree $1$ by Exercise I.7.6; and in general a hyperplane $H$ through $P$ with $Y\cap H$ smooth at $P$ has intersection multiplicity $1$ along the component $Z$ through $P$, so that $Z$ is a variety of dimension $r-1$ and degree $d$ smooth at $P$ and the induction applies to it, while a second component of $Y\cap H$ gives a point of $X\setminus Y$ directly.
 :::
 
 :::
@@ -299,10 +334,15 @@ $$
 [x_0:x_1:\cdots:x_n]\longmapsto[x_1:\cdots:x_n],
 $$
 and $Z$ is the closure of its image.
-Every line through $P$ and a point of $Y\setminus\{P\}$ meets $H_0$ in the corresponding projected point, so the union of those lines lies in the cone over $\rho(Y\setminus\{P\})$ with vertex $P$, while every point of that cone is a limit of points of those lines; hence $X=J_P(Y)$ is exactly the projective cone over $Z$ with vertex $P$.
 Step [](#join-dimension-r-plus-one){.pf-ref} gives $\dim X=r+1$, hence $\dim Z=r$.
 
-The degree identity is Harris, *Algebraic Geometry: A First Course* (1992), Example 18.16, printed p. 234: "Let $X\subset\PP^{n-1}\subset\PP^n$ be a variety of dimension $k$ and degree $d$, $p\in\PP^n$ any point not lying on $\PP^{n-1}$, and $Y=\overline{pX}$ the cone with vertex $p$ over $X$. Then, inasmuch as the general hyperplane section of $Y$ is projectively equivalent to $X$, we see that the degree of $Y$ is equal to the degree $d$ of $X$."
+That $X$ is the cone over $Z$ is the card's own. Harris defines the cone over a variety with vertex $p$ as the union of the joins $\overline{qp}$ (Example 3.1, printed p. 36) and, for $p$ not lying on the variety, identifies it with the cone over the projection of that variety from $p$ (Example 3.10, printed p. 37); here $P$ does lie on $Y$, so his statement does not apply as it stands. The identification is this. Every line through $P$ and a point of $Y\setminus\{P\}$ meets $H_0$ in the projected point, so the union of those lines lies in the cone over $\rho(Y\setminus\{P\})$ with vertex $P$. Conversely, a point of that cone lies on a line $\overline{Pz}$ with $z\in Z$, and $z$ is a limit of points of $\rho(Y\setminus\{P\})$, so the point is a limit of points of those lines and lies in their closure. Hence
+$$
+X=J_P(Y)
+$$
+is the cone over $Z$ with vertex $P$.
+
+The degree identity is Harris, Example 18.16, printed p. 234: "Let $X\subset\PP^{n-1}\subset\PP^n$ be a variety of dimension $k$ and degree $d$, $p\in\PP^n$ any point not lying on $\PP^{n-1}$, and $Y=\overline{pX}$ the cone with vertex $p$ over $X$. Then, inasmuch as the general hyperplane section of $Y$ is projectively equivalent to $X$, we see that the degree of $Y$ is equal to the degree $d$ of $X$."
 His cone is our $X$, built over his $X$, which is our $Z$ with $k=r$; the vertex $P$ does not lie on the hyperplane $H_0$ that carries $Z$, and a general hyperplane of $\PP^n$ not through $P$ cuts the cone in a variety projectively equivalent to $Z$.
 Hence $\deg X=\deg Z$.
 
@@ -325,7 +365,10 @@ $$
 e_L(\mathcal I_A)=\deg Y-\deg p_A(Y).
 $$
 By Definition 2.2 on printed p. 55, $e_L(\mathcal I_A)$ is the normalized leading coefficient of $\chi(L^n/\mathcal I_A^nL^n)$, and the examples following that definition say that when $Z$ is set-theoretically a point $x$, then $P$ "is the Hilbert-Samuel polynomial of $\mathcal I$ as an ideal of $\OO_{x,X}$ and $e(\mathcal I)$ is its multiplicity there", independently of $L$.
-So $e_L(\mathcal I_A)$ is the multiplicity of $Y$ at $P$, and that is $1$ because $P$ is nonsingular: a general $r$-tuple of hyperplanes through $P$ meets $Y$ transversely at $P$, as Harris records on printed p. 235, "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".
+So $e_L(\mathcal I_A)$ is the multiplicity of $Y$ at $P$.
+
+That this multiplicity is $1$ is the card's own step: neither source states it. The multiplicity of a point is the multiplicity of the maximal ideal of the local ring, and $\OO_{Y,P}$ is a regular local ring of dimension $r$ because $P$ is nonsingular; the associated graded ring of a regular local ring of dimension $r$ is a polynomial ring in $r$ variables, so the Hilbert-Samuel polynomial is $\binom{n+r-1}{r}$, of normalized leading coefficient $1$. Harris's account of the same count on printed p. 235 is geometrical: "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".
+
 Since the underlying variety of the cycle $p_A(Y)$ is $Z$ and its multiplicities are the degrees of the projection, $\deg p_A(Y)\ge\deg Z$.
 Hence
 $$
@@ -358,7 +401,7 @@ This is part (b).
 
 ::: pf-qed
 
-Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a).
+Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#point-of-x-not-in-y){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a).
 Steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#projection-degree-drop){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b), whose hypothesis $d>1$ forces $r\ge1$: a variety is irreducible by the book's conventions, so a variety of dimension $0$ is a single point, of degree $1$ because its Hilbert polynomial is the constant $1$.
 
 :::
@@ -390,19 +433,7 @@ and $\deg Z=(d-1)/\delta\le d-1$: Mumford's identity with the multiplicity of th
 :::
 
 ::: {.remark title="Published solution"}
-The proof above is Harris's, Mumford's and KReiser's, at the places its steps name.
-
-KReiser, accepted answer 4656385 to Mathematics Stack Exchange question 4656099, *Hartshorne Chapter 1 Exercise 7.7 (a)*, text version `tmp/sources/mse-4656099-hart-i77a-cone.md`: the irreducibility of $X$ and $\dim X\le r+1$ from the image of $(D_+(x_0)\cap Y)\times\AA^1$, which is step [](#join-irreducible-dim-bound){.pf-ref}, and $\dim X>r$ by the induction on $\dim Y$ that the answer carries out in full. Steps [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} are the card's, and reach the same inequality through the projective tangent space at the nonsingular point instead of that induction.
-
-Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 18.16, printed pp. 234--235, text version `tmp/sources/harris-1992-algebraic-geometry-first-course-pp224-243.md`: the degree of a cone is the degree of its base, which is step [](#cone-degree-equals-projection-degree){.pf-ref}; and, for the projection of a variety from one of its smooth points, "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$. We can still apply Bertini to conclude that the hyperplanes $H_i$ will intersect $X$ transversely away from $p$. Still assuming that the general line $\overline{pq}$ joining $p$ to another point $q\in X$ meets $X$ only at $p$ and $q$, we see that the points of intersection of $\overline X$ with the $\overline H_i$ correspond to the points of intersection of $X$ with the $H_i$ other than $p$", whence
-$$
-\deg(\overline X)=\deg(X)-1.
-$$
-His standing assumption --- that the general line through $p$ meets $X$ only at $p$ and at one more point --- is why step [](#projection-degree-drop){.pf-ref} uses Mumford's statement instead, which counts the same points without it.
-
-David Mumford, *Stability of projective varieties*, L'Enseignement Mathématique 23 (1977), printed p. 55, text version `tmp/sources/mumford-1977-stability-projective-varieties.md`: Definition 2.2 and Proposition 2.5, $e_L(\mathcal I_A)=\deg X-\deg p_A(X)$, with $e_L$ the multiplicity of the base locus measured through $L$. At a nonsingular point that multiplicity is $1$, so the identity reads $\deg Y=\deg(\text{projection})+1$ and the projection need not be birational.
-
-The retained sets take the induction on $\dim Y$ that the printed hint asks for and leave its key identity unproved. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.7, PDF p. 58: "by Thm 7.7, 7.6b, $\deg X\cap H=\deg X$. By induction $\deg X\cap H\le\deg Y\cap H\le\deg Y=d$". Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, PDF p. 27: "Choose a hyperplane $H$ through $P$ not containing $Y$ so that the intersection multiplicity along any component of $X\cap H$ is $1$. Then by Thm 7.7 and 7.6(b), $\deg X\cap H=\deg X$". Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 7.7, PDF pp. 9--10, names the genericity that argument needs --- a generic hyperplane through $P$ meeting $Y$ and $X$ transversely, and $X\cap H$ irreducible --- and refers the second to remark III.7.9.1 with Bertini (II, 8.18), which he quotes rather than applies; his induction also needs $X\cap H$ to be the join of $P$ with $Y\cap H$. William Troiani's Chapter I stops at §5 and has no 7.7. A. Shichijo, Chapter 1 section 7, Exercise 7.7, printed p. 9, chooses the hyperplane with $i(X,H;Z_j)=1$ for every component of $X\cap H$ and marks that choice with the author's own （？）.
-
-The three sets also open with $\dim Y=0$, where they write that $Y$ is a union of $d$ points and $X$ a union of at most $d-1$ lines. That case does not occur here: $Y$ is a variety, so it is irreducible, and a variety of dimension $0$ is a single point, of degree $1$ because its Hilbert polynomial is the constant $1$, which $d>1$ excludes. The blow-up remark above needs $r\ge1$, and the hypothesis supplies it.
+Part (a) is KReiser's, accepted answer 4656385 to Mathematics Stack Exchange question 4656099, *Hartshorne Chapter 1 Exercise 7.7 (a)*, transcribed in steps [](#join-irreducible-dim-bound){.pf-ref} and [](#point-of-x-not-in-y){.pf-ref}, which reproduce its quotations of Theorem I.5.1, Exercise I.3.11, Proposition I.7.4, Theorem I.7.7 and Exercise I.7.6.
+Part (b) is Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 18.16, printed pp. 234--235, for the degree of a cone and for the degree of the projection of a variety from one of its smooth points, and David Mumford, *Stability of projective varieties*, L'Enseignement Mathématique 23 (1977), Definition 2.2 and Proposition 2.5, printed p. 55, for the same count as the degree of the variety minus the degree of its projection, with the multiplicity of the base locus as the correction term.
+The two steps that are the card's own are marked as such: the identification of $X$ with the cone over $Z$, and the multiplicity $1$ of the nonsingular point.
 :::
