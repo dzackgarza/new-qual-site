@@ -160,6 +160,35 @@ audit:
     of 29. Not checked: no step was re-derived in this pass, and no source
     beyond Cais's passage was re-read.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on two letters and one kernel in step
+    uy-homeomorphism-onto-fiber. (i) Cais's factorization of the projection
+    carries his own two maps, phi and psi, and his phi there is the structure
+    map of the localization, A -> A tensor_B B_m, not Shichijo's phi : B -> A
+    that the earlier steps of this proof quote; the map in the display is now
+    written theta, with Cais's phi named as his in the sentence that follows it,
+    so that phi denotes one map in the proof. (ii) The kernel of psi :
+    A tensor_B B_m -> A tensor_B kappa(m) is the ideal the base prime generates
+    in A tensor_B B_m, m(A tensor_B B_m), and not m A, an ideal of A: the source
+    of psi is A tensor_B B_m. What the prime-level statement needs is that a
+    prime of A meeting S = g(B - m) trivially contains the contraction of that
+    kernel exactly when it contains m A = g(m)A, an element of S being outside
+    the prime; with that the image of the composite is the set of primes of A
+    containing m A and meeting S trivially, which is the set of primes
+    contracting to m, and the step now says so rather than naming the kernel
+    alone. Read in this
+    pass: Cais, Exercise 3.10(a), PDF p. 12 of 29, the file having no printed
+    folio, text version tmp/sources/hartshorne-solutions-cais.md, whose line 281
+    carries the factorization B -> B tensor_A A_p -> B tensor_A k(p) and line 283
+    the two homeomorphisms and "Since ker psi = pB"; the letters A and B of that
+    source are the base and the total space, the opposite of this card's, as the
+    first step of the proof records. Not checked: Shichijo's printed p. 6 was not
+    re-read, the other steps of this proof were not re-derived, and no machine
+    computation was run in this pass.
+
 ---
 
 ::: {.problem}
@@ -276,11 +305,11 @@ $$
 \Spec(A\otimes_B\kappa(\mfp))
 \xrightarrow{\ \Spec\psi\ }
 \Spec(A\otimes_BB_{\mfp})
-\xrightarrow{\ \Spec\phi\ }
+\xrightarrow{\ \Spec\theta\ }
 \Spec A,
 $$
-his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged.
-The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. With $\ker\psi=\mfp A$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ in the steps above, and his $\psi$.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
