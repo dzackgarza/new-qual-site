@@ -139,29 +139,45 @@ audit:
   note: >-
     Published proof located for issue #121, and the third kind is transcribed
     from it: S. S. Abhyankar, On the valuations centered in a local domain,
-    Amer. J. Math. 78 (1956), pp. 321--348, text version
+    Amer. J. Math. 78 (1956), pp. 321--348, read in the text version
     tmp/sources/abhyankar-1956-valuations-centered-local-domain.md, whose
-    printed page is its PDF page plus 320 (checked on the PDF's own text
-    layer: Definition 3 stands on printed p. 335 and Proposition 3 on printed
-    p. 336). Read and checked: Definition 3, printed p. 335, and Lemma 10,
-    printed pp. 334--335, for the identification of the blowup at the centre
-    with the first quadratic transform; Proposition 3, printed pp. 336--337,
-    that the quadratic sequence along a prime divisor is finite; Lemma 7,
-    printed p. 332, Theorem 1, printed p. 330, and Lemma 12, printed
-    pp. 337--338, whose two assertions are exactly R contained in the union of
-    the successive local rings and the uniqueness of the valuation centred at
-    all of them. Steps quadratic-sequence, union-is-valuation-ring and
-    union-equals-r replace the steps union-contained-in-r,
-    element-eventually-regular and r-equals-union-type-three named in the
-    events above: Lemma 12 proves R = union A_i directly, so the card no
-    longer carries its own resolution of [f:1] by Exercise V.5.1, and the
-    remark names that route as the book's hint instead. Checked against
-    Hartshorne V.5.6, printed p. 420, and Exercise II.4.12 with its Note,
-    printed p. 108: the three kinds are as printed, and both assertions the
-    Note defers to this exercise are what Proposition 3 and Lemma 12 give. Not
-    checked: Abhyankar's Lemma 13 and Proposition 5, which the card does not
-    use, and no published proof of the third kind beyond the sets already
-    recorded here and in COMPLAINTS.md was sought.
+    per-page markers cover ten pages at a time and whose printed folios were
+    therefore read on the PDF's own text layer: printed page = PDF page plus
+    320, the occurrence of Definition 3 marked on printed p. 335 and that of
+    Proposition 3 on printed p. 336. Read and checked there: Theorem 1, printed
+    p. 330; Definition 3, printed p. 335; Lemma 7, printed p. 332; Lemma 10,
+    printed pp. 334--335; Proposition 3, printed pp. 336--337; Lemma 12,
+    printed pp. 337--338; and Hartshorne V.5.6, printed p. 420, with Exercise
+    II.4.12 and its Note, printed p. 108.
+
+    Corrected in place on a reader's report of the same day, which is right on
+    both points. First, Lemma 10 does not identify the quadratic transform with
+    the local ring of the centre on a blowup: it builds A = R[x_2/x_1, ...],
+    P and S = A_P and proves S regular with v centred at N, and neither it nor
+    Definition 3 mentions a blowup. The identification is the card's own and is
+    now stated as such in step quadratic-sequence, together with the
+    factorization the earlier text omitted: the blowup of Spec A_i at m_i is
+    covered by the charts Spec A_i[v/u] and Spec A_i[u/v], and a point of the
+    exceptional curve outside the first chart has u/v = 0, hence v(u) > v(v),
+    which the choice v(u) <= v(v) forbids, so A_{i+1} = (A_i[v/u])_P. Second,
+    the remark attributed R contained in R_0 to step union-is-valuation-ring;
+    that step is Lemma 12(1) and gives only that the union is a valuation ring,
+    while R contained in R_0 is Lemma 12(2) and is step union-equals-r, and the
+    remark now says so. The remark also loses its provenance material --- the
+    text-version paths, the marker arithmetic and the account of what two
+    solution sets do not prove --- which belongs in this event and in
+    COMPLAINTS.md and not on a rendered page (QUAL-08, SEC-7).
+
+    Steps quadratic-sequence, union-is-valuation-ring and union-equals-r
+    replaced the steps union-contained-in-r, element-eventually-regular and
+    r-equals-union-type-three named in the events above, so the card no longer
+    carries its own resolution of [f:1] by Exercise V.5.1; the hint is
+    mentioned nowhere in the rendered body. Not checked: Abhyankar's Lemma 13 and
+    Proposition 5, which the card does not use, and his printed proof of
+    Proposition 3 compresses the passage from R_v/M_v algebraic over R_s/M_s to
+    the contradiction, which the card does not need because it uses the
+    proposition as a stated theorem. No published proof of the third kind
+    beyond Abhyankar was sought in this pass.
 
 ---
 
@@ -358,30 +374,47 @@ is an isomorphism over $X_i\smallsetminus\{x_i\}$, so
 $$
 A_i\subseteq A_{i+1}.
 $$
-The inclusion is strict. Choose a minimal basis $u,v$ of $\mathfrak m_i$
-with
-$$
-\nu(u)\le\nu(v).
-$$
-Then $\nu(v/u)\ge0$, so $v/u$ is regular at the centre $x_{i+1}$ of $\nu$
-on $X_{i+1}$, and
-$$
-v/u\in A_{i+1}.
-$$
-On the other hand $v/u\notin A_i$: from $v/u=c\in A_i$ one gets $v=uc$ with
-$c\notin\mathfrak m_i$, since $v\notin\mathfrak m_i^2$, so $c$ is a unit and
-$(u,v)=(u)$, contrary to $u,v$ being a minimal basis.
 
-Abhyankar defines the first quadratic transform of $A_i$ along $\nu$ to be
+Abhyankar's Definition 3, printed p. 335, calls
 $$
 A_i[x_2/x_1]_{P},
 $$
 where $x_1,x_2$ is a minimal basis of $\mathfrak m_i$ with
-$\nu(x_1)\le\nu(x_2)$ and $P$ is the contraction of
-$\mathfrak m_\nu$ (Definition 3, printed p. 335); by Lemma 10, printed
-pp. 334--335, that ring is the local ring of the centre of $\nu$ on the
-blowup of $\Spec A_i$ at $\mathfrak m_i$. With $x_1=u$ and $x_2=v$, it is
-$A_{i+1}$.
+$\nu(x_1)\le\nu(x_2)$ and $P$ is the contraction of $\mathfrak m_\nu$,
+the first quadratic transform of $A_i$ along $\nu$, and his Lemma 10,
+printed pp. 334--335, proves that this ring is a regular local domain of
+dimension at most $2$ in which $\nu$ is centred at the maximal ideal.
+Neither of the two statements mentions a blowup, so the identification of
+that ring with $\OO_{X_{i+1},x_{i+1}}$ is proved here and is not
+Abhyankar's.
+
+At $x_i$ the morphism $X_{i+1}\to X_i$ is the blowup of $\Spec A_i$ at
+$\mathfrak m_i$, and is covered there by the charts
+$$
+\Spec A_i[v/u]
+\qquad\text{and}\qquad
+\Spec A_i[u/v],
+$$
+on which the exceptional curve is $u=0$ and $v=0$ respectively. Choose a
+minimal basis $u,v$ of $\mathfrak m_i$ with $\nu(u)\le\nu(v)$. A point of
+the exceptional curve which lies outside the first chart has $u/v=0$ there,
+hence $\nu(u/v)>0$, hence $\nu(u)>\nu(v)$; so $x_{i+1}$ lies in the first
+chart, and
+$$
+A_{i+1}
+=
+(A_i[v/u])_{P},
+\qquad
+P=A_i[v/u]\cap\mathfrak m_\nu,
+$$
+which is Abhyankar's ring with $x_1=u$ and $x_2=v$. In particular
+$$
+v/u\in A_{i+1}.
+$$
+
+The inclusion $A_i\subseteq A_{i+1}$ is strict: if $v/u=c\in A_i$ then
+$v=uc$ with $c\notin\mathfrak m_i$, since $v\notin\mathfrak m_i^2$, so $c$
+is a unit and $(u,v)=(u)$, contrary to $u,v$ being a minimal basis.
 :::
 
 :::
@@ -483,14 +516,7 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15). Exercise II.4.12, printed p. 108, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows only that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420. Exercise II.4.12, printed p. 108, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note defers to the present exercise both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
 
-The classification is Abhyankar's. S. S. Abhyankar, *On the valuations centered in a local domain*, Amer. J. Math. 78 (1956), pp. 321--348, text version `tmp/sources/abhyankar-1956-valuations-centered-local-domain.md` (printed page = its PDF page plus 320): Theorem 1, printed p. 330, sorts a valuation centred in an $n$-dimensional local domain by its $R$-dimension $d$, rational rank $r$ and rank $\rho$, with $d+r\le n$, and a valuation of $R$-dimension $n-1$ is real discrete; Definition 3, printed p. 335, defines the quadratic transforms of $R$ along the valuation, and Lemma 10, printed pp. 334--335, identifies each with the local ring of the centre of the valuation on the corresponding blowup; Proposition 3, printed pp. 336--337, proves that the quadratic sequence along a prime divisor is finite and ends in the valuation ring of the valuation itself; and Lemma 12, printed pp. 337--338, proves that a strictly ascending quadratic sequence of two-dimensional regular local domains has a valuation ring as its union, that this is the only valuation centred at the successive maximal ideals, and that it is of $R_i$-dimension zero at every stage. Steps [](#quadratic-sequence){.pf-ref}, [](#union-is-valuation-ring){.pf-ref} and [](#union-equals-r){.pf-ref} transcribe that proof for the third kind, and $R=R_0$ is its Lemma 12(2) applied to the given valuation ring.
-
-The book's hint proposes a second route to the inclusion $R\subseteq R_0$, by resolving $[f:1]$ with Exercise V.5.1 for each $f\in R$; the proof above takes the published route instead.
-
-Two entries of the Hartshorne solution sets identify the first two kinds and do not prove the third. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), is A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, with one sentence added. Both argue kinds (1) and (2) through the centre and its successive blowups, as steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} do, and for kind (3) write only
-$$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i},$$
-an assertion with no argument, in which the limit is also written in the wrong direction: the union is a direct limit along the inclusions $\OO_{P_i,X_i}\into\OO_{P_{i+1},X_{i+1}}$. Neither uses the book's hint, and neither proves $R\subseteq R_0$; that is what step [](#union-is-valuation-ring){.pf-ref} supplies, by Abhyankar's Lemma 12.
-
+The classification is Abhyankar's. S. S. Abhyankar, *On the valuations centered in a local domain*, Amer. J. Math. 78 (1956), pp. 321--348: Theorem 1, printed p. 330, sorts a valuation centred in an $n$-dimensional local domain by its $R$-dimension $d$, rational rank $r$ and rank $\rho$, with $d+r\le n$, and a valuation of $R$-dimension $n-1$ is real discrete; Definition 3, printed p. 335, defines the quadratic transforms of the domain along the valuation; Proposition 3, printed pp. 336--337, proves that the quadratic sequence along a prime divisor is finite and ends in the valuation ring of that valuation; and Lemma 12, printed pp. 337--338, proves of a strictly ascending quadratic sequence of two-dimensional regular local domains that its union is the valuation ring of a valuation centred at the successive maximal ideals and of $R_i$-dimension zero at every stage, and that a valuation of $K$ with those centres is unique. The union is step [](#union-is-valuation-ring){.pf-ref}, and the uniqueness applied to the valuation of $R$ gives $R=\bigcup_i\OO_{X_i,x_i}$, which is step [](#union-equals-r){.pf-ref}.
 :::
