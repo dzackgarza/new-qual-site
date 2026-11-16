@@ -44,12 +44,14 @@ audit:
     so it is a lattice in Num X tensor R. Located two published treatments
     outside the twelve retained sets. Algebraic Geometry II, National Taiwan
     University, 2020 Spring, Chapter V homework, Exercise 11 (Shuang-Yen Lee),
-    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, proves (a) and
+    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, text version
+    `tmp/sources/ntu-ag2-chapter5.md`, proves (a) and
     (b) by the same route, but its displayed estimate for the sum of the
     c_i^2 does not follow from its adjunction line, so steps s1 to s3 are the
     corrected bookkeeping rather than a transcription. Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.1.11, printed p. 101
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), never bounds the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
+    `tmp/sources/lfwin-hartshorne-solutions.md`), never bounds the
     coefficients. Not checked: whether the NTU set's constant A is uniform in
     h; the card does not use that constant.
 - event: source-checked
@@ -72,6 +74,23 @@ audit:
     transcription. Yang Pi-Yeh, exercise 5.1.11, never bounds the coefficients of
     the curves occurring in D + sum a_iR_i, as recorded above. Not checked: the
     argument over a base field that is not algebraically closed.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the National Taiwan University set's Exercise 11 in its text version
+    on 2026-11-16 and corrected what the remark says it proves. Its part (a) is
+    the route of steps s1 to s3 in the corrected bookkeeping. Its part (b) is the
+    printed hint alone: from Gamma equivalent Delta it derives
+    Gamma.Delta = Delta^2 = 2-2g < 0, hence Gamma = Delta, and then applies (a)
+    to the graphs with Gamma.(l+m) = 2. It never shows that distinct
+    automorphisms have numerically inequivalent graphs, which is step s8; that
+    step is what turns finitely many numerical classes into finitely many
+    automorphisms, and it is supplied here by the surface automorphism
+    id x tau^{-1}. The set's (b) therefore proves only that no automorphism other
+    than the identity has a graph numerically equivalent to the diagonal. Not
+    checked: whether some other published set supplies step s8; none in
+    tmp/sources does.
 ---
 
 ::: {.problem}
@@ -441,7 +460,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 ::: {.remark title="Published solution"}
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.11, PDF pp. 260--261: (b) is the printed hint — "doing the hint by contrapositive, theorem V.1.4 gives $\Gamma\ne\Delta$ which implies $\Gamma\cdot\Delta\ge0$; then $\Gamma^2<0$ implies $\Gamma\cdot\Delta\ne\Delta^2$ and thus $\Gamma\not\equiv\Delta$", then $H=l+m$ and part (a). Part (a) is a sketch: "WLOG assume $H$ is very ample of degree 1; for $D\cdot H=0$ this follows from Nakai--Moishezon; any such $D$ can only have finitely many components not intersecting $H$ since if $P_i\cdot H=0$, then $P_i\cdot P_j<0$ and with each additional such component, the genus ... will decrease; thus we are choosing $D$ from a finite set of a finite number of components." That bounds neither the components meeting $H$ nor the coefficients, and the negativity of $P_i\cdot P_j$ is asserted.
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), PDF p. 4, proves (a) and (b) by the route of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: a basis of $\Num X\otimes\RR$ in which the intersection form is $\diag(1,-1,\ldots,-1)$, $c_0\ge1/\sqrt{H^2}$ for an irreducible curve, adjunction $c_0(c_0+k_0)-\sum_ic_i(c_i+k_i)=2p_a-2\ge-2$, and then $\sum_ic_i^2\le Ac_0^2$, so that $\{D\ge0:D\cdot H=d\}$ meets a bounded set. Its displayed intermediate step, $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$, does not follow from the adjunction identity: that identity bounds $\sum_i(c_i^2+c_ik_i)$, and $c_i^2$ is reached only through $2\abs{c_ik_i}\le c_i^2+k_i^2$, which costs a factor $2$ and adds $\sum_ik_i^2$. Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} carry that bookkeeping out, with the constant $A_h=2+(h^2+h(K_X\cdot H))/H^2$ and the term $\norm{z}\norm{y}$. Its (b) is steps [](#s6){.pf-ref} to [](#s10){.pf-ref}.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 11 (solution by Shuang-Yen Lee), printed p. 4 of that set, proves (a) by the route of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: a basis of $\Num X\otimes\RR$ in which the intersection form is $\diag(1,-1,\ldots,-1)$, $c_0\ge1/\sqrt{H^2}$ for an irreducible curve, adjunction $c_0(c_0+k_0)-\sum_ic_i(c_i+k_i)=2p_a-2\ge-2$, and then $\sum_ic_i^2\le Ac_0^2$, so that $\{D\ge0:D\cdot H=d\}$ meets a bounded set. Its displayed intermediate step, $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$, does not follow from the adjunction identity: that identity bounds $\sum_i(c_i^2+c_ik_i)$, and $c_i^2$ is reached only through $2\abs{c_ik_i}\le c_i^2+k_i^2$, which costs a factor $2$ and adds $\sum_ik_i^2$. Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} carry that bookkeeping out, with the constant $A_h=2+(h^2+h(K_X\cdot H))/H^2$ and the term $\norm{z}\norm{y}$. Its (b) is the printed hint and stops at the point where the counting begins: from $\Gamma\equiv\Delta$ it gets $\Gamma\cdot\Delta=\Delta^2=2-2g<0$ and hence $\Gamma=\Delta$, then applies (a) to the graphs with $\Gamma\cdot(l+m)=2$. It never proves that distinct automorphisms have numerically inequivalent graphs, which is step [](#s8){.pf-ref}: the argument above holds only for the diagonal, and an injective assignment $\sigma\mapsto[\Gamma_\sigma]$ needs the surface automorphism $\id_C\times\tau^{-1}$ of step [](#s8){.pf-ref}. Without it the set of numerical classes being finite does not make the set of graphs finite. Steps [](#s6){.pf-ref} to [](#s10){.pf-ref} supply (b), and only (a)'s bookkeeping above is a corrected transcription of that set.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\ldots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$"; the coefficients of the curves occurring in $D+\sum a_iR_i$ are never bounded, so this does not prove (a).
 :::

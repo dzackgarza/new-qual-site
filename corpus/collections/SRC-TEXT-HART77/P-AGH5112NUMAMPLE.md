@@ -72,12 +72,12 @@ audit:
     exactly when it is not of the form K_C + P + Q, is correct and is the card's
     step s2 to s4. Steps s5 to s8 add the degree-one class of P^1 on both sides,
     which makes the fibre degree one and leaves the failure of very ampleness in
-    the curve factor, where step s7 reads it off a fibre. Not checked: whether
-    Fuentes and Pedreira, The Projective Theory of Ruled Surfaces, Theorem 3.9,
-    could have supplied the surface criterion, since the proof of that paper's
-    Theorem 3.9(3) rests on the two-fibre test of its Corollary 2.13, whose
-    converse is asserted rather than proved, and its Section 3 covers decomposable
-    surfaces only.
+    the curve factor, where step s7 reads it off a fibre. The question this event
+    left open, whether Fuentes and Pedreira, The Projective Theory of Ruled
+    Surfaces, Theorem 3.9, could supply the surface criterion, is settled in the
+    event below: their Theorem 3.9(3) does supply it for a decomposable ruled
+    surface, and their Corollary 2.13 is proved, its converse following from
+    Proposition 2.3 with Theorem 2.11.
 ---
 
 ::: {.problem}
@@ -273,25 +273,48 @@ equivalent.
 
 ::: {.pf-step #s6}
 
-The line bundle $M$ is very ample on $X$.
+The line bundle
+$$
+M=p_1^*L\tensor p_2^*\OO_{\PP^1}(1)=X_0+Lf
+$$
+is very ample on $X=C\times\PP^1$.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $L$ defines a closed immersion
+Read $X$ as the ruled surface $\pi=p_1:X\to C$ with normalized bundle
+$\mathcal E=\OO_C\oplus\OO_C$, so that the invariant is $e=0$ and the divisor
+$\mfe$ representing $\det\mathcal E$ is zero. The section
 $$
-C\hookrightarrow\PP^r.
+X_0=C\times\{t\}=p_2^*\OO_{\PP^1}(1)\sim p_2^*[t]
 $$
-The line bundle $\OO_{\PP^1}(1)$ defines the standard closed immersion of
-$\PP^1$. Their product is a closed immersion
+has $X_0^2=0=-e$, and the ruling fibres are
 $$
-C\times\PP^1\hookrightarrow\PP^r\times\PP^1.
+f=\{c\}\times\PP^1=p_1^*[c].
 $$
-Composing with the Segre closed immersion gives an embedding into projective
-space whose hyperplane bundle pulls back to
+Since
 $$
-p_1^*L\tensor p_2^*\OO_{\PP^1}(1)=M.
+p_1^*L=p_1^*D_L=Lf
 $$
-Therefore
+for a divisor $D_L$ of $L$, and $p_2^*\OO_{\PP^1}(1)=\OO_X(X_0)$, the line
+bundle $M$ is
+$$
+\OO_X(X_0+Lf).
+$$
+
+Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces*
+(arXiv:math/0006204v3), text version
+`tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed
+p. 18, states that on a decomposable ruled surface the complete system
+$\linearsystem{X_0+\mfb f}$ is very ample if and only if $\mfb$ and
+$\mfb+\mfe$ are very ample on the base curve. Here $\mfb=L$ and $\mfe=0$, so
+the criterion asks that $L$ be very ample, which is step [](#s3){.pf-ref}.
+Hence $M$ is very ample.
+
+Independently of that criterion, step [](#s3){.pf-ref} also gives a closed
+immersion $C\hookrightarrow\PP^r$ defined by $L$, and $\OO_{\PP^1}(1)$ defines
+the standard closed immersion of $\PP^1$; the product of the two followed by
+the Segre closed immersion embeds $C\times\PP^1$ with hyperplane bundle
+$p_1^*L\tensor p_2^*\OO_{\PP^1}(1)=M$.
 $$
 \boxed{M\text{ is very ample}.}
 $$
@@ -302,21 +325,30 @@ $$
 
 ::: {.pf-step #s7}
 
-The numerically equivalent line bundle $M'$ is not very ample.
+The numerically equivalent line bundle
+$$
+M'=p_1^*L'\tensor p_2^*\OO_{\PP^1}(1)=X_0+L'f
+$$
+is not very ample.
 
 ::: pf-proof
 
-Fix a point $t\in\PP^1$. Restriction to the closed fibre
+With $\mfb=L'$ and $\mfe=0$, the criterion of Fuentes--Pedreira Theorem 3.9(3)
+makes $M'$ very ample exactly when $L'=K_C(P+Q)$ is very ample, and step
+[](#s4){.pf-ref} shows that it is not.
+
+Independently of the criterion: restriction to the closed fibre
 $$
 C\times\{t\}\cong C
 $$
-gives
+of $p_2$ gives
 $$
-M'\restrict_{C\times\{t\}}\cong L'.
+M'\restrict_{C\times\{t\}}\cong L',
 $$
-If $M'$ were very ample on $X$, an embedding defined by $M'$ would restrict to
-a closed immersion of this fibre, so its restriction $L'$ would be very ample.
-This contradicts step [](#s4){.pf-ref}. Hence
+because $p_2^*\OO_{\PP^1}(1)$ is trivial there. If $M'$ were very ample on
+$X$, an embedding defined by $M'$ would restrict to a closed immersion of this
+fibre, so $L'$ would be very ample. This contradicts step [](#s4){.pf-ref}.
+Hence
 $$
 \boxed{M'\text{ is not very ample}.}
 $$
@@ -361,7 +393,13 @@ the required failure of numerical invariance for very ampleness.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.12, PDF p. 261: for a curve of genus $g$, a divisor $D$ of degree $2g$ is very ample if and only if $h^0(D-P-Q)=h^0(D)-2$ by IV.3.4, and Riemann--Roch gives this exactly when $K_C-D+P+Q$ has nonpositive degree, so the very ample classes of degree $2g$ are those outside a two-dimensional family; he then takes $H=\abs{C_0+bf}$ on a decomposable ruled surface and quotes "Fuentes-Pedreira thm 3.9" for the very-ampleness criterion on it, a source that is not among the retained sets. Step [](#s3){.pf-ref} proves the curve statement as a separation statement, and steps [](#s5){.pf-ref} to [](#s8){.pf-ref} replace his surface example by $C\times\PP^1$ with $M=p_1^*L\otimes p_2^*\OO(1)$ and $M'=p_1^*L'\otimes p_2^*\OO(1)$, resting only on Riemann--Roch and a degree-zero pullback.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.12, PDF p. 261: for a curve of genus $g$, a divisor $D$ of degree $2g$ is very ample if and only if $h^0(D-P-Q)=h^0(D)-2$ by IV.3.4, and Riemann--Roch gives this exactly when $K_C-D+P+Q$ has nonpositive degree, so the very ample classes of degree $2g$ are those outside a two-dimensional family; he then takes $H=\abs{C_0+\mfb f}$ on a decomposable ruled surface and quotes "Fuentes-Pedreira thm 3.9" for the very-ampleness criterion on it, a source now retained as `tmp/sources/projective-theory-ruled-surfaces.pdf` with text version `tmp/sources/projective-theory-ruled-surfaces.md`. What he leaves undone is the specialization: he fixes no value of $e$ and never checks the second hypothesis of that theorem, that $\mfb+\mfe$ be very ample, so his surface example is a citation rather than an exhibit. Step [](#s3){.pf-ref} proves the curve statement as a separation statement, and steps [](#s5){.pf-ref} to [](#s8){.pf-ref} replace his surface example by $C\times\PP^1$ with $M=p_1^*L\otimes p_2^*\OO(1)$ and $M'=p_1^*L'\otimes p_2^*\OO(1)$, resting only on Riemann--Roch and a degree-zero pullback.
 
-Two published sets give a surface example, and both are wrong at the same place. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 12, PDF p. 5, ends "let $X=C\times\PP^1$, $\widetilde D=D\times\PP^1$ and $\widetilde D_0=D_0\times\PP^1$; then $\widetilde D\equiv\widetilde D_0$ but $\widetilde D_0$ is very ample, and $\widetilde D$ is not". Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.1.12, printed p. 102, ends "the divisor $D\times\PP^1$ and $D_0\times\PP^1$ are numerically equivalent, and the first is very ample but second is just ample". An external product $D\times\PP^1$ is the pullback $p_1^*D$, which has degree $D\cdot(C\times\{t\})=0$ on every fibre of $p_1$; a very ample divisor meets every curve positively, since a positive multiple of it is a hyperplane section, so $p_1^*D$ is not even ample, let alone very ample, and the construction exhibits nothing. Adding the degree-one class of $\PP^1$, as in $M$ and $M'$ of step [](#s5){.pf-ref}, is what makes the fibre degree one and leaves the failure of very ampleness in the curve factor, where step [](#s7){.pf-ref} reads it off a fibre.
+Two published sets give a surface example by the external product $D\times\PP^1$, and the construction fails there. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 12, printed p. 5 of that set, ends "let $X=C\times\PP^1$, $\widetilde D=D\times\PP^1$ and $\widetilde D{}'=D'\times\PP^1$; then $\widetilde D\equiv\widetilde D{}'$ but $\widetilde D{}'$ is very ample, and $\widetilde D$ is not". Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.1.12, printed p. 102, ends "the divisor $D\times\PP^1$ and $D'\times\PP^1$ are numerically equivalent, and the first is very ample but second is just ample". Both print $D'$ and $\widetilde D{}'$, not $D_0$.
+
+An external product $D\times\PP^1$ is the pullback $p_1^*D$, and a fibre of $p_1$ is $\{c\}\times\PP^1$, on which $p_1^*D$ has degree zero; a very ample divisor meets every curve positively, a positive multiple of it being a hyperplane section, so $p_1^*D$ is not even ample. On the other fibre, $C\times\{t\}$, its degree is $\deg D=2g$, so the defect is not a vanishing degree on every curve: it is that the fibre the divisor must meet positively is the one of $p_1$. Adding the degree-one class of $\PP^1$ to both sides, as in $M$ and $M'$ of step [](#s5){.pf-ref}, makes the $p_1$-fibre degree one and leaves the failure of very ampleness in the curve factor, where step [](#s7){.pf-ref} reads it off a $p_2$-fibre.
+
+Read as a decomposable ruled surface of invariant $e=0$, the same example is settled by Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed p. 18: $\linearsystem{X_0+\mfb f}$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are, which at $e=0$ is very ampleness of $\mfb$ alone, and $M=X_0+Lf$ and $M'=X_0+L'f$ carry $\mfb=L$ and $\mfb=L'=K_C(P+Q)$, very ample by step [](#s3){.pf-ref} and not by step [](#s4){.pf-ref}. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} use that criterion and keep the card's direct arguments beside it.
+
+The criterion rests on the paper's Corollary 2.13, printed p. 14, and that corollary is proved. Its forward direction is Theorem 2.11; its converse is Proposition 2.3, printed p. 8, applied to the system $|H-Pf|$: if the map defined by $|H|$ is not an isomorphism at a point, Theorem 2.11, printed pp. 12--13, makes that point a base point of some $|H-Pf|$, and Proposition 2.3 then produces $Q$ with $h^0(H-(P+Q)f)\ge h^0(H-Pf)-1$, which is $h^0(H)-3$ once $|H|$ is base-point-free. The case $Q=P$ is the one Theorem 2.11 covers through tangent directions, so the two-fibre condition does test a tangent direction transverse to a fibre. Proposition 2.15, printed p. 15, rests on the same corollary and is sound for the same reason.
 :::
