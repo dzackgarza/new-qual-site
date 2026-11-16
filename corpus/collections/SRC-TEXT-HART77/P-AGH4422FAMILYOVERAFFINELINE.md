@@ -300,7 +300,7 @@ Its two analytic inputs are cited rather than proved there: the equivalence of D
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
 The printed hint follows a different route: the points of order $2$ form an étale cover of $\AA^1_\CC$, hence are four disjoint sections, and the Legendre parameter $\lambda$ they define is a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, hence constant.
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, carries that hint out: the four $2$-torsion sections, four copies of $\AA^1_\CC$ because $\AA^1_\CC$ is simply connected, the coordinates $\infty,0,1,\lambda$ on each fibre, and $\lambda$ constant.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95, carries that hint out: the four $2$-torsion sections, four copies of $\AA^1_\CC$ because $\AA^1_\CC$ is simply connected, the coordinates $\infty,0,1,\lambda$ on each fibre, and $\lambda$ constant.
 That route ends at the constancy of $\lambda$, which is equality of the fibres, and does not by itself give the triviality of the family.
 
 :::
