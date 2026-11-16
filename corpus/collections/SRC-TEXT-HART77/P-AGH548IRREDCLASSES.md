@@ -153,6 +153,32 @@ audit:
     reduced irreducible curve of degree 2 is a nonsingular plane conic. Not
     reviewed: characteristic p remains outside what the sources give for the
     third alternative; the COMPLAINTS record of this date says so.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass, on the second reader's findings for this card. Two corrections,
+    the first mathematical and the second about this card's own records. The
+    step for alternative (b) concluded from sum b_i(b_i-1) = 2 and sum b_i = 7
+    that exactly one entry is 2, which does not exclude the other integer
+    solution b_i = -1 of b_i(b_i-1) = 2; with one entry -1 the remaining five
+    being at most 1 leave sum b_i <= 4, so that case cannot occur, and the step
+    now says so. Read again for this: the proof of Theorem 4.9 of Hartshorne,
+    printed pp. 402--403, which runs the same Cauchy-Schwarz argument for a
+    line and then finds the b_i "by trial", so the enumeration here is of the
+    same kind and is the card's own; the step now marks it as such, which this
+    card's earlier event of this date said it already did and it did not. Not
+    read in this pass: Dolgachev's Lemma 8.1.3 and Theorem 8.2.19 and
+    Harbourne's Lemma II.6 and Theorem III.1(a) beyond the statements and pages
+    recorded, and no source outside those named on the card.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The two corrections above: the entry -1 is excluded in the a = 3 case of
+    step conic-classes-contain-a-conic, and the enumeration of the 27 degree 2
+    classes of square 0 carries the mark that it is the card's own. Nothing
+    else on the card changed, and no part passes from open to proved.
 ---
 
 ::: {.problem}
@@ -302,8 +328,11 @@ Cauchy--Schwarz applied to the sequences $1$ and $b_i$ gives $(3a-2)^2\le6a^2$, 
 $3a^2-12a+4\le0$, so $a\in\{1,2,3\}$. For $a=1$ and $a=2$ the sum of $b_i(b_i-1)$ vanishes, and
 since each $b_i(b_i-1)\ge0$ for an integer $b_i$, every entry is $0$ or $1$: with $\sum_ib_i=1$ that
 is one entry $1$, and with $\sum_ib_i=4$ it is four entries $1$. For $a=3$ the sum is $2$ and
-$\sum_ib_i=7$, so exactly one entry is $2$ and the other five are $1$. These are the classes
+$\sum_ib_i=7$; since $b_i(b_i-1)=2$ only for $b_i=2$ and for $b_i=-1$, and an entry $-1$ would leave
+$\sum_ib_i\le4$, exactly one entry is $2$ and the other five are $1$. These are the classes
 $H-G_i$, $H-F_{ij}$ and $H-E_i$, by the classes of those lines in Theorem 4.9, printed pp. 402--403.
+This enumeration of the degree $2$ classes of square $0$ from the two equations is the card's own, in
+the manner of the proof of Theorem 4.9, which finds the $b_i$ of a line by trial.
 
 For $M$ a line, $H\cdot M=1$, and $L\cdot M$ is $-1$ if $M=L$ and $0$ or $1$ if $M\ne L$; hence
 $$
