@@ -118,6 +118,20 @@ audit:
     2026-11-16 07:15:38). A record carries the day of the commit that lands
     it, so its date is now 2026-11-16, and its text is untouched. Nothing else
     on the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, sixth pass: the fifth-pass note above says
+    the source-corrected event "is dated 2026-11-17" in the present tense, and
+    no field of this card reads so. The note's sentence is true in the past
+    tense, and this event is its correction: the source-corrected event it
+    speaks of was dated 2026-11-17, a day that had not happened when
+    a9d902a1a9 wrote and committed it (2026-11-16 07:15:38), and its field
+    reads 2026-11-16 now, changed in f2ec3544b1, the commit that added the
+    fifth-pass note. Its text stands, and the fifth-pass note stands as
+    written, a dated event being a record of its date. Nothing else on the
+    card changes.
 
 ---
 
