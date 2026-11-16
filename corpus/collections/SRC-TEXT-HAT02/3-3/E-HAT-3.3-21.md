@@ -183,6 +183,33 @@ audit:
     p. 259 and the long exact sequence of a pair in cohomology, and against Frankland's Theorem 1.3
     with the sentence after it on printed p. 2, which supplies the value $H^1(E;\ZZ)\cong
     \bigoplus_{\NN}\ZZ$ used by the step.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A second complete published solution of the first part is now cited on the card: C. Kottke, *Math
+    2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 2, printed p. 2 of
+    `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf` (5 pp., sha256
+    e84fd60496037db45bb18457b7c922233f5912a41b5d067112ba75a8211c22a7). Read at that page and checked
+    step by step: the disjoint neighbourhoods $U$ of $K$ and $V$ of $\infty$, $V$ shrunk inside the
+    cone neighbourhood so that it deformation retracts to $\infty$, $L=X\setminus V$ compact with
+    $K\subset L$, and $H^n(X,X\setminus L)=H^n(X,V)\cong H^n(X^+,V)\cong H^n(X^+,\infty)$ by
+    excision of $\infty$ and the deformation retraction, then the direct limit over the cofinal
+    family. It agrees with steps excision-limit and cone-case, which transcribe the Stanford set and
+    are unchanged. The page claims already on the card were re-read at the sources this pass: Stanford
+    Math 215C Solution Set 4, printed p. 1 (59584 bytes, sha256
+    b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470); Frankland, Theorem 1.3 with
+    the sentence after it on printed p. 2 and Theorem 2.1 on printed p. 3; Eda--Kawamura, Theorem 3.1
+    on printed p. 307, whose third summand is $\bigoplus_\kappa\QQ$ with $\kappa=\cardinality{I^{\NN}}$, hence
+    continuum many copies of $\QQ$ for $I=\NN$, which is the $\QQ$ summand the step uses and which the
+    extracted text of that paper renders only as a stray glyph; Wiegold, pp. 341--342. The bracketed question
+    still has no published solution, and the sources read for it this pass are recorded in
+    `COMPLAINTS.md`: the accepted answer to Math Stack Exchange question 4224576 shows only that
+    $\infty$ has no cone neighbourhood in the compactification of $\ZZ\times\RR$, which is not the
+    question; question 4812778 poses the exercise and has no answers; Kottke's set has no paragraph on
+    $\ZZ\times\RR$; and the Stanford set's paragraph is the rejected one. Checked against Hatcher
+    (2002), §3.3 Exercise 21 on printed p. 259, and against Hatcher's errata, which carries no entry
+    for that page.
 ---
 
 ::: {.problem}
@@ -290,8 +317,14 @@ so the evident map cannot be an isomorphism. Consequently the cone-neighborhood 
 
 The first part is the complete published solution of **Stanford Math 215C, Solution Set 4, Hatcher 3.3.21, printed p. 1**, [`solution4.pdf`](http://math.stanford.edu/~ralph/math215c/solution4.pdf), held locally as `tmp/sources/stanford-math215c-spring2009-solution4.pdf` (59584 bytes, sha256 `b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470`, matching the served file). Its argument is the one transcribed in steps [](#excision-limit){.pf-ref} and [](#cone-case){.pf-ref}: for compact $K\subset X$ the point $\infty$ is excised, giving $H^n(X^+,X^+\setminus K;G)\cong H^n(X,X\setminus K;G)$; the exact sequence of the pair $(X^+,U_K)$ with $U_K=X^+\setminus K$ has $\widetilde H^m(U_K;G)=0$ for all $m$ when $K$ is the complement of a cone-shaped neighbourhood of $\infty$, so $H^n(X,X\setminus K;G)\cong\widetilde H^n(X^+;G)=H^n(X^+,\infty;G)$; these $K$ are cofinal among compact subsets because cone-shaped neighbourhoods can be shrunk inside any neighbourhood of $\infty$, and the isomorphism passes to the direct limit $H_c^n(X;G)$.
 
+A second, independent complete published solution of the first part is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 2, printed p. 2** (`tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`). It states the hypothesis as this card does, for $X$ locally compact Hausdorff, and reaches the same limit by a cofinal family built the other way round. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
+$$
+H^n(X,X\setminus L)=H^n(X,V)\cong H^n(X^+,V)\cong H^n(X^+,\infty),
+$$
+the middle isomorphism by excision of $\infty$ and the last by the deformation retraction. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. This solution absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$; it is the cofinality assertion of step [](#excision-limit){.pf-ref} read backwards.
+
 The closing paragraph of that solution, on $X=\ZZ\times\RR$, is **not** used and must not be: it concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$, whereas dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem. The bracketed question is answered above, in degree two with $G=\ZZ$, by the assembled counterexample.
 
-Which part is published and which is not: the first part of the exercise is the complete published solution cited above; the degree-one cohomology of the compactification is published in Frankland's Theorem 1.3, printed p. 2, as step [](#degree-one){.pf-ref} records; and the bracketed question itself has no published solution. The answer given to it on this card is assembled from three published theorems — Eda–Kawamura for the $\QQ$ summand of $H_1(E;\ZZ)$, Wiegold for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\ne0$, and Frankland for the degree-one value — and is not a transcription of any published treatment of the question.
+Which part is published and which is not: the first part of the exercise has two complete published solutions, both cited above, the Stanford set's and Kottke's; the degree-one cohomology of the compactification is published in Frankland's Theorem 1.3, printed p. 2, as step [](#degree-one){.pf-ref} records; and the bracketed question itself has no published solution. The answer given to it on this card is assembled from three published theorems — Eda–Kawamura for the $\QQ$ summand of $H_1(E;\ZZ)$, Wiegold for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\ne0$, and Frankland for the degree-one value — and is not a transcription of any published treatment of the question.
 
 :::
