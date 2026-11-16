@@ -41,6 +41,34 @@ audit:
     Riemann--Roch plus Kodaira vanishing then gives
     h^0(O_X(1))=n+2-q, while nondegeneracy gives at least n+2 sections, so
     q=0 and X is K3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read for issue #121 and cited the published proof of the strict-inequality
+    half on the card: J. Harris, A bound on the geometric genus of projective
+    varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, printed
+    pp. 42--44, read in
+    tmp/sources/harris-1981-bound-geometric-genus.md, whose page markers place
+    §2 in its first twenty pages. Step harris-bound transcribes Harris's
+    displays: M and epsilon at printed p. 42, the curve bound and the Poincaré
+    residue sequence at printed p. 43, the surface bound and the corollary
+    p_g = 0 for d <= k(N-k)+1 at printed p. 44; it replaces the step
+    nonspecial-below-2n of the 2026-09-20 solution, whose conditional
+    derivation of H^1(C,L) = 0 is subsumed. Checked against the exercise and
+    its hint at Hartshorne V.6.2, printed p. 423 (PDF p. 438, printed = PDF
+    minus 15), and against the book pages the other steps now name: Proposition
+    8.20 printed p. 182, Theorem 5.4 printed p. 343, Theorem 1.6 printed
+    p. 362 and Remark 7.15 printed p. 248. Read for the equality case: Yang
+    Pi-Yeh, solution 5.6.2, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf, read in
+    tmp/sources/lfwin-hartshorne-solutions.md, both halves present and two
+    steps unproved, namely H.K >= 0 in his chain 2n+2 <= 2-2g+2d <= d and the
+    passage from p_a = 1 to p_g = 1. The card keeps its own steps for those
+    two, and the gap is recorded in COMPLAINTS.md today. Not checked: Harris's
+    §1 and §§3--5, which the card does not use, and no other published proof
+    of the equality case was sought.
+
 ---
 
 ::: {.problem}
@@ -108,33 +136,81 @@ $$
 h^0(X,A)-1\ge n+1.
 $$
 Hence $h^0(C,L)\ge n+1$.
+
+This is the opening move of the book's hint for V.6.2, printed p. 423: cut
+$X$ with a hyperplane and count sections of $\OO_C(1)$.
 :::
 
 :::
 
-::: {.pf-step #nonspecial-below-2n}
-If $d<2n$, then $L$ is nonspecial:
+::: {.pf-step #harris-bound}
+If $d<2n$, then
 $$
-\boxed{H^1(C,L)=0.}
+\boxed{p_g(X)=0.}
 $$
 
 ::: pf-proof
-Suppose instead that $L$ is special.
-Since $L$ has positive degree and has nonzero sections, Clifford's theorem
-[[T-CRVCLIFF]] gives
+This is Harris's bound on the geometric genus. J. Harris, *A bound on the
+geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl.
+Sci. (4) 8 (1981), text version
+`tmp/sources/harris-1981-bound-geometric-genus.md`, §2, printed pp. 42--44.
+Written for a surface in $\PP^{n+1}$, with $N=n+1$, the argument is as
+follows.
+
+Put
 $$
-h^0(C,L)
+M=\left[\frac{d-1}{N-2}\right],
+\qquad
+\varepsilon=d-1-M(N-2).
+$$
+The generic hyperplane section is a nondegenerate curve $C$ of degree $d$ in
+$\PP^{N-1}$ (Harris, printed p. 42), and Riemann--Roch with the count
+$h^0(C,\OO_C(l))-h^0(C,\OO_C(l-1))\ge l(N-2)+1$ for $l\le M$ gives
+$$
+h^0(C,\omega_C(-M+l))
 \le
-\frac{\deg L}{2}+1
+l\varepsilon+\binom{l}{2}(N-2)
+$$
+(Harris, printed p. 43).
+
+The Poincaré residue sequence of the pair $C\subset X$,
+$$
+0\longrightarrow\Omega^2_X(-l)
+\longrightarrow\Omega^2_X(-l+1)
+\longrightarrow\omega_C(-l)
+\longrightarrow0,
+$$
+gives $h^0(X,\Omega^2_X(-M+1))=0$ and then, summing the resulting
+inequalities,
+$$
+h^0(X,\Omega^2_X(-M+l))
+\le
+\sum_{i=1}^{l-1}h^0(C,\omega_C(-M+i))
+$$
+(Harris, printed p. 43). At $l=M$ this reads
+$$
+p_g(X)
 =
-\frac d2+1.
+h^0(X,\Omega^2_X)
+\le
+\binom{M}{3}(N-2)+\binom{M}{2}\varepsilon,
 $$
-If $d<2n$, then
+which is Harris's bound at printed p. 44 for dimension two.
+
+Now $d<2n$ means $d\le2N-3$, so
 $$
-\frac d2+1<n+1,
+M=\left[\frac{d-1}{N-2}\right]\le2.
 $$
-contradicting step [](#hyperplane-restriction-sections){.pf-ref}.
-Thus $L$ is nonspecial.
+If $M\le1$, both binomial coefficients vanish and the bound is $0$. If
+$M=2$, then
+$$
+\varepsilon=d-1-2(N-2)\le 2N-3-1-2N+4=0,
+$$
+while $\varepsilon\ge0$ by its definition, so $\varepsilon=0$ and the bound
+is $0$ again. Hence
+$$
+p_g(X)=0.
+$$
 :::
 
 :::
@@ -146,7 +222,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction gives
+Adjunction (Hartshorne, Proposition 8.20, printed p. 182) gives
 $$
 \omega_C
 \cong
@@ -225,7 +301,7 @@ $$
 $$
 
 ::: pf-proof
-Clifford's theorem and step [](#hyperplane-restriction-sections){.pf-ref} give
+Clifford's theorem (Hartshorne, Theorem 5.4, printed p. 343) and step [](#hyperplane-restriction-sections){.pf-ref} give
 $$
 n+1
 \le
@@ -362,7 +438,8 @@ $$
 2-q.
 $$
 
-Apply surface Riemann--Roch [[T-SRFRR]] to $A$.
+Apply surface Riemann--Roch (Hartshorne, Theorem 1.6, printed p. 362)
+[[T-SRFRR]] to $A$.
 Since $K_X\sim0$ and
 $$
 A^2=\deg X=d=2n,
@@ -378,7 +455,8 @@ $$
 n+2-q.
 $$
 
-By Kodaira vanishing [[T-KODVAN]], using
+By Kodaira vanishing (Hartshorne, Remark 7.15, printed p. 248)
+[[T-KODVAN]], using
 $$
 A\cong\omega_X\otimes A
 $$
@@ -422,7 +500,7 @@ If $d<2n$, then $p_g(X)=0$. If $d=2n$, then either
 $p_g(X)=0$, or $p_g(X)=1$ and $X$ is a K3 surface.
 
 ::: pf-proof
-For $d<2n$, step [](#nonspecial-below-2n){.pf-ref} makes $L$ nonspecial, and step [](#nonspecial-implies-pg-zero){.pf-ref} gives
+For $d<2n$, step [](#harris-bound){.pf-ref} gives
 $$
 p_g(X)=0.
 $$
@@ -447,7 +525,7 @@ that $X$ is K3.
 :::
 
 ::: pf-qed
-Steps [](#hyperplane-restriction-sections){.pf-ref}, [](#nonspecial-below-2n){.pf-ref} and [](#nonspecial-implies-pg-zero){.pf-ref} prove the strict inequality case. Steps [](#clifford-equality-canonical){.pf-ref}, [](#canonical-meets-hyperplane-zero){.pf-ref}, [](#trivial-canonical-pg-one){.pf-ref}, [](#irregularity-zero){.pf-ref} and [](#main-dichotomy){.pf-ref}
+Step [](#harris-bound){.pf-ref}, Harris's bound, proves the strict inequality case. Steps [](#clifford-equality-canonical){.pf-ref}, [](#canonical-meets-hyperplane-zero){.pf-ref}, [](#trivial-canonical-pg-one){.pf-ref}, [](#irregularity-zero){.pf-ref} and [](#main-dichotomy){.pf-ref}
 analyze the equality case and give precisely the two alternatives stated
 in the theorem.
 :::
@@ -456,5 +534,13 @@ in the theorem.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303, text version `tmp/sources/hartshorne-solutions-egbert.md` (the Chern–Griffiths theorem on surfaces in $\PP^{n+1}$).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, printed p. 423, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15), with the hint printed there: cut $X$ with a hyperplane and use Clifford's theorem (IV, 5.4, printed p. 343), and for the last statement use Riemann--Roch on $X$ (Theorem 1.6, printed p. 362) and Kodaira vanishing (Remark 7.15, printed p. 248).
+
+The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), text version `tmp/sources/harris-1981-bound-geometric-genus.md`, §2, printed pp. 42--44, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
+$$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
+and records, immediately after it, that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d\le2n-1$, that is $d<2n$, gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
+
+The equality case $d=2n$ has no complete published proof in the sets read. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`; read in `tmp/sources/lfwin-hartshorne-solutions.md`), states both halves and argues the second through Clifford, adjunction, Theorems 6.1--6.3 of the book and Kodaira vanishing, but two of its steps are not proved: the chain $2n+2\le2-2g+2d\le d$ uses $H\cdot K_X\ge0$, which is what the card's step [](#clifford-equality-canonical){.pf-ref} derives from Clifford's equality case instead, and its conclusion $p_a(X)=1$ is the arithmetic genus, whereas the theorem asks for $p_g(X)=1$, which the card's steps [](#trivial-canonical-pg-one){.pf-ref} and [](#irregularity-zero){.pf-ref} give together with $q(X)=0$. Its citation of "theorem 6.2" for $\linearsystem{12K}\ne\emptyset$ is to Theorem 6.1, printed p. 421, which identifies $\kappa=-1$ with $\linearsystem{12K}=\emptyset$ and with $X$ rational or ruled, and it uses $12K=0$ without saying that $H\cdot K_X=0$ with $H$ ample forces the effective divisor in $\linearsystem{12K}$ to be zero.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, is a garbled sketch and is not used here.
 :::
