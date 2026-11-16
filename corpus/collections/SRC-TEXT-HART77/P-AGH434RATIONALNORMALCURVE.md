@@ -48,43 +48,84 @@ audit:
     transcribed with it.
 
     What the source proves and what it does not: its division of the ideal by the
-    quadrics g_ij is set up correctly, but its first observation about a
-    lexicographic remainder is false, the leading monomial of
-    g_{i-1,i} = x_{i-1}x_{i+1} - x_i^2 being x_{i-1}x_{i+1}, so a pure power
-    x_i^l is divisible by no leading monomial and survives the division; and its
-    integral-closure route to projective normality asserts
-    Frac S(X) = k(t_0,t_1), false for d >= 2, and concludes d | deg f from a
-    degree comparison, which also fails: for d = 2 the element t_0 is integral
-    over S(X), being a root of T^2 - t_0^2, and has degree 1. Those three
-    statements are named on the card, not copied. What this pass did not do: it
+    quadrics g_ij is complete, but the degree count that closes its
+    integral-closure argument is garbled as printed (p. 8: "mn = m(n-1) +
+    dk_{n-1} + ... = m + dk_1 = dk_0. Hence, m = dk_{n-1} => d | m", with n and
+    d interchanged in the indices of the next display) and its toric restatement
+    at pp. 8--9 gives a monoid that is not the one of the d-uple embedding. Both
+    are recorded in COMPLAINTS.md under this date. What this pass did not do: it
     did not re-read Egbert, whose citation is that of an earlier event and stands
     unchanged.
 - event: solution-written
   by: claude
   date: 2026-11-16
   note: >-
-    Corrected in this same session after a reader's report: the first version of
-    this event recorded, as the repair, a proof of projective normality taken
-    from Hou's integral-closure argument, which is false, and a proof that the
-    quadrics generate I(X) copying his defective observation about the
-    remainder. Neither is on the card now. What the card proves and where each
-    step comes from: s1 (the monomial count for the restriction maps; the
-    identification S(X) = k[t_0^d,...,t_1^d] is I Ex 2.12 and is stated at Hou
-    (a), printed p. 8) is the card's own; s2, projective normality, is the
-    card's own, from normality of X = P^1 and Exercise II.5.14(d), with Hou's
-    two false statements named; s3 (the quadrics vanish on X, printed p. 9) is
-    Hou's; s4 (they generate I(X), printed p. 9) is the card's own straightening
-    of monomials modulo the quadrics, with Hou's defective observation named; s5
-    (deg D = d and dim|D| >= n from nondegeneracy) and s6
-    (n <= dim|D| <= d <= n, from Exercise IV.1.5) are the card's own, Hou's
-    justification of dim|D| = n not establishing it; s7 (g(X) = 0 and
-    h^0 = n+1) is the card's own from the equality case of IV Ex 1.5, with Hou
-    p. 10 stating the conclusion; s8 (the embedding is nu_d) is Hou's sentence
-    at p. 10, its expansion marked as the card's own; s9 and s10 are his (c) and
-    (d) at p. 10. Checked against the book: (a)'s two assertions, (b)'s
-    hypotheses d <= n and non-degeneracy, and the two sentences after (b),
-    printed p. 315. Not checked: the sources' citations of the book beyond the
-    statements they use, and Egbert.
+    The solution is now the transcription of Hou's solution, one step per
+    published argument, each step naming part and printed page: s1 and s8's
+    identification S(X) = k[t_0^d,...,t_1^d] (Hou (a), printed p. 8, from I Ex
+    2.12), s2 the integral-closure argument (p. 8; its garbled degree count
+    replaced by the reason the conclusion follows, which is s1), s3 and s4 the
+    quadrics (p. 9), s5--s8 part (b) (p. 10), s9 and s10 the degree-2 and
+    degree-3 consequences (p. 10). The monomial count in s1, and the expansions
+    of Hou's three compressed sentences -- that dim|D| = n is completeness of
+    the system, that g(X)=0 gives X = P^1 and O_X(1) = O_{P^1}(d), and that the
+    t_1-exponent ranges in s4 meet only at the multiples of n -- are marked in
+    the text as the card's own where they replace the source's word; the
+    mathematics they supply is a definition or a citation of IV.1.3.5 and IV
+    Ex 1.5 in each case. The parts of the statement the source treats only by
+    citation are (a)'s projective normality, whose proof is the source's
+    integral-closure argument, and (b)'s final identification with nu_d, which
+    the source states in one sentence. Checked against the book: (a)'s two
+    assertions, (b)'s hypotheses d <= n and nondegeneracy, and the two "in
+    particular" sentences, printed p. 315.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #121 reader's report on this round, and the two events of this date
+    restored. The step names s1--s10 in the restored events above are those of
+    the card as it stood that day, before it was given named steps; the two
+    steps this event changes are #strict-inequality and #genus-zero.
+    Part (b)'s degree and genus are printed in Egbert, so they are
+    transcribed rather than redone: steps #strict-inequality and #genus-zero now
+    give A. Egbert, Solutions to Hartshorne's Algebraic Geometry (2013),
+    IV.3.4(b), printed p. 220, his chain "l(D) = n+1 <= deg(D)+1 = d+1 <= n+1.
+    Thus n = d. Since deg(D) = dim(D), and d != 0, then by exc IV.1.5, g = 0",
+    and the identification in his closing sentence. The proof written earlier
+    today, from h^0 <= e+1 by induction and then a degree-one map to P^1, is
+    withdrawn: the same chain is printed, so the source governs. Two slips of
+    his are named on the card, not copied: l(D) = n+1 is what nondegeneracy
+    gives as l(D) >= n+1, and "deg(D) = dim(D)" compares the degree with the
+    dimension of the linear system, where what the citation needs is
+    deg D = dim|D|. The reader named the page as printed p. 219; part (a) is on
+    that page and the proof of (b) is on the next, whose printed folio is 220.
+    The restored source-checked event says Hou's (b) at printed p. 10 "is
+    transcribed with it": Hou's (b) states dim|D| = n and does not establish it,
+    and what the card takes from Hou in part (b) is the closing sentence of his,
+    not the degree and genus. Three further corrections on this card: the
+    solution's opening sentence said the whole solution was the transcription
+    of Hou, where four of its ten steps are the card's own; the expansion of
+    Hou's closing sentence said a divisor of degree d on P^1 "is d times a
+    point", where a divisor of degree d is linearly equivalent to dP; and the
+    remark's Egbert sentence said he checks the surjectivity of the restriction
+    maps and identifies the quadrics Q_ij as generators, where printed p. 219
+    asserts both halves of (a) in one sentence each and proves neither and names
+    no Q_ij. The remark also called IV.1.3.5 an exercise, where it is an Example
+    of the text; it is cited as one. Where and how the sources were read:
+    Egbert in tmp/sources/hartshorne-solutions-egbert.md, section 4.3.6 for
+    printed p. 219 and the section headed "4.3.7 b. x g" for printed p. 220, the
+    page positions read off the folios of
+    tmp/sources/hartshorne-solutions-egbert.pdf, whose printed folio is its PDF
+    page; Hou in tmp/sources/ntu-ag2-chapter4.md, (a) on printed pp. 8--9 and
+    (b)--(d) on printed p. 10, positions fixed on
+    tmp/sources/ntu-ag2-chapter4.pdf; and the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, IV.3.4 on printed p. 315
+    and IV.1.3.5 in the Examples of §IV.1. Not read in this pass: Egbert's
+    IV.3.5, IV.3.6 and IV.3.7, which cite IV.3.4(b), and any search outside the
+    brief's three sources for part (a)'s projective normality, which remains the
+    card's own proof from Exercise II.5.14(d). The two events of this date above
+    were rewritten in place by e4872b53d6; they are restored to the text they
+    carried when written, and this event is the correction.
 ---
 
 ::: {.problem}
@@ -104,7 +145,7 @@ A curve of degree 3 in any $\PP^n$ must be either a plane cubic curve, or the tw
 :::
 
 ::: {.solution}
-The published solution transcribed here is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`: part (a) on printed pp. 8--9, parts (b)--(d) on printed p. 10.
+Each step names the published argument it transcribes, or says that it is the card's own. The transcription is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou — part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10 — and, for the degree and the genus of part (b), A. Egbert's *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b), printed p. 220. Four of the ten steps are the card's own.
 
 Write $S(X)=k[x_0,\ldots,x_d]/I(X)$ for the homogeneous coordinate ring of
 $$
@@ -275,20 +316,26 @@ $$
 
 ::: pf-proof
 
-This step is the card's own, and rests on
-[[P-AGH415DIMLEQDEG|Exercise IV.1.5]]: for an effective divisor $D$ on a curve
-of genus $g$ one has $\dim\abs{D}\le\deg D$. With step
-[](#hyperplane-divisor){.pf-ref},
-$$
-n\le\dim\abs{D}\le\deg D=d\le n,
-$$
-so all three are equal: $d=n$ and $\dim\abs{D}=\deg D$.
+This step transcribes A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*
+(2013), IV.3.4(b), printed p. 220: "We have
+$\dim\abs{D}=n$, $\deg(D)=d$ and
+$l(D)=n+1\le\deg(D)+1=d+1\le n+1$. Thus $n=d$." With step
+[](#hyperplane-divisor){.pf-ref}, $d\le n$ is his last inequality and his
+$l(D)\le\deg(D)+1$ is [[P-AGH415DIMLEQDEG|Exercise IV.1.5]] applied to $D$,
+which reads $\dim\abs{D}\le\deg D$, with $l(D)=\dim\abs{D}+1$.
 
-Hou, §3 Exercise 4(b), printed p. 10, reaches $d=n$ by another route: removing
-the fixed point of the pencil from $\abs{D}$ repeatedly gives
-$\dim\abs{D-P_1-\cdots-P_d}=n-d>0$ against degree $0$, a contradiction. That
-route presupposes $\dim\abs{D}=n$, which the previous step records as not
-established by his remark there.
+The equality he opens with is what the hypotheses give as an inequality:
+$H^0(\PP^n,\mco_{\PP^n}(1))\to H^0(X,\mco_X(1))$ is injective because $X$ lies
+in no hyperplane (step [](#hyperplane-divisor){.pf-ref}), so $l(D)\ge n+1$.
+Read that way his chain is $n+1\le l(D)\le d+1\le n+1$ and yields the same
+conclusion; printed with $l(D)=n+1$ first, as he writes it, the line asserts
+what it proves. Hou, §3 Exercise 4(b), printed p. 10, writes the same equality
+for the same inequality, which step [](#hyperplane-divisor){.pf-ref} names.
+
+Hou's own route to $d=n$, §3 Exercise 4(b), printed p. 10, removes the fixed
+points of $\abs{D}$ one at a time, reaching
+$\dim\abs{D-P_1-\cdots-P_d}=n-d>0$ against degree $0$; that is a contradiction
+only if $\dim\abs{D}=n$, which his remark there does not establish.
 
 :::
 
@@ -305,15 +352,19 @@ $$
 
 ::: pf-proof
 
-This step is the card's own. By step [](#strict-inequality){.pf-ref} one has
-$\dim\abs{D}=\deg D$ with $D\ne0$ of degree $d>0$, so the equality case of
-[[P-AGH415DIMLEQDEG|Exercise IV.1.5]] gives
-$$
-g(X)=0,
-$$
-and $h^0(X,\mco_X(1))=\dim\abs{D}+1=n+1$. Hou, §3 Exercise 4(b), printed p. 10,
-states both conclusions, "we then must have $g(X)=0$ and
-$\mco_X(H)=\mco_{\PP^1}(dH)$".
+This step transcribes Egbert, IV.3.4(b), printed p. 220, who continues:
+"Since $\deg(D)=\dim(D)$, and $d\ne0$, then by exc IV.1.5, $g=0$." Step
+[](#strict-inequality){.pf-ref} gives $d=n$ and its chain gives $l(D)=n+1$, so
+$\dim\abs{D}=n=\deg D$ with $D\ne0$; that is the equality case of
+[[P-AGH415DIMLEQDEG|Exercise IV.1.5]], whence $g(X)=0$, and
+$h^0(X,\mco_X(1))=l(D)=n+1$. His "$\deg(D)=\dim(D)$" compares the degree of $D$
+with the dimension of the linear system, and what the citation needs is
+$\deg D=\dim\abs{D}$, the equality the previous step leaves.
+
+He closes, "Thus $D$ corresponds to an $(n+1)$ dimensional subspace in
+$\Gamma(\PP^1,\mco(n))$", which is the identification the next step states, and
+Hou, §3 Exercise 4(b), printed p. 10, states both conclusions as well: "we then
+must have $g(X)=0$ and $\mco_X(H)=\mco_{\PP^1}(dH)$".
 
 :::
 
@@ -328,9 +379,10 @@ of $\PP^1$, up to an automorphism of $\PP^d$.
 
 Hou, §3 Exercise 4(b), printed p. 10: "Therefore $X\cong\nu_d(\PP^1)$ up to
 $\Aut(\PP^n)$." The following expansion of that sentence is the card's own.
-$g(X)=0$ forces $X\cong\PP^1$ (IV.1.3.5); a divisor of
-degree $d$ on $\PP^1$ is $d$ times a point, so $\mco_X(1)=\mco_X(H)\cong
-\mco_{\PP^1}(d)$ and $\abs{D}$ is the complete system $\abs{dP}$; by step
+$g(X)=0$ forces $X\cong\PP^1$ (IV.1.3.5); on $\PP^1$ a divisor of degree $d$ is
+linearly equivalent to $dP$ for a point $P$, so
+$\mco_X(1)=\mco_X(H)\cong\mco_{\PP^1}(d)$ and $\abs{D}$ is the complete system
+$\abs{dP}$; by step
 [](#genus-zero){.pf-ref} the restriction
 $H^0(\PP^d,\mco_{\PP^d}(1))\to H^0(X,\mco_X(1))$ is injective between spaces of
 dimension $d+1$, hence an isomorphism, so the given embedding is the one defined
@@ -393,7 +445,7 @@ consequences.
 
 
 ::: {.remark title="Published solution"}
-Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^l$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. The card proves (a) by Exercise II.5.14(d) and by straightening monomials modulo the quadrics, and part (b) from Exercises IV.1.5 and IV.1.3.5.
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^l$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card proves (a) by Exercise II.5.14(d) and by straightening monomials modulo the quadrics, and part (b)'s degree and genus from Exercise IV.1.5, with IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed p. 219, text version `tmp/sources/hartshorne-solutions-egbert.md`, checks that the restriction $H^0(\PP^d,\OO(m))\to H^0(\PP^1,\OO(dm))$ is surjective for every $m$, so the $d$-uple embedding is projectively normal, identifies the quadrics $Q_{ij}$ as generators of the ideal, and concludes the classification of low-degree curves from the degree bound.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed pp. 219--220, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal; If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
 :::
