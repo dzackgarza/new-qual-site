@@ -106,6 +106,23 @@ audit:
     cover, $k\ge n\ell$ with $\ell\ge3$) and of 4874176 (fundamental cycle, at least $3n$
     edges), the exercise as printed on p. 184, and every step of the proof on the card. Not
     claimed: a published solution of Exercise 2.C.1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card: two defects of the record, repaired here as a new
+    event rather than in the notes they concern. (1) The `source-corrected` note of this date gives the
+    answer's `creation_date` as 1584866744. That is the question's number, not the answer's: read again
+    through the Stack Exchange API on 2026-11-16, question 3590105 has `creation_date` 1584866748 and
+    the accepted answer 3590397 has **1584888044**. Both are 2020-03-22, so the date on the card stands
+    and only the timestamp in that note is wrong. (2) The `source-checked` note of 2026-11-13 says the
+    exercise was searched for in "Stanford Math 215C Solution Sets 1--5". `tmp/sources` holds only
+    `stanford-math215c-spring2009-solution2.pdf`, `-3` and `-4`: Solution Sets 1 and 5 do not exist
+    there, so that range is not what was read, and the range is Solution Sets 2--4. The same wrong
+    range appears in the notes of the same date on `E-HAT-2.B-5`, `-2.B-7` and `-2.C-6` and is
+    corrected by a new event on each of those cards. Unchanged and re-checked: the statement as printed
+    on p. 184, every step of the proof, and the description of the two Stack Exchange answers. Not
+    claimed: a published solution of Exercise 2.C.1.
 ---
 
 ::: {.problem}

@@ -142,6 +142,30 @@ audit:
     `tmp/sources/hatcher-2002-algebraic-topology.md`; Putman and Bredon have no text versions in
     `tmp/sources` and were read in the text layer of their PDFs. Not claimed: a published
     solution of Exercise 2.B.5.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card: three repairs, none of them to the mathematics of
+    the statement. (1) The `source-checked` note of 2026-11-13 says the exercise was searched for in
+    "Stanford Math 215C Solution Sets 1--5"; `tmp/sources` holds Solution Sets 2, 3 and 4 only, so the
+    range is corrected to 2--4. The same wrong range on `E-HAT-2.B-7`, `-2.C-1` and `-2.C-6` is
+    corrected by a new event on each of those cards. (2) The remark said that "§2.1 supplies the
+    collar" in Putman, which can be read as §2.1 of the notes; the collaring is **Theorem 2.1, in §2**,
+    and it is what extends the embedding $\varphi$ to $\varphi:S^{n-1}\times[0,1]\to S^n$, as Putman
+    uses it in his proofs of the theorem in §3 and §4. Read at printed p. 2 of
+    `tmp/sources/putman-generalized-schoenflies.pdf`. (3) The intersection-number step of the first
+    proof was heuristic: it asserted that Alexander duality's evaluation of the image of the normal
+    sphere's fundamental class "is the intersection number", which is the linking-number description of
+    the duality isomorphism and was never proved on the card. It is now stated as what it is --- the
+    geometric account of which generator $[S^r]$ is, with $[S^r]=[\partial B]$ from the annulus of the
+    normal disk and the intersection number computed as one transverse point --- and the nonvanishing
+    that makes $[S^r]$ a generator is supplied by the independent second proof, step
+    [](#schoenflies-pair){.pf-ref}, which is complete. So the exercise is proved on the card, the first
+    route is kept as the book's duality computation with its one geometric assertion labelled, and
+    nothing rests on an unproved evaluation. Checked against Hatcher (2002), the printed statement on
+    p. 176 and Proposition 2B.1(a) on pp. 169--170. Not claimed: a published solution of Exercise
+    2.B.5.
 ---
 
 ::: {.problem}
@@ -183,7 +207,9 @@ The source sphere $S^r$ has the same reduced homology groups.
 The image of the oriented fundamental class of $S^r$ is a generator of $\widetilde H_r(S^n\setminus S)$.
 
 ::: pf-proof
-Inside the coordinate disk $D^n$, the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ at its center and nowhere else. The boundary of the normal disk is the sphere in the statement. Under Alexander duality, evaluation of the image of its oriented fundamental class on the fundamental class of $S$ is the intersection number of this normal disk with $S$. Excision restricts that intersection calculation to the coordinate disk, where the two coordinate disks meet in one transverse point with local intersection number $+1$ or $-1$. Thus the image has Alexander-duality coordinate $\pm1$, so it is a generator.
+By step [](#complement-homology){.pf-ref} both reduced homology groups are $\ZZ$ in degree $r$ and zero elsewhere, so it is enough that the class $[S^r]$ of the sphere in the statement be nonzero in $\widetilde H_r(S^n\setminus S)$, and a nonzero class in a copy of $\ZZ$ is a generator.
+
+That the class is nonzero is proved, not asserted: step [](#schoenflies-pair){.pf-ref} below proves, without Alexander duality, that the inclusion $S^{n-k-1}\hookrightarrow S^n-S$ is an isomorphism on homology in every degree, so $[S^r]$ generates. What the duality route adds is which generator it is, and that is a statement about the pairing, not a step of the proof: inside the coordinate disk $D^n$ the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ in the single point $0$, which is interior to $D^{n-k}$, and $S^r=\partial D^{n-k}$. The concentric sphere $\partial B$ of radius $\tfrac12$ lies in $D^{n-k}$ and the annulus $\{\tfrac12\le\norm{x}\le1\}$ of the last $n-k$ coordinates joins the two spheres inside $D^{n-k}-\{0\}\subset S^n-S$, so $[S^r]=[\partial B]$ in $\widetilde H_r(S^n-S)$; the intersection number of $S$ with the disk $B$ is $\pm1$, one transverse point, which is the linking-number description of Alexander duality's coordinate of $[\partial B]$ under $\widetilde H_r(S^n-S)\cong\widetilde H^{\,k}(S)$, Theorem 3.44, printed p. 254. That description is stated here as the geometric account of the isomorphism and is not used as a step: the nonvanishing it reports is what the second route proves.
 :::
 
 :::
@@ -243,7 +269,7 @@ For $k<n$, step [](#complement-homology){.pf-ref} leaves only degree $r$ to chec
 :::
 
 ::: {.remark title="Source"}
-Andrew Putman, *The generalized Schoenflies theorem*, printed p. 1 and §3, printed pp. 3--4, of `tmp/sources/putman-generalized-schoenflies.pdf`: for a topological embedding $\varphi:S^{n-1}\to S^n$ with $n\ge2$ whose image bounds a component whose closure $A$ is a manifold with boundary, $A\cong D^n$ (Mazur's proof is §3, and §2.1 supplies the collar such an $A$ has), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170, read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
+Andrew Putman, *The generalized Schoenflies theorem*, printed p. 1 and §3, printed pp. 3--4, of `tmp/sources/putman-generalized-schoenflies.pdf`: for a topological embedding $\varphi:S^{n-1}\to S^n$ with $n\ge2$ whose image bounds a component whose closure $A$ is a manifold with boundary, $A\cong D^n$ (Mazur's proof is §3, printed pp. 3--4; it is Theorem 2.1, in §2, that extends $\varphi$ to an embedding $S^{n-1}\times[0,1]\to S^n$ and so supplies the collar such an $A$ has), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170, read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
 
 The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), printed p. 236, whose proof occupies printed pp. 236--239 and follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the bicollar $\beta$ of $\Sigma$ in the proof supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, printed p. 233, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), printed p. 233, that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), printed pp. 169--170, so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input. Bredon and Putman have no text versions in `tmp/sources` yet and were read in the text layer of their PDFs, `tmp/sources/bredon-topology-and-geometry.pdf` (PDF page 131 = printed pp. 236--237) and `tmp/sources/putman-generalized-schoenflies.pdf`; the Math StackExchange thread 4773641 was read through the Stack Exchange API.
 :::

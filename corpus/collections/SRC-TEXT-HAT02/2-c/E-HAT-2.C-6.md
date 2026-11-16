@@ -122,6 +122,31 @@ audit:
     printed p. 12 for Proposition 2.8 and the quotient, PDF page 18 = printed p. 18 for
     Theorem 4.1(a). Checked, unchanged: $\tau(f)=1-0-1=0$. Not claimed: a published solution of
     Exercise 2.C.6.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card: the handle model was wrong, and the two
+    sentences above that describe it are withdrawn rather than rewritten. They said that
+    $M_{2m}$ is built from $m$ antipodal pairs of handles $D^1\times D^1$ attached along
+    $S^0\times D^1$, and that the pasting map is $(t,s)\mapsto(1-t,s)$ on $D^1\times D^1$. A band
+    attached along $S^0\times D^1$ adds no genus, and $2m$ of them on a sphere with $2m$ holes give
+    genus $m$ ($\chi=2-2m$), not genus $2m$, which needs $\chi=2-4m$; and the formula
+    $(t,s)\mapsto(1-t,s)$ read on a single handle fixes $\{1/2\}\times D^1$, contradicting the
+    step that $f$ has no fixed point. The model is now a sphere with $m$ antipodal pairs of holes
+    and $m$ antipodal pairs of punctured tori, one pair of genus handles for each pair of holes,
+    so that $\chi(M_{2m})=(2-2m)-2m=2-4m$ and the genus is $2m$; this is Dugger's
+    $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$ of Proposition 2.8, printed p. 12.
+    The map is stated from each handle to its partner, $f(h_i(y))=h_{i'}(y)$ and
+    $f(h_{i'}(y))=h_i(y)$ with $h_{i'}=\alpha\circ h_i$, so no copy of the punctured torus is
+    mapped to itself and $f\circ f=\mathrm{id}$. The trace is now computed on a stated basis:
+    $H_1(M_{2m};\ZZ)\cong\bigoplus_{i=1}^{2m}H_1(T_i;\ZZ)$ by Mayer--Vietoris, a boundary circle
+    of a punctured torus being a commutator, and $f_*$ permutes the $2m$ summands in $m$
+    transpositions, so the diagonal vanishes. Unchanged and re-checked: the local-degree step at a
+    point $p$ of the sphere region, where $f^{-1}(f(p))=\{p\}$ because $f$ carries punctured tori
+    to punctured tori, and $\tau(f)=1-0-1=0$; the exercise as printed on p. 184; and Dugger's lack
+    of a text version in `tmp/sources`. Not claimed: a published solution of Exercise 2.C.6. The
+    `E-HAT-2.C-6` entry of COMPLAINTS.md is corrected by a new entry of this date.
 ---
 
 ::: {.problem}
@@ -129,7 +154,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
+Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere carrying $m$ antipodal pairs of genus handles, each genus handle a punctured torus glued to one hole of a pair: a pair of them adds two punctured tori to the sphere, so $m$ pairs give genus $2m$, since $\chi(M_{2m})=(2-2m)-2m=2-4m$. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
 
 ::: pf
 
@@ -139,7 +164,13 @@ Define a homeomorphism $f:M_{2m}\to M_{2m}$ by the antipodal map on the central 
 
 ::: pf-proof
 
-Choose the attaching disks in antipodal pairs and attach each pair of handles antipodally: if the first handle of a pair has attaching map $\varphi:S^0\times D^1\to\partial M$, its partner is attached by $\alpha\circ\varphi\circ\tau$, where $\alpha$ is the antipodal involution of the surface built so far and $\tau(\epsilon,s)=(1-\epsilon,s)$ reverses the $S^0$ factor. The map that is $\alpha$ on that surface and $(t,s)\mapsto(1-t,s)$ on each handle $D^1\times D^1$ then carries the attaching data of a handle to the attaching data of its partner, so it pastes to a continuous self-map; the same formula is its own inverse, and it restricts to $\alpha$ on the old surface. The resulting map is a homeomorphism.
+Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by $h_{i'}:=\alpha\circ h_i$, which is an attaching chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands, since a band $D^1\times D^1$ attached along $S^0\times D^1$ adds no genus, and a surface built from $2m$ bands would be of genus $m$. This is Dugger's $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
+
+Define $f$ by $f=\alpha$ on $A$ and, on the copies of $T$, by
+$$
+f\bigl(h_i(y)\bigr)=h_{i'}(y),\qquad f\bigl(h_{i'}(y)\bigr)=h_i(y)\qquad(y\in T),
+$$
+so $f$ carries each handle of a pair onto its partner and not onto itself, and no formula of $f$ is taken on a single copy of $T$ alone. The two clauses agree with $f=\alpha$ on the interface: for $y\in\partial T$ one has $f(h_i(y))=h_{i'}(y)=\alpha(h_i(y))$. The two clauses are inverse to each other and $\alpha$ is its own inverse, so $f\circ f=\operatorname{id}$, and $f$ is a homeomorphism restricting to $\alpha$ on the central sphere.
 
 :::
 
@@ -163,7 +194,11 @@ On $H_1(M_{2m};\ZZ)$, the map $f_*$ has trace zero.
 
 ::: pf-proof
 
-Choose the standard two generators on each handle. The handles occur in $m$ pairs, and $f_*$ swaps the two corresponding rank-two summands for each pair. Relative to this basis the matrix has zero diagonal, so its trace is zero.
+By Mayer--Vietoris for $M_{2m}=A\cup B$, where $B$ is the disjoint union of the $2m$ punctured tori, the boundary circle of a punctured torus is a commutator in that torus and hence zero in $H_1(T;\ZZ)$, while the $2m$ boundary circles generate $H_1(A;\ZZ)$ with the single relation that their sum is zero; hence
+$$
+H_1(M_{2m};\ZZ)\cong H_1(A;\ZZ)\big/\langle\partial H_j\rangle\ \oplus\ \bigoplus_i H_1(T_i;\ZZ)\cong\bigoplus_{i=1}^{2m}H_1(T_i;\ZZ),
+$$
+free of rank $4m=2g$, with basis the two standard loops of each punctured torus. The map $f$ carries $T_i$ homeomorphically onto $T_{i'}$ and permutes the $2m$ summands in $m$ transpositions, so relative to this basis the matrix of $f_*$ has zero diagonal and its trace is zero. Writing two generators per handle and interchanging the pairs, as the basis above does, gives the same matrix.
 
 :::
 

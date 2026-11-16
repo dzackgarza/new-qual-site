@@ -93,6 +93,23 @@ audit:
     = printed p. 176 ends at Exercise 6, so Exercise 7 does open printed p. 177) and Bredon in
     the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no text version
     yet. Not claimed: a published analysis of the doubled block.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card: two defects of the record, both in the
+    `source-corrected` note of this date above and in the remark. (1) That note assigned the claim
+    "Stanford Math 215C Solution Sets 1--5 were read" to the `solution-reviewed` note of 2026-11-13. The
+    claim is not in that note: it is in the `source-corrected` note of 2026-11-13, two events below it.
+    The attribution is corrected here. (2) The coverage of the Stanford sets is not "§3.B and §3.3
+    only": read again in the three PDFs this pass, Set 2 holds §3.2 exercises 1, 2, 11 and 15 together
+    with §3.B exercises 1 and 3, Set 3 holds §3.3 exercises 9--11, and Set 4 holds §3.3 exercises 21, 22
+    and 24 together with M&T 8.2, 8.5, 8.6 and 9.1. Neither Solution Set 1 nor Solution Set 5 exists in
+    `tmp/sources`, so "Sets 1--5" is wrong as well. The remark now gives the four sections the sets
+    actually cover, and the conclusion that none of them reaches §2.B stands: there is no §2.B exercise
+    in any of the three. The same wrong range on `E-HAT-2.B-5`, `-2.C-1` and `-2.C-6` is corrected by a
+    new event on each of those cards. Unchanged and re-checked: the statement as printed on p. 177 with
+    its figure, and the analysis, which is the card's own.
 ---
 
 ::: {.problem}
@@ -202,5 +219,5 @@ The limiting compact set is still a topological $3$-ball: the same shrinking-hor
 ::: {.remark title="Source"}
 Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: Example 2B.2 and its printed construction, pp. 170--172, the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 177, with the figure of the doubled building block beside it; the doubled-handle case is that computation with four horns per handle.
 
-No published analysis of the doubled block was located, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant, and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets do not solve this exercise --- Sam's has no §2.B section at all, Li's holds 2.B.10 and 2.B.11 only, DeMason's 2.B.1, 2.B.2 and 2.B.8, and Poulsen's 2.B.10; the Stanford Math 215C sets held here are Solution Sets 2--4 (§3.B and §3.3 only), the UCR Math 205B help file has no §2.B exercise, and `tmp/sources/hatcher-math538-homework4-solutions.pdf` is not a solution set at all but a 19-page image-only scan of lecture notes whose first page is printed page 60, "§3.2 Application: Borsuk--Ulam Theorem". The analysis above is therefore the card's own, checked against Hatcher's printed construction.
+No published analysis of the doubled block was located, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant, and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets do not solve this exercise --- Sam's has no §2.B section at all, Li's holds 2.B.10 and 2.B.11 only, DeMason's 2.B.1, 2.B.2 and 2.B.8, and Poulsen's 2.B.10; the Stanford Math 215C sets held here are Solution Sets 2--4, which hold §3.2 exercises 1, 2, 11 and 15 with §3.B exercises 1 and 3 (Set 2), §3.3 exercises 9--11 (Set 3), and §3.3 exercises 21, 22 and 24 with M&T 8.2, 8.5, 8.6 and 9.1 (Set 4), and no §2.B exercise; the UCR Math 205B help file has no §2.B exercise, and `tmp/sources/hatcher-math538-homework4-solutions.pdf` is not a solution set at all but a 19-page image-only scan of lecture notes whose first page is printed page 60, "§3.2 Application: Borsuk--Ulam Theorem". The analysis above is therefore the card's own, checked against Hatcher's printed construction.
 :::
