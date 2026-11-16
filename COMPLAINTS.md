@@ -1196,7 +1196,7 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 
 **Correction, 2026-11-16, on the reader's report of #121: the characteristic-$0$ step of V.4.3 gave a false reason for separability.** Step `inseparable-case` of the card said that a bad point carries at least two tangent directions, which an ordinary cusp, bad with a single tangent direction, contradicts; it now argues that the projection from a bad point is nonconstant on the normalization, an irreducible plane curve with a singular point being no line, and that a nonconstant morphism of nonsingular curves is separable in characteristic $0$. The characteristic-$p$ status is unchanged: V.4.3 still rests on the unread Hirschfeld citation, Theorem 3.27 of *Algebraic Curves over Finite Fields*, which is not in `tmp/sources`, so the obligation recorded above stands. Nothing else in this entry changed.
 
-**V.4.3 (`P-AGH543ORDINARYSING`) is closed 2026-11-16 on published proofs in every characteristic: Fulton, §7.4 with Appendix A, and Rüd, §6.3 with §7.3.** William Fulton, *Algebraic Curves* (2008), read in `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md` with printed page = its marker minus 8, checked against the PDF page by page, proves the exercise as Theorem 2 of §7.4, printed p. 91: successive quadratic transformations centred at non-ordinary multiple points terminate because either the count of non-ordinary points falls or the invariant $g^*(C)=\binom{n-1}{2}-\sum_P\binom{r_P}{2}$ falls, by (7) and (8) on printed pp. 90--91; Lemma 1, printed p. 90, puts the curve in excellent position at any chosen point in characteristic $0$, on the input of Problem 5.26 and Theorem 2 of §5.4, both printed p. 60; and Appendix A, printed p. 113, carries the argument to characteristic $p$ by showing that a curve has at most one terrible point and that one quadratic transformation centred at a point of multiplicity $0$ or $1$ makes that point non-terrible. Thomas Rüd, *Resolution of singularities on projective curves* (2015), read in `tmp/sources/rud-2015-resolution-singularities-curves.md` with printed page = PDF page minus one, proves the same theorem by the same route as Proposition 19 on printed p. 25, Propositions 20 and 21 on printed pp. 26--27, Proposition 22 on printed p. 28, Theorem 13 on printed p. 28 and §7.3 on printed p. 40. **Supplied on the card, and named as supplied:** the calculation in (8), which Fulton gives only as "a calculation, using (2) and (7)" and which is the identity $\binom{2n-r-1}{2}-\binom{n}{2}-2\binom{n-r}{2}=\binom{n-1}{2}-\binom{r}{2}$, both sides $\frac12(n^2-r^2-3n+r+2)$; the passage from (6) to the ordinariness of the three fundamental images, following Rüd's Propositions 20--21; the observation that the two further centres of Appendix A's preparatory transformation are off $C$, which is what makes $\deg F'=2n-m$ there; and the accounting that those preliminary steps do not increase $g^*$, so that they interleave harmlessly with the terminating sequence. **Withdrawn by this pass:** the card's earlier proof, complete only in characteristic $0$ and taking the inseparable case from Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, a book neither held nor read; and its remark that the published treatments of the exercise are incomplete, which was true of the NTU entry and of Yang Pi-Yeh's but not of the two books above. **Defect found in a source, not repaired there:** Rüd's Remark 23, printed p. 28, says that an ordinary multiple point contributes nothing to $g^*$, which is false --- an ordinary double point contributes $1$ --- and the card uses it nowhere. Not read: Fulton's Problem 4.16, to which his proof of Lemma 1 defers the change of coordinates carrying three lines to $X$, $Y$, $Z$; and the printed copies of either book, only the text versions beside the retained PDFs.
+**V.4.3 (`P-AGH543ORDINARYSING`) transcribed 2026-11-16 from Fulton's §7.4 and Appendix A, which prove the exercise in every characteristic; three steps of the resulting proof are the card's.** William Fulton, *Algebraic Curves* (2008) proves the exercise as Theorem 2 of §7.4, printed p. 91: successive quadratic transformations centred at non-ordinary multiple points terminate because at each step either the count of non-ordinary points falls or $g^*(C)=\binom{n-1}{2}-\sum_Q\binom{r_Q}{2}$ falls, by (7) and (8) on printed pp. 90--91, the process ending after at most $N+g^*(C)$ steps; Lemma 1, printed p. 90, puts the curve in excellent position at any chosen point in characteristic $0$, on the input of Problem 5.26 and Theorem 2 of §5.4, both printed p. 60; and Appendix A, printed p. 113, carries the argument to characteristic $p$ by showing that a curve has at most one terrible point and that one quadratic transformation centred at a point of multiplicity $0$ or $1$ makes that point non-terrible. Transcribed onto the card with those pages are the standard transformation on printed p. 87, the formulas (1)--(3) on printed p. 88, good and excellent position with (4)--(7) on printed pp. 88--90, and (8) on printed p. 90. **The card's own, and absent from Fulton:** three steps. The calculation in (8), which Fulton gives only as "a calculation, using (2) and (7)", and which is the identity $\binom{2n-r-1}{2}-\binom{n}{2}-2\binom{n-r}{2}=\binom{n-1}{2}-\binom{r}{2}$, both sides $\frac12(n^2-r^2-3n+r+2)$. The passage from (6) to the ordinariness of the three fundamental images, Fulton's line being only "applying (6) to the curves $C'$ and $(C')'=C$": the card states and proves the fact that passage needs, that the strict transform under the blowup of a plane germ meets the exceptional curve in one point per tangent direction, with multiplicity the exponent of that factor in the tangent cone, from the local model (5) of printed p. 89, and applies it with $D=C'$ and its transform $C$. Rüd's Propositions 20--21, printed pp. 26--27, prove $\sum I=n$ and not this. And two termination arguments: that $N+g^*$ drops at each step, which is what carries Fulton's bound, the count being that a bad $P_i$ has $r_i\ge2$ and so the number of bad $P_i$ is at most $\sum_i\binom{r_i}{2}$; and that the preliminary transformations of Appendix A do not break it, the appendix saying only "we can proceed as before". Also the card's, and routine: the observation that the two further centres of that preparatory transformation are off $C$, which is what makes $\deg F'=2n-m$. **Rüd, and the defects met in it:** *Resolution of singularities on projective curves* (2015) proves the theorem as Proposition 19 on printed p. 25, Propositions 20--21 on printed pp. 26--27, Proposition 22 on printed p. 27, Proposition 23 on printed p. 27, Theorem 13 on printed p. 28 and §7.3 on printed p. 40. Three of its arguments do not hold as printed, and the card names them: Proposition 19 infers the irreducibility of the section $G_\lambda$ from that of $F$ and concludes that its roots are distinct, which does not follow, an irreducible polynomial over an algebraically closed field being linear; Remark 23, printed p. 27, says an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$, and Theorem 13 uses it; and Proposition 22's first case reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$. **Withdrawn:** the card's earlier proof, complete only in characteristic $0$ and taking the inseparable case from Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, a book neither held nor read; and its remark that the published treatments of the exercise are incomplete, which was true of the NTU entry and of Yang Pi-Yeh's but not of the two books above. Not read: Fulton's Problem 4.16, to which his proof of Lemma 1 defers the change of coordinates carrying three lines to $X$, $Y$, $Z$.
 
 ### V.5.8(b) of `SRC-TEXT-HART77` has no complete published solution
 
@@ -3403,28 +3403,43 @@ exercise's statement was re-read against the book in
 printed p. 407, V.4.8 on printed pp. 407--408, V.4.10 on printed p. 408 and V.4.11 on printed
 p. 408, with Proposition 4.8 on printed pp. 401--402, Theorem 4.9 on printed pp. 402--403,
 Proposition 4.10 and Remark 4.10.1 on printed pp. 403--405, Theorem 4.11 and Corollary 4.13 on
-printed p. 406, Theorem V.1.9 on printed p. 364 and Bertini's theorem II.8.18 on printed p. 179.
+printed p. 406, Theorem V.1.9 on printed p. 364, and Bertini's theorem as II.8.18 on printed p. 179 for hyperplane
+sections and as Corollary III.10.9 on printed p. 274 in characteristic $0$. This record of this date
+was corrected in place on a reader's report; each correction is stated at the card it concerns.
 What follows is, per card, the part that still has no published proof, and the defects of the
 sources found while transcribing them.
 
 **V.4.10, `P-AGH5410NUMINEQ` (2026-11-16).** Two published arguments reach the inequality
-$a^2\ge\sum b_i^2$, and both compress their reductions. Math StackExchange 2475661, answer 2476483
-by Dap, in `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`, maximises $\sum b_i^2$ over the
-feasible set for fixed $a$; its four claims about a maximiser ("otherwise $b_6$ can be increased",
-$b_1=b_2$, $b_5\le a/2$, $b_5=b_4$) are one-clause assertions, its Case 0 refers forward to its
-Cases 1 and 2 for part of itself, its Case 1 prints $4b_4^2$ for the five equal terms $5b_4^2$ of
-the maximiser it displays while reporting at both endpoints the values of $5b_4^2+(a-b_4)^2$, and
-its Case 2 is stated for $\frac a3\le b_4\le\frac a2$ although the ordering of a maximiser allows
-$b_4=\frac a3$ only. The National Taiwan University *Algebraic Geometry II* (2020 Spring), Chapter V
-§4 Exercise 10 by Shuang-Yen Lee, printed p. 17 of `tmp/sources/ntu-ag2-chapter5.md`, completes one
-of its two cases, checking both endpoint values of the quadratic in $b_2$; in the other it leaves
-the constant term unwritten, as $\ast$, and its printed line identifying the vertex has
-$\frac13(2b_2-(b_3+b_4+b_5))$ on the right where the left side is $\frac13(b_2-2(b_3+b_4+b_5))$,
-since the two differ by $\frac13b_2$. **Still without a published proof: a written-out derivation of
-the monotone reductions** (that increasing $b_6$, or $b_1$, or $b_3$ preserves the constraints and
-increases $\sum b_i^2$), and the second case's reduction to $b_1+b_2=b_3+b_4+b_5$, whose constant
-term neither source computes. The card transcribes both arguments as they stand and names these
-three defects at the steps they occur; it adds no proof of them.
+$a^2\ge\sum b_i^2$, and each orders the variables its own way. Math StackExchange 2475661, answer
+2476483 by Dap, in `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`, orders them increasingly,
+and in that order its weak hypotheses $a\ge b_5+b_6$ and $2a\ge b_2+\cdots+b_6$ are the book's own
+strict ones read at the two largest variables and at the sum omitting the smallest. Its four
+properties of a maximiser (either $b_2+\cdots+b_6=2a$ or $b_5+b_6=a$, and $b_1=b_2$, $b_5\le a/2$,
+$b_5=b_4$) are each proved by a one-clause increase; its Case 1 prints $4b_4^2$ for the five equal
+terms $5b_4^2$ of its own maximiser while reporting at both endpoints the values of
+$5b_4^2+(a-b_4)^2$; and its equalities $b_2=b_3=b_4$ (Case 1) and $b_2+b_3+b_4=a$ (Case 2) are stated
+with the reason that otherwise $b_3$ or $b_2$ could be increased. Its Case 2 is stated for
+$\frac a3\le b_4\le\frac a2$, which is exactly where its range
+$a-2b_4\le b_2\le\frac12(a-b_4)$ for $b_2$ is nonempty, and its second subcase is the maximiser
+$(0,0,\frac a2,\frac a2,\frac a2,\frac a2)$ that it lists. The National Taiwan University *Algebraic
+Geometry II* (2020 Spring), Chapter V §4 Exercise 10 by Shuang-Yen Lee, printed p. 17 of
+`tmp/sources/ntu-ag2-chapter5.md`, orders them decreasingly. Its first case is carried out at the two
+endpoint values of the quadratic in $b_2$, but its opening move, increasing $b_3,b_4,b_5$ until
+$b_1+b_2=b_3+b_4+b_5$, is available only while $b_1\le2b_2$ and fails at $(10,1,1,1,1,1)$, where the
+three entries cannot sum to $11$ under the ordering. Its second case compares the vertex
+$\frac13(b_2+b_3+b_4+b_5)$ of a downward quadratic with the midpoint $\frac12(b_3+b_4+b_5)$ of its
+range; the comparison is correct, because $2b_2\le b_3+b_4+b_5$ follows from
+$b_1+b_2\le b_3+b_4+b_5$ and $b_1\ge b_2$, and the printed line carries a factor $2$ too large on the
+right-hand side, which does not change the sign, the constant $\ast$ not being needed for it.
+**Still without a published proof: the two reductions of the first answer** ($b_2=b_3=b_4$ and
+$b_2+b_3+b_4=a$, each resting on its one-clause reason) **and the range of the second answer's first
+case.** The card states both, names the source's slips, and adds no proof of either. Corrected in
+place in this item: an earlier version sorted the variables decreasingly while transcribing the
+increasing answer; it called the first answer's Case 2 empty for $b_4>\frac a3$, which is false in the
+increasing order; it called that answer's Case 0 forward reference a defect, whereas the answer says
+its later cases do not depend on Case 0; and it read the second answer's comparison as a misidentified
+vertex. It also called the $b_6$ and $b_1$ increases open, which the card proves, and did not name the
+$b_2/b_3$ reductions, which is the reduction actually missing.
 
 **V.4.11, `P-AGH5411WEYLGROUPS` (2026-11-16).** Part (a) is complete in Math StackExchange 200840,
 answer 247553 by user26857, in `tmp/sources/mse-200840-symmetric-group-presentation.md`, whose coset
@@ -3433,24 +3448,31 @@ Chapter V §4 Exercise 11 by Pei-Hsuan Chang, printed p. 18, which checks the Co
 the images of $x_1,\ldots,x_5$ and of $y$ from a list of the action of the quadratic transformation on
 the $27$ lines; the list gives $21$ of the $27$ images, the other six being forced by $y^2=1$, and it
 verifies no incidence preservation, taking the element to be in $G$ because it is the quadratic
-transformation; the surjectivity it asserts is the book's, not its own ("the proof of proposition
-V.4.10 in the textbook says ..."). Part (c) is published: I. V. Dolgachev, *Topics in Classical
-Algebraic Geometry* (27 September 2010), Corollary 8.2.16, printed p. 262, gives
-$\#W(\mathbf E_6)=27\cdot16\cdot120=51840$ from the stabilizer $W(\mathbf E_5)$ of an exceptional
-vector and the count $27$ of exceptional vectors (Proposition 8.2.15, printed p. 261), and
-Proposition 9.1.3, printed p. 321, gives $72\cdot6!$ from transitivity on sixers; the book's Remark
-4.10.1, printed pp. 404--405, gives $\#G=27\cdot16\cdot10\cdot6\cdot2=51840$. **Still without a
-published proof: the order of the abstract group by an argument that does not pass through the
-geometric representation.** The identification of Hartshorne's presentation with the reflection
-group $W(\mathbf E_6)$ is the faithfulness of the geometric representation, cited on the card to
-Humphreys, *Reflection Groups and Coxeter Groups*, §5.4, and not verified here; the two published
-attacks on the abstract group are partial. Answer 4736813 by KReiser to Math StackExchange 4583421,
-in `tmp/sources/mse-4583421-coxeter-e6-word-processing.md`, bounds $\mathbf E_6$ by the two coset
+transformation; the generation of $G$ that makes $\Phi$ surjective is the book's Proposition 4.10 and
+Remark 4.10.1, printed pp. 403--405, not the source's own. Part (c): I. V. Dolgachev, *Topics in
+Classical Algebraic Geometry* (27 September 2010), Corollary 8.2.16, printed p. 262, computes
+$\#W(\mathbf E_6)=27\cdot16\cdot120=51840$ for the reflection group of the $\mathbf E_6$ lattice from
+the stabilizer $W(\mathbf E_5)$ of an exceptional vector and the count $27$ of exceptional vectors
+(Proposition 8.2.15, printed p. 261), and Proposition 9.1.3, printed p. 321, gives the same order as
+$72\cdot6!$ from transitivity on sixers; the book's Remark 4.10.1, printed pp. 404--405, gives
+$\#G=27\cdot16\cdot10\cdot6\cdot2=51840$. **Still without a published proof: the inequality
+$\#\mathbf E_6\le51840$**, that is, the equality of Hartshorne's presented group with that reflection
+group; in the literature it is the faithfulness of the geometric representation (Humphreys,
+*Reflection Groups and Coxeter Groups*, §5.4), which is not one of this batch's sources and was not
+read. What the sources do give is the lower bound: the reflections in a root basis satisfy the
+diagram relations, so the presentation maps onto $W(\mathbf E_6)$, and with part (b) it follows that
+$\#\mathbf E_6\ge\#G=51840$. The two published attacks on the order of the presented group are
+partial. Answer 4736813 by KReiser to Math StackExchange 4583421, in
+`tmp/sources/mse-4583421-coxeter-e6-word-processing.md`, bounds $\mathbf E_6$ by the two coset
 counts $120\cdot16\cdot27$ and says of their verification "This is actually the meat of the claim:
 proving this shows that there are at most this many right coset representatives. I will skip
 recording this in the post, it is somewhat tedious"; its two coset graphs are images in the text
 version and were not read. Answer 4736825 by Jyrki Lahtonen on the same page is one paragraph, citing
 the $72$ roots and the type $A_5$ of the stabilizer of the highest root rather than computing them.
+Corrected in place in this item: an earlier version called the order of the abstract group open and
+put the gap at "an argument that does not pass through the geometric representation", while the card
+presented part (c) as proved by citing Humphreys; the gap is the inequality above, and the card now
+states it.
 
 **V.4.7, `P-AGH547GENUSBOUND` (2026-11-16).** The bound is complete in the NTU Chapter V §4 Exercise
 7 by Yi-Tsung Wang, printed pp. 16--17: after $2p_a(D)-2=D\cdot(D+K_X)$ it reduces to
@@ -3461,37 +3483,41 @@ holds with the correct adjunction formula and fails by $2$ with the printed one)
 family the two multiplicities are interchanged, so that vector has degree $d+2$ and not $d$, while
 the vector with $\frac{d+1}{3}$ on $e_1,\ldots,e_4$ and $\frac{d-2}{3}$ on $e_5,e_6$ has the degree
 and the genus it reports; and it asserts, without argument, that each listed class is achieved by an
-irreducible nonsingular curve. The card supplies that last step from the book's Corollary 4.13(a),(b),
-printed p. 406, checking the ampleness inequalities for each family, which holds for every degree the
-source lists except $d=4$. **Still without a published proof: the attainment at $d=4$.** The source
-writes "For $d=4$, I don't know" and states its conclusion as holding for every $d>0$ "possibly
-except $d=4$". Corollary 4.13 does not reach it: the maximising class of degree $4$ is
-$H+F_{56}=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, and $(H+F_{56})\cdot F_{56}=4-2-2=0$, so no
-maximising class of degree $4$ displayed by the source is ample, and the exercise's second request at
-$d=4$ is open.
+irreducible nonsingular curve, leaving $d=4$ aside with "For $d=4$, I don't know". The card supplies
+the curves from published statements: Corollary 4.13(a),(b) of the book, printed p. 406, for the
+classes of the first three families and for the one of degree $5$, whose ampleness inequalities hold
+as the card checks; and at $d=4$ the class
+$H+F_{56}=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, which meets all $27$ lines nonnegatively — $0$ at
+$F_{56}$ alone — and has square $4$, so it satisfies condition (c) of Exercise V.4.8, whose
+sufficiency is recorded on `P-AGH548IRREDCLASSES` from Dolgachev's Theorem 8.2.19, Harbourne's
+Corollary II.3, Theorem III.1(a) and Lemma II.6(b), and Bertini's theorem in characteristic $0$.
+**No part of this exercise is left open.** Corrected in place in this item: an earlier version called
+$d=4$ open because the maximising class is not ample and Corollary 4.13 does not reach it; that is
+true of Corollary 4.13 and false of the exercise, since condition (c) covers that class.
 
-**V.4.8, `P-AGH548IRREDCLASSES` (2026-11-16).** Alternatives (a) and (c) are covered in both
-directions, and alternative (b) in the direction from existence to the conic description.
-Necessity: Brian Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
-arXiv:alg-geom/9509001v2), and I. V. Dolgachev's Lemma 8.1.3, printed p. 248, whose adjunction
-computation gives $C^2\ge-2$ and $C\cong\PP^1$ for an irreducible curve of negative
-self-intersection, with $-K_S$ ample removing $C^2=-2$; Theorem 4.9 of the book, printed pp. 402--403,
-reaches the same conclusion directly. Sufficiency of (c): Dolgachev's Theorem 8.2.19, printed p. 265,
-makes $D$ numerically effective from $D\cdot L\ge0$ on the $27$ lines; Harbourne's Corollary II.3,
-preprint p. 3, makes it effective; Theorem III.1(a), preprint p. 7, makes its system base point free
-because $-K_S\cdot D=D\cdot H\ge2$, the last inequality being Hodge index with $D^2>0$; Lemma
-II.6(b), preprint p. 4, makes a general section reduced and irreducible because $D^2>0$; and
-Bertini's theorem, II.8.18 of the book, printed p. 179, makes it nonsingular. Two reservations on
-that chain: Dolgachev's Lemma 8.1.3 treats $C^2<0$ only, so the branch $C^2=0$, which the card
-needs for alternative (b), is the same computation applied where the lemma does not state it; and
-his Theorem 8.2.19's proof leaves the degrees $8$ and $9$ to the reader, the card using degree $3$.
-**Still without a published proof: the converse for alternative (b)**, that every class of degree
-$2$ with $D^2=0$ on the cubic surface contains an irreducible nonsingular conic. Harbourne's Lemma
-II.6(a) would give a reduced irreducible member of that pencil once the class is known to be
-numerically effective, and the numerical effectivity of those classes is in neither source read
-here: they are the $27$ classes $\ell-e_i$, $2\ell-e_i-e_j-e_k-e_l$ and $H-e_i$, and no published
-argument that all $27$ meet every of the $27$ lines nonnegatively was located. No proof of the case
-was added to the card, which names it as not established.
+**V.4.8, `P-AGH548IRREDCLASSES` (2026-11-16).** All three alternatives are covered in both directions.
+Necessity: Dolgachev's Lemma 8.1.3 and its proof, printed p. 248, whose adjunction computation gives
+$C^2\ge-2$ and $C\cong\PP^1$ for an irreducible curve of negative self-intersection, with $-K$ ample
+removing $C^2=-2$; Theorem 4.9 of the book, printed pp. 402--403, reaches the same conclusion
+directly; the branch $C^2=0$ is the same adjunction computation, which the lemma does not state.
+Sufficiency of (c): Dolgachev's Theorem 8.2.19, printed p. 265, makes $D$ numerically effective from
+$D\cdot L\ge0$ on the $27$ lines; Harbourne's Corollary II.3, preprint p. 3, makes it effective;
+Theorem III.1(a), preprint p. 7, makes its system base point free because $-K\cdot D=D\cdot H\ge2$,
+the last inequality being Hodge index with $D^2>0$; Lemma II.6(b), preprint p. 4, makes a general
+section reduced and irreducible because $D^2>0$; and Bertini's theorem in Corollary III.10.9 of the
+book, printed p. 274, makes it nonsingular. Sufficiency of (b): the classes of degree $2$ with square
+$0$ are $H-L$ for the $27$ lines $L$, an enumeration of the solutions of $3a-\sum b_i=2$ and
+$a^2-\sum b_i^2=0$ that the card carries out, and $(H-L)\cdot M=1-L\cdot M\ge0$ for each of the $27$
+lines $M$, so Theorem 8.2.19 makes the class numerically effective, Corollary II.3 effective, Theorem
+III.1(a) base point free because $-K\cdot D=2$, and Lemma II.6(a) with $-K\cdot D=2r$ gives $r=1$, so
+the class is that of a reduced irreducible curve of degree $2$ and genus $0$, a nonsingular plane
+conic. **Still without a published proof: nonsingularity in characteristic $p>0$** for a class of the
+third alternative, where Lemma II.6(b) gives only a reduced irreducible member and Bertini's theorem
+fails, as Remark 10.9.3 of the book, printed p. 275, records. Corrected in place in this item: an
+earlier version called the converse of (b) open on the ground that the numerical effectivity of those
+classes is in neither source, which was false; and it cited Bertini's theorem II.8.18, printed
+p. 179, a statement about hyperplane sections, for a class that need only be numerically effective and
+big.
 
 **Uncertainty.** Searched, in this batch: the four briefs' named sources, the book's Chapter V §4 with
 V.1 and II.8.18, and, for the two open parts, the two Math StackExchange pages of the V.4.11 brief.
@@ -3511,7 +3537,7 @@ not. Nothing here supersedes an earlier entry of this file: the four cards remai
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121) for the parts named above, and each
 card's remark states what its sources do and do not prove.
 
-## 2026-11-16: the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, V.2.15(c) and V.2.17(b) keep one part each without a published proof
+## 2026-11-16: the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, and V.2.15(c) with V.2.17(b) keep the parts named below without a published proof
 
 The batch is the four cards `P-AGH5212ELLRULEDAMPLE` (V.2.12), `P-AGH5213ELLSCROLL` (V.2.13),
 `P-AGH5215FROBENIUSRULED` (V.2.15(c)) and `P-AGH5217CONORMALSPLIT` (V.2.17). Each card's solution is
@@ -3533,12 +3559,19 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   `tmp/sources/projective-theory-ruled-surfaces.md`, and both are proved there. The exercise's
   $\\deg\\mfb\\ge e+2$ and $\\deg\\mfb\\ge e+3$ fall in the main alternatives of Propositions 1.3 and
   2.10, the exceptional cases $\\mfb\\sim0$ at $e=0$ and $\\mfb\\sim-\\mfe$ at $e\\ge2$ needing
-  $\\deg\\mfb\\le0$ and $\\deg\\mfb=e$ respectively. Two readings of the source are recorded on the
+  $\\deg\\mfb\\le0$ and $\\deg\\mfb=e$ respectively. One reading of the source is recorded on the
   card: Proposition 1.3(2)(d) prints "since $\\deg(\\mathfrak b)\\le0$" where $\\deg(\\mfe)\\le0$ is
-  meant, and Proposition 2.10 cites [2, Corollary 1.8] for base-point freeness where the statement
-  with that function is [2, Corollary 2.9], printed p. 11. The dichotomy the exercise needs, that
-  $e\\ge0$ or $e\\in\\{0,-1\\}$, is Fuentes' Theorem 2.7, printed p. 13, asserted there without proof;
-  the book's Theorem V.2.15, printed p. 377, is the proof, and the card cites it. The earlier entry's
+  meant. Two readings this record held on first writing are withdrawn. The first is that Proposition
+  2.10's citation of [2, Corollary 1.8] and Proposition 2.2's citation of the same number named
+  different statements: both are Fuentes--Pedreira's Corollary 2.9, printed p. 11, which states the
+  section and the base-point-freeness, and Fuentes cites the irreducible-element criterion as [2,
+  Theorem 2.5]. The second is that Fuentes' Theorem 2.7, printed p. 13, is asserted without proof,
+  and that reading is withdrawn:
+  his page 13 introduces it as "Thus, we have actually proved the following theorem", from Theorem
+  2.1 with Propositions 2.5 and 2.6. The book's Theorem V.2.15, printed p. 377, proves the same
+  reduction independently. What part (a) asks for is a section, which a base-point-free system alone
+  need not contain, and the irreducible member is Fuentes' Proposition 1.5, printed p. 4, with
+  Propositions 2.2, printed p. 9, and 2.3, printed p. 10. The earlier entry's
   "Open" for this card, the Atiyah surface $e=-1$ and the indecomposable bundles of invariant $e=0$,
   is discharged by Propositions 2.10 and 2.11, and the paragraphs of that entry which say the
   indecomposable case lies outside the published argument stand as what they then read.
@@ -3559,9 +3592,13 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   part (a), the identification $H^1(C,\\OO_C)\\cong H^2(\\PP^2,\\OO(-4))$ with the three negative
   monomials, the composition of Frobenius with multiplication by $g^2$, and the vanishing checked
   monomial by monomial; Example 3.2, printed pp. 85--86, is part (b), the extension, its degree $1$,
-  the two Riemann--Roch dimensions $3$ and $5$, and the dimension count, whose printed diagram is
-  garbled and whose count is the kernel of $H^1(\\OO_C(-3P))\\to H^1(\\OO_C)$ against the isomorphism
-  $H^1(\\OO_C(-P))\\cong H^1(\\OO_C)$. Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing
+  the two Riemann--Roch dimensions $3$ and $5$, both on printed p. 85, and the dimension count, whose
+  diagram is the naturality square of $f^*$ and whose count is the kernel of
+  $H^1(\\OO_C(-3P))\\to H^1(\\OO_C)$ against the isomorphism $H^1(\\OO_C(-P))\\cong H^1(\\OO_C)$. This
+  record first called that diagram garbled: it is not, the mangling being the extraction's, and the
+  reading is withdrawn. Also withdrawn: the proof of $e=-1$ for $X$ that this batch first wrote into
+  the card's step `s6` from the book's Theorem V.2.15, which is a theorem about elliptic curves and
+  does not apply to $C$ of genus $3$; the card again carries its own normalization proof there. Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing
   on Ruled Surfaces in Positive Characteristic*, text version
   `tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md`: Example 3.1, printed
   pp. 5--6, is the curve of (c), the section with $\\OO_X(E)\\cong\\OO_X(1)$ and $E^2=\\deg\\mathcal E$,
@@ -3589,26 +3626,33 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.2.17,
   printed pp. 106--107, computes the Jacobian presentation and gets $R(-7)\\oplus R(-7)$ when
   $\\operatorname{char}k\\ne2,3$ and $R(-8)\\oplus R(-6)$ when $\\operatorname{char}k=2,3$; with
-  Eisenbud--Van de Ven at $n=4$, which gives $\\OO(7)\\oplus\\OO(7)$, that is a complete published
-  argument in characteristic $2$, in characteristic $0$, and in every characteristic other than $2$
-  and $3$. **Still without a published proof: part (b) in characteristic $3$.** Yang's entry puts
-  characteristic $3$ in the split case, and the book's printed answer, printed p. 386, has the split
-  case at $\\operatorname{char}k=2$ alone; the card's own step, the extension class $(n-1)\\eta$ of the
-  conormal sequence, is what decides it, and the card marks that step as its own. This record also
-  corrects, without editing the event that states it, the second elementary operation written into
-  step `s5` earlier on 2026-11-16: adding $-2t^{-1}$ times the first column to the second leaves
-  $-2t^{-6}$ and does not reduce the matrix, while adding $-2t^{-1}$ times the second column to the
-  first, over $k[t^{-1}]$, leaves $t^{-5}$ times the identity. The reduction is the one Shifrin's
-  answer calls the row- and column-operation game.
+  Eisenbud--Van de Ven at $n=4$, which gives $\\OO(7)\\oplus\\OO(7)$, that is a published argument in
+  characteristic $0$ and in every characteristic other than $2$ and $3$. **Still without a published
+  proof: part (b) in characteristics $2$ and $3$.** Yang's entry puts characteristic $3$ in the split
+  case, and the book's printed answer, printed p. 386, has the split case at
+  $\\operatorname{char}k=2$ alone; and his characteristic-$2$ line, which this record first counted as
+  sound, is not, since the presentation he uses is not the conormal's there: his own matrix for the
+  twisted cubic becomes $(t^2,u^2,0)$ in characteristic $2$, with kernel $R(-6)\\oplus R(-4)$ where the
+  printed answer for part (a) is $\\OO(-5)^{\\oplus2}$. The card's own step, the extension class
+  $(n-1)\\eta$ of the conormal sequence, decides both, and the card marks that step as its own. This
+  record also corrects, without editing the event that states it, two readings of the transition
+  matrix in step `s5`. First, the second elementary operation written there earlier on 2026-11-16:
+  adding $-2t^{-1}$ times the first column to the second leaves $-2t^{-6}$ and does not reduce the
+  matrix, while adding $-2t^{-1}$ times the second column to the first, over $k[t^{-1}]$, leaves
+  $t^{-5}$ times the identity. Second, the attribution: the frames and the transition matrix are
+  Shifrin's, but that reduction is the card's own, his answer leaving it as the row- and
+  column-operation game and printing the diagonal $(-3t^{-5},-\\frac13t^{-5})$, a form whose
+  constants need $3$ invertible.
 
 **Uncertainty.** Searched in this batch: the four briefs' named sources, read in their text versions
 and against their PDFs; the book's V.2 for the four statements, its Theorem V.2.12, Theorem V.2.15,
 Proposition 2.21(b) and Remark 2.21.1; and, for the two open parts, nothing further. Conclusion: the
-two parts named above have no published proof in the files read, and the printed "nonsingular" of
+parts named above have no published proof in the files read, and the printed "nonsingular" of
 V.2.15(c) cannot have one. Confidence: high for those files. Gaps: no search of the literature beyond
 them, in particular none for a published computation of the conormal sheaf of the rational quartic in
-characteristic $3$, and none for a published statement that no nonsingular curve of class
-$3C_0-3f$ exists on the Atiyah surface; and the number of singular points of $Y$ was not verified
+characteristic $2$ or $3$, and none for a published statement that no nonsingular curve of class
+$3C_0-3f$ exists on the surface $X$ over the curve $C$ of genus $3$; and the number of singular
+points of $Y$ was not verified
 independently of $\\delta=p_a-g=1$.
 
 **Repair.** Per card, the commits of this date touching it, with the audit events that record what
@@ -3619,13 +3663,15 @@ for the parts named above, and each card's remark states what its sources do and
 
 ## 2026-11-16: the Chapter V cubic-surface record's commits, and what the shared index carried
 
-The record of this date headed "`SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch" was
-committed by another chat's commit `67cf232856`, which also carried that chat's IV.6.9 card and whose
-message does not name this record. It was written before any of the four card commits of this batch
-and says of them, in its last paragraph, that four commits of this date touch the four cards; they
-are `10189ea4af` on `P-AGH5410NUMINEQ`, `1d0129567a` on `P-AGH5411WEYLGROUPS`, `eaa960ebff` on
-`P-AGH547GENUSBOUND` and `7b55f0a571` on `P-AGH548IRREDCLASSES`, and nothing in this record supersedes
-the other.
+The record of this date headed "`SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch" reached
+main inside `fec3a4ad2e`, another chat's commit on its V.4.3 card, whose message does not name this
+record. It was written before any of the four card commits of this batch and says of them, in its
+last paragraph, that four commits of this date touch the four cards; they are `10189ea4af` on
+`P-AGH5410NUMINEQ`, `1d0129567a` on `P-AGH5411WEYLGROUPS`, `eaa960ebff` on `P-AGH547GENUSBOUND` and
+`7b55f0a571` on `P-AGH548IRREDCLASSES`, and nothing in this record supersedes the other. The second
+pass of this date, on a reader's report, is in the four commits `461b5341d2` on `P-AGH5410NUMINEQ`,
+`65de959ff7` on `P-AGH5411WEYLGROUPS`, `61b0374b86` on `P-AGH547GENUSBOUND` and `c28efb047f` on
+`P-AGH548IRREDCLASSES`, and the corrections it made are stated in the batch record itself.
 
 Two facts about those commits are recorded here rather than left to the report. First, `1d0129567a`
 carries, beside its card, another chat's staged edit to `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22):
