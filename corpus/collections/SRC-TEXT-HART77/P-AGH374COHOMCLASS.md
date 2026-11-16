@@ -299,6 +299,23 @@ audit:
     neither of which mentions a trace, and the card's step s6. Not checked: no
     source was searched in this pass, and nothing new is proved here about the
     point comparison, (R) or (B).
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, third pass: the solution's paragraph on the
+    composite functoriality of gamma carried a search record. It named the tag
+    file tmp/sources/stacks-tags/0G82.md, listed what Section 50.23 holds, and
+    said that the fourth pass's audit recorded the composite case as unread. A
+    rendered solution carries the mathematics, not which file was read
+    (PROSE-11, QUAL-08). The paragraph now states that the composite
+    gamma^{0,0}_{P/X} = gamma^{n-1,n-1}_{Y/X} o gamma^{0,0}_{P/Y} is an input
+    of this solution, that 0G8C and 0G8D state the class of one Koszul regular
+    closed immersion and its compatibility with a transverse square and that
+    neither states the composite of two immersions. No mathematical claim
+    changes: (R) and (B) remain inputs and no implication between them and the
+    point identity is established. The search record is COMPLAINTS.md's
+    III.7.4(b),(d) entry. Nothing was re-read in this pass.
 ---
 
 ::: {.problem}
@@ -445,12 +462,11 @@ $$
 With that, $t_X\circ\gamma_{Y/X}$ and $t_Y$ agree on the class
 $\gamma^{0,0}_{P/Y}(1)$, which spans the one-dimensional
 $H^{n-1}(Y,\Omega_Y^{n-1})$ because it is nonzero by 0G8E applied to $Y$, hence
-on every $\nu$, and (R) follows from the class identity above. No tag read
-states that functoriality: Section 50.23
-(`tmp/sources/stacks-tags/0G82.md`) has 0G8C, 0G8D and the compatibility with the
-de Rham differentials (0G8B), and nothing on composites, and the fourth pass's
-audit recorded the composite case as not read. The reduction of (R) and (B) to
-the single point identity is therefore not made here, and no implication
+on every $\nu$, and (R) follows from the class identity above. That
+functoriality is an input of this solution: 0G8C states the class of one Koszul
+regular closed immersion and 0G8D its compatibility with a transverse square,
+and neither states the composite of two immersions. The reduction of (R) and
+(B) to the single point identity is therefore not made here, and no implication
 between them is established in either direction: (R) and (B) remain inputs of
 this solution, the point identity is not shown to be sufficient for them, and
 it is not shown to be necessary for them either. Neither (R) nor (B) is a
