@@ -111,6 +111,32 @@ audit:
     classification beyond Yang's enumerations and Egbert's two cases was
     sought. Egbert samples cases rather than listing them: his entry does not
     reach (3;4) or (4;2,2).
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repaired on a reader's third report of this date, which is right on both
+    points. First, the sentence that read Hartshorne's Theorem 6.5, printed
+    p. 422, as making kappa(X) = 2 exactly the case a > 0 here is removed. It
+    was written in this batch, it is not in the card at 83d33296ae, and its
+    "exactly" needs kappa(X) = 2 to fail for a <= 0, which at that point in
+    the card no step and no source establishes. What the step proves is the
+    first request alone: for a > 0 the canonical divisor is a positive
+    multiple of the ample class H, hence ample, hence big, hence X is of
+    general type.
+
+    Second, that proof, and the identification of the three a < 0 cases as del
+    Pezzo surfaces of degrees 8, 3 and 4 with K_X^2 = a^2H^2, are the card's
+    own and now say so in the steps. They were on the card before this batch.
+    Yang's printed route to the first request is not this one: at printed
+    p. 115 he excludes kappa = 1 and concludes that the remaining tuples are of
+    general type, where the card takes ampleness of K_X directly. Read for
+    this: Yang, solution 5.6.1, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf in
+    tmp/sources/lfwin-hartshorne-solutions.md, and Egbert, V.6.1, printed
+    p. 303 of tmp/sources/hartshorne-solutions-egbert.md, whose two placements
+    the steps transcribe. Not checked: nothing new; the del Pezzo and K3
+    identifications were not re-derived.
 ---
 
 ::: {.problem}
@@ -175,9 +201,7 @@ $$
 is ample. Every ample divisor is big, so $K_X$ is big. Therefore $X$ is
 of general type.
 
-Hartshorne's Theorem 6.5, printed p. 422, identifies surfaces of general
-type as those $X$ with $\kappa(X)=2$, and $\kappa(X)=2$ is exactly the case
-$a>0$ here, since $\omega_X\cong\OO_X(aH)$ with $H$ ample.
+This step is the card's own.
 :::
 
 :::
@@ -298,7 +322,9 @@ $$
 
 Thus these are the del Pezzo surfaces of degrees $8$, $3$ and $4$; over the
 algebraically closed ground field the smooth quadric is
-$\PP^1\times\PP^1$.
+$\PP^1\times\PP^1$. That each of the three is a del Pezzo surface of the
+stated degree is this card's own computation, from $-K_X$ a positive
+multiple of the ample class $H$ and $K_X^2=a^2H^2$.
 
 Since $a<0$, the divisor $12K_X\sim12aH$ is a negative multiple of the ample
 class $H$, so
