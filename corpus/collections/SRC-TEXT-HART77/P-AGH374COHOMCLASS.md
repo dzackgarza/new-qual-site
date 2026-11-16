@@ -358,7 +358,9 @@ audit:
     which additionally records that the point trace is a normalization
     (t_P(1) can be any element of k^*) and that the exercise needs
     t_P(1) = 1. (c) is published by Yang and Kim as the computation
-    dlog(fg) = dlog f + dlog g with the citation of Exercise III.4.5.
+    dlog(fg) = dlog f + dlog g; Kim alone cites Exercise III.4.5 there,
+    which the earlier wording of this event got wrong, Yang's entry
+    carrying no citation.
     Parts (b) and (d) remain without a published proof: Yang's (b) moves
     the count back to P^n by citing his own 3.7.3, a different
     identification, and his (d) is a computation in homogeneous
@@ -370,6 +372,26 @@ audit:
     card's, and the COMPLAINTS record of 2026-11-16 names (b) and (d).
     Not checked: no source outside those named was searched in this pass,
     and steps s2, s3, s5 and s6 were not re-derived.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report. (i) The remark of the earlier pass said
+    that Yang and Kim "both cite Exercise III.4.5" for (c); only Kim does,
+    Yang giving the computation with no citation. The remark now says so,
+    and the event of even date above is corrected on the same point. (ii)
+    The remark called the projection formula "step s3"; the base-change
+    identity is step s2, and s3 is the count in P^n. (iii) The remark
+    repeated Yang's "linear subspace of dimension n - p" without a flag;
+    the dimension that cuts Y down to points is p, as s3's L = PP^p has,
+    and the remark now says so and quotes his words as his. (iv) The head
+    of the solution and the closing sentence of the remark no longer say
+    which steps were transcribed or refer to a COMPLAINTS record. Checked
+    against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    (printed p. N is PDF p. N+15): III.7.4 on printed pp. 249--250, whose
+    (c) cites Exercise III.4.5. Not checked: no source was re-read beyond
+    the passages quoted, and no step was re-derived.
 
 ---
 
@@ -587,10 +609,9 @@ published proof in any source read for this card: Yang's (b) moves the count
 back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
 his (d) computes in homogeneous coordinates with Euler's formula, so it treats
 $X=\PP^n$ only; Kim writes no (b) beyond a fragment and no (d).  Steps
-[](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are
-the card's own derivation, relative to the inputs (R) and (B), and the
-2026-11-16 COMPLAINTS record names (b) and (d) as the parts with no published
-proof.
+[](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}
+prove (b) and (d) relative to the inputs (R) and (B), and no source cited here
+proves them.
 
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
 $$
@@ -1006,7 +1027,7 @@ The other side, part (d), is canonical: Appendix A defines the Chern classes in 
 :::
 
 ::: {.remark title="Published solution"}
-Parts (a) and (c) are published with complete arguments, and both are transcribed at the steps that prove them.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$ and cite Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$.
+Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Parts (b) and (d) are not published in any source read.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace of dimension $n-p$, compute the factor there, and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification; the transfer that assertion needs is the projection formula, which is step [](#s3){.pf-ref} here.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are therefore the card's own derivation, carried out relative to the inputs (R) and (B) and marked as such where they use them, and the COMPLAINTS record of 2026-11-16 names (b) and (d) as the parts with no published proof.
+Parts (b) and (d) are not published in any source read.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed: (b) and (d) have no published proof in the sources cited on this card.
 :::
