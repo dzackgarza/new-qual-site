@@ -92,6 +92,20 @@ audit:
     citation of Wall recorded on the card. Not checked: Wall's Singular Points
     of Plane Curves, which is not held and is cited as printed; and the National
     Taiwan University Chapter V homework, which has no entry for this exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fifth pass: the second occurrence of
+    "inequivalence" in the published-solution remark. The 2026-11-16 event
+    above records the correction of that word to non-isomorphism in the last
+    remark; the same remark carried it a second time, "the inequivalence that
+    he asserts is step not-analytically-isomorphic", where what the source
+    asserts is non-isomorphism after equivalence, Egbert's two curves being
+    equisingular and not analytically isomorphic. The remark now reads "the
+    failure of analytic isomorphism that he asserts". No step, page or proof
+    changes, and nothing was re-read in this pass.
+
 ---
 
 ::: {.problem}
