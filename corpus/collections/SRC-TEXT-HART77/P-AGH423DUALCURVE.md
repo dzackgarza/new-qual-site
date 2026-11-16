@@ -49,7 +49,7 @@ audit:
     their text versions: B. Reiser, Hartshorne Solutions (15 February 2022),
     Exercise IV.2.3, printed pp. 354--358, which is PDF pp. 355--359 of
     tmp/sources/reiser-hartshorne-solutions-pp351-358.md, the printed folio
-    being one less than the PDF page -- part (a) at p. 355, (b) at p. 356,
+    being one less than the PDF page -- part (a) at p. 355, (b) at pp. 356--357,
     (c)--(f) at p. 357, (g)--(h) at p. 358 -- and O. Bergvall, Arithmetic and
     topology of classical structures associated to plane quartics,
     arXiv:2106.13072v1, section 2.2, printed pp. 3--4, where the definition of
@@ -70,31 +70,31 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    The solution is now transcribed from those two treatments, one step per
-    published argument, each step naming the part and printed page it comes
-    from: s1 (Reiser (b), p. 356, the parametrized form of the tangent lines),
-    s2 (Reiser (a), p. 355, the two cases of the local equation), s3 (Reiser
-    (a), p. 356), s4 (Reiser (b), p. 356, the formal parametrization of the
-    branches of X*), s5 and s6 (Reiser (c), p. 357), s7 (Reiser (d), p. 357),
-    s8, s9, s10 (Reiser (e), p. 357), s11's first paragraph (Reiser (f), p.
-    357), s12 (Reiser (f), p. 357), s13 (Reiser (g), p. 358, the group-law
-    argument, replacing the divisor computation this card carried), s14
-    (Reiser (h), p. 358, and Bergvall section 2.2 with Theorem 2.2, printed
-    pp. 3--4, for the hyperflex convention and the count). Steps s2, s4, s7,
-    s13 and s14 were rewritten to the source's route; the rest keep their
-    arguments and now name the page where the source gives them. Marked as the
-    card's own: the second paragraph of s11 (the hyperflex point of X* is
-    unibranch of multiplicity 3 with delta = 3) and the last paragraph of s14
-    (b = 28 - h), neither of which either source proves; and the sentences that
-    identify Reiser's I and B with ordinary flexes and strict bitangents in s12.
-    Checked against the book after the transcription: that (a)'s two ramified
-    classes are exactly P in L and the inflection points, that (b)'s conclusion
-    is about ordinary r-fold points in the sense of I Ex 5.3, that (c)'s count is
-    d(d-1) tangents through O and the class is d(d-1), that (d)'s count is
-    (d+1)(d-2) at a point of X, that (e)'s weighted count is 3d(d-2) and the
-    ordinary inflection is an ordinary cusp, that (f)'s formula is
-    d(d-2)(d-3)(d+3)/2, and that (g)'s nine and (h)'s 28 are the d = 3 and d = 4
-    cases.
+    Corrected in this same session after a reader's report, which found the
+    first version of this event claiming every step but two as a transcription
+    when eight of them carry this card's older proofs, and three errors of
+    transcription. What the card now has. Transcribed from Reiser: s2 (part
+    (a), printed p. 355, the two cases of the local equation, with the
+    intersection point and the index corrected and his slip named), s4 (part
+    (b), printed pp. 356--357, the branches of X* at a multiple tangent), s7
+    (part (d), p. 357), s11's first paragraph (part (f), p. 357), s13's first
+    sentence (part (g), p. 358) and s14's first paragraph (part (h), p. 358;
+    with Bergvall, section 2.2 and Theorem 2.2, printed pp. 3--4, for the
+    hyperflex convention and the count). Marked as the card's own: s1, s3, s5,
+    s6, s8, s9, s10 and s12, which keep this card's proofs of the same steps,
+    each now saying so and naming the page where Reiser states the same thing;
+    the second paragraph of s11, the local form of X* at a hyperflex; the
+    Bezout sentence in s13; and the last paragraph of s14. Two errors of the
+    sources are named on the card rather than copied: Reiser's printed
+    intersection of the tangent with the line at infinity,
+    [df/dx : df/dy : 0], which is [df/dy : -df/dx : 0] and at P is [0:1:0],
+    the coordinate there being x/y; and, in the source-checked event above, the
+    printed tacnode of part (h). Checked against the book after the correction:
+    (a)'s two ramified classes, (b)'s ordinary r-fold point in the sense of I Ex
+    5.3, (c)'s count d(d-1) and the class, (d)'s (d+1)(d-2), (e)'s weighted
+    3d(d-2) and the ordinary cusp, (f)'s formula, (g)'s nine and (h)'s 28. Not
+    checked: Reiser's citations of the book (I Ex 7.2, I Ex 7.3, IV Ex 1.8, II
+    Ex 6.6) beyond their statements, and Egbert.
 review: draft
 ---
 
@@ -152,8 +152,6 @@ $$
 $$
 denote the Gauss map $P\mapsto T_P(X)$.
 
-Every step below names the published place it transcribes, except the two that are marked as the card's own. The solution transcribed is B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, text version `tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, whose printed folio is one less than its PDF page: part (a) at p. 355, (b) at p. 356, (c)--(f) at p. 357 and (g)--(h) at p. 358. The convention of part (h) and its count are O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2 with Theorem 2.2, printed pp. 3--4, text version `tmp/sources/bergvall-2021-plane-quartics-arithmetic-topology.md`. The card's own steps are the second half of step [](#s11){.pf-ref}, the local form of the dual curve at a hyperflex, and the last paragraph of step [](#s14){.pf-ref}, which counts strict bitangents when hyperflexes occur.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -170,6 +168,8 @@ h(t)=a_rt^r+O(t^{r+1}),\quad a_r\ne0.
 $$
 
 ::: pf-proof
+
+This step is the card's own.
 Choose affine coordinates with
 $$
 P=(0,0),
@@ -232,30 +232,42 @@ k[t]_{(t)}\longrightarrow k[x,y]_{(x,y)}/(f),
 \qquad
 t\longmapsto\frac{\frac{\partial f}{\partial x}(x,y)\,x+\frac{\partial f}{\partial y}(x,y)\,y}{\frac{\partial f}{\partial x}(x,y)}.
 $$
-Here $\frac{\partial f}{\partial x}=1+\cdots$ is a unit. The valuation of $x$ in
-$\mco_{X,P}$ is the intersection multiplicity $I_P(X,V(x))\ge2$, the line $V(x)$
-being the tangent, and the valuation of $y$ is $I_P(X,V(y))=1$, the line $V(y)=L$
-not being tangent; so the image of $t$ has valuation at least $2$, and $\varphi$
-is ramified at $P$.
+Here $\frac{\partial f}{\partial x}=1+\cdots$ is a unit, and
+$\frac{\partial f}{\partial y}(P)=0$ because the tangent at $P$ is $V(x)$, so
+$\frac{\partial f}{\partial y}$ lies in the maximal ideal at $P$. The valuation
+of $x$ in $\mco_{X,P}$ is the intersection multiplicity $I_P(X,V(x))\ge2$, the
+line $V(x)$ being the tangent, and the valuation of $y$ is
+$I_P(X,V(y))=1$, the line $V(y)=L$ not being tangent; so both terms of the
+numerator have valuation at least $2$, the image of $t$ has valuation at least
+$2$, and $\varphi$ is ramified at $P$.
 
-Suppose now that $P\notin L$. Then $L=V(z)$ is the line at infinity, and the
-tangent line at $Q$ meets it in
+Suppose now that $P\notin L$. Then $L=V(z)$ is the line at infinity.
+Homogenizing the tangent line at $Q$,
 $$
-\Bigl[\frac{\partial f}{\partial x}(Q):\frac{\partial f}{\partial y}(Q):0\Bigr].
+\frac{\partial f}{\partial x}(Q)\,x+\frac{\partial f}{\partial y}(Q)\,y
+-\Bigl(\frac{\partial f}{\partial x}(Q)Q_x+\frac{\partial f}{\partial y}(Q)Q_y\Bigr)z=0,
 $$
-With $t$ a local coordinate on $L$ at $[1:0:0]$, the map on local rings is
+shows that it meets $L=V(z)$ in
 $$
-k[t]_{(t)}\longrightarrow k[x,y]_{(x,y)}/(f),
-\qquad
-t\longmapsto\frac{\frac{\partial f}{\partial y}(x,y)}{\frac{\partial f}{\partial x}(x,y)}.
+\Bigl[\frac{\partial f}{\partial y}(Q):-\frac{\partial f}{\partial x}(Q):0\Bigr],
+$$
+which at $Q=P$ is $[0:1:0]$. Reiser prints this intersection as
+$[\partial f/\partial x:\partial f/\partial y:0]$ and places the coordinate at
+$[1:0:0]$; the point is $[0:1:0]$, and the coordinate there is
+$$
+t=\frac xy=-\frac{\partial f/\partial y}{\partial f/\partial x}
+\qquad\text{on }X.
 $$
 Write $f=x+ax^2+bxy+cy^2+\cdots$. The denominator is the unit
-$1+2ax+by+\cdots$ and the numerator is $bx+2cy+\cdots$, which has valuation at
-least $2$ exactly when $c=0$, because $\operatorname{ord}(x)\ge2$ and
-$\operatorname{ord}(y)=1$. And $c=0$ is exactly the statement that $V(x)$ meets
-$X$ at $P$ with multiplicity at least $3$, that is, that $P$ is an inflection
-point: the length of $\mco_{\AA^2,P}/(x,f)$ is the least $e$ with $y^e$ appearing
-in $f$.
+$1+2ax+by+\cdots$. Along $x=0$ the polynomial $f$ has order $r$, so
+$\frac{\partial f}{\partial y}$ has order $r-1$ there; and every term of
+$\frac{\partial f}{\partial y}$ that carries a factor $x$ has valuation at least
+$r>r-1$, since $I_P(X,V(x))=r\ge2$. Hence
+$$
+e_P(\varphi)=\operatorname{ord}_P(t)=v_P\Bigl(\frac{\partial f}{\partial y}\Bigr)=r-1 .
+$$
+Hence $\varphi$ is ramified at $P$ exactly when $r\ge3$, that is, exactly when
+$P$ is an inflection point.
 
 So $\varphi$ is ramified at $P$ if and only if $P\in L$ or $P$ is an inflection
 point. In the notation of step [](#s1){.pf-ref} the index is $r-1$ in the second
@@ -270,6 +282,8 @@ book asks only for ramification.
 The curve $X$ has only finitely many inflection points.
 
 ::: pf-proof
+
+This step is the card's own.
 The map $\varphi$ is nonconstant.  Indeed, if it were constant with value
 $Q\in L$, every tangent line to $X$ would pass through $Q$.  Projection from
 $Q$ gives a nonconstant map from $X$ to $\PP^1$: it has degree $d$ if
@@ -295,8 +309,8 @@ $P_1,\ldots,P_s$, then the corresponding point $[M]\in X^*$ is an ordinary
 $s$-fold point.  Consequently $X$ has only finitely many multiple tangents.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(b), printed p. 356. An equation for the dual curve is
-hard to get at, so the branches are computed from a formal parametrization of
+Reiser, Exercise IV.2.3(b), printed pp. 356--357. An equation for the dual curve
+is hard to get at, so the branches are computed from a formal parametrization of
 $X$. Put coordinates so that $M=V(x)$ and one contact point is $[0:0:1]$, with no
 contact point an inflection point. Locally at $[0:0:1]$ the curve is cut out by
 $x-uy^2$ with $u$ a unit, and $y$ generates $\mco_{X,[0:0:1]}$, so $X$ is
@@ -318,10 +332,7 @@ For finiteness, by step [](#s3){.pf-ref} only finitely many tangents are
 inflectional; every other multiple tangent gives, by the paragraph above, a point
 of $X^*$ with at least two branches, hence a singular point of the projective
 curve $X^*$, and a projective curve has only finitely many singular points. Reiser
-concludes at the same place "that $X$ has only finitely many multiple tangents",
-and records in his list of exercises with issues, printed p. 5, that this part
-(b) is "somewhat difficult" precisely because an equation for the dual curve is
-hard to obtain.
+concludes at the same place "that $X$ has only finitely many multiple tangents".
 
 :::
 
@@ -337,6 +348,8 @@ whose ramification points are exactly the points $P$ for which $OP=T_P(X)$,
 and each has ramification index $2$.
 
 ::: pf-proof
+
+This step is the card's own.
 A fibre of the projection is the intersection of $X$ with a line through
 $O$.  At a point $P$, choose a local coordinate on the pencil of lines through
 $O$ whose value at $P$ corresponds to the line $OP$.  The difference from
@@ -366,6 +379,8 @@ $$
 $$
 
 ::: pf-proof
+
+This step is the card's own.
 By [[P-AGH72ARITHGENUS|Exercise I.7.2]],
 $$
 g(X)=\frac{(d-1)(d-2)}2,
@@ -452,6 +467,8 @@ d(d-1).
 $$
 
 ::: pf-proof
+
+This step is the card's own.
 Choose a general point $Q\in L$.  We may arrange that $Q\notin X$ and that
 $Q$ lies on no inflectional or multiple tangent.  By step [](#s6){.pf-ref} there are
 exactly $d(d-1)$ tangent lines to $X$ through $Q$.
@@ -484,6 +501,8 @@ $$
 $$
 
 ::: pf-proof
+
+This step is the card's own.
 Choose the line $L$ in part (a) generally enough that it contains no
 inflection point.  Since it is not tangent to $X$, it meets $X$ transversely
 in exactly $d$ points.  At each $P\in X\cap L$, step [](#s2){.pf-ref} gives
@@ -528,6 +547,8 @@ An ordinary inflection point of $X$ maps to an ordinary cusp of
 $X^*$.
 
 ::: pf-proof
+
+This step is the card's own.
 At an ordinary inflection point, step [](#s1){.pf-ref} has
 $$
 h(t)=a_3t^3+O(t^4),
@@ -613,6 +634,8 @@ b=\frac12d(d-2)(d-3)(d+3).
 $$
 
 ::: pf-proof
+
+This step is the card's own.
 Under the stated hypothesis every inflection point is ordinary.  Indeed, if
 its tangent contact had order $r\geq4$, step [](#s1){.pf-ref} would give a dual branch of
 multiplicity $r-1\geq3$, which is neither a node nor an ordinary cusp.
@@ -685,9 +708,9 @@ weight
 $$
 3\cdot3\cdot(3-2)=9,
 $$
-and a tangent line to a nonsingular cubic has contact at most $3$ by Bézout, so
-every weight $r-2$ is exactly $1$: there are exactly nine inflection points, all
-ordinary.
+and, since a tangent line to a nonsingular cubic has contact at most $3$ by
+Bézout --- a sentence of the card's own, not Reiser's --- every weight $r-2$ is
+exactly $1$: there are exactly nine inflection points, all ordinary.
 
 For the second sentence, fix one inflection point as the zero of the group law on
 the cubic. In (II, Ex. 6.6) a point has order $3$ in that group law exactly when
@@ -751,7 +774,7 @@ the count in part (h), and step [](#s11){.pf-ref} proves its parenthetical.
 :::
 
 ::: {.remark title="Published solution"}
-B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, text version `tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, solves every part: (a) at printed p. 355, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at p. 356, by a formal parametrization of $X$ and its dual, the part he records at p. 5 as the difficult one; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
+B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, text version `tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, solves every part: (a) at printed p. 355, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
 
 O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, printed pp. 3--4, text version `tmp/sources/bergvall-2021-plane-quartics-arithmetic-topology.md`, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
 
