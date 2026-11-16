@@ -87,6 +87,25 @@ audit:
     tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Proposition (11.6.4) with
     its proof on printed p. 289 and Theorem (11.6.3) on printed p. 288, and against Hatcher (2002),
     §3.A Exercise 1 on printed p. 267.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Two citation defects. (1) The remark below the solution read "the definition of finite $R$-type,
+    Proposition (12.4.1) on printed p. 309", which can be read as putting the definition on p. 309. It
+    is on p. 310: the definition of finite $R$-type with the homological Euler characteristic
+    $\chi(X,A;R)$ opens the paragraph after (12.4.3), on the page whose folio is 310, which is PDF
+    page 323 of `tmp/sources/tomdieck-algebraic-topology-ranicki.pdf`, while (12.4.1), the
+    alternating sum along a chain complex, is on the page whose folio is 309 (PDF page 322), together
+    with the definition of an additive invariant that it uses. The remark now lists the two pages
+    separately and in that order. (11.6.3) and (11.6.4) were checked the same way this pass, on the
+    folios 288 and 289 (PDF pages 301 and 302) the card already gave them. (2) No citation named its
+    text version. tom Dieck is cited from the text of the Ranicki translation,
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and Hatcher from
+    `tmp/sources/hatcher-2002-algebraic-topology.md`; the sentence naming each now says so, and the
+    remark's page list was rewritten to name them. Nothing in the statement or the proof changes. Not
+    claimed: a text version for any other source, this card citing none; and nothing was read from a
+    rendered page.
 ---
 
 ::: {.problem}
@@ -94,7 +113,7 @@ Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely 
 :::
 
 ::: {.solution}
-Hatcher's hypothesis is the source's. tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), calls a pair $(X,A)$ of finite $R$-type, for $R$ a principal ideal domain, if the $R$-modules $H_i(X,A;R)$ are finitely generated and only finitely many of them are nonzero, and puts $\chi(X,A;R)=\sum_i(-1)^i\operatorname{rank}_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis that $\chi(X)$ is defined. The source's proof, Proposition (12.4.4) on printed p. 310, does not use the universal coefficient theorem: it replaces $S_*(X)$ by a finite free chain complex and compares ranks along the alternating sum. It proves the statement for every principal ideal domain $R$, and the exercise's coefficient field $F$ is that case.
+Hatcher's hypothesis is the source's. tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008) (read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`), calls a pair $(X,A)$ of finite $R$-type, for $R$ a principal ideal domain, if the $R$-modules $H_i(X,A;R)$ are finitely generated and only finitely many of them are nonzero, and puts $\chi(X,A;R)=\sum_i(-1)^i\operatorname{rank}_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis that $\chi(X)$ is defined. The source's proof, Proposition (12.4.4) on printed p. 310, does not use the universal coefficient theorem: it replaces $S_*(X)$ by a finite free chain complex and compares ranks along the alternating sum. It proves the statement for every principal ideal domain $R$, and the exercise's coefficient field $F$ is that case.
 
 *The finite free model.* (Proposition (11.6.4), printed p. 289.) Let $R$ be a principal ideal domain and $C=(C_n)$ a chain complex of free $R$-modules with finitely generated homology. For each $n$ choose a finitely generated submodule $F_n$ of $Z_n(C)$ which the quotient map $Z_n(C)\to H_n(C)$ carries onto $H_n(C)$, and take $F_n=0$ where $H_n(C)=0$; let $G_n$ be the kernel of $F_n\to H_n(C)$. Put
 $$
@@ -120,9 +139,9 @@ Taking $R=F$ a field, where $\operatorname{rank}_F=\dim_F$, gives $\chi(X)=\sum_
 
 *The route the exercise itself names.* Hatcher's exercise says to use the universal coefficient theorem, and that route reaches the same conclusion from printed inputs. Theorem 3A.3 (p. 264) gives the exact sequence $0\to H_n(X;\ZZ)\otimes F\to H_n(X;F)\to\operatorname{Tor}(H_{n-1}(X;\ZZ),F)\to0$, so $\dim_FH_n(X;F)$ is the sum of the two outer dimensions; with $H_n(X;\ZZ)\cong\ZZ^{r_n}\oplus T_n$ and $t_n$ the number of $p$-power cyclic summands of $T_n$, Proposition 3A.5 (pp. 265--266) gives $\dim_FH_n(X;F)=r_n$ for $\operatorname{char}F=0$ and $r_n+t_n+t_{n-1}$ for $\operatorname{char}F=p$. In both cases the torsion terms cancel in the alternating sum, since $\sum_n(-1)^n(t_n+t_{n-1})=0$, leaving $\sum_n(-1)^nr_n=\chi(X)$.
 
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 1, printed p. 267: "Use the universal coefficient theorem to show that if $H_*(X;\ZZ)$ is finitely generated, so the Euler characteristic $\chi(X)=\sum_n(-1)^n\operatorname{rank}H_n(X;\ZZ)$ is defined, then for any coefficient field $F$ we have $\chi(X)=\sum_n(-1)^n\dim H_n(X;F)$." The source proves the statement for every principal ideal domain and every pair $(X,A)$, not only for a field and a space.
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 1, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Use the universal coefficient theorem to show that if $H_*(X;\ZZ)$ is finitely generated, so the Euler characteristic $\chi(X)=\sum_n(-1)^n\operatorname{rank}H_n(X;\ZZ)$ is defined, then for any coefficient field $F$ we have $\chi(X)=\sum_n(-1)^n\dim H_n(X;F)$." The source proves the statement for every principal ideal domain and every pair $(X,A)$, not only for a field and a space.
 :::
 
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008): Proposition (11.6.4) on printed p. 289, the finite free model; the definition of finite $R$-type, Proposition (12.4.1) on printed p. 309 and Propositions (12.4.3) and (12.4.4) on printed p. 310, the alternating-sum computation. Proposition (12.4.4) is the exercise's statement for every principal ideal domain, proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives. The exercise is Exercise 1 of §3.A, printed p. 267.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: the definition of finite $R$-type and of $\chi(X,A;R)$ on printed p. 310; Proposition (12.4.1), the alternating sum along a chain complex, on printed p. 309; Propositions (12.4.3) and (12.4.4) on printed p. 310, the second being the exercise's statement for every principal ideal domain and proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives; and Proposition (11.6.4) on printed p. 289 for the finite free model, with Theorem (11.6.3) on printed p. 288. The exercise is Exercise 1 of §3.A, printed p. 267.
 :::
