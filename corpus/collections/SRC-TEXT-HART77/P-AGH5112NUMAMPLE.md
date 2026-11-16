@@ -288,7 +288,7 @@ Read $X$ as the ruled surface $\pi=p_1:X\to C$ with normalized bundle
 $\mathcal E=\OO_C\oplus\OO_C$, so that the invariant is $e=0$ and the divisor
 $\mfe$ representing $\det\mathcal E$ is zero. The section
 $$
-X_0=C\times\{t\}=p_2^*\OO_{\PP^1}(1)\sim p_2^*[t]
+X_0=C\times\{t\}=p_2^*[t]\sim p_2^*\OO_{\PP^1}(1)
 $$
 has $X_0^2=0=-e$, and the ruling fibres are
 $$
@@ -296,12 +296,12 @@ f=\{c\}\times\PP^1=p_1^*[c].
 $$
 Since
 $$
-p_1^*L=p_1^*D_L=Lf
+p_1^*L=p_1^*D_L=D_Lf
 $$
 for a divisor $D_L$ of $L$, and $p_2^*\OO_{\PP^1}(1)=\OO_X(X_0)$, the line
 bundle $M$ is
 $$
-\OO_X(X_0+Lf).
+\OO_X(X_0+D_Lf)=\OO_X(X_0+Lf).
 $$
 
 Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces*

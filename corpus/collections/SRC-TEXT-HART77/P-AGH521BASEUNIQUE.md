@@ -173,13 +173,18 @@ curve, that rational map extends to a morphism $\PP^1\to C'$, which is
 constant by step [](#s1){.pf-ref} because $C'\not\cong\PP^1$. Write
 $\widetilde f(x)$ for the constant value.
 
-Fix $u\in\PP^1$ with $C\times\{u\}\subseteq U$. The composite
+Fix $(x_0,u_0)\in U$ and let
 $$
-C\longrightarrow C\times\{u\}\longrightarrow C\times\PP^1
-\xrightarrow{\Phi}C'\times\PP^1\xrightarrow{p'}C'
+g:C\dashrightarrow C',\qquad
+x\longmapsto\pi'\bigl(\Phi(x,u_0)\bigr)
 $$
-is a morphism, and at every point of a dense open set of $C$ it takes the value
-$\widetilde f(x)$, by the constancy just proved. Hence
+be the restriction of $p'\circ\Phi$ to the slice $C\times\{u_0\}$; it is a
+rational map, a morphism on the open set of $x$ with $(x,u_0)\in U$. At a
+point $x$ where both $g$ and $\widetilde f$ are defined, the value $\widetilde
+f(x)$ is the value of the restriction of $p'\circ\Phi$ to $\{x\}\times\PP^1$,
+which contains $(x,u_0)$ and is constant, so $\widetilde f(x)=g(x)$. Hence
+$\widetilde f=g$ as rational maps. A rational map from the nonsingular curve $C$
+to the projective curve $C'$ extends to a morphism, so
 $$
 f=\widetilde f:C\longrightarrow C'
 $$
