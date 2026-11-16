@@ -322,6 +322,26 @@ audit:
     this pass, no step was re-derived, and Bohm's elimination was not
     reproduced.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card. Five places named steps
+    by their typed ids, which the filter prints as numbers, so the names matched
+    nothing the reader sees: "as step s1 shows" in the head of the solution,
+    "(steps s1 and s2)" in the next paragraph, "Steps s1 and s2 carry Kim's
+    argument", "steps s3, s4 and s5 are proved here", and "the erratum and steps
+    s3--s5 above" in the published-solution remark. Each is now a step reference,
+    the form the rest of the card uses; the card's typed labels are unchanged. A
+    sixth passage, at the head of step s3's proof, said that no published source
+    read for this card computes the twist; it now says that the computation is
+    the card's, and keeps what Kim writes there, the word "todo" after the
+    flatness, and what Yang asserts instead. No mathematics changes: s3, s4 and
+    s5 remain the card's own, as the events of even date above record, and the
+    remark's account of Kim, Yang, Kovacs and Bohm stands as written. Not
+    checked: no step was re-derived, no source was re-read, and no machine
+    computation was run in this pass.
+
 ---
 
 ::: {.problem}
@@ -360,7 +380,7 @@ $H^0(\OO_{\PP^4})=k$ restricts injectively, and it gives
 $h^1(\mci_t)=\operatorname{coker}\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_t})\bigr)
 =h^0(\OO_{X_t})-1=0$, since $H^1(\PP^4,\OO)=0$. Here $h^0(\OO_{X_t})=1$ for
 every $t$: for $t\ne0$ because $X_t$ is a connected reduced projective curve,
-and for $t=0$ because the flat limit is reduced as well, as step s1 shows. So
+and for $t=0$ because the flat limit is reduced as well, as step [](#s1){.pf-ref} shows. So
 there is no jump in the
 untwisted ideal sheaf, and none can be produced from it by semicontinuity.
 
@@ -374,10 +394,10 @@ h^1(\PP^4,\mci_t(1))=
 \begin{cases}0,&t\ne0,\\ 1,&t=0.\end{cases}
 $$
 The flat family and the flatness of $\mci$ are as printed, and are proved first
-(steps s1 and s2); the erratum concerns only the two displayed cohomology
+(steps [](#s1){.pf-ref} and [](#s2){.pf-ref}); the erratum concerns only the two displayed cohomology
 statements.
 
-Steps s1 and s2 carry Kim's argument, Exercise 3.12.3, PDF p. 215: he constructs
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} carry Kim's argument, Exercise 3.12.3, PDF p. 215: he constructs
 the family as the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$
 and proves $\mci$ flat over $T$ from
 $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, reading the special fibre off that
@@ -389,7 +409,7 @@ Hilbert polynomial together with Serre vanishing.  Yang Pi-Yeh,
 same family by its parametrization together with six quadrics for the ideal of
 the total family, and those six do not generate it; he also computes the two
 printed functions, and that computation is refuted in the remark.  Neither
-source computes the twisted functions, and steps s3, s4 and s5 are proved here.
+source computes the twisted functions, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} are proved here.
 
 Use homogeneous coordinates
 $$
@@ -571,10 +591,9 @@ $$
 
 ::: pf-proof
 
-No published source read for this card computes this: Kim, PDF p. 215,
-stops after the flatness with the word "todo", and Yang, printed p. 82,
-asserts the untwisted values instead, refuted in the remark.  The
-computation below is the card's.
+The computation below is the card's: Kim, PDF p. 215, stops after the
+flatness with the word "todo", and Yang, printed p. 82, asserts the
+untwisted values instead, refuted in the remark.
 
 Since $\mco_X$ is flat over $T$, restricting the exact sequence of
 step [](#s2){.pf-ref} to the fibre over $t$ remains exact, so
@@ -701,7 +720,7 @@ cohomology jump.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. The printed claim is indeed false, and the erratum and steps s3--s5 above supply the computation the source omits, for $\mci(1)$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. The printed claim is indeed false, and the erratum and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} supply the computation the source omits, for $\mci(1)$.
 
 Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, is a second published treatment, and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of each standard affine chart.
 
