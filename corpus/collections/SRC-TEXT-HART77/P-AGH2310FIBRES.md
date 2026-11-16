@@ -189,6 +189,30 @@ audit:
     re-read, the other steps of this proof were not re-derived, and no machine
     computation was run in this pass.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, two items of the rendered card. (i) Cais's
+    kernel. The event above of even date, whose note begins "Repair on the
+    reader's report, on two letters and one kernel", quotes his line 283 as
+    "Since ker psi = pB" and does not say whose the sentence is; it is left as
+    written, and the slip is named on the card. In Cais's letters B is the total
+    space and p the base prime, so his pB is an ideal of B, whereas psi has
+    B tensor_A A_p as its source; the step uy-homeomorphism-onto-fiber now says
+    that the identity is his slip of notation, states the kernel as
+    m(A tensor_B B_m) and proves the prime-level form his argument uses. The
+    step's earlier ker psi = m A was that imprecision transcribed faithfully, so
+    the kernel is his error and not the card's; the letter collision, his phi
+    naming both the localization map and Shichijo's B -> A, was the card's and
+    stands repaired where it was made. (ii) The head of the solution no longer
+    names the text versions of the five sources: the paths stay in the
+    transcription event of even date, which names them, and a rendered solution
+    carries the mathematics and not the file store (PROSE-11, QUAL-08). Read in
+    this pass: Cais, Exercise 3.10(a), PDF p. 12 of 29, line 283 carrying "Since
+    ker psi = pB", and the primes of his conclusion being those of his B. Not
+    checked: no step was re-derived, and no source was read beyond that passage.
+
 ---
 
 ::: {.problem}
@@ -206,7 +230,7 @@ audit:
 :::
 
 ::: {.solution}
-The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 2.3.10, PDF p. 23; the Cais solutions, text version `tmp/sources/hartshorne-solutions-cais.md`, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), text version `tmp/sources/shitijyou-ch2-section3.md`, Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194, text version `tmp/sources/mse-1709194-geometric-generic-fibre-hart-ii310.md`.
+The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 2.3.10, PDF p. 23; the Cais solutions, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194.
 
 ::: pf
 
@@ -309,7 +333,7 @@ $$
 \Spec A,
 $$
 his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ in the steps above, and his $\psi$.
-The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  Cais writes this kernel as $\ker\psi=pB$, $pB$ being an ideal of the total space while $\psi$ has the localized ring $B\otimes_AA_p$ as its source, so that identity is his slip of notation and is not copied here; the prime-level form he then uses, that a prime $\mfq$ of the total space contains $pB$ exactly when $g^{-1}(\mfq)=\mfp$, is what holds, and the next sentence proves it in the letters of this proof.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
