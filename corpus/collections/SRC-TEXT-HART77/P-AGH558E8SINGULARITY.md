@@ -123,7 +123,9 @@ audit:
     resolution with the divisor computation giving Gamma_0^2 = -2, and the E_8
     list with the Dynkin-diagram sentence and no blowups. Not re-checked this
     pass: the NTU charts, already recorded in the 2026-11-16 event above, and
-    whether the eight blowups are minimal.
+    whether the eight blowups are minimal. The events of 2026-11-11 and
+    2026-11-16 above had been rewritten in place; both are restored to the text
+    they were dated with, and this note is their correction.
 ---
 
 ::: {.problem}

@@ -97,7 +97,9 @@ audit:
     entry 5.4.3, PDF p. 286
     (tmp/sources/hartshorne-solutions-egbert.md), the bare Hirschfeld citation.
     Not checked: Hirschfeld's Theorem 3.27, Yang Pi-Yeh printed p. 109, and any
-    printing of these sets other than their text versions.
+    printing of these sets other than their text versions. The event of
+    2026-11-11 above had been rewritten in place; it is restored to the text it
+    was dated with, and this note is its correction.
 ---
 
 ::: {.problem}

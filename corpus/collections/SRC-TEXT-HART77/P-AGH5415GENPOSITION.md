@@ -98,7 +98,9 @@ audit:
     step and the qed remark say so. Not checked: the card's own 56 and 240
     tables were not re-enumerated, Dolgachev's Proposition 8.2.15 was not
     re-read, and nothing was searched for a published proof of the properness
-    in (c).
+    in (c). The event of 2026-11-16 above had been rewritten in place; it is
+    restored to the text it was dated with, and the pages it gives there, 423
+    and 424, are PDF pages. This note is its correction.
 ---
 
 ::: {.problem}

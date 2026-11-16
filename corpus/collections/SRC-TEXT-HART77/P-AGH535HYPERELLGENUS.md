@@ -48,11 +48,8 @@ audit:
     r = 5, 6, 7 giving delta 4, 8, 12 and genus 2, 2, 3. Checked that the
     hypothesis char k != 2 is needed exactly where the card says: in
     characteristic 2 the equation y^2 = f(x) with f squarefree has
-    k(Y) = k(x)^{1/2}, so the normalization is P^1 and the only degree-two
-    morphisms out of it are purely inseparable, so it is not hyperelliptic;
-    Frobenius is a degree-two morphism and the earlier wording here, that none
-    exists, was withdrawn on 2026-11-16. The singularity at infinity and the
-    multiplicities do not use
+    k(Y) = k(x)^{1/2}, so the normalization is P^1 and no degree-two morphism
+    exists, while the singularity at infinity and the multiplicities do not use
     the hypothesis. Searched outside the twelve retained sets: Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
     Exercise 5 of section 3, PDF p. 11 (tmp/sources/ntu-ag2-chapter5.pdf),
@@ -91,6 +88,35 @@ audit:
     (r-2)(r-3)/2 and omits the residual term (3 against 4 at r = 5); Andrew
     Egbert, Exercise V.3.5, PDF p. 278, who computes the multiplicity and the
     genus by Riemann-Hurwitz but never computes delta_P.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Hartshorne, Algebraic Geometry (1977), IV, Ex. 1.7, printed p. 298
+    (text version tmp/sources/hartshorne-1977-algebraic-geometry.md), where a
+    hyperelliptic curve is one of genus at least 2 with a finite morphism of
+    degree 2 to P^1 and no separability is asked for, and V.3.5, printed
+    p. 394. The paragraph after the statement had claimed that a hyperelliptic
+    curve needs a separable degree-two morphism and that P^1 has none; both
+    claims are false, since z -> z^2 is a separable degree-two map of P^1 away
+    from characteristic 2 and z -> z^2 + z is one in characteristic 2, its
+    derivative being the constant 1. That wording is replaced by the reason
+    that holds: with u = sqrt(x-a_1) the field k(Y) = k(x,y) = k(u) is
+    rational, so the normalization is P^1 of genus 0 for every r, which is what
+    the printed definition excludes. Step delta-invariant-formula had said that
+    the terminal germ x^2 = unit for e = 0 meets no point; in the chart
+    x = wz of NTU Exercise 5 of section 3, PDF p. 11 of
+    tmp/sources/ntu-ag2-chapter5.pdf, read in the extraction
+    tmp/sources/ntu-ag2-chapter5.md, the terminal case e = 0 is
+    x^2 = 1/prod(1-a_i w), which meets the last exceptional curve w = 0 in the
+    two points x = 1 and x = -1, and both terminal cases are now written that
+    way. The audit note of 2026-11-11 above had been rewritten in place; it is
+    restored to the text it was dated with, that text still carrying the
+    withdrawn "no degree-two morphism exists", and this note is its correction.
+    Checked: the exponent chain r-2, r-4, ... >= 2
+    with the terminal value e = r mod 2, and delta_P = binom(r-2,2) +
+    floor((r-2)/2) against NTU PDF p. 11, unchanged. Not checked: whether the
+    printed exercise intends characteristic 2 at all.
 ---
 
 ::: {.problem}
@@ -115,7 +141,7 @@ y^2z^{r-2}
 =0.
 $$
 
-The exercise is printed with no hypothesis on $\operatorname{char}k$, and its last two requests need $\operatorname{char}k\ne2$, which enters twice below: step [](#affine-part-nonsingular){.pf-ref} divides by $2$ to get $y=0$, and step [](#infinitely-near-A-singularity){.pf-ref} takes a square root in $k[[v]]$ of the unit $\prod_i(1-a_iv)$. In characteristic $2$ the equation $y^2=f(x)$ with $f$ squarefree defines a purely inseparable double cover, so $k(Y)=k(x)(\sqrt f)=k(x)^{1/2}$, and the normalization is $\PP^1$ with $g=0$ for every $r$. The morphism $x:\widetilde Y\to\PP^1$ still has degree $2$ there --- it is the Frobenius-type purely inseparable map of degree $2$ --- but a hyperelliptic curve is one that carries a *separable* degree-two morphism to $\PP^1$, and $\PP^1$ over an algebraically closed field has none (Riemann--Hurwitz: a separable degree-two map of $\PP^1$ to $\PP^1$ has two distinct branch points). So the construction then gives no hyperelliptic curve. Those two steps carry the hypothesis; the singular point at infinity and step [](#point-at-infinity-singular){.pf-ref} do not need it.
+The exercise is printed with no hypothesis on $\operatorname{char}k$, and its last two requests need $\operatorname{char}k\ne2$, which enters twice below: step [](#affine-part-nonsingular){.pf-ref} divides by $2$ to get $y=0$, and step [](#infinitely-near-A-singularity){.pf-ref} takes a square root in $k[[v]]$ of the unit $\prod_i(1-a_iv)$. In characteristic $2$ the equation $y^2=f(x)$ with $f$ squarefree defines a purely inseparable double cover. Put $u=\sqrt{x-a_1}$, so that $x=u^2+a_1$. Since $2=0$ in $k$ and $k$ is algebraically closed, $u^2+a_1-a_i=(u+\sqrt{a_1-a_i})^2$ for $i\ge2$, so the right-hand side is the square of $u\prod_{i\ge2}(u+\sqrt{a_1-a_i})$, and $y=u\prod_{i\ge2}(u+\sqrt{a_1-a_i})$ lies in $k(u)$. Since $x-a_1$ is not a square in $k(x)$, both $k(u)$ and $k(Y)=k(x,y)$ have degree $2$ over $k(x)$, so $k(Y)=k(u)$ is a rational function field, and the normalization is $\PP^1$ with $g=0$ for every $r$. The morphism $x:\widetilde Y\to\PP^1$ still has degree $2$ there, being the purely inseparable map $u\mapsto u^2+a_1$, but separability is not what fails. $\PP^1$ carries a separable degree-two morphism in every characteristic, $z\mapsto z^2$ when $\operatorname{char}k\ne2$ and $z\mapsto z^2+z$ when $\operatorname{char}k=2$, whose derivative $2z+1$ is the constant $1$. What fails is the genus: Hartshorne's definition (IV, Ex. 1.7, printed p. 298) asks for $g\geqslant2$ and a finite morphism to $\PP^1$ of degree $2$, and $\widetilde Y$ has genus $0$, so the construction then gives no hyperelliptic curve. Those two steps carry the hypothesis; the singular point at infinity and step [](#point-at-infinity-singular){.pf-ref} do not need it.
 
 ::: pf
 
@@ -305,8 +331,10 @@ the terminal value $e=r\bmod 2$ is not one of them, and the exponents are labels
 for the successive germs, each of which has multiplicity $2$ at the point blown
 up, not multiplicities in their own right. There are $\lfloor m_0/2\rfloor$ of
 them, and passing the last one leaves the germ $x^2=\text{unit}$ for $e=0$,
-which meets no point, or $w=x^2\cdot\text{unit}$ for $e=1$, which is
-nonsingular; so the list is complete. Hence
+namely the two smooth branches $x=\pm1/\sqrt{\prod_i(1-a_iw)}$, which meet the
+last exceptional curve $w=0$ in the two points $(1,0)$ and $(-1,0)$ and nowhere
+else, or $w=x^2\cdot\text{unit}$ for $e=1$, which is nonsingular and meets that
+curve only at the point blown up; so the list is complete. Hence
 $$
 \delta_P=\frac{(r-2)(r-3)}2+\frac{2\cdot1}{2}\left\lfloor\frac{r-2}{2}\right\rfloor,
 $$

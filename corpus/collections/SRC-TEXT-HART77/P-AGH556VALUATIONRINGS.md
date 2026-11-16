@@ -63,7 +63,7 @@ audit:
     the step Exercise II.4.12 leaves open and Egbert's entry does not prove; it
     is this card's step union-contained-in-r. The remark now gives the source's
     argument and says which of this card's steps is which. Checked against
-    Hartshorne V.5.6, printed p. 420, and against the three kinds as printed in
+    Hartshorne V.5.6, printed p. 299, and against the three kinds as printed in
     Exercise II.4.12.
 - event: source-corrected
   by: claude
@@ -73,7 +73,7 @@ audit:
     where it says Yang's entry "proves all three kinds" and where it maps his
     union to step union-contained-in-r. Re-read in
     tmp/sources/lfwin-hartshorne-solutions.md, Solution 5.5.6 is Egbert's
-    V.5.6 entry (printed p. 299, which is Egbert's page and not the book's) plus one sentence, and that sentence is the
+    V.5.6 entry (printed p. 299) plus one sentence, and that sentence is the
     bare assertion R = lim O_{P_i,X_i} = union O_{P_i,X_i} with no argument;
     his entry does not use the hint, Exercise V.5.1, at all. It therefore
     proves kind (3) no more than Egbert does, and the exercise is proved by
@@ -87,6 +87,41 @@ audit:
     DVR at the generic point of the exceptional curve has residue
     transcendence degree 1 over k while its centre on X is a closed point.
     V.5.6 is not closed by a published proof.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Checked on a reader's report of issue #121 that returned this page and
+    named no false statement on it, and the check found none. Hartshorne
+    V.5.6 is printed on p. 420: the marker of its page in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md is PDF page 435, and
+    435-15=420. Read Exercise II.4.12(3) and the Note after it at printed
+    p. 108: the exercise builds R_0, says only that R_0 is a local ring
+    dominated by some valuation ring R of K/k, and the Note defers R_0=R
+    to this exercise. Read Yang Pi-Yeh's Solution 5.5.6 at page 114 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf in the PDF's own text layer
+    and in the extraction tmp/sources/lfwin-hartshorne-solutions.md, and
+    Egbert's V.5.6 entry at page 299 of
+    tmp/sources/hartshorne-solutions-egbert.md: Yang's page is Egbert's
+    argument, with the finite-repeat case that Egbert leaves implicit
+    written out and the one sentence R = lim O_{P_i,X_i} = union
+    O_{P_i,X_i} added, for which no argument is given; and Yang's own
+    preface on page 1 of that PDF, dated June 9, 2019, lists "Andrew
+    Egbert's solution I googled" among the sources he referred to.
+    Searched every other solution set retained in tmp/sources for an entry
+    on V.5.6 and found none, and confirmed that the NTU Chapter V homework
+    has no Section 5 exercise 6 and that Reid's Chapters on Algebraic
+    Surfaces mentions valuation rings only in passing. The remark
+    therefore gains the sentence that no published proof of R contained in
+    R_0 was located, naming what was searched, and no other claim is
+    changed. Not checked: the survey Egbert cites, "Vaqiue Valuations and
+    local uniformization, remark 1.14", was neither located in tmp/sources
+    nor read, and nothing outside the retained sources was searched afresh
+    beyond the search of 2026-11-15 already recorded on this page. The two
+    events of 2026-11-15 above had been rewritten in place; both are restored
+    to the text they were dated with, and both then give printed p. 299, which
+    is Egbert's page and not the book's: the exercise is printed p. 420, and
+    the correction is here.
 ---
 
 ::: {.problem}
@@ -491,4 +526,6 @@ Two things in it are wrong. The union of the local rings is a direct limit, $\bi
 The proof of the exercise is therefore this card's own. Its decisive steps are [](#element-eventually-regular){.pf-ref}, which resolves $[f:1]$ by point blowups and compares centres to place each $f\in R$ in some $A_i$, and [](#r-equals-union-type-three){.pf-ref}, which assembles $R_0\subseteq R$ with $R\subseteq R_0$; step [](#union-contained-in-r){.pf-ref} proves only the inclusion $R_0\subseteq R$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.6, printed p. 299, states the trichotomy, identifies kinds (1) and (2) through the centre and its successive blowups, and for kind (3) says only that one "repeats and gets a type (3)", citing another book for the value-group claim.
+
+No published proof of the inclusion $R\subseteq R_0$ was located. Hartshorne's Exercise II.4.12(3), printed p. 108, builds $R_0$ and says no more than that it "is a local ring, so it is dominated by some valuation ring $R$ of $K/k$", and the Note after it defers $R_0=R$ to this exercise; Egbert and Yang Pi-Yeh assert the union and neither argues it. No other Hartshorne solution set retained in `tmp/sources` has an entry for V.5.6: Borcherds, Cais, Cutrone--Marshburn, Dongryul Kim, Lomont, Park, Saglam--Chris and Troiani have none, and Sam, Stein, Okamoto (Chapter II.9) and Nilaykumar (Chapter I) stop earlier; the NTU *Algebraic Geometry II* Chapter V homework has Section 5 exercises 1--4, 7 and 8 and nothing for exercise 6; and Reid's *Chapters on Algebraic Surfaces*, text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, mentions valuation rings only as the discrete valuation rings of prime divisors. What Egbert cites for the value-group claim is, in his words, "Vaqiue Valuations and local uniformization, remark 1.14", which `tmp/sources` does not hold and which was not read.
 :::

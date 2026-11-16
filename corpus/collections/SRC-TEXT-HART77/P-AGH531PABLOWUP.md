@@ -101,7 +101,9 @@ audit:
     pages. Not checked: no part of the proof of Theorem 1.1 was read, that is
     Sections 2 to 5, a Grothendieck-Serre duality argument; the Compositio
     printing, 151 (2015) 2131-2144, was not consulted, so no page of the
-    printed article is given.
+    printed article is given. The event of 2026-11-16 above had been rewritten
+    in place; it is restored to the text it was dated with, and this note is
+    its correction.
 ---
 
 ::: {.problem}

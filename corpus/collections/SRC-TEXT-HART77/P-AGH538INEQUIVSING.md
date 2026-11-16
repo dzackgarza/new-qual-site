@@ -41,15 +41,54 @@ audit:
     delta = C(4,2)+C(3,2) = 9. Different delta means different configurations of
     infinitely near points with multiplicities, by Example 3.9.3 on printed page
     408. Searched outside the twelve retained sets: NTU 2020, Exercise 8 of
-    section 3, PDF pp. 13-14 (tmp/sources/ntu-ag2-chapter5.pdf; (a) on p. 13
-    and (b) on p. 14), obtains delta = 7
+    section 3, PDF p. 13 (tmp/sources/ntu-ag2-chapter5.pdf), obtains delta = 7
     and 9 and then guesses a different equation for (b). Not checked: whether
     the printed (b) was meant to be the guessed x^4-x^2y^2-x^2y^5+y^8; the card
     states the printed equation and proves it.
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source says "Show that" the two displayed singularities have matching infinitely near multiplicities and delta invariants but are not equivalent; with these equations the first infinitely near multiplicities are 2 and 3 and the delta invariants are 7 and 9, and the solution disproves the matching claim. This note said until 2026-11-16 that the statement had been changed to "Prove or disprove"; it had not been, and must not be, since the printed "Show that" is the problem statement and what the card proves is that the printed assertion is false.
+  note: The source says "Show that" the two displayed singularities have matching infinitely near multiplicities and delta invariants but are not equivalent; with these equations the first infinitely near multiplicities are 2 and 3 and the delta invariants are 7 and 9. No corrected equation is known, so the statement now says "Prove or disprove", and the solution disproves the matching claim.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Second pass on the reader's report of this batch (issue #121). Re-read the
+    printed exercise at V.3.8, printed p. 395, which is PDF p. 410 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where the printed page
+    is the marker minus 15, and re-derived both germs by hand: in the chart
+    x = uv, y = v the strict transforms are v^4 u(u^3-v) and
+    v^4(u^4-u^2v-u^2v^3+v^4), of multiplicity 2 and 3 at the origin, and the
+    second germ needs one more blowup, in the two tangent directions v = uw
+    and u = vz, before both charts are nonsingular. The mathematics of the
+    steps stands and is not changed. Read in their text versions the three
+    sets that reach the exercise: the National Taiwan University set,
+    Exercise 8 of section 3, text version
+    tmp/sources/ntu-ag2-chapter5.md, with (a) on PDF p. 13 and (b) on PDF
+    p. 14 of the PDF beside it, which gets delta = 7 and 9 and then guesses a
+    different equation for (b); Egbert, Exercise V.3.8, PDF p. 284, text
+    version tmp/sources/hartshorne-solutions-egbert.md, who asserts the
+    equality of the configurations and counts 3 charts for (a) against 4 for
+    (b); and Yang Pi-Yeh, Solution 5.3.8, printed pp. 108-109, text version
+    tmp/sources/lfwin-hartshorne-solutions.md, whose own two charts give the
+    sequences 4,2 and 4,3 and who then writes "So on these two curves,
+    delta_(0,0) are the same" with neither delta computed, which is false for
+    the printed equations. The remark now names those text versions, opens
+    with the reason no published solution can exist for a false printed
+    assertion, and records Yang's entry, which the card did not carry; the
+    body gives printed p. 393 where it cites (3.9.4), and Egbert is said to
+    reach non-equivalence rather than the falsity of the printed claim. The
+    note of 2026-11-11 above gives "Example 3.9.3 on printed page 408"; the
+    printed page is 393 and 408 is the PDF page, the marker for which stands
+    just above Example 3.9.3. That note is left as written. The note of
+    2026-10-29 above had also been rewritten in place; it is restored to the
+    text it was dated with, and the sentence that text carries, that the
+    statement had been changed to "Prove or disprove", is false of the card:
+    the printed "Show that" stands, and the card proves the printed assertion
+    false. Not checked:
+    whether the printed (b) was meant to be the guessed
+    x^4-x^2y^2-x^2y^5+y^8; Egbert's Singular session, which was read only;
+    whether Yang's charts resolve the total transform.
 ---
 
 ::: {.problem}
@@ -75,7 +114,7 @@ $$
 \delta_0(C_a)=\binom42+\binom22=7,\qquad
 \delta_0(C_b)=\binom42+\binom32=9.
 $$
-The part of the assertion that does hold is that the two germs are not equivalent, which is step [](#claim-false){.pf-ref}; Egbert's chart count of the two embedded resolutions differs as well, and his transcript reaches the same conclusion.
+The part of the assertion that does hold is that the two germs are not equivalent, which is step [](#claim-false){.pf-ref}; Egbert's chart count of the two embedded resolutions differs as well, and his transcript reaches the same conclusion of non-equivalence, though he asserts the equality of the configurations that the computation refutes.
 
 ::: pf
 
@@ -316,7 +355,7 @@ $$
 $$
 Consequently they do not have the same configuration with the same
 multiplicities, and in particular they are not equivalent in the sense of
-(3.9.4).
+(3.9.4), printed p. 393.
 :::
 
 :::
@@ -330,9 +369,13 @@ invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.8, printed p. 395, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The printed assertion is false: the multiplicity sequences are $4,2$ and
+$4,3$ with $\delta_0=7$ and $9$, as the steps above compute, so no published
+solution of it can exist. The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.8, printed p. 395, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), PDF pp. 13--14, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF; (a) on p. 13, (b) on p. 14), blows up both germs: for (a) the chart $y_1=1$ gives $x_1^4-x_1y_1$, "which is a node, thus $\delta=7$"; for (b) the same chart gives a point of multiplicity $3$ and the next blowup is nonsingular, "thus $\delta=9$". Those two numbers are the ones computed in steps [](#a-delta-seven){.pf-ref} and [](#b-delta-nine){.pf-ref}, and they already refute the printed assertion that the two germs have the same $\delta_P$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up it has a cusp; as a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and computes no $\delta$ for it; the printed (b) is $x^4-x^2y^3-x^2y^5+y^8$.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), PDF pp. 13--14, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF; (a) on p. 13, (b) on p. 14), blows up both germs: for (a) the chart $y_1=1$ gives $x_1^4-x_1y_1$, "which is a node. Thus, $\delta=7$"; for (b) the same chart gives a point of multiplicity $3$ and the next blowup is nonsingular, "Thus, $\delta=9$". Those two numbers are the ones computed in steps [](#a-delta-seven){.pf-ref} and [](#b-delta-nine){.pf-ref}, and they already refute the printed assertion that the two germs have the same $\delta_P$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up, it has a cusp. As a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and asserts, without computing either, that the two $\delta$'s agree for the replaced pair. That is a guess about a curve other than the printed one, and the card does not adopt it: the printed (b) is $x^4-x^2y^3-x^2y^5+y^8$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.8, PDF p. 284: "Clearly these two singularities have the same multiplicity by looking at the lowest term (it's 4). The configuration of infinitely near singular points can be seen as in 3.7 ... To see they are not equivalent, note to compute the multiplicity sequence, we use the list `L=resolve(I,1)` command as in 3.7 which gives 3 charts for (a) yet (4) for (b)." He asserts the equality of configurations without computing the sequences, and his chart count is the only part of the argument. The sequences are computed here: $4,2$ for (a) and $4,3$ for (b), with $\delta_0=7$ and $9$, which is why the printed assertion is corrected at the head of the solution.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (2019), text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.3.8, printed pp. 108--109, its (a) on p. 108 and its (b) on p. 109: in each germ he sets $x=x_1y_1$, $y=y_1$, records the singular point of $x_1^4-x_1y_1$ as of multiplicity $2$ and that of $x_1^4-x_1^2y_1-x_1^2y_1^3+y_1^4$ as of multiplicity $3$, blows up once more, calls the result smooth in (a), where one further blowup is asked for the normal crossings, and nonsingular at the origin in (b), and closes "So on these two curves, $\delta_{(0,0)}$ are the same. But two curves are not equivalent." The sequences his own two charts produce are $4,2$ and $4,3$, so the $\delta$'s are $7$ and $9$; the equality is asserted without either $\delta$ being computed, and it is false.
 :::
