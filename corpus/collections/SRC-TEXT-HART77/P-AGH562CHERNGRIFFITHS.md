@@ -45,40 +45,79 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Read for issue #121, corrected in place on a reader's report of the same
-    day. Read: J. Harris, A bound on the geometric genus of projective
-    varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, in
-    tmp/sources/harris-1981-bound-geometric-genus.md, whose per-page markers
+    Read for issue #121 and cited the published proof of the strict-inequality
+    half on the card: J. Harris, A bound on the geometric genus of projective
+    varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, printed
+    pp. 42--44, read in
+    tmp/sources/harris-1981-bound-geometric-genus.md, whose page markers place
+    §2 in its first twenty pages. Step harris-bound transcribes Harris's
+    displays: M and epsilon at printed p. 42, the curve bound and the Poincaré
+    residue sequence at printed p. 43, the surface bound and the corollary
+    p_g = 0 for d <= k(N-k)+1 at printed p. 44; it replaces the step
+    nonspecial-below-2n of the 2026-09-20 solution, whose conditional
+    derivation of H^1(C,L) = 0 is subsumed. Checked against the exercise and
+    its hint at Hartshorne V.6.2, printed p. 423 (PDF p. 438, printed = PDF
+    minus 15), and against the book pages the other steps now name: Proposition
+    8.20 printed p. 182, Theorem 5.4 printed p. 343, Theorem 1.6 printed
+    p. 362 and Remark 7.15 printed p. 248. Read for the equality case: Yang
+    Pi-Yeh, solution 5.6.2, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf, read in
+    tmp/sources/lfwin-hartshorne-solutions.md, both halves present and two
+    steps unproved, namely H.K >= 0 in his chain 2n+2 <= 2-2g+2d <= d and the
+    passage from p_a = 1 to p_g = 1. The card keeps its own steps for those
+    two, and the gap is recorded in COMPLAINTS.md today. Not checked: Harris's
+    §1 and §§3--5, which the card does not use, and no other published proof
+    of the equality case was sought.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The event above, of the same day, had been rewritten in place by
+    8e0b780484; it is restored here to the text it carried when d2786e384b
+    wrote it, and this event carries the corrections, that one's and this
+    pass's.
+
+    Read for this pass: J. Harris, A bound on the geometric genus of
+    projective varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981),
+    §2, in tmp/sources/harris-1981-bound-geometric-genus.md, whose markers
     cover twenty pages at a time, so the display at printed p. 44 was located
-    from the run of §2 and not from a marker of its own; Yang Pi-Yeh, solution
-    5.6.2, printed p. 115 of tmp/sources/lfwin-hartshorne-solutions.pdf,
-    read in tmp/sources/lfwin-hartshorne-solutions.md; A. Egbert, V.6.2,
-    printed p. 303 of tmp/sources/hartshorne-solutions-egbert.md, read in full
-    in this pass; and Hartshorne V.6.2 with its hint, printed p. 423, with
-    Proposition 8.20, printed p. 182, Theorem 5.4, printed p. 343, Theorem 1.6,
-    printed p. 362 and Remark 7.15, printed p. 248.
+    from the run of §2; Yang Pi-Yeh, solution 5.6.2, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf, read in
+    tmp/sources/lfwin-hartshorne-solutions.md; A. Egbert, V.6.2, printed
+    p. 303 of tmp/sources/hartshorne-solutions-egbert.md, read in full; and
+    Hartshorne V.6.2 with its hint, printed p. 423, with Proposition 8.20,
+    printed p. 182, Theorem 5.4, printed p. 343, Theorem 1.6, printed p. 362
+    and Remark 7.15, printed p. 248.
 
-    Corrected here, because the previous text of this note named the wrong gap.
-    Yang assumes p_g not zero, so K is effective and H.K >= 0 is immediate for
-    him, and Egbert states the same through Theorems 6.1--6.3; neither leaves
-    that step unproved. What both skip is the equality case of Clifford's
-    theorem: from h^0 = n+1 = d/2+1 they pass straight to d = 2g-2 and g = n+1
-    without saying which divisor of degree d attains equality, and without
-    excluding the hyperelliptic alternative. Egbert's entry, printed p. 303, is
-    a full sketch of both halves, not a garbled one: the earlier description of
-    it in COMPLAINTS.md, retained there as its own record, was not this pass's
-    reading and is corrected in COMPLAINTS.md today. The card's equality-case
-    steps, which the previous text of this note called the card's own while the
-    round called the case open, are now marked as the card's own in each step.
+    Corrected: the previous text of this note named the wrong gap. Both
+    entries assume p_g(X) not zero, so K_X is effective and H.K_X >= 0 is
+    immediate for them, and neither leaves that step unproved. What they do
+    leave out is the equality case of Clifford's theorem, and the card now
+    transcribes their argument step by step for everything else: H.K_X = 0 in
+    step canonical-meets-hyperplane-zero from adjunction with 2g-2 = d + H.K_X
+    and d = 2g-2; the triviality of omega_X and p_g = 1 in step
+    trivial-canonical-pg-one from an effective divisor of class K_X meeting
+    the ample class in zero, which is Yang's and Egbert's argument through
+    12K; and q = 0 in step irregularity-zero through Nakai--Moishezon, Kodaira
+    vanishing, Serre duality and Riemann--Roch, which is theirs. Step
+    main-dichotomy says the assembly is theirs. Step
+    clifford-equality-canonical, the equality case of Clifford's theorem with
+    the hyperelliptic alternative excluded by very ampleness, remains the
+    card's own; it was on the card before this batch.
 
-    Also corrected: Hartshorne's Theorem 6.1 is on printed p. 422, not p. 421,
-    and the remark no longer carries text-version paths, the account of what
-    the two entries do not prove, or a verdict on Egbert's entry (QUAL-08,
-    SEC-7).
+    Egbert's entry, printed p. 303, is a full sketch of both halves and not a
+    garbled one; the earlier description of it in COMPLAINTS.md is that
+    record's and is corrected in a new record of this date there. The remark
+    no longer carries text-version paths, an account of what the two entries
+    do not prove, or a list of which steps are the card's own (QUAL-08).
+    Also corrected: Hartshorne's Theorem 6.1 is on printed p. 422, not p. 421.
 
     Not checked: Harris's §1 and §§3--5, which the card does not use, and no
-    published proof of the equality case beyond these two entries was sought.
-
+    published proof of the equality case of Clifford beyond these two entries
+    was sought. Yang's extraction prints the inequality "n+1 <= h^0(O_H(d)) =
+    1-g+d", which cannot hold at d = 2n and g = n+1 with h^0(O_C(1)) = n+1,
+    so the card transcribes his conclusion and Egbert's statement of the same
+    steps rather than that line.
 ---
 
 ::: {.problem}
@@ -356,9 +395,7 @@ $$
 L\cong\omega_C.
 $$
 
-This step is the card's own: the reading of the equality case of Clifford's
-theorem, and the exclusion of the hyperelliptic case by the very ampleness
-of $L$, are not taken from any published solution of the exercise.
+This step is the card's own.
 :::
 
 :::
@@ -385,7 +422,12 @@ $$
 K_X\cdot A.
 $$
 
-This step is the card's own.
+Yang Pi-Yeh, solution 5.6.2, printed p. 115, and Egbert, V.6.2, printed
+p. 303, reach the same equality from adjunction and the effectivity of
+$K_X$: under the standing assumption $p_g(X)\ne0$ a nonzero canonical
+section makes $K_X$ effective, so $K_X\cdot A\ge0$; adjunction reads
+$2g-2=C^2+C\cdot K_X=d+K_X\cdot A$, and $d=2g-2$ from step
+[](#clifford-equality-canonical){.pf-ref} forces $K_X\cdot A=0$.
 :::
 
 :::
@@ -432,7 +474,12 @@ h^0(X,\omega_X)
 =1.
 $$
 
-This step is the card's own.
+Yang, printed p. 115, and Egbert, printed p. 303, reach the triviality
+through $12K$: a nonzero section of $K_X$ makes $12K_X$ effective, and
+$K_X\cdot A=0$ from step [](#canonical-meets-hyperplane-zero){.pf-ref} makes
+its intersection with the ample class $A$ zero, so $12K_X\sim0$ and
+$\kappa(X)=0$; with $K_X\sim D\ge0$ this gives $D=0$, hence
+$\omega_X\cong\OO_X$ and $p_g(X)=1$.
 :::
 
 :::
@@ -511,7 +558,16 @@ $$
 q=0.
 $$
 
-This step is the card's own.
+Yang, printed p. 115, and Egbert, printed p. 303, reach the same number
+without counting $h^0(X,A)$: $(K_X-A)\cdot A=-d<0$, so
+$H^0(X,\OO_X(K_X-A))=0$ by Exercise V.1.1; $A-K_X\sim A$ is ample, so
+Kodaira vanishing gives $H^1(X,\OO_X(A))=H^1(X,\OO_X(K_X+A))=0$, and Serre
+duality gives $H^1(X,\OO_X(K_X-A))=0$; hence Riemann--Roch (Theorem 1.6,
+printed p. 362) reads $h^0(X,A)=\chi(\OO_X)+n$, while the nondegenerate
+embedding gives $h^0(X,A)\ge n+2$, so $p_a(X)\ge1$, and $p_a=p_g-q\le p_g=1$
+gives $p_a(X)=1$ and $q=0$, after which Theorem 6.3, printed p. 422, makes
+$X$ a K3 surface. The count of $h^0(X,A)$ above is the card's equivalent
+route to the same number.
 :::
 
 :::
@@ -540,9 +596,8 @@ q(X)=0.
 $$
 A smooth projective surface over $\CC$ with trivial canonical bundle and
 $H^1(X,\OO_X)=0$ is a K3 surface. Hence the second alternative is exactly
-that $X$ is K3.
-
-This step is the card's own.
+that $X$ is K3, which is how Yang, printed p. 115, and Egbert, printed
+p. 303, conclude through Theorem 6.3, printed p. 422.
 :::
 
 :::
@@ -563,5 +618,5 @@ The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric 
 $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
 and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
 
-The equality case $d=2n$ is proved above by the card's own steps, [](#clifford-equality-canonical){.pf-ref} to [](#main-dichotomy){.pf-ref}, and each of them says so. The step they take that a solution of the exercise has to supply there is the equality case of Clifford's theorem: from $h^0(C,L)=n+1=d/2+1$ one gets $L\cong\omega_C$, so $d=2g-2$ and $g=n+1$, and the hyperelliptic alternative in Clifford's equality case has to be excluded, which very ampleness of $L$ does.
+The equality case $d=2n$ is published twice, and steps [](#canonical-meets-hyperplane-zero){.pf-ref} to [](#main-dichotomy){.pf-ref} transcribe the two entries: Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303. With $p_g(X)\ne0$ a nonzero canonical section makes $K_X$ effective, so $H\cdot K_X\ge0$ and adjunction gives $2g-2=d+H\cdot K_X\ge d$; Clifford's theorem on $L=\OO_C(1)$ gives $h^0(C,L)\ge n+1$, and equality forces $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; an effective divisor of class $K_X$ meeting $H$ in zero is $0$, so $\omega_X\cong\OO_X$ and $p_g(X)=1$; $A-K_X$ is ample, so $H^1(X,\OO_X(A-K_X))=0$ by Kodaira vanishing and $H^1(X,\OO_X(A))=0$ by Serre duality; $(K_X-A)\cdot A<0$ gives $H^0(X,\OO_X(K_X-A))=0$; and Riemann--Roch (Theorem 1.6, printed p. 362) gives $p_a(X)=1$, whence $q=0$ and $X$ is K3 by Theorem 6.3, printed p. 422. The one step of that argument that has to be supplied is the equality case of Clifford's theorem: from $h^0(C,L)=n+1=d/2+1$ one gets $L\cong\omega_C$, and the hyperelliptic alternative has to be excluded, which very ampleness of $L$ does. Step [](#clifford-equality-canonical){.pf-ref} supplies it.
 :::
