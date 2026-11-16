@@ -233,11 +233,77 @@ audit:
     reads and at which prime. No step is re-derived beyond that reading, and no
     source was reopened.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, six items on the rendered card. (i) QUAL-01:
+    the statement had dropped the exercise's own instruction. Hartshorne II.3.20
+    opens, on printed p. 94, "Let X be an integral scheme of finite type over a
+    field k, not necessarily algebraically closed. Use appropriate results from
+    (I, §1) to prove the following, where for rings, we always mean the Krull
+    dimension", and the statement again carries the second sentence, which the
+    card had reduced to "Prove the following". The text version's OCR of that
+    sentence is garbled --- it reads "Use appropriate results from (, ) to prove
+    the follw", losing the cross-reference --- and the reading taken is Kim's,
+    who transcribes the exercise at the head of his solution with the words
+    "Use appropriate results from ( I , § 1 ) to prove the following". (ii) The
+    head of the solution said that "the two sources agree with those proofs" of
+    (a), (b), (e) and (f). That holds of (a) and (b) and of neither (e) nor (f):
+    Kim's (e) is one sentence, "Then we can use (a)", and Shichijo's (e) stops
+    at "したがって Lemma より", his Lemma Ex3.20.2, and reaches no
+    conclusion; for (f) Kim reduces to
+    algebraic extensions and then to algebraically closed k and k', and
+    Shichijo passes through k_T = k(T), so neither follows the route of step
+    component-of-xprime-dim-d. The head now says which parts each source proves
+    and which are proved here. (iii) Step component-of-uprime-dim-d asserted
+    that the contraction of a minimal prime of A' is a minimal prime of R
+    "under an integral extension", which is false: for R = k[t] ⊂ k[t] × k, f ↦
+    (f, f(0)), the extension is integral and the minimal prime k[t] × 0
+    contracts to (t). The step now derives q ∩ R = (0) from torsion-freeness:
+    A is a domain and a finite k[t_1,...,t_d]-module, hence torsion-free over
+    that ring and a submodule of a free module, and tensoring the injection with
+    k' over k, which is exact, makes A' torsion-free over k'[t_1,...,t_d]; a
+    minimal prime of a noetherian ring consists of zero divisors, so it meets R
+    in 0. The ring map R → A'/q is then injective, finite and integral, and the
+    dimension d follows from lying over, going up and incomparability. (iv) The
+    book's number is Theorem 1.8A(b), not 1.8(b): the text version prints
+    "Theorem 1.8A. Let k be a field, and let B be an integral domain which is a
+    finitely generated k-algebra ... (b) For any prime ideal p in B, we have
+    height p + dim B/p = dim B". Step dimz-plus-codimz-equals-dimx now cites
+    Theorem I.1.8A(b), and the event of 2026-11-16 whose note begins
+    "Transcription pass for issue #121" carries the same number wrongly and is
+    left as written; Shichijo's "Ch I,Thm1.8b" is his own abbreviation. (v) The
+    pf-qed said that everything follows from the two facts at the head of the
+    solution. It does not: step codim-z-equals-dim-op proves (c) from the
+    correspondence between irreducible closed subsets and primes together with a
+    localized maximal chain, step dimu-equals-dimx proves (e) without localizing,
+    by a nonempty affine open V ⊆ U ⊆ X, and (f) needs the flatness and
+    going-down argument of step component-dominates-x as well. The pf-qed now
+    states for each part what it uses. (vi) Three references to exercises were
+    written as if they were theorems: "Hartshorne II.3.3(c)", "Hartshorne
+    II.3.6" and "Hartshorne II.3.14" now read "Exercise II.3.3(c)", "Exercise
+    II.3.6" and "Exercise II.3.14"; II.3.3 also collides with Theorem II.3.3 on
+    fibre products, which the first step's argument does not use. Checked
+    against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md, where
+    printed p. N is PDF p. N+15: the exercise's opening sentence on printed p. 94
+    (PDF p. 109, line 2874 of the extraction) and its parts (a)--(f) on printed
+    pp. 94--95, and Theorem 1.8A with Proposition 1.7 above it on printed p. 6
+    (PDF p. 21). Read in this pass: Kim's Exercise 2.3.20, both his statement of
+    it at line 879 and his solutions to (a)--(f), in
+    tmp/sources/dongryul-kim-hartshorne-solutions.md, PDF pp. 31--32; and
+    Shichijo's Exercise 3.20, Claim Ex3.20.1 through his (f), in
+    tmp/sources/shitijyou-ch2-section3.md, from the heading "Ex3.20 Dimension."
+    to the claims of Ex3.20.3, printed pp. 17--18. Not checked: the printed book
+    itself was not in hand, both passages being read in the text versions named;
+    Shichijo's printed pp. 17 and 18 could not be collated against his PDF for
+    the place his (c) stands; and no step beyond the four named was re-derived.
+
 ---
 
 ::: {.problem}
 Let $X$ be an integral scheme of finite type over a field $k$, not necessarily algebraically closed.
-Prove the following, where for rings $\krulldim$ always means the Krull dimension.
+Use appropriate results from (I, §1) to prove the following, where for rings $\krulldim$ always means the Krull dimension.
 
 (a) For any closed point $P \in X$, $\krulldim X = \krulldim \OO_P$.
 
@@ -263,7 +329,7 @@ $$
 :::
 
 ::: {.solution}
-Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, at the steps that cite them.  Parts (a), (b), (e) and (f) are proved here, and the two sources agree with those proofs.
+Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, at the steps that cite them, and parts (a) and (b) by both as well.  Parts (e) and (f) are proved here: Kim proves (e) by his (a), and Shichijo's sentence for it stops before the conclusion; for (f), Kim reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$, and Shichijo passes through the purely transcendental intermediate field $k_T$, while the proof below reads the dimension off a Noether normalization after the base change.
 
 We use the following standard affine dimension theorem.
 
@@ -295,9 +361,9 @@ $$
 $$
 
 ::: pf-proof
-Since $X$ is integral, $A$ is a domain.  Since $X$ is of finite type over $k$, Hartshorne II.3.3(c) shows that $A$ is a finitely generated $k$-algebra.
+Since $X$ is integral, $A$ is a domain.  Since $X$ is of finite type over $k$, Exercise II.3.3(c) shows that $A$ is a finitely generated $k$-algebra.
 
-By Hartshorne II.3.6,
+By Exercise II.3.6,
 $$
 \operatorname{Frac}(A)\cong K(X).
 $$
@@ -326,7 +392,7 @@ Z_0\subsetneq Z_1\subsetneq\cdots\subsetneq Z_n
 $$
 in $X$.
 
-The closed subscheme $Z_0$ with its reduced induced structure is of finite type over $k$.  By Hartshorne II.3.14, it contains a closed point $P$.  Since $Z_0$ is closed in $X$, this point is closed in $X$ as well.
+The closed subscheme $Z_0$ with its reduced induced structure is of finite type over $k$.  By Exercise II.3.14, it contains a closed point $P$.  Since $Z_0$ is closed in $X$, this point is closed in $X$ as well.
 
 Choose an affine open neighborhood
 $$
@@ -500,7 +566,7 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.20(d), printed p. 18: with $X=\Spec A$ affine and $\mathfrak p$ the prime of the irreducible closed $Z$, Chapter I Theorem 1.8(b) gives
+Shichijo, Exercise 3.20(d), printed p. 18: with $X=\Spec A$ affine and $\mathfrak p$ the prime of the irreducible closed $Z$, Chapter I Theorem 1.8A(b) gives
 $$
 \dim\frac{A}{\mathfrak p}+\operatorname{height}\mathfrak p=\dim A,
 $$
@@ -654,15 +720,19 @@ $$
 has dimension $d$.
 
 ::: pf-proof
-Let $\mathfrak q$ be a minimal prime of $A'$.  The ring $A'$ is integral over
+Let $\mathfrak q$ be a minimal prime of $A'$, and put
 $$
-R=k'[t_1,\ldots,t_d]
+R_0=k[t_1,\ldots,t_d],\qquad R=R_0\otimes_kk'=k'[t_1,\ldots,t_d],
 $$
-by step [](#noether-normalization-base-change){.pf-ref}.  The contraction
+so that $A'$ is integral over $R$ by step [](#noether-normalization-base-change){.pf-ref}.
+
+The contraction $\mathfrak q\cap R$ is not computed from integrality alone: the minimal primes of an integral extension of a domain need not contract to $(0)$.  What settles it here is that $A'$ is torsion-free over $R$.  The ring $A$ is a domain and a finite $R_0$-module, so no nonzero element of $R_0$ annihilates a nonzero element of $A$; a finite torsion-free module over a domain embeds in a finite free module, so $A\hookrightarrow R_0^N$ for some $N$, as $R_0$-modules.  Tensoring this injection with $k'$ over $k$ is exact, and the result is an injective $R$-linear map
 $$
-\mathfrak q\cap R
+A'=A\otimes_kk'\hookrightarrow R_0^N\otimes_kk'=R^N .
 $$
-is a minimal prime of $R$ under an integral extension.  Since $R$ is a domain,
+Hence every nonzero element of $R$ is a nonzerodivisor on $A'$.
+
+The ring $A'$ is noetherian, and a minimal prime of a noetherian ring consists of zero divisors.  Since no nonzero element of $R$ is a zero divisor of $A'$,
 $$
 \mathfrak q\cap R=(0).
 $$
@@ -671,7 +741,7 @@ Therefore
 $$
 R\hookrightarrow A'/\mathfrak q
 $$
-is an integral finite extension.  Integral extensions preserve Krull dimension, so
+is injective, and it is finite and integral.  A finite injective ring map preserves the Krull dimension: lying over and going up carry a chain of primes of $R$ to a chain of the same length above it, and incomparability carries a chain of primes of $A'/\mathfrak q$ to a chain of the same length below it.  So
 $$
 \dim(A'/\mathfrak q)
 =
@@ -707,7 +777,7 @@ This proves part (f).
 :::
 
 ::: pf-qed
-Everything follows from the two facts stated at the head of the solution: $\krulldim A=\trdeg_kK$ for a finitely generated integral $k$-algebra, which Noether normalization and going up give, and $\krulldim A_{\mathfrak p}+\trdeg_k\kappa(\mathfrak p)=\trdeg_kK$ for every prime $\mathfrak p$. At a maximal ideal, $A_{\mathfrak p}$ being the local ring of a closed point and $\trdeg_k\kappa(\mathfrak p)=0$, the second fact is (a) (step [](#dim-op-equals-dimx-closed-point){.pf-ref}); the first is (b) (step [](#dimx-equals-trdeg){.pf-ref}). Over the primes that cut out the irreducible closed subsets of a nonempty $Y$ the two facts give (c), the codimension of $Y$ being the infimum of $\krulldim\OO_{P,X}$ over $P\in Y$ (step [](#codim-y-equals-inf-dim-op){.pf-ref}), and adding them for such a prime gives (d) (step [](#dimy-plus-codimy-equals-dimx){.pf-ref}); localizing at the primes of a nonempty open set gives (e) (step [](#dimu-equals-dimx){.pf-ref}), and applying the formula to a Noether normalization of an affine chart after the base change gives (f) (step [](#component-of-xprime-dim-d){.pf-ref}).
+Part (a) is step [](#dim-op-equals-dimx-closed-point){.pf-ref}: at a closed point the maximal-localization part of the affine dimension theorem gives $\krulldim\OO_{X,P}=\trdeg_kK(X)=\krulldim X$. Part (b) is steps [](#dimx-leq-r){.pf-ref} and [](#dimx-geq-r){.pf-ref}: a nonempty affine open has dimension $r$, a chain of irreducible closed subsets of $X$ restricts, after intersecting with that open, to a chain of the same length, and a chain in an open has closures in $X$ forming a chain of the same length. Part (c) is step [](#codim-y-equals-inf-dim-op){.pf-ref}: $\codim(Y,X)$ is the infimum of $\codim(Z,X)$ over the irreducible closed $Z\subseteq Y$, each such $Z$ is the closure of its generic point, and step [](#codim-z-equals-dim-op){.pf-ref} reads $\codim(Z,X)$ as the dimension of the local ring at that point, by a maximal chain of primes in an affine chart localized at the prime of $Z$. Part (d) is step [](#dimy-plus-codimy-equals-dimx){.pf-ref}: for an irreducible closed $Z$, Chapter I Theorem 1.8A(b) at the prime of $Z$ gives $\krulldim Z+\codim(Z,X)=\krulldim X$, and an arbitrary nonempty closed $Y$ has finitely many components, over which $\krulldim$ takes its maximum and $\codim$ its minimum. Part (e) is step [](#dimu-equals-dimx){.pf-ref}: a nonempty affine open $V\subseteq U$ is a nonempty affine open of $X$, so $\krulldim V=\krulldim X$, and $V\subseteq U\subseteq X$ gives $\krulldim V\le\krulldim U\le\krulldim X$. Part (f) is steps [](#component-dominates-x){.pf-ref}, [](#noether-normalization-base-change){.pf-ref}, [](#component-of-uprime-dim-d){.pf-ref} and [](#component-of-xprime-dim-d){.pf-ref}: flatness of the base change and going down make every component of $X'$ dominate $X$, such a component therefore meets the inverse image $U'$ of an affine chart $U$, the base-changed Noether normalization makes $A'$ a torsion-free finite module over $k'[t_1,\ldots,t_d]$ so that each component of $U'$ has dimension $d$, and part (e) carries that dimension from the open piece $C\cap U'$ to the component $C$.
 :::
 
 :::
