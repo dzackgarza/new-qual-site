@@ -263,6 +263,21 @@ audit:
     version of Kottke's set, `PDF pages 1-5` and Problem 1 on its opening page. Not
     checked: no page of any source was read from a rendered page in this pass, and
     nothing in the statement or the proof changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The event above places Kottke's sign update on printed p. 3, at the opening line of
+    Problem 3. That is wrong, and this is its correction: in
+    `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.md` the line "Update 3/12:
+    There is some sign involved in the cap/cross product formula in problem 3" stands on
+    the set's first page, directly under the title "Math 2420 -- Problem Set 3, due Monday
+    3/12", and before Problem 1; printed p. 3 begins directly with Problem 3, whose own
+    text carries no update. So the update belongs to the set's head on printed p. 1, and
+    what the reader's report said of the attribution to Problem 3 is right: Problem 3, on
+    printed pp. 3--5, is the cap and cross product formula and is not a Hatcher §3.B
+    exercise. The attribution itself, and the reason §3.B stops at Exercise 5 on printed
+    p. 280, stand as the event above states them.
 ---
 
 ::: {.problem}
