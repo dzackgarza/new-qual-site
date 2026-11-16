@@ -187,6 +187,35 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
+    A reader's report on the two texts of the event above. (i) Its page
+    sentence is wrong: the folio numbered 3 ends at Fuentes' opening line "The
+    unisecant linear systems with generic element irreducible are:", and both
+    of Proposition 1.5's cases, with the proof, are on p. 4. What the folios
+    give is Proposition 1.5 opening at the foot of p. 3 and printed pp. 3--4,
+    which is how the step cites it and how the COMPLAINTS record of this date
+    puts it; the event above says the statement "closes p. 3 with its two
+    cases" and is corrected here. (ii) Its case-by-case check of the exercise's
+    m >= e+2 was wrong in two ways, and the card's step s4 now checks it
+    otherwise. Proposition 1.5 is a statement about decomposable surfaces, and
+    a surface with e = -1 is indecomposable, so the case e = -1 is not
+    Proposition 1.5(2)'s at all but Proposition 2.3's, printed p. 10, which asks
+    for deg b >= 0; and the event above wrote the exercise's bound at e = -1 as
+    "m >= 1 = 1+e", where 1+e is 0 at e = -1 and the bound the exercise assumes
+    is m >= 1 by the exercise's own hypothesis m >= e+2. The indecomposable case
+    e = 0 likewise belongs to Proposition 2.2, printed p. 9, not to Proposition
+    1.5(1), and the check now runs so: a decomposable surface has e >= 0, where
+    e equivalent to 0 forces e = 0 and the exercise's m >= 2 is exactly case
+    (1)'s bound, and where e not equivalent to 0 leaves case (2)'s bound 1+e
+    below e+2; an indecomposable surface with e = 0 has deg b >= 1 from m >= 2
+    and with e = -1 has deg b >= 0 from m >= 1. Part (a)'s conclusion is
+    unchanged, m >= 1 >= 0 and m >= 2 >= 1 in the two indecomposable cases, and
+    no other step changed. Not checked in this pass: nothing else of Fuentes was
+    re-read, and the page sentence of the first event was checked against the
+    PDF's own folios only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
     Out of the rendered solution's preamble and out of the remark went the
     tmp/sources paths that named this VM's copies of the sets cited there, on
     the reader's finding against the same paths on a sibling card of this
@@ -272,7 +301,7 @@ Hartshorne, Theorem V.2.12, printed p. 376, gives $e\ge0$ for a decomposable nor
 
 Part (a) asks for a section, and a complete system without base points gives only an effective member, which may be $C_0'$ together with fibres. The irreducible member comes from the same paper. For a decomposable surface, Proposition 1.5, printed pp. 3--4, makes the generic element of $\linearsystem{X_0+\mfb f}$ irreducible in two cases: when $\mfe\sim0$, with $\deg\mfb\ge2$ or $\mfb\sim0$; and when $\mfe\not\sim0$, with $\deg\mfb\ge1+e$, the alternatives $\mfb\sim0$ and $\mfb\sim-\mfe$ being the systems $\linearsystem{X_0}$ and $\linearsystem{X_0-\mfe f}$; for an indecomposable surface with $e=0$, Proposition 2.2, printed p. 9, does when $\mfb\sim0$ or $\deg\mfb\ge1$; and with $e=-1$, Proposition 2.3, printed p. 10, does when $\deg\mfb\ge0$. An irreducible member of the class $C_0+\mfb f$ meets each fibre once, so it is a section. Fuentes--Pedreira's Corollary 2.9, printed p. 11, gives the same conclusion a second way, a section of that class existing as soon as $\mfb$ and $\mfb+\mfe$ are effective without common base points and $\mfb$ is nonspecial.
 
-The hypotheses hold here, case by case. At $e=0$ the exercise assumes $m\ge e+2=2$: with $\mfe\sim0$ that is the bound $2$ of Proposition 1.5(1), and with $\mfe\not\sim0$ it gives $m\ge2>1=1+e$. At $e=-1$ the invariant is $-1$ with $\deg\mfe=1$, so $\mfe\not\sim0$, and the exercise assumes $m\ge1=1+e$. At $e\ge1$ the exercise assumes $m\ge e+2\ge1+e$, and $\mfe\not\sim0$ because $e\ge1$. So in each case there is a section $D\sim C_0+\mfb f$, and $\linearsystem{L}$ has no base points by step [](#s2){.pf-ref} or step [](#s3){.pf-ref}.
+The hypotheses hold here, in each of the two kinds of surface. A decomposable surface has $e\ge0$: if $\mfe\sim0$ then $e=0$, the exercise assumes $m\ge e+2=2$, and that is exactly the bound of Proposition 1.5(1); if $\mfe\not\sim0$, Proposition 1.5(2) asks for $\deg\mfb\ge1+e$, and the exercise gives $m\ge e+2>1+e$. An indecomposable surface has $e=0$ or $e=-1$: with $e=0$ the exercise assumes $m\ge e+2=2$, and Proposition 2.2 asks for $\mfb\sim0$ or $\deg\mfb\ge1$; with $e=-1$ it assumes $m\ge1$, and Proposition 2.3 asks for $\deg\mfb\ge0$. So in each case there is a section $D\sim C_0+\mfb f$, and $\linearsystem{L}$ has no base points by step [](#s2){.pf-ref} or step [](#s3){.pf-ref}.
 :::
 
 :::
