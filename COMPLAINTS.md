@@ -3007,10 +3007,15 @@ to that commit's text, byte for byte from `git show <commit>:COMPLAINTS.md`, and
   $x=y$, so $x=1$", and `ade61785ff` rewrote it to "for $d\ge3$, $x=0$ would give $0=x^{d-2}y=1$; for
   $d=2$ the two equations read $1=y$ and $x=y$, so $x=1$". The introduced sentence is restored.
 
-What the rewrite made explicit is this entry's: at $d\ge3$ the common-zero condition is $1=x^{d-2}y$, so a
-common zero with $x=0$ would force $0=1$, and at $d=2$ the two equations are $1=y$ and $x=1$, which give
-$(x,y)=(1,1)$. Both phrasings say the same thing, and the entry's conclusion that a common zero exists
-exactly when $3=0$ is untouched, so no mathematics of the file changes with the restoration.
+What the rewrite made explicit is the $d\ge3$ inference, and that is this entry's: there the common-zero
+condition is $1=x^{d-2}y$, so a common zero with $x=0$ would force $0=1$. Its $d=2$ clause is unchanged by
+that rewrite, which kept "the two equations read $1=y$ and $x=y$, so $x=1$"; what the restored sentence
+mis-states is the second equation, and the correction of it is not this entry's but the record of this same
+date headed "the fourth pass's correction is dated 2026-11-16, and its $d=2$ second equation reads $x=1$":
+the second partial-vanishing equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not $x=y$, and
+$x=y$ is the separate derived relation $x=y^{d-1}$. With $1=y$ the two equations give $(x,y)=(1,1)$, so
+that record's reading of $x=1$ and the restored entry's "a common zero exists exactly when $3=0$" are
+untouched, and no mathematics of the file changes with the restoration.
 
 The record before this one, of the same date, closes by saying that the body of the fourth-pass entry stands
 as it stood, its one sentence rewritten by `ade61785ff` included. That record is of this date and is left as
