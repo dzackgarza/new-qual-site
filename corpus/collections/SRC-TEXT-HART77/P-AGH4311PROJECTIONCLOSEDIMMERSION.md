@@ -321,6 +321,62 @@ audit:
     printed p. 144 already read, and no other source; the paragraph of
     Example 11.22 in the text version at line 352 was checked for the same
     sentence.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's final whole-batch report, and
+    seven repairs of the card. (i) The problem statement of (b) now carries
+    Hartshorne's parentheses and his reference number around the Severi
+    sentence: printed p. 316 reads "(A theorem of Severi [1] states ... with
+    transversal tangent planes.)", and the statement had dropped both. Read
+    at line 9900 of tmp/sources/hartshorne-1977-algebraic-geometry.md, between
+    the markers of PDF pages 330 and 331, that is on printed p. 316. (ii) One
+    letter for the centre: steps centre and corollary called it xi, which is
+    Shafarevich's letter, while the exercise calls it O and step
+    closed-immersion-b already used O. Both steps now use O and say that his
+    letter is xi. (iii) Corollary 2.7 requires its centre to lie outside X,
+    and step corollary now says why the point it takes does: it is taken in
+    the complement of X cup Sec(X) cup the closure of U_2, which is how step
+    centre chooses it; for r >= 1 that also follows from X contained in
+    Sec(X), a point of X being a limit of the secant lines through it. (iv)
+    Step secant-dim-lower now carries the reason Harris's parenthetical is
+    elementary, which the card had left in COMPLAINTS.md only: for p in X the
+    union of the planes of the conics nu_2(l) over the pencil of lines l
+    through the preimage of p is three-dimensional and lies in Sec(X), so a
+    three-dimensional Sec(X) would be a cone with vertex at every point of X,
+    and adjoining points of X one at a time puts the span of X, which is P^5,
+    inside it. That paragraph is marked the card's own and Harris's sentence
+    is still quoted unchanged; the published-solution remark, which stopped
+    at "would all have to coincide", now carries the same reason. (v) The
+    card's own incidence count leaves step secants, on the ground the event of
+    this date recording the reader's second report used for the card's own
+    proofs of the two bounds of (b): a published proof covers that part, and
+    the two parts were being treated inconsistently. The count stood at
+    2cd5db74ad and was restored to the card earlier today; it remains readable
+    there. (vi) The pf-qed said which steps came from which text; it now says
+    what the steps prove. (vii) QUAL-11: the event of 2026-11-15 above, whose
+    note begins "Printed exercise read", was extended in place on 2026-11-16 by
+    commit f67ed2b29e, which inserted the path of Vakil's text version into the
+    sentence naming Vakil's Theorem 19.1.1; no later commit restored it. Its
+    text on its day is the text of 73272357f3, the last revision of that day,
+    in which the citation reads "as Theorem 19.1.1, printed p. 536, with the
+    hypotheses ...", and the sentence that commit inserted is here: the
+    citation of Vakil in that event, and in the remark added on 2026-11-16,
+    was read in the text version tmp/sources/vakil-rising-sea-2025-10-21.md.
+    That restoration is not made: the shared gate refuses a commit that
+    changes an audit event of an earlier day unless the replacement is every
+    text ever introduced for that day, kind and author, and the only text
+    introduced there is the event's text at 9eadf0c884. The edit is disclosed
+    here instead, as 9daa803569 disclosed what that commit could not restore.
+    Checked in this pass: the
+    printed exercise of IV.3.11 on printed p. 316 in the text version;
+    Harris's sentence at printed p. 144, Shafarevich's Corollary 2.7 at
+    printed p. 135 and the proof of Theorem 2.25 at printed p. 136, all as
+    already read in this batch; and this card's audit trail in git, commit by
+    commit. Not read in this pass: Shafarevich's Theorem 1.15 and Theorem
+    1.25, as before, and the printed book itself; no step outside (iv) was
+    re-derived.
 ---
 
 ::: {.problem}
@@ -331,8 +387,8 @@ audit:
 Therefore, the secant variety of $X$ has dimension 4, and so in this case there is a projection which gives a closed immersion of $X$ into $\PP^4$ (II, Ex.
 7.7).
 
-A theorem of Severi states that the Veronese surface is the only surface in $\PP^5$ for which there is a projection giving a closed immersion into $\PP^4$.
-Usually one obtains a finite number of double points with transversal tangent planes.
+(A theorem of Severi [1] states that the Veronese surface is the only surface in $\PP^5$ for which there is a projection giving a closed immersion into $\PP^4$.
+Usually one obtains a finite number of double points with transversal tangent planes.)
 :::
 
 
@@ -364,18 +420,6 @@ $$
 $$
 whose image in $\PP^n$ is $S(X)$ and whose projection $\pi_1$ to the first factor is surjective with all fibres of dimension $1$; hence $\dim\Sigma=2k+1$, from which $\dim S(X)\le\dim\Sigma$, and he writes that the proposition "then follows". With this card's letters $k=r$, and a nonsingular variety is irreducible.
 
-The incidence count that follows is the card's own; it reaches the same bound over the complement of the diagonal directly.
-
-Let
-$$
-\mathcal I=\{(P,Q,O):P,Q\in X,\ P\ne Q,\ O\in\overline{PQ}\}\subseteq X\times X\times\PP^n .
-$$
-For $r\ge1$ the base $(X\times X)\setminus\Delta$ is a nonempty open subset of the irreducible $X\times X$ and so is irreducible of dimension $2r$, and the fibre of $\mathcal I$ over $(P,Q)$ is the projective line $\overline{PQ}$, of dimension $1$; hence
-$$
-\dim\mathcal I=2r+1 .
-$$
-For $r=0$ there are no distinct pairs and the union of secant lines is empty, so the bound holds there too. The image of $\mathcal I$ under the projection to $\PP^n$ is the union of the secant lines, so the dimension of its closure is at most $\dim\mathcal I=2r+1$.
-
 :::
 
 :::
@@ -399,9 +443,11 @@ Here $\Theta_b$ is the embedded tangent space $T_bX\subseteq\PP^N$, a linear sub
 
 ::: {.pf-step #centre}
 
-For $n>2r+1$ there is a point $\xi\in\PP^n$ lying on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
+For $n>2r+1$ there is a point $O\in\PP^n$ lying on no secant line of $X$, in no embedded tangent space $T_PX$, and not on $X$.
 
 ::: pf-proof
+
+Shafarevich writes $\xi$ for this point; the card uses the exercise's letter $O$.
 
 Shafarevich, proof of Theorem 2.25, printed p. 136, concludes: "We see that $\dim U_1\le\dim\Gamma=2n+1$ and $\dim U_2\le2n$; therefore if $N>2n+1$ then $U_1\cup U_2\ne\PP^N$, which was what we wanted."
 
@@ -442,13 +488,17 @@ $$"
 
 ::: {.pf-step #corollary}
 
-Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $\xi\in\PP^N\setminus X$; if every line through $\xi$ intersects $X$ in at most one point and $\xi$ is not contained in the tangent space to $X$ at any point, then the projection from $\xi$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$. Applied to a point $\xi$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which is assertion (a) of the exercise.
+Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety and $O\in\PP^N\setminus X$; if every line through $O$ intersects $X$ in at most one point and $O$ is not contained in the tangent space to $X$ at any point, then the projection from $O$ is an isomorphic embedding $\overline X\hookrightarrow\PP^{N-1}$ (his letter for the centre is $\xi$). Applied to a point $O$ of step [](#centre){.pf-ref} it gives a closed immersion of $X$ into $\PP^{n-1}$, which is assertion (a) of the exercise.
 
 ::: pf-proof
 
 The statement is Corollary 2.7, printed p. 135, and its proof there is one sentence: "It is enough to apply the lemma, together with Theorem 1.15."
 
-Take a point $\xi$ of the open set of step [](#centre){.pf-ref}. It lies outside $\operatorname{Sec}(X)$, so it lies on no line through two distinct points of $X$, and every line through $\xi$ therefore meets $X$ in at most one point; and it lies outside $\overline{U_2}$, so $\xi\notin T_PX$ for every $P\in X$. The two hypotheses of the corollary are met.
+Take a point $O$ of the open set of step [](#centre){.pf-ref}, which is the complement of $X\cup\operatorname{Sec}(X)\cup\overline{U_2}$ in $\PP^n$.
+The corollary asks three things of it. First, $O\notin X$: that is because $X$ is one of the three closed sets removed, and for $r\ge1$ it also follows from $O\notin\operatorname{Sec}(X)$, since then $X\subseteq\operatorname{Sec}(X)$, a point of $X$ being a limit of the secant lines through it.
+Second, $O$ lies outside $\operatorname{Sec}(X)$, so it lies on no line through two distinct points of $X$, and every line through $O$ therefore meets $X$ in at most one point.
+Third, $O$ lies outside $\overline{U_2}$, so $O\notin T_PX$ for every $P\in X$.
+The corollary's three requirements are met.
 
 The lemma of step [](#lemma-criterion){.pf-ref} needs the projection $X\to\PP^{n-1}$ to be finite, which is what the cited Theorem 1.15 supplies. The conclusion is that the projection restricts to an isomorphism of $X$ onto its image in $\PP^{n-1}$; that image is closed, because a morphism from the projective variety $X$ is proper, so the isomorphism onto the image is a closed immersion.
 
@@ -569,6 +619,19 @@ Harris, Example 11.22, printed p. 144, prints it as immediate: "since it is clea
 
 Egbert, entry 4.3.21, printed p. 223, prints the same bound in one sentence: "On the other hand, the secant variety clearly has dimension at least $4$."
 
+The completion of Harris's parenthetical is the card's own.
+Write $\operatorname{Sec}(X)=\operatorname{Sec}(\nu_2(\PP^2))$ and fix $p=\nu_2(p_0)\in X$; for a line $\ell\subseteq\PP^2$ through $p_0$ let $\Pi_\ell$ be the plane of the conic $\nu_2(\ell)$, as in step [](#veronese-conic){.pf-ref}.
+Every line joining $p$ to a point of the conic $\nu_2(\ell)$ is a secant line of $X$ and lies in $\Pi_\ell$; these lines sweep out $\Pi_\ell$, whose remaining points are limits of them, so $\Pi_\ell\subseteq\operatorname{Sec}(X)$ and hence
+$$
+C_p\coloneqq\bigcup_{\ell\ni p_0}\Pi_\ell\subseteq\operatorname{Sec}(X)
+$$
+over the pencil of lines through $p_0$.
+Two distinct lines through $p_0$ have distinct planes $\Pi_\ell$, meeting along the tangent line of $X$ at $p$, so their union is three-dimensional, and so is $C_p$.
+Were $\dim\operatorname{Sec}(X)$ equal to $3$, $C_p$ would therefore be all of $\operatorname{Sec}(X)$ for every $p\in X$: the secant variety would be a cone with vertex at each point of $X$, and for $x\in\operatorname{Sec}(X)$ and $p\in X$ the line $\overline{px}$ would lie in $\operatorname{Sec}(X)$, since $x$ lies in one of the planes $\Pi_\ell$ of $C_p$ and that plane contains $p$.
+Now let $\Lambda\subseteq\operatorname{Sec}(X)$ be a linear subspace and $p\in X$; the span $\langle\Lambda,p\rangle$ lies in $\operatorname{Sec}(X)$, being the union of the lines $\overline{py}$ over $y\in\Lambda$, or $\Lambda$ itself when $p\in\Lambda$.
+Adjoining points of $X$ one at a time to a first point $p_0\in X$, each span $\langle p_0,p_1,\dots,p_k\rangle$ therefore lies in $\operatorname{Sec}(X)$; for $k$ large enough that $p_0,\dots,p_k$ span $X$, which exists because $X$ spans $\PP^5$, the whole of $\PP^5$ lies in $\operatorname{Sec}(X)$, against $\dim\operatorname{Sec}(X)=3$.
+Hence $\dim\operatorname{Sec}(X)\ge4$.
+
 :::
 
 :::
@@ -635,8 +698,9 @@ This is the projection asserted in (b).
 
 ::: pf-qed
 
-Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} give (a): the secant bound is Harris's Proposition 11.24 with the card's own incidence count beside it in step [](#secants){.pf-ref}, the tangent bound, the lemma on isomorphic embeddings with its Nakayama proof and Corollary 2.7 are Shafarevich's, and step [](#corollary){.pf-ref} concludes the closed immersion into $\PP^{n-1}$.
-Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} prove that each point of every secant line of the Veronese surface lies on infinitely many secant lines, steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref} transcribe Harris's and Egbert's two bounds on the dimension of its secant variety and conclude it, and step [](#closed-immersion-b){.pf-ref} gives the closed immersion into $\PP^4$ that (b) asks for.
+For (a): $\dim\operatorname{Sec}(X)\le2r+1$ and $\dim\overline{U_2}\le2r$, so for $n>2r+1$ a point $O$ lies outside $X$, outside $\operatorname{Sec}(X)$ and outside $\overline{U_2}$; every line through $O$ then meets $X$ in at most one point and $O$ lies in no embedded tangent space $T_PX$, so the projection from $O$ is one-to-one and injective on tangent spaces at closed points, hence an isomorphism of $X$ onto its image in $\PP^{n-1}$, which is closed because $X$ is projective.
+
+For (b), with $X=\nu_2(\PP^2)$: each secant line joins two points of one Veronese conic and so lies in the plane of that conic, every point of that plane lies on infinitely many secant lines of the conic, and hence of $X$. The general point of a secant line therefore lies on a one-dimensional family of them, which bounds $\dim\operatorname{Sec}(X)$ by $4$; and the bound is attained, since $\operatorname{Sec}(X)$ three-dimensional would make the cone over $X$ with vertex at each of its points equal to $\operatorname{Sec}(X)$, and the span of $X$, which is $\PP^5$, would lie in it. A point outside that four-dimensional variety is a centre of the kind (a) produces, and projection from it embeds $X$ in $\PP^4$.
 
 :::
 
@@ -647,10 +711,10 @@ Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} pro
 ::: {.remark title="Published solution"}
 Part (a) is completed from two printed texts. The secant bound $\dim S(X)\le2r+1$ is J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, printed p. 144, which follows from the incidence correspondence over the variety of secant lines that closes his Example 11.22, printed pp. 143--144, the same example giving the dimension $2k$ of that variety. The rest is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136, correctly in the tangent case.
 
-His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of triples $(a,b,c)$ of $\PP^N\times X\times X$ with $a,b,c$ collinear, and for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$ and its image $U_1=\varphi(\Gamma)$ is the whole of $\PP^N$, of dimension $N>2n+1$; the printed bound $\dim U_1\le\dim\Gamma=2n+1$ is then false of the set he identifies with $U_1$, and it bounds the ambient space rather than the locus of centres. The centres are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. That bound is Harris's Proposition 11.24, whose incidence correspondence lies over the variety of secant lines; the count in step [](#secants){.pf-ref} is a second one, the card's own, over the complement of the diagonal in $X\times X$.
+His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of triples $(a,b,c)$ of $\PP^N\times X\times X$ with $a,b,c$ collinear, and for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$ and its image $U_1=\varphi(\Gamma)$ is the whole of $\PP^N$, of dimension $N>2n+1$; the printed bound $\dim U_1\le\dim\Gamma=2n+1$ is then false of the set he identifies with $U_1$, and it bounds the ambient space rather than the locus of centres. The centres are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. That bound is Harris's Proposition 11.24, whose incidence correspondence lies over the variety of secant lines and not over the pairs with equal entries, and step [](#secants){.pf-ref} quotes it.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
-Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $X$ with vertex a point $p\in X$, each of them three-dimensional and contained in the secant variety because its lines join $p$ to points of $X$, would all have to coincide. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
+Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$: were it $3$, the cone over $X$ with vertex a point $p\in X$ — three-dimensional, all of its lines joining $p$ to points of $X$ — would be the whole of $S(X)$, and that for every $p\in X$, so that joining a point of $S(X)$ to a point of $X$ would stay in $S(X)$; adjoining the points of $X$ one at a time then puts the span of $X$, which is $\PP^5$, inside $S(X)$. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
 The clause for a general point of a secant line is what both texts give; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} use.
 :::
