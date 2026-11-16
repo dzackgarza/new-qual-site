@@ -246,13 +246,62 @@ audit:
     mathematics changes: the description of what Kim and Yang do, and of the
     step neither proves, stands word for word. Read in this pass: the two
     rendered sentences only; no source was reopened and no step was re-derived.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, four items. (i) QUAL-01: part (a) carried
+    the printed claim that the kernel is an infinite-dimensional $k$-vector
+    space with no hypothesis on $k$, which step s6 shows false in
+    characteristic $p$. The printed text is "Use the method of (Ex. 11.5) to
+    show that Pic \hat X \to Pic Y is surjective, and its kernel is an
+    infinite-dimensional vector space over k", on printed p. 281; part (a) now
+    reads that in characteristic $0$ the kernel is an infinite-dimensional
+    vector space over $k$. The surjectivity is asked for in every
+    characteristic, as it holds, and parts (b) and (c) are untouched. (ii)
+    Kim's false step. The card reported his claim that Exercise III.4.6 holds
+    for a nilpotent ideal "because (1+a)^{-1} = 1 - a + a^2 - \cdots" without
+    saying that it is false, and it put the failure of his argument elsewhere,
+    in "an inverse limit of k-vector spaces with non-linear transition maps",
+    here and in the remark. Under his claim those transitions would be linear,
+    so the failure is his nilpotent extension of III.4.6, and step s2 now says
+    why: the geometric series is finite only when $a^2=0$, $a\mapsto1+a$ is not
+    additive, $(1+a)(1+b)=1+a+b+ab$, and $(1+a)^p=1+a^p\ne1$ in characteristic
+    $p$ while the additive group of a $k$-vector space is killed by $p$. The
+    head of the solution and the published-solution remark now name that step
+    as the false one and say that the inference from the kernels of
+    $\Pic Y_n\to\Pic Y_1$ to the inverse limit would be valid on it. (iii)
+    Yang's sequence. The head, step s3 and the remark said that he writes the
+    same inverse limit and the same exact sequence as Kim. He does not: he
+    writes $H^1(X_n,\mci^{n-1})\to\Pic X_n\to\Pic X_1\to
+    H^2(X_n,\mci^{n-1})$, whose outer terms join $X_n$ to $X_1$ where those of
+    III.4.6 join $X_n$ to $X_{n-1}$, and it is not exact in the middle for
+    $n\ge3$, his left term being $V_{n-1}=\ker(\Pic X_n\to\Pic X_{n-1})$. Step
+    s3 now states his sequence, proves that, and keeps his conclusion and the
+    fact it really rests on. (iv) Kim's sentence in step s3 stopped at
+    $Y_{n+1}$; it is now quoted through "and the ways of lifting is given by a
+    nonzero $k$-vector space for large enough $n$". Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15: III.11.7 on printed p. 281, its text standing between the
+    markers of PDF pages 296 and 297. Read in this pass: Kim's Exercise 3.11.7,
+    statement and Solution (a)--(c), in
+    tmp/sources/dongryul-kim-hartshorne-solutions.md at line 9067 and the
+    paragraphs after it, PDF p. 213, whose parenthesis on III.4.6 and the
+    geometric series is quoted above in its own words; and Yang Pi-Yeh's
+    Solution 3.11.7 in tmp/sources/lfwin-hartshorne-solutions.md at line 2138,
+    printed p. 82, whose sequence and closing sentence are quoted as they
+    stand there. Not checked: the printed pages were not in hand, the book,
+    Kim and Yang being read in the three text versions named; Kim's page and
+    Yang's page were not recollated against their PDFs in this pass; and no
+    step beyond s2, s3 and the pf-qed's wording was re-derived.
 ---
 
 ::: {.problem}
 Now let $Y$ be a curve in $X = \PP_k^2$, and let $\hat{X}$ be the formal completion of $X$ along $Y$.
 
 (a) Use the method of (Ex.
-11.5) to show that $\Pic \hat{X} \to \Pic Y$ is surjective, and that its kernel is an infinite-dimensional vector space over $k$.
+11.5) to show that $\Pic \hat{X} \to \Pic Y$ is surjective, and that in characteristic $0$ its kernel is an infinite-dimensional vector space over $k$.
 
 (b) Conclude that there is an invertible sheaf $\mcl$ on $\hat{X}$ which is not algebraizable.
 
@@ -279,7 +328,7 @@ If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group
 In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step [](#s6){.pf-ref} gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone; his equation for the successive kernels, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, does not hold, as step [](#s4){.pf-ref} shows, and no identification of the kernel with a completion is made here.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
+Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space.  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term and the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; the vector-space structure he argues for in a parenthesis, in two steps, that the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent $\OO_Y$-module and that the kernel of $\Pic\hat X\to\Pic Y$, being an inverse limit of $k$-vector spaces, is one.  The second step is valid on the first, and the first is false: Exercise III.4.6 is a statement about a square-zero thickening, and step [](#s2){.pf-ref} says what fails when the ideal is only nilpotent.  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, writes the same inverse limit, and then a sequence joining $\Pic X_n$ to $\Pic X_1$ rather than to $\Pic X_{n-1}$; it is neither Kim's sequence nor a true one, as step [](#s3){.pf-ref} shows, and his equation for the successive kernels, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, does not hold either, as step [](#s4){.pf-ref} shows.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
 
 ::: pf
 
@@ -378,7 +427,7 @@ Since $Y$ has dimension $1$,
 $$
 H^2\bigl(Y,\mco_Y(-rd)\bigr)=0.
 $$
-Exactness therefore gives the displayed short exact sequence.  Kim states the sequence for a nilpotent ideal rather than a square-zero one, and justifies that by the finite geometric series $(1+a)^{-1}=1-a+a^2-\cdots$, the ideal $\mci$ being nilpotent on $X_r$.
+Exactness therefore gives the displayed short exact sequence, and the thickening it is read on is square-zero: the ideal of $X_r$ in $X_{r+1}$ is $\mci^r/\mci^{r+1}$, whose square is $\mci^{2r}/\mci^{2r+1}=0$.  Kim writes the same sequence, for $Y_n\subset Y_{n+1}$, and adds in a parenthesis that the hypothesis of Exercise III.4.6 is unnecessary: he states that a nilpotent ideal suffices, "because $(1+a)^{-1}=1-a+a^2-\cdots$", and concludes that the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent $\OO_Y$-module.  That is false as soon as the square of the ideal is nonzero.  The geometric series is finite only when $a^2=0$; for a nilpotent $a$ with $a^2\ne0$ the map $a\mapsto1+a$ is not a homomorphism, since $(1+a)(1+b)=1+a+b+ab$ carries the cross term $ab$, and the units of a nilpotent extension do not form an additive group, so no argument of this kind gives a $k$-vector space structure to a kernel built from them.  In characteristic $p$ the difference is visible in the torsion: the additive group of a $k$-vector space is killed by $p$, whereas $(1+a)^p=1+a^p\ne1$ for nilpotent $a\ne0$.  The sequence displayed above is the one for the square-zero pair, and that is the pair on which it holds.
 :::
 
 :::
@@ -411,7 +460,18 @@ As in [[P-AGH3115PICFORMAL|Exercise III.11.5]], Exercise II.9.6 gives
 $$
 \Pic\hat X\cong\varprojlim_r\Pic X_r.
 $$
-Kim, Exercise 3.11.7(a), PDF p. 213, cites Exercise II.9.6 for this inverse limit too, and concludes the surjectivity from the same two facts: "Because $Y$ is 1-dimensional, we have that the $H^2$ term vanishes.  On the other hand, as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger.  This shows that we can always lift a line bundle over $Y_n$ to a line bundle over $Y_{n+1}$."  Yang Pi-Yeh, Solution 3.11.7(a), printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone: "Hence in limit, we have $\Pic\hat X=\varprojlim\Pic X_n\to\Pic Y$ is surjective."  He has no counterpart of Kim's sentence that the $H^1$ term grows.  The identification $K_r/K_{r+1}\cong V_r$ is the card's, and uses the surjectivity of the transitions: every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
+Kim, Exercise 3.11.7(a), PDF p. 213, cites Exercise II.9.6 for this inverse limit too, and concludes the surjectivity from the same two facts: "Because $Y$ is 1-dimensional, we have that the $H^2$ term vanishes.  On the other hand, as $n$ gets larger, the term $H^1(Y,\OO_Y(-dn))$ gets larger.  This shows that we can always lift a line bundle over $Y_n$ to a line bundle over $Y_{n+1}$, and the ways of lifting is given by a nonzero $k$-vector space for large enough $n$."
+
+Yang Pi-Yeh, Solution 3.11.7(a), printed p. 82, writes the same inverse limit, and then the sequence
+$$
+H^1(X_n,\mci^{n-1})\longrightarrow\Pic X_n\longrightarrow\Pic X_1\longrightarrow H^2(X_n,\mci^{n-1}),
+$$
+whose outer terms join $X_n$ to $X_1$ where those of Exercise III.4.6 join $X_n$ to $X_{n-1}$; its left term is the one of the sequence displayed in step [](#s2){.pf-ref}, with $r=n-1$.  It is not exact in the middle once $n\ge3$.  Since $\mci^n=0$ on $X_n$,
+$$
+H^1(X_n,\mci^{n-1})=H^1\bigl(Y,\OO_Y(-(n-1)d)\bigr)=V_{n-1}
+=\ker(\Pic X_n\to\Pic X_{n-1}),
+$$
+so the image of his left-hand map is the subgroup of the classes trivial on $X_{n-1}$, while $\ker(\Pic X_n\to\Pic X_1)$ is strictly larger as soon as some $V_r$ with $1\le r\le n-2$ is nonzero: such a class lifts to $X_n$, the transitions being surjective by step [](#s2){.pf-ref}, and is then trivial on $X_1$ and not on $X_{n-1}$.  Step [](#s4){.pf-ref} makes $V_r\ne0$ for large $r$.  He notes that his $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone: "Hence in limit, we have $\Pic\hat X=\varprojlim\Pic X_n\to\Pic Y$ is surjective."  The conclusion is right, and what it rests on is the vanishing of the $H^2$ term of the correct sequence, which makes every transition surjective, as step [](#s2){.pf-ref} says.  He has no counterpart of Kim's sentence that the $H^1$ term grows.  The identification $K_r/K_{r+1}\cong V_r$ is the card's, and uses the surjectivity of the transitions: every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
 $$
 \Pic X_1=\Pic Y,
 $$
@@ -787,7 +847,7 @@ Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
 :::
 
 ::: {.remark title="Published solution"}
-Neither published solution proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, runs the same argument and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
+Neither published solution proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, gives the same inverse limit, proves the surjectivity from a sequence whose outer terms join $\Pic X_n$ to $\Pic X_1$, which is not the sequence of III.4.6 and is not exact in the middle, as step [](#s3){.pf-ref} shows, and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
 
-The parenthetical inference is the false step in characteristic $p$: an inverse limit of $k$-vector spaces with non-linear transition maps is not a $k$-vector space, and the kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group, not an additive one.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
+The false step in characteristic $p$ is the one before that inference, not the inference itself.  Kim extends Exercise III.4.6 from a square-zero ideal to a nilpotent one by the finite geometric series $(1+a)^{-1}=1-a+a^2-\cdots$, which is a finite sum only when $a^2=0$, and concludes that the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf; the inference from that to the inverse limit would then be valid, the transition maps being $k$-linear.  What fails is the extension: for a nilpotent $a$ with $a^2\ne0$ the map $a\mapsto1+a$ is not additive, $(1+a)(1+b)=1+a+b+ab$, and in characteristic $p$ one has $(1+a)^p=1+a^p\ne1$, so the units of the thickening are not a $k$-vector space and neither is a kernel built from them.  The kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group and not an additive one, and step [](#s2){.pf-ref} states the sequence for the square-zero pair, which is where it holds.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
 :::
