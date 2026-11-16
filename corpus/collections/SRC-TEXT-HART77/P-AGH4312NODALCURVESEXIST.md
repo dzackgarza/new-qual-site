@@ -92,9 +92,9 @@ $$
 \delta_d\coloneqq\frac{(d-1)(d-2)}{2},
 $$
 so that the exercise asks for an irreducible plane curve of degree $d$ with exactly $r$ nodes and no other singularities, for $d=2,3,4,5$ and $0\le r\le\delta_d$.
-The proof is the one in Karl Christ, Xiang He and Ilya Tyomkin, *On the Severi problem in arbitrary characteristic*, text version `tmp/sources/christ-he-tyomkin-2020-severi-problem-arbitrary-characteristic.md`, whose printed pages are the folios of that paper and are cited at each step.
+The proof is that of Karl Christ, Xiang He and Ilya Tyomkin, *On the Severi problem in arbitrary characteristic*.
 It holds over any algebraically closed ground field, so the chapter's ground field $k$ needs no further hypothesis.
-The complex case was known earlier and is proved from Severi's construction in G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed singularities*, Theorem 2.1, printed pp. 17--18, which the remark at the end of the card records.
+Over $\CC$ the same statement is proved from Severi's construction in G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed singularities*, Theorem 2.1, printed pp. 17--18.
 
 ::: pf
 
@@ -119,8 +119,7 @@ Christ--He--Tyomkin, Main Theorem, printed p. 2: for integers $d\ge1$ and $0\le 
 ::: pf-proof
 
 The statement is the Main Theorem of the paper, printed p. 2, in its own notation: "Let $d\ge1$ and $0\le g\le\binom{d-1}{2}$ be integers. Then the Severi variety $V^{\mathrm{irr}}_{g,d}$ is irreducible of dimension $3d+g-1$ over any algebraically closed ground field."
-Irreducibility with $3d+g-1\ge0$ gives nonemptiness, the dimension of the ambient space being $\frac12d(d+3)$.
-Step [](#main-theorem-proof){.pf-ref} records where in the paper the theorem is proved.
+The stated dimension $3d+g-1$ is at least $0$, and a set of dimension $3d+g-1$ is nonempty, so irreducible plane curves of degree $d$ and geometric genus $g$ exist.
 
 :::
 
@@ -217,7 +216,7 @@ For $d=2$ one has $\delta_2=0$, and the curve is a nonsingular conic.
 ::: {.remark title="Published solution"}
 
 The exercise is a finite case of the Severi problem, and the two published proofs of it differ in characteristic.
-Christ--He--Tyomkin, *On the Severi problem in arbitrary characteristic*, prove the Main Theorem quoted in step [](#main-theorem){.pf-ref} over any algebraically closed field, and the card transcribes their argument; their §5 proves Theorem 5.1 and Zariski's theorem by tropical degeneration, and §7 the decorated Severi varieties, and those sections are cited at their pages rather than reproduced here.
+Christ--He--Tyomkin, *On the Severi problem in arbitrary characteristic*, prove the Main Theorem quoted in step [](#main-theorem){.pf-ref} over any algebraically closed field; their §5 proves Theorem 5.1 and Zariski's theorem by tropical degeneration, and §7 the decorated Severi varieties.
 
 G.-M. Greuel and E. Shustin, *Plane algebraic curves with prescribed singularities*, Theorem 2.1, printed pp. 17--18, prove the statement over $\CC$ by Severi's construction, in four sentences: "given $n$ and $d$ satisfying (26), we take the union of $d$ straight lines in general position, which is a curve with $\frac{d(d-1)}{2}$ nodes (the maximum by (27)). Then choose some line and deform the curve by smoothing out all $d-1$ intersection points of this line with the other lines, obtaining an irreducible, rational curve with $\frac{(d-1)(d-2)}{2}$ nodes. Finally, we take another deformation by smoothing out $\frac{(d-1)(d-2)}{2}-n$ nodes and obtain an irreducible curve of degree $d$ with $n$ nodes as desired."
 Their bound (26) is $n\le\frac{(d-1)(d-2)}{2}$, and the deformation they use is Severi's: "the germ of the family of curves of degree $d$ having a node in a neighborhood of an arbitrary singular point of $C$, is a smooth hypersurface germ in $\OO_{\PP^2}(d)\cong\PP^{d(d+3)/2}$, and, moreover, all these germs intersect transversally at $C$", for which they cite [22, Corollary 6.3] and [30, Corollary 4.3.6]. Their proof is over $\CC$, and it does not extend to characteristic $p$ as it stands.
