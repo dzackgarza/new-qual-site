@@ -44,14 +44,34 @@ audit:
     so it is a lattice in Num X tensor R. Located two published treatments
     outside the twelve retained sets. Algebraic Geometry II, National Taiwan
     University, 2020 Spring, Chapter V homework, Exercise 11 (Shuang-Yen Lee),
-    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`, proves (a) and
+    PDF p. 4, downloaded to tmp/sources/ntu-ag2-chapter5.pdf, proves (a) and
     (b) by the same route, but its displayed estimate for the sum of the
     c_i^2 does not follow from its adjunction line, so steps s1 to s3 are the
     corrected bookkeeping rather than a transcription. Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.1.11, printed p. 101
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), never bounds the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), never bounds the
     coefficients. Not checked: whether the NTU set's constant A is uniform in
     h; the card does not use that constant.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the printed exercise at Hartshorne (1977), V.1, exercise 1.11, printed
+    p. 368 (PDF p. 383), and the National Taiwan University set's Exercise 11
+    (Shuang-Yen Lee) in the text version tmp/sources/ntu-ag2-chapter5.md, printed
+    p. 4 of that set, on 2026-11-16. The published argument is the card's route:
+    Hodge index gives a basis in which the form is diag(1,-1,...,-1) with h =
+    H/sqrt(H^2); an irreducible curve has c_0 at least 1/sqrt(H^2) because it meets
+    H positively; adjunction gives c_0(c_0+k_0) - sum c_i(c_i+k_i) = 2p_a - 2 at
+    least -2; and the conclusion is that D_d is contained in a bounded set with
+    v_0 fixed. Its displayed intermediate inequality, sum c_i^2 at most
+    c_0^2 + c_0k_0 + 2 + k_0^2/2, does not follow from the adjunction identity,
+    which bounds sum(c_i^2 + c_ik_i) and reaches sum c_i^2 only through
+    2|c_ik_i| at most c_i^2 + k_i^2, costing a factor two and adding sum k_i^2, so
+    steps s1 to s3 remain the card's corrected bookkeeping and are not a
+    transcription. Yang Pi-Yeh, exercise 5.1.11, never bounds the coefficients of
+    the curves occurring in D + sum a_iR_i, as recorded above. Not checked: the
+    argument over a base field that is not algebraically closed.
 ---
 
 ::: {.problem}
@@ -419,9 +439,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.1.11, PDF pp. 260--261: (b) is the printed hint — "doing the hint by contrapositive, theorem V.1.4 gives $\Gamma\ne\Delta$ which implies $\Gamma\cdot\Delta\ge0$; then $\Gamma^2<0$ implies $\Gamma\cdot\Delta\ne\Delta^2$ and thus $\Gamma\not\equiv\Delta$", then $H=l+m$ and part (a). Part (a) is a sketch: "WLOG assume $H$ is very ample of degree 1; for $D\cdot H=0$ this follows from Nakai--Moishezon; any such $D$ can only have finitely many components not intersecting $H$ since if $P_i\cdot H=0$, then $P_i\cdot P_j<0$ and with each additional such component, the genus ... will decrease; thus we are choosing $D$ from a finite set of a finite number of components." That bounds neither the components meeting $H$ nor the coefficients, and the negativity of $P_i\cdot P_j$ is asserted.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.11, PDF pp. 260--261: (b) is the printed hint — "doing the hint by contrapositive, theorem V.1.4 gives $\Gamma\ne\Delta$ which implies $\Gamma\cdot\Delta\ge0$; then $\Gamma^2<0$ implies $\Gamma\cdot\Delta\ne\Delta^2$ and thus $\Gamma\not\equiv\Delta$", then $H=l+m$ and part (a). Part (a) is a sketch: "WLOG assume $H$ is very ample of degree 1; for $D\cdot H=0$ this follows from Nakai--Moishezon; any such $D$ can only have finitely many components not intersecting $H$ since if $P_i\cdot H=0$, then $P_i\cdot P_j<0$ and with each additional such component, the genus ... will decrease; thus we are choosing $D$ from a finite set of a finite number of components." That bounds neither the components meeting $H$ nor the coefficients, and the negativity of $P_i\cdot P_j$ is asserted.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), PDF p. 4, proves (a) and (b) by the route of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: a basis of $\Num X\otimes\RR$ in which the intersection form is $\diag(1,-1,\ldots,-1)$, $c_0\ge1/\sqrt{H^2}$ for an irreducible curve, adjunction $c_0(c_0+k_0)-\sum_ic_i(c_i+k_i)=2p_a-2\ge-2$, and then $\sum_ic_i^2\le Ac_0^2$, so that $\{D\ge0:D\cdot H=d\}$ meets a bounded set. Its displayed intermediate step, $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$, does not follow from the adjunction identity: that identity bounds $\sum_i(c_i^2+c_ik_i)$, and $c_i^2$ is reached only through $2\abs{c_ik_i}\le c_i^2+k_i^2$, which costs a factor $2$ and adds $\sum_ik_i^2$. Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} carry that bookkeeping out, with the constant $A_h=2+(h^2+h(K_X\cdot H))/H^2$ and the term $\norm{z}\norm{y}$. Its (b) is steps [](#s6){.pf-ref} to [](#s10){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\ldots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$"; the coefficients of the curves occurring in $D+\sum a_iR_i$ are never bounded, so this does not prove (a).
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\ldots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$"; the coefficients of the curves occurring in $D+\sum a_iR_i$ are never bounded, so this does not prove (a).
 :::
