@@ -230,6 +230,22 @@ audit:
     the page. Not checked: no step was re-derived, no source was re-read, and no
     machine computation was run in this pass.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card only, and the item the
+    two passes above left: the head of the solution and the remark on the
+    published solution still named the text versions of Kim and of Yang Pi-Yeh,
+    tmp/sources/hartshorne-solutions-kim.md and
+    tmp/sources/lfwin-hartshorne-solutions.md, beside the citations they
+    support. Both passages now cite Kim by exercise, PDF page and source
+    revision and Yang by solution and printed page, and neither names a file.
+    What was read, and where, is in the transcription event of even date and in
+    the events above, which keep their paths (PROSE-11, QUAL-08, SEC-7). No
+    mathematics changes: the description of what Kim and Yang do, and of the
+    step neither proves, stands word for word. Read in this pass: the two
+    rendered sentences only; no source was reopened and no step was re-derived.
 ---
 
 ::: {.problem}
@@ -263,7 +279,7 @@ If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group
 In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step [](#s6){.pf-ref} gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 3.11.7, printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone; his equation for the successive kernels, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, does not hold, as step [](#s4){.pf-ref} shows, and no identification of the kernel with a completion is made here.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 3.11.7, PDF p. 213, gives $\Pic\hat X=\varprojlim_n\Pic X_n$, the exact sequence of Exercise III.4.6, the vanishing of its $H^2$ term, the growth of its $H^1$ term, and hence the surjectivity of $\Pic\hat X\to\Pic Y$; Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, writes the same inverse limit and the same exact sequence, notes that the $H^2$ term vanishes because $X_n$ is one-dimensional, and draws the surjectivity from that alone; his equation for the successive kernels, $H^1(X_n,\mci^{n-1})=k[x_0,x_1,x_2]/(f^{n-1})$, does not hold, as step [](#s4){.pf-ref} shows, and no identification of the kernel with a completion is made here.  Neither source proves the printed claim of the exercise, that the kernel is a $k$-vector space: Kim asserts it in a parenthetical inference from an inverse limit of $k$-vector spaces, which is false in characteristic $p$, and Yang reads it off a completion.  The characteristic-free statement is the filtered one of steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}; steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are proved here and not transcribed.
 
 ::: pf
 
@@ -771,7 +787,7 @@ Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
 :::
 
 ::: {.remark title="Published solution"}
-Neither published solution proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 82, runs the same argument and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
+Neither published solution proves the printed claim of (a).  Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.7, PDF p. 213, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he writes $\Pic\hat X=\varprojlim_n\Pic Y_n$ from Exercise II.9.6, the exact sequence of Exercise III.4.6, notes that its $H^2$ term vanishes because $Y$ is a curve and that its $H^1$ term grows, concludes that $\Pic\hat X\to\Pic Y$ is surjective with kernel "an infinite-dimensional $k$-vector space", and adds in a parenthesis the argument he intends for the vector-space structure: the kernel of $\Pic Y_n\to\Pic Y_1$ is the first cohomology of a coherent sheaf, "Now the kernel of $\Pic\hat X\to\Pic Y$ is the inverse limit of $k$-vector spaces, hence is a $k$-vector space".  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.11.7, printed p. 82, runs the same argument and writes the kernel as $\varprojlim k[x_0,x_1,x_2]/(f^{n-1})$, "the completion of $k[x_0,x_1,x_2]$ at $(f)$, hence infinite dimensional".
 
 The parenthetical inference is the false step in characteristic $p$: an inverse limit of $k$-vector spaces with non-linear transition maps is not a $k$-vector space, and the kernel of $\Pic X_r\to\Pic X_s$ is a filtered formal group, not an additive one.  Step [](#s6){.pf-ref} exhibits a line bundle of infinite order in the kernel on the line $z=0$.  In characteristic zero step [](#s5){.pf-ref} makes Kim's conclusion true by the $I$-adic logarithm, and that argument is the card's.  Kim's (b) and (c) agree with steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
 :::
