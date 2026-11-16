@@ -265,6 +265,8 @@ have distinct tangent directions. A fourth blowup at this triple point
 therefore makes their strict transforms meet the new exceptional $E_4$ at
 three distinct points. All remaining intersections are transverse, so the
 total transform is simple normal crossings.
+
+The source's entry for (a) stops at the nonsingular strict transform of step [](#a-second-blowup){.pf-ref}: this third blowup and the fourth are the card's, and they are what turns a resolution of the curve into an embedded resolution in the sense of (3.9.4).
 :::
 
 :::
@@ -602,7 +604,7 @@ $$
 =4.
 $$
 
-The source's part (e), PDF p. 13, computes $\delta_p=\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$.
+The source's part (e), PDF p. 13, computes $\delta_p=\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$; its two blowups are the ones displayed on step [](#e-first-blowup-node){.pf-ref}, and the further two here are the card's.
 :::
 
 :::
