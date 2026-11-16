@@ -111,6 +111,35 @@ audit:
     normalizing maps that produce them, are unchanged and were re-read. The
     invariance of the cross ratio, the six-value orbit and the threshold r <= 2
     are as the reader accepted them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Four further repairs on the same pass, none of them on the reader's list.
+    First, and the only mathematical one: the invariance of the cross ratio was
+    proved with the wrong composite. The normalizing transformation of the
+    definition of [phi a, phi b, phi c, phi d] is the unique element carrying
+    phi a, phi b, phi c to infinity, 0, 1, and that is rho o phi^{-1}, not
+    rho o phi: rho o phi carries phi^{-1}a, phi^{-1}b, phi^{-1}c there and
+    equals rho only when phi is the identity. Step converse-fails now says so
+    and concludes [phi a, phi b, phi c, phi d] = rho(d) = [a,b,c,d] directly.
+    The invariance itself, the six values and r <= 2 are unchanged, and the
+    reader accepted all three.
+    Second, the paragraph of the published-solution remark that begins "All
+    three retained sets" follows five named sources, the last three of which
+    are Egbert, Cutrone--Marshburn and Shichijo, and Shichijo states no
+    threshold; the three meant are Borcherds, Egbert and Cutrone--Marshburn
+    and they are now named.
+    Third, the quotation from Cutrone--Marshburn on PDF p. 25 was punctuated
+    as the card needed it: its text version
+    tmp/sources/hartshorne-solutions-cutrone-marshburn.md, line 425, reads
+    "under Aut P^1 . Any isomorphism between P^1 and P^1 fixes at most 2
+    points", and the card had turned the full stop into a semicolon and the
+    capital into a lower-case letter inside quotation marks. Restored.
+    Fourth, the line of COMPLAINTS.md that records this card's converse said
+    that all located sets state a threshold; Shichijo asserts the converse
+    without one, and the three that do state it state it as r <= 3, which the
+    card refutes at r = 3. The line now names them.
 ---
 
 ::: {.problem}
@@ -248,7 +277,7 @@ S_\lambda=\{\infty,0,1,\lambda\}\subseteq\PP^1.
 $$
 Write $[a,b,c,d]$ for the image of $d$ under the unique fractional linear transformation carrying $a,b,c$ to $\infty,0,1$, the uniqueness being the case that fixes $\infty$, $0$ and $1$: such a transformation is $x\mapsto(\alpha x+\beta)/(\gamma x+\delta)$, fixing $\infty$ forces $\gamma=0$, then fixing $0$ forces $\beta=0$, and then fixing $1$ forces $\alpha=\delta$.
 
-So an element of $\PGL(1)$ is determined by its values at three distinct points, and $[\phi a,\phi b,\phi c,\phi d]=[a,b,c,d]$ for every fractional linear $\phi$: the composite $\rho\circ\phi$, where $\rho$ carries $a,b,c$ to $\infty,0,1$, again carries them there, hence equals $\rho$.
+So an element of $\PGL(1)$ is determined by its values at three distinct points, and $[\phi a,\phi b,\phi c,\phi d]=[a,b,c,d]$ for every fractional linear $\phi$: the composite $\rho\circ\phi^{-1}$, where $\rho$ carries $a,b,c$ to $\infty,0,1$, carries $\phi a,\phi b,\phi c$ to $\infty,0,1$, so it is the normalizing transformation used in the definition of $[\phi a,\phi b,\phi c,\phi d]$, and it carries $\phi d$ to $\rho(d)$.
 
 The cross ratios of the other orderings are computed with $\rho$ normalizing $(a,b,c)$, so that $\rho(d)=[a,b,c,d]=\lambda$:
 $$
@@ -292,8 +321,8 @@ Step [](#r-equals-s){.pf-ref} proves the required invariant, while steps [](#iso
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, Exercise 6.7, PDF p. 8: "any map from one curve to the other can be extended to a map from $\PP^1$ to $\PP^1$, so the points $P_i$ must be mapped to the points $Q_j$, so $r=s$"; and "the converse is true if and only if $r\le3$, because any set of at most $3$ distinct points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}(\PP^1)$, but this is not true for sets of $4$ or more points".
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, stops at §I.5 and gives no solution to 6.7.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise I.6.7, PDF p. 55: "we can extend any map between the two curves to a map $\PP^1\to\PP^1$; since $P_i$ must map to $Q_j$ thus $r=s$. The converse is only true for $r\le3$ by virtue of the fact that mobius transformations can take at most $3$ distinct points in $\PP^1$ to any other $3$ distinct points."
-Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$; any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
+Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, Exercise I.6.7, PDF p. 25: the same extension argument giving the equality of the two numbers of punctures; "the converse is not true for $r>3$ since any set of at most $3$ points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}\PP^1$. Any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
 A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 6, Exercise 6.7, printed pp. 5--6, answers $r=s$ by extending the birational map $\PP^1\dashrightarrow\PP^1$ to an automorphism, referred to his own Exercise 6.3 block and Corollary I.6.12 rather than to Exercise I.6.8; his displayed exchange of the omitted sets leaves out $\infty$, as step [](#r-equals-s){.pf-ref} records. For the converse he argues that an element of $\operatorname{PGL}(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element, which is the assertion and not a proof; the footnote replaces it by a configuration in $\AA^3$.
 
-All three retained sets answer $r=s$ as step [](#r-equals-s){.pf-ref} does. All three then state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there; so the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
+Borcherds, Egbert and Cutrone--Marshburn answer $r=s$ as step [](#r-equals-s){.pf-ref} does, and all three state the threshold for the converse as $r\le3$, which is one too high: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set --- it carries $\infty$ to whatever point of $\{\infty\}\cup Q$ is the image of $\infty$, and need not fix it --- so what the isomorphism of punctured lines requires is that these two $(r+1)$-point subsets of $\PP^1$ be carried to one another by a fractional linear transformation. For $r=3$ they are four-point sets, and the cross ratio obstructs the converse already there; so the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference drawn from it is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points it acts by a permutation of them. Step [](#converse-fails){.pf-ref} is the counterexample the sets lack. Recorded in COMPLAINTS.md for the converse half.
 :::
