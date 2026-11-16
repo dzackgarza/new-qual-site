@@ -96,6 +96,22 @@ audit:
     excision of the pair $(M\times N,M\times N-\{(x,y)\})$, and its ring step, on the ball pair, was
     the same argument as the fill made here. Not rewritten into `pf` steps; the source's paragraph
     order is kept so the transcription can be checked against p. 1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The source's length is 5 pp., not the 3 pp. of the 2026-11-13 note: `pdfinfo` reports 5 pages and
+    the set's own footers number its pages 1--5, Problem 1 on printed p. 1, Problem 2 (Hatcher 3.3.21)
+    on printed p. 2, Problem 3 on printed p. 3 and exercises from M&T on pp. 2--3. Problem 1, the
+    transcription on this card, is on printed p. 1 as stated, and the sha256 in that note matches the
+    bytes. Read again at printed p. 1 this pass, with the Hatcher pages the card cites checked against
+    the book: Exercise 4 of §3.B on printed p. 280, Theorem 3B.6 on printed p. 275, the relative
+    Künneth formula on printed p. 276, Theorem 3.26(a) on printed p. 236, the freeness of $C_*(X,X-x)$
+    on printed p. 261, Theorem 3A.3 on printed p. 264, Proposition 3B.1 on printed p. 269, and
+    Corollary A.12 on printed p. 529. Hatcher's errata carries no entry bearing on any of these: its
+    §3.B entries are pp. 268, 272, 273, 274, 275, 276 (a numbering note about a Corollary 3B.2, absorbed
+    in later versions) and 280 (the line before the exercises, and Exercise 5). Nothing in the card's
+    proof changes.
 ---
 
 ::: {.problem}
