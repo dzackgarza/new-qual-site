@@ -54,6 +54,37 @@ audit:
     tmp/sources/hartshorne-solutions-cais.pdf and in its MinerU text version
     tmp/sources/hartshorne-solutions-cais.md. The event above predates that file, records
     what was read from the PDF alone, and is left as it was dated.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121: the proof on the card is now the
+    published argument with its source named at every step. Read at the
+    cited places: Dongryul Kim, Exercise 2.3.10, PDF p. 23, text version
+    tmp/sources/hartshorne-solutions-kim.md; the Cais solutions, Exercise
+    3.10, PDF p. 12 of 29, the file having no printed folio, text version
+    tmp/sources/hartshorne-solutions-cais.md; A. Shichijo, Exercise 3.10,
+    printed p. 7, text version tmp/sources/shitijyou-ch2-section3.md; A.
+    Egbert, Exercise II.3.10, printed p. 84, text version
+    tmp/sources/hartshorne-solutions-egbert.md; Math StackExchange 1709194,
+    comments 3488648 and 3489729, text version
+    tmp/sources/mse-1709194-geometric-generic-fibre-hart-ii310.md. Checked
+    against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where printed p. N is PDF p. N+15: II.3.10 as printed on p. 92, with
+    its sole hypothesis that k is algebraically closed and its three
+    assertions. What the transcription records beyond the earlier events:
+    Egbert's idempotents carry the denominator 2 sqrt 2 where 2 sqrt a
+    belongs, a misprint; Kim, Cais, Shichijo and Egbert reach k x k for
+    the fibre over a != 0 only with char k != 2, and Cais writes that
+    fibre as the two points (s-a, t - sqrt a) and (s-a, t + sqrt a)
+    without the hypothesis. The two-point assertion of the exercise in
+    characteristic 2 has no published proof and can have none, which the
+    COMPLAINTS record of 2026-11-16 names. The card's own contributions
+    are now confined to the characteristic-two computation and the
+    valuation check of the irreducibility of t^2 - s, and both say so.
+    Not checked: no source beyond the five named was searched in this
+    pass, and no machine computation was run.
+
 ---
 
 ::: {.problem}
@@ -71,30 +102,25 @@ audit:
 :::
 
 ::: {.solution}
+Every step below is the published argument, and each names the source it transcribes: Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Exercise 2.3.10, PDF p. 23; the Cais solutions, text version `tmp/sources/hartshorne-solutions-cais.md`, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), text version `tmp/sources/shitijyou-ch2-section3.md`, Exercise 3.10, printed p. 7; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194, text version `tmp/sources/mse-1709194-geometric-generic-fibre-hart-ii310.md`.
 
 ::: pf
 
 ::: {.pf-step #reduce-fibre-topology-to-affine}
-It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
+The homeomorphism of (a) is proved with $Y$ affine and then $X$ affine, the affine pieces gluing.
 
 ::: pf-proof
-Choose an affine neighborhood
+Kim, Exercise 2.3.10(a), PDF p. 23: "Since the fiber product of schemes is fiber product of affine schemes glued together, we may assume first that $Y$ is affine and then $X$ is affine."
+
+Cais, Exercise 3.10(a), PDF p. 12: for an affine neighbourhood $\Spec A$ of $y$ the universal property of the fibre product gives
 $$
-V=\Spec B\subseteq Y
-$$
-of $y$, corresponding to a prime $\mfp \subseteq B$, and cover $f^{-1}(V)$ by affine opens
-$$
-U=\Spec A.
-$$
-The fibre restricted to $U$ is
-$$
-U_y
+X_y
 =
-U\times_V\Spec\kappa(y)
-\cong
-\Spec\bigl(A\otimes_B\kappa(\mfp)\bigr).
+(X\times_Y\Spec A)\times_{\Spec A}\Spec\kappa(y),
 $$
-These affine pieces cover $X_y$, so it suffices to compare each $\underlyingspace{U_y}$ with $U\cap f^{-1}(y)$.
+and for $U\subseteq X$ open, $p^{-1}(U)=U\times_Y\Spec\kappa(y)$, so the affine statements glue.
+
+Shichijo, Exercise 3.10(a), printed p. 7, makes the same split into an affine case and a general case, where $f^{-1}(\tilde Y)=\bigcup X_i$ is an affine cover over the affine open $\tilde Y\ni y$ and $X_y$ is the gluing of the schemes $(X_y)_i=X_i\times_{\tilde Y}\Spec(\OO_{\tilde Y,y}/\mathfrak m_{\tilde Y,y})$.
 :::
 
 :::
@@ -104,28 +130,28 @@ There is a canonical ring isomorphism
 $$
 A\otimes_B\kappa(\mfp)
 \cong
-S^{-1}(A/\mfp  A),
+S^{-1}(A/\mfp A),
 \qquad
 S=B\setminus\mfp.
 $$
 
 ::: pf-proof
-Since
+Kim, Exercise 2.3.10(a), PDF p. 23, decomposes
 $$
-\kappa(\mfp)
-=
-\Frac(B/\mfp)
-=
-S^{-1}(B/\mfp),
+B\longrightarrow B/\mfp B\longrightarrow (A-\mfp)^{-1}(B/\mfp B)=B\otimes_A\kappa(\mfp).
 $$
-tensoring first with $B/\mfp$ and then localizing gives
+
+Shichijo, Exercise 3.10(a), printed p. 7, computes the same tensor with $I_{\mfp}=\phi(\mfp)A$ and $T$ the image of $S$:
 $$
-A\otimes_B\kappa(\mfp)
+A\otimes_B\frac{S^{-1}B}{S^{-1}\mfp}
 \cong
-S^{-1}(A\otimes_B B/\mfp)
+A\otimes_B\frac{B}{\mfp}\otimes_BS^{-1}B
 \cong
-S^{-1}(A/\mfp  A).
+\frac{A}{I_{\mfp}}\otimes_BS^{-1}B
+\cong
+T^{-1}\Bigl(\frac{A}{I_{\mfp}}\Bigr),
 $$
+citing Atiyah--Macdonald Corollary 3.4, Proposition 3.5 and Exercise 2.2 for the steps.
 :::
 
 :::
@@ -133,43 +159,50 @@ $$
 ::: {.pf-step #uy-points-correspond-to-primes}
 The points of $U_y$ correspond bijectively to the primes
 $$
-\mfq \in\Spec A
+\mfq\in\Spec A
 $$
-such that
+with
 $$
-\mfq \cap B=\mfp.
+\mfq\cap B=\mfp.
 $$
 
 ::: pf-proof
-By step [](#fibre-ring-tensor-localization){.pf-ref}, primes of the fibre ring correspond to primes $\mfq \subseteq A$ which contain $\mfp A$ and are disjoint from the image of $S$.
+Shichijo, Exercise 3.10(a), printed p. 7: by Atiyah--Macdonald Proposition 1.1 and 3.11 the primes of $T^{-1}(A/I_{\mfp})$ are the primes of $A$ containing $I_{\mfp}$ and meeting $T$ trivially, and his equivalence $(\ast)$ proves
+$$
+I_{\mfp}\subseteq\mfq\ \text{and}\ T\cap\bar\mfq=\emptyset
+\iff
+f(\mfq)=\phi^{-1}(\mfq)=\mfp .
+$$
 
-The first condition gives
+Egbert, Exercise II.3.10(a), printed p. 84, obtains the same set as
 $$
-\mfp \subseteq\mfq \cap B,
+\Spec(B_{\mfp}/\mfp B_{\mfp})
+\approx
+\set{\mfq\in\Spec B \st f^{-1}(\mfq)\subset\mfp,\ \mfq\supset f(\mfp)}
+=
+f^{-1}(\mfp).
 $$
-while disjointness from $B\setminus\mfp$ gives the reverse inclusion.  Thus
-$$
-\mfq \cap B=\mfp.
-$$
-These are exactly the points of $U$ mapping to $y$.
+
+Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp B\subseteq\mfq$ and $\mfq\cap g(A-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$.
 :::
 
 :::
 
 ::: {.pf-step #uy-homeomorphism-onto-fiber}
-The bijection in step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism from $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
+The bijection above is a homeomorphism of $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
 
 ::: pf-proof
-Let $R=S^{-1}(A/\mfp A)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
-Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mfp A$.  Under the prime correspondence of step [](#uy-points-correspond-to-primes){.pf-ref},
+Cais, Exercise 3.10(a), PDF p. 12, factors the projection $p$ as
 $$
-V_R(J)
+\Spec(B\otimes_A\kappa(\mfp))
+\xrightarrow{\ \Spec\psi\ }
+\Spec(B\otimes_AA_{\mfp})
+\xrightarrow{\ \Spec\phi\ }
+\Spec B .
 $$
-corresponds exactly to
-$$
-V_A(I)\cap f^{-1}(y)\cap U.
-$$
-Thus closed subsets on the fibre side are precisely intersections with closed subsets of $U$, which is the induced topology.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\phi$ is a homeomorphism onto $\set{\mfq\in\Spec B \st \mfq\cap S=\emptyset}$ with $S=g(A-\mfp)$, since $\Spec\phi(V(I))=V(\phi^{-1}(I))\cap\Spec\phi(\Spec B)$. With $\ker\psi=\mfp B$ the composite is therefore a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+
+Shichijo, Exercise 3.10(a), printed p. 7, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
 
 :::
@@ -179,153 +212,124 @@ Therefore
 $$
 \boxed{\underlyingspace{X_y}\xrightarrow{\sim}f^{-1}(y)}
 $$
-is a homeomorphism onto the set-theoretic fibre with its subspace topology.
+is a homeomorphism onto the set-theoretic fibre with the subspace topology.
 
 ::: pf-proof
-The affine homeomorphisms from step [](#uy-homeomorphism-onto-fiber){.pf-ref} are compatible on overlaps because they all arise from the projection $X_y\to X$.  They glue to the claimed global homeomorphism.
+The homeomorphisms of the affine pieces are compatible with the projections to $X$, so they glue: Kim, Exercise 2.3.10(a), PDF p. 23, and Shichijo, Exercise 3.10(a), printed p. 7, general case, where $\mathrm{sp}(X_y)$ is glued from the $\mathrm{sp}(X_y)_i$, and the restriction of $f$ to $X_i$ has fibre $f^{-1}(y)\cap X_i$, the pieces covering $f^{-1}(y)$.
 :::
 
 :::
 
 ::: {.pf-step #coordinate-ring-of-x-is-kt}
-In part (b), the coordinate ring of $X$ is canonically isomorphic to $k[t]$, with the structural map
+In part (b) the coordinate ring of $X$ is $k[t]$, with structural map
 $$
 k[s]\longrightarrow k[t],
 \qquad
-s\longmapsto t^2.
+s\longmapsto t^2 .
 $$
 
 ::: pf-proof
-The quotient relation $s-t^2=0$ eliminates $s$:
-$$
-k[s,t]/(s-t^2)\cong k[t].
-$$
-Under this isomorphism, the inclusion of the base coordinate ring is exactly $s\mapsto t^2$.
+Kim, Exercise 2.3.10(b), PDF p. 23, and Shichijo, Exercise 3.10(b), printed p. 7, eliminate $s$ by the relation $s=t^2$, so that $k[s,t]/(s-t^2)\cong k[t]$ and the base ring maps by $s\mapsto t^2$; Egbert, printed p. 84, writes the elements of the fibre ring as $a_0+a_1t$ with $t^2=a$.
 :::
 
 :::
 
 ::: {.pf-step #closed-fibre-formula}
-For a closed point $y=(s-a)$ of $Y$, the fibre is
+For a closed point $y=(s-a)$ of $Y$ the fibre is
 $$
-\boxed{
-X_y
-\cong
-\Spec k[t]/(t^2-a).}
+\boxed{X_y\cong\Spec k[t]/(t^2-a)}.
 $$
 
 ::: pf-proof
-Since $k$ is algebraically closed,
+Kim, Exercise 2.3.10(b), PDF p. 23: "the fiber is given by $\Spec k[s,t]/(s-t^2,s-a)\cong\Spec k[t]/(t^2-a)$". Egbert, printed p. 84, computes the same spectrum.
+
+Shichijo, Exercise 3.10(b), printed p. 7, gets it from his Lemma Ex3.10.1,
 $$
-\kappa(y)=k.
+\frac{k[s][t]}{I}\otimes_{k[s]}\frac{k[s]}{J}\cong\frac{k[s][t]}{I+J^e},
 $$
-Hence
-$$
-X_y
-\cong
-\Spec\bigl(k[t]\otimes_{k[s]}k[s]/(s-a)\bigr)
-\cong
-\Spec k[t]/(t^2-a).
-$$
+applied with $I=(s-t^2)$ and $J=(s-a)$.
 :::
 
 :::
 
 ::: {.pf-step #char-two-fibre-not-two-points}
-If $\operatorname{char} k = 2$ and $a \neq 0$, then $X_y$ is a single nonreduced point of residue field $k$, so the assertion of the exercise as printed fails in this case.
+If $\operatorname{char}k=2$ and $a\ne0$, then $X_y$ is a single nonreduced point with residue field $k$, so the assertion of the exercise as printed fails there.
 
 ::: pf-proof
-In characteristic two the Frobenius map of the algebraically closed field $k$ is bijective, so $a=r^2$ for a unique $r\in k$; and $r\ne0$ because $a\ne0$.
+The defect is stated in the comments to Math StackExchange 1709194. Comment 3488648 by kesa (2016-03-22): the two-point reading "is not true in characteristic 2, where you need that $t^2-a$ is separable (i.e. $a$ has two different square roots, else one ends up with the same situation as for $a=0$)". Comment 3489729 by Roland (2016-03-23) agrees: "in characteristic 2 the fiber over $s=a$ consist of a single point with multiplicity 2 exactly like the case $a=0$".
 
-By step [](#closed-fibre-formula){.pf-ref},
+The computation is the card's, from step [](#closed-fibre-formula){.pf-ref}: in characteristic two the Frobenius map of the algebraically closed field $k$ is bijective, so $a=r^2$ for a unique $r\in k$, and $r\ne0$ because $a\ne0$; hence
 $$
-X_y\cong\Spec k[t]/(t^2-a)=\Spec k[t]/\bigl((t-r)^2\bigr).
+X_y\cong\Spec k[t]/(t^2-a)=\Spec k[t]/\bigl((t-r)^2\bigr),
 $$
-The quotient $k[t]/((t-r)^2)$ has the unique prime ideal $(t-r)$, so $X_y$ is a one-point scheme, and $t-r$ is a nonzero nilpotent, so $X_y$ is not reduced.
+which has the unique prime $(t-r)$ and the nonzero nilpotent class of $t-r$.
 :::
 
 :::
 
 ::: {.pf-step #fibre-two-points-char-neq-2}
-Assume $a\ne0$ and $\operatorname{char}k\ne2$.  Then $X_y$ consists of two reduced points, each with residue field $k$.
+Assume $a\ne0$ and $\operatorname{char}k\ne2$. Then $X_y$ consists of two points, each with residue field $k$.
 
 ::: pf-proof
-Choose $r\in k$ with $r^2=a$.  Since $a\ne0$, we have $r\ne0$, and since $2\ne0$ in $k$,
+Kim, Exercise 2.3.10(b), PDF p. 23: "If $a\ne0$ then this is isomorphic to $k\times k$ so we have two points."
+
+Shichijo, Exercise 3.10(b), printed p. 7, writes the same step as
 $$
-r\ne-r.
-$$
-Thus
-$$
-t^2-a=(t-r)(t+r)
-$$
-has two distinct linear factors.  The Chinese remainder theorem gives
-$$
-k[t]/(t^2-a)
+\frac{k[t]}{(t^2-a)}
+=
+\frac{k[t]}{(t-\sqrt a)\cap(t+\sqrt a)}
 \cong
-k[t]/(t-r)\times k[t]/(t+r)
+\frac{k[t]}{(t-\sqrt a)}\oplus\frac{k[t]}{(t+\sqrt a)}
 \cong
-k\times k.
+k\times k
 $$
-Therefore the fibre is the disjoint union of two reduced $k$-points.
+by the Chinese remainder theorem, and notes that each of the two points has residue field $k$.
+
+Egbert, printed p. 84, gives the idempotents: $(1,0)\mapsto\frac1{2\sqrt a}t+\frac12$ and $(0,1)\mapsto-\frac1{2\sqrt a}t+\frac12$, his printed $2\sqrt2$ in the second denominator being a misprint for $2\sqrt a$; the two points are the spectra of $k[t]/(t\mp\sqrt a)$.
+
+All three need $\operatorname{char}k\ne2$: $t-\sqrt a$ and $t+\sqrt a$ are distinct only when $2\sqrt a\ne0$, and the idempotents use $\tfrac1{2}$. Under the printed hypothesis alone, step [](#char-two-fibre-not-two-points){.pf-ref} is the case that fails.
 :::
 
 :::
 
 ::: {.pf-step #fibre-nonreduced-a-zero}
-If $a=0$, then the fibre is a nonreduced one-point scheme.
+If $a=0$, the fibre is a nonreduced one-point scheme.
 
 ::: pf-proof
-By step [](#closed-fibre-formula){.pf-ref},
-$$
-X_0=\Spec k[t]/(t^2).
-$$
-The quotient has the unique prime ideal $(t)$, so the spectrum has one point.  The class of $t$ is nonzero and nilpotent, so the scheme is not reduced.
+Kim, Exercise 2.3.10(b), PDF p. 23: "if $a=0$ then it is $k[t]/(t^2)$ which is a non-reduced one-point scheme". Cais, Exercise 3.10(b), PDF p. 12, and Egbert, printed p. 84, the latter calling it the dual numbers; Shichijo, printed p. 7, adds that $(t^2)$ has the unique maximal ideal $(t)$, and that the spectrum is one point and not reduced.
 :::
 
 :::
 
 ::: {.pf-step #generic-fibre-ring}
-Let $\eta$ be the generic point of $Y$.  Then
+For the generic point $\eta$ of $Y$,
 $$
-\kappa(\eta)=k(s)
-$$
-and
-$$
-X_\eta
-\cong
-\Spec\bigl(k(s)[t]/(t^2-s)\bigr).
+\kappa(\eta)=k(s),
+\qquad
+X_\eta\cong\Spec\bigl(k(s)[t]/(t^2-s)\bigr).
 $$
 
 ::: pf-proof
-The generic point corresponds to the zero prime of $k[s]$, whose residue field is its fraction field $k(s)$.  Base change along
+Kim, Exercise 2.3.10(b), PDF p. 23: "If $\eta$ is the generic point, then the fiber is $\operatorname{Quot}(k[s,t]/(s-t^2))=k(s)[t]/(t^2-s)$ while $Y_\eta=\Spec k(s)$".
+
+Shichijo, Exercise 3.10(b), printed p. 7, computes it by localizing at $S=k[s]\setminus\set0$,
 $$
-k[s]\hookrightarrow k(s)
+\frac{k[s,t]}{(s-t^2)}\otimes_{k[s]}S^{-1}k[s]\cong S^{-1}\frac{k[s,t]}{(s-t^2)}\cong\frac{k(s)[t]}{(t^2-s)},
 $$
-gives
-$$
-k[t]\otimes_{k[s]}k(s)
-\cong
-k(s)[t]/(t^2-s).
-$$
+with $\kappa(\eta)=k(s)$.
+
+Cais, Exercise 3.10(b), PDF p. 12, identifies the same fibre as the primes of $k[s,t]/(s-t^2)$ contracting to $(0)$, those containing no polynomial in $s$, and finds the single one $(s-t^2)$.
 :::
 
 :::
 
 ::: {.pf-step #t2-s-irreducible}
-The polynomial
-$$
-t^2-s\in k(s)[t]
-$$
-is irreducible in every characteristic.
+The polynomial $t^2-s\in k(s)[t]$ is irreducible.
 
 ::: pf-proof
-A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
+Shichijo, Exercise 3.10(b), printed p. 7: "$t^2-s$ is an irreducible polynomial with coefficients in $k(s)$, so this ring is a field". Cais, PDF p. 12, and Egbert, printed p. 84, state the same: the quotient is a field, of degree two in $t$.
 
-But the discrete valuation $v_s$ on $k(s)$ associated to the prime $(s)$ satisfies
-$$
-v_s(s)=1.
-$$
-Every square has even $v_s$-valuation.  Therefore $s$ is not a square in $k(s)$, so $t^2-s$ is irreducible.
+The card's check of the assertion is the valuation: $v_s(s)=1$ is odd, and every square in $k(s)$ has even $v_s$-valuation, so $s$ is not a square and the quadratic $t^2-s$ has no root. This holds in every characteristic, since it uses no separability.
 :::
 
 :::
@@ -333,27 +337,17 @@ Every square has even $v_s$-valuation.  Therefore $s$ is not a square in $k(s)$,
 ::: {.pf-step #generic-fibre-degree-two}
 The generic fibre is a one-point scheme whose residue field has degree two over $k(s)$:
 $$
-\boxed{
-X_\eta
-=
-\Spec k(s)(\sqrt{s}),
-\qquad
-[\kappa(X_\eta):k(s)]=2.}
+\boxed{X_\eta=\Spec k(s)(\sqrt s),\qquad [\kappa(X_\eta):k(s)]=2.}
 $$
 
 ::: pf-proof
-By step [](#t2-s-irreducible){.pf-ref}, the quotient
-$$
-k(s)[t]/(t^2-s)
-$$
-is a field and has vector-space dimension $2$ over $k(s)$.
-The spectrum of a field is one point.
+Shichijo, Exercise 3.10(b), printed p. 7: the quotient is a field, so $X_y=\Spec k(s)[t]/(t^2-s)$ "is a one point space", and its residue field is a degree two extension of $k(\eta)$. Kim, PDF p. 23, and Egbert, printed p. 84, conclude the same from the degree of the defining polynomial; Cais, PDF p. 12, writes it as a one-point scheme whose residue field is a degree-two extension of $k(s)$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#char-two-fibre-not-two-points){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the closed-fibre statements, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
+Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} are the published proof of (a). Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref} and [](#fibre-two-points-char-neq-2){.pf-ref} are the published proof of the two-point assertion, which they give under $\operatorname{char}k\ne2$; [](#fibre-nonreduced-a-zero){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} are the published proof of the other two assertions of (b), in every characteristic. Step [](#char-two-fibre-not-two-points){.pf-ref} is the published statement of the defect in characteristic two together with the card's computation of the fibre there.
 :::
 
 :::
@@ -365,7 +359,7 @@ The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, a
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), text version `tmp/sources/hartshorne-solutions-kim.md`, Chapter II §3, Exercise 3.10, PDF p. 23, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's (a) reduces to $\Spec(B\otimes_A\kappa(\mathfrak p))$, decomposes $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ and compares topologies after reducing to the case of a domain base and the generic point; (b) computes $k[t]/(t^2-a)$ and reads off $k\times k$ for $a\neq0$ and $k(s)[t]/(t^2-s)$ for the generic fibre.
-The proof above is the same computation with the homeomorphism proved on closed subsets and on overlaps, and it separates the characteristic two case, where $a$ is a square and the fibre over $a\neq0$ is the one-point scheme $\Spec k[t]/((t-r)^2)$; Kim's step $k[t]/(t^2-a)\cong k\times k$ needs $\operatorname{char}k\neq2$.
-Agree on (a), on $a=0$ and on the generic fibre.
+The proof above is the published argument with its sources named at each step. For (a), Cais, Exercise 3.10(a), PDF p. 12, is the complete argument --- reduction to $Y=\Spec A$ and $X=\Spec B$ by the universal property, the factorization of $p$ through $\Spec(B\otimes_AA_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 7, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(B_{\mfp}/\mfp B_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
+
+Two of the six parts are not published in the form the exercise prints. The two-point assertion for $a\ne0$ is published only under $\operatorname{char}k\ne2$: all four sources pass from $k[t]/(t^2-a)$ to $k\times k$ without saying that the two roots must be distinct, and only Math StackExchange 1709194 records that the printed claim fails in characteristic two (comments 3488648 and 3489729, quoted in step [](#char-two-fibre-not-two-points){.pf-ref}). The irreducibility of $t^2-s$ over $k(s)$, finally, is asserted by the four sources rather than proved; the valuation check in step [](#t2-s-irreducible){.pf-ref} is the card's.
 :::
