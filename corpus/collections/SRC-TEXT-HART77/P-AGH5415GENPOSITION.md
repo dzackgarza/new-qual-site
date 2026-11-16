@@ -94,8 +94,8 @@ audit:
     negative-curve-is-minus-one-curve asserted is removed; the mathematics of
     the sentence it qualified, that the pair bound fails precisely in the line
     case, is kept. Part (c) is unchanged and stays unproved here: the
-    properness of the bad locus is asserted and not derived, and the step on
-    part (c) and the qed step say so. Not checked: the card's own 56 and 240
+    properness in bad-locus-proper-closed is asserted and not derived, and that
+    step and the qed remark say so. Not checked: the card's own 56 and 240
     tables were not re-enumerated, Dolgachev's Proposition 8.2.15 was not
     re-read, and nothing was searched for a published proof of the properness
     in (c). The event of 2026-11-16 above had been rewritten in place; it is
@@ -117,7 +117,7 @@ audit:
     Proposition 12 (no irreducible negative curve that is not of the first kind
     unless the points are special), p. 293; I. Dolgachev, Topics in Classical
     Algebraic Geometry, Proposition 8.2.15 with its proof and its table,
-    printed p. 261, and Section 8.2.6, printed p. 263. The paper's text
+    printed pp. 261--262, and Section 8.2.6, printed p. 263. The paper's text
     version marks pages only in ten-page blocks; every printed page above was
     read off the paper's own folios in the PDF, which give PDF 1 = printed 271
     and so PDF 7 = 277 for Lemma 2.1, PDF 8 = 278 for Lemma 2.2, PDF 9 = 279 for
@@ -127,9 +127,7 @@ audit:
     Proposition 12 with Theorem 2a and Dolgachev's count, and (e) from the
     second half of Theorem 4a with Theorem 2a. What it does not prove, and does
     not supply, is named on the card and recorded in COMPLAINTS.md this day:
-    part (c) in full. Part (a), named open here as this event was written, is
-    proved on the card by this day's second pass; the event appended below says
-    how. This card's own
+    part (a) beyond its printed criterion, and part (c) in full. This card's own
     proofs of the parts the sources do not cover --- the six-point class
     computation, the countable-union lemma, the closedness and properness of
     the bad locus, the density argument, and the 56 and 240 tables --- are
@@ -152,11 +150,11 @@ audit:
     F-admissible quadratic transformations, which is the class of sequences
     Hartshorne's definition quantifies over, so "general position" and
     "non-special with respect to Cremona transformations" are the same
-    condition on ordinary configurations with no three collinear. Not checked
-    in that pass: the printed pages of Nagata's Lemma 2.1, cited on the card for
-    the formula relating the degree, the multiplicities and the invariants,
-    since the text version fixes only the ten-page block; they are checked in
-    the event below.
+    condition on ordinary configurations with no three collinear. Not checked:
+    the printed pages of Nagata's Lemma 2.1, cited on the card for the formula
+    relating the degree, the multiplicities and the invariants, since the text
+    version fixes only the ten-page block.
+
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -224,6 +222,54 @@ audit:
     m_1 + m_2 + m_3 > d, and no search outside the brief's sources was made for
     part (c), which stays open.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day, repaired here. (i) Three events of this day
+    --- the source-corrected, the solution-written and the source-checked ones
+    above --- had been rewritten in place by 38d4d33bee, which a dated record
+    does not allow; they are restored to the text they were introduced with, and
+    what that commit changed is recorded in the event it appended, which stands.
+    (ii) The first of the orchestrator's decisions for this repair was not
+    applied to part (c): the card's own proof of it, in the steps
+    uncountable-field-lemma, bad-locus-proper-closed and
+    dense-general-position-extension of 83d33296ae, had been dropped when the
+    solution was turned into a transcription. It is restored, and the steps say
+    that it is the card's own; the second of them asserts the properness of the
+    bad locus and does not derive it, and (c) is open on that assertion. No
+    source listed for the card proves (c), so nothing is transcribed for it.
+    (iii) Nagata's table for r = 8, printed p. 284, has first row
+    (0;-1,0,...,0), the class L(0;-P_1) of an exceptional curve, as the proof of
+    Theorem 2a uses; the card had written (0;1,0,...,0), which is not
+    pre-exceptional. The row is now printed with its negative multiplicity and
+    named.
+    (iv) The converse, that every solution of the two equations is
+    pre-exceptional, is not in Nagata's printed proof of Theorem 2a, which treats
+    only the class of an irreducible exceptional curve with non-negative
+    multiplicities and positive degree. It is Dolgachev's Proposition 8.2.15,
+    printed p. 261, whose statement is that an exceptional vector is exactly one
+    with k_N . v = -1 and v^2 = -1, with his Noether-inequality sketch, and the
+    card now cites that; joining his W(E_N)-orbit to Nagata's similarity classes
+    through Lemma 2.4 also needs W(E_N) to be generated by the permutations and
+    the reflection r_{alpha_123}, which no source read here prints, and the card
+    does not carry that passage.
+    (v) The description of Dolgachev's printed list for N = 8 contradicted
+    itself: the conic family is printed summed to e_7, read literally the last
+    family is not a family of exceptional vectors, and "short by the eight
+    classes -2k_8-e_i" is not what reading the list literally gives. The card now
+    prints the list as printed, says that it is not a list of exceptional vectors
+    read literally, and takes the count from the two tables, the only claim it
+    needs.
+    (vi) The rendered remark said what Nagata's paper "contributes to this
+    exercise" and that the card "uses its table and not its list"; both are
+    bookkeeping and are removed, the mathematical statements kept. Read for this
+    pass: Nagata, On rational surfaces II, printed pp. 276--284 and 291--293, and
+    Dolgachev, Topics in Classical Algebraic Geometry, printed pp. 261--264, in
+    tmp/sources/nagata-1960-rational-surfaces-ii.md (markers in ten-page blocks)
+    and tmp/sources/dolgachev-topics-classical-ag.md (markers in twenty-page
+    blocks, Proposition 8.2.15 from line 9857). Not read: Nagata's Part I, and no
+    search was made outside these sources for part (c).
 ---
 
 ::: {.problem}
@@ -266,7 +312,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2, printed p. 277; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The transcription below proves (a), (b), (d) and (e). Part (c) is not proved by the sources listed, and the card says so at the step concerned rather than supplying the argument.
+The transcription below proves (a), (b), (d) and (e). Part (c) is proved on the card by steps of its own, since no source listed for the card proves it, and the proof rests on an assertion it does not derive.
 
 ::: pf
 
@@ -299,11 +345,76 @@ For the "if" direction, suppose that no three of the six points are collinear an
 
 :::
 
-::: {.pf-step #dense-extension-not-proved}
-Part (c) is not proved by the sources listed.
+::: {.pf-step #uncountable-field-lemma}
+Let $k$ be uncountable. A nonempty open subset of $\PP_k^2$ cannot be covered by countably many proper closed subsets.
 
 ::: pf-proof
-What those sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279: if $P_1,\ldots,P_r$ are independent generic points of $S$ over the prime field, then they are non-special with respect to Cremona transformations. Its proof takes a quadratic transformation with centres at three of the points and observes that its three corresponding base points, together with the remaining points, are again independent generic points over the prime field, so that no three of the $r$ points are collinear; that is a statement about a configuration all of whose $r$ points are generic, and it is not the statement of part (c), which fixes a configuration in general position and asks for a dense set of positions of one further point $P_{r+1}$. The proof carries no statement about the locus of configurations that are special for a fixed finite sequence of transformations, and no such statement is available from it: for each sequence the condition that three of the images be collinear is one closed condition on the configuration, and the special locus is the union of these over all sequences, a countable union rather than one proper closed subset. Neither the density nor the closedness of the bad locus, the first $r$ points being fixed, is therefore printed in either source, and Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. Part (c) is not proved here, and it is recorded in the complaints file.
+This step and the two after it are the card's own: no source listed for this card prints the statement of (c).
+
+Let $U\subseteq\PP^2$ be nonempty open and let
+$$
+Z_1,Z_2,\ldots
+$$
+be proper closed subsets. Each $Z_n$ has only finitely many one-dimensional irreducible components. Since $k$ is uncountable, there are uncountably many lines in $\PP^2$, so one can choose a line $\ell$ which is not a component of any $Z_n$ and which meets $U$.
+
+For every $n$, the intersection
+$$
+\ell\cap Z_n
+$$
+is finite. Hence
+$$
+\ell(k)\cap\bigcup_nZ_n
+$$
+is countable. But $\ell(k)\cong\PP^1(k)$ is uncountable, and $U\cap\ell$ is the complement of finitely many points in $\ell$. Therefore $U\cap\ell$ contains a point outside every $Z_n$.
+:::
+
+:::
+
+::: {.pf-step #bad-locus-proper-closed}
+Fix $P_1,\ldots,P_r$ in general position. For every fixed finite word $w$ of admissible transformations and every fixed triple of labels, the set of points
+$$
+P\in\PP^2
+$$
+for which the word is defined on
+$$
+(P_1,\ldots,P_r,P)
+$$
+and the specified terminal triple is collinear is contained in a proper closed subset of $\PP^2$.
+
+::: pf-proof
+Work on the open subset on which the successive centers occurring in $w$ are noncollinear and all quadratic transformations are defined at the remaining labeled points. The standard quadratic formula [[P-AGH46CREMONA]] shows inductively that every terminal point has homogeneous coordinates which are rational functions of the coordinates of $P$. Collinearity of a specified terminal triple is therefore the vanishing of a rational determinant. Clearing denominators gives a closed condition on the initial point $P$.
+
+The determinant is not identically zero, and the proof of that is the one point of this step that the card does not carry out.
+
+What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion. The natural route is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this card asserts properness and does not prove it: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is therefore not proved on this card for any particular $w$. What is proved without it is (a), (b), and everything in (d) and (e).
+:::
+
+:::
+
+::: {.pf-step #dense-general-position-extension}
+If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position, there is a dense subset
+$$
+\boxed{V\subseteq\PP^2}
+$$
+such that every $P_{r+1}\in V$ makes $P_1,\ldots,P_r,P_{r+1}$ a general-position configuration.
+
+::: pf-proof
+There are only finitely many choices of a triple of labels at each stage, so there are only countably many finite words of admissible transformations. For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore produces only countably many proper closed bad subsets of $\PP^2$ --- *given* the properness which that step asserts and does not prove, and which is the one point of (c) this card leaves open.
+
+Also exclude the finitely many original lines through pairs of the fixed points and the finitely many points $P_i$ themselves. Let $B$ be the union of all these bad subsets and put
+$$
+V=\PP^2\setminus B.
+$$
+Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word. This is exactly the definition of general position, proving (c).
+:::
+
+:::
+
+::: {.pf-step #part-c-open}
+No source listed for this card proves part (c).
+
+::: pf-proof
+What the sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive.
 :::
 
 :::
@@ -334,7 +445,7 @@ A pre-exceptional type has $I=-1$ and $vg=0$, and by Lemma 2.1(iii) of Nagata, p
 $$
 d^2-\sum_{i=1}^r m_i^2=-1,\qquad 3d-\sum_{i=1}^rm_i=1
 $$
-up to permutation. Conversely every solution of those two equations is a pre-exceptional type: Nagata's printed proof of Theorem 2a, pp. 280--281, has $m_1+m_2+m_3>d$ for a class with $I=-1$ and $vg=0$ once the multiplicities are ordered, so that the quadratic transformation lowers the degree, and concludes by induction on the degree; with Lemma 2.4, printed p. 279, turning similarity into permutations and the operator $\mathfrak q$ of Section 2, the solutions are exhausted degree by degree, the first being $\mathbf e_i$ at $d=0$. Dolgachev, Proposition 8.2.15 with its proof and its table, printed p. 261, solves the same two equations for the lattice $I^{1,N}$: the Cauchy--Schwarz bound $(3d-1)^2\le N(d^2+1)$ bounds the degree, the solutions are listed degree by degree, and Noether's inequality with the reflection $r_{\alpha_{123}}$ puts them in one orbit of $W(\mathbf E_N)$. The printed list runs $\mathbf e_i$ at $d=0$, then $\mathbf e_0-\mathbf e_i-\mathbf e_j$, then $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$ --- the full sum at $N=7$ and, in the $N=8$ row, still summed only to $\mathbf e_7$ --- then $-\mathbf k_7-\mathbf e_i$ at $N=7$, and at $N=8$ the classes $-\mathbf k_8+\mathbf e_i-\mathbf e_j$, $-\mathbf k_8+\mathbf e_0-\mathbf e_i-\mathbf e_j-\mathbf e_k$ and $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$. His table, printed p. 261, gives $56$ for $N=7$ and $240$ for $N=8$, the same numbers as the number of pre-exceptional types by Theorem 2a of step [](#classes-are-pre-exceptional){.pf-ref}, and that table is what the count rests on: the printed list itself is short by the eight classes $-2\mathbf k_8-\mathbf e_i$, each of square $-1$ with $\mathbf k_8\cdot v=-1$. Nagata's table for $r=8$, printed p. 284, lists all pre-exceptional types up to permutation, in seven rows $(0;1,0,\ldots,0)$, $(1;1,1,0,\ldots,0)$, $(2;1,1,1,1,1,0,0,0)$, $(3;2,1,1,1,1,1,1,0)$, $(4;2,2,2,1,1,1,1,1)$, $(5;2,2,2,2,2,2,1,1)$ and $(6;3,2,\ldots,2)$, which account for $8+28+56+56+56+28+8=240$ classes; the last row is the degree-$6$ family that Dolgachev's printed list omits. For $r=7$ the four rows give $7+21+21+7=56$.
+up to permutation. Conversely, Dolgachev's Proposition 8.2.15, printed p. 261, states that a vector $v$ of $I^{1,N}$ is exceptional exactly when $\mathbf k_N\cdot v=-1$ and $v^2=-1$, which are the same two equations, and his sketch of completeness is Noether's inequality with the reflection $r_{\alpha_{123}}$; joining his $W(\mathbf E_N)$-orbit to Nagata's similarity classes through Lemma 2.4, printed p. 279, also needs $W(\mathbf E_N)$ to be generated by the permutations together with $r_{\alpha_{123}}$, which no source read for this card prints, so the passage between the two formulations is not carried out here. What is printed is the enumeration. Nagata's table for $r=8$, printed p. 284, lists all pre-exceptional types up to permutation, in seven rows $(0;-1,0,\ldots,0)$, $(1;1,1,0,\ldots,0)$, $(2;1,1,1,1,1,0,0,0)$, $(3;2,1,1,1,1,1,1,0)$, $(4;2,2,2,1,1,1,1,1)$, $(5;2,2,2,2,2,2,1,1)$ and $(6;3,2,\ldots,2)$, which account for $8+28+56+56+56+28+8=240$ classes; its first row is the class $\mathcal L(0;-P_1)$ of an exceptional curve, the only row with a negative multiplicity, and its last is the degree-$6$ class $6l-3e_{i_1}-2e_{i_2}-\cdots-2e_{i_8}$, of square $-1$ and $\mathbf k_8\cdot v=-1$. Dolgachev's table, printed p. 261, gives $240$ at $N=8$ and $56$ at $N=7$, and his printed list for $N=7$ runs $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$, $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$ and $-\mathbf k_7-\mathbf e_i$, which count $7+21+21+7=56$. His printed list for $N=8$ is not to be read as a list of exceptional vectors: its last family, $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$, has square $-14$ and $\mathbf k_8\cdot v=2$.
 :::
 
 :::
@@ -358,7 +469,7 @@ This is the second half of Theorem 4a of Nagata, printed pp. 283--284: if $r\ge9
 :::
 
 ::: pf-qed
-Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e). Part (c) is not proved: step [](#dense-extension-not-proved){.pf-ref} records that the generic-point lemma the sources print is not the dense-extension statement of (c), and that the countable-union lemma the printed hint asks for is in neither source.
+Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} prove (c), which is as strong as the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive, and step [](#part-c-open){.pf-ref} records that no source listed proves it. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
 :::
 
 :::
@@ -367,9 +478,9 @@ Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserv
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.15, printed p. 409, all five parts on that one page. Part (a) is decided in the book and in Yang: the "only if" direction is Yang's (a), the argument of step [](#general-position-six-points){.pf-ref}, and the "if" direction is the verification in the proof of Proposition 4.10, Case 2, printed pp. 403--404, that a quadratic transformation centred at three of six points with no three collinear and not all six on a conic produces six points with those same two properties, which is general position by induction over finite sequences.
 
-M. Nagata, *On rational surfaces, II*, Mem. Coll. Sci. Univ. Kyoto Ser. A 32 (1960), is the source the book's own note cites ("see Nagata [5, II, p. 283]"), and its Theorem 4a is the printed theorem at those pages. What it contributes to this exercise: Section 2(c) with Lemma 2.2, printed pp. 278--279, for the identification of general position with non-speciality, which is the hypothesis of Theorem 2a and of Proposition 12; Proposition 3, printed p. 279, for the criterion for special points, that some type similar to $(1,1,1,1,0,\ldots,0)$, with $r-3$ zeros, the class of a line through three of the points, has a nonempty effective system; Lemma 2.4, printed p. 279, for the descent by the operator $\mathfrak q$ that exhausts a similarity class; Lemma 2.5, printed p. 279, for the generic-point statement that (c) is a spreading-out of but is not; Theorem 2a, printed pp. 280--281, for the bijection between pre-exceptional types and irreducible exceptional curves of the first kind; Theorem 4a, printed pp. 283--284, for finiteness at $r\le8$, with its table of pre-exceptional types for $r=8$ on p. 284, and for the infinite family at $r=9$, which is the starred part (e); and Proposition 12, printed p. 293, for the statement that an irreducible curve of negative self-intersection that is not of the first kind exists only when the points are special, which is the half of (d) that the count of classes does not give.
+M. Nagata, *On rational surfaces, II*, Mem. Coll. Sci. Univ. Kyoto Ser. A 32 (1960), is the source the book's own note cites ("see Nagata [5, II, p. 283]"), and its Theorem 4a is the printed theorem at those pages. The paper contains: Section 2(c) with Lemma 2.2, printed pp. 278--279, the identification of general position with non-speciality, which is the hypothesis of Theorem 2a and of Proposition 12; Proposition 3, printed p. 279, the criterion for special points, that some type similar to $(1,1,1,1,0,\ldots,0)$, with $r-3$ zeros, the class of a line through three of the points, has a nonempty effective system; Lemma 2.4, printed p. 279, the descent by the operator $\mathfrak q$ that exhausts a similarity class; Lemma 2.5, printed p. 279, the generic-point statement that (c) is a spreading-out of but is not; Theorem 2a, printed pp. 280--281, the bijection between pre-exceptional types and irreducible exceptional curves of the first kind; Theorem 4a, printed pp. 283--284, finiteness at $r\le8$ with its table of pre-exceptional types for $r=8$ on p. 284, and the infinite family at $r=9$, which is the starred part (e); and Proposition 12, printed p. 293, the statement that an irreducible curve of negative self-intersection that is not of the first kind exists only when the points are special.
 
-Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof and its table, printed p. 261, and Section 8.2.6 with Lemma 8.2.18, printed pp. 263--264, classifies and counts the vectors with $\mathbf k_N\cdot v=-1$ and $v^2=-1$, which are the classes with $C\cdot K_X=-1$ and $C^2=-1$, at $56$ for $N=7$ and $240$ for $N=8$; Section 8.2.6 explains why on a Del Pezzo surface the image of each exceptional vector is a $(-1)$-curve, which is Dolgachev's route to the same realization that Theorem 2a gives here. Two defects of that printed passage are worth naming, since the card uses its table and not its list: the degree bound the proof draws from $(3d-1)^2\le N(d^2+1)$ is not what that inequality gives, which is $d\le3$ at $N=7$ and, the equality case $d=7$ forcing every multiplicity to equal $5/2$, $d\le6$ at $N=8$; and the printed list for $N=8$, unlike the table, is short by the eight vectors $-2\mathbf k_8-\mathbf e_i$, each of square $-1$ with $\mathbf k_8\cdot v=-1$, which are Nagata's row $(6;3,2,\ldots,2)$. The counts $56$ and $240$ are unaffected, and they are what the card uses.
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof and its table, printed p. 261, and Section 8.2.6 with Lemma 8.2.18, printed pp. 263--264, classifies and counts the vectors with $\mathbf k_N\cdot v=-1$ and $v^2=-1$, which are the classes with $C\cdot K_X=-1$ and $C^2=-1$, at $56$ for $N=7$ and $240$ for $N=8$; Section 8.2.6 explains why on a Del Pezzo surface the image of each exceptional vector is a $(-1)$-curve, which is Dolgachev's route to the same realization that Theorem 2a gives here. Three defects of that printed passage are worth naming. The degree bound the proof draws from $(3d-1)^2\le N(d^2+1)$ is not what that inequality gives, which is $d\le3$ at $N=7$ and, the equality case $d=7$ forcing every multiplicity to equal $5/2$, $d\le6$ at $N=8$. The list for $N=8$ reads, after the classes $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$ and $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$, the families $-\mathbf k_8+\mathbf e_i-\mathbf e_j$, $-\mathbf k_8+\mathbf e_0-\mathbf e_i-\mathbf e_j-\mathbf e_k$ and $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$, and the last of these, read as it stands, is not a family of exceptional vectors; so the printed list is not to be read as a list of them. And even read so as to make it one, it does not reach the degree $6$ of Nagata's row $(6;3,2,\ldots,2)$ on p. 284, which is an exceptional class: $-2\mathbf k_8-\mathbf e_i$ has square $-1$ and $\mathbf k_8\cdot v=-1$. The counts $56$ and $240$ stand, in his table and in Nagata's.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a) --- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ --- and p. 295 for the rest: (b) is the single line "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and seven for $r=8$ whose counts make $240$, and there is no entry for the starred (e). His (b) cites the corollary at p. 291, which is the eight-point criterion and not the invariance of the definition.
 
