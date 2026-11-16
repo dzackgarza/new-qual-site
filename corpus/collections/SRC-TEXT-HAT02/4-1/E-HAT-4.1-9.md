@@ -21,12 +21,13 @@ audit:
     as the window centered at $\pi_1(A,x_0)$; it is the window centered at $\pi_1(X,x_0)$, its third
     term. The corrected paragraph gives the whole sequence and both windows, and the window centered
     at $\pi_1(A,x_0)$ is $\pi_2(X)\to\pi_2(X,A)\to\pi_1(A)\to\pi_1(X)\to\pi_1(X,A)$. (2) Both windows
-    are now proved. The group chase's step $h(\gamma(c)^{-1}c')=1$ needs a homomorphism out of the
-    centre, which these windows lack; the replacement uses exactness at the centre's target instead,
-    with the two-sided invertibility of the bijections at the surrounding terms. The only
-    non-abstract step is the observation that two loops at $y_0$ with the same class in
-    $\pi_1(Y,C,y_0)$ differ by the image of a loop in $C$, read off the boundary of the homotopy
-    through paths from $C$ to $y_0$. (3) Part (b) now treats the set-valued tail: it names the two
+    are now proved. The group chase applies unchanged to the first of them, the pointed set there
+    entering only through a bijection; at the second it stalls at the single step
+    $h(\gamma(c)^{-1}c')=h'\gamma(c)^{-1}h'(c')$, which needs a homomorphism where the chase has the
+    map $\pi_1(Y,y_0)\to\pi_1(Y,C,y_0)$. That step is replaced by exactness at the centre's target
+    and by the observation that two loops at $y_0$ with the same class in $\pi_1(Y,C,y_0)$ differ by
+    the image of a loop in $C$, read off the boundary of the homotopy through paths from $C$ to
+    $y_0$. (3) Part (b) now treats the set-valued tail: it names the two
     windows that exist, centred at $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, proves the injectivity half
     at each by the same chase, and states that the surjectivity halves are not established, with the
     reason (the difference of two classes over the same image in $\pi_1(Y,D)$ is a path in $C$
