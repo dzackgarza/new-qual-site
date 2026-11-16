@@ -98,7 +98,7 @@ audit:
     with the record kept in COMPLAINTS.md.
 - event: source-corrected
   by: claude
-  date: 2026-11-17
+  date: 2026-11-16
   note: >-
     Reader's report on issue #121, third pass, one mislabel and no change of
     mathematics. The 2026-11-16 note above names the three transpositions
@@ -113,7 +113,7 @@ audit:
     are as the reader accepted them.
 - event: source-corrected
   by: claude
-  date: 2026-11-17
+  date: 2026-11-16
   note: >-
     Four further repairs on the same pass, none of them on the reader's list.
     First, and the only mathematical one: the invariance of the cross ratio was
@@ -140,6 +140,36 @@ audit:
     that all located sets state a threshold; Shichijo asserts the converse
     without one, and the three that do state it state it as r <= 3, which the
     card refutes at r = 3. The line now names them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Record of a date, on the reader's report of issue #121's fourth pass. The
+    two events above are dated 2026-11-17 and were written and committed on
+    2026-11-16: the (bc) mislabel in a9d902a1a9 (committer date 2026-11-16
+    07:15:38), and the four repairs of the (ab), (bc), (cd) computation, the
+    normalizing composite rho o phi^{-1}, the three retained sets and the
+    Cutrone--Marshburn punctuation in 27598ae933 (2026-11-16 07:30:29). A
+    record carries the day of the commit that lands it, so 2026-11-16 is
+    their date. They are left unedited, as dated events must be, and their
+    content stands: the three transpositions are (ab), (bc), (cd), the
+    normalizing map of [phi a, phi b, phi c, phi d] is rho o phi^{-1}, and the
+    threshold line and the quotation are as they state. This event is the
+    record of the dates, and nothing else on the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fifth pass: two dates, no mathematics. The
+    two source-corrected events above are dated 2026-11-17, a day that had not
+    happened when they were written and committed: the (bc) mislabel in
+    a9d902a1a9 (committer date 2026-11-16 07:15:38) and the four further
+    repairs in 27598ae933 (committer date 2026-11-16 07:30:29). A record
+    carries the day of the commit that lands it, so both are dated 2026-11-16
+    now, and their text is untouched. The "Record of a date" event below left
+    the dates as written; the reader of this pass requires the field itself to
+    carry the commit's day. Nothing else on the card changes.
+
 ---
 
 ::: {.problem}
