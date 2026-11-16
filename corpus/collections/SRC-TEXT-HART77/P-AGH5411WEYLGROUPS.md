@@ -43,6 +43,67 @@ audit:
     arguments and root-sign conjugation explicit. The final order calculation
     uses only the standard faithful geometric representation and root-
     stabilizer theorem for finite Coxeter/Weyl groups.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published-solution pass for issue #121. Read the printed exercise in
+    Hartshorne, Algebraic Geometry (1977), V.4.11, printed p. 408 (text
+    version tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed
+    p. N is PDF p. N+15), with Proposition 4.10 and Remark 4.10.1, printed
+    pp. 403-405, and Theorem 4.9, printed pp. 402-403. Read at the cited
+    places: Math StackExchange 200840, answer 247553 by user26857, text
+    version tmp/sources/mse-200840-symmetric-group-presentation.md;
+    National Taiwan University Algebraic Geometry II (2020 Spring),
+    Chapter V §4 Exercise 11 by Pei-Hsuan Chang, printed pp. 17-18, text
+    version tmp/sources/ntu-ag2-chapter5.md, and the same pages of the PDF
+    for the images of the 27 lines; Dolgachev, Topics in Classical
+    Algebraic Geometry (September 27, 2010), Proposition 8.2.15 and
+    Corollary 8.2.16, printed pp. 261-262, Theorem 9.1.2 and Proposition
+    9.1.3, printed pp. 320-321, text version
+    tmp/sources/dolgachev-topics-classical-ag.md, with the printed folios
+    read in the PDF, where printed p. N is PDF p. N+10; Math StackExchange
+    4583421, answers 4736813 and 4736825, text version
+    tmp/sources/mse-4583421-coxeter-e6-word-processing.md. Checked: the
+    arithmetic of the two order computations (27*16*120 = 27*16*10*6*2 =
+    72*720 = 51840); that 36 double-sixers give 72 sixers and one root per
+    sixer; that Dolgachev's Corollary 8.2.16 prints 5! for W(E_4) through
+    its expression for W(E_5). Not checked: no source outside these was
+    read for this card, and the faithfulness of the geometric
+    representation is cited (Humphreys, §5.4) rather than verified.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the published arguments transcribed, each step
+    naming its source with its answer id or printed page; the card's
+    earlier three-part proof, which was not a transcription, is replaced.
+    Part (a) is answer 247553's coset bound (steps an-homomorphism,
+    an-cosets, an-isomorphism); part (b) is NTU Exercise 11(b) (step
+    e6-homomorphism) with the generation of G cited to the book's (4.10)
+    and Remark 4.10.1 (step e6-surjective); part (c) is Dolgachev's
+    Corollary 8.2.16 and Proposition 9.1.3 for the order of the Weyl group
+    (steps weyl-order and sixers) and the book's Remark 4.10.1 for the
+    order of G (step group-order-g), then equal orders (step
+    e6-isomorphic-g). The remark names the two partial treatments of (c) on
+    Math StackExchange 4583421 and what each leaves out.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the card beside each source. Checked the two coset computations
+    of step an-cosets case by case, including the braid relation in the
+    case j < i-1 and the use of tau_{j+1} in H; checked that step
+    an-isomorphism's induction matches the source's (H a quotient of the
+    group on tau_2,...,tau_{n-1}); checked the five Coxeter relations of
+    the E_6 diagram against the listed images of y, and that the list fixes
+    21 of the 27 images with y^2 = 1 supplying the other six; checked that
+    G's order 27*16*10*6*2 from Remark 4.10.1 equals 72*6! and
+    27*16*120. Left open and recorded on the card: the source's generation
+    of G is the book's (4.10) rather than NTU's, and the two published
+    coset arguments for the order of the abstract group (answer 4736813,
+    answer 4736825) are partial, the first skipping its verification; the
+    2026-11-16 COMPLAINTS record names that.
 ---
 
 ::: {.problem}
@@ -86,746 +147,278 @@ Note: See Manin $[3, \S 25,26]$ for more about Weyl groups, root systems, and ex
 :::
 
 ::: {.solution}
-We write the Coxeter generators of part (a) as
-$$
-s_1,\ldots,s_{n-1}.
-$$
-For the cubic surface in parts (b)--(c), write
-$$
-\Pic S
-=
-\ZZ h\oplus\bigoplus_{i=1}^6\ZZ e_i,
-\qquad
-h^2=1,
-\qquad
-e_i^2=-1,
-$$
-with all other pairings zero. Then
-$$
-K_S=-3h+\sum_{i=1}^6e_i.
-$$
-We use the standard names
-$$
-E_i=e_i,
-\qquad
-F_{ij}=h-e_i-e_j,
-\qquad
-G_i=2h-\sum_{j\ne i}e_j
-$$
-for the $6+15+6=27$ line classes [[FE-SRFCUBIC]].
+
+Parts (a), (b) and (c) are transcribed from published sources, and each step names its source with
+its answer id or its printed page. Part (a) is Math StackExchange question 200840, answer 247553
+(user26857, 2012-11-29; text version `tmp/sources/mse-200840-symmetric-group-presentation.md`),
+which bounds the group by the number of cosets of a parabolic subgroup. Part (b) is the National
+Taiwan University *Algebraic Geometry II*, 2020 Spring, Chapter V §4, Exercise 11, by Pei-Hsuan
+Chang, printed p. 18 (text version `tmp/sources/ntu-ag2-chapter5.md`), which checks the Coxeter
+relations for the two kinds of generator; the generation of $G$ by these elements is (4.10) and
+Remark 4.10.1 of the book, printed pp. 403--405. Part (c) uses the order of the Weyl group
+$\mathbf E_6$ from I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010),
+Corollary 8.2.16, printed p. 262, and Proposition 9.1.3, printed p. 321 (text version
+`tmp/sources/dolgachev-topics-classical-ag.md`), together with the order of $G$ from the book's
+Remark 4.10.1, printed p. 405.
 
 ::: pf
 
-::: {.pf-step #an-surjects-onto-sn}
-The assignment
+::: {.pf-step #an-homomorphism}
+For $n\ge2$ the assignment
 $$
-s_i\longmapsto(i,i+1)
+x_i\longmapsto(i,i+1),
+\qquad 1\le i\le n-1,
 $$
 defines a surjective homomorphism
 $$
-\mathbf A_n\longrightarrow\Sigma_n.
+\varphi:\mathbf A_n\longrightarrow\Sigma_n .
 $$
 
 ::: pf-proof
-Each adjacent transposition is an involution. Two adjacent transpositions
-with disjoint supports commute, so their product has order two, while
-$$
-((i,i+1)(i+1,i+2))^3=1.
-$$
-Thus the defining Coxeter relations are satisfied. The adjacent
-transpositions generate the full symmetric group, so the homomorphism is
-surjective.
+The transposition $(i,i+1)$ is an involution; two such transpositions with disjoint supports commute,
+so their product has order $2$; and $((i,i+1)(i+1,i+2))^3=1$. Hence the images satisfy the defining
+relations of $\mathbf A_n$, so $\varphi$ is a homomorphism, and the adjacent transpositions generate
+$\Sigma_n$, so $\varphi$ is surjective. This is the opening of the first source, which calls the
+relations the Moore relations and says of them only that "it's easily seen that these transpositions
+satisfy" them, and that "it's well known that $S_n$ is a homomorphic image of $G$".
 :::
 
 :::
 
-::: {.pf-step #coset-representatives}
-Let
+::: {.pf-step #an-cosets}
+Let $G$ be the group with generators $\tau_1,\ldots,\tau_{n-1}$ and the Moore relations, and let
 $$
-W_n=\mathbf A_n,
-\qquad
-W_{n-1}=\langle s_1,\ldots,s_{n-2}\rangle.
+H=\langle\tau_2,\ldots,\tau_{n-1}\rangle\le G .
 $$
-Every right coset of $W_{n-1}$ in $W_n$ is represented by one of
+Then
 $$
-1,
-\quad
-s_{n-1},
-\quad
-s_{n-1}s_{n-2},
-\quad\ldots\quad,
-s_{n-1}s_{n-2}\cdots s_1.
+[G:H]\le n .
 $$
 
 ::: pf-proof
 Put
 $$
-r_j=s_{n-1}s_{n-2}\cdots s_j
-\qquad(1\le j\le n-1),
-$$
-and put $r_n=1$. We show that the union
-$$
-\mathcal U=\bigcup_{j=1}^nW_{n-1}r_j
-$$
-is stable under right multiplication by every generator $s_i$.
-
-If $i<j-1$, then $s_i$ commutes with every factor of $r_j$, so
-$$
-r_js_i=s_ir_j
-$$
-and the coset is unchanged. If $i=j-1$, then
-$$
-r_js_{j-1}=r_{j-1}.
-$$
-If $i=j$, the last factor cancels and
-$$
-r_js_j=r_{j+1}.
-$$
-
-Finally suppose $i>j$. Repeatedly using the braid relation
-$$
-s_is_{i-1}s_i=s_{i-1}s_is_{i-1}
-$$
-and commuting nonadjacent generators gives
-$$
-r_js_i=s_{i-1}r_j.
-$$
-Since $i-1\le n-2$, the left factor lies in $W_{n-1}$. Thus every
-$W_{n-1}r_j$ is carried into one of the displayed cosets by right
-multiplication by a generator. Because $1\in\mathcal U$, every word in the
-generators lies in $\mathcal U$.
-:::
-
-:::
-
-::: {.pf-step #an-order-bound}
-One has
-$$
-\boxed{\cardinality{\mathbf A_n}\le n!}.
-$$
-
-::: pf-proof
-Step [](#coset-representatives){.pf-ref} gives at most $n$ right cosets of $W_{n-1}$. Hence
-$$
-\cardinality{W_n}\le n\cardinality{W_{n-1}}.
-$$
-Starting with $\cardinality{W_2}\le2$ and iterating gives
-$$
-\cardinality{W_n}\le n!.
-$$
-:::
-
-:::
-
-::: {.pf-step #an-iso-sn}
-Therefore
-$$
-\boxed{\mathbf A_n\cong\Sigma_n.}
-$$
-
-::: pf-proof
-Step [](#an-surjects-onto-sn){.pf-ref} gives a surjection onto the group of order $n!$, while step [](#an-order-bound){.pf-ref}
-gives at most $n!$ elements in the source. Thus the source has exactly
-$n!$ elements and the surjection is injective. This proves part (a).
-
-We now turn to the cubic surface.
-:::
-
-:::
-
-::: {.pf-step #simple-roots-square-minus-two}
-Put
-$$
-\alpha_i=e_i-e_{i+1}
-\qquad(1\le i\le5),
-$$
-and
-$$
-\beta=h-e_1-e_2-e_3.
-$$
-All six classes have square $-2$ and are orthogonal to $K_S$.
-
-::: pf-proof
-For each $i$,
-$$
-\alpha_i^2=e_i^2+e_{i+1}^2=-2,
-$$
-and
-$$
-K_S\cdot\alpha_i=0.
-$$
-Also
-$$
-\beta^2=1-1-1-1=-2
-$$
-and
-$$
-K_S\cdot\beta=-3+1+1+1=0.
-$$
-:::
-
-:::
-
-::: {.pf-step #reflections-formulas}
-For a class $\gamma$ with $\gamma^2=-2$, define
-$$
-s_\gamma(D)=D+(D\cdot\gamma)\gamma.
-$$
-Then $s_{\alpha_i}$ interchanges $e_i,e_{i+1}$ and fixes the other standard
-basis classes, while $s_\beta$ is the action on $\Pic S$ of the quadratic
-transformation based at $P_1,P_2,P_3$.
-
-::: pf-proof
-For $\alpha_i=e_i-e_{i+1}$,
-$$
-e_i\cdot\alpha_i=-1,
+\sigma_i=\tau_1\tau_2\cdots\tau_{i-1},
 \qquad
-e_{i+1}\cdot\alpha_i=1,
+H_i=H\sigma_i,
+\qquad 1\le i\le n,
 $$
-so
+so that $H_1=H$. Two computations. First, $H_{i+1}\tau_i=H_i$ for $1\le i\le n-1$, since
+$\sigma_{i+1}\tau_i=\sigma_i$. Second, if $j\ne i-1,i$ then $H_i\tau_j=H_i$: for $j\ge i+1$ the
+generator $\tau_j$ commutes with $\sigma_i$, so
 $$
-s_{\alpha_i}(e_i)=e_{i+1},
-\qquad
-s_{\alpha_i}(e_{i+1})=e_i.
+H_i\tau_j=H\sigma_i\tau_j=H\tau_j\sigma_i=H\sigma_i=H_i
 $$
-Every other basis vector is orthogonal to $\alpha_i$.
-
-For $\beta$, one finds
+because $\tau_j\in H$; and for $1\le j<i-1$ one writes
+$\sigma_i=\sigma_j\tau_j\tau_{j+1}\sigma$ with $\sigma$ commuting with $\tau_j$ and computes
 $$
-s_\beta(h)=2h-e_1-e_2-e_3,
+H_i\tau_j
+=H\sigma_j\tau_j\tau_{j+1}\sigma\tau_j
+=H\sigma_j(\tau_j\tau_{j+1}\tau_j)\sigma
+=H\sigma_j(\tau_{j+1}\tau_j\tau_{j+1})\sigma
+=H\tau_{j+1}\sigma_j\tau_j\tau_{j+1}\sigma
+=H\sigma_i ,
 $$
-and
-$$
-\begin{aligned}
-s_\beta(e_1)&=h-e_2-e_3,\\
-s_\beta(e_2)&=h-e_1-e_3,\\
-s_\beta(e_3)&=h-e_1-e_2,
-\end{aligned}
-$$
-while $e_4,e_5,e_6$ are fixed. These are exactly the pullback formulas for
-the standard quadratic transformation centered at the first three points,
-as in [[P-AGH542QUADTRANSFORM]].
+using the braid relation and $\tau_{j+1}\in H$. Since $G$ is generated by the $\tau_i$, these two
+relations show that every right coset of $H$ in $G$ is one of $H_1,\ldots,H_n$, so there are at most
+$n$ of them. This is the first source's coset computation; it writes $G=\langle\tau_1,\ldots,\tau_n\rangle$
+where the last index is $n-1$.
 :::
 
 :::
 
-::: {.pf-step #e6-coxeter-relations}
-The six reflections of step [](#reflections-formulas){.pf-ref} satisfy the Coxeter relations of the
-$E_6$ diagram, with $s_\beta$ attached to $s_{\alpha_3}$.
+::: {.pf-step #an-isomorphism}
+$\mathbf A_n\cong\Sigma_n$, proving part (a).
 
 ::: pf-proof
-The only nonzero pairings between distinct simple roots are
+Induct on $n$, the case $n=1$ being trivial. The subgroup $H$ of step [](#an-cosets){.pf-ref} is a
+homomorphic image of the group with generators $\tau_2,\ldots,\tau_{n-1}$ and the Moore relations
+that do not involve $\tau_1$, so $\cardinality{H}\le\cardinality{\Sigma_{n-1}}$ by induction, and step
+[](#an-cosets){.pf-ref} gives
 $$
-\alpha_i\cdot\alpha_{i+1}=1
-\qquad(1\le i\le4)
+\cardinality{G}\le n\cardinality{H}\le n\cdot(n-1)!=n! .
 $$
-and
-$$
-\beta\cdot\alpha_3=1.
-$$
-All other distinct pairings are zero.
-
-If two square-$-2$ roots are orthogonal, their reflections commute, so the
-product has order two. If $\gamma^2=\delta^2=-2$ and
-$$
-\gamma\cdot\delta=1,
-$$
-then on the span of $\gamma,\delta$ the two reflections are represented in
-that ordered basis by
-$$
-\begin{pmatrix}-1&1\\0&1\end{pmatrix},
-\qquad
-\begin{pmatrix}1&0\\1&-1\end{pmatrix},
-$$
-whose product has order three. Thus the defining $E_6$ Coxeter relations
-hold.
+The base of the induction is $n=2$, where $\mathbf A_2=\langle x_1\mid x_1^2\rangle$ has order $2$.
+Together with the surjection of step [](#an-homomorphism){.pf-ref} onto the group of order $n!$,
+this gives $\cardinality{G}=n!$ and $G\cong\Sigma_n$. This is the first source's induction.
 :::
 
 :::
 
-::: {.pf-step #homomorphism-to-g}
-Hence the assignments in part (b) define a homomorphism
+::: {.pf-step #e6-homomorphism}
+The assignment of part (b) --- $x_1,\ldots,x_5$ to the permutations $(12),(23),\ldots,(56)$ of the
+$E_i$ and $y$ to the quadratic transformation based at $P_1,P_2,P_3$ --- defines a homomorphism
 $$
-\Phi:\mathbf E_6\longrightarrow G.
+\Phi:\mathbf E_6\longrightarrow G ,
 $$
+where $G$ is the group of automorphisms of the configuration of 27 lines (4.10.1).
 
 ::: pf-proof
-Every reflection in step [](#reflections-formulas){.pf-ref} preserves the intersection form and fixes
-$K_S$. It therefore preserves the set of classes satisfying
+The images of $x_1,\ldots,x_5$ satisfy the relations of the diagram $\mathbf A_5$ by step
+[](#an-homomorphism){.pf-ref}. For $y$: the quadratic transformation has order $2$, so
+$\Phi(y)^2=1$; it does not depend on the order of the points $P_1,P_2,P_3$, so it commutes with the
+permutations of $E_1,E_2,E_3$ and hence $\Phi(y)\Phi(x_i)=\Phi(x_i)\Phi(y)$ for $i=1,2,4,5$; and
+$(\Phi(x_3)\Phi(y))^3=1$. The last two are the source's computation from its list of the images of
+the $27$ lines under $\Phi(y)$:
 $$
-L^2=-1,
-\qquad
-K_S\cdot L=-1,
+\Phi(y)(E_i)=F_{jk}\ \ (\{i,j,k\}=\{1,2,3\}),\quad
+\Phi(y)(E_i)=E_i\ \ (i=4,5,6),
 $$
-which is exactly the set of $27$ line classes [[FE-SRFCUBIC]]. Since it also
-preserves pairwise intersection numbers, it preserves the incidence graph of
-the $27$ lines. Thus the reflections define elements of $G$, and step [](#e6-coxeter-relations){.pf-ref}
-shows that the Coxeter presentation gives the asserted homomorphism.
+$$
+\Phi(y)(F_{ij})=F_{ij}\ \ (i\in\{1,2,3\},\ j\in\{4,5,6\}),\quad
+\Phi(y)(F_{ij})=G_k\ \ (\{i,j,k\}=\{4,5,6\}),
+$$
+$$
+\Phi(y)(G_i)=G_i\ \ (i=1,2,3).
+$$
+The list gives the images of $21$ of the $27$ lines; the images of $F_{12},F_{13},F_{23}$ and
+$G_4,G_5,G_6$ are then $E_3,E_2,E_1$ and $F_{56},F_{46},F_{45}$, as $\Phi(y)^2=1$ requires, since
+$y$ is the involution of the configuration that the quadratic transformation induces.
 :::
 
 :::
 
-::: {.pf-step #incidence-relations}
-The incidence relations between the three families of lines are:
-$$
-\begin{aligned}
-E_i\cdot E_j&=0 &&(i\ne j),\\
-E_i\cdot F_{jk}&=
-\begin{cases}1&i\in\{j,k\},\\0&i\notin\{j,k\},\end{cases}\\
-E_i\cdot G_j&=
-\begin{cases}0&i=j,\\1&i\ne j,\end{cases}\\
-F_{ij}\cdot F_{kl}&=1-\cardinality{\{i,j\}\cap\{k,l\}},\\
-F_{ij}\cdot G_k&=
-\begin{cases}1&k\in\{i,j\},\\0&k\notin\{i,j\},\end{cases}\\
-G_i\cdot G_j&=0 &&(i\ne j).
-\end{aligned}
-$$
+::: {.pf-step #e6-surjective}
+$\Phi$ is surjective, which proves part (b).
 
 ::: pf-proof
-Substitute the divisor classes
-$$
-E_i=e_i,
-\quad
-F_{ij}=h-e_i-e_j,
-\quad
-G_i=2h-\sum_{r\ne i}e_r
-$$
-into the intersection form
-$$
-h^2=1,
-\qquad
-e_i^2=-1,
-\qquad
-h\cdot e_i=e_i\cdot e_j=0\quad(i\ne j).
-$$
-Each displayed formula follows immediately.
-
-Call an unordered set of six mutually skew lines a **six**.
+The source's last sentence cites the book: "the proof of proposition V.4.10 in the textbook says
+permutation of $\{E_1,\ldots,E_6\}$ and quadratic transformation generate $G$, so $\varphi$ is
+surjective". In the book, this is Remark 4.10.1, printed pp. 404--405: naming $E_1,\ldots,E_6$
+uniquely determines the names of the remaining $21$ lines, since $F_{ij}$ is the unique line
+meeting $E_i,E_j$ and no other $E_k$ and $G_j$ is the unique line meeting all $E_i$ except $E_j$;
+by (4.10) every ordered set of six mutually skew lines is the image of $E_1,\ldots,E_6$ under some
+composite of relabellings and quadratic transformations, whose proof in the book, printed
+pp. 403--405, moves one line at a time into the position of $E_i$; and every automorphism of the
+configuration is determined by the images of $E_1,\ldots,E_6$. Hence $G$ is generated by the
+permutations $(12),\ldots,(56)$ and the quadratic transformations, which are exactly the images of
+$x_1,\ldots,x_5,y$ under $\Phi$.
 :::
 
 :::
 
-::: {.pf-step #seventy-two-sixes}
-There are exactly
+::: {.pf-step #weyl-order}
+The order of the group of the exercise is
 $$
-\boxed{72}
-$$
-sixes in the configuration of $27$ lines.
-
-::: pf-proof
-We classify a six by the number of $E$-lines it contains, using step [](#incidence-relations){.pf-ref}.
-
-If it contains all six $E_i$, we obtain the standard six
-$$
-\{E_1,\ldots,E_6\}.
-$$
-If it contains at least two but fewer than six $E$-lines, no $G$-line can
-occur, because a $G_j$ is skew to only the single $E_j$. Every accompanying
-$F_{ab}$ must have both indices outside the chosen $E$-indices. Distinct
-$F$-lines are mutually skew exactly when their two-element index sets meet.
-
-For three chosen $E$-lines, the complementary index set has size three and
-its three pairs form a mutually intersecting family; this gives one six for
-each three-element subset, hence
-$$
-\binom63=20.
-$$
-For two, four, or five chosen $E$-lines, there are not enough pairwise
-intersecting two-element subsets to complete a six. Indeed, on four vertices
-a pairwise-intersecting family of edges has size at most three: if three
-edges form a triangle, no fourth edge meets all three, while otherwise all
-edges share one vertex. On two or one vertices the bound is immediate.
-
-Now suppose there is exactly one $E_i$. The only possible $G$-line is
-$G_i$. Without $G_i$, one would need five pairwise-intersecting edges of the
-complete graph on the remaining five indices, but the largest such family
-has size four. With $G_i$, one needs four such edges. A family of four
-pairwise-intersecting edges on five vertices is necessarily a star: after
-two edges $12,13$, any edge avoiding vertex $1$ must be $23$, and then no
-fourth distinct edge can meet all three $12,13,23$. Thus a four-edge family
-has a common vertex. There are five choices for its center. Hence this case
-contributes
-$$
-6\cdot5=30
-$$
-sixes.
-
-The same argument with $E$ and $G$ interchanged gives $20$ sixes containing
-three $G$-lines and one six containing all six $G_i$. No other number of
-$G$-lines can occur. Therefore the total is
-$$
-1+20+30+20+1=72.
-$$
-:::
-
-:::
-
-::: {.pf-step #five-orbits}
-Under permutations of the six indices, the $72$ sixes fall into five
-orbits represented by
-$$
-\begin{aligned}
-\mathcal S_0&=\{E_1,E_2,E_3,E_4,E_5,E_6\},\\
-\mathcal S_1&=\{F_{12},F_{13},F_{23},E_4,E_5,E_6\},\\
-\mathcal S_2&=\{F_{12},F_{13},F_{14},F_{15},E_6,G_6\},\\
-\mathcal S_3&=\{G_1,G_2,G_3,F_{45},F_{46},F_{56}\},\\
-\mathcal S_4&=\{G_1,G_2,G_3,G_4,G_5,G_6\}.
-\end{aligned}
+\cardinality{\mathbf E_6}=51840 .
 $$
 
 ::: pf-proof
-The five cases in step [](#seventy-two-sixes){.pf-ref} are distinguished by the numbers of $E$- and
-$G$-lines:
+The abstract group of the exercise is the Weyl group $W(\mathbf E_6)$ of the $\mathbf E_6$ root
+lattice, the group generated by the reflections in a root basis of the diagram $E_6$ (Dolgachev,
+§8.2, where the Weyl group of a diagram is defined this way); the two are identified by the
+faithfulness of the geometric representation of a Coxeter group (Humphreys, *Reflection Groups and
+Coxeter Groups*, §5.4). Dolgachev, Corollary 8.2.16, printed p. 262, computes its order from the
+stabilizer of an exceptional vector: the orthogonal complement of $e_N$ in $I^{1,N}$ is
+$I^{N-1}$, so the stabilizer of $e_N$ in $W(\mathbf E_N)$ is $W(\mathbf E_{N-1})$; the orbit of
+$e_N$ is the set of exceptional vectors, of which there are $27$ for $N=6$ by the table of
+Proposition 8.2.15, printed p. 261; and $\#W(\mathbf E_4)=5!=120$. Hence
 $$
-(6,0),
-\quad
-(3,0),
-\quad
-(1,1),
-\quad
-(0,3),
-\quad
-(0,6).
+\#W(\mathbf E_6)=27\cdot\#W(\mathbf E_5)=27\cdot16\cdot120=2^3\cdot3^2\cdot6!=51840 .
 $$
-The symmetric group on the six indices is transitive on each combinatorial
-choice occurring in the classification: on three-element subsets, and on
-ordered pairs consisting of the index $i$ of the unique $E_i$ and the center
-of the four-edge star among the other five indices. Thus the displayed five
-sets are orbit representatives.
+The printed line names $\#W(\mathbf E_4)=5!$ through its value $\#W(\mathbf E_5)=16\cdot\#W(\mathbf E_4)=2^4\cdot5!$,
+and writes $W(\mathbf E_4)\cong S_5$ in a garbled form as "$W(\mathbf E_3)\cong S_5$".
 :::
 
 :::
 
-::: {.pf-step #orbit-connecting-moves}
-Let $s_{ijk}$ denote the conjugate of $s_\beta$ corresponding to the
-quadratic transformation centered at $P_i,P_j,P_k$. Then
+::: {.pf-step #sixers}
+The same order follows from the sixers: $W(\mathbf E_6)$ acts transitively on the sixers, the
+stabilizer of a sixer is $\Sigma_6$, and there are $72$ sixers, so
 $$
-\begin{aligned}
-s_{123}(\mathcal S_0)&=\mathcal S_1,\\
-s_{145}(\mathcal S_1)&=\mathcal S_2,\\
-s_{456}(\mathcal S_1)&=\mathcal S_3,\\
-s_{123}(\mathcal S_3)&=\mathcal S_4.
-\end{aligned}
+\#W(\mathbf E_6)=72\cdot6!=51840 .
 $$
 
 ::: pf-proof
-The subgroup generated by $x_1,\ldots,x_5$ is the full permutation group on
-the six indices by part (a), so every $s_{ijk}$ is a conjugate of $s_\beta$
-and belongs to the image of $\Phi$.
-
-For
+A sixer is a set of six mutually orthogonal exceptional vectors of the $\mathbf E_6$ lattice
+(Dolgachev, §9.1, printed p. 319). Theorem 9.1.2, printed p. 320, lists the $36$ double-sixers,
+that is, the pairs of sixers carried to each other by the reflection in the associated root, which
+are $1+15+20=36$ in number; hence there are $72$ sixers, one for each root. Proposition 9.1.3,
+printed p. 321, states and proves that $W(\mathbf E_6)$ acts transitively on the sixers, that the
+stabilizer of the sixer $(\mathbf a_1,\ldots,\mathbf a_6)$ is $\mathfrak S_6$, and therefore, by
+orbit--stabilizer,
 $$
-\beta_{ijk}=h-e_i-e_j-e_k,
+\#W(\mathbf E_6)=72\cdot720=51840 ,
 $$
-the reflection formula gives the following useful rules. It sends an
-$E$-line indexed by one of $i,j,k$ to the $F$-line on the other two indices;
-it fixes an $F_{ab}$ having exactly one index in $\{i,j,k\}$; and if neither
-$a$ nor $b$ lies in that triple, it sends $F_{ab}$ to the $G$-line whose
-index is the unique remaining sixth index. Applying these rules to the four
-displayed representatives gives exactly the stated identities.
+the count of sixers being the count of roots, as its proof says.
 :::
 
 :::
 
-::: {.pf-step #h-transitive-on-sixes}
-The image
+::: {.pf-step #group-order-g}
 $$
-H=\operatorname{im}(\Phi)\subseteq G
-$$
-acts transitively on all $72$ sixes.
-
-::: pf-proof
-The index-permutation subgroup is transitive on each of the five orbit types
-from step [](#five-orbits){.pf-ref}. Step [](#orbit-connecting-moves){.pf-ref} connects all five types to the standard type.
-Hence every six lies in the $H$-orbit of $\mathcal S_0$.
-:::
-
-:::
-
-::: {.pf-step #stabilizer-is-s6}
-The stabilizer in $G$ of the standard six
-$$
-\mathcal S_0=\{E_1,\ldots,E_6\}
-$$
-is exactly the symmetric group $\Sigma_6$ permuting its six members.
-
-::: pf-proof
-Every permutation of the $E_i$ is realized by the elements
-$x_1,\ldots,x_5$, so $\Sigma_6$ is contained in the stabilizer.
-
-Conversely, an automorphism of the incidence configuration preserving
-$\mathcal S_0$ induces a permutation of its six lines. Once that permutation
-is known, all other $21$ lines are determined by incidence with
-$\mathcal S_0$: the line $F_{ij}$ is the unique line meeting exactly
-$E_i,E_j$ among the six, while $G_i$ is the unique line meeting exactly the
-five $E_j$ with $j\ne i$. Thus an element fixing every $E_i$ fixes all
-$27$ lines. The stabilizer therefore embeds in $\Sigma_6$, and equality
-follows.
-:::
-
-:::
-
-::: {.pf-step #phi-surjective-order}
-The homomorphism
-$$
-\Phi:\mathbf E_6\longrightarrow G
-$$
-is surjective, and
-$$
-\boxed{\cardinality{G}=72\cdot6!=51840.}
+\cardinality{G}=27\cdot16\cdot10\cdot6\cdot2\cdot1=51840 .
 $$
 
 ::: pf-proof
-By step [](#h-transitive-on-sixes){.pf-ref}, the subgroup $H=\operatorname{im}(\Phi)$ is transitive on
-the $72$ sixes. It contains the full stabilizer $\Sigma_6$ of
-$\mathcal S_0$. Hence orbit--stabilizer gives
-$$
-\cardinality{H}\ge72\cdot6!=51840.
-$$
-
-On the other hand $G$ also acts on the $72$ sixes, and step [](#stabilizer-is-s6){.pf-ref} says that
-the stabilizer of $\mathcal S_0$ in $G$ has order $6!$. Therefore
-$$
-\cardinality{G}\le72\cdot6!=51840.
-$$
-Since
-$$
-H\subseteq G,
-$$
-both inequalities are equalities and
-$$
-H=G.
-$$
-This proves part (b).
-
-We finish by estimating the abstract Coxeter group itself.
+This is Remark 4.10.1 of the book, printed pp. 404--405. By (4.10), every ordered set of six
+mutually skew lines among the $27$ is the image of $E_1,\ldots,E_6$ under a unique automorphism of
+the configuration, and every automorphism sends skew lines to skew lines and so arises this way;
+from the incidence relations of the same remark the numbers of choices are $27$ for $E_1$, $16$ for
+$E_2$, $10$ for $E_3$, $6$ for $E_4$, $2$ for $E_5$ and $1$ for $E_6$, which the book multiplies out
+as $27\cdot16\cdot10\cdot6\cdot2=51{,}840$.
 :::
 
 :::
 
-::: {.pf-step #seventy-two-roots}
-In the lattice
+::: {.pf-step #e6-isomorphic-g}
 $$
-K_S^\perp\subseteq\Pic S,
+\mathbf E_6\cong G ,
 $$
-the classes of square $-2$ are exactly the following $72$ roots:
-$$
-\begin{aligned}
-&e_i-e_j &&(i\ne j),\\
-&\pm(h-e_i-e_j-e_k) &&(i<j<k),\\
-&\pm\left(2h-\sum_{i=1}^6e_i\right).
-\end{aligned}
-$$
+which proves part (c).
 
 ::: pf-proof
-Write a root as
-$$
-r=ah-\sum_{i=1}^6b_ie_i.
-$$
-The conditions
-$$
-K_S\cdot r=0,
-\qquad
-r^2=-2
-$$
-are
-$$
-\sum_i b_i=3a,
-\qquad
-\sum_i b_i^2=a^2+2.
-$$
-Cauchy--Schwarz gives
-$$
-9a^2
-=
-\left(\sum_i b_i\right)^2
-\le
-6\sum_i b_i^2
-=
-6a^2+12,
-$$
-so
-$$
-\abs{a}\le2.
-$$
-
-If $a=0$, the equations become
-$$
-\sum b_i=0,
-\qquad
-\sum b_i^2=2,
-$$
-so exactly one $b_i$ is $1$, one is $-1$, and the rest are zero. This gives
-$30$ roots $e_i-e_j$.
-
-If $a=1$, then
-$$
-\sum_i b_i=\sum_i b_i^2=3.
-$$
-Since $m(m-1)\ge0$ for every integer $m$, equality of these sums forces
-each $b_i$ to be $0$ or $1$; exactly three are $1$. This gives
-$$
-\binom63=20
-$$
-roots. The case $a=-1$ gives their negatives, for another $20$.
-
-If $a=2$, the same argument gives
-$$
-\sum b_i=\sum b_i^2=6,
-$$
-so every $b_i=1$, giving one root; $a=-2$ gives its negative. Thus the total
-number is
-$$
-30+20+20+1+1=72.
-$$
-:::
-
-:::
-
-::: {.pf-step #weyl-transitive-on-roots}
-The Weyl group acts transitively on these $72$ roots.
-
-::: pf-proof
-The subgroup generated by $s_{\alpha_1},\ldots,s_{\alpha_5}$ permutes the
-indices, so it is transitive on the roots $e_i-e_j$ up to the evident change
-of ordered pair.
-
-Now
-$$
-s_\beta(e_3-e_4)
-=
-h-e_1-e_2-e_4,
-$$
-which is a root of the second type. Permuting indices reaches every positive
-root of that type. If $\eta=w(\alpha_3)$ is any root already reached from a
-simple root, then
-$$
-s_\eta=w s_{\alpha_3}w^{-1}
-$$
-belongs to the Weyl group and sends $\eta$ to $-\eta$. Hence all roots of
-the second type, with both signs, lie in the same orbit.
-
-Finally, for
-$$
-\gamma=h-e_4-e_5-e_6
-$$
-one has
-$$
-\gamma\cdot\beta=1,
-$$
-and therefore
-$$
-s_\beta(\gamma)
-=
-2h-\sum_{i=1}^6e_i.
-$$
-Thus the final pair of roots also belongs to the same orbit.
-:::
-
-:::
-
-::: {.pf-step #a5-orthogonal-subsystem}
-Let
-$$
-\rho=2h-\sum_{i=1}^6e_i.
-$$
-The roots orthogonal to $\rho$ are precisely
-$$
-e_i-e_j
-\qquad(i\ne j),
-$$
-which form a root system of type $A_5$ with Weyl group $\Sigma_6$ of order
-$720$.
-
-::: pf-proof
-Directly,
-$$
-\rho\cdot(e_i-e_j)=0.
-$$
-For a root
-$$
-h-e_i-e_j-e_k,
-$$
-the intersection with $\rho$ is
-$$
-2-3=-1,
-$$
-and $\rho^2=-2$, so neither of the other two root types is orthogonal to
-$\rho$. Hence the orthogonal root subsystem consists exactly of the
-$30$ differences $e_i-e_j$, with simple roots
-$$
-e_1-e_2,
-e_2-e_3,
-\ldots,
-e_5-e_6.
-$$
-This is type $A_5$, whose Weyl group is $\Sigma_6$ by part (a).
-:::
-
-:::
-
-::: {.pf-step #e6-order-51840}
-The standard faithful geometric representation of a Coxeter group
-gives
-$$
-\boxed{\cardinality{\mathbf E_6}=72\cdot720=51840.}
-$$
-
-::: pf-proof
-The geometric representation theorem for Coxeter groups identifies the
-abstract group given by the Coxeter presentation with the reflection group
-generated by the six simple-root reflections of step [](#e6-coxeter-relations){.pf-ref}; in particular
-this representation is faithful.
-
-For a finite Weyl group, the stabilizer of a root is the Weyl group of the
-root subsystem orthogonal to that root. By step [](#a5-orthogonal-subsystem){.pf-ref}, the stabilizer of
-$\rho$ is therefore the type-$A_5$ Weyl group, of order $720$. Step [](#weyl-transitive-on-roots){.pf-ref}
-shows that the orbit of $\rho$ consists of all $72$ roots. Orbit--stabilizer
-now gives
-$$
-\cardinality{\mathbf E_6}
-=
-72\cdot720
-=
-51840.
-$$
-:::
-
-:::
-
-::: {.pf-step #e6-iso-g}
-The map of part (b) is an isomorphism:
-$$
-\boxed{\mathbf E_6\cong G.}
-$$
-
-::: pf-proof
-Step [](#phi-surjective-order){.pf-ref} gives a surjective homomorphism
-$$
-\mathbf E_6\twoheadrightarrow G
-$$
-and shows
-$$
-\cardinality{G}=51840.
-$$
-Step [](#e6-order-51840){.pf-ref} gives
-$$
-\cardinality{\mathbf E_6}=51840.
-$$
-A surjection between finite groups of equal order is an isomorphism. This
-proves part (c).
+Step [](#e6-surjective){.pf-ref} gives a surjective homomorphism $\mathbf E_6\to G$. Steps
+[](#weyl-order){.pf-ref} and [](#sixers){.pf-ref} give
+$\cardinality{\mathbf E_6}=51840$ and step [](#group-order-g){.pf-ref} gives
+$\cardinality{G}=51840$. A surjection between finite groups of the same order is an isomorphism.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#an-surjects-onto-sn){.pf-ref}, [](#coset-representatives){.pf-ref}, [](#an-order-bound){.pf-ref} and [](#an-iso-sn){.pf-ref} prove part (a), steps [](#simple-roots-square-minus-two){.pf-ref}, [](#reflections-formulas){.pf-ref}, [](#e6-coxeter-relations){.pf-ref}, [](#homomorphism-to-g){.pf-ref}, [](#incidence-relations){.pf-ref}, [](#seventy-two-sixes){.pf-ref}, [](#five-orbits){.pf-ref}, [](#orbit-connecting-moves){.pf-ref}, [](#h-transitive-on-sixes){.pf-ref}, [](#stabilizer-is-s6){.pf-ref} and [](#phi-surjective-order){.pf-ref} prove part (b), and
-steps [](#seventy-two-roots){.pf-ref}, [](#weyl-transitive-on-roots){.pf-ref}, [](#a5-orthogonal-subsystem){.pf-ref}, [](#e6-order-51840){.pf-ref} and [](#e6-iso-g){.pf-ref} prove part (c).
+Steps [](#an-homomorphism){.pf-ref}, [](#an-cosets){.pf-ref} and [](#an-isomorphism){.pf-ref} are
+part (a); steps [](#e6-homomorphism){.pf-ref} and [](#e6-surjective){.pf-ref} are part (b); steps
+[](#weyl-order){.pf-ref}, [](#sixers){.pf-ref}, [](#group-order-g){.pf-ref} and
+[](#e6-isomorphic-g){.pf-ref} are part (c).
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.11, printed p. 291 (the Weyl group $W(E_6)$ and its action on the 27 lines).
+Part (a) is Math StackExchange 200840, *generators and relations of symmetric group*, answer 247553
+by user26857 (2012-11-29, score 12), text version
+`tmp/sources/mse-200840-symmetric-group-presentation.md`: it bounds $\cardinality{G}$ by $[G:H]\cdot\cardinality{H}$ with
+$H$ the parabolic subgroup omitting $\tau_1$, as in steps [](#an-cosets){.pf-ref} and
+[](#an-isomorphism){.pf-ref}. The same page carries a second answer, 200888 by paul garrett, which
+routes the statement through the reflection representation and cites a proof of its injectivity
+rather than giving one, and is not used here.
+
+Part (b) is the National Taiwan University *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang),
+Chapter V §4, Exercise 11, by Pei-Hsuan Chang, printed p. 18, text version
+`tmp/sources/ntu-ag2-chapter5.md`: part (a) of the same exercise is on printed p. 17 and gives the
+coset partition $\{\mathbf A_{n-1},x_{n-1}\mathbf A_{n-1},\ldots\}$ and $\cardinality{\mathbf A_n}=n!$ directly,
+which is the same argument as steps [](#an-homomorphism){.pf-ref}--[](#an-isomorphism){.pf-ref};
+part (b) is step [](#e6-homomorphism){.pf-ref}, with the generation of $G$ cited to the book rather
+than proved; part (c) is left blank in that source.
+
+Part (c) is I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010), Corollary 8.2.16,
+printed p. 262, and Proposition 9.1.3, printed p. 321, text version
+`tmp/sources/dolgachev-topics-classical-ag.md`, for the order of the Weyl group, and the book's
+Remark 4.10.1, printed pp. 404--405, for the order of $G$. Two further published treatments of the
+order are partial. Math StackExchange 4583421, *Word processing of Coxeter group $E_6$*, answer
+4736813 by KReiser (2023-07-15; text version
+`tmp/sources/mse-4583421-coxeter-e6-word-processing.md`) bounds the abstract group by the coset
+count $120\cdot16\cdot27=51840$, twice over, for $H=\langle x_1,x_2,x_3,y\rangle\subset F$ and
+$F\subset\mathbf E_6$: it displays the two coset graphs but says of their verification "This is
+actually the meat of the claim: proving this shows that there are at most this many right coset
+representatives. I will skip recording this in the post, it is somewhat tedious", so the bound is
+asserted there and not proved. Answer 4736825 by Jyrki Lahtonen on the same page is one paragraph:
+the root system has $72$ roots forming one orbit, the highest root lies alone in the closure of the
+dominant chamber and corresponds to the vertex that sticks out, "Hence the stabilizer of that root
+is a Coxeter group of type $A_5$. That is, isomorphic to $S_6$", so the order is $72\cdot720$; the
+$72$ roots and the type of the stabilizer are cited there, not computed, and steps
+[](#weyl-order){.pf-ref} and [](#sixers){.pf-ref} are the versions of these counts that the card
+transcribes from Dolgachev.
 :::

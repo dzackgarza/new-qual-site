@@ -140,6 +140,47 @@ audit:
     pages are 318 and 317. Checked in this pass: both placements, re-read from
     the page markers of that text version. Not checked: no other page was
     re-read, and no step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A complete published proof of this exercise was located for this batch:
+    A. Youcis, *Abelian schemes over the integers* (2016), Theorem 8, section
+    "The case over the complex line", read at that section in the text version
+    tmp/sources/youcis-2016-abelian-schemes-over-integers.md, with his
+    definition of an abelian scheme in the section "Two statements of the main
+    result" and his definition of isotrivial in the section "Analogies and
+    intuitions". The post carries no printed folios, so its statements are
+    cited on the card by number and section heading. Checked against the book:
+    the printed exercise, IV Ex. 4.22, printed p. 340 and starred, with its
+    four hint clauses; the exercise's "family of elliptic curves having a
+    section" is a family of abelian varieties in Youcis's sense once the
+    section fixes the origin on each fibre, which is the first clause of the
+    printed hint, and his base V = A^1_C satisfies his hypothesis with
+    V^an = C simply connected. Not checked: Deligne, *Theorie de Hodge II*,
+    4.4.3, and the rigidity result of Peters and Steenbrink, both of which
+    Youcis cites and neither of which is in tmp/sources; his proof is
+    complete only modulo them.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the transcription of that proof, one step per move,
+    each naming its numbered statement or quoted sentence with the section
+    heading of the post: step abelian-scheme from the printed hint's first
+    clause and Youcis's definition of an abelian scheme, step
+    constant-family from his definition of isotrivial, step theorem-eight
+    quoting Theorem 8, step deligne-argument carrying his four moves, and
+    step conclusion applying the theorem at V = A^1_C. Two things leave the
+    card: its former seven steps, which counted the four 2-torsion points,
+    built the four sections, the double cover q and the Legendre coordinate,
+    and closed the twist through the trace decomposition of the double cover
+    and Pic(A^1_C) = 0, remain readable at commit 574af010f7; and the
+    conclusion of the events of 2026-11-16 above, that the card is not closed
+    on a published solution, is superseded: what those events established is
+    that Yang's Solution 4.4.22 stops at the constancy of lambda, and Youcis's
+    Theorem 8 does not follow the printed hint at all. Nothing in the problem
+    statement changes.
 ---
 
 ::: {.problem}
@@ -151,319 +192,97 @@ This implies that $\lambda$ can be defined on the family, so it gives a map $\AA
 Any such map is constant, so $\lambda$ is constant, so the family is trivial.
 :::
 
+
+
 ::: {.solution}
-Put
+
+Write
 $$
 S=\AA^1_{\CC}=\Spec\CC[t],
 $$
-write
-$$
-\pi:E\longrightarrow S
-$$
-for the family, and let
-$$
-O:S\longrightarrow E
-$$
-be the given section.
+let $\pi:E\to S$ be the family, and let $O:S\to E$ be the given section.
+The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line", text version `tmp/sources/youcis-2016-abelian-schemes-over-integers.md`; that text has no printed folios, so each step below names the numbered statement, or the quoted sentence, and the section heading of the post that it transcribes.
+His Theorem 8 is stronger than the exercise and is applied to $V=S$ in step [](#conclusion){.pf-ref}.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #abelian-scheme}
 
-The section $O$ makes $E/S$ an elliptic scheme, and its $2$-torsion
-$$
-E[2]=\ker[2]
-$$
-is a finite etale cover of $S$ of degree $4$.
+The section makes $E\to S$ an abelian scheme of relative dimension $1$.
 
 ::: pf-proof
 
-The section chooses an origin on every fibre, so the fibrewise elliptic-curve
-group laws assemble to the group law on the elliptic scheme $E/S$.
-
-Every fibre is a complex elliptic curve $E_t=\CC/\Lambda_t$, and its points of
-order $2$ are the four classes in $\frac12\Lambda_t/\Lambda_t\cong(\ZZ/2)^2$.
-Since $2$ is invertible on $S$, the differential of $[2]$ on the relative
-tangent line is multiplication by $2$, hence an isomorphism, so
-$$
-[2]:E\longrightarrow E
-$$
-is etale; base-changing an etale morphism along the zero section
-$O:S\to E$ gives an etale morphism
-$$
-E[2]\longrightarrow S
-$$
-whose fibre over $t$ is those four points. The morphism $[2]$ is projective,
-and its fibre over a point $y\in E_t$ is the coset $\{x:2x=y\}$ of the
-four-point group $E[2]_t$, so it has finite fibres and is therefore finite
-(Exercise III.11.2, printed p. 280); a base change of a finite morphism is
-finite, so $E[2]\to S$ is finite, and a finite etale morphism is locally free
-of degree equal to the number of points in a fibre. Therefore $E[2]\to S$ is
-finite etale of degree $4$.
+The printed hint of the exercise begins "Use the section to fix the group structure on the fibres."
+Each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$, and a genus-one curve with a chosen point is an elliptic curve, which is its own Jacobian, so its group law with identity $O(t)$ is determined by the pointed curve.
+The fibrewise group laws assemble over $S$, because the relative Picard functor is constructed by base change and the identification $E\cong\Pic^0_{E/S}$ holds after every base change; thus $E\to S$ is a smooth proper group scheme with connected fibres of relative dimension $1$.
+That is Youcis's definition, given in his section "Two statements of the main result": "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers".
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: {.pf-step #constant-family}
 
-There are four pairwise disjoint sections
-$$
-O,T_0,T_1,T_\lambda:S\longrightarrow E
-$$
-whose images are exactly $E[2]$.
+In Youcis's sense, a family over $S$ is isotrivial exactly when it is the product of $S$ with a single object, which is the conclusion of the exercise.
 
 ::: pf-proof
 
-The affine line over $\CC$ has no nontrivial connected finite etale covers.
-Hence every finite etale cover of $S$ is a disjoint union of copies of $S$.
-Applying this to the degree-$4$ cover in step [](#s1){.pf-ref} gives four sections.
-One is the zero section $O$; label the other three
-$$
-T_0,T_1,T_\lambda.
-$$
-Because $E[2]\to S$ is etale, these components are disjoint.
+His section "Analogies and intuitions" fixes the term: "a family $\mathscr X/\AA^1_F$ of curves/abelian schemes is isotrivial if there exists an object $X/F$ such that $\mathscr X=X\times_F\AA^1_F$ --- it's a constant family with fiber $X$."
+For a family of elliptic curves over $S$ it is the assertion that $E\cong E_0\times_\CC S$ for some elliptic curve $E_0$ over $\CC$, the structure morphism of the product being the projection to $S$; that is what the exercise asks.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #theorem-eight}
 
-The complete linear system
+Youcis, Theorem 8, section "The case over the complex line", quoted: "Let $V/\CC$ be a smooth connected algebraic variety such that $V^\text{an}$ is simply connected. Then, every family of abelian varieties $f:\mathscr A\to V$ is isotrivial."
+
+::: pf-proof
+
+This is the statement of Theorem 8 of the post at the cited section, with the proof that step [](#deligne-argument){.pf-ref} transcribes.
+Its hypotheses are on $V$ and on the family being one of abelian varieties; step [](#abelian-scheme){.pf-ref} supplies the second for $E\to S$.
+
+:::
+
+:::
+
+::: {.pf-step #deligne-argument}
+
+Proof of Theorem 8, as published: the local system of the family is constant because $V^\text{an}$ is simply connected, the family is therefore isogenous to a constant family, and a finite kernel with constant quotient makes it constant.
+
+::: pf-proof
+
+Youcis's proof has four moves, each quoted or cited as he gives it.
+
+First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, 4.4.3.
+
+Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$ is a constant local system but, a priori, one might be worried that the Hodge filtration is not constant."
+
+Third, "Since $V^\text{an}$ is compactifiable by Hironaka's theorem and by the discussion following Theorem 11 of this article we may conclude that $(R^1f^{\text{an}}_*\underline{\QQ})^\vee$ is constant and thus, by Deligne's theorem, that $\mathscr A$ is isogenous to a constant family $\underline A$." The sentence of his that the constancy of the $\QQ$-local system rests on is the rigidity result he cites in his remark following the proof, that of Peters and Steenbrink, which "show[s] that not only must a $\QQ$-VHS on a compactifiable complex manifold be constant (as a VHS) but also that the same is true for integral Hodge structures".
+
+Fourth, "the kernel of some isogeny $\underline A\to\mathscr A$ must be a finite group constant group scheme $\underline{\ZZ/n\ZZ}$. Thus, $\mathscr A\cong\underline{A/(\ZZ/n\ZZ)}$ as desired."
+
+The third move is where the hypothesis that $V$ is algebraic enters, as his remark after the proof says: Deligne's classification needs algebraicity of $V$, and the compactifiability is that of an algebraic variety.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
 $$
-\abs{2O}
-$$
-defines a finite flat double cover
-$$
-q:E\longrightarrow\PP^1_S
-$$
-whose branch sections are exactly the images of
-$$
-O,T_0,T_1,T_\lambda.
-$$
-After an automorphism of $\PP^1_S$, the first three branch sections are
-$$
-\infty,\qquad 0,\qquad 1.
+\boxed{E\cong E_0\times_\CC\AA^1_{\CC}\ \text{over}\ \AA^1_{\CC}\ \text{for some elliptic curve } E_0/\CC}
 $$
 
 ::: pf-proof
 
-On every elliptic fibre $E_s$, the line bundle
-$$
-\OO_{E_s}(2O_s)
-$$
-has degree $2$ and two independent sections.  Its complete linear system is
-the quotient map by the involution
-$$
-[-1]:E_s\longrightarrow E_s.
-$$
-By cohomology and base change, the rank-$2$ bundle
-$$
-\pi_*\OO_E(2O)
-$$
-and its fibrewise linear systems give the relative quotient
-$$
-q:E\longrightarrow\PP\bigl(\pi_*\OO_E(2O)\bigr),
-$$
-whose restriction to every fibre has degree $2$.  This morphism is proper
-and fibrewise finite, hence finite.  The fibrewise flatness criterion then
-shows that it is flat.  Thus it is finite flat of degree $2$.
-
-Every vector bundle on
-$$
-S=\Spec\CC[t]
-$$
-is free, so the target is isomorphic to $\PP^1_S$.  The fixed points of
-$[-1]$ are precisely the points killed by $2$; hence the ramification
-sections of $q$ are the four sections in step [](#s2){.pf-ref}, and their images are the
-four branch sections.
-
-It remains to normalize three branch sections globally.  Since
-$\Pic(S)=0$, each section of $\PP^1_S$ can be represented by a unimodular
-column vector in $\CC[t]^2$.  Choose vectors $v_\infty,v_0$ representing
-the images of $O,T_0$.  Their sections are disjoint, so
-$$
-\det(v_\infty,v_0)
-$$
-vanishes nowhere on $S$ and hence is a unit of $\CC[t]$.  Thus the matrix
-with columns $v_\infty,v_0$ lies in $\GL_2(\CC[t])$.  Its inverse gives
-an automorphism of $\PP^1_S$ carrying these two sections to
-$$
-\infty=[1:0],
-\qquad
-0=[0:1].
-$$
-
-Write the image of $T_1$ in these coordinates as $[a:b]$.  Disjointness
-from $\infty$ and $0$ says respectively that $b$ and $a$ vanish nowhere,
-so
-$$
-a,b\in\CC[t]^*=\CC^*.
-$$
-A diagonal automorphism preserving $\infty$ and $0$ now carries $[a:b]$
-to
-$$
-1=[1:1].
-$$
-This gives the required global normalization.
+Take $V=S=\AA^1_\CC$ in step [](#theorem-eight){.pf-ref}.
+$S$ is a smooth connected algebraic variety over $\CC$, and $S^\text{an}=\CC$ is simply connected, being contractible: the homotopy $x\mapsto(1-s)x$, $0\le s\le1$, contracts $\CC$ to the origin.
+Step [](#abelian-scheme){.pf-ref} makes $E\to S$ a family of abelian varieties over $V=S$, so Theorem 8 applies through its proof in step [](#deligne-argument){.pf-ref} and $E\to S$ is isotrivial, that is, by step [](#constant-family){.pf-ref}, a product $E_0\times_\CC\AA^1_\CC$ over $\AA^1_\CC$.
+That is the triviality the exercise asks for.
 
 :::
-
-:::
-
-::: {.pf-step #s4}
-
-The fourth branch section defines a morphism
-$$
-\boxed{
-\lambda:S\longrightarrow\AA^1_{\CC}\setminus\{0,1\}.
-}
-$$
-
-::: pf-proof
-
-In the coordinate fixed in step [](#s3){.pf-ref}, write the fourth branch section as
-$$
-x=\lambda.
-$$
-It is disjoint from the section at infinity, so it takes values in the
-affine chart $\AA^1_S$.  It is also disjoint from the branch sections
-$x=0$ and $x=1$.  Therefore its coordinate is a regular function
-$$
-\lambda\in\Gamma(S,\OO_S)=\CC[t]
-$$
-such that neither $\lambda$ nor $\lambda-1$ vanishes anywhere on $S$.
-Equivalently, it is the displayed morphism.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-The function $\lambda$ is constant.
-
-::: pf-proof
-
-Since the map in step [](#s4){.pf-ref} avoids $0$ and $1$, both
-$$
-\lambda
-\qquad\text{and}\qquad
-\lambda-1
-$$
-are units of $\CC[t]$.  But
-$$
-\CC[t]^*=\CC^*.
-$$
-Hence $\lambda\in\CC\setminus\{0,1\}$ is constant.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-The double cover $q$ is the product over $S$ of the Legendre double
-cover
-$$
-E_\lambda:
-y^2=x(x-1)(x-\lambda)
-\longrightarrow
-\PP^1_{\CC}.
-$$
-
-::: pf-proof
-
-By step [](#s5){.pf-ref} the branch divisor on $\PP^1_S$ is the constant divisor
-$$
-B
-=
-\{0\}+\{1\}+\{\lambda\}+\{\infty\}.
-$$
-Because $2$ is invertible, the finite flat double cover has the trace
-decomposition
-$$
-q_*\OO_E
-\cong
-\OO_{\PP^1_S}\oplus\mcl^{-1},
-$$
-where multiplication on the trace-zero summand is specified by a section
-$$
-s\in H^0(\PP^1_S,\mcl^{\tensor2})
-$$
-whose zero divisor is $B$.
-
-The branch divisor has relative degree $4$, so
-$$
-\mcl^{\tensor2}\cong\OO_{\PP^1_S}(4).
-$$
-Moreover
-$$
-\Pic(S)=0
-$$
-and
-$$
-\Pic(\PP^1_S)\cong\ZZ,
-$$
-generated by $\OO(1)$.  Hence
-$$
-\mcl\cong\OO_{\PP^1_S}(2).
-$$
-
-In homogeneous coordinates $[X:Z]$, the standard section
-$$
-s_0=XZ(X-Z)(X-\lambda Z)
-$$
-of $\OO(4)$ has zero divisor $B$.  The sections $s$ and $s_0$ have the same
-zero divisor, so their quotient is a global unit on $\PP^1_S$.  Such a unit
-comes from
-$$
-\CC[t]^*=\CC^*.
-$$
-Thus
-$$
-s=c\,s_0
-$$
-for some $c\in\CC^*$.  Since $\CC$ is algebraically closed, write
-$$
-c=u^2.
-$$
-Rescaling the trace-zero generator by $u$ identifies the two double-cover
-algebras.  Therefore
-$$
-E\cong E_\lambda\times_{\Spec\CC}S
-$$
-over $S$, with the given zero section corresponding to the point at
-infinity.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-The family $E\to\AA^1_{\CC}$ is trivial.
-
-::: pf-proof
-
-Step [](#s6){.pf-ref} gives an isomorphism of elliptic schemes
-$$
-\boxed{
-E\cong E_\lambda\times\AA^1_{\CC}
-}
-$$
-over the base.  This is precisely the required trivialization.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} trivialize the relative $2$-torsion, steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}
-produce Hartshorne's Legendre parameter and show it is constant, and steps
-[](#s6){.pf-ref} and [](#s7){.pf-ref} show that no residual quadratic twist remains.
 
 :::
 
@@ -472,5 +291,13 @@ produce Hartshorne's Legendre parameter and show it is constant, and steps
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, executes the printed hint on p. 340 in the order of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: the section makes every fibre an elliptic curve with origin $s_0(t)$; the union of the subgroups $\ker 2_{X_t}$ has four closed points over each $t$, is flat over $\AA^1_\CC$ by (II, 9.9), and he writes that it is "obviously unramified", hence finite étale of degree four. Both of those steps are asserted rather than proved: (II, 9.9) needs the fibre of $\psi$ to have length four, and what he checks is that it has four closed points, and for the unramifiedness he gives no argument that the four points are distinct with no ramification along them. The card's step [](#s1){.pf-ref} supplies that argument, from the count of the four $2$-torsion points of a complex elliptic curve and the differential of $[2]$, which is multiplication by $2$ and hence invertible on each fibre; since $\AA^1_\CC$ is simply connected it is four copies of $\AA^1_\CC$, one of them $s_0$ and the others $s_1,s_2,s_3$, and on each fibre the coordinates $s_0(t)=\infty$, $s_1(t)=0$, $s_2(t)=1$, $s_3(t)=\lambda$ make $t\mapsto\lambda$ a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, which is constant. His argument then stops short of the exercise: from the constancy of $\lambda$ he concludes that "all $X_t$ are isomorphic to each other, i.e. the family is trivial", and isomorphism of the fibres is not triviality of the family, a twist of the Legendre curve over $\AA^1_\CC$ being invisible in the fibres. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} close that step through the trace decomposition of the double cover and $\Pic(\AA^1_\CC)=0$. What the source therefore supplies is the printed outline, followed to the Legendre parameter, with the two steps above left as assertions; the completion is the card's, and the card is not closed on a published solution. Checked against the book: Lemma IV.4.4 and Lemma IV.4.5, printed p. 318, are what make every elliptic curve with a degree-two map to $\PP^1$ Legendre and the parameter well defined up to the six substitutions of 4.5, and Theorem IV.4.1, statement on printed pp. 317--318, is the statement that isomorphic elliptic curves have equal $j$, the book's form of the conclusion the hint asks for.
+
+Youcis's Theorem 8, section "The case over the complex line", proves the exercise and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
+Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, which he takes from the rigidity result of Peters and Steenbrink.
+The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
+
+The printed hint follows a different route: the points of order $2$ form an étale cover of $\AA^1_\CC$, hence are four disjoint sections, and the Legendre parameter $\lambda$ they define is a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, hence constant.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, carries that hint out: the four $2$-torsion sections, four copies of $\AA^1_\CC$ because $\AA^1_\CC$ is simply connected, the coordinates $\infty,0,1,\lambda$ on each fibre, and $\lambda$ constant.
+That route ends at the constancy of $\lambda$, which is equality of the fibres, and does not by itself give the triviality of the family.
+
 :::
