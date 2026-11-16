@@ -183,18 +183,17 @@ class AuditRecord:
 def source_identity(source: str) -> str | None:
     """The scalar id in a card's front matter, read without validating the rest of it.
 
-    A deleted blob is read for the card it held, so its defects are not this gate's to
-    report and a header that does not parse has no identity to match.
+    A deleted blob is read for the card it held, so its other defects are not this
+    gate's to report; a header whose id line does not parse raises, and only a header
+    with no id line, or with an id that is not a nonempty scalar, has no identity.
     """
     match = FRONT_MATTER.match(source)
     if match is None:
         return None
     for line in match["front"].splitlines():
         if ID_FIELD.match(line):
-            try:
-                value = yaml.load(line, Loader=yaml.CSafeLoader).get("id")
-            except (yaml.YAMLError, AttributeError):
-                return None
+            parsed = yaml.load(line, Loader=yaml.CSafeLoader)
+            value = parsed.get("id") if isinstance(parsed, dict) else None
             return value if isinstance(value, str) and value else None
     return None
 
@@ -232,7 +231,12 @@ def _audit_text(event: object) -> tuple[str, ...]:
 
 
 def audit_records(source: str) -> list[AuditRecord]:
-    """A card's `audit:` events, in the order authored, read from its front matter."""
+    """A card's `audit:` events, in the order authored, read from its front matter.
+
+    A card the gate accepted carries a `date` its schema parsed, so an event with no
+    readable day can only come from a commit made outside the gate: it has no day to
+    compare, and the commit that touches that card reports the header defect instead.
+    """
     match = FRONT_MATTER.match(source)
     if match is None:
         return []
