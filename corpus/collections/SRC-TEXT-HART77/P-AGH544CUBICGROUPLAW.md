@@ -382,13 +382,18 @@ which is the configuration of the published proof, PDF p. 16: $R$ on $PQ$,
 $T$ on $P_0R$, $V$ on $TU$, $W$ on $P_0V$, $X$ on $QU$, $Y$ on $PV$.
 
 That they are smooth points of the cubic has to be said, because the
-chord-and-tangent construction takes the line through two of them: the plane
-model $C$ is a nonsingular plane cubic (4.1), so every point of $C$ is smooth,
-and $P,Q,U$ are such points by hypothesis; each of $R,T,V,W,X,Y$ is the third
-intersection of a line with $C$ and so lies on $C$, hence is smooth as well.
-Bézout gives $C\cdot L=3$ for a line $L$ with $L\not\subset C$, counted with
-multiplicity, so the third point is well defined and the operation
-$X*Y$ is defined at every point of $C$.
+chord-and-tangent construction takes the line through two of them and the
+exercise's operation is defined on the *regular* points of $C$. The card works
+with $C$ a nonsingular plane cubic, which is the case the group law of
+(II, 6.10.2) is stated for and the one the cubic-surface application gives:
+then every point of $C$ is smooth, $P,Q,U$ are such points by hypothesis, and
+each of $R,T,V,W,X,Y$ lies on $C$, being the third intersection of a line with
+it, hence is smooth as well. Bézout gives $C\cdot L=3$ for a line $L$ with
+$L\not\subset C$, counted with multiplicity, so the third point is well defined
+and $X*Y$ is defined at every point of $C$. For a cubic with a node or a cusp
+the same computation runs as long as the lines drawn avoid the singular point,
+which is the caveat the printed exercise leaves implicit in the word
+``regular''.
 
 Since $\iota$ is the third point on the line through $P_0$,
 $$
@@ -483,7 +488,7 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.4, printed p. 407, with the group law defined in (4.5) and the plane model in (4.1), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.4, printed p. 407, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15): part (a) is the lemma on cubics proved from (4.5), and part (b) defines the group operation on the regular points of a nonsingular plane cubic $C$ with an inflection point $P_0$ as the recipe of (II, 6.10.2) and (II, 6.11.4), which is the operation the steps below use.
 
 Part (b) has published arguments. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 4(b) (solution by Tzu-Yang Chou), PDF p. 16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the page was read off the PDF), takes three points $P,Q,U$, sets $PQ\cap C=P,Q,R$; $P_0R\cap C=P_0,R,T$; $TU\cap C=T,U,V$; $P_0V\cap C=P_0,V,W$; $QU\cap C=Q,U,X$; $PV\cap C=P,V,Y$, applies part (a) to the two triples of lines $PQR$ and $TUV$ to conclude that $P_0,X,Y$ are collinear, and reads off
 $$(P+Q)+U=T+U=W=P+Y=P+(Q+U).$$
