@@ -229,6 +229,39 @@ audit:
     the sentence and the sentence after it; no source was reopened and no step was
     re-derived.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the statement and on three points of the
+    proof's form. (i) QUAL-01: the statement carried the printed text of
+    II.3.10(b) verbatim, whose first assertion is false. As printed, with the
+    sole hypothesis "(Assume k algebraically closed.)", it reads "If y in Y is the
+    point a in k with a neq 0, show that the fibre X_y consists of two points,
+    with residue field k"; in characteristic 2 the Frobenius of k is bijective,
+    a = r^2 for some r, and the fibre is the one nonreduced point
+    Spec k[t]/((t-r)^2), which step char-two-fibre-not-two-points computes. The
+    statement now adds the missing hypothesis: "... the point a in k with a
+    neq 0 and char k neq 2, show that the fibre X_y consists of two points, with
+    residue field k". The other two assertions of (b) and the whole of (a) are
+    unchanged, and the remark on the problem states what the printed claim
+    asserts without the hypothesis and what the fibre is in every characteristic.
+    The printed text is the one the earlier events of this card record, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md at printed p. 92; it was not
+    re-read in this pass. (ii) STYLE-08: the pf-qed only listed the steps proving
+    each part. It now carries the argument: over a closed point the fibre is
+    Spec k[t]/(t^2-a), that algebra is k x k exactly when the two roots are
+    distinct, and the four cases follow with their steps named. (iii) STYLE-08
+    and PROSE-03: "The bijection above" in the claim of step
+    uy-homeomorphism-onto-fiber is now the bijection of step
+    uy-points-correspond-to-primes by reference, and "in the steps above" in its
+    proof is the step that introduces Shichijo's phi. (iv) STYLE-04: the two
+    occurrences of \mathrm{sp} in step xy-homeomorphism-global are
+    \operatorname{sp}. (v) NOT-3: the proof of step generic-fibre-degree-two
+    wrote the generic fibre as X_y, y naming a closed point in the steps before;
+    it is X_eta, as the step's own claim has it. Nothing else changes, no step is
+    re-derived beyond the case analysis in the pf-qed, and no source was reopened.
+
 ---
 
 ::: {.problem}
@@ -236,7 +269,7 @@ audit:
 
 (b) Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ be the morphism defined by sending $s \mapsto s$.
 
-   - If $y \in Y$ is the point $a \in k$ with $a \neq 0$, show that the fibre $X_y$ consists of two points, with residue field $k$.
+   - If $y \in Y$ is the point $a \in k$ with $a \neq 0$ and $\operatorname{char}k \neq 2$, show that the fibre $X_y$ consists of two points, with residue field $k$.
 
    - If $y \in Y$ corresponds to $0 \in k$, show that the fibre $X_y$ is a nonreduced one-point scheme.
 
@@ -337,7 +370,7 @@ Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp A\subseteq
 :::
 
 ::: {.pf-step #uy-homeomorphism-onto-fiber}
-The bijection above is a homeomorphism of $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
+The bijection of step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism of $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
 
 ::: pf-proof
 Cais, Exercise 3.10(a), PDF p. 12, factors the projection $p$ as
@@ -348,7 +381,7 @@ $$
 \xrightarrow{\ \Spec\theta\ }
 \Spec A,
 $$
-his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ in the steps above, and his $\psi$.
+his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ of step [](#reduce-fibre-topology-to-affine){.pf-ref}, and his $\psi$.
 The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  Cais writes this kernel as $\ker\psi=pB$, $pB$ being an ideal of the total space while $\psi$ has the localized ring $B\otimes_AA_p$ as its source, so that identity is his slip of notation; what his argument uses is the prime-level form, that a prime $\mfq$ of the total space with $\mfq\cap S=\emptyset$ contains $pB$ exactly when $g^{-1}(\mfq)=\mfp$, which holds, and which the next sentence proves in the letters of this proof.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
@@ -364,7 +397,7 @@ $$
 is a homeomorphism onto the set-theoretic fibre with the subspace topology.
 
 ::: pf-proof
-The homeomorphisms of the affine pieces are compatible with the projections to $X$, so they glue: Kim, Exercise 2.3.10(a), PDF p. 23, and Shichijo, Exercise 3.10(a), printed p. 7, general case, where $\mathrm{sp}(X_y)$ is glued from the $\mathrm{sp}(X_y)_i$, and the restriction of $f$ to $X_i$ has fibre $f^{-1}(y)\cap X_i$, the pieces covering $f^{-1}(y)$.
+The homeomorphisms of the affine pieces are compatible with the projections to $X$, so they glue: Kim, Exercise 2.3.10(a), PDF p. 23, and Shichijo, Exercise 3.10(a), printed p. 7, general case, where $\operatorname{sp}(X_y)$ is glued from the $\operatorname{sp}(X_y)_i$, and the restriction of $f$ to $X_i$ has fibre $f^{-1}(y)\cap X_i$, the pieces covering $f^{-1}(y)$.
 :::
 
 :::
@@ -490,13 +523,13 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.10(b), printed p. 8: the quotient is a field, so $X_y=\Spec k(s)[t]/(t^2-s)$ "is a one point space", and its residue field is a degree two extension of $k(\eta)$. Kim, PDF p. 23, and Egbert, printed p. 84, conclude the same from the degree of the defining polynomial; Cais, PDF p. 12, writes it as a one-point scheme whose residue field is a degree-two extension of $k(s)$.
+Shichijo, Exercise 3.10(b), printed p. 8: the quotient is a field, so $X_\eta=\Spec k(s)[t]/(t^2-s)$ "is a one point space", and its residue field is a degree two extension of $k(\eta)$. Kim, PDF p. 23, and Egbert, printed p. 84, conclude the same from the degree of the defining polynomial; Cais, PDF p. 12, writes it as a one-point scheme whose residue field is a degree-two extension of $k(s)$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove (a). Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref} and [](#fibre-two-points-char-neq-2){.pf-ref} prove the two-point assertion, under $\operatorname{char}k\ne2$; [](#fibre-nonreduced-a-zero){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the other two assertions of (b), in every characteristic. Step [](#char-two-fibre-not-two-points){.pf-ref} computes the fibre over $a\ne0$ when $\operatorname{char}k=2$, where it is one nonreduced point with residue field $k$, so the two-point assertion fails there.
+Over a closed point $y=(s-a)$ the fibre is $\Spec k[t]/(t^2-a)$ (step [](#closed-fibre-formula){.pf-ref}), and that algebra is $k\times k$ exactly when $t^2-a$ has two distinct roots in the algebraically closed field $k$. It has them when $a\ne0$ and $\operatorname{char}k\ne2$ (step [](#fibre-two-points-char-neq-2){.pf-ref}); in characteristic $2$ it is $(t-r)^2$ with $r^2=a$, giving the single nonreduced point of step [](#char-two-fibre-not-two-points){.pf-ref}; over $0$ the fibre is $k[t]/(t^2)$, one nonreduced point (step [](#fibre-nonreduced-a-zero){.pf-ref}); and over the generic point it is the field $k(s)(\sqrt s)$, of degree two over $k(s)$ (steps [](#generic-fibre-ring){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref}). Part (a) is the homeomorphism of step [](#xy-homeomorphism-global){.pf-ref}, which is the affine case of steps [](#reduce-fibre-topology-to-affine){.pf-ref} through [](#uy-homeomorphism-onto-fiber){.pf-ref} glued along an affine cover.
 :::
 
 :::
@@ -504,7 +537,7 @@ Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-local
 :::
 
 ::: {.remark}
-The exercise states (b) with no hypothesis on $k$ beyond algebraic closedness, and the two-point assertion for $a\neq0$ is false in characteristic $2$: there the Frobenius map of $k$ is bijective, so $t^2-a=(t-r)^2$ with $r^2=a$, and the fibre is the one-point nonreduced scheme $\Spec k[t]/((t-r)^2)$ (step [](#char-two-fibre-not-two-points){.pf-ref}).  The printed statement is kept above; the corrected statement, proved in step [](#fibre-two-points-char-neq-2){.pf-ref}, adds $\operatorname{char} k\neq2$, and in every characteristic the fibre over $a\neq0$ is $\Spec k[t]/(t^2-a)$ (step [](#closed-fibre-formula){.pf-ref}).  The remaining two assertions of (b), $a=0$ and the generic fibre, hold in every characteristic.
+The exercise prints the two-point assertion for $a\neq0$ with no hypothesis on $k$ beyond algebraic closedness, and it is false in characteristic $2$: there the Frobenius map of $k$ is bijective, so $t^2-a=(t-r)^2$ with $r^2=a$, and the fibre is the one-point nonreduced scheme $\Spec k[t]/((t-r)^2)$ (step [](#char-two-fibre-not-two-points){.pf-ref}).  In every characteristic the fibre over $a\neq0$ is $\Spec k[t]/(t^2-a)$ (step [](#closed-fibre-formula){.pf-ref}), and it consists of two points with residue field $k$ exactly when the two roots are distinct, that is when $\operatorname{char} k\neq2$, which is the hypothesis the statement above carries and what step [](#fibre-two-points-char-neq-2){.pf-ref} proves.  The remaining two assertions of (b), $a=0$ and the generic fibre, hold in every characteristic.
 :::
 
 ::: {.remark title="Published solution"}
