@@ -134,6 +134,24 @@ audit:
     of step s5 outright; the step rests on the book's Corollary 2.19 count and
     on H^0(O_X(K_X)) = H^1(O_X(K_X)) = 0, both proved on the card.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected three citations on the card on 2026-11-16, after the events above
+    of the same date. Corollary 2.19 and its proof sit on printed p. 381, not
+    p. 380, where the marker for PDF p. 396 falls between Corollary 2.18 and it;
+    the three places naming p. 380 for it now say p. 381, and Corollary 2.18(b)
+    keeps p. 380. The adjunction formula in step s3 is Proposition V.1.5,
+    printed p. 361, which is stated for a nonsingular curve and so applies to
+    the member Y of step s2; Theorem V.1.3 is the definition of the intersection
+    number, printed p. 358. The remark's step references are renumbered to the
+    present steps: the construction is s1 to s5 with the g^1_3 in s7, and the
+    completeness of the embedding, which was s6 before the renumbering, is s5.
+    The remark no longer carries machine paths to text versions, which belong in
+    these events, and its Egbert entry states what his reference is rather than
+    what is absent from a directory. Not checked: nothing new; the mathematics
+    of the steps is as recorded above.
 ---
 
 ::: {.problem}
@@ -160,14 +178,14 @@ f^2=0,
 \qquad
 K_X\sim-2C_0-(e+2)f
 $$
-[[FE-TORHIRZ]], the last line being Lemma 2.10, printed p. 373. In the embedding of (2.19), which Corollary 2.19, printed p. 380, produces from the very ample divisor $C_0+nf$, the hyperplane class is
+[[FE-TORHIRZ]], the last line being Lemma 2.10, printed p. 373. In the embedding of (2.19), which Corollary 2.19, printed p. 381, produces from the very ample divisor $C_0+nf$, the hyperplane class is
 $$
 H\sim C_0+nf,
 \qquad
 H^2=2n-e=d.
 $$
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are transcribed from Hartshorne's Corollary 2.18(b) and Corollary 2.19, printed p. 380, with the identification of the divisor $H-K_X$ with the class of a canonical curve on the scroll taken from Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem, §2.9 and §2.10, printed pp. 19--21; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} finish the exercise.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are transcribed from Hartshorne's Corollary 2.18(b), printed p. 380, and Corollary 2.19, printed p. 381, with the identification of the divisor $H-K_X$ with the class of a canonical curve on the scroll taken from Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem, §2.9 and §2.10, printed pp. 19--21; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} finish the exercise.
 
 ::: pf
 
@@ -210,7 +228,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction, Theorem V.1.3, printed p. 361, and the definition $D=H-K_X$ give
+Adjunction, Proposition V.1.5, printed p. 361, applied to the nonsingular curve $Y$, and the definition $D=H-K_X$ give
 $$
 K_Y\cong\restrictionof{(K_X+Y)}{Y}\cong\restrictionof{(K_X+D)}{Y}\cong\OO_Y(H).
 $$
@@ -304,11 +322,11 @@ Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} produce the nonsingular curve $Y$ of 
 :::
 
 ::: {.remark title="Published solution"}
-Hartshorne's own Corollary 2.18(b), printed p. 380, is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19 on the same page is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them, the only ingredient not written out in either source being the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$ in step [](#s5){.pf-ref}, which follows from $K_X\cdot f=-2$ and from $q(X)=0$.
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 10 of §2 (solution by Chi-Kang), printed p. 8 of that set, runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18 (printed page 380) has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s8){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s6){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
+Hartshorne's own Corollary 2.18(b), printed p. 380, is a complete published proof that $\linearsystem{H-K_X}$ contains an irreducible nonsingular curve for $n\ge2e-2$, and the proof of Corollary 2.19, printed p. 381, is the count $h^0(\OO_X(H))=2n-e+2$; Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, identifies the class $3C_0+(n+e+2)f$ with $\alpha A+3B$, $\alpha=a+a_2+2$, of the canonical curve of the scroll, states the nonsingularity criterion as $\alpha-3a\ge0$, and reads the inequality $3a\le g+2$ as the Maroni constraint. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are those two statements specialized to $a_1=n-e$, $a_2=n$, $a=e$; steps [](#s3){.pf-ref} to [](#s7){.pf-ref} assemble them; step [](#s5){.pf-ref} adds the vanishing of $H^0(X,\OO_X(K_X))$ and of $H^1(X,\OO_X(K_X))$, which neither source states and which follows from $K_X\cdot f=-2$ and from $q(X)=0$.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 10 of §2 (solution by Chi-Kang), printed p. 8 of that set, runs the same construction: with $D=C_0+nf$ the very ample class of the embedding, it takes $Y\in\abs{D-K_X}=\abs{3C_0+(n+e+2)f}$, which by Corollary 2.18 (printed page 380) has a nonsingular member under $e\ge0$ and $n+e+2\ge3e$, the hypothesis $n\ge2e-2$; adjunction gives $K_Y=D\restriction_Y$, then $\deg K_Y=D\cdot Y=4n-2e+2=2d+2$, so $g(Y)=d+2$, and $f\cdot Y=3$ gives a $g^1_3$. That is steps [](#s1){.pf-ref} to [](#s5){.pf-ref} and step [](#s7){.pf-ref}. It does not check that the embedding of $Y$ is the complete canonical one, which needs $H^0(\OO_X(H))\cong H^0(Y,K_Y)$; step [](#s5){.pf-ref} supplies that, and it is what makes the conclusion a canonical curve rather than a curve whose canonical class happens to be the restriction.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.10, printed p. 104, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.10, printed p. 104, argues that "$3C_0+af$ can be written as a curve iff $C\cdot C_0\ge0$, i.e. $a\ge3e$", computes $2g-2=C\cdot(C+K)=4n-2e+2$ and reads off $g=2n-e+2$ and $C\cdot f=3$; it does not show the member nonsingular, and it never identifies $K_Y$ with the restricted hyperplane class.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.10, PDF p. 267: the whole of his solution is "See example 2.10 in Kollar's Complex Algebraic Geometry", and Kollár's book is not in `tmp/sources`, so there is no argument to read.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.10: the whole of his entry is "See example 2.10 in Kollar's Complex Algebraic Geometry", which is a reference to Kollár's Example 2.10 and gives no argument.
 
 :::
