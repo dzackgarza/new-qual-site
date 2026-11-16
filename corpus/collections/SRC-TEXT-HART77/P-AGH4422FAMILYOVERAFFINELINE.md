@@ -46,9 +46,9 @@ audit:
     A^1 - {0,1}. His last sentence, that equal lambda makes the family
     trivial, is a gap: equal fibres do not give a trivial family and
     nothing in his argument excludes a twist over A^1_C; steps s6 and s7
-    supply it. Book checks: IV.4.4 and IV.4.5, printed p. 318
+    supply it. Book checks: IV.4.4 and IV.4.5, printed pp. 333--334
     (Legendre form, and the six substitutions that make the parameter well
-    defined), IV.4.1, statement on printed pp. 317--318 (isomorphic curves have equal
+    defined), IV.4.1, printed pp. 332--333 (isomorphic curves have equal
     j), II.9.9 as he cites it. Not checked: simple connectivity of A^1_C
     in the etale topology is taken from the printed hint, as he does; both
     texts assert the four 2-torsion points of a fibre without computing
@@ -86,10 +86,8 @@ audit:
     solution located for this exercise", is restored as it was written and
     is named here. Checked against the book in this pass: IV.4.22 on printed
     p. 340, Exercise III.11.2 on printed p. 280, IV.4.1 and IV.4.4, IV.4.5
-    on printed pp. 317-318, read in
-    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
-    p. N+15). Not checked: simple connectivity of A^1_C in the etale
-    topology is taken from the printed hint, as the card says.
+    on printed pp. 317-318. Not checked: simple connectivity of A^1_C in the
+    etale topology is taken from the printed hint, as the card says.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -102,6 +100,30 @@ audit:
     outline and the two steps it leaves asserted, so the obligation to cite a
     complete published solution stays open, as the remark says. Checked in
     this pass: nothing new; the card's own steps were not re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass, on the audit trail and the rule that a dated event is never
+    edited. Two events of 2026-11-16 had been edited in place and are restored
+    to their text at their date. (i) The event above whose note begins
+    "Published solution located for this exercise" was changed by commit
+    2145766034, which replaced "IV.4.4 and IV.4.5, printed pp. 333--334" by
+    "printed p. 318" and "IV.4.1, printed pp. 332--333" by "IV.4.1, statement
+    on printed pp. 317--318". It is restored as it was written in 114814f0e6,
+    and the correction is here: those numbers were the PDF folios of the text
+    version, and printed p. N is PDF p. N+15 in it. Verified in this pass in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md: Lemma 4.4 and Lemma
+    4.5 stand between the markers of PDF pages 332 and 333, so on printed
+    pp. 317--318, and the definition of the invariant of IV.4.1 is on the same
+    two pages. (ii) The event above whose note begins "Second pass on the
+    reader's report of this batch" was extended in place by commit 15a20526df
+    with the sentence naming the text version and the offset; it is restored
+    as it was written in 1abd969bbb, and that sentence is here: the pages it
+    cites were read in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    where printed p. N is PDF p. N+15. Checked in this pass: this card's audit
+    trail in git, commit by commit, and the pages of the text version named in
+    (i). Not checked: no other page was re-read, and no step was re-derived.
 ---
 
 ::: {.problem}

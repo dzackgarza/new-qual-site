@@ -150,6 +150,38 @@ audit:
     I Ex. 5.14(c), printed p. 39, is corrected there and here to printed
     p. 38. The mathematics stands as the event above records it. Checked in
     this pass: nothing new; the Stacks tags were not re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass, on the audit trail. Two events of 2026-11-15 above were edited
+    in place on that same day by commit 9a74181332, before the gate held dated
+    events. Unlike the events restored elsewhere in this batch, these keep the
+    corrected text and the edit is disclosed here, because what the earlier
+    text names is a file that is not on this machine: it reads "read in
+    tmp/sources/stacks-project-book.md", and tmp/sources holds the compiled
+    book as a PDF only, with no text version, so restoring it would put a
+    citation that does not resolve back into the record. The corrections the
+    edit carries are these. (i) The event
+    whose note begins "Printed exercise read: Hartshorne, Algebraic Geometry
+    (1977), IV.1.8(c)" had its reading sentence changed from "read in
+    tmp/sources/stacks-project-book.md" to the passage-by-passage reading in
+    tmp/sources/stacks-tags/0C3T.md and the other tag files, with the compiled
+    book cited for folios only, and it had its account of Definition 33.39.7
+    (tag 0C1T) changed from "concludes that delta is an invariant of the
+    complete local ring" to the definition attaching delta to a point through
+    the local ring, the invariance being drawn from tag 0C3W, with a
+    parenthetical recording that the earlier account was wrong; its citation of
+    0C1T(9) for the step s6 transcription became 0C1R(9). The later text is the
+    correct one: 0C1T is a definition and states no invariance under
+    completion, which is 0C3W's, and the card's step s6 cites 0C3V, 0C3W and
+    0C1R(9). (ii) The event whose note begins "The Stacks citations now carry
+    the copy's version and compilation date" had its parenthetical about the
+    retained compiled book extended to say that the book is a folio reference
+    only, having no text version, the quotations being the tag files'. Checked
+    in this pass: this card's audit trail in git, commit by commit; the
+    substance of both corrections is what the third pass above records. Not
+    checked: no tag and no page was re-read in this pass.
 ---
 
 ::: {.problem}
