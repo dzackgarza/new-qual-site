@@ -358,6 +358,37 @@ audit:
     the reason they are not the ideal of the family, and the accounts of the
     Kovacs and Bohm answers stand as written. Read in this pass: the rendered
     remark only; no source was reopened and no step was re-derived.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on three sentences of the rendered card.
+    (i) Step s1 said that modulo $a$ the six generators become $x_2^2$, $x_0x_2$,
+    $x_1x_2$, $x_2x_3$, $x_2x_4$ and that "the reduction of the ideal it
+    generates is the set of multiples of $x_2$", which is false: the ideal they
+    generate is $x_2\mathfrak m$ with $\mathfrak m=(x_0,\ldots,x_4)$, and $x_2$
+    itself is a multiple of $x_2$ outside it. The step now names that ideal and
+    says only that it lies in $(x_2)$, which is all the argument uses, its next
+    sentence having already said so. The substitution at $a=0$ and the
+    conclusion are unchanged: $x_0x_4-x_1x_3$ is still not divisible by $x_2$,
+    so the six quadrics still do not generate $\mathcal I$. (ii) The remark's
+    sentence on Yang's ideal mixed degrees: it said that "the class of $x_2$ is
+    $x_2x_i/x_i^2=0$" in the coordinate ring of a chart, where the element of the
+    chart is the degree-zero $x_2/x_i$ and $x_2$ itself is the degree-one
+    coordinate. It now reads $x_2/x_i=x_2x_i/x_i^2=0$, in the two places the
+    sentence occurs. (iii) The remark's paragraph on the addendum of the Kovacs
+    answer drew its conclusion from two relations that do not give it:
+    $y_1(x_2/x_0)=0$ and $(x_2/x_0)^2=0$ do not make $x_2/x_0$ zero. What does
+    is $x_0x_2$, which is a generator of that answer's ideal and gives
+    $x_2/x_0=x_0x_2/x_0^2=0$; the paragraph now says so, and records the two
+    relations as the addendum's, holding and insufficient. Nothing else changes:
+    $h^0(\OO_{X_0})=1$ and $h^1(\PP^4,\mci_0)=0$ stand, as does Yang's fibre at
+    $a=0$ being $x_2\mathfrak m$. Read in this pass: the three sentences on the
+    card and the relations $x_2x_i=ax_jx_k$ at $a=0$ that decide them, in the
+    paragraph of the card that states them. Not checked: no source was reopened,
+    and no step was re-derived beyond those substitutions.
+
 ---
 
 ::: {.problem}
@@ -503,7 +534,7 @@ the ideal they generate: modulo $a$ the six become
 $$
 x_2^2,\ x_0x_2,\ x_1x_2,\ x_2x_3,\ x_2x_4,
 $$
-so the reduction of the ideal it generates is the set of multiples of $x_2$,
+so the ideal they generate is $x_2\mathfrak m$, with $\mathfrak m=(x_0,\ldots,x_4)$, which lies in $(x_2)$,
 and $x_0x_4-x_1x_3$ is not divisible by $x_2$.  His fibre at
 $a=0$ is therefore $x_2\mathfrak m=(x_0x_2,x_1x_2,x_2^2,x_2x_3,x_2x_4)$, whose
 zero locus is the hyperplane $V(x_2)$ and not the quartic curve
@@ -738,7 +769,7 @@ cohomology jump.
 ::: {.remark title="Published solution"}
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. The printed claim is indeed false, and the erratum and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} supply the computation the source omits, for $\mci(1)$.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, is a second published treatment, and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of each standard affine chart.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, is a second published treatment, and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so on the affine chart $x_i\ne0$ the element $x_2$ becomes $x_2/x_i=x_2x_i/x_i^2=0$.
 
-One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, so unlike Yang's it does contain the curve, and its extra terms are the ones that decide the cohomology: in it $x_2$ is annihilated by every coordinate. That annihilator is decisive, and the questioner on the same thread already says so in the question body ($x_2/x_i=x_2x_i/x_i^2=0$ after the question's own edit): in the degree-zero localization at any $x_i$ the coordinate $x_i$ is invertible, so the class of $x_2$ is $x_2x_i/x_i^2=0$ in the coordinate ring of every standard affine chart, and a section of $\OO(1)$ that vanishes on each chart is the zero section. What the addendum of the answer gets wrong is the chart: for the chart $x_0\ne0$ it writes the coordinate ring of $\mathscr X_0\cap U_0$ as $k[y_1,x_2]/(y_1x_2,x_2^2)$ with $y_1=x_1/x_0$, mixing the degree-zero localization, in which $y_1$ lives, with the degree-one coordinate $x_2$; the element of that chart is $x_2/x_0$, and it satisfies $y_1\cdot(x_2/x_0)=x_1x_2/x_0^2=0$ as well as $(x_2/x_0)^2=0$, so it is zero there too. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
+One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, so unlike Yang's it does contain the curve, and its extra terms are the ones that decide the cohomology: in it $x_2$ is annihilated by every coordinate. That annihilator is decisive, and the questioner on the same thread already says so in the question body ($x_2/x_i=x_2x_i/x_i^2=0$ after the question's own edit): in the degree-zero localization at any $x_i$ the coordinate $x_i$ is invertible, so in the coordinate ring of every standard affine chart the element $x_2$ is $x_2/x_i=x_2x_i/x_i^2=0$, and a section of $\OO(1)$ that vanishes on each chart is the zero section. What the addendum of the answer gets wrong is the chart: for the chart $x_0\ne0$ it writes the coordinate ring of $\mathscr X_0\cap U_0$ as $k[y_1,x_2]/(y_1x_2,x_2^2)$ with $y_1=x_1/x_0$, mixing the degree-zero localization, in which $y_1$ lives, with the degree-one coordinate $x_2$; the element of that chart is $x_2/x_0$, and it is zero there because $x_0x_2$ lies in the ideal: $x_2/x_0=x_0x_2/x_0^2=0$. The two relations the addendum prints, $y_1\cdot(x_2/x_0)=x_1x_2/x_0^2=0$ and $(x_2/x_0)^2=x_2^2/x_0^2=0$, hold as well, but neither of them makes $x_2/x_0$ zero. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
 :::
