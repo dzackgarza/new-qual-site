@@ -35,10 +35,7 @@ audit:
     named below, which are the site's build from stacks-project commit
     a04446e57ec1fbc252a871afcec7752fb2807b14 (28 July 2026); the printed pages
     quoted here and below are those of the retained compiled book of version
-    ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf), cited
-    as that book's folios and not as a
-    text read: the whole compiled book has no text version, and every
-    quotation in this note is from the tag file.
+    ed88ff78, compiled 14 July 2026 (tmp/sources/stacks-project-book.pdf).
     Definition 33.39.3 (tag 0C3T),
     printed p. 2899, sets delta = length_A(A'/A) for a reduced Nagata
     one-dimensional local ring, after Lemma 33.39.2 (tag 0C3S) makes A'/A of
@@ -65,10 +62,8 @@ audit:
   date: 2026-11-15
   note: >-
     The Stacks citations now carry the copy's version and compilation date,
-    version ed88ff78, compiled 14 July 2026 (the retained compiled
-    tmp/sources/stacks-project-book.pdf, whose title page prints both; the book
-    is a folio reference only, since it has no text version, the quotations
-    being those of the tag files). The page
+    version ed88ff78, compiled 14 July 2026 (the retained
+    tmp/sources/stacks-project-book.pdf, whose title page prints both). The page
     numbers in the body and in the event above are those of that copy:
     tag 0C3S/0C3T on printed p. 2899, 0C3V/0C3W on pp. 2900--2901, 0C1T on
     p. 2901, and 0C1R item (9) on p. 2904. Re-checked in the text layer by tag
@@ -182,6 +177,43 @@ audit:
     in this pass: this card's audit trail in git, commit by commit; the
     substance of both corrections is what the third pass above records. Not
     checked: no tag and no page was re-read in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fifth pass, on the two events of 2026-11-15 that the event above left
+    carrying their in-place edits. Both are now restored to the text they
+    carried at 9a74181332^, and what that commit added is stated here instead.
+    (i) What 9a74181332 did. Two hunks, both clarifications of the retained
+    compiled book: the first event gained "cited as that book's folios and not
+    as a text read: the whole compiled book has no text version, and every
+    quotation in this note is from the tag file", and the second gained "the
+    book is a folio reference only, since it has no text version, the
+    quotations being those of the tag files". Both statements are true and are
+    made here: the copy at tmp/sources/stacks-project-book.pdf has no text
+    version on this machine, so it is cited for printed folios only, and the
+    text read for every quotation in the two events is the tag file -
+    tmp/sources/stacks-tags/0C3S.md, 0C3T.md, 0C3V.md, 0C3W.md, 0C1T.md and
+    0C1R.md - each of which is on the machine, as is the compiled book whose
+    folios they are matched to. (ii) What the event above attributes to
+    9a74181332 and that commit did not do. It says the restoration was
+    declined because the earlier text names a file that is not on the
+    machine, "read in tmp/sources/stacks-project-book.md". That sentence was
+    removed by 8e2a3b3ebd earlier on the same day, together with the rewriting
+    of the Definition 33.39.7 account into a definition and of 0C1T(9) into
+    0C1R(9), which the event also attributes to 9a74181332; 9a74181332 made
+    the two additions in (i) alone. The text restored here therefore names no
+    missing file: it cites the compiled book by its PDF and the tag files by
+    their own paths. (iii) The mathematics is unchanged by the restoration.
+    The corrections this card carries stand as this batch's earlier events of
+    2026-11-16 record them: the exercise is printed on p. 298, which is PDF
+    p. 313 of tmp/sources/hartshorne-1977-algebraic-geometry.md, I Ex. 5.14(c)
+    is on printed p. 38, and step s7 computes Hartshorne's cusp y^2 = x^3 in
+    every characteristic. Checked in this pass: the history of this card at
+    8e2a3b3ebd, 9a74181332^ and 9a74181332, the presence of the six tag files
+    named and of the compiled book, and the restored text against
+    9a74181332^. Not checked: no tag was re-read against its statement in this
+    pass, and no page was re-read.
 ---
 
 ::: {.problem}
