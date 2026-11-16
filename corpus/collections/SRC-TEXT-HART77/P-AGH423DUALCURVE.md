@@ -181,6 +181,29 @@ audit:
     at IV.2.3, printed pp. 304--305, for the definition of an inflection point as
     I_P(X, T_P(X)) >= 3. Not read in this pass: neither published source, whose
     pages and paths are those of the events above; no other card is touched.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round, in the rendered text only:
+    one undeclared notation and three positional references. The coordinate tau of
+    step s2 was given as "the affine coordinate a/b on L = V(z)", where a and b
+    were never declared and, ten lines later in the same step, are the
+    coefficients of f = x + ax^2 + bxy + cy^2 + ..., so the definition read as
+    that pair of coefficients. It is now the affine coordinate on L = V(z) at
+    [0:1:0] that a point of L gives as the ratio of its first two homogeneous
+    coordinates, with [1:0:0] as its point at infinity, which declares its value
+    at both ends of L and leaves the letters of the plane, of X and of f
+    untouched. The positional references: step s1's "The coordinates above are
+    that line" now names them, (-h'(t), t h'(t) - h(t)); step s4's "by the
+    paragraph above" is replaced by what that paragraph establishes, one branch
+    for each contact point, each nonsingular with its own tangent direction; and
+    step s12's "The paragraph above identifies the nodes with the strict
+    bitangents" becomes "The identification this step proves". No mathematics
+    changes: the map on local rings, the valuation of the paragraph, the branch
+    count of s4 and the genus computation of s12 stand as they were. Not done in
+    this pass: no source was re-read and no step re-derived, the pages and paths
+    of the sources being those of the events above; no other card is touched.
 review: draft
 ---
 
@@ -289,7 +312,7 @@ Reiser, Exercise IV.2.3(b), printed p. 356, computes the same tangent lines in p
 $$
 g'(t_0)\bigl(x-f(t_0)\bigr)-f'(t_0)\bigl(y-g(t_0)\bigr)=0,
 $$
-and for the branch $t\mapsto(ut^2,t)$ at a simple tangency he reads off the dual parametrization $t\mapsto[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$. The coordinates above are that line for a branch written as a graph, at contact order $r$.
+and for the branch $t\mapsto(ut^2,t)$ at a simple tangency he reads off the dual parametrization $t\mapsto[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$. The coordinates $(-h'(t),\,t h'(t)-h(t))$ are that line for a branch written as a graph, at contact order $r$.
 :::
 
 :::
@@ -340,7 +363,9 @@ $$
 He prints this intersection as $[\partial f/\partial x:\partial f/\partial y:0]$
 and puts the local coordinate at $[1:0:0]$; at $Q=P$ the intersection is
 $[0:1:0]$, and that is where the coordinate is read. With $\tau$ the affine
-coordinate $a/b$ on $L=V(z)$ at $[0:1:0]$, the map on local rings is
+coordinate on $L=V(z)$ at $[0:1:0]$, the one that a point of $L$ gives as the
+ratio of its first two homogeneous coordinates and that has $[1:0:0]$ as its point
+at infinity, the map on local rings is
 $$
 k[\tau]_{(\tau)}\longrightarrow k[x,y]_{(x,y)}/(f),
 \qquad
@@ -432,9 +457,10 @@ point of multiplicity $s$ with distinct tangent directions, an ordinary $s$-fold
 point in the sense of [[P-AGH53MULTIPLICITY|Exercise I.5.3]].
 
 For finiteness, by step [](#s3){.pf-ref} only finitely many tangents are
-inflectional; every other multiple tangent gives, by the paragraph above, a point
-of $X^*$ with at least two branches, hence a singular point of the projective
-curve $X^*$, and a projective curve has only finitely many singular points. Reiser
+inflectional; every other multiple tangent gives a point of $X^*$ with at least
+two branches, one for each of its contact points and each nonsingular with its own
+tangent direction, hence a singular point of the projective curve $X^*$, and a
+projective curve has only finitely many singular points. Reiser
 concludes at the same place "that $X$ has only finitely many multiple tangents".
 
 :::
@@ -796,7 +822,7 @@ Reiser, Exercise IV.2.3(f), printed p. 357, computes the same number by the same
 $$
 B=\binom{d(d-1)-1}{2}-\binom{d-1}{2}-3d(d-2),
 $$
-"which after a little light algebra may be confirmed to be $\frac12 d(d-2)(d-3)(d+3)$". The paragraph above identifies the nodes with the strict bitangents and the cusps with the ordinary inflections, which is what lets his $I$ and $B$ be read as those two classes.
+"which after a little light algebra may be confirmed to be $\frac12 d(d-2)(d-3)(d+3)$". The identification this step proves --- that the nodes of $X^*$ are the strict bitangents and its ordinary cusps the ordinary inflections --- is what lets his $I$ and $B$ be read as those two classes.
 :::
 
 :::
