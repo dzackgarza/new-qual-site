@@ -3597,3 +3597,23 @@ path. Second, `10189ea4af` was made with `git -c core.hooksPath=hooks`, a direct
 exist in this repository, so the pre-commit gate did not run on it; the same gate was run afterwards
 over the whole outgoing range, in push mode, and reports no error, so what the gate checks holds of
 that card's blob, and the bypass is disclosed here.
+
+
+## 2026-11-16: the two commits of this date that carried a sibling's staged paths, and what each holds
+
+The V.4.12 card of the batch recorded just above was committed twice, and both commits carry work of
+other chats that was staged in the shared index. Disclosed here so that the record of this date and
+the history agree; no work is lost and no card's content is affected.
+
+- **`5b24fa522b`** carries the V.4.12 card `P-AGH5412KODAIRAVANISH` together with
+  `P-AGH5212ELLRULEDAMPLE` (V.2.12), which another chat had staged: its message names only V.4.12.
+  The V.2.12 content is that chat's, and this pass wrote none of it.
+- **`4578427ace`** is that commit amended, and it carries no change to the V.4.12 card at all: it holds
+  a four-line V.2.12 edit and the V.5.11 card `P-AGH561COMPLETEINT`, both from other chats, under a
+  message about V.4.12's transcription. The amend was made to narrow the first commit and the sibling's
+  paths were staged again between the two operations, so the wrong message stands on a commit whose
+  content is not the one it names.
+
+The two commits of this batch that do carry only their own card are `1fa45f3008` (V.4.16) and
+`ec0cb972c8` (V.5.5); every later commit of this pass was made with an explicit pathspec, which is what
+the earlier two should have used.
