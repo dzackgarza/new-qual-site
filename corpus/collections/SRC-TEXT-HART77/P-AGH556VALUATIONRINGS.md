@@ -63,7 +63,7 @@ audit:
     the step Exercise II.4.12 leaves open and Egbert's entry does not prove; it
     is this card's step union-contained-in-r. The remark now gives the source's
     argument and says which of this card's steps is which. Checked against
-    Hartshorne V.5.6, printed p. 299, and against the three kinds as printed in
+    Hartshorne V.5.6, printed p. 420, and against the three kinds as printed in
     Exercise II.4.12.
 - event: source-corrected
   by: claude
@@ -73,7 +73,7 @@ audit:
     where it says Yang's entry "proves all three kinds" and where it maps his
     union to step union-contained-in-r. Re-read in
     tmp/sources/lfwin-hartshorne-solutions.md, Solution 5.5.6 is Egbert's
-    V.5.6 entry (printed p. 299) plus one sentence, and that sentence is the
+    V.5.6 entry (printed p. 299, which is Egbert's page and not the book's) plus one sentence, and that sentence is the
     bare assertion R = lim O_{P_i,X_i} = union O_{P_i,X_i} with no argument;
     his entry does not use the hint, Exercise V.5.1, at all. It therefore
     proves kind (3) no more than Egbert does, and the exercise is proved by
@@ -482,6 +482,8 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.5.6, printed p. 114 (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), **does not prove the exercise**, and no step of this card is a transcription of it. What he writes is Egbert's V.5.6 entry, printed p. 299, text version `tmp/sources/hartshorne-solutions-egbert.md`, with one sentence added. The valuation criterion, $X$ being projective and therefore proper, gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; when the centre is a curve both rings are discrete valuation rings and $R=\OO_P$, which is kind (1); when it is a closed point he blows $P$ up and says the centre on $X'$ is either the exceptional curve, which is kind (2), or a point of it, and that one repeats. The added sentence is his kind (3), and it is an assertion, not an argument:
 $$R=\varprojlim\OO_{P_i,X_i}=\bigcup_i\OO_{P_i,X_i}.$$
 Two things in it are wrong. The union of the local rings is a direct limit, $\bigcup_i\OO_{P_i,X_i}=\varinjlim_i\OO_{P_i,X_i}$, its transition maps being the inclusions $\OO_{P_i,X_i}\into\OO_{P_{i+1},X_{i+1}}$; an inverse limit needs maps in the opposite direction, which this chain of rings does not carry, so neither identity in the display is established. And his numerical test does not sort the three kinds: he reads $\operatorname{tr.d.}_k(R/\mathfrak m_R)$ as the dimension of the centre and takes the value $1$ to mean kind (1), but in kind (2) the ring $R=\OO_{X_n,x_n}$ at the generic point of the exceptional curve has $\operatorname{tr.d.}_k(R/\mathfrak m_R)=1$ as well, its centre on $X$ being a closed point; the kinds are separated by where the centre sits, not by that number. His entry does not use the hint, Exercise V.5.1, at all, and it is that exercise which supplies the missing inclusion.

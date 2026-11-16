@@ -546,6 +546,8 @@ line-bundle twist.
 :::
 
 ::: {.remark title="Published solutions"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299 of
 `tmp/sources/hartshorne-solutions-egbert.pdf`, read in its MinerU text version
 `tmp/sources/hartshorne-solutions-egbert.md` (entry `5.5.6` at line 12786; printed folio = PDF page

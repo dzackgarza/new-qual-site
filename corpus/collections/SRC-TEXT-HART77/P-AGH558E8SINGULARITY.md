@@ -66,7 +66,11 @@ audit:
     D_4 case with the divisor computation in full and lists E_8: x^2+y^3+z^5=0
     with "the resolution is a bunch of -2-curves whose configuration is given by
     the corresponding Dynkin diagram", which states the result without the eight
-    blowups. Not checked: whether the blowups the card writes are minimal, and
+    blowups. That page was verified on 2026-11-16: the text version
+    tmp/sources/reid-chapters-algebraic-surfaces.md marks pages only in blocks of
+    twenty, so the page was read from the retained PDF's own text layer, where
+    the folio is the PDF page (PDF p. 82 carries the D_4 claim, the divisor
+    computation giving Gamma_0^2 = -2, and the E_8 list). Not checked: whether the blowups the card writes are minimal, and
     Park's part (a), which the card already records as stopping there.
 - event: source-checked
   by: claude
@@ -88,8 +92,10 @@ audit:
     it leaves (vii) as "similar", and it states the E8 incidence without
     computing which exceptional curve meets which. The card's steps supply
     those. Miles Reid, Chapters on Algebraic Surfaces, Chapter 4, section 4.2,
-    printed p. 82, works the D4 case in full and lists E8: x^2+y^3+z^5 with the
-    Dynkin-diagram statement and no blowups. The remark's opening now says the
+    printed p. 82 (read from the PDF's own text layer, the extraction marking
+    pages only in blocks of twenty; its PDF page is its printed page), works the
+    D4 case in full and lists E8: x^2+y^3+z^5 with the Dynkin-diagram statement
+    and no blowups. The remark's opening now says the
     source computes the blowups and states E8 without deriving it, instead of
     calling the computation complete.
 ---
@@ -708,7 +714,9 @@ exceptional incidence graph required in part (b).
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.5.8, PDF pp. 300--302. Part (a) is complete: $z$ is irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is a domain, $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ is a UFD because the localization is one and an irreducible of $A$ not in $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} are that argument. Part (b) he does not prove: his solution is "Step 1: Start your computer. Step 2: Enter the following commands into Singular", followed by a manual computation of the first two or three blowups, which reaches the local equation $X^2+zY(Y+z)=0$ and then stops at "etc, etc." Steps [](#third-blowup-two-points){.pf-ref} to [](#eight-blowups-e8-diagram){.pf-ref} carry the sequence to the eighth blowup and record the $E_8$ incidences. Recorded in COMPLAINTS for (b). Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, read in `tmp/sources/hartshorne-solutions-park.pdf` and in its MinerU text version `tmp/sources/hartshorne-solutions-park.md`, stops at part (a), as the audit note above records.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.8, printed p. 420, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.5.8, PDF pp. 300--302. Part (a) is not complete as printed: he asserts that $z$ is irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is an integral domain --- true, since the cusp is parametrized by $u\mapsto(u^3,-u^2)$ and $k[x,y]/(x^2+y^3)\cong k[u^2,u^3]$ is a domain --- but he does not prove it, writing instead "Proceed as in Algebra.NN.30, my algebra/geometry/analysis solutions, summerstudychallenge2.pdf", a document not in `tmp/sources` and not read. What he does give is the rest: $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ a UFD because the localization is one and an irreducible of $A$ not in $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} prove the whole of (a) without that deferral. Part (b) he does not prove: his solution is "Step 1: Start your computer. Step 2: Enter the following commands into Singular", followed by a manual computation of the first two or three blowups, which reaches the local equation $X^2+zY(Y+z)=0$ and then stops at "etc, etc." Steps [](#third-blowup-two-points){.pf-ref} to [](#eight-blowups-e8-diagram){.pf-ref} carry the sequence to the eighth blowup and record the $E_8$ incidences. Recorded in COMPLAINTS for (b). Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, read in `tmp/sources/hartshorne-solutions-park.pdf` and in its MinerU text version `tmp/sources/hartshorne-solutions-park.md`, stops at part (a), as the audit note above records.
 :::
 
 ::: {.remark title="Published solution"}
