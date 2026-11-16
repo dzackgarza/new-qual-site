@@ -1088,6 +1088,8 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 
 **Repair.** Discharged for V.1.4(b), on a transcription of the National Taiwan University set's Exercise 4, and for V.1.12, on Fuentes--Pedreira's Theorem 3.9(3) specialized to $C\times\PP^1$ with $e=0$. V.1.11(a) and (b) stay open: the National Taiwan University set's (a) estimate does not follow from its adjunction line and its (b) omits the step from finitely many numerical classes to finitely many automorphisms, so no complete published argument for either part has been located, and Yang Pi-Yeh bounds nothing in (a).
 
+**2026-11-16, V.1.11: (b) closes on Bragg's Proof 2, and (a) still has no complete published proof.** The two sources named for this batch were read in their text versions on 2026-11-16: Math StackExchange answer 4775583 by KReiser, saved with its question as `tmp/sources/mse-4449474-hart-v111a-finite-automorphisms.md`, for (a); and Dan Bragg, "Automorphisms of curves" (2015), `tmp/sources/bragg-2015-automorphisms-of-curves.md`, Proof 2, "Intersection Theory", for (b). Bragg's Proof 2 is a complete published proof of (b) given (a): the graphs of distinct automorphisms are distinct irreducible curves, so they meet nonnegatively, while numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$ by his conormal computation of the diagonal, hence $\sigma\mapsto[\Gamma_\sigma]$ is injective; and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which he uses as the fixed ample divisor, ample for $g\ge2$ by Nakai--Moishezon since $K\cdot l=K\cdot m=2g-2>0$ and $K^2=2(2g-2)^2>0$. The card's steps `s6` to `s10` are that argument, so the step `s8` that the earlier record above says nothing in `tmp/sources` supplied is Bragg's. The answer 4775583's route to (a) is the card's, but two of its displays do not follow: its step from $-\sum_ib_i^2(D_i\cdot K+2)$ to $-d\,D\cdot K-2d^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K$, which $b_i\le d$ licenses only when $D_i\cdot K\le0$ for every component and which fails on a surface with $K$ ample, and its closing sentence bounds $(D-E)^2$ below by an expression linear in $D$, so it describes no ellipsoid and yields no uniformity. Part (a) therefore stays open, and its bound stays the card's, through the orthogonal decomposition of $K_X$ in $H^\perp$ and the lattice $\Num X$. Uncertainty: whether a published treatment of (a) outside these two sources exists; the answer's own comment thread records that an earlier answer of its author had been withdrawn as insufficient.
+
 ### §V.2 of `SRC-TEXT-HART77`: four cards still have no complete published solution, and two more have a partial one
 
 **Object and need.** Ten requests in `SRC-TEXT-HART77` §V.2 were proved on their cards without a complete published argument to check them against, and the per-card bullets below record where each now stands; the ten were: `P-AGH521BASEUNIQUE` (V.2.1, printed p. 383), `P-AGH522DECOMPSECT` (V.2.2, p. 383), `P-AGH523SUCCEXT` (V.2.3, pp. 383--384), `P-AGH525INVARIANTE` (V.2.5(a) and (c), p. 384), `P-AGH528STABLEBUNDLE` (V.2.8(c), p. 384), `P-AGH5210CANONSCROLL` (V.2.10, p. 385), `P-AGH5212ELLRULEDAMPLE` (V.2.12, p. 385), `P-AGH5213ELLSCROLL` (V.2.13, p. 385), `P-AGH5215FROBENIUSRULED` (V.2.15(c), p. 385) and `P-AGH5217CONORMALSPLIT` (V.2.17, p. 386).
@@ -1119,6 +1121,8 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 
 
 **Repair.** Discharged for V.2.1, V.2.2, V.2.3, V.2.12, V.2.13 and V.2.17(a) on the arguments recorded above, with the two partial closures stated on the cards. V.2.5, V.2.8(c), V.2.10 and V.2.15(c) still need a complete published argument, and V.2.5(d) needs Nagata's paper itself, which is behind an automated-access check at Project Euclid and a subscription at Cambridge Core; the card records the bound and lists the part open.
+
+**2026-11-16, §V.2: V.2.5 and V.2.10 close on published statements, V.2.8(c) on Gunning's Theorem 14, and the parts left open are named.** Seven sources named for this batch were read in their text versions on 2026-11-16 and transcribed onto the cards with the numbered statement and printed page of each step. V.2.5: part (a) is Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74 (extension classes are a first cohomology group, and the split extension is the zero class), and Theorem 14, printed pp. 87--90 (the indecomposable bundles with a given subbundle $\varphi$ and determinant $\xi$ are parametrized by $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$), with the duality half of the book's proof of Theorem 2.12, printed p. 376, for the nonvanishing of $H^1(C,\mathcal L^{-1})$ at $\varphi=\OO_C$; part (b) is Proposition 1.1, printed p. 57, and Lemma 2.3, printed pp. 58--59, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, Math. Ann. 266, whose criterion is the kernel of the canonical map $H^0(K_C\otimes L)^*\to H^0(K_C\otimes L(-D))^*$ in both directions, the same square the book's proof of Theorem 2.15, printed pp. 377--379, runs in one direction, and the printed "Cf. proof of (2.15)" points at; part (c) is their Corollary 1.2, printed p. 58, applied to line bundles of degrees $d$ and $2d$ with $d=-e$, since twisting by the inverse of the extension's subbundle returns a normalized bundle with determinant of degree $d$, with Example 2.11.6, printed p. 375, and Theorem 2.15 for genus one; and part (d) is Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, Manuscripta Math. 47 (1984), §2 Theorem $s(E)\le g$, printed pp. 267--268, on the dimension theorem of §1, printed p. 266: for a normalized bundle $s(E)=\deg\det E=-e$, so $e\ge-g$ and $e\ge-2$ at $g=2$. That replaces the unread Nagata paper, which the printed Note and Fuentes--Pedreira both cite for the same bound. What stays open in part (d): the paper's proof reduces at its start to extensions whose quotient has degree $d>3$ and does not argue the reduction, while its §1 needs only $d\ge2$ when $g\ge2$. V.2.8(c): Gunning's §(c), printed pp. 82--83, Lemma 14, printed pp. 81--82, Lemma 15, printed pp. 83--85, and Theorem 14, printed pp. 87--90, are the stability criterion, the decomposable case, the uniqueness of the maximal subbundle and the classification with $\varphi=\OO_C$; the bound $0<e\le2g-2$ is the argument of the book's Theorem 2.12, printed p. 376. The printed "up to isomorphism" of the exercise remains defective, and the card classifies tensor-equivalence classes in terms of the printed data. V.2.10: Hartshorne's own Corollary 2.18(b), printed p. 380, states that $\linearsystem{D}$ contains an irreducible nonsingular curve exactly when $a>0$ and $b>ae$, or $e>0,a>0,b=ae$, and so covers $D=H-K_X=3C_0+(n+e+2)f$ under exactly the hypothesis $n\ge2e-2$ the exercise imposes; the proof of Corollary 2.19, printed p. 380, is the count $h^0(\OO_X(H))=2n-e+2$; and Reid, *Chapters on Algebraic surfaces*, §2.8 Theorem with (2.8.1), printed p. 19, §2.9, printed p. 20, and §2.10, printed pp. 20--21, give the class $\alpha A+3B$ with $\alpha=a+a_2+2$, the criterion $\alpha-3a=B\cdot(\alpha A+3B)\ge0$, and the Maroni inequality $3a\le g+2$ that is the same condition. The one step of that card not stated in either source is the restriction isomorphism $H^0(\OO_X(H))\cong H^0(Y,K_Y)$, which it assembles from the book's count with $H^0(\OO_X(K_X))=H^1(\OO_X(K_X))=0$. V.2.15(c) is untouched by this batch and stays open as recorded above.
 
 ### §V.3 of `SRC-TEXT-HART77`: six cards have no complete published solution
 
@@ -3135,3 +3139,116 @@ The section immediately above, recording the `E-HAT-2.B-4` transcription of this
 **Uncertainty.** The printed pages were read off the sources' own pages, not from memory: the folios of tom Dieck at PDF pages 100, 101, 139 and 140; of Davis--Kirk at PDF pages 168, 169 and 175, offset 15 from its running heads; of Dugger at PDF pages 12, 18 and 31; of Eda--Kawamura at PDF page 3 (printed 307) and 6 (printed 310); of Frankland at PDF pages 2 and 3; and of Hatcher at PDF pages 190, 193, 268, 349, 350 and 367, offset 9 from its printed folios. The two solution sets print no folio; their pages are the position of the exercise in the set, and 3.3.21 is the first block of the Stanford set's page 1 and Problem 2 begins on Kottke's page 2. Not verified: the pagination of the 1999, 2001 and 2008 bound volumes of May, Davis--Kirk and tom Dieck, and nothing was read from a rendered image. What would close the five open parts: a printed solution of Exercise 2.C.1 for non-positive degree, of 2.C.6, of the bracketed question of 3.3.21, of the commutation rule of 4.1.1, or of the four properties of 4.1.7.
 
 **Repair.** Per card: the transcriptions and the audit events recording them are in the five commits of this date that touch the five cards — `78a312ebca` on `E-HAT-2.C-1`, `e0a01c37c1` on `E-HAT-2.C-6`, `05ac532026` on `E-HAT-3.3-21`, `41fda8e1dd` on `E-HAT-4.1-1` and `4fda3a2e06` on `E-HAT-4.1-7`; the open parts are unchanged as obligations under [#123](https://github.com/dzackgarza/new-qual-site/issues/123). No claim here supersedes the earlier entries of this item that say `E-HAT-2.C-1`, `-2.C-6`, `-3.3-21`, `-4.1-1` and `-4.1-7` lack a complete published solution; this record says which part of each is now transcribed and which part is not.
+
+## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter IV batch of three cards (IV.2.2, IV.2.3, IV.3.4)
+
+One chat of the parallel #121 batches, on the three Chapter IV cards its brief named:
+`P-AGH422GENUSTWOMODULI` (IV.2.2), `P-AGH423DUALCURVE` (IV.2.3) and
+`P-AGH434RATIONALNORMALCURVE` (IV.3.4). Each card's solution is now the published argument,
+transcribed step by step, each step naming the numbered part and printed page it comes from, and
+each statement re-read against the book in `tmp/sources/hartshorne-1977-algebraic-geometry.md`:
+IV.2.2 and IV.2.3 on printed pp. 304--305 (PDF pp. 319--320) and IV.3.4 on printed p. 315 (PDF
+p. 330). What follows is, per card, the part that still has no published proof, and the defects of
+the sources found while transcribing them.
+
+**IV.2.2, `P-AGH422GENUSTWOMODULI` (2026-11-16).** Parts (a)--(d) have complete published proofs
+in two of the three sources: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2,
+printed pp. 352--354 of `tmp/sources/reiser-hartshorne-solutions-pp351-358.md` --- (a) at p. 352,
+(b) and (c) at p. 353, (d) at p. 354 --- and Chin-Lung Wang's Algebraic Geometry II (NTU, 2020
+Spring), Chapter IV §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6 of
+`tmp/sources/ntu-ag2-chapter4.md` --- (a) at p. 4, (b) at pp. 4--5, (c), (d), (e) at p. 6. Part
+(e) is the part with no complete published proof: Reiser's answer to it, printed p. 354, is the
+single word "Yup!", and Hou's, printed p. 6, proves the two halves that use only the canonical map
+--- that an isomorphism of curves carries the tuple to the same class, and that every tuple comes
+from a curve, by part (b) --- but not that a separable degree-two cover of $\PP^1$ is determined by
+its branch divisor, which is what makes two curves in one class isomorphic. D. Gruenewald,
+*Computing Humbert Surfaces*, §2, printed p. 2 of
+`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`, states the resulting quotient, as a
+Galois covering $\mathcal M_2(2)\to\mathcal M_2$ of degree $720$, without proof. The card's step
+`s9` carries that statement and is marked as the card's own; its citation is Vakil, Proposition
+19.5.2, printed pp. 546--547, which is already on the card from the pass of 2026-11-15. So part
+(e) is closed on the card by NTU's argument for the two halves plus Vakil's proposition for the
+third, and by no one source.
+
+**Two defects in Hou's Chapter IV solutions, found while transcribing IV.2.2 (2026-11-16).**
+First, Hou's part (d), printed p. 6, opens "The symmetric group $S_3$ acts on distinct element
+$\beta_1,\beta_2,\beta_3\in k\setminus\{0,1\}$ by permuting $\{0,1,\infty,\beta_1,\beta_2,\beta_3\}$,
+then sending the first three element to $0,1,\infty$ by Möbius transform again", and its part (e)
+concludes with the class modulo "such $S_3$-action"; the action described is the permutation action
+of $\Sigma_6$ on the six-tuple followed by renormalization, which is what the exercise defines, and
+Gruenewald's degree $720=\cardinality{\Sigma_6}$ at printed p. 2 is the order of the group that acts
+faithfully. Read as printed, Hou's (d) and (e) classify by the wrong group, and a reader who took the
+label would state the classification modulo $S_3$, which is false. Second, Hou's part (b), printed
+p. 5, prints $h^0(X,\mco_X(K_X-2P))=2$ where its own Riemann--Roch line, $h^0(\mco_X(2P))-h^0(\mco_X(K_X-2P))=1$
+with $h^0(\mco_X(2P))=2$, gives $1$; the conclusion $K_X\sim2P$ needs the $1$. Neither defect changes
+what the card states or proves; both are recorded here rather than corrected in the source, which is
+not this repository's to edit.
+
+**IV.2.3, `P-AGH423DUALCURVE` (2026-11-16).** The brief named one source, O. Bergvall, §2.2 with
+Theorem 2.2, printed pp. 3--4 of
+`tmp/sources/bergvall-2021-plane-quartics-arithmetic-topology.md`. Bergvall proves only part (h), and
+states even that as a theorem of Plücker and Jacobi without proof: Theorem 2.2, printed p. 4, is
+"Every plane quartic has 28 bitangents", with the odd theta characteristics and the bijection with
+bitangents on the same page. Parts (a)--(g) and the general-case count of (h) are Reiser's Exercise
+IV.2.3, printed pp. 354--358 of the same solution set --- (a) at p. 355, (b) at p. 356, (c)--(f) at
+p. 357, (g)--(h) at p. 358 --- which the brief did not name for this card; it is the same set it names
+for IV.2.2, and it is a complete solution of the exercise. Reiser records part (b) in his list of
+exercises with issues, printed p. 5, as "somewhat difficult", because an equation for the dual curve
+is hard to get at, and solves it by a formal parametrization.
+
+What still has no published proof, located: the printed parenthetical of part (h), that a tangent
+with four-fold contact gives a point of the dual curve that is a unibranch singular point of
+multiplicity $3$. Reiser's (h), printed p. 358, substitutes $d=4$ into part (f) and says nothing about
+a four-fold contact; Bergvall's §2.2 gives the convention that makes the count include such a line
+--- a bitangent "is tangent to $C$ at two points or has contact order $4$ at one point", printed p. 3
+--- but says nothing about the dual point. The card's step `s11` carries the local analysis, its
+$\delta$-invariant $3$, and with it step `s14`'s formula $b=28-h$ for a quartic with $h$ hyperflexes;
+both are marked as the card's own. The book's own parenthesis here is false as printed --- it calls
+that point a "tacnode", which has two branches --- and the card's statement keeps the correction
+recorded in its source-corrected event of 2026-10-29, not re-opened in this pass. The further
+statements the card needs and no source proves are the two identifications in its step `s12` --- that
+a node of $X^*$ is exactly a strict bitangent and a cusp exactly an ordinary inflection --- which is
+what lets Reiser's $I$ and $B$ be read as those classes.
+
+**IV.3.4, `P-AGH434RATIONALNORMALCURVE` (2026-11-16).** The brief named part (a) of NTU's §3 Exercise
+4 by Yu-Chi Hou, printed pp. 8--9; the source also proves (b) at printed p. 10, together with the
+degree-$2$ and degree-$3$ sentences the card's statement carries as (c) and (d) there, and those are
+transcribed with it. The part with no clean published proof is the projective-normality half of (a).
+Hou's division of the ideal by the quadrics $g_{ij}$ is complete, printed p. 9; its integral-closure
+half is not. The degree count that closes it, printed p. 8, reads "By comparing degree, we may assume
+that $a_0,\ldots,a_{d-1}$ are homogeneous of degree $k_0,\ldots,k_{n-1}$ in degree $d$ monomial of
+$t_0,t_1$ and $g$ is homogeneous of degree $m$ in $t_0,t_1$. Thus, equating the degree of (1) gives
+$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$. Hence, $m=dk_{n-1}\Rightarrow d\mid m$", whose chain is not
+a chain of equalities and whose indices mix $n$ and $d$; the display that follows, "$f=\sum_i a_i
+t_0^{dn-1-i}t_1^i$", mixes them again. The toric restatement at printed pp. 8--9 gives the cone
+$\sigma=\RR_{>0}\langle e_1,e_1+de_2\rangle\subset\RR^2$, whose monoid is not the monoid
+of the $d$-uple embedding. The card's step `s2` keeps Hou's integral-closure route and supplies the
+conclusion of the garbled line from Hou's own identification
+$S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ at printed p. 8: an element of $S(X)$ homogeneous as a
+polynomial in $t$ has $t$-degree divisible by $d$, and in such a degree $S(X)$ is the whole of
+$k[t_0,t_1]$ by the card's step `s1`. A published proof of projective normality that can be cited
+without repair is not located among the sources of this batch; Vakil's §8.2 and Harris's lecture on
+the rational normal curve are candidates not read in this pass.
+
+**Checked against the book, per card (2026-11-16).** IV.2.2: the five parts, the hypothesis
+$\characteristic k\ne2$, and the uniqueness clause of (a), printed p. 304. IV.2.3: the hypothesis
+"We assume $\characteristic k=0$ below", the definition of an ordinary $r$-fold point in (b) as
+multiplicity $r$ with distinct tangent directions, the weighted count of (e) with $r-2$ per point,
+the hypothesis of (f), and the nine and 28 of (g) and (h), printed pp. 304--305. IV.3.4: the
+hypotheses $d\le n$ and non-degeneracy of (b), and the two sentences after it, printed p. 315.
+
+**Not done in this batch (2026-11-16).** No source outside the three named in the brief and Reiser
+was searched for the two open parts, so the absence claims above are about the sources read, not
+about the literature: Searched --- the brief's sources plus Reiser; Found --- the parts above;
+Conclusion --- those parts have no published proof in those files; Confidence --- high for those
+files, none claimed beyond them; Gaps --- a search of the literature, in particular of Vakil's §8.2
+and Harris's rational-normal-curve lecture for IV.3.4(a) and of the classical literature on the dual
+of a quartic with a hyperflex for IV.2.3(h). Vakil's §§19.5--19.6 and Egbert's solutions were not
+re-read; their citations on `P-AGH422GENUSTWOMODULI` and `P-AGH423DUALCURVE` are those of earlier
+events and stand unchanged.
+
+**Repair.** Per card: the three commits of this date that touch the three cards, with the audit events
+that record what each transcription and each check covered. Part (e) of IV.2.2 is closed on the card
+by its two sources taken together, as the first item says; the open parts of IV.2.3 and IV.3.4 stay
+obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121), and nothing in this
+record supersedes an earlier entry of this file.
