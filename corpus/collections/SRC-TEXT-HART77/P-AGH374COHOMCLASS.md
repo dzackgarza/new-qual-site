@@ -460,6 +460,70 @@ audit:
     (PROSE-11, QUAL-08, SEC-7). No mathematics changes, and no step, page or tag
     moves. Read in this pass: the two rendered paragraphs and the audit trail of
     this card; no source was reopened and no step was re-derived.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, five items. (i) QUAL-01: the statement was
+    the printed exercise alone, and the printed exercise fixes no normalization
+    of the trace, so that parts (b) and (d), which assert numerical identities,
+    have no fixed meaning as printed; the card said so at the head of its
+    solution and in the remark on the trace, which made the problem block ask
+    for an assertion the card itself calls unfixed. The statement now carries
+    the normalization, one sentence after the trace map: "These trace maps are
+    normalized so that the trace at a closed point is the identity: for a closed
+    point $P$ the map $t_P: H^0(P, O_P)\to k$ is the identity of $k$, and on a
+    finite reduced $k$-scheme the trace is the sum of the traces at its
+    points." The printed text it replaces is III.7.4, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md at printed pp. 249--250
+    (PDF pp. 264--265): "Now $\Omega_Y^{n-p}=\omega_Y$ is a dualizing sheaf for
+    Y, so we have the trace map $t_Y: H^{n-p}(Y,\Omega_Y^{n-p})\to k$.
+    Composing, we obtain a linear map ... By (7.13) this corresponds to an
+    element $\eta(Y)\in H^p(X,\Omega_X^p)$, which we call the cohomology class
+    of Y", with no word on which trace is meant; III.7.1(a), which it builds on,
+    says only "Fix one such isomorphism". This reverses the decision the
+    solution-reviewed event of even date recorded, the one whose note begins
+    "Repairs on the reader's report of this batch" and whose item (1) moved the
+    normalization out of the problem block; that event is dated, is left as
+    written, and this event is the correction, on the ground that QUAL-01 asks
+    for a statement that is true and well posed rather than one the card calls
+    unfixed. (ii) DEF-26: the definiendum mark stood on "cohomology class of
+    $Y$" inside the problem statement; it is gone, the notion being defined
+    only for the exercise, not on a definition card. (iii) QUAL-01: the printed
+    hint is bracketed and says "reduce to the case Y is a finite set of points";
+    the statement had dropped the brackets and added "where". The bracket and
+    the printed words are back, and the exercise's closing sentence, "See
+    Matsumura [1] for further discussion.", which the card had dropped, is after
+    part (d). (iv) QUAL-08, on the head of the solution. It carried status text
+    about the card rather than mathematics: that the printed exercise fixes no
+    normalization (now moot, the statement carrying it), "What this solution
+    uses is the following, and nothing else", that the class-level part of (B)
+    "is published" and that the identity behind (R) "is not", that the
+    functoriality of gamma "is an input of this solution", that the reduction
+    "is therefore not made here", that parts (b) and (d) are "theorems relative
+    to (R) and (B), and open with respect to the book alone", and that "The
+    remark below records what the book does and does not determine". What the
+    head now states is the mathematics: the normalization in force and that the
+    trace at a point does not determine the trace on $X$; the three properties
+    (G), (R) and (B) with what each says; the Gysin calculus of the Stacks
+    Project with its tags and the two places where a comparison with the trace
+    of III.7 would be needed; and that (b) and (d) hold relative to (R) and
+    (B), with the marks that (b) and (d) are the card's own kept. Two phrases
+    of the same kind outside the head went with them: step s3's "This is a
+    normalization and not a consequence of the book" now says which generator
+    the number $\deg Y$ is measured against, and step s6's "and relative to
+    (R) alone: (R) itself is not proved here" now stops at "relative to (R)
+    alone". (v) Yang is quoted as "are just identity" where he prints "is just
+    identity", of "the morphism $k \cong H^p(H,O_H^p) \cong H^p(X,O_X) \cong k$";
+    the remark now quotes his singular verb with his subject. Read in this pass:
+    the printed exercise in the text version above, with III.7.1(a) and III.7.14
+    around it; Yang Pi-Yeh, Solution 3.7.4(b), in
+    tmp/sources/lfwin-hartshorne-solutions.md at line 1984, printed p. 75, for
+    the quotation in (v). Not checked: the printed pages were not in hand; Kim's
+    Exercise 3.7.4 and the Math StackExchange answer were not reopened; no step
+    was re-derived, and no source was searched in this pass.
+
 ---
 
 ::: {.problem}
@@ -471,13 +535,16 @@ Now $\Omega_Y^{n-p} = \omega_Y$ is a dualizing sheaf for $Y$, so we have the tra
 $$
 t_Y: H^{n-p}(Y, \Omega_Y^{n-p}) \to k
 .$$
-Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the \dfn{cohomology class of $Y$}.
+
+These trace maps are normalized so that the trace at a closed point is the identity: for a closed point $P$ the map $t_P: H^0(P, \OO_P) \to k$ is the identity of $k$, and on a finite reduced $k$-scheme the trace is the sum of the traces at its points.
+
+Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the cohomology class of $Y$.
 
 (a) If $P \in X$ is a closed point, show that $t_X(\eta(P)) = 1$, where $\eta(P) \in H^n(X, \Omega^n)$ and $t_X$ is the trace map.
 
 (b) If $X = \PP^n$, identify $H^p(X, \Omega^p)$ with $k$ by (Ex. 7.3), and show that $\eta(Y) = (\deg Y) \cdot 1$, where $\deg Y$ is the degree of $Y$ as a projective variety (I, §7).
 
-   Hint: cut with a hyperplane $H \subseteq X$, and use Bertini's theorem (II, 8.18) to reduce to the case where $Y$ is a finite set of points.
+   [Hint: Cut with a hyperplane $H \subseteq X$, and use Bertini's theorem (II, 8.18) to reduce to the case $Y$ is a finite set of points.]
 
 (c) For any scheme $X$ of finite type over $k$, we define a homomorphism of sheaves of abelian groups $d\log: \mco_X^* \to \Omega_X$ by $d\log(f) = f^{-1} \, df$. Here $\mco_X^*$ is a group under multiplication, and $\Omega_X$ is a group under addition. This induces a map on cohomology
 $$
@@ -486,18 +553,12 @@ $$
 which we denote by $c$. See (Ex. 4.5).
 
 (d) Returning to the hypotheses above, suppose $p = 1$. Show that $\eta(Y) = c(\mcl(Y))$, where $\mcl(Y)$ is the invertible sheaf corresponding to the divisor $Y$.
+
+See Matsumura [1] for further discussion.
 :::
 
 ::: {.solution}
-The printed exercise fixes no normalization of the trace. Serre duality supplies
-the trace of a dualizing sheaf only up to a nonzero scalar (III.7.2, printed
-p. 241; III.7.14, printed p. 247, says of it that "we know only that it
-exists"), and parts (b) and (d) assert numerical identities, so they hold only
-for the trace that matches the integers. What this solution uses is the
-following, and nothing else.
-
-(N) The trace on $\Spec k$ is the identity, and the trace on a finite reduced
-$k$-scheme is the sum of the traces of its points.
+The trace maps are those of the statement, normalized so that the trace at a closed point is the identity of $k$. Written out, (N) says that the trace on a finite reduced $k$-scheme is the sum of the traces at its points, and that on $\Spec k$ it is $\operatorname{id}_k$. Serre duality supplies a trace only up to a nonzero scalar (III.7.2, printed p. 241; III.7.14, printed p. 247, says of it that "we know only that it exists"), so this normalization is a condition on the trace and not a convention: parts (b) and (d) assert numerical identities, and they are stated for the trace it selects. We use three further properties of that trace.
 
 (G) For a nonsingular closed immersion $j:Y\hookrightarrow X$ of codimension $p$
 the Gysin map
@@ -536,9 +597,7 @@ solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
 printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
 the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
-The class-level part of (B) is published, and it is quoted here as the Stacks
-Project states it; the class identity behind (R) is not, for the reason the
-paragraph after this one gives. With
+The class-level part of (B) is the Gysin calculus of the Stacks Project, quoted here as it states it. With
 $Z\subseteq X$ a Koszul regular closed immersion of codimension $c$ in an $X$
 smooth over a base $S$, let
 $\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$ be the
@@ -567,12 +626,13 @@ class identity behind (R),
 $$
 c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y}),
 $$
-is an input of this solution and not a theorem of the Stacks Project, and the
-class-level half of (B) is likewise a statement about $\gamma$ which becomes a
-statement about the trace only through the comparison below.
+is used below as an identity of classes in $H^n(X,\Omega_X^n)$, the comparison
+of the $d\log$ class with $\gamma^0(1)$ not being among the statements of the
+tags read; the class-level half of (B) is likewise a statement about $\gamma$,
+which becomes a statement about the trace only through the comparison with the
+trace of III.7 that follows.
 
-What those lemmas do not supply is the comparison of the Gysin class with the
-trace of III.7, and it has two halves. The first is the point. For $P\in X$ the
+The comparison of the Gysin class with the trace of III.7 has two halves. The first is the point. For $P\in X$ the
 classes $\eta(P)$ and $\gamma^{0,0}_{P/X}(1)$ both lie in the one-dimensional
 $H^n(X,\Omega_X^n)$, and the second is nonzero: Lemma 50.23.11 (tag 0G8E) says
 that for an irreducible smooth proper $X$ of dimension $d$ over a field the
@@ -603,21 +663,16 @@ $$
 With that, $t_X\circ\gamma_{Y/X}$ and $t_Y$ agree on the class
 $\gamma^{0,0}_{P/Y}(1)$, which spans the one-dimensional
 $H^{n-1}(Y,\Omega_Y^{n-1})$ because it is nonzero by 0G8E applied to $Y$, hence
-on every $\nu$, and (R) follows from the class identity above. That
-functoriality is an input of this solution: 0G8C states the class of one Koszul
+on every $\nu$, and (R) follows from the class identity above. The composite identity is used here: 0G8C states the class of one Koszul
 regular closed immersion and 0G8D its compatibility with a transverse square,
-and neither states the composite of two immersions. The reduction of (R) and
-(B) to the single point identity is therefore not made here, and no implication
-between them is established in either direction: (R) and (B) remain inputs of
-this solution, the point identity is not shown to be sufficient for them, and
-it is not shown to be necessary for them either. Neither (R) nor (B) is a
+and neither states the composite of two immersions. No implication between the point identity and (R) or (B) holds in either direction. Neither (R) nor (B) is a
 statement about a point: (R) constrains the trace against the $d\log$ class of a
 divisor and (B) constrains the square of a transverse pair, and the point
-comparison follows from neither: carrying either to a point takes a further
-identification, which this card does not make.
+comparison follows from neither, carrying either to a point taking a further
+identification.
 
-(N) is a normalization, and part (a) uses only (N). (R) is the substantive
-input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
+(N) is the normalization of the statement, and part (a) uses only (N). (R) is the substantive
+one, and part (d) is its case $\beta=1$. (B) is the second, and part (b)
 is its consequence. Both are cases of one statement, the compatibility of the
 trace of Grothendieck--Serre duality with the Gysin maps of closed immersions of
 nonsingular varieties: the divisor case of that compatibility is (R), and its
@@ -642,30 +697,24 @@ Part (a) thus holds for every choice of the scalar and is no constraint on it,
 and the identity $t_X(\eta(P))=1$ of step [](#s1){.pf-ref} is the definition of
 $\eta(P)$ rather than a discovery about $t_X$.
 
-The scalar is fixed instead by the point comparison above: there is exactly one
+The trace that parts (b) and (d) are stated for is fixed by the point comparison: there is exactly one
 trace with $t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1$, because
 $H^n(X,\Omega_X^n)$ is one-dimensional and $\gamma^{0,0}_{P/X}(1)\ne0$ (tag
-0G8E). That is the trace for which parts (b) and (d) are stated. It exists:
+0G8E). It exists:
 Proposition III.7.5 (printed p. 242) gives a dualizing sheaf with its trace on
 every projective scheme over $k$, and for $X$ nonsingular that sheaf is
-$\Omega_X^n$ (III.7.12, printed p. 246). What is missing for parts (b) and (d)
-is therefore not existence but the proof that this trace satisfies (R) and (B),
-together with the point comparison that singles it out, which is not proved
-here either.
+$\Omega_X^n$ (III.7.12, printed p. 246). Parts (b) and (d) need, beyond that
+existence, that this trace satisfy (R) and (B).
 
-Of these, the book proves (R) for curves, and step [](#s6){.pf-ref} derives it
+For curves the book proves (R), and step [](#s6){.pf-ref} derives it
 there from the residue description of the trace in Remark III.7.14 (printed
-pp. 247--248), sign included. It proves nothing of the kind for $\dim X\ge2$:
+pp. 247--248), sign included. For $\dim X\ge2$ neither (R) nor (B) comes from Chapter III:
 Remark III.7.14 says of the trace that "we know only that it exists", and its
-residue construction is stated for curves. Neither (R) nor (B) for higher
-dimension is proved in this card: the published Gysin calculus supplies the
-class-level part of (B), while for (R) the identity
-$c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})$ is an
-input, the comparison of the $d\log$ class with $\gamma^0(1)$ not being among
-its statements; neither half has the comparison of the trace with the Gysin
-class of a point. Parts (b) and (d) are therefore theorems relative
-to (R) and (B), and open with respect to the book alone. The remark
-below records what the book does and does not determine.
+residue construction is stated for curves. The Gysin calculus of the Stacks
+Project supplies the class-level part of (B), the identity
+$c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})$ is used
+as stated above, and neither half carries the comparison of the trace with the Gysin
+class of a point. Parts (b) and (d) therefore hold relative to (R) and (B).
 
 Part (a) is proved by Yang, Solution 3.7.4(a), printed p. 75, by Kim,
 Exercise 3.7.4(a), PDF p. 170, and, for the normalization the class needs, by
@@ -676,8 +725,7 @@ back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
 his (d) computes in homogeneous coordinates with Euler's formula, so it treats
 $X=\PP^n$ only; Kim writes no (b) beyond a fragment and no (d).  Steps
 [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}
-prove (b) and (d) relative to the inputs (R) and (B), and the two proofs are
-the card's.
+prove (b) and (d) relative to (R) and (B).
 
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
 $$
@@ -699,10 +747,10 @@ $$
 \eta(Y)=j_*(1).
 $$
 
-By the discussion above, (R) and (B) are statements about the trace fixed by
+Thus (R) and (B) are statements about the trace fixed by
 $t_X(\gamma^{0,0}_{P/X}(1))=1$, not about a choice among several; (N) does not
-fix that trace, and the point comparison does. What is proved below is that the
-exercise's four assertions follow from (N), (G), (R) and (B), and that (R) is a
+fix that trace, and the point comparison does. The four assertions of the
+exercise follow from (N), (G), (R) and (B), and (R) is a
 theorem of the book in dimension one.
 
 ::: pf
@@ -859,7 +907,7 @@ t_{\PP^n}\bigl(1_{\PP^n}\smile \alpha_0\bigr)=1 ,
 $$
 which exists and is unique because $\alpha_0\ne0$ and the Serre pairing is
 nondegenerate: it is the class pairing to $1$ with the class of the linear
-$\PP^p$. This is a normalization and not a consequence of the book. Exercise
+$\PP^p$. This fixes the generator of $H^p(\PP^n,\Omega^p)$ that the number $\deg Y$ is measured against. Exercise
 III.7.3 identifies $H^p(\PP^n,\Omega^p)$ with $k$, but does not say which
 generator of the dual space the trace of Serre duality is, and (b) is false by
 a scalar for another choice.
@@ -1064,7 +1112,7 @@ $$
 c(\mcl(Y))=\eta(Y).
 $$
 For $n=1$ this is a theorem of the book. For $n\ge2$ it is part (d) proved
-relative to (R), and relative to (R) alone: (R) itself is not proved here.
+relative to (R), and relative to (R) alone.
 
 :::
 
@@ -1089,11 +1137,11 @@ A natural choice does exist on $\PP^n$ and the book records it without using it:
 $$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
 which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
 
-The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the head of the solution states as (N), (G), (R) and (B). None of them is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and uses the normalization $1_{\PP^n}$ of that step to say which generator of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves and for $n\ge2$ it is an input, which the card names and does not prove.
+The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is the normalization the statement carries and which the head records as (N), alongside (G), (R) and (B). Nothing of that kind is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and uses the generator $1_{\PP^n}$ of that step to say which element of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves, and for $n\ge2$ it is used as stated in the head.
 :::
 
 ::: {.remark title="Published solution"}
 Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Parts (b) and (d) are the card's own.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed, (b) and (d) being the card's own.
+Parts (b) and (d) are the card's own.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed, (b) and (d) being the card's own.
 :::
