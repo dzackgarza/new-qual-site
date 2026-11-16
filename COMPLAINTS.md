@@ -1149,6 +1149,12 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 
 **Correction, 2026-11-16, on the reader's report of #121: V.3.8 is false as printed, so no published solution of it can exist, and the three sets that reach it are named with their text versions.** The body of `P-AGH538INEQUIVSING` and the V.3.8 sentence above already recorded the falsity, with multiplicity sequences $4,2$ and $4,3$ and $\delta_0=7$ and $9$, and no mathematical statement of the card is withdrawn: the remark now opens with the reason no published solution of a false printed assertion can exist, names Yang Pi-Yeh's entry, which the card did not carry, gives Egbert's conclusion as non-equivalence rather than as agreement with the printed claim, and quotes NTU's guess with the punctuation of the source. The text versions: Hartshorne is `tmp/sources/hartshorne-1977-algebraic-geometry.md`, in which printed p. $N$ is PDF p. $N+15$, so V.3.8 on printed p. 395 is PDF p. 410; NTU, Exercise 8 of §3, is `tmp/sources/ntu-ag2-chapter5.md`, whose page markers are coarse, so (a) was read on PDF p. 13 and (b) on PDF p. 14 of the PDF beside it, and it gets $\delta=7$ and $9$ and then guesses $x^4-x^2y^2-x^2y^5+y^8$ for (b), a guess the card does not adopt; Egbert, Exercise V.3.8, is `tmp/sources/hartshorne-solutions-egbert.md`, PDF p. 284, where the equality of the configurations is asserted and the chart count is three for (a) against four for (b). Yang Pi-Yeh, Solution 5.3.8 in `tmp/sources/lfwin-hartshorne-solutions.md`, printed pp. 108--109, its (a) on p. 108 and its (b) on p. 109, blows up both germs, records multiplicity $2$ and then $3$, and concludes "So on these two curves, $\delta_{(0,0)}$ are the same", an equality computed nowhere in his entry and false for the printed equations; the card now records that entry. The card's note of 2026-11-11 gives "Example 3.9.3 on printed page 408"; the printed page is 393 and 408 is the PDF page, so the body now gives printed p. 393 where it cites (3.9.4), and that note is left as written. The card's note of 2026-10-29 had been rewritten and is restored to the text it was dated with; the statement it had been given, that the exercise had been changed to "Prove or disprove", is false: the printed "Show that" stands and the card disproves it.
 
+**V.3.6 (`P-AGH536ANALYTICEQUIV`) transcribed 2026-11-16 from Greuel--Lossen--Shustin, and the passage to (3.9.4) is still the card's.** The source is Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), §3.4, read in the text version `tmp/sources/greuel-lossen-shustin-2007-singularities-deformations-pp200-220.md`, printed page = its marker minus 11, that offset checked against the retained PDF page by page. What it proves, and what is now on the card: Definition 3.30, printed p. 202, analytic and topological equivalence of a germ side by side, with analytic implying topological; Theorem 3.42, printed p. 217, the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 216; Proposition 3.41, printed pp. 216--217, that this data is the characteristic exponents of the branches together with their pairwise intersection numbers, which replaces the card's earlier citation of Wall, *Singular Points of Plane Curves*, a book not held and not read; Example 3.43.1(a), printed p. 218, the pair $y^3-x^7$ and $y^3+x^5y-x^7$ with multiplicity sequence $3,3,1,1,1$ and Tjurina numbers $12$ and $11$ printed as Singular output, which the substitution $(x,y)\mapsto(x,-y)$ carries to the card's pair $y^3+x^7$ and $y^3+x^5y+x^7$ up to the unit $-1$; and Remark 3.43.3, printed p. 219, that the Tjurina number is an analytic invariant. **Still without a published proof, and now recorded here rather than implied:** the passage from that data to equivalence in the sense of (3.9.4). The source's Theorem 3.42 is about topological type, and Hartshorne's (3.9.4), printed p. 393, defines equivalence by correspondences between the irreducible components of the reduced total transforms of two embedded resolutions, preserving multiplicities and incidence. GLS list the resolution graph on printed p. 216 as one of the data equivalent to the system of multiplicity sequences but prove the equivalence only for the Puiseux pairs and the characteristic exponents, so the step "same system of multiplicity sequences implies (3.9.4)-equivalence" is not in the cited pages, and both halves of the exercise need it: the forward implication and the equivalence of the pair. Steps `ambient-automorphism-lift`, `automorphism-identifies-resolution-data` and `c1-c2-equivalent` of the card remain its own argument for it. **A second gap, of the same kind:** Definition 3.30's analytic equivalence is an isomorphism of the analytic germs $(\CC^2,z)\to(\CC^2,w)$, while (I, 5.6.1) is isomorphism of completed local rings, and Remark 3.43.3 states Tjurina invariance for the former; the card's own proof of step `tjurina-number-invariant` is the one that covers the latter, by lifting an isomorphism of completions to a formal coordinate change. The source also prints its two Tjurina numbers as a Singular session rather than computing them, and steps `tjurina-f1-twelve` and `tjurina-f2-eleven` compute both by hand. Not read: Wall's book, and GLS Proposition 3.21, cited inside Proposition 3.41's proof.
+
+**V.3.7 (`P-AGH537EMBRESOLUTION`) transcribed in part 2026-11-16: the National Taiwan University entry supplies the five blowup chains, their multiplicities, the five values of $\delta_P$ and the classification, and no embedded resolution.** The source is Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (Ping-Hsun Chuang), PDF pp. 12--13 of `tmp/sources/ntu-ag2-chapter5.pdf`, read in `tmp/sources/ntu-ag2-chapter5.md`, whose markers are coarse so the pages were read off the PDF. Transcribed onto the card: the two charts $x=sy$ and $(v,s)=(y/s,s)$ with the equations $s^3+y^2$ and $s+v^2$ for (a), $s^3+s^4y+y^2$ and $s+vs^3+v^2$ for (b), $s^3+y+y^2$ for (c), $s^3+y^2+y^3$ and $s+v^2+sv^3$ for (d), $s^3+sy+y^2$ and $s+v+v^2$ for (e), which are the card's own equations under the substitution $s=u$ and $v=w$; the multiplicities $3$ and $2$ of each germ; the five values $\delta_P=\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d), (e) and $\frac12\cdot3\cdot2=3$ for (c); and the classification, stated at the end of the entry as "By the resolution graph, we conclude that the sigularity of (0,0) of (a) (b) (d) are equivalent and (c) (e) are different from the others". **Still without a published proof, and now recorded here rather than implied:** three things. An *embedded* resolution in the sense of (3.9.4), which needs the reduced total transform to have normal crossings: the entry stops when the strict transform of the curve is nonsingular, so the third and fourth blowup of (a), (b), (d) and the second to fourth of (c) and (e) are the card's steps `a-third-fourth-blowup`, `b-third-fourth-delta`, `d-third-fourth-delta`, `c-resolution-delta-three` and `e-resolution-delta-four`, and no published source carries them for all five germs together. The argument for the classification: the graphs the entry draws are five `<!-- image -->` blocks in the extraction, so its reason is a picture and not a sentence, and the equivalence of (a), (b), (d) and the separations of (c) and (e) are argued on steps `abd-equivalent`, `c-not-equivalent` and `e-not-equivalent` from the multiplicity data the entry does supply. And the identification of the double point of (e) as a node, which the entry records only as a multiplicity, with the card reading it off the tangent cone $v(u+v)$. Not checked this pass: the five graph images, Yang Pi-Yeh's printed p. 108 and Egbert's Singular session, which the previous pass read.
+
+**V.3.8 (`P-AGH538INEQUIVSING`) transcribed 2026-11-16: two published computations give the first blowups and the two $\delta$ values, and they refute the printed assertion, so no published proof of that assertion can exist.** The sources are Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (Yi-Heng), PDF p. 13 for (a) and PDF p. 14 for (b) of `tmp/sources/ntu-ag2-chapter5.pdf`, read in `tmp/sources/ntu-ag2-chapter5.md` with its coarse markers checked against the PDF; and Math StackExchange question 2867504, "Configuration of infinitely near points", comments 5918658 and 5918691, in `tmp/sources/mse-2867504-hart-v38-infinitely-near-points.md`. Transcribed onto the card: the first blowup of each germ in the coordinates $xy_1=x_1y$ with the chart $y_1=1$, giving $x_1^4-x_1y$, which the NTU entry calls a node and from which it reads $\delta=7$; the point of multiplicity $3$ that the same chart gives for the second germ, one further blowup making it nonsingular, whence $\delta=9$; and the multiplicity $2$ of the first proper transform computed in Stack Exchange comment 5918658, whose form $x^4-xy$ after $(x,y)\mapsto(xy,y)$ is the card's $u^4-uv$. Comment 5918691 withdraws the earlier reply in that thread that both proper transforms have a point of multiplicity $3$, which is the card's own reading too. Two defects of the sources are recorded on the card and not corrected in them: the NTU entry prints $x_1^4-x_1^2y^3-x_1^2y^3+y^4$ for the second germ, repeating a middle term where the chart requires $x_1^2y$ and $x_1^2y^3$; and it then replaces the printed equation by the guess $x^4-x^2y^2-x^2y^5+y^8$ and asserts, without computing either, that the two $\delta$'s agree for that pair. **Still without a published proof, and now recorded here rather than implied:** the two second-blowup charts of (b), which the NTU entry asserts nonsingular without writing out, and the separation of the two branches of (a), so steps `b-resolves-after-blowup` and `a-branches-separate` remain the card's; the $\delta$ values as the binomial sums $\binom42+\binom22$ and $\binom42+\binom32$, the sources printing the numbers only; and the inference from the two different values to non-equivalence, which the card draws from (3.9.3) and (3.9.4) on printed p. 393. Egbert's and Yang Pi-Yeh's entries, read in the previous pass, are described on the card and were not re-read here.
+
 ### V.4.3 and V.4.4(b) of `SRC-TEXT-HART77` have no complete published solution
 
 **Object and need.** Two requests in `SRC-TEXT-HART77` §V.4 are proved on their cards without a published argument to check them against: `P-AGH543ORDINARYSING` (V.4.3, printed p. 407, quadratic transformations producing only ordinary singularities) and `P-AGH544CUBICGROUPLAW` in its part (b) (V.4.4(b), printed p. 407, associativity of the chord-and-tangent law).
@@ -1169,6 +1175,8 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 **Corrected 2026-11-16: V.4.4(b) is not restricted to a nonsingular cubic.** The printed exercise, V.4, printed p. 407 of `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15), states part (a) for an *irreducible* plane cubic and part (b) on the set of regular points of that $C$, and its own citation (II, 6.11.4), printed p. 142 of the same file, is the cuspidal cubic $y^2z=x^3$, whose group law is stated on its nonsingular closed points. The generality costs one line, now on the card at step `two-collinear-triples`: a line through a singular point of the cubic meets it there with multiplicity at least $2$, Bézout gives total multiplicity $3$, so a line through two regular points has a regular third point, and $R,T,V,W,X,Y$ are regular one after another from the regular $P,Q,U$ and the inflection point $P_0$. The associativity chain itself is unchanged and is NTU's, PDF p. 16.
 
 **Correction, 2026-11-16, on the reader's report of #121: the characteristic-$0$ step of V.4.3 gave a false reason for separability.** Step `inseparable-case` of the card said that a bad point carries at least two tangent directions, which an ordinary cusp, bad with a single tangent direction, contradicts; it now argues that the projection from a bad point is nonconstant on the normalization, an irreducible plane curve with a singular point being no line, and that a nonconstant morphism of nonsingular curves is separable in characteristic $0$. The characteristic-$p$ status is unchanged: V.4.3 still rests on the unread Hirschfeld citation, Theorem 3.27 of *Algebraic Curves over Finite Fields*, which is not in `tmp/sources`, so the obligation recorded above stands. Nothing else in this entry changed.
+
+**V.4.3 (`P-AGH543ORDINARYSING`) is closed 2026-11-16 on published proofs in every characteristic: Fulton, §7.4 with Appendix A, and Rüd, §6.3 with §7.3.** William Fulton, *Algebraic Curves* (2008), read in `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md` with printed page = its marker minus 8, checked against the PDF page by page, proves the exercise as Theorem 2 of §7.4, printed p. 91: successive quadratic transformations centred at non-ordinary multiple points terminate because either the count of non-ordinary points falls or the invariant $g^*(C)=\binom{n-1}{2}-\sum_P\binom{r_P}{2}$ falls, by (7) and (8) on printed pp. 90--91; Lemma 1, printed p. 90, puts the curve in excellent position at any chosen point in characteristic $0$, on the input of Problem 5.26 and Theorem 2 of §5.4, both printed p. 60; and Appendix A, printed p. 113, carries the argument to characteristic $p$ by showing that a curve has at most one terrible point and that one quadratic transformation centred at a point of multiplicity $0$ or $1$ makes that point non-terrible. Thomas Rüd, *Resolution of singularities on projective curves* (2015), read in `tmp/sources/rud-2015-resolution-singularities-curves.md` with printed page = PDF page minus one, proves the same theorem by the same route as Proposition 19 on printed p. 25, Propositions 20 and 21 on printed pp. 26--27, Proposition 22 on printed p. 28, Theorem 13 on printed p. 28 and §7.3 on printed p. 40. **Supplied on the card, and named as supplied:** the calculation in (8), which Fulton gives only as "a calculation, using (2) and (7)" and which is the identity $\binom{2n-r-1}{2}-\binom{n}{2}-2\binom{n-r}{2}=\binom{n-1}{2}-\binom{r}{2}$, both sides $\frac12(n^2-r^2-3n+r+2)$; the passage from (6) to the ordinariness of the three fundamental images, following Rüd's Propositions 20--21; the observation that the two further centres of Appendix A's preparatory transformation are off $C$, which is what makes $\deg F'=2n-m$ there; and the accounting that those preliminary steps do not increase $g^*$, so that they interleave harmlessly with the terminating sequence. **Withdrawn by this pass:** the card's earlier proof, complete only in characteristic $0$ and taking the inseparable case from Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, a book neither held nor read; and its remark that the published treatments of the exercise are incomplete, which was true of the NTU entry and of Yang Pi-Yeh's but not of the two books above. **Defect found in a source, not repaired there:** Rüd's Remark 23, printed p. 28, says that an ordinary multiple point contributes nothing to $g^*$, which is false --- an ordinary double point contributes $1$ --- and the card uses it nowhere. Not read: Fulton's Problem 4.16, to which his proof of Lemma 1 defers the change of coordinates carrying three lines to $X$, $Y$, $Z$; and the printed copies of either book, only the text versions beside the retained PDFs.
 
 ### V.5.8(b) of `SRC-TEXT-HART77` has no complete published solution
 
@@ -3252,3 +3260,206 @@ that record what each transcription and each check covered. Part (e) of IV.2.2 i
 by its two sources taken together, as the first item says; the open parts of IV.2.3 and IV.3.4 stay
 obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121), and nothing in this
 record supersedes an earlier entry of this file.
+
+
+## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the two parts of V.4.15 that stay open
+
+The batch is the four cards `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15),
+`P-AGH5416FERMATCUBIC` (V.4.16) and `P-AGH555ELEMTRANSFORM` (V.5.5). Each card's solution is now a
+transcription of the published argument, one step to one printed statement, with the source, the
+numbered statement and the printed page on the step. On each card the earlier argument is removed
+from the solution; the earlier audit events stand as records of the sessions that wrote them, and
+this record says what changed in status and where a published proof is still missing.
+
+- **V.4.12, closed on 2026-11-16.** The published proof is Hartshorne's Theorem 4.11 with Lemma 4.12,
+  printed pp. 405--406, for ample implies very ample; Corollary 4.13(a),(b), printed p. 406, for the
+  numerical translation and the irreducible nonsingular member; and Reid's Section 3.9 with Lemma
+  3.11 and Section 3.12, printed pp. 72--73, for nef-and-big implies numerically 1-connected implies
+  $H^0(\OO_D)=k$ implies $H^1(\OO_X(-D))=0$ on a surface with $H^1(\OO_X)=0$. The two structure-sheaf
+  facts are now derived rather than assumed: the ideal sheaf sequence of the cubic hypersurface with
+  II.5.9, printed p. 116, and Theorem III.5.1(b), printed p. 225. The earlier entry's "Open" for this
+  card was about Yang Pi-Yeh's entry and stands as written about him.
+- **V.5.5, closed on 2026-11-16.** Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces*, is
+  a complete printed proof: Definition 4.3, printed p. 26; Proposition 4.4(3), statement p. 26 and
+  proof p. 27; Lemma 4.6, p. 28; Theorem 4.9, pp. 30--31; Corollaries 4.10 and 4.11, p. 31; and
+  Theorem 3.2(2), p. 15, for the bound $e\le 2g-2$. Corollary 4.11 joins each of the two ruled
+  surfaces to $X\times\PP^1$ rather than to each other; composing one sequence with the reverse of the
+  other uses Definition 4.3's own sentence that the inverse of an elementary transform is one, and the
+  card states that composition as its own step. The three printed hints of the exercise are used at
+  the steps named on the card, with Theorem 3.2 taking the place of the book's (2.12).
+- **V.4.16, closed on 2026-11-16 for the lines, the incidence counts and the group.** Gathmann's Lemma
+  11.1, printed p. 90, is the whole coefficient argument for the $27$ lines, and his Corollary 11.2,
+  printed pp. 90--91, gives $10$ lines meeting a given one and $5$ meeting two given skew ones.
+  Dolgachev and Duncan's Lemma 5.1, printed p. 25, with Lemma 5.2 and its Hessian proof, printed
+  p. 25, and Section 5.1, printed pp. 25--28, give $3^3\rtimes\Sigma_4$ of order $648$ away from
+  characteristics $2$ and $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$;
+  Dolgachev's Theorem 9.5.7 with Table 9.4, printed pp. 386--387, prints the characteristic-zero
+  group a second time. What no source prints is a pair-by-pair congruence criterion deciding
+  whether two lines of the three families meet; the incidence relations are verified as the two
+  counts, which is what Gathmann proves, and the card no longer carries the criterion.
+- **V.4.15 (a), no published proof located on 2026-11-16.** Nagata's Proposition 3, printed p. 279,
+  prints the criterion: ordinary points are special exactly when some type similar to
+  $(1,1,1,0,\ldots,0)$ has a nonempty effective system. Turning that into part (a) needs the
+  enumeration of that similarity class with six base points, and neither source prints it: the only
+  printed corollary of Nagata that lists conditions for a configuration is the one for eight ordinary
+  points, printed p. 291, whose third condition --- a cubic through all eight with a double point at
+  one of them --- has no six-point counterpart. The card states the criterion, names the enumeration
+  as the missing step, and does not supply it; nothing here is claimed as proved for (a) beyond the
+  criterion.
+- **V.4.15 (c), no published proof located on 2026-11-16.** Nagata's Lemma 2.5, printed p. 279, is the
+  statement that independent generic points over the prime field are non-special; it is not the
+  dense-extension statement of (c), and its proof establishes properness of the bad locus in the
+  space of all $r$-tuples, not after the first $r$ points are fixed. Neither source prints the
+  countable-union lemma that Hartshorne's hint, printed p. 409, asks for. The card therefore proves
+  neither the density nor the properness it rests on, and says so at the step; the earlier entry of
+  this file recorded the same obstacle and stands.
+
+**Two defects in the sources, recorded and not repaired.** They matter to a reader of the numbers the
+cards now cite, and neither changes a card's claim.
+
+- **Dolgachev's degree bound in Proposition 8.2.15, printed p. 261.** The proof says the Cauchy--Schwarz
+  inequality $(3d-1)^2\le N(d^2+1)$ "gives $0\le d\le 4$". It does not: at $N=7$ it gives
+  $d^2-3d-3\le0$, so $d\le3$, and at $N=8$ it gives $d^2-6d-7\le0$, so $d\le7$, with equality at
+  $d=7$ impossible because it would force all eight multiplicities to equal $20/8$, so $d\le6$. His
+  own list for $N=8$ contains a vector of degree $6$, namely $6\mathbf e_0-3\mathbf e_1-2\mathbf e_2-
+  \cdots-2\mathbf e_8$, so the printed bound contradicts the printed list. The enumeration and the
+  counts $56$ at $N=7$ and $240$ at $N=8$ are unaffected and were rechecked here.
+- **Dolgachev and Duncan's Lemma 5.2, printed p. 25.** It is stated for $F=x_0^d+\cdots+x_n^d=0$ in
+  $\PP^n$ with $n\ge4$ and displays the group $d^{n-1}\rtimes\mathfrak S_n$. A Fermat hypersurface in
+  $\PP^n$ has $n+1$ coordinates, and its group is $d^n\rtimes\mathfrak S_{n+1}$, so as indexed the
+  display is one factor short; read with $n=4$, which is the Fermat cubic in $\PP^3$, it gives
+  $3^3\rtimes\mathfrak S_4$ of order $648$, which is Lemma 5.1's group and Dolgachev's type I. The
+  card reads the lemma that way and says so; the printed statement is left as it stands.
+
+**What Dolgachev's Section 8.2.6 supplies and what it does not.** The brief for V.4.15 lists
+Proposition 8.2.15 with Section 8.2.6, printed pp. 261--264. Section 8.2.6 gives the bijection between
+exceptional vectors and $(-1)$-curves on a Del Pezzo surface, by Riemann--Roch and the decomposition of
+an effective representative into one curve with $E\cdot K=-1$ and a sum of $(-2)$-curves; for the
+blowups at $7$ and $8$ general-position points, which are Del Pezzo surfaces of degrees $2$ and $1$,
+the $(-2)$-curves are absent, so no decomposition occurs. That is a second route to the realization
+half of (d), and this pass takes the realization from Nagata's Theorem 2a, printed pp. 280--281, which
+gives irreducible curves of the first kind directly; Proposition 8.2.15 with its table is cited on the
+card for the count.
+
+Nothing else in this file was read or edited in this pass; the four cards carry the pages above in
+their audit events and remarks, and the two open parts of V.4.15 remain obligations under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121).
+
+## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch (V.4.7, V.4.8, V.4.10, V.4.11)
+
+One chat of the parallel #121 batches, on the four Chapter V cards its brief named:
+`P-AGH547GENUSBOUND` (V.4.7), `P-AGH548IRREDCLASSES` (V.4.8), `P-AGH5410NUMINEQ` (V.4.10) and
+`P-AGH5411WEYLGROUPS` (V.4.11). Each card's solution is now the published argument, transcribed step
+by step, each step naming the numbered part and printed page or answer id it comes from, and each
+exercise's statement was re-read against the book in
+`tmp/sources/hartshorne-1977-algebraic-geometry.md`, where printed p. N is PDF p. N+15: V.4.7 on
+printed p. 407, V.4.8 on printed pp. 407--408, V.4.10 on printed p. 408 and V.4.11 on printed
+p. 408, with Proposition 4.8 on printed pp. 401--402, Theorem 4.9 on printed pp. 402--403,
+Proposition 4.10 and Remark 4.10.1 on printed pp. 403--405, Theorem 4.11 and Corollary 4.13 on
+printed p. 406, Theorem V.1.9 on printed p. 364 and Bertini's theorem II.8.18 on printed p. 179.
+What follows is, per card, the part that still has no published proof, and the defects of the
+sources found while transcribing them.
+
+**V.4.10, `P-AGH5410NUMINEQ` (2026-11-16).** Two published arguments reach the inequality
+$a^2\ge\sum b_i^2$, and both compress their reductions. Math StackExchange 2475661, answer 2476483
+by Dap, in `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`, maximises $\sum b_i^2$ over the
+feasible set for fixed $a$; its four claims about a maximiser ("otherwise $b_6$ can be increased",
+$b_1=b_2$, $b_5\le a/2$, $b_5=b_4$) are one-clause assertions, its Case 0 refers forward to its
+Cases 1 and 2 for part of itself, its Case 1 prints $4b_4^2$ for the five equal terms $5b_4^2$ of
+the maximiser it displays while reporting at both endpoints the values of $5b_4^2+(a-b_4)^2$, and
+its Case 2 is stated for $\frac a3\le b_4\le\frac a2$ although the ordering of a maximiser allows
+$b_4=\frac a3$ only. The National Taiwan University *Algebraic Geometry II* (2020 Spring), Chapter V
+§4 Exercise 10 by Shuang-Yen Lee, printed p. 17 of `tmp/sources/ntu-ag2-chapter5.md`, completes one
+of its two cases, checking both endpoint values of the quadratic in $b_2$; in the other it leaves
+the constant term unwritten, as $\ast$, and its printed line identifying the vertex has
+$\frac13(2b_2-(b_3+b_4+b_5))$ on the right where the left side is $\frac13(b_2-2(b_3+b_4+b_5))$,
+since the two differ by $\frac13b_2$. **Still without a published proof: a written-out derivation of
+the monotone reductions** (that increasing $b_6$, or $b_1$, or $b_3$ preserves the constraints and
+increases $\sum b_i^2$), and the second case's reduction to $b_1+b_2=b_3+b_4+b_5$, whose constant
+term neither source computes. The card transcribes both arguments as they stand and names these
+three defects at the steps they occur; it adds no proof of them.
+
+**V.4.11, `P-AGH5411WEYLGROUPS` (2026-11-16).** Part (a) is complete in Math StackExchange 200840,
+answer 247553 by user26857, in `tmp/sources/mse-200840-symmetric-group-presentation.md`, whose coset
+computation for $H=\langle\tau_2,\ldots,\tau_{n-1}\rangle$ is step by step. Part (b) is the NTU
+Chapter V §4 Exercise 11 by Pei-Hsuan Chang, printed p. 18, which checks the Coxeter relations for
+the images of $x_1,\ldots,x_5$ and of $y$ from a list of the action of the quadratic transformation on
+the $27$ lines; the list gives $21$ of the $27$ images, the other six being forced by $y^2=1$, and it
+verifies no incidence preservation, taking the element to be in $G$ because it is the quadratic
+transformation; the surjectivity it asserts is the book's, not its own ("the proof of proposition
+V.4.10 in the textbook says ..."). Part (c) is published: I. V. Dolgachev, *Topics in Classical
+Algebraic Geometry* (27 September 2010), Corollary 8.2.16, printed p. 262, gives
+$\#W(\mathbf E_6)=27\cdot16\cdot120=51840$ from the stabilizer $W(\mathbf E_5)$ of an exceptional
+vector and the count $27$ of exceptional vectors (Proposition 8.2.15, printed p. 261), and
+Proposition 9.1.3, printed p. 321, gives $72\cdot6!$ from transitivity on sixers; the book's Remark
+4.10.1, printed pp. 404--405, gives $\#G=27\cdot16\cdot10\cdot6\cdot2=51840$. **Still without a
+published proof: the order of the abstract group by an argument that does not pass through the
+geometric representation.** The identification of Hartshorne's presentation with the reflection
+group $W(\mathbf E_6)$ is the faithfulness of the geometric representation, cited on the card to
+Humphreys, *Reflection Groups and Coxeter Groups*, §5.4, and not verified here; the two published
+attacks on the abstract group are partial. Answer 4736813 by KReiser to Math StackExchange 4583421,
+in `tmp/sources/mse-4583421-coxeter-e6-word-processing.md`, bounds $\mathbf E_6$ by the two coset
+counts $120\cdot16\cdot27$ and says of their verification "This is actually the meat of the claim:
+proving this shows that there are at most this many right coset representatives. I will skip
+recording this in the post, it is somewhat tedious"; its two coset graphs are images in the text
+version and were not read. Answer 4736825 by Jyrki Lahtonen on the same page is one paragraph, citing
+the $72$ roots and the type $A_5$ of the stabilizer of the highest root rather than computing them.
+
+**V.4.7, `P-AGH547GENUSBOUND` (2026-11-16).** The bound is complete in the NTU Chapter V §4 Exercise
+7 by Yi-Tsung Wang, printed pp. 16--17: after $2p_a(D)-2=D\cdot(D+K_X)$ it reduces to
+$a^2-\sum b_i^2\le d^2/3$, proves that by Cauchy--Schwarz and one square, and sharpens the bound in
+the residues $1,2$ modulo $3$ by integrality. Three defects of the printed text are recorded on the
+card and not reproduced: it writes $2p_a(D)=D^2+D\cdot K$, dropping the $-2$ (its own equivalence
+holds with the correct adjunction formula and fails by $2$ with the printed one); in its $d\equiv2$
+family the two multiplicities are interchanged, so that vector has degree $d+2$ and not $d$, while
+the vector with $\frac{d+1}{3}$ on $e_1,\ldots,e_4$ and $\frac{d-2}{3}$ on $e_5,e_6$ has the degree
+and the genus it reports; and it asserts, without argument, that each listed class is achieved by an
+irreducible nonsingular curve. The card supplies that last step from the book's Corollary 4.13(a),(b),
+printed p. 406, checking the ampleness inequalities for each family, which holds for every degree the
+source lists except $d=4$. **Still without a published proof: the attainment at $d=4$.** The source
+writes "For $d=4$, I don't know" and states its conclusion as holding for every $d>0$ "possibly
+except $d=4$". Corollary 4.13 does not reach it: the maximising class of degree $4$ is
+$H+F_{56}=4\ell-(e_1+e_2+e_3+e_4)-2(e_5+e_6)$, and $(H+F_{56})\cdot F_{56}=4-2-2=0$, so no
+maximising class of degree $4$ displayed by the source is ample, and the exercise's second request at
+$d=4$ is open.
+
+**V.4.8, `P-AGH548IRREDCLASSES` (2026-11-16).** Alternatives (a) and (c) are covered in both
+directions, and alternative (b) in the direction from existence to the conic description.
+Necessity: Brian Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
+arXiv:alg-geom/9509001v2), and I. V. Dolgachev's Lemma 8.1.3, printed p. 248, whose adjunction
+computation gives $C^2\ge-2$ and $C\cong\PP^1$ for an irreducible curve of negative
+self-intersection, with $-K_S$ ample removing $C^2=-2$; Theorem 4.9 of the book, printed pp. 402--403,
+reaches the same conclusion directly. Sufficiency of (c): Dolgachev's Theorem 8.2.19, printed p. 265,
+makes $D$ numerically effective from $D\cdot L\ge0$ on the $27$ lines; Harbourne's Corollary II.3,
+preprint p. 3, makes it effective; Theorem III.1(a), preprint p. 7, makes its system base point free
+because $-K_S\cdot D=D\cdot H\ge2$, the last inequality being Hodge index with $D^2>0$; Lemma
+II.6(b), preprint p. 4, makes a general section reduced and irreducible because $D^2>0$; and
+Bertini's theorem, II.8.18 of the book, printed p. 179, makes it nonsingular. Two reservations on
+that chain: Dolgachev's Lemma 8.1.3 treats $C^2<0$ only, so the branch $C^2=0$, which the card
+needs for alternative (b), is the same computation applied where the lemma does not state it; and
+his Theorem 8.2.19's proof leaves the degrees $8$ and $9$ to the reader, the card using degree $3$.
+**Still without a published proof: the converse for alternative (b)**, that every class of degree
+$2$ with $D^2=0$ on the cubic surface contains an irreducible nonsingular conic. Harbourne's Lemma
+II.6(a) would give a reduced irreducible member of that pencil once the class is known to be
+numerically effective, and the numerical effectivity of those classes is in neither source read
+here: they are the $27$ classes $\ell-e_i$, $2\ell-e_i-e_j-e_k-e_l$ and $H-e_i$, and no published
+argument that all $27$ meet every of the $27$ lines nonnegatively was located. No proof of the case
+was added to the card, which names it as not established.
+
+**Uncertainty.** Searched, in this batch: the four briefs' named sources, the book's Chapter V §4 with
+V.1 and II.8.18, and, for the two open parts, the two Math StackExchange pages of the V.4.11 brief.
+Found: the parts recorded above. Conclusion: the parts named have no published proof in the files
+read; the other parts of the four exercises do. Confidence: high for those files. Gaps: no search of
+the literature beyond them, in particular no search for a published treatment of V.4.7 at $d=4$
+(the classical literature on elliptic quartics on a cubic surface is the obvious place, and it was
+not read), none for the numerical effectivity of the degree-$2$ classes of V.4.8(b), and none for a
+printed derivation of the monotone reductions of V.4.10. The page numbers of Dolgachev's book and of
+Harbourne's preprint were read off the PDFs' own folios and running heads, printed p. N being PDF
+p. N+10 for Dolgachev; Harbourne's preprint prints no journal pagination and its pages are the PDF
+pages. The NTU homework prints its own folios, which are the pages cited here.
+
+**Repair.** Per card: the four commits of this date that touch the four cards, with the audit events
+that record for each what the transcription covered, what was checked against the book, and what was
+not. Nothing here supersedes an earlier entry of this file: the four cards remain open under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121) for the parts named above, and each
+card's remark states what its sources do and do not prove.
