@@ -201,6 +201,25 @@ audit:
     about what the source leaves unproved is unaffected. Nothing else changes:
     Theorem 3.42 remains on printed p. 217, Definition 3.30 on p. 202, Example
     3.43.1(a) on p. 218 and Remark 3.43.3 on p. 219.
+
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's findings on this batch, repaired here; the events of 2026-11-16
+    above are left as written. The Puiseux computation for the two germs was
+    carried inside the step that transcribes Greuel-Lossen-Shustin's Example
+    3.43.1(a), which gives the multiplicity sequence 3,3,1,1,1 and no
+    characteristic exponents; it is now its own step puiseux-pair, with the
+    parametrisation for the first germ, the implicit-function argument for the
+    second, and the remark that Proposition 3.41 is what ties the pair (3,7) to
+    the multiplicity sequence. No cited source computes that pair, and
+    COMPLAINTS.md now says so. The rendered text is reduced to mathematics and
+    citation (QUAL-08): the sentences saying that a passage is not in the cited
+    pages and that given steps carry it, that the topological statements are the
+    source's, that a value is computed rather than quoted, and which books were
+    or were not read, leave the solution and the remark. The remark opener takes
+    the attribute form of STYLE-01.
 ---
 
 ::: {.problem}
@@ -208,9 +227,11 @@ Show that analytically isomorphic curve singularities (I, 5.6.1) are equivalent 
 :::
 
 ::: {.solution}
-The exercise has two halves: analytic isomorphism implies equivalence in the sense of (3.9.4), and equivalence does not imply analytic isomorphism. The published argument for the frame of both is Greuel--Lossen--Shustin, *Introduction to Singularities and Deformations* (2007), §3.4: their Definition 3.30, printed p. 202, distinguishes analytic from topological equivalence of a germ; their Theorem 3.42, printed p. 217, a theorem of Brauner and Zariski, says that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences; and their Example 3.43.1(a), printed p. 218, is a pair with equal multiplicity sequence and different analytic type, separated by Tjurina numbers, with Remark 3.43.3, printed p. 219, recording that the Tjurina number is an analytic invariant.
+The exercise has two halves: analytic isomorphism implies equivalence in the sense of (3.9.4), and equivalence does not imply analytic isomorphism.
 
-The passage from that data to Hartshorne's (3.9.4), whose equivalence is stated in terms of embedded resolutions, is not in those pages, and steps [](#ambient-automorphism-lift){.pf-ref} to [](#automorphism-identifies-resolution-data){.pf-ref} and [](#c1-c2-equivalent){.pf-ref} carry it here: the first two lift an isomorphism of completed local rings to a formal coordinate change, which the blowup of a point, being the Proj of a Rees algebra of the maximal ideal, follows, and the third exhibits embedded resolutions of the example that correspond. The counterexample's non-isomorphism is step [](#not-analytically-isomorphic){.pf-ref}.
+Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), §3.4, supply the frame of both. Their Definition 3.30, printed p. 202, distinguishes analytic from topological equivalence of a germ; their Theorem 3.42, printed p. 217, a theorem of Brauner and Zariski, says that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences; their Proposition 3.41, printed pp. 216--217, identifies that data with the characteristic exponents of the branches and their pairwise intersection numbers; their Example 3.43.1(a), printed p. 218, is a pair with equal multiplicity sequence and different analytic type, separated by Tjurina numbers; and their Remark 3.43.3, printed p. 219, records that the Tjurina number is an analytic invariant.
+
+Hartshorne's equivalence is stated in terms of embedded resolutions, so the forward implication needs the blowup of a point to be carried along by an isomorphism of completed local rings, which steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} supply, and the example needs embedded resolutions that correspond, which step [](#c1-c2-equivalent){.pf-ref} exhibits.
 
 ::: pf
 
@@ -220,7 +241,7 @@ An analytic isomorphism of plane curve germs is a homeomorphism of the ambient g
 ::: pf-proof
 This is Greuel--Lossen--Shustin, Definition 3.30, printed p. 202, which defines the two notions side by side for germs of isolated hypersurface singularities: $(X,z)$ and $(Y,w)$ are *analytically equivalent*, or contact equivalent, if there is a local analytic isomorphism $(\CC^n,z)\to(\CC^n,w)$ carrying one to the other, and *topologically equivalent* if there is a homeomorphism of the ambient germs doing so; a number attached to a singularity is an analytic, respectively topological, invariant when it does not change its value within that class. A local analytic isomorphism is a homeomorphism, so the first class is contained in the second.
 
-The exercise's own notion is the one Hartshorne states just before (I, 5.6.1), printed p. 34, where $P\in X$ and $Q\in Y$ are analytically isomorphic if their completed local rings are isomorphic as $k$-algebras; for a plane curve singularity the completed local ring is $k[[x,y]]/(f)$. The topological statements below are those of the source, and the two formal steps that follow prove the forward implication for the completed-local-ring notion itself.
+The exercise's own notion is the one Hartshorne states just before (I, 5.6.1), printed p. 34, where $P\in X$ and $Q\in Y$ are analytically isomorphic if their completed local rings are isomorphic as $k$-algebras; for a plane curve singularity the completed local ring is $k[[x,y]]/(f)$. The two formal steps that follow prove the forward implication for this notion of analytic isomorphism itself.
 :::
 
 :::
@@ -335,14 +356,20 @@ C_2:\quad f_2=y^3+x^5y+x^7=0
 $$
 have the same multiplicity sequence
 $$
-\boxed{3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1}
+\boxed{3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1}.
 $$
-and the same Puiseux pair $(3,7)$.
 
 ::: pf-proof
-That the two germs in the source's normalisation have this multiplicity sequence is Greuel--Lossen--Shustin, Example 3.43.1(a), printed p. 218: there $f=y^3-x^7$ and $g\in I=\langle x^\alpha y^\beta\mid3\alpha+7\beta>21\rangle$, and "in both cases the multiplicity sequence reads $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$". The monomial $x^5y$ satisfies $3\cdot5+7\cdot1=22>21$, so $f+x^5y$ is one of those $f+g$. The substitution $(x,y)\mapsto(x,-y)$ carries $y^3-x^7$ to $-(y^3+x^7)$ and $y^3+x^5y-x^7$ to $-(y^3+x^5y+x^7)$, and a unit multiple of the defining equation is the same germ, so the source's computation is the computation for the pair used here.
+Greuel--Lossen--Shustin, Example 3.43.1(a), printed p. 218, take $f=y^3-x^7$ and $g\in I=\langle x^\alpha y^\beta\mid3\alpha+7\beta>21\rangle$ and record that "in both cases the multiplicity sequence reads $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$". The monomial $x^5y$ satisfies $3\cdot5+7\cdot1=22>21$, so $f+x^5y$ is one of those $f+g$, and the substitution $(x,y)\mapsto(x,-y)$ carries $y^3-x^7$ to $-(y^3+x^7)$ and $y^3+x^5y-x^7$ to $-(y^3+x^5y+x^7)$; a unit multiple of the defining equation is the same germ.
+:::
 
-For the Puiseux pair: $C_1$ has the parametrization $x=t^3$, $y=-t^7$, so its single branch has characteristic pair $(3,7)$. For $C_2$ substitute $x=t^3$ and $y=t^7z(t)$; the equation becomes
+:::
+
+::: {.pf-step #puiseux-pair}
+Each of the two germs is a single branch with characteristic exponents $(3,7)$.
+
+::: pf-proof
+$C_1$ has the parametrization $x=t^3$, $y=-t^7$, so its branch has characteristic pair $(3,7)$. For $C_2$ substitute $x=t^3$ and $y=t^7z(t)$; the equation becomes
 $$
 t^{21}\bigl(z^3+tz+1\bigr)=0,
 $$
@@ -350,7 +377,7 @@ and $z^3+1=0$ has the root $z=-1$ at $t=0$ with
 $$
 \frac{\partial}{\partial z}(z^3+tz+1)\evalfrom_{(0,-1)}=3\ne0,
 $$
-so the formal implicit-function theorem gives $z(t)\in\CC[[t]]$ with $z(0)=-1$ and $z^3+tz+1=0$, that is $y=-t^7$ plus higher-order terms. Since $\gcd(3,7)=1$ the gcd of the characteristic exponents has dropped to $1$ at the exponent $7$, so there is no further Puiseux pair, and the three choices of cube root of $-1$ give the same branch after $t\mapsto\zeta t$ with $\zeta^3=1$. Thus $C_2$ is irreducible with the single Puiseux pair $(3,7)$ as well.
+so the formal implicit-function theorem gives $z(t)\in\CC[[t]]$ with $z(0)=-1$ and $z^3+tz+1=0$, that is $y=-t^7$ plus higher-order terms. Since $\gcd(3,7)=1$ the gcd of the characteristic exponents has dropped to $1$ at the exponent $7$, so there is no further Puiseux pair, and the three choices of cube root of $-1$ give the same branch after $t\mapsto\zeta t$ with $\zeta^3=1$. Thus $C_2$ is irreducible with the single Puiseux pair $(3,7)$ as well, and by Proposition 3.41 the pair is what the multiplicity sequence $3,3,1,1,1$ of step [](#same-multiplicity-sequence){.pf-ref} encodes.
 :::
 
 :::
@@ -360,9 +387,9 @@ The singularities $C_1$ and $C_2$ are equivalent in the sense of
 (3.9.4).
 
 ::: pf-proof
-This is computed, not quoted: two point blowups at the origin and at the
-point over it give, for each germ, the same data, so step
-[](#characteristic-exponents){.pf-ref} is not needed here.
+Two point blowups at the origin and at the point over it give, for each germ,
+the same data, so step [](#characteristic-exponents){.pf-ref} is not needed
+here.
 
 Both equations have order $3$ with tangent cone $y^3$, so after the blowup of
 the origin only the chart $y=xy^{\prime}$ meets the strict transforms, and
@@ -426,7 +453,7 @@ The same chain gives the cross-check: by (3.9.3), printed p. 393,
 $$
 \delta=\binom32+\binom32=6
 $$
-for both germs, which is $\frac{(3-1)(7-1)}2$, the value the pair $(3,7)$ of step [](#same-multiplicity-sequence){.pf-ref} predicts.
+for both germs, which is $\frac{(3-1)(7-1)}2$, the value the pair $(3,7)$ of step [](#puiseux-pair){.pf-ref} predicts.
 :::
 
 :::
@@ -443,7 +470,7 @@ The Tjurina number $\tau(f)$ is invariant under analytic isomorphism of the
 curve germ.
 
 ::: pf-proof
-That it is an analytic invariant in the sense of the source is Greuel--Lossen--Shustin, Remark 3.43.3, printed p. 219: "the Tjurina number $\tau$ is not a topological invariant, but it is an analytic invariant, that is, $\tau(C,z)=\tau(D,w)$ whenever $(C,z)$ and $(D,w)$ are analytically equivalent". The proof below gives the same statement in the form the exercise uses, where an analytic isomorphism is an isomorphism of completed local rings.
+That it is an analytic invariant is Greuel--Lossen--Shustin, Remark 3.43.3, printed p. 219: "the Tjurina number $\tau$ is not a topological invariant, but it is an analytic invariant, that is, $\tau(C,z)=\tau(D,w)$ whenever $(C,z)$ and $(D,w)$ are analytically equivalent". The argument below gives the same statement in the form the exercise uses, where an analytic isomorphism is an isomorphism of completed local rings.
 
 By step [](#ambient-automorphism-lift){.pf-ref}, such an isomorphism is induced by a formal coordinate
 automorphism $\Phi$ together with multiplication of the equation by a unit:
@@ -481,7 +508,7 @@ $$
 $$
 
 ::: pf-proof
-Greuel--Lossen--Shustin print this number in Example 3.43.1(a), printed p. 218, as the output of the Singular command `tjurina(f)` for $f=y^3-x^7$: "//-> 12". The computation is written out here for the germ of this card, which differs from that one by the unit $-1$.
+Greuel--Lossen--Shustin print this number in Example 3.43.1(a), printed p. 218, as the output of the Singular command `tjurina(f)` for $f=y^3-x^7$: "//-> 12". For $f_1=y^3+x^7$, which differs from it by the unit $-1$, the computation is the following.
 
 Since
 $$
@@ -513,7 +540,7 @@ $$
 $$
 
 ::: pf-proof
-The source prints $11$ for $f+x^5y$ in the same display of Example 3.43.1(a), printed p. 218: "tjurina(f+x5y); //-> 11". Here $f+x^5y$ is $y^3+yx^5-x^7$, which the substitution $(x,y)\mapsto(x,-y)$ of step [](#same-multiplicity-sequence){.pf-ref} carries to $-f_2$. The computation for $f_2$ itself follows.
+The same display of Example 3.43.1(a), printed p. 218, prints $11$ for $f+x^5y$: "tjurina(f+x5y); //-> 11". That germ is $y^3+yx^5-x^7$, which the substitution $(x,y)\mapsto(x,-y)$ of step [](#same-multiplicity-sequence){.pf-ref} carries to $-f_2$; the computation for $f_2$ itself is the following.
 
 The derivatives are
 $$
@@ -593,19 +620,17 @@ isomorphism.
 :::
 
 ::: pf-qed
-Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove that analytic isomorphism implies equivalence, and steps [](#analytic-implies-topological){.pf-ref} to [](#characteristic-exponents){.pf-ref} give the published chain from an analytic isomorphism to equality of the Puiseux data. Steps [](#same-multiplicity-sequence){.pf-ref}, [](#c1-c2-equivalent){.pf-ref}, [](#tjurina-number-invariant){.pf-ref}, [](#tjurina-f1-twelve){.pf-ref}, [](#tjurina-f2-eleven){.pf-ref} and [](#not-analytically-isomorphic){.pf-ref} give two equivalent singularities which are not analytically
+Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove that analytic isomorphism implies equivalence, and steps [](#analytic-implies-topological){.pf-ref} to [](#characteristic-exponents){.pf-ref} give the chain from an analytic isomorphism to equality of the Puiseux data. Steps [](#same-multiplicity-sequence){.pf-ref}, [](#c1-c2-equivalent){.pf-ref}, [](#tjurina-number-invariant){.pf-ref}, [](#tjurina-f1-twelve){.pf-ref}, [](#tjurina-f2-eleven){.pf-ref} and [](#not-analytically-isomorphic){.pf-ref} give two equivalent singularities which are not analytically
 isomorphic, proving that the converse fails.
 :::
 
 :::
 :::
 
-::: {remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4) on printed p. 393 and of analytic isomorphism before (I, 5.6.1) on printed p. 34, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+::: {.remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4) on printed p. 393 and of analytic isomorphism before (I, 5.6.1) on printed p. 34.
 
-Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), text version `tmp/sources/greuel-lossen-shustin-2007-singularities-deformations-pp200-220.md` (printed page = its marker minus 11), carries the frame of both halves. Definition 3.30, printed p. 202, states analytic and topological equivalence of a germ side by side; Theorem 3.42, printed p. 217, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 215; Proposition 3.41, printed pp. 216--217, identifies that data with the characteristic exponents and the pairwise intersection numbers. Example 3.43.1(a), printed p. 218, gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, printed p. 219, records that the Tjurina number is an analytic invariant.
+Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), carries the frame of both halves. Definition 3.30, printed p. 202, states analytic and topological equivalence of a germ side by side; Theorem 3.42, printed p. 217, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 215; Proposition 3.41, printed pp. 216--217, identifies that data with the characteristic exponents of the branches and their pairwise intersection numbers. Example 3.43.1(a), printed p. 218, gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, printed p. 219, records that the Tjurina number is an analytic invariant.
 
-The published argument stops at that data, and the card's steps [](#ambient-automorphism-lift){.pf-ref}, [](#automorphism-identifies-resolution-data){.pf-ref} and [](#c1-c2-equivalent){.pf-ref} carry the passage to (3.9.4): the first two lift an isomorphism of completed local rings to a formal coordinate change and follow it through the blowup of a point, which is a Rees-algebra construction, and the third computes both blowup chains and their common last pair $x=-y^{\prime\prime3}$. The two Tjurina numbers are printed by the source and computed on steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref}.
-
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.6, printed p. 108, gives the forward implication through completion --- the strict transform's local ring splits over the points of the exceptional curve and completion commutes with that splitting, so the completed local ring determines the resolution --- and then asserts, without computing, that $y^3+x^7$ and $y^3+x^5y+x^7$ are equivalent and not analytically isomorphic. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279, cites Wall, *Singular Points of Plane Curves*, for both halves and states the same pair; Wall's book was not read here, and the multiplicity-sequence and Tjurina statements above now come from Greuel--Lossen--Shustin instead.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits over the points of the exceptional curve, completion commutes with that splitting, and so the completed local ring determines the resolution. He then states that $y^3+x^7$ and $y^3+x^5y+x^7$ are equivalent and not analytically isomorphic, without computing either. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.6, PDF p. 279, cites Wall, *Singular Points of Plane Curves*, for both halves and states the same pair; Wall's criterion there is that equisingularity of plane branches is equivalent to equality of Puiseux characteristics.
 :::
