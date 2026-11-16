@@ -280,15 +280,18 @@ def earlier_texts(path: Path, revision: str, texts: set[str]) -> set[str]:
     The one change QUAL-11 allows to a dated record is a return to the text it carried
     when it was written, and the evidence for that is the text itself standing in the
     history of the same path. A session writing new text today cannot produce it without
-    an earlier revision to copy from. This runs only where a dated record is about to be
-    reported, so an ordinary commit pays nothing for it.
+    an earlier revision to copy from. Both sides are compared with their whitespace
+    folded, because an authored note that wraps is recorded as one line. This runs only
+    where a dated record is about to be reported, so an ordinary commit pays nothing.
     """
     found: set[str] = set()
     revisions = subprocess.run(["git", "log", "--format=%H", revision, "--", path.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
+    wanted = {" ".join(text.split()): text for text in texts if text}
     for earlier in revisions:
         if found == texts:
             break
-        found |= {text for text in texts - found if text and text in previous_source(path, earlier)}
+        standing = " ".join(previous_source(path, earlier).split())
+        found |= {original for folded, original in wanted.items() if folded in standing}
     return found
 
 
