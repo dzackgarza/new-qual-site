@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shlex
 import subprocess
 import sys
@@ -11,21 +12,28 @@ from pathlib import Path
 
 import pytest
 
-from qualc.authoring import commit_day
+from qualc.authoring import commit_day, previous_source
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
-# The fixture card carrying a dated audit event, as every repaired card does.
-RECORDED = CARD.replace(
-    "\nreview: draft\n",
-    "\nreview: draft\n"
-    "audit:\n"
-    "- event: source-checked\n"
-    "  by: claude\n"
-    "  date: 2026-11-11\n"
-    "  note: The statement matches the printed exercise.\n",
-)
-# A root-level complaints file carrying dated entries, whose text the gate holds.
+
+
+def recorded(day: str) -> str:
+    """The fixture card carrying one dated audit event."""
+    return CARD.replace(
+        "\nreview: draft\n",
+        "\nreview: draft\n"
+        "audit:\n"
+        "- event: source-checked\n"
+        "  by: claude\n"
+        f"  date: {day}\n"
+        "  note: The statement matches the printed exercise.\n",
+    )
+
+
+RECORDED = recorded("2026-11-11")
+# A root-level complaints file in the stated record format: a dated section, and a
+# dated paragraph inside an undated entry.
 COMPLAINTS = """# Mathematical issues and papercuts
 
 ## Recording an issue
@@ -34,23 +42,64 @@ Add a descriptive heading with the observed evidence.
 
 ## Open findings
 
-1. **A dated finding — 2026-11-10.** The observation.
+### A search entry
 
-   *Further note, 2026-11-12: an appended paragraph.*
+**Searched outside the retained sets (2026-11-10).** The observation.
 
-2. **An earlier finding — 2026-11-09.** Another observation.
+*Further note, 2026-11-12: an appended paragraph.*
+
+## 2026-11-09: an older section
+
+Another observation.
 """
-
-
-def install_gate(root: Path) -> None:
-    """The pre-commit gate: every commit of this fixture validates its staged blobs."""
-    hook = root / ".git" / "hooks" / "pre-commit"
-    hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} -m qualc.authoring check-staged\n")
-    hook.chmod(0o755)
 
 
 def git(root: Path, *args: str) -> str:
     return subprocess.run(["git", *args], cwd=root, check=True, capture_output=True, text=True).stdout
+
+
+def staged_records(root: Path) -> str:
+    """The payload the shared staged hook sends: every staged path at the index."""
+    names = git(root, "diff", "--cached", "--name-only", "--diff-filter=ACMR", "-z")
+    return "".join(json.dumps({"path": path, "version": "index"}) + "\n" for path in names.split("\0") if path)
+
+
+def run_staged(root: Path) -> subprocess.CompletedProcess[str]:
+    """The project's staged validator, fed as the shared hook feeds it."""
+    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "staged"], cwd=root, input=staged_records(root), capture_output=True, text=True)
+
+
+def run_push(root: Path, tip: str, *paths: str) -> subprocess.CompletedProcess[str]:
+    """The project's push validator, fed as the shared hook feeds it: the pushed tip."""
+    payload = "".join(json.dumps({"path": path, "version": tip}) + "\n" for path in paths)
+    return subprocess.run([sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"], cwd=root, input=payload, capture_output=True, text=True)
+
+
+def track(root: Path, commit: str) -> None:
+    """Give the current branch the upstream the push gate reads, at `commit`.
+
+    The remote's URL is never contacted; it supplies the fetch refspec that maps the
+    merge ref to the remote-tracking ref.
+    """
+    branch = git(root, "symbolic-ref", "--short", "HEAD").strip()
+    git(root, "remote", "add", "omm", "https://example.invalid/new-qual-site.git")
+    git(root, "config", f"branch.{branch}.remote", "omm")
+    git(root, "config", f"branch.{branch}.merge", "refs/heads/main")
+    git(root, "update-ref", "refs/remotes/omm/main", commit)
+
+
+def install_gate(root: Path) -> None:
+    """The staged chain: the hook builds the shared payload and runs the project validator."""
+    runner = root / ".git" / "hooks" / "staged-gate.py"
+    runner.write_text(
+        "import json, subprocess, sys\n"
+        "names = subprocess.run(['git', 'diff', '--cached', '--name-only', '--diff-filter=ACMR', '-z'], check=True, stdout=subprocess.PIPE).stdout.decode()\n"
+        "records = ''.join(json.dumps({'path': path, 'version': 'index'}) + '\\n' for path in names.split('\\0') if path)\n"
+        f"raise SystemExit(subprocess.run([sys.executable, {str(ROOT / 'scripts/local-validate.py')!r}, '--mode', 'staged'], input=records.encode()).returncode)\n"
+    )
+    hook = root / ".git" / "hooks" / "pre-commit"
+    hook.write_text(f"#!/bin/sh\nexec {shlex.quote(sys.executable)} {shlex.quote(str(runner))}\n")
+    hook.chmod(0o755)
 
 
 @pytest.fixture
@@ -157,8 +206,12 @@ def test_a_dated_audit_event_is_append_only(repo: Path, monkeypatch: pytest.Monk
     assert git(repo, "show", "HEAD:corpus/one card.md") == in_flight
 
 
-def test_a_dated_complaints_entry_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    """Issue #147: a dated COMPLAINTS entry is a record, so a correction is a new entry."""
+def test_a_dated_complaints_record_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Issue #147: a dated COMPLAINTS record is a record, so a correction is a new record.
+
+    The record is the paragraph whose lead states the day, and the section whose heading
+    states it; an undated entry around them does not shield either.
+    """
     path = repo / "COMPLAINTS.md"
     path.write_text(COMPLAINTS)
     git(repo, "add", "COMPLAINTS.md")
@@ -169,27 +222,45 @@ def test_a_dated_complaints_entry_is_append_only(repo: Path, monkeypatch: pytest
 
     path.write_text(COMPLAINTS.replace("The observation.", "The corrected observation."))
     git(repo, "add", "COMPLAINTS.md")
-    refused = subprocess.run(["git", "commit", "-qm", "rewrite the finding"], cwd=repo, capture_output=True, text=True)
+    refused = subprocess.run(["git", "commit", "-qm", "rewrite the record"], cwd=repo, capture_output=True, text=True)
     assert refused.returncode != 0, refused.stdout
-    assert "COMPLAINTS.md: the entry dated 2026-11-10" in refused.stderr
+    assert "COMPLAINTS.md: the record dated 2026-11-10" in refused.stderr
     assert "QUAL-11" in refused.stderr
     assert git(repo, "rev-parse", "HEAD") == recorded
 
-    removed = COMPLAINTS.replace(
-        "1. **A dated finding — 2026-11-10.** The observation.\n\n"
-        "   *Further note, 2026-11-12: an appended paragraph.*\n\n",
-        "",
-    )
+    removed = COMPLAINTS.replace("**Searched outside the retained sets (2026-11-10).** The observation.\n\n", "")
     path.write_text(removed)
     git(repo, "add", "COMPLAINTS.md")
-    refused = subprocess.run(["git", "commit", "-qm", "remove the finding"], cwd=repo, capture_output=True, text=True)
+    refused = subprocess.run(["git", "commit", "-qm", "remove the record"], cwd=repo, capture_output=True, text=True)
     assert refused.returncode != 0, refused.stdout
-    assert "COMPLAINTS.md: the entry dated 2026-11-10" in refused.stderr
+    assert "COMPLAINTS.md: the record dated 2026-11-10" in refused.stderr
 
-    path.write_text(COMPLAINTS + "\n3. **A later finding — 2026-11-16.** A new record.\n")
+    section = COMPLAINTS.replace("## 2026-11-09: an older section\n\nAnother observation.\n", "## 2026-11-09: an older section\n\nA different observation.\n")
+    path.write_text(section)
     git(repo, "add", "COMPLAINTS.md")
-    git(repo, "commit", "-qm", "append the finding")
+    refused = subprocess.run(["git", "commit", "-qm", "rewrite the section"], cwd=repo, capture_output=True, text=True)
+    assert refused.returncode != 0, refused.stdout
+    assert "COMPLAINTS.md: the record dated 2026-11-09" in refused.stderr
+
+    later = COMPLAINTS + "\n## 2026-11-16: a correction\n\nThe record stands.\n"
+    path.write_text(later)
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "append the record")
     assert git(repo, "rev-parse", "HEAD") != recorded
+
+    in_flight = later.replace("The record stands.", "The record stands, checked twice.")
+    path.write_text(in_flight)
+    git(repo, "add", "COMPLAINTS.md")
+    git(repo, "commit", "-qm", "refine the day's own record")
+    assert git(repo, "show", "HEAD:COMPLAINTS.md") == in_flight
+
+
+def test_every_dated_complaints_heading_states_its_day_first() -> None:
+    """The file's stated record format: a dated section begins with its own day."""
+    day = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
+    for line in (ROOT / "COMPLAINTS.md").read_text().splitlines():
+        if line.startswith("#") and day.search(line) and not re.match(r"^#{1,6} \d{4}-\d{2}-\d{2}:", line):
+            pytest.fail(f"a dated heading does not begin with its day: {line}")
 
 
 def test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -326,6 +397,7 @@ def test_shared_push_payload_validates_each_exact_candidate_commit(repo: Path) -
     card.write_text(CARD)
     git(repo, "add", "corpus/one card.md")
     git(repo, "commit", "-qm", "valid HEAD")
+    track(repo, valid)
     payload = "\n".join(json.dumps({"path": "corpus/one card.md", "version": commit}) for commit in (valid, invalid))
 
     result = subprocess.run(
@@ -369,3 +441,85 @@ def test_push_rejects_a_deleted_card_that_is_still_referenced(repo: Path) -> Non
     for referrer in ("corpus/SRC-HW.md", "wiki/groups.md", "publications/guide.yaml"):
         assert f"{referrer}: " in result.stderr
     assert result.stderr.count("'P-GONE'") == 3
+
+
+def test_the_push_gate_judges_each_commit_by_its_own_day(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """An event edited on its own day stays edited when a later day's commit is pushed."""
+    card = repo / "corpus/one card.md"
+    card.write_text(recorded("2026-11-15"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the day's event")
+    base = git(repo, "rev-parse", "HEAD").strip()
+    same_day = recorded("2026-11-15").replace("matches the printed exercise", "matches the printed statement")
+    card.write_text(same_day)
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "repair the note on its own day")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    card.write_text(
+        same_day.replace(
+            "  note: The statement matches the printed statement.\n",
+            "  note: The statement matches the printed statement.\n"
+            "- event: solution-reviewed\n"
+            "  by: claude\n"
+            "  date: 2026-11-16\n"
+            "  note: The solution follows the source's argument.\n",
+        )
+    )
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "next day")
+    tip = git(repo, "rev-parse", "HEAD").strip()
+
+    track(repo, base)
+    result = run_push(repo, tip, "corpus/one card.md")
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_the_push_gate_judges_an_earlier_commit_that_a_later_one_restores(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A rewrite published by an earlier commit is refused even when the tip restores it."""
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-15T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the dated event")
+    base = git(repo, "rev-parse", "HEAD").strip()
+
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+    card.write_text(RECORDED.replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "--no-verify", "-qm", "rewrite the record without the gate")
+    card.write_text(
+        RECORDED.replace(
+            "  note: The statement matches the printed exercise.\n",
+            "  note: The statement matches the printed exercise.\n"
+            "- event: solution-reviewed\n"
+            "  by: claude\n"
+            "  date: 2026-11-16\n"
+            "  note: The solution follows the source's argument.\n",
+        )
+    )
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "--no-verify", "-qm", "restore the record and append")
+    tip = git(repo, "rev-parse", "HEAD").strip()
+
+    track(repo, base)
+    result = run_push(repo, tip, "corpus/one card.md")
+
+    assert result.returncode == 1
+    assert "corpus/one card.md: the source-checked event by claude dated 2026-11-11" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def test_the_push_gate_needs_the_branch_upstream(repo: Path) -> None:
+    """With no upstream there is no base for the published range, so the check fails loudly."""
+    tip = git(repo, "rev-parse", "HEAD").strip()
+    result = run_push(repo, tip, "corpus/one card.md")
+    assert result.returncode != 0
+    assert "upstream" in result.stderr
+
+
+def test_a_missing_revision_raises_rather_than_reading_as_an_empty_source(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.chdir(repo)
+    with pytest.raises(subprocess.CalledProcessError):
+        previous_source(Path("corpus/one card.md"), "0000000000000000000000000000000000000000")
