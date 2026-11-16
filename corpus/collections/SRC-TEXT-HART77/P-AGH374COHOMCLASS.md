@@ -600,11 +600,10 @@ class of a point. Parts (b) and (d) are therefore theorems relative
 to (R) and (B), and open with respect to the book alone. The remark
 below records what the book does and does not determine.
 
-Parts (a) and (c) are published and are transcribed at the steps that prove
-them: (a) by Yang, Solution 3.7.4(a), printed p. 75, by Kim, Exercise 3.7.4(a),
-PDF p. 170, and, for the normalization the class needs, by the answer of
-S.M. on Math StackExchange 1794757; (c) by Yang, Solution 3.7.4(c), printed
-p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) have no
+Part (a) is proved by Yang, Solution 3.7.4(a), printed p. 75, by Kim,
+Exercise 3.7.4(a), PDF p. 170, and, for the normalization the class needs, by
+the answer of S.M. on Math StackExchange 1794757; part (c) by Yang, Solution
+3.7.4(c), printed p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) have no
 published proof in any source read for this card: Yang's (b) moves the count
 back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
 his (d) computes in homogeneous coordinates with Euler's formula, so it treats
