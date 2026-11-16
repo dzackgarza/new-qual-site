@@ -32,6 +32,24 @@ def recorded(day: str) -> str:
 
 
 RECORDED = recorded("2026-11-11")
+
+
+def folded(day: str) -> str:
+    """The fixture card carrying one dated event whose note is a folded scalar over lines."""
+    return CARD.replace(
+        "\nreview: draft\n",
+        "\nreview: draft\n"
+        "audit:\n"
+        "- event: source-checked\n"
+        "  by: claude\n"
+        f"  date: {day}\n"
+        "  note: >-\n"
+        "    The statement matches the printed exercise, read in the text version of the book,\n"
+        "    and the local group is Hatcher's `M|x` in the notation of printed p. 234.\n",
+    )
+
+
+FOLDED = folded("2026-11-11")
 # A root-level complaints file in the stated record format: a dated section, and a
 # dated paragraph inside an undated entry.
 COMPLAINTS = """# Mathematical issues and papercuts
@@ -235,6 +253,33 @@ def test_a_dated_event_restored_to_its_earlier_text_is_accepted(repo: Path, monk
 
     assert result.returncode == 0, result.stderr
     assert git(repo, "show", ":corpus/one card.md") == RECORDED
+
+
+def test_a_restored_event_matches_a_note_folded_over_lines(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """An authored note is a folded scalar, and its record has no line breaks.
+
+    A note long enough to wrap is stored as `>-` text, so the record the gate compares is
+    the folded note while the earlier revision holds the wrapped one. The restoration
+    rule therefore has to compare them as text, not as layout.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(FOLDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the folded event on its day")
+
+    card.write_text(FOLDED.replace("printed exercise, read", "printed statement, read"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite the folded record in place")
+
+    card.write_text(FOLDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 0, result.stderr
 
 
 def test_a_dated_event_with_new_text_is_still_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
