@@ -113,6 +113,39 @@ audit:
     printed p. 6. Not checked: no other passage was re-read, and no step
     was re-derived.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on two passages the previous pass of this
+    date introduced. (i) Kim's X times_Y K(Y). The previous pass kept Kim's
+    expression and said it is defined because X is a scheme over Y and K(Y)
+    is the residue field of its generic point. That reason is false: Y here
+    is a closed subset of X, and there is no morphism X -> Y, so X times_Y
+    K(Y) is not the fibre product of schemes over Y. What the equality
+    computes, and what dim A_p measures, is Spec O_{X,eta_Y}, the spectrum
+    of the local ring at the generic point of Y; the step now says so and
+    records the notation as Kim's rather than as a construction. The source's
+    defect is a defect of notation, named on the card and not repaired in
+    the source's name. (ii) The correspondence between irreducible closed
+    subsets and prime ideals. The previous pass cited Chapter I Proposition
+    1.7 for it, printed p. 6. Proposition I.1.7 is dim Y = dim A(Y); the
+    correspondence is Corollary I.1.4, printed p. 4, together with the
+    sentence there that an algebraic set is irreducible exactly when its
+    ideal is prime. Shichijo cites Ch. I Prop. 1.7 in his Claim Ex3.20.1,
+    and there for dim R = dim Spec R, his correspondence being stated for
+    Spec R of a ring and not for an affine variety. The step now cites
+    Corollary I.1.4 and says what Shichijo's citation is. Checked against
+    the book in tmp/sources/hartshorne-1977-algebraic-geometry.md, where
+    printed p. N is PDF p. N+15: Corollary I.1.4 and Proposition I.1.7 in
+    Chapter I section 1, printed pp. 4 and 6 of the text version, and II.3.20
+    on printed pp. 94--95; Shichijo's Claim Ex3.20.1 and Exercise 3.20(c)
+    were re-read in tmp/sources/shitijyou-ch2-section3.md, printed pp.
+    17--18, and Kim's Exercise 2.3.20(c) in
+    tmp/sources/hartshorne-solutions-kim.md, PDF p. 32. Not checked: parts
+    (a), (b), (e) and (f) were not re-read in this pass, and no step was
+    re-derived beyond the two passages above.
+
 ---
 
 ::: {.problem}
@@ -316,7 +349,7 @@ Shichijo, Exercise 3.20(c), printed p. 18: take $Z=V(\mathfrak p_Z)\subseteq\Spe
 $$
 (0)\subsetneq\cdots\subsetneq\mathfrak p_Z,
 $$
-whose length is $\codim(Z,X)$ by the order-reversing correspondence between irreducible closed subsets of an affine variety and prime ideals of its coordinate ring, Chapter I Proposition 1.7, printed p. 6, which Shichijo cites as Ch. I Prop. 1.7.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
+whose length is $\codim(Z,X)$ by the order-reversing correspondence between irreducible closed subsets of an affine variety and prime ideals of its coordinate ring, Corollary I.1.4, printed p. 4.  Shichijo states that correspondence for $\Spec R$ of a ring in his Claim Ex3.20.1, and cites Ch. I Prop. 1.7 there for $\dim R=\dim\Spec R$; Proposition I.1.7, printed p. 6, is the equality of the dimension of an affine algebraic set with that of its coordinate ring.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
 $$
 (0)_{\mathfrak p_Z}\subsetneq\cdots\subsetneq(\mathfrak p_Z)_{\mathfrak p_Z},
 $$
@@ -334,7 +367,7 @@ Kim, Exercise 2.3.20(c), PDF p. 32, proves the same identity for irreducible clo
 $$
 \codim(Y,X)=\dim\bigl(X\times_YK(Y)\bigr)=\dim\bigl(\Spec A\times_YK(Y)\bigr)=\dim A_{\mathfrak p},
 $$
-the fibre product being taken over $Y$, which is what makes it defined: $X$ is a scheme over $Y$ and $K(Y)$ is the residue field of its generic point, so $X\times_YK(Y)$ is the fibre over that point.  His computation of its dimension is the one that needs $A$ to be a finitely generated $k$-algebra with $A/\mathfrak p$ a domain.
+and that display is not a fibre product: $Y$ is here a closed subset of $X$, not the base of a morphism $X\to Y$, so $X\times_YK(Y)$ has no meaning as one.  What his equality computes is $\dim\Spec\mathcal O_{X,\eta_Y}$, the spectrum of the local ring at the generic point $\eta_Y$ of $Y$, which is $\Spec A_{\mathfrak p}$; the display is read that way, and the notation is his, not a construction this card makes.  His computation of that dimension is the one that needs $A$ to be a finitely generated $k$-algebra with $A/\mathfrak p$ a domain.
 :::
 
 :::
