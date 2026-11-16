@@ -190,6 +190,27 @@ audit:
     are (PROSE-11, QUAL-08, SEC-7). No mathematics changes, no page moves, and
     no step was re-read in this pass. Read in this pass: nothing beyond the two
     rendered sentences; the sources were not reopened.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card and on nothing else.
+    (i) The remark carried a stray closing line "Agree.", the residue of a note
+    on a source, which says nothing about the mathematics; it is removed.
+    (ii) A remark block stood between the problem and the solution, against the
+    order STYLE-07 fixes for a problem card: the problem, then hints, then
+    solutions, then remarks. That block, the one recording that (c) and (d) are
+    stated for an arbitrary closed subset and that they are meaningful only for
+    nonempty $Y$, now stands after the solution and before the remark on the
+    published solution, and its phrase "the proof below treats that case" is
+    "the proof on this card treats that case", the proof now preceding it. The
+    text of both remarks is otherwise unchanged: the conventions
+    $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$, and Shichijo's
+    Exercise 3.20 at printed pp. 17--18 not treating $Y=\emptyset$ either. No
+    step, page or statement moves. Read in this pass: the block order of this
+    card and the two remarks; no source was reopened and no step was re-derived.
+
 ---
 
 ::: {.problem}
@@ -217,10 +238,6 @@ $$
 (e) If $U$ is a nonempty open subset of $X$, then $\krulldim U = \krulldim X$.
 
 (f) If $k \subseteq k'$ is a field extension, then every irreducible component of $X' = \fiberprod{X}{k}{k'}$ has dimension equal to $\krulldim X$.
-:::
-
-::: {.remark}
-Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$; the proof below treats that case. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
 :::
 
 ::: {.solution}
@@ -675,8 +692,11 @@ Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dim
 
 :::
 
+::: {.remark}
+Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$; the proof on this card treats that case. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
+:::
+
 ::: {.remark title="Published solution"}
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF pp. 31--32, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
 The proof above uses the dimension formula $\dim A_{\mathfrak p}+\operatorname{trdeg}_k\kappa(\mathfrak p)=\operatorname{trdeg}_kK$ for a finitely generated algebra over a field, derives (b) from the affine case together with a chain argument, and for (f) tensors a Noether normalization of an affine chart with $k'$ and reads the dimension of each component off the normalization.
-Agree.
 :::
