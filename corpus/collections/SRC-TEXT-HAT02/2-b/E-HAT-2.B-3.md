@@ -61,6 +61,22 @@ audit:
     its hypothesis $D\cap S^{n-1}=S$, the printed hint, the two displayed reduced homology values and
     the $k=n$ case. Not claimed: a published solution of the exercise; the sources searched for one
     are recorded in COMPLAINTS.md item 11.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 batch for the seven 2.B/2.C cards without a located published solution. Checked
+    against the book: Exercise 3 of §2.B on printed p. 176 with its printed hint, the
+    hypothesis $D\cap S^{n-1}=S$, the $k=0$ radial projection and the $k=n$ case. The two
+    complement computations this proof takes from Alexander duality (Theorem 3.44, printed
+    p. 254) are also Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4, both
+    printed p. 233, proved there by Mayer--Vietoris induction on the dimension of the sphere
+    with no duality; the remark now says so. The sources read for a published solution of the
+    exercise, and what each lacks, are recorded in COMPLAINTS.md item 11: Hatcher's text and
+    errata carry the statement and hint only; among the retained solution sets Poulsen reaches
+    2.B.10 alone, Li 2.B.10 and 2.B.11, DeMason 2.B.1, 2.B.2 and 2.B.8, and the others no
+    §2.B exercise at all; Bredon's §19 proves the complement computations and not the exercise.
+    Not claimed: a published solution of Exercise 2.B.3.
 ---
 
 ::: {.problem}
@@ -105,5 +121,5 @@ If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary
 :::
 
 ::: {.remark title="What the proof is"}
-The proof is the route the exercise's printed hint names (p. 176) and not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172).
+The proof is the route the exercise's printed hint names (p. 176) and not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172). The same two computations, by the same induction, are Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4 (Generalized Jordan Curve Theorem), both printed p. 233: the complement of an embedded $D^r$ in $S^n$ is acyclic, and the complement of an embedded $S^r$ has $\widetilde H_i=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Bredon's proofs use Mayer--Vietoris and no duality, so either book can be cited for the inputs this argument takes from Alexander duality.
 :::
