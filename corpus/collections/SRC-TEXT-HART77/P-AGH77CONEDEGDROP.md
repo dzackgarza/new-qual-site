@@ -138,9 +138,59 @@ audit:
     that event stands above it. The note is a dated record and is not
     touched; the order is the one da22fb231f gave the two events, which added
     both. Nothing else on the card changes.
-
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.7.7, printed
+    p. 55, parts (a) and (b) with the hint "Use induction on dim Y". Read the
+    two sources of part (b) at the cited places. Harris, Example 18.16,
+    "Degrees of Cones and Projections": the example begins on printed p. 234,
+    where the cone over a variety of dimension k and degree d has degree d, and
+    the smooth-point paragraph, "it's immediate that a general k-tuple of
+    hyperplanes H_i through p will intersect X transversely at p" leading to
+    deg(X-bar) = deg(X) - 1, is on printed p. 235; folios verified in the
+    retained copy, PDF p. 249 carrying the folio 234 and PDF p. 250 the folio
+    235. His letters are not the card's: his X is the base of the cone and his
+    Y the cone, and the paragraph assumes that the general line pq through p
+    meets X only at p and q. Mumford, Stability of projective varieties:
+    printed p. 54 is the first page of §2, which carries Proposition 2.1, and
+    printed p. 55 carries Definition 2.2, the two examples after it, 2.3 and
+    Proposition 2.5 with its proof; located in the retained copy by the
+    contents leaf, which gives §2 on printed p. 54, and by the PDF pages 17 and
+    18 that carry those two pieces. For part (a), KReiser's accepted answer
+    4656385 to question 4656099 was read at its answer id, which is the place a
+    Math Stack Exchange answer is cited by; it proves (a) in full, and the card
+    names it at the two statements its first step shares with it.
+    Checked against the book: (b) asks only for
+    deg X < d, the hint's induction is not part of the statement, and the
+    conclusion below gives deg X = deg Z <= d - 1. Not checked in this pass:
+    Harris's Example 18.17 on degrees of joins, and Lecture 20, to which he
+    defers the case p in X_sing.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (b) is now the published chain: X is the cone over Z with vertex P and
+    deg X = deg Z by Harris's Example 18.16 on printed p. 234, and
+    deg Z <= d - 1 by Mumford's Definition 2.2 and Proposition 2.5 on printed
+    p. 55, whose e_L is the multiplicity of the base locus, 1 at the
+    nonsingular point P. The condition r >= 1 is not stated in either step
+    because neither needs it; the field question the proof earlier raised,
+    whether a variety of dimension 0 can have degree greater than 1, is settled
+    in the closing step as before. Part (a) keeps its three steps, with answer
+    4656385 named at the first and beside the third; its tangent-space route in
+    the second and third steps is the card's, and the source-checked event of
+    2026-11-11 and the reader of 2026-11-16 accepted both.
+    The blow-up computation that used to be steps blowup-resolves-projection,
+    exceptional-self-intersection and projection-degree-formula is now the
+    remark "The blow-up computation", where its statements are kept with the
+    references they carried: the base ideal of the point, the chart reason that
+    the inverse image ideal is O(-E), the resolved morphism, (beta^*H - E)^r =
+    delta deg Z, E^r = (-1)^{r-1} from the normal bundle O(-1), and
+    (beta^*H)^{r-i} E^i = 0. Nothing is asserted there that the removed steps
+    did not prove, and the card's proof of (b) no longer rests on it.
 ---
-
 ::: {.problem}
 Let $Y$ be a variety of dimension $r$ and degree $d > 1$ in $\PP^n$.
 Let $P \in Y$ be a nonsingular point.
@@ -182,6 +232,12 @@ Since $I^\circ\to X$ is dominant,
 $$
 \dim X\le r+1.
 $$
+
+These two statements are the opening of KReiser's accepted answer 4656385 to Mathematics Stack Exchange question 4656099, which makes the first one explicit: the lines $PQ$ with $Q\in Y\setminus\{P\}$ are the image of
+$$
+(Q,t)\mapsto P+Qt
+$$
+on $(D_+(x_0)\cap Y)\times\AA^1$, the coordinates being chosen so that $P\in D_+(x_0)$; that image is dense in $X$ and irreducible because $(D_+(x_0)\cap Y)\times\AA^1$ is, and the resulting inclusion $k(X)\hookrightarrow k(Y\times\PP^1)$ gives $\dim X\le\dim Y+1$.
 :::
 
 :::
@@ -218,6 +274,8 @@ If equality held, irreducibility of both $Y$ and $X$ and the inclusion $Y\subset
 Step [](#join-equals-y-forces-linear){.pf-ref} would then make $Y$ linear, hence of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], contradicting $d>1$.
 Therefore $\dim X>r$.
 Together with step [](#join-irreducible-dim-bound){.pf-ref} this gives $\dim X=r+1$, proving part (a).
+
+Answer 4656385 proves this inequality by induction on $\dim Y$ instead: for $\dim Y=1$ the intersection $\overline{PQ}\cap Y$ is a proper subset of the line $\overline{PQ}$, since otherwise $Y=\overline{PQ}$ by irreducibility and $Y$ would be linear of degree $1$ by Exercise I.7.6; and in general a hyperplane $H$ through $P$ with $Y\cap H$ smooth at $P$ has intersection multiplicity $1$ along the component $Z$ through $P$, so that $Z$ is a variety of dimension $r-1$ and degree $d$ smooth at $P$ and the induction applies to it, while a second component of $Y\cap H$ gives a point of $X\setminus Y$ directly.
 :::
 
 :::
@@ -238,186 +296,113 @@ Projection from $P$ is the rational map
 $$
 \rho:Y\dashrightarrow H_0,
 \qquad
-[x_0:x_1:\cdots:x_n]\longmapsto[x_1:\cdots:x_n].
+[x_0:x_1:\cdots:x_n]\longmapsto[x_1:\cdots:x_n],
 $$
-Let $Z$ be the closure of its image.
-Every line through $P$ and a point of $Y\setminus\{P\}$ meets $H_0$ at the corresponding projected point, so $X$ is exactly the projective cone over $Z$ with vertex $P$.
+and $Z$ is the closure of its image.
+Every line through $P$ and a point of $Y\setminus\{P\}$ meets $H_0$ in the corresponding projected point, so the union of those lines lies in the cone over $\rho(Y\setminus\{P\})$ with vertex $P$, while every point of that cone is a limit of points of those lines; hence $X=J_P(Y)$ is exactly the projective cone over $Z$ with vertex $P$.
 Step [](#join-dimension-r-plus-one){.pf-ref} gives $\dim X=r+1$, hence $\dim Z=r$.
 
-Let $B$ be the homogeneous coordinate ring of $Z$ in $H_0$.
-The homogeneous ideal of the cone $X$ is the same ideal, viewed in the larger polynomial ring with the extra variable $x_0$.
-Thus
-$$
-S(X)\cong B[x_0].
-$$
-If
-$$
-P_Z(m)=\frac{\deg Z}{r!}m^r+O(m^{r-1}),
-$$
-then
-$$
-\dim_k S(X)_m
-=\sum_{j=0}^m\dim_k B_j
-=\frac{\deg Z}{(r+1)!}m^{r+1}+O(m^r).
-$$
-Therefore $\deg X=\deg Z$.
+The degree identity is Harris, *Algebraic Geometry: A First Course* (1992), Example 18.16, printed p. 234: "Let $X\subset\PP^{n-1}\subset\PP^n$ be a variety of dimension $k$ and degree $d$, $p\in\PP^n$ any point not lying on $\PP^{n-1}$, and $Y=\overline{pX}$ the cone with vertex $p$ over $X$. Then, inasmuch as the general hyperplane section of $Y$ is projectively equivalent to $X$, we see that the degree of $Y$ is equal to the degree $d$ of $X$."
+His cone is our $X$, built over his $X$, which is our $Z$ with $k=r$; the vertex $P$ does not lie on the hyperplane $H_0$ that carries $Z$, and a general hyperplane of $\PP^n$ not through $P$ cuts the cone in a variety projectively equivalent to $Z$.
+Hence $\deg X=\deg Z$.
+
 :::
 
 :::
 
-::: {.pf-step #blowup-resolves-projection}
-Blowing up the smooth point $P$ resolves the projection $\rho$ to a generically finite morphism
-$$
-\widetilde\rho:\widetilde Y=\Bl_PY\longrightarrow Z.
-$$
-If $E$ is the exceptional divisor and $H$ is the hyperplane class on $Y$, then
-$$
-\widetilde\rho^*\OO_Z(1)\cong\OO_{\widetilde Y}(\beta^*H-E),
-$$
-where $\beta:\widetilde Y\to Y$ is the blowup map.
+::: {.pf-step #projection-degree-drop}
 
-::: pf-proof
-Here $r\ge1$: a variety is irreducible by the book's conventions, so a variety of dimension $0$ is a single point, of degree $1$ because its Hilbert polynomial is the constant $1$ (§I.7, the definition of degree as $r!$ times the leading coefficient, with $r=0$), contrary to $d>1$. So the exceptional divisor of the blowup of the nonsingular point $P$ of $Y$ is indeed $\PP^{r-1}$.
-
-The rational projection is given by the restrictions to $Y$ of the $n$ linear forms $x_1,\ldots,x_n$, which are global sections of the invertible sheaf $\OO_Y(1)$ whose common zero locus on $Y$ is exactly $\{P\}$.
-On the chart $D_+(x_0)$ the section $x_0$ trivializes $\OO_Y(1)$, so there the base ideal of these sections, in the sense of [@Har77, Example II.7.17.3], is generated by the restrictions of $x_1/x_0,\ldots,x_n/x_0$.
-These are the affine coordinates of $P$ in that chart, so the ideal they generate on $Y$ is the inverse image of the ideal of $P$ in $\PP^n$: it is the ideal sheaf $\mathcal I$ of the point $P$ on $Y$, whose stalk at the smooth point $P$ is the maximal ideal $\mathfrak m=\mathfrak m_{P,Y}$ of the regular local ring $\OO_{Y,P}$.
-The individual generators need not vanish to order one at $P$: on the smooth conic $x_0x_2=x_1^2$ at $P=[1:0:0]$, the chart $x_0=1$ gives $x_1=t$ and $x_2=t^2$, so $x_2/x_0$ vanishes to order two there, while the ideal $(t,t^2)=(t)$ is still the maximal ideal.
-What is used below is this ideal, not the order of vanishing of any single generator.
-
-The [[D-SCHBLOWUP|blowup]] $\beta:\widetilde Y\to Y$ is the blowing-up of the ideal sheaf $\mathcal I$ of the point.
-By [@Har77, Proposition II.7.13(a)] the inverse image ideal
 $$
-\mathcal J=\beta^{-1}\mathcal I\cdot\OO_{\widetilde Y}
-$$
-is invertible, and by [@Har77, Example II.7.17.3] the sections $\beta^*x_1,\ldots,\beta^*x_n$ of $\beta^*\OO_Y(1)$ generate the invertible subsheaf
-$$
-\mathcal L'=\mathcal J\cdot\beta^*\OO_Y(1)\subseteq\beta^*\OO_Y(1),
-$$
-which, together with those sections, defines the morphism
-$$
-\widetilde\rho:\widetilde Y\longrightarrow\PP^{n-1}
-$$
-extending $\rho$, with $\widetilde\rho^*\OO_{\PP^{n-1}}(1)\cong\mathcal L'$ [@Har77, Theorem II.7.1].
-The image of the irreducible projective variety $\widetilde Y$ is closed, contains the dense subset $\rho(Y\setminus\{P\})$ of $Z$, and has dimension at most $r=\dim Z$; hence it is $Z$.
-Since both $\widetilde Y$ and $Z$ have dimension $r$, this dominant morphism is generically finite; let its degree be
-$$
-\delta=[K(Y):K(Z)]\ge1.
-$$
-
-It remains to identify $\mathcal J$ with $\OO_{\widetilde Y}(-E)$.
-Let $t_1,\ldots,t_r$ be local parameters at the smooth point $P$, meaning elements of $\mathfrak m$ whose images form a basis of $\mathfrak m/\mathfrak m^2$; they generate $\mathfrak m$ by Nakayama's lemma, so $\mathcal I$ is generated by $t_1,\ldots,t_r$ on a neighborhood of $P$.
-On the blowup chart in which $t_i=t_1y_i$ for $i\ge2$, the inverse image ideal is
-$$
-\mathcal J=(t_1,\ldots,t_r)\cdot\OO=(t_1),
-$$
-and the exceptional divisor meets this chart in $\{t_1=0\}$: the coordinate ring of that intersection is the chart ring modulo $t_1$, namely $\OO_{Y,P}/(t_1,\ldots,t_r)[y_2,\ldots,y_r]\cong k[y_2,\ldots,y_r]$, so it is reduced and irreducible.
-The invertible ideal $\mathcal J=(t_1)$ therefore cuts the reduced irreducible divisor $E$ on this chart, and since the effective Cartier divisor defined by $\mathcal J$ has support $\beta^{-1}(P)=E$ [@Har77, Proposition II.7.13(b)], that divisor is $E$ itself with multiplicity one:
-$$
-\mathcal J=\OO_{\widetilde Y}(-E).
-$$
-Consistently, $E\cong\PP^{r-1}$, as used again in step [](#exceptional-self-intersection){.pf-ref}.
-Consequently
-$$
-\widetilde\rho^*\OO_Z(1)\cong\mathcal L'=\mathcal J\cdot\beta^*\OO_Y(1)\cong\OO_{\widetilde Y}(\beta^*H-E),
-$$
-which is the displayed line-bundle identity.
-:::
-
-:::
-
-::: {.pf-step #exceptional-self-intersection}
-The top self-intersection of the divisor $\beta^*H-E$ is
-$$
-(\beta^*H-E)^r=d-1.
+\deg Z\le d-1.
 $$
 
 ::: pf-proof
-The top self-intersection of $H$ on the projective variety $Y$ is its degree:
-$$
-H^r=d.
-$$
-Because $P$ is nonsingular of dimension $r\ge1$, the exceptional divisor is
-$$
-E\cong\PP^{r-1},
-$$
-and its normal bundle in the blowup is $\OO_E(-1)$.
-Thus
-$$
-E^r
-=\deg c_1(\OO_E(E))^{r-1}
-=\deg c_1(\OO_{\PP^{r-1}}(-1))^{r-1}
-=(-1)^{r-1}.
-$$
 
-For $1\le i\le r-1$, the mixed intersection
+This is Mumford, *Stability of projective varieties* (1977), Proposition 2.5, printed p. 55, in the notation of his 2.3 on the same page.
+Let $A\subseteq\Gamma(\PP^n,\OO(1))$ be the space of hyperplanes through $P$, let $\mathcal I_A$ be the ideal sheaf generated by its sections, so that the base locus is $Y\cap L_A=Y\cap\{P\}=\{P\}$, and let $p_A(Y)$ be the image of the blow-up of $Y$ along $\mathcal I_A$ under the projection, counted as a cycle with each point of the image taken with multiplicity the degree of the map over it.
+Proposition 2.5 states
 $$
-(\beta^*H)^{r-i}E^i
+e_L(\mathcal I_A)=\deg Y-\deg p_A(Y).
 $$
-vanishes, because $\beta^*\OO_Y(H)\restrict_E$ is trivial: the map $E\to Y$ is constant with image $P$.
-Expanding gives
-$$
-(\beta^*H-E)^r
-=H^r+(-1)^rE^r
-=d-1.
-$$
-:::
-
-:::
-
-::: {.pf-step #projection-degree-formula}
-The projection degree satisfies
-$$
-\delta\deg Z=d-1.
-$$
-
-::: pf-proof
-For a generically finite morphism of degree $\delta$ between $r$-dimensional projective varieties, the top self-intersection of the pullback of a hyperplane is $\delta$ times the degree of the target.
-Indeed, intersect $Z$ with $r$ sufficiently general hyperplanes.
-The resulting zero-dimensional intersection has total length $\deg Z$.
-Over the dense open locus where $\widetilde\rho$ is finite of degree $\delta$, its inverse image has total length $\delta\deg Z$; this inverse image is precisely the intersection of the $r$ pulled-back hyperplanes on $\widetilde Y$.
-Therefore
-$$
-(\widetilde\rho^*\OO_Z(1))^r=\delta\deg Z.
-$$
-Step [](#blowup-resolves-projection){.pf-ref} identifies the left side with $(\beta^*H-E)^r$, which step [](#exceptional-self-intersection){.pf-ref} evaluates as $d-1$.
+By Definition 2.2 on printed p. 55, $e_L(\mathcal I_A)$ is the normalized leading coefficient of $\chi(L^n/\mathcal I_A^nL^n)$, and the examples following that definition say that when $Z$ is set-theoretically a point $x$, then $P$ "is the Hilbert-Samuel polynomial of $\mathcal I$ as an ideal of $\OO_{x,X}$ and $e(\mathcal I)$ is its multiplicity there", independently of $L$.
+So $e_L(\mathcal I_A)$ is the multiplicity of $Y$ at $P$, and that is $1$ because $P$ is nonsingular: a general $r$-tuple of hyperplanes through $P$ meets $Y$ transversely at $P$, as Harris records on printed p. 235, "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".
+Since the underlying variety of the cycle $p_A(Y)$ is $Z$ and its multiplicities are the degrees of the projection, $\deg p_A(Y)\ge\deg Z$.
 Hence
 $$
-\delta\deg Z=d-1.
+d=\deg Y=\deg p_A(Y)+1\ge\deg Z+1,
 $$
+which is the claim.
+
 :::
 
 :::
 
 ::: {.pf-step #degree-drop-conclusion}
-The degree of the variety in the problem satisfies
+
 $$
 \boxed{\deg X<d}.
 $$
 
 ::: pf-proof
-By steps [](#cone-degree-equals-projection-degree){.pf-ref} and [](#projection-degree-formula){.pf-ref},
+
+Steps [](#cone-degree-equals-projection-degree){.pf-ref} and [](#projection-degree-drop){.pf-ref} give
 $$
-\deg X=\deg Z=\frac{d-1}{\delta}\le d-1<d,
+\deg X=\deg Z\le d-1<d,
 $$
-proving part (b).
+the last inequality because $d>1$.
+This is part (b).
+
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a); steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#blowup-resolves-projection){.pf-ref}, [](#exceptional-self-intersection){.pf-ref}, [](#projection-degree-formula){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b), whose hypothesis $d>1$ forces $r\ge1$ because a variety of dimension $0$ is a point of degree $1$.
+
+Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a).
+Steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#projection-degree-drop){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b), whose hypothesis $d>1$ forces $r\ge1$: a variety is irreducible by the book's conventions, so a variety of dimension $0$ is a single point, of degree $1$ because its Hilbert polynomial is the constant $1$.
+
 :::
 
 :::
+:::
+
+::: {.remark title="The blow-up computation"}
+The inequality $\deg Z\le d-1$ also has a computation that produces the factor. Blow up the nonsingular point $P$: let $\beta:\widetilde Y=\Bl_PY\to Y$ be the blow-up and $E$ its exceptional divisor. The restrictions of $x_1,\ldots,x_n$ to $Y$ have base locus exactly $\{P\}$, so on the blow-up they generate the invertible sheaf
+$$
+\OO_{\widetilde Y}(\beta^*H-E),
+$$
+$H$ being the hyperplane class, and the resolved projection $\widetilde\rho:\widetilde Y\to Z$ is the morphism these sections define ([@Har77, Theorem II.7.1] applied to the base ideal, which is the ideal sheaf of the point $P$; its inverse image ideal is invertible, and is $\OO_{\widetilde Y}(-E)$, by [@Har77, Proposition II.7.13] and [@Har77, Example II.7.17.3]).
+On the chart of the blow-up where local parameters $t_1,\ldots,t_r$ at $P$ satisfy $t_i=t_1y_i$ for $i\ge2$, the inverse image ideal is $(t_1)$, and the exceptional divisor meets that chart in $\{t_1=0\}$, whose ring is $\OO_{Y,P}/(t_1,\ldots,t_r)[y_2,\ldots,y_r]$; so the divisor cut out by the ideal is $E$ with multiplicity one.
+
+Both $\widetilde Y$ and $Z$ are $r$-dimensional projective varieties, so $\widetilde\rho$ is generically finite of some degree $\delta=[K(Y):K(Z)]\ge1$, and for a generically finite morphism of $r$-dimensional projective varieties the top self-intersection of the pullback of a hyperplane is $\delta$ times the degree of the target: intersecting with $r$ general hyperplanes and pulling back counts each of the $\deg Z$ points $\delta$ times. Hence
+$$
+(\beta^*H-E)^r=\delta\deg Z.
+$$
+On the other side $H^r=d$; since $P$ is nonsingular and $r\ge1$, $E\cong\PP^{r-1}$ with normal bundle $\OO_E(-1)$, so
+$$
+E^r=\deg c_1(\OO_{\PP^{r-1}}(-1))^{r-1}=(-1)^{r-1},
+$$
+while $(\beta^*H)^{r-i}E^i=0$ for $0<i<r$, because $\beta^*\OO_Y(H)$ is trivial on $E$, the map $E\to Y$ being constant. Therefore
+$$
+(\beta^*H-E)^r=H^r+(-1)^rE^r=d-1,
+$$
+and $\deg Z=(d-1)/\delta\le d-1$: Mumford's identity with the multiplicity of the base point computed as the degree of $\widetilde\rho$.
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, Exercise 7.7, PDF pp. 9--10: (a) "$X$ is birational to the cone on $Y$, which will show that $X$ is irreducible and of dimension $r+1$", by mapping each line $PQ$ to the corresponding line of the cone and writing down a rational inverse; (b) "if $Y$ has dimension $0$ then it is a union of $d$ points and $X$ is a union of at most $d-1$ lines, so the result is true in this case. If $Y$ has dimension $>0$ choose a generic hyperplane $H$ containing $P$, which can be chosen to intersect $Y$ transversely at generic points of the intersection as $Y$ is nonsingular at $P$. The intersection of $Y$ and $H$ has degree at most $d$ by 7.7. The intersection of $X$ with $H$ is the union of the set of lines joining $P$ and $H\cap Y$ which has degree less than $d$ by induction on $\dim(Y)$. Again by 7.7, the degree of $X$ is equal to the degree of $X\cap H$ as all components of $X\cap H$ have multiplicity $1$ in the intersection (as $H$ is generic). Hence the degree of $X$ is less than that of $Y$", with the caveat "the intersection $X\cap H$ of an irreducible algebraic set $X$ with a generic hyperplane $H$ need not be irreducible! But see remark 7.9.1 on p.~245 of Hartshorne."
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, stops at §I.5 and gives no solution to 7.7.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise I.7.7, PDF p. 58: (a) the cone over $Y$ with a rational inverse, "note that the cone has dimension $r+1$"; (b) "if $\dim Y=0$, then $Y$ has $d$ points and $X$ has $d-1$ lines. If $\dim Y=r$ and $H$ is a hyperplane containing $P$ but not $Y$, then by Thm 7.7, 7.6b, $\deg X\cap H=\deg X$. By induction $\deg X\cap H\le\deg Y\cap H\le\deg Y=d$."
-Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, Exercise I.7.7, PDF p. 27: (a) "fix $P$ and consider the projection map to $\PP^1$. $X$ is parameterized by the fibers of this map, of which are same dimension and irreducible, so $X$ is a variety of $\dim r+1$"; (b) "for $\dim Y=0$, $Y$ consists of $d$ points, so $X$ is $d-1$ lines. Now suppose $\dim Y=r$. Choose a hyperplane $H$ through $P$ not containing $Y$ so that the intersection multiplicity along any component of $X\cap H$ is $1$. Then by Thm 7.7 and 7.6(b), $\deg X\cap H=\deg X$, and $\deg Y\cap H\le\deg Y=d$. $X\cap H$ is the cone over $Y\cap H$ so by induction, $\deg X\cap H\le\deg Y\cap H=d$. So $\deg X<d$."
-All three take the induction on $\dim Y$ that the printed hint asks for. Egbert and Cutrone--Marshburn assert $\deg X\cap H=\deg X$ and $\deg X\cap H\le\deg Y\cap H$; Borcherds names the genericity these need, which is Bertini's theorem together with (III, 7.9.1 after II, 8.18) applied to $X$, and his argument also identifies $X\cap H$ with the join of $P$ and $H\cap Y$, which is what makes the induction hypothesis applicable to that section and is not proved either; his conclusion "less than that of $Y$" passes through that identification as well. No set proves the degree identity under a hyperplane section of $X$, which the induction requires. Part (b) is therefore recorded in COMPLAINTS.md as having no complete published solution. Steps [](#blowup-resolves-projection){.pf-ref} to [](#degree-drop-conclusion){.pf-ref} replace the induction by the blowup of $P$ and the resolved projection $\widetilde\rho:\widetilde Y\to Z$, whose degree $\delta$ satisfies $\delta\deg Z=(\beta^*H-E)^r=d-1$; part (a) is proved from the incidence variety and, for the inequality $\dim X>r$, from step [](#join-equals-y-forces-linear){.pf-ref} with I.7.6.
+The proof above is Harris's, Mumford's and KReiser's, at the places its steps name.
 
-The blowup proof needs $r\ge1$, and the hypothesis supplies it: $Y$ is a variety, hence irreducible, so $r=0$ would make $Y$ a single point, of degree $1$, contradicting $d>1$. The case $\dim Y=0$ that the three sets open with is not a case of this exercise. It belongs to the statement for algebraic sets, where a zero-dimensional set can have $d$ points: Borcherds writes "$Y$ has dimension $0$ then it is a union of $d$ points and $X$ is a union of at most $d-1$ lines", which is true of a reducible set and vacuous for a variety, since no variety of dimension $0$ has degree greater than $1$. An earlier version of this remark recorded that case as missing from the card and added a step for it; the step was vacuous, since the "set of $d$ distinct points" it treats is not a variety, and it has been removed rather than proved.
+KReiser, accepted answer 4656385 to Mathematics Stack Exchange question 4656099, *Hartshorne Chapter 1 Exercise 7.7 (a)*, text version `tmp/sources/mse-4656099-hart-i77a-cone.md`: the irreducibility of $X$ and $\dim X\le r+1$ from the image of $(D_+(x_0)\cap Y)\times\AA^1$, which is step [](#join-irreducible-dim-bound){.pf-ref}, and $\dim X>r$ by the induction on $\dim Y$ that the answer carries out in full. Steps [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} are the card's, and reach the same inequality through the projective tangent space at the nonsingular point instead of that induction.
+
+Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 18.16, printed pp. 234--235, text version `tmp/sources/harris-1992-algebraic-geometry-first-course-pp224-243.md`: the degree of a cone is the degree of its base, which is step [](#cone-degree-equals-projection-degree){.pf-ref}; and, for the projection of a variety from one of its smooth points, "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$. We can still apply Bertini to conclude that the hyperplanes $H_i$ will intersect $X$ transversely away from $p$. Still assuming that the general line $\overline{pq}$ joining $p$ to another point $q\in X$ meets $X$ only at $p$ and $q$, we see that the points of intersection of $\overline X$ with the $\overline H_i$ correspond to the points of intersection of $X$ with the $H_i$ other than $p$", whence
+$$
+\deg(\overline X)=\deg(X)-1.
+$$
+His standing assumption --- that the general line through $p$ meets $X$ only at $p$ and at one more point --- is why step [](#projection-degree-drop){.pf-ref} uses Mumford's statement instead, which counts the same points without it.
+
+David Mumford, *Stability of projective varieties*, L'Enseignement Mathématique 23 (1977), printed p. 55, text version `tmp/sources/mumford-1977-stability-projective-varieties.md`: Definition 2.2 and Proposition 2.5, $e_L(\mathcal I_A)=\deg X-\deg p_A(X)$, with $e_L$ the multiplicity of the base locus measured through $L$. At a nonsingular point that multiplicity is $1$, so the identity reads $\deg Y=\deg(\text{projection})+1$ and the projection need not be birational.
+
+The retained sets take the induction on $\dim Y$ that the printed hint asks for and leave its key identity unproved. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.7.7, PDF p. 58: "by Thm 7.7, 7.6b, $\deg X\cap H=\deg X$. By induction $\deg X\cap H\le\deg Y\cap H\le\deg Y=d$". Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, PDF p. 27: "Choose a hyperplane $H$ through $P$ not containing $Y$ so that the intersection multiplicity along any component of $X\cap H$ is $1$. Then by Thm 7.7 and 7.6(b), $\deg X\cap H=\deg X$". Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 7.7, PDF pp. 9--10, names the genericity that argument needs --- a generic hyperplane through $P$ meeting $Y$ and $X$ transversely, and $X\cap H$ irreducible --- and refers the second to remark III.7.9.1 with Bertini (II, 8.18), which he quotes rather than applies; his induction also needs $X\cap H$ to be the join of $P$ with $Y\cap H$. William Troiani's Chapter I stops at §5 and has no 7.7. A. Shichijo, Chapter 1 section 7, Exercise 7.7, printed p. 9, chooses the hyperplane with $i(X,H;Z_j)=1$ for every component of $X\cap H$ and marks that choice with the author's own （？）.
+
+The three sets also open with $\dim Y=0$, where they write that $Y$ is a union of $d$ points and $X$ a union of at most $d-1$ lines. That case does not occur here: $Y$ is a variety, so it is irreducible, and a variety of dimension $0$ is a single point, of degree $1$ because its Hilbert polynomial is the constant $1$, which $d>1$ excludes. The blow-up remark above needs $r\ge1$, and the hypothesis supplies it.
 :::
