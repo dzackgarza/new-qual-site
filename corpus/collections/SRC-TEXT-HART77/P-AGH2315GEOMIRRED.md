@@ -160,8 +160,9 @@ audit:
     three other cards of the round.
     (3) The event above says that the COMPLAINTS.md edits of that pass "were
     carried into commit 493cf6e98d, which is another chat's". That commit
-    carries none of them: `git show 493cf6e98d -- COMPLAINTS.md` is the
-    V.3.6, V.3.7, V.4.3, V.4.4(b) and V.5.8(b) paragraphs only. They entered
+    carries none of them: `git show 493cf6e98d -- COMPLAINTS.md` changes only
+    the V.3.7 sentence of the Chapter V state paragraph, the V.4.4(b)
+    paragraph and the V.5.8(b) paragraph. They entered
     through 89d13d01e14 (2026-11-16 07:13:27), whose COMPLAINTS diff carries
     the II.3.15 header, the Cais paragraph, the duplicated sentence of the
     II.2.15(c) entry and the I.7.6(a) sentence of the I.7.7(b) correction.
