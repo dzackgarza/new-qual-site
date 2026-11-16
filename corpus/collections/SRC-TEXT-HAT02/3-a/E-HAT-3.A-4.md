@@ -63,6 +63,18 @@ audit:
   date: 2026-11-13
   note: >-
     Re-read for the published-solution obligation. Both identities are published as corollaries of the exactness of filtered colimits of modules in Weibel, *An Introduction to Homological Algebra*, Corollary 2.6.17 with the surrounding section, printed p. 58, cited on the card with the two facts the derivation uses. Checked against the book: the exercise's printed statement on p. 267, Hatcher's definition of Tor by free resolutions (Lemma 3A.2, p. 263) and Proposition 3A.5(1) on the symmetry of Tor (p. 265). Not claimed: that a published solution set contains this exercise; the card says the source is the printed colimit corollary and derives the Tor statement from it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Citations only; nothing in the statement or the derivation changes. No citation on this card named
+    its text version. Weibel's §2.6--2.7 is read in `tmp/sources/weibel-02-derived-functors.md`, which
+    was opened this pass and does contain Theorem 2.6.15, axiom (AB5), Corollaries 2.6.16 and 2.6.17
+    and Theorem 2.7.2 on its printed pp. 57--58, and Hatcher is read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. Both are now named where they are cited. Checked
+    against Hatcher (2002), §3.A Exercise 4 on printed p. 267 and the remark on printed p. 263 that
+    $\operatorname{Tor}_n=0$ for $n>1$. Not claimed: a text version for any other source, this card
+    citing none; nothing was read from a rendered page.
 ---
 
 ::: {.problem}
@@ -70,7 +82,7 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
-Both identities are instances of the filtered-colimit theorems of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6--2.7, printed p. 58, applied to the left adjoint $-\otimes_\ZZ B$ of $\ZZ$-mod. Let $\Lambda$ be a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$. A directed set is a filtered index category, so the theorems of §2.6 apply.
+Both identities are instances of the filtered-colimit theorems of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6--2.7, printed p. 58, read in `tmp/sources/weibel-02-derived-functors.md`, applied to the left adjoint $-\otimes_\ZZ B$ of $\ZZ$-mod. Let $\Lambda$ be a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$. A directed set is a filtered index category, so the theorems of §2.6 apply.
 
 *The results used, with their printed statements.*
 
@@ -102,5 +114,5 @@ The outer equalities are the balancing isomorphism of Theorem 2.7.2, the middle 
 
 *The symmetry of $\operatorname{Tor}$ is not passed through the colimit.* Both identities of the exercise are stated with the colimit in the first variable, and the derivation above keeps that variable fixed: Corollary 2.6.16 is a statement about the one functor $F=-\otimes_\ZZ B$, and Theorem 2.7.2 is a natural isomorphism of functors in the module variable, so it applies at the colimit and at every stage simultaneously. Nothing of the form $\operatorname{Tor}(B,A_\alpha)\cong\operatorname{Tor}(A_\alpha,B)$ occurs, and no compatibility of such a stagewise isomorphism with the structure maps $A_\alpha\to A_\beta$ has to be checked. For a colimit in the second variable the same argument runs with the other adjunction $A\otimes_R-\dashv\operatorname{Hom}_R(A,-)$, which is how the book obtains Corollary 2.6.17; the two variables agree for $\ZZ$-mod by Theorem 2.7.2, and that theorem is where the symmetry of $\operatorname{Tor}$ enters, once, as a natural isomorphism.
 
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 4, printed p. 267: "Show that $\otimes$ and $\operatorname{Tor}$ commute with direct limits: $(\varinjlim_\alpha A_\alpha)\otimes B=\varinjlim(A_\alpha\otimes B)$ and $\operatorname{Tor}(\varinjlim A_\alpha,B)=\varinjlim\operatorname{Tor}(A_\alpha,B)$", with Hatcher's $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$ as on printed p. 263. Weibel's derivation gives both identities in every degree and asks nothing of the directed system beyond filteredness.
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 4, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\otimes$ and $\operatorname{Tor}$ commute with direct limits: $(\varinjlim_\alpha A_\alpha)\otimes B=\varinjlim(A_\alpha\otimes B)$ and $\operatorname{Tor}(\varinjlim A_\alpha,B)=\varinjlim\operatorname{Tor}(A_\alpha,B)$", with Hatcher's $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$ as on printed p. 263. Weibel's derivation gives both identities in every degree and asks nothing of the directed system beyond filteredness.
 :::
