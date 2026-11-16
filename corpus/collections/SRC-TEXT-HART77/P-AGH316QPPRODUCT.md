@@ -57,10 +57,43 @@ audit:
     closed Y, Z and U x V = Y x Z - pi_2^{-1}(Z-V) - pi_1^{-1}(Y-U) for open
     U, V. Verified each against the card: projections in step s1, local
     closedness and irreducibility in s2, closedness in s3, universality in s4.
+    Corrected 2026-11-16 on the reader's report: that Y x Z display was
+    recorded above as verified and is false as printed --- it uses only the
+    zeroth column and row, so the point of the Segre variety with a_0 = b_0 = 0
+    satisfies both sets of generators, F_i(0,...,0) = 0 and G_j(0,...,0) = 0
+    since both are homogeneous of positive degree, and need not lie in Y x Z;
+    for Y = V(x_0) and Z = V(y_0) the point (1:0:...) x (0:1:0:...) does not
+    lie in Y x Z and does satisfy them. The row-and-column reading that is true
+    holds the generators in every column and every row. Nor does his
+    universality cover subvarieties: it is proved for P^m x P^n, and the
+    passage to Y, Z is the one sentence "This extends in a straightforward
+    manner to projective varieties".
     Recorded as a gap: Bertram's universality is in prevarieties, so his
     Proposition 4.3 alone does not give (c) in the category of varieties, whose
     objects Hartshorne takes irreducible; the irreducibility of X x Y is this
     card's step s2, and the remark says so.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Three repairs on the local reader's report, each checked against the
+    Bertram text version before editing. (1) The card called Bertram the
+    complete published argument for (a)--(c). He proves universality for
+    W -> P^m x P^n and says only that the case of projective subvarieties
+    "extends in a straightforward manner" (line 227 of the text version), so
+    (c) for quasi-projective factors is not his. (2) His display
+    Y x Z = V(<F_i(x_00,...,x_m0), G_j(x_00,...,x_0n)>) at line 230 is false as
+    printed: it uses the zeroth column and row only, so the image point with
+    a_0 = b_0 = 0 satisfies both sets of generators and need not lie in
+    Y x Z --- for Y = V(x_0), Z = V(y_0) the point (1:0:..) x (0:1:0:..) does
+    not lie in Y x Z and does satisfy them. The event of 2026-11-16 above had
+    recorded that display as verified against the card; withdrawn. The true
+    row-and-column reading holds each F_i in every column and each G_j in
+    every row. (3) Step s2's identification of the Segre open with the affine
+    product now says that it is the abstract affine product and so does not
+    depend on the charts carrying the two factors. Not checked: Bertram's
+    graded-ring display Y x Z = mproj(oplus R_d otimes Q_d), which the card
+    does not use.
 
 ---
 
@@ -143,6 +176,7 @@ U_\alpha\times V_\beta
 $$
 is open in $X\times Y$.
 On the corresponding Segre chart $D_+(z_{ij})$, the row-and-column formulas of step [](#s1){.pf-ref} identify this open with the affine product of $U_\alpha$ and $V_\beta$.
+That identification is with the abstract affine product of the two affine varieties, and so does not depend on which standard chart of $\PP^n$ carries $U_\alpha$ or which of $\PP^m$ carries $V_\beta$: the formulas are morphisms of the locally closed sets and are inverse to each other, and an affine variety's coordinate ring is the same on any open set that carries it.
 It is therefore irreducible by [[P-AGH315AFFPRODUCT]].
 
 Any two nonempty members $U_\alpha\times V_\beta$ and $U_{\alpha'}\times V_{\beta'}$ intersect: irreducibility of $X$ gives
@@ -246,13 +280,17 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), re
 :::
 
 ::: {.remark title="Published solution"}
-The complete published argument for (a)--(c) is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. For closed $Y=V(F_1,\ldots,F_a)$ and $Z=V(G_1,\ldots,G_b)$ it gives $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle)$, and for open $U\subseteq Y$, $V\subseteq Z$ it gives $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is parts (b) and (a). That is exactly the content of steps [](#s1){.pf-ref}--[](#s4){.pf-ref}: the two projections as morphisms, local closedness, closedness for projective factors, and the universal property read on affine charts. One qualification, which the card's remarks do not hide: he proves the universal property "in the category of prevarieties", and his $X$ is a projective variety, so irreducible; for quasi-projective factors the irreducibility of $X\times Y$ is needed to be an object of Hartshorne's category of varieties, and that is step [](#s2){.pf-ref}, which derives it from the affine product charts and the irreducibility of $X$ and $Y$. With it, his universality is the universality in varieties.
+The published argument is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6, text version `tmp/sources/bertram-utah-6130-varieties.md`: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. That universality is proved for $W\to\PP^m\times\PP^n$, that is for the two projective spaces themselves, and it is stated "in the category of prevarieties"; his $X$ is irreducible, being a projective space, so there the prevariety and the variety coincide. For subvarieties he writes one sentence, "This extends in a straightforward manner to projective varieties", and the display that follows it is not correct: for closed $Y=V(\langle F_1,\ldots,F_a\rangle)$ and $Z=V(\langle G_1,\ldots,G_b\rangle)$ it gives
+$$
+Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle),
+$$
+which holds each $F_i$ in the zeroth column and each $G_j$ in the zeroth row only, so that every point of the Segre variety with $a_0=b_0=0$ satisfies it: $F_i$ and $G_j$ are homogeneous of positive degree, so both sides vanish at the origin of their column and row. That point need not lie in $Y\times Z$ --- for $Y=V(x_0)\subseteq\PP^m$ and $Z=V(y_0)\subseteq\PP^n$ the point $(1:0:\cdots:0)\times(0:1:0:\cdots:0)$ satisfies the display and is not in $Y\times Z$, its first factor lying outside $Y$. The statement that is true holds each $F_i$ under the substitution in every column and each $G_j$ in every row, since on the image of the Segre map a relation $F_i(a)=0$ is equivalent to $b_j^{d_i}F_i(a)=0$ for each nonzero $b_j$. What the source therefore publishes and what was checked against this card is the open case it states last, $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is part (a) once $Y\times Z$ is known to be a variety, and the universality of the two projective spaces; parts (a) and (b) for subvarieties are steps [](#s2){.pf-ref} and [](#s3){.pf-ref} here, and part (c) for quasi-projective factors is step [](#s4){.pf-ref} together with the irreducibility of $X\times Y$ that makes it an object of Hartshorne's category, which is step [](#s2){.pf-ref} and is in no source found.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 3.16.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, text version `tmp/sources/hartshorne-solutions-troiani.md`: for (a) and (b) he writes $X=Z(\mathfrak a)$, $Y=Z(\mathfrak b)$ and forms, for $f_1\in\mathfrak a$ and $f_2\in\mathfrak b$, the polynomial $g(\{z_{ij}\})=\sum_{i,j}\alpha_{ij}z_{ij}$ from the expansion of $f_1(x)f_2(y)$, so that $f_1(P_1)f_2(P_2)=0$ exactly when $g(\psi(P_1,P_2))=0$; he does not treat (c).
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.16, PDF p. 36, text version `tmp/sources/hartshorne-solutions-egbert.md`: $X\times Y=(X\times\PP^m)\cap(\PP^n\times Y)=\pi_m^{-1}(X)\cap\pi_n^{-1}(Y)$, and (b) "similar", with no (c).
 The proof above constructs the two ambient projections on the Segre charts first, then gets (a) as local closedness together with irreducibility chart by chart, (b) as closedness in the projective variety $S$, and (c) as the affine universal property transported along those charts; the published sets reach (a) and (b) only, and neither writes the projections as morphisms.
-Bertram's Proposition 4.3 proves (c) as well, so (c) is no longer only supplied here.
+Bertram's Proposition 4.3 proves (c) for two projective spaces, so that case is no longer only supplied here; the subvariety case and the irreducibility that Hartshorne's category needs remain the card's, as the entry above says.
 :::
 
 ::: {.remark}
