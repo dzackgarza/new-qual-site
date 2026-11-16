@@ -77,6 +77,16 @@ audit:
     the four-quarter verification written out on the card — are recorded as holding. Not checked
     in this pass: the pagination of the 2008 bound volume, the pages quoted being those of the
     Ranicki translation's printed folios.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass: the phrase "the Ranicki translation's printed folios" at the end
+    of the `source-corrected` event of this date is false and is withdrawn. tom Dieck's *Algebraic
+    Topology* (EMS Textbooks in Mathematics, 2008) is his own English text; "ranicki" is only in the
+    file name of the reading copy, `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and names no
+    translator. The pages quoted are those of tom Dieck's own printed folios, and every citation on
+    the card already names the reading copy. Nothing in the statement or the proof changes.
 review: draft
 ---
 
