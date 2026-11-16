@@ -56,6 +56,31 @@ audit:
     partial group law requires the general position of the points on the
     cubic; the printed exercise leaves it to the construction, and neither
     published treatment separates the cases.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (b) transcribed for issue #121 from the published solution: Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
+    Exercise 4(b) (Tzu-Yang Chou), PDF p. 16 of
+    tmp/sources/ntu-ag2-chapter5.pdf, read in the extraction
+    tmp/sources/ntu-ag2-chapter5.md. Its configuration is now the one on the
+    card: P, Q, U regular points, R = P*Q, T = P0*R, V = T*U, W = P0*V,
+    X = Q*U, Y = P*V; part (a) applied to the lines PQR and TUV makes P0, X, Y
+    collinear, and the chain (P+Q)+U = T+U = W = P+Y = P+(Q+U) is step
+    associativity. Supplied on the card: the pairing part (a) is applied with
+    (RT) -> P0, (QU) -> X, (PV) -> Y, which the source leaves to the reader,
+    and the definition of each of the six points in terms of the third-point
+    operation. The source assumes the six lines are defined and the points
+    distinct; the tangent and coincident cases are covered by step
+    collinear-with-multiplicity, as the card records. Checked against
+    Hartshorne V.4.4(b), printed p. 407, and against the book's (II, 6.10.2)
+    and (II, 6.11.4) conventions for the chord-and-tangent law: the group law
+    is X+Y = iota(X*Y) with iota the third point on the line through the
+    inflection point P0, which is how each identity above is read. Yang
+    Pi-Yeh's exercise 5.4.4, printed p. 109, uses a different configuration
+    with the same shape and is not needed. Andrew Egbert's entry for (b),
+    PDF p. 287, is the citation of Silverman-Tate only.
 ---
 
 ::: {.problem}
@@ -329,94 +354,85 @@ two-line recipe defining $X+Y$.
 :::
 
 ::: {.pf-step #two-collinear-triples}
-Fix regular points $P,Q,R$ and define
+Let $P,Q,U$ be regular points of $C$ and define
 $$
-A=P*Q,
+R=P*Q,\qquad
+T=P_0*R,\qquad
+V=T*U,\qquad
+W=P_0*V,\qquad
+X=Q*U,\qquad
+Y=P*V.
+$$
+Then
+$$
+P+Q=T,
 \qquad
-B=Q*R,
-$$
-and
-$$
-S=P+Q=\iota(A),
+T+U=W,
 \qquad
-T=Q+R=\iota(B).
+\text{and}
+\qquad
+P*Y=V.
 $$
-Then the triples
-$$
-P,Q,A
-$$
-and
-$$
-T,B,P_0
-$$
-are collinear triples on $C$.
 
 ::: pf-proof
-The first triple is collinear by the definition of $A=P*Q$. For the second,
-$T=\iota(B)=P_0*B$ is by definition the third point on the line through
-$P_0$ and $B$. Hence
+Each of the six points is the third intersection of a named line with $C$,
+which is the configuration of the published proof, PDF p. 16: $R$ on $PQ$,
+$T$ on $P_0R$, $V$ on $TU$, $W$ on $P_0V$, $X$ on $QU$, $Y$ on $PV$.
+
+Since $\iota$ is the third point on the line through $P_0$,
 $$
-T,B,P_0
+P+Q=\iota(P*Q)=\iota(R)=P_0*R=T,
 $$
-are collinear as well.
+and likewise $T+U=\iota(T*U)=\iota(V)=P_0*V=W$. The identity $P*Y=V$ restates
+$Y=P*V$, the third point of the line $PV$ being symmetric in the first two
+points.
 :::
 
 :::
 
 ::: {.pf-step #v-r-s-collinear}
-Let
+With the notation of step [](#two-collinear-triples){.pf-ref},
 $$
-V=P*T
-$$
-be the third point on $PT$. Then
-$$
-\boxed{V,R,S\text{ are collinear}.}
+\boxed{P_0,\ X,\ Y\ \text{are collinear}.}
 $$
 
 ::: pf-proof
-Apply part (a) to the two collinear triples from step [](#two-collinear-triples){.pf-ref}, pairing them as
+Apply part (a) to the two lines
 $$
-(P,Q,A)
+L:\ P,Q,R
 \qquad\text{and}\qquad
-(T,B,P_0).
+L':\ T,U,V,
 $$
-
-The line joining the first pair $P,T$ has third point
+each of which meets $C$ in the three named points. Part (a) joins a point of
+$L$ to a point of $L'$ and takes the third intersection with $C$: for the
+pairs $(R,T)$, $(Q,U)$ and $(P,V)$ those third points are
 $$
-P''=V.
+P_0,\qquad X,\qquad Y,
 $$
-The line joining the second pair $Q,B$ is the same line as $QR$, because
-$B=Q*R$; its third point is therefore
-$$
-Q''=R.
-$$
-Finally, the line joining $A$ and $P_0$ has third point
-$$
-R''=S,
-$$
-because $S=\iota(A)=P_0*A$.
-
-Part (a) now gives the asserted collinearity of
-$$
-V,R,S.
-$$
+by the definitions $T=P_0*R$, $X=Q*U$ and $Y=P*V$ of step [](#two-collinear-triples){.pf-ref}. Part (a)
+states that the three third points are collinear, which is the claim.
 :::
 
 :::
 
 ::: {.pf-step #v-equals-s-star-r}
-The point $V$ is also the third point on the line $SR$:
+With the notation of step [](#two-collinear-triples){.pf-ref},
 $$
-\boxed{V=S*R.}
+\boxed{Q+U=Y}
+\qquad\text{and}\qquad
+\boxed{P+Y=W}.
 $$
 
 ::: pf-proof
-Step [](#v-r-s-collinear){.pf-ref} says that $S,R,V$ lie on one line. A line meets the cubic in a
-degree-three divisor, counted with multiplicity. Since $S$ and $R$ are the
-first two intersections in the chord-and-tangent convention, its third
-intersection is exactly $S*R$. Hence
+By step [](#v-r-s-collinear){.pf-ref}, $P_0$, $X$ and $Y$ are collinear, so $Y$ is the third
+intersection of the line $P_0X$ with $C$, that is, $Y=\iota(X)$. Since
+$X=Q*U$ by step [](#two-collinear-triples){.pf-ref},
 $$
-V=S*R.
+Q+U=\iota(Q*U)=\iota(X)=Y.
+$$
+For the second identity, $P*Y=V$ by step [](#two-collinear-triples){.pf-ref}, so
+$$
+P+Y=\iota(P*Y)=\iota(V)=P_0*V=W. 
 $$
 :::
 
@@ -425,44 +441,27 @@ $$
 ::: {.pf-step #associativity}
 The operation is associative:
 $$
-\boxed{(P+Q)+R=P+(Q+R).}
+\boxed{(P+Q)+U=P+(Q+U)}.
 $$
 
 ::: pf-proof
-Using step [](#group-law-via-star-and-iota){.pf-ref} and the definitions of $S,T,V$,
+Using step [](#two-collinear-triples){.pf-ref} and step [](#v-equals-s-star-r){.pf-ref},
 $$
-\begin{aligned}
-(P+Q)+R
-&=S+R\\
-&=\iota(S*R)\\
-&=\iota(V)
-\end{aligned}
+(P+Q)+U=T+U=W=P+Y=P+(Q+U).
 $$
-by step [](#v-equals-s-star-r){.pf-ref}. On the other hand,
-$$
-\begin{aligned}
-P+(Q+R)
-&=P+T\\
-&=\iota(P*T)\\
-&=\iota(V).
-\end{aligned}
-$$
-Therefore
-$$
-(P+Q)+R=P+(Q+R).
-$$
+This is the chain of the published proof, PDF p. 16.
 
 The tangent interpretation covers the cases in which some of the regular
-points coincide; step [](#collinear-with-multiplicity){.pf-ref} proves part (a) with precisely those intersection
-multiplicities, so the same calculation remains valid.
+points coincide or a joining line is tangent; step [](#collinear-with-multiplicity){.pf-ref} proves part (a) with precisely those
+intersection multiplicities, so the same chain of identities remains valid.
 This proves part (b).
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref}, [](#collinear-with-multiplicity){.pf-ref}, and [](#singular-intersections-by-specialization){.pf-ref} prove the cubic lemma whenever its joining lines are defined, and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
-that lemma to prove associativity of the chord-and-tangent law.
+Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref}, [](#collinear-with-multiplicity){.pf-ref} and [](#singular-intersections-by-specialization){.pf-ref} prove the cubic lemma whenever its joining lines are defined, and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
+that lemma, in the configuration of the published solution, to prove associativity of the chord-and-tangent law.
 :::
 
 :::

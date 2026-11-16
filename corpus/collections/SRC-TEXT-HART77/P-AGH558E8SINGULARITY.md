@@ -68,6 +68,30 @@ audit:
     the corresponding Dynkin diagram", which states the result without the eight
     blowups. Not checked: whether the blowups the card writes are minimal, and
     Park's part (a), which the card already records as stopping there.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read again for issue #121, against the printed exercise (Hartshorne V.5.8,
+    printed p. 420) and the two published sources on the card. Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Exercise 8 of
+    section 5 (Yi-Heng), PDF p. 21 of tmp/sources/ntu-ag2-chapter5.pdf, read in
+    the extraction tmp/sources/ntu-ag2-chapter5.md: its (b) is a list of seven
+    blowups in coordinates, with (iii) branching into two charts and (v) into
+    three germs, then "(vi) ... non-singular", "(vii) this is similar to (vi)"
+    and "(viii) ... non-singular", closing with "the inverse image of P is a
+    union of eight projective lines corresponding to E8". Its four intermediate
+    equations x1^2+zy1^3+z^3, x2^2+z2y1^2+y1z^3, x3^2+z3y1+y1^2z3^3 and
+    x3^2+z2y3^2+y3z2^2 are the card's, and its first chart of the third blowup
+    is the card's first germ. What it does not do: it asserts the
+    non-singularity of the strict transforms rather than checking the charts,
+    it leaves (vii) as "similar", and it states the E8 incidence without
+    computing which exceptional curve meets which. The card's steps supply
+    those. Miles Reid, Chapters on Algebraic Surfaces, Chapter 4, section 4.2,
+    printed p. 82, works the D4 case in full and lists E8: x^2+y^3+z^5 with the
+    Dynkin-diagram statement and no blowups. The remark's opening now says the
+    source computes the blowups and states E8 without deriving it, instead of
+    calling the computation complete.
 ---
 
 ::: {.problem}
@@ -688,7 +712,7 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark title="Published solution"}
-A complete published computation of part (b) exists. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21, records the successive strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi) and (vii)--(viii) resolve those, and "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". The intermediate equations are the card's, and that last sentence is the second request of part (b).
+A published computation of the eight blowups of part (b) exists, and it states the E8 configuration at the end without deriving it. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §5 (solution by Yi-Heng), PDF p. 21, records the successive strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi) and (vii)--(viii) resolve those, and "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". The intermediate equations are the card's, and that last sentence is the second request of part (b).
 
 Miles Reid, *Chapters on Algebraic Surfaces* (arXiv alg-geom/9602006), Chapter 4, §4.2, printed p. 82, carries out the $D_4$ resolution in full, including the divisor computation $2\Gamma_0^2+4=0$ that gives $\Gamma_0^2=-2$, and lists the equations $A_n:x^2+y^2+z^{n+1}$, $D_n:x^2+y^2z+z^{n-1}$, $E_6:x^2+y^3+z^4$, $E_7:x^2+y^3+yz^3$, $E_8:x^2+y^3+z^5$, with "the resolution is a bunch of $-2$-curves whose configuration is given by the corresponding Dynkin diagram"; that is the result of part (b) without the eight blowups.
 :::

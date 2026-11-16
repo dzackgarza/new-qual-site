@@ -41,6 +41,35 @@ audit:
     d'=2d-(m_1+m_2+m_3)>=d+1. The final orbit argument uses actual terminal
     exceptional divisors pulled back to the original blowup, so distinct
     lattice classes give distinct (-1)-curves on the fixed surface.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Checked for issue #121 against the printed exercise, Hartshorne V.4.15,
+    printed pp. 423-424 (its parts (a)-(e), the starred (e) last). Rechecked
+    the decisive computations of the card's own proof. degree-bound-nonneg-square:
+    with c = b_3, at most six of the b_i are at least 3 in index, so
+    sum b_i^2 <= (a-2c)^2 + 7c^2 = a^2 - 4ac + 11c^2, and 3c <= a gives
+    11c < 4a; verified. r7-classes-fifty-six: (3a-1)^2 <= 7(a^2+1) gives
+    a^2-3a-3 <= 0, so a <= 3, and the three rows give 7 + 21 + 21 + 7 = 56.
+    r8-classes-two-forty: a <= 6 with the Cauchy-Schwarz equality case excluded
+    because 5/2 is not an integer, and the seven rows give
+    8+28+56+56+56+28+8 = 240; both sums and each row's multinomial count were
+    recomputed. negative-curve-is-minus-one-curve: the descent
+    a' = 2a-b_1-b_2-b_3 < a with b_i+b_j <= a is the standard quadratic
+    transformation of an irreducible plane curve, and the process stops at
+    plane degree 0, an exceptional divisor. r7-classes-realized-unique: two
+    distinct irreducible curves in one class would have intersection -1, which
+    is impossible on a smooth surface. Parts (a) and (c) were read but not
+    re-derived: their steps are six-points-general-position-iff,
+    six-point-condition-preserved, uncountable-field-lemma,
+    bad-locus-proper-closed and dense-general-position-extension. Published
+    sources read for this card and what each has: Egbert, printed p. 294,
+    parts (a)-(d) with (d) as a list of eight families and no proof that no
+    other negative curves exist, and (e) as a citation of Nagata; Dolgachev,
+    Proposition 8.2.15, printed pp. 261-262, the count of (-1)-classes only;
+    Yang Pi-Yeh, printed p. 112, (a)-(c) sketched, (d) the same two sums
+    without the negative-curve assertion, (e) argued. No source has all five.
 ---
 
 ::: {.problem}
@@ -797,4 +826,6 @@ pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag
 `tmp/sources/dolgachev-topics-classical-ag.pdf`, classifies and counts the classes with $K_X\cdot v=-1$ and
 $v^2=-1$ --- the $(-1)$-classes on the blowup of $\PP^2$ at $N$ points --- at $56$ for $N=7$ and $240$ for $N=8$.
 That is the counting half of part (d) and nothing else of the exercise; the exercise stays open on it.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the seven rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
 :::

@@ -143,6 +143,36 @@ audit:
     the closing step's reference is to that identification, and a symbol is
     still read off the page image. Nothing else on these pages differs. The
     remark cites the text version beside the PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (b) closed for issue #121 on a published proof that carries the
+    decisive step: M. Riman, The Vanishing of the Brauer Group of a del Pezzo
+    Surface of Degree 4, PhD dissertation, University of Washington, 2019,
+    Theorem 2.2.7, stated on printed p. 19 and proved on printed pp. 20-21
+    (printed page = PDF page minus 7; saved as
+    tmp/sources/riman-2019-del-pezzo-degree-four.pdf). Read in a pdftotext
+    extraction of that PDF, used as a page locator. The steps of the card are
+    its proof: h^0(X,O(-2K_X)) = 13 from Riemann-Roch with Kodaira vanishing
+    (his (2.2) at m = -2, K^2 = 4); h^0(I_X(2)) >= 15 - 13 = 2 from the
+    standard exact sequence; and X = Q cap Q' from deg X = 4 = deg(Q cap Q').
+    Two of its passages are garbled and the card records the repairs: the
+    exclusion of a reducible quadric, which it does through "Klein's theorem"
+    and with "since Q is assumed to be irreducible" written where the argument
+    needs the opposite, and the closing degree count, which is asserted. His
+    Lemma 2.2.8, printed pp. 19-20, gives the nondegeneracy used in the first
+    repair, |-K_X| separating points and tangent vectors. Checked against
+    Hartshorne V.4.13(b), printed p. 424 with the construction of X in (4.7),
+    printed p. 416: the exercise's X is the anticanonical model of the
+    five-point blow-up, so O_X(1) = O_X(H) = O_X(-K_X) and the RR input
+    K^2 = 9 - 5 = 4 is the book's. Also read for this card: Dolgachev, Topics in
+    Classical Algebraic Geometry, Theorem 8.5.1, printed pp. 291-292, which
+    stops at "X is the base locus of a pencil" and is recorded in the remark;
+    Yang Pi-Yeh's 5.4.13(b), printed p. 111, which reaches h^0(I_X(2)) = 2 the
+    same way but needs the surjectivity of H^0(O_P4(2)) -> H^0(O_X(2)), which
+    it does not prove, and then states the conclusion without the degree
+    count; and Egbert, whose V.4.13 closes part (b) only through a star.
 ---
 
 ::: {.problem}
@@ -357,6 +387,11 @@ H^1(X,\OO_X(-3H))^*
 $$
 by [[P-AGH5412KODAIRAVANISH|Exercise V.4.12]], applied to the ample divisor
 $3H$. Thus $h^0(X,\OO_X(2H))=\chi(\OO_X(2H))=13$.
+
+This is the published computation: M. Riman, *The Vanishing of the Brauer
+Group of a del Pezzo Surface of Degree 4* (University of Washington, 2019),
+Theorem 2.2.7, in the proof on printed p. 20, obtains $h^0(X,-2\omega_X)=13$
+from his Riemann--Roch formula (2.1) with $m=-2$ and $K_X^2=4$.
 :::
 
 :::
@@ -389,6 +424,10 @@ from this kernel. Then
 $$
 X\subseteq Q_1\cap Q_2.
 $$
+
+The source states the same count as $h^0(X,\mathcal I_X(2))\ge 15-13$, printed
+p. 21, and concludes that $X$ lies in the intersection of two linearly
+independent quadrics.
 :::
 
 :::
@@ -405,6 +444,14 @@ would be contained in one of those two linear subspaces. This is impossible:
 the complete anticanonical linear system embeds $X$ nondegenerately in
 $\PP^4$. Hence $Q_1,Q_2$ form a regular sequence and their intersection is a
 pure surface complete intersection.
+
+The source excludes a reducible member instead, and its wording is garbled: it
+supposes one quadric $Q$ reducible, invokes "Klein's theorem" for a
+factorization $X=Q\cap V$ with $V$ a hypersurface, and writes "since $Q$ is
+assumed to be irreducible" where the argument needs the opposite (printed
+pp. 20--21). The conclusion is the one above: a reducible quadric is a union of
+two hyperplanes, an irreducible surface inside that union lies in one of them,
+and $X$ is nondegenerate in $\PP^4$.
 :::
 
 :::
@@ -434,6 +481,10 @@ the irreducible reduced surface $X$, the component of $Y$ supported on $X$
 already contributes at least $\deg X=4$ to the degree of $Y$. Equality of the
 degrees leaves neither another two-dimensional component nor a nonreduced
 multiplicity along $X$. Thus $Y=X$ as schemes.
+
+This is the source's closing step, "So $X=Q\cap Q'$ in $\PP^4$" (printed
+p. 21), which rests on the two degrees being $4$; the source leaves the count
+of components implicit, and the paragraph above states it.
 
 Therefore $X$ is the complete intersection of two quadric hypersurfaces in
 $\PP^4$, proving part (b).
@@ -506,4 +557,32 @@ concludes that $X$ is a complete intersection. His surjectivity line, "This ends
 in 0 since $H^1(\PP^4,\OO_{\PP^4}(-2))=0$", cites the vanishing of a group the
 sequence does not need; what the surjectivity requires is
 $H^1(\PP^4,\mathcal I_X(2))=0$.
+:::
+
+::: {.remark title="Published solution"}
+A published proof of part (b) that carries the decisive step exists. M. Riman,
+*The Vanishing of the Brauer Group of a del Pezzo Surface of Degree 4*, PhD
+dissertation, University of Washington, 2019, Theorem 2.2.7, stated on printed
+p. 19 and proved on printed pp. 20--21 (saved as
+`tmp/sources/riman-2019-del-pezzo-degree-four.pdf`), proves that a del Pezzo
+surface of degree $4$ is a smooth complete intersection of two quadrics in
+$\PP^4$. Its proof is the sequence of steps [](#h0-two-h-thirteen){.pf-ref} to
+[](#x-is-complete-intersection){.pf-ref}: Riemann--Roch with Kodaira vanishing
+on a del Pezzo surface gives $\chi(\OO_X)=1$ and $h^0(X,\OO_X(-2K_X))=13$
+(his equation (2.2) with $m=-2$); the exact sequence
+$$
+0\longrightarrow\mathcal I_X(2)\longrightarrow\OO_{\PP^4}(2)
+\longrightarrow\OO_X(2)\longrightarrow0
+$$
+then gives $h^0(X,\mathcal I_X(2))\ge15-13=2$, so $X$ lies in the intersection
+of two independent quadrics $Q,Q'$; and the conclusion $X=Q\cap Q'$ rests on
+$\deg X=4=\deg(Q\cap Q')$. Two passages of it are garbled and are repaired on
+the steps: the exclusion of a reducible quadric, which he does through what he
+calls Klein's theorem and with "since $Q$ is assumed to be irreducible" written
+where the argument needs the opposite, and the closing degree count, which is
+asserted rather than counted. His Lemma 2.2.8, printed pp. 19--20, supplies the
+nondegeneracy of $X$ in $\PP^4$ that the first repair uses: $\abs{-K_X}$ separates
+points and tangent vectors, so the anticanonical map is an embedding. The
+embedding is also (4.7) of the book, printed p. 416, which the exercise is
+about.
 :::
