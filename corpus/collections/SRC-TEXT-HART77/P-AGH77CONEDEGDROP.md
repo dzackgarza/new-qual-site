@@ -75,14 +75,14 @@ audit:
   date: 2026-11-16
   note: >-
     Record of a date, on the reader's report of issue #121's fourth pass. The
-    event above is dated 2026-11-17 and was written and committed on
-    2026-11-16, in 0005c982e3 (committer date 2026-11-16 07:19:12); a record
-    carries the day of the commit that lands it, so 2026-11-16 is its date. It
-    is left unedited, as a dated event must be, and its content stands: the
+    event above was written and committed on 2026-11-16, in 0005c982e3
+    (committer date 2026-11-16 07:19:12), and its date field said 2026-11-17, a
+    day that had not happened; a record carries the day of the commit that
+    lands it, so that field says 2026-11-16 now, and its text stands: the
     2026-11-11 note is restored to the text it had on its date, a point has
     degree 1 because its Hilbert polynomial is the constant 1, and Borcherds's
-    dimension-zero sentence is vacuous rather than false. This event is the
-    record of the date, and nothing else on the card changed.
+    dimension-zero sentence is vacuous rather than false. This event records the
+    date, and nothing else on the card changed.
 - event: source-corrected
   by: claude
   date: 2026-11-16

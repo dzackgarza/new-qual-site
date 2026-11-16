@@ -100,14 +100,14 @@ audit:
   date: 2026-11-16
   note: >-
     Record of a date, on the reader's report of issue #121's fourth pass. The
-    event above is dated 2026-11-17 and was written and committed on
-    2026-11-16, in a9d902a1a9 (committer date 2026-11-16 07:15:38); a record
-    carries the day of the commit that lands it, so 2026-11-16 is its date. It
-    is left unedited, as a dated event must be, and its content stands: the
+    event above was written and committed on 2026-11-16, in a9d902a1a9
+    (committer date 2026-11-16 07:15:38), and its date field said 2026-11-17, a
+    day that had not happened; a record carries the day of the commit that
+    lands it, so that field says 2026-11-16 now, and its text stands: the
     2026-11-16 solution-written note is restored to the text it had on its
     date, and step field-automorphism-fractional-linear has p and q of degree
-    at most 1 rather than linear. This event is the record of the date, and
-    nothing else on the card changed.
+    at most 1 rather than linear. This event records the date, and nothing else
+    on the card changed.
 - event: source-corrected
   by: claude
   date: 2026-11-16

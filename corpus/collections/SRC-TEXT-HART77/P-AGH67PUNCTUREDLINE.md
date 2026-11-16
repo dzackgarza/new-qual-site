@@ -145,17 +145,15 @@ audit:
   date: 2026-11-16
   note: >-
     Record of a date, on the reader's report of issue #121's fourth pass. The
-    two events above are dated 2026-11-17 and were written and committed on
-    2026-11-16: the (bc) mislabel in a9d902a1a9 (committer date 2026-11-16
-    07:15:38), and the four repairs of the (ab), (bc), (cd) computation, the
-    normalizing composite rho o phi^{-1}, the three retained sets and the
-    Cutrone--Marshburn punctuation in 27598ae933 (2026-11-16 07:30:29). A
-    record carries the day of the commit that lands it, so 2026-11-16 is
-    their date. They are left unedited, as dated events must be, and their
-    content stands: the three transpositions are (ab), (bc), (cd), the
-    normalizing map of [phi a, phi b, phi c, phi d] is rho o phi^{-1}, and the
-    threshold line and the quotation are as they state. This event is the
-    record of the dates, and nothing else on the card changed.
+    two events above were written and committed on 2026-11-16, in a9d902a1a9
+    (committer date 2026-11-16 07:15:38) for the (bc) mislabel and in
+    27598ae933 (2026-11-16 07:30:29) for the four repairs, and both date fields
+    said 2026-11-17, a day that had not happened; a record carries the day of
+    the commit that lands it, so both say 2026-11-16 now, and their text stands:
+    the three transpositions are (ab), (bc), (cd), the normalizing map of
+    [phi a, phi b, phi c, phi d] is rho o phi^{-1}, and the threshold line and
+    the Cutrone--Marshburn quotation are as they state. This event records the
+    dates, and nothing else on the card changed.
 - event: source-corrected
   by: claude
   date: 2026-11-16
