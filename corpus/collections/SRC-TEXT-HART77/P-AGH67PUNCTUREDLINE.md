@@ -329,10 +329,13 @@ audit:
     that argue the extension (Borcherds PDF p. 8, Egbert PDF p. 55, Shichijo
     printed pp. 5-6) and the two propositions of the book it applies. (3) The
     counterexample now meets the printed hypothesis that all P_i and Q_j be
-    distinct: it takes P = {0,1,lambda} and Q_mu = {2,3,mu} with the six points
-    distinct, and reaches the cross-ratio condition through tau(x) = (x-2)/2
-    carrying infinity, 2, 3 to infinity, 0, 1; the earlier form took
-    {0,1,lambda} and {0,1,mu}, which share 0 and 1. (4) Kock's sentence that
+    distinct: it takes P = {0,1,lambda} and Q_mu = {a,b,mu} with the six points
+    distinct, a and b being any two points of k outside {0,1}, and reaches the
+    cross-ratio condition through tau(x) = (x-a)/(b-a) carrying infinity, a, b
+    to infinity, 0, 1. The earlier form took {0,1,lambda} and {0,1,mu}, which
+    share 0 and 1; an intermediate form wrote the two points as 2 and 3, which
+    collapse onto 0 in characteristic 2 and characteristic 3, so a and b are
+    named instead. (4) Kock's sentence that
     projectivities preserve cross ratios is placed in the paragraph before
     display (8), printed p. 5, as it stands there; the earlier text, and the
     audit event of this date that repeated it, said "after (8)". (5) The claim
@@ -479,13 +482,13 @@ Conversely, any fractional linear transformation carrying one displayed finite s
 The converse to $r=s$ is false in general.
 
 ::: pf-proof
-Take $r=s=3$, and fix distinct $\lambda,2,3\in k$ with $\lambda\notin\{0,1\}$. Put
+Take $r=s=3$. Fix $\lambda,a,b\in k$ with $\lambda\notin\{0,1\}$ and $a,b$ distinct and outside $\{0,1\}$, which is possible because $k$ is infinite. Put
 $$
 P=\theset{0,1,\lambda},
 \qquad
-Q_\mu=\theset{2,3,\mu}
+Q_\mu=\theset{a,b,\mu}
 $$
-for $\mu\in k$ with $\mu\notin\{0,1,2,3,\lambda\}$, so that the six points are distinct and $P\cap Q_\mu=\varnothing$, as the exercise requires.
+for $\mu\in k$ with $\mu\notin\{0,1,\lambda,a,b\}$, so that the six points are distinct and $P\cap Q_\mu=\varnothing$, as the exercise requires.
 
 Write $[a,b,c,d]$ for the image of $d$ under the unique fractional linear transformation carrying $a,b,c$ to $\infty,0,1$. Kock, *Abstract Projective Lines* (4 December 2009), Theorem 1, printed p. 6, is that existence and uniqueness in general form, for the projective line over any field: for three distinct points $A,B,C$ of one projective line and three distinct points $A',B',C'$ of another there is a unique projectivity carrying $A$ to $A'$, $B$ to $B'$ and $C$ to $C'$.
 The case needed here, which is the card's own: a fractional linear transformation $x\mapsto(\alpha x+\beta)/(\gamma x+\delta)$ fixing $\infty$ forces $\gamma=0$, then fixing $0$ forces $\beta=0$, and then fixing $1$ forces $\alpha=\delta$; so the transformation fixing $\infty$, $0$ and $1$ is the identity, and an element of $\PGL(1)$ is determined by its values at three distinct points.
@@ -533,10 +536,10 @@ $$
 \frac{\lambda-1}{\lambda}.
 $$
 
-Now let $\tau\in\PGL(1)$ carry $\infty,2,3$ to $\infty,0,1$, that is $\tau(x)=(x-2)/(3-2)$.
-By step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} the two punctured lines are isomorphic exactly when some fractional linear transformation carries $\{\infty\}\union P=\{\infty,0,1,\lambda\}$ onto $\{\infty\}\union Q_\mu=\{\infty,2,3,\mu\}$, and by the invariance above that happens exactly when $\lambda$ is the cross ratio of some ordering of $\{\infty,2,3,\mu\}$; applying $\tau$ to the four entries, exactly when $\lambda$ is the cross ratio of some ordering of $\{\infty,0,1,\tau(\mu)\}$, that is exactly when $\tau(\mu)$ is one of the six values attached to $\lambda$; the six values attached to a point are its orbit under the substitutions $\nu\mapsto1/\nu$ and $\nu\mapsto1-\nu$, which generate a group, so $\lambda$ lies among the six values attached to $\nu$ exactly when $\nu$ lies among the six values attached to $\lambda$.
+Now let $\tau\in\PGL(1)$ carry $\infty,a,b$ to $\infty,0,1$, that is $\tau(x)=(x-a)/(b-a)$.
+By step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} the two punctured lines are isomorphic exactly when some fractional linear transformation carries $\{\infty\}\union P=\{\infty,0,1,\lambda\}$ onto $\{\infty\}\union Q_\mu=\{\infty,a,b,\mu\}$, and by the invariance above that happens exactly when $\lambda$ is the cross ratio of some ordering of $\{\infty,a,b,\mu\}$; applying $\tau$ to the four entries, exactly when $\lambda$ is the cross ratio of some ordering of $\{\infty,0,1,\tau(\mu)\}$, that is exactly when $\tau(\mu)$ is one of the six values attached to $\lambda$; the six values attached to a point are its orbit under the substitutions $\nu\mapsto1/\nu$ and $\nu\mapsto1-\nu$, which generate a group, so $\lambda$ lies among the six values attached to $\nu$ exactly when $\nu$ lies among the six values attached to $\lambda$.
 
-Because the algebraically closed field $k$ is infinite, choose $\mu\notin\{0,1,2,3,\lambda\}$ with $\tau(\mu)$ outside those six values; then no fractional linear transformation carries $\{\infty\}\union P$ onto $\{\infty\}\union Q_\mu$, and
+Because the algebraically closed field $k$ is infinite, choose $\mu\notin\{0,1,\lambda,a,b\}$ with $\tau(\mu)$ outside those six values; then no fractional linear transformation carries $\{\infty\}\union P$ onto $\{\infty\}\union Q_\mu$, and
 $$
 \AA^1\setminus P
 \not\cong
