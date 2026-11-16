@@ -69,7 +69,7 @@ audit:
     not transcribed.
 - event: source-corrected
   by: claude
-  date: 2026-11-16
+  date: 2026-11-17
   note: >-
     Reader's report on issue #121, third pass. The repair of the 2026-11-16
     note's three defects was applied but never committed, so it is committed
@@ -199,6 +199,24 @@ audit:
     claim beyond introducing the comparison with Hartshorne that the sentence
     still makes. Nothing else on the card changes in this pass, and no page
     was re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events. Commit
+    d6dd20ac0c (committer date 2026-11-16 09:00:13) changed the third-pass
+    event's date from 2026-11-17 to 2026-11-16, in the same diff that added the
+    fourth-pass event. A dated event is never edited: its day is part of the
+    record, and a correction is a new event of the commit's date. The field is
+    therefore restored here to 2026-11-17, the day that event's author wrote;
+    the commit that landed it is 4ace5f19b8 (committer date 2026-11-16
+    07:30:21), a day earlier than the date it carries, and that is the record.
+    Its text is unchanged, and so is the fourth-pass event's text, whose item
+    (2) records what d6dd20ac0c did: that item's "it says 2026-11-16 now"
+    describes the state this event restores to 2026-11-17. The fourth-pass
+    event's corrected attribution is untouched: the II.3.15 COMPLAINTS.md edits
+    entered through 89d13d01e14. Nothing in the problem, the solution or the
+    pages changes, and no page was re-read.
 
 ---
 
