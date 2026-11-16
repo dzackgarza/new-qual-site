@@ -421,7 +421,7 @@ The secant variety of the Veronese surface has dimension at most $4$.
 
 J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, on $X=\nu_2(\PP^2)\subset\PP^5$: "suppose that $r\in\PP^5$ is a general point lying on a secant line to $X$; we may write the secant line as $\overline{\nu(p),\nu(q)}$ for some pair of points $p,q\in\PP^2$. Now, the line $L=\overline{pq}\subset\PP^2$ is carried, under the Veronese map $\nu$, to a plane conic curve $C\subset X\subset\PP^5$, and since $r\in\overline{\nu(p),\nu(q)}$, $r$ will lie on the plane spanned by $C$. But then every line through $r$ in that plane will be a secant line to $C$, and hence to $X$. In particular, it follows that a general point lying on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. We may deduce from this that the dimension of $S(X)$ is at most $4$."
 
-The deduction he names is the fibre inequality of his Proposition 11.24 at $k=2$: the incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$, and over the general point of $S(X)$ its fibre is the one-dimensional family above, so $\dim S(X)\le5-1=4$.
+The deduction he names is the fibre inequality of his Proposition 11.24 at $k=2$: the incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$, and over the general point of $S(X)$ its fibre is the one-dimensional family of secant lines through that point, so $\dim S(X)\le5-1=4$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, entry 4.3.21, printed p. 223, prints the same bound from the same argument: after "Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$" he writes "Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$."
 
@@ -507,7 +507,7 @@ This is the projection asserted in (b).
 ::: pf-qed
 
 Steps [](#secants){.pf-ref}, [](#tangent-locus){.pf-ref}, [](#centre){.pf-ref}, [](#lemma-criterion){.pf-ref} and [](#corollary){.pf-ref} give (a): the secant bound is Harris's Proposition 11.24 with the card's own incidence count beside it in step [](#secants){.pf-ref}, the tangent bound, the lemma on isomorphic embeddings with its Nakayama proof and Corollary 2.7 are Shafarevich's, and step [](#corollary){.pf-ref} concludes the closed immersion into $\PP^{n-1}$.
-Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} prove that each point of every secant line of the Veronese surface lies on infinitely many secant lines, steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref} compute the dimension of its secant variety, and step [](#closed-immersion-b){.pf-ref} gives the closed immersion into $\PP^4$ that (b) asks for.
+Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} prove that each point of every secant line of the Veronese surface lies on infinitely many secant lines, steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref} transcribe Harris's and Egbert's two bounds on the dimension of its secant variety and conclude it, and step [](#closed-immersion-b){.pf-ref} gives the closed immersion into $\PP^4$ that (b) asks for.
 
 :::
 
