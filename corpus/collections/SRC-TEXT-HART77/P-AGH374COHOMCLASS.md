@@ -358,9 +358,7 @@ audit:
     which additionally records that the point trace is a normalization
     (t_P(1) can be any element of k^*) and that the exercise needs
     t_P(1) = 1. (c) is published by Yang and Kim as the computation
-    dlog(fg) = dlog f + dlog g; Kim alone cites Exercise III.4.5 there,
-    which the earlier wording of this event got wrong, Yang's entry
-    carrying no citation.
+    dlog(fg) = dlog f + dlog g with the citation of Exercise III.4.5.
     Parts (b) and (d) remain without a published proof: Yang's (b) moves
     the count back to P^n by citing his own 3.7.3, a different
     identification, and his (d) is a computation in homogeneous
@@ -392,6 +390,29 @@ audit:
     (printed p. N is PDF p. N+15): III.7.4 on printed pp. 249--250, whose
     (c) cites Exercise III.4.5. Not checked: no source was re-read beyond
     the passages quoted, and no step was re-derived.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rule that a dated event is never
+    edited. The event of 2026-11-16 above whose note begins "Transcription
+    pass for issue #121" was rewritten in place by commit 20dcbc5d82, and it
+    is restored to the text it carried when written in 448470f1a6. What the
+    restored text gets wrong is corrected here, in its own words: it reads
+    (c) as "the computation dlog(fg) = dlog f + dlog g with the citation of
+    Exercise III.4.5", which attributes the citation to both sources. Only
+    Kim cites it; Yang gives the computation with no citation, and the
+    exercise's own statement of III.7.4(c) is where the book makes the
+    citation. The remark of the card already says so, and no rendered text
+    changes with this event. Checked in this pass: Yang Pi-Yeh, Solution
+    3.7.4(c), printed p. 75 of tmp/sources/lfwin-hartshorne-solutions.md,
+    whose entry carries the computation and no citation, and Kim's Exercise
+    3.7.4(c) in tmp/sources/hartshorne-solutions-kim.md, PDF p. 170, which
+    cites Exercise III.4.5; and the printed exercise in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, printed pp. 249--250,
+    whose (c) names Exercise III.4.5. Not checked: no step was re-derived,
+    and no source beyond those two passages was read.
 
 ---
 

@@ -155,6 +155,32 @@ audit:
     one, since the projection to the base of a ruling is constant on a slice.
     Not checked: whether some published treatment bounds D^2 uniformly for a
     surface whose K_X is not nef; the card's step s4 does, as its own argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Restored steps s4 and s5 on 2026-11-16 to the argument the card carried
+    before this batch, on the reader's report, and left every event above as
+    written. Step s4 is the ball estimate on the class of one irreducible curve
+    C with 1 at most C.H at most d: adjunction C^2 + K.C at least -2, the
+    decomposition of C and of K_X along H, and Cauchy-Schwarz on H^perp bound
+    the H^perp-component, and the coefficient of H is bounded by d. Step s5 is
+    the count: for D = sum n_iC_i, every C_i.H is between 1 and d and sum n_i
+    is at most d, so [D] is a finite sum of elements of the finite set of step
+    s4. Both steps are the card's own and need no sign condition. The two
+    pieces this batch's repair had written in their place are withdrawn: the
+    claim that D^2 is bounded below by a constant -C_d, and a step that ran the
+    answer's ball argument on that bound; its sentence "Adding the inequalities
+    of step s3, or the bound -C_d of step s4, ... gives [the display]" was
+    false, since only step s3 gives that display, the bound -C_d giving instead
+    (D-E)^2 at least -2v.E - C_d - E^2 with v = D-E, a different affine bound.
+    Part (a) for a surface with a component of negative K_X-degree therefore
+    rests again on the card's steps s4 and s5 and on no published argument. In
+    step s10 the reason "D maps finitely to both factors" is withdrawn: it is
+    false for the rulings, whose projection to the second factor is constant,
+    and the sentence now says that D is not a point under both projections, so
+    the two degrees sum to at least one. Not checked: whether a published
+    treatment of part (a) covers a component of negative K_X-degree.
 
 ---
 
@@ -242,7 +268,7 @@ which follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, and the constant term use
 $$
 \sum_i-b_i^2\qty(D_i\cdot K_X+2)\ge-\sum_ib_idD_i\cdot K_X-2d^2=-d\,D\cdot K_X-2d^2 .
 $$
-The condition is satisfied in particular when $K_X$ is nef. For a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed, so this derivation does not reach such a surface; step [](#s4){.pf-ref} does.
+The condition is satisfied in particular when $K_X$ is nef. For a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed, so this derivation does not reach such a surface; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} do.
 
 :::
 
@@ -253,7 +279,7 @@ For every integer $d\ge1$ the numerical classes of irreducible curves $C$ with
 $$
 1\le C\cdot H\le d
 $$
-form a finite set, and consequently $D^2$ is bounded below on the effective divisors with $D\cdot H=d$, whatever the signs of the $D_i\cdot K_X$.
+form a finite set.
 
 ::: pf-proof
 This bound is the card's own; it uses neither the sign of $D_i\cdot K_X$ nor the coefficients of step [](#s3){.pf-ref}. Put
@@ -269,25 +295,21 @@ and Cauchy--Schwarz for the positive definite form $(u,v)_+=-u\cdot v$ on $H^\pe
 $$
 \norm{y}^2-\norm{z}\norm{y}\le A_h\coloneqq2+\frac{h^2+h(K_X\cdot H)}{H^2}.
 $$
-The integer $h$ lies in the finite set $\{1,\dots,d\}$, so the left side, which tends to $+\infty$ with $\norm{y}$, bounds $\norm{y}$ by a constant $R_d$ depending on $d$ alone, while the coefficient $h/H^2$ of $H$ is bounded as well. Every class therefore lies in a bounded subset of $N_\RR$, which holds only finitely many lattice points. Applying this to the components of an effective $D$ with $D\cdot H=d$, as in step [](#s5){.pf-ref}, bounds their classes and their number by constants depending on $d$, and $D^2$ by a constant $-C_d$.
+The integer $h$ lies in the finite set $\{1,\dots,d\}$, so the left side, which tends to $+\infty$ with $\norm{y}$, bounds $\norm{y}$ by a constant $R_d$ depending on $d$ alone, while the coefficient $h/H^2$ of $H$ is bounded as well. Every class therefore lies in a bounded subset of $N_\RR$, which holds only finitely many lattice points.
 
 :::
 
 :::
 
 ::: {.pf-step #s5}
-For every integer $d$ there are only finitely many numerical classes of effective divisors $D$ with $D\cdot H=d$.
+For every integer $d>0$ there are only finitely many numerical classes of effective divisors $D$ with $D\cdot H=d$.
 
 ::: pf-proof
-Fix one such divisor $E$, which exists whenever the set is nonempty, and put $v=D-E$ for another; then $v\in H^\perp$ because $D\cdot H=E\cdot H=d$. Adding the inequalities of step [](#s3){.pf-ref}, or the bound $-C_d$ of step [](#s4){.pf-ref}, for $D$ and for $E$ gives
+Write $D=\sum_in_iC_i$ with $n_i>0$ and distinct irreducible $C_i$. Then
 $$
-(D-E)^2\ge(D-E)\cdot(-dK_X-2E)-4d^2-2dE\cdot K_X-2E^2,
+d=D\cdot H=\sum_in_i\qty(C_i\cdot H)
 $$
-the closing display of the answer. Its right hand side is, for fixed $E$, an affine function $\ell(v)+c$ of $v$, so the inequality reads
-$$
-\norm{v}^2\le-\ell(v)-c,
-$$
-which by negative definiteness of the form on $H^\perp$, step [](#s1){.pf-ref}, confines $v$ to a ball of radius determined by $\ell$ and $c$, that is by $d$ and $E$. A bounded subset of $N_\RR$ holds only finitely many lattice points, so only finitely many classes $[D]$ occur.
+with every $C_i\cdot H$ at least $1$, so every component satisfies $1\le C_i\cdot H\le d$ and its numerical class lies in the finite set of step [](#s4){.pf-ref}, which we call $S_d$, and $\sum_in_i\le d$. Hence $[D]$ is a sum of at most $d$ elements of $S_d$, counted with repetition, and there are only finitely many such sums in the abelian group $N$. This counting is the card's own, and it uses only the bound of step [](#s4){.pf-ref}.
 
 :::
 
@@ -358,7 +380,7 @@ Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K
 $$
 K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
-whose two degrees sum to at least one because $D$ maps finitely to both factors.
+whose two degrees sum to at least one: $D$ is a curve, so it is not a point under both projections, and a nonconstant morphism of curves has degree at least one while a constant one has degree $0$.
 
 :::
 
@@ -387,7 +409,7 @@ Each graph $\Gamma_\sigma$ is an effective divisor with $\Gamma_\sigma\cdot K=4g
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeeping; step [](#s3){.pf-ref} is the published bound under its sign condition; step [](#s4){.pf-ref} is the card's own bound, which holds without that condition; steps [](#s5){.pf-ref} to [](#s7){.pf-ref} close part (a). Steps [](#s8){.pf-ref} to [](#s12){.pf-ref} prove part (b) from (a).
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeeping; step [](#s3){.pf-ref} is the published bound under its sign condition; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} are the card's own, a bound on the classes of the components that needs no such condition and the counting over them, and steps [](#s6){.pf-ref} and [](#s7){.pf-ref} close part (a) for $d\le0$ and in general. Steps [](#s8){.pf-ref} to [](#s12){.pf-ref} prove part (b) from (a).
 
 :::
 
@@ -398,7 +420,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeep
 ::: {.remark title="Published solution"}
 Dan Bragg, *Automorphisms of curves* (2015), Proof 2, "Intersection Theory", proves (b) given (a): the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
 
-Math StackExchange answer 4775583 by KReiser, to question 4449474, proves (a) by the route of steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s5){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and two effective divisors of the same $H$-degree differ by a class in $H^\perp$ whose square is bounded below by an affine function of that class, so negative definiteness confines it to a ball. Its bound on $D^2$ is obtained by replacing $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed, and step [](#s4){.pf-ref} supplies the bound for such a surface.
+Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in the form of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and $b_i\le d$ gives $\sum_ib_i^2\le d^2$. Its display for $D^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed. Its closing display bounds $(D-E)^2$ below, for fixed $E$, by an affine function of $D-E$, which with negative definiteness confines $D-E$ to a ball. The card reaches finiteness instead through steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, which bound the class of every prime component with $1\le C\cdot H\le d$ and then count the components, and which are its own.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), takes the same route for (a) but displays the estimate $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$; reaching $\sum_ic_i^2$ through $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, and proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal.
 
