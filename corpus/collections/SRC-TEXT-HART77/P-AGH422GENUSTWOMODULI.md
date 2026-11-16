@@ -116,10 +116,12 @@ audit:
     Hou, printed pp. 4--6 of tmp/sources/ntu-ag2-chapter4.md; and D.
     Gruenewald, Computing Humbert Surfaces, section 2, printed p. 2 of
     tmp/sources/gruenewald-2007-computing-humbert-surfaces.md. Part (a) is on
-    Reiser p. 352 and Hou p. 4, (b) on Reiser p. 353 and Hou pp. 4--5, (c) on
-    Reiser p. 353 and Hou p. 6, (d) on Reiser p. 354 and Hou p. 6, (e) on
+    Reiser p. 353 and Hou p. 4, (b) on Reiser p. 353 and Hou p. 5, (c) on
+    Reiser p. 353 and Hou p. 6, (d) on Reiser pp. 353--354 and Hou p. 6, (e) on
     Reiser p. 354, the single word "Yup!", and on Hou p. 6. Page positions
-    were fixed on the PDFs, by reading the printed folio of each page.
+    were fixed on the PDFs, by reading the printed folio of each page: the
+    folio 352 of Reiser carries the statement of parts (a)--(d) and the solution
+    begins on folio 353.
 
     Two defects of the sources were found while checking them, and are
     recorded in COMPLAINTS.md under this date: Hou's parts (d) and (e) name the
@@ -133,29 +135,28 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    The solution is now the transcription of those sources, one step per
-    published argument, each step naming source, numbered part and printed
-    page: s1 (Reiser IV.2.2(a) printed p. 352; Hou 2(a) p. 4), s2 (Reiser
-    IV.2.2(b) p. 353 with II Ex 7.2, and Reiser's p. 352 sentence), s3
-    (Reiser p. 353; Hou pp. 4--5), s4 (Reiser p. 353; Hou p. 5), s5 (Hou
-    p. 5), s6 (Reiser IV.2.2(c) p. 353; Hou 2(c) p. 6), s7 (Hou 2(e) p. 6),
-    s8 (Reiser IV.2.2(d) p. 354, whose device is the cross-ratio), s10 and
-    s11 (Hou 2(e) p. 6; Gruenewald section 2 p. 2). Step s9 is the card's own
-    and is labelled as such, because Reiser's (e) is the word "Yup!", Hou's
-    (e) proves well-definedness and existence but not that a separable
-    degree-two cover of P^1 is determined by its branch divisor, and
-    Gruenewald states the quotient without proof; its statement is Vakil
-    Proposition 19.5.2, printed pp. 546--547, as the remark says. The earlier
-    steps s1--s5 proved (a) and (b) by Riemann-Hurwitz and Riemann-Roch for
-    Vakil's statements; the same two tools now appear where Reiser and Hou use
-    them, and the Vakil page references that were in the steps moved to the
-    remark. Checked against the book after the transcription: (a)'s "ramified
-    at exactly 6 points, with ramification index 2 at each one" and its
-    uniqueness clause, (b)'s three assertions, (c)'s uniqueness of the
-    normalization, and (d)'s Sigma_6 action as printed. Not checked: the
-    sources' own citations of the book (IV.1.7, II.7.2, I.6.6, IV.1.2) beyond
-    the statements they quote from it.
-
+    Corrected in this same session after a reader's report, which found the
+    first version of this event claiming a step as the card's own that Vakil
+    proves, and three page slips. What the card now has, step by step: s1
+    (Reiser IV.2.2(a), printed p. 353; Hou 2(a), p. 4), s2 (Reiser IV.2.2(b),
+    p. 353, with his p. 353 sentence citing II Ex 7.2), s3 (Reiser p. 353; Hou
+    p. 5, with the normalized chart marked as the card's own), s4 (Reiser
+    p. 353; Hou p. 5), s5 (Hou p. 5), s6 (Reiser IV.2.2(c), p. 353; Hou 2(c),
+    p. 6), s7 (Hou 2(e), p. 6), s8 (Reiser IV.2.2(d), pp. 353--354), s9 (Vakil
+    Proposition 19.5.2, printed pp. 546--547, transcribed), s10 and s11 (Hou
+    2(e), p. 6, and Gruenewald section 2, p. 2). Two errors of the sources are
+    named on the card rather than copied: Reiser's ell(D) = 2 in s2, where the
+    pullback of two sections gives ell(D) >= 2 and the inequality is all the
+    argument uses, and Hou's reading of the group of the action of parts (d) and
+    (e) as S_3, where the action he describes is the Sigma_6 action of the
+    exercise (recorded in COMPLAINTS.md under this date). Both are named in the
+    COMPLAINTS record of this date as well. Checked against the book after the
+    transcription: (a)'s "ramified at exactly 6 points, with ramification index
+    2 at each one" and its uniqueness clause, (b)'s three assertions, (c)'s
+    uniqueness of the normalization, and (d)'s Sigma_6 action as printed. Not
+    checked: the sources' own citations of the book (IV.1.7, II.7.2, I.6.6,
+    IV.1.2) beyond the statements they quote from it, and Vakil's 19.5.4 and
+    19.5.7, whose citations are those of the 2026-11-15 events.
 review: draft
 ---
 
@@ -185,8 +186,6 @@ Then the last three are the new $\beta_1', \beta_2', \beta_3'$.
 :::
 
 ::: {.solution}
-Every step below is the published argument and names the source it transcribes: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2, printed pp. 352--354, text version `tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, whose printed folio is one less than its PDF page; Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6, text version `tmp/sources/ntu-ag2-chapter4.md`; and D. Gruenewald, *Computing Humbert Surfaces*, §2, printed p. 2, text version `tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`. Parts (a)--(d) are Reiser's and Hou's; the correspondence of part (e) is Hou's, except for the one step marked as the card's own, which neither source proves.
-
 ::: pf
 
 ::: {.pf-step #canonical-degree-two}
@@ -201,7 +200,7 @@ each.
 
 ::: pf-proof
 
-Reiser, Exercise IV.2.2(a), printed p. 352: the existence and the degree are
+Reiser, Exercise IV.2.2(a), printed p. 353: the existence and the degree are
 [[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]], and because
 $\characteristic k\ne2$ the morphism is separable, so Hurwitz's formula applies
 in the form
@@ -238,14 +237,16 @@ $h^*\mco_{\PP^1}(1)\cong\omega_X$. Write $h^*\mco_{\PP^1}(1)=\mcl(D)$. Then
 $$
 \deg D=2,
 \qquad
-\ell(D)=h^0\bigl(\mcl(D)\bigr)=2,
+\ell(D)=h^0\bigl(\mcl(D)\bigr)\ge2,
 $$
-the second because $h^*\mco_{\PP^1}(1)$ has the two-dimensional space of global
-sections of $\mco_{\PP^1}(1)$. Riemann--Roch on a curve of genus $2$ gives
+the inequality because pulling back the two independent sections of
+$\mco_{\PP^1}(1)$ gives two independent sections of $\mcl(D)$. Reiser prints
+$\ell(D)=2$ here, which the pullback does not give; the inequality is what the
+argument uses. Riemann--Roch on a curve of genus $2$ gives
 $$
 \ell(D)-\ell(K-D)=\deg D+1-g=2+1-2=1,
 $$
-hence $\ell(K-D)=1$, and
+hence $\ell(K-D)=\ell(D)-1\ge1$, and
 $$
 \deg(K-D)=0.
 $$
@@ -258,7 +259,7 @@ and the pencil defining $h$ is the complete canonical pencil. Two sets of
 sections spanning the same subspace of the two-dimensional $H^0(X,K)$ give
 morphisms that differ by an automorphism of $\PP^1$ (II, Ex. 7.2), which is the
 sentence "we may see that $f$ is uniquely determined by exercise II.7.2" at
-Reiser, printed p. 352.
+Reiser, printed p. 353.
 
 :::
 
@@ -303,14 +304,13 @@ is even whatever $g(X)$ is, the six finite points already account for
 $6$, so $e_\infty-1$ is even, while $e_\infty\le2$ because the degree is
 $2$; hence $e_\infty=1$ and $f$ is unramified at infinity.
 
-Hou, §2 Exercise 2(b), printed pp. 4--5, checks the same point in the explicit
-chart: with $y=1/x$ and $\tilde z=x^{-3}z$ the equation reads
-$\tilde z^2=\prod_i(1-\alpha_i y)$, whose value at $y=0$ is $1$, so infinity is
-not a branch point; the printed account writes the transformed equation as
+Hou, §2 Exercise 2(b), printed p. 5, checks the same point by a chart change on
+$\PP^1$, and writes the transformed equation as
 $\tilde z^2=\alpha_1\cdots\alpha_6\tilde h(y)$ with
-$\tilde h(y)=\prod_i(1/\alpha_i-y)$ and separates out the case in which one of
-the $\alpha_i$ is $0$, at printed p. 6 of the extraction, before drawing the
-same conclusion.
+$\tilde h(y)=\prod_i(1/\alpha_i-y)$, separating out the case in which one of the
+$\alpha_i$ is $0$, before drawing the same conclusion. The normalization in
+which the equation reads $\tilde z^2=\prod_i(1-\alpha_i y)$, with value $1$ at
+$y=0$, is the card's own.
 
 :::
 
@@ -444,7 +444,7 @@ $$
 
 ::: pf-proof
 
-Reiser, Exercise IV.2.2(d), printed p. 354. All six entries are distinct, so any
+Reiser, Exercise IV.2.2(d), printed pp. 353--354. All six entries are distinct, so any
 three of them may be sent to $0,1,\infty$ by step
 [](#normalize-three-points){.pf-ref}, uniquely, and the remaining three are
 again distinct and different from $0,1,\infty$: the rule is a well-defined map
@@ -484,49 +484,36 @@ isomorphism over $\PP^1$, by its branch divisor.
 
 ::: pf-proof
 
-This step is the card's own. None of the three sources above proves it: Reiser's
-part (e), printed p. 354, is the single word "Yup!", Hou's part (e), printed
-p. 6, proves well-definedness and existence but not this uniqueness, and
-Gruenewald, printed p. 2, states the resulting quotient without proof. The
-argument below is the one this card has carried since its first version, and
-the statement is
 R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025
 version [@Vak25, Proposition 19.5.2], text version
-`tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--547, where the
-double cover branched at a prescribed set of points is constructed as the
-normalization of $y^2=f(x)$ and is unique.
+`tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--547: for $r$
+distinct points $\mathfrak p_1,\ldots,\mathfrak p_r$ of $\PP^1$ with $r$ even
+there is precisely one double cover branched at precisely those points.
 
-Let $F=k(\PP^1)=k(x)$ and let $L_1/F$ and $L_2/F$ be the function-field
-extensions of two such covers with the same branch locus. Since
-$\characteristic k\ne2$, each quadratic extension has Kummer form
-$$
-L_i=F(\sqrt{d_i})
-$$
-for some $d_i\in F^\times$, determined modulo $F^{\times2}$.
+His proof. Choose $0$ and $\infty$ distinct from the branch points, so that all
+of them lie in $\PP^1\setminus\{\infty\}=\AA^1=\Spec k[x]$. A double cover
+$C'\to\AA^1$ induces a quadratic extension $K/k(x)$, which is Galois because
+$\characteristic k\ne2$; let $\sigma$ be the involution and $y\ne0$ an element
+with $\sigma(y)=-y$, so that $1,y$ is a $k(x)$-basis and $y^2\in k(x)$.
+Replacing $y$ by a suitable $k(x)$-multiple makes $y^2=f(x)$ a monic polynomial
+with no repeated factor, monic because $k$ is algebraically closed. The curve
+$\{y^2=f(x)\}\subseteq\AA^2$ is regular by the Jacobian criterion, hence normal
+and with the same function field as $C'$, so both are normalizations of $\AA^1$
+in $K$ and are isomorphic: over $\AA^1$ every such cover is $y^2=f(x)$. The
+branch points are the values of $x$ over which there is one value of $y$, that
+is, the roots of $f$, so $f=\prod_i(x-\mathfrak p_i)$ and $N=r$.
 
-For a place $P$ of $F$, the extension $F(\sqrt{d_i})/F$ is ramified at $P$
-exactly when $v_P(d_i)$ is odd. Equality of the branch loci therefore implies
-that
+The same argument on the chart $\PP^1\setminus\{0\}=\Spec k[u]$, $u=1/x$, shows
+that any such double cover must be $\Spec k[Z,u]/(Z^2-(u-1/\mathfrak p_1)
+\cdots(u-1/\mathfrak p_r))$, so a double cover of all of $\PP^1$ is obtained by
+gluing the two patches, and in $K(C)$,
 $$
-v_P(d_1/d_2)
+z^2=u^rf(1/u)=f(x)/x^r=y^2/x^r .
 $$
-is even for every $P\in\PP^1$. Hence
-$$
-\div(d_1/d_2)=2D
-$$
-for an integral divisor $D$ of degree $0$ on $\PP^1$. Every degree-zero divisor
-on $\PP^1$ is principal, so $D=\div(g)$ for some $g\in F^\times$, and
-$$
-\div\!\left(\frac{d_1}{d_2g^2}\right)=0,
-$$
-so $\frac{d_1}{d_2g^2}=c$ for some $c\in k^\times$. Because $k$ is
-algebraically closed, $c=a^2$ for some $a\in k^\times$, so
-$d_1=d_2(ag)^2$ and
-$$
-F(\sqrt{d_1})=F(\sqrt{d_2}).
-$$
-The two nonsingular projective curves are consequently isomorphic over $\PP^1$.
-
+For $r$ even the two possible values of $z$ are $\pm y/x^{r/2}$, and after
+renaming $z$ by $-z$ if necessary there is a single way to glue. Hence the cover
+of $\PP^1$, and with it the curve up to isomorphism over $\PP^1$, is determined
+by its branch divisor.
 :::
 
 :::
@@ -630,7 +617,7 @@ Steps [](#canonical-degree-two){.pf-ref} and
 
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. His 19.5.2 is the published statement of the one step of part (e) that Reiser's and Hou's solutions do not prove.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, text version `tmp/sources/hartshorne-solutions-egbert.md`, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::
