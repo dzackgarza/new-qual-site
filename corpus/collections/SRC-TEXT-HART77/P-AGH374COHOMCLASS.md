@@ -434,6 +434,32 @@ audit:
     Not checked: no step was re-derived, no source was re-read, and no search was
     made in this pass.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card only. (i) The head of the
+    solution and the second paragraph of the published-solution remark still said
+    that parts (b) and (d) "have no published proof" and "are not published",
+    which claims more than was established: what the two search passes recorded,
+    here and in the COMPLAINTS entry on III.7.4(b),(d), is that no published proof
+    was found in the sources read and searched. Both sentences now mark the two
+    parts as the card's own and say nothing more; the descriptions they open, of
+    Yang's (b) with its citation to his own 3.7.3, his (d) in homogeneous
+    coordinates by Euler's formula, Kim's fragment of (b) and no (d), and the
+    class-level halves of the Stacks tags with no comparison with the trace of
+    III.7, stand as written, and the closing sentences saying that steps s2, s3,
+    s5 and s6 prove both relative to (R) and (B) are untouched. (ii) The proofs of
+    (a), at the head of step s1 and in the remark, named the text versions of Yang
+    Pi-Yeh, of Kim and of Math StackExchange 1794757,
+    tmp/sources/lfwin-hartshorne-solutions.md, tmp/sources/hartshorne-solutions-kim.md
+    and tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md; those paths
+    stay in the transcription event of even date, which names all three, and the
+    two rendered passages now cite each source by solution, PDF or printed page
+    and, for the MSE answer, by question number, answer author and date
+    (PROSE-11, QUAL-08, SEC-7). No mathematics changes, and no step, page or tag
+    moves. Read in this pass: the two rendered paragraphs and the audit trail of
+    this card; no source was reopened and no step was re-derived.
 ---
 
 ::: {.problem}
@@ -644,8 +670,8 @@ below records what the book does and does not determine.
 Part (a) is proved by Yang, Solution 3.7.4(a), printed p. 75, by Kim,
 Exercise 3.7.4(a), PDF p. 170, and, for the normalization the class needs, by
 the answer of S.M. on Math StackExchange 1794757; part (c) by Yang, Solution
-3.7.4(c), printed p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) are the card's own, and have no
-published proof: Yang's (b) moves the count
+3.7.4(c), printed p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) are the card's own:
+Yang's (b) moves the count
 back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
 his (d) computes in homogeneous coordinates with Euler's formula, so it treats
 $X=\PP^n$ only; Kim writes no (b) beyond a fragment and no (d).  Steps
@@ -690,7 +716,7 @@ $$
 
 ::: pf-proof
 
-This is the published proof of (a), in three forms that agree.  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75: for a point $p=n$, and $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$, the morphism $H^0(X,\OO_X)\to H^0(P,\OO_P)$ "is just the restriction $s\mapsto s_P$, which is just the identity on $k$.  Hence it corresponds to the element $1$ in $H^n(X,\omega_X)\cong k$, i.e. $t_X(\eta(P))=1$".  Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, puts the same argument in the Yoneda pairing: $H^p(X,\OO_X)\times\Ext^{n-p}(\OO_X,\omega_X)\to H^n(X,\omega_X)\xrightarrow{t_X}k$, so for $p=0$ the composite $H^0(X,\OO_X)\xrightarrow{\eta(P)}H^0(X,\OO_X)\times\Ext^n(\OO_X,\omega_X)\to H^n(\omega_X)\xrightarrow{t_X}k$ is "equal to evaluation at $P$", and plugging in $1$ gives $t_X(\eta(P))=1\in k$.  Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, isolates the normalization the third form needs: with $j$ the inclusion of a point, the map of the exercise is $H^0(X,\OO_X)\to H^0(P,\OO_P)$, "which is actually the identity map on $k$", the class $\zeta$ corresponds to $x=i(\zeta)\circ\varphi$ under the double dual of the pairing, and hence $t_P(1)=t_X(\zeta)$; his closing paragraph notes that $t_P(1)$ can be any element of $k^*$ and that the answer requires $t_P(1)=1$.
+This is the published proof of (a), in three forms that agree.  Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), printed p. 75: for a point $p=n$, and $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$, the morphism $H^0(X,\OO_X)\to H^0(P,\OO_P)$ "is just the restriction $s\mapsto s_P$, which is just the identity on $k$.  Hence it corresponds to the element $1$ in $H^n(X,\omega_X)\cong k$, i.e. $t_X(\eta(P))=1$".  Dongryul Kim, Exercise 3.7.4(a), PDF p. 170, puts the same argument in the Yoneda pairing: $H^p(X,\OO_X)\times\Ext^{n-p}(\OO_X,\omega_X)\to H^n(X,\omega_X)\xrightarrow{t_X}k$, so for $p=0$ the composite $H^0(X,\OO_X)\xrightarrow{\eta(P)}H^0(X,\OO_X)\times\Ext^n(\OO_X,\omega_X)\to H^n(\omega_X)\xrightarrow{t_X}k$ is "equal to evaluation at $P$", and plugging in $1$ gives $t_X(\eta(P))=1\in k$.  Math StackExchange 1794757, answer by the account S.M. (2016-05-22), isolates the normalization the third form needs: with $j$ the inclusion of a point, the map of the exercise is $H^0(X,\OO_X)\to H^0(P,\OO_P)$, "which is actually the identity map on $k$", the class $\zeta$ corresponds to $x=i(\zeta)\circ\varphi$ under the double dual of the pairing, and hence $t_P(1)=t_X(\zeta)$; his closing paragraph notes that $t_P(1)$ can be any element of $k^*$ and that the answer requires $t_P(1)=1$.
 
 Here $p=n$, so the functional defining $\eta(P)$ is the composite
 $$
@@ -1067,7 +1093,7 @@ The other side, part (d), is canonical: Appendix A defines the Chern classes in 
 :::
 
 ::: {.remark title="Published solution"}
-Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), text version `tmp/sources/lfwin-hartshorne-solutions.md`, printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), text version `tmp/sources/hartshorne-solutions-kim.md`, PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), text version `tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md`, which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
+Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Parts (b) and (d) are the card's own, and are not published.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed, (b) and (d) being the card's own.
+Parts (b) and (d) are the card's own.  Yang's (b) is the printed hint: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert that the maps $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$ "are just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed, (b) and (d) being the card's own.
 :::
