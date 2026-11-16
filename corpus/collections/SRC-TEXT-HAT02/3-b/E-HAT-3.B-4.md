@@ -112,10 +112,44 @@ audit:
     §3.B entries are pp. 268, 272, 273, 274, 275, 276 (a numbering note about a Corollary 3B.2, absorbed
     in later versions) and 280 (the line before the exercises, and Exercise 5). Nothing in the card's
     proof changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Four defects of this card repaired, three of them in what earlier notes here called the statement
+    and the citations. (1) The printed statement was not word for word: from the card's creation until
+    this pass the `problem` block rendered Hatcher's coefficient ring as $\RR$ --- bold R, the real
+    numbers --- in "closed $\RR$-orientable manifolds", where the book prints $R$. The statement now
+    reads $R$-orientable, as Exercise 4 of §3.B on printed p. 280 has it, read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The "matches the print word for word" claims of
+    the 2026-10-31 and both 2026-11-13 notes were therefore false of the statement as it then stood,
+    and they are true only after this correction. (2) The note of 2026-11-16 said Kottke's set
+    contains "exercises from M&T on pp. 2--3". It does not: the set is Problems 1, 2 and 3 only, on
+    printed pp. 1, 2 and 3, respectively Hatcher 3.B.4, 3.3.21 and 3.B.3. The M&T exercises named in
+    that claim, 8.2, 8.5, 8.6 and 9.1, are in Stanford Math 215C Solution Set 4, printed pp. 2--3, not
+    in Kottke. (3) The errata sentence of the same note was incomplete: Hatcher's errata also carries
+    entries for printed p. 236 (§3.3, "for B any open ball in $M$" to "in $M$ containing $x$"), p. 264
+    (§3.A, $\ker i_{n-1}$ to $\ker(i_{n-1}\otimes 1)$ in the proof of Theorem 3A.3) and p. 529
+    (Appendix, a cross-reference before Corollary A.12 and a revision note after it), as well as the
+    §3.B entries it listed. None of them changes a statement the card cites: the definition of a
+    fundamental class on p. 236, Theorem 3A.3 on p. 264 and Corollary A.12 on p. 529 read as the card
+    uses them. (4) Two uses of a global computation assumed connectedness without saying so. Theorem
+    3.26(a) on printed p. 236 is stated for a closed *connected* manifold, so it gives the isomorphism
+    $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\,||\,(x,y);R)$ only for connected $M$ and $N$; and
+    $H_{m+n}(M\times N;\ZZ)\cong\ZZ$ needs $M$ and $N$ connected as well as $\ZZ$-orientable, an
+    $R$-orientable manifold with $R=\ZZ/2$ such as $\RP^2$ having $H_2(\RP^2;\ZZ)=0$
+    and so no $\ZZ$ fundamental class. The card now states both hypotheses where they are used, and
+    states the componentwise argument by which the exercise's conclusion holds without them, which is
+    also the reason the exercise is printed with no connectedness hypothesis. Nothing is weakened: the
+    conclusion for the exercise as printed is unchanged, and the two paragraphs that need the extra
+    hypothesis are marked as the source's second route, not as steps of the proof. Text versions:
+    Hatcher is cited from `tmp/sources/hatcher-2002-algebraic-topology.md`, and Kottke from the text
+    layer of `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`, which has no `.md` version in
+    `tmp/sources`. Not verified: nothing on this card was read from a rendered page.
 ---
 
 ::: {.problem}
-Show that the cross product of fundamental classes for closed $\RR$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.
+Show that the cross product of fundamental classes for closed $R$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.
 :::
 
 ::: {.solution}
@@ -146,17 +180,19 @@ $$
 $$
 By excision $H_m(M\,||\,x;\ZZ)\cong H_m(D^m,S^{m-1})\cong\ZZ$ and $H_{m-1}(M\,||\,x;\ZZ)=0$, so $H_m(M\,||\,x;R)\cong\ZZ\otimes_\ZZ R=R$, and the generator over $R$ is the image $\zeta_x\otimes 1$ of an integral generator $\zeta_x$; the same holds at $y$. By Proposition 3B.1 and the identification $C_*(X;R)\otimes_R C_*(Y;R)=C_*(X\times Y;R)$ used on printed p. 276, the cross product with coefficients in $R$ is the integral chain-level cross product followed by $-\otimes_\ZZ R$. Hence the local cross product carries $\zeta_x\otimes1$ and $\zeta_y\otimes1$ to $(\zeta_x\times\zeta_y)\otimes1=\pm1$: over $R$ it too is an isomorphism $R\otimes_R R\to R$, and the product of generators is a generator.
 
-*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, and by Theorem 3.26(a) (printed p. 236) the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\,||\,(x,y);R)\cong R$ is an isomorphism.
+*Orientations multiply.* If $x\mapsto\mu_x$ and $y\mapsto\nu_y$ are $R$-orientations of $M$ and $N$, then $(x,y)\mapsto\mu_x\times\nu_y$ is an $R$-orientation of $M\times N$: it is a section of the local system by the two paragraphs above, and it satisfies the compatibility condition by passing to the product of closed balls $B_1\ni x$ and $B_2\ni y$. So $M\times N$ is $R$-orientable, with no hypothesis beyond the exercise's. If $M$ and $N$ are connected then so is $M\times N$, and Theorem 3.26(a) (printed p. 236, stated for a closed connected manifold) then gives that the map $H_{m+n}(M\times N;R)\to H_{m+n}(M\times N\,||\,(x,y);R)\cong R$ is an isomorphism. Connectedness is a hypothesis of Theorem 3.26 and is not needed for the exercise's conclusion, which is a statement about local groups. For a closed $R$-orientable $M$ with components $M_i$, a fundamental class is the sum $\sum_i\alpha_i$ of fundamental classes of the pieces $M_i$: $H_*(M)=\bigoplus_iH_*(M_i)$, and a class is a generator in every local group exactly when each summand $\alpha_i$ is. The cross product is bilinear, so $\alpha\times\beta=\sum_{i,j}\alpha_i\times\beta_j$, and $M\times N$ is the disjoint union of the closed connected manifolds $M_i\times N_j$. The statement for possibly disconnected $M$ and $N$ is therefore the statement for connected ones applied component by component, which is what the last paragraph below checks; Theorem 3.26(a) is then a consequence of the exercise for connected $M\times N$, not a step in it.
 
-*The closed manifolds, integral coefficients.* Take $R=\ZZ$ again. Kottke's next computation is the Künneth formula for the product, Theorem 3B.6 (printed p. 275), which applies since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12, printed p. 529):
+*The closed manifolds, integral coefficients.* This is the source's second route to the conclusion, it needs more than the exercise's hypotheses, and the paragraph after this one does not use it. Take $R=\ZZ$, so that $M$ and $N$ are now $\ZZ$-orientable — an $R$-orientable manifold need not be: with $R=\ZZ/2$ the projective plane $\RP^2$ is $\ZZ/2$-orientable while $H_2(\RP^2;\ZZ)=0$, so it has no $\ZZ$ fundamental class — and suppose $M$ and $N$ connected, so that $H_m(M;\ZZ)\cong\ZZ\cong H_n(N;\ZZ)$. Kottke's next computation is the Künneth formula for the product, Theorem 3B.6 (printed p. 275), which applies since a closed manifold is homotopy equivalent to a CW complex (Corollary A.12, printed p. 529):
 $$
 H_{m+n}(M\times N)\ \cong\ H_m(M)\otimes H_n(N)\ \oplus\ \operatorname{Tor}\bigl(H_m(M),H_{n-1}(N)\bigr)\ \oplus\ \operatorname{Tor}\bigl(H_{m-1}(M),H_n(N)\bigr)\ =\ H_m(M)\otimes H_n(N),
 $$
-all other terms vanishing and the two Tor groups vanishing because the top degree groups are free. So $[M]\times[N]$ is a generator of $H_{m+n}(M\times N)\cong\ZZ$.
+all other terms vanishing and the two Tor groups vanishing because the top degree groups are free. So $[M]\times[N]$ is a generator of $H_{m+n}(M\times N)\cong\ZZ$. The connectedness supposed here is doing real work in that last display: without it $H_{m+n}(M\times N;\ZZ)$ is not $\ZZ$ — for $M$ with $k$ components and $N$ with $\ell$ it is $\ZZ^{k\ell}$, one copy for each pair of components — and $[M]\times[N]$ is a generator of each summand, which is the componentwise form of the conclusion reached in the next paragraph.
 
 *The fundamental class.* Finally, for each $(x,y)$ the naturality of the cross product in the pair variables gives
 $$
 (\alpha\times\beta)_{(x,y)}=\alpha_x\times\beta_y\ \in\ H_{m+n}\bigl(M\times N\,||\,(x,y);R\bigr),
 $$
 and by *The coefficient ring* this is a generator whenever $\alpha_x$ and $\beta_y$ are. So $\alpha\times\beta$ has a generator as its image in every local group, which by Hatcher's definition of a fundamental class (printed p. 236) is exactly that $\alpha\times\beta$ is a fundamental class for $M\times N$ with coefficients in $R$.
+
+Hatcher's pages above are cited from the checked-in text of the book, `tmp/sources/hatcher-2002-algebraic-topology.md`, and Kottke's set has no text version in `tmp/sources`; it was read from the PDF's own text layer at `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`.
 :::
