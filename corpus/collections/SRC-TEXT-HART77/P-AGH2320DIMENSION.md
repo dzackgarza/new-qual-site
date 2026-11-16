@@ -175,6 +175,21 @@ audit:
     pass, Shichijo's printed pp. 18--20 were not opened, and no step was
     re-derived.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rendered card only. The head of the
+    solution and the remark on the published solution named the text versions of
+    the two sources, tmp/sources/hartshorne-solutions-kim.md and
+    tmp/sources/shitijyou-ch2-section3.md, beside the citations they support.
+    Those paths are the repository's file store and stay in the transcription
+    event of even date, which names both with the pages read there; the two
+    rendered passages now cite Kim by exercise, PDF page and source revision and
+    Shichijo by exercise and printed page, and say nothing about where the files
+    are (PROSE-11, QUAL-08, SEC-7). No mathematics changes, no page moves, and
+    no step was re-read in this pass. Read in this pass: nothing beyond the two
+    rendered sentences; the sources were not reopened.
 ---
 
 ::: {.problem}
@@ -209,7 +224,7 @@ Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.
 :::
 
 ::: {.solution}
-Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, text version `tmp/sources/hartshorne-solutions-kim.md`, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, text version `tmp/sources/shitijyou-ch2-section3.md`, at the steps that cite them.  Parts (a), (b), (e) and (f) are proved here, and the two sources agree with those proofs.
+Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, at the steps that cite them.  Parts (a), (b), (e) and (f) are proved here, and the two sources agree with those proofs.
 
 We use the following standard affine dimension theorem.
 
@@ -661,7 +676,7 @@ Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dim
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF pp. 31--32, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF pp. 31--32, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
 The proof above uses the dimension formula $\dim A_{\mathfrak p}+\operatorname{trdeg}_k\kappa(\mathfrak p)=\operatorname{trdeg}_kK$ for a finitely generated algebra over a field, derives (b) from the affine case together with a chain argument, and for (f) tensors a Noether normalization of an affine chart with $k'$ and reads the dimension of each component off the normalization.
 Agree.
 :::
