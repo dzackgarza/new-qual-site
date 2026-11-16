@@ -249,6 +249,33 @@ audit:
     of Harris's Lecture 11, and Shafarevich's Theorem 1.15 and Theorem 1.25,
     as before; the printed exercise IV Ex. 3.11 is unchanged on printed
     p. 316.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's fourth report, and the correction
+    of two things the event above does. (i) The quotation of Proposition 11.24
+    was extended by ee563ab9bb and the extension changed Harris's words: he
+    prints "the general point p in the line qr lying on a secant line to X
+    lies on only a finite number of secant lines to X", with the bar over qr,
+    where the card printed p in P^n. That substitution is this card's, not the
+    source's. Read off printed p. 144 of the retained PDF, that is PDF p. 159
+    of tmp/sources/harris-1992-algebraic-geometry-first-course.pdf, on the
+    line after "at most 2k+1, with equality holding if and only if"; the text
+    version tmp/sources/harris-1992-algebraic-geometry-first-course-pp128-149.md
+    agrees at line 346, and the crude pdftotext rendering of the same line
+    gives "p E qr". The quote now carries Harris's qr, and the sentence
+    applying the equality criterion at k=2 uses the same letters. (ii) The
+    notation repair recorded at (v) of the event above is completed: steps
+    centre and corollary still named the closure of the union of the secant
+    lines by the second symbol Sigma with a subscript sec, while the solution
+    declares Sec(X) and Harris's Sigma names his incidence correspondence of
+    pairs (l,p). Both steps now write Sec(X), the display in step centre no
+    longer carries the overlined Sigma, and the only Sigma left on the card is
+    Harris's correspondence, in steps secants and secant-dim-upper. Not read
+    in this pass: any page of either text beyond printed p. 144 of Harris and
+    its text version, and nothing of Shafarevich's Theorem 1.15 and 1.25, as
+    before. No statement changes; the printed exercise is unchanged.
 ---
 
 ::: {.problem}
@@ -282,7 +309,7 @@ $$
 
 ::: pf-proof
 
-J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, printed p. 144: "The variety $\mathcal S(X)\subset\Gr(1,n)$ of secant lines to an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension $2k$. The secant variety $S(X)\subset\PP^n$ is irreducible of dimension at most $2k+1$, with equality holding if and only if the general point $p\in\PP^n$ lying on a secant line to $X$ lies on only a finite number of secant lines to $X$", with his note "that in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$." His Example 11.22, printed pp. 143--144, defines the secant line map
+J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, printed p. 144: "The variety $\mathcal S(X)\subset\Gr(1,n)$ of secant lines to an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension $2k$. The secant variety $S(X)\subset\PP^n$ is irreducible of dimension at most $2k+1$, with equality holding if and only if the general point $p\in\overline{qr}$ lying on a secant line to $X$ lies on only a finite number of secant lines to $X$", with his note "that in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$." His Example 11.22, printed pp. 143--144, defines the secant line map
 $$
 s\colon X\times X-\Delta\longrightarrow\Gr(1,n),\qquad (p,q)\longmapsto\overline{pq},
 $$
@@ -333,11 +360,11 @@ For $n>2r+1$ there is a point $\xi\in\PP^n$ lying on no secant line of $X$, in n
 
 Shafarevich, proof of Theorem 2.25, printed p. 136, concludes: "We see that $\dim U_1\le\dim\Gamma=2n+1$ and $\dim U_2\le2n$; therefore if $N>2n+1$ then $U_1\cup U_2\ne\PP^N$, which was what we wanted."
 
-The conclusion holds for the closures: let $\Sigma_{\mathrm{sec}}$ be the union of the secant lines and $U_2$ the union of the embedded tangent spaces. By step [](#secants){.pf-ref} the closure of $\Sigma_{\mathrm{sec}}$ has dimension at most $2r+1$ and by step [](#tangent-locus){.pf-ref} $\dim\overline{U_2}\le2r$, so with $n>2r+1$ both closures are closed subsets of $\PP^n$ of dimension strictly below $n$, and $\dim X=r<n$. Hence
+The conclusion holds for the closures: $\operatorname{Sec}(X)$ is the closure of the union of the secant lines, and $U_2$ is the union of the embedded tangent spaces. By step [](#secants){.pf-ref} $\dim\operatorname{Sec}(X)\le2r+1$ and by step [](#tangent-locus){.pf-ref} $\dim\overline{U_2}\le2r$, so with $n>2r+1$ the two closed subsets $\operatorname{Sec}(X)$ and $\overline{U_2}$ of $\PP^n$ have dimension strictly below $n$, and $\dim X=r<n$. Hence
 $$
-X\cup\overline{\Sigma_{\mathrm{sec}}}\cup\overline{U_2}
+X\cup\operatorname{Sec}(X)\cup\overline{U_2}
 $$
-is a proper closed subset of the irreducible $\PP^n$, and every point of its complement is a centre of the kind required: being outside $\overline{\Sigma_{\mathrm{sec}}}$ it lies on no secant line, being outside $\overline{U_2}$ it lies in no embedded tangent space, and it is not on $X$.
+is a proper closed subset of the irreducible $\PP^n$, and every point of its complement is a centre of the kind required: being outside $\operatorname{Sec}(X)$ it lies on no secant line, being outside $\overline{U_2}$ it lies in no embedded tangent space, and it is not on $X$.
 
 :::
 
@@ -376,7 +403,7 @@ Shafarevich, Corollary 2.7, printed p. 135: let $X\subseteq\PP^N$ be a variety a
 
 The statement is Corollary 2.7, printed p. 135, and its proof there is one sentence: "It is enough to apply the lemma, together with Theorem 1.15."
 
-Take a point $\xi$ of the open set of step [](#centre){.pf-ref}. It lies outside $\overline{\Sigma_{\mathrm{sec}}}$, so it lies on no line through two distinct points of $X$, and every line through $\xi$ therefore meets $X$ in at most one point; and it lies outside $\overline{U_2}$, so $\xi\notin T_PX$ for every $P\in X$. The two hypotheses of the corollary are met.
+Take a point $\xi$ of the open set of step [](#centre){.pf-ref}. It lies outside $\operatorname{Sec}(X)$, so it lies on no line through two distinct points of $X$, and every line through $\xi$ therefore meets $X$ in at most one point; and it lies outside $\overline{U_2}$, so $\xi\notin T_PX$ for every $P\in X$. The two hypotheses of the corollary are met.
 
 The lemma of step [](#lemma-criterion){.pf-ref} needs the projection $X\to\PP^{n-1}$ to be finite, which is what the cited Theorem 1.15 supplies. The conclusion is that the projection restricts to an isomorphism of $X$ onto its image in $\PP^{n-1}$; that image is closed, because a morphism from the projective variety $X$ is proper, so the isomorphism onto the image is a closed immersion.
 
@@ -479,7 +506,7 @@ The secant variety of the Veronese surface has dimension at most $4$.
 
 J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, printed p. 144, on $X=\nu_2(\PP^2)\subset\PP^5$: "suppose that $r\in\PP^5$ is a general point lying on a secant line to $X$; we may write the secant line as $\overline{\nu(p),\nu(q)}$ for some pair of points $p,q\in\PP^2$. Now, the line $L=\overline{pq}\subset\PP^2$ is carried, under the Veronese map $\nu$, to a plane conic curve $C\subset X\subset\PP^5$, and since $r\in\overline{\nu(p),\nu(q)}$, $r$ will lie on the plane $\Lambda$ spanned by $C$. But then every line through $r$ in $\Lambda$ will be a secant line to $C$, and hence to $X$. In particular, it follows that a general point lying on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. We may deduce from this that the dimension of $S(X)$ is at most $4$."
 
-The passage from that family to the number is the card's own, and it is Proposition 11.24's equality criterion at $k=2$: his incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$ at $k=2$, so $\dim\operatorname{Sec}(X)\le5$, and equality there would put the general point of $\operatorname{Sec}(X)$ on only finitely many secant lines, which the quoted one-dimensional family excludes; hence $\dim\operatorname{Sec}(X)\le4$.
+The passage from that family to the number is the card's own, and it is Proposition 11.24's equality criterion at $k=2$: his incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$ at $k=2$, so $\dim\operatorname{Sec}(X)\le5$, and equality there would put the general point $p\in\overline{qr}$ of a general secant line on only finitely many secant lines, which the quoted passage denies in giving it a one-dimensional family; hence $\dim\operatorname{Sec}(X)\le4$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, entry 4.3.21, printed p. 223, prints the same bound from the same argument: after "Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$" he writes "Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$."
 
