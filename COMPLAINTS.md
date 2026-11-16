@@ -3168,33 +3168,35 @@ The section immediately above, recording the `E-HAT-2.B-4` transcription of this
 
 One chat of the parallel #121 batches, on the three Chapter IV cards its brief named:
 `P-AGH422GENUSTWOMODULI` (IV.2.2), `P-AGH423DUALCURVE` (IV.2.3) and
-`P-AGH434RATIONALNORMALCURVE` (IV.3.4). Each card's solution is now the published argument,
-transcribed step by step, each step naming the numbered part and printed page it comes from, and
-each statement re-read against the book in `tmp/sources/hartshorne-1977-algebraic-geometry.md`:
+`P-AGH434RATIONALNORMALCURVE` (IV.3.4). Each card's solution now names at every step the numbered
+part and printed page of the published argument it follows, or says that the step is the card's own,
+and each statement was re-read against the book in
+`tmp/sources/hartshorne-1977-algebraic-geometry.md`:
 IV.2.2 and IV.2.3 on printed pp. 304--305 (PDF pp. 319--320) and IV.3.4 on printed p. 315 (PDF
 p. 330). What follows is, per card, the part that still has no published proof, and the defects of
 the sources found while transcribing them.
 
-**IV.2.2, `P-AGH422GENUSTWOMODULI` (2026-11-16).** Parts (a)--(d) have complete published proofs
-in two of the three sources: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2,
-printed pp. 352--354 of `tmp/sources/reiser-hartshorne-solutions-pp351-358.md` --- (a) at p. 352,
-(b) and (c) at p. 353, (d) at p. 354 --- and Chin-Lung Wang's Algebraic Geometry II (NTU, 2020
-Spring), Chapter IV §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6 of
-`tmp/sources/ntu-ag2-chapter4.md` --- (a) at p. 4, (b) at pp. 4--5, (c), (d), (e) at p. 6. Part
-(e) is the part with no complete published proof: Reiser's answer to it, printed p. 354, is the
-single word "Yup!", and Hou's, printed p. 6, proves the two halves that use only the canonical map
---- that an isomorphism of curves carries the tuple to the same class, and that every tuple comes
-from a curve, by part (b) --- but not that a separable degree-two cover of $\PP^1$ is determined by
-its branch divisor, which is what makes two curves in one class isomorphic. D. Gruenewald,
-*Computing Humbert Surfaces*, §2, printed p. 2 of
-`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`, states the resulting quotient, as a
-Galois covering $\mathcal M_2(2)\to\mathcal M_2$ of degree $720$, without proof. The card's step
-`s9` carries that statement and is marked as the card's own; its citation is Vakil, Proposition
-19.5.2, printed pp. 546--547, which is already on the card from the pass of 2026-11-15. So part
-(e) is closed on the card by NTU's argument for the two halves plus Vakil's proposition for the
-third, and by no one source.
+**IV.2.2, `P-AGH422GENUSTWOMODULI` (2026-11-16).** All five parts have a published proof. Parts
+(a)--(d) are in two sources: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2,
+printed pp. 353--354 of `tmp/sources/reiser-hartshorne-solutions-pp351-358.md` --- (a), (b) and (c)
+at p. 353, (d) at pp. 353--354 --- and Chin-Lung Wang's Algebraic Geometry II (NTU, 2020 Spring),
+Chapter IV §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6 of
+`tmp/sources/ntu-ag2-chapter4.md` --- (a) at p. 4, (b) at p. 5, (c), (d), (e) at p. 6. Of part
+(e), Reiser's answer, printed p. 354, is the single word "Yup!", and Hou's, printed p. 6, proves the
+two halves that use only the canonical map --- that an isomorphism of curves carries the tuple to
+the same class, and that every tuple comes from a curve, by part (b) --- but not that a separable
+degree-two cover of $\PP^1$ is determined by its branch divisor. That last statement is R. Vakil,
+*The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version, Proposition 19.5.2,
+printed pp. 546--547, which states that for even $r$ there is precisely one double cover of $\PP^1$
+branched at $r$ prescribed points and proves it by normalizing $y^2=f(x)$ on each of the two affine
+charts and gluing; the card's step `s9` transcribes that proof. Part (e) is therefore not open. An
+earlier version of this record said it was, on the evidence of the three sources of that batch
+alone. D. Gruenewald, *Computing Humbert Surfaces*, §2, printed p. 2 of
+`tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`, states the resulting quotient as a
+Galois covering $\mathcal M_2(2)\to\mathcal M_2$ of degree $720$, without proof, and is cited on
+the card as well.
 
-**Two defects in Hou's Chapter IV solutions, found while transcribing IV.2.2 (2026-11-16).**
+**Three defects in the two solutions, found while transcribing IV.2.2 (2026-11-16).**
 First, Hou's part (d), printed p. 6, opens "The symmetric group $S_3$ acts on distinct element
 $\beta_1,\beta_2,\beta_3\in k\setminus\{0,1\}$ by permuting $\{0,1,\infty,\beta_1,\beta_2,\beta_3\}$,
 then sending the first three element to $0,1,\infty$ by Möbius transform again", and its part (e)
@@ -3208,17 +3210,28 @@ with $h^0(\mco_X(2P))=2$, gives $1$; the conclusion $K_X\sim2P$ needs the $1$. N
 what the card states or proves; both are recorded here rather than corrected in the source, which is
 not this repository's to edit.
 
+The third is Reiser's. In his part (b), printed p. 353, he writes $\ell(D)=2$ for
+$D=h^*\mco_{\PP^1}(1)$ because that sheaf has a two-dimensional space of global sections; pulling
+back the two independent sections of $\mco_{\PP^1}(1)$ gives two independent sections, hence only
+$\ell(D)\ge2$, and equality is not what the argument uses. Riemann--Roch in genus $2$ gives
+$\ell(D)-\ell(K-D)=1$, so $\ell(D)\ge2$ already forces $\ell(K-D)\ge1$, and $\deg(K-D)=0$ then
+forces $K\sim D$ as he concludes. The card states the inequality and names the slip.
+
 **IV.2.3, `P-AGH423DUALCURVE` (2026-11-16).** The brief named one source, O. Bergvall, §2.2 with
 Theorem 2.2, printed pp. 3--4 of
 `tmp/sources/bergvall-2021-plane-quartics-arithmetic-topology.md`. Bergvall proves only part (h), and
 states even that as a theorem of Plücker and Jacobi without proof: Theorem 2.2, printed p. 4, is
 "Every plane quartic has 28 bitangents", with the odd theta characteristics and the bijection with
 bitangents on the same page. Parts (a)--(g) and the general-case count of (h) are Reiser's Exercise
-IV.2.3, printed pp. 354--358 of the same solution set --- (a) at p. 355, (b) at p. 356, (c)--(f) at
-p. 357, (g)--(h) at p. 358 --- which the brief did not name for this card; it is the same set it names
-for IV.2.2, and it is a complete solution of the exercise. Reiser records part (b) in his list of
-exercises with issues, printed p. 5, as "somewhat difficult", because an equation for the dual curve
-is hard to get at, and solves it by a formal parametrization.
+IV.2.3, printed pp. 354--358 of the same solution set --- (a) at p. 355, (b) at pp. 356--357,
+(c)--(f) at p. 357, (g)--(h) at p. 358 --- which the brief did not name for this card; it is the
+same set it names for IV.2.2, and it is a complete solution of the exercise. One of its steps is
+wrong as printed and is named on the card rather than copied: in part (a), printed p. 356, he takes
+the tangent line at $Q$ to meet the line at infinity $V(z)$ in
+$[\partial f/\partial x:\partial f/\partial y:0]$ and the local coordinate to be at $[1:0:0]$. The
+intersection is $[\partial f/\partial y:-\partial f/\partial x:0]$, which at the point of tangency
+is $[0:1:0]$, with $x/y$ the coordinate there; the index he computes is right, the point is not. The
+card's step `s2` computes at $[0:1:0]$ and names the slip.
 
 What still has no published proof, located: the printed parenthetical of part (h), that a tangent
 with four-fold contact gives a point of the dual curve that is a unibranch singular point of
@@ -3237,22 +3250,33 @@ what lets Reiser's $I$ and $B$ be read as those classes.
 **IV.3.4, `P-AGH434RATIONALNORMALCURVE` (2026-11-16).** The brief named part (a) of NTU's §3 Exercise
 4 by Yu-Chi Hou, printed pp. 8--9; the source also proves (b) at printed p. 10, together with the
 degree-$2$ and degree-$3$ sentences the card's statement carries as (c) and (d) there, and those are
-transcribed with it. The part with no clean published proof is the projective-normality half of (a).
-Hou's division of the ideal by the quadrics $g_{ij}$ is complete, printed p. 9; its integral-closure
-half is not. The degree count that closes it, printed p. 8, reads "By comparing degree, we may assume
-that $a_0,\ldots,a_{d-1}$ are homogeneous of degree $k_0,\ldots,k_{n-1}$ in degree $d$ monomial of
-$t_0,t_1$ and $g$ is homogeneous of degree $m$ in $t_0,t_1$. Thus, equating the degree of (1) gives
-$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$. Hence, $m=dk_{n-1}\Rightarrow d\mid m$", whose chain is not
-a chain of equalities and whose indices mix $n$ and $d$; the display that follows, "$f=\sum_i a_i
-t_0^{dn-1-i}t_1^i$", mixes them again. The toric restatement at printed pp. 8--9 gives the cone
-$\sigma=\RR_{>0}\langle e_1,e_1+de_2\rangle\subset\RR^2$, whose monoid is not the monoid
-of the $d$-uple embedding. The card's step `s2` keeps Hou's integral-closure route and supplies the
-conclusion of the garbled line from Hou's own identification
-$S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ at printed p. 8: an element of $S(X)$ homogeneous as a
-polynomial in $t$ has $t$-degree divisible by $d$, and in such a degree $S(X)$ is the whole of
-$k[t_0,t_1]$ by the card's step `s1`. A published proof of projective normality that can be cited
-without repair is not located among the sources of this batch; Vakil's §8.2 and Harris's lecture on
-the rational normal curve are candidates not read in this pass.
+transcribed with it. Three statements of its part (a) are false as printed, and the card's proofs of
+part (a) are the card's own, with each false statement named where it would otherwise be used.
+
+The first is $\Frac S(X)=k(t_0,t_1)$, printed p. 8, which is false for $d\ge2$: elements of
+$\Frac S(X)$ are ratios $f/g$ of forms of $t$-degree divisible by $d$, and $t_0$ is not such a ratio.
+The second is the conclusion $d\mid\deg f$ drawn there from the degree comparison
+$f^n+a_{n-1}f^{n-1}+\cdots+a_0=0$, printed as "$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$. Hence,
+$m=dk_{n-1}\Rightarrow d\mid m$": the claim is false, since for $d=2$ the element $t_0$ is integral
+over $S(X)=k[t_0^2,t_0t_1,t_1^2]$, being a root of $T^2-t_0^2$, and $\deg t_0=1$. A version of
+this record that said the card "supplies the conclusion" of that line, and that the card's step `s2`
+keeps Hou's integral-closure route, was wrong twice over: the conclusion is not a step towards
+projective normality and cannot be supplied, and the card has gone back to its own proof, from
+normality of $X=\PP^1$ and the surjectivity of the restriction maps in every degree by Exercise
+II.5.14(d). The third false statement is the first of the two observations by which Hou reduces a
+lexicographic remainder in the division by the $g_{ij}$, printed p. 9, that it contains no pure power
+$x_i^l$: the leading monomial of $g_{i-1,i}=x_{i-1}x_{i+1}-x_i^2$ is $x_{i-1}x_{i+1}$, so $x_i^l$ is
+divisible by no leading monomial and survives the division. The card proves the generation of $I(X)$
+by straightening monomials modulo the quadrics, and says so.
+
+Also false, and recorded here rather than on the card because the card does not use it: the toric
+restatement at printed pp. 8--9 gives the cone
+$\sigma=\RR_{>0}\langle e_1,e_1+de_2\rangle\subset\RR^2$, whose monoid is not the monoid of the
+$d$-uple embedding.
+
+A published proof of the projective normality of the $d$-uple embedding that can be cited without
+repair is not located among the sources read in this batch; Vakil's §8.2 and Harris's lecture on the
+rational normal curve are candidates not read.
 
 **Checked against the book, per card (2026-11-16).** IV.2.2: the five parts, the hypothesis
 $\characteristic k\ne2$, and the uniqueness clause of (a), printed p. 304. IV.2.3: the hypothesis
@@ -3261,21 +3285,24 @@ multiplicity $r$ with distinct tangent directions, the weighted count of (e) wit
 the hypothesis of (f), and the nine and 28 of (g) and (h), printed pp. 304--305. IV.3.4: the
 hypotheses $d\le n$ and non-degeneracy of (b), and the two sentences after it, printed p. 315.
 
-**Not done in this batch (2026-11-16).** No source outside the three named in the brief and Reiser
-was searched for the two open parts, so the absence claims above are about the sources read, not
-about the literature: Searched --- the brief's sources plus Reiser; Found --- the parts above;
-Conclusion --- those parts have no published proof in those files; Confidence --- high for those
-files, none claimed beyond them; Gaps --- a search of the literature, in particular of Vakil's §8.2
-and Harris's rational-normal-curve lecture for IV.3.4(a) and of the classical literature on the dual
-of a quartic with a hyperflex for IV.2.3(h). Vakil's §§19.5--19.6 and Egbert's solutions were not
-re-read; their citations on `P-AGH422GENUSTWOMODULI` and `P-AGH423DUALCURVE` are those of earlier
-events and stand unchanged.
+**Not done in this batch (2026-11-16).** No search outside the brief's sources, Reiser and Vakil's
+Proposition 19.5.2 was run for the parts recorded as open, so the absence claims above are about the
+sources read, not about the literature: Searched --- the brief's sources plus Reiser, and Vakil
+Proposition 19.5.2 with its proof for IV.2.2(e); Found --- the parts above; Conclusion --- the
+parenthetical of IV.2.3(h) and the projective normality of IV.3.4(a) have no published proof in the
+sources read; Confidence --- high for those files, none claimed beyond them; Gaps --- a search of the
+literature, in particular of Vakil's §8.2 and Harris's rational-normal-curve lecture for IV.3.4(a)
+and of the classical literature on the dual of a quartic with a hyperflex for IV.2.3(h). Vakil's
+19.5.4, 19.5.7 and 19.6.2 and Egbert's solutions were not re-read; their citations on the three cards
+are those of earlier events and stand unchanged.
 
 **Repair.** Per card: the three commits of this date that touch the three cards, with the audit events
-that record what each transcription and each check covered. Part (e) of IV.2.2 is closed on the card
-by its two sources taken together, as the first item says; the open parts of IV.2.3 and IV.3.4 stay
-obligations under [#121](https://github.com/dzackgarza/new-qual-site/issues/121), and nothing in this
-record supersedes an earlier entry of this file.
+that record what each transcription and each check covered. Every part of IV.2.2 has a published proof, as the first item says.
+The open part of IV.2.3 -- the printed parenthetical of (h), and the two identifications in step
+`s12` -- stays an obligation under
+[#121](https://github.com/dzackgarza/new-qual-site/issues/121), as does IV.3.4, whose part (a) has no
+published proof located that can be cited without repair. Nothing in this record supersedes an
+earlier entry of this file.
 
 
 ## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the two parts of V.4.15 that stay open
