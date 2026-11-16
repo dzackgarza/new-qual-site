@@ -39,10 +39,9 @@ audit:
     i in I is the card's reduction "F is congruent mod Q to A + xB + yC with
     A, B, C in k[w,z]", and his vanishing of R, S, T by exponents modulo 3 is
     the card's separation of the s-exponents into the three classes 0, 2, 1
-    mod 3. Not checked: the other two answers on the same question, neither
-    of them his --- Elencwajg's own answer 160964, the prime-ideal one, which
-    does not prove generation, and sebigu's answer 160932, a Maple
-    computation, which is not an argument.
+    mod 3. Not checked: his other two answers on the same question (the
+    prime-ideal one, which does not prove generation, and the Maple
+    computation, which is not an argument).
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -59,6 +58,25 @@ audit:
     "I think I(Y) = (wy - x^2, xz - y^2, xy - zw) works". The card's quote is
     the page's; the remark now says so. The card's proof of I(Y-bar) = Q was
     checked again and is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third-pass reader's report on this card, checked against the text version
+    of the question. The event of 2026-11-16 above was rewritten in place by
+    68e411a312, which inserted an attribution into it; a dated event is not
+    edited, so its text at its date is restored here and the attribution is
+    stated in this event instead. The inserted sentence also contradicted
+    itself, as the reader says: it called the other two answers "neither of
+    them his" and then named "Elencwajg's own answer 160964". The text
+    version's own headers, tmp/sources/mse-160924-ideal-of-the-twisted-cubic.md
+    lines 15, 35 and 47, give answer 161648, score 19, accepted, to Georges
+    Elencwajg; answer 160964, score 9, to Georges Elencwajg; and answer 160932,
+    score 2, to sebigu. So the restored phrase "his other two answers" is
+    itself inaccurate as to the Maple computation, which is sebigu's: the
+    correct count is two Elencwajg answers, one of them the proof, and one
+    answer by sebigu. The remark, the Troiani item of the event above and the
+    proof of I(Y-bar) = Q are unchanged.
 ---
 
 ::: {.problem}
