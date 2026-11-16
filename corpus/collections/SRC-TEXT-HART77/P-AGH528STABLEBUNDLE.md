@@ -148,6 +148,40 @@ audit:
     without that setting, namely the direct rank-two argument. Not checked:
     whether the classification of part (c) holds in positive characteristic;
     nothing in the sources read states it there, and the card does not claim it.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the card again on 2026-11-16 on the reader's report, after the
+    event above of the same date, which is left as written. Three corrections.
+    First, part (a) is proved again in rank two only, as the card proved it
+    before this batch. The argument the event above records for any rank is
+    withdrawn and was wrong twice: Gunning's Lemma 14, printed pp. 81-82,
+    treats a decomposable bundle written as a direct sum of line bundles, and a
+    decomposable bundle of rank three or more is not in general such a sum; and
+    the translation written on the card exhibited a rank-one quotient of slope
+    at least mu(Phi), which is not the inequality that contradicts stability,
+    since stability requires every quotient's slope to exceed mu(Phi). Step s2
+    now carries the rank-two argument through step s1, is marked as the card's
+    own, and states Lemma 14 with its hypothesis. Part (a) for a decomposable
+    bundle of higher rank is not proved here, and no source read proves it.
+    Second, the remark's sentence that the rank-two argument of step s12
+    carries part (c) without Gunning's setting is withdrawn: step s12's
+    rank-two argument proves only that the constructed bundle is
+    indecomposable, and the injectivity of the classification rests on Theorem
+    14, a statement about a compact Riemann surface. Steps s12, s13, the qed
+    and the remark now say that part (c) is established for a curve over the
+    complex numbers, which is what the record of this date says as well.
+    Third, the same remark sentence is where the card claimed the setting
+    without giving it; the remark now names what Theorem 14 supplies and what
+    step s12 supplies. Read for this repair: Gunning's §(c), Lemma 14 and
+    Theorem 14 in the text version
+    tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md, whose
+    OCR garbles the displays, so the statements were taken from its sentences
+    and the mathematics checked on the card. Not checked: whether Gunning's
+    displayed computations in Lemma 14 and Theorem 14 are free of error, and
+    whether part (a) holds in rank above two, which is a question about the
+    exercise and not about the sources read.
 ---
 
 ::: {.problem}
@@ -210,14 +244,14 @@ has $\rank\mathcal A=\rank\mathcal F=1$ and $\deg\mathcal F=\deg\mathcal E-\deg\
 :::
 
 ::: {.pf-step #s2}
-A decomposable bundle is never stable, whatever its rank. This is part (a).
+A decomposable rank-two bundle is never stable. This is part (a) in rank two.
 
 ::: pf-proof
-Gunning, §(c) with Lemma 14, printed pp. 81--82: for a decomposable bundle $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$ the determinant has $c(\det\Phi)=c(\varphi_1)+\cdots+c(\varphi_m)$, so one summand satisfies $c(\varphi_j)\ge\frac1m c(\det\Phi)$, and $\operatorname{div}\Phi=\max_jc(\varphi_j)\ge\frac1m c(\det\Phi)$, which is instability. The exercise states stability with locally free quotients rather than with line subbundles, so one translation is needed for $m>2$, and that translation is the card's own: a direct summand $\varphi_j$ is the image of the projection $\Phi\to\varphi_j$, a locally free quotient of rank one whose slope is $c(\varphi_j)\ge\frac1m c(\det\Phi)=\mu(\Phi)$. In rank two, where the two formulations agree by step [](#s1){.pf-ref}, $\mathcal E=\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible and, after interchanging them, $\deg\mathcal A\ge\deg\mathcal B$ gives
+Write $\mathcal E=\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible and, after interchanging them, $\deg\mathcal A\ge\deg\mathcal B$. Then
 $$
 \deg\mathcal A\ge\frac{\deg\mathcal A+\deg\mathcal B}{2}=\frac12\deg\mathcal E,
 $$
-and step [](#s1){.pf-ref} applies to the line subbundle $\mathcal A$.
+so the line subbundle $\mathcal A$ fails the strict inequality that step [](#s1){.pf-ref} tests, and $\mathcal E$ is not stable. This argument is the card's own, and it is the rank-two case of Gunning's Lemma 14, printed pp. 81--82, read through his §(c): for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$ the determinant has $c(\det\Phi)=c(\varphi_1)+\cdots+c(\varphi_m)$, so some $j$ has $c(\varphi_j)\ge\frac1mc(\det\Phi)$ and $\operatorname{div}\Phi=\max_jc(\varphi_j)\ge\frac1mc(\det\Phi)$, which is the instability of his rank-two definition on printed p. 83. The exercise states stability with locally free quotients rather than with line subbundles, and step [](#s1){.pf-ref} is the passage between the two in rank two.
 
 :::
 
@@ -348,7 +382,7 @@ $$
 let $0\to\OO_C\to\mathcal E_0\to\mathcal L\to0$ be the corresponding extension. Then $\mathcal E_0$ is normalized, indecomposable and not semistable.
 
 ::: pf-proof
-Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of negative degree, so $\mathcal E_0$ is not semistable by step [](#s6){.pf-ref}. Indecomposability is Theorem 14 of Gunning, printed pp. 87--90, which parametrizes the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$ and proves that two bundles are isomorphic exactly when their classes are proportional: for $\varphi=\OO_C$ that space is $\PP H^1(C,\mathcal L^\vee)$, and the nonzero class $\xi$ is one of its points. Theorem 14 is stated for a compact Riemann surface, as Gunning's whole book is; the direct rank-two argument that follows is the part of this step that uses nothing of that setting. In rank two: if $\mathcal E_0\cong\mathcal B\oplus\mathcal C$ then one summand has a nonzero section, hence degree $0$ by step [](#s3){.pf-ref} and is $\OO_C$, the other is $\det\mathcal E_0\cong\mathcal L$ of negative degree and so has no sections, and the given inclusion is then the standard summand up to scalar, so the extension splits.
+Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of negative degree, so $\mathcal E_0$ is not semistable by step [](#s6){.pf-ref}. Indecomposability is Theorem 14 of Gunning, printed pp. 87--90, which parametrizes the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$ and proves that two bundles are isomorphic exactly when their classes are proportional: for $\varphi=\OO_C$ that space is $\PP H^1(C,\mathcal L^\vee)$, and the nonzero class $\xi$ is one of its points. Theorem 14 is stated for a compact Riemann surface, as Gunning's whole book is; the direct rank-two argument that follows gives the indecomposability of $\mathcal E_0$ without that setting. In rank two: if $\mathcal E_0\cong\mathcal B\oplus\mathcal C$ then one summand has a nonzero section, hence degree $0$ by step [](#s3){.pf-ref} and is $\OO_C$, the other is $\det\mathcal E_0\cong\mathcal L$ of negative degree and so has no sections, and the given inclusion is then the standard summand up to scalar, so the extension splits.
 
 :::
 
@@ -361,14 +395,14 @@ $$
 $$
 
 ::: pf-proof
-Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a canonical normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose own maximal subbundle is $\OO_C$ with quotient $\mathcal L=\det\mathcal E_0$; this is Theorem 14 of Gunning, printed pp. 87--90, read with the uniqueness of Lemma 15, printed pp. 83--85. Two extensions with proportional nonzero classes have isomorphic middle bundles and otherwise distinct ones, again by Theorem 14, and step [](#s12){.pf-ref} shows that every displayed triple occurs. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, and it changes the determinant, so the triples of a bundle and of its twists differ and the classification is up to tensor equivalence rather than up to isomorphism.
+Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a canonical normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose own maximal subbundle is $\OO_C$ with quotient $\mathcal L=\det\mathcal E_0$; this is Theorem 14 of Gunning, printed pp. 87--90, read with the uniqueness of Lemma 15, printed pp. 83--85. Two extensions with proportional nonzero classes have isomorphic middle bundles and otherwise distinct ones, again by Theorem 14, and step [](#s12){.pf-ref} shows that every displayed triple occurs; the bijection is therefore over a compact Riemann surface, Theorem 14 being what gives both the parametrization and the injectivity of the classification. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, and it changes the determinant, so the triples of a bundle and of its twists differ and the classification is up to tensor equivalence rather than up to isomorphism.
 
 :::
 
 :::
 
 ::: pf-qed
-Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove the corrected classification in part (c).
+Step [](#s2){.pf-ref} proves part (a) for a decomposable bundle of rank two, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove the corrected classification in part (c), for a curve over $\CC$, Gunning's Theorem 14 being stated for a compact Riemann surface.
 
 :::
 
@@ -377,7 +411,7 @@ Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref},
 :::
 
 ::: {.remark title="Published solution"}
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for decomposable $\Phi$, which is part (a), and $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$ in general; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s1){.pf-ref} to [](#s13){.pf-ref} follow that route, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so the classification of part (c) is stated there over $\CC$; the rank-two argument in step [](#s12){.pf-ref} is what carries it without that setting.
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, which with his rank-two stability definition is part (a) in rank two, and $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$ in general; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s1){.pf-ref} to [](#s13){.pf-ref} follow that route, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so part (c) is established there over $\CC$; the rank-two argument of step [](#s12){.pf-ref} supplies the indecomposability of the constructed bundle directly, while the parametrization and the injectivity of the classification are his Theorem 14.
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) and (b) by the slope inequalities, the same route as steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause, with no tensor twist considered, so it carries the defect recorded at the head of this solution rather than repairing it.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), printed p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
