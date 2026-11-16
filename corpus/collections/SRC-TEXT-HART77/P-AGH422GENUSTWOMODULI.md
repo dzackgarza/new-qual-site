@@ -234,6 +234,23 @@ audit:
     Vakil, Egbert and Gruenewald, whose pages are those of the events above; and no
     statement, proof or remark on the rendered page changes, the pages being
     recorded here and not in the step text.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Correction of the event of this date above, found on re-reading its own page
+    statement. It says that the statement of parts (a)--(e) of Reiser's Exercise
+    IV.2.2 is printed on folio 352. Folio 352 carries the statement of (a)--(d)
+    and ends with "Then the last three are the new beta_1', beta_2', beta_3'";
+    part (e)'s statement opens folio 353, above the solution of (a), (b) and (c),
+    so the solution of (a) does not begin that folio. Read off PDF pp. 353 and
+    354 of tmp/sources/reiser-hartshorne-solutions.pdf, whose footers read 352 and
+    353, printed folio one less than the PDF page. The rest of that event stands
+    as written and was read again with this: (a)'s solution on printed p. 353,
+    which step #canonical-degree-two cites; (d)'s solution from printed p. 353
+    onto p. 354, which step #sigma-six-action cites as pp. 353--354; and Hou's
+    part (b) on printed p. 5 alone. Nothing on the rendered page changes, and
+    nothing of the events before this date is touched.
 review: draft
 ---
 
