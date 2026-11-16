@@ -4,14 +4,13 @@ from __future__ import annotations
 
 import argparse
 import csv
-import os
 import random
 import re
 import subprocess
 import sys
 from collections import Counter
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from functools import cache, cached_property
 from pathlib import Path
 
@@ -159,10 +158,13 @@ class GitChange(Strict):
 
 # `model.AuditEvent`'s fields, in the order a refusal names them.
 AUDIT_FIELDS = ("event", "by", "date", "note")
-# The day in a Git date: an ISO day, a timestamp whose first ten characters are one, or
-# `@<epoch>`. Anything else is not read, and the wall clock decides.
-ISO_DAY = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-EPOCH_DAY = re.compile(r"^@(\d+)$")
+# Dated records outside the corpus: the root complaints file's entries.
+COMPLAINTS = Path("COMPLAINTS.md")
+# A dated entry is a heading or a numbered item; the bullets inside a section are its
+# evidence, and a day in one of them belongs to the sentence that records it.
+ENTRY_DAY = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
+HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
+NUMBERED = re.compile(r"^\d+\.\s")
 
 
 @dataclass(frozen=True)
@@ -175,6 +177,25 @@ class AuditRecord:
 
     day: date | None
     text: tuple[str, ...]
+
+
+def source_identity(source: str) -> str | None:
+    """The scalar id in a card's front matter, read without validating the rest of it.
+
+    A deleted blob is read for the card it held, so its defects are not this gate's to
+    report and a header that does not parse has no identity to match.
+    """
+    match = FRONT_MATTER.match(source)
+    if match is None:
+        return None
+    for line in match["front"].splitlines():
+        if ID_FIELD.match(line):
+            try:
+                value = yaml.load(line, Loader=yaml.CSafeLoader).get("id")
+            except (yaml.YAMLError, AttributeError):
+                return None
+            return value if isinstance(value, str) and value else None
+    return None
 
 
 def _audit_day(event: object) -> date | None:
@@ -248,25 +269,76 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date) -> li
     return errors
 
 
+def dated_entries(source: str) -> list[tuple[date, str]]:
+    """Each COMPLAINTS entry whose heading or first line carries a day, with its text.
+
+    An entry is a heading section or a numbered item, and its day is the first
+    `YYYY-MM-DD` on the line that opens it. A day inside the body belongs to the
+    sentence that records it, not to the entry.
+    """
+    lines = source.splitlines()
+    starts: list[tuple[int, int | None]] = []
+    for index, line in enumerate(lines):
+        if heading := HEADING.match(line):
+            starts.append((index, len(heading["marks"])))
+        elif NUMBERED.match(line):
+            starts.append((index, None))
+    entries: list[tuple[date, str]] = []
+    for position, (start, level) in enumerate(starts):
+        found = ENTRY_DAY.search(lines[start])
+        if found is None:
+            continue
+        try:
+            day = date.fromisoformat(found[1])
+        except ValueError:
+            # The shape is a day's, the value is not one; the entry is not dated.
+            continue
+        end = len(lines)
+        for later, later_level in starts[position + 1 :]:
+            if level is None or (later_level is not None and later_level <= level):
+                end = later
+                break
+        entries.append((day, "\n".join(lines[start:end]).strip()))
+    return entries
+
+
+def rewritten_complaint_entries(path: Path, before: str, after: str, day: date) -> list[str]:
+    """Dated COMPLAINTS entries a commit changes or deletes (QUAL-11).
+
+    An entry dated before the commit is a record, and a paragraph appended after it
+    leaves its text intact; editing a word of it or removing the entry does not. An
+    entry dated the commit's own day is still in flight.
+    """
+    errors: list[str] = []
+    for entry_day, text in dated_entries(before):
+        if entry_day >= day or text in after:
+            continue
+        said = " ".join(text.split())[:60]
+        errors.append(f"{path}: the entry dated {entry_day}, beginning {said!r}, was changed or deleted; a dated entry records what that day found, so a correction is a new entry dated {day} (QUAL-11)")
+    return errors
+
+
 def commit_day(version: str) -> date:
     """The calendar day Git records for the commit being validated.
 
-    The staged index holds no commit yet, so this is the day Git is about to write: the
-    day in `GIT_COMMITTER_DATE` when a session sets one, the wall clock otherwise. A
-    committed candidate carries its own committer date.
+    The staged index holds no commit yet, so this is the day Git is about to write.
+    `git var GIT_COMMITTER_IDENT` is Git's own parse of `GIT_COMMITTER_DATE` — the raw
+    `<epoch> <zone>`, ISO 8601 and RFC 2822 forms alike — and prints the timestamp with
+    the zone the commit records, so the day is that zone's. A committed candidate
+    carries its own committer date.
     """
     if version != "index":
-        stamp = subprocess.run(["git", "log", "-1", "--format=%cs", version], check=True, stdout=subprocess.PIPE, text=True).stdout.strip()
-        return date.fromisoformat(stamp)
-    override = os.environ.get("GIT_COMMITTER_DATE", "").strip()
-    if ISO_DAY.match(override[:10]):
-        return date.fromisoformat(override[:10])
-    if epoch := EPOCH_DAY.match(override):
-        return datetime.fromtimestamp(int(epoch[1])).date()
-    return date.today()
+        stamp = subprocess.run(["git", "log", "-1", "--format=%cI", version], check=True, stdout=subprocess.PIPE, text=True).stdout.strip()
+        return datetime.fromisoformat(stamp).date()
+    ident = subprocess.run(["git", "var", "GIT_COMMITTER_IDENT"], check=True, stdout=subprocess.PIPE, text=True).stdout
+    stamp, zone = ident.split()[-2:]
+    offset = timedelta(hours=int(zone[1:3]), minutes=int(zone[3:5]))
+    if zone[0] == "-":
+        offset = -offset
+    return (datetime.fromtimestamp(int(stamp), timezone.utc) + offset).date()
 
 
-def comparison_revision(version: str) -> str | None:
+def comparison_revision(version: str) -> str:
     """The revision a changed blob is compared with when its caller names no base.
 
     The index becomes a commit whose parent is HEAD. A committed candidate is compared
@@ -284,36 +356,85 @@ def comparison_revision(version: str) -> str | None:
     return f"{version}^"
 
 
-def previous_source(path: Path, revision: str | None) -> str | None:
-    """The same path at the revision a commit is compared against, when it is there."""
-    if revision is None:
-        return None
-    result = subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
-    return result.stdout if result.returncode == 0 else None
+def revision_exists(revision: str) -> bool:
+    """Whether Git resolves `revision` to a commit in this repository."""
+    return subprocess.run(["git", "rev-parse", "--verify", "--quiet", f"{revision}^{{commit}}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
 
 
-def changed_audit_events(selected: list[tuple[GitChange, str]], base: str | None = None) -> list[str]:
+def previous_source(path: Path, revision: str) -> str:
+    """The text at `path` in `revision`, or the empty text when there is none.
+
+    A card added in this commit has no earlier blob, and a repository's first commit has
+    no earlier revision; both are empty sources, established by asking Git for the
+    revision and for the path. Any other `git show` failure is raised, never read as
+    absence.
+    """
+    if not revision_exists(revision):
+        return ""
+    if subprocess.run(["git", "cat-file", "-e", f"{revision}:{path.as_posix()}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode:
+        return ""
+    return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
+
+
+def changed_paths(version: str, base: str) -> tuple[dict[Path, Path], list[Path]]:
+    """Git's rename records and deletions for one version's diff against `base`.
+
+    A rename is one change at its new path, so the earlier text of a moved card is read
+    from the path Git names as its source. The deleted paths let a move whose content
+    changed below Git's similarity threshold keep the earlier text through the card's
+    own id.
+    """
+    if not revision_exists(base):
+        return {}, []
+    command = ["git", "diff", "--find-renames", "--name-status", "-z"]
+    command.extend(["--cached", base] if version == "index" else [base, version])
+    listing = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout
+    fields = listing.split("\0")
+    moves: dict[Path, Path] = {}
+    deleted: list[Path] = []
+    index = 0
+    while index < len(fields) and fields[index]:
+        status = fields[index]
+        if status[0] in "RC":
+            if status[0] == "R":
+                moves[Path(fields[index + 2])] = Path(fields[index + 1])
+            index += 3
+        else:
+            if status[0] == "D":
+                deleted.append(Path(fields[index + 1]))
+            index += 2
+    return moves, deleted
+
+
+def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> list[str]:
     """Refuse a commit that rewrites an audit event dated before it (QUAL-11)."""
-    per_version: dict[str, tuple[str | None, date]] = {}
     errors: list[str] = []
-    for change, source in selected:
-        if change.version not in per_version:
-            per_version[change.version] = (base if base is not None else comparison_revision(change.version), commit_day(change.version))
-        revision, day = per_version[change.version]
-        errors.extend(rewritten_audit_events(change.path, previous_source(change.path, revision) or "", source, day))
+    for version in dict.fromkeys(change.version for change, _ in selected):
+        day = commit_day(version)
+        moves, deleted = changed_paths(version, base)
+        retired = {card_id: path for path in deleted if (card_id := source_identity(previous_source(path, base))) is not None}
+        for change, source in selected:
+            if change.version != version:
+                continue
+            earlier = moves.get(change.path, change.path)
+            if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
+                earlier = retired.get(card_id, change.path)
+            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day))
     return errors
 
 
-def check_git_changes(changes: list[GitChange], base: str | None = None) -> int:
-    """Validate card and wiki blobs selected by the shared hook or a manual range check.
+def check_git_changes(changes: list[GitChange], base: str) -> int:
+    """Validate card, wiki and complaint blobs selected by the shared hook or a range check.
 
     Diagrams are compiled here because the site build is the only other place
     that compiles them, and a malformed one otherwise first fails the deploy.
 
-    `base` is the revision every changed blob is compared with; left out, each change is
-    compared with the revision its own commit descends from (`comparison_revision`).
+    `base` is the revision every changed blob is compared with: the parent of the staged
+    index, or the base of an outgoing range. The caller names it, because the two
+    selections have different ancestors.
     """
     cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
+    complaints = [change for change in changes if change.path == COMPLAINTS]
     errors: list[str] = []
     bodies: list[tuple[Path, str]] = []
     selected: list[tuple[GitChange, str]] = []
@@ -339,11 +460,15 @@ def check_git_changes(changes: list[GitChange], base: str | None = None) -> int:
         except RuntimeError as exc:
             errors.append(f"{change.path}: {exc}")
     errors.extend(changed_audit_events(selected, base))
+    for change in complaints:
+        revision = "" if change.version == "index" else change.version
+        source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
+        errors.extend(rewritten_complaint_entries(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
-    print(f"Card YAML and schema: {len(cards)} changed file(s) checked")
+    print(f"Card YAML and schema: {len(cards) + len(complaints)} changed file(s) checked")
     return 0
 
 
@@ -419,14 +544,14 @@ def check_references(revisions: list[str]) -> int:
     return 0
 
 
-def check_git_cards(version: str, diff_args: tuple[str, ...], base: str | None = None) -> int:
+def check_git_cards(version: str, diff_args: tuple[str, ...], base: str) -> int:
     """Validate Git blobs selected by diff, including Git's temporary commit index.
 
     Git's diff --name-only -z and show :path / revision:path interfaces own
     selection and blob transport (git-diff and gitrevisions manuals).
     """
     names = subprocess.run(
-        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/", "wiki/"],
+        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()],
         check=True,
         stdout=subprocess.PIPE,
         text=True,
@@ -601,7 +726,7 @@ def main(argv: list[str] | None = None) -> int:
     corpus = Corpus(Path.cwd())
     try:
         if args.command == "check-staged":
-            return check_git_cards("index", ("--cached",))
+            return check_git_cards("index", ("--cached",), "HEAD")
         if args.command == "check-range":
             return check_git_cards("HEAD", (args.base, "HEAD"), args.base) or check_references(["HEAD"])
         if args.command == "check-changes":
@@ -611,9 +736,13 @@ def main(argv: list[str] | None = None) -> int:
             if any((change.version == "index") != (args.mode == "staged") for change in changes):
                 raise ValueError("Git blob versions must match the requested validation mode")
             if args.mode == "staged":
-                return check_git_changes(changes)
+                return check_git_changes(changes, "HEAD")
             # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09).
-            return check_git_changes(changes) or check_references(["HEAD", *dict.fromkeys(change.version for change in changes)])
+            versions = list(dict.fromkeys(change.version for change in changes))
+            failed = 0
+            for version in versions:
+                failed |= check_git_changes([change for change in changes if change.version == version], comparison_revision(version))
+            return failed or check_references(["HEAD", *versions])
         if args.command in ("list", "unsolved", "sample"):
             if args.command == "sample" and args.count <= 0:
                 raise ValueError("sample count must be positive")
@@ -665,7 +794,7 @@ def main(argv: list[str] | None = None) -> int:
             # Validate that same source before taking the content-only commit route; the
             # comparison reads the base blob by its repository-relative path.
             corpus.header(path)
-            rewritten = rewritten_audit_events(Path(relative), previous_source(Path(relative), "HEAD") or "", path.read_text(), commit_day("index"))
+            rewritten = rewritten_audit_events(Path(relative), previous_source(Path(relative), "HEAD"), path.read_text(), commit_day("index"))
             if rewritten:
                 raise ValueError("\n".join(rewritten))
             subprocess.run(["git", "--literal-pathspecs", "commit", "--only", "--no-verify", "-m", args.message, "--", relative], check=True)
