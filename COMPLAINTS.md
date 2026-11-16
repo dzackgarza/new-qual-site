@@ -2851,3 +2851,17 @@ The `E-HAT-2.C-6`, `E-HAT-2.C-1`, `E-HAT-3.A-1`/`4.1-1` and `E-HAT-4.1-9` paragr
 
 - **`E-HAT-4.1-7`.** The paragraph says the piece over $\partial I^n\times I\times I$ is filled by a map into $A$ from three faces of a square, "a subcomplex of the cube", and that this gives the homotopy of triples from $V_1$ to $W_1$. That is false. The three prescribed faces do not force the value $v(s)$ on $J^{n-1}\times I\times I$, so the value on $J^{n-1}\times\{1\}\times I$ need not be $a_1$; and an arbitrary subspace $A$ has no cell-extension property, so a map on a subcomplex of the cube into $A$ need not extend over the cube. The fill and the sentence that $I^{n+2}$ is $J^{n+1}$ with one cell attached along $\partial I^{n+1}\subset J^{n+1}$ are withdrawn. The lemma is now proved by May's fibration $p:(X,A)^{(CS^{n-1},S^{n-1})}\to A$ and the homotopy lifting property, with no extension into $A$: two lifts of the path $v$ with the same initial point are homotopic through lifts, and the track at $s=1$ joins $V_1$ to $W_1$ in the fibre $F_{a_1}$. May, *A Concise Course in Algebraic Topology*, §5, printed pp. 68--69. The card's event restored from `1f84ed8f2c` was added by `91078b37d9`, not pushed by `58a42f4703`, which touched only `E-HAT-3.B-4`; and Davis--Kirk's text version is `tmp/sources/davis-kirk-lecture-notes-algebraic-topology.md`.
 - **`E-HAT-4.1-9`.** The paragraph says the surjectivity half at the window centred at $\pi_2(X,A,x_0)$ is open. It is not: the boundary map factors as $h=q\circ\partial$ with $\partial$ a homomorphism into $\pi_1(A)$ and $q$ the map of the pair sequence whose kernel is the image of $\pi_1(B)$, so the fibres of $h$ are cosets of $\ker h=\operatorname{im}(\pi_2(X,B)\to\pi_2(X,A))$; the same holds for $h'$ on the triple $(Y,C,D)$, and the chase then writes $c'=\gamma(g(b)a)$ for an arbitrary $c'\in\pi_2(Y,C)$. Both directions at that window are proved on the card. **Open, and stated as open:** both directions at the two $\pi_1$ pointed-set windows, where the chase gives only triviality of the fibre over the base point.
+
+## `SRC-TEXT-HART77` #121: the fourth pass's correction is dated 2026-11-16, and its $d=2$ second equation reads $x=1$
+
+The entry "the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation
+in a new entry" above is the correction the last review required, and it carries no day of its own: the only
+date on its heading, 2026-11-11, is the date of the paragraph it restores. The gate dates an entry by the
+first date on its opening line, so that entry reads as one of 2026-11-11 and is left as written. This entry
+dates the correction: the fourth pass is of 2026-11-16.
+
+Its "The computation, stated here" bullet specializes the two partial-vanishing equations at $d=2$ as
+"$1=y$ and $x=y$". The second displayed equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not
+$x=y$; $x=y$ is the separate derived relation $x=y^{d-1}$. With $1=y$ the two equations give
+$(x,y)=(1,1)$, so the bullet's conclusion $x=1$, its $x\ne0$, and its value $3x=3$ for the equation at that
+point are unchanged.
