@@ -153,6 +153,63 @@ audit:
     b_5+b_6 = a or b_5+b_6 < a together with b_4 <= a/3 or b_4 >= a/3.
     Left open and recorded in COMPLAINTS: the two reductions the answer
     states without proof, and the range of NTU's first case.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass, on the second reader's findings for this card. Read again:
+    answer 2476483 in
+    tmp/sources/mse-2475661-hart-v410-freshman-calculus.md, whose line 31
+    carries the weak order 0 <= b_1 <= ... <= b_6 with a >= b_5+b_6 and
+    2a >= b_2+...+b_6, and whose line 76 lists (0,0,0,0,0,a) among its
+    maximisers; and Chapter V §4 Exercise 10 of
+    tmp/sources/ntu-ag2-chapter5.md, printed p. 17, read in the text version
+    and checked on printed p. 17 of tmp/sources/ntu-ag2-chapter5.pdf, whose
+    folio is the PDF page. The set M of step maximiser now carries the
+    answer's 0 <= b_1: the earlier 0 < b_1 excluded the source's own
+    maximiser (0,0,0,0,0,a) and, with it, the closedness the step invokes.
+    The vector of step case-large stands and its justification is corrected:
+    b_1 = b_2, b_5 = b_4 and b_6 = a-b_4 come from step maximiser and
+    b_3 = a-b_4-b_2 from b_2+b_3+b_4 = a, so b_2 = b_3 is not assumed there.
+    The NTU comparison line, printed p. 17, is described as printed: its
+    fraction is the vertex b_1^* = (1/3)(b_2+b_3+b_4+b_5), so the printed left
+    side is b_1^*-(b_3+b_4+b_5) = (1/3)(b_2-2(b_3+b_4+b_5)), negative at every
+    datum, while the printed right side (1/3)(2b_2-(b_3+b_4+b_5)) =
+    2b_1^*-(b_3+b_4+b_5) is the midpoint comparison the proof uses; the slip
+    is the printed denominator -(3/4).2 where -(3/4) is meant. The earlier
+    account, that the left side was b_1^*-T/2 and the right side twice it, of
+    the same sign, is false of the printed line and is withdrawn. The answer's
+    equalities b_2 = b_3 = b_4 and b_2+b_3+b_4 = a are its own one-clause
+    reasons, of the same kind as its b_6 and b_1 increases, so the card names
+    them as the answer's and counts neither as open; the COMPLAINTS record of
+    this date, which called them open, and the earlier version of that record,
+    which called the monotone increases open, are corrected in a new record of
+    this date. The claim of step second-argument now carries the range
+    b_1 <= 2b_2, the condition under which its first case's increase of
+    b_3,b_4,b_5 is available, and the clause that said the increase was
+    available only while b_3 <= b_2, which holds of every datum, is replaced by
+    it. Not checked in this pass: the printed text of that page beyond its
+    folio, and no source outside these two was read for this card.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The four corrections above: the set M stated with 0 <= b_1 as the answer
+    states it, each reduction attributed to the answer it comes from, step
+    second-argument's claim restricted to b_1 <= 2b_2, and the NTU printed
+    line described as printed. No proof of any part was added; the reductions
+    are the answer's one clause each and none was expanded.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the whole card beside both sources. Rechecked that every
+    maximiser of M with 0 <= b_1 falls under steps case-small, case-large and
+    case-open, that the endpoint values a^2, 15a^2/16 and 24a^2/25 and the
+    values 2b_4b_5-2b_5^2 and 2b_4b_5-b_5^2 are those of the vectors
+    displayed with them, and that the printed left and right sides of NTU's
+    comparison line are the two computed above. Not verified: nothing beyond
+    those two sources, and no third reading of the NTU page as an image.
 ---
 
 ::: {.problem}
@@ -215,7 +272,7 @@ $a^2>\sum_ib_i^2$.
 ::: {.pf-step #maximiser}
 Fix $a>0$ and let $M$ be the set of $b$ with
 $$
-0<b_1\le\cdots\le b_6,
+0\le b_1\le\cdots\le b_6,
 \qquad
 b_5+b_6\le a,
 \qquad
@@ -253,8 +310,9 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2=b_3=b_4$: the reason given in the answer is that otherwise $b_3$ or $b_2$
-could be increased. Together with $b_1=b_2$ and $b_5=b_4$ from step [](#maximiser){.pf-ref} this
+At such a maximiser $b_2=b_3=b_4$, which answer 2476483 states with the reason that otherwise
+$b_3$ or $b_2$ could be increased. Together with $b_1=b_2$ and $b_5=b_4$ from step
+[](#maximiser){.pf-ref} this
 makes $b_1,\ldots,b_5$ equal to $b_4$, and $b_6=a-b_4$, so
 $$
 \sum_ib_i^2=5b_4^2+(a-b_4)^2=6b_4^2-2ab_4+a^2 .
@@ -274,8 +332,9 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2+b_3+b_4=a$, the reason given in the answer being again that otherwise
-$b_3$ or $b_2$ could be increased; with $b_2=b_3$ this gives
+At such a maximiser $b_2+b_3+b_4=a$, which the answer states with the same reason that otherwise $b_3$
+or $b_2$ could be increased; with $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step
+[](#maximiser){.pf-ref} this gives
 $$
 b=(b_2,b_2,a-b_4-b_2,b_4,b_4,a-b_4).
 $$
@@ -331,7 +390,8 @@ $$
 :::
 
 ::: {.pf-step #second-argument}
-The inequality holds as well by the second argument, which needs no maximiser.
+The inequality holds as well by the second argument, which needs no maximiser, for those data of the
+decreasing order that satisfy $b_1\le2b_2$.
 
 ::: pf-proof
 The second argument keeps the decreasing order $b_1\ge b_2\ge\cdots\ge b_6$ and opens with the
@@ -352,9 +412,9 @@ and since the conclusion $a^2\ge\sum_ib_i^2$ becomes harder as $a$ decreases, it
 for the value $a=\max\{b_1+b_2,\frac12(b_1+\cdots+b_5)\}$.
 
 If $b_1+b_2\ge b_3+b_4+b_5$ then $a=b_1+b_2$, and the argument increases $b_3,b_4,b_5$ so as to have
-$b_1+b_2=b_3+b_4+b_5$; that increase is available only while $b_3\le b_2$, so it fails once
-$b_1>2b_2$, for instance at $b=(10,1,1,1,1,1)$, where $b_3+b_4+b_5$ cannot reach $b_1+b_2=11$ under
-the ordering. Under $b_1+b_2=b_3+b_4+b_5$, replacing the three entries $b_1,b_2,b_6$ by
+$b_1+b_2=b_3+b_4+b_5$; the three entries are at most $b_2$, so that increase is available only while
+$b_1\le2b_2$, and it fails once $b_1>2b_2$, for instance at $b=(10,1,1,1,1,1)$, where
+$b_3+b_4+b_5$ cannot reach $b_1+b_2=11$ under the ordering. Under $b_1+b_2=b_3+b_4+b_5$, replacing the three entries $b_1,b_2,b_6$ by
 $b_1+b_2-b_3$, $b_3$ and $b_5$ keeps $b_1+b_2$ and $b_1+\cdots+b_5$, keeps the ordering, and by the
 observation does not decrease $\sum_ib_i^2$, so one may assume $b_2=b_3$ and $b_5=b_6$. Then
 $b_1=b_4+b_5\ge b_2$ and
@@ -383,10 +443,16 @@ b_1^{*}-\tfrac12(b_3+b_4+b_5)=\tfrac16\left(2b_2-(b_3+b_4+b_5)\right)\le0,
 $$
 so the vertex lies at or to the left of the midpoint, the right endpoint is the farther one, and the
 minimum on the range is at $b_1=b_3+b_4+b_5-b_2$, that is, at $b_1+b_2=b_3+b_4+b_5$, which is the
-preceding case. The printed line states this comparison with the right-hand side
-$\frac13(2b_2-(b_3+b_4+b_5))$, twice the value of the left-hand side, and leaves the constant $\ast$
-unwritten; the sign, which is what the comparison uses, is that of $2b_2-(b_3+b_4+b_5)$ on both
-sides.
+preceding case. The printed line makes this comparison and leaves the constant $\ast$ unwritten, but
+its vertex term carries one factor of $2$ too few: its fraction
+$\frac{-\frac12(b_2+b_3+b_4+b_5)}{-\frac34\cdot2}$ is the vertex
+$b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$, so the left side as printed is
+$b_1^{*}-(b_3+b_4+b_5)=\frac13\left(b_2-2(b_3+b_4+b_5)\right)$, which is negative because
+$b_2\le b_3+b_4+b_5$, and is not the quantity the printed line compares with $0$. With $-\frac34$ in
+the denominator that fraction would be $2b_1^{*}$, and the left side would read
+$2b_1^{*}-b_2-(b_3+b_4+b_5-b_2)=\frac13\left(2b_2-(b_3+b_4+b_5)\right)$, which is the right side as
+printed and is $\le0$ by $2b_2\le b_3+b_4+b_5$: the comparison and the sign are the printed ones, and
+the missing factor is in the vertex term.
 :::
 
 :::
@@ -429,5 +495,6 @@ Exercise 10, by Shuang-Yen Lee, printed p. 17: the observation on $x+y=z+w$ and 
 reduction to $a=\max\{b_1+b_2,\frac12(b_1+\cdots+b_5)\}$ in the decreasing order, and the two cases;
 the first is carried out at the two endpoint values of the quadratic in $b_2$, and its initial
 increase of $b_3,b_4,b_5$ to $b_1+b_2=b_3+b_4+b_5$ needs $b_1\le2b_2$; the second compares the vertex
-of a downward quadratic with the midpoint of its range, with the factor $2$ noted on the card.
+of a downward quadratic with the midpoint of its range, the printed line carrying one factor of $2$
+too few in that vertex term.
 :::
