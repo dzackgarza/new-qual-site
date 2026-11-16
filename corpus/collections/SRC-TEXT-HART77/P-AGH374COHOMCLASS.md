@@ -192,15 +192,15 @@ of a divisor is cup product with the $d\log$ class: $\iota_*(\beta)$ pairs with
 every $\nu$ as $c(\mcl(Y))\smile\beta$ does, for every lift of $\beta$.
 
 (B) Base change for a transverse hyperplane section: if $H\subseteq X$ is a
-nonsingular hyperplane meeting the nonsingular $Y$ transversely, and
-$Z=Y\cap H$, then
+nonsingular divisor meeting the nonsingular $Y$ transversely, and $Z=Y\cap H$,
+then
 $$
 i^*j_*=(j_H)_*\,i_Y^*
 $$
-for the four inclusions of the square of step [](#s2){.pf-ref}. This is the
-compatibility the printed hint uses when it says to "cut with a hyperplane
-$H\subseteq X$"; it is the projection formula for the trace, read for the
-transverse pair $(Y,H)$.
+for the four inclusions of the square of step [](#s2){.pf-ref}; in this
+solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
+printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
+the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
