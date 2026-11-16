@@ -137,6 +137,20 @@ audit:
     answer's. The repaired answer value 1584888044 in that event is correct, and the date 2020-03-22
     stands. Nothing else changes: the statement as printed on p. 184, every step of the proof, and the
     description of the two answers stand. The same correction is made in COMPLAINTS.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: one sentence of the record, and one false
+    attribution in it. The `source-corrected` event of this date beginning "#123 reader's
+    report, second pass on this card" says the value 1584866744 "is the question's number,
+    not the answer's". Read again through the Stack Exchange API on 2026-11-16, question
+    3590105 has `creation_date` **1584866748** and the accepted answer 3590397 has
+    **1584888044**, so 1584866744 is neither the question's nor the answer's: the
+    correction that event makes is right about the answer's number and wrong about whose
+    number the old one was. The date 2020-03-22 stands, answer 4874176 is dated 2024-03-02,
+    and the body of the card names both by date only, so nothing on the card changes. Not
+    claimed: a published solution of Exercise 2.C.1, which has not been located.
 ---
 
 ::: {.problem}
