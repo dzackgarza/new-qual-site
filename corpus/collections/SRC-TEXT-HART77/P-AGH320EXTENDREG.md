@@ -59,6 +59,28 @@ audit:
     source's chapter has no example of a failure in dimension one, and step s5's
     punctured line is the card's own.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The exercise itself now has published proofs, not only its commutative
+    algebra input. Printed exercise read: Hartshorne, Algebraic Geometry (1977),
+    I.3.20, printed p. 23 (PDF p. 38 of the extraction). Read hwong557's accepted
+    answer 1791316 to Mathematics Stack Exchange question 1791250
+    (tmp/sources/mse-1791250-regular-functions-extension-normal-points.md) and
+    Hetong Xu's answer 3771982 to question 846109
+    (tmp/sources/mse-846109-hartshorne-problem-i-3-20.md); both reduce to
+    O_{P,Y} = intersection of the height-one localizations, then prove the given
+    rational function g/h lies in each by producing a closed point Q != P of
+    Z(q) from dim >= 2 and the regularity of f at Q. Checked that this is step
+    s2 with q running over ht-one primes of O_{P,Y}, that the intersection
+    theorem they cite (Matsumura 11.5 in 846109) is the one step s3 applies, and
+    that neither answer proves (b), whose punctured line stays the card's. Vakil
+    13.5.19 with its proof at 13.5.21-13.5.25 stays cited for the theorem
+    itself, since Matsumura is not on this machine. Not checked: the remaining
+    part of Hetong Xu's answer after the height-one reduction, and any other
+    answer on those two questions.
+
 ---
 
 ::: {.problem}
@@ -234,5 +256,7 @@ The height-one intersection theorem that step [](#s3){.pf-ref} applies is proved
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.20.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 3.20.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.20, PDF p. 38, text version `tmp/sources/hartshorne-solutions-egbert.md`, writes "Since projective space is proper this works" for (a) and "Consider a single variable complex function with a pole" for (b); neither is an argument for the statement.
-No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b).
+No Hartshorne solution set contains a proof of this exercise, and Vakil's book proves the algebra lemma rather than the exercise; the published proofs of the exercise itself are the two answers below. The proof above reduces to the local ring $\mco_{P,Y}$, shows the rational function lies in every height-one localization by finding a closed point of $V(\mathfrak p)$ other than $P$, and cites the lemma for the intersection; the punctured line $1/x\in\mco(\AA^1\setminus\theset{0})\setminus\mco_0$ is (b), and it is in neither answer.
+
+The first answer is the accepted answer of hwong557, answer 1791316 to question 1791250, *Regular functions extension to normal points of varieties*, text version `tmp/sources/mse-1791250-regular-functions-extension-normal-points.md`, states the height-one intersection for $A(Y)_{\mathfrak m_P}$ and continues: "Our given $f$ is a rational function so must be of the form $g/h$, where $g$ and $h$ lie in $A(Y)$ and $h\ne0$. It remains to show that $h$ is not in any height $1$ prime $\mathfrak q\subset\mathfrak m_P$, because then $f$ will lie in $A(Y)_{\mathfrak m_P}$ so $f$ will be regular at $P$. If $h$ were in such a prime $\mathfrak q$, then $h$ would vanish on $Z(\mathfrak q)$. We can find a point $Q\ne P$ in $Z(\mathfrak q)$ because $\dim Y\ge2$ (basically $\mathfrak q\subsetneq\mathfrak m_P$ by Hartshorne Thm 3.2c). But $f$ is regular at $Q$ so $h$ cannot vanish at $Q$. So $h\notin\mathfrak q$, as desired." That is step [](#s2){.pf-ref}, with $\mathfrak q$ ranging over the height-one primes of $\mco_{P,Y}$ and $Q$ the closed point it finds. The answer of Hetong Xu, answer 3771982 to question 846109, *Hartshorne Problem I.3.20*, text version `tmp/sources/mse-846109-hartshorne-problem-i-3-20.md`, gives the same reduction to $A(Y)$ and to the height-one primes $\mathfrak q\subset\mathfrak m_P$ with the steps written out, and takes the intersection theorem itself from Matsumura, *Commutative Ring Theory*, Theorem 11.5, "Let $R$ be a normal Noetherian domain. Then $R=\bigcap_{\operatorname{ht}\mathfrak p=1}R_\mathfrak p$" --- the numbering the card has always carried. Part (b) is in neither answer: the punctured line of step [](#s5){.pf-ref} is the card's.
 :::

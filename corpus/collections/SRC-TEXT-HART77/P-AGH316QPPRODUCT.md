@@ -41,6 +41,27 @@ audit:
     against it: the two projections, local closedness, closedness, and the
     universal property on affine charts. Not checked: Bertram's graded-ring
     remark.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the quoted passage this pass. Printed exercise read: Hartshorne,
+    Algebraic Geometry (1977), I.3.16, printed p. 22 (PDF p. 37 of the
+    extraction). Bertram, Algebraic Geometry (Math 6130, Utah), Section 4,
+    Proposition 4.3 with its proof and the three displays after it, printed
+    pp. 5-6, text version tmp/sources/bertram-utah-6130-varieties.md: the
+    proposition says the Segre embedding "exhibits the product of projective
+    spaces as a projective variety", its proof says the triple is universal "in
+    the category of prevarieties", gives the two projections by their formulas,
+    and then gives Y x Z = V(<F_i(x_00,...,x_m0), G_j(x_00,...,x_0n)>) for
+    closed Y, Z and U x V = Y x Z - pi_2^{-1}(Z-V) - pi_1^{-1}(Y-U) for open
+    U, V. Verified each against the card: projections in step s1, local
+    closedness and irreducibility in s2, closedness in s3, universality in s4.
+    Recorded as a gap: Bertram's universality is in prevarieties, so his
+    Proposition 4.3 alone does not give (c) in the category of varieties, whose
+    objects Hartshorne takes irreducible; the irreducibility of X x Y is this
+    card's step s2, and the remark says so.
+
 ---
 
 ::: {.problem}
@@ -225,7 +246,7 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), re
 :::
 
 ::: {.remark title="Published solution"}
-The complete published argument for (a)--(c) is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. For closed $Y=V(F_1,\ldots,F_a)$ and $Z=V(G_1,\ldots,G_b)$ it gives $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle)$, and for open $U\subseteq Y$, $V\subseteq Z$ it gives $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is parts (b) and (a). That is exactly the content of steps [](#s1){.pf-ref}--[](#s4){.pf-ref}: the two projections as morphisms, local closedness, closedness for projective factors, and the universal property read on affine charts.
+The complete published argument for (a)--(c) is Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 and the paragraphs following it, printed pp. 5--6: the Segre map "exhibits the product of projective spaces as a projective variety", the image is $V(\langle x_{ij}x_{kl}-x_{il}x_{jk}\rangle)$ with the two projections given by $\pi_1(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_mb_0)$ and $\pi_2(\ldots:a_ib_j:\ldots)=(a_0b_0:\cdots:a_0b_n)$, and universality is proved by taking an open affine $U\subseteq W$ with $p_1(x)=(\varphi_0(x):\cdots:\varphi_m(x))$ and $p_2(x)=(\psi_0(x):\cdots:\psi_n(x))$ in $k(U)$, whereupon the unique set map is $f(x)=(\ldots:\varphi_i(x)\psi_j(x):\ldots)$, a morphism. For closed $Y=V(F_1,\ldots,F_a)$ and $Z=V(G_1,\ldots,G_b)$ it gives $Y\times Z=V(\langle F_i(x_{00},\ldots,x_{m0}),\ G_j(x_{00},\ldots,x_{0n})\rangle)$, and for open $U\subseteq Y$, $V\subseteq Z$ it gives $U\times V=Y\times Z-\pi_2^{-1}(Z-V)-\pi_1^{-1}(Y-U)$, which is parts (b) and (a). That is exactly the content of steps [](#s1){.pf-ref}--[](#s4){.pf-ref}: the two projections as morphisms, local closedness, closedness for projective factors, and the universal property read on affine charts. One qualification, which the card's remarks do not hide: he proves the universal property "in the category of prevarieties", and his $X$ is a projective variety, so irreducible; for quasi-projective factors the irreducibility of $X\times Y$ is needed to be an object of Hartshorne's category of varieties, and that is step [](#s2){.pf-ref}, which derives it from the affine product charts and the irreducibility of $X$ and $Y$. With it, his universality is the universality in varieties.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), gives no solution to 3.16.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.16, PDF p. 14, text version `tmp/sources/hartshorne-solutions-troiani.md`: for (a) and (b) he writes $X=Z(\mathfrak a)$, $Y=Z(\mathfrak b)$ and forms, for $f_1\in\mathfrak a$ and $f_2\in\mathfrak b$, the polynomial $g(\{z_{ij}\})=\sum_{i,j}\alpha_{ij}z_{ij}$ from the expansion of $f_1(x)f_2(y)$, so that $f_1(P_1)f_2(P_2)=0$ exactly when $g(\psi(P_1,P_2))=0$; he does not treat (c).
