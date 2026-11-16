@@ -2894,10 +2894,9 @@ The `E-HAT-2.C-6`, `E-HAT-2.C-1`, `E-HAT-3.A-1`/`4.1-1` and `E-HAT-4.1-9` paragr
 
 The entry "the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation
 in a new entry" above is the correction the last review required; the note at its foot dates it 2026-11-16,
-and its heading's only day, 2026-11-11, is the date of the paragraph it restores. The QUAL-11 gate dates an
-entry by the first date on its opening line, so the section reads as one of 2026-11-11 and is left as
-written. This entry is the correction's dated entry, and it records the one mathematical repair the
-correction needs.
+and its heading's only day, 2026-11-11, is the date of the paragraph it restores. QUAL-11 dates an entry by
+the first date on its opening line, so the section reads as one of 2026-11-11 and is left as written. This
+entry is the correction's dated entry, and it records the one mathematical repair the correction needs.
 
 Its "The computation, stated here" bullet specializes the two partial-vanishing equations at $d=2$ as
 "$1=y$ and $x=y$". The second displayed equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not
