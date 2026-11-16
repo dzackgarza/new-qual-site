@@ -159,6 +159,29 @@ audit:
     else in that note changes: the ranges of the other retained sets it lists are as it gives them, no
     retained set reaches §2.C beyond Poulsen's 2.C.2, 2.C.8 and 2.C.9, Li's 2.C.2, 2.C.4 and 2.C.5 and
     DeMason's four, and no published solution of Exercise 2.C.6 was located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: three repairs. (1) The formula $h_{i'}=\alpha\circ h_i$
+    in the `source-corrected` event of this date is not defined: $\alpha$ is a map of the central sphere
+    $S^2$, while $h_i(T)$ lies largely outside $S^2$. Only the attaching chart of the partner on
+    $\partial T$ can be $\alpha\circ h_i$, and that is how the body now constructs it: the partner copy
+    is attached by the boundary chart $\restrictionof{\alpha\circ h_i}{\partial T}$, and its interior carries its
+    own embedding. The map $f$ interchanging $h_i(y)$ and $h_{i'}(y)$ is unchanged and agrees with
+    $\alpha$ on the interface because of that choice of chart. (2) The band comparison was wrong in the
+    body and in the entry of this date: it said that a band $D^1\times D^1$ attached along
+    $S^0\times D^1$ "adds no genus" and that $2m$ bands would give genus $m$. A band lowers $\chi$ by
+    $1$ --- the band has $\chi=1$ and the attaching region $S^0\times D^1$ has $\chi=2$ --- so the
+    reader's figure $\chi=2-6m$ for $2m$ bands does not follow either; and whether a band raises the
+    genus depends on the attaching data: it does when its two intervals lie on distinct boundary
+    circles, it does not when they lie on the same one. The body now says that, and the comparison is
+    no longer used to determine anything: the genus is computed from the punctured tori,
+    $\chi(M_{2m})=(2-2m)-2m=2-4m$. (3) Dugger does have a text version,
+    `tmp/sources/dugger-involutions-surfaces-2016.md`; the remark and the entry of this date said it
+    did not, and the remark and the opening sentence now name it. Unchanged and re-checked:
+    $\tau(f)=1-0-1=0$, the local-degree step at a point of the sphere region, the exercise as printed
+    on p. 184, and the printed pages 12 and 18 of Dugger.
 ---
 
 ::: {.problem}
@@ -166,7 +189,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere carrying $m$ antipodal pairs of genus handles, each genus handle a punctured torus glued to one hole of a pair: a pair of them adds two punctured tori to the sphere, so $m$ pairs give genus $2m$, since $\chi(M_{2m})=(2-2m)-2m=2-4m$. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
+Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12**, read in `tmp/sources/dugger-involutions-surfaces-2016.md` (the PDF is `tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere carrying $m$ antipodal pairs of genus handles, each genus handle a punctured torus glued to one hole of a pair: a pair of them adds two punctured tori to the sphere, so $m$ pairs give genus $2m$, since $\chi(M_{2m})=(2-2m)-2m=2-4m$. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
 
 ::: pf
 
@@ -176,7 +199,7 @@ Define a homeomorphism $f:M_{2m}\to M_{2m}$ by the antipodal map on the central 
 
 ::: pf-proof
 
-Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by $h_{i'}:=\alpha\circ h_i$, which is an attaching chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands, since a band $D^1\times D^1$ attached along $S^0\times D^1$ adds no genus, and a surface built from $2m$ bands would be of genus $m$. This is Dugger's $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
+Construct $M_{2m}$ and $f$ together. The surface is a sphere with $m$ antipodal pairs of open disks removed and a punctured torus --- a closed torus with an open disk removed --- glued to each of the $2m$ boundary circles, in charts matched by the antipodal map. Concretely, let $H_1,\dots,H_{2m}$ be disjoint closed disks in $S^2$ with $\alpha(H_i)=H_{i'}$ for the antipodal map $\alpha$ of $S^2$, put $A=S^2-\bigcup_j\operatorname{int}H_j$, and for each pair $\{i,i'\}$ attach two copies of one punctured torus $T$, the first by an embedding $h_i:T\to M_{2m}$ at $\partial H_i$ and the second by an embedding $h_{i'}:T\to M_{2m}$ whose attaching chart on $\partial T$ is $\restrictionof{\alpha\circ h_i}{\partial T}$, a chart of the partner because $\alpha$ carries $\partial H_i$ onto $\partial H_{i'}$. Only this boundary chart is defined by $\alpha$; the interior of the partner copy carries its own embedding, since $h_i(T)$ lies largely outside the sphere on which $\alpha$ is defined. Each of the $2m$ punctured tori contributes $-1$ to $\chi$ and the sphere with $2m$ holes contributes $2-2m$, so $\chi(M_{2m})=2-4m$ and the closed orientable surface $M_{2m}$ has genus $2m$. The pieces are genus handles: $m$ pairs of punctured tori, not $m$ pairs of bands. A band $D^1\times D^1$ attached along $S^0\times D^1$ lowers $\chi$ by $1$ --- the band has $\chi=1$ and the attaching region $S^0\times D^1$ has $\chi=2$ --- and whether it raises the genus depends on the attaching data: a band whose two attaching intervals lie on distinct boundary circles merges them and raises the genus by one, while one attached with both intervals on the same boundary circle splits that circle and leaves the genus unchanged. A count of $2m$ bands therefore does not determine the genus by itself, and the construction here is specified by its pieces. This is Dugger's $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$, each equivariant connected summand contributing a punctured torus and its mirror image.
 
 Define $f$ by $f=\alpha$ on $A$ and, on the copies of $T$, by
 $$
@@ -250,5 +273,5 @@ This gives the even-genus counterpart of Example 2C.4. Additional symmetric pair
 :::
 
 ::: {.remark title="Sources"}
-Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the exercise is Exercise 6 of §2.C, printed p. 184, and Example 2C.4, the genus-$3$ case it modifies, is printed p. 181 with the trace computation $\tau(f)=1-0-1$. Dugger, *Involutions on surfaces*, was read in the text layer of `tmp/sources/dugger-involutions-surfaces-2016.pdf`, which has no checked-in text version yet: Proposition 2.8 and the quotient $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on PDF page 12 = printed p. 12, and Theorem 4.1(a) on PDF page 18 = printed p. 18. Dugger works no Lefschetz number and does not treat the exercise; the identification of the involution and the trace computation are the card's own.
+Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the exercise is Exercise 6 of §2.C, printed p. 184, and Example 2C.4, the genus-$3$ case it modifies, is printed p. 181 with the trace computation $\tau(f)=1-0-1$. Dugger, *Involutions on surfaces*, was read in the text version `tmp/sources/dugger-involutions-surfaces-2016.md` (the PDF is `tmp/sources/dugger-involutions-surfaces-2016.pdf`): Proposition 2.8 and the quotient $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on printed p. 12, and Theorem 4.1(a) on printed p. 18. Dugger works no Lefschetz number and does not treat the exercise; the identification of the involution and the trace computation are the card's own.
 :::
