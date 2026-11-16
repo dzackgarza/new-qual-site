@@ -45,29 +45,39 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Read for issue #121 and cited the published proof of the strict-inequality
-    half on the card: J. Harris, A bound on the geometric genus of projective
-    varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, printed
-    pp. 42--44, read in
-    tmp/sources/harris-1981-bound-geometric-genus.md, whose page markers place
-    §2 in its first twenty pages. Step harris-bound transcribes Harris's
-    displays: M and epsilon at printed p. 42, the curve bound and the Poincaré
-    residue sequence at printed p. 43, the surface bound and the corollary
-    p_g = 0 for d <= k(N-k)+1 at printed p. 44; it replaces the step
-    nonspecial-below-2n of the 2026-09-20 solution, whose conditional
-    derivation of H^1(C,L) = 0 is subsumed. Checked against the exercise and
-    its hint at Hartshorne V.6.2, printed p. 423 (PDF p. 438, printed = PDF
-    minus 15), and against the book pages the other steps now name: Proposition
-    8.20 printed p. 182, Theorem 5.4 printed p. 343, Theorem 1.6 printed
-    p. 362 and Remark 7.15 printed p. 248. Read for the equality case: Yang
-    Pi-Yeh, solution 5.6.2, printed p. 115 of
-    tmp/sources/lfwin-hartshorne-solutions.pdf, read in
-    tmp/sources/lfwin-hartshorne-solutions.md, both halves present and two
-    steps unproved, namely H.K >= 0 in his chain 2n+2 <= 2-2g+2d <= d and the
-    passage from p_a = 1 to p_g = 1. The card keeps its own steps for those
-    two, and the gap is recorded in COMPLAINTS.md today. Not checked: Harris's
-    §1 and §§3--5, which the card does not use, and no other published proof
-    of the equality case was sought.
+    Read for issue #121, corrected in place on a reader's report of the same
+    day. Read: J. Harris, A bound on the geometric genus of projective
+    varieties, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, in
+    tmp/sources/harris-1981-bound-geometric-genus.md, whose per-page markers
+    cover twenty pages at a time, so the display at printed p. 44 was located
+    from the run of §2 and not from a marker of its own; Yang Pi-Yeh, solution
+    5.6.2, printed p. 115 of tmp/sources/lfwin-hartshorne-solutions.pdf,
+    read in tmp/sources/lfwin-hartshorne-solutions.md; A. Egbert, V.6.2,
+    printed p. 303 of tmp/sources/hartshorne-solutions-egbert.md, read in full
+    in this pass; and Hartshorne V.6.2 with its hint, printed p. 423, with
+    Proposition 8.20, printed p. 182, Theorem 5.4, printed p. 343, Theorem 1.6,
+    printed p. 362 and Remark 7.15, printed p. 248.
+
+    Corrected here, because the previous text of this note named the wrong gap.
+    Yang assumes p_g not zero, so K is effective and H.K >= 0 is immediate for
+    him, and Egbert states the same through Theorems 6.1--6.3; neither leaves
+    that step unproved. What both skip is the equality case of Clifford's
+    theorem: from h^0 = n+1 = d/2+1 they pass straight to d = 2g-2 and g = n+1
+    without saying which divisor of degree d attains equality, and without
+    excluding the hyperelliptic alternative. Egbert's entry, printed p. 303, is
+    a full sketch of both halves, not a garbled one: the earlier description of
+    it in COMPLAINTS.md, retained there as its own record, was not this pass's
+    reading and is corrected in COMPLAINTS.md today. The card's equality-case
+    steps, which the previous text of this note called the card's own while the
+    round called the case open, are now marked as the card's own in each step.
+
+    Also corrected: Hartshorne's Theorem 6.1 is on printed p. 422, not p. 421,
+    and the remark no longer carries text-version paths, the account of what
+    the two entries do not prove, or a verdict on Egbert's entry (QUAL-08,
+    SEC-7).
+
+    Not checked: Harris's §1 and §§3--5, which the card does not use, and no
+    published proof of the equality case beyond these two entries was sought.
 
 ---
 
@@ -290,6 +300,8 @@ Therefore
 $$
 p_g(X)=h^0(X,\omega_X)=0.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -344,6 +356,10 @@ The only remaining equality case in Clifford's theorem is therefore
 $$
 L\cong\omega_C.
 $$
+
+This step is the card's own: the reading of the equality case of Clifford's
+theorem, and the exclusion of the hyperelliptic case by the very ampleness
+of $L$, are not taken from any published solution of the exercise.
 :::
 
 :::
@@ -369,6 +385,8 @@ Since $C\sim A$, this degree is
 $$
 K_X\cdot A.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -414,6 +432,8 @@ p_g(X)
 h^0(X,\omega_X)
 =1.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -491,6 +511,8 @@ Thus $q\le0$, and hence
 $$
 q=0.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -520,6 +542,8 @@ $$
 A smooth projective surface over $\CC$ with trivial canonical bundle and
 $H^1(X,\OO_X)=0$ is a K3 surface. Hence the second alternative is exactly
 that $X$ is K3.
+
+This step is the card's own.
 :::
 
 :::
@@ -534,13 +558,11 @@ in the theorem.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, printed p. 423, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15), with the hint printed there: cut $X$ with a hyperplane and use Clifford's theorem (IV, 5.4, printed p. 343), and for the last statement use Riemann--Roch on $X$ (Theorem 1.6, printed p. 362) and Kodaira vanishing (Remark 7.15, printed p. 248).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, printed p. 423, with the hint printed there: cut $X$ with a hyperplane and use Clifford's theorem (IV, 5.4, printed p. 343), and for the last statement use Riemann--Roch on $X$ (Theorem 1.6, printed p. 362) and Kodaira vanishing (Remark 7.15, printed p. 248).
 
-The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), text version `tmp/sources/harris-1981-bound-geometric-genus.md`, §2, printed pp. 42--44, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
+The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, printed pp. 42--44, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
 $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
-and records, immediately after it, that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d\le2n-1$, that is $d<2n$, gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
+and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
 
-The equality case $d=2n$ has no complete published proof in the sets read. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`; read in `tmp/sources/lfwin-hartshorne-solutions.md`), states both halves and argues the second through Clifford, adjunction, Theorems 6.1--6.3 of the book and Kodaira vanishing, but two of its steps are not proved: the chain $2n+2\le2-2g+2d\le d$ uses $H\cdot K_X\ge0$, which is what the card's step [](#clifford-equality-canonical){.pf-ref} derives from Clifford's equality case instead, and its conclusion $p_a(X)=1$ is the arithmetic genus, whereas the theorem asks for $p_g(X)=1$, which the card's steps [](#trivial-canonical-pg-one){.pf-ref} and [](#irregularity-zero){.pf-ref} give together with $q(X)=0$. Its citation of "theorem 6.2" for $\linearsystem{12K}\ne\emptyset$ is to Theorem 6.1, printed p. 421, which identifies $\kappa=-1$ with $\linearsystem{12K}=\emptyset$ and with $X$ rational or ruled, and it uses $12K=0$ without saying that $H\cdot K_X=0$ with $H$ ample forces the effective divisor in $\linearsystem{12K}$ to be zero.
-
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, is a garbled sketch and is not used here.
+The equality case $d=2n$ is proved above by the card's own steps, [](#clifford-equality-canonical){.pf-ref} to [](#main-dichotomy){.pf-ref}, and each of them says so. The step they take that a solution of the exercise has to supply there is the equality case of Clifford's theorem: from $h^0(C,L)=n+1=d/2+1$ one gets $L\cong\omega_C$, so $d=2g-2$ and $g=n+1$, and the hyperelliptic alternative in Clifford's equality case has to be excluded, which very ampleness of $L$ does.
 :::
