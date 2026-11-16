@@ -389,6 +389,45 @@ audit:
     paragraph of the card that states them. Not checked: no source was reopened,
     and no step was re-derived beyond those substitutions.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, four items. (i) QUAL-01: the statement carried
+    the printed text of III.12.3 verbatim, and that text is false. It prints
+    h^0(t, I) and h^1(t, I) of the untwisted ideal sheaf with the values 0 away
+    from t = 0 and 1 at t = 0; but for every fibre the untwisted groups both
+    vanish, as the opening of the solution computes from 0 -> I_a -> O -> O_{X_a}
+    -> 0, so there is no jump and none can come from semicontinuity. The statement
+    now displays the twisted functions, h^0(P^4, I_t(1)) and h^1(P^4, I_t(1)),
+    with the same case values, which is what the card proves; the flat family and
+    the flatness of I are asked for unchanged. The solution's opening states the
+    mathematics of the untwisted case rather than calling the printed text false,
+    and the remark on the published solution says what the book displays. The
+    printed text is the one the events of this date record, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md at printed pp. 291--292; it
+    was not re-read in this pass. (ii) Attribution: the sentence after Kim's
+    quotation said that "the kernel of a surjection between flat modules is flat"
+    is the card's, "Kim's argument stopping at the citation". It is Kim's: his own
+    quoted sentence is that inference, the last two terms being flat. The
+    paragraph now says that the hypothesis of his sentence holds, its first term
+    being I, and that the general fact he uses is the one he names; nothing is
+    called the card's. (iii) The proof that the special fibre is reduced deduced
+    h^0(K(m)) = chi(K(m)) from H^1 = 0 alone, which needs all the positive-degree
+    cohomology to vanish. Serre vanishing supplies every i > 0 and the support of
+    K, a curve, makes i >= 2 vanish for every m; the step now says so and keeps
+    the generation argument that contradicts the vanishing. (iv) NOT-3, one
+    letter per object: the parameter of P^1 is s, as in the map nu_1 at the head
+    of the solution and in k[a,s,u] in the remark, but two of the card's own
+    sentences in step s1 wrote it as t, on a card where t is the parameter of T.
+    They now read s^4u^4 and k[a,s,u]; Yang's quoted parametrization keeps his t,
+    the sentence introducing it saying that his parameter of P^1 is this card's s.
+    The parameter of T is written a throughout the solution, and the head now
+    declares that the printed t = 0 and t = 1 are a = 0 and a = 1, so that the
+    steps' X_a, I_a and h^i(a, ...) and the statement's t name one object with one
+    letter each. The steps s3, s4 and s5 and the remark's accounts of Kim, of Yang
+    and of the two answers are otherwise unchanged, and no source was reopened.
+
 ---
 
 ::: {.problem}
@@ -398,13 +437,13 @@ Use (9.8.3) to construct a flat family $\theset{X_t}$ of curves in $\PP^4$, para
 
 Let $\mci \subseteq \mco_{\PP^4 \times T}$ be the ideal sheaf of the total family $X \subseteq \PP^4 \times T$. Show that $\mci$ is flat over $T$. Then show that
 $$
-h^0(t, \mci) =
+h^0(\PP^4, \mci_t(1)) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
 \end{cases}
 \qquad
-h^1(t, \mci) =
+h^1(\PP^4, \mci_t(1)) =
 \begin{cases}
 0 & t \neq 0 \\
 1 & t = 0
@@ -415,34 +454,32 @@ This gives another example of cohomology groups jumping at a special point.
 :::
 
 ::: {.solution}
-The cohomology claim printed in the exercise is false as stated: for every $t$,
+The parameter of $T=\AA^1$ is written $a$ below, so that the printed $t=0$ and $t=1$ are $a=0$ and $a=1$, the fibre over $a$ is $X_a$, and its ideal sheaf is $\mci_a$. The functions asked for are those of the twisted ideal sheaf; untwisted there is no jump, since for every $a$,
 $$
-h^0(t,\mci_t)=0,
+h^0(a,\mci_a)=0,
 \qquad
-h^1(t,\mci_t)=0 .
+h^1(a,\mci_a)=0 .
 $$
-Indeed $0\to\mci_t\to\OO_{\PP^4}\to\OO_{X_t}\to0$ gives
-$h^0(\mci_t)=\ker\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_t})\bigr)=0$, since
+Indeed $0\to\mci_a\to\OO_{\PP^4}\to\OO_{X_a}\to0$ gives
+$h^0(\mci_a)=\ker\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_a})\bigr)=0$, since
 $H^0(\OO_{\PP^4})=k$ restricts injectively, and it gives
-$h^1(\mci_t)=\operatorname{coker}\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_t})\bigr)
-=h^0(\OO_{X_t})-1=0$, since $H^1(\PP^4,\OO)=0$. Here $h^0(\OO_{X_t})=1$ for
-every $t$: for $t\ne0$ because $X_t$ is a connected reduced projective curve,
-and for $t=0$ because the flat limit is reduced as well, as step [](#s1){.pf-ref} shows. So
+$h^1(\mci_a)=\operatorname{coker}\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_a})\bigr)
+=h^0(\OO_{X_a})-1=0$, since $H^1(\PP^4,\OO)=0$. Here $h^0(\OO_{X_a})=1$ for
+every $a$: for $a\ne0$ because $X_a$ is a connected reduced projective curve,
+and for $a=0$ because the flat limit is reduced as well, as step [](#s1){.pf-ref} shows. So
 there is no jump in the
 untwisted ideal sheaf, and none can be produced from it by semicontinuity.
 
-The jump the exercise is after appears after twisting by $\OO_{\PP^4}(1)$: the
-statements proved below are
+The jump is in the twist by $\OO_{\PP^4}(1)$, whose values are the ones the statement displays:
 $$
-h^0(\PP^4,\mci_t(1))=
-\begin{cases}0,&t\ne0,\\ 1,&t=0,\end{cases}
+h^0(\PP^4,\mci_a(1))=
+\begin{cases}0,&a\ne0,\\ 1,&a=0,\end{cases}
 \qquad
-h^1(\PP^4,\mci_t(1))=
-\begin{cases}0,&t\ne0,\\ 1,&t=0.\end{cases}
+h^1(\PP^4,\mci_a(1))=
+\begin{cases}0,&a\ne0,\\ 1,&a=0.\end{cases}
 $$
-The flat family and the flatness of $\mci$ are as printed, and are proved first
-(steps [](#s1){.pf-ref} and [](#s2){.pf-ref}); the erratum concerns only the two displayed cohomology
-statements.
+The flat family and the flatness of $\mci$ are proved first
+(steps [](#s1){.pf-ref} and [](#s2){.pf-ref}).
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} carry Kim's argument, Exercise 3.12.3, PDF p. 215: he constructs
 the family as the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$
@@ -454,8 +491,7 @@ the special fibre is reduced, which is not Kim's reading but follows from the
 Hilbert polynomial together with Serre vanishing.  Yang Pi-Yeh,
 *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, gives the
 same family by its parametrization together with six quadrics for the ideal of
-the total family, and those six do not generate it; he also computes the two
-printed functions, and that computation is refuted in the remark.  Neither
+the total family, and those six do not generate it; he also computes the two untwisted functions the book displays, and that computation is refuted in the remark.  Neither
 source computes the twisted functions, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} are proved here.
 
 Use homogeneous coordinates
@@ -519,7 +555,7 @@ quartic curves, we see that this is in fact isomorphic to
 $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$. Hence the fiber at
 $t=0$ is just $\PP^1\hookrightarrow\PP^4$, which is the nonsingular rational
 quartic in $\PP^3$."  Yang, Solution 3.12.3, printed p. 82, writes the same family by its
-parametrization,
+parametrization, his parameter of $\PP^1$ being the $s$ of this card,
 $$
 X_a=\bigl\{(t^4:t^3u:at^2u^2:tu^3:u^4)\bigr\},
 $$
@@ -529,7 +565,7 @@ $$
 $$
 Those six do not generate $\mci$; this check is the card's, and neither source
 makes it.  The polynomial $x_0x_4-x_1x_3$ vanishes
-on the parametrization, both of its monomials being $t^4u^4$, and it is not in
+on the parametrization, both of its monomials being $s^4u^4$, and it is not in
 the ideal they generate: modulo $a$ the six become
 $$
 x_2^2,\ x_0x_2,\ x_1x_2,\ x_2x_3,\ x_2x_4,
@@ -542,7 +578,7 @@ $X_0\subseteq V(x_2)$: the generator $x_2^2$ vanishes at every point of the
 closed subscheme, so all of it lies in $V(x_2)$, and $x_2\mathfrak m\subseteq(x_2)$
 gives the converse inclusion.
 The ideal of the fibre at $a=0$ is the image at $a=0$ of the kernel of
-$k[a,x_0,\ldots,x_4]\to k[a,t,u]$; J. Böhm computes that kernel by
+$k[a,x_0,\ldots,x_4]\to k[a,s,u]$; J. Böhm computes that kernel by
 elimination in Macaulay 2, reports the ideal it gives at $a=0$, and finds all
 $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$.  The remark returns to this.
 
@@ -568,11 +604,13 @@ $$
 P_K(m)=P_Z(m)-P_{X_0}(m)=0
 $$
 identically. If $K\ne0$, then for $m\gg0$ the twist $K(m)$ is generated by its
-global sections (Theorem II.5.17, printed p. 121) and $H^1(\PP^4,K(m))=0$
-(Serre vanishing, Theorem III.5.2, printed p. 228). For those $m$ the vanishing
-gives
+global sections (Theorem II.5.17, printed p. 121) and $H^i(\PP^4,K(m))=0$
+for every $i>0$ (Serre vanishing, Theorem III.5.2, printed p. 228); the
+groups with $i\ge2$ vanish for every $m$ besides, $K$ being supported on the
+curve $X_0$, and it is $i=1$ that Serre vanishing settles. With all the
+positive-degree groups zero, the Euler characteristic is $h^0$:
 $$
-h^0(K(m))=\chi(K(m))=P_K(m)=0,
+\chi(K(m))=h^0(K(m))=P_K(m)=0,
 $$
 whereas generation gives $h^0(K(m))>0$ as soon as $K\ne0$. The two are
 incompatible, so $K=0$: the special fibre is the reduced curve $X_0$, with no
@@ -617,9 +655,9 @@ This is Kim, Exercise 3.12.3, PDF p. 215: "Because we have a short exact
 sequence $0\to\mathcal S\to\OO_{\PP^4\times T}\to\OO_X\to0$, and the last
 two terms are flat over $T$, the first term is also flat over $T$."  The
 middle term is flat over $T$, and $\mco_X$ is flat over $T$ because
-$X\to T$ is flat. In an exact sequence, the kernel of a surjection between
-flat modules is flat; that one sentence is the card's, Kim's argument
-stopping at the citation.  Therefore $\mci$ is flat over $T$.
+$X\to T$ is flat, so the hypothesis of his sentence holds and its first term
+is $\mci$: the kernel of a surjection between flat modules is flat, which is
+the inference he draws.  Therefore $\mci$ is flat over $T$.
 
 :::
 
@@ -643,8 +681,8 @@ flatness with the word "todo", and Yang, printed p. 82, asserts the
 untwisted values instead, refuted in the remark.
 
 Since $\mco_X$ is flat over $T$, restricting the exact sequence of
-step [](#s2){.pf-ref} to the fibre over $t$ remains exact, so
-$\mci_t$ is the ideal sheaf of $X_t$ in $\PP^4$. Twisting this fibre
+step [](#s2){.pf-ref} to the fibre over $a$ remains exact, so
+$\mci_a$ is the ideal sheaf of $X_a$ in $\PP^4$. Twisting this fibre
 sequence by $\mco_{\PP^4}(1)$ gives
 $$
 0
@@ -736,13 +774,13 @@ with that cokernel. Both have dimension one.
 
 Therefore
 $$
-h^0(t,\mci(1))
+h^0(a,\mci(1))
 =
-h^1(t,\mci(1))
+h^1(a,\mci(1))
 =
 \begin{cases}
-0,&t\ne0,\\
-1,&t=0.
+0,&a\ne0,\\
+1,&a=0.
 \end{cases}
 $$
 
@@ -756,9 +794,7 @@ Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the displayed values.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct the required flat family and prove flatness of
-its ideal sheaf, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the
-cohomology jump.
+The family of step [](#s1){.pf-ref} is flat over $T$ and has the two prescribed fibres, $X_1$ the rational normal quartic and $X_0$ its projection; $\mci$ is flat over $T$ by step [](#s2){.pf-ref}, so the functions $h^0$ and $h^1$ of $\mci_a(1)$ are upper semicontinuous in $a$. Their values are computed fibre by fibre: both vanish for $a\ne0$ (step [](#s3){.pf-ref}), where the restriction $H^0(\PP^4,\mco(1))\to H^0(X_a,\mco_{X_a}(1))$ is an isomorphism of five-dimensional spaces, and both are one for $a=0$ (step [](#s4){.pf-ref}), where that restriction loses rank because $X_0$ lies in the hyperplane $x_2=0$ and the kernel and cokernel are one-dimensional. That is the jump of the two displayed functions, which step [](#s5){.pf-ref} collects.
 
 :::
 
@@ -767,9 +803,9 @@ cohomology jump.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. The printed claim is indeed false, and the erratum and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} supply the computation the source omits, for $\mci(1)$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $a=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$, from the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$ that the family is, and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions. His list of problems he has not solved, at the head of the text on PDF p. 1, asks "Exercise 3.12.3: The statement seems to be false?"; it is not a list of corrections, and it gives no reason. What the book displays are the untwisted functions, which do not jump, as the opening of the solution computes; steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} supply the twisted computation the source omits.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, is a second published treatment, and it does compute the printed functions.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so on the affine chart $x_i\ne0$ the element $x_2$ becomes $x_2/x_i=x_2x_i/x_i^2=0$.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, is a second published treatment, and it does compute the functions the book displays.  It opens "According to (https://mathoverflow.net/questions/90260/trouble-with-semicontinuity) the book has a typo here", gives the six quadrics of step [](#s1){.pf-ref}, and concludes "$H^0(X_0,\OO_{X_0})=k[x_2]/(x_2^2)$, i.e. $h^0(X_0,\OO_{X_0})=2$", then $h^1(\PP^4,\mci_0)=1$ and $h^2(\PP^4,\mci_0)=1$, with the arithmetic genus constant by flatness.  His error is in the ideal, before any cohomology: those six quadrics are not the ideal of the family, as step [](#s1){.pf-ref} shows, and their fibre at $a=0$ is $x_2\mathfrak m$, whose closed subscheme is the hyperplane $V(x_2)$ and not the curve $X_0$.  What he computes the cohomology of is therefore not $X_0$.  And even for the subscheme his ideal does define, $x_2$ has degree one, so its class would be a section of $\OO(1)$ rather than of $\OO$, and it vanishes there: $x_2x_i$ lies in the ideal for every $i$, so on the affine chart $x_i\ne0$ the element $x_2$ becomes $x_2/x_i=x_2x_i/x_i^2=0$.
 
 One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, so unlike Yang's it does contain the curve, and its extra terms are the ones that decide the cohomology: in it $x_2$ is annihilated by every coordinate. That annihilator is decisive, and the questioner on the same thread already says so in the question body ($x_2/x_i=x_2x_i/x_i^2=0$ after the question's own edit): in the degree-zero localization at any $x_i$ the coordinate $x_i$ is invertible, so in the coordinate ring of every standard affine chart the element $x_2$ is $x_2/x_i=x_2x_i/x_i^2=0$, and a section of $\OO(1)$ that vanishes on each chart is the zero section. What the addendum of the answer gets wrong is the chart: for the chart $x_0\ne0$ it writes the coordinate ring of $\mathscr X_0\cap U_0$ as $k[y_1,x_2]/(y_1x_2,x_2^2)$ with $y_1=x_1/x_0$, mixing the degree-zero localization, in which $y_1$ lives, with the degree-one coordinate $x_2$; the element of that chart is $x_2/x_0$, and it is zero there because $x_0x_2$ lies in the ideal: $x_2/x_0=x_0x_2/x_0^2=0$. The two relations the addendum prints, $y_1\cdot(x_2/x_0)=x_1x_2/x_0^2=0$ and $(x_2/x_0)^2=x_2^2/x_0^2=0$, hold as well, but neither of them makes $x_2/x_0$ zero. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
 :::
