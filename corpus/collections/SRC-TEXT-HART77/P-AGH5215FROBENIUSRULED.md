@@ -83,7 +83,9 @@ audit:
     Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16: the paper has
     no Frobenius statement and no characteristic-p discussion, so it does not
     reach this exercise. Math StackExchange
-    question 4553266 asks about the genus of exactly the curve of part (c) and has
+    question 4553266, saved as
+    tmp/sources/mse-4553266-hart77-v215c-genus-inseparable.md, asks about the genus
+    of exactly the curve of part (c) and has
     no answer. The citation carried by the retained Egbert entry, Miyanishi, Open
     Algebraic Surfaces, Lemma 2.5.2.2, was not read because that book is not in
     tmp/sources. No complete published argument located; steps s7 to s10 remain

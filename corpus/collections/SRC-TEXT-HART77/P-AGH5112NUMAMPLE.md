@@ -45,15 +45,18 @@ audit:
     every curve, V.1, printed page 357. Searched for a published solution
     outside the twelve retained sets and found two, both defective: Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 12, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf), and Yang Pi-Yeh,
-    Hartshorne Solutions, exercise 5.1.12, printed p. 102
-    (tmp/sources/lfwin-hartshorne-solutions.pdf). Both take D x P^1 as the
+    Exercise 12, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf, text version
+    `tmp/sources/ntu-ag2-chapter5.md`), and Yang Pi-Yeh, Hartshorne Solutions,
+    exercise 5.1.12, printed p. 102 (tmp/sources/lfwin-hartshorne-solutions.pdf,
+    text version `tmp/sources/lfwin-hartshorne-solutions.md`). Both take
+    D x P^1 as the
     very ample member, and D x P^1 is p_1^*D, of degree 0 on every fibre, so it
     is not ample; the card's step s5 to s8 tensor the degree-one class of P^1
     on instead. Egbert, PDF p. 261, quotes Fuentes-Pedreira for the surface
-    criterion and proves only the curve comparison. Not checked: whether
-    Fuentes-Pedreira's criterion could have been used, since that paper is not
-    in tmp/sources.
+    criterion and proves only the curve comparison. Not checked here: whether
+    Fuentes-Pedreira's criterion could have been used, that paper not having been
+    in tmp/sources when this event was written; the event of the same date below
+    records the answer.
 - event: source-checked
   by: claude
   date: 2026-11-16
