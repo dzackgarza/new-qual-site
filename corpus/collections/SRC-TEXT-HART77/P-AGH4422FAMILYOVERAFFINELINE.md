@@ -201,21 +201,22 @@ $$
 S=\AA^1_{\CC}=\Spec\CC[t],
 $$
 let $\pi:E\to S$ be the family, and let $O:S\to E$ be the given section.
-The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line", text version `tmp/sources/youcis-2016-abelian-schemes-over-integers.md`; that text has no printed folios, so each step below names the numbered statement, or the quoted sentence, and the section heading of the post that it transcribes.
+The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line".
 His Theorem 8 is stronger than the exercise and is applied to $V=S$ in step [](#conclusion){.pf-ref}.
 
 ::: pf
 
 ::: {.pf-step #abelian-scheme}
 
-The section makes $E\to S$ an abelian scheme of relative dimension $1$.
+The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so $E\to S$ is a family of elliptic curves pointed by $O$; that it is consequently a family of abelian varieties over $S$ in the sense of Youcis, a smooth proper group scheme with connected fibres, is the card's own step and is not proved from the sources read.
 
 ::: pf-proof
 
-The printed hint of the exercise begins "Use the section to fix the group structure on the fibres."
-Each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$, and a genus-one curve with a chosen point is an elliptic curve, which is its own Jacobian, so its group law with identity $O(t)$ is determined by the pointed curve.
-The fibrewise group laws assemble over $S$, because the relative Picard functor is constructed by base change and the identification $E\cong\Pic^0_{E/S}$ holds after every base change; thus $E\to S$ is a smooth proper group scheme with connected fibres of relative dimension $1$.
-That is Youcis's definition, given in his section "Two statements of the main result": "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers".
+This step is the card's own.
+
+The printed hint of the exercise begins "Use the section to fix the group structure on the fibres", and each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$: a genus-one curve with a chosen point is an elliptic curve, and its group law has that point as identity.
+Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them.
+Neither is in Youcis, and neither is in the book at this exercise, which asserts the first of them in its hint and no more.
 
 :::
 
@@ -262,6 +263,8 @@ Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R
 Third, "Since $V^\text{an}$ is compactifiable by Hironaka's theorem and by the discussion following Theorem 11 of this article we may conclude that $(R^1f^{\text{an}}_*\underline{\QQ})^\vee$ is constant and thus, by Deligne's theorem, that $\mathscr A$ is isogenous to a constant family $\underline A$." The sentence of his that the constancy of the $\QQ$-local system rests on is the rigidity result he cites in his remark following the proof, that of Peters and Steenbrink, which "show[s] that not only must a $\QQ$-VHS on a compactifiable complex manifold be constant (as a VHS) but also that the same is true for integral Hodge structures".
 
 Fourth, "the kernel of some isogeny $\underline A\to\mathscr A$ must be a finite group constant group scheme $\underline{\ZZ/n\ZZ}$. Thus, $\mathscr A\cong\underline{A/(\ZZ/n\ZZ)}$ as desired."
+
+The group $\ZZ/n\ZZ$ in that sentence is the source's, and it is more special than the argument yields: what the third move produces is a finite étale subgroup scheme of the constant family $\underline A$, and a finite étale cover of a variety with simply connected analytification is trivial, so the kernel is a finite constant group scheme, which need not be cyclic. The conclusion uses constancy alone, so the argument stands with $\ZZ/n\ZZ$ read as a finite constant group scheme.
 
 The third move is where the hypothesis that $V$ is algebraic enters, as his remark after the proof says: Deligne's classification needs algebraicity of $V$, and the compactifiability is that of an algebraic variety.
 
