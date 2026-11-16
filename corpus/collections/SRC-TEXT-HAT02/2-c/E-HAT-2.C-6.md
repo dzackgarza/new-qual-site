@@ -73,7 +73,26 @@ audit:
     this exercise, and no published solution of the exercise was located. Searched without result in
     the retained sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR
     Math 205B help file, May, Bredon, Maxim's Math 752 notes) and in Hatcher's text and errata.
----
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Two sentences of the opening paragraph contradicted each other, and the stronger of them is
+    false of its source. It said that Dugger's centred antipodal action "is exactly Hatcher's
+    requested even-genus analog", and in the same paragraph that the construction "supplies the
+    checked model below, but not a complete published solution of Hatcher Exercise 2.C.6". The
+    first sentence is withdrawn. What Dugger gives, checked in the text: Proposition 2.8, printed
+    p. 12, the equivariant isomorphism $T^{anti}_{2g}=S^2_a\#T_g$; the quotient
+    $T^{anti}_g/C_2=N_{g+1}$ on the same page, which is why the involution is orientation
+    reversing; and Theorem 4.1(a), printed p. 18, the uniqueness of the free involution in even
+    genus. Those identify the involution the exercise asks about, but Dugger works no Lefschetz
+    number and does not treat the exercise. The trace computation is the card's own and is
+    checked: the $H_1$ trace is zero because the $m$ antipodal pairs of handles are interchanged,
+    and $f_*$ on $H_2$ is multiplication by $-1$ because the restriction to the central sphere is
+    the antipodal map of $S^2$, of degree $-1$; so $\tau(f)=1-0-1=0$, as a fixed-point-free map
+    on an orientable surface requires. Repair: the card carried a second `---` line after its
+    front matter, removed. Sources read for a published solution, and what each lacks, are
+    recorded in COMPLAINTS.md item 11. Not claimed: a published solution of Exercise 2.C.6.
 ---
 
 ::: {.problem}
@@ -81,7 +100,7 @@ Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphe
 :::
 
 ::: {.solution}
-Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. This is exactly Hatcher's requested even-genus analog. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
+Use the standard centered antipodal action $T_g^{\mathrm{anti}}$ published in **Daniel Dugger, *Involutions on Surfaces*, §2.7, printed pp. 11--12** (`tmp/sources/dugger-involutions-surfaces-2016.pdf`). His Proposition 2.8 gives $T_{2g}^{\mathrm{anti}}\cong S^2_a\mathbin{\#_\mathrm{eq}}T_g$, an antipodal sphere with paired handles, and Theorem 4.1(a), p. 18, identifies this as the free involution in even genus. Write $g=2m$, let $M_{2m}=T_{2m}^{\mathrm{anti}}$, and regard it as a central sphere with $m$ antipodal pairs of handles. Dugger also computes $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$, so the involution is orientation reversing. The general construction supplies the checked model below, but not a complete published solution of Hatcher Exercise 2.C.6, whose source obligation remains open.
 
 ::: pf
 
