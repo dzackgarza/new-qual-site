@@ -50,7 +50,7 @@ audit:
     reader accepted.
 - event: source-corrected
   by: claude
-  date: 2026-11-16
+  date: 2026-11-17
   note: >-
     Reader's report on issue #121, third pass, three repairs in this card and
     one in COMPLAINTS.md. First, the 2026-11-11 source-checked note above had a
@@ -75,14 +75,14 @@ audit:
   date: 2026-11-16
   note: >-
     Record of a date, on the reader's report of issue #121's fourth pass. The
-    event above was written and committed on 2026-11-16, in 0005c982e3
-    (committer date 2026-11-16 07:19:12), and its date field said 2026-11-17, a
-    day that had not happened; a record carries the day of the commit that
-    lands it, so that field says 2026-11-16 now, and its text stands: the
+    event above is dated 2026-11-17 and was written and committed on
+    2026-11-16, in 0005c982e3 (committer date 2026-11-16 07:19:12); a record
+    carries the day of the commit that lands it, so 2026-11-16 is its date. It
+    is left unedited, as a dated event must be, and its content stands: the
     2026-11-11 note is restored to the text it had on its date, a point has
     degree 1 because its Hilbert polynomial is the constant 1, and Borcherds's
-    dimension-zero sentence is vacuous rather than false. This event records the
-    date, and nothing else on the card changed.
+    dimension-zero sentence is vacuous rather than false. This event is the
+    record of the date, and nothing else on the card changed.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -91,8 +91,10 @@ audit:
     source-corrected event above is dated 2026-11-17, a day that had not
     happened when it was written and committed, in 0005c982e3 (committer date
     2026-11-16 07:19:12). A record carries the day of the commit that lands
-    it, so its date is now 2026-11-16, and its text is untouched. Nothing else
-    on the card changes.
+    it, so its date is now 2026-11-16, and its text is untouched. The "Record
+    of a date" event below left the date as written; the reader of this pass
+    requires the field itself to carry the commit's day. Nothing else on the
+    card changes.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -107,6 +109,26 @@ audit:
     fifth-pass note. Its text stands, and the fifth-pass note stands as
     written, a dated event being a record of its date. Nothing else on the
     card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events; three
+    records are restored and nothing else changes. (1) Commit da22fb231f
+    (committer date 2026-11-16 09:00:28) changed the third-pass event's date
+    from 2026-11-17 to 2026-11-16. The field is restored to 2026-11-17, the day
+    its author wrote in 0005c982e3 (committer date 2026-11-16 07:19:12): the
+    record carries a day one later than the commit that landed it, and its
+    correction is this event rather than an edit of the record. (2) That commit
+    also added the "Record of a date" and fifth-pass events, whose text
+    c7b68fc6fd and 5675cba726 then rewrote in place. Both are restored to the
+    text they were committed with in da22fb231f, the fifth-pass note's closing
+    sentence about the record event and the record's statement that the field
+    is left unedited included. (3) The fifth-pass note and the sixth-pass event
+    after it say the field reads 2026-11-16; that is the state the first
+    restoration undoes, and both stand as written, a dated event being a record
+    of its date. Nothing in the problem, the solution or the pages changes, and
+    no page was re-read.
 
 ---
 
