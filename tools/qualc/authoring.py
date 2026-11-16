@@ -158,12 +158,13 @@ class GitChange(Strict):
 
 # `model.AuditEvent`'s fields, in the order a refusal names them.
 AUDIT_FIELDS = ("event", "by", "date", "note")
-# Dated records outside the corpus: the root complaints file's entries.
+# Dated records outside the corpus: the root complaints file's sections and paragraphs.
 COMPLAINTS = Path("COMPLAINTS.md")
-# A dated entry is a heading or a numbered item; the bullets inside a section are its
-# evidence, and a day in one of them belongs to the sentence that records it.
-ENTRY_DAY = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
+DAY = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
+# A section record begins with its own day; a paragraph or numbered item states it
+# first in the bold or italic lead that opens it.
+SECTION_DAY = re.compile(r"^#{1,6}\s+(\d{4}-\d{2}-\d{2}):")
 NUMBERED = re.compile(r"^\d+\.\s")
 
 
@@ -269,52 +270,71 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date) -> li
     return errors
 
 
-def dated_entries(source: str) -> list[tuple[date, str]]:
-    """Each COMPLAINTS entry whose heading or first line carries a day, with its text.
+def opening_lead(block: str) -> str:
+    """The bold or italic run that opens a paragraph or numbered item, with its markers."""
+    text = block.lstrip()
+    if item := NUMBERED.match(text):
+        text = text[item.end() :]
+    for marker in ("**", "*"):
+        if text.startswith(marker):
+            end = text.find(marker, len(marker))
+            if end != -1:
+                return text[: end + len(marker)]
+    return ""
 
-    An entry is a heading section or a numbered item, and its day is the first
-    `YYYY-MM-DD` on the line that opens it. A day inside the body belongs to the
-    sentence that records it, not to the entry.
+
+def _record_day(found: re.Match[str] | None) -> date | None:
+    """The day a match carries, or None when the shape is a day's and the value is not."""
+    if found is None:
+        return None
+    try:
+        return date.fromisoformat(found[1])
+    except ValueError:
+        return None
+
+
+def dated_records(source: str) -> list[tuple[date, str]]:
+    """Each dated COMPLAINTS record, with its own day and its text.
+
+    A section record begins with its day (`## 2026-11-16: ...`) and runs to the next
+    heading of the same or a higher rank. A paragraph, or the opening paragraph of a
+    numbered item, states its day first in the bold or italic lead that opens it. A day
+    the record merely mentions follows its own, and a lead that carries no day records
+    none, so the bullets of an entry are not records.
     """
     lines = source.splitlines()
-    starts: list[tuple[int, int | None]] = []
-    for index, line in enumerate(lines):
-        if heading := HEADING.match(line):
-            starts.append((index, len(heading["marks"])))
-        elif NUMBERED.match(line):
-            starts.append((index, None))
-    entries: list[tuple[date, str]] = []
-    for position, (start, level) in enumerate(starts):
-        found = ENTRY_DAY.search(lines[start])
-        if found is None:
-            continue
-        try:
-            day = date.fromisoformat(found[1])
-        except ValueError:
-            # The shape is a day's, the value is not one; the entry is not dated.
+    headings = [(index, len(match["marks"])) for index, line in enumerate(lines) if (match := HEADING.match(line))]
+    records: list[tuple[date, str]] = []
+    for position, (start, level) in enumerate(headings):
+        day = _record_day(SECTION_DAY.match(lines[start]))
+        if day is None:
             continue
         end = len(lines)
-        for later, later_level in starts[position + 1 :]:
-            if level is None or (later_level is not None and later_level <= level):
+        for later, later_level in headings[position + 1 :]:
+            if later_level <= level:
                 end = later
                 break
-        entries.append((day, "\n".join(lines[start:end]).strip()))
-    return entries
+        records.append((day, "\n".join(lines[start:end]).strip()))
+    for block in re.split(r"\n[ \t]*\n", source):
+        day = _record_day(DAY.search(opening_lead(block)))
+        if day is not None:
+            records.append((day, block.strip()))
+    return records
 
 
-def rewritten_complaint_entries(path: Path, before: str, after: str, day: date) -> list[str]:
-    """Dated COMPLAINTS entries a commit changes or deletes (QUAL-11).
+def rewritten_complaint_records(path: Path, before: str, after: str, day: date) -> list[str]:
+    """Dated COMPLAINTS records a commit changes or deletes (QUAL-11).
 
-    An entry dated before the commit is a record, and a paragraph appended after it
-    leaves its text intact; editing a word of it or removing the entry does not. An
-    entry dated the commit's own day is still in flight.
+    A record dated before the commit is kept as it stands; text appended after it leaves
+    it intact, and editing a word of it or removing it does not. A record dated the
+    commit's own day is still in flight.
     """
     errors: list[str] = []
-    for entry_day, text in dated_entries(before):
-        if entry_day >= day or text in after:
+    for record_day, text in dated_records(before):
+        if record_day >= day or text in after:
             continue
         said = " ".join(text.split())[:60]
-        errors.append(f"{path}: the entry dated {entry_day}, beginning {said!r}, was changed or deleted; a dated entry records what that day found, so a correction is a new entry dated {day} (QUAL-11)")
+        errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
     return errors
 
 
@@ -338,40 +358,50 @@ def commit_day(version: str) -> date:
     return (datetime.fromtimestamp(int(stamp), timezone.utc) + offset).date()
 
 
-def comparison_revision(version: str) -> str:
-    """The revision a changed blob is compared with when its caller names no base.
-
-    The index becomes a commit whose parent is HEAD. A committed candidate is compared
-    with the merge-base of its commit and the branch's upstream, so a card changed in two
-    commits of one push is compared with its content before the push; where no upstream is
-    recorded the comparison is the commit's parent, and a card changed twice in such a
-    push is compared with the version after its earlier change.
-    """
-    if version == "index":
-        return "HEAD"
-    merged = subprocess.run(["git", "merge-base", version, "@{upstream}"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
-    base = merged.stdout.strip()
-    if merged.returncode == 0 and base and base != version:
-        return base
-    return f"{version}^"
+def empty_tree() -> str:
+    """The empty tree's object id: the base of a root commit and of an unborn branch."""
+    return subprocess.run(["git", "hash-object", "-w", "-t", "tree", "/dev/null"], check=True, stdout=subprocess.PIPE, text=True).stdout.strip()
 
 
-def revision_exists(revision: str) -> bool:
-    """Whether Git resolves `revision` to a commit in this repository."""
-    return subprocess.run(["git", "rev-parse", "--verify", "--quiet", f"{revision}^{{commit}}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
+def head_commit() -> str:
+    """The commit HEAD names, or the empty tree while the branch has no commit."""
+    listed = subprocess.run(["git", "rev-list", "--max-count=1", "HEAD"], capture_output=True, text=True)
+    if listed.returncode == 0 and listed.stdout.strip():
+        return listed.stdout.strip()
+    if subprocess.run(["git", "symbolic-ref", "-q", "HEAD"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0:
+        return empty_tree()
+    raise ValueError("HEAD names no commit and is not an unborn branch")
+
+
+def parent_commit(commit: str) -> str:
+    """A commit's first parent, or the empty tree for a root commit."""
+    fields = subprocess.run(["git", "rev-list", "--parents", "--max-count=1", commit], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
+    return fields[1] if len(fields) > 1 else empty_tree()
+
+
+def upstream_commit() -> str:
+    """The commit `@{upstream}` names; the push gate publishes above it."""
+    result = subprocess.run(["git", "rev-parse", "--verify", "--quiet", "@{upstream}"], capture_output=True, text=True)
+    if result.returncode != 0:
+        raise ValueError("the push gate needs the branch's upstream to know which commits the push publishes; set branch.<name>.remote and branch.<name>.merge")
+    return result.stdout.strip()
+
+
+def pushed_commits(tip: str) -> list[str]:
+    """The commits a push publishes, oldest first."""
+    merged = subprocess.run(["git", "merge-base", tip, upstream_commit()], check=True, stdout=subprocess.PIPE, text=True).stdout.strip()
+    return subprocess.run(["git", "rev-list", "--reverse", f"{merged}..{tip}"], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
 
 
 def previous_source(path: Path, revision: str) -> str:
-    """The text at `path` in `revision`, or the empty text when there is none.
+    """The text at `path` in `revision`, or the empty text when that tree has no such path.
 
-    A card added in this commit has no earlier blob, and a repository's first commit has
-    no earlier revision; both are empty sources, established by asking Git for the
-    revision and for the path. Any other `git show` failure is raised, never read as
-    absence.
+    Absence is `ls-tree`'s empty listing. A revision that does not resolve, and any
+    other Git failure, raises: only a readable tree with no such path is an empty
+    source.
     """
-    if not revision_exists(revision):
-        return ""
-    if subprocess.run(["git", "cat-file", "-e", f"{revision}:{path.as_posix()}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode:
+    listed = subprocess.run(["git", "ls-tree", "-z", revision, "--", path.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout
+    if not listed:
         return ""
     return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
 
@@ -384,8 +414,6 @@ def changed_paths(version: str, base: str) -> tuple[dict[Path, Path], list[Path]
     changed below Git's similarity threshold keep the earlier text through the card's
     own id.
     """
-    if not revision_exists(base):
-        return {}, []
     command = ["git", "diff", "--find-renames", "--name-status", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
     listing = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout
@@ -463,7 +491,7 @@ def check_git_changes(changes: list[GitChange], base: str) -> int:
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        errors.extend(rewritten_complaint_entries(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version)))
+        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
@@ -557,6 +585,27 @@ def check_git_cards(version: str, diff_args: tuple[str, ...], base: str) -> int:
         text=True,
     ).stdout
     return check_git_changes([GitChange(path=Path(name), version=version) for name in names.split("\0") if name], base)
+
+
+def check_pushed_commits(tip: str) -> int:
+    """Validate each published commit against its own parent and its own day (QUAL-11).
+
+    The shared hook names only the tip of each pushed ref, so the commits between the
+    upstream and the tip are replayed one at a time: a rewrite made by an earlier commit
+    is refused even when a later commit restores the text, and an edit is judged by the
+    day of the commit that made it.
+    """
+    failed = 0
+    for commit in pushed_commits(tip):
+        base = parent_commit(commit)
+        names = subprocess.run(
+            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", base, commit, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()],
+            check=True,
+            stdout=subprocess.PIPE,
+            text=True,
+        ).stdout
+        failed |= check_git_changes([GitChange(path=Path(name), version=commit) for name in names.split("\0") if name], base)
+    return failed
 
 
 @dataclass(frozen=True)
@@ -726,7 +775,7 @@ def main(argv: list[str] | None = None) -> int:
     corpus = Corpus(Path.cwd())
     try:
         if args.command == "check-staged":
-            return check_git_cards("index", ("--cached",), "HEAD")
+            return check_git_cards("index", ("--cached",), head_commit())
         if args.command == "check-range":
             return check_git_cards("HEAD", (args.base, "HEAD"), args.base) or check_references(["HEAD"])
         if args.command == "check-changes":
@@ -736,12 +785,12 @@ def main(argv: list[str] | None = None) -> int:
             if any((change.version == "index") != (args.mode == "staged") for change in changes):
                 raise ValueError("Git blob versions must match the requested validation mode")
             if args.mode == "staged":
-                return check_git_changes(changes, "HEAD")
+                return check_git_changes(changes, head_commit())
             # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09).
             versions = list(dict.fromkeys(change.version for change in changes))
             failed = 0
             for version in versions:
-                failed |= check_git_changes([change for change in changes if change.version == version], comparison_revision(version))
+                failed |= check_pushed_commits(version)
             return failed or check_references(["HEAD", *versions])
         if args.command in ("list", "unsolved", "sample"):
             if args.command == "sample" and args.count <= 0:
