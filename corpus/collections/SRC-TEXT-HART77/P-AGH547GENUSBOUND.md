@@ -139,6 +139,45 @@ audit:
     printed multiplicities are recorded as an error of the source and the
     corrected vector is displayed, not derived from anything new; and no
     characteristic p statement is made anywhere on the card.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass, on the second reader's findings for this card. The last event
+    of this date ended "no characteristic p statement is made anywhere on the
+    card", which is false of the card it describes: the step for the degree 4
+    class already said "Bertini's theorem in characteristic 0", and the
+    attainment at d = 4 rests on condition (c) of Exercise V.4.8, whose
+    sufficiency is proved on P-AGH548IRREDCLASSES from Dolgachev's Theorem
+    8.2.19, Harbourne's Corollary II.3, Theorem III.1(a) and Lemma II.6(b) with
+    Bertini's theorem in Corollary III.10.9, printed p. 274, a theorem of
+    characteristic 0. Read again for this: Corollary 4.13 of Hartshorne,
+    printed p. 406, with its proof, which cites Bertini's theorem II.8.18,
+    printed p. 179; II.8.18 is stated for a nonsingular closed subvariety of
+    projective space over an algebraically closed field with no hypothesis on
+    the characteristic, and III.7.9.1, printed p. 273, adds only the
+    connectedness of the hyperplane section. So Corollary 4.13(b) gives the
+    irreducible nonsingular curve for the ample classes in every
+    characteristic, and it is the degree 4 class alone that needs
+    characteristic 0. Open, and named here and not on the rendered card: the
+    attainment at d = 4 over an algebraically closed field of characteristic
+    p > 0. The card now states the field, gives the hypothesis at the two
+    places it is used, and claims attainment at every d different from 4 over
+    any algebraically closed field and at d = 4 in characteristic 0. Not read
+    in this pass: Dolgachev's Theorem 8.2.19 and Harbourne's Lemma II.6 beyond
+    the statements the other card records, and no source outside those named
+    on the two cards.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution states its field, algebraically closed k, and splits the
+    attainment: Corollary 4.13(b) for every degree but 4, in every
+    characteristic, from its Bertini II.8.18; and the degree 4 class H+F_56
+    from condition (c) of Exercise V.4.8 under the hypothesis that k have
+    characteristic 0. The claims of steps nonsingular-members and conclusion no
+    longer assert attainment at every d > 0 without a hypothesis. No proof was
+    added for d = 4 in characteristic p, and none is claimed.
 ---
 
 ::: {.problem}
@@ -151,8 +190,8 @@ Show furthermore that for every $d>0$, this maximum is achieved by some irreduci
 
 ::: {.solution}
 
-Write $X$ for the cubic surface, with $-K_X=H$ its hyperplane class and $H^2=3$, and let
-$D$ be a divisor of degree $d=D\cdot H$.
+Write $X$ for the cubic surface over an algebraically closed field $k$, with $-K_X=H$ its hyperplane
+class and $H^2=3$, and let $D$ be a divisor of degree $d=D\cdot H$.
 
 ::: pf
 
@@ -306,9 +345,9 @@ $d\equiv1\pmod3$. The source excludes $d=4$ from that family and writes "For $d=
 :::
 
 ::: {.pf-step #nonsingular-members}
-For every $d>0$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
-degree $d$ contains an irreducible nonsingular curve, so the maximum of the exercise is attained for
-every $d>0$.
+For every $d\ne4$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
+degree $d$ contains an irreducible nonsingular curve over every algebraically closed field $k$, and at
+$d=4$ the same holds when $k$ has characteristic $0$.
 
 ::: pf-proof
 For the classes of the first three families of step [](#extremal-classes){.pf-ref} and for the class of
@@ -320,7 +359,9 @@ $d>\frac{2(d+1)}{3}$, that is $d>2$, in the third, and $d>\frac{2d}{3}$ in the f
 because $d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The class of degree $5$
 has $a=4$, $b_1=2$ and the remaining $b_i$ equal to $1$, so $a=4>b_i+b_j$ and
 $2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) each of these classes contains an
-irreducible nonsingular curve.
+irreducible nonsingular curve; its proof rests on Bertini's theorem for hyperplane sections, II.8.18 of
+the book, printed p. 179, whose statement carries no hypothesis on the characteristic, so these
+degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
 [](#small-degrees){.pf-ref}. The class of degree $4$ is $H+F_{56}$, and
@@ -333,16 +374,18 @@ $$
 $$
 for the $27$ lines, so it meets every line nonnegatively, with $0$ at $F_{56}$ alone, and its
 self-intersection is $4>0$: it satisfies condition (c) of [[P-AGH548IRREDCLASSES|Exercise V.4.8]], and
-the sufficiency of that condition, from Dolgachev's Theorem 8.2.19, Harbourne's Corollary II.3,
-Theorem III.1(a) and Lemma II.6(b), and Bertini's theorem in characteristic $0$, gives an irreducible
-nonsingular member. Hence the maximum is attained for every $d>0$, including $d=4$.
+the sufficiency of that condition is proved on that card from Dolgachev's Theorem 8.2.19, Harbourne's
+Corollary II.3, Theorem III.1(a) and Lemma II.6(b), with Bertini's theorem in the form of Corollary
+III.10.9 of the book, printed p. 274, whose hypothesis is that $k$ have characteristic $0$. Under that
+hypothesis $H+F_{56}$ contains an irreducible nonsingular member.
 :::
 
 :::
 
 ::: {.pf-step #conclusion}
 The bound of the exercise holds for every divisor of degree $d$, and its maximum is achieved by an
-irreducible nonsingular curve for every $d>0$.
+irreducible nonsingular curve for every $d\ne4$ over an algebraically closed field $k$ of any
+characteristic, and for $d=4$ when $k$ has characteristic $0$.
 
 ::: pf-proof
 The bound is step [](#genus-bound){.pf-ref} and the attainment is step
@@ -371,6 +414,6 @@ its $d\equiv2$ family, so that family as printed has degree $d+2$; and it leaves
 its conclusion for every $d>0$ "possibly except $d=4$".
 
 For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
-ones, and, at $d=4$, condition (c) of Exercise V.4.8 with the sources recorded on
-[[P-AGH548IRREDCLASSES]].
+ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
+[[P-AGH548IRREDCLASSES]] and needs characteristic $0$ there.
 :::
