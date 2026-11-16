@@ -41,6 +41,38 @@ audit:
     III.7.14.1(c) and cross-checked for a hypersurface in P^n, where (b) and
     c(O(d)) = d must agree. Not checked: whether the printed exercise has a
     canonical normalization in the literature; none was found.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Second published-solution search for III.7.4(b) and (d) (issue #121);
+    nothing complete was located, and the card keeps its own derivation.
+    Read this pass: Yang Pi-Yeh, Hartshorne Solutions (9 June 2019),
+    Solution 3.7.4, printed p. 75 of tmp/sources/lfwin-hartshorne-solutions.pdf,
+    text version tmp/sources/lfwin-hartshorne-solutions.md -- (a) as in
+    step s1 here; (b) cuts Y down to its deg Y points by a general linear
+    subspace and then asserts that k = H^p(H, Omega^p_H) = H^p(X,
+    Omega^p_X) = k is the identity, which is the normalization step s3
+    now supplies by the projection formula, and he never moves the count
+    from the subspace back to P^n; (d) writes c(L_Y) as a Cech cocycle
+    and then sends it by a map H^1(X, Omega_X) -> H^0(X, O_X) whose value
+    is written as a sum of coordinate times partial derivatives, which is
+    neither a defined map nor the duality pairing. Dongryul Kim, release
+    PDF p. 170, lists Exercise 3.7.4 in his "problems I haven't solved".
+    Stacks Project tags read: 0FWC, Section 50.22 (de Rham cohomology as
+    a Weil cohomology theory, with the trace map Theta on H^{2d} and the
+    statement that the cycle class followed by lambda_X is the degree
+    map) and 0FLE, Section 50.9 (the dlog first Chern class into
+    H^1(X, Omega^1)). 0FWC is a statement about H^{2p}_{dR}; the
+    exercise's eta(Y) is the (p,p) Hodge component in H^p(X, Omega^p),
+    and no tag read makes that identification. 0FLE supplies only the map
+    c of part (c). Math StackExchange 1794757 and its accepted answer by
+    the account S.M. (2016-05-22) prove (a) only. Checked against the
+    book: the printed exercise, printed pp. 249--250; the trace and
+    duality inputs III.7.1, III.7.2, III.7.12--7.14, printed pp. 240--247;
+    Appendix A's C1, printed p. 430. Not checked: whether the printed
+    exercise admits a normalizing convention in the literature; none was
+    found in any of the sources read across both passes.
 ---
 
 ::: {.problem}

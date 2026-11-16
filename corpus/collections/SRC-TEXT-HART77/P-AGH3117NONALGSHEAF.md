@@ -52,6 +52,28 @@ audit:
     the one recorded: the kernel is a filtered formal group with infinite-
     dimensional successive quotients, and it is not a k-vector space when
     char k = p.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Second published-solution search for III.11.7(a) (issue #121); no
+    complete published argument for the printed claim was located, and none
+    can exist, since the claim is false in characteristic p. Read this
+    pass: Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 3.11.7,
+    printed p. 82 of tmp/sources/lfwin-hartshorne-solutions.pdf, text
+    version tmp/sources/lfwin-hartshorne-solutions.md. He writes the kernel
+    as the inverse limit of the completions of the graded pieces and calls
+    it "hence infinite dimensional", which is the same step the card
+    records as false in characteristic p, and he does not identify the
+    successive kernels with H^1(Y, O_Y(-nd)) either. Stack Exchange API
+    searches for the exercise on site=math and site=mathoverflow
+    (/search/advanced with the exercise's own phrases) returned nothing;
+    the only Stack Exchange item the earlier pass found, question 4667761
+    on III.11.5, computes the successive kernels of the H^1 terms and says
+    nothing about the vector-space structure. Checked against the book in
+    this pass: the printed exercise on printed p. 281, and Exercise II.9.6
+    which it invokes. Not checked: nothing new; the card's own
+    characteristic-p counterexample was not re-derived in this pass.
 ---
 
 ::: {.problem}

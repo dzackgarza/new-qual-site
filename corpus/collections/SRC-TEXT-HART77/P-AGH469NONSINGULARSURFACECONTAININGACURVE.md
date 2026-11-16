@@ -53,6 +53,35 @@ audit:
     along X, the latter by df(P) = a(P)dx + b(P)dy from I_{X,P} = (x,y).
     Expanded one inference: a component of Ftilde inside E would contain
     fibres over an open set of X, which s5 excludes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Second published-solution search for IV.6.9 (issue #121); no complete
+    published solution was located, and the card keeps its own proof. Read
+    this pass: Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution
+    4.6.9, printed p. 99 of tmp/sources/lfwin-hartshorne-solutions.pdf,
+    text version tmp/sources/lfwin-hartshorne-solutions.md, which takes a
+    nonzero section of I_Y tensor pi^*O(m) for m >> 0 on the blowup of P^3
+    along X and concludes that the image of its support is a surface of
+    degree m through X; it argues no nonsingularity, which is the clause
+    the exercise asks for, and its passage from Serre vanishing to a
+    section is not the flatness of the linear system that the printed hint
+    points at. abx's answer (2014-04-06) to MathOverflow question 162554,
+    read through the Stack Exchange API, is the only complete argument
+    located for the moved system: with I_C generated in degree c, the
+    system |k b^*H - beta E| is base point free for k >= beta c and ample
+    for k >> 0, so Bertini gives a smooth irreducible member. With
+    beta = 1 that is the printed hint carried out in the blowup, but the
+    answer ends at smoothness of the member inside the blowup and does not
+    descend to the image surface in P^3; that descent, which is steps
+    s6--s8 here, is what the exercise needs and what no located source
+    supplies. Checked against the book this pass: the printed exercise and
+    hint on printed p. 355, Theorem II.8.24 on printed p. 186 for the
+    blowup and its exceptional divisor, Exercise II.7.14 on printed
+    pp. 171--172 for the very ample system, II.8.18 on printed p. 179 for
+    Bertini. Not checked: whether abx's base-point-freeness bound can be
+    sharpened so that smoothness of the image follows directly.
 ---
 
 ::: {.problem}
