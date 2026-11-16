@@ -135,6 +135,25 @@ audit:
     P_2 = (0:1) that has v = c/d = infinity, so the printed row is zero at one
     of the two points. Both the event and the step now say that; the rank
     conclusion, rank one on E cap Y-tilde at the point with v = 0, is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the quoted passage this pass. Printed exercise read: Hartshorne,
+    Algebraic Geometry (1977), I.5.6(b), printed p. 37 (PDF p. 52 of the
+    extraction). Shichijo, Chapter 1 section 5, Exercise 5.6(b), printed p. 5,
+    read in tmp/sources/shitijyou-ch1-section5.md: his f_2 = (ax - by)(cx - dy)
+    with ad - bc != 0, the two strict transforms on V_0 = {y = vx} and
+    V_1 = {x = uy}, the two points P_1 = (0,0) x (b:a) and P_2 = (0,0) x (d:c) of
+    E, the matrix J_0((0,0) x (u:v)) = [[0, -v, 0], [0, sum_{i+j=3}(i+j-2)c_ij
+    v^j, 2bdv - (ad+bc)]], and his values of 2bdv - (ad+bc) at P_1 and P_2,
+    which are +-(ad-bc). Confirmed the three limits the card records: his V_0
+    chart displays both points only when b, d != 0; he omits V_1 ("同様なので略す");
+    and the printed first row (0, -v, 0) is not the derivative of the chart
+    equation y - vx in his column order (y, x, v), whose derivatives are
+    (1, -v, -x). The card's step computes the matrix and takes the deciding
+    minor from it; the V_1 chart is the card's.
+
 ---
 
 ::: {.problem}

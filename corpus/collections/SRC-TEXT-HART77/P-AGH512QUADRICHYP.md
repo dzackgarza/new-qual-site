@@ -67,6 +67,23 @@ audit:
     r = 0, so r < 2 holds there too. Nothing else in s2 changed; the citation
     and printed page on the step are unaffected. The two inferences now recorded
     as supplied by this card are the rank statement from s1 and this case.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the quoted passage this pass. Printed exercise read: Hartshorne,
+    Algebraic Geometry (1977), I.5.12, printed p. 38 (PDF p. 53 of the
+    extraction), which does say "Assume char k != 2", so the card's hypothesis
+    is the book's. Shichijo, Chapter 1 section 5, Exercise 5.12, printed p. 10
+    for (a) and (b) and p. 11 for (c) and (d), read in
+    tmp/sources/shitijyou-ch1-section5.md: for (b) he argues that the linear
+    change preserves irreducibility, that r < 2 gives x_0^2 or x_0^2 + x_1^2,
+    and that a reducible f is a product of two linear forms, hence y_0y_1 after a
+    linear change and z_0^2 + z_1^2 after y_0 = z_0 + i z_1, y_1 = z_0 - i z_1,
+    so r < 2. Confirmed on the printed text that his step to y_0y_1 assumes the
+    two linear factors independent; the case f = c l^2 is the card's step s2,
+    and his r+1 = rank is the card's step s1.
+
 ---
 
 ::: {.problem}

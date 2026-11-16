@@ -76,6 +76,27 @@ audit:
     step was the error in a second way. Verified by the two substitutions: with
     p | d one has d = 0, so d^2-3d+3 = 3 in k; with p = 7 and d = 4 the same
     expression is 16-12+3 = 7 = 0 in F_7.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The residual case p = 3, 3 | d now has a published proof, and step
+    characteristic-p-nonsingular is transcribed from the two published ones.
+    Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.5.5,
+    printed p. 37 (PDF p. 52 of the checked-in extraction). Nils Matthes,
+    answer 705947 to Mathematics Stack Exchange question 705657, read in
+    tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md, gives
+    the curve X^d + ZX^{d-1} + XY^{d-1} + YZ^{d-1} for char 3 and d divisible
+    by 3, with the derivative computation quoted in the remark; recomputed its
+    three partials (G_x = y^{d-1} - zx^{d-2}, G_y = z^{d-1} - xy^{d-2},
+    G_z = x^{d-1} - yz^{d-2}) and the consequence G = x^d + 3T = x^d, so
+    x = 0, then T = xy^{d-1} = 0. Supplied the one step he leaves implicit, that
+    a zero coordinate forces all three to vanish, and rewrote the p | d, p != 3
+    part from the Stacks Project tag 0BYA affine derivatives into homogeneous
+    form, where the three terms of xy^{d-1} + yz^{d-1} + zx^{d-1} are equal and
+    F = 3xy^{d-1}. Not checked: any source for the equation
+    x^{d-1}y + y^{d-1}z + z^d, which stays on the card as a third example with
+    its own two-line check and is not claimed to be published.
 ---
 
 ::: {.problem}
@@ -119,43 +140,70 @@ The same argument works over every extension field of $k$.
 :::
 
 ::: {.pf-step #characteristic-p-nonsingular}
-If $p>0$ and $p\mid d$, the equation
+If $p>0$ and $p\mid d$, the plane curve of degree $d$
 $$
-\boxed{x^{d-1}y+y^{d-1}z+z^d=0}
+\boxed{xy^{d-1}+yz^{d-1}+zx^{d-1}=0}
 $$
-defines a nonsingular plane curve of degree $d$.
+is nonsingular when $p\ne3$, and the plane curve
+$$
+\boxed{x^d+zx^{d-1}+xy^{d-1}+yz^{d-1}=0}
+$$
+is nonsingular when $p=3$.
 
 ::: pf-proof
-Now $d=0$ in $k$, while $d-1=-1$ is nonzero.
+Both equations and both computations are published: the first is the Stacks Project, *Algebraic Curves*, Section 53.9, tag 0BYA, and the second is Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657.
+Since $p\mid d$ one has $d=0$ and $d-1=-1\ne0$ in $k$, and both hold equally in every extension field of $k$; the computations below use nothing else about the field, so a curve nonsingular over $k$ is nonsingular over the algebraic closure.
+
+*The first equation.*
 For
 $$
-G=x^{d-1}y+y^{d-1}z+z^d
+F=xy^{d-1}+yz^{d-1}+zx^{d-1}
 $$
 the partial derivatives are
 $$
-\begin{aligned}
-G_x&=(d-1)x^{d-2}y,\\
-G_y&=x^{d-1}+(d-1)y^{d-2}z,\\
-G_z&=y^{d-1}.
-\end{aligned}
+F_x=y^{d-1}-zx^{d-2},\qquad
+F_y=z^{d-1}-xy^{d-2},\qquad
+F_z=x^{d-1}-yz^{d-2},
 $$
-Suppose all three vanish at a projective point of $G=0$.
-The equation $G_z=0$ gives $y=0$.
-Then $G_y=x^{d-1}=0$, so $x=0$.
-At such a point the defining equation becomes
+so a singular point of $F=0$ satisfies
 $$
-G(0,0,z)=z^d,
+y^{d-1}=zx^{d-2},\qquad z^{d-1}=xy^{d-2},\qquad x^{d-1}=yz^{d-2}.
 $$
-forcing $z=0$.
-Again this is not a projective point.
-Thus no singular point exists.
-This calculation also remains valid after any field extension.
-For the smallest possible case $d=p=2$, the same formulas read
+If one coordinate of such a point were zero, all three would be: by the cyclic symmetry of the three equations it suffices to take $x=0$, and then the first gives $y^{d-1}=0$, so $y=0$, and the second gives $z^{d-1}=0$, so $z=0$.
+Hence $xy^{d-1}$, $yz^{d-1}$ and $zx^{d-1}$ are nonzero at a singular point, and multiplying the three equations by $x$, $y$ and $z$ respectively gives
 $$
-G=xy+yz+z^2,\qquad
-(G_x,G_y,G_z)=(y,x+z,y),
+xy^{d-1}=zx^{d-1},\qquad yz^{d-1}=xy^{d-1},\qquad zx^{d-1}=yz^{d-1},
 $$
-and give the same conclusion.
+that is, the three terms of $F$ are equal.
+Then
+$$
+0=F=xy^{d-1}+yz^{d-1}+zx^{d-1}=3xy^{d-1},
+$$
+which forces $3=0$ in $k$.
+So for $p\ne3$ the curve has no singular point. This is the Stacks Project's computation written out: on the affine piece it uses, the equation is $x+x^{d-1}y+y^{d-1}$ with derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$, and its footnote argues that $x^{d-1}=y^{d-2}$ and $x\ne0$ from $1=x^{d-2}y$ give $0=x+x^{d-1}y+y^{d-1}=x+2x^{d-1}y$ and then $0=1+2x^{d-2}y=3$; the version above is the homogeneous one, and it also covers the two coordinates the affine chart drops.
+
+*The second equation.*
+Let $p=3$ and
+$$
+G=x^d+zx^{d-1}+xy^{d-1}+yz^{d-1};
+$$
+here $3\mid d>0$, so $d\ge3$, and $d-1=-1$ in $k$.
+The partial derivatives are
+$$
+G_x=y^{d-1}-zx^{d-2},\qquad
+G_y=z^{d-1}-xy^{d-2},\qquad
+G_z=x^{d-1}-yz^{d-2},
+$$
+the same three expressions as for $F$, because $G=F+x^d$ and $\partial_x(x^d)=dx^{d-1}=0$ since $d=0$ in $k$. (The term $x^d$ is what lets the equation $G=0$ behave differently from $F=0$ although their partials agree.)
+So a singular point again satisfies the three equations above, the three terms $xy^{d-1}$, $yz^{d-1}$, $zx^{d-1}$ are again equal, and again none of them is zero.
+Writing $T$ for their common value,
+$$
+0=G=x^d+zx^{d-1}+xy^{d-1}+yz^{d-1}=x^d+3T=x^d,
+$$
+so $x=0$, and then $T=xy^{d-1}=0$, a contradiction.
+Hence for $p=3$ this curve has no singular point.
+
+The equation $x^{d-1}y+y^{d-1}z+z^d$ used here before this transcription is a third example, valid for every $p\mid d$: its partials $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$ and $y^{d-1}$ force $y=0$, then $x=0$, then $z=0$. It is not in the published sources found, and the two equations above replace it.
 :::
 
 :::
@@ -191,13 +239,15 @@ A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solut
 
 The Stacks Project, *Algebraic Curves*, Section 53.9 (Plane curves), tag 0BYA, is the only published treatment found that writes out the case $p \mid d$ with its derivative check. It gives $F=T_0^d+T_1^d+T_2^d$ when $p\nmid d$, and $F=T_0^{d-1}T_1+T_1^{d-1}T_2+T_2^{d-1}T_0$ when $p\mid d$ and $p\neq3$, with the two partial derivatives $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ on the affine piece $D_+(T_2)$, and it states that their common zero set together with the equation is empty; it then writes "We leave it to the reader to make examples in characteristic $3$".
 
-That last clause is correct and is where the published argument stops: on that affine piece $x=y^{d-1}$ makes both partials vanish for every $d-1\not\equiv0$, and the equation there reads
+That last clause is correct and is where that section's argument stops: on that affine piece $x=y^{d-1}$ makes both partials vanish for every $d-1\not\equiv0$, and the equation there reads
 $$x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=2y^{d-1}+y^{d-1}=3y^{d-1},$$
-so a singular point of the curve exists over $k$ exactly when $3=0$ in $k$. Hence no published set covers $p=3$ with $3\mid d$, and the equation of step [](#characteristic-p-nonsingular){.pf-ref} is not in the literature found.
+so a singular point of that curve exists over $k$ exactly when $3=0$ in $k$.
+
+The case $p=3$ with $3\mid d$ is supplied in Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657, *Nonsingular projective variety of degree $d$*, text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`, asked precisely for this residual case: the curve $V(X^d+ZX^{d-1}+XY^{d-1}+YZ^{d-1})$, and his argument, quoted: "if $[x:y:z]\in C$ is a singular point, then, by considering the partial derivatives of the equation defining $C$, we obtain $zx^{d-2}=y^{d-1}$, $xy^{d-2}=z^{d-1}$ and $yz^{d-2}=x^{d-1}$. Multiplying these equalities by $x,y,z$ respectively, we obtain $zx^{d-1}=xy^{d-1}=yz^{d-1}$ and substituting this into the above equation yields $0=x^d+zx^{d-1}+xy^{d-1}+yz^{d-1}=x^d+3zx^{d-1}=x^d$ as we are in characteristic $3$. Hence $x=0$, but then by the above equalities, $y,z$ have to be equal to zero as well, which is impossible." He also records why the three-term equation cannot be repaired by rescaling its coefficients, and that the fourth term is available because $3\mid d$ makes the partials of $x^d$ vanish. Step [](#characteristic-p-nonsingular){.pf-ref} transcribes this, supplying the one inference he leaves implicit, that a zero coordinate forces all three to vanish.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 5.5, PDF p. 7: "If the characteristic $p$ does not divide $d$ we can use $x^d+y^d+z^d=0$. Otherwise we can use $xy^{d-1}+yz^{d-1}+zx^{d-1}=0$."
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), gives no solution to 5.5.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.5, PDF p. 45, text version `tmp/sources/hartshorne-solutions-egbert.md`: the same two equations as Borcherds.
-The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. The proof above uses $x^{d-1}y+y^{d-1}z+z^d$ in that case instead, whose partials are $(d-1)x^{d-2}y$, $x^{d-1}+(d-1)y^{d-2}z$ and $y^{d-1}$, and which is nonsingular in every characteristic dividing $d$, the case $d=p=2$ included.
-Agree with Borcherds and Stacks where $p\nmid d$; Stacks and Shichijo cover $p\mid d$ with $p\ne3$, the latter once its integer step is read in $k$ as above; the residual case $p=3$, $3\mid d$ is supplied here, and Stacks records it as left to the reader.
+The second equation of the published answers is singular whenever $3=0$ in $k$: at $(1:1:1)$ its value is $3$ and each of its three partial derivatives is $d$, so for $p=3$ and $3\mid d$ the point $(1:1:1)$ lies on the curve and is singular. That is why the case needs a different equation, and Matthes's four-term curve is one.
+Agree with Borcherds, the Stacks Project and Matthes where they reach: Borcherds's Fermat curve for $p\nmid d$, the Stacks Project and Shichijo for $p\mid d$ with $p\ne3$ (the latter once its integer step is read in $k$), and Matthes for $p=3$ with $3\mid d$. What this card adds is the homogeneous computation of the first equation, which Stacks leaves at two affine derivatives, and the zero-coordinate step of the second.
 :::

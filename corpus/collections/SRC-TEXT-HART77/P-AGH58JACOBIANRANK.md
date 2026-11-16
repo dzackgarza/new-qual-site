@@ -32,6 +32,23 @@ audit:
     the deleted column as a combination of the others in every
     characteristic. Confirmed that the card's chart D_+(x_l) is arbitrary
     where Block takes U_0, which changes nothing.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the quoted passage this pass. Printed exercise read: Hartshorne,
+    Algebraic Geometry (1977), I.5.8, printed p. 37 (PDF p. 52 of the
+    extraction), with its three hints. Block, Nonsingular Varieties (Columbia,
+    25 July 2017), Proposition 17 with Lemma 18 and their proofs, printed p. 4,
+    text version tmp/sources/block-nonsingular-varieties-notes.md: Lemma 18 is
+    Euler's identity proved on monomials; Proposition 17 states the criterion as
+    "Y is nonsingular at P if and only if rk J_P = n - r", and its proof has the
+    three card steps -- rows of J_{P'} scaled by lambda^{d_i-1}, the affine
+    Jacobian on U_0 as the submatrix with the column partial f_i/partial x_0
+    deleted, and Euler at f_i(P)=0 solving for that column. Checked that Block's
+    U_0 is the card's arbitrary D_+(x_l), which changes nothing. Not checked:
+    Block's Theorem 11, the affine criterion his proof invokes.
+
 ---
 
 ::: {.problem}
