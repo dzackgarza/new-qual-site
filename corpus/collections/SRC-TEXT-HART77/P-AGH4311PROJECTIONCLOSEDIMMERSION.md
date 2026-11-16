@@ -294,6 +294,33 @@ audit:
     card's own and still says so. Not read in this pass: no source was read
     again; the quotation and its page stand as the event above records them.
     No statement changes, and no step's claim changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's whole-card reading, and the
+    correction of a misreading the event of this date that ba3057319b added
+    carries. That event records "the cones over S(X) with vertex a point of it
+    as the reason for the lower bound". Harris, Example 11.22, printed p. 144,
+    writes "the cones p-bar,S over S with vertex a point p in S would all have
+    to coincide", in the paragraph that has just introduced X as the Veronese
+    surface; his letters are ambiguous as printed, and the remark paraphrasing
+    him resolved them the wrong way. With S read as the secant variety the
+    argument does not run: nothing on this card or in Harris puts the cone
+    over S(X) with a vertex on it inside S(X). With S read as the surface, it
+    does: for p in X every line joining p to a point of X is a secant line, so
+    the cone lies in S(X), and it is three-dimensional, being the union of a
+    surface's worth of lines through p; were dim S(X) 3, each such cone would
+    be S(X) and the cones, whose vertices differ, would coincide. The
+    published-solution remark now carries the cones over X, with the
+    containment that makes the argument run, and Harris's own sentence is
+    quoted unchanged at step secant-dim-lower, as his words and inside
+    quotation marks. The event of this date stands as written, and the record
+    of this date in COMPLAINTS.md that repeats the misreading is corrected in
+    a new record of today. Not read in this pass: no page of Harris beyond
+    printed p. 144 already read, and no other source; the paragraph of
+    Example 11.22 in the text version at line 352 was checked for the same
+    sentence.
 ---
 
 ::: {.problem}
@@ -624,6 +651,6 @@ His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of t
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
-Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $S(X)$ with vertex a point of it would all coincide. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
+Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $X$ with vertex a point $p\in X$, each of them three-dimensional and contained in the secant variety because its lines join $p$ to points of $X$, would all have to coincide. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
 The clause for a general point of a secant line is what both texts give; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} use.
 :::
