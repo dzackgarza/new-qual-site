@@ -262,6 +262,43 @@ audit:
     it is X_eta, as the step's own claim has it. Nothing else changes, no step is
     re-derived beyond the case analysis in the pf-qed, and no source was reopened.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on two passages of the rendered proof, each
+    a transcription of one source. (i) Egbert's set. Step
+    uy-points-correspond-to-primes gave his display in the letters of this
+    proof and cut off at the ring, and the display it gave had silently
+    corrected his printed $f^{-1}(y)$ to $f^{-1}(\mfq)$. The step now quotes
+    him in his own letters, $A$ for the base ring and $B$ for the total space,
+    with the whole set
+    $\set{\mfq\in\Spec B \st f^{-1}(y)\subset\mathfrak p,\ \mfq\supset
+    f(\mathfrak p)} = f^{-1}(y)$, and says that his first condition names the
+    fixed point $y=\mathfrak p$ where the variable point $\mfq$ belongs, so
+    that the displacement is his and not the card's. Read in this pass: A.
+    Egbert, Solution II.3.10(a), printed p. 84, text version
+    tmp/sources/hartshorne-solutions-egbert.md, section "2.3.15 II.3.10 x g
+    Fibres of a morphism", whose display there is
+    $\Spec(B_{\mathfrak p}/\mathfrak pB_{\mathfrak p}) \approx
+    \{\mfq\in\Spec B \mid f^{-1}(y)\subset\mathfrak p,\ \mfq\supset
+    f(\mathfrak p)\} = f^{-1}(\mathfrak p)$, the last term reading
+    $f^{-1}(\mathfrak p)$ in the extraction. (ii) Shichijo's slip at $a=0$.
+    The step repeated his sentence that $(t^2)$ has the unique maximal ideal
+    $(t)$, which makes the ideal $(t^2)$ a ring; the ring is $k[t]/(t^2)$ and
+    its maximal ideal is $(t)/(t^2)$. Read in this pass: A. Shichijo, Exercise
+    3.10(b), printed p. 8, text version tmp/sources/shitijyou-ch2-section3.md,
+    section "Ex3.10 Fibres of a Morphism", in the paragraph opening "At $y =
+    (s) \in Y$", which computes
+    $k[s,t]/(s-t^2)\otimes_{k[s]}k[s,u]/(s,u)\cong k[t]/(t^2)$ and then says
+    that $(t)$ modulo $(t^2)$ is the unique maximal ideal of a local ring,
+    naming the ring $(t^2)$. Nothing else on the card moves: the statement
+    with its characteristic hypothesis, the characteristic-two step, the
+    valuation step and the two remarks stand as they were. Not checked: the
+    printed pages were not in hand, Egbert's printed p. 84 and Shichijo's
+    printed p. 8 being read in the two text versions named; the other five
+    sources were not reopened, and no step was re-derived in this pass.
+
 ---
 
 ::: {.problem}
@@ -354,15 +391,15 @@ I_{\mfp}\subseteq\mfq\ \text{and}\ T\cap\bar\mfq=\emptyset
 f(\mfq)=\phi^{-1}(\mfq)=\mfp .
 $$
 
-Egbert, Exercise II.3.10(a), printed p. 84, obtains the same set as
+Egbert, Exercise II.3.10(a), printed p. 84, obtains the same set; his letters are the opposite of those of this proof, $A$ for the base ring and $B$ for the total space, so that his display reads
 $$
-\Spec(A_{\mfp}/\mfp A_{\mfp})
+\Spec(B_{\mathfrak p}/\mathfrak pB_{\mathfrak p})
 \approx
-\set{\mfq\in\Spec A \st f^{-1}(\mfq)\subset\mfp,\ \mfq\supset f(\mfp)}
+\set{\mfq\in\Spec B \st f^{-1}(y)\subset\mathfrak p,\ \mfq\supset f(\mathfrak p)}
 =
-f^{-1}(\mfp),
+f^{-1}(y),
 $$
-his $A$ being the base ring and his $B$ the total, so that his display reads $\Spec(B_{\mathfrak p}/\mathfrak pB_{\mathfrak p})\approx\{\mfq\in\Spec B\}$ with his letters.
+with $y$ the point $\mathfrak p$ of $\Spec A$ and $\mfq$ the variable point of $\Spec B$.  His first condition prints $f^{-1}(y)\subset\mathfrak p$ where $f^{-1}(\mfq)\subseteq\mathfrak p$ belongs, the condition being on $\mfq$ and not on $y$; read that way his two conditions say $f^{-1}(\mfq)=\mathfrak p=y$, and the set is the fibre over $y$, which in the letters of this proof is the display above.
 
 Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp A\subseteq\mfq$ and $\mfq\cap g(B-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$; his $g$ is the map of rings from the base to the total, $g:B\to A$ in the letters of this proof.
 :::
@@ -478,7 +515,7 @@ All three need $\operatorname{char}k\ne2$: $t-\sqrt a$ and $t+\sqrt a$ are disti
 If $a=0$, the fibre is a nonreduced one-point scheme.
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23: "if $a=0$ then it is $k[t]/(t^2)$ which is a non-reduced one-point scheme". Cais, Exercise 3.10(b), PDF p. 12, and Egbert, printed p. 84, the latter calling it the dual numbers; Shichijo, printed p. 8, adds that $(t^2)$ has the unique maximal ideal $(t)$, and that the spectrum is one point and not reduced.
+Kim, Exercise 2.3.10(b), PDF p. 23: "if $a=0$ then it is $k[t]/(t^2)$ which is a non-reduced one-point scheme". Cais, Exercise 3.10(b), PDF p. 12, and Egbert, printed p. 84, the latter calling it the dual numbers; Shichijo, printed p. 8, adds that the spectrum is one point and not reduced, and states the maximal ideal, writing that $(t)$ modulo $(t^2)$ is the unique maximal ideal of a local ring.  His sentence names the ring $(t^2)$, which is a slip: the ring is $k[t]/(t^2)$, and its unique maximal ideal is $(t)/(t^2)$.
 :::
 
 :::
