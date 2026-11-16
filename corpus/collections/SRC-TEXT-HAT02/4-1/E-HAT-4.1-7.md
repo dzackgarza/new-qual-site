@@ -429,6 +429,24 @@ audit:
     before this round said and what this round wrote away. The card uses the argument nowhere: the
     independence of the chosen extension is proved by May, as the event above records. The correction
     is also a new record of this date in `COMPLAINTS.md`; no dated event or record is edited in place.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report on this round: three statements in the `source-corrected` event of this date
+    above (`a7dffb24e6`) are false and are withdrawn here. No replacement is offered, since the card
+    uses none of that text and proves the independence of the chosen extension from May. (1) "the
+    whole of $T$, now prescribed, is the $J$-configuration of the $(n+1)$-cube in $I^{n+2}$" — the
+    dimension is wrong: $T$ lies in $I^n\times I\times I=I^{n+2}$, and the $J$-configuration of the
+    sentence is that of the $(n+2)$-cube, the $(n+1)$-cube being the piece $I^{n-1}\times I\times I$
+    of the first step. (2) "$\hat\psi$ because $J^{n-1}$ is pinned at $v(t)$" — false as the
+    reason that $\hat\psi$ lands in $A$: on $J^{n-1}\times I\times I$ its value is $\psi(t,u)$, which
+    equals $v(t)$ only at $u=0$. (3) "An extension into $A$ is therefore needed, which is what the
+    passes before this round said" — half true: the `source-corrected` event of this date added by
+    `b5e7fe9edb` said it, and the one added by `9c80ec98b1` said the opposite, that an arbitrary
+    subspace $A$ has no such extension property and that no extension into $A$ is used. The three
+    statements stand as written; the same withdrawal is a new record of this date in
+    `COMPLAINTS.md`, and no dated event or record is edited in place.
 
 ---
 
