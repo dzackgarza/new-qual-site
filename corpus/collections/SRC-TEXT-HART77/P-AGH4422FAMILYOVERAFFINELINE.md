@@ -124,6 +124,22 @@ audit:
     where printed p. N is PDF p. N+15. Checked in this pass: this card's audit
     trail in git, commit by commit, and the pages of the text version named in
     (i). Not checked: no other page was re-read, and no step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Correction to the event above, whose note begins "Fourth pass, on the audit
+    trail": its last two sentences place the two citations it verifies one page
+    too early. In tmp/sources/hartshorne-1977-algebraic-geometry.md, Lemma 4.4
+    and Lemma 4.5 of Hartshorne IV §4 stand between the markers of PDF pages
+    333 and 334, that is on printed p. 318, and Theorem 4.1, which is the
+    definition of the invariant that the citation of IV.4.1 rests on, stands
+    between the markers of PDF pages 332 and 333, on printed p. 317. What the
+    event concludes is unchanged: the numbers the earlier text carried,
+    printed pp. 333--334 for IV.4.4 and IV.4.5, are PDF folios, and the printed
+    pages are 318 and 317. Checked in this pass: both placements, re-read from
+    the page markers of that text version. Not checked: no other page was
+    re-read, and no step was re-derived.
 ---
 
 ::: {.problem}
