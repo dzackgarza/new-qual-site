@@ -74,6 +74,26 @@ audit:
     this pass: the printed exercise on printed p. 281, and Exercise II.9.6
     which it invokes. Not checked: nothing new; the card's own
     characteristic-p counterexample was not re-derived in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch. Step s6's reduction is
+    rewritten: a general exponent is written m = p^b m' with p not dividing
+    m', the freshman's dream gives u^m = (1 + s^{2p^b}/t^{p^b})^{m'}, and
+    the coefficient comparison is now made at s^{2p^b}, where the term
+    m' t^{-p^b} has m' nonzero in k; the comparison at s^{2p^b} against
+    t^{-2p^b}k[t^{-1}] is a contradiction. The earlier step excluded only
+    the powers m = p^a and then asserted the general case, which its
+    displayed identity does not give. Step s5 now says why the chain
+    K = K_1 > K_2 > ... is a chain of k-subspaces: K_r is the image of
+    H^1(Xhat, Ihat^r) under the logarithm. Corrected on the audit trail:
+    the 2026-11-11 note's description of the reduction, the 2026-11-16
+    note's description of Yang's argument, and the remark's citation of
+    Kim, which now names its text version. Checked against the book:
+    III.11.7 on printed p. 281, Exercise II.9.6. Not checked: nothing new
+    in the characteristic-p example beyond the rewritten exponent, which
+    was recalculated rather than machine-checked.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -98,6 +118,19 @@ audit:
     pass: III.11.7 on printed p. 281 and Exercise II.9.6, read in
     tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
     p. N+15). Not checked: nothing new beyond those two re-derivations.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass on the reader's report of this batch, on the audit trail only.
+    The solution-reviewed event of 2026-11-16 whose note begins "Repairs on
+    the reader's report of this batch" is restored as it was written, and this
+    event is appended after it rather than put in its place; the reference in
+    the event above to the event "of 2026-11-16 above" whose note begins
+    "Repairs on the reader's report" therefore has its referent again. The
+    mathematics and the source descriptions stand as that event and the event
+    above it record them, and the note of 2026-11-11 keeps the text it was
+    written with. Checked in this pass: nothing new; no step was re-derived.
 ---
 
 ::: {.problem}
