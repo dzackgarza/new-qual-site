@@ -153,6 +153,27 @@ audit:
     equation y - vx in his column order (y, x, v), whose derivatives are
     (1, -v, -x). The card's step computes the matrix and takes the deciding
     minor from it; the V_1 chart is the card's.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The local reader's report; the mathematics accepted, three citations
+    repaired. Recomputed both Jacobians from the card rather than from the
+    source's print: on V_0 the minor in the last two columns is
+    -(2bdv - (ad+bc)), taking the values -(ad-bc) at P_1 = (0,0) x (b:a) and
+    +(ad-bc) at P_2 = (0,0) x (d:c); on V_1 the entry 2acu - (ad+bc) takes the
+    values -(ad-bc) at u = b/a and +(ad-bc) at u = d/c; and the printed row
+    (0,-v,0) has rank exactly one at v = 0, as the card says. Repairs: the
+    Shichijo citations in the step and in the remark name the
+    text version tmp/sources/shitijyou-ch1-section5.md. Of the reader's two
+    Vakil items, one is false of this file: the remark at the end has named both
+    tmp/sources/vakil-216-class49-50.pdf and its text version since it was
+    written. The other is right in substance and wrong in detail: the note of
+    2026-11-11 names no Vakil file at all, and the Math 216 classes 49-50 notes
+    are tmp/sources/vakil-216-class49-50.pdf, text version
+    tmp/sources/vakil-216-class49-50.md, whose line 217 carries the quoted
+    factor 1 - s^2 - y^3 and the two points s = +-1; named here rather than
+    inserted into the dated note.
 
 ---
 
@@ -256,7 +277,7 @@ In characteristics $7$ and $13$, the two additional singular points found on tha
 More generally, blowing up any node produces two distinct nonsingular points above it.
 
 ::: pf-proof
-This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, transcribed, with the second chart supplied at the end.
+This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, transcribed, with the second chart supplied at the end.
 
 Translate the node to the origin $O=(0,0)$.
 A node is a double point whose lowest homogeneous part is a product of two distinct linear forms, so
@@ -427,7 +448,7 @@ The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} prov
 ::: {.remark title="Published solution"}
 The closest published argument for (b) is Ravi Vakil, *Foundations of Algebraic Geometry* (Math 216, Stanford; classes 49 and 50 notes), Section 5.2 "The proper transform of a nodal curve", printed p. 9, read in `tmp/sources/vakil-216-class49-50.pdf` and in its MinerU text version `tmp/sources/vakil-216-class49-50.md`: for $y^2=x^3+x^2$ in the patch $[X:Y]=[s:1]$, where $x=ys$, he gets $y^2-s^2y^2-s^3y^3=0$, "This factors: we get the exceptional divisor $y$ with multiplicity two, and the curve $1-s^2-y^3=0$. Easy exercise: check that the proper transform is nonsingular. Also, notice where the proper transform meets the exceptional divisor: at two points, $s=\pm1$." Two things are missing there and are supplied by step [](#general-node-two-points){.pf-ref}: the nonsingularity, which he leaves as an exercise and which is $\partial/\partial s=-2s\neq0$ at $s=\pm1$ together with the isomorphism away from the exceptional divisor, and the printed factor, which the substitution $x=ys$ gives as $1-s^2-ys^3$ rather than $1-s^2-y^3$. He also treats the one model $y^2=x^3+x^2$ rather than an arbitrary node.
 
-A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, proves part (b) for a general node: he keeps the two tangent directions as $(ax-by)(cx-dy)$ with $ad-bc\ne0$, writes both strict transforms, finds the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor, and computes their Jacobian, whose rank-two claim needs the entry his display omits. Step [](#general-node-two-points){.pf-ref} transcribes it, adds the $V_1$ chart, which he omits as "similar" and which carries one of the two points when $b=0$ or $d=0$, and records that his $V_0$ chart sees both points only when $b,d\ne0$.
+A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.6(b), printed p. 5, text version `tmp/sources/shitijyou-ch1-section5.md`, proves part (b) for a general node: he keeps the two tangent directions as $(ax-by)(cx-dy)$ with $ad-bc\ne0$, writes both strict transforms, finds the two points $P_1=(0,0)\times(b:a)$ and $P_2=(0,0)\times(d:c)$ of the exceptional divisor, and computes their Jacobian, whose rank-two claim needs the entry his display omits. Step [](#general-node-two-points){.pf-ref} transcribes it, adds the $V_1$ chart, which he omits as "similar" and which carries one of the two points when $b=0$ or $d=0$, and records that his $V_0$ chart sees both points only when $b,d\ne0$.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 5.6; his Chapter 1.5 answers stop at 5.5.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.6.

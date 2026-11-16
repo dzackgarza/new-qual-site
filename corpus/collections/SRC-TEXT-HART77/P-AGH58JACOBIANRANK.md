@@ -48,6 +48,24 @@ audit:
     deleted, and Euler at f_i(P)=0 solving for that column. Checked that Block's
     U_0 is the card's arbitrary D_+(x_l), which changes nothing. Not checked:
     Block's Theorem 11, the affine criterion his proof invokes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The local reader's report; the mathematics accepted and the citation
+    completed. Block's Proposition 17 was read again in
+    tmp/sources/block-nonsingular-varieties-notes.md and matches the card's
+    statement and its three steps. Two hypotheses of his were not recorded on
+    the card and are now: he works over the complex numbers (line 12 of the text
+    version, "we restrict ourselves to working over C") and he states the
+    proposition for generators that "minimally generate I". Neither is needed:
+    his proof uses only Euler's identity and the row scaling lambda^{d_i-1}, and
+    a redundant generator contributes a row that, at a point of Y, is a linear
+    combination of the others --- the product rule gives
+    d f_t = sum_i (h_i d f_i + f_i d h_i), and the second term dies on Y --- so
+    the criterion holds for any generating set, which is what the exercise and
+    the card assume. The remark now names the text version; the printed page is
+    p. 4 of the notes.
 
 ---
 
@@ -193,7 +211,7 @@ Steps [](#affine-chart-equations){.pf-ref}, [](#affine-jacobian-is-submatrix){.p
 :::
 
 ::: {.remark title="Published solution"}
-The complete published argument is Adam B. Block, *Nonsingular Varieties* (Columbia, 25 July 2017), Proposition 17 with Lemma 18 and the proof following it, printed p. 4. Lemma 18 is Euler's identity $\sum_{i=0}^n x_i\,\partial f/\partial x_i=df$ proved on monomials. Proposition 17 states the criterion in the same form as the card, "Then $Y$ is nonsingular at $P$ if and only if $\operatorname{rk}J_P=n-r$", and its proof is the card's three steps: the rows of $J_{P'}$ are the rows of $J_P$ scaled by the constants $\lambda^{d_i-1}$ for $P'=\lambda P$; the affine Jacobian on $U_0$ is the submatrix of $J_P$ with the column $\partial f_i/\partial x_0$ deleted; and Euler's identity, evaluated where $f_i(P)=0$, writes that column as $-\sum_{j\ge1}y_j\,\partial f_i/\partial y_j$ with $y_j=x_j/x_0$, so the rank is unchanged. Block restricts to the chart $U_0$, which the card replaces by an arbitrary chart $D_+(x_\ell)$; the argument is the same.
+The complete published argument is Adam B. Block, *Nonsingular Varieties* (Columbia, 25 July 2017), Proposition 17 with Lemma 18 and the proof following it, printed p. 4, text version `tmp/sources/block-nonsingular-varieties-notes.md`. Lemma 18 is Euler's identity $\sum_{i=0}^n x_i\,\partial f/\partial x_i=df$ proved on monomials. Proposition 17 states the criterion in the same form as the card, "Then $Y$ is nonsingular at $P$ if and only if $\operatorname{rk}J_P=n-r$", and its proof is the card's three steps: the rows of $J_{P'}$ are the rows of $J_P$ scaled by the constants $\lambda^{d_i-1}$ for $P'=\lambda P$; the affine Jacobian on $U_0$ is the submatrix of $J_P$ with the column $\partial f_i/\partial x_0$ deleted; and Euler's identity, evaluated where $f_i(P)=0$, writes that column as $-\sum_{j\ge1}y_j\,\partial f_i/\partial y_j$ with $y_j=x_j/x_0$, so the rank is unchanged. Block restricts to the chart $U_0$, which the card replaces by an arbitrary chart $D_+(x_\ell)$; the argument is the same. Two hypotheses of his that the exercise does not make, and that his proof does not use: he works over $\CC$, writing at the head of the notes that "we restrict ourselves to working over $\CC$", while his proof invokes only Euler's identity and row scaling, which hold over any field; and his Proposition 17 states the criterion for $f_1,\ldots,f_t$ that "minimally generate $I$", while the exercise and this card assume only that they generate $I$. The minimality is removable: if $f_t=\sum_{i<t}h_if_i$ with $h_i\in S$, then at a point $P\in Y$, where every $f_i(P)=0$, the product rule gives $\partial f_t/\partial x_j(P)=\sum_{i<t}h_i(P)\,\partial f_i/\partial x_j(P)$, so the extra row is a linear combination of the others and the rank is unchanged.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, gives no solution to 5.8.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.8.

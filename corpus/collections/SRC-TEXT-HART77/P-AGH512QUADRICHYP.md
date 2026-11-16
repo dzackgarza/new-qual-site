@@ -83,6 +83,16 @@ audit:
     so r < 2. Confirmed on the printed text that his step to y_0y_1 assumes the
     two linear factors independent; the case f = c l^2 is the card's step s2,
     and his r+1 = rank is the card's step s1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The local reader's report: the mathematics accepted, and the one citation
+    defect repaired. All three Shichijo citations on this card --- in the body
+    before step s2, in step s2 itself, and in the remark --- now name the text
+    version tmp/sources/shitijyou-ch1-section5.md, which is the MinerU extraction
+    of tmp/sources/shitijyou-ch1-section5.pdf; before this they named only the
+    URL and the printed page. Nothing in the card's argument changed.
 
 ---
 
@@ -104,7 +114,7 @@ If $Y$ is a closed subset of $\PP^r$, and if $Z$ is a linear subspace of dimensi
 :::
 
 ::: {.solution}
-Part (b) below is transcribed from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, printed p. 10, where the citation is placed; parts (a), (c) and (d) are this card's own proofs, which the same pages reach by the same means.
+Part (b) below is transcribed from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, printed p. 10, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, where the citation is placed; parts (a), (c) and (d) are this card's own proofs, which the same pages reach by the same means.
 
 Let $V=k^{n+1}$.
 Because $\operatorname{char}k\ne2$, the quadratic polynomial $f$ has an associated symmetric bilinear form
@@ -165,7 +175,7 @@ $$
 
 ::: pf-proof
 
-This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12(b), printed p. 10, transcribed.
+This is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12(b), printed p. 10, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, transcribed.
 
 The linear change of variables of step [](#s1){.pf-ref} is invertible, so it does not change irreducibility, and it suffices to test the normal form $x_0^2+\cdots+x_r^2$.
 
@@ -319,7 +329,7 @@ Thus the stated range implicitly excludes $f=0$; the card makes that hypothesis 
 :::
 
 ::: {.remark title="Published solution"}
-Part (b) is transcribed in step [](#s2){.pf-ref} from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12, printed p. 10, which proves (a) and (b) there and (c) and (d) on printed p. 11. Parts (a), (c) and (d) here are the card's own proofs.
+Part (b) is transcribed in step [](#s2){.pf-ref} from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, Exercise 5.12, printed p. 10, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, which proves (a) and (b) there and (c) and (d) on printed p. 11. Parts (a), (c) and (d) here are the card's own proofs.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.12, PDF pp. 49--50, text version `tmp/sources/hartshorne-solutions-egbert.md`, argues (a), (c) and (d) as here, and gives (b) as "for larger $r$, any factors must be linear, but then multiplying the two factors together will create terms of higher than degree $2$", which is false of a product of two linear forms. Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.5.12, PDF p. 22, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`, argue (b) by saying that in $k[x_0,\ldots,x_r]$ the form $x_0^2+\cdots+x_r^2$ "defines a nonsingular, hence irreducible, hypersurface", which is the assertion being proved.
 
