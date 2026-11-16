@@ -2574,7 +2574,7 @@ read is **V.4.15** (the 56 and 240 negative curves and the admissible-transforma
 The Chapter I items of this list that this file's sections record as closed on 2026-11-16 are I.2.9(b),
 I.3.16(c), I.3.19(a), I.3.20, I.5.5 ($p=3$ included), I.5.6(b), I.5.8, I.5.12(b) and I.5.13.
 
-## 2026-11-16: `SRC-TEXT-HART77` #121, the batch, nine Chapter I cards
+## `SRC-TEXT-HART77` #121: the batch of 2026-11-16, nine Chapter I cards
 
 One chat of the parallel #121 batches, on the nine Chapter I cards named in its brief: I.2.9(b), I.3.16(c),
 I.3.19(a), I.3.20, I.5.5 with $p=3$, I.5.6(b), I.5.8, I.5.12(b), I.5.13. Four of them had no located
@@ -2649,7 +2649,7 @@ linear factors independent, so the case $c\ell^2$ is the card's; and the equatio
 I.5.5, which covers every $p\mid d$ at once, is not in any source found and is kept only as a checked
 alternative. The card I.5.5 no longer rests on it.
 
-## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter I reader's report, Batch A of two
+## `SRC-TEXT-HART77` #121: the Chapter I reader's report of 2026-11-16, Batch A of two
 
 A local reader reported on the nine Chapter I cards of the batch above. Batch B of its report is another
 chat's; this section is Batch A only, and each item was checked against the card, the text version and the
@@ -2852,8 +2852,8 @@ it was written on 2026-11-11, and the correction is this entry.
   which on $D_+(T_2)$ reads $x+x^{d-1}y+y^{d-1}$, with partials $1-x^{d-2}y$ and $x^{d-1}-y^{d-2}$ because
   $d\equiv0$ and $d-1\equiv-1$ in characteristic $p\mid d$. The two vanish together exactly where
   $1=x^{d-2}y$ and $x^{d-1}=y^{d-2}$, which give $x=x^{d-1}y=y^{d-1}$. At a common zero $x\ne0$: for
-  $d\ge3$, $x=0$ would give $0=x^{d-2}y=1$; for $d=2$ the two equations read $1=y$ and $x=y$, so $x=1$.
-  The equation at such a point reads $x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=3x=3y^{d-1}$, so a common zero
+  $d\ge3$ that is $1=x^{d-2}y$ with $x=0$, and at $d=2$ the two equations read $1=y$ and $x=y$, so
+  $x=1$. The equation at such a point reads $x+x^{d-1}y+y^{d-1}=2x+y^{d-1}=3x=3y^{d-1}$, so a common zero
   exists exactly when $3=0$ in $k$, that is in characteristic $3$; in characteristic $2$ the same value is
   $3x=x\ne0$. The restored sentence's "the two derivatives vanish together at $x=y^{d-1}$" states a
   consequence and not the condition, the two not being equivalent: at $d=3$ in characteristic $3$ the
@@ -2989,3 +2989,40 @@ Nothing else changes. The body of the first entry stands as it stood, its one se
 `ade61785ff` included, that commit not being one of the rewrites a reader named; the paragraph on the $d=2$
 equation of the second entry is untouched and its correction stands; and no other entry of this file was
 read in this pass.
+
+## 2026-11-16: the two Chapter I headings and the fourth-pass sentence are restored to their introduced text
+
+Three passages of this file were rewritten in place after the commit that introduced them. Each is restored
+to that commit's text, byte for byte from `git show <commit>:COMPLAINTS.md`, and this entry is the correction.
+
+- **The heading of the batch of the nine Chapter I cards.** `6a419a5c67` introduced the section under the
+  heading whose title, after its `## ` marker, is "`SRC-TEXT-HART77` #121: the batch of 2026-11-16, nine
+  Chapter I cards". `9eac4d89dd` re-headed it, moving the day to the front and dropping "of 2026-11-16" from
+  the title. The introduced heading is restored.
+- **The heading of the Chapter I reader's report, Batch A of two.** `2e8d353666` introduced the section under
+  the title "`SRC-TEXT-HART77` #121: the Chapter I reader's report of 2026-11-16, Batch A of two", and
+  `9eac4d89dd` re-headed it the same way. The introduced heading is restored.
+- **The fourth-pass entry's nonzero-x sentence.** `cd8141de98` introduced the entry with "At a common zero
+  $x\ne0$: for $d\ge3$ that is $1=x^{d-2}y$ with $x=0$, and at $d=2$ the two equations read $1=y$ and
+  $x=y$, so $x=1$", and `ade61785ff` rewrote it to "for $d\ge3$, $x=0$ would give $0=x^{d-2}y=1$; for
+  $d=2$ the two equations read $1=y$ and $x=y$, so $x=1$". The introduced sentence is restored.
+
+What the rewrite made explicit is this entry's: at $d\ge3$ the common-zero condition is $1=x^{d-2}y$, so a
+common zero with $x=0$ would force $0=1$, and at $d=2$ the two equations are $1=y$ and $x=1$, which give
+$(x,y)=(1,1)$. Both phrasings say the same thing, and the entry's conclusion that a common zero exists
+exactly when $3=0$ is untouched, so no mathematics of the file changes with the restoration.
+
+The record before this one, of the same date, closes by saying that the body of the fourth-pass entry stands
+as it stood, its one sentence rewritten by `ade61785ff` included. That record is of this date and is left as
+written; this entry supersedes the sentence it names, and that sentence is restored above.
+
+The two restored headings carry their day mid-title, as introduced, so under the gate as it stands neither is
+a section record: a section's day is read only at the start of its heading, apart from the three headings
+`RESTORED_SECTIONS` in `tools/qualc/authoring.py` lists, and neither of these is among them. The preamble's
+statement of the format names those three as the exception, and these two are a fourth and a fifth heading
+standing in that position that it does not name. Reading a record whose day stands mid-heading is
+issue #147's repair, and neither heading is re-dated here to invent a protection that the introduced
+text does not carry.
+
+Nothing else changes: no other passage of either section was read, and no card, source or page was touched in
+this pass.
