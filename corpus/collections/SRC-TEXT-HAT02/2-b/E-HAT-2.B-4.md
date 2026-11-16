@@ -172,6 +172,32 @@ audit:
     accepted answer, 795440, that is a commutative-diagram sketch invoking "problem 3" and
     "problem 4(a)" and naming a contradiction without the fundamental-class step; it is read
     and not transcribed. Not claimed: a published solution of Exercise 2.B.4.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader batch. Three repairs, on the reader's report; the reader found no defect in
+    the mathematics of either part and in the construction of the collar. (1) The step
+    `#proper-case` closed the contradiction with a "fundamental chain" of $E=g(D^q)$ whose
+    boundary is the fundamental cycle of $S^{q-1}$, which asserts more structure than the
+    step uses and shows less than the step needs, since $E$ is only known to be an embedded
+    disk. It now uses only that: $E\cong D^q$ is contractible, so $\widetilde H_{q-1}(E)=0$,
+    and the inclusion $\partial E\hookrightarrow D^n-D$ factors through $E$, so the class
+    $[S^{q-1}]$ dies. No fundamental class, no manifold-with-boundary structure, and no
+    orientation is used. (2) The remark was titled "Published solution" while the card and
+    COMPLAINTS.md record that no published solution of the exercise has been located; it is
+    retitled "Sources" and now says so. It also cited Corollary 2B.4 (printed p. 172) beside
+    Theorem 2B.3, and the proof uses the theorem but never the corollary: the degenerate cases
+    rest on Invariance of Domain alone. The same overstatement in the 2026-11-13
+    `solution-reviewed` note, which lists Corollary 2B.4 among the results settling $p=0$ and
+    $q=0$, is wrong and its reference to Corollary 2B.4 is withdrawn; (3) the citations name
+    their text version, `tmp/sources/hatcher-2002-algebraic-topology.md` (Exercise 4 on printed
+    p. 176, Proposition 2B.1 on pp. 169--170, Theorem 2B.3 on p. 172). Checked, unchanged:
+    both composites of the displayed formulas are the identity, the collar $F$ is an
+    embedding with $F(D^p)\cap\partial D_2=2S^{p-1}$, and the description of the accepted
+    Math StackExchange answer 795440 to question 666444 (a diagram invoking "problem 3" and
+    "problem 4(a)" of that thread, declaring $f$ zero and a contradiction) is accurate.
+    Not claimed: a published solution of Exercise 2.B.4.
 ---
 
 ::: {.problem}
@@ -342,7 +368,7 @@ There are no disjoint embeddings $f:D^p\to D^n$, $g:D^q\to D^n$ with $f(\partial
 
 ::: pf-proof
 
-Put $D=f(D^p)$ and $E=g(D^q)$. Exercise 3 of §2.B applies to the pair $(D,S^{p-1})\subset(D^n,S^{n-1})$, whose hypothesis $D\cap S^{n-1}=S^{p-1}$ holds by assumption, and says that $S^{n-1}-S^{p-1}\hookrightarrow D^n-D$ induces an isomorphism on homology. By step [](#s3){.pf-ref} the class $[S^{q-1}]$ generates the left-hand group in degree $q-1$, so its image generates $\widetilde H_{q-1}(D^n-D)$ and is nonzero. But $E\subset D^n-D$ is a compact $q$-manifold with boundary whose fundamental chain has boundary the fundamental cycle of $\partial E=S^{q-1}$, so $[S^{q-1}]=0$ in $\widetilde H_{q-1}(D^n-D)$. This contradicts the nonvanishing, so no such pair exists.
+Put $D=f(D^p)$ and $E=g(D^q)$. Exercise 3 of §2.B applies to the pair $(D,S^{p-1})\subset(D^n,S^{n-1})$, whose hypothesis $D\cap S^{n-1}=S^{p-1}$ holds by assumption, and says that $S^{n-1}-S^{p-1}\hookrightarrow D^n-D$ induces an isomorphism on homology. By step [](#s3){.pf-ref} the class $[S^{q-1}]$ generates the left-hand group in degree $q-1$, so its image generates $\widetilde H_{q-1}(D^n-D)$ and is nonzero. But $E=g(D^q)$ is homeomorphic to $D^q$, hence contractible, so $\widetilde H_{q-1}(E)=0$; the inclusion $S^{q-1}=\partial E\hookrightarrow D^n-D$ is the composite $\partial E\hookrightarrow E\hookrightarrow D^n-D$, so $[S^{q-1}]$ maps to zero in $\widetilde H_{q-1}(D^n-D)$. This contradicts the nonvanishing, so no such pair exists.
 
 :::
 
@@ -364,6 +390,6 @@ Suppose $f,g$ are as in the exercise. If $p=0$ or $q=0$ the claim is step [](#de
 
 :::
 
-::: {.remark title="Published solution"}
-Hatcher, *Algebraic Topology* (2002): the statement is Exercise 4 of §2.B, printed p. 176. Part (a)'s homology content is Proposition 2B.1(b) with its printed proof, pp. 169--170; part (b) is §2.B Exercise 3 (printed p. 176) applied to the collared disks, with the cases $p=0$ and $q=0$ settled by Invariance of Domain, Theorem 2B.3, and Corollary 2B.4, both printed p. 172.
+::: {.remark title="Sources"}
+Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the statement is Exercise 4 of §2.B, printed p. 176. Part (a)'s homology content is Proposition 2B.1(b) with its printed proof, pp. 169--170; part (b) is §2.B Exercise 3 (printed p. 176) applied to the collared disks, with the cases $p=0$ and $q=0$ settled by Invariance of Domain, Theorem 2B.3, printed p. 172. No published solution of the exercise is claimed: the one Math StackExchange thread on part (b), question 666444, carries a commutative-diagram sketch as its accepted answer and no complete argument.
 :::
