@@ -419,6 +419,38 @@ def test_restoring_both_events_of_one_identity_is_accepted(repo: Path, monkeypat
 
 
 @pytest.mark.parametrize("mode", ("staged", "push"))
+def test_a_rewrite_beside_an_introduction_is_not_an_introduction(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
+    """A commit that rewrites A while introducing B introduces B alone.
+
+    A' must not become a text that the later restoration must carry: the only texts
+    introduced under this identity are A and B, even though one commit brought in both
+    the rewritten A' and the new B.
+    """
+    first = "The statement matches the printed exercise."
+    rewritten_first = "The statement matches the printed statement."
+    second = "The local group is Hatcher's `M|x` on printed p. 234."
+    rewritten_second = "The local group is Hatcher's `N|y` on printed p. 235."
+    card = repo / "corpus/one card.md"
+    for source, stamp in (
+        (RECORDED, "2026-11-11T09:00:00 +0000"),
+        (TWICE_RECORDED.replace(first, rewritten_first), "2026-11-12T09:00:00 +0000"),
+        (TWICE_RECORDED.replace(first, rewritten_first).replace(second, rewritten_second), "2026-11-14T09:00:00 +0000"),
+    ):
+        card.write_text(source)
+        git(repo, "add", "corpus/one card.md")
+        monkeypatch.setenv("GIT_COMMITTER_DATE", stamp)
+        git(repo, "commit", "-qm", "rewrite one event or introduce another")
+    if mode == "push":
+        track(repo, git(repo, "rev-parse", "HEAD").strip())
+
+    card.write_text(TWICE_RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "corpus/one card.md")
+
+    assert result.returncode == 0, result.stderr
+
+
+@pytest.mark.parametrize("mode", ("staged", "push"))
 def test_reordering_then_duplicating_an_event_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
     """An exact reorder does not make B into A's earlier record or permit A's deletion."""
     first = "- event: source-checked\n  by: claude\n  date: 2026-11-11\n  note: The statement matches the printed exercise.\n"
