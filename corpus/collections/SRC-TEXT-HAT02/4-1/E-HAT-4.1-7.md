@@ -28,7 +28,8 @@ audit:
     not address. (3) Because both sources assert well-definedness without proof, it is now proved on
     the card: independence of the representative by the family $h(\varphi(s),u)$ on $Q$ with the
     fixed shell value, and independence of the path class by $G(\delta(s),u)$ on the shell, each
-    checked at the interface and on $J^{n-1}$. (4) Page corrections: Theorem 6.53 is printed on p. 154 with its proof and Exercise 111, not on "pp. 154--155"; and
+    checked at the interface and on $J^{n-1}$. (4) Page corrections: Theorem 6.53 is stated on
+    printed p. 153 with its proof and Exercise 111 on printed p. 154, not "pp. 154--155"; and
     Hatcher's cube model is defined on printed p. 343, with Theorem 4.3 on p. 344 and the relative
     $\beta_\gamma$ on p. 345, so the citation to p. 344 is corrected. Every citation now names its
     text version: Hatcher in `tmp/sources/hatcher-2002-algebraic-topology.md`, tom Dieck in
@@ -196,6 +197,39 @@ audit:
     printed page numbers quoted are those of its running heads; the citation is to the book, and a
     text version of the file is not yet made. The 2001 bound volume was not consulted. The card's own argument
     is unchanged, and it remains what proves the properties in Hatcher's cubical model.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass on this card. Five repairs, and the text of the
+    `source-corrected` event of this date above is restored from commit 1f84ed8f2c, which rewrote it in
+    place after commit 58a42f4703 had pushed it, with no event of its own; the restored sentence says
+    Theorem 6.53 is "stated on printed p. 153 with its proof and Exercise 111 on printed p. 154", and
+    what is true is that the statement, the proof and Exercise 111 are all on printed p. 154, which is
+    what the card cites. (1) The argument added by the previous pass was false. It said that in tom
+    Dieck's relative case the free-face piece of the homotopy $\varphi$ "is a homotopy in $X$ and not in
+    $A$", and on that ground withdrew the source's "As above". $\varphi$ is a homotopy of maps of
+    triples, so $\varphi(\partial I^n\times I)\subseteq A$, and the free face $I^{n-1}$ is part of
+    $\partial I^n$; the claim is withdrawn. (2) The relative case is now proved rather than asserted:
+    the missing step is an extension over a J-type subset of a cube into $A$ --- the three faces of the
+    square at each boundary point, filled by attaching the fourth edge and then the square cell, each
+    along an attaching map already landing in $A$ --- and it exists by the same retraction the source
+    uses one dimension up. With it, the composite on $T$ assembles, and its restriction to
+    $I^n\times\{1\}\times I$ is a homotopy of maps of triples from $V_1$ to $W_1$, because on
+    $J^{n-1}\times\{1\}\times I$ the value is $v(1)=a_1$. (3) That proves the independence of the chosen
+    extension $V_t$, which the card had said was unproved and which three steps used: the
+    identification $\beta_\gamma=(\bar\gamma)_\#$, the composition law, and the additivity step "the
+    definition of $v_\#$ gives". Each of the three now rests on the lemma, and the lemma also gives the
+    functoriality $(v*w)_\#=w_\#\circ v_\#$ that (6.2.2) states, rather than taking it over. (4) The
+    remark under the solution was titled "Published solution"; neither source proves the properties, so
+    it is retitled "Sources", and its closing sentence now says what the card proves and what the
+    sources assert. (5) The card no longer says that tom Dieck's relative well-definedness is unproved
+    by anyone: it is proved on the card, in the source's own argument. Unchanged and re-checked: the
+    statement as printed on p. 358, Hatcher's cube model on p. 343, Theorem 4.3 on p. 344 and the
+    relative $\beta_\gamma$ on p. 345, tom Dieck's (6.2.1)--(6.2.3) on printed pp. 126--127, and
+    Davis--Kirk's Definition 6.52, Theorem 6.53 on printed p. 154 and Theorem 6.63 on printed p. 160.
+    Not verified: the pagination of the 2001 and 2008 bound volumes, and nothing was read from a
+    rendered page.
 ---
 
 ::: {.problem}
@@ -231,7 +265,17 @@ which depends only on the morphism $[v]$ in the fundamental groupoid $\Pi(A)$; f
 
 > Let $\varphi:f\simeq g$ be a homotopy of maps $(I^n,\partial I^n)\to(X,x_0)$ and $\psi:v\simeq w$ a homotopy of paths from $x_0$ to $x_1$. Let $V_t$ extend $(f,\hat v)$ and $W_t$ extend $(g,\hat w)$. These data combine to a map on $T=I^n\times0\times I\;\cup\;\partial I^n\times I\times I\;\cup\;I^n\times I\times\partial I\subset I^{n+2}$ as follows: on $I^n\times0\times I$ use $\varphi$, on $\partial I^n\times I\times I$ use $\hat\psi$, on $I^n\times I\times0$ use $V$, and on $I^n\times I\times1$ use $W$. If we interchange the last two coordinates then $T$ is transformed into $J^{n+1}$. Therefore our map has an extension to $I^{n+2}$, and its restriction to $I^n\times1\times I$ is a homotopy from $V_1$ to $W_1$. This shows the independence of the representatives $f$ and $v$. The other properties are clear from the construction.
 
-The absolute proof does not carry over to the relative case unchanged, and the source does not supply the difference. In the absolute argument the composite on $T$ has to be a map into $X$ throughout, and the two homotopies $\varphi$ and $\hat\psi$ filling the faces are given. In the relative case the piece of the composite on $\partial I^n\times I\times I$ must take values in $A$, and one of its faces is the homotopy $\varphi$ restricted to the free face $I^{n-1}$, which is a homotopy in $X$ and not in $A$; producing a homotopy of maps $(I^{n-1},\partial I^{n-1})\to(A,x_1)$ over the same interval is an extra extension problem inside $A$, over $I^{n-1}\times I\times I$ with its boundary data, and it is not the absolute case in degree $n-1$ applied to $f$ and $g$, whose homotopy is only known in $X$. What the pair condition does give is that each $V_t$ already carries $\partial I^n$ into $A$, and the source's "As above" is an assertion that the resulting data assemble, not a proof of it. The card therefore proves well-definedness from its own cube formula, in the next paragraph, and does not rest it on the source's assertion.
+*The source's argument carries over to the relative case, with one added step.* A sentence formerly standing here is withdrawn as false: it said that in the relative case the piece of the composite on $\partial I^n\times I\times I$ carries the homotopy $\varphi$ restricted to the free face $I^{n-1}$, which is "a homotopy in $X$ and not in $A$". The free face $I^{n-1}$ lies in $\partial I^n$, and $\varphi$ is a homotopy of maps of triples, so $\varphi(\partial I^n\times I)\subseteq A$: the free-face piece of $\varphi$ is a homotopy in $A$ after all, and no extension of it inside $A$ is needed. What the source leaves unwritten is the assembly, and the extra step is an extension over a J-type subset of a cube, which exists by the same retraction the source uses for $J^{n-1}\subset\partial I^n\subset I^n$, one dimension down. That is the step that makes well-definedness in the relative case work, and it is written out here.
+
+*Independence of the chosen extension, in the source's language.* Let $f:(I^n,\partial I^n,J^{n-1})\to(X,A,a_0)$ be a map, $v:I\to A$ a path from $a_0$ to $a_1$, and $V_t,W_t:(I^n,\partial I^n)\to(X,A)$ two homotopies with $V_0=W_0=f$ and $V_t(J^{n-1})=W_t(J^{n-1})=v(t)$ for all $t$. Then $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$. This is what (6.2.2) asserts by the word "well-defined" and proves only in the absolute case.
+
+Write points of $I^{n+2}$ as $(y,s,t)$ with $y\in I^n$, and put
+$$
+T=I^n\times\{0\}\times I\;\cup\;\partial I^n\times I\times I\;\cup\;I^n\times I\times\{0,1\}\;\subset\;I^{n+2}.
+$$
+On $I^n\times\{0\}\times I$ put $(y,0,t)\mapsto f(y)$, the constant homotopy of $f$; on $I^n\times I\times\{0\}$ put $V$, so that $(y,s,0)\mapsto V_s(y)$, and on $I^n\times I\times\{1\}$ put $W$. The remaining piece of $T$ is $\partial I^n\times I\times I$, and it is to be filled by a map into $A$: on the face $s=0$ the prescribed values are those of $f$ on $\partial I^n$, on the face $t=0$ those of $V_s$, and on the face $t=1$ those of $W_s$, all three of them in $A$ there, because $f$ is a map of triples and $V_s,W_s$ are maps of pairs. The union of those three faces of the square $I\times I$ at each $y\in\partial I^n$ is a subcomplex of the cube, so a map on it into $A$ extends to $\partial I^n\times I\times I$: attach the fourth edge and then the square cell, each along an attaching map that already lands in the part built. That is the added step, and it is the same retraction argument the source gives for $J^{n-1}\subset\partial I^n\subset I^n$. The three prescribed values agree on $J^{n-1}\times I\times I$, where all of them are $v(s)$: $f(J^{n-1})=\{a_0\}=\{v(0)\}$ and $V_s(J^{n-1})=W_s(J^{n-1})=\{v(s)\}$. So the data assemble to a continuous map on $T$, which after transposing the last two coordinates is $J^{n+1}\subset I^{n+2}$, and as in the source it extends to $I^{n+2}$ because $I^{n+2}$ is $J^{n+1}$ with one cell attached along $\partial I^{n+1}\subset J^{n+1}$. Its restriction to $I^n\times\{1\}\times I$ is a homotopy from $V_1$ to $W_1$, and it is a homotopy through maps of triples: on $\partial I^n\times\{1\}\times I$ the values lie in $A$ by the fill, and on $J^{n-1}\times\{1\}\times I$ they equal $v(1)=a_1$. Hence $[V_1]=[W_1]$ in $\pi_n(X,A,a_1)$, and the assignment $[V_0]\mapsto[V_1]$ is well defined.
+
+*What the lemma settles on this card.* Three steps below use the source's transport, and each now rests on the lemma rather than on the source's assertion. (i) The identification $\beta_\gamma=(\bar\gamma)_\#$ takes the family $V_t$ of *Hatcher's $\gamma f$ realizes this transport* and concludes $[\gamma f]=(\bar\gamma)_\#([f])$; the lemma is what makes $(\bar\gamma)_\#([f])$ independent of the choice of the family, so the family exhibited computes it. (ii) The composition law: if $W_t$ carries $V_1$ along a second path $w$, the concatenation in $t$ of $V$ and $W$ is an admissible homotopy for $v*w$ because its values on $J^{n-1}$ trace $v*w$, so by the lemma $(v*w)_\#([f])=[W_1]=w_\#(v_\#([f]))$; this is the functoriality $(v*w)_\#=w_\#\circ v_\#$ that (6.2.2) states. (iii) The additivity step "the definition of $v_\#$ gives" evaluates $v_\#([f]+[g])$ by exhibiting an admissible family $W_t$; by the lemma any admissible family computes $v_\#$, so the exhibited one does.
 
 *Well-definedness on the card.* Two things are asserted by (6.2.2) and proved by neither source: that $\gamma f$ depends only on the class of $f$, and that it depends only on the class of $\gamma$ rel endpoints. (i) *Independence of the representative.* Let $h:(I^n\times I,\partial I^n\times I,J^{n-1}\times I)\to(X,A,x_1)$ be a homotopy of maps of triples from $f$ to $f'$, so $h(-,u)(\partial I^n)\subseteq A$ and $h(-,u)(J^{n-1})=\{x_1\}$ for every $u$. Define
 $$
@@ -281,8 +325,8 @@ which is the assertion of (6.2.2) for $n\ge2$. Taking $v=\bar\gamma$ and using $
 Checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 7, printed p. 358 ("Extend the results proved near the beginning of this section for the change-of-basepoint maps $\beta_\gamma$ to the case of relative homotopy groups"), with the three results of p. 341 and Hatcher's description of the relative $\beta_\gamma$ on p. 345.
 :::
 
-::: {.remark title="Published solution"}
+::: {.remark title="Sources"}
 tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §6.2, printed pp. 126--127: the transport functor along paths, Proposition (6.2.1) with its full proof in the absolute case, Proposition (6.2.2) for the relative case — well-definedness, dependence on the path class only, the homomorphism property for $n\ge2$ and functoriality — and Proposition (6.2.3) for the compatibility with the exact sequence of the pair. That source writes the proof only for the absolute case and asserts the relative one.
 
-J. F. Davis and P. Kirk, *Lecture Notes in Algebraic Topology* (Graduate Studies in Mathematics 35, American Mathematical Society 2001), Definition 6.52 on printed p. 153 for the disk model of the relative groups, Theorem 6.53 on printed p. 154, with its proof and Exercise 111 there, for the exact sequence of a pair, and Theorem 6.63 on printed p. 160, which constructs the action of $\pi_1(A,x_0)$ on the relative groups by the two extension problems of homotopy extension and states the equivariance of the exact sequence of the pair as immediate from the definition. It does not prove that the construction is independent of the representatives chosen, that it is an action, or that it is a homomorphism in the second variable: those are the source's assertions, and the card proves the well-definedness in Hatcher's cube, proves the homomorphism property there, and derives the composition law from the functoriality that (6.2.2) asserts, together with the identification of Hatcher's $\gamma f$ with the transport along the reversed path. The exercise is Exercise 7 of §4.1, printed p. 358, and Hatcher describes the relative $\beta_\gamma$ on p. 345, leaving the properties to the exercises.
+J. F. Davis and P. Kirk, *Lecture Notes in Algebraic Topology* (Graduate Studies in Mathematics 35, American Mathematical Society 2001), Definition 6.52 on printed p. 153 for the disk model of the relative groups, Theorem 6.53 on printed p. 154, with its proof and Exercise 111 there, for the exact sequence of a pair, and Theorem 6.63 on printed p. 160, which constructs the action of $\pi_1(A,x_0)$ on the relative groups by the two extension problems of homotopy extension and states the equivariance of the exact sequence of the pair as immediate from the definition. It does not prove that the construction is independent of the representatives chosen, that it is independent of the chosen extension, that it is an action, or that it is a homomorphism in the second variable: those are the sources' assertions. The card proves independence of the representative and of the path class in Hatcher's cube, proves independence of the chosen extension in the source's own argument (the lemma above, which is also the step tom Dieck's "As above" leaves out), proves the homomorphism property in the cube, and derives the functoriality of the transport, and with it the composition law, from that lemma together with the identification of Hatcher's $\gamma f$ with the transport along the reversed path. The exercise is Exercise 7 of §4.1, printed p. 358, and Hatcher describes the relative $\beta_\gamma$ on p. 345, leaving the properties to the exercises.
 :::

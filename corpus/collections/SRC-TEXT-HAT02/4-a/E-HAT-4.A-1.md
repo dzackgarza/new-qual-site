@@ -117,6 +117,21 @@ audit:
     the text layer of `tmp/sources/davis-kirk-lecture-notes-algebraic-topology.pdf`, whose running
     heads give the printed page numbers quoted, the citation being to the book. Nothing in the
     solution's `pf` block changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass: one sentence of the solution explained Hatcher's Example 4A.3 by
+    the wrong reason and is corrected. It said that the homotopy $f_s(z)=f(z)\gamma(s)$ "ends at a map
+    homotopic to $f$ rather than at $f$ itself" because "the loop is not required to be stationary".
+    What Hatcher prints on printed p. 422 is that the homotopy "starts and ends with a map homotopic to
+    $f$", and the reason is that in an H-space the identity element is a two-sided identity only up to
+    homotopy, so $f(z)x_0$ is homotopic to $f(z)$ and not necessarily equal to it; the basepoint
+    condition is a separate matter, and Hatcher records that $f_s(z_0)$ traces $\gamma$ and that both
+    of his auxiliary homotopies are basepoint-preserving by the definition of an H-space. The card now
+    says that, and the derivation in the `pf` block, which needs no H-space convention, is unchanged.
+    Checked in `tmp/sources/hatcher-2002-algebraic-topology.md`, Example 4A.3 on printed p. 422, and
+    against the exercise on printed p. 426.
 ---
 
 ::: {.problem}
@@ -124,7 +139,7 @@ Show directly that if $X$ is a topological group with identity element $x_0$, th
 :::
 
 ::: {.solution}
-The exercise is §4.A Exercise 1, printed p. 426, Hatcher read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`. The device is Hatcher's: on printed p. 422, Example 4A.3 shows that for an H-space with identity $x_0$ the action of $\pi_1(X,x_0)$ on $\langle Z,X\rangle$ is trivial, by the homotopy $f_s(z)=f(z)\gamma(s)$ that multiplies by the loop and carries the basepoint along $\gamma$; the loop is not required to be stationary, so the homotopy ends at a map homotopic to $f$ rather than at $f$ itself. Here the space is a group, so the normalisation is $H(z,t)\gamma(t)^{-1}$ with $\gamma(t)=H(z_0,t)$, which ends at $g$ itself, and continuity of $F$ is continuity of the multiplication and of inversion, which are part of the definition of a topological group Hatcher works with in §4.A.
+The exercise is §4.A Exercise 1, printed p. 426, Hatcher read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`. The device is Hatcher's: on printed p. 422, Example 4A.3 shows that for an H-space with identity $x_0$ the action of $\pi_1(X,x_0)$ on $\langle Z,X\rangle$ is trivial, by the homotopy $f_s(z)=f(z)\gamma(s)$ that multiplies by the loop and carries the basepoint along $\gamma$. Hatcher's own words are that this homotopy "starts and ends with a map homotopic to $f$", and the reason is not that the loop is unconstrained but that in an H-space the identity element is an identity only up to homotopy: $f_s(z)$ at $s=0$ is $f(z)x_0$, which is homotopic to $f(z)$ and need not equal it. The homotopy $f_s$ is basepoint-preserving all the same, since $f_s(z_0)=\gamma(s)$ traces $\gamma$, and Hatcher records that both of his auxiliary homotopies are basepoint-preserving by the definition of an H-space. Here the space is a group, so the normalisation is $H(z,t)\gamma(t)^{-1}$ with $\gamma(t)=H(z_0,t)$, which ends at $g$ itself, and continuity of $F$ is continuity of the multiplication and of inversion, which are part of the definition of a topological group Hatcher works with in §4.A.
 
 ::: pf
 
