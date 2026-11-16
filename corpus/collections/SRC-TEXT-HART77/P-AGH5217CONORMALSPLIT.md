@@ -47,7 +47,7 @@ audit:
     characteristic 3 but the resulting coefficient of h is 2 = -1, so the class
     is still 2 eta. Searched outside the twelve retained sets: Yang Pi-Yeh,
     Hartshorne Solutions, exercise 5.2.17, printed pp. 106-107
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), computes both parts by the
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), computes both parts by the
     Jacobian presentation and adds characteristic 3 to the split case, which
     contradicts its own 2 eta; Algebraic Geometry II, National Taiwan
     University, 2020 Spring, has no entry for Exercise 17 of section 2. Egbert,
@@ -55,6 +55,27 @@ audit:
     whether the charts x_1 = 0 or x_2 = 0 add a generator of the ideal of C_n;
     the two charts used suffice because the transition matrix between them
     determines the Cech class.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Located two published treatments of part (a) on 2026-11-16, neither of which
+    is in tmp/sources. Math StackExchange answer 1583486 by Ted Shifrin, to
+    question 1583326, "Normal bundle of twisted cubic", computes the conormal
+    bundle of the twisted cubic in the charts [1,x,y,z] and [X,Y,Z,1], writes the
+    two frames on the overlap, and reads the splitting O(-5) + O(-5) off the
+    transition matrix, which is a complete argument for l = m = -5. Georges
+    Elencwajg's answer 569653 to question 569237 records that the splitting of the
+    normal bundle as O(5) + O(5) is Proposition 6 of Eisenbud and Van de Ven, On
+    the normal bundles of smooth rational space curves, a published theorem not in
+    tmp/sources. Math StackExchange answer 2664944 by Sasha, to question 2664333,
+    gets the conormal sequence and the Jacobian presentation of the twisted cubic
+    and stops at "it is easy to check that the conormal sheaf is O(-5) squared";
+    the degree count 3(-3) - 2(-1) leaves -10, which admits O(-4) + O(-6) as well,
+    so that entry is not complete. No published treatment of part (b) was located,
+    in particular none of the characteristic-two answer minus six and minus eight.
+    Steps s2 and s3 are the card's own general computation for both parts, not a
+    transcription of any of the three.
 ---
 
 ::: {.problem}
@@ -457,7 +478,18 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$. In characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$. In characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well.
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
+
+Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), is a complete published proof of part (a) by another route. The conormal sequence of $C$ in $\PP^3$ is
+$$
+0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrict_C\to\Omega_C\to0,
+$$
+and the answer identifies the two frames of $N^\vee_{C/\PP^3}$ explicitly: in the chart $[1,x,y,z]$, with $C$ parametrized by $(t,t^2,t^3)$, the frame is $\sigma_1=-2t\,dx+dy$ and $\sigma_2=-3t^2dx+dz$; in the chart $[X,Y,Z,1]$, with $C$ parametrized by $(s^3,s^2,s)$, it is $\tau_1=-3t^{-5}dy+2t^{-6}dz$ and $\tau_2=t^{-3}dx-2t^{-4}dy+t^{-5}dz$, and on the overlap
+$$
+\tau_1=-3t^{-5}\sigma_1+2t^{-6}\sigma_2,\qquad \tau_2=-2t^{-4}\sigma_1+t^{-5}\sigma_2 .
+$$
+Elementary row and column operations reduce that transition matrix to the diagonal form with entries $-3t^{-5}$ and $-\tfrac13t^{-5}$, so the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b), and step [](#s3){.pf-ref} covers both parts by one computation, which is the card's own and not a transcription of either.
+
 :::

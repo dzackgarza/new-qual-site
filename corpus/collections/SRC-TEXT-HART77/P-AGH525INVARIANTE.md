@@ -46,15 +46,29 @@ audit:
     dimension is at most 2d-3 against dim P(V^*) = g+d-2, and both the dimension
     and the properness of the image were checked. Searched outside the twelve
     retained sets: Algebraic Geometry II, National Taiwan University, 2020
-    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`), which has no
+    Spring, Chapter V homework (tmp/sources/ntu-ag2-chapter5.pdf), which has no
     entry for Exercise 5 of section 2; Yang Pi-Yeh, Hartshorne Solutions,
     exercise 5.2.5, printed p. 103
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), which treats all four parts
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), which treats all four parts
     and whose (a) infers a nonzero section from nonnegative degree, an inference
     that fails for e >= g-1, so (a) is not a complete published proof; Egbert,
     PDF pp. 263-264, proves (b) and cites Fuentes-Pedreira and Maruyama for (a)
     and (c). Not checked: Nagata's theorem quoted in step s15 is not in
     tmp/sources, so part (d) rests on the printed Note alone.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16. Its Theorem
+    3.2, printed p. 15, restates the book's Theorem V.2.12: a decomposable
+    normalized bundle forces e at least zero, and an indecomposable one gives
+    -2g <= e <= 2g-2. Its proof is the citation "See [8], V, 2.12 and [15]", so it
+    adds no argument of its own and does not reach part (a)'s existence statement
+    for every e in the interval from 0 to 2g-2, nor part (c)'s range from -g to
+    below zero. The sharper bound e >= -g is Nagata's, cited as the printed Note
+    and not read. Math StackExchange question 4398506 concerns only the notation
+    of part (b). No complete published argument for (a) or (c) was located; steps
+    s1 to s3 and s10 to s12 remain the card's.
 ---
 
 ::: {.problem}
@@ -598,9 +612,9 @@ Nagata bound explicitly cited by the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.5, PDF pp. 263--264. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4", and for (c) "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama": both are citations to Fuentes--Pedreira and Maruyama, neither retained. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct (a) from a nonzero class in $H^1(\OO_C(K_C-A))$ with $A$ effective, and steps [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove (c) by a dimension count on the bad classes in $\PP H^1(\OO_C(-D))$; step [](#s15){.pf-ref} takes (d) from the printed Note. Matches on (b); (a) and (c) are supplied here.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.5, PDF pp. 263--264. Part (b) he proves: with $\xi\in H^1(\mathcal L(-D))$ the class of the extension and $\gamma:H^0(\mathcal L(D+K-E))\to H^1(\mathcal L(-E))$, injectivity of $\gamma$ is equivalent to $\mathcal E$ being normalized, and he runs the commutative square with $H^0(\OO_C)\to H^1(\mathcal L(-D))\to H^1(\mathcal L(-E))$ in both directions. For (a) he writes "This will get us all invariants for this problem with the help of thm V.2.12. This is F,P thm 4.12.4", and for (c) "By proof of (a), I only need to find one with invariant $-g$ ... This is given by 3.13 in Maruyama": both are citations to Fuentes--Pedreira and Maruyama, neither retained. Part (d) he answers "By Theorem 1 in Nagata 'Self-intersection number'", which is the source of the printed Note. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct (a) from a nonzero class in $H^1(\OO_C(K_C-A))$ with $A$ effective, and steps [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove (c) by a dimension count on the bad classes in $\PP H^1(\OO_C(-D))$; step [](#s15){.pf-ref} takes (d) from the printed Note. Matches on (b); (a) and (c) are supplied here.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.5, printed p. 103, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s12){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.5, printed p. 103, treats all four parts. For (a) it argues that $\Ext^1(\mathcal L,\OO_C)\cong H^0(C,\omega_C\tensor\mathcal L)$ "and $\deg\omega_C\tensor\mathcal L=2g-2-e\ge0$, hence $\Ext^1$ is nontrivial": a line bundle of nonnegative degree on a curve of genus $g$ need not have a section, and the correct bound is $h^0\ge\deg-g+1=g-1-e$, which is negative for $e\ge g-1$. Step [](#s1){.pf-ref} avoids the issue by taking $\mathcal L=\OO_C(A-K_C)$ with $A$ effective, so that $H^0(\OO_C(A))\ne0$ directly. Its (b) is the square of step [](#s6){.pf-ref} written out; its (c) is the dimension count of step [](#s12){.pf-ref}; its (d) is garbled ("all $\ker\xi$ form the Grassmannian $G^{d+1}_d$, which has dimension $d$ ... so we have $d\le2(d-1)$").
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 5 of §2.
 :::

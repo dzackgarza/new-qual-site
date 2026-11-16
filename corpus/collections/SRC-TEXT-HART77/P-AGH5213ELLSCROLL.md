@@ -76,6 +76,19 @@ audit:
     at which the split formula and the indecomposable bundle part company, so the
     splitting's validity at e = -1 is not what the numbers turn on. The card's own
     steps use none of his numbers and are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16. Its
+    introduction says that the classification of elliptic scrolls of Corrado Segre
+    does not follow directly from the very-ampleness criterion, and refers for it
+    to the authors' own paper "The classification of elliptic scrolls", their
+    reference [4]; that paper is not in tmp/sources and was not read. Nothing in
+    the present paper constructs the scroll of this exercise, so it is not a
+    published argument for it. No complete published argument located; the count
+    h^0 = 2n - e = d and the scroll in the projective space of dimension d-1 remain
+    the card's, and Yang Pi-Yeh's count, recorded above, agrees with them.
 ---
 
 ::: {.problem}
@@ -355,7 +368,7 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
 
 The very-ampleness step it imports is its own 5.2.12(b), and the two absolute values there are wrong by the
 same amount, so the step survives while its arithmetic does not. On printed p. 104 it writes
@@ -377,7 +390,7 @@ nontrivial $\mathfrak b$ of degree $0$, $A+B-P-Q$ say, it is $1$, which is the t
 $\mathfrak b\sim0$ is the one at which the split formula and the indecomposable bundle part company. None of
 these numbers is used by the steps above.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
 $$
 h^0(\OO_X(\mathcal L(D)))=h^0(\OO_C(n)\oplus\OO_C(n-e))=2n-1=d-1,
 $$

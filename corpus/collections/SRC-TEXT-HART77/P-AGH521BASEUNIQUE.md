@@ -44,15 +44,32 @@ audit:
     a rational map P^1 to a nonrational curve constant. Searched outside the
     twelve retained sets and read two further published treatments. Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf, text version `tmp/sources/ntu-ag2-chapter5.md`): the
+    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf): the
     argument is the card's, except that its last case reads "if C = P^1 then
     f-tilde is a constant, which means f is a constant, a contradiction", and
     f-tilde is dominant by construction; step s4 states the unirationality that
     case needs. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.1, printed p.
-    102 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), passes from K(X) = L(x) to
+    102 (tmp/sources/lfwin-hartshorne-solutions.pdf), passes from K(X) = L(x) to
     "the unique curve C with K(C) = L", which assumes that L is determined by
     K(X), the content of the exercise. Not checked: the argument was not
     re-examined over a non-algebraically-closed base field.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Searched outside the retained sets again on 2026-11-16 and read two further
+    sources. Luis Fuentes and Manuel Pedreira, The Projective Theory of Ruled
+    Surfaces, arXiv:math/0006204v3 (2002), downloaded whole to
+    tmp/sources/projective-theory-ruled-surfaces.pdf: its Proposition 1.7, printed
+    p. 5, builds the incidence variety of a linearly normal scroll and concludes
+    that the scroll determines its ruled surface, which is uniqueness of the ruling
+    of an embedded scroll and not the birational statement asked here, so it does
+    not supply this exercise. Math StackExchange question 1715815, "Uniqueness of
+    ruling for a ruled surface", asks exactly V.2.1 and has no answer: the page
+    carries only Mohan's comment that a nonconstant map between curves of genus
+    above one is an isomorphism by Hurwitz, with pointers to work of Ohm and
+    Deveney. No complete published argument for V.2.1 was located; steps s2 to s5
+    remain the card's own and were checked against the book in the note above.
 ---
 
 ::: {.problem}
@@ -243,7 +260,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 ::: {.remark title="Published solution"}
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §2 (solution by Shuang-Yen Lee), PDF p. 5, argues as steps [](#s2){.pf-ref} to [](#s4){.pf-ref}: assume $C'\not\cong\PP^1$, restrict the birational map to $\{x\}\times\PP^1$ and extend to a morphism $\PP^1\to C'$, which is constant because $C'\not\cong\PP^1$; the constants assemble into a morphism $C\to C'$; then "$C\not\cong\PP^1$, similarly we have a map $\widetilde g:C'\to C$", and with $f,g$ inverse so are $\widetilde f,\widetilde g$. Its last case reads "if $C=\PP^1$, then $\widetilde f$ is a constant, which means $f$ is a constant, a contradiction", which is not what the construction gives: $\widetilde f$ is dominant, being induced by a dominant map. What the case needs is that a dominant rational map $\PP^1\dashrightarrow C'$ makes $C'$ unirational, hence isomorphic to $\PP^1$; that is step [](#s4){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.1, printed p. 102, writes "$K(X)=L\otimes_kk(x)=L(x)$; then by corollary 6.12 in chapter I there exists a unique smooth projective curve $C$ such that $K(C)=L$, i.e. $C$ is unique one such that $X$ is birationally equivalent to $C\times\PP^1$". The uniqueness of the smooth projective model with a *given* function field is I.6.12, but the identity "$K(C)=L$" is not determined by $K(X)$ alone: that $L$ and $L'$ with $L(x)\cong L'(x)$ satisfy $L\cong L'$ is exactly what the exercise asks, so the argument assumes its conclusion.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.1, printed p. 102, writes "$K(X)=L\otimes_kk(x)=L(x)$; then by corollary 6.12 in chapter I there exists a unique smooth projective curve $C$ such that $K(C)=L$, i.e. $C$ is unique one such that $X$ is birationally equivalent to $C\times\PP^1$". The uniqueness of the smooth projective model with a *given* function field is I.6.12, but the identity "$K(C)=L$" is not determined by $K(X)$ alone: that $L$ and $L'$ with $L(x)\cong L'(x)$ satisfy $L\cong L'$ is exactly what the exercise asks, so the argument assumes its conclusion.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.1, PDF p. 261: "Suppose that $C_0\times\PP^1\cong X\cong C_1\times\PP^1$. But two curves which are birational are isomorphic." That is the last sentence of step [](#s5){.pf-ref}; the birationality of $C_0$ and $C_1$ is asserted and not proved, and it is the content of the exercise.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.1, PDF p. 261: "Suppose that $C_0\times\PP^1\cong X\cong C_1\times\PP^1$. But two curves which are birational are isomorphic." That is the last sentence of step [](#s5){.pf-ref}; the birationality of $C_0$ and $C_1$ is asserted and not proved, and it is the content of the exercise.
 :::
