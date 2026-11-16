@@ -51,6 +51,26 @@ audit:
     too. Not checked: Haiman's 8.2--8.7, on which his 8.8 rests, beyond
     reading that the soberization of a variety is Spec of its coordinate
     ring on the affine charts this card uses.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, two repairs to the Haiman steps, both
+    re-read in the text version tmp/sources/haiman-varieties-as-schemes.md.
+    (1) Step haiman-affine-case said that a morphism X -> X' is "exactly a
+    ringed-space morphism into an affine scheme over k, that is, a k-algebra
+    homomorphism R' -> R". Haiman's 8.10 says what the step now says: by the
+    identity O(X) = O_X(X) a morphism gives f^flat: R' = O(X') -> O_X(X) =
+    O(X) = R, a k-algebra homomorphism gives back a polynomial map by 1.9,
+    and the correspondence is the special case of the functor
+    (X, O_X) -> O_X(X) from ringed spaces to the opposite of rings. (2) Step
+    haiman-local-description derived "X_f is affine" from O(X) = O_X(X). The
+    two statements are separate in 8.9: the second is proved there from
+    Theorem 8.4, which identifies X with Y_cl for Y = Spec O(X) and Y_f =
+    Spec(O(X)_f) with the classical affine variety of coordinate ring
+    O(X)_f. The step now separates them and the remark says which comes from
+    which. Not checked in this pass: parts (a) and (b) and the chartwise
+    steps of (c), which the reader accepted.
 ---
 
 ::: {.problem}
@@ -232,7 +252,7 @@ A morphism of varieties is the same thing as a compatible system of morphisms be
 ::: pf-proof
 This is the first paragraph of Haiman's proof of Theorem 8.8, §8.10, PDF p. 18.
 
-By §8.9, PDF p. 18, every global regular function on a classical affine variety is a polynomial, $\OO(X)=\OO_X(X)$; consequently, for a polynomial function $f$ on an affine variety $X$, the open subspace $X_f$ is again an affine variety with coordinate ring $\OO(X)_f$. Hence the open subsets of a classical variety that are isomorphic to affine varieties form a base of its topology.
+By §8.9, PDF p. 18, two separate statements hold. First, the canonical homomorphism $\OO(X)\to\OO_X(X)$ is an isomorphism: every global regular function on a classical affine variety is a polynomial. Second, for a polynomial function $f$ on $X$ the open subspace $X_f$ is again a classical affine variety, with coordinate ring $\OO(X)_f$; Haiman derives this not from the identity just stated but from Theorem 8.4, which identifies $X$ with $Y_{\mathrm{cl}}$ for $Y=\Spec\OO(X)$, so that $X_f=Y_{\mathrm{cl}}\cap Y_f$ and $Y_f=\Spec(\OO(X)_f)$ corresponds to the classical affine variety of coordinate ring $\OO(X)_f$. Hence the open subsets of a classical variety that are isomorphic to affine varieties form a base of its topology.
 
 To give a morphism $f:X\to X'$ of classical varieties is therefore equivalent to giving a system of compatible morphisms $f_U:U\to W$ from open affine subvarieties $U$ covering $X$ to open affine subvarieties $W\subseteq X'$, the compatibility being agreement on the intersections, which are covered by affine opens in their turn.
 
@@ -247,7 +267,7 @@ For affine varieties the morphisms correspond bijectively to $k$-algebra homomor
 ::: pf-proof
 This is the rest of Haiman's proof of Theorem 8.8, §8.10, PDF pp. 18--19.
 
-Let $X$ and $X'$ be classical affine varieties over $k$ with coordinate rings $R=\OO(X)$ and $R'=\OO(X')$. By §8.9 the canonical homomorphism $\OO(X)\to\OO_X(X)$ is an isomorphism, so a morphism $f:X\to X'$ is exactly a ringed-space morphism into an affine scheme over $k$, that is, a $k$-algebra homomorphism $R'\to R$; the correspondence is functorial because it is the functor $(X,\OO_X)\mapsto\OO_X(X)$.
+Let $X$ and $X'$ be classical affine varieties over $k$ with coordinate rings $R=\OO(X)$ and $R'=\OO(X')$. By §8.9 the canonical homomorphism $\OO(X)\to\OO_X(X)$ is an isomorphism, so a morphism $f:X\to X'$ gives a $k$-algebra homomorphism $f^\flat:R'=\OO(X')\to\OO_X(X)=\OO(X)=R$, and conversely a $k$-algebra homomorphism $\varphi:R'\to R$ determines a polynomial map $X\to X'$, which is a morphism by §1.9; the two assignments are inverse to one another and functorial because this is the special case of the functor $(X,\OO_X)\mapsto\OO_X(X)$ from ringed spaces to the opposite of the category of rings.
 
 For affine $k$-schemes $Y=\Spec R$ and $Y'=\Spec R'$ the same argument, now by the universal property of the spectrum, gives a functorial bijection between $k$-morphisms $Y\to Y'$ and $k$-algebra homomorphisms $R'\to R$.
 
@@ -513,5 +533,5 @@ Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-fi
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.15, PDF pp. 16--17, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) a closed point of $t(V)$ is a maximal ideal and the Nullstellensatz gives residue field $k$; (b) the residue-field maps form the tower $k\to k(f(P))\to k(P)=k$; (c) $f$ sends closed points to closed points, and then: "This is indeed a map of varieties, if we look at the corresponding affine charts. Now we want to show that $f$ is the same as the map induced from $f_c$. Basically we need to show that if two maps of schemes $\Spec A\to\Spec B$ agree on closed points, then they induce the same maps at the level of schemes ... This follows from the fact that there is a functorial embedding $A\hookrightarrow\prod_{\operatorname{maxSpec}A}k$".
 The proof above is the same route with the chart step carried out rather than asserted: for each $P$ it produces affine neighbourhoods with $f(V_0)\subseteq W_0$, shows that $F$ is there the affine-variety morphism of the $k$-algebra map $B\to A$, obtains continuity and regularity, and concludes $t(f)=F$; in (a) it also proves the converse direction through $\dim Z=\trdeg_k k(Z)$. Part (c), the surjectivity, has no complete published solution in the retained sets; the sets searched are recorded in `COMPLAINTS.md`.
 
-There is one outside them, and part (c) of the proof above is now that source's argument rather than the card's own. Mark Haiman, *Varieties as Schemes* (Math 256, Berkeley, March 2019), text version `tmp/sources/haiman-varieties-as-schemes.md`, proves the full equivalence rather than the exercise. Theorem 8.8, PDF p. 18, states it: "Let $k$ be an algebraically closed field. The constructions in §8.2 and §8.3 give a functorial equivalence between the categories of classical varieties and reduced affine schemes over $k$. Specifically, morphisms $f:X\to X'$ between classical varieties are in functorial one-to-one correspondence with $k$-morphisms $g:Y\to Y'$ between the schemes associated to them by the soberization construction in §8.2." Its proof is 8.10, PDF pp. 18--19, and it has two steps, both reproduced as steps of the solution above: that on a classical variety the open subsets isomorphic to affine varieties form a base of the topology, so that a morphism is a compatible system of morphisms of affine open subvarieties, schemes having the same local description; and that for affine varieties the morphisms correspond bijectively to $k$-algebra homomorphisms of coordinate rings, which is the same statement for affine schemes. Step [](#haiman-local-description){.pf-ref} is the first and step [](#haiman-affine-case){.pf-ref} the second; the identity $\OO(X)=\OO_X(X)$ they use is Haiman's 8.9 on PDF p. 18. Haiman's correspondence is between $V$ and $\Spec$ of its coordinate ring, which is the scheme $t(V)$ built in Hartshorne's II.2.6, so the bijection of part (c) is his. What the card adds is the verification of his two steps for this statement, and parts (a) and (b), on which the identification of the closed points of $t(V)$ with the points of $V$ rests; the notes carry no printed folio, so PDF pages are cited. Agree with the source throughout: (c) is its argument, transcribed.
+There is one outside them, and part (c) of the proof above is now that source's argument rather than the card's own. Mark Haiman, *Varieties as Schemes* (Math 256, Berkeley, March 2019), text version `tmp/sources/haiman-varieties-as-schemes.md`, proves the full equivalence rather than the exercise. Theorem 8.8, PDF p. 18, states it: "Let $k$ be an algebraically closed field. The constructions in §8.2 and §8.3 give a functorial equivalence between the categories of classical varieties and reduced affine schemes over $k$. Specifically, morphisms $f:X\to X'$ between classical varieties are in functorial one-to-one correspondence with $k$-morphisms $g:Y\to Y'$ between the schemes associated to them by the soberization construction in §8.2." Its proof is 8.10, PDF pp. 18--19, and it has two steps, both reproduced as steps of the solution above: that on a classical variety the open subsets isomorphic to affine varieties form a base of the topology, so that a morphism is a compatible system of morphisms of affine open subvarieties, schemes having the same local description; and that for affine varieties the morphisms correspond bijectively to $k$-algebra homomorphisms of coordinate rings, which is the same statement for affine schemes. Step [](#haiman-local-description){.pf-ref} is the first and step [](#haiman-affine-case){.pf-ref} the second; the identity $\OO(X)=\OO_X(X)$ they use, and the affineness of $X_f$, which 8.9 derives from Theorem 8.4 rather than from that identity, are Haiman's 8.9 on PDF p. 18. Haiman's correspondence is between $V$ and $\Spec$ of its coordinate ring, which is the scheme $t(V)$ built in Hartshorne's II.2.6, so the bijection of part (c) is his. What the card adds is the verification of his two steps for this statement, and parts (a) and (b), on which the identification of the closed points of $t(V)$ with the points of $V$ rests; the notes carry no printed folio, so PDF pages are cited. Agree with the source throughout: (c) is its argument, transcribed.
 :::
