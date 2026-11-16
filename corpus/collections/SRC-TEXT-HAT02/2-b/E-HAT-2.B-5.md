@@ -95,6 +95,24 @@ audit:
     exercise. Searched without result for the exercise itself in the retained sets (Sam, Li,
     DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math 205B help file, May,
     Bredon, Maxim's Math 752 notes) and in Hatcher's text and errata.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The citation of the second proof changed and one attribution is withdrawn. The step that
+    isolates the two complementary disks cited "the answer to Math StackExchange question
+    4773641"; that question now carries no answers at all (answer_count 0, read through the
+    Stack Exchange API on 2026-11-16), so no answer there can be cited for the construction and
+    the card no longer attributes it to one. The construction's one external input is now cited
+    to a published book: Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies
+    Theorem), printed p. 236, proved on printed pp. 236--238 by Brown's argument, whose
+    hypothesis (an embedding of $S^{k-1}\times[-1,1]$) is what the disk $D^n$ of the exercise
+    supplies. The two complement computations the card takes from Hatcher's Proposition 2B.1 and
+    from Alexander duality are also Bredon's Corollary 19.3 and Theorem 19.4, printed p. 233.
+    Checked against the book: Hatcher's printed statement on p. 176, its hypothesis on $D^n$,
+    the case $k=n$, and every step of the excision argument on the card. Not claimed: a
+    published solution of Exercise 2.B.5; the retained solution sets contain none, recorded in
+    COMPLAINTS.md item 11.
 ---
 
 ::: {.problem}
@@ -142,7 +160,7 @@ Inside the coordinate disk $D^n$, the normal disk $D^{n-k}$ meets $S\cap D^n=D^k
 :::
 
 ::: {.pf-step #schoenflies-pair}
-A second proof, independent of Alexander duality and of any intersection number, follows [the answer to Math StackExchange question 4773641](https://math.stackexchange.com/questions/4773641) with every step checked, and supplies the generalized Schoenflies theorem that answer invokes.
+A second proof, independent of Alexander duality and of any intersection number, cuts $S$ along an equatorial sphere into the two disks whose union it is and reaches the isomorphism through excision; its one external input is the generalized Schoenflies theorem for a bicollared sphere, Bredon's Theorem 19.11 (printed p. 236). The construction was read on 2026-11-13 in an answer to Math StackExchange question 4773641; that thread now carries no answers at all (read through the Stack Exchange API on 2026-11-16), so no answer there is cited for it and every step below is checked directly.
 
 ::: pf-proof
 Let $h\colon S^k\to S^n$ and $h'\colon D^n\to S^n$ be embeddings with $S=h(S^k)$ and $h'(D^n)\cap S=h'(D^k)$, the second being the hypothesis of the exercise. Put $\ell_0=\{x\in D^k:\norm{x}<\tfrac12\}$, $L=D^k\setminus\ell_0$, and
@@ -159,7 +177,7 @@ For $k\ge1$, $D'$ is a closed $k$-disk. Let $\Sigma=h'(\{x\in\RR^k:\norm{x}=\tfr
 $$
 S\cap h'(\operatorname{int}D^n)=h'(D^k)\cap h'(\operatorname{int}D^n)=h'(\operatorname{int}D^k).
 $$
-Hence $h'^{-1}$ carries $D'$ near $\Sigma$ to the closed half-space $\{x\in\operatorname{int}D^k:\norm{x}\ge\tfrac12\}$, whose boundary sphere $\{\norm{x}=\tfrac12\}$ maps onto $\Sigma$, while $D'\setminus\Sigma=S\setminus\bar\ell$ is open in $S$. Thus $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary $\Sigma$, namely the closure of that component of $S\setminus\Sigma$. That manifold hypothesis is not automatic --- for the non-simply-connected side of the Alexander horned sphere the corresponding closure is not a manifold --- but the coordinate chart supplies it here. For $k\ge2$ the Generalized Schoenflies Theorem ([Andrew Putman, *The generalized Schoenflies theorem*, §1](https://academicweb.nd.edu/~andyp/notes/Schoenflies.pdf)), applied to the embedding $\Sigma\subset S\cong S^k$ and to the component $S\setminus\bar\ell$, whose closure is $D'$, then makes that closure a disk, so $D'\cong D^k$; for $k=1$, $S\cong S^1$, $\ell$ is an open interval and $D'$ a closed interval.
+Hence $h'^{-1}$ carries $D'$ near $\Sigma$ to the closed half-space $\{x\in\operatorname{int}D^k:\norm{x}\ge\tfrac12\}$, whose boundary sphere $\{\norm{x}=\tfrac12\}$ maps onto $\Sigma$, while $D'\setminus\Sigma=S\setminus\bar\ell$ is open in $S$. Thus $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary $\Sigma$, namely the closure of that component of $S\setminus\Sigma$. That manifold hypothesis is not automatic --- for the non-simply-connected side of the Alexander horned sphere the corresponding closure is not a manifold --- but the coordinate chart supplies it here. For $k\ge2$ the Generalized Schoenflies Theorem (Bredon, *Topology and Geometry*, Theorem 19.11, printed p. 236: for an embedding $S^{k-1}\times[-1,1]\to S^k$, the closure of each component of the complement of the embedded $S^{k-1}$ is homeomorphic to $D^k$), applied to the embedding $\Sigma\subset S\cong S^k$ and to the component $S\setminus\bar\ell$, whose closure is $D'$, then makes that closure a disk, so $D'\cong D^k$; for $k=1$, $S\cong S^1$, $\ell$ is an open interval and $D'$ a closed interval.
 
 So $D'$ is an embedded closed $k$-disk in $S^n$, and Hatcher's Proposition 2B.1(a), printed p. 169, gives
 $$
@@ -197,4 +215,6 @@ For $k<n$, step [](#complement-homology){.pf-ref} leaves only degree $r$ to chec
 
 ::: {.remark title="Source"}
 Andrew Putman, *The generalized Schoenflies theorem*, printed pp. 3--4 (Mazur's proof: a topological embedding $S^{n-1}\to S^n$ with a collar on one side bounds a ball), together with Hatcher, *Algebraic Topology* (2002), Proposition 2B.1(a) and its printed proof, pp. 169--170. The exercise is Exercise 5 of §2.B, printed p. 176; the disk $D^n$ supplies the collar Putman's theorem needs, and Hatcher's (a) is what makes $X=S^n-D'$ acyclic.
+
+The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), printed p. 236, whose proof occupies printed pp. 236--238 and follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the disk $D^n$ of the exercise supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, printed p. 233, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), printed p. 233, that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), printed pp. 169--170, so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input.
 :::
