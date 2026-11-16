@@ -65,14 +65,10 @@ audit:
     nonzero section of I_Y tensor pi^*O(m) for m >> 0 on the blowup of P^3
     along X and concludes that the image of its support is a surface of
     degree m through X; it argues no nonsingularity, which is the clause
-    the exercise asks for. His route to a section is not the printed
-    hint's: he gets one from pi_* (I_Y tensor pi^*O(m)) = pi_*I_Y (m) for
-    m >> 0 by "Serre's theorem", which is a global-generation statement,
-    not vanishing, and he never forms a very ample system or applies
-    Bertini, which is what the hint points at. abx's answer (2014-04-06) to
-    MathOverflow question 162554, read through the Stack Exchange API into
-    the text version tmp/sources/mo-162554-surfaces-singular-along-curve.md,
-    is the only complete argument
+    the exercise asks for, and its passage from Serre vanishing to a
+    section is not the flatness of the linear system that the printed hint
+    points at. abx's answer (2014-04-06) to MathOverflow question 162554,
+    read through the Stack Exchange API, is the only complete argument
     located for the moved system: with I_C generated in degree c, the
     system |k b^*H - beta E| is base point free for k >= beta c and ample
     for k >> 0, so Bertini gives a smooth irreducible member. With
@@ -117,9 +113,6 @@ audit:
     in degree one does not make the pushforward of O(1) its degree-one
     piece. That pushforward is the Ratliff-Rush closure of I_X, which can be
     strictly larger, and the step now carries a counterexample in k[x,y].
-    The false reason is the sentence of the note of 2026-11-11 above which
-    says the identity is "justified from the degree-one piece of the Rees
-    algebra"; that note is left as written and this one is its correction.
     The step uses normality instead: P^3 is normal, so pi_* O = O by Stein
     factorization, and pi_* O(-E) is an ideal containing I_X and contained
     in the radical of I_X, which is I_X because a nonsingular curve is
@@ -130,10 +123,8 @@ audit:
     MathOverflow text version is accurate, and the remark keeps those
     descriptions. Checked against the book in this pass: the printed
     exercise and its hint on printed p. 355, Proposition II.7.13(a) on
-    printed p. 164, Corollary III.11.5 on printed p. 280, all read in
-    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
-    p. N+15). Not checked: the rest of the proof was not re-derived in this
-    pass.
+    printed p. 164, Corollary III.11.5 on printed p. 280. Not checked: the
+    rest of the proof was not re-derived in this pass.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -154,6 +145,44 @@ audit:
     the Ratliff-Rush counterexample stand as the event above records them.
     Checked in this pass: nothing new; the rest of the proof was not
     re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fourth pass on the reader's report of this batch, on the audit trail. Two
+    dated events of 2026-11-16 had been extended in place and are restored to
+    their text at their date; the corrections they carried are stated here.
+    (i) The event whose note begins "Second published-solution search for
+    IV.6.9" was rewritten by commit e04ef87406, which replaced its two closing
+    clauses — Yang's passage from Serre vanishing to a section, and the abx
+    answer read through the Stack Exchange API — with a longer description of
+    Yang's route and the answer's text version. It is restored as it was
+    written in 2ef8c3d320, so it does not carry those corrections. They are in
+    the event of 2026-11-16 whose note begins "Repairs on the reader's report
+    of this batch", which is intact as written in 127dada9ab and which says
+    that Yang's section comes from "Serre's theorem" applied to
+    pi_*(I_Y tensor pi^*O(m)) = pi_*I_Y(m), a global-generation statement and
+    not Serre vanishing, that he forms no very ample system and applies no
+    Bertini, and that the abx answer's text version is
+    tmp/sources/mo-162554-surfaces-singular-along-curve.md. (ii) The event
+    whose note begins "Second pass on the reader's report of this batch" was
+    extended in place twice: by commit b765b6a6c8, adding that the false reason
+    for pi_* O(-E) = I_X is the sentence of the note of 2026-11-11 which says
+    the identity is "justified from the degree-one piece of the Rees algebra",
+    and by commit 15a20526df, adding that the pages it cites were read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. It is restored as it was
+    written in 1abd969bbb, and both additions are stated here: the false reason
+    is that sentence of 2026-11-11, which is left as written, and the book was
+    read in that text version, where printed p. N is PDF p. N+15. (iii) The
+    third pass's sentences saying that the restored search event carries the
+    accurate description of Yang's route and the MathOverflow text version are
+    withdrawn: as restored it carries neither, and this event carries them.
+    (iv) The last sentence of the event above, "and the remark keeps those
+    descriptions", was withdrawn by the third pass because the card contains no
+    remark; that withdrawal stands, and the descriptions it meant are those of
+    this event. Checked in this pass: this card's audit trail in git, commit by
+    commit. Not checked: nothing of the proof was re-derived in this pass, and
+    the pages named were not re-read.
 ---
 
 ::: {.problem}
