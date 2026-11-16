@@ -39,8 +39,8 @@ audit:
     complete published argument, and one published claim of a corrected
     jump that does not hold. Printed exercise read: Hartshorne, Algebraic
     Geometry (1977), III.12.3, printed pp. 291--292, with Example
-    III.9.8.4, printed pp. 274--275, Example III.12.9.2, printed p. 289,
-    and Exercise III.9.3.5(c), printed p. 285. Sources read: Dongryul Kim,
+    III.9.8.4, printed pp. 259--260, Example III.12.9.2, printed p. 289,
+    and Exercise IV.3.5(c), printed p. 315. Sources read: Dongryul Kim,
     Solutions to Hartshorne, Chapter III §12, PDF p. 215, which proves the
     flat limit and the flatness of the ideal sheaf and computes no
     cohomology, and whose errata ask whether the statement is false; A.
