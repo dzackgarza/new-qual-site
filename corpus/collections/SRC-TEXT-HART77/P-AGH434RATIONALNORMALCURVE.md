@@ -224,6 +224,24 @@ audit:
     four commits named. Not read in this pass: Hou's and Egbert's text versions,
     whose pages are those of the events above, and no rendered text of this card
     changes.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round, in the rendered text only:
+    four step references written as positions, in three paragraphs. Step
+    #hyperplane-divisor closed with "injectivity of the restriction gives the
+    inequality above and not completeness", where the inequality is the display in
+    the same step: it now gives that inequality as dim|D| >= n. The same paragraph
+    ended "is obtained in the next step from the degree bound", which is now step
+    #strict-inequality, named by reference. Step #genus-zero said "the equality the
+    previous step leaves", which is the equality step #strict-inequality leaves, and
+    its closing paragraph said Egbert's sentence "is the identification the next
+    step states", which is the identification step #is-rational-normal states. No
+    mathematics changes and no step's claim changes; the three steps the references
+    name are the ones that were meant, checked by reading what each states. Not done
+    in this pass: no source was re-read, no step re-derived, and Hou's and Egbert's
+    pages are those of the events above.
 ---
 
 ::: {.problem}
@@ -397,9 +415,9 @@ $$
 Hou, §3 Exercise 4(b), printed p. 10, states $\dim\abs{D}=n$ and justifies it by
 the remark that otherwise "there exists a proper subspace
 $V\subset h^0(X,\mco_X(D))$ such that $X\subset\PP(V^*)\subsetneq\PP^n$";
-injectivity of the restriction gives the inequality above and not completeness,
-so the equality is not established by that remark and is obtained in the next
-step from the degree bound.
+injectivity of the restriction gives $\dim\abs{D}\ge n$ and not completeness,
+so the equality is not established by that remark and is obtained in step
+[](#strict-inequality){.pf-ref} from the degree bound.
 
 :::
 
@@ -457,10 +475,11 @@ $\dim\abs{D}=n=\deg D$ with $D\ne0$; that is the equality case of
 [[P-AGH415DIMLEQDEG|Exercise IV.1.5]], whence $g(X)=0$, and
 $h^0(X,\mco_X(1))=l(D)=n+1$. His "$\deg(D)=\dim(D)$" compares the degree of $D$
 with the dimension of the linear system, and what the citation needs is
-$\deg D=\dim\abs{D}$, the equality the previous step leaves.
+$\deg D=\dim\abs{D}$, the equality step [](#strict-inequality){.pf-ref} leaves.
 
 He closes, "Thus $D$ corresponds to an $(n+1)$ dimensional subspace in
-$\Gamma(\PP^1,\mco(n))$", which is the identification the next step states, and
+$\Gamma(\PP^1,\mco(n))$", which is the identification step
+[](#is-rational-normal){.pf-ref} states, and
 Hou, §3 Exercise 4(b), printed p. 10, states both conclusions as well: "we then
 must have $g(X)=0$ and $\mco_X(H)=\mco_{\PP^1}(dH)$".
 
