@@ -29,7 +29,9 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.8(c),
-    printed p. 299. Published proof of the decisive step located: the Stacks
+    printed p. 298 (all of IV.1.8, part (c) included, stands on PDF p. 313 of
+    the text version tmp/sources/hartshorne-1977-algebraic-geometry.md, and
+    printed p. 298 = PDF p. 313 under printed = PDF - 15). Published proof of the decisive step located: the Stacks
     Project, Chapter 33, Section 33.39 (The delta invariant) and Section 33.41,
     tag by tag, read in tmp/sources/stacks-tags/0C3T.md and the other tag files
     named below, which are the site's build from stacks-project commit
@@ -92,6 +94,25 @@ audit:
     sequence, and item (9) A'/A = (A')^wedge/A^wedge). Two attributions were
     wrong and are corrected above: the invariance under completion is 0C3W's,
     not 0C1T's, and the item (9) that step s6 uses belongs to 0C1R.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch. The printed page of the
+    exercise is 298, not 299: all of IV.1.8 including (c) stands on PDF p.
+    313 of the text version tmp/sources/hartshorne-1977-algebraic-geometry.md
+    and printed = PDF - 15. The Egbert entry is transcribed correctly: his
+    short exact sequence is 0 -> H^0(X, sum_P Otilde_P/O_P) -> H^1(X, O_X)
+    -> H^1(Xtilde, O_Xtilde) -> 0, not the H^0 sequence the remark gave, and
+    the remark now carries his. Steps s7 and s8 now cite the analytic normal
+    forms they assert: the cusp's k[[t^2,t^3]] is I Ex. 5.14(d) on printed
+    pp. 38-39, which assumes char k != 2, and the node's k[[x,y]]/(xy) is I
+    Ex. 5.6(b) on printed p. 37 together with I Ex. 5.14(c) on printed p. 39,
+    which carries no characteristic hypothesis. The quotient computations in
+    s7 and s8 are unchanged and use no characteristic hypothesis. Checked
+    against the book in this pass: IV.1.8 on PDF p. 313, I Ex. 5.6 on printed
+    p. 37, I Ex. 5.14 on printed pp. 38-39. Not checked: nothing new; the
+    Stacks tags were not re-read in this pass.
 ---
 
 ::: {.problem}
@@ -392,15 +413,20 @@ $$
 
 ::: pf-proof
 
-Up to analytic isomorphism, an ordinary cusp has completed local ring
+Up to analytic isomorphism, an ordinary cusp of a plane curve has completed
+local ring
 $$
 \widehat A
 \cong
 k[[t^2,t^3]]
 \subseteq
-k[[t]].
+k[[t]] :
 $$
-Its normalization is $k[[t]]$. Every power $t^n$ with $n\ge2$ lies in
+this is (I, Ex. 5.14(d)), printed pp. 38--39, applied to the double point
+$y^2=x^r$ with $r=3$, and that exercise assumes $\operatorname{char}k\ne2$, so
+the normal form is quoted under that hypothesis. The quotient computation
+below uses no characteristic hypothesis. The normalization of $\widehat A$ is
+$k[[t]]$. Every power $t^n$ with $n\ge2$ lies in
 $k[[t^2,t^3]]$, so every series in $k[[t]]$ is congruent modulo
 $k[[t^2,t^3]]$ to a unique scalar multiple of $t$. Hence
 $$
@@ -431,8 +457,13 @@ Up to analytic isomorphism, a node has completed local ring
 $$
 \widehat A
 \cong
-k[[x,y]]/(xy).
+k[[x,y]]/(xy) :
 $$
+a node is a double point of a plane curve with two distinct tangent
+directions (I, Ex. 5.6(b), printed p. 37), and any two ordinary double points
+are analytically isomorphic, which is (I, Ex. 5.14(c)), printed p. 39, and
+carries no characteristic hypothesis, so this computation holds in every
+characteristic.
 Its normalization is
 $$
 k[[x]]\times k[[y]],
@@ -490,7 +521,7 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves (a) by the short exact sequence $0\to\widetilde\OO_P/\OO_P\to H^0(X,\OO_X)\to H^0(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, so that $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves (a) by the short exact sequence $0\to H^0(X,\sum_{P}\widetilde\OO_P/\OO_P)\to H^1(X,\OO_X)\to H^1(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, whence $h^1(X,\OO_X)=h^1(\tilde X,\OO_{\tilde X})+\sum_P\delta_P$ and so $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
 For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, read in `tmp/sources/stacks-tags/0C3T.md` and `0C3W.md` (site built from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026): Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W), printed pp. 2899--2901 of the retained compiled book of version ed88ff78, shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence depends only on the completed local ring, and Definition 33.39.7 (tag 0C1T) is the definition that attaches $\delta$ to the point $P$ through $\mathcal O_{X,P}$; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
 
 :::

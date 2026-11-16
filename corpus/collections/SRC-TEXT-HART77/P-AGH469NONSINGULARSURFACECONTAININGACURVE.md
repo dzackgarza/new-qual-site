@@ -65,10 +65,14 @@ audit:
     nonzero section of I_Y tensor pi^*O(m) for m >> 0 on the blowup of P^3
     along X and concludes that the image of its support is a surface of
     degree m through X; it argues no nonsingularity, which is the clause
-    the exercise asks for, and its passage from Serre vanishing to a
-    section is not the flatness of the linear system that the printed hint
-    points at. abx's answer (2014-04-06) to MathOverflow question 162554,
-    read through the Stack Exchange API, is the only complete argument
+    the exercise asks for. His route to a section is not the printed
+    hint's: he gets one from pi_* (I_Y tensor pi^*O(m)) = pi_*I_Y (m) for
+    m >> 0 by "Serre's theorem", which is a global-generation statement,
+    not vanishing, and he never forms a very ample system or applies
+    Bertini, which is what the hint points at. abx's answer (2014-04-06) to
+    MathOverflow question 162554, read through the Stack Exchange API into
+    the text version tmp/sources/mo-162554-surfaces-singular-along-curve.md,
+    is the only complete argument
     located for the moved system: with I_C generated in degree c, the
     system |k b^*H - beta E| is base point free for k >= beta c and ample
     for k >> 0, so Bertini gives a smooth irreducible member. With
@@ -82,6 +86,27 @@ audit:
     pp. 171--172 for the very ample system, II.8.18 on printed p. 179 for
     Bertini. Not checked: whether abx's base-point-freeness bound can be
     sharpened so that smoothness of the image follows directly.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch. The audit description of
+    Yang's Solution 4.6.9 is corrected on two points: the section he uses
+    comes from "Serre's theorem" applied to pi_* I_Y (m), a
+    global-generation statement, not Serre vanishing, and his argument has
+    no very ample embedding and no Bertini, so "flatness of the linear
+    system" is not what the printed hint points at and is no longer said.
+    The MathOverflow citation now names its text version,
+    tmp/sources/mo-162554-surfaces-singular-along-curve.md. Step s6 no
+    longer credits pi_* O(-E) = I_X to the computation in the proof of
+    II.7.13(a): that proposition identifies the twisting sheaf with the
+    inverse image ideal, and the pushforward is the statement that the Rees
+    algebra is generated in degree one, now made in the step. Checked
+    against the book: the printed exercise and hint on printed p. 355,
+    Proposition II.7.13 on printed p. 164, Theorem II.8.24 on printed
+    p. 186, Exercise II.7.14 on printed pp. 171-172, II.8.18 on printed
+    p. 179. Not checked: the card's own steps were not re-derived in this
+    pass.
 ---
 
 ::: {.problem}
@@ -295,7 +320,7 @@ For a blowup the degree-one piece of the Rees algebra gives
 $$
 \pi_*\OO_{\widetilde{\PP^3}}(-E)=\mci_X,
 $$
-because $\widetilde{\PP^3}=\Proj\bigoplus_{q\ge0}\mci_X^q$ and $\OO(-E)=\OO(1)$ is the sheaf whose pushforward is the degree-one piece $\mci_X$ of that graded algebra (the computation is the one in the proof of II.7.13(a), printed p. 164).
+because $\widetilde{\PP^3}=\Proj\bigoplus_{q\ge0}\mci_X^q$ and that Rees algebra is generated in degree one by $\mci_X$, so the pushforward of $\OO(1)=\OO(-E)$ is its degree-one piece $\mci_X$. That $\OO(-E)$ is $\OO(1)$ is Proposition II.7.13(a) with its proof (printed p. 164), where the twisting sheaf of the blowup is identified with the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$, which is invertible; the proposition supplies the identification and not the pushforward, and the pushforward is the Rees-algebra statement just made.
 The projection formula therefore identifies
 $$
 H^0(\widetilde{\PP^3},L_m)

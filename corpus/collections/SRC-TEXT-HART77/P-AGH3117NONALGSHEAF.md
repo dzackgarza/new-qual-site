@@ -45,10 +45,13 @@ audit:
     C(m-1,2)), s5 (char 0: log and exp identify 1+Ihat with Ihat, so K is a
     k-vector space with the infinite descending chain of subspaces K_r), and
     s7. Corrected s6: its coefficient comparison was written for 1 +
-    s^{2m}/t^m, which equals u^m only for m a power of p; the step now
-    reduces to m = p^a first (if u^M = A/B then u^{p^a M} = A^{p^a}/B^{p^a})
-    and then runs the same comparison, and the sentence after it was
-    adjusted to say so. The characteristic-p conclusion is unchanged and is
+    s^{2m}/t^m, which equals u^m only for m a power of p, and the sentence
+    after it was adjusted. The reduction this note recorded, that it
+    suffices to treat m = p^a because u^M = A/B gives
+    u^{p^a M} = A^{p^a}/B^{p^a}, is not a reduction: it produces a
+    coboundary at exponent p^a M, and p^a M is a power of p only when M is.
+    The step is rewritten in the event of 2026-11-16 below. The
+    characteristic-p conclusion is unchanged and is
     the one recorded: the kernel is a filtered formal group with infinite-
     dimensional successive quotients, and it is not a k-vector space when
     char k = p.
@@ -61,11 +64,14 @@ audit:
     can exist, since the claim is false in characteristic p. Read this
     pass: Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 3.11.7,
     printed p. 82 of tmp/sources/lfwin-hartshorne-solutions.pdf, text
-    version tmp/sources/lfwin-hartshorne-solutions.md. He writes the kernel
-    as the inverse limit of the completions of the graded pieces and calls
-    it "hence infinite dimensional", which is the same step the card
-    records as false in characteristic p, and he does not identify the
-    successive kernels with H^1(Y, O_Y(-nd)) either. Stack Exchange API
+    version tmp/sources/lfwin-hartshorne-solutions.md. He writes the
+    successive kernels as H^1(X_n, I^{n-1}) = k[x_0,x_1,x_2]/(f^{n-1}),
+    that is, as the coordinate ring itself rather than a cohomology group,
+    takes the projective limit of those quotients, identifies it with the
+    completion of k[x_0,x_1,x_2] at (f) and calls it "hence infinite
+    dimensional". That is the same conclusion the card records as false in
+    characteristic p, reached without identifying the successive kernels
+    with H^1(Y, O_Y(-nd)). Stack Exchange API
     searches for the exercise on site=math and site=mathoverflow
     (/search/advanced with the exercise's own phrases) returned nothing;
     the only Stack Exchange item the earlier pass found, question 4667761
@@ -74,6 +80,26 @@ audit:
     this pass: the printed exercise on printed p. 281, and Exercise II.9.6
     which it invokes. Not checked: nothing new; the card's own
     characteristic-p counterexample was not re-derived in this pass.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch. Step s6's reduction is
+    rewritten: a general exponent is written m = p^b m' with p not dividing
+    m', the freshman's dream gives u^m = (1 + s^{2p^b}/t^{p^b})^{m'}, and
+    the coefficient comparison is now made at s^{2p^b}, where the term
+    m' t^{-p^b} has m' nonzero in k; the comparison at s^{2p^b} against
+    t^{-2p^b}k[t^{-1}] is a contradiction. The earlier step excluded only
+    the powers m = p^a and then asserted the general case, which its
+    displayed identity does not give. Step s5 now says why the chain
+    K = K_1 > K_2 > ... is a chain of k-subspaces: K_r is the image of
+    H^1(Xhat, Ihat^r) under the logarithm. Corrected on the audit trail:
+    the 2026-11-11 note's description of the reduction, the 2026-11-16
+    note's description of Yang's argument, and the remark's citation of
+    Kim, which now names its text version. Checked against the book:
+    III.11.7 on printed p. 281, Exercise II.9.6. Not checked: nothing new
+    in the characteristic-p example beyond the rewritten exponent, which
+    was recalculated rather than machine-checked.
 ---
 
 ::: {.problem}
@@ -388,11 +414,11 @@ H^1(\hat X,\hat\mci)
 $$
 as a $k$-vector space.
 
-If this vector space were finite-dimensional, it could not contain the infinite strictly descending chain
+Under the identification just made, the two filtrations match: a class in $K_r$ is represented by a cocycle with values in $1+\hat\mci^r$, so its logarithm lies in $H^1(\hat X,\hat\mci^r)$ and $K_r$ is the image of $H^1(\hat X,\hat\mci^r)$ in $H^1(\hat X,\hat\mci)$. Each $K_r$ is therefore a $k$-subspace of $K$. A finite-dimensional $k$-vector space bounds the length of a strictly descending chain of subspaces, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the infinite chain
 $$
 K=K_1\supsetneq K_2\supsetneq\cdots
 $$
-obtained in steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. Hence
+of subspaces. Hence
 $$
 \boxed{\dim_kK=\infty}.
 $$
@@ -430,39 +456,45 @@ scheme, $u$ is therefore the transition function of an invertible sheaf
 $\mathfrak L$ on $\hat X$ with $\restrictionof{\mathfrak L}{Y}\cong\OO_Y$.
 
 What has to be shown is that no positive power $u^m$ is a Čech coboundary, that
-is, is not of the form $A/B$ with
+is, that $u^m=A/B$ has no solution with
 $$
 A=\sum_{i\ge0}a_i(t)s^i\in k[t][[s]],\qquad
 B=\sum_{j\ge0}b_j(t^{-1})s'^j\in k[t^{-1}][[s/t]]
 $$
-units of the respective rings. It is enough to exclude the powers $m=p^a$: if $u^M=A/B$ were a coboundary, then the freshman's dream in characteristic $p$ gives $u^{p^aM}=A^{p^a}/B^{p^a}$, again a quotient of a unit of $k[t][[s]]$ by one of $k[t^{-1}][[s/t]]$. So let $m=p^a$. Then the freshman's dream gives
+units of the respective rings.
+
+Write $m=p^b m'$ with $p\nmid m'$ and put $q=p^b$. In characteristic $p$ one
+has $(1+x)^{p^b}=1+x^{p^b}$, so
 $$
-u^m=\Bigl(1+\frac{s^2}{t}\Bigr)^{m}=1+\frac{s^{2m}}{t^{m}},
+u^m=\Bigl(1+\frac{s^{2q}}{t^{q}}\Bigr)^{m'}
+=1+m'\frac{s^{2q}}{t^{q}}+\text{terms in higher powers of }\frac{s^{2q}}{t^{q}},
 $$
-and it is this element that is excluded. Suppose $A/B=1+s^{2m}/t^m$, so that
+and $m'\ne0$ in $k$ because $p\nmid m'$. Suppose $u^m=A/B$, so that
 $$
-A=B\Bigl(1+\frac{s^{2m}}{t^m}\Bigr).
+A=B\,u^m .
 $$
-Comparing coefficients of $s^i$, the constant-in-$s$ coefficients satisfy
-$a_0=b_0$, and $a_0\in k[t]\cap k[t^{-1}]=k$, so after rescaling we may take
-$a_0=b_0=1$. For $1\le i<2m$ the comparison reads
+For $B\in k[t^{-1}][[s/t]]$ the coefficient of $s^j$ in $B$ lies in
+$t^{-j}k[t^{-1}]$; write $b_j$ for it, and $a_j\in k[t]$ for the coefficient of
+$s^j$ in $A$. At $j=0$ the comparison gives $a_0=b_0$, and
+$b_0=a_0\in k[t]\cap k[t^{-1}]=k$, so after multiplying $A$ and $B$ by the same
+constant we may take $a_0=b_0=1$. For $1\le j<2q$ the expansion of $u^m$ has no
+term in $s^j$, so the comparison reads
 $$
-a_i(t)=b_i(t^{-1})\,t^{-i},
+a_j(t)=b_j(t^{-1})\,t^{-j},
 $$
-an identity between a polynomial in $t$ and an element of $t^{-i}k[t^{-1}]$;
-hence $a_i=b_i=0$. At $i=2m$ the comparison reads
+an identity between a polynomial in $t$ and an element of $t^{-j}k[t^{-1}]$;
+hence $a_j=b_j=0$. At $j=2q$ the comparison reads
 $$
-a_{2m}(t)=b_{2m}(t^{-1})t^{-2m}+\frac{1}{t^{m}},
+a_{2q}(t)=b_{2q}(t^{-1})\,t^{-2q}+m'\,t^{-q},
 $$
 that is
 $$
-a_{2m}(t)-\frac{1}{t^m}\in t^{-2m}k[t^{-1}].
+a_{2q}(t)-m'\,t^{-q}\in t^{-2q}k[t^{-1}].
 $$
-The left-hand side is a polynomial plus $-t^{-m}$, so its Laurent expansion
-contains the monomial $t^{-m}$ with coefficient $-1$, while every element of
-$t^{-2m}k[t^{-1}]$ is a $k$-linear combination of $t^{-k}$ with $k\ge2m$. This
-is impossible. Hence $u^m$ is not a coboundary for $m=p^a$, and by the reduction
-above for no positive $m$ at all. In particular $\mathfrak L$ is nontrivial and
+The left-hand side is a polynomial in $t$ plus the single monomial $-m't^{-q}$,
+with $m'\ne0$, while every element of $t^{-2q}k[t^{-1}]$ is a $k$-linear
+combination of $t^{-k}$ with $k\ge2q>q$. This is impossible. Hence $u^m$ is not a
+coboundary, for any positive exponent $m$. In particular $\mathfrak L$ is nontrivial and
 has infinite order in $K$.
 
 The additive group of a $k$-vector space is killed by its prime $p$, so a group

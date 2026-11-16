@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-18
-  note: "Read Exercise III.7.4, the definition and uniqueness of a dualizing sheaf with trace in III.7.1--7.2, the canonical-sheaf identification III.7.11--7.13, and Hartshorne's warning in III.7.14 that the preceding construction gives little explicit information about the trace. The source exercise suppresses a necessary normalization: scaling the trace on a smooth subvariety scales its class. The statement below makes the standard trace/Gysin normalization explicit before proving the four requested assertions."
+  note: "Read Exercise III.7.4, the definition and uniqueness of a dualizing sheaf with trace in III.7.1--7.2, the canonical-sheaf identification III.7.11--7.13, and Hartshorne's warning in III.7.14 that the preceding construction gives little explicit information about the trace. The source exercise suppresses a necessary normalization: scaling the trace on a smooth subvariety scales its class. The first version of this card put the normalization into the statement; it is now stated at the head of the solution instead, the statement being the printed one."
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
@@ -38,8 +38,11 @@ audit:
     transferred by the projection formula t_Pn(beta cup i_*1) = t_L(i^*beta
     cup 1) with i_*1 spanning H^{n-p}; in (d) the residue input is now
     stated as the Poincare residue with its constant checked against
-    III.7.14.1(c) and cross-checked for a hypersurface in P^n, where (b) and
-    c(O(d)) = d must agree. Not checked: whether the printed exercise has a
+    III.7.14.1(c). The cross-check this note records there, that (b) and
+    c(O(d)) = d agree for a hypersurface in P^n, is withdrawn in the event
+    of 2026-11-16: it compares a class in H^1(Omega^1) with the class of a
+    point and uses part (d) for a hyperplane, so it is not independent.
+    Not checked: whether the printed exercise has a
     canonical normalization in the literature; none was found.
 - event: source-checked
   by: claude
@@ -51,28 +54,69 @@ audit:
     Solution 3.7.4, printed p. 75 of tmp/sources/lfwin-hartshorne-solutions.pdf,
     text version tmp/sources/lfwin-hartshorne-solutions.md -- (a) as in
     step s1 here; (b) cuts Y down to its deg Y points by a general linear
-    subspace and then asserts that k = H^p(H, Omega^p_H) = H^p(X,
-    Omega^p_X) = k is the identity, which is the normalization step s3
-    now supplies by the projection formula, and he never moves the count
-    from the subspace back to P^n; (d) writes c(L_Y) as a Cech cocycle
-    and then sends it by a map H^1(X, Omega_X) -> H^0(X, O_X) whose value
-    is written as a sum of coordinate times partial derivatives, which is
-    neither a defined map nor the duality pairing. Dongryul Kim, release
-    PDF p. 170, lists Exercise 3.7.4 in his "problems I haven't solved".
-    Stacks Project tags read: 0FWC, Section 50.22 (de Rham cohomology as
+    subspace, computes the factor deg Y there, and then asserts that
+    k = H^p(H, Omega^p_H) = H^p(X, Omega^p_X) = k "is just identity from
+    the proof in 3.7.3"; so he does move the count back to P^n, by citing
+    his own 3.7.3, but the identification he cites is a different one
+    (the boundary isomorphism of H^0(O) -> H^1(Omega) there), and the
+    transfer by the projection formula that the assertion needs is step
+    s3 here; (d) writes c(L_Y) as a Cech cocycle and sends it by the map
+    H^1(X, Omega_X) -> H^0(X, O_X) of 3.7.3, whose inverse is a defined
+    boundary map, and evaluates it as a sum of coordinate times partial
+    derivatives, using homogeneous coordinates and Euler's formula; that
+    is a computation for X = P^n only, so his (d) has no treatment of a
+    general X. Dongryul Kim, text version
+    tmp/sources/hartshorne-solutions-kim.md, has Exercise 3.7.4 on release
+    PDF p. 170 with (a) and (c) proved and (b) a fragment ("we can always
+    take"), and no (d); the list of problems he has not solved, at the
+    head of the text on PDF p. 1, restates the exercise as "Compute this
+    for X = P^n and for p = 1". Stacks Project tags read: 0FWC, Section 50.22 (de Rham cohomology as
     a Weil cohomology theory, with the trace map Theta on H^{2d} and the
     statement that the cycle class followed by lambda_X is the degree
     map) and 0FLE, Section 50.9 (the dlog first Chern class into
     H^1(X, Omega^1)). 0FWC is a statement about H^{2p}_{dR}; the
     exercise's eta(Y) is the (p,p) Hodge component in H^p(X, Omega^p),
     and no tag read makes that identification. 0FLE supplies only the map
-    c of part (c). Math StackExchange 1794757 and its accepted answer by
-    the account S.M. (2016-05-22) prove (a) only. Checked against the
-    book: the printed exercise, printed pp. 249--250; the trace and
-    duality inputs III.7.1, III.7.2, III.7.12--7.14, printed pp. 240--247;
-    Appendix A's C1, printed p. 430. Not checked: whether the printed
-    exercise admits a normalizing convention in the literature; none was
-    found in any of the sources read across both passes.
+    c of part (c). Math StackExchange 1794757, text version
+    tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md, has one
+    answer, by the account S.M. (2016-05-22), proving (a) only; the text
+    version records no acceptance, so "accepted" is not claimed. The two
+    Stacks files are tmp/sources/stacks-tags/0FWC.md and 0FLE.md. Checked
+    against the book: the printed exercise, printed pp. 249--250; the
+    trace and duality inputs III.7.1, III.7.2, III.7.12--7.14, printed
+    pp. 240--247; Appendix A's C1, printed p. 430. Not checked: whether
+    the printed exercise admits a normalizing convention in the
+    literature; none was found in any of the sources read across both
+    passes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch, three of substance. (1) The
+    statement is the printed exercise again: the normalization paragraph is
+    removed from the problem block and stated at the head of the solution,
+    which is where a convention the book does not print belongs. (2) Step s3
+    no longer applies the trace to the wrong degree: it names 1_V in
+    H^{dim V} by t_V(1_V) = 1, observes that every point class on L equals
+    1_L by step s1, and defines 1_{P^n} by t_{P^n}(1_{P^n} sm i_*1) = 1, that
+    is, as the class pairing to 1 with the class of a linear P^p. The
+    previous version defined 1_L by a trace applied to H^0 and 1_{P^n} by a
+    trace applied to H^{n-p}, both ill-typed, and never stated the
+    identification the transfer uses. (3) Step s6 is no longer circular. It
+    states the divisor case (R) as an input, notes that part (d) is its case
+    beta = 1, proves (R) in dimension one from the residue theorem and
+    III.7.14.1(c) of the book, and says that for n >= 2 Hartshorne supplies no
+    such statement (Remark III.7.14 says the trace is known only to exist).
+    The withdrawn sentences are those that took the residue formula as the
+    definition of the Gysin map by appeal to the problem statement, and the
+    "independent check" for a hypersurface in P^n, which compared a class in
+    H^1(Omega^1) with a point class. Also corrected: the audit description of
+    Yang's (b) and (d) and of Kim's coverage, and the text versions named for
+    Kim, MSE 1794757 and the two Stacks tags. Checked against the book in this
+    pass: the printed exercise on pp. 249-250, III.7.1(a) p. 240, III.7.2
+    p. 241, III.7.12-7.14 pp. 246-247, II.8.18 p. 179, I.7.7 p. 53, Exercise
+    III.7.3 p. 249, Appendix A C1 p. 430. Not checked: no source proving (R)
+    for n >= 2 was located, and the card does not claim one.
 ---
 
 ::: {.problem}
@@ -85,8 +129,6 @@ $$
 t_Y: H^{n-p}(Y, \Omega_Y^{n-p}) \to k
 .$$
 Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the \dfn{cohomology class of $Y$}.
-
-For this exercise, use the standard compatible normalization of the trace maps on canonical sheaves: the trace on $\Spec k$ is the identity, the trace on a finite reduced $k$-scheme is the sum of the traces of its points, and traces are compatible with the Gysin maps for nonsingular closed immersions. Equivalently, use the trace normalization from Grothendieck--Serre duality rather than an arbitrary scalar multiple of the trace supplied merely by the existence statement of Serre duality.
 
 (a) If $P \in X$ is a closed point, show that $t_X(\eta(P)) = 1$, where $\eta(P) \in H^n(X, \Omega^n)$ and $t_X$ is the trace map.
 
@@ -104,13 +146,28 @@ which we denote by $c$. See (Ex. 4.5).
 :::
 
 ::: {.solution}
+The printed exercise fixes no normalization of the trace. Serre duality supplies
+the trace of a dualizing sheaf only up to a nonzero scalar (III.7.2, printed
+p. 241; III.7.14, printed p. 247, says of it that "we know only that it
+exists"), and parts (b) and (d) assert numerical identities in the cohomology
+of $X$, so they hold only for the trace that matches the integers. The
+convention adopted here, and used in steps [](#s3){.pf-ref} and
+[](#s6){.pf-ref}, is the standard one for canonical sheaves: the trace on
+$\Spec k$ is the identity, the trace on a finite reduced $k$-scheme is the sum
+of the traces of its points, and the traces are compatible with the Gysin maps
+for nonsingular closed immersions. Equivalently, one takes the trace of
+Grothendieck--Serre duality rather than an arbitrary scalar multiple of the one
+whose existence Serre duality asserts. The remark below records what the book
+does and does not determine; part (a) needs no convention at all, because
+$\eta(P)$ is defined by duality against the very trace that computes it.
+
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
 $$
 \langle\alpha,\beta\rangle_X
 =t_X(\alpha\smile\beta),
 $$
 between $H^p(X,\Omega_X^p)$ and $H^{n-p}(X,\Omega_X^{n-p})$.
-With the trace normalization stated in the problem, the Gysin morphism
+With the compatibility clause of that convention the Gysin morphism
 $$
 j_*:H^q(Y,\Omega_Y^q)\longrightarrow H^{q+p}(X,\Omega_X^{q+p})
 $$
@@ -226,40 +283,58 @@ The Gysin map is additive on a disjoint union of points, so
 $$
 \eta_L(Z)=\sum_{a=1}^d\eta_L(P_a).
 $$
-By step [](#s1){.pf-ref} each point class has trace one. Since
-$$
-H^p(L,\Omega_L^p)\cong k
-$$
-and its trace identifies the standard generator with $1$, we obtain
-$$
-\eta_L(Z)=d\cdot1.
-$$
 
-What has been shown so far is the identity in $H^p(L,\Omega_L^p)$,
+Two generators have to be named, and both are fixed by the convention at the
+head of the solution. For a nonsingular projective variety $V$ of dimension
+$m$, let $1_V\in H^m(V,\Omega_V^m)\cong k$ be the class with $t_V(1_V)=1$.
+On $L$, which has dimension $p$, step [](#s1){.pf-ref} says that
+$t_L(\eta_L(P))=1$ for every point $P$, so
 $$
-i^*\eta_{\PP^n}(Y)=d\cdot 1_L ,
+\eta_L(P)=1_L
 $$
-where $1_L$ is the class with $\langle 1_L,\alpha_L\rangle_L=t_L(\alpha_L)$ for $\alpha_L=1\in H^0(L,\OO_L)$; the scalar $d$ still has to be read in $H^p(\PP^n,\Omega^p)$, and that is what the trace normalization of the statement supplies.
+for every $P\in Z$: both classes have trace $1$ and $H^p(L,\Omega_L^p)$ is
+one-dimensional. Hence
+$$
+i^*\eta_{\PP^n}(Y)=\eta_L(Z)=d\cdot 1_L
+$$
+in $H^p(L,\Omega_L^p)$.
 
-Let $\alpha_0=i_*1\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin pushforward of the unit class of $L$; it is a nonzero element, and $H^{n-p}(\PP^n,\Omega^{n-p})\cong k$ by Exercise III.7.3, so $\alpha_0$ spans that space. Because the normalized traces are compatible with the Gysin maps of nonsingular closed immersions, the projection formula for $i:L\hookrightarrow\PP^n$ gives, for every $\beta\in H^p(\PP^n,\Omega^p)$,
+The scalar is now read in $H^p(\PP^n,\Omega^p)$. Let
+$\alpha_0=i_*1\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin
+pushforward of the unit class of $L$. By the compatibility clause of the
+convention, the projection formula for $i:L\hookrightarrow\PP^n$ identifies
+the two traces, for every $\beta\in H^p(\PP^n,\Omega^p)$:
 $$
 t_{\PP^n}\bigl(\beta\smile i_*1\bigr)
 =t_L\bigl(i^*\beta\smile 1\bigr).
 $$
-By definition of $\eta$ and step [](#s2){.pf-ref},
+With $\beta=1$ this reads $t_{\PP^n}(1\smile i_*1)=t_L(1_L)=1$, so
+$\alpha_0\ne0$; and $H^{n-p}(\PP^n,\Omega^{n-p})\cong k$ by Exercise III.7.3,
+so $\alpha_0$ spans that space. Define $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ to
+be the class with
 $$
-t_{\PP^n}\bigl(\eta(Y)\smile i_*1\bigr)
+t_{\PP^n}\bigl(1_{\PP^n}\smile \alpha_0\bigr)=1 ,
+$$
+which exists and is unique because the pairing is nondegenerate: it is the
+class pairing to $1$ with the class of the linear $\PP^p$. This is a
+normalization and not a consequence of the book. Exercise III.7.3 identifies
+$H^p(\PP^n,\Omega^p)$ with $k$, but does not say which generator of the dual
+space the trace of Serre duality is, and (b) is false by a scalar for another
+choice.
+
+With $\beta=\eta(Y)$, step [](#s2){.pf-ref} and the last display give
+$$
+t_{\PP^n}\bigl(\eta(Y)\smile \alpha_0\bigr)
 =t_L\bigl(i^*\eta(Y)\smile1\bigr)
-=\langle i^*\eta(Y),1\rangle_L
-=d ,
+=d\,\langle 1_L,1\rangle_L
+=d\,t_L(1_L)=d ,
 $$
-while the same formula with $\beta=1_{\PP^n}$, the class with $\langle 1_{\PP^n},\alpha\rangle=t_{\PP^n}(\alpha)$, gives
+and with $\beta=1_{\PP^n}$ the definition of $1_{\PP^n}$ gives
+$t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$. Both $\eta(Y)$ and
+$d\cdot1_{\PP^n}$ therefore pair equally with the spanning class
+$\alpha_0$, and the Serre pairing is nondegenerate, so
 $$
-t_{\PP^n}\bigl(1_{\PP^n}\smile i_*1\bigr)=t_L\bigl(1\bigr)=1 .
-$$
-Both $\eta(Y)$ and $d\cdot1_{\PP^n}$ therefore pair equally with the spanning class $\alpha_0=i_*1$, and the Serre pairing is linear and nondegenerate, so
-$$
-\eta(Y)=(d)\cdot1_{\PP^n},
+\eta(Y)=d\cdot1_{\PP^n},
 $$
 which is part (b) with $d=\deg Y$.
 
@@ -341,6 +416,10 @@ For a nonsingular divisor $Y\subseteq X$,
 $$
 \boxed{\eta(Y)=c(\mcl(Y))\in H^1(X,\Omega_X)}.
 $$
+The two sides are elements of $H^1(X,\Omega_X)$, and they are seen to be equal
+by pairing both with every class of $H^{n-1}(X,\Omega_X^{n-1})$; the one input
+this uses is the divisor case (R) below, which the book proves for curves and
+which for $n\ge2$ is part of the trace convention.
 
 ::: pf-proof
 
@@ -348,35 +427,58 @@ Let
 $$
 \alpha\in H^{n-1}(X,\Omega_X^{n-1}).
 $$
-By definition of $\eta(Y)$,
+By the definition of $\eta(Y)$ and the adjunction identity of the head of the
+solution,
 $$
 \langle\eta(Y),\alpha\rangle_X
+=t_X(j_*(1)\smile\alpha)
 =t_Y(j^*\alpha).
 $$
-
-On a cover on which $Y$ is given by the equations $f_i$, the Gysin map of the divisor $Y$ is the Poincaré residue: for a form $\beta$ on $Y$, its image $j_*\beta\in H^n(X,\Omega_X^n)$ is represented by the Čech class
-$$
-\frac{df_i}{f_i}\wedge\widetilde\beta_i
--
-\frac{df_j}{f_j}\wedge\widetilde\beta_j,
-$$
-where the $\widetilde\beta_i$ are local lifts to $X$, that is, $j_*\beta$ is the cup product of $\beta$ with the Čech cocycle
+By step [](#s5){.pf-ref}, $c(\mcl(Y))$ is the Čech class
 $$
 \left\{\frac{df_i}{f_i}-\frac{df_j}{f_j}\right\}_{ij}
 $$
-of step [](#s5){.pf-ref}. The constant is $+1$: on a curve, with $f$ a local parameter at $P$ and $\beta=1$, this class is $df/f$, and Theorem III.7.14.1(c) (printed p. 247) gives $\operatorname{res}_P(f^{-1}df)=v_P(f)\cdot1=1$. Hartshorne states the residue only in dimension one --- Remark III.7.14 (printed p. 247) says that in general the trace is known only to exist --- so in dimension above one the displayed formula is taken as the definition of the Gysin map, which is one of the normalizations the problem statement fixes.
-Compatibility of the normalized trace with this residue map gives
+of the cover $(U_i)$ on which $Y$ has local equations $f_i=0$.
+
+**The input (R).** For a nonsingular divisor $Y\subset X$ of a nonsingular
+projective $X$ of dimension $n$, and every $\beta\in
+H^{n-1}(Y,\Omega_Y^{n-1})$,
 $$
-t_X\bigl(c(\mcl(Y))\smile\alpha\bigr)
-=t_Y(j^*\alpha).
+j_*(\beta)=c(\mcl(Y))\smile\beta,
 $$
-The constant can be checked independently in the case $X=\PP^n$, $Y$ a hypersurface: by step [](#s3){.pf-ref} $\eta(Y)$ is $(\deg Y)$ times the class of a point, and $c(\mcl(Y))=c(\OO(\deg Y))=\deg Y$ times the class of a hyperplane, so the two sides agree there.
-Thus
+with the right-hand side read through the lifts $\widetilde\beta_i$; in other
+words the Gysin map of a divisor is cup product with the $d\log$ class of
+$\mcl(Y)$, and in particular $j_*(1)=c(\mcl(Y))$ is the Poincaré residue of
+the unit class. Part (d) is the case $\beta=1$ of (R).
+
+(R) is not a consequence of Chapter III for $n\ge2$. Remark III.7.14 (printed
+p. 247) says of the trace of a nonsingular projective variety that "we don't
+have much information ... We know only that it exists", and it states the
+residue description for curves only; the identification of the two is exactly
+the extra structure the exercise's numerical assertion needs, which is why the
+convention at the head of the solution includes it. In dimension one (R) is
+proved in the book: let $X$ be a curve, $Y=\{P\}$, $f$ a local parameter at
+$P$, and $\alpha\in H^0(X,\Omega_X^0)=H^0(X,\OO_X)$; the trace on a curve is
+the sum of residues (Remark III.7.14), and Theorem III.7.14.1(c) (printed
+p. 247) gives
+$$
+t_X\bigl(c(\OO(P))\smile\alpha\bigr)
+=\operatorname{res}_P\bigl(\alpha\,f^{-1}df\bigr)
+=\alpha(P)\,v_P(f)=\alpha(P)
+=t_P(j^*\alpha),
+$$
+with the constant $+1$ because $\operatorname{res}_P(f^{-1}df)=v_P(f)\cdot1$
+and $v_P(f)=1$ for a local parameter. So (R), and with it part (d), is a
+theorem in dimension one and a convention in higher dimension.
+
+Granting (R), the two classes pair equally with every $\alpha$:
 $$
 \langle c(\mcl(Y)),\alpha\rangle_X
-=\langle\eta(Y),\alpha\rangle_X
+=t_X\bigl(c(\mcl(Y))\smile\alpha\bigr)
+=t_X\bigl(j_*(1)\smile\alpha\bigr)
+=t_Y(j^*\alpha)
+=\langle\eta(Y),\alpha\rangle_X .
 $$
-for every $\alpha$.
 The Serre pairing is nondegenerate, so
 $$
 c(\mcl(Y))=\eta(Y).
@@ -389,7 +491,7 @@ This proves part (d).
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b), step [](#s4){.pf-ref} proves part (c), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d).
+Step [](#s1){.pf-ref} proves part (a) with no convention, steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) under the trace convention stated at the head of the solution, step [](#s4){.pf-ref} proves part (c), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d) from input (R): in dimension one (R) is Theorem III.7.14.1, and for $n\ge2$ it is the divisor case of the same convention, not a theorem in the book.
 
 :::
 
@@ -406,5 +508,5 @@ A natural choice does exist on $\PP^n$ and the book records it without using it:
 $$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
 which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
 
-The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the statement on this card fixes: $t_{\Spec k}=\operatorname{id}$, additivity on finite reduced $k$-schemes, and compatibility with the Gysin maps. Part (a) is exactly the first of these, with $Y=P$ a closed point, and step [](#s3){.pf-ref} uses the third.
+The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the convention at the head of the solution fixes: $t_{\Spec k}=\operatorname{id}$, additivity on finite reduced $k$-schemes, and compatibility with the Gysin maps of nonsingular closed immersions. It is stated in the solution and not in the problem, because it is not in the printed exercise; the printed text says only "Fix one such isomorphism". Part (a) is the first clause, with $Y=P$ a closed point, and needs no convention beyond it: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses the compatibility clause in step [](#s3){.pf-ref} to fix which generator of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) uses the same clause in its divisor form, which is input (R) of step [](#s6){.pf-ref}: for $n\ge2$ that is the one statement of the exercise the book does not supply, and it is recorded there as a convention rather than proved.
 :::
