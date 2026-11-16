@@ -84,6 +84,39 @@ audit:
     pagination rests on the text version alone, no printed copy being
     consulted; and the equivalence is read off the displayed chart data rather
     than derived from a formal classification of the germs.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Partially transcribed for issue #121 from Algebraic Geometry II, National
+    Taiwan University, 2020 Spring, Chapter V Surfaces homework solutions,
+    Exercise 7 of §3 (Ping-Hsun Chuang), PDF pp. 12-13 of
+    tmp/sources/ntu-ag2-chapter5.pdf, read in the text version
+    tmp/sources/ntu-ag2-chapter5.md; its page markers are coarse, so the pages
+    were read off the PDF, as the remark records. Transcribed onto the steps:
+    the six coordinate computations, which agree with the card's up to the
+    naming of the chart coordinates, each step now quoting the equation the
+    source prints beside the card's; the multiplicities 3 and 2 of each germ;
+    the five values of delta_P, printed there as 1/2*3*2 + 1/2*2*1 = 4 for
+    (a), (b), (d), (e) and 1/2*3*2 = 3 for (c); and the classification into
+    (a),(b),(d) against (c) and (e), which the entry states at the end of its
+    five parts. The source does not prove what it concludes: its resolution
+    graphs are pictures in the extraction, five image blocks, and the entry
+    stops when the strict transform is nonsingular, so neither the embedded
+    resolution in the sense of 3.9.4 nor the argument from the data to the
+    classification is published there, and steps a-third-fourth-blowup,
+    b-third-fourth-delta, d-third-fourth-delta, c-resolution-delta-three,
+    e-resolution-delta-four, abd-equivalent, c-not-equivalent and
+    e-not-equivalent remain the card's, marked as such on the steps. The
+    identification of the double point of (e) as a node, and the reading of
+    delta_P off the multiplicities by 3.9.3, are likewise the card's, the
+    source giving only the multiplicities and the numbers. Checked against
+    Hartshorne V.3.7, printed p. 395, and (3.9.3), (3.9.4) on printed p. 393.
+    Not checked: the five resolution graphs, which are images in the text
+    version and were not read as pictures; Yang Pi-Yeh's entry and Egbert's
+    Singular session, which the previous pass read and which were not re-read
+    this pass; and any printing of the NTU set other than the text version
+    beside its PDF.
 ---
 
 ::: {.problem}
@@ -113,6 +146,8 @@ $$
 $$
 where only singular points $Q$ of the successive strict transforms
 contribute, since a smooth point has multiplicity one.
+
+The blowups of the five germs, the multiplicities they produce and the five values of $\delta_P$ are Exercise 7 of §3 of Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions (course of Chin-Lung Wang), the solution of parts (a) to (e) by Ping-Hsun Chuang, text version `tmp/sources/ntu-ag2-chapter5.md`, PDF pp. 12--13, whose page markers are coarse, so the pages were read off the PDF beside it. Each step below that computes a transform or a value of $\delta_P$ names that entry and quotes the equation it prints. The entry stops when the strict transform of the curve is nonsingular, so the blowups at smooth points that follow, which make the total transform a normal-crossings divisor, are not its; they are the card's and are marked as such on the steps.
 
 ::: pf
 
@@ -153,6 +188,8 @@ Q_1=(0,0)
 $$
 is its unique point over the origin. It has multiplicity $2$, and its
 tangent is $v=0$, the exceptional curve $E_1$.
+
+The chart and the transformed equation are those of the source, Exercise 7 of §3, part (a), PDF p. 12: it writes the chart as $(y,s)=(y,x/y)$, that is $x=sy$, and the equation as $s^3+y^2=0$ with $E_1=\{y=0\}$, and says that the curve has one singularity, of multiplicity $2$ at $(0,0)$. Its $s$ is this card's $u$.
 :::
 
 :::
@@ -186,6 +223,8 @@ E_1':(w=0).
 $$
 The curve $u+w^2=0$ is smooth at their intersection $(0,0)$, but its tangent
 is $u=0=E_2$. Thus the total transform is not yet normal crossings.
+
+The source's second chart, part (a), PDF p. 12, is $(v,s)=(y/s,s)$, and its equation is $s+v^2=0$ with $E_1=\{v=0\}$ and $E_2=\{s=0\}$; its $s$ is this card's $u$ and its $v$ is this card's $w$. It records that this curve is nonsingular and stops there, and that the resolution graph is drawn as a picture in that entry.
 :::
 
 :::
@@ -248,6 +287,8 @@ $$
 3+1
 =4.
 $$
+
+The value is the source's: Exercise 7 of §3, part (a), PDF p. 12, computes $\delta_p=\tfrac12 3\cdot 2+\tfrac12 2\cdot 1=4$ from the same two multiplicities.
 :::
 
 :::
@@ -282,6 +323,8 @@ u^2(u+w^2+u^3w).
 $$
 Thus the second strict transform is smooth, passes through $E_1'\cap E_2$,
 and is tangent to $E_2:(u=0)$ exactly as in (a).
+
+Both transforms are the source's, Exercise 7 of §3, part (b), PDF p. 13: in the chart $x=sy$ it prints $s^3+s^4y+y^2=0$ of multiplicity $2$ at the origin, and in the chart $(v,s)=(y/s,s)$ it prints $s+vs^3+v^2=0$, nonsingular, with the same two exceptional curves; its $s$ is this card's $u$ and its $v$ this card's $w$.
 :::
 
 :::
@@ -312,6 +355,8 @@ Therefore
 $$
 \delta_P(C_b)=\binom32+\binom22=4.
 $$
+
+The source computes the same value in part (b), PDF p. 13, as $\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$; its third and fourth blowups are not there, the entry stopping at the nonsingular strict transform.
 :::
 
 :::
@@ -346,6 +391,8 @@ u^2(u+w^2+uw^3).
 $$
 The second strict transform is smooth and tangent to $E_2:(u=0)$ at
 $E_1'\cap E_2$, just as in (a) and (b).
+
+These are the source's transforms, Exercise 7 of §3, part (d), PDF p. 13: $s^3+y^2+y^3=0$ of multiplicity $2$ in the chart $x=sy$, and $s+v^2+sv^3=0$, nonsingular, in the chart $(v,s)=(y/s,s)$.
 :::
 
 :::
@@ -372,6 +419,8 @@ so
 $$
 \delta_P(C_d)=4.
 $$
+
+The source's part (d), PDF p. 13, computes $\tfrac12 3\cdot 2+\tfrac12 2\cdot 1=4$ from the same two multiplicities and stops at the nonsingular strict transform.
 :::
 
 :::
@@ -399,6 +448,8 @@ $$
 y\mapsto y(1+y)^{1/5}
 $$
 for (d), which analytically identify both germs with (a).
+
+The classification is the source's. After its five parts, PDF p. 13, it closes "By the resolution graph, we conclude that the sigularity of (0,0) of (a) (b) (d) are equivalent and (c) (e) are different from the others", the graphs being pictures in that entry rather than text. Its data for the three germs are the transformed equations quoted on steps [](#a-first-blowup){.pf-ref} to [](#d-first-two-blowups){.pf-ref}, which coincide there, and the multiplicities $3,2$ that steps [](#a-delta-four){.pf-ref} and [](#d-third-fourth-delta){.pf-ref} record. What the entry does not carry is an argument from those data to the equivalence; this step supplies that.
 :::
 
 :::
@@ -423,6 +474,8 @@ v^3(u^3+v+v^2).
 $$
 The strict transform is smooth at the origin because the coefficient of
 $v$ in its linear term is $1$. Its tangent is $v=0=E_1$.
+
+This is the source's computation, Exercise 7 of §3, part (c), PDF p. 13, which in the chart $x=sy$ prints $s^3+y+y^2=0$ and records that the curve is nonsingular there and that this one blowup resolves it.
 :::
 
 :::
@@ -460,6 +513,8 @@ multiplicity is $3$. Hence
 $$
 \delta_P(C_c)=\binom32=3.
 $$
+
+The value, and the fact that one blowup resolves (c), are the source's, part (c), PDF p. 13, where $\delta_p=\tfrac12 3\cdot 2=3$; the three further blowups are the card's.
 :::
 
 :::
@@ -472,6 +527,8 @@ After the first blowup, (c) is already smooth, whereas the strict transforms
 of (a), (b), and (d) have multiplicity $2$. Thus their infinitely near
 multiplicity data differ. Equivalently, the delta invariant of (c) is $3$
 while that of (a), (b), and (d) is $4$.
+
+The source separates (c) from the others by its resolution graphs, PDF p. 13, without the multiplicity comparison; the comparison is the card's, and it uses the multiplicities that the source's own transforms give.
 :::
 
 :::
@@ -504,6 +561,8 @@ $$
 the product of two distinct linear forms. Hence the strict transform has an
 ordinary node of multiplicity $2$ there. One branch is tangent to the old
 exceptional curve $E_1:(v=0)$ and the other has tangent $u+v=0$.
+
+The transform is the source's, Exercise 7 of §3, part (e), PDF p. 13: in the chart $x=sy$ it prints $s^3+sy+y^2=0$ with $E_1=\{y=0\}$, says that the curve has one singularity, of multiplicity $2$, and then gives the next chart $(v,s)=(y/s,s)$, where the equation is $s+v+v^2=0$ and the curve is nonsingular. The identification of the double point as a node, by the factorisation $v(u+v)$ of its tangent cone, is the card's; the source records only the multiplicity.
 :::
 
 :::
@@ -542,6 +601,8 @@ $$
 \binom32+\binom22
 =4.
 $$
+
+The source's part (e), PDF p. 13, computes $\delta_p=\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$.
 :::
 
 :::
@@ -558,6 +619,8 @@ every infinitely near point in their displayed resolutions. Correspondingly,
 
 Branch incidence and the exceptional-resolution graph are part of the
 equivalence data in (3.9.4), so (e) is inequivalent to all four others.
+
+The source separates (e) from the others by its resolution graphs, PDF p. 13; the branch count and the comparison of the number of blowups needed are the card's.
 :::
 
 :::
@@ -593,11 +656,13 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, printed p. 395, with (3.9.4) and (3.9.3) on printed p. 393 (PDF p. 408), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, printed p. 395, with (3.9.3) and (3.9.4) on printed p. 393, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are coarse, so the pages were read off the PDF), blows each germ up until its strict transform is nonsingular --- twice for (a), (b), (d) and (e), once for (c) --- and stops there: it draws the incidence graph of the curves produced and never carries out the further blowups at smooth points that make the total transform simple normal crossings, so what it gives is the resolution of the curve and not an embedded resolution in that sense; it reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3, the solution of the five parts by Ping-Hsun Chuang, PDF pp. 12--13, text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are coarse, so the pages were read off the PDF): for each germ it writes one or two blowups in coordinates --- in the chart $x=sy$ the equations $s^3+y^2$, $s^3+s^4y+y^2$, $s^3+y+y^2$, $s^3+y^2+y^3$ and $s^3+sy+y^2$, and in the chart $(v,s)=(y/s,s)$ the equations $s+v^2$, $s+vs^3+v^2$, $s+v^2+sv^3$ and $s+v+v^2$ --- reads the multiplicities $3$ and $2$ off them, computes $\delta_P=\tfrac12\cdot3\cdot2+\tfrac12\cdot2\cdot1=4$ for (a), (b), (d) and (e) and $\tfrac12\cdot3\cdot2=3$ for (c), and concludes "By the resolution graph, we conclude that the sigularity of (0,0) of (a) (b) (d) are equivalent and (c) (e) are different from the others". Those are the transforms, the multiplicities, the five values of $\delta_P$ and the three equivalence classes of the steps above and of the table of step [](#summary-table){.pf-ref}. Its letters differ from the card's: its $s$ is the card's $u$, and in the second chart its $v$ is the card's $w$.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.7, printed p. 108, writes the successive strict transforms for the same five germs --- three blowups for (a), (b) and (d), the third at a point where the strict transform is smooth, after which he writes "we may take one more blow-up to get the normal crossing" and does not carry it out --- and closes the entry with "So $(a),(b),(d)$ are equivalent to each other. And $(c),(e)$ are not equivalent to any others", which is the classification of step [](#summary-table){.pf-ref}; he does not compute $\delta_P$, which the exercise also asks for.
+The entry stops when the strict transform of the curve is nonsingular. It therefore gives a resolution of each curve and not an *embedded* resolution: the blowups at smooth points that make the reduced total transform a normal-crossings divisor, which the third and fourth blowup of (a), (b) and (d) and the second, third and fourth of (c) and (e) supply here, are the card's, and so are the identification of the double point of (e) as a node and the arguments from the five germs' multiplicity and incidence data to the equivalence and the two separations. The graphs it draws are pictures in that entry, so the reason for its classification is not in its text.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent". Steps [](#a-first-blowup){.pf-ref} to [](#e-not-equivalent){.pf-ref} carry out the resolutions and the comparisons by hand.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.7, printed p. 108, writes the successive strict transforms for the same five germs, three blowups for (a), (b) and (d), the third at a point where the strict transform is smooth, after which he writes "we may take one more blow-up to get the normal crossing" without carrying it out, and closes "So $(a),(b),(d)$ are equivalent to each other. And $(c),(e)$ are not equivalent to any others"; he does not compute $\delta_P$, which the exercise also asks for.
+
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent".
 :::
