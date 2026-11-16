@@ -115,6 +115,49 @@ audit:
     tmp/sources/lfwin-hartshorne-solutions.md, and the National Taiwan University
     set, whose text version is tmp/sources/ntu-ag2-chapter5.md beside its PDF;
     the remark's citation of Yang names his.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121 on 2026-11-16: the solution is now the
+    published argument, and every step names its source, numbered statement and
+    printed page. What changed from the events above is the base of the
+    argument: the earlier events recorded Fuentes and Pedreira's The Projective
+    Theory of Ruled Surfaces as covering every e at least 0 on a decomposable
+    surface and leaving e = -1 outside, the Atiyah surface being
+    indecomposable. The authors' other paper, Classification of elliptic line
+    scrolls (arXiv:math/0009050v1), text version
+    tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md with its
+    PDF beside it, is a classification of exactly these scrolls and does treat
+    the indecomposable case: its Theorem 2.13(2)(b), printed pp. 16 to 17, is
+    e = -1 with b at least 2, a smooth elliptic scroll of degree 2b+1 in
+    P^{2b}, and its Theorem 2.13(2)(c), printed pp. 16 to 17, is e = 0 with b
+    at least 3, of degree 2b in P^{2b-1}, while Theorem 1.7(2)(d), printed
+    p. 6, is the decomposable case b at least 3+e of degree 2b-e in
+    P^{2b-e-1}. Read against their PDFs page by page, the extractions marking
+    only 20-page ranges: Theorems 1.7 (statement printed p. 5, item (2)(d) on
+    p. 6), 2.7 (p. 13), 2.13 (statement p. 16, items and proof pp. 16 to 18)
+    and Remark 2.9 (p. 14); and of the second paper Theorem 3.2(1), p. 15,
+    Theorem 3.9(3), p. 18, Theorem 3.10(1), p. 19, Proposition 1.3, p. 4,
+    Definition 1.5, p. 5, and Remark 3.3, p. 16. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15: V.2.13 as printed on p. 385, and the book's Theorem V.2.15 on
+    p. 377, which is the proof of the existence of the e = -1 surface that
+    Fuentes' Theorem 2.7 asserts without proof. What the transcription
+    establishes: the whole exercise, both the general statement and the
+    degree-five example, for e at least 0 through Theorem 1.7(2)(d) and for
+    the two indecomposable invariants through Theorem 2.13(2)(b) and (c), with
+    the dimension taken from Theorem 3.10(1) of the second paper and from
+    Theorem 2.13's own proof, where the paper's N is the dimension of the
+    projective space and not the number of sections. The card's own steps for
+    e = -1 and its own construction of the surfaces are superseded by the
+    published argument and are no longer on the card; the events above stand
+    as what those passes did, including the 2026-11-11 count and the
+    2026-11-15 corrections to Yang's 5.2.12. No part of V.2.13 is left without
+    a published argument, so this card carries no COMPLAINTS record of
+    2026-11-16. Not checked: no source beyond the two papers and the book was
+    read in this pass, and no machine computation was run.
+
 ---
 
 ::: {.problem}
@@ -123,270 +166,103 @@ In particular, there is an elliptic scroll of degree 5 in $\PP^4$.
 :::
 
 ::: {.solution}
-Fix an elliptic curve $C$.
+Every step below transcribes a published argument and names the source, numbered statement and printed page: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`, Theorems 1.7, 2.7 and 2.13 and Remark 2.9, printed pp. 6--17; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.2(1), printed p. 15, Theorem 3.9(3), printed p. 18, and Theorem 3.10(1), printed p. 19, which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, printed p. 5, of [2]; over an elliptic curve the image is an elliptic scroll.
 
 ::: pf
 
 ::: {.pf-step #s1}
-
-For every integer
-$$
-e\ge-1
-$$
-there is a ruled surface
-$$
-\pi:X=\PP(\mathcal E)\longrightarrow C
-$$
-with invariant $e$.
+For every integer $e\ge-1$ there is a ruled surface over $C$ with invariant $e$.
 
 ::: pf-proof
+For $e\ge0$: Theorem 3.2(1) of [2], printed p. 15, states that a decomposable normalized $\mathcal E_0$ is $\OO_C\oplus\mathcal L$ with $\deg\mathcal L\le0$, that then $e\ge0$, and that every $e\ge0$ occurs; with $\mathfrak e$ of degree $-e$ the surface $\PP(\OO_C\oplus\OO_C(\mfe))$ has invariant $e$, which is the construction of Remark 3.3, printed pp. 15--16, of [2].
 
-For $e=-1$, Hartshorne V.2.5(c), proved on [[P-AGH525INVARIANTE]], gives a
-ruled surface over the genus-one curve $C$ with invariant $-1$.
-
-For $e=0$, V.2.5(a) gives an indecomposable normalized rank-two bundle with
-invariant zero.
-
-Now let $e>0$. Choose a line bundle $M$ of degree $-e$ on $C$ and put
-$$
-\mathcal E=\OO_C\oplus M.
-$$
-The summand $\OO_C$ gives a nonzero global section. If $N$ has negative
-degree, then both
-$$
-N
-\qquad\text{and}\qquad
-M\tensor N
-$$
-have negative degree and hence no sections. Thus
-$$
-H^0(C,\mathcal E\tensor N)=0,
-$$
-so $\mathcal E$ is normalized. Since
-$$
-\deg\det\mathcal E=-e,
-$$
-the invariant of $\PP(\mathcal E)$ is $e$.
-
+For $e=-1$: Fuentes, Theorem 2.7, printed p. 13, states that there are only two models of indecomposable elliptic ruled surfaces and that their invariants are $0$ and $-1$; he asserts it there without proof. The proof, with uniqueness for each of the two values, is Hartshorne's Theorem V.2.15, printed p. 377. Remark 2.9, printed p. 14, records the other route: Nagata's theorem that every geometrically ruled surface is obtained from $C\times\PP^1$ by finitely many elementary transformations, and its item 5 gives the $e=-1$ model by three of them at generic points.
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-Let $C_0$ be the normalized section and $f$ a ruling fibre. Then
+Let $\mfb$ be a divisor of degree $n$ on $C$ and put
 $$
-C_0^2=-e,
+D=C_0+\mfb f.
+$$
+Then
+$$
+D\cdot f=1,
 \qquad
-C_0\cdot f=1,
-\qquad
-f^2=0.
+D^2=2n-e.
 $$
 
 ::: pf-proof
-
-These are the standard intersection formulas for a normalized geometrically
-ruled surface: the invariant is
+Proposition 1.3 of [2], printed p. 4, sets $\operatorname{Num}(S)=\ZZ\oplus\ZZ$ generated by $C_0$ and $f$ with $C_0\cdot f=1$ and $f^2=0$, and the normalization paragraph printed p. 3 gives $C_0^2=-e=-\deg(\mfe)$. Hence
 $$
-e=-C_0^2,
+D\cdot f=C_0\cdot f+n\,f^2=1,
 $$
-while a section meets every fibre once and distinct fibres are disjoint.
-
+and
+$$
+D^2=C_0^2+2n\,C_0\cdot f+n^2f^2=-e+2n,
+$$
+which is $D^2=2\deg\mfb-e$, the degree formula of Theorem 3.10(1) of [2], printed p. 19.
 :::
 
 :::
 
 ::: {.pf-step #s3}
-
-Choose a divisor $\mfb$ on $C$ with
-$$
-\deg\mfb=n,
-$$
-and put
-$$
-D=C_0+\mfb f.
-$$
-If
-$$
-n\ge e+3,
-$$
-then $D$ is very ample.
+If $n\ge e+3$, then $\linearsystem{D}$ is very ample.
 
 ::: pf-proof
-
-This is exactly Hartshorne V.2.12(b), proved on
-[[P-AGH5212ELLRULEDAMPLE]]: on a ruled surface over an elliptic curve,
-$$
-\linearsystem{C_0+\mfb f}
-$$
-is very ample if and only if
-$$
-\deg\mfb\ge e+3.
-$$
-
+This is part (b) of [[P-AGH5212ELLRULEDAMPLE]], whose published argument is Fuentes, Proposition 1.4, printed p. 3, for a decomposable surface and Fuentes, Proposition 2.11, printed p. 15, for an indecomposable one: $\linearsystem{C_0+\mfb f}$ is very ample if and only if $\deg\mfb\ge e+3$. On the decomposable side the criterion behind it is Theorem 3.9(3) of [2], printed p. 18, with Corollary 2.13, printed pp. 14--15.
 :::
 
 :::
 
 ::: {.pf-step #s4}
-
-The embedding defined by $\linearsystem{D}$ makes every ruling fibre a line.
+The image of $X$ under $\linearsystem{D}$ is a smooth elliptic scroll of degree
+$$
+d=2n-e
+$$
+in $\PP^{d-1}$.
 
 ::: pf-proof
+The three published model descriptions give it, and they agree on the degree and on the dimension.
 
-By step [](#s2){.pf-ref},
-$$
-D\cdot f
-=
-(C_0+\mfb f)\cdot f
-=
-1.
-$$
-Hence
-$$
-\OO_X(D)\restrict_f\cong\OO_{\PP^1}(1).
-$$
-Because the complete system $\linearsystem{D}$ is very ample by step [](#s3){.pf-ref}, its
-restriction embeds each fibre as a projective line. Thus the image is a
-scroll over the elliptic curve $C$.
+Decomposable $X$, $n\ge3+e$: Fuentes, Theorem 1.7(2)(d), printed p. 6, "If $b\ge3+e$, then $R$ is a smooth elliptic scroll of degree $2b-e$ in $\mathbf P^{2b-e-1}$", with $b=\deg\mfb=n$.
 
+Indecomposable $X$ with $e=-1$, $n\ge2$: Fuentes, Theorem 2.13(2)(b), printed pp. 16--17, "then $R$ is a smooth elliptic scroll of degree $2b+1$ in $\mathbf P^{2b}$"; at $e=-1$ that is degree $2n-e=2n+1$ in $\PP^{2n}=\PP^{2n-e-1}$.
+
+Indecomposable $X$ with $e=0$, $n\ge3$: Fuentes, Theorem 2.13(2)(c), printed pp. 16--17, "then $R$ is a smooth elliptic scroll of degree $2b$ in $\mathbf P^{2b-1}$", which at $e=0$ is degree $2n-e$ in $\PP^{2n-1}=\PP^{2n-e-1}$.
+
+That the image is a scroll in the papers' sense is the identity $D\cdot f=1$ of step [](#s2){.pf-ref}: $\linearsystem{D}$ is unisecant, and the image of each ruling fibre is a line. Its genus is that of $C$, by Definition 1.5 of [2], printed p. 5, so it is an elliptic scroll.
 :::
 
 :::
 
 ::: {.pf-step #s5}
-
-The degree of this embedded scroll is
-$$
-\boxed{d=2n-e}.
-$$
+The dimension is the one the exercise states: $\linearsystem{D}$ maps $X$ into $\PP^{d-1}$, with $d=2n-e$.
 
 ::: pf-proof
+Theorem 3.10(1) of [2], printed p. 19, gives $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ for the projective space containing the scroll, together with $\deg(S)=2\deg\mfb-e$; Fuentes' Theorem 2.13, in its proof printed p. 17, computes the same: "R lies in $\mathbf P^N$ with $N=h^0(\OO_S(X_0+\mfb f))$ ... and $N=2b-e-1$", where the paper's $N$ is the dimension of the projective space and not the number of sections.
 
-For a surface embedded by the very ample divisor $D$, its degree is $D^2$.
-Using step [](#s2){.pf-ref},
+On the elliptic curve, $h^0(\OO_C(\mfa))=\deg\mfa$ for $\deg\mfa>0$, by Riemann--Roch with $K_C\cong\OO_C$. Here $n\ge e+3>0$ and $n-e\ge3>0$, so the two counts are $n$ and $n-e$ and
 $$
-\begin{aligned}
-D^2
-&=(C_0+\mfb f)^2\\
-&=C_0^2+2n(C_0\cdot f)+n^2f^2\\
-&=-e+2n\\
-&=2n-e.
-\end{aligned}
+h^0(\OO_X(D))=n+(n-e)=2n-e=d,
 $$
-
+on which the scroll lies in $\PP^{d-1}$.
 :::
 
 :::
 
 ::: {.pf-step #s6}
-
-The complete linear system $\linearsystem{D}$ has
-$$
-\boxed{h^0(X,\OO_X(D))=2n-e=d}.
-$$
-
-::: pf-proof
-
-Let $\mfe$ be the divisor on $C$ with
-$$
-\OO_C(\mfe)\cong\det\mathcal E.
-$$
-Then
-$$
-\deg\mfe=-e.
-$$
-
-The section restriction calculation from Hartshorne V.2.11, proved in
-[[P-AGH5211VERYAMPLESECT]], gives, because $\mfb$ is nonspecial,
-$$
-h^0(X,\OO_X(C_0+\mfb f))
-=
-h^0(C,\OO_C(\mfb))
-+
-h^0(C,\OO_C(\mfb+\mfe)).
-$$
-Here
-$$
-\deg\mfb=n>0,
-\qquad
-\deg(\mfb+\mfe)=n-e\ge3>0.
-$$
-On the elliptic curve, Riemann--Roch and Serre duality give
-$$
-h^0(C,L)=\deg L
-$$
-for every positive-degree line bundle $L$. Therefore
-$$
-h^0(X,\OO_X(D))
-=
-n+(n-e)
-=
-2n-e
-=
-d.
-$$
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-The complete linear system $\linearsystem{D}$ embeds $X$ as an elliptic scroll of
-degree $d$ in
-$$
-\boxed{\PP^{d-1}}.
-$$
-
-::: pf-proof
-
-Step [](#s3){.pf-ref} gives very ampleness, so the complete system defines a closed
-immersion
-$$
-X\hookrightarrow\PP\bigl(H^0(X,\OO_X(D))^\vee\bigr).
-$$
-By step [](#s6){.pf-ref} the target is $\PP^{d-1}$. Step [](#s4){.pf-ref} identifies the image as a
-scroll over the elliptic curve, and step [](#s5){.pf-ref} gives degree $d$.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
 There is an elliptic scroll of degree $5$ in $\PP^4$.
 
 ::: pf-proof
-
-Take
-$$
-e=-1,
-\qquad
-n=2.
-$$
-Then
-$$
-n=e+3,
-$$
-so the construction applies, and
-$$
-d=2n-e=4+1=5.
-$$
-Step [](#s7){.pf-ref} therefore gives an elliptic scroll of degree $5$ in
-$$
-\PP^{5-1}=\PP^4.
-$$
-
+Take $e=-1$ and $n=2$, so that $n=e+3$, and step [](#s4){.pf-ref} in its indecomposable case $e=-1$, Theorem 2.13(2)(b), printed pp. 16--17, gives a smooth elliptic scroll of degree $2\cdot2+1=5$ in $\PP^4$.
 :::
 
 :::
 
 ::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove the asserted existence for every $e\ge-1$ and
-$n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
-
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} give the assertion for every $e\ge-1$ and $n\ge e+3$, and step [](#s6){.pf-ref} the stated degree-five example.
 :::
 
 :::
@@ -394,33 +270,11 @@ $n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.13, printed p. 105, argues exactly as steps [](#s3){.pf-ref} to [](#s7){.pf-ref}: by V.2.12(b), if $n\ge e+3$ then any $D\sim C_0+nf$ is very ample, and since $D\cdot f=1$ and $D^2=2n-e$ the embedding is an elliptic scroll of degree $d=2n-e$; then "$h^0(\mathcal L_X(D))=h^0(\pi_*\mathcal L_X(D))=h^0(\OO_C(n)+\OO_C(n-e))=2n-e$, so the embedding is in $\PP^{d-1}$", and it takes $e=-1$, $n=2$ for the degree-five example in $\PP^4$. Its $h^0$ uses $h^0(\OO_C(k))=k$ on an elliptic curve, which is the computation of step [](#s6){.pf-ref}. It does not construct the ruled surface of invariant $e$ for each $e\ge-1$, which is step [](#s1){.pf-ref}.
+The three model descriptions transcribed in step [](#s4){.pf-ref} are Fuentes' classification of elliptic line scrolls, and together they prove the exercise for every $e\ge-1$ and $n\ge e+3$.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, settle the case $e\ge0$: Theorem 3.2(1), printed p. 15, has every $e\ge0$ occurring for a decomposable surface; Theorem 3.9(3), printed p. 18, makes $\linearsystem{X_0+\mfb f}$ very ample exactly when $\mfb$ and $\mfb+\mfe$ are; and Theorem 3.10(1), printed p. 19, gives $N=h^0(\mfb)+h^0(\mfb+\mfe)-1$ and degree $2\deg\mfb-e$, where $N$ is the dimension of the projective space containing the scroll and not the number of sections; on an elliptic base the two section counts are $n$ and $n-e$, so $h^0=d=2n-e$ and $N=d-1$, and the scroll lies in $\PP^{d-1}$, which is what step [](#s6){.pf-ref} computes directly. That is steps [](#s3){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} for $e\ge0$ on a decomposable surface. Their §3 covers decomposable surfaces only, so the Atiyah surface $e=-1$ is outside it, and step [](#s1){.pf-ref} is what supplies that case.
+Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1), text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`: Theorem 1.7(2)(d), printed p. 6, is the decomposable case, a smooth elliptic scroll of degree $2b-e$ in $\PP^{2b-e-1}$ for $b\ge3+e$; Theorem 2.13(2)(b), printed pp. 16--17, is the case $e=-1$, $b\ge2$, of degree $2b+1$ in $\PP^{2b}$; Theorem 2.13(2)(c), printed pp. 16--17, is the case $e=0$, $b\ge3$, of degree $2b$ in $\PP^{2b-1}$; Theorem 2.13(1)(a), printed p. 16, is the remaining base-point-free case $e=-1$, $b=1$, a plane and a $3:1$ map, which the exercise excludes since it asks for $n\ge e+3=2$. The existence of the surfaces is Theorem 2.7 and Remark 2.9, printed pp. 13--14, and Theorem 3.2(1) of the authors' *The Projective Theory of Ruled Surfaces*; Theorem 2.7 is asserted without proof in the classification paper and the book's Theorem V.2.15, printed p. 377, is its proof.
 
-The very-ampleness step it imports is its own 5.2.12(b), and the two absolute values there are wrong by the
-same amount, so the step survives while its arithmetic does not. On printed p. 104 it writes
-$h^0(\mathcal L_X(C_0+Bf))=h^0(\mathcal L_C(\mathfrak e+B))=2$ at $e=-1$, $B$ of degree $1$; the true value is
-$3$, because the surface is $\mathbf P(\mathcal E)$ for the unique nontrivial extension
-$0\to\OO_C\to\mathcal E\to\mathcal L(P)\to0$ of (2.11.6), hence $\deg\mathcal E=\deg\mathfrak e=-e=1$ (Notation 2.8.1),
-$\pi_*\OO(C_0+Bf)=\mathcal E\otimes\OO(B)$ is indecomposable of degree $3$, and Riemann--Roch with
-$h^1=0$ at degree $\ge1$ gives $h^0=3$ --- the value its own 5.2.13 formula $2n-e$ gives at $n=1$. On p. 105 it
-then writes $h^0(C_0+(A+B)f)=h^0(C_0+Bf)+2=4$, true $5$, and $h^0(C_0+(A+B-P-Q)f)=0$, true $1$. Both tests it
-applies are drops, $h^0(D-Pf)=h^0(D)-2$ and $h^0(D-Pf-Qf)=h^0(D)-4$, and those hold with the correct values
-too, so the conclusions are right. The cause is the shape of his display, which sits inside the splitting of
-5.2.11, $h^i(C_0+\mathfrak bf)=h^i(\mathfrak b)+h^i(\mathfrak b+\mathfrak e)$: that identity is derived in the
-decomposable case $\mathcal E\cong\OO\oplus\mathcal L$ with $e\ge0$ (Theorem 2.12(a)), while 5.2.12 is the
-case $e=-1$, where $\mathcal E$ is indecomposable, yet there the two-term value is right for
-$\deg\mathfrak b\ge1$ (both equal $2\deg\mathfrak b-e$). His p. 104 display keeps only the
-$h^0(\mathfrak b+\mathfrak e)$ summand and then subtracts $h^1(\mathcal L_X(Bf-Pf))$ to reach the $0$; at
-$\deg\mathfrak b=0$ the two-term value is $2$ only for $\mathfrak b\sim0$, against the true $1$, and for a
-nontrivial $\mathfrak b$ of degree $0$, $A+B-P-Q$ say, it is $1$, which is the true value. So the class
-$\mathfrak b\sim0$ is the one at which the split formula and the indecomposable bundle part company. None of
-these numbers is used by the steps above.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, is Fuentes' reference [2], cited there in an earlier numbering: its Theorem 3.2(1), printed p. 15, is $e\ge0$ with every $e\ge0$ occurring, cited there as [2, Theorem 2.12]; its Theorem 3.9(3), printed p. 18, is the very-ampleness criterion for a decomposable surface, cited as [2, Theorem 2.8]; its Theorem 3.10(1), printed p. 19, is $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ with degree $2\deg\mfb-e$, cited as [2, Theorem 2.9].
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.13, PDF p. 269: he takes $D=C_0+nf$, cites (2.20b) and (2.21b) for ampleness, computes $D\cdot f=1$ and $D^2=2n-e$, and then needs $h^0$. His count is
-$$
-h^0(\OO_X(\mathcal L(D)))=h^0(\OO_C(n)\oplus\OO_C(n-e))=2n-1=d-1,
-$$
-which drops $e$: on an elliptic curve $h^0(\OO_C(n))=n$ and $h^0(\OO_C(n-e))=n-e$, so the sum is $2n-e=d$ and the scroll lies in $\PP^{d-1}$, as the exercise states. Step [](#s6){.pf-ref} gives $2n-e$ and step [](#s7){.pf-ref} the resulting $\PP^{d-1}$. Otherwise his plan is the one followed here: existence of the surface for each $e\ge-1$ in step [](#s1){.pf-ref}, very ampleness from V.2.12(b) in step [](#s3){.pf-ref}, degree $D^2$ in step [](#s5){.pf-ref}.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.13, printed p. 105, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, has the two wrong absolute values this card's audit records on 2026-11-15. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.13, PDF p. 269, computes $h^0=2n-1=d-1$ and so places the scroll in $\PP^{d-2}$; the correct count is $2n-e=d$, which step [](#s5){.pf-ref} takes from Theorem 3.10(1) of [2]. Algebraic Geometry II, National Taiwan University, 2020 Spring, text version `tmp/sources/ntu-ag2-chapter5.md`, has no entry for Exercise 13 of §2.
 :::
