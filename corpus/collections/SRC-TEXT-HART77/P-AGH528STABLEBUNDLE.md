@@ -95,6 +95,37 @@ audit:
     every source cited in the remark names its text version. Nothing else in the
     audit changes: no complete published argument for (c) was located, and the
     printed "up to isomorphism" stays defective.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcribed all three parts on 2026-11-16 from Gunning, Lectures on vector
+    bundles over Riemann surfaces, read in the text version
+    tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md, whose
+    OCR corrupts most displayed formulas but whose statements and arguments are
+    legible in outline, and from the book's own Theorem 2.12 and Example 2.11.6;
+    re-read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.2,
+    exercise 2.8, printed p. 384 (PDF p. 399), whose part (c) still reads "up to
+    isomorphism". Printed pages of Gunning were established from the PDF's
+    folios, printed page = PDF page - 9: Theorem 13 on printed pp. 71-74,
+    Lemma 14 on pp. 81-82, the stability definitions and div Phi on pp. 82-83,
+    Lemma 15 on pp. 83-85, Theorem 14 on pp. 87-90. (a) is Gunning's remark that
+    div Phi is at least (1/rank)c(det Phi) for a decomposable bundle, from his
+    Lemma 14; (b) is his "Phi is stable precisely when div Phi < half c(xi)"
+    together with div E = 0 for a normalized E; the uniqueness of the maximal
+    subbundle is Lemma 15(i), whose proof by the two diagonal bundles is carried
+    in step s8; and the classification of (c) is Theorem 14, with phi = O and
+    xi = L, so that the parameter space is P H^1(C, L^dual) and proportional
+    classes give isomorphic middle bundles. The bound 0 < e <= 2g-2 is the
+    argument of the book's Theorem 2.12, printed p. 376. Checked that
+    non-semistability is div E > half deg E, not the weak inequality, which is
+    what makes Lemma 15(i) apply. Not checked: whether Gunning's displayed
+    computations in Lemma 15 and Theorem 14 are free of error, which the OCR
+    does not permit; the steps that depend on them are carried by their
+    statements alone and by the rank-two arguments written on the card. The
+    printed "up to isomorphism" stays defective, and the card classifies
+    tensor-equivalence classes.
+
 ---
 
 ::: {.problem}
@@ -119,6 +150,7 @@ Replacing $>$ by $\geqslant$ defines **semistable**.
    (2) an element $\mathcal{L} \in \Pic C$ of degree $-e$, and
 
    (3) a nonzero $\xi \in H^1\left(\dualof{\mathcal{L}}\right)$, determined up to a nonzero scalar multiple.
+
 :::
 
 ::: {.solution}
@@ -138,491 +170,182 @@ so $e$, $\mathcal L$ and $\xi$ are unchanged, while $\deg(\mathcal E_0\tensor\ma
 ::: pf
 
 ::: {.pf-step #s1}
-
 For a rank-two bundle $\mathcal E$, stability is equivalent to
 $$
 \deg\mathcal A<\frac12\deg\mathcal E
 $$
-for every line subbundle $\mathcal A\subsetneq\mathcal E$; semistability is equivalent to the same inequalities with $\le$.
+for every line subbundle $\mathcal A\subsetneq\mathcal E$, and semistability to the same inequalities with $\le$.
 
 ::: pf-proof
-
-If
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, defines $\Phi$ to be stable when $c(\varphi)<\frac12c(\det\Phi)$ for every line bundle $\varphi\subset\Phi$, and unstable otherwise, and sets $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$; the exercise states the same condition for locally free quotients. A rank-two bundle with a locally free nonzero proper quotient
 $$
-0\longrightarrow\mathcal A
-\longrightarrow\mathcal E
-\longrightarrow\mathcal F
-\longrightarrow0
+0\longrightarrow\mathcal A\longrightarrow\mathcal E\longrightarrow\mathcal F\longrightarrow0
 $$
-has locally free nonzero proper quotient, then both $\mathcal A$ and $\mathcal F$ have rank one and
-$$
-\deg\mathcal F=\deg\mathcal E-\deg\mathcal A.
-$$
-Thus
-$$
-\deg\mathcal F>\frac12\deg\mathcal E
-$$
-is equivalent to
-$$
-\deg\mathcal A<\frac12\deg\mathcal E.
-$$
-A line subbundle that is not saturated is contained in its saturation, whose quotient is torsion-free and hence locally free on a curve and whose degree is at least as large; the inequalities for locally free quotients therefore imply them for every line subbundle. The same rearrangement with weak inequalities proves the semistable statement.
+has $\rank\mathcal A=\rank\mathcal F=1$ and $\deg\mathcal F=\deg\mathcal E-\deg\mathcal A$, so $\deg\mathcal F>\frac12\deg\mathcal E$ is equivalent to $\deg\mathcal A<\frac12\deg\mathcal E$. A line subbundle that is not saturated lies in its saturation, whose quotient is torsion-free and hence invertible on a curve and whose degree is at least as large, so the inequalities for invertible quotients imply them for every line subbundle. The semistable statement is the same rearrangement with weak inequalities.
 
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-A decomposable rank-two bundle is never stable.
+A decomposable rank-two bundle is never stable. This is part (a).
 
 ::: pf-proof
-
-Write
+Gunning, §(c) with Lemma 14, printed pp. 81--82: for a decomposable bundle $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$ the determinant has $c(\det\Phi)=c(\varphi_1)+\cdots+c(\varphi_m)$, so one summand satisfies $c(\varphi_j)\ge\frac1m c(\det\Phi)$, and $\operatorname{div}\Phi=\max_jc(\varphi_j)\ge\frac1m c(\det\Phi)$, which is instability. In rank two, $\mathcal E=\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible and, after interchanging them, $\deg\mathcal A\ge\deg\mathcal B$ gives
 $$
-\mathcal E=\mathcal A\oplus\mathcal B
+\deg\mathcal A\ge\frac{\deg\mathcal A+\deg\mathcal B}{2}=\frac12\deg\mathcal E,
 $$
-with $\mathcal A,\mathcal B$ invertible, and after interchanging the summands assume
-$$
-\deg\mathcal A\ge\deg\mathcal B.
-$$
-Then
-$$
-\deg\mathcal A
-\ge
-\frac{\deg\mathcal A+\deg\mathcal B}{2}
-=
-\frac12\deg\mathcal E.
-$$
-Since $\mathcal A$ is a line subbundle, step [](#s1){.pf-ref} shows that $\mathcal E$ is not stable.
-This proves part (a).
+and step [](#s1){.pf-ref} applies to the line subbundle $\mathcal A$.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
-
 If a rank-two bundle $\mathcal E$ is normalized, then every line subbundle $\mathcal A\subseteq\mathcal E$ satisfies
 $$
-\deg\mathcal A\le0.
+\deg\mathcal A\le0 .
 $$
 
 ::: pf-proof
-
-The inclusion
-$$
-\mathcal A\hookrightarrow\mathcal E
-$$
-is a nonzero section of
-$$
-\mathcal E\tensor\mathcal A^{-1}.
-$$
-If $\deg\mathcal A>0$, then $\mathcal A^{-1}$ has negative degree, contrary to the defining vanishing for a normalized bundle.
-Hence
-$$
-\deg\mathcal A\le0.
-$$
+The inclusion is a nonzero section of $\mathcal E\tensor\mathcal A^{-1}$; if $\deg\mathcal A>0$ then $\mathcal A^{-1}$ has negative degree, contrary to the defining vanishing of Proposition 2.8, printed p. 372. In Gunning's notation this says $\operatorname{div}\mathcal E\le0$, and $H^0(C,\mathcal E)\ne0$ gives the reverse inequality.
 
 :::
 
 :::
 
 ::: {.pf-step #s4}
-
 If a rank-two bundle $\mathcal E$ is normalized, then it contains $\OO_C$ as a line subbundle.
 
 ::: pf-proof
-
-Normalization gives
-$$
-H^0(C,\mathcal E)\ne0.
-$$
-Choose a nonzero section
-$$
-\OO_C\longrightarrow\mathcal E
-$$
-and saturate its image.
-The saturation is an invertible subsheaf $\mathcal A\subseteq\mathcal E$ of the form
-$$
-\mathcal A\cong\OO_C(D)
-$$
-for an effective divisor $D$, because saturation removes exactly the zero divisor of the section.
-Thus
-$$
-\deg\mathcal A\ge0.
-$$
-Step [](#s3){.pf-ref} gives the reverse inequality, so $\deg D=0$, hence $D=0$ and
-$$
-\mathcal A\cong\OO_C.
-$$
+This is the last step of the proof of Proposition 2.8, printed p. 373: a nonzero section $s\in H^0(C,\mathcal E)$ gives an injective map $\OO_C\to\mathcal E$, and its image spans a line subbundle. Normalization makes the quotient invertible — the book shows it is torsion-free and hence invertible on a curve — and the subbundle is $\OO_C$; step [](#s3){.pf-ref} bounds its degree above by $0$ and the nonzero section bounds it below.
 
 :::
 
 :::
 
 ::: {.pf-step #s5}
-
 If $\mathcal E$ has rank two and is normalized, then
 $$
 \boxed{\mathcal E\text{ is stable}\iff\deg\mathcal E>0.}
 $$
 
 ::: pf-proof
-
-Suppose first that $\deg\mathcal E>0$.
-For every line subbundle $\mathcal A\subseteq\mathcal E$, step [](#s3){.pf-ref} gives
-$$
-\deg\mathcal A\le0
-<
-\frac12\deg\mathcal E.
-$$
-Step [](#s1){.pf-ref} gives stability.
-
-Conversely, if $\mathcal E$ is stable, step [](#s4){.pf-ref} gives a line subbundle
-$$
-\OO_C\subseteq\mathcal E.
-$$
-Applying step [](#s1){.pf-ref} to this subbundle gives
-$$
-0<\frac12\deg\mathcal E,
-$$
-so $\deg\mathcal E>0$.
+Gunning, §(c), printed p. 83: "$\Phi$ is stable precisely when $\operatorname{div}\Phi<\frac12c(\xi)$". A normalized bundle has $\operatorname{div}\mathcal E=0$ by step [](#s3){.pf-ref}, so that inequality is $0<\frac12\deg\mathcal E$. In the language of steps [](#s1){.pf-ref} and [](#s3){.pf-ref}: if $\deg\mathcal E>0$ then every line subbundle has $\deg\mathcal A\le0<\frac12\deg\mathcal E$ and stability follows, and if $\mathcal E$ is stable then the subbundle $\OO_C\subseteq\mathcal E$ of step [](#s4){.pf-ref} gives $0<\frac12\deg\mathcal E$.
 
 :::
 
 :::
 
 ::: {.pf-step #s6}
-
 If $\mathcal E$ has rank two and is normalized, then
 $$
 \boxed{\mathcal E\text{ is semistable}\iff\deg\mathcal E\ge0.}
 $$
 
 ::: pf-proof
-
-If $\deg\mathcal E\ge0$, then step [](#s3){.pf-ref} gives, for every line subbundle,
-$$
-\deg\mathcal A\le0
-\le
-\frac12\deg\mathcal E,
-$$
-so step [](#s1){.pf-ref} gives semistability.
-
-Conversely, semistability and the subbundle $\OO_C\subseteq\mathcal E$ from step [](#s4){.pf-ref} give
-$$
-0\le\frac12\deg\mathcal E.
-$$
-Thus $\deg\mathcal E\ge0$.
-Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b).
+The same reading of $\operatorname{div}\mathcal E=0$ against $\operatorname{div}\Phi\ge\frac12c(\xi)$, Gunning §(c), printed p. 83, with the weak inequality, and the subbundle $\OO_C$ for the converse. Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b).
 
 :::
 
 :::
 
 ::: {.pf-step #s7}
-
-Let $\mathcal E$ be a rank-two bundle that is not semistable.
-Among all line subbundles of $\mathcal E$, there is one of maximal degree.
+Let $\mathcal E$ be a rank-two bundle that is not semistable. Among all line subbundles of $\mathcal E$ there is one of maximal degree.
 
 ::: pf-proof
-
-First, line subbundles exist.
-For $n\gg0$, $\mathcal E(n)$ is generated by global sections.
-A nonzero section gives a rank-one subsheaf, whose saturation is an invertible subsheaf; twisting back gives a line subbundle of $\mathcal E$.
-
-Their degrees are bounded above.
-Fix an ample line bundle $\OO_C(1)$ of degree $h>0$.
-For $n\gg0$, the bundle
-$$
-\mathcal E^\vee(n)
-$$
-is globally generated.
-If
-$$
-\mathcal A\subseteq\mathcal E
-$$
-is a line subbundle, dualizing its locally free quotient gives a surjection
-$$
-\mathcal E^\vee\twoheadrightarrow\mathcal A^\vee.
-$$
-After twisting by $\OO_C(n)$, the line bundle
-$$
-\mathcal A^\vee(n)
-$$
-is a quotient of a globally generated bundle and is therefore globally generated.
-Hence its degree is nonnegative:
-$$
--\deg\mathcal A+nh\ge0.
-$$
-Thus
-$$
-\deg\mathcal A\le nh.
-$$
-The possible degrees are integers, so they have a maximum.
+The maximum is what Gunning's $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, printed p. 83, presupposes; the bound that makes it a maximum is not proved there and is the card's. Line subbundles exist, since a nonzero section of $\mathcal E(n)$ for $n\gg0$ saturates to an invertible subsheaf. Their degrees are bounded above: fix an ample $\OO_C(1)$ of degree $h>0$ and take $n\gg0$ so that $\mathcal E^\vee(n)$ is globally generated; dualizing the locally free quotient of a line subbundle $\mathcal A\subseteq\mathcal E$ gives a surjection $\mathcal E^\vee\twoheadrightarrow\mathcal A^\vee$, so $\mathcal A^\vee(n)$ is a quotient of a globally generated bundle and is globally generated, whence $-\deg\mathcal A+nh\ge0$ and $\deg\mathcal A\le nh$. The degrees are integers, so they have a maximum.
 
 :::
 
 :::
 
 ::: {.pf-step #s8}
-
-A non-semistable rank-two bundle $\mathcal E$ has a unique line subbundle $\mathcal A$ of maximal degree, and
+A rank-two bundle $\mathcal E$ that is not semistable has a unique line subbundle $\mathcal A$ of maximal degree, and
 $$
-2\deg\mathcal A>\deg\mathcal E.
+2\deg\mathcal A>\deg\mathcal E .
 $$
 
 ::: pf-proof
-
-Non-semistability gives, by step [](#s1){.pf-ref}, a line subbundle of degree strictly greater than $\deg\mathcal E/2$.
-Hence a maximal-degree line subbundle $\mathcal A$ from step [](#s7){.pf-ref} also satisfies
-$$
-2\deg\mathcal A>\deg\mathcal E.
-$$
-
-Suppose $\mathcal B$ is a second maximal-degree line subbundle, and write
-$$
-a=\deg\mathcal A=\deg\mathcal B.
-$$
-If $\mathcal A$ and $\mathcal B$ have the same generic line in $\mathcal E$, their saturated images agree, so $\mathcal A=\mathcal B$.
-Otherwise their wedge gives a nonzero map of line bundles
-$$
-\mathcal A\tensor\mathcal B
-\longrightarrow
-\det\mathcal E.
-$$
-A nonzero map of line bundles on a projective curve forces the degree of the source to be at most the degree of the target.
-Thus
-$$
-2a\le\deg\mathcal E,
-$$
-contradicting $2a>\deg\mathcal E$.
-Hence $\mathcal A$ is unique.
+This is Lemma 15 of Gunning, printed pp. 83--85. Non-semistability is $\operatorname{div}\mathcal E>\frac12c(\xi)$, that is $2\deg\mathcal A>\deg\mathcal E$ for a maximal subbundle, which is the case of the lemma's part (i). Its part (i) states and proves uniqueness: if $\varphi_1\subset\Phi$ realizes $\operatorname{div}\Phi$ and $\varphi\subset\Phi$ is another subbundle with $c(\varphi)=\operatorname{div}\Phi$, then $\varphi^{-1}\varphi_1$ has a nontrivial section while $\varphi^{-1}\varphi_2$ has none, $\varphi_2=\Phi/\varphi_1$, because $c(\varphi^{-1}\varphi_2)=-2c(\varphi_1)+c(\xi)<0$; so $\varphi=\varphi_1$. In rank-two terms, a second maximal subbundle $\mathcal B$ with $\deg\mathcal A=\deg\mathcal B=a$ and no common generic line gives a nonzero map $\mathcal A\tensor\mathcal B\to\det\mathcal E$ and hence $2a\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$.
 
 :::
 
 :::
 
 ::: {.pf-step #s9}
-
-Let $\mathcal E$ be indecomposable and not semistable, and let $\mathcal A$ be its unique maximal-degree line subbundle.
-Then
+Let $\mathcal E$ be indecomposable and not semistable and let $\mathcal A$ be its unique maximal-degree line subbundle. Then
 $$
 \mathcal E_0=\mathcal E\tensor\mathcal A^{-1}
 $$
 fits into a nonsplit exact sequence
 $$
-0\longrightarrow\OO_C
-\longrightarrow\mathcal E_0
-\longrightarrow\mathcal L
-\longrightarrow0
+0\longrightarrow\OO_C\longrightarrow\mathcal E_0\longrightarrow\mathcal L\longrightarrow0
 $$
-with
-$$
-\deg\mathcal L=-e<0.
-$$
+with $\deg\mathcal L=-e<0$.
 
 ::: pf-proof
-
-Tensoring the exact sequence determined by $\mathcal A\subseteq\mathcal E$ with $\mathcal A^{-1}$ gives
-$$
-0\longrightarrow\OO_C
-\longrightarrow\mathcal E_0
-\longrightarrow\mathcal L
-\longrightarrow0,
-$$
-where
-$$
-\mathcal L
-\cong
-\det\mathcal E\tensor\mathcal A^{-2}.
-$$
-Therefore
-$$
-\deg\mathcal L
-=
-\deg\mathcal E-2\deg\mathcal A
-<0
-$$
-by step [](#s8){.pf-ref}. Write this degree as $-e$, so $e>0$.
-
-If the extension split, $\mathcal E_0$ would be decomposable, hence so would $\mathcal E=\mathcal E_0\tensor\mathcal A$.
-This contradicts the hypothesis.
-Thus the extension is nonsplit.
+This is the opening of the proof of Theorem 2.12, printed p. 376: corresponding to a section of $\PP(\mathcal E)$ there is an exact sequence $0\to\OO_C\to\mathcal E\to\mathcal L\to0$ for some $\mathcal L$, and for an indecomposable $\mathcal E$ it "must be a nontrivial extension, so it corresponds to a nonzero element $\xi\in\Ext^1(\mathcal L,\OO_C)\cong H^1(C,\mathcal L^\vee)$". Tensoring the sequence of the subbundle $\mathcal A\subseteq\mathcal E$ by $\mathcal A^{-1}$ gives $\mathcal L\cong\det\mathcal E\tensor\mathcal A^{-2}$, so $\deg\mathcal L=\deg\mathcal E-2\deg\mathcal A<0$ by step [](#s8){.pf-ref}; write this degree as $-e$. A splitting would make $\mathcal E_0$, and hence $\mathcal E$, decomposable.
 
 :::
 
 :::
 
 ::: {.pf-step #s10}
-
-The bundle $\mathcal E_0$ in step [](#s9){.pf-ref} is normalized, and its extension class is a nonzero element
-$$
-\xi\in H^1(C,\mathcal L^\vee)
-$$
-well-defined up to nonzero scalar.
+The bundle $\mathcal E_0$ of step [](#s9){.pf-ref} is normalized, and its extension class is a nonzero $\xi\in H^1(C,\mathcal L^\vee)$ well defined up to nonzero scalar.
 
 ::: pf-proof
-
-The inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero global section.
-If $\mathcal M$ has negative degree, tensoring the sequence of step [](#s9){.pf-ref} by $\mathcal M$ gives
-$$
-0\longrightarrow\mathcal M
-\longrightarrow\mathcal E_0\tensor\mathcal M
-\longrightarrow\mathcal L\tensor\mathcal M
-\longrightarrow0.
-$$
-Both end line bundles have negative degree, so both have zero global sections.
-Hence
-$$
-H^0(C,\mathcal E_0\tensor\mathcal M)=0.
-$$
-Thus $\mathcal E_0$ is normalized.
-
-Extensions of $\mathcal L$ by $\OO_C$ are classified by
-$$
-\Ext^1_C(\mathcal L,\OO_C)
-\cong
-H^1(C,\mathcal L^\vee)
-$$
-[[PR-ET5PQ]]. The sequence is nonsplit by step [](#s9){.pf-ref}, so its class $\xi$ is nonzero.
-Rescaling the inclusion of $\OO_C$, or equivalently the quotient to $\mathcal L$, rescales $\xi$ without changing the isomorphism class of the middle bundle.
-Thus only its nonzero scalar class is intrinsic.
+Normalization is the argument of Example 2.11.6, printed p. 375: the inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero section; for $\mathcal M$ of negative degree both end terms of the twisted sequence have negative degree because $\deg\mathcal L=-e<0$, so $H^0(C,\mathcal E_0\tensor\mathcal M)=0$. The identification of extension classes with $H^1(C,\mathcal L^\vee)$ is Theorem 13 of Gunning, printed pp. 71--74, whose statement also attaches the split extension to the zero class, so a nonsplit sequence has nonzero class. Rescaling the inclusion of $\OO_C$, or the quotient to $\mathcal L$, rescales the class without changing the middle bundle, so only its nonzero scalar class is intrinsic; Theorem 14 of Gunning, printed pp. 87--90, proves that proportional classes give isomorphic bundles and non-proportional ones do not.
 
 :::
 
 :::
 
 ::: {.pf-step #s11}
-
-The integer $e$ in step [](#s9){.pf-ref} satisfies
+The integer $e$ of step [](#s9){.pf-ref} satisfies
 $$
-\boxed{0<e\le2g-2}.
+\boxed{0<e\le2g-2.}
 $$
 
 ::: pf-proof
-
-The lower bound was proved in step [](#s9){.pf-ref}. Since
-$$
-0\ne\xi\in H^1(C,\mathcal L^\vee),
-$$
-Serre duality gives
-$$
-0\ne
-H^0(C,K_C\tensor\mathcal L).
-$$
-A line bundle with a nonzero section has nonnegative degree, so
-$$
-0
-\le
-\deg(K_C\tensor\mathcal L)
-=
-2g-2-e.
-$$
-Hence $e\le2g-2$.
+The degree $\deg\mathcal L=-e$ is negative by step [](#s9){.pf-ref}. For the upper bound, the proof of Theorem 2.12, printed p. 376, argues from the nonvanishing of $H^1(C,\mathcal L^\vee)$: "in particular, $H^1(\mathcal L^\vee)\ne0$, so we must have $\deg\mathcal L^\vee\le2g-2$ (IV, 1.3.4). Since $e=-\deg\mathcal L$, we have $e\le2g-2$". Equivalently, Serre duality turns $0\ne\xi\in H^1(C,\mathcal L^\vee)$ into a nonzero section of $K_C\tensor\mathcal L$, whose degree $2g-2-e$ is therefore nonnegative.
 
 :::
 
 :::
 
 ::: {.pf-step #s12}
-
-Conversely, suppose one is given
+Conversely, given
 $$
 0<e\le2g-2,
 \qquad
 \deg\mathcal L=-e,
 \qquad
-0\ne\xi\in H^1(C,\mathcal L^\vee).
+0\ne\xi\in H^1(C,\mathcal L^\vee),
 $$
-Let
-$$
-0\longrightarrow\OO_C
-\longrightarrow\mathcal E_0
-\longrightarrow\mathcal L
-\longrightarrow0
-$$
-be the corresponding extension.
-Then $\mathcal E_0$ is normalized, indecomposable, and not semistable.
+let $0\to\OO_C\to\mathcal E_0\to\mathcal L\to0$ be the corresponding extension. Then $\mathcal E_0$ is normalized, indecomposable and not semistable.
 
 ::: pf-proof
-
-The same argument as in step [](#s10){.pf-ref} shows that $\mathcal E_0$ is normalized: it has a section from $\OO_C$, while every negative twist has zero sections because both end terms of the twisted extension have negative degree.
-
-Its degree is
-$$
-\deg\mathcal E_0=\deg\mathcal L=-e<0.
-$$
-Part (b), step [](#s6){.pf-ref}, therefore shows that $\mathcal E_0$ is not semistable.
-
-It remains to prove indecomposability.
-Suppose
-$$
-\mathcal E_0\cong\mathcal B\oplus\mathcal C.
-$$
-Because $\mathcal E_0$ is normalized and has a nonzero section, one summand has a nonzero section.
-By step [](#s3){.pf-ref} it has degree zero, and a degree-zero line bundle with a nonzero section is trivial.
-Thus, after relabeling,
-$$
-\mathcal B\cong\OO_C,
-\qquad
-\mathcal C\cong\det\mathcal E_0\cong\mathcal L.
-$$
-Since $\deg\mathcal L<0$, one has $H^0(C,\mathcal L)=0$.
-Therefore the given injection
-$$
-\OO_C\longrightarrow\OO_C\oplus\mathcal L
-$$
-has zero component in $\mathcal L$ and a nonzero scalar component in $\OO_C$.
-It is the standard direct summand up to scalar, so the extension splits.
-This contradicts $\xi\ne0$.
-Hence $\mathcal E_0$ is indecomposable.
+Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of negative degree, so $\mathcal E_0$ is not semistable by step [](#s6){.pf-ref}. Indecomposability is Theorem 14 of Gunning, printed pp. 87--90, which parametrizes the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$ and proves that two bundles are isomorphic exactly when their classes are proportional: for $\varphi=\OO_C$ that space is $\PP H^1(C,\mathcal L^\vee)$, and the nonzero class $\xi$ is one of its points. In rank two the same conclusion is direct: if $\mathcal E_0\cong\mathcal B\oplus\mathcal C$ then one summand has a nonzero section, hence degree $0$ by step [](#s3){.pf-ref} and is $\OO_C$, the other is $\det\mathcal E_0\cong\mathcal L$ of negative degree and so has no sections, and the given inclusion is then the standard summand up to scalar, so the extension splits.
 
 :::
 
 :::
 
 ::: {.pf-step #s13}
-
-The construction in steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} gives a bijection between tensor-equivalence classes of indecomposable non-semistable rank-two bundles and the data
+The construction of steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} gives a bijection between tensor-equivalence classes of indecomposable non-semistable rank-two bundles and the data
 $$
-\boxed{
-\left(e,\mathcal L,[\xi]\right),
-\quad
-0<e\le2g-2,
-\quad
-\deg\mathcal L=-e,
-\quad
-[\xi]\in\PP H^1(C,\mathcal L^\vee).}
+\boxed{\left(e,\mathcal L,[\xi]\right),\quad 0<e\le2g-2,\quad \deg\mathcal L=-e,\quad [\xi]\in\PP H^1(C,\mathcal L^\vee).}
 $$
 
 ::: pf-proof
-
-Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal destabilizing line subbundle $\mathcal A$.
-Tensoring by $\mathcal A^{-1}$ therefore gives a canonically normalized representative $\mathcal E_0$ of its tensor-equivalence class.
-The unique maximal-degree line subbundle of $\mathcal E_0$ is $\OO_C$, and its quotient is the intrinsic line bundle
-$$
-\mathcal L=\det\mathcal E_0.
-$$
-Thus $e=-\deg\mathcal L$ is intrinsic as well.
-Once the subbundle and quotient are fixed up to their scalar automorphisms, the extension class is determined up to a nonzero scalar by the Ext classification.
-
-Conversely, proportional nonzero extension classes give isomorphic middle bundles after rescaling the subbundle or quotient, and step [](#s12){.pf-ref} shows that every displayed triple produces an indecomposable non-semistable bundle.
-Tensoring such a bundle by an arbitrary line bundle preserves indecomposability and all slope inequalities after shifting every slope by the same degree.
-
-Finally, two normalized representatives produced in this way cannot become isomorphic after a nontrivial line-bundle twist.
-Indeed, the unique maximal-degree subbundle of $\mathcal E_0\tensor\mathcal M$ is $\mathcal M$, whereas that of another normalized representative is $\OO_C$.
-An isomorphism between them would force $\mathcal M\cong\OO_C$.
-Hence the triple displayed in step [](#s13){.pf-ref} classifies the tensor-equivalence classes uniquely.
-This proves part (c).
+Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a canonical normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose own maximal subbundle is $\OO_C$ with quotient $\mathcal L=\det\mathcal E_0$; this is Theorem 14 of Gunning, printed pp. 87--90, read with the uniqueness of Lemma 15, printed pp. 83--85. Two extensions with proportional nonzero classes have isomorphic middle bundles and otherwise distinct ones, again by Theorem 14, and step [](#s12){.pf-ref} shows that every displayed triple occurs. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, and it changes the determinant, so the triples of a bundle and of its twists differ and the classification is up to tensor equivalence rather than up to isomorphism.
 
 :::
 
 :::
 
 ::: pf-qed
-
 Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove the corrected classification in part (c).
 
 :::
@@ -632,9 +355,11 @@ Step [](#s2){.pf-ref} proves part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref},
 :::
 
 ::: {.remark title="Published solution"}
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for decomposable $\Phi$, which is part (a), and $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$ in general; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s1){.pf-ref} to [](#s13){.pf-ref} follow that route, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning's $\operatorname{div}$ presupposes, proved on the card by global generation.
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.8, printed pp. 103--104, proves (a) and (b) by the slope inequalities, the same route as steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause, with no tensor twist considered, so it carries the defect recorded at the head of this solution rather than repairing it.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 8 of §2 (solution by Tzu-Yang Chou), printed p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow.
+
 :::
