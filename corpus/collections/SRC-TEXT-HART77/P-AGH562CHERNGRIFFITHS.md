@@ -162,8 +162,7 @@ $$
 ::: pf-proof
 This is Harris's bound on the geometric genus. J. Harris, *A bound on the
 geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl.
-Sci. (4) 8 (1981), text version
-`tmp/sources/harris-1981-bound-geometric-genus.md`, §2, printed pp. 42--44.
+Sci. (4) 8 (1981), §2, printed pp. 42--44.
 Written for a surface in $\PP^{n+1}$, with $N=n+1$, the argument is as
 follows.
 
