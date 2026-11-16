@@ -63,10 +63,31 @@ audit:
     section of class C_0-f would have b = -1 < 0. Searched outside the twelve
     retained sets: NTU 2020 has no entry for Exercise 15 of section 2; Yang
     Pi-Yeh, Hartshorne Solutions, printed pp. 105-106
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), has the (a) computation and
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), has the (a) computation and
     garbled (b) and (c). Egbert, PDF pp. 271-273, cites Miyanishi for (c). Not
     checked: whether Y as constructed is singular with delta = 1; the card
     asserts it from p_a(Y) - p_a(C) = 1 and does not compute the singularity.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the NTU Chapter V homework now exists: it is read in
+    tmp/sources/ntu-ag2-chapter5.pdf and in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16: the paper has
+    no Frobenius statement and no characteristic-p discussion, so it does not
+    reach this exercise. Math StackExchange
+    question 4553266 asks about the genus of exactly the curve of part (c) and has
+    no answer. The citation carried by the retained Egbert entry, Miyanishi, Open
+    Algebraic Surfaces, Lemma 2.5.2.2, was not read because that book is not in
+    tmp/sources. No complete published argument located; steps s7 to s10 remain
+    the card's, and the defect of the printed "nonsingular", recorded at the head
+    of the solution, stands.
 ---
 
 ::: {.problem}
@@ -662,9 +683,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273. For (a) he identifies $H^1(C,\OO_C)$ with $H^2(\PP^2,\OO(-4))$, carries the Frobenius through the thickening by $F^3$ so that the map is $\alpha\mapsto F^2\alpha^3$, and multiplies $F^2$ by each basis element $(x^2yz)^{-1},(xy^2z)^{-1},(xyz^2)^{-1}$, checking that every monomial acquires a nonnegative exponent; steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are that computation. For (b) he works with $f^2\xi$ in $H^1(C,\OO_C(-1))$ and the explicit polynomial $f^2$; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} instead show the source and target are both three-dimensional and the composite to $H^1(C,\OO_C)$ is zero. For (c) he writes "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", a source not retained, and concludes that $Y$ is one curve on the surface up to isomorphism; the construction of $Y$ from the splitting of $f^*\mathcal E$ is steps [](#s6){.pf-ref} to [](#s10){.pf-ref} here, and the defect in the printed word "nonsingular" is worked out at the head of the solution. His treatment of $D=2C_0$ is the computation of step [](#s12){.pf-ref}.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.15, PDF pp. 271--273. For (a) he identifies $H^1(C,\OO_C)$ with $H^2(\PP^2,\OO(-4))$, carries the Frobenius through the thickening by $F^3$ so that the map is $\alpha\mapsto F^2\alpha^3$, and multiplies $F^2$ by each basis element $(x^2yz)^{-1},(xy^2z)^{-1},(xyz^2)^{-1}$, checking that every monomial acquires a nonnegative exponent; steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are that computation. For (b) he works with $f^2\xi$ in $H^1(C,\OO_C(-1))$ and the explicit polynomial $f^2$; steps [](#s4){.pf-ref} and [](#s5){.pf-ref} instead show the source and target are both three-dimensional and the composite to $H^1(C,\OO_C)$ is zero. For (c) he writes "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", a source not retained, and concludes that $Y$ is one curve on the surface up to isomorphism; the construction of $Y$ from the splitting of $f^*\mathcal E$ is steps [](#s6){.pf-ref} to [](#s10){.pf-ref} here, and the defect in the printed word "nonsingular" is worked out at the head of the solution. His treatment of $D=2C_0$ is the computation of step [](#s12){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces the computation of (a): the thickening by $f^3$, the basis $x^{-2}y^{-1}z^{-1}$, $x^{-1}y^{-2}z^{-1}$, $x^{-1}y^{-1}z^{-2}$ of $H^2(\PP^2,\OO(-4))$, and the check that $f^2$ times each cube has a nonnegative exponent. Its (b) is garbled: it writes "$\xi$ has the form $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ on $U_z$, hence $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ has nonnegative exponent for some suitable $a_{ij}$", which is not an argument that some nonzero $\xi$ is killed. Its (c) asserts "$\pi$ is not separable with inseparable degree $3$, hence purely inseparable ... $Y$ is a set-theoretic section lying on the surface", and then computes $C_0\cdot D=6-6=0$ using the class $3C_0-3f$ that it never derives for $Y$. Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} replace its (b) by the dimensions $h^1(\OO_C(-P))=h^1(\OO_C)=3$, the kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$ being two-dimensional, and the vanishing of Frobenius on $H^1(\OO_C)$; steps [](#s7){.pf-ref} to [](#s10){.pf-ref} derive the class of $Y$ from $3=ma$ and $C_0\cdot Y=0$.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.15, printed pp. 105--106, reproduces the computation of (a): the thickening by $f^3$, the basis $x^{-2}y^{-1}z^{-1}$, $x^{-1}y^{-2}z^{-1}$, $x^{-1}y^{-1}z^{-2}$ of $H^2(\PP^2,\OO(-4))$, and the check that $f^2$ times each cube has a nonnegative exponent. Its (b) is garbled: it writes "$\xi$ has the form $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ on $U_z$, hence $(ax+by+c)^{-1}\sum a_{ij}x^iy^j$ has nonnegative exponent for some suitable $a_{ij}$", which is not an argument that some nonzero $\xi$ is killed. Its (c) asserts "$\pi$ is not separable with inseparable degree $3$, hence purely inseparable ... $Y$ is a set-theoretic section lying on the surface", and then computes $C_0\cdot D=6-6=0$ using the class $3C_0-3f$ that it never derives for $Y$. Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} replace its (b) by the dimensions $h^1(\OO_C(-P))=h^1(\OO_C)=3$, the kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$ being two-dimensional, and the vanishing of Frobenius on $H^1(\OO_C)$; steps [](#s7){.pf-ref} to [](#s10){.pf-ref} derive the class of $Y$ from $3=ma$ and $C_0\cdot Y=0$.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 15 of §2.
 :::

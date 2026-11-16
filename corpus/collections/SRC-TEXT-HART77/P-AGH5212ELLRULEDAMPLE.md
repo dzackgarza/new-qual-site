@@ -49,10 +49,44 @@ audit:
     subtracting a point for nonspeciality in the elliptic case). Searched
     outside the twelve retained sets: NTU 2020 has no entry for Exercise 12 of
     section 2; Yang Pi-Yeh, Hartshorne Solutions, printed pp. 104-105
-    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version `tmp/sources/lfwin-hartshorne-solutions.md`), disposes of e >= 0 as trivial
+    (tmp/sources/lfwin-hartshorne-solutions.pdf), disposes of e >= 0 as trivial
     and its e = -1 computation is garbled. Egbert, PDF pp. 268-269, cites
     Fuentes-Pedreira 1.3 and 1.4 alone. Not checked: Fuentes-Pedreira, which is
     not in tmp/sources, so its criterion is neither used nor verified here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The text version of the NTU Chapter V homework now exists: it is read in
+    tmp/sources/ntu-ag2-chapter5.pdf and in its MinerU text version
+    tmp/sources/ntu-ag2-chapter5.md. The event above predates that file, records
+    what was read from the PDF alone, and is left as it was dated.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read Fuentes and Pedreira (arXiv:math/0006204v3), Sections 2 and 3, printed
+    pp. 11 to 22, on 2026-11-16. Its Theorem 3.9(3), printed p. 18, states for a
+    decomposable ruled surface that the system of C_0 + bf is very ample exactly
+    when b and b+e are very ample. For an elliptic base with e at least zero that
+    gives the criterion behind this exercise: both degrees must reach three, and
+    deg(b+e) equals deg b - e because deg e is -e, so the bound of part (b) is
+    deg b at least e+3, as printed. The proof of that equivalence is not complete
+    as written: it invokes Corollary 2.13, printed p. 14, whose criterion is
+    h^0(H - (P+Q)f) = h^0(H) - 4 for all P and Q in the base. Subtracting two
+    whole fibres tests the two directrix curves, and that condition is necessary
+    for very ampleness, but the paper's converse is an assertion: from a point at
+    which the map fails it produces a Q with h^0(H - (P+Q)f) at least
+    h^0(H - Pf) - 1 with no argument, and a condition on whole fibres cannot see a
+    tangent direction transverse to a fibre. Proposition 2.15, printed p. 15,
+    rests on the same corollary, and Proposition 2.14, printed p. 14, is the sound
+    step: if b is very ample and the system is base-point-free then the map is an
+    embedding off the section, which with the trace on the two sections is what
+    steps s7 and s10 supply without the two-fibre criterion. The paper's Section 3
+    covers decomposable surfaces only, so the Atiyah surface of e = -1, which
+    Theorem V.2.15 shows is the only indecomposable elliptic ruled surface with
+    negative e, is outside it, and step s8 separates length-two subschemes there
+    directly.
 ---
 
 ::: {.problem}
@@ -499,7 +533,11 @@ Step [](#s6){.pf-ref} proves part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-r
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, PDF pp. 268--269: part (a) is the single line "This is Fuentes, Pedreira Prop 1.3" and part (b) the single line "Fuentes, Predeira prop 1.4", so neither is argued in a retained file. The card proves both: step [](#s2){.pf-ref} covers $e\ge0$ from V.2.11(a) with $\deg\mathfrak b\ge2$ and $\deg(\mathfrak b+\mathfrak e)\ge2$ base-point-free on an elliptic curve, step [](#s5){.pf-ref} covers the exceptional value $e=-1$ through the stability of a normalized bundle of degree $1$ and $H^1(C,\mathcal E(\mathfrak b)(-P))=0$, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} give very ampleness for $e\ge0$ and $e=-1$ respectively, and step [](#s10){.pf-ref} is the necessity, that $\OO_C(\mathfrak b+\mathfrak e)$ of degree $\deg\mathfrak b-e$ is very ample on an elliptic curve and so has degree at least $3$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.12, PDF pp. 268--269: part (a) is the single line "This is Fuentes, Pedreira Prop 1.3" and part (b) the single line "Fuentes, Predeira prop 1.4", so neither is argued in a retained file. The card proves both: step [](#s2){.pf-ref} covers $e\ge0$ from V.2.11(a) with $\deg\mathfrak b\ge2$ and $\deg(\mathfrak b+\mathfrak e)\ge2$ base-point-free on an elliptic curve, step [](#s5){.pf-ref} covers the exceptional value $e=-1$ through the stability of a normalized bundle of degree $1$ and $H^1(C,\mathcal E(\mathfrak b)(-P))=0$, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} give very ampleness for $e\ge0$ and $e=-1$ respectively, and step [](#s10){.pf-ref} is the necessity, that $\OO_C(\mathfrak b+\mathfrak e)$ of degree $\deg\mathfrak b-e$ is very ample on an elliptic curve and so has degree at least $3$.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.12, printed pp. 104--105, treats $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" without checking that $\linearsystem{\mathfrak b}$ and $\linearsystem{\mathfrak b+\mathfrak e}$ are base-point-free and that $\mathfrak b$ is nonspecial, which on an elliptic curve is the content of step [](#s1){.pf-ref}; for $e=-1$ its computation is garbled, "$h^0(L_X(C_0+\mathfrak b f-Pf))=h^0(L_C(\mathfrak E+\mathfrak B-P))-h^1(L_X(\mathfrak b f-Pf))=1-1=0$" both in the subtraction of an $h^1$ that vanishes and in the resulting value. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 12 of §2.
+:::
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, treats $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" without checking that $\linearsystem{\mathfrak b}$ and $\linearsystem{\mathfrak b+\mathfrak e}$ are base-point-free and that $\mathfrak b$ is nonspecial, which on an elliptic curve is the content of step [](#s1){.pf-ref}; for $e=-1$ its computation is garbled, "$h^0(L_X(C_0+\mathfrak b f-Pf))=h^0(L_C(\mathfrak E+\mathfrak B-P))-h^1(L_X(\mathfrak b f-Pf))=1-1=0$" both in the subtraction of an $h^1$ that vanishes and in the resulting value. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, has no entry for Exercise 12 of §2.
-:::
+
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), Theorem 3.9(3), printed p. 18, states for a decomposable ruled surface that the system of $C_0+\mfb f$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are. For $e\ge0$ on an elliptic base that is the criterion of part (b): both degrees must reach three, and $\deg(\mfb+\mfe)=m-e$ because $\deg\mfe=-e$, so the bound is $m\ge e+3$, as printed. The proof of that equivalence is not complete as written: it invokes the paper's Corollary 2.13, printed p. 14, whose criterion is $h^0(H-(P+Q)f)=h^0(H)-4$ for all $P,Q$ in the base. That condition subtracts two whole fibres, so it tests the two directrix curves and not a tangent direction transverse to a fibre; it is necessary for very ampleness, while the converse in the paper is an assertion --- from a point at which the map fails it produces a point $Q$ with $h^0(H-(P+Q)f)\ge h^0(H-Pf)-1$ without argument. Proposition 2.15, printed p. 15, rests on the same corollary; Proposition 2.14, printed p. 14, is the step that survives, very ampleness of $\mfb$ making the map an embedding off the section, and steps [](#s7){.pf-ref} and [](#s10){.pf-ref} reach the bound without it. The paper's Section 3 treats decomposable surfaces only, so the Atiyah surface with $e=-1$ lies outside it, and step [](#s8){.pf-ref} handles that case directly.
