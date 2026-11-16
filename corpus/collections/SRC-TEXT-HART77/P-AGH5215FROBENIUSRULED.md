@@ -126,21 +126,31 @@ audit:
     satisfies its two numerical conditions. What the sources establish: part
     (a) is Hartshorne 1971 Lemma 3.1, its identification with
     H^2(P^2,O(-4)), the composition with g^2 and the vanishing checked
-    monomial by monomial; part (b) is his Example 3.2, with its two
-    Riemann-Roch dimensions and its dimension count, whose garbled printed
-    diagram the card's step for the count replaces with the two printed
-    numbers and the kernel dimension; the curve of (c), its class and its
-    disjointness from the section are Xie's Example 3.1, and its purely
-    inseparable projection is his Lemma 4.4(iii) applied to Y^2 = -9 < 0.
+    monomial by monomial, the composition and the vanishing both printed on
+    p. 85; part (b) is his Example 3.2, with its two Riemann-Roch dimensions,
+    both printed on p. 85, and his dimension count, whose printed diagram is
+    the naturality square of f^* and whose count the card's step carries out
+    with those two numbers and the kernel dimension; the curve of (c), its
+    class and its disjointness from the section are Xie's Example 3.1, printed
+    p. 5 for that sentence, and its purely inseparable projection is his Lemma
+    4.4(iii) applied to Y^2 = -9 < 0.
     What no source establishes, and what the COMPLAINTS record of 2026-11-16
     names: the printed "nonsingular" of (c) has no published proof and can
     have none, since adjunction gives p_a(Y) = 4 while the normalization of Y
     is C of genus 3, and Xie's own assertion that his C' is smooth over k,
-    printed p. 6, is false for p = 3 and L of degree one by that same count. The
-    corrected statement, an integral Y with normalization C and one singular
-    point with delta = 1, rests on the card's adjunction step and on that of
-    the card's earlier passes; the events above stand as what those passes
-    did, and the erratum at the head of the solution is unchanged. Not
+    printed p. 5, is false for p = 3 and L of degree one by that same count.
+    What this event had wrong and now states correctly: the diagram Hartshorne
+    1971 prints there is clean, the mangling being the extraction's, and the
+    card no longer calls it garbled; and e = -1 for X was first argued here
+    from the book's Theorem V.2.15, which is a theorem about elliptic curves
+    and does not apply to C of genus 3. That argument is withdrawn and step s6
+    again carries the card's own normalization proof, H^0(C, E(-P)) = 0
+    through the connecting map, marked there as the card's own. The statement
+    of part (c) was also repaired in this pass, which the event of 2026-10-29
+    says was done but was not: the book prints "X contains a nonsingular curve
+    Y = 3C_0 - 3f, such that pi: Y -> C is purely inseparable", the word
+    "nonsingular" being false by step s9, and the statement now asks for an
+    integral curve of that class whose normalization is C. Not
     checked: no source beyond the two named and the book was read in this
     pass, and whether Y has exactly one singular point was not verified
     independently of delta = p_a - g = 1.
@@ -158,7 +168,7 @@ Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteris
 $$
 0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 $$
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains a nonsingular curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$ whose normalization is $C$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
 :::
@@ -180,7 +190,7 @@ C=V(F)\subseteq\PP^2
 $$
 is nonsingular, hence has genus $3$.
 
-The curve the exercise calls nonsingular cannot be, and step [](#s9){.pf-ref} shows where the printed word fails: for any integral curve $Y$ on the nonsingular surface $X$ in the class $3C_0-3f$, adjunction gives $p_a(Y)=4$, while a curve mapping purely inseparably of degree $3$ onto the genus-three curve $C$ has normalization $C$ itself. What the published construction supplies is an integral $Y\equiv3C_0-3f$ with normalization $C$, which is steps [](#s7){.pf-ref} and [](#s8){.pf-ref}; the singularity is step [](#s9){.pf-ref}.
+The exercise's part (c) is stated with $Y$ integral of normalization $C$ rather than nonsingular, and step [](#s9){.pf-ref} is why: for any integral curve $Y$ on the nonsingular surface $X$ in the class $3C_0-3f$, adjunction gives $p_a(Y)=4$, while a curve mapping purely inseparably of degree $3$ onto the genus-three curve $C$ has normalization $C$ itself, so no nonsingular curve carries that class. The published construction supplies an integral $Y\equiv3C_0-3f$ with normalization $C$, steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and the singular point is step [](#s9){.pf-ref}.
 
 ::: pf
 
@@ -213,7 +223,7 @@ $$
 of Frobenius on $\PP^2$ with multiplication by $g^2$.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 84: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
+Hartshorne 1971, Lemma 3.1, printed p. 85: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
 
 The thickening behind the map: pulling the displayed exact sequence back by the characteristic-$3$ Frobenius changes $\OO(-4)$ to $\OO(-12)$ and sends a class to its cube, and the restriction from the thickening cut out by $F^3$ to $C$ is multiplication by $F^{3-1}=F^2$ on the first term.
 :::
@@ -224,7 +234,7 @@ The thickening behind the map: pulling the displayed exact sequence back by the 
 The action of the $k$-linear Frobenius morphism on $H^1(C,\OO_C)$ is identically zero.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 84: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
+Hartshorne 1971, Lemma 3.1, printed p. 85: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
 
 Carried out term by term, as the sentence says: the six monomial types of $F^2=(x^3y+y^3z+z^3x)^2$ are $x^6y^2$, $y^6z^2$, $z^6x^2$, $x^3y^4z$, $x^4yz^3$ and $xy^3z^4$, and after multiplication by $(x^6y^3z^3)^{-1}$ they leave respectively the $x$-, $y$-, $z$-, $y$-, $z$- and $y$-exponent at least zero, so each is zero in the top cohomology; the other two basis monomials are the cyclic permutations of the first, and $F$ is cyclically symmetric. This proves part (a).
 :::
@@ -241,7 +251,7 @@ $$
 and the kernel of $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ has dimension $2$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$", printed p. 86. Both are Riemann--Roch on a curve of genus $3$,
+Hartshorne 1971, Example 3.2, printed p. 85, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$", printed p. 85. Both are Riemann--Roch on a curve of genus $3$,
 $$
 h^1-h^0=g-1-\deg,
 $$
@@ -260,7 +270,7 @@ $$
 with $f^*\xi=0$ in $H^1(C,\OO_C(-3P))$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 86: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The printed diagram between those two sentences is garbled, its arrows ending in a stray $0$ and a stray $f^*$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
+Hartshorne 1971, Example 3.2, printed p. 86: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The diagram he prints between those two sentences is the naturality square of $f^*$ over the two restriction maps to $H^1(X,\OO_X)$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
 :::
 
 :::
@@ -270,15 +280,23 @@ Let $\mathcal E$ be the extension determined by $\xi$:
 $$
 0\to\OO_C\to\mathcal E\to\OO_C(P)\to0,
 $$
-and $X=\PP(\mathcal E)$. Then $\deg\mathcal E=1$, the quotient gives a section $C_0$ with $\OO_X(C_0)\cong\OO_X(1)$ and $C_0^2=1$, and the invariant of $X$ is
+and $X=\PP(\mathcal E)$. Then $\deg\mathcal E=1$, the quotient gives a section $C_0$ with $\OO_X(C_0)\cong\OO_X(1)$ and $C_0^2=1$, the bundle $\mathcal E$ is normalized, and the invariant of $X$ is
 $$
 \boxed{e=-1}.
 $$
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, printed p. 5, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle.
+Hartshorne 1971, Example 3.2, printed p. 85, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, printed p. 5, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle; the section is $C_0$, with $C_0^2=1$ and $C_0^2=-e$.
 
-So the section has self-intersection $\deg\mathcal E=1$ and divisor class $\OO_X(1)$, and $C_0^2=-e=1$ gives $e=-1$ once the invariant is known to be $-1$. It is: $\mathcal E$ is indecomposable, a split extension $\OO_C\oplus\OO_C(P)$ being the zero class, so by the book's Theorem V.2.15, printed p. 377, $e=0$ or $-1$; and if $\mathcal E_0$ is the normalized model with $\mathcal E=\mathcal E_0\otimes\mathcal L$, then $\deg\det\mathcal E=-e+2\deg\mathcal L$ by (2.8.1), which is $1$; at $e=0$ that would need $\deg\mathcal L=\frac12$, so $e=-1$ and $\deg\mathcal L=0$, and $\mathcal E_0=\mathcal E$ is normalized. That is the model of the exercise.
+That the bundle is normalized is this card's own argument, and no source read carries it. Let $M$ be a line bundle of negative degree on $C$. If $\deg M\le-2$, then $M$ and $M(P)$ both have negative degree, so $\mathcal E\tensor M$ has no global section. If $\deg M=-1$ and $M\not\cong\OO_C(-P)$, then $M(P)$ is a nontrivial line bundle of degree $0$ and again has no section, while $M$ has none. Finally for $M=\OO_C(-P)$, the twisted sequence is $0\to\OO_C(-P)\to\mathcal E(-P)\to\OO_C\to0$, whose connecting map
+$$
+H^0(C,\OO_C)\to H^1(C,\OO_C(-P))
+$$
+sends $1$ to the extension class $\xi$, which is nonzero by step [](#s5){.pf-ref}; so the quotient section of the twisted sequence does not lift and $H^0(C,\mathcal E(-P))=0$. Hence $H^0(C,\mathcal E\tensor M)=0$ for every line bundle of negative degree, $\mathcal E$ is normalized, and
+$$
+e=-\deg\det\mathcal E=-\deg\mathcal E=-1
+$$
+by (2.8.1).
 :::
 
 :::
@@ -295,7 +313,7 @@ Xie, Example 3.1, printed pp. 5--6. Pulling the extension back by Frobenius give
 $$
 0\to\OO_C\to F^*\mathcal E\to\mathcal L^3\to0
 $$
-"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$"; the smoothness of $C'$ is step [](#s9){.pf-ref}, where it fails.
+"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$", printed p. 5; the smoothness of $C'$ is step [](#s9){.pf-ref}, where it fails.
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$, so
 $$
@@ -323,7 +341,7 @@ using $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$; so $f\restrictionof_Y$ is purely in
 No nonsingular curve on $X$ has class $3C_0-3f$; the curve $Y$ of step [](#s7){.pf-ref} is integral with normalization $C$ and has one singular point, of $\delta=1$.
 
 ::: pf-proof
-For an integral curve $Y$ on the nonsingular surface $X$, adjunction gives
+This step is this card's own, and no source read carries it: it is the adjunction count that decides the printed adjective. For an integral curve $Y$ on the nonsingular surface $X$, adjunction gives
 $$
 p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
 $$
@@ -335,7 +353,7 @@ On the other hand $Y\cdot f=3$, so $\pi\restrictionof_Y$ has degree $3$, and it 
 $$
 K(C)\subset K(Y)\subset K(C)^{1/3}
 $$
-with $[K(C)^{1/3}:K(C)]=3=[K(Y):K(C)]$, so $K(Y)=K(C)^{1/3}$ and $Y$ is birational to the Frobenius twist $C^{(3)}$ of $C$. That twist is the plane quartic $V(x^3y+y^3z+z^3x)$ again, $C$ being defined over the prime field, and it has genus $3$. So the normalization of $Y$ has genus $3$ while $p_a(Y)=4$, and $Y$ is singular with $\delta=p_a-p_a(\tilde Y)=1$. A nonsingular $Y$ in this class would have genus $4$ and, being a curve of degree $3$ over $C$, the function field $K(C)^{1/3}$ of genus $3$; the printed \"nonsingular\" cannot hold. Xie's sentence that $C'$ is smooth over $k$, printed p. 6, is false for this $p$ and this $L$, by the same count: his $C'$ is this $Y$.
+with $[K(C)^{1/3}:K(C)]=3=[K(Y):K(C)]$, so $K(Y)=K(C)^{1/3}$ and $Y$ is birational to the Frobenius twist $C^{(3)}$ of $C$. That twist is the plane quartic $V(x^3y+y^3z+z^3x)$ again, $C$ being defined over the prime field, and it has genus $3$. So the normalization of $Y$ has genus $3$ while $p_a(Y)=4$, and $Y$ is singular with $\delta=p_a-p_a(\tilde Y)=1$. A nonsingular $Y$ in this class would have genus $4$ and, being a curve of degree $3$ over $C$, the function field $K(C)^{1/3}$ of genus $3$; the printed \"nonsingular\" cannot hold. Xie's sentence that $C'$ is smooth over $k$, printed p. 5, is false for this $p$ and this $L$, by the same count: his $C'$ is this $Y$.
 
 This $Y$ is the integral curve of the corrected statement, whose normalization is $C$.
 :::
@@ -350,9 +368,9 @@ $$
 satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, but is not ample.
 
 ::: pf-proof
-Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 382, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
+Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 382, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
 
-For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 6; in intersection numbers that is $C_0\cdot Y=0$, consistently with $(3C_0-3f)\cdot C_0=3-3=0$. Since $Y$ is an integral curve on $X$,
+For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot Y=0$, consistently with $(3C_0-3f)\cdot C_0=3-3=0$. Since $Y$ is an integral curve on $X$,
 $$
 D\cdot Y=2\,C_0\cdot Y=0,
 $$
