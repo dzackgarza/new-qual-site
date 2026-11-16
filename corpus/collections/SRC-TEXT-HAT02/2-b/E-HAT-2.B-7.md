@@ -54,7 +54,22 @@ audit:
     Sets 1--5, the UCR Math 205B help file, May, Bredon, Maxim) and in Hatcher's text and errata;
     the retained papers on the horned sphere (Alexander 1924, Bing 1953) treat the undoubled
     construction.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 batch. Checked against the book: Exercise 7 of §2.B, printed p. 177 with the doubled
+    building block beside it, and Hatcher's printed construction of Example 2B.2 on printed
+    pp. 170--172, which the doubling repeats with four horns per old handle. The card's model is
+    checked internally: each old meridian becomes $[a_1,a_2][a_3,a_4]$, so stage $n$ has $4^n$
+    handles, each bonding map is injective on its free factor, and the limit group is nonabelian
+    with trivial abelianization. The identification of the model with Hatcher's figure is the
+    card's reading of that figure and is attributed to no source. Repair: the card carried a
+    second `---` line after its front matter, removed. The remark now names every source read
+    and what each lacks: Hatcher's text and errata, Bredon's printed p. 232 with Figure IV-9
+    (the horned disk, referred to Rushing), Alexander 1924, Bing 1953, and the retained solution
+    sets, none of which analyses the doubled block. Not claimed: a published analysis of the
+    doubled block.
 ---
 
 ::: {.problem}
@@ -163,4 +178,6 @@ The limiting compact set is still a topological $3$-ball: the same shrinking-hor
 
 ::: {.remark title="Source"}
 Hatcher, *Algebraic Topology* (2002), Example 2B.2 and its printed construction, pp. 170--172: the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 177, with the figure of the doubled building block beside it; the doubled-handle case is that computation with four horns per handle.
+
+No published analysis of the doubled block was located, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets (Sam, Li, DeMason, Poulsen, Stanford Math 215C Solution Sets 1--5, the UCR Math 205B help file, the Math 538 homework set) do not solve this exercise. The analysis above is therefore the card's own, checked against Hatcher's printed construction.
 :::
