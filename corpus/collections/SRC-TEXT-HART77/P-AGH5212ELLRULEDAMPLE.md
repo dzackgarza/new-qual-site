@@ -193,7 +193,7 @@ the complete system $\linearsystem{L}$ has no base points.
 ::: pf-proof
 Fuentes, Proposition 1.3, printed pp. 3--4, over a decomposable surface. Its criterion is that $\linearsystem{X_0+\mfb f}$ is base-point-free exactly when $\mfb$ and $\mfb+\mfe$ are, which is Proposition 3.4, printed pp. 16--17, of [2], cited there as [2, Proposition 2.3]. Splitting on $\mfe$ the paper proves two cases: if $\mfe\sim0$, then $\linearsystem{X_0+\mfb f}$ is base-point-free if and only if $\deg\mfb\ge2$ or $\mfb\sim0$; and if $\mfe\not\sim0$, if and only if $\deg\mfb\ge e+2$, or $\mfb\sim-\mfe$ with $e\ge2$. The reductions are Lemma 1.2 of the same paper, which is step [](#s1){.pf-ref}, together with $e=-\deg\mfe\ge0$.
 
-His case (d) prints "since $\deg(\mathfrak b)\le0$" where $\deg(\mfe)\le0$ is meant: a decomposable normalized bundle is $\OO_C\oplus\OO_C(-\mfe)$ with $\deg(-\mfe)\le0$ by Theorem 3.2(1) of [2], printed p. 15, so that $e\ge0$ and $\deg(\mfb+\mfe)=m-e$, which is at least $2$ once $m\ge e+2$.
+His case (d) prints "since $\deg(\mathfrak b)\le0$" where $\deg(\mfe)\le0$ is meant: a decomposable normalized bundle is $\OO_C\oplus\OO_C(\mfe)$ with $\deg(\mfe)\le0$ by Theorem 3.2(1) of [2], printed p. 15 and Remark 3.3, printed p. 16, so that $e\ge0$ and $\deg(\mfb+\mfe)=m-e$, which is at least $2$ once $m\ge e+2$.
 
 With $m\ge e+2$: if $\mfe\sim0$ then $e=0$ and $m\ge2$, which is the first case; otherwise $m\ge e+2$, which is the second. Hence $\mfb$ and $\mfb+\mfe$ are base-point-free, and so is $\linearsystem{L}$.
 :::
@@ -247,7 +247,7 @@ m\ge e+3.
 $$
 
 ::: pf-proof
-Fuentes, Proposition 2.11, printed p. 15, with its proof. By the very-ampleness criterion of [2], printed as Corollary 2.13, pp. 14--15, with Corollary 2.4, p. 9, $\linearsystem{L}$ is very ample exactly when $\linearsystem{L}$ and every $\linearsystem{L-Pf}$ are base-point-free; by Proposition 2.10, step [](#s3){.pf-ref}, that happens exactly when $m\ge e+2$ and $\deg(\mfb-P)=m-1\ge e+2$, that is $m\ge e+3$. The paper writes the conclusion in the "when" form; the equivalence gives both directions, the necessity coming from applying Proposition 2.10 to $\linearsystem{L}$ and to $\linearsystem{L-Pf}$.
+Fuentes, Proposition 2.11, printed p. 15, with its proof. By the very-ampleness criterion of [2], printed as Corollary 2.13, pp. 14--15, with Corollary 2.4, p. 9, $\linearsystem{L}$ is very ample exactly when $\linearsystem{C_0+\mfb f}$ and every $\linearsystem{C_0+(\mfb-P)f}$ are base-point-free; by Proposition 2.10, step [](#s3){.pf-ref}, that happens exactly when $m\ge e+2$ and $\deg(\mfb-P)=m-1\ge e+2$, that is $m\ge e+3$. The paper writes the conclusion in the "when" form; the equivalence gives both directions, the necessity coming from applying Proposition 2.10 to $\linearsystem{C_0+\mfb f}$ and to $\linearsystem{C_0+(\mfb-P)f}$.
 :::
 
 :::

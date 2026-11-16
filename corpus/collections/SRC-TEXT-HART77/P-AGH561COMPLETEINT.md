@@ -39,6 +39,30 @@ audit:
     del Pezzo surfaces. Checked the three zero cases have trivial canonical
     bundle and H^1(O_X)=0 by the complete-intersection cohomology result,
     hence are K3 surfaces of polarization degrees 4, 6, and 8.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Read for issue #121 and cited the published solution on the card: Yang
+    Pi-Yeh, solution 5.6.1, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (folio confirmed on the PDF's
+    own text layer), read in tmp/sources/lfwin-hartshorne-solutions.md and
+    checked against the exercise at Hartshorne V.6, printed p. 423 (PDF p. 438
+    of tmp/sources/hartshorne-1977-algebraic-geometry.md, printed = PDF
+    minus 15), and against Theorems 6.1--6.5 on printed pp. 421--422. Each step
+    of the solution now names the source of its statement: the adjunction
+    formula (Hartshorne II.8.4, and Yang's opening line), the six tuples
+    (Yang's two enumerations, with the bounds n < 5 and n <= 5 made explicit),
+    the del Pezzo placement (Theorem 6.1), the K3 placement (Theorem 6.3), and
+    the general-type conclusion (Theorem 6.5). Added: the paragraph that reads
+    kappa off the sign of a in omega = O(aH), which is what makes the two
+    enumerations exhaustive and excludes kappa = 1 (Theorem 6.4). Corrected on
+    the remark: Egbert's V.6.1 entry, printed p. 303, samples cases and does
+    not reach (3;4) or (4;2,2), so it is not a complete solution of this
+    exercise, and Yang's 5.6.1 is. Not checked: nothing beyond the enumerated
+    list was recomputed; the del Pezzo and K3 identifications are the card's
+    earlier ones, re-read but not re-derived in this pass.
+
 ---
 
 ::: {.problem}
@@ -82,6 +106,12 @@ or equivalently
 $$
 K_X\sim aH.
 $$
+
+This is Hartshorne's adjunction formula (II, 8.4) for a complete
+intersection and is the opening line of Yang Pi-Yeh's solution 5.6.1,
+printed p. 115 of his set (read in
+`tmp/sources/lfwin-hartshorne-solutions.md`), who writes it as
+$\omega\cong\OO_X(\sum d_i-n-1)$ with the reference 2.8.4.
 :::
 
 :::
@@ -97,6 +127,10 @@ K_X\sim aH
 $$
 is ample. Every ample divisor is big, so $K_X$ is big. Therefore $X$ is
 of general type.
+
+Hartshorne's Theorem 6.5, printed p. 422, identifies surfaces of general
+type as those $X$ with $\kappa(X)=2$, and $\kappa(X)=2$ is exactly the case
+$a>0$ here, since $\omega_X\cong\OO_X(aH)$ with $H$ ample.
 :::
 
 :::
@@ -166,6 +200,12 @@ $$
 (d_1,d_2,d_3)=(2,2,2).
 $$
 There are no possibilities for $n\ge6$.
+
+The bound $n\le5$ and the six tuples are Yang's, printed p. 115, who
+splits them into $\sum_i d_i-n-1<0$, giving $(3;2)$, $(3;3)$, $(4;2,2)$,
+and $\sum_i d_i-n-1=0$, giving $(3;4)$, $(4;2,3)$, $(5;2,2,2)$; his
+bound is $n<5$ in the first case and $n\le5$ in the second, the first
+following from $2(n-2)\le n$.
 :::
 
 :::
@@ -215,6 +255,11 @@ quadric is $\PP^1\times\PP^1$, while the cubic surface and the degree-$4$
 del Pezzo surface are the familiar rational del Pezzo surfaces. Hence
 these cases lie in the $\kappa=-\infty$ part of the surface
 classification.
+
+Yang states the same three tuples at printed p. 115 as the case
+$\omega\cong\OO_X(\sum d_i-n-1)$ with $\sum d_i-n-1<0$, and places them
+through Hartshorne's Theorem 6.1, printed p. 421, which identifies
+$\kappa=-1$ with $\linearsystem{12K}=\emptyset$ and with $X$ rational or ruled.
 :::
 
 :::
@@ -271,6 +316,11 @@ $$
 H^2=\deg X=\prod_i d_i,
 $$
 namely $4$, $6$, and $8$.
+
+Yang states these three tuples at printed p. 115 as the case
+$\sum d_i-n-1=0$ and records that they are all K3 surfaces; Hartshorne's
+Theorem 6.3, printed p. 421, is what places them there, a K3 surface being
+one with $K=0$ and $q=0$, hence $p_a=p_g=1$.
 :::
 
 :::
@@ -285,6 +335,13 @@ Step [](#exceptional-tuples-enumerated){.pf-ref} exhausts every tuple for which 
 not in that list has $a>0$, and step [](#positive-a-general-type){.pf-ref} makes $X$ of general type.
 Among the six exceptions, step [](#negative-a-del-pezzo){.pf-ref} classifies the three cases with
 $a<0$, and step [](#zero-a-k3){.pf-ref} classifies the three cases with $a=0$.
+
+Since $\omega_X\cong\OO_X(aH)$ with $H$ ample, the Kodaira dimension of
+$X$ is $-1$, $0$ or $2$ according as $a<0$, $a=0$ or $a>0$, and never $1$:
+the case $a<0$ makes $-K_X$ ample, the case $a=0$ makes $\omega_X$ trivial,
+and the case $a>0$ makes $K_X$ ample. A complete intersection surface of
+the kind considered is therefore never of the elliptic kind of Hartshorne's
+Theorem 6.4, printed p. 422.
 :::
 
 :::
@@ -301,5 +358,11 @@ general type.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303, text version `tmp/sources/hartshorne-solutions-egbert.md` (the canonical class $K_X=(\sum d_i-n-1)H$ of a complete-intersection surface and the negative or zero canonical cases).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.1, printed p. 423, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15). Theorems 6.1--6.5, printed pp. 421--422, are the classification the exercise asks the exceptions to be placed in: $\kappa=-1$ for the rational and ruled surfaces, $\kappa=0$ for the K3, Enriques, abelian and hyperelliptic surfaces, $\kappa=1$ for the elliptic ones, and $\kappa=2$ for the surfaces of general type.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.1, printed p. 115 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), proves the exercise. He reads $\omega\cong\OO_X(\sum d_i-n-1)$ off adjunction (II, 8.4); from $\kappa(X)=-1$ he gets $\sum d_i-n-1<0$, and $d_i\ge2$ then gives $n+1>\sum d_i\ge2(n-2)$, so $n<5$ and the tuples are $(3;2)$, $(3;3)$, $(4;2,2)$; from $\kappa(X)=0$ he gets $\sum d_i-n-1=0$, so $n\le5$ and the tuples are $(3;4)$, $(4;2,3)$, $(5;2,2,2)$, all K3; $\kappa(X)=1$ he rules out; and the remaining tuples are of general type.
+
+Two of his lines are compressed and are made explicit in the steps above. First, $\kappa$ is read off the sign of $a$ in $\omega_X\cong\OO_X(aH)$ with $H$ ample, which is why the two enumerations are exhaustive; his $n<5$ and $n\le5$ are the bounds $2(n-2)\le n$ and $2(n-2)\le n+1$. Second, his $\kappa=1$ paragraph argues through $\omega^2=0$, which here reads $a^2H^2=0$, that is $a=0$ --- the $\kappa=0$ case he has just placed among K3 surfaces --- and his identification of $\kappa=1$ with an elliptic surface is Hartshorne's Theorem 6.4.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, samples cases instead of listing them: the K3 case $(3;4)$ and the del Pezzo case $(4;2,2)$ are missing and nothing shows the sample exhaustive, so his entry is not used here.
 :::
