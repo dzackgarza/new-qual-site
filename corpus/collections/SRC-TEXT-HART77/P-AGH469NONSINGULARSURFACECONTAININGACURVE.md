@@ -220,6 +220,28 @@ audit:
     normality argument for pi_*O(-E) = I_X; it remains readable at commit
     574af010f7, and with it the Ratliff-Rush correction that its step s6
     needed. Nothing in the problem statement changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's report, and the record of what
+    the solution-written event of this date above left out. Commit 8f37cf0376
+    withdrew the card's own regularity step, which asserted that X is
+    m-1-regular in the sense of Castelnuovo-Mumford for all large m and read
+    the exercise off the second clause of Theorem 3.3, and the card now
+    verifies only the hypothesis of the first clause and takes the passage
+    from "some degree" to every d >> 0 from the printed first sentence of
+    Dan-Kaur's proof of Theorem 1.1, printed p. 4. Corrected here, that event
+    not being rewritable: its "step conclusion from the second clause of
+    Theorem 3.3 at the same page", which the card no longer does, and its
+    "Step regularity is the card's and says so", a step the card no longer
+    has. No event recorded that withdrawal until this one. Checked in this
+    pass: the card's audit trail in git, commit by commit, and the text of
+    steps hypothesis, transcribed-theorem and conclusion. Not checked:
+    nothing of the proof was re-derived, and Kleiman-Altman's own Theorem 7,
+    as before, is not in tmp/sources and was read only in Dan-Kaur's
+    restatement, so the characteristic hypotheses of the original remain
+    unverified.
 ---
 
 ::: {.problem}
