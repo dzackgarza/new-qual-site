@@ -33,6 +33,24 @@ audit:
     A, the induced affine-variety morphism agreeing with f on V_0, and t(f)
     = F on each affine chart. Not checked: the converse direction in the
     notes for nonaffine varieties beyond the covering argument quoted.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (c) now follows Haiman's proof as its own two steps rather than
+    citing it: step haiman-local-description is the first paragraph of 8.10,
+    PDF p. 19, resting on the identity O(X) = O_X(X) of 8.9 on PDF p. 18,
+    and step haiman-affine-case is the rest of 8.10, PDF pp. 18--19. The
+    steps that followed, which build f from F chart by chart, are kept and
+    now read as the details of those two steps; map-surjective says so. The
+    notes carry no printed folio, so PDF pages are given, as the earlier
+    event noted. Read against the book: Hartshorne II Ex. 2.15(c) on
+    printed p. 81 asks for the bijection onto Hom of k-schemes, which
+    Haiman's Theorem 8.8 gives for the schemes t(V), t(W) of II.2.6; the
+    hypothesis that k be algebraically closed is Hartshorne's, and Haiman's
+    too. Not checked: Haiman's 8.2--8.7, on which his 8.8 rests, beyond
+    reading that the soberization of a variety is Spec of its coordinate
+    ring on the affine charts this card uses.
 ---
 
 ::: {.problem}
@@ -50,6 +68,8 @@ is bijective.
 :::
 
 ::: {.solution}
+
+Part (c) is Mark Haiman's proof, *Varieties as Schemes* (Berkeley Math 256, March 2019), Theorem 8.8 with its proof in 8.10, text version `tmp/sources/haiman-varieties-as-schemes.md`. The notes carry no printed folio, so the places are cited by section and by PDF page of the copy at `tmp/sources/haiman-varieties-as-schemes.pdf`: the theorem on PDF p. 18, its proof on PDF pp. 18--19, and the identity $\OO(X)=\OO_X(X)$ that it uses in 8.9 on PDF p. 18. Steps [](#haiman-local-description){.pf-ref} and [](#haiman-affine-case){.pf-ref} are its two steps; the steps after them supply, for this statement, the details Haiman leaves to the reader.
 
 ::: pf
 
@@ -202,6 +222,36 @@ The injection is therefore a $k$-algebra isomorphism
 $$
 \kappa(Q)\cong k.
 $$
+:::
+
+:::
+
+::: {.pf-step #haiman-local-description}
+A morphism of varieties is the same thing as a compatible system of morphisms between affine open subvarieties.
+
+::: pf-proof
+This is the first paragraph of Haiman's proof of Theorem 8.8, §8.10, PDF p. 19.
+
+By §8.9, PDF p. 18, every global regular function on a classical affine variety is a polynomial, $\OO(X)=\OO_X(X)$; consequently, for a polynomial function $f$ on an affine variety $X$, the open subspace $X_f$ is again an affine variety with coordinate ring $\OO(X)_f$. Hence the open subsets of a classical variety that are isomorphic to affine varieties form a base of its topology.
+
+To give a morphism $f:X\to X'$ of classical varieties is therefore equivalent to giving a system of compatible morphisms $f_U:U\to W$ from open affine subvarieties $U$ covering $X$ to open affine subvarieties $W\subseteq X'$, the compatibility being agreement on the intersections, which are covered by affine opens in their turn.
+
+Morphisms $g:Y\to Y'$ of schemes have the same local description, since affine open subschemes form a base of the topology of a scheme.
+:::
+
+:::
+
+::: {.pf-step #haiman-affine-case}
+For affine varieties the morphisms correspond bijectively to $k$-algebra homomorphisms of coordinate rings, and the same holds for affine schemes, so for affine $V$ and $W$ the map $\Hom(V,W)\to\Hom(t(V),t(W))$ is bijective.
+
+::: pf-proof
+This is the rest of Haiman's proof of Theorem 8.8, §8.10, PDF pp. 18--19.
+
+Let $X$ and $X'$ be classical affine varieties over $k$ with coordinate rings $R=\OO(X)$ and $R'=\OO(X')$. By §8.9 the canonical homomorphism $\OO(X)\to\OO_X(X)$ is an isomorphism, so a morphism $f:X\to X'$ is exactly a ringed-space morphism into an affine scheme over $k$, that is, a $k$-algebra homomorphism $R'\to R$; the correspondence is functorial because it is the functor $(X,\OO_X)\mapsto\OO_X(X)$.
+
+For affine $k$-schemes $Y=\Spec R$ and $Y'=\Spec R'$ the same argument, now by the universal property of the spectrum, gives a functorial bijection between $k$-morphisms $Y\to Y'$ and $k$-algebra homomorphisms $R'\to R$.
+
+Composing one bijection with the inverse of the other, and noting that $t$ carries the affine variety with coordinate ring $R$ to $\Spec R$, gives the bijection for affine $V$ and $W$.
 :::
 
 :::
@@ -402,10 +452,9 @@ $$
 is surjective.
 
 ::: pf-proof
-Given any scheme morphism $F$, steps [](#f-sends-closed-points-set-map){.pf-ref}, [](#f-continuous){.pf-ref}, [](#affine-neighborhoods-exist){.pf-ref}, [](#f-restriction-induced-by-ring-hom){.pf-ref}, [](#f0-agrees-with-f-on-v0){.pf-ref}, [](#f-is-morphism-of-varieties){.pf-ref} and [](#tf-equals-f-original){.pf-ref} construct a variety morphism $f$ satisfying
-$$
-t(f)=F.
-$$
+In Haiman's form, §8.10, PDF p. 19: by step [](#haiman-local-description){.pf-ref} a variety morphism is a compatible system of morphisms of affine open subvarieties, and a scheme morphism has the same local description, so a scheme morphism $F$ restricts on each affine chart to a morphism of affine schemes over $k$; by step [](#haiman-affine-case){.pf-ref} each of those comes from a morphism of affine varieties, and compatibility on overlaps, which are again covered by affine opens, glues the pieces.
+
+The steps that follow carry out that gluing for the present statement, since the closed points of $t(V)$ are the points of $V$ with residue field $k$: steps [](#f-sends-closed-points-set-map){.pf-ref} and [](#f-continuous){.pf-ref} extract the underlying map $f$, step [](#affine-neighborhoods-exist){.pf-ref} produces affine neighbourhoods with $f(V_0)\subseteq W_0$, step [](#f-restriction-induced-by-ring-hom){.pf-ref} is the affine-case bijection of step [](#haiman-affine-case){.pf-ref} and step [](#f0-agrees-with-f-on-v0){.pf-ref} reads it off on closed points, step [](#f-is-morphism-of-varieties){.pf-ref} glues the pieces to a morphism of varieties, and step [](#tf-equals-f-original){.pf-ref} checks that the glued morphism induces $F$ itself.
 :::
 
 :::
@@ -453,7 +502,7 @@ Surjectivity is step [](#map-surjective){.pf-ref} and injectivity is step [](#ma
 :::
 
 ::: pf-qed
-Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-field-k){.pf-ref}, [](#residue-field-k-implies-closed){.pf-ref} and [](#closed-iff-residue-field-k){.pf-ref} prove part (a), step [](#morphism-preserves-residue-field-k){.pf-ref} proves part (b), and steps [](#f-sends-closed-points-set-map){.pf-ref}, [](#f-continuous){.pf-ref}, [](#affine-neighborhoods-exist){.pf-ref}, [](#f-restriction-induced-by-ring-hom){.pf-ref}, [](#f0-agrees-with-f-on-v0){.pf-ref}, [](#f-is-morphism-of-varieties){.pf-ref}, [](#tf-equals-f-original){.pf-ref}, [](#map-surjective){.pf-ref}, [](#map-injective){.pf-ref} and [](#t-fully-faithful){.pf-ref} prove part (c).
+Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-field-k){.pf-ref}, [](#residue-field-k-implies-closed){.pf-ref} and [](#closed-iff-residue-field-k){.pf-ref} prove part (a), step [](#morphism-preserves-residue-field-k){.pf-ref} proves part (b), and steps [](#haiman-local-description){.pf-ref}, [](#haiman-affine-case){.pf-ref}, [](#f-sends-closed-points-set-map){.pf-ref}, [](#f-continuous){.pf-ref}, [](#affine-neighborhoods-exist){.pf-ref}, [](#f-restriction-induced-by-ring-hom){.pf-ref}, [](#f0-agrees-with-f-on-v0){.pf-ref}, [](#f-is-morphism-of-varieties){.pf-ref}, [](#tf-equals-f-original){.pf-ref}, [](#map-surjective){.pf-ref}, [](#map-injective){.pf-ref} and [](#t-fully-faithful){.pf-ref} prove part (c).
 :::
 
 :::
@@ -464,6 +513,5 @@ Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-fi
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §2, Exercise 2.15, PDF pp. 16--17, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) a closed point of $t(V)$ is a maximal ideal and the Nullstellensatz gives residue field $k$; (b) the residue-field maps form the tower $k\to k(f(P))\to k(P)=k$; (c) $f$ sends closed points to closed points, and then: "This is indeed a map of varieties, if we look at the corresponding affine charts. Now we want to show that $f$ is the same as the map induced from $f_c$. Basically we need to show that if two maps of schemes $\Spec A\to\Spec B$ agree on closed points, then they induce the same maps at the level of schemes ... This follows from the fact that there is a functorial embedding $A\hookrightarrow\prod_{\operatorname{maxSpec}A}k$".
 The proof above is the same route with the chart step carried out rather than asserted: for each $P$ it produces affine neighbourhoods with $f(V_0)\subseteq W_0$, shows that $F$ is there the affine-variety morphism of the $k$-algebra map $B\to A$, obtains continuity and regularity, and concludes $t(f)=F$; in (a) it also proves the converse direction through $\dim Z=\trdeg_k k(Z)$. Part (c), the surjectivity, has no complete published solution in the retained sets; the sets searched are recorded in `COMPLAINTS.md`.
 
-There is one outside them. Mark Haiman, *Varieties as Schemes* (Math 256, Berkeley, March 2019), proves the full equivalence rather than the exercise. Section 8.8 states it: "Let $k$ be an algebraically closed field. The constructions in 8.2 and 8.3 give a functorial equivalence between the categories of classical varieties and reduced [algebraic] schemes over $k$. Specifically, morphisms $f:X\to X'$ between classical varieties are in functorial one-to-one correspondence with $k$-morphisms $g:Y\to Y'$ between the schemes associated to them by the soberization construction in 8.2." The proof is 8.10 on the same and the next page: by 8.9 the open subsets of a variety that are isomorphic to affine varieties form a base of the topology, so a morphism is a compatible system of morphisms of affine open subvarieties, and on affine varieties morphisms correspond bijectively to $k$-algebra homomorphisms of coordinate rings. That bijection is exactly the surjectivity and injectivity of the card's map, with the affine inverse construction of Hartshorne's II.2.6 as the functor; the notes carry no printed folio on those pages, so the section numbers are cited.
-Agree on (a) and (b); (c) is the card's own proof, and the same statement is proved in full in the notes cited.
+There is one outside them, and part (c) of the proof above is now that source's argument rather than the card's own. Mark Haiman, *Varieties as Schemes* (Math 256, Berkeley, March 2019), text version `tmp/sources/haiman-varieties-as-schemes.md`, proves the full equivalence rather than the exercise. Theorem 8.8, PDF p. 18, states it: "Let $k$ be an algebraically closed field. The constructions in §8.2 and §8.3 give a functorial equivalence between the categories of classical varieties and reduced affine schemes over $k$. Specifically, morphisms $f:X\to X'$ between classical varieties are in functorial one-to-one correspondence with $k$-morphisms $g:Y\to Y'$ between the schemes associated to them by the soberization construction in §8.2." Its proof is 8.10, PDF pp. 18--19, and it has two steps, both reproduced as steps of the solution above: that on a classical variety the open subsets isomorphic to affine varieties form a base of the topology, so that a morphism is a compatible system of morphisms of affine open subvarieties, schemes having the same local description; and that for affine varieties the morphisms correspond bijectively to $k$-algebra homomorphisms of coordinate rings, which is the same statement for affine schemes. Step [](#haiman-local-description){.pf-ref} is the first and step [](#haiman-affine-case){.pf-ref} the second; the identity $\OO(X)=\OO_X(X)$ they use is Haiman's 8.9 on PDF p. 18. Haiman's correspondence is between $V$ and $\Spec$ of its coordinate ring, which is the scheme $t(V)$ built in Hartshorne's II.2.6, so the bijection of part (c) is his. What the card adds is the verification of his two steps for this statement, and parts (a) and (b), on which the identification of the closed points of $t(V)$ with the points of $V$ rests; the notes carry no printed folio, so PDF pages are cited. Agree with the source throughout: (c) is its argument, transcribed.
 :::
