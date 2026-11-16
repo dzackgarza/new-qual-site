@@ -206,6 +206,109 @@ def test_a_dated_audit_event_is_append_only(repo: Path, monkeypatch: pytest.Monk
     assert git(repo, "show", "HEAD:corpus/one card.md") == in_flight
 
 
+def test_a_dated_event_restored_to_its_earlier_text_is_accepted(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """QUAL-11 restores what it protects: the text an event carried on its own day.
+
+    The repository's own historical commits rewrote dated events in place, and the
+    correction QUAL-11 asks for is the event as it stood. An event restored to the
+    text it carried on its day is that correction, not a rewrite of it, and the gate
+    has to tell the two apart: the text it is restoring no longer stands in the text
+    the rewrite left, so comparing against that text alone refuses the repair.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the event on its day")
+
+    rewritten = RECORDED.replace("matches the printed exercise", "matches the printed statement")
+    card.write_text(rewritten)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite the record in place")
+
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 0, result.stderr
+    assert git(repo, "show", ":corpus/one card.md") == RECORDED
+
+
+def test_a_dated_event_with_new_text_is_still_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The restoration rule admits only text that stood in an earlier revision.
+
+    Text a session writes today belongs to a new event, so a dated event may not take
+    it, and the gate still refuses the rewrite it was built to refuse.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the event on its day")
+
+    card.write_text(RECORDED.replace("matches the printed exercise", "matches the printed statement"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 1, result.stdout
+    assert "the source-checked event by claude dated 2026-11-11" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def test_a_dated_complaints_record_restored_to_its_earlier_text_is_accepted(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The COMPLAINTS records are held to the same rule, and take the same repair."""
+    path = repo / "COMPLAINTS.md"
+    path.write_text(COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-10T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record the finding on its day")
+
+    path.write_text(COMPLAINTS.replace("The observation.", "The corrected observation."))
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite the record in place")
+
+    path.write_text(COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 0, result.stderr
+    assert git(repo, "show", ":COMPLAINTS.md") == COMPLAINTS
+
+
+def test_a_dated_event_may_quote_the_symbols_of_its_day(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """STYLE-04 governs authored prose, and a dated event is not authored now.
+
+    An event records a symbol as the session of its day wrote it, and QUAL-11 forbids
+    rewriting it; a style rule applied to it would demand exactly that rewrite. The
+    card's body is authored prose and is still held to the rule.
+    """
+    barred = RECORDED.replace(
+        "The statement matches the printed exercise.",
+        "The local group is $H_n(M|x;R)$, Hatcher's notation on printed p. 234.",
+    )
+    card = repo / "corpus/one card.md"
+    card.write_text(barred)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    accepted = check(repo, "check-staged")
+    assert accepted.returncode == 0, accepted.stderr
+
+    card.write_text(barred + "\nThen $|x| \\le 1$.\n")
+    git(repo, "add", "corpus/one card.md")
+    refused = check(repo, "check-staged")
+    assert refused.returncode == 1, refused.stdout
+    assert "is written with the semantic macro for its meaning" in refused.stderr
+
+
 def test_a_dated_complaints_record_is_append_only(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """Issue #147: a dated COMPLAINTS record is a record, so a correction is a new record.
 
