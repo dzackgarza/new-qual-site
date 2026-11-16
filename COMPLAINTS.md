@@ -813,7 +813,7 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 - **IV.6.9 is closed on Dan--Kaur's printed statement.** Their Theorem 3.3, printed p. 3, is Kleiman--Altman's Theorem 7: for a projective subscheme $Z\subseteq\PP^{2n+1}$ with $\dim Z_e+e<2n+1$ for every $e>0$ with $Z_e\ne\emptyset$ there is a smooth hypersurface containing $Z$. For the exercise's $X$ inside $\PP^3=\PP^{2n+1}$ with $n=1$ the curve is nonsingular, so $Z_1=X$ and $\dim Z_1+1=2<3$, which is the hypothesis, verified on the card from Notation 3.2 on the same page; and their proof of Theorem 1.1 draws exactly the exercise from it in its first sentence, printed p. 4: "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3." **Nothing in IV.6.9 is left without a published proof.** The card's own regularity step, which asserted $X$ to be $m-1$-regular for all large $m$ and read the exercise off the second clause of Theorem 3.3, was withdrawn by commit `8f37cf0376` and the printed p. 4 sentence put in its place; the correction of that record is stated in the card's own event of this date. Kleiman--Altman's own Theorem 7 was not read, not being in `tmp/sources`, so the characteristic hypotheses of the original are unverified; Dan--Kaur state none and their §2 works over an algebraically closed field.
 - **Two commit-message defects of this batch, recorded because no pushed history can state them.** `P-AGH469NONSINGULARSURFACECONTAININGACURVE` was first committed as `67cf232856`, which swept in a sibling's staged `COMPLAINTS.md`; that commit was amended and no pushed history holds `67cf232856`, the card's commit being `6c1abdbe0a`. No amend was made after it, and the message that names the SHA here is the only record of it. The rewrite of `P-AGH4422FAMILYOVERAFFINELINE` landed inside `1d0129567a`, whose message names V.4.11, because a sibling session committed the shared index while the card was in the tree; the card's content at that commit is the intended one and only the message is wrong.
 
-**Defect of this batch, recorded because no pushed history can state it.** Commit `06337d421b`, whose message names only the three records above, carried besides them the uncommitted records of the parallel #121 batch on IV.2.2, IV.2.3 and IV.3.4, which another chat of this date had written into this file and not yet committed: they were in the working file at the moment the path was staged, and the shared index carried them into that commit. No amend was made, and their text is intact there. Only the message is wrong, and this record is the one that states what the commit holds besides what it names. The same thing happened in the other direction: the first text of this paragraph, staged and not yet committed, was carried into `f32e7f5159`, whose message names only `P-AGH537EMBRESOLUTION`. Two chats write this file through one index, so each of those two commits names one chat's work and holds both.
+**Defect of this batch, recorded because no pushed history can state it.** Commit `06337d421b`, whose message names only the three records above, carried besides them the uncommitted records of the parallel #121 batch on IV.2.2, IV.2.3 and IV.3.4, which another chat of this date had written into this file and not yet committed: they were in the working file at the moment the path was staged, and the shared index carried them into that commit. No amend was made, and their text is intact there. Only the message is wrong, and this record is the one that states what the commit holds besides what it names.
 
 ### IV.3.11(a) — published sources cite Shafarevich instead of proving it
 
@@ -3675,7 +3675,7 @@ not. Nothing here supersedes an earlier entry of this file: the four cards remai
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121) for the parts named above, and each
 card's remark states what its sources do and do not prove.
 
-## 2026-11-16: the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, and V.2.15(c) with V.2.17(b) keep the parts named below without a published proof
+## 2026-11-16: the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, V.2.15(c) and V.2.17(b) keep one part each without a published proof
 
 The batch is the four cards `P-AGH5212ELLRULEDAMPLE` (V.2.12), `P-AGH5213ELLSCROLL` (V.2.13),
 `P-AGH5215FROBENIUSRULED` (V.2.15(c)) and `P-AGH5217CONORMALSPLIT` (V.2.17). Each card's solution is
@@ -3697,19 +3697,12 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   `tmp/sources/projective-theory-ruled-surfaces.md`, and both are proved there. The exercise's
   $\\deg\\mfb\\ge e+2$ and $\\deg\\mfb\\ge e+3$ fall in the main alternatives of Propositions 1.3 and
   2.10, the exceptional cases $\\mfb\\sim0$ at $e=0$ and $\\mfb\\sim-\\mfe$ at $e\\ge2$ needing
-  $\\deg\\mfb\\le0$ and $\\deg\\mfb=e$ respectively. One reading of the source is recorded on the
+  $\\deg\\mfb\\le0$ and $\\deg\\mfb=e$ respectively. Two readings of the source are recorded on the
   card: Proposition 1.3(2)(d) prints "since $\\deg(\\mathfrak b)\\le0$" where $\\deg(\\mfe)\\le0$ is
-  meant. Two readings this record held on first writing are withdrawn. The first is that Proposition
-  2.10's citation of [2, Corollary 1.8] and Proposition 2.2's citation of the same number named
-  different statements: both are Fuentes--Pedreira's Corollary 2.9, printed p. 11, which states the
-  section and the base-point-freeness, and Fuentes cites the irreducible-element criterion as [2,
-  Theorem 2.5]. The second is that Fuentes' Theorem 2.7, printed p. 13, is asserted without proof,
-  and that reading is withdrawn:
-  his page 13 introduces it as "Thus, we have actually proved the following theorem", from Theorem
-  2.1 with Propositions 2.5 and 2.6. The book's Theorem V.2.15, printed p. 377, proves the same
-  reduction independently. What part (a) asks for is a section, which a base-point-free system alone
-  need not contain, and the irreducible member is Fuentes' Proposition 1.5, printed p. 4, with
-  Propositions 2.2, printed p. 9, and 2.3, printed p. 10. The earlier entry's
+  meant, and Proposition 2.10 cites [2, Corollary 1.8] for base-point freeness where the statement
+  with that function is [2, Corollary 2.9], printed p. 11. The dichotomy the exercise needs, that
+  $e\\ge0$ or $e\\in\\{0,-1\\}$, is Fuentes' Theorem 2.7, printed p. 13, asserted there without proof;
+  the book's Theorem V.2.15, printed p. 377, is the proof, and the card cites it. The earlier entry's
   "Open" for this card, the Atiyah surface $e=-1$ and the indecomposable bundles of invariant $e=0$,
   is discharged by Propositions 2.10 and 2.11, and the paragraphs of that entry which say the
   indecomposable case lies outside the published argument stand as what they then read.
@@ -3730,13 +3723,9 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   part (a), the identification $H^1(C,\\OO_C)\\cong H^2(\\PP^2,\\OO(-4))$ with the three negative
   monomials, the composition of Frobenius with multiplication by $g^2$, and the vanishing checked
   monomial by monomial; Example 3.2, printed pp. 85--86, is part (b), the extension, its degree $1$,
-  the two Riemann--Roch dimensions $3$ and $5$, both on printed p. 85, and the dimension count, whose
-  diagram is the naturality square of $f^*$ and whose count is the kernel of
-  $H^1(\\OO_C(-3P))\\to H^1(\\OO_C)$ against the isomorphism $H^1(\\OO_C(-P))\\cong H^1(\\OO_C)$. This
-  record first called that diagram garbled: it is not, the mangling being the extraction's, and the
-  reading is withdrawn. Also withdrawn: the proof of $e=-1$ for $X$ that this batch first wrote into
-  the card's step `s6` from the book's Theorem V.2.15, which is a theorem about elliptic curves and
-  does not apply to $C$ of genus $3$; the card again carries its own normalization proof there. Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing
+  the two Riemann--Roch dimensions $3$ and $5$, and the dimension count, whose printed diagram is
+  garbled and whose count is the kernel of $H^1(\\OO_C(-3P))\\to H^1(\\OO_C)$ against the isomorphism
+  $H^1(\\OO_C(-P))\\cong H^1(\\OO_C)$. Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing
   on Ruled Surfaces in Positive Characteristic*, text version
   `tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md`: Example 3.1, printed
   pp. 5--6, is the curve of (c), the section with $\\OO_X(E)\\cong\\OO_X(1)$ and $E^2=\\deg\\mathcal E$,
@@ -3764,42 +3753,31 @@ and never cites. Pages below were read off the PDFs page by page, the extraction
   *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.2.17,
   printed pp. 106--107, computes the Jacobian presentation and gets $R(-7)\\oplus R(-7)$ when
   $\\operatorname{char}k\\ne2,3$ and $R(-8)\\oplus R(-6)$ when $\\operatorname{char}k=2,3$; with
-  Eisenbud--Van de Ven at $n=4$, which gives $\\OO(7)\\oplus\\OO(7)$, that is a published argument in
-  characteristic $0$ and in every characteristic other than $2$ and $3$. **Still without a published
-  proof: part (b) in characteristics $2$ and $3$.** Yang's entry puts characteristic $3$ in the split
-  case, and the book's printed answer, printed p. 386, has the split case at
-  $\\operatorname{char}k=2$ alone; and his characteristic-$2$ line, which this record first counted as
-  sound, is not, since the presentation he uses is not the conormal's there: his own matrix for the
-  twisted cubic becomes $(t^2,u^2,0)$ in characteristic $2$, with kernel $R(-6)\\oplus R(-4)$ where the
-  printed answer for part (a) is $\\OO(-5)^{\\oplus2}$. The card's own step, the extension class
-  $(n-1)\\eta$ of the conormal sequence, decides both, and the card marks that step as its own. This
-  record also corrects, without editing the event that states it, two readings of the transition
-  matrix in step `s5`. First, the second elementary operation written there earlier on 2026-11-16:
-  adding $-2t^{-1}$ times the first column to the second leaves $-2t^{-6}$ and does not reduce the
-  matrix, while adding $-2t^{-1}$ times the second column to the first, over $k[t^{-1}]$, leaves
-  $t^{-5}$ times the identity. Second, the attribution: the frames and the transition matrix are
-  Shifrin's, but that reduction is the card's own, his answer leaving it as the row- and
-  column-operation game and printing the diagonal $(-3t^{-5},-\\frac13t^{-5})$, a form whose
-  constants need $3$ invertible.
+  Eisenbud--Van de Ven at $n=4$, which gives $\\OO(7)\\oplus\\OO(7)$, that is a complete published
+  argument in characteristic $2$, in characteristic $0$, and in every characteristic other than $2$
+  and $3$. **Still without a published proof: part (b) in characteristic $3$.** Yang's entry puts
+  characteristic $3$ in the split case, and the book's printed answer, printed p. 386, has the split
+  case at $\\operatorname{char}k=2$ alone; the card's own step, the extension class $(n-1)\\eta$ of the
+  conormal sequence, is what decides it, and the card marks that step as its own. This record also
+  corrects, without editing the event that states it, the second elementary operation written into
+  step `s5` earlier on 2026-11-16: adding $-2t^{-1}$ times the first column to the second leaves
+  $-2t^{-6}$ and does not reduce the matrix, while adding $-2t^{-1}$ times the second column to the
+  first, over $k[t^{-1}]$, leaves $t^{-5}$ times the identity. The reduction is the one Shifrin's
+  answer calls the row- and column-operation game.
 
 **Uncertainty.** Searched in this batch: the four briefs' named sources, read in their text versions
 and against their PDFs; the book's V.2 for the four statements, its Theorem V.2.12, Theorem V.2.15,
 Proposition 2.21(b) and Remark 2.21.1; and, for the two open parts, nothing further. Conclusion: the
-parts named above have no published proof in the files read, and the printed "nonsingular" of
+two parts named above have no published proof in the files read, and the printed "nonsingular" of
 V.2.15(c) cannot have one. Confidence: high for those files. Gaps: no search of the literature beyond
 them, in particular none for a published computation of the conormal sheaf of the rational quartic in
-characteristic $2$ or $3$, and none for a published statement that no nonsingular curve of class
-$3C_0-3f$ exists on the surface $X$ over the curve $C$ of genus $3$; and the number of singular
-points of $Y$ was not verified
+characteristic $3$, and none for a published statement that no nonsingular curve of class
+$3C_0-3f$ exists on the Atiyah surface; and the number of singular points of $Y$ was not verified
 independently of $\\delta=p_a-g=1$.
 
 **Repair.** Per card, the commits of this date touching it, with the audit events that record what
-the transcription covered and what was not checked: V.2.12 in `4578427ace` and `71e00224dc`, V.2.13
-in `f16e32dea0` and `d0804466db`, V.2.15(c) in `db9f5c3b83` and `d76798ff55`, V.2.17 in `2b6afd25a7`
-and `f16ede83b5`. The second commit of each pair is the repair of a reader's report on the first, and
-what that report found and this record now states is the two withdrawn readings of Fuentes, the
-repaired statement of V.2.15(c), the diagram that is not garbled, characteristic $2$ of V.2.17(b)
-left open, and the transition-matrix reduction marked as the card's own. V.2.12 and V.2.13 are closed under
+the transcription covered and what was not checked: V.2.12 in `4578427ace`, V.2.13 in `f16e32dea0`,
+V.2.15(c) in `db9f5c3b83`, V.2.17 in `2b6afd25a7`. V.2.12 and V.2.13 are closed under
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121); V.2.15(c) and V.2.17(b) remain open
 for the parts named above, and each card's remark states what its sources do and do not prove.
 
@@ -3898,3 +3876,25 @@ What the round's rewrite added, and this report rejects, is its account of tom D
 **Repair.** `P-AGH556VALUATIONRINGS` in `ac0c1a91b2`; `P-AGH558E8SINGULARITY` in `447399e478`; `P-AGH561COMPLETEINT` in `16d933d7cc`; `P-AGH562CHERNGRIFFITHS` in `e84057e50a`; the restoration of the four records above, and this record, in the COMPLAINTS commit that carries it, which changes no card.
 
 **Uncertainty.** Read for this report: `tmp/sources/abhyankar-1956-valuations-centered-local-domain.md` at Definition 3, Lemma 10, Proposition 3 and Lemma 12, whose printed folios were read on the PDF's text layer at printed page $=$ PDF page plus 320; `tmp/sources/lfwin-hartshorne-solutions.md` at solutions 5.5.6, 5.5.8(b), 5.6.1 and 5.6.2, printed pp. 114--115 of `tmp/sources/lfwin-hartshorne-solutions.pdf`; `tmp/sources/hartshorne-solutions-egbert.md` at V.5.6, V.5.8, V.6.1 and V.6.2, printed pp. 299, 300--302 and 303; `tmp/sources/ntu-ag2-chapter5.md` at Exercise 8 of §5, PDF p. 21; `tmp/sources/harris-1981-bound-geometric-genus.md` §2; and Hartshorne's Theorems 6.1--6.5, printed p. 422, with Exercise II.8.4(e), printed p. 188. Not read: Abhyankar's Lemma 13 and Proposition 5; Harris's §1 and §§3--5; Brieskorn's table of Satz 2.11 row by row; and no published proof of $R\subseteq R_0$ for V.5.6, of the equality case of Clifford's theorem, or of the incidence graph of V.5.8(b) was located. Nothing here supersedes the earlier entries of this file for these four cards beyond the points named above, and the open parts under [#121](https://github.com/dzackgarza/new-qual-site/issues/121) are unchanged.
+
+## 2026-11-16: a reader's second report on the four elliptic-ruled-surface cards of #121 — the batch's record restored to the text it was introduced with, and the corrections stated here
+
+**Object and need.** The record of this date headed "the four elliptic-ruled-surface cards of #121 — V.2.12 and V.2.13 close on Fuentes' classification, V.2.15(c) and V.2.17(b) keep one part each without a published proof", and the four cards it reports: `P-AGH5212ELLRULEDAMPLE` (V.2.12), `P-AGH5213ELLSCROLL` (V.2.13), `P-AGH5215FROBENIUSRULED` (V.2.15(c)) and `P-AGH5217CONORMALSPLIT` (V.2.17). A local reader read the round's second pass against the sources and the book and did not accept it.
+
+**The record restored, and the rule it was rewritten under.** The round's brief said that a record of the day then in progress may be corrected in place. That is not `QUAL-11`, which makes a dated record append-only: later text refers to it, and a correction is a new record of the commit's date. Two commits of this date rewrote this record. `3634c65e5b` changed its heading, the V.2.12 item's account of the two readings of the source, the V.2.15(c) item's account of Hartshorne 1971's diagram and of the withdrawn $e=-1$ argument, and the V.2.17 item's account of characteristic $2$; `835ffbefeb` replaced its **Repair** paragraph. The record is restored, whole, to the text it carried when it was introduced at `105985b5fd`, and each correction those two commits made is stated in this record instead. No other record was touched in this batch, and none dated before 2026-11-16 was edited. The restored text carries its mathematics with doubled backslashes, as it was written; a record is append-only and it is left as it stands.
+
+**V.2.12: three pages the restored item gives one page off.** The item gives Fuentes' Lemma 1.2 as printed p. 3, Proposition 1.3 as pp. 3--4, and Fuentes--Pedreira's Corollary 2.13 as pp. 14--15. Read page by page, the folios of `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.pdf` put Lemma 1.2 on pp. 2--3, its item 1 closing p. 2, and Proposition 1.3 with its proof on p. 3, while Propositions 1.4 and 1.5 run from p. 3 to p. 4; and Corollary 2.13 of `tmp/sources/projective-theory-ruled-surfaces.pdf` is on printed p. 14, cited again on pp. 15 and 18. The card states them so; the item does not, and is not corrected in place. The item also says that Fuentes' Theorem 2.7, printed p. 13, is "asserted there without proof", and that reading is withdrawn: his p. 13 introduces it with "Thus, we have actually proved the following theorem", from Theorem 2.1 with Propositions 2.5 and 2.6, and the card says so in step `s4`.
+
+**V.2.12: Fuentes' Proposition 1.5, as printed.** The round's step `s4` had Proposition 1.5 as making the generic element irreducible when $\deg\mathfrak b\ge1+e$. That is its case $\mathfrak e\not\sim0$; its case $\mathfrak e\sim0$ requires $\deg\mathfrak b\ge2$ or $\mathfrak b\sim0$, and both cases are printed on p. 4. The step now states the two cases as the paper gives them and checks the exercise's $m\ge e+2$ against each: at $e=0$ the bound is exactly the $2$ of case (1) when $\mathfrak e\sim0$ and exceeds $1+e$ when it is not, at $e=-1$ the divisor $\mathfrak e$ has degree $1$, and at $e\ge1$ it is not $\sim0$. The conclusion of part (a) is unchanged, and the exercise's $m\ge2$ at $e=0$ meets case (1)'s bound with no room to spare.
+
+**V.2.15(c): Xie's page, the diagram, and the statement.** Four corrections to the restored item. It puts Xie's smoothness sentence, "It is easy to verify that both $E$ and $C'$ are smooth over $k$", at printed p. 6; the folio carrying it is p. 5, which is what the step of the card quoting it says. It says that Hartshorne 1971's diagram is garbled; it is not, the mangling being the extraction's, and the diagram is the naturality square of $f^*$ whose count the card takes as the kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$ against the isomorphism $H^1(\OO_C(-P))\cong H^1(\OO_C)$. It records as withdrawn the proof of $e=-1$ that the batch first wrote into step `s6` from the book's Theorem V.2.15, and the withdrawal stands: that theorem is about elliptic curves and this $C$ has genus $3$, so step `s6` again carries the card's own normalization proof through $H^0(C,\mathcal E(-P))=0$, marked there as its own. And it says that "the card keeps the printed statement and records the erratum in its head", which stopped being true of the card when `d76798ff55` repaired the statement itself: the card asks for an integral curve of class $3C_0-3f$ whose normalization is $C$, the book printing "nonsingular" for that class, and step `s9` counts $p_a(Y)=4$ against the genus $3$ of the Frobenius twist $C^{(3)}=C$.
+
+**V.2.17: (a) in characteristic 3, and (b) in characteristics 2 and 3.** The restored item's heading reads "(a) published, (b) published except in characteristic 3", while its body, as the round wrote it, puts characteristic $2$ beside $3$; the two halves of the item contradict each other and both need correcting. Part (b) is open in characteristics $2$ and $3$, not $3$ alone: Yang's characteristic-$2$ line is not the conormal's, his own matrix $(t^2,u^2,2tu)$ for the twisted cubic becoming $(t^2,u^2,0)$ there, with kernel $R(-6)\oplus R(-4)$ where the printed answer for part (a) is $\OO(-5)^{\oplus2}$. Part (a) is published in every characteristic in which $3$ is invertible, and not in characteristic $3$: Shifrin's answer 1583486 ends at the diagonal $(-3t^{-5},-\tfrac13t^{-5})$, whose constants need $3$ invertible; Eisenbud and Van de Ven work over a closed field of characteristic $0$, as their introduction on printed p. 453 states, and their Proposition 6 on printed p. 458 is proved there; and Yang's presentation gives the twisted cubic's conormal only away from characteristic $2$. No cited source covers part (a) in characteristic 3, where the card carries it by steps `s2` to `s4` through the extension class $\eta$, which is nonzero over every field; those steps are marked as the card's own, and the preamble and the remark now restrict each attribution rather than calling the part published.
+
+**V.2.17: the characteristic-3 check of step `s5`.** The round added a check that the reduction of the transition matrix works in characteristic $3$, and its arithmetic is wrong on both counts. The matrix $M=\begin{pmatrix}-3t^{-5}&-2t^{-4}\\2t^{-6}&t^{-5}\end{pmatrix}$ reduces mod $3$ to $\begin{pmatrix}0&t^{-4}\\-t^{-6}&t^{-5}\end{pmatrix}$, since $-2\equiv1$ there, and not to the matrix the round printed with $-t^{-4}$ in the top right entry; and $t$ times the second row added to the first gives $(-t^{-5},2t^{-4})$, not the $(-1,0)$ the round recorded, which also drops the factor $t^{-5}$. The check was not needed: the two operations of the step are elementary over $k[t]$ and over $k[t^{-1}]$ and do not depend on the characteristic. The step now records the reduction as the identity $M=t^{-5}AB$ over $\ZZ[t,t^{-1}]$ with $A=\begin{pmatrix}1&-2t\\0&1\end{pmatrix}$ and $B=\begin{pmatrix}1&0\\2t^{-1}&1\end{pmatrix}$, both of determinant one, which holds over every field, and the characteristic-$2$ observation, that the matrix is then already $t^{-5}$ times the identity, stands.
+
+**Rendering on the four cards.** Out of the rendered text went what `QUAL-08` and `SEC-7` keep off a card. The preamble of V.2.15(c) said "Every step below transcribes a published argument", which steps `s6`, `s9` and `s10` contradict, each of them marked there as the card's own. The paragraph after the genus-three sentence of the same solution accounted for the repair of the statement of part (c), which belongs in that card's audit. The preamble of V.2.17 called part (a) published without restriction; its remark said part (b) is "without a published argument" in characteristics $2$ and $3$ and called the reduction of Shifrin's matrix, "as is its check in characteristics $2$ and $3$", the card's own, and such a mark belongs on the step, where `s2` to `s5` carry it. And the `tmp/sources` paths left the preambles and remarks of all four cards, V.2.12's and V.2.13's included, for the audit events that name what each source is read in; those events are the record of where it was read, this file is not the place for it.
+
+**Repair.** Per card, every commit of this date that touches it, the transcription first and then this repair: V.2.12 in `4578427ace`, `71e00224dc` and `585542e3e7`; V.2.13 in `f16e32dea0`, `d0804466db` and `123f7a9803`; V.2.15(c) in `db9f5c3b83`, `d76798ff55` and `c6d469262a`; V.2.17 in `2b6afd25a7`, `f16ede83b5` and `26e796944b`. The restoration of the record above is in the COMPLAINTS commit that carries this record, which changes no card. What still has no published proof is unchanged as an obligation under [#121](https://github.com/dzackgarza/new-qual-site/issues/121): the printed "nonsingular" of V.2.15(c), which cannot have one, part (a) of V.2.17 in characteristic $3$, and part (b) of V.2.17 in characteristics $2$ and $3$. Nothing here supersedes the earlier entries of this file that say V.2.12 and V.2.13 are closed on Fuentes' classification.
+
+**Uncertainty.** Read for this record: Fuentes' paper in its PDF page by page, for the folios of Lemma 1.2, Propositions 1.3, 1.4 and 1.5, Theorems 1.7, 2.7 and 2.13 and Remark 2.9; Fuentes--Pedreira's Theorem 3.2(1), Theorem 3.9(3), Theorem 3.10(1), Corollary 2.13 and Corollary 2.9 by page; Xie's Example 3.1 and Lemma 4.4 by page; Shifrin's answer 1583486 in `tmp/sources/mse-1583326-hart77-v217-twisted-cubic-normal-bundle.md`; Yang Pi-Yeh's Solution 5.2.17 in `tmp/sources/lfwin-hartshorne-solutions.md`; Eisenbud and Van de Ven's introduction and Proposition 6 with its two proofs; and the book's V.2.15(c) and V.2.17 with the printed answer to V.2.17(b). Not re-read in this pass: Hartshorne 1971's Lemma 3.1 and Example 3.2 beyond the sentences the card quotes, Fuentes' Section 3 apart from the numbered statements named, and the pages of the book that the four cards cite outside V.2.15 and V.2.17. Not searched: any publication computing the conormal sheaf of the twisted cubic in characteristic $3$, or of the rational quartic in characteristics $2$ and $3$.
