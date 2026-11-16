@@ -43,25 +43,38 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Read for issue #121 and cited the published solution on the card: Yang
-    Pi-Yeh, solution 5.6.1, printed p. 115 of
-    tmp/sources/lfwin-hartshorne-solutions.pdf (folio confirmed on the PDF's
-    own text layer), read in tmp/sources/lfwin-hartshorne-solutions.md and
-    checked against the exercise at Hartshorne V.6, printed p. 423 (PDF p. 438
-    of tmp/sources/hartshorne-1977-algebraic-geometry.md, printed = PDF
-    minus 15), and against Theorems 6.1--6.5 on printed pp. 421--422. Each step
-    of the solution now names the source of its statement: the adjunction
-    formula (Hartshorne II.8.4, and Yang's opening line), the six tuples
-    (Yang's two enumerations, with the bounds n < 5 and n <= 5 made explicit),
-    the del Pezzo placement (Theorem 6.1), the K3 placement (Theorem 6.3), and
-    the general-type conclusion (Theorem 6.5). Added: the paragraph that reads
-    kappa off the sign of a in omega = O(aH), which is what makes the two
-    enumerations exhaustive and excludes kappa = 1 (Theorem 6.4). Corrected on
-    the remark: Egbert's V.6.1 entry, printed p. 303, samples cases and does
-    not reach (3;4) or (4;2,2), so it is not a complete solution of this
-    exercise, and Yang's 5.6.1 is. Not checked: nothing beyond the enumerated
-    list was recomputed; the del Pezzo and K3 identifications are the card's
-    earlier ones, re-read but not re-derived in this pass.
+    Read for issue #121, corrected in place on a reader's report of the same
+    day. Read: Yang Pi-Yeh, solution 5.6.1, printed p. 115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (folio read on the PDF's own
+    text layer), in the text version tmp/sources/lfwin-hartshorne-solutions.md;
+    the exercise at Hartshorne V.6, printed p. 423 (PDF p. 438 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, printed = PDF minus 15);
+    Theorems 6.1--6.5, printed p. 422; Exercise II.8.4(e), printed p. 188, and
+    Example II.8.20.3, printed p. 183, for the canonical class of a complete
+    intersection; and A. Egbert, V.6.1, printed p. 303 of
+    tmp/sources/hartshorne-solutions-egbert.md.
+
+    Corrected here, because the previous text of this note was wrong on two
+    points of attribution. First, Yang's entry cites no Theorem 6.1: he derives
+    kappa = -1 implies sum d_i - n - 1 < 0 and lists the three tuples, and it
+    is Egbert, printed p. 303, who passes from a negative multiple of the
+    hyperplane class to |12K| empty by citing 6.1. Second, the placement of the
+    negative cases through Theorem 6.1, the del Pezzo identification with its
+    degrees, the q = 0 and K3 conclusion for the a = 0 cases, and the paragraph
+    reading kappa off the sign of a are the card's own, and the steps now say
+    so; Yang's own contribution is the two enumerations, which the card cites
+    at printed p. 115.
+
+    Also corrected: Theorems 6.1 and 6.3 are on printed p. 422, not p. 421
+    (they follow the marker for PDF p. 437), and the formula for the canonical
+    class is Exercise II.8.4(e) on printed p. 188, not a statement of II.8.4,
+    with Example II.8.20.3, printed p. 183, for hypersurfaces. The remark no
+    longer carries text-version paths or an account of what Egbert's entry
+    lacks; that belongs here and in COMPLAINTS.md (QUAL-08, SEC-7).
+
+    Not checked in this pass: the del Pezzo and K3 identifications were re-read
+    but not re-derived, and no published proof of the placement in the
+    classification was sought.
 
 ---
 
@@ -107,11 +120,10 @@ $$
 K_X\sim aH.
 $$
 
-This is Hartshorne's adjunction formula (II, 8.4) for a complete
-intersection and is the opening line of Yang Pi-Yeh's solution 5.6.1,
-printed p. 115 of his set (read in
-`tmp/sources/lfwin-hartshorne-solutions.md`), who writes it as
-$\omega\cong\OO_X(\sum d_i-n-1)$ with the reference 2.8.4.
+This is Hartshorne's Exercise II.8.4(e), printed p. 188, for a nonsingular
+complete intersection, and for a hypersurface Example II.8.20.3, printed
+p. 183. Yang Pi-Yeh's solution 5.6.1, printed p. 115, opens with the same
+formula.
 :::
 
 :::
@@ -256,10 +268,14 @@ del Pezzo surface are the familiar rational del Pezzo surfaces. Hence
 these cases lie in the $\kappa=-\infty$ part of the surface
 classification.
 
-Yang states the same three tuples at printed p. 115 as the case
-$\omega\cong\OO_X(\sum d_i-n-1)$ with $\sum d_i-n-1<0$, and places them
-through Hartshorne's Theorem 6.1, printed p. 421, which identifies
-$\kappa=-1$ with $\linearsystem{12K}=\emptyset$ and with $X$ rational or ruled.
+Yang gives the same three tuples at printed p. 115, as the case
+$\sum d_i-n-1<0$.
+
+That each of the three is a del Pezzo surface of the stated degree, and
+that all three are rational, is this card's own reading of them; the
+placement in the classification is Hartshorne's Theorem 6.1, printed
+p. 422, which identifies $\kappa=-1$ with $\linearsystem{12K}=\emptyset$
+and with $X$ rational or ruled.
 :::
 
 :::
@@ -317,10 +333,13 @@ H^2=\deg X=\prod_i d_i,
 $$
 namely $4$, $6$, and $8$.
 
-Yang states these three tuples at printed p. 115 as the case
-$\sum d_i-n-1=0$ and records that they are all K3 surfaces; Hartshorne's
-Theorem 6.3, printed p. 421, is what places them there, a K3 surface being
-one with $K=0$ and $q=0$, hence $p_a=p_g=1$.
+Yang gives these three tuples at printed p. 115, as the case
+$\sum d_i-n-1=0$, and records that they are K3 surfaces. That conclusion is
+this card's own, from $\omega_X\cong\OO_X$ and the vanishing of
+$H^1(X,\OO_X)$ recorded in [[P-AGH355COMPINT]]: a K3 surface is one with
+$K=0$ and $q=0$, hence with $p_a=p_g=1$, and Hartshorne's Theorem 6.3,
+printed p. 422, lists the surfaces of Kodaira dimension zero with those
+invariants.
 :::
 
 :::
@@ -336,12 +355,12 @@ not in that list has $a>0$, and step [](#positive-a-general-type){.pf-ref} makes
 Among the six exceptions, step [](#negative-a-del-pezzo){.pf-ref} classifies the three cases with
 $a<0$, and step [](#zero-a-k3){.pf-ref} classifies the three cases with $a=0$.
 
-Since $\omega_X\cong\OO_X(aH)$ with $H$ ample, the Kodaira dimension of
-$X$ is $-1$, $0$ or $2$ according as $a<0$, $a=0$ or $a>0$, and never $1$:
-the case $a<0$ makes $-K_X$ ample, the case $a=0$ makes $\omega_X$ trivial,
-and the case $a>0$ makes $K_X$ ample. A complete intersection surface of
-the kind considered is therefore never of the elliptic kind of Hartshorne's
-Theorem 6.4, printed p. 422.
+This paragraph is the card's own. Since $\omega_X\cong\OO_X(aH)$ with $H$
+ample, the Kodaira dimension of $X$ is $-1$, $0$ or $2$ according as
+$a<0$, $a=0$ or $a>0$, and never $1$: the case $a<0$ makes $-K_X$ ample,
+the case $a=0$ makes $\omega_X$ trivial, and the case $a>0$ makes $K_X$
+ample. A complete intersection surface of the kind considered is therefore
+never of the elliptic kind of Hartshorne's Theorem 6.4, printed p. 422.
 :::
 
 :::
@@ -358,11 +377,9 @@ general type.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.1, printed p. 423, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15). Theorems 6.1--6.5, printed pp. 421--422, are the classification the exercise asks the exceptions to be placed in: $\kappa=-1$ for the rational and ruled surfaces, $\kappa=0$ for the K3, Enriques, abelian and hyperelliptic surfaces, $\kappa=1$ for the elliptic ones, and $\kappa=2$ for the surfaces of general type.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.1, printed p. 423, and the classification it asks the exceptions to be placed in is Theorems 6.1--6.5, printed p. 422: $\kappa=-1$ for the rational and ruled surfaces, $\kappa=0$ for the K3, Enriques, abelian and hyperelliptic surfaces, $\kappa=1$ for the elliptic ones, and $\kappa=2$ for the surfaces of general type.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.1, printed p. 115 of that set (`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose folios are its PDF pages; read in `tmp/sources/lfwin-hartshorne-solutions.md`), proves the exercise. He reads $\omega\cong\OO_X(\sum d_i-n-1)$ off adjunction (II, 8.4); from $\kappa(X)=-1$ he gets $\sum d_i-n-1<0$, and $d_i\ge2$ then gives $n+1>\sum d_i\ge2(n-2)$, so $n<5$ and the tuples are $(3;2)$, $(3;3)$, $(4;2,2)$; from $\kappa(X)=0$ he gets $\sum d_i-n-1=0$, so $n\le5$ and the tuples are $(3;4)$, $(4;2,3)$, $(5;2,2,2)$, all K3; $\kappa(X)=1$ he rules out; and the remaining tuples are of general type.
+Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.1, printed p. 115, gives both enumerations: $\sum_i d_i-n-1<0$ with the tuples $(3;2)$, $(3;3)$, $(4;2,2)$, and $\sum_i d_i-n-1=0$ with the tuples $(3;4)$, $(4;2,3)$, $(5;2,2,2)$, which he records as K3 surfaces. His bounds are $n<5$ and $n\le5$, that is $2(n-2)\le n$ and $2(n-2)\le n+1$.
 
-Two of his lines are compressed and are made explicit in the steps above. First, $\kappa$ is read off the sign of $a$ in $\omega_X\cong\OO_X(aH)$ with $H$ ample, which is why the two enumerations are exhaustive; his $n<5$ and $n\le5$ are the bounds $2(n-2)\le n$ and $2(n-2)\le n+1$. Second, his $\kappa=1$ paragraph argues through $\omega^2=0$, which here reads $a^2H^2=0$, that is $a=0$ --- the $\kappa=0$ case he has just placed among K3 surfaces --- and his identification of $\kappa=1$ with an elliptic surface is Hartshorne's Theorem 6.4.
-
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.1, printed p. 303 of that set, text version `tmp/sources/hartshorne-solutions-egbert.md`, samples cases instead of listing them: the K3 case $(3;4)$ and the del Pezzo case $(4;2,2)$ are missing and nothing shows the sample exhaustive, so his entry is not used here.
+The reading of $\kappa$ off the sign of $a$ in $\omega_X\cong\OO_X(aH)$, the identification of the three cases with $a<0$ as del Pezzo surfaces of degrees $8$, $3$ and $4$, the exclusion of $\kappa=1$, and the K3 identification of the three cases with $a=0$ are this card's own arguments, and the steps say so.
 :::
