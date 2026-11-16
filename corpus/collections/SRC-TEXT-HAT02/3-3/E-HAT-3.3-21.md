@@ -210,6 +210,28 @@ audit:
     $\ZZ\times\RR$; and the Stanford set's paragraph is the rejected one. Checked against Hatcher
     (2002), §3.3 Exercise 21 on printed p. 259, and against Hatcher's errata, which carries no entry
     for that page.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Two corrections to the transcription of Kottke's solution and one to the citations. (1) The
+    transcription followed the source's own slip in writing $H^n(X,V)$ for a group in which $V$ is an
+    open set of $X^+$ containing $\infty$, and so is not a subset of $X$; the card now writes
+    $H^n(X,V\setminus\{\infty\})\cong H^n(X^+,V)$ and says that the middle isomorphism is excision of
+    the point $\infty$, closed in $X^+$ and contained in the open $V$, hence with closure inside the
+    interior of $V$, so that excision is legitimate. The two outer groups are unchanged. (2) The
+    duplicate PDF name `tmp/sources/frankland-hawaiian-earring-2017.pdf`, which was cited in step
+    earring-degree-two, is the same note as `tmp/sources/frankland-2017-cohomology-hawaiian-earring.md`
+    (identical bytes, checked with `md5sum`); the card now cites the text version and no longer names
+    the duplicate. Theorem 1.3 with the sentence after it on printed p. 2 and Theorem 2.1 on printed
+    p. 3 were re-read in that text version this pass, and the $\QQ$ direct summand is Theorem 2.1's
+    $\bigoplus_{\mathfrak c}\QQ$ with $\mathfrak c=2^{\aleph_0}$. (3) Text versions are now named on
+    every citation: Hatcher in `tmp/sources/hatcher-2002-algebraic-topology.md`, Frankland in its
+    `.md`; Eda--Kawamura, Wiegold, Stanford Solution Set 4 and Kottke have no text version in
+    `tmp/sources` and are named as read from their PDF text layers. Checked against Hatcher (2002),
+    §3.3 Exercise 21 on printed p. 259, and against the exercise's cone hypothesis, which the
+    $X=\ZZ\times\RR$ counterexample is used to show fails. Not claimed: a published solution of the
+    bracketed question, which is still absent.
 ---
 
 ::: {.problem}
@@ -277,7 +299,7 @@ Each line becomes a circle in $E$, with all circles sharing $\infty$, and every 
 $$
 \operatorname{Ext}_{\ZZ}(H_1(E;\ZZ),\ZZ)\hookrightarrow H^2(E;\ZZ).
 $$
-By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, pp. 307--310** (`tmp/sources/eda-kawamura-hawaiian-earring-2000.pdf`), $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$; this is also stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring*, p. 3** (`tmp/sources/frankland-hawaiian-earring-2017.pdf`). Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, pp. 341--342** (`tmp/sources/wiegold-ext-q-z-1969.pdf`), $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
+By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, pp. 307--310** (`tmp/sources/eda-kawamura-hawaiian-earring-2000.pdf`, read from the PDF's text layer, `tmp/sources` holding no text version of it), $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$; this is also stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring*, p. 3**, whose text is the reading copy `tmp/sources/frankland-2017-cohomology-hawaiian-earring.md`. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, pp. 341--342** (`tmp/sources/wiegold-ext-q-z-1969.pdf`, also read from the PDF's text layer), $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
 :::
 
 :::
@@ -288,7 +310,7 @@ For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\inft
 
 ::: pf-proof
 
-Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
+Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, whose text is `tmp/sources/frankland-2017-cohomology-hawaiian-earring.md`, gives
 
 $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
@@ -317,14 +339,16 @@ so the evident map cannot be an isomorphism. Consequently the cone-neighborhood 
 
 The first part is the complete published solution of **Stanford Math 215C, Solution Set 4, Hatcher 3.3.21, printed p. 1**, [`solution4.pdf`](http://math.stanford.edu/~ralph/math215c/solution4.pdf), held locally as `tmp/sources/stanford-math215c-spring2009-solution4.pdf` (59584 bytes, sha256 `b4c348109162ed7e97309e15f1b153efa363cd0338800e8d251f64f335eef470`, matching the served file). Its argument is the one transcribed in steps [](#excision-limit){.pf-ref} and [](#cone-case){.pf-ref}: for compact $K\subset X$ the point $\infty$ is excised, giving $H^n(X^+,X^+\setminus K;G)\cong H^n(X,X\setminus K;G)$; the exact sequence of the pair $(X^+,U_K)$ with $U_K=X^+\setminus K$ has $\widetilde H^m(U_K;G)=0$ for all $m$ when $K$ is the complement of a cone-shaped neighbourhood of $\infty$, so $H^n(X,X\setminus K;G)\cong\widetilde H^n(X^+;G)=H^n(X^+,\infty;G)$; these $K$ are cofinal among compact subsets because cone-shaped neighbourhoods can be shrunk inside any neighbourhood of $\infty$, and the isomorphism passes to the direct limit $H_c^n(X;G)$.
 
-A second, independent complete published solution of the first part is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 2, printed p. 2** (`tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`). It states the hypothesis as this card does, for $X$ locally compact Hausdorff, and reaches the same limit by a cofinal family built the other way round. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
+A second, independent complete published solution of the first part is **C. Kottke, *Math 2420 Problem Set 3 solutions*, Brown University, Spring 2012, Problem 2, printed p. 2** (`tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`, read from the PDF's own text layer, `tmp/sources` holding no text version of it). It states the hypothesis as this card does, for $X$ locally compact Hausdorff, and reaches the same limit by a cofinal family built the other way round. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
 $$
-H^n(X,X\setminus L)=H^n(X,V)\cong H^n(X^+,V)\cong H^n(X^+,\infty),
+H^n(X,X\setminus L)=H^n(X,V\setminus\{\infty\})\cong H^n(X^+,V)\cong H^n(X^+,\infty),
 $$
-the middle isomorphism by excision of $\infty$ and the last by the deformation retraction. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. This solution absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$; it is the cofinality assertion of step [](#excision-limit){.pf-ref} read backwards.
+the first group by the identity just written, the middle isomorphism by excision of the point $\infty$ — closed in $X^+$ and contained in the open set $V$, so that its closure lies in the interior of $V$ — and the last by the deformation retraction of $V$ onto $\infty$. The source prints the middle group as $H^n(X,V)$; $V$ is an open set of $X^+$ containing $\infty$ and so is not a subspace of $X$, and the excision removes $\infty$ from it. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. This solution absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$; it is the cofinality assertion of step [](#excision-limit){.pf-ref} read backwards.
 
 The closing paragraph of the Stanford set, on $X=\ZZ\times\RR$, is **not** used and must not be: it concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$, whereas dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem. The bracketed question is answered above, in degree two with $G=\ZZ$, by the assembled counterexample.
 
 Which part is published and which is not: the first part of the exercise has two complete published solutions, both cited above, the Stanford set's and Kottke's; the degree-one cohomology of the compactification is published in Frankland's Theorem 1.3, printed p. 2, as step [](#degree-one){.pf-ref} records; and the bracketed question itself has no published solution. The answer given to it on this card is assembled from three published theorems — Eda–Kawamura for the $\QQ$ summand of $H_1(E;\ZZ)$, Wiegold for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\ne0$, and Frankland for the degree-one value — and is not a transcription of any published treatment of the question.
+
+The text versions this card's citations rest on: the exercise and every Hatcher page quoted above are read in `tmp/sources/hatcher-2002-algebraic-topology.md`; Frankland is read in `tmp/sources/frankland-2017-cohomology-hawaiian-earring.md`, the same note as the PDF `tmp/sources/frankland-hawaiian-earring-2017.pdf` (identical bytes), whose duplicate file name is no longer cited; Eda–Kawamura at `tmp/sources/eda-kawamura-hawaiian-earring-2000.pdf` and Wiegold at `tmp/sources/wiegold-ext-q-z-1969.pdf` have no text version in `tmp/sources` and were read from their PDF text layers, as were Stanford's `tmp/sources/stanford-math215c-spring2009-solution4.pdf` and Kottke's `tmp/sources/kottke-brown-math2420-sp12-ps3-solutions.pdf`.
 
 :::
