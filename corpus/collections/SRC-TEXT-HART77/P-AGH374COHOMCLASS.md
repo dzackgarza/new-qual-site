@@ -219,6 +219,59 @@ audit:
     tmp/sources/hartshorne-1977-algebraic-geometry.md. Not checked: no proof
     of the comparison was found, and the functoriality of gamma for a
     composite of regular immersions was not read in the source.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fifth pass on the reader's report, on the four items that pass named:
+    the trace normalization, the reduction to one point identity, the dlog
+    citation, and the text versions of the Stacks tags. (i) The claim that a
+    trace satisfying (N) is unique is false and is withdrawn. It is false
+    because (N) constrains only the traces of finite reduced k-schemes: with
+    t_X replaced by lambda*t_X and every point trace left alone, (N) still
+    holds, the pairing scales by lambda, the class eta(P) = j_*(1) of (G)
+    scales by lambda^{-1}, and part (a) still reads 1, so part (a) holds for
+    every scalar and constrains none. What replaces it is uniqueness up to a
+    nonzero scalar, which is Lemma 50.24.3 (tag 0G8I) in the relative form:
+    the trace is unique up to precomposition by a unit of H^0(X, O_X), and
+    that ring is k for X projective and integral. The scalar is fixed by the
+    point comparison t_X(gamma^{0,0}_{P/X}(1)) = 1, which is unique because
+    H^n(X, Omega^n) is one-dimensional and the class is nonzero by Lemma
+    50.23.11 (tag 0G8E); that is now what the head says, and the inference
+    "one fixed trace" that stood after it is rewritten to match.
+    (ii) The reduction to the single point identity is incomplete and is no
+    longer asserted. Granting t_X(gamma^{0,0}_{P/X}(1)) = 1, applying 0G8C to
+    a divisor Y leaves t_X(gamma^{n-1,n-1}_Y(nu|_Y)), and to read that one
+    needs the composite functoriality gamma^{0,0}_{P/X} =
+    gamma^{n-1,n-1}_{Y/X} o gamma^{0,0}_{P/Y}, not supplied by 0G8C or 0G8D
+    and recorded as unread in the fourth pass above. The head now names it as
+    the second half of the comparison, says what it would give, and says that
+    (R) and (B) stay inputs. (iii) The dlog citation was wrong about the tags.
+    Remark 50.23.1 with equation (50.23.1.1) (0G83, 0G84) defines gamma
+    through c_{f_1,...,f_c} and carries no formula gamma^0_f(1) = df/f; that
+    formula is at the end of the proof of Lemma 50.23.5 (tag 0G88), and
+    Section 50.9 (tag 0FLE) defines the dlog class without comparing it with
+    gamma. The card now says so, quotes the sentence from 0G88, and states
+    the class identity c(L(Y)) cup nu = gamma^{n-1,n-1}_Y(nu|_Y) as an input
+    made in the Cech model of steps s5 and s6, not as a theorem of the Stacks
+    Project; 0G8D is now described as class-level for gamma, which becomes a
+    statement about the trace only through the comparison. (iv) The text
+    versions now exist and are named: tmp/sources/stacks-tags/0G82.md for the
+    section, and 0G83.md, 0G84.md, 0G88.md, 0G8A.md, 0G8C.md, 0G8D.md,
+    0G8E.md, 0G8I.md and 0FLE.md for the environments, each saved from the
+    page as served on 2026-11-16 at stacks-project commit
+    a04446e57ec1fbc252a871afcec7752fb2807b14, with the LaTeX label of each.
+    The fourth pass's event above, which said 0G83 and 0G84 give gamma^0_f(1)
+    = df/f and that the class identity and the class-level form of (B) are
+    theorems, is a dated event and is left as written; the correction is this
+    event. Checked in this pass: Section 50.23 and Section 50.24 as served at
+    the site and in the tag files above, and in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF p.
+    N+15) III.7.5 printed p. 242, III.7.12 printed p. 246, Remark III.7.14 and
+    Theorem III.7.14.1 printed pp. 247-248. Not checked: no proof of the point
+    comparison, of (R) or of (B) was found, and the composite functoriality of
+    gamma was not located in the Stacks Project; nothing in this pass supplies
+    the published solution of (b) and (d) that the exercise still needs.
 ---
 
 ::: {.problem}
@@ -295,36 +348,84 @@ solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
 printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
 the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
-The class-level part of both inputs is published. Let $Z\subseteq X$ be a Koszul
-regular closed immersion of codimension $c$, with $X$ smooth over a base $S$,
-and let $\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$
-be the Gysin map of the Stacks Project. Then
+The class-level part of the two inputs is published, and it is quoted here as
+the Stacks Project states it, read in the text versions of the tags. With
+$Z\subseteq X$ a Koszul regular closed immersion of codimension $c$ in an $X$
+smooth over a base $S$, let
+$\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$ be the
+Gysin map of Remark 50.23.7 (tag 0G8A). Then
 $$
 \gamma^{p,q}(\restrictionof{\alpha}{Z})=\alpha\smile\gamma^{0,0}(1)
 \qquad\text{(Lemma 50.23.9, tag 0G8C),}
 $$
 and $\gamma$ is compatible with a transverse cartesian square (Lemma 50.23.10,
-tag 0G8D), over an arbitrary base scheme and in every characteristic. For a
-divisor $D$ the class $\gamma^{0,0}_D(1)$ is the $d\log$ class of
-$\mathcal O_X(D)$: Remark 50.23.1 with equation (50.23.1.1) (tags 0G83 and
-0G84) gives $\gamma^0_f(1)=df/f$ for a local equation $f$, which is the class
-of §50.9 (tag 0FLE). So the class identity behind (R),
+tag 0G8D); both are stated over an arbitrary base scheme and with no
+characteristic hypothesis. The text versions read are
+`tmp/sources/stacks-tags/0G82.md` for the section,
+`tmp/sources/stacks-tags/0G83.md`, `0G84.md`, `0G88.md`, `0G8A.md`, `0G8C.md`,
+`0G8D.md` and `0G8E.md` for the environments in it, and
+`tmp/sources/stacks-tags/0FLE.md` for §50.9.
+
+The $d\log$ side is not a statement of those tags. Remark 50.23.1 with
+equation (50.23.1.1) (tags
+0G83 and 0G84) defines $\gamma^p_{f_1,\ldots,f_c}$ through the map
+$c_{f_1,\ldots,f_c}$ and says nothing about $df/f$; the formula
+$\gamma^0_f(1)=df/f$ is written at the end of the proof of Lemma 50.23.5 (tag
+0G88), where the maps are chosen "such that $1$ maps to
+$df_1\wedge\cdots\wedge df_c/(f_1\cdots f_c)$". Section 50.9 (tag 0FLE)
+defines the $d\log$ class of a line bundle and nowhere compares it with
+$\gamma$. Matching the two is a comparison of two classes in
+$H^1(X,\Omega_X)$, made by reading both in one Čech model under one transition
+convention; step [](#s5){.pf-ref} writes the $d\log$ side out in the convention
+of Hartshorne's Čech complex and step [](#s6){.pf-ref} fixes its sign, and no
+tag read performs the comparison. So the class identity behind (R),
 $$
 c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y}),
 $$
-is a theorem, and so is the base-change compatibility behind (B).
+is an input of this solution and not a theorem of the Stacks Project, and the
+class-level half of (B) is likewise a statement about $\gamma$ which becomes a
+statement about the trace only through the comparison below.
 
-What those lemmas do not supply is the comparison of the abstract trace of
-III.7 with the Gysin class of a point: for $P\in X$ the classes $\eta(P)$ and
-$\gamma^{0,0}_{P/X}(1)$ both span the one-dimensional $H^n(X,\Omega_X^n)$, and
-the statement that they agree, equivalently
+What those lemmas do not supply is the comparison of the Gysin class with the
+trace of III.7, and it has two halves. The first is the point. For $P\in X$ the
+classes $\eta(P)$ and $\gamma^{0,0}_{P/X}(1)$ both lie in the one-dimensional
+$H^n(X,\Omega_X^n)$, and the second is nonzero: Lemma 50.23.11 (tag 0G8E) says
+that for an irreducible smooth proper $X$ of dimension $d$ over a field the
+image of $1$ under $\gamma^{0,0}$ from a $k$-rational point is nonzero, and
+here $X$ is nonsingular, projective and integral over the algebraically closed
+$k$, so every closed point is $k$-rational. The statement that the two classes
+agree, equivalently
 $$
 t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1,
 $$
-is the assertion that the trace of III.7 is computed by the residue at a
-point. The book proves that only for curves (III.7.14.1, printed p. 247). It
-is the comparison the two published class identities need before they can be
-read as statements about the trace, and it is not proved here.
+says that the trace of III.7 is computed by the residue at a point. The book
+proves that only for curves (III.7.14.1, printed p. 247).
+
+The second half is the functoriality of $\gamma$ for a composite of regular
+immersions. Granting the point identity, (R) still does not follow from 0G8C
+alone. Applied with $p=q=n-1$ and $\alpha=\nu$ to the divisor $Y$, 0G8C reads
+$\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})=\nu\smile\gamma^{0,0}_Y(1)$, so what
+(R) needs is the identity
+$$
+t_X\bigl(\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})\bigr)
+=t_Y(\restrictionof{\nu}{Y}),
+$$
+and the point identity gives that only through the composite case: for a closed
+point $P\in Y$ one needs the Gysin maps of $P\subseteq Y\subseteq X$ to compose,
+$$
+\gamma^{0,0}_{P/X}=\gamma^{n-1,n-1}_{Y/X}\circ\gamma^{0,0}_{P/Y}.
+$$
+With that, $t_X\circ\gamma_{Y/X}$ and $t_Y$ agree on the class
+$\gamma^{0,0}_{P/Y}(1)$, which spans the one-dimensional
+$H^{n-1}(Y,\Omega_Y^{n-1})$ because it is nonzero by 0G8E applied to $Y$, hence
+on every $\nu$, and (R) follows from the class identity above. No tag read
+states that functoriality: Section 50.23
+(`tmp/sources/stacks-tags/0G82.md`) has 0G8C, 0G8D and the compatibility with the
+de Rham differentials (0G8B), and nothing on composites, and the fourth pass's
+audit recorded the composite case as not read. The reduction of (R) and (B) to
+the single point identity is therefore not made here: (R) and (B) remain inputs
+of this solution, and the point identity is necessary for them but not shown to
+be sufficient.
 
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
@@ -335,14 +436,33 @@ base-change case for a transverse pair is (B). Neither is a formal consequence
 of the definitions (N) and (G); both are properties of the trace that III.7
 constructs.
 
-There is at most one trace satisfying (N). The space $H^n(X,\Omega_X^n)$ is
-one-dimensional, and $\eta(P)\ne0$ because $t_X(\eta(P))=1$ by step
-[](#s1){.pf-ref}, so the normalization $t_X(\eta(P))=1$ fixes $t_X$
-completely. A trace exists: Proposition III.7.5 (printed p. 242) gives a
-dualizing sheaf with its trace on every projective scheme over $k$, and for
-$X$ nonsingular that sheaf is $\Omega_X^n$ (III.7.12, printed p. 246). What is
-missing for parts (b) and (d) is therefore not existence but the proof that
-this trace satisfies (R) and (B).
+There is no uniqueness in (N). What the duality gives is uniqueness up to a
+nonzero scalar: every functional on the $k$-line $H^n(X,\Omega_X^n)$ is a
+scalar multiple of every other, which is the relative uniqueness in Lemma
+50.24.3 (tag 0G8I, `tmp/sources/stacks-tags/0G8I.md`), where the trace is
+unique up to precomposing by a unit of $H^0(X,\OO_X)$ — and $H^0(X,\OO_X)=k$
+for $X$ projective and integral over $k$. (N) fixes the trace at a point and fixes
+nothing on $X$ itself: replacing $t_X$ by $\lambda t_X$, with every trace on a
+finite reduced $k$-scheme left as it was, keeps (N) satisfied, multiplies the
+pairing $\langle\alpha,\beta\rangle_X$ by $\lambda$, and therefore multiplies
+the Gysin class $\eta(P)=j_*(1)$ of (G) by $\lambda^{-1}$, so that
+$$
+t'_X(\eta'(P))=\lambda\,t_X(\lambda^{-1}\eta(P))=t_X(\eta(P))=1 .
+$$
+Part (a) thus holds for every choice of the scalar and is no constraint on it,
+and the identity $t_X(\eta(P))=1$ of step [](#s1){.pf-ref} is the definition of
+$\eta(P)$ rather than a discovery about $t_X$.
+
+The scalar is fixed instead by the point comparison above: there is exactly one
+trace with $t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1$, because
+$H^n(X,\Omega_X^n)$ is one-dimensional and $\gamma^{0,0}_{P/X}(1)\ne0$ (tag
+0G8E). That is the trace for which parts (b) and (d) are stated. It exists:
+Proposition III.7.5 (printed p. 242) gives a dualizing sheaf with its trace on
+every projective scheme over $k$, and for $X$ nonsingular that sheaf is
+$\Omega_X^n$ (III.7.12, printed p. 246). What is missing for parts (b) and (d)
+is therefore not existence but the proof that this trace satisfies (R) and (B),
+together with the point comparison that singles it out, which is not proved
+here either.
 
 Of these, the book proves (R) for curves, and step [](#s6){.pf-ref} derives it
 there from the residue description of the trace in Remark III.7.14 (printed
@@ -375,11 +495,11 @@ $$
 \eta(Y)=j_*(1).
 $$
 
-By the uniqueness above, (R) and (B) are statements about one fixed trace, not
-about a choice among several: a trace satisfying (N) is unique, so the only
-question is whether the trace of III.7 satisfies them. What is proved below is
-that the exercise's four assertions follow from (N), (G), (R) and (B), and that
-(R) is a theorem of the book in dimension one.
+By the discussion above, (R) and (B) are statements about the trace fixed by
+$t_X(\gamma^{0,0}_{P/X}(1))=1$, not about a choice among several; (N) does not
+fix that trace, and the point comparison does. What is proved below is that the
+exercise's four assertions follow from (N), (G), (R) and (B), and that (R) is a
+theorem of the book in dimension one.
 
 ::: pf
 
