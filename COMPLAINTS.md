@@ -3521,6 +3521,26 @@ PDF p. 358 and line 3 of PDF p. 359 re-read on the PDF; Vakil at
 printed pp. 546--547. Not read in this round: the book's IV.2.2, IV.2.3 and IV.3.4, Egbert's IV.2.2 and
 IV.3.4, and Gruenewald, whose pages and citations are those of the records above.
 
+## 2026-11-16: the two prose repairs after the Chapter IV record, and a sibling commit that carried one of them
+
+**Two repairs to the rendered steps, after the record above (2026-11-16).** The record above names
+`4b52294427`, `8f7f6a16f5`, `1efedb8a25` and `4b6c89fdd5`. Two later edits of this date are prose only
+and change no claim. Commit `2310287f21` on `P-AGH434RATIONALNORMALCURVE` stopped the step from
+asserting, before proving it, that $S(X)$ is the semigroup algebra of the monoid of Hou's cone, and
+`947c9fd852` carried the wording that replaced the fragment it left; the step now introduces the cone
+once and proves $k[\ZZ^2\cap\sigma]\cong S(X)$ below. Commit `9d7bdc233c` on `P-AGH423DUALCURVE` makes
+step `s10` say that Reiser's printed formula of (b) is his recipe for a contact of order $2$, so that
+applying it to a contact of order $3$ gives the corrected point, rather than reading as though the
+printed point were already the corrected one.
+
+**A sibling commit of this date carries the second of those repairs (2026-11-16).** Commit
+`947c9fd852` names `P-AGH4311PROJECTIONCLOSEDIMMERSION` and touches that card, and it also carries the
+six-line `P-AGH434RATIONALNORMALCURVE` edit that was in the index when it was made: the two sessions
+share the one checkout, and the commit's pathspec did not exclude it. Under `QUAL-07` and `QUAL-09`
+that is a wrong message and not lost work, so the edit stands where it landed. No dated record and no
+dated event was changed by the sweep, and the card's own text is the one paragraph named above. No dated record and no card's text was
+changed by the sweep beyond that one paragraph.
+
 ## 2026-11-16: the four V-batch cards of #121, what their published proofs cover, and the two parts of V.4.15 that stay open
 
 The batch is the four cards `P-AGH5412KODAIRAVANISH` (V.4.12), `P-AGH5415GENPOSITION` (V.4.15),
