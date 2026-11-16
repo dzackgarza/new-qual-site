@@ -52,6 +52,36 @@ def folded(day: str) -> str:
 
 
 FOLDED = folded("2026-11-11")
+
+
+def twice_recorded(day: str) -> str:
+    """The fixture card carrying two dated audit events of one day and one author."""
+    return CARD.replace(
+        "\nreview: draft\n",
+        "\nreview: draft\n"
+        "audit:\n"
+        "- event: source-checked\n"
+        "  by: claude\n"
+        f"  date: {day}\n"
+        "  note: The statement matches the printed exercise.\n"
+        "- event: source-checked\n"
+        "  by: claude\n"
+        f"  date: {day}\n"
+        "  note: The local group is Hatcher's `M|x` on printed p. 234.\n",
+    )
+
+
+TWICE_RECORDED = twice_recorded("2026-11-11")
+# Two dated COMPLAINTS records of one day, so the day alone does not identify either.
+TWICE_RECORDED_COMPLAINTS = """# Mathematical issues and papercuts
+
+## Open findings
+
+**Searched outside the retained sets (2026-11-10).** The observation.
+
+**A second search on the same day (2026-11-10).** Another observation.
+"""
+
 # A root-level complaints file in the stated record format: a dated section, and a
 # dated paragraph inside an undated entry.
 COMPLAINTS = """# Mathematical issues and papercuts
@@ -268,6 +298,66 @@ def test_a_dated_event_restored_to_its_earlier_text_is_accepted(repo: Path, monk
 
     assert result.returncode == 0, result.stderr
     assert git(repo, "show", ":corpus/one card.md") == RECORDED
+
+
+def test_restoring_one_event_does_not_excuse_a_rewrite_of_another(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """QUAL-11 judges each record: a restoration beside a rewrite does not excuse it.
+
+    Two events of one day and one author are the case the day cannot tell apart. A commit
+    that restores one of them and gives the other text written that day is still a commit
+    that rewrote a dated record, and what the gate knows about the restored one says
+    nothing about the other.
+    """
+    card = repo / "corpus/one card.md"
+    card.write_text(TWICE_RECORDED)
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both events on their day")
+
+    card.write_text(
+        TWICE_RECORDED.replace("matches the printed exercise", "matches the printed statement").replace(
+            "`M|x` on printed p. 234", "`N|y` on printed p. 235"
+        )
+    )
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite both records in place")
+
+    card.write_text(TWICE_RECORDED.replace("`M|x` on printed p. 234", "`Q|z` on printed p. 236"))
+    git(repo, "add", "corpus/one card.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 1, result.stdout
+    assert "the source-checked event by claude dated 2026-11-11" in result.stderr
+    assert "QUAL-11" in result.stderr
+
+
+def test_restoring_one_record_does_not_excuse_a_rewrite_of_another(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The COMPLAINTS records of one day are judged one by one for the same reason."""
+    path = repo / "COMPLAINTS.md"
+    path.write_text(TWICE_RECORDED_COMPLAINTS)
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-10T09:00:00 +0000")
+    git(repo, "commit", "-qm", "record both findings on their day")
+
+    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("The observation.", "The corrected observation.").replace(
+        "Another observation.", "Another corrected observation."
+    ))
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
+    git(repo, "commit", "-qm", "rewrite both records in place")
+
+    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("Another observation.", "A third observation."))
+    git(repo, "add", "COMPLAINTS.md")
+    monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-16T09:00:00 +0000")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 1, result.stdout
+    assert "the record dated 2026-11-10" in result.stderr
+    assert "QUAL-11" in result.stderr
 
 
 def test_a_restored_event_matches_a_note_folded_over_lines(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:
