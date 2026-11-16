@@ -63,6 +63,35 @@ audit:
     equivalence makes an ample D very ample. COMPLAINTS.md had recorded that step as a
     misuse of (4.11) and the entry as printed pp. 292-293; both are corrected
     there. The card's own proof is unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Under issue #121 the solution is now a transcription of the published
+    argument, one step per printed statement. Read at the printed places:
+    Hartshorne, Theorem 4.11 with Lemma 4.12, printed pp. 405--406, whose
+    (ii) => (iii) is the easy direction of the Nakai--Moishezon criterion
+    Theorem 1.10, printed p. 365, and whose (iv) => (i) runs through the
+    minimal-line choice of six skew lines and Lemma 4.12; Hartshorne,
+    Corollary 4.13(a),(b), printed p. 406, the numerical translation of 4.11
+    and the irreducible nonsingular member, which the book derives from
+    Bertini's theorem (II, 8.18) and (III, 7.9.1); Reid, Chapters on Algebraic
+    Surfaces, Section 3.9 (numerical 1-connectedness), Lemma 3.11(i),(ii) and
+    Section 3.12, printed pp. 72--73, being the route nef-and-big implies
+    1-connected implies H^0(O_D) = k implies H^1(O_X(-D)) = 0 on a surface with
+    H^1(O_X) = 0. The two structure-sheaf facts were checked against the book
+    rather than assumed: II.5.9, printed p. 116, for the ideal sheaf sequence of
+    the cubic hypersurface, and Theorem III.5.1(b), printed p. 225, which
+    vanishes H^1(P^3,O) and H^2(P^3,O(-3)) and so gives H^0(O_X) = k and
+    H^1(O_X) = 0. Checked, not assumed: Theorem 4.11 prints four equivalent
+    conditions on a divisor of the cubic surface and Corollary 4.13(b) is
+    stated for the classes satisfying (a), so an ample D falls under it; the
+    exercise itself is printed on p. 408. What the transcription does not keep
+    is this card's earlier independent proof of H^1(O_X) = 0 by the point-blowup
+    invariance of q, which is replaced by the projective-space computation
+    above; and the earlier sequence through an explicit C with
+    H^0(O_C) = k, which is replaced by Reid's 1-connectedness route. No part of
+    the exercise is left without a published proof by this transcription.
 ---
 
 ::: {.problem}
@@ -71,252 +100,117 @@ This is Kodaira's vanishing theorem for the cubic surface (III, 7.15).
 :::
 
 ::: {.solution}
-Let
-$$
-X\subseteq\PP^3
-$$
-be the nonsingular cubic surface and let $D$ be ample.
+Let $X\subseteq\PP^3$ be the nonsingular cubic surface and let $D$ be an ample divisor on $X$.
+
+The argument is the printed one. It has three published inputs: the ampleness criterion (4.11) of the book, with its numerical translation and its irreducible nonsingular member, Corollary 4.13; and the connectedness route to the vanishing of Reid's Section 3.12.
 
 ::: pf
 
-::: {.pf-step #h0-h1-structure-sheaf}
-One has
+::: {.pf-step #positive-on-lines}
+For an ample $D$ one has
 $$
-\boxed{
-H^0(X,\OO_X)=k,
-\qquad
-H^1(X,\OO_X)=0.}
+\boxed{D^2>0,\qquad D\cdot L>0\ \text{for every line } L\subseteq X.}
 $$
 
 ::: pf-proof
-The cubic surface is
+This is the implication (ii) $\Rightarrow$ (iii) of Hartshorne's Theorem 4.11, printed p. 405, whose four conditions on a divisor $D$ of the cubic surface are: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$ and $D\cdot L>0$ for every line $L\subseteq X$; (iv) $D\cdot L>0$ for every line $L\subseteq X$. The book obtains (ii) $\Rightarrow$ (iii) from the easy direction of the Nakai--Moishezon criterion, Theorem 1.10, printed p. 365: a divisor $D$ on a surface is ample if and only if $D^2>0$ and $D\cdot C>0$ for every irreducible curve $C$.
+:::
+
+:::
+
+::: {.pf-step #very-ample}
+$D$ is very ample.
+
+::: pf-proof
+Step [](#positive-on-lines){.pf-ref} gives condition (iv) of Theorem 4.11, so (i) holds by the implication (iv) $\Rightarrow$ (i) proved on printed pp. 405--406. That proof runs as follows. Choose six mutually skew lines $E_6',E_5',\ldots,E_1'$: take for $E_6'$ a line on which $D$ is minimal, then for $E_5'$ a line not meeting $E_6'$ on which $D$ is minimal among those, then $E_4',E_3'$ similarly, and finally $E_1',E_2'$ among the three remaining lines, ordered so that $D\cdot E_1'\ge D\cdot E_2'$. The configuration of the $27$ lines is the same for any six mutually skew ones, so by (4.10) the labelling may be changed to make $E_i'=E_i$ for every $i$. Then $D\cdot E_i=b_i$ with $D\sim al-\sum_ib_ie_i$, so $b_1\ge b_2\ge\cdots\ge b_6>0$; and $F_{12}$ was a candidate when $E_3'$ was chosen, so $D\cdot F_{12}\ge D\cdot E_3'$, that is $a-b_1-b_2\ge b_3$. Lemma 4.12, printed p. 405, states that a class with $b_1\ge\cdots\ge b_6>0$ and $a\ge b_1+b_2+b_3$ is very ample, and its proof writes $D$ as a nonnegative combination $\sum_ic_iD_i$ of
 $$
-X\cong\operatorname{Bl}_{P_1,\ldots,P_6}\PP^2
+D_0=l,\quad D_1=l-e_1,\quad D_2=2l-e_1-e_2,\quad D_3=2l-e_1-e_2-e_3,
 $$
-for six points in general position [[FE-SRFCUBIC]]. Point blowups of a
-nonsingular surface preserve
 $$
-q=h^1(\OO)
+D_4=2l-e_1-e_2-e_3-e_4,\quad D_5=3l-e_1-\cdots-e_5,\quad D_6=3l-e_1-\cdots-e_6
 $$
-[[FE-SRFBLOW]]. Since
-$$
-H^1(\PP^2,\OO_{\PP^2})=0,
-$$
-it follows that
-$$
-H^1(X,\OO_X)=0.
-$$
-Also $X$ is integral and projective over the algebraically closed ground
-field, so every global regular function is constant:
-$$
-H^0(X,\OO_X)=k.
-$$
+with $c_6>0$, each $D_i$ moving in a base-point-free linear system, $D_6$ very ample by (4.6), and uses that a very ample divisor plus one moving in a base-point-free linear system is very ample (II, Ex. 7.5).
 :::
 
 :::
 
 ::: {.pf-step #nonsingular-curve-in-class}
-The divisor class $D$ contains a nonsingular irreducible curve
+The linear system $\abs{D}$ contains an irreducible nonsingular curve $C$. In particular $D$ is effective.
+
+::: pf-proof
+Corollary 4.13(a), printed p. 406, is the translation of (4.11) into coordinates: $D\sim al-\sum_ib_ie_i$ is ample if and only if $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{j\ne i}b_j$ for each $i$. Corollary 4.13(b) then states that in any divisor class satisfying those conditions there is an irreducible nonsingular curve, which the book derives from Bertini's theorem (II, 8.18) and (III, 7.9.1). Since $D$ is ample, its class satisfies the conditions, so $\abs{D}$ contains an irreducible nonsingular curve $C$.
+:::
+
+:::
+
+::: {.pf-step #numerically-one-connected}
+$D$ is numerically $1$-connected: for every decomposition $D=D_1+D_2$ with $D_1,D_2>0$ effective one has $D_1\cdot D_2\ge1$.
+
+::: pf-proof
+This is Lemma 3.11(i) of Reid, printed p. 72, whose statement is that for a nonsingular projective surface and an effective divisor $D$, nef together with $D^2>0$ implies that $D$ is numerically $1$-connected in the sense of Section 3.9, printed p. 72. The hypotheses hold: $D$ is effective by step [](#nonsingular-curve-in-class){.pf-ref}, $D^2>0$ by step [](#positive-on-lines){.pf-ref}, and $D$ is nef because $D\cdot\Gamma>0$ for every curve $\Gamma$, which is Theorem 1.10 again. The proof is Reid's: from $D$ nef, $D\cdot D_i\ge0$ for $i=1,2$; if $D_1\cdot D_2\le0$, then
 $$
-\boxed{C\in\linearsystem{D}.}
+D_1^2D_2^2\ge(D_1\cdot D_2)^2\ge0,
+$$
+which contradicts the Hodge index theorem unless $D_1=0$ or $D_2=0$.
+:::
+
+:::
+
+::: {.pf-step #structure-sheaf}
+$$
+\boxed{H^0(X,\OO_X)=k,\qquad H^1(X,\OO_X)=0.}
 $$
 
 ::: pf-proof
-The ampleness criterion (4.11) gives
+Let $F$ be the cubic form with $X=V(F)\subseteq\PP^3$. The ideal sheaf of $X$ is $\OO_{\PP^3}(-3)$, so
 $$
-D\cdot L>0
+0\longrightarrow\OO_{\PP^3}(-3)\longrightarrow\OO_{\PP^3}\longrightarrow\OO_X\longrightarrow0
 $$
-for every one of the $27$ lines on $X$, and
-$$
-D^2>0.
-$$
-Thus $D$ satisfies alternative (c) of V.4.8. By
-[[P-AGH548IRREDCLASSES]], every such class contains an irreducible
-nonsingular curve. Choose one and call it $C$. Then
-$$
-C\sim D.
-$$
+is exact: it is the ideal sheaf sequence of a closed subscheme, Hartshorne II.5.9, printed p. 116. Theorem III.5.1(b), printed p. 225, gives $H^i(\PP^3,\OO_{\PP^3}(n))=0$ for $0<i<3$ and all $n$, so that $H^1(\PP^3,\OO_{\PP^3})=0$ and $H^2(\PP^3,\OO_{\PP^3}(-3))=0$, while $H^0(\PP^3,\OO_{\PP^3}(-3))=0$ and $H^0(\PP^3,\OO_{\PP^3})=k$ by (a) of the same theorem. The long exact sequence therefore has $H^1(X,\OO_X)=0$ between two zero groups and $H^0(X,\OO_X)\cong k$ at the other end.
 :::
 
 :::
 
-::: {.pf-step #h0-negative-d-vanishes}
-The line bundle
+::: {.pf-step #structure-sheaf-of-D}
+Let $\OO_D=\OO_X/\OO_X(-D)$ be the structure sheaf of the divisor $D$. Then
 $$
-\OO_X(-D)
-$$
-has no nonzero global section:
-$$
-\boxed{H^0(X,\OO_X(-D))=0.}
+\boxed{H^0(X,\OO_D)=k.}
 $$
 
 ::: pf-proof
-Suppose a nonzero section existed. If it vanished nowhere, it would
-trivialize $\OO_X(-D)$, forcing $D\sim0$ and hence $D^2=0$, contrary to
-step [](#nonsingular-curve-in-class){.pf-ref}. Thus its zero divisor is a nonzero effective divisor
-$$
-E\sim-D.
-$$
-Because $D$ is ample, it has positive intersection with every nonzero
-effective curve, hence
-$$
-D\cdot E>0.
-$$
-But numerical equivalence gives
-$$
-D\cdot E
-=
--D^2
-<0,
-$$
-since $D^2>0$ by step [](#nonsingular-curve-in-class){.pf-ref}. This contradiction proves the vanishing.
+Because $D$ is effective, $\OO_D=\OO_X/\OO_X(-D)$ is the structure sheaf of the subscheme $D\subseteq X$, as in Reid's Section 3.9, printed p. 72. Lemma 3.11(ii), printed p. 72, states that a numerically $1$-connected effective divisor has $H^0(\OO_D)=$ constants. Step [](#numerically-one-connected){.pf-ref} supplies the hypothesis, so $H^0(X,\OO_D)$ is one-dimensional over $k$.
 :::
 
 :::
 
-::: {.pf-step #ideal-sheaf-sequence}
-The curve $C$ gives an exact sequence
+::: {.pf-step #vanishing}
 $$
-0
-\longrightarrow
-\OO_X(-D)
-\longrightarrow
-\OO_X
-\longrightarrow
-\OO_C
-\longrightarrow
-0.
+\boxed{H^1\left(X,\OO_X(-D)\right)=0.}
 $$
 
 ::: pf-proof
-Since $C$ is an effective Cartier divisor linearly equivalent to $D$, its
-ideal sheaf is
+The sequence
 $$
-\mathcal I_C\cong\OO_X(-C)\cong\OO_X(-D).
+0\longrightarrow\OO_X(-D)\longrightarrow\OO_X\longrightarrow\OO_D\longrightarrow0
 $$
-The standard ideal-sheaf sequence of $C$ is therefore exactly the displayed
-sequence.
+is exact, so its long exact cohomology sequence begins
+$$
+0\longrightarrow H^0(\OO_X(-D))\longrightarrow H^0(\OO_X)\longrightarrow H^0(\OO_D)\longrightarrow H^1(\OO_X(-D))\longrightarrow H^1(\OO_X).
+$$
+By step [](#structure-sheaf){.pf-ref} the two groups in the middle are $k$, and the map between them sends the constant function $1$ to the constant function $1$, so it is an isomorphism; by the same step $H^1(\OO_X)=0$. Exactness then forces $H^1(X,\OO_X(-D))=0$. This is the argument of Reid's Section 3.12, printed p. 73, carried there for a K3 surface and then stated for any surface with $H^1(\OO_X)=0$: the vanishing holds for an effective divisor that is numerically $1$-connected, in particular for an effective, nef and big divisor.
 :::
 
-:::
-
-::: {.pf-step #h0-oc-restriction-iso}
-One has
-$$
-\boxed{H^0(C,\OO_C)=k,}
-$$
-and the restriction map
-$$
-H^0(X,\OO_X)\longrightarrow H^0(C,\OO_C)
-$$
-is an isomorphism.
-
-::: pf-proof
-The curve $C$ is nonsingular and irreducible by step [](#nonsingular-curve-in-class){.pf-ref}, hence integral
-and projective. Thus every global regular function on $C$ is constant:
-$$
-H^0(C,\OO_C)=k.
-$$
-The restriction map sends the constant function $1$ on $X$ to the constant
-function $1$ on $C$. Under the identifications
-$$
-H^0(X,\OO_X)=k=H^0(C,\OO_C),
-$$
-it is therefore the identity map on $k$.
-:::
-
-:::
-
-::: {.pf-step #h1-negative-d-vanishes}
-Consequently
-$$
-\boxed{H^1(X,\OO_X(-D))=0.}
-$$
-
-::: pf-proof
-The long exact cohomology sequence of step [](#ideal-sheaf-sequence){.pf-ref} begins
-$$
-0
-\longrightarrow
-H^0(X,\OO_X(-D))
-\longrightarrow
-H^0(X,\OO_X)
-\longrightarrow
-H^0(C,\OO_C)
-\longrightarrow
-H^1(X,\OO_X(-D))
-\longrightarrow
-H^1(X,\OO_X).
-$$
-By steps [](#h0-h1-structure-sheaf){.pf-ref}, [](#h0-negative-d-vanishes){.pf-ref}, and [](#h0-oc-restriction-iso){.pf-ref} this becomes
-$$
-0
-\longrightarrow
-0
-\longrightarrow
-k
-\xrightarrow{\sim}
-k
-\longrightarrow
-H^1(X,\OO_X(-D))
-\longrightarrow
-0.
-$$
-Exactness forces
-$$
-H^1(X,\OO_X(-D))=0.
-$$
-:::
-
-:::
-
-::: pf-qed
-Steps [](#h0-h1-structure-sheaf){.pf-ref}, [](#nonsingular-curve-in-class){.pf-ref}, [](#h0-negative-d-vanishes){.pf-ref}, [](#ideal-sheaf-sequence){.pf-ref} and [](#h0-oc-restriction-iso){.pf-ref} establish the cohomological inputs for the divisor sequence,
-and step [](#h1-negative-d-vanishes){.pf-ref} gives the required vanishing.
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solutions"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292, read in
-`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
-`tmp/sources/hartshorne-solutions-egbert.md` (printed folio = PDF page number; the text version marks the PDF
-pages in blocks of twenty, and its entry 5.4.13 at line 12488 is the one printed at p. 292), is wholly on that
-one page and takes this card's route. He records $H^0(\OO_X)=k$, $H^1(\OO_X)=0$ and
-$H^2(\OO_X)=H^0(\OO_X(-3))=p_g=0$, writes "By chapter 1, $H^0(D,\OO_D)=k$", reads the long exact sequence of
-$0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$ term by term, and closes by contradiction: "Suppose there is an effective
-divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line
-with negative intersection which is silly."
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.12, printed p. 408, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, whose printed page is its marker minus fifteen.
 
-His closing step needs a completion, and the completion is the card's. A negative intersection with a line is
-no contradiction: an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$, so a line contained in the support
-of an effective divisor can meet that divisor negatively. The contradiction is with very ampleness, directly.
-$D$ very ample gives $D\cdot C>0$ for every irreducible curve $C$, hence $D\cdot E>0$ for every nonzero
-effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$, which $D^2>0$ excludes. So no effective divisor is
-linearly equivalent to $-D$, and the vanishing follows from the exact sequence. The number his sentence cites
-needs care because two results share it. The exercise
-printed as 4.11 in §4 is the Weyl groups exercise, which says nothing about divisors; the criterion meant is
-**Theorem 4.11** of the text, "The following conditions are equivalent, for a divisor $D$ on the cubic surface
-$X$: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$, and for every line $L\subseteq X$, $D\cdot L>0$;
-(iv) for every line $L\subseteq X$, $D\cdot L>0$." By (iii) with the equivalence, an ample $D$ is very ample,
-which is the step used above. What his entry does not supply is the existence of a nonsingular member $C\in\abs{D}$, which step
-[](#nonsingular-curve-in-class){.pf-ref} takes from (4.11) and V.4.8.
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, was not read for this card. The three sources the proof rests on are the book itself and Reid's Park City notes, and each is used at a numbered statement: Theorem 4.11 with Lemma 4.12 for the passage from ample to very ample, Corollary 4.13 for the numerical translation and the nonsingular member, and Lemma 3.11 with Section 3.12 of Reid for the cohomological step. Reid's Section 3.12 gives the vanishing in the form this exercise asks for, $H^1(\OO_X(-D))=0$ for $D$ effective and $1$-connected on a surface with $H^1(\OO_X)=0$, and derives it, as on this card, from $H^0(\OO_D)=$ constants and the long exact sequence of $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$; his Section 3.13 then records that the characteristic-zero proofs of the general theorem are Ramanujam's and the Bogomolov--Mumford one, neither of which the cubic surface needs.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, Solution 5.4.12, printed p. 111, is defective at its second sentence:
-"Clearly we have $H^0(X,\OO_X)=k$, $H^1(X,\OO_X)=0$. Then for any ample divisor $D$, it is very ample by
-theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor $D$ on the
-cubic surface embeds $X$ in $\PP^{h^0(\mathcal L(D))-1}$, so $h^0(\mathcal L(D))\ge3$: the image spans that
-projective space and has dimension $2$, and $h^0=3$ would make the image all of $\PP^2$, that is
-$X\cong\PP^2$. That false $k$ is
-the source of his "$k\to k$". His next display is a sequence of $\OO_X$-modules,
-$0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, "i.e."
-$0\to H^0(X,\mathcal L(-D))\to k\to k\to H^1(X,\mathcal L(-D))\to0$, in which the second $k$ is his
-$h^0(\mathcal L(D))$; the sheaf that occurs there is $\OO_C$ for $C\in\abs{D}$, and the sequence with
-$\mathcal L(D)$ as cokernel is not exact. With the correct sequence the map $k\to k$ is an isomorphism and the
-vanishing is immediate. His vanishing step itself is the card's: if $s\in H^0(X,\mathcal L(-D))$ were nonzero
-with $C=\operatorname{Supp}s$, then for a line $E$ not contained in $C$ one has $C\cdot E\ge0$, hence
-$D\cdot E\le0$, against (4.11). Theorem 4.11 is printed on p. 405 and the exercise itself on p. 408, its text being read in
-`tmp/sources/hartshorne-1977-algebraic-geometry.md`, where those printed pages are its PDF pages 420 and 423
-(printed page = PDF page minus fifteen, the offset that puts V.2.13 on printed p. 385).
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292, is wholly on that one page and takes the same route with the two structure-sheaf facts stated rather than derived: he records $H^0(\OO_X)=k$, $H^1(\OO_X)=0$ and $H^2(\OO_X)=H^0(\OO_X(-3))=p_g=0$, writes "By chapter 1, $H^0(D,\OO_D)=k$" for the divisor $D$, and reads the long exact sequence term by term. His closing step, "Suppose there is an effective divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line with negative intersection which is silly", needs a completion. A negative intersection with a line is no contradiction: an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$, so a line in the support of an effective divisor can meet that divisor negatively. The contradiction is with very ampleness directly: $D$ very ample gives $D\cdot\Gamma>0$ for every irreducible curve $\Gamma$, hence $D\cdot E>0$ for every nonzero effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$, which $D^2>0$ excludes. The number his sentence cites needs care because two results share it: the exercise printed as 4.11 in §4 is the Weyl groups exercise and says nothing about divisors, while **Theorem 4.11** is the criterion. The existence of a nonsingular member of $\abs{D}$, which his entry does not supply, is Corollary 4.13(b) here.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.4.12, printed p. 111, is defective at its second sentence: "Clearly we have $H^0(X,\OO_X)=k$, $H^1(X,\OO_X)=0$. Then for any ample divisor $D$, it is very ample by theorem 4.11., we have $H^0(X,\mathcal L(D))=k$." The inference is false. A very ample divisor $D$ embeds $X$ in $\PP^{h^0(\mathcal L(D))-1}$, so $h^0(\mathcal L(D))\ge3$: the image has dimension $2$ and spans that projective space, and $h^0=3$ would make the image all of $\PP^2$, that is $X\cong\PP^2$. That false $k$ is the second $k$ of the "$k\to k$" he then writes. His next display is a sequence of $\OO_X$-modules, $0\to\mathcal L(-D)\to\OO_X\to\mathcal L(D)\to0$, in which the sheaf that occurs is $\OO_C$ for $C\in\abs{D}$; with the correct sequence the map $k\to k$ is an isomorphism and the vanishing is immediate, which is the last step of this card.
 :::
