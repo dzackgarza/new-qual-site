@@ -524,6 +524,36 @@ audit:
     Exercise 3.7.4 and the Math StackExchange answer were not reopened; no step
     was re-derived, and no source was searched in this pass.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the latest reader's report, on the normalization in the
+    statement. The preceding QUAL-01 repair added only the pointwise condition
+    (N): identity of the trace at a closed point and additivity on finite
+    reduced schemes. That condition leaves the trace on $X$ free by a nonzero
+    scalar, so it did not make the scalar-sensitive assertions (b) and (d)
+    well-posed. The statement now also imposes the point comparison (C),
+    $t_V(\gamma^{0,0}_{Q/V}(1))=1$, on each nonsingular projective $V$ at a
+    chosen closed point, with $\gamma^{0,0}$ the Gysin map of Stacks Project
+    Remark 50.23.7 (tag 0G8A). Lemma 50.23.11 (tag 0G8E) proves that this
+    Gysin class is nonzero, and uniqueness up to a unit is Lemma 50.24.3 (tag
+    0G8I), already cited in the solution; hence (C), unlike (N), fixes the
+    scalar. Part (b) now also stipulates the generator $1_{\PP^n}$ used in its
+    identification with $k$, namely the generator of step s3 characterized by
+    $t_{\PP^n}(1_{\PP^n}\smile\eta_{\PP^n}(L))=1$ for a linear
+    $L\cong\PP^p$. The head and trace-normalization remark now distinguish (N)
+    from (C), and step s3 no longer leaves the identification of Exercise
+    III.7.3 unqualified. The added normalizations are the card's QUAL-01 repair,
+    not printed text: the printed exercise, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md on printed pp. 249--250
+    (PDF pp. 264--265), says only to identify $H^p(X,\Omega^p)$ with $k$ by
+    Exercise III.7.3 and contains no point comparison or choice of generator.
+    Checked in this pass: that exercise, Remark 50.23.7 and Lemma 50.23.11 in
+    tmp/sources/stacks-tags/0G8A.md and 0G8E.md, and the card's complete
+    solution and remarks. No source asserting (R) or (B) was added, and no
+    other step was changed.
+
 ---
 
 ::: {.problem}
@@ -538,11 +568,15 @@ t_Y: H^{n-p}(Y, \Omega_Y^{n-p}) \to k
 
 These trace maps are normalized so that the trace at a closed point is the identity: for a closed point $P$ the map $t_P: H^0(P, \OO_P) \to k$ is the identity of $k$, and on a finite reduced $k$-scheme the trace is the sum of the traces at its points.
 
+On each nonsingular projective variety $V$ over $k$, the trace used below is further normalized by the point comparison
+$$t_V\bigl(\gamma^{0,0}_{Q/V}(1)\bigr)=1$$
+at a chosen closed point $Q\in V$, where $\gamma^{0,0}_{Q/V}:H^0(Q,\OO_Q)\to H^{\dim V}(V,\Omega_V^{\dim V})$ is the Gysin map of the closed immersion $Q\hookrightarrow V$ ([Stacks Project, Remark 50.23.7](https://stacks.math.columbia.edu/tag/0G8A)).
+
 Composing, we obtain a linear map $H^{n-p}(X, \Omega_X^{n-p}) \to k$. By (7.13) this corresponds to an element $\eta(Y) \in H^p(X, \Omega_X^p)$, which we call the cohomology class of $Y$.
 
 (a) If $P \in X$ is a closed point, show that $t_X(\eta(P)) = 1$, where $\eta(P) \in H^n(X, \Omega^n)$ and $t_X$ is the trace map.
 
-(b) If $X = \PP^n$, identify $H^p(X, \Omega^p)$ with $k$ by (Ex. 7.3), and show that $\eta(Y) = (\deg Y) \cdot 1$, where $\deg Y$ is the degree of $Y$ as a projective variety (I, §7).
+(b) If $X = \PP^n$, identify $H^p(X, \Omega^p)$ with $k$ by (Ex. 7.3), taking $1$ to be the class $1_{\PP^n}$ characterized by $t_{\PP^n}(1_{\PP^n}\smile\eta_{\PP^n}(L))=1$ for a general linear subspace $L\cong\PP^p$ of $\PP^n$ that cuts $Y$ in its $\deg Y$ distinct intersection points, and show that $\eta(Y) = (\deg Y) \cdot 1$, where $\deg Y$ is the degree of $Y$ as a projective variety (I, §7).
 
    [Hint: Cut with a hyperplane $H \subseteq X$, and use Bertini's theorem (II, 8.18) to reduce to the case $Y$ is a finite set of points.]
 
@@ -558,7 +592,7 @@ See Matsumura [1] for further discussion.
 :::
 
 ::: {.solution}
-The trace maps are those of the statement, normalized so that the trace at a closed point is the identity of $k$. Written out, (N) says that the trace on a finite reduced $k$-scheme is the sum of the traces at its points, and that on $\Spec k$ it is $\operatorname{id}_k$. Serre duality supplies a trace only up to a nonzero scalar (III.7.2, printed p. 241; III.7.14, printed p. 247, says of it that "we know only that it exists"), so this normalization is a condition on the trace and not a convention: parts (b) and (d) assert numerical identities, and they are stated for the trace it selects. We use three further properties of that trace.
+The trace maps are those of the statement. Written out, (N) says that the trace on a finite reduced $k$-scheme is the sum of the traces at its points, and that on $\Spec k$ it is $\operatorname{id}_k$. The further point comparison (C) is $t_V(\gamma^{0,0}_{Q/V}(1))=1$. Serre duality supplies a trace only up to a nonzero scalar (III.7.2, printed p. 241; III.7.14, printed p. 247, says of it that "we know only that it exists"): (N) alone leaves that scalar free on $V$, while (C) fixes it. Parts (b) and (d) are stated for the trace selected by (C). We use three further properties of that trace.
 
 (G) For a nonsingular closed immersion $j:Y\hookrightarrow X$ of codimension $p$
 the Gysin map
@@ -671,13 +705,13 @@ divisor and (B) constrains the square of a transverse pair, and the point
 comparison follows from neither, carrying either to a point taking a further
 identification.
 
-(N) is the normalization of the statement, and part (a) uses only (N). (R) is the substantive
+(N) and (C) are the normalizations of the statement, and part (a) uses only (N). (R) is the substantive
 one, and part (d) is its case $\beta=1$. (B) is the second, and part (b)
 is its consequence. Both are cases of one statement, the compatibility of the
 trace of Grothendieck--Serre duality with the Gysin maps of closed immersions of
 nonsingular varieties: the divisor case of that compatibility is (R), and its
 base-change case for a transverse pair is (B). Neither is a formal consequence
-of the definitions (N) and (G); both are properties of the trace that III.7
+of the definitions (N), (C) and (G); both are properties of the trace that III.7
 constructs.
 
 There is no uniqueness in (N). What the duality gives is uniqueness up to a
@@ -750,7 +784,7 @@ $$
 Thus (R) and (B) are statements about the trace fixed by
 $t_X(\gamma^{0,0}_{P/X}(1))=1$, not about a choice among several; (N) does not
 fix that trace, and the point comparison does. The four assertions of the
-exercise follow from (N), (G), (R) and (B), and (R) is a
+exercise follow from (N), (C), (G), (R) and (B), and (R) is a
 theorem of the book in dimension one.
 
 ::: pf
@@ -862,8 +896,8 @@ $$
 \eta_L(Z)=\sum_{a=1}^d\eta_L(P_a).
 $$
 
-Two generators have to be named, and both are fixed by the convention at the
-head of the solution. For a nonsingular projective variety $V$ of dimension
+Two generators have to be named, and both are fixed by the conventions of the
+statement and the head of the solution. For a nonsingular projective variety $V$ of dimension
 $m$, let $1_V\in H^m(V,\Omega_V^m)\cong k$ be the class with $t_V(1_V)=1$.
 On $L$, which has dimension $p$, step [](#s1){.pf-ref} says that
 $t_L(\eta_L(P))=1$ for every point $P$, so
@@ -901,16 +935,16 @@ nonzero. With $m=n$ this proves $\alpha_0=\eta_{\PP^n}(L)\ne0$. By Exercise
 III.7.3 the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, so
 $\alpha_0$ spans it.
 
-Define $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ to be the class with
+The generator $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ stipulated in the statement is
+the class with
 $$
 t_{\PP^n}\bigl(1_{\PP^n}\smile \alpha_0\bigr)=1 ,
 $$
 which exists and is unique because $\alpha_0\ne0$ and the Serre pairing is
 nondegenerate: it is the class pairing to $1$ with the class of the linear
-$\PP^p$. This fixes the generator of $H^p(\PP^n,\Omega^p)$ that the number $\deg Y$ is measured against. Exercise
-III.7.3 identifies $H^p(\PP^n,\Omega^p)$ with $k$, but does not say which
-generator of the dual space the trace of Serre duality is, and (b) is false by
-a scalar for another choice.
+$\PP^p$. This is the generator of $H^p(\PP^n,\Omega^p)$ against which (b)
+measures $\deg Y$. Exercise III.7.3 supplies the one-dimensional space but does
+not itself choose this generator.
 
 By (G) applied to $i:L\hookrightarrow\PP^n$ and to $1\in H^0(L,\OO_L)$, for
 every $\beta\in H^p(\PP^n,\Omega^p)$ one has
@@ -1120,7 +1154,7 @@ relative to (R), and relative to (R) alone.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N). Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) relative to (B) and (R): step [](#s2){.pf-ref} is (B), where the count $\deg Y$ is carried from $L$ back to $\PP^n$, step [](#s3){.pf-ref} uses (B) again to prove $\alpha_0\ne0$ and adds the normalization $1_{\PP^n}$, and (B) is the base-change case of the same trace compatibility of which (R) is the divisor case. Step [](#s4){.pf-ref} proves part (c). Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d), which is the case $\beta=1$ of (R): in dimension one (R) is proved there from Theorem III.7.14.1, sign included, and for $n\ge2$ (R) is an input the book does not supply.
+Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N). Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) relative to (B) and (R): step [](#s2){.pf-ref} is (B), where the count $\deg Y$ is carried from $L$ back to $\PP^n$, step [](#s3){.pf-ref} uses (B) again to prove $\alpha_0\ne0$ and recovers the generator $1_{\PP^n}$ stipulated in the statement, and (B) is the base-change case of the same trace compatibility of which (R) is the divisor case. Step [](#s4){.pf-ref} proves part (c). Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d), which is the case $\beta=1$ of (R): in dimension one (R) is proved there from Theorem III.7.14.1, sign included, and for $n\ge2$ (R) is an input the book does not supply.
 
 :::
 
@@ -1137,7 +1171,7 @@ A natural choice does exist on $\PP^n$ and the book records it without using it:
 $$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
 which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
 
-The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is the normalization the statement carries and which the head records as (N), alongside (G), (R) and (B). Nothing of that kind is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and uses the generator $1_{\PP^n}$ of that step to say which element of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves, and for $n\ge2$ it is used as stated in the head.
+The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's identities therefore require a fixed trace. Accordingly, the statement carries the point comparison (C), which fixes that trace, in addition to the pointwise condition (N); part (b) also stipulates the generator $1_{\PP^n}$. Nothing of that kind is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and recovers there the generator $1_{\PP^n}$ stipulated in the statement. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves, and for $n\ge2$ it is used as stated in the head.
 :::
 
 ::: {.remark title="Published solution"}
