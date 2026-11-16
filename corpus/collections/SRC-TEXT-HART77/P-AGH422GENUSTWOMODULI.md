@@ -99,6 +99,63 @@ audit:
     Named the text version of Vakil's book at the five citations of 19.5 and
     19.6 in the remark on 2026-11-16, where they cited the PDF alone: it is
     tmp/sources/vakil-rising-sea-2025-10-21.md. No page or claim changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Printed exercise read again for this pass: Hartshorne, Algebraic Geometry
+    (1977), IV.2.2, printed p. 304 (PDF p. 319 of the checked-in extraction
+    tmp/sources/hartshorne-1977-algebraic-geometry.md), five parts (a)--(e),
+    the card's statement keeping the book's wording. The three published
+    solutions named in the brief were read at the cited places in their text
+    versions: B. Reiser, Hartshorne Solutions (15 February 2022), Exercise
+    IV.2.2, printed pp. 352--354, which is PDF pp. 353--355 of
+    tmp/sources/reiser-hartshorne-solutions-pp351-358.md, the printed folio
+    being one less than the PDF page; Chin-Lung Wang's Algebraic Geometry II
+    (NTU, 2020 Spring), Chapter IV homework, section 2 Exercise 2 by Yu-Chi
+    Hou, printed pp. 4--6 of tmp/sources/ntu-ag2-chapter4.md; and D.
+    Gruenewald, Computing Humbert Surfaces, section 2, printed p. 2 of
+    tmp/sources/gruenewald-2007-computing-humbert-surfaces.md. Part (a) is on
+    Reiser p. 352 and Hou p. 4, (b) on Reiser p. 353 and Hou pp. 4--5, (c) on
+    Reiser p. 353 and Hou p. 6, (d) on Reiser p. 354 and Hou p. 6, (e) on
+    Reiser p. 354, the single word "Yup!", and on Hou p. 6. Page positions
+    were fixed on the PDFs, by reading the printed folio of each page.
+
+    Two defects of the sources were found while checking them, and are
+    recorded in COMPLAINTS.md under this date: Hou's parts (d) and (e) name the
+    group of the action S_3 while defining the permutation of the six-tuple
+    followed by renormalization, which is the Sigma_6 action of the exercise,
+    and Hou's part (b) prints h^0(X, O_X(K_X - 2P)) = 2 where its own
+    Riemann-Roch line gives 1. What this pass did not do: it did not re-read
+    Vakil sections 19.5--19.6 or Egbert, whose citations are those of the
+    2026-11-15 events and stand unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the transcription of those sources, one step per
+    published argument, each step naming source, numbered part and printed
+    page: s1 (Reiser IV.2.2(a) printed p. 352; Hou 2(a) p. 4), s2 (Reiser
+    IV.2.2(b) p. 353 with II Ex 7.2, and Reiser's p. 352 sentence), s3
+    (Reiser p. 353; Hou pp. 4--5), s4 (Reiser p. 353; Hou p. 5), s5 (Hou
+    p. 5), s6 (Reiser IV.2.2(c) p. 353; Hou 2(c) p. 6), s7 (Hou 2(e) p. 6),
+    s8 (Reiser IV.2.2(d) p. 354, whose device is the cross-ratio), s10 and
+    s11 (Hou 2(e) p. 6; Gruenewald section 2 p. 2). Step s9 is the card's own
+    and is labelled as such, because Reiser's (e) is the word "Yup!", Hou's
+    (e) proves well-definedness and existence but not that a separable
+    degree-two cover of P^1 is determined by its branch divisor, and
+    Gruenewald states the quotient without proof; its statement is Vakil
+    Proposition 19.5.2, printed pp. 546--547, as the remark says. The earlier
+    steps s1--s5 proved (a) and (b) by Riemann-Hurwitz and Riemann-Roch for
+    Vakil's statements; the same two tools now appear where Reiser and Hou use
+    them, and the Vakil page references that were in the steps moved to the
+    remark. Checked against the book after the transcription: (a)'s "ramified
+    at exactly 6 points, with ramification index 2 at each one" and its
+    uniqueness clause, (b)'s three assertions, (c)'s uniqueness of the
+    normalization, and (d)'s Sigma_6 action as printed. Not checked: the
+    sources' own citations of the book (IV.1.7, II.7.2, I.6.6, IV.1.2) beyond
+    the statements they quote from it.
+
 review: draft
 ---
 
@@ -128,232 +185,192 @@ Then the last three are the new $\beta_1', \beta_2', \beta_3'$.
 :::
 
 ::: {.solution}
-The assertions of parts (a) and (b) are the ones R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5, 19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves: Theorem 19.5.1, printed p. 546, is the count $2g+2$ of branch points, proved in 19.5.2, printed pp. 546--547, which constructs the double cover branched at a prescribed even set of points by writing it as $y^2=f(x)$ and normalizing, and in 19.5.4, printed pp. 547--548, which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7, printed pp. 548--549, proves that a curve of genus at least $2$ admits at most one double cover of $\PP^1$, through the canonical map; and 19.6.2, printed p. 550, is where $\omega_C$, of degree $2$ with two sections, gives the double cover and assembles the bijection between genus-$2$ curves and double covers branched at six points. The steps below are not a transcription of Vakil's: they prove (a) and (b) in Hartshorne's terms, by Riemann--Hurwitz for the six branch points and for $g(X)=2$, and by Riemann--Roch for the uniqueness of the degree-two morphism, and each step says which of his propositions states the same thing. Part (c) is not in Vakil: three-transitivity of $\Aut\PP^1$ is Exercise 15.5.B there, so step [](#s6){.pf-ref} is this card's own.
+Every step below is the published argument and names the source it transcribes: B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.2, printed pp. 352--354, text version `tmp/sources/reiser-hartshorne-solutions-pp351-358.md`, whose printed folio is one less than its PDF page; Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §2 Exercise 2 by Yu-Chi Hou, printed pp. 4--6, text version `tmp/sources/ntu-ag2-chapter4.md`; and D. Gruenewald, *Computing Humbert Surfaces*, §2, printed p. 2, text version `tmp/sources/gruenewald-2007-computing-humbert-surfaces.md`. Parts (a)--(d) are Reiser's and Hou's; the correspondence of part (e) is Hou's, except for the one step marked as the card's own, which neither source proves.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #canonical-degree-two}
 
-The canonical degree-two map of a genus-$2$ curve is ramified at
-exactly six points, each with ramification index $2$.
-
-::: pf-proof
-
-The branch count is Riemann--Hurwitz for the degree-two canonical map.
-
-By [[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]], the canonical system gives
-a finite morphism
+The canonical linear system of a curve $X$ of genus $2$ determines a finite
+morphism
 $$
 f:X\longrightarrow\PP^1
 $$
-of degree $2$. Since $\characteristic k\ne2$, the induced degree-two
-extension of function fields is separable and any ramification is tame.
+of degree $2$, ramified at exactly six points, with ramification index $2$ at
+each.
 
-Riemann--Hurwitz gives
-$$
-2g(X)-2
-=
-(\deg f)\bigl(2g(\PP^1)-2\bigr)
-+
-\sum_{P\in X}(e_P-1).
-$$
-Thus
-$$
-2
-=
-2(-2)+\sum_P(e_P-1),
-$$
-so
-$$
-\sum_P(e_P-1)=6.
-$$
-For a degree-two map, every ramification index is at most $2$; at a
-ramification point it is therefore exactly $2$ and contributes $1$.
-Hence there are exactly six ramification points.
+::: pf-proof
 
-Their images in $\PP^1$ are distinct: a ramification point already has
-multiplicity $2$ in its fibre, which exhausts the degree of $f$. Thus the
-map has exactly six branch points as well.
+Reiser, Exercise IV.2.2(a), printed p. 352: the existence and the degree are
+[[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]], and because
+$\characteristic k\ne2$ the morphism is separable, so Hurwitz's formula applies
+in the form
+$$
+2\cdot2-2=2\,(0-2)+\deg R,
+$$
+that is, $\deg R=6$. A finite flat morphism of degree $2$ over an algebraically
+closed field has two points counted with multiplicity in every fibre, so
+$e_P=2$ exactly at the ramification points and $e_P=1$ elsewhere; since
+$\deg R=\sum_P(e_P-1)$, there are exactly six of them, each of index $2$.
 
-The same count is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, Theorem 19.5.1], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed p. 546, which states it as the hyperelliptic Riemann--Hurwitz formula: a double cover of $\PP^1$ by a projective regular irreducible curve of genus $g$ has $2g+2$ branch points. His proof is 19.5.2, printed pp. 546--547, which constructs the double cover branched at a prescribed set of points as the normalization of $y^2=f(x)$ and is unique, and 19.5.4, printed pp. 547--548, which computes its genus as $r/2-1$ from the Čech complex of the two affine charts and so completes the theorem; 19.6.2, printed p. 550, is where $\omega_X$, of degree $2g-2=2$ with two sections, is what gives the double cover $X\to\PP^1$, and it is there that the count $2g+2=6$ is quoted from 19.5.1. The count above is Riemann--Hurwitz.
+Hou, §2 Exercise 2(a), printed p. 4, computes $\deg R=6$ in the same line from
+Riemann--Hurwitz, records that $\characteristic k\ne2$ makes every ramification
+point tame so that $R=\sum_P(e_P-1)$ with $\deg R=6$, and concludes that $f$ is
+ramified at exactly six points.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: {.pf-step #degree-two-is-canonical}
 
-Any finite morphism
+Every finite morphism
 $$
 h:X\longrightarrow\PP^1
 $$
-of degree $2$ from a genus-$2$ curve is the canonical morphism up to an
+of degree $2$ from a curve $X$ of genus $2$ is the canonical morphism, up to an
 automorphism of $\PP^1$.
 
 ::: pf-proof
 
-The uniqueness is Riemann--Roch, applied to the pullback of a point.
-
-Let
+Reiser, Exercise IV.2.2(b), printed p. 353: it is enough to show that
+$h^*\mco_{\PP^1}(1)\cong\omega_X$. Write $h^*\mco_{\PP^1}(1)=\mcl(D)$. Then
 $$
-D=h^*(q)
+\deg D=2,
+\qquad
+\ell(D)=h^0\bigl(\mcl(D)\bigr)=2,
 $$
-for a point $q\in\PP^1$. Then $\deg D=2$, and pullback of the two
-independent sections of $\mco_{\PP^1}(1)$ gives
+the second because $h^*\mco_{\PP^1}(1)$ has the two-dimensional space of global
+sections of $\mco_{\PP^1}(1)$. Riemann--Roch on a curve of genus $2$ gives
 $$
-\ell(D)\ge2.
+\ell(D)-\ell(K-D)=\deg D+1-g=2+1-2=1,
 $$
-Riemann--Roch on the genus-$2$ curve gives
-$$
-\ell(D)-\ell(K-D)=1.
-$$
-Hence $\ell(K-D)\ge1$. But
+hence $\ell(K-D)=1$, and
 $$
 \deg(K-D)=0.
 $$
-A degree-zero line bundle with a nonzero section is trivial: the zero
-divisor of such a section is effective of degree zero, hence zero.
-Therefore
+A nonzero section of $K-D$ has an effective zero divisor of degree $0$, so
+$K-D\sim0$ by Lemma IV.1.2. Therefore
 $$
-K\sim D.
+K\sim D,
 $$
-Moreover $\ell(D)=\ell(K)=2$, so the pencil defining $h$ is the complete
-canonical pencil. Choosing a different basis of its two-dimensional
-section space changes the target coordinates by an element of
-$\PGL_2(k)$. This proves the uniqueness assertion in part (a).
-
-The same statement is R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, Proposition 19.5.7], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 548--549, who recovers the double cover from the canonical map, and 19.6.2 on printed p. 550, where a degree-two invertible sheaf with two sections is identified with $\omega_X$ because it has degree $2g-2$ and $g$ sections.
+and the pencil defining $h$ is the complete canonical pencil. Two sets of
+sections spanning the same subspace of the two-dimensional $H^0(X,K)$ give
+morphisms that differ by an automorphism of $\PP^1$ (II, Ex. 7.2), which is the
+sentence "we may see that $f$ is uniquely determined by exercise II.7.2" at
+Reiser, printed p. 352.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #kummer-cover-ramification}
 
-For
+Let $K=k(x)(z)$ with
 $$
-K(X)=k(x)(z),
-\qquad
-z^2=\prod_{i=1}^6(x-\alpha_i),
+z^2=\prod_{i=1}^{6}(x-\alpha_i),
 $$
-the corresponding degree-two map
+$\alpha_1,\ldots,\alpha_6$ distinct, and let
 $$
 f:X\longrightarrow\PP^1
 $$
-is ramified exactly over the six points $x=\alpha_i$, with ramification
-index $2$ above each one.
+be the corresponding morphism of curves. Then $f$ has degree $2$ and is
+ramified over exactly the six points $x=\alpha_i$, and nowhere else.
 
 ::: pf-proof
 
-Put
+Reiser, Exercise IV.2.2(b), printed p. 353. The field extension $K/k(x)$ has
+degree $2$, so $f$ has degree $2$. At a finite closed point $x_0\in\AA^1$ the
+fibre of
 $$
-h(x)=\prod_{i=1}^6(x-\alpha_i).
+\Spec k[x,z]\big/\bigl(z^2-\textstyle\prod_i(x-\alpha_i)\bigr)
+\longrightarrow
+\Spec k[x]
 $$
-At $x=\alpha_i$, the function $h$ has valuation $1$. If $v$ is a
-valuation of $K(X)$ above the corresponding valuation of $k(x)$, then
+is
 $$
-2v(z)
-=
-v(h)
-=
-e_v.
+\Spec k[z]\Big/\Bigl(z^2-\textstyle\prod_i(x_0-\alpha_i)\Bigr),
 $$
-Thus $e_v$ is even. Since the extension has degree $2$, one must have
-$$
-e_v=2.
-$$
-So each $\alpha_i$ is a simple branch point.
+which is two distinct reduced points when $x_0\ne\alpha_i$, since
+$\characteristic k\ne2$, and one point when $x_0=\alpha_i$. So $f$ is ramified
+with $e_P=2$ over the six $\alpha_i$ and at no other finite point.
 
-At a finite point $a\ne\alpha_i$, one has $h(a)\ne0$. On the affine
-double cover
+For the point at infinity Reiser argues by parity of $\deg R$: the number
 $$
-z^2=h(x),
+\deg R=2g(X)-2+2\deg f
 $$
-the derivative with respect to $z$ is $2z$, which is nonzero above such a
-point because $z^2=h(a)\ne0$. Hence the cover is étale there.
+is even whatever $g(X)$ is, the six finite points already account for
+$6$, so $e_\infty-1$ is even, while $e_\infty\le2$ because the degree is
+$2$; hence $e_\infty=1$ and $f$ is unramified at infinity.
 
-It remains to inspect infinity. Put
-$$
-u=x^{-1},
-\qquad
-w=zu^3.
-$$
-Then near $u=0$ the equation becomes
-$$
-w^2
-=
-\prod_{i=1}^6(1-\alpha_i u).
-$$
-At $u=0$ this gives
-$$
-w^2=1.
-$$
-Since $\characteristic k\ne2$, the two points $w=\pm1$ are nonsingular
-and the derivative $2w$ is nonzero there. Thus the cover is unramified at
-infinity. Hence the six $\alpha_i$ are exactly the branch points.
+Hou, §2 Exercise 2(b), printed pp. 4--5, checks the same point in the explicit
+chart: with $y=1/x$ and $\tilde z=x^{-3}z$ the equation reads
+$\tilde z^2=\prod_i(1-\alpha_i y)$, whose value at $y=0$ is $1$, so infinity is
+not a branch point; the printed account writes the transformed equation as
+$\tilde z^2=\alpha_1\cdots\alpha_6\tilde h(y)$ with
+$\tilde h(y)=\prod_i(1/\alpha_i-y)$ and separates out the case in which one of
+the $\alpha_i$ is $0$, at printed p. 6 of the extraction, before drawing the
+same conclusion.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #genus-two}
 
-The curve $X$ in step [](#s3){.pf-ref} has genus $2$.
+The curve $X$ of step [](#kummer-cover-ramification){.pf-ref} has genus $2$.
 
 ::: pf-proof
 
-The genus is Riemann--Hurwitz for this cover.
-
-The extension is separable because its degree is $2$ and
-$\characteristic k\ne2$. By step [](#s3){.pf-ref} there are exactly six tame
-ramification points, each with $e_P=2$. Riemann--Hurwitz gives
+Reiser, printed p. 353: "by an application of Hurwitz's formula, we have
+$g(X)=2$", that is,
 $$
-2g(X)-2
-=
-2(-2)+6,
+2g(X)-2=2\,(0-2)+6=2,
 $$
 so
 $$
-2g(X)-2=2
-$$
-and therefore
-$$
 \boxed{g(X)=2}.
 $$
-
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.5.4], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 547--548, computes the same $g=r/2-1$ for the double cover branched at $r$ points, from the Čech complex of its two affine charts; here $r=6$ gives $g=2$.
-
-:::
+Hou, §2 Exercise 2(b), printed p. 5, computes the same
+$2g(X)-2=2(0-2)+6=2$ and the same conclusion.
 
 :::
 
-::: {.pf-step #s5}
+:::
 
-The map $f$ in step [](#s3){.pf-ref} is the morphism determined by the
-canonical linear system, up to an automorphism of $\PP^1$.
+::: {.pf-step #same-as-canonical}
+
+The morphism $f$ of step [](#kummer-cover-ramification){.pf-ref} is the
+morphism determined by the canonical linear system, up to an automorphism of
+$\PP^1$.
 
 ::: pf-proof
 
-Step [](#s4){.pf-ref} gives $g(X)=2$, and $f$ has degree $2$. Step [](#s2){.pf-ref} says that
-every degree-two morphism from a genus-$2$ curve to $\PP^1$ is the
-canonical morphism up to an automorphism of the target. This proves the
-remaining assertion of part (b).
+It has degree $2$ by construction and its source has genus $2$ by step
+[](#genus-two){.pf-ref}, so step [](#degree-two-is-canonical){.pf-ref} applies.
+
+Hou, §2 Exercise 2(b), printed p. 5, reaches the same sentence directly: at a
+branch point $P$ with $f(P)=Q$ one has $f^*P=2P$, hence
+$f^*\mco_{\PP^1}(Q)=f^*\mco_{\PP^1}(1)=\mco_X(2P)$; Riemann--Roch gives
+$$
+h^0\bigl(\mco_X(2P)\bigr)-h^0\bigl(\mco_X(K_X-2P)\bigr)=\deg(2P)-g(X)+1=1
+$$
+with $h^0(\mco_X(2P))=h^0(\PP^1,\mco_{\PP^1}(1))=2$, so
+$h^0(\mco_X(K_X-2P))=1$, and $\deg(K_X-2P)=0$ forces $K_X\sim2P$; therefore
+$f^*\mco_{\PP^1}(1)=K_X$. The printed line "h^0(X,\mco_X(K_X-2P))=2" in that
+computation is a slip for $1$.
 
 :::
 
 :::
 
-::: {.pf-step #s6}
+::: {.pf-step #normalize-three-points}
 
-Given three distinct points
+For three distinct points $P_1,P_2,P_3$ of $\PP^1$ there is a unique
 $$
-P_1,P_2,P_3\in\PP^1,
+\varphi\in\Aut\PP^1=\PGL_2(k)
 $$
-there is a unique
-$$
-\varphi\in\Aut\PP^1
-$$
-such that
+with
 $$
 \varphi(P_1)=0,
 \qquad
@@ -364,114 +381,132 @@ $$
 
 ::: pf-proof
 
-By [[P-AGH66AUTP1|Exercise I.6.6]],
+Reiser, Exercise IV.2.2(c), printed p. 353: write $P_i=[p_i:q_i]$ and let
+$\varphi$ be given by $[x:y]\mapsto[ax+by:cx+dy]$. The condition
+$\varphi(P_1)=0$ forces $[a:b]=[q_1:-p_1]$, and the condition
+$\varphi(P_3)=\infty$ forces $[c:d]=[q_3:-p_3]$, so $\varphi$ has the matrix
 $$
-\Aut\PP^1=\PGL_2(k).
+\begin{pmatrix}q_1&-p_1\\ kq_3&-kp_3\end{pmatrix}
 $$
-Choose a fractional linear transformation sending $P_1$ to $0$ and
-$P_3$ to $\infty$. Its value at $P_2$ is a nonzero finite scalar; multiply
-the target coordinate by its inverse to send $P_2$ to $1$. This proves
-existence.
+for some $k$. The condition $\varphi(P_2)=1$ reads
+$$
+q_1p_2-p_1q_2=k\,(q_3p_2-p_3q_2),
+$$
+whose two sides are nonzero because $P_2$ differs from $P_1$ and from $P_3$;
+this fixes $k$ and with it the matrix, whose determinant
+$k(p_1q_3-q_1p_3)$ is nonzero because $P_1\ne P_3$. So $\varphi$ exists and is
+unique, and it lies in $\PGL_2(k)=\Aut\PP^1$ by (I, Ex. 6.6).
 
-For uniqueness, if $\varphi$ and $\psi$ both have the required values,
-then
+Hou, §2 Exercise 2(c), printed p. 6, writes the transformation down:
 $$
-\psi\circ\varphi^{-1}
+\varphi(z)=\frac{z-a}{z-c}\cdot\frac{b-c}{b-a}
 $$
-fixes $0$, $1$, and $\infty$. A fractional linear transformation fixing
-$0$ and $\infty$ has the form $x\mapsto cx$, and fixing $1$ forces
-$c=1$. Hence $\psi=\varphi$.
+for $P_1=[a:1]$, $P_2=[b:1]$, $P_3=[c:1]$, and $\varphi(z)=\frac{b-c}{z-c}$ when
+$P_1=\infty$; uniqueness is read off from $\Aut(\PP^1)=\PGL(2)$ there.
 
 :::
 
 :::
 
-::: {.pf-step #s7}
+::: {.pf-step #normal-form}
 
-After ordering the six branch points of a genus-$2$ curve and
-applying the unique normalization of step [](#s6){.pf-ref}, the branch set has the
-form
+After ordering the six branch points of a curve of genus $2$ and applying the
+automorphism of step [](#normalize-three-points){.pf-ref} to the first three,
+the branch set has the form
 $$
 0,\ 1,\ \infty,\ \beta_1,\ \beta_2,\ \beta_3,
 $$
-where
+where the $\beta_i$ are distinct and different from $0$ and $1$.
+
+::: pf-proof
+
+The six branch points are distinct by step
+[](#canonical-degree-two){.pf-ref}, and an automorphism of $\PP^1$ is a
+bijection, so the last three images are distinct from each other and from
+$0$, $1$, $\infty$. Being different from $\infty$ they are elements of $k$, and
+they are $\ne0,1$. This is the normal form used at Hou, §2 Exercise 2(e), printed
+p. 6: "we send $P_1\mapsto0$, $P_2\mapsto1$, $P_3\mapsto\infty$,
+$P_i\mapsto\beta_{i-3}$".
+
+:::
+
+:::
+
+::: {.pf-step #sigma-six-action}
+
+The rule of part (d) --- reorder $(0,1,\infty,\beta_1,\beta_2,\beta_3)$ by
+$\sigma\in\Sigma_6$, then renormalize so that the first three entries are
+$0,1,\infty$ again --- defines an action of $\Sigma_6$ on
 $$
-\beta_i\ne0,1,
-\qquad
-\beta_i\ne\beta_j\quad(i\ne j).
+U=\bigl\{(\beta_1,\beta_2,\beta_3)\in\AA^3_k:\ \beta_i\ne0,1,\ \
+\beta_i\ne\beta_j\ (i\ne j)\bigr\}.
 $$
 
 ::: pf-proof
 
-Part (a) gives six distinct branch points on $\PP^1$. Choose an ordering
-and apply step [](#s6){.pf-ref} to the first three. Since the six points are distinct,
-the remaining three normalized points are distinct from each other and
-from $0$, $1$, and $\infty$. Thus they are finite elements of $k$,
-different from $0$ and $1$.
+Reiser, Exercise IV.2.2(d), printed p. 354. All six entries are distinct, so any
+three of them may be sent to $0,1,\infty$ by step
+[](#normalize-three-points){.pf-ref}, uniquely, and the remaining three are
+again distinct and different from $0,1,\infty$: the rule is a well-defined map
+$U\to U$.
+
+For the group law Reiser uses the cross-ratio
+$$
+(z_1,z_2,z_3,z_4)=\frac{(z_1-z_2)(z_3-z_4)}{(z_1-z_4)(z_3-z_2)},
+$$
+the image of $z_1$ under the fractional linear transformation sending
+$z_2\mapsto0$, $z_3\mapsto1$, $z_4\mapsto\infty$; for $z_1\notin\{z_2,z_3,z_4\}$
+it recovers $z_1$. For $T(z)=\frac{az+b}{cz+d}$ one has
+$$
+T(x)-T(y)=\frac{(ad-bc)(x-y)}{(cx+d)(cy+d)},
+$$
+so
+$$
+(Tz_1,Tz_2,Tz_3,Tz_4)=(z_1,z_2,z_3,z_4):
+$$
+the cross-ratio is invariant under $\PGL_2(k)$. Hence for any ordered quadruple
+of elements of $(0,1,\infty,\beta_1,\beta_2,\beta_3)$ the cross-ratio is the
+same whether the quadruple is read off after reordering by $g$ and $h$ in turn,
+or after reordering once by $hg$: the second reading transforms an already
+normalized tuple by an element of $\PGL_2(k)$, which the cross-ratio does not
+see. Since a point is recovered from its cross-ratio with $0,1,\infty$, the
+normalized last three entries agree in the two readings, which is the group
+law.
 
 :::
 
 :::
 
-::: {.pf-step #s8}
+::: {.pf-step #cover-determined-by-branch}
 
-The rule in part (d) defines an action of $\Sigma_6$ on
-$$
-U
-=
-\left\{
-(\beta_1,\beta_2,\beta_3)\in\AA^3:
-\beta_i\ne0,1,
-\beta_i\ne\beta_j
-\right\}.
-$$
+A separable degree-two cover of $\PP^1$ over $k$ is determined, up to
+isomorphism over $\PP^1$, by its branch divisor.
 
 ::: pf-proof
 
-Associate to a point of $U$ the ordered six-tuple
-$$
-(0,1,\infty,\beta_1,\beta_2,\beta_3).
-$$
-Given $\sigma\in\Sigma_6$, reorder this six-tuple by $\sigma$. Its first
-three entries are still distinct, so step [](#s6){.pf-ref} gives a unique projective
-automorphism sending them to $0$, $1$, and $\infty$. Apply that
-automorphism to the remaining three entries; because all six entries were
-distinct, the resulting last three lie in $U$.
+This step is the card's own. None of the three sources above proves it: Reiser's
+part (e), printed p. 354, is the single word "Yup!", Hou's part (e), printed
+p. 6, proves well-definedness and existence but not this uniqueness, and
+Gruenewald, printed p. 2, states the resulting quotient without proof. The
+record of 2026-11-16 in `COMPLAINTS.md` names the gap; the argument below is the
+one this card has carried since its first version, and the statement is
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025
+version [@Vak25, Proposition 19.5.2], text version
+`tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--547, where the
+double cover branched at a prescribed set of points is constructed as the
+normalization of $y^2=f(x)$ and is unique.
 
-The identity permutation clearly acts trivially. For two permutations,
-performing the first reordering and normalization and then the second
-produces the same normalized ordered six-tuple as performing the combined
-reordering once: both projective automorphisms send the same first three
-ordered points to $0$, $1$, and $\infty$, and step [](#s6){.pf-ref} makes that
-normalizing automorphism unique. Hence the rule satisfies the group law
-and defines the stated action.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
-A separable degree-two cover of $\PP^1$ over $k$ is determined,
-up to isomorphism over $\PP^1$, by its branch locus.
-
-::: pf-proof
-
-Let
-$$
-F=k(\PP^1)=k(x),
-$$
-and let $L_1/F$ and $L_2/F$ be the function-field extensions of two such
-covers with the same branch locus. Since $\characteristic k\ne2$, each
-quadratic extension has Kummer form
+Let $F=k(\PP^1)=k(x)$ and let $L_1/F$ and $L_2/F$ be the function-field
+extensions of two such covers with the same branch locus. Since
+$\characteristic k\ne2$, each quadratic extension has Kummer form
 $$
 L_i=F(\sqrt{d_i})
 $$
-for some $d_i\in F^\times$, determined modulo $F^{\times 2}$.
+for some $d_i\in F^\times$, determined modulo $F^{\times2}$.
 
-For a place $P$ of $F$, the quadratic extension $F(\sqrt{d_i})/F$ is
-ramified at $P$ exactly when $v_P(d_i)$ is odd. Equality of the branch
-loci therefore implies that
+For a place $P$ of $F$, the extension $F(\sqrt{d_i})/F$ is ramified at $P$
+exactly when $v_P(d_i)$ is odd. Equality of the branch loci therefore implies
+that
 $$
 v_P(d_1/d_2)
 $$
@@ -479,44 +514,31 @@ is even for every $P\in\PP^1$. Hence
 $$
 \div(d_1/d_2)=2D
 $$
-for an integral divisor $D$ on $\PP^1$. This divisor has degree $0$.
-Since every degree-zero divisor on $\PP^1$ is principal, there is
-$g\in F^\times$ with
-$$
-D=\div(g).
-$$
-Consequently
+for an integral divisor $D$ of degree $0$ on $\PP^1$. Every degree-zero divisor
+on $\PP^1$ is principal, so $D=\div(g)$ for some $g\in F^\times$, and
 $$
 \div\!\left(\frac{d_1}{d_2g^2}\right)=0,
 $$
-so
-$$
-\frac{d_1}{d_2g^2}=c
-$$
-for some $c\in k^\times$. Because $k$ is algebraically closed, $c=a^2$
-for some $a\in k^\times$. Thus
-$$
-d_1=d_2(ag)^2,
-$$
-and therefore
+so $\frac{d_1}{d_2g^2}=c$ for some $c\in k^\times$. Because $k$ is
+algebraically closed, $c=a^2$ for some $a\in k^\times$, so
+$d_1=d_2(ag)^2$ and
 $$
 F(\sqrt{d_1})=F(\sqrt{d_2}).
 $$
-The corresponding nonsingular projective curves are consequently
-isomorphic over $\PP^1$.
+The two nonsingular projective curves are consequently isomorphic over $\PP^1$.
 
 :::
 
 :::
 
-::: {.pf-step #s10}
+::: {.pf-step #bijection}
 
 There is a bijection
 $$
 \left\{
 \begin{array}{c}
 \text{isomorphism classes of}\\
-\text{genus-$2$ curves over $k$}
+\text{genus-$2$ curves over }k
 \end{array}
 \right\}
 \longleftrightarrow
@@ -525,79 +547,65 @@ $$
 
 ::: pf-proof
 
-Given a genus-$2$ curve $X$, step [](#s1){.pf-ref} gives the six branch points of its
-canonical map. Order them and apply step [](#s6){.pf-ref} to the first three. Step
-[](#s7){.pf-ref} then produces a point
-$$
-(\beta_1,\beta_2,\beta_3)\in U.
-$$
-Changing the ordering changes this point by exactly the action defined in
-step [](#s8){.pf-ref}. Changing coordinates on the target $\PP^1$ does not change its
-$\Sigma_6$-orbit: after applying the coordinate change, the unique
-normalization of the same ordered first three points is obtained by
-composing the old normalization with the inverse coordinate change.
-Thus $X$ determines a well-defined element of $U/\Sigma_6$.
+Hou, §2 Exercise 2(e), printed p. 6, gives the two halves that do not use step
+[](#cover-determined-by-branch){.pf-ref}. First, a genus-$2$ curve $X$ gives its
+canonical map, six distinct branch points by step
+[](#canonical-degree-two){.pf-ref}, and after an ordering and the normalization
+of step [](#normalize-three-points){.pf-ref} a triple in $U$ by step
+[](#normal-form){.pf-ref}; changing the ordering changes the triple by exactly
+the action of step [](#sigma-six-action){.pf-ref}, so $X$ determines a
+well-defined element of $U/\Sigma_6$. Hou's sentence for that is "We then get an
+equivalence class $[\beta_1,\beta_2,\beta_3]$". For an isomorphism
+$\varphi:X\to X'$ it argues from $\varphi^*K_{X'}\sim K_X$: the complete linear
+system of $\varphi^*K_{X'}$ gives a morphism to $\PP^1$ which differs from the
+one given by $\abs{K_X}$ by a $\psi\in\Aut(\PP^1)$, so the two branch sets
+differ by an automorphism of $\PP^1$, the two six-tuples are normalized to the
+same triple, and isomorphic curves give the same orbit. Second, for a prescribed triple, steps
+[](#kummer-cover-ramification){.pf-ref}, [](#genus-two){.pf-ref} and
+[](#same-as-canonical){.pf-ref} construct a genus-$2$ curve whose canonical map
+is branched over the prescribed six points, which is Hou's "also, (b) implies
+that starting from six points of $\PP^1$, one can construct a genus two curve":
+the map on isomorphism classes is onto.
 
-An isomorphism $X\cong Y$ identifies $H^0(Y,K_Y)$ with $H^0(X,K_X)$.
-Hence the two canonical maps differ only by an automorphism of their
-targets, so isomorphic curves determine the same orbit.
-
-Conversely, suppose two genus-$2$ curves determine the same orbit. After
-choosing orderings and normalizations, their canonical maps have the same
-six-point branch locus. Step [](#s9){.pf-ref} then identifies the two quadratic
-function-field extensions of $k(\PP^1)$, and hence identifies the two
-nonsingular projective curves. Thus distinct isomorphism classes cannot
-determine the same orbit.
-
-Finally, let
-$$
-(\beta_1,\beta_2,\beta_3)\in U.
-$$
-Set
-$$
-B=\{0,1,\infty,\beta_1,\beta_2,\beta_3\}\subset\PP^1.
-$$
-Choose a point $q\in\PP^1\setminus B$ and an automorphism
-$\tau\in\Aut\PP^1$ with $\tau(q)=\infty$. Then $\tau(B)$ consists of six
-finite points. Part (b), proved in steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, constructs a genus-$2$
-curve whose canonical map is branched exactly over $\tau(B)$. Composing
-that map with $\tau^{-1}$ gives branch locus $B$, so the resulting curve
-maps to the prescribed orbit. Therefore the correspondence is surjective
-as well as injective.
+It remains that two curves in the same orbit are isomorphic, and that is step
+[](#cover-determined-by-branch){.pf-ref}: if the canonical maps of $X$ and $Y$
+have branch divisors $D$ and $\tau(D)$, then $\tau^{-1}\circ f_Y$ is a
+separable degree-two cover of $\PP^1$ with branch divisor $D$, so it is
+isomorphic to $f_X$ over $\PP^1$ and $X\cong Y$. Together the three paragraphs
+give the bijection.
 
 :::
 
 :::
 
-::: {.pf-step #s11}
+::: {.pf-step #parameters}
 
-The parameter space in step [](#s10){.pf-ref} is an open subset of
-$\AA_k^3$ modulo a finite group, and it has infinitely many orbits.
+The parameter space of step [](#bijection){.pf-ref} is an open subset of
+$\AA^3_k$ modulo a finite group, and it has infinitely many points.
 
 ::: pf-proof
 
 Explicitly,
 $$
-U
-=
-\AA_k^3
-\setminus
-\left(
-\bigcup_{i=1}^3\{\beta_i=0\}
-\cup
-\bigcup_{i=1}^3\{\beta_i=1\}
-\cup
-\bigcup_{1\le i<j\le3}\{\beta_i=\beta_j\}
-\right),
+U=\AA^3_k\setminus\Bigl(\bigcup_{i=1}^3\{\beta_i=0\}\cup
+\bigcup_{i=1}^3\{\beta_i=1\}\cup\bigcup_{1\le i<j\le3}\{\beta_i=\beta_j\}\Bigr),
 $$
-so $U$ is open in $\AA_k^3$. The group $\Sigma_6$ is finite. This is the
-three-parameter description asserted in part (e).
+so $U$ is open in $\AA^3_k$, and $\Sigma_6$ has order $720$, which is finite.
 
-Moreover an algebraically closed field is infinite. Fixing two admissible
-distinct values of $\beta_1$ and $\beta_2$ leaves infinitely many choices
-of $\beta_3$, while every $\Sigma_6$-orbit is finite. Hence $U/\Sigma_6$
-is infinite, so there are infinitely many pairwise non-isomorphic curves
-of genus $2$ over $k$.
+Hou, §2 Exercise 2(e), printed p. 6, states the correspondence in this form, as
+the triples modulo the permutation action. Gruenewald, §2, printed p. 2, states
+the global form of the same quotient: the points of the moduli space
+$\mathcal M_2(2)$ are the triples $(\lambda_1,\lambda_2,\lambda_3)$ of elements
+that are all distinct and different from $0$ and $1$, and the forgetful morphism
+$\mathcal M_2(2)\to\mathcal M_2$ is a Galois covering of degree
+$720=\cardinality{\Sigma_6}$, in which $\Sigma_6$ acts on the Weierstrass
+six-tuple by permutations, followed by renormalizing the first three coordinates
+to $(0,1,\infty)$ --- the action of step [](#sigma-six-action){.pf-ref}.
+
+Since $k$ is algebraically closed it is infinite: fixing two admissible distinct
+values of $\beta_1$ and $\beta_2$ leaves infinitely many choices of $\beta_3$,
+while every $\Sigma_6$-orbit is finite. Hence $U/\Sigma_6$ is infinite and there
+are infinitely many isomorphism classes of curves of genus $2$ over $k$.
 
 :::
 
@@ -605,18 +613,24 @@ of genus $2$ over $k$.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), steps
-[](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (c), step [](#s8){.pf-ref} proves part (d), and steps
-[](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove part (e).
+Steps [](#canonical-degree-two){.pf-ref} and
+[](#degree-two-is-canonical){.pf-ref} prove part (a), steps
+[](#kummer-cover-ramification){.pf-ref}, [](#genus-two){.pf-ref} and
+[](#same-as-canonical){.pf-ref} prove part (b), steps
+[](#normalize-three-points){.pf-ref} and [](#normal-form){.pf-ref} prove part
+(c), step [](#sigma-six-action){.pf-ref} proves part (d), and steps
+[](#cover-determined-by-branch){.pf-ref}, [](#bijection){.pf-ref} and
+[](#parameters){.pf-ref} prove part (e).
 
 :::
 
 :::
 
 :::
+
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves (a) and (b): Proposition 19.5.2 (pp. 546--547) gives the unique double cover branched at a prescribed even set of points, as $y^2=f(x)$ normalized; the count $r/2-1=2$ is Theorem 19.5.1 (printed p. 546), whose proof computes the genus in 19.5.4 (pp. 547--548) by a Čech computation on the two affine charts of the cover; Proposition 19.5.7 (pp. 548--549) shows there is at most one double cover of $\PP^1$ on a curve of genus at least $2$, which makes the double cover the canonical one. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} prove the same assertions by other means --- Riemann--Hurwitz for the branch count and for $g(X)=2$, Riemann--Roch for the uniqueness of the degree-two map --- and cite his propositions for the statement rather than reproducing his computation; steps [](#s1){.pf-ref} and [](#s4){.pf-ref} say where the page is and that the count they give is his Theorem 19.5.1. Part (c) has no published proof here: three-transitivity of $\Aut\PP^1$, which the exercise asks to deduce from (I, Ex. 6.6), is Exercise 15.5.B in Vakil, and step [](#s6){.pf-ref} is the card's own.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. His 19.5.2 is the published statement of the one step of part (e) that Reiser's and Hou's solutions do not prove.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, text version `tmp/sources/hartshorne-solutions-egbert.md`, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::
