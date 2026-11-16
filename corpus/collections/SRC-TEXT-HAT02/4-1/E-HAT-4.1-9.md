@@ -387,6 +387,24 @@ audit:
     injectivity of the vertical map at $\pi_1(A,B,x_0)$ from the first), and their
     surjectivity halves are not proved. Not claimed: a published treatment of the
     exercise, which has not been located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, sixth pass, on the fifth-pass event above. Its account of
+    the two $\\pi_1$ windows was not true of the card it was committed with: it said
+    their injectivity halves were proved by the chase in the two bullets, but each
+    bullet established only that $\\gamma(c)=1$ implies $c=1$, triviality of the fibre
+    over the basepoint, and not injectivity, which at a map of pointed sets is
+    $\\gamma(c_0)=\\gamma(c_1)$ implying $c_0=c_1$; the second bullet then took the
+    first window's basepoint-fibre result as the injectivity it needs. The event is a
+    dated record and is left as written; the correction is this event. What the card
+    now proves is stated by the event at the head of this list: the basepoint-fibre
+    chase is retained and applied at a common basepoint reached by prepending a
+    $B$-path, which gives full injectivity at both $\\pi_1$ windows, and the two
+    bullets are rewritten to carry it. The surjectivity halves remain unproved, and no
+    published treatment of the exercise has been located. Not checked: nothing new;
+    the two rewritten arguments were not re-derived in this pass.
 ---
 
 ::: {.problem}
