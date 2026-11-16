@@ -193,7 +193,7 @@ so a singular point of $F=0$ satisfies
 $$
 y^{d-1}=zx^{d-2},\qquad z^{d-1}=xy^{d-2},\qquad x^{d-1}=yz^{d-2}.
 $$
-If one coordinate of such a point were zero, all three would be: by the cyclic symmetry of the three equations it suffices to take $x=0$. Then the first equation reads $y^{d-1}=zx^{d-2}$. If $d\ge3$ this gives $y^{d-1}=0$, because $x^{d-2}=0$, so $y=0$, and then the second equation gives $z^{d-1}=x y^{d-2}=0$, so $z=0$. If $d=2$ then $d-1=1$ and $x^{d-2}=x^0=1$, so the two equations read $y=z$ and $z=x y^0=0$, giving $z=0$ and then $y=0$ as well.
+If one coordinate of such a point were zero, all three would be: by the cyclic symmetry of the three equations it suffices to take $x=0$. Then the first equation reads $y^{d-1}=zx^{d-2}$. If $d\ge3$ this gives $y^{d-1}=0$, because $x^{d-2}=0$, so $y=0$, and then the second equation gives $z^{d-1}=x y^{d-2}=0$, so $z=0$. If $d=2$ then $d-1=1$ and $x^{d-2}=x^0=1$, so the two equations read $y=z$ and $z=x$, which with $x=0$ give $z=0$ and then $y=0$ as well.
 Hence $xy^{d-1}$, $yz^{d-1}$ and $zx^{d-1}$ are nonzero at a singular point, and multiplying the three equations by $x$, $y$ and $z$ respectively gives
 $$
 xy^{d-1}=zx^{d-1},\qquad yz^{d-1}=xy^{d-1},\qquad zx^{d-1}=yz^{d-1},
