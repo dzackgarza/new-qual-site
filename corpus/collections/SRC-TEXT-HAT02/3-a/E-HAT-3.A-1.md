@@ -100,9 +100,8 @@ audit:
     with the definition of an additive invariant that it uses. The remark now lists the two pages
     separately and in that order. (11.6.3) and (11.6.4) were checked the same way this pass, on the
     folios 288 and 289 (PDF pages 301 and 302) the card already gave them. (2) No citation named its
-    text version. tom Dieck is cited from the text of the book as held in
-    `tmp/sources/tomdieck-algebraic-topology-ranicki.md` --- the file name carries "ranicki", which names
-    nothing in the book, since tom Dieck wrote it in English --- and Hatcher from
+    text version. tom Dieck is cited from the text of the Ranicki translation,
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and Hatcher from
     `tmp/sources/hatcher-2002-algebraic-topology.md`; the sentence naming each now says so, and the
     remark's page list was rewritten to name them. Nothing in the statement or the proof changes. Not
     claimed: a text version for any other source, this card citing none; and nothing was read from a
@@ -134,6 +133,21 @@ audit:
     The card body and the remark were corrected at the same time and already say so; nothing in the
     statement, the pages or the proof changes. Not verified in this pass beyond the folios already on
     the card: nothing was read from a rendered page.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: the record, not the mathematics. The
+    `source-corrected` event of 2026-11-16 beginning "Two citation defects" is restored
+    to the text commit 7dd02358ce wrote; e945aab1c4 replaced one of its sentences in
+    place, and the third-pass event below quoted that sentence instead of undoing the
+    replacement. The restored sentence reads "tom Dieck is cited from the text of the
+    Ranicki translation, `tmp/sources/tomdieck-algebraic-topology-ranicki.md`", and the
+    correction this event owes it is the one the event below states: tom Dieck's
+    *Algebraic Topology* (EMS Textbooks in Mathematics, 2008) is his own English text,
+    "ranicki" is in the reading copy's file name only and names no translator, and the
+    card body and remark now say so. Nothing in the statement, the pages or the proof
+    changes. Not checked in this pass: no page was read from a rendered copy.
 ---
 
 ::: {.problem}
