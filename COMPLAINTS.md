@@ -2834,7 +2834,7 @@ of exposition, apart from the false reason in one sentence of the I.3.16(c) rema
   points $2x+y^{d-1}=3x=3y^{d-1}$, so "$3y^{d-1}$" was right and the missing condition is what the line now
   states.
 
-## 2026-11-16: `SRC-TEXT-HART77` #121, the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation in a new entry
+## `SRC-TEXT-HART77` #121: the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation in a new entry
 
 The reader of the last round returned one item, and it is right: the paragraph "**Searched outside the
 retained sets (issue #131, 2026-11-11).**" of the I.5 entry is a dated record, and the two commits before
@@ -2863,8 +2863,8 @@ it was written on 2026-11-11, and the correction is this entry.
   states", which described the rewritten paragraph. With the paragraph restored, the condition is stated
   here and in that item itself, not in the 2026-11-11 entry; nothing in the item's mathematics changes.
 
-*This entry is of 2026-11-16, the day its heading begins with. The 2026-11-11 it names is the date of the
-note it restores, not this correction's; the correction's dated entry is below.*
+*This entry is of 2026-11-16. The date in its heading, 2026-11-11, is the date of the note it restores, not
+this correction's; the correction's dated entry is below.*
 
 ## `SRC-TEXT-HART77` #121: the five complaint edits `27598ae933` carried from other batches, and two dates of the round under review
 
@@ -2915,13 +2915,13 @@ The block below this section whose lead reads "Further #123 reader report, 2026-
 
 **One commit carried another batch's work, and it is recorded, not reverted.** `86676a24c4` names `E-HAT-3.B-4` in its message and adds 31 lines to `corpus/collections/SRC-TEXT-HART77/P-AGH418ARITHGENUSSINGULAR.md` besides: two `source-checked` events of 2026-11-16 on that card, from the Hartshorne stream, one of them the pass that moved I Ex. 5.14(c) to printed p. 38 and the other its own record. The card's content is the Hartshorne stream's work and is correct on disk, so nothing is reverted (QUAL-09: a commit that sweeps in a sibling's edit is a wrong message, not lost work). What was wrong is the message, and this is the record of it.
 
-## 2026-11-16: `SRC-TEXT-HART77` #121, the fourth pass's correction, and its $d=2$ second equation reads $x=1$
+## `SRC-TEXT-HART77` #121: the fourth pass's correction is dated 2026-11-16, and its $d=2$ second equation reads $x=1$
 
 The entry "the Chapter I reader's fourth pass --- the 2026-11-11 note restored, and the Stacks computation
-in a new entry" above is the correction the last review required; its heading begins with the day it was
-written, 2026-11-16, and the 2026-11-11 it names is the date of the paragraph it restores. QUAL-11 dates a
-section by the day its heading begins with and a paragraph by the day its lead carries first, so that
-section is a record of 2026-11-16 and this one states the one mathematical repair the correction needs.
+in a new entry" above is the correction the last review required, and it carries no day of its own: the only
+date on its heading, 2026-11-11, is the date of the paragraph it restores. The gate dates an entry by the
+first date on its opening line, so that entry reads as one of 2026-11-11 and is left as written. This entry
+dates the correction: the fourth pass is of 2026-11-16.
 
 Its "The computation, stated here" bullet specializes the two partial-vanishing equations at $d=2$ as
 "$1=y$ and $x=y$". The second displayed equation is $x^{d-1}=y^{d-2}$, which at $d=2$ reads $x=1$, not
@@ -2951,3 +2951,41 @@ it, so the gate reads those three days from `RESTORED_SECTIONS` in
 in the preamble that a numbered item is one record with its continuation and the blocks
 indented under it, and that deleting a card or this file deletes the records it holds.
 
+## 2026-11-16: the three fourth-pass passages are restored to their introduced text, and what the rewrites added is stated here
+
+A reader of this file named three passages, each of them a dated record of 2026-11-16 rewritten in place
+after the commit that introduced it. Each is restored to the text of that commit, byte for byte from
+`git show <commit>:COMPLAINTS.md`, and this entry is the correction.
+
+- **The heading of the entry of the fourth pass.** `cd8141de98` introduced it with no day in front, its only
+  day 2026-11-11 standing mid-title as the date of the paragraph the entry restores. `9eac4d89dd` re-headed
+  it, putting `2026-11-16: ` in front and a comma after the collection name. The introduced heading is
+  restored, and with it the fact that the entry carries no day of its own and dates no section.
+- **The note at the foot of that entry.** `001014fb27` introduced it: the entry is of 2026-11-16, the date in
+  its heading, 2026-11-11, is the date of the note it restores, and the correction's dated entry is below.
+  `9eac4d89dd` rewrote it to say the entry is of the day its heading begins with, which was true of the
+  heading that commit had just written and is false of the restored one. The introduced note is restored.
+- **The heading and opening paragraph of the entry of the correction.** `90151260a6` introduced both;
+  `001014fb27`, `763ab14c6f` and `a0308a6a68` rewrote the paragraph in turn, and `9eac4d89dd` then rewrote
+  the heading together with it. Both are restored: the heading carries its 2026-11-16 mid-title, and the
+  paragraph says that the entry above carries no day of its own, that the only date on its heading is the
+  2026-11-11 of the paragraph it restores, and that this entry dates the correction 2026-11-16.
+
+What the five rewrites added, so that nothing is lost: the fourth pass is of 2026-11-16, and the 2026-11-11
+either entry names is the date of the paragraph the first entry restores, not the date of either entry. The
+paragraph rewritten three times before `9eac4d89dd` said the same, and each version of it named the gate's
+dating rule as that rule stood on the day the version was written; the restored paragraph names the rule of
+its own day, "the first date on its opening line".
+
+The gate as it now stands reads a section's day only at the start of its heading, apart from the three
+headings `RESTORED_SECTIONS` in `tools/qualc/authoring.py` lists, and neither restored heading is one of
+them. Both therefore carry their day mid-title and no section record is read from them: the entry of the
+fourth pass is dated by the note at its foot, and the entry of its correction by its heading's own words,
+which say the correction is dated 2026-11-16, and by this record. Reading a record whose day stands
+mid-heading is issue #147's repair, and the headings are not re-dated here to invent a protection the
+restored text does not carry.
+
+Nothing else changes. The body of the first entry stands as it stood, its one sentence rewritten by
+`ade61785ff` included, that commit not being one of the rewrites a reader named; the paragraph on the $d=2$
+equation of the second entry is untouched and its correction stands; and no other entry of this file was
+read in this pass.
