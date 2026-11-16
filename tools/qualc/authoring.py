@@ -169,6 +169,17 @@ HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
 # first in the bold or italic lead that opens it.
 SECTION_DAY = re.compile(r"^#{1,6}\s+(\d{4}-\d{2}-\d{2}):")
 NUMBERED = re.compile(r"^(?P<indent>[ \t]*)\d+\.\s")
+# The three sections QUAL-11 restored to the heading their own day gave them, with that
+# day. A session of 2026-11-16 moved each day to the front of its heading to follow the
+# format, which rewrites a dated record; the restoration puts the heading back, so the
+# day stands mid-title and no other heading of the file can be read that way. The set is
+# closed: QUAL-11 forbids editing these headings, and the format forbids new ones, so a
+# heading that names a day after its first word is read here or is not a record.
+RESTORED_SECTIONS: dict[str, date] = {
+    "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved": date(2026, 11, 15),
+    "## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)": date(2026, 11, 15),
+    "## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards": date(2026, 11, 15),
+}
 
 
 @dataclass(frozen=True)
@@ -338,7 +349,9 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
     A day, a kind and an author do not identify an event when a card states two of them,
     so the group is judged together and only as a restoration: every note it now stands
     for has to have stood for that group in an earlier revision. Restoring one event
-    therefore cannot excuse the rewrite of another beside it.
+    therefore cannot excuse the rewrite of another beside it. An event the commit leaves
+    standing is not one of the records it brings in, so it says nothing about the text
+    that went: deleting one of two events of a day is a deletion whatever the other says.
     """
     standing = Counter(record.text for record in audit_records(after))
     lost: dict[tuple[date, str, str], list[tuple[str, ...]]] = {}
@@ -350,9 +363,11 @@ def rewritten_audit_events(path: Path, before: str, after: str, day: date, earli
             continue
         lost.setdefault((record.day, record.text[0], record.text[1]), []).append(record.text)
     later = audit_records(after)
+    unchanged = {record.text for record in audit_records(before)}
     errors: list[str] = []
     for identity, records in lost.items():
-        notes = {record.text[3] for record in later if record.day == identity[0] and record.text[:2] == identity[1:]}
+        replacement = [other for other in later if other.day == identity[0] and other.text[:2] == identity[1:] and other.text not in unchanged]
+        notes = {other.text[3] for other in replacement}
         if notes and notes <= earlier(identity, notes):
             continue
         for kind, by, _, note in records:
@@ -438,13 +453,15 @@ def dated_records(source: str) -> list[tuple[date, str]]:
     day the record merely mentions follows its own, and a lead that carries no day
     records none, so the bullets of an entry are not records in their own right. A
     heading states its day first or is not a record, so no day is read out of the middle
-    of a title.
+    of a title — but for the three headings QUAL-11 restored, whose day the table of the
+    sections it restored supplies, because the alternative to reading that day there is
+    a record with no day and nothing keeping it append-only.
     """
     lines = source.splitlines()
     headings = [(index, len(match["marks"])) for index, line in enumerate(lines) if (match := HEADING.match(line))]
     records: list[tuple[date, str]] = []
     for position, (start, level) in enumerate(headings):
-        day = _record_day(SECTION_DAY.match(lines[start]))
+        day = _record_day(SECTION_DAY.match(lines[start])) or RESTORED_SECTIONS.get(lines[start])
         if day is None:
             continue
         end = len(lines)
@@ -480,7 +497,8 @@ def rewritten_complaint_records(path: Path, before: str, after: str, day: date, 
     Records that share a day are judged together, for the reason given on
     `rewritten_audit_events`: the day is the whole of what identifies them, so the group
     is a restoration only when every record now standing for that day stood in an earlier
-    revision, and restoring one cannot excuse the rewrite of another.
+    revision, and restoring one cannot excuse the rewrite of another. A record the commit
+    leaves standing is not one it brings in and says nothing about the one it removes.
     """
     lost: dict[date, list[str]] = {}
     for record_day, text in dated_records(before):
@@ -488,9 +506,10 @@ def rewritten_complaint_records(path: Path, before: str, after: str, day: date, 
             continue
         lost.setdefault(record_day, []).append(text)
     later = dated_records(after)
+    unchanged = {text for _, text in dated_records(before)}
     errors: list[str] = []
     for record_day, records in lost.items():
-        present = {text for other_day, text in later if other_day == record_day}
+        present = {text for other_day, text in later if other_day == record_day and text not in unchanged}
         if present and present <= earlier(record_day, present):
             continue
         for text in records:
@@ -567,6 +586,39 @@ def previous_source(path: Path, revision: str) -> str:
     return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
 
 
+def version_source(path: Path, version: str) -> str:
+    """The text at `path` in this version's tree, read from the index for a staged commit."""
+    revision = "" if version == "index" else version
+    return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
+
+
+def surviving_card_ids(version: str, base: str) -> set[str]:
+    """The card ids this version carries at the paths it keeps, adds or renames to.
+
+    A card moved with most of its text rewritten falls below Git's similarity threshold,
+    so the move is recorded as a deletion and an addition: the added path carries the
+    card, and the deletion is the other half of the move rather than a card deleted.
+    """
+    command = ["git", "diff", "--find-renames", "--name-status", "-z"]
+    command.extend(["--cached", base] if version == "index" else [base, version])
+    fields = subprocess.run([*command, "--", "corpus/", "wiki/"], check=True, stdout=subprocess.PIPE, text=True).stdout.split("\0")
+    ids: set[str] = set()
+    index = 0
+    while index < len(fields) and fields[index]:
+        status = fields[index]
+        if status[0] in "RC":
+            path = Path(fields[index + 2])
+            index += 3
+        else:
+            path = Path(fields[index + 1])
+            index += 2
+        if status[0] == "D":
+            continue
+        if (card_id := source_identity(version_source(path, version))) is not None:
+            ids.add(card_id)
+    return ids
+
+
 def removal_errors(version: str, base: str) -> list[str]:
     """Dated records a commit deletes, with the path that held them (QUAL-11).
 
@@ -574,18 +626,26 @@ def removal_errors(version: str, base: str) -> list[str]:
     shared hook lists only the paths that survive a change, so a commit that deletes
     `COMPLAINTS.md` or a card presents it nothing to compare. Deleting the file deletes
     every dated record it states, and deleting a card deletes its dated events. A move
-    is not a deletion, and Git's own similarity search is what tells the two apart.
+    is not a deletion: Git's similarity search finds most of them, and a card moved with
+    most of its text rewritten is found through the id of the path that carries it on,
+    which `changed_audit_events` compares against the retired path. Only a path whose
+    card no surviving path carries is a card deleted, and only then are its events gone.
     """
     command = ["git", "diff", "--find-renames", "--name-only", "--diff-filter=D", "-z"]
     command.extend(["--cached", base] if version == "index" else [base, version])
     listing = subprocess.run([*command, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout
+    if not listing:
+        return []
     day = commit_day(version)
+    survivors = surviving_card_ids(version, base)
     errors: list[str] = []
     for name in listing.split("\0"):
         if not name:
             continue
         path = Path(name)
         before = previous_source(path, base)
+        if (card_id := source_identity(before)) is not None and card_id in survivors:
+            continue
         if path == COMPLAINTS:
             errors.extend(rewritten_complaint_records(path, before, "", day, lambda record_day, texts, path=path: earlier_complaint_records(path, base, record_day, texts)))
         elif path.suffix == ".md":
