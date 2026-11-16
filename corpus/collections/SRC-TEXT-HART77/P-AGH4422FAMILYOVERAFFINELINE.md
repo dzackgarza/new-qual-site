@@ -236,6 +236,38 @@ audit:
     Not read in this pass: nothing new; Deligne's Théorie de Hodge II, 4.4.3,
     and the rigidity result of Peters and Steenbrink remain unread here, and no
     step of the proof was re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's whole-batch report, and the
+    correction of two misattributions in one remark of the source. Youcis's
+    remark after the proof of Theorem 8, in the text version
+    tmp/sources/youcis-2016-abelian-schemes-over-integers.md at line 264,
+    reads: "Using the results mentioned in this mathoverflow post, namely the
+    cited rigidity result of Strauch, one can use the above cited result of
+    Peters and Steenbrink to show that not only must a Q-VHS on a
+    compactifiable complex manifold be constant (as a VHS) but also that the
+    same is true for integral Hodge structures." The rigidity result there is
+    Strauch's, cited from a MathOverflow post; Peters and Steenbrink's is "the
+    above cited result" used with it, and his later remark on algebraicity, at
+    line 274, places it at the compactifiability of V, which is the same
+    reading. Step deligne-argument's third move gave the rigidity result to
+    Peters and Steenbrink and, in a bracketed change of his words, made them
+    the subject of "show[s]"; the remark on the published solution repeated
+    the attribution in its clause on the two analytic inputs. Both are
+    corrected: the step now quotes the remark as written and says which
+    result is whose, and the remark now gives Peters and Steenbrink's result
+    as the constancy of the Q-VHS with Strauch's rigidity result named beside
+    it. The event of 2026-11-16 above whose note begins "A complete published
+    proof of this exercise was located" carries the same attribution, in its
+    clause "the rigidity result of Peters and Steenbrink, both of which
+    Youcis cites"; it stands as written, and this event is the correction.
+    Checked in this pass: that remark and the algebraicity remark in the text
+    version at the lines named, and the two places on the card. Not read in
+    this pass: Deligne, Théorie de Hodge II, 4.4.3, and Strauch's rigidity
+    result, neither of which is in tmp/sources, as before; no step was
+    re-derived, and the printed exercise on printed p. 340 was not reopened.
 ---
 
 ::: {.problem}
@@ -314,7 +346,7 @@ First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of 
 
 Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$ is a constant local system but, a priori, one might be worried that the Hodge filtration is not constant."
 
-Third, "Since $V^\text{an}$ is compactifiable by Hironaka's theorem and by the discussion following Theorem 11 of this article we may conclude that $(R^1f^{\text{an}}_*\underline{\QQ})^\vee$ is constant and thus, by Deligne's theorem, that $\mathscr A$ is isogenous to a constant family $\underline A$." The sentence of his that the constancy of the $\QQ$-local system rests on is the rigidity result he cites in his remark following the proof, that of Peters and Steenbrink, which "show[s] that not only must a $\QQ$-VHS on a compactifiable complex manifold be constant (as a VHS) but also that the same is true for integral Hodge structures".
+Third, "Since $V^\text{an}$ is compactifiable by Hironaka's theorem and by the discussion following Theorem 11 of this article we may conclude that $(R^1f^{\text{an}}_*\underline{\QQ})^\vee$ is constant and thus, by Deligne's theorem, that $\mathscr A$ is isogenous to a constant family $\underline A$." What that constancy rests on, his remark after the proof states in these words: "Using the results mentioned in this mathoverflow post, namely the cited rigidity result of Strauch, one can use the above cited result of Peters and Steenbrink to show that not only must a $\QQ$-VHS on a compactifiable complex manifold be constant (as a VHS) but also that the same is true for integral Hodge structures." The rigidity result in that sentence is Strauch's, taken from a MathOverflow post, and it enters together with the cited result of Peters and Steenbrink: the constancy of the $\QQ$-variation of Hodge structure on a compactifiable manifold is Peters and Steenbrink's, and the integral statement is what the two give together.
 
 Fourth, "the kernel of some isogeny $\underline A\to\mathscr A$ must be a finite group constant group scheme $\underline{\ZZ/n\ZZ}$. Thus, $\mathscr A\cong\underline{A/(\ZZ/n\ZZ)}$ as desired."
 
@@ -352,7 +384,7 @@ That is the triviality the exercise asks for.
 
 Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
 The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}, which is the card's own and unproved.
-Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, which he takes from the rigidity result of Peters and Steenbrink.
+Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
 The printed hint follows a different route: the points of order $2$ form an étale cover of $\AA^1_\CC$, hence are four disjoint sections, and the Legendre parameter $\lambda$ they define is a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, hence constant.
