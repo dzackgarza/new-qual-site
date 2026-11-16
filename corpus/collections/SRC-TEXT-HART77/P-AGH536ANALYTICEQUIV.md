@@ -117,6 +117,19 @@ audit:
     in COMPLAINTS.md, which records it. No mathematical claim changes, and the
     statement, the steps, the pages and the citations are as they were. Not
     checked: nothing new; the proofs were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, third pass: the remark on Wall's book carried the
+    book's availability on this machine and the history of which step stopped needing it
+    --- that it is not in tmp/sources, that only its recorded statement is used, and that
+    an earlier form of the proof wanted it where the card now proves the equivalence
+    directly. A rendered remark carries neither (PROSE-11, QUAL-08). The paragraph now
+    states what Wall's book says, that step c1-c2-equivalent does not use it, and that the
+    non-isomorphism half is step not-analytically-isomorphic. Both facts are recorded in
+    COMPLAINTS.md's V.3.6 entry, which says the book is not among the retained files. No
+    mathematical claim changes, and nothing was re-read in this pass.
 
 ---
 
@@ -531,7 +544,7 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, prin
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits as a direct sum of the local rings at the points over $P$, and because completion is flat and commutes with this splitting, the completed local ring determines the resolution, so analytically isomorphic germs are equivalent. It then states "consider two curves $C=(x^3+y^7=0)$ and $C'=(x^3+xy^5+y^7=0)$ over $\CC$; they are equivalent but not analytically isomorphic" with no computation. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} give the forward implication directly from the Rees-algebra description of the blowup, and steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} compute the two Tjurina numbers $12$ and $11$ that separate the germs.
 
-Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion of step [](#puiseux-characteristic-equivalence){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources` and was not read; only that recorded statement is used, not a page. It is no longer needed for the equivalence of $C_1$ and $C_2$: step [](#c1-c2-equivalent){.pf-ref} now computes the two blowup sequences and compares them directly, so the non-isomorphism of the germs is what carries the counterexample and Wall's criterion is background for the standard picture.
+Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, states the Puiseux-characteristic criterion that step [](#puiseux-characteristic-equivalence){.pf-ref} records: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. Step [](#c1-c2-equivalent){.pf-ref} does not use it, computing the two blowup sequences and comparing them directly, and the non-isomorphism of the germs is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$; Wall's criterion is the standard background for the picture and carries no step of the counterexample.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the failure of analytic isomorphism that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$.
 :::
