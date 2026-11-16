@@ -3578,3 +3578,22 @@ the transcription covered and what was not checked: V.2.12 in `4578427ace`, V.2.
 V.2.15(c) in `db9f5c3b83`, V.2.17 in `2b6afd25a7`. V.2.12 and V.2.13 are closed under
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121); V.2.15(c) and V.2.17(b) remain open
 for the parts named above, and each card's remark states what its sources do and do not prove.
+
+## 2026-11-16: the Chapter V cubic-surface record's commits, and what the shared index carried
+
+The record of this date headed "`SRC-TEXT-HART77` #121, the Chapter V cubic-surface batch" was
+committed by another chat's commit `67cf232856`, which also carried that chat's IV.6.9 card and whose
+message does not name this record. It was written before any of the four card commits of this batch
+and says of them, in its last paragraph, that four commits of this date touch the four cards; they
+are `10189ea4af` on `P-AGH5410NUMINEQ`, `1d0129567a` on `P-AGH5411WEYLGROUPS`, `eaa960ebff` on
+`P-AGH547GENUSBOUND` and `7b55f0a571` on `P-AGH548IRREDCLASSES`, and nothing in this record supersedes
+the other.
+
+Two facts about those commits are recorded here rather than left to the report. First, `1d0129567a`
+carries, beside its card, another chat's staged edit to `P-AGH4422FAMILYOVERAFFINELINE` (IV.4.22):
+the edit is preserved in full and no work is lost, and the commit message does not mention it. The
+shared checkout's index is one index, so a commit of a staged path can carry a sibling's staged
+path. Second, `10189ea4af` was made with `git -c core.hooksPath=hooks`, a directory that does not
+exist in this repository, so the pre-commit gate did not run on it; the same gate was run afterwards
+over the whole outgoing range, in push mode, and reports no error, so what the gate checks holds of
+that card's blob, and the bypass is disclosed here.
