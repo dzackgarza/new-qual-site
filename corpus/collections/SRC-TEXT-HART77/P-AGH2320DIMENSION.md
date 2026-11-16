@@ -211,6 +211,28 @@ audit:
     step, page or statement moves. Read in this pass: the block order of this
     card and the two remarks; no source was reopened and no step was re-derived.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, two items. (i) QUAL-01: parts (c) and (d)
+    carried the printed text verbatim, "If Y is a closed subset of X", which is
+    false at Y empty and therefore ill-posed as printed: the right-hand side of
+    (c) is then an infimum over the empty family, and with the usual conventions
+    codim(empty, X) = +infinity and dim empty = -1 the identity of (d) fails.
+    Both statements now read "If Y is a nonempty closed subset of X", which is the
+    hypothesis the proofs on this card use; the displays themselves are unchanged,
+    as are parts (a), (b), (e) and (f). The remark on the problem states what the
+    exercise prints and why the empty case has no content, without saying anything
+    about how the card was written. The printed text is the one the events of
+    2026-11-15 record, read in tmp/sources/hartshorne-1977-algebraic-geometry.md at
+    printed pp. 94--95; it was not re-read in this pass. (ii) STYLE-08: the pf-qed
+    only listed which step proves which part. It now carries the argument, resting
+    on the two facts stated at the head of the solution, dim A = trdeg_k K and the
+    dimension formula for a prime, and saying for each part which of the two it
+    reads and at which prime. No step is re-derived beyond that reading, and no
+    source was reopened.
+
 ---
 
 ::: {.problem}
@@ -225,12 +247,12 @@ $$
 \krulldim X = \trdeg\qty{K(X)/k}.
 $$
 
-(c) If $Y$ is a closed subset of $X$, then
+(c) If $Y$ is a nonempty closed subset of $X$, then
 $$
 \codim(Y, X) = \inf \theset{\krulldim \OO_{P, X} \st P \in Y}.
 $$
 
-(d) If $Y$ is a closed subset of $X$, then
+(d) If $Y$ is a nonempty closed subset of $X$, then
 $$
 \krulldim Y + \codim(Y, X) = \krulldim X.
 $$
@@ -685,7 +707,7 @@ This proves part (f).
 :::
 
 ::: pf-qed
-Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dimx-equals-trdeg){.pf-ref} proves part (b), step [](#codim-y-equals-inf-dim-op){.pf-ref} proves part (c), step [](#dimy-plus-codimy-equals-dimx){.pf-ref} proves part (d), step [](#dimu-equals-dimx){.pf-ref} proves part (e), and step [](#component-of-xprime-dim-d){.pf-ref} proves part (f).
+Everything follows from the two facts stated at the head of the solution: $\krulldim A=\trdeg_kK$ for a finitely generated integral $k$-algebra, which Noether normalization and going up give, and $\krulldim A_{\mathfrak p}+\trdeg_k\kappa(\mathfrak p)=\trdeg_kK$ for every prime $\mathfrak p$. At a maximal ideal, $A_{\mathfrak p}$ being the local ring of a closed point and $\trdeg_k\kappa(\mathfrak p)=0$, the second fact is (a) (step [](#dim-op-equals-dimx-closed-point){.pf-ref}); the first is (b) (step [](#dimx-equals-trdeg){.pf-ref}). Over the primes that cut out the irreducible closed subsets of a nonempty $Y$ the two facts give (c), the codimension of $Y$ being the infimum of $\krulldim\OO_{P,X}$ over $P\in Y$ (step [](#codim-y-equals-inf-dim-op){.pf-ref}), and adding them for such a prime gives (d) (step [](#dimy-plus-codimy-equals-dimx){.pf-ref}); localizing at the primes of a nonempty open set gives (e) (step [](#dimu-equals-dimx){.pf-ref}), and applying the formula to a Noether normalization of an affine chart after the base change gives (f) (step [](#component-of-xprime-dim-d){.pf-ref}).
 :::
 
 :::
@@ -693,7 +715,7 @@ Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dim
 :::
 
 ::: {.remark}
-Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$; the proof on this card treats that case. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
+The exercise prints (c) and (d) for an arbitrary closed subset $Y$.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$, which is the hypothesis the statements above carry. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
 :::
 
 ::: {.remark title="Published solution"}
