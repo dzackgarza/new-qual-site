@@ -41,14 +41,15 @@ audit:
     delta = C(4,2)+C(3,2) = 9. Different delta means different configurations of
     infinitely near points with multiplicities, by Example 3.9.3 on printed page
     408. Searched outside the twelve retained sets: NTU 2020, Exercise 8 of
-    section 3, PDF p. 13 (tmp/sources/ntu-ag2-chapter5.pdf), obtains delta = 7
+    section 3, PDF pp. 13-14 (tmp/sources/ntu-ag2-chapter5.pdf; (a) on p. 13
+    and (b) on p. 14), obtains delta = 7
     and 9 and then guesses a different equation for (b). Not checked: whether
     the printed (b) was meant to be the guessed x^4-x^2y^2-x^2y^5+y^8; the card
     states the printed equation and proves it.
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: The source says "Show that" the two displayed singularities have matching infinitely near multiplicities and delta invariants but are not equivalent; with these equations the first infinitely near multiplicities are 2 and 3 and the delta invariants are 7 and 9. No corrected equation is known, so the statement now says "Prove or disprove", and the solution disproves the matching claim.
+  note: The source says "Show that" the two displayed singularities have matching infinitely near multiplicities and delta invariants but are not equivalent; with these equations the first infinitely near multiplicities are 2 and 3 and the delta invariants are 7 and 9, and the solution disproves the matching claim. This note said until 2026-11-16 that the statement had been changed to "Prove or disprove"; it had not been, and must not be, since the printed "Show that" is the problem statement and what the card proves is that the printed assertion is false.
 ---
 
 ::: {.problem}
@@ -329,7 +330,9 @@ invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), PDF p. 13, blows up both germs: for (a) the chart $y_1=1$ gives $x_1^4-x_1y_1$, "which is a node, thus $\delta=7$"; for (b) the same chart gives a point of multiplicity $3$ and the next blowup is nonsingular, "thus $\delta=9$". Those two numbers are the ones computed in steps [](#a-delta-seven){.pf-ref} and [](#b-delta-nine){.pf-ref}, and they already refute the printed assertion that the two germs have the same $\delta_P$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up it has a cusp; as a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and computes no $\delta$ for it; the printed (b) is $x^4-x^2y^3-x^2y^5+y^8$.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.8, printed p. 395, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), PDF pp. 13--14, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF; (a) on p. 13, (b) on p. 14), blows up both germs: for (a) the chart $y_1=1$ gives $x_1^4-x_1y_1$, "which is a node, thus $\delta=7$"; for (b) the same chart gives a point of multiplicity $3$ and the next blowup is nonsingular, "thus $\delta=9$". Those two numbers are the ones computed in steps [](#a-delta-seven){.pf-ref} and [](#b-delta-nine){.pf-ref}, and they already refute the printed assertion that the two germs have the same $\delta_P$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up it has a cusp; as a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and computes no $\delta$ for it; the printed (b) is $x^4-x^2y^3-x^2y^5+y^8$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.8, PDF p. 284: "Clearly these two singularities have the same multiplicity by looking at the lowest term (it's 4). The configuration of infinitely near singular points can be seen as in 3.7 ... To see they are not equivalent, note to compute the multiplicity sequence, we use the list `L=resolve(I,1)` command as in 3.7 which gives 3 charts for (a) yet (4) for (b)." He asserts the equality of configurations without computing the sequences, and his chart count is the only part of the argument. The sequences are computed here: $4,2$ for (a) and $4,3$ for (b), with $\delta_0=7$ and $9$, which is why the printed assertion is corrected at the head of the solution.
 :::

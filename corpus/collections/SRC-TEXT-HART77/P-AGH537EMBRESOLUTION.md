@@ -40,17 +40,25 @@ audit:
     the meaning of equivalence, and the delta formula of Example 3.9.3,
     printed page 408. Rechecked the first blowups and the multiplicities: for
     (a), x = uv, y = v gives v^3(u^3+v^2); for (e), x^3+xy^3+y^5 gives
-    v^3(u^3+uv+v^2), whose tangent cone is v^2 and which is smooth at the
-    origin, so delta = 3 + 1 = 4 as the card says. Searched outside the twelve
+    v^3(u^3+uv+v^2), whose lowest part is uv+v^2 = v(u+v), the product of two
+    distinct linear forms, so the infinitely near point is an ordinary node and
+    not smooth; delta = 3 + 1 = 4 as the card says, with the 1 from the node.
+    The words "smooth at the origin" and "tangent cone is v^2", which this
+    note carried for (e) until 2026-11-16, were false of that germ and are
+    withdrawn; the card's step e-first-blowup-node had it right throughout. Searched outside the twelve
     retained sets: NTU 2020, Exercise 7 of section 3, PDF pp. 12-13
     (tmp/sources/ntu-ag2-chapter5.pdf), has resolutions, the same five delta
     values 4,4,3,4,4 and the same equivalence classes; Yang Pi-Yeh,
     Hartshorne Solutions, printed pp. 108-109
     (tmp/sources/lfwin-hartshorne-solutions.pdf), writes the transforms
-    without delta or equivalence. Not checked: whether a general ground field
-    lacks the square root of -1 used in the chart of (e); the book assumes k
-    algebraically closed, and over such a field the three points on the
-    exceptional curve exist.
+    without delta. Corrected on 2026-11-16: Yang does decide the equivalence
+    question, on printed p. 108, and the earlier wording on this card that he
+    does not was false. It is also false that a square root of -1 enters
+    (e)'s chart: its node has branches w = 0 and w = -1. What does need a
+    hypothesis is the pair of formal identifications in step abd-equivalent,
+    x -> x(1+x)^{1/3} for (b) and y -> y(1+y)^{1/5} for (d), which need 3 and
+    5 invertible; the book's standing hypothesis is an algebraically closed
+    ground field.
 ---
 
 ::: {.problem}
@@ -560,9 +568,11 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, gives an embedded resolution for each of (a)--(e) with the first two blowups written out in coordinates, reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, printed p. 395, with (3.9.4) and (3.9.3) on printed p. 408, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.7, printed pp. 108--109, writes the successive strict transforms for the same five germs and, in the case of (b), records the tangent line of the second point, but does not compute $\delta_P$ or decide the equivalence question for any of them.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are coarse, so the pages were read off the PDF), blows each germ up until its strict transform is nonsingular --- twice for (a), (b), (d) and (e), once for (c) --- and stops there: it draws the incidence graph of the curves produced and never carries out the further blowups at smooth points that make the total transform simple normal crossings, so what it gives is the resolution of the curve and not an embedded resolution in that sense; it reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.7, printed p. 108, writes the successive strict transforms for the same five germs --- including, for (a), (b) and (d), the further blowup at a smooth point that produces the normal crossings --- and closes the entry with "So $(a),(b),(d)$ are equivalent to each other. And $(c),(e)$ are not equivalent to any others", which is the classification of step [](#summary-table){.pf-ref}; he does not compute $\delta_P$, which the exercise also asks for.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.7, PDF pp. 279--282, is a Singular session: it prints the chart trees from `resolve`, has no $\delta_P$, and ends "these commands should show that (d) is not equivalent". Steps [](#a-first-blowup){.pf-ref} to [](#e-not-equivalent){.pf-ref} carry out the resolutions and the comparisons by hand.
 :::

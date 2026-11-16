@@ -233,9 +233,44 @@ The singularities $C_1$ and $C_2$ are equivalent in the sense of
 (3.9.4).
 
 ::: pf-proof
-By step [](#same-puiseux-pair){.pf-ref}, they have identical Puiseux characteristic. The
-Puiseux-resolution theorem of step [](#puiseux-characteristic-equivalence){.pf-ref} therefore gives identical embedded
-resolution data, hence equivalence in the sense of (3.9.4).
+This is computed, not quoted: two point blowups at the origin and at the
+point over it give, for each germ, the same data, so step
+[](#puiseux-characteristic-equivalence){.pf-ref} is not needed here.
+
+Both equations have order $3$ with tangent cone $y^3$, so after the blowup of
+the origin only the chart $y=xy^{\prime}$ meets the strict transforms, and
+there
+$$
+f_1=y^3+x^7\ \mapsto\ x^3\bigl(y^{\prime 3}+x^4\bigr),
+\qquad
+f_2=y^3+x^5y+x^7\ \mapsto\ x^3\bigl(y^{\prime 3}+x^3y^{\prime}+x^4\bigr).
+$$
+Each strict transform has multiplicity $3$ at its point $(0,0)$ on the
+exceptional curve $E_1$, and each has tangent cone $y^{\prime 3}$, so the
+second blowup is again taken at that one point and again in the chart
+$y^{\prime}=xy^{\prime\prime}$:
+$$
+y^{\prime 3}+x^4\ \mapsto\ x^3\bigl(y^{\prime\prime 3}+x\bigr),
+\qquad
+y^{\prime 3}+x^3y^{\prime}+x^4\ \mapsto\ x^3\bigl(y^{\prime\prime 3}+xy^{\prime\prime}+x\bigr).
+$$
+Both second strict transforms are nonsingular at the origin --- the partial
+derivative with respect to $x$ is $1$ there in the first case and
+$y^{\prime\prime}+1$ in the second --- and each meets the new exceptional curve
+$E_2$ in the single point $y^{\prime\prime}=0$ with multiplicity $3$, being
+tangent to it. So for the two germs the reduced total transforms have the same
+components ($E_1$, $E_2$, one strict transform of the curve, meeting in the same
+way), the same multiplicities $3,3$ at the two centres, the same single branch
+over the origin, and the same behaviour at the last step; by (3.9.4) that is
+equivalence, and both sequences are resolutions since the strict transforms are
+nonsingular at the end.
+
+The same chain gives the second cross-check: by (3.9.3),
+$$
+\delta=\binom32+\binom32=6
+$$
+for both germs, which is $\frac{(3-1)(7-1)}2$, the value the pair $(3,7)$
+predicts.
 :::
 
 :::
@@ -405,9 +440,11 @@ isomorphic, proving that the converse fails.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4), printed p. 408, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits as a direct sum of the local rings at the points over $P$, and because completion is flat and commutes with this splitting, the completed local ring determines the resolution, so analytically isomorphic germs are equivalent. It then states "consider two curves $C=(x^3+y^7=0)$ and $C'=(x^3+xy^5+y^7=0)$ over $\CC$; they are equivalent but not analytically isomorphic" with no computation. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} give the forward implication directly from the Rees-algebra description of the blowup, and steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} compute the two Tjurina numbers $12$ and $11$ that separate the germs.
 
-Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion used in steps [](#puiseux-characteristic-equivalence){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources`; only the criterion is used, not a page.
+Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion of step [](#puiseux-characteristic-equivalence){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources` and was not read; only that recorded statement is used, not a page. It is no longer needed for the equivalence of $C_1$ and $C_2$: step [](#c1-c2-equivalent){.pf-ref} now computes the two blowup sequences and compares them directly, so the inequivalence of the germs is what carries the counterexample and Wall's criterion is background for the standard picture.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the inequivalence that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$. Recorded in COMPLAINTS.
 :::
