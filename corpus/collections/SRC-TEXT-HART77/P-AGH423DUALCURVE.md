@@ -807,7 +807,7 @@ $$
 $$
 x-(3ut^2+u't^3)y+(2ut^3+u't^4)z=0,
 $$
-whose dual point is $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, the point the card's computation above gives as $-3a_3t^2$ and $2a_3t^3$ to leading order; it is also what his own parametrization at printed p. 356 yields, $[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$, read for $x-uy^3$ in place of $x-uy^2$. His conclusion stands either way, since both points give a branch of multiplicity $2$ with tangent contact $3$; only the printed coordinates are wrong. The multiplicities read off here are the definition the card uses.
+whose dual point is $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, the point the card's computation above gives as $-3a_3t^2$ and $2a_3t^3$ to leading order. It is also what his own recipe at printed p. 356 gives when applied to a contact of order $3$ rather than $2$: his $[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$ is that recipe for $x-uy^2$. His conclusion stands either way, since both points give a branch of multiplicity $2$ with tangent contact $3$; only the printed coordinates are wrong. The multiplicities read off here are the definition the card uses.
 :::
 
 :::
