@@ -168,7 +168,18 @@ HEADING = re.compile(r"^(?P<marks>#{1,6})\s")
 # A section record begins with its own day; a paragraph or numbered item states it
 # first in the bold or italic lead that opens it.
 SECTION_DAY = re.compile(r"^#{1,6}\s+(\d{4}-\d{2}-\d{2}):")
-NUMBERED = re.compile(r"^\d+\.\s")
+NUMBERED = re.compile(r"^(?P<indent>[ \t]*)\d+\.\s")
+# The sections QUAL-11 restored to the heading their own day gave them. A session of
+# 2026-11-16 moved each day to the front of its heading to follow the format, which
+# rewrites a dated record, so the restoration puts the heading back and the day stands
+# mid-title where that day left it. The gate reads those days here rather than lose the
+# three records: a heading that names a day after its first word is read through this
+# table and nowhere else.
+RESTORED_SECTIONS: dict[str, date] = {
+    "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved": date(2026, 11, 15),
+    "## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)": date(2026, 11, 15),
+    "## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards": date(2026, 11, 15),
+}
 
 
 @dataclass(frozen=True)
@@ -254,6 +265,11 @@ def audit_records(source: str) -> list[AuditRecord]:
     return [AuditRecord(day=_audit_day(event), text=_audit_text(event)) for event in events]
 
 
+def event_notes(source: str) -> list[str]:
+    """The note of each audit event in one revision's card text."""
+    return [record.text[3] for record in audit_records(source)]
+
+
 def authored_prose(source: str) -> str:
     """A card's source without its `audit:` block.
 
@@ -274,24 +290,37 @@ def authored_prose(source: str) -> str:
     return source[: match.start()] + "".join(lines[end:])
 
 
-def earlier_texts(path: Path, revision: str, texts: set[str]) -> set[str]:
-    """Those of `texts` that stand verbatim in an earlier revision of `path`.
+def earlier_versions(path: Path, revision: str) -> list[str]:
+    """The text of `path` at each earlier revision of it, newest first."""
+    revisions = subprocess.run(["git", "log", "--format=%H", revision, "--", path.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
+    return [previous_source(path, earlier) for earlier in revisions]
+
+
+def _folded(text: str) -> str:
+    """A record's text with its whitespace folded, so a wrapped note is the same note."""
+    return " ".join(text.split())
+
+
+def earlier_texts(path: Path, revision: str, texts: set[str], records: Callable[[str], list[str]]) -> set[str]:
+    """Those of `texts` that stand as a record in an earlier revision of `path`.
 
     The one change QUAL-11 allows to a dated record is a return to the text it carried
     when it was written, and the evidence for that is the text itself standing in the
-    history of the same path. A session writing new text today cannot produce it without
-    an earlier revision to copy from. Both sides are compared with their whitespace
-    folded, because an authored note that wraps is recorded as one line. This runs only
-    where a dated record is about to be reported, so an ordinary commit pays nothing.
+    history of the same path. It has to be the whole record and not a passage of one: a
+    record cut down to a prefix of what it said is not a restoration of it, and a
+    containment test would accept exactly that. Both sides are compared with their
+    whitespace folded, because an authored note that wraps is recorded as one line.
+    `records` reads the record texts out of one revision's text. This runs only where a
+    dated record is about to be reported, so an ordinary commit pays nothing.
     """
+    wanted = {_folded(text): text for text in texts if text}
     found: set[str] = set()
-    revisions = subprocess.run(["git", "log", "--format=%H", revision, "--", path.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
-    wanted = {" ".join(text.split()): text for text in texts if text}
-    for earlier in revisions:
-        if found == texts:
+    for standing in earlier_versions(path, revision):
+        if not wanted:
             break
-        standing = " ".join(previous_source(path, earlier).split())
-        found |= {original for folded, original in wanted.items() if folded in standing}
+        standing_records = {_folded(record) for record in records(standing)}
+        found |= {original for folded, original in wanted.items() if folded in standing_records}
+        wanted = {folded: original for folded, original in wanted.items() if original not in found}
     return found
 
 
@@ -348,20 +377,67 @@ def _record_day(found: re.Match[str] | None) -> date | None:
         return None
 
 
+def _blocks(lines: list[str]) -> list[tuple[int, int]]:
+    """The line ranges of the blank-line-separated blocks of a Markdown file."""
+    blocks: list[tuple[int, int]] = []
+    start: int | None = None
+    for index, line in enumerate(lines):
+        if line.strip():
+            if start is None:
+                start = index
+        elif start is not None:
+            blocks.append((start, index))
+            start = None
+    if start is not None:
+        blocks.append((start, len(lines)))
+    return blocks
+
+
+def _item_end(lines: list[str], start: int, indent: int) -> int:
+    """The line after the last line a numbered item holds.
+
+    A continuation paragraph and every bullet under the item are indented past the
+    item's own marker, and they are the evidence the item records; a heading, the next
+    item at that indentation, and a block outside it end the item instead. A line that
+    follows the item's text without a blank line is a lazy continuation, which Markdown
+    keeps in the item.
+    """
+    end = start + 1
+    blank = False
+    for index in range(start + 1, len(lines)):
+        line = lines[index]
+        if HEADING.match(line):
+            break
+        if not line.strip():
+            blank = True
+            continue
+        inner = NUMBERED.match(line)
+        if (inner is not None and len(inner["indent"]) <= indent) or (blank and len(line) - len(line.lstrip()) <= indent):
+            break
+        blank = False
+        end = index + 1
+    return end
+
+
 def dated_records(source: str) -> list[tuple[date, str]]:
     """Each dated COMPLAINTS record, with its own day and its text.
 
     A section record begins with its day (`## 2026-11-16: ...`) and runs to the next
-    heading of the same or a higher rank. A paragraph, or the opening paragraph of a
-    numbered item, states its day first in the bold or italic lead that opens it. A day
-    the record merely mentions follows its own, and a lead that carries no day records
-    none, so the bullets of an entry are not records.
+    heading of the same or a higher rank. A paragraph states its day first in the bold
+    or italic lead that opens it, and a numbered item is one record with everything the
+    item holds: its continuation paragraphs and the bullets indented under it are the
+    evidence it records, so they are part of it and not free text beside it, and the
+    items of a list are records one by one even where no blank line separates them. A
+    day the record merely mentions follows its own, and a lead that carries no day
+    records none, so the bullets of an entry are not records in their own right. A
+    heading QUAL-11 restored to the text its day gave it states that day mid-title, and
+    `RESTORED_SECTIONS` supplies it.
     """
     lines = source.splitlines()
     headings = [(index, len(match["marks"])) for index, line in enumerate(lines) if (match := HEADING.match(line))]
     records: list[tuple[date, str]] = []
     for position, (start, level) in enumerate(headings):
-        day = _record_day(SECTION_DAY.match(lines[start]))
+        day = _record_day(SECTION_DAY.match(lines[start])) or RESTORED_SECTIONS.get(lines[start])
         if day is None:
             continue
         end = len(lines)
@@ -370,11 +446,27 @@ def dated_records(source: str) -> list[tuple[date, str]]:
                 end = later
                 break
         records.append((day, "\n".join(lines[start:end]).strip()))
-    for block in re.split(r"\n[ \t]*\n", source):
-        day = _record_day(DAY.search(opening_lead(block)))
+    for start, line in enumerate(lines):
+        item = NUMBERED.match(line)
+        if item is None:
+            continue
+        day = _record_day(DAY.search(opening_lead(line)))
         if day is not None:
-            records.append((day, block.strip()))
-    return records
+            records.append((day, "\n".join(lines[start : _item_end(lines, start, len(item["indent"]))]).strip()))
+    for start, end in _blocks(lines):
+        if NUMBERED.match(lines[start]):
+            continue
+        day = _record_day(DAY.search(opening_lead("\n".join(lines[start:end]))))
+        if day is not None:
+            records.append((day, "\n".join(lines[start:end]).strip()))
+    return list(dict.fromkeys(records))
+
+
+
+
+def record_texts(source: str) -> list[str]:
+    """The text of each dated record in one revision's COMPLAINTS text."""
+    return [record for _, record in dated_records(source)]
 
 
 def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[set[str]], set[str]] | None = None) -> list[str]:
@@ -467,6 +559,32 @@ def previous_source(path: Path, revision: str) -> str:
     return subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
 
 
+def removal_errors(version: str, base: str) -> list[str]:
+    """Dated records a commit deletes, with the path that held them (QUAL-11).
+
+    A deletion is read from Git's own diff and not from the caller's path list: the
+    shared hook lists only the paths that survive a change, so a commit that deletes
+    `COMPLAINTS.md` or a card presents it nothing to compare. Deleting the file deletes
+    every dated record it states, and deleting a card deletes its dated events. A move
+    is not a deletion, and Git's own similarity search is what tells the two apart.
+    """
+    command = ["git", "diff", "--find-renames", "--name-only", "--diff-filter=D", "-z"]
+    command.extend(["--cached", base] if version == "index" else [base, version])
+    listing = subprocess.run([*command, "--", "corpus/", "wiki/", COMPLAINTS.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout
+    day = commit_day(version)
+    errors: list[str] = []
+    for name in listing.split("\0"):
+        if not name:
+            continue
+        path = Path(name)
+        before = previous_source(path, base)
+        if path == COMPLAINTS:
+            errors.extend(rewritten_complaint_records(path, before, "", day, lambda texts, path=path: earlier_texts(path, base, texts, record_texts)))
+        elif path.suffix == ".md":
+            errors.extend(rewritten_audit_events(path, before, "", day, lambda texts, path=path: earlier_texts(path, base, texts, event_notes)))
+    return errors
+
+
 def changed_paths(version: str, base: str) -> tuple[dict[Path, Path], list[Path]]:
     """Git's rename records and deletions for one version's diff against `base`.
 
@@ -508,11 +626,11 @@ def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> li
             earlier = moves.get(change.path, change.path)
             if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
                 earlier = retired.get(card_id, change.path)
-            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda texts, path=change.path: earlier_texts(path, base, texts)))
+            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda texts, path=change.path: earlier_texts(path, base, texts, event_notes)))
     return errors
 
 
-def check_git_changes(changes: list[GitChange], base: str) -> int:
+def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...] = ()) -> int:
     """Validate card, wiki and complaint blobs selected by the shared hook or a range check.
 
     Diagrams are compiled here because the site build is the only other place
@@ -520,11 +638,15 @@ def check_git_changes(changes: list[GitChange], base: str) -> int:
 
     `base` is the revision every changed blob is compared with: the parent of the staged
     index, or the base of an outgoing range. The caller names it, because the two
-    selections have different ancestors.
+    selections have different ancestors. `versions` names the trees whose deletions are
+    compared with `base`; it defaults to the versions the changes carry, and a caller
+    whose path list can be empty names its own.
     """
     cards = [change for change in changes if change.path.parts[0] in ("corpus", "wiki") and change.path.suffix == ".md"]
     complaints = [change for change in changes if change.path == COMPLAINTS]
     errors: list[str] = []
+    for version in versions or tuple(dict.fromkeys(change.version for change, _ in changes)):
+        errors.extend(removal_errors(version, base))
     bodies: list[tuple[Path, str]] = []
     selected: list[tuple[GitChange, str]] = []
     for change in cards:
@@ -553,7 +675,7 @@ def check_git_changes(changes: list[GitChange], base: str) -> int:
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda texts: earlier_texts(COMPLAINTS, base, texts)))
+        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda texts: earlier_texts(COMPLAINTS, base, texts, record_texts)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
@@ -646,7 +768,7 @@ def check_git_cards(version: str, diff_args: tuple[str, ...], base: str) -> int:
         stdout=subprocess.PIPE,
         text=True,
     ).stdout
-    return check_git_changes([GitChange(path=Path(name), version=version) for name in names.split("\0") if name], base)
+    return check_git_changes([GitChange(path=Path(name), version=version) for name in names.split("\0") if name], base, (version,))
 
 
 def check_pushed_commits(tip: str) -> int:
@@ -666,7 +788,7 @@ def check_pushed_commits(tip: str) -> int:
             stdout=subprocess.PIPE,
             text=True,
         ).stdout
-        failed |= check_git_changes([GitChange(path=Path(name), version=commit) for name in names.split("\0") if name], base)
+        failed |= check_git_changes([GitChange(path=Path(name), version=commit) for name in names.split("\0") if name], base, (commit,))
     return failed
 
 
@@ -847,9 +969,10 @@ def main(argv: list[str] | None = None) -> int:
             if any((change.version == "index") != (args.mode == "staged") for change in changes):
                 raise ValueError("Git blob versions must match the requested validation mode")
             if args.mode == "staged":
-                return check_git_changes(changes, head_commit())
-            # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09).
-            versions = list(dict.fromkeys(change.version for change in changes))
+                return check_git_changes(changes, head_commit(), ("index",))
+            # The shared hook's payload omits deletions, and the pushed tip is HEAD on main (QUAL-09),
+            # so the tip is replayed even when the payload holds no path at all.
+            versions = list(dict.fromkeys([*[change.version for change in changes], "HEAD"]))
             failed = 0
             for version in versions:
                 failed |= check_pushed_commits(version)

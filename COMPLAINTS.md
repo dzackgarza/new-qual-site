@@ -22,7 +22,7 @@ Add a descriptive heading in the appropriate section below, with:
 
 - **Repair:** link the existing issue when available and state the result that would resolve the observation.
 
-A record that is dated states its own day first: a section heading begins with it (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or numbered item carries it (`**Searched outside the retained sets (issue #131, 2026-11-11).**`). A day the record only mentions follows its own, so a lead with no day records none. The gate refuses a commit that changes or deletes a dated record of an earlier day; a heading without a leading day, or a lead without a day, is not a record and may be edited.
+A record a session writes states its own day first: a section heading begins with it (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or numbered item carries it (`**Searched outside the retained sets (issue #131, 2026-11-11).**`). A numbered item is one record with its continuation line and the blocks indented under it, which are the evidence it records. A day the record only mentions follows its own, so a lead with no day records none. The gate refuses a commit that changes or deletes a dated record of an earlier day, including a record it deletes with its file; a heading without a leading day, or a lead without a day, is not a record and may be edited, apart from the three sections restored to the heading their own day gave them (QUAL-11), whose day stands mid-title and which the gate reads from `RESTORED_SECTIONS` in `tools/qualc/authoring.py`.
 
 A missing hypothesis with a concrete counterexample is a mathematical issue.
 An unreadable source is an unresolved source question.
@@ -1526,7 +1526,7 @@ A set not read before was located and is held: Yougi, *Munkres Topology Solution
 
 **Repair.** Two cards were corrected. `E-LHQJE` concluded $n(f,a)=\deg h$ by calling both sides "the change in the lift of $g$", which is the definition of $n(f,a)$ on printed p. 403 but not that of $\deg h$: §58 Exercise 9 defines the degree by $h_*(\gamma(x_0))=d\cdot\gamma(x_1)$, and the card now identifies the two through the isomorphism $[\delta]\mapsto\tilde\delta(1)-\tilde\delta(0)$ of Theorem 54.5 (printed p. 345). `E-2B91X` cited the closed-surjection normality statement as "Exercise 6 of §32, printed p. 199"; the exercise is Exercise 6 of **§31**, printed p. 199. The other nine keep the substance of the proofs their cards carried --- for §68.4 and §73.4 the argument of the published proof transcribed in this pass --- and those proofs were re-read against the book's numbered results: §66.2 against the definition of $n(f,a)$ (printed p. 403) and Green's theorem; §68.1 against Example 1 (printed p. 414); §68.4 against Lemma 68.3 and Theorem 68.4 (printed p. 418); §69.2 against Lemma 68.3 (printed p. 418) and Lemma 67.5 (printed p. 410); §70.1 against Theorem 70.1 (printed p. 426); §70.2 against Theorem 70.1 and §59; §72.1 against Corollary 70.4 (printed p. 432) and Theorem 59.3 (printed p. 369); §72.2 against Lemma 73.3 (printed p. 443); §72.3 against Theorem 72.1 (printed p. 439) and the definition of the fundamental group in §52 (printed p. 331); §73.4 against Theorem 34.1 (printed p. 215) and Theorem 26.2 (printed p. 165).
 
-## 2026-11-15: `SRC-TEXT-HART77`, the #121 pass, the cards listed, and what the sources outside the retained sets proved
+## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved
 
 **Object and need.** [Issue #121](https://github.com/dzackgarza/new-qual-site/issues/121): every Hartshorne card whose
 entry here says it has no complete published solution is to carry a proof transcribed from a published
@@ -2385,7 +2385,7 @@ therefore carries five sentences of his entry, one of them begun on p. 113, and 
 two, and then three, undercounted it. The card's published-solution remark and the entry above now cite
 pp. 113--114, name p. 114 as the page of the decisive passage, and quote the fraktur.
 
-## 2026-11-15: `SRC-TEXT-HART77` #121, the remaining cards against the MinerU text versions, second pass
+## `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)
 
 **Stack Exchange was not searchable.** The throttle on this VM's address runs to about 03:00Z on
 2026-11-16; this pass ran from 20:31Z on 2026-11-15, so no query was sent and no thread is cited. That is a
@@ -2537,7 +2537,7 @@ $h^0\ge3$, and $h^0=3$ would put $X$ in $\PP^2$ as a surface, i.e. $X\cong\PP^2$
 **No closure.** The three reader items of the pass are in $d387252b70$; the cards above keep their own proofs
 and the obligation recorded in their sections.
 
-## 2026-11-15: `SRC-TEXT-HART77` #121, the third pass, four repairs and the next two cards
+## `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards
 
 **The four repairs.** Egbert's MinerU text version now exists and is cited on the cards that read him
 (`tmp/sources/hartshorne-solutions-egbert.md`, 304 PDF pages, markers every twenty; the copy read here at
@@ -2922,3 +2922,26 @@ Its "The computation, stated here" bullet specializes the two partial-vanishing 
 $x=y$; $x=y$ is the separate derived relation $x=y^{d-1}$. With $1=y$ the two equations give
 $(x,y)=(1,1)$, so the bullet's conclusion $x=1$, its $x\ne0$, and its value $3x=3$ for the equation at that
 point are unchanged.
+
+## 2026-11-16: the three headings `9eac4d89dd` re-headed are restored, and the format states what it governs
+
+`9eac4d89dd` moved the day of three records of 2026-11-15 from the middle of their
+headings to the front and reworded the rest of each heading, so that the file would follow
+the format it was stating. That is a rewrite of a dated record in place, which QUAL-11
+forbids, and the three headings are restored verbatim to the text those sections carried
+on their day. Their bodies are unchanged since 2026-11-15, so each section is again
+exactly the record its day left, and the gate accepts the restoration on that text.
+
+The three headings, each after its `## ` marker:
+
+- `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved
+- `SRC-TEXT-HART77` #121: the remaining cards against the MinerU text versions, second pass (2026-11-15)
+- `SRC-TEXT-HART77` #121: the third pass of 2026-11-15, four repairs and the next two cards
+
+The format therefore governs the record a session writes. A record restored to its own
+text is not a new record, and moving its day to the front to fit the format would rewrite
+it, so the gate reads those three days from `RESTORED_SECTIONS` in
+`tools/qualc/authoring.py` and the three sections remain append-only. The same pass states
+in the preamble that a numbered item is one record with its continuation and the blocks
+indented under it, and that deleting a card or this file deletes the records it holds.
+

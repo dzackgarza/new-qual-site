@@ -1019,9 +1019,16 @@ restoration when the replacement text stands in an earlier revision of the same
 path — the text is the evidence, so a session cannot write new words into a
 dated event. `STYLE-02`, `STYLE-03` and `STYLE-04` are not applied to the
 `audit:` block for the same reason: a record keeps the symbols of its day.
-`COMPLAINTS.md`'s dated records are held to the same rule and state their own
-day first: a section heading begins with it (`## 2026-11-16: …`), and the bold
-or italic lead that opens a paragraph or numbered item carries it. A push
-replays each published commit against its own parent and its own committer day,
-so a sanctioned `--no-verify` content commit is still judged by the day it was
-written.
+`COMPLAINTS.md`'s dated records are held to the same rule, and a record a session
+writes states its own day first: a section heading begins with it
+(`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or
+numbered item carries it, a numbered item being one record with its continuation
+line and the blocks indented under it. Deleting a card or that file deletes the
+records it holds, and the gate reads the deletion from Git's own diff because the
+shared hook's payload lists only the paths that survive a change. The three
+sections whose headings a later session rewrote are restored to the heading
+their day gave them, whose day stands mid-title; the gate reads those three days
+from `RESTORED_SECTIONS` in `tools/qualc/authoring.py`. A push replays each
+published commit against its own parent and its own committer day, and replays
+the pushed tip even when the payload names no path, so a sanctioned `--no-verify`
+content commit is still judged by the day it was written.
