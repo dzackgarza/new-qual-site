@@ -44,12 +44,13 @@ audit:
     a rational map P^1 to a nonrational curve constant. Searched outside the
     twelve retained sets and read two further published treatments. Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
-    Exercise 1 of section 2, PDF p. 5 (tmp/sources/ntu-ag2-chapter5.pdf): the
-    argument is the card's, except that its last case reads "if C = P^1 then
-    f-tilde is a constant, which means f is a constant, a contradiction", and
-    f-tilde is dominant by construction; step s4 states the unirationality that
-    case needs. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.1, printed p.
-    102 (tmp/sources/lfwin-hartshorne-solutions.pdf), passes from K(X) = L(x) to
+    Exercise 1 of section 2, PDF p. 5, text version
+    `tmp/sources/ntu-ag2-chapter5.md`: steps s2 to s4 are its argument, including
+    its last case, which reads "if C = P^1 then f-tilde is a constant, which means
+    f is a constant, a contradiction" and is valid, since a constant f-tilde puts
+    the image of the birational map inside one fibre of p'. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.1, printed p.
+    102 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
+    `tmp/sources/lfwin-hartshorne-solutions.md`), passes from K(X) = L(x) to
     "the unique curve C with K(C) = L", which assumes that L is determined by
     K(X), the content of the exercise. Not checked: the argument was not
     re-examined over a non-algebraically-closed base field.
@@ -64,11 +65,13 @@ audit:
     p. 5, builds the incidence variety of a linearly normal scroll and concludes
     that the scroll determines its ruled surface, which is uniqueness of the ruling
     of an embedded scroll and not the birational statement asked here, so it does
-    not supply this exercise. Math StackExchange question 1715815, "Uniqueness of
-    ruling for a ruled surface", asks exactly V.2.1 and has no answer: the page
-    carries only Mohan's comment that a nonconstant map between curves of genus
-    above one is an isomorphism by Hurwitz, with pointers to work of Ohm and
-    Deveney. Chao Li's Columbia notes "Enriques classification of complex
+    not supply this exercise. Math StackExchange question 1715815, saved whole as
+    tmp/sources/mse-1715815-hart77-v21-uniqueness-of-ruling.md, asks the
+    isomorphism form of the question, "suppose one has two isomorphic ruled
+    surfaces C_1 x P^1 and C_2 x P^1, how can we show C_1 is isomorphic to C_2",
+    which is weaker than the birational statement of this exercise, and it has no
+    answer and no comment; an earlier note here attributed a comment of Mohan to
+    it, and the saved page holds none. Chao Li's Columbia notes "Enriques classification of complex
     algebraic surfaces" were also read: their Theorem 7 and its proof show that
     every minimal model of C x P^1 for an irrational C is geometrically ruled
     over C, which recovers the base from a minimal model but never states or
@@ -76,6 +79,28 @@ audit:
     an argument for this exercise either. No complete published argument for
     V.2.1 was located; steps s2 to s5 remain the card's own and were checked
     against the book in the note above.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the National Taiwan University set's Exercise 1 of section 2 in its
+    text version on 2026-11-16 and made steps s2 and s4 its argument rather than
+    a parallel one. Step s2 now evaluates on the fibres of p, as that set does:
+    for all but finitely many x the restriction to {x} x P^1 gives a rational map
+    P^1 to C', which extends to a morphism and is constant because C' is not
+    P^1; the constants assemble into a morphism by comparison with the morphism
+    C x {u} to C'. Step s4 is that set's last case, which the earlier notes
+    called invalid: it is valid, since with C = P^1 and C' not P^1 the morphism
+    f-tilde is constant, hence p' composed with the birational map is constant
+    and its image lies in one fibre of p', a curve, which a dominant map from a
+    surface cannot have. The other direction of s4 is the same argument applied
+    to the inverse birational map. Also corrected: Math StackExchange question
+    1715815 asks the isomorphism form, C_1 x P^1 isomorphic to C_2 x P^1, not
+    this exercise's birational form, and its saved page
+    tmp/sources/mse-1715815-hart77-v21-uniqueness-of-ruling.md carries no answer
+    and no comment, so the comment of Mohan recorded above is not on it. Not
+    checked: whether that thread's question, being strictly weaker, follows from
+    this exercise without a further argument; nothing on the card needs it.
 ---
 
 ::: {.problem}
@@ -129,43 +154,37 @@ contrary to the hypothesis. Hence the map is constant.
 
 ::: {.pf-step #s2}
 
-If $C'\not\cong\PP^1$, then the rational map
-$$
-p'\circ\Phi:C\times\PP^1\dashrightarrow C'
-$$
-factors uniquely as
-$$
-C\times\PP^1\dashrightarrow C\dashrightarrow C',
-$$
-that is,
+If $C'\not\cong\PP^1$, then
 $$
 p'\circ\Phi=f\circ p
 $$
-for a dominant rational map $f:C\dashrightarrow C'$.
+for a morphism $f:C\to C'$, which is dominant.
 
 ::: pf-proof
 
-Restrict $p'\circ\Phi$ to the generic fibre of $p$. After extending the
-ground field from $k$ to $k(C)$, this is a rational map
+Let $U\subseteq C\times\PP^1$ be a dense open set on which $\Phi$ is a morphism
+with image inside the domain of $p'$. For $x\in C$ whose fibre
+$\{x\}\times\PP^1$ meets $U$, the restriction is a rational map
 $$
-\PP^1_{k(C)}\dashrightarrow C'_{k(C)}.
+\PP^1\cong\{x\}\times\PP^1\longrightarrow C',
 $$
-If it were nonconstant, after passage to an algebraic closure of $k(C)$ it
-would give a nonconstant rational map from $\PP^1$ to the base change of
-$C'$. Step [](#s1){.pf-ref} would force that base-changed curve, and hence $C'$, to have
-genus zero, so $C'\cong\PP^1$. This contradicts the hypothesis. Thus the map
-is constant on the generic $p$-fibre.
+and only finitely many $x$ fail this. Since $C'$ is a nonsingular projective
+curve, that rational map extends to a morphism $\PP^1\to C'$, which is
+constant by step [](#s1){.pf-ref} because $C'\not\cong\PP^1$. Write
+$\widetilde f(x)$ for the constant value.
 
-Equivalently on function fields, the pullback
+Fix $u\in\PP^1$ with $C\times\{u\}\subseteq U$. The composite
 $$
-k(C')\longrightarrow k(C)(t)
+C\longrightarrow C\times\{u\}\longrightarrow C\times\PP^1
+\xrightarrow{\Phi}C'\times\PP^1\xrightarrow{p'}C'
 $$
-has image in the subfield $k(C)$. It therefore defines a rational map
+is a morphism, and at every point of a dense open set of $C$ it takes the value
+$\widetilde f(x)$, by the constancy just proved. Hence
 $$
-f:C\dashrightarrow C'
+f=\widetilde f:C\longrightarrow C'
 $$
-with $p'\circ\Phi=f\circ p$. Since both $\Phi$ and $p'$ are dominant, so is
-$f$.
+is a morphism with $p'\circ\Phi=f\circ p$. Since $\Phi$ and $p'$ are dominant
+and $p$ is surjective, $f$ is dominant.
 
 :::
 
@@ -217,18 +236,24 @@ If one of $C,C'$ is isomorphic to $\PP^1$, then so is the other.
 
 ::: pf-proof
 
-Suppose, for example, that $C'\cong\PP^1$ and assume for contradiction that
-$C\not\cong\PP^1$. Apply the argument of step [](#s2){.pf-ref} to the composite
+Suppose $C\cong\PP^1$ and assume for contradiction that $C'\not\cong\PP^1$. By
+step [](#s2){.pf-ref},
 $$
-p\circ\Psi:C'\times\PP^1\dashrightarrow C.
+p'\circ\Phi=f\circ p
 $$
-Because the target $C$ is nonrational, this composite factors through the
-first projection and produces a dominant rational map
+with $f:C\to C'$ a morphism, and $C\cong\PP^1$ with $C'\not\cong\PP^1$ makes
+$f$ constant by step [](#s1){.pf-ref}. Hence $p'\circ\Phi$ is constant, so the
+image of the birational map $\Phi$ is contained in a single fibre
 $$
-C'\dashrightarrow C.
+\{c\}\times\PP^1
 $$
-But $C'\cong\PP^1$, contradicting step [](#s1){.pf-ref}. Hence $C\cong\PP^1$. The other
-direction is symmetric.
+of $p'$, which is a curve. A birational map is dominant, and the image of a
+dominant map from a surface is dense, hence of dimension two. This is
+impossible, so $C\cong\PP^1$ forces $C'\cong\PP^1$.
+
+The same argument applied to the inverse birational map $\Psi$, whose target is
+$C$, shows that $C'\cong\PP^1$ forces $C\cong\PP^1$. Hence either curve
+rational implies both are.
 
 :::
 
@@ -264,7 +289,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §2 (solution by Shuang-Yen Lee), PDF p. 5, argues as steps [](#s2){.pf-ref} to [](#s4){.pf-ref}: assume $C'\not\cong\PP^1$, restrict the birational map to $\{x\}\times\PP^1$ and extend to a morphism $\PP^1\to C'$, which is constant because $C'\not\cong\PP^1$; the constants assemble into a morphism $C\to C'$; then "$C\not\cong\PP^1$, similarly we have a map $\widetilde g:C'\to C$", and with $f,g$ inverse so are $\widetilde f,\widetilde g$. Its last case reads "if $C=\PP^1$, then $\widetilde f$ is a constant, which means $f$ is a constant, a contradiction", which is not what the construction gives: $\widetilde f$ is dominant, being induced by a dominant map. What the case needs is that a dominant rational map $\PP^1\dashrightarrow C'$ makes $C'$ unirational, hence isomorphic to $\PP^1$; that is step [](#s4){.pf-ref}.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 1 of §2 (solution by Shuang-Yen Lee), printed p. 5 of that set, is the argument of steps [](#s2){.pf-ref} to [](#s4){.pf-ref}: assume $C'\not\cong\PP^1$, restrict the birational map to $\{x\}\times\PP^1$ and extend to a morphism $\PP^1\to C'$, which is constant because $C'\not\cong\PP^1$; the constants assemble into a morphism $C\to C'$; then "$C\not\cong\PP^1$, similarly we have a map $\widetilde g:C'\to C$", and with $f,g$ inverse so are $\widetilde f,\widetilde g$. Its last case reads "if $C=\PP^1$, then $\widetilde f$ is a constant, which means $f$ is a constant, a contradiction", and it is a valid contradiction: with $C\cong\PP^1$ and $C'\not\cong\PP^1$ the morphism $\widetilde f$ is constant by the same argument, so $p'\circ\Phi=\widetilde f\circ p$ is constant and the image of the birational map lies in one fibre $\{c\}\times\PP^1$ of $p'$, which is a curve. Step [](#s4){.pf-ref} sets that out and gets the other direction by applying it to $\Psi$. Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} are this set's argument, made explicit about the extension of the rational maps and about the inverse maps of the bases.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.1, printed p. 102, writes "$K(X)=L\otimes_kk(x)=L(x)$; then by corollary 6.12 in chapter I there exists a unique smooth projective curve $C$ such that $K(C)=L$, i.e. $C$ is unique one such that $X$ is birationally equivalent to $C\times\PP^1$". The uniqueness of the smooth projective model with a *given* function field is I.6.12, but the identity "$K(C)=L$" is not determined by $K(X)$ alone: that $L$ and $L'$ with $L(x)\cong L'(x)$ satisfy $L\cong L'$ is exactly what the exercise asks, so the argument assumes its conclusion.
 
