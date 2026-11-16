@@ -225,6 +225,22 @@ audit:
     exercise with no published proof. Not checked: Bohm's elimination was
     not reproduced, and no source outside those named was read.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Page correction, on the transcription committed earlier today. The
+    event above names III.12.3 as printed on pp. 291--292 and Example
+    III.9.8.3 on pp. 258--259. Read again in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N
+    is PDF p. N+15: the exercise stands wholly on printed p. 291, which is
+    PDF p. 306 and carries 12.1 through 12.5 with both of the exercise's
+    cohomology displays; Example 9.8.3 begins on printed p. 259 (PDF p.
+    274) and runs onto printed p. 260 (PDF p. 275). The wording "pp.
+    291--292" is that of the earlier events on this card, and those are
+    left as written; the pages this pass verified are the two just given.
+    Not checked: no other page was re-read.
+
 ---
 
 ::: {.problem}
