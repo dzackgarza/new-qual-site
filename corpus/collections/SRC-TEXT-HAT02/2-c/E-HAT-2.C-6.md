@@ -147,6 +147,18 @@ audit:
     to punctured tori, and $\tau(f)=1-0-1=0$; the exercise as printed on p. 184; and Dugger's lack
     of a text version in `tmp/sources`. Not claimed: a published solution of Exercise 2.C.6. The
     `E-HAT-2.C-6` entry of COMPLAINTS.md is corrected by a new entry of this date.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, second pass: the `source-checked` note of 2026-11-13 says the exercise was
+    searched for in "Stanford Math 215C Solution Sets 1--5". `tmp/sources` holds
+    `stanford-math215c-spring2009-solution2.pdf`, `-3` and `-4`, and no Solution Set 1 or 5, so the
+    range is not what was read. The range is Solution Sets 2--4, and the same wrong range on
+    `E-HAT-2.B-5`, `-2.B-7` and `-2.C-1` is corrected by a new event on each of those cards. Nothing
+    else in that note changes: the ranges of the other retained sets it lists are as it gives them, no
+    retained set reaches §2.C beyond Poulsen's 2.C.2, 2.C.8 and 2.C.9, Li's 2.C.2, 2.C.4 and 2.C.5 and
+    DeMason's four, and no published solution of Exercise 2.C.6 was located.
 ---
 
 ::: {.problem}
