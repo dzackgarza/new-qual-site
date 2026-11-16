@@ -276,6 +276,24 @@ audit:
     in this pass: any page of either text beyond printed p. 144 of Harris and
     its text version, and nothing of Shafarevich's Theorem 1.15 and 1.25, as
     before. No statement changes; the printed exercise is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's fifth report, and the correction
+    of the last clause of (i) in the event above. That event closed its first
+    item "the sentence applying the equality criterion at k=2 uses the same
+    letters", and the sentence did, writing p in the line qr outside any
+    quotation, where those letters are not bound on this card: r is the
+    dimension of X in the statement and in the solution's opening, and in the
+    quotation of the same step r is a general point of P^5 and q a point of
+    P^2. Harris's letters belong inside the quotation at printed p. 144, which
+    now carries them; the card's own sentence names the general point of a
+    general secant line of X in words, and introduces no letter of its own, so
+    that nothing collides with r as a dimension. That sentence is still the
+    card's own and still says so. Not read in this pass: no source was read
+    again; the quotation and its page stand as the event above records them.
+    No statement changes, and no step's claim changes.
 ---
 
 ::: {.problem}
@@ -506,7 +524,7 @@ The secant variety of the Veronese surface has dimension at most $4$.
 
 J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, printed p. 144, on $X=\nu_2(\PP^2)\subset\PP^5$: "suppose that $r\in\PP^5$ is a general point lying on a secant line to $X$; we may write the secant line as $\overline{\nu(p),\nu(q)}$ for some pair of points $p,q\in\PP^2$. Now, the line $L=\overline{pq}\subset\PP^2$ is carried, under the Veronese map $\nu$, to a plane conic curve $C\subset X\subset\PP^5$, and since $r\in\overline{\nu(p),\nu(q)}$, $r$ will lie on the plane $\Lambda$ spanned by $C$. But then every line through $r$ in $\Lambda$ will be a secant line to $C$, and hence to $X$. In particular, it follows that a general point lying on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. We may deduce from this that the dimension of $S(X)$ is at most $4$."
 
-The passage from that family to the number is the card's own, and it is Proposition 11.24's equality criterion at $k=2$: his incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$ at $k=2$, so $\dim\operatorname{Sec}(X)\le5$, and equality there would put the general point $p\in\overline{qr}$ of a general secant line on only finitely many secant lines, which the quoted passage denies in giving it a one-dimensional family; hence $\dim\operatorname{Sec}(X)\le4$.
+The passage from that family to the number is the card's own, and it is Proposition 11.24's equality criterion at $k=2$: his incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$ at $k=2$, so $\dim\operatorname{Sec}(X)\le5$, and equality there would put the general point of a general secant line of $X$ on only finitely many secant lines, which the quoted passage denies in giving it a one-dimensional family; hence $\dim\operatorname{Sec}(X)\le4$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, entry 4.3.21, printed p. 223, prints the same bound from the same argument: after "Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$" he writes "Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$."
 
