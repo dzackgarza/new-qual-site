@@ -32,6 +32,25 @@ audit:
     route: an automorphism of P^1 carrying phi(infty) back to infty
     restricts to an automorphism of A^1, whose coordinate-ring automorphism
     has x -> ax+b because degrees multiply under composition.
+    The page given above for Lemma 9.24 is wrong: the lemma is on printed
+    p. 118, and Example 9.25, which states the conclusion in the form used
+    here, is on printed p. 119. Both were re-read at those folios in the
+    PDF, `tmp/sources/milne-fields-and-galois-theory.pdf`.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Part (c) is now Milne's proof rather than the card's own. Steps
+    degree-of-a-rational-function (Lemma 9.24, printed p. 118) and
+    field-automorphism-fractional-linear (Example 9.25, printed p. 119) give
+    it over an arbitrary base field, and step pgl1-isomorphism deduces
+    PGL(1) = Aut P^1 from parts (a) and (b). The two steps that proved
+    "every automorphism of P^1 is fractional linear" by reducing to an
+    automorphism of k[x] were removed; the remark records that route as the
+    card's earlier one. Read against the book: Exercise I.6.6 on printed
+    p. 46 asks (c) for k(x), which is what the transcribed argument proves;
+    the field k is arbitrary there, and Lemma 9.24 and Example 9.25 are
+    stated over an arbitrary field F, so no hypothesis is added.
 ---
 
 ::: {.problem}
@@ -114,84 +133,85 @@ This proves part (b).
 
 :::
 
-::: {.pf-step #fixing-infinity-is-affine}
-Every automorphism of $\PP^1$ fixing $\infty$ has the affine form $x\mapsto ax+b$ with $a\ne0$.
+::: {.pf-step #degree-of-a-rational-function}
+For $u=a/b\in k(x)\setminus k$ with $a,b$ coprime polynomials, define
+$$
+\deg(u)=\max(\deg a,\deg b).
+$$
+Then $x$ is algebraic over $k(u)$ with
+$$
+[k(x):k(u)]=\deg(u),
+$$
+so $k(u)=k(x)$ forces $\deg(u)=1$.
 
 ::: pf-proof
-Let $\phi\in\Aut(\PP^1)$ satisfy $\phi(\infty)=\infty$.
-Then
-$$
-\phi(\AA^1)=\phi(\PP^1\setminus\{\infty\})
-=\PP^1\setminus\{\infty\}=\AA^1,
-$$
-so $\phi$ restricts to an automorphism of the affine line.
-On coordinate rings this gives a $k$-algebra automorphism
-$$
-k[x]\longrightarrow k[x].
-$$
-If $p(x)$ is the image of $x$, surjectivity provides $q(x)$ with $q(p(x))=x$.
-For nonconstant polynomials degrees multiply under composition, so
-$$
-1=\deg x=\deg(q\circ p)=(\deg q)(\deg p).
-$$
-Hence $\deg p=1$ and
-$$
-p(x)=ax+b,\qquad a\in k^\times,\ b\in k.
-$$
-Therefore $\phi$ is the fractional linear transformation represented by
-$\begin{pmatrix}a&b\\0&1\end{pmatrix}$.
-:::
+This is J. S. Milne, *Fields and Galois Theory*, Lemma 9.24, printed p. 118, whose proof is repeated here.
 
-:::
-
-::: {.pf-step #every-automorphism-fractional-linear}
-Every automorphism of $\PP^1$ is fractional linear.
-
-::: pf-proof
-Let $\phi\in\Aut(\PP^1)$ and put $P=\phi(\infty)$.
-By step [](#matrix-gives-automorphism){.pf-ref} there is a fractional linear transformation $T$ with $T(P)=\infty$.
-Then $T\circ\phi$ fixes $\infty$, so step [](#fixing-infinity-is-affine){.pf-ref} shows that $T\circ\phi$ is fractional linear.
-Since $T^{-1}$ is fractional linear as well, so is
+The polynomial
 $$
-\phi=T^{-1}\circ(T\circ\phi).
+a(T)-b(T)u\in k(u)[T]
 $$
-Thus every automorphism of $\PP^1$ lies in $\PGL(1)$.
+has $X$ as a root, so $x$ is algebraic over $k(u)$; hence $u$ is transcendental over $k$, since otherwise $x$ would be algebraic over $k$.
+
+The polynomial $a(T)-b(T)Z\in k[Z,T]$ is irreducible: it is linear in $Z$, so a factorization into two nonconstant factors would have one factor $f\in k[T]$, which would then divide the constant term $a(T)$ and the coefficient $-b(T)$ of $Z$, hence divide the greatest common divisor of $a$ and $b$, forcing $f$ to be constant.
+Since $u$ is transcendental over $k$, substitution $Z\mapsto u$ identifies $k[Z,T]$ with $k[u,T]$, so $a(T)-b(T)u$ is irreducible in $k[u,T]$ and hence, by Gauss's lemma, in $k(u)[T]$.
+It has $x$ as a root, so up to a constant it is the minimal polynomial of $x$ over $k(u)$, and its degree is $\max(\deg a,\deg b)=\deg(u)$.
+
+Consequently $k(u)=k(x)$ gives $1=[k(x):k(u)]=\deg(u)$.
 :::
 
 :::
 
 ::: {.pf-step #field-automorphism-fractional-linear}
-Every $k$-automorphism of $k(x)$ is fractional linear, and
+Every $k$-automorphism of $k(x)$ is a fractional linear transformation.
+
+::: pf-proof
+Let $\sigma$ be a $k$-automorphism of $k(x)$ and put $u=\sigma(x)$.
+Then $\sigma$ is determined by $u$, because $\sigma(h(x))=h(u)$ for every $h\in k(x)$; and $k(u)=\sigma(k(x))=k(x)$.
+
+Write $u=a/b$ in lowest terms. By step [](#degree-of-a-rational-function){.pf-ref}, $\deg(u)=1$, so after multiplying numerator and denominator by a nonzero constant,
+$$
+u=\frac{aX+b}{cX+d}
+$$
+with $a,b,c,d\in k$ and $ad-bc\ne0$: coprimality of $a,b$ forbids $a$ and $b$ from having a common linear factor, which is exactly the nonvanishing of $ad-bc$.
+
+This is J. S. Milne, *Fields and Galois Theory*, Example 9.25, printed p. 119, which states the conclusion in the form "$F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$", for an arbitrary base field $F$.
+:::
+
+:::
+
+::: {.pf-step #pgl1-isomorphism}
+The map $\PGL(1)\to\Aut\PP^1$ is an isomorphism, and
 $$
 \boxed{\PGL(1)\cong\Aut(\PP^1)\cong\Aut_k k(x)}.
 $$
 
 ::: pf-proof
-By step [](#aut-p1-iso-aut-kx){.pf-ref}, a field automorphism corresponds to a unique automorphism of $\PP^1$.
-Step [](#every-automorphism-fractional-linear){.pf-ref} makes that curve automorphism fractional linear, so its action on the affine coordinate is
-$$
-x\longmapsto\frac{ax+b}{cx+d},
-\qquad ad-bc\ne0.
-$$
-Conversely step [](#matrix-gives-automorphism){.pf-ref} shows that every such formula is induced by an automorphism of $\PP^1$ and therefore of $k(x)$.
-This proves part (c) and both asserted isomorphisms.
+Step [](#matrix-gives-automorphism){.pf-ref} produces a map $\PGL(1)\to\Aut\PP^1$, which is a homomorphism because composition of fractional linear transformations corresponds to multiplication of the matrices.
+It is injective: a matrix inducing the identity transformation is a scalar matrix, since it fixes every point of $\PP^1$.
+
+For surjectivity, let $\phi\in\Aut(\PP^1)$. By step [](#aut-p1-iso-aut-kx){.pf-ref} the pullback $\phi^*$ is a $k$-automorphism of $k(x)$, so by step [](#field-automorphism-fractional-linear){.pf-ref} there are $a,b,c,d$ with $ad-bc\ne0$ and $\phi^*(x)=(aX+b)/(cX+d)$.
+Then $\phi^*(h)=h\bigl((aX+b)/(cX+d)\bigr)$ for every $h\in k(x)$, so $\phi^*$ is the pullback along the fractional linear transformation $T$ of step [](#matrix-gives-automorphism){.pf-ref}, and $\phi=T$ because pullback is injective on morphisms of $\PP^1$.
+
+Composing with the isomorphism of step [](#aut-p1-iso-aut-kx){.pf-ref} gives the second isomorphism.
+This proves part (c) together with the two asserted isomorphisms.
 :::
 
 :::
 
 ::: pf-qed
-Step [](#matrix-gives-automorphism){.pf-ref} proves part (a), step [](#aut-p1-iso-aut-kx){.pf-ref} proves part (b), and steps [](#fixing-infinity-is-affine){.pf-ref}, [](#every-automorphism-fractional-linear){.pf-ref} and [](#field-automorphism-fractional-linear){.pf-ref} prove part (c).
+Step [](#matrix-gives-automorphism){.pf-ref} proves part (a), step [](#aut-p1-iso-aut-kx){.pf-ref} proves part (b), and steps [](#degree-of-a-rational-function){.pf-ref}, [](#field-automorphism-fractional-linear){.pf-ref} and [](#pgl1-isomorphism){.pf-ref} prove part (c) and both isomorphisms.
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solution"}
-Part (c) has a complete published proof in J. S. Milne, *Fields and Galois Theory* (course notes, v5.x), Example 3.1(b) on printed p. 35 together with Lemma 9.24 on printed p. 119. Example 3.1(b) states that a $\CC$-automorphism of $\CC(X)$ sends $X$ to another generator, that "it follows from Lemma 9.24 below that these are exactly the elements $\frac{aX+b}{cX+d}$, $ad-bc\neq0$", and concludes $\Aut(\CC(X)/\CC)\simeq \mathrm{PGL}_2(\CC)$. Lemma 9.24 is the degree computation $[F(X):F(a_i)]=\deg(a_i)$ with $\deg$ the larger of the degrees of numerator and denominator of $a_i$ in lowest terms, together with $[F(X):E]\le[F(X):F(a_j)]$. Applied to an automorphism $\varphi$ of $k(x)$ with $\varphi(x)=a/b$ in lowest terms, $k(x)=k(a/b)$ forces $1=[k(x):k(a/b)]=\max(\deg a,\deg b)$, so $a$ and $b$ are both linear. That is the step every retained set asserts and none proves; the card reaches it instead through part (b) and the affine-line argument of step [](#fixing-infinity-is-affine){.pf-ref}.
+Part (c) is transcribed from J. S. Milne, *Fields and Galois Theory*, Lemma 9.24 on printed p. 118 and Example 9.25 on printed p. 119, text version `tmp/sources/milne-fields-and-galois-theory.md`, read in the PDF at those folios. Lemma 9.24 is proved there in full: for $u=a/b$ in lowest terms, $a(T)-b(T)u$ is the minimal polynomial of $X$ over $F(u)$, so $[F(X):F(u)]=\deg(u)$, the larger of the two degrees. Example 9.25 draws the conclusion used here, $F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$, for an arbitrary field $F$. Applied to a $k$-automorphism $\sigma$ of $k(x)$ with $\sigma(x)=u$, $k(u)=k(x)$ gives $\deg(u)=1$, hence $u$ and with it $\sigma$ are fractional linear. That is exactly the implication the retained sets assert and none proves. Example 3.1(b) on printed p. 35 states the same conclusion over $\CC$ and refers forward to Lemma 9.24; the general statement is 9.25. The card's own earlier route, through part (b) and the affine-line reduction of an automorphism of $\PP^1$ fixing $\infty$ to a $k$-algebra automorphism of $k[x]$ with $\deg x=\deg(q\circ p)$, is not used in the proof now: it proves the same thing by another route.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.6, PDF p. 8: (a) the inverse of $x\mapsto(ax+b)/(cx+d)$ is $x\mapsto(dx-b)/(a-cx)$ when $ad-bc\ne0$; (b) "follows from corollary 6.12 (i) and (iii)"; (c) "any automorphism of $k(x)$ maps $x$ to $f(x)/g(x)$ for coprime polynomials $f$ and $g$ ... therefore $f(x)/g(x)$ is not equal to $f(y)/g(y)$ if $x\ne y$. But if $f$ or $g$ have degree greater than $1$ then $g(y)a=f(y)$ will usually have more than one solution for $y$. Hence $f$ and $g$ have degrees at most $1$." The middle sentence is not an argument; the equation printed there mixes the two coprime polynomials.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), stops at §I.5 and gives no solution to 6.6.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.6, PDF pp. 54--55: (a) invertibility of the matrix; (b) "$(\phi\in\operatorname{Aut}\PP^1$ gives $f\mapsto f\circ\phi\in\operatorname{Aut}k(x)$; if $\varphi\in\operatorname{Aut}k(x)$, $\varphi$ induces an auto-birational map of $\PP^1$, a nonsingular curve" — the parenthetical question in the original is his; (c) "$\phi$ maps $x\mapsto f(x)/g(x)$ for coprime $f,g$; injectivity of $\varphi$ implies $f,g$ are linear", the implication being asserted.
 Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.6, PDF p. 25: (a) the inverse formula; (b) an automorphism of $k(x)$ induces a birational map of $\PP^1$, and a birational map of nonsingular projective curves is an isomorphism; (c) "if $\deg g,\deg f>1$, the map won't be injective, so both $f$ and $g$ are linear", the same assertion.
-Parts (a) and (b) agree across the three sets. Every set asserts that a nonconstant rational function of degree greater than one is not injective and none proves it; parts (c) of all three therefore rest on an unproved step. Step [](#fixing-infinity-is-affine){.pf-ref} replaces it by the degree computation $\deg x=\deg(q\circ p)=\deg q\cdot\deg p$ in $k[x]$, which is the only place the conclusion uses more than coprime linear forms. Milne's Lemma 9.24, quoted in the first paragraph, is the published version of that step, so the card's note in COMPLAINTS.md is amended accordingly.
+Parts (a) and (b) agree across the three sets. Every set asserts that a nonconstant rational function of degree greater than one is not injective and none proves it; part (c) of all three therefore rests on an unproved step, and none of them is a complete published solution. Steps [](#degree-of-a-rational-function){.pf-ref} and [](#field-automorphism-fractional-linear){.pf-ref} are Milne's proof of that step, carried out for an arbitrary base field, and step [](#pgl1-isomorphism){.pf-ref} adds the deduction of the isomorphism that the exercise asks for.
 :::
