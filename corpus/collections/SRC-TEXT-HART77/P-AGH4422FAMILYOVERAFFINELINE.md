@@ -57,6 +57,23 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
+    Repairs on the reader's report of this batch. The remark no longer says
+    that the source's cover is unramified because its four points are
+    distinct: that is the card's reason, and the source writes only
+    "obviously unramified". It also no longer presents the source's
+    flatness step as complete: (II, 9.9) needs the fibre of psi to have
+    length four, and the source shows only that it has four closed points.
+    The claim that this card is closed on a published solution is withdrawn
+    here and in COMPLAINTS.md; what is located is an outline that follows
+    the printed hint to the Legendre parameter, with those two steps
+    asserted and with the last step, equal lambda giving a trivial family,
+    missing. Checked against the book: IV.4.22 on printed p. 340, IV.4.4 and
+    IV.4.5 on printed p. 318, IV.4.1 on printed pp. 317-318, II.9.9. Not
+    checked: nothing new; the card's own steps were not re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
     Second pass on the reader's report of this batch. The sentence of the
     remark that the previous pass broke is repaired: that pass left "the
     invertibility of 2. since A^1_C is simply connected", and the text now
@@ -73,6 +90,18 @@ audit:
     tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
     p. N+15). Not checked: simple connectivity of A^1_C in the etale
     topology is taken from the printed hint, as the card says.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass on the reader's report of this batch, on the audit trail only.
+    The event of 2026-11-16 whose note begins "Repairs on the reader's report
+    of this batch" is restored as it was written, and this event is appended
+    after it rather than put in its place. The sentence and step-s1 repairs of
+    the event above stand; the remark on the card records the published
+    outline and the two steps it leaves asserted, so the obligation to cite a
+    complete published solution stays open, as the remark says. Checked in
+    this pass: nothing new; the card's own steps were not re-derived.
 ---
 
 ::: {.problem}
