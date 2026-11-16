@@ -204,6 +204,15 @@ audit:
     read 2026-11-16; that is the state the first restoration undoes, and both
     stand as written, a dated event being a record of its date. Nothing in the
     problem, the solution or the pages changes, and no page was re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A wording defect in the restored fifth-pass note above, recorded rather
+    than edited: it calls the "Record of a date" event "below" although
+    that event stands above it. The note is a dated record and is not
+    touched; the order is the one 2e7631a711 gave the two events, which added
+    both. Nothing else on the card changes.
 
 ---
 
