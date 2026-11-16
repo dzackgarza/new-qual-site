@@ -14,7 +14,7 @@ import pytest
 
 import yaml
 
-from qualc.authoring import RESTORED_SECTIONS, commit_day, dated_records, previous_source, source_identity
+from qualc.authoring import commit_day, dated_records, previous_source, source_identity
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD = (ROOT / "tests/fixtures/kinds/PRB-INDEXP.md").read_text()
@@ -320,23 +320,25 @@ def test_a_dated_event_restored_to_its_earlier_text_is_accepted(repo: Path, monk
         ("append", True),
         ("restore", True),
         ("same-identity-twin-delete", False),
+        ("same-identity-history-delete", False),
     ],
 )
 def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str, case: str, accepted: bool) -> None:
-    """The six QUAL-11 cases take the same one-to-one rule in both Git modes.
+    """The QUAL-11 cases take the same one-to-one rule in both Git modes.
 
     A restoration's base is the commit that rewrote the record, already upstream in push
-    mode; the candidate is only the repair. In the twin case the base holds A rewritten
-    and B original, while the candidate restores A and deletes B. B must still be named.
+    mode; the candidate is only the repair. In the twin cases the base holds A rewritten
+    and B original. One candidate restores A and deletes B; the other leaves A rewritten
+    and replaces B with A's earlier text. Both must name B.
     """
-    original = TWICE_RECORDED if case == "same-identity-twin-delete" else RECORDED
+    original = TWICE_RECORDED if case in ("same-identity-twin-delete", "same-identity-history-delete") else RECORDED
     card = repo / "corpus/one card.md"
     card.write_text(original)
     git(repo, "add", "corpus/one card.md")
     monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-11T09:00:00 +0000")
     git(repo, "commit", "-qm", "record the event on its day")
 
-    if case in ("restore", "same-identity-twin-delete"):
+    if case in ("restore", "same-identity-twin-delete", "same-identity-history-delete"):
         card.write_text(original.replace("matches the printed exercise", "matches the printed statement"))
         git(repo, "add", "corpus/one card.md")
         monkeypatch.setenv("GIT_COMMITTER_DATE", "2026-11-14T09:00:00 +0000")
@@ -360,6 +362,12 @@ def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: p
         ),
         "restore": RECORDED,
         "same-identity-twin-delete": RECORDED,
+        "same-identity-history-delete": TWICE_RECORDED.replace(
+            "matches the printed exercise", "matches the printed statement"
+        ).replace(
+            "The local group is Hatcher's `M|x` on printed p. 234.",
+            "The statement matches the printed exercise.",
+        ),
     }
     card.write_text(candidates[case])
     git(repo, "add", "corpus/one card.md")
@@ -373,7 +381,7 @@ def test_the_dated_event_rule_through_the_shared_gate(repo: Path, monkeypatch: p
         assert result.returncode == 1, result.stdout
         assert "QUAL-11" in result.stderr
         assert "dated 2026-11-11" in result.stderr
-        if case == "same-identity-twin-delete":
+        if case in ("same-identity-twin-delete", "same-identity-history-delete"):
             assert "The local group is Hatcher" in result.stderr
 
 
@@ -438,8 +446,9 @@ def test_restoring_one_record_does_not_excuse_a_rewrite_of_another(repo: Path, m
 
 
 @pytest.mark.parametrize("mode", ("staged", "push"))
-def test_restoring_one_complaint_does_not_excuse_deleting_its_twin(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str) -> None:
-    """A restored paragraph consumes only itself, not another record of its day."""
+@pytest.mark.parametrize("leave_rewritten", (False, True))
+def test_restoring_one_complaint_does_not_excuse_deleting_its_twin(repo: Path, monkeypatch: pytest.MonkeyPatch, mode: str, leave_rewritten: bool) -> None:
+    """A's earlier text never consumes B, including while A stays rewritten."""
     path = repo / "COMPLAINTS.md"
     path.write_text(TWICE_RECORDED_COMPLAINTS)
     git(repo, "add", "COMPLAINTS.md")
@@ -453,7 +462,14 @@ def test_restoring_one_complaint_does_not_excuse_deleting_its_twin(repo: Path, m
     if mode == "push":
         track(repo, git(repo, "rev-parse", "HEAD").strip())
 
-    path.write_text(TWICE_RECORDED_COMPLAINTS.replace("\n**A second search on the same day (2026-11-10).** Another observation.\n", ""))
+    if leave_rewritten:
+        candidate = TWICE_RECORDED_COMPLAINTS.replace("The observation.", "The corrected observation.").replace(
+            "**A second search on the same day (2026-11-10).** Another observation.",
+            "**Searched outside the retained sets (2026-11-10).** The observation.",
+        )
+    else:
+        candidate = TWICE_RECORDED_COMPLAINTS.replace("\n**A second search on the same day (2026-11-10).** Another observation.\n", "")
+    path.write_text(candidate)
     git(repo, "add", "COMPLAINTS.md")
 
     result = validate_candidate(repo, mode, monkeypatch, "2026-11-16T09:00:00 +0000", "COMPLAINTS.md")
@@ -758,23 +774,10 @@ def test_a_numbered_complaint_is_one_record_with_its_continuation(repo: Path, mo
     assert appended.returncode == 0, appended.stderr
 
 
-def test_every_dated_complaints_heading_states_its_day_first() -> None:
-    """The file's stated record format: a recorded section begins with its own day.
-
-    The three sections QUAL-11 restored are the exception the format states, and the test
-    reads them from the same table the gate reads, so a heading that is neither
-    date-first nor restored fails here.
-    """
-    day = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
-    for line in (ROOT / "COMPLAINTS.md").read_text().splitlines():
-        if line.startswith("#") and day.search(line) and not re.match(r"^#{1,6} \d{4}-\d{2}-\d{2}:", line):
-            assert line in RESTORED_SECTIONS, f"a dated heading does not begin with its day: {line}"
-
-
-def test_a_restored_heading_is_read_as_the_record_of_its_own_day() -> None:
-    """A heading QUAL-11 restored states its day mid-title, and the gate reads it there."""
-    heading, day = next(iter(RESTORED_SECTIONS.items()))
-    assert [found for found, _ in dated_records(f"{heading}\n\nWhat the day found.\n")] == [day]
+def test_a_day_in_the_middle_of_a_heading_is_not_a_record() -> None:
+    """Only a heading's leading day dates it; no named-heading fallback exists."""
+    heading = "## `SRC-TEXT-HART77`: the #121 pass of 2026-11-15, the cards listed, and what the sources outside the retained sets proved"
+    assert dated_records(f"{heading}\n\nWhat the section says.\n") == []
 
 
 def test_deleting_the_complaints_file_is_refused(repo: Path, monkeypatch: pytest.MonkeyPatch) -> None:

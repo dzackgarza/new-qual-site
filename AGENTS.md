@@ -1025,10 +1025,9 @@ writes states its own day first: a section heading begins with it
 numbered item carries it, a numbered item being one record with its continuation
 line and the blocks indented under it. Deleting a card or that file deletes the
 records it holds, and the gate reads the deletion from Git's own diff because the
-shared hook's payload lists only the paths that survive a change. The three
-sections whose headings a later session rewrote are restored to the heading
-their day gave them, whose day stands mid-title; the gate reads those three days
-from `RESTORED_SECTIONS` in `tools/qualc/authoring.py`. A push replays each
-published commit against its own parent and its own committer day, and replays
+shared hook's payload lists only the paths that survive a change. A heading whose
+day is not first states no dated section record; no day is read out of the middle
+of its title. A push replays each published commit against its own parent and its
+own committer day, and replays
 the pushed tip even when the payload names no path, so a sanctioned `--no-verify`
 content commit is still judged by the day it was written.
