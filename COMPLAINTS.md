@@ -3656,8 +3656,12 @@ points of $Y$ was not verified
 independently of $\\delta=p_a-g=1$.
 
 **Repair.** Per card, the commits of this date touching it, with the audit events that record what
-the transcription covered and what was not checked: V.2.12 in `4578427ace`, V.2.13 in `f16e32dea0`,
-V.2.15(c) in `db9f5c3b83`, V.2.17 in `2b6afd25a7`. V.2.12 and V.2.13 are closed under
+the transcription covered and what was not checked: V.2.12 in `4578427ace` and `71e00224dc`, V.2.13
+in `f16e32dea0` and `d0804466db`, V.2.15(c) in `db9f5c3b83` and `d76798ff55`, V.2.17 in `2b6afd25a7`
+and `f16ede83b5`. The second commit of each pair is the repair of a reader's report on the first, and
+what that report found and this record now states is the two withdrawn readings of Fuentes, the
+repaired statement of V.2.15(c), the diagram that is not garbled, characteristic $2$ of V.2.17(b)
+left open, and the transition-matrix reduction marked as the card's own. V.2.12 and V.2.13 are closed under
 [#121](https://github.com/dzackgarza/new-qual-site/issues/121); V.2.15(c) and V.2.17(b) remain open
 for the parts named above, and each card's remark states what its sources do and do not prove.
 
