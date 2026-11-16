@@ -181,6 +181,18 @@ audit:
     and the sentence now says that D is not a point under both projections, so
     the two degrees sum to at least one. Not checked: whether a published
     treatment of part (a) covers a component of negative K_X-degree.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Removed one clause from the remark on 2026-11-16 on the reader's second
+    report, after the events above of the same date, which are left as written.
+    The remark's last sentence ended "and which are its own", which states on a
+    public page which steps the card supplies rather than what the steps do;
+    that belongs in the steps, and steps s4 and s5 say it there. The remark now
+    ends with what the two steps bound and count. No statement, step or
+    citation changes, and the mathematics of the card is as the events above
+    record it.
 
 ---
 
@@ -420,7 +432,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeep
 ::: {.remark title="Published solution"}
 Dan Bragg, *Automorphisms of curves* (2015), Proof 2, "Intersection Theory", proves (b) given (a): the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
 
-Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in the form of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and $b_i\le d$ gives $\sum_ib_i^2\le d^2$. Its display for $D^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed. Its closing display bounds $(D-E)^2$ below, for fixed $E$, by an affine function of $D-E$, which with negative definiteness confines $D-E$ to a ball. The card reaches finiteness instead through steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, which bound the class of every prime component with $1\le C\cdot H\le d$ and then count the components, and which are its own.
+Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in the form of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and $b_i\le d$ gives $\sum_ib_i^2\le d^2$. Its display for $D^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed. Its closing display bounds $(D-E)^2$ below, for fixed $E$, by an affine function of $D-E$, which with negative definiteness confines $D-E$ to a ball. The card reaches finiteness through steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, which bound the class of every prime component with $1\le C\cdot H\le d$ and then count the components.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), takes the same route for (a) but displays the estimate $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$; reaching $\sum_ic_i^2$ through $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, and proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal.
 

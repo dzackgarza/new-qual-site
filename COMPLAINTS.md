@@ -3909,3 +3909,15 @@ What the round's rewrite added, and this report rejects, is its account of tom D
 ## 2026-11-16: the record above was carried by a card commit, and what that means for its Repair paragraph
 
 **The record above, and the commit that carries it.** The record of this date headed "a reader's report on the four V-batch cards of #121 ..." says in its Repair paragraph that this pass's repairs are the four card commits and the record itself. The record itself was committed in `d2cac1374c`, the commit that repairs `P-AGH5412KODAIRAVANISH`, because the shared index of the one checkout had this file staged when that card's commit was made; its message names the card and not this file. The three other card commits are `30de3ddc51` for `P-AGH5415GENPOSITION`, `1a4c8cf42b` for `P-AGH5416FERMATCUBIC` and `ee7225c0ca` for `P-AGH555ELEMTRANSFORM`, and this record is carried by the COMPLAINTS commit that follows them. Nothing else in this file changed in that commit.
+
+## 2026-11-16: the V.2.5 paragraph of the record above quotes the text version's "d > 3", and the printed page reads "d ≥ 3"
+
+**Object and need.** The paragraph "V.2.5: (d) on the printed Theorem, and the parts the card carries itself" in the record above, and step `s11` of `P-AGH525INVARIANTE`. A local reader read the repaired card and found the one number wrong; the same number is wrong here.
+
+**The page.** Lange's reduction in §2, printed p. 267, reads "with a line bundle $L$ of degree $d\ge3$ on $X$". The page was read here as an image rendered at 150 dpi from `tmp/sources/lange-1984-higher-secant-varieties-nagata.pdf`, PDF page 6, which carries the running head LANGE, the Theorem $s(E)\le g$, the reduction and the folio 267 at its foot; the PDF has no text layer, so the page cannot be quoted from an extraction of it, and the text version beside it prints "$d>3$", which is an OCR error. The paragraph above quotes the text version; the card now quotes the printed page, in a new event of this date.
+
+**What does not change.** Part (d) does not rest on that inequality: the card uses the statement of the Theorem, $s(\mathcal E)\le g$, and records the reduction as stated and unargued, so the corrected number changes neither the argument nor the claim, and no other number on that card comes from the sentence.
+
+**The clause out of the other card's remark.** `P-AGH5111FINITEAUT`'s remark ended its Math StackExchange paragraph with "and which are its own", which says on a public page which steps the card supplies; the card's own is marked in steps `s4` and `s5`, and the clause is removed there in a new event of this date, no statement, step or citation changing.
+
+**Repair.** `P-AGH525INVARIANTE` and `P-AGH5111FINITEAUT`, and this record, in the commit that carries it, which changes no other card. **Uncertainty.** Not checked: whether any other page of the paper is mis-OCR'd in the text version; only printed p. 267 was rendered.

@@ -217,6 +217,24 @@ audit:
     (c). Fourth, the remark's sentence "step s11 now gives that bound ...
     instead" is change narration and is removed. Not checked: Nagata's paper,
     still unread, and nothing on the card rests on it.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected one number in step s11 on 2026-11-16 on the reader's second
+    report, after the events above of the same date, which are left as written.
+    The step quoted the paper's reduction as a quotient of degree d > 3, which
+    is what the text version prints. Printed p. 267 reads "with a line bundle L
+    of degree d greater than or equal to 3 on X", and the page was read here as
+    an image rendered from the retained PDF: PDF page 6 of
+    tmp/sources/lange-1984-higher-secant-varieties-nagata.pdf, which carries the
+    running head LANGE, the Theorem s(E) at most g, the reduction and the folio
+    267 at its foot, rendered at 150 dpi. So "d > 3" is an OCR error in the text
+    version, and the step now quotes the page. Nothing else changes: the
+    reduction is still stated and not argued, and part (d) still rests on the
+    statement of the Theorem and not on the derivation that follows it, so the
+    number decides nothing on the card. The PDF has no text layer, which is why
+    the page was rendered rather than extracted.
 ---
 
 ::: {.problem}
@@ -431,7 +449,7 @@ Let $\mathcal E$ be the normalized bundle of $X$, so that $e=-\deg\det\mathcal E
 $$
 s(\mathcal E)=c_1(\mathcal E)-2\max c_1(\mathcal L),
 $$
-the maximum over the sublinebundles $\mathcal L\subseteq\mathcal E$, and proves the Theorem $s(\mathcal E)\le g$. His proof is the dimension theorem of §1, printed p. 266, that the $n$-secant variety of a nondegenerate curve in $\PP^N$ has dimension $\min(2n-1,N)$, applied to $C$ embedded by $\linearsystem{K_C\otimes L}$ together with the §2 Lemma that a class lying in $\mathrm{Sec}_n(C)$ forces $s(\mathcal E)\le2n-d$; the maximum is $0$ for a normalized bundle, since $H^0(\mathcal E)\ne0$ gives a subbundle of nonnegative degree and normalization excludes a positive one, so $s(\mathcal E)=\deg\det\mathcal E=-e$ and $-e\le g$. At $g=2$ this is $e\ge-2$, which is the bound the printed Note attributes to Nagata and which the book's own proof of Theorem 2.12 does not reach, arriving only at $e\ge-2g$. The paper's proof, printed p. 267, opens by saying that one may suppose without loss of generality that there is an exact sequence $0\to\OO_C\to\mathcal E\to L\to0$ with a line bundle $L$ of degree $d>3$, and it does not argue that reduction; in the case it treats, its Lemma gives $s(\mathcal E)\le2\floor{(d+g)/2}-d\le g$. The reduction being stated and not argued, what is used here is the Theorem as printed, and not the derivation that follows it. The paper states its field as an algebraically closed field of arbitrary characteristic.
+the maximum over the sublinebundles $\mathcal L\subseteq\mathcal E$, and proves the Theorem $s(\mathcal E)\le g$. His proof is the dimension theorem of §1, printed p. 266, that the $n$-secant variety of a nondegenerate curve in $\PP^N$ has dimension $\min(2n-1,N)$, applied to $C$ embedded by $\linearsystem{K_C\otimes L}$ together with the §2 Lemma that a class lying in $\mathrm{Sec}_n(C)$ forces $s(\mathcal E)\le2n-d$; the maximum is $0$ for a normalized bundle, since $H^0(\mathcal E)\ne0$ gives a subbundle of nonnegative degree and normalization excludes a positive one, so $s(\mathcal E)=\deg\det\mathcal E=-e$ and $-e\le g$. At $g=2$ this is $e\ge-2$, which is the bound the printed Note attributes to Nagata and which the book's own proof of Theorem 2.12 does not reach, arriving only at $e\ge-2g$. The paper's proof, printed p. 267, opens by saying that one may suppose without loss of generality that there is an exact sequence $0\to\OO_C\to\mathcal E\to L\to0$ with a line bundle $L$ of degree $d\ge3$, and it does not argue that reduction; in the case it treats, its Lemma gives $s(\mathcal E)\le2\floor{(d+g)/2}-d\le g$. The reduction being stated and not argued, what is used here is the Theorem as printed, and not the derivation that follows it. The paper states its field as an algebraically closed field of arbitrary characteristic.
 
 :::
 
