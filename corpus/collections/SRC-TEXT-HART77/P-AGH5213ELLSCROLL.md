@@ -161,6 +161,23 @@ audit:
     a published argument, so this card carries no COMPLAINTS record of
     2026-11-16. Not checked: no source beyond the two papers and the book was
     read in this pass, and no machine computation was run.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Out of the rendered solution's preamble and out of the remark went the
+    tmp/sources paths that named this VM's copies of the sets cited there, on
+    the reader's finding against the same paths on a sibling card of this
+    batch. They are bookkeeping and belong here: Fuentes is read in
+    tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md with its
+    PDF beside it, Fuentes and Pedreira in
+    tmp/sources/projective-theory-ruled-surfaces.md with its PDF, Yang Pi-Yeh
+    in tmp/sources/lfwin-hartshorne-solutions.md, Egbert in
+    tmp/sources/hartshorne-solutions-egbert.md, the National Taiwan University
+    set in tmp/sources/ntu-ag2-chapter5.md beside its PDF, and the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. No citation, page or
+    statement changed, and what this card's preamble asserts of its steps, that
+    each transcribes a published argument, holds of the six steps it has.
 
 ---
 
@@ -170,7 +187,7 @@ In particular, there is an elliptic scroll of degree 5 in $\PP^4$.
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source, numbered statement and printed page: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`, Theorems 1.7, 2.7 and 2.13 and Remark 2.9, printed pp. 6--17; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.2(1), printed p. 15, Theorem 3.9(3), printed p. 18, and Theorem 3.10(1), printed p. 19, which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, printed p. 5, of [2]; over an elliptic curve the image is an elliptic scroll.
+Every step below transcribes a published argument and names the source, numbered statement and printed page: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Theorems 1.7, 2.7 and 2.13 and Remark 2.9, printed pp. 6--17; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.2(1), printed p. 15, Theorem 3.9(3), printed p. 18, and Theorem 3.10(1), printed p. 19, which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, printed p. 5, of [2]; over an elliptic curve the image is an elliptic scroll.
 
 ::: pf
 
@@ -276,9 +293,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 ::: {.remark title="Published solution"}
 The three model descriptions transcribed in step [](#s4){.pf-ref} are Fuentes' classification of elliptic line scrolls, and together they prove the exercise for every $e\ge-1$ and $n\ge e+3$.
 
-Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1), text version `tmp/sources/fuentes-2000-classification-elliptic-line-scrolls.md`: Theorem 1.7(2)(d), printed p. 6, is the decomposable case, a smooth elliptic scroll of degree $2b-e$ in $\PP^{2b-e-1}$ for $b\ge3+e$; Theorem 2.13(2)(b), printed pp. 16--17, is the case $e=-1$, $b\ge2$, of degree $2b+1$ in $\PP^{2b}$; Theorem 2.13(2)(c), printed pp. 16--17, is the case $e=0$, $b\ge3$, of degree $2b$ in $\PP^{2b-1}$; Theorem 2.13(1)(a), printed p. 16, is the remaining base-point-free case $e=-1$, $b=1$, a plane and a $3:1$ map, which the exercise excludes since it asks for $n\ge e+3=2$. The existence of the surfaces is Theorem 2.7, printed p. 13, which proves it for $e=0$ and $e=-1$ from Theorem 2.1 with Propositions 2.5 and 2.6, with Remark 2.9, printed p. 14, for the route through Nagata's theorem, and Theorem 3.2(1) of the authors' *The Projective Theory of Ruled Surfaces*, printed p. 15, for $e\ge0$; the book's Theorem V.2.15, printed p. 377, is an independent proof with uniqueness.
+Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1): Theorem 1.7(2)(d), printed p. 6, is the decomposable case, a smooth elliptic scroll of degree $2b-e$ in $\PP^{2b-e-1}$ for $b\ge3+e$; Theorem 2.13(2)(b), printed pp. 16--17, is the case $e=-1$, $b\ge2$, of degree $2b+1$ in $\PP^{2b}$; Theorem 2.13(2)(c), printed pp. 16--17, is the case $e=0$, $b\ge3$, of degree $2b$ in $\PP^{2b-1}$; Theorem 2.13(1)(a), printed p. 16, is the remaining base-point-free case $e=-1$, $b=1$, a plane and a $3:1$ map, which the exercise excludes since it asks for $n\ge e+3=2$. The existence of the surfaces is Theorem 2.7, printed p. 13, which proves it for $e=0$ and $e=-1$ from Theorem 2.1 with Propositions 2.5 and 2.6, with Remark 2.9, printed p. 14, for the route through Nagata's theorem, and Theorem 3.2(1) of the authors' *The Projective Theory of Ruled Surfaces*, printed p. 15, for $e\ge0$; the book's Theorem V.2.15, printed p. 377, is an independent proof with uniqueness.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, is Fuentes' reference [2], cited there in an earlier numbering: its Theorem 3.2(1), printed p. 15, is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.9(3), printed p. 18, is the very-ampleness criterion for a decomposable surface, cited as [2, Theorem 2.8]; its Theorem 3.10(1), printed p. 19, is $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ with degree $2\deg\mfb-e$, cited as [2, Theorem 2.9].
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is Fuentes' reference [2], cited there in an earlier numbering: its Theorem 3.2(1), printed p. 15, is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.9(3), printed p. 18, is the very-ampleness criterion for a decomposable surface, cited as [2, Theorem 2.8]; its Theorem 3.10(1), printed p. 19, is $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ with degree $2\deg\mfb-e$, cited as [2, Theorem 2.9].
 
-Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.13, printed p. 105, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries two absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$, and its later $4$ and $0$ are $5$ and $1$. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.13, PDF p. 269, computes $h^0=2n-1=d-1$ and so places the scroll in $\PP^{d-2}$; the correct count is $2n-e=d$, which step [](#s5){.pf-ref} takes from Theorem 3.10(1) of [2]. Algebraic Geometry II, National Taiwan University, 2020 Spring, text version `tmp/sources/ntu-ag2-chapter5.md`, has no entry for Exercise 13 of §2.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, printed p. 105, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries two absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$, and its later $4$ and $0$ are $5$ and $1$. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, PDF p. 269, computes $h^0=2n-1=d-1$ and so places the scroll in $\PP^{d-2}$; the correct count is $2n-e=d$, which step [](#s5){.pf-ref} takes from Theorem 3.10(1) of [2]. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 13 of §2.
 :::
