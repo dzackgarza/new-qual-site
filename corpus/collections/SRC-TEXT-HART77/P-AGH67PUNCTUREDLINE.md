@@ -98,7 +98,7 @@ audit:
     with the record kept in COMPLAINTS.md.
 - event: source-corrected
   by: claude
-  date: 2026-11-16
+  date: 2026-11-17
   note: >-
     Reader's report on issue #121, third pass, one mislabel and no change of
     mathematics. The 2026-11-16 note above names the three transpositions
@@ -113,7 +113,7 @@ audit:
     are as the reader accepted them.
 - event: source-corrected
   by: claude
-  date: 2026-11-16
+  date: 2026-11-17
   note: >-
     Four further repairs on the same pass, none of them on the reader's list.
     First, and the only mathematical one: the invariance of the cross ratio was
@@ -145,15 +145,17 @@ audit:
   date: 2026-11-16
   note: >-
     Record of a date, on the reader's report of issue #121's fourth pass. The
-    two events above were written and committed on 2026-11-16, in a9d902a1a9
-    (committer date 2026-11-16 07:15:38) for the (bc) mislabel and in
-    27598ae933 (2026-11-16 07:30:29) for the four repairs, and both date fields
-    said 2026-11-17, a day that had not happened; a record carries the day of
-    the commit that lands it, so both say 2026-11-16 now, and their text stands:
-    the three transpositions are (ab), (bc), (cd), the normalizing map of
-    [phi a, phi b, phi c, phi d] is rho o phi^{-1}, and the threshold line and
-    the Cutrone--Marshburn quotation are as they state. This event records the
-    dates, and nothing else on the card changed.
+    two events above are dated 2026-11-17 and were written and committed on
+    2026-11-16: the (bc) mislabel in a9d902a1a9 (committer date 2026-11-16
+    07:15:38), and the four repairs of the (ab), (bc), (cd) computation, the
+    normalizing composite rho o phi^{-1}, the three retained sets and the
+    Cutrone--Marshburn punctuation in 27598ae933 (2026-11-16 07:30:29). A
+    record carries the day of the commit that lands it, so 2026-11-16 is
+    their date. They are left unedited, as dated events must be, and their
+    content stands: the three transpositions are (ab), (bc), (cd), the
+    normalizing map of [phi a, phi b, phi c, phi d] is rho o phi^{-1}, and the
+    threshold line and the quotation are as they state. This event is the
+    record of the dates, and nothing else on the card changed.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -164,7 +166,9 @@ audit:
     a9d902a1a9 (committer date 2026-11-16 07:15:38) and the four further
     repairs in 27598ae933 (committer date 2026-11-16 07:30:29). A record
     carries the day of the commit that lands it, so both are dated 2026-11-16
-    now, and their text is untouched. Nothing else on the card changes.
+    now, and their text is untouched. The "Record of a date" event below left
+    the dates as written; the reader of this pass requires the field itself to
+    carry the commit's day. Nothing else on the card changes.
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -179,6 +183,27 @@ audit:
     in 2e7631a711, the commit that added the fifth-pass note. Their text
     stands, and the fifth-pass note stands as written, a dated event being a
     record of its date. Nothing else on the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events; four
+    records are restored and nothing else changes. (1) Commit 2e7631a711
+    (committer date 2026-11-16 09:00:21) changed two date fields from 2026-11-17
+    to 2026-11-16: the (bc)-mislabel event's and the four-further-repairs
+    event's. Both fields are restored to 2026-11-17, the day their authors
+    wrote, in a9d902a1a9 (committer date 2026-11-16 07:15:38) and 27598ae933
+    (2026-11-16 07:30:29) respectively; each record carries a day one later
+    than the commit that landed it, and its correction is this event rather
+    than an edit of the record. (2) That commit also added the "Record of a
+    date" and fifth-pass events, whose text c7b68fc6fd and 5675cba726 then
+    rewrote in place. Both are restored to the text they were committed with in
+    2e7631a711, the fifth-pass note's closing sentence about the record event
+    and the record's statement that the dates are left unedited included.
+    (3) The fifth-pass note and the sixth-pass event after it say the two dates
+    read 2026-11-16; that is the state the first restoration undoes, and both
+    stand as written, a dated event being a record of its date. Nothing in the
+    problem, the solution or the pages changes, and no page was re-read.
 
 ---
 
