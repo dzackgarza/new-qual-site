@@ -35,6 +35,63 @@ audit:
     of the auxiliary lemma, the positivity of A=a-2t after translation, the
     identity sum c_i=2a-5t, and the final expansion back to a^2. No geometric
     input or later-card result is used.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published-solution pass for issue #121. Read the printed exercise in
+    Hartshorne, Algebraic Geometry (1977), V.4.10, printed p. 408 (text
+    version tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed
+    p. N is PDF p. N+15), with (4.11) and (4.13)(a), printed p. 406, whose
+    inequalities its hypotheses are. Read at the cited places: Math
+    StackExchange 2475661, answer 2476483 by Dap, text version
+    tmp/sources/mse-2475661-hart-v410-freshman-calculus.md; National Taiwan
+    University Algebraic Geometry II (2020 Spring), Chapter V §4 Exercise 10
+    (Shuang-Yen Lee), printed p. 17, text version
+    tmp/sources/ntu-ag2-chapter5.md, and the same page of the PDF, where the
+    text version damages two formulas. Checked: the exercise's hypotheses
+    imply the sorted weak thresholds b_5+b_6 <= a and b_2+...+b_6 <= 2a, so
+    the sources' reduction to the weak form needs no separate equivalence;
+    and each endpoint value the sources print (a^2, 15a^2/16, 24a^2/25,
+    2b_4b_5-2b_5^2, 2b_4b_5-b_5^2) recomputed from the maximiser displayed
+    with it. Defects found: the MSE answer's Case 1 prints 4b_4^2 for the
+    five equal terms 5b_4^2 of its own maximiser while reporting a^2 at both
+    endpoints, which is the value for 5b_4^2; its Case 2 is stated for
+    a/3 <= b_4 <= a/2 although its own ordering forces b_4 = a/3; the NTU
+    second case leaves its constant term as * and its printed vertex line
+    has (1/3)(2b_2-(b_3+b_4+b_5)) on the right where the left side is
+    (1/3)(b_2-2(b_3+b_4+b_5)). Not checked: no source outside these two was
+    read for this card.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the two published arguments transcribed, each step
+    naming its source with its answer id or printed page; the card's earlier
+    elementary proof, which was not a transcription of any source, is
+    replaced by it. Steps sorted-hypotheses and strict-from-weak are the
+    book's hypotheses and the MSE passage from the sharp to the weak form;
+    steps maximiser, case-small-max, case-large-max and case-open transcribe
+    that answer's four bullets and its Cases 1, 2a, 2b and 0; step
+    second-argument transcribes NTU's Exercise 10 with both of its cases,
+    including the three defects the remark names.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the whole card beside both sources. Checked the arithmetic of
+    every displayed maximiser and of every endpoint value; checked that
+    steps case-small-max, case-large-max and case-open exhaust the
+    maximisers step maximiser allows, namely b_5+b_6 = a with b_4 <= a/3,
+    the same with b_4 >= a/3, and b_5+b_6 < a; checked that step
+    second-argument's two cases are the two branches of a = max{b_1+b_2,
+    (b_1+...+b_5)/2} and that its endpoint inequalities need only
+    0 < b_5 <= b_4. Not reviewed and not supplied: a proof of the three
+    reduction assertions the sources make without proof (the three
+    "otherwise one can increase" bullets of the first answer and NTU's
+    reduction of its second case to b_1+b_2 = b_3+b_4+b_5), and no such
+    proof was added; the 2026-11-16 COMPLAINTS record names what is left
+    open.
 ---
 
 ::: {.problem}
@@ -43,326 +100,253 @@ Prove this directly (for $a, b_1, \ldots, b_6 \in \RR$) using methods of freshma
 :::
 
 ::: {.solution}
-We use only the inequalities in the statement.  The pairwise condition is
-needed only for distinct indices; if the phrase ``for each $i,j$'' is read
-as also including $i=j$, that is a stronger hypothesis.
+
+The exercise is the numerical statement behind the implication $(iv)\Rightarrow(iii)$ of (4.11):
+for the class $D=a\ell-\sum_ib_ie_i$ on the cubic surface the hypotheses $b_i>0$,
+$a-b_i-b_j>0$ and $2a-\sum_{i\neq j}b_i>0$ are the conditions of (4.13)(a), and the conclusion
+$a^2-\sum_ib_i^2>0$ is $D^2>0$. The pair condition is read with $i\neq j$, the reading both
+published arguments below adopt. The exercise asks for integers $a,b_1,\ldots,b_6$ and then for
+real $a,b_1,\ldots,b_6$; both arguments are for real variables.
+
+Two published arguments are transcribed, and the steps name which supplies them. Math StackExchange
+question 2475661, answer 2476483 (Dap, 2017-10-17; text version
+`tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`) maximises $\sum_ib_i^2$ over the
+feasible set for fixed $a$ and classifies the maximisers; the National Taiwan University
+*Algebraic Geometry II*, 2020 Spring, Chapter V §4, Exercise 10 (Shuang-Yen Lee), printed p. 17
+(text version `tmp/sources/ntu-ag2-chapter5.md`) reduces to one boundary configuration and
+evaluates two quadratics.
 
 ::: pf
 
-::: {.pf-step #sum-squares-lemma}
-We first prove the following elementary lemma.  Let
+::: {.pf-step #sorted-hypotheses}
+After reordering the indices one may assume
 $$
-A>0,
+b_1\ge b_2\ge\cdots\ge b_6>0,
 $$
-and let
+and then
 $$
-x_1,\ldots,x_6>0
-$$
-satisfy
-$$
-x_i+x_j<A
-\qquad(i\ne j)
-$$
-and
-$$
-\sum_{i=1}^6x_i\le2A.
-$$
-Then
-$$
-\boxed{\sum_{i=1}^6x_i^2<A^2.}
-$$
-
-::: pf-proof
-Reorder the variables so that
-$$
-x_1\ge x_2\ge\cdots\ge x_6>0,
-$$
-and put
-$$
-S=\sum_i x_i.
-$$
-
-First suppose
-$$
-x_1\le\frac A2.
-$$
-Then
-$$
-\sum_i x_i^2
-\le
-x_1\sum_i x_i
-\le
-\frac A2\,2A
-=A^2.
-$$
-The inequality is strict: equality would require both $S=2A$ and
-$x_i=x_1=A/2$ for every $i$ with $x_i>0$, which would contradict
-$$
-x_1+x_2<A.
-$$
-
-Now suppose
-$$
-x_1>\frac A2.
-$$
-Since $x_i\le x_2$ for $i\ge2$,
-$$
-\sum_i x_i^2
-\le
-x_1^2+x_2(S-x_1).
-$$
-The hypotheses give
-$$
-x_2<A-x_1
-$$
-and
-$$
-S-x_1\le2A-x_1.
-$$
-Hence
-$$
-\sum_i x_i^2
-<
-x_1^2+(A-x_1)(2A-x_1).
-$$
-But
-$$
-\begin{aligned}
-&x_1^2+(A-x_1)(2A-x_1)-A^2\\
-&\qquad=
-(2x_1-A)(x_1-A).
-\end{aligned}
-$$
-Here
-$$
-2x_1-A>0,
-$$
-while $x_1<A$ because $x_2>0$ and $x_1+x_2<A$. Thus
-$$
-(2x_1-A)(x_1-A)<0,
-$$
-and again
-$$
-\sum_i x_i^2<A^2.
-$$
-This proves the lemma.
-:::
-
-:::
-
-::: {.pf-step #a-positive}
-Put
-$$
-s=\sum_{i=1}^6 b_i.
-$$
-The hypotheses imply
-$$
-\boxed{a>0.}
-$$
-
-::: pf-proof
-Every $b_i$ is positive, and for two distinct indices $i,j$ one has
-$$
-a>b_i+b_j>0.
-$$
-:::
-
-:::
-
-::: {.pf-step #case-small-sum}
-If
-$$
-s\le2a,
-$$
-then
-$$
-\boxed{\sum_i b_i^2<a^2.}
-$$
-
-::: pf-proof
-Apply the lemma of step [](#sum-squares-lemma){.pf-ref} with
-$$
-A=a,
+a>b_1+b_2,
 \qquad
-x_i=b_i.
+2a>b_1+\cdots+b_5 .
 $$
-The hypotheses
+In particular
 $$
-b_i>0,
+b_5+b_6\le a,
 \qquad
-b_i+b_j<a
+b_2+\cdots+b_6\le 2a .
 $$
-are exactly the positivity and pairwise hypotheses of the lemma, while the
-present case assumption is
-$$
-\sum_i b_i=s\le2a.
-$$
-Therefore
-$$
-\sum_i b_i^2<a^2.
-$$
+
+::: pf-proof
+The hypotheses are symmetric in the indices, so reordering them preserves them; this is the first
+word of the second argument, "WLOG let $b_1\ge b_2\ge\cdots\ge b_6$". Among the pair conditions
+$a>b_i+b_j$ with $i\ne j$ the strongest is the one at the two largest variables, and among the
+conditions $2a>\sum_{j\ne i}b_j$ the strongest is the one that omits the smallest variable $b_6$.
+Then $b_5+b_6\le b_1+b_2<a$ and
+$b_2+\cdots+b_6=(b_1+\cdots+b_5)-b_1+b_6\le b_1+\cdots+b_5<2a$, since $b_6\le b_1$. These are the
+hypotheses the first argument states its problem in: reals $0\le b_1\le\cdots\le b_6$ with
+$a\ge b_5+b_6$ and $2a\ge b_2+\cdots+b_6$.
 :::
 
 :::
 
-::: {.pf-step #translated-positive}
-It remains to treat the case
+::: {.pf-step #strict-from-weak}
+It suffices to prove
 $$
-s>2a.
+a^2\ge\sum_{i=1}^6b_i^2 .
 $$
-Set
+
+::: pf-proof
+If $a$ satisfies the strict hypotheses, then so does $a'=a-\varepsilon$ for small
+$\varepsilon>0$, because there are finitely many strict inequalities to preserve; a weak conclusion
+$a'^2\ge\sum_ib_i^2$ for that $a'$ gives $a^2>\sum_ib_i^2$. This is the first argument's opening
+parenthesis, which passes from the sharp hypotheses to the weak conclusion in the other direction.
+:::
+
+:::
+
+::: {.pf-step #maximiser}
+Fix $a>0$. On the set of $b$ with
 $$
-t=s-2a>0
+0\le b_1\le\cdots\le b_6,
+\qquad
+b_5+b_6\le a,
+\qquad
+b_2+\cdots+b_6\le 2a
+$$
+the function $\sum_ib_i^2$ attains a maximum, and at a maximiser
+$$
+b_2+\cdots+b_6=2a
+\quad\text{or}\quad
+b_5+b_6=a,
 $$
 and
 $$
-c_i=b_i-t.
-$$
-Then
-$$
-\boxed{c_i>0\text{ for every }i.}
-$$
-
-::: pf-proof
-For each $i$, the third family of hypotheses gives
-$$
-2a-\sum_{j\ne i}b_j>0.
-$$
-Since
-$$
-\sum_{j\ne i}b_j=s-b_i,
-$$
-this says
-$$
-b_i>s-2a=t.
-$$
-Hence
-$$
-c_i=b_i-t>0.
-$$
-:::
-
-:::
-
-::: {.pf-step #translated-bound-A}
-Put
-$$
-A=a-2t.
-$$
-Then
-$$
-\boxed{A>0}
-$$
-and, for distinct $i,j$,
-$$
-\boxed{c_i+c_j<A.}
+b_1=b_2,
+\qquad
+b_5\le\frac a2,
+\qquad
+b_5=b_4 .
 $$
 
 ::: pf-proof
-Using the pairwise hypothesis,
-$$
-\begin{aligned}
-c_i+c_j
-&=b_i+b_j-2t\\
-&<a-2t\\
-&=A.
-\end{aligned}
-$$
-The left side is positive by step [](#translated-positive){.pf-ref}, so necessarily $A>0$.
+The set is closed and bounded, so $\sum_ib_i^2$ attains a maximum on it. The four reductions are the
+first argument's list, stated there in exactly this one-clause form. If both $b_2+\cdots+b_6<2a$
+and $b_5+b_6<a$, then $b_6$ can be increased, which preserves the ordering and both constraints and
+increases the sum of squares. If $b_1<b_2$, then $b_1$ can be increased with the ordering and both
+constraints preserved. If $b_5>a/2$, then $b_6\ge b_5$ gives $b_5+b_6>a$. For fixed $b_5+b_6=S$
+the maximum of $b_5^2+(S-b_5)^2$ over $b_5\in[b_4,S/2]$ is attained at an endpoint, and $b_5=a/2$
+gives a smaller value than either endpoint does.
 :::
 
 :::
 
-::: {.pf-step #translated-sum-bound}
-The translated variables also satisfy
+::: {.pf-step #case-small-max}
+If a maximiser satisfies $b_5+b_6=a$ and $b_4\le a/3$, then
 $$
-\boxed{\sum_i c_i<2A.}
+\sum_{i=1}^6b_i^2\le a^2 .
 $$
 
 ::: pf-proof
-Since
+By step [](#maximiser){.pf-ref} a maximiser has $b_1=b_2=b_3=b_4=b_5$ and $b_5+b_6=a$, so it is
 $$
-s=2a+t,
+b=(b_4,b_4,b_4,b_4,b_4,a-b_4),
+\qquad
+0\le b_4\le\frac a3,
 $$
-one has
+and
 $$
-\sum_i c_i
-=
-s-6t
-=
-2a-5t.
+\sum_ib_i^2=5b_4^2+(a-b_4)^2=6b_4^2-2ab_4+a^2 .
 $$
-On the other hand,
-$$
-2A=2a-4t.
-$$
-Because $t>0$,
-$$
-2a-5t<2a-4t=2A.
-$$
+This is a quadratic in $b_4$ with positive leading coefficient, so on the interval its values are at
+most the larger of the two endpoint values; at $b_4=0$ the value is $a^2$ and at $b_4=a/3$ it is
+$5a^2/9+4a^2/9=a^2$. This is the first argument's Case 1, which prints $4b_4^2$ for the five equal
+terms $5b_4^2$ of this maximiser while reporting $a^2$ at both endpoints.
 :::
 
 :::
 
-::: {.pf-step #translated-sum-squares}
-Therefore
+::: {.pf-step #case-large-max}
+If a maximiser satisfies $b_5+b_6=a$ and $b_4\ge a/3$, then
 $$
-\boxed{\sum_i c_i^2<A^2.}
+\sum_{i=1}^6b_i^2\le a^2 .
 $$
 
 ::: pf-proof
-Steps [](#translated-positive){.pf-ref}, [](#translated-bound-A){.pf-ref} and [](#translated-sum-bound){.pf-ref} verify all hypotheses of the lemma in step [](#sum-squares-lemma){.pf-ref} for the
-six numbers $c_i$ and the positive number $A=a-2t$. Hence
+By step [](#maximiser){.pf-ref} a maximiser has $b_1=b_2$ and $b_5=b_4$, and the first argument's
+Case 2 writes it as
 $$
-\sum_i c_i^2<A^2.
+b=(b_2,b_2,a-b_4-b_2,b_4,b_4,a-b_4)
 $$
+with $2b_2+b_4\le a$, so that the part of $\sum_ib_i^2$ depending on $b_2$ is
+$$
+2b_2^2+(a-b_4-b_2)^2 ,
+$$
+a quadratic with positive leading coefficient, whose maximum over the allowed range of $b_2$ is at
+an endpoint. At the endpoint $b_2=\frac12(a-b_4)$ it writes
+$$
+b=\left(\tfrac12(a-b_4),\tfrac12(a-b_4),\tfrac12(a-b_4),b_4,b_4,a-b_4\right),
+\qquad
+\sum_ib_i^2=\tfrac74(a-b_4)^2+2b_4^2,
+$$
+which is $a^2$ at $b_4=a/3$ and $\frac{15}{16}a^2$ at $b_4=a/2$, and at the endpoint
+$b_2=a-2b_4$ it writes
+$$
+b=(a-2b_4,a-2b_4,b_4,b_4,b_4,a-b_4),
+\qquad
+\sum_ib_i^2=2(a-2b_4)^2+3b_4^2+(a-b_4)^2,
+$$
+which is $a^2$ at both $b_4=a/3$ and $b_4=a/2$. In each subcase the displayed value is a convex
+function of $b_4$ on $\left[\frac a3,\frac a2\right]$, so it is at most the larger endpoint value,
+namely $a^2$. The ordering $b_2\ge b_3\ge b_4$ of a maximiser requires
+$\frac12(a-b_4)\le b_2\le a-2b_4$, so the configuration of this step exists only for $b_4\le a/3$,
+where both subcases reduce to $b_4=a/3$; the first argument states the step for
+$\frac a3\le b_4\le\frac a2$ without that restriction.
 :::
 
 :::
 
-::: {.pf-step #case-large-sum}
-In the case $s>2a$ one still has
+::: {.pf-step #case-open}
+If $b_5+b_6<a$ at a maximiser, then
 $$
-\boxed{\sum_i b_i^2<a^2.}
+\sum_{i=1}^6b_i^2\le a^2 .
 $$
 
 ::: pf-proof
-Because
+By step [](#maximiser){.pf-ref} a maximiser with $b_5+b_6<a$ satisfies $b_2+\cdots+b_6=2a$, and the
+first argument's Case 0 reduces it to the form
 $$
-b_i=c_i+t,
+b=(b_1,b_1,b_1,b_5,b_5,b_6),
 $$
-step [](#translated-sum-squares){.pf-ref} gives
+as follows: with $b_1=b_2$ and $b_5=b_4$ held fixed and $b_3+b_6$ then fixed, the maximum of
+$b_3^2+b_6^2$ is attained by decreasing $b_3$ as far as the constraints allow, which either gives
+$b_1=b_2=b_3$ or brings the maximiser to the boundary $b_5+b_6=a$ treated in steps
+[](#case-small-max){.pf-ref} and [](#case-large-max){.pf-ref}; holding $b_1$ fixed afterwards, the
+maximum of $2b_5^2+b_6^2$ is again attained on the boundary, at $b_5=b_1$, at $b_5=b_6$, or at
+$b_5+b_6=a$. Of the maximisers of this form, those with $b_5+b_6=a$ are covered by the preceding steps, and the
+extreme one that is not is $b_1=b_6=\frac{2a}{5}$, that is, all six entries equal $\frac{2a}{5}$,
+with
 $$
-\begin{aligned}
-\sum_i b_i^2
-&=
-\sum_i(c_i+t)^2\\
-&=
-\sum_i c_i^2
-+2t\sum_i c_i
-+6t^2\\
-&<
-A^2
-+2t(2a-5t)
-+6t^2.
-\end{aligned}
+\sum_ib_i^2=6\cdot\frac{4a^2}{25}=\frac{24}{25}a^2<a^2 .
 $$
-Now substitute
+The first argument states this case in this order and refers forward to its Cases 1 and 2 for the
+part of it that returns to $b_5+b_6=a$.
+:::
+
+:::
+
+::: {.pf-step #second-argument}
+The inequality $a^2\ge\sum_ib_i^2$ also follows from the second argument, which needs no maximiser.
+
+::: pf-proof
+Its opening observation is that
 $$
-A=a-2t.
+x+y=z+w
+\quad\text{and}\quad
+\abs{x-y}>\abs{z-w}
+\quad\Longrightarrow\quad
+x^2+y^2>z^2+w^2,
 $$
-Then
+which is the identity $x^2+y^2=\frac12\left((x+y)^2+(x-y)^2\right)$ for each pair. With the ordering
+of step [](#sorted-hypotheses){.pf-ref} one has $a>b_1+b_2$ and $a>\frac12(b_1+\cdots+b_5)$, so the
+argument assumes
 $$
-\begin{aligned}
-A^2+2t(2a-5t)+6t^2
-&=(a-2t)^2+4at-10t^2+6t^2\\
-&=a^2.
-\end{aligned}
+a=\max\left\{b_1+b_2,\ \tfrac12(b_1+\cdots+b_5)\right\},
 $$
-Thus
+which is legitimate because a smaller $a$ makes the conclusion $a^2\ge\sum_ib_i^2$ harder and keeps
+the strict hypotheses. It then splits into two cases.
+
+If $b_1+b_2\ge b_3+b_4+b_5$, then $a=b_1+b_2$. Increasing $b_3,b_4,b_5$ one may assume
+$b_1+b_2=b_3+b_4+b_5$; replacing $(b_1,b_2,b_6)$ by
+$(b_1+b_2-b_3,\ b_3,\ b_5)$ preserves that equality and the sum $b_1+\cdots+b_5$, and by the
+observation above it does not decrease $\sum_ib_i^2$, so one may assume $b_2=b_3$ and, the same way,
+$b_5=b_6$. Then $b_1=b_4+b_5\ge b_2$, and
 $$
-\sum_i b_i^2<a^2.
+a^2-\sum_ib_i^2=2b_2b_4+2b_2b_5-b_2^2-b_4^2-2b_5^2 .
 $$
+This is a quadratic in $b_2$, so on the range $b_4\le b_2\le b_4+b_5$ it suffices to check the two
+endpoints, where it is
+$$
+2b_4b_5-2b_5^2\ge0
+\qquad\text{and}\qquad
+2b_4b_5-b_5^2\ge0,
+$$
+both nonnegative since $0<b_5\le b_4$.
+
+If $b_1+b_2\le b_3+b_4+b_5$, then $a=\frac12(b_1+\cdots+b_5)$ and
+$$
+a^2-\sum_ib_i^2=-\tfrac34b_1^2+\tfrac12(b_2+b_3+b_4+b_5)b_1+\ast
+$$
+for a constant $\ast$ not depending on $b_1$. This is a quadratic in $b_1$ with negative leading
+coefficient, and the argument locates its vertex at $b_1=b_3+b_4+b_5-b_2$, which is the boundary of
+this case $b_1+b_2=b_3+b_4+b_5$, so that the case reduces to the preceding one. The printed line for
+that vertex computation reads
+$$
+\frac{-\frac12(b_2+b_3+b_4+b_5)}{-\frac34\cdot2}-b_2-(b_3+b_4+b_5-b_2)
+=\frac13\left(2b_2-(b_3+b_4+b_5)\right)\le0,
+$$
+whose two sides differ by $\frac13\left(b_2+b_3+b_4+b_5\right)-\frac13\left(b_3+b_4+b_5\right)
+=\frac13b_2$: the left side is $\frac13\left(b_2-2(b_3+b_4+b_5)\right)$, and the constant $\ast$
+is not written out, so this case is not carried out in full in the source.
 :::
 
 :::
@@ -370,24 +354,51 @@ $$
 ::: {.pf-step #conclusion}
 Consequently
 $$
-\boxed{a^2-\sum_{i=1}^6b_i^2>0.}
+a^2-\sum_{i=1}^6b_i^2>0 .
 $$
 
 ::: pf-proof
-If $s\le2a$, this is step [](#case-small-sum){.pf-ref}. If $s>2a$, it is step [](#case-large-sum){.pf-ref}. These two cases
-exhaust all possibilities.
+Steps [](#case-small-max){.pf-ref}, [](#case-large-max){.pf-ref} and [](#case-open){.pf-ref}
+treat the maximiser of $\sum_ib_i^2$ in the three cases into which step
+[](#maximiser){.pf-ref} divides the feasible set, and step [](#second-argument){.pf-ref} gives the
+inequality by a second route over the two cases of the second argument. Either way
+$a^2\ge\sum_ib_i^2$, and step [](#strict-from-weak){.pf-ref} upgrades the inequality to the strict
+one under the strict hypotheses of the exercise.
 :::
 
 :::
 
 ::: pf-qed
-Step [](#sum-squares-lemma){.pf-ref} proves the elementary auxiliary inequality, and steps [](#a-positive){.pf-ref}, [](#case-small-sum){.pf-ref}, [](#translated-positive){.pf-ref}, [](#translated-bound-A){.pf-ref}, [](#translated-sum-bound){.pf-ref}, [](#translated-sum-squares){.pf-ref}, [](#case-large-sum){.pf-ref} and [](#conclusion){.pf-ref}
-apply it directly to the hypotheses of the problem.
+Steps [](#sorted-hypotheses){.pf-ref}, [](#strict-from-weak){.pf-ref} and [](#maximiser){.pf-ref}
+set up the maximisation, steps [](#case-small-max){.pf-ref}, [](#case-large-max){.pf-ref} and
+[](#case-open){.pf-ref} bound the sum of squares at a maximiser, and step
+[](#second-argument){.pf-ref} is the second published route to the same inequality.
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.10, printed p. 291 (the numerical inequality for classes on the cubic surface).
+Math StackExchange 2475661, *Freshman calculus question in Hartshorne, chapter V*, answer 2476483 by
+Dap (2017-10-17), text version `tmp/sources/mse-2475661-hart-v410-freshman-calculus.md`. The answer
+reads $a-b_i-b_j>0$ with $i\ne j$, rewrites the problem as one about reals
+$0\le b_1\le\cdots\le b_6$ with $a\ge b_5+b_6$ and $2a\ge b_2+\cdots+b_6$, and says of the
+rewriting only that "the equivalence can be shown by approximation by rationals, scaling and
+sorting"; step [](#sorted-hypotheses){.pf-ref} instead reads the weak thresholds off the book's own
+hypotheses, so no equivalence is used. The parenthetical about a smaller $a$ is step
+[](#strict-from-weak){.pf-ref}; the bullet list about a maximiser is step [](#maximiser){.pf-ref};
+its Cases 1, 2a, 2b and 0 are steps [](#case-small-max){.pf-ref}, [](#case-large-max){.pf-ref} and
+[](#case-open){.pf-ref}. Three defects of the answer are recorded at those steps: Case 1 prints
+$4b_4^2$ for $5b_4^2$; Case 2 is stated for $\frac a3\le b_4\le\frac a2$ although its own ordering
+restricts it to $b_4=\frac a3$; and Case 0 refers forward to the other cases for part of itself. The
+answer's own comment thread records two further corrections, by user228054 and by the author, of an
+earlier version that assumed $b_5+b_6=a$ without justification.
+
+National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
+Exercise 10, by Shuang-Yen Lee, printed p. 17, text version
+`tmp/sources/ntu-ag2-chapter5.md`. Its observation on $x+y=z+w$ and its two cases are step
+[](#second-argument){.pf-ref}. The first case is carried out: the two endpoint values of the
+quadratic in $b_2$ are computed and are nonnegative. The second case leaves its constant term as
+$\ast$, and its printed line identifying the vertex carries the slip recorded at that step, so the
+reduction to the boundary $b_1+b_2=b_3+b_4+b_5$ is asserted there rather than proved.
 :::
