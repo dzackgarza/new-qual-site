@@ -91,6 +91,28 @@ audit:
     named was read in this pass, and parts (a), (b), (e) and (f) were not
     re-derived.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, two items. (i) The transcription of Kim,
+    Exercise 2.3.20(c), PDF p. 32, had written the fibre product as
+    X times_Z K(Z), with a Z that Kim does not use and over which X is not
+    a scheme; Kim writes X times_Y K(Y), Y being his closed subset and
+    K(Y) the residue field of its generic point, and the card now carries
+    that expression with the reason it is defined. The error was the
+    card's transcription, not the source's. (ii) The order-reversing
+    correspondence used in step codim-z-equals-dim-op was cited as
+    "Exercise I.1.7"; Shichijo cites Ch. I Prop. 1.7, and Chapter I
+    Proposition 1.7, printed p. 6, is the statement that an affine
+    algebraic set has the dimension of its coordinate ring, whose proof is
+    that correspondence. The card now cites the proposition and its printed
+    page. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed p. N is PDF
+    p. N+15): II.3.20 on printed pp. 94--95 and Proposition I.1.7 on
+    printed p. 6. Not checked: no other passage was re-read, and no step
+    was re-derived.
+
 ---
 
 ::: {.problem}
@@ -294,7 +316,7 @@ Shichijo, Exercise 3.20(c), printed p. 18: take $Z=V(\mathfrak p_Z)\subseteq\Spe
 $$
 (0)\subsetneq\cdots\subsetneq\mathfrak p_Z,
 $$
-whose length is $\codim(Z,X)$ by the order-reversing correspondence of Exercise I.1.7 between irreducible closed subsets and prime ideals.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
+whose length is $\codim(Z,X)$ by the order-reversing correspondence between irreducible closed subsets of an affine variety and prime ideals of its coordinate ring, Chapter I Proposition 1.7, printed p. 6, which Shichijo cites as Ch. I Prop. 1.7.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
 $$
 (0)_{\mathfrak p_Z}\subsetneq\cdots\subsetneq(\mathfrak p_Z)_{\mathfrak p_Z},
 $$
@@ -308,7 +330,11 @@ $$
 $$
 for every irreducible closed $Z$, the map $Z\mapsto\zeta_Z$ being a bijection onto the points of $X$.
 
-Kim, Exercise 2.3.20(c), PDF p. 32, proves the same identity for irreducible closed $Z$ by computing with an affine chart and the prime $\mathfrak p$ of $Z$: he has $\dim Z=\dim A/\mathfrak p$ and $\codim(Z,X)=\dim X\times_Z K(Z)=\dim\Spec(A\times_ZK(Z))=\dim A_{\mathfrak p}$.
+Kim, Exercise 2.3.20(c), PDF p. 32, proves the same identity for irreducible closed $Y$ (his letter) by computing with an affine chart and the prime $\mathfrak p$ of $Y$: he has $\dim Y=\dim A/\mathfrak p$ and
+$$
+\codim(Y,X)=\dim\bigl(X\times_YK(Y)\bigr)=\dim\bigl(\Spec A\times_YK(Y)\bigr)=\dim A_{\mathfrak p},
+$$
+the fibre product being taken over $Y$, which is what makes it defined: $X$ is a scheme over $Y$ and $K(Y)$ is the residue field of its generic point, so $X\times_YK(Y)$ is the fibre over that point.  His computation of its dimension is the one that needs $A$ to be a finitely generated $k$-algebra with $A/\mathfrak p$ a domain.
 :::
 
 :::
