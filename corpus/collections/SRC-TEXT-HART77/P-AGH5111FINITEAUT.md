@@ -101,6 +101,35 @@ audit:
     are its PDF pages, Exercise 4 on p. 2, Exercise 11 on p. 4, Exercise 12 with
     the two Exercises 1 and 2 of section 2 on p. 5, and Exercise 3 of section 2
     on p. 6. Nothing else in the events above changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcribed part (a) from Math StackExchange answer 4775583 by KReiser
+    (2023-09-26) to question 4449474, read in its text version
+    tmp/sources/mse-4449474-hart-v111a-finite-automorphisms.md, and part (b) from
+    Proof 2 of Dan Bragg, "Automorphisms of curves" (2015-11-20), read in
+    tmp/sources/bragg-2015-automorphisms-of-curves.md, and re-read the printed
+    exercise at Hartshorne, Algebraic Geometry (1977), V.1, exercise 1.11,
+    printed p. 368 (PDF p. 383), with its hint. Steps s1, s2 are the answer's
+    first three displays, with the book's adjunction (Theorem V.1.3, printed
+    p. 361), Hodge index (Theorem V.1.9, printed p. 364) and Nakai--Moishezon
+    (Theorem V.1.10, printed p. 365) named where they enter. Checked the
+    answer's two closing displays and found that neither follows: the step from
+    minus the sum of b_i^2(D_i.K+2) to -d D.K - 2d^2 needs D_i.K at most 0 for
+    every component, and the final sentence bounds (D-E)^2 by an expression
+    linear in D, so no ellipsoid and no uniformity. Step s3 therefore carries
+    the bound as the card's, and part (a) stays without a complete published
+    proof; COMPLAINTS.md records it on this date. Part (b) is Bragg's Proof 2
+    in steps s6 to s10: the injection Aut C to Num(C x C) through
+    nonnegativity of intersections of distinct irreducible curves, and the
+    fixed intersection 4g-4 of every graph with the canonical divisor, which
+    step s8 proves ample by Nakai--Moishezon since Bragg only says "a fixed
+    ample divisor". Bragg asserts Gamma^2 = 2-2g for every graph without
+    argument and step s6 supplies the normal-bundle reason. Not checked: whether
+    a published treatment of part (a) exists outside the sources named for this
+    batch.
+
 ---
 
 ::: {.problem}
@@ -117,6 +146,7 @@ First show that if $\Gamma \equiv \Delta$, then $\Gamma=\Delta$, using the fact 
 1.6). Then use (a). Cf.
 (IV, Ex.
 2.5).
+
 :::
 
 ::: {.solution}
@@ -124,342 +154,181 @@ Let
 $$
 N=\Num X,
 \qquad
-N_\RR=N\tensor_\ZZ\RR.
+N_\RR=N\tensor_\ZZ\RR .
 $$
-Since $N$ is finitely generated and numerical equivalence has no torsion,
-$N$ is a lattice in the finite-dimensional real vector space $N_\RR$.
+Because $N$ is finitely generated and numerical equivalence has no torsion, $N$ is a lattice in $N_\RR$.
+
+Part (a) is transcribed from Math StackExchange answer 4775583 to question 4449474, whose bookkeeping is corrected at step [](#s3){.pf-ref}; part (b) is transcribed from Proof 2 of Dan Bragg, *Automorphisms of curves* (2015).
 
 ::: pf
 
 ::: {.pf-step #s1}
-
 The intersection form is negative definite on
 $$
-H^\perp=\{v\in N_\RR\st v\cdot H=0\},
+H^\perp=\qty{v\in N_\RR\st v\cdot H=0},
 $$
 and
 $$
-N_\RR=\RR H\oplus H^\perp.
+N_\RR=\RR H\oplus H^\perp .
 $$
 
 ::: pf-proof
-
-The Hodge index theorem [[T-SRFHODGE]] says that every nonzero class in
-$H^\perp$ has negative square. Thus the restriction of the intersection form
-to $H^\perp$ is negative definite. Since $H^2>0$ by the Nakai--Moishezon
-criterion [[T-SRFNAKAI]], the line $\RR H$ meets $H^\perp$ trivially, and every
-$v\in N_\RR$ decomposes uniquely as
+Hartshorne, *Algebraic Geometry* (1977), Theorem V.1.9 (Hodge index theorem), printed p. 364, states that $D^2<0$ for every $D\not\equiv0$ with $D\cdot H=0$; that is the negative definiteness named by the printed hint to Exercise V.1.11, printed p. 368. The divisor $H$ is ample, so $H^2>0$ and $H\cdot C>0$ for every irreducible curve $C$ by the Nakai--Moishezon criterion, Theorem V.1.10, printed p. 365, and every $v\in N_\RR$ decomposes as
 $$
-v=\frac{v\cdot H}{H^2}H+
-\left(v-\frac{v\cdot H}{H^2}H\right).
+v=\frac{v\cdot H}{H^2}H+\qty(v-\frac{v\cdot H}{H^2}H)
 $$
-The second summand is orthogonal to $H$.
+with the second summand orthogonal to $H$.
 
 :::
 
 :::
 
 ::: {.pf-step #s2}
-
-Put
+Let $D=\sum_ib_iD_i$ be an effective divisor with distinct prime components $D_i$ and $D\cdot H=d$. Then
 $$
-K_X=\frac{K_X\cdot H}{H^2}H+z,
-\qquad z\in H^\perp,
-$$
-and define the positive-definite norm on $H^\perp$ by
-$$
-\norm{v}^2=-v^2.
-$$
-If $C$ is an irreducible curve and $h=C\cdot H$, writing
-$$
-C=\frac h{H^2}H+y,
-\qquad y\in H^\perp,
-$$
-gives
-$$
-\norm{y}^2
-\leq
-2+\frac{h^2+h(K_X\cdot H)}{H^2}+\norm{z}\,\norm{y}.
+b_i\le d,
+\qquad
+\sum_ib_i^2\le d^2,
+\qquad
+D^2\ge\sum_ib_i^2D_i^2\ge-\sum_ib_i^2\qty(D_i\cdot K_X+2).
 $$
 
 ::: pf-proof
-
-Adjunction gives
+The three displays are the Math StackExchange answer 4775583's first three steps. Each $D_i$ is an integral curve and $H$ is ample, so $D_i\cdot H\ge1$, and $d=D\cdot H=\sum_jb_j(D_j\cdot H)$ gives $b_i\le d$ and $\sum_ib_i^2\le\qty(\sum_ib_i)^2\le d^2$. Adjunction, Theorem V.1.3, printed p. 361, reads $2p_a(D_i)-2=D_i^2+D_i\cdot K_X$, and $p_a(D_i)\ge0$ for an integral projective curve, so $D_i^2\ge-D_i\cdot K_X-2$. Two distinct irreducible curves on a surface meet in a finite set of points with positive multiplicities, so $D_i\cdot D_j\ge0$ for $i\ne j$ and
 $$
-2p_a(C)-2=C^2+K_X\cdot C.
+D^2=\sum_ib_i^2D_i^2+2\sum_{i<j}b_ib_jD_i\cdot D_j\ge\sum_ib_i^2D_i^2 .
 $$
-Since $C$ is an integral projective curve, $p_a(C)\geq0$, hence
-$$
-C^2+K_X\cdot C\geq-2.
-$$
-Using the orthogonal decomposition in step [](#s1){.pf-ref},
-$$
-C^2=\frac{h^2}{H^2}-\norm{y}^2
-$$
-and
-$$
-K_X\cdot C
-=
-\frac{h(K_X\cdot H)}{H^2}+z\cdot y.
-$$
-Therefore
-$$
-\norm{y}^2
-\leq
-2+\frac{h^2+h(K_X\cdot H)}{H^2}+z\cdot y.
-$$
-The positive-definite inner product
-$$
-(u,v)_+=-u\cdot v
-$$
-on $H^\perp$ satisfies Cauchy--Schwarz, so
-$$
-z\cdot y\leq\abs{z\cdot y}\leq\norm{z}\,\norm{y}.
-$$
-Substitution proves the displayed estimate.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
-
-For each integer $d\geq1$, the numerical classes of irreducible curves
-$C$ satisfying
+For every integer $d\ge1$, the numerical classes of irreducible curves $C$ with
 $$
-1\leq C\cdot H\leq d
+1\le C\cdot H\le d
 $$
 form a finite set.
 
 ::: pf-proof
+Put
+$$
+K_X=\frac{K_X\cdot H}{H^2}H+z,
+\qquad z\in H^\perp,
+$$
+and write $C=\frac{h}{H^2}H+y$ with $h=C\cdot H$ and $y\in H^\perp$, normed by $\norm{v}^2=-v^2$. Adjunction and $p_a(C)\ge0$ give $C^2+K_X\cdot C\ge-2$, that is
+$$
+\frac{h^2}{H^2}-\norm{y}^2+\frac{h(K_X\cdot H)}{H^2}+z\cdot y\ge-2,
+$$
+and Cauchy--Schwarz for the positive definite form $(u,v)_+=-u\cdot v$ on $H^\perp$ bounds $z\cdot y\le\norm{z}\norm{y}$; hence
+$$
+\norm{y}^2-\norm{z}\norm{y}\le A_h
+\coloneqq
+2+\frac{h^2+h(K_X\cdot H)}{H^2}.
+$$
+The integer $h$ lies in the finite set $\{1,\dots,d\}$, so the left side of that inequality, which tends to $+\infty$ with $\norm{y}$, bounds $\norm{y}$ by a constant depending on $d$ alone; and the coefficient $h/H^2$ of $H$ is bounded as well. The classes therefore lie in a bounded subset of $N_\RR$, which holds only finitely many lattice points.
 
-For such a curve, the integer
-$$
-h=C\cdot H
-$$
-belongs to the finite set $\{1,\ldots,d\}$. In step [](#s2){.pf-ref} the quantity
-$$
-A_h=2+\frac{h^2+h(K_X\cdot H)}{H^2}
-$$
-therefore ranges over a finite set of real numbers. If $t=\norm{y}$, the estimate
-of step [](#s2){.pf-ref} is
-$$
-t^2-\norm{z}t\leq A_h.
-$$
-The left side tends to $+\infty$ as $t\to+\infty$. Hence there is a constant
-$R_d$ such that every such curve has
-$$
-\norm{y}\leq R_d.
-$$
-Its coefficient $h/H^2$ in the $H$-direction is also bounded because
-$1\leq h\leq d$. Thus all these classes lie in a bounded subset of $N_\RR$.
-The lattice $N\subseteq N_\RR$ is discrete, so a bounded subset contains only
-finitely many lattice points. This proves the claim.
+The uniformity is the one point at which the Math StackExchange answer does not close: its displayed inequality for the bound on $D^2$ passes from $-\sum_ib_i^2(D_i\cdot K_X+2)$ to $-d\,D\cdot K_X-2d^2$, replacing $b_i^2$ with $b_id$ in the $K_X$ term, which follows from $b_i\le d$ only when $D_i\cdot K_X\le0$ for every $i$, and its final ellipsoid sentence bounds $(D-E)^2$ by an expression linear in $D$. Step [](#s2){.pf-ref} keeps the components and squares it does establish; the bound above is the card's.
 
 :::
 
 :::
 
 ::: {.pf-step #s4}
-
-If $d<0$, there is no effective divisor $D$ with $D\cdot H=d$; if
-$d=0$, the only such effective divisor is $D=0$.
+If $d<0$ there is no effective divisor $D$ with $D\cdot H=d$, and if $d=0$ the only one is $D=0$.
 
 ::: pf-proof
-
-Write a nonzero effective divisor as
-$$
-D=\sum_i n_iC_i,
-\qquad n_i>0,
-$$
-with distinct irreducible curves $C_i$. Ampleness gives
-$$
-H\cdot C_i>0
-$$
-for every $i$ by Nakai--Moishezon. These intersection numbers are positive
-integers, so
-$$
-D\cdot H=\sum_i n_i(H\cdot C_i)>0.
-$$
-The assertions follow.
+A nonzero effective divisor is $D=\sum_in_iC_i$ with $n_i>0$ and distinct irreducible $C_i$, and $H\cdot C_i\ge1$ because $H$ is ample, so $D\cdot H=\sum_in_i(H\cdot C_i)>0$.
 
 :::
 
 :::
 
 ::: {.pf-step #s5}
-
-For every integer $d>0$, only finitely many numerical classes of
-effective divisors satisfy $D\cdot H=d$.
+For every integer $d$, only finitely many numerical classes of effective divisors satisfy $D\cdot H=d$.
 
 ::: pf-proof
-
-Write
-$$
-D=\sum_i n_iC_i
-$$
-as in step [](#s4){.pf-ref}. Then
-$$
-d=D\cdot H=\sum_i n_i(C_i\cdot H).
-$$
-Consequently every component satisfies
-$$
-1\leq C_i\cdot H\leq d,
-$$
-so by step [](#s3){.pf-ref} its numerical class belongs to a fixed finite set $S_d$.
-Moreover,
-$$
-\sum_i n_i\leq d
-$$
-because every $C_i\cdot H$ is at least one. Hence $[D]$ is a sum of at most
-$d$ elements of the finite set $S_d$, counted with repetition. There are only
-finitely many such sums in the abelian group $N$. Together with step [](#s4){.pf-ref},
-this proves part (a) for every integer $d$.
+For $d\le0$ this is step [](#s4){.pf-ref}. For $d>0$ write $D=\sum_in_iC_i$ as in step [](#s4){.pf-ref}; then $d=\sum_in_i(C_i\cdot H)$ with $C_i\cdot H\ge1$, so $1\le C_i\cdot H\le d$ and $[C_i]$ lies in the finite set $S_d$ of step [](#s3){.pf-ref}, while $\sum_in_i\le d$. Thus $[D]$ is a sum of at most $d$ elements of $S_d$, counted with repetition, and only finitely many such sums exist in the abelian group $N$. This proves part (a).
 
 :::
 
 :::
 
 ::: {.pf-step #s6}
-
-Let $C$ have genus $g\geq2$, let $X=C\times C$, and let
-$\Gamma_\sigma$ be the graph of an automorphism $\sigma$ of $C$. Then
+Let $C$ have genus $g\ge2$, let $X=C\times C$, and let $\Gamma_\sigma$ be the graph of an automorphism $\sigma$ of $C$. Then
 $$
 \Gamma_\sigma^2=\Delta^2=2-2g<0.
 $$
 
 ::: pf-proof
-
-The graph embedding has normal bundle $\sigma^*T_C$: for a graph of a morphism
-$u:C\to C$, the normal sequence identifies the quotient of
-$T_C\oplus u^*T_C$ by the graph of $du$ with $u^*T_C$. Since $\sigma$ is an
-automorphism,
-$$
-\deg\sigma^*T_C=\deg T_C=2-2g.
-$$
-The self-intersection of a smooth curve on a smooth surface is the degree of
-its normal bundle. Thus $\Gamma_\sigma^2=2-2g$. The equality
-$\Delta^2=2-2g$ is Exercise V.1.6, [[P-AGH516DIAGONAL]].
+Bragg, Proof 2, first paragraph, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6, printed p. 367. Bragg then states $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
 
 :::
 
 :::
 
 ::: {.pf-step #s7}
-
-If
+The map
 $$
-\Gamma_\sigma\equiv\Delta,
+\Aut C\longrightarrow N=\Num(C\times C),
+\qquad
+\sigma\longmapsto[\Gamma_\sigma],
 $$
-then
-$$
-\Gamma_\sigma=\Delta
-$$
-and therefore $\sigma=\id_C$.
+is injective.
 
 ::: pf-proof
-
-Numerical equivalence would give
+Bragg, Proof 2, second paragraph. The graphs of distinct automorphisms are distinct irreducible curves, so they share no irreducible component and their intersection number is nonnegative, a sum of nonnegative local intersection multiplicities. If $\Gamma_\sigma\equiv\Gamma_\tau$, then
 $$
-\Gamma_\sigma\cdot\Delta=\Delta^2=2-2g<0.
+\Gamma_\sigma\cdot\Gamma_\tau=\Gamma_\tau^2=2-2g<0
 $$
-If the two irreducible curves $\Gamma_\sigma$ and $\Delta$ were distinct,
-their intersection number would be a sum of nonnegative local intersection
-multiplicities, hence would be nonnegative. This contradiction shows
-$$
-\Gamma_\sigma=\Delta.
-$$
-Equality of the two graphs means $\sigma(P)=P$ for every $P$, so
-$\sigma=\id_C$.
+by step [](#s6){.pf-ref}, since $g\ge2$, which contradicts the nonnegativity. Hence $\Gamma_\sigma=\Gamma_\tau$, the two graphs coincide, and $\sigma=\tau$.
 
 :::
 
 :::
 
 ::: {.pf-step #s8}
-
-Distinct automorphisms of $C$ have numerically inequivalent graphs.
+Every graph $\Gamma_\sigma$ meets the divisor
+$$
+K=K_{C\times C}=\pi_1^*K_C+\pi_2^*K_C
+$$
+in $4g-4$, and $K$ is ample.
 
 ::: pf-proof
-
-Suppose
+Bragg, Proof 2, third paragraph, computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction $2p_a(\Gamma)-2=\Gamma^2+\Gamma\cdot K$ with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg uses a fixed ample divisor here; $K$ is one. It meets the rulings $l=C\times\{\mathrm{pt}\}$ and $m=\{\mathrm{pt}\}\times C$ in $K\cdot l=K\cdot m=2g-2>0$, its square is $K^2=2(2g-2)^2>0$, and for any irreducible curve $D\subseteq C\times C$ the projection formula gives
 $$
-\Gamma_\sigma\equiv\Gamma_\tau.
+K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
-The surface automorphism
-$$
-\id_C\times\tau^{-1}:C\times C\longrightarrow C\times C
-$$
-preserves intersection numbers and therefore numerical equivalence. It sends
-$\Gamma_\tau$ to $\Delta$ and $\Gamma_\sigma$ to
-$\Gamma_{\tau^{-1}\circ\sigma}$. Hence
-$$
-\Gamma_{\tau^{-1}\circ\sigma}\equiv\Delta.
-$$
-Step [](#s7){.pf-ref} gives $\tau^{-1}\circ\sigma=\id_C$, so $\sigma=\tau$.
+both degrees being at least one. The Nakai--Moishezon criterion, Theorem V.1.10, printed p. 365, then makes $K$ ample.
 
 :::
 
 :::
 
 ::: {.pf-step #s9}
-
-Every graph $\Gamma_\sigma$ has
-$$
-\Gamma_\sigma\cdot(l+m)=2,
-$$
-where
-$$
-l=C\times\{P\},
-\qquad
-m=\{P\}\times C.
-$$
+Only finitely many numerical classes of effective divisors $D$ on $C\times C$ satisfy $D\cdot K=4g-4$.
 
 ::: pf-proof
-
-The graph of an automorphism meets $m$ once because fixing its first coordinate
-determines a unique point of the graph. It meets $l$ once because
-$\sigma^{-1}(P)$ is a single point and an automorphism has degree one. Thus
-$$
-\Gamma_\sigma\cdot l
-=
-\Gamma_\sigma\cdot m
-=1.
-$$
-Exercise V.1.9, [[P-AGH519HODGEINDEX]], proves that $l+m$ is ample. The
-displayed equality follows.
+Part (a), proved in steps [](#s1){.pf-ref} to [](#s5){.pf-ref}, applies to the ample divisor $K$ of step [](#s8){.pf-ref} with $d=4g-4$.
 
 :::
 
 :::
 
 ::: {.pf-step #s10}
-
-The automorphism group of $C$ is finite:
 $$
 \boxed{\cardinality{\Aut C}<\infty}.
 $$
 
 ::: pf-proof
-
-By step [](#s9){.pf-ref}, all graph divisors are effective and have fixed intersection
-degree two with the ample divisor $l+m$. Part (a), proved in steps
-[](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, says that only finitely many numerical equivalence classes of such
-effective divisors exist. Step [](#s8){.pf-ref} says the map
-$$
-\Aut C\longrightarrow\Num(C\times C),
-\qquad
-\sigma\longmapsto[\Gamma_\sigma]
-$$
-is injective. Hence $\Aut C$ is finite, proving part (b).
+Each graph $\Gamma_\sigma$ is an effective divisor with $\Gamma_\sigma\cdot K=4g-4$ by step [](#s8){.pf-ref}, so its class lies in the finite set of step [](#s9){.pf-ref}, and step [](#s7){.pf-ref} makes $\sigma\mapsto[\Gamma_\sigma]$ injective. This proves part (b).
 
 :::
 
 :::
 
 ::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (b).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a); steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (b) from it.
 
 :::
 
@@ -468,9 +337,12 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.11, PDF pp. 260--261: (b) is the printed hint — "doing the hint by contrapositive, theorem V.1.4 gives $\Gamma\ne\Delta$ which implies $\Gamma\cdot\Delta\ge0$; then $\Gamma^2<0$ implies $\Gamma\cdot\Delta\ne\Delta^2$ and thus $\Gamma\not\equiv\Delta$", then $H=l+m$ and part (a). Part (a) is a sketch: "WLOG assume $H$ is very ample of degree 1; for $D\cdot H=0$ this follows from Nakai--Moishezon; any such $D$ can only have finitely many components not intersecting $H$ since if $P_i\cdot H=0$, then $P_i\cdot P_j<0$ and with each additional such component, the genus ... will decrease; thus we are choosing $D$ from a finite set of a finite number of components." That bounds neither the components meeting $H$ nor the coefficients, and the negativity of $P_i\cdot P_j$ is asserted.
+Dan Bragg, *Automorphisms of curves* (2015), Proof 2, "Intersection Theory", is a complete published proof of (b) given (a): distinct automorphisms have distinct irreducible graphs, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and all graphs meet the ample canonical divisor of $C\times C$ in the same integer $4g-4$. Steps [](#s6){.pf-ref} to [](#s10){.pf-ref} are that argument, with the ampleness of $K_{C\times C}$ checked at step [](#s8){.pf-ref}, which Bragg leaves implicit in "a fixed ample divisor", and with the one-line reason for his assertion $\Gamma^2=2-2g$ supplied at step [](#s6){.pf-ref}. The set does not supply (a): it invokes "the general fact that the set of effective divisors modulo numerical equivalence whose intersection with a fixed ample divisor is a particular integer is finite" and justifies it by asserting that the cone of effective divisors "intersects the cone ... in a bounded domain", which is the statement to be proved.
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 11 (solution by Shuang-Yen Lee), printed p. 4 of that set, proves (a) by the route of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: a basis of $\Num X\otimes\RR$ in which the intersection form is $\diag(1,-1,\ldots,-1)$, $c_0\ge1/\sqrt{H^2}$ for an irreducible curve, adjunction $c_0(c_0+k_0)-\sum_ic_i(c_i+k_i)=2p_a-2\ge-2$, and then $\sum_ic_i^2\le Ac_0^2$, so that $\{D\ge0:D\cdot H=d\}$ meets a bounded set. Its displayed intermediate step, $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$, does not follow from the adjunction identity: that identity bounds $\sum_i(c_i^2+c_ik_i)$, and $c_i^2$ is reached only through $2\abs{c_ik_i}\le c_i^2+k_i^2$, which costs a factor $2$ and adds $\sum_ik_i^2$. Steps [](#s1){.pf-ref} to [](#s3){.pf-ref} carry that bookkeeping out, with the constant $A_h=2+(h^2+h(K_X\cdot H))/H^2$ and the term $\norm{z}\norm{y}$. Its (b) is the printed hint and stops at the point where the counting begins: from $\Gamma\equiv\Delta$ it gets $\Gamma\cdot\Delta=\Delta^2=2-2g<0$ and hence $\Gamma=\Delta$, then applies (a) to the graphs with $\Gamma\cdot(l+m)=2$. It never proves that distinct automorphisms have numerically inequivalent graphs, which is step [](#s8){.pf-ref}: the argument above holds only for the diagonal, and an injective assignment $\sigma\mapsto[\Gamma_\sigma]$ needs the surface automorphism $\id_C\times\tau^{-1}$ of step [](#s8){.pf-ref}. Without it the set of numerical classes being finite does not make the set of graphs finite. Steps [](#s6){.pf-ref} to [](#s10){.pf-ref} supply (b), and only (a)'s bookkeeping above is a corrected transcription of that set.
+Math StackExchange question 4449474, answer 4775583 by KReiser (2023-09-26), proves (a) by the route of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: adjunction bounds $D_i^2\ge-D_i\cdot K-2$ for each prime component, distinct components meet nonnegatively, $b_i\le d$ and $\sum_ib_i^2\le d^2$, and the finiteness is a lattice point count in $H^\perp$. Two of its displays do not follow. Its step from $-\sum_ib_i^2(D_i\cdot K+2)$ to $-d\,D\cdot K-2d^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K$, which the inequality $b_i\le d$ licenses only when $D_i\cdot K\le0$ for every $i$; on a surface with $K$ ample every component has $D_i\cdot K>0$ and the inequality fails. Its concluding sentence bounds $(D-E)^2$ below by $(D-E)\cdot(-dK-2E)-4d^2-2dE\cdot K-2E^2$, which is linear in $D$ and so describes no ellipsoid. Step [](#s3){.pf-ref} therefore carries the bound in the form the hint asks for, through the orthogonal decomposition of step [](#s1){.pf-ref}, and (a) has no complete published proof among the sources read.
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 11 (solution by Shuang-Yen Lee), printed p. 4 of that set, takes the same route with a display that does not follow either: its $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ is reached from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$, and $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, which proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal; the step from finitely many numerical classes to finitely many automorphisms is step [](#s7){.pf-ref} above, which Bragg supplies.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\ldots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$"; the coefficients of the curves occurring in $D+\sum a_iR_i$ are never bounded, so this does not prove (a).
+
 :::
