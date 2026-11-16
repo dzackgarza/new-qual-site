@@ -111,7 +111,9 @@ audit:
     maps and identifies the quadrics Q_ij as generators, where printed p. 219
     asserts both halves of (a) in one sentence each and proves neither and names
     no Q_ij. The remark also called IV.1.3.5 an exercise, where it is an Example
-    of the text; it is cited as one. Where and how the sources were read:
+    of the text; it is cited as one. The text-version paths that stood in the
+    rendered solution's opening sentence and in both remark paragraphs are out of
+    them and recorded here. Where and how the sources were read:
     Egbert in tmp/sources/hartshorne-solutions-egbert.md, section 4.3.6 for
     printed p. 219 and the section headed "4.3.7 b. x g" for printed p. 220, the
     page positions read off the folios of
