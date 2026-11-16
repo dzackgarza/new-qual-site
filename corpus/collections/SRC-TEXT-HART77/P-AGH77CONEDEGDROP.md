@@ -50,7 +50,7 @@ audit:
     reader accepted.
 - event: source-corrected
   by: claude
-  date: 2026-11-17
+  date: 2026-11-16
   note: >-
     Reader's report on issue #121, third pass, three repairs in this card and
     one in COMPLAINTS.md. First, the 2026-11-11 source-checked note above had a
@@ -70,6 +70,32 @@ audit:
     dimension-zero sentence false; it is vacuous, no variety of dimension 0
     having degree greater than 1, and the remark now says so. Nothing in the
     proof changes: r >= 1 is still forced, by d > 1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Record of a date, on the reader's report of issue #121's fourth pass. The
+    event above is dated 2026-11-17 and was written and committed on
+    2026-11-16, in 0005c982e3 (committer date 2026-11-16 07:19:12); a record
+    carries the day of the commit that lands it, so 2026-11-16 is its date. It
+    is left unedited, as a dated event must be, and its content stands: the
+    2026-11-11 note is restored to the text it had on its date, a point has
+    degree 1 because its Hilbert polynomial is the constant 1, and Borcherds's
+    dimension-zero sentence is vacuous rather than false. This event is the
+    record of the date, and nothing else on the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fifth pass: one date, no mathematics. The
+    source-corrected event above is dated 2026-11-17, a day that had not
+    happened when it was written and committed, in 0005c982e3 (committer date
+    2026-11-16 07:19:12). A record carries the day of the commit that lands
+    it, so its date is now 2026-11-16, and its text is untouched. The "Record
+    of a date" event below left the date as written; the reader of this pass
+    requires the field itself to carry the commit's day. Nothing else on the
+    card changes.
+
 ---
 
 ::: {.problem}
