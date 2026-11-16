@@ -48,9 +48,34 @@ audit:
     "every automorphism of P^1 is fractional linear" by reducing to an
     automorphism of k[x] were removed; the remark records that route as the
     card's earlier one. Read against the book: Exercise I.6.6 on printed
-    p. 46 asks (c) for k(x), which is what the transcribed argument proves;
-    the field k is arbitrary there, and Lemma 9.24 and Example 9.25 are
-    stated over an arbitrary field F, so no hypothesis is added.
+    p. 46 asks (c) for k(x), which is what the transcribed argument proves.
+    The base field is not arbitrary in the exercise: Chapter I fixes k
+    algebraically closed (text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, line 350, "We work
+    over a fixed algebraically closed field k"), and part (b) appeals to
+    Corollary I.6.12, which is stated there for such a k. Nothing in the
+    argument for (c) uses more than that k is a field: Lemma 9.24 and
+    Example 9.25 are stated over an arbitrary field F, so the proof is
+    stronger than the exercise asks for.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, two repairs. First, the note above said
+    the exercise asks (c) over an arbitrary field k, which is false:
+    Hartshorne fixes k algebraically closed for Chapter I, and part (b)
+    needs Corollary I.6.12 in that setting. The note is corrected rather than
+    the statement, since the card's problem block already prints the exercise
+    with the chapter's k. Second, the notation of step
+    field-automorphism-fractional-linear used a, b for the coprime numerator
+    and denominator and then for the scalars of the fractional linear form,
+    and wrote the form in the homogeneous coordinate X; the polynomials are
+    now p and q and the form is in the affine coordinate x. Re-read at the
+    folios given: Milne, Lemma 9.24 with its proof on printed p. 118 and
+    Example 9.25 on printed p. 119, text version
+    tmp/sources/milne-fields-and-galois-theory.md, and Example 3.1(b) on
+    printed p. 35. Not checked in this pass: the mathematical content of the
+    steps, which the reader accepted.
 ---
 
 ::: {.problem}
@@ -169,13 +194,13 @@ Every $k$-automorphism of $k(x)$ is a fractional linear transformation.
 Let $\sigma$ be a $k$-automorphism of $k(x)$ and put $u=\sigma(x)$.
 Then $\sigma$ is determined by $u$, because $\sigma(h(x))=h(u)$ for every $h\in k(x)$; and $k(u)=\sigma(k(x))=k(x)$.
 
-Write $u=a/b$ in lowest terms. By step [](#degree-of-a-rational-function){.pf-ref}, $\deg(u)=1$, so after multiplying numerator and denominator by a nonzero constant,
+Write $u=p/q$ in lowest terms, with $p,q\in k[x]$ coprime. By step [](#degree-of-a-rational-function){.pf-ref}, $\deg(u)=1$, so $p$ and $q$ are linear; after multiplying numerator and denominator by a nonzero constant,
 $$
-u=\frac{aX+b}{cX+d}
+u=\frac{ax+b}{cx+d}
 $$
-with $a,b,c,d\in k$ and $ad-bc\ne0$: coprimality of $a,b$ forbids $a$ and $b$ from having a common linear factor, which is exactly the nonvanishing of $ad-bc$.
+with $a,b,c,d\in k$ and $ad-bc\ne0$. Coprimality of $p$ and $q$ forbids the two linear polynomials $ax+b$ and $cx+d$ from having a common factor, and a common factor of two linear polynomials is a common root, which exists exactly when $ad-bc=0$; so $ad-bc\ne0$ is the coprimality just used.
 
-This is J. S. Milne, *Fields and Galois Theory*, Example 9.25, printed p. 119, which states the conclusion in the form "$F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$", for an arbitrary base field $F$.
+This is J. S. Milne, *Fields and Galois Theory*, Example 9.25, printed p. 119, text version `tmp/sources/milne-fields-and-galois-theory.md`, which states the conclusion in the form "$F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$", for an arbitrary base field $F$; his $X$ is the affine coordinate $x$ of this card.
 :::
 
 :::
@@ -190,8 +215,8 @@ $$
 Step [](#matrix-gives-automorphism){.pf-ref} produces a map $\PGL(1)\to\Aut\PP^1$, which is a homomorphism because composition of fractional linear transformations corresponds to multiplication of the matrices.
 It is injective: a matrix inducing the identity transformation is a scalar matrix, since it fixes every point of $\PP^1$.
 
-For surjectivity, let $\phi\in\Aut(\PP^1)$. By step [](#aut-p1-iso-aut-kx){.pf-ref} the pullback $\phi^*$ is a $k$-automorphism of $k(x)$, so by step [](#field-automorphism-fractional-linear){.pf-ref} there are $a,b,c,d$ with $ad-bc\ne0$ and $\phi^*(x)=(aX+b)/(cX+d)$.
-Then $\phi^*(h)=h\bigl((aX+b)/(cX+d)\bigr)$ for every $h\in k(x)$, so $\phi^*$ is the pullback along the fractional linear transformation $T$ of step [](#matrix-gives-automorphism){.pf-ref}, and $\phi=T$ because pullback is injective on morphisms of $\PP^1$.
+For surjectivity, let $\phi\in\Aut(\PP^1)$. By step [](#aut-p1-iso-aut-kx){.pf-ref} the pullback $\phi^*$ is a $k$-automorphism of $k(x)$, so by step [](#field-automorphism-fractional-linear){.pf-ref} there are scalars $a,b,c,d$ with $ad-bc\ne0$ and $\phi^*(x)=(ax+b)/(cx+d)$ as a rational function of the affine coordinate $x$.
+Then $\phi^*(h)=h\bigl((ax+b)/(cx+d)\bigr)$ for every $h\in k(x)$, so $\phi^*$ is the pullback along the fractional linear transformation $T$ of step [](#matrix-gives-automorphism){.pf-ref}, and $\phi=T$ because pullback is injective on morphisms of $\PP^1$.
 
 Composing with the isomorphism of step [](#aut-p1-iso-aut-kx){.pf-ref} gives the second isomorphism.
 This proves part (c) together with the two asserted isomorphisms.
@@ -207,7 +232,7 @@ Step [](#matrix-gives-automorphism){.pf-ref} proves part (a), step [](#aut-p1-is
 :::
 
 ::: {.remark title="Published solution"}
-Part (c) is transcribed from J. S. Milne, *Fields and Galois Theory*, Lemma 9.24 on printed p. 118 and Example 9.25 on printed p. 119, text version `tmp/sources/milne-fields-and-galois-theory.md`, read in the PDF at those folios. Lemma 9.24 is proved there in full: for $u=a/b$ in lowest terms, $a(T)-b(T)u$ is the minimal polynomial of $X$ over $F(u)$, so $[F(X):F(u)]=\deg(u)$, the larger of the two degrees. Example 9.25 draws the conclusion used here, $F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$, for an arbitrary field $F$. Applied to a $k$-automorphism $\sigma$ of $k(x)$ with $\sigma(x)=u$, $k(u)=k(x)$ gives $\deg(u)=1$, hence $u$ and with it $\sigma$ are fractional linear. That is exactly the implication the retained sets assert and none proves. Example 3.1(b) on printed p. 35 states the same conclusion over $\CC$ and refers forward to Lemma 9.24; the general statement is 9.25. The card's own earlier route, through part (b) and the affine-line reduction of an automorphism of $\PP^1$ fixing $\infty$ to a $k$-algebra automorphism of $k[x]$ with $\deg x=\deg(q\circ p)$, is not used in the proof now: it proves the same thing by another route.
+Part (c) is transcribed from J. S. Milne, *Fields and Galois Theory*, Lemma 9.24 on printed p. 118 and Example 9.25 on printed p. 119, text version `tmp/sources/milne-fields-and-galois-theory.md`, read in the PDF at those folios. Lemma 9.24 is proved there in full: for $u=a/b$ in lowest terms, $a(T)-b(T)u$ is the minimal polynomial of $X$ over $F(u)$, so $[F(X):F(u)]=\deg(u)$, the larger of the two degrees. Example 9.25 draws the conclusion used here, $F(X)=F(u)$ if and only if $u=\frac{aX+b}{cX+d}$ with $ad-bc\ne0$, for an arbitrary field $F$. Applied to a $k$-automorphism $\sigma$ of $k(x)$ with $\sigma(x)=u$, $k(u)=k(x)$ gives $\deg(u)=1$, hence $u$ and with it $\sigma$ are fractional linear. That is exactly the implication the retained sets assert and none proves. Example 3.1(b) on printed p. 35 states the same conclusion over $\CC$ and refers forward to Lemma 9.24; the general statement is 9.25. Milne's two results need only a field, so the argument for (c) adds no hypothesis; the exercise itself is stated where Chapter I is in force, with $k$ algebraically closed (text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`, line 350), and part (b) uses Corollary I.6.12 in that setting. The card's own earlier route, through part (b) and the affine-line reduction of an automorphism of $\PP^1$ fixing $\infty$ to a $k$-algebra automorphism of $k[x]$ with $\deg x=\deg(q\circ p)$, is not used in the proof now: it proves the same thing by another route.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), text version `tmp/sources/hartshorne-solutions-borcherds.md`, Exercise 6.6, PDF p. 8: (a) the inverse of $x\mapsto(ax+b)/(cx+d)$ is $x\mapsto(dx-b)/(a-cx)$ when $ad-bc\ne0$; (b) "follows from corollary 6.12 (i) and (iii)"; (c) "any automorphism of $k(x)$ maps $x$ to $f(x)/g(x)$ for coprime polynomials $f$ and $g$ ... therefore $f(x)/g(x)$ is not equal to $f(y)/g(y)$ if $x\ne y$. But if $f$ or $g$ have degree greater than $1$ then $g(y)a=f(y)$ will usually have more than one solution for $y$. Hence $f$ and $g$ have degrees at most $1$." The middle sentence is not an argument; the equation printed there mixes the two coprime polynomials.
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, stops at §I.5 and gives no solution to 6.6.
