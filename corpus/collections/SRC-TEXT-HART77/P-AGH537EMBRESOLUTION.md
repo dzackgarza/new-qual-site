@@ -137,6 +137,40 @@ audit:
     embedded resolution, the identification of the double point of (e) as a
     node, and the arguments from the source's multiplicity data to the
     equivalence class of (a), (b), (d) and to the separations of (c) and (e).
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's findings on the second round of this batch, repaired here; every
+    event above is left as written. The pass above removed every mark of the
+    card's own argument from the rendered steps with the process text it
+    removed, and the marks are put back where the step is not the entry's:
+    steps a-third-fourth-blowup, b-third-fourth-delta, d-third-fourth-delta,
+    abd-equivalent, c-resolution-delta-three, c-not-equivalent,
+    e-resolution-delta-four and e-not-equivalent say in the step that they are
+    the card's own, and e-first-blowup-node says so of the identification of
+    its double point as a node, the entry recording only a multiplicity. One
+    sentence of step a-third-fourth-blowup is withdrawn as false and not
+    corrected in place: it said that the fourth blowup makes the reduced total
+    transform a normal-crossings divisor, "which the resolution of the curve in
+    Exercise 7 of §3, part (a), does not ask for", whereas that entry is the
+    solution of Hartshorne's V.3.7, which does ask for an embedded resolution.
+    The statement of the exercise is on printed p. 395, the section's page
+    marker in the text version being PDF p. 410, and reads "give an embedded
+    resolution, compute delta_P, and decide which ones are equivalent". The
+    sentence described what the source covers rather than the mathematics, so
+    it leaves the card (QUAL-08) and what the entry does and does not supply
+    stays recorded in COMPLAINTS.md. Read for this pass: Hartshorne, Algebraic
+    Geometry (1977), V.3 exercise 3.7, printed p. 395, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where the exercise
+    follows the marker for PDF p. 410 and printed page = PDF page - 15; and
+    the National Taiwan University Chapter V homework, Exercise 7 of §3, in
+    tmp/sources/ntu-ag2-chapter5.md, whose markers are coarse, the parts read
+    off the PDF beside it at PDF pp. 12 and 13. Not read here: the five
+    resolution graphs, which are images in the text version; Yang Pi-Yeh's
+    printed p. 108 and Egbert's Singular session, which the earlier passes read
+    and which were not re-read; and any printing of these sources other than
+    their text versions.
 ---
 
 ::: {.problem}
@@ -286,7 +320,7 @@ therefore makes their strict transforms meet the new exceptional $E_4$ at
 three distinct points. All remaining intersections are transverse, so the
 total transform is simple normal crossings.
 
-The fourth blowup is what makes the reduced total transform a normal-crossings divisor, which the resolution of the curve in Exercise 7 of §3, part (a), does not ask for.
+This step is the card's own.
 :::
 
 :::
@@ -379,6 +413,8 @@ $$
 $$
 
 Exercise 7 of §3, part (b), PDF p. 12, computes the same value, $\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$.
+
+This step is the card's own.
 :::
 
 :::
@@ -443,6 +479,8 @@ $$
 $$
 
 Exercise 7 of §3, part (d), PDF p. 13, computes $\tfrac12 3\cdot 2+\tfrac12 2\cdot 1=4$ from the same two multiplicities.
+
+This step is the card's own.
 :::
 
 :::
@@ -472,6 +510,8 @@ $$
 for (d), which analytically identify both germs with (a).
 
 Exercise 7 of §3 closes, PDF p. 13, "By the resolution graph, we conclude that the sigularity of (0,0) of (a) (b) (d) are equivalent and (c) (e) are different from the others". Its transforms for the three germs, quoted on steps [](#a-first-blowup){.pf-ref} to [](#d-first-two-blowups){.pf-ref}, coincide, and its multiplicities are $3$ and $2$ for each.
+
+This step is the card's own.
 :::
 
 :::
@@ -537,6 +577,8 @@ $$
 $$
 
 Exercise 7 of §3, part (c), PDF p. 13, prints $\delta_p=\tfrac12 3\cdot 2=3$.
+
+This step is the card's own.
 :::
 
 :::
@@ -551,6 +593,8 @@ multiplicity data differ. Equivalently, the delta invariant of (c) is $3$
 while that of (a), (b), and (d) is $4$.
 
 Exercise 7 of §3 separates (c) from the others, PDF p. 13; the comparison above uses the multiplicities its transforms give.
+
+This step is the card's own.
 :::
 
 :::
@@ -585,6 +629,8 @@ ordinary node of multiplicity $2$ there. One branch is tangent to the old
 exceptional curve $E_1:(v=0)$ and the other has tangent $u+v=0$.
 
 The transform is that of Exercise 7 of §3, part (e), PDF p. 13: in the chart $x=sy$ it prints $s^3+sy+y^2=0$ with $E_1=\{y=0\}$, says that the curve has one singularity, of multiplicity $2$, and then gives the next chart $(v,s)=(y/s,s)$, where the equation is $s+v+v^2=0$ and the curve is nonsingular.
+
+The identification of this double point as a node is the card's own.
 :::
 
 :::
@@ -625,6 +671,8 @@ $$
 $$
 
 Exercise 7 of §3, part (e), PDF p. 13, computes $\delta_p=\tfrac12 3\cdot2+\tfrac12 2\cdot1=4$.
+
+This step is the card's own.
 :::
 
 :::
@@ -643,6 +691,8 @@ Branch incidence and the exceptional-resolution graph are part of the
 equivalence data in (3.9.4), so (e) is inequivalent to all four others.
 
 Exercise 7 of §3 separates (e) from the others, PDF p. 13.
+
+This step is the card's own.
 :::
 
 :::
