@@ -212,6 +212,39 @@ audit:
     characteristic 3 beyond the three sources above, and no machine computation
     was run; the card's proof of part (a) in characteristic 3 is unchanged and
     remains its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's second report on this card, and two repairs. (i) The preamble
+    said Yang Pi-Yeh's Jacobian presentation "settles (a) in every
+    characteristic other than 2", which includes characteristic 3, and the
+    event above and the COMPLAINTS record of this date both say that no cited
+    source covers part (a) in characteristic 3. The two cannot both hold, and
+    the preamble no longer makes the claim: it now attributes to him part (b)
+    in every characteristic other than 2 and 3, which is what his own text
+    states and what his characteristic-2 collapse shows. The clause of the
+    event above that reads "Yang for (a) away from characteristic 2" is
+    superseded here; the remark's sentence about his twisted cubic now reports
+    his presentation and his kernel as he writes them, rather than concluding
+    from them that the conormal of part (a) is O(-5) + O(-5), so nothing on the
+    card asserts a published proof of part (a) in characteristic 3. (ii) The
+    identity M = t^-5 A B over Z[t,t^-1], with the two matrices displayed, is
+    withdrawn from step s5, together with the sentence that read it as holding
+    over every field and covering characteristic 3. The identity is correct and
+    the reduction it formalises is the card's own work of this round; but part
+    (a) in characteristic 3 has no published proof, and the round's rule is
+    that a proof of such a part already on the card stays marked as the card's
+    own and no new one is written. The card's proof of part (a) in every
+    characteristic is steps s2 to s4, unchanged: the extension class is
+    (n-1) eta, and at n = 2 that is eta, nonzero over every field, so step s4
+    gives E_2 = O(-5) + O(-5). What step s5 keeps is Shifrin's two frames, the
+    change of coordinates and the transition matrix, his own conclusion in the
+    form he prints it, whose constants need 3 invertible, and the card's two
+    elementary operations on the matrix, marked there as the card's own.
+    Nothing else on the card changed. Not checked: no further search for a
+    published proof of part (a) in characteristic 3, and the withdrawal rests
+    on the sources read above, not on a computation of this card's own.
 
 ---
 
@@ -229,7 +262,7 @@ audit:
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (a) in every characteristic other than $2$ and (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
+A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
 
 For $n\ge2$, consider the parametrized rational curve
 $$
@@ -664,19 +697,7 @@ t^{-5}
 0 & 1
 \end{pmatrix}.
 $$
-So the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$.
-
-The frames and the matrix are characteristic-free, and so is the reduction: with
-$$
-A=\begin{pmatrix}1&-2t\\0&1\end{pmatrix},
-\qquad
-B=\begin{pmatrix}1&0\\2t^{-1}&1\end{pmatrix},
-$$
-the identity
-$$
-M=t^{-5}AB
-$$
-holds over $\ZZ[t,t^{-1}]$, so it holds over every field; the two factors have determinant one, $A$ is a matrix over $k[t]$ and $B$ one over $k[t^{-1}]$, and no coefficient is inverted in forming them. In characteristic $2$ the matrix is already $t^{-5}$ times the identity, and in characteristic $3$ the same identity gives $M=t^{-5}AB$ there, the entry $-3t^{-5}$ of $M$ vanishing and the entry $-2t^{-4}$ becoming $t^{-4}$.
+So the conormal sheaf is $\OO(-5)\oplus\OO(-5)$ and $l=m=-5$. The two operations above are elementary, with determinant one, the first over $k[t]$ and the second over $k[t^{-1}]$; in characteristic $2$ the matrix is already $t^{-5}$ times the identity.
 
 :::
 
@@ -731,7 +752,7 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ has kernel $R(-5)^{\oplus2}$, so $\varphi^*(\mathcal I/\mathcal I^2)=\OO(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic he writes the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ and takes its kernel $R(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
