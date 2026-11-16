@@ -2517,7 +2517,8 @@ I.3.16(c), I.3.19(a), I.3.20, I.5.5 ($p=3$ included), I.5.6(b), I.5.8, I.5.12(b)
 One chat of the parallel #121 batches, on the nine Chapter I cards named in its brief: I.2.9(b), I.3.16(c),
 I.3.19(a), I.3.20, I.5.5 with $p=3$, I.5.6(b), I.5.8, I.5.12(b), I.5.13. Four of them had no located
 published proof before this pass (I.2.9(b), I.3.20's own statement, I.5.5 in the case $p=3$ with $3\mid d$,
-I.5.13), and all four now have one. The sources and their printed pages:
+I.5.13), and all four now have one --- for I.3.20 on Hetong Xu's answer, not on hwong557's, which is defective
+at its decisive step (see the correction under that card in this file's Batch A section of 2026-11-16). The sources and their printed pages:
 
 - **I.2.9(b)** (`P-AGH29PROJCLOSURE`): Georges Elencwajg, accepted answer 161648 to Mathematics Stack
   Exchange question 160924, *Ideal of the twisted cubic*. Book: printed p. 12. His lemma
