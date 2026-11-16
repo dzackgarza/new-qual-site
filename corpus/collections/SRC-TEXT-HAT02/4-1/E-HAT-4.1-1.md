@@ -87,6 +87,34 @@ audit:
     file name of the reading copy, `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, and names no
     translator. The pages quoted are those of tom Dieck's own printed folios, and every citation on
     the card already names the reading copy. Nothing in the statement or the proof changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 transcription batch: the four-quarter verification, which this card had written out as
+    its own because no publication prints one, is printed as the accepted answer 161511 (KReiser,
+    posted 2012-06-22) to Math Stack Exchange question 161507, read in
+    `tmp/sources/mse-161507-eckmann-hilton-higher-homotopy.md`. The answer writes both
+    $(f\cdot g)\star(h\cdot i)$ and $(f\star h)\cdot(g\cdot i)$ as one piecewise map with the same
+    four clauses the card's paragraph states, one per quarter of $I^2$, and concludes from the
+    Eckmann--Hilton argument that the two compositions coincide and are commutative. It is a user
+    answer and not a publication, and the card says so. Every step of the solution now names its
+    source, numbered statement and printed page: the laws $+_i$ on $[\Sigma^kX,Y]_0$ and their
+    formula, tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed
+    p. 87, read in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md`; the
+    commutation rule, same source, printed p. 88, where its printed proof is the words "unravel the
+    definitions", with answer 161511 for the verification; Proposition (4.3.1) with its proof, the
+    same printed page, for both deductions the exercise asks for; and the neutral element, which
+    (4.3.1) takes as given and the source records in one sentence on printed p. 87, with the
+    stretching homotopy the card writes out. The printed pages were confirmed against
+    `tmp/sources/tomdieck-algebraic-topology-ranicki.pdf`: page 100 carries the running head
+    "4.3. Suspension. Homotopy Groups 87" and the formula for $+_i$, and page 101 the running head
+    "88 Chapter 4. Elementary Homotopy Theory", the commutation rule and (4.3.1) with its proof.
+    Checked against Hatcher (2002), §4.1 Exercise 1 on printed p. 358, read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md` and confirmed at PDF page 367 = printed
+    p. 358, with the first-coordinate sum on printed p. 340 = PDF page 349 and the commutativity
+    homotopy on printed p. 341 = PDF page 350. Not claimed: that any publication prints the
+    commutation rule's verification, and no page was read from a rendered image.
 review: draft
 ---
 
@@ -110,7 +138,7 @@ which is stationary on $\partial I^n$; the source records the group axioms in on
 $$
 (f+g)+'(h+k)=(f+'h)+(g+'k)
 $$
-on the nose, not merely up to homotopy. tom Dieck states exactly this on printed p. 88, as $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ for the two laws attached to two coordinates, and leaves it to "unravel the definitions", printing no proof; the four-quarter verification above is written out here, and it is the only step of the argument the source does not print.
+on the nose, not merely up to homotopy. tom Dieck states exactly this on printed p. 88, as $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ for the two laws attached to two coordinates, and leaves it to "unravel the definitions", printing no proof; that is the only step of the argument the source does not print. The four-quarter computation is printed as the accepted answer 161511 (KReiser, posted 2012-06-22) to Math Stack Exchange question 161507, read in `tmp/sources/mse-161507-eckmann-hilton-higher-homotopy.md`: with $f\cdot g$ the sum in the first coordinate and $f\star g$ the sum in the second, both $(f\cdot g)\star(h\cdot i)$ and $(f\star h)\cdot(g\cdot i)$ are the single map that is $f(2x,2y,\ldots)$ on $[0,\tfrac12]\times[0,\tfrac12]$, $g(2x-1,2y,\ldots)$ on $[\tfrac12,1]\times[0,\tfrac12]$, $h(2x,2y-1,\ldots)$ on $[0,\tfrac12]\times[\tfrac12,1]$ and $i(2x-1,2y-1,\ldots)$ on $[\tfrac12,1]\times[\tfrac12,1]$, which is the four-quarter verification written out above, clause by clause, and the answer concludes from it and the Eckmann--Hilton argument that the two compositions agree and are commutative. It is a user answer on Math Stack Exchange and not a publication, and it is cited here as the source of this computation, in the form the card gives it.
 
 *The source's proposition.* (tom Dieck (4.3.1), printed p. 88.) Suppose the set $M$ carries two composition laws $+_1$ and $+_2$ with neutral elements $e_i$, and suppose the commutation rule $(a+_1b)+_2(c+_1d)=(a+_2c)+_1(b+_2d)$ holds. Then $+_1=+_2=+$, $e_1=e_2=:e$, and $+$ is associative and commutative. The proof is the book's chain of equalities:
 $$
@@ -144,5 +172,5 @@ Checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 1, printed 
 :::
 
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed pp. 87--88, read in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: the composition laws $+_i$ on $[\Sigma^kX,Y]_0$ and their formula on p. 87, the commutation rule on p. 88 with the words "unravel the definitions" in place of a proof, and Proposition (4.3.1) with its proof on p. 88, which is the published proof of both deductions of the exercise. The verification of the commutation rule is written out above because the source does not print it. Hatcher prints the exercise as Exercise 1 of §4.1, p. 358, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`, and proves commutativity directly on p. 341.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §4.3, printed pp. 87--88, read in the text version `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: the composition laws $+_i$ on $[\Sigma^kX,Y]_0$ and their formula on p. 87, the commutation rule on p. 88 with the words "unravel the definitions" in place of a proof, and Proposition (4.3.1) with its proof on p. 88, which is the published proof of both deductions of the exercise. The verification of the commutation rule is written out above because the source does not print it, and its four clauses are those of the accepted answer 161511 (KReiser, 2012-06-22) to Math Stack Exchange question 161507, read in `tmp/sources/mse-161507-eckmann-hilton-higher-homotopy.md` — a user answer, not a publication, which states the identity in exactly this four-quarter form and deduces both conclusions from the Eckmann--Hilton argument that tom Dieck prints as (4.3.1). Hatcher prints the exercise as Exercise 1 of §4.1, p. 358, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`, and proves commutativity directly on p. 341.
 :::
