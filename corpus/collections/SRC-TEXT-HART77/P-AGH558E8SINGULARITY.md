@@ -131,56 +131,90 @@ audit:
   date: 2026-11-16
   note: >-
     Re-read for issue #121 against the printed exercise (Hartshorne V.5.8,
-    printed p. 420) and read for part (b) in two solution sets and in
-    Brieskorn, correcting this note in place on a reader's report of the same
-    day.
+    printed p. 420) and transcribed part (b) from two solution sets that
+    compute the blowups, which the earlier events above did not have. Yang
+    Pi-Yeh, solution 5.5.8(b), printed pp. 114--115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf, folios confirmed on the PDF's
+    own text layer, read in tmp/sources/lfwin-hartshorne-solutions.md: seven
+    blowups in coordinates with Jacobian checks for the first four, then "And
+    one more blow-up to separate all exceptional curves. Hence this Du Val
+    singularity is of the type E8". NTU, Exercise 8 of §5, items (i)--(viii),
+    PDF p. 21, whose equations were already recorded above. Each part-(b) step
+    now names the charts it uses in those two places. E. Brieskorn, Rationale
+    Singularitäten komplexer Flächen, Invent. Math. 4 (1968), read in
+    tmp/sources/brieskorn-1968-rationale-singularitaeten.md: Satz 2.10 and
+    Satz 2.11, printed pp. 348--349, classify the resolution graphs of the
+    two-dimensional quotient singularities by the platonic triples, and §3.2
+    and Satz 3.3, printed pp. 354--355, identify the ring of invariants of the
+    binary icosahedral group with C{x,y,z}/(x^2+y^3+z^5). The Brieskorn
+    folios were read from rendered page images of the scan, which carries no
+    text layer: PDF p. 15 is printed 349, p. 16 is 350, p. 20 is 354 and p. 21
+    is 355. What the remark was corrected to say: the eight blowups are in
+    Yang and in the NTU set, not only the NTU set, and neither derives the
+    E_8 incidences, which are stated at the end of both entries; Brieskorn
+    determines the graph through the classification and computes no blowup.
+    Not checked: the two passages of Brieskorn's table that would name the
+    (2,3,5) row entry by entry, whose MinerU extraction is garbled and whose
+    page image was not read column by column, so the identification of that
+    row with the eight-curve chain is the classification statement of 2.10 and
+    not a quotation of the table; and whether the eight blowups are minimal,
+    which no event above settled either.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The event above, of the same day, had been rewritten in place by
+    ae2cc8895a and again by 16359d382b; it is restored here to the text it
+    carried when 15c60853ca wrote it, and this event carries the corrections
+    those two rewrites made together with the ones this pass makes.
 
-    Read: Yang Pi-Yeh, solution 5.5.8(b), printed pp. 114--115, in
-    tmp/sources/lfwin-hartshorne-solutions.pdf, whose folios were read on the
-    PDF's own text layer (Solution 5.5.8 begins on PDF p. 114 and the fourth
-    blowup is on that page, not on p. 115), and in its text version
-    tmp/sources/lfwin-hartshorne-solutions.md. Read: Exercise 8 of §5 of the
-    NTU Chapter V homework, items (i)--(viii), PDF p. 21 of
-    tmp/sources/ntu-ag2-chapter5.pdf and its text version
-    tmp/sources/ntu-ag2-chapter5.md. Read: E. Brieskorn, Rationale
-    Singularitäten komplexer Flächen, Invent. Math. 4 (1968), in
-    tmp/sources/brieskorn-1968-rationale-singularitaeten.md, a scan with no
-    text layer, whose folios were read from rendered page images.
+    Yang Pi-Yeh, solution 5.5.8(b), printed pp. 114--115 of
+    tmp/sources/lfwin-hartshorne-solutions.pdf (folios read on the PDF's own
+    text layer; the solution begins on printed p. 114 and its fourth blowup is
+    on that page), read in tmp/sources/lfwin-hartshorne-solutions.md: his
+    first blowup in the three charts 1+xy_1^3+x^3z_1^5, x_1^2+y+y^3z_1^5 and
+    x_1^2+zy_1^3+z^3, and his second in the three charts
+    1+z_2y_2^3x_1^2+z_2^3x_1, x_2^2+y_1^2z_2+y_1z_2^3 and x_2^2+z+y_2^3z^2,
+    are the card's charts of steps first-blowup-singular-locus and
+    second-blowup-singular-locus, and both steps now cite him for them, the
+    NTU items (i) and (ii) being cited for the one chart each of them records.
+    His third blowup has the chart y_3=1 as x_3^2+z_2^2z_3+z_2z_3^2, which is
+    the card's germ X^2+zY(Y+z); his chart z_3=1 is printed as
+    z_2^3+y_1y_3^2+y_1z_2, whose quadratic part y_1z_2 has rank two, where
+    the strict transform in that chart is x_3^2+y_1y_3+y_1^2y_3^3, of
+    quadratic rank three, so that printed equation is not the strict
+    transform, and the card names it as an erratum in the step and does not
+    follow it. His fourth blowup is taken at that germ, its chart y_4=1 reads
+    z_2^3+x_4y_3(y_3^2+z_2), of multiplicity three at the origin where his
+    entry calls it nonsingular; his fifth blowup keeps only the point at -1
+    and calls (0,0,0) impossible, so the three double points on E_5 are not
+    his; and his seventh blows up a point coming from his own sixth chart. No
+    step of the card transcribes a chart of the fourth blowup or later.
 
-    Corrected here, because the previous text of this note was false on each
-    point. Yang's first two blowups are the card's, in the three charts
-    1+xy_1^3+x^3z_1^5, x_1^2+y+y^3z_1^5 and x_1^2+zy_1^3+z^3, and the chart
-    y_3=1 of his third, x_3^2+z_2^2z_3+z_2z_3^2, is the card's germ
-    X^2+zY(Y+z); but his chart z_3=1 is printed as z_2^3+y_1y_3^2+y_1z_2,
-    whose quadratic part y_1z_2 has rank two, where the strict transform in
-    that chart is x_3^2+y_1y_3+y_1^2y_3^3, whose quadratic part has rank
-    three, so that equation is wrong; his fourth blowup is taken at that
-    germ, its chart y_4=1 is z_2^3+x_4y_3(y_3^2+z_2), of multiplicity three at
-    the origin where his entry calls it nonsingular; his fifth blowup keeps
-    only the point at -1 and calls (0,0,0) impossible, so the three double
-    points on E_5 are not his; and his seventh blows up a point coming from
-    his own sixth chart. The card therefore cites Yang only for the first two
-    blowups and for the chart y_3=1 of the third, names the error in a remark,
-    and cites the NTU set for items (i)--(viii); no step now says that a
-    chart of Yang's was transcribed.
-
-    Brieskorn does not prove part (b) and is no longer cited on the card:
+    E. Brieskorn, Rationale Singularitäten komplexer Flächen, Invent. Math. 4
+    (1968), read in tmp/sources/brieskorn-1968-rationale-singularitaeten.md, a
+    scan with no text layer whose folios were read from rendered page images:
     Satz 2.10 with its proof and the statement of Satz 2.11 are on printed
-    p. 347 (not pp. 348--349), the paper works over C, and §3.2 identifies the
+    p. 347, not pp. 348--349; the paper works over C; and §3.2 identifies the
     invariant ring of the binary icosahedral group with C{x,y,z}/(x^2+y^3+z^5),
-    which is the analytic local ring and not the completion C[[x,y,z]]/(f),
-    nor the affine ring A of the exercise; the paper computes none of the
-    blowups and says nothing about an arbitrary algebraically closed field.
+    the analytic local ring, which is neither the completion C[[x,y,z]]/(f)
+    nor the affine ring A of the exercise. It computes no blowup and settles
+    nothing for an arbitrary algebraically closed field, so it is not cited on
+    the card.
 
-    Marked in the steps as the card's own, since no source read proves them:
-    the resolution of an ordinary double point by a single blowup with the
-    conic as exceptional curve, the chart checks of blows (vi)--(viii), the
-    positions of the three double points on E_5, and the derivation of the
-    incidence graph from the charts. Those were on the card before this pass
-    and are kept, not rewritten. Not checked: whether the eight blowups are
-    minimal, which no event above settled either; and Brieskorn's table of
-    Satz 2.11 was not read row by row.
-
+    Also corrected: the remark's opening said that part (b) is computed in two
+    solution sets, which the entries do not support --- the first two blows
+    are computed chart by chart in both, the third in full only in the NTU
+    set, and the fourth to the eighth only there. The paragraph that listed
+    which of the card's steps are its own is removed from the remark, which
+    now carries citations and mathematics only; the steps carry the marking,
+    and the parts no source read proves are these four: the resolution of an
+    ordinary double point by a single blowup with the conic as exceptional
+    curve, the chart checks of blows (vi)--(viii), the positions of the three
+    double points on E_5, and the derivation of the eight-curve incidence,
+    which the NTU set states and does not derive. Those four were on the card
+    before this batch and are kept, not rewritten. Not checked: whether the
+    eight blowups are minimal, and Brieskorn's table of Satz 2.11 row by row.
 ---
 
 ::: {.problem}
@@ -481,8 +515,11 @@ $$
 Away from the exceptional divisor the blowup is an isomorphism, so this
 is the only singular point of the first strict transform.
 
-The three charts are item (i) of Exercise 8 of §5 of the NTU *Chapter V
-Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020
+The three charts are those of Yang Pi-Yeh, *Hartshorne Solutions*, solution
+5.5.8(b), printed p. 114, who writes $1+xy_1^3+x^3z_1^5$,
+$x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$ and checks the first two by their
+Jacobians, and the third is item (i) of Exercise 8 of §5 of the NTU *Chapter
+V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020
 Spring, solution by Yi-Heng, PDF p. 21, which reaches
 $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$.
 :::
@@ -541,8 +578,11 @@ $$
 E_1\cap E_2.
 $$
 
-The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the same
-set, PDF p. 21.
+The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the same set,
+PDF p. 21. The other two charts are Yang Pi-Yeh's, solution 5.5.8(b), printed
+p. 114: the piece $z_2=1$ reads $x_2^2+z+y_2^3z^2$, which is $x_2^2+z+z^2y_2^3$
+above, and the piece $x_2=1$ reads $1+z_2y_2^3x_1^2+z_2^3x_1$, which is the
+$x$-chart above and does not meet the exceptional curve.
 :::
 
 :::
@@ -598,6 +638,13 @@ $$
 X^2+zY(Y+z)=0.
 $$
 It is the intersection of the strict transform of $E_2$ with $E_3$.
+
+Yang Pi-Yeh, solution 5.5.8(b), printed p. 114, has the chart $y_3=1$ of this
+blowup as $x_3^2+z_2^2z_3+z_2z_3^2$, which is $X^2+zY(Y+z)$; his chart
+$z_3=1$ is printed as $z_2^3+y_1y_3^2+y_1z_2$, and that is not the strict
+transform, which is $x_3^2+y_1y_3+y_1^2y_3^3$ there: the quadratic form
+$x_3^2+y_1y_3$ has rank three where the printed expression's $y_1z_2$ has
+rank two.
 
 Thus after the third blowup the incidence graph of the old exceptional
 curves is
@@ -832,17 +879,15 @@ exceptional incidence graph required in part (b).
 ::: {.remark title="Published solution"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.8, printed p. 420.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.5.8, gives part (a) in full but for one sentence: he asserts that $z$ is irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is an integral domain --- true, since the cusp is parametrized by $u\mapsto(u^3,-u^2)$ and $k[x,y]/(x^2+y^3)\cong k[u^2,u^3]$ is a domain --- and defers the proof of that integrality to another document of his. The rest he gives: $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ a UFD because the localization is one and an irreducible of $A$ outside $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} prove the whole of (a) without that deferral. For part (b) his computation runs three blowups, its last strict transform being $a^2+cY^2+Yc^3$, which is the card's $x_2^2+y^2z_2+yz_2^3$ of step [](#second-blowup-singular-locus){.pf-ref}. Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Exercise V.5.8, printed p. 31, gives part (a).
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.5.8, gives part (a): he takes $z$ irreducible because $A/(z)=k[x,y]/(x^2+y^3)$ is an integral domain, which is true since the cusp is parametrized by $u\mapsto(u^3,-u^2)$ and $k[x,y]/(x^2+y^3)\cong k[u^2,u^3]$, and then $t=-(u^2+v^3)\in k[u,v]$ from $u^2+v^3=t^6(x^2+y^3)=-t$, $A[z^{-1}]=k[u,v,t^{-1}]$, and $A$ a UFD because the localization is one and an irreducible of $A$ outside $(z)$ stays irreducible and hence prime there. Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} prove the same three statements. For part (b) his computation runs three blowups, its last strict transform being $a^2+cY^2+Yc^3$, which is the card's $x_2^2+y^2z_2+yz_2^3$ of step [](#second-blowup-singular-locus){.pf-ref}. Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Exercise V.5.8, printed p. 31, gives part (a).
 :::
 
 ::: {.remark title="Published solution"}
-Part (b) is computed in two solution sets.
+The first two blowups of part (b) are computed chart by chart in two solution sets, the third in full in one of them and in one chart of the other, and the fourth to the eighth in one.
 
-Exercise 8 of §5 of the NTU *Chapter V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020 Spring, solution by Yi-Heng, PDF p. 21, records the strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi)--(viii) resolve those, (vii) being written there as "similar to (vi)"; and it closes "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". Its equations are the ones used above.
+Exercise 8 of §5 of the NTU *Chapter V Surfaces* homework, Algebraic Geometry II, National Taiwan University, 2020 Spring, solution by Yi-Heng, PDF p. 21, records the strict transforms chart by chart: (i) $x^2+y^3+z^5$ becomes $x_1^2+zy_1^3+z^3$ in the chart $z_1=1$; (ii) that becomes $x_2^2+z_2y_1^2+y_1z^3$ in the chart $y_2=1$; (iii) that becomes $x_3^2+z_3y_1+y_1^2z_3^3$ in the chart $y_3=1$ and $x_3^2+z_2y_3^2+y_3z_2^2$ in the chart $z_3=1$; (iv) the first is resolved by one further blowup; (v) the second acquires the three germs $x_4^2+z_4y_3+y_3z_4^2$, $x_4^2+z_2y_4^2+y_4z_2$ and $x_4^2+z_4y_3+y_3z_4^2$ at $z_4=-1$; (vi)--(viii) resolve those, and it closes "the inverse image of $P$ is a union of eight projective lines corresponding to $E_8$". Its equations are the ones used above.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.8(b), printed pp. 114--115, gives the three charts of the first blowup, $1+xy_1^3+x^3z_1^5$, $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$, with Jacobian checks for the first two, and the second blowup in its three charts. The chart $y_3=1$ of his third blowup, $x_3^2+z_2^2z_3+z_2z_3^2$, is the germ $X^2+zY(Y+z)$ of step [](#third-blowup-two-points){.pf-ref}. His chart $z_3=1$ is printed as $z_2^3+y_1y_3^2+y_1z_2$, and that is not the strict transform: the strict transform in that chart is $x_3^2+y_1y_3+y_1^2y_3^3$, whose quadratic part has rank three where the printed expression's $y_1z_2$ has rank two, and his fourth and later charts continue from the printed expression.
+Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.8(b), printed pp. 114--115, gives the three charts of the first blowup, $1+xy_1^3+x^3z_1^5$, $x_1^2+y+y^3z_1^5$ and $x_1^2+zy_1^3+z^3$, with Jacobian checks for the first two, and the second blowup in its three charts. The chart $y_3=1$ of his third blowup, $x_3^2+z_2^2z_3+z_2z_3^2$, is the germ $X^2+zY(Y+z)$ of step [](#third-blowup-two-points){.pf-ref}.
 
 Miles Reid, *Chapters on Algebraic Surfaces* (arXiv alg-geom/9602006), Chapter 4, §4.2, printed p. 82, carries out the $D_4$ resolution in full, including the divisor computation $2\Gamma_0^2+4=0$ that gives $\Gamma_0^2=-2$, and lists the equations $A_n:x^2+y^2+z^{n+1}$, $D_n:x^2+y^2z+z^{n-1}$, $E_6:x^2+y^3+z^4$, $E_7:x^2+y^3+yz^3$ and $E_8:x^2+y^3+z^5$, with "the resolution is a bunch of $-2$-curves whose configuration is given by the corresponding Dynkin diagram".
-
-The resolution of an ordinary double point by a single blowup with the conic as exceptional curve, the chart checks of (vi)--(viii), the positions of the three double points on $E_5$, and the derivation of the incidences from the charts are this card's own arguments, and the steps say so.
 :::
