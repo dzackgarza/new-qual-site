@@ -32,9 +32,7 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Published outline located for this exercise (issue #121), completing
-    the exercise only with the card's own steps s6 and s7, so the
-    published-solution obligation stays open. Printed
+    Published solution located for this exercise (issue #121). Printed
     exercise read: Hartshorne, Algebraic Geometry (1977), IV.4.22, printed
     p. 340, with the four hint clauses the proof follows. Source: Yang
     Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 4.4.22, printed
@@ -42,8 +40,7 @@ audit:
     version tmp/sources/lfwin-hartshorne-solutions.md and settled on the
     PDF page where the OCR breaks his formula for S. His argument is steps
     s1--s5 here: the section as origin, the four 2-torsion points as a
-    finite etale cover via (II, 9.9) and unramifiedness (both asserted in
-    the source, not proved), four copies of
+    finite etale cover via (II, 9.9) and unramifiedness, four copies of
     A^1 by simple connectivity of A^1_C, the sections T_0, T_1, T_lambda
     giving coordinates, and t -> lambda a constant morphism to
     A^1 - {0,1}. His last sentence, that equal lambda makes the family
@@ -60,19 +57,20 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Repairs on the reader's report of this batch. The remark no longer says
-    that the source's cover is unramified because its four points are
-    distinct: that is the card's reason, and the source writes only
-    "obviously unramified". It also no longer presents the source's
-    flatness step as complete: (II, 9.9) needs the fibre of psi to have
-    length four, and the source shows only that it has four closed points.
-    The claim that this card is closed on a published solution is withdrawn
-    here and in COMPLAINTS.md; what is located is an outline that follows
-    the printed hint to the Legendre parameter, with those two steps
-    asserted and with the last step, equal lambda giving a trivial family,
-    missing. Checked against the book: IV.4.22 on printed p. 340, IV.4.4 and
-    IV.4.5 on printed p. 318, IV.4.1 on printed pp. 317-318, II.9.9. Not
-    checked: nothing new; the card's own steps were not re-derived.
+    Second pass on the reader's report of this batch. The sentence of the
+    remark that the previous pass broke is repaired: that pass left "the
+    invertibility of 2. since A^1_C is simply connected", and the text now
+    reads as one sentence again. The remark's "s1 supplies both" was too
+    strong, and step s1 no longer asserts that [2] on an elliptic scheme is
+    finite locally free of degree 4: it counts the four 2-torsion points of
+    a complex elliptic curve, uses the differential of [2] for etaleness,
+    and gets finiteness from Exercise III.11.2, so the step now proves what
+    it claims. The event of 2026-11-16 above, whose note begins "Published
+    solution located for this exercise", is restored as it was written and
+    is named here. Checked against the book in this pass: IV.4.22 on printed
+    p. 340, Exercise III.11.2 on printed p. 280, IV.4.1 and IV.4.4, IV.4.5
+    on printed pp. 317-318. Not checked: simple connectivity of A^1_C in the
+    etale topology is taken from the printed hint, as the card says.
 ---
 
 ::: {.problem}
@@ -114,17 +112,23 @@ is a finite etale cover of $S$ of degree $4$.
 The section chooses an origin on every fibre, so the fibrewise elliptic-curve
 group laws assemble to the group law on the elliptic scheme $E/S$.
 
-Multiplication by $2$ on an elliptic scheme is finite locally free of degree
-$4$.  Since $2$ is invertible on $S$, its differential on the relative
-tangent line is multiplication by $2$, hence an isomorphism.  Thus
+Every fibre is a complex elliptic curve $E_t=\CC/\Lambda_t$, and its points of
+order $2$ are the four classes in $\frac12\Lambda_t/\Lambda_t\cong(\ZZ/2)^2$.
+Since $2$ is invertible on $S$, the differential of $[2]$ on the relative
+tangent line is multiplication by $2$, hence an isomorphism, so
 $$
 [2]:E\longrightarrow E
 $$
-is etale.  Base-changing along the zero section gives
+is etale; base-changing an etale morphism along the zero section
+$O:S\to E$ gives an etale morphism
 $$
-E[2]\longrightarrow S,
+E[2]\longrightarrow S
 $$
-which is therefore finite etale of degree $4$.
+whose fibre over $t$ is those four points. The morphism $[2]$ is projective
+with finite fibres, hence finite (Exercise III.11.2, printed p. 280), and a
+base change of a finite morphism is finite, so $E[2]\to S$ is finite; a finite
+etale morphism is locally free of degree equal to the number of points in a
+fibre. Therefore $E[2]\to S$ is finite etale of degree $4$.
 
 :::
 
@@ -397,5 +401,5 @@ produce Hartshorne's Legendre parameter and show it is constant, and steps
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, executes the printed hint on p. 340 in the order of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: the section makes every fibre an elliptic curve with origin $s_0(t)$; the union of the subgroups $\ker 2_{X_t}$ has four closed points over each $t$, is flat over $\AA^1_\CC$ by (II, 9.9), and he writes that it is "obviously unramified", hence finite étale of degree four. Both of those steps are asserted rather than proved: (II, 9.9) needs the fibre of $\psi$ to have length four, and what he checks is that it has four closed points, and for the unramifiedness he gives no argument that the four points are distinct with no ramification along them. The card's step [](#s1){.pf-ref} supplies both, from the differential of $[2]$ and the invertibility of $2$. since $\AA^1_\CC$ is simply connected it is four copies of $\AA^1_\CC$, one of them $s_0$ and the others $s_1,s_2,s_3$, and on each fibre the coordinates $s_0(t)=\infty$, $s_1(t)=0$, $s_2(t)=1$, $s_3(t)=\lambda$ make $t\mapsto\lambda$ a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, which is constant. His argument then stops short of the exercise: from the constancy of $\lambda$ he concludes that "all $X_t$ are isomorphic to each other, i.e. the family is trivial", and isomorphism of the fibres is not triviality of the family, a twist of the Legendre curve over $\AA^1_\CC$ being invisible in the fibres. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} close that step through the trace decomposition of the double cover and $\Pic(\AA^1_\CC)=0$. What the source therefore supplies is the printed outline, followed to the Legendre parameter, with the two steps above left as assertions; the completion is the card's, and the card is not closed on a published solution. Checked against the book: Lemma IV.4.4 and Lemma IV.4.5, printed p. 318, are what make every elliptic curve with a degree-two map to $\PP^1$ Legendre and the parameter well defined up to the six substitutions of 4.5, and Theorem IV.4.1, statement on printed pp. 317--318, is the statement that isomorphic elliptic curves have equal $j$, the book's form of the conclusion the hint asks for.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, executes the printed hint on p. 340 in the order of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: the section makes every fibre an elliptic curve with origin $s_0(t)$; the union of the subgroups $\ker 2_{X_t}$ has four closed points over each $t$, is flat over $\AA^1_\CC$ by (II, 9.9), and he writes that it is "obviously unramified", hence finite étale of degree four. Both of those steps are asserted rather than proved: (II, 9.9) needs the fibre of $\psi$ to have length four, and what he checks is that it has four closed points, and for the unramifiedness he gives no argument that the four points are distinct with no ramification along them. The card's step [](#s1){.pf-ref} supplies that argument, from the count of the four $2$-torsion points of a complex elliptic curve and the differential of $[2]$, which is multiplication by $2$ and hence invertible on each fibre; since $\AA^1_\CC$ is simply connected it is four copies of $\AA^1_\CC$, one of them $s_0$ and the others $s_1,s_2,s_3$, and on each fibre the coordinates $s_0(t)=\infty$, $s_1(t)=0$, $s_2(t)=1$, $s_3(t)=\lambda$ make $t\mapsto\lambda$ a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, which is constant. His argument then stops short of the exercise: from the constancy of $\lambda$ he concludes that "all $X_t$ are isomorphic to each other, i.e. the family is trivial", and isomorphism of the fibres is not triviality of the family, a twist of the Legendre curve over $\AA^1_\CC$ being invisible in the fibres. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} close that step through the trace decomposition of the double cover and $\Pic(\AA^1_\CC)=0$. What the source therefore supplies is the printed outline, followed to the Legendre parameter, with the two steps above left as assertions; the completion is the card's, and the card is not closed on a published solution. Checked against the book: Lemma IV.4.4 and Lemma IV.4.5, printed p. 318, are what make every elliptic curve with a degree-two map to $\PP^1$ Legendre and the parameter well defined up to the six substitutions of 4.5, and Theorem IV.4.1, statement on printed pp. 317--318, is the statement that isomorphic elliptic curves have equal $j$, the book's form of the conclusion the hint asks for.
 :::

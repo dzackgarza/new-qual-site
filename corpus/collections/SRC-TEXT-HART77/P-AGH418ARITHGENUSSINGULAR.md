@@ -29,9 +29,7 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), IV.1.8(c),
-    printed p. 298 (all of IV.1.8, part (c) included, stands on PDF p. 313 of
-    the text version tmp/sources/hartshorne-1977-algebraic-geometry.md, and
-    printed p. 298 = PDF p. 313 under printed = PDF - 15). Published proof of the decisive step located: the Stacks
+    printed p. 299. Published proof of the decisive step located: the Stacks
     Project, Chapter 33, Section 33.39 (The delta invariant) and Section 33.41,
     tag by tag, read in tmp/sources/stacks-tags/0C3T.md and the other tag files
     named below, which are the site's build from stacks-project commit
@@ -98,21 +96,29 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Repairs on the reader's report of this batch. The printed page of the
-    exercise is 298, not 299: all of IV.1.8 including (c) stands on PDF p.
-    313 of the text version tmp/sources/hartshorne-1977-algebraic-geometry.md
-    and printed = PDF - 15. The Egbert entry is transcribed correctly: his
-    short exact sequence is 0 -> H^0(X, sum_P Otilde_P/O_P) -> H^1(X, O_X)
-    -> H^1(Xtilde, O_Xtilde) -> 0, not the H^0 sequence the remark gave, and
-    the remark now carries his. Steps s7 and s8 now cite the analytic normal
-    forms they assert: the cusp's k[[t^2,t^3]] is I Ex. 5.14(d) on printed
-    pp. 38-39, which assumes char k != 2, and the node's k[[x,y]]/(xy) is I
-    Ex. 5.6(b) on printed p. 37 together with I Ex. 5.14(c) on printed p. 39,
-    which carries no characteristic hypothesis. The quotient computations in
-    s7 and s8 are unchanged and use no characteristic hypothesis. Checked
-    against the book in this pass: IV.1.8 on PDF p. 313, I Ex. 5.6 on printed
-    p. 37, I Ex. 5.14 on printed pp. 38-39. Not checked: nothing new; the
-    Stacks tags were not re-read in this pass.
+    Second pass on the reader's report of this batch, checked against the
+    book's text version. Corrected the printed page of I Ex. 5.14(c): the
+    statement that any two ordinary double points are analytically
+    isomorphic stands on printed p. 38, which is PDF p. 53 of
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, not p. 39. Ex.
+    5.14(d), the part that assumes char k != 2, begins on printed p. 38 and
+    its list of conclusions continues on p. 39, so "printed pp. 38-39" is
+    right for 5.14(d) alone. The same page is corrected where the event of
+    2026-11-16 above, whose note begins "Repairs on the reader's report of
+    this batch", gives p. 39 for 5.14(c); that event is named here and left
+    as written. Step s7 is rewritten: it no longer quotes a normal form for
+    a general ordinary cusp and then claims delta_P = 1 in every
+    characteristic. It computes Hartshorne's cusp y^2 = x^3 of I Ex. 5.1
+    directly, in every characteristic, from the normalization k[[t]] of
+    k[[x,y]]/(y^2-x^3), which leaves a quotient of length 1; and it deduces
+    the general case only for char k != 2, from I Ex. 5.14(d) together with
+    the analytic invariance of delta in step s6. The restored event of
+    2026-11-15 again says that the exercise stands on printed p. 299, as it
+    was written; the correct page is printed p. 298 (PDF p. 313), and this
+    note is the correction. Checked against the book in this pass: I Ex.
+    5.14 in the text version, PDF pp. 52-54 = printed pp. 37-39; I Ex.
+    5.6(b) on printed p. 37; I Ex. 5.1; IV.1.8 on PDF p. 313. Not checked:
+    the Stacks tags were not re-read in this pass.
 ---
 
 ::: {.problem}
@@ -413,32 +419,42 @@ $$
 
 ::: pf-proof
 
-Up to analytic isomorphism, an ordinary cusp of a plane curve has completed
-local ring
+The cusp of (I, Ex. 5.1) is the plane curve $y^2=x^3$, with completed local
+ring
 $$
-\widehat A
-\cong
-k[[t^2,t^3]]
-\subseteq
-k[[t]] :
+A=k[[x,y]]/(y^2-x^3).
 $$
-this is (I, Ex. 5.14(d)), printed pp. 38--39, applied to the double point
-$y^2=x^r$ with $r=3$, and that exercise assumes $\operatorname{char}k\ne2$, so
-the normal form is quoted under that hypothesis. The quotient computation
-below uses no characteristic hypothesis. The normalization of $\widehat A$ is
-$k[[t]]$. Every power $t^n$ with $n\ge2$ lies in
-$k[[t^2,t^3]]$, so every series in $k[[t]]$ is congruent modulo
-$k[[t^2,t^3]]$ to a unique scalar multiple of $t$. Hence
+The element $t=y/x$ of the fraction field of $A$ satisfies $t^2=x$ and
+$t^3=y$: the series $y^2-x^3$ is irreducible in every characteristic, since
+$x^3$ is not a square in $k((x))$, so $A$ is a domain and $x\ne0$. Therefore
+the map $k[[x,y]]\to k[[t]]$ sending $x\mapsto t^2$, $y\mapsto t^3$ has kernel
+$(y^2-x^3)$, its image is $k[[t^2,t^3]]$, and the resulting inclusion
+$$
+k[[t^2,t^3]]\subseteq B\subseteq k[[t]]
+$$
+of the normalization $B$ of $A$ has equality throughout: $t$ is integral over
+$k[[t^2,t^3]]$, and $k[[t]]$ is a discrete valuation ring, hence integrally
+closed. Every power $t^n$ with $n\ge2$ lies in $k[[t^2,t^3]]$, so every series
+in $k[[t]]$ is congruent modulo $k[[t^2,t^3]]$ to a unique scalar multiple of
+$t$. Hence
 $$
 k[[t]]/k[[t^2,t^3]]
 \cong
 k\cdot t
 $$
-as a $k$-vector space. This quotient has length $1$. Step [](#s6){.pf-ref} therefore
-gives
-$$
-\delta_P=1.
-$$
+as a $k$-vector space, a quotient of length $1$, and step [](#s6){.pf-ref} gives
+$\delta_P=1$ for this cusp in every characteristic, including
+characteristic $2$.
+
+For an arbitrary ordinary cusp take $\operatorname{char}k\ne2$. Then (I, Ex.
+5.14(d)), printed pp. 38--39, puts the completed local ring in the form
+$k[[x,y]]/(y^2-x^r)$ with $r=3$, which is the ring computed above, and
+$\delta_P$ is an analytic invariant by step [](#s6){.pf-ref}. So every ordinary
+cusp has $\delta_P=1$ when $\operatorname{char}k\ne2$. That exercise assumes
+$\operatorname{char}k\ne2$ and its normal form is not used here in
+characteristic $2$: the computation covers the cusp $y^2=x^3$ of (I, Ex. 5.1)
+in every characteristic, and in characteristic $2$ no normal form for a
+general ordinary cusp is asserted.
 
 :::
 
@@ -461,7 +477,7 @@ k[[x,y]]/(xy) :
 $$
 a node is a double point of a plane curve with two distinct tangent
 directions (I, Ex. 5.6(b), printed p. 37), and any two ordinary double points
-are analytically isomorphic, which is (I, Ex. 5.14(c)), printed p. 39, and
+are analytically isomorphic, which is (I, Ex. 5.14(c)), printed p. 38, and
 carries no characteristic hypothesis, so this computation holds in every
 characteristic.
 Its normalization is

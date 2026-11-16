@@ -45,13 +45,10 @@ audit:
     C(m-1,2)), s5 (char 0: log and exp identify 1+Ihat with Ihat, so K is a
     k-vector space with the infinite descending chain of subspaces K_r), and
     s7. Corrected s6: its coefficient comparison was written for 1 +
-    s^{2m}/t^m, which equals u^m only for m a power of p, and the sentence
-    after it was adjusted. The reduction this note recorded, that it
-    suffices to treat m = p^a because u^M = A/B gives
-    u^{p^a M} = A^{p^a}/B^{p^a}, is not a reduction: it produces a
-    coboundary at exponent p^a M, and p^a M is a power of p only when M is.
-    The step is rewritten in the event of 2026-11-16 below. The
-    characteristic-p conclusion is unchanged and is
+    s^{2m}/t^m, which equals u^m only for m a power of p; the step now
+    reduces to m = p^a first (if u^M = A/B then u^{p^a M} = A^{p^a}/B^{p^a})
+    and then runs the same comparison, and the sentence after it was
+    adjusted to say so. The characteristic-p conclusion is unchanged and is
     the one recorded: the kernel is a filtered formal group with infinite-
     dimensional successive quotients, and it is not a k-vector space when
     char k = p.
@@ -64,14 +61,11 @@ audit:
     can exist, since the claim is false in characteristic p. Read this
     pass: Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 3.11.7,
     printed p. 82 of tmp/sources/lfwin-hartshorne-solutions.pdf, text
-    version tmp/sources/lfwin-hartshorne-solutions.md. He writes the
-    successive kernels as H^1(X_n, I^{n-1}) = k[x_0,x_1,x_2]/(f^{n-1}),
-    that is, as the coordinate ring itself rather than a cohomology group,
-    takes the projective limit of those quotients, identifies it with the
-    completion of k[x_0,x_1,x_2] at (f) and calls it "hence infinite
-    dimensional". That is the same conclusion the card records as false in
-    characteristic p, reached without identifying the successive kernels
-    with H^1(Y, O_Y(-nd)). Stack Exchange API
+    version tmp/sources/lfwin-hartshorne-solutions.md. He writes the kernel
+    as the inverse limit of the completions of the graded pieces and calls
+    it "hence infinite dimensional", which is the same step the card
+    records as false in characteristic p, and he does not identify the
+    successive kernels with H^1(Y, O_Y(-nd)) either. Stack Exchange API
     searches for the exercise on site=math and site=mathoverflow
     (/search/advanced with the exercise's own phrases) returned nothing;
     the only Stack Exchange item the earlier pass found, question 4667761
@@ -80,26 +74,29 @@ audit:
     this pass: the printed exercise on printed p. 281, and Exercise II.9.6
     which it invokes. Not checked: nothing new; the card's own
     characteristic-p counterexample was not re-derived in this pass.
-- event: solution-reviewed
+- event: source-checked
   by: claude
   date: 2026-11-16
   note: >-
-    Repairs on the reader's report of this batch. Step s6's reduction is
-    rewritten: a general exponent is written m = p^b m' with p not dividing
-    m', the freshman's dream gives u^m = (1 + s^{2p^b}/t^{p^b})^{m'}, and
-    the coefficient comparison is now made at s^{2p^b}, where the term
-    m' t^{-p^b} has m' nonzero in k; the comparison at s^{2p^b} against
-    t^{-2p^b}k[t^{-1}] is a contradiction. The earlier step excluded only
-    the powers m = p^a and then asserted the general case, which its
-    displayed identity does not give. Step s5 now says why the chain
-    K = K_1 > K_2 > ... is a chain of k-subspaces: K_r is the image of
-    H^1(Xhat, Ihat^r) under the logarithm. Corrected on the audit trail:
-    the 2026-11-11 note's description of the reduction, the 2026-11-16
-    note's description of Yang's argument, and the remark's citation of
-    Kim, which now names its text version. Checked against the book:
-    III.11.7 on printed p. 281, Exercise II.9.6. Not checked: nothing new
-    in the characteristic-p example beyond the rewritten exponent, which
-    was recalculated rather than machine-checked.
+    Second pass on the reader's report of this batch. The mathematics of
+    steps s5 and s6 was re-derived and stands: with b_j = 0 for 0 < j < 2q
+    the coefficient of s^{2q} in B u^m is b_{2q} t^{-2q} + m' t^{-q}, and
+    m' is nonzero in k because p does not divide m', so the comparison is a
+    contradiction. No change is made to the proof. Restored, as the report
+    asks, the two event descriptions the previous pass had rewritten in
+    place: the note of 2026-11-11 reads again as written, without a
+    2026-11-16 judgement spliced into it and without its reference to "the
+    event of 2026-11-16 below", and the note of 2026-11-16 again carries the
+    description of Yang's argument that was written on that date. The
+    corrections those passages now lack are made here: the reduction to the
+    exponents m = p^a recorded in the earlier note excludes nothing, as the
+    later note says, and Yang writes the successive kernels as
+    k[x_0,x_1,x_2]/(f^{n-1}), takes their projective limit, identifies it
+    with the completion of k[x_0,x_1,x_2] at (f) and calls that "hence
+    infinite dimensional", which is the k-vector-space inference the card
+    records as false in characteristic p. Checked against the book in this
+    pass: III.11.7 on printed p. 281 and Exercise II.9.6. Not checked:
+    nothing new beyond those two re-derivations.
 ---
 
 ::: {.problem}
