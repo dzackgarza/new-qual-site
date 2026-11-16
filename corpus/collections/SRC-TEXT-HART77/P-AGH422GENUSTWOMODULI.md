@@ -116,12 +116,10 @@ audit:
     Hou, printed pp. 4--6 of tmp/sources/ntu-ag2-chapter4.md; and D.
     Gruenewald, Computing Humbert Surfaces, section 2, printed p. 2 of
     tmp/sources/gruenewald-2007-computing-humbert-surfaces.md. Part (a) is on
-    Reiser p. 353 and Hou p. 4, (b) on Reiser p. 353 and Hou p. 5, (c) on
-    Reiser p. 353 and Hou p. 6, (d) on Reiser pp. 353--354 and Hou p. 6, (e) on
+    Reiser p. 352 and Hou p. 4, (b) on Reiser p. 353 and Hou pp. 4--5, (c) on
+    Reiser p. 353 and Hou p. 6, (d) on Reiser p. 354 and Hou p. 6, (e) on
     Reiser p. 354, the single word "Yup!", and on Hou p. 6. Page positions
-    were fixed on the PDFs, by reading the printed folio of each page: the
-    folio 352 of Reiser carries the statement of parts (a)--(d) and the solution
-    begins on folio 353.
+    were fixed on the PDFs, by reading the printed folio of each page.
 
     Two defects of the sources were found while checking them, and are
     recorded in COMPLAINTS.md under this date: Hou's parts (d) and (e) name the
@@ -135,28 +133,63 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Corrected in this same session after a reader's report, which found the
-    first version of this event claiming a step as the card's own that Vakil
-    proves, and three page slips. What the card now has, step by step: s1
-    (Reiser IV.2.2(a), printed p. 353; Hou 2(a), p. 4), s2 (Reiser IV.2.2(b),
-    p. 353, with his p. 353 sentence citing II Ex 7.2), s3 (Reiser p. 353; Hou
-    p. 5, with the normalized chart marked as the card's own), s4 (Reiser
-    p. 353; Hou p. 5), s5 (Hou p. 5), s6 (Reiser IV.2.2(c), p. 353; Hou 2(c),
-    p. 6), s7 (Hou 2(e), p. 6), s8 (Reiser IV.2.2(d), pp. 353--354), s9 (Vakil
-    Proposition 19.5.2, printed pp. 546--547, transcribed), s10 and s11 (Hou
-    2(e), p. 6, and Gruenewald section 2, p. 2). Two errors of the sources are
-    named on the card rather than copied: Reiser's ell(D) = 2 in s2, where the
-    pullback of two sections gives ell(D) >= 2 and the inequality is all the
-    argument uses, and Hou's reading of the group of the action of parts (d) and
-    (e) as S_3, where the action he describes is the Sigma_6 action of the
-    exercise (recorded in COMPLAINTS.md under this date). Both are named in the
-    COMPLAINTS record of this date as well. Checked against the book after the
-    transcription: (a)'s "ramified at exactly 6 points, with ramification index
-    2 at each one" and its uniqueness clause, (b)'s three assertions, (c)'s
-    uniqueness of the normalization, and (d)'s Sigma_6 action as printed. Not
-    checked: the sources' own citations of the book (IV.1.7, II.7.2, I.6.6,
-    IV.1.2) beyond the statements they quote from it, and Vakil's 19.5.4 and
-    19.5.7, whose citations are those of the 2026-11-15 events.
+    The solution is now the transcription of those sources, one step per
+    published argument, each step naming source, numbered part and printed
+    page: s1 (Reiser IV.2.2(a) printed p. 352; Hou 2(a) p. 4), s2 (Reiser
+    IV.2.2(b) p. 353 with II Ex 7.2, and Reiser's p. 352 sentence), s3
+    (Reiser p. 353; Hou pp. 4--5), s4 (Reiser p. 353; Hou p. 5), s5 (Hou
+    p. 5), s6 (Reiser IV.2.2(c) p. 353; Hou 2(c) p. 6), s7 (Hou 2(e) p. 6),
+    s8 (Reiser IV.2.2(d) p. 354, whose device is the cross-ratio), s10 and
+    s11 (Hou 2(e) p. 6; Gruenewald section 2 p. 2). Step s9 is the card's own
+    and is labelled as such, because Reiser's (e) is the word "Yup!", Hou's
+    (e) proves well-definedness and existence but not that a separable
+    degree-two cover of P^1 is determined by its branch divisor, and
+    Gruenewald states the quotient without proof; its statement is Vakil
+    Proposition 19.5.2, printed pp. 546--547, as the remark says. The earlier
+    steps s1--s5 proved (a) and (b) by Riemann-Hurwitz and Riemann-Roch for
+    Vakil's statements; the same two tools now appear where Reiser and Hou use
+    them, and the Vakil page references that were in the steps moved to the
+    remark. Checked against the book after the transcription: (a)'s "ramified
+    at exactly 6 points, with ramification index 2 at each one" and its
+    uniqueness clause, (b)'s three assertions, (c)'s uniqueness of the
+    normalization, and (d)'s Sigma_6 action as printed. Not checked: the
+    sources' own citations of the book (IV.1.7, II.7.2, I.6.6, IV.1.2) beyond
+    the statements they quote from it.
+
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #121 reader's report on this round, and the two events of this date
+    restored. Step #cover-determined-by-branch is a transcription of Vakil's
+    proof of Proposition 19.5.2, and it left out the one sentence of his that
+    makes its display follow: his second chart is
+    Spec k[Z,u]/(((-1)^r prod p_i)Z^2 - u^r f(1/u)), and z is Z multiplied by a
+    square root of (-1)^r prod p_i, printed p. 547. The step now carries both of
+    his displays for that chart, the identity
+    u^r f(1/u) = (-1)^r (prod p_i) prod_i (u - 1/p_i) that makes them one
+    equation, and his parenthetical sentence; the display z^2 = u^r f(1/u) =
+    y^2/x^r does not follow from the equation in Z without it. The rest of the
+    transcription was checked against the printed proof in this pass and stands:
+    the quadratic extension and its involution, the monic y^2 = f(x) with f
+    squarefree, regularity by the Jacobian criterion, the branch points as the
+    roots of f, and the gluing of the two charts with z = +- y/x^{r/2}. The
+    record of this date in COMPLAINTS.md names this step as "s9", which no step
+    of this card carries; it is #cover-determined-by-branch. Where and how the
+    sources were read: Vakil in tmp/sources/vakil-rising-sea-2025-10-21.md,
+    Proposition 19.5.2 with its proof on printed pp. 546--547 and the second
+    chart's display at printed p. 547, the page positions fixed on
+    tmp/sources/vakil-rising-sea-2025-10-21.pdf, whose printed folios are its
+    PDF pages; Reiser in tmp/sources/reiser-hartshorne-solutions-pp351-358.md;
+    Hou in tmp/sources/ntu-ag2-chapter4.md; Gruenewald in
+    tmp/sources/gruenewald-2007-computing-humbert-surfaces.md; and the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, IV.2.2 on printed p. 304.
+    The text-version path that stood in the step, and the two that stood in the
+    rendered remark, are out of the rendered page and recorded here. Not read in this
+    pass: Vakil's 19.5.4, 19.5.7 and 19.6.2 beyond the statements the remark
+    makes of them, and Egbert's IV.2.2. The two events of this date above were
+    rewritten in place by 7728785793; they are restored to the text they carried
+    when written, and this event is the correction.
 review: draft
 ---
 
@@ -485,8 +518,7 @@ isomorphism over $\PP^1$, by its branch divisor.
 ::: pf-proof
 
 R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025
-version [@Vak25, Proposition 19.5.2], text version
-`tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--547: for $r$
+version [@Vak25, Proposition 19.5.2], printed pp. 546--547: for $r$
 distinct points $\mathfrak p_1,\ldots,\mathfrak p_r$ of $\PP^1$ with $r$ even
 there is precisely one double cover branched at precisely those points.
 
@@ -504,12 +536,21 @@ branch points are the values of $x$ over which there is one value of $y$, that
 is, the roots of $f$, so $f=\prod_i(x-\mathfrak p_i)$ and $N=r$.
 
 The same argument on the chart $\PP^1\setminus\{0\}=\Spec k[u]$, $u=1/x$, shows
-that any such double cover must be $\Spec k[Z,u]/(Z^2-(u-1/\mathfrak p_1)
-\cdots(u-1/\mathfrak p_r))$, so a double cover of all of $\PP^1$ is obtained by
+that any such double cover must be
+$$
+C''=\Spec k[Z,u]/(Z^2-(u-1/\mathfrak p_1)\cdots(u-1/\mathfrak p_r))
+=\Spec k[Z,u]/(((-1)^r\textstyle\prod_i\mathfrak p_i)Z^2-u^rf(1/u)),
+$$
+the two displays being one equation, because
+$u^rf(1/u)=\prod_i(1-\mathfrak p_iu)=(-1)^r\bigl(\prod_i\mathfrak p_i\bigr)
+\prod_i(u-1/\mathfrak p_i)$. So a double cover of all of $\PP^1$ is obtained by
 gluing the two patches, and in $K(C)$,
 $$
-z^2=u^rf(1/u)=f(x)/x^r=y^2/x^r .
+z^2=u^rf(1/u)=f(x)/x^r=y^2/x^r ,
 $$
+where, as his proof says and the display needs, $z$ is $Z$ multiplied by a
+square root of $(-1)^r\prod_i\mathfrak p_i$: that is what turns the equation in
+$Z$ into this one.
 For $r$ even the two possible values of $z$ are $\pm y/x^{r/2}$, and after
 renaming $z$ by $-z$ if necessary there is a single way to glue. Hence the cover
 of $\PP^1$, and with it the curve up to isomorphism over $\PP^1$, is determined
@@ -617,7 +658,7 @@ Steps [](#canonical-degree-two){.pf-ref} and
 
 
 ::: {.remark title="Published solution"}
-R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
+R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the \v{C}ech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness, and the solution transcribes its proof.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, text version `tmp/sources/hartshorne-solutions-egbert.md`, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
 :::
