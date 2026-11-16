@@ -212,6 +212,34 @@ audit:
     proposition as a stated theorem. No published proof of R contained in R_0
     for the third kind was located, in this pass or in the passes the events
     above record.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repaired on a reader's third report of this date, which is right on both
+    points. First, the three steps that prove the third kind are the card's
+    own and now say so: element-eventually-regular resolves [f:1] by point
+    blowups through Exercise V.5.1, as the printed hint directs, and compares
+    the centres of nu along that resolution with the rings OO_{X_i,x_i};
+    union-contained-in-r proves R_0 contained in R; and
+    r-equals-union-type-three assembles the two inclusions. No source read
+    proves R contained in R_0, so the marking belongs in the steps and not
+    only here.
+
+    Second, the remark loses its Abhyankar material, which is source reading
+    and not mathematics for this card, since no step now uses his statements
+    (QUAL-08, SEC-7): the sentences naming Definition 3, printed p. 335,
+    Lemma 10, printed pp. 334--335, Proposition 3, printed pp. 336--337, and
+    Lemma 12, printed pp. 337--338, and his Theorem 1, printed p. 330, with
+    the (d,r,rho) classification, are removed from the rendered page. What the
+    paper was read for and what it does not supply is here and in the earlier
+    events of this date: his quadratic transform is defined for a regular
+    local domain along a valuation and not for the local ring of a centre on a
+    blowup, and his Lemma 12 needs that identification, so it does not close
+    this exercise. Read in
+    tmp/sources/abhyankar-1956-valuations-centered-local-domain.md, printed
+    page = PDF page plus 320. Not checked: nothing new; the card's steps were
+    not re-derived in this pass.
 ---
 
 ::: {.problem}
@@ -436,6 +464,8 @@ assertion promised there:
 $$
 R_0=R.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -554,6 +584,8 @@ A_N\subseteq A_{N+1}\subseteq A_{N+2}\subseteq\cdots,
 $$
 the same element belongs to $A_i$ for every $i\ge N$, exactly as asserted
 in the hint.
+
+This step is the card's own.
 :::
 
 :::
@@ -583,6 +615,8 @@ The two inclusions give equality.
 In particular, the local union $R_0$ in the third construction is itself a
 valuation ring; no additional dominating valuation ring is needed. This is
 the assertion deferred from Exercise II.4.12 to the present exercise.
+
+This step is the card's own.
 :::
 
 :::
@@ -622,7 +656,5 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, prin
 
 Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, printed p. 114, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
 
-Kind (3) is proved above by the route the printed hint names, with Exercise V.5.1: for $f\in R$ the rational map $[f:1]$ is resolved by point blowups, and comparing the centres of $\nu$ along that resolution with the rings $\OO_{X_i,x_i}$ places $f$ in some $A_i$ (step [](#element-eventually-regular){.pf-ref}); with $R_0\subseteq R$ (step [](#union-contained-in-r){.pf-ref}) this gives $R=R_0$ (step [](#r-equals-union-type-three){.pf-ref}). What is published for the union itself is S. S. Abhyankar, *On the valuations centered in a local domain*, Amer. J. Math. 78 (1956), pp. 321--348: Definition 3, printed p. 335, defines the first quadratic transform of a regular local domain along a valuation; Lemma 10, printed pp. 334--335, proves that transform a regular local domain of dimension at most that of the domain, with the valuation centred at its maximal ideal; Proposition 3, printed pp. 336--337, proves that a quadratic sequence along a prime divisor is finite; and Lemma 12, printed pp. 337--338, proves of a strictly ascending quadratic sequence of two-dimensional regular local domains that its union is the valuation ring of a valuation centred at the successive maximal ideals and of $R_i$-dimension zero at every stage (part (1)), and that a valuation with those centres is unique (part (2)). Those statements are made for the quadratic transforms of the local domain along the valuation, as Definition 3 defines them.
-
-His Theorem 1, printed p. 330, sorts a valuation centred in an $n$-dimensional local domain by its $R$-dimension $d$, rational rank $r$ and rank $\rho$, with $d+r\le n$, and a valuation of $R$-dimension $n-1$ is real discrete. That is a classification by $(d,r,\rho)$; the three kinds of Exercise II.4.12 are the book's.
+Kind (3) is proved above by the route the printed hint names, with Exercise V.5.1: for $f\in R$ the rational map $[f:1]$ is resolved by point blowups, and comparing the centres of $\nu$ along that resolution with the rings $\OO_{X_i,x_i}$ places $f$ in some $A_i$ (step [](#element-eventually-regular){.pf-ref}); with $R_0\subseteq R$ (step [](#union-contained-in-r){.pf-ref}) this gives $R=R_0$ (step [](#r-equals-union-type-three){.pf-ref}).
 :::
