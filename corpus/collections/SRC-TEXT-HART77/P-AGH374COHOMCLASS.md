@@ -554,6 +554,32 @@ audit:
     solution and remarks. No source asserting (R) or (B) was added, and no
     other step was changed.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the latest reader's report, on the passage from the chosen point
+    $Q$ in the statement to an arbitrary closed point $P$ in the solution. The
+    preceding repair had proved only nonvanishing of each point class, which
+    does not justify that passage. The solution head now argues independence
+    of the class before using it. This argument is the card's specialization
+    of the diagonal calculation in the proof of Lemma 50.24.4 (tag 0G8J): let
+    $\eta_\Delta$ be the diagonal Gysin class and let $1\otimes\xi_V$ be the
+    $H^0(V,\OO_V)\otimes H^{\dim V}(V,\Omega_V^{\dim V})$ component of its
+    $\OO_V\boxtimes\Omega_V^{\dim V}$ part under Künneth. For each closed point
+    $P$, Lemma 50.23.10 (tag 0G8D) gives
+    $(P,\operatorname{id})^*\eta_\Delta=\gamma^{0,0}_{P/V}(1)$, while pullback
+    through the point leaves only the component $1\otimes\xi_V$; hence
+    $\gamma^{0,0}_{P/V}(1)=\xi_V$ for every $P$. The situation in tag 0G8G is
+    proper smooth and equidimensional and imposes no characteristic-zero
+    hypothesis. Read in this pass: the pages and text versions
+    tmp/sources/stacks-tags/0G8G.md, 0G8D.md and 0G8J.md. Section 50.22's
+    characteristic-zero de Rham cycle-class argument is not used. Checked:
+    the Künneth component is independent of $P$, and the positive-differential
+    and positive-first-cohomology components vanish under $(P,
+    \operatorname{id})^*$. No other paragraph or mathematical input was
+    changed.
+
 ---
 
 ::: {.problem}
@@ -665,6 +691,30 @@ of the $d\log$ class with $\gamma^0(1)$ not being among the statements of the
 tags read; the class-level half of (B) is likewise a statement about $\gamma$,
 which becomes a statement about the trace only through the comparison with the
 trace of III.7 that follows.
+
+The chosen point in (C) is immaterial. This independence argument is a
+specialization of the diagonal calculation in the proof of Lemma 50.24.4 (tag
+0G8J). On a nonsingular projective variety $V$ of dimension $m$, let
+$$
+\eta_\Delta=\gamma^{0,0}_\Delta(1)\in H^m(V\times V,\Omega^m_{V\times V})
+$$
+be the Gysin class of the diagonal, and let $\eta_0$ be its component in
+$H^m(V\times V,\OO_V\boxtimes\Omega_V^m)$. Under Künneth, write the component
+of $\eta_0$ in $H^0(V,\OO_V)\otimes H^m(V,\Omega_V^m)$ as
+$1\otimes\xi_V$. For each closed point $P\in V$, the scheme-theoretic inverse
+image of the diagonal under $(P,\operatorname{id})$ is $P$, so Lemma 50.23.10
+(tag 0G8D) gives
+$$
+(P,\operatorname{id})^*\eta_\Delta=\gamma^{0,0}_{P/V}(1).
+$$
+Pullback through the point kills the components with positive differential
+degree on the first factor and, within $\eta_0$, those with positive
+cohomology degree on the first factor. Hence
+$$
+\gamma^{0,0}_{P/V}(1)=(P^*\otimes\operatorname{id})(\eta_0)=\xi_V.
+$$
+Thus $\gamma^{0,0}_{P/V}(1)$ is independent of $P$, and (C) selects the same
+trace for every choice of $Q$.
 
 The comparison of the Gysin class with the trace of III.7 has two halves. The first is the point. For $P\in X$ the
 classes $\eta(P)$ and $\gamma^{0,0}_{P/X}(1)$ both lie in the one-dimensional
