@@ -213,6 +213,22 @@ audit:
     ker psi = pB", and the primes of his conclusion being those of his B. Not
     checked: no step was re-derived, and no source was read beyond that passage.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on one clause of step uy-homeomorphism-onto-
+    fiber. The sentence naming Cais's slip of notation closed "and is not copied
+    here", which describes how the card was written rather than what the
+    mathematics is (PROSE-11, QUAL-08). The clause is out; the sentence now says
+    that the identity is his slip and that what his argument uses is the
+    prime-level form, which the next sentence proves in the letters of this
+    proof. The erratum itself stands as it was: his $pB$ is an ideal of the total
+    space, while $\psi$ has the localized ring $B\otimes_AA_p$ as its source. No
+    mathematics changes and nothing else on the card moves. Read in this pass:
+    the sentence and the sentence after it; no source was reopened and no step was
+    re-derived.
+
 ---
 
 ::: {.problem}
@@ -333,7 +349,7 @@ $$
 \Spec A,
 $$
 his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ in the steps above, and his $\psi$.
-The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  Cais writes this kernel as $\ker\psi=pB$, $pB$ being an ideal of the total space while $\psi$ has the localized ring $B\otimes_AA_p$ as its source, so that identity is his slip of notation and is not copied here; the prime-level form he then uses, that a prime $\mfq$ of the total space with $\mfq\cap S=\emptyset$ contains $pB$ exactly when $g^{-1}(\mfq)=\mfp$, is what holds, and the next sentence proves it in the letters of this proof.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
+The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  Cais writes this kernel as $\ker\psi=pB$, $pB$ being an ideal of the total space while $\psi$ has the localized ring $B\otimes_AA_p$ as its source, so that identity is his slip of notation; what his argument uses is the prime-level form, that a prime $\mfq$ of the total space with $\mfq\cap S=\emptyset$ contains $pB$ exactly when $g^{-1}(\mfq)=\mfp$, which holds, and which the next sentence proves in the letters of this proof.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
 Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
