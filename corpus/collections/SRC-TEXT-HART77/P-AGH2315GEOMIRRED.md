@@ -69,7 +69,7 @@ audit:
     not transcribed.
 - event: source-corrected
   by: claude
-  date: 2026-11-17
+  date: 2026-11-16
   note: >-
     Reader's report on issue #121, third pass. The repair of the 2026-11-16
     note's three defects was applied but never committed, so it is committed
@@ -131,6 +131,58 @@ audit:
     not changed, and the statements of 10.39.19, 10.30.5, 10.43.4, 10.42.4,
     10.43.7, 10.44.2 and 10.25.1, which were read as statements in their tag
     files at the pages given and not transcribed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fourth pass. One step is repaired and two
+    record defects are corrected; the step repair is stated here so that a
+    record of the commit's own day carries it.
+    (1) Step purely-inseparable-reducedness-tests gave the implications of
+    Algebra, Lemma 10.44.4 (tag 030V) the wrong reason. It said that a reduced
+    ring stays reduced after a base change to a larger field containing the
+    last one as a subfield, which is false, and the card's own step
+    integral-not-geom-reduced refutes it: over k = F_p(u) the field
+    S = k[x]/(x^p - u) is reduced, while k^{1/p} tensor_k S is
+    k^{1/p}[x]/((x - u^{1/p})^p), which is not. What the four implications
+    use is the other direction. For k inside L inside K the map
+    L tensor_k S -> K tensor_k S is injective because K is flat over the
+    field L, so the smaller field's tensor is a subring of the larger one's
+    and is reduced with it; the step now says that, names the larger field
+    each implication runs from, and keeps the counterexample to the upward
+    direction. The lemma's own "it is clear" is read that way, and nothing
+    else in the step, in parts (a) and (b), or in part (c) changed.
+    (2) The event above was written and committed on 2026-11-16, in
+    4ace5f19b8 (committer date 2026-11-16 07:30:21), and a record carries the
+    day of the commit that lands it: its date field said 2026-11-17, a day
+    that had not happened, and it says 2026-11-16 now. Its text stands. The
+    same correction is made in the four other events of that date on the
+    three other cards of the round.
+    (3) The event above says that the COMPLAINTS.md edits of that pass "were
+    carried into commit 493cf6e98d, which is another chat's". That commit
+    carries none of them: `git show 493cf6e98d -- COMPLAINTS.md` is the
+    V.3.6, V.3.7, V.4.3, V.4.4(b) and V.5.8(b) paragraphs only. They entered
+    through 89d13d01e14 (2026-11-16 07:13:27), whose COMPLAINTS diff carries
+    the II.3.15 header, the Cais paragraph, the duplicated sentence of the
+    II.2.15(c) entry and the I.7.6(a) sentence of the I.7.7(b) correction.
+    The final report of the round repeated 493cf6e98d; the commit is
+    89d13d01e14. Not checked in this pass: the mathematics of the rest of the
+    card, which the reader accepted, and part (c)'s three examples, which
+    were not changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fifth pass: the in-place rewrite of the
+    2026-11-16 solution-written event. Commit 4ace5f19 deleted the words
+    "Read against the book:" from that event's sentence "printed page; each
+    page was read in that PDF. Read against the book: Hartshorne II Ex. 3.15
+    on printed p. 93 asks ...". A dated event is a record of its date and is
+    left as it stands; the deleted words are quoted here, and they carried no
+    claim beyond introducing the comparison with Hartshorne that the sentence
+    still makes. Nothing else on the card changes in this pass, and no page
+    was re-read.
+
 ---
 
 ::: {.problem}
@@ -371,10 +423,16 @@ extension of $k$ is separable and the assertion is Algebra, Lemma 10.43.6
 (tag 030U, printed p. 534, `tmp/sources/stacks-tags/030U.md`).
 
 Every finite purely inseparable extension $k'/k$ embeds in $k_p$, and
-$k^{1/p}\subseteq k_p\subseteq\bar k$. The implications
-$(5)\Rightarrow(4)\Rightarrow(3)\Rightarrow(2)$ and $(3)\Rightarrow(1)$ are
-therefore immediate: a reduced ring stays reduced after a base change to a
-larger field containing the last one as a subfield.
+$k^{1/p}\subseteq k_p\subseteq\bar k$. For $k\subseteq L\subseteq K$ among
+these fields the map
+$L\otimes_kS\to K\otimes_kS=K\otimes_L(L\otimes_kS)$ is injective, $K$ being
+flat over the field $L$, so $L\otimes_kS$ is a subring of $K\otimes_kS$, and a
+subring of a reduced ring is reduced. That is what makes
+$(5)\Rightarrow(4)\Rightarrow(3)\Rightarrow(2)$ and $(3)\Rightarrow(1)$
+immediate, the larger field being the one whose tensor is assumed reduced; it
+is not that reducedness survives a base change to a larger field, which is
+false: over $k=\FF_p(u)$ the field $S=k[x]/(x^p-u)$ is reduced, while
+$k^{1/p}\otimes_kS\cong k^{1/p}[x]/((x-u^{1/p})^p)$ is not.
 
 $(1)\Rightarrow(5)$: let $K/k$ be a field extension; $K\otimes_kS$ is to be
 reduced. By Algebra, Lemma 10.43.4 (tag 00I3, printed p. 534,
