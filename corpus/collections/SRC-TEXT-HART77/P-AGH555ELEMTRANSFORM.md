@@ -169,10 +169,10 @@ audit:
     by composing that sequence with the reverse of the other, which is what
     Definition 4.3's remark that the inverse of an elementary transform is one
     supplies; that last composition is the card's step and is stated as such.
-    Lemma 4.6, printed p. 28, is cited on the card and its proof was read on this
-    pass; Proposition 3.8, which the card does not cite, was not looked at. The
-    text version marks only twenty-page blocks, and the printed pages above were
-    read off the paper's own folios in the PDF.
+    Not checked here: the printed pages of Lemma 4.6 and of Proposition 3.8,
+    which the card does not cite, since the text version marks only twenty-page
+    blocks and the folios were read from the PDF for the statements it does cite.
+
 - event: source-corrected
   by: claude
   date: 2026-11-16
@@ -207,6 +207,25 @@ audit:
     No claim of the card's statement changes; the correction is in the step that
     reaches the decomposable surface.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day, repaired here. (i) The source-checked event of
+    this day above had been rewritten in place by e2d674f48d, which a dated
+    record does not allow; it is restored to the text it was introduced with, and
+    what that commit changed is recorded in the event it appended, which stands,
+    including the correction that Lemma 4.6 is cited on the card at printed p. 28
+    and its proof was read. (ii) The rendered remark listed the paper's printed
+    pages as "their printed pages: Proposition 1.2 at p. 3, ... pp. 30--31",
+    which is bookkeeping; the page references of the statements the proof uses
+    now stand only in the steps and in this audit. Read for this pass:
+    Fuentes--Pedreira, printed pp. 26--31, in
+    tmp/sources/projective-theory-ruled-surfaces.md, whose markers are twenty-page
+    blocks of the paper's PDF, and Hartshorne's exercise, printed p. 419, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, whose marker is the PDF
+    page and whose printed page is the marker minus fifteen. Nothing else on the
+    card changed.
 ---
 
 ::: {.problem}
@@ -332,7 +351,7 @@ Steps [](#elementary-transform-and-its-inverse){.pf-ref} and [](#intersection-fo
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.5, printed p. 419. The operation is his Example 5.7.1, and the three printed hints are the three steps of the proof above: the drop $\widetilde D^{\,2}=D^2-1$ for a section through the centre is step [](#intersection-formula){.pf-ref}, the passage to a ruled surface with $e\gg0$ is steps [](#invariant-rises){.pf-ref} and [](#decomposable-reachable){.pf-ref}, and the decomposable case is step [](#from-the-product){.pf-ref}, where the paper's Theorem 3.2 takes the place of the book's (2.12).
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. The decomposability of the surface reached from $X\times\PP^1$ is Theorem 4.12(1); Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf. Their printed pages: Proposition 1.2 at p. 3, Theorem 3.2 at p. 15, Definition 4.3 and Proposition 4.4 at pp. 26--27, Lemma 4.6 at p. 28, and Theorem 4.9 with Corollaries 4.10 and 4.11 and Theorem 4.12 at pp. 30--31. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, is a complete printed proof of the exercise: Corollary 4.11 states that any ruled surface over the curve is obtained from $X\times\PP^1$ by finitely many elementary transformations, and its proof rests on Corollary 4.10 (from a decomposable surface, via Theorem 4.9's $e'=e+1$ and the bound $e\le2g-2$ of Theorem 3.2 for indecomposable surfaces) and on Definition 4.3 and Proposition 4.4 for the operation and its intersection numbers. The decomposability of the surface reached from $X\times\PP^1$ is Theorem 4.12(1); Theorem 4.9 fixes only $\bigwedge^2$ of the normalized sheaf. The one point the statement of Corollary 4.11 leaves to the reader is the passage from one ruled surface to another, the corollary joining each of the two to $X\times\PP^1$; step [](#two-surfaces-joined){.pf-ref} composes the two sequences, using the reversibility that Definition 4.3 states.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.5, printed p. 299, says only "Consequence of my proof of exc V.2.5.a". That is a cross-reference, not a proof.
 
