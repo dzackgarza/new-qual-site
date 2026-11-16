@@ -157,7 +157,21 @@ audit:
   date: 2026-11-13
   note: >-
     The exercise is on printed p. 176 in two parts. (a) is the computed homeomorphism $\Phi(x,y)=(y/\abs{y}, x/\abs{y})$ onto $S^{q-1}\times\RR^p$ together with the straight-line deformation retraction onto $S^{q-1}$, and the homology statement behind it is part (b) of Hatcher's Proposition 2B.1, printed p. 169 with its proof on pp. 169--170. (b) is the contradiction obtained from §2.B Exercise 3, printed p. 176, applied to the collared disks; its degenerate cases $p=0$ and $q=0$ are settled by Invariance of Domain, Theorem 2B.3, printed p. 172, and Corollary 2B.4, printed p. 172. Checked against the book: the printed statement has no hypothesis on the disks, and the collaring step now runs for $p,q\ge1$ with the two degenerate cases separate, so the card reads the exercise as printed. The earlier claim that (b) fails at $p=0$ is withdrawn and the reason is recorded in the audit trail.
----
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 batch. Checked against the book: Exercise 4 of §2.B, printed p. 176, parts (a) and
+    (b) exactly as printed, with no hypothesis on the two disks beyond disjointness. Part (a)
+    is checked by composing the two displayed formulas in both orders; part (b) is the
+    collared-disk reduction into disks proper in $(D^n,S^{n-1})$, then Exercise 3 of §2.B and
+    the generator $[S^{q-1}]$; the cases $p=0$ and $q=0$ are settled by Invariance of Domain,
+    Theorem 2B.3, printed p. 172. Repair: the card carried a second `---` line after its front
+    matter, which the parser leaves at the head of the body and Pandoc renders as a horizontal
+    rule; it is removed. The one Math StackExchange thread on part (b), question 666444, has an
+    accepted answer, 795440, that is a commutative-diagram sketch invoking "problem 3" and
+    "problem 4(a)" and naming a contradiction without the fundamental-class step; it is read
+    and not transcribed. Not claimed: a published solution of Exercise 2.B.4.
 ---
 
 ::: {.problem}
