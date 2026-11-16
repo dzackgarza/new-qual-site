@@ -76,6 +76,26 @@ audit:
     does not use. Checked in the text version
     `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, Lemma (2.7.4) with its proof, and against
     Hatcher (2002), §4.A Exercise 1 on printed p. 426 and Example 4A.3 on printed p. 422.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The statement in the general case now has a published argument, and it is on the card. J. F.
+    Davis and P. Kirk, *Lecture Notes in Algebraic Topology*, Graduate Studies in Mathematics 35,
+    American Mathematical Society 2001, Lemma 6.56 on printed pp. 156--157 and Theorem 6.57 on
+    printed p. 158, prove that free homotopy classes of maps of a based space $Z$ with non-degenerate
+    basepoint into a based space $X$ are the quotient of the based classes by the action of
+    $\pi_1(X,x_0)$, with the step that matters here printed on p. 158: if the forgetful map
+    $\Phi$ carries $[f_0]$ and $[f_1]$ to the same class, then $[u][f_0]=[f_1]$ for some
+    $u\in\pi_1(X,x_0)$. Hatcher's Example 4A.3, printed p. 422, proves the action trivial for an
+    H-space, and a topological group is one, so $[u][f_0]=[f_0]$ and the two maps are based
+    homotopic. The one hypothesis Davis--Kirk add and the exercise does not is non-degeneracy of the
+    basepoint of $Z$, which the card states; the card's own derivation needs no hypothesis on $Z$,
+    and it remains the proof of the exercise as printed. Checked against Hatcher (2002), §4.A
+    Exercise 1 on printed p. 426, Example 4A.3 and Proposition 4A.1 on printed p. 422, and read in
+    the text layer of `tmp/sources/davis-kirk-lecture-notes-algebraic-topology.pdf`, whose running
+    heads give the printed page numbers quoted, the citation being to the book. Nothing in the
+    solution's `pf` block changed.
 ---
 
 ::: {.problem}
@@ -157,8 +177,10 @@ $F: (Z \times I, \{z_0\} \times I) \to (X, x_0)$ is a pointed homotopy between $
 
 :::
 
-*The published instance of this argument.* (tom Dieck, Lemma (2.7.4), printed p. 49.) The source proves exactly this normalisation, for $Z=X=S^1$ with the multiplication of the unit circle: "Let $H:S^1\times I\to S^1$ be a homotopy between pointed maps; then $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ is a pointed homotopy between the same maps", which is the injectivity half of the statement that the map $[S^1,S^1]_0\to[S^1,S^1]$ forgetting the base point is a bijection. The lemma's surjectivity half — that every unbased homotopy class of maps $S^1\to S^1$ contains a pointed map — is a different statement, which the exercise does not ask for: a path $w$ from $1$ to $f(1)^{-1}$ gives the homotopy $(x,t)\mapsto f(x)w(t)$ from $f$ to the pointed map $x\mapsto f(x)f(1)^{-1}$. The derivation above is that computation with an arbitrary topological group $X$ in place of the unit circle and an arbitrary pointed space $(Z,z_0)$ in place of the circle, the loop $\gamma(t)=H(z_0,t)$ playing the role of $H(1,t)$. The source proves the case $Z=X=S^1$ only; the statement for arbitrary $Z$ and $X$ has no located published source, and on this card it rests on the derivation above together with Hatcher's H-space form of the same normalisation in Example 4A.3.
+*The published instance of this argument.* (tom Dieck, Lemma (2.7.4), printed p. 49.) The source proves exactly this normalisation, for $Z=X=S^1$ with the multiplication of the unit circle: "Let $H:S^1\times I\to S^1$ be a homotopy between pointed maps; then $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ is a pointed homotopy between the same maps", which is the injectivity half of the statement that the map $[S^1,S^1]_0\to[S^1,S^1]$ forgetting the base point is a bijection. The lemma's surjectivity half — that every unbased homotopy class of maps $S^1\to S^1$ contains a pointed map — is a different statement, which the exercise does not ask for: a path $w$ from $1$ to $f(1)^{-1}$ gives the homotopy $(x,t)\mapsto f(x)w(t)$ from $f$ to the pointed map $x\mapsto f(x)f(1)^{-1}$. The derivation above is that computation with an arbitrary topological group $X$ in place of the unit circle and an arbitrary pointed space $(Z,z_0)$ in place of the circle, the loop $\gamma(t)=H(z_0,t)$ playing the role of $H(1,t)$. The source proves the case $Z=X=S^1$ only. For the statement itself there is a published argument in two published steps, and it carries one hypothesis that the exercise does not: J. F. Davis and P. Kirk, *Lecture Notes in Algebraic Topology* (Graduate Studies in Mathematics 35, American Mathematical Society 2001), Lemma 6.56 on printed pp. 156--157 and Theorem 6.57 on printed p. 158, prove that for a based space $Z$ whose basepoint is non-degenerate and any based space $X$, the unbased homotopy classes $[Z,X]$ are the quotient of the based ones $[Z,X]^0$ by the action of $\pi_1(X,x_0)$, so that two based maps which are freely homotopic satisfy $\Phi[f_0]=\Phi[f_1]$ and therefore $[u][f_0]=[f_1]$ for some $u\in\pi_1(X,x_0)$; Hatcher's Example 4A.3, printed p. 422, proves that the action is trivial when $X$ is an H-space, which a topological group is, so that $[u][f_0]=[f_0]$ and the two maps are based homotopic. The hypothesis is Davis--Kirk's non-degeneracy of the basepoint of $Z$; the exercise as printed assumes nothing of $Z$, and the derivation above is the proof for every based space $(Z,z_0)$, the formula $F(z,t)=H(z,t)\gamma(t)^{-1}$ needing only the continuity of multiplication and of inversion.
 
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Lemma (2.7.4) with its proof, printed p. 49, for $Z=X=S^1$: the normalisation $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ of a homotopy between pointed maps, and the path from $1$ to $f(1)^{-1}$ that makes the forgetful map $[S^1,S^1]_0\to[S^1,S^1]$ surjective as well as injective. Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422, is the H-space form of the same normalisation, with the action defined in Proposition 4A.1 on the same page. The exercise is Exercise 1 of §4.A, printed p. 426, and a topological group is an H-space in the sense of the example.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), Lemma (2.7.4) with its proof, printed p. 49, for $Z=X=S^1$: the normalisation $(x,t)\mapsto H(x,t)\cdot H(1,t)^{-1}$ of a homotopy between pointed maps, and the path from $1$ to $f(1)^{-1}$ that makes the forgetful map $[S^1,S^1]_0\to[S^1,S^1]$ surjective as well as injective. Hatcher, *Algebraic Topology* (2002), Example 4A.3, printed p. 422, is the H-space form of the same normalisation, with the action defined in Proposition 4A.1 on the same page.
+
+J. F. Davis and P. Kirk, *Lecture Notes in Algebraic Topology* (Graduate Studies in Mathematics 35, American Mathematical Society 2001), Lemma 6.56 on printed pp. 156--157 and Theorem 6.57 on printed p. 158, give the statement through the $\pi_1$-action: freely homotopic based maps differ by the action of an element of $\pi_1(X,x_0)$, and free homotopy classes are the quotient of the based ones by that action. With Hatcher's Example 4A.3 (trivial action for an H-space) this makes two freely homotopic based maps into a topological group based homotopic, for a based space $Z$ with non-degenerate basepoint, which is the class of spaces Davis--Kirk work in. The exercise is Exercise 1 of §4.A, printed p. 426, and it assumes nothing of $Z$; the normalisation written out in the solution covers every based space.
 :::
