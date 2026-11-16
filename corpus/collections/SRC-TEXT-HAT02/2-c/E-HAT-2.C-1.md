@@ -86,6 +86,26 @@ audit:
     failed before this batch. Not claimed: a solution in a printed solution set; among
     the retained sets only Poulsen (2.C.2, 2.C.8, 2.C.9), Li (2.C.2, 2.C.4, 2.C.5) and DeMason
     (2.C.2, 2.C.3, 2.C.4, 2.C.9) reach §2.C at all.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader batch. The reader accepted the mathematics and named two defects in the record.
+    (1) The date is wrong wherever it was given: question 3590105 and its accepted answer
+    3590397 were posted **2020-03-22**, not in 2019. Read through the Stack Exchange API on
+    2026-11-16: question `creation_date` 1584866748 and answer `creation_date` 1584866744, both
+    2020-03-22. The card's opening sentence now gives the date; the "(2019)" in the
+    `solution-written` note of 2026-11-08 ("Simplicial map of the circle S1 (2019)") and in the
+    `source-checked` note of even date above is wrong and is struck here rather than rewritten
+    there. The answer 4874176 is dated 2024-03-02 by the same reading. (2) The text above calls
+    3590397 "the published argument", which this batch's own convention elsewhere denies: in
+    §3 an answer of Wofsey's on Math StackExchange is refused as "a user answer rather than a
+    publication", and the 2.B-5 audit does the same. 3590397 is a user answer on Math
+    StackExchange and is cited as the source of the argument, not as a published solution; the
+    body now says so. Checked, unchanged: the descriptions of 3590397 (a lift to the universal
+    cover, $k\ge n\ell$ with $\ell\ge3$) and of 4874176 (fundamental cycle, at least $3n$
+    edges), the exercise as printed on p. 184, and every step of the proof on the card. Not
+    claimed: a published solution of Exercise 2.C.1.
 ---
 
 ::: {.problem}
@@ -93,7 +113,7 @@ What is the minimum number of edges in simplicial complex structures $K$ and $L$
 :::
 
 ::: {.solution}
-Use the argument of the accepted answer, answer 3590397 (2019), to *[Simplicial map of the circle $S^1$](https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1)*. That answer bounds the domain by lifting to the universal cover $\RR\to S^1$: a simplicial map of degree $n$ lifts to a simplicial map of the induced triangulations of $\RR$, an interval spanning $k$ domain vertices is carried onto one spanning $n\ell$ target vertices, so $k\ge n\ell$ with $\ell\ge3$ the number of vertices of the target; hence $3n$ vertices, attained by wrapping a $3n$-gon around a triangle $n$ times. The card states the same lower bound in the fundamental-cycle form of answer 4874176 to the same question, which is what the step below checks; $e(K)$ and $e(L)$ are the numbers of edges, and both simplicial circles are oriented.
+Use the argument of the accepted answer, answer 3590397 (posted 2020-03-22), to *[Simplicial map of the circle $S^1$](https://math.stackexchange.com/questions/3590105/simplicial-map-of-the-circle-s1)*. That answer bounds the domain by lifting to the universal cover $\RR\to S^1$: a simplicial map of degree $n$ lifts to a simplicial map of the induced triangulations of $\RR$, an interval spanning $k$ domain vertices is carried onto one spanning $n\ell$ target vertices, so $k\ge n\ell$ with $\ell\ge3$ the number of vertices of the target; hence $3n$ vertices, attained by wrapping a $3n$-gon around a triangle $n$ times. It is a user answer on Math StackExchange, not a publication, and the bound it gives is the one checked in the step below. Answer 4874176 (posted 2024-03-02) to the same question states the same bound in fundamental-cycle form, which is the form the step takes; $e(K)$ and $e(L)$ are the numbers of edges, and both simplicial circles are oriented.
 
 ::: pf
 
@@ -133,4 +153,6 @@ The minimum is therefore
 $$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
+
+The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`; the two Math StackExchange answers were read through the Stack Exchange API, which carries no text version of a thread.
 :::

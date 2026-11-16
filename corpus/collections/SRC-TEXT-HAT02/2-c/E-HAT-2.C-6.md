@@ -93,6 +93,35 @@ audit:
     on an orientable surface requires. Repair: the card carried a second `---` line after its
     front matter, removed. Sources read for a published solution, and what each lacks, are
     recorded in COMPLAINTS.md item 11. Not claimed: a published solution of Exercise 2.C.6.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader batch. The reader accepted the mathematics and named two weak steps and a
+    citation defect. (1) The step constructing $f$ said to "attach each pair of handles by
+    identical parametrizations", which does not make the antipodal map extend across the pair.
+    It now says what the construction is: if one handle is attached by
+    $\varphi:S^0\times D^1\to\partial M$, its partner is attached by
+    $\alpha\circ\varphi\circ\tau$, the antipodal composite, where $\alpha$ is the involution of
+    the surface built so far and $\tau(\epsilon,s)=(1-\epsilon,s)$ reverses the $S^0$ factor,
+    and the map that is $\alpha$ on the old surface and $(t,s)\mapsto(1-t,s)$ on $D^1\times D^1$
+    then pastes across both handles; the same formula is its own inverse. Checked: at a point
+    $\varphi(\epsilon,s)$ of the attaching region the two definitions agree,
+    $\alpha\varphi(\epsilon,s)=\varphi_2\tau(\epsilon,s)$. (2) The orientation step was informal:
+    it said the extensions across handles "preserve this local orientation-reversing character".
+    It now runs through the local degree. For $p$ on the central sphere outside the attaching
+    regions, $f$ agrees near $p$ with the antipodal map of $S^2$, whose degree and hence local
+    degree is $-1$, so the local degree of $f$ at $p$ is $-1$; a homeomorphism of a connected
+    closed orientable surface induces multiplication by its degree on $H_2$, and its degree is
+    its local degree at any one point because $f^{-1}(f(p))=\{p\}$; hence $f_*=-1$ on $H_2$. The
+    quotient argument from Dugger's nonorientable $T^{\mathrm{anti}}_{2m}/C_2$ is kept as the
+    independent confirmation. (3) The citations now name a text version: Hatcher in
+    `tmp/sources/hatcher-2002-algebraic-topology.md` (Exercise 6, printed p. 184; Example 2C.4,
+    printed p. 181); Dugger has **no** text version in `tmp/sources`, so the card says it was
+    read in the text layer of `tmp/sources/dugger-involutions-surfaces-2016.pdf`, PDF page 12 =
+    printed p. 12 for Proposition 2.8 and the quotient, PDF page 18 = printed p. 18 for
+    Theorem 4.1(a). Checked, unchanged: $\tau(f)=1-0-1=0$. Not claimed: a published solution of
+    Exercise 2.C.6.
 ---
 
 ::: {.problem}
@@ -110,7 +139,7 @@ Define a homeomorphism $f:M_{2m}\to M_{2m}$ by the antipodal map on the central 
 
 ::: pf-proof
 
-Choose the attaching disks in antipodal pairs and attach each pair of handles by identical parametrizations. The antipodal map carries the attaching data of one handle to that of its partner, so it extends across the handles by swapping each pair. The resulting map is a homeomorphism.
+Choose the attaching disks in antipodal pairs and attach each pair of handles antipodally: if the first handle of a pair has attaching map $\varphi:S^0\times D^1\to\partial M$, its partner is attached by $\alpha\circ\varphi\circ\tau$, where $\alpha$ is the antipodal involution of the surface built so far and $\tau(\epsilon,s)=(1-\epsilon,s)$ reverses the $S^0$ factor. The map that is $\alpha$ on that surface and $(t,s)\mapsto(1-t,s)$ on each handle $D^1\times D^1$ then carries the attaching data of a handle to the attaching data of its partner, so it pastes to a continuous self-map; the same formula is its own inverse, and it restricts to $\alpha$ on the old surface. The resulting map is a homeomorphism.
 
 :::
 
@@ -146,7 +175,7 @@ On $H_2(M_{2m};\ZZ)\cong\ZZ$, the map $f_*$ is multiplication by $-1$.
 
 ::: pf-proof
 
-On the central sphere $f$ restricts to the antipodal map of $S^2$, which has degree $(-1)^3=-1$. The extensions across paired handles preserve this local orientation-reversing character, so the homeomorphism is orientation reversing globally and has degree $-1$. Equivalently, Dugger's quotient $T_{2m}^{\mathrm{anti}}/C_2\cong N_{2m+1}$ is nonorientable, giving the same orientation reversal in the published construction.
+Let $p$ be a point of the central sphere outside the attaching regions, so that a neighbourhood of $p$ in the sphere is a neighbourhood of $p$ in $M_{2m}$ and $f$ is the antipodal map there. The antipodal map of $S^2$ is a homeomorphism of degree $-1$, so its local degree at $p$ is $-1$, and hence the local degree of $f$ at $p$ is $-1$ as well. For a homeomorphism of the connected closed orientable surface $M_{2m}$, the induced map on $H_2$ is multiplication by its degree, and its degree is the local degree at any single point, because $f^{-1}(f(p))=\{p\}$. Hence $f_*$ is multiplication by $-1$ on $H_2(M_{2m};\ZZ)$. Equivalently, Dugger's quotient $T_{2m}^{\mathrm{anti}}/C_2\cong N_{2m+1}$ is nonorientable, so the involution is orientation reversing in the published construction as well.
 
 :::
 
@@ -171,4 +200,8 @@ The trace on $H_0$ is $1$ because the surface is connected, step [](#s3){.pf-ref
 :::
 
 This gives the even-genus counterpart of Example 2C.4. Additional symmetric pairs of handles increase the genus by two without introducing fixed points.
+:::
+
+::: {.remark title="Sources"}
+Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the exercise is Exercise 6 of §2.C, printed p. 184, and Example 2C.4, the genus-$3$ case it modifies, is printed p. 181 with the trace computation $\tau(f)=1-0-1$. Dugger, *Involutions on surfaces*, was read in the text layer of `tmp/sources/dugger-involutions-surfaces-2016.pdf`, which has no checked-in text version yet: Proposition 2.8 and the quotient $T_g^{\mathrm{anti}}/C_2\cong N_{g+1}$ on PDF page 12 = printed p. 12, and Theorem 4.1(a) on PDF page 18 = printed p. 18. Dugger works no Lefschetz number and does not treat the exercise; the identification of the involution and the trace computation are the card's own.
 :::
