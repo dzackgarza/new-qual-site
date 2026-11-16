@@ -192,6 +192,63 @@ audit:
     Shafarevich's Theorem 1.15 and Theorem 1.25, as before. Checked against
     the book in this pass: Hartshorne IV Ex. 3.11(b) on printed p. 316,
     unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's third report, and the record of
+    what the passes of this date left out or got wrong. (i) Harris's printed
+    pages are established, and they replace the "not established" of the
+    event of this date that records the second report. Read off the retained
+    PDF tmp/sources/harris-1992-algebraic-geometry-first-course.pdf at PDF
+    pp. 157-160, whose running heads read 142, 143, 144 and 145, so printed
+    p. N is PDF p. N+15 in that copy, the offset Hartshorne's text version
+    also has: Example 11.22 opens on printed p. 143, and the incidence
+    correspondence, Proposition 11.24 and the Veronese paragraph are on
+    printed p. 144. The text version
+    tmp/sources/harris-1992-algebraic-geometry-first-course-pp128-149.md
+    carries one range marker, "PDF pages 145-164", and no folios, which is
+    why the earlier pass recorded no page. The citations of Harris on this
+    card now give those pages. (ii) The quotation at step secant-dim-upper
+    changed Harris's words inside quotation marks: he prints "r will lie on
+    the plane Lambda spanned by C. But then every line through r in Lambda
+    will be a secant line", and the text version renders Lambda as "A". The
+    quote now carries his words, read off printed p. 144, and the remark's
+    paraphrase of the same passage uses Lambda. (iii) Step secant-dim-upper's
+    sentence from the one-dimensional family to the bound 4 is the card's
+    own and now says so; Proposition 11.24 states the bound 2k+1 and the
+    criterion for equality, not a fibre inequality, and what the step now
+    does is apply the equality criterion at k=2. (iv) The sentence "Both
+    texts print the bound as immediate, and Harris's parenthetical is the
+    only reason either gives" is out of the rendered solution: commentary on
+    the sources belongs in neither a solution nor a remark, and the two
+    quotations in that step show what each text prints. (v) One symbol for
+    one object: the solution opens by declaring Sec(X) the closure in P^n of
+    the union of the secant lines, which Harris writes S(X), and steps
+    secants, secant-dim and closed-immersion-b use it; step
+    closed-immersion-b says that Sec(X) is closed, which both the choice of O
+    outside it and the tangent-space argument need, and no longer speaks of
+    "the closure of the secant variety". (vi) The part of (b) with no
+    published proof is the closed immersion into P^4, which step
+    closed-immersion-b proves and marks as the card's own: Egbert's entry
+    4.3.21, printed p. 223, stops at the two bounds, and Harris's Example
+    11.22, printed p. 144, gives the dimension and no projection. The
+    exercise's own parenthetical points to (II, Ex. 7.7), whose part (b),
+    printed p. 170, asks the reader to show that the subsystem of conics
+    spanned by x^2, y^2, z^2, y(x-z) and (x-y)z gives a closed immersion of
+    P^2 into P^4; that is a reference to an exercise, with no printed
+    solution, and not a published proof of this step. The part is named open
+    in the COMPLAINTS record of this date. (vii) The event of this date that
+    ba3057319b added writes "P. Harris"; the author of Algebraic Geometry: A
+    First Course is J. Harris, as every other citation of him on this card
+    has it. (viii) QUAL-11: no event of this card and no record of
+    COMPLAINTS.md was rewritten in this pass; the audit hunks of ba3057319b
+    and 9496081602 add lines only, 8cf37922b8 touches no audit block, and the
+    text above is the correction of the earlier text, which stands as
+    written. Not read in this pass: the printed book itself, any other part
+    of Harris's Lecture 11, and Shafarevich's Theorem 1.15 and Theorem 1.25,
+    as before; the printed exercise IV Ex. 3.11 is unchanged on printed
+    p. 316.
 ---
 
 ::: {.problem}
@@ -210,21 +267,22 @@ Usually one obtains a finite number of double points with transversal tangent pl
 ::: {.solution}
 
 Let $X\subseteq\PP^n$ be nonsingular of dimension $r$.
-Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection, and J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22 and Proposition 11.24, for the secant bound.
-The steps of part (b) that rest on no published argument are the card's own and each says so; the two bounds on $\dim S(X)$ are Harris's and Egbert's.
+Write $\operatorname{Sec}(X)$ for the closure in $\PP^n$ of the union of the secant lines $\overline{PQ}$ of $X$ over pairs of distinct points $P,Q\in X$; it is closed, and Harris writes $S(X)$ for it.
+Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection, and J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, printed pp. 143--144, and Proposition 11.24, printed p. 144, for the secant bound.
+The steps of part (b) that rest on no published argument are the card's own and each says so; the two bounds on $\dim\operatorname{Sec}(X)$ are Harris's and Egbert's.
 
 ::: pf
 
 ::: {.pf-step #secants}
 
-The closure in $\PP^n$ of the union of the secant lines $\overline{PQ}$ of $X$, with $P,Q\in X$ distinct, has dimension at most
+$\operatorname{Sec}(X)$ has dimension at most
 $$
 2r+1.
 $$
 
 ::: pf-proof
 
-J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24: "The variety $\mathcal S(X)\subset\Gr(1,n)$ of secant lines to an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension $2k$. The secant variety $S(X)\subset\PP^n$ is irreducible of dimension at most $2k+1$", with his note "that in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$." His Example 11.22 defines the secant line map
+J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, printed p. 144: "The variety $\mathcal S(X)\subset\Gr(1,n)$ of secant lines to an irreducible $k$-dimensional variety $X\subset\PP^n$ is irreducible of dimension $2k$. The secant variety $S(X)\subset\PP^n$ is irreducible of dimension at most $2k+1$, with equality holding if and only if the general point $p\in\PP^n$ lying on a secant line to $X$ lies on only a finite number of secant lines to $X$", with his note "that in this statement we need only consider points $p$ lying on honest secant lines, that is, secant lines actually spanned by points of $X$." His Example 11.22, printed pp. 143--144, defines the secant line map
 $$
 s\colon X\times X-\Delta\longrightarrow\Gr(1,n),\qquad (p,q)\longmapsto\overline{pq},
 $$
@@ -419,9 +477,9 @@ The secant variety of the Veronese surface has dimension at most $4$.
 
 ::: pf-proof
 
-J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, on $X=\nu_2(\PP^2)\subset\PP^5$: "suppose that $r\in\PP^5$ is a general point lying on a secant line to $X$; we may write the secant line as $\overline{\nu(p),\nu(q)}$ for some pair of points $p,q\in\PP^2$. Now, the line $L=\overline{pq}\subset\PP^2$ is carried, under the Veronese map $\nu$, to a plane conic curve $C\subset X\subset\PP^5$, and since $r\in\overline{\nu(p),\nu(q)}$, $r$ will lie on the plane spanned by $C$. But then every line through $r$ in that plane will be a secant line to $C$, and hence to $X$. In particular, it follows that a general point lying on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. We may deduce from this that the dimension of $S(X)$ is at most $4$."
+J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, printed p. 144, on $X=\nu_2(\PP^2)\subset\PP^5$: "suppose that $r\in\PP^5$ is a general point lying on a secant line to $X$; we may write the secant line as $\overline{\nu(p),\nu(q)}$ for some pair of points $p,q\in\PP^2$. Now, the line $L=\overline{pq}\subset\PP^2$ is carried, under the Veronese map $\nu$, to a plane conic curve $C\subset X\subset\PP^5$, and since $r\in\overline{\nu(p),\nu(q)}$, $r$ will lie on the plane $\Lambda$ spanned by $C$. But then every line through $r$ in $\Lambda$ will be a secant line to $C$, and hence to $X$. In particular, it follows that a general point lying on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. We may deduce from this that the dimension of $S(X)$ is at most $4$."
 
-The deduction he names is the fibre inequality of his Proposition 11.24 at $k=2$: the incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$, and over the general point of $S(X)$ its fibre is the one-dimensional family of secant lines through that point, so $\dim S(X)\le5-1=4$.
+The passage from that family to the number is the card's own, and it is Proposition 11.24's equality criterion at $k=2$: his incidence correspondence $\Sigma=\{(l,p):p\in l\}$ over the variety of secant lines has dimension $2k+1=5$ at $k=2$, so $\dim\operatorname{Sec}(X)\le5$, and equality there would put the general point of $\operatorname{Sec}(X)$ on only finitely many secant lines, which the quoted one-dimensional family excludes; hence $\dim\operatorname{Sec}(X)\le4$.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, entry 4.3.21, printed p. 223, prints the same bound from the same argument: after "Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$" he writes "Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$."
 
@@ -435,11 +493,9 @@ The secant variety has dimension at least $4$.
 
 ::: pf-proof
 
-Harris, Example 11.22, prints it as immediate: "since it is clear on elementary grounds that $S(X)$ cannot have dimension less than $4$ (for example, the cones $\overline{p,S}$ over $S$ with vertex a point $p\in S$ would all have to coincide), we conclude that $\dim(S(X))=4$."
+Harris, Example 11.22, printed p. 144, prints it as immediate: "since it is clear on elementary grounds that $S(X)$ cannot have dimension less than $4$ (for example, the cones $\overline{p,S}$ over $S$ with vertex a point $p\in S$ would all have to coincide), we conclude that $\dim(S(X))=4$."
 
 Egbert, entry 4.3.21, printed p. 223, prints the same bound in one sentence: "On the other hand, the secant variety clearly has dimension at least $4$."
-
-Both texts print the bound as immediate, and Harris's parenthetical is the only reason either gives.
 
 :::
 
@@ -460,7 +516,7 @@ $$
 \qquad\text{and}\qquad
 \dim\operatorname{Sec}(X)\ge4,
 $$
-and both texts state the conclusion in that form: Harris's Example 11.22 closes "we conclude that $\dim(S(X))=4$", and Egbert's entry 4.3.21, printed p. 223, carries the two bounds in one paragraph.
+and both texts state the conclusion in that form: Harris's Example 11.22, printed p. 144, closes "we conclude that $\dim(S(X))=4$", and Egbert's entry 4.3.21, printed p. 223, carries the two bounds in one paragraph.
 
 :::
 
@@ -480,6 +536,10 @@ This step is the card's own.
 
 By step [](#secant-dim){.pf-ref},
 $$
+\dim\operatorname{Sec}(X)=4,
+$$
+and $\operatorname{Sec}(X)$, being a closure, is a closed subset of the irreducible $\PP^5$ of dimension $5$, so
+$$
 \operatorname{Sec}(X)
 \subsetneq
 \PP^5.
@@ -488,10 +548,7 @@ Choose
 $$
 O\in\PP^5\setminus\operatorname{Sec}(X).
 $$
-The closure of the secant variety contains the embedded tangent spaces of
-the smooth surface $X$: every tangent direction is a limit of secant
-directions, and the projective tangent plane is the union of its tangent
-lines through the point.
+Every secant line of $X$ lies in $\operatorname{Sec}(X)$, and so does every embedded tangent space of the smooth surface $X$: every tangent direction is a limit of secant directions, and the projective tangent plane is the union of its tangent lines through the point.
 Thus $O$ lies on neither a secant line nor an embedded tangent plane of $X$.
 
 The criterion of step [](#corollary){.pf-ref} needs exactly that $O$ lie on no secant line and in no embedded tangent space, and both hold here; since $X$ is projective, projection from $O$ is therefore a closed immersion
@@ -516,12 +573,12 @@ Steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} pro
 :::
 
 ::: {.remark title="Published solution"}
-Part (a) is completed from two printed texts. The secant bound $\dim S(X)\le2r+1$ is J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, which follows from the incidence correspondence over the variety of secant lines that closes his Example 11.22, the same example giving the dimension $2k$ of that variety. The rest is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136, correctly in the tangent case.
+Part (a) is completed from two printed texts. The secant bound $\dim S(X)\le2r+1$ is J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Proposition 11.24, printed p. 144, which follows from the incidence correspondence over the variety of secant lines that closes his Example 11.22, printed pp. 143--144, the same example giving the dimension $2k$ of that variety. The rest is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136: Theorem 2.25, printed p. 134, states it, the lemma on isomorphic embeddings and Corollary 2.7 on the projection are printed on pp. 134--135, and the count that produces the centre is on pp. 135--136, correctly in the tangent case.
 
 His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of triples $(a,b,c)$ of $\PP^N\times X\times X$ with $a,b,c$ collinear, and for $b=c$ the three points $a,b,b$ lie on a line for every $a$, so $\Gamma$ contains $\PP^N\times\Delta_X$ and its image $U_1=\varphi(\Gamma)$ is the whole of $\PP^N$, of dimension $N>2n+1$; the printed bound $\dim U_1\le\dim\Gamma=2n+1$ is then false of the set he identifies with $U_1$, and it bounds the ambient space rather than the locus of centres. The centres are the image of the part of $\Gamma$ with $b\ne c$, which the printed passage neither separates from the diagonal nor bounds. That bound is Harris's Proposition 11.24, whose incidence correspondence lies over the variety of secant lines; the count in step [](#secants){.pf-ref} is a second one, the card's own, over the complement of the diagonal in $X\times X$.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
-Harris, Lecture 11, Example 11.22, takes the same route for the Veronese surface and carries it to the dimension: the plane spanned by $C$ contains $r$, every line through $r$ in that plane is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $S(X)$ with vertex a point of it would all coincide. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
+Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$, since otherwise the cones over $S(X)$ with vertex a point of it would all coincide. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
 The clause for a general point of a secant line is what both texts give; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} use.
 :::
