@@ -68,8 +68,14 @@ audit:
     ruling for a ruled surface", asks exactly V.2.1 and has no answer: the page
     carries only Mohan's comment that a nonconstant map between curves of genus
     above one is an isomorphism by Hurwitz, with pointers to work of Ohm and
-    Deveney. No complete published argument for V.2.1 was located; steps s2 to s5
-    remain the card's own and were checked against the book in the note above.
+    Deveney. Chao Li's Columbia notes "Enriques classification of complex
+    algebraic surfaces" were also read: their Theorem 7 and its proof show that
+    every minimal model of C x P^1 for an irrational C is geometrically ruled
+    over C, which recovers the base from a minimal model but never states or
+    proves that C itself is determined by the birational class of X, so it is not
+    an argument for this exercise either. No complete published argument for
+    V.2.1 was located; steps s2 to s5 remain the card's own and were checked
+    against the book in the note above.
 ---
 
 ::: {.problem}

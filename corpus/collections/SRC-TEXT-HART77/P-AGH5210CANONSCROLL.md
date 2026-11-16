@@ -82,8 +82,12 @@ audit:
     returned two papers on canonical models lying on scrolls, arXiv:1502.07556 and
     arXiv:1803.10899, both of which begin with a trigonal curve and study its
     canonical model rather than constructing one, so neither supplies the
-    conclusion. No complete published argument located; steps s1 to s5 remain the
-    card's.
+    conclusion. Hannah Markwig and Angelina Zheng, "Trigonal and embedded
+    tropical curves of low genus" (arXiv:2602.02257), read in its introduction,
+    states that a trigonal curve of genus g and Maroni invariant n has class
+    3E_n + ((g+3n+2)/2)F_n in the Hirzebruch surface, which again begins with the
+    curve and so is not the existence construction of this exercise. No complete
+    published argument located; steps s1 to s5 remain the card's.
 ---
 
 ::: {.problem}
