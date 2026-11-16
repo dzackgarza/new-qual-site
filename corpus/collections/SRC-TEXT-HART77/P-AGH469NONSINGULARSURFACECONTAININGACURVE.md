@@ -183,6 +183,43 @@ audit:
     this event. Checked in this pass: this card's audit trail in git, commit by
     commit. Not checked: nothing of the proof was re-derived in this pass, and
     the pages named were not re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A complete published proof of IV.6.9 was located for this batch, and the
+    printed exercise was read again with it: Hartshorne, Algebraic Geometry
+    (1977), IV Ex. 6.9, printed p. 355, starred, with the hint asking for the
+    blowup of X and Bertini applied to I_Y tensor pi^*O(m). Read at its cited
+    places in the text version
+    tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md:
+    Notation 3.2 and Theorem 3.3 on printed p. 3 (Theorem 3.3 being quoted
+    there as [KA79, Theorem 7]), Theorem 1.1 on printed p. 2 with its proof on
+    printed pp. 4-5, and Proposition 3.4 on printed p. 3. Checked against the
+    book: the exercise's X is an irreducible nonsingular curve in P^3, which is
+    Dan-Kaur's Z in P^{2n+1} with n = 1 and codimension n+1 = 2, and their
+    "smooth hypersurface of degree d" is the exercise's "nonsingular surface F
+    of degree m". The hypothesis of Theorem 3.3 is verified on the card from
+    their Notation 3.2. Not checked: Kleiman-Altman's own Theorem 7, which is
+    not in tmp/sources and was read only in Dan-Kaur's restatement, so the
+    characteristic hypotheses of the original theorem are not verified here;
+    Dan-Kaur state none.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The solution is now the transcription of the published proof, one step per
+    step, each naming its source, numbered statement and printed page: steps
+    hypothesis and transcribed-theorem from Dan-Kaur Notation 3.2 and Theorem
+    3.3, printed p. 3, and step conclusion from the second clause of Theorem
+    3.3 at the same page. Step regularity is the card's and says so: it is the
+    standard consequence of Serre vanishing, Theorem III.5.2, printed p. 228,
+    that makes the "moreover" clause apply to every m >> 0 rather than to one
+    degree. What left the card is its former nine-step proof, the printed hint
+    carried out through the blowup of X, Exercise II.7.14, Bertini and the
+    normality argument for pi_*O(-E) = I_X; it remains readable at commit
+    574af010f7, and with it the Ratliff-Rush correction that its step s6
+    needed. Nothing in the problem statement changes.
 ---
 
 ::: {.problem}
@@ -193,349 +230,105 @@ Hint: Let $\pi: \tilde{\PP} \to \PP^3$ be the blowing-up of $X$ and let $Y=\pi^{
 Apply Bertini's theorem to the projective embedding of $\tilde{\PP}$ corresponding to $\mci_Y \tensor \pi^* \OO_{\PP^3}(m)$.
 :::
 
+
 ::: {.solution}
-Let
-$$
-\pi:\widetilde{\PP^3}=\Bl_X\PP^3\longrightarrow\PP^3
-$$
-be the blowup of $X$, and write
-$$
-E=\pi^{-1}(X)
-$$
-for its exceptional divisor.
+Put $n=1$, so that $\PP^3=\PP^{2n+1}$ and the curve $X=Z$ is a nonsingular subscheme of $\PP^3$ of codimension $n+1=2$.
+The proof below is the one in A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, version of 20 October 2018, text version `tmp/sources/dan-kaur-2016-semi-regular-varieties-variational-hodge.md`, and each step names the numbered statement and the printed page of that paper that it transcribes.
+Their Theorem 3.3 is a restatement of S. L. Kleiman and A. B. Altman, *Bertini's theorem for hypersurface sections containing a subscheme*, Communications in Algebra 7 (1979), Theorem 7, which is cited on the card as the paper proves it.
+The one step that is not Dan--Kaur's is step [](#regularity){.pf-ref}, and it says so.
 
 ::: pf
 
-::: {.pf-step #s1}
-
-The threefold $\widetilde{\PP^3}$ is nonsingular, and
+::: {.pf-step #hypothesis}
+For $Z=X$ the hypothesis of Dan--Kaur's Theorem 3.3 holds: for every $e>0$ with $Z_e\ne\emptyset$ one has
 $$
-E\cong\PP_X(\mci_X/\mci_X^2).
-$$
-For every $P\in X$, the fibre
-$$
-E_P=\pi^{-1}(P)
-$$
-is a projective line and
-$$
-\OO_{\widetilde{\PP^3}}(-E)\restrict_{E_P}\cong\OO_{\PP^1}(1).
+\dim Z_e+e<3=2n+1.
 $$
 
 ::: pf-proof
 
-The center $X$ is nonsingular of codimension $2$ in the nonsingular threefold $\PP^3$.
-The blowup theorem for a nonsingular center, Theorem II.8.24 (printed p. 186), gives
+Dan--Kaur, Notation 3.2, printed p. 3, sets
 $$
-\widetilde{\PP^3}\text{ nonsingular},
-\qquad
-E\cong\PP_X(\mci_X/\mci_X^2),
+Z_e\coloneqq\{z\in Z:\dim\Omega^1_{Z,z}=e\}
 $$
-which is (a) and (b) of that theorem, and in (c) it identifies the normal sheaf $\mathcal N_{E/\widetilde{\PP^3}}=\OO_{\widetilde{\PP^3}}(E)\restrict_E$ with $\OO_{\PP(\mci_X/\mci_X^2)}(-1)$. Hence
+for a projective subscheme $Z\subseteq\PP^{2n+1}$.
+The curve $X$ is nonsingular, so its sheaf of differentials is locally free of rank $1$ and $\dim\Omega^1_{X,x}=1$ at every point $x$: $Z_1=X$ and $Z_e=\emptyset$ for every $e\ne1$.
+The only nonempty one is therefore $Z_1=X$, of dimension $1$, and
 $$
-\OO_{\widetilde{\PP^3}}(-E)\restrict_E\cong\OO_E(1).
+\dim Z_1+1=2<3,
 $$
-Here $E$ is the subscheme $Y'$ of the theorem: by II.7.13(a) (printed p. 164) the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$ is invertible, and it is $\OO_{\widetilde{\PP^3}}(-E)$, so $E$ is the subscheme that ideal defines.
-Since the conormal bundle $\mci_X/\mci_X^2$ has rank $2$, every fibre of $E\to X$ is $\PP^1$, and restriction of the last identity gives the claimed $\OO_{\PP^1}(1)$.
+as required. Step [](#transcribed-theorem){.pf-ref} states the theorem this hypothesis feeds.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
-
-For every sufficiently large integer $m$, the invertible sheaf
-$$
-L_m
-=
-\OO_{\widetilde{\PP^3}}(-E)
-\tensor
-\pi^*\OO_{\PP^3}(m)
-$$
-is very ample.
+::: {.pf-step #transcribed-theorem}
+Dan--Kaur, Theorem 3.3, printed p. 3, quoted: if for any $e>0$ such that $Z_e\ne\emptyset$ the number $\dim Z_e+e$ is less than $2n+1$, then there exists a smooth hypersurface in $\PP^{2n+1}$ containing $Z$; moreover, if $Z$ is $d-1$-regular in the sense of Castelnuovo--Mumford, then there exists a smooth hypersurface of degree $d$ in $\PP^{2n+1}$ containing $Z$.
 
 ::: pf-proof
 
-By the Rees-algebra construction,
-$$
-\widetilde{\PP^3}
-=
-\Proj_{\PP^3}\bigoplus_{q\ge0}\mci_X^q,
-$$
-and its relative twisting sheaf is
-$$
-\OO_{\widetilde{\PP^3}}(1)
-\cong
-\mci_X\OO_{\widetilde{\PP^3}}
-\cong
-\OO_{\widetilde{\PP^3}}(-E).
-$$
-The identification $\OO_{\widetilde{\PP^3}}(1)=\OO_{\widetilde{\PP^3}}(-E)$ is Proposition II.7.13(a) with its proof (printed p. 164), where the twisting sheaf of the blowup is computed to be the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$.
-Apply Exercise II.7.14 (printed pp. 171--172) to this relative $\Proj$, with the ample sheaf $\OO_{\PP^3}(1)$ on the base and $\mathcal L=\OO_{\PP^3}(1)$.
-Its last part says that
-$$
-\OO_{\widetilde{\PP^3}}(1)
-\tensor
-\pi^*\OO_{\PP^3}(m)
-$$
-is very ample on $\widetilde{\PP^3}$ relative to $\Spec k$ for every $m\gg0$, the base being a point, that is, very ample.
-This is exactly $L_m$.
+This is the statement of Dan--Kaur, Theorem 3.3, printed p. 3, with the attribution there, "$[KA79,\text{ Theorem }7]$", to Kleiman--Altman.
+No hypothesis on the ground field is stated there, and the paper's own context in its §2 is a smooth projective variety over an algebraically closed field.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-Fix such an $m$ and let
-$$
-\iota_m:\widetilde{\PP^3}\hookrightarrow\PP^N
-$$
-be the embedding defined by $L_m$.
-Each exceptional fibre $E_P$ is mapped isomorphically to a line in $\PP^N$.
+::: {.pf-step #regularity}
+$X$ is $m-1$-regular in the sense of Castelnuovo--Mumford for every sufficiently large integer $m$.
+This step is the card's: Dan--Kaur do not state it, and it is a direct consequence of Serre vanishing.
 
 ::: pf-proof
 
-On the fibre $E_P$, the pullback
+By the definition of Castelnuovo--Mumford regularity, $X\subseteq\PP^3$ is $m-1$-regular exactly when
 $$
-\pi^*\OO_{\PP^3}(m)\restrict_{E_P}
+H^i\bigl(\PP^3,\mci_X(m-1-i)\bigr)=0
+\qquad\text{for every }i\ge1 .
 $$
-is trivial.
-Step [](#s1){.pf-ref} therefore gives
+The ideal sheaf $\mci_X$ is coherent on the projective space $\PP^3$, so Serre's vanishing theorem, [[T-COHSVAN|Serre vanishing]] [@Har77, Theorem III.5.2], printed p. 228, gives for each $i\ge1$ an integer $k_i$ with
 $$
-L_m\restrict_{E_P}\cong\OO_{\PP^1}(1).
+H^i\bigl(\PP^3,\mci_X(k)\bigr)=0
+\qquad\text{for every }k\ge k_i .
 $$
-The restriction of a projective embedding remains a closed immersion.
-Its image therefore has degree
+Let
 $$
-\deg L_m\restrict_{E_P}=1,
+m_0\coloneqq\max_{1\le i\le3}\bigl(k_i+i+1\bigr).
 $$
-so it is a line in $\PP^N$.
+For $m\ge m_0$ and $1\le i\le3$ one has $m-1-i\ge k_i$, so all three groups above vanish, and only $i=1,2,3$ can contribute on $\PP^3$.
+Hence $X$ is $m-1$-regular for every $m\ge m_0$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
-
-The hyperplanes in $\PP^N$ containing at least one exceptional fibre form a proper closed subset of $\dualof{(\PP^N)}$.
+::: {.pf-step #conclusion}
+For every $m\gg0$ there is a nonsingular surface $F\subseteq\PP^3$ of degree $m$ containing $X$.
+$$
+\boxed{\text{for each }m\gg0\text{ there is a nonsingular degree-}m\text{ surface }F\supseteq X}
+$$
 
 ::: pf-proof
 
-Consider the incidence variety
-$$
-\mathcal B
-=
-\{(P,H)\in X\times\dualof{(\PP^N)}:
-\iota_m(E_P)\subseteq H\}.
-$$
-By step [](#s3){.pf-ref}, $\iota_m(E_P)$ is a line.
-Hyperplanes containing a fixed line form a projective subspace of codimension $2$ in $\dualof{(\PP^N)}$.
-Consequently
-$$
-\dim\mathcal B
-=
-1+(N-2)
-=
-N-1.
-$$
-The projection
-$$
-\mathcal B\longrightarrow\dualof{(\PP^N)}
-$$
-is proper because $X$ is projective, so its image is closed.
-Its dimension is at most $N-1$, strictly smaller than the dimension $N$ of the dual projective space.
-Hence the image is proper.
+Fix $m\ge m_0$ of step [](#regularity){.pf-ref}.
+Step [](#hypothesis){.pf-ref} verifies the hypothesis of the first clause of Dan--Kaur's Theorem 3.3 for $Z=X$, and step [](#regularity){.pf-ref} supplies the hypothesis of its second clause, $X$ being $m-1$-regular.
+Applying the second clause of Theorem 3.3, printed p. 3, to $Z=X$, $d=m$ and $n=1$ gives a smooth hypersurface $F\subseteq\PP^3$ of degree $m$ containing $X$.
+A hypersurface of $\PP^3$ is a surface, and Dan--Kaur's "smooth" is nonsingularity, so $F$ is a nonsingular surface of degree $m$ containing $X$, which is the assertion of the exercise.
 
 :::
 
 :::
 
-::: {.pf-step #s5}
-
-There is a hyperplane $H\subseteq\PP^N$ such that
-$$
-\widetilde F
-=
-\iota_m^{-1}(H)
-$$
-is nonsingular and $H$ contains no exceptional fibre.
-
-::: pf-proof
-
-By step [](#s1){.pf-ref}, $\widetilde{\PP^3}$ is nonsingular.
-Bertini's hyperplane theorem [[T-BERTINI]] says that the hyperplanes whose inverse image under $\iota_m$ is nonsingular form a dense open subset of $\dualof{(\PP^N)}$.
-
-Step [](#s4){.pf-ref} says that the hyperplanes containing an exceptional fibre form a proper closed subset.
-The complement of that subset is therefore another nonempty open subset.
-Since $\dualof{(\PP^N)}$ is irreducible, the two open sets meet.
-Choose $H$ in their intersection.
-
 :::
 
 :::
 
-::: {.pf-step #s6}
+::: {.remark title="Published solution"}
+A. Dan and I. Kaur, *Semi-regular varieties and variational Hodge conjecture*, prove the assertion of this exercise twice over, and the stronger statement beside it.
+Theorem 3.3, printed p. 3, is the existence statement transcribed above, restating Kleiman--Altman's Theorem 7.
+Theorem 1.1, printed p. 2, adds that the containing hypersurface can be chosen so that $Z$ is semi-regular in it, and the first sentence of its proof, printed p. 4, reads "The existence of a smooth hypersurface in $\PP^{2n+1}$ containing $Z$ for $d\gg0$ follows from Theorem 3.3", which is this exercise in their notation.
+The rest of that proof, printed pp. 4--5, proves the surjectivity that semi-regularity asks for, through Proposition 3.4, printed p. 3, and Serre vanishing.
 
-The divisor $\widetilde F$ of step [](#s5){.pf-ref} is the strict transform of a degree-$m$ surface
-$$
-F\subseteq\PP^3
-$$
-containing $X$.
-
-::: pf-proof
-
-The line bundle of $\widetilde F$ is
-$$
-L_m
-=
-\OO_{\widetilde{\PP^3}}(-E)
-\tensor
-\pi^*\OO_{\PP^3}(m).
-$$
-The isomorphism $\OO(-E)\cong\OO(1)$ is Proposition II.7.13(a) with its proof (printed p. 164), where the twisting sheaf of the blowup $\widetilde{\PP^3}=\Proj\bigoplus_{q\ge0}\mci_X^q$ is identified with the inverse image ideal $\pi^{-1}\mci_X\cdot\OO$, which is invertible. The pushforward is a separate matter, and it does not follow from generation in degree one: the degree-one piece of a Rees algebra is $\mci_X$ by construction, whereas $\pi_*\OO(1)=\bigcup_{k\ge0}(\mci_X^{k+1}:\mci_X^k)$, the Ratliff--Rush closure, which can be strictly larger. With $\mci=(x^4,x^3y,xy^3,y^4)$ in $k[x,y]$, for instance, $x^2y^2\mci\subseteq\mci^2$, so $x^2y^2$ lies in the closure and not in $\mci$. What holds here is the following.
-
-The variety $\PP^3$ is normal. By Stein factorization (Corollary III.11.5, printed p. 280) the birational projective morphism $\pi$ factors as $g\circ\pi'$ with $\pi'$ projective with connected fibres and $g$ finite; $g$ is birational, and a finite birational morphism onto a normal variety is an isomorphism, its coordinate rings being finite extensions of a normal domain inside its fraction field. Hence
-$$
-\pi_*\OO_{\widetilde{\PP^3}}=\OO_{\PP^3}.
-$$
-Since $E$ is effective, $\OO(-E)\subseteq\OO_{\widetilde{\PP^3}}$, so $\pi_*\OO(-E)$ is an ideal sheaf $\mci'\subseteq\OO_{\PP^3}$. For $f\in\mci_X$ one has $\pi^*f\in\pi^{-1}\mci_X\cdot\OO=\OO(-E)$, so $\mci_X\subseteq\mci'$. Conversely, for $f\in\mci'$ the pullback $\pi^*f$ lies in $\OO(-E)$, hence vanishes on $E$, whose image under $\pi$ is all of $X$; so $f$ vanishes on $X$ set-theoretically and $f\in\sqrt{\mci_X}$. The curve $X$ is nonsingular, so $\mci_X$ is radical, and $\mci'\subseteq\mci_X$. Therefore
-$$
-\pi_*\OO(-E)=\mci_X .
-$$
-The projection formula therefore identifies
-$$
-H^0(\widetilde{\PP^3},L_m)
-\cong
-H^0(\PP^3,\mci_X(m)).
-$$
-Thus the section cutting out $\widetilde F$ corresponds to a degree-$m$ homogeneous form vanishing on $X$.
-Let $F$ be its zero surface in $\PP^3$.
-Then
-$$
-X\subseteq F,
-$$
-and away from $E$ the blowup is an isomorphism.
-Step [](#s5){.pf-ref} says that $\widetilde F$ contains no exceptional fibre. A component of $\widetilde F$ contained in $E$ would be a divisor in $E=\PP(\mci_X/\mci_X^2)$, and such a divisor meets the fibre $E_P$ over every $P$ in a nonempty open subset of $X$, so $\widetilde F$ would contain those fibres. Hence $\widetilde F$ has no component contained in $E$ either.
-It is therefore the closure of
-$$
-\pi^{-1}(F\setminus X).
-$$
-Hence it is the strict transform of $F$.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-The surface $F$ is nonsingular away from $X$.
-
-::: pf-proof
-
-The morphism
-$$
-\pi:\widetilde{\PP^3}\setminus E
-\xrightarrow{\sim}
-\PP^3\setminus X
-$$
-is an isomorphism.
-By step [](#s6){.pf-ref} it identifies
-$$
-\widetilde F\setminus E
-$$
-with
-$$
-F\setminus X.
-$$
-Step [](#s5){.pf-ref} says that $\widetilde F$ is nonsingular, so the open subset $F\setminus X$ is nonsingular.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
-The surface $F$ is nonsingular at every point of $X$.
-
-::: pf-proof
-
-Fix a point $P\in X$.
-Because $X$ is a nonsingular codimension-two subvariety of the nonsingular threefold $\PP^3$, choose regular local parameters
-$$
-x,y,z
-$$
-at $P$ such that
-$$
-\mci_{X,P}=(x,y).
-$$
-Let $f$ be a local equation for $F$.
-Since $X\subseteq F$, write
-$$
-f=ax+by
-$$
-for some
-$$
-a,b\in\OO_{\PP^3,P}.
-$$
-
-On the blowup of the ideal $(x,y)$, the exceptional fibre over $P$ is the projective line of normal directions $[u:v]$.
-The strict transform of $F$ meets this fibre in the zero locus of the linear form
-$$
-a(P)u+b(P)v.
-$$
-If
-$$
-a(P)=b(P)=0,
-$$
-that linear form vanishes identically, so the whole exceptional fibre $E_P$ is contained in $\widetilde F$.
-Step [](#s5){.pf-ref} excludes this.
-Therefore
-$$
-(a(P),b(P))\ne(0,0).
-$$
-
-Modulo the maximal ideal at $P$, differentiation of
-$$
-f=ax+by
-$$
-gives
-$$
-df(P)=a(P)\,dx+b(P)\,dy\ne0.
-$$
-By the Jacobian criterion, the hypersurface $F$ is nonsingular at $P$.
-Since $P$ was arbitrary, $F$ is nonsingular along all of $X$.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
-For every sufficiently large $m$, there is a nonsingular degree-$m$ surface containing $X$.
-
-::: pf-proof
-
-Step [](#s2){.pf-ref} gives one threshold beyond which $L_m$ is very ample for every $m$.
-For each such $m$, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} construct a degree-$m$ surface $F$ containing $X$.
-Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove that $F$ is nonsingular both away from and along $X$.
-Therefore
-$$
-\boxed{
-\text{for every }m\gg0\text{ there is a nonsingular degree-}m
-\text{ surface }F\supseteq X.
-}
-$$
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s9){.pf-ref} is exactly the required assertion.
-
-:::
-
-:::
-
+The exercise's own hint asks for the blowup $\pi:\widetilde{\PP}\to\PP^3$ of $X$ and Bertini applied to the embedding given by $\mci_Y\tensor\pi^*\OO_{\PP^3}(m)$.
+Dan--Kaur's route is the other classical one, a Bertini theorem for hypersurfaces containing a fixed subscheme, and it does not pass through the blowup.
 :::
