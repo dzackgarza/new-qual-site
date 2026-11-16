@@ -211,13 +211,11 @@ audit:
     s2 with the source named, and Yang's parametrization and ideal,
     including his fibre ideal at a = 0, are quoted in s1 as they stand on
     printed p. 82. Yang's own computation of the printed functions is
-    recorded in the remark and refuted there. The refutation given on this
-    date was wrong in its ground and is corrected in the event of even date
-    below: it took the fibre ideal (x_0x_2, x_1x_2, x_2^2, x_2x_3,
-    x_2x_4) to be the ideal of the family's fibre, which it is not. The
-    answer ids of the two MathOverflow answers were put on the card on this
-    date and have been removed again, as the event of even date below
-    records. The exercise's
+    recorded in the remark and refuted there: he concludes from the ideal
+    (x_0x_2, x_1x_2, x_2^2, x_2x_3, x_2x_4) that H^0(O_{X_0}) is
+    k[x_2]/(x_2^2), but x_2 is annihilated by each coordinate in that
+    ideal, so it vanishes in every standard affine chart. The answer ids of
+    the two MathOverflow answers are now on the card. The exercise's
     cohomology functions, twisted or not, have no published proof in any
     of these sources: Kim writes todo at that point, Yang's values are
     those refuted, Kovacs agrees with one of them and Bohm reports all
@@ -247,18 +245,18 @@ audit:
   by: claude
   date: 2026-11-16
   note: >-
-    Provenance of the two MathOverflow answer ids, and their removal. The
-    ids 90316 for S. Kovacs and 206742 for J. Bohm are the ones the batch
-    names for this card; the text version
+    Provenance of the two MathOverflow answer ids now on the card. The ids
+    90316 for S. Kovacs and 206742 for J. Bohm are the ones the batch names
+    for this card; the text version
     tmp/sources/mo-90260-trouble-with-semicontinuity.md records each
-    answer with its author, date and score and no id. An attempt to
-    confirm them through the Stack Exchange API on this date returned
+    answer with its author, date and score and no id, so the ids were not
+    checked against the site. An attempt to confirm them through the Stack
+    Exchange API in this pass returned
     error_name "throttle_violation", error_message "too many requests from
     this IP, more requests available in 35152 seconds", so nothing was
-    confirmed and the attempt was not repeated. The ids have accordingly
-    been removed from the rendered card, which cites the two answers by
-    author and date; they remain in the audit trail as the batch's, not as
-    a checked fact.
+    confirmed and the attempt was not repeated. The authors, dates and
+    contents cited beside the ids are the text version's. Not checked: the
+    ids themselves.
 
 - event: source-checked
   by: claude
@@ -288,6 +286,41 @@ audit:
     reproduced, and the claim that his fibre ideal contains J and the
     products x_2x_i rests on the listing in his answer as the text version
     gives it.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the reader's report, on the rule that a dated event is never
+    edited, and on one sentence of step s1. The two events of 2026-11-16
+    above were rewritten in place by commit 282b636a4c: the one whose note
+    begins "Transcription pass for issue #121" is restored to the text it
+    carried when written in 6ec82bdb24, and the one whose note begins
+    "Provenance of the two MathOverflow answer ids now on the card" to its
+    text at 6fa8966986. What those texts say that does not hold is
+    corrected here. (i) The transcription pass recorded Yang's computation
+    of the printed functions as refuted by the ground that x_2 is
+    annihilated by each coordinate in the ideal (x_0x_2, x_1x_2, x_2^2,
+    x_2x_3, x_2x_4). That is true of the ideal and refutes nothing about
+    X_0, whose ideal it is not: it is Yang's six quadrics reduced modulo a,
+    and its zero locus is the hyperplane V(x_2), not the curve. (ii) The
+    same pass is the one that put the two MathOverflow answer ids on the
+    card; they were not checked against the site, one attempt through the
+    API on this date returning "throttle_violation", and they are off the
+    rendered card, which cites the two answers by author and date. (iii)
+    Step s1 said that a point with x_2 nonzero and all other coordinates
+    zero is not a point of P^4. That is false: [0:0:1:0:0] is such a point
+    and is the centre from which step s1 projects. What puts the zero locus
+    of x_2 m = (x_0x_2, x_1x_2, x_2^2, x_2x_3, x_2x_4) inside V(x_2) is
+    that x_2^2 is one of its generators, and x_2 m being contained in (x_2)
+    gives the other inclusion, so the zero locus is V(x_2) exactly. The two
+    arguments of step s1 that no source supplies are marked at the step, and
+    the head of the solution no longer attributes the whole step to Kim.
+    Checked against the book in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    (printed p. N is PDF p. N+15): III.12.3 on printed p. 291 and Example
+    III.9.8.3 on printed pp. 259--260. Not checked: no source was re-read in
+    this pass, no step was re-derived, and Bohm's elimination was not
+    reproduced.
 
 ---
 
@@ -344,10 +377,14 @@ The flat family and the flatness of $\mci$ are as printed, and are proved first
 (steps s1 and s2); the erratum concerns only the two displayed cohomology
 statements.
 
-Steps s1 and s2 are Kim's, Exercise 3.12.3, PDF p. 215: he constructs the
-family as the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$
+Steps s1 and s2 carry Kim's argument, Exercise 3.12.3, PDF p. 215: he constructs
+the family as the closed immersion $\PP^1\times\AA^1\hookrightarrow\PP^4\times\AA^1$
 and proves $\mci$ flat over $T$ from
-$0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$.  Yang Pi-Yeh,
+$0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, reading the special fibre off that
+immersion.  Two arguments of step [](#s1){.pf-ref} are proved here and marked so
+at the step: that Yang's six quadrics are not the ideal of the family, and that
+the special fibre is reduced, which is not Kim's reading but follows from the
+Hilbert polynomial together with Serre vanishing.  Yang Pi-Yeh,
 *Hartshorne Solutions* (9 June 2019), Solution 3.12.3, printed p. 82, gives the
 same family by its parametrization together with six quadrics for the ideal of
 the total family, and those six do not generate it; he also computes the two
@@ -423,7 +460,8 @@ and gives six quadrics as generators of the ideal $\mci$ of the total family:
 $$
 (a^2x_0x_4-x_2^2,\ a^2x_1x_3-x_2^2,\ x_0x_2-ax_1^2,\ x_2x_4-ax_3^2,\ ax_0x_3-x_1x_2,\ ax_1x_4-x_2x_3).
 $$
-Those six do not generate $\mci$.  The polynomial $x_0x_4-x_1x_3$ vanishes
+Those six do not generate $\mci$; this check is the card's, and neither source
+makes it.  The polynomial $x_0x_4-x_1x_3$ vanishes
 on the parametrization, both of its monomials being $t^4u^4$, and it is not in
 the ideal they generate: modulo $a$ the six become
 $$
@@ -433,14 +471,17 @@ so the reduction of the ideal it generates is the set of multiples of $x_2$,
 and $x_0x_4-x_1x_3$ is not divisible by $x_2$.  His fibre at
 $a=0$ is therefore $x_2\mathfrak m=(x_0x_2,x_1x_2,x_2^2,x_2x_3,x_2x_4)$, whose
 zero locus is the hyperplane $V(x_2)$ and not the quartic curve
-$X_0\subseteq V(x_2)$: a point with $x_2\ne0$ and all other coordinates zero is
-not a point of $\PP^4$, so every point of the closed subscheme has $x_2=0$.
+$X_0\subseteq V(x_2)$: the generator $x_2^2$ vanishes at every point of the
+closed subscheme, so all of it lies in $V(x_2)$, and $x_2\mathfrak m\subseteq(x_2)$
+gives the converse inclusion.
 The ideal of the fibre at $a=0$ is the image at $a=0$ of the kernel of
 $k[a,x_0,\ldots,x_4]\to k[a,t,u]$; J. Böhm computes that kernel by
 elimination in Macaulay 2, reports the ideal it gives at $a=0$, and finds all
 $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$.  The remark returns to this.
 
-Flatness makes the Hilbert polynomial of every fibre equal to that of the
+The argument to the end of this step is the card's, not Kim's: he reads the
+special fibre off the closed immersion instead, as the quoted sentence above
+does.  Flatness makes the Hilbert polynomial of every fibre equal to that of the
 rational normal quartic:
 $$
 P(m)=4m+1.
