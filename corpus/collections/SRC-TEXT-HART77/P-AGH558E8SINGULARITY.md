@@ -601,7 +601,7 @@ $$
 E_1\cap E_2.
 $$
 
-The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the same set,
+The chart $y_2=1$ with $x_2^2+z_2y_1^2+y_1z^3$ is item (ii) of the NTU set,
 PDF p. 21. The other two charts are Yang Pi-Yeh's, solution 5.5.8(b), printed
 p. 114: the piece $z_2=1$ reads $x_2^2+z+y_2^3z^2$, which is $x_2^2+z+z^2y_2^3$
 above, and the piece $x_2=1$ reads $1+z_2y_2^3x_1^2+z_2^3x_1$, which is the
@@ -708,7 +708,7 @@ $$
 E_1-E_4-E_3.
 $$
 
-This step is the card's own. Item (iv) of the same set, PDF p. 21, records
+This step is the card's own. Item (iv) of the NTU set, PDF p. 21, records
 the strict transform as nonsingular and gives no chart of it.
 :::
 
@@ -780,7 +780,7 @@ The point $Z=0$ is where the strict transform of $E_3$ meets $E_5$, the
 point $V=0$ is where the strict transform of $E_2$ meets $E_5$, and the
 third point is a free point of $E_5$.
 
-Item (v) of the same set, PDF p. 21, lists the three singular points of
+Item (v) of the NTU set, PDF p. 21, lists the three singular points of
 the strict transform. Which exceptional curve each of them lies on, and so
 the incidences $E_3-E_5$ and $E_2-E_5$ below, is this card's own reading of
 the charts.
@@ -824,7 +824,7 @@ Each ordinary double point is resolved by its single blowup, and the
 three points are distinct. Therefore after these three blowups the strict
 transform is nonsingular.
 
-These are items (vi)--(viii) of the same set, PDF p. 21, item (vii) being
+These are items (vi)--(viii) of the NTU set, PDF p. 21, item (vii) being
 recorded there as "similar to (vi)". The chart checks of the three blows,
 and the resolution of each ordinary double point by a single blowup, are
 this card's own.
