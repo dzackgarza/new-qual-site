@@ -59,6 +59,38 @@ audit:
     codim(Z,X) in place of dim Z, the two displays prove (c) exactly as the card
     states it, so the source's argument stands and only its typography is
     recorded. The empty case and (e) are as the earlier note says.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Transcription pass for issue #121, on parts (c) and (d). Read at the
+    cited places: Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, text
+    version tmp/sources/hartshorne-solutions-kim.md, and A. Shichijo,
+    Exercise 3.20, printed pp. 17--18, text version
+    tmp/sources/shitijyou-ch2-section3.md. Checked against the book in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N
+    is PDF p. N+15: II.3.20(c) and (d) as printed on p. 95, for an
+    arbitrary closed subset, with no nonemptiness hypothesis. What the
+    transcription changed. Step codim-z-equals-dim-op is now Shichijo's
+    argument for irreducible closed Z, a maximal chain of primes below the
+    prime of Z localized at that prime, with a chain in A localized being
+    maximal so that its length is the dimension of the local ring, together
+    with Kim's computation of the same codimension inside an affine chart;
+    the earlier text asserted the correspondence of chains to chains of
+    primes without the localization. Step codim-y-equals-inf-dim-op now
+    carries Kim's reduction to irreducible Y before Shichijo's argument.
+    Step dimz-plus-codimz-equals-dimx is now Shichijo's use of Chapter I
+    Theorem 1.8(b), dim A over p plus height p equals dim A, and Kim's
+    version of it, with the card's trdeg form kept beside them. Step
+    dimy-plus-codimy-equals-dimx now carries Kim's sentence that dim Y is
+    the maximum over components and codim(Y,X) the minimum over them, and
+    spells the reduction out. Both sources take an infimum over the
+    irreducible closed subsets of Y, so neither treats Y empty; that part
+    of the printed statement has no published proof, which the COMPLAINTS
+    record of 2026-11-16 names. Not checked: no source outside the two
+    named was read in this pass, and parts (a), (b), (e) and (f) were not
+    re-derived.
+
 ---
 
 ::: {.problem}
@@ -93,6 +125,8 @@ Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.
 :::
 
 ::: {.solution}
+Parts (c) and (d) below are the published argument, transcribed at the steps that prove them from Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32 of text version `tmp/sources/hartshorne-solutions-kim.md`, and A. Shichijo, Exercise 3.20, printed pp. 17--18 of text version `tmp/sources/shitijyou-ch2-section3.md`; the other parts are the card's own proof, which the same sources agree with.
+
 We use the following standard affine dimension theorem.
 
 If $A$ is a finitely generated integral $k$-algebra with fraction field $K$, then
@@ -256,11 +290,25 @@ $$
 $$
 
 ::: pf-proof
-The point $P$ is the generic point of the irreducible closed subset $Z$.  By the definition of codimension in a scheme, chains of irreducible closed subsets from $Z$ up to an irreducible component of $X$ correspond in an affine neighborhood of $P$ to chains of prime ideals contained in the prime representing $P$.  Their supremal length is the height of that prime, namely
+Shichijo, Exercise 3.20(c), printed p. 18: take $Z=V(\mathfrak p_Z)\subseteq\Spec A$ for an irreducible closed $Z$ in an affine chart $X=\Spec A$, and a maximal chain of primes
 $$
-\dim\mathcal O_{X,P}.
+(0)\subsetneq\cdots\subsetneq\mathfrak p_Z,
 $$
-Since $X$ is integral it has one irreducible component, so this is exactly $\codim(Z,X)$.
+whose length is $\codim(Z,X)$ by the order-reversing correspondence of Exercise I.1.7 between irreducible closed subsets and prime ideals.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
+$$
+(0)_{\mathfrak p_Z}\subsetneq\cdots\subsetneq(\mathfrak p_Z)_{\mathfrak p_Z},
+$$
+and a chain of that length in $A_{\mathfrak p_Z}$ is maximal, so its length is
+$$
+\dim\mathcal O_{X,\mathfrak p_Z}.
+$$
+He writes $\zeta_Z$ for the generic point of an irreducible closed $Z$ and concludes
+$$
+\codim(Z,X)=\dim\mathcal O_{X,\zeta_Z}
+$$
+for every irreducible closed $Z$, the map $Z\mapsto\zeta_Z$ being a bijection onto the points of $X$.
+
+Kim, Exercise 2.3.20(c), PDF p. 32, proves the same identity for irreducible closed $Z$ by computing with an affine chart and the prime $\mathfrak p$ of $Z$: he has $\dim Z=\dim A/\mathfrak p$ and $\codim(Z,X)=\dim X\times_Z K(Z)=\dim\Spec(A\times_ZK(Z))=\dim A_{\mathfrak p}$.
 :::
 
 :::
@@ -275,7 +323,7 @@ $$
 $$
 
 ::: pf-proof
-For nonempty $Y$ this is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing it at the generic point, which counts the height of the prime $\mathfrak p_Y$ of $Y$, that is
+The reduction to irreducible $Y$ is Kim's, Exercise 2.3.20(c), PDF p. 32: "Since $\operatorname{codim}(Y,X)$ is defined as the infimum of codimension of irreducible closed subsets, it suffices to show this for $Y$ irreducible closed."  The irreducible case is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing it at the generic point, which counts the height of the prime $\mathfrak p_Y$ of $Y$ --- the computation of step [](#codim-z-equals-dim-op){.pf-ref} --- and with it the codimension of $Y$, that is
 $$
 \codim(Z,X)=\dim\mathcal O_{X,\zeta_Z};
 $$
@@ -310,26 +358,23 @@ $$
 $$
 
 ::: pf-proof
-Give $Z$ its reduced induced structure.  It is an integral scheme of finite type over $k$, with function field
+Shichijo, Exercise 3.20(d), printed p. 18: with $X=\Spec A$ affine and $\mathfrak p$ the prime of the irreducible closed $Z$, Chapter I Theorem 1.8(b) gives
 $$
-K(Z)=\kappa(\zeta).
+\dim\frac{A}{\mathfrak p}+\operatorname{height}\mathfrak p=\dim A,
 $$
-By step [](#dimx-equals-trdeg){.pf-ref} applied to $Z$,
+that is, since $\dim A/\mathfrak p=\dim Z$ and $\operatorname{height}\mathfrak p=\codim(Z,X)$ by step [](#codim-z-equals-dim-op){.pf-ref},
 $$
-\dim Z=\operatorname{trdeg}_k\kappa(\zeta).
-$$
-By step [](#codim-z-equals-dim-op){.pf-ref},
-$$
-\codim(Z,X)=\dim\mathcal O_{X,\zeta}.
+\dim Z+\codim(Z,X)=\dim X .
 $$
 
-Choose an affine neighborhood $\Spec A$ of $\zeta$, corresponding to a prime $\mathfrak p\subseteq A$.  The affine dimension formula gives
+Kim, Exercise 2.3.20(d), PDF p. 32, proves it the same way: "in (c) we have computed $\dim Y=\dim A/\mathfrak p$ and $\operatorname{codim}(Y,X)=\operatorname{height}\mathfrak p$. Then $\dim X=\dim A$."
+
+The card's form of the same statement, by the affine dimension formula of the head, is step [](#dimx-equals-trdeg){.pf-ref} applied to $Z$ together with the identity of step [](#codim-z-equals-dim-op){.pf-ref}:
 $$
-\dim A_{\mathfrak p}
-+\operatorname{trdeg}_k\kappa(\mathfrak p)
-=\operatorname{trdeg}_kK(X).
+\dim Z=\operatorname{trdeg}_k\kappa(\zeta),\qquad
+\codim(Z,X)=\dim\mathcal O_{X,\zeta},
 $$
-Using step [](#dimx-equals-trdeg){.pf-ref} for $X$ converts this exactly into the displayed identity.
+which add up to $\operatorname{trdeg}_kK(X)=\dim X$ because $\dim A_{\mathfrak p}+\operatorname{trdeg}_k\kappa(\mathfrak p)=\operatorname{trdeg}_kK(X)$.
 :::
 
 :::
@@ -342,20 +387,21 @@ $$
 $$
 
 ::: pf-proof
-Let
+Kim, Exercise 2.3.20(d), PDF p. 32: "Since $\dim Y$ is the maximum among the dimensions of the irreducible components and $\operatorname{codim}(Y,X)$ is the minimum among the codimensions of the irreducible components, it suffices to show the formula for irreducible $Y$" --- which is step [](#dimz-plus-codimz-equals-dimx){.pf-ref}.
+
+The two facts of that reduction, spelled out: for the irreducible components
 $$
 Y_1,\ldots,Y_m
 $$
-be the irreducible components of $Y$.  Then
+of a nonempty $Y$ one has
 $$
-\dim Y=\max_i\dim Y_i.
+\dim Y=\max_i\dim Y_i,
 $$
-
-By step [](#dimz-plus-codimz-equals-dimx){.pf-ref},
+and by step [](#dimz-plus-codimz-equals-dimx){.pf-ref},
 $$
 \codim(Y_i,X)=\dim X-\dim Y_i.
 $$
-Any irreducible closed subset of $Y$ is contained in some $Y_i$, and its dimension is at most $\dim Y_i$, so step [](#dimz-plus-codimz-equals-dimx){.pf-ref} shows that its codimension is at least $\codim(Y_i,X)$.  Hence
+Any irreducible closed subset of $Y$ is contained in some $Y_i$, and its dimension is at most $\dim Y_i$, so its codimension is at least $\codim(Y_i,X)$; hence
 $$
 \codim(Y,X)
 =
