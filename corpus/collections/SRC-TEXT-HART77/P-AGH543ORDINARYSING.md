@@ -193,6 +193,62 @@ audit:
     rendered remarks are also reduced to mathematics and citation: the sentences
     about which book was read, and which steps were supplied where, leave them
     (QUAL-08), and the remark opener takes the attribute form of STYLE-01.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's findings on the second round of this batch, repaired here; every
+    event above is left as written. The step tangent-directions, which the
+    earlier pass on this date added, is withdrawn. No source states it: (5) of
+    Fulton, printed p. 89, is the isomorphism of neighbourhoods under
+    (x,z) -> (x,xz) and the factorisation of F(X,XZ,1), not a statement about
+    tangent directions at all. Its proof was also false in one case: it said
+    that the direction X = 0 occurs in the tangent cone exactly when F_m(1,Y')
+    vanishes identically, which never happens for F_m nonzero, the condition
+    being that X divides F_m, that is deg F_m(1,Y') < m. No new proof of that
+    fact is written here. Part (b) of step excellent-position returns to the
+    card's own argument, marked in the step as the card's: the count
+    mu_P(C') = n is (6) applied to C' and to C as Fulton directs, legitimate
+    by (4) on printed p. 88, and the passage from the count to ordinariness is
+    read off the model (5) with C' in the role of the curve, so the n
+    multiplicities I(P_i, C cap L) = 1 become the n exponents of the tangent
+    cone of C' at P. Rud's Propositions 20 and 21 are no longer credited with
+    that passage, which they do not carry; they prove the sum instead.
+    Two further arguments are corrected and marked in their steps as the
+    card's own. In step termination, the accounting that turns Fulton's two
+    alternatives into the single quantity N + g* is the card's own and now
+    says so, and its closing sentence was off by one, now at most
+    N + g*(C) + 1 terms, that is at most N + g*(C) steps. In step
+    positive-characteristic, the paragraph that keeps Appendix A's preliminary
+    transformations from breaking the termination is the card's own, the
+    appendix saying only "we can proceed as before", and it was false. It said
+    that N' + g* still drops at a preliminary step. There the centre
+    has multiplicity m = 0 or 1, so it is not a bad point, and (7) gives
+    sum I(P_i, C' cap L) = m <= 1, so no P_i is a multiple point; hence
+    N' = N, g*(C') = g*(C) by (8) with r = m and binom(m,2) = 0, and N' + g*
+    is unchanged. The paragraph now says that, and takes the termination from
+    it. The remark's sentence calling Rud's route the same as this one is
+    corrected, since three of his arguments do not hold as printed and the
+    proof uses none of the three. Read for this pass: Fulton, Algebraic
+    Curves (2008), §7.4 (1) to (8), Lemma 1 and Theorem 2, printed pp. 88 to
+    91, and Appendix A, printed p. 113, in the text version
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md, whose
+    markers name PDF page ranges only, so the printed pages were located in
+    the retained PDF: PDF p. 96 is printed 88, PDF p. 97 carries (5) and (6)
+    and is printed 89, PDF p. 98 carries (7), (8) and Lemma 1 and is printed
+    90, and PDF p. 99 carries Theorem 2 and is printed 91, so printed page =
+    PDF page - 8; and Rud, Resolution of singularities on projective curves
+    (2015), Propositions 19 to 23, Remark 23, Theorem 13 and §7.3, in
+    tmp/sources/rud-2015-resolution-singularities-curves.md, whose printed
+    page is its PDF page minus one: PDF p. 26 carries Proposition 19 and is
+    printed 25, PDF p. 27 carries Propositions 20 and 21 and is printed 26,
+    PDF p. 28 carries Proposition 22, Proposition 23 and Remark 23 and is
+    printed 27, and PDF p. 29 carries Theorem 13 and is printed 28. Not read
+    here: Rud's sections 6.1 to 6.3 and 7, and his Propositions 24 to 26,
+    beyond the statements named above; Fulton's
+    Problem 4.16 and Problem 5.26, which the Lemma 1 step cites; and the
+    printed copies of either book, only the text versions beside the retained
+    PDFs.
 ---
 
 ::: {.problem}
@@ -275,23 +331,6 @@ all of whose terms have degree at least $n-r'-r''$ at $P=[0:0:1]$, the term $i=n
 
 :::
 
-::: {.pf-step #tangent-directions}
-Let $D$ be a plane curve germ at a point $Q$ of multiplicity $m$, and let $\widetilde D$ be its strict transform under the blowup of $Q$, with exceptional curve $E$. Then $\widetilde D$ meets $E$ in one point for each tangent direction of $D$ at $Q$; at the point belonging to a linear form $\ell$ of the tangent cone, the intersection multiplicity $I(q,\widetilde D\cap E)$ is the exponent of $\ell$, and the multiplicity of $\widetilde D$ at $q$ is at most that exponent. In particular $Q$ is an ordinary $m$-fold point of $D$ exactly when $\widetilde D$ meets $E$ in $m$ distinct points, transversally.
-
-::: pf-proof
-This is the local model (5) of Fulton, §7.4, printed p. 89, in which the blowup of $Q$ appears as $(x,z)\mapsto(x,xz)$. Put $Q=[0:0:1]$ and let
-$$
-F(X,Y,1)=F_m(X,Y)+F_{m+1}(X,Y)+\cdots
-$$
-be the equation of $D$ at $Q$ decomposed into forms. In the chart $Y=XY'$ of the blowup, $F(X,XY',1)X^{-m}=F_m(1,Y')+XF_{m+1}(1,Y')+\cdots$, and this is the equation of the strict transform $\widetilde D$. Its intersection with the exceptional curve $X=0$ is given by $F_m(1,Y')=0$, whose roots are the tangent directions of $D$ at $Q$ other than the direction $X=0$, and that direction occurs in the tangent cone exactly when $F_m(1,Y')$ vanishes identically. If $Y'=a$ is a root of multiplicity $e$, then $(Y-aX)^e$ is the exact power of the linear form $Y-aX$ in $F_m$. Writing $Y'=a+Z'$ and expanding,
-$$
-F(X,X(a+Z'),1)X^{-m}=F_m(1,a+Z')+XF_{m+1}(1,a+Z')+\cdots,
-$$
-and $F_m(1,a+Z')=cZ'^{e}+\cdots$ with $c\ne0$, so the restriction of the equation of $\widetilde D$ to the exceptional curve $X=0$ is $cZ'^{e}+\cdots$ and the intersection multiplicity $I((0,a),\widetilde D\cap E)$ is $e$. The multiplicity of $\widetilde D$ at $(0,a)$ is at most that number, as it is at most the intersection number with a smooth curve through the point that meets $\widetilde D$ properly there, which is the inequality $m_{P_i}(C')\le I(P_i,C'\cap L)$ of (6), printed p. 89. A cusp shows that the inequality can be strict: $Y^2-X^3=0$ has tangent cone $Y^2$, and its strict transform $Z^2-X=0$ in the chart $Y=XZ$ is smooth at the origin while meeting $X=0$ there with multiplicity $2$. The exponents of the tangent cone add up to $m$, and a linear form occurs with exponent $1$ exactly when the corresponding point of $\widetilde D\cap E$ has intersection multiplicity $1$, that is, when $\widetilde D$ is transverse to $E$ there.
-:::
-
-:::
-
 ::: {.pf-step #excellent-position}
 Call $C$ in *good position* if no exceptional line is tangent to $C$ at a fundamental point, and in *excellent position* if in addition $L$ meets $C$ transversally in $n$ distinct non-fundamental points and $L'$ and $L''$ each meet $C$ transversally in $n-r$ distinct non-fundamental points. If $C$ is in excellent position, then $r'=r''=0$, so $\deg C'=2n-r$ and
 $$
@@ -315,7 +354,7 @@ $$
 $$
 and which gives $\mu_{P_i}(C')\le I(P_i,C'\cap L)$; applied with $P'$ and with $P''$ in the role of the centre, (6) says that the analogous sum equals $r'=0$ and $r''=0$, so there is no non-fundamental point on $C'\cap L'$ or on $C'\cap L''$.
 
-Part (b) is the case in which the reading is not immediate, and Fulton obtains it by "applying (6) to the curves $C'$ and $(C')'=C$", which is legitimate because $C'$ is in good position by (4), printed p. 88. What that application gives is the count $\mu_P(C')=n$, and the ordinariness is the statement of step [](#tangent-directions){.pf-ref} with $D=C'$ at $Q=P$ and $\widetilde D=C$: the tangent directions of $C'$ at $P$ correspond to the points of $C\cap L$, which are $n$ distinct points at which $L$ meets $C$ transversally, so the intersection multiplicity $I(q,C\cap L)$ is $1$ at each of them and the matching tangent factor of $C'$ occurs with exponent $1$. All $n$ tangent directions are therefore simple, and $P$ is an ordinary $n$-fold point. The same reading with $P'$ and with $P''$ in the role of the centre gives $\mu_{P'}(C')=\mu_{P''}(C')=n-r$, ordinary there too; Rüd, *Resolution of singularities on projective curves* (2015), Propositions 20 and 21, printed pp. 26--27, carries out the symmetric applications.
+Part (b) is the case in which the reading is not immediate. Fulton obtains it by "applying (6) to the curves $C'$ and $(C')'=C$", which is legitimate because $C'$ is in good position by (4), printed p. 88; what that application gives is the count $\mu_P(C')=n$, the left-hand side of (6) being $\sum_i I(P_i,C\cap L)$ over the $n$ points $P_i$ of $C\cap L$, at each of which $L$ meets $C$ transversally and the intersection multiplicity is therefore $1$. The step from that count to the ordinariness of the three fundamental images is the card's own, and reads the local model (5) of printed p. 89 with $C'$ in the role of the curve there: the points of $C\cap L$ are the points in which the strict transform of $C'$ under the blowup of $P$ meets the exceptional curve $L$, and they correspond one to one to the tangent directions of $C'$ at $P$, the exponent of a direction in the tangent cone of $C'$ at $P$ being the intersection multiplicity of $C$ with $L$ at the corresponding point. Those $n$ exponents are $n$ positive integers with sum $\mu_P(C')=n$, so all are $1$; the tangent cone of $C'$ at $P$ is therefore a product of $n$ distinct lines, and $P$ is an ordinary $n$-fold point. The same reading with $P'$ and with $P''$ in the role of the centre gives $\mu_{P'}(C')=\mu_{P''}(C')=n-r$, ordinary there too.
 :::
 
 :::
@@ -391,7 +430,7 @@ Let $N$ be the number of bad points of the current curve. Then $N+g^*$ drops by 
 ::: pf-proof
 Fulton, Theorem 2 of §7.4, printed p. 91, centres each transformation at a non-ordinary multiple point and observes that "at each step, either $C'$ has one less non-ordinary multiple point than $C$, or $g^*(C')=g^*(C)-\sum_i\frac{r_i(r_i-1)}{2}<g^*(C)$", whence "we reach the desired curve after at most $N+g^*(C)$ steps", $N$ being the number of non-ordinary multiple points of $C$.
 
-The two alternatives give that bound through the one quantity $N+g^*$. By step [](#excellent-position){.pf-ref} the bad points of $C'$ are the bad points of $C$ other than the centre $P$, which keep their multiplicity and their ordinariness, together with those of the $P_i$ on $C'\cap L$ that are bad; so
+The two alternatives are Fulton's, and the accounting that turns them into a statement about the one quantity $N+g^*$ is the card's own. By step [](#excellent-position){.pf-ref} the bad points of $C'$ are the bad points of $C$ other than the centre $P$, which keep their multiplicity and their ordinariness, together with those of the $P_i$ on $C'\cap L$ that are bad; so
 $$
 N'\le N-1+b,
 $$
@@ -403,7 +442,7 @@ and step [](#genus-invariant-drops){.pf-ref} gives $g^*(C')=g^*(C)-\sum_i\binom{
 $$
 N'+g^*(C')\le N+g^*(C)-1.
 $$
-A sequence of nonnegative integers dropping by at least $1$ at each step has at most $N+g^*(C)$ terms, and $g^*(C')$ is nonnegative by step [](#genus-invariant-nonnegative){.pf-ref}.
+A sequence of nonnegative integers dropping by at least $1$ at each step has at most $N+g^*(C)+1$ terms, that is at most $N+g^*(C)$ steps, and $g^*(C')$ is nonnegative by step [](#genus-invariant-nonnegative){.pf-ref}.
 :::
 
 :::
@@ -420,7 +459,7 @@ n'-r\equiv 2n-m-r\equiv n-m \pmod p,
 $$
 and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$; Fulton then proceeds as in Theorem 2.
 
-These preliminary steps do not spoil the termination. A transformation centred at a point of multiplicity $0$ or $1$ is a step to which (7) and (8) apply once the curve is put in excellent position at that centre, which is possible because the centre is not the terrible point; so by step [](#genus-invariant-drops){.pf-ref} it does not raise $g^*$, and it creates no bad point except possibly among the $P_i$ on $C'\cap L$, where $N'+g^*$ still drops by the count of step [](#termination){.pf-ref} as long as $b\le\sum_i\binom{r_i}{2}$, which holds whether or not the centre is a bad point. Between two applications of that step at most one preliminary step is needed, since a curve has at most one terrible point, so the interleaved sequence has no infinite run.
+These preliminary steps do not spoil the termination, and the argument that they do not is the card's own, the appendix saying only "we can proceed as before". A transformation centred at a point $Q$ of multiplicity $m$ equal to $0$ or $1$ is a step to which (7) and (8) apply once the curve is put in excellent position at that centre, which is possible because the centre is not the terrible point. Then $\deg C'=2n-m$, the three new points have multiplicities $n$, $n-m$, $n-m$ and are ordinary, and by (7) the points $P_i$ of $C'\cap L$ satisfy $\sum_i I(P_i,C'\cap L)=m\le1$, so each $r_i=\mu_{P_i}(C')$ is at most $1$. Step [](#genus-invariant-drops){.pf-ref} therefore gives $g^*(C')=g^*(C)$, since $\sum_i\binom{r_i}{2}=0$ and the identity it proves holds with $r=m$ and $\binom{m}{2}=0$; no bad point is created, the points $P_i$ having multiplicity at most $1$; and $Q$, of multiplicity at most $1$, was not a bad point, so $N'=N$ as well. A preliminary step thus leaves $N+g^*$ unchanged, while each step of Theorem 2 lowers it by at least $1$; a curve has at most one terrible point and the transformation makes that one not terrible for $F'$, so at most one preliminary step is needed between two applications of the terminating step, and the interleaved sequence ends with a curve that has no bad point after at most $N+g^*(C)$ terminating steps.
 
 The appendix's last sentence reads "one of the choices $m=0,1$ will insure that $p$ doesn't divide $n-r$", with $n-r$ where the congruence requires $n'-r$; the divisibility it needs is that of $n'-r$, and $n-r$ is divisible by $p$ by the first paragraph.
 :::
@@ -439,7 +478,7 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, prin
 
 The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113.
 
-Thomas Rüd, *Resolution of singularities on projective curves* (2015), proves the same theorem by the same route: Proposition 19, printed p. 25, for excellent position; Propositions 20 and 21, printed pp. 26--27, for the multiple points of a transform; Proposition 22, printed p. 27, for $g^*$; Theorem 13, printed p. 28, for the finite sequence; and §7.3, printed p. 40, for a field of positive characteristic. Three of its arguments do not hold as printed. Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
+Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, printed p. 25, states excellent position; Propositions 20 and 21, printed pp. 26--27, prove the sum $\sum_i I(P_i,C'\cap L)=n$ of (6) and not the ordinariness of the three fundamental points, so that passage stays the card's own; Proposition 22, printed p. 27, introduces $g^*$; Theorem 13, printed p. 28, gives the finite sequence; and §7.3, printed p. 40, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
 :::
 
 ::: {.remark title="Other published treatments"}
