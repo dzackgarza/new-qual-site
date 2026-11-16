@@ -61,9 +61,11 @@ audit:
     of any dimension. Step cohomology-invariance now cites the printed
     statement of A. Chatzistamatiou and K. Ruelling, Vanishing of the higher
     direct images of the structure sheaf, Compositio Math. 151 (2015)
-    2131-2144, Theorem 1.1, printed p. 1 (a preimage of the published version,
-    arXiv:1404.1827v2, was added to tmp/sources as
-    chatzistamatiou-rulling-2015-higher-direct-images.pdf): the higher direct
+    2131-2144, Theorem 1.1, p. 1 of the preprint arXiv:1404.1827v2, which is
+    the version retained in tmp/sources as
+    chatzistamatiou-rulling-2015-higher-direct-images.pdf; the page is the
+    preprint's and not the journal printing's, which was not consulted, and
+    neither has a text version in tmp/sources yet: the higher direct
     images of O_X under a projective birational morphism between excellent
     regular schemes vanish. With pi_* O = O_X (the proof of III.11.4) and
     Exercise III.8.1 that gives H^i(X-tilde,O) = H^i(X,O), hence equality of
@@ -113,9 +115,10 @@ nonsingular, and the blowup morphism $\pi$ is projective and birational.
 Both varieties are excellent because they are of finite type over $k$.
 Chatzistamatiou--Rülling, *Vanishing of the higher direct images of the
 structure sheaf*, Compositio Math. 151 (2015) 2131--2144,
-[Theorem 1.1, printed p. 1](https://arxiv.org/abs/1404.1827), states that a
-projective birational morphism between excellent regular schemes has vanishing
-higher direct images of the structure sheaf, and it therefore gives
+[Theorem 1.1, p. 1 of arXiv:1404.1827v2](https://arxiv.org/abs/1404.1827),
+states that a projective birational morphism between excellent regular schemes
+has vanishing higher direct images of the structure sheaf, and it therefore
+gives
 $$
 R^j\pi_*\OO_{\widetilde X}=0\qquad(j>0).
 $$
@@ -124,6 +127,13 @@ $$
 \pi_*\OO_{\widetilde X}=\OO_X.
 $$
 The Leray spectral sequence now gives the displayed isomorphisms.
+
+The theorem's page is that of the preprint: the retained copy,
+`tmp/sources/chatzistamatiou-rulling-2015-higher-direct-images.pdf`, is
+arXiv:1404.1827v2, whose first page carries Theorem 1.1 and the footer "1";
+the journal printing in Compositio Math. 151 (2015) 2131--2144 was not
+consulted, and `tmp/sources` holds no text version of either, so this
+citation gives no page of the printed article.
 :::
 
 :::
@@ -189,7 +199,9 @@ blowing up a nonsingular centre.
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §3 (solution by Shuang-Yen Lee), PDF p. 9, writes the formal-functions reduction for a centre of codimension $r$: by Exercise III.8.1 it suffices to have $\pi_*\OO_{\widetilde X}=\OO_X$, which is the proof of III.11.4, and $R^i\pi_*\OO_{\widetilde X}=0$ for $i>0$. Outside the centre $\pi$ is an isomorphism; at a point $y\in Y$ the formal functions theorem identifies the stalk of $R^i\pi_*\OO_{\widetilde X}$ with $\varprojlim H^i(E_n,\OO_{E_n})$, where $E$ is the exceptional divisor, $E_n$ its $n$th infinitesimal neighbourhood, and $\mathcal I^n/\mathcal I^{n+1}\cong\operatorname{Sym}^n(\mathcal I/\mathcal I^2)\cong\OO_E(n)$. Its induction then invokes $H^i(\PP^{r-1},\OO(n))=0$ for $i>0$ and $n\ge0$, which is the cohomology of a fibre. That is the cohomology of $E$ only when $\dim Y=0$, where indeed $E\cong\PP^{r-1}$; for $Y$ positive-dimensional $E$ is a $\PP^{r-1}$-bundle over $Y$ and $H^i(E,\OO_E(n))=H^i(Y,\operatorname{Sym}^n(\mathcal I/\mathcal I^2))$, which need not vanish --- for $Y$ a curve of positive genus and $n=0$ it is $H^i(Y,\OO_Y)$, nonzero for $i=1$. The entry therefore proves the monoidal case, $\dim Y=0$, which is (3.4) itself, and not the exercise; its closing sentence $p_a(\widetilde X)=p_a(X)$ inherits the gap. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} reach the conclusion for a centre of any codimension through $R^j\pi_*\OO_{\widetilde X}=0$ for $j>0$, which is Chatzistamatiou--Rülling's theorem.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.1, printed p. 394, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (its marker `PDF page 409`; printed page = PDF page $-15$).
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §3 (solution by Shuang-Yen Lee), PDF p. 9, text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are coarse, `PDF pages 1-20`, so the page was read off the PDF), writes the formal-functions reduction for a centre of codimension $r$: by Exercise III.8.1 it suffices to have $\pi_*\OO_{\widetilde X}=\OO_X$, which is the proof of III.11.4, and $R^i\pi_*\OO_{\widetilde X}=0$ for $i>0$. Outside the centre $\pi$ is an isomorphism; at a point $y\in Y$ the formal functions theorem identifies the stalk of $R^i\pi_*\OO_{\widetilde X}$ with $\varprojlim H^i(E_n,\OO_{E_n})$, where $E$ is the exceptional divisor, $E_n$ its $n$th infinitesimal neighbourhood, and $\mathcal I^n/\mathcal I^{n+1}\cong\operatorname{Sym}^n(\mathcal I/\mathcal I^2)\cong\OO_E(n)$. Its induction then invokes $H^i(\PP^{r-1},\OO(n))=0$ for $i>0$ and $n\ge0$, which is the cohomology of a fibre. That is the cohomology of $E$ only when $\dim Y=0$, where indeed $E\cong\PP^{r-1}$; for $Y$ positive-dimensional $E$ is a $\PP^{r-1}$-bundle over $Y$ and $H^i(E,\OO_E(n))=H^i(Y,\operatorname{Sym}^n(\mathcal I/\mathcal I^2))$, which need not vanish --- for $Y$ a curve of positive genus and $n=0$ it is $H^i(Y,\OO_Y)$, nonzero for $i=1$. The entry therefore proves the monoidal case, $\dim Y=0$, which is (3.4) itself, and not the exercise; its closing sentence $p_a(\widetilde X)=p_a(X)$ inherits the gap. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} reach the conclusion for a centre of any codimension through $R^j\pi_*\OO_{\widetilde X}=0$ for $j>0$, which is Chatzistamatiou--Rülling's theorem.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.1, printed p. 107, writes "since $\operatorname{codim}(Y,X)=1$, $\mathcal I/\mathcal I^2$ is an invertible sheaf on $Y$" and then covers $E$ by $\PP^1_A$'s; the exercise has $Y$ of any codimension, and a codimension-one blowup is an isomorphism, so the argument does not cover the case it is aimed at.
 

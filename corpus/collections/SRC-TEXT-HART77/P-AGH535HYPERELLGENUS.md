@@ -48,8 +48,11 @@ audit:
     r = 5, 6, 7 giving delta 4, 8, 12 and genus 2, 2, 3. Checked that the
     hypothesis char k != 2 is needed exactly where the card says: in
     characteristic 2 the equation y^2 = f(x) with f squarefree has
-    k(Y) = k(x)^{1/2}, so the normalization is P^1 and no degree-two morphism
-    exists, while the singularity at infinity and the multiplicities do not use
+    k(Y) = k(x)^{1/2}, so the normalization is P^1 and the only degree-two
+    morphisms out of it are purely inseparable, so it is not hyperelliptic;
+    Frobenius is a degree-two morphism and the earlier wording here, that none
+    exists, was withdrawn on 2026-11-16. The singularity at infinity and the
+    multiplicities do not use
     the hypothesis. Searched outside the twelve retained sets: Algebraic
     Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
     Exercise 5 of section 3, PDF p. 11 (tmp/sources/ntu-ag2-chapter5.pdf),
@@ -112,7 +115,7 @@ y^2z^{r-2}
 =0.
 $$
 
-The exercise is printed with no hypothesis on $\operatorname{char}k$, and its last two requests need $\operatorname{char}k\ne2$, which enters twice below: step [](#affine-part-nonsingular){.pf-ref} divides by $2$ to get $y=0$, and step [](#infinitely-near-A-singularity){.pf-ref} takes a square root in $k[[v]]$ of the unit $\prod_i(1-a_iv)$. In characteristic $2$ the equation $y^2=f(x)$ with $f$ squarefree defines a purely inseparable double cover, so $k(Y)=k(x)(\sqrt f)=k(x)^{1/2}$, the normalization is $\PP^1$ with $g=0$ for every $r$, and there is no degree-two morphism at all; the construction then gives no hyperelliptic curve. Those two steps carry the hypothesis; the singular point at infinity and step [](#point-at-infinity-singular){.pf-ref} do not need it.
+The exercise is printed with no hypothesis on $\operatorname{char}k$, and its last two requests need $\operatorname{char}k\ne2$, which enters twice below: step [](#affine-part-nonsingular){.pf-ref} divides by $2$ to get $y=0$, and step [](#infinitely-near-A-singularity){.pf-ref} takes a square root in $k[[v]]$ of the unit $\prod_i(1-a_iv)$. In characteristic $2$ the equation $y^2=f(x)$ with $f$ squarefree defines a purely inseparable double cover, so $k(Y)=k(x)(\sqrt f)=k(x)^{1/2}$, and the normalization is $\PP^1$ with $g=0$ for every $r$. The morphism $x:\widetilde Y\to\PP^1$ still has degree $2$ there --- it is the Frobenius-type purely inseparable map of degree $2$ --- but a hyperelliptic curve is one that carries a *separable* degree-two morphism to $\PP^1$, and $\PP^1$ over an algebraically closed field has none (Riemann--Hurwitz: a separable degree-two map of $\PP^1$ to $\PP^1$ has two distinct branch points). So the construction then gives no hyperelliptic curve. Those two steps carry the hypothesis; the singular point at infinity and step [](#point-at-infinity-singular){.pf-ref} do not need it.
 
 ::: pf
 
@@ -290,16 +293,20 @@ multiplicity $m_0=r-2$, and after it the germ has the form
 $$
 w^{m}=x^2\prod_i(1-a_iw),\qquad m=r-2,
 $$
-at a double point, whence one further blowup replaces $m$ by $m-2$ and the same
-form by step [](#infinitely-near-A-singularity){.pf-ref}; the exponents met are
-$m_0-2, m_0-4, \ldots$ down to $e=r\bmod 2$, and each is a double point because
-it exceeds $1$. Their number is
+at a double point, whence one further blowup replaces the germ by the same
+form with $m$ replaced by $m-2$, of multiplicity $2$ again when $m-2\ge2$ by
+step [](#infinitely-near-A-singularity){.pf-ref}. So the double points are those
+attached to the exponents
 $$
-\left\lfloor\frac{m_0}{2}\right\rfloor=\left\lfloor\frac{r-2}{2}\right\rfloor,
+m_0,\ m_0-2,\ m_0-4,\ \ldots\ \ge 2,
 $$
-and at $e=r\bmod2$ the germ is $x^2=\text{unit}$ for $e=0$, which meets no
-point, or $w=x^2\cdot\text{unit}$ for $e=1$, which is nonsingular; so the list is
-complete. Hence
+which are exactly the exponents congruent to $r\bmod 2$ that are at least $2$;
+the terminal value $e=r\bmod 2$ is not one of them, and the exponents are labels
+for the successive germs, each of which has multiplicity $2$ at the point blown
+up, not multiplicities in their own right. There are $\lfloor m_0/2\rfloor$ of
+them, and passing the last one leaves the germ $x^2=\text{unit}$ for $e=0$,
+which meets no point, or $w=x^2\cdot\text{unit}$ for $e=1$, which is
+nonsingular; so the list is complete. Hence
 $$
 \delta_P=\frac{(r-2)(r-3)}2+\frac{2\cdot1}{2}\left\lfloor\frac{r-2}{2}\right\rfloor,
 $$
@@ -438,7 +445,9 @@ invariant, step [](#normalization-genus){.pf-ref} computes the genus of the norm
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 5 of §3 (solution by Shuang-Yen Lee), PDF p. 11, works in $\operatorname{char}k\ne2$, which it states, and computes at infinity: the projective model is $z^{r-2}y^2=\prod_i(x-a_iz)$, the multiplicity at $P$ is $r-2$, the first blowup gives $w^{r-2}=\prod_i(1-a_iw)x^2$, and the remaining singularities are $\lfloor(r-2)/2\rfloor$ double points; hence
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.5, printed p. 394, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`.
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 5 of §3 (solution by Shuang-Yen Lee), text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the page was read off the PDF), PDF p. 11, works in $\operatorname{char}k\ne2$, which it states, and computes at infinity: the projective model is $z^{r-2}y^2=\prod_i(x-a_iz)$, the multiplicity at $P$ is $r-2$, the first blowup gives $w^{r-2}=\prod_i(1-a_iw)x^2$, and the remaining singularities are $\lfloor(r-2)/2\rfloor$ double points; hence
 $$\delta_P=\frac12(r-2)(r-3)+\frac12\cdot2\cdot1\cdot\left\lfloor\frac{r-2}{2}\right\rfloor,$$
 the same formula as steps [](#delta-invariant-formula){.pf-ref} and [](#delta-invariant-piecewise){.pf-ref}, and then $p_a(\widetilde Y)=\frac12(r-1)(r-2)-\delta_P=\lfloor(r-1)/2\rfloor$, which is step [](#normalization-genus){.pf-ref}.
 

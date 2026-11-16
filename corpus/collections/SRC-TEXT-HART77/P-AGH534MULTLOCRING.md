@@ -288,7 +288,7 @@ There is no further assertion to prove in part (c).
 :::
 
 ::: {.pf-step #curve-length-formula}
-Let $P$ lie on an irreducible curve $C$ on a nonsingular surface $X$, let
+Let $P$ lie on a curve $C$ on a nonsingular surface $X$, let
 $R=\OO_{X,P}$ with maximal ideal $\mfm$, let $f$ be a local equation of $C$,
 and put
 $$
@@ -306,8 +306,9 @@ Write $B=\OO_{C,P}=R/(f)$ and $\mfm_C=\mfm/(f)$, so that
 $$
 B/\mfm_C^l\cong R/(\mfm^l+(f)).
 $$
-This is the computation of the published solution, PDF p. 11, with the one
-sentence it leaves out.
+This is the computation of the published solution, text version
+`tmp/sources/ntu-ag2-chapter5.md`, PDF p. 11, with the one sentence it leaves
+out.
 
 Choose parameters $x,y$ of the regular local ring $R$, so that $\mfm=(x,y)$,
 $$
@@ -324,6 +325,12 @@ $$
 \longrightarrow R/(\mfm^l+(f))\longrightarrow0
 \qquad(l\ge r).
 $$
+The curve $C$ need not be irreducible, and the proof does not use it: for any
+nonzerodivisor $f\in\mfm$ the ring $B=R/(f)$ has dimension one and the same
+sequence is exact, the only input being the additivity of the order on $R$.
+Hartshorne's exercise asks for a point of a curve with no irreducibility
+hypothesis, and this step carries none.
+
 The source displays this sequence with its two maps named the other way round:
 the map $R/\mfm^{l-r}\to R/\mfm^{l}$ is multiplication by $f$, and the map out
 of $R/\mfm^l$ is the quotient map. Taking $k$-dimensions and writing
@@ -469,7 +476,9 @@ steps [](#cone-graded-ring-is-coord-ring){.pf-ref} and [](#cone-vertex-multiplic
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 4 of §3 (solution by Yu-Chi Hou), PDF pp. 10--11, proves all of (a)--(e): the graded ring $\mathrm{gr}_{\mathfrak m}A$ is finitely generated over $k$ and Hilbert--Serre gives $P_A$; $\deg P_A=\dim A$ by Atiyah--Macdonald 11.4; the definition of $\mu$ is recorded; for (d) the exact sequence $0\to\OO_{X,P}/\mathfrak m_X^{n-r}\to\OO_{X,P}/\mathfrak m_X^n\to\OO_{C,P}/\mathfrak m_{C,P}^n\to0$ gives $\length(A/\mathfrak m^n)-\length(A/\mathfrak m^{n-r})=nr-\frac{r(r-1)}2$, hence $\mu_P(C)=r$; for (e) the associated graded ring at the vertex is the homogeneous coordinate ring of $Y$, so the Hilbert--Samuel function is the Hilbert function of $Y$ and $\mu_V=d$. Those are steps [](#hilbert-samuel-polynomial-exists){.pf-ref}, [](#degree-of-hilbert-samuel){.pf-ref}, [](#curve-length-formula){.pf-ref} and [](#cone-vertex-multiplicity){.pf-ref}.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.4, printed p. 394, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker `PDF page 409` minus 15).
+
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 4 of §3 (solution by Yu-Chi Hou), text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are the coarse `PDF pages 1-20`, so the pages were read off the PDF), PDF pp. 10--11, proves all of (a)--(e): the graded ring $\mathrm{gr}_{\mathfrak m}A$ is finitely generated over $k$ and Hilbert--Serre gives $P_A$; $\deg P_A=\dim A$ by Atiyah--Macdonald 11.4; the definition of $\mu$ is recorded; for (d) the exact sequence $0\to\OO_{X,P}/\mathfrak m_X^{n-r}\to\OO_{X,P}/\mathfrak m_X^n\to\OO_{C,P}/\mathfrak m_{C,P}^n\to0$ gives $\length(A/\mathfrak m^n)-\length(A/\mathfrak m^{n-r})=nr-\frac{r(r-1)}2$, hence $\mu_P(C)=r$; for (e) the associated graded ring at the vertex is the homogeneous coordinate ring of $Y$, so the Hilbert--Samuel function is the Hilbert function of $Y$ and $\mu_V=d$. Those are steps [](#hilbert-samuel-polynomial-exists){.pf-ref}, [](#degree-of-hilbert-samuel){.pf-ref}, [](#curve-length-formula){.pf-ref} and [](#cone-vertex-multiplicity){.pf-ref}.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.4, printed pp. 107--108, has two defects. In (b) it asserts $\mathrm{gr}_{\mathfrak m}A\cong(A/\mathfrak m)[x_1,\ldots,x_n]$ for a system of parameters, which holds only for a regular local ring, and then reads the degree off as $\dim\mathbf P^n$. In (d) it assumes a local equation with a pure power $x^r$ among its terms and concludes "dim$(A/(f))^{(l)}=lr-\frac{r^2}2+\frac{3r}2$"; for a node, $r=2$ and $l=2$, that gives $5$, whereas $\OO_{C,P}/\mathfrak m_C^2=k[x,y]/(x^2,xy,y^2)$ has length $3$, which is $2l-\frac{2\cdot1}2$ from step [](#curve-length-formula){.pf-ref}.
 
