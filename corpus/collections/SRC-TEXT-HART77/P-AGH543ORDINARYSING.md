@@ -249,6 +249,24 @@ audit:
     Problem 4.16 and Problem 5.26, which the Lemma 1 step cites; and the
     printed copies of either book, only the text versions beside the retained
     PDFs.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Correction to the event above, which is left as written. It says of Rud's
+    Propositions 20 and 21 that they prove the sum and not the ordinariness.
+    The second part of Proposition 21 does state that P, P' and P'' are
+    ordinary multiple points of C' with multiplicities n, n-r and n-r, and
+    that statement stands on printed p. 26. What its proof carries is the
+    count: with C' in good position, (6) applied to C' and (C')' = C gives
+    sum I(P_i, C cap L) = sum 1 = n = mu_P(C'), and the same for P' and P''.
+    That the n tangent directions of C' at P are then simple is not derived
+    there, since the equality of the sum with the multiplicity says nothing
+    about how it is distributed among them, and that is the passage the card
+    supplies as its own. The remark now says what the propositions prove and
+    what they state, and the record of this date in COMPLAINTS.md, which says
+    they prove the sum and not the ordinariness, is corrected by a record of
+    the same date there.
 ---
 
 ::: {.problem}
@@ -478,7 +496,7 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, prin
 
 The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113.
 
-Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, printed p. 25, states excellent position; Propositions 20 and 21, printed pp. 26--27, prove the sum $\sum_i I(P_i,C'\cap L)=n$ of (6) and not the ordinariness of the three fundamental points, so that passage stays the card's own; Proposition 22, printed p. 27, introduces $g^*$; Theorem 13, printed p. 28, gives the finite sequence; and §7.3, printed p. 40, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
+Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, printed p. 25, states excellent position; Propositions 20 and 21, printed pp. 26--27, prove the sum $\sum_i I(P_i,C'\cap L)=n$ and the multiplicities $n$, $n-r$, $n-r$, and Proposition 21 states the ordinariness of $P$, $P'$ and $P''$ in its second part while its proof reaches only those multiplicities, so that passage stays the card's own; Proposition 22, printed p. 27, introduces $g^*$; Theorem 13, printed p. 28, gives the finite sequence; and §7.3, printed p. 40, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
 :::
 
 ::: {.remark title="Other published treatments"}
