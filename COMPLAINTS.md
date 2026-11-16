@@ -2849,6 +2849,36 @@ it was written on 2026-11-11, and the correction is this entry.
   states", which described the rewritten paragraph. With the paragraph restored, the condition is stated
   here and in that item itself, not in the 2026-11-11 entry; nothing in the item's mathematics changes.
 
+## `SRC-TEXT-HART77` #121: the five complaint edits `27598ae933` carried from other batches, and two dates of the round under review
+
+The reader of the round returned one item on this file, and it is right on both counts. `27598ae933`
+(I.6.7, committer date 2026-11-16 07:30:29) changes this file in six hunks, and its message describes one of
+them, the `P-AGH67PUNCTUREDLINE` line of the I.6.7 entry. The other five belong to entries of cards the round
+did not select: the V.4.13 bullet and the V.4.13 paragraph of the Chapter V section, the V.3.5 and V.3.8
+paragraphs of the §V.3 entry, the V.5.6 paragraph, and the I.2.9(b) bullet. QUAL-07 confines a batch's
+complaint edits to the entries it selected, and QUAL-09 makes a commit that sweeps in a sibling's edit a
+wrong message rather than lost work. This entry is the correction of the record, and no word of the five
+entries changes.
+
+- **Whose the five are, checked by path.** `13feb8e2ac` (2026-11-16 07:33:33) is the §V batch's commit of
+  V.3.5 (`P-AGH535HYPERELLGENUS`), V.3.8 (`P-AGH538INEQUIVSING`), V.4.13 (`P-AGH5413DELPEZZO4`), V.5.6
+  (`P-AGH556VALUATIONRINGS`) and V.5.8(b) (`P-AGH558E8SINGULARITY`), with line corrections on V.3.1, V.3.7,
+  V.4.3 and V.4.15; its message names exactly the repairs that the V.4.13, V.3.5, V.3.8 and V.5.6 hunks
+  record, and its own diff carries no `COMPLAINTS.md` at all, because this file had already taken them. The
+  I.2.9(b) hunk is that round's: `a78e3d62e8` (07:36:27) commits the card with no `COMPLAINTS.md` either, and
+  `3826fac743` (07:41:44) edits the same bullet again. The checkout is shared, so all five sat in the file
+  when the I.6.7 commit took the whole path; neither commit is amended and nothing is force-pushed.
+- **Nothing is reverted.** The five edits are the siblings' work and are already correct on disk; reverting
+  them would be the lost work that QUAL-09 says this is not. The round's own complaint edit is the one its
+  message describes, the I.6.7 line.
+- **The dates of the round.** The five card events of the round were written and committed on 2026-11-16, in
+  `a9d902a1a9` (07:15:38), `0005c982e3` (07:19:12), `4ace5f19b8` (07:30:21) and `27598ae933` (07:30:29), and
+  carried 2026-11-17, a day that had not happened. A record carries the day of the commit that lands it, so
+  the five date fields say 2026-11-16, and each of the four cards has a new event of 2026-11-16 recording the
+  correction. The same slip is in a body sentence: the I.7.7(b) paragraph of the 2026-11-16 correction above
+  reads "this paragraph cited it for the value until 2026-11-17", and the citation was in fact corrected on
+  2026-11-16, in `89d13d01e14` (07:13:27). The sentence is left as written, a correction being a new entry.
+
 ## 2026-11-16: the third-pass corrections to the `SRC-TEXT-HAT02` entries of the 2026-11-11 item
 
 The `E-HAT-2.C-6`, `E-HAT-2.C-1`, `E-HAT-3.A-1`/`4.1-1` and `E-HAT-4.1-9` paragraphs of the 2026-11-11 item were edited in place during this date's third pass, before the QUAL-11 gate covered dated COMPLAINTS entries; those edits stand, and the corrected statements are the ones now in the item. Two paragraphs of it are still wrong as written, and because the item is a dated record a correction is this new entry rather than another edit.
