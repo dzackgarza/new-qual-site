@@ -229,7 +229,7 @@ For a hypersurface, the degree is the degree of its defining form: Harris, the p
 $$
 S(Y)=\frac{k[x_0,\ldots,x_n]}{(I(Y),x_{r+2},\ldots,x_n)}\cong\frac{k[x_0,\ldots,x_{r+1}]}{I_L(Y)},
 $$
-so the Hilbert function, and with it the degree $r!$ times the leading coefficient of the Hilbert polynomial (the definition of degree in §I.7, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`, line 1779), is unchanged by passing from $L$ to $\PP^n$.
+so the Hilbert function, and with it the degree $r!$ times the leading coefficient of the Hilbert polynomial (the definition of degree in §I.7, printed p. 52), is unchanged by passing from $L$ to $\PP^n$.
 Since
 $$
 \deg Y=2,
