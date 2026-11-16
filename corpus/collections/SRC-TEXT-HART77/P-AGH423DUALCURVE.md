@@ -204,6 +204,23 @@ audit:
     count of s4 and the genus computation of s12 stand as they were. Not done in
     this pass: no source was re-read and no step re-derived, the pages and paths
     of the sources being those of the events above; no other card is touched.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round, in the rendered text only:
+    the last positional reference of step s2. The paragraph that sets up the map on
+    local rings closed "no valuation below depends on the sign", a reference
+    forward by position of the same class as the three that 265d815466 replaced.
+    What uses those valuations is one step: s9, which subtracts the d contributions
+    of X cap L at index 2 and counts r-2 at an inflection point, both read off the
+    index that step s2 computes. The sentence now says that a sign changes no order,
+    so the index of varphi that step [](#s9){.pf-ref} uses does not depend on it,
+    naming the step rather than pointing at it. No mathematics changes: the map on
+    local rings, the value e_P(varphi) = r-1 and the index 2 of the other case stand
+    as they were, and step s9 is unchanged. Not done in this pass: no source was
+    re-read, no step re-derived, the pages and paths of the sources being those of
+    the events above; no other card is touched.
 review: draft
 ---
 
@@ -372,8 +389,8 @@ k[\tau]_{(\tau)}\longrightarrow k[x,y]_{(x,y)}/(f),
 \tau\longmapsto-\frac{\partial f/\partial y}{\partial f/\partial x},
 $$
 the minus sign being what the corrected point changes; his coordinate at
-$[1:0:0]$ carries the same ratio without it, and no valuation below depends on
-the sign.
+$[1:0:0]$ carries the same ratio without it, and a sign changes no order, so the
+index of $\varphi$ that step [](#s9){.pf-ref} uses does not depend on it.
 
 Write $f=x+ax^2+bxy+cy^2+\cdots$. The denominator is the unit
 $1+2ax+by+\cdots$ and the numerator is $bx+2cy+\cdots$, which has valuation at
