@@ -312,6 +312,40 @@ audit:
     two withdrawn arguments the card's own, and the record added to that file by
     f32e7f5159 whose lead carries no day, are corrected by records of this date
     there.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's finding of QUAL-08 on the rendered text of this card, repaired
+    here; every event above is left as written, and no mathematical claim
+    changes. Three passages of the public text stated what the card does or
+    does not prove and how much of a source's entry the citation is, which
+    belongs in COMPLAINTS.md and not on the card. The preamble no longer says
+    that the bound N + g*(C) is his, that Appendix A ends by asserting the
+    theorem rather than deriving it, or that Hirschfeld's theorem is the whole
+    of Egbert's entry; it gives the terminating count as Fulton's Theorem 2,
+    printed p. 91, the reduction in characteristic p as his Appendix A, printed
+    p. 113, and the case as Hirschfeld's Theorem 3.27. Step termination's proof
+    no longer says that the estimate stands as he prints it and that the card
+    does not derive it: the transcription of Theorem 2 is the proof of the
+    step, and the citation of Theorem 2 of §5.4, printed p. 60, for the
+    nonnegativity of g* stays a citation. Step positive-characteristic no
+    longer says what the appendix does not carry out, that no argument for the
+    interleaved sequence is given on the card, or that Egbert's entry cites
+    Hirschfeld in place of a solution: its claim states the reduction of
+    Appendix A, its proof transcribes that reduction, and one sentence gives
+    the case as Hirschfeld's Theorem 3.27. The qed no longer says that the step
+    states what the case rests on, and step excellent-position-attained no
+    longer says what the appendix does about the failure of separability in
+    characteristic p. The status those passages carried is recorded in
+    COMPLAINTS.md, in the record of this date for the two withdrawn arguments
+    and in the record this pass adds beside it. Read for this pass: the same
+    passages of
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md, lines
+    456 to 460 for Theorem 2 and line 575 for Appendix A, and of
+    tmp/sources/rud-2015-resolution-singularities-curves.md, lines 873 to 877;
+    nothing further. Not checked here: the rendered page, and any printing of
+    either book other than the text versions beside the retained PDFs.
 ---
 
 ::: {.problem}
@@ -327,7 +361,7 @@ The argument is that of Fulton, *Algebraic Curves* (2008), §7.4, printed pp. 87
 $$
 g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2},
 $$
-the sum being taken over the multiple points of $C$. Fulton's Theorem 2, printed p. 91, concludes that a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps, and that estimate is his. Over a field of characteristic $0$ this proves the exercise. In characteristic $p>0$ it is his Appendix A, which ends by asserting the theorem rather than deriving it from the reduction it makes, and there the case is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, which is the whole of Egbert's entry for the exercise.
+the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2, printed p. 91: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and the case is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
 
 ::: pf
 
@@ -442,7 +476,7 @@ F=A_r(X,Z)Y^{n-r}+\cdots+A_n(X,Z),
 \qquad
 A_r\neq0;
 $$
-then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq0$, which fails for only finitely many $\lambda$; and $G_\lambda$ has $n-r$ distinct roots whenever in addition $F\cap F_Y\cap L_\lambda=\{P\}$, that is, whenever $G_\lambda$ and its derivative have no common root on $L_\lambda$, which again fails for only finitely many $\lambda$ because $F$ and $F_Y$ have no common component. In characteristic $0$ that is the whole condition; in characteristic $p$ it is not, which is the one place the proof breaks, and step [](#positive-characteristic){.pf-ref} states what Fulton's Appendix A does about it.
+then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq0$, which fails for only finitely many $\lambda$; and $G_\lambda$ has $n-r$ distinct roots whenever in addition $F\cap F_Y\cap L_\lambda=\{P\}$, that is, whenever $G_\lambda$ and its derivative have no common root on $L_\lambda$, which again fails for only finitely many $\lambda$ because $F$ and $F_Y$ have no common component. In characteristic $0$ that is the whole condition; in characteristic $p$ it is not, which is the one place separability enters, and step [](#positive-characteristic){.pf-ref} treats that case.
 :::
 
 :::
@@ -491,13 +525,13 @@ both sides of which are $\tfrac12(n^2-r^2-3n+r+2)$, as $2\binom{k}{2}=k(k-1)$ sh
 Let $N$ be the number of non-ordinary multiple points of $C$. Then a finite sequence of quadratic transformations, of length at most $N+g^*(C)$, carries $C$ to a curve whose only singularities are ordinary multiple points.
 
 ::: pf-proof
-This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic transformations, centring each one at a non-ordinary multiple point, and observes from (7) and (8) of the same section that "at each step, either $C'$ has one less non-ordinary multiple point than $C$, or $g^*(C')=g^*(C)-\sum_i\frac{r_i(r_i-1)}{2}<g^*(C)$", the second alternative being (8) in the form step [](#genus-invariant-drops){.pf-ref} states it, with $r_i=\mu_{P_i}(C')$, and concluding that "if the original curve $C$ has $N$ non-ordinary multiple points, we reach the desired curve after at most $N+g^*(C)$ steps". The estimate stands as he prints it, and the card does not derive it; the nonnegativity of $g^*$ that his argument draws on is his Theorem 2 of §5.4, printed p. 60, which step [](#genus-invariant-nonnegative){.pf-ref} transcribes.
+This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic transformations, centring each one at a non-ordinary multiple point, and observes from (7) and (8) of the same section that "at each step, either $C'$ has one less non-ordinary multiple point than $C$, or $g^*(C')=g^*(C)-\sum_i\frac{r_i(r_i-1)}{2}<g^*(C)$", the second alternative being (8) in the form step [](#genus-invariant-drops){.pf-ref} states it, with $r_i=\mu_{P_i}(C')$, and concluding that "if the original curve $C$ has $N$ non-ordinary multiple points, we reach the desired curve after at most $N+g^*(C)$ steps". The nonnegativity of $g^*$ that his argument uses is his Theorem 2 of §5.4, printed p. 60, which step [](#genus-invariant-nonnegative){.pf-ref} transcribes.
 :::
 
 :::
 
 ::: {.pf-step #positive-characteristic}
-Assume $\operatorname{char}k=p>0$. Then Fulton's Appendix A confines the failure of excellent position to at most one terrible point of the curve, which one quadratic transformation centred away from it removes, and the theorem in this characteristic is what that appendix asserts there.
+Assume $\operatorname{char}k=p>0$. Then at most one point of $C$ is terrible for excellent position, and one quadratic transformation centred at a point of multiplicity $0$ or $1$ makes that point not terrible; the exercise's case in this characteristic is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
 
 ::: pf-proof
 This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$; then $p$ divides $n-r$. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
@@ -506,9 +540,9 @@ If the chosen bad point $P$ is terrible for $F$, Fulton takes a quadratic transf
 $$
 n'-r\equiv 2n-m-r\equiv n-m \pmod p,
 $$
-and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$; Fulton then proceeds as in Theorem 2.
+and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$.
 
-What the appendix does not carry out is the iteration. The preliminary transformation has its centre at a point of multiplicity $0$ or $1$, and the terminating sequence of Theorem 2 has to be run with such transformations interleaved, which needs that a preliminary step creates no bad point and leaves $g^*$ unchanged; the appendix's text ends at the corresponding point's being "not terrible for $F'$, and we can proceed as before". No argument for the interleaved sequence is given on this card. The case is therefore what the appendix asserts, and the exercise's case in characteristic $p$ is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, which is what Egbert's entry for the exercise cites in place of a solution.
+In characteristic $p$ the case is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
 
 The appendix's sentence on the choice of $m$ reads "one of the choices $m=0,1$ will insure that $p$ doesn't divide $n-r$", with $n-r$ where the congruence requires $n'-r$; the divisibility it needs is that of $n'-r$, and $n-r$ is divisible by $p$ by the first paragraph.
 :::
@@ -516,7 +550,7 @@ The appendix's sentence on the choice of $m$ reads "one of the choices $m=0,1$ w
 :::
 
 ::: pf-qed
-Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-position){.pf-ref} compute the multiplicities of a quadratic transform and of the multiple points it creates or preserves. Step [](#excellent-position-attained){.pf-ref} puts the current curve in excellent position at the chosen centre in characteristic $0$, and step [](#positive-characteristic){.pf-ref} confines the failure in characteristic $p>0$ to one terrible point and states what the case then rests on. Step [](#termination){.pf-ref} iterates the transformation finitely many times, with Fulton's bound, and the strict transform that results has no bad point, that is, only ordinary multiple points. This proves the exercise over an algebraically closed field of characteristic $0$, and over one of characteristic $p>0$ it is Fulton's Appendix A together with the citation of Hirschfeld's Theorem 3.27. The hint (3.8) is not used: the proof resolves no curve by point blowups, terminating instead on the count of bad points against $g^*$.
+Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-position){.pf-ref} compute the multiplicities of a quadratic transform and of the multiple points it creates or preserves. Step [](#excellent-position-attained){.pf-ref} puts the current curve in excellent position at the chosen centre in characteristic $0$, and step [](#positive-characteristic){.pf-ref} treats the failure of that in characteristic $p>0$. Step [](#termination){.pf-ref} iterates the transformation finitely many times, with Fulton's bound, and the strict transform that results has no bad point, that is, only ordinary multiple points. This proves the exercise over an algebraically closed field of characteristic $0$; in characteristic $p>0$ the case is Fulton's Appendix A with Hirschfeld's Theorem 3.27. The hint (3.8) is not used: the proof resolves no curve by point blowups, terminating instead on the count of bad points against $g^*$.
 :::
 
 :::
