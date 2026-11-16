@@ -28,6 +28,31 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published solution located for this exercise (issue #121). Printed
+    exercise read: Hartshorne, Algebraic Geometry (1977), IV.4.22, printed
+    p. 340, with the four hint clauses the proof follows. Source: Yang
+    Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 4.4.22, printed
+    p. 95 of tmp/sources/lfwin-hartshorne-solutions.pdf, read in its text
+    version tmp/sources/lfwin-hartshorne-solutions.md and settled on the
+    PDF page where the OCR breaks his formula for S. His argument is steps
+    s1--s5 here: the section as origin, the four 2-torsion points as a
+    finite etale cover via (II, 9.9) and unramifiedness, four copies of
+    A^1 by simple connectivity of A^1_C, the sections T_0, T_1, T_lambda
+    giving coordinates, and t -> lambda a constant morphism to
+    A^1 - {0,1}. His last sentence, that equal lambda makes the family
+    trivial, is a gap: equal fibres do not give a trivial family and
+    nothing in his argument excludes a twist over A^1_C; steps s6 and s7
+    supply it. Book checks: IV.4.4 and IV.4.5, printed pp. 333--334
+    (Legendre form, and the six substitutions that make the parameter well
+    defined), IV.4.1, printed pp. 332--333 (isomorphic curves have equal
+    j), II.9.9 as he cites it. Not checked: simple connectivity of A^1_C
+    in the etale topology is taken from the printed hint, as he does; both
+    texts assert the four 2-torsion points of a fibre without computing
+    them, and the card's s1 proves it instead.
 ---
 
 ::: {.problem}
@@ -349,4 +374,8 @@ produce Hartshorne's Legendre parameter and show it is constant, and steps
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.22, printed p. 95 of `tmp/sources/lfwin-hartshorne-solutions.pdf`, text version `tmp/sources/lfwin-hartshorne-solutions.md`, executes the printed hint on p. 340 in the order of steps [](#s1){.pf-ref} to [](#s5){.pf-ref}: the section makes every fibre an elliptic curve with origin $s_0(t)$; the union of the subgroups $\ker 2_{X_t}$ has four closed points over each $t$, is flat over $\AA^1_\CC$ by (II, 9.9), and is unramified because those four points are distinct, hence is finite étale of degree four; since $\AA^1_\CC$ is simply connected it is four copies of $\AA^1_\CC$, one of them $s_0$ and the others $s_1,s_2,s_3$, and on each fibre the coordinates $s_0(t)=\infty$, $s_1(t)=0$, $s_2(t)=1$, $s_3(t)=\lambda$ make $t\mapsto\lambda$ a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, which is constant. His argument then stops one step short of the exercise: from the constancy of $\lambda$ he concludes that "all $X_t$ are isomorphic to each other, i.e. the family is trivial", and isomorphism of the fibres is not triviality of the family, a twist of the Legendre curve over $\AA^1_\CC$ being invisible in the fibres. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} close that step through the trace decomposition of the double cover and $\Pic(\AA^1_\CC)=0$, and with them the proof is complete. Checked against the book: Lemma IV.4.4 and Lemma IV.4.5, printed pp. 333--334, are what make every elliptic curve with a degree-two map to $\PP^1$ Legendre and the parameter well defined up to the six substitutions of 4.5, and Theorem IV.4.1, printed pp. 332--333, is the statement that isomorphic elliptic curves have equal $j$, the book's form of the conclusion the hint asks for.
 :::
