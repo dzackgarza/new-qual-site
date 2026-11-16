@@ -73,6 +73,35 @@ audit:
     Appendix A's C1, printed p. 430. Not checked: whether the printed
     exercise admits a normalizing convention in the literature; none was
     found in any of the sources read across both passes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repairs on the reader's report of this batch, three of substance. (1) The
+    statement is the printed exercise again: the normalization paragraph is
+    removed from the problem block and stated at the head of the solution,
+    which is where a convention the book does not print belongs. (2) Step s3
+    no longer applies the trace to the wrong degree: it names 1_V in
+    H^{dim V} by t_V(1_V) = 1, observes that every point class on L equals
+    1_L by step s1, and defines 1_{P^n} by t_{P^n}(1_{P^n} sm i_*1) = 1, that
+    is, as the class pairing to 1 with the class of a linear P^p. The
+    previous version defined 1_L by a trace applied to H^0 and 1_{P^n} by a
+    trace applied to H^{n-p}, both ill-typed, and never stated the
+    identification the transfer uses. (3) Step s6 is no longer circular. It
+    states the divisor case (R) as an input, notes that part (d) is its case
+    beta = 1, proves (R) in dimension one from the residue theorem and
+    III.7.14.1(c) of the book, and says that for n >= 2 Hartshorne supplies no
+    such statement (Remark III.7.14 says the trace is known only to exist).
+    The withdrawn sentences are those that took the residue formula as the
+    definition of the Gysin map by appeal to the problem statement, and the
+    "independent check" for a hypersurface in P^n, which compared a class in
+    H^1(Omega^1) with a point class. Also corrected: the audit description of
+    Yang's (b) and (d) and of Kim's coverage, and the text versions named for
+    Kim, MSE 1794757 and the two Stacks tags. Checked against the book in this
+    pass: the printed exercise on pp. 249-250, III.7.1(a) p. 240, III.7.2
+    p. 241, III.7.12-7.14 pp. 246-247, II.8.18 p. 179, I.7.7 p. 53, Exercise
+    III.7.3 p. 249, Appendix A C1 p. 430. Not checked: no source proving (R)
+    for n >= 2 was located, and the card does not claim one.
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -126,6 +155,47 @@ audit:
     Remark III.7.14 and Theorems III.7.14.1, 7.14.2 on pp. 247-248,
     Exercise III.7.3 p. 249, Appendix A C1 p. 430. Not checked: no source
     proving (R) or (B) for n >= 2 was located.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Third pass on the reader's report of this batch, on the items that the
+    second pass left open, and on the audit trail. (i) The proof of
+    alpha_0 nonzero introduced by the second pass was invalid and is
+    replaced. It restricted alpha_0 along the n-p hyperplanes that cut L out
+    and read the restriction as eta_L(L); but those hyperplanes contain L, so
+    they do not meet it transversely, step s2 does not apply to the pair
+    (L, H_i), and eta_L(L) is the class of L as a subvariety of itself, an
+    element of H^0(L, O_L), not the class of degree n-p that a restriction of
+    alpha_0 has. The step now proves alpha_0 nonzero by induction on the
+    dimension of the linear subspace: for a point the class is nonzero by step
+    s1, and for dimension at least one it applies step s2 to a hyperplane H
+    with L not contained in H, which does meet L transversely in L cap H, and
+    uses that a class with nonzero restriction is nonzero. (ii) The head of
+    the solution now separates existence from compatibility. A trace
+    satisfying (N) is unique, since H^n(X, Omega^n) is one-dimensional and
+    eta(P) is nonzero by step s1, and a trace exists by Proposition III.7.5
+    (printed p. 242); what is missing for (b) and (d) is the proof that the
+    trace of III.7 satisfies (R) and (B), and the head states that instead of
+    calling the consistency of the four inputs a theorem. (iii) The text
+    versions of the sources of the event of 2026-11-16 whose note begins
+    "Second published-solution search" are named here, because the second
+    pass restored that event to a text written before the citations were
+    added: tmp/sources/lfwin-hartshorne-solutions.md for Yang Pi-Yeh,
+    tmp/sources/hartshorne-solutions-kim.md for Kim,
+    tmp/sources/mse-1794757-cohomology-class-of-a-subvariety.md for Math
+    StackExchange 1794757, and tmp/sources/stacks-tags/0FWC.md and
+    tmp/sources/stacks-tags/0FLE.md for the two Stacks tags. (iv) The
+    solution-reviewed event of 2026-11-16 whose note begins "Repairs on the
+    reader's report of this batch" is restored as it was written, and this
+    event is appended after it rather than put in its place. Checked against
+    the book in this pass, in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    (printed p. N is PDF p. N+15): the printed exercise on pp. 249-250,
+    Proposition III.7.5 on printed p. 242, Corollary III.7.12 on printed
+    p. 246, Remark III.7.14 and Theorems III.7.14.1 and 7.14.2 on printed
+    pp. 247-248, Exercise III.7.3 on printed p. 249. Not checked: no source
+    proving (R) or (B) for n >= 2 was located in the two search passes
+    recorded, and III.7.5 and III.7.12 were read in the text version only.
 ---
 
 ::: {.problem}
@@ -204,7 +274,21 @@ the projection formula for the trace, read for the transverse pair $(Y,H)$.
 
 (N) is a normalization, and part (a) uses only (N). (R) is the substantive
 input, and part (d) is its case $\beta=1$. (B) is the second one, and part (b)
-is its consequence.
+is its consequence. Both are cases of one statement, the compatibility of the
+trace of Grothendieck--Serre duality with the Gysin maps of closed immersions of
+nonsingular varieties: the divisor case of that compatibility is (R), and its
+base-change case for a transverse pair is (B). Neither is a formal consequence
+of the definitions (N) and (G); both are properties of the trace that III.7
+constructs.
+
+There is at most one trace satisfying (N). The space $H^n(X,\Omega_X^n)$ is
+one-dimensional, and $\eta(P)\ne0$ because $t_X(\eta(P))=1$ by step
+[](#s1){.pf-ref}, so the normalization $t_X(\eta(P))=1$ fixes $t_X$
+completely. A trace exists: Proposition III.7.5 (printed p. 242) gives a
+dualizing sheaf with its trace on every projective scheme over $k$, and for
+$X$ nonsingular that sheaf is $\Omega_X^n$ (III.7.12, printed p. 246). What is
+missing for parts (b) and (d) is therefore not existence but the proof that
+this trace satisfies (R) and (B).
 
 Of these, the book proves (R) for curves, and step [](#s6){.pf-ref} derives it
 there from the residue description of the trace in Remark III.7.14 (printed
@@ -212,11 +296,9 @@ pp. 247--248), sign included. It proves nothing of the kind for $\dim X\ge2$:
 Remark III.7.14 says of the trace that "we know only that it exists", and its
 residue construction is stated for curves. Neither (R) nor (B) for higher
 dimension is proved in this card, and no source proving them was located in the
-two search passes recorded above; both are the standard compatibility of the
-trace of Grothendieck--Serre duality with cycle classes, which Hartshorne's
-Chapter III does not contain. Parts (b) and (d) are therefore theorems relative
-to (R) and (B), and open with respect to the book alone. The remark below
-records what the book does and does not determine.
+two search passes recorded above. Parts (b) and (d) are therefore theorems
+relative to (R) and (B), and open with respect to the book alone. The remark
+below records what the book does and does not determine.
 
 Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
 $$
@@ -238,11 +320,11 @@ $$
 \eta(Y)=j_*(1).
 $$
 
-That the four inputs are consistent --- that there is a trace satisfying (N),
-(R) and (B) at once, and it is unique up to the normalization (N) --- is a
-theorem of Grothendieck--Serre duality, and it is neither proved nor cited
-here. What is proved below is that the exercise's four assertions follow from
-those inputs, and that (R) itself is a theorem of the book in dimension one.
+By the uniqueness above, (R) and (B) are statements about one fixed trace, not
+about a choice among several: a trace satisfying (N) is unique, so the only
+question is whether the trace of III.7 satisfies them. What is proved below is
+that the exercise's four assertions follow from (N), (G), (R) and (B), and that
+(R) is a theorem of the book in dimension one.
 
 ::: pf
 
@@ -308,11 +390,13 @@ i^*\eta_X(Y)
 =\eta_H(Z),
 $$
 which is the asserted compatibility. This is the one step of part (b) that the
-book does not supply: the identity is the projection formula for the trace of
-the transverse pair $(Y,H)$, and the proof of the printed hint's instruction to
-cut with a hyperplane is exactly this statement. It is not derived here from
-(N) or (R), and no source proving it for $\dim X\ge2$ was located in the two
-search passes recorded above.
+book does not supply: the identity is the base-change (or projection) formula
+for the trace of the transverse pair $(Y,H)$, the base-change case of the same
+compatibility of which (R) is the divisor case, and the proof of the printed
+hint's instruction to cut with a hyperplane is exactly this statement. It is
+input (B) of the head of the solution, not derived here from (N) or (R), and no
+source proving it for $\dim X\ge2$ was located in the two search passes
+recorded above.
 
 :::
 
@@ -370,15 +454,25 @@ The scalar is now read in $H^p(\PP^n,\Omega^p)$. Let
 $\alpha_0=i_*(1)\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin
 pushforward of the unit class $1\in H^0(L,\OO_L)$; by (G) and the exercise's
 definition it is the class $\eta_{\PP^n}(L)$ of the linear subspace. It is
-nonzero. Indeed, restricting along the $n-p$ hyperplanes that cut $L$ out, as
-in step [](#s2){.pf-ref}, gives
+nonzero, and the proof is an induction on the dimension of the linear subspace.
+Write $c=n-p$ for its codimension and let $L\subseteq\PP^m$ be a linear
+subspace of dimension $e=m-c$; the claim is that
+$\eta_{\PP^m}(L)\in H^c(\PP^m,\Omega_{\PP^m}^c)$ is nonzero. If $e=0$, then
+$L$ is a point of $\PP^c$, and $\eta_{\PP^c}(L)\ne0$ because
+$t_{\PP^c}(\eta_{\PP^c}(L))=1$ by step [](#s1){.pf-ref}. If $e\ge1$, choose a
+hyperplane $H\subseteq\PP^m$ with $L\nsubseteq H$; then $L$ meets $H$
+transversely in the linear subspace $L'=L\cap H$ of dimension $e-1$ and
+codimension $c$ in $H$, so step [](#s2){.pf-ref}, applied to the pair
+$(L,H)$ in $\PP^m$, gives
 $$
-\restrictionof{\alpha_0}{L}=\eta_L(L)=1_L\ne0,
+\restrictionof{\eta_{\PP^m}(L)}{H}
+=i_H^*\eta_{\PP^m}(L)=\eta_H(L'),
 $$
-since $\langle\eta_L(L),\beta\rangle_L=t_L(1\smile\beta)=t_L(\beta)$ for every
-$\beta\in H^0(L,\Omega_L^0)$, so $\eta_L(L)$ is the class of trace $1$; a class
-whose restriction to $L$ is nonzero is nonzero. By Exercise III.7.3 the space
-$H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, so $\alpha_0$ spans it.
+where $i_H:H\hookrightarrow\PP^m$ is the inclusion, and the right hand side is
+nonzero by the induction hypothesis; a class with nonzero restriction is
+nonzero. With $m=n$ this proves $\alpha_0=\eta_{\PP^n}(L)\ne0$. By Exercise
+III.7.3 the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, so
+$\alpha_0$ spans it.
 
 Define $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ to be the class with
 $$
@@ -597,7 +691,7 @@ relative to (R), and relative to (R) alone: (R) itself is not proved here.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N). Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) relative to (B), which is where the count $\deg Y$ is carried from $L$ back to $\PP^n$, and to the normalization $1_{\PP^n}$ of step [](#s3){.pf-ref}. Step [](#s4){.pf-ref} proves part (c). Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d) relative to (R): in dimension one (R) is proved there from Theorem III.7.14.1, sign included, and for $n\ge2$ (R) is an input the book does not supply.
+Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N). Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) relative to (B) and (R): step [](#s2){.pf-ref} is (B), where the count $\deg Y$ is carried from $L$ back to $\PP^n$, step [](#s3){.pf-ref} uses (B) again to prove $\alpha_0\ne0$ and adds the normalization $1_{\PP^n}$, and (B) is the base-change case of the same trace compatibility of which (R) is the divisor case. Step [](#s4){.pf-ref} proves part (c). Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d), which is the case $\beta=1$ of (R): in dimension one (R) is proved there from Theorem III.7.14.1, sign included, and for $n\ge2$ (R) is an input the book does not supply.
 
 :::
 
@@ -614,5 +708,5 @@ A natural choice does exist on $\PP^n$ and the book records it without using it:
 $$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
 which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
 
-The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the head of the solution states as (N), (G), (R) and (B). None of the four is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, and the normalization $1_{\PP^n}$ of step [](#s3){.pf-ref} to say which generator of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) uses (R) in step [](#s6){.pf-ref}: the book proves it for curves and for $n\ge2$ it is an input, which the card names and does not prove.
+The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's numerical identities can therefore hold only if the trace is normalized to match that integer, which is what the head of the solution states as (N), (G), (R) and (B). None of them is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and uses the normalization $1_{\PP^n}$ of that step to say which generator of $H^p(\PP^n,\Omega^p)$ the number $\deg Y$ is measured against. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves and for $n\ge2$ it is an input, which the card names and does not prove.
 :::
