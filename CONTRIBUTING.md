@@ -35,7 +35,7 @@ This does not publish the site and does not weaken `QUAL-06`: ordinary content c
 | `QUAL-08` | Keep process off public cards | Record issue capture and project process in COMPLAINTS.md, the issue tree, and the work queues, not in rendered remarks (`PROSE-11`). |
 | `QUAL-09` | One checkout, one branch | Work directly on `main` in the single clone. Do not create worktrees or branches: streams author disjoint cards, so there is nothing to isolate. A commit that sweeps in a sibling's edit is a wrong message, not lost work — `git commit --amend`, or commit an explicit pathspec. Before retiring a worktree left over from the old rule, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
 | `QUAL-10` | Proof standard is the qual examiner | Theory cards and wiki pages state results and cite standard course material; they carry no proof obligation. Write a proof only where a solution uses a result an examiner would not accept by citation — beyond the standard course material for its subject — and put that proof in the solution or on the linked card it uses. Do not add proofs to standard results. |
-| `QUAL-11` | Dated records are append-only | An `audit` event or a dated `COMPLAINTS.md` record states what a session found on that day, and later text refers to it; a correction is a new event or record of the commit's date, never a rewrite of the earlier text in place. A record states its own day first: a section heading begins with it (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or numbered item carries it. The shared local gate refuses a commit that changes or deletes a card audit event or a dated record whose day is earlier than the commit's, naming the card and the event, or the file and the record. |
+| `QUAL-11` | Dated records are append-only | An `audit` event or a dated `COMPLAINTS.md` record states what a session found on that day, and later text refers to it; a correction is a new event or record of the commit's date, never a rewrite of the earlier text in place. A record states its own day first: a section heading begins with it (`## 2026-11-16: …`), and the bold or italic lead that opens a paragraph or numbered item carries it. The one change the rule asks for is the opposite of a rewrite: a record that a later commit edited in place is restored to the text it carried on its day, and that text is the evidence, so the shared local gate refuses a commit that changes or deletes a dated event or record unless the replacement text stands verbatim in an earlier revision of the same path. The gate names the card and the event, or the file and the record. |
 
 ### Policy families
 
@@ -502,6 +502,8 @@ A definitional equality is `\coloneqq`. The small epsilon is `\varepsilon`. Elli
 **Bad:** `\mathrm{Hom}(A,B)`; `Aut(G)`; `|f(z)|`; `\lVert x\rVert`; `f := g`; `\epsilon`; `a_1 + ... + a_n`.
 
 **Good:** `\Hom(A,B)`; `\Aut(G)`; `\abs{f(z)}`; `\norm{x}`; `f \coloneqq g`; `\varepsilon`; `a_1 + \cdots + a_n`.
+
+This rule and `STYLE-02` and `STYLE-03` govern what a session writes now, which is why the card check reads the header's fields and the body and leaves the `audit:` block alone: a dated event is a record (`QUAL-11`), and a style rule applied to it would demand the in-place rewrite the record forbids.
 
 ### `STYLE-05`: Multi-part problems label parts as “(a)”, “(b)”
 

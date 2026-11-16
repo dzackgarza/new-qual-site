@@ -1013,6 +1013,12 @@ dates, at the foot, under `Audit trail`. An event dated before the commit that
 carries it is a record, not a draft: the local gate refuses a commit that
 changes or deletes one, so a correction is a new event dated the commit's date
 (`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
+The rule also runs the other way: an event a later commit rewrote in place is
+restored to the text it carried on its day, and the gate accepts that
+restoration when the replacement text stands in an earlier revision of the same
+path — the text is the evidence, so a session cannot write new words into a
+dated event. `STYLE-02`, `STYLE-03` and `STYLE-04` are not applied to the
+`audit:` block for the same reason: a record keeps the symbols of its day.
 `COMPLAINTS.md`'s dated records are held to the same rule and state their own
 day first: a section heading begins with it (`## 2026-11-16: …`), and the bold
 or italic lead that opens a paragraph or numbered item carries it. A push

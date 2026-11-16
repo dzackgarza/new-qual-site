@@ -9,6 +9,7 @@ import re
 import subprocess
 import sys
 from collections import Counter
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from functools import cache, cached_property
@@ -25,6 +26,8 @@ from .tex import mark_definienda
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
+# A card's dated events, whose text QUAL-11 makes a record rather than authored prose.
+AUDIT_BLOCK = re.compile(r"^(?P<indent>[ \t]*)audit:[ \t]*$", re.MULTILINE)
 TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
 # STYLE-03: every blackboard-bold object has a semantic macro in vocabularies/macros.json,
 # so the display choice for each meaning is made once in the preamble.
@@ -251,22 +254,67 @@ def audit_records(source: str) -> list[AuditRecord]:
     return [AuditRecord(day=_audit_day(event), text=_audit_text(event)) for event in events]
 
 
-def rewritten_audit_events(path: Path, before: str, after: str, day: date) -> list[str]:
+def authored_prose(source: str) -> str:
+    """A card's source without its `audit:` block.
+
+    STYLE-02 to STYLE-04 govern what a session writes now, and a dated event is text no
+    session may rewrite (QUAL-11): the rule applied to it would demand the rewrite the
+    other rule forbids. So the checks read the header's other fields and the body, and
+    leave the events as the sessions of their day wrote them.
+    """
+    match = AUDIT_BLOCK.search(source)
+    if match is None:
+        return source
+    lines = source[match.end() :].splitlines(keepends=True)
+    end = len(lines)
+    for index, line in enumerate(lines):
+        if line.strip() and not line.startswith((" ", "\t", "- ")):
+            end = index
+            break
+    return source[: match.start()] + "".join(lines[end:])
+
+
+def earlier_texts(path: Path, revision: str, texts: set[str]) -> set[str]:
+    """Those of `texts` that stand verbatim in an earlier revision of `path`.
+
+    The one change QUAL-11 allows to a dated record is a return to the text it carried
+    when it was written, and the evidence for that is the text itself standing in the
+    history of the same path. A session writing new text today cannot produce it without
+    an earlier revision to copy from. This runs only where a dated record is about to be
+    reported, so an ordinary commit pays nothing for it.
+    """
+    found: set[str] = set()
+    revisions = subprocess.run(["git", "log", "--format=%H", revision, "--", path.as_posix()], check=True, stdout=subprocess.PIPE, text=True).stdout.split()
+    for earlier in revisions:
+        if found == texts:
+            break
+        found |= {text for text in texts - found if text and text in previous_source(path, earlier)}
+    return found
+
+
+def rewritten_audit_events(path: Path, before: str, after: str, day: date, earlier: Callable[[set[str]], set[str]] | None = None) -> list[str]:
     """Audit events dated before the commit whose text it changes or removes (QUAL-11).
 
     An event dated before the commit records what a session found on that day, and the
     events after it refer to that text; a later correction is a new event dated the
     commit's date, so the earlier record keeps meaning what it said. Events dated the
-    commit's own day are still in flight and may be edited, and an appended event is
-    always accepted.
+    commit's own day are still in flight and may be edited, an appended event is always
+    accepted, and an event restored to a note that stood for that event in an earlier
+    revision of the path is the repair QUAL-11 asks for rather than a rewrite of it —
+    which is why an edit made in place earlier in the branch can still be undone.
     """
     kept = Counter(record.text for record in audit_records(after))
+    later = audit_records(after)
     errors: list[str] = []
     for record in audit_records(before):
         if record.day is None or record.day >= day:
             continue
         if kept[record.text]:
             kept[record.text] -= 1
+            continue
+        candidates = [other for other in later if other.day == record.day and other.text[:2] == record.text[:2]]
+        restored = earlier({other.text[3] for other in candidates}) if earlier is not None and candidates else set()
+        if any(other.text[3] in restored for other in candidates):
             continue
         kind, by, _, note = record.text
         said = f", whose note begins {excerpt!r}," if (excerpt := " ".join(note.split())[:60]) else ""
@@ -326,16 +374,22 @@ def dated_records(source: str) -> list[tuple[date, str]]:
     return records
 
 
-def rewritten_complaint_records(path: Path, before: str, after: str, day: date) -> list[str]:
+def rewritten_complaint_records(path: Path, before: str, after: str, day: date, earlier: Callable[[set[str]], set[str]] | None = None) -> list[str]:
     """Dated COMPLAINTS records a commit changes or deletes (QUAL-11).
 
     A record dated before the commit is kept as it stands; text appended after it leaves
     it intact, and editing a word of it or removing it does not. A record dated the
-    commit's own day is still in flight.
+    commit's own day is still in flight, and a record restored to the text it carried on
+    its day — text that stands in an earlier revision of this file — is that repair.
     """
     errors: list[str] = []
+    later = dated_records(after)
     for record_day, text in dated_records(before):
         if record_day >= day or text in after:
+            continue
+        same_day = [other for other_day, other in later if other_day == record_day]
+        restored = earlier(set(same_day)) if earlier is not None and same_day else set()
+        if any(other in restored for other in same_day):
             continue
         said = " ".join(text.split())[:60]
         errors.append(f"{path}: the record dated {record_day}, beginning {said!r}, was changed or deleted; a dated record states what that day found, so a correction is a new record dated {day} (QUAL-11)")
@@ -451,7 +505,7 @@ def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> li
             earlier = moves.get(change.path, change.path)
             if earlier == change.path and not previous_source(earlier, base) and (card_id := source_identity(source)) is not None:
                 earlier = retired.get(card_id, change.path)
-            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day))
+            errors.extend(rewritten_audit_events(change.path, previous_source(earlier, base), source, day, lambda texts, path=change.path: earlier_texts(path, base, texts)))
     return errors
 
 
@@ -480,11 +534,12 @@ def check_git_changes(changes: list[GitChange], base: str) -> int:
                 selected.append((change, source))
             for diagram in TIKZCD.findall(source):
                 compile_tikzcd_block(diagram)
-            if raw := RAW_BLACKBOARD.search(source):
+            prose = authored_prose(source)
+            if raw := RAW_BLACKBOARD.search(prose):
                 errors.append(f"{change.path}: {raw.group()} is written with its semantic macro (STYLE-03)")
-            if raw := BACKSLASH_DELIMITER.search(source):
+            if raw := BACKSLASH_DELIMITER.search(prose):
                 errors.append(f"{change.path}: {raw.group()} delimits math; use $...$ or $$...$$ (STYLE-02)")
-            if raw := raw_notation(source):
+            if raw := raw_notation(prose):
                 errors.append(f"{change.path}: {raw}")
             bodies.append((change.path, mark_definienda(split_front_matter(source, change.path)[1])))
         except ValueError as exc:
@@ -495,7 +550,7 @@ def check_git_changes(changes: list[GitChange], base: str) -> int:
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version)))
+        errors.extend(rewritten_complaint_records(COMPLAINTS, previous_source(COMPLAINTS, base), source, commit_day(change.version), lambda texts: earlier_texts(COMPLAINTS, base, texts)))
     errors.extend(unread_math_errors(bodies))
     if errors:
         print("\n".join(errors), file=sys.stderr)
