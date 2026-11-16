@@ -59,7 +59,7 @@ audit:
     line "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27",
     and Hirschfeld's book is not in tmp/sources; Algebraic Geometry II,
     National Taiwan University, 2020 Spring, Chapter V homework, Exercise 3 of
-    section 4, PDF pp. 15-16 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
+    section 4, PDF p. 15 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
     resolution blowups by quadratic transformations with two auxiliary centres
     and then analyses the multiplicity at P in a single chart, ending "so
     induction on this then we are done" without the case where every tangent
@@ -70,6 +70,34 @@ audit:
     singularities, but does not show that the contracted points are ordinary.
     Not checked: Hirschfeld's Theorem 3.27, which the card takes as its source
     for the inseparable case and which is not available here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Step inseparable-case gave a false reason for the separability of the
+    projection in characteristic 0: it said that a bad point carries at least
+    two tangent directions, whereas an ordinary cusp is a bad point with one
+    tangent direction. The step now argues that the projection from a bad point
+    is nonconstant on the normalization, an irreducible plane curve with a
+    singular point being no line, and that a nonconstant morphism of
+    nonsingular curves is separable in characteristic 0. Re-read the printed
+    exercise, Hartshorne, Algebraic Geometry (1977), V.4, exercise 4.3, printed
+    p. 407, and the quadratic-transformation multiplicities of (4.2), printed
+    p. 406, in the text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md; the count d, d-m, d-m of
+    step contraction-points-ordinary was rechecked and is unchanged. The
+    positive-characteristic status is unchanged: the inseparable-projection
+    case is still the unread citation of Hirschfeld, Algebraic Curves over
+    Finite Fields, Theorem 3.27, not in tmp/sources, so the exercise as printed
+    is still unproved there. The two treatments cited in the remarks were
+    re-read in their text versions and are described correctly as they stand:
+    NTU, Exercise 3 of section 4, PDF pp. 15-16
+    (tmp/sources/ntu-ag2-chapter5.md), which asserts that the singularities
+    from the blown-down lines are ordinary without showing it, and Egbert,
+    entry 5.4.3, PDF p. 286
+    (tmp/sources/hartshorne-solutions-egbert.md), the bare Hirschfeld citation.
+    Not checked: Hirschfeld's Theorem 3.27, Yang Pi-Yeh printed p. 109, and any
+    printing of these sets other than their text versions.
 ---
 
 ::: {.problem}
@@ -301,11 +329,13 @@ The same conclusion holds when an inseparable projection occurs in
 positive characteristic, and that case is *not* proved on this card.
 
 ::: pf-proof
-Over a field of characteristic $0$ the projection from a point is separable
-unless it is constant on the normalization, and a bad point carries at least two
-tangent directions, so the hypothesis of step [](#choose-auxiliary-points){.pf-ref} is automatic: the
-argument above then proves the exercise with no hypothesis. That is the case
-the book's own hypotheses give whenever $k$ has characteristic $0$.
+Over a field of characteristic $0$ a nonconstant morphism of nonsingular curves
+is separable. The projection from $P$ is nonconstant on the normalization of
+$C$: were it constant, $C$ would lie in a line through $P$, and an irreducible
+curve contained in a line is that line, while a line has no singular point.
+Hence the hypothesis of step [](#choose-auxiliary-points){.pf-ref} is automatic, and the argument above
+proves the exercise with no hypothesis. That is the case the book's own
+hypotheses give whenever $k$ has characteristic $0$.
 
 In characteristic $p$ the projection from $P$ can be inseparable --- for a
 strange curve the pencil of lines through $P$ pulls back to an inseparable

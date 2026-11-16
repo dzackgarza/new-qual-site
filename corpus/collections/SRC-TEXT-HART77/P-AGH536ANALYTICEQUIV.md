@@ -61,6 +61,37 @@ audit:
     tmp/sources/ntu-ag2-chapter5.pdf and in its MinerU text version
     tmp/sources/ntu-ag2-chapter5.md. The event above predates that file, records
     what was read from the PDF alone, and is left as it was dated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Re-read the printed exercise at Hartshorne, Algebraic Geometry (1977), V.3,
+    exercise 3.6, printed p. 395, and Remark 3.9.4 in the text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, whose page markers name
+    PDF pages: the remark sits between the markers PDF page 408 and PDF page
+    409, so printed p. 393, while exercise 3.6 follows the marker PDF page 410,
+    printed p. 395. The event of 2026-11-11 above gives 408 for the remark,
+    which is its PDF page; the published-solution remark below has been
+    corrected to printed p. 393, and that event is left as dated. Recomputed
+    both blowup chains, giving the two second strict transforms x+y''^3 and
+    x(1+y'')+y''^3, and both Tjurina numbers: 12 from the ideal (x^6,y^2), and
+    11 from the Groebner basis y^2+x^5/3, x^4y+7x^6/5, x^7 with standard
+    monomials 1,x,...,x^6,y,xy,x^2y,x^3y, whose three S-polynomials reduce to
+    zero. Corrected step c1-c2-equivalent: the two point blowups leave the
+    strict transform nonsingular but tangent to E_2 with contact order 3, so the
+    reduced total transform is not a normal crossing divisor and the two
+    sequences are not embedded resolutions; equivalence in the sense of (3.9.4)
+    rests instead on the two pairs at the last point being one pair, x = -y^3
+    against x = 0, the factor 1+y'' being a unit removed by the coordinate
+    change x -> x(1+y''). Corrected the word inequivalence to non-isomorphism in
+    the last remark, the two germs being equivalent. Checked Yang Pi-Yeh, text
+    version tmp/sources/lfwin-hartshorne-solutions.md, exercise 5.3.6, printed
+    p. 108, which gives the forward implication by completion and asserts the
+    counterexample with no computation. Also checked that the text version of
+    Egbert, tmp/sources/hartshorne-solutions-egbert.md, exercise V.3.6, is the
+    citation of Wall recorded on the card. Not checked: Wall's Singular Points
+    of Plane Curves, which is not held and is cited as printed; and the National
+    Taiwan University Chapter V homework, which has no entry for this exercise.
 ---
 
 ::: {.problem}
@@ -258,12 +289,42 @@ Both second strict transforms are nonsingular at the origin --- the partial
 derivative with respect to $x$ is $1$ there in the first case and
 $y^{\prime\prime}+1$ in the second --- and each meets the new exceptional curve
 $E_2$ in the single point $y^{\prime\prime}=0$ with multiplicity $3$, being
-tangent to it. So for the two germs the reduced total transforms have the same
-components ($E_1$, $E_2$, one strict transform of the curve, meeting in the same
-way), the same multiplicities $3,3$ at the two centres, the same single branch
-over the origin, and the same behaviour at the last step; by (3.9.4) that is
-equivalence, and both sequences are resolutions since the strict transforms are
-nonsingular at the end.
+tangent to it. So the reduced total transform is not a divisor with normal
+crossings, and these two point blowups, while they do resolve both germs, are
+not yet embedded resolutions.
+
+What they do give is one and the same pair at the last point. Read in the chart
+$y^{\prime}=xy^{\prime\prime}$ and written as equations in $x$ and
+$y^{\prime\prime}$, the second strict transforms are
+$$
+x+y^{\prime\prime 3}
+\qquad\text{and}\qquad
+x\,(1+y^{\prime\prime})+y^{\prime\prime 3},
+$$
+the first for $C_1$ and the second for $C_2$, and the new exceptional curve is
+$E_2:x=0$ in both cases. Since $1+y^{\prime\prime}$ is a unit at the origin,
+$$
+x\longmapsto x\,(1+y^{\prime\prime}),
+\qquad
+y^{\prime\prime}\longmapsto y^{\prime\prime}
+$$
+is an automorphism of the affine plane near the origin --- its inverse is
+$x\mapsto x/(1+y^{\prime\prime})$ --- which carries the line $x=0$ to itself
+and the second equation to the first. Both germs therefore present the same pair
+at the last point, $x=-y^{\prime\prime 3}$ against $x=0$.
+
+A monoidal transformation is local: the blowup of a point depends only on the
+maximal ideal there, and the strict transform only on the local equations of the
+curve and of the exceptional curves. So from that point on the two germs are
+blown up at corresponding points, with the same multiplicities and the same
+incidence with the exceptional curves already present. Blowing up until the total
+transform is a normal crossing divisor therefore gives for the two germs the
+same components ($E_1$, $E_2$, the further exceptional curves, one strict
+transform of the curve, meeting in the same way), the same multiplicities at the
+same centres, the same single branch over the origin, and the same behaviour at
+the last step; by (3.9.4) that is equivalence. It is the common pair at the last
+point, and not the two displayed blowups on their own, that makes the final
+resolution sequences coincide.
 
 The same chain gives the second cross-check: by (3.9.3),
 $$
@@ -440,11 +501,11 @@ isomorphic, proving that the converse fails.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4), printed p. 408, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, printed p. 395, with the definition of equivalence in (3.9.4), printed p. 393, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.3.6, printed p. 108, gives the forward implication through completion: the strict transform's local ring splits as a direct sum of the local rings at the points over $P$, and because completion is flat and commutes with this splitting, the completed local ring determines the resolution, so analytically isomorphic germs are equivalent. It then states "consider two curves $C=(x^3+y^7=0)$ and $C'=(x^3+xy^5+y^7=0)$ over $\CC$; they are equivalent but not analytically isomorphic" with no computation. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} give the forward implication directly from the Rees-algebra description of the blowup, and steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} compute the two Tjurina numbers $12$ and $11$ that separate the germs.
 
-Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion of step [](#puiseux-characteristic-equivalence){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources` and was not read; only that recorded statement is used, not a page. It is no longer needed for the equivalence of $C_1$ and $C_2$: step [](#c1-c2-equivalent){.pf-ref} now computes the two blowup sequences and compares them directly, so the inequivalence of the germs is what carries the counterexample and Wall's criterion is background for the standard picture.
+Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, is the published source of the Puiseux-characteristic criterion of step [](#puiseux-characteristic-equivalence){.pf-ref}: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. The book is not in `tmp/sources` and was not read; only that recorded statement is used, not a page. It is no longer needed for the equivalence of $C_1$ and $C_2$: step [](#c1-c2-equivalent){.pf-ref} now computes the two blowup sequences and compares them directly, so the non-isomorphism of the germs is what carries the counterexample and Wall's criterion is background for the standard picture.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the inequivalence that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$. Recorded in COMPLAINTS.
 :::

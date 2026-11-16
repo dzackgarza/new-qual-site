@@ -40,25 +40,50 @@ audit:
     the meaning of equivalence, and the delta formula of Example 3.9.3,
     printed page 408. Rechecked the first blowups and the multiplicities: for
     (a), x = uv, y = v gives v^3(u^3+v^2); for (e), x^3+xy^3+y^5 gives
-    v^3(u^3+uv+v^2), whose lowest part is uv+v^2 = v(u+v), the product of two
-    distinct linear forms, so the infinitely near point is an ordinary node and
-    not smooth; delta = 3 + 1 = 4 as the card says, with the 1 from the node.
-    The words "smooth at the origin" and "tangent cone is v^2", which this
-    note carried for (e) until 2026-11-16, were false of that germ and are
-    withdrawn; the card's step e-first-blowup-node had it right throughout. Searched outside the twelve
+    v^3(u^3+uv+v^2), whose tangent cone is v^2 and which is smooth at the
+    origin, so delta = 3 + 1 = 4 as the card says. Searched outside the twelve
     retained sets: NTU 2020, Exercise 7 of section 3, PDF pp. 12-13
     (tmp/sources/ntu-ag2-chapter5.pdf), has resolutions, the same five delta
     values 4,4,3,4,4 and the same equivalence classes; Yang Pi-Yeh,
     Hartshorne Solutions, printed pp. 108-109
     (tmp/sources/lfwin-hartshorne-solutions.pdf), writes the transforms
-    without delta. Corrected on 2026-11-16: Yang does decide the equivalence
-    question, on printed p. 108, and the earlier wording on this card that he
-    does not was false. It is also false that a square root of -1 enters
-    (e)'s chart: its node has branches w = 0 and w = -1. What does need a
-    hypothesis is the pair of formal identifications in step abd-equivalent,
-    x -> x(1+x)^{1/3} for (b) and y -> y(1+y)^{1/5} for (d), which need 3 and
-    5 invertible; the book's standing hypothesis is an algebraically closed
-    ground field.
+    without delta or equivalence. Not checked: whether a general ground field
+    lacks the square root of -1 used in the chart of (e); the book assumes k
+    algebraically closed, and over such a field the three points on the
+    exceptional curve exist.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Page check against the text version: Remark 3.9.4 and the delta formula of
+    Example 3.9.3 both stand between its markers for PDF pages 408 and 409, so
+    their printed page is 393, and the "printed page 408" of the 2026-11-11
+    note above is the PDF page; the remark below now cites printed p. 393 and
+    gives the PDF page in brackets. The 2026-11-11 note had been rewritten in
+    place; it is restored to the text it was dated with, and the corrections
+    are in this event. A sentence that rewrite had added, that the equivalence
+    of (a), (b) and (d) needs 3 and 5 invertible, is withdrawn: step abd-equivalent proves the equivalence from the
+    embedded-resolution data of (3.9.4), the same succession of centres with
+    the same multiplicities, incidences and tangencies, and divides by nothing
+    and asks nothing of the ground field, while the formal changes
+    x -> x(1+x)^{1/3} and y -> y(1+y)^{1/5} are only the alternative route that
+    the step itself restricts to characteristic zero. Rechecked this pass: the
+    first strict transform of (e) is v^3(u^3+uv+v^2), whose lowest part is
+    v(u+v), two distinct linear forms, so the infinitely near point is an
+    ordinary node; NTU 2020, Exercise 7 of section 3, PDF pp. 12-13 of
+    tmp/sources/ntu-ag2-chapter5.pdf, text version
+    tmp/sources/ntu-ag2-chapter5.md, whose page markers are coarse, stops at a
+    nonsingular strict transform, gives delta 4,4,3,4,4 and puts (a), (b), (d)
+    in one class; Yang Pi-Yeh, exercise 5.3.7, printed p. 108, PDF
+    tmp/sources/lfwin-hartshorne-solutions.pdf with text version
+    tmp/sources/lfwin-hartshorne-solutions.md, writes the third blowup of (a),
+    (b) and (d) and says that one more gives the normal crossings, closes "So
+    (a),(b),(d) are equivalent to each other. And (c),(e) are not equivalent to
+    any others", and gives no delta. Both descriptions on the card stand. Not
+    checked: Egbert's Singular transcript was not re-read in this pass; the
+    pagination rests on the text version alone, no printed copy being
+    consulted; and the equivalence is read off the displayed chart data rather
+    than derived from a formal classification of the germs.
 ---
 
 ::: {.problem}
@@ -568,7 +593,7 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, printed p. 395, with (3.9.4) and (3.9.3) on printed p. 408, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, printed p. 395, with (3.9.4) and (3.9.3) on printed p. 393 (PDF p. 408), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3 (solution by Ping-Hsun Chuang), PDF pp. 12--13, text version `tmp/sources/ntu-ag2-chapter5.md` (whose page markers are coarse, so the pages were read off the PDF), blows each germ up until its strict transform is nonsingular --- twice for (a), (b), (d) and (e), once for (c) --- and stops there: it draws the incidence graph of the curves produced and never carries out the further blowups at smooth points that make the total transform simple normal crossings, so what it gives is the resolution of the curve and not an embedded resolution in that sense; it reads $\delta_P$ off as $\frac12\cdot3\cdot2+\frac12\cdot2\cdot1=4$ for (a), (b), (d) and $\frac12\cdot3\cdot2=3$ for (c), and $4$ for (e), and concludes from the resolution graphs that the singularities of (a), (b), (d) are equivalent while (c) and (e) are different from the others. The five values are the ones in the table of step [](#summary-table){.pf-ref}, and the equivalence classes are the ones of steps [](#abd-equivalent){.pf-ref}, [](#c-not-equivalent){.pf-ref} and [](#e-not-equivalent){.pf-ref}.
 

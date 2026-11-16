@@ -81,6 +81,29 @@ audit:
     Pi-Yeh's exercise 5.4.4, printed p. 109, uses a different configuration
     with the same shape and is not needed. Andrew Egbert's entry for (b),
     PDF p. 287, is the citation of Silverman-Tate only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrected the restriction of part (b) to a nonsingular cubic, which the
+    printed exercise does not make. Hartshorne, Algebraic Geometry (1977), V.4,
+    exercise 4.4, printed p. 407, text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md (printed page = its marker
+    minus 15; the exercise stands after the marker for PDF p. 422), states part
+    (a) for an irreducible plane cubic and part (b) on the set of regular points
+    of that C, citing (II, 6.10.2) and (II, 6.11.4); (II, 6.11.4), same file,
+    printed p. 142, is the cuspidal cubic y^2z = x^3, whose (b) is the group law
+    on its nonsingular closed points and whose proof records that the geometric
+    constructions stay off the singular point. Step two-collinear-triples now
+    carries the line the exercise leaves implicit: a line through a singular
+    point of the cubic meets it there with multiplicity at least 2, Bezout makes
+    the total multiplicity 3, so the third point of a line through two regular
+    points is regular, and R, T, V, W, X, Y are regular in that order from
+    regular P, Q, U and the inflection point P_0. The same restriction is
+    corrected in the remark on published solutions. Not checked this pass: the
+    NTU PDF page 16 was not re-read from the PDF, so no claim is made about how
+    the located solutions handle a singular cubic; the associativity chain
+    itself is unchanged.
 ---
 
 ::: {.problem}
@@ -381,19 +404,25 @@ Each of the six points is the third intersection of a named line with $C$,
 which is the configuration of the published proof, PDF p. 16: $R$ on $PQ$,
 $T$ on $P_0R$, $V$ on $TU$, $W$ on $P_0V$, $X$ on $QU$, $Y$ on $PV$.
 
-That they are smooth points of the cubic has to be said, because the
-chord-and-tangent construction takes the line through two of them and the
-exercise's operation is defined on the *regular* points of $C$. The card works
-with $C$ a nonsingular plane cubic, which is the case the group law of
-(II, 6.10.2) is stated for and the one the cubic-surface application gives:
-then every point of $C$ is smooth, $P,Q,U$ are such points by hypothesis, and
-each of $R,T,V,W,X,Y$ lies on $C$, being the third intersection of a line with
-it, hence is smooth as well. Bézout gives $C\cdot L=3$ for a line $L$ with
-$L\not\subset C$, counted with multiplicity, so the third point is well defined
-and $X*Y$ is defined at every point of $C$. For a cubic with a node or a cusp
-the same computation runs as long as the lines drawn avoid the singular point,
-which is the caveat the printed exercise leaves implicit in the word
-``regular''.
+That they are regular points has to be said, because the exercise takes $C$
+irreducible and defines the operation on the *regular* points of $C$ alone: its
+own second citation (II, 6.11.4) is the cuspidal cubic $y^2z=x^3$, whose group
+law is stated for its nonsingular closed points, so a singular cubic is one the
+printed exercise covers. Regularity is therefore something to be propagated from
+the hypothesis to the six constructed points. A singular point of an irreducible
+plane curve has multiplicity at least $2$, and the equation restricted to a line
+through that point has order at least that multiplicity there, so the line meets
+$C$ at the point with multiplicity at least $2$. By Bézout, a line $L$ with
+$L\not\subset C$ meets $C$ with total multiplicity $3$. Hence $X*Y$ is a regular
+point whenever $X$ and $Y$ are: were it singular, the line $XY$ would meet $C$
+with multiplicity at least $2$ at $X*Y$, at least $1$ at $X$ and, when $X$ and
+$Y$ are distinct, at least $1$ at $Y$, that is $4>3$; when $X=Y$ that line is the
+tangent at $X$, contributing $2$ at $X$ and at least $2$ at $X*Y$, again $4>3$.
+The inflection point $P_0$ is regular, the tangent line being defined there.
+With $P,Q,U$ and $P_0$ regular by hypothesis, the definitions $R=P*Q$,
+$T=P_0*R$, $V=T*U$, $W=P_0*V$, $X=Q*U$ and $Y=P*V$ apply one after another to
+pairs of regular points, so all six points are regular and the operations above
+are defined.
 
 Since $\iota$ is the third point on the line through $P_0$,
 $$
@@ -488,7 +517,7 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.4, printed p. 407, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15): part (a) is the lemma on cubics proved from (4.5), and part (b) defines the group operation on the regular points of a nonsingular plane cubic $C$ with an inflection point $P_0$ as the recipe of (II, 6.10.2) and (II, 6.11.4), which is the operation the steps below use.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.4, printed p. 407, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15): part (a) is the lemma on cubics, stated there for an irreducible plane cubic and proved from (4.5), and part (b) defines the group operation on the set of regular points of that $C$, with an inflection point $P_0$, by the recipe of (II, 6.10.2) and (II, 6.11.4), which is the operation the steps below use. The second citation is the cuspidal cubic $y^2z=x^3$, whose printed statement (p. 142) is the group law on its nonsingular closed points, so the exercise is written for the irreducible case and not only the nonsingular one; what it leaves to the reader, that the six constructed points are regular, is step [](#two-collinear-triples){.pf-ref}.
 
 Part (b) has published arguments. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 4(b) (solution by Tzu-Yang Chou), PDF p. 16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the page was read off the PDF), takes three points $P,Q,U$, sets $PQ\cap C=P,Q,R$; $P_0R\cap C=P_0,R,T$; $TU\cap C=T,U,V$; $P_0V\cap C=P_0,V,W$; $QU\cap C=Q,U,X$; $PV\cap C=P,V,Y$, applies part (a) to the two triples of lines $PQR$ and $TUV$ to conclude that $P_0,X,Y$ are collinear, and reads off
 $$(P+Q)+U=T+U=W=P+Y=P+(Q+U).$$
