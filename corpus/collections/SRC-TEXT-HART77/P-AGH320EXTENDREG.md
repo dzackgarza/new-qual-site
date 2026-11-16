@@ -145,6 +145,35 @@ audit:
     its two claims are false of the file. (3) The remark's "concludes h notin q
     from h(Q) != 0" is the card's paraphrase, not Xu's sentence; it now says so
     and quotes his. Part (b), step s5 and the proof of (a) are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Corrections to the events of 2026-11-16 above and to the remark, from
+    checks made on this pass; the events are dated and are left as written.
+    (1) The third-pass event above says the remark "has named
+    tmp/sources/vakil-rising-sea-2025-10-21.md beside the PDF since 861dc519ec
+    wrote it". 861dc519ec did not write the remark: it added the file names to
+    a remark that bf55c82a00 wrote on 2026-11-11 without naming any file and
+    that f67ed2b29e rewrote on 2026-11-16 before 861dc519ec ran; the correct
+    statement is that the remark has named both files since 861dc519ec added
+    them. (2) The same event says 97dd0afc3f's "subject names other cards'
+    citations"; its message names this card too, listing "nine citations that
+    gave the PDF alone (P-AGH320, P-AGH4110 three, P-AGH422 five, P-AGH4311
+    one)", a list of ten, and this card is not one of the citations that gave
+    the PDF alone. (3) The source-corrected event that eac6b09d18 wrote says
+    the remark "has named the 2025 text version there since it was written",
+    which is false for the same reason: the remark named no file at
+    bf55c82a00. (4) The source-checked event of 2026-11-11 was edited in place
+    twice, by f67ed2b29e, which pinned the 2025 text version to the 2011
+    draft's printed pp. 267-268, and by 861dc519ec, which removed it again; its
+    present text is what bf55c82a00 wrote at its date, so nothing needs
+    restoring. (5) The remark's third slip described the wrong defect. Xu's
+    sentence "otherwise h(Q)=0 for all Q in V_q" is the hypothesis h in q
+    spelled out and is correct; what is false is its next clause, "Then f
+    would not be regular in V_q", since a denominator vanishing at Q does not
+    make f irregular there. The remark now names that clause and says that the
+    step from h(Q) != 0 to h notin q is the card's repair.
 ---
 
 ::: {.problem}
@@ -325,5 +354,5 @@ No Hartshorne solution set contains a proof of this exercise, and Vakil's book p
 
 The first answer is the accepted answer of hwong557, answer 1791316 to question 1791250, *Regular functions extension to normal points of varieties*, text version `tmp/sources/mse-1791250-regular-functions-extension-normal-points.md`. It states the height-one intersection for $A(Y)_{\mathfrak m_P}$ and continues: "Our given $f$ is a rational function so must be of the form $g/h$, where $g$ and $h$ lie in $A(Y)$ and $h\ne0$. It remains to show that $h$ is not in any height $1$ prime $\mathfrak q\subset\mathfrak m_P$, because then $f$ will lie in $A(Y)_{\mathfrak m_P}$ so $f$ will be regular at $P$. If $h$ were in such a prime $\mathfrak q$, then $h$ would vanish on $Z(\mathfrak q)$. We can find a point $Q\ne P$ in $Z(\mathfrak q)$ because $\dim Y\ge2$ (basically $\mathfrak q\subsetneq\mathfrak m_P$ by Hartshorne Thm 3.2c). But $f$ is regular at $Q$ so $h$ cannot vanish at $Q$. So $h\notin\mathfrak q$, as desired." **That last inference is false, and the paragraph is therefore not step [](#s2){.pf-ref}.** It fixes one representation $f=g/h$ once for all points and then concludes from regularity of $f$ at $Q$ that this fixed $h$ does not vanish at $Q$; regularity at $Q$ gives *some* representation $f=a/b$ with $b(Q)\ne0$ and says nothing about $h$. On $Y=\AA^2$ with $P=(0,0)$, the function $f\equiv1$ on $Y\sm\{P\}$ is represented by $x/x$, and for the height-one prime $(x)$, with $Q=(0,1)\in V(x)$, the function $f$ is regular at $Q$ while $h=x$ vanishes there. The reply appended to the answer makes the same inference in one line, "Since $f$ is regular at $Q$, $f\in\mco_Q$. This means $g/h$ lies in $A(Y)_{\mathfrak m_Q}$. So $h\notin\mathfrak m_Q$": membership of the fraction $g/h$ in a localization says that some denominator $s\notin\mathfrak m_Q$ clears it and nothing about $h$ itself. Step [](#s2){.pf-ref} avoids the inference by choosing the representation *after* the prime: it finds $Q$ first, represents $f$ at $Q$, and reads $b\notin I(Q)$ off $b(Q)\ne0$, hence $b\notin\mathfrak p$, since $\mathfrak p\subseteq I(Q)$.
 
-The answer of Hetong Xu, answer 3771982 to question 846109, *Hartshorne Problem I.3.20*, text version `tmp/sources/mse-846109-hartshorne-problem-i-3-20.md`, does choose the representation at the point, and with its slips repaired it is the argument of step [](#s2){.pf-ref}: for a height-one prime $\mathfrak q\subset\mathfrak m_P$ it takes $Q\ne P$ in $V_\mathfrak q$, takes a neighbourhood of $Q$ on which $f=g/h$, and infers $h\notin\mathfrak q$; the card's "concludes $h\notin\mathfrak q$ from $h(Q)\ne0$" is its paraphrase of his "Now we claim that $h\notin\mathfrak q$. In fact, otherwise $h(Q)=0$ for all $Q\in V_\mathfrak q$. Then $f$ would not be regular in $V_\mathfrak q$", and at the chosen $Q$ the inference is correct because $\mathfrak q\subseteq I(Q)$ while $h\notin I(Q)$. Its slips are these: the neighbourhood on which $f=g/h$ is an open set of $Y$ and not, as written, a subset of $V_\mathfrak q$; $g$ and $h$ are sections of $\mco_Y$ on an affine open containing $Q$, not global sections; and the sentence "otherwise $h(Q)=0$ for all $Q\in V_\mathfrak q$" states the contrapositive for every $Q$ where the chosen one would do. Its reduction to the affine case, and its derivation of $\mathfrak q\subsetneq\mathfrak m_P$ from $\dim Y\ge2$ through Hartshorne's Theorem I.3.2 and the height of $\mathfrak m_P$, are steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. It takes the intersection theorem itself from Matsumura, *Commutative Ring Theory*, Theorem 11.5, "Let $R$ be a normal Noetherian domain. Then $R=\bigcap_{\operatorname{ht}\mathfrak p=1}R_\mathfrak p$" --- the numbering the card has always carried. Part (b) is in neither answer: the punctured line of step [](#s5){.pf-ref} is the card's.
+The answer of Hetong Xu, answer 3771982 to question 846109, *Hartshorne Problem I.3.20*, text version `tmp/sources/mse-846109-hartshorne-problem-i-3-20.md`, does choose the representation at the point, and with its slips repaired it is the argument of step [](#s2){.pf-ref}: for a height-one prime $\mathfrak q\subset\mathfrak m_P$ it takes $Q\ne P$ in $V_\mathfrak q$, takes a neighbourhood of $Q$ on which $f=g/h$, and infers $h\notin\mathfrak q$; the card's "concludes $h\notin\mathfrak q$ from $h(Q)\ne0$" is its paraphrase of his "Now we claim that $h\notin\mathfrak q$. In fact, otherwise $h(Q)=0$ for all $Q\in V_\mathfrak q$. Then $f$ would not be regular in $V_\mathfrak q$", and at the chosen $Q$ the inference is correct because $\mathfrak q\subseteq I(Q)$ while $h\notin I(Q)$. Its slips are these: the neighbourhood on which $f=g/h$ is an open set of $Y$ and not, as written, a subset of $V_\mathfrak q$; $g$ and $h$ are sections of $\mco_Y$ on an affine open containing $Q$, not global sections; and his last clause, "Then $f$ would not be regular in $V_\mathfrak q$", is false as it stands, for the reason the card gives against hwong557: a denominator that vanishes at $Q$ does not make $f$ irregular there. The step from $h(Q)\ne0$ to $h\notin\mathfrak q$ is the card's own repair of the argument, not his sentence. Its reduction to the affine case, and its derivation of $\mathfrak q\subsetneq\mathfrak m_P$ from $\dim Y\ge2$ through Hartshorne's Theorem I.3.2 and the height of $\mathfrak m_P$, are steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. It takes the intersection theorem itself from Matsumura, *Commutative Ring Theory*, Theorem 11.5, "Let $R$ be a normal Noetherian domain. Then $R=\bigcap_{\operatorname{ht}\mathfrak p=1}R_\mathfrak p$" --- the numbering the card has always carried. Part (b) is in neither answer: the punctured line of step [](#s5){.pf-ref} is the card's.
 :::
