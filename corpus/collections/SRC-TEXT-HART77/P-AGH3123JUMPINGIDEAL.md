@@ -425,11 +425,12 @@ $$
 $$
 Those six do not generate $\mci$.  The polynomial $x_0x_4-x_1x_3$ vanishes
 on the parametrization, both of its monomials being $t^4u^4$, and it is not in
-the ideal they generate: modulo $a$ the six become the multiples
+the ideal they generate: modulo $a$ the six become
 $$
-x_2^2,\ x_0x_2,\ x_1x_2,\ x_2x_3,\ x_2x_4
+x_2^2,\ x_0x_2,\ x_1x_2,\ x_2x_3,\ x_2x_4,
 $$
-of $x_2$, and $x_0x_4-x_1x_3$ is divisible by no such thing.  His fibre at
+so the reduction of the ideal it generates is the set of multiples of $x_2$,
+and $x_0x_4-x_1x_3$ is not divisible by $x_2$.  His fibre at
 $a=0$ is therefore $x_2\mathfrak m=(x_0x_2,x_1x_2,x_2^2,x_2x_3,x_2x_4)$, whose
 zero locus is the hyperplane $V(x_2)$ and not the quartic curve
 $X_0\subseteq V(x_2)$: a point with $x_2\ne0$ and all other coordinates zero is
