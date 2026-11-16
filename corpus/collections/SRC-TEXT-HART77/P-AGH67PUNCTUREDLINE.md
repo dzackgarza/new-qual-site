@@ -213,6 +213,37 @@ audit:
     that event stands above it. The note is a dated record and is not
     touched; the order is the one 2e7631a711 gave the two events, which added
     both. Nothing else on the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events: two of
+    this card's records stand rewritten and the gate refuses their
+    restoration, so neither is touched here and this event is the record of
+    it. (1) Commit 96b162602a (committer date 2026-11-15 14:38:11) replaced
+    the first 2026-11-15 source-checked note, the one 9bb4dbad80 committed,
+    by a longer note naming the PDF page of the checked-in extraction, the
+    MinerU extraction of Shichijo and three defects of his solution; that
+    commit and that record carry the same day. (2) Commit f67ed2b29e
+    (committer date 2026-11-16 02:30:41) added the text-version paths of
+    Borcherds, Egbert and Cutrone--Marshburn to the second 2026-11-15
+    source-checked note. Those two records share one identity in the gate's
+    sense, source-checked by claude on 2026-11-15, so the one-to-one
+    comparison of tools/qualc/authoring.py cannot tell which is which: a
+    commit that restores either of them, or both, is refused with "multiple
+    dated audit events share one identity (source-checked, claude,
+    2026-11-15); their earlier texts cannot be distinguished, so the
+    comparison is refused (QUAL-11)", together with the line naming the event
+    it restores as changed. A restoration is the repair QUAL-11 asks for and
+    it waits on a comparison that separates two records of one identity; this
+    card is left as committed until that comparison exists, and no record
+    here is edited to make the pair distinguishable. The three defects the
+    replaced note named are stated in the body meanwhile: the paragraph on
+    Shichijo after step r-equals-s and the Shichijo paragraph of the
+    published-solution remark give his own Exercise 6.3 block and Corollary
+    I.6.12 in place of Exercise I.6.8, the omitted infinity in his displayed
+    identity, and the converse left as an assertion. Nothing in the problem,
+    the solution or the pages changes, and no page was re-read.
 
 ---
 
