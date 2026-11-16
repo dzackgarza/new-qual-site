@@ -15,6 +15,18 @@ audit:
   by: kimi
   date: 2026-11-16
   note: >-
+    Withdraws only the sentence "The surjectivity halves remain unproved." in the
+    2026-11-16 `source-corrected` event headed "#123 reader's report, sixth pass, on
+    the fifth-pass event above." Both surjectivity halves at the two $\pi_1$ pointed-set
+    windows are proved in the solution: the first lifts a relative $2$-disk and
+    concatenates with its boundary, and the second concatenates with a lift of the
+    reversed starting edge. The two arguments headed "Surjectivity" show that the maps
+    are onto. No proof or earlier event is changed, and no other sentence of that event
+    is withdrawn here.
+- event: source-corrected
+  by: kimi
+  date: 2026-11-16
+  note: >-
     #123 reader's report after the surjectivity repair. The report accepts both new
     surjectivity arguments and rejects the second window's step $b=\partial\mu$ from
     equality under $\gamma$: the old chase established only a trivial basepoint fibre,
