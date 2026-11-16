@@ -154,6 +154,49 @@ audit:
     checked: no source beyond the two named and the book was read in this
     pass, and whether Y has exactly one singular point was not verified
     independently of delta = p_a - g = 1.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report on the transcription, and the rendering repairs it
+    required. (i) The solution's preamble read "Every step below transcribes a
+    published argument", which steps s6, s9 and s10 contradict, each of them
+    marked on the card as its own; it now says that a step naming a source
+    transcribes that source and that a step no source carries is marked as this
+    card's. (ii) The paragraph that stood after the genus-three sentence was an
+    account of how the statement of part (c) was repaired --- the book's
+    "nonsingular" replaced by "integral with normalization C" --- and
+    belongs in this record, not on the rendered page: it is here, and it reads
+    as the event above states it, the book printing "X contains a nonsingular
+    curve Y = 3C_0 - 3f, such that pi: Y -> C is purely inseparable" and
+    adjunction giving p_a(Y) = 4 against the genus 3 of the Frobenius twist
+    C^(3) = C; the rendered solution now carries the statement without the
+    account of the repair. (iii) Out of the preamble and the remark went the
+    tmp/sources paths, which are this VM's bookkeeping and not part of a
+    citation, and out of the remark went the words "a source not in
+    tmp/sources" after Egbert's citation of Miyanishi, Open Algebraic Surfaces,
+    lemma 2.5.2.2 --- that book was not read for this card, which is the fact
+    worth recording and is recorded here. What was read, in this pass and in
+    the pass above, and where: Hartshorne 1971 in
+    tmp/sources/hartshorne-1971-ample-vector-bundles-curves.md beside
+    tmp/sources/hartshorne-1971-ample-vector-bundles-curves.pdf, Lemma 3.1 on
+    the folios numbered 84 and 85 with the identification and the composition
+    on p. 85, and Example 3.2 on pp. 85 and 86 with both Riemann--Roch
+    dimensions on p. 85; Xie in
+    tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md
+    beside its PDF, Example 3.1 on the folios numbered 5 and 6 --- its
+    smoothness sentence, "It is easy to verify that both E and C' are smooth
+    over k", is on p. 5, as the step quoting it says --- and Lemma 4.4 on
+    pp. 10 and 11; Egbert in tmp/sources/hartshorne-solutions-egbert.md, which
+    paginates by PDF page, pp. 271 to 273; Yang Pi-Yeh in
+    tmp/sources/lfwin-hartshorne-solutions.md, exercise 5.2.15 on printed
+    pp. 105--106; and the National Taiwan University 2020 Spring set in
+    tmp/sources/ntu-ag2-chapter5.md, which has no entry for Exercise 15 of §2.
+    The COMPLAINTS record of this date for this batch said Xie's smoothness
+    sentence stands on printed p. 6; the folio carrying it is p. 5, and the
+    correction is stated in a record of this date rather than in that one.
+    Nothing else on the card was changed, and no mathematics was altered by
+    this repair.
 
 ---
 
@@ -174,7 +217,7 @@ and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains 
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source, numbered statement and printed page: Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, text version `tmp/sources/hartshorne-1971-ample-vector-bundles-curves.md`, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, text version `tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md`, Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
+A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
 
 As in Hartshorne's notation, write
 $$
@@ -189,8 +232,6 @@ $$
 C=V(F)\subseteq\PP^2
 $$
 is nonsingular, hence has genus $3$.
-
-The exercise's part (c) is stated with $Y$ integral of normalization $C$ rather than nonsingular, and step [](#s9){.pf-ref} is why: for any integral curve $Y$ on the nonsingular surface $X$ in the class $3C_0-3f$, adjunction gives $p_a(Y)=4$, while a curve mapping purely inseparably of degree $3$ onto the genus-three curve $C$ has normalization $C$ itself, so no nonsingular curve carries that class. The published construction supplies an integral $Y\equiv3C_0-3f$ with normalization $C$, steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and the singular point is step [](#s9){.pf-ref}.
 
 ::: pf
 
@@ -394,9 +435,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 ::: {.remark title="Published solution"}
 Parts (a) and (b) have complete published arguments, and the curve of part (c) does too, apart from the printed adjective.
 
-Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, text version `tmp/sources/hartshorne-1971-ample-vector-bundles-curves.md` with its PDF beside it: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
+Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, text version `tmp/sources/xie-2007-kawamata-viehweg-counterexamples-ruled-surfaces.md`: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $f\restrictionof_R$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $f\restrictionof_R$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", a source not in `tmp/sources`. Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, text version `tmp/sources/ntu-ag2-chapter5.md`, has no entry for Exercise 15 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
