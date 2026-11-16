@@ -130,6 +130,18 @@ audit:
     non-isomorphism half is step not-analytically-isomorphic. Both facts are recorded in
     COMPLAINTS.md's V.3.6 entry, which says the book is not among the retained files. No
     mathematical claim changes, and nothing was re-read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    The same reader's finding, in the two places the event above did not reach. The
+    solution's Puiseux step called Wall's book "the retained source for V.3.6", and the
+    Egbert paragraph said the book "is not among the retained files, so both halves are
+    citations". Which files this machine holds is no part of either statement
+    (PROSE-11, QUAL-08). The step now attributes the theorem to Wall's book and records
+    that Egbert's entry cites it; the Egbert paragraph says both halves rest on Wall's
+    account as Egbert reports it. No mathematical claim changes, and nothing was re-read
+    in this pass.
 
 ---
 
@@ -228,8 +240,8 @@ the Puiseux characteristic, and equal Puiseux characteristic gives the same
 equivalence class in (3.9.4).
 
 ::: pf-proof
-This is the standard Puiseux-resolution theorem cited by the retained source
-for V.3.6 (Wall, *Singular Points of Plane Curves*). The characteristic
+This is the standard Puiseux-resolution theorem (Wall, *Singular Points of
+Plane Curves*), which Egbert's entry for V.3.6 cites. The characteristic
 exponents of each branch, together with pairwise contact data, determine the
 successive point-blowup resolution data, and conversely that resolution data
 recovers the Puiseux characteristics. Step [](#automorphism-identifies-resolution-data){.pf-ref} gives the forward statement
@@ -546,5 +558,5 @@ Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-
 
 Wall, *Singular Points of Plane Curves* (LMS Student Texts 63), Ch. 3, states the Puiseux-characteristic criterion that step [](#puiseux-characteristic-equivalence){.pf-ref} records: equisingularity of plane branches is equivalent to equality of Puiseux characteristics, and analytic isomorphism preserves them. Step [](#c1-c2-equivalent){.pf-ref} does not use it, computing the two blowup sequences and comparing them directly, and the non-isomorphism of the germs is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$; Wall's criterion is the standard background for the picture and carries no step of the counterexample.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Wall's book is not among the retained files, so both halves are citations; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the failure of analytic isomorphism that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.3.6, PDF p. 279: "See Wall's, *Singular Points of Plane Curves* where he proves that analytically isomorphic $\Rightarrow$ same puiseux characteristic $\Rightarrow$ equivalence in the sense of 3.9.4. Furthermore he shows that two curves are equisingular iff they have the same puiseux characteristic. However the example is then given of the two curves $C_1:y^3+x^7=0$ and $C_2:y^3+x^5y+x^7=0$ which are equisingular but not analytically isomorphic." Both halves rest on Wall's account as Egbert reports it; the pair of curves is his. Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove the forward implication directly, from the formal coordinate change lifting an analytic isomorphism and the Rees-algebra description of the blowup; the same two curves appear in steps [](#same-puiseux-pair){.pf-ref} and [](#c1-c2-equivalent){.pf-ref}, and the failure of analytic isomorphism that he asserts is step [](#not-analytically-isomorphic){.pf-ref}, by Tjurina numbers $12$ and $11$.
 :::
