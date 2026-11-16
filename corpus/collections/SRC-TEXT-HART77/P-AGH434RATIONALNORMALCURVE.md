@@ -160,9 +160,8 @@ Each $a_i$ may be taken homogeneous of $t$-degree $dk_i$, since every element of
 $S(X)$ is a sum of forms of $t$-degree divisible by $d$. Comparing $t$-degrees
 in that relation gives $d\mid\deg f$; this is the line the source prints as
 "$mn=m(n-1)+dk_{n-1}+\cdots=m+dk_1=dk_0$, hence $m=dk_{n-1}\Rightarrow d\mid m$",
-whose indices are garbled in the extraction and at the printed page (the record
-of 2026-11-16 in `COMPLAINTS.md` names it), and the conclusion is all that this
-step uses. With $N=\deg f$ divisible by $d$, step
+whose indices are garbled in the extraction and at the printed page, and the
+conclusion is all that this step uses. With $N=\deg f$ divisible by $d$, step
 [](#surjective-restriction){.pf-ref} gives
 $$
 \bigl(S(X)\bigr)_{N/d}=k[t_0,t_1]_N,
@@ -262,7 +261,10 @@ $\dim\abs{D}=n$.
 
 ::: {.pf-step #strict-inequality}
 
-If $d<n$ there is a contradiction; hence $d=n$.
+For a curve of degree $d\le n$ in $\PP^n$ not contained in any hyperplane,
+$$
+d=n.
+$$
 
 ::: pf-proof
 
@@ -388,7 +390,7 @@ consequences.
 
 
 ::: {.remark title="Published solution"}
-Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`, printed pp. 8--10, proves (a) at pp. 8--9 and (b) with its degree-$2$ and degree-$3$ consequences at p. 10, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$. Its printed degree count closing the integral-closure argument is garbled, and its toric restatement misprints the monoid; see the record of 2026-11-16 in `COMPLAINTS.md`.
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, text version `tmp/sources/ntu-ag2-chapter4.md`, printed pp. 8--10, proves (a) at pp. 8--9 and (b) with its degree-$2$ and degree-$3$ consequences at p. 10, by integral closedness of the homogeneous coordinate ring and by division of the ideal by the quadrics $g_{ij}$. Its printed degree count closing the integral-closure argument is garbled and its toric restatement misprints the monoid, so the conclusion of that line is read off from the source's own identification of the coordinate ring, as the card's step `s2` does.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed p. 219, text version `tmp/sources/hartshorne-solutions-egbert.md`, checks that the restriction $H^0(\PP^d,\OO(m))\to H^0(\PP^1,\OO(dm))$ is surjective for every $m$, so the $d$-uple embedding is projectively normal, identifies the quadrics $Q_{ij}$ as generators of the ideal, and concludes the classification of low-degree curves from the degree bound.
 :::

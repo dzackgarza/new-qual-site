@@ -488,8 +488,8 @@ This step is the card's own. None of the three sources above proves it: Reiser's
 part (e), printed p. 354, is the single word "Yup!", Hou's part (e), printed
 p. 6, proves well-definedness and existence but not this uniqueness, and
 Gruenewald, printed p. 2, states the resulting quotient without proof. The
-record of 2026-11-16 in `COMPLAINTS.md` names the gap; the argument below is the
-one this card has carried since its first version, and the statement is
+argument below is the one this card has carried since its first version, and
+the statement is
 R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025
 version [@Vak25, Proposition 19.5.2], text version
 `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 546--547, where the
