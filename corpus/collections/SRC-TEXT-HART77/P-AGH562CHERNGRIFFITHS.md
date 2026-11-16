@@ -188,6 +188,74 @@ audit:
     general, and records that the card does not need it: p_g(X) > 0 makes K_X
     effective, hence |12K_X| nonempty, in this case. Nothing else changes; no
     other step or line was read in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repaired on a reader's fourth report of this date, which is right on every
+    one of its five points. Read for this pass: the card; Yang Pi-Yeh,
+    solution 5.6.2, printed p. 115 of tmp/sources/lfwin-hartshorne-solutions.pdf,
+    read in tmp/sources/lfwin-hartshorne-solutions.md; A. Egbert, V.6.2,
+    printed p. 303, read in tmp/sources/hartshorne-solutions-egbert.md; and
+    Hartshorne V.6 with exercises 6.1 and 6.2 on printed pp. 422--423, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md.
+
+    Step canonical-meets-hyperplane-zero presented Yang's chain as a
+    derivation. He prints "n+1 <= h^0(O_H(d)) = 1-g+d", and the card had
+    dropped the "= 1-g+d"; with it, the chain's last inequality at d = 2n
+    reads 2n+2 <= 2-2g+2d <= d, which with g >= n+1 from 2g-2 >= d is
+    contradictory, so the chain refutes the non-special case, the case it was
+    eliminating, and yields no d = 2g-2. His "so here we must have d=2g-2" is
+    a non sequitur. The step now says that neither entry derives d = 2g-2 in
+    this case, gives what each writes and takes, and marks the card's own
+    derivation, from omega_X restricted to C and deg omega_C = 2g-2.
+
+    The attribution "whence the same d=2g-2 and H.K_X=0" to Egbert is
+    withdrawn: from 2g-2 = d + (1/r)H.D >= d he excludes the non-special case
+    only, then writes "Then d=2n, g=n+1 so d=2(g-1)=2g-2" with no argument,
+    and gets H.K = 0 from the genus formula n+1 = p_a(H) = 1 + (1/2)(2n + HK).
+
+    Step trivial-canonical-pg-one cited Theorem 6.2 for the nonemptiness of
+    the linear system of 12K. The book's Theorem 6.1, printed p. 422, is the
+    criterion kappa = -1 iff that linear system is empty iff X is rational or
+    ruled; Theorem 6.2, printed on the same page, is Castelnuovo's criterion
+    p_a = P_2 = 0. Both entries print "theorem 6.2" here, the card had
+    repeated their number as the book's, and the correction a remark of
+    0d013c480b carried was lost in the later rewrite. The step now cites
+    Theorem 6.1, and the remark records the number each entry prints.
+
+    Step irregularity-zero misquoted the two entries' closing. They take
+    H - K_X ample by Nakai--Moishezon; Kodaira vanishing on that ample class
+    gives H^1(O_X(H)) = 0, and Serre duality H^1(O_X(K_X-H)) = 0, and the two
+    entries print these two vanishings in the opposite order, naming Kodaira
+    vanishing for the second group and Serre duality for the first. The card
+    had attributed to Kodaira vanishing H^1(O_X(A)) = H^1(O_X(K_X+A)) = 0 and
+    to Serre duality H^1(O_X(K_X-A)) = 0, which swaps the two, and it used
+    K_X trivial, which neither entry has at that point. The step now states
+    the chain that way, and records that both cite Exercise V.1.1 for the
+    vanishing of h^0(X, O_X(K_X-H)), whose reason is that (K_X-H).H < 0 with
+    H ample; the book's Exercise V.1.1 is the intersection-number identity and
+    states no such vanishing.
+
+    Step nonspecial-implies-pg-zero said the two entries use "this implication
+    in the same form". Yang's printed form is the equality h^2(X,O_X) =
+    h^1(C,O_C(1)), which his entry does not prove and which fails in general,
+    h^1(C,L) being h^0(C, omega_X restricted to C) by adjunction and Serre
+    duality; and Egbert's dichotomy is special against non-special for O_H(d),
+    with no relation of p_g(X) to h^1(C,L). The step now states each route as
+    printed and marks its own proof of the implication it states.
+
+    The remark no longer says the equality case is published twice. No
+    published derivation of it was located in the two entries read, and the
+    case is named open in the COMPLAINTS.md record of this date headed "V.6.2's
+    equality case is open in the sources read, and items (i) and (iv) of this
+    date's earlier V.6.2 report are withdrawn". The card's own proof of it is
+    kept, and steps clifford-equality-canonical and canonical-meets-hyperplane-zero
+    say that it is the card's own.
+
+    Not checked: Harris's section 1 and sections 3--5, which the card does not
+    use; Yang's and Egbert's other V.6 entries; and no published proof of the
+    equality case of Clifford's theorem beyond these two entries was sought.
 ---
 
 ::: {.problem}
@@ -409,13 +477,18 @@ $$
 p_g(X)=h^0(X,\omega_X)=0.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, use this implication in the
-same form: Yang writes $h^2(X,\OO_X)=h^1(C,\OO_C(1))$, so a nonzero
-$p_g(X)$ makes $L$ special, and Clifford's theorem with $h^0(C,L)\ge n+1$
-then gives $d\ge2n$, so that $d<2n$ forces $p_g(X)=0$; Egbert states the same
-dichotomy at printed p. 303. The computation above, from adjunction, Serre
-duality and the chain $\omega_X\otimes A^{-m}$, is the card's verification
-of the inequality the two of them use.
+Yang Pi-Yeh, printed p. 115, and Egbert, printed p. 303, reach the
+non-special case by different routes. Yang writes
+$h^2(X,\OO_X)=h^1(C,\OO_C(1))$, an identity his entry does not prove and
+which fails in general: adjunction and Serre duality on $C$ give
+$h^1(C,L)=h^0(C,\omega_X\restriction_C)$, which need not be $p_g(X)$. With
+that identity, a nonzero $p_g(X)$ makes $L$ special, and Clifford's theorem
+with $h^0(C,L)\ge n+1$ then gives $d\ge2n$, so that $d<2n$ forces
+$p_g(X)=0$. Egbert splits on $\OO_H(d)$ itself, the case $h^1\ne0$ giving
+$d\ge2n$ and $g-1\ge n$, and never relates $p_g(X)$ to $h^1(C,L)$. The
+computation above, from adjunction, Serre duality and the chain
+$\omega_X\otimes A^{-m}$, is the card's own proof of the implication the
+step states.
 :::
 
 :::
@@ -498,15 +571,17 @@ $$
 K_X\cdot A.
 $$
 
-Yang Pi-Yeh, solution 5.6.2, printed p. 115, reaches the same equality as
-follows: for $p_g(X)\ne0$ and $d=2n$ he reads $2g-2=d+H\cdot K_X\ge d$ off
-adjunction and $n+1\le h^0(C,L)$ off Clifford's theorem, whence
-$2n+2\le2-2g+2d\le d$ and so $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$. Egbert,
-V.6.2, printed p. 303, takes a nonzero effective $D$ with $D\sim rK_X$,
-which exists because $X$ is not ruled, and reads
-$2g-2=d+(1/r)H\cdot D\ge d$ off adjunction, whence the same $d=2g-2$ and
-$H\cdot K_X=0$. The computation above, from
-$\omega_X\restriction_C\cong\OO_C$, is the card's own route to it.
+Yang Pi-Yeh, solution 5.6.2, printed p. 115, and Egbert, V.6.2, printed
+p. 303, reach this case too, and both assert $d=2g-2$ in it rather than
+deriving it. Yang reads $2g-2=d+H\cdot K_X\ge d$ off adjunction, $K_X$ being
+effective because $p_g(X)\ne0$, together with $n+1\le h^0(C,L)$ off
+Clifford's theorem, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$. Egbert
+takes a nonzero effective $D$ with $D\sim rK_X$, which exists because $X$ is
+not ruled, reads $2g-2=d+(1/r)H\cdot D\ge d$ off adjunction, then sets
+$d=2n$, $g=n+1$ and $d=2g-2$, and reads $H\cdot K_X=0$ off the genus
+formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$. The computation above, from
+$\omega_X\restriction_C\cong\OO_C$ and $\deg\omega_C=2g-2$, is the card's
+own derivation of this step and of $d=2g-2$ in this case.
 :::
 
 :::
@@ -554,7 +629,7 @@ h^0(X,\omega_X)
 $$
 
 Yang, printed p. 115, and Egbert, printed p. 303, then have
-$\linearsystem{12K_X}$ nonempty by Theorem 6.2, printed p. 422, Yang's reason
+$\linearsystem{12K_X}$ nonempty by Theorem 6.1, printed p. 422, Yang's reason
 being that $X$, not being contained in a hyperplane, is not ruled --- which a
 ruled surface in $\PP^{n+1}$ need not satisfy, $\PP^1\times\PP^1$ in
 $\PP^3$ being one, and which is not needed here, since $p_g(X)>0$ already
@@ -641,16 +716,22 @@ $$
 q=0.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, close as follows:
-$(K_X-A)\cdot A=-d<0$, so $H^0(X,\OO_X(K_X-A))=0$ by Exercise V.1.1;
-$A-K_X\sim A$ is ample, so Kodaira vanishing gives
-$H^1(X,\OO_X(A))=H^1(X,\OO_X(K_X+A))=0$, and Serre duality gives
-$H^1(X,\OO_X(K_X-A))=0$; Riemann--Roch then gives $p_a(X)=1$, in Yang's
-words "then by 5.1.6, $p_a(X)=1$, hence $X$ is a K3 surface by theorem 6.3"
-and in Egbert's "using thm V.1.6, Riemann--Roch we get that $p_a(X)=1$",
-after which Theorem 6.3, printed p. 422, makes $X$ a K3 surface. With
-$p_a=p_g-q$ and $p_g=1$ this gives $q=0$. The count of $h^0(X,A)$ above is
-the card's own route to the same number.
+Yang, printed p. 115, and Egbert, printed p. 303, close as follows. By
+Nakai--Moishezon $H-K_X$ is ample, and Kodaira vanishing on it gives
+$H^1(X,\OO_X(H))=0$, since
+$\omega_X\otimes\OO_X(H-K_X)\cong\OO_X(H)$; Serre duality then gives
+$H^1(X,\OO_X(K_X-H))=0$. Both entries print these two steps in the opposite
+order, naming Kodaira vanishing for $H^1(X,\OO_X(K_X-H))$ and Serre duality
+for $H^1(X,\OO_X(H))$. Since $(K_X-H)\cdot H=-d<0$ with $H$ ample,
+$H^0(X,\OO_X(K_X-H))=0$, which both cite Exercise V.1.1 for; Riemann--Roch
+then gives $p_a(X)=1$, in Yang's words "then by 5.1.6, $p_a(X)=1$, hence $X$
+is a K3 surface by theorem 6.3" and in Egbert's "using thm V.1.6,
+Riemann--Roch we get that $p_a(X)=1$", after which Theorem 6.3, printed
+p. 422, makes $X$ a K3 surface. With $p_a=p_g-q$ and $p_g=1$ this gives
+$q=0$. The count of $h^0(X,A)$ above is the card's own route to the same
+number, and it uses $K_X\sim\OO_X$ from step
+[](#trivial-canonical-pg-one){.pf-ref}, which the two entries do not
+establish.
 :::
 
 :::
@@ -701,5 +782,5 @@ The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric 
 $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
 and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
 
-The equality case $d=2n$ is published twice: Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; in the case $d=2n$ he takes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(C,L)$ from Clifford, whence $2n+2\le2-2g+2d\le d$, so $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ through Theorem 6.2 and Theorem 6.3, printed p. 422; and he closes with $(K_X-A)\cdot A<0$, Exercise V.1.1, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert takes a nonzero effective $D\sim rK_X$, reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction, excludes the alternative $h^1(C,\OO_C(1))=0$ with $n+1\le h^0(C,\OO_C(1))=1-g+d$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
+The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, printed p. 422, having got $\linearsystem{12K}$ nonempty by the book's Theorem 6.1, printed p. 422, which he numbers 6.2; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
 :::
