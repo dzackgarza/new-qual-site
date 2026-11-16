@@ -26,28 +26,24 @@ audit:
   date: 2026-11-15
   note: >-
     Printed exercise read: Hartshorne, Algebraic Geometry (1977), I.6.7, printed
-    p. 47 (PDF p. 62 of the checked-in extraction; Proposition 6.7 is the
-    different statement on printed p. 42). A. Shichijo, R.Hartshorne
-    "Algebraic Geometry" 演習問題への解答 (2020/March), Chapter 1 section 6,
-    Exercise 6.7, printed pp. 5--6, read in the MinerU extraction
-    tmp/sources/shitijyou-ch1-section6.md. Its r = s direction: A^1 - {P_i} is
-    P^1 - {P_i, infinity}, the isomorphism gives a birational map
-    phi': P^1 --> P^1, and phi' extends to an automorphism phi'-bar, whence
-    phi'-bar carries the omitted finite sets to one another and s = t. The card
-    keeps its own proof of r = s through the unit group and states the source's
-    route beside it, in step r-equals-s, with three defects recorded:
-    (1) the extension step is referred to the source's own Exercise 6.3 block,
-    whose footnote cites Corollary I.6.12, not Exercise I.6.8, which is a
-    different statement (that a nonsingular projective curve is determined by its
-    function field); (2) its displayed identity phi'-bar({P_n}) = P^1 -
-    phi'-bar(P^1 - {P_n}) = {Q_n} omits infinity, the omitted sets being
-    {P_n} union {infinity} and {Q_n} union {infinity}; (3) the converse is an
-    assertion: an element of PGL(1) is determined by the images of three points
-    and A^1 is infinite, "so one can choose {P_n}, {Q_n} not carried to each
-    other by any element" -- which is the claim at issue, with the footnote
-    replacing the argument by a configuration in A^3. The card's own proof of
-    r = s through the unit group, and its cross-ratio counterexample to the
-    converse, stand.
+    p. 47. Published treatment located outside the twelve retained sets:
+    A. Shichijo, Solutions to Hartshorne's Algebraic Geometry, Chapter 1
+    section 6, Exercise 6.7, printed pp. 5--6 of
+    tmp/sources/shitijyou-ch1-section6.pdf. For the r = s direction the source
+    embeds A^1 in P^1, extends the isomorphism to a birational map P^1 to P^1,
+    which is an automorphism by Exercise I.6.8, and concludes
+    phi-bar({P_i}) = P^1 - phi-bar(P^1 - {P_i}) = {Q_j}, so r = s; that is the
+    card's step r-equals-s by a different route, the card using the unit group
+    of the coordinate ring, which is also what the same file's Exercise 6.6(c)
+    computation of Aut k(x) = PGL(1) supplies. On the converse the source is not
+    a proof: it observes that an element of PGL(1) is determined by the images of
+    three points and then says that since A^1 is infinite one can choose
+    {P_i}, {Q_j} not carried to each other by any element, which is the claim at
+    issue and needs an invariant of four points; its footnote replaces the
+    argument by a configuration in A^3. The card's counterexample, the four-point
+    sets {inf,0,1,lambda} and {inf,0,1,mu} with mu outside the six cross-ratio
+    transforms of lambda, is therefore still the only complete argument the
+    search produced, and the converse half stays without a published proof.
 - event: solution-written
   by: claude
   date: 2026-11-15
@@ -71,8 +67,8 @@ audit:
     unchanged and now rests on the right statement: an isomorphism of the
     punctured lines requires those two (r+1)-point subsets to be in one
     PGL(2)-orbit, and for r = 3 they are four-point sets, where step
-    converse-fails' cross ratio separates them. Checked against Borcherds p. 8, text version `tmp/sources/hartshorne-solutions-borcherds.md`,
-    Egbert p. 55, text version `tmp/sources/hartshorne-solutions-egbert.md` and Cutrone--Marshburn p. 25, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`: all three state the threshold
+    converse-fails' cross ratio separates them. Checked against Borcherds p. 8,
+    Egbert p. 55 and Cutrone--Marshburn p. 25: all three state the threshold
     r <= 3, which is what makes the count matter.
 - event: solution-written
   by: claude
@@ -244,6 +240,36 @@ audit:
     I.6.12 in place of Exercise I.6.8, the omitted infinity in his displayed
     identity, and the converse left as an assertion. Nothing in the problem,
     the solution or the pages changes, and no page was re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 on in-place edits to dated events: the two
+    2026-11-15 source-checked records above are restored to the text of the
+    commit that wrote each, and this is the correction of the event above,
+    which recorded their restoration as blocked. The gate refused both until
+    41131d3ea5 (issue #147) compared two records of one identity as a multiset
+    of the texts introduced under it. (1) The first is 9bb4dbad80's note,
+    which 96b162602a replaced. (2) The second is its text before f67ed2b29e
+    appended the text-version paths of Borcherds, Egbert and
+    Cutrone--Marshburn.
+    What the two rewrites added is stated here, so that nothing is lost with
+    them. The first rewrite read the checked-in file as the MinerU extraction
+    tmp/sources/shitijyou-ch1-section6.md, named PDF p. 62 of it, and placed
+    Exercise 6.7 on printed pp. 5--6 with Proposition 6.7 the different
+    statement on printed p. 42; the restored note names
+    tmp/sources/shitijyou-ch1-section6.pdf and printed pp. 5--6, so the MinerU
+    path and both pages are recorded here and nowhere else on this card. It
+    also listed three defects of Shichijo's solution, which stand in the body,
+    in the paragraph on Shichijo after step r-equals-s and in the Shichijo
+    paragraph of the published-solution remark. The second rewrite added the
+    text versions of Borcherds, Egbert and Cutrone--Marshburn, which that
+    remark names.
+    The restored first note states the extension as Exercise I.6.8, which is
+    not what the source does; that is the first of the three defects the body
+    corrects. The event above stands as written, a dated event being a record
+    of its date. Nothing in the problem, the solution or the pages changes,
+    and no page was re-read.
 
 ---
 
