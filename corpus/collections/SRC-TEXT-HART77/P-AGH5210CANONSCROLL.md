@@ -50,12 +50,14 @@ audit:
     Rechecked against the printed exercise, printed page 385, and against two
     published treatments outside the twelve retained sets. Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 10
-    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), carries the same
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf, text version
+    `tmp/sources/ntu-ag2-chapter5.md`), carries the same
     construction and cites Corollary 2.18, printed page 380, for the nonsingular
     member; it does not prove that the embedding of Y is complete, which is step
     s6 here and needs H^0(O_X(H)) = H^0(Y,K_Y) together with
     h^0(O_X(H)) = 2n-e+2. Yang Pi-Yeh, Hartshorne Solutions, exercise 5.2.10,
-    printed p. 104 (tmp/sources/lfwin-hartshorne-solutions.pdf), computes the
+    printed p. 104 (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
+    `tmp/sources/lfwin-hartshorne-solutions.md`), computes the
     genus and the g_3^1 and never shows the member nonsingular or K_Y the
     restricted hyperplane class. All eight steps were re-read: the pushforward
     pi_*O(aC_0+bf) as the sum of O(b-ie) with b-3e = n-2e+2 >= 0 for

@@ -53,11 +53,14 @@ audit:
     "up to isomorphism" cannot hold and the classification is up to tensor
     equivalence. Searched outside the twelve retained sets: Algebraic Geometry
     II, National Taiwan University, 2020 Spring, Chapter V homework, Exercise 8
-    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf), whose (c) is the
-    sentence "This is just the proof of Theorem 2.12, combined with (b)"; Yang
-    Pi-Yeh, Hartshorne Solutions, exercise 5.2.8, printed pp. 103-104
-    (tmp/sources/lfwin-hartshorne-solutions.pdf), which repeats "up to
-    isomorphism"; and Egbert, PDF pp. 265-266. None repairs the printed clause.
+    of section 2, PDF p. 8 (tmp/sources/ntu-ag2-chapter5.pdf, text version
+    `tmp/sources/ntu-ag2-chapter5.md`), whose (c) is the sentence "This is just
+    the proof of Theorem 2.12, combined with (b)"; Yang Pi-Yeh, Hartshorne
+    Solutions, exercise 5.2.8, printed pp. 103-104
+    (tmp/sources/lfwin-hartshorne-solutions.pdf, text version
+    `tmp/sources/lfwin-hartshorne-solutions.md`), which repeats "up to
+    isomorphism"; and Egbert, PDF pp. 265-266, text version
+    `tmp/sources/hartshorne-solutions-egbert.md`. None repairs the printed clause.
     Not checked: whether Hartshorne intended the clause to classify the
     normalized models only; the card states the printed wording and proves the
     tensor-equivalence reading.
@@ -67,9 +70,14 @@ audit:
   note: >-
     Read Fuentes and Pedreira (arXiv:math/0006204v3) on 2026-11-16: it states no
     stability condition for locally free sheaves on a curve, so it does not reach
-    part (c); its Theorem 3.2 is a citation of the book's Theorem V.2.12. Math
-    StackExchange questions 4398506 and 5101697 concern V.2.5 and the elementary
-    transformation. No complete published argument for (c) was located, and the
+    part (c); its Theorem 3.2 is a citation of the book's Theorem V.2.12. Two
+    Math StackExchange threads were saved for the section, neither bearing on (c):
+    4398506, tmp/sources/mse-4398506-hart77-v25-linear-system-notation.md, asks
+    only what the notation |D+K-E|+E of V.2.5(b) means, and 5101697,
+    tmp/sources/mse-5101697-hart77-v2-elementary-transformation.md, asks how
+    Hartshorne's E' = pi_*(O(1) x I_P) realises the elementary transformation of
+    V.2.11, which the questioner proves and KReiser's accepted answer confirms,
+    with a proof that a section through the blown-up point exists. No complete published argument for (c) was located, and the
     printed "up to isomorphism" stays defective as recorded at the head of the
     solution: a bundle and its twist by a line bundle of nonzero degree carry the
     same triple and have different determinants.
