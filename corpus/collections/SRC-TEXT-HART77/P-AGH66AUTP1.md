@@ -151,7 +151,7 @@ The polynomial
 $$
 a(T)-b(T)u\in k(u)[T]
 $$
-has $X$ as a root, so $x$ is algebraic over $k(u)$; hence $u$ is transcendental over $k$, since otherwise $x$ would be algebraic over $k$.
+has $x$ as a root, so $x$ is algebraic over $k(u)$; hence $u$ is transcendental over $k$, since otherwise $x$ would be algebraic over $k$.
 
 The polynomial $a(T)-b(T)Z\in k[Z,T]$ is irreducible: it is linear in $Z$, so a factorization into two nonconstant factors would have one factor $f\in k[T]$, which would then divide the constant term $a(T)$ and the coefficient $-b(T)$ of $Z$, hence divide the greatest common divisor of $a$ and $b$, forcing $f$ to be constant.
 Since $u$ is transcendental over $k$, substitution $Z\mapsto u$ identifies $k[Z,T]$ with $k[u,T]$, so $a(T)-b(T)u$ is irreducible in $k[u,T]$ and hence, by Gauss's lemma, in $k(u)[T]$.
