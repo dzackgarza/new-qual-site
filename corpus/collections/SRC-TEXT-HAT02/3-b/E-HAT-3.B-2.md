@@ -104,6 +104,22 @@ audit:
     sentence that the sign disappears if $X\otimes I$ is replaced by $I\otimes X$. Checked the
     exercise's printed statement and bracketed hint on Hatcher (2002), §3.B Exercise 2, printed
     p. 280. Not claimed: a published solution of Hatcher's exercise as such.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Citations only; the statement and the proof are unchanged. Two defects. (1) No citation named its
+    text version. May is read in `tmp/sources/may-concise-course-revised.md`, which was opened this
+    pass and does contain the Lemma of Chapter 12 §3 at its line for the page headed *A little
+    homological algebra*, and Hatcher in `tmp/sources/hatcher-2002-algebraic-topology.md`; both are
+    now named in the remark under the solution. (2) The page reference "p. 92 of the revised PDF" could
+    be read as PDF page 92, which it is not: the Lemma is on the page whose folio is 92, which is PDF
+    page 100 of `tmp/sources/may-concise-course-revised.pdf` --- the front matter is unnumbered --- and
+    the page before it, holding the start of Chapter 12, is PDF page 99 with folio 91, while the page
+    after it is PDF page 101 with folio 93, opening §4. The remark now gives both numbers and says why
+    they differ. Checked against Hatcher (2002), §3.B Exercise 2 on printed p. 280, with its bracketed
+    hint $h(c)=f(e\otimes c)$. Not verified: the pagination of the 1999 bound volume, which this machine
+    does not hold; nothing was read from a rendered page.
 ---
 
 ::: {.problem}
@@ -221,7 +237,7 @@ $$
 
 ::: {.remark title="Source"}
 
-The exercise is Exercise 2 of §3.B, printed p. 280. The proof above is transcribed from **J. P. May, *A Concise Course in Algebraic Topology*, Chicago Lectures in Mathematics, University of Chicago Press 1999**, Chapter 12 §3 ("Tensor products of chain complexes"), the Lemma stating that a chain homotopy $s:f\simeq g$ determines and is determined by a chain map $h:X\otimes I\to X'$ with $h(x\otimes[0])=f(x)$ and $h(x\otimes[1])=g(x)$, with its proof, on **p. 92 of the revised PDF**, the page headed *A little homological algebra* and followed by p. 93, which opens §4. The differential $d(x\otimes y)=d(x)\otimes y+(-1)^{i}x\otimes d(y)$ and the complex $I$ with $d[I]=[0]-[1]$ are displayed immediately above the Lemma on the same page; the proof's closing sentence, that the sign in the correspondence disappears if $X\otimes I$ is replaced by $I\otimes X$, is on that page and is the translation step [](#twist){.pf-ref}. Pagination is that of the revised PDF's own printed numbers, not of the 1999 bound volume.
+The exercise is Exercise 2 of §3.B, printed p. 280, read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The proof above is transcribed from **J. P. May, *A Concise Course in Algebraic Topology*, Chicago Lectures in Mathematics, University of Chicago Press 1999**, Chapter 12 §3 ("Tensor products of chain complexes"), the Lemma stating that a chain homotopy $s:f\simeq g$ determines and is determined by a chain map $h:X\otimes I\to X'$ with $h(x\otimes[0])=f(x)$ and $h(x\otimes[1])=g(x)$, with its proof, on the page of the revised PDF whose folio is **92** --- PDF page **100** of `tmp/sources/may-concise-course-revised.pdf`, which is the text version read here --- the page headed *A little homological algebra*, followed by the page whose folio is 93, which opens §4. The differential $d(x\otimes y)=d(x)\otimes y+(-1)^{i}x\otimes d(y)$ and the complex $I$ with $d[I]=[0]-[1]$ are displayed immediately above the Lemma on the same page; the proof's closing sentence, that the sign in the correspondence disappears if $X\otimes I$ is replaced by $I\otimes X$, is on that page and is the translation step [](#twist){.pf-ref}. Pagination is that of the revised PDF's own printed folios, not of the 1999 bound volume; the folio and the PDF page number differ because the front matter is unpaginated.
 
 The translation, stated: May's $I$ and the exercise's $I$ are the same two-term complex under $[0]\mapsto v_1$, $[1]\mapsto v_0$, $[I]\mapsto e$, which reverses the labels because May's differential is $[0]-[1]$ and the exercise's is $v_1-v_0$; and May's correspondence carries the factor $(-1)^{i}$ while the exercise's hint $h(c)=f(e\otimes c)$ carries none, because May places $I$ on the right of the tensor product and the graded commutativity isomorphism $\tau$ contributes $(-1)^{i}$ in moving the degree-one generator to the other side. Step [](#twist){.pf-ref} computes that the two signs cancel, so the exercise's correspondence is May's, with the two chain maps read in the opposite order: May's $f$ is the exercise's $f_1$ and May's $g$ is the exercise's $f_0$. Nothing in the proof depends on which of the two chain maps is called $f$ and which $g$, which is why the exercise can name them by the index $i$ alone.
 
