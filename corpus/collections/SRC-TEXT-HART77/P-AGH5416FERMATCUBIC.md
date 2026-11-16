@@ -274,6 +274,33 @@ audit:
     Dolgachev--Duncan, whose events above stand. Nothing was searched for a
     published pair-by-pair incidence criterion, and none was found in the sources
     listed, so the criteria and the count stay the card's own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day on the event above, repaired here. That event
+    described the two-family case of the count of five as reducing by the
+    transposition of x_1 and x_2, and the step said the same. That transposition
+    does not reduce the two remaining pairings: it interchanges the A- and
+    B-families and keeps the C-family, carrying C_ab to C_{a,-b}, so it carries an
+    A-C pair to a B-C pair and a B-C pair to an A-C pair and never to the form
+    A_ab, B_cd. The step now names the transpositions that do the reduction: that
+    of x_2 and x_3 keeps the A-family, sending A_ab to A_{a,-b}, and interchanges
+    B and C, sending B_ab to C_ab and C_ab to B_ab, so it carries an A-C pair to
+    an A-B pair; and that of x_1 and x_3 keeps the B-family, sending B_ab to
+    B_{a,-b}, and interchanges A and C, so it carries a B-C pair to an A-B pair.
+    The step also states what makes the relabelling legitimate, that a projectivity
+    maps the 27 lines to themselves and preserves incidences, so the pair and its
+    image have equally many common transversals. Checked on the equations of the
+    three families as the card prints them, line by line, and confirmed by the
+    exhaustive GF(7) computation recorded in the event above, whose family actions
+    are these and whose counts are 5 for every skew pair of every pairing. What
+    stands from the event above: the derivation from the four criteria, the two
+    lines and the one C-line of the A-B case, and the placement of the step after
+    incidence-count-ten-sixteen. Read for this event: the three family definitions
+    of the step three-line-families and the four criteria, on the card, and
+    nothing further in the sources; Gathmann's printed pp. 90--91 continue to be
+    read as the event above records.
 ---
 
 ::: {.problem}
@@ -523,7 +550,7 @@ Gathmann states this as Corollary 11.2(b), printed p. 91, and prints "The proof 
 
 Two skew lines lie either in one family or in two. If they are $A_{ab}$ and $A_{cd}$ in the first family, then $a\ne c$ and $b\ne d$ by step [](#same-family-incidence){.pf-ref}. The $A$-lines meeting both are exactly $A_{ad}$ and $A_{cb}$, one for each way of matching the two first exponents with the two second ones. A $B$-line $B_{a'b'}$ meets $A_{ab}$ exactly when $a'-b'\equiv a-b$ and meets $A_{cd}$ exactly when $a'-b'\equiv c-d$, by step [](#ab-family-incidence){.pf-ref}, so it meets both exactly when $a-b\equiv c-d$, and then all three such $B$-lines do; a $C$-line $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and $A_{cd}$ exactly when $a'\equiv c+d+b'$, by step [](#ac-family-incidence){.pf-ref}, so it meets both exactly when $a+b\equiv c+d$, and then all three such $C$-lines do. Writing $x=a-c$ and $y=b-d$, both nonzero, the first condition is $x\equiv y$ and the second is $x\equiv-y$, and $y$ and $-y$ are the two nonzero residues modulo $3$: exactly one of them holds, and the count is $2+3=5$.
 
-If the two lines lie in different families, the transposition of the coordinates $x_1$ and $x_2$ preserves $S$, carries $A_{ab}$ to $B_{ab}$, $B_{ab}$ to $A_{ab}$ and $C_{ab}$ to $C_{ba}$, and so carries a skew pair of either remaining pairing to one of the form $A_{ab}$, $B_{cd}$, which is skew exactly when $a+d\not\equiv b+c$ by step [](#ab-family-incidence){.pf-ref}. Such a pair is met by the two $A$-lines $A_{a,\,a+d-c}$ and $A_{b+c-d,\,b}$ and the two $B$-lines $B_{c,\,b+c-a}$ and $B_{a+d-b,\,d}$, each of which is distinct from $A_{ab}$ and from $B_{cd}$ because $a+d\not\equiv b+c$, and by one $C$-line, the one with $b'\equiv2(c+d-a-b)$ and $a'\equiv a+b+b'$, since $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and meets $B_{cd}$ exactly when $a'+b'\equiv c+d$. That is $2+2+1=5$ further lines.
+If the two lines lie in different families, a transposition of two coordinates preserves $S$, the equation being symmetric in them, and carries one two-family pairing to another; being a projectivity it maps the $27$ lines to themselves and preserves incidences, so a pair and its image have the same number of common transversals. The transposition of $x_2$ and $x_3$ keeps the $A$-family, sending $A_{ab}$ to $A_{a,-b}$, and interchanges the other two, sending $B_{ab}$ to $C_{ab}$ and $C_{ab}$ to $B_{ab}$; the transposition of $x_1$ and $x_3$ keeps the $B$-family, sending $B_{ab}$ to $B_{a,-b}$, and interchanges $A$ and $C$. An $A$--$C$ pair is therefore carried to an $A$--$B$ pair by the first of them and a $B$--$C$ pair to an $A$--$B$ pair by the second, with the exponents relabelled, so it suffices to treat $A_{ab}$ and $B_{cd}$, which is skew exactly when $a+d\not\equiv b+c$ by step [](#ab-family-incidence){.pf-ref}. Such a pair is met by the two $A$-lines $A_{a,\,a+d-c}$ and $A_{b+c-d,\,b}$ and the two $B$-lines $B_{c,\,b+c-a}$ and $B_{a+d-b,\,d}$, each of which is distinct from $A_{ab}$ and from $B_{cd}$ because $a+d\not\equiv b+c$, and by one $C$-line, the one with $b'\equiv2(c+d-a-b)$ and $a'\equiv a+b+b'$, since $C_{a'b'}$ meets $A_{ab}$ exactly when $a'\equiv a+b+b'$ and meets $B_{cd}$ exactly when $a'+b'\equiv c+d$. That is $2+2+1=5$ further lines.
 :::
 
 :::
