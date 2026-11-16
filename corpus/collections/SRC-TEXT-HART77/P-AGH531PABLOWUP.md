@@ -51,6 +51,34 @@ audit:
     is not a proof of the exercise. Not checked: Chatzistamatiou-Rulling
     Theorem 1.1 itself, which is cited and not in tmp/sources; the card's own
     argument needs only that statement.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published argument located for issue #121 and checked against the book.
+    Hartshorne V.3.1, printed p. 394, asks for p_a(X-tilde) = p_a(X) for the
+    blowup of a nonsingular subvariety Y of a nonsingular projective variety X
+    of any dimension. Step cohomology-invariance now cites the printed
+    statement of A. Chatzistamatiou and K. Ruelling, Vanishing of the higher
+    direct images of the structure sheaf, Compositio Math. 151 (2015)
+    2131-2144, Theorem 1.1, printed p. 1 (a preimage of the published version,
+    arXiv:1404.1827v2, was added to tmp/sources as
+    chatzistamatiou-rulling-2015-higher-direct-images.pdf): the higher direct
+    images of O_X under a projective birational morphism between excellent
+    regular schemes vanish. With pi_* O = O_X (the proof of III.11.4) and
+    Exercise III.8.1 that gives H^i(X-tilde,O) = H^i(X,O), hence equality of
+    the structure-sheaf Euler characteristics and of p_a. Checked: X and
+    X-tilde are excellent regular and pi is projective, so the hypotheses
+    hold; p_a(Z) = (-1)^n (chi(Z,O_Z) - 1) is the book's definition. Corrected
+    against the source: the earlier note on this card said the NTU 2020 entry
+    proves the vanishing for a centre of any codimension. It does not. Its
+    induction uses H^i(P^{r-1},O(n)) = 0 for i > 0, which is the cohomology of
+    a fibre; that is the cohomology of the exceptional divisor only when
+    dim Y = 0, and for Y positive-dimensional H^i(E,O_E(n)) =
+    H^i(Y,Sym^n(I/I^2)), which is H^1(Y,O_Y) at n = 0. The entry proves the
+    monoidal case, and the card's remark now says so. Not checked: the proof
+    of Theorem 1.1 itself, a duality argument, was not read; the step uses
+    only its statement.
 ---
 
 ::: {.problem}
@@ -83,8 +111,11 @@ $$
 The blowup of a nonsingular variety along a nonsingular centre is
 nonsingular, and the blowup morphism $\pi$ is projective and birational.
 Both varieties are excellent because they are of finite type over $k$.
-[Chatzistamatiou--Rülling, Theorem 1.1](https://arxiv.org/abs/1404.1827)
-therefore gives
+Chatzistamatiou--Rülling, *Vanishing of the higher direct images of the
+structure sheaf*, Compositio Math. 151 (2015) 2131--2144,
+[Theorem 1.1, printed p. 1](https://arxiv.org/abs/1404.1827), states that a
+projective birational morphism between excellent regular schemes has vanishing
+higher direct images of the structure sheaf, and it therefore gives
 $$
 R^j\pi_*\OO_{\widetilde X}=0\qquad(j>0).
 $$
@@ -158,7 +189,7 @@ blowing up a nonsingular centre.
 :::
 
 ::: {.remark title="Published solution"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §3 (solution by Shuang-Yen Lee), PDF p. 9, proves the vanishing for a blowup of a nonsingular subvariety of any codimension: by Exercise III.8.1 it suffices to have $\pi_*\OO_{\widetilde X}=\OO_X$, which is the proof of III.11.4, and $R^i\pi_*\OO_{\widetilde X}=0$ for $i>0$. Outside the centre $\pi$ is an isomorphism; at a point of $Y$ the formal functions theorem identifies the stalk of $R^i\pi_*\OO_{\widetilde X}$ with $\varprojlim H^i(E_n,\OO_{E_n})$, where $E$ is the exceptional divisor and $I^ n/I^{n+1}\cong\operatorname{Sym}^n(I/I^2)\cong\OO_E(n)$ with $E\cong\PP^{r-1}$, $r=\operatorname{codim}(Y,X)$; induction on $n$ from $H^i(\PP^{r-1},\OO(n))=0$ for $i>0$ gives the vanishing, hence $p_a(\widetilde X)=p_a(X)$. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} reach the same conclusion through $R^j\pi_*\OO_{\widetilde X}=0$ for $j>0$ in all dimensions at once, which is Chatzistamatiou--Rülling's theorem.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 1 of §3 (solution by Shuang-Yen Lee), PDF p. 9, writes the formal-functions reduction for a centre of codimension $r$: by Exercise III.8.1 it suffices to have $\pi_*\OO_{\widetilde X}=\OO_X$, which is the proof of III.11.4, and $R^i\pi_*\OO_{\widetilde X}=0$ for $i>0$. Outside the centre $\pi$ is an isomorphism; at a point $y\in Y$ the formal functions theorem identifies the stalk of $R^i\pi_*\OO_{\widetilde X}$ with $\varprojlim H^i(E_n,\OO_{E_n})$, where $E$ is the exceptional divisor, $E_n$ its $n$th infinitesimal neighbourhood, and $\mathcal I^n/\mathcal I^{n+1}\cong\operatorname{Sym}^n(\mathcal I/\mathcal I^2)\cong\OO_E(n)$. Its induction then invokes $H^i(\PP^{r-1},\OO(n))=0$ for $i>0$ and $n\ge0$, which is the cohomology of a fibre. That is the cohomology of $E$ only when $\dim Y=0$, where indeed $E\cong\PP^{r-1}$; for $Y$ positive-dimensional $E$ is a $\PP^{r-1}$-bundle over $Y$ and $H^i(E,\OO_E(n))=H^i(Y,\operatorname{Sym}^n(\mathcal I/\mathcal I^2))$, which need not vanish --- for $Y$ a curve of positive genus and $n=0$ it is $H^i(Y,\OO_Y)$, nonzero for $i=1$. The entry therefore proves the monoidal case, $\dim Y=0$, which is (3.4) itself, and not the exercise; its closing sentence $p_a(\widetilde X)=p_a(X)$ inherits the gap. Steps [](#cohomology-invariance){.pf-ref} to [](#arithmetic-genus-equal){.pf-ref} reach the conclusion for a centre of any codimension through $R^j\pi_*\OO_{\widetilde X}=0$ for $j>0$, which is Chatzistamatiou--Rülling's theorem.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.1, printed p. 107, writes "since $\operatorname{codim}(Y,X)=1$, $\mathcal I/\mathcal I^2$ is an invertible sheaf on $Y$" and then covers $E$ by $\PP^1_A$'s; the exercise has $Y$ of any codimension, and a codimension-one blowup is an isomorphism, so the argument does not cover the case it is aimed at.
 

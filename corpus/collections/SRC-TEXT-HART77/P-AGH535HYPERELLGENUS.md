@@ -60,6 +60,34 @@ audit:
     printed exercise intends the affine model over a field of characteristic 2
     at all; the card keeps the printed statement and states where the
     hypothesis enters.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    delta_P transcribed for issue #121 from the published solution: Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V homework,
+    Exercise 5 of section 3 (Shuang-Yen Lee), PDF p. 11 of
+    tmp/sources/ntu-ag2-chapter5.pdf, read in the extraction
+    tmp/sources/ntu-ag2-chapter5.md. That entry states char k != 2, takes the
+    chart y != 0, finds multiplicity r-2 at P, one blowup giving
+    w^{r-2} = prod(1-a_i w) x^2, then the chain w^e = prod(1-a_i w) x^2 with
+    e = r mod 2, and writes delta_P = (r-2)(r-3)/2 + (1/2)(2)(1)floor((r-2)/2).
+    Steps infinitely-near-A-singularity and delta-invariant-formula now carry
+    that count, with the tangent-cone check at the double point and the two
+    terminal exponents (e = 0: x^2 = unit, no point; e = 1: w = x^2 unit,
+    nonsingular) written out, since the source says only that there are no
+    singularities in either case. Checked against Hartshorne V.3.5, printed
+    p. 394, and against (3.9.3) for the sum: the number of double points is
+    floor((r-2)/2) and the arithmetic gives delta_P = 4, 8, 12 and g = 2, 2, 3
+    at r = 5, 6, 7, and g = floor((r-1)/2) in general. The card's independent
+    route through the A_{r-3} type of the residual germ agrees. The source's
+    parenthetical "(which is impossible (when char(k) = 2))" is garbled: what
+    it means is that the system has no solution when char k != 2, and the
+    hypothesis char k != 2 is stated at the head of the entry. Also read:
+    Yang Pi-Yeh, exercise 5.3.5, printed p. 108, whose delta is
+    (r-2)(r-3)/2 and omits the residual term (3 against 4 at r = 5); Andrew
+    Egbert, Exercise V.3.5, PDF p. 278, who computes the multiplicity and the
+    genus by Riemann-Hurwitz but never computes delta_P.
 ---
 
 ::: {.problem}
@@ -216,39 +244,26 @@ unique tangent direction $z=0$ at $P$.
 :::
 
 ::: {.pf-step #infinitely-near-A-singularity}
-The unique infinitely near singularity after the first blowup is
-analytically of type
+The strict transform of step [](#strict-transform-equation){.pf-ref} has a unique
+singular point, a double point at the origin whose tangent direction is the
+exceptional curve, and its germ there is analytically
 $$
 U^2=v^{r-2},
 $$
-and has delta invariant
-$$
-\boxed{\left\lfloor\frac{r-2}{2}\right\rfloor}.
-$$
+that is, the $A_{r-3}$ singularity.
 
 ::: pf-proof
-The factor
-$$
-h(v)=\prod_i(1-a_i v)
-$$
-is a unit in $k[[v]]$ with $h(0)=1$. Since $2$ is invertible in $k$, this
-unit has a square root in $k[[v]]$. Replacing
-$$
-U=u\sqrt{h(v)}
-$$
-turns the completed local equation of step [](#strict-transform-equation){.pf-ref} into
-$$
-U^2=v^{r-2}.
-$$
-This is the $A_{r-3}$ plane-curve singularity. The standard formula on
-[[D-CRVPLSING]] gives
-$$
-\delta(A_n)=\left\lfloor\frac{n+1}{2}\right\rfloor,
-$$
-so here
-$$
-\delta=\left\lfloor\frac{r-2}{2}\right\rfloor.
-$$
+Put $m=r-2$ and $h(v)=\prod_i(1-a_i v)$. By step [](#strict-transform-equation){.pf-ref} the
+strict transform is $v^{m}=u^2h(v)$, and $h(0)=1$, so $h$ is a unit in
+$k[[v]]$. Since $2$ is invertible in $k$, that unit has a square root, and the
+change of coordinate $U=u\sqrt{h(v)}$ turns the completed local equation into
+$U^2=v^{m}=v^{r-2}$; this is the plane curve singularity $A_{r-3}$.
+
+The lowest-degree term of $v^{m}-u^2h(v)$ is $-u^2$ when $m>2$ and $v^2-u^2$
+times a unit when $m=2$, so the origin is a double point and its tangent cone is
+$u^2=0$ when $m>2$, a single direction along the exceptional curve. The
+published solution records the same germ as $w^{r-2}=\prod_i(1-a_iw)x^2$ with
+multiplicity two, PDF p. 11.
 :::
 
 :::
@@ -265,20 +280,32 @@ $$
 $$
 
 ::: pf-proof
-For a plane curve singularity, the genus-drop formula under successive
-point blowups is
+By (3.9.3), applied to the normalization of the germ at $P$,
 $$
-\delta_P
-=
-\sum_Q\binom{m_Q}{2},
+\delta_P=\sum_Q\frac{m_Q(m_Q-1)}2,
 $$
-where $Q$ runs through the singular point and its infinitely near singular
-points with multiplicities $m_Q$ [[D-CRVPLSING]].
-
-The first point has multiplicity $r-2$ by step [](#multiplicity-at-infinity){.pf-ref}. After that first
-blowup, the residual singularity is the $A_{r-3}$ singularity of step [](#infinitely-near-A-singularity){.pf-ref},
-whose complete remaining contribution to delta is
-$\lfloor(r-2)/2\rfloor$. Hence the displayed formula.
+the sum over the singular points of $C$ infinitely near $P$, including $P$
+[[D-CRVPLSING]]. The published solution counts those points, PDF p. 11: $P$ has
+multiplicity $m_0=r-2$, and after it the germ has the form
+$$
+w^{m}=x^2\prod_i(1-a_iw),\qquad m=r-2,
+$$
+at a double point, whence one further blowup replaces $m$ by $m-2$ and the same
+form by step [](#infinitely-near-A-singularity){.pf-ref}; the exponents met are
+$m_0-2, m_0-4, \ldots$ down to $e=r\bmod 2$, and each is a double point because
+it exceeds $1$. Their number is
+$$
+\left\lfloor\frac{m_0}{2}\right\rfloor=\left\lfloor\frac{r-2}{2}\right\rfloor,
+$$
+and at $e=r\bmod2$ the germ is $x^2=\text{unit}$ for $e=0$, which meets no
+point, or $w=x^2\cdot\text{unit}$ for $e=1$, which is nonsingular; so the list is
+complete. Hence
+$$
+\delta_P=\frac{(r-2)(r-3)}2+\frac{2\cdot1}{2}\left\lfloor\frac{r-2}{2}\right\rfloor,
+$$
+which is the source's formula. The identification of the residual germ with
+$A_{r-3}$ gives the same number, $\lfloor(r-2)/2\rfloor$, by the standard formula
+$\delta(A_n)=\lfloor(n+1)/2\rfloor$ [[D-CRVPLSING]].
 :::
 
 :::
