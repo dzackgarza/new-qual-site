@@ -550,9 +550,9 @@ The same argument on the chart $\PP^1\setminus\{0\}=\Spec k[u]$, $u=1/x$, shows
 that any such double cover must be
 $$
 C''=\Spec k[Z,u]/(Z^2-(u-1/\mathfrak p_1)\cdots(u-1/\mathfrak p_r))
-=\Spec k[Z,u]/(((-1)^r\textstyle\prod_i\mathfrak p_i)Z^2-u^rf(1/u)),
+=\Spec k[Z,u]/(((-1)^r\textstyle\prod_i\mathfrak p_i)Z^2-u^rf(1/u)).
 $$
-the two displays being one equation, because
+The two displays are one equation, because
 $u^rf(1/u)=\prod_i(1-\mathfrak p_iu)=(-1)^r\bigl(\prod_i\mathfrak p_i\bigr)
 \prod_i(u-1/\mathfrak p_i)$. So a double cover of all of $\PP^1$ is obtained by
 gluing the two patches, and in $K(C)$,
