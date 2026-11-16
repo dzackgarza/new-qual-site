@@ -220,6 +220,34 @@ audit:
     source's, that a value is computed rather than quoted, and which books were
     or were not read, leave the solution and the remark. The remark opener takes
     the attribute form of STYLE-01.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's findings on the second round of this batch, repaired here; every
+    event above is left as written. The pass above removed every mark of the
+    card's own argument from the rendered steps together with the process text
+    (QUAL-08), and the marks are put back where the step is not the source's:
+    steps ambient-automorphism-lift, automorphism-identifies-resolution-data,
+    puiseux-pair and c1-c2-equivalent now say in the step that they are the
+    card's own, and the sentence introducing the argument of
+    tjurina-number-invariant says the same of it, the statement of invariance
+    being Greuel-Lossen-Shustin's Remark 3.43.3 on printed p. 219 while the
+    form of it the exercise uses is the card's. No statement, page, citation or
+    mathematical claim changes, and no proof is added: the marks record whose
+    argument each step is, and what no located source proves is recorded in
+    COMPLAINTS.md. Re-read for this pass in the text version
+    tmp/sources/greuel-lossen-shustin-2007-singularities-deformations-pp200-220.md:
+    Definition 3.30, the paragraph naming the system of multiplicity sequences,
+    Proposition 3.41, Theorem 3.42, Example 3.43.1(a) and Remark 3.43.3. That
+    file's markers name the range "PDF pages 211-230" only, so the printed
+    pages were located in the retained PDF, where the folios read 202, 215,
+    216, 217, 218 and 219, that is printed page = PDF page - 11, and they
+    agree with the pages the events above give. Not read here: Wall's
+    Singular Points of Plane Curves, still not held;
+    Greuel-Lossen-Shustin's Proposition 3.21, cited inside Proposition 3.41's
+    proof; and Yang Pi-Yeh's and Egbert's entries, which the previous passes
+    read and which were not re-read this pass.
 ---
 
 ::: {.problem}
@@ -318,6 +346,8 @@ by a unit, so
 $$
 \Phi(f)=ug.
 $$
+
+This step is the card's own.
 :::
 
 :::
@@ -343,6 +373,8 @@ multiplicities is preserved.
 This is precisely the embedded-resolution data entering equivalence in
 (3.9.4), printed p. 393. Hence analytically isomorphic curve singularities are
 equivalent, which is the forward implication of the exercise.
+
+This step is the card's own.
 :::
 
 :::
@@ -378,6 +410,8 @@ $$
 \frac{\partial}{\partial z}(z^3+tz+1)\evalfrom_{(0,-1)}=3\ne0,
 $$
 so the formal implicit-function theorem gives $z(t)\in\CC[[t]]$ with $z(0)=-1$ and $z^3+tz+1=0$, that is $y=-t^7$ plus higher-order terms. Since $\gcd(3,7)=1$ the gcd of the characteristic exponents has dropped to $1$ at the exponent $7$, so there is no further Puiseux pair, and the three choices of cube root of $-1$ give the same branch after $t\mapsto\zeta t$ with $\zeta^3=1$. Thus $C_2$ is irreducible with the single Puiseux pair $(3,7)$ as well, and by Proposition 3.41 the pair is what the multiplicity sequence $3,3,1,1,1$ of step [](#same-multiplicity-sequence){.pf-ref} encodes.
+
+This step is the card's own.
 :::
 
 :::
@@ -454,6 +488,8 @@ $$
 \delta=\binom32+\binom32=6
 $$
 for both germs, which is $\frac{(3-1)(7-1)}2$, the value the pair $(3,7)$ of step [](#puiseux-pair){.pf-ref} predicts.
+
+This step is the card's own.
 :::
 
 :::
@@ -470,7 +506,7 @@ The Tjurina number $\tau(f)$ is invariant under analytic isomorphism of the
 curve germ.
 
 ::: pf-proof
-That it is an analytic invariant is Greuel--Lossen--Shustin, Remark 3.43.3, printed p. 219: "the Tjurina number $\tau$ is not a topological invariant, but it is an analytic invariant, that is, $\tau(C,z)=\tau(D,w)$ whenever $(C,z)$ and $(D,w)$ are analytically equivalent". The argument below gives the same statement in the form the exercise uses, where an analytic isomorphism is an isomorphism of completed local rings.
+That it is an analytic invariant is Greuel--Lossen--Shustin, Remark 3.43.3, printed p. 219: "the Tjurina number $\tau$ is not a topological invariant, but it is an analytic invariant, that is, $\tau(C,z)=\tau(D,w)$ whenever $(C,z)$ and $(D,w)$ are analytically equivalent". The argument below, which is the card's own, gives the same statement in the form the exercise uses, where an analytic isomorphism is an isomorphism of completed local rings.
 
 By step [](#ambient-automorphism-lift){.pf-ref}, such an isomorphism is induced by a formal coordinate
 automorphism $\Phi$ together with multiplication of the equation by a unit:
