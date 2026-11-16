@@ -46,6 +46,27 @@ audit:
     list stops at the closures. The reason for the citation is unchanged:
     items (2), (5) and (6) of 035X are the three conditions of part (b), and
     the proof was read in tmp/sources/stacks-tags/035X.md.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Both parts are now the Stacks Project's proof transcribed rather than
+    cited: step affine-irreducibility-tfae is Algebra Lemma 10.47.3 (tag
+    037K, printed pp. 544--545), steps xbark-irred-implies-xk-irred and
+    xks-irred-implies-xbark-irred are the proof of Lemma 33.8.9 (tag 038I,
+    printed pp. 2832--2833), step affine-reducedness-tfae is the first two
+    paragraphs of the proof of Lemma 33.6.4 (tag 035X, printed p. 2821), and
+    step purely-inseparable-reducedness-tests is Algebra Lemma 10.44.4
+    (tag 030V, printed pp. 537--538). Pages are those of the retained
+    compiled book tmp/sources/stacks-project-book.pdf, whose PDF page is its
+    printed page; each page was read in that PDF. Read against the book:
+    Hartshorne II Ex. 3.15 on printed p. 93 asks exactly the three closures
+    and the perfect closure that 038I and 035X list, and its X is of finite
+    type over k, which no step uses beyond the definitions. Not checked:
+    the examples in part (c), which are the card's own and not in the
+    source; and Algebra Lemma 10.44.4's own cited lemmas 10.43.4, 10.42.4,
+    10.43.6, 10.43.7 and 10.44.2 were read as statements at the pages given,
+    not transcribed.
 ---
 
 ::: {.problem}
@@ -69,107 +90,236 @@ Give examples of integral schemes which are neither geometrically irreducible no
 :::
 
 ::: {.solution}
-Two standard results on base change for algebras of finite type over a field are used.
+The proof is the Stacks Project's, transcribed step by step below with the
+printed page of the retained compiled book
+(`tmp/sources/stacks-project-book.pdf`, 7655 pages, whose PDF page is its
+printed page). The two lemmas that carry the two parts are
+Lemma 33.8.9 (tag 038I, printed pp. 2832--2833), whose item (1) is
+irreducibility after every field extension, and Lemma 33.6.4 (tag 035X,
+printed pp. 2821--2822, in Section 33.6, tag 035U). They rest on
+Algebra, Lemma 10.47.3 (tag 037K, printed pp. 544--545) and Algebra,
+Lemma 10.44.4 (tag 030V, printed pp. 537--538) for the affine charts.
 
-1. For a field $k$ and a $k$-algebra $R$, the following are equivalent: $\Spec(R\otimes_k K)$ is irreducible for every field extension $K/k$; $\Spec(R\otimes_k k_s)$ is irreducible; $\Spec(R\otimes_k \bar k)$ is irreducible. This is the Stacks Project, Lemma 10.47.3 (Tag 037K).
-2. Let $S$ be a reduced $k$-algebra and $K/k$ a separable field extension. Then $K\otimes_k S$ is reduced. This is the Stacks Project, Lemma 10.43.6 (Tag 030U); over a perfect field every field extension is separable.
+Three facts of the same work are used below in the form in which the source
+uses them.
 
-The step below records the two reductions that the proof of (1) uses, and the last step records that irreducibility of $R\otimes_k K$ cannot be tested by asking for $R\otimes_k K$ to be a domain.
+1. A nonzero ring with at most one minimal prime has irreducible spectrum:
+   the nilradical is then the unique minimal prime, hence prime, and its
+   vanishing locus is the whole spectrum.
+
+2. Algebra, Lemma 10.46.7 (tag 0BRA, printed p. 541): if $\varphi:R\to S$ is
+   a ring map with locally nilpotent kernel, generated as an $R$-algebra by
+   elements $x$ with $x^{p^n}\in\varphi(R)$ and $p^nx\in\varphi(R)$ for some
+   $n>0$ and some prime $p$, then $\varphi$ induces a homeomorphism of
+   spectra, and every base change of $\varphi$ satisfies the same
+   hypotheses. In particular $R\to k'\otimes_kR$ induces a homeomorphism of
+   spectra for an algebraic purely inseparable field extension $k'/k$.
+
+3. Lemma 33.8.8 (tag 038H, printed p. 2832): for a separably algebraically
+   closed field $k$, a field extension $k'/k$ and a $k$-scheme $X$, the
+   morphism $X_{k'}\to X$ induces a bijection of irreducible components.
 
 ::: pf
 
-::: {.pf-step #xbark-irred-implies-xks-irred}
-If $X_{\bar k}$ is irreducible, then $X_{k_s}$ is irreducible.
+::: {.pf-step #affine-irreducibility-tfae}
+Let $R$ be a $k$-algebra. The following are equivalent:
+
+1. $\Spec(R\otimes_kK)$ is irreducible for every field extension $K/k$;
+2. $\Spec(R\otimes_kk')$ is irreducible for every finite separable field extension $k'/k$;
+3. $\Spec(R\otimes_kk_s)$ is irreducible;
+4. $\Spec(R\otimes_k\bar k)$ is irreducible.
 
 ::: pf-proof
-Choose an embedding
-$$
-k_s\subseteq\bar k.
-$$
-The projection
-$$
-X_{\bar k}\longrightarrow X_{k_s}
-$$
-is surjective because $\Spec\bar k\to\Spec k_s$ is faithfully flat and hence surjective, and surjectivity is preserved by base change.
+This is Algebra, Lemma 10.47.3 (tag 037K), printed pp. 544--545, and the
+proof below is its proof.
 
-The continuous image of an irreducible topological space is irreducible.  Hence irreducibility of $X_{\bar k}$ implies irreducibility of $X_{k_s}$.
+$(1)\Rightarrow(2)$ is clear.
+
+$(2)\Rightarrow(3)$: let $\mathfrak q_1,\mathfrak q_2\subseteq R\otimes_kk_s$
+be minimal prime ideals, and write $k_s=\bigcup k'$ over the finite
+subextensions $k'/k$, each of which is separable. For such $k'$ the ring map
+$R\otimes_kk'\to R\otimes_kk_s$ is flat, so by going down for flat ring maps
+(Algebra, Lemma 10.39.19, printed p. 525) the contractions
+$\mathfrak p_i=(R\otimes_kk')\cap\mathfrak q_i$ are minimal primes of
+$R\otimes_kk'$, and $(2)$ gives $\mathfrak p_1=\mathfrak p_2$. Since $k_s$ is
+the union of the $k'$, it follows that $\mathfrak q_1=\mathfrak q_2$, so
+$\Spec(R\otimes_kk_s)$ has one minimal prime and is irreducible by fact 1.
+
+$(3)\Rightarrow(4)$: $\bar k/k_s$ is algebraic and purely inseparable, so by
+fact 2 the ring map
+$R\otimes_kk_s\to R\otimes_k\bar k=R\otimes_{k_s}\bar k$ induces a
+homeomorphism of spectra, and irreducibility passes across it.
+
+$(4)\Rightarrow(1)$: let $K/k$ be a field extension and choose a field $F$
+containing both $K$ and $\bar k$ over $k$. Then
+$$
+R\otimes_kF=(R\otimes_k\bar k)\otimes_{\bar k}F,
+$$
+and $\bar k$ is separably closed, so by Algebra, Lemma 10.47.2 (tag 00I7,
+printed p. 544) the tensor product of two $\bar k$-algebras with a unique
+minimal prime has a unique minimal prime; by $(4)$ the ring $R\otimes_kF$ has
+one minimal prime, hence irreducible spectrum. Finally
+$R\otimes_kK\to R\otimes_kF$ is flat and injective, so every minimal prime of
+$R\otimes_kK$ is the image of a minimal prime of $R\otimes_kF$ (Algebra,
+Lemma 10.30.5 with going down), and $R\otimes_kK$ has one minimal prime too.
 :::
 
 :::
 
-::: {.pf-step #xks-irred-implies-xk-irred}
-If $X_{k_s}$ is irreducible, then $X_K$ is irreducible for every extension field $K/k$.
+::: {.pf-step #xbark-irred-implies-xk-irred}
+If $X_{\bar k}$ is irreducible, then $X_K$ is irreducible for every field
+extension $K/k$.
 
 ::: pf-proof
-Two inputs, both used on affine charts.
+This is the proof of $(3)\Rightarrow(1)$ in Lemma 33.8.9 (tag 038I), printed
+p. 2832.
 
-First, let $k''/k'$ be an algebraic purely inseparable extension.  Then $\Spec k''\to\Spec k'$ is surjective, integral and radical, hence a universal homeomorphism, so base change along it is a homeomorphism; in particular $X_{k''}\to X_{k'}$ is a homeomorphism.  Since every element of $\bar k$ separable over $k_s$ lies in $k_s$, the extension $\bar k/k_s$ is purely inseparable, so $X_{\bar k}\to X_{k_s}$ is a homeomorphism.
+Let $K/k$ be a field extension. Choose a field $\bar k'$ containing $\bar k$
+such that $K$ embeds in $\bar k'$ over $k$. The field $\bar k$ is separably
+algebraically closed, so by fact 3 the morphism
+$X_{\bar k'}\to X_{\bar k}$ induces a bijection of irreducible components, and
+$X_{\bar k'}$ is irreducible.
 
-Second, let $k'$ be algebraically closed and let $Y$ be an irreducible scheme of finite type over $k'$.  Then $Y_\Omega$ is irreducible for every field extension $\Omega/k'$: on an affine chart $\Spec R$ of $Y$ the ring $R$ has a unique minimal prime, and extension of scalars over an algebraically closed field preserves the set of minimal primes (Stacks Project, Lemma 10.47.2).
+The projection $X_{\bar k'}\to X_K$ is surjective, being the base change of
+the surjective morphism $\Spec\bar k'\to\Spec K$, and the image of an
+irreducible space is irreducible. Hence $X_K$ is irreducible.
+:::
 
-Now let $K/k$ be arbitrary and choose a field $\Omega$ containing both $K$ and $\bar k$ over $k$.  By the hypothesis and the first input, $X_{\bar k}$ is irreducible; by the second input applied over the algebraically closed field $\bar k$, $X_\Omega=(X_{\bar k})_\Omega$ is irreducible.  The projection $X_\Omega\to X_K$ is surjective, because $\Spec\Omega\to\Spec K$ is faithfully flat, and the image of an irreducible space is irreducible.  Hence $X_K$ is irreducible.
+:::
+
+::: {.pf-step #xks-irred-implies-xbark-irred}
+If $X_{k_s}$ is irreducible, then $X_{\bar k}$ is irreducible.
+
+::: pf-proof
+The extension $\bar k/k_s$ is algebraic and purely inseparable. On an affine
+open $U=\Spec R\subseteq X$ the ring map $R\otimes_kk_s\to R\otimes_k\bar k$
+is of the form covered by fact 2, so
+$\Spec(R\otimes_k\bar k)\to\Spec(R\otimes_kk_s)$ is a homeomorphism; these
+homeomorphisms glue over an affine cover, so $X_{\bar k}\to X_{k_s}$ is a
+homeomorphism.
+
+A homeomorphism induces a bijection on irreducible closed subsets, so
+$X_{k_s}$ irreducible forces $X_{\bar k}$ irreducible.
 :::
 
 :::
 
 ::: {.pf-step #irreducibility-tfae}
-The following are equivalent:
-
-1. $X_{\bar k}$ is irreducible;
-2. $X_{k_s}$ is irreducible;
-3. $X_K$ is irreducible for every field extension $K/k$.
+The three conditions of part (a) are equivalent.
 
 ::: pf-proof
-Step [](#xbark-irred-implies-xks-irred){.pf-ref} proves $(1)\Rightarrow(2)$, and step [](#xks-irred-implies-xk-irred){.pf-ref} proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
+If $X_{\bar k}$ is irreducible, then $X_K$ is irreducible for every $K$ by
+step [](#xbark-irred-implies-xk-irred){.pf-ref}, and $X_{k_s}$ is irreducible
+because $X_{\bar k}\to X_{k_s}$ is surjective, being a base change of the
+surjective morphism $\Spec\bar k\to\Spec k_s$.
+
+Conversely, $X_{k_s}$ irreducible gives $X_{\bar k}$ irreducible by step
+[](#xks-irred-implies-xbark-irred){.pf-ref}, and irreducibility of $X_K$ for
+every $K$ gives it for $K=\bar k$. This proves part (a).
+
+The affine statement behind these reductions, and the only place where the
+finite separable extensions occur, is step
+[](#affine-irreducibility-tfae){.pf-ref}.
 :::
 
 :::
 
-::: {.pf-step #xbark-reduced-implies-xkp-reduced}
-If $X_{\bar k}$ is reduced, then $X_{k_p}$ is reduced.
+::: {.pf-step #affine-reducedness-tfae}
+Let $X$ be a scheme over $k$. Then $X_K$ is reduced for every field extension
+$K/k$ if and only if for every affine open $U\subseteq X$ the ring $\OO_X(U)$
+is geometrically reduced over $k$.
 
 ::: pf-proof
-Embed the perfect closure $k_p$ into $\bar k$.  On an affine open $U=\Spec A\subseteq X$, the ring map
-$$
-A\otimes_k k_p
-\longrightarrow
-A\otimes_k\bar k
-$$
-is injective because $k_p\to\bar k$ is an extension of fields and tensoring a $k_p$-vector space with $\bar k$ is faithful.
+This is the first two paragraphs of the proof of Lemma 33.6.4 (tag 035X),
+printed p. 2821.
 
-If $A\otimes_k k_p$ had a nonzero nilpotent, its image would be a nonzero nilpotent in $A\otimes_k\bar k$, contradiction.  Hence every affine chart of $X_{k_p}$ is reduced.
+Assume $X_K$ is reduced for every $K$; the source states this as its
+condition (1), that $X$ is geometrically reduced, which for it means that
+for every $K$ and every point $x'\in X_K$ the local ring of $X_K$ at $x'$ is
+reduced, an equivalent form since reducedness of a scheme is reducedness of
+all its local rings.
+
+Now let $U\subseteq X$ be affine open. Since $X_K$ is reduced, its open
+subscheme $U_K=\Spec(\OO_X(U)\otimes_kK)$ is reduced, hence the ring
+$\OO_X(U)\otimes_kK$ is reduced, a scheme affine over a field being reduced
+exactly when its ring is (Properties, Section 28.3, tag 01OJ). So
+$\OO_X(U)$ is geometrically reduced.
+
+Conversely, if every $\OO_X(U)$ is geometrically reduced, then for any $K$
+the scheme $X_K$ is obtained by gluing the spectra of the rings
+$\OO_X(U)\otimes_kK$ over an affine cover (Schemes, Section 26.17), each of
+them reduced, so $X_K$ is reduced.
 :::
 
 :::
 
-::: {.pf-step #xkp-reduced-implies-xk-reduced}
-If $X_{k_p}$ is reduced, then $X_K$ is reduced for every extension field $K/k$.
+::: {.pf-step #purely-inseparable-reducedness-tests}
+Let $S$ be a $k$-algebra, and let $k_p=k^{perf}$ be the perfect closure of
+$k$. The following are equivalent:
+
+1. $k'\otimes_kS$ is reduced for every finite purely inseparable extension $k'/k$;
+2. $k^{1/p}\otimes_kS$ is reduced;
+3. $k_p\otimes_kS$ is reduced;
+4. $\bar k\otimes_kS$ is reduced;
+5. $S$ is geometrically reduced over $k$, that is $K\otimes_kS$ is reduced for every field extension $K/k$.
 
 ::: pf-proof
-The field $k_p$ is perfect, so every field extension of $k_p$ is separable.  By the second result of the preamble, applied over the perfect field $k_p$, a reduced algebra of finite type over $k_p$ stays reduced after every field extension: affinely, a reduced finitely generated algebra over a perfect field remains reduced after every field extension.  So $X_{k_p}$ reduced implies $(X_{k_p})_\Omega$ reduced for every extension $\Omega/k_p$.
+This is Algebra, Lemma 10.44.4 (tag 030V), printed pp. 537--538, and the
+proof below is its proof. When $k$ has characteristic zero every field
+extension of $k$ is separable and the assertion is Algebra, Lemma 10.43.6
+(tag 030U, printed p. 534).
 
-Choose a common overfield $\Omega$ of $K$ and $k_p$.  The preceding fact gives that
+Every finite purely inseparable extension $k'/k$ embeds in $k_p$, and
+$k^{1/p}\subseteq k_p\subseteq\bar k$. The implications
+$(5)\Rightarrow(4)\Rightarrow(3)\Rightarrow(2)$ and $(3)\Rightarrow(1)$ are
+therefore immediate: a reduced ring stays reduced after a base change to a
+larger field containing the last one as a subfield.
+
+$(1)\Rightarrow(5)$: let $K/k$ be a field extension; $K\otimes_kS$ is to be
+reduced. By Algebra, Lemma 10.43.4 (printed p. 534) it suffices to treat
+finitely generated $K$, and then Algebra, Lemma 10.42.4 (printed p. 532)
+provides a diagram $k\subseteq k'\subseteq K'$, $K\subseteq K'$ with $k'/k$
+and $K'/K$ finite purely inseparable and $K'/k'$ separably generated. By
+$(1)$ the ring $k'\otimes_kS$ is reduced, so by Algebra, Lemma 10.43.6 the
+ring
 $$
-X_\Omega=(X_{k_p})_\Omega
+K'\otimes_kS=K'\otimes_{k'}(k'\otimes_kS)
 $$
-is reduced.
+is reduced, being a separably generated base extension of a reduced algebra
+over $k'$. The ring $K\otimes_kS$ is a subring of it, so it is reduced.
 
-On every affine chart of $X_K$, the base-change map to the corresponding affine chart of $X_\Omega$ is injective because $K\to\Omega$ is a field extension.  A nilpotent in the source would therefore give a nilpotent in the reduced target.  Hence $X_K$ is reduced.
-
-Equivalently, this is the perfect-closure criterion for geometric reducedness: finite purely inseparable extensions are exactly the obstruction, and they all embed in $k_p$.
+$(2)\Rightarrow(5)$: assume $k^{1/p}\otimes_kS$ is reduced. Then $S$ is
+reduced, since $S$ embeds in $k^{1/p}\otimes_kS$. For a minimal prime
+$\mathfrak p$ of $S$ the ring $k^{1/p}\otimes_kS_{\mathfrak p}$ is a
+localization of $k^{1/p}\otimes_kS$, hence reduced, and
+$S_{\mathfrak p}$ is a field (Algebra, Lemma 10.25.1), hence geometrically
+reduced by Algebra, Lemma 10.44.2 (printed p. 536), which identifies
+geometric reducedness of a field extension with separability. Then $S$ is
+geometrically reduced by Algebra, Lemma 10.43.7 (printed p. 535), since a
+reduced algebra all of whose localizations at minimal primes are
+geometrically reduced is geometrically reduced.
 :::
 
 :::
 
 ::: {.pf-step #reducedness-tfae}
-The following are equivalent:
-
-1. $X_{\bar k}$ is reduced;
-2. $X_{k_p}$ is reduced;
-3. $X_K$ is reduced for every field extension $K/k$.
+The three conditions of part (b) are equivalent.
 
 ::: pf-proof
-Step [](#xbark-reduced-implies-xkp-reduced){.pf-ref} proves $(1)\Rightarrow(2)$, and step [](#xkp-reduced-implies-xk-reduced){.pf-ref} proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
+Step [](#affine-reducedness-tfae){.pf-ref} identifies reducedness of $X_K$ for
+all $K$ with geometric reducedness of the rings $\OO_X(U)$ on affine opens,
+and step [](#purely-inseparable-reducedness-tests){.pf-ref} gives, for each
+such ring $S$, the equivalence of the four base-change tests with geometric
+reducedness of $S$.
+
+It remains to pass from the rings to the scheme. If $X_{\bar k}$ is reduced
+then each $\OO_X(U)\otimes_k\bar k$ is reduced, so each $\OO_X(U)$ is
+geometrically reduced by the equivalence of the previous step, and then
+$X_K$ is reduced for every $K$ by step
+[](#affine-reducedness-tfae){.pf-ref}. Conversely if $X_{k_p}$ is reduced then
+each $\OO_X(U)\otimes_kk_p$ is reduced, so each $\OO_X(U)$ is geometrically
+reduced, and again every $X_K$ is reduced, in particular $X_{\bar k}$. This
+proves part (b).
 :::
 
 :::
@@ -311,7 +461,9 @@ in which $y-s$ is a nonzero nilpotent.  So a domain of finite type over an algeb
 :::
 
 ::: {.remark title="Published solution"}
-Both parts are proved in full in the Stacks Project, with the same closures Hartshorne's list uses. Part (a) is Lemma 33.8.9 (tag 038I), which lists as equivalent: "$X$ is geometrically irreducible over $k$"; "for every finite separable field extension $k'/k$ the scheme $X_{k'}$ is irreducible"; and "$X_{\bar k}$ is irreducible, where $k\subset\bar k$ is a separable algebraic closure of $k$"; part (1) of that list is the assertion for every field extension $k'/k$, so the lemma gives the equivalence of all three of Hartshorne's conditions. Part (b) is Lemma 33.6.4 (tag 035X, in Section 33.6, which is tag 035U), which lists as equivalent: $X$ geometrically reduced; $X_{k'}$ reduced for every field extension $k'/k$; $X_{k'}$ reduced for every finite purely inseparable $k'/k$; $X_{k^{1/p}}$ reduced; $X_{k^{perf}}$ reduced; $X_{\bar k}$ reduced; and, as its item (7), geometric reducedness of the rings $\OO_X(U)$ on the affine opens $U$. The $k_p$ of the exercise is $k^{perf}$, so items (2), (5) and (6) are exactly the three conditions of part (b). The proofs there run through Algebra, Lemmas 10.44.4 and 10.47.3, which is the descent the retained sets assert.
+Both parts are proved in full in the Stacks Project, with the same closures that Hartshorne's list uses, and the two parts of the solution above are that proof transcribed. Part (a) is Lemma 33.8.9 (tag 038I, printed pp. 2832--2833), whose three items are "$X$ is geometrically irreducible over $k$", where geometric irreducibility is irreducibility after every field extension by definition, "$X_{k'}$ is irreducible for every finite separable field extension $k'/k$" and "$X_{\bar k}$ is irreducible, where $k\subset\bar k$ is a separable algebraic closure of $k$"; these are Hartshorne's three conditions. The proof there is the two steps `xbark-irred-implies-xk-irred` and `xks-irred-implies-xbark-irred`, and the affine statement it rests on is Algebra, Lemma 10.47.3 (tag 037K, printed pp. 544--545), carried out in step `affine-irreducibility-tfae`. Part (b) is Lemma 33.6.4 (tag 035X, in Section 33.6, which is tag 035U, printed pp. 2821--2822), which lists as equivalent: $X$ geometrically reduced; $X_{k'}$ reduced for every field extension $k'/k$; $X_{k'}$ reduced for every finite purely inseparable $k'/k$; $X_{k^{1/p}}$ reduced; $X_{k^{perf}}$ reduced; $X_{\bar k}$ reduced; and, as its item (7), geometric reducedness of the rings $\OO_X(U)$ on the affine opens $U$. The $k_p$ of the exercise is $k^{perf}$, so items (2), (5) and (6) are exactly the three conditions of part (b). The equivalence of those conditions is Algebra, Lemma 10.44.4 (tag 030V, printed pp. 537--538), transcribed in step `purely-inseparable-reducedness-tests`, and the passage from the rings on affine opens to the scheme is step `affine-reducedness-tfae`.
+
+What the two steps do not get from the source is part (c). The three examples are the card's own: $\Spec\CC$ over $\RR$, $\Spec\FF_p(u)[x]/(x^p-u)$ over $\FF_p(u)$, and $\Spec E$ with $E=L(u^{1/p})$ over $\FF_p(u,v)$ for an Artin--Schreier extension $L=k(w)$, none of which the Stacks Project states.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.15, PDF pp. 26--27, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) Kim reduces a reducible $X_K$ to an affine chart with $A\otimes_kK$ reducible, extracts non-nilpotent $f_1,f_2$ with $f_1f_2=0$, and then asserts that the resulting finitely many polynomial conditions, which have a solution over the algebraically closed field $K$, have one over a finite extension of $k$; a finite purely inseparable base change of a separably closed $k$ is a homeomorphism, which would finish the argument.
 That descent is asserted rather than proved, and it fails on the natural reading: a purely inseparable extension of a separably closed but non-perfect $k$ need not have a $k$-point, so a solution over $K$ does not specialize to one over $k$.
