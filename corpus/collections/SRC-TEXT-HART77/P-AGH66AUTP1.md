@@ -72,7 +72,7 @@ audit:
     steps, which the reader accepted.
 - event: source-corrected
   by: claude
-  date: 2026-11-17
+  date: 2026-11-16
   note: >-
     Reader's report on issue #121, third pass. The 2026-11-16 solution-written
     note is restored to the text it had on its date, including the closing
@@ -95,6 +95,32 @@ audit:
     re-read in tmp/sources/milne-fields-and-galois-theory.md for this, and the
     two-page slip recorded in the 2026-11-11 note stands: 9.24 is on printed
     p. 118 and 9.25 on printed p. 119.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Record of a date, on the reader's report of issue #121's fourth pass. The
+    event above is dated 2026-11-17 and was written and committed on
+    2026-11-16, in a9d902a1a9 (committer date 2026-11-16 07:15:38); a record
+    carries the day of the commit that lands it, so 2026-11-16 is its date. It
+    is left unedited, as a dated event must be, and its content stands: the
+    2026-11-16 solution-written note is restored to the text it had on its
+    date, and step field-automorphism-fractional-linear has p and q of degree
+    at most 1 rather than linear. This event is the record of the date, and
+    nothing else on the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121, fifth pass: one date, no mathematics. The
+    source-corrected event above is dated 2026-11-17, a day that had not
+    happened when it was written and committed, in a9d902a1a9 (committer date
+    2026-11-16 07:15:38). A record carries the day of the commit that lands
+    it, so its date is now 2026-11-16, and its text is untouched. The "Record
+    of a date" event below left the date as written; the reader of this pass
+    requires the field itself to carry the commit's day. Nothing else on the
+    card changes.
+
 ---
 
 ::: {.problem}
