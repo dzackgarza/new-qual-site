@@ -377,6 +377,39 @@ audit:
     commit. Not read in this pass: Shafarevich's Theorem 1.15 and Theorem
     1.25, as before, and the printed book itself; no step outside (iv) was
     re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Later pass of this batch, on the reader's report of commit 23a6edd0ef, and
+    the correction of three defects that commit introduced. (i) Step
+    secant-dim-lower said that two distinct lines through p_0 give planes
+    meeting "along the tangent line of X at p". X is a surface and has a
+    tangent plane at p, not a tangent line, and the two planes do not meet in
+    a line: the paragraph now argues from the reducible conic Q = l union l',
+    which is a conic in P^2, so that nu_2(Q) is a hyperplane section of X, and
+    on Q = P^1 the map nu_2 is the complete linear system |O_Q(2)| of degree 4
+    and dimension 4, so <nu_2(Q)> = <Pi_l, Pi_l'> is a P^4; the two planes are
+    therefore distinct and meet in a single point, namely p. The conclusion
+    that C_p is three-dimensional is unchanged. (ii) The published-solution
+    remark presented the card's own completion of the lower bound as
+    Harris's; Harris prints only the parenthetical "the cones p-bar,S over S
+    with vertex a point p in S would all have to coincide", in Example 11.22,
+    printed p. 144, text version
+    tmp/sources/harris-1992-algebraic-geometry-first-course-pp128-149.md at
+    line 352. The remark now gives Harris the upper bound and that
+    parenthetical, and marks the span argument as the card's own, as step
+    secant-dim-lower does; the solution's opening sentence, which called the
+    two bounds Harris's and Egbert's, now says that both state them and that
+    the lower one is proved in neither. (iii) Step closed-immersion-b said the
+    criterion of step corollary "needs exactly" two conditions, against that
+    step's three requirements; it now says that O does not lie on X, since X
+    is contained in Sec(X) and O lies outside Sec(X), along with the other
+    two. Checked in this pass: the containment X in Sec(X) and the two-plane
+    computation above, Harris's sentence at the line named, and the three
+    places on the card. Not read in this pass: no source beyond that sentence
+    was read again; no step outside these three was re-derived, and the
+    printed book was not reopened.
 ---
 
 ::: {.problem}
@@ -397,7 +430,7 @@ Usually one obtains a finite number of double points with transversal tangent pl
 Let $X\subseteq\PP^n$ be nonsingular of dimension $r$.
 Write $\operatorname{Sec}(X)$ for the closure in $\PP^n$ of the union of the secant lines $\overline{PQ}$ of $X$ over pairs of distinct points $P,Q\in X$; it is closed, and Harris writes $S(X)$ for it.
 Part (a) is I. R. Shafarevich, *Basic Algebraic Geometry 1*, third edition (2013), §5.4, printed pp. 134--136, for the tangent bound, the lemma on isomorphic embeddings, Corollary 2.7 and the projection, and J. Harris, *Algebraic Geometry: A First Course* (1992), Lecture 11, Example 11.22, printed pp. 143--144, and Proposition 11.24, printed p. 144, for the secant bound.
-The steps of part (b) that rest on no published argument are the card's own and each says so; the two bounds on $\dim\operatorname{Sec}(X)$ are Harris's and Egbert's.
+The steps of part (b) that rest on no published argument are the card's own and each says so; the two bounds on $\dim\operatorname{Sec}(X)$ are stated by Harris and by Egbert, the lower one with no proof in either text.
 
 ::: pf
 
@@ -626,7 +659,10 @@ $$
 C_p\coloneqq\bigcup_{\ell\ni p_0}\Pi_\ell\subseteq\operatorname{Sec}(X)
 $$
 over the pencil of lines through $p_0$.
-Two distinct lines through $p_0$ have distinct planes $\Pi_\ell$, meeting along the tangent line of $X$ at $p$, so their union is three-dimensional, and so is $C_p$.
+Take two distinct lines $\ell,\ell'$ through $p_0$.
+Their union $Q=\ell\cup\ell'$ is a (reducible) conic in $\PP^2$, so $\nu_2(Q)=\nu_2(\ell)\cup\nu_2(\ell')$ is a hyperplane section of $X$; and on $Q\cong\PP^1$ the map $\nu_2$ is given by the complete linear system $\linearsystem{\OO_Q(2)}$, of degree $4$ and dimension $4$, so $\langle\nu_2(Q)\rangle$ is a $\PP^4$.
+That span is $\langle\Pi_\ell,\Pi_{\ell'}\rangle$, hence four-dimensional, so $\Pi_\ell$ and $\Pi_{\ell'}$ are distinct planes of it; two distinct planes of a $\PP^4$ meet in a single point, here $p$, which both contain.
+Therefore $\Pi_\ell\cup\Pi_{\ell'}$ is three-dimensional, and so is $C_p$.
 Were $\dim\operatorname{Sec}(X)$ equal to $3$, $C_p$ would therefore be all of $\operatorname{Sec}(X)$ for every $p\in X$: the secant variety would be a cone with vertex at each point of $X$, and for $x\in\operatorname{Sec}(X)$ and $p\in X$ the line $\overline{px}$ would lie in $\operatorname{Sec}(X)$, since $x$ lies in one of the planes $\Pi_\ell$ of $C_p$ and that plane contains $p$.
 Now let $\Lambda\subseteq\operatorname{Sec}(X)$ be a linear subspace and $p\in X$; the span $\langle\Lambda,p\rangle$ lies in $\operatorname{Sec}(X)$, being the union of the lines $\overline{py}$ over $y\in\Lambda$, or $\Lambda$ itself when $p\in\Lambda$.
 Adjoining points of $X$ one at a time to a first point $p_0\in X$, each span $\langle p_0,p_1,\dots,p_k\rangle$ therefore lies in $\operatorname{Sec}(X)$; for $k$ large enough that $p_0,\dots,p_k$ span $X$, which exists because $X$ spans $\PP^5$, the whole of $\PP^5$ lies in $\operatorname{Sec}(X)$, against $\dim\operatorname{Sec}(X)=3$.
@@ -686,7 +722,7 @@ $$
 Every secant line of $X$ lies in $\operatorname{Sec}(X)$, and so does every embedded tangent space of the smooth surface $X$: every tangent direction is a limit of secant directions, and the projective tangent plane is the union of its tangent lines through the point.
 Thus $O$ lies on neither a secant line nor an embedded tangent plane of $X$.
 
-The criterion of step [](#corollary){.pf-ref} needs exactly that $O$ lie on no secant line and in no embedded tangent space, and both hold here; since $X$ is projective, projection from $O$ is therefore a closed immersion
+The criterion of step [](#corollary){.pf-ref} asks, besides that $O$ not lie on $X$, that $O$ lie on no secant line and in no embedded tangent space; both hold here, and $O\notin X$ as well, since $X\subseteq\operatorname{Sec}(X)$ for a surface and $O$ is outside $\operatorname{Sec}(X)$. Since $X$ is projective, projection from $O$ is therefore a closed immersion
 $$
 \boxed{X\hookrightarrow\PP^4}.
 $$
@@ -715,6 +751,6 @@ His secant count on p. 136 is defective as printed. His $\Gamma$ is the set of t
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, printed p. 223, gives (a) in entry 4.3.20 as "This is Shafarevich Algebraic Geometry 1, theorem 9, page 136", the numbering of an earlier edition of Shafarevich; in the 2013 edition the theorem is 2.25, and the proof on pp. 135--136 contains the same secant count.
 
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
-Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the dimension: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$; and $\dim S(X)=4$: were it $3$, the cone over $X$ with vertex a point $p\in X$ — three-dimensional, all of its lines joining $p$ to points of $X$ — would be the whole of $S(X)$, and that for every $p\in X$, so that joining a point of $S(X)$ to a point of $X$ would stay in $S(X)$; adjoining the points of $X$ one at a time then puts the span of $X$, which is $\PP^5$, inside $S(X)$. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
+Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the upper bound: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$. For the lower bound he prints only the parenthetical quoted at step [](#secant-dim-lower){.pf-ref}, "the cones $\overline{p,S}$ over $S$ with vertex a point $p\in S$ would all have to coincide", and the argument that finishes it is the card's own there: were $\dim S(X)$ equal to $3$, the cone over $X$ with vertex a point $p\in X$ — three-dimensional, all of its lines joining $p$ to points of $X$ — would be the whole of $S(X)$, and that for every $p\in X$, so that joining a point of $S(X)$ to a point of $X$ would stay in $S(X)$; adjoining the points of $X$ one at a time then puts the span of $X$, which is $\PP^5$, inside $S(X)$. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
 The clause for a general point of a secant line is what both texts give; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} use.
 :::
