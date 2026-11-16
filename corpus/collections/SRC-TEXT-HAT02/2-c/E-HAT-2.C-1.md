@@ -82,7 +82,7 @@ audit:
     target edge needs $\abs{n}$ preimages), the attainment by a $3\abs{n}$-gon over a triangle, and
     $n=0$ by a constant map between triangles. Repairs: the card carried a second `---` line
     after its front matter, removed; and its body mathematics wrote raw bars for the absolute
-    value of $n$, now written with the semantic macro \\abs (STYLE-04), which the file also
+    value of $n$, now written with the semantic macro `\abs` (STYLE-04), which the file also
     failed before this batch. Not claimed: a solution in a printed solution set; among
     the retained sets only Poulsen (2.C.2, 2.C.8, 2.C.9), Li (2.C.2, 2.C.4, 2.C.5) and DeMason
     (2.C.2, 2.C.3, 2.C.4, 2.C.9) reach §2.C at all.
