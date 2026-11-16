@@ -314,6 +314,33 @@ audit:
     outside the sentence after Definition 7.5, and his Chapter 9; and the pages
     of Dolgachev and Duncan. Nothing was searched for part (c), which stays open
     on the assertion that step bad-locus-proper-closed makes and does not derive.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A reader's report of this day on the event above, repaired here. Item (ii) of
+    that event said that Nagata's printed pre-exceptional type, (1, 1, 1, 0, ...,
+    0) "with r - 2 zeros" on printed p. 280, is an r-tuple with r + 1 entries and
+    that the solution's bullet must therefore be the class of a line through two
+    of the points, (1, 1, 0, ..., 0) with r - 2 zeros; the bullet and the step
+    were changed so, and the printed form was named a misprint. That is wrong
+    twice over. A numerical type is (d, m_1, ..., m_r), which has r + 1 entries,
+    so three 1s followed by r - 2 zeros are exactly d = 1, m_1 = m_2 = 1 and
+    m_3 = ... = m_r = 0, the class of a line through two of the points, and it
+    satisfies d^2 - sum m_i^2 = -1 and 3d - sum m_i = 1; and the replacement
+    (1, 1, 0, ..., 0) with r - 2 zeros has r entries and is not a type with r base
+    points at all. The same count disposes of Proposition 3's (1, 1, 1, 1, ...,
+    0) "with r - 3 zeros" on printed p. 279, which is d = 1 with three points and
+    also r + 1 entries: neither place misprints anything, and there is no defect
+    of the source to name here. The bullet again prints the representative as the
+    paper does and unpacks it as d = 1, m_1 = m_2 = 1, m_3 = ... = m_r = 0, and
+    the step's sentence on the degree-1 family says the same. What stands from the
+    event above is the passage through Theorem 8.2.11, the basis (8.5), the
+    sentence after Definition 7.5 and Lemma 2.4, and the computation of
+    r_{alpha_123} as Nagata's operator q. The 200 dpi render of printed pp. 279 and
+    280 that event records is a reading of the page and was not at fault; the
+    conclusion drawn from it was. Nothing further was read for this event, the
+    pages it rests on being those of the event above.
 ---
 
 ::: {.problem}
@@ -354,7 +381,7 @@ a quantity of the numerical type alone (Nagata, Section 2(3), printed p. 277, an
 The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2, printed p. 277; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
-- a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,0,\ldots,0)$ with $r-2$ zeros, the type of a line through two of the points, so that $I=-1$ and $vg=0$; Nagata prints the representative as $(1,1,1,0,\ldots,0)$ "with $r-2$ zeros", printed p. 280, an $r$-tuple with $r+1$ entries, while the class his own proof of Theorem 2a carries by $\mathfrak q$ to $\mathcal L(0;-P_1)$ is this one of a line through two points; and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
+- a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
 The transcription below proves (a), (b), (d) and (e). Part (c) is proved on the card by steps of its own, since no source listed for the card proves it, and the proof rests on an assertion it does not derive.
 
@@ -493,7 +520,7 @@ up to permutation. Conversely, every solution of these two equations is pre-exce
 $$
 r_{\alpha_{123}}(v)=v+a\alpha_{123}=(d+a)\mathbf e_0-(m_1+a)\mathbf e_1-(m_2+a)\mathbf e_2-(m_3+a)\mathbf e_3-\sum_{i\ge4}m_i\mathbf e_i
 $$
-is Nagata's operator $\mathfrak q$ on the type $(d,m_1,\ldots,m_r)$ of Section 2, printed p. 279. Lemma 2.4, printed p. 279, says that two numerical types are similar exactly when one is obtained from the other by a word in $\mathfrak q$ and in the permutations of the multiplicities, which is exactly the condition that the two vectors lie in one $W(\mathbf E_N)$-orbit, so the similarity classes are the $W(\mathbf E_N)$-orbits. The vectors satisfying the two equations are the $W(\mathbf E_N)$-orbit of $\omega_N$, and that orbit contains $\mathbf e_0-\mathbf e_1-\mathbf e_2$, the degree-$1$ family the same proposition lists, whose type is $(1,1,0,\ldots,0)$ with $r-2$ zeros: the solutions of the two equations are therefore one similarity class, the pre-exceptional one, and Dolgachev's proof of completeness is the same descent, Noether's inequality after the permutations of $\mathfrak S_N$ and then $r_{\alpha_{123}}$ to lower the degree. What remains from the sources is the enumeration. Nagata's table for $r=8$, printed p. 284, lists all pre-exceptional types up to permutation, in seven rows $(0;-1,0,\ldots,0)$, $(1;1,1,0,\ldots,0)$, $(2;1,1,1,1,1,0,0,0)$, $(3;2,1,1,1,1,1,1,0)$, $(4;2,2,2,1,1,1,1,1)$, $(5;2,2,2,2,2,2,1,1)$ and $(6;3,2,\ldots,2)$, which account for $8+28+56+56+56+28+8=240$ classes; its first row is the class $\mathcal L(0;-P_1)$ of an exceptional curve, the only row with a negative multiplicity, and its last is the degree-$6$ class $6l-3e_{i_1}-2e_{i_2}-\cdots-2e_{i_8}$, of square $-1$ and $\mathbf k_8\cdot v=-1$. Dolgachev's table, printed p. 261, gives $240$ at $N=8$ and $56$ at $N=7$, and his printed list for $N=7$ runs $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$, $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$ and $-\mathbf k_7-\mathbf e_i$, which count $7+21+21+7=56$. His printed list for $N=8$ is not to be read as a list of exceptional vectors: its last family, $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$, has square $-14$ and $\mathbf k_8\cdot v=2$.
+is Nagata's operator $\mathfrak q$ on the type $(d,m_1,\ldots,m_r)$ of Section 2, printed p. 279. Lemma 2.4, printed p. 279, says that two numerical types are similar exactly when one is obtained from the other by a word in $\mathfrak q$ and in the permutations of the multiplicities, which is exactly the condition that the two vectors lie in one $W(\mathbf E_N)$-orbit, so the similarity classes are the $W(\mathbf E_N)$-orbits. The vectors satisfying the two equations are the $W(\mathbf E_N)$-orbit of $\omega_N$, and that orbit contains $\mathbf e_0-\mathbf e_1-\mathbf e_2$, the degree-$1$ family the same proposition lists, whose type is $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, that is $d=1$ and $m_1=m_2=1$: the solutions of the two equations are therefore one similarity class, the pre-exceptional one, and Dolgachev's proof of completeness is the same descent, Noether's inequality after the permutations of $\mathfrak S_N$ and then $r_{\alpha_{123}}$ to lower the degree. What remains from the sources is the enumeration. Nagata's table for $r=8$, printed p. 284, lists all pre-exceptional types up to permutation, in seven rows $(0;-1,0,\ldots,0)$, $(1;1,1,0,\ldots,0)$, $(2;1,1,1,1,1,0,0,0)$, $(3;2,1,1,1,1,1,1,0)$, $(4;2,2,2,1,1,1,1,1)$, $(5;2,2,2,2,2,2,1,1)$ and $(6;3,2,\ldots,2)$, which account for $8+28+56+56+56+28+8=240$ classes; its first row is the class $\mathcal L(0;-P_1)$ of an exceptional curve, the only row with a negative multiplicity, and its last is the degree-$6$ class $6l-3e_{i_1}-2e_{i_2}-\cdots-2e_{i_8}$, of square $-1$ and $\mathbf k_8\cdot v=-1$. Dolgachev's table, printed p. 261, gives $240$ at $N=8$ and $56$ at $N=7$, and his printed list for $N=7$ runs $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$, $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$ and $-\mathbf k_7-\mathbf e_i$, which count $7+21+21+7=56$. His printed list for $N=8$ is not to be read as a list of exceptional vectors: its last family, $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$, has square $-14$ and $\mathbf k_8\cdot v=2$.
 :::
 
 :::
