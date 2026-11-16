@@ -306,16 +306,29 @@ def introduced_record_texts(
 
     A pure rewrite is not an introduction: texts enter this multiset only at a revision
     where the identity has more records than at the path's previous revision. Within such
-    a revision, the positive multiset difference from its predecessor supplies the new
-    texts. Consequently [A, B] -> [B, A] introduces nothing, while introducing B beside
-    an already rewritten A adds B alone. Texts are folded so source wrapping is not text.
+    a revision, exact text matches are consumed first, as they are in the gate. Remaining
+    old records then match remaining new records one-to-one in file order, representing
+    rewrites of the base records; only new records left unpaired are introductions. Thus
+    [A] -> [A', B] introduces B rather than A'. Texts are folded to ignore source wrapping.
     """
     introduced: Counter[str] = Counter()
-    previous: Counter[str] = Counter()
+    previous: list[str] = []
     for standing in reversed(earlier_versions(path, revision)):
-        current = Counter(_folded(text) for other, text in records(standing) if other == identity)
-        if sum(current.values()) > sum(previous.values()):
-            introduced += current - previous
+        current = [_folded(text) for other, text in records(standing) if other == identity]
+        if len(current) > len(previous):
+            unused = set(range(len(current)))
+            rewritten = 0
+            for before_text in previous:
+                match = next((index for index in sorted(unused) if current[index] == before_text), None)
+                if match is None:
+                    rewritten += 1
+                else:
+                    unused.remove(match)
+            # The remaining old records pair one-to-one with replacement texts. Count growth
+            # leaves at least this many new records, and exactly those left over are introduced.
+            for index in sorted(unused)[:rewritten]:
+                unused.remove(index)
+            introduced += Counter(current[index] for index in sorted(unused))
         previous = current
     return introduced
 
