@@ -30,7 +30,7 @@ audit:
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
-  note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t.
+  note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t. The statement now asks for the jumps of h^0(t, I(1)) and h^1(t, I(1)).
 - event: source-checked
   by: claude
   date: 2026-11-16
@@ -170,6 +170,29 @@ audit:
     Checked in this pass: this card's audit trail in git, commit by commit,
     and the two pages of the text version named in (i). Not checked: no other
     page was re-read, and no step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Fifth pass, on the one dated event the event above left disclosed. The
+    source-checked event of 2026-10-29 is now restored to the text it carried
+    at d383f9e9ee, its second sentence included: "The statement now asks for
+    the jumps of h^0(t, I(1)) and h^1(t, I(1))." The previous pass read
+    QUAL-11 as permitting a disclosed in-place edit to stand and said so; a
+    correction to a dated event is a new event of the correcting commit's
+    date, and the restoration is allowed precisely because the text it
+    restores stands, whole, in an earlier revision of this path, so the event
+    above is superseded on this point and is left as written. What the
+    restored sentence says is corrected here: it is true of the card's own
+    statement as it stood on 2026-10-29, which asked for the jumps of the
+    twist, and false of the book, whose III.12.3 asks for h^0(t, I) and
+    h^1(t, I) untwisted, as the first sentence of the same event says. The
+    card's statement is the printed one, and the twist is discussed in the
+    solution as the case in which the printed functions jump. Checked in this
+    pass: this card's history at d383f9e9ee, 9979beae9c and HEAD, and the
+    printed exercise in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    (printed p. N is PDF p. N+15), printed pp. 291-292. Not checked: no step
+    was re-derived and no page was read beyond the exercise in this pass.
 ---
 
 ::: {.problem}
