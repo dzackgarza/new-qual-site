@@ -147,7 +147,7 @@ Parts (c) and (d) are stated for an arbitrary closed subset $Y$, as in the book.
 :::
 
 ::: {.solution}
-Parts (c) and (d) below are the published argument, transcribed at the steps that prove them from Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32 of text version `tmp/sources/hartshorne-solutions-kim.md`, and A. Shichijo, Exercise 3.20, printed pp. 17--18 of text version `tmp/sources/shitijyou-ch2-section3.md`; the other parts are the card's own proof, which the same sources agree with.
+Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, text version `tmp/sources/hartshorne-solutions-kim.md`, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, text version `tmp/sources/shitijyou-ch2-section3.md`, at the steps that cite them.  Parts (a), (b), (e) and (f) are proved here, and the two sources agree with those proofs.
 
 We use the following standard affine dimension theorem.
 
