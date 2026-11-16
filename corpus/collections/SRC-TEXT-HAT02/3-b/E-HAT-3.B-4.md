@@ -216,6 +216,15 @@ audit:
     disclosed here rather than presented as a restoration. Nothing in the statement or the proof
     changes: the statement as printed on p. 280, Kottke's Problem 1 on printed p. 1, and the
     five-page length of the set stand as the card has them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    A wording correction to the event immediately above: it says that 039cb8ebb9 changed "two
+    mathematics spans of the `source-checked` events of 2026-11-13". The second of the two spans is in
+    the `solution-written` event of that date, not in a `source-checked` one; the two events are the
+    two dated 2026-11-13 events named in the reader's report, and the substitution and its original
+    text are as that event gives them. Nothing else changes.
 ---
 
 ::: {.problem}
