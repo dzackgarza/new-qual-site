@@ -219,6 +219,34 @@ audit:
     Hilbert-Samuel polynomial is binomial(n+r-1,r) with normalized leading
     coefficient 1. Not checked in this pass: the blow-up remark, unchanged from
     the commit of this date that introduced it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 against the book: two repairs, one in the
+    statement and one in a letter, and no change of mathematics. (1) The
+    statement printed the hint as a line of its own, "*Hint for part 2:* Use
+    induction on dim Y.". Hartshorne prints it inside part (b), in brackets, on
+    the same line: "(b) Show that deg X < d. [Hint: Use induction on dim Y.]"
+    (Algebraic Geometry (1977), I.7.7, printed p. 55, retained copy
+    tmp/sources/hartshorne-1977-algebraic-geometry.pdf, PDF p. 70, the folio 55
+    at its foot). The statement now carries the book's wording; its hypothesis
+    and its two parts are unchanged, and no step changes, the hint's induction
+    being KReiser's in step point-of-x-not-in-y rather than the card's. (2) The
+    card's own step giving the multiplicity of the nonsingular point as 1 wrote
+    the Hilbert-Samuel function as binomial(n+r-1, r), n being the power of the
+    maximal ideal; n is the ambient dimension of PP^n in the statement, so the
+    letter carried two meanings in one card (NOT-3). The power is now m, the
+    maximal ideal is named, and the step says what the normalized leading
+    coefficient is instead of only naming it. The mathematics is unchanged:
+    O_{Y,P} is regular of dimension r, its associated graded ring is a
+    polynomial ring in r variables, the length of O_{Y,P}/m^m is
+    binomial(m+r-1, r), and r! times that leading coefficient is 1. The same
+    binomial had n in the event above, which introduced the step; that event is
+    a dated record and stands as written.
+    Not checked in this pass: Mumford's Definition 2.2 and Proposition 2.5 and
+    Harris's Example 18.16, whose reading the earlier events record, and the
+    blow-up remark; neither changes here.
 ---
 ::: {.problem}
 Let $Y$ be a variety of dimension $r$ and degree $d > 1$ in $\PP^n$.
@@ -227,9 +255,7 @@ Define $X$ to be the closure of the union of all lines $PQ$, where $Q \in Y$ and
 
 (a) Show that $X$ is a variety of dimension $r + 1$.
 
-(b) Show that $\deg X < d$.
-
-*Hint for part 2:* Use induction on $\dim Y$.
+(b) Show that $\deg X < d$. [Hint: Use induction on $\dim Y$.]
 :::
 
 ::: {.solution}
@@ -367,7 +393,7 @@ $$
 By Definition 2.2 on printed p. 55, $e_L(\mathcal I_A)$ is the normalized leading coefficient of $\chi(L^n/\mathcal I_A^nL^n)$, and the examples following that definition say that when $Z$ is set-theoretically a point $x$, then $P$ "is the Hilbert-Samuel polynomial of $\mathcal I$ as an ideal of $\OO_{x,X}$ and $e(\mathcal I)$ is its multiplicity there", independently of $L$.
 So $e_L(\mathcal I_A)$ is the multiplicity of $Y$ at $P$.
 
-That this multiplicity is $1$ is the card's own step: neither source states it. The multiplicity of a point is the multiplicity of the maximal ideal of the local ring, and $\OO_{Y,P}$ is a regular local ring of dimension $r$ because $P$ is nonsingular; the associated graded ring of a regular local ring of dimension $r$ is a polynomial ring in $r$ variables, so the Hilbert-Samuel polynomial is $\binom{n+r-1}{r}$, of normalized leading coefficient $1$. Harris's account of the same count on printed p. 235 is geometrical: "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".
+That this multiplicity is $1$ is the card's own step: neither source states it. The multiplicity of a point is the multiplicity of the maximal ideal of the local ring, and $\OO_{Y,P}$ is a regular local ring of dimension $r$ with maximal ideal $\mathfrak m$, because $P$ is nonsingular; the associated graded ring of a regular local ring is a polynomial ring in $r$ variables, so the length of $\OO_{Y,P}/\mathfrak m^m$ is $\binom{m+r-1}{r}$ for every $m\ge1$, a polynomial in $m$ whose leading coefficient is $1/r!$ and whose normalized leading coefficient is therefore $1$. Harris's account of the same count on printed p. 235 is geometrical: "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".
 
 Since the underlying variety of the cycle $p_A(Y)$ is $Z$ and its multiplicities are the degrees of the projection, $\deg p_A(Y)\ge\deg Z$.
 Hence
