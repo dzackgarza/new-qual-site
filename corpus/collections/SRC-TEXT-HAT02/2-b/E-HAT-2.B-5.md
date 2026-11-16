@@ -166,6 +166,21 @@ audit:
     nothing rests on an unproved evaluation. Checked against Hatcher (2002), the printed statement on
     p. 176 and Proposition 2B.1(a) on pp. 169--170. Not claimed: a published solution of Exercise
     2.B.5.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    #123 reader's report, third pass on this card: one false implication repaired. The step
+    `#normal-generator` said that, the two reduced homology groups being $\ZZ$ in degree $r$, "it is
+    enough that the class $[S^r]$ be nonzero ... and a nonzero class in a copy of $\ZZ$ is a
+    generator". The implication is false: $2\in\ZZ$ is nonzero and generates the proper subgroup
+    $2\ZZ$, so nonvanishing does not give generation. What the step needs is that the inclusion
+    carries the fundamental class of $S^r$ to a generator, and that is what step `#schoenflies-pair`
+    proves: the inclusion induces an isomorphism on homology in every degree. The two paragraphs are
+    rewritten to say exactly that, and the duality route remains the geometric account of which
+    generator it is, not the proof that it is one. Unchanged and re-checked: the statement as printed
+    on p. 176, the second proof's excision and bicollar steps, and the first proof's label. Not
+    claimed: a published solution of Exercise 2.B.5.
 ---
 
 ::: {.problem}
@@ -207,9 +222,9 @@ The source sphere $S^r$ has the same reduced homology groups.
 The image of the oriented fundamental class of $S^r$ is a generator of $\widetilde H_r(S^n\setminus S)$.
 
 ::: pf-proof
-By step [](#complement-homology){.pf-ref} both reduced homology groups are $\ZZ$ in degree $r$ and zero elsewhere, so it is enough that the class $[S^r]$ of the sphere in the statement be nonzero in $\widetilde H_r(S^n\setminus S)$, and a nonzero class in a copy of $\ZZ$ is a generator.
+By step [](#complement-homology){.pf-ref} both reduced homology groups are $\ZZ$ in degree $r$ and zero elsewhere. What has to be shown is that the inclusion $S^r\hookrightarrow S^n-S$ carries the fundamental class of $S^r$ to a generator of $\widetilde H_r(S^n\setminus S)\cong\ZZ$; nonvanishing alone would not suffice, since $2\in\ZZ$ is nonzero and generates the proper subgroup $2\ZZ$.
 
-That the class is nonzero is proved, not asserted: step [](#schoenflies-pair){.pf-ref} below proves, without Alexander duality, that the inclusion $S^{n-k-1}\hookrightarrow S^n-S$ is an isomorphism on homology in every degree, so $[S^r]$ generates. What the duality route adds is which generator it is, and that is a statement about the pairing, not a step of the proof: inside the coordinate disk $D^n$ the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ in the single point $0$, which is interior to $D^{n-k}$, and $S^r=\partial D^{n-k}$. The concentric sphere $\partial B$ of radius $\tfrac12$ lies in $D^{n-k}$ and the annulus $\{\tfrac12\le\norm{x}\le1\}$ of the last $n-k$ coordinates joins the two spheres inside $D^{n-k}-\{0\}\subset S^n-S$, so $[S^r]=[\partial B]$ in $\widetilde H_r(S^n-S)$; the intersection number of $S$ with the disk $B$ is $\pm1$, one transverse point, which is the linking-number description of Alexander duality's coordinate of $[\partial B]$ under $\widetilde H_r(S^n-S)\cong\widetilde H^{\,k}(S)$, Theorem 3.44, printed p. 254. That description is stated here as the geometric account of the isomorphism and is not used as a step: the nonvanishing it reports is what the second route proves.
+That the class is a generator is proved, not asserted: step [](#schoenflies-pair){.pf-ref} below proves, without Alexander duality, that the inclusion $S^{n-k-1}\hookrightarrow S^n-S$ is an isomorphism on homology in every degree, so it carries the fundamental class of $S^r$ to a generator. What the duality route adds is which generator it is, and that is a statement about the pairing, not a step of the proof: inside the coordinate disk $D^n$ the normal disk $D^{n-k}$ meets $S\cap D^n=D^k$ in the single point $0$, which is interior to $D^{n-k}$, and $S^r=\partial D^{n-k}$. The concentric sphere $\partial B$ of radius $\tfrac12$ lies in $D^{n-k}$ and the annulus $\{\tfrac12\le\norm{x}\le1\}$ of the last $n-k$ coordinates joins the two spheres inside $D^{n-k}-\{0\}\subset S^n-S$, so $[S^r]=[\partial B]$ in $\widetilde H_r(S^n-S)$; the intersection number of $S$ with the disk $B$ is $\pm1$, one transverse point, which is the linking-number description of Alexander duality's coordinate of $[\partial B]$ under $\widetilde H_r(S^n-S)\cong\widetilde H^{\,k}(S)$, Theorem 3.44, printed p. 254. That description is stated here as the geometric account of the isomorphism and is not used as a step: the nonvanishing it reports is what the second route proves.
 :::
 
 :::
