@@ -31,6 +31,39 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne III.12.3 prints the jumps for h^0(t, I) and h^1(t, I), which vanish for every t.
+- event: source-checked
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Published-solution search for this exercise (issue #121) located no
+    complete published argument, and one published claim of a corrected
+    jump that does not hold. Printed exercise read: Hartshorne, Algebraic
+    Geometry (1977), III.12.3, printed pp. 291--292, with Example
+    III.9.8.4, printed pp. 274--275, Example III.12.9.2, printed p. 289,
+    and Exercise III.9.3.5(c), printed p. 285. Sources read: Dongryul Kim,
+    Solutions to Hartshorne, Chapter III §12, PDF p. 215, which proves the
+    flat limit and the flatness of the ideal sheaf and computes no
+    cohomology, and whose errata ask whether the statement is false; A.
+    Egbert, Solutions, III.12.3, printed p. 204, a typo note with no
+    mathematics. MathOverflow question 90260 was read through the Stack
+    Exchange API: the answer by S. Kovács (2012-03-05, with addendum)
+    claims h^0(O_{X_0}) = 2 and h^1(P^4, I_0) = 1, that is, that the
+    printed h^1 line is right, and the answer by J. Böhm (2015-05-15)
+    computes the fibre ideal by elimination and reports all
+    H^i(P^4, I_0) = 0. Kovács's conclusion fails: in his fibre ideal x_2
+    is annihilated by all five coordinates, so x_2 is zero in the
+    localization at each x_i and is not a function on X_0, and the card
+    now derives those five relations from the family's parametrization.
+    Repaired on the card: step s1's Hilbert-polynomial argument, which
+    does not exclude a nilpotent because this family's nilpotent
+    contributes only in degree one and leaves P(m) = 4m+1, is replaced by
+    the annihilator argument; the opening paragraph's claim that
+    H^1(I_t) embeds in H^1(P^4, O) = 0 is replaced by the correct
+    h^1(I_t) = coker(H^0(O) -> H^0(O_{X_t})) = 0. Statement unchanged in
+    substance: the printed h^0 value at t = 0 is false, and the printed
+    h^1 value is false as well, for the reason now given. Not checked: no
+    machine computation was run in this pass; Böhm's is the only one read,
+    and it is reported, not reproduced.
 ---
 
 ::: {.problem}
@@ -64,9 +97,15 @@ h^0(t,\mci_t)=0,
 h^1(t,\mci_t)=0 .
 $$
 Indeed $0\to\mci_t\to\OO_{\PP^4}\to\OO_{X_t}\to0$ gives
-$\dim H^0(\mci_t)=h^0(\OO)-h^0(\OO_{X_t})=1-1=0$ because $X_t$ is a connected
-projective curve, and then
-$H^1(\mci_t)\hookrightarrow H^1(\PP^4,\OO)=0$. So there is no jump in the
+$h^0(\mci_t)=\ker\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_t})\bigr)=0$, since
+$H^0(\OO_{\PP^4})=k$ restricts injectively, and it gives
+$h^1(\mci_t)=\operatorname{coker}\bigl(H^0(\OO_{\PP^4})\to H^0(\OO_{X_t})\bigr)
+=h^0(\OO_{X_t})-1=0$, since $H^1(\PP^4,\OO)=0$. Here $h^0(\OO_{X_t})=1$ for
+every $t$: for $t\ne0$ because $X_t$ is a connected reduced projective curve,
+and for $t=0$ because the limit is reduced as well --- the one nilpotent
+direction the family produces, the coordinate $x_2$, is annihilated by all five
+coordinates at $a=0$ and therefore vanishes on every standard affine chart; see
+the closing paragraph of the remark below. So there is no jump in the
 untwisted ideal sheaf, and none can be produced from it by semicontinuity.
 
 The jump the exercise is after appears after twisting by $\OO_{\PP^4}(1)$: the
@@ -144,10 +183,34 @@ P(m)=4m+1.
 $$
 The reduced projected curve is isomorphic to $\PP^1$ by
 [[P-AGH318PROJNORMAL|Exercise I.3.18]], and its hyperplane bundle pulls
-back to $\mco_{\PP^1}(4)$, so it has the same Hilbert polynomial $4m+1$.
-Any nonzero nilpotent thickening supported on this curve would contribute a
-nonzero Hilbert polynomial. Hence the flat special fibre has no extra
-scheme structure and is exactly the reduced $X_0$.
+back to $\mco_{\PP^1}(4)$, so it has the same Hilbert polynomial $4m+1$, and
+the Hilbert polynomial alone therefore does not exclude a nilpotent component.
+What does exclude it is the one direction in which a nilpotent can appear,
+namely the collapsed coordinate. In
+$$
+R=k[a,x_0,\ldots,x_4]/\ker\bigl(k[a,x_0,\ldots,x_4]\to k[a,s,u]\bigr),
+\qquad
+x_0=s^4,\ x_1=s^3u,\ x_2=as^2u^2,\ x_3=su^3,\ x_4=u^4,
+$$
+the five relations
+$$
+x_2x_0=ax_1^2,\quad
+x_2x_1=ax_0x_3,\quad
+x_2x_3=ax_1x_4,\quad
+x_2x_4=ax_3^2,\quad
+x_2^2=a^2x_0x_4
+$$
+hold, so at $a=0$ the class of $x_2$ in the fibre ring $R/aR$ is annihilated by
+$x_0,x_1,x_2,x_3,x_4$. The coordinate ring of the standard affine chart
+$x_i\ne0$ is the localization at $x_i$, where $x_i$ is invertible and
+$x_2=0$. Hence $x_2$ dies in every affine chart, the ideal $(x_2)$ of the fibre
+ring has zero associated sheaf, and the special fibre is the reduced curve
+$X_0$.
+
+That last step is exactly where this family differs from Hartshorne's own
+examples: in Example III.9.8.4 and Example III.12.9.2 the nilpotent $z$
+satisfies $z^2=yz=xz=0$ but $zw\ne0$, so $z$ survives on the chart $w\ne0$ and
+$h^0(\mco)$ jumps there.
 
 :::
 
@@ -321,4 +384,6 @@ cohomology jump.
 
 ::: {.remark title="Published solution"}
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §12, Exercise 12.3, PDF p. 215, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: his solution checks that the flat limit at $t=0$ is the reduced quartic $X_0$ inside $V(x_2)\cong\PP^3$ and that $\mci$ is flat over $T$ from the exact sequence $0\to\mci\to\OO_{\PP^4\times T}\to\OO_X\to0$, and then stops: it does not compute the two cohomology functions, and his list of corrections records the doubt "Exercise 3.12.3: the statement seems to be false?". The printed claim is indeed false, and the erratum and steps s3--s5 above supply the computation the source omits, for $\mci(1)$.
+
+One published answer claims a corrected jump in the printed functions themselves, and it does not hold. MathOverflow question 90260, *Trouble with semicontinuity* (2012-03-05), answer by S. Kovács (2012-03-05, with an addendum), computes $h^0(\OO_{X_0})=2$ from a nilpotent $x_2$ and concludes $h^1(\PP^4,\mci_0)=1$, which would make the printed $h^1$ line right and only the $h^0$ line wrong. His fibre ideal is $\mathcal J+(x_0x_2,x_1x_2,x_2^2,x_3x_2,x_4x_2)$ with $\mathcal J$ the ideal of the quartic in $\PP^3$, and in it $x_2$ is annihilated by every coordinate. That annihilator is decisive: in the localization at any $x_i$ the coordinate is invertible, so $x_2=0$ in the coordinate ring of every standard affine chart, and a section of $\OO(1)$ that vanishes on each chart is the zero section. Hence $x_2$ is not a function on $X_0$, $h^0(\OO_{X_0})=1$, and $h^1(\PP^4,\mci_0)=0$. The annihilating relations are exactly what this family gives, in $\ker(k[a,x_0,\ldots,x_4]\to k[a,s,u])$ with $x_0=s^4$, $x_1=s^3u$, $x_2=as^2u^2$, $x_3=su^3$, $x_4=u^4$: $x_2x_0=ax_1^2$, $x_2x_1=ax_0x_3$, $x_2x_3=ax_1x_4$, $x_2x_4=ax_3^2$, $x_2^2=a^2x_0x_4$, all of which are $0$ at $a=0$. The contrast is Example III.12.9.2, printed p. 289, where the nilpotent $z$ of the cubic family satisfies $z^2=yz=xz=0$ but $zw\ne0$; that single non-vanishing product is why $h^0(\OO)$ is $2$ there and the jump in $h^0,h^1$ of $\OO$ is genuine. A second answer in the same thread, by J. Böhm (2015-05-15), computes the fibre ideal by elimination and reports all $H^i(\PP^4,\mci_0)=0$ for $i=0,\ldots,4$, which agrees with the argument above; he asks for a reconciliation and receives none.
 :::
