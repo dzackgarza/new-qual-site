@@ -39,7 +39,7 @@ audit:
   note: >-
     Part (c) now follows Haiman's proof as its own two steps rather than
     citing it: step haiman-local-description is the first paragraph of 8.10,
-    PDF p. 19, resting on the identity O(X) = O_X(X) of 8.9 on PDF p. 18,
+    PDF p. 18, resting on the identity O(X) = O_X(X) of 8.9 on PDF p. 18,
     and step haiman-affine-case is the rest of 8.10, PDF pp. 18--19. The
     steps that followed, which build f from F chart by chart, are kept and
     now read as the details of those two steps; map-surjective says so. The
@@ -230,7 +230,7 @@ $$
 A morphism of varieties is the same thing as a compatible system of morphisms between affine open subvarieties.
 
 ::: pf-proof
-This is the first paragraph of Haiman's proof of Theorem 8.8, §8.10, PDF p. 19.
+This is the first paragraph of Haiman's proof of Theorem 8.8, §8.10, PDF p. 18.
 
 By §8.9, PDF p. 18, every global regular function on a classical affine variety is a polynomial, $\OO(X)=\OO_X(X)$; consequently, for a polynomial function $f$ on an affine variety $X$, the open subspace $X_f$ is again an affine variety with coordinate ring $\OO(X)_f$. Hence the open subsets of a classical variety that are isomorphic to affine varieties form a base of its topology.
 
@@ -452,7 +452,7 @@ $$
 is surjective.
 
 ::: pf-proof
-In Haiman's form, §8.10, PDF p. 19: by step [](#haiman-local-description){.pf-ref} a variety morphism is a compatible system of morphisms of affine open subvarieties, and a scheme morphism has the same local description, so a scheme morphism $F$ restricts on each affine chart to a morphism of affine schemes over $k$; by step [](#haiman-affine-case){.pf-ref} each of those comes from a morphism of affine varieties, and compatibility on overlaps, which are again covered by affine opens, glues the pieces.
+In Haiman's form, §8.10, PDF p. 18: by step [](#haiman-local-description){.pf-ref} a variety morphism is a compatible system of morphisms of affine open subvarieties, and a scheme morphism has the same local description, so a scheme morphism $F$ restricts on each affine chart to a morphism of affine schemes over $k$; by step [](#haiman-affine-case){.pf-ref} each of those comes from a morphism of affine varieties, and compatibility on overlaps, which are again covered by affine opens, glues the pieces.
 
 The steps that follow carry out that gluing for the present statement, since the closed points of $t(V)$ are the points of $V$ with residue field $k$: steps [](#f-sends-closed-points-set-map){.pf-ref} and [](#f-continuous){.pf-ref} extract the underlying map $f$, step [](#affine-neighborhoods-exist){.pf-ref} produces affine neighbourhoods with $f(V_0)\subseteq W_0$, step [](#f-restriction-induced-by-ring-hom){.pf-ref} is the affine-case bijection of step [](#haiman-affine-case){.pf-ref} and step [](#f0-agrees-with-f-on-v0){.pf-ref} reads it off on closed points, step [](#f-is-morphism-of-varieties){.pf-ref} glues the pieces to a morphism of varieties, and step [](#tf-equals-f-original){.pf-ref} checks that the glued morphism induces $F$ itself.
 :::
