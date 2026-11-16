@@ -373,11 +373,22 @@ T+U=W,
 \qquad
 P*Y=V.
 $$
+Each of the six points is a smooth point of the cubic, so the operations
+above are defined.
 
 ::: pf-proof
 Each of the six points is the third intersection of a named line with $C$,
 which is the configuration of the published proof, PDF p. 16: $R$ on $PQ$,
 $T$ on $P_0R$, $V$ on $TU$, $W$ on $P_0V$, $X$ on $QU$, $Y$ on $PV$.
+
+That they are smooth points of the cubic has to be said, because the
+chord-and-tangent construction takes the line through two of them: the plane
+model $C$ is a nonsingular plane cubic (4.1), so every point of $C$ is smooth,
+and $P,Q,U$ are such points by hypothesis; each of $R,T,V,W,X,Y$ is the third
+intersection of a line with $C$ and so lies on $C$, hence is smooth as well.
+Bézout gives $C\cdot L=3$ for a line $L$ with $L\not\subset C$, counted with
+multiplicity, so the third point is well defined and the operation
+$X*Y$ is defined at every point of $C$.
 
 Since $\iota$ is the third point on the line through $P_0$,
 $$
@@ -472,7 +483,9 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark title="Published solutions"}
-Part (b) has published arguments. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 4(b) (solution by Tzu-Yang Chou), PDF p. 16, takes three points $P,Q,U$, sets $PQ\cap C=P,Q,R$; $P_0R\cap C=P_0,R,T$; $TU\cap C=T,U,V$; $P_0V\cap C=P_0,V,W$; $QU\cap C=Q,U,X$; $PV\cap C=P,V,Y$, applies part (a) to the two triples of lines $PQR$ and $TUV$ to conclude that $P_0,X,Y$ are collinear, and reads off
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.4, printed p. 407, with the group law defined in (4.5) and the plane model in (4.1), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
+Part (b) has published arguments. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 4(b) (solution by Tzu-Yang Chou), PDF p. 16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the page was read off the PDF), takes three points $P,Q,U$, sets $PQ\cap C=P,Q,R$; $P_0R\cap C=P_0,R,T$; $TU\cap C=T,U,V$; $P_0V\cap C=P_0,V,W$; $QU\cap C=Q,U,X$; $PV\cap C=P,V,Y$, applies part (a) to the two triples of lines $PQR$ and $TUV$ to conclude that $P_0,X,Y$ are collinear, and reads off
 $$(P+Q)+U=T+U=W=P+Y=P+(Q+U).$$
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.4, printed p. 109, runs a different configuration for the same conclusion: with $PQ$ meeting $C$ at $R$, $P_0R$ at $T$, $ST$ at $U$ and $P_0U$ at $V$, it applies (a) to the lines $QPR$ and $SUT$ to get $P_0,B,A$ collinear, whence $S+Q=A$ and $P+A=V$, so $(P+Q)+S=P+(Q+S)$.
 :::

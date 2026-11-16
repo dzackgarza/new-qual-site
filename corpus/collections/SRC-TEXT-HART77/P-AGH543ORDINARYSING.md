@@ -59,7 +59,7 @@ audit:
     line "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27",
     and Hirschfeld's book is not in tmp/sources; Algebraic Geometry II,
     National Taiwan University, 2020 Spring, Chapter V homework, Exercise 3 of
-    section 4, PDF p. 15 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
+    section 4, PDF pp. 15-16 (tmp/sources/ntu-ag2-chapter5.pdf), replaces the
     resolution blowups by quadratic transformations with two auxiliary centres
     and then analyses the multiplicity at P in a single chart, ending "so
     induction on this then we are done" without the case where every tangent
@@ -298,21 +298,27 @@ tangent directions.
 
 ::: {.pf-step #inseparable-case}
 The same conclusion holds when an inseparable projection occurs in
-positive characteristic.
+positive characteristic, and that case is *not* proved on this card.
 
 ::: pf-proof
-This is the exceptional case for which the retained source of this exercise
-does not use the general-pencil argument above.  It explicitly refers to
-Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.  That
-theorem is the characteristic-free quadratic-reduction theorem: an
-irreducible plane curve is transformed by a finite sequence of quadratic
-transformations to a plane model whose singularities are ordinary.
+Over a field of characteristic $0$ the projection from a point is separable
+unless it is constant on the normalization, and a bad point carries at least two
+tangent directions, so the hypothesis of step [](#choose-auxiliary-points){.pf-ref} is automatic: the
+argument above then proves the exercise with no hypothesis. That is the case
+the book's own hypotheses give whenever $k$ has characteristic $0$.
 
-Thus, if the inductive construction reaches a bad point for which projection
-is inseparable, apply Hirschfeld's theorem to the current irreducible plane
-model.  It supplies the required finite remaining sequence of quadratic
-transformations.  This is exactly the positive-characteristic case for which
-the retained solution cites that theorem.
+In characteristic $p$ the projection from $P$ can be inseparable --- for a
+strange curve the pencil of lines through $P$ pulls back to an inseparable
+extension of function fields --- and then a general line through $P$ meets the
+curve away from $P$ in repeated points, so the two auxiliary lines of step
+[](#choose-auxiliary-points){.pf-ref} cannot be chosen as there. The card has no
+argument for that case. What it has is the citation both the retained source and
+Egbert give: Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27, a
+characteristic-free quadratic-reduction theorem. That book is not in
+`tmp/sources` and was not read; the theorem is recorded here as cited and not
+verified, so this step carries a citation where the other steps carry proofs,
+and the exercise as printed --- over the book's algebraically closed field of
+any characteristic --- is complete only through that citation.
 :::
 
 :::
@@ -321,19 +327,23 @@ the retained solution cites that theorem.
 Steps [](#choose-auxiliary-points){.pf-ref}, [](#quadratic-transform-realizes-blowup){.pf-ref}, [](#contraction-points-ordinary){.pf-ref}, [](#other-singularities-unchanged){.pf-ref} and [](#one-blowup-replaced-safely){.pf-ref} show how to realize one required resolution blowup by a
 quadratic transformation without creating nonordinary singularities whenever
 the relevant projection is separable. Steps [](#resolution-sequence-exists){.pf-ref} and [](#separable-case-induction){.pf-ref} iterate this through
-the finite resolution sequence in that case, and step [](#inseparable-case){.pf-ref} supplies the
-inseparable positive-characteristic case from the source cited for V.4.3.
+the finite resolution sequence in that case, and step [](#inseparable-case){.pf-ref} records that the
+inseparable positive-characteristic case is taken from the source cited for V.4.3 and is not
+proved here. So the exercise is proved over a field of characteristic $0$ and cited in the
+remaining case.
 :::
 
 :::
 :::
 
 ::: {.remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, which directs the reader to (3.8), text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.3, PDF p. 286: the whole of his solution is "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27", which is not among the retained files, so there is no argument to check. The reduction above is that of the standard proof: (3.8) resolves $C$ by point blowups, and one point blowup at a bad point $P$ is realized by a quadratic transformation whose two other centres are chosen so that the joining lines meet $C$ at $P$ in exactly $\mu_P(C)$ and elsewhere transversely, which makes the three contracted lines ordinary multiple points and leaves every other germ unchanged; the only case it does not cover is an inseparable projection, steps [](#choose-auxiliary-points){.pf-ref} to [](#separable-case-induction){.pf-ref} being the separable one and [](#inseparable-case){.pf-ref} the citation he gives. Recorded in COMPLAINTS.
 :::
 
 ::: {.remark title="Published solutions searched"}
-The published treatments of this exercise are incomplete, so the card's own proof is what was checked against the book. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 3 of §4 (solution by Shuang-Yen Lee), PDF p. 15, does choose two auxiliary centres through the bad point and analyse the chart $x=(t+\mu)y$, and its intent is the argument of steps [](#quadratic-transform-realizes-blowup){.pf-ref} to [](#one-blowup-replaced-safely){.pf-ref}; but its case analysis of the multiplicity at the image point ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ $…$ induction on this then we are done", and it never shows that the three contracted points are ordinary, which is the content of step [](#contraction-points-ordinary){.pf-ref}.
+The published treatments of this exercise are incomplete, so the card's own proof is what was checked against the book. Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 3 of §4 (solution by Shuang-Yen Lee), PDF pp. 15--16, text version `tmp/sources/ntu-ag2-chapter5.md` (coarse page markers, so the pages were read off the PDF), does choose two auxiliary centres through the bad point and analyse the chart $x=(t+\mu)y$, and its intent is the argument of steps [](#quadratic-transform-realizes-blowup){.pf-ref} to [](#one-blowup-replaced-safely){.pf-ref}; but its case analysis of the multiplicity at the image point ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ $…$ induction on this then we are done", and it never shows that the three contracted points are ordinary, which is the content of step [](#contraction-points-ordinary){.pf-ref}.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.3, printed p. 109, states the criterion correctly: choose $P_2,P_3$ so that $P_1P_i$ meets $C$ transversally at $P_1$, then $R_i$ is on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process terminates. It does not show that the images of $R_i$ at the three contraction points are ordinary, and it does not separate the inseparable projection case.
 :::

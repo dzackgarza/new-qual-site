@@ -36,7 +36,7 @@ audit:
   by: claude
   date: 2026-11-15
   note: >-
-    Dolgachev read for issue #121, and part (b) left open. In M. I. Dolgachev,
+    Dolgachev read for issue #121, and part (b) left open. In Igor V. Dolgachev,
     Topics in Classical Algebraic Geometry (27 September 2010), the complete
     524-page book in tmp/sources/dolgachev-topics-classical-ag.pdf and its MinerU
     text version tmp/sources/dolgachev-topics-classical-ag.md, with printed
@@ -163,8 +163,8 @@ audit:
     needs the opposite, and the closing degree count, which is asserted. His
     Lemma 2.2.8, printed pp. 19-20, gives the nondegeneracy used in the first
     repair, |-K_X| separating points and tangent vectors. Checked against
-    Hartshorne V.4.13(b), printed p. 424 with the construction of X in (4.7),
-    printed p. 416: the exercise's X is the anticanonical model of the
+    Hartshorne V.4.13(b), printed p. 409, with the construction of X in (4.7),
+    printed p. 400: the exercise's X is the anticanonical model of the
     five-point blow-up, so O_X(1) = O_X(H) = O_X(-K_X) and the RR input
     K^2 = 9 - 5 = 4 is the book's. Also read for this card: Dolgachev, Topics in
     Classical Algebraic Geometry, Theorem 8.5.1, printed pp. 291-292, which
@@ -385,13 +385,23 @@ H^1(X,\OO_X(2H))
 H^1(X,\OO_X(-3H))^*
 =0
 $$
-by [[P-AGH5412KODAIRAVANISH|Exercise V.4.12]], applied to the ample divisor
-$3H$. Thus $h^0(X,\OO_X(2H))=\chi(\OO_X(2H))=13$.
+by Kodaira vanishing applied to the ample divisor $3H$: by Serre duality
+$H^1(X,\OO_X(2H))\cong H^1(X,\OO_X(K_X+3H))^*$ with $K_X=-H$, and
+$H^1(X,\OO_X(K_X+A))=0$ for $A$ ample. Exercise V.4.12, printed p. 408, is the
+characteristic-free statement of this vanishing *for the cubic surface* only,
+and the surface here is the degree-$4$ Del Pezzo, so it does not license the
+step; the vanishing over a field of characteristic $0$ is Kodaira's, and what a
+field of characteristic $p$ needs is a separate argument or reference, which the
+card does not supply. Thus $h^0(X,\OO_X(2H))=\chi(\OO_X(2H))=13$.
 
 This is the published computation: M. Riman, *The Vanishing of the Brauer
 Group of a del Pezzo Surface of Degree 4* (University of Washington, 2019),
-Theorem 2.2.7, in the proof on printed p. 20, obtains $h^0(X,-2\omega_X)=13$
-from his Riemann--Roch formula (2.1) with $m=-2$ and $K_X^2=4$.
+Theorem 2.2.7, in the proof on printed p. 21, obtains $h^0(X,-2\omega_X)=13$
+from his formula (2.2) --- the specialization of his Riemann--Roch (2.1) to
+$m<0$, which reads $h^0(X,m\omega_X)=\tfrac12m(m-1)(\omega_X^2)+1$ --- with
+$m=-2$ and $K_X^2=4$. The two terms that (2.2) drops are dropped by Kodaira
+vanishing and by ampleness of $-\omega_X$, and that vanishing is the
+characteristic-zero input noted on the step above.
 :::
 
 :::
@@ -449,7 +459,7 @@ The source excludes a reducible member instead, and its wording is garbled: it
 supposes one quadric $Q$ reducible, invokes "Klein's theorem" for a
 factorization $X=Q\cap V$ with $V$ a hypersurface, and writes "since $Q$ is
 assumed to be irreducible" where the argument needs the opposite (printed
-pp. 20--21). The conclusion is the one above: a reducible quadric is a union of
+p. 21). The conclusion is the one above: a reducible quadric is a union of
 two hyperplanes, an irreducible surface inside that union lies in one of them,
 and $X$ is nondegenerate in $\PP^4$.
 :::
@@ -500,7 +510,7 @@ Steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref} prove p
 :::
 
 ::: {.remark title="Published solutions"}
-M. I. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), read in
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010), read in
 `tmp/sources/dolgachev-topics-classical-ag.pdf` and in its MinerU text version
 `tmp/sources/dolgachev-topics-classical-ag.md`, whose printed page is the PDF page minus ten (the text
 version marks the PDF pages in blocks of twenty, so a single printed page is located in the PDF), §8.5.1,
@@ -560,11 +570,15 @@ $H^1(\PP^4,\mathcal I_X(2))=0$.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.13(b), printed p. 409, with the construction of $X$ in (4.7), printed p. 400, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
+
 A published proof of part (b) that carries the decisive step exists. M. Riman,
 *The Vanishing of the Brauer Group of a del Pezzo Surface of Degree 4*, PhD
 dissertation, University of Washington, 2019, Theorem 2.2.7, stated on printed
 p. 19 and proved on printed pp. 20--21 (saved as
-`tmp/sources/riman-2019-del-pezzo-degree-four.pdf`), proves that a del Pezzo
+`tmp/sources/riman-2019-del-pezzo-degree-four.pdf`; `tmp/sources` holds no text
+version of it, so its pages were read from the PDF's own text layer, where the
+folio is the page's first line and printed page $=$ PDF page $-7$), proves that a del Pezzo
 surface of degree $4$ is a smooth complete intersection of two quadrics in
 $\PP^4$. Its proof is the sequence of steps [](#h0-two-h-thirteen){.pf-ref} to
 [](#x-is-complete-intersection){.pf-ref}: Riemann--Roch with Kodaira vanishing
@@ -583,6 +597,6 @@ where the argument needs the opposite, and the closing degree count, which is
 asserted rather than counted. His Lemma 2.2.8, printed pp. 19--20, supplies the
 nondegeneracy of $X$ in $\PP^4$ that the first repair uses: $\abs{-K_X}$ separates
 points and tangent vectors, so the anticanonical map is an embedding. The
-embedding is also (4.7) of the book, printed p. 416, which the exercise is
+embedding is also (4.7) of the book, printed p. 400, which the exercise is
 about.
 :::

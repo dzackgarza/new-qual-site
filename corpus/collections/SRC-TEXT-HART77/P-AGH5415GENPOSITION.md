@@ -46,7 +46,9 @@ audit:
   date: 2026-11-16
   note: >-
     Checked for issue #121 against the printed exercise, Hartshorne V.4.15,
-    printed pp. 423-424 (its parts (a)-(e), the starred (e) last). Rechecked
+    printed p. 409, all of whose parts (a)-(e), the starred (e) last, are on
+    that one page (PDF p. 424; this note said "pp. 423-424", which are PDF
+    pages, until 2026-11-16). Rechecked
     the decisive computations of the card's own proof. degree-bound-nonneg-square:
     with c = b_3, at most six of the b_i are at least 3 in index, so
     sum b_i^2 <= (a-2c)^2 + 7c^2 = a^2 - 4ac + 11c^2, and 3c <= a gives
@@ -64,9 +66,11 @@ audit:
     re-derived: their steps are six-points-general-position-iff,
     six-point-condition-preserved, uncountable-field-lemma,
     bad-locus-proper-closed and dense-general-position-extension. Published
-    sources read for this card and what each has: Egbert, printed p. 294,
-    parts (a)-(d) with (d) as a list of eight families and no proof that no
-    other negative curves exist, and (e) as a citation of Nagata; Dolgachev,
+    sources read for this card and what each has: Egbert, printed pp. 294-295,
+    part (a) on p. 294 and parts (b), (c), (d) on p. 295, with (b) one line
+    citing Nagata, (c) the determinant/dense-open argument, and (d) a list of
+    families with no proof that no other negative curves exist, and no entry
+    for (e); Dolgachev,
     Proposition 8.2.15, printed pp. 261-262, the count of (-1)-classes only;
     Yang Pi-Yeh, printed p. 112, (a)-(c) sketched, (d) the same two sums
     without the negative-curve assertion, (e) argued. No source has all five.
@@ -319,16 +323,23 @@ Collinearity of a specified terminal triple is therefore the vanishing of a
 rational determinant. Clearing denominators gives a closed condition on the
 initial point $P$.
 
-This determinant is not identically zero. Indeed, cancel the transformations
-of $w$ in reverse order, using that each quadratic transformation is
-birational and involutive. At the level of function fields, pullback by a
-birational map is injective, so a nonzero incidence equation cannot become
-the zero equation. Continuing to the initial configuration, an identically
-vanishing condition would force either a collinearity among the fixed
-$r$-tuple after a finite admissible sequence, contrary to its general
-position, or an incidence condition requiring the free point $P$ to lie on
-a fixed proper plane curve. The latter is also not an identity on $\PP^2$.
-Thus the cleared determinant defines a proper closed subset.
+The determinant is not identically zero, and the proof of that is the one
+point of this step that the card does not carry out.
+
+What the argument gives is the closedness, which is all the rest of (c) uses:
+the terminal coordinates are rational functions of $P$, so after clearing
+denominators a specified terminal collinearity is the vanishing of a
+polynomial in $P$. Properness is a separate assertion. The natural route is
+induction on the length of $w$, pulling a terminal collinearity back through the
+last quadratic transformation --- a target line meets the inverse images of the
+three target base points as a conic, so the condition becomes one of a triple of
+configuration points lying on a conic through three others, of which
+collinearity is the degenerate case --- and that forces a stronger induction
+hypothesis, on incidences with curves of every degree, which is not written out
+here. So this card asserts properness and does not prove it: step
+[](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is
+therefore not proved on this card for any particular $w$. What is proved without
+it is (a), (b), and everything in (d) and (e).
 :::
 
 :::
@@ -448,12 +459,24 @@ with these largest multiplicities. Step [](#quadratic-transform-basis-change){.p
 $$
 a'=2a-b_1-b_2-b_3<a.
 $$
-Its multiplicities in the new basis are $a-b_j-b_k\ge0$ for the three
-centers and $b_i\ge0$ for the others, because two multiplicities of an
-irreducible plane curve of degree $a$ always satisfy $b_i+b_j\le a$ (the line
-through the two points meets the curve with multiplicity at least
-$b_i+b_j$). So the transformed class again has nonnegative multiplicities and
-the argument can be repeated.
+If $b_i+b_j>a$ for some pair $i\ne j$, then the line through those two points
+meets $C$ with multiplicity at least $b_i+b_j>a=\deg C$, so it is a component of
+$C$, and $C$ irreducible forces $C$ to be that line: $a=1$ and
+$(b_i,b_j)=(1,1)$. That case needs no descent: the line's class is $h-e_i-e_j$, whose
+square is $1-1-1=-1$, so $C\cong\PP^1$ with $C^2=-1$ already, and it is one of
+the curves the count below lists in its $a=1$ row. In every other case
+$b_i+b_j\le a$ for all pairs $i\ne j$. So, the
+three largest multiplicities being $b_1,b_2,b_3$, the transformed class
+$$
+a'h'-\sum_i b_i'e_i',
+\qquad
+a'=2a-b_1-b_2-b_3,\quad
+b_1'=a-b_2-b_3,\ \ b_2'=a-b_1-b_3,\ \ b_3'=a-b_1-b_2,
+$$
+has nonnegative multiplicities, and $a'<a$. The argument can be repeated.
+(The bound $b_i+b_j\le a$ is false for the line case alone, which is why that
+case is separated here; an earlier version of this step asserted the bound
+outright.)
 The marked blowup itself is unchanged up to isomorphism, so the transformed
 curve remains irreducible and has the same negative self-intersection.
 Step [](#general-position-preserved-under-sequence){.pf-ref} says the new point configuration is again in general position.
@@ -816,16 +839,21 @@ starred $r=9$ assertion (e).
 :::
 
 ::: {.remark title="Published solutions"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294, read in
-`tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
-`tmp/sources/hartshorne-solutions-egbert.md` (admissible transformations and general position); it does not prove
-the starred part.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.15, printed p. 409, text version `tmp/sources/hartshorne-1977-algebraic-geometry.md` (printed page = its marker minus 15).
 
-S. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, in §8.2.4, printed
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a)
+--- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ ---
+and p. 295 for (b), (c) and (d): (b) is the single line "This is Nagata, Rational Surfaces II, corollary
+to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the
+vanishing of finitely many determinants, (d) is the list of seven and seven families summing to 56 and
+240, read in `tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
+`tmp/sources/hartshorne-solutions-egbert.md`. It has no entry for the starred (e).
+
+Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof, in §8.2.4, printed
 pp. 261--262 by its contents, read in `tmp/sources/dolgachev-topics-classical-ag.md` at line 9865 and in
 `tmp/sources/dolgachev-topics-classical-ag.pdf`, classifies and counts the classes with $K_X\cdot v=-1$ and
 $v^2=-1$ --- the $(-1)$-classes on the blowup of $\PP^2$ at $N$ points --- at $56$ for $N=7$ and $240$ for $N=8$.
 That is the counting half of part (d) and nothing else of the exercise; the exercise stays open on it.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the seven rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
+Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.4.15, printed p. 112, argues four of the five parts and leaves the decisive half of (d). Its (a) checks that the six points are not all on a conic by transforming three of them and seeing the other three land on a line, but it checks only that one transformation, not that the condition survives every finite sequence. Its (b) is sound: a collinear triple after a sequence would give a collinear triple of the original points after the composite sequence. Its (c) takes the union of the lines $P_iP_j$ and the conics through five of the points and observes that its complement is dense because $k$ is uncountable, which is the printed hint's lemma used but not proved. Its (d) lists the seven rows for $r=7$ and the seven for $r=8$ and sums them to $56$ and $240$, agreeing with steps [](#r7-classes-fifty-six){.pf-ref} and [](#r8-classes-two-forty){.pf-ref}, but it says nothing about which classes are represented by irreducible curves and nothing about the curves of negative self-intersection that are not $(-1)$-curves --- the two things that make the count a count of curves, which are steps [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref}. Its (e) is the degree-increasing argument. So no located source proves the starred part or the negative-curve assertion, and the card keeps its own proof.
 :::
