@@ -221,6 +221,36 @@ audit:
     as they were, and step s9 is unchanged. Not done in this pass: no source was
     re-read, no step re-derived, the pages and paths of the sources being those of
     the events above; no other card is touched.
+- event: solution-written
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Repair on the #121 reader's report of this round, on the close of the solution
+    and on one sentence of step s14 that the reader did not name. (i) STYLE-08: the
+    pf-qed only listed which steps prove which part, which a pf-qed may not do, and
+    the last step cannot be the QED step here, the parts being spread over steps s1
+    to s14 rather than being the top-level steps. It now holds the argument the
+    steps give only case by case: g(X) = (m-1)(m-2)/2 - sum of delta_Q over the
+    singular points of X*, with m = deg X* = d(d-1) from step s6 and X the
+    normalization of X* from step s11, those points being exactly the nodes of the
+    strict bitangents and the ordinary cusps of the ordinary inflections, of
+    delta 1, and the points of the hyperflex lines, of delta 3, by steps s4, s10 and
+    s11; with f + 2h = 3d(d-2) from step s9, the identity reads
+    b + h = (m-1)(m-2)/2 - (d-1)(d-2)/2 - 3d(d-2) = d(d-2)(d-3)(d+3)/2 whenever
+    X* has no singular point of another kind, which is part (f)'s hypothesis with
+    h = 0 and, at d = 4, every smooth quartic, a tangent to which meets it in
+    contact at most 4 and so is an ordinary tangency, a bitangency, an inflection
+    or a hyperflex. Part (f) and part (h)'s 28 are the cases h = 0 and d = 4 of
+    that one formula, and steps s12 and s14 keep their own algebra; what each of
+    the other parts supplies is stated there in a clause apiece instead of as a
+    list of step numbers. This is the algebra of steps s12 and s14 written for
+    general d, not a new proof of any part: every ingredient is a step's. (ii) Step
+    s14 said the nodes, the ordinary cusps and the hyperflex points are "each of
+    delta-invariant 3", which is false of the first two and contradicts the formula
+    3 = 55 - (b + f + 3h) that follows it; the three classes now carry delta 1, 1
+    and 3. No step is re-derived beyond that sentence, no source was reopened, and
+    no part's conclusion changes; the pages and paths of the sources are those of
+    the events above.
 review: draft
 ---
 
@@ -900,20 +930,46 @@ $28$ for every smooth quartic, hyperflex or not.
 
 For the formula, write $f$ for the number of ordinary flexes. Then $f+2h=24$ by
 step [](#s9){.pf-ref}, and by step [](#s11){.pf-ref} the singular points of $X^*$
-are the $b$ nodes of strict bitangents, the $f$ ordinary cusps of flexes and the
-$h$ hyperflex points, each of $\delta$-invariant $3$; the genus formula of (IV,
-Ex. 1.8) gives $3=55-(b+f+3h)$, whence $b=52-f-3h=28-h$. This computation is the
-card's own, as is the local analysis of step [](#s11){.pf-ref} that it uses.
+are the $b$ nodes of strict bitangents and the $f$ ordinary cusps of flexes, each
+of $\delta$-invariant $1$, and the $h$ hyperflex points, of $\delta$-invariant
+$3$; the genus formula of (IV, Ex. 1.8) gives $3=55-(b+f+3h)$, whence
+$b=52-f-3h=28-h$. This computation is the card's own, as is the local analysis of
+step [](#s11){.pf-ref} that it uses.
 
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} prove part (a), step [](#s4){.pf-ref} proves part (b), steps [](#s5){.pf-ref} and [](#s6){.pf-ref}
-prove part (c), step [](#s7){.pf-ref} proves part (d), steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, and [](#s10){.pf-ref} prove part (e),
-step [](#s12){.pf-ref} proves part (f), step [](#s13){.pf-ref} proves part (g), and step [](#s14){.pf-ref} proves
-the count in part (h), and step [](#s11){.pf-ref} proves its parenthetical.
+Parts (e), (f) and (h) are one identity, and the rest of the exercise supplies the
+geometry it rests on. By steps [](#s6){.pf-ref} and [](#s11){.pf-ref} the dual
+curve is a plane curve of degree $m=d(d-1)$ and the Gauss map is its
+normalization, so
+$$
+g(X)=\frac{(m-1)(m-2)}{2}-\sum_{Q\in X^*}\delta_Q
+$$
+over the singular points of $X^*$. By steps [](#s4){.pf-ref}, [](#s10){.pf-ref}
+and [](#s11){.pf-ref} those points are the nodes of the strict bitangents and the
+ordinary cusps of the ordinary inflections, each of $\delta$-invariant $1$, and
+the points of the hyperflex lines, of $\delta$-invariant $3$. So for a curve whose
+dual has no singular point of another kind, with $f$ ordinary inflections and $h$
+hyperflex lines, and with $f+2h=3d(d-2)$ from step [](#s9){.pf-ref}, the identity
+reads
+$$
+b+h=\frac{(m-1)(m-2)}{2}-\frac{(d-1)(d-2)}{2}-3d(d-2)
+=\frac12d(d-2)(d-3)(d+3).
+$$
+Part (f) is the case $h=0$ of that formula, which its own hypothesis forces, and
+step [](#s12){.pf-ref} carries its algebra; at $d=4$ the hypothesis holds for
+every smooth quartic, a tangent to which meets it in contact at most $4$ and so is
+an ordinary tangency, a bitangency, an inflection or a hyperflex, and the formula
+is $b+h=28$, the count of step [](#s14){.pf-ref}. The other parts supply the
+geometry: (a) the ramification criterion for $\varphi$, whose ramification is
+$X\cap L$ together with the inflection points, and the finiteness of the
+inflection points; (b) the local form of $X^*$ at a multiple tangent, and the
+finiteness of the multiple tangents; (c) the class, as the number of tangents
+through a point off $X$; and (d) that count at a point of $X$. Part (g) is the
+case $d=3$ of the weighted count.
 :::
 
 :::
