@@ -412,6 +412,31 @@ audit:
     pass changes; Shichijo's footnote 4 and the counterexample he gives for
     Proposition 6.8; and the rank computation in the card's own route, which the
     event above records as unread and which is still unread.
+- event: source-corrected
+  by: claude
+  date: 2026-11-16
+  note: >-
+    Reader's report on issue #121 against the sources: one display corrected and
+    no change of mathematics. The event above, of this date, says that the
+    vectors of Kock's determinant expression are written as bold capitals here;
+    the display committed with it still carried the letters alpha, beta, gamma
+    and delta, which that event does not declare and which the card already uses
+    as the coefficients of its fractional linear transformation two sentences
+    earlier, so the card carried them in two senses (NOT-3). The display now
+    takes the determinants of the bold-capital vectors its gloss names -- the
+    determinant of the pair A, C times that of B, D, over the determinant of
+    A, D times that of B, C -- which makes the event's statement true of the
+    display rather than changing what the event says: that event is a dated
+    record and stands as written. Kock's own letters are a, b, c, d, spanning
+    A, B, C, D (text version tmp/sources/kock-2009-abstract-projective-lines.md,
+    section 4, the display after the definition of the action on E and the
+    sentence "we describe the points A in L by homogeneous coordinates
+    [a_1 : a_2], where a is any vector spanning A"), and the formula is his with
+    the letters changed, which the event above records. The cross ratio, the six
+    values, the invariance and the threshold r <= 2 are untouched, and nothing
+    else on the card changes.
+    Not checked in this pass: Kock's section 4 was not re-read beyond the display
+    and the sentence naming the vectors, and no page was re-read.
 ---
 ::: {.problem}
 Let $P_1, \ldots, P_r, Q_1, \ldots, Q_s$ be distinct points of $\AA^1$.
@@ -566,7 +591,7 @@ $$
 $$
 Kock gives the cross ratio in $\PP^1=\PP(k^2)$ as the determinant expression
 $$
-(A,B;C,D)=\frac{\abs{\alpha,\gamma}\cdot\abs{\beta,\delta}}{\abs{\alpha,\delta}\cdot\abs{\beta,\gamma}},
+(A,B;C,D)=\frac{\abs{\mathbf{A},\mathbf{C}}\cdot\abs{\mathbf{B},\mathbf{D}}}{\abs{\mathbf{A},\mathbf{D}}\cdot\abs{\mathbf{B},\mathbf{C}}},
 $$
 with $\mathbf{A},\mathbf{B},\mathbf{C},\mathbf{D}$ homogeneous coordinate vectors of $A,B,C,D$, and records in Section 4, printed pp. 8--11, that every projectivity of $\PP^1$ is tracked by a linear automorphism, the fractional linear transformation $x\mapsto(\alpha_{21}+\alpha_{22}x)/(\alpha_{11}+\alpha_{12}x)$.
 
