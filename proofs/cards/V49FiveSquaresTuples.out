@@ -181,3 +181,62 @@ OK    the six rows are distinct   [6 distinct]
 OK    the script lists three rows per family
 
 ALL 40 CHECKS PASSED (the arithmetic predicates above only: r = 2 in QQ[m])
+# ===== run set 3: source paraphrase corrected (g > 0, characteristic 0), appended 2026-11-17T05:24:53Z =====
+# Run sets 1 and 2 above are kept as they were; each records its own script sha256
+# (d02eb47a... and 2a78d217...).  Only the docstring's paraphrase of the two source
+# statements changed here: no arithmetic predicate, row, check or message was touched.
+# Script sha256 at run set 3: c80ce2c4db63f972674fc3068e55210aa318641e878e9f572bd4f31db311f717
+# Same image, launcher and command as run sets 1 and 2; interpreter and source revision
+# unchanged: sage 11.0.beta5 python 3.14.10  sage source checkout 6301b4e43e72f0bbe49ed7f36bad6d9e2579c024
+# One run of run set 3, timed with date +%s%N around the launcher call.
+#
+===== run 4 (run set 3, one run): exit 0, wall 1316 ms =====
+r = 2;  d = 2m (even degrees), d = 2m + 1 (odd degrees);  F_d(r) = 1 + [(r-1)d - 3r^2/4]/2 in QQ[m]
+OK    C1  F_d(2) = (d-1)/2 for even d   [F_d(2) = m - 1/2, (d-1)/2 = m - 1/2]
+OK    C1  F_d(2) = (d-1)/2 for odd d   [F_d(2) = m, (d-1)/2 = m]
+
+-- even degrees, d = 2*m, F_d(2) = m - 1/2 --
+OK    C2  even (2, 0, 0, 0, 0)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 4, g = m - 1, 8(F_d(2)-g) = 4]
+OK    C2  even (2, 0, 0, 0, 0)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 2]
+OK    C2  even (2, 0, 0, 0, 0)  g integral   [g = m - 1 in ZZ[m] = True]
+OK    C2  even (2, 2, 2, 0, 0)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 12, g = m - 2, 8(F_d(2)-g) = 12]
+OK    C2  even (2, 2, 2, 0, 0)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 2]
+OK    C2  even (2, 2, 2, 0, 0)  g integral   [g = m - 2 in ZZ[m] = True]
+OK    C2  even (2, 2, 2, 2, 2)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 20, g = m - 3, 8(F_d(2)-g) = 20]
+OK    C2  even (2, 2, 2, 2, 2)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 2]
+OK    C2  even (2, 2, 2, 2, 2)  g integral   [g = m - 3 in ZZ[m] = True]
+OK    C3  even: (d-1-j)/2 in ZZ[m] exactly for j in [1, 3, 5], and the six rows' sums are 4j there   [integral j set [1, 3, 5]; rows' sums [4, 12, 20] = 4 * [1, 3, 5]]
+OK    C3  even (2, 0, 0, 0, 0)  g equals (d-1-j)/2 at j = 1   [g = m - 1]
+OK    C3  even (2, 2, 2, 0, 0)  g equals (d-1-j)/2 at j = 3   [g = m - 2]
+OK    C3  even (2, 2, 2, 2, 2)  g equals (d-1-j)/2 at j = 5   [g = m - 3]
+
+-- odd degrees, d = 2*m + 1, F_d(2) = m --
+OK    C2  odd (0, 0, 0, 0, 0)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 0, g = m, 8(F_d(2)-g) = 0]
+OK    C2  odd (0, 0, 0, 0, 0)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 0]
+OK    C2  odd (0, 0, 0, 0, 0)  g integral   [g = m in ZZ[m] = True]
+OK    C2  odd (2, 2, 0, 0, 0)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 8, g = m - 1, 8(F_d(2)-g) = 8]
+OK    C2  odd (2, 2, 0, 0, 0)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 2]
+OK    C2  odd (2, 2, 0, 0, 0)  g integral   [g = m - 1 in ZZ[m] = True]
+OK    C2  odd (2, 2, 2, 2, 0)  sum(x_i^2) = 8(F_d(2)-g)   [sum = 16, g = m - 2, 8(F_d(2)-g) = 16]
+OK    C2  odd (2, 2, 2, 2, 0)  one parity, |x_i| <= r = 2   [parity [0], max |x_i| = 2]
+OK    C2  odd (2, 2, 2, 2, 0)  g integral   [g = m - 2 in ZZ[m] = True]
+OK    C3  odd: (d-1-j)/2 in ZZ[m] exactly for j in [0, 2, 4], and the six rows' sums are 4j there   [integral j set [0, 2, 4]; rows' sums [0, 8, 16] = 4 * [0, 2, 4]]
+OK    C3  odd (0, 0, 0, 0, 0)  g equals (d-1-j)/2 at j = 0   [g = m]
+OK    C3  odd (2, 2, 0, 0, 0)  g equals (d-1-j)/2 at j = 2   [g = m - 1]
+OK    C3  odd (2, 2, 2, 2, 0)  g equals (d-1-j)/2 at j = 4   [g = m - 2]
+OK    C4  the odd representative (1,1,1,1,1) has sum 5 and |x_i| <= 2   [sum = 5]
+OK    C4  8F_d(2) = 4(d-1) and 8F_d(2)/4 in ZZ[m], even d   [8F_d(2) = 8*m - 4]
+OK    C4  8F_d(2) = 4(d-1) and 8F_d(2)/4 in ZZ[m], odd d   [8F_d(2) = 8*m]
+OK    C4  5 is not a multiple of 4   [5 mod 4 = 1]
+
+-- the rejected and the corrected odd minimum tuple --
+OK    C5  rejected (2,2,0,0,0): sum = 8   [sum = 8]
+OK    C5  corrected (2,2,2,2,0): sum = 16   [sum = 16]
+OK    C5  the two sums differ: 8 != 16
+OK    C5  the rejected tuple's sum 8 equals 8(F_d(2)-g) at g=(d-3)/2 and not at g=(d-5)/2   [g = m - 1 gives 8; g = m - 2 gives 16]
+OK    C5  the corrected tuple's sum 16 equals 8(F_d(2)-g) at g=(d-5)/2   [g = m - 2, 8(F_d(2)-g) = 16]
+OK    C5  the script's odd rows (2,2,0,0,0) and (2,2,2,2,0) have sums 8 and 16   [(2, 2, 0, 0, 0) -> 8, (2, 2, 2, 2, 0) -> 16]
+OK    the six rows are distinct   [6 distinct]
+OK    the script lists three rows per family
+
+ALL 40 CHECKS PASSED (the arithmetic predicates above only: r = 2 in QQ[m])

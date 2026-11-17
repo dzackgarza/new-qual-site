@@ -12,28 +12,36 @@ F_d(r) = 1 + [(r - 1)d - 3r^2/4]/2, Proposition 2.1 on printed p. 407 and Theore
 printed p. 409.  Both statements are quoted here with their hypotheses, because the
 arithmetic checked below is only one of their hypotheses and not either statement:
 
-  Proposition 2.1 (printed p. 407).  For integers d, r with 0 <= r <= 2d/3, and for an
-  integer g with F_d(r-1) < g <= F_d(r) such that 8(F_d(r) - g) is a sum of squares of
-  five integers, of one parity, of absolute value at most r, there is a smooth connected
-  curve C on S of degree d, genus g and r(O_S(C)) = r.  The five integers are read as
-  nonnegative, as the card's remark records: the proof runs with 0 <= alpha_i <= r/2 in
-  the even case, where the five entries are 2 alpha_i and may vanish.
+  The article's standing setting is characteristic 0, with the complex numbers as its
+  field. Only the geometric conclusions use it: the proof of 2.1 ends "Lissité et
+  connexité se déduisent immédiatement de la proposition (compte tenu du théorème de
+  Bertini).", and that Bertini theorem yields smoothness and connectedness in
+  characteristic 0 and fails in general in characteristic p. The arithmetic certified
+  below is a polynomial identity over QQ, the same in every characteristic.
 
-  Theoreme 2.5 (printed p. 409).  For positive integers d, g with g <= 1 + d(d-3)/6, with
-  r the least positive integer such that g <= F_d(r), and apart from the three printed
-  triples (d, g, r) = (9, 1, 2), (23, 22, 4), (27, 28, 4), there is a smooth connected
-  curve of degree d and genus g on a smooth cubic surface if and only if 8(F_d(r) - g) is
-  such a sum.
+  Proposition 2.1 (printed p. 407).  Over that field: for integers d, r with
+  0 <= r <= 2d/3, and for a positive integer g with F_d(r-1) < g <= F_d(r) such that
+  8(F_d(r) - g) is a sum of squares of five integers, of one parity, of absolute value at
+  most r, there is a smooth connected curve C on S of degree d, genus g and
+  r(O_S(C)) = r.  The five integers are read as nonnegative, as the card's remark
+  records: the proof runs with 0 <= alpha_i <= r/2 in the even case, where the five
+  entries are 2 alpha_i and may vanish.
+
+  Theoreme 2.5 (printed p. 409).  Over the same field: for positive integers d, g with
+  g <= 1 + d(d-3)/6, with r the least positive integer such that g <= F_d(r), and apart
+  from the three printed triples (d, g, r) = (9, 1, 2), (23, 22, 4), (27, 28, 4), there is
+  a smooth connected curve of degree d and genus g on a smooth cubic surface if and only
+  if 8(F_d(r) - g) is such a sum.
 
 At r = 2 the arithmetic these two statements contain is this: F_d(2) = (d - 1)/2, and the
 criterion's squared sum becomes 8(F_d(2) - g).  This file certifies that arithmetic, at
 r = 2, for the six assignments the card displays, in QQ[m] with d = 2m and d = 2m + 1, and
 nothing else.  It is not a proof of either statement and no line of it states one: the
 existence conclusion of 2.1 and the biconditional of 2.5 carry the hypotheses above -- the
-range 0 <= r <= 2d/3, the two-sided window F_d(r-1) < g <= F_d(r), the bound
-g <= 1 + d(d-3)/6, the choice of r as the least such integer, the three printed exceptions
--- and they conclude that a curve on a cubic surface exists, which no polynomial identity
-supplies.
+field, g > 0, the range 0 <= r <= 2d/3, the two-sided window F_d(r-1) < g <= F_d(r), the
+bound g <= 1 + d(d-3)/6, the choice of r as the least such integer, and the three printed
+exceptions -- and they conclude that a curve on a cubic surface exists, which no
+polynomial identity supplies.
 
 WHAT THIS FILE CERTIFIES, AND WHAT IT DOES NOT
 ----------------------------------------------
