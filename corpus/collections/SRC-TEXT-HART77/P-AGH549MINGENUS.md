@@ -44,6 +44,43 @@ audit:
     even/odd parity algebra and both equality families. Added the explicit
     justification that the globally generated remainder N has N^2>=0; no
     later-card input is used.
+- event: source-checked
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Read Gruson-Peskine II in its supplied text version: the definitions of
+    r(O_S(C)) and F_d(r), Proposition 2.1 (printed p. 407), the proof of
+    Proposition 2.1 through Lemma 2.2, Theorem 2.5 (printed p. 409), its
+    necessity argument with Lemmas 2.6, 2.7, 2.9 and Proposition 2.10, and the
+    table of gaps (printed p. 411). Read Bourbaki 592 printed pp. 301-302,
+    Theorems 0.1-0.3 and Remark 2, and its Sections 1 and 5. Derived the case
+    r = 2 of the criterion by hand from F_d(1) = 5/8 and F_d(2) = (d-1)/2 and
+    checked it against all 32 rows of the table, whose F_d(2) column is the
+    initial segment below (d-6)/2 for even d and below (d-5)/2 for odd d.
+    Confirmed the printed statement of Ex. V.4.9 in the book text and the
+    standing hypothesis of an algebraically closed field. What was not
+    checked: the article body was read as an extraction whose Section 2
+    statements carry a rendered-page check but whose remaining formulas do
+    not, so Lemma 2.6, the Appendices and Corollary 2.3 are read from the
+    extraction only; no independent file of Gruson-Peskine was consulted; and
+    whether Bourbaki's Theorem 5.1 transports the attainment to characteristic
+    p in this setting is not settled here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Read the whole proof and repaired two missing justifications in step
+    repeat-contraction-until-x2-or-positive, which stated its conclusion for
+    (-1)-curves and argued for lines: a (-1)-curve is the same curve as a line
+    of X_r by adjunction, and every line of X_{r-1} is the strict transform of
+    a line of X_r because a nonzero multiplicity would give an effective curve
+    of nonpositive anticanonical degree. Nothing else in the proof changed,
+    and the arithmetic of the even and odd cases and of both equality
+    families was rechecked and stands. The remark on published solutions now
+    carries Gruson-Peskine and Bourbaki 592 with their printed pages, and it
+    corrects the earlier description of Egbert's V.4.9, which is a draft and
+    not a proof. Not checked here: certification, and the characteristic p
+    question recorded in the source-checked event above.
 ---
 
 ::: {.problem}
@@ -155,18 +192,30 @@ alternatives of the step holds. Step
 throughout.
 
 It remains to check that the descended class keeps nonnegative intersection
-with every line. Let $\sigma:X_r\to X_{r-1}$ contract the zero-intersection
-line $E$, let $D=\sigma^*D'$, let $F'\subseteq X_{r-1}$ be a line and let
+with every line, in the sense in which the claim speaks of $(-1)$-curves. On
+$X_r$, a curve $L$ with $L^2=-1$ has $L\cdot K_{X_r}=-1$ exactly when
+$p_a(L)=0$, by adjunction, so the $(-1)$-curves are the curves of
+anticanonical degree $1$ and square $-1$; that is what a line on $X_r$ means,
+and on $X_6$ these are the $27$ lines of the book's Theorem 4.9 (twenty-seven
+lines). Let
+$\sigma:X_r\to X_{r-1}$ contract the zero-intersection line $E$, let
+$D=\sigma^*D'$, let $F'\subseteq X_{r-1}$ be a line and let
 $F\subseteq X_r$ be its strict transform. Then
 $$\sigma^*F'=F+mE$$
 where $m\ge0$ is the multiplicity of $F'$ at the contracted point, hence
 $$D'\cdot F'=\sigma^*D'\cdot\sigma^*F'=D\cdot F+m\,(D\cdot E)=D\cdot F,$$
-because $D\cdot E=0$. So the intersection numbers of the descended class with
-the lines of the new surface are the same as those of $D$ with the
+because $D\cdot E=0$. Here $m=0$: if $m\ge1$ then, since
+$-K_{X_r}=\sigma^*(-K_{X_{r-1}})-E$ and
+$F\cdot\sigma^*(-K_{X_{r-1}})=F'\cdot(-K_{X_{r-1}})=1$, the effective curve
+$F$ would have
+$$F\cdot(-K_{X_r})=1-m\le0,$$
+which ampleness of $-K_{X_r}$ forbids. So every line of $X_{r-1}$ is the
+strict transform of a line of $X_r$, and the intersection numbers of the
+descended class with the lines of the new surface are those of $D$ with the
 corresponding strict transforms. Since $D\cdot L\ge0$ for all $27$ lines of
 $X_6$ by step [](#case-c-applies){.pf-ref}, induction gives $D\cdot L\ge0$ for
-every line $L$ of the surface on which the process stops. There no line has
-intersection zero, so all these intersections are positive.
+every line $L$ of the surface on which the process stops. On that surface no
+line has intersection zero, so all these intersections are positive.
 :::
 
 :::
@@ -855,5 +904,13 @@ for every odd $d\ge13$.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.9, printed p. 290 (the minimum genus of a curve in a given class on the cubic surface).
+The published proof is L. Gruson and C. Peskine, *Genre des courbes de l'espace projectif. II*, Ann. Sci. École Norm. Sup. (4) **15** (1982), 401--418, read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case.
+
+Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$ as a sum of five squares drawn from $\{0,4\}$, so $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, the least of which Proposition 2.1 attains with $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, the last attained with $(2,2,0,0,0)$. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
+
+R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]*, Séminaire Bourbaki exposé 592, Astérisque **92--93** (1982), 301--313, text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1, beginning on printed p. 302, quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2 on printed p. 302 states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1. The lower bound above uses no Bertini and so holds in every characteristic; the attainment in characteristic $p$ would rest on that theorem, and the sources read here do not carry it out in this setting. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
+
+The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, applies Ex. V.4.8 on $X_r$ for $r\ge3$ and on $X_2$, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
+
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.9, printed p. 290, is a working draft and not a proof: its lower-bound half is a chain of unattributed algebraic manipulations that does not close, and its existence half fixes $b_6^2=3$ and then applies the five-squares lemma of Bourbaki's Proposition 2.1 with $k=a$, which does not respect the degree $d=3a-\sum b_i$ that it is meant to realize.
 :::
