@@ -26,7 +26,7 @@ $$
 \end{aligned}
 $$
 
-(b) $\Aut(C_n) \cong (\ZZ/n\ZZ)\units$, a group of order $\varphi(n)$.
+(b) $\Aut(C_n) \cong \units{(\ZZ/n\ZZ)}$, a group of order $\varphi(n)$.
 It is cyclic if and only if $n = 1, 2, 4, p^k$, or $2p^k$ with $p$ an odd prime and $k \geq 1$.
 
 (c) For $p$ an odd prime and $k \geq 1$, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$; in particular $\Aut(C_p) \cong C_{p-1}$.
@@ -39,7 +39,7 @@ $$
 \begin{aligned}
 \Aut(C_n)
 &\cong \prod_{k=1}^\ell \Aut\qty{C_{p_k^{n_k}}} \\
-&\cong \prod_{k=1}^\ell (\ZZ/p_k^{n_k}\ZZ)\units \\
+&\cong \prod_{k=1}^\ell \units{(\ZZ/p_k^{n_k}\ZZ)} \\
 &\cong \qty{C_2 \times C_{2^{n_1-2}} } \times \prod_{k=2}^\ell C_{m_k},
 \qquad m_k \coloneqq \varphi(p_k^{n_k}) = p_k^{n_k-1}(p_k-1).
 \end{aligned}
@@ -48,5 +48,5 @@ $$
 :::
 
 ::: {.example}
-$\Aut(C_8) \cong (\ZZ/8\ZZ)\units = \theset{1, 3, 5, 7}$ has every nonidentity element of order $2$, so $\Aut(C_8) \cong C_2 \times C_2 \not\cong C_4$.
+$\Aut(C_8) \cong \units{(\ZZ/8\ZZ)} = \theset{1, 3, 5, 7}$ has every nonidentity element of order $2$, so $\Aut(C_8) \cong C_2 \times C_2 \not\cong C_4$.
 :::
