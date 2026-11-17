@@ -111,6 +111,15 @@ state, after <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs
 Every entry is a finite check of the chain-level statement for the listed parameters. None
 of them is a statement about a space, and none settles the corresponding uniform claim.
 
+`cards/V49FiveSquaresTuples.sage` is a symbolic rather than a finite check. It was run twice
+on the same Sage development image (11.0.beta5, Python 3.14.10, source HEAD `6301b4e43e`),
+and `cards/V49FiveSquaresTuples.out` retains both runs' verbatim output with the command, the
+timings (1.8 s and 1.5 s of wall time) and the sha256 of the script as run:
+
+| Card | What is checked exactly | Range | Covers |
+| --- | --- | --- | --- |
+| `P-AGH549MINGENUS` | the arithmetic of the $r=2$ specialisation of Gruson--Peskine Proposition 2.1 (printed p. 407) and Theorem 2.5 (printed p. 409) **only**: the six displayed five-square tuples' exact integer squared sums — $4,12,20$ for $(2,0,0,0,0)$, $(2,2,2,0,0)$, $(2,2,2,2,2)$ and $0,8,16$ for $(0,0,0,0,0)$, $(2,2,0,0,0)$, $(2,2,2,2,0)$ — and the polynomial identity $\sum x_i^2=8(F_d(2)-g)$ with $F_d(2)=(d-1)/2$, over $\QQ[m]$ with $d=2m$ and $d=2m+1$; that every tuple is of one parity with $\abs{x_i}\le2$; that $(d-2)/2,(d-4)/2,(d-6)/2$ and $(d-1)/2,(d-3)/2,(d-5)/2$ are exactly the integral genera at $r=2$; and that the rejected odd tuple $(2,2,0,0,0)$ has squared sum $8$, which attains $(d-3)/2$, while the printed minimum $(d-5)/2$ needs $16$ and is attained by the corrected $(2,2,2,2,0)$. **Not** certified, and untouched by the computation: that a smooth connected curve of the stated degree and genus exists on a smooth cubic surface, its smoothness, connectedness or irreducibility, the minimum-genus bound of Exercise V.4.9 and the closedness of its range, the three printed exceptional triples, and the attribution $r(\OO_S(C))=2$; this row closes neither [#111](https://github.com/dzackgarza/new-qual-site/issues/111) nor [#121](https://github.com/dzackgarza/new-qual-site/issues/121). | every degree of both families; no degree is sampled | part |
+
 ## 3. The topological identification (cited, hypotheses verified)
 
 For `E-HAT-2.3-1` the passage from the cellular chain complex to the homology of the Moore
