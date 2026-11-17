@@ -346,6 +346,23 @@ audit:
     tmp/sources/rud-2015-resolution-singularities-curves.md, lines 873 to 877;
     nothing further. Not checked here: the rendered page, and any printing of
     either book other than the text versions beside the retained PDFs.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Markup only, no change of statement or proof. The remark on other published
+    treatments quoted the National Taiwan University solution's closing
+    sentence with a raw `\ldots' where the quotation elides words, and Pandoc's
+    HTML writer drops raw TeX it cannot typeset, so the reader saw no ellipsis
+    at all: `qualc check` reported the span as raw TeX the page cannot show.
+    STYLE-04's rule that ellipses are `\ldots' governs mathematics, where an
+    ellipsis is a list separator between two math atoms, and sets `\cdots'
+    between binary operators; this one is punctuation inside quoted prose, and
+    is now the character `…', which is how the corpus writes a prose ellipsis
+    elsewhere (for example in the solution of `E-SS7.EX-8'). The quotation is
+    otherwise unchanged. Not checked: the rendered page in a browser, and no
+    source was re-read for this repair.
+
 ---
 
 ::: {.problem}
@@ -565,7 +582,7 @@ Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats t
 :::
 
 ::: {.remark title="Other published treatments"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 3 of §4, PDF pp. 15--16, chooses the two auxiliary points through the bad point and analyses the multiplicity at the image point in the chart $x=(t+\mu)y$; its case analysis ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ \ldots induction on this then we are done", and it does not show that the three contracted points are ordinary.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 3 of §4, PDF pp. 15--16, chooses the two auxiliary points through the bad point and analyses the multiplicity at the image point in the chart $x=(t+\mu)y$; its case analysis ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ … induction on this then we are done", and it does not show that the three contracted points are ordinary.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, printed p. 109, states the termination criterion: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
 

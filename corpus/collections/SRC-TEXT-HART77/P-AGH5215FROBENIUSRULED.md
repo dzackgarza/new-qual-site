@@ -197,6 +197,24 @@ audit:
     correction is stated in a record of this date rather than in that one.
     Nothing else on the card was changed, and no mathematics was altered by
     this repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Markup only, no change of statement or proof. Six spans wrote the
+    restriction of a morphism to a curve in the postfix form
+    `\pi\restrictionof_Y` and `f\restrictionof_R`. That is a misuse of the
+    preamble's two-argument macro `\restrictionof{A}{B}`: TeX takes its first
+    argument to be the `_` of the subscript and its second to be the
+    subscript's letter, and the preamble's definition rejects the result with
+    "Missing { inserted", checked by typesetting that definition beside the
+    spans with `pdflatex`. The six now read $\restrictionof{\pi}{Y}$ and
+    $\restrictionof{f}{R}$; no new macro was added, since this is the existing
+    semantic macro for the restriction of the first argument to the second.
+    `qualc check` did not report these, because its undefined-command check
+    tests the command's name and not how many arguments it is given. Not
+    checked: the rendered page in a browser, and no mathematics was read or
+    altered by this repair.
 
 ---
 
@@ -366,14 +384,14 @@ which in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is the class $3C_0-3f$;
 :::
 
 ::: {.pf-step #s8}
-The morphism $\pi\restrictionof_Y:Y\to C$ is purely inseparable of degree $3$.
+The morphism $\restrictionof{\pi}{Y}:Y\to C$ is purely inseparable of degree $3$.
 
 ::: pf-proof
-Xie, Lemma 4.4(iii), printed pp. 10--11: "If $R^2<0$, then $f\restrictionof_R:R\to C$ is purely inseparable", for an irreducible curve $R\subset X$ different from a fibre. Here
+Xie, Lemma 4.4(iii), printed pp. 10--11: "If $R^2<0$, then $\restrictionof{f}{R}:R\to C$ is purely inseparable", for an irreducible curve $R\subset X$ different from a fibre. Here
 $$
 Y^2=(3C_0-3f)^2=9C_0^2-18\,C_0\cdot f=-9<0,
 $$
-using $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$; so $f\restrictionof_Y$ is purely inseparable. Its degree is $Y\cdot f=3$, the coefficient of $C_0$ in the class of $Y$, since a fibre meets $Y$ in $\deg(\pi\restrictionof_Y)$ points. This is what the exercise asks of $\pi:Y\to C$ in the corrected statement.
+using $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$; so $\restrictionof{f}{Y}$ is purely inseparable. Its degree is $Y\cdot f=3$, the coefficient of $C_0$ in the class of $Y$, since a fibre meets $Y$ in $\deg(\restrictionof{\pi}{Y})$ points. This is what the exercise asks of $\pi:Y\to C$ in the corrected statement.
 :::
 
 :::
@@ -390,7 +408,7 @@ and with $C_0^2=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ this is
 $$
 1+\frac12\qty(-9+15)=4.
 $$
-On the other hand $Y\cdot f=3$, so $\pi\restrictionof_Y$ has degree $3$, and it is purely inseparable by step [](#s8){.pf-ref}: the function fields embed as
+On the other hand $Y\cdot f=3$, so $\restrictionof{\pi}{Y}$ has degree $3$, and it is purely inseparable by step [](#s8){.pf-ref}: the function fields embed as
 $$
 K(C)\subset K(Y)\subset K(C)^{1/3}
 $$
@@ -437,7 +455,7 @@ Parts (a) and (b) have complete published arguments, and the curve of part (c) d
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $f\restrictionof_R$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::

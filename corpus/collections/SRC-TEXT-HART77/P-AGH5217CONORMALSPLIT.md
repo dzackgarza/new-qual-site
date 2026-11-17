@@ -245,6 +245,29 @@ audit:
     Nothing else on the card changed. Not checked: no further search for a
     published proof of part (a) in characteristic 3, and the withdrawal rests
     on the sources read above, not on a computation of this card's own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Markup only, no change of statement or proof, and no new macro. The card
+    wrote the restriction of the tangent sheaf of $\PP^3$ to $C$ in Yang
+    Pi-Yeh's quoted conormal sequence as `\mathcal T_{\PP^3}\restrictof_C`, and
+    twice wrote `\Omega^1\PP^3\restrictionof_C` and
+    `\Omega_{\PP^3}\restrictionof_C` for the same construction; `qualc check` reported the first as a command
+    neither the preamble nor MathJax defines. The preamble's macro for this
+    meaning is `\restrictionof{A}{B}`, which sets $\left.A\right|_B$ and which
+    the corpus uses on 70 cards; `\restrictof` is one character away from it
+    and occurs nowhere else in the corpus, so this was a mistyped use of that
+    macro rather than a second meaning, and no macro was added for it. The
+    three spans now read $\restrictionof{\mathcal T_{\PP^3}}{C}$,
+    $\restrictionof{\Omega^1\PP^3}{C}$ and
+    $\restrictionof{\Omega_{\PP^3}}{C}$. The postfix form was not merely
+    undefined: TeX takes its first argument to be the `_` of the subscript and
+    its second to be the subscript's letter, which the preamble's definition
+    rejects with "Missing { inserted"; typesetting that definition beside the
+    three spans with `pdflatex` produced a fatal error before the repair and a
+    PDF after it. Not checked: the rendered page in a browser, and no
+    mathematics was read or altered by this repair.
 
 ---
 
@@ -613,7 +636,7 @@ This proves part (a).
 The same splitting is read off the transition matrix of the conormal bundle, and
 the two computations are independent. The two frames and their relation are
 Ted Shifrin's, answer 1583486, part (a): he writes the conormal sequence
-$0\to N^*_{C/\PP^3}\to\Omega^1\PP^3\restrictionof_C\to\Omega^1_C\to0$, the images
+$0\to N^*_{C/\PP^3}\to\restrictionof{\Omega^1\PP^3}{C}\to\Omega^1_C\to0$, the images
 of the three coordinate differentials in each of the two charts, and the two
 sections of the conormal bundle that the relations leave. What is this card's
 own is the reduction of his matrix, which his answer leaves as "the usual row-
@@ -733,7 +756,7 @@ E_3
 $$
 This is exactly the answer stated in part (b).
 
-The published argument for the same splitting is Yang Pi-Yeh, Solution 5.2.17(b), printed p. 107: he computes it by the Jacobian presentation, "If $\operatorname{char}(k)\ne2,3$, all things are like (a). So $0\to\mathcal T_C\xrightarrow{\phi}\mathcal T_{\PP^3}\restrictof_C\to\mathcal N_C\to0$, and $F(\phi):R(-5)\oplus R(-5)\oplus R(-6)\to R(-2)$ given by matrix $(t^3,u^3,6t^2u^2)$. So here $\ker F(\phi)=R(-7)\oplus R(-7)$, i.e. $\varphi^*(\mathcal I/\mathcal I^2)=\OO_{\PP^1}(-7)\oplus\OO_{\PP^1}(-7)$. If $\operatorname{char}(k)=2,3$, $F(\phi)$ is given by $(t^3,u^3,0)$. So $\ker F(\phi)=R(-8)\oplus R(-6)$." That is a published argument for every characteristic other than $2$ and $3$, and it agrees with Eisenbud and Van de Ven, Proposition 6, printed p. 458, which at $n=4$ gives $N\cong\OO(7)\oplus\OO(7)$, that is $l=m=-7$, in characteristic $0$. Its characteristic $3$ is wrong, the book printing the split case at $\operatorname{char}k=2$ alone; and its characteristic $2$ cannot be trusted either, since the presentation it uses is not the conormal's there: for the twisted cubic its matrix $(t^2,u^2,2tu)$ becomes $(t^2,u^2,0)$ in characteristic $2$, whose kernel is $R(-6)\oplus R(-4)$ and not $\OO(-5)^{\oplus2}$, so the method demonstrably fails at the answer the book prints for part (a). In neither characteristic does a published argument decide part (b); the class of step [](#s3){.pf-ref}, $2\eta$, does, and it vanishes exactly when $2=0$.
+The published argument for the same splitting is Yang Pi-Yeh, Solution 5.2.17(b), printed p. 107: he computes it by the Jacobian presentation, "If $\operatorname{char}(k)\ne2,3$, all things are like (a). So $0\to\mathcal T_C\xrightarrow{\phi}\restrictionof{\mathcal T_{\PP^3}}{C}\to\mathcal N_C\to0$, and $F(\phi):R(-5)\oplus R(-5)\oplus R(-6)\to R(-2)$ given by matrix $(t^3,u^3,6t^2u^2)$. So here $\ker F(\phi)=R(-7)\oplus R(-7)$, i.e. $\varphi^*(\mathcal I/\mathcal I^2)=\OO_{\PP^1}(-7)\oplus\OO_{\PP^1}(-7)$. If $\operatorname{char}(k)=2,3$, $F(\phi)$ is given by $(t^3,u^3,0)$. So $\ker F(\phi)=R(-8)\oplus R(-6)$." That is a published argument for every characteristic other than $2$ and $3$, and it agrees with Eisenbud and Van de Ven, Proposition 6, printed p. 458, which at $n=4$ gives $N\cong\OO(7)\oplus\OO(7)$, that is $l=m=-7$, in characteristic $0$. Its characteristic $3$ is wrong, the book printing the split case at $\operatorname{char}k=2$ alone; and its characteristic $2$ cannot be trusted either, since the presentation it uses is not the conormal's there: for the twisted cubic its matrix $(t^2,u^2,2tu)$ becomes $(t^2,u^2,0)$ in characteristic $2$, whose kernel is $R(-6)\oplus R(-4)$ and not $\OO(-5)^{\oplus2}$, so the method demonstrably fails at the answer the book prints for part (a). In neither characteristic does a published argument decide part (b); the class of step [](#s3){.pf-ref}, $2\eta$, does, and it vanishes exactly when $2=0$.
 
 So part (b) is published in characteristic $0$ and in every characteristic other than $2$ and $3$; characteristics $2$ and $3$, and with them the printed answer's "$\operatorname{char}k\ne2$", rest on this card's step [](#s3){.pf-ref}, which is its own.
 
@@ -756,6 +779,6 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
-Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\Omega_{\PP^3}\restrictionof_C\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
+Math StackExchange answer 1583486 by Ted Shifrin, to question 1583326 ("Normal bundle of twisted cubic"), gives an argument for part (a) by another route, in a form whose constants need $3$ invertible: from the conormal sequence $0\to N^\vee_{C/\PP^3}\to\restrictionof{\Omega_{\PP^3}}{C}\to\Omega_C\to0$ it writes the two frames of $N^\vee_{C/\PP^3}$ on the overlap of the charts $[1,x,y,z]$ and $[X,Y,Z,1]$ and reads the splitting off the transition matrix, ending at the diagonal $(-3t^{-5},-\frac13t^{-5})$. Step [](#s5){.pf-ref} carries his frames, the change of coordinates $X=1/z$, $Y=x/z$, $Z=y/z$ and the transition matrix, and adds one row operation over $k[t]$ and one column operation over $k[t^{-1}]$ that reduce it to exactly $t^{-5}$ times the identity, an identity over $\ZZ[t,t^{-1}]$ and so one that holds over every field. Georges Elencwajg's answer 569653 to question 569237 records the equivalent statement for the normal bundle, $N=\OO(5)\oplus\OO(5)$, as Proposition 6 of Eisenbud and Van de Ven, *On the normal bundles of smooth rational space curves*. Neither covers part (b).
 
 :::
