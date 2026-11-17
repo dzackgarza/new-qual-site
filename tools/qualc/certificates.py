@@ -17,12 +17,12 @@ two authored sources decide it:
 
 A certificate that proves one claim of a card whose statement has several does
 not make the card certified. `E-HAT-3.A-6` asks that `Tor(A,B)` be a torsion
-group and that it have an element of order `n` when both arguments do; its rows
-compute `Tor` of a presented stage, of a cyclic stage and of a two-term free
-resolution, and they say in their own text that the passage to an arbitrary
-abelian group is not proved. `E-HAT-3.A-2` has the same shape. Which of the two
-things a row proves is authored on the row, not guessed here: see `COVERS`
-below.
+group and that it have an element of order `n` when both arguments do, and its
+early rows computed `Tor` of a presented stage, of a cyclic stage and of a
+two-term free resolution, saying in their own text that the passage to an
+arbitrary abelian group was not proved; `E-HAT-3.A-2` had the same shape, and
+both stayed drafts on those rows alone. Which of the two things a row proves is
+authored on the row, not guessed here: see `COVERS` below.
 
 `proofs/README.md` is the registry because it is where the certificates are
 described and where an author already writes the certificate-to-card mapping

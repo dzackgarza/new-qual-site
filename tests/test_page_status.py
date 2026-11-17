@@ -9,8 +9,9 @@ the page; the counts follow on the collection and index pages.
 Issue #142: a certificate row proves a claim, not necessarily the whole claim of
 the card it names. Each row's `Covers` cell says which, and a card is certified
 only when a row says it covers the card's statement. `E-HAT-3.A-2` and
-`E-HAT-3.A-6` were certified by rows whose own text says that the case of an
-arbitrary abelian group is not proved.
+`E-HAT-3.A-6` were read as certified by rows whose own text says that the case of
+an arbitrary abelian group is not proved; issue #134 supplied the row that
+covers each statement, on lean-categories, and they are certified now.
 
 The pages this module builds and reads are `tag/P-DRAFT-ONE.html`,
 `tag/P-REVIEWED-ONE.html`, `tag/P-PART-ONE.html` and
@@ -268,21 +269,27 @@ def test_a_certificate_row_that_does_not_say_what_it_proves_is_a_corpus_error(tm
 TOR_CARDS = ("E-HAT-3.A-2", "E-HAT-3.A-6")
 
 
-def test_the_two_tor_cards_are_not_certified_by_their_part_rows() -> None:
+def test_the_two_tor_cards_are_certified_for_every_abelian_group() -> None:
     """Issue #142's two cards, declared on the site's own path.
 
-    Every row naming them proves a claim of the card and says so; the rows
-    themselves record that the case of an arbitrary abelian group is not proved.
-    `certificates.status` is the call the catalog's `status` column is built
-    from, so this is the answer the page states.
+    Issue #142's lesson stands: the rows that prove a claim of these cards keep
+    saying `part`, and a card whose statement is only partly covered stays a
+    draft. What changes here is issue #134 — the row that covers each statement
+    is the lean-categories declaration proved for an arbitrary abelian group
+    `A`, not a row about a finitely generated stage. `certificates.status` is
+    the call the catalog's `status` column is built from, so this is the answer
+    the page states.
     """
     registry = certificates.load(ROOT / "proofs")
 
     for card_id in TOR_CARDS:
         entries = registry[card_id]
         assert entries
-        assert all(entry.covers == certificates.PART for entry in entries), card_id
-        assert certificates.status("draft", entries) == "draft", card_id
+        whole = [entry for entry in entries if entry.covers == certificates.THE_STATEMENT]
+        assert whole, card_id
+        assert all(entry.file.startswith(certificates.LEAN_CATEGORIES) for entry in whole), card_id
+        assert any(entry.covers == certificates.PART for entry in entries), card_id
+        assert certificates.status("draft", entries) == "certified", card_id
 
 
 def test_every_certificate_row_of_the_registry_says_what_it_proves() -> None:
