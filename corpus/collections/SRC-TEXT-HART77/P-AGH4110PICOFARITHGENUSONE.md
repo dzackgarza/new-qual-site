@@ -358,7 +358,7 @@ $$
 $$
 a contradiction. Hence $P\in X_{\reg}$.
 
-The Euler characteristic computation of step [](#s6){.pf-ref} forces the same conclusion in one line, since $\mco_{X,P}/(a)\cong k$ makes $(a)$ a maximal ideal, so $(a)=\mm_P$ is principal and $P$ is regular by I.6.2A. The two-case argument is written out because it is the published one and because it uses neither that computation nor the principal ideal criterion.
+The Euler characteristic computation of step [](#s6){.pf-ref} forces the same conclusion in one line: $\mco_{X,P}/(a)=\mco_{Z,P}$ has length $\length(Z)=1$, so $(a)$ is a maximal ideal, hence $(a)=\mm_P$ is principal, and $P$ is regular by I.6.2A. The two-case argument is written out because it is the published one and because it uses neither that computation nor the principal ideal criterion.
 
 :::
 
