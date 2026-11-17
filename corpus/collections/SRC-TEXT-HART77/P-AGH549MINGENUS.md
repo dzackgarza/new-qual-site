@@ -125,6 +125,83 @@ audit:
     event are unchanged. The hypotheses verified in the steps are the card's
     own, the theorems are the sources'; the identification of X_2 with a
     blowup of a quadric is Exercise V.4.1 and is flagged as an exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Corrects two claims of the source-checked event of this date by appending,
+    and leaves that event as written. First, Bourbaki's Section 5 does not
+    define almost very ampleness by a bound on the rank. Printed folio 312,
+    read here from the scan of the expose at PDF page 13 and not from the
+    extraction alone, sets Sigma_i = {x in X : dim Ker T_{phi,x} >= i} for the
+    tangent map of the morphism phi, and calls a base-point-free system almost
+    very ample when codim(Sigma_i, X) >= i for every i > 0, adding that a very
+    ample system is almost very ample. The condition is on the dimension of
+    the kernel, equivalently on rank <= dim X - i over the locus of index i,
+    and is not the condition that the locus of rank <= i have codimension at
+    least i: on a surface the printed definition asks codim >= 1 of the
+    rank-at-most-one locus and codim >= 2 of the rank-zero locus, whereas the
+    discarded reading asks codim >= 2 of the whole surface at i = 2. The step
+    almost-very-ample now states the printed definition and its two surface
+    conditions; the systems it treats are immersive, so every Sigma_i is
+    empty. Second, II.8.18 is not a characteristic-zero theorem and is not
+    what Theorem 5.1 replaces. It is Bertini for hyperplane sections of a
+    nonsingular subvariety of P^n, concluding that the section is regular at
+    every point, and it is the very ample case that Bourbaki's proof of
+    Theorem 5.1 invokes at printed p. 312 as "[4, II, 8.18]". The Bertini
+    theorem for systems without base points is the one stated in
+    characteristic zero, Corollary III.10.9, which the expose cites at printed
+    p. 312 as "[4, III, 10.9]", and that is the statement Theorem 5.1
+    replaces. The members-smooth step now says this. Theorem 5.1 and the
+    definition carry printed p. 312, which the earlier event recorded as
+    missing. Not checked: no characteristic p computation was run; the
+    remaining claims of the corrected event, including its use of Remark
+    III.7.9.1 as the irreducibility argument, stand as written and were not
+    re-read beyond what the card states.
+- event: source-checked
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Read the proof of Exercise V.4.1 on P-AGH541CONICSQUADRIC, steps
+    conics-through-two-points-basis through graph-is-blowup-both-ways, against
+    the use the attainment makes of it. That card gives the four-monomial
+    basis of the conics through the two points, the base locus {P_1, P_2}, the
+    base-point-freeness of the strict transforms 2H - E_1 - E_2, containment
+    of the image in y_0y_3 = y_1y_2, nonsingularity of that quadric from its
+    four partials, birationality onto it by the projection y_0 != 0, the
+    contraction of the strict transform of x_0 = 0 alone with class
+    H - E_1 - E_2 of square -1, the projection from the image point as the
+    inverse rational map, the closure of the graph as simultaneously the
+    blowup of the quadric at that point and X', and a proper birational map
+    with finite fibres onto a nonsingular surface as an isomorphism. That is
+    the identification of X_2 with a nonsingular quadric blown up at one
+    point which step quadric-model needs, and its steps carry no hypothesis on
+    the characteristic, which is what the attainment needs. The card now cites
+    that proof there and in the remark instead of quoting the exercise, and
+    the two further facts it uses, that the exceptional curve is
+    F_12 = h - e_1 - e_2 and that h - e_1 and h - e_2 are the pullbacks of
+    the rulings, continue to be derived on this card from intersection
+    numbers. Not checked: the proof on the other card was read, not
+    re-derived, and its review status is not asserted here; the citation of
+    Hartshorne Proposition V.4.1 and Corollary V.4.2(a) for base-point-freeness
+    and dimension three is unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Rewrote the statement of step almost-very-ample to carry Bourbaki's
+    printed definition of almost very ampleness in place of the rank-at-most-i
+    description, with the two conditions it comes to on a surface, and changed
+    the first sentence of step members-smooth to attribute the characteristic
+    zero base-point-free Bertini theorem to Corollary III.10.9 and to describe
+    II.8.18 as the very ample, characteristic-free one. The citation of
+    Exercise V.4.1 in step quadric-model and in the remark now links the corpus
+    proof of it. The very ampleness and the immersiveness of the two systems,
+    the jet computation that proves the second, the ampleness, connectedness
+    and irreducibility arguments, both equality classes and both realization
+    steps, the lower bounds and the contraction steps are unchanged; no step,
+    label, hypothesis, bound or equality class was added, removed or weakened,
+    and no earlier audit event was edited.
 ---
 
 ::: {.problem}
@@ -925,8 +1002,9 @@ $$M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2).$$
 ::: pf-proof
 Proposition 4.1 gives that the conics through $P_1$ and $P_2$ have no
 unassigned base points, and Corollary 4.2(a) gives
-$\dim\linearsystem{2h-e_1-e_2}=3$, so $\psi$ is a morphism to $\PP^3$; by
-Exercise V.4.1 its image is a nonsingular quadric surface and $X_2$ is that
+$\dim\linearsystem{2h-e_1-e_2}=3$, so $\psi$ is a morphism to $\PP^3$; the
+statement of [[P-AGH541CONICSQUADRIC|Exercise V.4.1]], proved on that card,
+gives that its image is a nonsingular quadric surface and that $X_2$ is that
 quadric with one point blown up. Exactly one curve is contracted, and
 $$(2h-e_1-e_2)\cdot F_{12}=2-1-1=0,$$
 while $(2h-e_1-e_2)\cdot(h-e_i)=1$ for $i=1,2$, so that curve is $F_{12}$.
@@ -943,8 +1021,18 @@ $$M_{\mathrm{ev}}=2(h-e_1)+(s-2)(h-e_2)=\psi^*\OO_Y(2,s-2).$$
 The class $\OO_Y(2,s-2)$ is very ample, and the morphism defined by
 $\linearsystem{M_{\mathrm{odd}}}$ is immersive, its differential being
 injective at every point of $X_2$. Both systems are therefore almost very
-ample, in the sense that the locus where the differential of the associated
-morphism has rank at most $i$ has codimension at least $i$.
+ample. For a base-point-free system on a surface $X$, with associated
+morphism $\varphi$ and
+$$
+\Sigma_i=\{x\in X:\dim\ker T_{\varphi,x}\ge i\},
+$$
+almost very ampleness is the condition $\codim(\Sigma_i,X)\ge i$ for every
+$i>0$ (Bourbaki's exposé 592, §5, printed p. 312); on a surface it is the
+pair of conditions that the locus where the differential has rank at most one
+is of codimension at least one and the locus where it vanishes is of
+codimension at least two. A very ample system is almost very ample, and here
+both differentials are injective at every point, so every $\Sigma_i$ is empty
+and the condition holds.
 
 ::: pf-proof
 For the first, write
@@ -1004,15 +1092,21 @@ Each of the two systems has a member that is reduced and nonsingular, avoids
 any prescribed finite set of points, and, by step [](#members-connected){.pf-ref}, is irreducible.
 
 ::: pf-proof
-Theorem 5.1 of Bourbaki's exposé 592 states that an almost very ample linear
-system on a smooth projective variety has a nonempty Zariski open subset all
-of whose members are reduced nonsingular divisors; it imposes no hypothesis on
-the characteristic, which is what replaces the characteristic-zero Bertini
-theorem II.8.18 here. A regular local ring is an integral domain, so at a
-point of a reduced scheme all of whose local rings are regular exactly one
-irreducible component passes, the components are pairwise disjoint, and a
-connected scheme with pairwise disjoint components is irreducible, which is
-the argument of Remark III.7.9.1.
+Theorem 5.1 of Bourbaki's exposé 592, printed p. 312, states that an almost
+very ample linear system on a nonsingular projective variety has a nonempty
+Zariski open subset all of whose members are reduced nonsingular divisors, and
+it imposes no hypothesis on the characteristic. What it replaces here is the
+Bertini theorem for systems without base points, which is stated only in
+characteristic zero (Corollary III.10.9), and not the earlier Bertini theorem
+II.8.18: that one is Bertini for hyperplane sections of a nonsingular
+subvariety of $\PP^n$, it concludes that the section is regular at every
+point and needs no hypothesis on the characteristic, and it is the very ample
+case that Bourbaki's proof of Theorem 5.1 invokes by citation. A regular
+local ring is an integral domain, so at a point of a reduced scheme all of
+whose local rings are regular exactly one irreducible component passes, the
+components are pairwise disjoint, and a connected scheme with pairwise
+disjoint components is irreducible, which is the argument of Remark
+III.7.9.1.
 
 Membership of a prescribed point is a hyperplane condition on the linear
 system, so a member can be chosen inside the open set of that theorem and
@@ -1082,7 +1176,7 @@ The published proof is L. Gruson and C. Peskine, *Genre des courbes de l'espace 
 
 Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$ as a sum of five squares drawn from $\{0,4\}$, so $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
 
-R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]*, Séminaire Bourbaki exposé 592, Astérisque **92--93** (1982), 301--313, text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1, which produces reduced nonsingular members of an almost very ample system and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; the exceptional curve and the two rulings are derived from it on the card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
+R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]*, Séminaire Bourbaki exposé 592, Astérisque **92--93** (1982), 301--313, text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1 (printed p. 312), which produces reduced nonsingular members of a system that is almost very ample --- the locus where the differential of the associated morphism has kernel of dimension at least $i$ being of codimension at least $i$, for every $i>0$ --- and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; it is proved in the corpus at [[P-AGH541CONICSQUADRIC]], which the quadric-model step of the proof above cites, and the exceptional curve and the two rulings are derived from it there and on this card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
 
 The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, applies Ex. V.4.8 on $X_r$ for $r\ge3$ and on $X_2$, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
 
