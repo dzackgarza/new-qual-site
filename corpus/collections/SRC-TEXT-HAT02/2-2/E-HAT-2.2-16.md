@@ -83,6 +83,38 @@ audit:
     What the certificate does not cover: the passage from the chain model to the homology
     of the space (Δ^n)^k, which is the card's citation of Theorem 2.27 p. 128 and stays a
     citation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-17
+  note: >-
+    The certificate is published on lean-categories main, where the Lean declarations live, and
+    the card links it there:
+    <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/DeltaSimplexChains.lean>.
+    That file proves the card's own Δ-complex chain model and its boxed claim: `finrank_chains`
+    (rank C_i = C(n+1,i+1)); `aug_comp_boundary`, `boundary_comp_boundary` (the augmented complex
+    is a complex); the cone contraction `homotopy_succ`, `homotopy_zero`, `aug_h_minus` with
+    `exact_zero`, `exact_succ`, `cycles_aug_eq_boundaries` (the augmented complex is exact); the
+    rank induction `finrank_boundaries`, `finrank_cycles_aug` (rank Z_i = rank B_i = C(n,i+1));
+    and the skeleton section `skCycles_eq`, `skBoundaries_eq`, `sk_cycles_aug_eq_sk_boundaries`,
+    `subsingleton_sk_homology` (H̃_i((Δ^n)^k) = 0 for i < k) and `sk_homology_top_basis`
+    (H̃_k((Δ^n)^k) free of rank C(n,k+1)). At that commit the declarations carry exactly those
+    statements, and no `sorry` occurs in the file. The same homological statements in Mathlib's
+    alternating-face-map model are `LeanCategories/Homological/SimplexChains.lean`
+    (`isZero_homology`, `homologyZeroIso`, and `isZero_normalizedHomology` in the normalized
+    Moore model), `LeanCategories/Homological/ChainLevelSteps.lean` (`choose_rank_step`,
+    `ker_ne_top_of_surjective_to_int`, `skChains_exact`) and
+    `LeanCategories/Homological/SkeletonHomology.lean` (`isZero_skHomology`), at the same commit,
+    whose four modules elaborate at the Mathlib master head
+    `6d97e8ad9c32c778e7000ffda543a29488155467`, the pin that commit moves, with exit 0, and
+    `#print axioms` on `finrank_chains`, `boundary_comp_boundary`, `exact_succ`,
+    `finrank_boundaries`, `subsingleton_sk_homology`, `sk_homology_top_basis`, `isZero_skHomology`
+    and `isZero_homology` prints propext, Classical.choice and Quot.sound, with `choose_rank_step`
+    printing propext. Not covered, and not claimed: nothing was re-elaborated for this event, and
+    the passage from the chain model to the homology of the space (Δ^n)^k stays the card's
+    citation of Theorem 2.27 p. 128. The 2026-11-11 event above links
+    `proofs/cards/DeltaSimplexChains.lean` at `16c09abaa4`, where the file was before
+    lean-categories#141 moved this repository's Lean declarations out of `proofs/`; it is kept as
+    the record of that commit, not as the certificate's location.
 ---
 
 ::: {.problem}
