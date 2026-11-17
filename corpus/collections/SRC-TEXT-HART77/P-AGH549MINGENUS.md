@@ -81,6 +81,50 @@ audit:
     corrects the earlier description of Egbert's V.4.9, which is a draft and
     not a proof. Not checked here: certification, and the characteristic p
     question recorded in the source-checked event above.
+- event: source-checked
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Checked the hypotheses of every statement now used for existence, in the
+    text versions. Hartshorne: Proposition V.4.1 and Corollary V.4.2(a), that
+    the conics through at most four points, no three collinear, have no
+    unassigned base points and dimension 5-r; Exercise V.4.1, that X_2 is a
+    nonsingular quadric with one point blown up; the use in Lemma 4.12 of the
+    very-ampleness of a very ample class plus base-point-free classes;
+    Corollary III.7.9 with its proof from the lemma of Enriques-Severi-Zariski
+    III.7.8, both without a hypothesis on the characteristic and over an
+    algebraically closed field; Remark III.7.9.1; Theorem V.1.10; and
+    II.8.18, whose characteristic-zero hypothesis is exactly what Bourbaki's
+    Theorem 5.1 replaces. Bourbaki 592 Section 5 whole: the definition of
+    almost very ample as the condition that the locus where the differential
+    has rank at most i have codimension at least i, the remark that a very
+    ample system is almost very ample, and Theorem 5.1, which holds in every
+    characteristic and produces reduced nonsingular but not necessarily
+    irreducible divisors. Corrected the attainment tuple of the odd minimum:
+    the minimum needs 8(F_d(2)-g)=16 and is attained by (2,2,2,2,0), while
+    (2,2,0,0,0) gives 8 and so attains (d-3)/2. Not checked: no folio for
+    Section 5 of the expose, whose printed pages 301-303 were not consulted,
+    so the remark about it carries no page; and no computation in
+    characteristic p was run.
+- event: solution-written
+  by: claude
+  date: 2026-11-17
+  note: >-
+    Replaced the existence half of the attainment with an argument that needs
+    no separability: the new step equality-members-exist, with substeps
+    quadric-model, almost-very-ample, members-connected and members-smooth,
+    shows that each equality class contains a nonsingular irreducible curve in
+    every characteristic and that the curve avoids the four contraction
+    points. It descends the even class to the quadric as the very ample
+    O_Y(2,s-2), verifies that the morphism of the odd system is immersive by a
+    jet computation, obtains ampleness of the odd class from Nakai's criterion
+    V.1.10 and connectedness of both families from Corollary III.7.9, and gets
+    smoothness from Bourbaki's Theorem 5.1. The two realization steps now cite
+    it and keep the book's characteristic-zero route through V.4.8 as an
+    alternative; the lower bounds, the contraction steps and every earlier
+    event are unchanged. The hypotheses verified in the steps are the card's
+    own, the theorems are the sources'; the identification of X_2 with a
+    blowup of a quadric is Exercise V.4.1 and is flagged as an exercise.
 ---
 
 ::: {.problem}
@@ -797,33 +841,6 @@ $$
 
 :::
 
-::: {.pf-step #even-equality-realized}
-A general member of $\linearsystem{M_{\mathrm{ev}}}$ is nonsingular and
-irreducible and can be chosen to avoid the four contraction points of
-step [](#contraction-pullback-preserves-invariants){.pf-ref}. Its pullback to $S$ attains the even minimum.
-
-::: pf-proof
-Write
-$$M_{\mathrm{ev}}=2(h-e_1)+(s-2)(h-e_2):$$
-a nonnegative integral combination of $h-e_1$ and $h-e_2$, and each of
-these is the class of a base-point-free pencil on $X_2$, namely the strict
-transforms of the lines through $P_1$ and through $P_2$. The lemma of V.4.8
-is proved for $X_2$ precisely by exhibiting classes in this form, so a
-general member of $\linearsystem{M_{\mathrm{ev}}}$ is nonsingular and
-irreducible, and the system is globally generated. Requiring a member to pass
-through a prescribed point is then a proper hyperplane condition, so a
-general smooth member avoids the four contraction points.
-
-
-Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls it back to a nonsingular irreducible curve on the cubic
-surface of degree $d$ and genus
-$$
-\frac{d-6}{2}.
-$$
-:::
-
-:::
-
 ::: {.pf-step #odd-equality-class}
 Let $d=2s+3$ be odd with $d\ge13$, so $s\ge5$. On $X_2$ set
 $$
@@ -876,26 +893,183 @@ $$
 
 :::
 
+::: {.pf-step #equality-members-exist}
+Each of the two classes $M_{\mathrm{ev}}$ and $M_{\mathrm{odd}}$ contains a
+nonsingular irreducible curve, in every characteristic, and such a curve can
+be chosen to avoid any prescribed finite set of points of $X_2$, in particular
+the four points that step [](#contraction-pullback-preserves-invariants){.pf-ref} contracts to.
+
+::: pf-proof
+Both classes are base-point-free, so the members through a prescribed point
+form a hyperplane of the linear system, and both systems have dimension at
+least two, since $M_{\mathrm{ev}}^2=4(s-2)>0$ and $M_{\mathrm{odd}}^2=4s-1>0$;
+finitely many nonempty open conditions in a projective space have nonempty
+intersection, so it is enough to find one nonsingular irreducible member of
+each system and then to move it off the prescribed points.
+
+The two classes are treated by different routes because only
+$M_{\mathrm{ev}}$ descends along a blowdown of $X_2$. In a presentation
+$X_2=\operatorname{Bl}_{P_1,P_2}\PP^2$ a class
+$D=c h+b_1(h-e_1)+b_2(h-e_2)$ has degree $d=3c+2(b_1+b_2)$, so $d\equiv c$
+modulo $2$; a class of odd degree therefore meets the third line
+$h-e_1-e_2$ positively, whereas $M_{\mathrm{ev}}$ meets it in $c=0$.
+
+::: {.pf-step #quadric-model}
+The system $\linearsystem{2h-e_1-e_2}$ is base-point-free of dimension three
+and defines a morphism $\psi:X_2\to Y$ onto a nonsingular quadric surface
+$Y\subseteq\PP^3$ that exhibits $X_2$ as $Y$ with one point blown up. Its
+exceptional curve is $F_{12}=h-e_1-e_2$, the two rulings of $Y$ pull back to
+$h-e_1$ and $h-e_2$, and
+$$M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2).$$
+
+::: pf-proof
+Proposition 4.1 gives that the conics through $P_1$ and $P_2$ have no
+unassigned base points, and Corollary 4.2(a) gives
+$\dim\linearsystem{2h-e_1-e_2}=3$, so $\psi$ is a morphism to $\PP^3$; by
+Exercise V.4.1 its image is a nonsingular quadric surface and $X_2$ is that
+quadric with one point blown up. Exactly one curve is contracted, and
+$$(2h-e_1-e_2)\cdot F_{12}=2-1-1=0,$$
+while $(2h-e_1-e_2)\cdot(h-e_i)=1$ for $i=1,2$, so that curve is $F_{12}$.
+The classes $h-e_1$ and $h-e_2$ have square zero, meet each other in one
+point, are not contracted, and their sum is
+$$(h-e_1)+(h-e_2)=2h-e_1-e_2=\psi^*H_Y,$$
+so they are the pullbacks of the two rulings of $Y$; hence
+$$M_{\mathrm{ev}}=2(h-e_1)+(s-2)(h-e_2)=\psi^*\OO_Y(2,s-2).$$
+:::
+
+:::
+
+::: {.pf-step #almost-very-ample}
+The class $\OO_Y(2,s-2)$ is very ample, and the morphism defined by
+$\linearsystem{M_{\mathrm{odd}}}$ is immersive, its differential being
+injective at every point of $X_2$. Both systems are therefore almost very
+ample, in the sense that the locus where the differential of the associated
+morphism has rank at most $i$ has codimension at least $i$.
+
+::: pf-proof
+For the first, write
+$$\OO_Y(2,s-2)=\OO_Y(1,1)+\OO_Y(1,0)+(s-3)\OO_Y(0,1)$$
+with $s-3\ge0$: the hyperplane class $\OO_Y(1,1)$ of the embedding of $Y$ in
+$\PP^3$ is very ample, the two ruling classes are base-point-free, and a sum
+of a very ample class and base-point-free classes is very ample, the form in
+which the proof of V.4.12 uses this.
+
+For the second, write
+$$M_{\mathrm{odd}}=(h-e_1)+(s-1)(h-e_2)+h=A+B,$$
+where $A=\psi^*\OO_Y(1,s-1)$ and $B=h=\pi^*\OO_{\PP^2}(1)$ for the blowdown
+$\pi:X_2\to\PP^2$. Both are base-point-free, and the product of a section of
+$A$ and a section of $B$ is a section of $M_{\mathrm{odd}}$ whose $1$-jet at a
+point $x$ is $a(x)\,db_x+b(x)\,da_x$. Fixing $a$ with $a(x)\ne0$ and letting
+$b$ vary, the span of these jets contains every $1$-jet of $B$ at $x$, because
+$a(x)$ is invertible, and symmetrically it contains every $1$-jet of $A$ at
+$x$; so the $1$-jets of $H^0(M_{\mathrm{odd}})$ contain those of $A$ and of
+$B$.
+
+Now $A$ is the pullback of a very ample class along a morphism that is an
+isomorphism away from $F_{12}$, so its jets span the cotangent space at every
+$x\notin F_{12}$, and at $x\in F_{12}$ they span the line annihilating
+$T_xF_{12}$; $B$ is the pullback of $\OO_{\PP^2}(1)$ along the blowdown
+$\pi$, so its jets span the cotangent space at every $x\notin e_1\cup e_2$,
+and at $x\in e_i$ they span the line annihilating $T_xe_i$. Hence off
+$F_{12}\cup e_1\cup e_2$ either span is everything, on
+$F_{12}\setminus(e_1\cup e_2)$ and on $e_i\setminus F_{12}$ one of the two
+is, and at a point of $F_{12}\cap e_i$ the two lines are distinct, because
+$F_{12}\cdot e_i=1$ means that the two curves meet transversally there. The
+two spans therefore generate the cotangent space at every point, the
+differential is injective everywhere, and the system is almost very ample.
+:::
+
+:::
+
+::: {.pf-step #members-connected}
+The support of every member of $\linearsystem{\OO_Y(2,s-2)}$ and of every
+member of $\linearsystem{M_{\mathrm{odd}}}$ is connected.
+
+::: pf-proof
+$\OO_Y(2,s-2)$ is ample, being very ample. For $M_{\mathrm{odd}}$ one has
+$M_{\mathrm{odd}}\cdot F_{12}=1$, and for an irreducible curve $C\ne F_{12}$
+one has $A\cdot C=\OO_Y(1,s-1)\cdot\psi_*C>0$, because $\psi_*C$ is a nonzero
+effective cycle and $\OO_Y(1,s-1)$ is ample, while $h\cdot C\ge0$; moreover
+$$M_{\mathrm{odd}}^2=(s+1)^2-1-(s-1)^2=4s-1>0.$$
+Nakai's criterion (V.1.10) therefore makes $M_{\mathrm{odd}}$ ample. Corollary
+III.7.9 states that a closed subset of codimension one of an integral normal
+projective surface is connected when it is the support of an effective ample
+divisor, and the support of a member of an ample class is such a subset.
+:::
+
+:::
+
+::: {.pf-step #members-smooth}
+Each of the two systems has a member that is reduced and nonsingular, avoids
+any prescribed finite set of points, and, by step [](#members-connected){.pf-ref}, is irreducible.
+
+::: pf-proof
+Theorem 5.1 of Bourbaki's exposé 592 states that an almost very ample linear
+system on a smooth projective variety has a nonempty Zariski open subset all
+of whose members are reduced nonsingular divisors; it imposes no hypothesis on
+the characteristic, which is what replaces the characteristic-zero Bertini
+theorem II.8.18 here. A regular local ring is an integral domain, so at a
+point of a reduced scheme all of whose local rings are regular exactly one
+irreducible component passes, the components are pairwise disjoint, and a
+connected scheme with pairwise disjoint components is irreducible, which is
+the argument of Remark III.7.9.1.
+
+Membership of a prescribed point is a hyperplane condition on the linear
+system, so a member can be chosen inside the open set of that theorem and
+outside finitely many hyperplanes. For $M_{\mathrm{ev}}$ the member is chosen
+on $Y$, avoiding the point over which $F_{12}$ lies and the images of the
+prescribed points that lie outside $F_{12}$; its pullback is a member of
+$\linearsystem{M_{\mathrm{ev}}}$ by step [](#quadric-model){.pf-ref} and avoids all of them, since the
+whole of $F_{12}$ lies over that one point.
+:::
+
+:::
+:::
+
+:::
+
+::: {.pf-step #even-equality-realized}
+A member of $\linearsystem{M_{\mathrm{ev}}}$ that is nonsingular and
+irreducible can be chosen to avoid the four contraction points of
+step [](#contraction-pullback-preserves-invariants){.pf-ref}, and its pullback to $S$ attains the even minimum.
+
+::: pf-proof
+Step [](#equality-members-exist){.pf-ref} supplies such a member in every characteristic, through the
+descent $M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2)$ of step [](#quadric-model){.pf-ref}, the very ampleness of that
+class in step [](#almost-very-ample){.pf-ref}, the connectedness of its members in step [](#members-connected){.pf-ref} and
+the smoothness theorem of step [](#members-smooth){.pf-ref}. In characteristic zero the same conclusion follows
+from the lemma of V.4.8, which is proved for $X_2$ by exhibiting classes of
+this form. Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls the curve back to a nonsingular
+irreducible curve on the cubic surface, of degree $d$ and genus
+$$\frac{d-6}{2},$$
+the degree and genus of the class by step [](#even-equality-class){.pf-ref}.
+:::
+
+:::
+
 ::: {.pf-step #odd-equality-realized}
-A general member of $\linearsystem{M_{\mathrm{odd}}}$ is nonsingular and
-irreducible and can be chosen away from the four contraction points. Its
+A member of $\linearsystem{M_{\mathrm{odd}}}$ that is nonsingular and
+irreducible can be chosen away from the four contraction points, and its
 pullback to $S$ attains the odd minimum.
 
 ::: pf-proof
-Again
 $$M_{\mathrm{odd}}=h+(h-e_1)+(s-1)(h-e_2)$$
-is a nonnegative integral combination of $h,h-e_1,h-e_2$, the three
-base-point-free classes for which the $X_2$ lemma of V.4.8 is proved, and its
-square is positive by step [](#odd-equality-class){.pf-ref}. V.4.8 therefore gives a general
-nonsingular irreducible member and global generation. Choose such a member
-outside the four hyperplanes corresponding to the contraction points, and
-apply step [](#contraction-pullback-preserves-invariants){.pf-ref}.
+is a nonnegative integral combination of $h,h-e_1,h-e_2$, and its square is
+positive by step [](#odd-equality-class){.pf-ref}. Step [](#equality-members-exist){.pf-ref} supplies a
+nonsingular irreducible member in every characteristic, through the
+immersiveness of the system in step [](#almost-very-ample){.pf-ref}, the ampleness of $M_{\mathrm{odd}}$ in
+step [](#members-connected){.pf-ref} and the smoothness theorem of step [](#members-smooth){.pf-ref}; in
+characteristic zero the lemma of V.4.8 gives one as well. Step
+[](#contraction-pullback-preserves-invariants){.pf-ref} then pulls the curve back to a nonsingular irreducible curve
+on the cubic surface, of degree $d$ and genus
+$$\frac{d-5}{2},$$
+the degree and genus of the class by step [](#odd-equality-class){.pf-ref}.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#case-c-applies){.pf-ref}, [](#contraction-preserves-invariants){.pf-ref}, [](#repeat-contraction-until-x2-or-positive){.pf-ref}, [](#d-squared-bound-r-geq-3){.pf-ref}, [](#genus-bound-r-geq-3){.pf-ref}, [](#x2-degree-and-square-formulas){.pf-ref}, [](#x2-genus-formula){.pf-ref}, [](#even-d-even-c){.pf-ref}, [](#even-c-zero-genus-formula){.pf-ref}, [](#even-c-zero-bound){.pf-ref}, [](#even-c-geq-two-bound){.pf-ref}, [](#even-d-bound-established){.pf-ref}, [](#odd-d-odd-c){.pf-ref}, [](#odd-c-one-bound){.pf-ref}, [](#odd-c-geq-three-difference){.pf-ref}, [](#odd-c-geq-three-bound){.pf-ref} and [](#odd-d-bound-established){.pf-ref} prove the lower bounds. Steps [](#contraction-pullback-preserves-invariants){.pf-ref}, [](#even-equality-class){.pf-ref} and [](#even-equality-realized){.pf-ref} construct an
+Steps [](#case-c-applies){.pf-ref}, [](#contraction-preserves-invariants){.pf-ref}, [](#repeat-contraction-until-x2-or-positive){.pf-ref}, [](#d-squared-bound-r-geq-3){.pf-ref}, [](#genus-bound-r-geq-3){.pf-ref}, [](#x2-degree-and-square-formulas){.pf-ref}, [](#x2-genus-formula){.pf-ref}, [](#even-d-even-c){.pf-ref}, [](#even-c-zero-genus-formula){.pf-ref}, [](#even-c-zero-bound){.pf-ref}, [](#even-c-geq-two-bound){.pf-ref}, [](#even-d-bound-established){.pf-ref}, [](#odd-d-odd-c){.pf-ref}, [](#odd-c-one-bound){.pf-ref}, [](#odd-c-geq-three-difference){.pf-ref}, [](#odd-c-geq-three-bound){.pf-ref} and [](#odd-d-bound-established){.pf-ref} prove the lower bounds. Steps [](#contraction-pullback-preserves-invariants){.pf-ref}, [](#equality-members-exist){.pf-ref}, [](#even-equality-class){.pf-ref} and [](#even-equality-realized){.pf-ref} construct an
 equality curve for every even $d\ge8$, and steps [](#odd-equality-class){.pf-ref} and [](#odd-equality-realized){.pf-ref} construct one
 for every odd $d\ge13$.
 :::
@@ -906,9 +1080,9 @@ for every odd $d\ge13$.
 ::: {.remark title="Published solution"}
 The published proof is L. Gruson and C. Peskine, *Genre des courbes de l'espace projectif. II*, Ann. Sci. École Norm. Sup. (4) **15** (1982), 401--418, read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case.
 
-Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$ as a sum of five squares drawn from $\{0,4\}$, so $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, the least of which Proposition 2.1 attains with $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, the last attained with $(2,2,0,0,0)$. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
+Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$ as a sum of five squares drawn from $\{0,4\}$, so $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
 
-R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]*, Séminaire Bourbaki exposé 592, Astérisque **92--93** (1982), 301--313, text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1. The lower bound above uses no Bertini and so holds in every characteristic; the attainment in characteristic $p$ would rest on that theorem, and the sources read here do not carry it out in this setting. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
+R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après L. Gruson et C. Peskine]*, Séminaire Bourbaki exposé 592, Astérisque **92--93** (1982), 301--313, text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1, which produces reduced nonsingular members of an almost very ample system and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; the exceptional curve and the two rulings are derived from it on the card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
 
 The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, applies Ex. V.4.8 on $X_r$ for $r\ge3$ and on $X_2$, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
 
