@@ -8,12 +8,32 @@ The source was read in the text version
 `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`: the definitions
 d(L) = -(L, w_S) and r(L) = d(L) - max{(L, E) : (E, E) = (E, w_S) = -1}, the genus
 formula g = 1 + [(r - 1)d - 3r^2/4 - sum_{i=2}^{6} (r/2 - m_i)^2]/2, the definition
-F_d(r) = 1 + [(r - 1)d - 3r^2/4]/2, Proposition 2.1 on printed p. 407 and Theorem 2.5 on
-printed p. 409.  At r = 2, F_d(2) = (d - 1)/2, and the two theorems say that for a smooth
-cubic surface S and an integer g with g <= F_d(2), the pair (d, g) is realised by a
-smooth connected curve of degree d on S -- with the three printed exceptions -- exactly
-when 8(F_d(2) - g) is a sum of squares of five integers of one parity and of absolute
-value at most 2.
+F_d(r) = 1 + [(r - 1)d - 3r^2/4]/2, Proposition 2.1 on printed p. 407 and Theoreme 2.5 on
+printed p. 409.  Both statements are quoted here with their hypotheses, because the
+arithmetic checked below is only one of their hypotheses and not either statement:
+
+  Proposition 2.1 (printed p. 407).  For integers d, r with 0 <= r <= 2d/3, and for an
+  integer g with F_d(r-1) < g <= F_d(r) such that 8(F_d(r) - g) is a sum of squares of
+  five integers, of one parity, of absolute value at most r, there is a smooth connected
+  curve C on S of degree d, genus g and r(O_S(C)) = r.  The five integers are read as
+  nonnegative, as the card's remark records: the proof runs with 0 <= alpha_i <= r/2 in
+  the even case, where the five entries are 2 alpha_i and may vanish.
+
+  Theoreme 2.5 (printed p. 409).  For positive integers d, g with g <= 1 + d(d-3)/6, with
+  r the least positive integer such that g <= F_d(r), and apart from the three printed
+  triples (d, g, r) = (9, 1, 2), (23, 22, 4), (27, 28, 4), there is a smooth connected
+  curve of degree d and genus g on a smooth cubic surface if and only if 8(F_d(r) - g) is
+  such a sum.
+
+At r = 2 the arithmetic these two statements contain is this: F_d(2) = (d - 1)/2, and the
+criterion's squared sum becomes 8(F_d(2) - g).  This file certifies that arithmetic, at
+r = 2, for the six assignments the card displays, in QQ[m] with d = 2m and d = 2m + 1, and
+nothing else.  It is not a proof of either statement and no line of it states one: the
+existence conclusion of 2.1 and the biconditional of 2.5 carry the hypotheses above -- the
+range 0 <= r <= 2d/3, the two-sided window F_d(r-1) < g <= F_d(r), the bound
+g <= 1 + d(d-3)/6, the choice of r as the least such integer, the three printed exceptions
+-- and they conclude that a curve on a cubic surface exists, which no polynomial identity
+supplies.
 
 WHAT THIS FILE CERTIFIES, AND WHAT IT DOES NOT
 ----------------------------------------------
@@ -22,19 +42,24 @@ d = 2m + 1 (odd degrees), so the identities hold for every degree of each family
 degree is sampled:
 
   (C1) F_d(r) at r = 2 is the polynomial (d - 1)/2 in QQ[m], in both families;
-  (C2) for each of the six displayed tuples, the exact integer sum of squares, its five
-       entries all of one parity (even) with absolute value at most r = 2, and the
-       polynomial identity sum(x_i^2) = 8(F_d(2) - g) with the genus g the card states;
-  (C3) the three genera of each family are exactly those reachable at r = 2 -- the
-       squared sums are 4j with j in {0,...,5}, g = (d - 1 - j)/2 is an integer only for
-       odd j when d = 2m and only for even j when d = 2m + 1, and the six tuples are the
-       three realised values in each family;
-  (C4) the odd-parity branch of the criterion at r = 2 forces the sum 5, which is not a
-       multiple of 4 while 8(F_d(2) - g) always is, so the even branch alone occurs;
-  (C5) the rejected and the corrected odd minimum tuple are distinguished: (2,2,0,0,0)
-       has squared sum 8 and satisfies the identity only for g = (d - 3)/2, while the
-       printed minimum (d - 5)/2 requires 8(F_d(2) - g) = 16 and is attained by the
-       corrected tuple (2,2,2,2,0).
+  (C2) for each of the six listed tuples, its exact integer sum of squares, that its five
+       entries are even and of absolute value at most r = 2, and the polynomial identity
+       sum(x_i^2) = 8(F_d(2) - g) with the genus listed beside it;
+  (C3) the arithmetic behind the list, and no classification of tuples: with
+       j = sum(x_i^2)/4, the polynomial (d - 1 - j)/2 lies in ZZ[m] exactly for odd j
+       when d = 2m and exactly for even j when d = 2m + 1, j ranging over 0,...,5, and the
+       six rows' sums are 4j for exactly those j;
+  (C4) two arithmetic facts about the odd branch at r = 2, and nothing about which
+       odd tuples occur: the representative tuple (1,1,1,1,1) has squared sum 5, and
+       8F_d(2) = 4(d - 1) is divisible by 4 in ZZ[m] while 5 is not;
+  (C5) the rejected and the corrected odd tuple are distinguished arithmetically:
+       (2,2,0,0,0) has squared sum 8, which equals 8(F_d(2) - g) at g = (d - 3)/2 and
+       not at g = (d - 5)/2, while 8(F_d(2) - g) at the printed minimum (d - 5)/2 is 16,
+       the squared sum of (2,2,2,2,0).
+
+Every check this file runs is one of those predicates, over the six rows the script lists.
+None of them is a statement about curves, surfaces, or either theorem as a whole, and none
+of them asserts that some tuple is the only one of its kind.
 
 NOT certified here, and not touched by any computation in this file: the geometric
 content of Proposition 2.1 and of Theorem 2.5 -- that a smooth connected curve of the
@@ -44,8 +69,9 @@ minimum-genus bound of Exercise V.4.9 and the closedness of its range.  Those ar
 articles' theorems, cited and argued on the card; this file is arithmetic only, and the
 row it carries in `proofs/README.md` says so.
 
-Run: the recorded run, its command, interpreter, source revision, wall time and verbatim
-output are in `proofs/cards/V49FiveSquaresTuples.out`, which pins this script's sha256.
+Run: the recorded runs, their command, interpreter, source revision, wall times and
+verbatim output are in `proofs/cards/V49FiveSquaresTuples.out`, which records each run
+set's script sha256; the last run set pins the sha256 of this file.
 Entry point is the shared research image's own, through its launcher:
 
     proot -R $HOME/sage-image/rootfs -b /proc -b /dev -b $REPO:/work -w / \
@@ -89,7 +115,8 @@ def integral(p):
 EVEN_D = 2 * m
 ODD_D = 2 * m + 1
 
-# The six rows the card displays: (tuple, genus), with d = 2m and d = 2m + 1.
+# The six rows of the card, transcribed here as data: (tuple, genus), with d = 2m and
+# d = 2m + 1.  Nothing in this script reads the card.
 EVEN_ROWS = [
     ((2, 0, 0, 0, 0), (EVEN_D - 2) / 2),
     ((2, 2, 2, 0, 0), (EVEN_D - 4) / 2),
@@ -129,30 +156,32 @@ for family, d, rows in (("even", EVEN_D, EVEN_ROWS), ("odd", ODD_D, ODD_ROWS)):
         check(f"C2  {family} {str(tuple_):>14}  g integral", integral(g),
               f"g = {g} in ZZ[m] = {integral(g)}")
 
-    # (C3) the j-classification: sum = 4j, g = (d - 1 - j)/2 integral exactly for the
-    # j of one parity, and the three rows are those three j.
-    realised = sorted(sumsq(t) for t, _ in rows)
+    # (C3) the arithmetic behind the list: the rows' sums are 4j, and (d - 1 - j)/2 is in
+    # ZZ[m] exactly for the j of one parity.  This classifies the integers, not the tuples.
+    row_sums = sorted(sumsq(t) for t, _ in rows)
     expected_j = [j for j in range(6) if integral((d - 1 - j) / 2)]
-    check(f"C3  {family}: g = (d-1-j)/2 integral exactly for j {expected_j}",
-          realised == [4 * j for j in expected_j],
-          f"realised sums {realised} = 4 * {[s // 4 for s in realised]}")
+    check(f"C3  {family}: (d-1-j)/2 in ZZ[m] exactly for j in {expected_j}, and the six "
+          f"rows' sums are 4j there",
+          row_sums == [4 * j for j in expected_j],
+          f"integral j set {expected_j}; rows' sums {row_sums} = "
+          f"4 * {[s // 4 for s in row_sums]}")
     for tuple_, g in rows:
         j = sumsq(tuple_) // 4
-        check(f"C3  {family} {str(tuple_):>14}  g = (d-1-j)/2 with j = {j}",
+        check(f"C3  {family} {str(tuple_):>14}  g equals (d-1-j)/2 at j = {j}",
               g == (d - 1 - j) / 2, f"g = {g}")
 
-# (C4) the odd-parity branch at r = 2 gives the sum 5, which is not a multiple of 4.
+# (C4) two arithmetic facts about the odd branch at r = 2: the representative odd tuple and
+# the divisibility.  What odd tuples exist is not enumerated here.
 odd_branch_sum = sumsq((1, 1, 1, 1, 1))
-check("C4  odd parity at r = 2 forces sum = 5 (five entries +-1)",
+check("C4  the odd representative (1,1,1,1,1) has sum 5 and |x_i| <= 2",
       odd_branch_sum == 5 and all(abs(ZZ(x)) <= R_ODD for x in (1, 1, 1, 1, 1)),
       f"sum = {odd_branch_sum}")
 for name, d in (("even", EVEN_D), ("odd", ODD_D)):
     eight_F = 8 * F(d, R_ODD)  # = 4(d - 1)
-    check(f"C4  8F_d(2) = 4(d-1) and 8F_d(2) - 8g is a multiple of 4 for every g",
+    check(f"C4  8F_d(2) = 4(d-1) and 8F_d(2)/4 in ZZ[m], {name} d",
           eight_F == 4 * (d - 1) and integral(eight_F / 4),
           f"8F_d(2) = {eight_F}")
-check("C4  5 is not a multiple of 4, so the odd branch yields no (d, g)",
-      ZZ(5) % 4 != 0, "5 mod 4 = 1")
+check("C4  5 is not a multiple of 4", ZZ(5) % 4 != 0, "5 mod 4 = 1")
 
 # (C5) the rejected tuple against the corrected one, both over QQ[m].
 print("\n-- the rejected and the corrected odd minimum tuple --")
@@ -164,28 +193,29 @@ check("C5  rejected (2,2,0,0,0): sum = 8", sumsq(REJECTED) == 8, f"sum = {sumsq(
 check("C5  corrected (2,2,2,2,0): sum = 16", sumsq(CORRECTED) == 16,
       f"sum = {sumsq(CORRECTED)}")
 check("C5  the two sums differ: 8 != 16", sumsq(REJECTED) != sumsq(CORRECTED), "")
-check("C5  8 = 8(F_d(2) - g) holds for the rejected tuple exactly at g = (d-3)/2",
+check("C5  the rejected tuple's sum 8 equals 8(F_d(2)-g) at g=(d-3)/2 and not at "
+      "g=(d-5)/2",
       R(sumsq(REJECTED)) == 8 * (F(ODD_D, R_ODD) - OLD_GENUS)
       and R(sumsq(REJECTED)) != 8 * (F(ODD_D, R_ODD) - MINIMUM_GENUS),
       f"g = {OLD_GENUS} gives {8 * (F(ODD_D, R_ODD) - OLD_GENUS)}; "
       f"g = {MINIMUM_GENUS} gives {8 * (F(ODD_D, R_ODD) - MINIMUM_GENUS)}")
-check("C5  16 = 8(F_d(2) - g) holds for the corrected tuple at the printed minimum "
-      "g = (d-5)/2",
+check("C5  the corrected tuple's sum 16 equals 8(F_d(2)-g) at g=(d-5)/2",
       R(sumsq(CORRECTED)) == 8 * (F(ODD_D, R_ODD) - MINIMUM_GENUS),
       f"g = {MINIMUM_GENUS}, 8(F_d(2)-g) = {8 * (F(ODD_D, R_ODD) - MINIMUM_GENUS)}")
-check("C5  the card's two odd tuples below the top one are these, of sums 8 and 16",
+check("C5  the script's odd rows (2,2,0,0,0) and (2,2,2,2,0) have sums 8 and 16",
       sumsq(ODD_ROWS[1][0]) == 8 and sumsq(ODD_ROWS[2][0]) == 16,
       f"{ODD_ROWS[1][0]} -> {sumsq(ODD_ROWS[1][0])}, "
       f"{ODD_ROWS[2][0]} -> {sumsq(ODD_ROWS[2][0])}")
 
-# The six rows are distinct, three per family, and ordered by decreasing genus.
+# The six rows are distinct, three per family; the script's own list, no card is read.
 all_tuples = [t for t, _ in EVEN_ROWS] + [t for t, _ in ODD_ROWS]
-check("the six tuple assignments are distinct", len(set(all_tuples)) == 6,
+check("the six rows are distinct", len(set(all_tuples)) == 6,
       f"{len(set(all_tuples))} distinct")
-check("each family has three rows", len(EVEN_ROWS) == 3 and len(ODD_ROWS) == 3, "")
+check("the script lists three rows per family",
+      len(EVEN_ROWS) == 3 and len(ODD_ROWS) == 3, "")
 
 print()
 if failures:
     print(f"{checks} checks, {len(failures)} FAILED: {failures}")
     raise SystemExit(1)
-print(f"ALL {checks} CHECKS PASSED")
+print(f"ALL {checks} CHECKS PASSED (the arithmetic predicates above only: r = 2 in QQ[m])")
