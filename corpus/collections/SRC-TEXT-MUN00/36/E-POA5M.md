@@ -39,49 +39,62 @@ Show that $X$ can be imbedded in $\RR^N$ for some positive integer $N$.
 :::
 
 ::: {.solution}
-If $X=\varnothing$, its unique map into $\RR$ is an embedding. Assume $X\neq\varnothing$ below.
 
-For each $x\in X$, choose a neighborhood $U_x$ and an embedding
-$$
-e_x:U_x\hookrightarrow\RR^{k_x}.
-$$
-Since compact Hausdorff spaces are normal, shrink twice: choose open sets
-$$
-x\in V_x\subset\overline{V_x}\subset W_x\subset\overline{W_x}\subset U_x.
-$$
-By compactness choose finitely many $V_1,\dots,V_m$ covering $X$, with corresponding $W_i,U_i,e_i:U_i\to\RR^{k_i}$.
+No retained solution set covers this exercise: the card's own piecing argument is completed, with the shrinking, the Urysohn functions and the injectivity of the assembled map as separate steps.
 
-By Urysohn's lemma choose continuous functions
-$$
-\phi_i:X\to[0,1]
-$$
-such that $\phi_i=1$ on $\overline{V_i}$ and $\phi_i=0$ on $X\setminus W_i$. Since $\overline{W_i}$ is compact and lies in $U_i$, the coordinate functions of $e_i$ are bounded on $\overline{W_i}$. Hence the map
-$$
-F_i:X\to\RR^{k_i},
-\qquad
-F_i(x)=
-\begin{cases}
-\phi_i(x)e_i(x),&x\in U_i,\\
-0,&x\notin U_i,
-\end{cases}
-$$
-is continuous: near the boundary of $U_i$, $\phi_i$ is already zero.
+Let $X$ be compact Hausdorff, and for each $x$ let $U_{x}\ni x$ be a neighbourhood admitting an imbedding $e_{x}:U_{x}\to\RR^{k_{x}}$.
 
-Define
-$$
-F:X\to\RR^N,
-\qquad
-F(x)=\bigl(\phi_1(x),F_1(x),\dots,\phi_m(x),F_m(x)\bigr),
-$$
-where
-$$
-N=\sum_{i=1}^m(k_i+1).
-$$
-We show $F$ is injective. If $x\ne y$, choose $i$ with $x\in V_i$, so $\phi_i(x)=1$. If $\phi_i(y)\ne1$, the scalar coordinate $\phi_i$ separates them. If $\phi_i(y)=1$, then $y\in W_i\subset U_i$, and
-$$
-F_i(x)=e_i(x),\qquad F_i(y)=e_i(y),
-$$
-which are distinct because $e_i$ is injective.
+::: pf
 
-Thus $F$ is a continuous injection from compact $X$ into Hausdorff $\RR^N$. It is therefore a homeomorphism onto its image. Hence $X$ embeds in some finite-dimensional Euclidean space.
+::: {.pf-step #shrinking}
+There are finitely many points $x_{1},\dots,x_{m}$ and open sets $V_{i}\subseteq\overline{V_{i}}\subseteq W_{i}\subseteq\overline{W_{i}}\subseteq U_{i}$ with $\bigcup_{i}V_{i}=X$.
+
+::: pf-proof
+$X$ is compact Hausdorff, hence normal (Theorem 32.3, printed p. 202). Given $x\in U_{x}$ with $U_{x}$ open, normality gives an open $W_{x}$ with $x\in W_{x}\subseteq\overline{W_{x}}\subseteq U_{x}$; applying normality again to $x$ and $X\setminus W_{x}$ gives open $V_{x}$ with $x\in V_{x}\subseteq\overline{V_{x}}\subseteq W_{x}$. The sets $V_{x}$ cover $X$, so finitely many $V_{1},\dots,V_{m}$ do, and we relabel the corresponding $W,U,e$.
+:::
+
+:::
+
+::: {.pf-step #urysohn}
+There are continuous $\phi_{i}:X\to[0,1]$ with $\phi_{i}=1$ on $\overline{V_{i}}$ and $\phi_{i}=0$ off $W_{i}$.
+
+::: pf-proof
+$\overline{V_{i}}$ and $X\setminus W_{i}$ are disjoint closed sets (the second contains the complement of $\overline{W_{i}}\supseteq X\setminus W_{i}$'s interior... precisely, $\overline{V_{i}}\subseteq W_{i}$ implies $\overline{V_{i}}\cap(X\setminus W_{i})=\varnothing$), so Urysohn's lemma in a normal space gives such a function.
+:::
+
+:::
+
+::: {.pf-step #assemble}
+For each $i$ the map $\psi_{i}:X\to\RR^{k_{i}}$, $\psi_{i}(z)=\phi_{i}(z)\,e_{i}(z)$ on $W_{i}$ and $0$ off $W_{i}$, is well defined and continuous.
+
+::: pf-proof
+On $W_{i}$ both factors are continuous ($\phi_{i}$ on $X$, $e_{i}$ on $U_{i}\supseteq W_{i}$); off $W_{i}$ we have $\phi_{i}=0$, so the two formulas agree on the overlap $\partial W_{i}$-side, and continuity follows by the pasting lemma over the closed sets $\overline{W_{i}}$ and $X\setminus W_{i}$, whose union is $X$.
+:::
+
+:::
+
+::: {.pf-step #injective}
+$\Psi:X\to\RR^{m}\times\RR^{k_{1}}\times\cdots\times\RR^{k_{m}}$, $\Psi(z)=\big(\phi_{1}(z),\dots,\phi_{m}(z),\psi_{1}(z),\dots,\psi_{m}(z)\big)$, is injective.
+
+::: pf-proof
+Suppose $\Psi(y)=\Psi(z)$ with $y\ne z$. Since the $V_{i}$ cover $X$, some $i$ has $y\in V_{i}$, so $\phi_{i}(y)=1$; equal images give $\phi_{i}(z)=1$, hence $z\in W_{i}$ because $\phi_{i}$ vanishes off $W_{i}$. Then $\psi_{i}(y)=1\cdot e_{i}(y)$ and $\psi_{i}(z)=1\cdot e_{i}(z)$, and $\psi_{i}(y)=\psi_{i}(z)$ gives $e_{i}(y)=e_{i}(z)$, so $y=z$ by injectivity of $e_{i}$ — a contradiction. Hence $\Psi$ is injective.
+:::
+
+:::
+
+::: {.pf-step #embed}
+$\Psi$ is an imbedding of $X$ into $\RR^{N}$ for $N=m+k_{1}+\cdots+k_{m}$.
+
+::: pf-proof
+$\Psi$ is continuous, and injective by step [](#injective){.pf-ref}; a continuous injection from the compact space $X$ to the Hausdorff space $\RR^{N}$ is an imbedding (Theorem 26.6, printed p. 167).
+:::
+
+:::
+
+::: {.pf-qed}
+If $X=\varnothing$ the statement is trivial; otherwise $\Psi$ imbeds $X$ in $\RR^{N}$ with $N=m+k_{1}+\cdots+k_{m}$ by step [](#embed){.pf-ref}.
+:::
+
+:::
+
 :::
