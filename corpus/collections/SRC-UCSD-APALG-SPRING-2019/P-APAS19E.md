@@ -20,43 +20,42 @@ Justify your answer.
 :::
 
 ::: {.solution}
-No. For infinite groups, equality of characters need not imply that two finite-dimensional complex representations are isomorphic.
 
-Take $d=2$. Since
-$$
-\ell(g)=\log\abs{\det g}
-$$
-is a homomorphism from $\mathrm{GL}_2(\RR)$ to the additive group $(\RR,+)$, define
-$$
-X(g)=
-\begin{pmatrix}
-1&\ell(g)\\
-0&1
-\end{pmatrix},
-\qquad
-Y(g)=I_2.
-$$
-Then
-$$
-X(gh)=
-\begin{pmatrix}1&\ell(g)+\ell(h)\\0&1\end{pmatrix}
-=X(g)X(h),
-$$
-so $X$ is a representation, and $Y$ is the two-dimensional trivial representation.
+No retained solution set covers this exercise: the card's own counterexample follows, with the two representations checked, their characters computed and their non-isomorphism as separate steps.
 
-For every $g\in G$,
-$$
-\chi_X(g)=\operatorname{tr}X(g)=2=\operatorname{tr}Y(g)=\chi_Y(g).
-$$
-Thus $X$ and $Y$ have the same character.
+::: pf
 
-They are not isomorphic. If they were, there would be an invertible matrix $S$ such that
-$$
-SX(g)S^{-1}=Y(g)=I_2
-$$
-for every $g$. This would force $X(g)=I_2$ for every $g$, which is false; for example, for $g=2I_2$,
-$$
-\ell(g)=\log 4\ne0.
-$$
-Hence equal characters do not imply isomorphic representations in this infinite-group setting.
+::: {.pf-step #homomorphism}
+$\ell(g)=\log\abs{\det g}$ is a homomorphism $\GL_{2}(\RR)\to(\RR,+)$, and $X(g)=\begin{pmatrix}1&\ell(g)\\0&1\end{pmatrix}$ is a representation of degree $2$.
+
+::: pf-proof
+$\det(gh)=\det g\det h$, so $\abs{\det(gh)}=\abs{\det g}\abs{\det h}$ and $\ell$ is additive; $\det g\ne0$ for $g$ invertible, so $\ell$ is defined. Then $X(g)X(h)=\begin{pmatrix}1&\ell(g)\\0&1\end{pmatrix}\begin{pmatrix}1&\ell(h)\\0&1\end{pmatrix}=\begin{pmatrix}1&\ell(g)+\ell(h)\\0&1\end{pmatrix}=X(gh)$, and $X(e)=I_{2}$, so $X$ is a representation of degree $2$.
+:::
+
+:::
+
+::: {.pf-step #characters}
+$X$ and $Y(g)=I_{2}$ have the same character: $\operatorname{tr}X(g)=2=\operatorname{tr}Y(g)$ for every $g$.
+
+::: pf-proof
+The trace of $\begin{pmatrix}1&\ell(g)\\0&1\end{pmatrix}$ is $1+1=2$, and the trace of $I_{2}$ is $2$.
+:::
+
+:::
+
+::: {.pf-step #not-iso}
+$X$ and $Y$ are not isomorphic.
+
+::: pf-proof
+An isomorphism of representations intertwining $X$ with the trivial representation $Y$ would force $X(g)v=v$ for every $g$ and every $v$ in the underlying space, that is $X(g)=I_{2}$ for all $g$. But $\ell(g)\ne0$ for instance for $g=2I_{2}$, where $\ell=\log4\ne0$, so $X(2I_{2})\ne I_{2}$.
+:::
+
+:::
+
+::: {.pf-qed}
+Two complex representations of $\GL_{2}(\RR)$ of the same finite degree, with equal characters by step [](#characters){.pf-ref}, need not be isomorphic by step [](#not-iso){.pf-ref}; so the answer is no. Character theory loses no information only under hypotheses such as compactness (or finite-dimensionality of the group, i.e. finiteness), which $\GL_{2}(\RR)$ does not satisfy.
+:::
+
+:::
+
 :::
