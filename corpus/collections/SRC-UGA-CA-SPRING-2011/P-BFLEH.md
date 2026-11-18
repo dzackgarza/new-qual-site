@@ -25,10 +25,20 @@ audit:
     convergence that licenses subtracting. The answer 3 pi / 2 is unchanged. The collection's
     provenance is the examination paper only, so no retained solution set covers the
     exercise and the argument is the card's own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review finding: the statement said only "Calculate", dropping the printed requirement.
+    Read against the retained source assets/attachments/Complex_Analysis_Spring_2011.docx,
+    whose problem 4 reads "Use methods of complex variables to evaluate the integral
+    int_0^inf (cos x - cos 4x)/x^2 dx"; the statement now carries that clause in the
+    source's own voice. The solution already meets it, the Dirichlet integral being obtained
+    from the indented upper-half-plane contour for e^{iz}/z.
 ---
 
 ::: {.problem}
-Calculate
+Use methods of complex variables to evaluate
 $$
 \int_0^\infty {\cos(x) - \cos(4x) \over x^2} \, dx
 .$$
