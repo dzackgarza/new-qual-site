@@ -268,6 +268,26 @@ audit:
     this pass: Deligne, Théorie de Hodge II, 4.4.3, and Strauch's rigidity
     result, neither of which is in tmp/sources, as before; no step was
     re-derived, and the printed exercise on printed p. 340 was not reopened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step now cites what the book proves for it and says why that is not the
+    relative form it needs. Read for this: Hartshorne IV.4 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, Theorem 4.11 at printed
+    p. 325 (its hypothesis "Let X be an elliptic curve, and fix a point P0 in
+    X", its last clause identifying the group structure of 4.10.6 with that of
+    4.7), Remarks 4.10.5 and 4.10.6 at printed pp. 323--324 (the definition of a
+    group scheme over a base, and "the Jacobian variety J of a curve X is
+    automatically a group scheme over k"), and the definition "an abelian
+    variety is a complete group variety over k" at printed p. 140. Those give
+    the fibre-level statement and not the relative one: the theorem fixes the
+    curve over k and varies the test scheme T, so it does not say that a family
+    E to S with a section is a group scheme over S, which is what the step
+    states and what the printed hint asserts. The step therefore stays the
+    card's own, and the conclusion stays relative to it. Not checked: no other
+    source was searched for this step in this pass, and no step of the exercise
+    was re-derived.
 ---
 
 ::: {.problem}
@@ -302,6 +322,7 @@ The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so 
 This step is the card's own.
 
 The printed hint of the exercise begins "Use the section to fix the group structure on the fibres", and each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$: a genus-one curve with a chosen point is an elliptic curve, and its group law has that point as identity.
+What the book proves about that point is Hartshorne IV.4: an elliptic curve is its own Jacobian, Theorem 4.11, printed p. 325, whose last clause identifies the group structure of Remark 4.10.6, printed p. 324, with the one of (4.7); the book's definition of an abelian variety is "a complete group variety over $k$", printed p. 140. That is the fibre-level statement over $k=\CC$, and it makes each $E_t$ an abelian variety. It is not the relative statement this step needs: the theorem quantifies over an elliptic curve over $k$ and over $k$-schemes $T$, so it fixes the curve and varies only the test scheme, and it says nothing about a family $E\to S$.
 Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them. The printed hint asserts the first of the two.
 
 :::
