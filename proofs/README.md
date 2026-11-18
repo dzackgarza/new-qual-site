@@ -226,9 +226,13 @@ a free module — hence for every abelian group `A` — by
 
 ## 5. Outstanding obligations
 
-Repairs made to a stored proof whose mathematical content no file here certifies. Each is a
-claim of the form "this argument proves the stored statement", and none may be reported as
-settled until a file here covers it:
+**None.** Every entry this section has carried is withdrawn below, each into a certificate that
+settles the claim without the step it named, and the route each certificate takes is recorded in
+section 5b. Nothing here is a repair awaiting a certificate.
+
+The form an entry takes, so that a new one is written the same way, is a repair made to a stored
+proof whose mathematical content no file here certifies: a claim of the form "this argument proves
+the stored statement", which may not be reported as settled until a file here covers it.
 
 - ~~`E-HAT-3.A-6` and `E-HAT-3.A-2`, the filtered-colimit passage (Exercise 4 of §3.A)~~ —
   **withdrawn: both cards are certified without it, for every abelian group `A`.** The certificates
@@ -252,11 +256,11 @@ settled until a file here covers it:
 With both entries withdrawn this section names no outstanding obligation of the two cards; the
 route each certificate takes is recorded in section 5b.
 
-## 5b. The two card applications: what closed them
+## 5b. The card applications: what closed them
 
-These were the applications the group lemmas did not reach, stated here with the obstruction named
-so that neither could be closed by a name check against the pinned source. Both are now closed, and
-by a route that avoids every obstruction this section used to name.
+The applications the group lemmas did not reach, recorded with the obstruction each named so that
+none could be closed by a name check against the pinned source. All three are closed, and by a
+route that avoids every obstruction this section used to name.
 
 - **The presentation bridge is closed, and it is not the projective-resolution route.**
   <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A6.lean>'s
@@ -511,27 +515,44 @@ special case of it.
 
 ## Checking
 
-The Lean certificates left this repository (issue #141): the `.lean` files, the lake
-project (`lakefile.toml`, `lake-manifest.json`, `lean-toolchain`) and the Lake lines of
-`.gitignore` are deleted, and each row of section 1 is a link. `qualc check` follows each
-link and fails when its target is not there, so a row is correct in either of the two forms
-the link may take: the file at commit `16c09abaa4` of this repository, which stays readable,
-or the declaration on `dzackgarza/lean-categories` main, where lean-categories#141 ported the
-Lean declarations and where they now live. Four rows of section 1 name the second form: the
-two `Tor` rows and `E-HAT-2.2-16`'s at `5848f0f2`, and `E-HAT-4.1-9`'s at `9b8b8584`. The
-rest still name the file at `16c09abaa4`, and the movement of a row from one form to the
-other is a link correction, not a change of what the row says it proves.
+The proof-artifact entry point is `proofs/justfile`. Run it from the repository root:
 
-The elaboration baseline the lake project pinned while it lived here — Mathlib master
-`c9f80237cb8abbd41e5443d1ab83ec88d2a5f9ce` on `leanprover/lean4:v4.36.0-rc2`, fetched
-from the official cache with `lake update mathlib && lake exe cache get` — is recorded
-with the Toolchain history below.
+```
+just --justfile proofs/justfile check
+```
 
-The Sage check is unchanged; its entry point is the image's own (the image has no `sage` on
-`PATH`, so the command used is the one recorded in section 2, not a path invented here).
+It checks two things and elaborates nothing.
 
-`#print axioms` at the end of each file must show only `propext`, `Classical.choice` and
-`Quot.sound`; any appearance of `sorryAx` means the certificate is not a proof.
+- `registry` — `python -m qualc.proofs`, the registry check `qualc check` runs (a row naming a
+  card the corpus does not carry, a link whose target is not there, a row that does not say
+  whether it covers the card's statement or a part of one, a row in a section no reader of the
+  registry treats as a certificate) read without the pandoc build, together with the recipe
+  checked against the tree: every artifact `proofs/justfile` invokes is present, it invokes no
+  Lean file, and every artifact under `proofs/cards/` is invoked by it. The first four of those
+  are `certificate.registry_errors`; `qualc check` calls the same function, so the two entry
+  points cannot disagree.
+- `artifacts` — the exact Sage, GAP and Python computations retained in `proofs/cards/`. Each
+  exits non-zero on a failed assertion, and section 2 records the interpreter and the output its
+  published run carried. The interpreters are `sage` and `gap` on `PATH` by default; the shared
+  research image has no `sage` on `PATH`, so there the recipe is run as
+  `SAGE=/sage/.venv/bin/sage just --justfile proofs/justfile check`, that being the interpreter
+  section 2's recorded runs used.
+
+Lean declarations are validated in lean-categories, where they live, not here: the `.lean`
+files, the lake project (`lakefile.toml`, `lake-manifest.json`, `lean-toolchain`) and the Lake
+lines of `.gitignore` left this repository under issue #141. Each row of section 1 is a link to
+the file at commit `16c09abaa4` of this repository, which stays readable, or to the declaration
+on `dzackgarza/lean-categories` main, where lean-categories#141 ported it. `qualc check` follows
+each link and fails when its target is not there, so a row is correct in either of the two
+forms. Four rows of section 1 name the second form: the two `Tor` rows and
+`E-HAT-2.2-16`'s at `5848f0f2`, and `E-HAT-4.1-9`'s at `9b8b8584`. The rest still name
+the file at `16c09abaa4`, and the movement of a row from one form to the other is a link
+correction, not a change of what the row says it proves.
+
+For a Lean certificate, `#print axioms` on the declaration the row names must show only
+`propext`, `Classical.choice` and `Quot.sound`; any appearance of `sorryAx` means the
+certificate is not a proof. That check is run in lean-categories, and the elaboration each row
+records is the one its author ran there.
 
 ## Toolchain: what these certificates were elaborated with, and the shared-image block
 
