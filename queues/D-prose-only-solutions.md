@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1415 of the 12429 problem cards that have a solution
+1412 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1415
+- Problems: 1412
 - Problem cards with a solution: 12429
 
-## Problems (1415)
+## Problems (1412)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -813,7 +813,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8RA07 — "The difference quotient of a $C^1$ function is continuous on $\RR^2$"
 - [ ] P-8RA23 — "$\cos(\sin x)>\frac12(1+\cos^2 x)$ for small nonzero $x$"
 - [ ] P-8RA25 — "Differentiability of $F(t)=\int_{\RR}f(x)\sin(tx)\,dx$"
-- [ ] P-8RA41 — "The indefinite integral of an $L^1$ function is absolutely continuous"
 - [ ] P-8XT103 — "Bounded functions whose integrals on $[0,a]$ vanish weakly annihilate $L^1$"
 - [ ] P-8XT25 — "Sum of two positive measure sets contains an interval"
 - [ ] P-8XT63 — "Injectivity in an annulus implies injectivity throughout the disk"
@@ -1004,7 +1003,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP11C — "Analytic continuation along different paths yielding different germs (Monodromy failure)"
 - [ ] P-CASP12B — "Normal families characterized by coefficient bounds"
 - [ ] P-CASP12D — "Real-valued analytic functions on radii and conditions for existence"
-- [ ] P-CASP13A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CASP13B — "True or False: harmonic critical points, Mittag-Leffler interpolation, harmonic limits, and polynomial approximation"
 - [ ] P-CASP13C — "Laurent series of $1/(z^3-4z)$ on two annuli"
 - [ ] P-CASP13F — "Identity theorem from boundary vanishing on an arc of a simply connected domain"
@@ -1254,7 +1252,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-KPNWG — "$\lim_{n\to\infty}\int_0^n\frac{\cos(x/n)}{x^2+\cos(x/n)}\,dx$"
 - [ ] P-KR27N — "Galois group of $x^4-5$ over $\QQ$ and over $\QQ(\sqrt{5})$"
 - [ ] P-KVE3S — "$C^1([a,b])$ is Banach under $\sup\abs{f}+\sup\abs{f'}$"
-- [ ] P-L7G3D — "If $\mu(X\setminus E_n)\to 0$ then almost every point lies in infinitely many $E_n$"
 - [ ] P-LG4GL — "$\left(\int\frac{\abs{\phi}^n}{1+x^2}\,dx\right)^{1/n}\to\norm{\phi}_\infty$"
 - [ ] P-LL7UL — "A Galois extension of degree $2015$ is an extension by radicals"
 - [ ] P-M504F03-1 — "Finite abelian groups are products of their Sylow subgroups"
