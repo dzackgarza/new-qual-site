@@ -33,12 +33,18 @@ audit:
   note: >-
     Restructured into Lamport steps from the retained positron0802 solution (Chapter 3,
     Exercise 28.1, PDF p. 18). Checked against the book: §28 Exercise 1 as printed
-    (p. 181); the uniform metric of §20 (p. 122); the definition of a limit point (§17,
+    (p. 181); the uniform metric of §20 (p. 124); the definition of a limit point (§17,
     p. 97). Both witnesses are now computed rather than asserted: the distance from a
     point of Y to a point outside Y is at least min{delta,1} with delta = min{x_i,1-x_i},
     and two distinct points of Y are at uniform distance exactly 1. The subset used is
     Y = {0,1}^omega, infinite because the unit vectors are pairwise at distance 1. No
     repair to the printed statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Citation repair found in the same review pass: the uniform metric of §20 is defined on
+    printed p. 124 (PDF 139), not p. 122. No change to the mathematics.
 ---
 
 ::: {.exercise}
@@ -50,7 +56,7 @@ Find an infinite subset of this space that has no limit point.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.1, PDF p. 18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
 
-Throughout, $[0,1]^\omega$ carries the uniform topology, whose metric is $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ (§20, printed p. 122), $Y=\{0,1\}^\omega$ is the set of sequences with every coordinate $0$ or $1$, and a limit point of $Y$ is a point whose every neighbourhood meets $Y$ in a point other than itself (§17, printed p. 97).
+Throughout, $[0,1]^\omega$ carries the uniform topology, whose metric is $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ (§20, printed p. 124), $Y=\{0,1\}^\omega$ is the set of sequences with every coordinate $0$ or $1$, and a limit point of $Y$ is a point whose every neighbourhood meets $Y$ in a point other than itself (§17, printed p. 97).
 
 ::: pf
 
