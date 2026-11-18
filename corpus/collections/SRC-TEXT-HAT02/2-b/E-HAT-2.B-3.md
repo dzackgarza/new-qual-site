@@ -1,6 +1,7 @@
 ---
 
 
+
 schema: qual/card@1
 id: E-HAT-2.B-3
 kind: problem
@@ -127,6 +128,17 @@ audit:
     intersection with $A$, and the argument that a cycle in $W$ is a boundary in neither copy of $B$.
     The provenance of the hint is in the event above. Checked: the four printed pages and what each
     supplies. Not claimed: a source that states the exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the proof is prose, so the solution
+    opens with the provenance convention --- a paragraph that names a printed source records that
+    source's argument at the page given, and a paragraph that names none is the card's own, possibly
+    applying a result cited in another paragraph. The three case analyses are of the second kind.
+    Checked: that the paragraphs naming Alexander duality, Mayer--Vietoris and Invariance of Domain
+    carry their pages, and that the remark names each input. Not changed: any argument.
+
 ---
 
 ::: {.problem}
@@ -136,6 +148,8 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 The two results the argument uses are the Mayer--Vietoris sequence of §2.2, printed pp. 149--150 (Hatcher leaves it unnumbered; the reduced form is the display on p. 150), and Alexander duality, Theorem 3.44 (p. 254), applied with $K$ a sphere: for a compact locally contractible $K\subset S^n$ it gives $\widetilde H_j(S^n-K)\cong\widetilde H^{n-j-1}(K)$, and here $K$ is $S\subset S^{n-1}$, a sphere of dimension $k-1$, or $S^k\subset S^n$. The case $k=n$ also uses Invariance of Domain, Theorem 2B.3 (p. 172).
 
 If $k=0<n$, then $D$ is one interior point of $D^n$, and radial projection from that point retracts $D^n\setminus D$ onto $S^{n-1}$. Hence the inclusion induces an isomorphism.

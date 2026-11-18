@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-4.1-6
 kind: problem
@@ -131,6 +132,14 @@ audit:
     references changes. Checked against tom Dieck, *Algebraic Topology* (EMS Textbooks in
     Mathematics, 2008), Theorem (6.3.1) on printed pp. 129--130, and against Hatcher (2002), §4.1
     Exercise 6 on printed p. 358.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied to step #surjective: it is the surjectivity half of tom
+    Dieck's proof of (6.3.1), printed p. 130, with the lifting lemma (3.2.4), printed p. 67, and
+    the step now says so; the other three steps already named their pages. Checked: the two pages.
+
 ---
 
 ::: {.problem}
@@ -181,7 +190,7 @@ $p_*:\pi_n(E,E_0,\epsilon)\to\pi_n(B,B_0,b)$ is surjective for $n\ge1$.
 
 ::: pf-proof
 
-Let $x\in\pi_n(B,B_0,b)$ be represented by $h$. The lift $H$ of step [](#cube-lift){.pf-ref} has $pH=h$ and $H(J^{n-1})=\{\epsilon\}$, and $H(\partial I^n)\subset p^{-1}(B_0)=E_0$ because $h(\partial I^n)\subset B_0$. So $H$ is a map of triples $(I^n,\partial I^n,J^{n-1})\to(E,E_0,\epsilon)$ and $p_*[H]=[pH]=[h]$.
+This is the surjectivity half of tom Dieck's proof of (6.3.1), printed p. 130, with the lifting lemma Proposition (3.2.4), printed p. 67. Let $x\in\pi_n(B,B_0,b)$ be represented by $h$. The lift $H$ of step [](#cube-lift){.pf-ref} has $pH=h$ and $H(J^{n-1})=\{\epsilon\}$, and $H(\partial I^n)\subset p^{-1}(B_0)=E_0$ because $h(\partial I^n)\subset B_0$. So $H$ is a map of triples $(I^n,\partial I^n,J^{n-1})\to(E,E_0,\epsilon)$ and $p_*[H]=[pH]=[h]$.
 
 :::
 

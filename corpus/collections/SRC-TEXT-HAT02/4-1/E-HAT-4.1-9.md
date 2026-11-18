@@ -1,5 +1,6 @@
 ---
 
+
 schema: qual/card@1
 id: E-HAT-4.1-9
 kind: problem
@@ -431,6 +432,15 @@ audit:
     the printed form of (a) at $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$ are marked as the card's own.
     Checked: the Hatcher and Brown pages and that no cited source states the exercise. Not changed:
     any step of the proof itself.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof. Its remark already says which part Hatcher covers (Theorem 4.3,
+    printed p. 344, and the reading of $\pi_1(X,A,x_0)$ on printed p. 343) and which part Brown
+    covers (Theorem 4.9 and Corollary 4.11, printed pp. 121 and 123). Checked: the four pages.
+
 ---
 
 ::: {.problem}
@@ -442,6 +452,8 @@ Suppose we define $\pi_0(X, A, x_0)$ to be the quotient set $\pi_0(X, x_0) / i_*
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Define, for a pointed pair $(X,A,x_0)$,
 $$
 \pi_0(X,A,x_0)=\pi_0(X,x_0)\big/\,i_*\pi_0(A,x_0),

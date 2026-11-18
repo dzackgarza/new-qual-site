@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-2.B-4
 kind: problem
@@ -241,6 +242,18 @@ audit:
     that part (a)'s homology content is Proposition 2B.1(b), pp. 169--170, is dropped from it,
     no step using that proposition. `COMPLAINTS.md` carries the record of this date for the
     open part (b) obligation.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied step by step. Part (a): the generator statement
+    of step #s3 is now marked as the card's own application of the h-equivalences of Koukpari,
+    printed p. 16, and tom Dieck, printed p. 52. Part (b): each of the five steps --- #collar,
+    #collar-extension, #collar-disjoint, #collar-rescale, #proper-case --- now says that its
+    argument is the card's own, no published proof of (b) having been located, and #proper-case
+    says what it takes from §2.B Exercise 3, printed p. 176, whose proof is on `E-HAT-2.B-3`.
+    Checked: that no step in part (b) reproduces a published argument, and the two pages cited above.
+
 ---
 
 ::: {.problem}
@@ -343,7 +356,7 @@ is a generator.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate sphere $S^{q-1}$ is a deformation retract of $S^{n-1}-S^{p-1}$, so its fundamental reduced homology class generates $\widetilde H_{q-1}$ there. For $q=1$ this class is the difference of the two points of $S^0$.
+The argument of this step is the card's own, applied to the $h$-equivalences of Koukpari, printed p. 16, and tom Dieck, §2.8.3 printed p. 52: by steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate sphere $S^{q-1}$ is a deformation retract of $S^{n-1}-S^{p-1}$, so its fundamental reduced homology class generates $\widetilde H_{q-1}$ there. For $q=1$ this class is the difference of the two points of $S^0$.
 
 :::
 
@@ -354,6 +367,7 @@ By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate sphere $S^{q-1}$ i
 Let $f:D^p\to D^n$ and $g:D^q\to D^n$ be disjoint embeddings with $f(\partial D^p)=S^{p-1}$ and $g(\partial D^q)=S^{q-1}$. Then $D^n$ contains disjoint embedded disks $\widehat D^p$ and $\widehat D^q$ with $\partial\widehat D^p=S^{p-1}$ and $\partial\widehat D^q=S^{q-1}$ which are proper, that is $\widehat D^p\cap S^{n-1}=S^{p-1}$ and $\widehat D^q\cap S^{n-1}=S^{q-1}$.
 
 ::: pf-proof
+The argument of this step is the card's own: no published proof of part (b) was located.
 
 Let $D_2$ be the closed ball of radius $2$ about the origin, so $D^n\subset D_2$. A point of $D^n$ has norm at most $1$, so an embedding whose boundary is $S^{p-1}$ extends to a proper disk in $D_2$.
 
@@ -366,6 +380,7 @@ $$
 defines an embedding $F:D^p\to D_2$ with $F(\partial D^p)=2S^{p-1}$ and $F(D^p)\cap\partial D_2=2S^{p-1}$.
 
 ::: pf-proof
+The argument of this step is the card's own: no published proof of part (b) was located.
 
 *Well defined.* For $\norm x\le\tfrac12$ the point $2x$ lies in $D^p$, so $F(x)\in f(D^p)\subset D^n$. For $\tfrac12\le\norm x\le1$ one has $x/\norm x\in\partial D^p$, so $f(x/\norm x)\in S^{p-1}$ has norm one and $\norm{F(x)}=2\norm x\in[1,2]$. At $\norm x=\tfrac12$ the two formulas coincide, since then $2x=x/\norm x$ and $2\norm x=1$. Both pieces are continuous and their domains are closed and cover $D^p$, so $F$ is continuous by the pasting lemma.
 
@@ -382,6 +397,7 @@ Since $D^p$ is compact and $D_2$ is Hausdorff, $F$ is an embedding. For $\norm x
 $F(D^p)\cap G(D^q)=\emptyset$.
 
 ::: pf-proof
+The argument of this step is the card's own: no published proof of part (b) was located.
 
 The inner pieces are $f(D^p)$ and $g(D^q)$, disjoint by hypothesis. The outer pieces are the cones
 $$
@@ -400,6 +416,7 @@ which are disjoint because $S^{p-1}\cap S^{q-1}=\emptyset$. For an inner and an 
 After the scaling $y\mapsto y/2$, the disks $F(D^p)/2$ and $G(D^q)/2$ lie in $D^n$, are disjoint, have boundaries $S^{p-1}$ and $S^{q-1}$, and are proper.
 
 ::: pf-proof
+The argument of this step is the card's own: no published proof of part (b) was located.
 
 Dividing by $2$ maps $D_2$ onto $D^n$ and $\partial D_2$ onto $S^{n-1}$, and is a homeomorphism, so it preserves embedded disks and disjointness. By step [](#collar-extension){.pf-ref}, $F(D^p)\cap\partial D_2=2S^{p-1}$, so
 $$
@@ -420,6 +437,7 @@ and likewise for $G(D^q)/2$ and $S^{q-1}$.
 There are no disjoint embeddings $f:D^p\to D^n$, $g:D^q\to D^n$ with $f(\partial D^p)=S^{p-1}$, $g(\partial D^q)=S^{q-1}$ and $f(D^p)\cap S^{n-1}=S^{p-1}$, $g(D^q)\cap S^{n-1}=S^{q-1}$.
 
 ::: pf-proof
+The argument of this step is the card's own: no published proof of part (b) was located, and what it takes from §2.B Exercise 3 (printed p. 176) is the isomorphism of that exercise, proved on `E-HAT-2.B-3`.
 
 Put $D=f(D^p)$ and $E=g(D^q)$. Exercise 3 of §2.B applies to the pair $(D,S^{p-1})\subset(D^n,S^{n-1})$, whose hypothesis $D\cap S^{n-1}=S^{p-1}$ holds by assumption, and says that $S^{n-1}-S^{p-1}\hookrightarrow D^n-D$ induces an isomorphism on homology. By step [](#s3){.pf-ref} the class $[S^{q-1}]$ generates the left-hand group in degree $q-1$, so its image generates $\widetilde H_{q-1}(D^n-D)$ and is nonzero. But $E=g(D^q)$ is homeomorphic to $D^q$, hence contractible, so $\widetilde H_{q-1}(E)=0$; the inclusion $S^{q-1}=\partial E\hookrightarrow D^n-D$ is the composite $\partial E\hookrightarrow E\hookrightarrow D^n-D$, so $[S^{q-1}]$ maps to zero in $\widetilde H_{q-1}(D^n-D)$. This contradicts the nonvanishing, so no such pair exists.
 

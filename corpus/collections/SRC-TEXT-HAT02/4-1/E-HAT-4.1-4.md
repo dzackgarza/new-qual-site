@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-4.1-4
 kind: problem
@@ -92,6 +93,15 @@ audit:
     is; the citation in the solution is corrected and the coverage line is now quoted there, which
     also confirms that §4.1 Exercise 4 is on the sheet. The mathematics of the card is unchanged by
     this event.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof; the two paragraphs carrying the transport and the naturality of
+    $\beta$ apply Proudfoot's solution, printed p. 1, to Hatcher's definition, printed p. 342, and
+    are covered by the convention. Checked: Proudfoot's page and Hatcher's definition page.
+
 ---
 
 ::: {.problem}
@@ -101,6 +111,8 @@ More precisely, prove a formula like $\gamma p_*(\alpha) = p_*\bigl(\beta_{\tild
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Let $\tilde x_0\in p^{-1}(x_0)$ and let $\gamma$ be a loop at $x_0$. Lift $\gamma$ to the path
 $$
 \tilde\gamma:I\to\widetilde X,\qquad \tilde\gamma(0)=\tilde x_0,

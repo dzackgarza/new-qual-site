@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-4.1-7
 kind: problem
@@ -448,6 +449,17 @@ audit:
     statements stand as written; the same withdrawal is a new record of this date in
     `COMPLAINTS.md`, and no dated event or record is edited in place.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof, which covers the construction in the cube, the restricted
+    additivity lemma and the independence of the extension --- all of them already carrying the
+    card's-own marking in their own sentences --- beside the paragraphs citing tom Dieck §6.2
+    printed pp. 126--127, May printed pp. 53 and 68--69, and Davis--Kirk printed pp. 153 and 160.
+    Checked: the four places. Not changed: any argument.
+
 ---
 
 ::: {.problem}
@@ -455,6 +467,8 @@ Extend the results proved near the beginning of this section for the change-of-b
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Hatcher's cubical model: $I^{n-1}$ is the face $s_n=0$ of $I^n$, the free face; $J^{n-1}$ is the closure of $\partial I^n-I^{n-1}$; and $\pi_n(X,A,x_1)$ is the set of homotopy classes of maps $f:(I^n,\partial I^n,J^{n-1})\to(X,A,x_1)$, so $f(\partial I^n)\subseteq A$ and $f(J^{n-1})=x_1$ (Hatcher, *Algebraic Topology* (2002), printed p. 343, with the exact sequence of the pair as Theorem 4.3 on printed p. 344). Because $I^{n-1}\subset\partial I^n$ the whole free face maps into $A$, and because $\partial I^{n-1}\subset J^{n-1}$ the boundary of the free face maps to the single point $x_1$. Hatcher defines $\gamma f$ on printed p. 345, for a path $\gamma$ in $A$ from $x_0$ to $x_1$, "by placing a copy of $f$ in a smaller cube with its face $I^{n-1}$ centered in the corresponding face of the larger cube", and leaves the properties to this exercise. The transport whose properties these are is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), §6.2, printed pp. 126--127, and the construction of the action of $\pi_1(A,x_0)$ on the relative groups is J. F. Davis and P. Kirk's, *Lecture Notes in Algebraic Topology*, Theorem 6.63, p. 160, in the disk model of their Definition 6.52, p. 153, with the exact sequence of the pair as Theorem 6.53, p. 154.
 
 *The construction in Hatcher's cube.* Fix $\varepsilon\in(0,\tfrac13)$ and put

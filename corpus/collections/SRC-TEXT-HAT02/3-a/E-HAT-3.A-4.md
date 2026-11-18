@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-3.A-4
 kind: problem
@@ -75,6 +76,16 @@ audit:
     against Hatcher (2002), §3.A Exercise 4 on printed p. 267 and the remark on printed p. 263 that
     $\operatorname{Tor}_n=0$ for $n>1$. Not claimed: a text version for any other source, this card
     citing none; nothing was read from a rendered page.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof. The two paragraphs the probe found without a citation --- the
+    tensor-product adjunction and the remark that the symmetry of Tor is not passed through the
+    colimit --- are the card's own, the second stating what the exercise does not ask and Weibel's
+    Corollary 2.6.17, printed p. 58, does not supply. Checked: the Weibel pages 57 and 58.
+
 ---
 
 ::: {.problem}
@@ -82,6 +93,8 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Both identities are instances of the filtered-colimit theorems of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6--2.7, printed p. 58, read in `tmp/sources/weibel-02-derived-functors.md`, applied to the left adjoint $-\otimes_\ZZ B$ of $\ZZ$-mod. Let $\Lambda$ be a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$. A directed set is a filtered index category, so the theorems of §2.6 apply.
 
 *The results used, with their printed statements.*

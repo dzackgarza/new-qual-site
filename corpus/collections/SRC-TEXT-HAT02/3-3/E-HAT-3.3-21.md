@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-3.3-21
 kind: problem
@@ -329,6 +330,15 @@ audit:
     text of question 4390308 and not at the site; `COMPLAINTS.md` carries the correction in a new
     record of this date, and no dated record is edited in place.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied to step #cone-case, whose proof said "those two pages"
+    without naming them: it is now cited to Stanford Math 215C, Spring 2009, Solution Set 4,
+    Hatcher 3.3.21, printed p. 1, and C. Kottke, Math 2420 Problem Set 3 solutions, Problem 2,
+    printed p. 2. Checked: both places, and that they are the pages the two arguments are on.
+
 ---
 
 ::: {.problem}
@@ -362,7 +372,7 @@ $$
 If $\infty$ has a cone neighborhood in $X^+$, then the evident map $H_c^n(X;G)\to H^n(X^+,\infty;G)$ is an isomorphism for all $n$.
 
 ::: pf-proof
-This is the remainder of the first paragraph of those two pages: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, and reads $\widetilde H^m(U_K;G)=0$ from the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood of the cone point contains a smaller cone-shaped neighborhood that contracts to the cone point by radial scaling. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
+This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2, printed p. 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, and reads $\widetilde H^m(U_K;G)=0$ from the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood of the cone point contains a smaller cone-shaped neighborhood that contracts to the cone point by radial scaling. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
 $$
 H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
 $$

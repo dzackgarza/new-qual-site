@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-3.A-1
 kind: problem
@@ -148,6 +149,16 @@ audit:
     "ranicki" is in the reading copy's file name only and names no translator, and the
     card body and remark now say so. Nothing in the statement, the pages or the proof
     changes. Not checked in this pass: no page was read from a rendered copy.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule applied at paragraph level: the solution opens with the provenance
+    convention for a prose proof, and the paragraph applying (11.6.4) to $C=S_*(X)$ is of the kind
+    that names no source and is the card's own application of the proposition cited above it.
+    Checked: that (11.6.4) on printed p. 289 and (12.4.4) on printed p. 310 are named where they are
+    used. Not changed: any argument.
+
 ---
 
 ::: {.problem}
@@ -155,6 +166,8 @@ Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely 
 :::
 
 ::: {.solution}
+Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+
 Hatcher's hypothesis is the source's. tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008) (read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`), calls a pair $(X,A)$ of finite $R$-type, for $R$ a principal ideal domain, if the $R$-modules $H_i(X,A;R)$ are finitely generated and only finitely many of them are nonzero, and puts $\chi(X,A;R)=\sum_i(-1)^i\operatorname{rank}_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis that $\chi(X)$ is defined. The source's proof, Proposition (12.4.4) on printed p. 310, does not use the universal coefficient theorem: it replaces $S_*(X)$ by a finite free chain complex and compares ranks along the alternating sum. It proves the statement for every principal ideal domain $R$, and the exercise's coefficient field $F$ is that case.
 
 *The finite free model.* (Proposition (11.6.4), printed p. 289.) Let $R$ be a principal ideal domain and $C=(C_n)$ a chain complex of free $R$-modules with finitely generated homology. For each $n$ choose a finitely generated submodule $F_n$ of $Z_n(C)$ which the quotient map $Z_n(C)\to H_n(C)$ carries onto $H_n(C)$, and take $F_n=0$ where $H_n(C)=0$; let $G_n$ be the kernel of $F_n\to H_n(C)$. Put
