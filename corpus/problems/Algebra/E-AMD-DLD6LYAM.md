@@ -27,44 +27,61 @@ Show that if $\cardinality{G} = 12$ and $G$ is a non-abelian group with a normal
 :::
 
 ::: {.solution}
-The two hypotheses agree. If $n_3=4$, the four Sylow $3$-subgroups meet pairwise trivially and contain $8$ elements of order $3$. The remaining $4$ elements must form every Sylow $2$-subgroup, so there is exactly one, and it is a normal subgroup of order $4$. Conversely, if $V\trianglelefteq G$ has order $4$, then $G\cong A_4$, as proved below, and the eight $3$-cycles of $A_4$ give $n_3=4$.
 
-Let $V\trianglelefteq G$ have order $4$, and let $P\in\Syl_3(G)$. Then $\abs{P}=3$, $V\cap P=1$, and
-$$
-\abs{VP}=\frac{\abs{V}\abs{P}}{\abs{V\cap P}}=12=\abs{G}.
-$$
-Hence
-$$
-G\cong V\rtimes P.
-$$
+The argument is the card's own: the counting that produces a unique Sylow $2$-subgroup, the splitting $G=V\rtimes P$, and the elimination of $V\cong C_{4}$.
 
-There are two possibilities for $V$: $C_4$ and $V_4$.
+Let $\abs{G}=12$ and let $n_{3}$ be the number of Sylow $3$-subgroups.
 
-If $V\cong C_4$, then
-$$
-\Aut(V)\cong C_2.
-$$
-Every homomorphism $P\cong C_3\to C_2$ is trivial, so the semidirect product is direct:
-$$
-G\cong C_4\times C_3\cong C_{12},
-$$
-contrary to the hypothesis that $G$ is nonabelian. Thus $V\cong V_4$.
+::: pf
 
-Now
-$$
-\Aut(V_4)\cong S_3.
-$$
-The conjugation action $P\to S_3$ cannot be trivial, again because that would make $G\cong V_4\times C_3$ abelian. Hence its image is the unique subgroup of order $3$, acting cyclically on the three nonidentity elements of $V_4$. Up to automorphisms of $V_4$ and $C_3$, this gives a unique nontrivial semidirect product
-$$
-V_4\rtimes C_3.
-$$
+::: {.pf-step #equivalent}
+The two hypotheses are equivalent: $n_{3}=4$ holds if and only if $G$ has a normal subgroup of order $4$.
 
-In $A_4$, the normal Klein four subgroup
+::: pf-proof
+Suppose $n_{3}=4$. Distinct Sylow $3$-subgroups, being of prime order $3$, meet only in the identity, so the four of them contain $4\cdot(3-1)=8$ elements of order $3$. The remaining $12-8=4$ elements are the identity and the elements of order $2$ or $4$; every Sylow $2$-subgroup has $4$ elements, all of order $1,2$ or $4$, so it is contained in that set of $4$ elements and hence equals it. So there is a unique Sylow $2$-subgroup of order $4$, and a unique Sylow subgroup is normal. Conversely, if $G$ has a normal subgroup of order $4$ then $G\cong A_{4}$ by the argument below, and the eight $3$-cycles of $A_{4}$ give $n_{3}=4$.
+:::
+
+:::
+
+::: {.pf-step #split}
+If $V\trianglelefteq G$ has order $4$ and $P\in\Syl_{3}(G)$, then $G=VP\cong V\rtimes P$.
+
+::: pf-proof
+$V\cap P$ has order dividing both $4$ and $3$, so it is trivial, and
 $$
-\{1,(12)(34),(13)(24),(14)(23)\}
+\abs{VP}=\frac{\abs{V}\abs{P}}{\abs{V\cap P}}=\frac{4\cdot3}{1}=12=\abs{G},
 $$
-is acted on cyclically by conjugation with a $3$-cycle. Therefore
-$$
-\boxed{G\cong V_4\rtimes C_3\cong A_4.}
-$$
+so $VP=G$. Since $V\trianglelefteq G$ and $V\cap P=1$, the group is the semidirect product $V\rtimes P$ with $P$ acting on $V$ by conjugation.
+:::
+
+:::
+
+::: {.pf-step #not-cyclic}
+$V\not\cong C_{4}$, hence $V\cong V_{4}$.
+
+::: pf-proof
+A group of order $4$ is $C_{4}$ or $V_{4}$. If $V\cong C_{4}$ then $\Aut(V)\cong C_{2}$, and every homomorphism $P\cong C_{3}\to C_{2}$ is trivial because $\gcd(3,2)=1$; so the action is trivial and $G\cong C_{4}\times C_{3}\cong C_{12}$, which is abelian, contradicting the hypothesis that $G$ is non-abelian. Hence $V\cong V_{4}$.
+:::
+
+:::
+
+::: {.pf-step #action}
+The conjugation action $P\to\Aut(V_{4})\cong S_{3}$ has image of order $3$, and the resulting semidirect product is unique up to isomorphism.
+
+::: pf-proof
+If the action were trivial then $G\cong V_{4}\times C_{3}$ would be abelian, so the image is a nontrivial subgroup of $S_{3}$ of order dividing $3$, that is the unique subgroup $A_{3}$ of order $3$, which acts cyclically on the three nonidentity elements of $V_{4}$. Any two nontrivial homomorphisms $C_{3}\to S_{3}$ have this same image, and they differ by composing with an element of $A_{3}\subseteq S_{3}=\Aut(V_{4})$, so the corresponding semidirect products are isomorphic; since $\gcd(3,4)=1$, the extension splits with vanishing cohomology and the isomorphism class depends only on the action up to this equivalence. So there is exactly one non-abelian possibility, $V_{4}\rtimes C_{3}$.
+:::
+
+:::
+
+::: {.pf-step #a4}
+$A_{4}$ realizes this semidirect product, so $G\cong A_{4}$.
+
+::: pf-proof
+In $A_{4}$ the subgroup $V=\{1,(12)(34),(13)(24),(14)(23)\}$ has order $4$, consists of the identity and the three double transpositions, and is normal because it is the union of conjugacy classes; conjugation by the $3$-cycle $(123)$ permutes the three double transpositions in a $3$-cycle. So $A_{4}\cong V_{4}\rtimes C_{3}$ with the action of step [](#action){.pf-ref}, and by the uniqueness there $G\cong A_{4}$.
+:::
+
+:::
+
+:::
 :::
