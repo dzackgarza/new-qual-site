@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1539 of the 12430 problem cards that have a solution
+1529 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1539
+- Problems: 1529
 - Problem cards with a solution: 12430
 
-## Problems (1539)
+## Problems (1529)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -786,7 +786,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TTFVV — "The countable intersection property characterizes Lindelof spaces"
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
-- [ ] E-TZ1IN — "Complete normality characterized by separated sets"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
 - [ ] E-U9VN1 — "Every $m$-manifold imbeds as a closed subspace of $\RR^{2m+1}$"
 - [ ] E-UAMGV — "The coarsest topology making a family of maps continuous"
@@ -822,11 +821,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-4CJY7 — "Characteristic and minimal polynomials of the Frobenius automorphism"
 - [ ] P-4GMLL — "Jordan form of $\begin{pmatrix}-3&3&-2\\-7&6&-3\\1&-1&2\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-4HGM3 — "Groups of order 8"
-- [ ] P-4PIPW — "Groups of order $56$: abelian classification and Sylow normality"
 - [ ] P-4QQGN — "Measurability of $f'$ and of the differentiability set of a continuous function"
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
 - [ ] P-5YZPH — "A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate"
-- [ ] P-6P6KI — "Equivalence of irreducible representations versus equality of determinants"
 - [ ] P-8CA01 — "Images of $y=\sqrt{3}x$ and $x+y=1$ under $w=z^2$"
 - [ ] P-8CA03 — "Uniform limit of a series of analytic functions on a star-shaped domain is analytic"
 - [ ] P-8CA07 — "A power series with strictly decreasing coefficients bounded below has no zeros in the disk"
@@ -835,7 +832,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
 - [ ] P-8CA17 — "Existence of a conformal map of $\abs{z-1}<1/2$ onto $\abs{z+1}>1$"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
-- [ ] P-8CA20 — "Existence of $f:\DD\to\DD$ with $f(1/2)=3/4$ and $f'(1/2)=2/3$"
 - [ ] P-8CA21 — "Number of solutions of $e^z=z+\lambda$ in the left half-plane for $\operatorname{Re}\lambda>1$"
 - [ ] P-8CA23 — "Harmonic conjugate of $y^3-3x^2 y$ and the mean-value property"
 - [ ] P-8CA25 — "$\operatorname{Aut}(\CC_\infty)$ consists of the Möbius transformations"
@@ -850,7 +846,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8RA07 — "The difference quotient of a $C^1$ function is continuous on $\RR^2$"
 - [ ] P-8RA23 — "$\cos(\sin x)>\frac12(1+\cos^2 x)$ for small nonzero $x$"
 - [ ] P-8RA25 — "Differentiability of $F(t)=\int_{\RR}f(x)\sin(tx)\,dx$"
-- [ ] P-8RA40 — "A telescoping bound need not yield a continuous pointwise limit"
 - [ ] P-8RA41 — "The indefinite integral of an $L^1$ function is absolutely continuous"
 - [ ] P-8XT103 — "Bounded functions whose integrals on $[0,a]$ vanish weakly annihilate $L^1$"
 - [ ] P-8XT25 — "Sum of two positive measure sets contains an interval"
@@ -907,7 +902,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS20A — "Extremal dimensions of $\ker(\phi^2)$ and $\ker((\phi-\mathrm{id})^2)$ from partial matrix data"
 - [ ] P-APAS20B — "Singular values and Frobenius perturbation bound $\dim\ker(\phi+\psi)$"
 - [ ] P-APAS20D — "Conjugacy class sizes from a character table of a group of order $360$"
-- [ ] P-APAS20E — "Permutation representations of $S_7$ on $4$-subsets and ordered complements"
 - [ ] P-APAS20F — "Scalar products $\langle e_1^n,e_1^n\rangle$ and $\langle h_3 p_6,s_{5,4}\rangle$"
 - [ ] P-APAS20G — "Haar average of a unitary representation is projection onto invariants"
 - [ ] P-APAS20H — "Haar integrals of $\operatorname{Tr} U$ and $\abs{u_{11}}^2$ over $U(2)$"
@@ -922,7 +916,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS23A — "Schur form; deflating a simple eigenpair and the angle between $x$ and $y$"
 - [ ] P-APAS23B — "Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extrema"
 - [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
-- [ ] P-APAS23E — "Isomorphism $D_6 \cong S_3 \times C_2$ and the character table of $D_6$"
 - [ ] P-APAS23F — "Rank of the $D_4$-averaging operator on $\CC[X]$ for a $3\times 3$ board"
 - [ ] P-APAS23H — "Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$"
 - [ ] P-APAS24B — "Gershgorin disks contain every eigenvalue"
@@ -1039,11 +1032,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF10E — "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequality"
 - [ ] P-CAF11A — "True or False: infinite products, bounded functions on punctured plane, essential singularities, growth rates, and Schwarz lemma"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
-- [ ] P-CAF11E — "A continuous function harmonic on the punctured disk is harmonic on the full disk"
 - [ ] P-CAF13A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
 - [ ] P-CAF13C — "A holomorphic $f$ with $\abs f\leq 1$ on $\partial\DD$ and no fixed point there has exactly one fixed point in $\DD$"
-- [ ] P-CAF13E — "Conformal bijections involving half-planes, slits, and Möbius transformations"
 - [ ] P-CAF13F — "A conformal map from the slit disk does not extend to a boundary homeomorphism"
 - [ ] P-CAF24B — "Entire function with a rational Taylor coefficient at every real point is a polynomial"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
@@ -1305,7 +1296,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
 - [ ] P-F07EX — "Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$"
 - [ ] P-F10IJ — "Injectivity of $g\circ f$ versus injectivity of $f$ and $g$"
-- [ ] P-F12FN — "Pointwise and uniform convergence of $nx/(n+x)$ on $[0,\infty)$"
 - [ ] P-F12IN — "$A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective"
 - [ ] P-F7Y7R — "Negation of two quantified statements"
 - [ ] P-FBY23 — "Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$"
