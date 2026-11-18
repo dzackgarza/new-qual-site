@@ -76,7 +76,7 @@ Let $S_{\Omega}=[0,\Omega)$ and, for $x\in S_{\Omega}$, let $S_{x}=\{y:y<x\}$ be
 $S_{x}$ is countable and its subspace topology is its order topology.
 
 ::: pf-proof
-Every element of $S_{\Omega}$ is a countable ordinal (Theorem 10.2 and §10, printed p. 66), so the set $S_{x}$ of ordinals below $x$ is countable. The set $S_{x}=[0,x)$ is a ray of the ordered set $S_{\Omega}$, hence convex, so the order topology of $S_{x}$ is the topology it inherits as a subspace (Theorem 16.4, printed p. 91).
+By Lemma 10.2 (printed p. 66) every section of $S_{\Omega}$ other than the one by $\Omega$ is countable, and $S_{x}=[0,x)$ is the section of $S_{\Omega}$ by its element $x$; so $S_{x}$ is countable. The set $S_{x}=[0,x)$ is a ray of the ordered set $S_{\Omega}$, hence convex, so the order topology of $S_{x}$ is the topology it inherits as a subspace (Theorem 16.4, printed p. 91).
 :::
 
 :::
@@ -94,7 +94,7 @@ The intervals $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$ form a basis for 
 $S_{x}$ is metrizable.
 
 ::: pf-proof
-A well-ordered set is normal in its order topology (Theorem 32.4, printed p. 205), hence regular, and $S_{x}$ is a well-ordered set in the order topology by step [](#countable){.pf-ref}; with the countable basis of step [](#basis){.pf-ref} the Urysohn metrization theorem (Theorem 34.1, printed p. 217) gives a metric for $S_{x}$ that induces its topology.
+A well-ordered set is normal in its order topology (Theorem 32.4, printed p. 202), hence regular, and $S_{x}$ is a well-ordered set in the order topology by step [](#countable){.pf-ref}; with the countable basis of step [](#basis){.pf-ref} the Urysohn metrization theorem (Theorem 34.1, printed p. 215) gives a metric for $S_{x}$ that induces its topology.
 :::
 
 :::
@@ -121,7 +121,7 @@ For $x\in S_{\Omega}$ the set $[0,x+1)=S_{x+1}$ is an open neighbourhood of $x$,
 $S_{\Omega}$ is limit point compact and not compact.
 
 ::: pf-proof
-Let $A\subset S_{\Omega}$ be infinite. Recursively choose $a_{1}=\min A$ and $a_{n+1}=\min\{a\in A:a>a_{n}\}$, which exists since otherwise $A\subset[0,a_{n}]$, a finite set. Then $a_{1}<a_{2}<\cdots$ is an increasing sequence in $A$; its supremum $\alpha$ is a countable ordinal, being a countable supremum of countable ordinals (§10, printed p. 66, on the arithmetic of ordinals), so $\alpha\in S_{\Omega}$, and every neighbourhood of $\alpha$ contains all but finitely many $a_{n}$. Hence $\alpha$ is a limit point of $A$, and $S_{\Omega}$ is limit point compact. It is not compact: the sets $[0,\alpha)$ for $\alpha<\Omega$ are open, they cover $S_{\Omega}$, and a finite subcollection is contained in the largest of its members, $[0,\alpha_{0})$, which omits $\alpha_{0}$.
+This is Example 2 of §28: an infinite $A\subset S_{\Omega}$ contains a countably infinite subset $B$, which being countable has an upper bound $b\in S_{\Omega}$; then $B\subset[a_{0},b]$, and $[a_{0},b]$ is compact because $S_{\Omega}$ has the least upper bound property, so $B$ has a limit point $x\in[a_{0},b]$, compactness implying limit point compactness (Theorem 28.1), and $x$ is a limit point of $A$ as well. Hence $S_{\Omega}$ is limit point compact. It is not compact: the sets $[0,\alpha)$ for $\alpha<\Omega$ are open in the order topology, they cover $S_{\Omega}$ since $\beta\in[0,\beta+1)$, and they are nested, so a finite subcollection is contained in its largest member $[0,\alpha_{0})$, which omits $\alpha_{0}$.
 :::
 
 :::
@@ -130,7 +130,7 @@ Let $A\subset S_{\Omega}$ be infinite. Recursively choose $a_{1}=\min A$ and $a_
 If $S_{\Omega}$ were paracompact it would be metrizable, which is impossible.
 
 ::: pf-proof
-By the Smirnov metrization theorem (Theorem 42.1, printed p. 261) a space that is locally metrizable and paracompact is metrizable; step [](#locally-metrizable){.pf-ref} gives the first hypothesis. Were $S_{\Omega}$ metrizable, it would be compact by Theorem 28.2 (printed p. 180), since it is limit point compact by step [](#limit-point-compact){.pf-ref}; but step [](#limit-point-compact){.pf-ref} also shows it is not compact. So $S_{\Omega}$ is not paracompact.
+By the Smirnov metrization theorem (Theorem 42.1, printed p. 261) a space is metrizable if and only if it is a paracompact Hausdorff space that is locally metrizable. The space $S_{\Omega}$ is Hausdorff in its order topology, being a simply ordered set (Theorem 17.11), and step [](#locally-metrizable){.pf-ref} gives local metrizability; so a paracompact $S_{\Omega}$ would be metrizable. Were $S_{\Omega}$ metrizable, it would be compact by Theorem 28.2 (printed p. 179), since it is limit point compact by step [](#limit-point-compact){.pf-ref}; but step [](#limit-point-compact){.pf-ref} also shows it is not compact. So $S_{\Omega}$ is not paracompact.
 :::
 
 :::
