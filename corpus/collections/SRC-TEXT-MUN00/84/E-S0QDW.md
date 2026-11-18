@@ -39,6 +39,16 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Corrected: this is Exercise 1 of §84, printed p. 513, not Exercise 3; the collection index carries the correct number and this note did not. Citations added: the Definition of a tree (printed p. 507), the Definition of a reduced edge path (printed p. 507), Lemma 84.2 (printed p. 507) whose second part is the assertion at issue, and Lemma 84.1 (printed p. 506) for connectivity through edge paths. Corrected: the example's being a tree was asserted; the proof now shows that a reduced edge path in the bi-infinite line is monotone, because in this graph two consecutive edges with opposite orientations are the same edge, so the graph has no closed reduced edge path. What the certificate does not cover: the graph is infinite, and its edges are the unit intervals between consecutive integers, which makes it a linear graph in the sense of the Definition on printed p. 502.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that the bi-infinite line is a connected linear
+    graph with no closed reduced edge path, hence a tree, and that it admits no
+    decomposition T = T_0 union A with A meeting T_0 in one vertex, since every vertex of
+    the line has degree two. The argument is the card's own; no retained set is cited.
+    Munkres §84 Exercise 1(b), printed p. 525, with Lemma 84.2 (printed p. 507). The printed
+    statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -48,17 +58,54 @@ Give an example to show that the second part of Lemma 84.2 need not hold if $T$ 
 :::
 
 ::: {.solution}
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §84 Exercise 1(b), printed p. 525, with the definitions of a linear graph (printed p. 502) and of a tree (printed p. 507), and the second part of Lemma 84.2 (printed p. 507), whose finiteness hypothesis it shows cannot be dropped.
 
-The second part of Lemma 84.2 (printed p. 507) is the converse: if $T$ is a finite tree in $X$ consisting of more than one edge, then $T=T_0\cup A$ where $T_0$ is a tree in $X$ and the edge $A$ meets $T_0$ in a single vertex.
+::: pf
 
-Let $T$ be the linear graph with vertex set $\ZZ$ and one edge joining $n$ to $n+1$ for each integer $n$ (Definition of a linear graph, printed p. 502). It is connected: any two vertices are joined by an edge path along the line (Lemma 84.1, printed p. 506). It contains no closed reduced edge path: in this graph two consecutive edges with opposite orientations are the same edge, so a reduced edge path has all its steps in the same direction, traversing each vertex at most once, and no such path is closed. Hence $T$ is a tree (Definition, printed p. 507).
+::: {.pf-step #line}
+Let $T$ be the linear graph with vertex set $\ZZ$ and one edge joining $n$ to $n+1$ for each $n\in\ZZ$.
 
-Suppose the conclusion of the second part of Lemma 84.2 held for this $T$: suppose
-$$
-T=T_0\cup A,
-$$
-where $T_0$ is a tree and the edge $A$ meets $T_0$ in exactly one vertex. Let $v$ be the other endpoint of $A$. Since $v\notin T_0$ and $T=T_0\cup A$, every edge of $T$ incident to $v$ must be $A$ itself. Thus $v$ would be incident with exactly one edge of $T$, that is, it would have degree $1$.
+::: pf-proof
+This is a linear graph: its vertex space is $\ZZ$ with the discrete topology, each edge is a copy of $[0,1]$ with its endpoints glued to the two vertices it joins, and the topology is the coherent one (definition, printed p. 502).
+:::
 
-But every vertex of the bi-infinite line is the endpoint of exactly two edges, the one joining it to its predecessor and the one joining it to its successor. This contradiction shows that no such decomposition exists. Hence the finiteness hypothesis in the second part of Lemma 84.2 cannot be dropped.
+:::
 
+::: {.pf-step #connected}
+$T$ is connected.
+
+::: pf-proof
+Any two vertices $m<n$ are joined by the edge path that traverses the edges joining $k$ to $k+1$ for $k=m,\dots,n-1$ (Lemma 84.1, printed p. 506). Since the vertex set meets every component and is path connected in this sense, $T$ is path connected, hence connected.
+:::
+
+:::
+
+::: {.pf-step #tree}
+$T$ contains no closed reduced edge path, so $T$ is a tree.
+
+::: pf-proof
+In this graph two consecutive edges with opposite orientations would be the same edge, so a reduced edge path has all its steps in the same direction and passes through each vertex at most once; such a path is not closed (definition of reduced edge path and of a tree, printed pp. 506--507). Hence $T$ is a tree.
+:::
+
+:::
+
+::: {.pf-step #no-decomposition}
+$T$ is not of the form $T_{0}\cup A$ with $T_{0}$ a tree and $A$ an edge meeting $T_{0}$ in exactly one vertex.
+
+::: pf-proof
+Suppose $T=T_{0}\cup A$ with $A$ an edge meeting $T_{0}$ in exactly one vertex, and let $v$ be the other endpoint of $A$, so $v\notin T_{0}$. Every edge of $T$ incident with $v$ lies in $T=T_{0}\cup A$; it is not in $T_{0}$, since $v\notin T_{0}$ and an edge of $T_{0}$ has both endpoints in $T_{0}$, so it must be $A$. Hence $v$ is incident with exactly one edge of $T$, that is, $v$ has degree $1$. But every vertex $n$ of the bi-infinite line is the endpoint of exactly two edges, the one joining it to $n-1$ and the one joining it to $n+1$. This contradiction shows that no such $T_{0}$ and $A$ exist.
+:::
+
+:::
+
+::: {.pf-step}
+The finiteness hypothesis in the second part of Lemma 84.2 cannot be dropped.
+
+::: pf-proof
+Lemma 84.2's second part asserts the decomposition for every finite tree with more than one edge. Step [](#tree){.pf-ref} exhibits a tree with more than one edge, and step [](#no-decomposition){.pf-ref} shows it admits no such decomposition; so the assertion fails without the finiteness hypothesis.
+:::
+
+:::
+
+:::
 :::
