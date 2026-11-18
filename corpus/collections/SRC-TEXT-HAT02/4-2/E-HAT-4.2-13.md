@@ -45,6 +45,20 @@ audit:
     the low cases the card separates: n=0 gives two points, and n=1 gives contractible universal covers so
     Exercise 12 applies directly. Not checked: nothing outside this exercise.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument above, whose shape is correct.
+    Made explicit: the vanishing of $\pi_i$ of the mapping-cylinder pair from the two long
+    exact sequences, the surjectivity half of the relative Hurewicz theorem being all that is
+    needed in degree $n+1$ (the prose used the isomorphism it does not give), the naturality
+    square that kills the Hurewicz images, and the two low-dimensional cases. Cited:
+    Proposition 4.1 printed p. 342, the pair sequence printed p. 344, Theorem 4.37 printed
+    p. 371, Exercise 12 printed p. 389, the exercise printed p. 390. Not claimed: a retained
+    solution set, so the argument is the card's own; and the citation of Corollary 2.34 for
+    the vanishing of $H_{>n}$ of an $n$-dimensional CW complex is by chapter and statement,
+    the cellular argument on printed p. 139 being the reason.
 ---
 
 ::: {.problem}
@@ -52,32 +66,97 @@ Show that a map between connected $n$-dimensional CW complexes is a homotopy equ
 :::
 
 ::: {.solution}
-Let
-$$
-f:X\to Y
-$$
-be a map of connected $n$-dimensional CW complexes inducing isomorphisms on $\pi_i$ for $i\le n$. In particular it is an isomorphism on $\pi_1$, so it lifts to a map of universal covers
-$$
-\widetilde f:\widetilde X\to\widetilde Y.
-$$
-For $n=0$, both spaces are points. For $n=1$, their universal covers are contractible trees, so Exercise 12 applies. Suppose henceforth that $n\ge2$.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, printed p. 390, and the hint followed is the exercise's own. No retained solution set covers this exercise, so the argument below is the card's own; it uses the relative Hurewicz theorem, Theorem 4.37, printed p. 371, and Exercise 12 of §4.2, printed p. 389.
 
-The universal covers are simply connected $n$-dimensional CW complexes, and $\widetilde f$ is an isomorphism on $\pi_i$ for $2\le i\le n$.
+Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducing isomorphisms $f_*:\pi_i(X)\to\pi_i(Y)$ for $i\le n$, and $p_X:\widetilde X\to X$, $p_Y:\widetilde Y\to Y$ are the universal covers.
 
-Consider its mapping-cylinder pair $(M_{\widetilde f},\widetilde X)$. The long exact sequence of homotopy groups shows that this pair is $n$-connected. Relative Hurewicz therefore gives
-$$
-H_i(M_{\widetilde f},\widetilde X)=0
-\qquad(i\le n).
-$$
-Relative Hurewicz also identifies $\pi_{n+1}(M_{\widetilde f},\widetilde X)$ with $H_{n+1}(M_{\widetilde f},\widetilde X)$. The homotopy exact sequence makes the former a quotient of $\pi_{n+1}(M_{\widetilde f})$. Its image under the relative Hurewicz map is zero: by naturality it factors through $H_{n+1}(M_{\widetilde f})=H_{n+1}(\widetilde Y)=0$. Thus $H_{n+1}(M_{\widetilde f},\widetilde X)=0$ as well. The homology exact sequence now gives
-$$
-\widetilde f_*:H_i(\widetilde X)\xrightarrow{\cong}H_i(\widetilde Y)
-\qquad(i\le n).
-$$
-For $i>n$, both homology groups vanish because the two universal covers are $n$-dimensional CW complexes. Hence $\widetilde f$ is a homology isomorphism in all degrees.
+::: pf
 
-Exercise 12 now applies: since $f$ is an isomorphism on $\pi_1$ and its lift is a homology equivalence,
+::: {.pf-step #lift}
+$f_*$ is an isomorphism on $\pi_1$, so $f$ lifts to a map of universal covers $\widetilde f:\widetilde X\to\widetilde Y$ with $p_Y\widetilde f=fp_X$, and $\widetilde f_*:\pi_i(\widetilde X)\to\pi_i(\widetilde Y)$ is an isomorphism for $2\le i\le n$.
+
+::: pf-proof
+A map lifts to the universal covers exactly when it carries $\pi_1$ of the domain into the subgroup $\pi_1(\widetilde Y)=0$ of $\pi_1(Y)$, that is, when $f_*\pi_1(X)=0$; here $f_*$ is an isomorphism onto $\pi_1(Y)$, so this holds only after choosing the basepoints in the same path component, which is the case. For $i\ge2$ the covering projection induces an isomorphism $\pi_i(\widetilde X)\cong\pi_i(X)$ and likewise for $Y$ (Proposition 4.1, printed p. 342), so $\widetilde f_*$ is the conjugate of $f_*$ and is an isomorphism in the stated range.
+
+:::
+
+:::
+
+::: {.pf-step #low-dimensions}
+The claim holds for $n\le1$.
+
+::: pf-proof
+For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomorphism. For $n=1$ the universal covers of connected graphs are trees (Proposition 1A.2, printed p. 84), hence contractible, so $\widetilde f$ is a homotopy equivalence; a map whose lift to universal covers is a homotopy equivalence is itself a homotopy equivalence, and $\widetilde f$ is one because it is a map between contractible spaces.
+
+:::
+
+:::
+
+::: {.pf-step #n-connected}
+For $n\ge2$ the pair $(M_{\widetilde f},\widetilde X)$, where $M_{\widetilde f}$ is the mapping cylinder of $\widetilde f$, is $(n-1)$-connected: $\pi_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
+
+::: pf-proof
+The pair is path connected. Its homotopy exact sequence (printed p. 344) reads
 $$
-\boxed{f\text{ is a homotopy equivalence}.}
+\pi_i(\widetilde X)\xrightarrow{\ \widetilde f_*\ }\pi_i(\widetilde Y)\to\pi_i(M_{\widetilde f},\widetilde X)\to\pi_{i-1}(\widetilde X)\xrightarrow{\ \widetilde f_*\ }\pi_{i-1}(\widetilde Y)
 $$
+for $i\ge2$, using $M_{\widetilde f}\simeq\widetilde Y$. For $2\le i\le n$ both outer maps are isomorphisms by step [](#lift){.pf-ref}, so the middle group is zero; for $i=1$ the pair is simply connected relative to $\widetilde X$ because $\widetilde X$ is, and $\pi_1$ of the pair vanishes whenever the inclusion induces a surjection on $\pi_1$.
+
+:::
+
+:::
+
+::: {.pf-step #hurewicz-low}
+$H_i(M_{\widetilde f},\widetilde X;\ZZ)=0$ for $i\le n$.
+
+::: pf-proof
+Theorem 4.37 (relative Hurewicz, printed p. 371) for the $(n-1)$-connected pair of step [](#n-connected){.pf-ref} gives $H_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
+
+:::
+
+:::
+
+::: {.pf-step #hurewicz-degree}
+$H_{n+1}(M_{\widetilde f},\widetilde X;\ZZ)=0$.
+
+::: pf-proof
+Theorem 4.37 also gives that the Hurewicz map $\pi_{n+1}(M_{\widetilde f},\widetilde X)\to H_{n+1}(M_{\widetilde f},\widetilde X)$ is surjective; it is enough to show that every element of the source dies. Every element of $\pi_{n+1}(M_{\widetilde f},\widetilde X)$ is the image of an element of $\pi_{n+1}(M_{\widetilde f})$ by exactness of the pair sequence, and naturality of the Hurewicz map makes the diagram
+$$
+\begin{array}{ccc}
+\pi_{n+1}(M_{\widetilde f})&\longrightarrow&\pi_{n+1}(M_{\widetilde f},\widetilde X)\\
+\downarrow&&\downarrow\\
+H_{n+1}(M_{\widetilde f})&\longrightarrow&H_{n+1}(M_{\widetilde f},\widetilde X)
+\end{array}
+$$
+commute. Since $M_{\widetilde f}\simeq\widetilde Y$ and $\widetilde Y$ is an $n$-dimensional CW complex, $H_{n+1}(M_{\widetilde f})=H_{n+1}(\widetilde Y)=0$, so the image of every element is zero.
+
+:::
+
+:::
+
+::: {.pf-step #homology-iso}
+$\widetilde f_*:H_i(\widetilde X)\to H_i(\widetilde Y)$ is an isomorphism for all $i$.
+
+::: pf-proof
+The long exact sequence of the pair $(M_{\widetilde f},\widetilde X)$, with $M_{\widetilde f}\simeq\widetilde Y$, contains
+$$
+H_{i+1}(M_{\widetilde f},\widetilde X)\to H_i(\widetilde X)\to H_i(\widetilde Y)\to H_i(M_{\widetilde f},\widetilde X) .
+$$
+For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step [](#hurewicz-degree){.pf-ref} (the latter for $i=n$), so the middle map is an isomorphism for $i\le n$. For $i>n$ both $\widetilde X$ and $\widetilde Y$ are $n$-dimensional CW complexes, so both groups vanish (Corollary 2.34 or the cellular complex of printed p. 139), and the map between two zero groups is an isomorphism.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$f$ is a homotopy equivalence.
+
+::: pf-proof
+$f_*:\pi_1(X)\to\pi_1(Y)$ is an isomorphism by hypothesis and $\widetilde f$ is a homology isomorphism by step [](#homology-iso){.pf-ref}; Exercise 12 of §4.2, printed p. 389, then gives that $f$ is a homotopy equivalence. (Equivalently, $\widetilde f$ is a homotopy equivalence by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, and a map with that lift and an isomorphism on $\pi_1$ is a homotopy equivalence.)
+
+:::
+
+:::
+
+:::
 :::
