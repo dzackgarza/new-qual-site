@@ -39,9 +39,51 @@ Give an example to show that if $X$ is paracompact, it does not follow that for 
 :::
 
 ::: {.solution}
-Take $X=\RR$, which is metrizable and hence paracompact, and consider the open cover
-$$
-\mathcal U=\{(-n,n):n\in\ZZ_+\}.
-$$
-Any subcollection that covers $\RR$ must contain intervals with arbitrarily large $n$, so it must be infinite. But every member of $\mathcal U$ contains $0$. Hence any infinite subcollection fails even to be point-finite at $0$, and therefore cannot be locally finite. Thus this open cover has no locally finite subcover, although $X$ is paracompact.
+
+No retained solution set covers this exercise: the card's own example follows, with paracompactness of $\RR$ cited and the failure of local finiteness proved rather than asserted.
+
+::: pf
+
+::: {.pf-step #paracompact}
+$\RR$ is paracompact.
+
+::: pf-proof
+$\RR$ is metrizable, and every metrizable space is paracompact (Theorem 41.4, printed p. 257).
+:::
+
+:::
+
+::: {.pf-step #cover}
+$\mathcal{U}=\theset{(-n,n)\mid n\in\ZZ_{+}}$ is an open cover of $\RR$.
+
+::: pf-proof
+Each $(-n,n)$ is open in $\RR$, and a real $x$ lies in $(-n,n)$ for every integer $n>\abs{x}$.
+:::
+
+:::
+
+::: {.pf-step #infinite}
+Every subcollection of $\mathcal{U}$ that covers $\RR$ is infinite.
+
+::: pf-proof
+A finite subcollection has a largest index $N$, and its union is then the largest member $(-N,N)$, which is a proper subset of $\RR$; so a finite subcollection never covers $\RR$.
+:::
+
+:::
+
+::: {.pf-step #not-locally-finite}
+No infinite subcollection of $\mathcal{U}$ is locally finite.
+
+::: pf-proof
+Every member $(-n,n)$ of $\mathcal{U}$ contains $0$. So an infinite subcollection meets every neighbourhood of $0$ in infinitely many of its members, that is, it is not locally finite at the point $0$.
+:::
+
+:::
+
+::: {.pf-qed}
+By steps [](#cover){.pf-ref}, [](#infinite){.pf-ref} and [](#not-locally-finite){.pf-ref} the open cover $\mathcal{U}$ of the paracompact space $\RR$ has no locally finite subcollection that covers $\RR$ — indeed no infinite subcollection is locally finite at all. So paracompactness does not give locally finite subcoverings of a given open covering.
+:::
+
+:::
+
 :::
