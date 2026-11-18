@@ -25,46 +25,44 @@ Hint: A set $S \subset \CC$ is convex if and only if $tz_1 + (1-t)z_2 \in S$ for
 :::
 
 ::: {.solution}
-Because $K\subset\widehat K$, one direction in (a) is immediate:
-$$
-d(\widehat K,\CC\setminus\Omega)
-\le d(K,\CC\setminus\Omega).
-$$
-For the reverse inequality, fix $a\in\CC\setminus\Omega$. The function
-$$
-f_a(z)=\frac1{z-a}
-$$
-is holomorphic on $\Omega$. Hence for every $z\in\widehat K$,
-$$
-\frac1{\abs{z-a}}
-\le \sup_{w\in K}\frac1{\abs{w-a}}
-=\frac1{d(a,K)}.
-$$
-Thus $\abs{z-a}\ge d(a,K)$. Taking the infimum first over
-$z\in\widehat K$ and then over $a\notin\Omega$ gives
-$$
-d(\widehat K,\CC\setminus\Omega)
-\ge d(K,\CC\setminus\Omega),
-$$
-proving (a).
 
-For (b), suppose $z_0\notin\widehat K_c$. By planar convex separation there
-are $\theta\in\RR$ and $c\in\RR$ such that
-$$
-\operatorname{Re}(e^{-i\theta}z_0)>c
-\ge \sup_{w\in K}\operatorname{Re}(e^{-i\theta}w).
-$$
-For $n\ge1$ set
-$$
-F_n(z)=\exp(ne^{-i\theta}z).
-$$
-Then
-$$
-\abs{F_n(z_0)}
->\sup_{w\in K}\abs{F_n(w)}.
-$$
-Since $F_n\in\mathcal O(\Omega)$, this shows $z_0\notin\widehat K$. Therefore
-$$
-\widehat K\subset\widehat K_c.
-$$
+No retained solution set covers this exercise: the card's own argument follows, with the one inequality from $K\subseteq\widehat K$, the reciprocal-function estimate and the separation argument for (b) as separate steps.
+
+Let $\Omega\subseteq\CC$ be open, $K\Subset\Omega$ compact, and $\widehat K=\theset{z\in\Omega\mid \abs{f(z)}\le\sup_K\abs f\ \text{for all}\ f\in\mathcal O(\Omega)}$.
+
+::: pf
+
+::: {.pf-step #one-way}
+$d(\widehat K,\CC\setminus\Omega)\le d(K,\CC\setminus\Omega)$.
+
+::: pf-proof
+$K\subseteq\widehat K$, because for $z\in K$ the inequality $\abs{f(z)}\le\sup_K\abs f$ is trivial. The distance to a fixed closed set is monotone under inclusion, so the inequality follows.
+:::
+
+:::
+
+::: {.pf-step #reverse}
+$d(\widehat K,\CC\setminus\Omega)\ge d(K,\CC\setminus\Omega)$.
+
+::: pf-proof
+Fix $a\in\CC\setminus\Omega$; then $f(z)=1/(z-a)$ is holomorphic on $\Omega$. Put $\delta=\inf_{w\in K}\abs{w-a}$, so $\delta\ge d(K,\CC\setminus\Omega)$. For $z\in\widehat K$ the defining inequality gives $\frac{1}{\abs{z-a}}\le\sup_{w\in K}\frac{1}{\abs{w-a}}=\frac1\delta$, hence $\abs{z-a}\ge\delta$. So every $z\in\widehat K$ satisfies $\abs{z-a}\ge d(K,\CC\setminus\Omega)$, and taking the infimum over $z$ and then over $a$ gives the reverse inequality.
+:::
+
+:::
+
+::: {.pf-step #separation}
+If $z_{0}\notin K_{c}$, the convex hull of $K$, then $z_{0}\notin\widehat K$.
+
+::: pf-proof
+$K_{c}$ is compact and convex, so a point outside it is strictly separated: there is $\zeta\in\CC\setminus\{0\}$ with $\operatorname{Re}(\zeta z_{0})>\sup_{w\in K}\operatorname{Re}(\zeta w)$ (supporting-line form of the Hahn–Banach theorem for a compact convex set). The exponential $f(w)=e^{\zeta w}$ is entire, hence in $\mathcal O(\Omega)$, and $\abs{f(w)}=e^{\operatorname{Re}(\zeta w)}$; therefore $\abs{f(z_{0})}=e^{\operatorname{Re}(\zeta z_{0})}>e^{\sup_K\operatorname{Re}(\zeta w)}=\sup_K\abs f$, so $z_{0}$ fails the defining condition of $\widehat K$.
+:::
+
+:::
+
+::: {.pf-qed}
+(a) is steps [](#one-way){.pf-ref} and [](#reverse){.pf-ref}. (b): by step [](#separation){.pf-ref} the complement of $K_{c}$ is contained in the complement of $\widehat K$, that is $\widehat K\subseteq K_{c}=\overline{\mathrm{conv}}(K)$.
+:::
+
+:::
+
 :::
