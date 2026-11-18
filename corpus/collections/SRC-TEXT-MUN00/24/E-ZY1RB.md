@@ -42,6 +42,13 @@ audit:
     the printed exercise omits; the one-point ordered set is connected and is not a linear
     continuum, so the solution now names the hypothesis it uses and records that exception.
     The statement is unchanged, and the two separations are still the source's.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair: the exercise is printed on p. 158, not p. 157, and the solution's citation is
+    corrected. Checked against the PDF, where the page numbered 158 carries the exercise and page 157
+    does not. Nothing else on the card changed.
 ---
 
 ::: {.exercise}
@@ -53,7 +60,7 @@ Show that if $X$ is connected, then $X$ is a linear continuum.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.4, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both separations below are that solution's, and the argument for the nonemptiness of its first piece is supplied here, the source asserting it from the absence of a supremum, which does not give it. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 4, printed p. 157, with the definition of a linear continuum printed on p. 153: a simply ordered set *having more than one element* with the least upper bound property and, for all $x<y$, an element strictly between them. The printed exercise omits the clause on the number of elements, and that clause cannot be dropped, since a one-point ordered set is connected and is not a linear continuum. The claim is therefore proved for an ordered set of more than one element, the only case in which the book's term applies.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.4, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both separations below are that solution's, and the argument for the nonemptiness of its first piece is supplied here, the source asserting it from the absence of a supremum, which does not give it. The statement was checked against Munkres, *Topology* (2000), §24 Exercise 4, printed p. 158, with the definition of a linear continuum printed on p. 153: a simply ordered set *having more than one element* with the least upper bound property and, for all $x<y$, an element strictly between them. The printed exercise omits the clause on the number of elements, and that clause cannot be dropped, since a one-point ordered set is connected and is not a linear continuum. The claim is therefore proved for an ordered set of more than one element, the only case in which the book's term applies.
 
 Throughout, $X$ is a simply ordered set with more than one element carrying the order topology, and $X$ is assumed connected. For $x\in X$ the sets $(-\infty,x)=\theset{y\in X\mid y<x}$ and $(x,+\infty)=\theset{y\in X\mid x<y}$ are the open rays, which are open in the order topology (§14, printed p. 86). An upper bound of a subset $A\subset X$ is an element $b$ with $a\leq b$ for every $a\in A$, and $X$ has the least upper bound property when every nonempty such $A$ that has an upper bound has a least one.
 
