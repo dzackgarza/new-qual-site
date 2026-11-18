@@ -45,6 +45,15 @@ audit:
     to $V^*$ is onto by extending a functional from $V$ to $F^n$; its kernel is $V^\perp$; rank
     nullity gives $\dim V^\perp=n-k$; vanishing on $V\times V$ puts $V$ inside $V^\perp$, forcing
     $k\le n-k$. Nothing is claimed about the case $k\le n/2$, where the restriction can vanish.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 260 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 269, whose running
+    folio reads 260. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -52,7 +61,7 @@ Show that a nonsingular symmetric or skew-symmetric bilinear pairing over a fiel
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 28, printed p. 259, and uses only nonsingularity of the pairing, not its symmetry: the symmetry hypothesis of the exercise is not needed.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 28, printed p. 260, and uses only nonsingularity of the pairing, not its symmetry: the symmetry hypothesis of the exercise is not needed.
 
 ::: pf
 
