@@ -255,6 +255,23 @@ audit:
     are free of countably infinite rank, so that his $M_2$, $M_3$ and $M_4$ are not distinguished by
     fundamental groups. Checked: every page named above. Not claimed: that the thesis contains
     Hatcher's doubled block, or that its Theorem on $G^k$ applies to it.
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The published literature on fundamental groups of horned-sphere complements was enumerated from
+    the source best placed to know it --- the Literature Cited of the thesis read in the event above,
+    printed p. 33, read as an image. It lists exactly two items on horned spheres: W. A. Blankinship
+    and R. H. Fox, "Remarks on Pathological Open Subsets of 3-Space and Their Fundamental Groups",
+    Proc. Amer. Math. Soc. 1 (1950), 618--624, which is the classical two-horn case; and L. O.
+    Cannon, "Sums of Solid Horned Spheres", Trans. Amer. Math. Soc. 122 (1966), 203--228, which
+    belongs to the Schoenflies side --- sums of solid horned spheres that are 3-spheres, the Bing and
+    Ball line --- and is not a computation of the complement group of a four-horn block. The rest of
+    the list is Eilenberg--Steenrod, Crowell--Fox, Magnus--Karrass--Solitar, Massey and Rotman, all
+    general references. Nothing in it analyses the block Hatcher's figure draws, and the direct
+    searches recorded in the two events above returned no other candidate. The search for a published
+    analysis of Hatcher's doubled block is therefore complete for everything reachable here, and what
+    remains for this card is a disposition, not a file.
 ---
 
 ::: {.problem}
