@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1495 of the 12429 problem cards that have a solution
+1488 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1495
+- Problems: 1488
 - Problem cards with a solution: 12429
 
-## Problems (1495)
+## Problems (1488)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -44,7 +44,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-AMD-IBDKWV2J — "Abelian groups are nilpotent"
 - [ ] E-AMD-SD3PTZ4O — "The union of two ideals need not be an ideal"
 - [ ] E-APRPU — "Higher-dimensional separation theorems from the no-retraction theorem"
-- [ ] E-ARGEV — "Pointwise bounded collections that fail equicontinuity"
 - [ ] E-AWEWJ — "An affine coordinate homeomorphism of R^omega"
 - [ ] E-AZ6JL — "Three topologies on the unit square"
 - [ ] E-BAZND — "Uncountable powers of the line are not normal"
@@ -809,7 +808,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-ZXEH5 — "Generalized tube lemma for compact rectangles"
 - [ ] P-22T5H — "An analytic function real on a closed curve is constant"
 - [ ] P-24L43 — "Orbits of $\GL_3(\QQ[x])\times\GL_3(\QQ[x])$ on matrices of prescribed determinant"
-- [ ] P-3DZXT — "The binomial theorem, $(x+y)^5\equiv x^5+y^5\pmod{5}$, and $(x+y)^{5^n}\equiv x^{5^n}+y^{5^n}\pmod{5}$"
 - [ ] P-4CJY7 — "Characteristic and minimal polynomials of the Frobenius automorphism"
 - [ ] P-4GMLL — "Jordan form of $\begin{pmatrix}-3&3&-2\\-7&6&-3\\1&-1&2\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-4HGM3 — "Groups of order 8"
@@ -872,7 +870,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
 - [ ] P-APAS15B — "Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$"
-- [ ] P-APAS15C — "Character table of $S_4$, Kronecker product of Specht modules, and its endomorphism algebra"
 - [ ] P-APAS15D — "Finite-group complex matrix representations are diagonalizable; infinite counterquestion"
 - [ ] P-APAS19F — "Character table of $D_4$ and decomposition of $V\otimes V$"
 - [ ] P-APAS19H — "Character table of $S_3\times S_2$ and restriction of $S^{(3,2)}$"
@@ -900,9 +897,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS26D — "An algebra is commutative iff every element is normal"
 - [ ] P-APAS26G — "Eigenvalues and eigenspaces of the $3$-cube adjacency operator"
 - [ ] P-APAS26J — "Centralizer of $\mathcal{C}(H)$ in $\mathcal{C}(G)$ via branching multiplicities"
-- [ ] P-APASP07A — "Irreducible representations of Z/3 × Z/3 and an extension to a group of order 27"
 - [ ] P-APASP07D — "Trace and computation of the averaged conjugate of a matrix over a finite group"
-- [ ] P-APASP07G — "Decomposition of an induced symmetric group module into irreducibles"
 - [ ] P-APASP07H — "Young diagrams with nonzero character on an (n-1)-cycle in S_n"
 - [ ] P-APASP07J — "Invariants of Z/3 acting on a two-dimensional vector space and Hilbert series"
 - [ ] P-APASP07K — "Equivalent representations yield the same Hilbert series of invariant rings"
@@ -1294,7 +1289,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-HGRO17 — "The inverse Galois problem over the rationals"
 - [ ] P-HGRO27 — "A finite group whose elements have prime-power order"
 - [ ] P-HGRO31 — "Sylow theorems"
-- [ ] P-HI4U2 — "The rings and fields $K[x]$, $K(x)$, $K[\alpha]$, and $K(\alpha)$"
 - [ ] P-HLKLH — "A holomorphic function with $\abs{f}=1$ on the unit circle, or $\abs{f}\geq 1$ with an interior point of modulus less than $1$, covers the disc"
 - [ ] P-HYQCG — "Composition series, solvability, and nilpotence"
 - [ ] P-IMVV7 — "Permutations, combinations, and the number of injections from a $k$-set to an $n$-set"
@@ -1372,7 +1366,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-MMAQ-MLE74H7M42 — "Classification of finite fields"
 - [ ] P-MMCHV — "Termwise differentiation of $\sum n^{-x}$ on $(1,\infty)$"
 - [ ] P-MNR6F — "$f^{-1}(f(S))=S$ for all $S$ iff $f$ is injective"
-- [ ] P-MSIER — "Pointwise convergence versus convergence in measure on a finite measure space"
 - [ ] P-MSLD5 — "Negation of a mixed-quantifier statement and a flawed inductive characterization"
 - [ ] P-MT5824-7-01 — "The second lower-central term and abelian nilpotence"
 - [ ] P-MT5824-7-02 — "Central series of S3 and a nilpotent extension"
