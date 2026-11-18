@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1376 of the 12429 problem cards that have a solution
+1375 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1376
+- Problems: 1375
 - Problem cards with a solution: 12429
 
-## Problems (1376)
+## Problems (1375)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -31,7 +31,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-AMD-5UFPG7F5 — "An ideal is maximal iff the quotient is a field"
 - [ ] E-AMD-74T5EHRR — "The center of $S_n$ is trivial for $n\geq 3$"
 - [ ] E-AMD-7FMEI2QD — "A ring is local iff $x$ or $1-x$ is a unit for every $x$"
-- [ ] E-AMD-DLD6LYAM — "Groups of order $12$ with a normal subgroup of order $4$ are isomorphic to $A_4$"
 - [ ] E-AMD-DQCYAQBD — "Quotients of dihedral groups are dihedral"
 - [ ] E-AMD-E3UUQEAP — "Splitting field of $x^3-2$ is $\QQ(\sqrt[3]{2},\zeta_3)$"
 - [ ] E-AMD-EBIC3Z5S — "An integral domain in which every prime ideal is maximal is a field, hence a UFD"
