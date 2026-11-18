@@ -113,6 +113,23 @@ audit:
     Supplementary Exercises is "the list of twelve spaces"; the list printed on p. 228 runs (a) to (k), which is
     eleven spaces, and the note now says so. The seventeen properties, the table, the two spaces that exclude the
     nine unguaranteed properties and the printed statement (Exercise 3, printed p. 228) are untouched.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked every one of the seventeen properties against
+    the book: (5),(8) hypothesis; (6) Theorem 28.1; (7) the whole space is a compact
+    subspace containing a neighbourhood; (11) Theorem 32.3; (9),(10) normal implies regular
+    and completely regular; (14) a finite subcover is a countable one. For the nine not
+    guaranteed the two spaces are checked claim by claim: the Cantor set is compact
+    Hausdorff, totally disconnected and has no isolated points (Exercise 27.6(a),(d)), which
+    excludes (1),(2),(3),(4); S-bar-Omega is compact Hausdorff (Exercise 29.7 with Theorem
+    29.1 and Example 3 of §29, and Example 2 of §32 uses it as such), fails first
+    countability at Omega by the countable-supremum argument, has no countable dense subset,
+    and so fails (12),(13),(15),(16),(17). The seventeen properties are now listed with the
+    book's numbering in the card, since the exercise refers to them by position. The
+    argument is the card's own; no published solution of this supplementary exercise was
+    located. Page numbers not verifiable from the extraction are not asserted.
 ---
 
 ::: {.exercise}
@@ -123,22 +140,164 @@ Which of these properties does a compact Hausdorff space have?
 :::
 
 ::: {.solution}
-Of the seventeen properties listed at the head of the Supplementary Exercises, before Exercise 1, every compact Hausdorff space has these eight, and no others are guaranteed:
+No published solution of this supplementary exercise was located; the argument is the card's own, checked against the numbered results cited in each step. The seventeen properties, with the numbering the book uses at the head of the Supplementary Exercises (Review of the Basics), printed p. 228, are: (1) connected, (2) path connected, (3) locally connected, (4) locally path connected, (5) compact, (6) limit point compact, (7) locally compact Hausdorff, (8) Hausdorff, (9) regular, (10) completely regular, (11) normal, (12) first-countable, (13) second-countable, (14) Lindelöf, (15) has a countable dense subset, (16) locally metrizable, (17) metrizable.
 
-| Number | Property | Deciding result |
-| --- | --- | --- |
-| 5 | Compact | Hypothesis |
-| 6 | Limit point compact | Compactness implies limit point compactness, Theorem 28.1 |
-| 7 | Locally compact Hausdorff | The whole space is a compact subspace containing a neighbourhood of each point, which is the definition of local compactness in §29; Hausdorffness is the hypothesis |
-| 8 | Hausdorff | Hypothesis |
-| 9 | Regular | The space is normal by Theorem 32.3, and a normal space is regular (§31) |
-| 10 | Completely regular | The Urysohn lemma, Theorem 33.1, applies to a normal space, and a normal space is completely regular (§33) |
-| 11 | Normal | Theorem 32.3 |
-| 14 | Lindelöf | Every open cover has a finite subcover, so it has a countable one (§30) |
+Let $X$ be a compact Hausdorff space throughout.
 
-The remaining nine properties are not guaranteed, and two spaces exclude all of them.
+::: pf
 
-**The Cantor set** $C \subset [0,1]$, Exercise 27.6, is compact Hausdorff. It is totally disconnected, Exercise 27.6(a), and has no isolated points, Exercise 27.6(d), so no point of it has a connected neighbourhood: a connected neighbourhood of $x$ would be a connected set containing $x$, hence the point $x$ itself, and $\{x\}$ is not open. This excludes connectedness, path connectedness, local connectedness and local path connectedness — properties 1 to 4. A path connected space is connected and a locally path connected space is locally connected, so the two path entries follow as well.
+::: {.pf-step #guaranteed-basic}
+$X$ has (5), (8) and (7).
 
-**The ordinal interval** $\overline S_\Omega = [0,\omega_1]$ is compact Hausdorff: it is the one-point compactification of $S_\Omega$, Exercise 29.7 with Theorem 29.1. It is not first countable at $\omega_1$: every neighbourhood of $\omega_1$ contains a final segment $(\alpha,\omega_1]$. Given countably many neighbourhoods $U_1,U_2,\ldots$ of $\omega_1$, choose for each $n$ an $\alpha_n$ with $(\alpha_n,\omega_1]\subseteq U_n$; the supremum $\beta=\sup_n\alpha_n$ of countably many ordinals below $\omega_1$ is again below $\omega_1$, and $\gamma=\beta+1<\omega_1$ because $\omega_1$ is a limit ordinal. The final segment $(\gamma,\omega_1]$ is a neighbourhood of $\omega_1$, and it contains none of the $U_n$: for each $n$, $\alpha_n\le\beta<\gamma$, so $\gamma\in(\alpha_n,\omega_1]\subseteq U_n$, while $\gamma\notin(\gamma,\omega_1]$. So no countable family of neighbourhoods of $\omega_1$ is a local base there. It is not separable: a countable set of ordinals below $\omega_1$ is bounded, so if $D$ is countable and $\beta$ bounds the ordinals of $D$ that lie below $\omega_1$, then $\beta < \omega_1$ and the nonempty open interval $(\beta, \omega_1)$ misses $D$, the point $\omega_1$ itself not lying in it; so $D$ is not dense. A metrizable space is first countable, the balls $B(x,1/n)$ forming a countable basis at $x$ (§21), and a second countable space is first countable, its basis elements containing a point forming a countable basis there (§30). Since $\overline S_\Omega$ has no countable basis at $\omega_1$, it is neither second countable nor metrizable, which is properties 13 and 17. It is not locally metrizable either: a neighbourhood of $\omega_1$ contains a final segment $(\alpha,\omega_1]$, which is not first countable at $\omega_1$ and so is not metrizable, property 16. That leaves no unaccounted property, and the count is eight guaranteed and nine not.
+::: pf-proof
+(5) and (8) are the hypothesis. For (7): given $x\in X$ and a neighbourhood $U$ of $x$, the whole space $X$ is a compact subspace containing the neighbourhood $U$ of $x$, which is exactly the condition for $X$ to be locally compact in the sense of §29; combined with (8) this gives (7).
+:::
+
+:::
+
+::: {.pf-step #limit-point}
+$X$ has (6).
+
+::: pf-proof
+A compact space is limit point compact (Theorem 28.1): every infinite subset of $X$ has a limit point in $X$.
+:::
+
+:::
+
+::: {.pf-step #normal}
+$X$ has (11).
+
+::: pf-proof
+Every compact Hausdorff space is normal (Theorem 32.3).
+:::
+
+:::
+
+::: {.pf-step #regular}
+$X$ has (9) and (10).
+
+::: pf-proof
+A normal space is regular: it is $T_{1}$, and disjoint closed sets — in particular a point and a closed set not containing it — are separated by disjoint open sets (§31). A normal space is completely regular, by Urysohn's lemma applied to a point and a closed set not containing it (§33). Both properties are inherited from (11).
+:::
+
+:::
+
+::: {.pf-step #lindelof}
+$X$ has (14).
+
+::: pf-proof
+Every open cover of $X$ has a finite subcover, and a finite subcollection is in particular a countable one.
+:::
+
+:::
+
+::: {.pf-step #cantor}
+The Cantor set $C$ is a compact Hausdorff space that lacks (1), (2), (3) and (4), so none of those four is guaranteed.
+
+:::: pf-proof
+
+::: {.pf-step #cantor-facts}
+$C$ is compact Hausdorff, totally disconnected, and has no isolated points.
+
+::: pf-proof
+$C$ is a closed subspace of the compact Hausdorff space $[0,1]$, hence compact (Theorem 26.2) and Hausdorff. It is totally disconnected and has no isolated points by Munkres §27 Exercise 6(a) and (d).
+:::
+
+:::
+
+::: {.pf-step #cantor-not-connected}
+$C$ is neither connected nor path connected.
+
+::: pf-proof
+$C$ has more than one point, and every connected subset of $C$ is a single point because $C$ is totally disconnected; so $C$ is not connected. A path in $C$ is a continuous image of $[0,1]$, hence connected, hence a single point; so any two points of $C$ that are joined by a path coincide, and $C$ is not path connected.
+:::
+
+:::
+
+::: {.pf-step #cantor-not-locally}
+$C$ is neither locally connected nor locally path connected.
+
+::: pf-proof
+Let $x\in C$ and let $V$ be a connected neighbourhood of $x$. As $C$ is totally disconnected, $V=\{x\}$; but $V$ is a neighbourhood, so it contains an open set of $C$ containing $x$, and $\{x\}$ would then be open, making $x$ isolated, contrary to step [](#cantor-facts){.pf-ref}. So $x$ has no connected neighbourhood and $C$ is not locally connected. A locally path connected space is locally connected, since a path connected set is connected, so $C$ is not locally path connected either.
+:::
+
+:::
+
+::: {.pf-step}
+$C$ lacks (1), (2), (3) and (4).
+
+::: pf-proof
+Steps [](#cantor-facts){.pf-ref}, [](#cantor-not-connected){.pf-ref} and [](#cantor-not-locally){.pf-ref} give a compact Hausdorff space failing each of the four, so a compact Hausdorff space need not have any of them.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #ordinal}
+The space $\overline{S}_{\Omega}$ is a compact Hausdorff space that lacks (12), (13), (15), (16) and (17), so none of those five is guaranteed.
+
+:::: pf-proof
+
+::: {.pf-step #ordinal-compact}
+$\overline{S}_{\Omega}$ is compact Hausdorff.
+
+::: pf-proof
+$\overline{S}_{\Omega}$ is the one-point compactification of $S_{\Omega}$ (Munkres §29 Exercise 7), $S_{\Omega}$ is locally compact because a simply ordered set with the least upper bound property is locally compact (Example 3 of §29), and the one-point compactification of a locally compact Hausdorff space is compact Hausdorff (Theorem 29.1). The book also uses $\overline{S}_{\Omega}\times\overline{S}_{\Omega}$ as a compact Hausdorff space in Example 2 of §32.
+:::
+
+:::
+
+::: {.pf-step #ordinal-first-countable}
+$\overline{S}_{\Omega}$ is not first countable at $\Omega$.
+
+::: pf-proof
+Every neighbourhood of $\Omega$ contains a final segment $(\alpha,\Omega]$, since those sets are a base at the largest element in the order topology. Suppose $U_{1},U_{2},\dots$ are neighbourhoods of $\Omega$; for each $n$ choose $\alpha_{n}$ with $(\alpha_{n},\Omega]\subset U_{n}$. The supremum $\beta=\sup_{n}\alpha_{n}$ of a countable set of ordinals below $\Omega$ is again below $\Omega$, and $\gamma=\beta+1<\Omega$ because $\Omega$, being the first uncountable ordinal, is a limit ordinal. The final segment $(\gamma,\Omega]$ is a neighbourhood of $\Omega$ and contains none of the $U_{n}$: for each $n$ one has $\alpha_{n}\le\beta<\gamma$, so $\gamma\in(\alpha_{n},\Omega]\subset U_{n}$ while $\gamma\notin(\gamma,\Omega]$. So no countable family of neighbourhoods of $\Omega$ is a base there.
+:::
+
+:::
+
+::: {.pf-step #ordinal-separable}
+$\overline{S}_{\Omega}$ has no countable dense subset.
+
+::: pf-proof
+Let $D$ be countable and let $\beta$ bound the members of $D$ that lie in $S_{\Omega}$; then $\beta<\Omega$ as in step [](#ordinal-first-countable){.pf-ref}. The set $(\beta,\Omega)$ is nonempty, since $\beta+1<\Omega$ and $\beta<\beta+1<\Omega$, and open; it contains no point of $D$, because every member of $D\cap S_{\Omega}$ is at most $\beta$ and $\Omega\notin(\beta,\Omega)$. So $D$ is not dense.
+:::
+
+:::
+
+::: {.pf-step #ordinal-countable-axioms}
+$\overline{S}_{\Omega}$ is neither second countable, nor metrizable, nor locally metrizable.
+
+::: pf-proof
+A second countable space is first countable, so step [](#ordinal-first-countable){.pf-ref} excludes (13). A metrizable space is first countable, since the balls of radius $1/n$ about a point form a countable base there, so (17) is excluded as well. If $\overline{S}_{\Omega}$ were locally metrizable, some neighbourhood $U$ of $\Omega$ would be metrizable in the subspace topology; that $U$ contains a final segment $(\alpha,\Omega]$, which is then a subspace of a metrizable space and hence metrizable, and so first countable at $\Omega$ — contrary to the countable-supremum argument of step [](#ordinal-first-countable){.pf-ref} applied inside $(\alpha,\Omega]$, whose neighbourhoods of $\Omega$ are the same final segments. So (16) is excluded.
+:::
+
+:::
+
+::: {.pf-step}
+$\overline{S}_{\Omega}$ lacks (12), (13), (15), (16) and (17).
+
+::: pf-proof
+Steps [](#ordinal-compact){.pf-ref}, [](#ordinal-first-countable){.pf-ref}, [](#ordinal-separable){.pf-ref} and [](#ordinal-countable-axioms){.pf-ref} give a compact Hausdorff space failing each of the five.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+A compact Hausdorff space has exactly (5), (6), (7), (8), (9), (10), (11) and (14), and no other of the seventeen is guaranteed.
+
+::: pf-proof
+Steps [](#guaranteed-basic){.pf-ref}, [](#limit-point){.pf-ref}, [](#normal){.pf-ref}, [](#regular){.pf-ref} and [](#lindelof){.pf-ref} establish the eight properties for an arbitrary compact Hausdorff space. Step [](#cantor){.pf-ref} exhibits a compact Hausdorff space failing (1), (2), (3), (4) and step [](#ordinal){.pf-ref} one failing (12), (13), (15), (16), (17); the seventeen properties are exactly those listed at the head of the exercise, so the remaining nine are not guaranteed.
+:::
+
+:::
+
+:::
 :::
