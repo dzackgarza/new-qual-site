@@ -37,6 +37,20 @@ audit:
     the card's: singletons into the power set, and the passage from a countable subset to
     a chosen enumeration of it, which lands in (X^omega)^omega and then in X^omega because
     omega x omega is countably infinite. He also flags the choice used, as the card does.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps, transcribing the cited published solution: Dan Whitman,
+    Topology, Second Edition by James Munkres: Solutions Manual (2019), Exercise 7.8, printed
+    pp. 90-92. Checked against Munkres §7 Exercise 8, whose number is read from the collection
+    index. Each step re-read: singletons inject X^omega into the countable subsets; choosing an
+    enumeration of each nonempty countable subset is a genuine choice, and the range of the chosen
+    surjection recovers the subset, so the tagged assignment is injective; and
+    {0} + (Z_+ x Z_+) is countably infinite, so X times (X^omega)^omega is X^omega. Schroeder-
+    Bernstein closes. The remark that the argument uses choice is kept, and the card does not claim
+    the result in ZF alone. Not claimed: any statement about the cardinality of the set of all
+    subsets of X^omega, which is larger by Cantor's theorem.
 ---
 
 ::: {.exercise}
@@ -45,46 +59,67 @@ Let $X$ denote the two-element set $\{0,1\}$ ; let $\mathcal{B}$ be the set of c
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.8, printed pp. 90--92** (`tmp/sources/munkres-solutions-whitman.pdf`); the two injections and the choice of an enumeration for each countable subset are his, and so is the remark that the choice step is genuine.
+The argument is transcribed from the published solution of Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.8, printed pp. 90--92 (`tmp/sources/munkres-solutions-whitman.pdf`); the two injections, the choice of an enumeration for each countable subset and the remark that the choice is genuine are his. It is checked against Munkres, Topology (2000), §7 Exercise 8.
 
-Let $\mathcal B$ be the set of countable subsets of $X^\omega$, where $X=\{0,1\}$.
+::: pf
 
-There is an immediate injection
-$$
-X^\omega\hookrightarrow\mathcal B,
-\qquad
-x\mapsto\{x\}.
-$$
+::: {.pf-step #oneway}
+$X^{\omega}$ injects into $\mathcal B$, the set of countable subsets of $X^{\omega}$.
 
-For the opposite direction, use the axiom of choice to choose, for every nonempty $S\in\mathcal B$, a surjection
-$$
-e_S:\ZZ_+\to S.
-$$
-Fix one sequence $e_\varnothing\in(X^\omega)^\omega$. Since the range of
-$e_S$ is exactly $S$, distinct nonempty subsets give distinct chosen
-sequences of elements. Tag the empty subset separately. Thus
-$$
-S\mapsto
-\begin{cases}
-(0,e_\varnothing),&S=\varnothing,\\
-(1,e_S),&S\ne\varnothing
-\end{cases}
-$$
-defines an injection
-$$
-\mathcal B\hookrightarrow X\times(X^\omega)^\omega.
-$$
+::: pf-proof
+$X=\{0,1\}$, so each $x\in X^{\omega}$ determines the countable subset $\{x\}$, and distinct points give distinct singletons.
+:::
 
-Now
-$$
-X\times(X^\omega)^\omega
-\cong X^{\{0\}\sqcup(\ZZ_+\times\ZZ_+)}
-\cong X^\omega,
-$$
-because $\{0\}\sqcup(\ZZ_+\times\ZZ_+)$ is countably infinite. Hence there is an injection $\mathcal B\to X^\omega$. Schroeder--Bernstein gives
-$$
-\boxed{\cardinality{\mathcal B}=\cardinality{X^\omega}}.
-$$
+:::
 
-The simultaneous choice of an enumeration $e_S$ for every countable $S$ is a genuine choice step; without an appropriate choice principle this cardinality statement is not provable in this form in ZF alone.
+::: {.pf-step #otherway}
+$\mathcal B$ injects into $X\times(X^{\omega})^{\omega}$.
+
+:::: pf-proof
+
+::: {.pf-step #enumerations}
+For every nonempty $S\in\mathcal B$ there is a surjection $e_{S}:\ZZ_{+}\to S$, and one may be chosen for each $S$ simultaneously.
+
+::: pf-proof
+$S$ is nonempty and countable, so an enumeration of its elements by positive integers exists; choosing one for each $S$ is an application of the axiom of choice to the family of nonempty sets of enumerations, and the card records that this is a genuine choice step.
+:::
+
+:::
+
+::: {.pf-step #injective}
+$S\mapsto e_{S}$ is injective on nonempty subsets, so the tagged assignment is injective on $\mathcal B$.
+
+::: pf-proof
+The range of $e_{S}$ is exactly $S$, so $S$ can be recovered from $e_{S}$; hence distinct nonempty $S$ give distinct sequences. Sending $\varnothing$ to $(0,e_{\varnothing})$ for a fixed $e_{\varnothing}\in(X^{\omega})^{\omega}$ and nonempty $S$ to $(1,e_{S})$ separates the two cases by the first coordinate and is injective within each by the previous sentence.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #identify}
+$X\times(X^{\omega})^{\omega}\cong X^{\omega}$.
+
+::: pf-proof
+$X\times(X^{\omega})^{\omega}=X^{\{0\}}\times X^{\ZZ_{+}\times\ZZ_{+}}=X^{\{0\}\sqcup(\ZZ_{+}\times\ZZ_{+})}$, and $\{0\}\sqcup(\ZZ_{+}\times\ZZ_{+})$ is countably infinite, so there is a bijection with the index set $\omega$; a bijection of index sets induces a bijection of the function spaces, by composing with it and its inverse.
+:::
+
+:::
+
+::: {.pf-step #schroeder}
+$\cardinality{\mathcal B}=\cardinality{X^{\omega}}$.
+
+::: pf-proof
+Steps [](#oneway){.pf-ref}, [](#otherway){.pf-ref} and [](#identify){.pf-ref} exhibit injections in both directions, so the Schröder--Bernstein theorem gives
+$$
+\boxed{\cardinality{\mathcal B}=\cardinality{X^{\omega}}=2^{\aleph_{0}}.}
+$$
+The statement depends on the choice made in step [](#enumerations){.pf-ref}; in ZF alone this form of the cardinality statement is not available.
+:::
+
+:::
+
+:::
 :::
