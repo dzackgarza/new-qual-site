@@ -88,7 +88,15 @@ so $\mu^{*}\big(\bigcup_{n}E_{n}\big)\le\sum_{n}\mu^{*}(E_{n})+\varepsilon$. As 
 $\mu^{*}(A)=\mu_{0}(A)$ for every $A\in\mathcal A$.
 
 ::: pf-proof
-$A$ itself is a countable cover of $A$ by a member of $\mathcal A$, so $\mu^{*}(A)\le\mu_{0}(A)$. Conversely let $\{A_{n}\}$ be any countable cover of $A$ by members of $\mathcal A$; then $A=\bigcup_{n}(A\cap A_{n})$ is a countable disjoint union of members of $\mathcal A$ with union $A\in\mathcal A$, so countable additivity gives $\mu_{0}(A)=\sum_{n}\mu_{0}(A\cap A_{n})\le\sum_{n}\mu_{0}(A_{n})$ because $A\cap A_{n}\subseteq A_{n}$ and $\mu_{0}$ is monotone on $\mathcal A$ (additivity on disjoint unions whose union lies in $\mathcal A$ gives monotonicity on $\mathcal A$ in the usual way). Taking the infimum over covers gives $\mu_{0}(A)\le\mu^{*}(A)$.
+$A$ itself is a countable cover of $A$ by a member of $\mathcal A$, so $\mu^{*}(A)\le\mu_{0}(A)$. Conversely let $\{A_{n}\}$ be any countable cover of $A$ by members of $\mathcal A$. The sets $A_{n}$ need not be disjoint, so first disjointise the cover: put $B_{n}=A_{n}\setminus\bigcup_{k<n}A_{k}$, which lies in $\mathcal A$ because an algebra is closed under finite unions and complements. The $B_{n}$ are pairwise disjoint and $\bigcup_{n}B_{n}=\bigcup_{n}A_{n}\supseteq A$, so
+$$
+A=\bigcup_{n}(A\cap B_{n})
+$$
+is a countable union of pairwise disjoint members of $\mathcal A$ (the sets $A\cap B_{n}$ are disjoint because the $B_{n}$ are) with union $A\in\mathcal A$. Countable additivity therefore applies and gives
+$$
+\mu_{0}(A)=\sum_{n}\mu_{0}(A\cap B_{n})\le\sum_{n}\mu_{0}(B_{n})\le\sum_{n}\mu_{0}(A_{n}),
+$$
+the first inequality because $A\cap B_{n}\subseteq B_{n}$ and the second because $B_{n}\subseteq A_{n}$ and $\mu_{0}$ is monotone on $\mathcal A$ (additivity on disjoint unions whose union lies in $\mathcal A$ gives monotonicity there in the usual way). Taking the infimum over all countable covers gives $\mu_{0}(A)\le\mu^{*}(A)$.
 :::
 
 :::
