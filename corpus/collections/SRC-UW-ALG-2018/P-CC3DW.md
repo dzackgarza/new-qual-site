@@ -16,6 +16,11 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure. Every step checked: the rational canonical form over an arbitrary field with its uniqueness; the transpose of a conjugate being the conjugate by the transpose; the transpose of a block-diagonal matrix; and the companion matrix's properties, which the prose quoted as standard and which are now proved from the cyclic vector e_1: C^i e_1 = e_{i+1} for i < d, p(C)e_1 = 0 because Ce_d = -(a_0 e_1 + ... + a_{d-1} e_d), hence p(C) = 0 since e_1 is cyclic, hence the minimal polynomial divides p and has degree at least d, hence equals p, hence equals the characteristic polynomial. The step passing from "same minimal polynomial" to "same invariant factors" now says why: min poly of degree equal to the dimension forces a single block. One thing the prose left implicit is now stated: conjugation acts blockwise on a direct sum, so the blockwise similarities assemble into one similarity of the whole direct sum. No statement repair; the proof was already correct over any field, which is what the exercise asks.
 ---
 
 ::: {.problem}
@@ -24,35 +29,69 @@ Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$
 :::
 
 ::: {.solution}
-We use the **Rational Canonical Form** (Frobenius normal form), which exists for any square matrix over an arbitrary field $K$.
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
 
-1. Over the field $K$, $M$ is similar to a direct sum of companion matrices of its invariant factors:
-$$
-M \sim C(p_1) \oplus C(p_2) \oplus \cdots \oplus C(p_k),
-$$
-where each $C(p_i)$ is the companion matrix of a monic polynomial $p_i(x) = x^d + a_{d-1}x^{d-1} + \cdots + a_1 x + a_0 \in K[x]$.
+Recall that two $n\times n$ matrices are similar when $M'=SMS^{-1}$ for some invertible $S$, that similarity is an equivalence relation, and that a matrix is cyclic when it has a cyclic vector, i.e. the vectors $v,Cv,\dots,C^{d-1}v$ span $K^d$.
 
-2. Write $N=C(p_1)\oplus\cdots\oplus C(p_k)$. If $M=SNS^{-1}$ then $M^T=(S^T)^{-1}N^TS^T$, and the transpose of a block-diagonal matrix is the block-diagonal matrix of the transposed blocks, so
-$$
-M^T \sim C(p_1)^T \oplus C(p_2)^T \oplus \cdots \oplus C(p_k)^T.
-$$
-Thus, it suffices to prove that any companion matrix $C = C(p)$ is similar to its transpose $C^T$.
+::: pf
 
-3. Let $C$ be the $d \times d$ companion matrix of $p(x)$:
-$$
-C = \begin{pmatrix}
-0 & 0 & \cdots & 0 & -a_0 \\
-1 & 0 & \cdots & 0 & -a_1 \\
-0 & 1 & \cdots & 0 & -a_2 \\
-\vdots & \vdots & \ddots & \vdots & \vdots \\
-0 & 0 & \cdots & 1 & -a_{d-1}
-\end{pmatrix}.
-$$
-The characteristic and minimal polynomials of $C$ are equal to $p(x)$. For every $q\in K[x]$ we have $q(C^T)=q(C)^T$, so $q(C^T)=0$ if and only if $q(C)=0$; hence $C^T$ also has minimal polynomial $p(x)$.
-Since $C^T$ has minimal polynomial $p(x)$ of degree equal to the dimension $d$, $C^T$ is also cyclic, and its single invariant factor is $p(x)$.
+::: {.pf-step #rcf}
+$M$ is similar over $K$ to a direct sum of companion matrices, $M\sim C(p_1)\oplus\cdots\oplus C(p_k)$, with each $p_i\in K[x]$ monic.
 
-4. By the uniqueness of the Rational Canonical Form, any two matrices over $K$ with the same invariant factors are similar over $K$.
-   Since $C$ and $C^T$ have the identical list of invariant factors (namely, the single polynomial $p(x)$), $C$ is similar to $C^T$ over $K$.
+::: pf-proof
+The rational canonical form (Frobenius normal form) theorem: over any field, every square matrix is similar to a direct sum of companion matrices $C(p_1)\oplus\cdots\oplus C(p_k)$ of monic polynomials with $p_1\mid p_2\mid\cdots\mid p_k$, and the list $p_1,\dots,p_k$ (the invariant factors) is uniquely determined by the similarity class. In particular $\sum_i\deg p_i=n$ if $M$ is $n\times n$.
+:::
 
-5. Taking the direct sum over all blocks gives $M \sim M^T$ over $K$.
+:::
+
+::: {.pf-step #transpose}
+$M^T\sim C(p_1)^T\oplus\cdots\oplus C(p_k)^T$.
+
+::: pf-proof
+If $M=SNS^{-1}$ then $M^T=(S^{-1})^TN^TS^T=(S^T)^{-1}N^TS^T$, so $M^T$ is similar to $N^T$. The transpose of a block-diagonal matrix is the block-diagonal matrix of the transposed blocks, because transposition does not mix distinct block rows and columns and reverses the order of the factors inside each block. Applying this to $N=C(p_1)\oplus\cdots\oplus C(p_k)$ from step [](#rcf){.pf-ref} gives the claim.
+:::
+
+:::
+
+::: {.pf-step #companion}
+For the companion matrix $C=C(p)$ of a monic $p=x^d+a_{d-1}x^{d-1}+\cdots+a_0$, the minimal polynomial and the characteristic polynomial both equal $p$, and $C$ is cyclic.
+
+::: pf-proof
+Write $e_1,\dots,e_d$ for the standard basis and let $C$ have columns $e_2,e_3,\dots,e_d,-a_0e_1-\cdots-a_{d-1}e_d$. Then $C^ie_1=e_{i+1}$ for $0\le i\le d-1$, so $e_1,Ce_1,\dots,C^{d-1}e_1$ is the standard basis and $C$ is cyclic with cyclic vector $e_1$. Moreover
+$$
+p(C)e_1=C^de_1+a_{d-1}C^{d-1}e_1+\cdots+a_0e_1=C e_d+a_{d-1}e_d+\cdots+a_0e_1=0,
+$$
+the last equality because $Ce_d=-a_0e_1-\cdots-a_{d-1}e_d$; as $K[C]e_1=K^d$, $p(C)=0$, so the minimal polynomial $\mu$ of $C$ divides $p$. Since $\mu(C)e_1=0$ and $\deg\mu<m$ would make $e_1,Ce_1,\dots,C^{m}e_1$ linearly dependent, $\deg\mu\ge d=\deg p$; so $\mu=p$. The characteristic polynomial $\chi_C$ is monic of degree $d$ and $\mu\mid\chi_C$, so $\chi_C=p$ as well.
+:::
+
+:::
+
+::: {.pf-step #transposemin}
+The minimal polynomial of $C^T$ is $p$, and $C^T$ is cyclic with the single invariant factor $p$.
+
+::: pf-proof
+For every $q\in K[x]$ one has $q(C^T)=q(C)^T$: transposition is additive and reverses products, so it carries $\sum c_iC^i$ to $\sum c_i(C^T)^i$. Hence $q(C^T)=0$ if and only if $q(C)=0$, and the annihilator ideals, and therefore the minimal polynomials, of $C^T$ and $C$ coincide; by step [](#companion){.pf-ref} this common minimal polynomial is $p$. A matrix whose minimal polynomial has degree equal to the dimension $d$ is cyclic (if $v\ne0$ then $v,\dots,C^{d-1}v$ are $d$ independent vectors), and a cyclic $d\times d$ matrix has rational canonical form the single block $C(p)$.
+:::
+
+:::
+
+::: {.pf-step #blocksimilar}
+$C(p)\sim C(p)^T$ over $K$.
+
+::: pf-proof
+Steps [](#companion){.pf-ref} and [](#transposemin){.pf-ref} give both matrices the same invariant factor list, namely the single polynomial $p$. By the uniqueness of the rational canonical form (step [](#rcf){.pf-ref}), matrices with equal invariant factor lists are similar.
+:::
+
+:::
+
+::: {.pf-step}
+$M\sim M^T$ over $K$.
+
+::: pf-proof
+Choose isomorphisms $P_i$ with $P_iC(p_i)P_i^{-1}=C(p_i)^T$ (step [](#blocksimilar){.pf-ref}); then $P=\bigoplus_iP_i$ is invertible and conjugates $C(p_1)\oplus\cdots\oplus C(p_k)$ to its transpose, because conjugation acts blockwise on a direct sum. Composing the similarities of steps [](#rcf){.pf-ref} and [](#transpose){.pf-ref} with this one, and using transitivity of similarity, gives $M\sim M^T$. So a suitable canonical form — the rational one — proves the assertion over any field.
+:::
+
+:::
+
+:::
 :::
