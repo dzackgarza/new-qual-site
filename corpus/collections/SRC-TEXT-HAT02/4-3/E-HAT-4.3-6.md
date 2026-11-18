@@ -35,32 +35,49 @@ Show also that the H-space multiplication $\mu$ is unique up to homotopy.
 :::
 
 ::: {.solution}
-The product $K(G,n)\times K(G,n)$ is a $K(G\oplus G,n)$. By Exercise 4, homotopy classes of maps
-$$
-K(G,n)\times K(G,n)\to K(G,n)
-$$
-are classified by homomorphisms
-$$
-\pi_n(K(G,n)\times K(G,n))=G\oplus G\to G.
-$$
-Choose $\mu$ corresponding to addition
-$$
-(a,b)\mapsto a+b.
-$$
-Its restrictions to the two factors induce the identity on $G$, hence are homotopic to the identity map. Thus $\mu$ is an H-space multiplication.
 
-The maps
-$$
-\mu(\mu\times1),\qquad \mu(1\times\mu):K^3\to K
-$$
-both induce $(a,b,c)\mapsto a+b+c$ on $\pi_n$, so Exercise 4 makes them homotopic. Likewise $\mu$ and $\mu\tau$ both induce $a+b$, so multiplication is homotopy-commutative. The map corresponding to
-$$
-a\mapsto-a
-$$
-is a homotopy inverse.
+The construction and the uniqueness are the card's own, both resting on Exercise 4: homotopy classes of maps into $K(G,n)$ are the cohomology group $H^{n}(-;G)$, so on a product of Eilenberg--MacLane spaces they are homomorphisms on $\pi_{n}$. Write $K=K(G,n)$ with $G$ abelian.
 
-Finally any H-space multiplication on $K(G,n)$ restricts to the identity on both factors, hence induces addition $G\oplus G\to G$. Exercise 4 therefore implies that it is homotopic to $\mu$. Thus
+::: pf
+
+::: {.pf-step #classification}
+$K\times K$ is a $K(G\oplus G,n)$, and homotopy classes of maps $K\times K\to K$ correspond to homomorphisms $G\oplus G\to G$.
+
+::: pf-proof
+A product of Eilenberg--MacLane spaces is again one: $\pi_{n}(K\times K)=G\oplus G$ and the other homotopy groups vanish. By Exercise 4, $[B,K(G,n)]\cong H^{n}(B;G)$ for CW complexes $B$; for $B=K\times K$ the Hurewicz and universal coefficient theorems give $H^{n}(B;G)\cong\Hom(H_{n}(B),G)=\Hom(G\oplus G,G)$, the higher homology of a $K(G\oplus G,n)$ being confined to degree $n$ and $H_{n}=G\oplus G$.
+:::
+
+:::
+
+::: {.pf-step #multiplication}
+The map $\mu$ corresponding to addition $(a,b)\mapsto a+b$ is an H-space multiplication.
+
+::: pf-proof
+Let $\mu$ be the class corresponding to $+$ under step [](#classification){.pf-ref}. Its restriction to $K\times\{e\}$ corresponds to the composite $G\to G\oplus G\xrightarrow{+}G$, $a\mapsto a+0=a$, that is to the identity homomorphism, so $\restrictionof{\mu}{K\times\{e\}}\simeq1$; likewise on $\{e\}\times K$. Hence $\mu$ is a multiplication with a two-sided identity up to homotopy, that is an H-space structure on $K$.
+:::
+
+:::
+
+::: {.pf-step #properties}
+$\mu$ is commutative and associative up to homotopy and has a homotopy inverse.
+
+::: pf-proof
+The two maps $\mu(\mu\times1)$ and $\mu(1\times\mu):K^{3}\to K$ both induce $(a,b,c)\mapsto a+b+c$ on $\pi_{n}$, so by step [](#classification){.pf-ref} they are homotopic: associativity up to homotopy. The maps $\mu$ and $\mu\tau$, with $\tau$ the interchange, both induce $(a,b)\mapsto a+b$, so $\mu\simeq\mu\tau$: commutativity up to homotopy. Let $\nu$ correspond to $a\mapsto-a$; then $\mu(1\times\nu)$ induces $a+(-a)=0$, hence is homotopic to the constant map, and similarly $\mu(\nu\times1)$: so $\nu$ is a homotopy inverse.
+:::
+
+:::
+
+::: {.pf-step #unique}
+Any H-space multiplication on $K$ is homotopic to $\mu$.
+
+::: pf-proof
+Let $m:K\times K\to K$ be an H-space multiplication. Up to homotopy it restricts to the identity on $K\times\{e\}$ and on $\{e\}\times K$, so the homomorphism it induces on $\pi_{n}=G\oplus G$ has $a\mapsto a$ on each summand, hence is $a+b$. By step [](#classification){.pf-ref} a map is determined up to homotopy by the homomorphism it induces on $\pi_{n}$, so $m\simeq\mu$. Therefore
 $$
-\boxed{K(G,n)\text{ has a unique H-space multiplication up to homotopy, with the stated properties}.}
+\boxed{K(G,n)\text{ has an H-space multiplication, unique up to homotopy, which is commutative and associative up to homotopy and has a homotopy inverse}.}
 $$
+:::
+
+:::
+
+:::
 :::
