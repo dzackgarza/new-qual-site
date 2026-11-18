@@ -38,6 +38,18 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 7 (p.229). Rechecked: H^*(RP^3;Z_2) = Z_2[alpha]/(alpha^4) by Theorem 3.19 p.220 so alpha^3 != 0, while in the wedge the degree-one class x is pulled back from RP^2, whose H^3(-;Z_2) vanishes by the same theorem, and products from distinct summands vanish. The vanishing is now proved by the relative cup product of p.209 rather than asserted. Not covered: nothing beyond mod 2 coefficients, which suffice.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument above, with the missing step
+    supplied: the ring decomposition of a wedge sum is now derived from the relative cup
+    product $H^k(Y,A)\times H^\ell(Y,B)\to H^{k+\ell}(Y,Y)=0$ of printed p. 209 together with
+    the two long exact sequences, instead of being asserted, and $x^3=0$ is drawn from
+    $H^3(\RP^2;\ZZ_2)=0$ through that decomposition. Theorem 3.19 is cited at printed p. 220.
+    Statement re-read in Hatcher, §3.2 Exercise 7, printed p. 229, the page carrying the
+    exercise. Not claimed: a retained solution set; the Hatcher sets in `tmp/sources` do not
+    reach this exercise, so the argument is the card's own.
 ---
 
 ::: {.problem}
@@ -45,19 +57,55 @@ Use cup products to show that $\RP^3$ is not homotopy equivalent to $\RP^2 \vee 
 :::
 
 ::: {.solution}
-With $\ZZ_2$ coefficients, Theorem 3.19 (p.220) gives
-$$
-H^*(\RP^3;\ZZ_2)
-\cong \ZZ_2[\alpha]/(\alpha^4),
-\qquad \gradeddegree{\alpha}=1,
-$$
-so $\alpha^3\ne0$.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 7, printed p. 229. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` do not reach §3.2 Exercise 7 — so the argument below is the card's own; it uses the ring structure of Theorem 3.19, printed p. 220, and the relative cup product of printed p. 209.
 
-For the wedge $Y=\RP^2\vee S^3$, reduced cohomology is the direct sum of the reduced cohomologies of the two summands, and products of positive-dimensional classes from different summands vanish: such a class restricts to $0$ on the other summand, so it lifts to the relative group of the pair obtained by deleting that summand, and the relative cup product of p.209 lands in the cohomology of the pair $(Y,Y)$. The unique nonzero class $x\in H^1(Y;\ZZ_2)$ comes from $\RP^2$, so
-$$
-x^3=0
-$$
-because $H^3(\RP^2;\ZZ_2)=0$.
+All cohomology in the proof has $\ZZ_2$ coefficients, and $\RP^n$ denotes real projective $n$-space.
 
-Thus the mod-$2$ cohomology rings are not isomorphic: in one ring the nonzero degree-one class has nonzero cube, while in the other its cube is zero. Hence the spaces cannot be homotopy equivalent.
+::: pf
+
+::: {.pf-step #projective}
+$H^*(\RP^3)\cong\ZZ_2[\alpha]/(\alpha^4)$ with $\abs{\alpha}=1$, and $\alpha^3\ne0$.
+
+::: pf-proof
+Theorem 3.19, printed p. 220, identifies $H^*(\RP^n;\ZZ_2)$ with $\ZZ_2[\alpha]/(\alpha^{n+1})$ for $\abs\alpha=1$; with $n=3$ the classes $1,\alpha,\alpha^2,\alpha^3$ are a $\ZZ_2$-basis, so $\alpha^3\ne0$ and $\alpha^4=0$.
+
+:::
+
+:::
+
+::: {.pf-step #wedge}
+For $Y=\RP^2\vee S^3$ the reduced cohomology splits as $\widetilde H^*(Y)\cong\widetilde H^*(\RP^2)\oplus\widetilde H^*(S^3)$, and the cup product of a class carried by one summand with a class carried by the other is zero.
+
+::: pf-proof
+$Y$ is the union of the subcomplexes $A=\RP^2$ and $B=S^3$, which meet in the basepoint. The relative cup product, printed p. 209, is a map
+$$
+H^{k}(Y,A)\times H^{\ell}(Y,B)\longrightarrow H^{k+\ell}(Y,A\cup B)=H^{k+\ell}(Y,Y)=0 ,
+$$
+so such a product vanishes. For the splitting, $(Y,B)$ has quotient $Y/B=\RP^2$ and $(Y,A)$ has quotient $S^3$; the long exact sequences of the two pairs, together with the retractions $Y\to A$ and $Y\to B$ collapsing the other summand to the basepoint, give $\widetilde H^n(Y)\cong\widetilde H^n(A)\oplus\widetilde H^n(B)$ for every $n$. Alternatively the same splitting is Mayer–Vietoris for the pair of subcomplexes with contractible intersection.
+
+:::
+
+:::
+
+::: {.pf-step #cube}
+Let $x\in H^1(Y)$ be the class that restricts to $\alpha$ on $A$ and to $0$ on $B$. Then $x^3=0$.
+
+::: pf-proof
+$H^1(Y)\cong H^1(\RP^2)\oplus H^1(S^3)=\ZZ_2\oplus0$ by step [](#wedge){.pf-ref}, so $x$ is the nonzero class and is the image of $\alpha$ under the inclusion of the first summand. By step [](#wedge){.pf-ref} the cube $x^3$, a product of three classes all carried by $A$, is the image of $\alpha^3$; but $H^3(\RP^2;\ZZ_2)=0$, since $\RP^2$ is a $2$-dimensional CW complex and has no cohomology above degree $2$. So $x^3=0$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$\RP^3$ is not homotopy equivalent to $\RP^2\vee S^3$.
+
+::: pf-proof
+A homotopy equivalence induces an isomorphism of graded rings in cohomology, so it would give a ring isomorphism $H^*(\RP^3)\to H^*(Y)$. A ring isomorphism carries the degree-one generator $\alpha$, a $\ZZ_2$-basis of $H^1(\RP^3)$, to a $\ZZ_2$-basis of $H^1(Y)$, that is, to $x$; hence it would carry $\alpha^3$ to $x^3=0$, forcing $\alpha^3=0$ by injectivity, contrary to step [](#projective){.pf-ref}. No such isomorphism exists, so no homotopy equivalence does.
+
+:::
+
+:::
+
+:::
 :::
