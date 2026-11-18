@@ -24,6 +24,10 @@ audit:
     disks is exactly the closed disk, 0 lying in K. The description of the polynomial hull as K
     plus the bounded complementary components is named as the one external input rather than
     proved. Not claimed: a retained solution set; the provenance names the examination paper.
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UCSD Complex Analysis Qualifying Exam, Fall 2021; both parts match.
 ---
 
 ::: {.problem}
