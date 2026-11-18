@@ -33,12 +33,22 @@ audit:
   note: >-
     Restructured into Lamport steps from the retained positron0802 solution (Chapter 3,
     Exercise 29.2, PDF pp. 21-22). Checked against the book: §29 Exercise 2 as printed
-    (p. 186); the definition of local compactness (p. 185); Theorem 26.5 (p. 166) for the
+    (p. 186); the definition of local compactness, and the note that a compact space is
+    automatically locally compact (p. 182); Theorem 26.5 (p. 166) for the
     compactness of a projection of C; Theorem 37.3 (p. 234) for Tychonoff. Two points the
     retained text leaves implicit are now stated: that the projection of a product-basic
     set is open, which is what makes each coordinate in the finite set locally compact, and
     that the coordinates outside that set are compact because the basis element equals the
     factor there. No repair to the printed statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair of two citations. The definition of local compactness is on printed
+    p. 182 (PDF 197), not p. 185, and the note "a compact space is automatically locally
+    compact" is on the same page; both citations corrected. Checked the remaining page
+    references in the same pass: §29 Exercise 2 printed p. 186, Theorem 26.5 printed
+    p. 166, Theorem 37.3 (Tychonoff) printed p. 234. No change to the mathematics.
 ---
 
 ::: {.exercise}
@@ -53,7 +63,7 @@ Let $\theset{X_\alpha}$ be an indexed family of nonempty spaces.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.2, PDF pp. 21--22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
 
-Throughout, a space is locally compact at a point when some compact subspace contains a neighbourhood of that point (Munkres, *Topology* (2000), §29, printed p. 185), the topologies on products are the product topologies, and $\pi_\beta$ is the projection to the factor $X_\beta$.
+Throughout, a space is locally compact at a point when some compact subspace contains a neighbourhood of that point (Munkres, *Topology* (2000), §29, printed p. 182), the topologies on products are the product topologies, and $\pi_\beta$ is the projection to the factor $X_\beta$.
 
 ::: pf
 
@@ -75,7 +85,7 @@ Local compactness at $\mathbf{x}$ supplies a compact $C$ containing a neighbourh
 $X_\beta$ is compact for every $\beta\notin F$.
 
 ::: pf-proof
-The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5, printed p. 166), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (printed p. 185).
+The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5, printed p. 166), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (printed p. 182).
 :::
 
 :::
