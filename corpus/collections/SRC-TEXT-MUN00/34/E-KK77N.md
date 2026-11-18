@@ -119,10 +119,10 @@ Let $\mathcal{B}\coloneqq\bigcup_{i}\mathcal{B}_{i}$, countable as a countable u
 :::
 
 ::: pf-step
-Therefore $X$ is metrizable, regularity being used exactly in the shrinking of step [](#shrinking){.pf-ref}.
+Therefore $X$ is metrizable.
 
 ::: pf-proof
-Step [](#basis-for-X){.pf-ref} exhibits a countable basis for $X$, and $X$ is regular by hypothesis, so the Urysohn metrization theorem (Theorem 34.1, printed p. 215) makes $X$ metrizable. Regularity enters only through the choice of $V_{x}$ with $\overline{V_{x}}\subset U_{x}\subset N_{x}$: that containment is what lets the closed set $\overline{V_{x}}$ be metrizable while remaining a closed subspace of the Lindelöf space $X$. Without regularity a neighbourhood $U_{x}$ of $x$ inside the metrizable $N_{x}$ need not have a smaller neighbourhood with closure still inside $N_{x}$, and then no closed metrizable subspace at $x$ is available.
+Step [](#basis-for-X){.pf-ref} exhibits a countable basis for $X$, and $X$ is regular by hypothesis, so the Urysohn metrization theorem (Theorem 34.1, printed p. 215) makes $X$ metrizable. Regularity is used twice. First, in step [](#shrinking){.pf-ref}, it produces $V_{x}$ with $\overline{V_{x}}\subset U_{x}\subset N_{x}$: that containment is what lets the closed set $\overline{V_{x}}$ be metrizable while remaining a closed subspace of the Lindelöf space $X$, and without it a neighbourhood $U_{x}$ of $x$ inside the metrizable $N_{x}$ need not have a smaller neighbourhood whose closure still lies in $N_{x}$, so that no closed metrizable subspace at $x$ would be available. Second, it is a hypothesis of the Urysohn metrization theorem itself in this last step, where the countable basis of step [](#basis-for-X){.pf-ref} is converted into a metric; second countability alone does not give metrizability without it.
 :::
 
 :::
