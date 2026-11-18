@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1529 of the 12430 problem cards that have a solution
+1522 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1529
+- Problems: 1522
 - Problem cards with a solution: 12430
 
-## Problems (1529)
+## Problems (1522)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -610,7 +610,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-MVB8P — "The dimension of a $\sigma$-compact Hausdorff space is bounded by that of its compact subspaces"
 - [ ] E-MW9PV — "Free ranks of complete and utilities graphs"
 - [ ] E-N69G9 — "A root bound for a specific septic"
-- [ ] E-N7AOD — "The fundamental group of a topological group is abelian"
 - [ ] E-NKQY9 — "Countable rational-endpoint bases"
 - [ ] E-O13MH — "Connectedness under refinement of topologies"
 - [ ] E-O3E41 — "Weak local connectedness implies local connectedness"
@@ -782,7 +781,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-SSA.PR-3 — "Power series for the Bessel and Airy functions"
 - [ ] E-SSA.PR-4 — "Coefficients of a generating function with poles on the unit circle"
 - [ ] E-SSA.PR-5 — "The exact formula for $p(n)$: the transformation at every rational point"
-- [ ] E-TBLM7 — "Locally compact Hausdorff spaces are completely regular"
 - [ ] E-TTFVV — "The countable intersection property characterizes Lindelof spaces"
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
@@ -856,7 +854,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8XT77 — "The $w^*$-topology and the $w^*$-closure of the dual unit sphere"
 - [ ] P-8XT87 — "The set where the symmetric derivate of an increasing function exceeds $1$ has outer measure at most $f(1)-f(0)$"
 - [ ] P-A4JGH — "Negation of uniform convergence and a pointwise but nonuniform example"
-- [ ] P-AE7QC — "Weak $L^1$ and weak-$*$ $L^\infty$ convergence of $\exp(\sin(2\pi nx))$ on $[0,1]$"
 - [ ] P-AFC6V — "A group of order $96$ has one or three Sylow $2$-subgroups, and a normal subgroup of order $32$ or $16$"
 - [ ] P-AGH210CONE — "The affine cone over a projective variety"
 - [ ] P-AGH211CONSTSHEAF — "The constant sheaf is the sheafification of the constant presheaf"
@@ -892,7 +889,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS13G — "Quaternion group of order $8$: conjugacy classes and character table"
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
-- [ ] P-APAS13M — "Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\CC[x,y]^G$"
 - [ ] P-APAS15B — "Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$"
 - [ ] P-APAS15C — "Character table of $S_4$, Kronecker product of Specht modules, and its endomorphism algebra"
 - [ ] P-APAS15D — "Finite-group complex matrix representations are diagonalizable; infinite counterquestion"
@@ -905,7 +901,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS20F — "Scalar products $\langle e_1^n,e_1^n\rangle$ and $\langle h_3 p_6,s_{5,4}\rangle$"
 - [ ] P-APAS20G — "Haar average of a unitary representation is projection onto invariants"
 - [ ] P-APAS20H — "Haar integrals of $\operatorname{Tr} U$ and $\abs{u_{11}}^2$ over $U(2)$"
-- [ ] P-APAS21A — "Schur form; deflating a simple eigenpair and the angle between $x$ and $y$"
 - [ ] P-APAS21B — "Rayleigh min-characterization of $\lambda_n$; $p$-norm of a diagonal matrix"
 - [ ] P-APAS21C — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS21D — "Orthogonal projections onto $\operatorname{range}(C^H)$ and $\operatorname{null}(C)$; projectors onto a line"
@@ -1095,7 +1090,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP15A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CASP15B — "True or false: five statements in complex analysis"
 - [ ] P-CASP15C — "Roots of $z^4-6z+3$ in an annulus"
-- [ ] P-CASP15D — "$\int_0^\infty \log x/(x^2-1)\,dx$"
 - [ ] P-CASP15F — "Sum of zeros minus poles of an elliptic function in a fundamental parallelogram"
 - [ ] P-CASP17B — "An entire function with $f(z)f(1/z)$ bounded is a monomial"
 - [ ] P-CASP17C — "An entire function bounded by $1+(\log(1+\abs z))^n$ is constant"
@@ -1290,7 +1284,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
 - [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
 - [ ] P-F04C7 — "$\varepsilon$-$\delta$ continuity, and the sum of functions continuous at $3$"
-- [ ] P-F04I9 — "A composite $\RR^2\to\RR\to\RR^2$ of differentiable maps has no differentiable inverse"
 - [ ] P-F04N4 — "No $n$ makes both $(21n-3)/4$ and $(15n+2)/4$ integers"
 - [ ] P-F05BN — "Binomial theorem and $(x+y)^p \equiv x^p+y^p \pmod{p}$"
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
