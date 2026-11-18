@@ -24,7 +24,62 @@ audit:
 :::
 
 ::: {.solution}
-(a) If not, there exists $h_1\in H_1-H_2$ and $h_2\in H_2-H_1$. Since $h_1$ and $h_2$ belong to the subgroup $H_1\cup H_2$, we also have $h_1h_2\in H_1\cup H_2$. If $h_1h_2\in H_1$, we get the contradiction $h_2=h_1^{-1}(h_1h_2)\in H_1$. If $h_1h_2\in H_2$, we get the contradiction $h_1=(h_1h_2)h_2^{-1}\in H_2$.
 
-(b) Let $G=(\ZZ/2\ZZ)^{n-1}$. For $1\leq i\leq n-1$, let $H_i=\{(x_1,\ldots,x_{n-1})\in G:x_i=0\}$. Then $H_1\cup\cdots\cup H_{n-1}=G-\{(1,1,\ldots,1)\}$. Let $H_n=\{(x_1,\ldots,x_{n-1})\in G:x_1+x_2=0\}$. Then $(1,1,\ldots,1)\in H_n$, so $H_1\cup\cdots\cup H_n=G$. No $H_i$ is contained in any other, since they are distinct subgroups of the same order.
+The argument is the card's own: in (a) two elements outside each other's subgroup multiply into a contradiction, and in (b) an elementary abelian group is covered by subgroups of index $2$.
+
+::: pf
+
+::: {.pf-step #parta}
+
+(a) If $H_{1}\cup H_{2}$ is a subgroup then $H_{1}\subseteq H_{2}$ or $H_{2}\subseteq H_{1}$.
+
+::: pf-proof
+
+Suppose neither inclusion holds; then there are $h_{1}\in H_{1}-H_{2}$ and $h_{2}\in H_{2}-H_{1}$. Both lie in the subgroup $H_{1}\cup H_{2}$, so $h_{1}h_{2}\in H_{1}\cup H_{2}$. If $h_{1}h_{2}\in H_{1}$ then $h_{2}=h_{1}^{-1}(h_{1}h_{2})\in H_{1}$, since $H_{1}$ is a subgroup; contradiction. If $h_{1}h_{2}\in H_{2}$ then $h_{1}=(h_{1}h_{2})h_{2}^{-1}\in H_{2}$; contradiction. Both cases are impossible.
+
+:::
+
+:::
+
+::: {.pf-step #construction}
+
+(b) For $n\ge3$, in $G=(\ZZ/2\ZZ)^{n-1}$ put $H_{i}=\{x:x_{i}=0\}$ for $1\le i\le n-1$ and $H_{n}=\{x:x_{1}+x_{2}=0\}$.
+
+::: pf-proof
+
+Each $H_{i}$ is the kernel of a nonzero $\FF_2$-linear functional on $G$, hence a subgroup of order $2^{n-2}$; distinct nonzero functionals have distinct kernels, so the $H_{i}$ are pairwise distinct subgroups of the same order. Here $n-1\ge2$ guarantees that $x_{1}+x_{2}$ is a nonzero functional and that its kernel differs from $\ker(x_{1})$: the vector with $x_{1}=x_{2}=1$ and all other coordinates $0$ lies in $H_{n}$ but not in $H_{1}$.
+
+:::
+
+:::
+
+::: {.pf-step #cover}
+
+$H_{1}\cup\cdots\cup H_{n}=G$.
+
+::: pf-proof
+
+The vector $(1,\dots,1)$ lies in none of $H_{1},\dots,H_{n-1}$, since all its coordinates are $1$, but it lies in $H_{n}$ because $1+1=0$ in $\ZZ/2\ZZ$. Every other vector of $G$ has some coordinate $0$ among $1,\dots,n-1$, hence lies in the corresponding $H_{i}$. So the union is all of $G$, and it is a subgroup.
+
+:::
+
+:::
+
+::: {.pf-step #incomparable}
+
+No $H_{i}$ is contained in another.
+
+::: pf-proof
+
+All have the same order $2^{n-2}$ and they are pairwise distinct; a containment between two subgroups of equal finite order would be an equality. Hence each $H_{i}$ is contained in no other, and with step [](#cover){.pf-ref}:
+$$
+\boxed{n\ge3:\ G=(\ZZ/2)^{n-1}\ \text{is the union of } n \text{ pairwise incomparable subgroups.}}
+$$
+
+:::
+
+:::
+
+:::
+
 :::
