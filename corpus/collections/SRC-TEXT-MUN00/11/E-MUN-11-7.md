@@ -27,6 +27,16 @@ audit:
     simply ordered subsets is of finite type because being simply ordered is checked on
     pairs, hence on finite subsets; Tukey then gives a maximal member, which is a maximal
     simply ordered subset.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose into numbered steps; the finite-type verification is Whitman's
+    (Exercise 11.7, printed p. 126), as the card cites. Checked: both halves of the finite-type
+    condition, the application of the Tukey lemma, and the identification of the resulting element
+    with a maximal simply ordered subset. Not checked: the cited page and the printed forms of the
+    Tukey lemma and the maximum principle, because tmp/sources holds no copy of the Whitman manual
+    and the Munkres text is not retained in this VM.
 ---
 
 ::: {.exercise}
@@ -35,11 +45,71 @@ Show that the Tukey lemma implies the Hausdorff maximum principle. [Hint: If $\p
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.7, printed p. 126** (`tmp/sources/munkres-solutions-whitman.pdf`); the finite-type verification is his and follows the book's hint.
 
-Let $\prec$ be a strict partial order on $A$ and let $\mathcal A$ be the collection of subsets of $A$ that are simply ordered by $\prec$.
+The argument is that of the retained published solution: Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.7, printed p 126, which the card cites; it is restructured into numbered steps below. The finite-type verification is his and follows the book's hint. The Tukey lemma is that a collection of finite type has an element contained in no other, and the Hausdorff maximum principle is that a strict partial order on $A$ has a maximal simply ordered subset.
 
-*$\mathcal A$ is of finite type.* If $B\in\mathcal A$ then every subset of $B$ is simply ordered, being pairwise comparable. Conversely, if every finite subset of $B$ lies in $\mathcal A$, then any two elements $x,y\in B$ are comparable, since $\{x,y\}$ is a finite subset of $B$ and hence simply ordered; so $B$ is simply ordered.
+::: pf
 
-By the Tukey lemma of [[E-MUN-11-6]] the collection $\mathcal A$ has an element $B$ properly contained in no other element of $\mathcal A$. That is, $B$ is simply ordered and no subset of $A$ properly containing $B$ is simply ordered: $B$ is a maximal simply ordered subset of $A$, which is the maximum principle.
+::: {.pf-step #down}
+
+If $B\in\mathcal{A}$ then every subset of $B$ is in $\mathcal{A}$.
+
+::: pf-proof
+
+$B$ is simply ordered by $\prec$, and any subset of a simply ordered set is simply ordered: any two of its elements are comparable in $B$.
+
+:::
+
+:::
+
+::: {.pf-step #up}
+
+If every finite subset of $B$ lies in $\mathcal{A}$, then $B\in\mathcal{A}$.
+
+::: pf-proof
+
+Let $x,y\in B$. The set $\set{x,y}$ is a finite subset of $B$, hence in $\mathcal{A}$, hence simply ordered, so $x$ and $y$ are comparable; thus $B$ is simply ordered.
+
+:::
+
+:::
+
+::: {.pf-step #ft}
+
+$\mathcal{A}$ is of finite type.
+
+::: pf-proof
+
+'Of finite type' means exactly that $B$ lies in the collection whenever all its finite subsets do, and that every subset of a member lies in it; these are steps [](#up){.pf-ref} and [](#down){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #tukey}
+
+$\mathcal{A}$ has an element contained in no other element of $\mathcal{A}$.
+
+::: pf-proof
+
+The Tukey lemma applied to the collection of finite type of step [](#ft){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #done}
+
+The Hausdorff maximum principle holds.
+
+::: pf-proof
+
+An element $B\in\mathcal{A}$ contained in no other element of $\mathcal{A}$ is a subset of $A$ simply ordered by $\prec$ that is contained in no other such subset; that is a maximal simply ordered subset, which is the principle.
+
+:::
+
+:::
+
+:::
+
 :::
