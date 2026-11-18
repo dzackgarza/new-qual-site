@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1465 of the 12429 problem cards that have a solution
+1456 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1465
+- Problems: 1456
 - Problem cards with a solution: 12429
 
-## Problems (1465)
+## Problems (1456)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -624,7 +624,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
 - [ ] E-PWXIV — "Properties of eleven standard spaces"
 - [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
-- [ ] E-QJXDP — "Weak local connectedness at a point without local connectedness"
 - [ ] E-QMZO5 — "Dictionary order topology on the plane as a product topology"
 - [ ] E-QNT4A — "Perfect maps and paracompactness"
 - [ ] E-QOXG5 — "Countable compactness equals limit point compactness for T1 spaces"
@@ -789,7 +788,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-VXB5V — "Discrete spaces have dimension zero"
 - [ ] E-W7FNF — "The lower limit line and the ordered square are not metrizable"
 - [ ] E-WOS95 — "Induced homomorphisms up to base-point change"
-- [ ] E-X04YN — "Elementary operations behind the classification figures"
 - [ ] E-X4TVL — "Rational and irrational anti-diagonals in the Sorgenfrey plane"
 - [ ] E-XDJRZ — "$\ell^2$ is a vector space with the $\ell^2$ metric"
 - [ ] E-XIHWT — "Distance to a set in a metric space"
@@ -806,7 +804,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-22T5H — "An analytic function real on a closed curve is constant"
 - [ ] P-24L43 — "Orbits of $\GL_3(\QQ[x])\times\GL_3(\QQ[x])$ on matrices of prescribed determinant"
 - [ ] P-4CJY7 — "Characteristic and minimal polynomials of the Frobenius automorphism"
-- [ ] P-4GMLL — "Jordan form of $\begin{pmatrix}-3&3&-2\\-7&6&-3\\1&-1&2\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-4HGM3 — "Groups of order 8"
 - [ ] P-4QQGN — "Measurability of $f'$ and of the differentiability set of a continuous function"
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
@@ -816,7 +813,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
 - [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
-- [ ] P-8CA21 — "Number of solutions of $e^z=z+\lambda$ in the left half-plane for $\operatorname{Re}\lambda>1$"
 - [ ] P-8CA23 — "Harmonic conjugate of $y^3-3x^2 y$ and the mean-value property"
 - [ ] P-8CA25 — "$\operatorname{Aut}(\CC_\infty)$ consists of the Möbius transformations"
 - [ ] P-8CA27 — "An entire function sending a circle into $\RR$ is constant"
@@ -868,7 +864,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS19F — "Character table of $D_4$ and decomposition of $V\otimes V$"
 - [ ] P-APAS19H — "Character table of $S_3\times S_2$ and restriction of $S^{(3,2)}$"
 - [ ] P-APAS19J — "Multiplicity-free isotypic decomposition iff $\mathrm{End}_A V$ is commutative"
-- [ ] P-APAS20A — "Extremal dimensions of $\ker(\phi^2)$ and $\ker((\phi-\mathrm{id})^2)$ from partial matrix data"
 - [ ] P-APAS20B — "Singular values and Frobenius perturbation bound $\dim\ker(\phi+\psi)$"
 - [ ] P-APAS20D — "Conjugacy class sizes from a character table of a group of order $360$"
 - [ ] P-APAS20F — "Scalar products $\langle e_1^n,e_1^n\rangle$ and $\langle h_3 p_6,s_{5,4}\rangle$"
@@ -891,7 +886,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP07D — "Trace and computation of the averaged conjugate of a matrix over a finite group"
 - [ ] P-APASP07H — "Young diagrams with nonzero character on an (n-1)-cycle in S_n"
 - [ ] P-APASP07J — "Invariants of Z/3 acting on a two-dimensional vector space and Hilbert series"
-- [ ] P-APASP07K — "Equivalent representations yield the same Hilbert series of invariant rings"
 - [ ] P-APASP08D — "Garnir polynomial expansion for a tableau"
 - [ ] P-APASP08F — "Scalar products of characters via the SF package and their interpretation"
 - [ ] P-APASP08G — "Symmetric function identity involving hooks"
@@ -983,7 +977,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
-- [ ] P-CAF10E — "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequality"
 - [ ] P-CAF11A — "True or False: infinite products, bounded functions on punctured plane, essential singularities, growth rates, and Schwarz lemma"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
 - [ ] P-CAF13A — "Classical complex-analysis theorems: statements and proof sketches"
@@ -1236,7 +1229,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
 - [ ] P-F04C7 — "$\varepsilon$-$\delta$ continuity, and the sum of functions continuous at $3$"
 - [ ] P-F04N4 — "No $n$ makes both $(21n-3)/4$ and $(15n+2)/4$ integers"
-- [ ] P-F05BN — "Binomial theorem and $(x+y)^p \equiv x^p+y^p \pmod{p}$"
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
 - [ ] P-F07EX — "Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$"
 - [ ] P-F12IN — "$A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective"
@@ -1383,7 +1375,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-RASP15B — "$L^p$ characterization via the distribution function"
 - [ ] P-RASP21A — "Sumset of measurable set with null set"
 - [ ] P-RASP21C — "Function with prescribed moments"
-- [ ] P-RASP21G — "Absolutely continuous measure via continuous density"
 - [ ] P-RASP22B — "Bounded sequence with vanishing local integrals against $L^1$ functions"
 - [ ] P-RASP22F — "A bounded density that integrates to the measure of every open set is 1 a.e."
 - [ ] P-RASP22G — "Distributional derivatives of $f(\abs{x})$"
