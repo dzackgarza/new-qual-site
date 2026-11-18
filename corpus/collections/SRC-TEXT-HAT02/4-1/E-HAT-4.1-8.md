@@ -71,6 +71,15 @@ audit:
     of components of $A$ that meet the component of $x_0$ in $X$. Exactness of a sequence of
     pointed sets is read as image = preimage of the basepoint. Not claimed: path-connectedness of
     $A$, which is not needed and is not assumed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 358 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 367, whose running
+    folio reads 358. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -78,7 +87,7 @@ Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longri
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.1, printed pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
 
 ::: pf
 
