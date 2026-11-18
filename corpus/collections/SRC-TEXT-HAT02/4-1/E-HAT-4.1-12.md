@@ -44,29 +44,51 @@ Show that an $n$-connected, $n$-dimensional CW complex is contractible.
 :::
 
 ::: {.solution}
-Let $X$ be an $n$-connected, $n$-dimensional CW complex. Thus
-$$
-\pi_i(X)=0\qquad(0\le i\le n).
-$$
-If $n=0$ then $X$ is a path-connected CW complex with no positive-dimensional cells, hence a single point, and is contractible; so assume $n\ge1$.
-Suppose some higher homotopy group were nonzero, and let $m>n$ be the least integer with
-$$
-\pi_m(X)\ne0.
-$$
-Then $X$ is $(m-1)$-connected, and $m\ge n+1\ge2$, so the Hurewicz theorem applies in its absolute form, whose hypothesis is $(m-1)$-connected with $m\ge2$ (Hatcher, Theorem 4.32); at $m=1$ it would give only the abelianized $\pi_1$, which is why the case $n=0$ was disposed of first. Thus the Hurewicz map
-$$
-\pi_m(X)\longrightarrow H_m(X;\ZZ)
-$$
-is an isomorphism. Hence $H_m(X;\ZZ)\ne0$.
 
-But $X$ has no cells in dimensions greater than $n$, so its cellular chain complex is zero above dimension $n$. Therefore
-$$
-H_m(X;\ZZ)=0\qquad(m>n),
-$$
-a contradiction. Thus every homotopy group of $X$ is trivial.
+The argument is the card's own: Hurewicz in the least degree above $n$ where homotopy survives, against the vanishing of cellular homology above the dimension, then Whitehead.
 
-The map $X\to *$ is consequently an isomorphism on all homotopy groups. Since $X$ and a point are CW complexes, Whitehead's theorem implies that $X\to *$ is a homotopy equivalence. Hence
+Let $X$ be an $n$-connected, $n$-dimensional CW complex, so that $\pi_{i}(X)=0$ for $0\le i\le n$.
+
+::: pf
+
+::: {.pf-step #zero}
+If $n=0$ then $X$ is a point, hence contractible.
+
+::: pf-proof
+A $0$-dimensional CW complex is a discrete space, and $0$-connected means path connected, so $X$ is a single point; a point is contractible. This case is separated because the Hurewicz theorem below needs $m\ge2$, and at $m=1$ it would only identify the abelianised $\pi_{1}$.
+:::
+
+:::
+
+::: {.pf-step #hurewicz}
+If $n\ge1$ and some homotopy group $\pi_{m}(X)$ with $m>n$ is nonzero, then $H_{m}(X;\ZZ)\ne0$ for the least such $m$.
+
+::: pf-proof
+Let $m>n$ be the least integer with $\pi_{m}(X)\ne0$, which exists by hypothesis. Then $\pi_{i}(X)=0$ for all $i<m$, that is $X$ is $(m-1)$-connected, and $m\ge n+1\ge2$. The absolute Hurewicz theorem (Hatcher, Theorem 4.32) then says the Hurewicz map $\pi_{m}(X)\to H_{m}(X;\ZZ)$ is an isomorphism, so $H_{m}(X;\ZZ)\cong\pi_{m}(X)\ne0$.
+:::
+
+:::
+
+::: {.pf-step #homology}
+$H_{m}(X;\ZZ)=0$ for every $m>n$.
+
+::: pf-proof
+The cellular chain group $C_{m}(X)$ is free on the $m$-cells, of which there are none when $m>n$, so the cellular chain complex vanishes in degrees above $n$ and its homology does too; cellular homology agrees with singular homology.
+:::
+
+:::
+
+::: {.pf-step #contractible}
+$X$ is contractible.
+
+::: pf-proof
+Steps [](#hurewicz){.pf-ref} and [](#homology){.pf-ref} contradict each other unless no such $m$ exists, so $\pi_{i}(X)=0$ for every $i\ge0$; with step [](#zero){.pf-ref} this covers $n=0$ as well. Hence the map $X\to\ast$ induces isomorphisms on all homotopy groups, and both $X$ and the point are CW complexes, so Whitehead's theorem gives that $X\to\ast$ is a homotopy equivalence. Therefore
 $$
 \boxed{X\text{ is contractible}.}
 $$
+:::
+
+:::
+
+:::
 :::
