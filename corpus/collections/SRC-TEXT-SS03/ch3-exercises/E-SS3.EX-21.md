@@ -13,6 +13,11 @@ audit:
   - event: solution-written
     by: gpt-5.6-sol
     date: 2026-09-11
+  - event: solution-written
+    by: claude
+    date: 2026-11-18
+    note: >-
+      Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: convexity gives the straight-line homotopy $H(s,t)=(1-s)\gamma(t)+sz_0$ inside $\Omega$; star-shapedness gives the same formula; and the two examples, the slit plane from the point $1$ and a sector from a point of its bisecting ray, are genuinely star-shaped about the stated centre.
 ---
 
 ::: {.exercise}
@@ -26,24 +31,49 @@ Certain sets have geometric properties that guarantee they are simply connected.
 :::
 
 ::: {.solution}
-(a) Let $\Omega$ be convex and fix $z_0\in\Omega$. For any closed curve $\gamma:[0,1]\to\Omega$, define
-$$
-H(s,t)=(1-s)\gamma(t)+sz_0,
-\qquad 0\le s,t\le1.
-$$
-By convexity, $H(s,t)\in\Omega$ for every $(s,t)$. Thus $H$ is a homotopy in $\Omega$ from $\gamma$ to the constant loop at $z_0$. Hence every closed curve is null-homotopic, so $\Omega$ is simply connected.
+No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
-(b) The same argument works for a star-shaped open set: by definition there is $z_0\in\Omega$ such that every segment from $z_0$ to $z\in\Omega$ lies in $\Omega$. Therefore the same formula
-$$
-H(s,t)=(1-s)\gamma(t)+sz_0
-$$
-contracts every loop to $z_0$.
+::: pf
 
-The slit plane
-$$
-\CC\setminus(-\infty,0]
-$$
-is star-shaped with respect to any positive real point, for example $1$: if $z$ is not on the nonpositive real axis, then the segment from $1$ to $z$ cannot cross that ray except possibly at its endpoint, which is excluded. Hence it is simply connected. Likewise a sector $\{z\ne0:\alpha<\arg z<\beta\}$ with $0<\beta-\alpha\le2\pi$ is star-shaped with respect to any point $c$ of its bisecting ray: every $z$ in the sector has argument within $(\beta-\alpha)/2\le\pi$ of $\arg c$, strictly less than $\pi$, so along the segment from $c$ to $z$ the argument moves monotonically between $\arg c$ and $\arg z$ and the segment avoids $0$. Hence every such sector is simply connected.
+::: {.pf-step #a}
+(a) A convex open set is simply connected.
 
-(c) Other examples include discs, half-planes, strips, convex polygons with interior, and the whole plane. Each is convex (hence star-shaped), so part (a) applies.
+::: pf-proof
+Fix $z_0\in\Omega$. For a closed curve $\gamma:[0,1]\to\Omega$ put $H(s,t)=(1-s)\gamma(t)+sz_0$. For each $(s,t)$ this is a convex combination of two points of $\Omega$, hence lies in $\Omega$ by convexity; $H(0,t)=\gamma(t)$, $H(1,t)=z_0$ and $H(s,0)=H(s,1)$, so $H$ is a homotopy of loops in $\Omega$ from $\gamma$ to the constant loop at $z_0$. Hence every loop is null-homotopic and $\Omega$ is simply connected.
+:::
+:::
+
+::: {.pf-step #b}
+(b) A star-shaped open set is simply connected.
+
+::: pf-proof
+Take the point $z_0$ of the definition. The same formula $H(s,t)=(1-s)\gamma(t)+sz_0$ runs inside $\Omega$ because each segment from $z_0$ to a point of $\Omega$ lies there, and the same three identities show $H$ contracts every loop to $z_0$.
+:::
+:::
+
+::: {.pf-step #slit}
+The slit plane $\CC\setminus(-\infty,0]$ is star-shaped, hence simply connected.
+
+::: pf-proof
+Take $z_0=1$. If $z$ is not on the nonpositive real axis, the segment from $1$ to $z$ meets that ray at most at an endpoint, which is excluded; so the segment lies in the slit plane and the set is star-shaped about $1$.
+:::
+:::
+
+::: {.pf-step #sector}
+A sector $\{z\neq0:\alpha<\arg z<\beta\}$ with $0<\beta-\alpha\le2\pi$ is star-shaped, hence simply connected.
+
+::: pf-proof
+Take $c$ on the bisecting ray. Every $z$ of the sector has argument within $(\beta-\alpha)/2\le\pi$ of $\arg c$, so along the segment from $c$ to $z$ the argument varies continuously between the two values and the segment never contains $0$; hence it lies in the sector.
+:::
+:::
+
+::: {.pf-step #c}
+(c) Discs, half-planes, strips, convex polygons and the whole plane are further examples.
+
+::: pf-proof
+Each of these is convex, so part (a) applies to it.
+:::
+:::
+
+:::
 :::
