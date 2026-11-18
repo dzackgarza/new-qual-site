@@ -30,6 +30,14 @@ audit:
     and quoted det P and the Jordan-basis relations without deriving them; both are now steps.
     The statement is true as printed. The collection's provenance is the examination paper
     only, so no retained solution set covers the exercise and the argument is the card's own.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair. The determinant step factored the matrix wrongly: the displayed matrix is
+    2P, so det P = det Q / 8, not det Q / 4, and the arithmetic (1/4)(4 + 4 - 6) = 1/2 was
+    not 1/4 either. The step now writes Q = 2P, computes det Q = 2 and concludes det P = 2/8 =
+    1/4, which is the value verified earlier by exact rational arithmetic.
 ---
 
 ::: {.problem}
@@ -99,7 +107,7 @@ Direct computation: $A(1,2,1)^t=(-3+6-2,\,-7+12-3,\,1-2+2)^t=(1,2,1)^t$; $A(1,1,
 $\det P=\frac14$, so $P$ is invertible.
 
 ::: pf-proof
-Expanding, $\det P=\frac14\det\begin{pmatrix}2&1&1\\4&1&2\\2&-1&0\end{pmatrix}=\frac14\left(2(1\cdot0-2\cdot(-1))-1(4\cdot0-2\cdot2)+1(4\cdot(-1)-1\cdot2)\right)=\frac14(4+4-6)=\frac14$.
+Factoring $2$ out of each row, $\begin{pmatrix}2&1&1\\4&1&2\\2&-1&0\end{pmatrix}=2P$, so $\det P=\frac{1}{2^3}\det\begin{pmatrix}2&1&1\\4&1&2\\2&-1&0\end{pmatrix}=\frac18\det Q$ with $Q$ that matrix. Expanding along the first row, $\det Q=2\left(1\cdot0-2\cdot(-1)\right)-1\left(4\cdot0-2\cdot2\right)+1\left(4\cdot(-1)-1\cdot2\right)=4+4-6=2$. Hence $\det P=\frac18\cdot2=\frac14$.
 :::
 
 :::
