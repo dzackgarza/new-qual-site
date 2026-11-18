@@ -21,6 +21,11 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure. Every step checked: the rational canonical form over an arbitrary field with its uniqueness; the transpose of a conjugate being the conjugate by the transpose; the transpose of a block-diagonal matrix; and the companion matrix's properties, which the prose quoted as standard and which are now proved from the cyclic vector e_1: C^i e_1 = e_{i+1} for i < d, p(C)e_1 = 0 because Ce_d = -(a_0 e_1 + ... + a_{d-1} e_d), hence p(C) = 0 since e_1 is cyclic, hence the minimal polynomial divides p and has degree at least d, hence equals p, hence equals the characteristic polynomial. The step passing from "same minimal polynomial" to "same invariant factors" now says why: min poly of degree equal to the dimension forces a single block. One thing the prose left implicit is now stated: conjugation acts blockwise on a direct sum, so the blockwise similarities assemble into one similarity of the whole direct sum. No statement repair; the proof was already correct over any field, which is what the exercise asks.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repair of the review finding of 16:21Z, which commit 3c891fdd addressed incompletely. The restated definition of a cyclic matrix still quantified over an unnamed vector ("the vectors $v, Cv, \dots, C^{d-1}v$ span $K^d$"), which is the false universal reading the finding objected to; it now says there is a vector $v$ whose iterates form a basis, and records that the iterates are dependent for most $v$. In the companion-matrix step the bound on $\deg\mu$ referred to an undefined symbol $m$ and asserted a dependence without saying where it came from; it now argues that a monic $\mu$ of degree $m<d$ makes $e_1,\dots,C^me_1$ dependent while $C^ie_1=e_{i+1}$ makes them independent, so $\deg\mu\ge d$. No statement repair; nothing else on the card changed.
 ---
 
 ::: {.problem}
@@ -31,7 +36,7 @@ Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$
 ::: {.solution}
 The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
 
-Recall that two $n\times n$ matrices are similar when $M'=SMS^{-1}$ for some invertible $S$, that similarity is an equivalence relation, and that a matrix is cyclic when it has a cyclic vector, i.e. the vectors $v,Cv,\dots,C^{d-1}v$ span $K^d$.
+Recall that two $n\times n$ matrices are similar when $M'=SMS^{-1}$ for some invertible $S$, that similarity is an equivalence relation, and that a matrix $C\in M_d(K)$ is cyclic when it has a cyclic vector: a vector $v\in K^d$ for which $v,Cv,\dots,C^{d-1}v$ is a basis of $K^d$. The quantifier matters here; a single $v$ is never asked to serve for every vector, and $v,Cv,\dots,C^{d-1}v$ is indeed dependent for most $v$.
 
 ::: pf
 
@@ -61,7 +66,7 @@ Write $e_1,\dots,e_d$ for the standard basis and let $C$ have columns $e_2,e_3,\
 $$
 p(C)e_1=C^de_1+a_{d-1}C^{d-1}e_1+\cdots+a_0e_1=C e_d+a_{d-1}e_d+\cdots+a_0e_1=0,
 $$
-the last equality because $Ce_d=-a_0e_1-\cdots-a_{d-1}e_d$; as $K[C]e_1=K^d$, $p(C)=0$, so the minimal polynomial $\mu$ of $C$ divides $p$. Since $\mu(C)e_1=0$ and $\deg\mu<m$ would make $e_1,Ce_1,\dots,C^{m}e_1$ linearly dependent, $\deg\mu\ge d=\deg p$; so $\mu=p$. The characteristic polynomial $\chi_C$ is monic of degree $d$ and $\mu\mid\chi_C$, so $\chi_C=p$ as well.
+the last equality because $Ce_d=-a_0e_1-\cdots-a_{d-1}e_d$; as $K[C]e_1=K^d$, $p(C)=0$, so the minimal polynomial $\mu$ of $C$ divides $p$. If $\mu$ had degree $m<d$, then $\mu(C)e_1=0$ — with $\mu$ monic of degree $m$ — would write $C^me_1$ as a combination of $e_1,\dots,C^{m-1}e_1$, making $e_1,\dots,C^me_1$ dependent; but these are $e_1,\dots,e_{m+1}$, the first $m+1\le d$ vectors of the standard basis, which are independent. Hence $\deg\mu\ge d=\deg p$, and with $\mu\mid p$ this gives $\mu=p$. The characteristic polynomial $\chi_C$ is monic of degree $d$ and $\mu\mid\chi_C$, so $\chi_C=p$ as well.
 :::
 
 :::
