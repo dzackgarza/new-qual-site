@@ -27,6 +27,15 @@ audit:
     rationals to the usual rationals is continuous with image not locally compact; a
     continuous open map does carry local compactness, images of compact neighbourhoods being
     compact neighbourhoods. (tmp/sources/munkres-solutions-positron-ch3.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the counterexample (the identity from the
+    discrete rationals, locally compact, onto the usual rationals, not locally compact) and
+    the positive result (a compact neighbourhood in X maps to a compact set containing an
+    open neighbourhood in f(X) when f is open), with Theorem 29.2. positron0802, Chapter 3
+    Exercise 29.3, PDF p. 22. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -38,9 +47,36 @@ Justify your answer.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.3, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves and the counterexample are theirs.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.3, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves and the counterexample are theirs.
 
-*Continuous alone is not enough.* Let $\QQ_{d}$ be the rationals with the discrete topology, $\QQ$ the rationals usual; the identity $i:\QQ_{d}\to\QQ$ is continuous. The discrete $\QQ_{d}$ is locally compact ($\{x\}$ is an open compact neighbourhood of $x$), but $i(\QQ_{d})=\QQ$ is not locally compact (Exercise 29.1).
+::: pf
 
-*Continuous and open suffices.* Let $y=f(x)\in f(X)$; choose a compact $C\subset X$ containing a neighbourhood $U$ of $x$. Then $f(C)$ is compact (continuity of $f$) and contains the neighbourhood $f(U)$ of $y$ (openness of $f$). So $f(X)$ is locally compact.
+::: {.pf-step #continuous-not-enough}
+A continuous image of a locally compact space need not be locally compact.
+
+::: pf-proof
+Let $\QQ_{d}$ be the rationals with the discrete topology and $\QQ$ the rationals with the usual topology; the identity $i:\QQ_{d}\to\QQ$ is continuous, since every subset of $\QQ_{d}$ is open. The discrete space $\QQ_{d}$ is locally compact: for $x\in\QQ_{d}$ the singleton $\{x\}$ is open, and it is compact because its only open cover is $\{\{x\}\}$ together with sets containing $x$. But $i(\QQ_{d})=\QQ$ is not locally compact in the usual topology (Munkres §29 Exercise 1).
+:::
+
+:::
+
+::: {.pf-step #open-suffices}
+If $f:X\to Y$ is continuous and open and $X$ is locally compact, then $f(X)$ is locally compact.
+
+::: pf-proof
+Let $y\in f(X)$, say $y=f(x)$. Since $X$ is locally compact there is a compact subspace $C\subset X$ containing a neighbourhood $U$ of $x$ (Theorem 29.2). Then $f(C)$ is compact, being a continuous image of a compact space, and it is a subspace of $f(X)$; and $f(U)$ is a neighbourhood of $y$ in $f(X)$, because $U$ is open and contains $x$ and $f$ is an open map onto its image, with $f(U)\subset f(C)$. So every point of $f(X)$ has a compact subspace containing a neighbourhood of it, and $f(X)$ is locally compact.
+:::
+
+:::
+
+::: {.pf-step}
+The two answers hold.
+
+::: pf-proof
+Steps [](#continuous-not-enough){.pf-ref} and [](#open-suffices){.pf-ref} answer the two questions.
+:::
+
+:::
+
+:::
 :::
