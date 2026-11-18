@@ -13,6 +13,11 @@ audit:
   - event: solution-written
     by: gpt-5.6-sol
     date: 2026-09-10
+  - event: solution-written
+    by: claude
+    date: 2026-11-18
+    note: >-
+      Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the equivalence $\sin\pi z=0\iff e^{2\pi iz}=1$; that the modulus condition forces $y=0$ and then $x\in\ZZ$; that $\pi\cos\pi n=\pi(-1)^n\ne0$; and the residue formula for a simple pole of a reciprocal.
 ---
 
 ::: {.exercise}
@@ -28,28 +33,41 @@ Calculate the residue of $1/\sin \pi z$ at $z = n \in \ZZ$.
 :::
 
 ::: {.solution}
-By Euler's formula,
-$$
-\sin \pi z=0
-\iff e^{i\pi z}=e^{-i\pi z}
-\iff e^{2\pi i z}=1.
-$$
-Write $z=x+iy$. Then
-$$
-e^{2\pi i z}=e^{2\pi i x}e^{-2\pi y}.
-$$
-If this equals $1$, its modulus is $1$, so $e^{-2\pi y}=1$ and hence $y=0$. Then $e^{2\pi i x}=1$, so $x\in\ZZ$. Thus the zeros are exactly the integers.
+No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. Both assertions were checked: the zeros of $\sin\pi z$ are exactly the integers, each is simple, and the residue of $1/\sin\pi z$ there is $(-1)^n/\pi$.
 
-At $z=n\in\ZZ$,
-$$
-\frac{d}{dz}\sin\pi z=\pi\cos\pi z=\pi(-1)^n\ne0,
-$$
-so each zero is simple.
+::: pf
 
-For a holomorphic function $g$ with a simple zero at $n$, the residue of $1/g$ at $n$ is $1/g'(n)$. Therefore
-$$
-\operatorname{Res}_{z=n}\frac1{\sin\pi z}
-=\frac1{\pi\cos\pi n}
-=\frac{(-1)^n}{\pi}.
-$$
+::: {.pf-step #zeros}
+$\sin\pi z=0$ if and only if $z\in\ZZ$.
+
+::: pf-proof
+By Euler's formula $\sin\pi z=0$ exactly when $e^{i\pi z}=e^{-i\pi z}$, that is $e^{2\pi iz}=1$. Writing $z=x+iy$ gives $e^{2\pi iz}=e^{2\pi ix}e^{-2\pi y}$; for this to be $1$ its modulus must be $1$, so $e^{-2\pi y}=1$ and $y=0$, and then $e^{2\pi ix}=1$ gives $x\in\ZZ$.
+:::
+:::
+
+::: {.pf-step #simple}
+Each zero $n\in\ZZ$ of $\sin\pi z$ is simple.
+
+::: pf-proof
+The derivative is $\pi\cos\pi z$, whose value at $n$ is $\pi(-1)^n\ne0$.
+:::
+:::
+
+::: {.pf-step #residue}
+$\operatorname{Res}_{z=n}\frac{1}{\sin\pi z}=\frac{(-1)^n}{\pi}$.
+
+::: pf-proof
+For a holomorphic $g$ with a simple zero at $n$, $1/g$ has a simple pole there with residue $1/g'(n)$; applying this to $g=\sin\pi z$ and step [](#simple){.pf-ref} gives $1/(\pi\cos\pi n)=(-1)^n/\pi$.
+:::
+:::
+
+::: {.pf-step}
+The zeros of $\sin\pi z$ are the integers, they are simple, and the residues of the reciprocal there are $(-1)^n/\pi$.
+
+::: pf-proof
+Steps [](#zeros){.pf-ref}, [](#simple){.pf-ref} and [](#residue){.pf-ref} give the three assertions.
+:::
+:::
+
+:::
 :::
