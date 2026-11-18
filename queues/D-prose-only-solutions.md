@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1373 of the 12429 problem cards that have a solution
+1372 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1373
+- Problems: 1372
 - Problem cards with a solution: 12429
 
-## Problems (1373)
+## Problems (1372)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -78,7 +78,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.2-8 — "Spaces with isomorphic integral but distinct $\ZZ_p$ cohomology rings"
 - [ ] E-HAT-3.3-1 — "Nonorientable 1-manifolds without Hausdorff"
 - [ ] E-HAT-3.3-10 — "Degree 1 implies surjection on $\pi_1$"
-- [ ] E-HAT-3.3-12 — "Commutator length in free groups"
 - [ ] E-HAT-3.3-13 — "No retraction onto subsurface of high genus"
 - [ ] E-HAT-3.3-15 — "Local homology as sections of a covering"
 - [ ] E-HAT-3.3-16 — "Associativity of cap product"
