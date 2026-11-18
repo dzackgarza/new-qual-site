@@ -67,6 +67,21 @@ audit:
     R_l^2 not normal (Example 3 of Section 31), and the ordered square locally connected but not
     locally path connected (Exercise 25.3); also Exercise 25.2(c) for the components in the box
     topology and Exercise 33.9 for complete regularity there.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A review of this card reported four defects, all confirmed and all corrected. (i) Columns 8, 9
+    and 10 listed (h), R^omega in the uniform topology, among the products in the product topology;
+    the uniform topology is the metric topology of the uniform metric and is not a product
+    topology, so (h) is now settled in those three columns as a metric space --- Hausdorff, and
+    normal hence regular and completely regular by Theorem 32.2 and the Urysohn lemma. (ii) Column
+    14 claimed (h) separable and Lindelof; the table and column 15 say otherwise, and the argument
+    is now that {0,1}^omega is an uncountable closed discrete subspace (Example 2 of Section 30)
+    and a Lindelof space has no such subspace. (iii) Column 12 excluded first countability for (c)
+    by the slice S_Omega x {Omega}, which is homeomorphic to the first countable S_Omega and so
+    proves nothing; the slice is now {alpha} x S-bar_Omega, homeomorphic to S-bar_Omega, which
+    fails first countability at Omega. (iv) The table entries themselves are unchanged.
 ---
 
 ::: {.exercise}
@@ -214,7 +229,7 @@ Column 8 of the table, *Hausdorff*: Y for (a) $S_\Omega$, (b) $\overline S_\Omeg
 
 ::: pf-proof
 
-Y for all eleven. For (a), (b), (c), (d) this is Exercise 31.3, every order topology being regular. For the products in the product topology, (c), (f), (g), (h) and (j), it is Theorem 31.2(a), a product of Hausdorff spaces being Hausdorff; for (i), $\RR^\omega$ in the box topology, the same theorem applies to the product topology on the same set, and the box topology contains it, so sets separating two points in the coarser topology separate them in the finer one as well --- Theorem 31.2(a) is stated for the product topology and is not itself a statement about the box topology. For (e) it is Example 2 of §31, $\RR_\ell$ being normal, hence regular. For (k) it is Example 1 of §31, which records that $\RR_K$ is Hausdorff.
+Y for all eleven. For (a), (b), (c), (d) this is Exercise 31.3, every order topology being regular. For the products in the product topology, (c), (f), (g) and (j), it is Theorem 31.2(a), a product of Hausdorff spaces being Hausdorff; for (h) the uniform topology on $\RR^\omega$ is the metric topology of the uniform metric, so it is Hausdorff as every metric space is; for (i), $\RR^\omega$ in the box topology, the same theorem applies to the product topology on the same set, and the box topology contains it, so sets separating two points in the coarser topology separate them in the finer one as well --- Theorem 31.2(a) is stated for the product topology and is not itself a statement about the box topology. For (e) it is Example 2 of §31, $\RR_\ell$ being normal, hence regular. For (k) it is Example 1 of §31, which records that $\RR_K$ is Hausdorff.
 
 :::
 
@@ -226,7 +241,7 @@ Column 9 of the table, *Regular*: Y for (a) $S_\Omega$, (b) $\overline S_\Omega$
 
 ::: pf-proof
 
-Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (h), (j) are products of regular spaces in the product topology, Theorem 31.2(b). For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9 (printed p. 213), which shows that $\RR^J$ in the box topology is completely regular, together with the remark on printed p. 211 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
+Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (j) are products of regular spaces in the product topology, Theorem 31.2(b); (h) is metrizable, so normal by Theorem 32.2 (printed p. 197) and hence regular. For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9 (printed p. 213), which shows that $\RR^J$ in the box topology is completely regular, together with the remark on printed p. 211 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
 
 :::
 
@@ -238,7 +253,7 @@ Column 10 of the table, *Completely regular*: Y for (a) $S_\Omega$, (b) $\overli
 
 ::: pf-proof
 
-Y for all but (k). A normal space is completely regular by the Urysohn lemma, Theorem 33.1, which settles (a), (b), (d), (e) through their normality, entry 11; and a product of completely regular spaces is completely regular, Theorem 33.2, which settles (c), (f), (g), (h) and (j) in the product topology. That theorem's product clause is again about the product topology, so (i) is settled by Exercise 33.9 (printed p. 213), the result that $\RR^J$ in the box topology is completely regular. N for (k): a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets, and (k) is not regular.
+Y for all but (k). A normal space is completely regular by the Urysohn lemma, Theorem 33.1, which settles (a), (b), (d), (e) through their normality, entry 11; and a product of completely regular spaces is completely regular, Theorem 33.2, which settles (c), (f), (g) and (j) in the product topology; (h) is metrizable, so normal by Theorem 32.2 and hence completely regular by the Urysohn lemma. That theorem's product clause is again about the product topology, so (i) is settled by Exercise 33.9 (printed p. 213), the result that $\RR^J$ in the box topology is completely regular. N for (k): a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets, and (k) is not regular.
 
 :::
 
@@ -262,7 +277,7 @@ Column 12 of the table, *First countable*: Y for (a) $S_\Omega$, (d) ordered squ
 
 ::: pf-proof
 
-Y for (a) by Exercise 30.7, which asks which of the four countability axioms $S_\Omega$ satisfies and whose answer is the first alone; for (d) and (e) by Exercise 21.4; for (f) and (g) by Theorem 30.2, a countable product of first countable spaces being first countable, and Example 1 of §30 for the countable basis of (g); for (h) because the uniform metric is a metric and a metrizable space is first countable, §21; and for (k) because it is second countable, entry 13. N for (b) at the point $\Omega$; for (c) because the slice $S_\Omega\times\{\Omega\}$ is homeomorphic to $\overline S_\Omega$, which is not first countable, and first countability passes to subspaces, Theorem 30.2; and for (i) and (j) by the diagonal argument — countably many basic neighbourhoods of a point involve countably many coordinates in all, and a coordinate outside that countable set carries a cylinder containing none of them.
+Y for (a) by Exercise 30.7, which asks which of the four countability axioms $S_\Omega$ satisfies and whose answer is the first alone; for (d) and (e) by Exercise 21.4; for (f) and (g) by Theorem 30.2, a countable product of first countable spaces being first countable, and Example 1 of §30 for the countable basis of (g); for (h) because the uniform metric is a metric and a metrizable space is first countable, §21; and for (k) because it is second countable, entry 13. N for (b) at the point $\Omega$; for (c) because the slice $\{\alpha\}\times\overline S_\Omega$, for any fixed $\alpha\in S_\Omega$, is homeomorphic to $\overline S_\Omega$, which is not first countable at $\Omega$, and first countability passes to subspaces, Theorem 30.2 --- the slice $S_\Omega\times\{\Omega\}$ would not serve, being homeomorphic to the first countable $S_\Omega$; and for (i) and (j) by the diagonal argument — countably many basic neighbourhoods of a point involve countably many coordinates in all, and a coordinate outside that countable set carries a cylinder containing none of them.
 
 :::
 
@@ -286,7 +301,7 @@ Column 14 of the table, *Lindelöf*: Y for (b) $\overline S_\Omega$, (d) ordered
 
 ::: pf-proof
 
-Y for (b) and (d) because both are compact, entry 5, and a compact space is Lindelöf, as Example 5 of §30 notes in passing; for (e) by Example 3 of §30; for (g) and (h) because they are metrizable and separable, hence second countable by Exercise 30.5(a), hence Lindelöf by Theorem 30.3(a); for (k) by Theorem 30.3(a) and entry 13. N for (a) by Exercise 30.7; for (c) because it is regular, entry 9, and not normal, entry 11, whereas a regular Lindelöf space is normal, Exercise 32.4; for (f) by Example 4 of §30; for (i) because the uncountable closed discrete subspace $\{0,1\}^\omega$ forces the failure — the cover by $X-A$ together with a neighbourhood of each point of $A$ meeting $A$ only there has no countable subcover; for (j) by Exercise 32.4 again, (j) being regular and not normal.
+Y for (b) and (d) because both are compact, entry 5, and a compact space is Lindelöf, as Example 5 of §30 notes in passing; for (e) by Example 3 of §30; for (g) because it is metrizable and separable, hence second countable by Exercise 30.5(a), hence Lindelöf by Theorem 30.3(a); for (k) by Theorem 30.3(a) and entry 13. N for (a) by Exercise 30.7; for (c) because it is regular, entry 9, and not normal, entry 11, whereas a regular Lindelöf space is normal, Exercise 32.4; for (f) by Example 4 of §30; for (i) because the uncountable closed discrete subspace $\{0,1\}^\omega$ forces the failure — the cover by $X-A$ together with a neighbourhood of each point of $A$ meeting $A$ only there has no countable subcover; for (j) by Exercise 32.4 again, (j) being regular and not normal; for (h) because $\{0,1\}^\omega$ is an uncountable closed discrete subspace of $\RR^\omega$ in the uniform topology (Example 2 of §30), and a Lindelöf space has no uncountable closed discrete subspace: the cover by the complement of that subspace together with one open set about each of its points, meeting it only there, has no countable subcover.
 
 :::
 
