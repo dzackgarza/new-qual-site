@@ -31,6 +31,18 @@ audit:
     with restriction, and its stalk map is the identity since a continuous map
     into a discrete group is locally constant. Not checked: the universal
     property of sheafification is used as the text states it, not re-proved.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into a Lamport proof, mathematics unchanged: the four paragraphs are now five
+    numbered steps — the presheaf morphism with continuity of constant maps, the computation of
+    both stalks with the bijection from A to the stalk of the constant sheaf and its inverse,
+    the passage to sheafification with the stalkwise criterion for an isomorphism of sheaves,
+    and the conclusion — with the citation to Kim's set (Chapter II §1, Exercise 1.1, PDF p. 2)
+    moved to the head of the solution so that the proof it supports is attributed where it is
+    read. The remark after the solution, which records the same attribution and the two
+    implicit points, is unchanged. Nothing was re-derived; the statement is unchanged.
 ---
 
 
@@ -43,25 +55,53 @@ Recall that the constant sheaf $\mca$ of the text is defined by giving $A$ the d
 :::
 
 ::: {.solution}
-Write $\tilde\mca$ for the constant presheaf of the question and $\mca$ for the sheaf of the text.
+The published solution is **Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II–III), Chapter II §1, Exercise 1.1, PDF p. 2** (`tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`): he maps the constant presheaf into the constant sheaf of the text by sending $a$ to the constant function with value $a$, notes that the induced map is an isomorphism on every stalk, and concludes from the universal property of sheafification that $(\tilde\mca)^{+}\to\mca$ is an isomorphism. The two points he leaves implicit are supplied here: constant maps into the discrete group $A$ are continuous, and a continuous map from a neighbourhood of a point into a discrete group is constant near that point.
 
-Set $\tilde\mca(\varnothing)=0$. Define a morphism of presheaves $F: \tilde\mca \to \mca$ by giving, for each nonempty open $U$, the map
-$$
-F_U: \tilde\mca(U) = A \to \mca(U) = C^0(U, A)
-$$
-which sends $a \in A$ to the constant function with value $a$.
-On the empty open set, $F_\varnothing$ is the unique map between zero groups.
-Since $A$ carries the discrete topology, every constant function is continuous, so $F_U$ lands in $\mca(U)$.
-The maps $F_U$ are compatible with restriction, because restricting a constant function gives the constant function with the same value, so $F$ is a morphism of presheaves.
+Throughout $X$ is a topological space, $A$ an abelian group with the discrete topology, $\tilde\mca$ the constant presheaf $U\mapsto A$ for $U\ne\varnothing$ with identity restrictions, set to $\tilde\mca(\varnothing)=0$, and $\mca$ the sheaf $U\mapsto C^0(U,A)$ of the text.
 
-Now compare stalks.
-For every $p \in X$ we have $\tilde\mca_p = A$, since every restriction map of $\tilde\mca$ is the identity.
-On the other side, a continuous map from a small enough neighbourhood of $p$ into the discrete group $A$ is constant near $p$, so $\mca_p = A$ as well, and $F_p: A \to A$ is the identity.
-Thus $F_p$ is an isomorphism for every $p$.
+::: pf
 
-A morphism of presheaves which is an isomorphism on all stalks induces an isomorphism on the associated sheaves.
-By the universal property of sheafification, $F$ factors through $(\tilde\mca)^+$, and the induced map $(\tilde\mca)^+ \to \mca$ is an isomorphism on stalks between two sheaves, hence an isomorphism.
-So $\mca$ is the sheafification of the constant presheaf.
+::: {.pf-step #presheaf-map}
+There is a morphism of presheaves $F:\tilde\mca\to\mca$ with $F_U(a)$ the constant function of value $a$.
+
+::: pf-proof
+For nonempty open $U$ let $F_U:A\to C^0(U,A)$, $a\mapsto(u\mapsto a)$. Because $A$ is discrete, the preimage of a point is either $U$ or $\varnothing$, so every constant map is continuous and $F_U$ is well defined; it is a homomorphism of groups. For open $V\subseteq U$ and $a\in A$, restricting the constant function $a$ on $U$ to $V$ gives the constant function $a$ on $V$, which is $F_V(a)$; so the $F_U$ commute with restriction. On $\varnothing$ the source is $0$ and there is a unique map to $\mca(\varnothing)=C^0(\varnothing,A)$.
+
+:::
+
+:::
+
+::: {.pf-step #stalks}
+$\tilde\mca_P\cong A\cong\mca_P$ for every $P\in X$, and $F_P$ is an isomorphism.
+
+::: pf-proof
+All restriction maps of $\tilde\mca$ are identities and the groups are all $A$, so the filtered colimit over the open neighbourhoods of $P$ is $A$ and $F_P$ is induced by identity maps. For $\mca$: a germ at $P$ is represented by a continuous $s:U\to A$; since $A$ is discrete, $s^{-1}(s(P))$ is open and nonempty, so on the neighbourhood $s^{-1}(s(P))$ the section $s$ is the constant map of value $s(P)$, which is the germ of an element of $A$ under $F$. Two continuous maps agreeing at $P$ have the same value there, so the map $a\mapsto$ germ of the constant function $a$ is a bijection $A\to\mca_P$, and it is inverse to the map induced by $F$. Hence $\mca_P\cong A$ and $F_P$ is an isomorphism.
+
+:::
+
+:::
+
+::: {.pf-step #sheafification}
+The map $F^{+}:\tilde\mca^{+}\to\mca^{+}=\mca$ induced by $F$ is an isomorphism.
+
+::: pf-proof
+Sheafification is left adjoint to the inclusion of sheaves in presheaves, so $F$ induces $F^{+}:\tilde\mca^{+}\to\mca^{+}$, and $\mca^{+}\cong\mca$ since $\mca$ is a sheaf. Sheafification preserves stalks, so $(F^{+})_P=F_P$ by step [](#stalks){.pf-ref}, which is an isomorphism. A morphism of sheaves that is an isomorphism on every stalk is an isomorphism: it is injective and surjective on sections (a nonzero section of the kernel or a class in the cokernel would give a nonzero element of some stalk). Hence $F^{+}$ is an isomorphism.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$\mca$ is the sheaf associated to the constant presheaf $\tilde\mca$.
+
+::: pf-proof
+The sheaf associated to a presheaf is unique up to unique isomorphism, and step [](#sheafification){.pf-ref} exhibits an isomorphism $\tilde\mca^{+}\cong\mca$; that is the assertion.
+
+:::
+
+:::
+
+:::
 :::
 
 ::: {.remark title="Published solution"}
