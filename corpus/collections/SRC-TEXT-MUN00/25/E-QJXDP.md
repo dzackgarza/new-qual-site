@@ -75,7 +75,28 @@ audit:
     the branch from (a_1,0), whose foot is outside B(p,epsilon); so in any open neighbourhood
     V of p inside B(p,epsilon) the set V intersected with that branch is nonempty, open and
     closed in V and misses p, and V is disconnected. Part (b) is then the axis piece.
----
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The two notes above of this date are withdrawn: the printed statement is not defective
+    and the retained description of the space is not wrong. The error was mine, in the
+    reading of "neighbourhood". Munkres fixes the term on printed p. 97: "U is a
+    neighborhood of x" is short for "U is an open set containing x", and he explicitly
+    rejects the other usage, under which a neighbourhood is any set containing an open set
+    containing the point. Since a connected subspace containing an open set about x need not
+    itself be open, weak local connectivity at x does not imply local connectivity at x, and
+    Exercise 25.7 is consistent as printed. The card now uses the printed notions (p. 161 for
+    local connectedness, p. 162 for weak local connectivity), restores the retained
+    description of the broom and the retained tail sub-broom C = X intersect B(p,a_N) for
+    part (b), which is connected because no branch straddles the radius a_N and contains the
+    open set X intersect B(p,a_{N+1}), and proves part (a) through Theorem 25.3: for
+    epsilon between consecutive a's the component of p in X intersect B(p,epsilon) is not
+    open, since a point y of the axis with a_{N+1} < y_x < epsilon has, in every ball about
+    it, points of the branch that straddles y_x + eta, whose foot lies outside the ball of
+    radius epsilon, so those points lie in another component. What is not claimed: the
+    retained source's own step for part (a), that a connected set meeting a connected
+    neighbourhood lies in it, which is not valid as stated and is not used here.
 ---
 
 ::: {.exercise}
@@ -86,58 +107,55 @@ Show that $X$ is not locally connected at $p$, but is weakly locally connected a
 :::
 
 ::: {.solution}
-Two things have to be fixed before the exercise can be proved, and both are recorded in the audit: the description of the space, and the notion in part (b).
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.7, PDF pp. 9--10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), with its description of the broom and its tail sub-broom for part (b); part (a) is proved here through Theorem 25.3 instead of the source's step about connected sets meeting a neighbourhood, and the earlier note on this card calling the printed statement defective is withdrawn.
 
-The book draws $X$ in Figure 25.1 (printed p. 162) and states no formula, and the description in the retained solution -- branches from $(a_i,0)$ to $(a_{i+1},r_j)$ -- makes $X$ locally connected at $p$, so it cannot be the figure's space. The description used here is the one the figure shows, branches of decreasing height running left from the points $a_i$ and crowding towards $p$: $p=(0,0)$; points $(a_i,0)$ on the axis with $a_1=1$ and $a_i$ strictly decreasing to $p$; the segment $L$ from $p$ to $(a_1,0)$; for each $i,j\ge1$ a closed segment $L_{i,j}$ from $(a_i,0)$ to $(a_{i+j},r_j)$, where $r_j>0$ and $r_j\downarrow0$ with $r_j<a_j$; branches meet the axis only at their feet and have pairwise disjoint relative interiors, as in the figure; $X=L\cup\bigcup_{i,j}L_{i,j}$ with the subspace topology of $\RR^2$.
+The notions are the printed ones. *Weakly locally connected at $x$*: for every neighbourhood $U$ of $x$ there is a connected subspace of $X$ contained in $U$ that contains a neighbourhood of $x$ (§25 Exercise 6, printed p. 162). *Locally connected at $x$*: for every neighbourhood $U$ of $x$ there is a connected neighbourhood of $x$ contained in $U$ (§25, printed p. 161). And a neighbourhood is an open set containing the point: Munkres records the convention and rejects the other one, under which a neighbourhood is any set containing an open set containing the point (§17, printed p. 97). It follows that a connected subspace containing a neighbourhood of $x$ need not itself be a neighbourhood of $x$, so weak local connectivity at $x$ does not give local connectivity at $x$; that is why the exercise is not vacuous.
 
-Part (b) carries a defect of the printed page. The definition in §25 Exercise 6 (printed p. 162) is "for every neighborhood $U$ of $x$ there is a connected subspace of $X$ contained in $U$ that contains a neighborhood of $x$" (checked at 600 dpi against the retained PDF): a connected subspace containing a neighbourhood of $x$ is itself a connected neighbourhood of $x$, so with that definition a space weakly locally connected at $x$ is locally connected at $x$, and the printed conclusion of this exercise cannot hold for any space. Part (b) is proved below for the standard notion, which is what the exercise needs: for every neighbourhood $U$ of $p$ there is a connected subspace containing $p$ and contained in $U$.
+The space is the retained description of Figure 25.1: $p=(0,0)$; points $(a_i,0)$ on the axis with $a_1=1$ and $a_i$ strictly decreasing to $p$; the segment $L$ from $p$ to $(a_1,0)$; for each $i,j\ge1$ the segment $L_{i,j}$ from $(a_i,0)$ to $(a_{i+1},r_j)$, with $r_j>0$ and $r_j\downarrow0$; branches meet the axis only at their feet and have pairwise disjoint relative interiors; $X=L\cup\bigcup_{i,j}L_{i,j}$ as a subspace of $\RR^2$. The exercise is §25 Exercise 7 (printed p. 162).
 
 ::: pf
-
-::: {.pf-step #space}
-$X$ is connected, and $X\cap B(p,\varepsilon)$ for $0<\varepsilon<a_1$ consists of the axis piece $[0,\varepsilon)\times\{0\}$ together with the pieces inside the ball of the branches that meet it.
-
-::: pf-proof
-$X$ is the union of the connected set $L$ and the branches, each of which is a compact connected set meeting $L$ at its foot $(a_i,0)$; a union of connected sets all meeting one of them is connected. The description of the trace on $B(p,\varepsilon)$ is the definition of the subspace topology.
-:::
-
-:::
 
 ::: {.pf-step #not-locally}
 (a) $X$ is not locally connected at $p$.
 
 ::: pf-proof
+Suppose it were. By Theorem 25.3 (printed p. 161) a space is locally connected exactly when every component of every open set is open in it; so for the open set $U=X\cap B(p,\varepsilon)$, with $0<\varepsilon<1$ chosen so that no $a_i$ equals $\varepsilon$, the component $P$ of $p$ in $U$ would be open in $X$. It is not, and the point that witnesses this is any $y=(y_x,0)$ on the axis with $a_{N+1}<y_x<\varepsilon$, where $N$ is the index with $a_{N+1}<\varepsilon<a_N$: every ball about $y$ contains a point of $U$ outside $P$.
 
-::: {.pf-step #far-end}
-Let $0<\varepsilon<a_1$, let $0<\delta<\varepsilon$ and choose $j$ with $a_{1+j}<\delta/2$ and $r_j<\delta/2$. Then $q=(a_{1+j},r_j)$ is an endpoint of the branch $L_{1,j}$, whose foot is $(a_1,0)$, and $q\in B(p,\delta)$.
-
-::: pf-proof
-$a_{1+j}\to0$ and $r_j\to0$, so such $j$ exists; the distance from $q$ to $p$ is $\sqrt{a_{1+j}^2+r_j^2}<\delta$, since both coordinates are below $\delta/2$. The foot of $L_{1,j}$ is $(a_1,0)$, whose distance to $p$ is $a_1=1>\varepsilon$.
-:::
-
-:::
-
-::: {.pf-step #clopen}
-If $V$ is an open subset of $X$ with $p\in V$ and $V\subseteq X\cap B(p,\varepsilon)$, then $V\cap L_{1,j}$ is a nonempty subset of $V$, open and closed in $V$, not containing $p$; hence $V$ is disconnected.
+::: {.pf-step #straddling}
+For $0<\eta<\varepsilon-y_x$ let $i$ be the index with $a_{i+1}<y_x+\eta\le a_i$. Then $a_i\ge a_N>\varepsilon$, and for $r_j$ small the branch $L_{i,j}$ meets the ball $B(y,\eta)$ in a point of $U$.
 
 ::: pf-proof
-Let $A=V\cap L_{1,j}$. It is nonempty as soon as $V$ contains $q$, which holds if $X\cap B(p,\delta)\subset V$ by step [](#far-end){.pf-ref}. It is compact, being a closed subset of the compact segment $L_{1,j}$, and $V$ is a subspace of the metric space $\RR^2$, so $A$ is closed in $V$. For each $a\in A$ there is a ball about $a$ meeting $X$ only in $L_{1,j}$: the branches have pairwise disjoint relative interiors, and the only points of $L_{1,j}$ on the axis is its foot $(a_1,0)$, which is outside $B(p,\varepsilon)$; its other endpoint $(a_{1+j},r_j)$ has $r_j>0$ and so is not on the axis nor a foot of another branch. So every point of $A$ is an interior point of the branch, where a ball meets $X$ only in that branch; shrinking that ball into $V$, which is open, gives a neighbourhood of $a$ in $V$ contained in $A$, and $A$ is open in $V$. Finally $p\notin A$ because $p\notin L_{1,j}$. So $A$ and $V-A$ are nonempty, disjoint and open in $V$.
+Since $y_x+\eta<\varepsilon<a_N\le a_i$ whenever $i\le N$, and $a_{i+1}<y_x+\eta\le a_i$ forces $a_i>a_{N+1}$, we get $i\le N$ and hence $a_i\ge a_N>\varepsilon$. The branch $L_{i,j}$ runs from $(a_i,0)$ to $(a_{i+1},r_j)$; the point of the branch whose first coordinate is $y_x$ lies between its endpoints because $a_{i+1}<y_x$ and $y_x<y_x+\eta\le a_i$, and its height there is $r_j\,(a_i-y_x)/(a_i-a_{i+1})$, which is less than $\eta$ for $r_j$ small. That point is in $B(y,\eta)$, and it lies in $U$ because its distance to $p$ is at most $y_x+\eta<\varepsilon$.
 :::
 
 :::
 
-:::
-
-:::
-
-::: {.pf-step}
-(a) Every neighbourhood of $p$ inside $X\cap B(p,\varepsilon)$ is disconnected, so $X$ is not locally connected at $p$; and (b) for every neighbourhood $U$ of $p$ there is a connected subspace containing $p$ and contained in $U$, namely $L\cap U$.
+::: {.pf-step #outside}
+Such a point lies outside $P$.
 
 ::: pf-proof
-For the first assertion, let $V$ be an open neighbourhood of $p$ with $V\subseteq X\cap B(p,\varepsilon)$; since $V$ is a neighbourhood of $p$ in $X$ there is $\delta>0$ with $X\cap B(p,\delta)\subset V$, and then step [](#clopen){.pf-ref} shows $V$ disconnected. As $V$ was arbitrary, no connected neighbourhood of $p$ lies in $X\cap B(p,\varepsilon)$, which is a neighbourhood of $p$; hence $X$ is not locally connected at $p$. For the second, let $U$ be a neighbourhood of $p$; it contains $X\cap B(p,\delta)$ for some $\delta>0$, and $C=L\cap U$ is an interval of the axis containing $p$, hence connected, with $p\in C\subset U$; this is weak local connectivity at $p$ in the standard sense stated above, which is the assertion of part (b) under the corrected reading.
+The branch $L_{i,j}$ meets the axis only at $(a_i,0)$, which is not in $U$ because $a_i>\varepsilon$, and its other endpoint $(a_{i+1},r_j)$ is not on the axis; dually every other branch meets $L_{i,j}$ only possibly at a foot, and all feet of $L_{i,j}$ lie outside $U$. So the set of points of $L_{i,j}$ lying in $U$ is both open and closed in $U$ — open because each of its points is an interior point of the branch, where a ball meets $X$ only in that branch, and closed because its closure in the branch is met by $U$ only in itself — and it does not contain $p$. Hence it is a union of components of $U$ different from $P$.
 :::
 
 :::
 
 :::
+
+:::
+
+::: {.pf-step #weakly}
+(b) $X$ is weakly locally connected at $p$.
+
+::: pf-proof
+Let $U$ be a neighbourhood of $p$; since $U$ is open and the balls about $p$ form a local base, $X\cap B(p,\varepsilon)\subset U$ for some $0<\varepsilon<1$. Choose $N$ with $a_N<\varepsilon$ and put
+$$
+C=X\cap B(p,a_N),
+$$
+the tail sub-broom. First $C$ is a neighbourhood of $p$ in the sense required: it contains $X\cap B(p,a_{N+1})$, an open set containing $p$. Next $C$ is connected: it is the union of the connected set $[0,a_N)\times\{0\}=L\cap C$ with the pieces $L_{i,j}\cap C$ for those branches that meet $C$, and each such piece meets $L\cap C$: for a branch with $a_i<a_N$ that is its foot $(a_i,0)$; for a branch with $a_i\ge a_N$ there is no piece at all, because every point of it has first coordinate at least $a_{i+1}$, and $a_{i+1}\ge a_N$ when $i\le N-1$ while for $i\ge N$ we have $a_i\le a_N$ and the branch lies in the case already treated — so no branch straddles the radius $a_N$. Hence $C$ is connected, $p\in C$, and $C\subset U$ because $a_N<\varepsilon$.
+:::
+
+:::
+
+:::
+
 :::
