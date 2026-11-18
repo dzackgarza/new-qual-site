@@ -36,11 +36,53 @@ What are the continuous maps $f: \RR \to \RR_\ell$?
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.1, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-Let $A$ be a nonempty connected subspace of $\RR_{\ell}$ and $a\in A$. The set $[a,\infty)\cap A$ is open in $A$ (trace of the open set $[a,\infty)=\bigcup_{n}[a+n,a+n+1)$) and closed in $A$ (trace of the closed set $(-\infty,a)$, closed since $\RR_{\ell}$ is Hausdorff), and it is nonempty; since $A$ is connected it equals $A$. So every $b\in A$ satisfies $b\ge a$, whence $A=\{a\}$. Thus the components of $\RR_{\ell}$ are the singletons.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.1, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs. Its reason for the closedness of $[a,\infty)$ is replaced below: that set is closed because its complement is a union of basis elements, not because $\RR_{\ell}$ is Hausdorff.
 
-Every path component lies in a component, so the path components are the singletons too.
+$\RR_{\ell}$ is $\RR$ with the topology of basis elements $[x,y)$, $x<y$ (Example 3, printed p. 82).
 
-If $f:\RR\to\RR_{\ell}$ is continuous then $f(\RR)$ is connected in $\RR_{\ell}$, hence a single point: the continuous maps $\RR\to\RR_{\ell}$ are exactly the constant maps (compare Exercise 18.7(b)).
+::: pf
+
+::: {.pf-step #half-line}
+For $a\in\RR$ the set $[a,\infty)$ is both open and closed in $\RR_{\ell}$.
+
+::: pf-proof
+$[a,\infty)=\bigcup_{n\ge0}[a+n,a+n+1)$ and $(-\infty,a)=\bigcup_{n\ge0}[a-n-1,a-n)$ are unions of basis elements, hence open. So $[a,\infty)$ is open and its complement $(-\infty,a)$ is open, that is $[a,\infty)$ is also closed.
+:::
+
+:::
+
+::: {.pf-step #connected-singleton}
+Every nonempty connected subspace $A$ of $\RR_{\ell}$ is a singleton.
+
+::: pf-proof
+Let $a,b\in A$ and put $B=[a,\infty)\cap A$. By step [](#half-line){.pf-ref} the set $[a,\infty)$ is open and closed in $\RR_{\ell}$, so $B$ is open and closed in the subspace $A$; and $B\ne\varnothing$ since $a\in B$. As $A$ is connected, the only nonempty subset of $A$ that is both open and closed in $A$ is $A$ itself, so $B=A$: every $b\in A$ satisfies $b\ge a$. Interchanging $a$ and $b$ gives $a\ge b$, hence $a=b$. So $A$ has at most one point, and being nonempty it is $\{a\}$.
+:::
+
+:::
+
+::: {.pf-step #components}
+The components of $\RR_{\ell}$ are its one-point subsets, and so are its path components.
+
+::: pf-proof
+A component is a maximal connected subspace; by step [](#connected-singleton){.pf-ref} every connected subspace is a singleton, so the component containing $x$ is $\{x\}$. A path component is path connected, hence connected, hence a singleton by step [](#connected-singleton){.pf-ref}; and every singleton $\{x\}$ is path connected (the constant path), so it is the path component of $x$.
+:::
+
+:::
+
+::: {.pf-step #maps}
+The continuous maps $f:\RR\to\RR_{\ell}$ are exactly the constant maps.
+
+::: pf-proof
+If $f$ is continuous then $f(\RR)$ is connected in $\RR_{\ell}$, being the continuous image of the connected space $\RR$ (Theorem 23.5 on the page range that this scan leaves image-only: the image of a connected space under a continuous map is connected), so $f(\RR)$ is a singleton by step [](#connected-singleton){.pf-ref}: $f$ is constant. Conversely a constant map is continuous.
+:::
+
+:::
+
+::: {.pf-qed}
+Both the components and the path components of $\RR_{\ell}$ are the one-point sets (step [](#components){.pf-ref}), and the continuous maps $\RR\to\RR_{\ell}$ are the constant ones (step [](#maps){.pf-ref}).
+:::
+
+:::
+
 :::
