@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1372 of the 12429 problem cards that have a solution
+1371 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1372
+- Problems: 1371
 - Problem cards with a solution: 12429
 
-## Problems (1372)
+## Problems (1371)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -94,7 +94,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.3-3 — "Covering spaces of orientable manifolds"
 - [ ] E-HAT-3.3-30 — "Boundary of orientable manifold is orientable"
 - [ ] E-HAT-3.3-31 — "Boundary map sends fundamental class to fundamental class"
-- [ ] E-HAT-3.3-32 — "Compact manifolds do not retract onto boundary"
 - [ ] E-HAT-3.3-33 — "Boundary of contractible manifold is a homology sphere"
 - [ ] E-HAT-3.3-34 — "Poincaré duality diagram for manifolds with boundary"
 - [ ] E-HAT-3.3-35 — "Poincaré duality for noncompact manifolds with boundary"
