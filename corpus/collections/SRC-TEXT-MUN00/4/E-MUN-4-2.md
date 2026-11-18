@@ -37,6 +37,15 @@ audit:
     card's: (e) multiplies x - y > 0 by -z > 0 to get yz > xz, (h) separates the two
     same-sign cases and uses (e) for the mixed one, and (i) rules out 1/x < 0 by
     multiplying x > 0. No defect found.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: one step per printed part (a)-(k), with
+    (h) split into its two same-sign directions and the converse. Axiom (6) was re-read in
+    the book's text (tmp/sources/munkres-2000-topology.md, section 4) and the steps cite its
+    two clauses as printed; the retained solution's cited pages were not re-read in this
+    pass, and the section's exercise page was not re-read either.
 ---
 
 ::: {.exercise}
@@ -67,81 +76,154 @@ Prove the following "laws of inequalities" for $\RR$, using axioms (1)-(6) along
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.2, printed pp. 45--49** (`tmp/sources/munkres-solutions-whitman.pdf`); the eleven arguments below, each written in terms of $x>y \iff x-y>0$ and closures (6), are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.2, printed pp. 45--49** (`tmp/sources/munkres-solutions-whitman.pdf`); the eleven arguments below, each written in terms of $x>y\iff x-y>0$ together with axiom (6), are his.
 
-Recall that $x>y$ means $x-y>0$, and that positive real numbers are closed under addition and multiplication.
+Recall that $x>y$ means $x-y>0$, and that axiom (6) of §4 has two clauses: $x>y$ implies $x+z>y+z$, and $x>y$ with $z>0$ implies $xz>yz$. Also $x<y$ means $y>x$.
 
-(a) Since $x-y>0$ and $w-z>0$,
+::: pf
+
+::: {.pf-step #sum}
+(a) $x>y$ and $w>z$ imply $x+w>y+z$.
+
+::: pf-proof
+Since $x-y>0$ and $w-z>0$, the first clause of (6) applied twice gives
 $$
 (x+w)-(y+z)=(x-y)+(w-z)>0,
 $$
 so $x+w>y+z$.
+:::
 
-(b) This is exactly closure of the positive reals under addition and multiplication:
-$$
-x+y>0,\qquad xy>0.
-$$
+:::
 
-(c)
-$$
--x<0\iff 0-(-x)>0\iff x>0.
-$$
+::: {.pf-step #positive}
+(b) $x>0$ and $y>0$ imply $x+y>0$ and $xy>0$.
 
-(d)
-$$
--x<-y\iff (-y)-(-x)=x-y>0\iff x>y.
-$$
+::: pf-proof
+The first clause of (6) with $x>0=y$ and $z=y$ gives $x+y>0+y=y>0$, and the second clause with $x>0$, $y>0$ gives $xy>0\cdot y=0$. These are exactly the two closure statements for the positive reals.
+:::
 
-(e) Since $x-y>0$ and $-z>0$,
-$$
-(x-y)(-z)>0.
-$$
-But this equals $yz-xz$. Hence $yz>xz$, i.e.
-$$
-xz<yz.
-$$
+:::
 
-(f) If $x\ne0$, trichotomy gives either $x>0$ or $-x>0$. In the first case $x^2>0$. In the second,
-$$
-x^2=(-x)^2>0.
-$$
-Thus $x^2>0$ whenever $x\ne0$.
+::: {.pf-step #signs}
+(c) $x>0\iff -x<0$.
 
-(g) Since $1\ne0$, part (f) gives $1=1^2>0$. Part (c) then gives $-1<0$. Hence
-$$
--1<0<1.
-$$
+::: pf-proof
+$-x<0$ means $0-(-x)>0$, and $0-(-x)=x$ by the laws of algebra of Exercise 1; so $-x<0\iff x>0$.
+:::
 
-(h) If $x,y>0$, then $xy>0$. If $x,y<0$, then $-x,-y>0$ and
-$$
-xy=(-x)(-y)>0.
-$$
-Conversely suppose $xy>0$. Neither factor is zero. If $x>0$ and $y<0$, then applying part (e) to $x>0$ and the negative multiplier $y$ gives $xy<0$, a contradiction. Hence $y>0$. Similarly, if $x<0$, then $y<0$. Thus $xy>0$ exactly when the two factors have the same sign.
+:::
 
-(i) Let $x>0$. By [[E-MUN-4-1]](p), $1/x\ne0$. If $1/x<0$, then a positive number times a negative number is negative, so
-$$
-1=x(1/x)<0,
-$$
-contradicting part (g). Therefore
-$$
-1/x>0.
-$$
+::: {.pf-step #negation}
+(d) $x>y\iff -x<-y$.
 
-(j) If $x>y>0$, then $xy>0$, and
-$$
-\frac1y-\frac1x=\frac{x-y}{xy}>0.
-$$
-Hence
-$$
-\frac1x<\frac1y.
-$$
+::: pf-proof
+$-x<-y$ means $(-y)-(-x)>0$, and $(-y)-(-x)=x-y$ by the laws of algebra; so $-x<-y\iff x-y>0\iff x>y$.
+:::
 
-(k) If $x<y$, part (a) gives
+:::
+
+::: {.pf-step #negative-multiplier}
+(e) $x>y$ and $z<0$ imply $xz<yz$.
+
+::: pf-proof
+By step [](#signs){.pf-ref}, $z<0$ gives $-z>0$, and $x-y>0$ by hypothesis. The second clause of (6) multiplies the inequality $x-y>0$ by the positive number $-z$:
 $$
-2x=x+x<x+y<y+y=2y.
+0<(x-y)(-z)=yz-xz,
 $$
-Also $2=1+1>0$, so part (i) gives $1/2>0$. Multiplication by the positive number $1/2$ preserves inequalities, hence
+using the laws of algebra. Hence $yz-xz>0$, that is $xz<yz$.
+:::
+
+:::
+
+::: {.pf-step #square}
+(f) $x\ne0$ implies $x^{2}>0$, where $x^{2}=x\cdot x$.
+
+::: pf-proof
+Trichotomy for the order gives $x>0$ or $x<0$ when $x\ne0$. If $x>0$, the second clause of (6) gives $x^{2}=x\cdot x>0\cdot x=0$. If $x<0$, then $-x>0$ by step [](#signs){.pf-ref} and similarly $(-x)^{2}>0$; by the laws of algebra $(-x)^{2}=x^{2}$, so $x^{2}>0$.
+:::
+
+:::
+
+::: {.pf-step #one}
+(g) $-1<0<1$.
+
+::: pf-proof
+By (3) the element $1$ differs from $0$, so step [](#square){.pf-ref} gives $1=1^{2}>0$; then step [](#signs){.pf-ref} gives $-1<0$. Hence $-1<0<1$.
+:::
+
+:::
+
+::: {.pf-step #product-sign}
+(h) $xy>0$ if and only if $x$ and $y$ are both positive or both negative.
+
+::: pf-proof
+The two same-sign directions and the converse.
+
+::: {.pf-step #both-positive}
+If $x>0$ and $y>0$, or $x<0$ and $y<0$, then $xy>0$.
+
+::: pf-proof
+In the first case the second clause of (6) gives $xy>0\cdot y=0$. In the second case steps [](#signs){.pf-ref} give $-x>0$ and $-y>0$, so $(-x)(-y)>0$ by the first case, and $(-x)(-y)=xy$ by the laws of algebra.
+:::
+
+:::
+
+::: {.pf-step #mixed}
+If one factor is positive and the other negative, then $xy<0$.
+
+::: pf-proof
+Suppose $x>0$ and $y<0$. Step [](#negative-multiplier){.pf-ref} applied to $x>0$ and the negative multiplier $y$ gives $xy<0\cdot y=0$. The case $x<0$, $y>0$ is the same with the factors exchanged, using commutativity.
+:::
+
+:::
+
+::: {.pf-step #converse}
+If $xy>0$ then the factors have the same sign.
+
+::: pf-proof
+Since $xy>0\ne0$ neither factor is $0$. If the signs differed, step [](#mixed){.pf-ref} would give $xy<0$, which trichotomy excludes; so the factors are both positive or both negative, and with step [](#both-positive){.pf-ref} this proves the equivalence.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #reciprocal}
+(i) $x>0$ implies $1/x>0$.
+
+::: pf-proof
+Let $x>0$. By [[E-MUN-4-1]] the reciprocal satisfies $x\cdot(1/x)=1$, so $1/x\ne0$. Were $1/x<0$, then step [](#mixed){.pf-ref} applied to the positive $x$ and the negative $1/x$ would give $x\cdot(1/x)<0$, that is $1<0$, contradicting step [](#one){.pf-ref}. So $1/x>0$.
+:::
+
+:::
+
+::: {.pf-step #reciprocal-order}
+(j) $x>y>0$ implies $1/x<1/y$.
+
+::: pf-proof
+If $x>y>0$ then $x>0$, so $1/x>0$ by step [](#reciprocal){.pf-ref}. By step [](#positive){.pf-ref} $y>0$ and $x>0$ give $xy>0$, hence $1/(xy)>0$ by step [](#reciprocal){.pf-ref}. Multiplying $x-y>0$ by the positive number $1/(xy)$ with the second clause of (6),
 $$
-x<\frac{x+y}{2}<y.
+0<(x-y)\cdot\frac{1}{xy}=\frac{1}{y}-\frac{1}{x},
 $$
+the equality being the laws of algebra of Exercise 1. Hence $1/y-1/x>0$, that is $1/x<1/y$.
+:::
+
+:::
+
+::: {.pf-step #midpoint}
+(k) $x<y$ implies $x< (x+y)/2<y$.
+
+::: pf-proof
+Suppose $x<y$. Step [](#sum){.pf-ref} applied to $x<x$ and $x<y$ gives $2x=x+x<x+y$, and applied to $x<y$ and $y<y$ gives $x+y<y+y=2y$. Since $2=1+1$ with $1>0$, step [](#positive){.pf-ref} gives $2>0$, hence $1/2>0$ by step [](#reciprocal){.pf-ref}. Multiplying both inequalities by the positive number $1/2$ with the second clause of (6) gives
+$$
+x=\frac{2x}{2}<\frac{x+y}{2}<\frac{2y}{2}=y,
+$$
+as claimed.
+:::
+
+:::
+
+:::
 :::
