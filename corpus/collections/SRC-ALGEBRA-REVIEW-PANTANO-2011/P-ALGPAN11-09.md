@@ -6,7 +6,9 @@ title: A divisibility consequence modulo 11
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Elementary Number Theory
+  - Divisibility
 relations: []
 review: draft
 audit:

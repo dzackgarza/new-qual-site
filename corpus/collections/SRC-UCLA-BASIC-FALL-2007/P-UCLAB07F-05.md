@@ -5,7 +5,9 @@ kind: problem
 title: Polynomial approximation with a prescribed zero and a moment criterion
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Polynomial Approximation
+  - Integrals
 relations: []
 review: draft
 audit:

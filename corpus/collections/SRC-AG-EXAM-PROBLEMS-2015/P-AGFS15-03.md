@@ -5,7 +5,9 @@ kind: problem
 title: Finite subsets of quasi-projective varieties lie in affine opens
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Quasi-Projective Varieties
+  - Affine Varieties
 relations: []
 review: draft
 audit:

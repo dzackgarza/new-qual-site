@@ -5,7 +5,9 @@ kind: problem
 title: 'Divergence of $\sum a_n/(1+a_n)$ when $\sum a_n$ diverges'
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

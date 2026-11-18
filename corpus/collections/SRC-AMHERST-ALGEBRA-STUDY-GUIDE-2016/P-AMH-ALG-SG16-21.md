@@ -6,7 +6,9 @@ title: Quotients by ideals containing all commutators are commutative
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Quotient Rings
 relations: []
 review: draft
 audit:

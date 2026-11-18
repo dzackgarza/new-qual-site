@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-I3
 kind: problem
 title: Flatness of $\QQ/\ZZ$
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Flatness, Abelian Groups]}
 relations: []
 review: draft
 audit:

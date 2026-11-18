@@ -6,7 +6,9 @@ title: Centralizers are subgroups containing $\langle s\rangle$ as a normal subg
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Centralizers and Normalizers
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

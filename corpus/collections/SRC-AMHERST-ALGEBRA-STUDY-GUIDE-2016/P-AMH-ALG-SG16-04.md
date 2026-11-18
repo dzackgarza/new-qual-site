@@ -6,7 +6,8 @@ title: Intersections of normal subgroups are normal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Normal Subgroups
 relations: []
 review: draft
 audit:

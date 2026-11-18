@@ -5,7 +5,10 @@ kind: problem
 title: Rank-one 2-by-3 matrices as an affine variety
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Affine Varieties
+  - Determinantal Varieties
+  - Dimension
 relations: []
 review: draft
 audit:

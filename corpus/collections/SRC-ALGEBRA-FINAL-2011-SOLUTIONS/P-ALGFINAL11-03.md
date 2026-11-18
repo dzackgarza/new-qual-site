@@ -5,7 +5,9 @@ kind: problem
 title: Irreducible but nonprime elements in Z[sqrt(-5)]
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Unique Factorization Domains
+  - Irreducible Elements
 relations: []
 review: draft
 ---

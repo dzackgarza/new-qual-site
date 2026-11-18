@@ -5,7 +5,9 @@ kind: problem
 title: Norms and prime elements in quadratic integer rings
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Quadratic Integer Rings
+  - Norms
 relations: []
 review: draft
 ---

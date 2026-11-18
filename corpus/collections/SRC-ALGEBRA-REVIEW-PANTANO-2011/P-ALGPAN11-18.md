@@ -6,7 +6,9 @@ title: Symmetry group of a regular pentagram
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Dihedral Groups
+  - Symmetric Group
 relations: []
 review: draft
 audit:

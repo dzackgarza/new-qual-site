@@ -6,7 +6,9 @@ title: Isomorphic subgroups and quotient groups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Isomorphisms
+  - Quotient Groups
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Properties of the operation a*b = a+b+2ab on the rationals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Semigroups
 relations: []
 review: draft
 audit:

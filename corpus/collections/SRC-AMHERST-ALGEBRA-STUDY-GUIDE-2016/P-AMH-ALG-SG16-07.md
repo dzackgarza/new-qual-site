@@ -6,7 +6,9 @@ title: The product $NH$ of a normal subgroup and a subgroup is a subgroup
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 audit:

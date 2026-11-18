@@ -6,7 +6,9 @@ title: Reducibility of $X^4+X^2+1$ over $\FF_2$ and irreducibility of $X^3+2X^2+
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Irreducible Polynomials
+  - Finite Fields
 relations: []
 review: draft
 audit:

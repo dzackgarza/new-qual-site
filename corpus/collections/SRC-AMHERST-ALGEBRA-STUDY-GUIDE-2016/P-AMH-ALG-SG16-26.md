@@ -6,7 +6,9 @@ title: Polynomials vanishing at 2 and 5 form an ideal of $\RR[x]$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Polynomial Rings
 relations: []
 review: draft
 audit:

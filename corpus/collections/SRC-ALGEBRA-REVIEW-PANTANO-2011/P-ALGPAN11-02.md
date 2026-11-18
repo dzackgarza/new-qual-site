@@ -6,7 +6,9 @@ title: Which listed subsets of the reals are subfields
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Fields
+  - Subrings
 relations: []
 review: draft
 audit:

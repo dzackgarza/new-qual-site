@@ -5,7 +5,8 @@ kind: problem
 title: Galois group of X^6+aX^3+1
 classification:
   areas: [algebra]
-  topics: []
+  topics:
+  - Galois Groups of Polynomials
 relations: []
 review: draft
 ---

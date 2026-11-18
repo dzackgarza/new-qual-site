@@ -6,7 +6,9 @@ title: 'Local rings: non-units closed under addition and a unique maximal ideal'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Local Rings
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

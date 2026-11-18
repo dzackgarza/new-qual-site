@@ -6,7 +6,9 @@ title: Coprime subgroup indices and conjugates of a proper subgroup
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Cosets and Lagrange
+  - Conjugacy
 relations: []
 review: draft
 audit:

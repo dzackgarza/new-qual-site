@@ -5,7 +5,9 @@ kind: problem
 title: A limiting derivative implies differentiability at the missing point
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 audit:

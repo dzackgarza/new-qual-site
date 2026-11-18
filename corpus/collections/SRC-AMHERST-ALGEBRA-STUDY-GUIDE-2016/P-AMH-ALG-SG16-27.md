@@ -6,7 +6,10 @@ title: Cosets of a principal ideal in $F[x]$ and remainder representatives
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Polynomial Division
+  - Quotient Rings
 relations: []
 review: draft
 audit:

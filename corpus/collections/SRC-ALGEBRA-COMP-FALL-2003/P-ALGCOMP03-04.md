@@ -6,7 +6,9 @@ title: Intermediate fields and Frobenius roots in finite fields
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
+  - Finite Fields
 relations: []
 review: draft
 audit:

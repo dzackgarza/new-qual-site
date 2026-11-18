@@ -6,7 +6,9 @@ title: Which direct product of cyclic groups is not cyclic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Direct Products
+  - Cyclic Groups
 relations: []
 review: draft
 audit:

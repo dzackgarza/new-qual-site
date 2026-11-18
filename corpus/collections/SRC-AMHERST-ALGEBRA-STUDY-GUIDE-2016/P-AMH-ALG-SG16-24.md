@@ -6,7 +6,9 @@ title: Ideals of a field are trivial
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Fields
 relations: []
 review: draft
 audit:

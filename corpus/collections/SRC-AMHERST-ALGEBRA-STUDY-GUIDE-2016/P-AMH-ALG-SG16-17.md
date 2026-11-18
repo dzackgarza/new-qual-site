@@ -6,7 +6,9 @@ title: Ideals of $\ZZ$ containing relatively prime integers
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Greatest Common Divisors
 relations: []
 review: draft
 audit:

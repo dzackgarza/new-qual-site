@@ -6,7 +6,9 @@ title: Multiplicative groups of rationals and reals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Group Isomorphisms
 relations: []
 review: draft
 audit:

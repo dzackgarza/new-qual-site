@@ -6,7 +6,8 @@ title: Intersections of subgroups are subgroups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Subgroups
 relations: []
 review: draft
 audit:

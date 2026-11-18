@@ -6,7 +6,9 @@ title: The order of a homomorphic image of a subgroup divides $\cardinality{G_1}
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Subgroups
 relations: []
 review: draft
 audit:

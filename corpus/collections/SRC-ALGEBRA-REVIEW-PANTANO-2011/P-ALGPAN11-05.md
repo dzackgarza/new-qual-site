@@ -6,7 +6,9 @@ title: Proper subgroup of the integers containing three of p, p+q, pq, p^q, q^p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Abelian Groups
+  - Subgroups
 relations: []
 review: draft
 audit:

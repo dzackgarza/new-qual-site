@@ -6,7 +6,9 @@ title: Nonempty intersection among sets of prime multiples
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Elementary Number Theory
+  - Number Theory
 relations: []
 review: draft
 audit:

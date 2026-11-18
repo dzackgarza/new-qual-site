@@ -5,7 +5,9 @@ kind: problem
 title: Dimension formulas involving a linear map and its adjoint
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Linear Transformations
+  - Dual Spaces
 relations: []
 review: draft
 audit:

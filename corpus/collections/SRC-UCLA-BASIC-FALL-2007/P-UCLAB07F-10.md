@@ -5,7 +5,9 @@ kind: problem
 title: Dual bases and eigenvectors of the adjoint
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Dual Spaces
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

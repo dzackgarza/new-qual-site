@@ -6,7 +6,8 @@ title: Number of field automorphisms of the rationals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Automorphisms
 relations: []
 review: draft
 audit:

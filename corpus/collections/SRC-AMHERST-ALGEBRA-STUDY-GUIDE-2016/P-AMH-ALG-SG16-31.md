@@ -6,7 +6,9 @@ title: Reducibility of $x^2+3$ over $\FF_7$ and an intermediate ideal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Irreducible Polynomials
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

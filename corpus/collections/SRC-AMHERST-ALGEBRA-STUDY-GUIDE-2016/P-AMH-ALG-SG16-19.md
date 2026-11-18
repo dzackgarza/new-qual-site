@@ -6,7 +6,9 @@ title: Annihilators are ideals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Annihilators
 relations: []
 review: draft
 audit:

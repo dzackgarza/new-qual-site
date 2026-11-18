@@ -6,7 +6,9 @@ title: Homomorphisms from $S_n$ to groups of odd order are trivial
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Symmetric Groups
+  - Group Homomorphisms
 relations: []
 review: draft
 audit:

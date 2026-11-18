@@ -5,7 +5,9 @@ kind: problem
 title: Limits and continuous dependence for a bounded scalar ODE
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Ordinary Differential Equations
+  - Uniform Convergence
 relations: []
 review: draft
 audit:

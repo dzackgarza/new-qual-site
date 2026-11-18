@@ -6,7 +6,9 @@ title: The field $\FF_3[x]/(x^2+1)$ and the inverse of $x$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Irreducible Polynomials
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-II1
 kind: problem
 title: Proper subgroups of $S_n$ of order greater than $(n-1)!$
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Symmetric Group, Subgroups]}
 relations: []
 review: draft
 audit:

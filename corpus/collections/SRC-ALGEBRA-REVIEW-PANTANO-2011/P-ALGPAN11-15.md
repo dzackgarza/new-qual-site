@@ -6,7 +6,9 @@ title: Which listed ring has zero divisors
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Zero Divisors
+  - Rings
 relations: []
 review: draft
 audit:

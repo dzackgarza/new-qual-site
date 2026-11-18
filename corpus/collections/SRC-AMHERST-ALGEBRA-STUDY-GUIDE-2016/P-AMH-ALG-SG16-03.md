@@ -6,7 +6,9 @@ title: Elements commuting with the cosets of a subgroup form a subgroup
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Normalizers
+  - Cosets and Lagrange
 relations: []
 review: draft
 audit:

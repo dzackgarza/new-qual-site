@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-II3
 kind: problem
 title: Adjoints to the inclusion of integer and real posets
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Adjunctions]}
 relations: []
 review: draft
 audit:

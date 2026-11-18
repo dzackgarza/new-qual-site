@@ -6,7 +6,9 @@ title: Cubic polynomials over a field are irreducible exactly when rootless
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Irreducible Polynomials
+  - Polynomials
 relations: []
 review: draft
 audit:

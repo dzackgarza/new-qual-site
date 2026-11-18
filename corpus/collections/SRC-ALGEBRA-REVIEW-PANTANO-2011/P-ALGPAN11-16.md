@@ -6,7 +6,9 @@ title: Endomorphisms of the fourth roots of unity
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Homomorphisms
+  - Roots of Unity
 relations: []
 review: draft
 audit:

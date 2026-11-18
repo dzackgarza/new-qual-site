@@ -5,7 +5,9 @@ kind: problem
 title: Cuspidal cubic from affine model through normalization
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Cuspidal Cubic
+  - Normalization
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Powers and multiples under an associative operation and a commutative ass
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Groups
+  - Semigroups
 relations: []
 review: draft
 audit:

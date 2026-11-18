@@ -5,7 +5,10 @@ kind: problem
 title: Divisors of coordinates and differentials on a cubic curve
 classification:
   areas: [algebraic-geometry]
-  topics: []
+  topics:
+  - Divisors
+  - Differentials
+  - Elliptic Curves
 relations: []
 review: draft
 audit:

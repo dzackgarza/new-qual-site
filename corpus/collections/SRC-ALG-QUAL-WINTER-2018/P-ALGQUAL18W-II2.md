@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-II2
 kind: problem
 title: Vanishing trace on an induced representation
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Induction, Trace, Representation Theory]}
 relations: []
 review: draft
 audit:

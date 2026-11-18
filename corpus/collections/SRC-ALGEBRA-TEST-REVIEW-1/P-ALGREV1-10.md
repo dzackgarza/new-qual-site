@@ -6,7 +6,9 @@ title: Units of a finite direct product of rings
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Units
+  - Direct Products
 relations: []
 review: draft
 audit:

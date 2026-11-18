@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-ALGQUAL18W-I1
 kind: problem
 title: Normality of $\QQ(\sqrt{2+\sqrt2})/\QQ$
-classification: {areas: [algebra], topics: []}
+classification: {areas: [algebra], topics: [Normal Extensions, Field Extensions]}
 relations: []
 review: draft
 audit:
