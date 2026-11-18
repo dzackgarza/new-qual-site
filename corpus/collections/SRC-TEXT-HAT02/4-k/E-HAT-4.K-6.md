@@ -30,35 +30,43 @@ Let $X$ be a complex of spaces over a $\Delta$-complex $\Gamma$, as defined in �
 :::
 
 ::: {.solution}
-Let
-$$
-p:\Delta X\longrightarrow\Gamma
-$$
-be the canonical projection. We prove that it is a quasifibration.
 
-First restrict over a simplex
-$$
-\sigma=[v_0,\ldots,v_q]\subset\Gamma.
-$$
-By definition, $p^{-1}(\sigma)$ is the iterated mapping cylinder of the sequence of edge maps
-$$
-X_{v_0}\longrightarrow X_{v_1}\longrightarrow\cdots\longrightarrow X_{v_q}.
-$$
-Collapse $\sigma$ linearly to its terminal vertex $v_q$. The corresponding deformation of the iterated mapping cylinder collapses it to $X_{v_q}$. For a point $b\in\sigma$, the induced map from the fiber $p^{-1}(b)$ to the terminal fiber $X_{v_q}$ is a composite of edge maps. By hypothesis every edge map is a weak homotopy equivalence, hence so is every such composite. Lemma 4K.3(c) (p. 480) therefore implies
-$$
-p:p^{-1}(\sigma)\to\sigma
-$$
-is a quasifibration. The same argument applies to every face of $\sigma$.
+The argument is the card's own: the three parts of Lemma 4K.3 are used in turn, over one simplex, over a finite subcomplex, and over the whole $\Delta$-complex.
 
-Now pass from a single simplex to the whole complex. Over each finite subcomplex $L\subset\Gamma$, glue the simplexwise quasifibrations one simplex at a time. Near the attaching boundary of a simplex use a collar, so Lemma 4K.3(a) (p. 480) applies; the intersections are precisely restrictions over faces, already known to be quasifibrations. Hence
-$$
-p:p^{-1}(L)\to L
-$$
-is a quasifibration for every finite subcomplex $L$.
+Let $X$ be a complex of spaces over the $\Delta$-complex $\Gamma$, as in §4.G, with vertex spaces $X_{v}$ and edge maps $X_{v}\to X_{w}$, and let $p:\Delta X\to\Gamma$ be the natural projection.
 
-Finally take the directed union over finite subcomplexes of $\Gamma$. Every compact subset of a CW complex is contained in a finite subcomplex. Thus every representative sphere or disk and every homotopy used in the relative homotopy groups occurs at a finite stage. The stagewise relative homotopy isomorphisms pass to this directed union, as in the proof of Lemma 4K.3(b) (p. 480); this is the quasifibration criterion used in Hatcher's proof of the Dold--Thom theorem. Therefore
+::: pf
+
+::: {.pf-step #simplex}
+For a simplex $\sigma=[v_{0},\ldots,v_{q}]$ of $\Gamma$, the restriction $p:p^{-1}(\sigma)\to\sigma$ is a quasifibration.
+
+::: pf-proof
+By the construction of §4.G, $p^{-1}(\sigma)$ is the iterated mapping cylinder of the sequence $X_{v_{0}}\to X_{v_{1}}\to\cdots\to X_{v_{q}}$, and $p$ is the projection of that cylinder onto $\sigma$. Collapsing $\sigma$ linearly to its terminal vertex $v_{q}$ gives a deformation of the cylinder onto $X_{v_{q}}$, covering the deformation of $\sigma$ onto $v_{q}$. The target map $X_{v_{q}}\to\{v_{q}\}$ is a quasifibration trivially, its single fibre being the whole of $X_{v_{q}}$ so that both sides of the relative homotopy groups vanish. For $b\in\sigma$ the induced map $p^{-1}(b)\to X_{v_{q}}$ is the composite of the edge maps along a path from $b$ to $v_{q}$, hence a weak homotopy equivalence by hypothesis, as is any composite of such. So all three conditions of Lemma 4K.3(c) hold, and $p$ is a quasifibration over $\sigma$. The same argument applies to each face of $\sigma$, since a face carries the corresponding initial segment of the same edge sequence.
+:::
+
+:::
+
+::: {.pf-step #finite}
+For every finite subcomplex $L\subseteq\Gamma$, the restriction $p:p^{-1}(L)\to L$ is a quasifibration.
+
+::: pf-proof
+Induct on the number of simplices of $L$, adding one simplex $\sigma$ at a time. Write $V_{1}$ for the open star of $\sigma$ inside $L$ — a collar neighbourhood obtained by removing a small collar of $\partial\sigma$ — and $V_{2}=L\setminus\sigma$, so that $V_{1}\cup V_{2}=L$ and $V_{1}\cap V_{2}$ is a collar of the boundary, homeomorphic to $\partial\sigma\times(0,1)$. Then $V_{1}$ meets the simplices other than $\sigma$ only in that collar, so the restriction over $V_{1}$ is a quasifibration by step [](#simplex){.pf-ref} together with the collar deformation, the restriction over $V_{2}$ is a quasifibration by the induction hypothesis, and the restriction over $V_{1}\cap V_{2}$ is a quasifibration over pieces of the boundary, again by step [](#simplex){.pf-ref}. Lemma 4K.3(a) then makes $p$ a quasifibration over $L$.
+:::
+
+:::
+
+::: {.pf-step #union}
+$p:\Delta X\to\Gamma$ is a quasifibration.
+
+::: pf-proof
+$\Gamma$ is the union of an increasing sequence of finite subcomplexes $L_{1}\subset L_{2}\subset\cdots$, and every compact subset of a CW complex lies in a finite subcomplex, so every compact set in $\Gamma$ lies in some $L_{n}$ and every compact set in $\Delta X$ lies in some $p^{-1}(L_{n})$. Each restriction $p:p^{-1}(L_{n})\to L_{n}$ is a quasifibration by step [](#finite){.pf-ref}, so Lemma 4K.3(b) applies and gives that $p$ is a quasifibration. Hence
 $$
-\boxed{\Delta X\longrightarrow\Gamma\text{ is a quasifibration}.}
+\boxed{\Delta X\longrightarrow\Gamma\ \text{is a quasifibration}.}
 $$
-The fiber over a vertex $v$ is the corresponding vertex space $X_v$, and fibers over arbitrary points are weakly equivalent to these via the edge maps.
+The fibre over a vertex $v$ is the vertex space $X_{v}$, and the fibre over an arbitrary point is weakly equivalent to the vertex spaces it maps to along the edge maps, by the same weak-equivalence hypothesis.
+:::
+
+:::
+
+:::
 :::
