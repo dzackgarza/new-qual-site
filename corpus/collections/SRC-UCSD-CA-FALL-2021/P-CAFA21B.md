@@ -10,6 +10,19 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UCSD Complex Analysis Qualifying Exam, Fall 2021; both parts match.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    No retained solution set covers this examination. Structured the card's own argument:
+    the two bounded complementary components, the maximum-modulus proof that 1 lies in
+    the polynomial hull, the resulting obstruction to polynomial approximation, and the
+    identification of the hull with the outer closed disk.
 ---
 
 ::: {.problem}
@@ -25,29 +38,46 @@ $$
 :::
 
 ::: {.solution}
-(i) False. The complement of $K$ has two bounded components, namely the open
-unit disks centered at $1$ and $-1$. For instance,
-$$
-f(z)=\frac1{z-1}
-$$
-is holomorphic on a neighborhood of $K$ but cannot be uniformly approximated
-there by polynomials.
 
-Indeed, if $p_n\to f$ uniformly on $K$, then
-$$
-q_n(z)=(z-1)p_n(z)-1
-$$
-converges uniformly to $0$ on $K$. But $1$ lies in the polynomial hull of $K$,
-so
-$$
-\abs{q_n(1)}\le \sup_K\abs{q_n}.
-$$
-The left side is $1$, a contradiction.
+No retained solution set covers this examination; the argument below is the card's own.
 
-(ii) In one complex variable, the polynomial hull of a compact set is obtained
-by filling in all bounded components of its complement. Here filling the two
-holes gives the whole closed disk of radius $3$. Thus
+::: pf
+
+::: {.pf-step #complement}
+The complement of $K$ has exactly three components: the unbounded component, the open disk $D_1=\{\abs{z-1}<1\}$, and the open disk $D_{-1}=\{\abs{z+1}<1\}$.
+
+::: pf-proof
+$K$ is the closed disk $\abs z\le3$ with the two open unit disks removed. Each removed disk is connected and is a component of the complement; outside the closed disk $\abs z\le3$ the complement is connected and reaches infinity.
+:::
+:::
+
+::: {.pf-step #point-in-hull}
+The point $1$ belongs to the polynomial hull of $K$.
+
+::: pf-proof
+The boundary circle $\abs{z-1}=1$ lies in $K$: it is inside $\abs z\le3$, and on it $\abs{z+1}=\abs{2+(z-1)}\ge2-1=1$. For any polynomial $q$, the maximum modulus principle applied on the disk $D_1$ gives
 $$
-\boxed{\widehat K=\{z:\abs{z}\le3\}.}
+\abs{q(1)}\le\max_{\abs{z-1}=1}\abs{q(z)}\le\sup_{w\in K}\abs{q(w)}.
 $$
+This is exactly the defining inequality for $1$ to lie in $\widehat K$.
+:::
+:::
+
+::: {.pf-step #not-approximable}
+The function $f(z)=1/(z-1)$ cannot be uniformly approximated on $K$ by polynomials.
+
+::: pf-proof
+If polynomials $p_n$ converged uniformly to $f$ on $K$, then $q_n(z)=(z-1)p_n(z)-1$ would converge uniformly to $0$ on $K$. Step [](#point-in-hull){.pf-ref} gives $\abs{q_n(1)}\le\sup_K\abs{q_n}$, whose right side tends to $0$, but $q_n(1)=-1$ for every $n$. This contradiction proves that (i) is false.
+:::
+:::
+
+::: {.pf-step #hull}
+$\widehat K=\{z:\abs z\le3\}$.
+
+::: pf-proof
+Every point of either bounded complementary component lies in the hull by the maximum-modulus argument of step [](#point-in-hull){.pf-ref}. Thus the closed disk $\abs z\le3$ is contained in the hull. Conversely, if $\abs{z_0}>3$, the polynomial $p(z)=z$ gives $\abs{p(z_0)}>3=\sup_K\abs z$, so $z_0$ is not in the hull. Hence the hull is exactly the closed disk of radius $3$, proving (ii).
+:::
+:::
+
+:::
 :::
