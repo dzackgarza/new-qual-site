@@ -47,6 +47,16 @@ audit:
     $\pi_2(X,A,x_0)$ of the sequence on printed p. 344. Cited: Lemma 4.39 on printed p. 373,
     the exercise on printed p. 391. Not claimed: a retained solution set, so the argument is
     the card's own.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Correction to this date's earlier note, from a search of the retained sets after the
+    proof was written. The card said no retained solution set covers the exercise; Steven
+    V. Sam's set does, at Exercise 4.2.27, PDF p. 24, and the UCR Math 205B help file
+    repeats the same text, so there are two retained copies. The argument on the card is
+    that argument, cited there; the card's own addition is only the exactness and action
+    bookkeeping. Mathematics unchanged and re-read; the exercise is on printed p. 391.
 ---
 
 ::: {.problem}
@@ -54,7 +64,7 @@ Show that the image of the map $\pi_2(X, x_0) \to \pi_2(X, A, x_0)$ lies in the 
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 27, printed p. 391, with the parenthetical remark the book prints beside it. No retained solution set covers this exercise, so the argument below is the card's own; it is one application of Lemma 4.39, printed p. 373.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.27, PDF p. 24**, whose argument this is verbatim in substance: the image is the kernel of $\partial$ by exactness, and Lemma 4.39 gives $xbx^{-1}=e$ for $x$ in that kernel. The card adds only the bookkeeping — that the action of $\partial x=0$ is trivial and that the resulting identity is $x+b=b+x$ in a group not assumed abelian. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 27, printed p. 391, with the parenthetical remark the book prints beside it, and Lemma 4.39 is printed on p. 373.
 
 Throughout $(X,A,x_0)$ is a pointed pair with $A\subset X$, $j:(X,x_0)\to(X,A)$ the inclusion of pairs, and $\partial:\pi_2(X,A,x_0)\to\pi_1(A,x_0)$ the boundary map of the long exact sequence. The set $\pi_2(X,A,x_0)$ is a group, written additively but not assumed abelian, on which $\pi_1(A,x_0)$ acts, and $\pi_2(X,x_0)$ is abelian.
 

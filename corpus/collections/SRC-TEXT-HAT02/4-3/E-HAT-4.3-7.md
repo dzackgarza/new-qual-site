@@ -41,6 +41,18 @@ audit:
     in Hatcher, §4.3 Exercise 7, printed p. 419, the page carrying the exercise. Not claimed: a
     retained solution set; the Hatcher sets in `tmp/sources` do not reach this exercise, so the
     argument is the card's own.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Correction to this date's earlier note, from a search of the retained sets after the
+    proof was written. The card said no retained solution set covers the exercise; Steven
+    V. Sam's set does, at Exercise 4.3.7, PDF p. 26, but its solution is the single sentence
+    "this follows as in (Ex. 4.3.2)", which treats only $\langle X,S^1\rangle$. The body now
+    cites it as the retained solution and states that the degree-$n$ argument, including
+    $\mu^*u=\operatorname{pr}_1^*u+\operatorname{pr}_2^*u$ from the $n$-skeleton of
+    $K\times K$, is the card's own. Mathematics unchanged and re-read; the exercise is on
+    printed p. 419.
 ---
 
 ::: {.problem}
@@ -48,7 +60,7 @@ Using an H-space multiplication $\mu$ on $K(G, n)$, define an addition in $\lang
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 7, printed p. 419. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` do not reach §4.3 Exercise 7 — so the argument below is the card's own; it rests on the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ proved in §4.3, printed pp. 393–395, and on the fact that $K(G,n)$ is $(n-1)$-connected with a single $0$-cell.
+The retained solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.3.7, PDF p. 26**, which disposes of the exercise in one line — "this follows as in (Ex. 4.3.2)", the case $K(\ZZ,1)=S^1$ — and so gives no argument in degree $n>1$; the proof below is the card's own generalization. It rests on the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ proved in §4.3, printed pp. 393–395, and on the fact that $K(G,n)$ is $(n-1)$-connected with a single $0$-cell. The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 7, printed p. 419.
 
 Throughout $K=K(G,n)$, $K\times K$ carries the product cell structure of two copies of a CW structure on $K$ with one $0$-cell, $\mu:K\times K\to K$ is the $H$-space multiplication and $u\in H^n(K;G)$ corresponds to the identity of $G$ under $H^n(K;G)\approx\operatorname{Hom}(G,G)$.
 

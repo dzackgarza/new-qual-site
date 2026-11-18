@@ -59,6 +59,17 @@ audit:
     solution set, so the argument is the card's own; and the citation of Corollary 2.34 for
     the vanishing of $H_{>n}$ of an $n$-dimensional CW complex is by chapter and statement,
     the cellular argument on printed p. 139 being the reason.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Correction to this date's earlier note, from a search of the retained sets after the
+    proof was written. The card said no retained solution set covers the exercise; Steven
+    V. Sam's set does, at Exercise 4.2.13, PDF p. 22, following the same reduction and
+    closing with Exercise 4.2.12. The body now cites it and states what the card supplies
+    that the set does not: the pair $(M_{\widetilde f},\widetilde X)$ and the relative
+    Hurewicz step in degree $n+1$. Mathematics unchanged and re-read; the exercise is on
+    printed p. 390.
 ---
 
 ::: {.problem}
@@ -66,7 +77,7 @@ Show that a map between connected $n$-dimensional CW complexes is a homotopy equ
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, printed p. 390, and the hint followed is the exercise's own. No retained solution set covers this exercise, so the argument below is the card's own; it uses the relative Hurewicz theorem, Theorem 4.37, printed p. 371, and Exercise 12 of §4.2, printed p. 389.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.13, PDF p. 22**: the passage to universal covers, the reduction to proving that $\widetilde f$ is a homology isomorphism, and the closing appeal to Exercise 4.2.12 are that solution's. What the card supplies is the step the set elides: the absolute Hurewicz theorem does not apply to $\widetilde X$, whose own homotopy groups need not vanish below $n$, so the argument runs through the relative Hurewicz theorem for the mapping-cylinder pair, Theorem 4.37, printed p. 371, and needs its surjectivity in degree $n+1$. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, printed p. 390, and the hint followed is the exercise's own.
 
 Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducing isomorphisms $f_*:\pi_i(X)\to\pi_i(Y)$ for $i\le n$, and $p_X:\widetilde X\to X$, $p_Y:\widetilde Y\to Y$ are the universal covers.
 

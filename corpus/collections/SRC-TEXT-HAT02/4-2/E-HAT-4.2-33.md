@@ -42,6 +42,23 @@ audit:
     Cited: Corollary 4.12 printed p. 349, Hurewicz printed p. 366, the bundle sequence printed
     p. 376, Exercises 31 and 33 printed p. 392. Not claimed: a retained solution set, so the
     argument is the card's own.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Two corrections to this date's earlier note, both from work done after the proof was
+    written. (1) The card said no retained solution set covers the exercise; Steven V.
+    Sam's set does, at Exercise 4.2.33, PDF p. 25, with the double induction on $i-n$ and
+    $n$ that the card now follows and cites. (2) That note called the previous prose's
+    justification of the splitting wrong, on the ground that vanishing of
+    $\pi_{n-1}(S^{2n-1})$ "controls one degree only". That complaint is itself wrong and is
+    withdrawn: the fiber inclusion is a *map* $S^{n-1}\to S^{2n-1}$ whose homotopy class is
+    an element of $\pi_{n-1}(S^{2n-1})=0$, so the map is nullhomotopic, and a nullhomotopic
+    map vanishes on every $\pi_j$ because its induced maps factor through the homotopy
+    groups of a point. Exercise 31's hypothesis therefore does hold, the card's step now
+    proves it that way, and the only thing the card adds to the set is the unconditional
+    statement for $i\le 2n-2$ and that verification. Mathematics re-read; the exercise is
+    on printed p. 392.
 ---
 
 ::: {.problem}
@@ -49,7 +66,7 @@ Show that if there were fiber bundles $S^{n-1} \to S^{2n-1} \to S^n$ for all $n$
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 33, printed p. 392; it is a counterfactual, and the hypothesis is not known to hold — such bundles exist only for $n=2,4,8$. No retained solution set covers this exercise, so the argument below is the card's own; it uses the long exact sequence of the bundles and Exercise 31 of the same section, printed p. 392.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.33, PDF p. 25**, whose double induction on $i-n$ and $n$ this proof follows: the base cases $\pi_i(S^n)=0$ for $i<n$ and $\pi_n(S^n)=\ZZ$, and the step through Exercise 4.2.31. The card adds the verification of Exercise 31's hypothesis (below) and the part of the computation that does not need it. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 33, printed p. 392; it is a counterfactual, and the hypothesis is not known to hold — such bundles exist only for $n=2,4,8$.
 
 Throughout, assume fiber bundles $S^{n-1}\to S^{2n-1}\xrightarrow{p}S^n$ exist for every $n\ge2$, and let $\partial$ denote the boundary map of the long exact homotopy sequence of such a bundle.
 
@@ -83,7 +100,7 @@ In the sequence of step [](#exact){.pf-ref}, $\pi_i(S^{2n-1})=0$ because $i<2n-1
 If the inclusion $S^{n-1}\hookrightarrow S^{2n-1}$ is nullhomotopic, then $\pi_i(S^n)\cong\pi_i(S^{2n-1})\oplus\pi_{i-1}(S^{n-1})$ for all $i$.
 
 ::: pf-proof
-This is Exercise 31 of §4.2, printed p. 392: for a fiber bundle $F\to E\to B$ whose fiber inclusion is homotopic to a constant map, the long exact sequence breaks into split short exact sequences, giving $\pi_i(B)\cong\pi_i(E)\oplus\pi_{i-1}(F)$. Nullity of the fiber inclusion in each degree is exactly its hypothesis, and it does not follow from $\pi_{n-1}(S^{2n-1})=0$ alone: that value controls one degree only. For the bundles that do exist the hypothesis is available — for $n=2$ the fibre is $S^1$, whose higher homotopy vanishes, so the inclusion is null in every degree — and the two Hopf cases $S^3\to S^7\to S^4$ and $S^7\to S^{15}\to S^8$ are the cases the exercise names.
+This is Exercise 31 of §4.2, printed p. 392: for a fiber bundle $F\to E\to B$ whose fiber inclusion is homotopic to a constant map, the long exact sequence breaks into split short exact sequences, giving $\pi_i(B)\cong\pi_i(E)\oplus\pi_{i-1}(F)$. Its hypothesis holds here: the inclusion is a map $S^{n-1}\to S^{2n-1}$ whose homotopy class lies in $\pi_{n-1}(S^{2n-1})=0$, because $n-1<2n-1=\dim S^{2n-1}$ (Corollary 4.12, printed p. 349), so the inclusion is nullhomotopic as a map; and a nullhomotopic map induces the zero map on every $\pi_j$, its induced maps factoring through the homotopy groups of a point. So the short exact sequences split and the isomorphism holds in every degree. The two Hopf bundles $S^3\to S^7\to S^4$ and $S^7\to S^{15}\to S^8$ are the cases where the bundles are known to exist.
 
 :::
 

@@ -50,6 +50,17 @@ audit:
     Statement re-read in Hatcher, §3.2 Exercise 7, printed p. 229, the page carrying the
     exercise. Not claimed: a retained solution set; the Hatcher sets in `tmp/sources` do not
     reach this exercise, so the argument is the card's own.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Correction to this date's earlier note, from a search of the retained sets after the
+    proof was written. The card said no retained solution set covers the exercise; Guanyu
+    Li's set does, at Exercise 3.2.6 (Hatcher 3.2.7), PDF p. 55, with the same two steps
+    (the truncated polynomial ring and the vanishing of the mixed product). The body now
+    names that solution, keeps the card's derivation of the vanishing from the relative cup
+    product of printed p. 209, and no longer claims the argument is independent of a set.
+    Mathematics unchanged and re-read; the exercise is on printed p. 229.
 ---
 
 ::: {.problem}
@@ -57,7 +68,7 @@ Use cup products to show that $\RP^3$ is not homotopy equivalent to $\RP^2 \vee 
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 7, printed p. 229. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` do not reach §3.2 Exercise 7 — so the argument below is the card's own; it uses the ring structure of Theorem 3.19, printed p. 220, and the relative cup product of printed p. 209.
+The published solution is **Guanyu Li, *Solutions to Hatcher's Algebraic Topology*, Exercise 3.2.6 (Hatcher Exercise 3.2.7), PDF p. 55**: the truncated polynomial ring $H^*(\RP^3;\ZZ_2)=(\ZZ_2)[\alpha]/(\alpha^4)$ and the vanishing of the product of a degree-one with a degree-two class of the wedge are that solution's. What the card adds is the derivation of that vanishing from the relative cup product of printed p. 209, in place of the set's appeal to which cell the $3$-cell of the wedge attaches to. The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 7, printed p. 229, and the ring structure is Theorem 3.19, printed p. 220.
 
 All cohomology in the proof has $\ZZ_2$ coefficients, and $\RP^n$ denotes real projective $n$-space.
 

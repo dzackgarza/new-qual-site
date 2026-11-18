@@ -47,7 +47,7 @@ Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a h
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33, printed p. 260. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` contain no §3.3 exercise beyond the low numbers — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, printed p. 254, and the orientable double cover of pp. 234–235.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33, printed p. 260. No retained solution set covers this exercise — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's at Exercise 32, and no other set in `tmp/sources` reaches §3.3 — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, printed p. 254, and the orientable double cover of pp. 234–235.
 
 Throughout $M$ is a compact contractible $n$-manifold with $n\ge1$, homology is taken with $\ZZ$ coefficients unless written otherwise, and $\widetilde H$ denotes reduced homology.
 
