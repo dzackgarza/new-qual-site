@@ -41,15 +41,53 @@ Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $
 :::
 
 ::: {.solution}
-Fix $x\in X$ and let $U$ be any open neighborhood of $x$ (for example $U=X$). Since $Y$ is discrete, every singleton $\{y\}$ is open, and
-$$
-p^{-1}(U)=U\times Y=\bigsqcup_{y\in Y}(U\times\{y\}).
-$$
-Each $U\times\{y\}$ is open in $X\times Y$, and the restriction
-$$
-p\restrict_{U\times\{y\}}:U\times\{y\}\longrightarrow U
-$$
-is a homeomorphism with inverse $u\mapsto(u,y)$. Thus every open $U$ is evenly covered; in particular $p:X\times Y\to X$ is a covering map.
 
-The printed statement carries no hypothesis on $Y$, and it needs one: a covering map is by definition a continuous surjection (printed p. 336), and for $Y=\varnothing$ with $X\neq\varnothing$ the projection $X\times\varnothing\to X$ has empty domain and is not surjective, while the argument above uses a point $y$ of $Y$ to write down the slice $U\times\{y\}$. For every nonempty discrete $Y$ the projection is a covering map, with $U=X$ evenly covered and the slices $X\times\{y\}$.
+No retained solution set covers this exercise: the card's own argument follows. The printed statement is kept as printed, and the hypothesis it omits is named in step [](#hypothesis){.pf-ref} with a counterexample.
+
+Let $Y$ be discrete and $p:X\times Y\to X$ the projection on the first coordinate. In Munkres a covering map is a continuous surjection $p:E\to B$ such that every point of $B$ has an evenly covered neighbourhood (printed p. 336).
+
+::: pf
+
+::: {.pf-step #slices}
+For open $U\subseteq X$, $p^{-1}(U)=U\times Y=\bigsqcup_{y\in Y}U\times\{y\}$, and each slice $U\times\{y\}$ is open in $X\times Y$.
+
+::: pf-proof
+$p^{-1}(U)$ consists of the pairs $(u,y)$ with $u\in U$, which is the union of the slices $U\times\{y\}$ over $y\in Y$, and the slices are pairwise disjoint because a pair has exactly one second coordinate. Since $Y$ is discrete, $\{y\}$ is open in $Y$, so the slice $U\times\{y\}$ is a basis element of the product topology, hence open; the union of open sets is open.
+:::
+
+:::
+
+::: {.pf-step #slices-homeomorphic}
+For each $y\in Y$ the restriction $p\restriction_{U\times\{y\}}:U\times\{y\}\to U$ is a homeomorphism.
+
+::: pf-proof
+It is the restriction of the continuous projection, hence continuous, and it is a bijection with inverse $u\mapsto(u,y)$, which is continuous as the map $U\to X\times Y$ whose coordinates are the identity and the constant map $u\mapsto y$ (Theorem 18.4, printed p. 110).
+:::
+
+:::
+
+::: {.pf-step #evenly}
+Every point of $X$ has an evenly covered neighbourhood, so $p$ is a covering map.
+
+::: pf-proof
+Let $x\in X$ and take $U=X$, an open neighbourhood of $x$. By steps [](#slices){.pf-ref} and [](#slices-homeomorphic){.pf-ref}, $p^{-1}(U)$ is the disjoint union of the open slices $U\times\{y\}$, each mapped homeomorphically onto $U$ by $p$; that is exactly $U$ being evenly covered. The projection is continuous and, when $Y\ne\varnothing$, surjective, so it is a covering map.
+:::
+
+:::
+
+::: {.pf-step #hypothesis}
+The printed statement needs $Y\ne\varnothing$: for $Y=\varnothing$ and $X\ne\varnothing$ the projection $X\times\varnothing\to X$ is the empty map into a nonempty set, hence not surjective, and so not a covering map.
+
+::: pf-proof
+$X\times\varnothing=\varnothing$, and the projection of the empty set has empty image, while a covering map is surjective by the definition quoted above; the argument of step [](#evenly){.pf-ref} also breaks down, since it writes down a slice $U\times\{y\}$ and no point $y$ of $Y$ exists. For every nonempty discrete $Y$ the projection is a covering map, as shown.
+:::
+
+:::
+
+::: {.pf-qed}
+For nonempty discrete $Y$ the projection $p:X\times Y\to X$ is a covering map (step [](#evenly){.pf-ref}), and the empty $Y$ is the single case the printed statement does not cover (step [](#hypothesis){.pf-ref}).
+:::
+
+:::
+
 :::
