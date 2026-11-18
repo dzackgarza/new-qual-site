@@ -126,33 +126,137 @@ Which of these properties are preserved by continuous maps?
 :::
 
 ::: {.solution}
-Exactly the following five properties of the list are preserved by continuous maps:
+
+The survey is the card's own; no published solution of supplementary Exercise 3 of §36 was located, and the sets searched are recorded in the audit trail. The properties are numbered as in Exercise 1 of the Supplementary Exercises (Review of the Basics), printed p. 228.
+
+::: pf
+
+::: {.pf-step #positive}
+The five properties (1), (2), (5), (14) and (15) are preserved by continuous maps.
+
+::: pf-proof
+
+::: {.pf-step #pos-1}
+(1) Connectedness: the continuous image of a connected space is connected (Theorem 23.5).
+:::
+
+::: {.pf-step #pos-2}
+(2) Path connectedness: if $g:X\to Y$ is continuous and $f:[0,1]\to X$ is a path from $x$ to $x'$, then $g\circ f$ is a path from $g(x)$ to $g(x')$ (the remark after Example 5 of §24).
+:::
+
+::: {.pf-step #pos-5}
+(5) Compactness: the continuous image of a compact space is compact (Theorem 26.5).
+:::
+
+::: {.pf-step #pos-14}
+(14) Lindelöfness: if $f:X\to Y$ is continuous and $X$ is Lindelöf, pull an open cover of $f(X)$ back to $X$, take a countable subcover and push it forward.
+:::
+
+::: {.pf-step #pos-15}
+(15) Countable dense subset: if $D\subset X$ is countable and dense then $f(D)$ is countable and dense in $f(X)$, since $f(\overline{D})\subset\overline{f(D)}$ for continuous $f$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #negative}
+Each of the other twelve properties fails to be preserved: for each there is a continuous surjection whose domain has the property and whose image does not.
+
+::: pf-proof
+
+::: {.pf-step #neg-6}
+(6) Limit point compactness: the projection $\ZZ_{+}\times Y\to\ZZ_{+}$, $(n,y)\mapsto n$, where $Y$ is the two-point space whose only open sets are $Y$ and $\varnothing$.
+
+::: pf-proof
+The space $\ZZ_{+}\times Y$ is limit point compact and not compact (Example 1 of §28), and every infinite subset of it has a limit point. The projection is continuous, the preimage of $\{n\}$ being the open set $\{n\}\times Y$, and it is onto. The target $\ZZ_{+}$ is discrete, hence not limit point compact: every singleton is open, so an infinite subset has no limit point. This answers Exercise 28.3(a) in the negative.
+:::
+
+:::
+
+::: {.pf-step #neg-3}
+(3) Local connectedness and (4) local path connectedness: a bijection from $\NN$ with its discrete topology onto $\QQ$ with its usual topology.
+
+::: pf-proof
+$\NN$ and $\QQ$ are both countably infinite, so such a bijection exists, and it is continuous because every subset of a discrete space is open. The rationals are not locally connected (Example 3 of §25). A locally path connected space is locally connected, so $\QQ$ is not locally path connected either and one map refutes both entries.
+:::
+
+:::
+
+::: {.pf-step #neg-7}
+(7) Local compactness: the same bijection onto $\QQ$.
+
+::: pf-proof
+It is continuous as above; $\QQ$ is not locally compact (Example 1 of §29), though it is Hausdorff.
+:::
+
+:::
+
+::: {.pf-step #neg-8}
+(8) Hausdorffness: the identity from $\NN$ with the discrete topology onto $\NN$ with the finite complement topology.
+
+::: pf-proof
+Any two nonempty open sets of the finite complement topology meet, their complements being finite; so that space is not Hausdorff, while the identity out of a discrete space is continuous.
+:::
+
+:::
+
+::: {.pf-step #neg-9}
+(9) Regularity and (10) complete regularity: the identity from $\RR$ with the discrete topology onto $\RR_{K}$.
+
+::: pf-proof
+The identity is continuous, and $\RR_{K}$ is Hausdorff and not regular (Example 1 of §31). A completely regular space is regular, since the preimages of $[0,\tfrac12)$ and $(\tfrac12,1]$ under a separating function are disjoint open sets around a point and a closed set not containing it; so $\RR_{K}$ is not completely regular either.
+:::
+
+:::
+
+::: {.pf-step #neg-11}
+(11) Normality: a bijection from $\RR$ with the discrete topology onto the Sorgenfrey plane $\RR_{\ell}^{2}$.
+
+::: pf-proof
+Both sets have the cardinality of the continuum, since $\abs{\RR_{\ell}^{2}}=\abs{\RR^{2}}=\abs{\RR}$, so such a bijection exists and is continuous out of a discrete space. The Sorgenfrey plane is not normal (Example 3 of §31).
+:::
+
+:::
+
+::: {.pf-step #neg-12}
+(12) First countability: the identity from $\RR$ with the discrete topology onto $\RR$ with the finite complement topology.
+
+::: pf-proof
+The identity is continuous and onto. The target is not first countable: given countably many open neighbourhoods $U_{n}=\RR\setminus F_{n}$ of $x$, the set $F=\bigcup_{n}F_{n}$ is countable, so there is $y\ne x$ outside $F$; then $\RR\setminus\{y\}$ is a neighbourhood of $x$ containing none of the $U_{n}$, since $y\in U_{n}$ for every $n$.
+:::
+
+:::
+
+::: {.pf-step #neg-13}
+(13) Second countability: the identity from $\RR$ with its usual topology onto $\RR$ with the finite complement topology.
+
+::: pf-proof
+The finite complement topology is contained in the usual one, since finite sets are closed in $\RR$, so the identity is continuous. A discrete domain is not available here: a discrete space is second countable only if it is countable, while the target's underlying set is $\RR$. And the target has no countable basis: if $\{B_{n}\}$ were one, each nonempty $B_{n}$ would have finite complement, so the union of the sets $\RR\setminus B_{n}$ over the nonempty $B_{n}$ would be countable, giving a point $y$ with $y\in B_{n}$ for every nonempty $n$; then $\RR\setminus\{y\}$ is a nonempty open set containing none of them.
+:::
+
+:::
+
+::: {.pf-step #neg-16}
+(16) Local metrizability and (17) metrizability: the identity from $\RR$ with the discrete topology onto the Sorgenfrey line $\RR_{\ell}$.
+
+::: pf-proof
+The identity is continuous and onto. The Sorgenfrey line is regular and Lindelöf (Examples 2 of §31 and 3 of §30), so by Exercise 34.8 a locally metrizable such space would be metrizable; but $\RR_{\ell}$ is not metrizable (Exercise 30.6). So it is neither locally metrizable nor metrizable, and one map refutes both entries.
+:::
+
+:::
+
+::: {.pf-qed}
+For the twelve negative entries, the witnesses above are continuous surjections whose domains have the property and whose images do not, so no one of those properties is preserved. For the five positive entries, step [](#positive){.pf-ref} gives preservation. Hence exactly
 $$
-\boxed{(1),\ (2),\ (5),\ (14),\ (15).}
+\boxed{(1),\ (2),\ (5),\ (14),\ (15)}
 $$
-That is: connectedness, path connectedness, compactness, Lindelöfness, and the existence of a countable dense subset. None of the other twelve is preserved, and a witness is given for each below, limit point compactness among them.
+are preserved by continuous maps.
+:::
 
-**The five positive entries.**
-(1) The continuous image of a connected space is connected, Theorem 23.5.
-(2) The continuous image of a path connected space is path connected: if $g: X \to Y$ is continuous and $f: [0,1] \to X$ is a path from $x$ to $x'$, then $g \circ f$ is a path from $g(x)$ to $g(x')$. This is the remark after Example 5 of §24.
-(5) The continuous image of a compact space is compact, Theorem 26.5.
-(14) If $f: X \to Y$ is continuous and $X$ is Lindelöf, pull an open cover of $f(X)$ back to $X$, take a countable subcover, and push it forward: $f(X)$ is Lindelöf.
-(15) If $D \subseteq X$ is a countable dense subset then $f(D)$ is a countable dense subset of $f(X)$, since $f(\bar D) \subseteq \overline{f(D)}$.
+:::
 
-**The twelve negative entries.** Each witness is a continuous surjection whose domain has the property and whose image does not. Except in entries (6) and (13) the domain is a discrete space, which is the finest topology on its underlying set, so every map out of it is continuous; where the target carries a different underlying set the map is a bijection, and one exists because the two sets have the same cardinality. Discreteness gives properties (3), (4) and (7) to (12), (16) and (17) — local connectedness, local path connectedness, local compact Hausdorffness, Hausdorffness, regularity, complete regularity, normality, first countability, local metrizability and metrizability — so for those the domain is never the obstruction. The targets are spaces of this chapter.
+:::
 
-- (6) Limit point compact: the projection $\ZZ_+ \times Y \to \ZZ_+$, $(n, y) \mapsto n$, where $Y$ is the two-point space whose only open sets are $Y$ and $\varnothing$. That product with the product topology is limit point compact and not compact, Example 1 of §28, and every nonempty subset of it has a limit point. The map is continuous, the preimage of $\{n\}$ being the open set $\{n\} \times Y$, and it is onto; the target is $\ZZ_+$ with the discrete topology, which is not limit point compact, its infinite subsets having no limit point, every singleton being open. Munkres' Exercise 28.3(a) asks whether a continuous image of a limit point compact space is limit point compact, and this is a negative answer to it.
-
-- (3) Locally connected: a bijection from $\NN$ with the discrete topology onto $\QQ$ with its usual topology, which exists because $\NN$ and $\QQ$ are both countably infinite. The rationals are neither connected nor locally connected, Example 3 of §25. The same map refutes (4) local path connectedness, a path connected neighbourhood being connected.
-- (7) Locally compact Hausdorff: the same bijection onto $\QQ$. The rationals are not locally compact, Example 1 of §29, though $\QQ$ is Hausdorff.
-- (8) Hausdorff: the identity from $\NN$ with the discrete topology onto $\NN$ with the finite complement topology. Any two nonempty open sets of that topology meet, since their complements are finite, so the space is not Hausdorff.
-- (9) Regular: the identity from $\RR$ with the discrete topology onto $\RR_K$. The space $\RR_K$ is Hausdorff and not regular, Example 1 of §31.
-- (10) Completely regular: the same map onto $\RR_K$. A completely regular space is regular, since the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function are disjoint open sets, so $\RR_K$ is not completely regular either.
-- (11) Normal: a bijection from $\RR$ with the discrete topology onto the Sorgenfrey plane $\RR_\ell^2$, which exists because both sets have the cardinality of the continuum, $\abs{\RR_\ell^2} = \abs{\RR^2} = \abs{\RR}$. The Sorgenfrey plane is not normal, Example 3 of §31.
-- (12) First countable: the identity from $\RR$ with the discrete topology onto $\RR$ with the finite complement topology, in which the open sets are $\varnothing$ and the sets with finite complement. That identity is continuous, every subset of the discrete space being open, and it is onto. The target is not first countable: given countably many open neighbourhoods $U_n = \RR - F_n$ of a point $x$, a local base being extractable from the open sets, the set $F = \bigcup_n F_n$ is countable, so there is a point $y \neq x$ outside $F$; then $\RR - \theset{y}$ is a neighbourhood of $x$, its complement being a singleton, and it contains none of the $U_n$, since $y \in U_n$ for every $n$ and $y \notin \RR - \theset{y}$. So no countable family of neighbourhoods of $x$ is a local base.
-- (13) Second countable: the identity from $\RR$ with its usual topology onto $\RR$ with the finite complement topology, which is continuous because that topology is contained in the usual one. A discrete domain is not available for this entry, a discrete space being second countable only when it has countably many points while the target's underlying set is $\RR$. That space has no countable basis: were $\theset{B_n}$ one, each nonempty $B_n$ would have finite complement, so the union of the sets $\RR - B_n$ over the nonempty $B_n$ would be countable and there would be a point $y$ outside it, that is, $y \in B_n$ for every nonempty $n$; then $\RR - \theset{y}$ is a nonempty open set containing none of them, a contradiction. This also follows from (12), a second countable space being first countable.
-- (16) Locally metrizable: the identity from $\RR$ with the discrete topology onto $\RR_\ell$. The Sorgenfrey line is regular and Lindelöf, Examples 2 of §31 and 3 of §30, so by Exercise 34.8 it would be metrizable if it were locally metrizable, and it is not metrizable, Exercise 30.6.
-- (17) Metrizable: the same map onto $\RR_\ell$, which is not metrizable, Exercise 30.6.
-
-A remark on the device. What the witnesses use is not inheritance from a coarser topology: a finer topology need not keep the separation properties, $\RR_K$ being strictly finer than $\RR$, Lemma 13.4, and not regular, Example 1 of §31, which is exactly the witness of entry (9). What discreteness gives is the two facts above: every map out of a discrete space is continuous, and a discrete space has ten of the seventeen properties itself. It has the other seven only for small sets — it is connected, or path connected, only when it has at most one point, compact, or limit point compact, only when it is finite, and second countable, Lindelöf, or with a countable dense subset, only when it is countable — which is why entry (6) takes the limit point compact space of Example 1 of §28 for a domain instead, and why entry (13) cannot take a discrete one either. There the option is a target whose topology is contained in one the set already carries. Such a target cannot be the co-countable topology: $\RR - \theset{1/n \mid n \in \ZZ_+}$ is co-countable, and it is not open in $\RR$, its complement accumulating at $0$, so the identity from the usual topology onto the co-countable one is not continuous. The finite complement topology is contained in the usual one, its closed sets being finite.
+:::
 :::
