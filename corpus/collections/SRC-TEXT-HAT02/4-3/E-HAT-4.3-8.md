@@ -40,6 +40,15 @@ audit:
     problem over E_p with the homotopy K((e,alpha),t) = alpha(t) starts at p q, and its lift,
     read as a path, is a section. Not claimed: any statement about Serre fibrations versus
     Hurewicz fibrations, or about a section of pi over a subspace of E_p only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 419 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 428, whose running
+    folio reads 419. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -47,7 +56,7 @@ Show that a map $p: E \to B$ is a fibration if and only if the map $\pi: E^I \to
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.3 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, printed p. 420, and against the homotopy lifting property as defined there.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.3 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, printed p. 419, and against the homotopy lifting property as defined there.
 
 ::: pf
 
