@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://search.worldcat.org/isbn/9780131816299
+- https://books.google.com/books?vid=ISBN9780131816299
 source:
   source_kind: textbook
   textbook: munkres
@@ -1412,3 +1412,11 @@ source:
     - id: E-8IBEP
       comment: Munkres §85.3
 ---
+
+::: {.remark}
+The document is James R. Munkres, *Topology*, 2nd edition, Prentice Hall,
+2000. The href is the Google Books record for the edition's ISBN-13
+978-0-13-181629-9. The WorldCat ISBN route listed before
+(`https://search.worldcat.org/isbn/9780131816299`) redirected into a search
+query and answered HTTP 429, so it identified a search rather than the book.
+:::

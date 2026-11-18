@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://search.worldcat.org/isbn/9780070542358
+- https://archive.org/details/principlesofmath00rudi
 source:
   source_kind: textbook
   textbook: rudin-pma
@@ -27,3 +27,12 @@ source:
     - id: E-IAQ6D
       comment: '7.20'
 ---
+
+::: {.remark}
+The document is Walter Rudin, *Principles of Mathematical Analysis*, 3rd
+edition, McGraw-Hill, 1976. The href is a scan of that edition (1976,
+McGraw-Hill) at the Internet Archive. Google Books has no record for the
+edition's ISBN-13 978-0-07-054235-8 and answers 404, and the WorldCat ISBN
+route listed before redirects into a search query that answers HTTP 429;
+neither identifies the book.
+:::

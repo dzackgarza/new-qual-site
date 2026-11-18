@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-  - https://search.worldcat.org/isbn/9780691113869
+  - https://books.google.com/books?vid=ISBN9780691113869
 source:
   source_kind: textbook
   textbook: stein-shakarchi-real
@@ -43,3 +43,11 @@ source:
         - id: P-MLJMH
           comment: "4.5(c) as part (b)"
 ---
+
+::: {.remark}
+The document is Elias M. Stein and Rami Shakarchi, *Real Analysis: Measure
+Theory, Integration, and Hilbert Spaces*, Princeton Lectures in Analysis III,
+Princeton University Press, 2005. The href is the Google Books record for the
+edition's ISBN-13 978-0-691-11386-9. The WorldCat ISBN route listed before
+redirected into a search query and answered HTTP 429.
+:::
