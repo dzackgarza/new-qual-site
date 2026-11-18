@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1481 of the 12429 problem cards that have a solution
+1473 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1481
+- Problems: 1473
 - Problem cards with a solution: 12429
 
-## Problems (1481)
+## Problems (1473)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -612,7 +612,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-OD5RT — "Countable products of compact metrizable spaces are compact"
 - [ ] E-OHHSA — "A regular space that is not completely regular"
 - [ ] E-OI7VN — "The logarithmic spiral and the knotted x-axis as retracts"
-- [ ] E-OSQTJ — "Compact contractible subsets of the sphere do not separate"
 - [ ] E-OYPV7 — "The hierarchy of conditions on locally euclidean spaces"
 - [ ] E-PEXB6 — "A rational fan and a nowhere locally connected path-connected set"
 - [ ] E-PFQIX — "Separation properties of topological groups and coset spaces"
@@ -822,7 +821,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA23 — "Harmonic conjugate of $y^3-3x^2 y$ and the mean-value property"
 - [ ] P-8CA25 — "$\operatorname{Aut}(\CC_\infty)$ consists of the Möbius transformations"
 - [ ] P-8CA27 — "An entire function sending a circle into $\RR$ is constant"
-- [ ] P-8CA29 — "Conformal map of the vertical half-strip $0<\operatorname{Re} z<1$, $\operatorname{Im} z>0$ onto $\halfplane$"
 - [ ] P-8CA33 — "Holomorphic square root of an even-degree polynomial outside a large disk"
 - [ ] P-8CA37 — "Holomorphic interpolation on the sequence $1/n$"
 - [ ] P-8CB01 — "Implicit function for $x^2-2y+y^3=0$ over $\RR$ and $\CC$"
@@ -875,10 +873,8 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS20B — "Singular values and Frobenius perturbation bound $\dim\ker(\phi+\psi)$"
 - [ ] P-APAS20D — "Conjugacy class sizes from a character table of a group of order $360$"
 - [ ] P-APAS20F — "Scalar products $\langle e_1^n,e_1^n\rangle$ and $\langle h_3 p_6,s_{5,4}\rangle$"
-- [ ] P-APAS20G — "Haar average of a unitary representation is projection onto invariants"
 - [ ] P-APAS20H — "Haar integrals of $\operatorname{Tr} U$ and $\abs{u_{11}}^2$ over $U(2)$"
 - [ ] P-APAS21B — "Rayleigh min-characterization of $\lambda_n$; $p$-norm of a diagonal matrix"
-- [ ] P-APAS21C — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS21D — "Orthogonal projections onto $\operatorname{range}(C^H)$ and $\operatorname{null}(C)$; projectors onto a line"
 - [ ] P-APAS21F — "Indecomposable versus irreducible complex representations of $\RR_+$"
 - [ ] P-APAS21H — "Character table of $A_4$ and the Wedderburn decomposition of $\CC[A_4]$"
@@ -902,7 +898,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP08F — "Scalar products of characters via the SF package and their interpretation"
 - [ ] P-APASP08G — "Symmetric function identity involving hooks"
 - [ ] P-APASP08J — "Pólya enumeration on the cube and Frobenius image"
-- [ ] P-APASP08M — "Construction of a matrix group via Young representation, invariant ring, and Hilbert series"
 - [ ] P-AYDDA — "Carathéodory extension of a measure from an algebra"
 - [ ] P-BK185F09-7-01 — "Cauchy integral formula and a Bessel-type series identity"
 - [ ] P-BK185F09-7-02 — "Liouville consequences from one-sided real-part bounds"
@@ -1060,7 +1055,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP17B — "An entire function with $f(z)f(1/z)$ bounded is a monomial"
 - [ ] P-CASP17C — "An entire function bounded by $1+(\log(1+\abs z))^n$ is constant"
 - [ ] P-CASP17D — "Entire and meromorphic functions with prescribed zeros, poles, and residues"
-- [ ] P-CASP17F — "Roots of $z^{87}+36z^{57}+71z^4+z^3-z+1$ in the annulus $1\leq\abs z\leq 2$"
 - [ ] P-CASP17H — "Bounded harmonic functions on C and on the upper half-plane with zero boundary"
 - [ ] P-CASP18B — "$\int_0^\infty dt/(t^3+1)$ by residues"
 - [ ] P-CASP18D — "Uniform convergence of harmonic functions on the boundary implies convergence in the disk"
@@ -1243,7 +1237,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-EMCA8 — "Weierstrass's theorem on locally uniform limits of holomorphic functions"
 - [ ] P-EMCA9 — "Nonconstant entire functions have dense image"
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
-- [ ] P-EP64S — "Galois group and intermediate fields of the splitting field of $x^4-7$"
 - [ ] P-EQGG7 — "$z\tan z-a$ has only real roots for $a>0$"
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
 - [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
@@ -1465,7 +1458,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-TOP-WORKSHOP-D9-04 — "Homology of the unit sphere union the interval from $(0,0,-1)$ to $(0,0,1)$"
 - [ ] P-TOP-WORKSHOP-D9-06 — "Homology of a wedge sum by Mayer--Vietoris"
 - [ ] P-TOP-WORKSHOP-D9-HW1 — "Homology of $S^n$ for all $n\ge 0$"
-- [ ] P-TVRVM — "The sequence $a_{n+1}=\frac{a_n}{3}+5$ with $a_1=1$ is increasing, bounded by $10$, and converges to $\frac{15}{2}$"
 - [ ] P-TZCW3 — "Fundamental theorem of algebra via Rouché's theorem and the maximum modulus principle"
 - [ ] P-UCLAB02W-11 — "Triangularization in an orthonormal basis"
 - [ ] P-UCLAB03S-10 — "A self-adjoint operator with trace-zero square vanishes"
