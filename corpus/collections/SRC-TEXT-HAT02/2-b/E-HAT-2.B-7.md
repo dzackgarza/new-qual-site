@@ -209,6 +209,25 @@ audit:
     published source states the doubled case, so the source obligation is untouched by this entry;
     the functional-analytic and topological inputs of the surrounding construction are Hatcher's
     printed pp. 170--172 as the remark says.
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Access to the one located published candidate re-tested, so that the blocker on this card is a
+    record and not an assumption. Norman William Riebe, *The Fundamental Groups of the Complements of
+    Some Solid Horned Spheres*, MS thesis, Utah State University 1968, DOI 10.26076/c3c1-48f0, is
+    indexed as open access: OpenAlex W2767638993 reports `open_access.is_oa` true with
+    `oa_status` green and `has_content.pdf` true. Every route to the bytes failed, with these
+    statuses: OpenAlex's own content endpoint `https://content.openalex.org/works/W2767638993.pdf`
+    returns HTTP 401 with a JSON body; the Semantic Scholar graph API for the DOI returns HTTP 404
+    "Paper ... not found"; Unpaywall's v2 API for the DOI returns HTTP 404; `scholar.archive.org`'s
+    search answers with an anti-scrape verification page, which was not worked around; and the
+    publisher's `viewcontent.cgi?article=7892&context=etd` endpoint answers with a Cloudflare
+    challenge, as recorded in the 2026-11-18 event above. The thesis's abstract, read from the
+    landing page, still says only that M2, M3 and M4 are 2-horned spheres of orders 2, 3 and 4 and
+    that the complement groups are free of countably infinite rank; whether its order-4 building
+    block is Hatcher's doubled one is not settled by the abstract. Not read, therefore not cited,
+    and the source obligation stays open.
 ---
 
 ::: {.problem}
