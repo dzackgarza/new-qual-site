@@ -33,7 +33,7 @@ audit:
   note: >-
     Restructured into Lamport steps; checked that d' = d/(1+d) is bounded, symmetric and
     vanishes only on the diagonal, that f(t)=t/(1+t) is strictly increasing and subadditive
-    (the algebra s^2 t + s t^2 >= 0 after clearing denominators), the triangle inequality
+    (the difference st(2+s+t) >= 0 after clearing denominators; the earlier prose recorded s^2 t + s t^2, which is not what remains), the triangle inequality
     through increasingness and subadditivity, and the identity B_{d'}(x,u) = B_d(x, u/(1-u))
     for 0 < u < 1, which gives the same topology. Whitman, Exercise 20.11, printed p. 231.
     The printed statement needed no repair.
@@ -80,11 +80,11 @@ $d(y,x)=d(x,y)$, so the two quotients are equal. Also $d'(x,y)=0$ exactly when t
 With $f(t)=t/(1+t)$ for $t\ge0$ one has $f(s+t)\le f(s)+f(t)$ for $s,t\ge0$, and $f$ is strictly increasing.
 
 ::: pf-proof
-For $s,t\ge0$ put $f(s+t)\le f(s)+f(t)$; multiplying the desired inequality by the positive number $(1+s)(1+t)(1+s+t)$ turns it into
+For $s,t\ge0$ the inequality $f(s+t)\le f(s)+f(t)$ holds: multiplying it by the positive number $(1+s)(1+t)(1+s+t)$ turns it into
 $$
 (s+t)(1+s)(1+t)\le s(1+t)(1+s+t)+t(1+s)(1+s+t),
 $$
-whose right-hand side minus the left-hand side is $s^{2}t+st^{2}\ge0$; so the inequality holds. If $0\le s<t$ then $f(t)-f(s)=\big(t(1+s)-s(1+t)\big)/\big((1+t)(1+s)\big)=(t-s)/\big((1+t)(1+s)\big)>0$, so $f$ is strictly increasing.
+whose right-hand side minus the left-hand side is $st(2+s+t)\ge0$; so the inequality holds. If $0\le s<t$ then $f(t)-f(s)=\big(t(1+s)-s(1+t)\big)/\big((1+t)(1+s)\big)=(t-s)/\big((1+t)(1+s)\big)>0$, so $f$ is strictly increasing.
 :::
 
 :::
