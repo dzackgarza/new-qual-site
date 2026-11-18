@@ -22,36 +22,53 @@ You may also use without proof the fact that a harmonic function in $\DD \setmin
 :::
 
 ::: {.solution}
-Fix $0<R<1$. Let $h$ be the harmonic function on $B(0,R)$ whose boundary
-values on $\abs{z}=R$ agree with $u$; for example, $h$ is given by the Poisson
-integral of $u\restrict_{\abs{z}=R}$. Put
-$$
-w=u-h.
-$$
-Then $w$ is continuous on $\overline{B(0,R)}$, harmonic on
-$B(0,R)\setminus\{0\}$, and $w=0$ on $\abs{z}=R$.
 
-Let
-$$
-M=\max_{\abs{z}\le R}\abs{w(z)}.
-$$
-Fix $z$ with $0<\abs{z}<R$ and choose $0<\varepsilon<\abs{z}$. On the annulus
-$\varepsilon<\abs{\zeta}<R$, the harmonic function
-$$
-q_\varepsilon(\zeta)
-=M\frac{\log(R/\abs{\zeta})}{\log(R/\varepsilon)}
-$$
-equals $M$ on $\abs{\zeta}=\varepsilon$ and $0$ on $\abs{\zeta}=R$. Since
-$\abs{w}\le M$ on the inner circle and $w=0$ on the outer circle, the maximum
-principle applied to $w-q_\varepsilon$ and $-w-q_\varepsilon$ gives
-$$
-\abs{w(z)}\le q_\varepsilon(z)
-=M\frac{\log(R/\abs{z})}{\log(R/\varepsilon)}.
-$$
-Letting $\varepsilon\downarrow0$ yields $w(z)=0$. Hence $u=h$ on the punctured
-disk $0<\abs{z}<R$, and continuity gives equality also at $0$.
+No retained solution set covers this exercise: the card's own comparison argument follows, with the Poisson solution, the difference and its boundary values, the log barrier and the limit as separate steps.
 
-Thus $u$ agrees near $0$ with the harmonic function $h$, so $u$ is harmonic at
-$0$. Since it was already harmonic away from $0$, it is harmonic on all of
-$\DD$.
+Let $u$ be continuous on $\overline{\DD}$ and harmonic on $\DD\setminus\{0\}$.
+
+::: pf
+
+::: {.pf-step #poisson}
+For $0<R<1$ there is $h$ harmonic in $B(0,R)$ and continuous on its closure with $h=u$ on $\abs{z}=R$.
+
+::: pf-proof
+$u$ is continuous on the circle $\abs{z}=R$, a compact set, so its boundary values are continuous and the Poisson integral of those values is harmonic in $B(0,R)$ with those boundary values.
+:::
+
+:::
+
+::: {.pf-step #difference}
+$w=u-h$ is harmonic on $0<\abs{z}<R$, bounded, and vanishes on $\abs{z}=R$.
+
+::: pf-proof
+Both summands are harmonic on the punctured disc, $u$ is bounded (continuous on the compact $\overline\DD$) and $h$ is bounded on the compact closure of the disc, and the boundary values agree on $\abs{z}=R$.
+:::
+
+:::
+
+::: {.pf-step #barrier}
+For $0<\varepsilon<\abs{z}<R$, $\abs{w(z)}\le M\dfrac{\log(R/\abs{z})}{\log(R/\varepsilon)}$ with $M=\sup\abs w$.
+
+::: pf-proof
+$\phi_{\varepsilon}(z)=\log(R/\abs z)/\log(R/\varepsilon)$ is harmonic on the annulus (a logarithm of $\abs z$ rescaled), equal to $1$ on $\abs z=\varepsilon$ and $0$ on $\abs z=R$. The maximum principle applied to $\pm w-M\phi_{\varepsilon}$, which is harmonic and $\le0$ on both boundary circles, gives $\abs{w}\le M\phi_{\varepsilon}$.
+:::
+
+:::
+
+::: {.pf-step #extend}
+$u=h$ on $0<\abs z<R$, hence $u$ is harmonic in $\DD$.
+
+::: pf-proof
+Fix $z$ with $0<\abs z<R$; letting $\varepsilon\to0$ in step [](#barrier){.pf-ref} gives $w(z)=0$ since $\log(R/\varepsilon)\to\infty$ with the numerator fixed. So $u=h$ on the punctured disc, and $h$ is harmonic in the whole disc $B(0,R)$; as $R<1$ was arbitrary, $u$ coincides with a harmonic function near every point of $\DD$, so $u$ is harmonic on $\DD$.
+:::
+
+:::
+
+::: {.pf-qed}
+$u$ is harmonic on $\DD$ by step [](#extend){.pf-ref}.
+:::
+
+:::
+
 :::
