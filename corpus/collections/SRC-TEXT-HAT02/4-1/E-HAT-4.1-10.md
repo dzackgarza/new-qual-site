@@ -37,6 +37,11 @@ audit:
     solution (its step s1). Not checked: the fine structure of the quasi-circle's topology was not
     re-derived beyond what §1.3's card proves.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the quasi-circle, which is what Queue D asks for on this card. The two facts taken from §1.3 Exercise 7 are a step, the Peano-curve reduction of a map from a sphere to a path is a step, the vanishing of the homotopy groups is a step (with the basepoint inside the contracting tree made explicit), non-contractibility is a step, and the exclusion of CW homotopy type is the last. The lift argument is written as an application of the homotopy lifting property with the lift of the terminal constant map, which the prose abbreviated. No retained set covers this exercise; the card now says so. Locators checked: §1.3 Exercise 7 on printed p. 79, Whitehead's theorem (Theorem 4.5) on printed p. 346, the exercise on printed p. 358. No statement repair.
 ---
 
 ::: {.problem}
@@ -44,29 +49,56 @@ Show the 'quasi-circle' described in Exercise 7 in §1.3 has trivial homotopy gr
 :::
 
 ::: {.solution}
-Let $Y$ be the quasi-circle of §1.3, Exercise 7. That exercise proves two facts we use:
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.1 in Proudfoot's Homework #6, which holds exercises 4, 11, 12, 14 and 15 of the section, and in the Proudfoot Homework #4 sheet, which holds none of exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 10, printed p. 358, and it uses the two facts established in the exercise it cites, §1.3 Exercise 7, printed p. 79.
 
-1. every path in $Y$ is contained in a finite truncation of the oscillating graph together with the vertical segment and the connecting arc, hence in a finite tree;
-2. the quotient map
-$$
-q:Y\to S^1
-$$
-collapsing the vertical segment has no lift to $\RR\to S^1$.
+Let $Y$ be the quasi-circle of §1.3 Exercise 7, and $q:Y\to S^1$ the quotient map collapsing its vertical segment.
 
-We show first that every homotopy group of $Y$ is trivial. The space $Y$ is path-connected, so $\pi_0(Y)$ is trivial as a pointed set. For $n\ge1$, let
-$$
-f:S^n\to Y.
-$$
-The sphere $S^n$ is a compact, connected, locally connected metric space, hence a Peano continuum, and by the Hahn--Mazurkiewicz theorem every Peano continuum is a continuous image of $I$: there is a continuous surjection
-$$
-r:I\twoheadrightarrow S^n.
-$$
-The composite $f r:I\to Y$ is a path and has image exactly $f(S^n)$. By the path-confinement result above, this image lies in a finite tree $T\subset Y$. Hence $f$ factors through the contractible space $T$, so $f$ is nullhomotopic. Thus
-$$
-\boxed{\pi_n(Y)=0\quad\text{for all }n\ge1.}
-$$
+::: pf
 
-Nevertheless $Y$ is not contractible. If it were, the quotient map $q:Y\to S^1$ would be nullhomotopic. A nullhomotopy of $q$, together with a lift of the terminal constant map to $\RR$, lifts through the covering $\RR\to S^1$ by the homotopy lifting property. Restricting the lifted homotopy to the initial time would give a lift of $q$, contradicting §1.3, Exercise 7.
+::: {.pf-step #quasi-circle-facts}
+Every path in $Y$ has image in a finite tree contained in $Y$, and $q$ does not lift to $\RR\to S^1$.
 
-Therefore $Y$ is weakly contractible but not contractible. If $Y$ had the homotopy type of a CW complex $K$, then $K$ would also have all homotopy groups trivial, so Whitehead's theorem would make $K$ contractible, hence $Y$ contractible. Contradiction. Thus $Y$ does not have CW homotopy type.
+::: pf-proof
+Both are proved in §1.3 Exercise 7, printed p. 79. The oscillating graph has the vertical segment as its only accumulation and a path is compact, so its image misses a neighbourhood of the oscillation in each direction and lies in a finite truncation together with the segment and the joining arc, which is a finite tree. And a lift of $q$ would give a path in $\RR$ joining the two heights that $q$ identifies on the vertical segment, which the lifting criterion forbids because $q$ is essential on that loop.
+:::
+
+:::
+
+::: {.pf-step #image-in-tree}
+Every map $f:S^n\to Y$, $n\ge0$, has image in a finite tree contained in $Y$.
+
+::: pf-proof
+For $n\ge1$ the sphere $S^n$ is a compact, connected, locally connected metric space, so by the Hahn--Mazurkiewicz theorem it is a continuous image of $I$: there is a surjection $r:I\to S^n$. Then $fr:I\to Y$ is a path, so by step [](#quasi-circle-facts){.pf-ref} its image lies in a finite tree $T\subset Y$, and that image is $f(S^n)$. For $n=0$ the sphere is a pair of points and the same conclusion holds with the path joining them; the argument below only needs $n\ge1$.
+:::
+
+:::
+
+::: {.pf-step #trivial-groups}
+$\pi_n(Y)=0$ for every $n\ge1$, and $\pi_0(Y)$ is a single point.
+
+::: pf-proof
+$Y$ is path connected, since any two of its points are joined by a path in the oscillating graph together with the segment, so $\pi_0(Y)$ is trivial. For $n\ge1$ and a based map $f:S^n\to Y$, step [](#image-in-tree){.pf-ref} puts $f(S^n)$ in a finite tree $T$, which is contractible and contains the basepoint; a contraction of $T$ to that basepoint, composed with the inclusion, is a homotopy from $f$ to the constant map, so $[f]=0$ in $\pi_n(Y)$.
+:::
+
+:::
+
+::: {.pf-step #not-contractible}
+$Y$ is not contractible.
+
+::: pf-proof
+If $Y$ were contractible then $q:Y\to S^1$ would be nullhomotopic, through a homotopy $H:Y\times I\to S^1$ with $H_0=q$ and $H_1$ constant at some $c$. Choose $\widetilde c\in\RR$ over $c$; the constant map at $\widetilde c$ is a lift of the constant homotopy at $c$, so the homotopy lifting property for the covering $\RR\to S^1$ gives a lift $\widetilde H:Y\times I\to\RR$ of $H$ with $\widetilde H(-,1)=\widetilde c$. Then $x\mapsto\widetilde H(x,0)$ is a lift of $q=H_0$ to $\RR$, contradicting step [](#quasi-circle-facts){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #no-cw-type}
+$Y$ does not have the homotopy type of a CW complex.
+
+::: pf-proof
+Suppose $Y\simeq K$ with $K$ a CW complex. Then $K$ is weakly equivalent to a point, by step [](#trivial-groups){.pf-ref}: its homotopy groups vanish in all degrees and it is connected. Whitehead's theorem, Theorem 4.5 printed p. 346, applies to CW complexes and makes the map $K\to\ast$ a homotopy equivalence, so $K$ is contractible and then $Y$ is too, contradicting step [](#not-contractible){.pf-ref}. Hence $Y$ has no CW homotopy type: it is weakly contractible but not contractible, which is what the exercise asks.
+:::
+
+:::
+
+:::
 :::
