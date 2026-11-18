@@ -35,21 +35,55 @@ Generalizing the example of $\RP^2$ and $S^2 \times \RP^\infty$, show that if $X
 :::
 
 ::: {.solution}
-Put $G=\pi_1(X)$ and $Y=\widetilde X\times K(G,1)$. The first homotopy groups of $X$ and $Y$ are both $G$. For $n\ge2$, the covering map and the product formula give
-$$
-\pi_n(X)\cong\pi_n(\widetilde X)\cong\pi_n(Y).
-$$
-These are abstract group isomorphisms; they need not preserve the $G$-actions.
 
-Suppose that $X\simeq Y$ and let $C_p\le G$ be a cyclic subgroup of prime order, obtained from an element of finite order. The homotopy equivalence induces an isomorphism $\pi_1(X)\to\pi_1(Y)=G$, so it carries $C_p$ to the cyclic subgroup $f_*(C_p)\le G$ of order $p$, and it lifts to a homotopy equivalence between the cover of $X$ corresponding to $C_p$ and the cover of $Y$ corresponding to $f_*(C_p)$; that subgroup is again cyclic of order $p$, so $K(f_*(C_p),1)\simeq K(C_p,1)$. The cover of $Y$ is
-$$
-\widetilde X\times K(f_*(C_p),1)\simeq\widetilde X\times K(C_p,1),
-$$
-whereas the corresponding cover $X_{C_p}$ of $X$ has the same finite CW dimension as $X$. Projection and inclusion make $K(C_p,1)$ a retract of the cover of $Y$. Hence its homology would be a direct summand of $H_*(X_{C_p};\ZZ)$ and would vanish above $\dim X$.
+The argument is the card's own: the two spaces have the same homotopy groups, and a homotopy equivalence would make the homology of a finite-dimensional cover receive the periodic homology of $K(C_{p},1)$ as a direct summand.
 
-But the standard periodic resolution of the cyclic group gives
+Let $G=\pi_{1}(X)$, $p_{X}:\widetilde X\to X$ the universal cover, and $Y=\widetilde X\times K(G,1)$.
+
+::: pf
+
+::: {.pf-step #homotopy-groups}
+$\pi_{n}(X)\cong\pi_{n}(Y)$ for all $n\ge0$.
+
+::: pf-proof
+For $n=1$ both are $G$: $\pi_{1}(X)=G$ by definition and $\pi_{1}(Y)=\pi_{1}(\widetilde X)\times\pi_{1}(K(G,1))=1\times G$. For $n\ge2$ the covering map $p_{X}$ induces an isomorphism $\pi_{n}(\widetilde X)\cong\pi_{n}(X)$, and the product formula gives $\pi_{n}(Y)=\pi_{n}(\widetilde X)\times\pi_{n}(K(G,1))=\pi_{n}(\widetilde X)$ because $K(G,1)$ has trivial higher homotopy groups. So the groups agree in every degree; these are isomorphisms of abstract groups and need not be compatible with the $G$-actions.
+:::
+
+:::
+
+::: {.pf-step #subgroup}
+If $X\simeq Y$ and $\pi_{1}(X)$ has an element of finite order, there is a subgroup $C_{p}\le G$ of order $p$ for some prime $p$, carried by the induced isomorphism to a subgroup $C'_{p}=f_{*}(C_{p})\le G$ of order $p$.
+
+::: pf-proof
+Let $g\in G$ have finite order $m>1$ and let $p\mid m$ be prime; then $g^{m/p}$ has order $p$ and generates a cyclic subgroup $C_{p}$ of order $p$. A homotopy equivalence $f:X\to Y$ induces an isomorphism $f_{*}:\pi_{1}(X)\to\pi_{1}(Y)=G$, so $f_{*}(C_{p})$ is a subgroup of order $p$, hence cyclic of order $p$.
+:::
+
+:::
+
+::: {.pf-step #covers}
+The cover $X_{C_{p}}$ of $X$ corresponding to $C_{p}$ and the cover $Y_{C'_{p}}$ of $Y$ corresponding to $C'_{p}$ are homotopy equivalent; $Y_{C'_{p}}\simeq\widetilde X\times K(C_{p},1)$, and $K(C_{p},1)$ is a retract of it; $X_{C_{p}}$ is a CW complex of dimension $\dim X$.
+
+::: pf-proof
+A homotopy equivalence lifts to a homotopy equivalence between the covers corresponding to subgroups matched by the induced isomorphism on $\pi_{1}$, so $X_{C_{p}}\simeq Y_{C'_{p}}$. The cover of $Y=\widetilde X\times K(G,1)$ corresponding to $C'_{p}$ is $\widetilde X\times K(C'_{p},1)$: the cover of a product is the product of the covers, and $K(G,1)$ is covered by $K(C'_{p},1)$ with $C'_{p}$ the image subgroup. Since $C'_{p}\cong C_{p}\cong\ZZ/p$, this is $\widetilde X\times K(C_{p},1)$. Choosing a point $x_{0}\in\widetilde X$, the inclusion $k\mapsto(x_{0},k)$ and the projection $(x,k)\mapsto k$ exhibit $K(C_{p},1)$ as a retract of $\widetilde X\times K(C_{p},1)$. Finally a covering space of a $d$-dimensional CW complex is a CW complex of dimension $d$, so $\dim X_{C_{p}}=\dim X<\infty$.
+:::
+
+:::
+
+::: {.pf-step #contradiction}
+$X$ and $Y$ are not homotopy equivalent.
+
+::: pf-proof
+Suppose $X\simeq Y$ and take $C_{p}$ as in step [](#subgroup){.pf-ref}. The homology of $K(C_{p},1)$ is a direct summand of that of $\widetilde X\times K(C_{p},1)$, because a retract induces a split injection on homology; transferring along the homotopy equivalence of step [](#covers){.pf-ref}, $H_{*}(K(C_{p},1);\ZZ)$ is a direct summand of $H_{*}(X_{C_{p}};\ZZ)$. Since $\dim X_{C_{p}}=\dim X<\infty$, its homology vanishes above $\dim X$. But the periodic free resolution of $\ZZ/p$ gives
 $$
-H_{2k+1}(K(C_p,1);\ZZ)\cong\ZZ/p\qquad(k\ge0).
+H_{2k+1}(K(C_{p},1);\ZZ)\cong\ZZ/p\ne0\qquad(k\ge0),
 $$
-This contradicts the finite dimension of $X_{C_p}$. Therefore $X$ and $Y$ are not homotopy equivalent.
+in degrees tending to infinity, which cannot be a direct summand of a group vanishing above $\dim X$. So no homotopy equivalence exists:
+$$
+\boxed{X\not\simeq\widetilde X\times K(\pi_{1}(X),1)\ \text{whenever}\ \pi_{1}(X)\ \text{has an element of finite order}.}
+$$
+:::
+
+:::
+
+:::
 :::
