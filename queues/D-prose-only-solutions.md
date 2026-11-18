@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1368 of the 12429 problem cards that have a solution
+1367 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1368
+- Problems: 1367
 - Problem cards with a solution: 12429
 
-## Problems (1368)
+## Problems (1367)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -117,7 +117,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.C-2 — "Retracts of H-spaces"
 - [ ] E-HAT-3.C-3 — "Path-components of homotopy-associative H-spaces"
 - [ ] E-HAT-3.C-4 — "Lifting H-space structure to universal covers"
-- [ ] E-HAT-3.C-6 — "Spheres as H-spaces via $J_2(S^n)$"
 - [ ] E-HAT-3.C-7 — "Primitive elements of $\ZZ_p[x]$"
 - [ ] E-HAT-3.C-8 — "Tensor product of Hopf algebras"
 - [ ] E-HAT-3.C-9 — "Euler characteristic of finite H-spaces"
