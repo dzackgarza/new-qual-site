@@ -81,7 +81,7 @@ For a compact manifold $M$ verify that the following diagram relating Poincaré 
 $$
 \begin{array}{ccccccc}
 H^{k-1}(\partial M;R)&\longrightarrow&H^k(M,\partial M;R)&\longrightarrow&H^k(M;R)&\longrightarrow&H^k(\partial M;R)\\
-\downarrow { [\partial M]\frown - }&&\downarrow { [M,\partial M]\frown - }&&\downarrow { [M,\partial M]\frown - }&&\downarrow { [\partial M]\frown - }\\
+\downarrow{[\partial M]\frown-}&&\downarrow{[M,\partial M]\frown-}&&\downarrow{[M,\partial M]\frown-}&&\downarrow{[\partial M]\frown-}\\
 H_{n-k}(\partial M;R)&\longrightarrow&H_{n-k}(M;R)&\longrightarrow&H_{n-k}(M,\partial M;R)&\longrightarrow&H_{n-k-1}(\partial M;R)
 \end{array}
 $$
