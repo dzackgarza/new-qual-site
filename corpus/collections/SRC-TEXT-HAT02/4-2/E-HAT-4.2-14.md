@@ -37,6 +37,20 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. No retained solution set is cited on the card and none was
+    located among the retained Hatcher sets, so the argument is the card's own. Checked against
+    Hatcher, Section 4.2 Exercise 14, printed p. 360; the hint printed with the exercise is to use
+    the Hurewicz homomorphism, which is what the proof does. Each step re-read: the cellular
+    chains of Y include into those of X, X has no (n+1)-cells so H_n(X) consists of cycles and
+    the map on n-cycles is injective; Y has H_n = Z so its n-boundaries vanish; the Hurewicz map
+    is an isomorphism on the (n-1)-connected Y; and naturality transports the vanishing. The n=1
+    case is handled separately because the Hurewicz isomorphism is then on pi_1 abelianised; a
+    graph has free, hence torsion-free, fundamental group, so the nonzero image stays nonzero.
+    Not claimed: injectivity of the Hurewicz map on X, which the argument does not need.
 ---
 
 ::: {.problem}
@@ -44,26 +58,85 @@ If an $n$-dimensional CW complex $X$ contains a subcomplex $Y$ homotopy equivale
 :::
 
 ::: {.solution}
-Let $i:Y\hookrightarrow X$, where $X$ is $n$-dimensional and $Y\simeq S^n$.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 14, printed p. 360, and uses the Hurewicz theorem as the printed hint directs.
 
-Assume first $n\ge2$. Since $X$ has no $(n+1)$-cells, an $n$-cycle in the cellular chain complex cannot become a boundary after inclusion in $X$. Thus the inclusion induces an injection
-$$
-i_*:H_n(Y;\ZZ)\hookrightarrow H_n(X;\ZZ).
-$$
-The Hurewicz map
-$$
-\pi_n(Y)\xrightarrow{\cong}H_n(Y;\ZZ)
-$$
-is an isomorphism because $Y\simeq S^n$. If $\alpha\in\pi_n(Y)$ maps to zero in $\pi_n(X)$, naturality of Hurewicz gives
-$$
-i_*h(\alpha)=h(i_*\alpha)=0.
-$$
-Injectivity on $H_n$ implies $h(\alpha)=0$, hence $\alpha=0$. Therefore $i_*:\pi_n(Y)\to\pi_n(X)$ is injective.
+::: pf
 
-For $n=1$, $X$ is a graph, so $\pi_1(X)$ is free and hence torsionfree. The generator of $\pi_1(Y)\cong\ZZ$ has nonzero image in $H_1(X)$ by the same cellular-chain argument, so its image in $\pi_1(X)$ is nontrivial and therefore has infinite order. Thus $\ZZ\to\pi_1(X)$ is injective.
+::: {.pf-step #setup}
+Let $i:Y\to X$ be the inclusion, with $X$ a CW complex of dimension $n$ and $Y$ homotopy equivalent to $S^n$.
 
-Hence in all cases
+::: pf-proof
+These are the hypotheses. Note that $X$ being $n$-dimensional means $C_{n+1}(X)=0$ in the cellular chain complex, and that $H_n(Y;\ZZ)\cong\ZZ$ because $Y\simeq S^n$.
+:::
+
+:::
+
+::: {.pf-step #hn}
+The induced map $i_*:H_n(Y;\ZZ)\to H_n(X;\ZZ)$ is injective.
+
+::: pf-proof
+For a CW pair the inclusion of cellular chain complexes $C_*(Y)\hookrightarrow C_*(X)$ is injective in each degree. Since $X$ is $n$-dimensional, $C_{n+1}(X)=0$, so $H_n(X;\ZZ)=\ker\bigl(d_n:C_n(X)\to C_{n-1}(X)\bigr)$: there are no $n$-boundaries in $X$. Also $H_n(Y;\ZZ)\cong\ZZ\neq0$, so $d_{n+1}:C_{n+1}(Y)\to C_n(Y)$ has image $0$ and $H_n(Y;\ZZ)=\ker d_n^{Y}$. A cycle in $Y$ that is a boundary in $X$ would be an $n$-boundary in $X$, of which there are none, so the map on $n$-cycles is injective and hence so is $i_*$.
+:::
+
+:::
+
+::: {.pf-step #n2}
+For $n\ge2$, $i_*:\pi_n(Y)\to\pi_n(X)$ is injective.
+
+:::: pf-proof
+
+::: {.pf-step #hurewiczY}
+The Hurewicz map $h_Y:\pi_n(Y)\to H_n(Y;\ZZ)$ is an isomorphism.
+
+::: pf-proof
+$Y\simeq S^n$ with $n\ge2$, so $Y$ is simply connected and the Hurewicz theorem identifies $\pi_n$ with $H_n$; both are $\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #natural}
+If $\alpha\in\pi_n(Y)$ has $i_*\alpha=0$ in $\pi_n(X)$, then $\alpha=0$.
+
+::: pf-proof
+The Hurewicz homomorphism is natural, so $h_X(i_*\alpha)=i_*(h_Y\alpha)$ in $H_n(X;\ZZ)$. If $i_*\alpha=0$ then $i_*(h_Y\alpha)=0$, and $i_*$ is injective on $H_n$ by step [](#hn){.pf-ref}, so $h_Y\alpha=0$. Since $h_Y$ is an isomorphism by step [](#hurewiczY){.pf-ref}, $\alpha=0$.
+:::
+
+:::
+
+::: {.pf-step}
+$i_*$ is injective on $\pi_n$.
+
+::: pf-proof
+A homomorphism with trivial kernel is injective; step [](#natural){.pf-ref} says the kernel is trivial. Note that no injectivity of the Hurewicz map on $X$ is used, only its naturality.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #n1}
+For $n=1$, $i_*:\pi_1(Y)\to\pi_1(X)$ is injective.
+
+::: pf-proof
+A $1$-dimensional CW complex is a graph, so $\pi_1(X)$ is a free group, in particular torsion free, and $H_1(X;\ZZ)\cong\pi_1(X)$ by the Hurewicz theorem for $1$-dimensional complexes (equivalently, since $H_1$ of a graph is free of the same rank). The generator of $\pi_1(Y)\cong\ZZ$ maps to a nonzero class in $H_1(X;\ZZ)$ by the chain argument of step [](#hn){.pf-ref}, so its image in $\pi_1(X)$ is nontrivial; a nontrivial element of a free group has infinite order, so $\ZZ\to\pi_1(X)$ is injective.
+:::
+
+:::
+
+::: {.pf-step}
+$\pi_n(Y)\to\pi_n(X)$ is injective for every $n$.
+
+::: pf-proof
+Steps [](#n2){.pf-ref} and [](#n1){.pf-ref} cover the cases $n\ge2$ and $n=1$ and exhaust the possibilities:
 $$
 \boxed{\pi_n(Y)\hookrightarrow\pi_n(X).}
 $$
+The hypothesis that $X$ is $n$-dimensional is used only through the vanishing of $C_{n+1}(X)$, i.e. the absence of $(n+1)$-cells.
+:::
+
+:::
+
+:::
 :::
