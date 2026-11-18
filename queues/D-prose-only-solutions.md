@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1582 of the 12430 problem cards that have a solution
+1569 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1582
+- Problems: 1569
 - Problem cards with a solution: 12430
 
-## Problems (1582)
+## Problems (1569)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -503,11 +503,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-KD56B — "First countability of the lower limit topology and the ordered square"
 - [ ] E-KIH81 — "Maximal collections with the finite intersection property"
 - [ ] E-KS2BT — "Completeness of the compact convergence topology over $\sigma$-compact domains"
-- [ ] E-KVFCT — "$\sigma$-compact regular spaces are paracompact"
 - [ ] E-KWBI9 — "Connected $T_1$ spaces have positive dimension"
 - [ ] E-KY2W7 — "The dictionary order plane is metrizable"
 - [ ] E-L2EHD — "The Stone--Čech compactification of a discrete space is extremally disconnected"
-- [ ] E-L77XX — "A countably locally finite collection that is neither countable nor locally finite"
 - [ ] E-LEE5L — "A quotient map that is neither open nor closed"
 - [ ] E-LESK3 — "Strong hypotheses short of metrizability"
 - [ ] E-LI4O5 — "Components of metrizable locally euclidean spaces are manifolds"
@@ -820,7 +818,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-YERPP — "Order-preserving surjections are homeomorphisms"
 - [ ] E-YGD3Z — "Properties of the total space of a covering"
 - [ ] E-YQUO1 — "Peano spaces and the Hahn-Mazurkiewicz theorem"
-- [ ] E-YTG4V — "Continuity of the field operations on $\RR$"
 - [ ] E-YZ8XN — "Simple connectedness implies semilocal simple connectedness"
 - [ ] E-YZWG5 — "Separating disjoint compact sets in a Hausdorff space"
 - [ ] E-ZPC0X — "Interchanging limits under uniform convergence"
@@ -828,9 +825,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-22T5H — "An analytic function real on a closed curve is constant"
 - [ ] P-24L43 — "Orbits of $\GL_3(\QQ[x])\times\GL_3(\QQ[x])$ on matrices of prescribed determinant"
 - [ ] P-2WRUJ — "The identity $\sum_{m=k}^n\binom{m}{k}=\binom{n+1}{k+1}$"
-- [ ] P-3373K — "Cube roots of $8$ in $\CC$"
 - [ ] P-3DZXT — "The binomial theorem, $(x+y)^5\equiv x^5+y^5\pmod{5}$, and $(x+y)^{5^n}\equiv x^{5^n}+y^{5^n}\pmod{5}$"
-- [ ] P-3VHPO — "$\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$"
 - [ ] P-4CJY7 — "Characteristic and minimal polynomials of the Frobenius automorphism"
 - [ ] P-4GMLL — "Jordan form of $\begin{pmatrix}-3&3&-2\\-7&6&-3\\1&-1&2\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-4HGM3 — "Groups of order 8"
@@ -848,7 +843,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
 - [ ] P-8CA14 — "$(z-1)/(z+1)$ maps the first quadrant onto the upper half-disk"
 - [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
-- [ ] P-8CA16 — "Hyperbolic derivative of $\operatorname{Aut}(\Delta)$ and two fixed points imply the identity"
 - [ ] P-8CA17 — "Existence of a conformal map of $\abs{z-1}<1/2$ onto $\abs{z+1}>1$"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
 - [ ] P-8CA20 — "Existence of $f:\DD\to\DD$ with $f(1/2)=3/4$ and $f'(1/2)=2/3$"
@@ -858,7 +852,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA27 — "An entire function sending a circle into $\RR$ is constant"
 - [ ] P-8CA29 — "Conformal map of the vertical half-strip $0<\operatorname{Re} z<1$, $\operatorname{Im} z>0$ onto $\halfplane$"
 - [ ] P-8CA33 — "Holomorphic square root of an even-degree polynomial outside a large disk"
-- [ ] P-8CA36 — "An isolated singularity with $\operatorname{Re} f$ bounded above is removable"
 - [ ] P-8CA37 — "Holomorphic interpolation on the sequence $1/n$"
 - [ ] P-8CB01 — "Implicit function for $x^2-2y+y^3=0$ over $\RR$ and $\CC$"
 - [ ] P-8CB03 — "$\int_0^\infty\frac{\cos x}{1+x^4}\,dx$"
@@ -900,7 +893,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
 - [ ] P-APA17E — "Irreducible decomposition of cubic forms under $S_4$ and $\operatorname{End}_{S_4}(V)$"
 - [ ] P-APA17F — "Examples: real irreducible with non-scalar endomorphism; infinite indecomposable not irreducible"
-- [ ] P-APAS11A — "Schur's lemma converse, abelian simultaneous diagonalization, and central elements"
 - [ ] P-APAS11B — "Twisting irreducible characters by linear characters, and conjugate-partition signs"
 - [ ] P-APAS11C — "Group determinant factorization and the circulant determinant"
 - [ ] P-APAS11D — "Murnaghan–Nakayama on $S_5$, Young-subgroup characters, and restriction of $A^{(4,1)}$"
@@ -1109,7 +1101,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP04A — "True or False: Möbius transformations, Cauchy sequences, contour integrals, limits of functions missing values, and lacunary series"
 - [ ] P-CASP04B — "Schwarz-Pick inequality for self-maps of the unit disk"
 - [ ] P-CASP04F — "Interpolation by analytic functions with prescribed values and derivatives"
-- [ ] P-CASP05A — "Roots of $z^5(z-2)=w$ in the unit disc and in $B(2,1)$"
 - [ ] P-CASP05B — "Jensen-type inequality for bounded analytic functions with prescribed zeros"
 - [ ] P-CASP05C — "Schwarz lemma variants: identity for simply connected and bounded domains"
 - [ ] P-CASP05F — "A holomorphic square root of $z^2-1$ on $\CC\setminus[-1,1]$"
@@ -1340,7 +1331,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-F10IJ — "Injectivity of $g\circ f$ versus injectivity of $f$ and $g$"
 - [ ] P-F12FN — "Pointwise and uniform convergence of $nx/(n+x)$ on $[0,\infty)$"
 - [ ] P-F12IN — "$A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective"
-- [ ] P-F12PD — "Diagonalize $\begin{pmatrix}7&-3\\1&3\end{pmatrix}$"
 - [ ] P-F7Y7R — "Negation of two quantified statements"
 - [ ] P-FBY23 — "Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$"
 - [ ] P-FKAJJ — "Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$ for finite $p$-groups"
@@ -1488,7 +1478,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-PRACT20-W4-15 — "Evaluating a linear functional on $\RR^2$ from two values"
 - [ ] P-PRX3C — "Prime and maximal ideals, with examples in $\ZZ$"
 - [ ] P-PSIBT — "$\int_0^\infty\frac{\log x}{1+x^3}\,dx$"
-- [ ] P-Q5LN7 — "The cube and the square roots of $-2+2\sqrt{3}i$"
 - [ ] P-QJE7B — "$\{v_1+v_2,\, v_2-v_3,\, v_2+2v_3\}$ is a basis whenever $\{v_1,v_2,v_3\}$ is"
 - [ ] P-RASP13B — "$t\,\mu\{\abs{f}\geq t\}\to0$ for $f\in L^1$"
 - [ ] P-RASP13C — "A signed measure with vanishing polynomial moments is zero"
@@ -1588,7 +1577,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-WESRA08-II3 — "Rational-translation invariant measurable sets are null or conull"
 - [ ] P-WESRA08-II5 — "Absolute convergence of series characterizes completeness"
 - [ ] P-WESTOP09-II4 — "Homology of a tame-knot exterior"
-- [ ] P-WI5OS — "The center of $S_n$ is trivial for $n\geq 4$"
 - [ ] P-WJY6O — "Nilpotent groups are solvable"
 - [ ] P-WK45L — "Galois group of $x^2+9$"
 - [ ] P-WKGRZ — "A $p$-group acting on a set of cardinality not divisible by $p$ has a fixed point"
@@ -1596,7 +1584,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-WOCSV — "Classification of groups of order $4$, and which arise as Galois groups over $\QQ$"
 - [ ] P-WXP5K — "Subgroups of finitely generated free abelian groups and of free groups"
 - [ ] P-X2GQL — "A Noetherian ring has every ideal finitely generated"
-- [ ] P-X7AK4 — "A finite separable splitting field $L/K$ has $[L:K]=\cardinality{\gal(L/K)}$"
 - [ ] P-XEOMT — "$[A_n,A_n]=A_n$ for $n\geq 5$"
 - [ ] P-XSSEP — "Equal degrees of irreducible factors of $f\in\QQ[x]$ in $L[x]$ when $L/\QQ$ is Galois, and a counterexample otherwise"
 - [ ] P-YHXGO — "Multiplicative linear functionals on $A(\DD)$ are point evaluations"
