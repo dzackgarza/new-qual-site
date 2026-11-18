@@ -58,7 +58,7 @@ $P_{+}$ is the orthogonal projection of $L^{2}$ onto it, and for $\varphi\in L^{
 $H^{2}(\circlegroup)$ is a closed subspace of $L^{2}(\circlegroup)$, so $P_{+}$ is defined.
 
 ::: pf-proof
-The functions $z\mapsto z^{n}$ are orthonormal in $L^{2}$, since $\int z^{n}\bar z^{m}\,dm=\int z^{n-m}\,dm$ is $1$ for $n=m$ and $0$ otherwise. Hence $\overline{\operatorname{span}}\{z^{j}:j\ge0\}$ is a closed subspace, and it consists exactly of the functions whose negative Fourier coefficients vanish, by the Riesz--Fischer theorem and the completeness of the trigonometric system: an $L^{2}$ function is the sum of its Fourier series, and its scalar product with $z^{j}$ is $\widehat f(-j)$.
+The functions $z\mapsto z^{n}$ are orthonormal in $L^{2}$, since $\int z^{n}\bar z^{m}\,dm=\int z^{n-m}\,dm$ is $1$ for $n=m$ and $0$ otherwise. Hence $\overline{\operatorname{span}}\{z^{j}:j\ge0\}$ is a closed subspace, and it consists exactly of the functions whose negative Fourier coefficients vanish, by the Riesz--Fischer theorem and the completeness of the trigonometric system: an $L^{2}$ function is the sum of its Fourier series, and with the convention $\widehat f(k)=\int_{\circlegroup}f(z)z^{-k}\,dm(z)$ its scalar product with $z^{j}$ is $\int f\bar z^{j}=\int f z^{-j}=\widehat f(j)$.
 :::
 
 :::

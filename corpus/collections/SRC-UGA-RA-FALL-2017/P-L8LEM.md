@@ -49,7 +49,7 @@ Let $X$ be a compact metric space and $\norm{f}=\max\{\abs{f(x)}:x\in X\}$ for $
 The maximum defining $\norm{f}$ exists, and $\norm{\cdot}$ is a norm on $C_{\RR}(X)$.
 
 ::: pf-proof
-$x\mapsto\abs{f(x)}$ is continuous on the compact space $X$, so it attains its maximum (Theorem 26.5 and its corollary that a continuous real-valued function on a compact space is bounded and attains its bounds). The resulting expression is nonnegative, vanishes only at the zero function, is homogeneous under scalars, and satisfies the triangle inequality, since $\abs{(f+g)(x)}\le\abs{f(x)}+\abs{g(x)}\le\norm{f}+\norm{g}$ for every $x$.
+$x\mapsto\abs{f(x)}$ is continuous on the compact space $X$, so it attains its maximum: $x\mapsto\abs{f(x)}$ is continuous from the compact space $X$ to the ordered space $\RR$, so the extreme value theorem (Theorem 27.4) gives $d\in X$ with $\abs{f(x)}\le\abs{f(d)}$ for every $x$. The resulting expression is nonnegative, vanishes only at the zero function, is homogeneous under scalars, and satisfies the triangle inequality, since $\abs{(f+g)(x)}\le\abs{f(x)}+\abs{g(x)}\le\norm{f}+\norm{g}$ for every $x$.
 :::
 
 :::

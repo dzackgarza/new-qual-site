@@ -36,6 +36,17 @@ audit:
     book's "still broader class" in Example 4 is illustrated, not classified; the card proves the two
     claims Example 4 makes about Example 3, and Exercise 38.2's failure of cos(1/x) is left to its own
     card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A review finding corrected the page of the source citation. The 2026-11-10 note above records
+    "Example 4 of §38 (printed p. 238)", and that page is wrong: in the Egbert copy of Munkres, Topology
+    (2000), printed p. 238 is PDF p. 253 and carries Examples 1 and 2 of §38, while Example 4 -- "Let
+    X = (0,1). Consider the one-point compactification of X given in Example 1 ..." -- begins on printed
+    p. 239, PDF p. 254, which was read here on that page. Example 4 of §38 is therefore printed p. 239.
+    Nothing else changes: the exercise answered is Exercise 1 of §38 (printed p. 241), and the proof's
+    own citations -- Examples 1 to 3 of §38, Theorem 29.1, Theorem 21.3, Theorem 23.3 -- are unaffected.
 ---
 
 ::: {.exercise}

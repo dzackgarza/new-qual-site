@@ -70,10 +70,10 @@ $e\in G_{x}$ by the first axiom. If $g,h\in G_{x}$ then $(gh)\cdot x=g\cdot(h\cd
 :::
 
 ::: {.pf-step #partition}
-The orbits are the equivalence classes of the relation $x\sim y$ iff $y=g\cdot x$ for some $g\in G$; in particular they partition $X$, and $G_{x}=G_{y}$ whenever $y\in Gx$.
+The orbits are the equivalence classes of the relation $x\sim y$ iff $y=g\cdot x$ for some $g\in G$; in particular they partition $X$, and the stabilizers of two points of one orbit are conjugate: if $y=g\cdot x$ then $G_{y}=gG_{x}g^{-1}$.
 
 ::: pf-proof
-The relation is reflexive ($x=e\cdot x$), symmetric (if $y=g\cdot x$ then $x=g^{-1}\cdot y$) and transitive (if $y=g\cdot x$ and $z=h\cdot y$ then $z=(hg)\cdot x$), so its classes partition $X$, and the class of $x$ is exactly $Gx$. If $y=g\cdot x$ and $h\in G_{y}$ then $h\cdot y=y$, so $(g^{-1}hg)\cdot x=g^{-1}\cdot(h\cdot(g\cdot x))=g^{-1}\cdot y=x$ and $g^{-1}hg\in G_{x}$; exchanging $x$ and $y$ gives $G_{x}=g^{-1}G_{y}g$, and since $y\in Gx$ both stabilizers are conjugate, and in particular have the same order.
+The relation is reflexive ($x=e\cdot x$), symmetric (if $y=g\cdot x$ then $x=g^{-1}\cdot y$) and transitive (if $y=g\cdot x$ and $z=h\cdot y$ then $z=(hg)\cdot x$), so its classes partition $X$, and the class of $x$ is exactly $Gx$. If $y=g\cdot x$ and $h\in G_{y}$ then $h\cdot y=y$, so $(g^{-1}hg)\cdot x=g^{-1}\cdot\big(h\cdot(g\cdot x)\big)=g^{-1}\cdot y=x$ and $g^{-1}hg\in G_{x}$; hence $G_{y}\subseteq gG_{x}g^{-1}$. Since $x=g^{-1}\cdot y$, the same computation with the pair $(y,g^{-1})$ gives $G_{x}\subseteq g^{-1}G_{y}g$, that is $gG_{x}g^{-1}\subseteq G_{y}$. So $G_{y}=gG_{x}g^{-1}$: the stabilizers are conjugate, and in particular have the same order, but they need not be equal — for $S_{3}$ acting on $\{1,2,3\}$ the stabilizers of $1$ and of $2$ are distinct subgroups of order $2$.
 :::
 
 :::

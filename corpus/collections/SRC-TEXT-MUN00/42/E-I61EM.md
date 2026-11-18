@@ -85,7 +85,7 @@ By Lemma 10.2 (printed p. 66) every section of $S_{\Omega}$ other than the one b
 $S_{x}$ has a countable basis.
 
 ::: pf-proof
-The intervals $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$ form a basis for the order topology on $S_{x}$ (§14, printed p. 84), and there are countably many such intervals because $S_{x}$ is countable by step [](#countable){.pf-ref}. So $S_{x}$ is second countable.
+The sets $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$, together with $[0,x)=S_{x}$ itself, form a basis for the order topology on $S_{x}$ (§14, printed p. 84): $S_{x}$ is well ordered with least element $0$, so the rays $[0,b)$ are the neighbourhoods of the form $[a_0,b)$ and the intervals $(a,b)$, $(a,x)$ are the remaining basic sets, and $[0,x)$ is a basis element because $S_{x}$ is open in itself. The last one is needed: if $S_{x}=\{0\}$ then $[0,b)=(a,b)=(a,x)=\varnothing$ for every admissible $a,b$, and $[0,x)=\{0\}$ is the only member of the family that is nonempty. All these sets are determined by pairs $a,b\in S_{x}$, so there are countably many of them because $S_{x}$ is countable by step [](#countable){.pf-ref}; hence $S_{x}$ is second countable.
 :::
 
 :::
@@ -121,7 +121,7 @@ For $x\in S_{\Omega}$ the set $[0,x+1)=S_{x+1}$ is an open neighbourhood of $x$,
 $S_{\Omega}$ is limit point compact and not compact.
 
 ::: pf-proof
-This is Example 2 of §28: an infinite $A\subset S_{\Omega}$ contains a countably infinite subset $B$, which being countable has an upper bound $b\in S_{\Omega}$; then $B\subset[a_{0},b]$, and $[a_{0},b]$ is compact because $S_{\Omega}$ has the least upper bound property, so $B$ has a limit point $x\in[a_{0},b]$, compactness implying limit point compactness (Theorem 28.1), and $x$ is a limit point of $A$ as well. Hence $S_{\Omega}$ is limit point compact. It is not compact: the sets $[0,\alpha)$ for $\alpha<\Omega$ are open in the order topology, they cover $S_{\Omega}$ since $\beta\in[0,\beta+1)$, and they are nested, so a finite subcollection is contained in its largest member $[0,\alpha_{0})$, which omits $\alpha_{0}$.
+This is Example 2 of §28: an infinite $A\subset S_{\Omega}$ contains a countably infinite subset $B$, which being countable has an upper bound $b\in S_{\Omega}$; then $B\subset[a_{0},b]$, where $a_{0}=0$ is the least element of $S_{\Omega}$, and $[a_{0},b]$ is compact because $S_{\Omega}$ has the least upper bound property, so $B$ has a limit point $x\in[a_{0},b]$, compactness implying limit point compactness (Theorem 28.1), and $x$ is a limit point of $A$ as well. Hence $S_{\Omega}$ is limit point compact. It is not compact: the sets $[0,\alpha)$ for $\alpha<\Omega$ are open in the order topology, they cover $S_{\Omega}$ since $\beta\in[0,\beta+1)$, and they are nested, so a finite subcollection is contained in its largest member $[0,\alpha_{0})$, which omits $\alpha_{0}$.
 :::
 
 :::
