@@ -48,10 +48,19 @@ audit:
     for $(H^* x H^*)^* = H_* x H_*$, and the Koszul sign $(-1)^{\abs{\alpha}\abs{\beta}}$ in the graded
     identification) are kept as before: no statement is strengthened and the sign convention is
     not claimed to vanish.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 292 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 301, whose running
+    folio reads 292. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.C Exercise 14, printed p. 291, and against the definition of the cup product as the composite $H^*(X\times X)\to H^*(X)$ induced by the diagonal (Section 3.2, p. 206).
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.C Exercise 14, printed p. 292, and against the definition of the cup product as the composite $H^*(X\times X)\to H^*(X)$ induced by the diagonal (Section 3.2, p. 206).
 
 ::: pf
 
