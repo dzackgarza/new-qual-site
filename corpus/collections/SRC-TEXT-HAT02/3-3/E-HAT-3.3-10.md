@@ -57,6 +57,11 @@ audit:
     has exactly the lift and multiplicativity argument. This supersedes relying on Li for the
     finite case alone.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the two cases of the hint, which is what Queue D asks for on this card. The lift, the infinite-sheeted contradiction, the finite-sheeted degree count and the two conclusions are separate steps; the compact-discrete-fiber remark the prose used to justify noncompactness now sits inside the infinite-sheeted step together with the reason the total space is connected, and the import of deg f = 1 (that f_*[M] is a nonzero generator) is stated rather than left implicit. A trailing paragraph repeating the citation after the proof is folded into the lead sentence. No statement repair: the exercise is Hatcher §3.3 Exercise 10, printed p. 258, Proposition 3.29 is on printed p. 239, and the argument is the Stanford 215C set's (Solution Set 3, problem 10, printed p. 1).
 ---
 
 ::: {.problem}
@@ -65,47 +70,57 @@ Show that for a degree 1 map $f: M \to N$ of connected closed orientable manifol
 :::
 
 ::: {.solution}
-Let
-$$
-H=\operatorname{Im}\bigl(f_*:\pi_1(M)\to\pi_1(N)\bigr).
-$$
-Let
-$$
-p:\widetilde N\to N
-$$
-be the connected covering corresponding to $H$. By the lifting criterion, $f$ lifts to
-$$
-\widetilde f:M\to\widetilde N,
-\qquad p\circ\widetilde f=f.
-$$
+The published solution is **Stanford Math 215C, Spring 2009, Solution Set 3, problem 10, printed p. 1** ([`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf)): the lift, the two cases for the sheet number of the cover, and the passage to abelianizations are its. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 10, printed p. 258, and the hint followed is the exercise's own.
 
-If $p$ has infinitely many sheets, then $\widetilde N$ is a connected noncompact $n$-manifold: were $\widetilde N$ compact, a fiber would be compact and discrete, hence finite. Hence by Proposition 3.29, p. 239,
-$$
-H_n(\widetilde N;\ZZ)=0.
-$$
-Therefore
-$$
-f_*[M]=p_*\widetilde f_*[M]=0,
-$$
-contradicting $\deg f=1$.
+::: pf
 
-Thus $p$ is finite-sheeted, say of degree $d=[\pi_1(N):H]$. Since $N$ is orientable, so is $\widetilde N$, and Exercise 9 gives
-$$
-\abs{\deg p}=d.
-$$
-Degrees multiply under composition, so
-$$
-1=\abs{\deg f}=\abs{\deg p}\,\abs{\deg\widetilde f}=d\,\abs{\deg\widetilde f}.
-$$
-Hence $d=1$. Therefore $H=\pi_1(N)$ and
-$$
-\boxed{f_*:\pi_1(M)\twoheadrightarrow\pi_1(N)}.
-$$
-Passing to abelianizations gives the surjection
-$$
-f_*:H_1(M)\twoheadrightarrow H_1(N).
-$$
+::: {.pf-step #lift}
+With $H=\operatorname{im}\bigl(f_*:\pi_1(M)\to\pi_1(N)\bigr)$ and $p:\widetilde N\to N$ the connected covering corresponding to $H$, the map $f$ lifts to $\widetilde f:M\to\widetilde N$ with $p\circ\widetilde f=f$.
 
-The lifting and both sheet-count cases are in **Stanford Math 215C, Solution Set 3**, problem 10, printed p. 1, [`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf): the lift satisfies $\deg f=\deg p\deg\widetilde f$; finitely-sheeted covers have $|\deg p|$ equal to the sheet count by Exercises 9 and force that count to be $1$; and in an infinite-sheeted cover the total space is noncompact, so $H_n(\widetilde N;\ZZ)=0$ by Proposition 3.29, p. 239. The card's compact-discrete-fiber remark makes that noncompactness precise. The final passage to abelianizations is the one in the same set.
+::: pf-proof
+The lifting criterion applies: $M$ is a connected manifold, hence connected and locally path connected, and $f_*\bigl(\pi_1(M)\bigr)\subset H=p_*\bigl(\pi_1(\widetilde N)\bigr)$, the right side being $H$ by the choice of the cover. So a lift exists with the stated property.
+:::
 
+:::
+
+::: {.pf-step #infinite}
+$p$ does not have infinitely many sheets.
+
+::: pf-proof
+If it did, $\widetilde N$ would be a connected noncompact $n$-manifold: it is connected because it corresponds to the subgroup $H$, and if it were compact then a fiber, a discrete closed subset, would be finite. Hence $H_n(\widetilde N;\ZZ)=0$ by Proposition 3.29, printed p. 239, which says $H_i$ vanishes for $i\ge n$ on a connected noncompact $n$-manifold. Then
+$$
+f_*[M]=p_*\widetilde f_*[M]=0 ,
+$$
+because $\widetilde f_*[M]\in H_n(\widetilde N;\ZZ)=0$; while $f_*[M]=\deg f\,[N]=[N]\ne0$, since $\deg f=1$ and $[N]$ generates $H_n(N;\ZZ)\cong\ZZ$. The contradiction rules out an infinite-sheeted cover.
+:::
+
+:::
+
+::: {.pf-step #finite}
+$p$ has one sheet, so $H=\pi_1(N)$.
+
+::: pf-proof
+By step [](#infinite){.pf-ref} the cover is finite-sheeted, say of degree $d$; then $d$ is the index $[\pi_1(N):H]$. A finite-sheeted cover of the closed orientable manifold $N$ is itself closed and orientable, and §3.3 Exercise 9 gives $\abs{\deg p}=d$. Degrees multiply under composition, so
+$$
+1=\abs{\deg f}=\abs{\deg p}\cdot\abs{\deg\widetilde f}=d\cdot\abs{\deg\widetilde f},
+$$
+which forces $d=1$. An index-one subgroup is the whole group, so $H=\pi_1(N)$.
+:::
+
+:::
+
+::: {.pf-step #surjective}
+$f_*:\pi_1(M)\to\pi_1(N)$ is surjective, and so is $f_*:H_1(M)\to H_1(N)$.
+
+::: pf-proof
+$H$ is by definition the image of $f_*: \pi_1(M)\to\pi_1(N)$, and step [](#finite){.pf-ref} gives $H=\pi_1(N)$; that is the surjectivity
+$$
+\boxed{f_*:\pi_1(M)\twoheadrightarrow\pi_1(N)} .
+$$
+Abelianization is a functor and $H_1=\pi_1^{\mathrm{ab}}$, so the surjection of fundamental groups induces a surjection $H_1(M)\twoheadrightarrow H_1(N)$, which is the second assertion.
+:::
+
+:::
+
+:::
 :::
