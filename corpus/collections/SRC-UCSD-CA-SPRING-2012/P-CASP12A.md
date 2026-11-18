@@ -31,52 +31,69 @@ If true, give a brief proof.
 :::
 
 ::: {.solution}
-1. **True.** Put $h=f'-f$. Then $h$ is entire and vanishes at every $1/n$.
-Since these zeros accumulate at $0$, the identity theorem gives $h\equiv0$.
-Thus $f'=f$, so $(e^{-z}f(z))'=0$ and $f(z)=Ce^z$. From $f(0)=1$,
-$C=1$.
 
-2. **False.** Let
-$$
-f(z)=e^z+\sin(\pi z).
-$$
-Then $f(0)=1$, and for every positive integer $n$,
-$$
-f'(n)-f(n)=\pi(-1)^n\ne0,
-$$
-so this particular perturbation does not work. Instead choose an entire
-function $q$ satisfying $q'(n)-q(n)=0$ for all $n$ and $q(0)=0$, for example
-$$
-q(z)=e^z\sin(2\pi z).
-$$
-Indeed $q'(n)=2\pi e^n$ while $q(n)=0$, so again not. A correct choice is
-obtained by setting $q=e^z h$; then $q'-q=e^zh'$. Taking
-$h(z)=1-\cos(2\pi z)$ gives $h(0)=0$ and $h'(n)=0$. Hence
-$$
-f(z)=e^z\bigl(2-\cos(2\pi z)\bigr)
-$$
-has $f(0)=1$ and $f'(n)=f(n)$ for every $n$, but $f\ne e^z$.
+No retained solution set covers this exercise: the six answers are settled here, one step each, and item 2's counterexample is replaced — the card's own attempts, $e^{z}+\sin(\pi z)$ and $e^{z}\sin(2\pi z)$, fail the hypothesis $f'(n)=f(n)$.
 
-3. **True.** Since $g$ has no zeros on the closed disk, $f/g$ is analytic on
-a neighborhood of it. The maximum modulus principle applied to $f/g$ gives
-$\abs{f/g}\le1$ throughout the disk.
+::: pf
 
-4. **False.** If an entire nonconstant $f$ omits the unit disk, then $1/f$ is
-an entire bounded function, hence constant by Liouville's theorem. Thus $f$
-would be constant.
+::: {.pf-step #one}
+1. True.
 
-5. **True.** Existence follows from Brouwer's fixed-point theorem because
-$f(\overline{\DD})\subset\DD\subset\overline{\DD}$. If
-$a\ne b$ were two fixed points, conjugating by a disk automorphism sending
-$a$ to $0$ would produce a disk self-map fixing $0$ and another nonzero point.
-The equality case of Schwarz's lemma would make it a disk automorphism. But
-$f(\overline{\DD})$ is compactly contained in $\DD$, impossible
-for an automorphism. Hence the fixed point is unique.
+::: pf-proof
+$h=f'-f$ is entire and vanishes at every $1/n$, $n\ge1$; these points have the accumulation point $0$ in $\CC$, so the identity theorem gives $h\equiv0$. Then $(e^{-z}f)'=e^{-z}(f'-f)=0$, so $f=Ce^{z}$ with $C=f(0)=1$.
+:::
 
-6. **False.** Give $\RR^2$ the complex structure
-$$
-J(x,y)=(y,-x),
-$$
-the negative of the standard one. Then $f(x,y)=x-iy$ is complex-linear from
-$(\RR^2,J)$ to the standard complex plane, hence holomorphic.
+:::
+
+::: {.pf-step #two}
+2. False.
+
+::: pf-proof
+Set $f(z)=e^{z}+\sin^{2}(\pi z)$, which is entire with $f(0)=1+0=1$. Since $f'=e^{z}+2\pi\sin(\pi z)\cos(\pi z)=e^{z}+\pi\sin(2\pi z)$ and $\sin(2\pi n)=0$, for every integer $n\ge1$ one has $f'(n)=e^{n}=f(n)$. But $f\ne e^{z}$. So the hypothesis at the discrete set $\{1,2,3,\dots\}$, which has no accumulation point in $\CC$, does not force $f=e^{z}$.
+:::
+
+:::
+
+::: {.pf-step #three}
+3. True.
+
+::: pf-proof
+$g$ is nonzero on the closed disc, so $h=f/g$ is analytic on a neighbourhood of it, and on $\abs z=1$ we have $\abs h=\abs f/\abs g\le1$. The maximum modulus principle gives $\abs h\le1$ on the disc, that is $\abs f\le\abs g$.
+:::
+
+:::
+
+::: {.pf-step #four}
+4. False.
+
+::: pf-proof
+If a nonconstant entire $f$ had range disjoint from $\DD$, its range would omit every point of the open disc, in particular two distinct values; Picard's little theorem says an entire function omitting two values is constant. So no such nonconstant $f$ exists.
+:::
+
+:::
+
+::: {.pf-step #five}
+5. True.
+
+::: pf-proof
+On $\abs z=1$ one has $\abs{f(z)}<1=\abs z$, so $\abs{f(z)-z}$ differs from $\abs z$ in the strict Rouché comparison: $\abs{f(z)-z-(-z)}=\abs{f(z)}<\abs z$. Hence $f(z)-z$ and $-z$ have the same number of zeros in $\DD$, namely one, and that zero is the unique fixed point.
+:::
+
+:::
+
+::: {.pf-step #six}
+6. False.
+
+::: pf-proof
+Take the complex structure on $\RR^{2}$ with the single global chart $\phi:\RR^{2}\to\CC$, $\phi(x,y)=x-iy$; the atlas has no transition maps to check, so it makes $\RR^{2}$ a complex analytic manifold. In that structure $f=\phi$ is a chart, hence analytic (indeed biholomorphic onto $\CC$). So such a complex structure does exist.
+:::
+
+:::
+
+::: {.pf-qed}
+1, 3, 5 are true by steps [](#one){.pf-ref}, [](#three){.pf-ref}, [](#five){.pf-ref}; 2, 4, 6 are false by steps [](#two){.pf-ref}, [](#four){.pf-ref}, [](#six){.pf-ref}.
+:::
+
+:::
+
 :::
