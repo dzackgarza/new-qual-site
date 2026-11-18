@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1429 of the 12429 problem cards that have a solution
+1424 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1429
+- Problems: 1424
 - Problem cards with a solution: 12429
 
-## Problems (1429)
+## Problems (1424)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -617,7 +617,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PKDH7 — "Pointwise boundedness and equicontinuity of four collections"
 - [ ] E-PKY0P — "Closure of the eventually-zero sequences in box and product topologies"
 - [ ] E-PLSGP — "Epsilon-delta continuity implies open-set continuity"
-- [ ] E-POA5M — "Compact locally imbeddable spaces imbed in euclidean space"
 - [ ] E-PQHZN — "The long line"
 - [ ] E-PROOB — "Manifolds have dimension at most m"
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
@@ -772,7 +771,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
-- [ ] E-UB4PP — "Extending $\cos(1/x)$ by enlarging the compactification"
 - [ ] E-URH71 — "Countable unions of nowhere dense closed sets in compact Hausdorff spaces"
 - [ ] E-V7QV9 — "Comparing the nine topologies on a three-point set"
 - [ ] E-V98N5 — "First-countable separable or Lindelof topological groups are second countable"
@@ -961,7 +959,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF07B — "Schwarz lemma applications: modulus bound and lower bound near a zero"
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
-- [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
@@ -994,8 +991,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA25C — "Biholomorphic map between simply connected regions: existence, derivative bound, and equality"
 - [ ] P-CAFA25D — "Holomorphic function with constant modulus on circles is a monomial"
 - [ ] P-CAFA25F — "Constancy of positive harmonic functions on simply connected regions and on $\CC\setminus\theset{0}$"
-- [ ] P-CAS24B — "Sublevel set of a nowhere-zero entire function has unbounded components"
-- [ ] P-CAS24E — "Polynomials with $p_n(0)=1$, $p_n'(0)=0$, pointwise tending to $0$ off $0$"
 - [ ] P-CAS24G — "Polynomial of an isolated singularity preserves singularity type"
 - [ ] P-CASNS — "Degree of $\QQ(7^{1/5},5^{1/4})$ over $\QQ$"
 - [ ] P-CASP04F — "Interpolation by analytic functions with prescribed values and derivatives"
