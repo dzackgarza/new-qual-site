@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-01
 kind: problem
 title: Intersecting a dense set with a subspace, and the open-subspace case
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Dense Sets, Subspaces]}
 relations: []
 review: draft
 audit:

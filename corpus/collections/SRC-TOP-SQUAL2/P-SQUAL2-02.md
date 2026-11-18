@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-02
 kind: problem
 title: A strictly coarser topology on a compact Hausdorff space is compact but not Hausdorff
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces, Separation Axioms]}
 relations: []
 review: draft
 audit:

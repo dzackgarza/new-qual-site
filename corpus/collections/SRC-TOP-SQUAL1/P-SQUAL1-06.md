@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-06
 kind: problem
 title: The Möbius band does not retract onto its boundary circle
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Retracts, Fundamental Group, Surfaces]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-05
 kind: problem
 title: Fundamental group of a torus punctured at three points
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Surfaces]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL1-07
 kind: problem
 title: Two nonconjugate index-$4$ subgroups of the free group on two generators
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Free Groups]}
 relations: []
 review: draft
 audit:

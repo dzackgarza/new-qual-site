@@ -6,7 +6,9 @@ title: Closure-neighborhood characterization of normality
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Separation Axioms
+  - Normal Spaces
 relations: []
 review: draft
 audit:

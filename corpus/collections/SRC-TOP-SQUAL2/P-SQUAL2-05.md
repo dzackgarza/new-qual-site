@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-SQUAL2-05
 kind: problem
 title: Fundamental group of the complement of two disjoint lines in $\RR^3$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Euclidean Spaces]}
 relations: []
 review: draft
 audit:
