@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP14-5
 kind: problem
 title: Compare the $L^1$ and uniform metric topologies on $C[0,1]$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metric Spaces, "L¹"]}
 relations: []
 review: draft
 audit:

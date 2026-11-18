@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B5
 kind: problem
 title: Naturality of induced fundamental-group maps under a homotopy
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Homotopy]}
 relations: []
 review: draft
 audit:

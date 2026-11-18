@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP12-3
 kind: problem
 title: Continuous images of Hausdorff and connected spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Hausdorff Spaces, Connectedness]}
 relations: []
 review: draft
 audit:

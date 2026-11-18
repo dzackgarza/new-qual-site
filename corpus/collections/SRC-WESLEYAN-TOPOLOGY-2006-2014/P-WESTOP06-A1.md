@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A1
 kind: problem
 title: Density character bounds the cardinality of $C(X)$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Dense Sets, Cardinality]}
 relations: []
 review: draft
 audit:

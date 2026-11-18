@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP08-II3
 kind: problem
 title: Change of basepoint isomorphism for the fundamental group
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Path Connectedness]}
 relations: []
 review: draft
 audit:

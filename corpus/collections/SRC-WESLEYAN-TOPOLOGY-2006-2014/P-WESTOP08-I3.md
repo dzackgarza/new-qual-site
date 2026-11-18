@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP08-I3
 kind: problem
 title: Explicit path homotopy from a path followed by its reverse to the constant path
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Homotopy, Fundamental Group]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B3
 kind: problem
 title: Explicit deformation retraction of punctured Euclidean space onto the sphere
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Retracts, Homotopy Equivalence]}
 relations: []
 review: draft
 audit:

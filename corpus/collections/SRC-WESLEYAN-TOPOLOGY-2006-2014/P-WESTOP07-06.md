@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-06
 kind: problem
 title: A homotopy equivalence matches path components by homotopy equivalences
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Homotopy Equivalence, Path Components]}
 relations: []
 review: draft
 audit:

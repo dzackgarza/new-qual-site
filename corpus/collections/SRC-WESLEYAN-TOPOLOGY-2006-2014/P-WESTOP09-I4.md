@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-I4
 kind: problem
 title: Cardinality of spaces of continuous maps into the unit interval
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Rings of Continuous Functions, Cardinality]}
 relations: []
 review: draft
 audit:

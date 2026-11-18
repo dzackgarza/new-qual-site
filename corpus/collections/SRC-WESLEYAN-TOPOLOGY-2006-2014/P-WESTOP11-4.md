@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-4
 kind: problem
 title: Maximal ideals of rings of continuous functions on compact Hausdorff spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Rings of Continuous Functions, Maximal Ideals]}
 relations: []
 review: draft
 audit:

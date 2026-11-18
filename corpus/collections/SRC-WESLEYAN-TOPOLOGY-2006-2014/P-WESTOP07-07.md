@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-07
 kind: problem
 title: Second countability, the Sorgenfrey line, and cardinality of continuous functions
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separability, Sorgenfrey Line]}
 relations: []
 review: draft
 audit:

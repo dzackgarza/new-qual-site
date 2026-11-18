@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-03
 kind: problem
 title: Product, box, and uniform topologies and coordinatewise convergence
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Convergence of Functions]}
 relations: []
 review: draft
 audit:

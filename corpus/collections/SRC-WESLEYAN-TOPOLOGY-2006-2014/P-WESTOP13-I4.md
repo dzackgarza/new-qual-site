@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP13-I4
 kind: problem
 title: Urysohn metrization and a metrizable counterexample to its hypotheses
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metrizability, Urysohn's Lemma]}
 relations: []
 review: draft
 audit:

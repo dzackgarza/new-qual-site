@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-I1
 kind: problem
 title: Metrizable spaces under products, subspaces, and quotients
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metrizability, Quotient Spaces]}
 relations: []
 review: draft
 audit:

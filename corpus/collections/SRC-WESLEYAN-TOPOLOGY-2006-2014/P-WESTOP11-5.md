@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-5
 kind: problem
 title: Singular homology, a prescribed CW homology example, and Mayer--Vietoris
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Singular Homology, Mayer-Vietoris]}
 relations: []
 review: draft
 audit:

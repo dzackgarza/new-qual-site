@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-II2
 kind: problem
 title: Hausdorff and compactness properties of a covering-space total space
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

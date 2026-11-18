@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A4
 kind: problem
 title: The interval is injective among compact Hausdorff spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

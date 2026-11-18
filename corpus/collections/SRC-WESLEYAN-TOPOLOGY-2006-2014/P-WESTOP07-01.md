@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-01
 kind: problem
 title: Distinguish $\RR$ and $\RR^2$ from higher-dimensional Euclidean spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Invariance of Dimension, Euclidean Spaces]}
 relations: []
 review: draft
 audit:

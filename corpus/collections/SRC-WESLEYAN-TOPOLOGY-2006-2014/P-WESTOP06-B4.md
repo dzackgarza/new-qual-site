@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B4
 kind: problem
 title: Constant paths are left and right identities for path multiplication
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Homotopy]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP07-10
 kind: problem
 title: Closed orientable surfaces of distinct genus are not homeomorphic
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Genus, Surfaces]}
 relations: []
 review: draft
 audit:

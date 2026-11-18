@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A2
 kind: problem
 title: Define arbitrary products and topological sums
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Quotient Spaces]}
 relations: []
 review: draft
 audit:

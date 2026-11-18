@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP13-I1
 kind: problem
 title: Topological properties of a countable product of a disconnected subspace of $\RR$
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Product Topology, Connectedness]}
 relations: []
 review: draft
 audit:

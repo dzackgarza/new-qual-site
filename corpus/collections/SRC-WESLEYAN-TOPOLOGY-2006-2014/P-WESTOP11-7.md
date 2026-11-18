@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP11-7
 kind: problem
 title: A Hausdorff space with a clopen basis is totally disconnected
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Clopen Sets, Connectedness]}
 relations: []
 review: draft
 audit:

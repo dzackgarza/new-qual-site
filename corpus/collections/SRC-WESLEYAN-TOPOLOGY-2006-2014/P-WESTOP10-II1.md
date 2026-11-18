@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-II1
 kind: problem
 title: Realize two group presentations and compare homology with fundamental groups
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Group Presentations, Fundamental Group, Homology]}
 relations: []
 review: draft
 audit:

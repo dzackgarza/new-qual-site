@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-A8
 kind: problem
 title: A zero-dimensional compactification with the clopen extension property
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Clopen Sets, Compactness]}
 relations: []
 review: draft
 audit:

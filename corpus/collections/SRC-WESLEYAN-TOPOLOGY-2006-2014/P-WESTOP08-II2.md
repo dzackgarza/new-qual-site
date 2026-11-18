@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP08-II2
 kind: problem
 title: Fundamental groups, universal covers, and simplicial homology of standard spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Universal Cover, Simplicial Homology]}
 relations: []
 review: draft
 audit:

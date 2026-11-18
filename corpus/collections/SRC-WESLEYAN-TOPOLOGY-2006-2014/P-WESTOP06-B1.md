@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP06-B1
 kind: problem
 title: Path homotopy and an explicit loop in the punctured plane
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Homotopy, Fundamental Group]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP09-II2
 kind: problem
 title: Fundamental groups of products, wedges, and a simplex skeleton
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group, Wedge Sums]}
 relations: []
 review: draft
 audit:

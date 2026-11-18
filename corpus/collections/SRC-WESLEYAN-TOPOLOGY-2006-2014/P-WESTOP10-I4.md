@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP10-I4
 kind: problem
 title: Examples separating connectedness, metrizability, countability, and regularity properties
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Connectedness, Counterexamples]}
 relations: []
 review: draft
 audit:
