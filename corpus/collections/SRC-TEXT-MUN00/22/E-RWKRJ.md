@@ -118,7 +118,7 @@ The inclusion $i\colon A\to X$, $i(a)=a$, is continuous and $r\circ i=\mathrm{id
 
 ::: pf-proof
 
-$A$ carries the subspace topology, and the inclusion of a subspace is continuous (§18, printed p. 109). For $a\in A$ one has $r(i(a))=r(a)=a$, because $r$ is a retraction, so $r\circ i$ is the identity of $A$.
+$A$ carries the subspace topology, and the inclusion of a subspace is continuous (Theorem 18.2(b), printed p. 107). For $a\in A$ one has $r(i(a))=r(a)=a$, because $r$ is a retraction, so $r\circ i$ is the identity of $A$.
 
 :::
 
