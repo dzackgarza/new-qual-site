@@ -27,6 +27,11 @@ audit:
     if an element lies between x and y the rays below it and above it separate them, and if
     none does the rays below y and above x do. Whitman's printed pp. 164-165 proves the same
     statement by cases on basis elements. (tmp/sources/munkres-solutions-positron-ch2.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into STYLE-08 as the two cases (an element between $x$ and $y$, or none) and the dichotomy. Re-checked that the open rays are basis elements of the order topology (§14, printed p. 84) and that $(-\infty,y)\cap(x,+\infty)=\varnothing$ when no element lies between. No statement change.
 ---
 
 ::: {.exercise}
@@ -37,11 +42,45 @@ Show that every order topology is Hausdorff.
 ::: {.solution}
 The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.10, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two-ray argument is theirs. Whitman, printed pp. 164--165, gives a longer proof by cases on basis elements; the argument below is the shorter one.
 
-Let $X$ be an ordered set in the order topology, and let $x\ne y$ in $X$; assume $x<y$.
+Let $X$ be an ordered set carrying the order topology, and let $x<y$ in $X$. An open ray of $X$ is a basis element of the order topology (§14, printed p. 84).
 
-If there is $c\in X$ with $x<c<y$, then $(-\infty,c)$ and $(c,+\infty)$ are open rays, hence basis elements of the order topology on $X$ (§14, printed p. 84), they contain $x$ and $y$ respectively, and they are disjoint.
+::: pf
 
-If there is no element strictly between $x$ and $y$, then $(-\infty,y)$ and $(x,+\infty)$ are open rays containing $x$ and $y$ respectively, and they are disjoint: a point $z$ in both would satisfy $x<z<y$.
+::: {.pf-step #with-between}
 
-In either case $x$ and $y$ have disjoint neighbourhoods, so $X$ is Hausdorff.
+If some $c\in X$ satisfies $x<c<y$, then $x$ and $y$ have disjoint neighbourhoods.
+
+::: pf-proof
+
+The open rays $(-\infty,c)$ and $(c,+\infty)$ are basis elements of the order topology, hence open; they contain $x$ and $y$ respectively, and they are disjoint.
+
+:::
+
+:::
+
+::: {.pf-step #without-between}
+
+If no element of $X$ lies strictly between $x$ and $y$, then $x$ and $y$ have disjoint neighbourhoods.
+
+::: pf-proof
+
+The open rays $(-\infty,y)$ and $(x,+\infty)$ are basis elements of the order topology; they contain $x$ and $y$ respectively, and they are disjoint, since a point $z$ in both would satisfy $x<z<y$, which no element does.
+
+:::
+
+:::
+
+::: pf-step
+
+$X$ is Hausdorff.
+
+::: pf-proof
+
+Let $x\ne y$ in $X$; interchanging the names if necessary, $x<y$. Either some $c$ satisfies $x<c<y$, and step [](#with-between){.pf-ref} separates the points, or no element lies strictly between $x$ and $y$, and step [](#without-between){.pf-ref} separates them. These two cases exhaust the possibilities, so every two distinct points of $X$ have disjoint neighbourhoods.
+
+:::
+
+:::
+
+:::
 :::
