@@ -38,32 +38,51 @@ Show that the analogous statement fails for $p=\infty$.
 :::
 
 ::: {.solution}
-For $1\le p<\infty$, changing variables $y=\varepsilon z$ gives
-$$
-(f*\phi_\varepsilon)(x)-f(x)
-=\int_{\RR^n}\phi(z)\bigl(f(x-\varepsilon z)-f(x)\bigr)\,dz.
-$$
-By Minkowski's integral inequality,
-$$
-\norm{f*\phi_\varepsilon-f}_p
-\le\int \abs{\phi(z)}\,\norm{f(\cdot-\varepsilon z)-f}_p\,dz.
-$$
-For each fixed $z$, translation continuity in $L^p$ gives
-$$
-\norm{f(\cdot-\varepsilon z)-f}_p\to0.
-$$
-The integrand is bounded by $2\norm{f}_p\abs{\phi(z)}$, which is integrable in $z$. Dominated convergence therefore yields
-$$
-\norm{f*\phi_\varepsilon-f}_p\longrightarrow0.
-$$
 
-For $p=\infty$, take $f=\mathbf1_{[0,\infty)}$ in one dimension. Every $f*\phi_\varepsilon$ is continuous. But no continuous function $g$ can satisfy
-$$
-\norm{g-f}_\infty<\frac12.
-$$
-Indeed, such an essential-supremum bound and continuity would force $g(x)<1/2$ for every $x<0$ and $g(x)>1/2$ for every $x>0$, contradicting continuity at $0$. Hence
-$$
-\norm{f*\phi_\varepsilon-f}_\infty\ge\frac12
-$$
-for every $\varepsilon$, so convergence in $L^\infty$ fails.
+No retained solution set covers this exercise: the card's own argument follows, with the change of variables, Minkowski's inequality and the counterexample at $p=\infty$ as separate steps.
+
+::: pf
+
+::: {.pf-step #rewrite}
+$(f*\phi_{\varepsilon})(x)-f(x)=\displaystyle\int_{\RR^{n}}\phi(z)\big(f(x-\varepsilon z)-f(x)\big)dz$.
+
+::: pf-proof
+$(f*\phi_{\varepsilon})(x)=\int f(x-y)\varepsilon^{-n}\phi(y/\varepsilon)dy$; substituting $y=\varepsilon z$ gives $\int f(x-\varepsilon z)\phi(z)dz$, and $\int\phi(z)f(x)dz=f(x)\int\phi=f(x)$ since $\int\phi=1$.
+:::
+
+:::
+
+::: {.pf-step #minkowski}
+$\norm{f*\phi_{\varepsilon}-f}_{p}\le\displaystyle\int\abs{\phi(z)}\,\norm{f(\cdot-\varepsilon z)-f}_{p}\,dz$.
+
+::: pf-proof
+By step [](#rewrite){.pf-ref} the difference is the integral over $z$ of the functions $x\mapsto\phi(z)\big(f(x-\varepsilon z)-f(x)\big)$; Minkowski's integral inequality bounds the $L^{p}$ norm of such an integral by the integral of the $L^{p}$ norms.
+:::
+
+:::
+
+::: {.pf-step #limit}
+For $1\le p<\infty$, $\norm{f*\phi_{\varepsilon}-f}_{p}\to0$.
+
+::: pf-proof
+Translation is continuous in $L^{p}$: $\norm{f(\cdot-h)-f}_{p}\to0$ as $h\to0$. So the integrand in step [](#minkowski){.pf-ref} tends to $0$ for each $z$, and it is dominated by $2\norm{f}_{p}\abs{\phi(z)}$, which is integrable on the compact support of $\phi$; dominated convergence gives the limit $0$.
+:::
+
+:::
+
+::: {.pf-step #infinite}
+The statement fails for $p=\infty$.
+
+::: pf-proof
+Let $f=\chi_{(-\infty,0]}\in L^{\infty}$, which is discontinuous at $0$. Each $f*\phi_{\varepsilon}$ is continuous, being a convolution with a smooth compactly supported function. If $f*\phi_{\varepsilon}\to f$ in $L^{\infty}$, the limit would be a uniform limit of continuous functions, hence continuous; but $f$ is not continuous at $0$. So convergence fails in $L^{\infty}$.
+:::
+
+:::
+
+::: {.pf-qed}
+For $1\le p<\infty$ the convergence holds by steps [](#rewrite){.pf-ref}--[](#limit){.pf-ref}, and it fails at $p=\infty$ by step [](#infinite){.pf-ref}.
+:::
+
+:::
+
 :::
