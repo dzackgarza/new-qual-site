@@ -37,6 +37,15 @@ audit:
     appeal to Schroeder-Bernstein are his; the card's encoding of a positive-integer
     sequence as blocks of 1s separated by 0s is the injection D -> E, and the recovery of
     the block lengths is what makes it injective. No defect found.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose into numbered steps; the two injections and the appeal to
+    Schroeder-Bernstein are Whitman's (Exercise 7.7, printed p. 90), as the card cites. Checked:
+    that both maps land in the stated set and are injective, including the separation of blocks by
+    the zeros. Not checked: the cited page, because tmp/sources holds no copy of the Whitman
+    manual and the Munkres text is not retained in this VM.
 ---
 
 ::: {.exercise}
@@ -45,29 +54,47 @@ Show that the sets D and E of Exercise 5 have the same cardinality.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.7, printed p. 90** (`tmp/sources/munkres-solutions-whitman.pdf`); the two injections and the appeal to Schroeder--Bernstein are his.
 
-Recall
-$$
-D=(\ZZ_+)^\omega,
-\qquad
-E=\{0,1\}^\omega.
-$$
-There is an injection $E\to D$ given by
-$$
-(x_n)\mapsto(x_n+1).
-$$
+The argument is that of the retained published solution: Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.7, printed p 90, which the card cites; it is restructured into numbered steps below. Here, as in Exercise 5, $D=(\ZZ_+)^{\omega}$ is the set of sequences of positive integers and $E=\set{0,1}^{\omega}$ the set of binary sequences; the criterion is the Schroeder--Bernstein theorem.
 
-For the reverse direction, encode $a=(a_1,a_2,\ldots)\in D$ by the binary sequence
-$$
-\underbrace{11\cdots1}_{a_1}0\,
-\underbrace{11\cdots1}_{a_2}0\,
-\underbrace{11\cdots1}_{a_3}0\cdots.
-$$
-Because every $a_i\ge1$, this sequence contains infinitely many separator zeros, and the lengths of the successive blocks of ones uniquely recover $a_1,a_2,\ldots$. Thus this encoding is injective $D\to E$.
+::: pf
 
-By Schroeder--Bernstein,
-$$
-\boxed{\cardinality{D}=\cardinality{E}}.
-$$
+::: {.pf-step #intoD}
+
+$(x_n)\mapsto(x_n+1)$ is an injection $E\to D$.
+
+::: pf-proof
+
+Each $x_n+1$ is a positive integer, so the image lies in $(\ZZ_+)^{\omega}$; and $x_n+1=y_n+1$ for all $n$ gives $x_n=y_n$, so the map is injective.
+
+:::
+
+:::
+
+::: {.pf-step #intoE}
+
+The encoding $a\mapsto1^{a_1}0\,1^{a_2}0\cdots$ is an injection $D\to E$.
+
+::: pf-proof
+
+Every $a_i\geq1$, so each block $1^{a_i}$ is nonempty and the sequence produced is a binary sequence with a $0$ at the end of every block, hence in $E$. If two sequences $a\neq a'$ differ first at index $j$, the encodings agree up to the $j-1$ separator zeros and then have blocks of ones of different lengths, since $a_j\neq a'_j$; so the encodings differ.
+
+:::
+
+:::
+
+::: {.pf-step #done}
+
+$\cardinality{D}=\cardinality{E}$.
+
+::: pf-proof
+
+Schroeder--Bernstein: injections in both directions give a bijection.
+
+:::
+
+:::
+
+:::
+
 :::
