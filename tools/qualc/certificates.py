@@ -235,11 +235,21 @@ def registry_errors(
             )
         for entry in entries:
             if root is not None and not exists(root, entry.file):
+                # A lean-categories row is confirmed over HTTPS, so a machine
+                # with no network reports every one of them; the message says so
+                # rather than sending the reader to look for a moved file.
+                remote = entry.file.startswith(LEAN_CATEGORIES)
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.CERTIFICATE_FILE_MISSING,
                         REGISTRY,
-                        f"links {entry.file} for {card_id}, and its target does not exist",
+                        f"links {entry.file} for {card_id}, and its target does not exist"
+                        + (
+                            " (asked over HTTPS; without a network every lean-categories row "
+                            "is reported here)"
+                            if remote
+                            else ""
+                        ),
                     )
                 )
             if entry.covers not in COVERS:
