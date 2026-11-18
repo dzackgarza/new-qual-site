@@ -73,25 +73,107 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts and all four sequences are theirs.
 
-(a) In the product topology $f,g,h$ are continuous, since each coordinate function ($t\mapsto it$, $t\mapsto t$, $t\mapsto t/i$) is continuous and Theorem 19.6 applies. In the box topology none of the three is continuous: the set
-$$
-B=(-1,1)\times\big(-\tfrac1{2^{2}},\tfrac1{2^{2}}\big)\times\cdots\times\big(-\tfrac1{n^{2}},\tfrac1{n^{2}}\big)\times\cdots
-$$
-is box-open and contains $\mathbf{0}$, and for each of the three maps the condition $f(t)\in B$ reads $\abs{it}<1/i^{2}$, $\abs{t}<1/i^{2}$, $\abs{t/i}<1/i^{2}$ for all $i$, that is $\abs{t}<1/i^{3}$, $\abs{t}<1/i^{2}$, $\abs{t}<1/i$ for all $i$: in every case only $t=0$. So the preimage is $\{0\}$, not open in $\RR$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts and all four sequences are theirs, and the box and uniform criteria used in (b) are made explicit in steps [](#hier){.pf-ref} and [](#b-box){.pf-ref}.
 
-For the uniform topology: $f$ is not continuous, since $\bar\rho(f(t),\mathbf{0})=\sup_{i}\min\{\abs{it},1\}=1$ for every $t\ne0$, so $f^{-1}(B_{\bar\rho}(\mathbf{0},1))=\{0\}$. But $g$ and $h$ are continuous: for $s,t\in\RR$ with $\abs{s-t}<1$,
-$$
-\bar\rho(g(s),g(t))=\min\{\abs{s-t},1\}=\bar\rho(h(s),h(t)),
-$$
-because the $i$-th coordinate difference of $h(s),h(t)$ is $\abs{s-t}/i\le\abs{s-t}$, with equality at $i=1$; so given a ball of radius $\varepsilon$ around $g(t)$ or $h(t)$ the interval $(t-r,t+r)$ with $r=\min\{\varepsilon,1\}$ is mapped into it.
+Write $\mathbf{0}=(0,0,\ldots)$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i}\min\theset{\abs{x_{i}-y_{i}},1}$ for the uniform metric.
 
-(b) The answers are: $\mathbf{w}_{i}$ converges in the product topology only; $\mathbf{x}_{i}$ and $\mathbf{y}_{i}$ converge in the product and uniform topologies but not in the box topology; $\mathbf{z}_{i}$ converges in all three.
+::: pf
 
-*Product.* Each of the four sequences has, in each fixed coordinate, either the constant value $0$ for large $i$ or a value tending to $0$; so each converges to $\mathbf{0}$ coordinatewise, hence in the product topology (Exercise 19.6). Since the other two topologies are finer and Hausdorff, a limit there would also be $\mathbf{0}$.
+::: {.pf-step #hier}
+The product topology is contained in the uniform topology, which is contained in the box topology; all three are Hausdorff; and if a sequence converges in one of them then it converges to the same point in each coarser one.
 
-*Uniform.* $\bar\rho(\mathbf{x}_{i},\mathbf{0})=\bar\rho(\mathbf{y}_{i},\mathbf{0})=\bar\rho(\mathbf{z}_{i},\mathbf{0})=1/i\to0$, so those three converge uniformly; but $\bar\rho(\mathbf{w}_{i},\mathbf{0})=\sup_{j}\min\{j,1\}=1$ for $i\ge2$ (the $i$-th coordinate of $\mathbf{w}_{i}$ is $i$), so $\mathbf{w}_{i}$ does not converge in the uniform topology.
+::: pf-proof
+The inclusions are Theorem 20.4 (printed p. 124). The product of Hausdorff spaces is Hausdorff, and adding open sets preserves the Hausdorff property, so all three are Hausdorff. If $\mathbf{x}_{n}\to\mathbf{x}$ in a topology and every open set of a coarser topology is open in it, then every neighbourhood of $\mathbf{x}$ in the coarser topology is one in the finer, so $\mathbf{x}_{n}\to\mathbf{x}$ there too; and limits in a Hausdorff space are unique, since two distinct limits would have disjoint neighbourhoods that the sequence would eventually have to lie in at once.
+:::
 
-*Box.* $\mathbf{z}_{i}=(1/i,1/i,0,0,\dots)$ converges to $\mathbf{0}$: for a box neighbourhood $\prod(-\varepsilon_{n},\varepsilon_{n})$ of $\mathbf{0}$ one has $1/i<\min\{\varepsilon_{1},\varepsilon_{2}\}$ for large $i$. But $\mathbf{w}_{i}\notin\prod(-1,1)$ for every $i$, and for $\mathbf{x}_{i}$ and $\mathbf{y}_{i}$ the box neighbourhood $\prod(-1/n^{2},1/n^{2})$ is not entered eventually: $\mathbf{x}_{i}$ has $i$-th coordinate $1/i\notin(-1/i^{2},1/i^{2})$, and $\mathbf{y}_{i}$ has $i$-th coordinate $1/i\notin(-1/i^{2},1/i^{2})$. So none of the other three converges in the box topology.
+:::
+
+::: {.pf-step #a-product}
+(a) In the product topology $f$, $g$ and $h$ are continuous.
+
+::: pf-proof
+For each $i$ the $i$-th coordinate function of $f$ is $t\mapsto i\,t$, of $g$ is $t\mapsto t$, and of $h$ is $t\mapsto t/i$; each is continuous, since $\abs{ct-cs}=\abs{c}\abs{t-s}$. A map into a product is continuous exactly when all its coordinate functions are (Theorem 19.6, printed p. 117).
+:::
+
+:::
+
+::: {.pf-step #a-box}
+(a) In the box topology none of $f$, $g$, $h$ is continuous.
+
+::: pf-proof
+The set $B=\prod_{i\ge1}\big(-1/i^{2},\,1/i^{2}\big)$ is open in the box topology and contains $\mathbf{0}$. Now $f(t)\in B$ means $\abs{i\,t}<1/i^{2}$ for all $i$, that is $\abs{t}<1/i^{3}$ for all $i$; $g(t)\in B$ means $\abs{t}<1/i^{2}$ for all $i$; $h(t)\in B$ means $\abs{t/i}<1/i^{2}$, that is $\abs{t}<1/i$, for all $i$. Each of these conditions holds exactly for $t=0$, since $1/i^{3},1/i^{2},1/i\to0$. So each of the three preimages of $B$ is $\{0\}$, which is not open in $\RR$; each map is discontinuous.
+:::
+
+:::
+
+::: {.pf-step #a-uniform-f}
+(a) In the uniform topology $f$ is not continuous.
+
+::: pf-proof
+Let $B_{\bar\rho}(\mathbf{0},1)=\theset{\mathbf{x}\mid\bar\rho(\mathbf{x},\mathbf{0})<1}$. For $t\ne0$ choose $i$ with $i\abs{t}\ge1$; then $\min\theset{\abs{i\,t},1}=1$, so $\bar\rho(f(t),\mathbf{0})=1$ and $f(t)\notin B_{\bar\rho}(\mathbf{0},1)$. For $t=0$ one has $f(0)=\mathbf{0}\in B_{\bar\rho}(\mathbf{0},1)$. So $f^{-1}\big(B_{\bar\rho}(\mathbf{0},1)\big)=\{0\}$ is not open, and $f$ is discontinuous — hence also discontinuous in the finer box topology, by step [](#hier){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #a-uniform-gh}
+(a) In the uniform topology $g$ and $h$ are continuous.
+
+::: pf-proof
+For $s,t\in\RR$ the $i$-th coordinate difference of $g(s),g(t)$ is $\abs{s-t}$, so $\bar\rho(g(s),g(t))=\min\theset{\abs{s-t},1}$; for $h$ it is $\abs{s-t}/i\le\abs{s-t}$, and it equals $\abs{s-t}$ at $i=1$, so again $\bar\rho(h(s),h(t))=\min\theset{\abs{s-t},1}$. Given $\varepsilon>0$ take $\delta=\min\theset{\varepsilon,1}$: then $\abs{s-t}<\delta$ gives $\bar\rho(g(s),g(t))<\varepsilon$ and the same for $h$, so both are continuous at every $t$. Being continuous in the uniform topology, they are continuous in the coarser product topology (step [](#hier){.pf-ref}), agreeing with step [](#a-product){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #b-product}
+(b) All four sequences converge to $\mathbf{0}$ in the product topology.
+
+::: pf-proof
+Fix a coordinate $j$. In the four sequences the $j$-th coordinate is: for $\mathbf{w}$, $j$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{x}$ and $\mathbf{y}$, $1/n$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{z}$, $1/n$ for $n\le2$ and $0$ for $n>2$. In every case the $j$-th coordinates tend to $0$. A sequence in a product space converges to $\mathbf{x}$ exactly when each of its coordinate sequences converges to $x_{j}$ (Exercise 19.6, printed p. 118).
+:::
+
+:::
+
+::: {.pf-step #b-uniform}
+(b) In the uniform topology $\mathbf{x}$, $\mathbf{y}$, $\mathbf{z}$ converge to $\mathbf{0}$ and $\mathbf{w}$ does not converge.
+
+::: pf-proof
+$\mathbf{x}_{n}$ and $\mathbf{y}_{n}$ have all coordinates equal to $1/n$ in $n$ places and $0$ elsewhere, and $\mathbf{z}_{n}=(1/n,1/n,0,0,\ldots)$, so $\bar\rho(\mathbf{x}_{n},\mathbf{0})=\bar\rho(\mathbf{y}_{n},\mathbf{0})=\bar\rho(\mathbf{z}_{n},\mathbf{0})=\min\theset{1/n,1}=1/n\to0$, and the three converge to $\mathbf{0}$. But $\mathbf{w}_{n}$ has $n$-th coordinate $n$, so $\bar\rho(\mathbf{w}_{n},\mathbf{0})\ge\min\theset{n,1}=1$ for every $n$, and $\mathbf{w}_{n}$ stays outside the neighbourhood $B_{\bar\rho}(\mathbf{0},1)$ of the only possible limit $\mathbf{0}$ of step [](#b-product){.pf-ref} and step [](#hier){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #b-box}
+(b) In the box topology $\mathbf{z}$ converges to $\mathbf{0}$, and $\mathbf{w}$, $\mathbf{x}$, $\mathbf{y}$ do not converge.
+
+:::: {.pf-proof}
+
+::: {.pf-step #b-box-z}
+Every box neighbourhood of $\mathbf{0}$ contains $\mathbf{z}_{n}$ for all large $n$.
+
+::: pf-proof
+A box neighbourhood of $\mathbf{0}$ contains a box $\prod_{i}(-\varepsilon_{i},\varepsilon_{i})$ with all $\varepsilon_{i}>0$. For $n\ge2$, $\mathbf{z}_{n}$ has positive entries $1/n$ only in coordinates $1$ and $2$, so $\mathbf{z}_{n}$ lies in that box as soon as $1/n<\min\theset{\varepsilon_{1},\varepsilon_{2}}$, which holds for all large $n$.
+:::
+
+:::
+
+::: {.pf-step #b-box-not}
+Each of $\mathbf{w}_{n}$, $\mathbf{x}_{n}$, $\mathbf{y}_{n}$ avoids a fixed box neighbourhood of $\mathbf{0}$ for every $n$, so none converges.
+
+::: pf-proof
+Any limit in the box topology is a limit in the product topology, hence $\mathbf{0}$ by step [](#b-product){.pf-ref} and step [](#hier){.pf-ref}; so it suffices to exhibit a box neighbourhood of $\mathbf{0}$ that the sequence never enters. For $\mathbf{w}_{n}$ take $\prod_{i}(-1,1)$: the $n$-th coordinate of $\mathbf{w}_{n}$ is $n\ge1$. For $\mathbf{x}_{n}$ and $\mathbf{y}_{n}$ take $\prod_{i}(-1/i^{2},\,1/i^{2})$: the $n$-th coordinate of $\mathbf{x}_{n}$ is $1/n$, and the $n$-th coordinate of $\mathbf{y}_{n}$ is $1/n$ as well, and $1/n\ge1/n^{2}$, so neither lies in that box, for any $n$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-qed}
+In (a) the product topology has all three maps continuous and the box topology none, while in the uniform topology $g$ and $h$ are continuous and $f$ is not; in (b) $\mathbf{w}$ converges in the product topology only, $\mathbf{x}$ and $\mathbf{y}$ in the product and uniform topologies but not the box topology, and $\mathbf{z}$ in all three.
+:::
+
+:::
+
 :::
