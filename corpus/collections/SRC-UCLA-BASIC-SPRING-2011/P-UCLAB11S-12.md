@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-12
 kind: problem
 title: Contraction mapping iteration for the equation f prime equals f
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Banach Fixed Point Theorem, Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

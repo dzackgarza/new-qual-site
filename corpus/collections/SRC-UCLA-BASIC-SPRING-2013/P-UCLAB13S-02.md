@@ -5,7 +5,9 @@ kind: problem
 title: An error bound for Simpson's rule
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Taylor Series
 relations: []
 review: draft
 audit:

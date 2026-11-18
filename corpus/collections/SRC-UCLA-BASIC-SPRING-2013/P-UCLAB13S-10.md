@@ -5,7 +5,9 @@ kind: problem
 title: Centralizer of a unipotent upper-triangular matrix
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Centralizers and Normalizers
+  - Matrix Groups
 relations: []
 review: draft
 audit:

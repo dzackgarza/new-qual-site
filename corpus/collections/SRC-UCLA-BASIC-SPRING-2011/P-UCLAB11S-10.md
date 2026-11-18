@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-10
 kind: problem
 title: Differentiability from continuous partial derivatives
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Differentiation, Partial Derivatives]}
 relations: []
 review: draft
 audit:

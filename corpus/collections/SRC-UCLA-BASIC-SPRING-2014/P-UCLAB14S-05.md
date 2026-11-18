@@ -6,7 +6,9 @@ title: Nonuniqueness of least-squares minimizers
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Linear Systems
 relations: []
 review: draft
 audit:

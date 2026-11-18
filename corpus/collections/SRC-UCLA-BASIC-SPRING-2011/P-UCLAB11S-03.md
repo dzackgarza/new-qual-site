@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-03
 kind: problem
 title: Unitary diagonalization of a Hermitian operator
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Spectral Theorem, Hermitian Matrices]}
 relations: []
 review: draft
 audit:

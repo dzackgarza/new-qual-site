@@ -6,7 +6,9 @@ title: Trace-zero negative semidefinite matrices vanish; operators with $TT^*=4T
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Trace
 relations: []
 review: draft
 audit:

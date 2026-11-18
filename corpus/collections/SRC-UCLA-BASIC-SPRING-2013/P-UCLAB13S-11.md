@@ -5,7 +5,9 @@ kind: problem
 title: Two identities for Fibonacci numbers
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Recurrences
+  - Limits
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Images of two linear maps and their composition
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Transformations
+  - Rank
 relations: []
 review: draft
 audit:

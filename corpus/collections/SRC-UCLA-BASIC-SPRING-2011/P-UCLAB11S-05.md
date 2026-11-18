@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-05
 kind: problem
 title: Solvability via the orthogonal complement of the transpose kernel
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Orthogonality, Linear Systems]}
 relations: []
 review: draft
 audit:

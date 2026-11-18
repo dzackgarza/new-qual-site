@@ -6,7 +6,9 @@ title: Existence and uniqueness of LU decomposition
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Decompositions
+  - Row Reduction
 relations: []
 review: draft
 audit:

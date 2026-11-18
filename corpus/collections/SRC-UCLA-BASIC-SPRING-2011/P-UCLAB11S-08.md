@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-08
 kind: problem
 title: Counterexamples involving Riemann integration and pointwise convergence
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Riemann Integration, Counterexamples]}
 relations: []
 review: draft
 audit:

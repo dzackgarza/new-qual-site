@@ -5,7 +5,9 @@ kind: problem
 title: Chebyshev polynomials of the second kind
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Orthogonality
+  - Recurrences
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Courant-Fischer characterization of ordered eigenvalues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

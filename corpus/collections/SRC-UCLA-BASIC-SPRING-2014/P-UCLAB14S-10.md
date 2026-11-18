@@ -6,7 +6,9 @@ title: Arzelà–Ascoli from boundedness and equicontinuity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Equicontinuity
 relations: []
 review: draft
 audit:

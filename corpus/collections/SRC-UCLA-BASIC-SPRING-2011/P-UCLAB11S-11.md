@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB11S-11
 kind: problem
 title: Connected subsets of the line and a planar counterexample
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Connectedness, Path Connectedness]}
 relations: []
 review: draft
 audit:

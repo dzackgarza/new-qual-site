@@ -6,7 +6,9 @@ title: Adjoint of a normal matrix as a polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Normal Operators
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:

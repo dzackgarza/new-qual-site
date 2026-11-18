@@ -6,7 +6,9 @@ title: A regular level set is locally a parametrized surface
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Regular Value Theorem
 relations: []
 review: draft
 audit:

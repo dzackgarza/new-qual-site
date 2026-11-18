@@ -5,7 +5,9 @@ kind: problem
 title: Density of diagonalizable matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Density
 relations: []
 review: draft
 audit:

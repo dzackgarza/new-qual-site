@@ -5,7 +5,9 @@ kind: problem
 title: Riemann integrability of monotone functions
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riemann Integration
+  - Monotone Functions
 relations: []
 review: draft
 audit:

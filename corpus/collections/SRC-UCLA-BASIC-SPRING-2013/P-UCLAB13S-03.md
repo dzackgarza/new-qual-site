@@ -5,7 +5,9 @@ kind: problem
 title: Sequential compactness, completeness, and total boundedness
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Completeness
 relations: []
 review: draft
 audit:

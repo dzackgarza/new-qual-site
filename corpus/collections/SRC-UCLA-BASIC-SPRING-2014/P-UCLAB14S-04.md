@@ -6,7 +6,8 @@ title: Characteristic polynomials of $AB$ and $BA$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Characteristic Polynomial
 relations: []
 review: draft
 audit:
