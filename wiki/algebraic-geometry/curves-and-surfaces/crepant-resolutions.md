@@ -9,7 +9,7 @@ topics:
 
 # Crepant resolutions
 
-A resolution of singularities replaces a singular variety by a smooth one, and it always changes the canonical class; the question this chapter answers is when it changes it by nothing.
+A resolution of singularities replaces a singular variety by a smooth one, and it changes the canonical class unless the change is the one this chapter is about: the question is when a resolution changes it by nothing.
 A morphism with $K_Y=f^*K_X$ is crepant, and on a surface the singularities that admit such a resolution are exactly the du Val ones, whose resolution is crepant with exceptional curves of self-intersection $-2$.
 That is the statement that names the ADE classification in geometry, and it is the reason the crepant condition, not smoothness alone, is what a minimal model wants.
 

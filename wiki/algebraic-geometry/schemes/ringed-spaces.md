@@ -33,7 +33,7 @@ That is the precise sense in which the topological map is determined by the alge
 
 Locality is a condition on stalks, and a section is determined by its germ at every point, so every condition on a morphism of locally ringed spaces can be read one point at a time.
 The same is true of the sheaf axioms themselves: a section over an open cover glues when the germs agree, which is the statement that the structure sheaf is a subsheaf of the product of its stalks.
-In a locally ringed space the maximal ideal $\mfm_p\subseteq\OO_{X,p}$ is what makes the phrase *value of a function at $p$* mean something: a global section $s\in\OO_X(X)$ has a value $s(p)\in\kappa(p)\coloneqq\OO_{X,p}/\mfm_p$, and $s$ is a unit at $p$ exactly when that value is nonzero.
+In a locally ringed space the maximal ideal $\mfm_p\subseteq\OO_{X,p}$ is what makes the phrase "the value of a function at $p$" mean something: a global section $s\in\OO_X(X)$ has a value $s(p)\in\kappa(p)\coloneqq\OO_{X,p}/\mfm_p$, and $s$ is a unit at $p$ exactly when that value is nonzero.
 
 ## Schemes as the local models
 

@@ -10,7 +10,7 @@ topics:
 # Morphisms of sheaves
 
 A morphism of sheaves is a morphism of presheaves that happens to respect the gluing, and the two constructions one wants from it — the kernel and the cokernel — do not behave alike.
-The kernel of a map of sheaves is a subsheaf of the source and needs no repair; the cokernel is not a sheaf at all until it is sheafified, and that asymmetry is the first place the geometry enters the algebra.
+The kernel of a map of sheaves is a subsheaf of the source and needs no repair; the presheaf cokernel need not be a sheaf, so the cokernel in the category is its sheafification, and that asymmetry is the first place the geometry enters the algebra.
 This page fixes the definitions, records the stalk criterion that decides injectivity and surjectivity, and warns where a morphism that is onto as a map of sheaves is not onto on sections.
 
 ## Kernels, images, and cokernels

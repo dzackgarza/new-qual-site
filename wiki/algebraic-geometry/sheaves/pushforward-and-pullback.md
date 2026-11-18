@@ -16,8 +16,8 @@ The adjunction between them is the one formal statement of the chapter that is u
 
 [[D-MODPULL]]
 
-On stalks the two functors do the opposite of what their names suggest in the global picture: the inverse image has stalk $(\inverseof{f}\mcg)_x=\mcg_{f(x)}$, which is why it is the one that can be computed pointwise, while the direct image has no description on a stalk at all.
-The inverse image is exact, and $f_*$ is only left exact; the second clause is the whole reason sheaf cohomology exists, and the first is the reason the derived version of pullback needs no replacement.
+The two functors behave oppositely on stalks: the inverse image has stalk $(\inverseof{f}\mcg)_x=\mcg_{f(x)}$, which is why it is the one that can be computed pointwise, while a stalk of the direct image is a colimit over the neighbourhoods of the image point and is not the stalk of $\mcg$ anywhere.
+The inverse image is exact and $f_*$ is only left exact, and the second clause is the whole reason sheaf cohomology exists; the module-theoretic pullback $f^*$ base changes the exact $f^{-1}$ and is therefore only right exact, which is why $f^*$ still has derived functors.
 
 ## Adjunction
 
@@ -45,4 +45,4 @@ It is what makes pullback a map of $\OO_Y$-module categories rather than merely 
 [[D-SHFSIX]]
 
 Extension by zero is the functor that is left adjoint to restriction to an open set, and it exists for sheaves of abelian groups but not for quasicoherent sheaves: on $X=\AA^1_k$ with $j$ the inclusion of the complement of the origin, $j_!\OO_U$ has nonzero sections over $U$ and only zero sections over $X$, so its sections are not the localisation of its global sections and it is not quasicoherent ([[FE-MODZOO]]).
-This is the sharpest illustration of how much the quasicoherent condition costs: the six operations of the derived category exist only after one leaves the quasicoherent world ([[T-LADICPROPER]]).
+This is the sharpest illustration of what the quasicoherent condition costs: the six operations, $j_!$ and $Rf_!$ among them, live on sheaves of abelian groups and on constructible coefficients rather than on the quasicoherent ones ([[T-LADICPROPER]]).
