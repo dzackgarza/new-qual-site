@@ -41,39 +41,80 @@ Given a compact connected triangulable 2-manifold $Y$ with boundary, such that $
 :::
 
 ::: {.solution}
-Let the boundary components of $Y$ be
-$$
-C_1,\dots,C_k.
-$$
-By [[E-RKSXA]], $\partial Y$ is a compact 1-manifold. Each connected compact 1-manifold is homeomorphic to $S^1$, so choose homeomorphisms
-$$
-\phi_i:S^1\longrightarrow C_i.
-$$
 
-Attach a closed disk $D_i^2$ to each $C_i$ by $\phi_i$, and call the resulting space
-$$
-X=Y\cup_{\phi_1}D_1^2\cup\cdots\cup_{\phi_k}D_k^2.
-$$
-We verify the needed properties.
+No retained solution set covers this theorem: the card's own capping argument is set out here as separate steps, the cap being the construction that turns a bounded surface into a closed one.
 
-The space is compact because it is a quotient of the compact space
-$$
-Y\sqcup D_1^2\sqcup\cdots\sqcup D_k^2.
-$$
-It is Hausdorff because the attaching subsets and their graphs are closed in this compact Hausdorff disjoint union, so the induced equivalence relation is closed. It is connected because $Y$ is connected and each disk meets $Y$ along its whole boundary circle.
+Let $Y$ be a compact connected triangulable $2$-manifold with boundary, $\partial Y$ having components $C_{1},\dots,C_{k}$.
 
-At points away from the seams $C_i$, the old surface charts or disk-interior charts suffice. At a seam point, a collar half-disk from $Y$ and a collar half-disk from the attached $D_i^2$ glue along their diameter to form an ordinary disk. Hence $X$ is a 2-manifold without boundary.
+::: pf
 
-Because $Y$ is triangulable, after subdividing its triangulation we may assume each boundary component is a subcomplex. Triangulate each added disk so that its boundary triangulation agrees with that on $C_i$. Thus $X$ is triangulable.
+::: {.pf-step #circles}
+Each $C_{i}$ is homeomorphic to $S^{1}$.
 
-The closed-surface classification theorem therefore gives
-$$
-X\cong S^2,\qquad T_n\ (n\ge1),\qquad\text{or}\qquad P_m\ (m\ge1).
-$$
+::: pf-proof
+$\partial Y$ is a compact $1$-manifold without boundary (card [[E-RKSXA]]), so each component is a connected compact $1$-manifold, and such a space is homeomorphic to $S^{1}$ (the circle is the only connected compact $1$-manifold).
+:::
 
-Finally, in each attached disk choose a smaller concentric open disk $E_i$ whose closure is contained in its interior. The annulus $D_i^2-E_i$ is homeomorphic, relative to its outer boundary, to a collar of $C_i$ in $Y$. Radially pushing this annulus into the boundary collar gives a homeomorphism
-$$
-X-\bigcup_{i=1}^k E_i\cong Y.
-$$
-Thus $Y$ is precisely $X$-with-$k$-holes for one of the classified closed surfaces $X$.
+:::
+
+::: {.pf-step #cap}
+Let $X=Y\cup_{\phi_{1}}D_{1}^{2}\cup\cdots\cup_{\phi_{k}}D_{k}^{2}$, attaching a closed disk along each boundary circle by a homeomorphism $\phi_{i}:S^{1}\to C_{i}$.
+
+::: pf-proof
+Each $\phi_{i}$ is a homeomorphism onto the closed subset $C_{i}$ of $Y$, and the disks are disjoint from $Y$ and from each other, so the quotient of the compact space $Y\sqcup D_{1}^{2}\sqcup\cdots\sqcup D_{k}^{2}$ by the identifications $z\sim\phi_{i}(z)$ is well defined; this quotient is $X$.
+:::
+
+:::
+
+::: {.pf-step #basic}
+$X$ is compact, Hausdorff and connected.
+
+::: pf-proof
+It is a quotient of a compact space, hence compact. The identifications are made along closed subsets by homeomorphisms, so the quotient is Hausdorff (the graph of the equivalence relation is closed in the compact Hausdorff square). $Y$ is connected and each $D_{i}^{2}$ meets $Y$ along the whole circle $C_{i}\ne\varnothing$, so the union is connected.
+:::
+
+:::
+
+::: {.pf-step #manifold}
+$X$ is a $2$-manifold without boundary.
+
+::: pf-proof
+Away from the seams the charts are those of $\operatorname{int}Y$ or of the disk interiors. At a seam point $p\in C_{i}$, take a half-disk chart of $Y$ at $p$ with its diameter on $C_{i}$ and the matching half-disk chart of $D_{i}^{2}$; their union is a disk chart of $X$ at $p$.
+:::
+
+:::
+
+::: {.pf-step #triangulable}
+$X$ is triangulable.
+
+::: pf-proof
+Subdivide a triangulation of $Y$ so that each $C_{i}$ is a subcomplex (possible because the $C_{i}$ are compact and finitely many simplices meet each), then triangulate each $D_{i}^{2}$ compatibly with the boundary triangulation of $C_{i}$; the pieces agree on their intersections, so they assemble into a triangulation of $X$.
+:::
+
+:::
+
+::: {.pf-step #classify}
+$X$ is homeomorphic to one of $S^{2}$, $T_{n}$ $(n\ge1)$, $P_{m}$ $(m\ge1)$.
+
+::: pf-proof
+$X$ is a compact connected triangulable surface without boundary, so the classification theorem for closed surfaces applies.
+:::
+
+:::
+
+::: {.pf-step #holes}
+$Y\cong X$ with $k$ open disks removed.
+
+::: pf-proof
+In each $D_{i}^{2}$ choose an open concentric disk $E_{i}$ with $\overline{E_{i}}\subseteq\operatorname{int}D_{i}^{2}$. The annulus $D_{i}^{2}\setminus E_{i}$ carries a collar of $C_{i}$, and pushing it radially into the boundary collar of $Y$ gives a homeomorphism $X\setminus\bigcup_{i}E_{i}\cong Y$ that is the identity outside the collars. So $Y$ is $X$ with $k$ holes.
+:::
+
+:::
+
+::: {.pf-qed}
+$Y$ is homeomorphic to $X$-with-$k$-holes for $X$ one of the closed surfaces listed, by steps [](#cap){.pf-ref}, [](#manifold){.pf-ref}, [](#triangulable){.pf-ref}, [](#classify){.pf-ref} and [](#holes){.pf-ref}.
+:::
+
+:::
+
 :::
