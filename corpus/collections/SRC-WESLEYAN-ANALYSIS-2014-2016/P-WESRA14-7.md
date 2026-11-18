@@ -5,7 +5,9 @@ kind: problem
 title: 'A Borel set $E$ with $0<m(E\cap I)<m(I)$ for every interval $I$'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Borel Sets
 relations: []
 review: draft
 audit:

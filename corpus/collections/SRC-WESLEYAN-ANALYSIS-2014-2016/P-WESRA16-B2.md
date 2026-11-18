@@ -5,7 +5,9 @@ kind: problem
 title: '$L^\\infty$ convergence on finite-measure support implies convergence of integrals'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lp Spaces
+  - Convergence Theorems
 relations: []
 review: draft
 audit:

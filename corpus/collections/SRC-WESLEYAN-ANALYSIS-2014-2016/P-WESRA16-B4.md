@@ -5,7 +5,9 @@ kind: problem
 title: 'Limits of integrals of powers of a nonnegative function'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Integrals
+  - Convergence Theorems
 relations: []
 review: draft
 audit:

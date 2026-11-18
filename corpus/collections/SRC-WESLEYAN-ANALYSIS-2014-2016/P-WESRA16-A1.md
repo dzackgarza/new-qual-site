@@ -5,7 +5,9 @@ kind: problem
 title: 'A $[0,1]$-valued measurable function is either essentially an indicator or has a positive-measure middle level set'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Measurable Functions
 relations: []
 review: draft
 audit:

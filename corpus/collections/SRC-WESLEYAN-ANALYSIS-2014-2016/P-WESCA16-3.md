@@ -5,7 +5,9 @@ kind: problem
 title: 'Three complex and real integrals'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Residue Theorem
 relations: []
 review: draft
 audit:

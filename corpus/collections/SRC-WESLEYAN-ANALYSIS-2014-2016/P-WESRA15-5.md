@@ -5,7 +5,9 @@ kind: problem
 title: 'Scheffé-type $L^1$ convergence from convergence of norms'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - L¹
+  - Convergence Theorems
 relations: []
 review: draft
 audit:

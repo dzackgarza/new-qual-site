@@ -5,7 +5,9 @@ kind: problem
 title: 'A summable exceptional-set criterion for almost uniform convergence'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Egorov
+  - Convergence in Measure
 relations: []
 review: draft
 audit:

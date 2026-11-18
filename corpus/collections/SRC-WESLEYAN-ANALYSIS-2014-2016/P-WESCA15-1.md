@@ -5,7 +5,9 @@ kind: problem
 title: 'Classify three isolated singularities'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
+  - Poles
 relations: []
 review: draft
 audit:

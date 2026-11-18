@@ -5,7 +5,9 @@ kind: problem
 title: 'Measurability of the pointwise convergence set of measurable functions'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measurable Functions
+  - Pointwise Convergence
 relations: []
 review: draft
 audit:

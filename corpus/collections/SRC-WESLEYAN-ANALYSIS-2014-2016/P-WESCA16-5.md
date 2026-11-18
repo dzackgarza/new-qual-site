@@ -5,7 +5,8 @@ kind: problem
 title: 'Conformal maps from a sector disk to a quadrant'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

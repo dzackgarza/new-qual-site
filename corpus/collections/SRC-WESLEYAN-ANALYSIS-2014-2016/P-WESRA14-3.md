@@ -5,7 +5,9 @@ kind: problem
 title: '$\sigma$-finiteness characterized by a strictly positive $L^1$ function'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - L¹
+  - Measure Theory
 relations: []
 review: draft
 audit:

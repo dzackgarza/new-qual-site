@@ -5,7 +5,8 @@ kind: problem
 title: 'Holomorphic functions are infinitely differentiable'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

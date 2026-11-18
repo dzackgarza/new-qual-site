@@ -5,7 +5,9 @@ kind: problem
 title: 'A one-neighborhood of a measurable subset of the line is measurable'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Measurable Sets
 relations: []
 review: draft
 audit:
