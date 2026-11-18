@@ -14,6 +14,11 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the removal of a zero at the origin, Jensen's formula, the bound (1), the monotone limit $R\uparrow1$, and the inequality $-\log t\ge1-t$ on $(0,1)$ which converts the logarithmic series into $\sum(1-\abs{z_n})$.
 ---
 
 ::: {.exercise}
@@ -27,29 +32,49 @@ $$
 :::
 
 ::: {.solution}
-If $0$ is a zero of $f$, factor $f(z)=z^m g(z)$ with $g(0)\ne0$; this removes only finitely many zeros, so it suffices to treat the case $f(0)\ne0$.
+No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
-Let $M=\sup_{\DD}\abs{f}$. For $0<r<1$ such that no zero lies on $\abs{z}=r$, Jensen's formula gives
-$$
-\log \abs{f(0)}+\sum_{\abs{z_n}<r}\log\frac r{\abs{z_n}}
-=\frac1{2\pi}\int_0^{2\pi}\log\abs{f(re^{i\theta})}\,d\theta
-\le \log M.
-$$
-Hence
-$$
-\sum_{\abs{z_n}<r}\log\frac r{\abs{z_n}}\le \log\frac M{\abs{f(0)}}.
-\tag{1}
-$$
-Fix $0<R<1$ and let $r\uparrow1$ through radii larger than $R$. From (1),
-$$
-\sum_{\abs{z_n}<R}\log\frac1{\abs{z_n}}\le \log\frac M{\abs{f(0)}}.
-$$
-Letting $R\uparrow1$ and using monotone convergence for the nonnegative terms yields
-$$
-\sum_n\log\frac1{\abs{z_n}}<\infty.
-$$
-Finally, for $0<t<1$, $-\log t\ge1-t$. Therefore
-$$
-\sum_n(1-\abs{z_n})\le \sum_n\log\frac1{\abs{z_n}}<\infty.
-$$
+::: pf
+
+::: {.pf-step #origin}
+It suffices to prove the assertion when $f(0)\neq0$.
+
+::: pf-proof
+If $f$ has a zero of order $m$ at $0$, write $f(z)=z^mg(z)$ with $g$ holomorphic, bounded and $g(0)\neq0$; the zeros of $f$ are those of $g$ together with $0$ repeated, so the series for $f$ differs from that for $g$ by a finite sum.
+:::
+:::
+
+::: {.pf-step #jensen}
+For $0<r<1$ with no zero on $\abs{z}=r$, $\sum_{\abs{z_n}<r}\log\frac{r}{\abs{z_n}}\le\log\frac{M}{\abs{f(0)}}$.
+
+::: pf-proof
+Jensen's formula gives $\log\abs{f(0)}+\sum_{\abs{z_n}<r}\log\frac{r}{\abs{z_n}}=\frac{1}{2\pi}\int_0^{2\pi}\log\abs{f(re^{i\theta})} d\theta$, and the integrand is at most $\log M$ because $\abs{f}\le M$; rearranging gives the bound.
+:::
+:::
+
+::: {.pf-step #fixed}
+For every fixed $0<R<1$, $\sum_{\abs{z_n}<R}\log\frac{1}{\abs{z_n}}\le\log\frac{M}{\abs{f(0)}}$.
+
+::: pf-proof
+Take $r>R$ in step [](#jensen){.pf-ref}: since $r>\abs{z_n}$ for the zeros counted, $\log\frac{r}{\abs{z_n}}\ge\log\frac{1}{\abs{z_n}}$, so the partial sum for $R$ is bounded by the left side of the Jensen inequality.
+:::
+:::
+
+::: {.pf-step #series}
+$\sum_n\log\frac{1}{\abs{z_n}}<\infty$.
+
+::: pf-proof
+The partial sums over $\abs{z_n}<R$ increase with $R$ and are bounded by the constant of step [](#fixed){.pf-ref} for every $R<1$; by monotone convergence the full series converges.
+:::
+:::
+
+::: {.pf-step #conclusion}
+$\sum_n(1-\abs{z_n})<\infty$.
+
+::: pf-proof
+For $0<t<1$ one has $-\log t=\int_t^1\frac{ds}{s}\ge\int_t^1ds=1-t$, so each term $1-\abs{z_n}$ is at most $\log\frac{1}{\abs{z_n}}$, and the comparison with step [](#series){.pf-ref} gives convergence.
+:::
+:::
+
+:::
 :::
