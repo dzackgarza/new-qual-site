@@ -154,6 +154,30 @@ audit:
     needs only that the order of a tuple is the largest coordinate order), and the statement that
     $B/B_p$ need not be torsionfree stays, since it is why rule (3) does not apply. The first
     direction and the torsion-group claim are unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The card's certificate, and where it is. Everything this page proves is proved for all abelian
+    groups $A$ and $B$ at
+    <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A6.lean>:
+    `isAddTorsion_torOne` is "$\operatorname{Tor}_1^\ZZ(A,B)$ is a torsion group for all $A$ and
+    $B$", and `torOne_exists_addOrderOf_iff` is, for every positive $n$,
+    "$\operatorname{Tor}_1^\ZZ(A,B)$ has an element of order $n$ if and only if both $A$ and $B$
+    do" --- the direction the printed exercise asks for and the converse this card proves in
+    addition. The route is the presentation bridge `torOneTorKernelAddEquiv`
+    ($\operatorname{Tor}_1(A,B)\cong\ker((\ker\pi)\otimes B\to F\otimes B)$ for any surjection from
+    a free $F$), the stage descent `exists_fg_stage`, Smith normal form
+    (`exists_nsmul_eq_zero_of_stage`) and the purity of the syzygy's cyclic subgroup
+    (`exists_torOne_of_addOrderOf`); it uses no filtered colimit, so the Exercise-4 step this page's
+    first argument takes is not what the certificate rests on. Checked in this pass by reading that
+    file at that commit rather than the row's description of it: every declaration named on the row
+    and in this note is defined there, the file contains no `sorry` and no `axiom`, and the printed
+    statement on the card is the direction that `iff` yields. Not checked in this pass: the file was
+    not re-elaborated here, and the elaboration recorded for it --- Lean 4.36.0 at Mathlib
+    `6d97e8ad`, axioms `propext`, `Classical.choice`, `Quot.sound`, no `sorryAx` --- is the one
+    section 1's row records. The page's own direct-limit argument stays the displayed proof; the
+    certificate settles the corrected claims without following it.
 ---
 
 ::: {.problem}
