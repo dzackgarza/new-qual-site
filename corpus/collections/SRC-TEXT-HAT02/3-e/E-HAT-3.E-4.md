@@ -40,6 +40,11 @@ audit:
     two projections have zero intersection in positive degrees. Cited from Hatcher and not
     re-derived here: the mod-2 ring of $SO(5)$ and the integral facts
     $2x=0,\ \delta(\beta_1)=x,\ \delta(\beta_3)=x^2\ne0$ of Example 3E.7, which the card names.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the SO(5) argument, which is what Queue D asks for on this card. The setup, the two rings with the Kunneth isomorphism, the distribution of the two indecomposables between the factors, the Bockstein computation and the trivial-intersection contradiction are separate steps. Three places where the prose was too quick are now argued: that the factor carrying the degree-1 indecomposable actually contains beta_1 (it has a nonzero H^1 inside the one-dimensional H^1 of SO(5)); that the degree-3 generator of the other factor cannot be beta_1^3 or beta_1^3+beta_3 (its square, times beta_1^7 in the other factor, would be a nonzero tensor mapping to the vanishing H^13); and that x and x^2 lie in the images claimed, which is naturality of the Bockstein applied to p_X and p_Y. The integral ring and both Bocksteins are Hatcher's Example 3E.7, printed p. 301, and were re-read there; the exercise is printed p. 310. No retained set covers it. No statement repair.
 ---
 
 ::: {.problem}
@@ -47,82 +52,62 @@ Using the cup product structure in $H^*(SO(5); \ZZ)$, show that $SO(5)$ is not h
 :::
 
 ::: {.solution}
-Assume for contradiction that
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §3.E nowhere (Li stops inside §3.3, Sam inside §3.C). The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.E Exercise 4, printed p. 310. Its two inputs are printed: the mod $2$ ring of $SO(5)$ and the Bocksteins between it and the integral ring, both in Example 3E.7, printed p. 301, where Hatcher writes
 $$
-SO(5)\simeq X\times Y
+H^*(SO(5);\ZZ)\approx F[x,y,z]/(2x,\,x^4,\,y^4,\,z^2,\,xz,\,x^3-y^2),\qquad \abs{x}=2,\ \abs{y}=3,\ \abs{z}=7,
 $$
-with both $X$ and $Y$ having nontrivial reduced cohomology. Replacing the factors by the images of the two standard retractions, each factor is homotopy dominated by $SO(5)$. Hence its integral cohomology is a direct summand of the corresponding cohomology of $SO(5)$; in particular all torsion in the factors is $2$-torsion.
+and records $\beta(\beta_1)=\beta_2$, $\beta(\beta_3)=\beta_4$ — in the notation below, that the integral Bockstein carries $\beta_1$ to $x$ and $\beta_3$ to $x^2$.
 
-Over $\FF_2$, Hatcher's computation gives
-$$
-H^*(SO(5);\FF_2)
-\cong
-\FF_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2),
-\qquad
-\gradeddegree{\beta_1}=1,\ \gradeddegree{\beta_3}=3.
-$$
-By the field-coefficient Künneth theorem,
-$$
-H^*(SO(5);\FF_2)
-\cong H^*(X;\FF_2)\otimes H^*(Y;\FF_2)
-$$
-as graded algebras.
+::: pf
 
-Let $Q(A)=A^+/(A^+)^2$ denote the indecomposables of a connected graded algebra. Here
-$$
-QH^*(SO(5);\FF_2)
-$$
-has dimension $2$, with generators in degrees $1$ and $3$. For a tensor product,
-$$
-Q(B\otimes C)\cong QB\oplus QC.
-$$
-Since both factors have nontrivial reduced cohomology, both summands on the right are nonzero. Thus, after interchanging $X,Y$, one factor has one indecomposable in degree $1$, and the other has one in degree $3$.
+::: {.pf-step #setup}
+Suppose $SO(5)\simeq X\times Y$ with $X$ and $Y$ CW complexes whose reduced cohomology is nonzero. Then each factor is a retract of $SO(5)$, $H^*(X;\ZZ)$ and $H^*(Y;\ZZ)$ are direct summands of $H^*(SO(5);\ZZ)$, and all torsion in them is $2$-torsion.
 
-The degree-1 indecomposable is necessarily $\beta_1$. Hence the first factor contains
-$$
-1,\beta_1,\dots,\beta_1^7,
-$$
-so its top nonzero degree is at least $7$. The degree-3 generator of the other factor must therefore square to zero: otherwise that factor would have a nonzero class in degree $6$, and multiplying it by $\beta_1^7$ would give a nonzero class in degree $13$, impossible since $SO(5)$ has dimension $10$.
+::: pf-proof
+The inclusion $X\to X\times Y$ followed by the homotopy equivalence to $SO(5)$ and the projection back to $X$ is homotopic to the identity of $X$, so on cohomology the composite $H^*(X)\to H^*(SO(5))\to H^*(X)$ is the identity and $H^*(X)$ is a direct summand of $H^*(SO(5))$; the same holds for $Y$. In the displayed ring of Example 3E.7 the only relation involving a coefficient is $2x=0$ and $y,z$ are free generators, so $H^*(SO(5);\ZZ)$ has no odd torsion, and neither does a direct summand of it.
+:::
 
-The degree-3 elements of the displayed ring are
-$$
-0,\quad \beta_1^3,\quad \beta_3,\quad \beta_1^3+\beta_3.
-$$
-Their squares are respectively
-$$
-0,\quad \beta_1^6,\quad 0,\quad \beta_1^6.
-$$
-Thus the degree-3 factor generator is necessarily $\beta_3$. Consequently, under the product decomposition, $\beta_1$ comes from one factor and $\beta_3$ from the other.
+:::
 
-Now use the integral Bockstein
-$$
-\delta:H^*(-;\FF_2)\longrightarrow H^{*+1}(-;\ZZ)
-$$
-for
-$$
-0\to\ZZ\xrightarrow{2}\ZZ\to\FF_2\to0.
-$$
-Hatcher's calculation of the integral ring gives a class
-$$
-x\in H^2(SO(5);\ZZ),\qquad 2x=0,
-$$
-with
-$$
-\delta(\beta_1)=x,
-\qquad
-\delta(\beta_3)=x^2\ne0.
-$$
-The first equality and naturality show that $x$ lies in the integral cohomology subring coming from the $\beta_1$-factor, hence so does $x^2$. The second equality and naturality show that the same nonzero class $x^2$ lies in the positive-degree subring coming from the $\beta_3$-factor.
+::: {.pf-step #rings}
+$H^*(SO(5);\FF_2)\cong\FF_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2)$ with $\abs{\beta_1}=1$, $\abs{\beta_3}=3$, and for $A=H^*(X;\FF_2)$, $B=H^*(Y;\FF_2)$ the Künneth map $A\otimes_{\FF_2}B\to H^*(SO(5);\FF_2)$ is an isomorphism of graded algebras.
 
-But for a product, the images of the two projection maps on positive-degree cohomology have zero intersection. Indeed, if
-$$
-p_X^*a=p_Y^*b
-$$
-with $\gradeddegree{a}=\gradeddegree{b}>0$, restricting to $X\times\{y_0\}$ gives $a=0$, while restricting to $\{x_0\}\times Y$ gives $b=0$. Hence their common class must be zero.
+::: pf-proof
+The ring is Hatcher's, Example 3E.7 printed p. 301, and its structure as a graded vector space is $1,\beta_1,\dots,\beta_1^7$ together with their products with $\beta_3$, of total dimension $16$ and with top class $\beta_1^7\beta_3$ in degree $10$, the dimension of $SO(5)$. The Künneth theorem over the field $\FF_2$ applies to the homotopy equivalence $SO(5)\simeq X\times Y$ — each factor has finite-dimensional cohomology in each degree because it is a retract of $SO(5)$ — and gives the stated algebra isomorphism; in particular $A\otimes B$ is identified with $H^*(SO(5);\FF_2)$, so an element of $A$ and an element of $B$ whose product vanishes are detected by that product.
+:::
 
-This contradicts $x^2\ne0$. Therefore no such nontrivial product decomposition exists:
+:::
+
+::: {.pf-step #factor-split}
+After interchanging $X$ and $Y$: $\beta_1\in A$, and $B$ contains a nonzero class $\gamma$ of degree $3$; moreover $\gamma=\beta_3$.
+
+::: pf-proof
+$H^*(SO(5);\FF_2)$ is generated by two indecomposables, $\beta_1$ and $\beta_3$ in degrees $1$ and $3$, so the space $Q$ of indecomposables is two-dimensional and $Q=QA\oplus QB$. Both $A$ and $B$ have a nonzero indecomposable, since a nonzero reduced cohomology algebra has a nonzero indecomposable; so each of $QA$, $QB$ is nonzero, and the two basis classes are distributed one to each. Now $H^1=\langle\beta_1\rangle=A^1\oplus B^1$ by the tensor decomposition, and $A^1$ and $B^1$ are subspaces of a one-dimensional space; the factor whose $QA$ contains the degree-$1$ class has $A^1\ne0$, hence $A^1=\langle\beta_1\rangle$, so $\beta_1\in A$ after interchanging the names, and then $B^1=0$. The degree-$3$ indecomposable therefore lies in $QB$, so $B^3\ne0$: choose nonzero $\gamma\in B^3\subseteq H^3=\langle\beta_1^3,\beta_3\rangle$. The degree-$3$ classes of the ring are $0,\beta_1^3,\beta_3,\beta_1^3+\beta_3$, whose squares are $0,\beta_1^6,0,\beta_1^6$ respectively, since $\beta_3^2=0$ and the coefficient field is $\FF_2$. If $\gamma^2=\beta_1^6\ne0$, then $\beta_1^7\otimes\gamma^2\in A\otimes B$ is the tensor of two nonzero vectors, hence nonzero, while its image $\beta_1^{13}$ is zero because $H^{13}(SO(5);\FF_2)=0$; that contradicts the Künneth isomorphism. So $\gamma^2=0$ and $\gamma=\beta_3$, whence $\beta_3\in B$.
+:::
+
+:::
+
+::: {.pf-step #bockstein}
+The integral Bockstein of $0\to\ZZ\to\ZZ\to\FF_2\to0$ gives classes $x=\delta(\beta_1)\in H^2(SO(5);\ZZ)$ and $x^2=\delta(\beta_3)\in H^4(SO(5);\ZZ)$ with $2x=0$ and $x^2\ne0$, and $x$ lies in the image of $H^*(X;\ZZ)$ while $x^2$ lies in the images of both $H^*(X;\ZZ)$ and $H^*(Y;\ZZ)$.
+
+::: pf-proof
+$\delta(\beta_1)=x$ and $\delta(\beta_3)=x^2$ are Hatcher's Bockstein computation in Example 3E.7, printed p. 301; $2x=0$ holds because a Bockstein lands in the image of the reduction $H^2(-;\ZZ)\to H^2(-;\FF_2)$ composed with multiplication by $2$ in the coefficient sequence, and $x^2\ne0$ because $x^3=x\cdot x^2$ equals $y^2$ in the displayed ring, which is a nonzero generator of the free part in degree $6$. For naturality, the Bockstein is natural in the space, so for the projection $p_X:X\times Y\to X$ one has $\delta(p_X^*a)=p_X^*\delta(a)$; since $\beta_1\in A$ is $p_X^*$ of a class of $X$, $x=\delta(\beta_1)$ is $p_X^*$ of an integral class of $X$. Likewise $x^2=\delta(\beta_3)$ with $\beta_3\in B=p_Y^*H^*(Y;\FF_2)$ lies in the image of $H^*(Y;\ZZ)$. And $x^2$ is the square of an element of the subring $p_X^*H^*(X;\ZZ)$, so it lies in that subring too.
+:::
+
+:::
+
+::: {.pf-step #contradiction}
+For a product the positive-degree images of $H^*(X)$ and $H^*(Y)$ in $H^*(X\times Y)$ intersect trivially, so $x^2=0$; this contradicts step [](#bockstein){.pf-ref}, and no such decomposition exists.
+
+::: pf-proof
+Suppose $p_X^*a=p_Y^*b=c$ with $\deg a=\deg b>0$. Restricting to $X\times\{y_0\}$, the map $p_X$ is the identity and $p_Y$ is constant, so $c$ restricts to $a$ from the left and to $0$ from the right, since a constant map induces zero on positive-degree cohomology; hence $a=0$ and $c=0$. Applying this to $x^2$, which by step [](#bockstein){.pf-ref} lies in both images and is nonzero, is a contradiction. Therefore
 $$
 \boxed{SO(5)\not\simeq X\times Y}
 $$
-whenever both factors have nontrivial cohomology.
+whenever both factors have nontrivial cohomology, which is the exercise.
+:::
+
+:::
+
+:::
 :::
