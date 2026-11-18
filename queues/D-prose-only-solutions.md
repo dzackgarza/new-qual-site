@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1552 of the 12430 problem cards that have a solution
+1539 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1552
+- Problems: 1539
 - Problem cards with a solution: 12430
 
-## Problems (1552)
+## Problems (1539)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -513,9 +513,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-MD9QR — "The ordered square is locally connected but not locally path connected"
 - [ ] E-ML7VU — "The topologist's sine curve has dimension one"
 - [ ] E-MPUGI — "Products with a locally compact Hausdorff factor preserve quotient maps"
-- [ ] E-MQTBP — "Locally metrizable compact Hausdorff spaces are metrizable"
-- [ ] E-MTDPP — "The expansion lemma for locally finite families"
-- [ ] E-MUH7R — "Compact Hausdorff spaces are metrizable exactly when second countable"
 - [ ] E-MUN-1-1 — "Distributive laws and DeMorgan's laws for sets"
 - [ ] E-MUN-1-10 — "Cartesian products as subsets of $\RR \times \RR$"
 - [ ] E-MUN-1-2 — "Subset membership under union and intersection"
@@ -643,7 +640,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-QR3SP — "The countable complement topology and an infinite complement collection"
 - [ ] E-QVJ8J — "Countability of the fundamental group under countable basis and regularity"
 - [ ] E-QWNYJ — "Countable products of separable spaces are separable"
-- [ ] E-QXEP8 — "Lens spaces"
 - [ ] E-R1V61 — "Local compactness does not imply paracompactness"
 - [ ] E-RIGIX — "Complete normality of standard spaces and constructions"
 - [ ] E-RZTZT — "Components of R^omega in product, uniform, and box topologies"
@@ -836,7 +832,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA07 — "A power series with strictly decreasing coefficients bounded below has no zeros in the disk"
 - [ ] P-8CA11 — "A smooth bijection but no conformal map from the punctured disk onto an annulus"
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
-- [ ] P-8CA14 — "$(z-1)/(z+1)$ maps the first quadrant onto the upper half-disk"
 - [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
 - [ ] P-8CA17 — "Existence of a conformal map of $\abs{z-1}<1/2$ onto $\abs{z+1}>1$"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
@@ -903,7 +898,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
 - [ ] P-APAS13M — "Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\CC[x,y]^G$"
-- [ ] P-APAS15A — "Character table of the dihedral group $D_5$"
 - [ ] P-APAS15B — "Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$"
 - [ ] P-APAS15C — "Character table of $S_4$, Kronecker product of Specht modules, and its endomorphism algebra"
 - [ ] P-APAS15D — "Finite-group complex matrix representations are diagonalizable; infinite counterquestion"
@@ -937,11 +931,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS24J — "Hilbert series of invariants under diagonal $\pm 1$ matrices"
 - [ ] P-APAS26D — "An algebra is commutative iff every element is normal"
 - [ ] P-APAS26G — "Eigenvalues and eigenspaces of the $3$-cube adjacency operator"
-- [ ] P-APAS26I — "Irreducible decomposition of the permutation representation of $S_n$; character table of $S_3$"
 - [ ] P-APAS26J — "Centralizer of $\mathcal{C}(H)$ in $\mathcal{C}(G)$ via branching multiplicities"
 - [ ] P-APASP07A — "Irreducible representations of Z/3 × Z/3 and an extension to a group of order 27"
 - [ ] P-APASP07D — "Trace and computation of the averaged conjugate of a matrix over a finite group"
-- [ ] P-APASP07E — "Minimal idempotent in the group algebra and the left-regular representation character"
 - [ ] P-APASP07G — "Decomposition of an induced symmetric group module into irreducibles"
 - [ ] P-APASP07H — "Young diagrams with nonzero character on an (n-1)-cycle in S_n"
 - [ ] P-APASP07J — "Invariants of Z/3 acting on a two-dimensional vector space and Hilbert series"
@@ -1294,7 +1286,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CH8-67 — "$U(165)$ as a direct product of $U$-groups"
 - [ ] P-CH8-68 — "Elements of orders $4$ and $2$ in $\operatorname{Aut}(\ZZ_{20})$"
 - [ ] P-CH8-7 — "Direct products are commutative up to isomorphism"
-- [ ] P-CJUIR — "The line integral $\int_{\partial R} x\,dy+y\,dx$ on the upper region between $x^2+y^2=4$ and $(x-1)^2+y^2=1$"
 - [ ] P-CPB5V — "Unique halves and centrality in a simple rng without zero-divisors or $2$-torsion"
 - [ ] P-CTQ6G — "Isolated points iff the complement is not dense; countable complete metric spaces have dense isolated points"
 - [ ] P-D4X7R — "Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix"
@@ -1306,13 +1297,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-EP64S — "Galois group and intermediate fields of the splitting field of $x^4-7$"
 - [ ] P-EQGG7 — "$z\tan z-a$ has only real roots for $a>0$"
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
-- [ ] P-F03C1 — "Continuity of $1/x$ at $x=1$"
 - [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
 - [ ] P-F04C7 — "$\varepsilon$-$\delta$ continuity, and the sum of functions continuous at $3$"
 - [ ] P-F04I9 — "A composite $\RR^2\to\RR\to\RR^2$ of differentiable maps has no differentiable inverse"
 - [ ] P-F04N4 — "No $n$ makes both $(21n-3)/4$ and $(15n+2)/4$ integers"
 - [ ] P-F05BN — "Binomial theorem and $(x+y)^p \equiv x^p+y^p \pmod{p}$"
-- [ ] P-F06DN — "Inductive formula for the derivatives of $xe^{2x}$"
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
 - [ ] P-F07EX — "Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$"
 - [ ] P-F10IJ — "Injectivity of $g\circ f$ versus injectivity of $f$ and $g$"
@@ -1366,7 +1355,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
 - [ ] P-JHUMAY10ANI — "Differentiation under the integral sign with a dominated partial derivative"
 - [ ] P-JHUMAY12RA7 — "Integral transform is absolutely continuous and vanishes at infinity"
-- [ ] P-JHUSP01RAA — "Mollifier convolutions converge in $L^p$ but not in $L^\infty$"
 - [ ] P-JHUSP01RAB — "Absolute continuity of the Lebesgue integral"
 - [ ] P-JHUSP01RAE — "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
 - [ ] P-JHUSP05ANB — "The integral operator $g(x)=\int_x^1 f(t)/t\,dt$ on $L^1([0,1])$"
@@ -1468,7 +1456,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-RASP15B — "$L^p$ characterization via the distribution function"
 - [ ] P-RASP21A — "Sumset of measurable set with null set"
 - [ ] P-RASP21C — "Function with prescribed moments"
-- [ ] P-RASP21E — "Intersection of two $L^2$ balls"
 - [ ] P-RASP21G — "Absolutely continuous measure via continuous density"
 - [ ] P-RASP22B — "Bounded sequence with vanishing local integrals against $L^1$ functions"
 - [ ] P-RASP22F — "A bounded density that integrates to the measure of every open set is 1 a.e."
