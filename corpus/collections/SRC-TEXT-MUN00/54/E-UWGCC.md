@@ -33,6 +33,11 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for Munkres, Topology (2000), Section 54 Exercise 7, printed p. 348, generalising the proof of Theorem 54.5 (printed pp. 342-345); the correspondence and the lifting of a product of loops are dbFin's, "Section 54: Problem 7 Solution". Every clause of the prose is now a step with its justification, and three facts the prose used without argument are proved: that a product of two covering maps is a covering map, that the fibre over the basepoint is Z^2 (so the endpoint of a lift really lies in the target group), and that the lift of a concatenation is the first lift followed by a translate of the second, which is what makes Phi a homomorphism. Also made explicit: a lift of the constant path is constant, which is what forces the lifted homotopy to keep the basepoint fixed and makes Phi well defined. No statement repair.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Same repair as on E-PBG3W, applied on the same reading: Munkres's definition of a covering map (printed p. 336) requires surjectivity, and the step proving that p: R^2 -> T is a covering map gave only the local product structure. The step now records that p is surjective because q is onto and p(s,t) = (q(s),q(t)).
 ---
 
 ::: {.exercise}
@@ -51,7 +56,7 @@ Write $T=S^1\times S^1$ and $p(s,t)=\bigl(e^{2\pi is},e^{2\pi it}\bigr)$, with b
 $p:\RR^2\to T$ is a covering map and $\RR^2$ is simply connected.
 
 ::: pf-proof
-$p$ is the product of the covering map $q:\RR\to S^1$, $q(s)=e^{2\pi is}$, with itself, and a product of two covering maps is a covering map: if $q^{-1}(U)=\bigsqcup_i U_i$ and $q^{-1}(V)=\bigsqcup_j V_j$ with $q$ restricting to a homeomorphism on each $U_i$ and on each $V_j$, then $p^{-1}(U\times V)=\bigsqcup_{i,j}U_i\times V_j$ and $p$ restricts to a homeomorphism on each $U_i\times V_j$. The space $\RR^2$ is convex, hence contractible, hence simply connected: for a loop $f$ the straight-line homotopy $(x,s)\mapsto(1-s)f(x)$ joins $f$ to a constant map.
+$p$ is the product of the covering map $q:\RR\to S^1$, $q(s)=e^{2\pi is}$, with itself, and a product of two covering maps is a covering map: if $q^{-1}(U)=\bigsqcup_i U_i$ and $q^{-1}(V)=\bigsqcup_j V_j$ with $q$ restricting to a homeomorphism on each $U_i$ and on each $V_j$, then $p^{-1}(U\times V)=\bigsqcup_{i,j}U_i\times V_j$ and $p$ restricts to a homeomorphism on each $U_i\times V_j$; and $p$ is surjective, because $q$ is onto and $p(s,t)=\bigl(q(s),q(t)\bigr)$ takes every pair of values. The space $\RR^2$ is convex, hence contractible, hence simply connected: for a loop $f$ the straight-line homotopy $(x,s)\mapsto(1-s)f(x)$ joins $f$ to a constant map.
 :::
 
 :::
