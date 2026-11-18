@@ -116,7 +116,7 @@ audit:
   by: claude
   date: 2026-11-18
   note: >-
-    Lamport structure for the comparison of the two actions, which is what Queue D asks for on this card. The lifted loop and the deck transformation, the naturality of the change-of-basepoint maps, the displayed formula and the conclusion are separate steps; the prose's two italicised paragraphs are gone, and the point that the basepoint change is not removable is inside the last step where it belongs. The argument is Proudfoot's (Homework #6, §4.1 Exercise 4, printed p. 1), with its naturality step proved rather than quoted; Hatcher's definition of the action is on printed p. 342 and the exercise on printed p. 348, both checked against the book. No statement repair.
+    Lamport structure for the comparison of the two actions, which is what Queue D asks for on this card. The lifted loop and the deck transformation, the naturality of the change-of-basepoint maps, the displayed formula and the conclusion are separate steps; the prose's two italicised paragraphs are gone, and the point that the basepoint change is not removable is inside the last step where it belongs. The argument is Proudfoot's (Homework #6, §4.1 Exercise 4, printed p. 1), with its naturality step proved rather than quoted; Hatcher's definition of the action is on printed p. 342 and the exercise on printed p. 358, both checked against the book. No statement repair.
 ---
 
 ::: {.problem}
