@@ -41,6 +41,19 @@ audit:
     label unused, both pieces of the cut having at least three sides, the pasted label occurring nowhere
     else --- instead of being described as a generic cut and paste. The net words are unchanged and match
     the proofs of Lemmas 77.1 and 77.3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A review reported that the relabelling recorded for Figures 77.4 and 77.5 does not produce the
+    schemes displayed. Confirmed for 77.4 and repaired: relabelling c by b alone gives
+    w_0 b [y_1y_4y_3] a^-1 b^-1 a [y_2y_5], not w_0 a [y_1y_4y_3] b a^-1 b^-1 [y_2y_5]; the card now
+    records the three relabellings that do (a by b, c by a, then reversing every b exponent). For
+    77.5 the review proposed a cyclic permutation after c by b; that does not work, and the card
+    now says so with the computation: a rotation of the word moves the prefix w_0 and the block Y as
+    well, so it cannot turn w_0 b a^-1 b^-1 a [Y] into w_0 a b a^-1 b^-1 [Y]. What does work, and
+    is now recorded, is the chain a by d, b by a, d by b, then reversing every b exponent, each step
+    an instance of operation (iii) of Section 76 (printed pp. 460-461). The net words are unchanged.
 ---
 
 ::: {.exercise}
@@ -121,7 +134,7 @@ w^{\prime}\sim w_{0}c[y_{1}y_{4}y_{3}]a^{-1}c^{-1}a[y_{2}y_{5}],
 $$
 and then the scheme $w^{\prime\prime}$ by relabelling.
 
-The sequence is operation (i) along the arc $c$, operation (ii) pasting the $b$-pair --- the label $b$ occurs nowhere else once the pasting is made --- and operation (iii) relabelling the new pair $c$ by $b$, with the bracketed subword $y_{1}y_{4}y_{3}$ collecting the bottom labels in the order the drawing gives them.
+The sequence is operation (i) along the arc $c$, operation (ii) pasting the $b$-pair --- the label $b$ occurs nowhere else once the pasting is made --- and then operation (iii) three times, which is what the book's "by relabelling" leaves to be spelled out: relabelling $a$ by $b$ turns $w_{0}c[y_{1}y_{4}y_{3}]a^{-1}c^{-1}a[y_{2}y_{5}]$ into $w_{0}c[y_{1}y_{4}y_{3}]b^{-1}c^{-1}b[y_{2}y_{5}]$, relabelling $c$ by $a$ turns that into $w_{0}a[y_{1}y_{4}y_{3}]b^{-1}a^{-1}b[y_{2}y_{5}]$, and reversing the exponent of every occurrence of $b$ gives $w_{0}a[y_{1}y_{4}y_{3}]ba^{-1}b^{-1}[y_{2}y_{5}]$, which is $w^{\prime\prime}$. Relabelling $c$ by $b$ alone would give $w_{0}b[y_{1}y_{4}y_{3}]a^{-1}b^{-1}a[y_{2}y_{5}]$, which is not $w^{\prime\prime}$; the bracketed subword $y_{1}y_{4}y_{3}$ collects the bottom labels in the order the drawing gives them.
 
 :::
 
@@ -139,7 +152,11 @@ w^{\prime\prime}\sim w_{0}ca^{-1}c^{-1}a[y_{1}y_{4}y_{3}y_{2}y_{5}]\sim w_{0}aba
 $$
 the second by relabelling.
 
-So the sequence is operation (i) along the arc $c$, operation (ii) pasting the $a$-pair, and operation (iii) relabelling $c$ by $b$. The resulting word $w_{0}aba^{-1}b^{-1}[y_{1}y_{4}y_{3}y_{2}y_{5}]$ is exactly the scheme $w^{\prime\prime\prime}$ that the third cutting and pasting of Lemma 77.3 produces, so the operations named are the ones the figure indicates.
+So the sequence is operation (i) along the arc $c$, operation (ii) pasting the $a$-pair, and then operation (iii) four times: relabelling $a$ by a fresh label $d$, then $b$ by $a$, then $d$ by $b$, and finally reversing the exponent of every occurrence of $b$. Letter by letter,
+$$
+w_{0}ca^{-1}c^{-1}a[Y]\mapsto w_{0}bd^{-1}b^{-1}d[Y]\mapsto w_{0}ad^{-1}a^{-1}d[Y]\mapsto w_{0}ab^{-1}a^{-1}b[Y]\mapsto w_{0}aba^{-1}b^{-1}[Y],
+$$
+where $Y=y_{1}y_{4}y_{3}y_{2}y_{5}$ and the first step is the relabelling $c$ by $b$ followed by $a$ by $d$. Relabelling $c$ by $b$ alone leaves $w_{0}ba^{-1}b^{-1}a[Y]$, and no cyclic permutation of that word is $w_{0}aba^{-1}b^{-1}[Y]$ --- a rotation moves the block $w_{0}$ and the block $[Y]$ as well --- so a cyclic permutation is not what carries the intermediate to the target; the relabelling chain above is. The resulting word $w_{0}aba^{-1}b^{-1}[y_{1}y_{4}y_{3}y_{2}y_{5}]$ is exactly the scheme $w^{\prime\prime\prime}$ that the third cutting and pasting of Lemma 77.3 produces, so the operations named are the ones the figure indicates.
 
 :::
 
