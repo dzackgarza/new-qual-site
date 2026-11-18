@@ -34,41 +34,51 @@ For any two points $a, b \in G$, there exists an automorphism of $G$ (i.e.\ an a
 :::
 
 ::: {.solution}
-**(a) False.** Consider
-$$
-f(z)=\frac1{1+z}=\sum_{n=0}^\infty(-1)^n z^n,
-\qquad \abs{z}<1.
-$$
-The radius of convergence is $R=1$. At $a=1$ the series
-$\sum(-1)^n$ does not converge, but $1/(1+z)$ is analytic in a neighborhood
-of $1$.
 
-**(b) False.** Connectedness of $G$ is missing. For example, let
-$$
-G=B(0,1)\cup B(3,1),
-$$
-let $f\equiv0$, and define $g=0$ on $B(0,1)$ and $g=1$ on $B(3,1)$.
-Then $f$ and $g$ are analytic on $G$ and have the same germ at $a=0$, but
-$f\ne g$ on $G$.
+No retained solution set covers this exercise: the card's own four answers are checked here, with the counterexamples verified and the two proofs completed.
 
-**(c) True.** If $x_n$ did not converge to $x$, there would exist
-$\varepsilon>0$ and a subsequence $(x_{n_k})$ with
-$$
-d(x_{n_k},x)\ge\varepsilon
-$$
-for every $k$. No subsequence of $(x_{n_k})$ could converge to $x$, contrary
-to the hypothesis.
+::: pf
 
-**(d) True.** The set $G$ is a nonempty simply connected proper domain: it is
-the intersection of two convex disks, hence convex. By the Riemann mapping
-theorem choose a biholomorphism
-$$
-\phi:G\to\DD.
-$$
-The automorphism group of $\DD$ acts transitively. Thus there is a disk
-automorphism $T$ with $T(\phi(a))=\phi(b)$, and
-$$
-\phi^{-1}\circ T\circ\phi
-$$
-is an automorphism of $G$ sending $a$ to $b$.
+::: {.pf-step #a}
+(a) False.
+
+::: pf-proof
+$f(z)=1/(1+z)=\sum(-1)^{n}z^{n}$ has radius of convergence $R=1$ by the ratio test, and at $a=1$, with $\abs a=R$, the series $\sum(-1)^{n}$ diverges since its terms do not tend to $0$. Yet $1/(1+z)$ is holomorphic on $\CC\setminus\{-1\}$, which is a neighbourhood of $1$. So the failure of convergence at $a$ does not prevent analytic continuation across $a$.
+:::
+
+:::
+
+::: {.pf-step #b}
+(b) False, unless $G$ is a region.
+
+::: pf-proof
+Take $G=B(0,1)\cup B(3,1)$, which is open but not connected, and let $f\equiv0$ and $g=0$ on $B(0,1)$, $g=1$ on $B(3,1)$; both are analytic on $G$, since $G$ is a disjoint union of two open discs and each piece is constant. At $a=0$ the germs agree because $f=g$ on $B(0,1)$, but $f\ne g$ on $B(3,1)$. The identity theorem applies only on a connected $G$, which is exactly the missing hypothesis.
+:::
+
+:::
+
+::: {.pf-step #c}
+(c) True.
+
+::: pf-proof
+Suppose $x_{n}\not\to x$. Then there is $\varepsilon>0$ such that for every $N$ there is $n\ge N$ with $d(x_{n},x)\ge\varepsilon$; choosing such $n_{k}$ inductively with $n_{k+1}>n_{k}$ gives a subsequence $(x_{n_{k}})$ with $d(x_{n_{k}},x)\ge\varepsilon$ for all $k$. Every subsequence of $(x_{n_{k}})$ stays at distance $\ge\varepsilon$ from $x$, so none converges to $x$, contradicting the hypothesis.
+:::
+
+:::
+
+::: {.pf-step #d}
+(d) True.
+
+::: pf-proof
+$G$ is the intersection of the open discs $B(2,3)$ and $B(-2,3)$, hence open, convex (an intersection of convex sets) and nonempty ($0\in G$). It is proper (not all of $\CC$): if $z\in G$ then $2\abs z=\abs{(z-2)+(z+2)}<6$, so $G\subseteq B(0,3)$ is bounded, and a bounded domain is a proper subset of $\CC$. Being open, convex and nonempty, $G$ is a simply connected domain, so by the Riemann mapping theorem there is a biholomorphism $\phi:G\to\DD$. By the Riemann mapping theorem there is a biholomorphism $\phi:G\to\DD$; for $a\in G$ compose with the disc automorphism $w\mapsto(w-\phi(a))/(1-\overline{\phi(a)}w)$ so that some biholomorphism sends $a$ to $0$. Then for $a,b\in G$ the map $\phi^{-1}\circ T\circ\phi$, where $T$ is the disc automorphism sending $\phi(a)$ to $\phi(b)$, is an automorphism of $G$ sending $a$ to $b$; $T$ exists since $w\mapsto(w-\phi(a))/(1-\overline{\phi(a)}w)$ followed by a rotation $w\mapsto e^{i\theta}w$ can be arranged to hit any prescribed point of $\DD$.
+:::
+
+:::
+
+::: {.pf-qed}
+(a) is false by step [](#a){.pf-ref}, (b) false by step [](#b){.pf-ref}, (c) true by step [](#c){.pf-ref}, (d) true by step [](#d){.pf-ref}.
+:::
+
+:::
+
 :::
