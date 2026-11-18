@@ -23,77 +23,53 @@ Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-module
 :::
 
 ::: {.solution}
-Let $W=\CC^4$ be the permutation representation of $S_4$. Then
-$$
-V=\CC[x_1,x_2,x_3,x_4]_3\cong \operatorname{Sym}^3(W).
-$$
-For a finite-dimensional representation with character $\chi$, the symmetric-cube character is
-$$
-\chi_{\operatorname{Sym}^3}(g)
-=\frac{\chi(g)^3+3\chi(g)\chi(g^2)+2\chi(g^3)}6.
-$$
-For the permutation representation $W$, $\chi(g)$ is the number of fixed points of $g$. On representatives of the five conjugacy classes
-$$
-1,\quad (12),\quad (12)(34),\quad (123),\quad (1234),
-$$
-we have
-$$
-\chi_W=(4,2,0,1,0).
-$$
-Using the formula above gives
-$$
-\chi_V=(20,6,0,2,0).
-$$
 
-The irreducible character table of $S_4$, in the same class order, is
-$$
-\begin{array}{c|ccccc}
- & 1&(12)&(12)(34)&(123)&(1234)\\ \hline
-\chi^{(4)}&1&1&1&1&1\\
-\chi^{(3,1)}&3&1&-1&0&-1\\
-\chi^{(2,2)}&2&0&2&-1&0\\
-\chi^{(2,1,1)}&3&-1&-1&0&1\\
-\chi^{(1^4)}&1&-1&1&1&-1
-\end{array}
-$$
-and the corresponding class sizes are
-$$
-1,\ 6,\ 3,\ 8,\ 6.
-$$
-Taking inner products with $\chi_V$ gives
-$$
-\langle \chi_V,\chi^{(4)}\rangle=3,\qquad
-\langle \chi_V,\chi^{(3,1)}\rangle=4,
-$$
-$$
-\langle \chi_V,\chi^{(2,2)}\rangle=1,\qquad
-\langle \chi_V,\chi^{(2,1,1)}\rangle=1,
-\qquad
-\langle \chi_V,\chi^{(1^4)}\rangle=0.
-$$
-Therefore
-$$
-V\cong
-3S^{(4)}\oplus4S^{(3,1)}\oplus S^{(2,2)}\oplus S^{(2,1,1)}.
-$$
-As a dimension check,
-$$
-3\cdot1+4\cdot3+1\cdot2+1\cdot3=20=\dim V.
-$$
+No retained solution set covers this exercise: the card's own character computation is completed here, with the symmetric-cube character, its pairings and the endomorphism algebra as separate steps.
 
-If
-$$
-V\cong\bigoplus_\lambda m_\lambda S^\lambda,
-$$
-then Schur's lemma gives
-$$
-\operatorname{End}_{S_4}(V)
-\cong \prod_\lambda M_{m_\lambda}(\CC).
-$$
-Hence
-$$
-\operatorname{End}_{S_4}(V)
-\cong
-M_3(\CC)\times M_4(\CC)\times\CC\times\CC.
-$$
+Let $W=\CC^{4}$ be the permutation representation of $S_{4}$, so $V=\CC[x_{1},\dots,x_{4}]_{3}\cong\operatorname{Sym}^{3}W$.
+
+::: pf
+
+::: {.pf-step #character}
+$\chi_{\operatorname{Sym}^{3}}(g)=\frac{1}{6}\big(\chi(g)^{3}+3\chi(g)\chi(g^{2})+2\chi(g^{3})\big)$, and on the classes $1,(12),(12)(34),(123),(1234)$ of $S_{4}$ the values are $20,6,0,2,0$.
+
+::: pf-proof
+The cycle-index formula for $\operatorname{Sym}^{3}$ is $\frac16\big(p_{1}^{3}+3p_{1}p_{2}+2p_{3}\big)$ evaluated on the eigenvalues, which gives the displayed expression in terms of the character of $W$. The permutation character is $\chi(g)=\#\mathrm{Fix}(g)$, equal to $4,2,0,1,0$ on the five classes; with $g^{2}$ and $g^{3}$ giving $(4,4,4,1,0)$ and $(4,2,0,4,0)$ respectively, the formula yields $20,6,0,2,0$. Also $\chi(1)=20=\dim\operatorname{Sym}^{3}\CC^{4}=\binom{6}{3}$.
+:::
+
+:::
+
+::: {.pf-step #multiplicities}
+With the irreducible characters of $S_{4}$ — trivial $(1,1,1,1,1)$, sign $(1,-1,1,1,-1)$, standard $\chi_{3}=(3,1,-1,0,-1)$, $\chi_{3'}=(3,-1,-1,0,1)$, and $\chi_{2}=(2,0,2,-1,0)$ — the multiplicities are $3,0,4,1,1$.
+
+::: pf-proof
+Each multiplicity is $\langle\chi_{\operatorname{Sym}^{3}},\chi_{\alpha}\rangle=\frac{1}{24}\sum_{\text{classes}}\abs{C}\chi_{\operatorname{Sym}^{3}}\chi_{\alpha}$ with class sizes $1,6,3,8,6$: for the trivial character this is $\frac1{24}(20+36+0+16+0)=3$; for the sign character $\frac1{24}(20-36+0+16+0)=0$; for $\chi_{3}$, $\frac1{24}(60+36+0+0+0)=4$; for $\chi_{3'}$, $\frac1{24}(60-36+0+0+0)=1$; for $\chi_{2}$, $\frac1{24}(40+0+0-16+0)=1$. The dimensions add up: $3\cdot1+4\cdot3+1\cdot3+1\cdot2=20=\dim V$.
+:::
+
+:::
+
+::: {.pf-step #decomposition}
+$V\cong 3\cdot\mathbf{1}\oplus 4\cdot\chi_{3}\oplus\chi_{3'}\oplus\chi_{2}$ as $S_{4}$-modules.
+
+::: pf-proof
+Complete reducibility of finite-dimensional complex representations of a finite group and the multiplicities of step [](#multiplicities){.pf-ref} determine the isotypic decomposition; the dimension check in that step confirms no irreducible was missed.
+:::
+
+:::
+
+::: {.pf-step #endomorphism}
+$\operatorname{End}_{S_{4}}(V)\cong M_{3}(\CC)\times M_{4}(\CC)\times\CC\times\CC$.
+
+::: pf-proof
+By Schur's lemma and complete reducibility, the endomorphism algebra of a direct sum $\bigoplus_{i}V_{i}^{\oplus m_{i}}$ with $V_{i}$ pairwise non-isomorphic irreducible is $\prod_{i}M_{m_{i}}(\CC)$: an intertwiner preserves each isotypic component and acts there as a $m_{i}\times m_{i}$ matrix of scalars on the irreducible factor. With multiplicities $3,4,1,1$ from step [](#multiplicities){.pf-ref} this gives $M_{3}(\CC)\times M_{4}(\CC)\times M_{1}(\CC)\times M_{1}(\CC)$, of dimension $9+16+1+1=27$.
+:::
+
+:::
+
+::: {.pf-qed}
+$V=3\cdot\mathbf{1}\oplus4\cdot\chi_{3}\oplus\chi_{3'}\oplus\chi_{2}$ by step [](#decomposition){.pf-ref}, and $\operatorname{End}_{S_{4}}(V)\cong M_{3}(\CC)\times M_{4}(\CC)\times\CC^{2}$ by step [](#endomorphism){.pf-ref}.
+:::
+
+:::
+
 :::
