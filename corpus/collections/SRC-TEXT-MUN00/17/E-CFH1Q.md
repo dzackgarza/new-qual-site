@@ -66,7 +66,7 @@ $\varnothing=X-X$ and $X=X-\varnothing$, and both $X$ and $\varnothing$ lie in $
 
 :::
 
-::: pf-step
+::: {.pf-step #unions}
 
 The union of any subcollection of $\mathcal{T}$ lies in $\mathcal{T}$.
 
@@ -82,7 +82,7 @@ and $\bigcap_{B\in\mathcal{B}}B\in\mathcal{C}$ because $\mathcal{C}$ is closed u
 
 :::
 
-::: pf-step
+::: {.pf-step #finite-intersections}
 
 The intersection of any finite subcollection of $\mathcal{T}$ lies in $\mathcal{T}$.
 
@@ -104,7 +104,7 @@ $\mathcal{T}$ is a topology on $X$.
 
 ::: pf-proof
 
-Steps [](#emptyset){.pf-ref}, the union step and the finite-intersection step are the three defining properties of a topology on $X$ (printed p. 94).
+Steps [](#emptyset){.pf-ref}, [](#unions){.pf-ref} and [](#finite-intersections){.pf-ref} establish the three defining properties of a topology on $X$ (printed p. 94).
 
 :::
 
