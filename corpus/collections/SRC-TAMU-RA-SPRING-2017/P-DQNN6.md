@@ -22,43 +22,50 @@ Prove that $\{a_n\}$ in $[0,1]$ is equi-distributed iff $\lim_{n\to\infty} \int 
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own two directions are set out as separate steps, with the uniform approximation by step functions in one direction and the squeeze by continuous functions in the other.
+No retained solution set covers this exercise, and the printed statement is **false as printed**: it counts $\cardinality{\theset{a_{1},\dots,a_{n}}\cap[c,d]}$, the number of *distinct* values, whereas the identity with $\int\chi_{[c,d]}d\mu_{n}$ requires the count *with multiplicity*. The counterexample is step [](#defect){.pf-ref}; the corrected equivalence, with multiplicity, is proved in the remaining steps.
 
-Let $\mu_{n}=\frac1n\sum_{k\le n}\delta_{a_{k}}$ and $m$ be Lebesgue measure on $[0,1]$; note $\int f\,d\mu_{n}=\frac1n\sum_{k\le n}f(a_{k})$ and $\int\chi_{[c,d]}d\mu_{n}=\frac{\#\set{k\le n\mid a_{k}\in[c,d]}}{n}$.
+Let $\mu_{n}=\frac1n\sum_{k\le n}\delta_{a_{k}}$ and $m$ be Lebesgue measure on $[0,1]$; then $\int\chi_{[c,d]}d\mu_{n}=\frac{\#\set{k\le n\mid a_{k}\in[c,d]}}{n}$, a count with multiplicity.
 
 ::: pf
 
-::: {.pf-step #indicators}
-The sequence is equi-distributed exactly when $\int\chi_{[c,d]}d\mu_{n}\to\int\chi_{[c,d]}dm$ for every interval $[c,d]\subseteq[0,1]$.
+::: {.pf-step #defect}
+The printed equivalence fails: with $a_{2k-1}=a_{2k}=\{k\alpha\}$ for irrational $\alpha$, the measures $\mu_{n}$ converge weakly to $m$ while $\frac{\cardinality{\theset{a_{1},\dots,a_{2N}}\cap[0,1]}}{2N}\to\frac12\ne1$.
 
 ::: pf-proof
-Both sides are the same numbers: $\int\chi_{[c,d]}d\mu_{n}=\frac{\#\set{k\le n\mid a_{k}\in[c,d]}}{n}$ and $\int\chi_{[c,d]}dm=d-c$. So the defining limit is literally this statement.
+$\{k\alpha\}$ is equidistributed mod $1$ (Kronecker), so for $n=2N$ one has $\mu_{2N}=\frac{1}{N}\sum_{k\le N}\delta_{\{k\alpha\}}$, whose interval masses tend to $d-c$; hence $\int f\,d\mu_{n}\to\int f\,dm$ for all continuous $f$. But the set of distinct values among $a_{1},\dots,a_{2N}$ is exactly $\theset{\{k\alpha\}\mid k\le N}$, so on $[0,1]$ its cardinality is $N$, and the printed ratio is $\frac{N}{2N}=\frac12$.
 :::
 
 :::
 
 ::: {.pf-step #forward}
-If the convergence holds for every interval indicator, it holds for every $f\in C[0,1]$.
+If the convergence with multiplicity holds for every interval, it holds for every $f\in C[0,1]$.
 
 ::: pf-proof
-Let $f$ be continuous and $\varepsilon>0$. $f$ is uniformly continuous, so there is a partition of $[0,1]$ into finitely many intervals $I_{j}=[x_{j},x_{j+1}]$ on which $f$ varies by at most $\varepsilon$; choosing $c_{j}=f(x_{j})$ gives the step function $s=\sum_{j}c_{j}\chi_{I_{j}}$ with $\sup\abs{f-s}\le\varepsilon$ and $s\le M$ bounded. Then $\abs{\int f\,d\mu_{n}-\int f\,dm}\le\abs{\int s\,d\mu_{n}-\int s\,dm}+2\varepsilon$, and the first term is a finite combination of interval-indicator differences, each tending to $0$ by step [](#indicators){.pf-ref}. Hence the limsup is at most $2\varepsilon$, and $\varepsilon$ was arbitrary.
+Given continuous $f$ and $\varepsilon>0$, uniform continuity gives a step function $s=\sum_{j}c_{j}\chi_{I_{j}}$ with $\sup\abs{f-s}\le\varepsilon$; then $\abs{\int f\,d\mu_{n}-\int f\,dm}\le\abs{\int s\,d\mu_{n}-\int s\,dm}+2\varepsilon$, and the first term is a finite combination of interval differences, each tending to $0$. So the limsup is at most $2\varepsilon$.
 :::
 
 :::
 
 ::: {.pf-step #backward}
-If the convergence holds for every $f\in C[0,1]$, it holds for every interval indicator.
+If the convergence holds for every $f\in C[0,1]$, it holds for every interval, with multiplicity.
 
 ::: pf-proof
-Fix $[c,d]$ and $\varepsilon>0$. There are continuous $f^{-}\le\chi_{[c,d]}\le f^{+}$ with $\int f^{+}dm\le d-c+\varepsilon$, $\int f^{-}dm\ge d-c-\varepsilon$ and $f^{+}\le1$, $f^{-}\ge0$: take $f^{+}$ equal to $1$ on $[c,d]$, $0$ off $(c-\varepsilon,d+\varepsilon)$ and linear in between, and $f^{-}$ equal to $1$ on $[c+\varepsilon,d-\varepsilon]$, $0$ off $(c,d)$ and linear in between (with the obvious modifications when $c=0$ or $d=1$). Then
-$$\int\chi_{[c,d]}d\mu_{n}\le\int f^{+}d\mu_{n}\le\int f^{+}dm+\varepsilon\le d-c+2\varepsilon$$
-for large $n$, and symmetrically $\int\chi_{[c,d]}d\mu_{n}\ge d-c-2\varepsilon$. So the limit exists and equals $d-c$.
+Fix $[c,d]$ and $\varepsilon>0$, and choose continuous $f^{-}\le\chi_{[c,d]}\le f^{+}$ with $\int f^{+}dm\le d-c+\varepsilon$ and $\int f^{-}dm\ge d-c-\varepsilon$ (linear ramps on $[c-\varepsilon,c]$, $[d,d+\varepsilon]$ and on $[c,c+\varepsilon]$, $[d-\varepsilon,d]$, with the obvious changes at the endpoints of $[0,1]$). Then $\int\chi_{[c,d]}d\mu_{n}\le\int f^{+}d\mu_{n}\le d-c+2\varepsilon$ for large $n$, and symmetrically from below, so the limit is $d-c$.
+:::
+
+:::
+
+::: {.pf-step #multiplicity}
+Hence: the interval counts *with multiplicity* converge to the lengths if and only if $\int f\,d\mu_{n}\to\int f\,dm$ for all $f\in C[0,1]$.
+
+::: pf-proof
+The equivalence is steps [](#forward){.pf-ref} and [](#backward){.pf-ref}, together with the identity $\int\chi_{[c,d]}d\mu_{n}=\frac{\#\set{k\le n\mid a_{k}\in[c,d]}}{n}$ noted above.
 :::
 
 :::
 
 ::: {.pf-qed}
-Equi-distributedness is the case of interval indicators (step [](#indicators){.pf-ref}); continuous test functions imply those by step [](#backward){.pf-ref} and are implied by them by step [](#forward){.pf-ref}. Hence the two conditions are equivalent.
+The printed version, with distinct-value cardinalities, is refuted by step [](#defect){.pf-ref}; the true statement, with the multiplicity count, is step [](#multiplicity){.pf-ref}. A card that restated the printed claim without this remark would be asserting something false.
 :::
 
 :::
