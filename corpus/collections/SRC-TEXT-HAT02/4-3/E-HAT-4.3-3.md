@@ -26,6 +26,18 @@ audit:
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the existing argument into numbered steps without changing it, and supplied the
+    hypotheses each cited theorem needs: the universal coefficient theorem in the form giving
+    H^1(X;Z) = Hom(H_1(X),Z), whose Ext term vanishes because H_0(X) is free for a CW complex, so no
+    connectivity of X is needed; Theorem 4.57 applied with K(Z,1) = S^1 and X a CW complex; and the
+    homotopy extension property for the CW pair (X,S^1). Also supplied: that two self-maps of S^1 of
+    equal degree are homotopic, and that the endpoint of the extended homotopy is a retraction.
+    Not re-read this session: the theorem numbers are those the earlier reading recorded, and no
+    printed page was checked.
 
 ---
 
@@ -35,44 +47,76 @@ Show that $S^1$ is a retract of $X$.
 :::
 
 ::: {.solution}
-Let
-$$
-i:S^1\hookrightarrow X
-$$
-be the inclusion. By hypothesis its image in $H_1(X;\ZZ)$ is a direct summand isomorphic to $\ZZ$. Hence there is a homomorphism
-$$
-\lambda:H_1(X;\ZZ)\to\ZZ
-$$
-whose composite with
-$$
-i_*:H_1(S^1)\to H_1(X)
-$$
-is the identity.
 
-The universal coefficient theorem gives
-$$
-H^1(X;\ZZ)\cong\operatorname{Hom}(H_1(X),\ZZ).
-$$
-Let $u\in H^1(X;\ZZ)$ correspond to $\lambda$. By Theorem 4.57 choose
-$$
-r:X\to S^1
-$$
-with $r^*(\iota)=u$, where $\iota$ generates $H^1(S^1)$. Then
-$$
-(ri)^*\iota=i^*u=\iota,
-$$
-so $ri:S^1\to S^1$ has degree $1$ and is homotopic to the identity.
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.3 Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 3, printed p. 391.
 
-Since $S^1\subset X$ is a subcomplex, the homotopy extension property extends a homotopy
-$$
-ri\simeq\operatorname{id}_{S^1}
-$$
-to a homotopy of $r$. At the endpoint we obtain $r':X\to S^1$ satisfying
-$$
-r'i=\operatorname{id}_{S^1}.
-$$
-Hence
-$$
-\boxed{S^1\text{ is a retract of }X.}
-$$
+Let $i\colon S^{1}\hookrightarrow X$ be the inclusion of the given subcomplex and $i_{*}\colon H_{1}(S^{1};\ZZ)\to H_{1}(X;\ZZ)$ the induced map, which by hypothesis is injective with image a direct summand isomorphic to $\ZZ$. Fix a generator $\iota\in H^{1}(S^{1};\ZZ)$.
+
+::: pf
+
+::: {.pf-step #splitting}
+There is a homomorphism $\lambda\colon H_{1}(X;\ZZ)\to\ZZ$ with $\lambda\circ i_{*}=\mathrm{id}$.
+
+::: pf-proof
+By hypothesis $H_{1}(X;\ZZ)=i_{*}\bigl(H_{1}(S^{1})\bigr)\oplus K$ for some subgroup $K$. Let $\lambda$ be the projection onto the first summand followed by the inverse of the isomorphism $i_{*}\colon\ZZ\to i_{*}(H_{1}(S^{1}))$, which exists because $i_{*}$ is injective. Then $\lambda(i_{*}(a))=a$ for every $a$.
+:::
+
+:::
+
+::: {.pf-step #uct}
+There is $u\in H^{1}(X;\ZZ)$ with $\langle u,i_{*}(a)\rangle=\lambda(i_{*}(a))$ for all $a\in H_{1}(S^{1};\ZZ)$.
+
+::: pf-proof
+The universal coefficient theorem gives the short exact sequence $0\to\operatorname{Ext}\bigl(H_{0}(X),\ZZ\bigr)\to H^{1}(X;\ZZ)\to\operatorname{Hom}\bigl(H_{1}(X),\ZZ\bigr)\to0$. For a CW complex $H_{0}(X)$ is free abelian, so the Ext term vanishes and the second map is an isomorphism; take $u$ to be the preimage of $\lambda$ from step [](#splitting){.pf-ref}. Under this isomorphism $\langle u,\alpha\rangle=\lambda(\alpha)$ for every $\alpha\in H_{1}(X;\ZZ)$, in particular for $\alpha=i_{*}(a)$.
+:::
+
+:::
+
+::: {.pf-step #classifying}
+There is a map $r\colon X\to S^{1}$ with $r^{*}(\iota)=u$.
+
+::: pf-proof
+$S^{1}$ is a $K(\ZZ,1)$, and for a CW complex $X$ the assignment $[f]\mapsto f^{*}(\iota)$ is a bijection $[X,S^{1}]\to H^{1}(X;\ZZ)$ — Hatcher's Theorem 4.57 with $n=1$ and $G=\ZZ$. Hence $u$ is represented by some map $r$.
+:::
+
+:::
+
+::: {.pf-step #degree-one}
+$(ri)^{*}(\iota)=\iota$, so $ri\colon S^{1}\to S^{1}$ has degree $1$.
+
+::: pf-proof
+$(ri)^{*}(\iota)=i^{*}\bigl(r^{*}(\iota)\bigr)=i^{*}(u)$ by step [](#classifying){.pf-ref}; and $i^{*}(u)$ pairs with $a\in H_{1}(S^{1};\ZZ)$ as $\langle u,i_{*}(a)\rangle=\lambda(i_{*}(a))=a$ by steps [](#uct){.pf-ref} and [](#splitting){.pf-ref}, so $i^{*}(u)=\iota$. The degree of a self-map $f$ of $S^{1}$ is the integer $d$ with $f^{*}(\iota)=d\,\iota$, so $d=1$.
+:::
+
+:::
+
+::: {.pf-step #homotopic}
+$ri$ is homotopic to $\mathrm{id}_{S^{1}}$.
+
+::: pf-proof
+Self-maps of $S^{1}$ are classified up to homotopy by their degree: by step [](#classifying){.pf-ref} with $X=S^{1}$, homotopy classes correspond bijectively to $H^{1}(S^{1};\ZZ)\cong\ZZ$, and that correspondence is the degree. Since $\mathrm{id}_{S^{1}}$ has degree $1$ and $ri$ has degree $1$ by step [](#degree-one){.pf-ref}, the two are homotopic.
+:::
+
+:::
+
+::: {.pf-step #extend}
+There is a map $r'\colon X\to S^{1}$ with $r'\circ i=\mathrm{id}_{S^{1}}$.
+
+::: pf-proof
+$(X,S^{1})$ is a CW pair, hence has the homotopy extension property: a homotopy of $\restrictionof{r}{S^{1}}=ri$ on $S^{1}\times I$ extends to a homotopy $X\times I\to S^{1}$ starting at $r$. Apply this to a homotopy from $ri$ to $\mathrm{id}_{S^{1}}$, which exists by step [](#homotopic){.pf-ref}, and let $r'$ be its endpoint; then $\restrictionof{r'}{S^{1}}=\mathrm{id}_{S^{1}}$.
+:::
+
+:::
+
+::: {.pf-step}
+$S^{1}$ is a retract of $X$.
+
+::: pf-proof
+Step [](#extend){.pf-ref} produces $r'\colon X\to S^{1}$ with $r' i=\mathrm{id}_{S^{1}}$, which is precisely the definition of a retraction of $i$.
+:::
+
+:::
+
+:::
+
 :::
