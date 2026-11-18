@@ -41,6 +41,17 @@ audit:
     continuity is that of a locally finite closed cover. What the card no longer uses is its earlier
     construction, which reparametrized each q_m to start and end at the origin and pasted at the integers;
     that construction is correct, but the sheet's is the located proof and stops at one composition fewer.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the passage from the space-filling curve of
+    Exercise 44.1 (card E-SADP0) to a surjection of [2m-1,2m] onto [-m,m]^n, the pairwise
+    disjointness and closedness of the intervals with the local finiteness of the family,
+    continuity of the pasted map by Section 18 Exercise 9(c), and both routes to a map on
+    all of R: Tietze on the n coordinate functions (R normal by Theorem 32.2, S closed) and
+    the explicit piecewise-linear filling. The argument is the card's own; no retained set
+    covers this exercise. No repair needed.
 ---
 
 ::: {.exercise}
@@ -49,21 +60,54 @@ Show there is a continuous surjective map $f: \RR \to \RR^n$.
 :::
 
 ::: {.solution}
-By [[E-SADP0]], which is Exercise 44.1 from Theorem 44.1, the cube $I^n$ is a continuous image of $I$; composing with the homeomorphisms $[2m-1,2m]\cong I$ and $I^n\cong[-m,m]^n$ gives, for each $m\ge1$, a continuous surjection
-$$
-f_m:[2m-1,2m]\longrightarrow[-m,m]^n .
-$$
+The argument is the card's own; no retained solution set covers this exercise. Its one input from the book is the space-filling curve of §44: by [[E-SADP0]], which is Exercise 44.1 obtained from Theorem 44.1, the cube $I^{n}$ is a continuous image of $I$.
 
-The intervals $[2m-1,2m]$, $m\ge1$, are pairwise disjoint, and their union
-$$
-S=\bigcup_{m\ge1}[2m-1,2m]
-$$
-is closed in $\RR$. Define $\tilde f:S\to\RR^n$ by $\tilde f(t)=f_m(t)$ for $t\in[2m-1,2m]$. The family is a locally finite closed cover of $S$, so $\tilde f$ is continuous (Exercise 18.9(c)), and it is surjective because
-$$
-\tilde f(S)=\bigcup_{m\ge1}[-m,m]^n=\RR^n .
-$$
+::: pf
 
-The space $\RR$ is metrizable, hence normal (Theorem 32.2), and $S$ is closed in it. Tietze's theorem (Theorem 35.1(b)) applied to the $n$ coordinate functions of $\tilde f$ extends $\tilde f$ to a continuous map $g:\RR\to\RR^n$. Since $g$ agrees with $\tilde f$ on $S$, its image contains $\tilde f(S)=\RR^n$, so $g$ is a continuous surjection.
+::: {.pf-step #block}
+For each $m\ge1$ there is a continuous surjection $f_{m}:[2m-1,2m]\to[-m,m]^{n}$.
 
-The same map can be written without Tietze's theorem, as the sheet cited below remarks: set $g(t)=f_1(1)$ for $t\le1$, let $g$ agree with $f_m$ on $[2m-1,2m]$, and let $g$ map each gap $[2m,2m+1]$ linearly onto the segment from $f_m(2m)$ to $f_{m+1}(2m+1)$. The family of closed sets $(-\infty,1]$, $[2m-1,2m]$, $[2m,2m+1]$ is again locally finite, so Exercise 18.9(c) gives continuity, and surjectivity is unchanged.
+::: pf-proof
+By [[E-SADP0]] there is a continuous surjection $I\to I^{n}$, with $I=[0,1]$. The affine maps $[2m-1,2m]\to I$ and $I^{n}\to[-m,m]^{n}$ are homeomorphisms, so composing gives a continuous surjection of $[2m-1,2m]$ onto $[-m,m]^{n}$.
+:::
+
+:::
+
+::: {.pf-step #cover}
+With $S=\bigcup_{m\ge1}[2m-1,2m]$, the family $\{[2m-1,2m]\mid m\ge1\}$ is a locally finite closed cover of $S$, and $\tilde f:S\to\RR^{n}$ defined by $\tilde f(t)=f_{m}(t)$ for $t\in[2m-1,2m]$ is a well-defined continuous surjection onto $\RR^{n}$.
+
+::: pf-proof
+The intervals $[2m-1,2m]$ are pairwise disjoint, since $2m<2(m+1)-1$, so $\tilde f$ is well defined; each is closed in $\RR$, so each is closed in $S$; and the family is locally finite, because a neighbourhood of a point $t$ contained in an interval of length less than $1$ around $t$ meets at most two of them. Hence $\tilde f$ is continuous by Munkres §18 Exercise 9(c). It is onto: $\tilde f(S)=\bigcup_{m\ge1}[-m,m]^{n}=\RR^{n}$.
+:::
+
+:::
+
+::: {.pf-step #tietze}
+There is a continuous surjection $g:\RR\to\RR^{n}$ extending $\tilde f$.
+
+::: pf-proof
+$\RR$ is metrizable, hence normal (Theorem 32.2), and $S$ is closed in $\RR$, being the complement of the open set $(-\infty,1)\cup\bigcup_{m\ge1}(2m,2m+1)$. Each of the $n$ coordinate functions of $\tilde f$ is continuous and real valued on the closed subspace $S$, so by the Tietze theorem (Theorem 35.1(b)) it extends to a continuous function on $\RR$; assembling the $n$ extensions gives a continuous $g:\RR\to\RR^{n}$ with $g\restrict_{S}=\tilde f$. Then $g(\RR)\supset g(S)=\tilde f(S)=\RR^{n}$, so $g$ is onto.
+:::
+
+:::
+
+::: {.pf-step #explicit}
+The same conclusion holds without Tietze's theorem, by an explicit piecewise-linear filling.
+
+::: pf-proof
+Set $g(t)=f_{1}(1)$ for $t\le1$; set $g(t)=f_{m}(t)$ for $t\in[2m-1,2m]$; and on each gap $[2m,2m+1]$ let $g$ run linearly from $f_{m}(2m)$ to $f_{m+1}(2m+1)$. The closed sets $(-\infty,1]$, $[2m-1,2m]$ and $[2m,2m+1]$ form a locally finite cover of $\RR$ on which $g$ is defined and continuous, agreeing on overlaps, so $g$ is continuous by Munkres §18 Exercise 9(c); and $g$ still maps $S$ onto $\RR^{n}$, hence is onto.
+:::
+
+:::
+
+::: {.pf-step}
+There is a continuous surjective map $f:\RR\to\RR^{n}$.
+
+::: pf-proof
+Step [](#tietze){.pf-ref} produces one through the Tietze theorem, and step [](#explicit){.pf-ref} produces one by an explicit formula; either answers the exercise.
+:::
+
+:::
+
+:::
 :::
