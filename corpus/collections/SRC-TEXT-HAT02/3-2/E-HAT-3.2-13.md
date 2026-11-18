@@ -80,7 +80,7 @@ $(\CP^\infty,\CP^1)$ is a CW pair, so the quotient map $\CP^\infty\to Q$ collaps
 $H^n(\CP^\infty,\CP^1;\ZZ)=\ZZ$ for even $n\ge4$ and $0$ otherwise.
 
 ::: pf-proof
-$\CP^\infty$ has exactly one cell in each even dimension and none in odd dimensions, and $\CP^1$ consists of the cells in dimensions $0$ and $2$ (Example 1.14 and the cell structure of projective space, printed p. 7). Hence the relative cellular chain complex has $\ZZ$ in each even degree $\ge4$ and zero elsewhere, and all its boundary maps vanish because they land in odd degrees. Cohomology with $\ZZ$ coefficients of this complex is computed by Theorem 3.5, printed p. 203, giving the stated groups.
+$\CP^\infty$ has exactly one cell in each even dimension and none in odd dimensions, and $\CP^1$ consists of the cells in dimensions $0$ and $2$ (the cell structure of projective space, printed p. 7). Hence the relative cellular chain complex has $\ZZ$ in each even degree $\ge4$ and zero elsewhere, and all its boundary maps vanish because they land in odd degrees. Cohomology with $\ZZ$ coefficients of this complex is computed by Theorem 3.5, printed p. 203, giving the stated groups.
 
 :::
 
@@ -110,7 +110,7 @@ By steps [](#relative){.pf-ref} and [](#generators){.pf-ref} the positive-degree
 $H^*(S^6\times\HP^\infty;\ZZ)\cong\ZZ[x,y]/(x^2)$ with $\abs x=6$ and $\abs y=4$.
 
 ::: pf-proof
-$H^*(\HP^\infty;\ZZ)=\ZZ[y]$ with $\abs y=4$ (Example 3.12, printed p. 213), and $H^*(S^6;\ZZ)=\ZZ\oplus\ZZ$ in degrees $0$ and $6$. The Künneth formula for cohomology over a field applies directly; over $\ZZ$ the relevant statement is that the cohomology ring of the product of a free finitely generated complex with another is the tensor product of the rings, Theorem 3.15 with Theorem 3.16's ring statement, printed p. 216. The tensor product $\ZZ[y]\otimes\ZZ[x]/(x^2)$ with $\abs x=6$ is $\ZZ[x,y]/(x^2)$.
+$H^*(\HP^\infty;\ZZ)=\ZZ[y]$ with $\abs y=4$ (Example 3.12, printed p. 213), and $H^*(S^6;\ZZ)=\ZZ\oplus\ZZ$ in degrees $0$ and $6$. Since the cohomology of both factors is free and finitely generated in each degree, the cross product $H^*(S^6;\ZZ)\otimes H^*(\HP^\infty;\ZZ)\to H^*(S^6\times\HP^\infty;\ZZ)$ is a ring isomorphism by Theorem 3.15, printed p. 216. The tensor product $\ZZ[y]\otimes\ZZ[x]/(x^2)$ with $\abs x=6$ is $\ZZ[x,y]/(x^2)$.
 
 :::
 
