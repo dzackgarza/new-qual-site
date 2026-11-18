@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1395 of the 12429 problem cards that have a solution
+1394 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1395
+- Problems: 1394
 - Problem cards with a solution: 12429
 
-## Problems (1395)
+## Problems (1394)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -1221,7 +1221,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHU4547C1 — "Absolute continuity of the Lebesgue integral: small-measure sets have small integrals"
 - [ ] P-JHUFA01RAB — "Convolution of functions vanishing at infinity"
 - [ ] P-JHUFA02CAB — "Monotone convergence for an increasing sequence with bounded integrals"
-- [ ] P-JHUFA08ANA — "Iteration of $s\mapsto s^2$ on $[0,1]$: pushforward measures and their weak limit"
 - [ ] P-JHUFA08ANC — "$\ell^\infty$ is not separable"
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
 - [ ] P-JHUMAY10ANI — "Differentiation under the integral sign with a dominated partial derivative"
