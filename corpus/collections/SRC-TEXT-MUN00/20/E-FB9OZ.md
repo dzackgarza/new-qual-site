@@ -64,7 +64,7 @@ If $\mathbf{x}\in\overline{\RR^{\infty}}$, then $x_{i}\to0$.
 :::: pf-proof
 
 ::: {.pf-step #not-null}
-If $x_{i}$ does not converge to $0$, there are $\delta>0$ and infinitely many indices $i$ with $\abs{x_{i}}>\delta$.
+If $x_{i}$ does not converge to $0$, there are $\delta>0$ and infinitely many indices $i$ with $\abs{x_{i}}\geq\delta$.
 
 ::: pf-proof
 Convergence to $0$ says that for every $\delta>0$ there is $N$ with $\abs{x_{i}}<\delta$ for all $i\geq N$. Its negation is that for some $\delta>0$ no such $N$ works, that is, for every $N$ there is $i\geq N$ with $\abs{x_{i}}\geq\delta$; choosing such an index for $N=1,2,\ldots$ successively and always larger than the previous one gives an infinite strictly increasing family.
@@ -76,7 +76,7 @@ Convergence to $0$ says that for every $\delta>0$ there is $N$ with $\abs{x_{i}}
 There is $\varepsilon>0$ with $B_{\bar\rho}(\mathbf{x},\varepsilon)\cap\RR^{\infty}=\varnothing$.
 
 ::: pf-proof
-Take $\delta$ as in step [](#not-null){.pf-ref} and put $\varepsilon\coloneqq\min\theset{\delta,1}/2$, which is positive. Let $\mathbf{y}\in\RR^{\infty}$ and choose $N$ with $y_{i}=0$ for all $i\geq N$; by step [](#not-null){.pf-ref} there is $i\geq N$ with $\abs{x_{i}}>\delta$, and for that $i$
+Take $\delta$ as in step [](#not-null){.pf-ref} and put $\varepsilon\coloneqq\min\theset{\delta,1}/2$, which is positive. Let $\mathbf{y}\in\RR^{\infty}$ and choose $N$ with $y_{i}=0$ for all $i\geq N$; by step [](#not-null){.pf-ref} there is $i\geq N$ with $\abs{x_{i}}\geq\delta$, and for that $i$
 $$
 \min\theset{\abs{x_{i}-y_{i}},1}=\min\theset{\abs{x_{i}},1}\geq\min\theset{\delta,1}=2\varepsilon>\varepsilon,
 $$
