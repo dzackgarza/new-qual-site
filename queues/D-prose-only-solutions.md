@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1142 of the 12429 problem cards that have a solution
+1133 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1142
+- Problems: 1133
 - Problem cards with a solution: 12429
 
-## Problems (1142)
+## Problems (1133)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -130,7 +130,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-4.2-1 — "No retraction $\RP^n \to \RP^k$ via homotopy groups"
 - [ ] E-HAT-4.2-10 — "Finiteness of $\pi_n'$ vs. $\pi_n$"
 - [ ] E-HAT-4.2-11 — "$\pi_2(X, X^1)$ and the kernel of $\pi_1(X^1) \to \pi_1(X)$"
-- [ ] E-HAT-4.2-13 — "Isomorphism on $\pi_i$ for $i \leq n$ in $n$-dimensional complexes"
 - [ ] E-HAT-4.2-15 — "Simply-connected closed 3-manifolds are $S^3$"
 - [ ] E-HAT-4.2-16 — "Surfaces with infinite $\pi_1$ are $K(\pi, 1)$'s"
 - [ ] E-HAT-4.2-17 — "Maps to $K(G,n)$ are determined by $\pi_n$"
@@ -142,13 +141,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-4.2-23 — "Surjectivity of Hurewicz in dimension $n+1$"
 - [ ] E-HAT-4.2-24 — "Moore spaces $M(G,1)$ and $H_2(K(G,1))$"
 - [ ] E-HAT-4.2-25 — "Hurewicz cokernel for spaces with few nonzero $\pi_i$"
-- [ ] E-HAT-4.2-27 — "Image of $\pi_2(X) \to \pi_2(X,A)$ is central"
 - [ ] E-HAT-4.2-28 — "$\ZZ_p \times \ZZ_p$ cannot act freely on spheres"
 - [ ] E-HAT-4.2-29 — "Homotopy classification of lens spaces"
 - [ ] E-HAT-4.2-3 — "Homotopy groups of punctured lens spaces"
 - [ ] E-HAT-4.2-30 — "Fiber bundle projections from subspaces of $\RR^2$"
 - [ ] E-HAT-4.2-31 — "Split sequences from nullhomotopic fiber inclusions"
-- [ ] E-HAT-4.2-33 — "Homotopy groups if all Hopf-like bundles existed"
 - [ ] E-HAT-4.2-34 — "Hopf bundle composed with torus collapse"
 - [ ] E-HAT-4.2-35 — "Quotient fiber bundle from quaternionic Hopf bundle"
 - [ ] E-HAT-4.2-36 — "Whitehead product for $S^1$ and $S^n$"
@@ -156,8 +153,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-4.2-38 — "$\pi_3(S^1 \vee S^2)$ is not finitely generated"
 - [ ] E-HAT-4.2-39 — "Indeterminacy of Toda brackets"
 - [ ] E-HAT-4.2-4 — "Homotopy of infinite wedge of spheres"
-- [ ] E-HAT-4.2-6 — "Relative Hurewicz implies absolute"
-- [ ] E-HAT-4.2-7 — "CW complexes with prescribed homotopy groups"
 - [ ] E-HAT-4.2-9 — "Contractible mapping cone implies homotopy equivalence"
 - [ ] E-HAT-4.3-1 — "Map $\RP^\infty \to K(\ZZ,2)$ trivial on homology"
 - [ ] E-HAT-4.3-10 — "Action of $\pi_1(E)$ on $\pi_n(F)$ for fibrations"
@@ -239,17 +234,14 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HK-31-6 — "Explicit form of the operator prescribed on the standard basis"
 - [ ] E-HK-31-8 — "A map with prescribed range spanned by two vectors"
 - [ ] E-HK-32-10 — "Surjective without injective, and injective without surjective, for rectangular $A$"
-- [ ] E-HK-32-2 — "Invertibility of an operator specified on the standard basis of $\CC^3$"
 - [ ] E-HK-32-3 — "An invertible operator on $\RR^3$ and a rule for its inverse"
 - [ ] E-HK-32-6 — "A composition through a lower-dimensional space is never invertible"
 - [ ] E-HK-32-8 — "$T^2 = 0$ relates range to null space; a square-zero example on $\RR^2$"
-- [ ] E-HK-33-2 — "Reading subspaces of $V$ off an isomorphism with $\CC^3$"
 - [ ] E-HK-33-4 — "$F^{m \times n}$ is isomorphic to $F^{mn}$"
 - [ ] E-HK-33-6 — "Finite-dimensional spaces are isomorphic exactly when dimensions agree"
 - [ ] E-HK-34-1 — "Matrices of a projection under four basis pairs choices"
 - [ ] E-HK-34-10 — "Classification of idempotent operators on $\RR^2$"
 - [ ] E-HK-34-12 — "Operators of nilpotency index $n$ share one matrix and are all similar"
-- [ ] E-HK-34-2 — "Matrix of a map $\RR^3 \to \RR^2$ under standard and nonstandard bases"
 - [ ] E-HK-34-3 — "The column space of the standard matrix of an operator"
 - [ ] E-HK-34-4 — "Every operator on a two-dimensional space satisfies its characteristic polynomial"
 - [ ] E-HK-34-8 — "The real rotation matrix is similar over $\CC$ to a diagonal matrix"
@@ -257,7 +249,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HK-35-12 — "Linear functionals on a subspace extend to the whole space"
 - [ ] E-HK-35-14 — "A functional non-vanishing on finitely many non-zero vectors"
 - [ ] E-HK-35-15 — "Trace of left multiplication by $P$ on $2 \times 2$ matrices"
-- [ ] E-HK-35-2 — "Dual basis of a given basis of $\CC^3$"
 - [ ] E-HK-35-4 — "Integral functionals on quadratics are dual to an explicit basis"
 - [ ] E-HK-35-6 — "Every linear map $F^n \to F^m$ is a tuple of linear functionals"
 - [ ] E-HK-35-8 — "Basis for the annihilator of a span of three vectors in $\RR^5$"
