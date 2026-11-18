@@ -57,6 +57,20 @@ audit:
     convention, with representatives $f(0)=x_0$, $f(1)\in A$ and $\partial[f]$ the component of
     $f(1)$; the two conventions give the same sequence and the same two verifications. No statement
     defect was found: the sequence as printed is exact with no hypothesis on $A$ beyond $x_0\in A$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. No retained solution set is cited on the card and none was
+    located among the retained Hatcher sets, so the argument is the card's own. Checked against
+    Hatcher, Section 4.1, printed pp. 342-345, for the definition of $\pi_1(X,A,x_0)$ as relative
+    paths up to homotopy through relative paths and for the boundary map. Each step re-read: the
+    composite $\partial\circ i$ is trivial because a loop starts at $x_0$; a class with
+    $\partial[u]=[x_0]$ is homotopic, through relative paths, to the loop obtained by first
+    traversing a path in $A$ from $x_0$ to $u(0)$; and the image of $\partial$ is exactly the set
+    of components of $A$ that meet the component of $x_0$ in $X$. Exactness of a sequence of
+    pointed sets is read as image = preimage of the basepoint. Not claimed: path-connectedness of
+    $A$, which is not needed and is not assumed.
 ---
 
 ::: {.problem}
@@ -64,15 +78,67 @@ Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longri
 :::
 
 ::: {.solution}
-Use Hatcher's conventions (§4.1, p. 344): an element of $\pi_1(X,A,x_0)$ is represented by a path $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, and two such paths are identified when they are homotopic through paths of the same form. The three maps of the displayed sequence are the inclusion of loops at $x_0$ (a loop is a path of the required form, since $x_0\in A$), the boundary map
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.1, printed pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
+
+::: pf
+
+::: {.pf-step #conventions}
+The three maps of the sequence are: the inclusion of loops at $x_0$ into relative paths, since a loop is a path with both endpoints $x_0\in A$; the boundary map $\partial[u]=[u(0)]\in\pi_0(A,x_0)$; and the map $\pi_0(A,x_0)\to\pi_0(X,x_0)$ induced by the inclusion $A\subset X$. All are maps of pointed sets, the basepoints being the constant path and the component of $x_0$.
+
+::: pf-proof
+A loop at $x_0$ satisfies $u(0)=x_0\in A$ and $u(1)=x_0$, so it represents an element of $\pi_1(X,A,x_0)$, and the assignment is compatible with homotopies because a homotopy of loops rel endpoints is a homotopy through relative paths. The boundary map is well defined because a homotopy through paths from $A$ to $x_0$ moves $u(0)$ inside $A$, so it does not change the component of $A$ containing $u(0)$. The third map is the usual map on components.
+:::
+
+:::
+
+::: {.pf-step #atpi1}
+The sequence is exact at $\pi_1(X,A,x_0)$.
+
+:::: pf-proof
+
+::: {.pf-step #trivial}
+$\partial$ composed with the inclusion is trivial.
+
+::: pf-proof
+If $\alpha$ is a loop at $x_0$ then $\partial[\alpha]=[\alpha(0)]=[x_0]$, the basepoint of $\pi_0(A,x_0)$.
+:::
+
+:::
+
+::: {.pf-step #kernel}
+Every class in the kernel of $\partial$ comes from a loop.
+
+::: pf-proof
+Let $[u]\in\pi_1(X,A,x_0)$ with $\partial[u]=[x_0]$, that is, $u(0)$ lies in the component of $x_0$ in $A$. Choose a path $v:I\to A$ from $x_0$ to $u(0)$, and let $vu$ be the path that traverses $v$ on $[0,\tfrac12]$ and $u$ reparametrised on $[\tfrac12,1]$; this is a loop at $x_0$. The family
 $$
-\partial[u]=[u(0)]\in\pi_0(A,x_0),
+u_s(t)=\begin{cases} v\bigl((1-s)t\bigr), & t\le s,\\ u\Bigl(\dfrac{t-s}{1-s}\Bigr), & t\ge s,\end{cases}
 $$
-and the map $\pi_0(A,x_0)\to\pi_0(X,x_0)$ induced by the inclusion $A\subset X$, all as pointed sets.
+with the evident interpretation at $s=1$, is a homotopy from $u_1=u$ to $u_0=vu$ through paths whose initial point is $v\bigl((1-s)\cdot0\bigr)\in A$ and whose final point is $x_0$. Hence $[u]=[vu]$ in $\pi_1(X,A,x_0)$, and $[vu]$ is the image of the loop class of $vu$.
+:::
 
-*Exactness at $\pi_1(X,A,x_0)$.* The composite is trivial: for a loop $\alpha$ at $x_0$, viewed as a relative path, $\partial[\alpha]=[x_0]$ is the distinguished element. Conversely let $[u]\in\ker\partial$, so $u(0)$ lies in the component of $x_0$ in $A$. Choose a path $v$ in $A$ from $x_0$ to $u(0)$; then $vu$, first $v$ and then $u$, is a loop at $x_0$. The relative classes of $vu$ and $u$ agree: the family $u_s$ that traverses $v$ only on $[0,1-s]$ and then $u$ rescaled to $[1-s,1]$ is a homotopy through paths from $A$ to $x_0$, because $v$ lies in $A$ so every initial point $v(\cdot)$ is in $A$, and $u_0=vu$, $u_1=u$. Hence $[u]$ is the image of the loop class $[vu]$.
+:::
 
-*Exactness at $\pi_0(A,x_0)$.* The image of $\partial$ consists of the components of $A$ containing a point that is joined to $x_0$ by a path in $X$, and these are exactly the components whose image in $\pi_0(X,x_0)$ is the component of $x_0$. So $\operatorname{im}\partial=\ker\bigl(\pi_0(A,x_0)\to\pi_0(X,x_0)\bigr)$.
+:::
 
-Thus the sequence is exact as a sequence of pointed sets. No hypothesis that $A$ be path-connected is needed; when $A$ is path-connected, as in the preceding exercise, $\pi_0(A,x_0)$ is a single point.
+:::
+
+::: {.pf-step #atpi0}
+The sequence is exact at $\pi_0(A,x_0)$.
+
+::: {.pf-proof}
+The image of $\partial$ consists of the components $[a]$ of $A$ for which there is a path $u$ in $X$ from $a$ to $x_0$, since such a $u$ is exactly a relative path with $u(0)=a$. A component $[a]$ of $A$ maps to the basepoint of $\pi_0(X,x_0)$ exactly when $a$ can be joined to $x_0$ by a path in $X$, that is, exactly when $[a]$ is the image of some $\partial[u]$. So the image of $\partial$ equals the kernel of $\pi_0(A,x_0)\to\pi_0(X,x_0)$.
+:::
+
+:::
+
+::: {.pf-step}
+The sequence $\pi_1(X,x_0)\to\pi_1(X,A,x_0)\xrightarrow{\partial}\pi_0(A,x_0)\to\pi_0(X,x_0)$ is exact.
+
+::: pf-proof
+Exactness at the two middle terms is steps [](#atpi1){.pf-ref} and [](#atpi0){.pf-ref}. No hypothesis that $A$ be path-connected is used: when $A$ is path-connected, $\pi_0(A,x_0)$ is a single point, but the argument above does not need that.
+:::
+
+:::
+
+:::
 :::
