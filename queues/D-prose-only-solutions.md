@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1469 of the 12429 problem cards that have a solution
+1465 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1469
+- Problems: 1465
 - Problem cards with a solution: 12429
 
-## Problems (1469)
+## Problems (1465)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -887,7 +887,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS24F — "Unitary structure and character of $\mathcal{L}(V,W)$ as a $G$-representation"
 - [ ] P-APAS24J — "Hilbert series of invariants under diagonal $\pm 1$ matrices"
 - [ ] P-APAS26D — "An algebra is commutative iff every element is normal"
-- [ ] P-APAS26G — "Eigenvalues and eigenspaces of the $3$-cube adjacency operator"
 - [ ] P-APAS26J — "Centralizer of $\mathcal{C}(H)$ in $\mathcal{C}(G)$ via branching multiplicities"
 - [ ] P-APASP07D — "Trace and computation of the averaged conjugate of a matrix over a finite group"
 - [ ] P-APASP07H — "Young diagrams with nonzero character on an (n-1)-cycle in S_n"
@@ -979,7 +978,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF05F — "Statement and proof of Harnack's inequality for harmonic functions"
 - [ ] P-CAF06F — "Uniform convergence of Taylor series on compact subsets of the unit disk"
 - [ ] P-CAF06G — "Interpolation by entire functions at prescribed points"
-- [ ] P-CAF07A — "True or False: subsequential convergence, contour integrals, entire functions omitting a disk, biholomorphisms, and harmonicity"
 - [ ] P-CAF07B — "Schwarz lemma applications: modulus bound and lower bound near a zero"
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
@@ -1051,7 +1049,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP15F — "Sum of zeros minus poles of an elliptic function in a fundamental parallelogram"
 - [ ] P-CASP17B — "An entire function with $f(z)f(1/z)$ bounded is a monomial"
 - [ ] P-CASP17C — "An entire function bounded by $1+(\log(1+\abs z))^n$ is constant"
-- [ ] P-CASP17D — "Entire and meromorphic functions with prescribed zeros, poles, and residues"
 - [ ] P-CASP17H — "Bounded harmonic functions on C and on the upper half-plane with zero boundary"
 - [ ] P-CASP18B — "$\int_0^\infty dt/(t^3+1)$ by residues"
 - [ ] P-CASP18D — "Uniform convergence of harmonic functions on the boundary implies convergence in the disk"
@@ -1343,7 +1340,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-M81A6-6 — "Polynomial decay as a Fourier transform of an $L^1$ function"
 - [ ] P-M81A6-E1 — "The Gaussian integral by repeated integration"
 - [ ] P-MBHKT — "Groups of order 18"
-- [ ] P-MIAAZ — "A continuous convex function on the unit ball of a reflexive Banach space attains its minimum"
 - [ ] P-MMAQ-CBHJDNZVJP — "Hilbert basis theorem for $R[x]$ and $R[[x]]$"
 - [ ] P-MMAQ-DNT3HIFV7M — "A projective resolution of $k\simeq R/(x,y)$ over $R=k[x,y]$ and $\Tor_i^R((x,y),k)$"
 - [ ] P-MMAQ-FBNP7JLLPX — "Groups of order 57"
