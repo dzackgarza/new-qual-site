@@ -228,6 +228,33 @@ audit:
     that the complement groups are free of countably infinite rank; whether its order-4 building
     block is Hatcher's doubled one is not settled by the abstract. Not read, therefore not cited,
     and the source obligation stays open.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The one published candidate was obtained and read, and it is excluded: its order-4 sphere is not
+    the sphere Hatcher's figure draws. Obtained through the Internet Archive's public copy of the
+    publisher's file (`https://web.archive.org/web/20240915224258/https://digitalcommons.usu.edu/cgi/
+    viewcontent.cgi?article=7892&context=etd`, snapshot of 2024-09-15, 16104957 bytes, 34 pages, now
+    retained as `tmp/sources/riebe-1968-horned-spheres.pdf`); the body pages carry no text layer ---
+    one byte each from `pdftotext` --- so every page cited here was read as an image at 260--300 dpi.
+    Read: printed p. 2, which describes the construction as using "three, four, or more interlocking
+    loops" and names the resulting sphere a 2-horned sphere of order 4, $M_4$, with $M_3$ obtained by
+    omitting one loop; printed p. 3, Figure 1, the drawing of $M_4$; printed p. 8, the classical case,
+    where the relations reduce to $x_\alpha=[x_{\alpha_1},x_{\alpha_2}]$, a single commutator of the
+    two loops; printed pp. 10--13, the generating elements, the six crossing relations and Figure 7,
+    the graph for $M_4$; and printed p. 13, where those relations reduce to
+    $x_\gamma=[x_{\gamma_1}x_{\gamma_2},\,x_{\gamma_3}x_{\gamma_4}]$. That is a commutator of two
+    products of loops. Hatcher's figure on printed p. 177 was read again at 500 dpi: it shows two
+    handles, each with two horns hooked through one another, which is a product of two commutators,
+    $[a_1,a_2][a_3,a_4]$, and the card's step \#s3 uses that word. The two words are different
+    reduced words, so Riebe's four-loop sphere is a different embedding from the one the exercise
+    draws, and citing him here would attribute to him a construction he does not analyse. He is
+    therefore not cited as this card's source. What he does prove, for his own $M_4$: printed p. 13's
+    presentation, and, from printed p. 15 and the abstract on p. v, that the groups $G^k$, $k\ge2$,
+    are free of countably infinite rank, so that his $M_2$, $M_3$ and $M_4$ are not distinguished by
+    fundamental groups. Checked: every page named above. Not claimed: that the thesis contains
+    Hatcher's doubled block, or that its Theorem on $G^k$ applies to it.
 ---
 
 ::: {.problem}
@@ -337,7 +364,7 @@ The limiting compact set is still a topological $3$-ball: the same shrinking-hor
 ::: {.remark title="Source"}
 Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: Example 2B.2 and its printed construction, pp. 170--172, the decreasing sequence $X_n$, the balls $B_n$ with $2^n$ handles, the limit homeomorphism, and the van Kampen computation of $\pi_1(\RR^3-B)$ as the ascending union of the $\pi_1(Y_n)$ with the attaching loop a commutator. The exercise is Exercise 7 of §2.B, printed p. 177, with the figure of the doubled building block beside it; the doubled-handle case is that computation with four horns per handle.
 
-A published candidate for the order-4 block exists and could not be read: N. W. Riebe, *The Fundamental Groups of the Complements of Some Solid Horned Spheres* (MS thesis, Utah State University, 1968, DOI 10.26076/c3c1-48f0, `https://digitalcommons.usu.edu/etd/6821/`), whose published abstract calls the classical Alexander horned sphere a 2-horned sphere of order 2, constructs 2-horned spheres of orders 3 and 4 by the same generalization, computes the fundamental groups of the complements of all three, and concludes that these groups are free of countably infinite rank, so that the three embeddings are not distinguished by fundamental groups. The thesis's PDF endpoint answered with a browser challenge on 2026-11-18, so no page of the thesis has been read, no printed page of it is cited here, and nothing on this card is transcribed from it; whether its order-4 building block is the doubled one is not settled by the abstract, and its free-group conclusion is the abstract's, not a theorem checked here.
+A published candidate was obtained and read, and it is a different sphere: N. W. Riebe, *The Fundamental Groups of the Complements of Some Solid Horned Spheres* (MS thesis, Utah State University, 1968, DOI 10.26076/c3c1-48f0), read in the Internet Archive's copy of the publisher's file and retained as `tmp/sources/riebe-1968-horned-spheres.pdf` (34 pages; the body pages carry no text layer and were read as images at 260--300 dpi). Its sphere of order 4 is built from four interlocking loops (printed p. 2; Figure 1 on printed p. 3), and the relations for the complement of that sphere reduce on printed p. 13 to $x_\gamma=[x_{\gamma_1}x_{\gamma_2},\,x_{\gamma_3}x_{\gamma_4}]$, a commutator of two products of loops, where its classical case on printed p. 8 gives the single commutator $[x_{\alpha_1},x_{\alpha_2}]$. Hatcher's figure on printed p. 177 shows two handles, each with two horns hooked through one another, whose attaching word is the product of two commutators $[a_1,a_2][a_3,a_4]$, the word step [](#s3){.pf-ref} uses. The two words are different reduced words, so the thesis analyses a different embedding and is not cited as the source of this exercise. What it proves for its own sphere is printed on p. 13 for the presentation, and, from printed p. 15 and the abstract on p. v, that the groups $G^k$, $k\ge2$, are free of countably infinite rank, so that its $M_2$, $M_3$ and $M_4$ are not distinguished by fundamental groups.
 
 No published analysis of the doubled block was read in full, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant, and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets do not solve this exercise --- Sam's has no §2.B section at all, Li's holds 2.B.10 and 2.B.11 only, DeMason's 2.B.1, 2.B.2 and 2.B.8, and Poulsen's 2.B.10; the Stanford Math 215C sets held here are Solution Sets 2--4, which hold §3.2 exercises 1, 2, 11 and 15 with §3.B exercises 1 and 3 (Set 2), §3.3 exercises 9--11 (Set 3), and §3.3 exercises 21, 22 and 24 with M&T 8.2, 8.5, 8.6 and 9.1 (Set 4), and no §2.B exercise; the UCR Math 205B help file has no §2.B exercise, and `tmp/sources/hatcher-math538-homework4-solutions.pdf` is not a solution set for these sections: it is a 19-page image-only scan whose text version is `tmp/sources/hatcher-math538-homework4-solutions.md`, holding typed notes beginning at printed page 60, "§3.2 Application: Borsuk--Ulam Theorem", and handwritten Problem Sets 3 and 4 on §3.1--§3.2; it reaches no §2.B exercise. The analysis above is therefore the card's own, checked against Hatcher's printed construction. The doubled block is named as the card's own argument: no published proof of it has been found, and it is recorded as the card's own in `COMPLAINTS.md` item 11 rather than described as a published solution. That record is what the card owes, not an acceptance of the part from a source.
 :::
