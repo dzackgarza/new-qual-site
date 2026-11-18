@@ -53,27 +53,44 @@ Two metrics $d$ and $d'$ on a set $X$ are said to be metrically equivalent if th
 :::
 
 ::: {.solution}
-(a) Recall that the standard bounded metric is
-$$
-\bar d(x,y)=\min\{d(x,y),1\}.
-$$
-The identity
-$$
-i:(X,d)\to(X,\bar d)
-$$
-is uniformly continuous because $\bar d\le d$: given $\varepsilon>0$, take $\delta=\varepsilon$.
 
-For the inverse identity, given $\varepsilon>0$, choose
-$$
-\delta=\tfrac12\min\{\varepsilon,1\}.
-$$
-If $\bar d(x,y)<\delta<1$, then necessarily $d(x,y)<1$, so $\bar d(x,y)=d(x,y)<\delta\le\varepsilon$. Thus the inverse identity is uniformly continuous. Hence $d$ and $\bar d$ are metrically equivalent.
+No retained solution set covers this exercise: the card's own argument follows, with the two uniform-continuity estimates of (a) separated and the Cauchy-sequence transfer of (b) stated as its own step.
 
-(b) Suppose $d$ and $d'$ are metrically equivalent. A uniformly continuous map sends Cauchy sequences to Cauchy sequences. Since both identity maps
-$$
-(X,d)\rightleftarrows(X,d')
-$$
-are uniformly continuous, a sequence is $d$-Cauchy if and only if it is $d'$-Cauchy.
+Recall that $d$ and $d'$ are metrically equivalent when the identity $i:(X,d)\to(X,d')$ and its inverse are both uniformly continuous, and that $\bar d(x,y)=\min\theset{d(x,y),1}$.
 
-Assume $(X,d)$ is complete and let $(x_n)$ be $d'$-Cauchy. Then it is $d$-Cauchy, hence $x_n\to x$ in $d$ for some $x\in X$. Continuity of the identity $(X,d)\to(X,d')$ gives $x_n\to x$ in $d'$. Thus $(X,d')$ is complete. The converse is symmetric.
+::: pf
+
+::: {.pf-step #bounded}
+(a) The identity $(X,d)\to(X,\bar d)$ is uniformly continuous and so is its inverse.
+
+::: pf-proof
+Since $\bar d\le d$, given $\varepsilon>0$ the choice $\delta=\varepsilon$ gives $d(x,y)<\delta\Rightarrow\bar d(x,y)<\varepsilon$. Conversely, given $\varepsilon>0$ put $\delta=\tfrac12\min\theset{\varepsilon,1}$, so $\delta<1$; if $\bar d(x,y)<\delta$ then in particular $\bar d(x,y)<1$, which forces $\bar d(x,y)=d(x,y)$ because $\min\theset{d(x,y),1}<1$ only when $d(x,y)<1$; hence $d(x,y)<\delta\le\varepsilon$.
+:::
+
+:::
+
+::: {.pf-step #cauchy}
+(b) If $d$ and $d'$ are metrically equivalent, a sequence is $d$-Cauchy exactly when it is $d'$-Cauchy.
+
+::: pf-proof
+A uniformly continuous map sends Cauchy sequences to Cauchy sequences: given $\varepsilon>0$ choose $\delta>0$ from uniform continuity and then $N$ so that $d(x_{m},x_{n})<\delta$ for $m,n\ge N$. Applying this to the identity $(X,d)\to(X,d')$ gives that every $d$-Cauchy sequence is $d'$-Cauchy, and applying it to the inverse identity gives the converse.
+:::
+
+:::
+
+::: {.pf-step #complete}
+(b) $(X,d)$ is complete if and only if $(X,d')$ is.
+
+::: pf-proof
+Suppose $(X,d)$ is complete and let $(x_{n})$ be $d'$-Cauchy. It is $d$-Cauchy by step [](#cauchy){.pf-ref}, so $d(x_{n},x)\to0$ for some $x\in X$. The identity $(X,d)\to(X,d')$ is uniformly continuous, hence continuous, so $d'(x_{n},x)\to0$; thus $(x_{n})$ converges in $d'$ and $(X,d')$ is complete. The converse is the same argument with $d$ and $d'$ exchanged.
+:::
+
+:::
+
+::: {.pf-qed}
+Part (a) is step [](#bounded){.pf-ref}; part (b) follows from steps [](#cauchy){.pf-ref} and [](#complete){.pf-ref}.
+:::
+
+:::
+
 :::
