@@ -15,6 +15,11 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure. The vanishing of the curl is now computed rather than asserted, the hypotheses of Green's theorem are checked in both cases (an open set containing the closed disk when the origin is outside, an open set containing the annulus when it is inside), the orientation of the annulus boundary is explained (C together with C_epsilon clockwise), and the parametrization computation keeps the factor eps^2 so that P dx + Q dy = dt is visible. The collection's provenance is the examination paper alone, so no retained solution set covers the exercise and the card says the argument is its own. No statement repair; the two values 0 and 2 pi are correct.
 ---
 
 ::: {.problem}
@@ -23,39 +28,63 @@ Prove that $$\oint_C \frac{-y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$ equals $0$
 :::
 
 ::: {.solution}
-Let
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
+
+Let $P=\dfrac{-y}{x^2+y^2}$ and $Q=\dfrac{x}{x^2+y^2}$ on $\RR^2\setminus\{0\}$.
+
+::: pf
+
+::: {.pf-step #curlfree}
+$\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y}=0$ on $\RR^2\setminus\{0\}$.
+
+::: pf-proof
+Writing $r^2=x^2+y^2$, $\frac{\partial Q}{\partial x}=\frac{(x^2+y^2)-x(2x)}{(x^2+y^2)^2}=\frac{y^2-x^2}{r^4}$ and $\frac{\partial P}{\partial y}=\frac{-(x^2+y^2)+y(2y)}{(x^2+y^2)^2}=\frac{y^2-x^2}{r^4}$, so the difference vanishes wherever $r\ne0$.
+:::
+
+:::
+
+::: {.pf-step #outside}
+If the origin is outside $C$ then $\oint_CP\,dx+Q\,dy=0$.
+
+::: pf-proof
+Then $P$ and $Q$ are of class $C^1$ on an open set containing the closed disk $D$ bounded by $C$, so Green's theorem applies and the integral over $C$ (counterclockwise, the positive orientation of $\partial D$) equals $\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA=0$ by step [](#curlfree){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #annulus}
+If the origin is inside $C$, then for $0<\varepsilon$ small the annulus $A_\varepsilon$ between $C$ and the circle $C_\varepsilon$ of radius $\varepsilon$ about the origin satisfies
 $$
-P(x,y)=\frac{-y}{x^2+y^2},
-\qquad
-Q(x,y)=\frac{x}{x^2+y^2}.
-$$
-Away from the origin,
-$$
-\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=0.
+\oint_CP\,dx+Q\,dy=\oint_{C_\varepsilon}P\,dx+Q\,dy .
 $$
 
-If the origin lies outside $C$, then $P,Q$ are continuously differentiable on the disk bounded by $C$. Green's theorem therefore gives
-$$
-\oint_C P\,dx+Q\,dy=0.
-$$
+::: pf-proof
+For $\varepsilon$ small enough $C_\varepsilon$ lies inside $C$, and $P,Q$ are $C^1$ on an open set containing the closure of the annulus, on which the curl vanishes by step [](#curlfree){.pf-ref}. Green's theorem on the annulus gives $0=\oint_{\partial A_\varepsilon}P\,dx+Q\,dy$, and the positively oriented boundary of the annulus is $C$ together with $C_\varepsilon$ traversed clockwise, that is $C-C_\varepsilon$. Hence the two counterclockwise integrals are equal.
+:::
 
-If the origin lies inside $C$, choose a small positively oriented circle $C_\varepsilon$ centered at the origin and contained inside $C$. Apply Green's theorem to the annular region between $C$ and $C_\varepsilon$. Its positively oriented boundary is $C-C_\varepsilon$, so
+:::
+
+::: {.pf-step #small}
+$\oint_{C_\varepsilon}P\,dx+Q\,dy=2\pi$.
+
+::: pf-proof
+Parametrize $C_\varepsilon$ by $x=\varepsilon\cos t$, $y=\varepsilon\sin t$, $0\le t\le2\pi$, so $dx=-\varepsilon\sin t\,dt$ and $dy=\varepsilon\cos t\,dt$. Then $x^2+y^2=\varepsilon^2$ and
 $$
-\oint_C P\,dx+Q\,dy-\oint_{C_\varepsilon}P\,dx+Q\,dy=0.
+P\,dx+Q\,dy=\frac{-\varepsilon\sin t}{\varepsilon^2}(-\varepsilon\sin t)\,dt+\frac{\varepsilon\cos t}{\varepsilon^2}(\varepsilon\cos t)\,dt=(\sin^2t+\cos^2t)\,dt=dt,
 $$
-Parametrize $C_\varepsilon$ by
-$$
-x=\varepsilon\cos t,\qquad y=\varepsilon\sin t,\qquad 0\le t\le2\pi.
-$$
-Then
-$$
-P\,dx+Q\,dy
-=\sin^2t\,dt+\cos^2t\,dt=dt.
-$$
-Hence
-$$
-\oint_C P\,dx+Q\,dy
-=\int_0^{2\pi}dt
-=2\pi.
-$$
+so the integral is $\int_0^{2\pi}dt=2\pi$.
+:::
+
+:::
+
+::: {.pf-step}
+The integral is $0$ when the origin is outside $C$ and $2\pi$ when it is inside.
+
+::: pf-proof
+Step [](#outside){.pf-ref} and steps [](#annulus){.pf-ref} with [](#small){.pf-ref} give the two cases.
+:::
+
+:::
+
+:::
 :::
