@@ -530,7 +530,9 @@ It checks two things and elaborates nothing.
   checked against the tree: every artifact `proofs/justfile` invokes is present, it invokes no
   Lean file, and every artifact under `proofs/cards/` is invoked by it. The first four of those
   are `certificate.registry_errors`; `qualc check` calls the same function, so the two entry
-  points cannot disagree.
+  points cannot disagree. A lean-categories row is confirmed over HTTPS, so on a machine with no
+  network each such row is reported as a missing target: that is the check's own message, and it
+  names the network rather than a moved file.
 - `artifacts` — the exact Sage, GAP and Python computations retained in `proofs/cards/`. Each
   exits non-zero on a failed assertion, and section 2 records the interpreter and the output its
   published run carried. The interpreters are `sage` and `gap` on `PATH` by default; the shared
