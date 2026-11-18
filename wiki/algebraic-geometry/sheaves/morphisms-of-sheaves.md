@@ -33,7 +33,7 @@ That gap is what the long exact sequence of cohomology measures, and it is the r
 [[D-MODOX]]
 
 The presheaf $U\mapsto\Hom_{\OO_U}(\mcf_I,\mcg_I)$ of homomorphisms between the restrictions is already a sheaf, and this is where it differs from the tensor presheaf: a homomorphism is a *function* on the sections of each open set, and two such functions that agree after restriction to every member of a cover agree everywhere, because the sections they are applied to glue ([[PR-C9ZEK]]).
-So $\mchom(\mcf,\mcg)$ exists with no sheafification, its sections over $U$ are the homomorphisms over $U$, and $\mchom(\OO_X,\mcg)\cong\mcg$.
+So $\sheafhom(\mcf,\mcg)$ exists with no sheafification, its sections over $U$ are the homomorphisms over $U$, and $\sheafhom(\OO_X,\mcg)\cong\mcg$.
 
 ## The espace étalé
 
@@ -45,4 +45,4 @@ In that description a morphism of sheaves is a continuous map of the étale spac
 ## Where a morphism that is onto fails to split
 
 A surjection of sheaves of $\OO_X$-modules need not be a surjection on sections over any fixed open set, so the sequences that look split locally are not split globally.
-The measure of the failure is $\Ext^1$: an extension of $\OO_X$-modules that is locally split but not globally split is a class in $\Ext^1(\mcg,\mcf)$, and in degree one that is the same as a class in $H^1(X,\mchom(\mcg,\mcf))$.
+The measure of the failure is $\Ext^1$: an extension of $\OO_X$-modules that is locally split but not globally split is a class in $\Ext^1(\mcg,\mcf)$, and in degree one that is the same as a class in $H^1(X,\sheafhom(\mcg,\mcf))$.
