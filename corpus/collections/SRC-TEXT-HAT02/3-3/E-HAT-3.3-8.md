@@ -67,6 +67,15 @@ audit:
     $+1$ exactly when the local orientations are preserved; and the same class computed through
     $H_n(N)$ is $\deg(f)\mu_y$. Not claimed: anything about the points of $B$ at which $f$ is not a
     local homeomorphism, or about the degree of a map not satisfying the hypothesis.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the
+    Section 4 cards, carried over the Section 4.1 page). The exercise is printed on p. 258 of
+    Hatcher, Algebraic Topology (2002), checked against the retained PDF text at PDF p. 267, whose
+    running folio reads 258. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -75,7 +84,7 @@ Show the degree of $f$ is $\sum_i \varepsilon_i$ where $\varepsilon_i$ is $+1$ o
 :::
 
 ::: {.solution}
-The argument is transcribed from the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, printed pp. 14--15, which sets up the diagram of local homology groups used below; the same argument, with the same diagram, is in the Math 538 homework solutions, HMW 4, handwritten pp. 1--2 (PDF pp. 17--18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`). It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 8, printed p. 259, and against the local degree discussion of p. 136.
+The argument is transcribed from the published solution of Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 8, printed pp. 14--15, which sets up the diagram of local homology groups used below; the same argument, with the same diagram, is in the Math 538 homework solutions, HMW 4, handwritten pp. 1--2 (PDF pp. 17--18 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`). It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 8, printed p. 258, and against the local degree discussion of p. 136.
 
 ::: pf
 
