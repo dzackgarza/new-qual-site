@@ -6,7 +6,9 @@ title: Conformally map a crescent region to the upper half-plane
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

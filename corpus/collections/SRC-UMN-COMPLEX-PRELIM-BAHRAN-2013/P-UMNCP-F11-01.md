@@ -6,7 +6,9 @@ title: All zeros of $z^5+3z^3+7$ lie in the disk of radius $2$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

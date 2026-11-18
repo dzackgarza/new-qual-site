@@ -6,7 +6,9 @@ title: Zeros of $z^6+4z^2e^{z+1}-3$ in the unit disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

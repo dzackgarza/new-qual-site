@@ -6,7 +6,9 @@ title: A nowhere-zero entire function has an entire logarithm
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Logarithm
+  - Entire Functions
 relations: []
 review: draft
 audit:

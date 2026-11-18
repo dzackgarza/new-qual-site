@@ -6,7 +6,9 @@ title: Zeros of $e^{z^2}-4z^2$ in the unit disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

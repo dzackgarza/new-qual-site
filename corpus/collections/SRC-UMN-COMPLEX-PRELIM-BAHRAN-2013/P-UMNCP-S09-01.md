@@ -6,7 +6,9 @@ title: Sublinear square-root growth forces an entire function to be constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Entire Functions
 relations: []
 review: draft
 audit:

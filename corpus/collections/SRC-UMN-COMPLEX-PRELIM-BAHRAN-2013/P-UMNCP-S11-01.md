@@ -6,7 +6,9 @@ title: The polynomial $az^n+z+1$ has a root in the disk of radius $2$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:
