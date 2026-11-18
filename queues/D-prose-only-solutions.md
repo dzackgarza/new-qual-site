@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1488 of the 12429 problem cards that have a solution
+1481 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1488
+- Problems: 1481
 - Problem cards with a solution: 12429
 
-## Problems (1488)
+## Problems (1481)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -624,7 +624,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PROOB — "Manifolds have dimension at most m"
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
 - [ ] E-PWXIV — "Properties of eleven standard spaces"
-- [ ] E-Q8TYL — "Compactness under comparable topologies"
 - [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
 - [ ] E-QJXDP — "Weak local connectedness at a point without local connectedness"
 - [ ] E-QMZO5 — "Dictionary order topology on the plane as a product topology"
@@ -796,7 +795,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-XDJRZ — "$\ell^2$ is a vector space with the $\ell^2$ metric"
 - [ ] E-XIHWT — "Distance to a set in a metric space"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
-- [ ] E-XU2MN — "Hausdorff equals completely regular for locally euclidean spaces"
 - [ ] E-Y3MSR — "Compact closures in the topology of compact convergence"
 - [ ] E-Y4MFU — "Perfect maps transfer separation and countability properties"
 - [ ] E-YERPP — "Order-preserving surjections are homeomorphisms"
@@ -815,7 +813,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
 - [ ] P-5YZPH — "A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate"
 - [ ] P-8CA01 — "Images of $y=\sqrt{3}x$ and $x+y=1$ under $w=z^2$"
-- [ ] P-8CA03 — "Uniform limit of a series of analytic functions on a star-shaped domain is analytic"
 - [ ] P-8CA07 — "A power series with strictly decreasing coefficients bounded below has no zeros in the disk"
 - [ ] P-8CA11 — "A smooth bijection but no conformal map from the punctured disk onto an annulus"
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
@@ -902,10 +899,8 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP07J — "Invariants of Z/3 acting on a two-dimensional vector space and Hilbert series"
 - [ ] P-APASP07K — "Equivalent representations yield the same Hilbert series of invariant rings"
 - [ ] P-APASP08D — "Garnir polynomial expansion for a tableau"
-- [ ] P-APASP08E — "Character expansion of a representation from a Young idempotent"
 - [ ] P-APASP08F — "Scalar products of characters via the SF package and their interpretation"
 - [ ] P-APASP08G — "Symmetric function identity involving hooks"
-- [ ] P-APASP08I — "Schur function expansion via Littlewood-Richardson rule"
 - [ ] P-APASP08J — "Pólya enumeration on the cube and Frobenius image"
 - [ ] P-APASP08M — "Construction of a matrix group via Young representation, invariant ring, and Hilbert series"
 - [ ] P-AYDDA — "Carathéodory extension of a measure from an algebra"
@@ -1094,7 +1089,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP25F — "Three-circles type theorem for holomorphic functions vanishing only at 0"
 - [ ] P-CASP26D — "Holomorphic function on the upper half-plane with real boundary values and polynomial growth is a Laurent polynomial"
 - [ ] P-CASP26F — "Simultaneous polynomial approximation and separation on disjoint compact sets"
-- [ ] P-CC3DW — "A square matrix is similar to its transpose"
 - [ ] P-CFMLS — "The set of reals with infinitely many rational approximations $\abs{x-p/q}<q^{-3}$ has measure zero"
 - [ ] P-CH10-13 — "Quotient of $A\oplus B$ by $A\oplus\{e\}$ is isomorphic to $B$"
 - [ ] P-CH10-20 — "Counting homomorphisms from $\ZZ_{20}$ to $\ZZ_8$"
@@ -1398,7 +1392,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-PRACT20-W4-14 — "Eigenvalues and eigenvectors of the $3\times3$ matrix with zero diagonal and ones elsewhere"
 - [ ] P-PRACT20-W4-15 — "Evaluating a linear functional on $\RR^2$ from two values"
 - [ ] P-PRX3C — "Prime and maximal ideals, with examples in $\ZZ$"
-- [ ] P-PSIBT — "$\int_0^\infty\frac{\log x}{1+x^3}\,dx$"
 - [ ] P-QJE7B — "$\{v_1+v_2,\, v_2-v_3,\, v_2+2v_3\}$ is a basis whenever $\{v_1,v_2,v_3\}$ is"
 - [ ] P-RASP13B — "$t\,\mu\{\abs{f}\geq t\}\to0$ for $f\in L^1$"
 - [ ] P-RASP13C — "A signed measure with vanishing polynomial moments is zero"
