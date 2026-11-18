@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1562 of the 12430 problem cards that have a solution
+1552 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1562
+- Problems: 1552
 - Problem cards with a solution: 12430
 
-## Problems (1562)
+## Problems (1552)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -508,7 +508,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-L2EHD — "The Stone--Čech compactification of a discrete space is extremally disconnected"
 - [ ] E-LEE5L — "A quotient map that is neither open nor closed"
 - [ ] E-LESK3 — "Strong hypotheses short of metrizability"
-- [ ] E-LI4O5 — "Components of metrizable locally euclidean spaces are manifolds"
 - [ ] E-LIN4R — "Linear continua in the dictionary order"
 - [ ] E-MC21D — "Density of uncountable products of the line"
 - [ ] E-MD9QR — "The ordered square is locally connected but not locally path connected"
@@ -835,7 +834,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA01 — "Images of $y=\sqrt{3}x$ and $x+y=1$ under $w=z^2$"
 - [ ] P-8CA03 — "Uniform limit of a series of analytic functions on a star-shaped domain is analytic"
 - [ ] P-8CA07 — "A power series with strictly decreasing coefficients bounded below has no zeros in the disk"
-- [ ] P-8CA08 — "Complex differentiability of $x^2-y^2+3y+i(xy-4y)$"
 - [ ] P-8CA11 — "A smooth bijection but no conformal map from the punctured disk onto an annulus"
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
 - [ ] P-8CA14 — "$(z-1)/(z+1)$ maps the first quadrant onto the upper half-disk"
@@ -903,7 +901,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS13E — "Induced representations and Frobenius reciprocity"
 - [ ] P-APAS13G — "Quaternion group of order $8$: conjugacy classes and character table"
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
-- [ ] P-APAS13I — "External tensor product of representations of a direct product of groups"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
 - [ ] P-APAS13M — "Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\CC[x,y]^G$"
 - [ ] P-APAS15A — "Character table of the dihedral group $D_5$"
@@ -933,7 +930,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS23E — "Isomorphism $D_6 \cong S_3 \times C_2$ and the character table of $D_6$"
 - [ ] P-APAS23F — "Rank of the $D_4$-averaging operator on $\CC[X]$ for a $3\times 3$ board"
-- [ ] P-APAS23G — "$S_5$ on ordered pairs; irreducible decomposition and $\dim \operatorname{End}_{S_5}(\CC[X])$"
 - [ ] P-APAS23H — "Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$"
 - [ ] P-APAS24B — "Gershgorin disks contain every eigenvalue"
 - [ ] P-APAS24D — "Diagonal similarity making a matrix norm close to the spectral radius"
@@ -956,7 +952,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP08G — "Symmetric function identity involving hooks"
 - [ ] P-APASP08I — "Schur function expansion via Littlewood-Richardson rule"
 - [ ] P-APASP08J — "Pólya enumeration on the cube and Frobenius image"
-- [ ] P-APASP08K — "Generating function for a Diophantine system via partial fractions"
 - [ ] P-APASP08M — "Construction of a matrix group via Young representation, invariant ring, and Hilbert series"
 - [ ] P-AYDDA — "Carathéodory extension of a measure from an algebra"
 - [ ] P-BK185F09-7-01 — "Cauchy integral formula and a Bessel-type series identity"
@@ -1064,7 +1059,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA15A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
 - [ ] P-CAFA15C — "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
-- [ ] P-CAFA15D — "$\int_0^\infty \cos x/(x^6+1)\,dx$ by residues"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
 - [ ] P-CAFA16B — "Convergence of $\sum_n f(z^n)$ for a self-map $f$ of $\DD$ with $f(0)=0$"
 - [ ] P-CAFA16D — "An analytic function on the disk vanishing on an arc of the boundary is identically zero"
@@ -1333,7 +1327,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-GT5L7 — "$\ZZ^{*2}$ has subgroups isomorphic to $\ZZ^{*n}$ for every $n$"
 - [ ] P-HCAO47 — "A base-ring element invertible in an integral extension is already invertible"
 - [ ] P-HCAX1 — "A continuous isolated singularity is removable"
-- [ ] P-HCAX10 — "A compact-uniform limit of univalent functions can be constant"
 - [ ] P-HCAX14 — "Poles and residues of the cosecant function"
 - [ ] P-HCAX15 — "Schwarz--Christoffel map from the disk to a polygon"
 - [ ] P-HCAX17 — "Laurent coefficients and growth on a punctured disk"
@@ -1348,7 +1341,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-HCAX3 — "Mapping class group of the torus"
 - [ ] P-HCAX5 — "Power series and radius of convergence of the tangent function"
 - [ ] P-HCAX7 — "Complex tori and their automorphisms"
-- [ ] P-HCAX8 — "Zeros of a polynomial derivative remain in a containing half-plane"
 - [ ] P-HCAX9 — "Derivatives under compact-uniform convergence"
 - [ ] P-HFGO13 — "Splitting field of a polynomial"
 - [ ] P-HFGO33 — "Cyclotomic extension of a field"
@@ -1450,7 +1442,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-O2J6S — "Generators of covering subgroups of $S^1\vee S^1$ (UCSD Math 290, sheet 4)"
 - [ ] P-OWMPB — "A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for every nonzero $k$ of lower degree"
 - [ ] P-P6D6X — "$f_n\to f$ almost everywhere in $L^1$ with $\int\abs{f_n}\to\int\abs{f}$ implies $\int f_n\to\int f$"
-- [ ] P-PBXAK — "Maximum principle for harmonic functions"
 - [ ] P-PGDPX — "Integral equals integral of distribution function"
 - [ ] P-PMDP4 — "$F(y)=\int f(x)\cos(yx)\,dx$ is $C^1$ when $f,xf\in L^1(\RR)$"
 - [ ] P-PNCAW — "$\int_{-\infty}^{\infty}\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$ for $a>0$"
@@ -1573,7 +1564,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-WJY6O — "Nilpotent groups are solvable"
 - [ ] P-WK45L — "Galois group of $x^2+9$"
 - [ ] P-WKGRZ — "A $p$-group acting on a set of cardinality not divisible by $p$ has a fixed point"
-- [ ] P-WL7TG — "If $b$ and $x$ are units, a $2\times 2$ product over a commutative ring that vanishes off the bottom-right corner is zero"
 - [ ] P-WOCSV — "Classification of groups of order $4$, and which arise as Galois groups over $\QQ$"
 - [ ] P-WXP5K — "Subgroups of finitely generated free abelian groups and of free groups"
 - [ ] P-X2GQL — "A Noetherian ring has every ideal finitely generated"
