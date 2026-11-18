@@ -115,6 +115,25 @@ audit:
     `proofs/cards/DeltaSimplexChains.lean` at `16c09abaa4`, where the file was before
     lean-categories#141 moved this repository's Lean declarations out of `proofs/`; it is kept as
     the record of that commit, not as the certificate's location.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The barycentric chain claim is certified without routing through `SSet.B`, in
+    `LeanCategories/Homological/BarycentricChains.lean` on `lean-categories` main at
+    <https://github.com/dzackgarza/lean-categories/blob/f345a8b266e4275d951ab1510cdd6de5b072da6b/LeanCategories/Homological/BarycentricChains.lean>:
+    `bchains` with its `boundary` is the chain group on the `(i+1)`-element vertex subsets,
+    `aug_comp_boundary` and `boundary_comp_boundary` make the augmented complex a complex,
+    `homotopy_succ`, `homotopy_zero` and `aug_h_minus` give the cone contraction, `exact_zero`
+    and `exact_succ` its exactness, and `exists_faceFlag_top` states that the card's chains are
+    the barycentric ones. The file's own module note gives the argument for why no
+    subdivision functor is needed: `SSet.stdSimplex.sdIso` identifies the subdivision of `Δ^n`
+    with `SimplexCategory.sd.obj ⦋n⦌`, the nerve of the poset of nonempty vertex subsets, which
+    is the poset of nondegenerate simplices of `Δ^n`. No `sorry` occurs in the file; the turn
+    that produced it reports `#print axioms` exactly `propext`, `Classical.choice`, `Quot.sound`
+    for those declarations at that commit. Not claimed here: the passage from the chain model to
+    the homology of `(Δ^n)^k`, which stays this card's citation of Theorem 2.27 p. 128.
+
 ---
 
 ::: {.problem}
