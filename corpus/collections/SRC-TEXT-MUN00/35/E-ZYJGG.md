@@ -34,8 +34,16 @@ audit:
     a normal space onto any closed copy of Y, and that a compact absolute retract has the
     extension property through an imbedding in a cube (Theorem 34.2, Tychonoff), a
     retraction of the cube, and coordinatewise Tietze extension. The argument is the card's
-    own; no retained set is cited. Munkres §35 Exercise 2, printed p. 224. The printed
+    own; no retained set is cited. Munkres §35 Exercise 6, printed p. 224. The printed
     statement needed no repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Source line repaired: the exercise checked against is Section 35 Exercise 6 of Munkres
+    (parts (a) and (b), part (b) hypothesising that Y is compact), not Exercise 2, as the
+    earlier note on this card said. The proof is unchanged and does prove exactly parts (a)
+    and (b).
 ---
 
 ::: {.exercise}
@@ -51,7 +59,7 @@ Imbed $Y$ in $[0, 1]^J$.]
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 2, printed p. 224, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 6, printed p. 224, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
 
 ::: pf
 
