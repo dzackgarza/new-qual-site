@@ -17,7 +17,7 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured as a Lamport proof of the same argument. Two things were repaired in passing: the
-    solution wrote the restriction as B\restrict_{E_lambda}, a macro the corpus does not define, and it is
+    solution wrote the restriction with a \restrict macro, which the corpus does not define, and it is
     now \restrictionof{B}{E_lambda}; and the step that the union of the per-eigenspace bases is an
     orthonormal basis, which the prose asserted in one sentence, now gives both halves --- orthonormality
     from the mutual orthogonality of distinct eigenspaces, and spanning from their direct sum. The final
