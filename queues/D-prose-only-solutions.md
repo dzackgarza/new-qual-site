@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1412 of the 12429 problem cards that have a solution
+1401 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1412
+- Problems: 1401
 - Problem cards with a solution: 12429
 
-## Problems (1412)
+## Problems (1401)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -495,7 +495,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-IG6PF — "Powers of the line are Baire spaces in the box, product, and uniform topologies"
 - [ ] E-J5IB5 — "Surfaces with k holes"
 - [ ] E-J7FPE — "Coverings of the torus are classified by rank"
-- [ ] E-JW56I — "Countability axioms of the minimal uncountable well-ordered set"
 - [ ] E-KD56B — "First countability of the lower limit topology and the ordered square"
 - [ ] E-KIH81 — "Maximal collections with the finite intersection property"
 - [ ] E-KS2BT — "Completeness of the compact convergence topology over $\sigma$-compact domains"
@@ -771,9 +770,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
-- [ ] E-V7QV9 — "Comparing the nine topologies on a three-point set"
 - [ ] E-V98N5 — "First-countable separable or Lindelof topological groups are second countable"
-- [ ] E-VBWDH — "Uniform boundedness principle"
 - [ ] E-VLQ5H — "The uncountable fundamental group of the infinite earring"
 - [ ] E-VPZUZ — "Equicontinuous pointwise limits converge compactly"
 - [ ] E-VXB5V — "Discrete spaces have dimension zero"
@@ -834,7 +831,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGHHYPSECTION — "A hypersurface section drops the dimension by exactly one"
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
 - [ ] P-AGHTHREECOMP — "Decomposing $V(x^2-yz,\ xz-x)$ into irreducible components"
-- [ ] P-APA17B — "Simultaneous orthogonal diagonalization of commuting real symmetric matrices"
 - [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
 - [ ] P-APA17F — "Examples: real irreducible with non-scalar endomorphism; infinite indecomposable not irreducible"
 - [ ] P-APAS11B — "Twisting irreducible characters by linear characters, and conjugate-partition signs"
@@ -958,9 +954,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
-- [ ] P-CAF13C — "A holomorphic $f$ with $\abs f\leq 1$ on $\partial\DD$ and no fixed point there has exactly one fixed point in $\DD$"
 - [ ] P-CAF13F — "A conformal map from the slit disk does not extend to a boundary homeomorphism"
-- [ ] P-CAF24B — "Entire function with a rational Taylor coefficient at every real point is a polynomial"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
 - [ ] P-CAF24G — "Bounded harmonic function on the upper half-plane vanishing on the boundary is constant"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
@@ -1006,7 +1000,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP13B — "True or False: harmonic critical points, Mittag-Leffler interpolation, harmonic limits, and polynomial approximation"
 - [ ] P-CASP13C — "Laurent series of $1/(z^3-4z)$ on two annuli"
 - [ ] P-CASP13F — "Identity theorem from boundary vanishing on an arc of a simply connected domain"
-- [ ] P-CASP15A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CASP15B — "True or false: five statements in complex analysis"
 - [ ] P-CASP15C — "Roots of $z^4-6z+3$ in an annulus"
 - [ ] P-CASP15F — "Sum of zeros minus poles of an elliptic function in a fundamental parallelogram"
@@ -1031,7 +1024,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP23A — "Power series with radius of convergence 1: divergence, absolute convergence, singularities, and nonnegative coefficients"
 - [ ] P-CASP23B — "Product of distances from a point on T to given points is at least one"
 - [ ] P-CASP23C — "A holomorphic function with |f|>m on the boundary and |f(0)|<m has a zero in D"
-- [ ] P-CASP23D — "Injectivity from derivative condition and fixed-point rigidity for self-maps of D"
 - [ ] P-CASP23F — "Green's function on $\DD\setminus\theset{a}$ and failure of the Dirichlet problem"
 - [ ] P-CASP25B — "Mobius and conformal maps from a sector to the unit disk"
 - [ ] P-CASP25C — "Square root of an injective holomorphic function with f(0)=0"
@@ -1206,7 +1198,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-FQJMB — "$e^x(\cos y+i\sin y)$ is the unique entire solution of $E'=E$, $E(0)=1$"
 - [ ] P-GLKAB — "Discriminant of a polynomial"
 - [ ] P-GT5L7 — "$\ZZ^{*2}$ has subgroups isomorphic to $\ZZ^{*n}$ for every $n$"
-- [ ] P-HCAO47 — "A base-ring element invertible in an integral extension is already invertible"
 - [ ] P-HCAX1 — "A continuous isolated singularity is removable"
 - [ ] P-HCAX14 — "Poles and residues of the cosecant function"
 - [ ] P-HCAX17 — "Laurent coefficients and growth on a punctured disk"
@@ -1340,13 +1331,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-RASP23C — "Multiplicative convolution on R_+"
 - [ ] P-RASP23F — "Interpolation of weak-type bounds"
 - [ ] P-RASP24F — "Fourier uncertainty principle for $L^2$ functions supported on a set of finite measure"
-- [ ] P-SAIVF — "A function in $L^2([0,1])$ orthogonal to every polynomial vanishes a.e."
 - [ ] P-SIGK5 — "Jordan forms of a $5\times 5$ matrix with characteristic polynomial $(x-3)^5$ and minimal polynomial $(x-3)^2$"
 - [ ] P-SK4KT — "When does a matrix with eigenvalues $\pm 1$ satisfy $A^2=I$?"
 - [ ] P-SMJE7 — "The limit $\lim_{n\to\infty}\int_1^n \frac{n e^{-x}}{1+nx^2}\sin(x/n)\,dx$"
 - [ ] P-TBXVH — "The $\varepsilon$-$\delta$ definition of $\lim_{x\to a}f(x)=\ell$, and $\lim_{x\to 2}\frac{2x+1}{x^2+1}$"
 - [ ] P-TCJBY — "A sup-norm-closed subspace of $C[0,1]$ complete in $\norm{\cdot}_2$ is finite-dimensional"
-- [ ] P-TGH5F — "A finite spanning set in $\RR^n$ contains a basis of its span"
 - [ ] P-TOP-WORKSHOP-2020-WS1B-HW1 — "The definition of a topology on a set"
 - [ ] P-TOP-WORKSHOP-2020-WS1B-HW3 — "Topologies generated by subbases"
 - [ ] P-TOP-WORKSHOP-2020-WS2A-HW1 — "The separation axioms $T_0$ through $T_4$"
