@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1602 of the 12430 problem cards that have a solution
+1582 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1602
+- Problems: 1582
 - Problem cards with a solution: 12430
 
-## Problems (1602)
+## Problems (1582)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -28,7 +28,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-2V2VL — "Compact subspaces of metric spaces are closed and bounded"
 - [ ] E-3SU0X — "Quotient topology on a three-point image of the line"
 - [ ] E-81J56 — "Simply connected planar open sets contain the bounded complements of their curves"
-- [ ] E-AFAON — "Arithmetic of convergent sequences"
 - [ ] E-ALTNF — "Comparing five topologies on the real line"
 - [ ] E-AMD-5UFPG7F5 — "An ideal is maximal iff the quotient is a field"
 - [ ] E-AMD-74T5EHRR — "The center of $S_n$ is trivial for $n\geq 3$"
@@ -497,7 +496,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HK-XY48 — "Inverse of a $4 \times 4$ upper-triangular matrix"
 - [ ] E-HM213A17-118 — "Chain rule for the nonlinearity of a holomorphic map"
 - [ ] E-HM213A17-119 — "Chain rule for the Schwarzian derivative"
-- [ ] E-I41R1 — "Compact subsets of functions vanishing at infinity"
 - [ ] E-IG6PF — "Powers of the line are Baire spaces in the box, product, and uniform topologies"
 - [ ] E-J5IB5 — "Surfaces with k holes"
 - [ ] E-J7FPE — "Coverings of the torus are classified by rank"
@@ -514,7 +512,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-LESK3 — "Strong hypotheses short of metrizability"
 - [ ] E-LI4O5 — "Components of metrizable locally euclidean spaces are manifolds"
 - [ ] E-LIN4R — "Linear continua in the dictionary order"
-- [ ] E-LZX97 — "Local metrizability criteria as cases of the Smirnov metrization theorem"
 - [ ] E-MC21D — "Density of uncountable products of the line"
 - [ ] E-MD9QR — "The ordered square is locally connected but not locally path connected"
 - [ ] E-ML7VU — "The topologist's sine curve has dimension one"
@@ -865,7 +862,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA37 — "Holomorphic interpolation on the sequence $1/n$"
 - [ ] P-8CB01 — "Implicit function for $x^2-2y+y^3=0$ over $\RR$ and $\CC$"
 - [ ] P-8CB03 — "$\int_0^\infty\frac{\cos x}{1+x^4}\,dx$"
-- [ ] P-8CB04 — "Compact convergence of analytic functions and their derivatives, and differentiation of power series"
 - [ ] P-8CB05 — "Conformal map of the slit upper half-plane onto the disk"
 - [ ] P-8PR01 — "Word definitions of surjective, not injective, uniformly continuous, and not uniformly continuous"
 - [ ] P-8RA07 — "The difference quotient of a $C^1$ function is continuous on $\RR^2$"
@@ -890,14 +886,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGH213SURJLOCAL — "Surjectivity of a sheaf morphism is a local lifting condition"
 - [ ] P-AGH214IMSUBSHEAF — "Sheafification preserves injectivity, and the image is a subsheaf"
 - [ ] P-AGH215ISOINJSURJ — "A morphism of sheaves is an isomorphism exactly when it is injective and surjective"
-- [ ] P-AGH26HOMDIM — "The homogeneous coordinate ring satisfies $\dim S(Y) = \dim Y + 1$"
 - [ ] P-AGH29PROJCLOSURE — "Projective closure of an affine variety, and the twisted cubic curve"
 - [ ] P-AGHCOORDCHAR — "Which $k$-algebras are affine coordinate rings"
 - [ ] P-AGHDIMTOPOLOGY — "Dimension under subspaces, open covers, and closed subsets"
 - [ ] P-AGHGENSBOUND — "$r$ generators bound the codimension of every component by $r$"
 - [ ] P-AGHHYPSECTION — "A hypersurface section drops the dimension by exactly one"
-- [ ] P-AGHNOETHSPACE — "Four characterisations of a Noetherian space, and what they force"
-- [ ] P-AGHOPENDENSE — "Opens are dense in an irreducible space, and closures stay irreducible"
 - [ ] P-AGHPLANECONIC — "Coordinate rings of the parabola, the hyperbola, and any conic"
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
 - [ ] P-AGHTHREECOMP — "Decomposing $V(x^2-yz,\ xz-x)$ into irreducible components"
@@ -979,7 +972,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP08K — "Generating function for a Diophantine system via partial fractions"
 - [ ] P-APASP08M — "Construction of a matrix group via Young representation, invariant ring, and Hilbert series"
 - [ ] P-AYDDA — "Carathéodory extension of a measure from an algebra"
-- [ ] P-BFLEH — "$\int_0^\infty\frac{\cos x-\cos 4x}{x^2}\,dx$"
 - [ ] P-BK185F09-7-01 — "Cauchy integral formula and a Bessel-type series identity"
 - [ ] P-BK185F09-7-02 — "Liouville consequences from one-sided real-part bounds"
 - [ ] P-BK185F09-7-03 — "Four rigidity problems for entire functions"
@@ -1059,9 +1051,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-C53SG — "Equality of the iterated integrals of $\frac{(x-y)\sin(xy)}{x^2+y^2}$ on $[0,1]^2$"
 - [ ] P-CAF05B — "Local representation of an analytic function near a zero"
 - [ ] P-CAF05C — "Minimum modulus principle for analytic functions on bounded domains"
-- [ ] P-CAF05E — "Evaluation of the sinc integral via residue calculus"
 - [ ] P-CAF05F — "Statement and proof of Harnack's inequality for harmonic functions"
-- [ ] P-CAF06C — "Conformal map from a simply connected region to a disk without using the full Riemann mapping theorem"
 - [ ] P-CAF06F — "Uniform convergence of Taylor series on compact subsets of the unit disk"
 - [ ] P-CAF06G — "Interpolation by entire functions at prescribed points"
 - [ ] P-CAF07A — "True or False: subsequential convergence, contour integrals, entire functions omitting a disk, biholomorphisms, and harmonicity"
@@ -1072,7 +1062,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09F — "An entire function with real plus imaginary part bounded is constant"
 - [ ] P-CAF10A — "True or False: analytic continuation, germs, subsequences, and domain automorphisms"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
-- [ ] P-CAF10C — "Uniform limit of injective analytic functions is injective or constant"
 - [ ] P-CAF10E — "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequality"
 - [ ] P-CAF11A — "True or False: infinite products, bounded functions on punctured plane, essential singularities, growth rates, and Schwarz lemma"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
@@ -1099,7 +1088,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA19B — "Zero-free disk and characterization of extremal functions for bounded analytic functions"
 - [ ] P-CAFA19D — "Roots of $z^7-2z^5+b$ in $\DD$ and in $1\leq\abs z<2$"
 - [ ] P-CAFA19F — "Analytic functions on C minus origin with subquadratic growth"
-- [ ] P-CAFA19G — "The Perron function on the punctured disk with trivial boundary data is zero"
 - [ ] P-CAFA20B — "The unique real zero of $a+z-e^{2z}$ in the left half-plane"
 - [ ] P-CAFA20D — "Entire functions with prescribed modulus on the unit circle and third derivative"
 - [ ] P-CAFA20G — "Dirichlet problem on a domain between two circles"
@@ -1107,7 +1095,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA21D — "Sequence of holomorphic self-maps of the disk converging to 1"
 - [ ] P-CAFA21F — "Entire function with modulus 1 on the unit circle"
 - [ ] P-CAFA22B — "The zero of $e^{tz} + z + 1$ in the left half-plane"
-- [ ] P-CAFA22C — "Punctured disk and annulus are not conformally equivalent"
 - [ ] P-CAFA22D — "Mean value inequality and completeness of $A^1(G)$"
 - [ ] P-CAFA22F — "Polynomial minus exponential has infinitely many zeros"
 - [ ] P-CAFA23C — "Image of a nonconstant entire function is dense"
@@ -1136,7 +1123,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP09B — "Zeros of $z^7+2z^3+4$ in the first quadrant"
 - [ ] P-CASP09C — "Partial fraction identity for four distinct complex numbers via residues"
 - [ ] P-CASP09F — "Statement and proof of the Weierstrass Product Theorem"
-- [ ] P-CASP09G — "The Fourier transform of $(\sin x/x)^2$"
 - [ ] P-CASP11C — "Analytic continuation along different paths yielding different germs (Monodromy failure)"
 - [ ] P-CASP12A — "True or False: entire functions with prescribed derivatives, maximum modulus, Picard's theorem, fixed points, and complex structures"
 - [ ] P-CASP12B — "Normal families characterized by coefficient bounds"
@@ -1156,7 +1142,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP17F — "Roots of $z^{87}+36z^{57}+71z^4+z^3-z+1$ in the annulus $1\leq\abs z\leq 2$"
 - [ ] P-CASP17H — "Bounded harmonic functions on C and on the upper half-plane with zero boundary"
 - [ ] P-CASP18B — "$\int_0^\infty dt/(t^3+1)$ by residues"
-- [ ] P-CASP18C — "An analytic self-map of a simply connected region that is not the identity has at most one fixed point"
 - [ ] P-CASP18D — "Uniform convergence of harmonic functions on the boundary implies convergence in the disk"
 - [ ] P-CASP18F — "Pointwise convergence with bounded derivatives implies uniform convergence on compact subsets"
 - [ ] P-CASP19C — "A holomorphic function on $B(0,1+\varepsilon)$ with $\abs f<1$ on $\abs z=1$ has a unique fixed point in $\DD$"
@@ -1172,7 +1157,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP21F — "Uniform convergence of harmonic functions implies convergence of partial derivatives"
 - [ ] P-CASP22B — "Schwarz lemma for polynomial preimages: zeros, bounds, and equality cases"
 - [ ] P-CASP22D — "Equivalence of two-component complement and rational approximation with prescribed poles"
-- [ ] P-CASP22E — "Poles of a meromorphic limit appear in the approximating sequence"
 - [ ] P-CASP22F — "A bounded harmonic function on $\DD$ with $\limsup\leq 0$ at all but one boundary point"
 - [ ] P-CASP23A — "Power series with radius of convergence 1: divergence, absolute convergence, singularities, and nonnegative coefficients"
 - [ ] P-CASP23B — "Product of distances from a point on T to given points is at least one"
@@ -1338,7 +1322,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-D4X7R — "Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-DE22H — "Elementary divisors and invariant factors of a given $\QQ[x]$-module"
 - [ ] P-DQNN6 — "Equidistribution on $[0,1]$ iff empirical measures converge weakly against $C[0,1]$"
-- [ ] P-EMCA10 — "Rouché's theorem and local bijectivity where the derivative is nonzero"
 - [ ] P-EMCA8 — "Weierstrass's theorem on locally uniform limits of holomorphic functions"
 - [ ] P-EMCA9 — "Nonconstant entire functions have dense image"
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
@@ -1398,7 +1381,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JCEPZ — "Convergence and limit of $x_{n+1}=\frac{1+x_n}{2+x_n}$ with $x_1>0$"
 - [ ] P-JHI3Z — "Nilpotent matrix"
 - [ ] P-JHU4547C1 — "Absolute continuity of the Lebesgue integral: small-measure sets have small integrals"
-- [ ] P-JHU4547C2 — "Wirtinger's inequality on $[0,\pi]$ for functions vanishing at the endpoints"
 - [ ] P-JHUFA01RAB — "Convolution of functions vanishing at infinity"
 - [ ] P-JHUFA02CAB — "Monotone convergence for an increasing sequence with bounded integrals"
 - [ ] P-JHUFA05ANA — "$\norm{f_n}_2^2\le n^{-2}$ forces $f_n\to0$ a.e."
@@ -1411,13 +1393,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUMAY12RA7 — "Integral transform is absolutely continuous and vanishes at infinity"
 - [ ] P-JHUSP01RAA — "Mollifier convolutions converge in $L^p$ but not in $L^\infty$"
 - [ ] P-JHUSP01RAB — "Absolute continuity of the Lebesgue integral"
-- [ ] P-JHUSP01RAC — "Lower semicontinuous functions and lower Riemann sums"
 - [ ] P-JHUSP01RAE — "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
 - [ ] P-JHUSP05ANB — "The integral operator $g(x)=\int_x^1 f(t)/t\,dt$ on $L^1([0,1])$"
 - [ ] P-JHUSP07ANH — "A function and its Fourier transform cannot both have compact support"
 - [ ] P-JHUSP08ANC — "Absolute convergence of the Fourier series of a C1 periodic function"
 - [ ] P-JHUU51RA1 — "Quantitative Riemann-Lebesgue decay under vanishing endpoint conditions"
-- [ ] P-JHUU51RA4 — "A function whose every set-integral is bounded by measure is at most 1 a.e."
 - [ ] P-JVAGD — "Layer-cake formula with an absolutely continuous weight: $\int_{\RR}\varphi\circ f\,dx=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$"
 - [ ] P-JVZMJ — "Smooth negations of a quantified inequality, the extreme value theorem, and a biconditional"
 - [ ] P-JWOJ5 — "The integral of the log of the chord length over the circle"
