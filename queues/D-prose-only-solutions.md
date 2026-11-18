@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1394 of the 12429 problem cards that have a solution
+1391 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1394
+- Problems: 1391
 - Problem cards with a solution: 12429
 
-## Problems (1394)
+## Problems (1391)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -952,9 +952,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
-- [ ] P-CAF13F — "A conformal map from the slit disk does not extend to a boundary homeomorphism"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
-- [ ] P-CAF24G — "Bounded harmonic function on the upper half-plane vanishing on the boundary is constant"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
 - [ ] P-CAFA15C — "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
@@ -1223,7 +1221,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA02CAB — "Monotone convergence for an increasing sequence with bounded integrals"
 - [ ] P-JHUFA08ANC — "$\ell^\infty$ is not separable"
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
-- [ ] P-JHUMAY10ANI — "Differentiation under the integral sign with a dominated partial derivative"
 - [ ] P-JHUSP01RAE — "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
 - [ ] P-JHUSP07ANH — "A function and its Fourier transform cannot both have compact support"
 - [ ] P-JHUSP08ANC — "Absolute convergence of the Fourier series of a C1 periodic function"
