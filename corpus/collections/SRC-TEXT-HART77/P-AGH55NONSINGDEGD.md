@@ -179,6 +179,22 @@ audit:
     correction; its text at its date is at 96b162602a, and the second event of
     2026-11-15 above records what it had said, so nothing is lost and both
     events stand as written.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step's first sentence said that both equations and both computations are
+    published, and cited as the second a Mathematics Stack Exchange answer. An
+    answer on that site is a user post and not a publication, so the sentence
+    was false of the source and is corrected: the Stacks Project is kept as the
+    published treatment of the first equation and of the computation, the four-
+    term equation is named as a user answer with no printed page cited for it,
+    and the step is marked as the card's own checked transcription. Checked in
+    this pass: the tag file `tmp/sources/stacks-tags/0BYA.md` for the Stacks
+    text, the text version of the answer, and the exercise as printed at
+    Hartshorne I.5.5, printed p. 37 (PDF p. 52 of the checked-in extraction).
+    Not checked in this pass: no other publication was searched for the
+    characteristic-3 case; COMPLAINTS.md records that state.
 ---
 
 ::: {.problem}
@@ -233,7 +249,7 @@ $$
 is nonsingular when $p=3$.
 
 ::: pf-proof
-Both equations and both computations are published: the first is the Stacks Project, *Algebraic Curves*, Section 53.9, tag 0BYA (text version `tmp/sources/stacks-tags/0BYA.md`), and the second is Nils Matthes, answer 705947 to Mathematics Stack Exchange question 705657 (text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`).
+The first equation and both computations are published: the Stacks Project, *Algebraic Curves*, Section 53.9, tag 0BYA (text version `tmp/sources/stacks-tags/0BYA.md`). The second is not: it is Nils Matthes's answer 705947 to Mathematics Stack Exchange question 705657 (text version `tmp/sources/mse-705657-nonsingular-projective-variety-of-degree-d.md`), which is a user post and not a publication, so no printed page is cited for it. This step is the card's own checked transcription of that answer.
 Since $p\mid d$ one has $d=0$ and $d-1=-1\ne0$ in $k$, and both hold equally in every extension field of $k$; the computations below use nothing else about the field, so a curve nonsingular over $k$ is nonsingular over the algebraic closure.
 
 *The first equation.*

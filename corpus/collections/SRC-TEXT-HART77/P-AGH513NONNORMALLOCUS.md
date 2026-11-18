@@ -110,6 +110,21 @@ audit:
     citation was checked and is false of this file, which names
     tmp/sources/hartshorne-solutions-egbert.md at that line.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step called a Mathematics Stack Exchange answer "the published proof".
+    An answer on that site is a user post and not a publication, so the words
+    were false of the source and are corrected: the answer is named as a user
+    post with no printed page cited for it, and the step is marked as the card's
+    own, which is what it is, the closedness being proved there by the
+    annihilator of the finite module $\overline A/A$. Checked in this pass: the
+    text version of the answer named on the card, the Shichijo page the step
+    also cites, and the exercise as printed at Hartshorne I.5.13, printed p. 38
+    (PDF p. 53 of the checked-in extraction). Not checked in this pass: no
+    further publication was searched for the closedness of the nonnormal locus;
+    COMPLAINTS.md records the state.
 ---
 
 ::: {.problem}
@@ -202,7 +217,7 @@ W=\bigcap_i\bigl(U\sm V(A:_Ag_i)\bigr)=\bigcap_i\bigcup_{s\in(A:_Ag_i)}D(s),
 $$
 the union being over all denominators of $g_i$: an element $g\in K$ lies in $\mco_P=A_{\mfm_P}$ exactly when some $s\in A\sm\mfm_P$ has $sg\in A$, that is, exactly when $(A:_Ag)\not\subseteq\mfm_P$. The annihilator argument above is a different and shorter route to the openness of $W$, that is to the closedness of its complement $Z(\Ann_A M)$, which is what the exercise asks for; the ideal $(A:_Ag_i)$ is the route the source's third display was reaching for.
 
-For a single rational function $h\in K$ the set $\theset{P\in U \st h\notin\mco_P}$ is the closed set $V(I(h))$ with $I(h)=\theset{a\in A \st ah\in A}$, by that same equivalence, and the nonnormal locus is the finite union of these over the finitely many generators of $\overline A$. This is the published proof: KReiser, accepted answer 4224763 to Mathematics Stack Exchange question 4224382, *Hartshorne Exercise I.5.13: subset of nonnormal points is proper and closed*, text version `tmp/sources/mse-4224382-hartshorne-i-5-13-nonnormal-locus-closed.md`, argues "$y$ is a normal point exactly when $A(Y)_{\mathfrak m}=\overline{A(Y)}_{\mathfrak m}$", then "it suffices to show that for a rational function $h\in K$ the set of $y\in Y$ so that $h\notin\mathcal{O}_{Y,y}$ is closed. Let $I(h)$ be the ideal of $A$ given by $\{a\in A(Y) \mid ah\in A(Y)\}$: this is known as the ideal of denominators of $h$. I claim that the vanishing locus of $I(h)$ is exactly the set of points where $h\notin\mathcal{O}_{Y,y}$", and closes with "$I(h)\subset\mathfrak m$ iff $h\notin\mathcal{O}_{Y,y}$". His properness is not in his answer at all: the nonempty open normal set, read off the finiteness of integral closure, is the preliminary of the asker (user940160) in the question body, $D(g_1\cdots g_n)\cap Y$ being normal because $\overline{A(Y)}_{g_1\cdots g_n}=A(Y)_{g_1\cdots g_n}$, and it is what makes the nonnormal locus a proper subset. KReiser's answer proves the closedness. Step [](#s4){.pf-ref} proves properness from the annihilator of the same finite module, so the finiteness of integral closure enters this proof once, in step [](#s1){.pf-ref}.
+For a single rational function $h\in K$ the set $\theset{P\in U \st h\notin\mco_P}$ is the closed set $V(I(h))$ with $I(h)=\theset{a\in A \st ah\in A}$, by that same equivalence, and the nonnormal locus is the finite union of these over the finitely many generators of $\overline A$. The same argument is KReiser's, accepted answer 4224763 to Mathematics Stack Exchange question 4224382, *Hartshorne Exercise I.5.13: subset of nonnormal points is proper and closed*, text version `tmp/sources/mse-4224382-hartshorne-i-5-13-nonnormal-locus-closed.md`; that answer is a user post and not a publication, so no printed page is cited for it, and this step is the card's own, in the annihilator form above. He argues "$y$ is a normal point exactly when $A(Y)_{\mathfrak m}=\overline{A(Y)}_{\mathfrak m}$", then "it suffices to show that for a rational function $h\in K$ the set of $y\in Y$ so that $h\notin\mathcal{O}_{Y,y}$ is closed. Let $I(h)$ be the ideal of $A$ given by $\{a\in A(Y) \mid ah\in A(Y)\}$: this is known as the ideal of denominators of $h$. I claim that the vanishing locus of $I(h)$ is exactly the set of points where $h\notin\mathcal{O}_{Y,y}$", and closes with "$I(h)\subset\mathfrak m$ iff $h\notin\mathcal{O}_{Y,y}$". His properness is not in his answer at all: the nonempty open normal set, read off the finiteness of integral closure, is the preliminary of the asker (user940160) in the question body, $D(g_1\cdots g_n)\cap Y$ being normal because $\overline{A(Y)}_{g_1\cdots g_n}=A(Y)_{g_1\cdots g_n}$, and it is what makes the nonnormal locus a proper subset. KReiser's answer proves the closedness. Step [](#s4){.pf-ref} proves properness from the annihilator of the same finite module, so the finiteness of integral closure enters this proof once, in step [](#s1){.pf-ref}.
 
 :::
 

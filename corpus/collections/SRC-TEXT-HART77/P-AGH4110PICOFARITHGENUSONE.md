@@ -103,6 +103,20 @@ audit:
     conclusion. No claim is weakened: the statement, steps s1--s5, step s7 and
     every earlier audit event stand unchanged.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The step that places the point of a degree-zero class in $X_{\reg}$ rested
+    on a Mathematics Stack Exchange answer and carried no mark saying so. An
+    answer on that site is a user post and not a publication, so the step is now
+    marked as the card's own and says that no printed page is cited for that
+    argument, which is the two-case one of the answer and is written out in full
+    below the sentence. Checked in this pass: the step's own text against the
+    answer named on it, and the exercise as printed at Hartshorne IV.1.10,
+    printed p. 299 (PDF p. 314 of the checked-in extraction). Not checked in
+    this pass: the NTU set the remark also cites was not reopened, and no
+    publication was searched for this step; COMPLAINTS.md records the state.
 ---
 
 ::: {.problem}
@@ -334,7 +348,7 @@ $P$ is a regular point of $X$.
 
 ::: pf-proof
 
-The argument is the two-case one of KReiser, answer 4978046 (https://math.stackexchange.com/a/4978046), posted 2024-09-29 to Math Stack Exchange question 4962032, "Hartshorne Exercise IV.1.10: making sure a point is nonsingular" (asked by François Gatine on 2024-08-23), stated there for a non-regular point $Q$ with $\mcl\cong\mco_X(Q-P_0)$; here $Q$ is $P$ and that identification is the one displayed above.
+This step is the card's own. Its argument is the two-case one of KReiser, answer 4978046 (https://math.stackexchange.com/a/4978046), posted 2024-09-29 to Math Stack Exchange question 4962032, "Hartshorne Exercise IV.1.10: making sure a point is nonsingular" (asked by François Gatine on 2024-08-23), which is a user answer and not a publication, so no printed page is cited for it; it is stated there for a non-regular point $Q$ with $\mcl\cong\mco_X(Q-P_0)$, here $Q$ is $P$ and that identification is the one displayed above, and the two ingredients the answer leaves to the reader are supplied below.
 
 Let $\nu:\widetilde X\to X$ be the normalization (II, Ex. 3.8). Since $X$ is of finite type over $k$, $\nu$ is finite, and $\widetilde X$ is a normal integral curve, finite over the projective $X$ and hence projective, so a nonsingular one. Because $\mco_{X,P_0}$ is a discrete valuation ring and so integrally closed (I.6.2A), $\nu$ is an isomorphism over $X_{\reg}$; hence $\nu^{-1}(P_0)$ is a single point and $\deg\nu^*\mco_X(P_0)=1$. Since $\nu$ induces an isomorphism of function fields, the map of local rings $\mco_{X,P}\to\mco_{\widetilde X,\widetilde P}$ is injective for each $\widetilde P$ above $P$. Suppose that $P$ is not regular, and let $a\in\mco_{X,P}$ be a local equation of $Z$ at $P$.
 
