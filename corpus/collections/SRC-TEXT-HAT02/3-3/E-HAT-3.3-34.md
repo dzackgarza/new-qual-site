@@ -73,6 +73,15 @@ audit:
     connecting map is carried to $i_*$ up to the boundary term. Not claimed: that the diagram
     commutes with no sign at all, which the exercise does not ask and which the $(-1)^k$ of the
     third square contradicts; nor any statement for coefficients other than a commutative ring.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 260 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 269, whose running
+    folio reads 260. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -88,7 +97,7 @@ $$
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves this exercise. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 34, printed p. 264, and against the cap product formulas of pp. 239--240, in particular
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves this exercise. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 34, printed p. 260, and against the cap product formulas of pp. 239--240, in particular
 $$
 \partial(\sigma\frown\varphi)=(-1)^{\ell}\bigl(\partial\sigma\frown\varphi-\sigma\frown\delta\varphi\bigr)
 $$
