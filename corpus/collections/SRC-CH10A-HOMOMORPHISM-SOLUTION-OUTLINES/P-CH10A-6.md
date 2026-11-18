@@ -26,12 +26,62 @@ Is this mapping a homomorphism if $\int f$ denotes the antiderivative of $f$ tha
 :::
 
 ::: {.solution}
-Let $\phi : \RR [ x ] \to \RR [ x ]$ be defined by $f \mapsto \int f$. The antiderivative through $(0,0)$ is the one with zero constant term: for $f = a_0 + a_1x + \cdots + a_nx^n$,
-$$\phi(f) = a_0x + \frac{a_1}{2}x^2 + \cdots + \frac{a_n}{n+1}x^{n+1}.$$
-This formula is additive in the coefficients, so $\phi ( f + g ) = \phi ( f ) + \phi ( g )$ for all $f , g \in \RR [ x ]$, and $\phi$ is a homomorphism.
 
-The kernel of $\phi$ is the set of polynomials that map to the identity $0$: $\ker \phi = \{ f \st \int f = 0 \} = \{ a _ { 0 } + a _ { 1 } x + \dotsc + a _ { n } x ^ { n } \st a _ { 0 } x + \frac { a _ { 1 } } { 2 } x ^ { 2 } + \dotsc + \frac { a _ { n } } { n + 1 } x ^ { n + 1 } = 0 \} = \{ a _ { 0 } = a _ { 1 } = \dotsc = a _ { n } = 0 \} = \{ 0 \}$
+The argument is the card's own: the antiderivative with zero constant term is additive in the coefficients, and the version through $(0,1)$ fails additivity at the constant term.
 
-If the function $\textstyle \int f$ goes through (0,1) instead, it is not a homomorphism.
-This is because $\phi ( f + g ) ( 0 ) = 1$ but $( \phi ( f ) + \phi ( g ) ) ( 0 ) = \phi ( f ) ( 0 ) + \phi ( g ) ( 0 ) = 1 + 1 = 2$ , so the functions are not the same.
+::: pf
+
+::: {.pf-step #formula}
+
+$\phi(f)=a_{0}x+\frac{a_{1}}{2}x^{2}+\cdots+\frac{a_{n}}{n+1}x^{n+1}$ for $f=a_{0}+a_{1}x+\cdots+a_{n}x^{n}$.
+
+::: pf-proof
+
+The antiderivative of $a_{k}x^{k}$ is $\frac{a_{k}}{k+1}x^{k+1}$, and the one passing through $(0,0)$ is the one whose value at $0$ is $0$, which holds for this expression since every term vanishes at $0$. Uniqueness of the antiderivative up to an additive constant makes this the only such polynomial.
+
+:::
+
+:::
+
+::: {.pf-step #additive}
+
+$\phi(f+g)=\phi(f)+\phi(g)$.
+
+::: pf-proof
+
+Addition in $\RR[x]$ is coefficientwise, so the coefficients of $f+g$ are $a_{k}+b_{k}$ where those are the coefficients of $f$ and $g$. By step [](#formula){.pf-ref}, $\phi(f+g)=\sum_{k}\frac{a_{k}+b_{k}}{k+1}x^{k+1}=\sum_{k}\frac{a_{k}}{k+1}x^{k+1}+\sum_{k}\frac{b_{k}}{k+1}x^{k+1}=\phi(f)+\phi(g)$. Hence $\phi$ is a homomorphism of the additive group $G=\RR[x]$.
+
+:::
+
+:::
+
+::: {.pf-step #kernel}
+
+$\ker\phi=\{0\}$.
+
+::: pf-proof
+
+$\phi(f)=0$ means every coefficient $\frac{a_{k}}{k+1}$ vanishes, and a field of characteristic $0$ has $k+1\ne0$, so $a_{k}=0$ for all $k$ and $f$ is the zero polynomial. Conversely $\phi(0)=0$. So the kernel is trivial.
+
+:::
+
+:::
+
+::: {.pf-step #shifted}
+
+The map taking $f$ to the antiderivative through $(0,1)$ is not a homomorphism.
+
+::: pf-proof
+
+That antiderivative is $\psi(f)=\phi(f)+1$, so $\psi(f+g)=\phi(f)+\phi(g)+1$ while $\psi(f)+\psi(g)=\phi(f)+\phi(g)+2$; these differ by the constant $1$, and $1\ne0$ in $\RR[x]$. Equivalently $\psi(0)=1\ne0$, and a homomorphism must send $0$ to $0$:
+$$
+\boxed{\ker\phi=\{0\},\qquad \psi(f)=\phi(f)+1\ \text{is not a homomorphism because } \psi(0)=1.}
+$$
+
+:::
+
+:::
+
+:::
+
 :::
