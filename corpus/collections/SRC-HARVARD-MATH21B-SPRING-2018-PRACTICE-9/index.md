@@ -11,7 +11,7 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/solution9.pdf
-- http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html
+- https://people.math.harvard.edu/~knill/teaching/math21b2018/final/practice9.pdf
 source:
   source_kind: university-exam
   institution: harvard
