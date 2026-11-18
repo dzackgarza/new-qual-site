@@ -44,6 +44,11 @@ audit:
     consistent, and the citation is to a named lemma rather than to folklore, but the result is
     research-level for an exercise the book marks as more difficult, so the claim of (b) should be
     read as a citation. No correction was needed.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure under the corrected partition rule (this card was outside the old split-on-first-hyphen residue). Part (a) is the card's own: the interior and edge-interior cases, the plain fact that the link at a vertex is finite and 2-regular (each edge-germ at v is a side of exactly two corners, possibly of the same corner for a loop), its connectivity, and the cone-on-the-link description. What I added to the argument: the counting with multiplicity in the 2-regular statement, and the reason L_v is connected (a component is a quotient of finitely many triangles glued pairwise along edge-sides, and each such gluing that puts two vertices over v joins the corresponding corners). Part (b) remains a citation, as the card had it: Benedetti arXiv:1903.12596v1 Lemma 2.14 p. 7, with the definitions on p. 1 matching this exercise, and the paper's standing hypothesis chi(S) - #V < 0 now verified on the card (F = 2k, E = 3k, chi - #V = -k). The lemma's proof is not reproduced, which the card states.
 ---
 
 ::: {.problem}
@@ -54,13 +59,65 @@ audit:
 :::
 
 ::: {.solution}
-Let $X$ be the quotient. A point in the interior of a triangle has a disk neighborhood. An interior point of a quotient edge has two half-disk neighborhoods, one from each paired edge, glued along their diameter; their union is a disk.
+Part (a) is the card's own argument. Part (b) is not proved on this card: it is the published lemma cited below, whose hypotheses are checked here — **Benedetti, *On ideal triangulations of surfaces up to branched transit equivalences*, arXiv:1903.12596v1, Lemma 2.14, p. 7** (with the definitions of p. 1).
 
-At a quotient vertex $v$, take a short segment across each triangle corner mapping to $v$. These segments form the link $L_v$. Each endpoint is paired with exactly one other endpoint by an edge identification, so every vertex of this finite graph has degree two. The graph is connected: the paired-edge identifications that make the original triangle vertices represent the same quotient vertex also join their corner segments. Hence $L_v$ is a connected finite $2$-regular graph, so $L_v\cong S^1$. A small neighborhood of $v$ is the cone on $L_v$ and is a disk. Thus every point of $X$ has a neighborhood homeomorphic to $\RR^2$, and there is no boundary. This proves (a).
+Write $X$ for the quotient of the finite disjoint union of $2$-simplices by the chosen pairs of edges, and for a point $x\in X$ let $L_v$, at a quotient vertex $v$, be the graph whose vertices are the germs at $v$ of the edges of the triangulation and whose edges are the corners of the triangles at $v$.
 
-Statement (b) is Lemma 2.14 of Benedetti, arXiv:1903.12596v1, p. 7, whose definitions are those of this exercise (p. 1); the proof is not reproduced here. In Benedetti, *On ideal triangulations of surfaces up to branched transit equivalences*, arXiv:1903.12596v1, p. 1, a **branching** of a triangulation is "a system of edge orientations which lifted to every abstract triangle of $T$ is induced by a (local) ordering of the vertices, so that every edge goes towards the biggest endpoint", and the author adds that "equivalently $b$ promotes $T$ to be a $\Delta$-complex accordingly with Chapter 2 of [Hatcher]". An **ideal triangulation** there is a possibly loose triangulation, self- and multiple edge adjacency allowed, with vertex set $V$, viewed as "assembling abstract triangles by gluing their abstract edges in pairs in such a way that no edge remains unglued" (p. 1); that is exactly the data of this exercise, so each connected component of $X$ with its quotient vertices is an ideal triangulation of a closed surface.
+::: pf
 
-With those definitions, the existence of the orientations required in (b) is Lemma 2.14 of that paper, p. 7: *every ideal triangulation $T$ of $(S,V)$ can be branched.* The proof reduces by Theorem 1.1 (connectivity of ideal triangulations under flips, p. 1) and by the fact that every naked flip can be enhanced to a b-flip, to exhibiting one branched triangulation for each surface with the minimal number of vertices, and then raises the number of vertices by b-bubbles; the individual constructions are given for the sphere, the projective plane, the Klein bottle, the torus and, through the "bricks" of Figures 3 and 4 (pp. 6–7), for all remaining orientable and non-orientable surfaces. The figures carry those constructions and are not reproduced here.
+::: {.pf-step #interior}
+A point in the interior of a $2$-simplex, or in the interior of a quotient edge, has a neighbourhood homeomorphic to an open disc.
 
-The paper's standing hypothesis $\chi(S)-\#V<0$ holds for every component of $X$: a component built from $2k$ triangles whose $6k$ edge-sides are paired into edges has $F=2k$, $E=3k$, hence $\chi=V-3k+2k=V-k$ and $\chi-\#V=-k<0$. Applying Lemma 2.14 to each component gives the edge orientations, and by the definition quoted above those orientations satisfy Hatcher's $\Delta$-complex condition, which is statement (b).
+::: pf-proof
+An interior point of a simplex has a disc neighbourhood inside that simplex, and no identification touches it. An interior point of an edge lies in the interior of exactly two edge-sides, one from each of the two triangles glued along that edge; each side contributes a half-disc whose diameter contains the point, and the two half-discs are glued along that diameter, so their union is a disc.
+:::
+
+:::
+
+::: {.pf-step #regular}
+$L_v$ is a finite graph in which every vertex has degree $2$, counted with multiplicity.
+
+::: pf-proof
+Finitely many simplices give finitely many germs and corners. A vertex of $L_v$ is a germ of an edge $e$ at $v$; the edge-sides of $e$ are exactly two, and each of them is a side of exactly one triangle corner at $v$ (possibly both are sides of the same corner, when $e$ is a loop at $v$), so exactly two corners of $L_v$ are incident with that germ.
+:::
+
+:::
+
+::: {.pf-step #connected}
+$L_v$ is connected.
+
+::: pf-proof
+Two corners at $v$ that are corners of the same triangle are joined by the edge of $L_v$ they cut out. Two triangles whose closures contain $v$ and that share an edge-side $s$ at $v$ contribute corners sharing the germ of $s$, hence lie in the same component of $L_v$. Since the component of $X$ containing $v$ is a quotient of finitely many triangles glued pairwise along edge-sides, and every such gluing that puts two triangle vertices over $v$ joins their corners in $L_v$, all corners at $v$ lie in one component.
+:::
+
+:::
+
+::: {.pf-step #vertex}
+Every point of $X$ has a neighbourhood homeomorphic to $\RR^2$, and $X$ has no boundary.
+
+::: pf-proof
+At an interior point this is step [](#interior){.pf-ref}. At a quotient vertex $v$, a small regular neighbourhood is the cone on the link $L_v$: intersecting with a small sphere about $v$ gives $L_v$ itself. By steps [](#regular){.pf-ref} and [](#connected){.pf-ref}, $L_v$ is a finite connected $2$-regular graph, hence a cycle, hence homeomorphic to $S^1$; the cone on $S^1$ is a closed disc, with $v$ mapping to its cone point. So every point has a disc neighbourhood, which is to say $X$ is locally homeomorphic to $\RR^2$ and no point has a half-disc neighbourhood. This is part (a).
+:::
+
+:::
+
+::: {.pf-step #hypothesis}
+For a component built from $2k$ triangles, $\chi-\#V=V-k<0$.
+
+::: pf-proof
+The $6k$ edge-sides are paired, so $E=3k$; $F=2k$; hence $\chi=V-E+F=V-3k+2k=V-k$ for the component's vertex set $V$, so $\chi-\#V=-k$, which is negative because $k\ge1$.
+:::
+
+:::
+
+::: {.pf-step #partb}
+The edges can be oriented so as to define a $\Delta$-complex structure on $X$.
+
+::: pf-proof
+Benedetti's *branching* of a triangulation is "a system of edge orientations which lifted to every abstract triangle of $T$ is induced by a (local) ordering of the vertices, so that every edge goes towards the biggest endpoint", and he notes that this is "equivalently $b$ promotes $T$ to be a $\Delta$-complex accordingly with Chapter 2 of [Hatcher]" (p. 1). His ideal triangulation is exactly the data here: abstract triangles glued along their abstract edges in pairs with no edge left unglued, self- and multiple adjacencies allowed, viewed together with its vertex set (p. 1). So each component of $X$ with its quotient vertices is an ideal triangulation of a closed surface, and by step [](#hypothesis){.pf-ref} the paper's standing hypothesis $\chi(S)-\#V<0$ holds for it. Lemma 2.14 of the paper (p. 7) states that every ideal triangulation of $(S,V)$ can be branched; applying it to each component and orienting the edges accordingly gives exactly Hatcher's $\Delta$-complex condition, which is part (b). The proof of the lemma — flips and b-flips from one branched triangulation per surface with few vertices, then b-bubbles — is not reproduced here.
+:::
+
+:::
+
+:::
 :::
