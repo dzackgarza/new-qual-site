@@ -9,6 +9,8 @@ classification:
 relations: []
 review: draft
 completion: incomplete
+provenance:
+- https://doi.org/10.1007/978-1-4757-3849-0
 source:
   source_kind: compilation
   sections:
@@ -35,3 +37,7 @@ source:
 ---
 
 A homework sheet of exercises from [@Har77, Chapter II]: sheaves, their stalks and supports, and the first properties of affine schemes.
+
+::: {.remark}
+The document is Robin Hartshorne, *Algebraic Geometry*, Graduate Texts in Mathematics 52, Springer, whose Chapter II this homework sheet is drawn from; the list names it by DOI. The same DOI is the list of `SRC-TEXT-HART77`, which is the point of it: one book genuinely holds both collections' problems, and the sheet is a selection from the book rather than a separate publication.
+:::

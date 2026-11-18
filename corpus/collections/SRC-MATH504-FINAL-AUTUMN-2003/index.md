@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- assets/attachments/Algebra_Final_Solns.pdf
 source:
   source_kind: compilation
   sections:
@@ -34,3 +35,7 @@ source:
     term: fall
     year: 2003
 ---
+
+::: {.remark}
+The list names the retained compilation `assets/attachments/Algebra_Final_Solns.pdf`, whose first section is headed "Mathematics 504 Autumn 2003" and prints the seven problems with their solutions; that section is what the cards were transcribed from. The examination paper itself is not retained and no copy of it was found, and the compilation does not record which institution set it.
+:::
