@@ -187,6 +187,28 @@ audit:
     and 4 on §3.1--§3.2. The remark now states both, and the substantive point stands: the file holds
     no §2.B exercise, so it does not bear on this card. Checked: the per-page text yield of the PDF,
     the `.md`'s opening and closing pages, and the coverage record.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The card's own analysis tested, since no published argument exists for this part. (1) The figure
+    on printed p. 177 was rendered at 500 dpi from `tmp/sources/hatcher-2002-algebraic-topology.pdf`
+    (PDF page 186) and read: it shows the building block with four horns arranged as two hook-and-eye
+    pairs, one pair in each half of the ball, each pair's two horns interlocking as chain links ---
+    which is the model this card draws on, $a\mapsto[a_1,a_2][a_3,a_4]$ per old handle at rank
+    $4^n$. (2) The group step \#s3 was decided by a free-group computation, run over the words
+    $w=[a_1,a_2][a_3,a_4]$ with exact reduction: $w$ reduces to the eight-letter word
+    $a_1a_2a_1^{-1}a_2^{-1}a_3a_4a_3^{-1}a_4^{-1}$, is not a proper power, and no power
+    $w^{k}$ with $1\le k\le200$ is trivial, so $\ZZ\to F_4$, $1\mapsto w$ is injective as the step
+    says (free groups are torsion-free); with a second factor written on its own four letters, powers
+    of $w$ in distinct factors never cancel, so the free-product step is the standard universal
+    property of free products. Output of the five tests: ok
+    test_bonding_map_is_injective_on_a_sample; ok test_commutator_is_not_a_proper_power; ok
+    test_free_product_step_is_the_standard_one; ok test_word_has_infinite_order; ok
+    test_word_is_nontrivial. Checked: the figure, and the word-theoretic step. Not checked: no
+    published source states the doubled case, so the source obligation is untouched by this entry;
+    the functional-analytic and topological inputs of the surrounding construction are Hatcher's
+    printed pp. 170--172 as the remark says.
 ---
 
 ::: {.problem}
