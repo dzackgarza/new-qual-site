@@ -67,41 +67,114 @@ The boundary of $X$ (denoted $\partial X$) consists of those points $x$ such tha
 :::
 
 ::: {.solution}
-(a) Let $q=(q_1,0)\in H^2$ and suppose that some neighbourhood of $q$ in $H^2$ were homeomorphic with an open set of $\RR^2$; we derive a contradiction. Take a homeomorphism $h:U\to V$ of such a neighbourhood onto an open set $V$ of $\RR^2$ and shrink it to a half-disc: for $\varepsilon>0$ small enough the set
-$$
-D=\{p\in H^2:\norm{p-q}<\varepsilon\}
-$$
-is a neighbourhood of $q$ in $H^2$ contained in $U$, and $h$ carries $D$ homeomorphically onto $h(D)$, which is open in $\RR^2$ because it is open in $V$. Hence
-$$
-D-\{q\}\cong h(D)-\{h(q)\} .
-$$
 
-The punctured half-disc $D-\{q\}$ is star convex. The point $a_0=(q_1,\varepsilon/2)$ lies in it, and for $p\in D-\{q\}$ the segment joining $a_0$ to $p$ lies in $D$, since $D$ is convex, and meets $q$ in no point: every point of that segment other than $p$ has positive second coordinate, while the second coordinate of $q$ is $0$. It is therefore simply connected: for a loop $\gamma$ in $D-\{q\}$ the straight-line homotopy $H(s,t)=(1-t)\gamma(s)+t\,a_0$ takes each value on a segment joining $a_0$ to a point of $D-\{q\}$, hence lies in $D-\{q\}$, and it carries $s=0$ and $s=1$ to the same path, so $\gamma$ is path homotopic there to the constant loop at $a_0$; and $D-\{q\}$ is path connected, every point being joined to $a_0$.
+No complete published solution of Munkres §78 Exercise 2 was located; the argument is the card's own, and the sets searched are recorded in the audit trail.
 
-No punctured open set of $\RR^2$ is simply connected. Let $W\subseteq\RR^2$ be open and let $z\in W$; choose $\delta>0$ so that the circle $S=\{y:\norm{y-z}=\delta\}$ is contained in $W$, and let
-$$
-\rho:W-\{z\}\longrightarrow S,\qquad \rho(y)=z+\delta\,\frac{y-z}{\norm{y-z}},
-$$
-be the radial projection. It is continuous and it fixes every point of $S$, so $S$ is a retract of $W-\{z\}$, and by Lemma 55.1 (printed p. 348) the homomorphism induced by the inclusion $S\to W-\{z\}$ is injective. Since $S$ is a circle, $\pi_1(S)\cong\pi_1(S^1)\cong\ZZ$ (Corollary 52.5, printed p. 334, and Theorem 54.5, printed p. 345), so $\pi_1(W-\{z\})$ is not trivial and $W-\{z\}$ is not simply connected.
+Throughout, $H^{2}=\{(u,v)\in\RR^{2}:v\ge0\}$ is a subspace of $\RR^{2}$, a chart at a point of a surface with boundary $X$ is a homeomorphism of a neighbourhood of that point onto an open set of $\RR^{2}$ or of $H^{2}$, and $\partial X$ is the set of points having no chart with values in $\RR^{2}$.
 
-Finally $h$ restricts to a homeomorphism of $D-\{q\}$ with $h(D)-\{h(q)\}$, so by Corollary 52.5 (printed p. 334) these two spaces have isomorphic fundamental groups; but $h(D)-\{h(q)\}$ is a punctured open set of $\RR^2$, which the previous paragraph shows cannot be simply connected. Hence no neighbourhood of $q$ in $H^2$ is homeomorphic with an open set of $\RR^2$.
+::: pf
 
-(b) Suppose first that a chart
-$$
-h:U\longrightarrow V\subset H^2
-$$
-satisfies $h(x)\in\RR\times\{0\}$. By part (a), $h(x)$ has no neighborhood in $H^2$ homeomorphic to an open subset of $\RR^2$; transporting this statement through $h$, neither does $x$. Hence $x\in\partial X$.
+::: {.pf-step #a}
+(a) No point $(q_{1},0)$ of $H^{2}$ has a neighbourhood in $H^{2}$ homeomorphic to an open set of $\RR^{2}$.
 
-Conversely, let $x\in\partial X$. By the definition of a manifold with boundary, $x$ has a chart to an open subset of either $\RR^2$ or $H^2$. The first possibility is excluded by the definition of $\partial X$. Thus there is a half-plane chart $h:U\to V\subset H^2$. If $h(x)$ had positive second coordinate, a small Euclidean disk about $h(x)$ would lie in $H^2$, giving an ordinary $\RR^2$-neighborhood of $x$, again a contradiction. Therefore $h(x)\in\RR\times\{0\}$.
+::: pf-proof
 
-(c) Let $x\in\partial X$ and choose a chart as in (b), with $h(x)=(a,0)$. Shrinking the chart if necessary, take
+::: {.pf-step #half-disc}
+If $U$ is a neighbourhood in $H^{2}$ of $q=(q_{1},0)$ and $h:U\to V$ a homeomorphism onto an open set $V$ of $\RR^{2}$, then $h$ carries the punctured half-disc $D-\{q\}$ homeomorphically onto the punctured open set $h(D)-\{h(q)\}$ of $\RR^{2}$, for $D=\{p\in H^{2}:\norm{p-q}<\varepsilon\}$ with $\varepsilon>0$ small.
+
+::: pf-proof
+Choose $\varepsilon>0$ with $D\subset U$. The set $D$ is open in $H^{2}$, being the intersection of $H^{2}$ with the ball $B(q,\varepsilon)$ of $\RR^{2}$, so $h(D)$ is open in $V$, hence open in $\RR^{2}$. A homeomorphism restricts to a homeomorphism of a subspace with its image, and $\{q\}$ corresponds to $\{h(q)\}$, so $h$ restricts to a homeomorphism $D-\{q\}\to h(D)-\{h(q)\}$.
+:::
+
+:::
+
+::: {.pf-step #half-disc-simply-connected}
+$D-\{q\}$ is simply connected.
+
+::: pf-proof
+Let $a_{0}=(q_{1},\varepsilon/2)\in D-\{q\}$. For $p\in D-\{q\}$ the segment from $a_{0}$ to $p$ lies in $D$, which is convex, and meets $q$ in no point: a point of that segment other than $p$ has second coordinate in $(0,\varepsilon)$, while $q$ has second coordinate $0$. Hence $D-\{q\}$ is star shaped with respect to $a_{0}$, so it is path connected — every point is joined to $a_{0}$ — and every loop $\gamma$ in it is path homotopic to the constant loop at $a_{0}$ through the straight-line homotopy $H(s,t)=(1-t)\gamma(s)+t\,a_{0}$, whose values all lie on such segments. Since $\pi_{1}$ is by definition the set of path homotopy classes of loops at the base point (§51, printed p. 326), this says that $\pi_{1}(D-\{q\},a_{0})$ is trivial, and with path connectedness that is simple connectedness.
+:::
+
+:::
+
+::: {.pf-step #punctured-not-simply}
+No set $W-\{z\}$ with $W$ open in $\RR^{2}$ and $z\in W$ is simply connected.
+
+::: pf-proof
+Choose $\delta>0$ with the circle $S=\{y:\norm{y-z}=\delta\}$ contained in $W$ and let $\rho:W-\{z\}\to S$ be the radial projection $\rho(y)=z+\delta(y-z)/\norm{y-z}$; it is continuous and it fixes every point of $S$. So $S$ is a retract of $W-\{z\}$, and the homomorphism induced by the inclusion $S\to W-\{z\}$ is injective (Lemma 55.1, printed p. 348). Since $\pi_{1}(S)\cong\pi_{1}(S^{1})\cong\ZZ$ (Corollary 52.5, printed p. 334, and Theorem 54.5, printed p. 345), $\pi_{1}(W-\{z\})$ has an element of infinite order and is not trivial, so $W-\{z\}$ is not simply connected.
+:::
+
+:::
+
+::: {.pf-qed}
+Suppose that $q=(q_{1},0)$ had a neighbourhood $U$ in $H^{2}$ homeomorphic to an open set of $\RR^{2}$. By step [](#half-disc){.pf-ref}, $D-\{q\}$ is homeomorphic to $h(D)-\{h(q)\}$, a punctured open subset of $\RR^{2}$; homeomorphic spaces have isomorphic fundamental groups (Corollary 52.5, printed p. 334), so $D-\{q\}$ would not be simply connected, contradicting step [](#half-disc-simply-connected){.pf-ref} by step [](#punctured-not-simply){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #b}
+(b) $x\in\partial X$ exactly when a chart $h$ of a neighbourhood of $x$ has $h(x)\in\RR\times\{0\}$.
+
+::: pf-proof
+
+::: {.pf-step #b-forward}
+If such a chart exists then $x\in\partial X$.
+
+::: pf-proof
+Let $h:U\to V\subset H^{2}$ be a chart with $h(x)=(a,0)$. If $x$ had a chart $g$ with values in $\RR^{2}$ on a neighbourhood $U'\subset U$, then $h\circ g^{-1}$ would be a homeomorphism of an open set of $\RR^{2}$ onto a neighbourhood of $h(x)=(a,0)$ in $H^{2}$, which part (a) forbids. So no such chart exists and $x\in\partial X$.
+:::
+
+:::
+
+::: {.pf-step #b-backward}
+If $x\in\partial X$ then every chart at $x$ has $h(x)\in\RR\times\{0\}$.
+
+::: pf-proof
+By the definition of a surface with boundary $x$ has a chart into $\RR^{2}$ or into $H^{2}$; the first alternative is excluded by the definition of $\partial X$. So there is a chart $h:U\to V\subset H^{2}$. If $h(x)=(a,t)$ with $t>0$, then $\{y\in V:\norm{y-h(x)}<t\}$ is an open ball contained in $H^{2}$, and $h$ followed by the identity is a chart at $x$ with values in $\RR^{2}$, a contradiction. Hence $t=0$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #c}
+(c) $\partial X$ is a $1$-manifold.
+
+::: pf-proof
+
+::: {.pf-step #c-chart}
+Every point $x\in\partial X$ has a neighbourhood in $\partial X$ homeomorphic to an open interval.
+
+::: pf-proof
+Take a chart $h:U\to V\subset H^{2}$ at $x$ with $h(x)=(a,0)$, which exists by (b), and shrink it so that $V$ contains $(a-\varepsilon,a+\varepsilon)\times[0,\varepsilon)$; such an $\varepsilon>0$ exists because $V$ is open in $H^{2}$. Let $U_{0}=h^{-1}\big((a-\varepsilon,a+\varepsilon)\times[0,\varepsilon)\big)$, an open neighbourhood of $x$ in $X$. A point $y\in U_{0}$ lies in $\partial X$ exactly when its image has second coordinate $0$, by (b) applied to the chart $h$ restricted to $U_{0}$; so
 $$
-V=(a-\varepsilon,a+\varepsilon)\times[0,\varepsilon)
+U_{0}\cap\partial X=h^{-1}\big((a-\varepsilon,a+\varepsilon)\times\{0\}\big),
 $$
-inside its image. By part (b),
-$$
-h(U\cap\partial X)=V\cap(\RR\times\{0\})
-=(a-\varepsilon,a+\varepsilon)\times\{0\}.
-$$
-Hence $U\cap\partial X$ is an open neighborhood of $x$ in $\partial X$ homeomorphic to an open interval. Since $\partial X$ is a subspace of the Hausdorff second-countable space $X$, it is Hausdorff and second countable. Thus $\partial X$ is a 1-manifold.
+and $h$ carries it homeomorphically onto the open interval $(a-\varepsilon,a+\varepsilon)\times\{0\}$ of $\RR\times\{0\}\cong\RR$.
+:::
+
+:::
+
+::: {.pf-step #c-axioms}
+$\partial X$ is Hausdorff and has a countable basis.
+
+::: pf-proof
+$\partial X$ is a subspace of $X$, which is Hausdorff with a countable basis; a subspace of a Hausdorff space is Hausdorff (§17, printed p. 99) and a subspace of a second countable space is second countable (Theorem 30.2, printed p. 194).
+:::
+
+:::
+
+::: {.pf-qed}
+By steps [](#c-chart){.pf-ref} and [](#c-axioms){.pf-ref} every point of $\partial X$ has a neighbourhood homeomorphic to an open subset of $\RR^{1}$, and $\partial X$ is Hausdorff with a countable basis; that is the definition of a $1$-manifold.
+:::
+
+:::
+
+:::
+
+:::
 :::
