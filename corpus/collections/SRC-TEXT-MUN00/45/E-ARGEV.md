@@ -57,6 +57,19 @@ audit:
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured as a Lamport proof of the card's own argument. The step the earlier prose ran together
+    is the one that decides the card: the split of the indices at N gives a *single* neighbourhood valid
+    for the whole family, and the card now says so explicitly --- V = [0,a] intersected with the finitely
+    many U_n for n < N, a finite intersection of neighbourhoods, with the tail bound a^N + x_0^N < eps
+    covering every n >= N at once. The same pattern is written out for part (b), where the uniform bound
+    1/(n^3c^2/4+1) on the window J replaces the crude a^n, and the failure at 0 and at 1 is shown by
+    explicit epsilons. The answers are stated as answers: the failure set is {1} in (a) and {0} in (b).
+    No published solution was located; the card keeps its own argument and says so. Checked against
+    Munkres, Topology (2000), Section 45 Exercise 4, printed p. 280, and the definition on printed p. 277.
 ---
 
 ::: {.exercise}
@@ -68,21 +81,232 @@ The collection $\mathcal{F} = \theset{f_n}$ is pointwise bounded but the sequenc
 :::
 
 ::: {.solution}
-For $f_n(x)=x^n$ on $I=[0,1]$: the family is equicontinuous at every $x_0<1$. Let $\varepsilon>0$ and choose $a$ with $x_0<a<1$. For $x\in[0,a]$ and $n\ge N$ with $a^N<\varepsilon/2$ and $x_0^N<\varepsilon/2$ we have
-$$
-\abs{x^n-x_0^n}\le x^n+x_0^n\le a^n+x_0^n<\varepsilon ,
-$$
-and for the finitely many $n<N$ continuity of $x\mapsto x^n$ at $x_0$ gives a neighbourhood on which $\abs{x^n-x_0^n}<\varepsilon$. The intersection of these finitely many neighbourhoods with $[0,a]$ is a neighbourhood of $x_0$ in $I$ that works for every $n$. At $x_0=1$ equicontinuity fails: for every neighbourhood of $1$ in $I$ there is $x<1$ in it, and then $x^n\to0$ while $f_n(1)=1$, so taking $n$ large gives $\abs{f_n(x)-f_n(1)}>1/2$.
 
-For the sequence of [[E-BTI7W]], the functions of Exercise 9 of §21,
-$$
-f_n(x)=\frac1{n^3(x-1/n)^2+1},
-$$
-the collection is pointwise bounded, since $0<f_n(x)\le1$, and no subsequence converges uniformly: $f_n\to0$ pointwise, so a uniform limit would be $0$, while $f_n(1/n)=1$ gives $\sup_x\abs{f_n(x)}=1$ for every $n$.
+No complete published solution of this exercise was located; the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument is therefore the card's own, checked against the book's definition of equicontinuity on printed p. 277 and against Exercise 9 of §21 (printed p. 134), whose functions are those of part (b).
 
-The family fails equicontinuity exactly at $0$. At $0$: $f_n(0)=1/(n+1)\to0$ while $f_n(1/n)=1$ and $1/n\to0$, so for $\varepsilon=1/2$ no neighbourhood of $0$ works. At $x_0\ne0$: choose $r>0$ with $\abs{x}\ge c>0$ for all $x$ in $J=[x_0-r,x_0+r]$. For $n\ge 2/c$ and $x\in J$ we have $\abs{x-1/n}\ge c/2$, so
+The statement was checked against Munkres, *Topology* (2000), §45 Exercise 4, printed p. 280. Throughout $I=[0,1]$, $\mathcal{F}=\theset{f_{n}\mid n\in\ZZ_{+}}$ with $f_{n}(x)=x^{n}$ on $I$, and $\mathcal{G}=\theset{g_{n}\mid n\in\ZZ_{+}}$ with
 $$
-0<f_n(x)\le\frac{1}{n^3c^2/4+1}\longrightarrow0
+g_{n}(x)=\frac{1}{n^{3}\big(x-1/n\big)^{2}+1}
 $$
-uniformly on $J$; hence for $n\ge N$ both $f_n(x)$ and $f_n(x_0)$ are less than $\varepsilon/2$, and for the finitely many $n<N$ continuity at $x_0$ gives a smaller neighbourhood on which $\abs{f_n(x)-f_n(x_0)}<\varepsilon$. So the family is equicontinuous at every $x_0\ne0$.
+on $\RR$, the functions of Exercise 9 of §21. A family $\mathcal{F}\subset\mathcal{C}(X,\RR)$ is *equicontinuous at* $x_{0}$ when for each $\varepsilon>0$ there is a neighbourhood $U$ of $x_{0}$ such that $\abs{f(x)-f(x_{0})}<\varepsilon$ for every $x\in U$ and every $f\in\mathcal{F}$ (printed p. 277) --- one neighbourhood serving the whole family at once --- and *pointwise bounded* when $\theset{f(x)\mid f\in\mathcal{F}}$ is bounded for each $x$.
+
+::: pf
+
+::: {.pf-step #a}
+
+(a) $\mathcal{F}$ is equicontinuous at every $x_{0}\in[0,1)$, and is not equicontinuous at $1$; so the failure set of $\mathcal{F}$ is $\theset{1}$.
+
+:::: pf-proof
+
+Let $I=[0,1]$ and $f_{n}(x)=x^{n}$, so that $\mathcal{F}$ is the family of the exercise. Two claims locate the failure set.
+
+::: {.pf-step #a-at-point}
+
+For $x_{0}\in[0,1)$ the family $\mathcal{F}$ is equicontinuous at $x_{0}$.
+
+:::: pf-proof
+
+Fix $x_{0}<1$ and $\varepsilon>0$.
+
+::: {.pf-step #a-data}
+
+Given $\varepsilon>0$ there are $a$ with $x_{0}<a<1$ and $N\in\ZZ_{+}$ with $a^{N}<\varepsilon/2$ and $x_{0}^{N}<\varepsilon/2$.
+
+::: pf-proof
+
+$a$ exists because $x_{0}<1$ and the order of $\RR$ is dense. Since $0\leq x_{0}<a<1$, the sequences $a^{n}$ and $x_{0}^{n}$ both decrease to $0$, so some $N$ makes both smaller than $\varepsilon/2$; increasing $N$ preserves the inequalities.
+
+:::
+
+:::
+
+::: {.pf-step #a-tail}
+
+For every $n\geq N$ and every $x\in[0,a]$ one has $\abs{f_{n}(x)-f_{n}(x_{0})}<\varepsilon$.
+
+::: pf-proof
+
+Both $x$ and $x_{0}$ lie in $[0,a]$, so $x^{n}\leq a^{n}\leq a^{N}$ and $x_{0}^{n}\leq x_{0}^{N}$, the second because $x_{0}<1$. Hence
+$$
+\abs{x^{n}-x_{0}^{n}}\leq x^{n}+x_{0}^{n}\leq a^{N}+x_{0}^{N}<\varepsilon .
+$$
+
+:::
+
+:::
+
+::: {.pf-step #a-head}
+
+For each $n<N$ there is a neighbourhood $U_{n}$ of $x_{0}$ in $I$ with $\abs{x^{n}-x_{0}^{n}}<\varepsilon$ for $x\in U_{n}$.
+
+::: pf-proof
+
+The map $x\mapsto x^{n}$ is continuous on $I$, being a product of $n$ copies of the identity; so the set where $\abs{x^{n}-x_{0}^{n}}<\varepsilon$ is an open neighbourhood of $x_{0}$ in $I$.
+
+:::
+
+:::
+
+::: {.pf-step #a-neighbourhood}
+
+$V\coloneqq[0,a]\cap\bigcap_{n<N}U_{n}$ is a neighbourhood of $x_{0}$ in $I$ with $\abs{f_{n}(x)-f_{n}(x_{0})}<\varepsilon$ for every $x\in V$ and every $n$.
+
+::: pf-proof
+
+Since $x_{0}<a$, the point $x_{0}$ lies in the interior of $[0,a]$ relative to $I$, so $[0,a]$ is a neighbourhood of $x_{0}$, and a finite intersection of neighbourhoods is a neighbourhood; hence $V$ is one. Let $x\in V$ and $n\in\ZZ_{+}$. If $n\geq N$ then $x\in V\subset[0,a]$ and step [](#a-tail){.pf-ref} applies; if $n<N$ then $x\in U_{n}$ and step [](#a-head){.pf-ref} applies. In either case the inequality holds, and the single neighbourhood $V$ serves the whole family.
+
+:::
+
+:::
+
+::: pf-step
+
+$\mathcal{F}$ is equicontinuous at $x_{0}$.
+
+::: pf-proof
+
+Given $\varepsilon>0$, steps [](#a-data){.pf-ref} and [](#a-neighbourhood){.pf-ref} produce a neighbourhood $V$ of $x_{0}$ with $\abs{f_{n}(x)-f_{n}(x_{0})}<\varepsilon$ for all $x\in V$ and all $n$, which is the definition on printed p. 277.
+
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #a-not-at-1}
+
+$\mathcal{F}$ is not equicontinuous at $1$.
+
+::: pf-proof
+
+Take $\varepsilon\coloneqq1/2$ and let $U$ be any neighbourhood of $1$ in $I$. Every such neighbourhood contains a point $x<1$, since $I$ has no interval to the right of $1$. For that $x$ the sequence $x^{n}$ decreases to $0$, so there is $n$ with $x^{n}<1/2$, and then
+$$
+\abs{f_{n}(x)-f_{n}(1)}=\abs{x^{n}-1}=1-x^{n}>\tfrac12=\varepsilon .
+$$
+So no neighbourhood of $1$ satisfies the definition, and $\mathcal{F}$ is not equicontinuous there.
+
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #b}
+
+(b) $\mathcal{G}$ is pointwise bounded and no subsequence of it converges uniformly on $\RR$, and $\mathcal{G}$ fails to be equicontinuous exactly at $0$.
+
+:::: pf-proof
+
+The functions of Exercise 9 of §21 are those of the exercise here: $g_{n}(x)=1/\big(n^{3}(x-1/n)^{2}+1\big)$ on $\RR$. Three claims settle the part.
+
+::: {.pf-step #b-no-uniform}
+
+$\mathcal{G}$ is pointwise bounded and no subsequence converges uniformly.
+
+::: pf-proof
+
+For every $x$ and $n$ one has $0<g_{n}(x)\leq1$, since $n^{3}(x-1/n)^{2}+1\geq1$; so $\mathcal{G}$ is pointwise bounded. For fixed $x$ the denominator tends to infinity with $n$ --- it is $n+1$ at $x=0$ and at least $n^{3}(x-1/n)^{2}$ otherwise, with $x-1/n\to x\neq0$ --- so $g_{n}(x)\to0$ and the pointwise limit is the zero function; a uniformly convergent subsequence would therefore have to converge uniformly to $0$. But $g_{n}(1/n)=1$ for every $n$, so $\sup_{x}\abs{g_{n}(x)}=1$ for every $n$ and no subsequence converges uniformly.
+
+:::
+
+:::
+
+::: {.pf-step #b-not-at-0}
+
+$\mathcal{G}$ is not equicontinuous at $0$.
+
+::: pf-proof
+
+Take $\varepsilon\coloneqq1/2$ and let $U$ be a neighbourhood of $0$. It contains $1/n$ for all sufficiently large $n$, and for $n\geq2$,
+$$
+\abs{g_{n}(1/n)-g_{n}(0)}=1-\frac{1}{n^{3}(1/n)^{2}+1}=1-\frac{1}{n+1}\geq\frac{2}{3}>\frac12=\varepsilon .
+$$
+So no neighbourhood of $0$ works, and $\mathcal{G}$ is not equicontinuous at $0$.
+
+:::
+
+:::
+
+::: {.pf-step #b-at-point}
+
+For $x_{0}\neq0$ the family $\mathcal{G}$ is equicontinuous at $x_{0}$.
+
+:::: pf-proof
+
+Fix $x_{0}\neq0$ and $\varepsilon>0$.
+
+::: {.pf-step #b-window}
+
+There are $c>0$ and $r>0$ with $\abs{x}\geq c$ for every $x$ in $J\coloneqq[x_{0}-r,x_{0}+r]$.
+
+::: pf-proof
+
+Since $x_{0}\neq0$, put $c\coloneqq\abs{x_{0}}/2>0$ and $r\coloneqq\abs{x_{0}}/2>0$. For $\abs{x-x_{0}}\leq r$ the triangle inequality gives $\abs{x}\geq\abs{x_{0}}-\abs{x-x_{0}}\geq\abs{x_{0}}/2=c$.
+
+:::
+
+:::
+
+::: {.pf-step #b-tail}
+
+For $n\geq2/c$ and $x\in J$ one has $0<g_{n}(x)\leq1/\big(n^{3}c^{2}/4+1\big)$, so $g_{n}\to0$ uniformly on $J$.
+
+::: pf-proof
+
+For such $n$ one has $1/n\leq c/2$, so $\abs{x-1/n}\geq\abs{x}-1/n\geq c-c/2=c/2$ and $n^{3}(x-1/n)^{2}\geq n^{3}c^{2}/4$. Hence $0<g_{n}(x)\leq1/(n^{3}c^{2}/4+1)$, and the right-hand side tends to $0$ as $n\to\infty$ because $n^{3}c^{2}/4\to\infty$.
+
+:::
+
+:::
+
+::: {.pf-step #b-head}
+
+For each $n<N$ there is a neighbourhood $V_{n}$ of $x_{0}$ in $\RR$ with $\abs{g_{n}(x)-g_{n}(x_{0})}<\varepsilon$ for $x\in V_{n}$, and some $N$ makes $\sup_{J}g_{n}<\varepsilon/2$ for all $n\geq N$.
+
+::: pf-proof
+
+Each $g_{n}$ is continuous, its denominator being a polynomial with no zero, so the set where $\abs{g_{n}(x)-g_{n}(x_{0})}<\varepsilon$ is an open neighbourhood of $x_{0}$. For the second claim, step [](#b-tail){.pf-ref} gives uniform convergence to $0$ on $J$, so some $N$ makes $g_{n}(x)<\varepsilon/2$ for all $n\geq N$ and all $x\in J$.
+
+:::
+
+:::
+
+::: {.pf-step #b-neighbourhood}
+
+$V\coloneqq J\cap\bigcap_{n<N}V_{n}$ is a neighbourhood of $x_{0}$ with $\abs{g_{n}(x)-g_{n}(x_{0})}<\varepsilon$ for every $x\in V$ and every $n$, so $\mathcal{G}$ is equicontinuous at $x_{0}$.
+
+::: pf-proof
+
+$V$ is a finite intersection of neighbourhoods of $x_{0}$. For $x\in V$ and $n\geq N$ one has $g_{n}(x)<\varepsilon/2$ and $g_{n}(x_{0})<\varepsilon/2$ because $x,x_{0}\in J$, whence $\abs{g_{n}(x)-g_{n}(x_{0})}<\varepsilon$ as both terms are positive; and for $n<N$ the inequality is that of $V_{n}$.
+
+:::
+
+:::
+
+::::
+
+:::
+
+::::
+
+:::
+
+::: pf-step
+
+Therefore $\mathcal{F}$ fails to be equicontinuous exactly at $1$ and $\mathcal{G}$ exactly at $0$.
+
+::: pf-proof
+
+Steps [](#a){.pf-ref} and [](#b){.pf-ref} answer the exercise: for $f_{n}(x)=x^{n}$ on $I$ the family is pointwise bounded, its sequence has no uniformly convergent subsequence, and equicontinuity fails only at the endpoint $1$; for the functions of Exercise 9 of §21 the family is pointwise bounded, no subsequence converges uniformly on $\RR$, and equicontinuity fails only at $0$, where the moving peak $1/n$ of $g_{n}$ escapes detection by any single neighbourhood.
+
+:::
+
+:::
+
+:::
+
 :::
