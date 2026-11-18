@@ -57,6 +57,28 @@ audit:
     and joined by an embedded tube gives an immersion of the connected sum. What was not
     done: no explicit parametrization of the immersed Klein bottles is written out, the
     figure of §74 Exercise 3 being cited for it.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair of part (b). The earlier step justified the connecting tube by "R^3 minus
+    a compact set is path connected", which is false: the complement of a torus in R^3 has
+    two components, and a compact set can separate. The step is replaced by a construction
+    in which the free region is named and shown to be free. Translate the second copy so
+    that the first coordinate separates the two images; at the point of maximal x on the
+    first image the tangent plane is vertical, because both v and -v are tangents of a
+    sheet lying in a half space, and no second sheet can pass through that point, since its
+    tangent plane would also be caught in the same vertical plane and the sheets cross
+    transversally; so the sheet there is a graph over the vertical plane. Then the collar
+    annulus from the graph's boundary circle to a flat circle, and a thin solid cylinder
+    about a polygonal arc leaving the extreme point in the direction of increasing x and
+    running in the open slab between the two images, have interiors disjoint from both
+    images (the collar by the strict inequality of the graph over its boundary circle, the
+    cylinder because the slab misses the first image, all of whose points have x at most
+    the maximum, and the second, all of whose points have x at least the minimum). The
+    removal of a disc from each surface and the gluing of the annulus gives K#K, and the
+    corners are rounded in the free region. The construction is stated with its hypotheses
+    (transversal self-intersections, as in Figure 74.11) rather than assumed.
 ---
 
 ::: {.exercise}
@@ -146,12 +168,44 @@ The connected sum of a finite family of surfaces is formed by deleting one open 
 $K\#K$ has an immersion in $\RR^3$, so the four-fold projective plane does.
 
 ::: pf-proof
-Take two copies of the standard immersion of $K$ in $\RR^3$ (Figure 74.11, printed p. 454), placed in disjoint open balls. For an immersion of a compact surface the set of double points is a compact one-dimensional subspace of the surface, so its complement is nonempty and open; choose in it a point $p_j$ of the $j$-th copy, with a closed disc $D_j$ around $p_j$ on which the immersion is injective and whose image meets no double point. Remove the interiors of $D_1$ and $D_2$ and keep the restriction of each immersion, which is an embedding of a collar of the boundary circle $\partial D_j$ onto a neighbourhood of the image circle. Join the two image circles by an embedded tube, a copy of $S^1\times[0,1]$ meeting each image surface exactly in one of the circles and otherwise disjoint from both, which is possible because $\RR^3$ minus a compact set is path connected and the two circles are joined by a polygon avoiding the compact images. On the tubes use the embedding, and on the punctured surfaces the given immersions; along each boundary circle the two agree after the reparametrization given by the collar, so the three pieces define a continuous map of the quotient $K\#K$ to $\RR^3$ which is locally injective, hence an immersion. Composing with the homeomorphism of step [](#b-homeo){.pf-ref} gives the required immersion of $P^2\#P^2\#P^2\#P^2$.
+Take two copies $\Sigma_1,\Sigma_2$ of the image of the standard immersion of $K$ in $\RR^3$ (Figure 74.11, printed p. 454), whose sheets meet transversally along its double curves. The construction below uses no general existence of a path in a complement: it exhibits the region in which the tube runs and shows that both images miss it.
+
+::: {.pf-step #place}
+After a translation of the second copy, the first coordinate $x$ satisfies $\max \restrictionof{x}{\Sigma_1}<\min \restrictionof{x}{\Sigma_2}$, and the points $q_1\in\Sigma_1$ of maximal $x$ and $q_2\in\Sigma_2$ of minimal $x$ each lie on a single sheet, which is a graph over the vertical plane through that point.
+
+::: pf-proof
+The images are compact, so translating the second copy far in the positive $x$ direction gives the inequality. Let $c=x(q_1)$ and let $p_1$ be a preimage of $q_1$; near $p_1$ the surface is a $2$-disc through $q_1$ lying in $\{x\le c\}$. A tangent vector $v$ of that disc at $q_1$ is the velocity of a curve in the disc through $q_1$, and so is $-v$; along both, $x\le c$ with equality at $q_1$, whence $\mathrm{d}x(v)=0$. So the tangent plane there is $\{x=c\}$. Two sheets through $q_1$ would each have tangent plane contained in $\{x=c\}$ and hence equal to it, contradicting that the sheets cross transversally; so exactly one sheet passes through $q_1$, the immersion is injective near $p_1$, and the sheet is a graph $\{(c+\psi(u,v),u,v)\}$ over a disc in $\{x=c\}$ with $\psi\le0$. The same holds at $q_2$.
+:::
+
+:::
+
+::: {.pf-step #free}
+With $x_j=x(q_j)$ there are a closed disc $D_j$ on the $j$-th surface around $p_j$, a collar annulus $A_j$ from $\partial f_j(D_j)$ to the flat circle of radius $\rho$ in the plane $\{x=x_j\}$ about $q_j$, and a thin solid cylinder about a polygonal arc from $q_1$ to $q_2$, such that the interiors of $A_1$, $A_2$ and the cylinder miss $\Sigma_1\cup\Sigma_2$ and one another.
+
+::: pf-proof
+Choose $\rho$ so small that the ball of radius $3\rho$ about $q_j$ meets $\Sigma_j$ only in the sheet over $q_j$: this holds for small $\rho$ because the immersion is injective near $p_j$ and $\Sigma_j$ is compact, so the part of $\Sigma_j$ outside the sheet stays at a positive distance from $q_j$. Take $D_j$ the preimage of the sheet over the disc of radius $\rho$, so $\partial f_j(D_j)$ is the graph over the circle of radius $\rho$. The collar $A_j$ is the annulus swept between that graph and the flat circle,
+$$
+A_j=\{(x_j+s\psi(u,v),\,u,\,v):\ u^2+v^2=\rho^2,\ 0\le s\le1\},
+$$
+whose interior points have $x_j+\psi(u,v)<x<x_j$ and $u^2+v^2=\rho^2$; such a point is on the sheet only if it equals $(x_j+\psi(u,v),u,v)$, which the strict inequality $x>x_j+\psi(u,v)$ excludes, and it is on no other part of $\Sigma_j$ because it lies in the ball of radius $3\rho$ about $q_j$. The open slab $\{x_1<x<x_2\}$ misses $\Sigma_1$, all of whose points have $x\le x_1$, and misses $\Sigma_2$, all of whose points have $x\ge x_2$; so a thin solid cylinder about a polygonal arc from $q_1$ to $q_2$ that leaves $q_1$ in the direction of increasing $x$, runs in the closed slab, and enters $q_2$ in the direction of decreasing $x$ has its interior in $\{x>x_1\}\cup\{x<x_2\}$ near its two ends and in the slab between, hence disjoint from both images; taking it thin enough keeps it inside the region of the previous sentence and away from the two collars.
+:::
+
+:::
+
+::: {.pf-step #glue}
+The union of the two punctured surfaces, the two collars and the tube is the image of an immersion of $K\#K$.
+
+::: pf-proof
+Remove the interiors of $D_1$ and $D_2$. What remains of $\Sigma_j$ is a surface with boundary circle $\partial f_j(D_j)$; glue the collar $A_j$ along that circle and the flat circle of the tube's side surface along its other boundary circle. The four pieces meet only along circles, their interiors are pairwise disjoint by step [](#free){.pf-ref}, and each piece is embedded where it lies; so the resulting space is a surface embedded in $\RR^3$ up to the pre-existing self-intersections of the two copies, that is, the map from the quotient surface to $\RR^3$ is locally injective. Cutting a disc out of each of two surfaces and gluing in an annulus along the two boundary circles produces their connected sum, so the quotient surface is $K\#K$. If a smooth immersion is wanted, the corners along the three circles are rounded inside small tubes about them, which lie in the free region. Composing with the homeomorphism of step [](#b-homeo){.pf-ref} gives the required immersion of $P^2\#P^2\#P^2\#P^2$.
 :::
 
 :::
 
 :::
+
+:::
+:::
+
 
 :::
 
