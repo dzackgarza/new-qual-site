@@ -59,38 +59,74 @@ These are called the laws of exponents.
 :::
 
 ::: {.solution}
+
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.6, printed pp. 53--54** (`tmp/sources/munkres-solutions-whitman.pdf`), which proves the three laws by the book's hint — fix $n$ and induct on $m$ — and annotates each line with the axiom it uses. The three inductions below are his.
 
-We prove the three identities by induction.
+::: pf
 
-First fix $n\in\ZZ_+$. For $m=1$,
+::: {.pf-step #first}
+
+$a^{n}a^{m}=a^{n+m}$ for all $n,m\in\ZZ_{+}$.
+
+::: pf-proof
+
+Fix $n\in\ZZ_{+}$ and induct on $m$. For $m=1$ the identity reads $a^{n}a=a^{n+1}$, which is the definition of $a^{n+1}$; the base case is $m=1$ rather than $m=0$ because $a^{0}$ is not defined in the exercise. If $a^{n}a^{m}=a^{n+m}$, then using associativity of multiplication in $\RR$ and the definition,
 $$
-a^na=a^{n+1}
+a^{n}a^{m+1}=a^{n}(a^{m}a)=(a^{n}a^{m})a=a^{n+m}a=a^{n+m+1}.
 $$
-by definition. If $a^na^m=a^{n+m}$, then
+So the identity holds for $m+1$, and by induction for every $m$.
+
+:::
+
+:::
+
+::: {.pf-step #second}
+
+$(a^{n})^{m}=a^{nm}$ for all $n,m\in\ZZ_{+}$.
+
+::: pf-proof
+
+Fix $n$ and induct on $m$. For $m=1$, $(a^{n})^{1}=a^{n}=a^{n\cdot1}$. If $(a^{n})^{m}=a^{nm}$, then by the recursive definition and step [](#first){.pf-ref},
 $$
-a^na^{m+1}=a^n(a^ma)=(a^na^m)a=a^{n+m}a=a^{n+m+1}.
+(a^{n})^{m+1}=(a^{n})^{m}a^{n}=a^{nm}a^{n}=a^{nm+n}=a^{n(m+1)}.
 $$
-Thus
+So the identity holds for $m+1$, and hence for all $m$.
+
+:::
+
+:::
+
+::: {.pf-step #third}
+
+$a^{m}b^{m}=(ab)^{m}$ for all $m\in\ZZ_{+}$.
+
+::: pf-proof
+
+Induct on $m$. For $m=1$, $a^{1}b^{1}=ab=(ab)^{1}$. If $a^{m}b^{m}=(ab)^{m}$, then by commutativity and associativity of multiplication in $\RR$,
 $$
-\boxed{a^na^m=a^{n+m}}.
+a^{m+1}b^{m+1}=(a^{m}a)(b^{m}b)=a^{m}(ab^{m})b=(a^{m}b^{m})(ab)=(ab)^{m}(ab)=(ab)^{m+1},
+$$
+the middle equalities regrouping the four factors and interchanging $a$ with $b^{m}$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+The three laws of exponents hold for all $n,m\in\ZZ_{+}$ and $a,b\in\RR$.
+
+::: pf-proof
+
+Steps [](#first){.pf-ref}, [](#second){.pf-ref} and [](#third){.pf-ref} prove the three identities:
+$$
+\boxed{a^{n}a^{m}=a^{n+m},\qquad (a^{n})^{m}=a^{nm},\qquad a^{m}b^{m}=(ab)^{m}.}
 $$
 
-Next fix $n$. For $m=1$, $(a^n)^1=a^n$. If $(a^n)^m=a^{nm}$, then using the first identity,
-$$
-(a^n)^{m+1}=(a^n)^ma^n=a^{nm}a^n=a^{nm+n}=a^{n(m+1)}.
-$$
-Hence
-$$
-\boxed{(a^n)^m=a^{nm}}.
-$$
+:::
 
-Finally, for $m=1$, $a^1b^1=ab=(ab)^1$. If $a^mb^m=(ab)^m$, then commutativity and associativity give
-$$
-a^{m+1}b^{m+1}=a^mab^mb=(a^mb^m)(ab)=(ab)^m(ab)=(ab)^{m+1}.
-$$
-Therefore
-$$
-\boxed{a^mb^m=(ab)^m}.
-$$
+:::
+
+:::
+
 :::
