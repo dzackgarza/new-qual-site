@@ -31,6 +31,13 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 40 Exercise 2, printed p. 251, with the definitions of $F_\sigma$ and $G_\delta$ and De Morgan's laws (§1). No correction was needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked both De Morgan identities and the openness or
+    closedness of the complementary sets. The argument is the card's own; no retained set is
+    cited. Munkres §40, printed p. 246. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -42,32 +49,36 @@ Show that $W$ is an $F_\sigma$ set in $X$ if and only if $X - W$ is a $G_\delta$
 :::
 
 ::: {.solution}
-Suppose first that
-$$
-W=\bigcup_{n=1}^{\infty}F_n
-$$
-with each $F_n$ closed. By De Morgan's law,
-$$
-X-W
- =X-\bigcup_nF_n
- =\bigcap_n(X-F_n).
-$$
-Each $X-F_n$ is open, so $X-W$ is a $G_\delta$ set.
+The argument is the card's own; no retained solution set is cited on the card. It is the two De Morgan identities behind the definitions of $F_\sigma$ and $G_\delta$ sets in Munkres §40, printed p. 246.
 
-Conversely, suppose
-$$
-X-W=\bigcap_{n=1}^{\infty}U_n
-$$
-with each $U_n$ open. Again by De Morgan's law,
-$$
-W
-=X-\bigcap_nU_n
-=\bigcup_n(X-U_n).
-$$
-Each $X-U_n$ is closed, so $W$ is $F_\sigma$.
+::: pf
 
-Therefore
-$$
-\boxed{W\text{ is }F_\sigma\iff X-W\text{ is }G_\delta.}
-$$
+::: {.pf-step #f-sigma}
+If $W=\bigcup_{n}F_{n}$ with each $F_{n}$ closed in $X$, then $X-W$ is a $G_{\delta}$ set in $X$.
+
+::: pf-proof
+By De Morgan's law, $X-W=X-\bigcup_{n}F_{n}=\bigcap_{n}(X-F_{n})$. Each complement $X-F_{n}$ is open in $X$, because $F_{n}$ is closed, so $X-W$ is a countable intersection of open sets, that is a $G_{\delta}$ set.
+:::
+
+:::
+
+::: {.pf-step #g-delta}
+If $X-W=\bigcap_{n}U_{n}$ with each $U_{n}$ open in $X$, then $W$ is an $F_{\sigma}$ set in $X$.
+
+::: pf-proof
+By De Morgan's law, $W=X-\bigcap_{n}U_{n}=\bigcup_{n}(X-U_{n})$. Each complement $X-U_{n}$ is closed in $X$, because $U_{n}$ is open, so $W$ is a countable union of closed sets, that is an $F_{\sigma}$ set.
+:::
+
+:::
+
+::: {.pf-step}
+$W$ is $F_{\sigma}$ in $X$ if and only if $X-W$ is $G_{\delta}$ in $X$.
+
+::: pf-proof
+Steps [](#f-sigma){.pf-ref} and [](#g-delta){.pf-ref} are the two implications, the second applied to the set $X-W$ in place of $W$.
+:::
+
+:::
+
+:::
 :::
