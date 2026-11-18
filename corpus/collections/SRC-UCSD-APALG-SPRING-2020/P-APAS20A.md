@@ -40,60 +40,53 @@ $$
 :::
 
 ::: {.solution}
-Because the displayed matrix is upper triangular, its characteristic polynomial is
-$$
-\chi_\phi(t)=t^4(t-1)^4.
-$$
-Thus the generalized $0$-eigenspace and generalized $1$-eigenspace each have dimension $4$.
 
-The polynomial identity in the hypothesis factors as
-$$
-\phi^5-2\phi^4+\phi^3=\phi^3(\phi-I)^2=0.
-$$
-Hence every Jordan block for the eigenvalue $0$ has size at most $3$, and every Jordan block for the eigenvalue $1$ has size at most $2$.
+No retained solution set covers this exercise: the card's own Jordan-form count is completed, with the spectral decomposition, the two block constraints and the resulting dimensions as separate steps.
 
-Moreover,
-$$
-\dim\ker\phi=2
-$$
-is the number of Jordan blocks for the eigenvalue $0$. Therefore the $0$-primary Jordan blocks form a partition of $4$ into exactly two parts, each at most $3$. The only possibilities are
-$$
-(3,1)\qquad\text{or}\qquad(2,2).
-$$
-For a nilpotent Jordan block of size $r$, the kernel of its square has dimension $\min(2,r)$. Consequently,
-$$
-\dim\ker\phi^2=
-\begin{cases}
-\min(2,3)+\min(2,1)=3,&(3,1),\\
-\min(2,2)+\min(2,2)=4,&(2,2).
-\end{cases}
-$$
-Thus
-$$
-\boxed{\min\dim\ker\phi^2=3,\qquad \max\dim\ker\phi^2=4.}
-$$
+Let $N_{0}=\ker\phi^{4}$ and $N_{1}=\ker(\phi-\mathrm{id})^{4}$.
 
-Similarly,
-$$
-\dim\ker(\phi-I)=2
-$$
-shows that there are exactly two Jordan blocks for the eigenvalue $1$. They have total size $4$, and each has size at most $2$; hence the only possibility is
-$$
-(2,2).
-$$
-Therefore both blocks are killed by $(\phi-I)^2$, and
-$$
-\boxed{\dim\ker((\phi-I)^2)=4}
-$$
-for every matrix satisfying the hypotheses. In particular, both its minimum and maximum are $4$.
+::: pf
 
-Finally, both possibilities for the $0$-primary part really occur within the displayed upper-triangular form. For the $1$-primary part use two blocks $J_2(1)$ on the first four coordinates. On the last four coordinates use either
-$$
-J_3(0)\oplus J_1(0)
-$$
-or
-$$
-J_2(0)\oplus J_2(0).
-$$
-Both resulting block-diagonal matrices have the required diagonal and upper-triangular shape and satisfy all three hypotheses. Hence the extrema above are attained.
+::: {.pf-step #charpoly}
+$\chi_{\phi}(t)=t^{4}(t-1)^{4}$, and $\CC^{8}=N_{0}\oplus N_{1}$ with $\dim N_{0}=\dim N_{1}=4$.
+
+::: pf-proof
+The matrix is upper triangular with diagonal entries $1,1,1,1,0,0,0,0$, so the characteristic polynomial is $t^{4}(t-1)^{4}$ and the two eigenvalues are $0,1$. By the primary decomposition (or the Jordan form) $\CC^{8}$ is the direct sum of the generalized eigenspaces, whose dimensions are the multiplicities, $4$ each.
+:::
+
+:::
+
+::: {.pf-step #conditions}
+$\phi^{3}(\phi-\mathrm{id})^{2}=0$; hence on $N_{0}$ the nilpotent $\phi$ satisfies $\phi^{3}=0$ and on $N_{1}$ one has $(\phi-\mathrm{id})^{2}=0$; also $\dim\ker\phi=2$ and $\dim\ker(\phi-\mathrm{id})=2$.
+
+::: pf-proof
+The hypothesis is $\phi^{5}-2\phi^{4}+\phi^{3}=\phi^{3}(\phi-1)^{2}=0$. Since $\phi$ is invertible on $N_{1}$ and $\phi-1$ is invertible on $N_{0}$ (the eigenvalues there are $1$ and $0$ respectively), the identity forces $\phi^{3}=0$ on $N_{0}$ and $(\phi-1)^{2}=0$ on $N_{1}$. Moreover $\ker\phi\subseteq N_{0}$ (a $\phi$-fixed vector is killed by $\phi^{4}$) and $\ker(\phi-1)\subseteq N_{1}$, so $\dim\ker\phi=2$ is the number of Jordan blocks of $\restrictionof{\phi}{N_{0}}$ and $\dim\ker(\phi-1)=2$ that of $\restrictionof{\phi}{N_{1}}$.
+:::
+
+:::
+
+::: {.pf-step #zero-part}
+$\dim\ker\phi^{2}=3$ or $4$; both occur.
+
+::: pf-proof
+$\restrictionof{\phi}{N_{0}}$ is nilpotent on a $4$-dimensional space with exactly $2$ Jordan blocks, each of size $\le3$ (by $\phi^{3}=0$). The block-size partitions of $4$ into exactly $2$ parts, each at most $3$, are $(3,1)$ and $(2,2)$. For a nilpotent with block sizes $s_{1},\dots,s_{r}$ one has $\dim\ker\phi^{k}=\sum_{i}\min(k,s_{i})$, so $\dim\ker\phi^{2}$ is $2+1=3$ for $(3,1)$ and $2+2=4$ for $(2,2)$; both are realised by upper triangular matrices with the given shape.
+:::
+
+:::
+
+::: {.pf-step #one-part}
+$\dim\ker(\phi-\mathrm{id})^{2}=4$; it is both the maximum and the minimum.
+
+::: pf-proof
+On $N_{1}$, $\phi-\mathrm{id}$ is nilpotent with exactly $2$ Jordan blocks (from $\dim\ker(\phi-\mathrm{id})=2$) on a $4$-dimensional space, each of size $\le2$ (by $(\phi-1)^{2}=0$). The only partition of $4$ into exactly $2$ parts, each at most $2$, is $(2,2)$, so $\dim\ker(\phi-1)^{2}=\sum_{i}\min(2,s_{i})=2+2=4$ necessarily.
+:::
+
+:::
+
+::: {.pf-qed}
+$\dim\ker(\phi^{2})$ lies in $\{3,4\}$, with maximum $4$ and minimum $3$ (step [](#zero-part){.pf-ref}); $\dim\ker\big((\phi-\mathrm{id})^{2}\big)=4$ necessarily, so its maximum and minimum coincide (step [](#one-part){.pf-ref}).
+:::
+
+:::
+
 :::
