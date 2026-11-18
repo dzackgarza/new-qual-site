@@ -108,6 +108,28 @@ audit:
     on printed p. 267, and against the book's remark on printed p. 263 that $\operatorname{Tor}_n=0$
     for $n>1$. Not claimed: a text version for any other source, this card citing none; nothing was
     read from a rendered page.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The card's certificate, and where it is. Both sentences of the printed exercise are proved for
+    every abelian group $A$ at
+    <https://github.com/dzackgarza/lean-categories/blob/5848f0f2f881ba032eb8bb69baa051300498ba6b/LeanCategories/Homological/TorExercise3A2.lean>:
+    `torOneQzAddEquivTorsion` is
+    $\operatorname{Tor}_1^\ZZ(A,\QQ/\ZZ)\cong\operatorname{torsion}_\ZZ A$ at `TorBridge.torOne`,
+    the left derived functor of `tensorLeft B`, and
+    `isTorsionFree_iff_forall_subsingleton_torOne` is "$A$ torsionfree iff
+    $\operatorname{Tor}_1^\ZZ(A,B)=0$ for every abelian group $B$", both directions. Neither
+    hypothesis mentions finiteness: the presentation is $\pi:(A\to_0\ZZ)\to A$, free on $A$ itself,
+    and the first statement is read off the kernel of that presentation's syzygy inclusion. Checked
+    in this pass by reading that file at that commit rather than the registry row's description of
+    it: both declarations are there with those statements, the module imports only Mathlib and the
+    repository's own `TorReductions` and `TorExercise3A6`, and the file contains no `sorry` and no
+    `axiom`. Not checked in this pass: the file was not re-elaborated here, and the elaboration
+    recorded for it --- Lean 4.36.0 at Mathlib `6d97e8ad`, axioms `propext`, `Classical.choice`,
+    `Quot.sound`, no `sorryAx` --- is the one section 1's row records. The proof above is Weibel's
+    colimit-and-balancing argument; the certificate proves the same two statements without it, so
+    the certificate covers the card's claim and not this page's route.
 ---
 
 ::: {.problem}
