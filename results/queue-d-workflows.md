@@ -32,3 +32,10 @@ queue is written by the same recipe the report already runs; only the upload pat
 
 It does not make the count a gate. Queue D is a measurement, and nothing reads it back to
 pass or fail a check.
+
+## What decides it
+
+`tests/test_reports_artifact.py` reads the `corpus-reports` job's upload list off the
+workflow, and — while Queue D is not in that list — applies this patch to a copy of the
+file and reads the list again. A patch that stopped applying, or that applied but named
+something else, fails there instead of being discovered from a missing report.
