@@ -32,7 +32,7 @@ That gap is what the long exact sequence of cohomology measures, and it is the r
 
 [[D-MODOX]]
 
-The presheaf $U\mapsto\Hom_{\OO_U}(\mcf_I,\mcg_I)$ of homomorphisms between the restrictions is already a sheaf, and this is where it differs from the tensor presheaf: a homomorphism is a rule on the sections of each open set, and two such functions that agree after restriction to every member of a cover agree everywhere, because the sections they are applied to glue ([[PR-C9ZEK]]).
+The presheaf $U\mapsto\Hom_{\OO_U}(\restrictionof{\mcf}{U},\restrictionof{\mcg}{U})$ of homomorphisms between the restrictions is already a sheaf, and this is where it differs from the tensor presheaf: a homomorphism is a rule on the sections of each open set, and two such rules that agree after restriction to every member of a cover agree everywhere, because the sections they are applied to glue ([[PR-C9ZEK]]).
 So $\sheafhom(\mcf,\mcg)$ exists with no sheafification, its sections over $U$ are the homomorphisms over $U$, and $\sheafhom(\OO_X,\mcg)\cong\mcg$.
 
 ## The espace étalé
@@ -44,5 +44,5 @@ In that description a morphism of sheaves is a continuous map of the étale spac
 
 ## Where a morphism that is onto fails to split
 
-A surjection of sheaves of $\OO_X$-modules need not be a surjection on sections over any fixed open set, so the sequences that look split locally are not split globally.
-The measure of the failure is $\Ext^1$: an extension of $\OO_X$-modules that is locally split but not globally split is a class in $\Ext^1(\mcg,\mcf)$, and in degree one that is the same as a class in $H^1(X,\sheafhom(\mcg,\mcf))$.
+A surjection of sheaves of $\OO_X$-modules is onto on every stalk and need not be onto on the sections over $X$: the exponential above is the example, and on an affine scheme the failure disappears for quasicoherent sheaves.
+Splitting is a separate condition, and it is what $\Ext^1$ measures: the extensions of $\mcf$ by $\mcg$ are in bijection with $\Ext^1(\mcg,\mcf)$, with the split extension as the zero class, so a surjection splits exactly when its class vanishes ([[D-DEFEXT]]).
