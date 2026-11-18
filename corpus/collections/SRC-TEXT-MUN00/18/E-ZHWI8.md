@@ -31,6 +31,18 @@ audit:
     second case needs the observation that g(x) <= g(a) < f(a) <= f(x), which the card
     supplies; their union is indexed by Y and not by X. (tmp/sources/munkres-solutions-
     positron-ch2.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps and checked both parts against Munkres §18 Exercise 8,
+    printed pp. 111-112, and Theorem 18.3 (pasting lemma, printed p. 108): the two cases for
+    the openness of {g < f} according to whether an element lies strictly between g(a) and
+    f(a) or f(a) is its immediate successor, the supplied inequality g(x) <= g(a) < f(a) <=
+    f(x) in the second case, and the pasting of f on {f <= g} with g on {g <= f} over a
+    finite closed cover. positron0802, Exercise 18.8, PDF p. 12, with their union corrected
+    from c in X to c in Y; Whitman, printed pp. 184-185, agrees. The printed statement
+    needed no repair.
 ---
 
 ::: {.exercise}
@@ -51,27 +63,96 @@ Show that $h$ is continuous.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.8, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two cases of (a) and the pasting argument of (b) are theirs, with one step of their second case supplied, and one index set corrected: their union is over $c\in Y$, not $c\in X$. Whitman, printed pp. 184--185, proves (a) with the set of elements having an immediate successor and the same two cases, and (b) by the same pasting lemma.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.8, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two cases of (a) and the pasting argument of (b) are theirs, one step of their second case is supplied below, and one index set is corrected: their union is taken over $c\in Y$, not over $c\in X$. Whitman, printed pp. 184--185, proves (a) with the set of elements having an immediate successor and the same two cases, and (b) by the same pasting lemma.
 
-(a) Put $C=\{x\mid f(x)\le g(x)\}$; we show that $U=X-C=\{x\mid g(x)<f(x)\}$ is open. Let $a\in U$, so $g(a)<f(a)$.
+Throughout, $Y$ is an ordered set in the order topology and $f,g:X\to Y$ are continuous.
 
-If some $c\in Y$ satisfies $g(a)<c<f(a)$, then
-$$
-a\in g^{-1}\big((-\infty,c)\big)\cap f^{-1}\big((c,+\infty)\big),
-$$
-an open set, and any $x$ in that set has $g(x)<c<f(x)$, hence lies in $U$.
+::: pf
 
-If there is no element strictly between $g(a)$ and $f(a)$, then $f(a)$ is the immediate successor of $g(a)$, and
-$$
-a\in g^{-1}\big((-\infty,f(a))\big)\cap f^{-1}\big((g(a),+\infty)\big),
-$$
-again an open set. For $x$ in it we have $g(x)<f(a)$ and $f(x)>g(a)$; since $f(a)$ is the immediate successor of $g(a)$, the first inequality gives $g(x)\le g(a)$ and the second gives $f(x)\ge f(a)$. Hence $g(x)\le g(a)<f(a)\le f(x)$ and $x\in U$.
+::: {.pf-step #part-a}
+(a) $C=\{x\mid f(x)\le g(x)\}$ is closed in $X$.
 
-So every point of $U$ has a neighbourhood inside $U$, $U$ is open, and $C$ is closed.
+:::: pf-proof
 
-(b) Let $A=\{x\mid f(x)\le g(x)\}$ and $B=\{x\mid g(x)\le f(x)\}$. Both are closed by (a) (applied to the pair $f,g$ and to the pair $g,f$), $A\cap B=\{x\mid f(x)=g(x)\}$, and $A\cup B=X$ because for each $x$ one of $f(x)\le g(x)$, $g(x)\le f(x)$ holds. The restrictions $f\restrict_{A}$ and $g\restrict_{B}$ are continuous, so by the pasting lemma (Theorem 18.3, printed p. 108) the map
+::: {.pf-step #a-first-case}
+Let $a\in U=X-C$, so $g(a)<f(a)$, and suppose some $c\in Y$ satisfies $g(a)<c<f(a)$. Then $a$ has a neighbourhood contained in $U$.
+
+::: pf-proof
+The sets $(-\infty,c)=\{y\in Y\mid y<c\}$ and $(c,+\infty)=\{y\in Y\mid y>c\}$ are open in the order topology, so $g^{-1}\big((-\infty,c)\big)$ and $f^{-1}\big((c,+\infty)\big)$ are open in $X$ because $g$ and $f$ are continuous; their intersection $N$ is an open set containing $a$, since $g(a)<c<f(a)$. For $x\in N$ we have $g(x)<c<f(x)$, hence $g(x)<f(x)$ and $x\in U$. So $N\subset U$.
+:::
+
+:::
+
+::: {.pf-step #a-second-case}
+Let $a\in U$ and suppose no $c\in Y$ satisfies $g(a)<c<f(a)$. Then $f(a)$ is the immediate successor of $g(a)$, and $a$ has a neighbourhood contained in $U$.
+
+::: pf-proof
+That no element lies strictly between $g(a)$ and $f(a)$, together with $g(a)<f(a)$, says exactly that $f(a)$ is the immediate successor of $g(a)$ in $Y$. The set
 $$
-h:X\to Y,\qquad h(x)=\begin{cases}f(x),&x\in A,\\ g(x),&x\in B,\end{cases}
+N=g^{-1}\big((-\infty,f(a))\big)\cap f^{-1}\big((g(a),+\infty)\big)
 $$
-is well defined and continuous. For $x\in A$ we have $f(x)\le g(x)$, so $h(x)=f(x)=\min\{f(x),g(x)\}$; for $x\in B$ similarly $h(x)=g(x)=\min\{f(x),g(x)\}$. Hence $h=\min\{f,g\}$ is continuous.
+is open in $X$ and contains $a$, because $g(a)<f(a)$ puts $g(a)$ in $(-\infty,f(a))$ and $f(a)$ in $(g(a),+\infty)$. Let $x\in N$; then $g(x)<f(a)$ and $f(x)>g(a)$. If $g(x)>g(a)$ then $g(a)<g(x)<f(a)$ would put $g(x)$ strictly between, which the hypothesis excludes; so $g(x)\le g(a)$. If $f(x)<f(a)$ then $g(a)<f(x)<f(a)$ would do the same; so $f(x)\ge f(a)$. Hence $g(x)\le g(a)<f(a)\le f(x)$, and $x\in U$. So $N\subset U$.
+:::
+
+:::
+
+::: {.pf-step #a-conclusion}
+$U$ is open in $X$ and $C$ is closed.
+
+::: pf-proof
+Let $a\in U$. By trichotomy exactly one of the two hypotheses of steps [](#a-first-case){.pf-ref} and [](#a-second-case){.pf-ref} holds at $a$: either some element of $Y$ lies strictly between $g(a)$ and $f(a)$, or none does. In either case $a$ has a neighbourhood contained in $U$. So $U$ is open in $X$, and its complement $C=\{x\mid f(x)\le g(x)\}$ is closed.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) $h(x)=\min\{f(x),g(x)\}$ is continuous.
+
+:::: pf-proof
+
+::: {.pf-step #b-cover}
+With $A=\{x\mid f(x)\le g(x)\}$ and $B=\{x\mid g(x)\le f(x)\}$, the sets $A$ and $B$ are closed in $X$, $A\cup B=X$, and $A\cap B=\{x\mid f(x)=g(x)\}$.
+
+::: pf-proof
+$A$ is closed by step [](#part-a){.pf-ref} and $B$ is closed by the same step applied to the pair $(g,f)$. For each $x$ one of $f(x)\le g(x)$ and $g(x)\le f(x)$ holds by trichotomy, so $A\cup B=X$; and $x$ lies in both exactly when $f(x)\le g(x)\le f(x)$, that is $f(x)=g(x)$.
+:::
+
+:::
+
+::: {.pf-step #b-paste}
+The map $h$ is the pasting of $f\restriction_{A}$ and $g\restriction_{B}$ and is continuous.
+
+::: pf-proof
+On $A$ one has $h(x)=f(x)$, since $f(x)\le g(x)$ there; on $B$ one has $h(x)=g(x)$. So $h$ is well defined by these two formulas, the two formulas agree on $A\cap B$ by step [](#b-cover){.pf-ref}, and $A\cup B=X$. The restrictions $f\restrict_{A}$ and $g\restrict_{B}$ are continuous, the sets $A$ and $B$ are closed in $X$, and the family $\{A,B\}$ is finite, so the pasting lemma (Theorem 18.3, printed p. 108) gives that $h$ is continuous.
+:::
+
+:::
+
+::: {.pf-step}
+(b) holds.
+
+::: pf-proof
+Step [](#b-paste){.pf-ref} shows that $h(x)=\min\{f(x),g(x)\}$ is continuous, which is the assertion of (b).
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+Both parts hold.
+
+::: pf-proof
+Steps [](#part-a){.pf-ref} and [](#part-b){.pf-ref} are the two assertions of the exercise.
+:::
+
+:::
+
+:::
 :::
