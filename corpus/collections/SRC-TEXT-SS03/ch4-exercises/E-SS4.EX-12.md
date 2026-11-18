@@ -55,157 +55,113 @@ and the sector $0 \leq \theta \leq \pi/\beta < \pi$, and let $\beta \downarrow 1
 :::
 
 ::: {.solution}
-We use the Fourier-transform convention
+
+The argument is the card's own, following the three steps the exercise prescribes. The Fourier transform is normalised as $\widehat f(\zeta)=\int_{\RR}f(x)e^{-2\pi ix\zeta}dx$.
+
+::: pf
+
+::: {.pf-step #entire}
+
+(a) $\widehat f$ extends to an entire function with $\abs{\widehat f(\xi+i\eta)}\le C'e^{\pi\eta^{2}}$.
+
+::: pf-proof
+
+The hypothesis $\abs{f(x)}\le Ce^{-\pi x^{2}}$ makes the integral $\widehat f(\zeta)=\int_{\RR}f(x)e^{-2\pi ix\zeta}dx$ converge for every $\zeta\in\CC$, locally uniformly in $\zeta$, since $\abs{f(x)e^{-2\pi ix\zeta}}\le Ce^{-\pi x^{2}+2\pi\abs{\eta}\abs{x}}$ with $\zeta=\xi+i\eta$, and this is integrable in $x$ and locally bounded in $\eta$. A locally uniform limit of holomorphic functions is holomorphic, so $\widehat f$ is entire. Completing the square, $-\pi x^{2}+2\pi\eta x=-\pi(x-\eta)^{2}+\pi\eta^{2}$, so
 $$
-\widehat f(\zeta)=\int_{\RR}f(x)e^{-2\pi i x\zeta}\,dx.
-$$
-The hypothesis $\abs{f(x)}\le Ce^{-\pi x^2}$ implies that this integral converges for every $\zeta\in\CC$, locally uniformly in $\zeta$, because for $\zeta=\xi+i\eta$,
-$$
-\abs{f(x)e^{-2\pi i x\zeta}}
-\le C e^{-\pi x^2+2\pi \abs{\eta}\abs{x}}.
-$$
-Hence $\widehat f$ extends to an entire function. Completing the square gives the global estimate
-$$
-\abs{\widehat f(\xi+i\eta)}
-\le C\int_{\RR}e^{-\pi x^2+2\pi\eta x}\,dx
-=C' e^{\pi\eta^2}.
-\tag{1}
+\abs{\widehat f(\xi+i\eta)}\le C\int_{\RR}e^{-\pi(x-\eta)^{2}}e^{\pi\eta^{2}}dx=C'e^{\pi\eta^{2}}.
 $$
 
-Assume first that $f$ is even. Then $\widehat f$ is even. Its Taylor series therefore contains only even powers, so there is an entire function $g$ such that
+:::
+
+:::
+
+::: {.pf-step #even}
+
+(a) If $f$ is even then $g(z)=\widehat f(\sqrt z)$ is a well-defined even entire function satisfying $\abs{g(x)}\le Ce^{-\pi x}$ for real $x$ and $\abs{g(z)}\le C'e^{\pi R\sin^{2}(\theta/2)}$ for $z=Re^{i\theta}$.
+
+::: pf-proof
+
+For even $f$, $\widehat f(-\zeta)=\int f(x)e^{2\pi ix\zeta}dx=\widehat f(\zeta)$ after substituting $x\mapsto-x$, so $\widehat f$ is even and $\widehat f(\zeta)$ depends only on $\zeta^{2}$; hence there is an entire $g$ with $g(w^{2})=\widehat f(w)$, which is the stated $g$ and is independent of the choice of square root. For $x\ge0$ take $\sqrt x\in\RR_{\ge0}$: $\abs{g(x)}=\abs{\widehat f(\sqrt x)}\le Ce^{-\pi x}$. For $x<0$ take $\sqrt x=i\sqrt{\abs x}$, so $\eta=\sqrt{\abs x}$ and $\abs{g(x)}\le C'e^{\pi\abs x}=C'e^{-\pi x}$. For $z=Re^{i\theta}$ take $\sqrt z=\sqrt Re^{i\theta/2}$, whose imaginary part is $\sqrt R\sin(\theta/2)$, so $\abs{g(z)}\le C'e^{\pi R\sin^{2}(\theta/2)}\le C'e^{\pi R}=C'e^{\pi\abs z}$.
+
+:::
+
+:::
+
+::: {.pf-step #sector}
+
+(b) With $\alpha=\frac{\pi}{2\beta}$, $\gamma=i\pi e^{-i\alpha}/\sin\alpha$ and $F_{\beta}(z)=g(z)e^{\gamma z}$, the function $F_{\beta}$ is bounded on the sector $S_{\beta}=\{0\le\arg z\le\pi/\beta\}$, for every $\beta>1$.
+
+::: pf-proof
+
+$\gamma=\pi(1+i\cot\alpha)$, so $\Re\gamma=\pi$. $F_{\beta}$ is holomorphic on a neighbourhood of $S_{\beta}$ and of at most exponential growth there, and the sector has opening $\pi/\beta<\pi$, so the Phragmén–Lindelöf principle applies: it suffices to bound $F_{\beta}$ on the two boundary rays. On $z=r\ge0$, $\abs{F_{\beta}(r)}=e^{\pi r}\abs{g(r)}\le C$ by step [](#even){.pf-ref}. On $z=re^{2i\alpha}$, $\Re(\gamma e^{2i\alpha})=\pi\cos2\alpha-\pi\cot\alpha\sin2\alpha=\pi(\cos2\alpha-2\cos^{2}\alpha)=-\pi$, while the exponent of step [](#even){.pf-ref} is $\pi r\sin^{2}\alpha$; hence $\abs{F_{\beta}(re^{2i\alpha})}\le C'e^{-\pi r}e^{\pi r\sin^{2}\alpha}=C'e^{-\pi r\cos^{2}\alpha}\le C'$.
+
+:::
+
+:::
+
+::: {.pf-step #halfplane}
+
+(b) $\abs{e^{\pi z}g(z)}\le C''$ on all of $\CC$.
+
+::: pf-proof
+
+Let $\beta\downarrow1$: then $\alpha\downarrow\frac\pi2$, $\gamma\to i\pi\frac{e^{-i\pi/2}}{1}=\pi$, and $S_{\beta}$ increases to the open upper half-plane. For fixed $z$ in the upper half-plane, step [](#sector){.pf-ref} gives $\abs{e^{\pi z}g(z)}\le\max(C,C')$ once $\beta>1$ is close enough to $1$ that $z\in S_{\beta}$, and by continuity the bound holds in the closed upper half-plane. The same argument applied to $\overline{g(\bar z)}$ — which is again entire and satisfies the same estimates, since the estimates are invariant under conjugation — gives the bound in the closed lower half-plane. So the entire function $e^{\pi z}g(z)$ is bounded on $\CC$.
+
+:::
+
+:::
+
+::: {.pf-step #liouville}
+
+(b) $g(z)=ce^{-\pi z}$, hence $\widehat f(w)=ce^{-\pi w^{2}}$ and $f(x)=ce^{-\pi x^{2}}$.
+
+::: pf-proof
+
+A bounded entire function is constant by Liouville's theorem, so $e^{\pi z}g(z)=c$ and $g(z)=ce^{-\pi z}$. Substituting $z=w^{2}$ gives $\widehat f(w)=g(w^{2})=ce^{-\pi w^{2}}$. The Gaussian $e^{-\pi x^{2}}$ is its own Fourier transform in this normalisation, so Fourier inversion gives $f(x)=ce^{-\pi x^{2}}$.
+
+:::
+
+:::
+
+::: {.pf-step #odd}
+
+(c) If $f$ is odd and satisfies the two Gaussian bounds then $f=0$.
+
+::: pf-proof
+
+For odd $f$, $\widehat f(-\zeta)=-\widehat f(\zeta)$, so $\widehat f$ is odd and $\widehat f(0)=0$; hence $h(z)=\widehat f(z)/z$ extends to an even entire function. Near $0$ the estimate $\abs{\widehat f(z)}\le C'e^{\pi\eta^{2}}$ bounds $h$ after increasing the constant, and on the real axis $\abs{h(x)}\le Ce^{-\pi x^{2}}$ for $\abs x\ge1$ with a larger constant near $0$. So $h$ satisfies the estimates of steps [](#entire){.pf-ref} and [](#even){.pf-ref}, and the even case applies: $h(z)=ce^{-\pi z^{2}}$, that is $\widehat f(z)=cze^{-\pi z^{2}}$. But the hypothesis $\abs{\widehat f(x)}\le Ce^{-\pi x^{2}}$ on the real axis then reads $\abs c\abs x\le C$ for all real $x$, which forces $c=0$. Hence $\widehat f=0$ and, by injectivity of the Fourier transform, $f=0$.
+
+:::
+
+:::
+
+::: {.pf-step #general}
+
+(c) An arbitrary $f$ satisfying the two Gaussian bounds is a constant multiple of $e^{-\pi x^{2}}$; in particular, if $\abs{f(x)}\le Ce^{-\pi Ax^{2}}$ and $\abs{\widehat f(\xi)}\le C'e^{-\pi B\xi^{2}}$ with $AB>1$, then $f\equiv0$.
+
+::: pf-proof
+
+Write $f=f_{e}+f_{o}$ with $f_{e}(x)=\frac{f(x)+f(-x)}{2}$ and $f_{o}(x)=\frac{f(x)-f(-x)}{2}$; both satisfy the same two bounds, up to constants, and $\widehat f=\widehat{f_{e}}+\widehat{f_{o}}$. By step [](#odd){.pf-ref} $f_{o}=0$, and applying the even case of steps [](#entire){.pf-ref}–[](#liouville){.pf-ref} to $f_{e}$ gives $f=f_{e}=ce^{-\pi x^{2}}$. Now suppose the sharper bounds with $AB>1$ hold, and choose $\lambda>0$ with $1/A<\lambda^{2}<B$, possible because $AB>1$. Then $G(x)=f(\lambda x)$ satisfies $\abs{G(x)}\le Ce^{-\pi A\lambda^{2}x^{2}}\le Ce^{-\pi x^{2}}$ and $\widehat G(\xi)=\lambda^{-1}\widehat f(\xi/\lambda)$ satisfies $\abs{\widehat G(\xi)}\le C'\lambda^{-1}e^{-\pi B\xi^{2}/\lambda^{2}}\le C''e^{-\pi\xi^{2}}$. So $G=ce^{-\pi x^{2}}$, and then $\abs c e^{-\pi x^{2}}=\abs{G(x)}\le Ce^{-\pi A\lambda^{2}x^{2}}$ for all $x$; dividing and letting $\abs x\to\infty$ gives $c=0$ because $A\lambda^{2}>1$. Hence $f\equiv0$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+
+Hardy's theorem holds, and the $AB>1$ consequence holds.
+
+::: pf-proof
+
+Steps [](#entire){.pf-ref}–[](#general){.pf-ref} show that a function with $\abs{f(x)}=O(e^{-\pi x^{2}})$ and $\abs{\widehat f(\xi)}=O(e^{-\pi\xi^{2}})$ is a constant multiple of $e^{-\pi x^{2}}$, and that the sharper pair of bounds with $AB>1$ forces $f\equiv0$:
 $$
-g(z)=\widehat f(\sqrt z);
-$$
-this notation is independent of the choice of square root. If $x\ge0$, the assumed real-axis decay of $\widehat f$ gives
-$$
-\abs{g(x)}\le C e^{-\pi x}.
-\tag{2}
-$$
-If $x<0$, choose $\sqrt x=i\sqrt{\abs{x}}$ and use (1):
-$$
-\abs{g(x)}\le C'e^{\pi\abs{x}}=C'e^{-\pi x}.
-\tag{3}
-$$
-More generally, for $z=Re^{i\theta}$ choose $\sqrt z=\sqrt R e^{i\theta/2}$. Then (1) yields
-$$
-\abs{g(z)}\le C'e^{\pi R\sin^2(\theta/2)}\le C'e^{\pi\abs{z}}.
-\tag{4}
+\boxed{f=ce^{-\pi x^{2}}\ \text{under the two Gaussian bounds};\qquad f\equiv0\ \text{when } AB>1.}
 $$
 
-Fix $\beta>1$ and consider the sector
-$$
-S_\beta=\{z:0\le\arg z\le\pi/\beta\}.
-$$
-Put
-$$
-\alpha=\frac{\pi}{2\beta},
-\qquad
-\gamma=i\pi\frac{e^{-i\alpha}}{\sin\alpha}
-=\pi(1+i\cot\alpha),
-$$
-and
-$$
-F_\beta(z)=g(z)e^{\gamma z}.
-$$
-By (4), $F_\beta$ has exponential growth $O(e^{C_\beta\abs{z}})$. Since the sector has opening $\pi/\beta$ and $1<\beta$, the Phragmén--Lindelöf principle applies.
+:::
 
-On the ray $z=r\ge0$, $\Re\gamma=\pi$, so by (2)
-$$
-\abs{F_\beta(r)}\le C.
-\tag{5}
-$$
-On the other boundary ray $z=re^{2i\alpha}$, a direct calculation gives
-$$
-\Re(\gamma e^{2i\alpha})=-\pi.
-$$
-Together with (4), whose exponent there is $\pi r\sin^2\alpha$, this gives
-$$
-\abs{F_\beta(re^{2i\alpha})}
-\le C' e^{-\pi r+\pi r\sin^2\alpha}
-=C'e^{-\pi r\cos^2\alpha}\le C'.
-\tag{6}
-$$
-Thus Phragmén--Lindelöf and (5)--(6) imply that $F_\beta$ is bounded on $S_\beta$.
+:::
 
-Now let $\beta\downarrow1$. Then $S_\beta$ exhausts the open upper half-plane and
-$$
-\gamma\longrightarrow\pi.
-$$
-For each fixed $z$ in the upper half-plane, the preceding bound may be taken with the same boundary constant $\max(C,C')$; hence
-$$
-\abs{e^{\pi z}g(z)}\le C''
-$$
-in the closed upper half-plane. Applying the reflected argument in the lower half-plane gives the same bound there. Consequently the entire function $e^{\pi z}g(z)$ is bounded on $\CC$, so Liouville's theorem gives
-$$
-g(z)=c e^{-\pi z}.
-$$
-Substituting $z=w^2$ yields
-$$
-\widehat f(w)=c e^{-\pi w^2}.
-$$
-The Gaussian is its own Fourier transform in this normalization, so Fourier inversion gives
-$$
-f(x)=c e^{-\pi x^2}.
-\tag{7}
-$$
+:::
 
-Now suppose $f$ is odd. Then $\widehat f$ is odd and $\widehat f(0)=0$. Hence
-$$
-h(z)=\frac{\widehat f(z)}{z}
-$$
-extends to an even entire function. From (1) and the real-axis Gaussian bound, after increasing the constant on a neighborhood of $0$, $h$ satisfies the same type of estimates as the even function treated above:
-$$
-\abs{h(x)}\le C e^{-\pi x^2},
-\qquad
-\abs{h(\xi+i\eta)}\le C'e^{\pi\eta^2}.
-$$
-Therefore
-$$
-h(z)=c e^{-\pi z^2},
-\qquad
-\widehat f(z)=cz e^{-\pi z^2}.
-$$
-But the assumed bound $\abs{\widehat f(x)}\le C e^{-\pi x^2}$ on the real axis forces $c=0$, since otherwise division by $e^{-\pi x^2}$ would give the unbounded function $\abs{c}\abs{x}$. Thus $\widehat f=0$ and $f=0$.
-
-For a general $f$, write
-$$
-f=f_e+f_o,
-\qquad
-f_e(x)=\frac{f(x)+f(-x)}2,
-\quad
-f_o(x)=\frac{f(x)-f(-x)}2.
-$$
-Both parts satisfy the same Gaussian bound, and
-$$
-\widehat{f_e}(\xi)=\frac{\widehat f(\xi)+\widehat f(-\xi)}2,
-\qquad
-\widehat{f_o}(\xi)=\frac{\widehat f(\xi)-\widehat f(-\xi)}2,
-$$
-so their Fourier transforms do also. The even case gives $f_e=ce^{-\pi x^2}$ and the odd case gives $f_o=0$. This proves Hardy's theorem.
-
-Finally suppose
-$$
-\abs{f(x)}\le Ce^{-\pi A x^2},
-\qquad
-\abs{\widehat f(\xi)}\le Ce^{-\pi B\xi^2},
-\qquad AB>1.
-$$
-Define $q(x)=f(x/\sqrt A)$. Then
-$$
-\abs{q(x)}\le Ce^{-\pi x^2},
-$$
-and the scaling rule gives
-$$
-\widehat q(\xi)=\sqrt A\,\widehat f(\sqrt A\,\xi),
-$$
-so
-$$
-\abs{\widehat q(\xi)}\le C\sqrt A\,e^{-\pi AB\xi^2}
-\le C\sqrt A\,e^{-\pi\xi^2}.
-$$
-Hardy's theorem gives $q(x)=ce^{-\pi x^2}$, hence
-$$
-\widehat q(\xi)=ce^{-\pi\xi^2}.
-$$
-The stronger estimate with $AB>1$ is incompatible with $c\ne0$ as $\abs{\xi}\to\infty$. Hence $c=0$, so $q=0$ and therefore $f=0$.
 :::
