@@ -26,6 +26,16 @@ audit:
     A completeness audit of the collection against the book flagged the omission; the hint
     is restored verbatim from the print. The mathematics of the statement is unchanged.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the card's prose argument into numbered steps without changing the mathematics, and
+    re-checked each step against the definitions and theorems it invokes. What was not checked: no
+    copy of Stein and Shakarchi and no solution set for it is retained in tmp/sources (the
+    collection provenance is the Google Books ISBN link), so the printed statement and page were
+    not re-read; the exercise number is the one the collection index records. No published
+    solution is transcribed; the argument remains the card's own, as its solution section says.
 ---
 
 ::: {.exercise}
@@ -43,57 +53,59 @@ $$\frac{\abs{f'(z)}}{1 - \abs{f(z)}^2} \le \frac{1}{1 - \abs{z}^2} \quad \text{f
 :::
 
 ::: {.solution}
-For $a\in\DD$, define the disk automorphism
-$$
-\phi_a(\zeta)=\frac{\zeta-a}{1-\overline a\zeta}.
-$$
-Then
-$$
-\rho(z,w)=\abs{\phi_w(z)}.
-$$
 
-Fix $w\in\DD$ and set
-$$
-g=\phi_{f(w)}\circ f\circ\phi_w^{-1}.
-$$
-Then $g:\DD\to\DD$ is holomorphic and $g(0)=0$. Schwarz's lemma gives
-$$
-\abs{g(\zeta)}\le\abs{\zeta}.
-$$
-Taking $\zeta=\phi_w(z)$ yields
-$$
-\rho(f(z),f(w))
-=\abs{\phi_{f(w)}(f(z))}
-\le\abs{\phi_w(z)}
-=\rho(z,w).
-$$
-If $f$ is an automorphism, apply the same inequality to $f^{-1}$ and the pair $f(z),f(w)$ to obtain the reverse inequality. Hence automorphisms preserve $\rho$ exactly.
+The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 8, Exercise 13. Here $\DD=\theset{\abs{z}<1}$, $\rho(z,w)=\abs{\frac{z-w}{1-\overline{w}z}}$, and for $a\in\DD$ the disk automorphism is $\phi_a(\zeta)=\frac{\zeta-a}{1-\overline{a}\zeta}$ with inverse $\phi_a^{-1}(\zeta)=\frac{\zeta+a}{1+\overline{a}\zeta}$; Schwarz's lemma is that a holomorphic $g:\DD\to\DD$ with $g(0)=0$ satisfies $\abs{g(\zeta)}\leq\abs{\zeta}$ and $\abs{g'(0)}\leq1$.
 
-For the infinitesimal form, Schwarz's lemma also gives $\abs{g'(0)}\le1$. Since
-$$
-\phi_a'(a)=\frac1{1-\abs{a}^2}
-$$
-and, because $\phi_w^{-1}(\zeta)=(\zeta+w)/(1+\overline w\zeta)$,
-$$
-(\phi_w^{-1})'(0)=1-\abs{w}^2,
-$$
-the chain rule gives
-$$
-g'(0)
-=
-\frac{1-\abs{w}^2}{1-\abs{f(w)}^2}f'(w).
-$$
-Therefore
-$$
-\frac{\abs{f'(w)}}{1-\abs{f(w)}^2}
-\le
-\frac1{1-\abs{w}^2}.
-$$
-Renaming $w$ as $z$ gives the Schwarz-Pick inequality.
+::: pf
+
+::: {.pf-step #phi}
+
+$\rho(z,w)=\abs{\phi_w(z)}$ and $\phi_w$ is an automorphism of $\DD$.
+
+::: pf-proof
+
+Substituting $a=w$, $\zeta=z$ in the definition of $\phi_w$ gives exactly $(z-w)/(1-\overline{w}z)$. The denominator does not vanish for $\abs{z}<1$, $\abs{w}<1$ since $\abs{\overline{w}z}<1$, and $\phi_w$ is a bijection of $\DD$ with the displayed inverse, which is holomorphic for the same reason.
+
 :::
 
-::: {.remark title="Variations"}
-If equality holds in the first inequality for some $z\neq w$, or in the second for some $z$, then $f\in\Aut(\DD)$.
-With $g=\phi_{f(w)}\circ f\circ\phi_w^{-1}$ as in the solution, equality in the first inequality gives $\abs{g(\zeta)}=\abs{\zeta}$ at $\zeta=\phi_w(z)\neq0$, and equality in the second (at $w=z$) gives $\abs{g'(0)}=1$.
-In both cases the equality clause of Schwarz's lemma makes $g$ a rotation, so $f=\phi_{f(w)}^{-1}\circ g\circ\phi_w$ is a composition of automorphisms of $\DD$.
+:::
+
+::: {.pf-step #a}
+
+(a) $\rho(f(z),f(w))\leq\rho(z,w)$ for holomorphic $f:\DD\to\DD$.
+
+::: pf-proof
+
+Fix $w\in\DD$ and put $g=\phi_{f(w)}\circ f\circ\phi_w^{-1}$, holomorphic $\DD\to\DD$ with $g(0)=\phi_{f(w)}(f(w))=0$. Schwarz's lemma gives $\abs{g(\zeta)}\leq\abs{\zeta}$; at $\zeta=\phi_w(z)$ this reads $\abs{\phi_{f(w)}(f(z))}\leq\abs{\phi_w(z)}$, which is the inequality by step [](#phi){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #aut}
+
+(a) An automorphism $f$ preserves $\rho$.
+
+::: pf-proof
+
+Apply step [](#a){.pf-ref} to $f^{-1}$, which is holomorphic $\DD\to\DD$, and to the pair $f(z),f(w)$: $\rho(z,w)=\rho(f^{-1}(f(z)),f^{-1}(f(w)))\leq\rho(f(z),f(w))$. With step [](#a){.pf-ref} applied to $f$ itself, the two are equal.
+
+:::
+
+:::
+
+::: {.pf-step #b}
+
+(b) $\frac{\abs{f'(z)}}{1-\abs{f(z)}^{2}}\leq\frac{1}{1-\abs{z}^{2}}$.
+
+::: pf-proof
+
+Schwarz's lemma also gives $\abs{g'(0)}\leq1$. Since $\phi_a'(\zeta)=\frac{1-\abs{a}^{2}}{(1-\overline{a}\zeta)^{2}}$, we have $\phi_{f(w)}'(f(w))=\frac{1}{1-\abs{f(w)}^{2}}$ and $(\phi_w^{-1})'(0)=1-\abs{w}^{2}$; the chain rule in $g=\phi_{f(w)}\circ f\circ\phi_w^{-1}$ gives $g'(0)=\frac{1-\abs{w}^{2}}{1-\abs{f(w)}^{2}}f'(w)$, so the inequality $\abs{g'(0)}\leq1$ is the displayed one at $w$, and renaming $w$ as $z$ gives it everywhere.
+
+:::
+
+:::
+
+:::
+
 :::
