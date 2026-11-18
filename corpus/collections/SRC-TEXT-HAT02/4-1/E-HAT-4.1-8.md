@@ -80,6 +80,15 @@ audit:
     Algebraic Topology (2002), checked against the retained PDF text at PDF p. 367, whose running
     folio reads 358. The solution section now states the corrected page; the mathematics is
     unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The solution section said that no retained set covers this exercise, which the card's own note
+    of 2026-11-07 contradicts: DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed
+    p. 89, is a retained complete solution of both exactness statements, in the reverse convention
+    for relative paths. The solution section now names it. The steps, the convention and the
+    mathematics are unchanged.
 ---
 
 ::: {.problem}
@@ -87,7 +96,7 @@ Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longri
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
+The argument is the card's own, checked against the retained set that covers this exercise: Kenneth DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed p. 89, which proves the same two exactness statements in the opposite convention for relative paths. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
 
 ::: pf
 
