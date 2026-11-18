@@ -36,6 +36,12 @@ audit:
     printed pp. 16-17 (tmp/sources/munkres-solutions-whitman.pdf). He notes there that
     (e) is Lemma 2.1 of the text, which Munkres leaves to the exercises; the card's
     chain g = g o i_B = g o (f o h) = (g o f) o h = i_A o h = h is that proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps from the retained Whitman solution (Exercise 2.5, printed pp. 16-17); statement unchanged. Each of the five parts is a numbered step; the injectivity and surjectivity facts of (a) are separate steps because (b), (c) and (e) use one of them apiece by reference; (d) exhibits its two inverses in each case. No page or citation change: the exercise and the definition of left and right inverse are both on printed p. 21.
+
 ---
 
 ::: {.exercise}
@@ -52,42 +58,108 @@ In general, let us denote the identity function for a set $C$ by $i_C$ . That is
 More than one right inverse?
 
 (e) Show that if $f$ has both a left inverse $g$ and a right inverse $h$, then $f$ is bijective and $g = h = f^{-1}$ .
+
 :::
 
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.5, printed pp. 16--17** (`tmp/sources/munkres-solutions-whitman.pdf`), all five parts; part (e) is Lemma 2.1 of Munkres, which the book leaves to the exercises.
 
-(a) Suppose $g\circ f=i_A$. If $f(a_1)=f(a_2)$, then
-$$
-a_1=g(f(a_1))=g(f(a_2))=a_2,
-$$
-so $f$ is injective. If $f\circ h=i_B$, then every $b\in B$ has the form $b=f(h(b))$, so $f$ is surjective.
+Throughout $f:A\to B$ is a function and $i_C:C\to C$ is the identity map of a set $C$; $g:B\to A$ is a left inverse of $f$ when $g\circ f=i_A$, and $h:B\to A$ a right inverse when $f\circ h=i_B$ (§2, printed p. 21).
 
-(b) Let
-$$
-f:\{0\}\hookrightarrow\{0,1\}
-$$
-be inclusion. The map $g:\{0,1\}\to\{0\}$ is a left inverse, but no right inverse exists because $f$ is not surjective.
+::: pf
 
-(c) Let
-$$
-f:\{0,1\}\to\{0\}
-$$
-be the constant map. Choosing $h(0)=0$ gives a right inverse, but no left inverse exists because $f$ is not injective.
+::: {.pf-step #part-a}
+(a) A left inverse of $f$ forces $f$ to be injective, and a right inverse forces it to be surjective.
 
-(d) Yes in both cases. For the inclusion
-$$
-f:\{0,1\}\hookrightarrow\{0,1,2\},
-$$
-a left inverse must fix $0,1$ but may send $2$ to either $0$ or $1$, giving two left inverses. For the constant surjection
-$$
-f:\{0,1\}\to\{0\},
-$$
-either choice $h(0)=0$ or $h(0)=1$ is a right inverse.
+::: pf-proof
 
-(e) Suppose $g\circ f=i_A$ and $f\circ h=i_B$. Part (a) shows that $f$ is both injective and surjective, hence bijective. Moreover,
+::: {.pf-step #injective}
+If $g\circ f=i_A$ then $f$ is injective.
+
+::: pf-proof
+Suppose $f(a_1)=f(a_2)$. Applying $g$ and using $g\circ f=i_A$ gives $a_1=g(f(a_1))=g(f(a_2))=a_2$.
+
+:::
+
+:::
+
+::: {.pf-step #surjective}
+If $f\circ h=i_B$ then $f$ is surjective.
+
+::: pf-proof
+For $b\in B$ we have $b=i_B(b)=f(h(b))$, so every $b$ is a value of $f$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) A function with a left inverse and no right inverse: the inclusion $f:\{0\}\to\{0,1\}$.
+
+::: pf-proof
+Define $g:\{0,1\}\to\{0\}$ by $g(0)=g(1)=0$; then $g\circ f=i_{\{0\}}$, so $g$ is a left inverse. The element $1\notin f(\{0\})$, so $f$ is not surjective and by step [](#surjective){.pf-ref} it has no right inverse.
+
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) A function with a right inverse and no left inverse: the constant map $f:\{0,1\}\to\{0\}$.
+
+::: pf-proof
+The map $h:\{0\}\to\{0,1\}$ with $h(0)=0$ satisfies $f\circ h=i_{\{0\}}$, so it is a right inverse. Since $f(0)=f(1)$ and $0\neq1$, $f$ is not injective and by step [](#injective){.pf-ref} it has no left inverse.
+
+:::
+
+:::
+
+::: {.pf-step #part-d}
+(d) A function can have more than one left inverse, and more than one right inverse.
+
+::: pf-proof
+
+::: {.pf-step #two-left}
+The inclusion $f:\{0,1\}\to\{0,1,2\}$ has two left inverses.
+
+::: pf-proof
+A map $g:\{0,1,2\}\to\{0,1\}$ is a left inverse exactly when $g(0)=0$ and $g(1)=1$; the value $g(2)$ is unconstrained. So the two maps with $g(2)=0$ and with $g(2)=1$ are distinct left inverses.
+
+:::
+
+:::
+
+::: {.pf-step #two-right}
+The constant surjection $f:\{0,1\}\to\{0\}$ has two right inverses.
+
+::: pf-proof
+Both $h_0$ with $h_0(0)=0$ and $h_1$ with $h_1(0)=1$ satisfy $f\circ h=i_{\{0\}}$, and $h_0\neq h_1$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-e}
+(e) If $f$ has a left inverse $g$ and a right inverse $h$, then $f$ is bijective and $g=h=f^{-1}$.
+
+::: pf-proof
+By step [](#injective){.pf-ref} $f$ is injective and by step [](#surjective){.pf-ref} it is surjective, hence bijective, so it has a two-sided inverse $f^{-1}$. For the identification,
 $$
-g=g\circ i_B=g\circ(f\circ h)=(g\circ f)\circ h=i_A\circ h=h.
+g=g\circ i_B=g\circ(f\circ h)=(g\circ f)\circ h=i_A\circ h=h,
 $$
-Thus the common map $g=h$ is the unique inverse $f^{-1}$.
+where the outer equalities use the definitions of the identity maps, the middle one associativity of composition, and the substitutions $g\circ f=i_A$ and $f\circ h=i_B$. So $g$ and $h$ are the same map, and it inverts $f$ on both sides, whence it is $f^{-1}$.
+
+:::
+
+:::
+
+:::
+
 :::
