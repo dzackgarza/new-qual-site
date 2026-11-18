@@ -42,19 +42,92 @@ is connected.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the two families of T-shaped sets and their union are theirs.
 
-Let $X,Y$ be connected and let $A\subsetneq X$, $B\subsetneq Y$ be proper; then $X-A$ and $Y-B$ are nonempty, so choose $c\times d\in(X-A)\times(Y-B)$.
+The argument is the published solution of **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the T-shaped sets $U_{x}$ and $V_{y}$ and their union are that solution's, and every step below is checked against Munkres, *Topology* (2000), §23 Exercise 9, printed p. 152, with Theorem 23.3 and Theorem 23.5 on printed p. 150. Throughout, $X$ and $Y$ are connected spaces, $A\subsetneq X$ and $B\subsetneq Y$, and $X-A$, $Y-B$ denote complements in $X$ and $Y$.
 
-For $x\in X-A$ put $U_{x}=(X\times\{d\})\cup(\{x\}\times Y)$, the union of two connected sets ($X\times\{d\}\cong X$ and $\{x\}\times Y\cong Y$) meeting in $x\times d$; by Theorem 23.3 it is connected. All the $U_{x}$ contain $c\times d$, so $U=\bigcup_{x\in X-A}U_{x}$ is connected.
+::: pf
 
-Similarly, for $y\in Y-B$ the set $V_{y}=(X\times\{y\})\cup(\{c\}\times Y)$ is connected, and $V=\bigcup_{y\in Y-B}V_{y}$ is connected, all the $V_{y}$ containing $c\times d$.
+::: {.pf-step #base-point}
+$(X-A)\times(Y-B)\neq\emptyset$.
 
-Now $U\cup V$ is connected, being the union of the connected sets $U$ and $V$ which share $c\times d$, and
-$$
-U\cup V=(X\times Y)-(A\times B).
-$$
-For the inclusion $\subset$: a point of $X\times\{d\}$ has second coordinate $d\notin B$, so it is not in $A\times B$; a point of $\{x\}\times Y$ with $x\in X-A$ has first coordinate not in $A$, so it is not in $A\times B$ either; hence $U$ and similarly $V$ lie in the complement. For the inclusion $\supset$: let $(x,y)\notin A\times B$, so $x\notin A$ or $y\notin B$; in the first case $(x,y)\in\{x\}\times Y\subset U_{x}\subset U$, and in the second $(x,y)\in X\times\{y\}\subset V_{y}\subset V$.
+::: pf-proof
+Since $A$ is a proper subset of $X$ there is a point of $X$ outside $A$, so $X-A\neq\emptyset$, and likewise $Y-B\neq\emptyset$. Choosing $c\in X-A$ and $d\in Y-B$ gives the point $(c,d)$ of the product.
+:::
 
-So $(X\times Y)-(A\times B)$ is connected.
+:::
+
+::: {.pf-step #t-connected}
+For every $x\in X-A$ the set $U_{x}\coloneqq(X\times\theset{d})\cup(\theset{x}\times Y)$ is connected and contains $(c,d)$.
+
+:::: pf-proof
+
+::: {.pf-step #slices}
+$X\times\theset{d}$ and $\theset{x}\times Y$ are connected.
+
+::: pf-proof
+The maps $u\mapsto(u,d)$ and $v\mapsto(x,v)$ are homeomorphisms of $X$ and $Y$ onto those two slices. Both slices are therefore continuous images of connected spaces, hence connected by Theorem 23.5 (printed p. 150).
+:::
+
+:::
+
+::: {.pf-step #meet}
+$(x,d)\in(X\times\theset{d})\cap(\theset{x}\times Y)$.
+
+::: pf-proof
+The point $(x,d)$ has second coordinate $d$ and first coordinate $x$, so it belongs to each of the two slices.
+:::
+
+:::
+
+::: {.pf-step #t-union}
+$U_{x}$ is connected and $(c,d)\in U_{x}$.
+
+::: pf-proof
+$U_{x}$ is a union of connected subspaces of $X\times Y$ with the common point $(x,d)$ of step [](#meet){.pf-ref}, so it is connected by Theorem 23.3 (printed p. 150); this uses step [](#slices){.pf-ref}. Since $c\in X-A$ and $d\in Y-B$, the point $(c,d)$ satisfies $(c,d)\in X\times\theset{d}\subset U_{x}$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #u-connected}
+$U\coloneqq\bigcup_{x\in X-A}U_{x}$ is connected and contains $(c,d)$.
+
+::: pf-proof
+This is a union of connected subspaces of $X\times Y$ that share the point $(c,d)$ by step [](#t-connected){.pf-ref}, so Theorem 23.3 (printed p. 150) applies.
+:::
+
+:::
+
+::: {.pf-step #v-connected}
+$V\coloneqq\bigcup_{y\in Y-B}V_{y}$, where $V_{y}\coloneqq(X\times\theset{y})\cup(\theset{c}\times Y)$, is connected and contains $(c,d)$.
+
+::: pf-proof
+Repeat the argument of steps [](#t-connected){.pf-ref} and [](#u-connected){.pf-ref} with the two factors interchanged and $c,d$ interchanged: the slices $X\times\theset{y}$ and $\theset{c}\times Y$ are connected and meet in $(c,y)$, and every $V_{y}$ contains $(c,d)$, so Theorem 23.3 gives the connectedness of each $V_{y}$ and then of $V$.
+:::
+
+:::
+
+::: {.pf-step #cover}
+$U\cup V=(X\times Y)-(A\times B)$.
+
+::: pf-proof
+For the inclusion $\subset$: a point of $X\times\theset{d}$ has second coordinate outside $B$, and a point of $\theset{x}\times Y$ with $x\in X-A$ has first coordinate outside $A$, so neither lies in $A\times B$; every point of $U$, and symmetrically every point of $V$, has one of these two forms. For the inclusion $\supset$: if $(x,y)\notin A\times B$ then $x\notin A$ or $y\notin B$; in the first case $(x,y)\in\theset{x}\times Y\subset U_{x}\subset U$, and in the second $(x,y)\in X\times\theset{y}\subset V_{y}\subset V$.
+:::
+
+:::
+
+::: pf-step
+Therefore $(X\times Y)-(A\times B)$ is connected.
+
+::: pf-proof
+By step [](#cover){.pf-ref} the complement is $U\cup V$, a union of the connected sets of steps [](#u-connected){.pf-ref} and [](#v-connected){.pf-ref} sharing the point $(c,d)$; Theorem 23.3 (printed p. 150) makes it connected.
+:::
+
+:::
+
+:::
+
 :::
