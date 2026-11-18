@@ -33,6 +33,11 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the argument dbFin's Section 53 Problem 4 solution gives, rechecked against Munkres, Topology (2000), Section 53 Exercise 4, printed p. 341, and the definition of a covering map on printed p. 336. The card's earlier prose asserted that the slices over U' "really are" W_i'; that identity is now proved as a step, from injectivity of r on V_i, because it is what makes p^{-1}(U') the disjoint union of the sheets recorded. Also proved rather than asserted: that an open subset of an evenly covered set is evenly covered, used twice, and that r restricted to W_i' is a homeomorphism onto U'. No statement repair.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repair of a review finding on this card. Munkres's definition of a covering map (printed p. 336) requires the map to be continuous AND surjective, and the final step had proved only continuity and local triviality. Surjectivity of p = r o q is now its own step, from surjectivity of q and r, which are covering maps; the definition cited in the first step records both requirements. Continuity was split into its own step so that the last step cites the three parts separately. Nothing else changed; the slice identity, the shrinking lemma and the disjoint-union computation are as before.
 ---
 
 ::: {.exercise}
@@ -54,7 +59,7 @@ $$
 where the $V_i$ are open and disjoint, each $r\restrict_{V_i}:V_i\to U$ is a homeomorphism, and $m=\cardinality{r^{-1}(z)}<\infty$.
 
 ::: pf-proof
-Because $r$ is a covering map, $z$ has an evenly covered neighbourhood $U$: $r^{-1}(U)$ is a disjoint union of open sets $V_i$, each mapped homeomorphically onto $U$ by $r$ (Definition, printed p. 336). Each $V_i$ meets $r^{-1}(z)$ in exactly one point, since $r\restrict_{V_i}$ is a bijection onto $U\ni z$; the $V_i$ cover $r^{-1}(U)\supseteq r^{-1}(z)$, so $r^{-1}(z)$ has exactly $m$ points. The hypothesis that $r^{-1}(z)$ is finite is therefore exactly the statement that the union has $m<\infty$ members.
+Because $r$ is a covering map, $z$ has an evenly covered neighbourhood $U$: $r^{-1}(U)$ is a disjoint union of open sets $V_i$, each mapped homeomorphically onto $U$ by $r$ (Definition, printed p. 336, which requires the map to be continuous and surjective). Each $V_i$ meets $r^{-1}(z)$ in exactly one point, since $r\restrict_{V_i}$ is a bijection onto $U\ni z$; the $V_i$ cover $r^{-1}(U)\supseteq r^{-1}(z)$, so $r^{-1}(z)$ has exactly $m$ points. The hypothesis that $r^{-1}(z)$ is finite is therefore exactly the statement that the union has $m<\infty$ members.
 :::
 
 :::
@@ -102,11 +107,29 @@ $p^{-1}(U')=q^{-1}\big(r^{-1}(U')\big)$. Since $r^{-1}(U)=\bigsqcup_i V_i$, we h
 
 :::
 
+::: {.pf-step #surjective}
+$p=r\circ q$ is surjective.
+
+::: pf-proof
+$q:X\to Y$ and $r:Y\to Z$ are covering maps, hence surjective by the definition (printed p. 336). For $z\in Z$ choose $y\in Y$ with $r(y)=z$ and then $x\in X$ with $q(x)=y$; then $p(x)=r\big(q(x)\big)=r(y)=z$. So $p(X)=Z$.
+:::
+
+:::
+
+::: {.pf-step #continuous}
+$p=r\circ q$ is continuous.
+
+::: pf-proof
+$q$ and $r$ are continuous by the definition of a covering map, and a composite of continuous maps is continuous.
+:::
+
+:::
+
 ::: {.pf-step #covering}
 $p=r\circ q$ is a covering map.
 
 ::: pf-proof
-$p$ is continuous, being a composite of continuous maps. For each $z\in Z$, step [](#shrink){.pf-ref} produces an open neighbourhood $U'$ of $z$ and steps [](#preimage){.pf-ref} and [](#slices){.pf-ref} exhibit $p^{-1}(U')$ as a disjoint union of open sets each mapped homeomorphically onto $U'$ by $p$. So every point of $Z$ has an evenly covered neighbourhood, which is the definition of a covering map (printed p. 336).
+$p$ is continuous and surjective by steps [](#continuous){.pf-ref} and [](#surjective){.pf-ref}. For each $z\in Z$, step [](#shrink){.pf-ref} produces an open neighbourhood $U'$ of $z$ and steps [](#preimage){.pf-ref} and [](#slices){.pf-ref} exhibit $p^{-1}(U')$ as a disjoint union of open sets each mapped homeomorphically onto $U'$ by $p$. So every point of $Z$ has an evenly covered neighbourhood, and with continuity and surjectivity this is the definition of a covering map (printed p. 336).
 :::
 
 :::
