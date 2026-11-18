@@ -41,47 +41,48 @@ Let $X$ be a space obtained by pasting the edges of a polygonal region together 
 :::
 
 ::: {.solution}
-By Theorem 77.5, every such quotient is homeomorphic to exactly one of
-$$
-S^2,\qquad T_g\ (g\ge1),\qquad P_r\ (r\ge1),
-$$
-where $T_g$ is the orientable surface of genus $g$ and $P_r$ is the connected sum of $r$ projective planes. Uniqueness of these standard surfaces follows from orientability and Euler characteristic:
-$$
-\chi(T_g)=2-2g,\qquad \chi(P_r)=2-r,
-$$
-and $S^2$ is the unique orientable case with Euler characteristic $2$.
 
-(a) We have
-$$
-P_1=P^2,\qquad P_2\cong K.
-$$
-Lemma 77.4 converts one torus summand together with one crosscap pair into two additional crosscaps; equivalently
-$$
-T_1\# P_r\cong P_{r+2}.
-$$
-Inductively,
-$$
-P_{2g+1}\cong T_g\# P^2,
-\qquad
-P_{2g+2}\cong T_g\# K.
-$$
-Thus the standard list $S^2,T_g,P_r$ can be rewritten exactly as
-$$
-S^2,\quad P^2,\quad K,\quad T_g,\quad T_g\#P^2,\quad T_g\#K
-\qquad(g\ge1).
-$$
-Since the original standard forms are unique, exactly one member of this list represents $X$.
+The argument is the card's own, from Theorem 77.5 and Lemma 77.4; no published solution of Munkres §77 Exercise 2 was located, and the sets searched are recorded in the audit trail.
 
-(b) Put $K_m=K\#\cdots\#K$ with $m$ factors. Since $K\cong P_2$,
-$$
-K_m\cong P_{2m},
-\qquad
-P^2\#K_m\cong P_{2m+1}.
-$$
-Therefore the same classification can be rewritten as
-$$
-S^2,\quad T_g,\quad P^2,\quad K_m,\quad P^2\#K_m
-\qquad(g,m\ge1).
-$$
-Again these are pairwise distinguished by orientability and Euler characteristic, so exactly one occurs.
+Let $X$ be obtained by pasting the edges of a polygonal region in pairs, let $T_{g}$ be the orientable surface of genus $g$ and $P_{r}$ the connected sum of $r$ copies of $P^{2}$, and let $K=P_{2}$ be the Klein bottle.
+
+::: pf
+
+::: {.pf-step #standard}
+$X$ is homeomorphic to exactly one of $S^{2}$, $T_{g}$ for $g\ge1$ and $P_{r}$ for $r\ge1$.
+
+::: pf-proof
+Every quotient of a polygonal region by a pairwise pasting is a compact surface, and the classification of compact surfaces (Theorem 77.5) says that such a surface is homeomorphic to exactly one member of that list. Uniqueness is decided by two invariants: orientability, and the Euler characteristic, which for the standard forms is $\chi(T_{g})=2-2g$ and $\chi(P_{r})=2-r$ (§77, printed p. 466). The pairs (orientable or not, $\chi$) are distinct on that list, with $S^{2}$ the unique orientable member of characteristic $2$, the $T_{g}$ the orientable members of characteristic $2-2g<2$, and the $P_{r}$ the non-orientable ones of characteristic $2-r\le1$.
+:::
+
+:::
+
+::: {.pf-step #rewrite}
+$P_{2g+1}\cong T_{g}\#P^{2}$ and $P_{2g+2}\cong T_{g}\#K$ for every $g\ge1$.
+
+::: pf-proof
+Lemma 77.4 (printed p. 463) converts one torus summand together with one crosscap pair into two additional crosscaps, that is $T_{1}\#P_{r}\cong P_{r+2}$ for $r\ge1$; applying it $g$ times to $T_{g}\#P_{r}$ gives $T_{g}\#P_{r}\cong P_{r+2g}$. Taking $r=1$ gives $T_{g}\#P^{2}\cong P_{2g+1}$ and taking $r=2$, with $P_{2}=K$, gives $T_{g}\#K\cong P_{2g+2}$.
+:::
+
+:::
+
+::: {.pf-step #a}
+(a) $X$ is homeomorphic to exactly one of $S^{2}$, $P^{2}$, $K$, $T_{n}$, $T_{n}\#P^{2}$, $T_{n}\#K$, for $n\ge1$.
+
+::: pf-proof
+By step [](#rewrite){.pf-ref} the standard list of step [](#standard){.pf-ref} is, member by member, the list of this part: $P_{1}=P^{2}$, $P_{2}=K$, $P_{2g+1}=T_{g}\#P^{2}$ and $P_{2g+2}=T_{g}\#K$ for $g\ge1$, together with $S^{2}$ and the $T_{g}$. So the two lists contain the same spaces, and by step [](#standard){.pf-ref} exactly one member of the second represents $X$. Distinctness inside the second list is again read from orientability and Euler characteristic: $S^{2}$ has $(+,\ 2)$, $T_{n}$ has $(+,\ 2-2n)$, $P^{2}$ has $(-,\ 1)$, $K$ has $(-,\ 0)$, $T_{n}\#P^{2}$ has $(-,\ 1-2n)$ and $T_{n}\#K$ has $(-,\ -2n)$, all distinct.
+:::
+
+:::
+
+::: {.pf-step #b}
+(b) $X$ is homeomorphic to exactly one of $S^{2}$, $T_{n}$, $P^{2}$, $K_{m}$, $P^{2}\#K_{m}$, for $n,m\ge1$.
+
+::: pf-proof
+Put $K_{m}=K\#\cdots\#K$ with $m$ factors. Since $K=P_{2}$, the connected sum is associative and $P_{2}\#P_{2}=P_{4}$, one gets $K_{m}=P_{2m}$ and $P^{2}\#K_{m}=P_{2m+1}$. So the standard list is again, member by member, the list of this part: $P_{1}=P^{2}$ with $K_{0}$-free notation, $P_{2m}=K_{m}$ and $P_{2m+1}=P^{2}\#K_{m}$ for $m\ge1$, together with $S^{2}$ and the $T_{n}$. By step [](#standard){.pf-ref} exactly one member represents $X$, and the members are pairwise distinguished by orientability and Euler characteristic: $P^{2}$ has $(-,\ 1)$, $K_{m}=P_{2m}$ has $(-,\ 2-2m)$, and $P^{2}\#K_{m}=P_{2m+1}$ has $(-,\ 1-2m)$, which are distinct among themselves and from the orientable members.
+:::
+
+:::
+
+:::
 :::
