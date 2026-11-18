@@ -31,6 +31,15 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 39 Exercise 1, printed p. 247, with Example 1 of §39, the definition of local finiteness, and the archimedean property of $\RR$ for the two collections that fail in $\RR$. No correction was needed; the card proves each of the three assertions of Example 1, including that $\mathcal B$ and $\mathcal C$ are locally finite in $(0,1)$ and not in $\RR$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the three local finiteness statements of
+    Example 1 of §39, printed p. 244, counting the finitely many indices meeting an explicit
+    neighbourhood at each point, and the failure at 0 in R for the two shrink-to-zero
+    collections. The argument is the card's own; no retained set is cited. The printed
+    statements needed no repair.
 ---
 
 ::: {.exercise}
@@ -51,27 +60,45 @@ are locally finite in $(0, 1)$ but not in $\RR$.
 :::
 
 ::: {.solution}
-For
-$$
-\mathcal A=\{(n,n+2):n\in\ZZ\},
-$$
-fix $x\in\RR$. Choose $0<\varepsilon<1/2$. If $(x-\varepsilon,x+\varepsilon)$ meets $(n,n+2)$, then
-$$
-n<x+\varepsilon,
-\qquad
-n>x-\varepsilon-2.
-$$
-Only finitely many integers $n$ satisfy these two inequalities. Hence $\mathcal A$ is locally finite in $\RR$.
+The argument is the card's own; no retained solution set is cited on the card. It checks the three statements of Example 1 of §39, printed p. 244.
 
-Now let
-$$
-\mathcal B=\{(0,1/n):n\ge1\}.
-$$
-For $x\in(0,1)$, choose a neighborhood $V\subset(0,1)$ whose left endpoint is positive, say $V\subset(a,1)$ with $a>0$. If $n>1/a$, then $(0,1/n)\subset(0,a)$, so it misses $V$. Thus only finitely many members of $\mathcal B$ meet $V$, and $\mathcal B$ is locally finite in $(0,1)$. In $\RR$, however, every neighborhood of $0$ meets every sufficiently small interval $(0,1/n)$, hence infinitely many members of $\mathcal B$. So $\mathcal B$ is not locally finite in $\RR$.
+::: pf
 
-Finally let
-$$
-\mathcal C=\{(1/(n+1),1/n):n\ge1\}.
-$$
-For each $x\in(0,1)$, choose a sufficiently small neighborhood avoiding all but the one or two adjacent intervals whose endpoints bracket $x$; equivalently, since $1/n\to0$, once a neighborhood of $x$ has positive lower endpoint, all sufficiently large members of $\mathcal C$ lie below it. Hence $\mathcal C$ is locally finite in $(0,1)$. But every neighborhood of $0$ in $\RR$ meets $(1/(n+1),1/n)$ for all sufficiently large $n$, so $\mathcal C$ is not locally finite in $\RR$.
+::: {.pf-step #A}
+$\mathcal{A}=\{(n,n+2)\mid n\in\ZZ\}$ is locally finite in $\RR$.
+
+::: pf-proof
+Let $x\in\RR$ and put $V=(x-\tfrac12,x+\tfrac12)$, a neighbourhood of $x$. If $V$ meets $(n,n+2)$, then $n<x+\tfrac12$ and $n+2>x-\tfrac12$, that is $x-\tfrac52<n<x+\tfrac12$. Only finitely many integers satisfy those two inequalities, so $V$ meets only finitely many members of $\mathcal{A}$.
+:::
+
+:::
+
+::: {.pf-step #B}
+$\mathcal{B}=\{(0,1/n)\mid n\in\ZZ_{+}\}$ is locally finite in $(0,1)$ and not in $\RR$.
+
+::: pf-proof
+Let $x\in(0,1)$ and choose $a$ with $0<a<x$; then $V=(a,1)\cap(0,1)$ is a neighbourhood of $x$ in $(0,1)$. If $n>1/a$ then $1/n<a$, so $(0,1/n)\subset(0,a)$ and it misses $V$; hence only the finitely many members of $\mathcal{B}$ with $n\le1/a$ can meet $V$. In $\RR$, however, every neighbourhood of $0$ contains an interval $(-\delta,\delta)$ with $\delta>0$, and for every $n$ with $1/n<\delta$ the set $(0,1/n)$ meets $(-\delta,\delta)$; those are infinitely many members, so $\mathcal{B}$ is not locally finite in $\RR$.
+:::
+
+:::
+
+::: {.pf-step #C}
+$\mathcal{C}=\{(1/(n+1),1/n)\mid n\in\ZZ_{+}\}$ is locally finite in $(0,1)$ and not in $\RR$.
+
+::: pf-proof
+Let $x\in(0,1)$. Choose $n$ with $1/(n+1)\le x\le1/n$; then $a=1/(n+2)$ satisfies $0<a<1/(n+1)$. The set $V=(a,1)\cap(0,1)$ is a neighbourhood of $x$ in $(0,1)$, and every member $(1/(m+1),1/m)$ with $m\ge n+2$ satisfies $1/(m+1)<1/m<a$, so it misses $V$; only the finitely many members with $m<n+2$ remain. So $\mathcal{C}$ is locally finite in $(0,1)$. In $\RR$ every neighbourhood of $0$ contains some $(-\delta,\delta)$ with $\delta>0$, and for every $m$ with $1/m<\delta$ the interval $(1/(m+1),1/m)$ meets $(-\delta,\delta)$; infinitely many $m$ satisfy this, so $\mathcal{C}$ is not locally finite in $\RR$.
+:::
+
+:::
+
+::: {.pf-step}
+The three statements of Example 1 hold.
+
+::: pf-proof
+Steps [](#A){.pf-ref}, [](#B){.pf-ref} and [](#C){.pf-ref} are those statements.
+:::
+
+:::
+
+:::
 :::
