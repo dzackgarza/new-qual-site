@@ -29,6 +29,11 @@ audit:
     The failure is shown to be real by his reference to the example of Exercise 17.6(c),
     which is written out on the card so that it stands alone. (tmp/sources/munkres-
     solutions-whitman.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into STYLE-08 as two steps: the exchange of quantifiers that the criticized argument makes, and the counterexample showing its conclusion is the wrong inclusion. Exercise 17.6(c) was re-checked. No statement change.
 ---
 
 ::: {.exercise}
@@ -41,9 +46,33 @@ Therefore, $x \in \bigcup \overline{A}_\alpha$.
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.7, printed pp. 162--163** (`tmp/sources/munkres-solutions-whitman.pdf`); the diagnosis and the counterexample it points to are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.7, PDF p. 7, states the same diagnosis.
 
-The "proof" argues: every neighbourhood $U$ of $x$ meets $\bigcup_{\alpha}A_{\alpha}$, therefore $U$ meets some $A_{\alpha}$, "so that $x$ must belong to the closure of some $A_{\alpha}$". What fails is the passage from the second step to the third.
+The criticized argument runs: every neighbourhood $U$ of $x$ meets $\bigcup_{\alpha}A_{\alpha}$, therefore $U$ meets some $A_{\alpha}$, "so that $x$ must belong to the closure of some $A_{\alpha}$".
 
-For $x$ to lie in $\overline{A_{\beta}}$ one needs a **single** index $\beta$ such that **every** neighbourhood of $x$ meets $A_{\beta}$. The hypothesis delivers, for each neighbourhood $U$ separately, an index $\alpha$ depending on $U$ with $U\cap A_{\alpha}\ne\varnothing$; nothing makes those indices agree as $U$ varies, and generally they cannot.
+::: pf
 
-The failure is not an artefact of the argument: Exercise 17.6(c) exhibits a case in which the conclusion is false. In $\RR$ let $A_{n}=(1/n,2]$ for $n\in\ZZ_{+}$ and $x=0$. Every neighbourhood of $0$ meets $\bigcup_{n}A_{n}=(0,2]$, but for a given $n$ the neighbourhood $(-1,1/n)$ misses $A_{n}=(1/n,2]$; so $0\notin\overline{A_{n}}$ for every $n$, while $0\in\overline{\bigcup_{n}A_{n}}$.
+::: {.pf-step #gap}
+
+The passage from "every neighbourhood of $x$ meets $\bigcup_{\alpha}A_{\alpha}$" to "$x$ lies in the closure of some $A_{\alpha}$" is invalid.
+
+::: pf-proof
+
+For $x$ to lie in $\overline{A_{\beta}}$ one needs a single index $\beta$ such that every neighbourhood of $x$ meets $A_{\beta}$. What the hypothesis delivers is weaker: for each neighbourhood $U$ separately, an index $\alpha$ depending on $U$ with $U\cap A_{\alpha}\ne\varnothing$. Nothing makes those indices agree as $U$ varies, and in general they cannot, so the quantifiers have been exchanged.
+
+:::
+
+:::
+
+::: pf-step
+
+The conclusion of the argument, $\overline{\bigcup_{\alpha}A_{\alpha}}\subset\bigcup_{\alpha}\overline{A_{\alpha}}$, is false in general.
+
+::: pf-proof
+
+In $\RR$ with the standard topology let $A_{n}=(1/n,2]$ for $n\in\ZZ_{+}$ and let $x=0$. Every neighbourhood of $0$ meets $\bigcup_{n}A_{n}=(0,2]$, so $0\in\overline{\bigcup_{n}A_{n}}$. For a given $n$ the neighbourhood $(-1,1/n)$ of $0$ misses $A_{n}=(1/n,2]$, so $0\notin\overline{A_{n}}$; hence $0\notin\bigcup_{n}\overline{A_{n}}$. So the exhibited argument cannot be repaired by better bookkeeping: its conclusion is the wrong inclusion, the correct one being $\bigcup_{\alpha}\overline{A_{\alpha}}\subset\overline{\bigcup_{\alpha}A_{\alpha}}$ (Exercise 17.6(c)).
+
+:::
+
+:::
+
+:::
 :::
