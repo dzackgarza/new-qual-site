@@ -35,9 +35,65 @@ Show that $\bigcup A_n$ is connected.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2, PDF pp. 1--2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
-Let $Y=\bigcup_{n}A_{n}$ with each $A_{n}$ connected and $A_{n}\cap A_{n+1}\ne\varnothing$, and suppose $Y=B\cup C$ is a separation, with $B,C$ disjoint nonempty open subsets of $Y$.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2, PDF p. 1 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the induction below is that solution's, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 2, printed p. 152, with Lemma 23.1 and Lemma 23.2 on printed pp. 148--149. The card's earlier page reference, PDF pp. 1--2, is corrected to p. 1.
 
-$A_{1}$ is connected and contained in $B\cup C$, so by Lemma 23.2 (printed p. 150) $A_{1}$ lies in $B$ or in $C$; assume $A_{1}\subset B$. Inductively, if $A_{n}\subset B$ then $A_{n+1}\subset B$: otherwise $A_{n+1}\subset C$, and then $A_{n}\cap A_{n+1}\subset B\cap C=\varnothing$, contradicting the hypothesis. So $A_{n}\subset B$ for every $n$ and $Y=\bigcup A_{n}\subset B$, against $C\ne\varnothing$. Hence no separation exists and $Y$ is connected.
+::: pf
+
+::: {.pf-step #separation-setup}
+Suppose that $Y\coloneqq\bigcup_{n\in\NN}A_{n}$ admits a separation $Y=B\cup C$ into disjoint nonempty sets $B,C$ open in $Y$. Then every $A_{n}$ lies in $B$ or in $C$.
+
+::: pf-proof
+Each $A_{n}$ is a connected subspace of the space $Y$, and $B,C$ form a separation of $Y$; by Lemma 23.2 (printed p. 149) a connected subspace of a space with a separation lies entirely in one member of it.
+:::
+
+:::
+
+::: {.pf-step #first-piece}
+$A_{1}$ lies in $B$ or in $C$; after relabelling the separation, assume $A_{1}\subset B$.
+
+::: pf-proof
+The first assertion is step [](#separation-setup){.pf-ref} for $n=1$. The names of the two members of a separation are arbitrary, so exchanging them if necessary gives $A_{1}\subset B$ without loss of generality.
+:::
+
+:::
+
+::: {.pf-step #induction}
+$A_{n}\subset B$ for every $n$.
+
+:::: pf-proof
+
+::: {.pf-step #induction-step}
+If $A_{n}\subset B$, then $A_{n+1}\subset B$.
+
+::: pf-proof
+By step [](#separation-setup){.pf-ref}, $A_{n+1}$ lies in $B$ or in $C$. If $A_{n+1}\subset C$, then a point of $A_{n}\cap A_{n+1}$, which is nonempty by hypothesis, would lie in $B\cap C=\varnothing$; so $A_{n+1}\subset B$.
+:::
+
+:::
+
+::: {.pf-step}
+The conclusion follows by induction on $n$ from step [](#first-piece){.pf-ref} and step [](#induction-step){.pf-ref}.
+
+::: pf-proof
+The natural numbers are generated from $1$ by the successor operation, so a property holding at $n=1$ and inherited from $n$ to $n+1$ holds at every $n$.
+:::
+
+:::
+
+::::
+
+:::
+
+::: pf-step
+No separation of $Y$ exists, so $Y$ is connected.
+
+::: pf-proof
+Under the supposition of step [](#separation-setup){.pf-ref} all the $A_{n}$ lie in $B$ by step [](#induction){.pf-ref}, hence $Y=\bigcup_{n}A_{n}\subset B$ and $C=Y-B=\varnothing$, contradicting the requirement that the members of a separation be nonempty. Hence no separation exists and $Y$ is connected by the definition of connectedness (§23, printed p. 148).
+:::
+
+:::
+
+:::
+
 :::
