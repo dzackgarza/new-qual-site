@@ -34,6 +34,24 @@ audit:
     and the same quotient identification gives the reduced suspension isomorphism. The existing
     statements are unchanged and were checked.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. No retained set covers this exercise, so the argument is the
+    card's own and the card says so. Checked against Hatcher, Section 4.D Exercise 8, printed
+    p. 447 (PDF p. 456, folio 447), read in the retained text at
+    tmp/sources/hatcher-2002-algebraic-topology.md:9220. Two things repaired. First, the printed
+    second clause asks for the cohomology suspension isomorphism
+    $H~^i(B;R) = H~^{n+i}(Sigma^n B;R)$; the card's 2026-11-04 note says the printed exercise asks
+    for the homology form, which is not what the book prints, so the homology paragraph is now
+    labelled as additional and not part of the statement. Second, the display that identified the
+    Thom isomorphism with a reduced suspension isomorphism $H~^i(B_+) = H~^{n+i}(Sigma^n B_+)$ was
+    false at $i = 0$, where both sides differ by the copy of $R$ carried by the disjoint basepoint;
+    the step now states the isomorphism with unreduced cohomology on the left, $H^i(B;R) =
+    H~^{n+i}(Sigma^n B_+;R)$, splits $Sigma^n B_+ = Sigma^n B v S^n$, and gives the reduced form for
+    $i >= 1$ together with the $i = 0$ case. Not claimed: any statement for a non-product bundle,
+    or the Gysin sequence.
 ---
 
 ::: {.problem}
@@ -41,61 +59,96 @@ If $E$ is the product bundle $B \times D^n$ with $B$ a CW complex, show that the
 :::
 
 ::: {.solution}
-For the product disk bundle
-$$
-E=B\times D^n,
-\qquad E'=B\times S^{n-1},
-$$
-the Thom space is
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.D Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.D Exercise 8, printed p. 447, against the Thom isomorphism theorem of pp. 441--442 and against the reduced cross product of Section 3.2. The printed exercise asks for the cohomology statement $\tilde H^i(B;R)\approx\tilde H^{n+i}(\Sigma^nB;R)$; the homology analogue at the end is additional and is marked as such.
+
+::: pf
+
+::: {.pf-step #setup}
+For the product disk bundle $E=B\times D^n$ with sphere bundle $E'=B\times S^{n-1}$, the Thom space is
 $$
 T(E)=\frac{B\times D^n}{B\times S^{n-1}}.
 $$
-Adjoining a disjoint basepoint to $B$, this quotient is naturally
-$$
-B_+\wedge(D^n/S^{n-1})
-\cong B_+\wedge S^n
-=\Sigma^n(B_+).
-$$
-Hence
-$$
-\boxed{T(E)\cong\Sigma^n(B_+).}
-$$
 
-Let $u\in H^n(D^n,S^{n-1};R)$ be the fiber orientation class. The Thom class of the product bundle is
-$$
-1\times u\in H^n(B\times D^n,B\times S^{n-1};R).
-$$
-The Thom isomorphism (Corollary 4D.9, p. 441, whose hypothesis here is that the product disk bundle is orientable, with orientation class $u$)
-$$
-H^i(B;R)\longrightarrow H^{i+n}(E,E';R)
-$$
-sends
-$$
-a\in H^i(B;R)
-$$
-to the relative cross product
-$$
-a\times u.
-$$
-Under the quotient identification above this is exactly the reduced suspension isomorphism
-$$
-\widetilde H^i(B_+;R)
-\xrightarrow{\cong}
-\widetilde H^{i+n}(\Sigma^nB_+;R).
-$$
-Restricting to reduced cohomology of $B$ gives the usual
-$$
-\boxed{\widetilde H^i(B;R)\cong\widetilde H^{i+n}(\Sigma^nB;R)}
-$$
-induced by the reduced cross product.
+::: pf-proof
+The Thom space of a disk bundle is the quotient of the total space by its sphere bundle; for the product bundle the sphere bundle is $B\times S^{n-1}$.
+:::
 
-The homology form asked for in the printed exercise is the same product from the other side. The relative cross product of §3.2 (with field coefficients $R$, so the Künneth map is an isomorphism) sends a cycle on $B$ and the top relative class of the pair to
+:::
+
+::: {.pf-step #suspension}
+$T(E)\cong B_+\wedge S^n=\Sigma^n(B_+)$.
+
+:::: pf-proof
+
+::: {.pf-step #quotients}
+For CW complexes $X$ and a CW pair $(Y,Y_0)$ one has $(X\times Y)/(X\times Y_0)\cong X_+\wedge(Y/Y_0)$.
+
+::: pf-proof
+The pair $(X\times Y,X\times Y_0)$ is the product of $X$ with the pair $(Y,Y_0)$, and collapsing the second factor first gives $X\times(Y/Y_0)$ with $X\times\{*\}$ collapsed to a point, which is the smash product of $X_+$ with $Y/Y_0$. Both spaces are quotients of $X\times Y$ by the same closed subspace, so they are homeomorphic.
+:::
+
+:::
+
+::: {.pf-step #disc}
+$D^n/S^{n-1}\cong S^n$.
+
+::: pf-proof
+$D^n$ modulo its boundary is the one-point compactification of the interior $\mathring D^n\cong\RR^n$, which is $S^n$.
+:::
+
+:::
+
+::: {.pf-step}
+$T(E)\cong B_+\wedge S^n$.
+
+::: pf-proof
+Apply steps [](#quotients){.pf-ref} and [](#disc){.pf-ref} with $X=B$, $Y=D^n$ and $Y_0=S^{n-1}$; by definition $\Sigma^n(B_+)=B_+\wedge S^n$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #thomclass}
+The class $1\times u\in H^n(B\times D^n,B\times S^{n-1};R)$, where $u\in H^n(D^n,S^{n-1};R)\cong R$ is the fibre orientation class, is a Thom class for $E$, and cap product with it is the Thom isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$.
+
+::: pf-proof
+The product bundle is orientable, with fibre orientation $u$; the Thom isomorphism theorem for a disk bundle with a Thom class (Corollary 4D.9, p. 441) then gives that $a\mapsto a\times u$ is an isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$ for every $i$, the relative cross product being taken in the pair $(B\times D^n,B\times S^{n-1})$.
+:::
+
+:::
+
+::: {.pf-step #specialize}
+Under the quotient identification of step [](#suspension){.pf-ref}, the Thom isomorphism reads $H^i(B;R)\cong\tilde H^{n+i}(\Sigma^nB_+;R)$, which for $i\ge1$ is the reduced suspension isomorphism $\tilde H^i(B;R)\cong\tilde H^{n+i}(\Sigma^nB;R)$.
+
+::: pf-proof
+The quotient map $(E,E')\to(T(E),*)$ induces an isomorphism $H^{n+i}(E,E';R)\cong\tilde H^{n+i}(T(E);R)$, since $T(E)=E/E'$. Composing with the Thom isomorphism gives $H^i(B;R)\cong\tilde H^{n+i}(\Sigma^nB_+;R)$, and $\Sigma^nB_+=(B\wedge S^n)\vee S^n=\Sigma^nB\vee S^n$, so $\tilde H^{n+i}(\Sigma^nB_+;R)=\tilde H^{n+i}(\Sigma^nB;R)\oplus\tilde H^{n+i}(S^n;R)$. For $i\ge1$ the second summand vanishes because $n+i>n$, leaving $H^i(B;R)\cong\tilde H^{n+i}(\Sigma^nB;R)$; for $i\ge1$ the left side is reduced cohomology of $B$, so this is the suspension isomorphism. For $i=0$ the two sides of the printed statement are $\tilde H^0(B;R)$ and $\tilde H^n(\Sigma^nB;R)\cong\tilde H^0(B;R)$, equal for every $B$. Note that the Thom isomorphism is unreduced on the left: at $i=0$ it computes $H^0(B;R)\cong\tilde H^n(\Sigma^nB_+;R)$, and the extra copy of $R$ in degree $n$ is exactly the contribution of the disjoint basepoint.
+:::
+
+:::
+
+::: {.pf-step #homology}
+With field coefficients the same argument in homology gives $\tilde H_i(B;R)\cong\tilde H_{n+i}(\Sigma^nB;R)$. This is not part of the printed statement, which asks for cohomology.
+
+::: pf-proof
+The relative cross product of Section 3.2 with field coefficients is an isomorphism $H_i(B;R)\otimes H_n(D^n,S^{n-1};R)\to H_{i+n}(B\times D^n,B\times S^{n-1};R)$ by the Künneth formula over a field, and it is the homology Thom isomorphism for the product bundle; composing with the quotient identification of step [](#suspension){.pf-ref} and splitting off the $S^n$ summand of $B_+\wedge S^n$ as in step [](#specialize){.pf-ref} gives the asserted suspension isomorphism.
+:::
+
+:::
+
+::: {.pf-step}
+$T(B\times D^n)\cong\Sigma^n(B_+)$, and the Thom isomorphism specializes to the suspension isomorphism.
+
+::: pf-proof
+Steps [](#suspension){.pf-ref} and [](#specialize){.pf-ref} give both assertions of the printed exercise:
 $$
-\widetilde H_i(B;R)\otimes H_n(D^n,S^{n-1};R)\longrightarrow \widetilde H_{i+n}(B\times D^n,B\times S^{n-1};R)=\widetilde H_{i+n}(\Sigma^n(B_+);R),
+\boxed{T(B\times D^n)\cong\Sigma^n(B_+),\qquad \tilde H^i(B;R)\cong\tilde H^{n+i}(\Sigma^nB;R)\text{ for }i\ge1.}
 $$
-and it is the Thom isomorphism in homology: for a class $a\in H_i(B;R)$ its image is $a\times[D^n,S^{n-1}]$, which is the composition of the homology Thom isomorphism $H_i(B;R)\cong H_{i+n}(E,E';R)$ with the quotient identification already made. Hence
-$$
-\boxed{\widetilde H_i(B;R)\cong\widetilde H_{n+i}(\Sigma^nB;R),}
-$$
-the suspension isomorphism given by the reduced cross product, as the exercise states.
+:::
+
+:::
+
+:::
 :::
