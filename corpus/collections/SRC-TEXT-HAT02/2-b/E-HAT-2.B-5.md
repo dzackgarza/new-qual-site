@@ -1,6 +1,7 @@
 ---
 
 
+
 schema: qual/card@1
 id: E-HAT-2.B-5
 kind: problem
@@ -215,6 +216,17 @@ audit:
     statement and in the application, with Bredon's Theorem 19.11, printed p. 236, as the same
     theorem. Checked this pass: both step statements, their page numbers, and the acyclicity step's
     citation. Not re-verified: Brown's proof of Theorem 5, whose statement is what the card uses.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A false record corrected: the remark said that Putman and Bredon have no text versions in
+    `tmp/sources` and were read in their PDFs' text layers. Putman's notes do have one,
+    `tmp/sources/putman-generalized-schoenflies.md`, whose §3 "Schoenflies via infinite repetition"
+    is Mazur's proof and carries Theorem 2.1; the remark now cites that text version. Bredon still
+    has only the PDF, and the remark keeps the reading copy and the page arithmetic for it
+    (PDF page 131 = printed pp. 236--237). Checked: the presence of the two files, and that the
+    Putman text version contains §3 and Theorem 2.1. Not changed: any page number or argument.
 ---
 
 ::: {.problem}
@@ -322,5 +334,5 @@ Andrew Putman, *The generalized Schoenflies theorem*, printed p. 1 and §3, prin
 
 Brown's theorem is the one Hatcher's §2.B points at, and it is the statement the second proof's collaring uses. Hatcher, §2.B, printed p. 169, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "it is known that any locally nicely embedded $S^{n-1}$ in $S^n$ is equivalent to the standard $S^{n-1}\subset S^n$ ... In particular, both complementary regions are homeomorphic to open balls. See [Brown 1960] for a precise statement and proof." M. Brown, *A proof of the generalized Schoenflies theorem*, Bull. Amer. Math. Soc. 66 (1960), 74--76, read in `tmp/sources/brown-1960-generalized-schoenflies.md` with its PDF beside it, three pages, so printed page and PDF page agree here (74, 75, 76): Theorem 5, printed p. 76, "Let $h$ be a homeomorphic embedding of $S^{n-1}\times I$ into $S^n$. Then the closure of either complementary domain of $h(S^{n-1}\times 1/2)$ is an $n$-cell", which with $n=k$ is exactly the step the bicollar $\beta:\Sigma\times[-1,1]\to S\cong S^k$ feeds into the second proof; and Theorem 0, printed p. 74, the disk-complement statement under the hypothesis that the map has finitely many inverse sets, from which Theorems 1--5 are derived (the extraction prints that numeral as the letter O, and the paper's own cross-reference on printed p. 76 prints it as "Theorem 0"). Bredon's Theorem 19.11 states the same theorem and follows Brown's argument, so either may be cited for it. Brown's paper does not do the exercise, and neither does any single source: what the card records is two citations, each attached to the step it decides --- Brown's Theorem 5, printed p. 76, for the flatness that makes $D'$ a disk, and Hatcher's Proposition 2B.1(b), printed p. 169 (equivalently Corollary 19.3 and Theorem 19.4 of Bredon, printed p. 233), for the homology of the complements, with Proposition 2B.1(a) for the acyclicity of $S^n-D'$ in the second proof. The excision and Mayer--Vietoris assembly between them is the card's own and is marked as such.
 
-The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), printed p. 236, whose proof occupies printed pp. 236--239 and follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the bicollar $\beta$ of $\Sigma$ in the proof supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, printed p. 233, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), printed p. 233, that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), printed pp. 169--170, so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input. Bredon and Putman have no text versions in `tmp/sources` yet and were read in the text layer of their PDFs, `tmp/sources/bredon-topology-and-geometry.pdf` (PDF page 131 = printed pp. 236--237) and `tmp/sources/putman-generalized-schoenflies.pdf`; the Math StackExchange thread 4773641 was read through the Stack Exchange API.
+The input quoted for the second proof is Bredon, *Topology and Geometry*, Theorem 19.11 (Generalized Schoenflies Theorem), printed p. 236, whose proof occupies printed pp. 236--239 and follows M. Brown's argument; it needs an embedding $S^{k-1}\times[-1,1]\to S^k$, which the bicollar $\beta$ of $\Sigma$ in the proof supplies. The same section proves, by Mayer--Vietoris induction and without duality, the two complement computations this card uses: Corollary 19.3, printed p. 233, that $S^n-f(D^r)$ has trivial reduced homology for an embedding $f:D^r\to S^n$, and Theorem 19.4 (Generalized Jordan Curve Theorem), printed p. 233, that $\widetilde H_i(S^n-f(S^r))=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Those are Hatcher's Proposition 2B.1(a) and (b), printed pp. 169--170, so either book may be cited for them; Putman's notes are a second published proof of the Schoenflies input, read in the text version `tmp/sources/putman-generalized-schoenflies.md` (its §3, "Schoenflies via infinite repetition", is Mazur's proof; the PDF is beside it). Bredon has no text version in `tmp/sources` and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, PDF page 131 = printed pp. 236--237.
 :::
