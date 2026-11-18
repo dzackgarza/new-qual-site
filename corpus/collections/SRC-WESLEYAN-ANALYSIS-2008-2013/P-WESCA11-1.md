@@ -5,7 +5,8 @@ kind: problem
 title: 'Square roots of $2-4i$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Numbers
 relations: []
 review: draft
 audit:

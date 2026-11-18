@@ -5,7 +5,9 @@ kind: problem
 title: 'Two contour integrals on large circles'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: 'Positive-measure compact sets without intervals and everywhere-thick measurable sets'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Cantor Set
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

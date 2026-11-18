@@ -5,7 +5,9 @@ kind: problem
 title: 'Isolated singularities of $(\cos z-1)/z^2$, $e^{1/z^2}/(z-1)$ and $\sqrt z/(z-1)$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
+  - Residues
 relations: []
 review: draft
 audit:

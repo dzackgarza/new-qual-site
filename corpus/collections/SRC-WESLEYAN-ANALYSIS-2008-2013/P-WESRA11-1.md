@@ -5,7 +5,9 @@ kind: problem
 title: 'Integral convergence need not imply almost-everywhere convergence'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Convergence Theorems
+  - Pointwise Convergence
 relations: []
 review: draft
 audit:

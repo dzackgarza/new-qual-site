@@ -5,7 +5,9 @@ kind: problem
 title: 'Bounded convergence in measure implies $L^1$ convergence on finite measure spaces'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Convergence in Measure
+  - L¹
 relations: []
 review: draft
 audit:

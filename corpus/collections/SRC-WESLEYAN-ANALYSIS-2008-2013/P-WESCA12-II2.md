@@ -5,7 +5,9 @@ kind: problem
 title: 'Possible values of an integral of $1/(z^2+1)$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Winding Number
 relations: []
 review: draft
 audit:

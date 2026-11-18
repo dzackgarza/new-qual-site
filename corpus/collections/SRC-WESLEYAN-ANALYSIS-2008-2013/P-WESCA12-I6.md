@@ -5,7 +5,8 @@ kind: problem
 title: 'State the Argument Principle'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Argument Principle
 relations: []
 review: draft
 audit:

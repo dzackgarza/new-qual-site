@@ -5,7 +5,8 @@ kind: problem
 title: 'Residues of sums and products'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residues
 relations: []
 review: draft
 audit:

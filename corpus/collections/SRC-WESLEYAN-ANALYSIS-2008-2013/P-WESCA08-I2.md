@@ -5,7 +5,9 @@ kind: problem
 title: 'Define local uniform convergence'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Convergence of Functions
 relations: []
 review: draft
 audit:

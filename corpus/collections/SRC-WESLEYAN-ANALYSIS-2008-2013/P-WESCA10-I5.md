@@ -5,7 +5,8 @@ kind: problem
 title: 'State Morera’s theorem'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - 'Morera''s Theorem'
 relations: []
 review: draft
 audit:

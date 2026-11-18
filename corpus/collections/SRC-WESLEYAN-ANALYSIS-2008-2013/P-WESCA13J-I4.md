@@ -5,7 +5,8 @@ kind: problem
 title: 'Define an essential singularity'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
 relations: []
 review: draft
 audit:

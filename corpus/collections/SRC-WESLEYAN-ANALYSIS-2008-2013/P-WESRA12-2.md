@@ -5,7 +5,8 @@ kind: problem
 title: 'Lebesgue-measure digit sets and a nearest-reciprocal function'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

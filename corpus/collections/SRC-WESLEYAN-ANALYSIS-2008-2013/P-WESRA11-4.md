@@ -5,7 +5,9 @@ kind: problem
 title: 'Only countably many centered spheres can have positive mass'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Borel Measures
+  - Countability
 relations: []
 review: draft
 audit:

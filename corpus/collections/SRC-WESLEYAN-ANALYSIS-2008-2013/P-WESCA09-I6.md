@@ -5,7 +5,9 @@ kind: problem
 title: 'Define when a cycle is homologous to zero'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Winding Number
+  - Contour Integration
 relations: []
 review: draft
 audit:

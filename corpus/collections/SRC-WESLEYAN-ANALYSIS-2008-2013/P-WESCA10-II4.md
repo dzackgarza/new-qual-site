@@ -5,7 +5,9 @@ kind: problem
 title: 'An injective analytic function has nonvanishing derivative'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Univalent Functions
+  - Conformal Maps
 relations: []
 review: draft
 audit:

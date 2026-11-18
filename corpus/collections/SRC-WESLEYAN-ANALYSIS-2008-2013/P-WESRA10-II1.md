@@ -5,7 +5,8 @@ kind: problem
 title: 'Borel–Cantelli without independence and a converse counterexample'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Borel-Cantelli
 relations: []
 review: draft
 audit:

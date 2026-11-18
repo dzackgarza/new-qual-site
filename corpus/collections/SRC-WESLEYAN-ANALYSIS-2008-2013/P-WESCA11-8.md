@@ -5,7 +5,9 @@ kind: problem
 title: 'Count roots of $z^4-6z+3$ in an annulus'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 audit:

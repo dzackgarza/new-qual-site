@@ -5,7 +5,9 @@ kind: problem
 title: 'Lebesgue outer measure and countable subadditivity'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Outer Measure
+  - Lebesgue Measure
 relations: []
 review: draft
 audit:

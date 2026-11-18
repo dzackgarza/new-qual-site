@@ -5,7 +5,9 @@ kind: problem
 title: 'Definitions in measure theory and normed spaces'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Measure Theory
+  - Normed Spaces
 relations: []
 review: draft
 audit:

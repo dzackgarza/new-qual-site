@@ -5,7 +5,8 @@ kind: problem
 title: 'State Cauchy’s theorem for triangles'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 audit:

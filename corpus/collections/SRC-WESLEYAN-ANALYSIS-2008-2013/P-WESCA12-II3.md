@@ -5,7 +5,9 @@ kind: problem
 title: 'Derivative and function ratios at equal-order zeros'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Zeros
+  - Multiplicity
 relations: []
 review: draft
 audit:

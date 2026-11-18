@@ -5,7 +5,9 @@ kind: problem
 title: 'State the spectral theorem for compact self-adjoint operators'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Spectral Theorem
+  - Compact Operators
 relations: []
 review: draft
 audit:

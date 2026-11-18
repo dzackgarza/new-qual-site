@@ -5,7 +5,8 @@ kind: problem
 title: 'An analytic function attaining a positive minimum modulus is constant'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

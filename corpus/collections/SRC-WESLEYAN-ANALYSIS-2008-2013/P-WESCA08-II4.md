@@ -5,7 +5,9 @@ kind: problem
 title: 'Analytic l’Hôpital rule from a derivative-ratio limit'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Limits of Functions
 relations: []
 review: draft
 audit:

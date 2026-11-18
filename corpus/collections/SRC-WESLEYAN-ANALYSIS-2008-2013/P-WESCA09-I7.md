@@ -5,7 +5,8 @@ kind: problem
 title: 'Contour integral around a diamond'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

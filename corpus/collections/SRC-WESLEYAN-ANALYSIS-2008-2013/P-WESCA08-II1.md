@@ -5,7 +5,8 @@ kind: problem
 title: 'Laurent series of $1/(z^2+1)^2$ about $i$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

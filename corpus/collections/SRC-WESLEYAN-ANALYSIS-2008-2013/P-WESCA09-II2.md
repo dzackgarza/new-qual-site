@@ -5,7 +5,9 @@ kind: problem
 title: 'If every analytic function has a primitive, the domain is simply connected'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Simply Connected Domains
+  - Primitives
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: 'Must an entire function with an entire square root be constant?'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Entire Functions
+  - 'Liouville''s Theorem'
 relations: []
 review: draft
 audit:

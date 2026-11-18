@@ -5,7 +5,9 @@ kind: problem
 title: 'Level sets and support of a nonnegative integrable function'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Integration
+  - Measurable Functions
 relations: []
 review: draft
 audit:

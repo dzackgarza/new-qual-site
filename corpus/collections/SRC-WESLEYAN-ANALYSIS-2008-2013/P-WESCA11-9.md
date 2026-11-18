@@ -5,7 +5,9 @@ kind: problem
 title: 'Prove Schwarz’s lemma using the maximum principle'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

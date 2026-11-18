@@ -5,7 +5,9 @@ kind: problem
 title: 'Products of uniformly convergent uniformly bounded sequences'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Convergence of Functions
 relations: []
 review: draft
 audit:

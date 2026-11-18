@@ -5,7 +5,9 @@ kind: problem
 title: 'Sets of measure greater than $1/2$: a positive-measure set of points lying in more than half of them'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Measure
+  - Measure Theory
 relations: []
 review: draft
 audit:

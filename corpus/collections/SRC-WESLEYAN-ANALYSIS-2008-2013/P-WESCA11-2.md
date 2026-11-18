@@ -5,7 +5,8 @@ kind: problem
 title: 'Partial fractions for $z^4/(z^3-1)$'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Partial Fractions
 relations: []
 review: draft
 audit:

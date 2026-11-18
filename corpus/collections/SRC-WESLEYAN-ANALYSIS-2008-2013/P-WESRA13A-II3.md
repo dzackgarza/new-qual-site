@@ -5,7 +5,8 @@ kind: problem
 title: 'Vanishing integrals over compact subsets'
 classification:
   areas: [real-analysis]
-  topics: []
+  topics:
+  - Lebesgue Integration
 relations: []
 review: draft
 audit:

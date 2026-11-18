@@ -5,7 +5,9 @@ kind: problem
 title: 'Conjugation preserves holomorphy in the reflected disk'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

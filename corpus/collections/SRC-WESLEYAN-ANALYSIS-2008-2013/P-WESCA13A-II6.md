@@ -5,7 +5,9 @@ kind: problem
 title: 'Even analytic functions descend through squaring'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Zeros
 relations: []
 review: draft
 audit:

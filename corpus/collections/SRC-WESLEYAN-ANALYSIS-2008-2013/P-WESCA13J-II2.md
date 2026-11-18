@@ -5,7 +5,9 @@ kind: problem
 title: 'Three contour and winding-number calculations'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Winding Number
 relations: []
 review: draft
 audit:

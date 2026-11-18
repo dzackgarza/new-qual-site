@@ -5,7 +5,9 @@ kind: problem
 title: 'Three contour integrals: $\Log(z+e)/z^2$, $(\sin z/z)^{100}$, and a rational function along a spiral'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 audit:

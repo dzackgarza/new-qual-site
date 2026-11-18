@@ -5,7 +5,8 @@ kind: problem
 title: 'Radius of convergence of the coefficientwise product'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

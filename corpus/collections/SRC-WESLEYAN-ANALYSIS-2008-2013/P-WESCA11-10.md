@@ -5,7 +5,8 @@ kind: problem
 title: 'Evaluate a real integral by residues'
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
 relations: []
 review: draft
 audit:
