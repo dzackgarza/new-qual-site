@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1374 of the 12429 problem cards that have a solution
+1373 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1374
+- Problems: 1373
 - Problem cards with a solution: 12429
 
-## Problems (1374)
+## Problems (1373)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -67,7 +67,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.2-1 — "Cup product structure on closed orientable surfaces"
 - [ ] E-HAT-3.2-10 — "Failure of the Künneth cross product for infinite discrete spaces"
 - [ ] E-HAT-3.2-11 — "Maps $S^{k+\ell} \to S^k \times S^\ell$ are trivial on top homology"
-- [ ] E-HAT-3.2-12 — "Spaces with isomorphic cohomology but different homotopy type"
 - [ ] E-HAT-3.2-13 — "Cohomology of $\CP^\infty/\CP^1$"
 - [ ] E-HAT-3.2-15 — "Poincaré series and products"
 - [ ] E-HAT-3.2-18 — "Cup product nondegenerality on surfaces"
