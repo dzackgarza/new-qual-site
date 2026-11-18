@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1515 of the 12430 problem cards that have a solution
+1495 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1515
-- Problem cards with a solution: 12430
+- Problems: 1495
+- Problem cards with a solution: 12429
 
-## Problems (1515)
+## Problems (1495)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -49,7 +49,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-AZ6JL — "Three topologies on the unit square"
 - [ ] E-BAZND — "Uncountable powers of the line are not normal"
 - [ ] E-BBGSH — "Quotients of the plane by level-set relations"
-- [ ] E-C0ZWV — "Homotopy classes into an interval and out of a path-connected space"
 - [ ] E-CCLL5 — "Normal subgroups and regular coverings"
 - [ ] E-CEDQ9 — "Maps of higher spheres into the circle are nullhomotopic"
 - [ ] E-CJA01 — "The unit interval is not limit point compact in the lower limit topology"
@@ -503,7 +502,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-KIH81 — "Maximal collections with the finite intersection property"
 - [ ] E-KS2BT — "Completeness of the compact convergence topology over $\sigma$-compact domains"
 - [ ] E-KWBI9 — "Connected $T_1$ spaces have positive dimension"
-- [ ] E-KY2W7 — "The dictionary order plane is metrizable"
 - [ ] E-L2EHD — "The Stone--Čech compactification of a discrete space is extremally disconnected"
 - [ ] E-LEE5L — "A quotient map that is neither open nor closed"
 - [ ] E-LESK3 — "Strong hypotheses short of metrizability"
@@ -627,7 +625,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PROOB — "Manifolds have dimension at most m"
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
 - [ ] E-PWXIV — "Properties of eleven standard spaces"
-- [ ] E-Q5WSL — "Examples of topological groups"
 - [ ] E-Q8TYL — "Compactness under comparable topologies"
 - [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
 - [ ] E-QJXDP — "Weak local connectedness at a point without local connectedness"
@@ -800,7 +797,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-XDJRZ — "$\ell^2$ is a vector space with the $\ell^2$ metric"
 - [ ] E-XIHWT — "Distance to a set in a metric space"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
-- [ ] E-XNYTJ — "Monotone pointwise convergence to a continuous limit is uniform"
 - [ ] E-XU2MN — "Hausdorff equals completely regular for locally euclidean spaces"
 - [ ] E-Y3MSR — "Compact closures in the topology of compact convergence"
 - [ ] E-Y4MFU — "Perfect maps transfer separation and countability properties"
@@ -826,7 +822,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA11 — "A smooth bijection but no conformal map from the punctured disk onto an annulus"
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
 - [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
-- [ ] P-8CA17 — "Existence of a conformal map of $\abs{z-1}<1/2$ onto $\abs{z+1}>1$"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
 - [ ] P-8CA21 — "Number of solutions of $e^z=z+\lambda$ in the left half-plane for $\operatorname{Re}\lambda>1$"
 - [ ] P-8CA23 — "Harmonic conjugate of $y^3-3x^2 y$ and the mean-value property"
@@ -838,7 +833,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CB01 — "Implicit function for $x^2-2y+y^3=0$ over $\RR$ and $\CC$"
 - [ ] P-8CB03 — "$\int_0^\infty\frac{\cos x}{1+x^4}\,dx$"
 - [ ] P-8CB05 — "Conformal map of the slit upper half-plane onto the disk"
-- [ ] P-8PR01 — "Word definitions of surjective, not injective, uniformly continuous, and not uniformly continuous"
 - [ ] P-8RA07 — "The difference quotient of a $C^1$ function is continuous on $\RR^2$"
 - [ ] P-8RA23 — "$\cos(\sin x)>\frac12(1+\cos^2 x)$ for small nonzero $x$"
 - [ ] P-8RA25 — "Differentiability of $F(t)=\int_{\RR}f(x)\sin(tx)\,dx$"
@@ -864,24 +858,17 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGHHYPSECTION — "A hypersurface section drops the dimension by exactly one"
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
 - [ ] P-AGHTHREECOMP — "Decomposing $V(x^2-yz,\ xz-x)$ into irreducible components"
-- [ ] P-AGHTWCUBIC — "The twisted cubic is an affine variety of dimension one"
-- [ ] P-AOZMW — "Real $x$ for which $\sum_{n=1}^\infty \frac{x^n}{\sqrt{n^2+1}}$ converges"
 - [ ] P-APA17B — "Simultaneous orthogonal diagonalization of commuting real symmetric matrices"
 - [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
-- [ ] P-APA17E — "Irreducible decomposition of cubic forms under $S_4$ and $\operatorname{End}_{S_4}(V)$"
 - [ ] P-APA17F — "Examples: real irreducible with non-scalar endomorphism; infinite indecomposable not irreducible"
 - [ ] P-APAS11B — "Twisting irreducible characters by linear characters, and conjugate-partition signs"
-- [ ] P-APAS11C — "Group determinant factorization and the circulant determinant"
 - [ ] P-APAS11D — "Murnaghan–Nakayama on $S_5$, Young-subgroup characters, and restriction of $A^{(4,1)}$"
 - [ ] P-APAS11E — "Induction from Young subgroups of $S_7$ and a Kronecker product on $S_4$"
 - [ ] P-APAS11F — "Conjugacy classes and character table of $A_4$ via $A_4/D\cong\ZZ_3$"
-- [ ] P-APAS11G — "Co-maximal ideals, Nullstellensatz intersection, and radical containment"
 - [ ] P-APAS11H — "Gröbner basis, elimination, and solutions for a planar ideal"
 - [ ] P-APAS13B — "Unique Hermitian splitting $A=S+iT$ and eigenvalue real/imaginary bounds"
-- [ ] P-APAS13C — "Matrix $p$- and Frobenius norms; diagonal $p$-norm; two explicit $\norm{B}_2$ computations"
 - [ ] P-APAS13D — "Unique positive semidefinite square root; orthogonal projection via $\widehat{X}=X\operatorabs{X}^{-1}$"
 - [ ] P-APAS13E — "Induced representations and Frobenius reciprocity"
-- [ ] P-APAS13G — "Quaternion group of order $8$: conjugacy classes and character table"
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
 - [ ] P-APAS15B — "Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$"
@@ -902,7 +889,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS21F — "Indecomposable versus irreducible complex representations of $\RR_+$"
 - [ ] P-APAS21H — "Character table of $A_4$ and the Wedderburn decomposition of $\CC[A_4]$"
 - [ ] P-APAS21J — "Cayley graph of $B(n)$ and spectrum of its adjacency operator"
-- [ ] P-APAS23A — "Schur form; deflating a simple eigenpair and the angle between $x$ and $y$"
 - [ ] P-APAS23B — "Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extrema"
 - [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS23F — "Rank of the $D_4$-averaging operator on $\CC[X]$ for a $3\times 3$ board"
@@ -1015,7 +1001,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
-- [ ] P-CAF10A — "True or False: analytic continuation, germs, subsequences, and domain automorphisms"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF10E — "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequality"
 - [ ] P-CAF11A — "True or False: infinite products, bounded functions on punctured plane, essential singularities, growth rates, and Schwarz lemma"
@@ -1031,7 +1016,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
 - [ ] P-CAFA15C — "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
-- [ ] P-CAFA16B — "Convergence of $\sum_n f(z^n)$ for a self-map $f$ of $\DD$ with $f(0)=0$"
 - [ ] P-CAFA16D — "An analytic function on the disk vanishing on an arc of the boundary is identically zero"
 - [ ] P-CAFA16G — "Analytic continuation of the logarithm along a path is always a branch of the logarithm"
 - [ ] P-CAFA17C — "Bijective analytic map from a half-disk to the upper half-plane"
@@ -1044,7 +1028,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA20D — "Entire functions with prescribed modulus on the unit circle and third derivative"
 - [ ] P-CAFA20G — "Dirichlet problem on a domain between two circles"
 - [ ] P-CAFA21B — "Polynomial approximation and polynomial hull of a compact set"
-- [ ] P-CAFA21D — "Sequence of holomorphic self-maps of the disk converging to 1"
 - [ ] P-CAFA21F — "Entire function with modulus 1 on the unit circle"
 - [ ] P-CAFA22B — "The zero of $e^{tz} + z + 1$ in the left half-plane"
 - [ ] P-CAFA22D — "Mean value inequality and completeness of $A^1(G)$"
@@ -1101,7 +1084,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP20G — "Positive harmonic functions with $h(0)=1$ form a normal family"
 - [ ] P-CASP21B — "Polynomial approximation of $\bar z$ on arcs and on the unit circle"
 - [ ] P-CASP21C — "The maximum of $\abs{f'(0)}$ over holomorphic functions omitting $(-\infty,0]$ with $f(0)=1$"
-- [ ] P-CASP21D — "A bound on $\abs{f(0)}$ for a holomorphic function vanishing at four points of $B(0,2)$"
 - [ ] P-CASP21F — "Uniform convergence of harmonic functions implies convergence of partial derivatives"
 - [ ] P-CASP22B — "Schwarz lemma for polynomial preimages: zeros, bounds, and equality cases"
 - [ ] P-CASP22D — "Equivalence of two-component complement and rational approximation with prescribed poles"
@@ -1281,7 +1263,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-F05BN — "Binomial theorem and $(x+y)^p \equiv x^p+y^p \pmod{p}$"
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
 - [ ] P-F07EX — "Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$"
-- [ ] P-F10IJ — "Injectivity of $g\circ f$ versus injectivity of $f$ and $g$"
 - [ ] P-F12IN — "$A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective"
 - [ ] P-F7Y7R — "Negation of two quantified statements"
 - [ ] P-FBY23 — "Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$"
@@ -1331,7 +1312,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
 - [ ] P-JHUMAY10ANI — "Differentiation under the integral sign with a dominated partial derivative"
 - [ ] P-JHUMAY12RA7 — "Integral transform is absolutely continuous and vanishes at infinity"
-- [ ] P-JHUSP01RAB — "Absolute continuity of the Lebesgue integral"
 - [ ] P-JHUSP01RAE — "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
 - [ ] P-JHUSP05ANB — "The integral operator $g(x)=\int_x^1 f(t)/t\,dt$ on $L^1([0,1])$"
 - [ ] P-JHUSP07ANH — "A function and its Fourier transform cannot both have compact support"
