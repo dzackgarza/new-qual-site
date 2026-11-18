@@ -39,29 +39,94 @@ Show that a regular Lindelöf space is metrizable if it is locally metrizable.
 :::
 
 ::: {.solution}
-Let $x\in X$. Choose a metrizable neighborhood $N_x$ of $x$, and choose an open set $U_x$ with
-$$
-x\in U_x\subset N_x.
-$$
-Regularity is used now: choose an open $V_x$ such that
-$$
-x\in V_x\subset\overline{V_x}\subset U_x.
-$$
-The subspace $\overline{V_x}$ is closed in Lindelöf $X$, hence Lindelöf. It is also a subspace of the metrizable space $N_x$, so it is metrizable. Every Lindelöf metric space is second countable; therefore $\overline{V_x}$, and hence its open subspace $V_x$, has a countable basis.
 
-The family $\{V_x:x\in X\}$ is an open cover of Lindelöf $X$. Choose a countable subcover
-$$
-V_{x_1},V_{x_2},\dots.
-$$
-For each $i$, let $\mathcal B_i$ be a countable basis for $V_{x_i}$. Since the $V_{x_i}$ are open in $X$,
-$$
-\mathcal B=\bigcup_{i=1}^\infty\mathcal B_i
-$$
-is a countable basis for $X$. The space $X$ is regular and second countable, so the Urysohn metrization theorem implies $X$ is metrizable.
+No retained solution set covers this exercise: it is the book's own exercise and no sheet in `tmp/sources` treats §34 Exercise 8, so the argument below is the card's own, following the book's hint. The statement was checked against Munkres, *Topology* (2000), §34 Exercise 8, printed p. 218, with the definition of locally metrizable in Exercise 7 on the same page, Lemma 31.1(a) on printed p. 196, Theorem 30.2 on printed p. 191, §16 Exercise 1 on printed p. 91, and the Urysohn metrization theorem, Theorem 34.1, on printed p. 215.
 
-The essential use of regularity was the shrinking
-$$
-x\in V_x\subset\overline{V_x}\subset U_x,
-$$
-which makes $\overline{V_x}$ a closed Lindelöf subspace while keeping it inside a metrizable neighborhood.
+Throughout, $X$ is regular and Lindelöf, and $X$ is locally metrizable: each point has a neighbourhood that is metrizable in the subspace topology.
+
+::: pf
+
+::: {.pf-step #neighbourhoods}
+For each $x\in X$ there are an open set $U_{x}$ and a metrizable subspace $N_{x}$ of $X$ with $x\in U_{x}\subset N_{x}$.
+
+::: pf-proof
+Local metrizability gives a neighbourhood $N_{x}$ of $x$ that is metrizable as a subspace; being a neighbourhood, it contains an open set $U_{x}$ about $x$.
+:::
+
+:::
+
+::: {.pf-step #shrinking}
+For each $x\in X$ there is an open set $V_{x}$ with $x\in V_{x}\subset\overline{V_{x}}\subset U_{x}$.
+
+::: pf-proof
+This is Lemma 31.1(a) (printed p. 196): in a regular space, for a point $x$ and a neighbourhood $U_{x}$ of it there is a neighbourhood $V_{x}$ of $x$ whose closure lies in $U_{x}$. Taking $V_{x}$ open is no loss, since any neighbourhood of $x$ contains an open one, and shrinking only decreases the closure.
+:::
+
+:::
+
+::: {.pf-step #closed-lindelof}
+$\overline{V_{x}}$ is Lindelöf.
+
+::: pf-proof
+$\overline{V_{x}}$ is a closed subspace of the Lindelöf space $X$. If $\mathcal{U}$ is a cover of it by sets open in $X$, then $\mathcal{U}\cup\theset{X-\overline{V_{x}}}$ is an open cover of $X$, which has a countable subcover because $X$ is Lindelöf; discarding $X-\overline{V_{x}}$ leaves a countable subcollection of $\mathcal{U}$ covering $\overline{V_{x}}$.
+:::
+
+:::
+
+::: {.pf-step #closed-metrizable}
+$\overline{V_{x}}$ is metrizable.
+
+::: pf-proof
+$\overline{V_{x}}\subset N_{x}$ by step [](#shrinking){.pf-ref} and step [](#neighbourhoods){.pf-ref}. A subspace of a metric space is a metric space under the restricted metric: the balls of the restriction are the intersections of the balls of $N_{x}$ with $\overline{V_{x}}$, and balls form a basis for the topology of $N_{x}$ (§20, printed p. 119), so they form a basis for the subspace topology. The topology $\overline{V_{x}}$ inherits from $N_{x}$ agrees with the one it inherits from $X$ because the subspace topology is transitive (§16 Exercise 1, printed p. 91).
+:::
+
+:::
+
+::: {.pf-step #closed-second-countable}
+$\overline{V_{x}}$ has a countable basis.
+
+::: pf-proof
+A Lindelöf metric space is second countable: for each $n\geq1$ the cover by balls of radius $1/n$ has a countable subcover, by the Lindelöf property, and the union over $n$ of these countably many countable families is a countable family of balls; it is a basis, because for a point $x$ and $\varepsilon>0$ one takes $n$ with $2/n<\varepsilon$ and a ball $B(y,1/n)$ of the $n$-th subcover containing $x$, and then $x\in B(y,1/n)\subset B(x,\varepsilon)$ by the triangle inequality. Apply this to the Lindelöf metric space $\overline{V_{x}}$ of steps [](#closed-lindelof){.pf-ref} and [](#closed-metrizable){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #V-basis}
+Each $V_{x}$ has a countable basis.
+
+::: pf-proof
+$V_{x}$ is open in $\overline{V_{x}}$, hence a subspace of it, and a subspace of a second-countable space is second-countable by Theorem 30.2 (printed p. 191); the intersections of the countably many basic open sets of $\overline{V_{x}}$ with $V_{x}$ form a countable basis for $V_{x}$.
+:::
+
+:::
+
+::: {.pf-step #countable-subcover}
+Some countable subfamily of $\theset{V_{x}\mid x\in X}$ covers $X$.
+
+::: pf-proof
+$\theset{V_{x}}$ is an open cover of $X$ by step [](#shrinking){.pf-ref}, and $X$ is Lindelöf, so it has a countable subcover, say $V_{x_{1}},V_{x_{2}},\ldots$.
+:::
+
+:::
+
+::: {.pf-step #basis-for-X}
+The union of countable bases $\mathcal{B}_{i}$ of the sets $V_{x_{i}}$ is a countable basis for $X$.
+
+::: pf-proof
+Let $\mathcal{B}\coloneqq\bigcup_{i}\mathcal{B}_{i}$, countable as a countable union of countable sets (Theorem 7.5, printed p. 48). Each $B\in\mathcal{B}_{i}$ is open in $V_{x_{i}}$, and $V_{x_{i}}$ is open in $X$, so $B=V_{x_{i}}\cap O$ for some open $O\subset X$ and $B$ is open in $X$. Given a point $x$ and an open set $O$ containing it, step [](#countable-subcover){.pf-ref} gives $i$ with $x\in V_{x_{i}}$, the set $O\cap V_{x_{i}}$ is a neighbourhood of $x$ in $V_{x_{i}}$, and $\mathcal{B}_{i}$ being a basis for $V_{x_{i}}$ gives $B\in\mathcal{B}_{i}$ with $x\in B\subset O\cap V_{x_{i}}\subset O$. So $\mathcal{B}$ meets the criterion for a basis.
+:::
+
+:::
+
+::: pf-step
+Therefore $X$ is metrizable, regularity being used exactly in the shrinking of step [](#shrinking){.pf-ref}.
+
+::: pf-proof
+Step [](#basis-for-X){.pf-ref} exhibits a countable basis for $X$, and $X$ is regular by hypothesis, so the Urysohn metrization theorem (Theorem 34.1, printed p. 215) makes $X$ metrizable. Regularity enters only through the choice of $V_{x}$ with $\overline{V_{x}}\subset U_{x}\subset N_{x}$: that containment is what lets the closed set $\overline{V_{x}}$ be metrizable while remaining a closed subspace of the Lindelöf space $X$. Without regularity a neighbourhood $U_{x}$ of $x$ inside the metrizable $N_{x}$ need not have a smaller neighbourhood with closure still inside $N_{x}$, and then no closed metrizable subspace at $x$ is available.
+:::
+
+:::
+
+:::
+
 :::
