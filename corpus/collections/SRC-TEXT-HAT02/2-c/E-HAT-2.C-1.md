@@ -216,6 +216,28 @@ audit:
     proves. Checked: that the steps cite those two answers and nothing else, and that the marking
     covers each of them. Not claimed: a published argument for any step, which would change the
     disposition.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The exercise's published-source question was put to the literature again and the answer was
+    checked by exhaustion, since no publication states it. Searched: a query for a published lemma
+    bounding the edges of a simplicial circle admitting a degree-$n$ simplicial map, and a second
+    query naming the count $3n$; both returned only the same Math StackExchange question 3590105
+    that the card transcribes --- a user post, not a publication --- beside unrelated papers on
+    simplicial complexes and on spherical simplicial mappings of a torus, none of which bounds the
+    circle case. No published argument was found, and the card does not pretend to cite one. What
+    was decided: an exhaustive check of the answer. Over all pairs $(k,l)$ with $3\le k<3n+2$ and
+    $3\le l\le\min(6,k)$, every simplicial map from the $k$-cycle to the $l$-cycle was enumerated
+    (vertex maps sending adjacent vertices to equal or adjacent vertices) and its degree computed as
+    the coefficient of the fundamental class; none has degree $n$ with $k<3n$, and degree $n$ is
+    attained on a $3n$-cycle over a triangle. Output: ok test_attainment_at_eL_3 (three degree-$n$
+    maps each for $n=1,2,3$); ok test_minimum_is_3n ($e(K)=3,6,9$ with $e(L)=3$ for $n=1,2,3$); ok
+    test_no_map_below_3n; ok test_zero_and_negative (degree $0$ constant, and degree $-n$ by the
+    reversed polygon). Two defects were in the checking script, not the card, and were fixed there:
+    the oriented coefficient of a reversed edge was accumulated with the wrong sign. Not claimed: a
+    proof for general $n$, which remains the card's own argument; and no published source exists for
+    this exercise in anything searched.
 ---
 
 ::: {.problem}
@@ -273,5 +295,5 @@ $$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
 
-The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. `COMPLAINTS.md` item 11 records the disposition.
+The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. The answer itself was checked by exhaustion for $n=1,2,3$: there is no simplicial map of degree $n$ from a $k$-cycle to an $l$-cycle with $l\le6$ for any $k<3n$, and degree $n$ is attained on a $3n$-cycle over a triangle, three ways for each $n$. `COMPLAINTS.md` item 11 records the disposition.
 :::
