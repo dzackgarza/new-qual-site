@@ -51,27 +51,54 @@ $$
 :::
 
 ::: {.solution}
+
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.6, printed pp. 105--106** (`tmp/sources/munkres-solutions-whitman.pdf`); the two contradictions below are his, with the diagonal set stated explicitly in (a).
 
-(a) Suppose $\mathcal A$ were the set of all sets. Every subset of $\mathcal A$ is itself a set, hence by the defining property of $\mathcal A$ it is an element of $\mathcal A$. Therefore
-$$
-\mathcal P(\mathcal A)\subset\mathcal A.
-$$
-The inclusion map would be an injection
-$$
-\mathcal P(\mathcal A)\hookrightarrow\mathcal A,
-$$
-contradicting Cantor's theorem, which says there is no injection from the power set of a set into the set itself. That theorem in the form used here is the diagonal argument: for any map $\psi:A\to\mathcal P(A)$ the set $D=\{a\in A:a\notin\psi(a)\}$ satisfies $D\ne\psi(a)$ for every $a$, since $a\in D$ exactly when $a\notin\psi(a)$; so no such $\psi$ is surjective, and an injection $\mathcal P(\mathcal A)\hookrightarrow\mathcal A$ would have a surjective left inverse $\mathcal A\to\mathcal P(\mathcal A)$. Hence a set of all sets cannot exist.
+::: pf
 
-(b) Define
+::: {.pf-step #cantor}
+
+No map $\psi:A\to\mathcal{P}(A)$ is surjective.
+
+::: pf-proof
+
+Given $\psi$, put $D=\{a\in A:a\notin\psi(a)\}$, a subset of $A$. For any $a\in A$, the equivalence $a\in D\iff a\notin\psi(a)$ shows $a\in D$ exactly when $a\notin\psi(a)$, so $D\ne\psi(a)$; thus $D$ is an element of $\mathcal{P}(A)$ that is not a value of $\psi$, and $\psi$ is not surjective. This is Cantor's diagonal argument.
+
+:::
+
+:::
+
+::: {.pf-step #power}
+
+(a) If $\mathcal{A}$ were the set of all sets, then $\mathcal{P}(\mathcal{A})\subset\mathcal{A}$, which is impossible.
+
+::: pf-proof
+
+Every subset of $\mathcal{A}$ is a set, and $\mathcal{A}$ contains every set, so each element of $\mathcal{P}(\mathcal{A})$ is an element of $\mathcal{A}$; that is the inclusion. The inclusion map $\mathcal{P}(\mathcal{A})\to\mathcal{A}$ is then an injection, and an injection $j:\mathcal{P}(\mathcal{A})\to\mathcal{A}$ would have a left inverse $r:\mathcal{A}\to\mathcal{P}(\mathcal{A})$ with $r\circ j=\mathrm{id}$, which is surjective, contradicting step [](#cantor){.pf-ref} applied to $A=\mathcal{A}$. Hence
 $$
-\mathcal B=\{A\in\mathcal A:A\notin A\}.
+\boxed{\mathcal{P}(\mathcal{A})\subset\mathcal{A}\ \text{is contradictory: no set of all sets exists.}}
 $$
-Since $\mathcal A$ is assumed to contain every set, $\mathcal B\in\mathcal A$. Ask whether $\mathcal B\in\mathcal B$. By definition,
+
+:::
+
+:::
+
+::: {.pf-step #russell}
+
+(b) With $\mathcal{B}=\{A\in\mathcal{A}:A\notin A\}$, both $\mathcal{B}\in\mathcal{B}$ and $\mathcal{B}\notin\mathcal{B}$ lead to contradiction.
+
+::: pf-proof
+
+Under the supposition that $\mathcal{A}$ is the set of all sets, $\mathcal{B}$ is a set, hence $\mathcal{B}\in\mathcal{A}$, so the defining condition applies to $A=\mathcal{B}$:
 $$
-\mathcal B\in\mathcal B
-\iff
-\mathcal B\notin\mathcal B,
+\mathcal{B}\in\mathcal{B}\iff \mathcal{B}\in\mathcal{A}\ \text{and}\ \mathcal{B}\notin\mathcal{B}\iff\mathcal{B}\notin\mathcal{B}.
 $$
-a contradiction in either case. This is Russell's paradox and independently shows that the supposed set $\mathcal A$ cannot exist.
+If $\mathcal{B}\in\mathcal{B}$ then the equivalence gives $\mathcal{B}\notin\mathcal{B}$; if $\mathcal{B}\notin\mathcal{B}$ then, $\mathcal{B}$ being in $\mathcal{A}$, the equivalence gives $\mathcal{B}\in\mathcal{B}$. Either alternative is self-contradictory, which again shows that the supposed set of all sets cannot exist.
+
+:::
+
+:::
+
+:::
+
 :::
