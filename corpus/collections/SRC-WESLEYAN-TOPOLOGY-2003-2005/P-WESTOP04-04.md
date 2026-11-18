@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-04
 kind: problem
 title: Definition of a covering space and uniqueness of a based lift
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Covering Spaces]}
 relations: []
 review: draft
 audit:

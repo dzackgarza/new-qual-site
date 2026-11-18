@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-06
 kind: problem
 title: Define the fundamental group and sketch the proof that it is a group
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Fundamental Group]}
 relations: []
 review: draft
 audit:

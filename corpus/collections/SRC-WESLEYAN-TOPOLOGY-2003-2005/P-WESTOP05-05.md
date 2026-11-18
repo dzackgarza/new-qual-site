@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-05
 kind: problem
 title: Characteristic properties and cardinalities of Čech--Stone compactifications
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

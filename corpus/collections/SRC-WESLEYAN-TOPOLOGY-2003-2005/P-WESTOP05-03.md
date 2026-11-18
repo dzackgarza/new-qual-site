@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-03
 kind: problem
 title: Nonmetrizability and compact-Hausdorff embedding facts
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Metrizability, Counterexamples]}
 relations: []
 review: draft
 audit:

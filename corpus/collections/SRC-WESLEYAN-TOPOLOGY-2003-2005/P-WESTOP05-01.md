@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-01
 kind: problem
 title: Cardinalities of power sets, intervals, and sequence spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Uncountable Sets, Cantor's Theorem]}
 relations: []
 review: draft
 audit:

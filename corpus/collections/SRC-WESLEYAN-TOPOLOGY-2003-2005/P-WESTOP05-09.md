@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-09
 kind: problem
 title: The suspension of a path-connected space is simply connected
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Suspension, Simply Connected]}
 relations: []
 review: draft
 audit:

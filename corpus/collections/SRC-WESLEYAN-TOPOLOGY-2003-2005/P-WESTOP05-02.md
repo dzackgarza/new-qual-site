@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-02
 kind: problem
 title: Second countability under subspaces, quotients, and products
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Countability, Product Topology]}
 relations: []
 review: draft
 audit:

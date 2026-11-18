@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP05-04
 kind: problem
 title: Hausdorff examples separating normality, countability, compactness, and metrizability
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Counterexamples]}
 relations: []
 review: draft
 audit:

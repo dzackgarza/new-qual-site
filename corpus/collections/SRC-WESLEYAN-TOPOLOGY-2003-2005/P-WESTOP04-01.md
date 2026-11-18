@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-01
 kind: problem
 title: Continuous image of a closed interval is a closed bounded interval
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Continuous Functions, Compactness]}
 relations: []
 review: draft
 audit:

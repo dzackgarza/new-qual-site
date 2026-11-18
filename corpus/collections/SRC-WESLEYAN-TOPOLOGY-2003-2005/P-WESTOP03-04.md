@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-04
 kind: problem
 title: Classification of compact connected surfaces and a torus-projective-plane connected sum
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Classification of Surfaces]}
 relations: []
 review: draft
 audit:

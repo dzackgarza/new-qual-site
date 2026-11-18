@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP04-10
 kind: problem
 title: Axiom of Choice and one of its standard equivalent maximality principles
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Axiom of Choice]}
 relations: []
 review: draft
 audit:

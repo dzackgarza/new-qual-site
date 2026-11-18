@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-10
 kind: problem
 title: A minimal compact subspace surjecting onto a Hausdorff image
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Compactness, Hausdorff Spaces]}
 relations: []
 review: draft
 audit:

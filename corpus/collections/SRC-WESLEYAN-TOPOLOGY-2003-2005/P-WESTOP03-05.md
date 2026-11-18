@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-WESTOP03-05
 kind: problem
 title: Cardinality bound for connected normal $T_1$ spaces
-classification: {areas: [topology], topics: []}
+classification: {areas: [topology], topics: [Separation Axioms, Cardinality]}
 relations: []
 review: draft
 audit:
