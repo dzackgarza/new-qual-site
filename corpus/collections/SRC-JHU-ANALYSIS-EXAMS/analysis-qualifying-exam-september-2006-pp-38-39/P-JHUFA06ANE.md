@@ -29,27 +29,44 @@ Let $X$ be the Banach space of continuous real-valued functions on $[0,\pi]$ tha
 :::
 
 ::: {.solution}
-For each $N\ge0$, let
-$$
-V_N=\operatorname{span}\{1,\sin x,\cos x,\ldots,\sin Nx,\cos Nx\},
-$$
-and set
-$$
-Y_N=Y\cap V_N.
-$$
-Each $V_N$ is finite dimensional, hence closed in $X$, so $Y_N$ is closed in $Y$. By hypothesis, every $y\in Y$ is a trigonometric polynomial of some finite degree, therefore
-$$
-Y=\bigcup_{N=0}^\infty Y_N.
-$$
-Since $Y$ is closed in the Banach space $X$, it is itself Banach. By the Baire category theorem, some $Y_N$ has nonempty interior relative to $Y$. Because $Y_N$ is a linear subspace of $Y$, nonempty interior forces
-$$
-Y_N=Y.
-$$
-Indeed, if a ball $B_Y(y_0,r)\subset Y_N$, then $y_0\in Y_N$ and hence $B_Y(0,r)\subset Y_N$; by scalar multiplication every vector of $Y$ then lies in $Y_N$.
 
-Thus
-$$
-Y\subset V_N,
-$$
-and $V_N$ is finite dimensional. Hence $Y$ is finite dimensional.
+No retained solution set covers this exercise: the card's own Baire-category argument follows, with the exhaustion, the closedness of the pieces and the conclusion as separate steps.
+
+Let $X=C_{0}[0,\pi]$ be the Banach space of continuous real functions vanishing at $0$ and $\pi$, with the supremum norm, and let $Y\subseteq X$ be a closed subspace all of whose elements are trigonometric polynomials.
+
+::: pf
+
+::: {.pf-step #exhaust}
+With $V_{N}=\operatorname{span}\theset{1,\sin x,\cos x,\dots,\sin Nx,\cos Nx}$ and $Y_{N}=Y\cap V_{N}$: each $V_{N}$ is finite dimensional, $Y=\bigcup_{N}Y_{N}$, and each $Y_{N}$ is closed in $Y$.
+
+::: pf-proof
+$V_{N}$ has dimension $2N+1$, and every finite-dimensional subspace of a normed space is complete, hence closed in $X$; so $Y_{N}$, the intersection of $Y$ with a closed set, is closed in $Y$. By hypothesis each $y\in Y$ is a trigonometric polynomial, say of degree $N$, so $y\in Y\cap V_{N}=Y_{N}$; conversely $Y_{N}\subseteq Y$.
+:::
+
+:::
+
+::: {.pf-step #baire}
+Some $Y_{N}$ has nonempty interior in $Y$.
+
+::: pf-proof
+$Y$ is a closed subset of the complete space $X$, hence a complete metric space, that is a Baire space; it is the countable union of the closed sets $Y_{N}$ by step [](#exhaust){.pf-ref}. By Baire's theorem some $Y_{N}$ contains a relative ball $B(y_{0},r)\cap Y$ with $r>0$.
+:::
+
+:::
+
+::: {.pf-step #finite}
+$Y=Y_{N}$ for such an $N$, so $Y$ is finite dimensional.
+
+::: pf-proof
+$Y_{N}$ is a linear subspace of $Y$ and contains $y_{0}$ together with $y_{0}+y$ for every $y\in Y$ with $\norm{y}<r$; hence it contains all $y\in Y$ with $\norm{y}<r$, by linearity (subtract $y_{0}$, which lies in $Y_{N}$). Since $Y_{N}$ is a linear subspace containing every $y\in Y$ of norm $<r$, homogeneity gives every $y\in Y$: if $y\ne0$ then $\frac{r}{2\norm{y}}y$ has norm $r/2<r$, so lies in $Y_{N}$, and multiplying by the scalar $2\norm{y}/r$ returns $y$. Thus $Y=Y_{N}$, of dimension at most $2N+1$.
+:::
+
+:::
+
+::: {.pf-qed}
+$Y$ is finite dimensional by steps [](#baire){.pf-ref} and [](#finite){.pf-ref}.
+:::
+
+:::
+
 :::
