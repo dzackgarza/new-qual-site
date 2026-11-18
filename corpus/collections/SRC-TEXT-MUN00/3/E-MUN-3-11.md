@@ -34,7 +34,7 @@ audit:
   by: claude
   date: 2026-11-18
   note: >-
-    Restructured into Lamport steps from the retained Whitman solution (Exercise 3.11, printed p. 31); statement unchanged. The equivalence a < b iff not b <= a, which he proves first and which (c) and (d) use, is step 1 and is cited from those steps. Page added: the order axioms and comparability are on printed p. 24, the exercise on printed p. 28. No mathematical repair was needed.
+    Restructured into Lamport steps from the retained Whitman solution (Exercise 3.11, printed p. 31); statement unchanged. The equivalence a < b iff not b <= a, which he proves first and which (c) and (d) use, is step 1 and is cited from those steps. Pages added and read off the retained PDF: the definition of an order relation and comparability are on printed p. 24, and Exercise 11 is on printed p. 29 (items 1-5 of §3 are on p. 28, the rest of the list on p. 29). No mathematical repair was needed.
 
 ---
 
