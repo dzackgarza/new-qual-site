@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1367 of the 12429 problem cards that have a solution
+1363 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1367
+- Problems: 1363
 - Problem cards with a solution: 12429
 
-## Problems (1367)
+## Problems (1363)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -33,14 +33,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-AMD-7FMEI2QD — "A ring is local iff $x$ or $1-x$ is a unit for every $x$"
 - [ ] E-AMD-DQCYAQBD — "Quotients of dihedral groups are dihedral"
 - [ ] E-AMD-E3UUQEAP — "Splitting field of $x^3-2$ is $\QQ(\sqrt[3]{2},\zeta_3)$"
-- [ ] E-AMD-EBIC3Z5S — "An integral domain in which every prime ideal is maximal is a field, hence a UFD"
 - [ ] E-AMD-FPHQEZZL — "$\Inn(G)\cong G/Z(G)$"
 - [ ] E-AMD-GEZ3H4G7 — "The minimal polynomial over $L$ divides the minimal polynomial over $F$"
 - [ ] E-AMD-H4KPWJ75 — "The minimal polynomial divides the characteristic polynomial"
 - [ ] E-AMD-H7JVMMY4 — "Algebraicity of $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$"
-- [ ] E-AMD-HICDBVN4 — "$K[\alpha_1,\ldots,\alpha_n]=K(\alpha_1,\ldots,\alpha_n)$ for algebraic $\alpha_i$"
 - [ ] E-AMD-IBDKWV2J — "Abelian groups are nilpotent"
-- [ ] E-AMD-SD3PTZ4O — "The union of two ideals need not be an ideal"
 - [ ] E-APRPU — "Higher-dimensional separation theorems from the no-retraction theorem"
 - [ ] E-AWEWJ — "An affine coordinate homeomorphism of R^omega"
 - [ ] E-AZ6JL — "Three topologies on the unit square"
@@ -130,7 +127,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.F-2 — "Mittag--Leffler condition and $\varprojlim^1$"
 - [ ] E-HAT-3.F-4 — "Divisible groups and vanishing Ext"
 - [ ] E-HAT-3.F-5 — "$\operatorname{Ext}(A, \ZZ)$ as a cokernel"
-- [ ] E-HAT-3.F-6 — "$\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ_p)$"
 - [ ] E-HAT-3.F-7 — "Moore spaces as quotients"
 - [ ] E-HAT-3.H-1 — "Homology of $S^1$ with twisted $\ZZ$ coefficients"
 - [ ] E-HAT-3.H-3 — "Classification of group bundles via $B\operatorname{Aut}(G)$"
