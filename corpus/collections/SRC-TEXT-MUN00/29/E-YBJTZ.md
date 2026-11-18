@@ -40,6 +40,16 @@ audit:
     compactification also requires, is now proved rather than asserted. The map and the use of
     Exercise 29.5 are unchanged; the statement was checked against Munkres, Topology (2000), Section
     29 Exercise 6, printed p. 186.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair, two items. The definition of a compactification is on printed p. 185, not p. 183
+    (p. 183 carries Theorem 29.1), and both citations of the definition are corrected. And the claim
+    that the image misses p was argued from injectivity on the open interval together with the values
+    at the endpoints, which does not exclude an interior point mapping to p; the card now proves
+    q(t) = p if and only if t lies in 1/2 + Z and draws the conclusion from that. The pages were
+    checked against the PDF.
 ---
 
 ::: {.exercise}
@@ -49,7 +59,7 @@ Show that the one-point compactification of $\RR$ is homeomorphic with the circl
 
 ::: {.solution}
 
-The map and the reduction are **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.6, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the proof that the restriction of $q$ is a *homeomorphism*, and not merely a continuous injection, is supplied here, that solution identifying the two spaces from injectivity alone. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 6, printed p. 186, with the definition of a compactification on printed p. 183, Theorem 27.3 on printed p. 173 and Exercise 29.5 on printed p. 186.
+The map and the reduction are **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.6, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the proof that the restriction of $q$ is a *homeomorphism*, and not merely a continuous injection, is supplied here, that solution identifying the two spaces from injectivity alone. The statement was checked against Munkres, *Topology* (2000), §29 Exercise 6, printed p. 186, with the definition of a compactification on printed p. 185, Theorem 27.3 on printed p. 173 and Exercise 29.5 on printed p. 186.
 
 Throughout $S^{1}=\theset{(x,y)\in\RR^{2}\mid x^{2}+y^{2}=1}$ with the subspace topology of $\RR^{2}$, $p\coloneqq(-1,0)$, and
 $$
@@ -90,13 +100,25 @@ Suppose $q(s)=q(t)$ with $s,t\in(-1/2,1/2)$. Then $\cos 2\pi s=\cos 2\pi t$ and 
 
 :::
 
+::: {.pf-step #hits-p}
+
+$q(t)=p=(-1,0)$ if and only if $t\in\tfrac12+\ZZ$.
+
+::: pf-proof
+
+$q(t)=\big(\cos2\pi t,\sin2\pi t\big)$ equals $(-1,0)$ exactly when $\cos2\pi t=-1$ and $\sin2\pi t=0$. The second condition says $2\pi t\in\pi\ZZ$, that is $t\in\tfrac12\ZZ$, so $t=m/2$ for some integer $m$; among those, $\cos(m\pi)$ equals $-1$ exactly when $m$ is odd and $1$ when $m$ is even. Hence $q(t)=p$ exactly when $t=(2k+1)/2=k+\tfrac12$ for some $k\in\ZZ$, which is the set $\tfrac12+\ZZ$.
+
+:::
+
+:::
+
 ::: {.pf-step #image}
 
 $q$ carries $(-1/2,1/2)$ onto $S^{1}-\theset{p}$.
 
 ::: pf-proof
 
-$q(\pm1/2)=(\cos(\pm\pi),\sin(\pm\pi))=(-1,0)=p$, so no point of $(-1/2,1/2)$ is mapped to $p$; the endpoints are not in the open interval, and by step [](#injective){.pf-ref} no other point is mapped to $p$ either, so the image misses $p$. For the other inclusion, let $(x,y)\in S^{1}$ with $(x,y)\neq p$. Since $x^{2}+y^{2}=1$ and $x\neq-1$, there is a unique $\theta\in(-\pi,\pi)$ with $x=\cos\theta$ and $y=\sin\theta$, namely the principal argument of $(x,y)$; then $t\coloneqq\theta/2\pi$ lies in $(-1/2,1/2)$ and $q(t)=(x,y)$.
+The image misses $p$: by step [](#hits-p){.pf-ref} a point $t$ with $q(t)=p$ lies in $\tfrac12+\ZZ$, whose elements are $\ldots,-\tfrac32,-\tfrac12,\tfrac12,\tfrac32,\ldots$, and the two closest to $0$ are the endpoints $\pm\tfrac12$; no element of that set lies in the open interval $(-1/2,1/2)$, so $q$ takes no value of the interval to $p$. For the other inclusion, let $(x,y)\in S^{1}$ with $(x,y)\neq p$. Since $x^{2}+y^{2}=1$ and $x\neq-1$, there is a unique $\theta\in(-\pi,\pi)$ with $x=\cos\theta$ and $y=\sin\theta$, namely the principal argument of $(x,y)$; then $t\coloneqq\theta/2\pi$ lies in $(-1/2,1/2)$ and $q(t)=(x,y)$.
 
 :::
 
@@ -161,7 +183,7 @@ $S^{1}$ is the one-point compactification of $S^{1}-\theset{p}$.
 
 :::: pf-proof
 
-By step [](#s1-compact){.pf-ref} the space $S^{1}$ is compact Hausdorff; the two remaining clauses of the definition on printed p. 183 are settled below.
+By step [](#s1-compact){.pf-ref} the space $S^{1}$ is compact Hausdorff; the two remaining clauses of the definition on printed p. 185 are settled below.
 
 ::: {.pf-step #complement}
 
