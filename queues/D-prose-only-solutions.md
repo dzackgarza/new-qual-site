@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1522 of the 12430 problem cards that have a solution
+1515 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,12 +15,11 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1522
+- Problems: 1515
 - Problem cards with a solution: 12430
 
-## Problems (1522)
+## Problems (1515)
 
-- [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
 - [ ] E-20CHL — "Continuity implies separate continuity"
@@ -616,7 +615,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-OD5RT — "Countable products of compact metrizable spaces are compact"
 - [ ] E-OHHSA — "A regular space that is not completely regular"
 - [ ] E-OI7VN — "The logarithmic spiral and the knotted x-axis as retracts"
-- [ ] E-OQRAL — "Euler numbers of standard graphs and their coverings"
 - [ ] E-OSQTJ — "Compact contractible subsets of the sphere do not separate"
 - [ ] E-OYPV7 — "The hierarchy of conditions on locally euclidean spaces"
 - [ ] E-PEXB6 — "A rational fan and a nowhere locally connected path-connected set"
@@ -847,13 +845,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8RA41 — "The indefinite integral of an $L^1$ function is absolutely continuous"
 - [ ] P-8XT103 — "Bounded functions whose integrals on $[0,a]$ vanish weakly annihilate $L^1$"
 - [ ] P-8XT25 — "Sum of two positive measure sets contains an interval"
-- [ ] P-8XT28 — "Smooth compactly supported functions are dense in $L^2$"
 - [ ] P-8XT63 — "Injectivity in an annulus implies injectivity throughout the disk"
 - [ ] P-8XT69 — "A power series is injective if $\sum_{n\ge 2}n\abs{a_n}\le\abs{a_1}$"
 - [ ] P-8XT71 — "A family of holomorphic functions with uniformly bounded $L^2$ disk integrals is locally bounded"
 - [ ] P-8XT77 — "The $w^*$-topology and the $w^*$-closure of the dual unit sphere"
 - [ ] P-8XT87 — "The set where the symmetric derivate of an increasing function exceeds $1$ has outer measure at most $f(1)-f(0)$"
-- [ ] P-A4JGH — "Negation of uniform convergence and a pointwise but nonuniform example"
 - [ ] P-AFC6V — "A group of order $96$ has one or three Sylow $2$-subgroups, and a normal subgroup of order $32$ or $16$"
 - [ ] P-AGH210CONE — "The affine cone over a projective variety"
 - [ ] P-AGH211CONSTSHEAF — "The constant sheaf is the sheafification of the constant presheaf"
@@ -866,7 +862,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGHDIMTOPOLOGY — "Dimension under subspaces, open covers, and closed subsets"
 - [ ] P-AGHGENSBOUND — "$r$ generators bound the codimension of every component by $r$"
 - [ ] P-AGHHYPSECTION — "A hypersurface section drops the dimension by exactly one"
-- [ ] P-AGHPLANECONIC — "Coordinate rings of the parabola, the hyperbola, and any conic"
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
 - [ ] P-AGHTHREECOMP — "Decomposing $V(x^2-yz,\ xz-x)$ into irreducible components"
 - [ ] P-AGHTWCUBIC — "The twisted cubic is an affine variety of dimension one"
@@ -906,7 +901,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS21D — "Orthogonal projections onto $\operatorname{range}(C^H)$ and $\operatorname{null}(C)$; projectors onto a line"
 - [ ] P-APAS21F — "Indecomposable versus irreducible complex representations of $\RR_+$"
 - [ ] P-APAS21H — "Character table of $A_4$ and the Wedderburn decomposition of $\CC[A_4]$"
-- [ ] P-APAS21I — "Characters of $B(n)$ take values in $\{\pm 1\}$; dual group of $B(n)$"
 - [ ] P-APAS21J — "Cayley graph of $B(n)$ and spectrum of its adjacency operator"
 - [ ] P-APAS23A — "Schur form; deflating a simple eigenpair and the angle between $x$ and $y$"
 - [ ] P-APAS23B — "Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extrema"
@@ -1021,7 +1015,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
-- [ ] P-CAF09F — "An entire function with real plus imaginary part bounded is constant"
 - [ ] P-CAF10A — "True or False: analytic continuation, germs, subsequences, and domain automorphisms"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF10E — "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequality"
