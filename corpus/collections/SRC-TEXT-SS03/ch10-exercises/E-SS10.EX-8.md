@@ -14,6 +14,18 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps. No retained set covers this exercise, so the argument is the
+    card's own and the card says so; the printed hint is followed in (b). Each step re-read: two odd
+    legs give a sum 2 mod 4, which is not a square, and two even ones contradict coprimality; with a
+    odd and b even, c is odd and coprime to a, because a common divisor divides c^2 - a^2 = b^2 and
+    hence b; u = (c-a)/2 and v = (c+a)/2 are positive coprime integers with uv = (b/2)^2; a product
+    of coprime integers that is a square has square factors, by comparing prime exponents; and the
+    parametrisation follows. (c) is the direct verification. Not claimed: that distinct pairs (m,n)
+    give distinct triples, or that the parametrisation is injective.
 ---
 
 ::: {.exercise}
@@ -27,52 +39,116 @@ Consider Pythagorean triples $(a, b, c)$ with $a^2 + b^2 = c^2$, and with $a, b,
 :::
 
 ::: {.solution}
-Assume $\gcd(a,b)=1$ and $a^2+b^2=c^2$.
+The argument is the card's own; no retained solution set is cited on the card, and none was located for this exercise among the retained sets. It is checked against Stein and Shakarchi, Complex Analysis (2003), Chapter 10 Exercise 8, and follows the printed hint for part (b).
 
-If both $a$ and $b$ were odd, then
-$$
-a^2+b^2\equiv1+1\equiv2\pmod4,
-$$
-which cannot be a square modulo $4$. They cannot both be even because they are coprime. Thus exactly one of $a,b$ is even.
+::: pf
 
-Assume $a$ is odd and $b$ is even. Then $c$ is odd. Also $\gcd(a,c)=1$: a common divisor of $a$ and $c$ would divide $b^2=c^2-a^2$, hence would divide $b$, contradicting $\gcd(a,b)=1$. Set
-$$
-u=\frac{c-a}{2},
-\qquad
-v=\frac{c+a}{2}.
-$$
-These are positive integers (after changing signs if necessary), and
-$$
-uv=\frac{c^2-a^2}{4}=\left(\frac b2\right)^2.
-$$
-Moreover
-$$
-\gcd(u,v)=1,
-$$
-because a common divisor divides $u+v=c$ and $v-u=a$. A product of two coprime positive integers is a square only when each factor is a square, so
-$$
-u=n^2,
-\qquad v=m^2
-$$
-for some integers $m,n$. Hence
-$$
-a=v-u=m^2-n^2,
-\qquad
-b=2mn,
-\qquad
-c=u+v=m^2+n^2.
-$$
+::: {.pf-step #parta}
+If $\gcd(a,b)=1$ and $a^{2}+b^{2}=c^{2}$ then exactly one of $a,b$ is even.
 
-Conversely, if $c=m^2+n^2$, define
+:::: pf-proof
+
+::: {.pf-step #notbothodd}
+$a$ and $b$ are not both odd.
+
+::: pf-proof
+Then $a^{2}+b^{2}\equiv1+1\equiv2\pmod 4$, but a square is $0$ or $1\pmod4$, so $a^{2}+b^{2}$ is not a square.
+:::
+
+:::
+
+::: {.pf-step #notbotheven}
+$a$ and $b$ are not both even.
+
+::: pf-proof
+That would give the common divisor $2$, contradicting $\gcd(a,b)=1$.
+:::
+
+:::
+
+::: {.pf-step}
+Exactly one of $a,b$ is even.
+
+::: pf-proof
+Steps [](#notbothodd){.pf-ref} and [](#notbotheven){.pf-ref} exclude both odd and both even, and every integer is odd or even.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #partb}
+If $a$ is odd and $b$ even, then there are integers $m,n$ with $a=m^{2}-n^{2}$, $b=2mn$ and $c=m^{2}+n^{2}$.
+
+:::: pf-proof
+
+::: {.pf-step #coprimeac}
+$c$ is odd and $\gcd(a,c)=1$.
+
+::: pf-proof
+$c^{2}=a^{2}+b^{2}\equiv1+0\equiv1\pmod4$ with $b$ even, so $c$ is odd. A common divisor $d$ of $a$ and $c$ divides $c^{2}-a^{2}=b^{2}$, hence divides $b$; since $\gcd(a,b)=1$, $d=1$.
+:::
+
+:::
+
+::: {.pf-step #uv}
+With $u=(c-a)/2$ and $v=(c+a)/2$: $u,v$ are positive coprime integers and $uv=(b/2)^{2}$.
+
+::: pf-proof
+$c$ and $a$ are both odd, so $c\pm a$ is even and $u,v$ are integers; $c>a\ge0$ because $b\ne0$, so both are positive. $uv=(c^{2}-a^{2})/4=b^{2}/4=(b/2)^{2}$, and $b/2$ is an integer. A common divisor $d$ of $u$ and $v$ divides $u+v=c$ and $v-u=a$, so $d=1$ by step [](#coprimeac){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #squares}
+Coprime $u,v$ with $uv$ a square are themselves squares.
+
+::: pf-proof
+In the prime factorisation of the square $uv$, every prime occurs to an even exponent; a prime dividing $u$ does not divide $v$, so its exponent in $u$ equals its exponent in $uv$ and is even, and likewise for $v$. Hence $u=n^{2}$ and $v=m^{2}$ for positive integers $n,m$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$a=m^{2}-n^{2}$, $b=2mn$, $c=m^{2}+n^{2}$.
+
+::: pf-proof
+With $u=n^{2}$ and $v=m^{2}$ from step [](#squares){.pf-ref}: $a=v-u=m^{2}-n^{2}$ and $c=u+v=m^{2}+n^{2}$ by the definitions of $u$ and $v$; and $b^{2}=4uv=4m^{2}n^{2}$ with $b>0$ gives $b=2mn$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #partc}
+If $c=m^{2}+n^{2}$ is a sum of two squares then $c$ is the hypotenuse of an integral right triangle.
+
+::: pf-proof
+Put $a=m^{2}-n^{2}$ and $b=2mn$. Then
 $$
-a=m^2-n^2,
-\qquad b=2mn.
+a^{2}+b^{2}=(m^{2}-n^{2})^{2}+4m^{2}n^{2}=m^{4}+2m^{2}n^{2}+n^{4}=(m^{2}+n^{2})^{2}=c^{2},
 $$
-Then
+so $(a,b,c)$ is a Pythagorean triple with hypotenuse $c$.
+:::
+
+:::
+
+::: {.pf-step}
+Parts (a), (b) and (c) hold.
+
+::: pf-proof
+Steps [](#parta){.pf-ref}, [](#partb){.pf-ref} and [](#partc){.pf-ref} are the three parts:
 $$
-a^2+b^2
-=(m^2-n^2)^2+4m^2n^2
-=(m^2+n^2)^2=c^2.
+\boxed{\text{a primitive triple has one even leg};\quad a=m^{2}-n^{2},\,b=2mn,\,c=m^{2}+n^{2};\quad \text{every sum of two squares is a hypotenuse}.}
 $$
-Thus every sum-of-two-squares value of $c$ occurs as the hypotenuse of an integral Pythagorean triple.
+Part (b) is stated for $a$ odd; the case $a$ even is the same argument with $a$ and $b$ interchanged.
+:::
+
+:::
+
+:::
 :::
