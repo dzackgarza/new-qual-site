@@ -86,6 +86,11 @@ audit:
     colimit --- are the card's own, the second stating what the exercise does not ask and Weibel's
     Corollary 2.6.17, printed p. 58, does not supply. Checked: the Weibel pages 57 and 58.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the two colimit identities, which is what Queue D asks for on this card. The four printed results the argument applies are listed with their statements in the lead, and the proof is then three steps: the adjunction and the identification of the zeroth derived functor, the tensor identity in degree zero, and the Tor identity in every degree with the balancing isomorphism. The long prose passage on why the symmetry of Tor is not passed through the colimit is kept, but moved out of the proof into a remark after it, since it is not a step of the argument. Weibel's four locators were re-read against the retained text version and the PDF folios: Theorem 2.6.15 on printed p. 57, Corollaries 2.6.16 and 2.6.17 and Theorem 2.7.2 on printed p. 58, all as the card had them. No statement repair: the exercise is Hatcher §3.A Exercise 4, printed p. 267, and no retained solution set reaches §3.A.
 ---
 
 ::: {.problem}
@@ -93,39 +98,61 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 :::
 
 ::: {.solution}
-Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §3.A. The argument below is the card's own, and it is an application, not a re-proof, of four printed results of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), read in `tmp/sources/weibel-02-derived-functors.md`:
 
-Both identities are instances of the filtered-colimit theorems of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §2.6--2.7, printed p. 58, read in `tmp/sources/weibel-02-derived-functors.md`, applied to the left adjoint $-\otimes_\ZZ B$ of $\ZZ$-mod. Let $\Lambda$ be a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$ and structure maps $i_\alpha:A_\alpha\to A$. A directed set is a filtered index category, so the theorems of §2.6 apply.
+(i) Theorem 2.6.15, printed p. 57: filtered colimits of $R$-modules are exact, considered as functors from $(\mathbf{mod}\text{-}R)^I$ to $\mathbf{mod}\text{-}R$. That is axiom (AB5) of Exercise 2.6.5, printed p. 57; $\ZZ$-mod also has enough projectives, free abelian groups being projective.
 
-*The results used, with their printed statements.*
-
-(i) Theorem 2.6.15, printed p. 57: filtered colimits of $R$-modules are exact, considered as functors from $(\text{mod-}R)^I$ to $\text{mod-}R$. Weibel calls a cocomplete abelian category in which filtered colimits are exact a category satisfying (AB5) (Exercise 2.6.5, printed p. 57), and the theorem says $\text{mod-}R$ and $R\text{-mod}$ do; $\ZZ$-mod has enough projectives as well, free abelian groups being projective.
-
-(ii) Corollary 2.6.16, printed p. 58: if $\mathcal A=\text{mod-}R$, or $\mathcal A$ is any abelian category with enough projectives satisfying (AB5), and $F:\mathcal A\to\mathcal B$ is a left adjoint, then for every $A:I\to\mathcal A$ with $I$ filtered,
+(ii) Corollary 2.6.16, printed p. 58: if $\mathcal A=\mathbf{mod}\text{-}R$, or $\mathcal A$ is any abelian category with enough projectives satisfying (AB5), and $F:\mathcal A\to\mathcal B$ is a left adjoint, then for every $A:I\to\mathcal A$ with $I$ filtered,
 $$
 L_*F\bigl(\varinjlim A_i\bigr)\cong\varinjlim L_*F(A_i).
 $$
 
 (iii) Theorem 2.7.2, printed p. 58: $L_n(A\otimes_R-)(B)\cong L_n(-\otimes_RB)(A)=\operatorname{Tor}_n^R(A,B)$, the balancing of the two left derived functors of the tensor product.
 
-Weibel prints the same colimit theorem for $\operatorname{Tor}$ in the second variable as Corollary 2.6.17, printed p. 58: $\operatorname{Tor}_*^R(A,\varinjlim B_i)\cong\varinjlim\operatorname{Tor}_*^R(A,B_i)$. It is not the step the exercise needs, and the text below says why.
+(iv) Corollary 2.6.17, printed p. 58, gives the same colimit theorem for $\operatorname{Tor}$ in the second variable. It is not the step the exercise needs, and the remark after the proof says why.
 
-*Tensor products.* Take $F=-\otimes_\ZZ B:\ZZ\text{-}\mathbf{mod}\to\ZZ\text{-}\mathbf{mod}$, a left adjoint with right adjoint $\operatorname{Hom}_\ZZ(B,-)$. Its zeroth left derived functor is $F$ itself, because the tensor product is right exact. Corollary 2.6.16 in degree zero then reads
-$$
-\Bigl(\varinjlim_\alpha A_\alpha\Bigr)\otimes_\ZZ B\cong\varinjlim_\alpha(A_\alpha\otimes_\ZZ B),
-$$
-which is the exercise's first identity.
+Throughout, $\Lambda$ is a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$. A directed set is a filtered index category, so (i) and (ii) apply.
 
-*Tor.* Apply the same corollary to the same functor in degree $n$ and use (iii) at each argument:
+::: pf
+
+::: {.pf-step #left-adjoint}
+The functor $F=-\otimes_\ZZ B:\ZZ\text{-}\mathbf{mod}\to\ZZ\text{-}\mathbf{mod}$ is a left adjoint, and $L_0F=F$.
+
+::: pf-proof
+$-\otimes_\ZZ B$ is left adjoint to $\operatorname{Hom}_\ZZ(B,-)$, by the tensor-hom adjunction. A left adjoint is right exact, and the zeroth left derived functor of a right exact functor is the functor itself: the augmentation $P_0\to A$ of a projective resolution gives $L_0F(A)=\operatorname{coker}(F(P_1)\to F(P_0))$, which is $F(A)$ precisely because $F$ is right exact.
+:::
+
+:::
+
+::: {.pf-step #tensor}
+$\bigl(\varinjlim_\alpha A_\alpha\bigr)\otimes_\ZZ B\cong\varinjlim_\alpha(A_\alpha\otimes_\ZZ B)$.
+
+::: pf-proof
+Corollary 2.6.16 applies to the left adjoint $F$ of step [](#left-adjoint){.pf-ref}, whose hypotheses hold by (i) and the projectivity of free abelian groups; in degree zero it reads $L_0F(\varinjlim A_\alpha)\cong\varinjlim L_0F(A_\alpha)$, which is $F(\varinjlim A_\alpha)\cong\varinjlim F(A_\alpha)$ by $L_0F=F$. Unwinding $F$ gives the identity.
+:::
+
+:::
+
+::: {.pf-step #tor}
+$\operatorname{Tor}_n^{\ZZ}\bigl(\varinjlim_\alpha A_\alpha,B\bigr)\cong\varinjlim_\alpha\operatorname{Tor}_n^{\ZZ}(A_\alpha,B)$ for every $n$, and in particular for $n=1$.
+
+::: pf-proof
+Apply Corollary 2.6.16 to the same left adjoint in degree $n$ and identify both sides by the balancing isomorphism of Theorem 2.7.2:
 $$
 \operatorname{Tor}_n^{\ZZ}\Bigl(\varinjlim_\alpha A_\alpha,B\Bigr)
 =L_n(-\otimes_\ZZ B)\Bigl(\varinjlim_\alpha A_\alpha\Bigr)
 \cong\varinjlim_\alpha L_n(-\otimes_\ZZ B)(A_\alpha)
 \cong\varinjlim_\alpha\operatorname{Tor}_n^{\ZZ}(A_\alpha,B).
 $$
-The outer equalities are the balancing isomorphism of Theorem 2.7.2, the middle one is Corollary 2.6.16. The exercise's second identity is the case $n=1$, which is $\operatorname{Tor}$ for abelian groups; $\operatorname{Tor}_n^{\ZZ}=0$ for $n>1$ because every abelian group has a free resolution of length one (Hatcher, printed p. 263).
+The first and last equalities are (iii), the middle is (ii). The exercise's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$, Hatcher's convention on printed p. 263, so the case $n=1$ is the second identity; $\operatorname{Tor}_n^{\ZZ}=0$ for $n>1$ because every abelian group has a free resolution of length one, so nothing is lost in restricting to $n=1$.
+:::
 
-*The symmetry of $\operatorname{Tor}$ is not passed through the colimit.* Both identities of the exercise are stated with the colimit in the first variable, and the derivation above keeps that variable fixed: Corollary 2.6.16 is a statement about the one functor $F=-\otimes_\ZZ B$, and Theorem 2.7.2 is a natural isomorphism of functors in the module variable, so it applies at the colimit and at every stage simultaneously. Nothing of the form $\operatorname{Tor}(B,A_\alpha)\cong\operatorname{Tor}(A_\alpha,B)$ occurs, and no compatibility of such a stagewise isomorphism with the structure maps $A_\alpha\to A_\beta$ has to be checked. For a colimit in the second variable the same argument runs with the other adjunction $A\otimes_R-\dashv\operatorname{Hom}_R(A,-)$, which is how the book obtains Corollary 2.6.17; the two variables agree for $\ZZ$-mod by Theorem 2.7.2, and that theorem is where the symmetry of $\operatorname{Tor}$ enters, once, as a natural isomorphism.
+:::
 
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 4, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\otimes$ and $\operatorname{Tor}$ commute with direct limits: $(\varinjlim_\alpha A_\alpha)\otimes B=\varinjlim(A_\alpha\otimes B)$ and $\operatorname{Tor}(\varinjlim A_\alpha,B)=\varinjlim\operatorname{Tor}(A_\alpha,B)$", with Hatcher's $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$ as on printed p. 263. Weibel's derivation gives both identities in every degree and asks nothing of the directed system beyond filteredness.
+:::
+
+:::
+
+::: {.remark}
+Both identities are stated with the colimit in the *first* variable, and the derivation keeps that variable fixed: Corollary 2.6.16 concerns the single functor $F=-\otimes_\ZZ B$, and Theorem 2.7.2 is a natural isomorphism in the module variable, so it applies at the colimit and at every stage at once. Nothing of the form $\operatorname{Tor}(B,A_\alpha)\cong\operatorname{Tor}(A_\alpha,B)$ is used, and no compatibility of such a stagewise isomorphism with the structure maps has to be checked. For a colimit in the second variable the argument runs with the other adjunction $A\otimes_R-\dashv\operatorname{Hom}_R(A,-)$, which is how Weibel obtains Corollary 2.6.17; the two variables agree for $\ZZ$-mod by Theorem 2.7.2, and that theorem is where the symmetry of $\operatorname{Tor}$ enters, once, as a natural isomorphism.
 :::
