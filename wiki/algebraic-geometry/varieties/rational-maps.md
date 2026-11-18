@@ -17,7 +17,7 @@ That makes the function field the main invariant of a variety — two varieties 
 [[D-VARREG]]
 
 A rational map need not be definable at every point: on $\PP^2$ the rule $\thevector{x:y:z}\mapsto\thevector{x:y}$ is undefined exactly at $\thevector{0:0:1}$, and it is a morphism on the complement.
-The indeterminacy locus is small in a precise sense: a rational map from a normal variety to a projective variety fails to be defined only in codimension at least two, which is why a rational map from a *curve* to a projective variety is always a morphism ([[T-CRVMINMOD]]).
+The indeterminacy locus is small in a precise sense: a rational map from a normal variety to a projective variety fails to be defined only in codimension at least two, which is why a rational map from a curve of dimension one to a projective variety is always a morphism ([[T-CRVMINMOD]]).
 A rational map is dominant when its image is dense, and dominance is the condition under which it pulls functions back: a dominant map $X\dashrightarrow Y$ induces an injection $k(Y)\hookrightarrow k(X)$.
 
 ## Rational maps to projective space
@@ -29,7 +29,7 @@ So a rational map to projective space is a linear system on $X$ with no requirem
 ## Birational equivalence
 
 Two varieties are \dfn{birational} when there are dominant rational maps between them that are inverse after restriction to open sets, and this is the same as an isomorphism $k(X)\cong k(Y)$ of fields over $k$.
-Hence the birational classes of varieties over $k$ correspond to the finitely generated field extensions of $k$ of finite transcendence degree, and a variety is a *model* of its function field: the geometric object chosen to represent the field.
+Hence the birational classes of varieties over $k$ correspond to the finitely generated field extensions of $k$ of finite transcendence degree, and a variety is called a model of its function field: the geometric object chosen to represent the field.
 The correspondence is not an equivalence of categories — a birational map is only a morphism on an open set — but it is exact enough that a question invariant under birational equivalence can be asked of the field alone.
 
 ## Models of one function field

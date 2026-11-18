@@ -17,7 +17,7 @@ This page fixes the definitions, records the stalk criterion that decides inject
 
 [[D-A7LCT]]
 
-The reason the kernel is a sheaf and the cokernel is not is the direction of the quantifiers: a section is *in* the kernel when its image is zero, which is a property preserved by restriction, while a section is in the image only when it is *locally* in the image, which is a property not preserved by the presheaf cokernel's restriction maps.
+The reason the kernel is a sheaf and the cokernel is not is the direction of the quantifiers: a section is in the kernel when its image is zero, which is a property preserved by restriction, while a section is in the image only when it is locally in the image, which is a property not preserved by the presheaf cokernel's restriction maps.
 Sheafifying the presheaf image and the presheaf cokernel gives the image and cokernel sheaves, and with those the $\OO_X$-modules form an abelian category in which the first isomorphism theorem holds ([[D-DEFABCAT]]).
 
 ## Stalks decide
@@ -32,7 +32,7 @@ That gap is what the long exact sequence of cohomology measures, and it is the r
 
 [[D-MODOX]]
 
-The presheaf $U\mapsto\Hom_{\OO_U}(\mcf_I,\mcg_I)$ of homomorphisms between the restrictions is already a sheaf, and this is where it differs from the tensor presheaf: a homomorphism is a *function* on the sections of each open set, and two such functions that agree after restriction to every member of a cover agree everywhere, because the sections they are applied to glue ([[PR-C9ZEK]]).
+The presheaf $U\mapsto\Hom_{\OO_U}(\mcf_I,\mcg_I)$ of homomorphisms between the restrictions is already a sheaf, and this is where it differs from the tensor presheaf: a homomorphism is a rule on the sections of each open set, and two such functions that agree after restriction to every member of a cover agree everywhere, because the sections they are applied to glue ([[PR-C9ZEK]]).
 So $\sheafhom(\mcf,\mcg)$ exists with no sheafification, its sections over $U$ are the homomorphisms over $U$, and $\sheafhom(\OO_X,\mcg)\cong\mcg$.
 
 ## The espace étalé

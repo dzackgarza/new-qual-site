@@ -17,7 +17,7 @@ This page states both, derives $\deg K_C=2g-2$ from them, and reads off the cons
 
 [[T-MWDVL]]
 
-The two theorems are used as a pair and it is worth seeing why: Riemann–Roch alone relates three quantities, so it computes nothing until one of the two section spaces is known, and Serre duality says the second one *is* the first one of a different divisor.
+The two theorems are used as a pair and it is worth seeing why: Riemann–Roch alone relates three quantities, so it computes nothing until one of the two section spaces is known, and Serre duality says the second one is the first one of a different divisor.
 Equivalently, Riemann–Roch is the statement $\chi(\OO_C(D))=\deg D+1-g$, and Serre duality is the statement $h^1(\OO_C(D))=h^0(\OO_C(K-D))$ which converts the Euler characteristic into a dimension ([[T-COHSD]]).
 
 ## The degree of the canonical divisor
