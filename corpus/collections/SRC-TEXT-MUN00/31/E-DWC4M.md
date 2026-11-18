@@ -36,21 +36,44 @@ Show that $\theset{x \mid f(x) = g(x)}$ is closed in $X$.
 :::
 
 ::: {.solution}
-Let
-$$
-E=\{x\in X:f(x)=g(x)\}.
-$$
-The map
-$$
-F:X\to Y\times Y,\qquad F(x)=(f(x),g(x))
-$$
-is continuous. Since $Y$ is Hausdorff, its diagonal
-$$
-\Delta_Y=\{(y,y):y\in Y\}
-$$
-is closed in $Y\times Y$. Hence
-$$
-E=F^{-1}(\Delta_Y)
-$$
-is closed in $X$.
+
+No retained solution set covers this exercise: the card's own argument follows, using only the definition of the product topology and the Hausdorff condition.
+
+Let $f,g:X\to Y$ be continuous with $Y$ Hausdorff, and put $E=\theset{x\in X\mid f(x)=g(x)}$.
+
+::: pf
+
+::: {.pf-step #map}
+$F:X\to Y\times Y$, $F(x)=\big(f(x),g(x)\big)$, is continuous.
+
+::: pf-proof
+Its coordinate functions $\pi_{1}\circ F=f$ and $\pi_{2}\circ F=g$ are continuous, so $F$ is continuous (Theorem 18.4, printed p. 110).
+:::
+
+:::
+
+::: {.pf-step #diagonal}
+$\Delta_{Y}=\theset{(y,y)\mid y\in Y}$ is closed in $Y\times Y$.
+
+::: pf-proof
+A space is Hausdorff exactly when its diagonal is closed in its square (Exercise 17.13, printed p. 101), and $Y$ is Hausdorff.
+:::
+
+:::
+
+::: {.pf-step #preimage}
+$E=F^{-1}(\Delta_{Y})$.
+
+::: pf-proof
+$x\in F^{-1}(\Delta_{Y})$ means $F(x)\in\Delta_{Y}$, that is $f(x)=g(x)$, that is $x\in E$.
+:::
+
+:::
+
+::: {.pf-qed}
+$E$ is the preimage under the continuous map $F$ of the closed set $\Delta_{Y}$, hence closed in $X$ (Theorem 18.1(3), printed p. 104).
+:::
+
+:::
+
 :::
