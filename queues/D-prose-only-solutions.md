@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1614 of the 12430 problem cards that have a solution
+1602 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1614
+- Problems: 1602
 - Problem cards with a solution: 12430
 
-## Problems (1614)
+## Problems (1602)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -62,7 +62,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-ETKNU — "The imbedding theorem for $m=1$ and linear graphs in $\RR^3$"
 - [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
 - [ ] E-FGRFM — "Metrizability of the one-point compactification"
-- [ ] E-G74LH — "Connected open sets in locally path connected spaces"
 - [ ] E-HAT-2.1-10 — "Quotient of paired triangles is a surface with a Delta-complex structure"
 - [ ] E-HAT-2.2-20 — "Euler characteristic is multiplicative for products of finite CW complexes"
 - [ ] E-HAT-2.2-21 — "Euler characteristic of union of subcomplexes"
@@ -840,7 +839,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-4HGM3 — "Groups of order 8"
 - [ ] P-4PIPW — "Groups of order $56$: abelian classification and Sylow normality"
 - [ ] P-4QQGN — "Measurability of $f'$ and of the differentiability set of a continuous function"
-- [ ] P-52WSU — "Toeplitz operator"
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
 - [ ] P-5YZPH — "A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate"
 - [ ] P-625QO — "An operator bounded on $L^\infty$ and of weak type $(1,1)$ is bounded on $L^2$"
@@ -858,7 +856,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
 - [ ] P-8CA20 — "Existence of $f:\DD\to\DD$ with $f(1/2)=3/4$ and $f'(1/2)=2/3$"
 - [ ] P-8CA21 — "Number of solutions of $e^z=z+\lambda$ in the left half-plane for $\operatorname{Re}\lambda>1$"
-- [ ] P-8CA22 — "$w=z+1/z$ maps the exterior of the unit circle in the upper half-plane onto $\operatorname{Im} w>0$"
 - [ ] P-8CA23 — "Harmonic conjugate of $y^3-3x^2 y$ and the mean-value property"
 - [ ] P-8CA25 — "$\operatorname{Aut}(\CC_\infty)$ consists of the Möbius transformations"
 - [ ] P-8CA27 — "An entire function sending a circle into $\RR$ is constant"
@@ -905,7 +902,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
 - [ ] P-AGHTHREECOMP — "Decomposing $V(x^2-yz,\ xz-x)$ into irreducible components"
 - [ ] P-AGHTWCUBIC — "The twisted cubic is an affine variety of dimension one"
-- [ ] P-ALVYE — "$T\cup_f D^2$ with $f$ attaching inside the torus (question unrecovered)"
 - [ ] P-AOZMW — "Real $x$ for which $\sum_{n=1}^\infty \frac{x^n}{\sqrt{n^2+1}}$ converges"
 - [ ] P-APA17B — "Simultaneous orthogonal diagonalization of commuting real symmetric matrices"
 - [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
@@ -1070,7 +1066,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF06G — "Interpolation by entire functions at prescribed points"
 - [ ] P-CAF07A — "True or False: subsequential convergence, contour integrals, entire functions omitting a disk, biholomorphisms, and harmonicity"
 - [ ] P-CAF07B — "Schwarz lemma applications: modulus bound and lower bound near a zero"
-- [ ] P-CAF08C — "Pointwise limit of analytic functions with uniformly bounded derivatives is analytic"
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
@@ -1103,7 +1098,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAFA17H — "A harmonic function with polynomial growth on $\CC$ is a polynomial"
 - [ ] P-CAFA19B — "Zero-free disk and characterization of extremal functions for bounded analytic functions"
 - [ ] P-CAFA19D — "Roots of $z^7-2z^5+b$ in $\DD$ and in $1\leq\abs z<2$"
-- [ ] P-CAFA19E — "Runge approximation with restricted pole locations"
 - [ ] P-CAFA19F — "Analytic functions on C minus origin with subquadratic growth"
 - [ ] P-CAFA19G — "The Perron function on the punctured disk with trivial boundary data is zero"
 - [ ] P-CAFA20B — "The unique real zero of $a+z-e^{2z}$ in the left half-plane"
@@ -1176,7 +1170,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP21C — "The maximum of $\abs{f'(0)}$ over holomorphic functions omitting $(-\infty,0]$ with $f(0)=1$"
 - [ ] P-CASP21D — "A bound on $\abs{f(0)}$ for a holomorphic function vanishing at four points of $B(0,2)$"
 - [ ] P-CASP21F — "Uniform convergence of harmonic functions implies convergence of partial derivatives"
-- [ ] P-CASP21G — "Locally uniform limit of disc automorphisms is an automorphism"
 - [ ] P-CASP22B — "Schwarz lemma for polynomial preimages: zeros, bounds, and equality cases"
 - [ ] P-CASP22D — "Equivalence of two-component complement and rational approximation with prescribed poles"
 - [ ] P-CASP22E — "Poles of a meromorphic limit appear in the approximating sequence"
@@ -1370,7 +1363,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-FKAJJ — "Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$ for finite $p$-groups"
 - [ ] P-FO6H7 — "Commuting diagonalizable operators are simultaneously diagonalizable"
 - [ ] P-FQJMB — "$e^x(\cos y+i\sin y)$ is the unique entire solution of $E'=E$, $E(0)=1$"
-- [ ] P-GIVPQ — "Semisimple algebras and the Artin–Wedderburn theorem"
 - [ ] P-GLKAB — "Discriminant of a polynomial"
 - [ ] P-GT5L7 — "$\ZZ^{*2}$ has subgroups isomorphic to $\ZZ^{*n}$ for every $n$"
 - [ ] P-HCAO47 — "A base-ring element invertible in an integral extension is already invertible"
@@ -1411,7 +1403,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA02CAB — "Monotone convergence for an increasing sequence with bounded integrals"
 - [ ] P-JHUFA05ANA — "$\norm{f_n}_2^2\le n^{-2}$ forces $f_n\to0$ a.e."
 - [ ] P-JHUFA05ANB — "Translation continuity of $L^1$ functions on the line"
-- [ ] P-JHUFA06ANE — "Closed subspaces of trigonometric polynomials in $C_0([0,\pi])$ are finite-dimensional"
 - [ ] P-JHUFA06ANF — "The oscillatory integral $\int_0^2 f(x)e^{itx}\,dx$ is $o(1/t)$ under endpoint vanishing"
 - [ ] P-JHUFA08ANA — "Iteration of $s\mapsto s^2$ on $[0,1]$: pushforward measures and their weak limit"
 - [ ] P-JHUFA08ANC — "$\ell^\infty$ is not separable"
@@ -1608,8 +1599,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-VHCGV — "Jordan form of the $n\times n$ matrix with $2$'s on the superdiagonal, and a change-of-basis matrix"
 - [ ] P-VJBIB — "Spectral theorem diagonalization with eigenvalues $6$ and $1$, and the minimum of $\langle Ax,x\rangle$ on the unit circle"
 - [ ] P-WB2SR — "A basis of $V$ yields a basis of $V^{\oplus m}$"
-- [ ] P-WBB2M — "Intermediate fields of a $D_8$-extension with $E/F$ and $K/E$ Galois but $K/F$ not Galois"
-- [ ] P-WC3HY — "Group action, orbit, stabilizer, and fixed points"
 - [ ] P-WESRA08-I1 — "Define the Borel sets on the real line"
 - [ ] P-WESRA08-I2 — "Define Lebesgue outer measure on the real line"
 - [ ] P-WESRA08-I3 — "State the monotone convergence theorem"
@@ -1625,7 +1614,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-WKGRZ — "A $p$-group acting on a set of cardinality not divisible by $p$ has a fixed point"
 - [ ] P-WL7TG — "If $b$ and $x$ are units, a $2\times 2$ product over a commutative ring that vanishes off the bottom-right corner is zero"
 - [ ] P-WOCSV — "Classification of groups of order $4$, and which arise as Galois groups over $\QQ$"
-- [ ] P-WTIIM — "Structure theorem for simple rings"
 - [ ] P-WXP5K — "Subgroups of finitely generated free abelian groups and of free groups"
 - [ ] P-X2GQL — "A Noetherian ring has every ideal finitely generated"
 - [ ] P-X7AK4 — "A finite separable splitting field $L/K$ has $[L:K]=\cardinality{\gal(L/K)}$"
