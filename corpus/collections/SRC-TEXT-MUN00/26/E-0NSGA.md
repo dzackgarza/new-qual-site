@@ -62,7 +62,7 @@ Let $G$ be a topological group with identity $e$, and put $A\cdot B=\theset{a\cd
 If $B\subseteq G$ is compact then $g\cdot B$ and $B^{-1}$ are compact, and $(x,y)\mapsto x\cdot y^{-1}$ is continuous; also $G$ is Hausdorff.
 
 ::: pf-proof
-Multiplication $m:G\times G\to G$ and inversion $\iota:G\to G$ are continuous, so $m\circ(\mathrm{id}\times\iota)$ is continuous, which is $(x,y)\mapsto x\cdot y^{-1}$. Left translation $h\mapsto g\cdot h$ is a homeomorphism with inverse $h\mapsto g^{-1}\cdot h$, and inversion is its own inverse homeomorphism, so $g\cdot B$ and $B^{-1}$ are continuous images of the compact space $B$, hence compact (Theorem 26.5, printed p. 167). A topological group is Hausdorff (Supplementary Exercise TG.7(b), printed p. 146).
+Multiplication $m:G\times G\to G$ and inversion $\iota:G\to G$ are continuous, so $m\circ(\mathrm{id}\times\iota)$ is continuous, which is $(x,y)\mapsto x\cdot y^{-1}$. Left translation $h\mapsto g\cdot h$ is a homeomorphism with inverse $h\mapsto g^{-1}\cdot h$, and inversion is its own inverse homeomorphism, so $g\cdot B$ and $B^{-1}$ are continuous images of the compact space $B$, hence compact (Theorem 26.5, printed p. 166). A topological group is Hausdorff (Supplementary Exercise TG.7(b), printed p. 146).
 :::
 
 :::
