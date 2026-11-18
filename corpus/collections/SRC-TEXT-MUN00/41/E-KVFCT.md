@@ -60,6 +60,21 @@ audit:
     shrinking inside it, and a direct argument that a point off the closed box has a
     neighbourhood disjoint from the smaller one, which is the closure step. No repair to
     the statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair of the regularity step. The step had taken a basic box neighbourhood of
+    x to be of the form prod_{i<=N}(a_i,b_i) x R^{>N}, on the ground that a box-open set
+    differs from R in only finitely many coordinates; that is true of the topology's
+    definition only in the sense that no coordinate is privileged, and a basic box-open set
+    may constrain infinitely many coordinates, so the finite-factor U_0 need not exist. The
+    step now shrinks every coordinate: from the given basic set prod U_i (with each U_i an
+    open subset of R containing x_i, possibly proper for infinitely many i) choose an
+    interval (c_i,d_i) around x_i with closure in U_i, take V = R^infinity intersected with
+    prod (c_i,d_i), and prove closure V inside prod [c_i,d_i] inside U by exhibiting, for a
+    point y off prod [c_i,d_i], the box neighbourhood with i-th factor (y_i - 1, c_i) or
+    (d_i, y_i + 1), which misses V. No other step of the card changed.
 ---
 
 ::: {.exercise}
@@ -153,7 +168,7 @@ A point of $\RR^\infty$ is a sequence that is zero from some index $n$ on, and i
 $\RR^\infty$ is regular.
 
 ::: pf-proof
-Let $x\in\RR^\infty$ and let $U$ be a neighbourhood of $x$ in $\RR^\infty$. It contains a basic neighbourhood, so for some $N$ and some open intervals $(a_i,b_i)$ with $a_i<x_i<b_i$ for $i\le N$ it contains $U_0=\RR^\infty\cap\big(\prod_{i\le N}(a_i,b_i)\times\RR^{>N}\big)$: a basic open set of the box topology has all but finitely many factors equal to $\RR$, and the remaining finitely many, together with the first $N$ of them, can each be intersected with a bounded open interval about $x_i$. Choose $c_i,d_i$ with $a_i<c_i<x_i<d_i<b_i$ for $i\le N$ and put $V=\RR^\infty\cap\big(\prod_{i\le N}(c_i,d_i)\times\RR^{>N}\big)$, an open set containing $x$. Then $\closure{V}\subset U_0$: if $y\in\RR^\infty$ has $y_i\notin[c_i,d_i]$ for some $i\le N$, say $y_i<c_i$, the basic neighbourhood $\RR^\infty\cap\big((y_i-1,c_i)\times\prod_{j\le N,\ j\ne i}\RR\times\RR^{>N}\big)$ of $y$ is disjoint from $V$, so $y\notin\closure{V}$. Hence every neighbourhood of every point of $\RR^\infty$ contains a closed neighbourhood, and $\RR^\infty$ is regular.
+Let $x\in\RR^\infty$ and let $U$ be a neighbourhood of $x$ in $\RR^\infty$. Then $U$ contains a basic neighbourhood $\RR^\infty\cap\prod_iU_i$, where each $U_i$ is an open subset of $\RR$ containing $x_i$: a basic open set of the box topology is such a product, and infinitely many of its factors may be proper subsets of $\RR$, so every coordinate is treated below and no factor is assumed to be $\RR$. For each $i$ choose an open interval $(c_i,d_i)$ with $x_i\in(c_i,d_i)$ and $\closure{(c_i,d_i)}\subset U_i$, which is possible because $U_i$ is a neighbourhood of $x_i$ in $\RR$; put $V=\RR^\infty\cap\prod_i(c_i,d_i)$, which is open in $\RR^\infty$ and contains $x$. Then $\closure{V}\subset U$, by the chain $\closure{V}\subset\RR^\infty\cap\prod_i[c_i,d_i]\subset\RR^\infty\cap\prod_iU_i\subset U$: for the first inclusion, if $y\in\RR^\infty$ has $y_i\notin[c_i,d_i]$, say $y_i<c_i$ (the case $y_i>d_i$ is symmetric), then $\RR^\infty\cap\big(G\times\prod_{j\ne i}\RR\big)$ with $G=(y_i-1,c_i)$ is a neighbourhood of $y$ disjoint from $V$, because its $i$-th factor misses $(c_i,d_i)$. Hence every neighbourhood of every point of $\RR^\infty$ contains a closed neighbourhood, and $\RR^\infty$ is regular.
 :::
 
 :::

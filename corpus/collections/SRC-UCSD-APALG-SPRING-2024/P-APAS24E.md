@@ -56,7 +56,7 @@ $V$ is irreducible, so the $G$-stable subspace $\ker T$ is $0$ or $V$; $W$ is ir
 ::: pf-proof
 Since $V$ is a finite-dimensional complex vector space and $T$ is a complex-linear endomorphism, $T$ has an eigenvalue $\lambda\in\CC$ (the characteristic polynomial has a root over $\CC$). The map $T-\lambda I$ is $G$-equivariant, being a $\CC$-linear combination of equivariant maps, and it has nonzero kernel, since an eigenvector lies in it. By step [](#part-a){.pf-ref} applied with $W=V$, an equivariant endomorphism that is not an isomorphism must be $0$; so $T-\lambda I=0$ and $T=\lambda I$. Hence
 $$
-\boxed{\End_{G}(V)=\CC I.}
+\boxed{\Endo_{G}(V)=\CC I.}
 $$
 :::
 

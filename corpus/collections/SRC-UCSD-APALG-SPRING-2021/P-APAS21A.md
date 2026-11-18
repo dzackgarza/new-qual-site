@@ -97,3 +97,53 @@ In particular $\norm{y}_{2}\ge1$, as $\cos\theta\le1$ requires, which is also Ca
 
 :::
 :::
+
+::: {.solution}
+
+The argument below is the one carried by [[P-APAS23A]]'s card before the two were merged; it is a different route, choosing the left eigenvector first and reading the same block form off the hyperplane it defines.
+
+(a) The Schur decomposition is quoted as in step [](#a){.pf-ref}.
+
+(b) Since $\lambda$ is a simple eigenvalue, the left eigenspace for $\lambda$ is one-dimensional: it is $\ker(A^{H}-\overline\lambda I)$, whose dimension is the geometric multiplicity of $\overline\lambda$ as an eigenvalue of $A^{H}$, which equals that of $\lambda$ for $A$, namely $1$. Choose $y\ne0$ with $y^{H}A=\lambda y^{H}$.
+
+::: pf
+
+::: {.pf-step #alt-y-nonzero}
+$y^{H}x\ne0$.
+
+::: pf-proof
+Suppose $y^{H}x=0$. The left eigenspace is spanned by $y$, so $x$ is orthogonal to $\ker(A^{H}-\overline\lambda I)$, that is $x\in\operatorname{im}(A-\lambda I)$: for a matrix $M$, $(\ker M^{H})^{\perp}=\operatorname{im}M$. Hence $x=(A-\lambda I)z$ for some $z$. If $z$ were in $\ker(A-\lambda I)$ then $x=(A-\lambda I)z=0$, impossible for a unit vector, so $z\notin\ker(A-\lambda I)$ while $(A-\lambda I)^{2}z=(A-\lambda I)x=0$: that is a Jordan chain of length $2$ for $\lambda$, so the algebraic multiplicity of $\lambda$ is at least $2$, contradicting simplicity.
+:::
+
+:::
+
+::: {.pf-step #alt-hyperplane}
+After scaling $y$ so that $y^{H}x=1$, the hyperplane $W=\ker y^{H}$ is $A$-invariant and $\CC^{n}=\CC x\oplus W$.
+
+::: pf-proof
+Scaling $y$ is legitimate by step [](#alt-y-nonzero){.pf-ref} and keeps $y^{H}A=\lambda y^{H}$. If $w\in W$ then $y^{H}(Aw)=\lambda y^{H}w=0$, so $Aw\in W$. Since $y\ne0$ the functional $y^{H}$ is nonzero and $\dim W=n-1$; and $x\notin W$ because $y^{H}x=1$. A vector outside a hyperplane together with a basis of it spans, so $\CC^{n}=\CC x+W$, and the sum is direct by dimension count.
+:::
+
+:::
+
+::: {.pf-step #alt-block}
+With $X$ the matrix of a basis of $W$, $S=(x\ X)$ is nonsingular, $S^{-1}$ has first row $y^{H}$, and $S^{-1}AS=\begin{pmatrix}\lambda&0\\0&M\end{pmatrix}$ with $M\in M_{n-1}$.
+
+::: pf-proof
+$S$ is nonsingular by the direct sum of step [](#alt-hyperplane){.pf-ref}. The first row of $S^{-1}$ is the unique row vector $r$ with $rS=e_{1}^{T}$; the vector $y^{H}$ satisfies $y^{H}x=1$ and $y^{H}X=0$, so $y^{H}S=e_{1}^{T}$ and the first row is $y^{H}$. Writing $S^{-1}=\begin{pmatrix}y^{H}\\ Y^{H}\end{pmatrix}$ one has $Y^{H}x=0$ from $S^{-1}S=I$. Then $y^{H}Ax=\lambda y^{H}x=\lambda$, $y^{H}AX=\lambda y^{H}X=0$, and $Y^{H}Ax=\lambda Y^{H}x=0$. Since $W$ is $A$-invariant, $AX=XM$ for the matrix $M$ of $A$ restricted to $W$ in that basis. So each of the four blocks is as displayed.
+:::
+
+:::
+
+::: {.pf-step #alt-angle}
+$\sec\theta=\norm{y}_{2}$.
+
+::: pf-proof
+With $\cos\theta=\abs{y^{H}x}/(\norm{y}_{2}\norm{x}_{2})$ and $y^{H}x=1$, $\norm{x}_{2}=1$, one gets $\cos\theta=1/\norm{y}_{2}$ and hence $\sec\theta=\norm{y}_{2}$.
+:::
+
+:::
+
+:::
+
+:::

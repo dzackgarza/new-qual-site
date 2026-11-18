@@ -56,10 +56,10 @@ Its left ideals are the $D$-subspaces of the left $D$-module $M_{n}(D)\cong D^{n
 :::
 
 ::: {.pf-step #division}
-If $R$ is simple left Artinian and $L\le R$ is a minimal nonzero left ideal, then $D=\End_{R}(L)^{\mathrm{op}}$ is a division ring.
+If $R$ is simple left Artinian and $L\le R$ is a minimal nonzero left ideal, then $D=\Endo_{R}(L)^{\mathrm{op}}$ is a division ring.
 
 ::: pf-proof
-$L$ is simple as a module, so every nonzero $R$-endomorphism of $L$ is injective (its kernel is a submodule different from $L$) and surjective (its image is a nonzero submodule), hence an automorphism; so $\End_{R}(L)$ is a division ring, and its opposite is one as well.
+$L$ is simple as a module, so every nonzero $R$-endomorphism of $L$ is injective (its kernel is a submodule different from $L$) and surjective (its image is a nonzero submodule), hence an automorphism; so $\Endo_{R}(L)$ is a division ring, and its opposite is one as well.
 :::
 
 :::
@@ -86,9 +86,9 @@ Steps [](#sum){.pf-ref} give $R=\sum_{a}La$ with each $La$ simple. A sum of simp
 $R\cong M_{n}(D)$.
 
 ::: pf-proof
-Taking endomorphism rings of the isomorphism ${}_{R}R\cong L^{\oplus n}$ of step [](#finite){.pf-ref} gives $\End_{R}(R)\cong\End_{R}(L^{\oplus n})\cong M_{n}\big(\End_{R}(L)\big)$, the last because a homomorphism $L^{\oplus n}\to L^{\oplus n}$ is an $n\times n$ matrix of homomorphisms $L\to L$. And $\End_{R}(R)\cong R^{\mathrm{op}}$ via $r\mapsto(x\mapsto xr)$, with inverse $\varphi\mapsto\varphi(1)$. So $R^{\mathrm{op}}\cong M_{n}\big(\End_{R}(L)\big)$, and taking opposites, which reverses the order of multiplication in each matrix entry, gives
+Taking endomorphism rings of the isomorphism ${}_{R}R\cong L^{\oplus n}$ of step [](#finite){.pf-ref} gives $\Endo_{R}(R)\cong\Endo_{R}(L^{\oplus n})\cong M_{n}\big(\Endo_{R}(L)\big)$, the last because a homomorphism $L^{\oplus n}\to L^{\oplus n}$ is an $n\times n$ matrix of homomorphisms $L\to L$. And $\Endo_{R}(R)\cong R^{\mathrm{op}}$ via $r\mapsto(x\mapsto xr)$, with inverse $\varphi\mapsto\varphi(1)$. So $R^{\mathrm{op}}\cong M_{n}\big(\Endo_{R}(L)\big)$, and taking opposites, which reverses the order of multiplication in each matrix entry, gives
 $$
-\boxed{R\cong M_{n}(D)},\qquad D=\End_{R}(L)^{\mathrm{op}},
+\boxed{R\cong M_{n}(D)},\qquad D=\Endo_{R}(L)^{\mathrm{op}},
 $$
 a division ring by step [](#division){.pf-ref}.
 :::
