@@ -32,9 +32,9 @@ audit:
   note: >-
     Restructured into Lamport steps; checked that the universal extension property retracts
     a normal space onto any closed copy of Y, and that a compact absolute retract has the
-    extension property through an imbedding in a cube (Theorem 34.2, Tychonoff), a
+    extension property through an imbedding in a cube (Theorem 34.3, Tychonoff), a
     retraction of the cube, and coordinatewise Tietze extension. The argument is the card's
-    own; no retained set is cited. Munkres §35 Exercise 6, printed p. 224. The printed
+    own; no retained set is cited. Munkres §35 Exercise 6, printed p. 223. The printed
     statement needed no repair.
 - event: solution-reviewed
   by: claude
@@ -44,6 +44,19 @@ audit:
     (parts (a) and (b), part (b) hypothesising that Y is compact), not Exercise 2, as the
     earlier note on this card said. The proof is unchanged and does prove exactly parts (a)
     and (b).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair, three findings, all confirmed against the book: the exercise is on
+    printed p. 223 (PDF p. 238, where Exercises 1 through 6 of Section 35 appear, item 6
+    with the compactness hypothesis in part (b)), not p. 224, which begins with Figure 35.2
+    and item 7(b); the cube characterization of complete regularity used for the imbedding
+    is Theorem 34.3, not Theorem 34.2, which is the imbedding theorem for a separating
+    family of functions; and the closing step claimed an equivalence, which the compactness
+    hypothesis of (b) does not support. The closing step now says that parts (a) and (b) are
+    what is proved and that the unrestricted converse is starred Exercise 35.8 of the same
+    page set, proved on E-Z964O.
 ---
 
 ::: {.exercise}
@@ -59,7 +72,7 @@ Imbed $Y$ in $[0, 1]^J$.]
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 6, printed p. 224, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 6, printed p. 223, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
 
 ::: pf
 
@@ -81,7 +94,7 @@ Let $Y_{0}$ be a closed subspace of a normal space $Z$ and $h:Y_{0}\to Y$ a home
 $Y$ embeds in a cube and its image is closed there.
 
 ::: pf-proof
-$Y$ is compact Hausdorff, hence normal (Theorem 32.3), hence completely regular (§33), so there is an imbedding $e:Y\to[0,1]^{J}$ for some set $J$ (Theorem 34.2, the imbedding theorem). The cube is compact by the Tychonoff theorem and Hausdorff, so the compact set $e(Y)$ is closed in it (Theorem 26.3).
+$Y$ is compact Hausdorff, hence normal (Theorem 32.3), hence completely regular (§33), so there is an imbedding $e:Y\to[0,1]^{J}$ for some set $J$ (Theorem 34.3, the cube characterization of complete regularity). The cube is compact by the Tychonoff theorem and Hausdorff, so the compact set $e(Y)$ is closed in it (Theorem 26.3).
 :::
 
 :::
@@ -118,10 +131,10 @@ Step [](#extension){.pf-ref} proves the universal extension property for $Y$: ev
 :::
 
 ::: {.pf-step}
-The equivalence holds.
+Parts (a) and (b) hold, and only those two implications are proved here.
 
 ::: pf-proof
-Steps [](#a){.pf-ref} and [](#b){.pf-ref} are the two implications for a normal space $Y$.
+Step [](#a){.pf-ref} proves (a) for every normal $Y$, and step [](#b){.pf-ref} proves (b) for a compact absolute retract $Y$. These are the two assertions of the exercise. They are not the two halves of an equivalence for an arbitrary normal $Y$: the converse of (a) without the compactness hypothesis is the starred Exercise 35.8, printed p. 224, and is proved on [[E-Z964O]] by the adjunction-space argument, not here.
 :::
 
 :::
