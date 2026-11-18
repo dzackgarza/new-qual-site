@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1401 of the 12429 problem cards that have a solution
+1396 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1401
+- Problems: 1396
 - Problem cards with a solution: 12429
 
-## Problems (1401)
+## Problems (1396)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -771,7 +771,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
 - [ ] E-V98N5 — "First-countable separable or Lindelof topological groups are second countable"
-- [ ] E-VLQ5H — "The uncountable fundamental group of the infinite earring"
 - [ ] E-VPZUZ — "Equicontinuous pointwise limits converge compactly"
 - [ ] E-VXB5V — "Discrete spaces have dimension zero"
 - [ ] E-W7FNF — "The lower limit line and the ordered square are not metrizable"
@@ -840,7 +839,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS11H — "Gröbner basis, elimination, and solutions for a planar ideal"
 - [ ] P-APAS13B — "Unique Hermitian splitting $A=S+iT$ and eigenvalue real/imaginary bounds"
 - [ ] P-APAS13D — "Unique positive semidefinite square root; orthogonal projection via $\widehat{X}=X\operatorabs{X}^{-1}$"
-- [ ] P-APAS13E — "Induced representations and Frobenius reciprocity"
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS13L — "Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliary variable"
 - [ ] P-APAS15B — "Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$"
@@ -1021,7 +1019,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP22B — "Schwarz lemma for polynomial preimages: zeros, bounds, and equality cases"
 - [ ] P-CASP22D — "Equivalence of two-component complement and rational approximation with prescribed poles"
 - [ ] P-CASP22F — "A bounded harmonic function on $\DD$ with $\limsup\leq 0$ at all but one boundary point"
-- [ ] P-CASP23A — "Power series with radius of convergence 1: divergence, absolute convergence, singularities, and nonnegative coefficients"
 - [ ] P-CASP23B — "Product of distances from a point on T to given points is at least one"
 - [ ] P-CASP23C — "A holomorphic function with |f|>m on the boundary and |f(0)|<m has a zero in D"
 - [ ] P-CASP23F — "Green's function on $\DD\setminus\theset{a}$ and failure of the Dirichlet problem"
@@ -1185,11 +1182,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
 - [ ] P-EQGG7 — "$z\tan z-a$ has only real roots for $a>0$"
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
-- [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
 - [ ] P-F04C7 — "$\varepsilon$-$\delta$ continuity, and the sum of functions continuous at $3$"
 - [ ] P-F04N4 — "No $n$ makes both $(21n-3)/4$ and $(15n+2)/4$ integers"
 - [ ] P-F06EV — "Eigenvalues and eigenvectors of $\begin{pmatrix}1&-2\\3&-4\end{pmatrix}$"
-- [ ] P-F07EX — "Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$"
 - [ ] P-F12IN — "$A\subseteq f^{-1}(f(A))$, with equality when $f$ is injective"
 - [ ] P-F7Y7R — "Negation of two quantified statements"
 - [ ] P-FBY23 — "Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$"
