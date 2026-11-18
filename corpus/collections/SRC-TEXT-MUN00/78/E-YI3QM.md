@@ -49,7 +49,7 @@ Let $D^{2}=\{(x,y)\in\RR^{2}:x^{2}+y^{2}\le1\}$ and $H^{2}=\{(u,v)\in\RR^{2}:v\g
 $D^{2}$ is Hausdorff and has a countable basis.
 
 ::: pf-proof
-$\RR^{2}$ is metrizable, hence Hausdorff and second countable (Examples 1 and 3 of §30, printed p. 191), and a subspace of such a space has the same two properties (Theorem 30.2, printed p. 194, and §31, printed p. 196).
+$\RR^{2}$ has the countable basis of the boxes $(a,b)\times(c,d)$ with rational corners (Example 1 of §30, printed p. 190), so it is second countable, and it is Hausdorff. A subspace of a second-countable space is second countable (Theorem 30.2, printed p. 191) and a subspace of a Hausdorff space is Hausdorff (Theorem 17.11), so $D^{2}$ has both properties. Neither property is obtained here from metrizability: what is used is the countable basis of $\RR^{2}$ and the separation of $\RR^{2}$.
 :::
 
 :::
@@ -72,7 +72,7 @@ Every point $p$ with $\norm{p}=1$ has a neighbourhood homeomorphic to an open se
 It suffices to treat $p=(1,0)$.
 
 ::: pf-proof
-A rotation of $\RR^{2}$ about the origin is a homeomorphism of $\RR^{2}$ carrying $D^{2}$ and $S^{1}$ onto themselves and $p$ to $(1,0)$; composing a chart at $(1,0)$ with it gives a chart at $p$, the models $\RR^{2}$ and $H^{2}$ being carried to themselves or to each other by the two rotations that exchange coordinates.
+For $p\in S^{1}$ let $\rho$ be the rotation of $\RR^{2}$ about the origin carrying $p$ to $(1,0)$; it is a homeomorphism of $\RR^{2}$ onto itself carrying $D^{2}$ and $S^{1}$ onto themselves. If $h$ is a chart at $(1,0)$ on a neighbourhood $U$ of $(1,0)$, then $h\circ\rho$ is a homeomorphism of the neighbourhood $\rho^{-1}(U)$ of $p$ onto the same open set of $H^{2}$, and it carries $p$ to $h(1,0)$. So a chart at $(1,0)$ with values in $H^{2}$ gives a chart at $p$ with values in $H^{2}$.
 :::
 
 :::
@@ -85,7 +85,7 @@ $$
 of $(1,0)$ onto $(-\delta,\delta)\times[0,1)$, which is open in $H^{2}$, and $\varphi(1,0)=(0,0)$.
 
 ::: pf-proof
-On the region $x>0$ a point has unique polar coordinates $(r,\theta)\in(0,\infty)\times(-\pi/2,\pi/2)$, with $x=r\cos\theta$ and $y=r\sin\theta$, and the two formulas exhibit mutually inverse continuous maps between that region and $(0,\infty)\times(-\pi/2,\pi/2)$: continuity of $q\mapsto(\norm{q},\theta(q))$ follows from the continuity of the norm, of $\arctan(y/x)$ and of the condition $x>0$. So $q\mapsto(\theta(q),\norm{q})$ is a homeomorphism there, and $\varphi$ is its composition with $(\theta,r)\mapsto(\theta,1-r)$, a homeomorphism of $(0,1]\times(-\delta,\delta)$ onto $(-\delta,\delta)\times[0,1)$. The set $W$ is the preimage of $(0,1]\times(-\delta,\delta)$ under that homeomorphism, intersected with $D^{2}$, so $W$ is open in $D^{2}$, and its image is the open set $(-\delta,\delta)\times[0,1)$ of $H^{2}$.
+On the region $x>0$ a point has unique polar coordinates $(r,\theta)\in(0,\infty)\times(-\pi/2,\pi/2)$, with $x=r\cos\theta$ and $y=r\sin\theta$, and the two formulas exhibit mutually inverse continuous maps between that region and $(0,\infty)\times(-\pi/2,\pi/2)$: continuity of $q\mapsto(\norm{q},\theta(q))$ follows from the continuity of the norm, of $\arctan(y/x)$ and of the condition $x>0$. So $q\mapsto(\theta(q),\norm{q})$ is a homeomorphism there, and $\varphi$ is its composition with $(\theta,r)\mapsto(\theta,1-r)$, a homeomorphism of $(-\delta,\delta)\times(0,1]$ onto $(-\delta,\delta)\times[0,1)$. The set $W$ is the preimage of $(-\delta,\delta)\times(0,1]$ under that homeomorphism, intersected with $D^{2}$, so $W$ is open in $D^{2}$, and its image is the open set $(-\delta,\delta)\times[0,1)$ of $H^{2}$.
 :::
 
 :::
