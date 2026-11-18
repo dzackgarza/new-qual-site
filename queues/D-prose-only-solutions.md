@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1569 of the 12430 problem cards that have a solution
+1562 of the 12430 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1569
+- Problems: 1562
 - Problem cards with a solution: 12430
 
-## Problems (1569)
+## Problems (1562)
 
 - [ ] E-01BSA — "Isometries of compact metric spaces are surjective"
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
@@ -793,7 +793,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-TZ1IN — "Complete normality characterized by separated sets"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
-- [ ] E-U919Z — "Convex subsets that are not intervals or rays"
 - [ ] E-U9VN1 — "Every $m$-manifold imbeds as a closed subspace of $\RR^{2m+1}$"
 - [ ] E-UAMGV — "The coarsest topology making a family of maps continuous"
 - [ ] E-UB4PP — "Extending $\cos(1/x)$ by enlarging the compactification"
@@ -824,7 +823,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-ZXEH5 — "Generalized tube lemma for compact rectangles"
 - [ ] P-22T5H — "An analytic function real on a closed curve is constant"
 - [ ] P-24L43 — "Orbits of $\GL_3(\QQ[x])\times\GL_3(\QQ[x])$ on matrices of prescribed determinant"
-- [ ] P-2WRUJ — "The identity $\sum_{m=k}^n\binom{m}{k}=\binom{n+1}{k+1}$"
 - [ ] P-3DZXT — "The binomial theorem, $(x+y)^5\equiv x^5+y^5\pmod{5}$, and $(x+y)^{5^n}\equiv x^{5^n}+y^{5^n}\pmod{5}$"
 - [ ] P-4CJY7 — "Characteristic and minimal polynomials of the Frobenius automorphism"
 - [ ] P-4GMLL — "Jordan form of $\begin{pmatrix}-3&3&-2\\-7&6&-3\\1&-1&2\end{pmatrix}$ and a conjugating matrix"
@@ -833,7 +831,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-4QQGN — "Measurability of $f'$ and of the differentiability set of a continuous function"
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
 - [ ] P-5YZPH — "A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate"
-- [ ] P-625QO — "An operator bounded on $L^\infty$ and of weak type $(1,1)$ is bounded on $L^2$"
 - [ ] P-6P6KI — "Equivalence of irreducible representations versus equality of determinants"
 - [ ] P-8CA01 — "Images of $y=\sqrt{3}x$ and $x+y=1$ under $w=z^2$"
 - [ ] P-8CA03 — "Uniform limit of a series of analytic functions on a star-shaped domain is analytic"
@@ -900,8 +897,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS11F — "Conjugacy classes and character table of $A_4$ via $A_4/D\cong\ZZ_3$"
 - [ ] P-APAS11G — "Co-maximal ideals, Nullstellensatz intersection, and radical containment"
 - [ ] P-APAS11H — "Gröbner basis, elimination, and solutions for a planar ideal"
-- [ ] P-APAS11I — "Finite variety implies finite-dimensional quotient, and radical membership"
-- [ ] P-APAS13A — "Schur decomposition; Hermitian quadratic forms determine a matrix"
 - [ ] P-APAS13B — "Unique Hermitian splitting $A=S+iT$ and eigenvalue real/imaginary bounds"
 - [ ] P-APAS13C — "Matrix $p$- and Frobenius norms; diagonal $p$-norm; two explicit $\norm{B}_2$ computations"
 - [ ] P-APAS13D — "Unique positive semidefinite square root; orthogonal projection via $\widehat{X}=X\operatorabs{X}^{-1}$"
@@ -1104,12 +1099,10 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP05B — "Jensen-type inequality for bounded analytic functions with prescribed zeros"
 - [ ] P-CASP05C — "Schwarz lemma variants: identity for simply connected and bounded domains"
 - [ ] P-CASP05F — "A holomorphic square root of $z^2-1$ on $\CC\setminus[-1,1]$"
-- [ ] P-CASP06A — "Analytic hull properties: distance to boundary and containment in convex hull"
 - [ ] P-CASP06B — "Subharmonic function growth estimate and Liouville-type theorem"
 - [ ] P-CASP06F — "Jensen's inequality for zeros of an analytic function on a disk"
 - [ ] P-CASP07A — "True or False: metric space convergence, Möbius transformations, Liouville, removable singularities, and polynomial approximation"
 - [ ] P-CASP07B — "Zero-free disk for bounded analytic functions and characterization of extremal functions"
-- [ ] P-CASP07E — "Convergence and zeros of $\prod_n\qty{1-\alpha_n z^n}$"
 - [ ] P-CASP08B — "True or False: Cauchy estimates, entire extensions, zero products, essential singularities, and bounded below harmonic functions"
 - [ ] P-CASP09B — "Zeros of $z^7+2z^3+4$ in the first quadrant"
 - [ ] P-CASP09C — "Partial fraction identity for four distinct complex numbers via residues"
