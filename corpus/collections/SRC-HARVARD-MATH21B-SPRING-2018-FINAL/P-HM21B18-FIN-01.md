@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-01
 kind: problem
 title: True-or-false statements on matrices, linear operators, and Fourier series
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Eigenvalues and Eigenvectors, Fourier Series]}
 relations: []
 review: draft
 audit:

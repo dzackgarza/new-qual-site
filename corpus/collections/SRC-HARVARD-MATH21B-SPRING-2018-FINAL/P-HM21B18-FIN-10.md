@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-10
 kind: problem
 title: Six elementary ordinary differential equations
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Ordinary Differential Equations]}
 relations: []
 review: draft
 audit:

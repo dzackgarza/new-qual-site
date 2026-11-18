@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-09
 kind: problem
 title: Determinants from permutation, block, low-rank, and circulant structure
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Determinants]}
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-11
 kind: problem
 title: Equilibria and stability for a nonlinear planar system
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Ordinary Differential Equations, Fixed Points]}
 relations: []
 review: draft
 audit:

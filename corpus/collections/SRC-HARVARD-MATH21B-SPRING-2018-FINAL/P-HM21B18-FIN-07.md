@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-07
 kind: problem
 title: Eigenstructure and dynamics of the Arnold cat map
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Eigenvalues and Eigenvectors, Characteristic Polynomial]}
 relations: []
 review: draft
 audit:

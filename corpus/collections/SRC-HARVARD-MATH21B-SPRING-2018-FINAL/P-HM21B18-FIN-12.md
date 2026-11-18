@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-12
 kind: problem
 title: Fourier series and Parseval sum for the Pacific-rim step function
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Fourier Series]}
 relations: []
 review: draft
 audit:

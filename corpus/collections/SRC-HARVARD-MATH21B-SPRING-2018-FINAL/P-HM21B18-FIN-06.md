@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-06
 kind: problem
 title: Barycentric-refinement eigenvectors and a closed discrete dynamical system
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Eigenvalues and Eigenvectors, Linear Systems]}
 relations: []
 review: draft
 audit:

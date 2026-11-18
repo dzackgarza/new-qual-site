@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-HM21B18-FIN-13
 kind: problem
 title: Heat and modified wave equations by Fourier modes
-classification: {areas: [applied-algebra], topics: []}
+classification: {areas: [applied-algebra], topics: [Heat Equation, Wave Equation, Fourier Series]}
 relations: []
 review: draft
 audit:
