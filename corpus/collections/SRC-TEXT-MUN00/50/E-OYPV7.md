@@ -46,6 +46,19 @@ audit:
     finite union of countable bases is countable, which is what the card proves; (ii) implies (iii) is the
     Urysohn metrization theorem, (iii) implies (iv) the normality of a metric space, and (iv) implies (v) the
     $T_1$ axiom, all of which the book has. Nothing needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the four implications into numbered steps, each naming the book result it uses:
+    compactness for the finite subcover in (i) implies (ii); local compactness of a locally
+    euclidean space together with Exercise 3 of Section 32 (every locally compact Hausdorff space is
+    regular) for the regularity needed before Urysohn applies; Theorem 34.1 for metrizability;
+    Theorem 32.2 for normality of a metric space; and, for (iv) implies (v), the definitions of
+    Section 32, where one-point sets closed is part of normality and a normal space is regular and
+    hence Hausdorff. Checked in the retained text: Munkres's sentence that "a regular space is
+    Hausdorff, and that a normal space is regular", with closedness of one-point sets part of both
+    definitions. Nothing needed correction.
 ---
 
 ::: {.exercise}
@@ -66,18 +79,58 @@ Show that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Righta
 :::
 
 ::: {.solution}
-We prove the implications successively.
 
-$(i)\Rightarrow(ii)$. A compact Hausdorff locally $m$-euclidean space has a finite atlas. Each coordinate neighborhood has a countable basis, and the union of finitely many such bases is a countable basis for $X$. Thus $X$ is Hausdorff, second-countable, and locally $m$-euclidean, hence an $m$-manifold.
+The chain is the card's own argument, each link attributed to the book result it uses; no complete published solution was located, as the card's earlier audit events record. The statement was checked against Munkres, *Topology* (2000), supplementary Exercise 2 of §50, printed p. 317.
 
-$(ii)\Rightarrow(iii)$. An $m$-manifold is Hausdorff and second-countable, hence regular (indeed locally compact Hausdorff spaces are regular). By the Urysohn metrization theorem, a regular second-countable space is metrizable.
+A space is locally $m$-euclidean when each point has a neighbourhood homeomorphic to an open subset of $\RR^{m}$, and an $m$-manifold when it is also Hausdorff and second countable.
 
-$(iii)\Rightarrow(iv)$. Every metrizable space is normal.
+::: pf
 
-$(iv)\Rightarrow(v)$. A normal space is $T_1$ by definition, so two distinct points are disjoint closed sets, and normality separates them by disjoint open sets.
+::: {.pf-step #i-ii}
+(i) implies (ii).
 
-Hence
-$$
-(i)\Longrightarrow(ii)\Longrightarrow(iii)\Longrightarrow(iv)\Longrightarrow(v).
-$$
+::: pf-proof
+Let $X$ be compact Hausdorff and locally $m$-euclidean. Each point has a coordinate neighbourhood, second countable because $\RR^{m}$ has a countable basis and a subspace of a second-countable space is second countable (Theorem 30.2). These neighbourhoods form an open cover, and compactness extracts a finite subcover $V_{1},\dots,V_{k}$. The union of countable bases of the $V_{j}$, together with $X$, is then a countable basis for $X$: an open set of $X$ is the union of its intersections with the $V_{j}$, each open in $V_{j}$. So $X$ is Hausdorff, second countable and locally $m$-euclidean, an $m$-manifold.
+:::
+
+:::
+
+::: {.pf-step #ii-iii}
+(ii) implies (iii).
+
+::: pf-proof
+An $m$-manifold is locally $m$-euclidean, so each point has a neighbourhood homeomorphic to an open subset of $\RR^{m}$; such a subset contains a ball, which is locally compact, so $X$ is locally compact. Being second countable and Hausdorff, $X$ is regular by Exercise 3 of §32 ("every locally compact Hausdorff space is regular"). A regular space with a countable basis is metrizable by the Urysohn metrization theorem (Theorem 34.1).
+:::
+
+:::
+
+::: {.pf-step #iii-iv}
+(iii) implies (iv).
+
+::: pf-proof
+Theorem 32.2 states that every metrizable space is normal.
+:::
+
+:::
+
+::: {.pf-step #iv-v}
+(iv) implies (v).
+
+::: pf-proof
+Munkres defines normality to include the closedness of one-point sets and states (printed p. 196) that a normal space is regular and a regular space is Hausdorff; being Hausdorff is condition (v).
+:::
+
+:::
+
+::: {.pf-step}
+(i) implies (ii) implies (iii) implies (iv) implies (v).
+
+::: pf-proof
+Steps [](#i-ii){.pf-ref}, [](#ii-iii){.pf-ref}, [](#iii-iv){.pf-ref}, [](#iv-v){.pf-ref} are the four implications in order.
+:::
+
+:::
+
+:::
+
 :::
