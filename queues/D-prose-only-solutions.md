@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1424 of the 12429 problem cards that have a solution
+1415 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1424
+- Problems: 1415
 - Problem cards with a solution: 12429
 
-## Problems (1424)
+## Problems (1415)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -771,7 +771,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
-- [ ] E-URH71 — "Countable unions of nowhere dense closed sets in compact Hausdorff spaces"
 - [ ] E-V7QV9 — "Comparing the nine topologies on a three-point set"
 - [ ] E-V98N5 — "First-countable separable or Lindelof topological groups are second countable"
 - [ ] E-VBWDH — "Uniform boundedness principle"
@@ -951,7 +950,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-BKS04-8B — "Limit of $n((1+x/n)^n-e^x)$"
 - [ ] P-BKS04-9A — "$(f(x)-f(y)).(x-y)\le L\norm{x-y}^2$ for all $x,y$ iff $Df(x)v.v\le L\norm{v}^2$ for all $x,v$"
 - [ ] P-BKS04-9B — "Every automorphism of $S_4$ is inner, so $\cardinality{\operatorname{Aut}(S_4)}=24$"
-- [ ] P-BW6LF — "A space with $H_*(X)\cong(\ZZ,0,0,0,0,\ZZ_4,0,\ldots)$"
 - [ ] P-C2GOF — "Continuity of a composition $g\circ f$ at a point"
 - [ ] P-CAF05B — "Local representation of an analytic function near a zero"
 - [ ] P-CAF05F — "Statement and proof of Harnack's inequality for harmonic functions"
@@ -960,7 +958,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
-- [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
 - [ ] P-CAF13C — "A holomorphic $f$ with $\abs f\leq 1$ on $\partial\DD$ and no fixed point there has exactly one fixed point in $\DD$"
 - [ ] P-CAF13F — "A conformal map from the slit disk does not extend to a boundary homeomorphism"
@@ -999,7 +996,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP05F — "A holomorphic square root of $z^2-1$ on $\CC\setminus[-1,1]$"
 - [ ] P-CASP06B — "Subharmonic function growth estimate and Liouville-type theorem"
 - [ ] P-CASP06F — "Jensen's inequality for zeros of an analytic function on a disk"
-- [ ] P-CASP07A — "True or False: metric space convergence, Möbius transformations, Liouville, removable singularities, and polynomial approximation"
 - [ ] P-CASP07B — "Zero-free disk for bounded analytic functions and characterization of extremal functions"
 - [ ] P-CASP08B — "True or False: Cauchy estimates, entire extensions, zero products, essential singularities, and bounded below harmonic functions"
 - [ ] P-CASP09B — "Zeros of $z^7+2z^3+4$ in the first quadrant"
@@ -1222,7 +1218,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-HCAX25 — "A mild growth bound makes a puncture removable"
 - [ ] P-HCAX27 — "Riemann hypothesis"
 - [ ] P-HCAX28 — "Analytic continuation and its uniqueness"
-- [ ] P-HCAX29 — "Local power-series expansions of holomorphic functions"
 - [ ] P-HCAX3 — "Mapping class group of the torus"
 - [ ] P-HCAX5 — "Power series and radius of convergence of the tangent function"
 - [ ] P-HCAX7 — "Complex tori and their automorphisms"
@@ -1243,15 +1238,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA01RAB — "Convolution of functions vanishing at infinity"
 - [ ] P-JHUFA02CAB — "Monotone convergence for an increasing sequence with bounded integrals"
 - [ ] P-JHUFA05ANA — "$\norm{f_n}_2^2\le n^{-2}$ forces $f_n\to0$ a.e."
-- [ ] P-JHUFA05ANB — "Translation continuity of $L^1$ functions on the line"
-- [ ] P-JHUFA06ANF — "The oscillatory integral $\int_0^2 f(x)e^{itx}\,dx$ is $o(1/t)$ under endpoint vanishing"
 - [ ] P-JHUFA08ANA — "Iteration of $s\mapsto s^2$ on $[0,1]$: pushforward measures and their weak limit"
 - [ ] P-JHUFA08ANC — "$\ell^\infty$ is not separable"
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
 - [ ] P-JHUMAY10ANI — "Differentiation under the integral sign with a dominated partial derivative"
-- [ ] P-JHUMAY12RA7 — "Integral transform is absolutely continuous and vanishes at infinity"
 - [ ] P-JHUSP01RAE — "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
-- [ ] P-JHUSP05ANB — "The integral operator $g(x)=\int_x^1 f(t)/t\,dt$ on $L^1([0,1])$"
 - [ ] P-JHUSP07ANH — "A function and its Fourier transform cannot both have compact support"
 - [ ] P-JHUSP08ANC — "Absolute convergence of the Fourier series of a C1 periodic function"
 - [ ] P-JHUU51RA1 — "Quantitative Riemann-Lebesgue decay under vanishing endpoint conditions"
