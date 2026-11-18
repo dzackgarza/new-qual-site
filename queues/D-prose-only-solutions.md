@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1456 of the 12429 problem cards that have a solution
+1448 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1456
+- Problems: 1448
 - Problem cards with a solution: 12429
 
-## Problems (1456)
+## Problems (1448)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -622,9 +622,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PQHZN — "The long line"
 - [ ] E-PROOB — "Manifolds have dimension at most m"
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
-- [ ] E-PWXIV — "Properties of eleven standard spaces"
 - [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
-- [ ] E-QMZO5 — "Dictionary order topology on the plane as a product topology"
 - [ ] E-QNT4A — "Perfect maps and paracompactness"
 - [ ] E-QOXG5 — "Countable compactness equals limit point compactness for T1 spaces"
 - [ ] E-QR3SP — "The countable complement topology and an infinite complement collection"
@@ -888,7 +886,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP07J — "Invariants of Z/3 acting on a two-dimensional vector space and Hilbert series"
 - [ ] P-APASP08D — "Garnir polynomial expansion for a tableau"
 - [ ] P-APASP08F — "Scalar products of characters via the SF package and their interpretation"
-- [ ] P-APASP08G — "Symmetric function identity involving hooks"
 - [ ] P-APASP08J — "Pólya enumeration on the cube and Frobenius image"
 - [ ] P-BK185F09-7-01 — "Cauchy integral formula and a Bessel-type series identity"
 - [ ] P-BK185F09-7-02 — "Liouville consequences from one-sided real-part bounds"
@@ -977,7 +974,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
-- [ ] P-CAF11A — "True or False: infinite products, bounded functions on punctured plane, essential singularities, growth rates, and Schwarz lemma"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
 - [ ] P-CAF13A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
@@ -1015,7 +1011,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAS24E — "Polynomials with $p_n(0)=1$, $p_n'(0)=0$, pointwise tending to $0$ off $0$"
 - [ ] P-CAS24G — "Polynomial of an isolated singularity preserves singularity type"
 - [ ] P-CASNS — "Degree of $\QQ(7^{1/5},5^{1/4})$ over $\QQ$"
-- [ ] P-CASP04A — "True or False: Möbius transformations, Cauchy sequences, contour integrals, limits of functions missing values, and lacunary series"
 - [ ] P-CASP04F — "Interpolation by analytic functions with prescribed values and derivatives"
 - [ ] P-CASP05B — "Jensen-type inequality for bounded analytic functions with prescribed zeros"
 - [ ] P-CASP05C — "Schwarz lemma variants: identity for simply connected and bounded domains"
@@ -1220,7 +1215,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CTQ6G — "Isolated points iff the complement is not dense; countable complete metric spaces have dense isolated points"
 - [ ] P-D4X7R — "Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-DE22H — "Elementary divisors and invariant factors of a given $\QQ[x]$-module"
-- [ ] P-DQNN6 — "Equidistribution on $[0,1]$ iff empirical measures converge weakly against $C[0,1]$"
 - [ ] P-EMCA8 — "Weierstrass's theorem on locally uniform limits of holomorphic functions"
 - [ ] P-EMCA9 — "Nonconstant entire functions have dense image"
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
@@ -1380,10 +1374,8 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-RASP22G — "Distributional derivatives of $f(\abs{x})$"
 - [ ] P-RASP23C — "Multiplicative convolution on R_+"
 - [ ] P-RASP23F — "Interpolation of weak-type bounds"
-- [ ] P-RASP23G — "Riesz fractional integration formula via Fourier transform"
 - [ ] P-RASP24F — "Fourier uncertainty principle for $L^2$ functions supported on a set of finite measure"
 - [ ] P-SAIVF — "A function in $L^2([0,1])$ orthogonal to every polynomial vanishes a.e."
-- [ ] P-SD42B — "Bounds on alternating partial sums of a decreasing positive sequence"
 - [ ] P-SIGK5 — "Jordan forms of a $5\times 5$ matrix with characteristic polynomial $(x-3)^5$ and minimal polynomial $(x-3)^2$"
 - [ ] P-SK4KT — "When does a matrix with eigenvalues $\pm 1$ satisfy $A^2=I$?"
 - [ ] P-SMJE7 — "The limit $\lim_{n\to\infty}\int_1^n \frac{n e^{-x}}{1+nx^2}\sin(x/n)\,dx$"
