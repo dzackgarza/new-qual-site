@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1473 of the 12429 problem cards that have a solution
+1469 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1473
+- Problems: 1469
 - Problem cards with a solution: 12429
 
-## Problems (1473)
+## Problems (1469)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -811,7 +811,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-4QQGN — "Measurability of $f'$ and of the differentiability set of a continuous function"
 - [ ] P-5RAUN — "A finite simple group has no 2-dimensional irreducible complex representation"
 - [ ] P-5YZPH — "A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate"
-- [ ] P-8CA01 — "Images of $y=\sqrt{3}x$ and $x+y=1$ under $w=z^2$"
 - [ ] P-8CA07 — "A power series with strictly decreasing coefficients bounded below has no zeros in the disk"
 - [ ] P-8CA11 — "A smooth bijection but no conformal map from the punctured disk onto an annulus"
 - [ ] P-8CA13 — "Entire functions with $\abs{f(z)}\le\abs{\sin z}$"
@@ -898,7 +897,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APASP08F — "Scalar products of characters via the SF package and their interpretation"
 - [ ] P-APASP08G — "Symmetric function identity involving hooks"
 - [ ] P-APASP08J — "Pólya enumeration on the cube and Frobenius image"
-- [ ] P-AYDDA — "Carathéodory extension of a measure from an algebra"
 - [ ] P-BK185F09-7-01 — "Cauchy integral formula and a Bessel-type series identity"
 - [ ] P-BK185F09-7-02 — "Liouville consequences from one-sided real-part bounds"
 - [ ] P-BK185F09-7-03 — "Four rigidity problems for entire functions"
@@ -1027,7 +1025,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAS24G — "Polynomial of an isolated singularity preserves singularity type"
 - [ ] P-CASNS — "Degree of $\QQ(7^{1/5},5^{1/4})$ over $\QQ$"
 - [ ] P-CASP04A — "True or False: Möbius transformations, Cauchy sequences, contour integrals, limits of functions missing values, and lacunary series"
-- [ ] P-CASP04B — "Schwarz-Pick inequality for self-maps of the unit disk"
 - [ ] P-CASP04F — "Interpolation by analytic functions with prescribed values and derivatives"
 - [ ] P-CASP05B — "Jensen-type inequality for bounded analytic functions with prescribed zeros"
 - [ ] P-CASP05C — "Schwarz lemma variants: identity for simply connected and bounded domains"
@@ -1363,7 +1360,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-NIC7C — "Every functional on $X$ factors through an injective closed-range operator $T:X\to Y$"
 - [ ] P-NN3CO — "Galois group of $\QQ(\sqrt{2+\sqrt{2}})/\QQ$"
 - [ ] P-NV44D — "$\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}=\frac{\pi}{2\sqrt{a(a+1)}}$ for $a>0$"
-- [ ] P-O2J6S — "Generators of covering subgroups of $S^1\vee S^1$ (UCSD Math 290, sheet 4)"
 - [ ] P-OWMPB — "A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for every nonzero $k$ of lower degree"
 - [ ] P-P6D6X — "$f_n\to f$ almost everywhere in $L^1$ with $\int\abs{f_n}\to\int\abs{f}$ implies $\int f_n\to\int f$"
 - [ ] P-PGDPX — "Integral equals integral of distribution function"
