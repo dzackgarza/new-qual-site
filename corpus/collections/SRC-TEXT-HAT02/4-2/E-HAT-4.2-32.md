@@ -36,19 +36,70 @@ Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n
 :::
 
 ::: {.solution}
-Suppose first that $n\ge2$. The fiber cannot be $S^0$: a two-sheeted cover of the simply connected sphere $S^n$ is disconnected, while $S^m$ is connected. Thus $k\ge1$. A local trivialization is a product of a $k$-manifold and an $n$-manifold, so $m=n+k$.
 
-The bundle's homotopy exact sequence in degree $n$ contains
-$$
-\pi_n(S^m)\longrightarrow\pi_n(S^n)\longrightarrow\pi_{n-1}(S^k).
-$$
-Since $m>n$, the first group is zero and the second is $\ZZ$. Hence the last group is nonzero, which requires $n-1\ge k$.
+The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
 
-In degree $k+1$ the sequence contains
-$$
-\pi_{k+1}(S^n)\longrightarrow\pi_k(S^k)\longrightarrow\pi_k(S^m).
-$$
-Since $m>k$, the last group is zero and the middle group is $\ZZ$. Thus the first group is nonzero, which requires $k+1\ge n$. The two inequalities give $k=n-1$, and therefore $m=n+k=2n-1$.
+::: pf
 
-For $n=1$, a connected fiber $S^k$ with $k\ge1$ would make $\pi_1(S^m)\to\pi_1(S^1)$ surjective. The dimension equation gives $m=k+1\ge2$, so this is impossible. Thus $k=0$ and $m=1$, as asserted.
+::: {.pf-step #dimension}
+$m=n+k$, and for $n\ge2$ one has $k\ge1$.
+
+::: pf-proof
+A fibre bundle is locally a product, so $\dim S^{m}=\dim S^{n}+\dim S^{k}$, that is $m=n+k$. If $n\ge2$ then $S^{n}$ is simply connected, so a bundle with fibre $S^{0}$ would be a two-sheeted covering of $S^{n}$, whose total space is disconnected; but $S^{m}$ is connected. So $k\ne0$, that is $k\ge1$, and then $m=n+k>n$.
+:::
+
+:::
+
+::: {.pf-step #upper}
+For $n\ge2$, $k\le n-1$.
+
+::: pf-proof
+The homotopy exact sequence of the bundle contains
+$$
+\pi_{n}(S^{m})\longrightarrow\pi_{n}(S^{n})\longrightarrow\pi_{n-1}(S^{k}).
+$$
+Since $m>n$ one has $\pi_{n}(S^{m})=0$, so the map $\pi_{n}(S^{n})\to\pi_{n-1}(S^{k})$ has zero kernel; it therefore injects $\ZZ=\pi_{n}(S^{n})$ into $\pi_{n-1}(S^{k})$, which is thus nonzero. And $\pi_{j}(S^{k})=0$ for $j<k$, so $\pi_{n-1}(S^{k})\ne0$ forces $n-1\ge k$.
+:::
+
+:::
+
+::: {.pf-step #lower}
+For $n\ge2$, $k\ge n-1$.
+
+::: pf-proof
+The sequence contains
+$$
+\pi_{k+1}(S^{n})\longrightarrow\pi_{k}(S^{k})\longrightarrow\pi_{k}(S^{m}).
+$$
+Since $m=n+k>k$ one has $\pi_{k}(S^{m})=0$, so the second map is onto the zero group and exactness makes the first map surjective onto $\ZZ=\pi_{k}(S^{k})$; hence $\pi_{k+1}(S^{n})\ne0$, which by $\pi_{j}(S^{n})=0$ for $j<n$ forces $k+1\ge n$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+For $n\ge2$, $k=n-1$ and $m=2n-1$.
+
+::: pf-proof
+Steps [](#upper){.pf-ref} and [](#lower){.pf-ref} give $k\le n-1\le k$, so $k=n-1$, and step [](#dimension){.pf-ref} gives
+$$
+\boxed{m=n+k=n+(n-1)=2n-1.}
+$$
+:::
+
+:::
+
+::: {.pf-step #circle}
+For $n=1$, $k=0$ and $m=1$, again $k=n-1$ and $m=2n-1$.
+
+::: pf-proof
+Suppose $k\ge1$. Then $S^{k}$ is connected, so $\pi_{0}(S^{k})=0$, and the exact sequence
+$$
+\pi_{1}(S^{k})\to\pi_{1}(S^{m})\to\pi_{1}(S^{1})\to\pi_{0}(S^{k})
+$$
+shows that $\pi_{1}(S^{m})\to\ZZ$ is surjective, so $\pi_{1}(S^{m})\ne0$ and hence $m=1$. But $m=n+k=1+k\ge2$ by step [](#dimension){.pf-ref}, a contradiction. So $k=0$ and $m=1$, which is the double cover $S^{1}\to S^{1}$ with fibre $S^{0}$, and gives $k=n-1=0$ and $m=2n-1=1$.
+:::
+
+:::
+
+:::
 :::
