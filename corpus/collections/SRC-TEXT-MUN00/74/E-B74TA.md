@@ -43,13 +43,51 @@ If $m > 1$, show the fundamental group of the $m$-fold projective plane is not a
 
 ::: {.solution}
 
-The proof below is that of David Yang, *MATH104: Topology, Fall 2023*, Homework 10, solution to Section 74 Exercise 7, in `HW/hw10.tex` lines 35--70 of the GitHub repository `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw10.tex#L35-L70. It carries out the exercise's printed hint.
+The argument is that of **David Yang, *MATH104: Topology, Fall 2023*, Homework 10, solution to Section 74 Exercise 7**, in `HW/hw10.tex` lines 35--70 of the GitHub repository `dyang5/MATH104-Topology` at commit `12686a815d58f29aeaadb90a30449ae85c0a613f` (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw10.tex#L35-L70; it carries out the exercise's printed hint, and each of its steps is checked below against Theorem 74.4.
 
-Let $m>1$, let $G$ be the free group on $\alpha_1,\dots,\alpha_m$, and let $H=\ZZ/2*\ZZ/2=\langle\gamma,\delta\mid\gamma^2=\delta^2=1\rangle$. Define a homomorphism $\varphi:G\to H$ on the free generators by $\varphi(\alpha_1)=\gamma$ and $\varphi(\alpha_i)=\delta$ for $i\ge2$. Then
-$$
-\varphi(\alpha_1^2\alpha_2^2\cdots\alpha_m^2)=\gamma^2\delta^2\cdots\delta^2=1,
-$$
-so $\varphi$ vanishes on the least normal subgroup $N$ of $G$ containing $\alpha_1^2\alpha_2^2\cdots\alpha_m^2$. It therefore induces $\psi:G/N\to H$ by $\psi(gN)=\varphi(g)$, which is well defined because $g_1g_2^{-1}\in N$ gives $\varphi(g_1)\varphi(g_2)^{-1}=\varphi(g_1g_2^{-1})=1$, and is a homomorphism because $\varphi$ is; this is the universal property of the quotient map $G\to G/N$, which Yang quotes as "the Very Useful Lemma".
+Let $m>1$, let $G$ be the free group on $\alpha_{1},\ldots,\alpha_{m}$, and let $H=\ZZ/2*\ZZ/2=\langle\gamma,\delta\mid\gamma^{2}=\delta^{2}=1\rangle$. By Theorem 74.4 (printed p. 453), $\pi_{1}(P^{2}\#\cdots\#P^{2})\cong G/N$, where $N$ is the least normal subgroup of $G$ containing $\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2}$.
 
-By Theorem 74.4 (printed p. 453), $G/N\cong\pi_1(P^{2\#m})$; the map $\psi$ is onto, since $\gamma=\psi(\alpha_1N)$ and $\delta=\psi(\alpha_2N)$; and $H$ is not abelian, since the reduced words $(\gamma,\delta)$ and $(\delta,\gamma)$ are distinct in the free product. Were $\pi_1(P^{2\#m})$ abelian then every two of its elements would commute, so $\psi(g_1)$ and $\psi(g_2)$ would commute for all $g_1,g_2$, contrary to $\gamma\delta\ne\delta\gamma$; hence $\pi_1(P^{2\#m})$ is not abelian.
+::: pf
+
+::: {.pf-step #phi}
+There is a homomorphism $\varphi:G\to H$ with $\varphi(\alpha_{1})=\gamma$ and $\varphi(\alpha_{i})=\delta$ for $i\ge2$.
+
+::: pf-proof
+$G$ is free on the $\alpha_{i}$ and $H$ is a group, so any assignment of an element of $H$ to each free generator extends uniquely to a homomorphism: that is the defining property of a free group on a system of free generators (§69).
+:::
+
+:::
+
+::: {.pf-step #vanishes}
+$\varphi$ vanishes on $N$, hence induces a homomorphism $\psi:G/N\to H$.
+
+::: pf-proof
+$\varphi(\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2})=\gamma^{2}\delta^{2}\cdots\delta^{2}=1$, since $\gamma^{2}=1$ and $\delta^{2}=1$ in $H$; so the normal generator of $N$ lies in $\ker\varphi$, and $\ker\varphi$, being a normal subgroup containing that element, contains $N$, the least normal subgroup containing it, by the definition of least normal subgroup. A homomorphism vanishing on a normal subgroup induces one on the quotient: the rule $\psi(gN)=\varphi(g)$ is well defined because $g_{1}N=g_{2}N$ gives $g_{1}g_{2}^{-1}\in N\subset\ker\varphi$, hence $\varphi(g_{1})=\varphi(g_{2})$, and it is a homomorphism because $\varphi$ is (§68, printed p. 411).
+:::
+
+:::
+
+::: {.pf-step #onto}
+$\psi$ is onto, and $H$ is not abelian.
+
+::: pf-proof
+$\psi(\alpha_{1}N)=\gamma$ and $\psi(\alpha_{2}N)=\delta$, so the image contains the generating set $\{\gamma,\delta\}$ of $H$ and is all of $H$. For non-abelianness of $H=\ZZ/2*\ZZ/2$, the extension property of the free product gives a homomorphism $\theta:H\to S_{3}$ with $\theta(\gamma)=(12)$ and $\theta(\delta)=(13)$, since both these transpositions have order $2$; then $\theta(\gamma\delta)=(12)(13)=(132)$ while $\theta(\delta\gamma)=(13)(12)=(123)$, so $\gamma\delta\ne\delta\gamma$ and $H$ is not abelian.
+:::
+
+:::
+
+::: {.pf-step #nonabelian}
+$\pi_{1}(P^{2}\#\cdots\#P^{2})$ is not abelian.
+
+::: pf-proof
+Suppose that $G/N$ were abelian. Then any two of its elements commute, so for $g_{1},g_{2}\in G$ one has $g_{1}g_{2}N=g_{2}g_{1}N$ and hence, applying the homomorphism $\psi$,
+$$
+\psi(g_{1})\psi(g_{2})=\psi(g_{1}g_{2}N)=\psi(g_{2}g_{1}N)=\psi(g_{2})\psi(g_{1}).
+$$
+Every element of $H$ is $\psi(g)$ for some $g$, since $\psi$ is onto by step [](#onto){.pf-ref}, so every two elements of $H$ commute, contradicting the non-abelianness of $H$ there. So $G/N\cong\pi_{1}(P^{2}\#\cdots\#P^{2})$ is not abelian, as required for $m>1$.
+:::
+
+:::
+
+:::
 :::
