@@ -40,31 +40,73 @@ where $Df(x)$ is the derivative of $f$ at $x$, and $.$ denotes the standard inne
 :::
 
 ::: {.solution}
-(i) $\Longrightarrow$ (ii): Let $x=y+tv$. Then (i) says
 
+The argument is the card's own: (i) gives (ii) on dividing by $t^{2}$ and letting $t\to0$, and (ii) gives (i) by integrating the derivative along the segment from $y$ to $x$.
+
+::: pf
+
+::: {.pf-step #forward}
+
+(i) $\Rightarrow$ (ii).
+
+::: pf-proof
+
+Fix $y,v\in\RR^{n}$ and put $x=y+tv$ with $t\ne0$. Then $x-y=tv$, and (i) reads
 $$
-t(f(y+tv)-f(y)).v\leq Lt^2\abs{v}^2.
+t\,\bigl(f(y+tv)-f(y)\bigr)\cdot v\le Lt^{2}\abs{v}^{2}.
+$$
+Dividing by $t^{2}>0$ gives $\dfrac{f(y+tv)-f(y)}{t}\cdot v\le L\abs{v}^{2}$. As $t\to0$ the difference quotient tends to $Df(y)v$ by differentiability, and the inner product is continuous, so the left side tends to $Df(y)v\cdot v$; hence $Df(y)v\cdot v\le L\abs{v}^{2}$.
+
+:::
+
+:::
+
+::: {.pf-step #path}
+
+For fixed $x,y$ the function $g(s)=\bigl(f(y+s(x-y))-f(y)\bigr)\cdot(x-y)$ on $[0,1]$ satisfies $g'(s)=Df(y+s(x-y))(x-y)\cdot(x-y)$.
+
+::: pf-proof
+
+The map $s\mapsto y+s(x-y)$ is differentiable with derivative $x-y$, and $f$ is differentiable, so by the chain rule $\frac{d}{ds}f(y+s(x-y))=Df(y+s(x-y))(x-y)$; the term $f(y)$ is constant and the inner product with the fixed vector $x-y$ is linear, giving the displayed derivative.
+
+:::
+
+:::
+
+::: {.pf-step #backward}
+
+(ii) $\Rightarrow$ (i).
+
+::: pf-proof
+
+Assume (ii) and let $x,y\in\RR^{n}$. By step [](#path){.pf-ref} and (ii) with $v=x-y$ at the point $y+s(x-y)$,
+$$
+g'(s)=Df(y+s(x-y))(x-y)\cdot(x-y)\le L\abs{x-y}^{2}
+$$
+for every $s\in[0,1]$. Integrating over $[0,1]$ by the fundamental theorem of calculus,
+$$
+\bigl(f(x)-f(y)\bigr)\cdot(x-y)=g(1)-g(0)=\int_{0}^{1}g'(s)\,ds\le L\abs{x-y}^{2}.
 $$
 
-Divide by $t^2$ and take the limit as $t\to0$ to deduce $Df(y)v.v\leq L\abs{v}^2$.
+:::
 
-(ii) $\Longrightarrow$ (i): Let $\phi(t)=f(y+t(x-y))$ for $t\in\RR$. Then
+:::
 
+::: {.pf-step #conclusion}
+
+(i) and (ii) are equivalent.
+
+::: pf-proof
+
+Steps [](#forward){.pf-ref} and [](#backward){.pf-ref} give the two implications for every differentiable $f:\RR^{n}\to\RR^{n}$ and every $L\ge0$:
 $$
-\begin{aligned}
-f(x)-f(y)&=\phi(1)-\phi(0)\\
-&=\int_0^1\phi'(t)\,dt\\
-&=\int_0^1Df(y+t(x-y))(x-y)\,dt&&\text{(by the chain rule)},
-\end{aligned}
+\boxed{(f(x)-f(y))\cdot(x-y)\le L\abs{x-y}^{2}\ \forall x,y\iff Df(x)v\cdot v\le L\abs{v}^{2}\ \forall x,v.}
 $$
 
-so
+:::
 
-$$
-\begin{aligned}
-(f(x)-f(y)).(x-y)&=\int_0^1Df(y+t(x-y))(x-y).(x-y)\,dt\\
-&\leq\int_0^1L\abs{x-y}^2\,dt&&\text{(by (ii))}\\
-&=L\abs{x-y}^2.
-\end{aligned}
-$$
+:::
+
+:::
+
 :::
