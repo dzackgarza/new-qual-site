@@ -40,6 +40,13 @@ audit:
     identification with R_d x R is Exercise 16.9 as printed, and was re-read: the exercise says exactly
     that the dictionary order topology is the product topology R_d x R. The statement was checked against
     Munkres, Topology (2000), Section 20 Exercise 2, printed p. 126.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A full qualc check reported two occurrences of an undefined control word, a misspelling of
+    \theset in the discrete metric's unit ball and in the definition of the maximum metric. Both
+    occurrences are corrected to \theset. No mathematical content or step changed.
 ---
 
 ::: {.exercise}
@@ -73,7 +80,7 @@ $\RR_{d}$ is metrizable.
 
 ::: pf-proof
 
-Put $\delta(a,b)\coloneqq 0$ if $a=b$ and $\delta(a,b)\coloneqq 1$ otherwise. This is a metric: it is nonnegative, vanishes exactly on the diagonal, is symmetric, and the triangle inequality is immediate when the three points are distinct and otherwise reduces to $1\leq0+1$ or $0\leq0$. In its metric topology every one-point set is open, because $B_{\delta}(a,1)=\thetaset{a}$; hence every subset of $\RR$ is open, since it is a union of its points, and the metric topology is the discrete topology.
+Put $\delta(a,b)\coloneqq 0$ if $a=b$ and $\delta(a,b)\coloneqq 1$ otherwise. This is a metric: it is nonnegative, vanishes exactly on the diagonal, is symmetric, and the triangle inequality is immediate when the three points are distinct and otherwise reduces to $1\leq0+1$ or $0\leq0$. In its metric topology every one-point set is open, because $B_{\delta}(a,1)=\theset{a}$; hence every subset of $\RR$ is open, since it is a union of its points, and the metric topology is the discrete topology.
 
 :::
 
@@ -97,7 +104,7 @@ For metric spaces $(X,d)$ and $(Y,d^{\prime})$, the maximum metric $\rho$ induce
 
 :::: pf-proof
 
-Let $\rho(x\times y,w\times z)\coloneqq\max\thetaset{d(x,w),\ d^{\prime}(y,z)}$.
+Let $\rho(x\times y,w\times z)\coloneqq\max\theset{d(x,w),\ d^{\prime}(y,z)}$.
 
 ::: {.pf-step #metric}
 
