@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument already on the card, which is
+    correct as it stood. The character-degree divisibility is lifted out of the middle of the
+    argument into its own step, proved once for an arbitrary irreducible character of degree d
+    and then applied with d = 2; the diagonalizability of rho(t) is justified by the separable
+    minimal polynomial X^2 - 1; and the exclusion of a trivial representation of dimension 2 is
+    stated as reducibility. Not claimed: a retained solution set; the provenance names the
+    question paper, which states its own rules and carries no solutions. The statement and the
+    conclusion are unchanged.
 ---
 
 ::: {.problem}
@@ -24,57 +36,89 @@ Show that a finite simple group cannot have a 2-dimensional irreducible represen
 
 
 ::: {.solution}
-Suppose, for contradiction, that $G$ is finite simple and that
-$$
-\rho:G\longrightarrow \GL(V),\qquad \dim_{\CC}V=2,
-$$
-is irreducible.
+No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/UW-Algebra-Qual-2017.pdf`, which is the question paper (it opens "Do as many of the eight problems as you can") and contains no solutions. The argument below is the card's own; it is the card's previous prose with the character-degree divisibility made a separate step and its conclusion used in the place it is needed.
 
-First, $\rho$ is faithful. Indeed, $\ker\rho\trianglelefteq G$. Since $G$ is simple, $\ker\rho$ is either $1$ or $G$. The latter would make the representation trivial, hence reducible in dimension $2$. Thus $\ker\rho=1$.
+Throughout $G$ is a finite simple group, $\rho:G\to\GL(V)$ is an irreducible complex representation with $\dim_\CC V=2$, and $\cardinality{\cdot}$ denotes order.
 
-Consider
-$$
-\det\rho:G\longrightarrow \CC^\times.
-$$
-Its kernel is normal. If its kernel were trivial, then $G$ would embed in the abelian group $\CC^\times$, so $G$ would be abelian. A finite simple abelian group is cyclic of prime order, and every irreducible complex representation of an abelian group is $1$-dimensional, a contradiction. Hence
-$$
-\det\rho(g)=1\qquad\text{for every }g\in G.
-$$
-Thus $\rho(G)\subseteq \SL_2(\CC)$.
+::: pf
 
-We now justify that $2\mid \cardinality{G}$. We use the standard character-degree divisibility argument, included here for completeness. Let $\chi$ be an irreducible complex character of degree $d=\chi(1)$. For each conjugacy class $C$ with representative $c$, the class sum
-$$
-z_C=\sum_{g\in C}g\in Z(\ZZ[G])
-$$
-acts on the irreducible representation by the scalar
-$$
-\omega_C=\frac{\cardinality{C}\chi(c)}{d}.
-$$
-Because multiplication by $z_C$ is an integral endomorphism of the finite free abelian group $Z(\ZZ[G])$, Cayley--Hamilton shows that $\omega_C$ is an algebraic integer. Character values are algebraic integers as well. Character orthogonality gives
-$$
-\cardinality{G}=\sum_{g\in G}\chi(g)\chi(g^{-1})
-=d^2+\sum_{C\ne\{1\}}\cardinality{C}\chi(c)\chi(c^{-1}).
-$$
-Dividing by $d$,
-$$
-\frac{\cardinality{G}}{d}
-=d+\sum_{C\ne\{1\}}\omega_C\chi(c^{-1}).
-$$
-The right side is an algebraic integer, while the left side is rational; hence $\cardinality{G}/d\in\ZZ$. Therefore $d\mid \cardinality{G}$. Applying this with $d=2$ gives $2\mid \cardinality{G}$.
+::: {.pf-step #faithful}
+$\rho$ is faithful.
 
-By Cauchy's theorem, $G$ has an element $t$ of order $2$. Since
-$$
-\rho(t)^2=I,
-$$
-the matrix $\rho(t)$ is diagonalizable with eigenvalues in $\{1,-1\}$. Also
-$$
-\det\rho(t)=1.
-$$
-Therefore its two eigenvalues are either both $1$ or both $-1$. Faithfulness excludes $\rho(t)=I$, because $t\ne1$. Hence
-$$
-\rho(t)=-I.
-$$
-But $-I$ is central in $\rho(G)$. Since $\rho$ is faithful, $t\in Z(G)$. Thus $Z(G)\ne1$. Simplicity forces $Z(G)=G$, so $G$ is abelian, again contradicting the existence of a $2$-dimensional irreducible complex representation.
+::: pf-proof
+$\ker\rho$ is normal in $G$. Since $G$ is simple, $\ker\rho$ is $1$ or $G$; if it were $G$ then $\rho$ would be trivial, and a trivial representation of dimension $2$ is a direct sum of two trivial $1$-dimensional representations, hence reducible, contrary to hypothesis. So $\ker\rho=1$.
 
-Hence a finite simple group has no $2$-dimensional irreducible complex representation.
+:::
+
+:::
+
+::: {.pf-step #det-trivial}
+$\det\rho(g)=1$ for every $g\in G$.
+
+::: pf-proof
+$\det\rho:G\to\CC^\times$ is a homomorphism, so its kernel $K$ is normal. If $K=1$ then $\det\rho$ is injective and $G$ is isomorphic to a subgroup of the abelian group $\CC^\times$, hence abelian; a finite simple abelian group is cyclic of prime order, and every irreducible complex representation of an abelian group is $1$-dimensional (simultaneous eigenvectors of the commuting operators $\rho(g)$), contradicting $\dim V=2$. Simplicity of $G$ then forces $K=G$, which is the assertion.
+
+:::
+
+:::
+
+::: {.pf-step #divisibility}
+If $\chi$ is the character of an irreducible complex representation of a finite group $G$ of degree $d=\chi(1)$, then $d$ divides $\cardinality{G}$.
+
+::: pf-proof
+Let $C$ range over the conjugacy classes of $G$ with representatives $c$, and let $z_C=\sum_{g\in C}g\in Z(\ZZ[G])$ be the class sums, which form a $\ZZ$-basis of $Z(\ZZ[G])$. On the irreducible module, $z_C$ acts as a scalar $\omega_C$, and comparing traces on that module gives $\omega_C\chi(1)=\chi(z_C)=\cardinality{C}\chi(c)$, so $\omega_C=\cardinality{C}\chi(c)/d$. Multiplication by $z_C$ is an endomorphism of the finitely generated free abelian group $Z(\ZZ[G])$, so its matrix has integer entries and its eigenvalues — among them $\omega_C$ — are algebraic integers by Cayley–Hamilton. Character values are algebraic integers, being sums of roots of unity. Column orthogonality gives
+$$
+\cardinality{G}=\sum_{g\in G}\chi(g)\overline{\chi(g)}=\sum_C\cardinality{C}\chi(c)\chi(c^{-1}),
+$$
+so dividing by $d$,
+$$
+\frac{\cardinality{G}}{d}=\sum_C\frac{\cardinality{C}\chi(c)}{d}\chi(c^{-1})=\sum_C\omega_C\chi(c^{-1}),
+$$
+a sum of algebraic integers, hence an algebraic integer. It is rational, and a rational algebraic integer is an integer; so $d\mid\cardinality{G}$.
+
+:::
+
+:::
+
+::: {.pf-step #even-order}
+$2\mid\cardinality{G}$, and $G$ has an element $t$ of order $2$.
+
+::: pf-proof
+Apply step [](#divisibility){.pf-ref} to the degree $d=2$ of $\rho$. Cauchy's theorem then provides an element of order $2$, the prime $2$ dividing $\cardinality{G}$.
+
+:::
+
+:::
+
+::: {.pf-step #minus-identity}
+$\rho(t)=-I$.
+
+::: pf-proof
+$\rho(t)^2=\rho(t^2)=I$, so the minimal polynomial of $\rho(t)$ divides $X^2-1$, which has distinct roots; hence $\rho(t)$ is diagonalizable with eigenvalues in $\theset{1,-1}$. Its determinant is $1$ by step [](#det-trivial){.pf-ref}, so the two eigenvalues are both $1$ or both $-1$, that is $\rho(t)=I$ or $\rho(t)=-I$. Faithfulness of $\rho$ and $t\ne1$ exclude $\rho(t)=I$.
+
+:::
+
+:::
+
+::: {.pf-step #central}
+$t\in Z(G)$, so $G$ is abelian, a contradiction.
+
+::: pf-proof
+$\rho(t)=-I$ commutes with $\rho(g)$ for every $g\in G$, and $\rho$ is faithful and a homomorphism, so $t$ commutes with every $g\in G$ and $t\in Z(G)\setminus\theset1$. Then $Z(G)$ is a nontrivial normal subgroup, and simplicity forces $Z(G)=G$, so $G$ is abelian. But then $\rho$ is $1$-dimensional, as in step [](#det-trivial){.pf-ref}, contradicting $\dim V=2$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+A finite simple group has no $2$-dimensional irreducible complex representation.
+
+::: pf-proof
+The assumption of such a representation produced the contradiction of step [](#central){.pf-ref}; the argument used only simplicity, finiteness and $\dim V=2$.
+
+:::
+
+:::
+
+:::
 :::
