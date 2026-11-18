@@ -48,7 +48,7 @@ audit:
   by: claude
   date: 2026-11-18
   note: >-
-    Lamport structure for the six constructions, which is what Queue D asks for on this card. Each part is a step: the injective ones are justified by reading back the coordinates the construction preserves, the bijective ones by exhibiting the inverse as a splitting or an interleaving, and part (f) carries the division-algorithm argument that makes its index map well defined as well as injective. The choice of the padding point x_0 is made in prose before the proof, as it is used in three parts. Statement re-read against Munkres, Topology (2000), §5 Exercise 4, printed p. 71, and the six constructions against Dan Whitman's set, Exercise 5.4, printed pp. 71-73. No statement repair.
+    Lamport structure for the six constructions, which is what Queue D asks for on this card. Each part is a step: the injective ones are justified by reading back the coordinates the construction preserves, the bijective ones by exhibiting the inverse as a splitting or an interleaving, and part (f) carries the division-algorithm argument that makes its index map well defined as well as injective. The choice of the padding point x_0 is made in prose before the proof, as it is used in three parts. Statement re-read against Munkres, Topology (2000), §5 Exercise 4, printed p. 39, and the six constructions against Dan Whitman's set, Exercise 5.4, printed pp. 71-73. No statement repair.
 ---
 
 ::: {.exercise}
@@ -69,7 +69,7 @@ Let $m, n \in \ZZ_{+}$ . Let $X \neq \varnothing$ .
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.4, printed pp. 71--73** (`tmp/sources/munkres-solutions-whitman.pdf`); the six constructions are his, part (f) being the interleaving he writes with the division algorithm. The statement is Munkres, *Topology*, 2nd ed. (2000), §5 Exercise 4, printed p. 71.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.4, printed pp. 71--73** (`tmp/sources/munkres-solutions-whitman.pdf`); the six constructions are his, part (f) being the interleaving he writes with the division algorithm. The statement is Munkres, *Topology*, 2nd ed. (2000), §5 Exercise 4, printed p. 39.
 
 Choose once and for all a point $x_0\in X$, which exists because $X\ne\varnothing$.
 
