@@ -44,6 +44,11 @@ audit:
     sequences x_1, ..., x_n by the bijection k = (j-1)n + i between Z_+ and
     Z_+ x {1, ..., n}; injectivity is that bijection's uniqueness. The previous proof of
     the X^A -> X^B reading, which padded with a chosen point, is superseded.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the six constructions, which is what Queue D asks for on this card. Each part is a step: the injective ones are justified by reading back the coordinates the construction preserves, the bijective ones by exhibiting the inverse as a splitting or an interleaving, and part (f) carries the division-algorithm argument that makes its index map well defined as well as injective. The choice of the padding point x_0 is made in prose before the proof, as it is used in three parts. Statement re-read against Munkres, Topology (2000), §5 Exercise 4, printed p. 71, and the six constructions against Dan Whitman's set, Exercise 5.4, printed pp. 71-73. No statement repair.
 ---
 
 ::: {.exercise}
@@ -64,60 +69,65 @@ Let $m, n \in \ZZ_{+}$ . Let $X \neq \varnothing$ .
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.4, printed pp. 71--73** (`tmp/sources/munkres-solutions-whitman.pdf`); the six constructions below are his, part (f) being the interleaving he writes with the division algorithm.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.4, printed pp. 71--73** (`tmp/sources/munkres-solutions-whitman.pdf`); the six constructions are his, part (f) being the interleaving he writes with the division algorithm. The statement is Munkres, *Topology*, 2nd ed. (2000), §5 Exercise 4, printed p. 71.
 
-Choose once and for all a point $x_0\in X$.
+Choose once and for all a point $x_0\in X$, which exists because $X\ne\varnothing$.
 
-(a) If $m\le n$, define
-$$
-f(x_1,\dots,x_m)
-=(x_1,\dots,x_m,\underbrace{x_0,\dots,x_0}_{n-m}).
-$$
-The first $m$ coordinates recover the input, so $f$ is injective.
+::: pf
 
-(b) Concatenation gives a bijection
-$$
-g:X^m\times X^n\longrightarrow X^{m+n},
-$$
-$$
-g((x_1,\dots,x_m),(y_1,\dots,y_n))
-=(x_1,\dots,x_m,y_1,\dots,y_n).
-$$
-Its inverse splits an $(m+n)$-tuple after the $m$-th coordinate.
+::: {.pf-step #part-a}
+(a) If $m\le n$, the map $f:X^m\to X^n$ with $f(x_1,\dots,x_m)=(x_1,\dots,x_m,x_0,\dots,x_0)$, the last $n-m$ coordinates equal to $x_0$, is injective.
 
-(c) Define
-$$
-h(x_1,\dots,x_n)
-=(x_1,\dots,x_n,x_0,x_0,\dots).
-$$
-Again the first $n$ coordinates recover the input, so $h$ is injective.
+::: pf-proof
+The first $m$ coordinates of $f(x)$ are $x$ again, so $f(x)=f(x')$ gives $x=x'$; the padding coordinates are irrelevant to that reading.
+:::
 
-(d) Define
-$$
-k((x_1,\dots,x_n),(y_1,y_2,\dots))
-=(x_1,\dots,x_n,y_1,y_2,\dots).
-$$
-The inverse separates the first $n$ coordinates from the infinite tail, so $k$ is bijective.
+:::
 
-(e) Interleave coordinates:
-$$
-l((x_1,x_2,\dots),(y_1,y_2,\dots))
-=(x_1,y_1,x_2,y_2,\dots).
-$$
-Taking odd and even coordinates gives the inverse, hence $l$ is bijective.
+::: {.pf-step #part-b}
+(b) Concatenation, $g\bigl((x_1,\dots,x_m),(y_1,\dots,y_n)\bigr)=(x_1,\dots,x_m,y_1,\dots,y_n)$, is a bijection $X^m\times X^n\to X^{m+n}$.
 
-(f) Let $A\subset B$. Given
-$$
-x=(x_1,\dots,x_n)\in (A^{\omega})^{n},
-$$
-with each $x_i=(x_i(1),x_i(2),\dots)$ a sequence in $A$, define $m(x)=y\in B^{\omega}$ by
-$$
-y_k=x_i(j),
-\qquad\text{where } k=(j-1)n+i,\quad i\in\{1,\dots,n\},\ j\in\ZZ_+ .
-$$
-Every $k\in\ZZ_+$ has exactly one such expression, because division of $k-1$ by $n$ gives a unique quotient $j-1$ and remainder $i-1$ with $0\le i-1<n$; and $y_k\in A\subset B$, so $y\in B^{\omega}$. If $x\ne x'$, then $x_i\ne x'_i$ for some $i$, hence $x_i(j)\ne x'_i(j)$ for some $j$, and at $k=(j-1)n+i$ the two images differ. Thus
-$$
-m:(A^{\omega})^{n}\hookrightarrow B^{\omega}
-$$
-is injective.
+::: pf-proof
+Its inverse is the map that splits an $(n+m)$-tuple $z$ after its $m$-th coordinate, sending $z$ to $\bigl((z_1,\dots,z_m),(z_{m+1},\dots,z_{m+n})\bigr)$; the two composites are the identities on $X^m\times X^n$ and on $X^{m+n}$ respectively.
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) The map $h:X^n\to X^\omega$ with $h(x_1,\dots,x_n)=(x_1,\dots,x_n,x_0,x_0,\dots)$ is injective.
+
+::: pf-proof
+The first $n$ coordinates of $h(x)$ are the entries of $x$, so $h(x)=h(x')$ implies $x=x'$.
+:::
+
+:::
+
+::: {.pf-step #part-d}
+(d) The map $k\bigl((x_1,\dots,x_n),(y_1,y_2,\dots)\bigr)=(x_1,\dots,x_n,y_1,y_2,\dots)$ is a bijection $X^n\times X^\omega\to X^\omega$.
+
+::: pf-proof
+Its inverse sends a sequence $z\in X^\omega$ to the pair consisting of $(z_1,\dots,z_n)$ and the tail $(z_{n+1},z_{n+2},\dots)$; both composites are identities, so $k$ is bijective.
+:::
+
+:::
+
+::: {.pf-step #part-e}
+(e) The interleaving $l\bigl((x_1,x_2,\dots),(y_1,y_2,\dots)\bigr)=(x_1,y_1,x_2,y_2,\dots)$ is a bijection $X^\omega\times X^\omega\to X^\omega$.
+
+::: pf-proof
+Its inverse sends $z\in X^\omega$ to the pair of its odd-indexed and even-indexed terms, $(z_1,z_3,z_5,\dots)$ and $(z_2,z_4,z_6,\dots)$; the two composites are the identities on the respective products, so $l$ is bijective.
+:::
+
+:::
+
+::: {.pf-step #part-f}
+(f) For $A\subset B$ the map $m:(A^\omega)^n\to B^\omega$ defined by $m(x)_k=x_i(j)$, where $k=(j-1)n+i$ with $i\in\{1,\dots,n\}$ and $j\in\ZZ_+$, is injective.
+
+::: pf-proof
+Every $k\in\ZZ_+$ has exactly one such expression: dividing $k-1$ by $n$ gives a quotient $j-1\ge0$ and a remainder $i-1$ with $0\le i-1<n$, so $j\in\ZZ_+$ and $i\in\{1,\dots,n\}$, and both are determined by $k$. Hence $m(x)$ is a well-defined sequence, and each of its terms $x_i(j)$ lies in $A\subset B$, so $m(x)\in B^\omega$. If $x\ne x'$, then $x_i\ne x'_i$ for some $i$, so $x_i(j)\ne x'_i(j)$ for some $j$, and at the index $k=(j-1)n+i$ the sequences $m(x)$ and $m(x')$ differ. So $m$ is injective, and the six constructions are (a)--(f).
+:::
+
+:::
+
+:::
 :::
