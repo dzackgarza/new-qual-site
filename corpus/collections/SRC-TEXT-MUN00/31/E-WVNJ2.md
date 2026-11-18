@@ -66,43 +66,83 @@ If $X$ is Hausdorff, or regular, or normal, or locally compact, or second-counta
 :::
 
 ::: {.solution}
-Let $p:X\to X/G$ be the orbit projection.
 
-For each $g\in G$, the map $x\mapsto g\cdot x$ is a homeomorphism. Hence for every open $U\subset X$,
-$$
-p^{-1}(p(U))=G\cdot U=\bigcup_{g\in G}gU
-$$
-is open. Thus $p$ is an open quotient map.
+No complete published solution of Munkres §31 Exercise 8, printed p. 200, was located; the argument is the card's own, following the hint there to Exercise 13 of §26, and the sets searched are recorded in the audit trail.
 
-If $C\subset X$ is closed, then $G\cdot C$ is closed. Indeed, the map
-$$
-\Phi:G\times X\to G\times X,\qquad \Phi(g,x)=(g,g\cdot x)
-$$
-is a homeomorphism, and
-$$
-G\cdot C=\pi_X(\Phi(G\times C)).
-$$
-Since $G$ is compact, the projection $G\times X\to X$ is closed. Therefore $G\cdot C$ is closed. Since
-$$
-p^{-1}(p(C))=G\cdot C,
-$$
-the quotient criterion implies $p(C)$ is closed. Thus $p$ is closed. Its fibers are the orbits $G\cdot x$, continuous images of compact $G$, hence compact. Therefore $p$ is a perfect map.
+Let $G$ be a compact topological group acting continuously on $X$, let $p:X\to X/G$ be the quotient map, and for $S\subset X$ write $G\cdot S=\{g\cdot x:g\in G,\ x\in S\}$.
 
-The preceding perfect-map exercise now gives immediately:
+::: pf
 
-- if $X$ is Hausdorff, then $X/G$ is Hausdorff;
-- if $X$ is regular, then $X/G$ is regular;
-- if $X$ is locally compact, then $X/G$ is locally compact;
-- if $X$ is second countable, then $X/G$ is second countable.
+::: {.pf-step #open}
+$p$ is open.
 
-It remains only normality. Let $A,B\subset X/G$ be disjoint closed sets. Their inverse images $p^{-1}(A)$ and $p^{-1}(B)$ are disjoint closed subsets of normal $X$, so choose disjoint open sets $U,V\subset X$ containing them. Since $p$ is closed, the sets
+::: pf-proof
+For $g\in G$ the map $x\mapsto g\cdot x$ is a homeomorphism of $X$, being the restriction of the continuous action to $\{g\}\times X$ with inverse $x\mapsto g^{-1}\cdot x$; so $gU$ is open for open $U$. Hence $p^{-1}\big(p(U)\big)=G\cdot U=\bigcup_{g\in G}gU$ is open, and $p(U)$ is open because $p$ is a quotient map (§22, printed p. 137).
+:::
+
+:::
+
+::: {.pf-step #closed}
+$p$ is closed.
+
+::: pf-proof
+
+::: {.pf-step #orbit-closed}
+$G\cdot C$ is closed for every closed $C\subset X$.
+
+::: pf-proof
+The map $\Phi:G\times X\to G\times X$, $\Phi(g,x)=(g,g\cdot x)$, is a homeomorphism, with inverse $(g,y)\mapsto(g,g^{-1}\cdot y)$, continuous because the action and the inversion of $G$ are continuous. So $\Phi(G\times C)$ is closed. The projection $\pi_{X}:G\times X\to X$ is closed because $G$ is compact: if $A\subset G\times X$ is closed and $x\notin\pi_{X}(A)$, then $(G\times X)\setminus A$ is an open set containing the slice $G\times\{x\}$, so by the tube lemma it contains a tube $G\times W$ with $W$ a neighbourhood of $x$, and then $W\cap\pi_{X}(A)=\varnothing$ (Lemma 26.8 and its use, printed p. 167). Hence $G\cdot C=\pi_{X}\big(\Phi(G\times C)\big)$ is closed.
+:::
+
+:::
+
+::: {.pf-step #closed-quotient}
+$p(C)$ is closed for every closed $C\subset X$.
+
+::: pf-proof
+$p^{-1}\big(p(C)\big)=G\cdot C$ is closed by step [](#orbit-closed){.pf-ref}, and a quotient map is closed exactly when the image of every closed saturated set is closed (§22, printed p. 137).
+:::
+
+:::
+
+::: {.pf-qed}
+Steps [](#open){.pf-ref} and [](#closed-quotient){.pf-ref} show that $p$ is a continuous open and closed surjection.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #perfect}
+$p$ is a perfect map.
+
+::: pf-proof
+$p$ is continuous and surjective as a quotient map, and closed by step [](#closed){.pf-ref}. For $y\in X/G$ the fibre $p^{-1}(y)$ is the orbit $G\cdot x$ of a point $x$ with $p(x)=y$, which is the continuous image of the compact space $G$ under $g\mapsto g\cdot x$, hence compact (Theorem 26.5). A closed continuous surjection with compact fibres is a perfect map (§26, Exercise 13).
+:::
+
+:::
+
+::: {.pf-step #four-properties}
+If $X$ is Hausdorff, regular, locally compact, or second countable, then so is $X/G$.
+
+::: pf-proof
+The image of a space with each of these four properties under a perfect map has it (Exercise 13 of §26), and $p$ is perfect by step [](#perfect){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #normal}
+If $X$ is normal, then $X/G$ is normal.
+
+::: pf-proof
+Let $A,B\subset X/G$ be disjoint closed sets; then $p^{-1}(A)$ and $p^{-1}(B)$ are disjoint closed subsets of the normal space $X$, so there are disjoint open $U,V\subset X$ with $p^{-1}(A)\subset U$ and $p^{-1}(B)\subset V$. Put
 $$
-U'= (X/G)\setminus p(X\setminus U),\qquad
-V'= (X/G)\setminus p(X\setminus V)
+U'=(X/G)\setminus p(X\setminus U),\qquad V'=(X/G)\setminus p(X\setminus V).
 $$
-are open. They contain $A$ and $B$, respectively, and satisfy
-$$
-p^{-1}(U')\subset U,\qquad p^{-1}(V')\subset V.
-$$
-Hence $U'\cap V'=\varnothing$. Thus $X/G$ is normal.
+These are open because $p$ is closed by step [](#closed){.pf-ref}. They contain $A$ and $B$: if $a\in A$ and $a=p(x)$ with $x\notin U$, then $x\in p^{-1}(A)\subset U$, a contradiction. And $p^{-1}(U')\subset U$ and $p^{-1}(V')\subset V$, since $p^{-1}\big(p(X\setminus U)\big)\supset X\setminus U$; so $p^{-1}(U'\cap V')\subset U\cap V=\varnothing$, and $p$ being onto gives $U'\cap V'=\varnothing$. Hence $X/G$ is normal.
+:::
+
+:::
+
+:::
 :::
