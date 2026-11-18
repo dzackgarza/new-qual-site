@@ -18,7 +18,7 @@ This page writes that construction out once, in the generality the chapter uses 
 
 The two categories the chapter computes in are $\mods{A}$ for a ring $A$ and $\mods{\OO_X}$ for a ringed space $X$; both are abelian, and in both a cokernel is not the naive one.
 The cokernel of a map of sheaves is the sheafification of the presheaf cokernel, and the image is the sheafification of the presheaf image ([[D-A7LCT]]).
-The additive category of filtered abelian groups is the standard warning that kernels and cokernels alone are not enough: what fails there is the last axiom, that a monic epic is an isomorphism.
+The additive category of topological abelian groups is the standard warning that kernels and cokernels alone are not enough: it has both, and it fails the last axiom, since the identity map from $\RR$ with the discrete topology to $\RR$ with the Euclidean topology is a monomorphism and an epimorphism and not an isomorphism.
 
 ## Additive functors and exactness
 
