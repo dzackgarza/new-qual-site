@@ -26,6 +26,31 @@ audit:
     would have to contain every a_i, by spreading along the segments crossing a small ball;
     the sub-broom over the tail of the a_i is a path-connected set containing a
     neighbourhood of p. (tmp/sources/munkres-solutions-positron-ch3.pdf).
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Two defects located, neither repaired in this pass, which is why the solution section
+    still carries the retained set's argument. (1) The printed statement cannot hold. The
+    definition in Exercise 6 of the same page, read at 600 dpi from the retained PDF
+    (printed p. 162), is "for every neighborhood U of x, there is a connected subspace of X
+    contained in U that contains a neighborhood of x"; the connected subspace then contains
+    a neighbourhood of x, so it is itself a connected neighbourhood of x contained in U, and
+    a space weakly locally connected at x is locally connected at x. The exercise asks for a
+    space that is not locally connected at p and is weakly locally connected at p, so the
+    printed conclusion is impossible under the printed definition, whatever the space.
+    (2) The description of the space in the solution section, taken from the retained
+    positron0802 solution, does not have the property the exercise asserts: with bristles
+    running from (a_i,0) to (a_{i+1},r_j), choose epsilon with a_{N+1} < epsilon < a_N and
+    delta no larger than a_{N+1}; every bristle meeting B(p,delta) has its foot of the form
+    (a_i,0) with a_i <= a_{N+1} < epsilon, hence inside B(p,epsilon), so the component of p
+    in the trace of B(p,epsilon) contains the whole trace of B(p,delta) and is a
+    neighbourhood of p: that space is locally connected at p. The book draws Figure 25.1 and
+    states no formula for the bristles, no retained set in the checkout describes them in
+    words (the Whitman, 9beach and shenapse manuals have no occurrence of the broom), and
+    the figure does not determine what the bristles attach to. The card is therefore left as
+    it stands pending a description of the space that the figure settles; rewriting the
+    proof alone would not repair it.
 ---
 
 ::: {.exercise}
