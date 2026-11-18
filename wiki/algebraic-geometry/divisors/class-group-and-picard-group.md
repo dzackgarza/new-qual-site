@@ -26,8 +26,9 @@ The definition mentions no divisors, which is why $\Pic$ is the invariant that s
 The composite is the whole dictionary: a Cartier divisor is a rational function modulo units on each open set, $\OO_X(D)$ is the subsheaf of the rational-function sheaf consisting of functions that vanish along $D$ to at most the order $D$ prescribes, and a nonzero rational section of an invertible sheaf gives a Cartier divisor back.
 Because every invertible sheaf on an integral scheme embeds in the rational-function sheaf as an invertible subsheaf [@Har77, Proposition II.6.15], the map $\CaCl(X)\to\Pic(X)$ is an isomorphism and the two descriptions of the same class are interchangeable.
 
-That is not yet a statement about $\Cl$, which is the group of Weil divisors; the comparison of $\Cl$ with $\CaCl$ is exactly the hypothesis of local factoriality, and is where the two definitions of divisor are proved to agree ([[D-5PQ5W]]).
-On a scheme that is not locally factorial the comparison fails, and $\Cl$ is the larger group.
+That is not yet a statement about $\Cl$, which is the group of Weil divisors, and the passage between the two groups is where the hypotheses are.
+For a noetherian integral separated scheme the Cartier divisors are the locally principal Weil divisors, so there is an injection $\CaCl(X)\into\Cl(X)$, and it is an isomorphism when $X$ is locally factorial — in particular for every regular integral scheme, since regular local rings are factorial ([[D-5PQ5W]]).
+Where factoriality fails the inclusion can be strict, and then $\Cl$ is the larger group: on the quadric cone $V(xy-z^2)$ the ruling is a Weil divisor that is not Cartier, $\Cl\cong\ZZ/2$, and $\Pic=0$.
 
 ## The divisor of a rational section
 
