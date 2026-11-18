@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1371 of the 12429 problem cards that have a solution
+1370 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1371
+- Problems: 1370
 - Problem cards with a solution: 12429
 
-## Problems (1371)
+## Problems (1370)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -99,7 +99,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.3-35 — "Poincaré duality for noncompact manifolds with boundary"
 - [ ] E-HAT-3.3-4 — "Quotients by orientation-preserving actions"
 - [ ] E-HAT-3.3-5 — "Orientability of products"
-- [ ] E-HAT-3.3-6 — "Connected sums of manifolds"
 - [ ] E-HAT-3.3-7 — "Degree 1 maps to $S^n$"
 - [ ] E-HAT-3.3-8 — "Degree as sum of local signs"
 - [ ] E-HAT-3.3-9 — "Degree of covering space projections"
