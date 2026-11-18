@@ -31,6 +31,19 @@ audit:
   date: 2026-11-10
   note: >-
     Transcribed from the located published solution: Dan Whitman, "Topology, Second Edition by James Munkres: Solutions Manual" (30 November 2019), Exercise 9.3, printed pp. 102-103 (tmp/sources/munkres-solutions-whitman.pdf). He defines an injection recursively, choosing at each stage the least index whose value is new, which is the same device the card uses; the card takes an explicit enumeration of the pairs (n,k) instead of his recursion on sections, so no principle of recursive definition is invoked.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the answer into numbered steps and supplied three things it used silently: that an
+    injection carries a finite set to a set of the same cardinality, so an injection of an
+    (N+1)-element set into an N-element set is impossible; that the diagonal enumeration of the
+    pairs (n,k) is a bijection, so every pair occurs exactly once; and that the set of admissible
+    indices in the recursion for r_{m+1} is nonempty, which is where the infinitude of S enters.
+    Also corrected the earlier wording about recursion: the sequence r_m is produced by the
+    recursion theorem for the well-ordered set Z_+, which is a theorem of ZF, and the claim that no
+    choice is used rests on every stage being a least element, not on doing without recursion.
+    Not re-read this session: the Whitman pages and Munkres printed p. 61.
 ---
 
 ::: {.exercise}
@@ -46,33 +59,58 @@ Can you define an injective function $f: \ZZ_+ \to A$ without using the choice a
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.3, printed pp. 102--103** (`tmp/sources/munkres-solutions-whitman.pdf`); the device of always taking a least index, which is what avoids the choice axiom, is his, applied here to an explicit enumeration of the pairs $(n,k)$.
 
-For each $n$, the injection
-$$
-f_n:\{1,\ldots,n\}\to A
-$$
-has an image containing exactly $n$ distinct elements. If $A$ were finite, say $\cardinality{A}=N$, then $f_{N+1}$ would inject an $(N+1)$-element set into an $N$-element set, impossible. Thus $A$ is infinite.
+The device of always taking a least index, which is what avoids the choice axiom, is **Dan Whitman's**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.3, printed pp. 102--103 (`tmp/sources/munkres-solutions-whitman.pdf`), applied here to an explicit enumeration of the pairs $(n,k)$.
 
-Moreover, an injection $\ZZ_+\to A$ can be defined without the choice axiom because the entire indexed family $\{f_n\}$ is already given.
+Suppose $A$ is a set and $\{f_{n}\}_{n\in\ZZ_{+}}$ is an indexed family of injective functions $f_{n}\colon\{1,\dots,n\}\to A$.
 
-Fix once and for all an explicit enumeration
-$$
-(n_1,k_1),(n_2,k_2),\ldots
-$$
-of all pairs with $1\le k\le n$; for instance enumerate by increasing $n+k$, breaking ties lexicographically. Put
-$$
-a_j=f_{n_j}(k_j).
-$$
-The set $S=\{a_j:j\ge1\}$ is infinite, since it contains the image of every $f_n$, and those images have arbitrarily large finite cardinality.
+::: pf
 
-Define integers $r_m$ recursively. Let $r_1=1$. Having chosen $r_1<\cdots<r_m$ so that $a_{r_1},\ldots,a_{r_m}$ are distinct, let
-$$
-r_{m+1}=\min\{j>r_m:a_j\notin\{a_{r_1},\ldots,a_{r_m}\}\}.
-$$
-The set on the right is nonempty because $S$ is infinite. Then
-$$
-F(m)=a_{r_m}
-$$
-defines an injection $F:\ZZ_+\to A$. Every selection was made by taking a least positive integer, so no choice axiom is used.
+::: {.pf-step #infinite}
+$A$ is infinite.
+
+::: pf-proof
+An injective map carries a finite set onto a subset of the same cardinality, so $f_{n}(\{1,\dots,n\})$ has exactly $n$ elements. If $A$ were finite with $\cardinality{A}=N$, then $f_{N+1}$ would inject an $(N+1)$-element set into an $N$-element set; but the image would then have $N+1$ distinct elements inside a set with $N$ elements, which is impossible. So $A$ is infinite.
+:::
+
+:::
+
+::: {.pf-step #enumeration}
+There is an explicit bijection $j\mapsto(n_{j},k_{j})$ from $\ZZ_{+}$ onto $P=\{(n,k)\mid 1\leq k\leq n\}$.
+
+::: pf-proof
+For each integer $s\geq2$ the pairs in $P$ with $n+k=s$ are the finitely many with $k=1,\dots,s-1$ and $n=s-k$; list them in increasing $k$. Concatenating these lists for $s=2,3,4,\dots$ gives a sequence in which every pair of $P$ occurs exactly once, since $n+k$ is determined by the pair and its position within the list for $s=n+k$ is determined by $k$. The rule is explicit, so no choice is involved.
+:::
+
+:::
+
+::: {.pf-step #S}
+With $a_{j}\coloneqq f_{n_{j}}(k_{j})$, the set $S=\{a_{j}\mid j\geq1\}$ is infinite.
+
+::: pf-proof
+Let $n\geq1$ and $1\leq k\leq n$. By step [](#enumeration){.pf-ref} there is exactly one $j$ with $(n_{j},k_{j})=(n,k)$, and then $a_{j}=f_{n}(k)$; hence $f_{n}(\{1,\dots,n\})\subset S$, a subset with $n$ elements. Since $n$ is arbitrary, $S$ has subsets of every finite cardinality and so cannot be finite.
+:::
+
+:::
+
+::: {.pf-step #recursion}
+There is a strictly increasing sequence $r_{1}<r_{2}<\cdots$ of positive integers with $a_{r_{1}},a_{r_{2}},\dots$ pairwise distinct.
+
+::: pf-proof
+Put $r_{1}=1$; having chosen $r_{1}<\cdots<r_{m}$ with $a_{r_{1}},\dots,a_{r_{m}}$ distinct, let $r_{m+1}$ be the least $j>r_{m}$ with $a_{j}\notin\{a_{r_{1}},\dots,a_{r_{m}}\}$. That set of indices is nonempty: if every $j>r_{m}$ had $a_{j}\in\{a_{r_{1}},\dots,a_{r_{m}}\}$, then $S\subset\{a_{1},\dots,a_{r_{m}}\}$, which is finite, contradicting step [](#S){.pf-ref}. A least element exists because $\ZZ_{+}$ is well ordered, and it is unique, so the sequence is defined by the recursion theorem on the well-ordered set $\ZZ_{+}$, a theorem of ZF.
+:::
+
+:::
+
+::: {.pf-step #injection}
+$F(m)\coloneqq a_{r_{m}}$ defines an injection $F\colon\ZZ_{+}\to A$ without the axiom of choice.
+
+::: pf-proof
+$F$ takes values in $A$, and it is injective because the values $a_{r_{m}}$ are pairwise distinct by step [](#recursion){.pf-ref}. Nothing was chosen: the family $\{f_{n}\}$ is given as one indexed object, the enumeration of the pairs is an explicit formula, and at each stage the next index is the least element of a set of integers, determined by that set.
+:::
+
+:::
+
+:::
+
 :::
