@@ -34,7 +34,35 @@ Justify your answer.
 :::
 
 ::: {.solution}
+
 The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.7, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the witness pair is theirs.
 
-$\RR_{\ell}$ is **not** connected. The sets $(-\infty,0)$ and $[0,\infty)$ are disjoint, nonempty, and both open in $\RR_{\ell}$ — the first is a union of basis elements $(a,b)$, the second is the basis element $[0,1)$ together with $\bigcup_{n\ge1}[n,n+1)$ — and their union is $\RR$. So they form a separation.
+$\RR_{\ell}$ is the set $\RR$ with the topology having as a basis the sets $[a,b)$ with $a<b$ (Example 3, printed p. 82); a subset is open exactly when it is a union of such sets.
+
+::: pf
+
+::: {.pf-step #both-open}
+$(-\infty,0)$ and $[0,\infty)$ are open in $\RR_{\ell}$.
+
+::: pf-proof
+$(-\infty,0)=\bigcup_{n\ge1}[-n,0)$, a union of basis elements. $[0,\infty)=[0,1)\cup\bigcup_{n\ge1}[n,n+1)$, a union of basis elements: a real $x\ge0$ lies in $[0,1)$ if $x<1$, and otherwise in $[n,n+1)$ for $n=\lfloor x\rfloor\ge1$. A union of basis elements is open.
+:::
+
+:::
+
+::: {.pf-step #separation}
+These two open sets are disjoint and nonempty, and their union is $\RR$.
+
+::: pf-proof
+$(-\infty,0)\cap[0,\infty)=\varnothing$, both are nonempty ($-1$ lies in the first, $0$ in the second), and every real number is either negative or in $[0,\infty)$.
+:::
+
+:::
+
+::: {.pf-qed}
+By steps [](#both-open){.pf-ref} and [](#separation){.pf-ref} the sets $(-\infty,0)$ and $[0,\infty)$ form a separation of $\RR_{\ell}$, so $\RR_{\ell}$ is not connected.
+:::
+
+:::
+
 :::
