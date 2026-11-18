@@ -303,11 +303,15 @@ SourceSpec = Annotated[
 # Who did what to a problem, and when. Keep source comparison distinct from a
 # source-facing correction: checking can confirm an unchanged transcription,
 # while correcting records that the authored statement itself had to change.
+# `solution-corrected` records that the mathematics of the card's solution changed: it
+# is the machine-readable marker issue #111's second acceptance criterion needs, and the
+# commit gate refuses it on a card no certificate row covers for the whole statement.
 AuditEventKind = Literal[
     "solution-written",
     "source-checked",
     "source-corrected",
     "solution-reviewed",
+    "solution-corrected",
 ]
 
 

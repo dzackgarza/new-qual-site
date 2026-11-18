@@ -382,6 +382,13 @@ and nothing is claimed as certified. No machine certificate exists for any of th
 A `solution-reviewed` note on a card records that the proof was read and what was checked;
 it is a review record, not a certificate.
 
+`solution-corrected` is the one event kind that records a correction of a card's
+mathematics, as against a citation, a layout or a statement restored to the print. Recording
+it obliges the card's certificate in the same change: `proofs/justfile`'s registry half
+checks that a row covers the statement, and the commit gate
+(`qualc.authoring`, `corrections_without_certificates`) refuses a staged change that records
+the event on a card no such row covers — so the correction cannot reach `main` without one.
+
 ## 7. Reuse audit: what the formalization corpus already owns
 
 Run before any further authorship of the two §3.A and §2.1 developments, through the formalization

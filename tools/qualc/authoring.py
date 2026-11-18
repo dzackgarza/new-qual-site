@@ -19,6 +19,7 @@ from typing import TypeVar
 import yaml
 from pydantic import TypeAdapter
 
+from . import certificates as certificate
 from .emit import _collection_source_links, compile_tikzcd_block
 from .model import FRONT_MATTER, MARKDOWN, Card, CollectionCard, CompilationSource, ExamSource, HomeworkSource, Strict, TextbookSource, discover, load_front_matter, parse_card, parse_cards, split_front_matter, unread_math, validate_fenced_divs
 from .pandoc_batch import PandocFailure, PandocServer
@@ -740,6 +741,75 @@ def changed_audit_events(selected: list[tuple[GitChange, str]], base: str) -> li
     return errors
 
 
+# The audit event that records a correction of a card's mathematics (issue #111). It is
+# the machine-readable marker the acceptance criterion needs: a corrected claim is
+# settled only by a certificate of it, so the refusal belongs where the correction is
+# recorded rather than in a reviewer's recollection, and a change that records one on a
+# card no row covers for its whole statement does not commit.
+SOLUTION_CORRECTED = "solution-corrected"
+REGISTRY = Path("proofs/README.md")
+
+
+def audit_event_kinds(source: str, path: Path) -> tuple[str, ...]:
+    """The `event` of every audit entry in one card text, in authored order.
+
+    The front matter is read, not validated: a header this reader cannot parse has no
+    events to compare, and the schema check is what reports the header itself.
+    """
+    try:
+        meta, _ = split_front_matter(source, path)
+    except (TypeError, ValueError):
+        return ()
+    audit = meta.get("audit")
+    if not isinstance(audit, list):
+        return ()
+    return tuple(
+        entry["event"]
+        for entry in audit
+        if isinstance(entry, dict) and isinstance(entry.get("event"), str)
+    )
+
+
+def registry_at(revision: str) -> list[str]:
+    """`proofs/README.md` in one revision's tree; a tree without one certifies nothing."""
+    read = subprocess.run(
+        ["git", "show", f"{revision}:{REGISTRY.as_posix()}"],
+        capture_output=True,
+        text=True,
+    )
+    return read.stdout.splitlines() if read.returncode == 0 else []
+
+
+def corrections_without_certificates(selected: list[tuple[GitChange, str]], base: str) -> list[str]:
+    """Refuse a change that records a correction and leaves the card uncertified (#111).
+
+    The event kind is what makes this decidable: a change about mathematics says so, and
+    a change about a citation or a layout does not, so the rule fires on the corrections
+    the criterion names and on nothing else. What it checks is the row's presence, not
+    its adequacy — the row says what it proves, and reading whether that is the corrected
+    claim stays the review it always was.
+    """
+    errors: list[str] = []
+    certified: dict[str, set[str]] = {}
+    for change, source in selected:
+        if change.version not in certified:
+            revision = "" if change.version == "index" else change.version
+            certified[change.version] = certificate.certified_statements(registry_at(revision))
+        before = audit_event_kinds(previous_source(change.path, base), change.path)
+        after = audit_event_kinds(source, change.path)
+        if after.count(SOLUTION_CORRECTED) <= before.count(SOLUTION_CORRECTED):
+            continue
+        card_id = source_identity(source)
+        if card_id is not None and card_id in certified[change.version]:
+            continue
+        errors.append(
+            f"{change.path}: records a `{SOLUTION_CORRECTED}` event, and `{REGISTRY.as_posix()}` "
+            f"certifies no statement for {card_id or 'this card'}: a corrected claim is settled "
+            f"only by a certificate of it (#111)"
+        )
+    return errors
+
+
 def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, ...]) -> int:
     """Validate card, wiki and complaint blobs selected by the shared hook or a range check.
 
@@ -782,6 +852,7 @@ def check_git_changes(changes: list[GitChange], base: str, versions: tuple[str, 
         except RuntimeError as exc:
             errors.append(f"{change.path}: {exc}")
     errors.extend(changed_audit_events(selected, base))
+    errors.extend(corrections_without_certificates(selected, base))
     for change in complaints:
         revision = "" if change.version == "index" else change.version
         source = subprocess.run(["git", "show", f"{revision}:{COMPLAINTS.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout

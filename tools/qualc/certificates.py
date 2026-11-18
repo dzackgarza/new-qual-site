@@ -306,6 +306,20 @@ def unread_section_errors(readme: Path) -> list[Diagnostic]:
     return errors
 
 
+def certified_statements(lines: list[str]) -> set[str]:
+    """The cards one registry text certifies for their whole statement.
+
+    The same rows `load` reads, from text rather than from a working tree, so a caller
+    that holds a revision's copy of the file — the commit gate, which reads the index —
+    asks the same question of the same table as the tree-reading entry point does.
+    """
+    return {
+        card_id
+        for card_id, file, covers in _rows(lines)
+        if covers == THE_STATEMENT and tool_of(file) is not None
+    }
+
+
 def _rows(lines: list[str]) -> list[tuple[str, str, str]]:
     """Every (card id, `cards/...` path, coverage) triple the certificate tables state.
 

@@ -1268,3 +1268,74 @@ def test_a_missing_revision_raises_rather_than_reading_as_an_empty_source(repo: 
     monkeypatch.chdir(repo)
     with pytest.raises(subprocess.CalledProcessError):
         previous_source(Path("corpus/one card.md"), "0000000000000000000000000000000000000000")
+
+
+# Issue #111's second acceptance criterion: a later mathematical correction to a card
+# arrives with its certificate in the same change. `solution-corrected` is the marker
+# that makes "a mathematical correction" decidable, so the gate can refuse the recording
+# of one on a card no certificate row covers for the whole statement.
+CORRECTION = (
+    "audit:\n"
+    "- event: solution-corrected\n"
+    "  by: claude\n"
+    "  date: 2026-11-18\n"
+    "  note: The closing step is repaired.\n"
+)
+
+REGISTRY_ROW = (
+    "# Proof artifacts\n"
+    "\n"
+    "## 1. Group lemmas proved in Lean\n"
+    "\n"
+    "| File | Card | What it proves | Covers |\n"
+    "| --- | --- | --- | --- |\n"
+    "| `cards/Kept.sage` | `P-INDEXP` | the fixture computation | the statement |\n"
+)
+
+
+def corrected(root: Path) -> None:
+    """Stage the fixture card carrying one recorded correction.
+
+    The card is re-identified as `P-INDEXP`: the registry's card-id syntax is `P-` or
+    `E-` followed by a source code, so the fixture's own `PRB-INDEXP` id is not one the
+    certificate tables can name.
+    """
+    card = root / "corpus/one card.md"
+    source = CARD.replace("id: PRB-INDEXP", "id: P-INDEXP")
+    card.write_text(source.replace("\nreview: draft\n", "\nreview: draft\n" + CORRECTION))
+    git(root, "add", "corpus/one card.md")
+
+
+def test_a_recorded_correction_without_a_certificate_is_refused(repo: Path) -> None:
+    corrected(repo)
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 1, result.stdout
+    assert "corpus/one card.md" in result.stderr
+    assert "solution-corrected" in result.stderr
+    assert "certifies no statement for P-INDEXP" in result.stderr
+
+
+def test_a_recorded_correction_with_its_certificate_is_accepted(repo: Path) -> None:
+    corrected(repo)
+    (repo / "proofs").mkdir()
+    (repo / "proofs" / "README.md").write_text(REGISTRY_ROW)
+    git(repo, "add", "proofs/README.md")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 0, result.stderr
+
+
+def test_a_row_covering_part_of_the_statement_does_not_carry_a_correction(repo: Path) -> None:
+    """`part` is not `the statement`: the criterion names the corrected claim itself."""
+    corrected(repo)
+    (repo / "proofs").mkdir()
+    (repo / "proofs" / "README.md").write_text(REGISTRY_ROW.replace("| the statement |", "| part |"))
+    git(repo, "add", "proofs/README.md")
+
+    result = check(repo, "check-staged")
+
+    assert result.returncode == 1, result.stdout
+    assert "certifies no statement for P-INDEXP" in result.stderr

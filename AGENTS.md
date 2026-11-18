@@ -1013,6 +1013,10 @@ dates, at the foot, under `Audit trail`. An event dated before the commit that
 carries it is a record, not a draft: the local gate refuses a commit that
 changes or deletes one, so a correction is a new event dated the commit's date
 (`QUAL-11`, issue #147). Events dated the commit's own day are still in flight.
+A correction of a card's *mathematics* is recorded with the event kind
+`solution-corrected`, which is what makes issue #111's "every correction arrives with its
+certificate" checkable: the commit gate refuses that event on a card no row of
+`proofs/README.md` covers for the whole statement.
 The rule also runs the other way: an event a later commit rewrote in place is
 restored to the text it carried on its day, and the gate accepts that
 restoration when the replacement text stands in an earlier revision of the same
