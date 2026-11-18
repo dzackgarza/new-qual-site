@@ -32,6 +32,23 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 77 Exercise 3, printed p. 471. The eight reductions, checked against the four equivalences printed in the exercise: (a) aabbcc, (b) aabb, (c) aabbccdd, (d) two commutators, (e) one commutator, (f) aabbcc, (g) aabbcc, (h) abab. The Euler characteristics and orientability of the answers were recomputed independently from the vertex classes of each scheme and agree with the card's closing list -1, 0, -2, -2, 0, -1, -1, 1. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps, one per scheme, against the four standard forms printed
+    in Theorem 77.5 (aa^-1bb^-1, abab, (a1a1)...(am am) with m >= 2, commutator products
+    with n >= 1). Re-checked every reduction: (a) two applications of (i) then relabelling
+    to (aa)(bb)(cc); (b) cyclic permutation, two applications of (i), then (ii) cancelling
+    a^-1 a at length 4, giving (aa)(bb) = P_2; (c) two applications of (i) moving bb and dd
+    to the front, leaving a commutator, then (iv) once, giving four projective pairs; (d)
+    and (e) single applications of (iii) followed by (ii), giving T_2 and T_1; (f) (iii) on
+    b,d then (iv); (g) (i), (ii), then (iv); (h) (i), two cancellations, then Lemma 77.1 to
+    abab, which is standard form (2). Vertex classes recounted for (e), (f), (g), (h) to
+    confirm the Euler characteristic list: an earlier reading of (e) chained c-terminal with
+    c-initial and gave the wrong chi, the correct count being three classes and chi = 0 for
+    T_1. Repair: the card now names which of the four standard forms each answer is, which
+    the earlier prose left to the reader.
 ---
 
 ::: {.exercise}
@@ -67,139 +84,147 @@ Using this algorithm, reduce each of the following schemes to one of the standar
 :::
 
 ::: {.solution}
-We use only cyclic permutation, flipping/relabeling, and the four equivalences (i)--(iv) stated in the exercise. Brackets below merely indicate the subwords to which an equivalence is applied.
+The eight reductions below are the card's own work; the only retained trace is Angina Seng's computation of the first homology of scheme (g), MSE answer 2880663, which does not run this algorithm, and no retained set reduces these schemes. The four standard forms of Theorem 77.5 (printed p. 462) are
+$$
+(1)\ a a^{-1} b b^{-1},\qquad (2)\ abab,\qquad (3)\ (a_{1}a_{1})\dots(a_{m}a_{m}),\ m\ge2,\qquad (4)\ (a_{1}b_{1}a_{1}^{-1}b_{1}^{-1})\dots(a_{n}b_{n}a_{n}^{-1}b_{n}^{-1}),\ n\ge1,
+$$
+giving $S^{2}$, $P^{2}$, $P_{m}$ and $T_{n}$ respectively. Besides the four equivalences of the exercise, only cyclic permutation, relabelling and reading a scheme backwards are used. Square brackets mark the subwords to which an equivalence is applied.
 
-(a)
-$$
-abacb^{-1}c^{-1}
- =a[b]a[cb^{-1}c^{-1}]
- \overset{(i)}\sim
- aa\,b^{-1}cb^{-1}c^{-1}.
-$$
-Apply (i) again to the two occurrences of $b^{-1}$:
-$$
-aa\,b^{-1}[c]b^{-1}[c^{-1}]
-\sim aa\,bb\,cc
-$$
-after relabeling. Thus the standard form is
-$$
-\boxed{aabbcc},
-$$
-so the surface is $P_3$.
+::: pf
 
-(b) Cyclically permute so the two $b$'s are the repeated letter:
-$$
-b[ca^{-1}c]b[a]
-\overset{(i)}\sim
-bb\,c^{-1}ac^{-1}a.
-$$
-Now apply (i) to the two $c^{-1}$'s:
-$$
-bb\,c^{-1}[a]c^{-1}[a]
-\sim cc\,bb\,a^{-1}a.
-$$
-The adjacent inverse pair cancels by (ii), leaving
-$$
-\boxed{aabb}.
-$$
-Hence the surface is $P_2\cong K$.
+::: {.pf-step #a}
+(a) $abacb^{-1}c^{-1}\sim aabbcc$, so the surface is $P_{3}$.
 
-(c) The adjacent $b$'s and $d$'s can first be moved to the front by repeated use of (i) (with empty middle word where appropriate). After cyclic permutation/relabeling this gives
+::: pf-proof
+Apply (i) to the two occurrences of $a$: with $y_{0}$ empty, $y_{1}=b$ and $y_{2}=cb^{-1}c^{-1}$,
 $$
-abbca^{-1}ddc^{-1}\sim
-bb\,dd\,(c^{-1}aca^{-1}).
+abacb^{-1}c^{-1}=a[b]a[cb^{-1}c^{-1}]\sim aa\,b^{-1}cb^{-1}c^{-1}.
 $$
-The last four letters are a commutator after relabeling. Thus we have two projective pairs followed by one torus pair. Applying (iv) to one projective pair and the commutator replaces those six letters by three projective pairs. Together with the untouched pair this gives
+Apply (i) again to the two occurrences of $b^{-1}$, with $y_{0}=aa$, $y_{1}=c$, $y_{2}=c^{-1}$:
 $$
-\boxed{aabbccdd}.
+aa\,b^{-1}[c]b^{-1}[c^{-1}]\sim aa\,b^{-1}b^{-1}c^{-1}c^{-1}.
 $$
-Hence the surface is $P_4$.
+Relabelling $b^{-1}\mapsto b$, $a\mapsto a$, $c^{-1}\mapsto c$ in cyclic order gives $(aa)(bb)(cc)$, which is form (3) with $m=3$, that is $P_{3}$.
+:::
 
-(d) The scheme is of torus type. In (iii), take $a,b$ as the first two displayed labels and $y_3=cd$, $y_5=c^{-1}d^{-1}$, with the other $y_i$'s empty. Then
-$$
-abcda^{-1}b^{-1}c^{-1}d^{-1}
-\overset{(iii)}\sim
-aba^{-1}b^{-1}cdc^{-1}d^{-1}.
-$$
-This is already the standard genus-two orientable form:
-$$
-\boxed{(aba^{-1}b^{-1})(cdc^{-1}d^{-1})},
-$$
-so the surface is $T_2$.
+:::
 
-(e) Again apply (iii) to the $a,b,a^{-1},b^{-1}$ occurrences:
-$$
-abcda^{-1}c^{-1}b^{-1}d^{-1}
-\sim
-aba^{-1}b^{-1}c^{-1}cd d^{-1}.
-$$
-Two applications of (ii) cancel $c^{-1}c$ and $dd^{-1}$. Hence
-$$
-\boxed{aba^{-1}b^{-1}},
-$$
-and the surface is $T_1$, the torus.
+::: {.pf-step #b}
+(b) $abca^{-1}cb\sim aabb$, so the surface is $P_{2}$, the Klein bottle.
 
-(f) Keep the initial $aa$. In the torus-type tail choose the letters $b,d,b^{-1},d^{-1}$ in (iii):
+::: pf-proof
+Cyclically permute to $b\,ca^{-1}c\,b\,a=b[ca^{-1}c]b[a]$ and apply (i) with $y_{0}$ empty, $y_{1}=ca^{-1}c$, $y_{2}=a$:
 $$
-aa\,bcd c^{-1}b^{-1}d^{-1}
-\overset{(iii)}\sim
- aa\,(bdb^{-1}d^{-1})\,c^{-1}c.
+b[ca^{-1}c]b[a]\sim bb\,c^{-1}ac^{-1}a .
 $$
-Cancel $c^{-1}c$ by (ii). We obtain one projective pair followed by one commutator:
+Apply (i) to the two occurrences of $c^{-1}$, with $y_{0}=bb$, $y_{1}=a$, $y_{2}=a$:
 $$
-aa\,(bdb^{-1}d^{-1}).
+bb\,c^{-1}[a]c^{-1}[a]\sim c^{-1}c^{-1}bb\,a^{-1}a .
 $$
-Equivalence (iv) turns this into three projective pairs, so
-$$
-\boxed{aabbcc},
-$$
-and the surface is $P_3$.
+The adjacent inverse pair $a^{-1}a$ cancels by (ii), as the remaining word $c^{-1}c^{-1}bb$ has length $4$; relabelling gives $(aa)(bb)$, which is form (3) with $m=2$, that is $P_{2}$, homeomorphic to the Klein bottle ($\S74$ Example).
+:::
 
-(g) Apply (i) to the two occurrences of $a$:
-$$
-a[bcd]a[bdc]
-\sim
- aa\,d^{-1}c^{-1}b^{-1}bdc.
-$$
-Cancel the adjacent $b^{-1}b$ by (ii):
-$$
-aa\,d^{-1}c^{-1}dc.
-$$
-The last four letters form a commutator after replacing $d^{-1},c^{-1}$ by new generators. Thus (iv) again converts one projective pair plus one torus pair into three projective pairs:
-$$
-\boxed{aabbcc}.
-$$
-Hence the surface is $P_3$.
+:::
 
-(h) Apply (i) to the two $a$'s:
-$$
-a[bcd]a[bcd]
-\sim
- aa\,d^{-1}c^{-1}b^{-1}bcd.
-$$
-Successive applications of (ii) cancel $b^{-1}b$ and $c^{-1}c$, giving
-$$
-aa\,d^{-1}d.
-$$
-This is the length-four projective base case in the proof of Theorem 77.5; Lemma 77.1 read backwards, followed by relabeling, gives
-$$
-aa\,d^{-1}d\sim abab.
-$$
-Therefore the standard form is
-$$
-\boxed{abab},
-$$
-which represents $P^2$.
+::: {.pf-step #c}
+(c) $abbca^{-1}ddc^{-1}\sim aabbccdd$, so the surface is $P_{4}$.
 
-Scheme (g) is also computed, from the same octagon, by Angina Seng, answer 2880663 (https://math.stackexchange.com/a/2880663), posted 2018-08-12 to Math Stack Exchange question 2880636, "How to reconcile two different computed first homology groups for this space?" (https://math.stackexchange.com/questions/2880636, asked by the account posting as user323867 on 2018-08-12). Under the scheme $abcdabdc$ the eight vertices fall into two classes, so that $a$ and $b$ are not loops in the surface but the pair $ab$ is; replacing each of the two $ab$ pairs by a single edge $e$, the boundary reads $ecdedc$, so
+::: pf-proof
+Apply (i) to the adjacent pair $bb$, with $y_{0}=a$, $y_{1}$ empty, $y_{2}=ca^{-1}ddc^{-1}$:
 $$
-\pi_1(X)\cong\langle c,d,e\mid ecdedc=1\rangle,
+a[bb]ca^{-1}ddc^{-1}\sim bb\,a\,c\,a^{-1}d\,d\,c^{-1}.
 $$
-whose abelianization is $\ZZ^2\oplus\ZZ/2$, the relator becoming $2(c+d+e)$. The question's own computation, which assumes one vertex class and so presents $H_1$ as $\langle a,b,c,d\mid 2(a+b+c+d)\rangle=\ZZ^3\oplus\ZZ/2$, differs by exactly that class. The answer does not run the exercise's algorithm and does not name the standard form; the reduction above reaches $aabbcc$, whose $H_1$ is $\ZZ^2\oplus\ZZ/2$, so the two computations agree.
+Apply (i) to the adjacent pair $dd$ of the result, with $y_{0}=bbaca^{-1}$, $y_{1}$ empty, $y_{2}=c^{-1}$:
+$$
+bbaca^{-1}[d]d[c^{-1}]\sim dd\,bb\,a\,c\,a^{-1}c^{-1}.
+$$
+The last four letters are the commutator $(a)(c)(a^{-1})(c^{-1})$. Equivalence (iv) applied to the projective pair $bb$ together with that commutator gives three projective pairs; with the untouched pair $dd$ this is four, so the scheme is equivalent to $(aa)(bb)(cc)(dd)$, form (3) with $m=4$, that is $P_{4}$.
+:::
 
-As a check, the quotient cell structures have respectively Euler characteristics
+:::
+
+::: {.pf-step #d}
+(d) $abcda^{-1}b^{-1}c^{-1}d^{-1}\sim (aba^{-1}b^{-1})(cdc^{-1}d^{-1})$, so the surface is $T_{2}$.
+
+::: pf-proof
+In (iii) take $a,b$ as the first two labels, so $y_{0}$ and $y_{1}$ are empty, $y_{2}$ is empty, $y_{3}=cd$, $y_{4}$ is empty and $y_{5}=c^{-1}d^{-1}$; then
 $$
--1,0,-2,-2,0,-1,-1,1,
+abcda^{-1}b^{-1}c^{-1}d^{-1}\sim aba^{-1}b^{-1}\,[y_{1}y_{4}y_{3}y_{2}y_{5}]=aba^{-1}b^{-1}c\,d\,c^{-1}d^{-1}.
 $$
-and the schemes are orientable exactly in (d) and (e), agreeing with the eight identifications above.
+This is form (4) with $n=2$, that is $T_{2}$.
+:::
+
+:::
+
+::: {.pf-step #e}
+(e) $abcda^{-1}c^{-1}b^{-1}d^{-1}\sim aba^{-1}b^{-1}$, so the surface is $T_{1}$.
+
+::: pf-proof
+In (iii) take $a$ as the label of the first and fifth letters and $b$ as the label of the second and seventh; then $y_{1}$, $y_{2}$ are empty, $y_{3}=cd$, $y_{4}=c^{-1}$ and $y_{5}=d^{-1}$, so
+$$
+abcda^{-1}c^{-1}b^{-1}d^{-1}\sim aba^{-1}b^{-1}[c^{-1}c\,d\,d^{-1}].
+$$
+The pairs $c^{-1}c$ and $dd^{-1}$ cancel by (ii), each application leaving a word of length at least $4$; what remains is $aba^{-1}b^{-1}$, form (4) with $n=1$, that is $T_{1}$.
+:::
+
+:::
+
+::: {.pf-step #f}
+(f) $aabcdc^{-1}b^{-1}d^{-1}\sim aabbcc$, so the surface is $P_{3}$.
+
+::: pf-proof
+Keep the initial $aa$ and apply (iii) to the tail $bcdc^{-1}b^{-1}d^{-1}$ with the letters $b$ and $d$: $y_{1}=aa$, $y_{2}=c$, $y_{3}=c^{-1}$, $y_{4}$ and $y_{5}$ empty, so
+$$
+aa\,bcdc^{-1}b^{-1}d^{-1}\sim aa\,(bdb^{-1}d^{-1})\,c^{-1}c .
+$$
+The pair $c^{-1}c$ cancels by (ii). What remains is one projective pair $aa$ followed by the commutator $bdb^{-1}d^{-1}$, and (iv) turns those six letters into three projective pairs, $(aa)(bb)(cc)$: form (3) with $m=3$, that is $P_{3}$.
+:::
+
+:::
+
+::: {.pf-step #g}
+(g) $abcdabdc\sim aabbcc$, so the surface is $P_{3}$.
+
+::: pf-proof
+Apply (i) to the two occurrences of $a$, with $y_{0}$ empty, $y_{1}=bcd$, $y_{2}=bdc$:
+$$
+a[bcd]a[bdc]\sim aa\,(bcd)^{-1}(bdc)=aa\,d^{-1}c^{-1}b^{-1}b\,d\,c .
+$$
+The adjacent pair $b^{-1}b$ cancels by (ii), leaving $aa\,d^{-1}c^{-1}dc$, and $d^{-1}c^{-1}dc$ is the commutator with $x=d^{-1}$, $y=c^{-1}$. Equivalence (iv) turns one projective pair and one commutator into three projective pairs, $(aa)(bb)(cc)$: form (3) with $m=3$, that is $P_{3}$.
+:::
+
+:::
+
+::: {.pf-step #h}
+(h) $abcdabcd\sim abab$, so the surface is $P^{2}$.
+
+::: pf-proof
+Apply (i) to the two occurrences of $a$, with $y_{0}$ empty, $y_{1}=bcd$, $y_{2}=bcd$:
+$$
+a[bcd]a[bcd]\sim aa\,(bcd)^{-1}(bcd)=aa\,d^{-1}c^{-1}b^{-1}b\,c\,d .
+$$
+The pairs $b^{-1}b$ and $c^{-1}c$ cancel by (ii) in turn, leaving $aa\,d^{-1}d$. This is the length-four scheme treated as the base case in the proof of Theorem 77.5; Lemma 77.1, read as an equivalence and followed by relabelling, gives $aa\,d^{-1}d\sim abab$. That is form (2), the projective plane $P^{2}$.
+:::
+
+:::
+
+::: {.pf-step #answers}
+The eight schemes reduce to $(aa)(bb)(cc)$, $(aa)(bb)$, $(aa)(bb)(cc)(dd)$, $(aba^{-1}b^{-1})(cdc^{-1}d^{-1})$, $aba^{-1}b^{-1}$, $(aa)(bb)(cc)$, $(aa)(bb)(cc)$ and $abab$; hence to $P_{3}$, $P_{2}$, $P_{4}$, $T_{2}$, $T_{1}$, $P_{3}$, $P_{3}$ and $P^{2}$.
+
+::: pf-proof
+Steps [](#a){.pf-ref} to [](#h){.pf-ref} give the eight reductions, each landing on one of the four standard forms displayed at the head of the proof, and the identification of the forms with $S^{2}$, $P^{2}$, $P_{m}$ and $T_{n}$ is Theorem 77.5's own.
+:::
+
+:::
+
+::: {.pf-step #euler}
+The reduced schemes are orientable exactly in (d) and (e), with Euler characteristics $-1,0,-2,-2,0,-1,-1,1$.
+
+::: pf-proof
+A scheme is orientable exactly when each label occurs once in each direction, which holds for (d) and (e) throughout and fails for the other six. For a scheme read as a cell decomposition with one face and one edge per label, $\chi=V-E+1$; on the reduced forms $V=1$ for the one-class schemes, giving $\chi=2-E$, so $(aa)(bb)(cc)$ gives $-1$, $(aa)(bb)$ gives $0$, $(aa)(bb)(cc)(dd)$ gives $-2$, the genus-two form gives $-2$, $aba^{-1}b^{-1}$ gives $0$ and the two remaining $(aa)(bb)(cc)$ give $-1$ each; $abab$ has two vertex classes, so $\chi=2-2+1=1$, as $P^{2}$ must. These agree with $2-2g$ and $2-m$ for the surfaces named.
+:::
+
+:::
+
+:::
 :::
