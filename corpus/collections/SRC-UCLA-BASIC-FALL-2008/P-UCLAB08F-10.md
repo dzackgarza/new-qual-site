@@ -6,7 +6,9 @@ title: Norm inequality for vector-valued integrals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Norms
+  - Integrals
 relations: []
 review: draft
 audit:

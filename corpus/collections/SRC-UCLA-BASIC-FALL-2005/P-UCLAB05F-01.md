@@ -5,7 +5,9 @@ kind: problem
 title: Countability of the algebraic real numbers
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Algebraic Numbers
+  - Countability
 relations: []
 review: draft
 audit:

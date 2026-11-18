@@ -6,7 +6,9 @@ title: Isometric embedding of finite-dimensional inner-product spaces
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inner Product Spaces
+  - Embeddings
 relations: []
 review: draft
 audit:

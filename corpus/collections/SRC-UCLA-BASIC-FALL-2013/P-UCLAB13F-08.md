@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-08
 kind: problem
 title: Orthogonal projections with prescribed diagonal
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Orthogonal Projection, Diagonal]}
 relations: []
 review: draft
 audit:

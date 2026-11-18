@@ -6,7 +6,9 @@ title: Existence of a global minimum off the diagonal
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Multivariable Calculus
+  - Continuous Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Applying the implicit function theorem to an explicit surface
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Implicit Function Theorem
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Baire category theorem
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Baire Category Theorem
+  - Nowhere Dense Sets
 relations: []
 review: draft
 audit:

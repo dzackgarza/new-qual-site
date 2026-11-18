@@ -6,7 +6,9 @@ title: An integer sum of squares of eigenvalues
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Trace
 relations: []
 review: draft
 audit:

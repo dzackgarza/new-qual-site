@@ -6,7 +6,9 @@ title: A compactness theorem for bounded convex functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Convex Functions
+  - Compactness
 relations: []
 review: draft
 audit:

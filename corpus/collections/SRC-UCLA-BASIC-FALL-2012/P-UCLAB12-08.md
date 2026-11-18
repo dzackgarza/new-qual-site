@@ -6,7 +6,9 @@ title: Isotropic subspaces of a nondegenerate Hermitian form have dimension at m
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Subspaces
 relations: []
 review: draft
 ---

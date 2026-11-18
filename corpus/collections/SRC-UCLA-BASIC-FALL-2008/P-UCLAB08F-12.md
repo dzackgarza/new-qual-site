@@ -6,7 +6,9 @@ title: Nonuniqueness in least squares comes from the nullspace
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Linear Systems
 relations: []
 review: draft
 audit:

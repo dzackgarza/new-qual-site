@@ -6,7 +6,9 @@ title: Minimize the Dirichlet energy on an interval
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Calculus of Variations
+  - Integrals
 relations: []
 review: draft
 audit:

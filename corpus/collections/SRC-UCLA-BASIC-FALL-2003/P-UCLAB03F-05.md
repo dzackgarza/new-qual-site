@@ -5,7 +5,9 @@ kind: problem
 title: A second-order Taylor polynomial with cubic remainder in two variables
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Taylor Series
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

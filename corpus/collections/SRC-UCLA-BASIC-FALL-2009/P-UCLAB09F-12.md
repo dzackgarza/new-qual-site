@@ -6,7 +6,9 @@ title: Spectrum and diagonalizability of a cyclic basis shift
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Pointwise subsequences and iterated limits
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Sequences of Functions
+  - Compactness
 relations: []
 review: draft
 audit:

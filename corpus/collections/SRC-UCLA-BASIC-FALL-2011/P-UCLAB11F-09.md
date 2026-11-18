@@ -6,7 +6,9 @@ title: Approximate eigenvector for a self-adjoint operator
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Self-Adjoint Operators
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

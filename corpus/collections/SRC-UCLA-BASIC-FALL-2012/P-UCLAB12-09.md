@@ -6,7 +6,9 @@ title: Least-squares minimizers form a coset of $\ker A$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Projection
+  - Linear Systems
 relations: []
 review: draft
 ---

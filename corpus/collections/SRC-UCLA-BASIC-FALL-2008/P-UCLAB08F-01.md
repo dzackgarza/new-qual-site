@@ -6,7 +6,8 @@ title: Uniform continuity of power functions on the nonnegative ray
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 audit:

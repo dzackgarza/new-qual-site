@@ -5,7 +5,9 @@ kind: problem
 title: Riemann integrability of a continuous function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Riemann Integration
+  - Continuity
 relations: []
 review: draft
 audit:

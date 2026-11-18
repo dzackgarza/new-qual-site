@@ -6,7 +6,9 @@ title: Dimension of an orthogonal complement
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonality
+  - Dimension
 relations: []
 review: draft
 audit:

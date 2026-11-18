@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-03
 kind: problem
 title: Length of graphs of monotone functions
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Arc Length, Monotone Functions]}
 relations: []
 review: draft
 audit:

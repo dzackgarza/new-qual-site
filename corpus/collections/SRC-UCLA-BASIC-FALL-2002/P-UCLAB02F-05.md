@@ -5,7 +5,9 @@ kind: problem
 title: Optimal Lipschitz bound from bounded partial derivatives
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Lipschitz Continuity
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Invertible matrices with bounded powers are diagonalizable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Diagonalization
+  - Jordan Canonical Form
 relations: []
 review: draft
 ---

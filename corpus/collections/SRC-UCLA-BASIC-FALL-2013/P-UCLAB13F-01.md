@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-01
 kind: problem
 title: Infinite products and convergence of positive series
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Infinite Products, Series of Numbers]}
 relations: []
 review: draft
 audit:

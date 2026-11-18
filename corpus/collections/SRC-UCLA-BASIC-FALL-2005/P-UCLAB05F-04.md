@@ -5,7 +5,9 @@ kind: problem
 title: Arc length bound for a strictly concave graph
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Arc Length
+  - Convex Functions
 relations: []
 review: draft
 audit:

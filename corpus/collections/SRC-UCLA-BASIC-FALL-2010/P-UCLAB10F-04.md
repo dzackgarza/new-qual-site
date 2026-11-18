@@ -6,7 +6,9 @@ title: Approximation by finite sums of separated functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Continuous Functions
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

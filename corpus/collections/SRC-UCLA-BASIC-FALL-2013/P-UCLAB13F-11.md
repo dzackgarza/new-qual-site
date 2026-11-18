@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-11
 kind: problem
 title: Spectral theorem for normal operators
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Spectral Theorem, Normal Operators]}
 relations: []
 review: draft
 audit:

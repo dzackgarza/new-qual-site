@@ -6,7 +6,9 @@ title: Convergence of the nested-radical recurrence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - Sequences of Numbers
 relations: []
 review: draft
 audit:

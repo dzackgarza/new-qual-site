@@ -6,7 +6,9 @@ title: Partition the real line into uncountably many uncountable sets
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uncountable Sets
+  - Countable and Uncountable Sets
 relations: []
 review: draft
 audit:

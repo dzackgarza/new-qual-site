@@ -6,7 +6,9 @@ title: Jordan form of $A$ with $A^4+2A^3-2A-I=0$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 ---

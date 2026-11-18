@@ -5,7 +5,8 @@ kind: problem
 title: Two real matrices that cannot be diagonalized over the reals
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: A uniform finite derivative order on a compact interval
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Differentiation
+  - Compactness
 relations: []
 review: draft
 audit:

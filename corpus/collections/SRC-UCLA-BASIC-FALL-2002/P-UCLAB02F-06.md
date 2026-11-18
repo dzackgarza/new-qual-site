@@ -5,7 +5,9 @@ kind: problem
 title: A regular level set contains a nonconstant local curve
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Implicit Function Theorem
+  - Regular Value Theorem
 relations: []
 review: draft
 audit:

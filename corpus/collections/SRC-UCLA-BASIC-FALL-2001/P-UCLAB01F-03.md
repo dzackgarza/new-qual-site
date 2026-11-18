@@ -5,7 +5,9 @@ kind: problem
 title: Uniform limits of continuous functions are continuous
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Continuous Functions
 relations: []
 review: draft
 audit:

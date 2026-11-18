@@ -5,7 +5,8 @@ kind: problem
 title: Direct local surjectivity from an identity derivative
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Function Theorem
 relations: []
 review: draft
 audit:

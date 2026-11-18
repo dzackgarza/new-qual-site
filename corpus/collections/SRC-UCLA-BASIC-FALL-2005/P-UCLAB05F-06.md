@@ -5,7 +5,9 @@ kind: problem
 title: Polynomial images and squares of real symmetric matrices
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Spectral Theorem
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: Sufficient conditions for equality of mixed partial derivatives
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mixed Partial Derivatives
 relations: []
 review: draft
 audit:

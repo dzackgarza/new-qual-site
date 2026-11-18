@@ -6,7 +6,9 @@ title: 'A rearrangement of the alternating harmonic series converging to $\pi$'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 audit:

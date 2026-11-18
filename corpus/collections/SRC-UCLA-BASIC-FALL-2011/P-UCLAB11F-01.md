@@ -6,7 +6,9 @@ title: Fixed point for a strict contraction on a compact metric space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Fixed Points
+  - Compactness
 relations: []
 review: draft
 audit:

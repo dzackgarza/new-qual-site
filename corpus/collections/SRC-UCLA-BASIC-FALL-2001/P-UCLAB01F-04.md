@@ -5,7 +5,9 @@ kind: problem
 title: Binary sequences are uncountable
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uncountable Sets
+  - Countable and Uncountable Sets
 relations: []
 review: draft
 audit:

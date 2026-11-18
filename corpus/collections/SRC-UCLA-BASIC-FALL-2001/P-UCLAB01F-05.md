@@ -5,7 +5,9 @@ kind: problem
 title: Equality of mixed partial derivatives under continuity hypotheses
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Mixed Partial Derivatives
+  - Partial Derivatives
 relations: []
 review: draft
 audit:

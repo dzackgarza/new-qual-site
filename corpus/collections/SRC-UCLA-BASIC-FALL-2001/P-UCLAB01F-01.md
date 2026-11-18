@@ -5,7 +5,9 @@ kind: problem
 title: A continuous function on a compact set attains its maximum
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Continuous Functions
 relations: []
 review: draft
 audit:

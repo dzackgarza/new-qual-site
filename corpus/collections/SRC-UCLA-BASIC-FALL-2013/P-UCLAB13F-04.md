@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-04
 kind: problem
 title: Vanishing integrals over rational squares force a function to vanish
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Integrals, Continuity]}
 relations: []
 review: draft
 audit:

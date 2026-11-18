@@ -6,7 +6,9 @@ title: Matrix exponentials solve constant-coefficient systems
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Linear Systems of ODEs
 relations: []
 review: draft
 audit:

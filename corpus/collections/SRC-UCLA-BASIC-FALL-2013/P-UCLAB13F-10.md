@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB13F-10
 kind: problem
 title: Signature from signs of leading principal minors
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Signature, Hermitian Matrices]}
 relations: []
 review: draft
 audit:

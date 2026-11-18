@@ -6,7 +6,9 @@ title: Existence of complex eigenvectors and the real case
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Fundamental Theorem of Algebra
 relations: []
 review: draft
 audit:

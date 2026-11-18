@@ -6,7 +6,9 @@ title: Contractions and a fixed point for a prescribed derivative
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Banach Fixed Point Theorem
+  - Completeness
 relations: []
 review: draft
 audit:

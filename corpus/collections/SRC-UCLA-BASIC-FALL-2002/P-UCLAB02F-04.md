@@ -5,7 +5,9 @@ kind: problem
 title: Derive the Leibniz series for $\pi/4$ by integration
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Power Series
+  - Integration
 relations: []
 review: draft
 audit:

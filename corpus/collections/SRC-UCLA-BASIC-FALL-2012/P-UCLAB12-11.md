@@ -6,7 +6,9 @@ title: $LU$ factorization when the leading principal minors are nonzero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Decompositions
+  - Row Reduction
 relations: []
 review: draft
 ---

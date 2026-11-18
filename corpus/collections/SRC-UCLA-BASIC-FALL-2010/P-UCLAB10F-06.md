@@ -6,7 +6,9 @@ title: The inverse of an invertible operator is a polynomial in the operator
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Minimal and Characteristic Polynomials
+  - Inverses
 relations: []
 review: draft
 audit:

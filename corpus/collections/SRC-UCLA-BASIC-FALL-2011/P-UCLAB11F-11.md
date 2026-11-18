@@ -6,7 +6,9 @@ title: Rank-nullity and a quotient-dimension identity
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Dimension
 relations: []
 review: draft
 audit:

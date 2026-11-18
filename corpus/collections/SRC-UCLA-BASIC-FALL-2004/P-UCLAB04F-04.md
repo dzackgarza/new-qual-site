@@ -5,7 +5,9 @@ kind: problem
 title: Continuity of distance from a fixed point in a metric space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Metric Spaces
+  - Continuity
 relations: []
 review: draft
 audit:

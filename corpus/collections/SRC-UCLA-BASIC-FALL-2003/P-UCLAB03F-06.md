@@ -5,7 +5,9 @@ kind: problem
 title: A local diffeomorphism covering the unit disk from boundary data
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Function Theorem
+  - Diffeomorphisms
 relations: []
 review: draft
 audit:

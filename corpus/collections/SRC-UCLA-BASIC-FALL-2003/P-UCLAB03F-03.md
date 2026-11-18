@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of the sequence $(1+1/n)^n$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 audit:

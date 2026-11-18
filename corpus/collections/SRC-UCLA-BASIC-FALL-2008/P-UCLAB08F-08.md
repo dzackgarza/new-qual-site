@@ -6,7 +6,9 @@ title: Eigenvectors need not span a complex vector space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
 relations: []
 review: draft
 audit:

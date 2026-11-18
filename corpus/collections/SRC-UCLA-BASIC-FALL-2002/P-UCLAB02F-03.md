@@ -5,7 +5,9 @@ kind: problem
 title: A subset of $\RR$ that is not a $G_\delta$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - G-delta Sets
+  - Baire Category Theorem
 relations: []
 review: draft
 audit:

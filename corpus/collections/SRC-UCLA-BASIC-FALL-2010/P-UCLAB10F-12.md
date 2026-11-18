@@ -6,7 +6,9 @@ title: Differentiate an integral over a moving disk
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Leibniz Rule
+  - Differentiation
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Pointwise monotone convergence to a continuous limit is uniform
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Monotone Functions
 relations: []
 review: draft
 audit:

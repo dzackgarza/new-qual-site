@@ -5,7 +5,9 @@ kind: problem
 title: Completeness of continuous functions with the supremum norm
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Completeness
+  - Norms
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Cauchy--Schwarz inequality in a complex inner product space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inner Product Spaces
+  - Norms
 relations: []
 review: draft
 audit:

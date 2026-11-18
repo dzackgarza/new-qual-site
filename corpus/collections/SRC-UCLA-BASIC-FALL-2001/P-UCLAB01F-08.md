@@ -5,7 +5,9 @@ kind: problem
 title: Matrix of a composition of a spatial rotation and reflection
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
+  - Reflections
 relations: []
 review: draft
 audit:
