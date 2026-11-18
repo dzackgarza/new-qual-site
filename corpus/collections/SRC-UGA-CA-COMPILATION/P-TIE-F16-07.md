@@ -6,7 +6,8 @@ title: Conformal map of the upper half-plane onto a half-strip
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

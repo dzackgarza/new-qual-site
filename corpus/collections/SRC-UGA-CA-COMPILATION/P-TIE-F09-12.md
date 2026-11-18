@@ -6,7 +6,9 @@ title: Conformal map of the disk minus a tangent disk onto the unit disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

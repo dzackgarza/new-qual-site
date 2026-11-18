@@ -6,7 +6,9 @@ title: Analytic functions mapping a closed curve into $\RR$ are constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Identity Theorem
 relations: []
 review: draft
 audit:

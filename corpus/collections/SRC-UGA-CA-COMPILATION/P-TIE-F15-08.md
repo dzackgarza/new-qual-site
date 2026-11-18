@@ -6,7 +6,9 @@ title: Taylor coefficient ratios detect a pole on the unit circle
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Poles
+  - Power Series
 relations: []
 review: draft
 audit:

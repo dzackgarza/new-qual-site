@@ -6,7 +6,9 @@ title: Casorati--Weierstrass for accumulating poles
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Casorati-Weierstrass
+  - Poles
 relations: []
 review: draft
 audit:

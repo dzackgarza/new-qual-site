@@ -6,7 +6,9 @@ title: Analytic functions real on a closed curve are constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

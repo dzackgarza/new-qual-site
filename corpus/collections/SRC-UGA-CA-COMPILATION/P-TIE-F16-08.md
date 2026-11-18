@@ -6,7 +6,9 @@ title: Fourier transform of $1/\cosh\pi x$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Residues
 relations: []
 review: draft
 audit:

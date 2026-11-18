@@ -6,7 +6,9 @@ title: Lagrange inversion for $z-a-qf(z)=0$ via the residue theorem
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Residue Theorem
+  - Power Series
 relations: []
 review: draft
 audit:

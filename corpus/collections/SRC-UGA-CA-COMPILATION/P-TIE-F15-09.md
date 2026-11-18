@@ -6,7 +6,9 @@ title: Accumulating zeros force an essential singularity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Singularities
+  - Zeros
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Analytic functions unimodular on the unit circle are finite Blaschke prod
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Blaschke Products
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

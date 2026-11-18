@@ -6,7 +6,9 @@ title: The Joukowski map $-\frac12(z+1/z)$ from the upper half-disk to the upper
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

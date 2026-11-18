@@ -6,7 +6,9 @@ title: $z^{-m}$ is not a uniform limit of polynomials on an annulus
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Polynomial Approximation
+  - Laurent Series
 relations: []
 review: draft
 audit:

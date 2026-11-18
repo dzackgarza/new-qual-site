@@ -6,7 +6,9 @@ title: Uniqueness and the Schwarz reflection principle for harmonic functions
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Reflection
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

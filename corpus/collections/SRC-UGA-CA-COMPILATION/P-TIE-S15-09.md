@@ -6,7 +6,9 @@ title: Zeros of analytic functions accumulating at the boundary and the identity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 audit:

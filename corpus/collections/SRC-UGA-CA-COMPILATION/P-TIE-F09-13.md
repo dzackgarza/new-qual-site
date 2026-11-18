@@ -6,7 +6,9 @@ title: Entire functions omitting a bounded open set are constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
+  - Picard
 relations: []
 review: draft
 audit:

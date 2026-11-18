@@ -6,7 +6,9 @@ title: Vitali's convergence theorem
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Vitali Convergence Theorem
+  - Normal Families
 relations: []
 review: draft
 audit:

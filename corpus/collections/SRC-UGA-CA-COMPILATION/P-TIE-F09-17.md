@@ -6,7 +6,9 @@ title: Limit of integrals over small circular arcs when $(z-a)f(z)\to A$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 audit:

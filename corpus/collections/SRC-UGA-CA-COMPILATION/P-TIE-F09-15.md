@@ -6,7 +6,9 @@ title: Termwise differentiation of locally uniformly absolutely convergent serie
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Series of Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

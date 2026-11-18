@@ -6,7 +6,8 @@ title: Laurent series of $\frac1z+\frac{1}{z^2-1}$ in all annuli
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

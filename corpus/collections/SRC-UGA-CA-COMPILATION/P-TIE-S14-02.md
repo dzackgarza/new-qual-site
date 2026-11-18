@@ -6,7 +6,8 @@ title: $\int_\gamma z^n\,dz$ over circles not enclosing the origin without Cauch
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Univalent functions on a punctured plane are Möbius transformations
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Univalent Functions
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

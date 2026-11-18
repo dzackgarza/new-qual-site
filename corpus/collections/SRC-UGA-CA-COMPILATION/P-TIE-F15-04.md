@@ -6,7 +6,8 @@ title: Limit of integrals over vertical segments when $f(x+iy)\to A$ uniformly
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

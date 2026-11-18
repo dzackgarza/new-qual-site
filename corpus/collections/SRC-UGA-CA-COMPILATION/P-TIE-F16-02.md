@@ -6,7 +6,9 @@ title: Orthogonality of level curves of $\operatorname{Re} f$ and $\operatorname
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

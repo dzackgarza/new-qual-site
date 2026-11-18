@@ -6,7 +6,9 @@ title: Area of the image of an annulus under a univalent Laurent series
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Univalent Functions
+  - Laurent Series
 relations: []
 review: draft
 audit:

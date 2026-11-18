@@ -6,7 +6,8 @@ title: Analyticity of the gamma function and the reflection formula
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Liouville's theorem via $\int_{\abs{z}=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Contour Integration
 relations: []
 review: draft
 audit:
