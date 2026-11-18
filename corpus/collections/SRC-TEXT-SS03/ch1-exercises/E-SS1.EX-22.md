@@ -13,6 +13,14 @@ audit:
   - event: solution-written
     by: gpt-5.6-sol
     date: 2026-09-10
+  - event: solution-written
+    by: claude
+    date: 2026-11-18
+    note: >-
+      Restructured into numbered steps for issue #2: the generating-function identity, its extension to an
+      identity of rational functions, the pole count at a primitive $D$-th root, and the conclusion $D=1$. No
+      retained solution set covers this exercise (the collection retains the textbook, not a solutions manual),
+      so the argument is the card's own; it was re-read for this pass.
 ---
 
 ::: {.exercise}
@@ -28,29 +36,49 @@ Show that $\NN$ cannot be partitioned into a finite number of subsets that are i
 :::
 
 ::: {.solution}
-Suppose
-$$
-\NN=S_1\sqcup\cdots\sqcup S_r,
-\qquad
-S_j=\{a_j+k d_j:k\ge0\},
-$$
-where the positive steps $d_1,\ldots,d_r$ are distinct. For $\abs{z}<1$, disjointness of the partition gives
-$$
-\frac{z}{1-z}
-=\sum_{n\ge1}z^n
-=\sum_{j=1}^r\sum_{k\ge0}z^{a_j+kd_j}
-=\sum_{j=1}^r\frac{z^{a_j}}{1-z^{d_j}}.
-\tag{1}
-$$
-Both sides are rational functions, so (1), initially valid on the unit disc, is an identity of rational functions.
+No retained solution set covers this exercise; the collection retains the textbook (`assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`) and no solutions manual, so the argument is the card's own. A partition of $\NN$ into finitely many arithmetic progressions $S_{j}=\{a_{j}+kd_{j}:k\ge0\}$ with distinct positive steps $d_{1},\dots,d_{r}$ is supposed.
 
-Let $D=\max_j d_j$. If $D>1$, choose a primitive $D$th root of unity $\zeta$. The left side of (1) is regular at $\zeta$, because $\zeta\ne1$.
+::: pf
 
-On the right, a denominator $1-z^{d_j}$ vanishes at $\zeta$ exactly when $D\mid d_j$. Since $1\le d_j\le D$, this happens exactly for the unique index $j$ with $d_j=D$. For that term, $z^{a_j}$ is nonzero at $\zeta$, while $1-z^D$ has a simple zero there because
-$$
-\frac{d}{dz}(1-z^D)\evalfrom_{z=\zeta}=-D\zeta^{D-1}\ne0.
-$$
-The other terms are regular at $\zeta$, so the right side has a pole at $\zeta$, contradicting regularity of the left side.
+::: {.pf-step #identity}
+For $\abs{z}<1$, $\dfrac{z}{1-z}=\sum_{j=1}^{r}\dfrac{z^{a_{j}}}{1-z^{d_{j}}}$.
 
-Therefore $D=1$. Since the steps are distinct positive integers, there is only one progression, and its step is $1$. A progression $\{a,a+1,a+2,\ldots\}$ equals all of $\NN$ only when $a=1$. Thus the only such partition is the trivial one $a=d=1$.
+::: pf-proof
+Since the $S_{j}$ partition $\NN$ and each is the progression with first term $a_{j}$ and step $d_{j}$,
+$$
+\frac{z}{1-z}=\sum_{n\ge1}z^{n}=\sum_{j=1}^{r}\sum_{k\ge0}z^{a_{j}+kd_{j}}=\sum_{j=1}^{r}z^{a_{j}}\sum_{k\ge0}\bigl(z^{d_{j}}\bigr)^{k}=\sum_{j=1}^{r}\frac{z^{a_{j}}}{1-z^{d_{j}}},
+$$
+the geometric series converging because $\abs{z^{d_{j}}}<1$.
+:::
+
+:::
+
+::: {.pf-step #rational}
+The identity holds as an identity of rational functions.
+
+::: pf-proof
+Both sides are rational functions of $z$: the left is $z/(1-z)$, and the right is a finite sum of quotients of polynomials. Their difference is a rational function vanishing on the open disc $\abs{z}<1$, which is infinite with an accumulation point, so it vanishes identically; hence the two rational functions are equal.
+:::
+
+:::
+
+::: {.pf-step #pole}
+If $D=\max_{j}d_{j}>1$, taking a primitive $D$-th root of unity $\zeta$ makes the right side of step [](#identity){.pf-ref} have a pole at $\zeta$ while the left side does not.
+
+::: pf-proof
+$\zeta\ne1$, so $1-\zeta\ne0$ and $z/(1-z)$ is regular at $\zeta$. On the right, the denominator $1-z^{d_{j}}$ vanishes at $\zeta$ exactly when $\zeta^{d_{j}}=1$, that is when $D\mid d_{j}$; since $1\le d_{j}\le D$, this holds exactly for the index $j$ with $d_{j}=D$, and the steps are distinct so there is just one such index. At that index the numerator $\zeta^{a_{j}}$ is nonzero, so the term has a pole at $\zeta$; the other terms are regular there. Summing, the right side has a pole at $\zeta$, contradicting the equality of rational functions.
+:::
+
+:::
+
+::: {.pf-step}
+The only such partition is the trivial one.
+
+::: pf-proof
+Step [](#pole){.pf-ref} rules out $D>1$, so $D=1$: every step equals $1$, and since the steps are distinct there is only one progression, $S_{1}=\{a_{1},a_{1}+1,a_{1}+2,\dots\}$. That set is all of $\NN$ exactly when $a_{1}=1$, which is the trivial case $a=d=1$. So no nontrivial partition of $\NN$ into finitely many arithmetic progressions with distinct steps exists.
+:::
+
+:::
+
+:::
 :::
