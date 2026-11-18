@@ -37,6 +37,11 @@ audit:
     indicator of a single point, (x_i = 1 iff i = n); the card uses the initial block of
     n ones, which is the same kind of explicit injection and is injective for the stated
     reason.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The statement was checked against Munkres, *Topology* (2000), §9 Exercise 1, printed p. 61, and the explicit injection is transcribed from the retained set: Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.1, printed pp. 100--101, who uses the indicator of a single point where the card uses an initial block of ones. Checked: every value lies in $X^\omega$, distinct indices give distinct values, and the formula names no arbitrary choice.
 ---
 
 ::: {.exercise}
@@ -45,13 +50,41 @@ Define an injective map $f: \ZZ_+ \to X^\omega$, where $X$ is the two-element se
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.1, printed pp. 100--101** (`tmp/sources/munkres-solutions-whitman.pdf`); he uses the indicator of a single point where the card uses an initial block of ones, and both are explicit injections.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.1, printed pp. 100--101** (`tmp/sources/munkres-solutions-whitman.pdf`); he uses the indicator of a single point where the card uses an initial block of ones, and both are explicit injections. The statement is Munkres, *Topology* (2000), §9 Exercise 1, printed p. 61.
 
-For $n\in\ZZ_+$, define
-$$
-f(n)=(\underbrace{1,\ldots,1}_{n\text{ entries}},0,0,\ldots)\in X^\omega.
-$$
-If $m<n$, then the $n$-th coordinate of $f(m)$ is $0$, whereas the $n$-th coordinate of $f(n)$ is $1$. Hence $f(m)\ne f(n)$, so $f$ is injective.
+::: pf
 
-The construction is explicit and makes no choices from an arbitrary family of sets, so no form of the axiom of choice is used.
+::: {.pf-step #definition}
+For $n\in\ZZ_+$ the formula $f(n)\coloneqq(1,\dots,1,0,0,\dots)$, with $n$ entries equal to $1$, defines an element of $X^\omega=\{0,1\}^\omega$.
+
+::: pf-proof
+The sequence has a definite value in $\{0,1\}$ at every coordinate: $1$ at coordinates $1,\dots,n$ and $0$ at every coordinate greater than $n$. Hence it is a function $\ZZ_+\to X$, that is, a point of $X^\omega$.
+:::
+:::
+
+::: {.pf-step #injective}
+$f(m)\neq f(n)$ for $m\neq n$.
+
+::: pf-proof
+Let $m<n$. The $n$-th coordinate of $f(m)$ is $0$, because $n>m$, while the $n$-th coordinate of $f(n)$ is $1$. Two sequences differing in some coordinate are different points.
+:::
+:::
+
+::: {.pf-step #no-choice}
+The definition uses no choice.
+
+::: pf-proof
+Each value $f(n)$ is given by an explicit rule from $n$ alone; no selection from a family of nonempty sets is made, and no well-ordering is invoked. So the map is produced in Zermelo--Fraenkel set theory without the axiom of choice.
+:::
+:::
+
+::: {.pf-step}
+There is an explicit injection $\ZZ_+\to X^\omega$ for $X=\{0,1\}$.
+
+::: pf-proof
+Steps [](#definition){.pf-ref}, [](#injective){.pf-ref} and [](#no-choice){.pf-ref} give the map, its injectivity and the absence of choice.
+:::
+:::
+
+:::
 :::
