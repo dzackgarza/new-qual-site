@@ -203,7 +203,7 @@ An interval $(1/b,1/a)$ and a ray $(-\infty,1/a)$ or $(1/b,+\infty)$ are open in
 
 ::: pf-proof
 
-For subtraction, let $\nu\colon\RR\to\RR$, $\nu(y)\coloneqq-y$, which is continuous (Theorem 18.2(a) with the constant $0$ composed with addition, or directly from $\abs{(-y)-(-y_{0})}=\abs{y-y_{0}}$). By Exercise 18.10 (printed p. 112) the product map $\mathrm{id}_{\RR}\times\nu\colon\RR^{2}\to\RR^{2}$ is continuous, and $x-y$ is the composite of it with the continuous addition of step [](#addition){.pf-ref}; a composite of continuous maps is continuous (Theorem 18.2(c), printed p. 107).
+For subtraction, let $\nu\colon\RR\to\RR$, $\nu(y)\coloneqq-y$, which is an isometry of $\RR$ and hence continuous, since $\abs{\nu(y)-\nu(y_{0})}=\abs{(-y)-(-y_{0})}=\abs{y-y_{0}}$, so that $\delta=\varepsilon$ serves in the definition. By Exercise 18.10 (printed p. 112) the product map $\mathrm{id}_{\RR}\times\nu\colon\RR^{2}\to\RR^{2}$ is continuous, and $x-y$ is the composite of it with the continuous addition of step [](#addition){.pf-ref}; a composite of continuous maps is continuous (Theorem 18.2(c), printed p. 107).
 
 For the quotient, let $Z\coloneqq\RR\times(\RR-\theset{0})$, a subspace of $\RR^{2}$. The map $\Phi\colon Z\to\RR^{2}$, $\Phi(x,y)\coloneqq(x,1/y)$, is continuous: its first coordinate is the restriction to $Z$ of the projection $\pi_{1}$, and its second is $f\circ\pi_{2}$ with $f$ the continuous map of step [](#reciprocal){.pf-ref}, both continuous by Theorem 18.4 (printed p. 110) and Theorem 18.2(d) (printed p. 107). Since $x/y$ is the composite of $\Phi$ with the continuous multiplication of step [](#multiplication){.pf-ref}, it too is continuous on $Z$, and that is the quotient operation with its stated domain. So (d) holds.
 
