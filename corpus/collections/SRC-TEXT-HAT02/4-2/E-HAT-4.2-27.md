@@ -36,6 +36,17 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument above, which is correct as it
+    stood: exactness gives $\partial a=0$, Lemma 4.39 gives $a+b-a=(\partial a)b$, and the
+    trivial action gives $b$. Added: the hypothesis that $\pi_2(X,A,x_0)$ is a group with a
+    $\pi_1(A)$-action and is not assumed abelian, and the explicit appeal to exactness at
+    $\pi_2(X,A,x_0)$ of the sequence on printed p. 344. Cited: Lemma 4.39 on printed p. 373,
+    the exercise on printed p. 391. Not claimed: a retained solution set, so the argument is
+    the card's own.
 ---
 
 ::: {.problem}
@@ -43,33 +54,51 @@ Show that the image of the map $\pi_2(X, x_0) \to \pi_2(X, A, x_0)$ lies in the 
 :::
 
 ::: {.solution}
-Let
-$$
-j_*:\pi_2(X,x_0)\to\pi_2(X,A,x_0)
-$$
-be the natural map, and let
-$$
-a\in\operatorname{im}j_*.
-$$
-Exactness of the long homotopy sequence of the pair gives
-$$
-\partial a=0\in\pi_1(A,x_0).
-$$
-For arbitrary $b\in\pi_2(X,A,x_0)$, Lemma 4.39 says
-$$
-a+b-a=(\partial a)b.
-$$
-Since $\partial a$ is the identity element of $\pi_1(A,x_0)$, its action on $b$ is trivial, so
-$$
-a+b-a=b.
-$$
-Hence
-$$
-a+b=b+a.
-$$
-Thus every element in the image of $j_*$ commutes with every element of the relative group:
-$$
-\boxed{\operatorname{im}\bigl(\pi_2(X)\to\pi_2(X,A)\bigr)
-\subseteq Z\bigl(\pi_2(X,A)\bigr).}
-$$
+The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 27, printed p. 391, with the parenthetical remark the book prints beside it. No retained solution set covers this exercise, so the argument below is the card's own; it is one application of Lemma 4.39, printed p. 373.
+
+Throughout $(X,A,x_0)$ is a pointed pair with $A\subset X$, $j:(X,x_0)\to(X,A)$ the inclusion of pairs, and $\partial:\pi_2(X,A,x_0)\to\pi_1(A,x_0)$ the boundary map of the long exact sequence. The set $\pi_2(X,A,x_0)$ is a group, written additively but not assumed abelian, on which $\pi_1(A,x_0)$ acts, and $\pi_2(X,x_0)$ is abelian.
+
+::: pf
+
+::: {.pf-step #exactness}
+If $a=j_*(\tilde a)$ for some $\tilde a\in\pi_2(X,x_0)$, then $\partial a=0$.
+
+::: pf-proof
+The long exact sequence of the pair (printed p. 344) is exact at $\pi_2(X,A,x_0)$, so $\operatorname{im}j_*=\ker\partial$. Hence $\partial a=\partial j_*\tilde a=0$ by exactness and the chain property $\partial\circ j_*=0$.
+
+:::
+
+:::
+
+::: {.pf-step #lemma}
+For all $a,b\in\pi_2(X,A,x_0)$, the identity $a+b-a=(\partial a)b$ holds, where $(\partial a)b$ is the action of the element $\partial a\in\pi_1(A,x_0)$ on $b$.
+
+::: pf-proof
+This is Lemma 4.39, printed p. 373, obtained by an explicit homotopy from $a+b-a$ to $(\partial a)b$ carried by the boundary circle of the class $a$.
+
+:::
+
+:::
+
+::: {.pf-step #commutes}
+Every $a\in\operatorname{im}j_*$ commutes with every $b\in\pi_2(X,A,x_0)$.
+
+::: pf-proof
+Fix $b$ and write $a=j_*(\tilde a)$. By step [](#exactness){.pf-ref}, $\partial a=0$, so the action of $\partial a$ on $b$ is the trivial action and $(\partial a)b=b$. Step [](#lemma){.pf-ref} then gives $a+b-a=b$. Adding $a$ on the right in the group $\pi_2(X,A,x_0)$ gives $a+b=b+a$.
+
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$\operatorname{im}\bigl(j_*:\pi_2(X,x_0)\to\pi_2(X,A,x_0)\bigr)\subset Z\bigl(\pi_2(X,A,x_0)\bigr)$.
+
+::: pf-proof
+Step [](#commutes){.pf-ref} says precisely that each element of the image commutes with every element of the group, which is the definition of the centre.
+
+:::
+
+:::
+
+:::
 :::
