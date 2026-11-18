@@ -6,7 +6,8 @@ title: Compute the negative square of an inverse matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Inverses
 relations: []
 review: draft
 audit:

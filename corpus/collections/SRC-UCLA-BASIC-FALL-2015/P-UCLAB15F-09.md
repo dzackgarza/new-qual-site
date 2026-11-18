@@ -6,7 +6,9 @@ title: Nonnegative determinant of a real skew-symmetric matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Skew-Symmetric Matrices
+  - Determinants
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Lipschitz extension from the boundary of the unit ball
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Lipschitz Continuity
+  - Extensions
 relations: []
 review: draft
 audit:

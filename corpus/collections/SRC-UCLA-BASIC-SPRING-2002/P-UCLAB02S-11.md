@@ -5,7 +5,9 @@ kind: problem
 title: Simultaneous orthonormal eigenbasis for commuting self-adjoint operators
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Simultaneous Diagonalization
+  - Self-Adjoint Operators
 relations: []
 review: draft
 audit:

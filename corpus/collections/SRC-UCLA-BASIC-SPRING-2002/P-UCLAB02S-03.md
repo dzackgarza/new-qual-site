@@ -5,7 +5,9 @@ kind: problem
 title: Compact metric spaces are sequentially compact
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 audit:

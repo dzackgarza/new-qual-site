@@ -5,7 +5,9 @@ kind: problem
 title: Trace-zero matrices and sums of commutators
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Trace
+  - Commutators
 relations: []
 review: draft
 audit:

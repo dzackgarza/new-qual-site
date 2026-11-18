@@ -5,7 +5,8 @@ kind: problem
 title: Uniform continuity of the square-root function on the half-line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 audit:

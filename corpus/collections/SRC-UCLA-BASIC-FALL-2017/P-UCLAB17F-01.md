@@ -6,7 +6,9 @@ title: Orthogonal polynomials of degree at most three
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonality
+  - Polynomials
 relations: []
 review: draft
 audit:

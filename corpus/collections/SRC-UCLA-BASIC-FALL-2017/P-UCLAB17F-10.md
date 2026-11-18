@@ -6,7 +6,9 @@ title: A continuous function with all polynomial moments zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Polynomials
 relations: []
 review: draft
 audit:

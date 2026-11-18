@@ -5,7 +5,9 @@ kind: problem
 title: Matrices of the form $R^T\operatorname{diag}(1,-1)R$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Signature
 relations: []
 review: draft
 audit:

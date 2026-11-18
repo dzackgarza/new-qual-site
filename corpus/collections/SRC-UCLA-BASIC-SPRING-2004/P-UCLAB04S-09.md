@@ -5,7 +5,9 @@ kind: problem
 title: Equivalent characterizations of a finite-dimensional isometry
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inner Product Spaces
+  - Orthogonal Matrices
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Young inequality
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inequalities
+  - Holder Inequality
 relations: []
 review: draft
 audit:

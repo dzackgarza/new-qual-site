@@ -6,7 +6,9 @@ title: Decay of a monotone summable sequence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Monotone Functions
 relations: []
 review: draft
 audit:

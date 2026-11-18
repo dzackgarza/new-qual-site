@@ -6,7 +6,9 @@ title: An operator preserving every hyperplane is scalar
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Transformations
+  - Invariant Subspaces
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Equicontinuity and uniform convergence on $[0,1]$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Equicontinuity
+  - Uniform Convergence
 relations: []
 review: draft
 audit:

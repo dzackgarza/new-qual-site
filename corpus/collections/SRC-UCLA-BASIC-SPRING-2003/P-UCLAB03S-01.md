@@ -5,7 +5,9 @@ kind: problem
 title: Extending a uniformly continuous function to the closed interval
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Extensions
 relations: []
 review: draft
 audit:

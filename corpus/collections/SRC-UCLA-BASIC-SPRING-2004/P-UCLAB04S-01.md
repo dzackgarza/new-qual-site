@@ -5,7 +5,9 @@ kind: problem
 title: Injecting binary sequences into the real line by decimal expansion
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uncountable Sets
+  - Real Numbers
 relations: []
 review: draft
 audit:

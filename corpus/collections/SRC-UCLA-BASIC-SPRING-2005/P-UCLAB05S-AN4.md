@@ -5,7 +5,8 @@ kind: problem
 title: Total variation of a continuously differentiable function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Total Variation
 relations: []
 review: draft
 audit:

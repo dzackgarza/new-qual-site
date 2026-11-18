@@ -6,7 +6,9 @@ title: 'Monotonicity of $f(x)/x$ for $f$ with decreasing derivative'
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Mean Value Theorem
+  - Monotone Functions
 relations: []
 review: draft
 audit:

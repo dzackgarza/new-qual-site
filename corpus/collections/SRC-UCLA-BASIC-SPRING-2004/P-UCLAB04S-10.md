@@ -5,7 +5,9 @@ kind: problem
 title: Diagonalizability of a real symmetric matrix without the spectral theorem
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Diagonalization
 relations: []
 review: draft
 audit:

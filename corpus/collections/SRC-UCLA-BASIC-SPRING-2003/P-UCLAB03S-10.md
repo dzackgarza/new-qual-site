@@ -5,7 +5,9 @@ kind: problem
 title: A self-adjoint operator with trace-zero square vanishes
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Self-Adjoint Operators
+  - Trace
 relations: []
 review: draft
 audit:

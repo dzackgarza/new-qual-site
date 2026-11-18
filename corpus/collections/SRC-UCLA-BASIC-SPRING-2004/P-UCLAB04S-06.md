@@ -5,7 +5,9 @@ kind: problem
 title: Equivalence of norms and closedness of finite-dimensional subspaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Norms
+  - Dimension
 relations: []
 review: draft
 audit:

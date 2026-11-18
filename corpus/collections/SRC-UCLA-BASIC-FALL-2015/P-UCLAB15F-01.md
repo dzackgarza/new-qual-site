@@ -6,7 +6,9 @@ title: Fekete's lemma for a subadditive positive sequence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Limits
+  - Inequalities
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Uniform continuity and continuous extension from the open unit interval
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
+  - Extensions
 relations: []
 review: draft
 audit:

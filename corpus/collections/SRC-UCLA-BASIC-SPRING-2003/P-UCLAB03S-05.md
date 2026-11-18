@@ -5,7 +5,9 @@ kind: problem
 title: Extremizing a binary quadratic form on the unit circle
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Lagrange Multipliers
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: Multipliers preserving a finite $\QQ$-span of complex numbers are algebraic
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Algebraic Numbers
+  - Fields
 relations: []
 review: draft
 audit:

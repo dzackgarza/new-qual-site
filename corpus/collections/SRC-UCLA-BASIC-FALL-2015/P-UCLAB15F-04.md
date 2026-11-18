@@ -6,7 +6,9 @@ title: Limit of a recursively defined Volterra sequence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Sequences of Functions
 relations: []
 review: draft
 audit:

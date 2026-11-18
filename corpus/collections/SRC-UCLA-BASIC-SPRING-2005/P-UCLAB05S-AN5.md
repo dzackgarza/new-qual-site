@@ -5,7 +5,9 @@ kind: problem
 title: Convergence of Cesàro means and failure of the converse
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Cesaro Means
+  - Series of Numbers
 relations: []
 review: draft
 audit:

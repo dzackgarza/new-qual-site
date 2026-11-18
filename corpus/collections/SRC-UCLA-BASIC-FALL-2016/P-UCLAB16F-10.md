@@ -5,7 +5,9 @@ kind: problem
 title: Point of $x^4+y^4=2$ closest to the line $y=x-100$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Lagrange Multipliers
+  - Multivariable Calculus
 relations: []
 review: draft
 audit:

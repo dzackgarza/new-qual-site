@@ -5,7 +5,9 @@ kind: problem
 title: Separability and second countability of metric spaces
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Separability
+  - Metric Spaces
 relations: []
 review: draft
 audit:

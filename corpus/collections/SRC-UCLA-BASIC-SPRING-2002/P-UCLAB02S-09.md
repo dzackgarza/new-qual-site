@@ -5,7 +5,8 @@ kind: problem
 title: Matrix of a rotation in a specified two-plane in four-space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rotations
 relations: []
 review: draft
 audit:

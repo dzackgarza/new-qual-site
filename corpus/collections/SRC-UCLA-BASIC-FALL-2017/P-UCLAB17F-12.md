@@ -6,7 +6,9 @@ title: Arzela-Ascoli theorem on a compact metric space
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Arzela-Ascoli Theorem
+  - Function Spaces
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: A subset of the real line that is neither F-sigma nor G-delta
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - G-delta Sets
+  - Baire Category Theorem
 relations: []
 review: draft
 audit:

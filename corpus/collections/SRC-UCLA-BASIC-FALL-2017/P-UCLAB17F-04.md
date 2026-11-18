@@ -6,7 +6,9 @@ title: When the coordinate duals form a basis of the algebraic dual
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Dual Spaces
+  - Bases
 relations: []
 review: draft
 audit:

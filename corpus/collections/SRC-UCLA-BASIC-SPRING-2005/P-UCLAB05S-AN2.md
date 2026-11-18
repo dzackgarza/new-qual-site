@@ -5,7 +5,9 @@ kind: problem
 title: Accumulation points in the binary sequence space
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Metric Spaces
+  - Limits
 relations: []
 review: draft
 audit:

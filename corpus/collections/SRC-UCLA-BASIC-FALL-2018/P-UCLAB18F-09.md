@@ -6,7 +6,9 @@ title: Decomposition relative to two independent linear functionals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Functionals
+  - Dual Spaces
 relations: []
 review: draft
 audit:

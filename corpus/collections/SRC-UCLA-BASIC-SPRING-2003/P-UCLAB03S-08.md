@@ -5,7 +5,9 @@ kind: problem
 title: Diagonalization from distinct characteristic roots
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Diagonalization
+  - Characteristic Polynomial
 relations: []
 review: draft
 audit:
