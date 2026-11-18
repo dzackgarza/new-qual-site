@@ -194,6 +194,22 @@ audit:
     citation changes, and the mathematics of the card is as the events above
     record it.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Part (b) rested on Dan Bragg's *Automorphisms of curves*, and the card
+    called it a published solution. It is a post on the blog
+    functorofpoints.wordpress.com of 2015-11-20 with no printed page, which is
+    not a publication, so the remark now names it as a post, says that no
+    publication located proves part (b) that way, and steps s8 to s11, which
+    take its paragraphs, are marked as the card's own. The National Taiwan
+    University exercise the remark cites is now given its page, printed p. 4 of
+    that set, and Yang Pi-Yeh's exercise 5.1.11 its page, printed p. 101, both
+    read in their text versions. Checked in this pass: the text version of the
+    post, the two text versions of the sets, and the printed exercise at
+    Hartshorne V.1.11, printed p. 368. Not checked: no publication was searched
+    for a proof of part (b) in this pass, and no step was re-derived.
 ---
 
 ::: {.problem}
@@ -354,7 +370,7 @@ $$
 $$
 
 ::: pf-proof
-Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6, printed p. 367. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6, printed p. 367. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
 
 :::
 
@@ -370,7 +386,7 @@ $$
 is injective.
 
 ::: pf-proof
-Bragg, Proof 2, the paragraph beginning "We use intersection theory on the surface $X=C\times C$": the graphs of distinct automorphisms are distinct irreducible curves, so they share no irreducible component and their intersection number is nonnegative, a sum of nonnegative local intersection multiplicities. If $\Gamma_\sigma\equiv\Gamma_\tau$, then
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, Proof 2, the paragraph beginning "We use intersection theory on the surface $X=C\times C$": the graphs of distinct automorphisms are distinct irreducible curves, so they share no irreducible component and their intersection number is nonnegative, a sum of nonnegative local intersection multiplicities. If $\Gamma_\sigma\equiv\Gamma_\tau$, then
 $$
 \Gamma_\sigma\cdot\Gamma_\tau=\Gamma_\tau^2=2-2g<0
 $$
@@ -388,7 +404,7 @@ $$
 in $4g-4$, and $K$ is ample.
 
 ::: pf-proof
-Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
 $$
 K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
@@ -430,12 +446,12 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the published component bookkeep
 :::
 
 ::: {.remark title="Published solution"}
-Dan Bragg, *Automorphisms of curves* (2015), Proof 2, "Intersection Theory", proves (b) given (a): the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
+Dan Bragg, *Automorphisms of curves* (2015-11-20), Proof 2, "Intersection Theory", a post on the blog functorofpoints.wordpress.com with no printed page, text version `tmp/sources/bragg-2015-automorphisms-of-curves.md`, proves (b) given (a). No publication located proves it that way, so each step of the argument below that takes a paragraph of his post is marked as the card's own; what it is a post and not a publication means is that no printed page can be cited for those steps. The argument runs: the graphs of distinct automorphisms of a curve of genus $g\ge2$ are distinct irreducible curves on $C\times C$, which therefore meet nonnegatively, whereas numerically equivalent graphs would meet in $\Gamma^2=2-2g<0$; so $\sigma\mapsto[\Gamma_\sigma]$ is injective, and every graph meets the canonical divisor of $C\times C$ in the same $4g-4$, which is what part (a) counts. Bragg leaves the ampleness of $K_{C\times C}$ implicit and asserts $\Gamma^2=2-2g$ for the graph of any automorphism without argument; step [](#s8){.pf-ref} gives the normal-bundle reason and step [](#s10){.pf-ref} the Nakai--Moishezon check.
 
 Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in the form of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}: adjunction bounds the square of each prime component below, distinct components meet nonnegatively, and $b_i\le d$ gives $\sum_ib_i^2\le d^2$. Its display for $D^2$ replaces $b_i^2$ by $b_id$ under $D_i\cdot K_X$, an inequality that follows from $b_i\le d$ when $D_i\cdot K_X\ge0$, as it is when $K_X$ is nef; for a component with $D_i\cdot K_X<0$ and $b_i<d$ the comparison is reversed. Its closing display bounds $(D-E)^2$ below, for fixed $E$, by an affine function of $D-E$, which with negative definiteness confines $D-E$ to a ball. The card reaches finiteness through steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, which bound the class of every prime component with $1\le C\cdot H\le d$ and then count the components.
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), takes the same route for (a) but displays the estimate $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$; reaching $\sum_ic_i^2$ through $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, and proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), printed p. 4 of that set, takes the same route for (a) but displays the estimate $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$; reaching $\sum_ic_i^2$ through $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, and proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.11, takes an orthogonal basis $R_1,\dots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$". The unknown that must be bounded is not $a_i$ but the coefficients of the curves occurring in $D+\sum a_iR_i$, which step [](#s4){.pf-ref} bounds through adjunction.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\dots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$". The unknown that must be bounded is not $a_i$ but the coefficients of the curves occurring in $D+\sum a_iR_i$, which step [](#s4){.pf-ref} bounds through adjunction.
 
 :::
