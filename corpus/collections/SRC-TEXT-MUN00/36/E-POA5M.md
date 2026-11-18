@@ -29,6 +29,16 @@ audit:
     each product f_i . g_i takes values in R^{k_i} and that f_i is only defined on U_i, so that the
     product must be read as zero off W_i; the card defines F_i piecewise and checks continuity at
     the boundary of U_i.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A review of this card reported that the solution section denied the retained source that the
+    audit cites. Confirmed against the retained text: dbFin's Section 36 Problem 2 solution gives
+    the finite chart cover, partition of unity, and assembled map F. The solution section now
+    restores that attribution and states the two differences already recorded above, the
+    Urysohn construction of the support functions and the zero extension of each product
+    coordinate off W_i. The mathematical argument and its steps are unchanged.
 ---
 
 ::: {.exercise}
@@ -40,7 +50,7 @@ Show that $X$ can be imbedded in $\RR^N$ for some positive integer $N$.
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own piecing argument is completed, with the shrinking, the Urysohn functions and the injectivity of the assembled map as separate steps.
+The argument is the retained published solution, **dbFin, "Section 36: Problem 2 Solution"** (`tmp/sources/dbfin/section-36-imbeddings-of-manifolds/problem-2-solution.txt`), restructured with the shrinking, the Urysohn functions and the injectivity of the assembled map as separate steps. The source reaches the support functions through the partition of unity of Theorem 36.1; the card instead builds them from the double shrinking, and it treats each product $f_i\cdot g_i$ in $\RR^{k_i}$ and extends it by zero off $W_i$, as the audit records.
 
 Let $X$ be compact Hausdorff, and for each $x$ let $U_{x}\ni x$ be a neighbourhood admitting an imbedding $e_{x}:U_{x}\to\RR^{k_{x}}$.
 
