@@ -28,6 +28,16 @@ audit:
     immediate predecessor in {1,2}xZ_+, while every element of Z_+x{1,2} other than the
     least has an immediate predecessor, and an order isomorphism would have to carry one to
     the other. His closing ordinal-number remark is kept as a remark.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the transcribed proof into numbered steps and supplied the two principles it used
+    silently: an order isomorphism carries the least element of one ordered set to the least
+    element of the other, and its inverse is order-preserving, so strict inequalities are reflected
+    as well as preserved. The two interval computations (nothing lies between (n-1,2) and (n,1),
+    nothing between (n,1) and (n,2)) are kept, since the argument turns on them. The mathematics is
+    the earlier reading's. Not re-read this session: the Whitman page, printed p. 109.
 ---
 
 ::: {.exercise}
@@ -37,26 +47,76 @@ Do they have the same order type?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.3, printed p. 109** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof and the closing remark are his.
 
-They do **not** have the same order type. Write $A=\{1,2\}\times\ZZ_{+}$ and $B=\ZZ_{+}\times\{1,2\}$, both in the dictionary order, and suppose there is an order-preserving bijection $f:A\to B$ (an order isomorphism onto $B$).
+The proof and the closing remark are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.3, printed p. 109** (`tmp/sources/munkres-solutions-whitman.pdf`).
 
-The element $(1,1)$ is the smallest element of both $A$ and $B$. Hence $(2,1)\in A$ is not the smallest element of $A$, so $f(2,1)=(n,b)$ with $(n,b)\ne(1,1)$. We exhibit the immediate predecessor of $(n,b)$ in $B$:
+Write $A=\{1,2\}\times\ZZ_{+}$ and $B=\ZZ_{+}\times\{1,2\}$, each with the dictionary order: $(i,a)<(j,b)$ when $i<j$, or when $i=j$ and $a<b$.
 
-- if $b=1$, then $n>1$, and $y=(n-1,2)$;
-- if $b=2$, then $y=(n,1)$.
+::: pf
 
-In the first case $(n-1,2)<(n,1)$ because $n-1<n$, and nothing lies strictly between: an element $(m,c)$ with $(n-1,2)<(m,c)<(n,1)$ has $n-1\le m\le n$; for $m=n-1$ the inequality $(n-1,2)<(n-1,c)$ forces $c>2$, impossible, and for $m=n$ the inequality $(m,c)<(n,1)$ forces $c<1$, impossible. In the second case $(n,1)<(n,2)$ and an element between them has $m=n$, forcing $1<c<2$, or $m\ne n$, which puts it outside the interval. So in both cases $y$ is the immediate predecessor of $(n,b)$ in $B$.
+::: {.pf-step #wellordered}
+$A$ and $B$ are well ordered.
 
-Now let $x=f^{-1}(y)$. An order-preserving bijection has an order-preserving inverse, so $y<f(2,1)$ gives $x<(2,1)$, and therefore $x=(1,a)$ for some $a\in\ZZ_{+}$: the first coordinate of $x$ cannot be $2$, since $(2,a')\ge(2,1)$ for every $a'\in\ZZ_{+}$. But then
-$$
-x=(1,a)<(1,a+1)<(2,1),
-$$
-and applying the order-preserving $f$,
-$$
-y=f(1,a)<f(1,a+1)<f(2,1)=(n,b),
-$$
-which contradicts $y$ being an immediate predecessor of $f(2,1)$ in $B$. So no order-preserving bijection $A\to B$ exists, and the two ordered sets have different order types.
+::: pf-proof
+For a nonempty subset of $A$, the set of first coordinates is a nonempty subset of $\{1,2\}$ with least element $i_{0}$; the second coordinates of elements with first coordinate $i_{0}$ form a nonempty subset of $\ZZ_{+}$ with least element $a_{0}$, and $(i_{0},a_{0})$ is the least element of the subset. The same argument with the coordinates interchanged handles $B$, whose first coordinate set $\ZZ_{+}$ and second coordinate set $\{1,2\}$ are both well ordered.
+:::
 
-As Whitman notes, in the theory of ordinal numbers $A$ has order type $\omega+\omega=\omega\cdot 2$ while $B$ has order type $\omega$; distinct ordinals are never of the same order type, which is a second way to see the answer.
+:::
+
+::: {.pf-step #least}
+$(1,1)$ is the least element of $A$ and of $B$.
+
+::: pf-proof
+In $A$, $(1,1)\leq(1,a)\leq(2,a')$ for all $a,a'\in\ZZ_{+}$. In $B$, $(1,1)\leq(n,b)$ for all $n\geq1$, with equality only when $(n,b)=(1,1)$.
+:::
+
+:::
+
+::: {.pf-step #no-pred}
+$(2,1)$ has no immediate predecessor in $A$.
+
+::: pf-proof
+If $x<(2,1)$ then the first coordinate of $x$ is $1$, say $x=(1,a)$, and $(1,a)<(1,a+1)<(2,1)$ because $a<a+1$ and $1<2$. So no $x$ is an immediate predecessor.
+:::
+
+:::
+
+::: {.pf-step #has-pred}
+Every element of $B$ other than $(1,1)$ has an immediate predecessor in $B$.
+
+::: pf-proof
+Let $(n,b)\neq(1,1)$. If $b=2$, take $y=(n,1)$; then $y<(n,2)$, and an element $(m,c)$ with $(n,1)<(m,c)<(n,2)$ must have $m=n$, forcing $1<c<2$, which is impossible. If $b=1$, then $n>1$ and $y=(n-1,2)<(n,1)$; an element $(m,c)$ between them has $n-1\leq m\leq n$, and $m=n-1$ forces $c>2$ while $m=n$ forces $c<1$, both impossible. So in each case $y$ is the immediate predecessor.
+:::
+
+:::
+
+::: {.pf-step #order-iso}
+An order isomorphism preserves and reflects the order, carries the least element to the least element, and has an order-preserving inverse.
+
+::: pf-proof
+If $f$ is an order isomorphism then $x<y$ implies $f(x)<f(y)$; conversely $f(x)<f(y)$ implies $x<y$, since $x=y$ or $y<x$ would give $f(x)=f(y)$ or $f(y)<f(x)$. So $f^{-1}$ is order-preserving. If $m$ is least in the domain and $z<f(m)$, then $f^{-1}(z)<m$, impossible; so $f(m)$ is least in the codomain.
+:::
+
+:::
+
+::: {.pf-step #contradiction}
+No order isomorphism $f\colon A\to B$ exists.
+
+::: pf-proof
+Suppose $f$ is one. By steps [](#least){.pf-ref} and [](#order-iso){.pf-ref}, $f(1,1)=(1,1)$. The element $(2,1)$ is not least in $A$, so $f(2,1)=(n,b)\neq(1,1)$, and by step [](#has-pred){.pf-ref} it has an immediate predecessor $y$ in $B$. Put $x=f^{-1}(y)$; since $y<f(2,1)$ and $f^{-1}$ is order-preserving, $x<(2,1)$, so by step [](#no-pred){.pf-ref} $x=(1,a)$ with $(1,a)<(2,1)$, and then $(1,a)<(1,a+1)<(2,1)$. Applying $f$ gives $y=f(1,a)<f(1,a+1)<f(2,1)$, contradicting that $y$ is the immediate predecessor of $f(2,1)$.
+:::
+
+:::
+
+::: {.pf-step}
+$A$ and $B$ do not have the same order type.
+
+::: pf-proof
+Having the same order type means being related by an order isomorphism, which step [](#contradiction){.pf-ref} excludes. Equivalently, in ordinal arithmetic $A$ has type $\omega\cdot2$ and $B$ has type $\omega$, and distinct ordinals are never of the same order type.
+:::
+
+:::
+
+:::
+
 :::
