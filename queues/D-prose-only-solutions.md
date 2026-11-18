@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1375 of the 12429 problem cards that have a solution
+1374 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1375
+- Problems: 1374
 - Problem cards with a solution: 12429
 
-## Problems (1375)
+## Problems (1374)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -57,7 +57,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
 - [ ] E-HAT-2.2-21 — "Euler characteristic of union of subcomplexes"
 - [ ] E-HAT-2.2-23 — "If $M_g$ covers $M_h$ then $g = n(h-1)+1$"
-- [ ] E-HAT-2.2-32 — "Mayer–Vietoris gives suspension isomorphism $\tilde{H}_n(SX) \approx \tilde{H}_{n-1}(X)$"
 - [ ] E-HAT-2.2-33 — "Nerve-type vanishing: $\tilde{H}_i(X) = 0$ for $i \geq n-1$ when intersections are acyclic"
 - [ ] E-HAT-2.2-35 — "Nonorientable surface or complex with torsion in $H_1$ cannot embed in $\RR^3$ with mapping cylinder neighborhood"
 - [ ] E-HAT-2.2-38 — "Algebraic lemma: diagram with two exact rows and isomorphisms every third vertical map yields long exact sequence"
