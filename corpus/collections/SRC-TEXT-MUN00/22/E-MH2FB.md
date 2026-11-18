@@ -37,19 +37,56 @@ Show that $H$ is a topological group if and only if the map of $H \times H$ into
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.1, printed p. 259** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions are his, and "positron0802", *Solutions to Topology, Chapter 2*, Supplementary Exercise 1, gives the same.
 
-Let $H$ be a group and a $T_{1}$ space, and let $h:H\times H\to H$, $h(x,y)=x\cdot y^{-1}$.
+Both directions are due to **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.1, manual p. 259, PDF p. 262 (`tmp/sources/munkres-solutions-whitman.pdf`); "positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Supplementary Exercise 1, has the same. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 1, printed p. 145, with the definition of a topological group there, Exercise 18.4 on printed p. 111, Exercise 18.10 and Exercise 18.11 on printed p. 112.
 
-*If $H$ is a topological group then $h$ is continuous.* The multiplication $m:H\times H\to H$ and the inversion $\iota:H\to H$ are continuous, so $i_{H}\times\iota:H\times H\to H\times H$ is continuous (Exercise 18.10), and $h=m\circ(i_{H}\times\iota)$ is a composite of continuous maps.
+Throughout, $H$ is a group and a $T_{1}$ space, $e$ is its identity, and
+$$
+h\colon H\times H\longrightarrow H,\qquad h(x,y)\coloneqq x\cdot y^{-1}.
+$$
 
-*If $h$ is continuous then $H$ is a topological group.* Since $h$ is continuous it is continuous in each variable separately (Exercise 18.11). Fixing the first variable at the identity $e$,
+::: pf
+
+::: {.pf-step #forward}
+If $H$ is a topological group, then $h$ is continuous.
+
+::: pf-proof
+Multiplication $m\colon H\times H\to H$, $m(x,y)=x\cdot y$, and inversion $\iota\colon H\to H$, $\iota(y)=y^{-1}$, are continuous by the definition of a topological group (printed p. 145), so $\mathrm{id}_{H}\times\iota$ is continuous by Exercise 18.10; and $h=m\circ(\mathrm{id}_{H}\times\iota)$ since $m(x,\iota(y))=x\cdot y^{-1}$. A composite of continuous maps is continuous.
+:::
+
+:::
+
+::: {.pf-step #inversion}
+If $h$ is continuous, then inversion $\iota$ is continuous.
+
+::: pf-proof
+A continuous map is continuous in each variable separately (Exercise 18.11), so for the fixed point $e$ the map $x\mapsto h(e,x)$ is continuous. The map $x\mapsto e\times x$ is continuous because it is an imbedding (Exercise 18.4), and $h(e,x)=e\cdot x^{-1}=x^{-1}$; so $x\mapsto x^{-1}$, which is $\iota$, is a composite of continuous maps.
+:::
+
+:::
+
+::: {.pf-step #multiplication}
+If $h$ and $\iota$ are continuous, then multiplication $m$ is continuous.
+
+::: pf-proof
+By step [](#inversion){.pf-ref} and Exercise 18.10 the map $(x,y)\mapsto(x,\iota(y))=(x,y^{-1})$ is continuous, and
 $$
-x\longmapsto h(e,x)=e\cdot x^{-1}=x^{-1}
+m(x,y)=x\cdot y=x\cdot(y^{-1})^{-1}=h\big(x,y^{-1}\big),
 $$
-is continuous, so inversion is continuous. Using this, the map
-$$
-(x,y)\longmapsto h\big(x,\,y^{-1}\big)=x\cdot\big(y^{-1}\big)^{-1}=x\cdot y
-$$
-is a composite of continuous maps ($(x,y)\mapsto(x,y^{-1})$ is continuous because inversion is, by Exercise 18.10), so multiplication is continuous. Hence $H$ is a topological group.
+the middle equality because inversion is an involution. So $m$ is the composite $h\circ(\mathrm{id}_{H}\times\iota)$ of continuous maps.
+:::
+
+:::
+
+::: pf-step
+Therefore $H$ is a topological group if and only if $h$ is continuous.
+
+::: pf-proof
+If $H$ is a topological group then $h$ is continuous by step [](#forward){.pf-ref}. Conversely, if $h$ is continuous then inversion is continuous by step [](#inversion){.pf-ref} and multiplication is continuous by step [](#multiplication){.pf-ref}, which with the $T_{1}$ hypothesis is exactly the definition of a topological group (printed p. 145).
+:::
+
+:::
+
+:::
+
 :::
