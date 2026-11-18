@@ -37,6 +37,14 @@ audit:
     and Theorem 18.3 or the closed-set criterion of continuity. No correction was needed. Not checked
     here: nothing in the exercise is left out; the card proves both functor laws and does not verify the
     book's remark that the two displayed properties are exactly functoriality, which is a definition.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked both functor axioms through the uniqueness of
+    extensions from the dense copy of X into a Hausdorff target. The argument is the card's
+    own; no retained set is cited. Munkres §38 Exercise 2, printed pp. 241-242. The printed
+    statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -53,26 +61,42 @@ These properties tell us that the correspondence we have constructed is what is 
 :::
 
 ::: {.solution}
-Let $i_X:X\hookrightarrow\beta X$ denote the canonical embedding.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §38 Exercise 2, printed pp. 241--242, with the uniqueness clause of the Stone--Čech extension property (Theorem 38.4).
 
-(i) Both $\beta(\mathsf l_X)$ and $\mathsf l_{\beta X}$ are continuous maps $\beta X\to\beta X$ whose restriction to the dense subspace $X$ is $i_X$. By uniqueness in the Stone--Čech extension property,
-$$
-\beta(\mathsf l_X)=\mathsf l_{\beta X}.
-$$
+Let $i_{X}:X\to\beta X$, $i_{Y}:Y\to\beta Y$ and $i_{Z}:Z\to\beta Z$ be the canonical inclusions, and write $\beta f:\beta X\to\beta Y$ for the extension of $i_{Y}\circ f$.
 
-(ii) Let $f:X\to Y$ and $g:Y\to Z$. The maps
+::: pf
+
+::: {.pf-step #identity}
+$\beta(\mathsf{l}_{X})=\mathsf{l}_{\beta X}$.
+
+::: pf-proof
+Both $\beta(\mathsf{l}_{X})$ and $\mathsf{l}_{\beta X}$ are continuous maps $\beta X\to\beta X$, and on $i_{X}(X)$ both equal $i_{X}$: the first by definition of $\beta$ applied to the identity of $X$, the second because the identity of $\beta X$ restricts to the identity on the subspace. Since $i_{X}(X)$ is dense in $\beta X$ and $\beta X$ is Hausdorff, two continuous maps into $\beta X$ that agree on a dense subset agree everywhere (Theorem 18.3, or the uniqueness in Theorem 38.4).
+:::
+
+:::
+
+::: {.pf-step #composition}
+$\beta(g\circ f)=\beta(g)\circ\beta(f)$ for continuous $f:X\to Y$ and $g:Y\to Z$.
+
+::: pf-proof
+Both sides are continuous maps $\beta X\to\beta Z$. For $x\in X$,
 $$
-\beta(g\circ f),\qquad \beta(g)\circ\beta(f):\beta X\longrightarrow\beta Z
+\big(\beta(g)\circ\beta(f)\big)\big(i_{X}(x)\big)=\beta(g)\big(i_{Y}(f(x))\big)=i_{Z}\big(g(f(x))\big)=i_{Z}\big((g\circ f)(x)\big),
 $$
-are continuous. For $x\in X$,
-$$
-(\beta(g)\circ\beta(f))(i_X(x))
- =\beta(g)(i_Y(f(x)))
- =i_Z(g(f(x))),
-$$
-which is also the value of $\beta(g\circ f)$ at $i_X(x)$. Since $X$ is dense in $\beta X$ and $\beta Z$ is Hausdorff, two continuous maps $\beta X\to\beta Z$ agreeing on $X$ agree everywhere. Therefore
-$$
-\beta(g\circ f)=\beta(g)\circ\beta(f).
-$$
-Thus $\beta$ preserves identities and composition, so it is a functor.
+which is the value of $\beta(g\circ f)$ at $i_{X}(x)$. Two continuous maps into the Hausdorff space $\beta Z$ that agree on the dense subset $i_{X}(X)$ agree everywhere.
+:::
+
+:::
+
+::: {.pf-step}
+$\beta$ is a functor.
+
+::: pf-proof
+By step [](#identity){.pf-ref} it carries each identity to the identity, and by step [](#composition){.pf-ref} it carries a composite to the composite of the images, in the correct order; those are the two functor axioms. It assigns to each continuous map $f$ a continuous map $\beta f$ between the corresponding compactifications.
+:::
+
+:::
+
+:::
 :::
