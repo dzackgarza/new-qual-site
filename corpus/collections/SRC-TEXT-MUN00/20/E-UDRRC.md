@@ -26,6 +26,15 @@ audit:
     product, the Cauchy-Schwarz inequality from the nonnegativity of |cx +/- dy|^2, the
     triangle inequality by expanding the norm squared, and the metric axioms for the
     euclidean distance. (tmp/sources/munkres-solutions-positron-ch2.pdf).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked distributivity of the dot product, the Cauchy-
+    Schwarz inequality from the expansion of the norm of cx +/- ey, the triangle inequality
+    for the norm by expanding the norm of a sum, and the three metric axioms, against
+    Munkres §20 Exercise 9, printed p. 128. positron0802, Exercise 20.9, PDF p. 22,
+    following the book's hints. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -53,24 +62,70 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.9, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all four parts are theirs, following the book's hints.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.9, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all four parts are theirs, following the book's hints.
 
-Write $\mathbf{x}\cdot\mathbf{y}=\sum_{i}x_{i}y_{i}$ and $\norm{\mathbf{x}}=(\mathbf{x}\cdot\mathbf{x})^{1/2}$.
+Write $\mathbf{x}\cdot\mathbf{y}=\sum_{i=1}^{n}x_{i}y_{i}$ and $\norm{\mathbf{x}}=(\mathbf{x}\cdot\mathbf{x})^{1/2}$.
 
-(a) $\mathbf{x}\cdot(\mathbf{y}+\mathbf{z})=\sum_{i}x_{i}(y_{i}+z_{i})=\sum_{i}x_{i}y_{i}+\sum_{i}x_{i}z_{i}=\mathbf{x}\cdot\mathbf{y}+\mathbf{x}\cdot\mathbf{z}$.
+::: pf
 
-(b) If $\mathbf{x}=\mathbf{0}$ or $\mathbf{y}=\mathbf{0}$ both sides are $0$; otherwise put $c=1/\norm{\mathbf{x}}$ and $d=1/\norm{\mathbf{y}}$. Then
+::: {.pf-step #part-a}
+(a) $\mathbf{x}\cdot(\mathbf{y}+\mathbf{z})=(\mathbf{x}\cdot\mathbf{y})+(\mathbf{x}\cdot\mathbf{z})$.
+
+::: pf-proof
 $$
-0\le\norm{c\mathbf{x}\pm d\mathbf{y}}^{2}=c^{2}(\mathbf{x}\cdot\mathbf{x})+d^{2}(\mathbf{y}\cdot\mathbf{y})\pm2cd(\mathbf{x}\cdot\mathbf{y})
-=2\pm2cd(\mathbf{x}\cdot\mathbf{y}),
+\mathbf{x}\cdot(\mathbf{y}+\mathbf{z})=\sum_{i=1}^{n}x_{i}(y_{i}+z_{i})=\sum_{i=1}^{n}x_{i}y_{i}+\sum_{i=1}^{n}x_{i}z_{i}=\mathbf{x}\cdot\mathbf{y}+\mathbf{x}\cdot\mathbf{z},
 $$
-so $\pm(\mathbf{x}\cdot\mathbf{y})\le\norm{\mathbf{x}}\norm{\mathbf{y}}$ and hence $\abs{\mathbf{x}\cdot\mathbf{y}}\le\norm{\mathbf{x}}\norm{\mathbf{y}}$.
+where the middle equality is distributivity of the real numbers in each coordinate and the splitting of a finite sum.
+:::
 
-(c) $\norm{\mathbf{x}+\mathbf{y}}^{2}=(\mathbf{x}+\mathbf{y})\cdot(\mathbf{x}+\mathbf{y})=\norm{\mathbf{x}}^{2}+2(\mathbf{x}\cdot\mathbf{y})+\norm{\mathbf{y}}^{2}\le\norm{\mathbf{x}}^{2}+2\norm{\mathbf{x}}\norm{\mathbf{y}}+\norm{\mathbf{y}}^{2}=(\norm{\mathbf{x}}+\norm{\mathbf{y}})^{2}$ by (b), and taking square roots gives the triangle inequality.
+:::
 
-(d) $d(\mathbf{x},\mathbf{y})=\norm{\mathbf{x}-\mathbf{y}}$ is nonnegative and vanishes exactly when $\mathbf{x}=\mathbf{y}$, and it is symmetric. For the triangle inequality apply (c) to $\mathbf{x}-\mathbf{z}$ and $\mathbf{z}-\mathbf{y}$:
+::: {.pf-step #part-b}
+(b) $\abs{\mathbf{x}\cdot\mathbf{y}}\le\norm{\mathbf{x}}\norm{\mathbf{y}}$.
+
+::: pf-proof
+If $\mathbf{x}=\mathbf{0}$ or $\mathbf{y}=\mathbf{0}$ then $\mathbf{x}\cdot\mathbf{y}=0$ and one factor on the right is $0$, so the inequality holds. Otherwise put $c=1/\norm{\mathbf{x}}$ and $e=1/\norm{\mathbf{y}}$, both positive. By step [](#part-a){.pf-ref} and the bilinearity it gives,
 $$
-d(\mathbf{x},\mathbf{y})=\norm{(\mathbf{x}-\mathbf{z})+(\mathbf{z}-\mathbf{y})}\le\norm{\mathbf{x}-\mathbf{z}}+\norm{\mathbf{z}-\mathbf{y}}=d(\mathbf{x},\mathbf{z})+d(\mathbf{z},\mathbf{y}),
+0\le\norm{c\mathbf{x}\pm e\mathbf{y}}^{2}=c^{2}(\mathbf{x}\cdot\mathbf{x})+e^{2}(\mathbf{y}\cdot\mathbf{y})\pm2ce(\mathbf{x}\cdot\mathbf{y})=2\pm2ce(\mathbf{x}\cdot\mathbf{y}),
 $$
-using $(\mathbf{x}-\mathbf{z})+(\mathbf{z}-\mathbf{y})=\mathbf{x}-\mathbf{y}$. So $d$ is a metric.
+using $c^{2}(\mathbf{x}\cdot\mathbf{x})=1$ and $e^{2}(\mathbf{y}\cdot\mathbf{y})=1$. So $\mp(\mathbf{x}\cdot\mathbf{y})\le 1/(ce)=\norm{\mathbf{x}}\norm{\mathbf{y}}$ for both signs, that is $\abs{\mathbf{x}\cdot\mathbf{y}}\le\norm{\mathbf{x}}\norm{\mathbf{y}}$.
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $\norm{\mathbf{x}+\mathbf{y}}\le\norm{\mathbf{x}}+\norm{\mathbf{y}}$.
+
+::: pf-proof
+$$
+\norm{\mathbf{x}+\mathbf{y}}^{2}=(\mathbf{x}+\mathbf{y})\cdot(\mathbf{x}+\mathbf{y})=\norm{\mathbf{x}}^{2}+2(\mathbf{x}\cdot\mathbf{y})+\norm{\mathbf{y}}^{2}\le\norm{\mathbf{x}}^{2}+2\norm{\mathbf{x}}\norm{\mathbf{y}}+\norm{\mathbf{y}}^{2}=(\norm{\mathbf{x}}+\norm{\mathbf{y}})^{2},
+$$
+by step [](#part-a){.pf-ref} and step [](#part-b){.pf-ref}. Both sides are nonnegative, so taking square roots gives the inequality.
+:::
+
+:::
+
+::: {.pf-step #part-d}
+(d) $d(\mathbf{x},\mathbf{y})=\norm{\mathbf{x}-\mathbf{y}}$ is a metric on $\RR^{n}$.
+
+::: pf-proof
+$d(\mathbf{x},\mathbf{y})\ge0$ because a sum of squares is $\ge0$; $d(\mathbf{x},\mathbf{y})=0$ exactly when $\mathbf{x}-\mathbf{y}=\mathbf{0}$, that is $\mathbf{x}=\mathbf{y}$; and $d(\mathbf{y},\mathbf{x})=\norm{\mathbf{y}-\mathbf{x}}=\norm{\mathbf{x}-\mathbf{y}}=d(\mathbf{x},\mathbf{y})$ because $(-t)^{2}=t^{2}$ in each coordinate. For the triangle inequality, $(\mathbf{x}-\mathbf{z})+(\mathbf{z}-\mathbf{y})=\mathbf{x}-\mathbf{y}$, so by step [](#part-c){.pf-ref}
+$$
+d(\mathbf{x},\mathbf{y})=\norm{(\mathbf{x}-\mathbf{z})+(\mathbf{z}-\mathbf{y})}\le\norm{\mathbf{x}-\mathbf{z}}+\norm{\mathbf{z}-\mathbf{y}}=d(\mathbf{x},\mathbf{z})+d(\mathbf{z},\mathbf{y}).
+$$
+So $d$ satisfies the three metric axioms.
+:::
+
+:::
+
+::: {.pf-step}
+All four parts hold.
+
+::: pf-proof
+Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} and [](#part-d){.pf-ref} are the four assertions of the exercise.
+:::
+
+:::
+
+:::
 :::
