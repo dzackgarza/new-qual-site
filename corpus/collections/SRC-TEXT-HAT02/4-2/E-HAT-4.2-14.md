@@ -51,6 +51,15 @@ audit:
     case is handled separately because the Hurewicz isomorphism is then on pi_1 abelianised; a
     graph has free, hence torsion-free, fundamental group, so the nonzero image stays nonzero.
     Not claimed: injectivity of the Hurewicz map on X, which the argument does not need.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 390 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 399, whose running
+    folio reads 390. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -58,7 +67,7 @@ If an $n$-dimensional CW complex $X$ contains a subcomplex $Y$ homotopy equivale
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 14, printed p. 360, and uses the Hurewicz theorem as the printed hint directs.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 14, printed p. 390, and uses the Hurewicz theorem as the printed hint directs.
 
 ::: pf
 
