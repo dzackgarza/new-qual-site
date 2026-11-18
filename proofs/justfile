@@ -1,29 +1,41 @@
-# Type-check every proof artifact through the lake project (Mathlib master head).
-# Run from this directory: the project pins the toolchain (lean-toolchain) and the
-# Mathlib revision (lake-manifest.json). `lake update mathlib && lake exe cache get`
-# moves to the current master head and fetches its oleans.
-check:
-    @lake env lean cards/FieldHomework1.lean
-    @lake env lean cards/SubgroupFiniteness.lean
-    @lake env lean cards/NormExtension.lean
-    @lake env lean cards/Tamuras15_10.lean
-    @lake env lean cards/MooreSpaceExactness.lean
-    @lake env lean cards/TorTorsion.lean
-    @lake env lean cards/FamilyQuotient.lean
-    @lake env lean cards/LensDegree.lean
-    @lake env lean cards/BarySign.lean
-    @lake env lean cards/BarySubdiv.lean
-    @lake env lean cards/CH8DirectProduct.lean
-    @lake env lean cards/SimplexChains.lean
-    @lake env lean cards/ChainLevelSteps.lean
-    @lake env lean cards/SkeletonHomology.lean
-    @lake env lean cards/ColimitTensor.lean
-    @lake env lean cards/TorReductions.lean
-    @lake env lean cards/TorStages.lean
-    @lake env lean cards/TorBridge.lean
-    @lake env lean cards/TorFreeResolution.lean
-    @lake env lean cards/TorTorsionClass.lean
-    @lake env lean cards/TorArbitrary.lean
-    @lake env lean cards/CyclicTor.lean
-    @lake env lean cards/DeltaSimplexChains.lean
+# The proof-artifact entry point: what this repository checks about its own
+# certificates, and how.
+#
+# Lean declarations are validated in lean-categories, not here (issue #141).
+# No `.lean` file and no lake project lives under `proofs/` any more, and a Lean
+# certificate of a card is the declaration a section-1 row of README.md links on
+# lean-categories main, or the file at the commit that still carries it. So this
+# recipe elaborates nothing: it holds the registry and the retained exact
+# computations to the tree, and `python -m qualc.proofs` holds this recipe to it.
+#
+# Run from the repository root, or from anywhere with --justfile:
+#
+#     just --justfile proofs/justfile check
+#
+# The shared research image has no `sage` on PATH; there its own launcher is the
+# interpreter, and section 2 of README.md records that IS the interpreter the
+# certificates were published on:
+#
+#     SAGE=/sage/.venv/bin/sage just --justfile proofs/justfile check
+set working-directory := '..'
 
+sage := env_var_or_default('SAGE', 'sage')
+gap := env_var_or_default('GAP', 'gap')
+
+# Everything the proof artifacts of this repository are checked by.
+check: registry artifacts
+
+# Every certificate row of README.md: its link resolves, its card exists, and
+# its row says whether it covers the whole statement or a part of one. A row in
+# a section that certifies nothing is an error. No pandoc, no build.
+registry:
+    @uv run python -m qualc.proofs
+
+# The exact computations retained in cards/. Each exits non-zero on a failed
+# assertion, so a green run is evidence for exactly what its file checks; the
+# recorded interpreter and output for each is in README.md section 2.
+artifacts:
+    @{{sage}} proofs/cards/DeltaComplexHomology.sage
+    @{{sage}} proofs/cards/V49FiveSquaresTuples.sage
+    @{{gap}} -q proofs/cards/CH8DirectProduct.g
+    @python3 proofs/cards/bary_regression.py

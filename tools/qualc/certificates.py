@@ -62,6 +62,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from .diagnostics import Diagnostic, DiagnosticCode
+
 # The three states a reader is told about, in the order they are reported.
 STATUSES = ("certified", "reviewed", "draft")
 
@@ -197,6 +199,101 @@ def _reachable(url: str) -> bool:
         return False
     except (urllib.error.URLError, TimeoutError):
         return False
+
+
+# Where a registry error is reported: the page that carries the row, not the
+# card and not the certificate, because the row is what the author edits.
+REGISTRY = "proofs/README.md"
+
+
+def registry_errors(
+    root: Path | None,
+    registry: dict[str, tuple[Certificate, ...]],
+    card_ids: set[str],
+) -> list[Diagnostic]:
+    """Every error the certificate tables carry: its rows, links, coverage and scope.
+
+    Three of these were reported only by `qualc check`, which parses the whole
+    corpus through pandoc first, so the check a reader can run on the artifacts
+    alone reported none of them. The rules are the same rules, in one place:
+    `qualc check` and `python -m qualc.proofs` both read them here.
+
+    `root` is the repository root; `None` keeps the rows' own claims and skips
+    what can only be read against the tree, which is the shape the parser tests
+    use. `card_ids` is every card the corpus carries, so this function does not
+    parse the corpus itself.
+    """
+    errors: list[Diagnostic] = []
+    for card_id, entries in sorted(registry.items()):
+        if card_id not in card_ids:
+            errors.append(
+                Diagnostic(
+                    DiagnosticCode.CERTIFICATE_CARD_UNKNOWN,
+                    REGISTRY,
+                    f"lists a certificate for {card_id}, which no card carries",
+                )
+            )
+        for entry in entries:
+            if root is not None and not exists(root, entry.file):
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_FILE_MISSING,
+                        REGISTRY,
+                        f"links {entry.file} for {card_id}, and its target does not exist",
+                    )
+                )
+            if entry.covers not in COVERS:
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.CERTIFICATE_COVERAGE_MISSING,
+                        REGISTRY,
+                        f"lists {entry.file} for {card_id} without saying what it proves: the row's "
+                        f"last cell must be `{THE_STATEMENT}` or `{PART}`",
+                    )
+                )
+    if root is not None:
+        errors.extend(unread_section_errors(root / "proofs" / "README.md"))
+    return errors
+
+
+def unread_section_errors(readme: Path) -> list[Diagnostic]:
+    """A row that says what it covers, in a table no reader of the registry reads.
+
+    Only sections 1 and 2 certify (`CERTIFICATE_SECTIONS`), and the later tables
+    say so in prose: section 6 lists repairs with no machine certificate while
+    naming certificate files in passing. A `Covers` cell anywhere else is an
+    author recording a certification that the page will never state, so it is
+    an error rather than a silently unread row.
+    """
+    if not readme.is_file():
+        return []
+    errors: list[Diagnostic] = []
+    section: int | None = None
+    for number, line in enumerate(readme.read_text().splitlines(), 1):
+        heading = _SECTION.match(line)
+        if heading:
+            section = int(heading.group(1))
+            continue
+        if _SUBSECTION.match(line):
+            section = None
+            continue
+        if section in CERTIFICATE_SECTIONS or not _table_row(line) or _is_separator(line):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        covers = _covers(cells)
+        if not covers:
+            continue
+        where = f"section {section}" if section is not None else "no numbered section"
+        errors.append(
+            Diagnostic(
+                DiagnosticCode.CERTIFICATE_SECTION_UNREAD,
+                REGISTRY,
+                f"line {number}: a row in {where} says it covers `{covers}`, and only sections "
+                + " and ".join(str(s) for s in CERTIFICATE_SECTIONS)
+                + " are read as certificates",
+            )
+        )
+    return errors
 
 
 def _rows(lines: list[str]) -> list[tuple[str, str, str]]:
