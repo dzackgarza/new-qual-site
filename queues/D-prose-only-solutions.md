@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1133 of the 12429 problem cards that have a solution
+1132 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1133
+- Problems: 1132
 - Problem cards with a solution: 12429
 
-## Problems (1133)
+## Problems (1132)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -157,7 +157,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-4.3-1 — "Map $\RP^\infty \to K(\ZZ,2)$ trivial on homology"
 - [ ] E-HAT-4.3-10 — "Action of $\pi_1(E)$ on $\pi_n(F)$ for fibrations"
 - [ ] E-HAT-4.3-11 — "Fibration classes and homotopy equivalence"
-- [ ] E-HAT-4.3-12 — "Homotopic maps give fiber homotopy equivalent fibrations"
 - [ ] E-HAT-4.3-13 — "Pre-composing with homotopy equivalence"
 - [ ] E-HAT-4.3-14 — "Fibration classes bijection with map classes"
 - [ ] E-HAT-4.3-15 — "Homotopy equivalence fibration is fiber homotopy trivial"
