@@ -39,23 +39,51 @@ Show that $\RR^J$ in the box topology is completely regular.
 :::
 
 ::: {.solution}
-If $J=\varnothing$, the product is a singleton and is completely regular. Assume $J\neq\varnothing$. The box topology is Hausdorff. To prove complete regularity, let $A\subset\RR^J$ be closed and $x\notin A$. Choose a basic box neighborhood
-$$
-U=\prod_{\alpha\in J}(x_\alpha-\varepsilon_\alpha,x_\alpha+\varepsilon_\alpha)
-$$
-of $x$ disjoint from $A$, with each $\varepsilon_\alpha>0$. The coordinatewise affine homeomorphism
-$$
-h(y)_\alpha=\frac{y_\alpha-x_\alpha}{\varepsilon_\alpha}
-$$
-is a homeomorphism for the box topology, sends $x$ to $0$, and sends $U$ to $(-1,1)^J$.
 
-Thus it suffices to separate $0$ from the complement of $(-1,1)^J$. Define
-$$
-g(y)=\sup_{\alpha\in J}\min\{\abs{y_\alpha},1\}.
-$$
-This is the distance from $y$ to $0$ in the uniform metric on $\RR^J$, hence is continuous in the uniform topology. The box topology is finer than the uniform topology, so $g$ is also box-continuous. We have $g(0)=0$, while $g(y)=1$ whenever $y\notin(-1,1)^J$. Therefore
-$$
-f=g\circ h
-$$
-is continuous, $f(x)=0$, and $f(a)=1$ for every $a\in A$. Hence $\RR^J$ with the box topology is completely regular.
+No retained solution set covers this exercise: the card's own argument follows the book's hint, with the reduction to $(-1,1)^{J}$ and the separation function as separate steps.
+
+::: pf
+
+::: {.pf-step #trivial}
+If $J=\varnothing$ then $\RR^{J}$ is a singleton and is completely regular.
+
+::: pf-proof
+$\RR^{\varnothing}$ has one point, the empty function; its only closed sets are $\varnothing$ and the whole space, and the constant function $0$ separates the point from $\varnothing$.
+:::
+
+:::
+
+::: {.pf-step #reduction}
+For $x\notin A$ with $A$ closed, a coordinatewise affine homeomorphism $h$ of the box topology sends $x$ to $0$ and carries a box neighbourhood of $x$ inside $A$'s complement onto $(-1,1)^{J}$.
+
+::: pf-proof
+Since $A$ is closed and $x\notin A$, there is a basis element $\prod_{\alpha}(x_{\alpha}-\varepsilon_{\alpha},x_{\alpha}+\varepsilon_{\alpha})$ of the box topology with all $\varepsilon_{\alpha}>0$ containing $x$ and contained in $\RR^{J}\setminus A$. Define $h(y)_{\alpha}=(y_{\alpha}-x_{\alpha})/\varepsilon_{\alpha}$; each coordinate map is a homeomorphism of $\RR$, and a product of homeomorphisms is a homeomorphism for the box topology, since it carries a box $\prod(a_{\alpha},b_{\alpha})$ to the box $\prod\big((a_{\alpha}-x_{\alpha})/\varepsilon_{\alpha},(b_{\alpha}-x_{\alpha})/\varepsilon_{\alpha}\big)$ and likewise for its inverse. Then $h(x)=0$ and $h$ carries the displayed neighbourhood onto $\prod_{\alpha}(-1,1)=(-1,1)^{J}$. So it suffices to separate $0$ from the complement of $(-1,1)^{J}$, which is closed because $(-1,1)^{J}$ is open.
+:::
+
+:::
+
+::: {.pf-step #function}
+The function $g(y)=\sup_{\alpha}\min\theset{\abs{y_{\alpha}},1}$ is continuous for the box topology, with $g(0)=0$ and $g(y)=1$ for $y\notin(-1,1)^{J}$.
+
+::: pf-proof
+$g$ is the distance from $y$ to $0$ in the uniform metric $\bar\rho$ on $\RR^{J}$, hence is continuous for the uniform topology, i.e. $\bar\rho$-continuous (its inverse image of $[0,t)$ is the ball of radius $t$ about $0$). The uniform topology is coarser than the box topology (§20, printed p. 124), so a function continuous for the uniform topology is continuous for the finer box topology: the box-preimage of an open set is the same set and is box-open. Also $g(0)=0$, and if $y\notin(-1,1)^{J}$ then some coordinate satisfies $\abs{y_{\alpha}}\ge1$, so $g(y)\ge1$ while $g\le1$ always.
+:::
+
+:::
+
+::: {.pf-step #separating}
+$f=g\circ h$ is continuous for the box topology, with $f(x)=0$ and $f(a)=1$ for $a\in A$.
+
+::: pf-proof
+$h$ is a box-homeomorphism and $g$ is box-continuous by step [](#function){.pf-ref}, so the composite is box-continuous. Since $h(x)=0$ we get $f(x)=0$; and for $a\in A$ the point $h(a)$ lies outside $(-1,1)^{J}$ by step [](#reduction){.pf-ref}, so $f(a)=1$.
+:::
+
+:::
+
+::: {.pf-qed}
+Given a closed $A$ and a point $x\notin A$, step [](#separating){.pf-ref} produces a continuous $f:\RR^{J}\to[0,1]$ with $f(x)=0$ and $f(A)=1$; the space is Hausdorff, so it is completely regular (step [](#trivial){.pf-ref} covers $J=\varnothing$).
+:::
+
+:::
+
 :::
