@@ -41,6 +41,15 @@ audit:
     projection itself, hence induces the identity on homotopy groups; and the action of pi_1 is
     given by deck transformations. Not claimed: the statement for X not simply connected, where
     the universal cover is not this product and the deck group is larger.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Page correction to the note above, which cited the exercise one page off (or, for the Section 4
+    cards, carried over the Section 4.1 page). The exercise is printed on p. 390 of Hatcher,
+    Algebraic Topology (2002), checked against the retained PDF text at PDF p. 399, whose running
+    folio reads 390. The solution section now states the corrected page; the mathematics is
+    unchanged.
 ---
 
 ::: {.problem}
@@ -49,7 +58,7 @@ Show that for the product $K(G, 1) \times X$ the action of $\pi_1$ on $\pi_n$ is
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 20. It is checked against Hatcher, Algebraic Topology, Section 4.2, printed p. 359, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 20. It is checked against Hatcher, Algebraic Topology, Section 4.2, printed p. 390, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
 
 ::: pf
 
