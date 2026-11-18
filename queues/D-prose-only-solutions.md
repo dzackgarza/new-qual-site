@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1370 of the 12429 problem cards that have a solution
+1369 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1370
+- Problems: 1369
 - Problem cards with a solution: 12429
 
-## Problems (1370)
+## Problems (1369)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -107,7 +107,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.A-3 — "Rational and mod-$p$ cohomology determine integral homology"
 - [ ] E-HAT-3.A-4 — "Tensor product and Tor commute with direct limits"
 - [ ] E-HAT-3.A-5 — "Tor vanishes for torsionfree modules"
-- [ ] E-HAT-3.A-6 — "Tor is always a torsion group"
 - [ ] E-HAT-3.B-1 — "Homology and cohomology of $\RP^m \times \RP^n$"
 - [ ] E-HAT-3.B-3 — "Non-naturality of the Künneth splitting"
 - [ ] E-HAT-3.B-4 — "Cross product of fundamental classes"
