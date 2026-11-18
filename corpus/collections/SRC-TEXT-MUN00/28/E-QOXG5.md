@@ -41,6 +41,18 @@ audit:
     subset of a set with no limit point has no limit point, which is what lets the countably
     infinite B be used in place of A. The statement and the printed hint are unchanged; the
     T1 hypothesis is noted as used only in the second direction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repair of the final step, where the argument was wrong as written: it asserted
+    y is different from every x_i with i <= N and excluded x_i from a neighbourhood V_i of y,
+    but the limit point of A may be one of the points of A. The neighbourhood is now built
+    only over the indices i <= N with x_i != y, and intersected with U_N rather than with the
+    union: W = (intersection over those i of V_i) and U_N. Then W is open and contains y, and
+    every point of A in W is y itself -- for i <= N with x_i != y, x_i is excluded by V_i,
+    and for n > N, x_n is outside U_1 u ... u U_n which contains U_N -- so
+    W and (A - {y}) = empty, which is the contradiction with y being a limit point.
 ---
 
 ::: {.exercise}
@@ -111,11 +123,11 @@ $\{U_1,\dots,U_n\}$ is a finite subcollection, so it does not cover $X$ and $x_n
 A limit point $y$ of $A$ gives a neighbourhood meeting $A$ in nothing, which is impossible.
 
 ::: pf-proof
-$A$ is infinite, so limit point compactness gives a limit point $y$; since $\{U_n\}$ covers $X$, $y\in U_N$ for some $N$. For each $i\le N$ the $T_1$ axiom gives an open neighbourhood $V_i$ of $y$ with $x_i\notin V_i$ (Exercise 17.15, printed p. 101). Put
+$A$ is infinite, so limit point compactness gives a limit point $y$; since $\{U_n\}$ covers $X$, $y\in U_N$ for some $N$. The limit point $y$ may itself be one of the points $x_i$, so the neighbourhood below is built only over the indices with $x_i\ne y$: for each $i\le N$ with $x_i\ne y$ the $T_1$ axiom gives an open neighbourhood $V_i$ of $y$ with $x_i\notin V_i$ (Exercise 17.15, printed p. 101), and we put
 $$
-W=\big(V_1\cap\cdots\cap V_N\big)\cap\big(U_1\cup\cdots\cup U_N\big),
+W=\Big(\bigcap_{i\le N,\ x_i\ne y}V_i\Big)\cap U_N,
 $$
-an open set containing $y$: it contains $y$ because $y\in U_1\cup\cdots\cup U_N$ and $y\ne x_i$ for every $i\le N$. And $W\cap A=\emptyset$: if $n\le N$ then $x_n\notin V_n$; if $n>N$ then $x_n\notin U_1\cup\cdots\cup U_n\supset U_1\cup\cdots\cup U_N$. So $W$ is a neighbourhood of the limit point $y$ meeting $A$ in no point at all, contradicting that every neighbourhood of $y$ meets $A$ in a point other than $y$.
+the intersection over an empty set of indices being $X$. Then $W$ is open and contains $y$, since $y\in U_N$ and $y\in V_i$ for each $i$ used. Every point of $A\cap W$ equals $y$: if $n\le N$ and $x_n\ne y$, then $x_n\notin V_n\supset W$; and if $n>N$, then $x_n\notin U_1\cup\cdots\cup U_n\supset U_N\supset W$. So $W$ is a neighbourhood of the limit point $y$ with $W\cap(A-\{y\})=\emptyset$, contradicting that every neighbourhood of $y$ meets $A$ in a point other than $y$.
 :::
 
 :::
