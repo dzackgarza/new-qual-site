@@ -32,7 +32,7 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured into Lamport steps and checked both implications against Munkres §19
-    Exercise 9, printed p. 119, with the choice axiom in the form of Lemma 9.2 (printed p.
+    Exercise 9, printed p. 118, with the choice axiom in the form of Lemma 9.2 (printed p.
     60): the choice function gives a point of the product, and a point of the product of the
     family indexed by a partition of a set gives a set meeting each member in exactly one
     point. Whitman, Exercise 19.9, printed p. 197. The printed statement needed no repair.

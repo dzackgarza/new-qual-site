@@ -34,7 +34,7 @@ audit:
   note: >-
     Restructured into Lamport steps; checked the pairing map, its inverse, the image of a
     product, and both continuity directions through basis elements of the two products,
-    against Munkres §19 Exercise 4, printed p. 114, where the box and product topologies
+    against Munkres §19 Exercise 4, printed p. 118, where the box and product topologies
     coincide on a finite index set. Whitman, Exercise 19.4, printed p. 191. The printed
     statement needed no repair.
 ---
