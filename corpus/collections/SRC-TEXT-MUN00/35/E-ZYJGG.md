@@ -26,6 +26,16 @@ audit:
     a retract of it does too. What was corrected: Moller writes that the space "is a retract of the
     UEP space [0,1]^J, hence is itself a UEP space [Ex 31.5.(b)]", citing Exercise 31.5, which is
     about the equalizer of two maps; the retract argument is Exercise 35.5(b), and the card cites it.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked that the universal extension property retracts
+    a normal space onto any closed copy of Y, and that a compact absolute retract has the
+    extension property through an imbedding in a cube (Theorem 34.2, Tychonoff), a
+    retraction of the cube, and coordinatewise Tietze extension. The argument is the card's
+    own; no retained set is cited. Munkres §35 Exercise 2, printed p. 224. The printed
+    statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -41,32 +51,72 @@ Imbed $Y$ in $[0, 1]^J$.]
 :::
 
 ::: {.solution}
-(a) Assume $Y$ has the universal extension property. Let $Y_0$ be a closed subspace of a normal space $Z$, and let
-$$
-h:Y_0\to Y
-$$
-be a homeomorphism. By the universal extension property, $h$ extends to a continuous map $H:Z\to Y$. Then
-$$
-r=h^{-1}\circ H:Z\to Y_0
-$$
-is continuous and satisfies $r\restrict_{Y_0}=\operatorname{id}_{Y_0}$. Thus $Y_0$ is a retract of $Z$, so $Y$ is an absolute retract.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 2, printed p. 224, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
 
-(b) Assume $Y$ is compact and an absolute retract. Since $Y$ is normal, it is completely regular, so it embeds in a cube
-$$
-e:Y\hookrightarrow[0,1]^J.
-$$
-Compactness of $Y$ and Hausdorffness of the cube imply $e(Y)$ is closed. By the Tychonoff theorem the cube is compact Hausdorff, hence normal. Since $Y$ is an absolute retract, there is a retraction
-$$
-r:[0,1]^J\to e(Y).
-$$
+::: pf
 
-Now let $A$ be a closed subspace of a normal space $X$, and let $f:A\to Y$ be continuous. Each coordinate of $e\circ f:A\to[0,1]^J$ extends to $X$ by Tietze. Combining these coordinate extensions gives a continuous map
-$$
-F:X\to[0,1]^J
-$$
-extending $e\circ f$. Then
-$$
-e^{-1}\circ r\circ F:X\to Y
-$$
-extends $f$. Thus $Y$ has the universal extension property.
+::: {.pf-step #a}
+(a) If $Y$ has the universal extension property, then $Y$ is an absolute retract.
+
+::: pf-proof
+Let $Y_{0}$ be a closed subspace of a normal space $Z$ and $h:Y_{0}\to Y$ a homeomorphism. By the universal extension property, applied to the closed subset $Y_{0}$ of the normal space $Z$ and the continuous map $h$, there is a continuous $H:Z\to Y$ with $H\restrict_{Y_{0}}=h$. Then $r=h^{-1}\circ H:Z\to Y_{0}$ is continuous, and for $y\in Y_{0}$ one has $r(y)=h^{-1}\big(h(y)\big)=y$; so $r$ is a retraction of $Z$ onto $Y_{0}$, which is the definition of $Y$ being an absolute retract.
+:::
+
+:::
+
+::: {.pf-step #b}
+(b) If $Y$ is compact and an absolute retract, then $Y$ has the universal extension property.
+
+:::: pf-proof
+
+::: {.pf-step #embedding}
+$Y$ embeds in a cube and its image is closed there.
+
+::: pf-proof
+$Y$ is compact Hausdorff, hence normal (Theorem 32.3), hence completely regular (§33), so there is an imbedding $e:Y\to[0,1]^{J}$ for some set $J$ (Theorem 34.2, the imbedding theorem). The cube is compact by the Tychonoff theorem and Hausdorff, so the compact set $e(Y)$ is closed in it (Theorem 26.3).
+:::
+
+:::
+
+::: {.pf-step #retraction}
+There is a retraction $r:[0,1]^{J}\to e(Y)$.
+
+::: pf-proof
+The cube is compact Hausdorff, hence normal (Theorem 32.3). The set $e(Y)$ is a closed subspace of it and $Y$ is an absolute retract, so the homeomorphism $e:Y\to e(Y)$ extends to a retraction $r$ of the cube onto $e(Y)$.
+:::
+
+:::
+
+::: {.pf-step #extension}
+Let $A$ be closed in the normal space $X$ and $f:A\to Y$ continuous. Then $f$ extends to $X$.
+
+::: pf-proof
+Each coordinate of $e\circ f:A\to[0,1]^{J}$ is a continuous map into $[0,1]$, so by the Tietze theorem it extends to a continuous map $X\to[0,1]$; putting these together gives a continuous $F:X\to[0,1]^{J}$ with $F\restrict_{A}=e\circ f$ (continuity of $F$ from its coordinates, Theorem 18.4 and the definition of the product topology). Then $e^{-1}\circ r\circ F:X\to Y$ is continuous, and on $A$ it equals $e^{-1}\circ r\circ e\circ f=e^{-1}\circ e\circ f=f$.
+:::
+
+:::
+
+::: {.pf-step}
+(b) holds.
+
+::: pf-proof
+Step [](#extension){.pf-ref} proves the universal extension property for $Y$: every continuous map on a closed subset of a normal space extends.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+The equivalence holds.
+
+::: pf-proof
+Steps [](#a){.pf-ref} and [](#b){.pf-ref} are the two implications for a normal space $Y$.
+:::
+
+:::
+
+:::
 :::
