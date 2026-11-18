@@ -6,7 +6,9 @@ title: Generic characteristic foliations satisfy the hypotheses of Giroux's divi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Vector Fields
+  - Manifolds
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Positive and negative Hopf band open books of $S^3$ and their contact str
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
+  - Knots
 relations: []
 review: draft
 audit:

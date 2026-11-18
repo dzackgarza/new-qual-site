@@ -6,7 +6,10 @@ title: Homotopy classes of plane fields on the lens space $L(p,q)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Lens Spaces
+  - Homotopy
+  - Characteristic Classes
 relations: []
 review: draft
 audit:

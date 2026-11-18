@@ -6,7 +6,9 @@ title: Characteristic foliation of $dz+by\,dx+ax\,dy$ on the $xy$-plane
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Vector Fields
+  - Differential Forms
 relations: []
 review: draft
 audit:

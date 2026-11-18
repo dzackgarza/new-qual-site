@@ -6,7 +6,9 @@ title: $C^k$ hyperplane fields are locally kernels of $C^k$ 1-forms
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Differential Forms
+  - Manifolds
 relations: []
 review: draft
 audit:
