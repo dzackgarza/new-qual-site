@@ -19,6 +19,14 @@ audit:
   by: Claude Opus 5.5
   date: 2026-09-28
   note: Restored the proportion and the closing paragraph after the page break, and Figure 2, cropped from the page image of Stein-Shakarchi, Complex Analysis, p. 311.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: the functional equation of the generating function, the
+    factorization of $q$, the partial fractions with their coefficients, and Binet's formula. No retained
+    solution set covers this exercise (the collection retains the textbook, not a solutions manual), so the
+    argument is the card's own; the coefficients $A,B$ were recomputed for this pass.
 ---
 
 ::: {.exercise}
@@ -61,67 +69,57 @@ If $\ell = AB$, this reduces to the equation $\ell^2 + \ell - 1 = 0$, whose only
 :::
 
 ::: {.solution}
-Let
-$$
-F(x)=\sum_{n=0}^\infty F_nx^n.
-$$
-By induction $0\le F_n\le 2^n$, so the series converges absolutely for $\abs{x}<1/2$. Using $F_0=0$, $F_1=1$, and $F_n=F_{n-1}+F_{n-2}$ for $n\ge2$,
-$$
-\begin{aligned}
-F(x)
-&=x+\sum_{n=2}^\infty(F_{n-1}+F_{n-2})x^n\\
-&=x+xF(x)+x^2F(x).
-\end{aligned}
-$$
-Therefore
-$$
-F(x)=\frac{x}{1-x-x^2}.
-$$
+No retained solution set covers this exercise; the collection retains the textbook (`assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`) and no solutions manual, so the argument is the card's own. Throughout $F(x)=\sum_{n\ge0}F_{n}x^{n}$ with $F_{0}=0$, $F_{1}=1$ and $F_{n}=F_{n-1}+F_{n-2}$ for $n\ge2$.
 
-Let $\alpha,\beta$ be the roots of $t^2-t-1$. Then
-$$
-\alpha+\beta=1,\qquad \alpha\beta=-1,
-$$
-so
-$$
-(1-\alpha x)(1-\beta x)
-=1-(\alpha+\beta)x+\alpha\beta x^2
-=1-x-x^2.
-$$
+::: pf
 
-Write
+::: {.pf-step #equation}
+(a) $F(x)=x+xF(x)+x^{2}F(x)$ near $0$.
+
+::: pf-proof
+Since $F_{n}$ grows at most exponentially, the series has a positive radius of convergence, and within it
 $$
-\frac{x}{(1-\alpha x)(1-\beta x)}
-=\frac{A}{1-\alpha x}+\frac{B}{1-\beta x}.
+F(x)=F_{0}+F_{1}x+\sum_{n\ge2}F_{n}x^{n}=x+\sum_{n\ge2}\bigl(F_{n-1}+F_{n-2}\bigr)x^{n}=x+x\sum_{m\ge1}F_{m}x^{m}+x^{2}\sum_{m\ge0}F_{m}x^{m},
 $$
-Comparing numerators gives
+where the two reindexings are $m=n-1$ and $m=n-2$. The first sum is $F(x)-F_{0}=F(x)$ and the second is $F(x)$, so $F=x+xF+x^{2}F$.
+:::
+
+:::
+
+::: {.pf-step #factorization}
+(b) $1-x-x^{2}=(1-\alpha x)(1-\beta x)$ where $\alpha,\beta$ are the roots of $x^{2}-x-1$.
+
+::: pf-proof
+Expanding, $(1-\alpha x)(1-\beta x)=1-(\alpha+\beta)x+\alpha\beta x^{2}$. For the roots of $x^{2}-x-1$ one has $\alpha+\beta=1$ and $\alpha\beta=-1$ by Vieta, so the expansion is $1-x-x^{2}$.
+:::
+
+:::
+
+::: {.pf-step #partial-fractions}
+(c) $F(x)=\dfrac{A}{1-\alpha x}+\dfrac{B}{1-\beta x}$ with $A=\dfrac{1}{\alpha-\beta}$ and $B=\dfrac{1}{\beta-\alpha}$.
+
+::: pf-proof
+From step [](#equation){.pf-ref}, $F(x)(1-x-x^{2})=x$, so by step [](#factorization){.pf-ref} $F(x)=\frac{x}{(1-\alpha x)(1-\beta x)}$ as rational functions. Seek $A,B$ with
 $$
-A+B=0,
-\qquad
--A\beta-B\alpha=1,
+\frac{A}{1-\alpha x}+\frac{B}{1-\beta x}=\frac{A(1-\beta x)+B(1-\alpha x)}{(1-\alpha x)(1-\beta x)}=\frac{x}{(1-\alpha x)(1-\beta x)},
 $$
-so
+that is $A+B=0$ and $-(A\beta+B\alpha)=1$. With $B=-A$ the second reads $A(\alpha-\beta)=1$, so $A=\frac{1}{\alpha-\beta}$ and $B=\frac{1}{\beta-\alpha}$.
+:::
+
+:::
+
+::: {.pf-step}
+(d) $F_{n}=A\alpha^{n}+B\beta^{n}$, and with $\alpha,\beta=\frac{1\pm\sqrt5}{2}$ this is $F_{n}=\frac{\alpha^{n}-\beta^{n}}{\sqrt5}$.
+
+::: pf-proof
+Each $\frac{1}{1-\alpha x}=\sum_{n\ge0}\alpha^{n}x^{n}$ for $\abs{\alpha x}<1$, and similarly for $\beta$, so by step [](#partial-fractions){.pf-ref}
 $$
-A=\frac1{\alpha-\beta},
-\qquad
-B=\frac1{\beta-\alpha}.
+F(x)=\sum_{n\ge0}\bigl(A\alpha^{n}+B\beta^{n}\bigr)x^{n}
 $$
-Expanding both geometric series near $0$,
-$$
-F(x)=\sum_{n=0}^\infty(A\alpha^n+B\beta^n)x^n,
-$$
-and coefficient comparison yields
-$$
-F_n=A\alpha^n+B\beta^n.
-$$
-Since
-$$
-\alpha=\frac{1+\sqrt5}{2},
-\qquad
-\beta=\frac{1-\sqrt5}{2},
-$$
-we obtain Binet's formula
-$$
-\boxed{F_n=\frac{\alpha^n-\beta^n}{\sqrt5}}.
-$$
+near $0$. Comparing coefficients with $F(x)=\sum F_{n}x^{n}$ gives $F_{n}=A\alpha^{n}+B\beta^{n}$. The roots of $x^{2}-x-1$ are $\alpha=\frac{1+\sqrt5}{2}$ and $\beta=\frac{1-\sqrt5}{2}$, whose difference is $\sqrt5$, so $A=\frac{1}{\sqrt5}$ and $B=-\frac{1}{\sqrt5}$; that is Binet's formula, as required.
+:::
+
+:::
+
+:::
 :::
