@@ -112,6 +112,11 @@ audit:
     `tmp/sources/uoregon-proudfoot-634-hw6.md`, whose exercise 4 is the paragraph the card
     transcribes, and the remark now cites it. Checked: the file's presence and its content at
     exercise 4. Not changed: the cited page, the exercise's identity, or the proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the comparison of the two actions, which is what Queue D asks for on this card. The lifted loop and the deck transformation, the naturality of the change-of-basepoint maps, the displayed formula and the conclusion are separate steps; the prose's two italicised paragraphs are gone, and the point that the basepoint change is not removable is inside the last step where it belongs. The argument is Proudfoot's (Homework #6, §4.1 Exercise 4, printed p. 1), with its naturality step proved rather than quoted; Hatcher's definition of the action is on printed p. 342 and the exercise on printed p. 348, both checked against the book. No statement repair.
 ---
 
 ::: {.problem}
@@ -121,33 +126,51 @@ More precisely, prove a formula like $\gamma p_*(\alpha) = p_*\bigl(\beta_{\tild
 :::
 
 ::: {.solution}
-Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
+The proof is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Partial Solutions to Homework #6, §4.1 Exercise 4, printed p. 1** (`tmp/sources/uoregon-proudfoot-634-hw6.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw6.md`), whose coverage line reads "Exercises from Hatcher: 4.1, Problems 4, 11, 12, 14, 15". The sheet obtains the formula in two lines from the naturality of the change-of-basepoint maps; the naturality step and the basepoint bookkeeping are written out below, and the statement is Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 4, printed p. 358.
 
-Let $\tilde x_0\in p^{-1}(x_0)$ and let $\gamma$ be a loop at $x_0$. Lift $\gamma$ to the path
-$$
-\tilde\gamma:I\to\widetilde X,\qquad \tilde\gamma(0)=\tilde x_0,
-$$
-whose endpoint is $\tilde\gamma(1)=T_\gamma(\tilde x_0)$, where $T_\gamma$ is the deck transformation of the universal cover corresponding to $\gamma$. By the classification of covering spaces the deck transformation group of the universal cover is $\pi_1(X,x_0)$, so $\gamma\mapsto T_\gamma$ is well defined.
+Let $\tilde x_0\in p^{-1}(x_0)$ and let $\gamma$ be a loop at $x_0$. For a path $\eta$ from $x_0$ to $x_1$ and a map $f:(I^n,\partial I^n)\to(X,x_1)$, Hatcher's $\eta f$ is obtained by shrinking the domain of $f$ to a concentric cube and inserting $\eta$ on each radial segment of the shell (printed p. 342), and $\beta_\eta([f])=[\eta f]$ defines $\beta_\eta:\pi_n(X,x_1)\to\pi_n(X,x_0)$; for loops at $x_0$ the association $[\gamma]\mapsto\beta_\gamma$ is the action $\gamma\cdot\alpha=\beta_\gamma(\alpha)$ of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$.
 
-This is the published solution of Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), "Partial Solutions to Homework #6", §4.1 Exercise 4, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, read in the text version `tmp/sources/uoregon-proudfoot-634-hw6.md`: the sheet's heading is "Math 634: Algebraic Topology I, Fall 2015" over "Partial Solutions to Homework #6", and its coverage line reads "Exercises from Hatcher: 4.1, Problems 4, 11, 12, 14, 15". It obtains the formula in two lines from the naturality of the change-of-basepoint maps; the naturality step and the basepoint bookkeeping are written out below.
+::: pf
 
-Hatcher's definition of the action (printed p. 342, read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`) is this. For a path $\eta$ from $x_0$ to $x_1$ and a map $f:(I^n,\partial I^n)\to(X,x_1)$, the map $\eta f$ is obtained by shrinking the domain of $f$ to a concentric cube and inserting $\eta$ on each radial segment of the shell; then $\beta_\eta([f])=[\eta f]$ defines $\beta_\eta:\pi_n(X,x_1)\to\pi_n(X,x_0)$, and for loops at $x_0$ the association $[\gamma]\mapsto\beta_\gamma$ is the action $\gamma\cdot\alpha=\beta_\gamma(\alpha)$ of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$.
+::: {.pf-step #lift}
+The lift $\widetilde\gamma$ of $\gamma$ starting at $\tilde x_0$ ends at $T_\gamma(\tilde x_0)$, where $T_\gamma$ is the deck transformation attached to $\gamma$, and $\gamma\mapsto T_\gamma$ identifies $\pi_1(X,x_0)$ with the deck group.
 
-Take $\alpha=[f]\in\pi_n(\widetilde X,\tilde x_0)$ with $n\ge2$. Then $(T_\gamma)_*(\alpha)\in\pi_n(\widetilde X,T_\gamma\tilde x_0)$, and $\beta_{\tilde\gamma}$ carries it back to $\pi_n(\widetilde X,\tilde x_0)$, since $\tilde\gamma$ runs from $\tilde x_0$ to $T_\gamma\tilde x_0$.
+::: pf-proof
+Paths lift uniquely to the universal cover once a starting point is fixed, so $\widetilde\gamma$ is determined by $\gamma$ and $\tilde x_0$; its endpoint $\widetilde\gamma(1)$ lies over $\gamma(1)=x_0$, and the endpoint depends only on the class of $\gamma$, because a homotopy of loops rel endpoints lifts rel endpoints. Sending $\gamma$ to the deck transformation carrying $\tilde x_0$ to $\widetilde\gamma(1)$ is the standard identification of the deck group of the universal cover with $\pi_1(X,x_0)$, and it is a homomorphism.
+:::
 
-*Naturality of $\beta$.* If $\varphi:(\widetilde X,\tilde x_0)\to(X,x_0)$ is a map of basepointed spaces and $\eta$ is a path from $\tilde x_0$ to $\tilde x_1$, then $\varphi(\eta f)=(\varphi\eta)(\varphi f)$, so
-$$
-\varphi_*\beta_\eta=\beta_{\varphi\eta}\,\varphi_* .
-$$
-This is a comparison of the two constructions of the shell: shrinking the domain and inserting $\eta$ commutes with composing by $\varphi$.
+:::
 
-*The formula.* Apply naturality with $\varphi=p$ and $\eta=\tilde\gamma$, whose image $p\tilde\gamma=\gamma$ is a loop at $x_0$:
+::: {.pf-step #naturality}
+For a based map $\varphi:(\widetilde X,\tilde x_0)\to(X,x_0)$ and a path $\eta$ from $\tilde x_0$ to $\tilde x_1$, one has $\varphi_*\beta_\eta=\beta_{\varphi\eta}\,\varphi_*$ as maps $\pi_n(\widetilde X,\tilde x_1)\to\pi_n(X,x_0)$.
+
+::: pf-proof
+At the level of maps of cubes, $\varphi(\eta f)=(\varphi\eta)(\varphi f)$: both sides shrink the domain of $\varphi f$ to a concentric cube and fill the shell with $\varphi\eta$, since $\varphi$ applied to the path $\eta$ inserted on the radial segments is the path $\varphi\eta$ inserted there. Passing to homotopy classes gives the identity.
+:::
+
+:::
+
+::: {.pf-step #formula}
+$\gamma\cdot p_*(\alpha)=p_*\Bigl(\beta_{\widetilde\gamma}\bigl((T_\gamma)_*\alpha\bigr)\Bigr)$ for $\gamma\in\pi_1(X,x_0)$ and $\alpha\in\pi_n(\widetilde X,\tilde x_0)$, $n\ge2$.
+
+::: pf-proof
+Let $\alpha=[f]$ with $f:(I^n,\partial I^n)\to(\widetilde X,\tilde x_0)$. Then $(T_\gamma)_*\alpha\in\pi_n(\widetilde X,T_\gamma\tilde x_0)$, and $\beta_{\widetilde\gamma}$ carries it back to $\pi_n(\widetilde X,\tilde x_0)$ because $\widetilde\gamma$ runs from $\tilde x_0$ to $T_\gamma\tilde x_0$. Apply step [](#naturality){.pf-ref} with $\varphi=p$ and $\eta=\widetilde\gamma$, whose image $p\widetilde\gamma=\gamma$ is a loop at $x_0$:
 $$
-p_*\beta_{\tilde\gamma}\bigl((T_\gamma)_*\alpha\bigr)=\beta_{p\tilde\gamma}\,p_*\bigl((T_\gamma)_*\alpha\bigr)=\beta_\gamma\bigl(p_*(T_\gamma)_*\alpha\bigr).
+p_*\beta_{\widetilde\gamma}\bigl((T_\gamma)_*\alpha\bigr)=\beta_{p\widetilde\gamma}\,p_*\bigl((T_\gamma)_*\alpha\bigr)=\beta_\gamma\bigl(p_*(T_\gamma)_*\alpha\bigr).
 $$
-Since $pT_\gamma=p$ as maps $\widetilde X\to X$, the map $p\circ T_\gamma\circ f$ equals $p\circ f$, so $p_*(T_\gamma)_*\alpha=p_*\alpha$. Therefore
-$$
-\boxed{\ \gamma\cdot p_*(\alpha)=\beta_\gamma\bigl(p_*\alpha\bigr)=p_*\left(\beta_{\tilde\gamma}\bigl((T_\gamma)_*\alpha\bigr)\right),\ }
-$$
-which is the formula of the exercise, with $\gamma_*$ the homomorphism induced by the deck transformation $T_\gamma$ attached to $\gamma$. So the action of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$ is transported by the isomorphism $p_*:\pi_n(\widetilde X,\tilde x_0)\to\pi_n(X,x_0)$ of Proposition 4.1 (p. 342) to the action of $\pi_1(X,x_0)$ on $\pi_n(\widetilde X,\tilde x_0)$ through deck transformations, up to the basepoint change along the lifted path $\tilde\gamma$; that basepoint change is not removable, since $T_\gamma$ moves $\tilde x_0$ when $\gamma\neq1$.
+Since $p\circ T_\gamma=p$ as maps $\widetilde X\to X$, the composite $p\circ T_\gamma\circ f$ equals $p\circ f$, so $p_*(T_\gamma)_*\alpha=p_*\alpha$. Hence the right side is $\beta_\gamma(p_*\alpha)=\gamma\cdot p_*(\alpha)$ by the definition of the action.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+Under the isomorphism $p_*:\pi_n(\widetilde X,\tilde x_0)\to\pi_n(X,x_0)$, the action of $\pi_1(X,x_0)$ on $\pi_n(X,x_0)$ corresponds to the action on $\pi_n(\widetilde X,\tilde x_0)$ by deck transformations, up to the basepoint change along $\widetilde\gamma$.
+
+::: pf-proof
+$p_*$ is an isomorphism for $n\ge2$ because $p$ is a covering map with $\pi_i$ of the fibre vanishing for $i\le1$, the fibre being discrete (Proposition 4.1, printed p. 342). Step [](#formula){.pf-ref} says that for $\alpha\in\pi_n(\widetilde X,\tilde x_0)$ the class $p_*\alpha$ acted on by $\gamma$ equals $p_*$ of $\beta_{\widetilde\gamma}((T_\gamma)_*\alpha)$; so the transported action is the deck action composed with the change of basepoint along the lifted path. That basepoint change cannot be dropped in general, since $T_\gamma$ moves $\tilde x_0$ whenever $\gamma\ne1$, and the exercise's formula, with $\gamma_*$ the homomorphism induced by the deck transformation, is exactly the displayed identity.
+:::
+
+:::
+
+:::
 :::
