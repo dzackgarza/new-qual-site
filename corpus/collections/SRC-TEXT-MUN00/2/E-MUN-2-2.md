@@ -44,6 +44,15 @@ audit:
     printed pp. 11-12 (tmp/sources/munkres-solutions-whitman.pdf), parts (a)-(h). Added
     the two missing directions of the printed (g) and (h), the injective case: he proves
     them by the argument now on the card, that equal image values come from one point.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: one step per part, with the two directions
+    of the printed (g) and (h) and their counterexamples to the equality without injectivity
+    as substeps. The argument is the retained solution's, unchanged; its cited pages were not
+    re-read in this pass, and the printed statement was not re-read either, its source
+    correction being the earlier event above.
 ---
 
 ::: {.exercise}
@@ -70,53 +79,145 @@ Show that $f$ preserves inclusions and unions only:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.2, printed pp. 11--12** (`tmp/sources/munkres-solutions-whitman.pdf`), all eight parts; the four chains of equivalences for the preimage and the injective directions of (g) and (h) below are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.2, printed pp. 11--12** (`tmp/sources/munkres-solutions-whitman.pdf`), all eight parts; the chains of equivalences for the preimage, the injective directions of (g) and (h), and the counterexamples are his.
 
-For preimages, all four assertions follow directly from the equivalence
-$$
-x\in f^{-1}(S)\iff f(x)\in S.
-$$
-Thus:
+For preimages the only input is the equivalence $x\in f^{-1}(S)\iff f(x)\in S$. Throughout, $f:A\to B$, $A_{i}\subset A$ and $B_{i}\subset B$ for $i=0,1$.
 
-(a) If $B_0\subset B_1$ and $x\in f^{-1}(B_0)$, then $f(x)\in B_1$, so $x\in f^{-1}(B_1)$.
+::: pf
 
-(b)
-$$
-x\in f^{-1}(B_0\cup B_1)
-\iff f(x)\in B_0\text{ or }f(x)\in B_1
-\iff x\in f^{-1}(B_0)\cup f^{-1}(B_1).
-$$
+::: {.pf-step #preimage-inclusion}
+(a) $B_{0}\subset B_{1}$ implies $f^{-1}(B_{0})\subset f^{-1}(B_{1})$.
 
-(c) The same argument with "and" gives
-$$
-f^{-1}(B_0\cap B_1)=f^{-1}(B_0)\cap f^{-1}(B_1).
-$$
+::: pf-proof
+Let $x\in f^{-1}(B_{0})$, so $f(x)\in B_{0}$. Since $B_{0}\subset B_{1}$ this gives $f(x)\in B_{1}$, that is $x\in f^{-1}(B_{1})$.
+:::
 
-(d) Likewise,
-$$
-f^{-1}(B_0-B_1)=f^{-1}(B_0)-f^{-1}(B_1).
-$$
+:::
 
-For images:
+::: {.pf-step #preimage-union}
+(b) $f^{-1}(B_{0}\cup B_{1})=f^{-1}(B_{0})\cup f^{-1}(B_{1})$.
 
-(e) If $A_0\subset A_1$, every value attained on $A_0$ is attained on $A_1$, so $f(A_0)\subset f(A_1)$.
+::: pf-proof
+For each $x\in A$,
+$$
+x\in f^{-1}(B_{0}\cup B_{1})
+\iff f(x)\in B_{0}\text{ or }f(x)\in B_{1}
+\iff x\in f^{-1}(B_{0})\cup f^{-1}(B_{1}),
+$$
+so the two sets have the same elements.
+:::
 
-(f) A value is attained on $A_0\cup A_1$ exactly when it is attained on at least one of $A_0,A_1$, hence
-$$
-f(A_0\cup A_1)=f(A_0)\cup f(A_1).
-$$
+:::
 
-(g) If $y=f(x)$ for some $x\in A_0\cap A_1$, then $y\in f(A_0)\cap f(A_1)$, so
-$$
-f(A_0\cap A_1)\subset f(A_0)\cap f(A_1).
-$$
-For the reverse inclusion assume $f$ injective and let $y\in f(A_0)\cap f(A_1)$. Then $y=f(x_0)=f(x_1)$ with $x_0\in A_0$ and $x_1\in A_1$, and injectivity gives $x_0=x_1$, a point of $A_0\cap A_1$; hence $y\in f(A_0\cap A_1)$. So equality holds.
-Without injectivity it can fail: let $f:\{0,1\}\to\{*\}$ be constant, $A_0=\{0\}$, and $A_1=\{1\}$. Then the left side is empty and the right side is $\{*\}$.
+::: {.pf-step #preimage-intersection}
+(c) $f^{-1}(B_{0}\cap B_{1})=f^{-1}(B_{0})\cap f^{-1}(B_{1})$.
 
-(h) If $y\in f(A_0)-f(A_1)$, write $y=f(x)$ with $x\in A_0$. Since $y\notin f(A_1)$, necessarily $x\notin A_1$, so $x\in A_0-A_1$. Thus
-$$
-f(A_0-A_1)\supset f(A_0)-f(A_1).
-$$
-For the reverse inclusion assume $f$ injective and let $y\in f(A_0-A_1)$, say $y=f(x)$ with $x\in A_0-A_1$. Then $y\in f(A_0)$; and if $y=f(x_0)$ with $x_0\in A_1$, injectivity gives $x=x_0\in A_1$, contrary to $x\in A_0-A_1$. Hence $y\notin f(A_1)$, that is, $y\in f(A_0)-f(A_1)$, and equality holds.
-Without injectivity it can fail: for the same constant map with $A_0=\{0,1\}$ and $A_1=\{1\}$ the left side is $\{*\}$ and the right side is empty.
+::: pf-proof
+The same chain with “and” in place of “or”: $x$ lies in the left side exactly when $f(x)\in B_{0}$ and $f(x)\in B_{1}$, which is exactly the definition of the right side.
+:::
+
+:::
+
+::: {.pf-step #preimage-difference}
+(d) $f^{-1}(B_{0}-B_{1})=f^{-1}(B_{0})-f^{-1}(B_{1})$.
+
+::: pf-proof
+Likewise: $x\in f^{-1}(B_{0}-B_{1})$ exactly when $f(x)\in B_{0}$ and $f(x)\notin B_{1}$, that is when $x\in f^{-1}(B_{0})$ and $x\notin f^{-1}(B_{1})$.
+:::
+
+:::
+
+::: {.pf-step #image-inclusion}
+(e) $A_{0}\subset A_{1}$ implies $f(A_{0})\subset f(A_{1})$.
+
+::: pf-proof
+Every value $f(x)$ with $x\in A_{0}$ satisfies $x\in A_{1}$ as well, so it is a value of $f$ on $A_{1}$.
+:::
+
+:::
+
+::: {.pf-step #image-union}
+(f) $f(A_{0}\cup A_{1})=f(A_{0})\cup f(A_{1})$.
+
+::: pf-proof
+A point $y\in B$ lies in $f(A_{0}\cup A_{1})$ exactly when $y=f(x)$ for some $x$ in at least one of $A_{0},A_{1}$, which is exactly when $y\in f(A_{0})$ or $y\in f(A_{1})$.
+:::
+
+:::
+
+::: {.pf-step #image-intersection}
+(g) $f(A_{0}\cap A_{1})\subset f(A_{0})\cap f(A_{1})$, with equality when $f$ is injective and not in general.
+
+::: pf-proof
+The inclusion, the injective case, and a counterexample to equality without injectivity.
+
+::: {.pf-step #g-subset}
+$f(A_{0}\cap A_{1})\subset f(A_{0})\cap f(A_{1})$.
+
+::: pf-proof
+If $y=f(x)$ with $x\in A_{0}\cap A_{1}$, then $x\in A_{0}$ gives $y\in f(A_{0})$ and $x\in A_{1}$ gives $y\in f(A_{1})$.
+:::
+
+:::
+
+::: {.pf-step #g-injective}
+If $f$ is injective, equality holds.
+
+::: pf-proof
+Let $y\in f(A_{0})\cap f(A_{1})$, so $y=f(x_{0})=f(x_{1})$ with $x_{0}\in A_{0}$ and $x_{1}\in A_{1}$. Injectivity gives $x_{0}=x_{1}$, a point of $A_{0}\cap A_{1}$, so $y\in f(A_{0}\cap A_{1})$; with step [](#g-subset){.pf-ref} the two sets are equal.
+:::
+
+:::
+
+::: {.pf-step #g-fails}
+Without injectivity the equality can fail.
+
+::: pf-proof
+Take $f:\{0,1\}\to\{*\}$ the constant map, $A_{0}=\{0\}$ and $A_{1}=\{1\}$. Then $A_{0}\cap A_{1}=\varnothing$, so $f(A_{0}\cap A_{1})=\varnothing$, while $f(A_{0})\cap f(A_{1})=\{*\}\cap\{*\}=\{*\}$. So the inclusion in step [](#g-subset){.pf-ref} is proper here and the injectivity hypothesis is needed.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #image-difference}
+(h) $f(A_{0}-A_{1})\supset f(A_{0})-f(A_{1})$, with equality when $f$ is injective and not in general.
+
+::: pf-proof
+The inclusion, the injective case, and a counterexample to equality without injectivity.
+
+::: {.pf-step #h-superset}
+$f(A_{0})-f(A_{1})\subset f(A_{0}-A_{1})$.
+
+::: pf-proof
+Let $y\in f(A_{0})-f(A_{1})$ and write $y=f(x)$ with $x\in A_{0}$. Were $x\in A_{1}$ then $y\in f(A_{1})$, contrary to hypothesis; so $x\in A_{0}-A_{1}$ and $y\in f(A_{0}-A_{1})$.
+:::
+
+:::
+
+::: {.pf-step #h-injective}
+If $f$ is injective, equality holds.
+
+::: pf-proof
+Let $y\in f(A_{0}-A_{1})$, say $y=f(x)$ with $x\in A_{0}-A_{1}$. Then $y\in f(A_{0})$. If also $y=f(x_{0})$ with $x_{0}\in A_{1}$, injectivity gives $x=x_{0}\in A_{1}$, contradicting $x\in A_{0}-A_{1}$; so $y\notin f(A_{1})$ and $y\in f(A_{0})-f(A_{1})$. With step [](#h-superset){.pf-ref} the two sets are equal.
+:::
+
+:::
+
+::: {.pf-step #h-fails}
+Without injectivity the equality can fail.
+
+::: pf-proof
+For the constant map $f:\{0,1\}\to\{*\}$, $A_{0}=\{0,1\}$ and $A_{1}=\{1\}$ give $A_{0}-A_{1}=\{0\}$, so $f(A_{0}-A_{1})=\{*\}$, while $f(A_{0})-f(A_{1})=\{*\}-\{*\}=\varnothing$. So (h) is a proper inclusion here.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
 :::
