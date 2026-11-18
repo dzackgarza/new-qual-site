@@ -50,30 +50,52 @@ Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence
 :::
 
 ::: {.solution}
-Let
-$$
-f:X\to Y
-$$
-be as in the problem, and let
-$$
-\widetilde f:\widetilde X\to\widetilde Y
-$$
-be the chosen lift. The universal covers are simply connected CW complexes. By hypothesis $\widetilde f$ induces an isomorphism on integral homology in every degree. The homology version of Whitehead's theorem for simply connected CW complexes therefore implies
-$$
-\widetilde f\text{ is a homotopy equivalence}.
-$$
-Hence
-$$
-\widetilde f_*:\pi_i(\widetilde X)\xrightarrow{\cong}\pi_i(\widetilde Y)
-\qquad(i\ge2).
-$$
-Covering maps induce isomorphisms on higher homotopy groups, so the commutative lifting square gives
-$$
-f_*:\pi_i(X)\xrightarrow{\cong}\pi_i(Y)
-\qquad(i\ge2).
-$$
-By assumption $f_*$ is also an isomorphism on $\pi_1$, and connectedness gives the $\pi_0$ condition. Thus $f$ is a weak homotopy equivalence between CW complexes. Whitehead's theorem yields
+
+The argument is the card's own: the lift to universal covers is a homotopy equivalence by the homology form of Whitehead, and higher homotopy descends through covering maps.
+
+Let $f:X\to Y$ be a map of connected CW complexes inducing an isomorphism on $\pi_{1}$, and let $\widetilde f:\widetilde X\to\widetilde Y$ be a lift of $f$ to the universal covers (its existence is part of the data).
+
+::: pf
+
+::: {.pf-step #covers}
+$\widetilde X$ and $\widetilde Y$ are simply connected CW complexes, and $\widetilde f$ induces an isomorphism on integral homology in every degree.
+
+::: pf-proof
+The universal cover of a connected CW complex is a CW complex, and it is simply connected by construction. A lift of $f$ exists because the composite $\widetilde X\to X\xrightarrow{f}Y$ induces the trivial map on $\pi_{1}$ — the source $\widetilde X$ is simply connected — so the lifting criterion for the covering $\widetilde Y\to Y$ applies. The homology hypothesis on $\widetilde f$ is the one assumed in the problem.
+:::
+
+:::
+
+::: {.pf-step #equivalence}
+$\widetilde f$ is a homotopy equivalence.
+
+::: pf-proof
+$\widetilde X$ and $\widetilde Y$ are simply connected CW complexes and $\widetilde f$ is an isomorphism on integral homology in each degree, so the homology form of Whitehead's theorem makes $\widetilde f$ a weak homotopy equivalence, and a weak equivalence between CW complexes is a homotopy equivalence.
+:::
+
+:::
+
+::: {.pf-step #higher}
+$f_{*}:\pi_{i}(X)\to\pi_{i}(Y)$ is an isomorphism for every $i\ge2$.
+
+::: pf-proof
+The covering maps $p_{X}:\widetilde X\to X$ and $p_{Y}:\widetilde Y\to Y$ induce isomorphisms on $\pi_{i}$ for $i\ge2$, since a covering map is a fibration with discrete fibre and $\pi_{i}$ of a discrete space vanishes for $i\ge1$. The square $p_{Y}\widetilde f=f p_{X}$ commutes, so $f_{*}$ is the composite of two isomorphisms and hence an isomorphism.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$f$ is a homotopy equivalence.
+
+::: pf-proof
+$f_{*}$ is an isomorphism on $\pi_{1}$ by hypothesis, on $\pi_{i}$ for $i\ge2$ by step [](#higher){.pf-ref}, and on $\pi_{0}$ because both spaces are connected, so $f$ is a weak homotopy equivalence. Whitehead's theorem then makes $f$ a homotopy equivalence, since $X$ and $Y$ are CW complexes. Hence
 $$
 \boxed{f\text{ is a homotopy equivalence}.}
 $$
+The restatement in the problem, that the hypothesis on $\widetilde f$ says $f_{*}:H_{*}(X;\ZZ[\pi_{1}X])\to H_{*}(Y;\ZZ[\pi_{1}Y])$ is an isomorphism in homology with local coefficients, is the version of the same condition in §3.H.
+:::
+
+:::
+
+:::
 :::
