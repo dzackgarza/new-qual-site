@@ -12,6 +12,18 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured solution of the problem as printed, replacing a bulleted outline with a
+    Lamport proof. Checked: normality makes N a union of full G-conjugacy classes; the
+    classes are the orbits of conjugation, so orbit-stabilizer gives their sizes as
+    divisors of |G| = p^k; one class is {1}, so the remaining sum is p-1 and each remaining
+    class has size 1, whence every element of N is central. The earlier outline's size
+    comparison ("1 + p > p") is now the explicit inequality $p = 1 + \sum \ge 1 + p$. The
+    argument is the card's own: no retained solution set covers this problem.
 ---
 
 ::: {.problem}
@@ -33,22 +45,38 @@ Prove that $N$ is contained in the center of $G$.
 :::
 
 ::: {.solution}
-\envlist
+The argument is the card's own; no retained solution set covers this problem.
 
-- Use that $N\normal G \iff N = \disjoint' [n_i]$ is a *disjoint* union of (full) conjugacy classes.
+Throughout, $G$ acts on itself by conjugation, $g\cdot x\coloneqq gx\inverseof{g}$, so that the orbit of $x$ is its conjugacy class $[x]$ and the orbit-stabilizer theorem gives $\size[x]=\size G/\size\Stab(x)$; the centre $Z(G)$ is the set of points with trivial class.
 
-- Take cardinalities:
-$$
-p = \size N = \sum_{i=1}^m \size [n_i] = 1 + \sum_{i=2}^m \size [n_i]
-.$$
+::: pf
 
-- The size of each conjugacy class divides the size of the ambient group $G$ by orbit-stabilizer, and $\size G = p^k$, so each $\size [n_i]$ is a power of $p$.
-  Note this is a statement about $\size G$, not about $\size N$: the classes $[n_i]$ are $G\dash$conjugacy classes that happen to lie inside $N$.
+::: {.pf-step #classes}
+$N$ is a disjoint union of $G$-conjugacy classes, one of which is $\theset{1_N}$.
 
-- So each $\size [n_i]$ is either $1$ or at least $p$.
-  If any one of them were at least $p$, the sum would already be at least $1 + p > p$, which is too big.
+::: pf-proof
+Let $n\in N$ and $g\in G$. Since $N$ is normal, $gng\inverseof{g}\in N$, so the whole conjugacy class of $n$ lies in $N$; distinct conjugacy classes are either equal or disjoint because they are orbits of one action, and the union of the classes of the elements of $N$ is therefore $N$ itself. The identity $1_N$ is fixed by conjugation, so its class is the singleton $\theset{1_N}$.
+:::
 
-- Hence every $\size[n_i] = 1$, and there are $m = p$ of them.
+:::
 
-- Then $[n_i] = \theset{ n_i } \iff n_i \in Z(G)$, and this holds for all $i$, so $N \subseteq Z(G)$.
+::: {.pf-step #sizes}
+If $N=[n_1]\cup\cdots\cup[n_m]$ is the decomposition into distinct classes with $[n_1]=\theset{1_N}$, then $p=1+\sum_{i=2}^m\size[n_i]$, and every $\size[n_i]$ is either $1$ or at least $p$.
+
+::: pf-proof
+Taking cardinalities in the disjoint decomposition of step [](#classes){.pf-ref} gives $p=\size N=\sum_i\size[n_i]$, and $\size[n_1]=1$, which is the displayed formula. Since $\size[n_i]=\size G/\size\Stab(n_i)$ by orbit-stabilizer, it divides $\size G=p^k$, so it is a power $p^{e}$ with $e\ge0$; such a number is $1$ when $e=0$ and at least $p$ otherwise.
+:::
+
+:::
+
+::: {.pf-step}
+$N\subset Z(G)$.
+
+::: pf-proof
+If some $i\ge2$ had $\size[n_i]\ge p$, then $p=1+\sum_{i\ge2}\size[n_i]\ge1+p$, which is absurd; so every $\size[n_i]=1$ by step [](#sizes){.pf-ref}. A class with one element is a point fixed by conjugation, hence lies in the centre, so every $n\in N$ has $[n]=\theset{n}$ and belongs to $Z(G)$. Thus $N\subset Z(G)$.
+:::
+
+:::
+
+:::
 :::
