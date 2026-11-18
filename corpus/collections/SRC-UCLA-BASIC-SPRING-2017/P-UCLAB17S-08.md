@@ -6,7 +6,9 @@ title: A trapezoid-rule error estimate by the second derivative
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Taylor Series
 relations: []
 review: draft
 audit:

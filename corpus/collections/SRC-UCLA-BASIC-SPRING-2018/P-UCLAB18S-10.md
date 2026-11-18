@@ -6,7 +6,9 @@ title: Vanishing partial derivatives on a connected open set
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Partial Derivatives
+  - Connectedness
 relations: []
 review: draft
 audit:

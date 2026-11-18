@@ -6,7 +6,9 @@ title: Linear independence of exponential functions
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Independence
+  - Exponential and Logarithmic Functions
 relations: []
 review: draft
 audit:

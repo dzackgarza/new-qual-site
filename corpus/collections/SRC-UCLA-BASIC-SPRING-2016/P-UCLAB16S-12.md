@@ -6,7 +6,9 @@ title: Orthogonality of combinations of eigenvectors of a symmetric matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Symmetric Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

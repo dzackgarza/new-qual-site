@@ -6,7 +6,9 @@ title: Separability of a metric space from separability of $C(X)$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Separability
+  - Function Spaces
 relations: []
 review: draft
 audit:

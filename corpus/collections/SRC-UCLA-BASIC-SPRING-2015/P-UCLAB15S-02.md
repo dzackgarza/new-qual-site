@@ -6,7 +6,9 @@ title: Compact embedding between Hölder spaces
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Holder Continuity
+  - Arzela-Ascoli Theorem
 relations: []
 review: draft
 audit:

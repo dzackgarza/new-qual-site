@@ -6,7 +6,9 @@ title: Density of matrices with distinct eigenvalues and failure for one Jordan 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Density
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

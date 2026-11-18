@@ -6,7 +6,9 @@ title: Negativity of a quadratic form in three variables
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Quadratic Forms
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Positive definiteness under sums and symmetrized products
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Positive Definite Matrices
 relations: []
 review: draft
 audit:

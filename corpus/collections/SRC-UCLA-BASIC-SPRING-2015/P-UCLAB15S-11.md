@@ -6,7 +6,9 @@ title: Ten commuting real matrices of the same finite order
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Commuting Operators
+  - Matrix Groups
 relations: []
 review: draft
 audit:

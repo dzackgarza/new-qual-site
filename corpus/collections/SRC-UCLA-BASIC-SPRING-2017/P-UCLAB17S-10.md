@@ -6,7 +6,9 @@ title: Compact chain-connected sets
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Compactness
+  - Connectedness
 relations: []
 review: draft
 audit:

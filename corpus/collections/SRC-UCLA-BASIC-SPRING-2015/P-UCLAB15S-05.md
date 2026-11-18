@@ -6,7 +6,9 @@ title: Convergence of the integral-sum discrepancy for a decreasing function
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integrals
+  - Monotone Functions
 relations: []
 review: draft
 audit:

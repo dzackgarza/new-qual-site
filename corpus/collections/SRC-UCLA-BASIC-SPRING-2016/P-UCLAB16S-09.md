@@ -6,7 +6,9 @@ title: Linear independence over the reals and rationals
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Linear Independence
+  - Linear Algebra
 relations: []
 review: draft
 audit:

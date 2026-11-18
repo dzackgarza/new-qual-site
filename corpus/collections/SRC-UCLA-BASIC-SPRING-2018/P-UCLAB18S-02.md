@@ -6,7 +6,9 @@ title: Ranks of two idempotent matrices
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Rank
+  - Projection
 relations: []
 review: draft
 audit:

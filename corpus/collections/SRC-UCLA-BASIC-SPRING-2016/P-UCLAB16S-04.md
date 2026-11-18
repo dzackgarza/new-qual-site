@@ -6,7 +6,9 @@ title: Limit of Picard iterates for a linear Volterra integral equation
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Integral Equations
+  - Ordinary Differential Equations
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Open and closed balls in an ultrametric
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Metric Spaces
+  - Norms
 relations: []
 review: draft
 audit:

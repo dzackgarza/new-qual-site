@@ -6,7 +6,9 @@ title: A Lipschitz function with vanishing forward difference quotients
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Lipschitz Continuity
+  - Differentiation
 relations: []
 review: draft
 audit:

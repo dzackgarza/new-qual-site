@@ -6,7 +6,9 @@ title: Invertibility of a polynomial in an operator
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Minimal and Characteristic Polynomials
+  - Invertibility
 relations: []
 review: draft
 audit:

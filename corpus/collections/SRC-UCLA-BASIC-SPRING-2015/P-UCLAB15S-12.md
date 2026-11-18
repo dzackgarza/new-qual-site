@@ -6,7 +6,9 @@ title: Matrix exponential and existence of a real logarithm
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Exponential
+  - Matrix Logarithm
 relations: []
 review: draft
 audit:

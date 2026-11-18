@@ -6,7 +6,9 @@ title: Uniform boundedness from a quadratic pointwise inequality
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inequalities
+  - Continuous Functions
 relations: []
 review: draft
 audit:
