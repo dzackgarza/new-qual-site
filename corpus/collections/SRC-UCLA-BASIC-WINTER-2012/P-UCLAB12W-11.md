@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-11
 kind: problem
 title: A quadratic annihilating polynomial for a $2\times2$ matrix
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Cayley-Hamilton, Characteristic Polynomial]}
 relations: []
 review: draft
 audit:

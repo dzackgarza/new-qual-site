@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-12
 kind: problem
 title: Equivalence of two binary quadratic forms over the real and complex numbers
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Quadratic Forms]}
 relations: []
 review: draft
 audit:

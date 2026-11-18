@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-10
 kind: problem
 title: Determinant of the matrix exponential
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Matrix Exponential, Determinants]}
 relations: []
 review: draft
 audit:

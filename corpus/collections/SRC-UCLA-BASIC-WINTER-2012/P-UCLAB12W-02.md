@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-02
 kind: problem
 title: Pointwise convergence of convex functions to a continuous limit is uniform
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Uniform Convergence, Convex Functions]}
 relations: []
 review: draft
 audit:

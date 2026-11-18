@@ -5,7 +5,9 @@ kind: problem
 title: Composite trapezoid-rule error estimate
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Integrals
+  - Taylor Series
 relations: []
 review: draft
 audit:

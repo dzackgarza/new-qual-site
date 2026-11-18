@@ -6,7 +6,9 @@ title: 'Fourier transforms and self-convolutions of $L^2$ functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Transform
+  - Convolution
 relations: []
 review: draft
 audit:

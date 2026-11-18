@@ -5,7 +5,8 @@ kind: problem
 title: Intermediate values of a continuous function
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Intermediate Value Theorem
 relations: []
 review: draft
 audit:

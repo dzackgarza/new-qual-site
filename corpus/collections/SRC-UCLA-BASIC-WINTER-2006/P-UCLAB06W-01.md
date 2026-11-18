@@ -5,7 +5,9 @@ kind: problem
 title: Covering the rationals by intervals of arbitrarily small total length
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Measure Zero Sets
+  - Rational Numbers
 relations: []
 review: draft
 audit:

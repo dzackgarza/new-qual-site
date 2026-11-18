@@ -5,7 +5,9 @@ kind: problem
 title: The irrationals are not an $F_\sigma$ subset of the real line
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Baire Category Theorem
+  - G-delta Sets
 relations: []
 review: draft
 audit:

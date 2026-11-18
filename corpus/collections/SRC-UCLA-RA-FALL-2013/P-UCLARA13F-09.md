@@ -6,7 +6,9 @@ title: Separate boundedness of a bilinear form implies joint boundedness
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Banach-Steinhaus Theorem
+  - Bilinear Forms
 relations: []
 review: draft
 audit:

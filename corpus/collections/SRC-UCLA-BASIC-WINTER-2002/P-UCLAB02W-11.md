@@ -6,7 +6,9 @@ title: Triangularization in an orthonormal basis
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Schur Decomposition
+  - Orthonormal Bases
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: 'An $L^2$-to-supremum norm bound forces finite dimension'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Norms
+  - Function Spaces
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-08
 kind: problem
 title: Approximation by diagonalizable matrices with simple spectrum
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Density, Diagonalization]}
 relations: []
 review: draft
 audit:

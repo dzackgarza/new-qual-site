@@ -6,7 +6,9 @@ title: Two integral limits
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Integrals
+  - Limits
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-09
 kind: problem
 title: Matrix recurrence and exponential growth rate
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Recurrences, Eigenvalues and Eigenvectors]}
 relations: []
 review: draft
 audit:

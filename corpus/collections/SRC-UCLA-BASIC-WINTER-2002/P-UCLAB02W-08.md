@@ -5,7 +5,9 @@ kind: problem
 title: Rank bounds for a composition of linear maps
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Rank and Nullity
+  - Rank
 relations: []
 review: draft
 audit:

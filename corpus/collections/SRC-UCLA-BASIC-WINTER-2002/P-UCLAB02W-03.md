@@ -5,7 +5,9 @@ kind: problem
 title: Direct connectedness proof for the open unit disk
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Connectedness
+  - Path Connectedness
 relations: []
 review: draft
 audit:

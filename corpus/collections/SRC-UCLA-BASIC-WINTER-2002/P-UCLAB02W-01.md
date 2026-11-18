@@ -5,7 +5,9 @@ kind: problem
 title: Differentiation under the integral sign
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Leibniz Rule
+  - Integrals
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: A nonsingular planar map covering the open unit disk
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Inverse Function Theorem
+  - Diffeomorphisms
 relations: []
 review: draft
 audit:

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: P-UCLAB12W-04
 kind: problem
 title: Cesàro convergence of nonnegative partial sums
-classification: {areas: [prelim], topics: []}
+classification: {areas: [prelim], topics: [Cesaro Means, Series of Numbers]}
 relations: []
 review: draft
 audit:
