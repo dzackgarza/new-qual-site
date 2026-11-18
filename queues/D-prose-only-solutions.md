@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1383 of the 12429 problem cards that have a solution
+1376 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1383
+- Problems: 1376
 - Problem cards with a solution: 12429
 
-## Problems (1383)
+## Problems (1376)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -31,7 +31,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-AMD-5UFPG7F5 — "An ideal is maximal iff the quotient is a field"
 - [ ] E-AMD-74T5EHRR — "The center of $S_n$ is trivial for $n\geq 3$"
 - [ ] E-AMD-7FMEI2QD — "A ring is local iff $x$ or $1-x$ is a unit for every $x$"
-- [ ] E-AMD-CY7I27YM — "Algebraic extensions are transitive"
 - [ ] E-AMD-DLD6LYAM — "Groups of order $12$ with a normal subgroup of order $4$ are isomorphic to $A_4$"
 - [ ] E-AMD-DQCYAQBD — "Quotients of dihedral groups are dihedral"
 - [ ] E-AMD-E3UUQEAP — "Splitting field of $x^3-2$ is $\QQ(\sqrt[3]{2},\zeta_3)$"
@@ -57,8 +56,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-ER6ZN — "Surjections from $\RR$ onto $\RR^\omega$ and $\RR^\infty$ under the product, uniform, and box topologies"
 - [ ] E-ETKNU — "The imbedding theorem for $m=1$ and linear graphs in $\RR^3$"
 - [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
-- [ ] E-HAT-2.1-10 — "Quotient of paired triangles is a surface with a Delta-complex structure"
-- [ ] E-HAT-2.2-20 — "Euler characteristic is multiplicative for products of finite CW complexes"
 - [ ] E-HAT-2.2-21 — "Euler characteristic of union of subcomplexes"
 - [ ] E-HAT-2.2-23 — "If $M_g$ covers $M_h$ then $g = n(h-1)+1$"
 - [ ] E-HAT-2.2-32 — "Mayer–Vietoris gives suspension isomorphism $\tilde{H}_n(SX) \approx \tilde{H}_{n-1}(X)$"
@@ -75,7 +72,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-3.2-12 — "Spaces with isomorphic cohomology but different homotopy type"
 - [ ] E-HAT-3.2-13 — "Cohomology of $\CP^\infty/\CP^1$"
 - [ ] E-HAT-3.2-15 — "Poincaré series and products"
-- [ ] E-HAT-3.2-16 — "Torsion in products of CW complexes"
 - [ ] E-HAT-3.2-18 — "Cup product nondegenerality on surfaces"
 - [ ] E-HAT-3.2-2 — "Cup products vanish on unions of contractible open sets"
 - [ ] E-HAT-3.2-3 — "Maps $\RP^n\to\RP^m$ for $n>m$ and the Borsuk--Ulam theorem"
@@ -411,7 +407,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HK-54-11 — "$cA + B$ is invertible for all but at most $n$ scalars"
 - [ ] E-HK-54-14 — "Block determinant formula for commuting blocks"
 - [ ] E-HK-54-2 — "Cramer's rule for two systems over $\QQ$"
-- [ ] E-HK-54-3 — "Odd-order complex skew-symmetric matrices are singular"
 - [ ] E-HK-54-4 — "Orthogonal matrices have determinant $\pm 1$"
 - [ ] E-HK-54-5 — "Unitary matrices have determinant of absolute value one"
 - [ ] E-HK-54-6 — "Multiplicativity of the operator determinant and invertibility criterion"
@@ -949,7 +944,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
-- [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
@@ -1076,7 +1070,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CH13-26 — "Units, zero-divisors, idempotents and nilpotents of $\ZZ_3\oplus\ZZ_6$"
 - [ ] P-CH13-29 — "Subfield test"
 - [ ] P-CH13-35 — "Fields of order $2^n$ have characteristic $2$"
-- [ ] P-CH13-41 — "If $a$ is idempotent then so is $1-a$"
 - [ ] P-CH13-46 — "A zero-divisor product has a zero-divisor factor"
 - [ ] P-CH13-47 — "Nonzero elements of a ring without zero-divisors share one additive order"
 - [ ] P-CH13-68 — "Subfields of the field of order $32$"
