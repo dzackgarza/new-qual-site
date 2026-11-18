@@ -25,6 +25,15 @@ audit:
     Lindelof, so a countable regular space is regular Lindelof, hence normal by Exercise 32.4, and
     part (a) applies. The card's (b) is that argument with Proposition 1 (a countable space is
     Lindelof) stated and proved. No correction to the mathematics was needed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked (a) Urysohn's lemma applied to two closed
+    points, connectedness of the image and the identification of the image with [0,1]; (b)
+    countability giving Lindelof, Theorem 32.1 giving normality, and (a) giving the
+    contradiction. The argument is the card's own; no retained set is cited. Munkres §33
+    Exercise 4(b), printed p. 212. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -36,15 +45,36 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let $X$ be connected and normal, with distinct points $a,b$. Since normal spaces are $T_1$, the singleton sets $\{a\},\{b\}$ are closed. By Urysohn's lemma there is a continuous function
-$$
-f:X\to[0,1]
-$$
-with $f(a)=0$ and $f(b)=1$. The image $f(X)$ is connected and contains $0$ and $1$, so
-$$
-f(X)=[0,1].
-$$
-Thus $X$ surjects onto an uncountable set and is therefore uncountable.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §33 Exercise 4(b), printed p. 212, Urysohn's lemma (§33), Theorem 32.1 (regular Lindelöf implies normal) and the countability results of §30.
 
-(b) Let $X$ be connected, regular, and have more than one point. If $X$ were countable, then it would be Lindelöf. A regular Lindelöf space is normal by §32. Part (a) would then imply $X$ is uncountable, contradiction. Hence $X$ is uncountable.
+::: pf
+
+::: {.pf-step #part-a}
+(a) A connected normal space with more than one point is uncountable.
+
+::: pf-proof
+Let $X$ be connected and normal with distinct points $a,b$. A normal space is $T_{1}$, so $\{a\}$ and $\{b\}$ are closed and disjoint; by Urysohn's lemma there is a continuous $f:X\to[0,1]$ with $f(a)=0$ and $f(b)=1$. The image $f(X)$ is connected, being a continuous image of the connected space $X$, and it contains $0$ and $1$; the only connected subset of $[0,1]$ containing both is $[0,1]$ itself, since $[0,1]$ is convex and its convex subsets are intervals. So $f(X)=[0,1]$, and $X$ maps onto an uncountable set, hence is uncountable.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) A connected regular space with more than one point is uncountable.
+
+::: pf-proof
+Let $X$ be connected, regular and have more than one point, and suppose it were countable. A countable space is Lindelöf: every open cover has a countable subcollection, indeed the whole cover is countable, and a countable subcollection of a cover which is itself countable covers it. A regular Lindelöf space is normal (Theorem 32.1). So $X$ would be a connected normal space with more than one point, hence uncountable by step [](#part-a){.pf-ref}, contradicting the supposition.
+:::
+
+:::
+
+::: {.pf-step}
+Both parts hold.
+
+::: pf-proof
+Steps [](#part-a){.pf-ref} and [](#part-b){.pf-ref} are the two assertions.
+:::
+
+:::
+
+:::
 :::
