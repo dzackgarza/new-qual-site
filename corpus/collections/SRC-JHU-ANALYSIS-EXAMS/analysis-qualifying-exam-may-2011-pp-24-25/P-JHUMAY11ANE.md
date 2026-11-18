@@ -38,23 +38,44 @@ Prove that $(g_n)$ converges uniformly on $[0,1]$.
 :::
 
 ::: {.solution}
-Each $f_n$ is $1$-Lipschitz. The maximum of finitely many $1$-Lipschitz functions is again $1$-Lipschitz, so every $g_n$ is continuous and
-$$
-\abs{g_n(s)-g_n(t)}\le\abs{s-t}.
-$$
-Also
-$$
-g_n(t)\le g_{n+1}(t)\le5
-$$
-for every $t$. Hence the pointwise limit
-$$
-g(t)=\sup_n g_n(t)=\sup_n f_n(t)
-$$
-exists and is finite. Moreover, taking suprema in the Lipschitz estimate gives
-$$
-\abs{g(s)-g(t)}\le\abs{s-t},
-$$
-so $g$ is continuous.
 
-Thus $(g_n)$ is a monotone increasing sequence of continuous functions on the compact interval $[0,1]$ converging pointwise to the continuous function $g$. By Dini's theorem, the convergence is uniform.
+No retained solution set covers this exercise: the card's own argument follows, with the Lipschitz stability of the maximum, the limit function and Dini's theorem as separate steps.
+
+Suppose $f_{n}\in C^{1}([0,1])$ with $f_{n}\le5$ and $\abs{f_{n}'}\le1$, and $g_{n}=\max\theset{f_{1},\dots,f_{n}}$.
+
+::: pf
+
+::: {.pf-step #lipschitz}
+Each $f_{n}$ and each $g_{n}$ is $1$-Lipschitz, and $g_{n}$ is continuous.
+
+::: pf-proof
+By the mean value theorem $\abs{f_{n}(s)-f_{n}(t)}\le\sup\abs{f_{n}'}\abs{s-t}\le\abs{s-t}$. If $u,v$ are $1$-Lipschitz and $s,t\in[0,1]$, then $\max(u,v)(s)\le\max(u(t)+\abs{s-t},v(t)+\abs{s-t})=\max(u,v)(t)+\abs{s-t}$, and symmetrically, so the maximum is $1$-Lipschitz; induction gives it for $g_{n}$, and a Lipschitz function is continuous.
+:::
+
+:::
+
+::: {.pf-step #monotone}
+$(g_{n}(t))$ is nondecreasing and bounded above by $5$ for each $t$, so $g(t)=\lim_{n}g_{n}(t)=\sup_{n}f_{n}(t)$ exists and is finite; also $\abs{g(s)-g(t)}\le\abs{s-t}$.
+
+::: pf-proof
+$g_{n}\le g_{n+1}$ pointwise by definition of the maximum, and $g_{n}(t)\le5$ for all $n$; a nondecreasing sequence bounded above converges. Moreover $g(t)\ge g_{1}(t)>-\infty$, so $g$ is real valued. Letting $n\to\infty$ in $\abs{g_{n}(s)-g_{n}(t)}\le\abs{s-t}$ of step [](#lipschitz){.pf-ref} gives the same inequality for $g$, which is therefore continuous.
+:::
+
+:::
+
+::: {.pf-step #dini}
+$(g_{n})$ converges to $g$ uniformly on $[0,1]$.
+
+::: pf-proof
+$(g_{n})$ is a sequence of continuous functions on the compact space $[0,1]$, nondecreasing pointwise, with continuous limit $g$; Dini's theorem then gives uniform convergence.
+:::
+
+:::
+
+::: {.pf-qed}
+The limit $g$ exists and $(g_{n})$ converges to it uniformly on $[0,1]$ by steps [](#monotone){.pf-ref} and [](#dini){.pf-ref}.
+:::
+
+:::
+
 :::
