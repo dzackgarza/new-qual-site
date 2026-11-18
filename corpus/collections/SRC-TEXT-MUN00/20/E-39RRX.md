@@ -37,7 +37,7 @@ audit:
     Restructured into Lamport steps from the retained positron0802 solution (Chapter 2,
     Exercise 20.8, PDF pp. 20-22). Checked against the book: §20 Exercise 8 as printed
     (p. 127); Theorem 20.4 (p. 124) for product inside uniform inside box and for the
-    uniform topology being finer than the product topology; the uniform metric of p. 122.
+    uniform topology being finer than the product topology; the uniform metric of p. 124.
     Repairs: the retained text and the earlier prose of this card concluded "the l2-topology
     contains the uniform one" from the ball containment B_l2 inside B_rho, which gives the
     reverse; the step now argues at a point y of a uniform ball and uses the triangle
@@ -47,6 +47,20 @@ audit:
     Hilbert cube the proof that the product topology contains the l2 topology is kept, with
     Theorem 20.4 supplying product inside uniform so that the three coincide. No repair to
     the printed statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Review repairs. (1) The uniform metric is defined on printed p. 124 (PDF 139), not
+    p. 122; corrected here. (2) The first witness of "uniform is not product" compared
+    z with y instead of with the centre: rho-bar(y,z) = 1 > eps says only that z is
+    outside the ball about y. It now uses that membership of y in the ball gives
+    |y_n| < 1 for every n, whence |z_i| = |y_i + 2| >= 2 - |y_i| > 1 > eps, so
+    min{|z_i|,1} = 1 > eps and z is outside the ball about 0. (3) The case r >= 1 in
+    "l2 is not uniform" claimed the open ball of radius 1 is all of R^infty, which it is
+    not, since sup min{|w_n|,1} < 1 excludes points at distance exactly 1; the argument
+    now reduces to a radius below 1, the ball of radius 1/2 about x being contained in
+    the ball of radius r. No change to the statement.
 ---
 
 ::: {.exercise}
@@ -84,7 +98,7 @@ Compare the four topologies that $H$ inherits as a subspace of $X$.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.8, PDF pp. 20--22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; one step is repaired, where that text exhibits a point with $Nt^{2}+s^{2}>4\varepsilon^{2}$ and the earlier transcription of this card had written $Nt^{2}+\varepsilon^{2}$.
 
-Throughout, $X$ is the set of sequences with $\sum x_i^2$ convergent, $d_{\ell^2}(\mathbf{x},\mathbf{y})=\big(\sum_i (x_i-y_i)^2\big)^{1/2}$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ is the uniform metric of §20 (printed p. 122); $B_{\ell^2}$ and $B_{\bar\rho}$ are the balls of these two metrics, and $\RR^\infty$ is the set of eventually zero sequences.
+Throughout, $X$ is the set of sequences with $\sum x_i^2$ convergent, $d_{\ell^2}(\mathbf{x},\mathbf{y})=\big(\sum_i (x_i-y_i)^2\big)^{1/2}$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ is the uniform metric of §20 (printed p. 124); $B_{\ell^2}$ and $B_{\bar\rho}$ are the balls of these two metrics, and $\RR^\infty$ is the set of eventually zero sequences.
 
 ::: pf
 
@@ -132,7 +146,7 @@ and therefore $d_{\ell^2}(\mathbf{x},\mathbf{z})\le d_{\ell^2}(\mathbf{x},\mathb
 $B_{\bar\rho}(\mathbf{0},\varepsilon)\cap\RR^\infty$ with $0<\varepsilon<1$ is uniform-open and not product-open.
 
 ::: pf-proof
-It is uniform-open by definition and it contains $\mathbf{0}$, so it is nonempty. Let $\mathbf{y}\in B_{\bar\rho}(\mathbf{0},\varepsilon)$ and let $U$ be a product-basic neighbourhood of $\mathbf{y}$ in $\RR^\infty$; then $U=\RR^\infty\cap\prod_n U_n$ with $U_n=\RR$ for all $n$ outside a finite set $F$. Choose $i\notin F$ and let $\mathbf{z}$ have $z_n=y_n$ for $n\in F$, $z_i=y_i+2$ and $z_n=0$ otherwise; then $\mathbf{z}\in\RR^\infty\cap\prod_n U_n=U$, while $\bar\rho(\mathbf{y},\mathbf{z})=\min\{2,1\}=1>\varepsilon$, so $\mathbf{z}\notin B_{\bar\rho}(\mathbf{0},\varepsilon)\cap\RR^\infty$. Hence no product-basic neighbourhood of a point of that set lies inside it, and it is not product-open.
+It is uniform-open by definition and it contains $\mathbf{0}$, so it is nonempty. Let $\mathbf{y}\in B_{\bar\rho}(\mathbf{0},\varepsilon)$ and let $U$ be a product-basic neighbourhood of $\mathbf{y}$ in $\RR^\infty$; then $U=\RR^\infty\cap\prod_n U_n$ with $U_n=\RR$ for all $n$ outside a finite set $F$. Since $\mathbf{y}\in B_{\bar\rho}(\mathbf{0},\varepsilon)$ and $\varepsilon<1$, we have $\min\{\abs{y_n},1\}<\varepsilon<1$ and hence $\abs{y_n}<1$ for every $n$. Choose $i\notin F$ and let $\mathbf{z}$ have $z_n=y_n$ for $n\in F$, $z_i=y_i+2$ and $z_n=0$ otherwise; then $\mathbf{z}\in\RR^\infty\cap\prod_n U_n=U$, while $\abs{z_i}=\abs{y_i+2}\ge2-\abs{y_i}>1>\varepsilon$, so $\min\{\abs{z_i},1\}=1>\varepsilon$ and $\mathbf{z}\notin B_{\bar\rho}(\mathbf{0},\varepsilon)\cap\RR^\infty$. Hence no product-basic neighbourhood of a point of that set lies inside it, and it is not product-open.
 :::
 
 :::
@@ -141,7 +155,7 @@ It is uniform-open by definition and it contains $\mathbf{0}$, so it is nonempty
 $B_{\ell^2}(\mathbf{0},2\varepsilon)\cap\RR^\infty$ with $0<\varepsilon<1$ is $\ell^2$-open and not uniform-open.
 
 ::: pf-proof
-It is $\ell^2$-open and it contains $\mathbf{x}=(\varepsilon,0,0,\ldots)$, so it is nonempty. Let $U=B_{\bar\rho}(\mathbf{x},r)\cap\RR^\infty$ be a uniform ball about $\mathbf{x}$; if $r\ge1$ then $U=\RR^\infty$ because $\bar\rho\le1$, which is not contained in the given set, so assume $0<r<1$. Choose $s$ with $\varepsilon-r<s<\varepsilon$, then $t$ with $0<t<r$, then $N$ with $Nt^2+s^2>4\varepsilon^2$, and set $\mathbf{y}=(s,t,\ldots,t,0,\ldots)$ with $t$ in positions $2,\ldots,N+1$. Then $\abs{s-\varepsilon}<r$ and $\abs{t-0}=t<r$, so $\bar\rho(\mathbf{x},\mathbf{y})<r$ and $\mathbf{y}\in U$; but $\sum_i y_i^2=s^2+Nt^2>4\varepsilon^2$, so $\mathbf{y}\notin B_{\ell^2}(\mathbf{0},2\varepsilon)$. Hence no uniform ball about $\mathbf{x}$ is contained in the given set, which is therefore not uniform-open.
+It is $\ell^2$-open and it contains $\mathbf{x}=(\varepsilon,0,0,\ldots)$, so it is nonempty. Let $U=B_{\bar\rho}(\mathbf{x},r)\cap\RR^\infty$ be a uniform ball about $\mathbf{x}$. It suffices to treat $0<r<1$: if $r\ge1$ then $U$ contains $B_{\bar\rho}(\mathbf{x},1/2)\cap\RR^\infty$, so a containment $U\subset B_{\ell^2}(\mathbf{0},2\varepsilon)$ would give one for that smaller ball, and it is the smaller balls that are excluded below. Choose $s$ with $\varepsilon-r<s<\varepsilon$, then $t$ with $0<t<r$, then $N$ with $Nt^2+s^2>4\varepsilon^2$, and set $\mathbf{y}=(s,t,\ldots,t,0,\ldots)$ with $t$ in positions $2,\ldots,N+1$. Then $\abs{s-\varepsilon}<r$ and $\abs{t-0}=t<r$, so $\bar\rho(\mathbf{x},\mathbf{y})<r$ and $\mathbf{y}\in U$; but $\sum_i y_i^2=s^2+Nt^2>4\varepsilon^2$, so $\mathbf{y}\notin B_{\ell^2}(\mathbf{0},2\varepsilon)$. Hence no uniform ball about $\mathbf{x}$ is contained in the given set, which is therefore not uniform-open.
 :::
 
 :::
