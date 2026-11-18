@@ -22,6 +22,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure. The step function's measurability and the identity of its integral with S_+ are now stated and proved (including that the point 1 is omitted, a null set), the one-sided control of the interval containing x is written out (0 <= y - x < delta, so lower semicontinuity applies), and Fatou's lemma is applied to a nonnegative sequence with the liminf identified with f almost everywhere. No retained solution set covers the exercise; the card says the argument is its own.
 ---
 
 ::: {.problem}
@@ -45,46 +50,56 @@ as $\partitionmesh{P}\to0$, where the integral is the Lebesgue integral.
 :::
 
 ::: {.solution}
-For a partition $P$, define the lower-step function
-$$
-s_P(x)=\inf_{y\in[t_{j-1},t_j)}f(y)
-\qquad\text{when }x\in[t_{j-1},t_j).
-$$
-Then
-$$
-S_+(f,P)=\int_0^1 s_P(x)\,dx
-$$
-and
-$$
-0\le s_P(x)\le f(x)
-$$
-for $x<1$.
+No retained solution set covers this exercise: the collection's provenance is the JHU examination papers and the card records only the statement. The argument is the card's own.
 
-Now let $(P_k)$ be any sequence of partitions with $\partitionmesh{P_k}\to0$. Fix $x\in[0,1)$. Since $f$ is lower semicontinuous, for every $\varepsilon>0$ there exists $\delta>0$ such that
-$$
-\abs{y-x}<\delta\implies f(y)>f(x)-\varepsilon.
-$$
-For all sufficiently large $k$, the subinterval of $P_k$ containing $x$ has length less than $\delta$, hence is contained in $(x-\delta,x+\delta)$. Therefore
-$$
-f(x)-\varepsilon\le s_{P_k}(x)\le f(x).
-$$
-Thus
-$$
-s_{P_k}(x)\longrightarrow f(x)
-$$
-for every $x\in[0,1)$.
+For a partition $P:0=t_0<\cdots<t_N=1$ let $s_P$ be the step function with $s_P(x)=\inf_{y\in[t_{j-1},t_j)}f(y)$ for $x\in[t_{j-1},t_j)$.
 
-By Fatou's lemma,
-$$
-\int_0^1f\le\liminf_{k\to\infty}\int_0^1s_{P_k}.
-$$
-On the other hand, $s_{P_k}\le f$, so
-$$
-\limsup_{k\to\infty}\int_0^1s_{P_k}\le\int_0^1f.
-$$
-Hence
-$$
-S_+(f,P_k)=\int_0^1s_{P_k}\longrightarrow\int_0^1f.
-$$
-Since this holds for every sequence with mesh tending to zero, the desired limit follows.
+::: pf
+
+::: {.pf-step #step}
+$S_+(f,P)=\int_0^1s_P(x)\,dx$ and $0\le s_P\le f$ almost everywhere.
+
+::: pf-proof
+$s_P$ is constant, equal to $m_j=\inf_{[t_{j-1},t_j)}f$, on each $[t_{j-1},t_j)$, and these intervals are disjoint and cover $[0,1)$; the single point $1$ is omitted and has measure $0$. So $s_P$ is measurable and $\int_0^1s_P=\sum_jm_j(t_j-t_{j-1})=S_+(f,P)$. For $x\in[t_{j-1},t_j)$ the value $m_j$ is an infimum over a set containing $x$, so $m_j\le f(x)$; and $m_j\ge0$ because $f\ge0$.
+:::
+
+:::
+
+::: {.pf-step #pointwise}
+For every $x\in[0,1)$, $s_{P_k}(x)\to f(x)$ whenever $\partitionmesh{P_k}\to0$.
+
+::: pf-proof
+Fix $x<1$ and $\varepsilon>0$. Lower semicontinuity gives $\delta>0$ with $f(y)>f(x)-\varepsilon$ for all $y$ with $\abs{y-x}<\delta$. For large $k$ let $[t_{j-1},t_j)$ be the interval of $P_k$ containing $x$; then $t_j-t_{j-1}\le\partitionmesh{P_k}<\delta$, and every $y$ in that interval satisfies $0\le y-x<\delta$, so $f(y)>f(x)-\varepsilon$ there and hence $s_{P_k}(x)\ge f(x)-\varepsilon$. With $s_{P_k}(x)\le f(x)$ from step [](#step){.pf-ref}, this gives the convergence. Only $x<1$ is needed, and $\{1\}$ is a null set.
+:::
+
+:::
+
+::: {.pf-step #fatou}
+$\displaystyle\int_0^1f\le\liminf_kS_+(f,P_k)$.
+
+::: pf-proof
+$s_{P_k}\ge0$ are measurable with $s_{P_k}\to f$ almost everywhere by step [](#pointwise){.pf-ref}, so Fatou's lemma gives $\int_0^1f=\int_0^1\liminf_ks_{P_k}\le\liminf_k\int_0^1s_{P_k}=\liminf_kS_+(f,P_k)$, using step [](#step){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #limsup}
+$\displaystyle\limsup_kS_+(f,P_k)\le\int_0^1f$.
+
+::: pf-proof
+$s_{P_k}\le f$ by step [](#step){.pf-ref}, so $\int_0^1s_{P_k}\le\int_0^1f$ for every $k$ and hence so is the limsup.
+:::
+
+:::
+
+::: {.pf-step}
+$S_+(f,P)\to\int_0^1f$ as $\partitionmesh{P}\to0$.
+
+::: pf-proof
+For any sequence of partitions with mesh tending to $0$, steps [](#fatou){.pf-ref} and [](#limsup){.pf-ref} squeeze the liminf and limsup together, so $S_+(f,P_k)\to\int_0^1f$. As this holds for every such sequence, the net convergence as the mesh tends to $0$ follows.
+:::
+
+:::
+
+:::
 :::
