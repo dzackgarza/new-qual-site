@@ -29,6 +29,11 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Lamport structure for the two directions, which is what Queue D asks for on this card. The necessity uses the cell-attachment killing of higher homotopy groups and Exercise 23; the sufficiency is split into the 2-skeleton (free H_2 and the surjectivity of the Hurewicz map, which is what makes a basis of H_2 representable by spheres), the cell attachment with the resulting chain computation, and the torus example. The step from a basis of H_2(A) to 3-cells now says why it is available (Exercise 23 gives h(pi_2(A)) = H_2(A)) and why d_3 is injective with image ker d_2, which the prose asserted in one sentence. No retained set covers this exercise; the card now says so. Locators: the exercise on printed p. 391; Proudfoot's Homework #7 holds §4.2 exercises 1, 2, 30, 31, 32, 39 and not this one. No statement repair.
 ---
 
 ::: {.problem}
@@ -37,26 +42,47 @@ In particular, there is no $M(\ZZ^n, 1)$ with fundamental group $\ZZ^n$, free ab
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 24, printed p. 391, and it uses §4.2 Exercise 23, which identifies $H_2$ of a $K(G,1)$ with a quotient of $H_2$ of a complex with the same fundamental group by the image of the Hurewicz map.
+
 Here $G$ is abelian, as in the definition of a Moore space: $H_1(M(G,1))\cong G$ and $\widetilde H_i(M(G,1))=0$ for $i\ne1$.
 
-Suppose first that such a space $M$ has $\pi_1(M)\cong G$. Attach cells of dimensions at least $3$ to kill its higher homotopy groups, obtaining a $K(G,1)$. Exercise 23, applied to $M$, identifies
-$$
-H_2(K(G,1))\cong H_2(M)/h(\pi_2(M))=0.
-$$
+::: pf
 
-Conversely, let $K$ be a CW model for $K(G,1)$ with $H_2(K)=0$, and put $A=K^2$. The inclusion induces an isomorphism $\pi_1(A)\cong G$, and $H_2(A)$ is a subgroup of the free cellular group $C_2(A)$, hence is free abelian. By Exercise 23,
-$$
-H_2(A)/h(\pi_2(A))\cong H_2(K(G,1))=0.
-$$
-Choose a basis of $H_2(A)$ and represent each basis element by a map $S^2\to A$. Attach one $3$-cell along each map, and call the result $M$. In its cellular chain complex the new differential $C_3(M)\to C_2(A)$ maps the chosen free basis bijectively onto $H_2(A)=\ker(d_2)$. It is therefore injective, so $H_3(M)=0$, and its image makes $H_2(M)=0$. There are no cells above dimension $3$. Attaching the $3$-cells preserves $\pi_1$ and $H_1$, giving
-$$
-\pi_1(M)\cong G,\qquad H_1(M)\cong G,\qquad\widetilde H_i(M)=0\quad(i\ne1).
-$$
-Thus $M$ is the required Moore space.
+::: {.pf-step #necessary}
+If a Moore space $M$ has $\pi_1(M)\cong G$ then $H_2(K(G,1);\ZZ)=0$.
 
-Finally, $T^n$ is a $K(\ZZ^n,1)$ and
-$$
-H_2(T^n;\ZZ)\cong\bigwedge^2\ZZ^n\ne0\qquad(n\ge2).
-$$
-Hence no Moore space $M(\ZZ^n,1)$ has fundamental group $\ZZ^n$ in this range.
+::: pf-proof
+Attach cells of dimension at least $3$ to $M$ to kill $\pi_2,\pi_3,\dots$; this does not change $\pi_1$, so the result $K$ is a $K(G,1)$. Exercise 23 of the section, applied to $M$, gives $H_2(K)\cong H_2(M)/h(\pi_2(M))$ with $h$ the Hurewicz map; $H_2(M)=0$ because $M$ is a Moore space, so $H_2(K(G,1);\ZZ)=0$.
+:::
+
+:::
+
+::: {.pf-step #skeleton}
+Conversely let $K$ be a CW model of $K(G,1)$ with $H_2(K;\ZZ)=0$ and put $A=K^2$. Then $\pi_1(A)\cong G$, $H_2(A;\ZZ)$ is free abelian, and $h(\pi_2(A))=H_2(A)$.
+
+::: pf-proof
+The $2$-skeleton receives all $2$-cells, so $\pi_1(K^2)\to\pi_1(K)$ is an isomorphism; $H_2(A)$ is a subgroup of the free abelian group $C_2(A)$, hence free; and Exercise 23 applied to $A$ gives $H_2(A)/h(\pi_2(A))\cong H_2(K)=0$, so the Hurewicz image is all of $H_2(A)$. In particular each basis element of $H_2(A)$ is the class of a map $S^2\to A$.
+:::
+
+:::
+
+::: {.pf-step #attach}
+Attaching one $3$-cell to $A$ along a map $S^2\to A$ representing each element of a basis of $H_2(A)$ gives a complex $M$ with $\pi_1(M)\cong G$ and $\widetilde H_i(M)=0$ for $i\ne1$.
+
+::: pf-proof
+Since $A$ has no cells above dimension $2$, the cellular chain complex of $M$ has $C_4=0$, $C_3$ free on the attached cells, and $d_3:C_3\to C_2(A)$ carrying the chosen basis bijectively onto $H_2(A)=\ker d_2$ — this is the standard description of the effect of attaching a cell along a map representing a homology class. Hence $d_3$ is injective, so $H_3(M)=\ker d_3=0$, and its image is $\ker d_2$, so $H_2(M)=\ker d_2/\operatorname{im}d_3=0$. Attaching cells of dimension $\ge3$ does not change $\pi_1$ or $H_1$, so $\pi_1(M)\cong G$ and $H_1(M)\cong G$; and there are no cells in dimensions above $3$, so the higher homology vanishes. Thus $M$ is a Moore space with fundamental group $G$.
+:::
+
+:::
+
+::: {.pf-step #torus}
+There is no Moore space $M(\ZZ^n,1)$ with fundamental group $\ZZ^n$ for $n\ge2$.
+
+::: pf-proof
+The torus $T^n$ is a $K(\ZZ^n,1)$, and $H_2(T^n;\ZZ)\cong\bigwedge^2\ZZ^n$, which is $\ZZ^{n(n-1)/2}\ne0$ for $n\ge2$. By step [](#necessary){.pf-ref} a Moore space with fundamental group $\ZZ^n$ would force $H_2(K(\ZZ^n,1))=0$, so none exists in this range. This is the last assertion of the exercise.
+:::
+
+:::
+
+:::
 :::
