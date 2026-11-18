@@ -108,6 +108,10 @@ mathjax-commands:
 unsolved:
     uv run python tools/unsolved_queue.py
 
+# Rewrite the prose-only-solutions queue from the corpus (solution has no numbered step)
+prose-only:
+    uv run python tools/prose_queue.py
+
 # Extract a PDF to Markdown with Mistral OCR, writing <markdown>.provenance.json beside it
 ocr-pdf pdf markdown:
     bash -c 'source "$HOME/.envrc" && exec uv run --script tools/mistral_ocr.py "$1" "$2"' _ {{quote(pdf)}} {{quote(markdown)}}
@@ -129,7 +133,7 @@ _macros-push:
 # Generate downloadable measurements from the CI checkout
 [private]
 _reports-ci:
-    uv run python tools/backlog.py --with-unsolved
+    uv run python tools/backlog.py --with-queues
 
 # Fail if any worktree exists (QUAL-09: one checkout, one branch)
 #

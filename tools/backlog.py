@@ -14,7 +14,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from qualc import audit, provenance_hrefs
+from qualc import audit, prose, provenance_hrefs
 from qualc.card_completeness import check_card
 from qualc.cli import load
 from qualc.model import ParsedCard
@@ -86,13 +86,30 @@ def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=REPO)
     parser.add_argument(
-        "--with-unsolved",
+        "--with-queues",
         action="store_true",
-        help="write the unsolved queue from the same parsed cards",
+        help=(
+            "write the generated queues (unsolved cards, prose-only solutions) from the "
+            "same parsed cards"
+        ),
     )
     args = parser.parse_args(argv)
     root = args.root.resolve()
     corpus, parsed = corpus_sections(root)
+    measured = None if parsed is None else prose.measure(parsed)
+    if measured is not None:
+        # The prose-only count rides in this report as a count, not as its list: the list
+        # is Queue D, and a thousand-line second copy of it in this file would be a
+        # ledger to keep right rather than a measurement.
+        corpus += [
+            (
+                "prose-only-solutions",
+                [
+                    f"{len(measured)} of the {measured.with_solution} problem cards with a "
+                    f"solution hold no numbered step; see {prose.QUEUE.as_posix()}"
+                ],
+            )
+        ]
     sections = corpus + provenance_sections(root) + completeness_sections(root)
     rendered = render(sections)
     out = root / "BACKLOG.md"
@@ -102,17 +119,21 @@ def main(argv: list[str] | None = None) -> None:
         out.write_text(rendered)
         total = sum(len(findings) for _name, findings in sections)
         print(f"BACKLOG.md: {len(sections)} queues, {total} finding(s)")
-    if args.with_unsolved:
-        if parsed is None:
-            raise SystemExit("corpus does not validate; unsolved queue was not written")
-        queue = root / "queues" / "C-unsolved-cards.md"
+    if not args.with_queues:
+        return
+    if parsed is None or measured is None:
+        raise SystemExit("corpus does not validate; the queues were not written")
+    queues = {
+        root / "queues" / "C-unsolved-cards.md": render_unsolved(unsolved(parsed)),
+        root / prose.QUEUE: prose.render(measured),
+    }
+    for queue, text in queues.items():
         queue.parent.mkdir(parents=True, exist_ok=True)
-        queue_text = render_unsolved(unsolved(parsed))
-        if queue.exists() and queue.read_text() == queue_text:
-            print("queues/C-unsolved-cards.md: up to date")
+        if queue.exists() and queue.read_text() == text:
+            print(f"{queue.relative_to(root)}: up to date")
         else:
-            queue.write_text(queue_text)
-            print("queues/C-unsolved-cards.md: rewritten")
+            queue.write_text(text)
+            print(f"{queue.relative_to(root)}: rewritten")
 
 
 if __name__ == "__main__":
