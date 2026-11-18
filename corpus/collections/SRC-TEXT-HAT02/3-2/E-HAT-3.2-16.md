@@ -40,24 +40,53 @@ Show that if $X$ and $Y$ are finite CW complexes such that $H^*(X; \ZZ)$ and $H^
 :::
 
 ::: {.solution}
-For a finite CW complex $Z$, let $b_i$ be the rank of $H^i(Z;\ZZ)$, and let $t_i$ be the number of its cyclic summands whose order is a power of $p$. The coefficient exact sequence associated to multiplication by $p$ on integral cochains gives
-$$
-0\longrightarrow H^i(Z;\ZZ)/pH^i(Z;\ZZ)
-\longrightarrow H^i(Z;\FF_p)
-\longrightarrow H^{i+1}(Z;\ZZ)[p]\longrightarrow0.
-$$
-Since the integral cohomology groups are finitely generated,
-$$
-\dim_{\FF_p}H^i(Z;\FF_p)=b_i+t_i+t_{i+1},
-\qquad
-\dim_{\QQ}H^i(Z;\QQ)=b_i.
-$$
-The numbers $t_i$ are nonnegative. Hence equality of the two dimensions in every degree is equivalent to the absence of $p$-primary torsion in all the integral cohomology groups.
 
-By hypothesis, the mod-$p$ and rational cohomology of each of $X$ and $Y$ have equal dimensions degree by degree. Theorem 3.15 (p.216) with field coefficients gives, for either field $F$ and in every degree $n$,
-$$
-\dim_F H^n(X\times Y;F)
-=\sum_{i+j=n}\dim_F H^i(X;F)\,\dim_F H^j(Y;F).
-$$
-The sums agree for $F=\FF_p$ and $F=\QQ$. Applying the preceding dimension criterion to the finite CW complex $X\times Y$ shows that its integral cohomology has no elements of order a power of $p$.
+No separate retained solution set is needed here: the card's own argument is complete and is set out as steps, the criterion on $p$-primary torsion and the field-coefficient Künneth computation being the two ingredients.
+
+Throughout, $Z$ is a finite CW complex, $b_{i}=\operatorname{rank}H^{i}(Z;\ZZ)$ and $t_{i}$ is the number of cyclic summands of $H^{i}(Z;\ZZ)$ whose order is a power of the fixed prime $p$.
+
+::: pf
+
+::: {.pf-step #criterion}
+$\dim_{\FF_{p}}H^{i}(Z;\FF_{p})=b_{i}+t_{i}+t_{i+1}$ and $\dim_{\QQ}H^{i}(Z;\QQ)=b_{i}$; hence $Z$ has no $p$-primary torsion exactly when these two dimensions agree in every degree.
+
+::: pf-proof
+The coefficient sequence $0\to\ZZ\to\ZZ\to\FF_{p}\to0$ (the first map multiplication by $p$) induces the exact sequence $0\to H^{i}(Z;\ZZ)/pH^{i}(Z;\ZZ)\to H^{i}(Z;\FF_{p})\to H^{i+1}(Z;\ZZ)[p]\to0$. For a finitely generated abelian group $A$ the group $A/pA$ has dimension (over $\FF_{p}$) equal to the number of free summands plus the number of $p$-power summands, and $A[p]$ has dimension the number of $p$-power summands, so the two outer terms have dimensions $b_{i}+t_{i}$ and $t_{i+1}$; exactness gives the first formula, and the universal coefficient theorem gives $\dim_{\QQ}H^{i}(Z;\QQ)=b_{i}$. Since each $t_{i}\ge0$, equality in all degrees holds exactly when all $t_{i}=0$.
+:::
+
+:::
+
+::: {.pf-step #hypothesis}
+For $F=\FF_{p}$ and for $F=\QQ$, $\dim_{F}H^{i}(X;F)=\dim_{F}H^{i}(Y;F)=\dim_{\QQ}H^{i}(X;\QQ)$ and $\dim_{\QQ}H^{i}(Y;\QQ)$ respectively, in every degree.
+
+::: pf-proof
+By the hypothesis that $H^{*}(X;\ZZ)$ and $H^{*}(Y;\ZZ)$ have no elements of order a power of $p$, the criterion of step [](#criterion){.pf-ref} gives $\dim_{\FF_{p}}H^{i}(X;\FF_{p})=\dim_{\QQ}H^{i}(X;\QQ)$ and likewise for $Y$, in every degree.
+:::
+
+:::
+
+::: {.pf-step #kunneth}
+For any field $F$ and every $n$, $\dim_{F}H^{n}(X\times Y;F)=\sum_{i+j=n}\dim_{F}H^{i}(X;F)\dim_{F}H^{j}(Y;F)$.
+
+::: pf-proof
+Over a field the Künneth formula is the isomorphism $H^{n}(X\times Y;F)\cong\bigoplus_{i+j=n}H^{i}(X;F)\otimes_{F}H^{j}(Y;F)$ (Theorem 3.15, printed p. 216), whose right side has the stated dimension because dimensions multiply under tensor products over a field.
+:::
+
+:::
+
+::: {.pf-step #convolve}
+$\dim_{\FF_{p}}H^{n}(X\times Y;\FF_{p})=\dim_{\QQ}H^{n}(X\times Y;\QQ)$ for every $n$.
+
+::: pf-proof
+By steps [](#hypothesis){.pf-ref} and [](#kunneth){.pf-ref} both sides are the convolution $\sum_{i+j=n}d_{i}e_{j}$ of the same two sequences $(d_{i})$ and $(e_{j})$, namely the rational Betti numbers of $X$ and of $Y$.
+:::
+
+:::
+
+::: {.pf-qed}
+$X\times Y$ is again a finite CW complex, and step [](#convolve){.pf-ref} says the criterion of step [](#criterion){.pf-ref} is met in every degree, so $H^{*}(X\times Y;\ZZ)$ has no elements of order a power of $p$.
+:::
+
+:::
+
 :::
