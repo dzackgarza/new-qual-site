@@ -28,6 +28,18 @@ audit:
     printed pp. 35-36 (tmp/sources/munkres-solutions-whitman.pdf). His three parts are
     the ones below; (c) is the greatest-lower-bound-to-least-upper-bound mirror of
     Exercise 13, through the set of upper bounds.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps, transcribing the cited published solution: Dan Whitman,
+    Topology, Second Edition by James Munkres: Solutions Manual (2019), Exercise 3.14, printed
+    pp. 35-36. Checked against Munkres §3 Exercise 14, whose number is read from the collection
+    index. Each part re-read: (a) is the chain (a,b) in C iff (b,a) in C iff (a,b) in D, and its
+    converse uses C = D once; (b) transfers the three axioms of an order relation to the converse
+    relation by reversing the pairs; (c) takes the set of upper bounds of a bounded-above set,
+    which is nonempty and bounded below, applies inf, and shows the infimum is the least upper
+    bound. Not claimed: the converse of (c), which is Exercise 13 and is not reproved here.
 ---
 
 ::: {.exercise}
@@ -42,23 +54,94 @@ If $C$ is a relation on a set $A$, define a new relation $D$ on $A$ by letting $
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.14, printed pp. 35--36** (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts below are his.
+The argument is transcribed from the published solution of Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.14, printed pp. 35--36 (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts are his. It is checked against Munkres, Topology (2000), §3 Exercise 14.
 
-(a) If $C$ is symmetric, then
+::: pf
+
+::: {.pf-step #parta}
+$C$ is symmetric if and only if $C=D$.
+
+:::: pf-proof
+
+::: {.pf-step #symimplieseq}
+If $C$ is symmetric then $C=D$.
+
+::: pf-proof
+For any $a,b$: $(a,b)\in C$ iff $(b,a)\in C$ by symmetry, and $(b,a)\in C$ iff $(a,b)\in D$ by the definition of the converse relation. Hence $(a,b)\in C$ iff $(a,b)\in D$ for all pairs, that is $C=D$.
+:::
+
+:::
+
+::: {.pf-step #eqimpliessym}
+If $C=D$ then $C$ is symmetric.
+
+::: pf-proof
+Let $(a,b)\in C$. Then $(b,a)\in D$ by the definition of $D$, so $(b,a)\in C$ because $C=D$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #partb}
+If $C$ is an order relation then so is $D$.
+
+:::: pf-proof
+
+::: {.pf-step #dnoneflexive}
+Not $(a,a)\in D$ for any $a$.
+
+::: pf-proof
+$(a,a)\in D$ would mean $(a,a)\in C$ by the definition of $D$, which is excluded by nonreflexivity of $C$.
+:::
+
+:::
+
+::: {.pf-step #dcomparable}
+For $a\ne b$, $aDb$ or $bDa$.
+
+::: pf-proof
+Comparability of $C$ gives $aCb$ or $bCa$; the first says $bDa$ and the second says $aDb$.
+:::
+
+:::
+
+::: {.pf-step #dtransitive}
+If $aDb$ and $bDc$ then $aDc$.
+
+::: pf-proof
+$aDb$ means $bCa$, and $bDc$ means $cCb$; transitivity of $C$ gives $cCa$, which is $aDc$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #partc}
+The greatest lower bound property implies the least upper bound property.
+
+::: pf-proof
+Suppose $A$ has the greatest lower bound property, and let $A_0\subseteq A$ be nonempty and bounded above. Let $B_0$ be the set of upper bounds of $A_0$, which is nonempty by hypothesis. Every $a\in A_0$ satisfies $a\le x$ for all $x\in B_0$, so each $a$ is a lower bound of $B_0$ and $B_0$ is bounded below; let $c=\inf B_0$. For $x\in A_0$ every $y\in B_0$ has $x\le y$, so $x$ is a lower bound of $B_0$ and hence $x\le c$: the element $c$ is an upper bound of $A_0$. If $y$ is any upper bound of $A_0$ then $y\in B_0$ and $c\le y$. So $c$ is the least upper bound of $A_0$.
+:::
+
+:::
+
+::: {.pf-step}
+Parts (a), (b) and (c) hold.
+
+::: pf-proof
+Step [](#parta){.pf-ref} is (a), step [](#partb){.pf-ref} is (b), and step [](#partc){.pf-ref} is (c):
 $$
-(a,b)\in C \iff (b,a)\in C \iff (a,b)\in D,
+\boxed{C=D\iff C\text{ symmetric};\quad C\text{ order}\implies D\text{ order};\quad \text{glb}\implies\text{lub}.}
 $$
-so $C=D$. Conversely, if $C=D$ and $(a,b)\in C$, then $(b,a)\in D=C$, so $C$ is symmetric.
+In (c) only the greatest lower bound property is assumed, and only for the set $B_0$ of upper bounds of $A_0$.
+:::
 
-(b) Let $C$ be an order relation; $D$ is a relation on $A$ by construction.
+:::
 
-*Comparability.* If $a\ne b$ then $aCb$ or $bCa$, hence $bDa$ or $aDb$.
-
-*Nonreflexivity.* $(a,a)\notin C$, so $(a,a)\notin D$; otherwise $(a,a)\in C$ by the definition of $D$.
-
-*Transitivity.* If $aDb$ and $bDc$ then $bCa$ and $cCb$, so $cCa$ by transitivity of $C$, that is $aDc$.
-
-(c) Conversely, suppose $A$ has the greatest lower bound property; we show it has the least upper bound property. Let $A_0\subset A$ be nonempty and bounded above, and let $B_0$ be the set of upper bounds of $A_0$, which is nonempty. Any $a\in A_0$ satisfies $a\le x$ for every $x\in B_0$, so $a$ is a lower bound of $B_0$ and $B_0$ is bounded below. Let $c=\inf B_0$.
-
-For $x\in A_0$, every $y\in B_0$ has $x\le y$, so $x$ is a lower bound of $B_0$ and $x\le c$; hence $c$ is an upper bound of $A_0$. If $y$ is any upper bound of $A_0$ then $y\in B_0$ and $c\le y$. So $c=\sup A_0$, and $A$ has the least upper bound property.
+:::
 :::
