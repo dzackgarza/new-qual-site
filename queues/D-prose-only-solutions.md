@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1440 of the 12429 problem cards that have a solution
+1429 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1440
+- Problems: 1429
 - Problem cards with a solution: 12429
 
-## Problems (1440)
+## Problems (1429)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -57,7 +57,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-ER6ZN — "Surjections from $\RR$ onto $\RR^\omega$ and $\RR^\infty$ under the product, uniform, and box topologies"
 - [ ] E-ETKNU — "The imbedding theorem for $m=1$ and linear graphs in $\RR^3$"
 - [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
-- [ ] E-FGRFM — "Metrizability of the one-point compactification"
 - [ ] E-HAT-2.1-10 — "Quotient of paired triangles is a surface with a Delta-complex structure"
 - [ ] E-HAT-2.2-20 — "Euler characteristic is multiplicative for products of finite CW complexes"
 - [ ] E-HAT-2.2-21 — "Euler characteristic of union of subcomplexes"
@@ -773,7 +772,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
-- [ ] E-U9VN1 — "Every $m$-manifold imbeds as a closed subspace of $\RR^{2m+1}$"
 - [ ] E-UB4PP — "Extending $\cos(1/x)$ by enlarging the compactification"
 - [ ] E-URH71 — "Countable unions of nowhere dense closed sets in compact Hausdorff spaces"
 - [ ] E-V7QV9 — "Comparing the nine topologies on a three-point set"
@@ -785,13 +783,11 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-W7FNF — "The lower limit line and the ordered square are not metrizable"
 - [ ] E-WOS95 — "Induced homomorphisms up to base-point change"
 - [ ] E-X4TVL — "Rational and irrational anti-diagonals in the Sorgenfrey plane"
-- [ ] E-XDJRZ — "$\ell^2$ is a vector space with the $\ell^2$ metric"
 - [ ] E-XIHWT — "Distance to a set in a metric space"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
 - [ ] E-Y3MSR — "Compact closures in the topology of compact convergence"
 - [ ] E-Y4MFU — "Perfect maps transfer separation and countability properties"
 - [ ] E-YERPP — "Order-preserving surjections are homeomorphisms"
-- [ ] E-YGD3Z — "Properties of the total space of a covering"
 - [ ] E-YQUO1 — "Peano spaces and the Hahn-Mazurkiewicz theorem"
 - [ ] E-YZ8XN — "Simple connectedness implies semilocal simple connectedness"
 - [ ] E-YZWG5 — "Separating disjoint compact sets in a Hausdorff space"
@@ -872,7 +868,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS23B — "Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extrema"
 - [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS23H — "Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$"
-- [ ] P-APAS24B — "Gershgorin disks contain every eigenvalue"
 - [ ] P-APAS24D — "Diagonal similarity making a matrix norm close to the spectral radius"
 - [ ] P-APAS24F — "Unitary structure and character of $\mathcal{L}(V,W)$ as a $G$-representation"
 - [ ] P-APAS24J — "Hilbert series of invariants under diagonal $\pm 1$ matrices"
@@ -961,10 +956,8 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-BW6LF — "A space with $H_*(X)\cong(\ZZ,0,0,0,0,\ZZ_4,0,\ldots)$"
 - [ ] P-C2GOF — "Continuity of a composition $g\circ f$ at a point"
 - [ ] P-CAF05B — "Local representation of an analytic function near a zero"
-- [ ] P-CAF05C — "Minimum modulus principle for analytic functions on bounded domains"
 - [ ] P-CAF05F — "Statement and proof of Harnack's inequality for harmonic functions"
 - [ ] P-CAF06F — "Uniform convergence of Taylor series on compact subsets of the unit disk"
-- [ ] P-CAF06G — "Interpolation by entire functions at prescribed points"
 - [ ] P-CAF07B — "Schwarz lemma applications: modulus bound and lower bound near a zero"
 - [ ] P-CAF08F — "A holomorphic self-map of a simply connected proper domain with two fixed points is the identity"
 - [ ] P-CAF09B — "Removable singularity for bounded analytic functions on punctured neighborhoods"
@@ -977,7 +970,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF24B — "Entire function with a rational Taylor coefficient at every real point is a polynomial"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
 - [ ] P-CAF24G — "Bounded harmonic function on the upper half-plane vanishing on the boundary is constant"
-- [ ] P-CAFA15A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
 - [ ] P-CAFA15C — "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
@@ -1209,7 +1201,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-D4X7R — "Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix"
 - [ ] P-DE22H — "Elementary divisors and invariant factors of a given $\QQ[x]$-module"
 - [ ] P-EMCA8 — "Weierstrass's theorem on locally uniform limits of holomorphic functions"
-- [ ] P-EMCA9 — "Nonconstant entire functions have dense image"
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
 - [ ] P-EQGG7 — "$z\tan z-a$ has only real roots for $a>0$"
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
@@ -1229,7 +1220,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-HCAO47 — "A base-ring element invertible in an integral extension is already invertible"
 - [ ] P-HCAX1 — "A continuous isolated singularity is removable"
 - [ ] P-HCAX14 — "Poles and residues of the cosecant function"
-- [ ] P-HCAX15 — "Schwarz--Christoffel map from the disk to a polygon"
 - [ ] P-HCAX17 — "Laurent coefficients and growth on a punctured disk"
 - [ ] P-HCAX19 — "Conformal equivalence of a half-disk and the disk"
 - [ ] P-HCAX20 — "Argument principle as a winding-number statement"
@@ -1439,7 +1429,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-V4VXC — "Maclaurin series of $xe^{2x}$ and a remainder bound on $[0,1/2]$"
 - [ ] P-VHCGV — "Jordan form of the $n\times n$ matrix with $2$'s on the superdiagonal, and a change-of-basis matrix"
 - [ ] P-VJBIB — "Spectral theorem diagonalization with eigenvalues $6$ and $1$, and the minimum of $\langle Ax,x\rangle$ on the unit circle"
-- [ ] P-WB2SR — "A basis of $V$ yields a basis of $V^{\oplus m}$"
 - [ ] P-WESRA08-I1 — "Define the Borel sets on the real line"
 - [ ] P-WESRA08-I2 — "Define Lebesgue outer measure on the real line"
 - [ ] P-WESRA08-I3 — "State the monotone convergence theorem"
