@@ -14,6 +14,11 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the maximum principle applied to $f$ and to $1/f$ (which is legitimate because $f$ never vanishes on $\overline{\DD}$), the resulting equality $\lvert f\rvert=1$ in the disc, and the open mapping theorem contradiction with $f(\DD)\subset\partial\DD$.
 ---
 
 ::: {.exercise}
@@ -27,26 +32,41 @@ then $f$ is constant.
 :::
 
 ::: {.solution}
-Because $f$ is continuous on $\overline{\DD}$, holomorphic on $\DD$, and satisfies $\abs{f}=1$ on $\partial\DD$, the maximum-modulus principle gives
-$$
-\abs{f(z)}\le1\qquad(z\in\DD).
-\tag{1}
-$$
+No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
-Since $f$ is non-vanishing on $\overline{\DD}$, the function $1/f$ is continuous on $\overline{\DD}$ and holomorphic on $\DD$. On the boundary,
-$$
-\abs{\frac1{f(z)}}=1.
-$$
-Applying the maximum-modulus principle to $1/f$ yields
-$$
-\frac1{\abs{f(z)}}\le1,
-$$
-so
-$$
-\abs{f(z)}\ge1\qquad(z\in\DD).
-\tag{2}
-$$
-Combining (1) and (2) gives $\abs{f(z)}=1$ throughout $\DD$.
+::: pf
 
-If $f$ were nonconstant, the open mapping theorem would imply that $f(\DD)$ is open in $\CC$, but it is contained in the unit circle, which has empty interior. This is impossible. Hence $f$ is constant.
+::: {.pf-step #upper}
+$\abs{f(z)}\le1$ for $z\in\DD$.
+
+::: pf-proof
+$f$ is holomorphic on $\DD$ and continuous on $\overline\DD$ with $\abs f=1$ on the boundary circle, so by the maximum-modulus principle $\abs f$ attains its maximum on the boundary and $\abs{f(z)}\le1$ inside.
+:::
+:::
+
+::: {.pf-step #reciprocal}
+$1/f$ is holomorphic on $\DD$ and continuous on $\overline\DD$, with $\abs{1/f}=1$ on the circle.
+
+::: pf-proof
+$f$ is non-vanishing on $\overline\DD$, so $1/f$ is defined and continuous there and holomorphic in the disc; on $\abs z=1$ we have $\abs f=1$, hence $\abs{1/f}=1$.
+:::
+:::
+
+::: {.pf-step #lower}
+$\abs{f(z)}\ge1$ for $z\in\DD$.
+
+::: pf-proof
+Applying the maximum-modulus principle to $1/f$ gives $1/\abs{f(z)}\le1$ in the disc, which is the assertion.
+:::
+:::
+
+::: {.pf-step #constant}
+$f$ is constant.
+
+::: pf-proof
+By the two bounds $\abs{f(z)}=1$ throughout $\DD$, so $f(\DD)$ lies in the unit circle. If $f$ were non-constant, the open mapping theorem would make $f(\DD)$ open in $\CC$, but the circle has empty interior, a contradiction; hence $f$ is constant, and being continuous on $\overline\DD$ it is that constant there too.
+:::
+:::
+
+:::
 :::
