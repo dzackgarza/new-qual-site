@@ -6,7 +6,9 @@ title: Uniqueness for a Lipschitz integral equation
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Ordinary Differential Equations
+  - Lipschitz Continuity
 relations: []
 review: draft
 audit:

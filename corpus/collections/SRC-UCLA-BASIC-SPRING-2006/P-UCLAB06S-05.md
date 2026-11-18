@@ -5,7 +5,8 @@ kind: problem
 title: Uniform continuity of $x^\alpha$ on $[0,\infty)$
 classification:
   areas: [prelim]
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Decomposition associated to an idempotent linear map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Projection
+  - Direct Sums
 relations: []
 review: draft
 audit:

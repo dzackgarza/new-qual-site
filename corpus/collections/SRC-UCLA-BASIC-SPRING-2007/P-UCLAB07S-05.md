@@ -6,7 +6,9 @@ title: An eigenvector of a normal operator is an eigenvector of its adjoint
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Normal Operators
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

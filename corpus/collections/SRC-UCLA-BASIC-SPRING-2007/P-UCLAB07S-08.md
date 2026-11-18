@@ -6,7 +6,9 @@ title: Differentiability of a pointwise limit under uniform derivative bounds
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Differentiation
 relations: []
 review: draft
 audit:

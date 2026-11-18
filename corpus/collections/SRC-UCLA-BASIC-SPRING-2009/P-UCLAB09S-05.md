@@ -6,7 +6,8 @@ title: Matrix exponential $e^{At}$ of a $3\times3$ matrix
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Matrix Exponential
 relations: []
 review: draft
 audit:

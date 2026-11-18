@@ -6,7 +6,9 @@ title: Increasing functions converging pointwise to a continuous distribution fu
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Monotone Functions
 relations: []
 review: draft
 audit:

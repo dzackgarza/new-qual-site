@@ -6,7 +6,9 @@ title: Compatibility and uniqueness of quadratic Hermite data
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Interpolation
+  - Polynomials
 relations: []
 review: draft
 audit:

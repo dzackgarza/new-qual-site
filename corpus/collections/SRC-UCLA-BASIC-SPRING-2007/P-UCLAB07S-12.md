@@ -6,7 +6,9 @@ title: Completeness and compact subsets of c-zero
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Banach Spaces
+  - Compactness
 relations: []
 review: draft
 audit:

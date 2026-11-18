@@ -6,7 +6,9 @@ title: Invertibility of factors from an invertible composition
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Invertibility
+  - Linear Transformations
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: Frobenius inner product and the adjoint of a commutator map
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Inner Product Spaces
+  - Adjoint Operators
 relations: []
 review: draft
 audit:

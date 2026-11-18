@@ -5,7 +5,8 @@ kind: problem
 title: Radius of convergence of a power series
 classification:
   areas: [prelim, complex-analysis]
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 audit:

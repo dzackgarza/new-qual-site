@@ -6,7 +6,9 @@ title: Error in the centered finite-difference approximation to a second derivat
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Taylor Series
+  - Differentiation
 relations: []
 review: draft
 audit:

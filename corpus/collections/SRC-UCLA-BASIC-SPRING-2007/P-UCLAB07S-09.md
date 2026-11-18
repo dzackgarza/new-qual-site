@@ -6,7 +6,8 @@ title: Continuous functions are Riemann integrable
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Riemann Integration
 relations: []
 review: draft
 audit:

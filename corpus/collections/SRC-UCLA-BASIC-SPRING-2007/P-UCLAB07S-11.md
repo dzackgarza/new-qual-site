@@ -6,7 +6,8 @@ title: Implicit function theorem at and beyond its hypotheses
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Implicit Function Theorem
 relations: []
 review: draft
 audit:

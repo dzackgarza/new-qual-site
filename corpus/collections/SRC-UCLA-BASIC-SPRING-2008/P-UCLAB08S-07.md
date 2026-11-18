@@ -6,7 +6,9 @@ title: A summable family on an arbitrary set has countable support
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Series of Numbers
+  - Countable and Uncountable Sets
 relations: []
 review: draft
 audit:

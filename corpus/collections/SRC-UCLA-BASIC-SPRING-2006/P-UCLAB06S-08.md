@@ -6,7 +6,9 @@ title: Orthogonal maps of $\RR^{2n+1}$ have an eigenvalue $\pm1$
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Orthogonal Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 audit:

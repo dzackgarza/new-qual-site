@@ -6,7 +6,9 @@ title: A complete countable metric space has an isolated point
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Baire Category Theorem
+  - Completeness
 relations: []
 review: draft
 audit:

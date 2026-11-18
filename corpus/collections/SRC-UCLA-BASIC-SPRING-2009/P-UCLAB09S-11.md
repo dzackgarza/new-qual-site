@@ -6,7 +6,9 @@ title: Jordan normal form and the minimal polynomial
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 audit:

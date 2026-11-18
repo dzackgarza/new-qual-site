@@ -6,7 +6,9 @@ title: Solution space of a second-order linear recurrence
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - Recurrences
+  - Vector Spaces
 relations: []
 review: draft
 audit:
