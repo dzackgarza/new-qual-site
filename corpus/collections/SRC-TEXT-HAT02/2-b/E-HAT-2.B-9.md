@@ -1,5 +1,6 @@
 ---
 
+
 schema: qual/card@1
 id: E-HAT-2.B-9
 kind: problem
@@ -154,6 +155,20 @@ audit:
     contents named above. Not claimed: a printed treatment of the trivial covering
     $X\times S^0\to X$ in either passage; the $\ZZ$-coefficient form and its splitting are the
     card's own, and the sequence is stated by the book for general two-sheeted coverings only.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied, with the disposition the owner fixed for this
+    card: the exercise is answered from the book's own transfer construction, cited where the book
+    states it, and the specialisation to the trivial cover is the card's argument, cited to those
+    pages. Both steps now name their provenance. The transfer and projection are Hatcher's
+    construction at printed pp. 174--175, and the general $n$-sheeted transfer is §3.G, "Transfer
+    Homomorphisms", printed p. 321; the book gives these as a construction in the text and not as a
+    numbered theorem, which the card now says at the step. The two-sheet coordinate form and the
+    chain section are marked as the card's own, since the book neither states nor proves a splitting.
+    Checked: the two printed places and the absence of a splitting in them. Not claimed: that the
+    book works out the trivial covering.
 ---
 
 ::: {.problem}
@@ -180,7 +195,7 @@ C_*(X;\ZZ_2)\longrightarrow0.
 $$
 
 ::: pf-proof
-Since $X\times S^0=X\amalg X$, its singular chain complex is $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$. The two lifts of a base simplex are its images in the two copies, hence $\tau(c)=(c,c)$; projection adds them. The diagonal is injective, addition is surjective, and $(a,b)$ lies in its kernel exactly when $b=-a=a$ in characteristic two, which is exactly the diagonal image.
+Since $X\times S^0=X\amalg X$, its singular chain complex is $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$. The two lifts of a base simplex are its images in the two copies, hence $\tau(c)=(c,c)$; projection adds them. Here $\tau$ is the sum of the two lifts and $p_\#$ the projection as Hatcher's §2.B constructs them, printed pp. 174--175, and as the general $n$-sheeted transfer is defined in §3.G, printed p. 321; the book gives these as a construction in the text, not as a numbered theorem. The two-sheet coordinate form for the trivial covering is the card's own reading of that construction. The diagonal is injective, addition is surjective, and $(a,b)$ lies in its kernel exactly when $b=-a=a$ in characteristic two, which is exactly the diagonal image.
 :::
 
 :::
@@ -189,7 +204,7 @@ Since $X\times S^0=X\amalg X$, its singular chain complex is $C_*(X;\ZZ_2)\oplus
 The short exact sequence in step [](#trivial-chains){.pf-ref} splits as a sequence of chain complexes.
 
 ::: pf-proof
-The chain map $s(c)=(c,0)$ satisfies $p_\#\circ s=\operatorname{id}$, so it is a section of projection. This is what the trivial covering adds to Hatcher's general construction, whose sequence of chain complexes need not split.
+The chain map $s(c)=(c,0)$ satisfies $p_\#\circ s=\operatorname{id}$, so it is a section of projection. The argument of this step is the card's own: this is what the trivial covering adds to Hatcher's general construction, printed pp. 174--175 and §3.G printed p. 321, whose sequence of chain complexes need not split, and the book neither states nor proves the splitting.
 :::
 
 :::
@@ -227,5 +242,5 @@ $$
 in each degree, which is the same two-sheet computation at the cochain level: over $\ZZ_2$ the cochain complex of $\tilde X$ is $C^*(X;\ZZ_2)\oplus C^*(X;\ZZ_2)$, and $C^*p$ is the diagonal while $\tau^*$ is addition, because $C_*p(a,b)=a+b$ is addition and $\tau(c)=(c,c)$ is the diagonal. The sequence splits by $\alpha\mapsto(\alpha,0)$, so $H^m(\tilde X;\ZZ_2)\cong H^m(X;\ZZ_2)^{\oplus2}$ for every $m$. Hausmann asks for exactly this computation as Exercise 4.4 of Chapter 4, printed p. 166, "Write the transfer exact sequence for a trivial 2-fold covering", and prints no solution to it; the two-sheet coordinates supplied here are the cohomological counterpart of those of the exercise as Hatcher states it.
 
 ::: {.remark title="Sources"}
-Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), read in `tmp/sources/hausmann-mod-two-homology-cohomology.md`: Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the transfer for a two-sheeted covering, printed pp. 174--175, $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields; the general transfer for an $n$-sheeted covering is §3.G, "Transfer Homomorphisms", printed p. 321, where $\tau$ is defined as the sum of the $n$ lifts and $\tau\pi^*=n$ is proved, and §2.B points there at printed p. 175. Both printed passages use $\ZZ_2$ coefficients, the exercise's sequence is over $\ZZ$, and neither passage works out the trivial covering. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$.
+Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), read in `tmp/sources/hausmann-mod-two-homology-cohomology.md`: Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the transfer for a two-sheeted covering, printed pp. 174--175, $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields; the general transfer for an $n$-sheeted covering is §3.G, "Transfer Homomorphisms", printed p. 321, where $\tau$ is defined as the sum of the $n$ lifts and $\tau\pi^*=n$ is proved, and §2.B points there at printed p. 175. Both printed passages use $\ZZ_2$ coefficients, the exercise's sequence is over $\ZZ$, and neither passage works out the trivial covering. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$. The disposition of this card under the repository's rule is that the exercise is answered from the book's own transfer construction, cited at the pages where the book states it, and that the specialisation to the trivial cover is the card's argument, cited to those pages; Hatcher states the transfer as a construction in the text rather than as a numbered theorem, and the card says so at each step.
 :::

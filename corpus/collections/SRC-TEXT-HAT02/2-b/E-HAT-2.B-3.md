@@ -1,5 +1,6 @@
 ---
 
+
 schema: qual/card@1
 id: E-HAT-2.B-3
 kind: problem
@@ -111,6 +112,21 @@ audit:
     computations the argument takes from Alexander duality (Theorem 3.44, printed p. 254) or
     equivalently from Proposition 2B.1(b) (printed p. 169). Not claimed: a published solution of
     Exercise 2.B.3, none having been located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied: a card may cite a published source for the part
+    the source proves and the book for the part the book proves, provided the card says which part
+    each covers, and a card is accepted when each step of its proof names a published argument or is
+    marked as the card's own. Each input of this proof is now named at its printed page in the
+    remark: Alexander duality, Theorem 3.44, printed p. 254, or Proposition 2B.1(b), printed p. 169,
+    for the two complement computations; the reduced Mayer--Vietoris sequence, printed pp. 149--150;
+    Invariance of Domain, Theorem 2B.3, printed p. 172, for the case $k=n$. What the proof adds to
+    them is marked as the card's own: the two enlargements of the ends, the identification of their
+    intersection with $A$, and the argument that a cycle in $W$ is a boundary in neither copy of $B$.
+    The provenance of the hint is in the event above. Checked: the four printed pages and what each
+    supplies. Not claimed: a source that states the exercise.
 ---
 
 ::: {.problem}
@@ -155,7 +171,7 @@ If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary
 :::
 
 ::: {.remark title="What the proof is"}
-The proof is the route the exercise's hint names, and that hint is the book's own correction of an earlier one: Hatcher, *Algebraic Topology*, errata for §2.B, page 176, Exercise 3, in `tmp/sources/hatcher-AT-errata.md`, prints "A better hint would be to glue two copies of $(D^n,D)$ to the two ends of $(S^{n-1}\times I,S\times I)$ to produce a k sphere in $S^n$ and look at a Mayer--Vietoris sequence for the complement of this k sphere", and records that "the hint originally given leads to problems with the point-set topology hypotheses of the Mayer-Vietoris sequence"; the text of the book read here carries the corrected hint. The hint originally given is therefore not workable and is not followed here. The proof is also not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172). The same two computations, by the same induction, are Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4 (Generalized Jordan Curve Theorem), both printed p. 233: the complement of an embedded $D^r$ in $S^n$ is acyclic, and the complement of an embedded $S^r$ has $\widetilde H_i=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Bredon's proofs use Mayer--Vietoris and no duality, so either book can be cited for the inputs this argument takes from Alexander duality.
+The proof is the route the exercise's hint names, and that hint is the book's own correction of an earlier one: Hatcher, *Algebraic Topology*, errata for §2.B, page 176, Exercise 3, in `tmp/sources/hatcher-AT-errata.md`, prints "A better hint would be to glue two copies of $(D^n,D)$ to the two ends of $(S^{n-1}\times I,S\times I)$ to produce a k sphere in $S^n$ and look at a Mayer--Vietoris sequence for the complement of this k sphere", and records that "the hint originally given leads to problems with the point-set topology hypotheses of the Mayer-Vietoris sequence"; the text of the book read here carries the corrected hint. The hint originally given is therefore not workable and is not followed here. The proof is also not the induction of Proposition 2B.1. Two copies of $(D^n,D)$ glued to the ends of $(S^{n-1}\times I,S\times I)$ make $S^n$ with an embedded $S^k$, whose complement $W$ is two copies of $B=D^n-D$ joined along the cylinder $(S^{n-1}-S)\times I$; reduced Mayer--Vietoris (printed pp. 149--150) on two overlapping enlargements of the ends relates $H_*(W)$, $H_*(B)$ and $H_*(A)$ for $A=S^{n-1}-S$; and the two ends are known in advance, from Alexander duality, Theorem 3.44 (printed p. 254), applied to the embedded spheres $S^k\subset S^n$ and $S^{k-1}\subset S^{n-1}$. Both values are also what Proposition 2B.1(b) (printed p. 169) gives for the complement of an embedded sphere, a result proved there by induction on $k$ and Mayer--Vietoris without duality; the case $k=n$ of the exercise uses Invariance of Domain, Theorem 2B.3 (printed p. 172). The same two computations, by the same induction, are Bredon, *Topology and Geometry*, Corollary 19.3 and Theorem 19.4 (Generalized Jordan Curve Theorem), both printed p. 233: the complement of an embedded $D^r$ in $S^n$ is acyclic, and the complement of an embedded $S^r$ has $\widetilde H_i=\ZZ$ for $i=n-r-1$ and $0$ otherwise. Bredon's proofs use Mayer--Vietoris and no duality, so either book can be cited for the inputs this argument takes from Alexander duality. Each input is a published argument at the printed page named --- Alexander duality, Theorem 3.44, printed p. 254, or Proposition 2B.1(b), printed p. 169, for the two complement computations; the reduced Mayer--Vietoris sequence, printed pp. 149--150, for the relation between $W$, $B$ and $A$; Invariance of Domain, Theorem 2B.3, printed p. 172, for the case $k=n$ --- and what the proof adds to them is the card's own: the two enlargements of the ends, the identification of their intersection with $A$, and the argument that a cycle in $W$ becomes a boundary in neither copy of $B$.
 
 Both books were read in text: Hatcher in `tmp/sources/hatcher-2002-algebraic-topology.md`, Bredon in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version yet.
 :::

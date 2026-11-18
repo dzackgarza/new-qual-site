@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-2.C-1
 kind: problem
@@ -203,6 +204,18 @@ audit:
     machine solves Exercise 2.C.1, so those two cases remain without a published proof;
     `COMPLAINTS.md` records that on this date.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied. Every step of this solution is a checked
+    transcription of a Math StackExchange answer --- 3590397 and 4874176 on question 3590105 --- and
+    an answer is a user post, not a publication, so no published argument proves any step here. Each
+    of the three constructive steps is now marked as the card's own, the closing sentence says so,
+    and the disposition is recorded in `COMPLAINTS.md` item 11 as the one for a part no source
+    proves. Checked: that the steps cite those two answers and nothing else, and that the marking
+    covers each of them. Not claimed: a published argument for any step, which would change the
+    disposition.
 ---
 
 ::: {.problem}
@@ -218,7 +231,7 @@ Write $e(K)$ and $e(L)$ for the numbers of edges, and orient both simplicial cir
 If $f:K\to L$ is a simplicial map of degree $n>0$ and $L$ has $\ell$ vertices, then $K$ has at least $n\ell$ vertices.
 
 ::: pf-proof
-This is the argument of answer 3590397, paragraphs 4--8. A triangulation $\tau$ of $S^1$ with $k$ vertices induces a triangulation $\bar\tau$ of $\RR$ for which the standard covering $p(t)=e^{2\pi it}$ is simplicial, and a simplicial map $f:(\tau)\to(\tau')$, with $\ell$ vertices in $\tau'$, lifts to a simplicial map $\bar f:(\RR,\bar\tau)\to(\RR,\bar\tau')$. Choose consecutive lifts $w_1<w_2<\cdots<w_k<w_{k+1}=w_1+1$ of the $k$ vertices of $K$, and $w'_1$ a lift of the image of $w_1$. Then $\bar f(w_{k+1})=w'_1+n$ for an integer $n$, since $p\bar f(w_{k+1})=f(v_1)=p\bar f(w_1)$; and since the degree of $f$ is $\bar f(t+1)-\bar f(t)$ for any $t$, that integer is $\deg f=n$. For $n>0$ the segment $[w'_1,w'_1+n]$ contains exactly $n\ell+1$ vertices of $\bar\tau'$, and each of them is the image of one of $w_1,\ldots,w_{k+1}$, since otherwise $\bar f([w_1,w_{k+1}])$ could not contain the whole interval $[w'_1,w'_1+n]$ — this is where the answer uses the intermediate value theorem. Hence $k+1\ge n\ell+1$, that is $k\ge n\ell$. A simplicial complex structure on $S^1$ has as many edges as vertices here, so the same count is $e(K)\ge n\,e(L)$.
+The argument of this step is the card's own: it is a user answer, not a publication --- answer 3590397, paragraphs 4--8, of Math StackExchange question 3590105 --- checked here paragraph by paragraph and carried as the card's own argument. A triangulation $\tau$ of $S^1$ with $k$ vertices induces a triangulation $\bar\tau$ of $\RR$ for which the standard covering $p(t)=e^{2\pi it}$ is simplicial, and a simplicial map $f:(\tau)\to(\tau')$, with $\ell$ vertices in $\tau'$, lifts to a simplicial map $\bar f:(\RR,\bar\tau)\to(\RR,\bar\tau')$. Choose consecutive lifts $w_1<w_2<\cdots<w_k<w_{k+1}=w_1+1$ of the $k$ vertices of $K$, and $w'_1$ a lift of the image of $w_1$. Then $\bar f(w_{k+1})=w'_1+n$ for an integer $n$, since $p\bar f(w_{k+1})=f(v_1)=p\bar f(w_1)$; and since the degree of $f$ is $\bar f(t+1)-\bar f(t)$ for any $t$, that integer is $\deg f=n$. For $n>0$ the segment $[w'_1,w'_1+n]$ contains exactly $n\ell+1$ vertices of $\bar\tau'$, and each of them is the image of one of $w_1,\ldots,w_{k+1}$, since otherwise $\bar f([w_1,w_{k+1}])$ could not contain the whole interval $[w'_1,w'_1+n]$ — this is where the answer uses the intermediate value theorem. Hence $k+1\ge n\ell+1$, that is $k\ge n\ell$. A simplicial complex structure on $S^1$ has as many edges as vertices here, so the same count is $e(K)\ge n\,e(L)$.
 :::
 
 :::
@@ -230,7 +243,7 @@ e(K)\ge n\,e(L)\ge 3n.
 $$
 
 ::: pf-proof
-The inequality $e(K)\ge n\,e(L)$ is step [](#cover){.pf-ref}, answer 3590397's vertex count, a simplicial structure on $S^1$ having as many edges as vertices. In fundamental-cycle form it is the computation of answer 4874176, which is made for a target triangle: write $z_K=\tilde e_1+\cdots+\tilde e_k$ and $z_L=e_1+e_2+e_3$ for the two simplicial fundamental cycles, so that $f_*(z_K)=n(e_1+e_2+e_3)$. A simplicial map carries an edge to a vertex or to an edge, so its coefficient on chains is $0$ or $\pm1$, and every target edge receives total signed coefficient $n$ from at least $n$ distinct domain edges; hence $e(K)\ge n\,e(L)$, which for $e(L)=3$ is the answer's conclusion that $K$ has at least $3n$ edges. A simplicial complex on $S^1$ cannot have a loop edge or two edges with the same pair of endpoints, so it has at least three edges: this is the observation the question itself opens with, that a simplicial structure on $S^1$ must have at least $3$ vertices, and answer 3590397 applies it to $\tau'$, whose minimal number of vertices is $3$. Answer 3590397 draws the conclusion in vertex form too: for $\deg(f)=n>1$ the two triangulations cannot coincide, and $\tau$ has at least $n$ times as many vertices as $\tau'$, hence at least $3n$.
+The inequality $e(K)\ge n\,e(L)$ is step [](#cover){.pf-ref}, answer 3590397's vertex count, a simplicial structure on $S^1$ having as many edges as vertices. In fundamental-cycle form it is the computation of answer 4874176, which is made for a target triangle: write $z_K=\tilde e_1+\cdots+\tilde e_k$ and $z_L=e_1+e_2+e_3$ for the two simplicial fundamental cycles, so that $f_*(z_K)=n(e_1+e_2+e_3)$. A simplicial map carries an edge to a vertex or to an edge, so its coefficient on chains is $0$ or $\pm1$, and every target edge receives total signed coefficient $n$ from at least $n$ distinct domain edges; hence $e(K)\ge n\,e(L)$, which for $e(L)=3$ is the answer's conclusion that $K$ has at least $3n$ edges. A simplicial complex on $S^1$ cannot have a loop edge or two edges with the same pair of endpoints, so it has at least three edges: this is the observation the question itself opens with, that a simplicial structure on $S^1$ must have at least $3$ vertices, and answer 3590397 applies it to $\tau'$, whose minimal number of vertices is $3$. Answer 3590397 draws the conclusion in vertex form too: for $\deg(f)=n>1$ the two triangulations cannot coincide, and $\tau$ has at least $n$ times as many vertices as $\tau'$, hence at least $3n$. Both counts are user answers and not publications, and are marked as the card's own with step [](#cover){.pf-ref}; what is the card's own here is the check that the two forms of the count agree and that the target cannot have fewer than three edges.
 :::
 
 :::
@@ -239,7 +252,7 @@ The inequality $e(K)\ge n\,e(L)$ is step [](#cover){.pf-ref}, answer 3590397's v
 For every $n>0$ the bound $e(L)=3$, $e(K)=3n$ is attained.
 
 ::: pf-proof
-Let $L$ be a triangle and $K$ a polygon with $3n$ edges, and map successive triples of edges of $K$ around the three edges of $L$, repeating exactly $n$ times with the positive orientation. On the circle this is the map $z\mapsto z^n$ from the $3n$-th roots of unity to the third roots of unity, which is simplicial of degree $n$: this is the construction in the question's second paragraph, and answer 3590397 closes by asserting that a minimum of $3n$ vertices suffices, "obviously there are solutions with $3n$ vertices".
+Let $L$ be a triangle and $K$ a polygon with $3n$ edges, and map successive triples of edges of $K$ around the three edges of $L$, repeating exactly $n$ times with the positive orientation. On the circle this is the map $z\mapsto z^n$ from the $3n$-th roots of unity to the third roots of unity, which is simplicial of degree $n$: this is the construction in the question's second paragraph, and answer 3590397 closes by asserting that a minimum of $3n$ vertices suffices, "obviously there are solutions with $3n$ vertices". The construction and that closing assertion are a user post, not a publication; the verification that the map is simplicial of degree $n$ is the card's own.
 :::
 
 :::
@@ -260,5 +273,5 @@ $$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
 
-The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002).
+The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. `COMPLAINTS.md` item 11 records the disposition.
 :::

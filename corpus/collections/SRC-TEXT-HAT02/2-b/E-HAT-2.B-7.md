@@ -1,5 +1,6 @@
 ---
 
+
 schema: qual/card@1
 id: E-HAT-2.B-7
 kind: problem
@@ -142,6 +143,16 @@ audit:
     thesis on 2-horned spheres of orders 3 and 4 is open access but answers with a Cloudflare
     challenge at its PDF endpoint, so no page of it has been read. Not claimed: a published analysis
     of the doubled block, and no transcription from Riebe.
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date, third disposition, stated on this card: no published
+    argument for the doubled-handle construction was found by either reader, so the part is named as
+    the card's own here and in `COMPLAINTS.md` item 11, and that naming is a record of what the card
+    owes rather than an acceptance of the part from a published source. The remark now says so.
+    Checked this pass and unchanged: Hatcher's printed construction, pp. 170--172, and the exercise
+    with its figure, printed p. 177.
 ---
 
 ::: {.problem}
@@ -253,5 +264,5 @@ Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebrai
 
 A published candidate for the order-4 block exists and could not be read: N. W. Riebe, *The Fundamental Groups of the Complements of Some Solid Horned Spheres* (MS thesis, Utah State University, 1968, DOI 10.26076/c3c1-48f0, `https://digitalcommons.usu.edu/etd/6821/`), whose published abstract calls the classical Alexander horned sphere a 2-horned sphere of order 2, constructs 2-horned spheres of orders 3 and 4 by the same generalization, computes the fundamental groups of the complements of all three, and concludes that these groups are free of countably infinite rank, so that the three embeddings are not distinguished by fundamental groups. The thesis's PDF endpoint answered with a browser challenge on 2026-11-18, so no page of the thesis has been read, no printed page of it is cited here, and nothing on this card is transcribed from it; whether its order-4 building block is the doubled one is not settled by the abstract, and its free-group conclusion is the abstract's, not a theorem checked here.
 
-No published analysis of the doubled block was read in full, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant, and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets do not solve this exercise --- Sam's has no §2.B section at all, Li's holds 2.B.10 and 2.B.11 only, DeMason's 2.B.1, 2.B.2 and 2.B.8, and Poulsen's 2.B.10; the Stanford Math 215C sets held here are Solution Sets 2--4, which hold §3.2 exercises 1, 2, 11 and 15 with §3.B exercises 1 and 3 (Set 2), §3.3 exercises 9--11 (Set 3), and §3.3 exercises 21, 22 and 24 with M&T 8.2, 8.5, 8.6 and 9.1 (Set 4), and no §2.B exercise; the UCR Math 205B help file has no §2.B exercise, and `tmp/sources/hatcher-math538-homework4-solutions.pdf` is not a solution set at all but a 19-page image-only scan of lecture notes whose first page is printed page 60, "§3.2 Application: Borsuk--Ulam Theorem". The analysis above is therefore the card's own, checked against Hatcher's printed construction. The doubled block is named as the card's own argument: no published proof of it has been found, and it is recorded as the card's own in `COMPLAINTS.md` item 11 rather than described as a published solution.
+No published analysis of the doubled block was read in full, and the doubling is not worked out in any source read: Hatcher's own text and errata carry only the printed construction for the undoubled block; Bredon, *Topology and Geometry*, printed p. 232 with Figure IV-9, describes the Alexander horned disk and refers to Rushing for details, without the doubled variant, and was read in the text layer of `tmp/sources/bredon-topology-and-geometry.pdf`, which has no checked-in text version; Alexander (1924) and Bing (1953), the retained papers on the horned sphere, treat the undoubled construction; and the retained solution sets do not solve this exercise --- Sam's has no §2.B section at all, Li's holds 2.B.10 and 2.B.11 only, DeMason's 2.B.1, 2.B.2 and 2.B.8, and Poulsen's 2.B.10; the Stanford Math 215C sets held here are Solution Sets 2--4, which hold §3.2 exercises 1, 2, 11 and 15 with §3.B exercises 1 and 3 (Set 2), §3.3 exercises 9--11 (Set 3), and §3.3 exercises 21, 22 and 24 with M&T 8.2, 8.5, 8.6 and 9.1 (Set 4), and no §2.B exercise; the UCR Math 205B help file has no §2.B exercise, and `tmp/sources/hatcher-math538-homework4-solutions.pdf` is not a solution set at all but a 19-page image-only scan of lecture notes whose first page is printed page 60, "§3.2 Application: Borsuk--Ulam Theorem". The analysis above is therefore the card's own, checked against Hatcher's printed construction. The doubled block is named as the card's own argument: no published proof of it has been found, and it is recorded as the card's own in `COMPLAINTS.md` item 11 rather than described as a published solution. That record is what the card owes, not an acceptance of the part from a source.
 :::

@@ -1,4 +1,5 @@
 ---
+
 schema: qual/card@1
 id: E-HAT-2.C-6
 kind: problem
@@ -258,6 +259,18 @@ audit:
     Lefschetz number of this involution, so the trace computation remains without a published
     proof; `COMPLAINTS.md` records that on this date.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-18
+  note: >-
+    The owner's acceptance rule of this date applied: the remark now says which part Dugger proves
+    and which part the card does. Dugger, *Involutions on Surfaces*: §2.7, printed pp. 11--12, for
+    the centered antipodal action; Proposition 2.8, printed p. 12, for the equivariant isomorphism
+    $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$; Theorem 4.1(a), printed p. 18,
+    for the freeness of the free even-genus involution. The Lefschetz number $\tau(f)=1-0-1$ is
+    computed on the card and marked there as the card's own, and the remark says that no single
+    source states the exercise. Checked: the three Dugger places and that the trace computation is
+    the card's. Not claimed: that Dugger works Hatcher's exercise.
 ---
 
 ::: {.problem}
@@ -351,5 +364,5 @@ This gives the even-genus counterpart of Example 2C.4. Additional symmetric pair
 :::
 
 ::: {.remark title="Sources"}
-Hatcher, *Algebraic Topology* (2002): the exercise is Exercise 6 of §2.C, printed p. 184. Example 2C.4, the genus-$3$ case it modifies, is printed p. 181, where $f_*$ on $H_0$ contributes $1$, on $H_1$ contributes $-2$ and on $H_2$ is the identity, so $\tau(f)=1-2+1=0$. Dugger, *Involutions on Surfaces*: §2.7 on printed pp. 11--12, Proposition 2.8 on printed p. 12, and Theorem 4.1(a) on printed p. 18.
+Hatcher, *Algebraic Topology* (2002): the exercise is Exercise 6 of §2.C, printed p. 184. Example 2C.4, the genus-$3$ case it modifies, is printed p. 181, where $f_*$ on $H_0$ contributes $1$, on $H_1$ contributes $-2$ and on $H_2$ is the identity, so $\tau(f)=1-2+1=0$. Dugger, *Involutions on Surfaces*: §2.7 on printed pp. 11--12 for the centered antipodal action, Proposition 2.8 on printed p. 12 for the equivariant isomorphism $T^{\mathrm{anti}}_{2m}=S^2_a\mathbin{\#_{\mathrm{eq}}}T_m$ and Theorem 4.1(a) on printed p. 18 for the freeness of the free even-genus involution. No single source states the exercise: Dugger's Proposition 2.8 and Theorem 4.1(a) supply the construction and its freeness, and the Lefschetz number $\tau(f)=1-0-1$ is computed on the card and marked there as the card's own.
 :::
