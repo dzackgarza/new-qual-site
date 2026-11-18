@@ -56,7 +56,7 @@ Recall that $\bar\rho(f,g)=\sup_{x\in X}\min\{\abs{f(x)-g(x)},1\}$ is the unifor
 If $f_{n}\to f$ uniformly, then $f_{n}\to f$ in $(\RR^{X},\bar\rho)$.
 
 ::: pf-proof
-Let $\varepsilon>0$. Uniform convergence gives $N$ with $\abs{f_{n}(x)-f(x))}<\varepsilon$ for every $x\in X$ and every $n\ge N$. For such $n$ and every $x$, $\min\{\abs{f_{n}(x)-f(x)},1\}\le\abs{f_{n}(x)-f(x)}<\varepsilon$, so $\bar\rho(f,f_{n})\le\varepsilon$. Hence $\bar\rho(f,f_{n})\to0$.
+Let $\varepsilon>0$. Uniform convergence gives $N$ with $\abs{f_{n}(x)-f(x)}<\varepsilon$ for every $x\in X$ and every $n\ge N$. For such $n$ and every $x$, $\min\{\abs{f_{n}(x)-f(x)},1\}\le\abs{f_{n}(x)-f(x)}<\varepsilon$, so $\bar\rho(f,f_{n})\le\varepsilon$. Hence $\bar\rho(f,f_{n})\to0$.
 :::
 
 :::
