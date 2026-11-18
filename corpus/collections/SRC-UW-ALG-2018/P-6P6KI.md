@@ -15,6 +15,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    A full qualc check reported an undefined control word in the concluding step. It is replaced
+    by the defined \ncong, which is the relation being denied there. No mathematics or step changed.
 ---
 
 ::: {.problem}
@@ -58,7 +64,7 @@ $\rho_{j}$ is two-dimensional, and its restriction to the abelian subgroup $\lan
 :::
 
 ::: {.pf-qed}
-The implication "equivalent $\Rightarrow$ equal determinants" holds because the determinant is invariant under conjugation, but its converse fails: $\rho_{1}\nequiv\rho_{2}$ by step [](#inequivalent){.pf-ref} while their determinants agree by step [](#determinants){.pf-ref}. The assertion is therefore false.
+The implication "equivalent $\Rightarrow$ equal determinants" holds because the determinant is invariant under conjugation, but its converse fails: $\rho_{1}\ncong\rho_{2}$ by step [](#inequivalent){.pf-ref} while their determinants agree by step [](#determinants){.pf-ref}. The assertion is therefore false.
 :::
 
 :::
