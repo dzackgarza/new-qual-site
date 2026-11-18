@@ -28,6 +28,14 @@ audit:
     https://dbfin.com/topology/munkres/chapter-9/section-52-the-fundamental-group/problem-2-solution/
     (read 2026-11-11; kept at tmp/sources/dbfin/section-52-the-fundamental-group/problem-2-solution.txt), and against Munkres, Topology (2000), Section 52
     Exercise 2, printed p. 334. dbFin's is the same chain of path-homotopy classes; the card writes the associativity step out. Nothing needed repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into Lamport steps; checked the reverse of a product, the two sides of the
+    computation as the same product of four path classes, and the associativity up to
+    reparametrization. The argument is the card's own; no retained set is cited. Munkres §52
+    Exercise 6, printed p. 334. The printed statement needed no repair.
 ---
 
 ::: {.exercise}
@@ -37,24 +45,44 @@ Show that if $\gamma = \alpha * \beta$, then $\hat{\gamma} = \hat{\beta} \circ \
 :::
 
 ::: {.solution}
-Recall that for a path $\delta$ from $u$ to $v$, the change-of-basepoint map is
-$$
-\widehat\delta([f])=[\bar\delta*f*\delta],
-$$
-with the convention that products of paths are traversed from left to right.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §52 Exercise 6, printed p. 334, with the definition of the change-of-basepoint map $\widehat\delta([f])=[\bar\delta*f*\delta]$ for a path $\delta$ from $u$ to $v$ and a loop $f$ at $u$.
 
-Let $\gamma=\alpha*\beta$. Then $\bar\gamma=\bar\beta*\bar\alpha$. Hence for a loop $f$ at $x_0$,
+::: pf
+
+::: {.pf-step #reverse}
+$\overline{\alpha*\beta}=\bar\beta*\bar\alpha$.
+
+::: pf-proof
+The reverse of a path is given by $\bar\delta(s)=\delta(1-s)$. For the product $\gamma=\alpha*\beta$, which traverses $\alpha$ on $[0,\tfrac12]$ and $\beta$ on $[\tfrac12,1]$, the reverse traverses first $\beta$ backwards and then $\alpha$ backwards, which is $\bar\beta*\bar\alpha$; formally the two parametrizations differ by the reparametrization $s\mapsto1-s$, so these paths are equal after reparametrization.
+:::
+
+:::
+
+::: {.pf-step #computation}
+For every loop $f$ at $x_{0}$, $\ \widehat\gamma([f])=\big(\widehat\beta\circ\widehat\alpha\big)([f])$.
+
+::: pf-proof
+$\gamma$ is a path from $x_{0}$ to $x_{2}$ and
 $$
-\begin{aligned}
-\widehat\gamma([f])
-&=[\bar\gamma*f*\gamma]\\
-&=[\bar\beta*\bar\alpha*f*\alpha*\beta]\\
-&=\widehat\beta([\bar\alpha*f*\alpha])\\
-&=(\widehat\beta\circ\widehat\alpha)([f]).
-\end{aligned}
+\widehat\gamma([f])=[\bar\gamma*f*\gamma]=[\bar\beta*\bar\alpha*f*\alpha*\beta],
 $$
-Associativity here is associativity of path multiplication up to the standard reparametrization homotopy, which is enough on homotopy classes. Therefore
+using step [](#reverse){.pf-ref}. On the other hand $\widehat\alpha([f])=[\bar\alpha*f*\alpha]$ is a loop class at $x_{1}$, a path from $x_{1}$ to $x_{2}$ is $\beta$, and
 $$
-\boxed{\widehat\gamma=\widehat\beta\circ\widehat\alpha}.
+\widehat\beta\big([\bar\alpha*f*\alpha]\big)=[\bar\beta*(\bar\alpha*f*\alpha)*\beta],
 $$
+which is the same product. The two expressions differ only in the bracketing of a product of four path classes, and path multiplication is associative up to the standard reparametrization homotopy, which is an equality of homotopy classes.
+:::
+
+:::
+
+::: {.pf-step}
+$\widehat\gamma=\widehat\beta\circ\widehat\alpha$.
+
+::: pf-proof
+Step [](#computation){.pf-ref} shows the two maps agree on every class $[f]$ of a loop at $x_{0}$, which is the whole domain $\pi_{1}(X,x_{0})$ of both.
+:::
+
+:::
+
+:::
 :::
