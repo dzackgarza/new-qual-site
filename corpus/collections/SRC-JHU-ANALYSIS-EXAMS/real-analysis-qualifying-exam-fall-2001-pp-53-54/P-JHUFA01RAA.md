@@ -32,34 +32,44 @@ exists. Prove that $f$ is uniformly continuous on $[0,\infty)$.
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$. Since $f(x)\to L$, choose $R>0$ such that
-$$
-\abs{f(x)-L}<\frac\varepsilon2
-\qquad(x\ge R).
-$$
-Then whenever $x,y\ge R$,
-$$
-\abs{f(x)-f(y)}
-\le \abs{f(x)-L}+\abs{f(y)-L}
-<\varepsilon.
-$$
 
-On the compact interval $[0,R+1]$, the function $f$ is uniformly continuous by the Heine--Cantor theorem. Hence there exists $\delta_0>0$ such that
-$$
-\abs{x-y}<\delta_0,
-\qquad x,y\in[0,R+1],
-$$
-implies
-$$
-\abs{f(x)-f(y)}<\varepsilon.
-$$
-Set
-$$
-\delta=\min\{1,\delta_0\}.
-$$
-Suppose $x,y\ge0$ and $\abs{x-y}<\delta$. If both $x,y\ge R$, the tail estimate above applies. Otherwise, one of the two points is $<R$; because $\abs{x-y}<1$, both points then belong to $[0,R+1]$, so the compact-interval estimate applies. Thus in all cases
-$$
-\abs{x-y}<\delta\implies \abs{f(x)-f(y)}<\varepsilon.
-$$
-Therefore $f$ is uniformly continuous on $[0,\infty)$.
+No retained solution set covers this exercise: the card's own argument follows, with the tail, the compact piece and the bookkeeping on $\delta$ as separate steps.
+
+Let $f$ be continuous on $[0,\infty)$ with $\lim_{x\to\infty}f(x)=L$.
+
+::: pf
+
+::: {.pf-step #tail}
+For every $\varepsilon>0$ there is $R>0$ such that $\abs{f(x)-f(y)}<\varepsilon$ whenever $x,y\ge R$.
+
+::: pf-proof
+Choose $R$ with $\abs{f(x)-L}<\varepsilon/2$ for $x\ge R$, which is possible since $f(x)\to L$. Then for $x,y\ge R$ the triangle inequality gives $\abs{f(x)-f(y)}\le\abs{f(x)-L}+\abs{f(y)-L}<\varepsilon$.
+:::
+
+:::
+
+::: {.pf-step #compact}
+On $[0,R+1]$ the function $f$ is uniformly continuous.
+
+::: pf-proof
+$[0,R+1]$ is compact and $f$ is continuous there, so Heine–Cantor applies: there is $\delta_{0}>0$ such that $\abs{x-y}<\delta_{0}$ with $x,y\in[0,R+1]$ implies $\abs{f(x)-f(y)}<\varepsilon$.
+:::
+
+:::
+
+::: {.pf-step #bookkeeping}
+With $\delta=\min\theset{1,\delta_{0}}$, any $x,y\ge0$ with $\abs{x-y}<\delta$ satisfy $\abs{f(x)-f(y)}<\varepsilon$.
+
+::: pf-proof
+If both $x,y\ge R$ this is the tail estimate of step [](#tail){.pf-ref}. If both $x,y\le R+1$ it is step [](#compact){.pf-ref}. The remaining possibility, say $x<R$ and $y>R+1$, is impossible: then $\abs{x-y}>R+1-R=1\ge\delta$. So one of the two cases always applies.
+:::
+
+:::
+
+::: {.pf-qed}
+For every $\varepsilon>0$ a $\delta>0$ has been produced that works for all $x,y\ge0$, so $f$ is uniformly continuous on $[0,\infty)$.
+:::
+
+:::
+
 :::
