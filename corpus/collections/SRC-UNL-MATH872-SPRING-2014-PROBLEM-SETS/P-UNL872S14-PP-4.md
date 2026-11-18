@@ -5,7 +5,9 @@ kind: problem
 title: $\Delta$-complex structure and homology of the cube with opposite faces glued by a quarter twist
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Delta Complexes
+  - Simplicial Homology
 relations: []
 review: draft
 audit:

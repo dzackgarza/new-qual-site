@@ -5,7 +5,9 @@ kind: problem
 title: Simplicial homology of a finite connected graph in terms of its Euler characteristic
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Simplicial Homology
+  - Euler Characteristic
 relations: []
 review: draft
 audit:

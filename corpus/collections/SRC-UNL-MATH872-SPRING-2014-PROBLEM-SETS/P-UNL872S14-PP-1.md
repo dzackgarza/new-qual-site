@@ -5,7 +5,8 @@ kind: problem
 title: Ham sandwich theorem for three blocks in $\RR^3$ via Borsuk–Ulam
 classification:
   areas: [topology]
-  topics: []
+  topics:
+  - Borsuk-Ulam Theorem
 relations: []
 review: draft
 audit:
