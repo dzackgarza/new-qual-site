@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1390 of the 12429 problem cards that have a solution
+1383 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1390
+- Problems: 1383
 - Problem cards with a solution: 12429
 
-## Problems (1390)
+## Problems (1383)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -630,7 +630,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-S4J3T — "Unions of closed paracompact subspaces"
 - [ ] E-S57IX — "Products of quotient maps with locally compact Hausdorff factors"
 - [ ] E-S7K3V — "Local compactness of balls versus completeness"
-- [ ] E-SANDE — "Classification of compact connected triangulable surfaces with boundary"
 - [ ] E-SMI-8000E-NR2 — "Quotients of noetherian rings are noetherian"
 - [ ] E-SS1.EX-22 — "$\NN$ is not a finite disjoint union of arithmetic progressions with distinct steps"
 - [ ] E-SS1.EX-23 — "A smooth function whose Taylor series at $0$ vanishes identically"
@@ -776,7 +775,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-W7FNF — "The lower limit line and the ordered square are not metrizable"
 - [ ] E-WOS95 — "Induced homomorphisms up to base-point change"
 - [ ] E-X4TVL — "Rational and irrational anti-diagonals in the Sorgenfrey plane"
-- [ ] E-XIHWT — "Distance to a set in a metric space"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
 - [ ] E-Y3MSR — "Compact closures in the topology of compact convergence"
 - [ ] E-Y4MFU — "Perfect maps transfer separation and countability properties"
@@ -954,7 +952,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
 - [ ] P-CAF24F — "Meromorphic function with poles in the disc and $\abs{f-1}\le 1/\abs{z}^2$ outside"
 - [ ] P-CAFA15B — "True or False: real-imaginary inequalities, entire surjection, conformal maps, and polynomial approximation"
-- [ ] P-CAFA15C — "Polynomial with non-increasing real coefficients has no roots inside the unit disk"
 - [ ] P-CAFA15F — "Periods of meromorphic functions form a discrete subgroup"
 - [ ] P-CAFA16D — "An analytic function on the disk vanishing on an arc of the boundary is identically zero"
 - [ ] P-CAFA16G — "Analytic continuation of the logarithm along a path is always a branch of the logarithm"
@@ -999,7 +996,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP15B — "True or false: five statements in complex analysis"
 - [ ] P-CASP15C — "Roots of $z^4-6z+3$ in an annulus"
 - [ ] P-CASP15F — "Sum of zeros minus poles of an elliptic function in a fundamental parallelogram"
-- [ ] P-CASP17B — "An entire function with $f(z)f(1/z)$ bounded is a monomial"
 - [ ] P-CASP17C — "An entire function bounded by $1+(\log(1+\abs z))^n$ is constant"
 - [ ] P-CASP17H — "Bounded harmonic functions on C and on the upper half-plane with zero boundary"
 - [ ] P-CASP18B — "$\int_0^\infty dt/(t^3+1)$ by residues"
@@ -1189,7 +1185,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-FKAJJ — "Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$ for finite $p$-groups"
 - [ ] P-FO6H7 — "Commuting diagonalizable operators are simultaneously diagonalizable"
 - [ ] P-FQJMB — "$e^x(\cos y+i\sin y)$ is the unique entire solution of $E'=E$, $E(0)=1$"
-- [ ] P-GLKAB — "Discriminant of a polynomial"
 - [ ] P-GT5L7 — "$\ZZ^{*2}$ has subgroups isomorphic to $\ZZ^{*n}$ for every $n$"
 - [ ] P-HCAX1 — "A continuous isolated singularity is removable"
 - [ ] P-HCAX14 — "Poles and residues of the cosecant function"
@@ -1288,7 +1283,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-NN3CO — "Galois group of $\QQ(\sqrt{2+\sqrt{2}})/\QQ$"
 - [ ] P-NV44D — "$\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}=\frac{\pi}{2\sqrt{a(a+1)}}$ for $a>0$"
 - [ ] P-OWMPB — "A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for every nonzero $k$ of lower degree"
-- [ ] P-P6D6X — "$f_n\to f$ almost everywhere in $L^1$ with $\int\abs{f_n}\to\int\abs{f}$ implies $\int f_n\to\int f$"
 - [ ] P-PGDPX — "Integral equals integral of distribution function"
 - [ ] P-PMDP4 — "$F(y)=\int f(x)\cos(yx)\,dx$ is $C^1$ when $f,xf\in L^1(\RR)$"
 - [ ] P-PNCAW — "$\int_{-\infty}^{\infty}\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$ for $a>0$"
@@ -1312,7 +1306,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-RASP13B — "$t\,\mu\{\abs{f}\geq t\}\to0$ for $f\in L^1$"
 - [ ] P-RASP13C — "A signed measure with vanishing polynomial moments is zero"
 - [ ] P-RASP15B — "$L^p$ characterization via the distribution function"
-- [ ] P-RASP21A — "Sumset of measurable set with null set"
 - [ ] P-RASP21C — "Function with prescribed moments"
 - [ ] P-RASP22B — "Bounded sequence with vanishing local integrals against $L^1$ functions"
 - [ ] P-RASP22F — "A bounded density that integrates to the measure of every open set is 1 a.e."
