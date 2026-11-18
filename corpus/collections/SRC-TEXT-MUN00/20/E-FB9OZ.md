@@ -38,13 +38,115 @@ Justify your answer.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.5, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the answer and both inclusions are theirs.
 
-**The closure of $\RR^{\infty}$ in the uniform topology is the set of all sequences that converge to $0$.**
+The answer and both inclusions are those of **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.5, PDF p. 19 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); its converse inclusion is written there with a radius $\varepsilon<1$, and the forward inclusion is reorganised below as a statement about a single ball missing $\RR^{\infty}$. The statement was checked against Munkres, *Topology* (2000), §20 Exercise 5, printed p. 127, with the uniform metric on printed p. 124, the basis of balls on printed p. 119, and Theorem 17.5(a) on printed p. 96.
 
-Let $\mathbf{x}\in\RR^{\omega}$ and recall $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i}\min\{\abs{x_{i}-y_{i}},1\}$.
+Throughout, $\RR^{\infty}$ is the set of sequences $\mathbf{y}\in\RR^{\omega}$ with $y_{i}=0$ for all but finitely many $i$,
+$$
+\bar\rho(\mathbf{x},\mathbf{y})\coloneqq\sup_{i}\min\theset{\abs{x_{i}-y_{i}},1}
+$$
+is the uniform metric, and $Z\coloneqq\theset{\mathbf{x}\in\RR^{\omega}\mid x_{i}\to0}$ is the set of sequences converging to $0$.
 
-*If $\mathbf{x}$ is a limit of eventually-zero sequences, then $x_{i}\to0$.* Suppose not: then there are $\delta>0$ and indices $i_{1}<i_{2}<\cdots$ with $\abs{x_{i_{n}}}>\delta$. Taking $\varepsilon=\min\{1,\delta\}/2$, no eventually-zero $\mathbf{y}$ can satisfy $\bar\rho(\mathbf{x},\mathbf{y})<\varepsilon$: at each of the infinitely many indices $i_{n}$ one has either $y_{i_{n}}=0$ and $\min\{\abs{x_{i_{n}}},1\}>\varepsilon$, or $y_{i_{n}}\ne0$ for infinitely many $n$, which contradicts $\mathbf{y}$ being eventually zero. So the ball of radius $\varepsilon$ around $\mathbf{x}$ misses $\RR^{\infty}$ and $\mathbf{x}$ is not in its closure.
+::: pf
 
-*If $x_{i}\to0$, then $\mathbf{x}$ is in the closure.* Let $0<\varepsilon<1$; choose $N$ with $\abs{x_{i}}<\varepsilon$ for $i\ge N$, and define $\mathbf{y}$ by $y_{i}=x_{i}$ for $i<N$ and $y_{i}=0$ for $i\ge N$. Then $\mathbf{y}\in\RR^{\infty}$ and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i\ge N}\abs{x_{i}}\le\varepsilon$. So every ball around $\mathbf{x}$ meets $\RR^{\infty}$, as required.
+::: {.pf-step #balls}
+For every $\mathbf{x}$ and $\varepsilon>0$ the ball $B_{\bar\rho}(\mathbf{x},\varepsilon)$ is open, and every open set containing $\mathbf{x}$ contains such a ball.
+
+::: pf-proof
+The collection of $\varepsilon$-balls of a metric is by definition a basis for the metric topology (§20, printed p. 119); a basis element is open, and every open set containing a point contains a basis element containing that point.
+:::
+
+:::
+
+::: {.pf-step #forward}
+If $\mathbf{x}\in\overline{\RR^{\infty}}$, then $x_{i}\to0$.
+
+:::: pf-proof
+
+::: {.pf-step #not-null}
+If $x_{i}$ does not converge to $0$, there are $\delta>0$ and infinitely many indices $i$ with $\abs{x_{i}}>\delta$.
+
+::: pf-proof
+Convergence to $0$ says that for every $\delta>0$ there is $N$ with $\abs{x_{i}}<\delta$ for all $i\geq N$. Its negation is that for some $\delta>0$ no such $N$ works, that is, for every $N$ there is $i\geq N$ with $\abs{x_{i}}\geq\delta$; choosing such an index for $N=1,2,\ldots$ successively and always larger than the previous one gives an infinite strictly increasing family.
+:::
+
+:::
+
+::: {.pf-step #empty-ball}
+There is $\varepsilon>0$ with $B_{\bar\rho}(\mathbf{x},\varepsilon)\cap\RR^{\infty}=\varnothing$.
+
+::: pf-proof
+Take $\delta$ as in step [](#not-null){.pf-ref} and put $\varepsilon\coloneqq\min\theset{\delta,1}/2$, which is positive. Let $\mathbf{y}\in\RR^{\infty}$ and choose $N$ with $y_{i}=0$ for all $i\geq N$; by step [](#not-null){.pf-ref} there is $i\geq N$ with $\abs{x_{i}}>\delta$, and for that $i$
+$$
+\min\theset{\abs{x_{i}-y_{i}},1}=\min\theset{\abs{x_{i}},1}\geq\min\theset{\delta,1}=2\varepsilon>\varepsilon,
+$$
+so $\bar\rho(\mathbf{x},\mathbf{y})>\varepsilon$ and $\mathbf{y}$ is not in the ball.
+:::
+
+:::
+
+::: {.pf-step}
+$\mathbf{x}\notin\overline{\RR^{\infty}}$.
+
+::: pf-proof
+The open set $B_{\bar\rho}(\mathbf{x},\varepsilon)$ of step [](#empty-ball){.pf-ref} contains $\mathbf{x}$ and meets $\RR^{\infty}$ in no point; by Theorem 17.5(a) (printed p. 96) a point of the closure has every open set about it meeting the set, so $\mathbf{x}$ is not in the closure.
+:::
+
+:::
+
+::::
+
+:::
+
+::: {.pf-step #backward}
+If $x_{i}\to0$, then $\mathbf{x}\in\overline{\RR^{\infty}}$.
+
+:::: pf-proof
+
+::: {.pf-step #truncation}
+For every $\varepsilon$ with $0<\varepsilon<1$ there is $\mathbf{y}\in\RR^{\infty}$ with $\bar\rho(\mathbf{x},\mathbf{y})<\varepsilon$.
+
+::: pf-proof
+Choose $N$ with $\abs{x_{i}}<\varepsilon/2$ for all $i\geq N$, possible because $x_{i}\to0$. Define $y_{i}\coloneqq x_{i}$ for $i<N$ and $y_{i}\coloneqq0$ for $i\geq N$; then $\mathbf{y}$ has only finitely many nonzero coordinates, so $\mathbf{y}\in\RR^{\infty}$, and $\min\theset{\abs{x_{i}-y_{i}},1}=0$ for $i<N$ while $\min\theset{\abs{x_{i}-y_{i}},1}=\min\theset{\abs{x_{i}},1}=\abs{x_{i}}<\varepsilon/2$ for $i\geq N$, the last equality because $\varepsilon<1$. Hence every term of the supremum is below $\varepsilon/2$, so $\bar\rho(\mathbf{x},\mathbf{y})\leq\varepsilon/2<\varepsilon$.
+:::
+
+:::
+
+::: {.pf-step}
+Every open set containing $\mathbf{x}$ meets $\RR^{\infty}$.
+
+::: pf-proof
+Let $U$ be open with $\mathbf{x}\in U$. By step [](#balls){.pf-ref} there is $\varepsilon>0$ with $B_{\bar\rho}(\mathbf{x},\varepsilon)\subset U$; shrinking $\varepsilon$ if necessary we may take $\varepsilon<1$, and then step [](#truncation){.pf-ref} gives a point of $\RR^{\infty}$ inside that ball, hence inside $U$.
+:::
+
+:::
+
+::: {.pf-step}
+$\mathbf{x}\in\overline{\RR^{\infty}}$.
+
+::: pf-proof
+Theorem 17.5(a) (printed p. 96) says that a point lies in the closure of a set exactly when every open set containing it meets that set, which is step [](#truncation){.pf-ref} together with the preceding step.
+:::
+
+:::
+
+::::
+
+:::
+
+::: pf-step
+Therefore the closure asks for exactly the sequences converging to $0$:
+$$
+\boxed{\overline{\RR^{\infty}}=\theset{\mathbf{x}\in\RR^{\omega}\mid x_{i}\to0}}
+$$
+in the uniform topology.
+
+::: pf-proof
+Step [](#forward){.pf-ref} gives $\overline{\RR^{\infty}}\subset Z$ and step [](#backward){.pf-ref} gives $Z\subset\overline{\RR^{\infty}}$, so the two sets are equal.
+:::
+
+:::
+
+:::
+
 :::
