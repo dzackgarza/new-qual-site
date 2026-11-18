@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-1448 of the 12429 problem cards that have a solution
+1440 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 1448
+- Problems: 1440
 - Problem cards with a solution: 12429
 
-## Problems (1448)
+## Problems (1440)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-1T44B — "Quasicomponents"
@@ -624,7 +624,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-PSR75 — "Fixed points of continuous self-maps of the interval"
 - [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
 - [ ] E-QNT4A — "Perfect maps and paracompactness"
-- [ ] E-QOXG5 — "Countable compactness equals limit point compactness for T1 spaces"
 - [ ] E-QR3SP — "The countable complement topology and an infinite complement collection"
 - [ ] E-QVJ8J — "Countability of the fundamental group under countable basis and regularity"
 - [ ] E-QWNYJ — "Countable products of separable spaces are separable"
@@ -775,7 +774,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-U8UBU — "Coset spaces of topological groups"
 - [ ] E-U9VN1 — "Every $m$-manifold imbeds as a closed subspace of $\RR^{2m+1}$"
-- [ ] E-UAMGV — "The coarsest topology making a family of maps continuous"
 - [ ] E-UB4PP — "Extending $\cos(1/x)$ by enlarging the compactification"
 - [ ] E-URH71 — "Countable unions of nowhere dense closed sets in compact Hausdorff spaces"
 - [ ] E-V7QV9 — "Comparing the nine topologies on a three-point set"
@@ -873,7 +871,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-APAS21J — "Cayley graph of $B(n)$ and spectrum of its adjacency operator"
 - [ ] P-APAS23B — "Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extrema"
 - [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
-- [ ] P-APAS23F — "Rank of the $D_4$-averaging operator on $\CC[X]$ for a $3\times 3$ board"
 - [ ] P-APAS23H — "Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$"
 - [ ] P-APAS24B — "Gershgorin disks contain every eigenvalue"
 - [ ] P-APAS24D — "Diagonal similarity making a matrix norm close to the spectral radius"
@@ -963,7 +960,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-BKS04-9B — "Every automorphism of $S_4$ is inner, so $\cardinality{\operatorname{Aut}(S_4)}=24$"
 - [ ] P-BW6LF — "A space with $H_*(X)\cong(\ZZ,0,0,0,0,\ZZ_4,0,\ldots)$"
 - [ ] P-C2GOF — "Continuity of a composition $g\circ f$ at a point"
-- [ ] P-C53SG — "Equality of the iterated integrals of $\frac{(x-y)\sin(xy)}{x^2+y^2}$ on $[0,1]^2$"
 - [ ] P-CAF05B — "Local representation of an analytic function near a zero"
 - [ ] P-CAF05C — "Minimum modulus principle for analytic functions on bounded domains"
 - [ ] P-CAF05F — "Statement and proof of Harnack's inequality for harmonic functions"
@@ -975,7 +971,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CAF09C — "The product $\prod_{n\geq 2}\qty{1-1/n^2}$ evaluated in two ways"
 - [ ] P-CAF10B — "Meromorphic functions asymptotic to tan z in the plane"
 - [ ] P-CAF11C — "Schwarz-Pick type inequality for analytic functions mapping into the left half-plane"
-- [ ] P-CAF13A — "Classical complex-analysis theorems: statements and proof sketches"
 - [ ] P-CAF13B — "$\int_{-\infty}^\infty \cos x/(1+x^2)\,dx$ by residues"
 - [ ] P-CAF13C — "A holomorphic $f$ with $\abs f\leq 1$ on $\partial\DD$ and no fixed point there has exactly one fixed point in $\DD$"
 - [ ] P-CAF13F — "A conformal map from the slit disk does not extend to a boundary homeomorphism"
@@ -1024,7 +1019,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP09C — "Partial fraction identity for four distinct complex numbers via residues"
 - [ ] P-CASP09F — "Statement and proof of the Weierstrass Product Theorem"
 - [ ] P-CASP11C — "Analytic continuation along different paths yielding different germs (Monodromy failure)"
-- [ ] P-CASP12A — "True or False: entire functions with prescribed derivatives, maximum modulus, Picard's theorem, fixed points, and complex structures"
 - [ ] P-CASP12B — "Normal families characterized by coefficient bounds"
 - [ ] P-CASP12D — "Real-valued analytic functions on radii and conditions for existence"
 - [ ] P-CASP13A — "Classical complex-analysis theorems: statements and proof sketches"
@@ -1044,7 +1038,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CASP19C — "A holomorphic function on $B(0,1+\varepsilon)$ with $\abs f<1$ on $\abs z=1$ has a unique fixed point in $\DD$"
 - [ ] P-CASP19D — "Growth bound for the derivative of a conformal map via distance to boundary"
 - [ ] P-CASP19F — "Analytic function on the punctured disk vanishing on a boundary arc is identically zero"
-- [ ] P-CASP20B — "A holomorphic function on $\abs z>3$ with a prescribed derivative"
 - [ ] P-CASP20D — "Fixed points of analytic self-maps and the role of the complement"
 - [ ] P-CASP20F — "An entire function with bounded derivative and zeros at $\sqrt n$ is identically zero"
 - [ ] P-CASP20G — "Positive harmonic functions with $h(0)=1$ form a normal family"
@@ -1240,7 +1233,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-HCAX17 — "Laurent coefficients and growth on a punctured disk"
 - [ ] P-HCAX19 — "Conformal equivalence of a half-disk and the disk"
 - [ ] P-HCAX20 — "Argument principle as a winding-number statement"
-- [ ] P-HCAX21 — "Uniqueness in the Riemann mapping theorem"
 - [ ] P-HCAX23 — "Conformal automorphisms of the upper half-plane"
 - [ ] P-HCAX25 — "A mild growth bound makes a puncture removable"
 - [ ] P-HCAX27 — "Riemann hypothesis"
