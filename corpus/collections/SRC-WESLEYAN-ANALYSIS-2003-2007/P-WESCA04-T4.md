@@ -5,7 +5,8 @@ kind: problem
 title: "State the Open Mapping Theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Open Mapping Theorem
 relations: []
 review: draft
 audit:

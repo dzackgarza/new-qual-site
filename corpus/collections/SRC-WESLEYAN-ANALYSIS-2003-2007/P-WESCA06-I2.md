@@ -5,7 +5,9 @@ kind: problem
 title: "Define the multiplicity of an analytic function at a point"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Multiplicity
+  - Zeros
 relations: []
 review: draft
 audit:

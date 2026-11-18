@@ -5,7 +5,8 @@ kind: problem
 title: "Laurent series of $e^{1/z^2}$ on the punctured plane"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Laurent Series
 relations: []
 review: draft
 audit:

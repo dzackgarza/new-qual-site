@@ -5,7 +5,8 @@ kind: problem
 title: "State the Residue Theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
 relations: []
 review: draft
 audit:

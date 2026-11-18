@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate a Cauchy-integral-formula contour integral"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

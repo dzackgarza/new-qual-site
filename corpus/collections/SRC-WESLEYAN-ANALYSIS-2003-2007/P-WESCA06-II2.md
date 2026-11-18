@@ -5,7 +5,8 @@ kind: problem
 title: "A differentiable but nowhere analytic function"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:

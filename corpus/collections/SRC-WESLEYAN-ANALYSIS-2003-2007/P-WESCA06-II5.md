@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate an integral involving $\\Log(z+e)$"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 audit:

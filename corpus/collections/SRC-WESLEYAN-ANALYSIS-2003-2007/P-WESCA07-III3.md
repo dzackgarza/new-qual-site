@@ -5,7 +5,9 @@ kind: problem
 title: "Does $v=u^2$ force an analytic function to be constant?"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

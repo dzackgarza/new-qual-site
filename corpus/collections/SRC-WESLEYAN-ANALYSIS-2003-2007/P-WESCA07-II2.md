@@ -5,7 +5,9 @@ kind: problem
 title: "Evaluate a twice-wound contour integral"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Residue Theorem
+  - Winding Number
 relations: []
 review: draft
 audit:

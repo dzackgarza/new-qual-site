@@ -5,7 +5,9 @@ kind: problem
 title: "Define a cycle in complex analysis"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Winding Number
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Classify isolated singularities of three functions"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
+  - Poles
 relations: []
 review: draft
 audit:

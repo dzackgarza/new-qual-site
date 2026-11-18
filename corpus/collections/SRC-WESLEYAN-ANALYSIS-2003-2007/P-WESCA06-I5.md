@@ -5,7 +5,8 @@ kind: problem
 title: "State Cauchy's Integral Formula"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Formula
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "Define a branch of an inverse function"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Complex Logarithm
+  - Inverse Functions
 relations: []
 review: draft
 audit:

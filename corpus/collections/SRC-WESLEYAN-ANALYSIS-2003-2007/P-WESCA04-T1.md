@@ -5,7 +5,8 @@ kind: problem
 title: "State the Casorati–Weierstrass theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Casorati-Weierstrass
 relations: []
 review: draft
 audit:

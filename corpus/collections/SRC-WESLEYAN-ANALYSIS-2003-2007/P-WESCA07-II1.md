@@ -5,7 +5,9 @@ kind: problem
 title: "An entire map with unit Jacobian is affine with unit-modulus slope"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Conformal Maps
 relations: []
 review: draft
 audit:

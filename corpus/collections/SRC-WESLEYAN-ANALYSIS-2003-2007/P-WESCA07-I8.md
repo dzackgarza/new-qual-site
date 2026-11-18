@@ -5,7 +5,8 @@ kind: problem
 title: "Define the arc length of a path"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Arc Length
 relations: []
 review: draft
 audit:

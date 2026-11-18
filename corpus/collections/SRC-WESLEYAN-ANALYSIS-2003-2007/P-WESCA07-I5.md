@@ -5,7 +5,9 @@ kind: problem
 title: "Bound a contour integral along $\\gamma(t)=te^{it}$"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 audit:

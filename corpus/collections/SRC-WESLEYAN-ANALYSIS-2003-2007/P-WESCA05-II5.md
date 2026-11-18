@@ -5,7 +5,8 @@ kind: problem
 title: "A Schwarz–Pick bound in terms of $f(0)$"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

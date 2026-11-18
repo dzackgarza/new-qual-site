@@ -5,7 +5,8 @@ kind: problem
 title: "State the local Cauchy Theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 audit:

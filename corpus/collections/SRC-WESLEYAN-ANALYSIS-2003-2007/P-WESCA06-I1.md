@@ -5,7 +5,8 @@ kind: problem
 title: "Define the winding number of a path about a point"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Winding Number
 relations: []
 review: draft
 audit:

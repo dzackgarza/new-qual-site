@@ -5,7 +5,9 @@ kind: problem
 title: "Unions and intersections of two simply connected planar domains"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Simply Connected Domains
+  - Connectedness
 relations: []
 review: draft
 audit:

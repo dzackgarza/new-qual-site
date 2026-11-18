@@ -5,7 +5,8 @@ kind: problem
 title: "Define analyticity on an open set"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

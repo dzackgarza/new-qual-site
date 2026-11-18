@@ -5,7 +5,8 @@ kind: problem
 title: "State the Maximum Principle"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

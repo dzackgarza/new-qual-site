@@ -5,7 +5,8 @@ kind: problem
 title: "Maximum modulus of $e^{z^2}$ on a square"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

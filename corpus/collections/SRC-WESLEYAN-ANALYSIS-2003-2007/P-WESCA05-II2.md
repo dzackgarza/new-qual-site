@@ -5,7 +5,9 @@ kind: problem
 title: "Prove the Fundamental Theorem of Algebra using Liouville"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Fundamental Theorem of Algebra
+  - 'Liouville''s Theorem'
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "A disk automorphism maps the disk onto itself"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Automorphisms of the Disc
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

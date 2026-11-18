@@ -5,7 +5,9 @@ kind: problem
 title: "An analytic function satisfying $v=u^2$ is constant"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

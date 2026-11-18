@@ -5,7 +5,8 @@ kind: problem
 title: "Cauchy–Riemann equations everywhere do not imply analyticity"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:

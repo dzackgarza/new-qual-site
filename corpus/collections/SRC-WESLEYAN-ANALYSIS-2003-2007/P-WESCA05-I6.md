@@ -5,7 +5,8 @@ kind: problem
 title: "Winding number of a circle about a distant point"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Winding Number
 relations: []
 review: draft
 audit:

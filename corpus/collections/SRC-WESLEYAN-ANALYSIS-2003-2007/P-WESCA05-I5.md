@@ -5,7 +5,9 @@ kind: problem
 title: "Differentiate a tenth power involving an exponential"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Differentiation
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,9 @@ kind: problem
 title: "An entire function with real part bounded above is constant"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Entire Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "Define uniform continuity on an open set"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 audit:

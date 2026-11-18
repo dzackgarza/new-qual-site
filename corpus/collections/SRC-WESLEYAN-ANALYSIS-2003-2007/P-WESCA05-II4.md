@@ -5,7 +5,9 @@ kind: problem
 title: "Polynomial growth forces an entire function to be a polynomial"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - 'Liouville''s Theorem'
+  - Entire Functions
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "A quadratic Schwarz-type estimate from a derivative bound"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

@@ -5,7 +5,8 @@ kind: problem
 title: "State the most general version of Cauchy's Theorem"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 audit:

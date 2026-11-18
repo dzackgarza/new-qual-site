@@ -5,7 +5,9 @@ kind: problem
 title: "Order of the singularity of a sum of two functions with poles"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Poles
+  - Singularities
 relations: []
 review: draft
 audit:

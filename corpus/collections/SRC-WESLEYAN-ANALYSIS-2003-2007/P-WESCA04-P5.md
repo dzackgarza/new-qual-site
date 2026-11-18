@@ -5,7 +5,9 @@ kind: problem
 title: "Uniform convergence on the boundary controls a holomorphic sequence inside"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Uniform Convergence
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

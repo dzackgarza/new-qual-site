@@ -5,7 +5,8 @@ kind: problem
 title: "The maximum of $\\abs{f}+\\abs{g}$ occurs on the boundary"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

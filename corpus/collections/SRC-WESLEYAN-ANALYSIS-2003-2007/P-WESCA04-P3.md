@@ -5,7 +5,8 @@ kind: problem
 title: "Evaluate a contour integral around a spiral closed by a segment"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Contour Integration
 relations: []
 review: draft
 audit:

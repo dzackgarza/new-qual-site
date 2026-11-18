@@ -5,7 +5,9 @@ kind: problem
 title: "Examples of removable, pole, and essential singularities at the origin"
 classification:
   areas: [complex-analysis]
-  topics: []
+  topics:
+  - Singularities
+  - Poles
 relations: []
 review: draft
 audit:
