@@ -11,6 +11,14 @@ audit:
     by: gpt-5.6-sol
     date: 2026-09-14
     note: Checked against Problem 1.1 in the deterministic MinerU Flash extraction; the standard-basis dimension is corrected to match the displayed (n+1)-by-(n+1) matrix.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained sheet `assets/attachments/ist_ca_2015.pdf`: the statement is Problem 1.1,
+      whose printed words are the card's. The problem number and the file are now named in the
+      solution's opening sentence; the earlier event recorded the check without saying what was
+      read. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -48,6 +56,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1.1 of the retained sheet `assets/attachments/ist_ca_2015.pdf` (the maximum-modulus problem with the unitary dilation), and the statement below is its wording.
 
 For $\abs{z}\le1$, write $s=\sqrt{1-\abs{z}^2}$ and denote the matrix in part (a) by $U_z$.
 Let $\norm{\cdot}$ denote the operator norm induced by the Euclidean norm on $\CC^{n+1}$.
