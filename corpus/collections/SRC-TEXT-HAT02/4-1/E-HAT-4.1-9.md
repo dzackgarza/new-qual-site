@@ -13,6 +13,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The card now checks its two parts against each other in the one case where they overlap.
+    With $B=\{x_0\}$ and $D=\{y_0\}$ the triple sequence is the pair sequence of $(X,A)$ and
+    $\pi_0(A,B,x_0)=\pi_0(A,x_0)$, so part (b) is part (a) there; its four set-valued windows are the
+    windows of part (a) centred at $\pi_2(X,x_0)$, $\pi_2(X,A,x_0)$, $\pi_1(A,x_0)$ and
+    $\pi_1(X,x_0)$, and the two hypotheses agree, "bijective at every basepoint of $B$" becoming
+    "bijective at $x_0$". The windows part (a) has beyond those exist only in that degenerate case,
+    where the sequence continues by the two steps to $\pi_0(X,x_0)$ that Hatcher notes after the
+    triple display and then by the terminal term of part (a); the general triple has no such
+    continuation, which is the card's example. The four-window inventory of part (b), repaired in the
+    earlier passes of this date, is unchanged and is consistent with this. Checked against Hatcher's
+    display and the sentence after it on printed p. 344 and the exercise on printed p. 358. Not
+    checked: no new source, and the Lean declarations were not re-elaborated.
 - event: source-checked
   by: claude
   date: 2026-11-19
