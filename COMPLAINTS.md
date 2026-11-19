@@ -7240,3 +7240,40 @@ says so — covering Chapter 0 (§0.1–§0.3), §1.1 and §1.2, and ending afte
 contains nothing from §2.B or §4.A, so it does not serve either obligation. It is recorded here so that the next
 attempt does not fetch it again; the copy is not retained in the checkout, and the citation above is by repository
 path rather than by printed page because the set carries no printed page numbering of its own.
+
+## 2026-11-19: Dolgachev's fourth general-position condition bites only at eight points — the r <= 7 step of V.4.15(c) reads it that way, and why r = 8 does not follow from it
+
+**Object and need.** The step `properness-r-at-most-seven` added to `P-AGH5415GENPOSITION` earlier
+this date, which cited Dolgachev's four general-position conditions on printed p. 251 for every
+$N\le8$, and the state of part (c) at $r=8$.
+
+**The reading.** Dolgachev's definition lists (i) proper points, (ii) no three on a line, (iii) no six
+on a conic, (iv) no cubic through the points singular at one of them, and Proposition 8.1.9 says the
+blowup of $N\le8$ points is a Del Pezzo surface exactly in that position. Read literally at $N\le7$,
+(iv) always fails: a cubic singular at one of the points and through the other $N-1$ imposes
+$3+(N-1)\le9$ conditions on the ten coefficients of a cubic, so such a cubic exists for every position
+of the points, while the blowup at $N\le7$ general points is a Del Pezzo surface of degree $9-N$. A
+condition that always holds cannot be part of a criterion that can fail, so at $N\le7$ the criterion is
+(ii) and (iii) and the printed (iv) bites only at $N=8$, where the count is square, $8+2=10$: the eight
+points through the cubic and the node at one of them. That is also how his own sufficiency argument
+uses it, removing the last point and checking that it lies on no $(-2)$-curve, the lines through three
+and the conics through five of the remaining points being what (ii) and (iii) exclude. The step now
+says this, and the closed condition excluded at $r=7$ is the nodal cubic through the eight.
+
+**Why $r=8$ does not follow.** At nine points $(-K)^2=0$, so $-K$ is at best nef and the argument
+above has nothing to kill: an effective class of square $-2$ and $K$-degree $0$ is not excluded by
+positivity, and on a rational elliptic surface such classes are exactly the $(-2)$-curves carried by
+the reducible fibres. Whether every word's class is ineffective at a fixed general nine-point
+configuration is the superabundance question the swarm's reports located, and no source read here
+settles it. So $r\ge8$ stays open, and it is not an oversight of the $\mathrm{Del}$ Pezzo step: the
+step is sharp at $r=7$ and cannot be pushed one further.
+
+**Repair.** `P-AGH5415GENPOSITION` in `0a4313a210` for the step's sentence and `92eb27fdfc` for the
+audit event; this record in the COMPLAINTS commit that carries it. No other step, and no part-(c)
+claim beyond $r\le7$, changes.
+
+**Uncertainty.** Read for this record: Dolgachev's definition and Proposition 8.1.9 with its proof,
+printed p. 251 (PDF p. 261). Not checked: any printed statement of the $N\le7$ reading in so many
+words; the classification of reducible fibres of rational elliptic surfaces, which is where the $r=8$
+obstruction lives, beyond the general statement that reducible fibres carry $(-2)$-curves; and no
+search of the literature for the superabundance question.
