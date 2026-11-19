@@ -5406,3 +5406,27 @@ So 4.5% of structured cards carry at least one step that states a claim and just
 **Repair, 2026-11-19:** `P-AGH547GENUSBOUND` in `aadc2c2d34`, one `source-corrected` event, the statements of steps `nonsingular-members` and `conclusion`, and the degree-4 paragraph of the former's proof; the exercise's own statement is untouched. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH547GENUSBOUND`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 9 with QED labels present and no unknown step label; `tools/check_macros.py`, OK; the recomputation of $a$, $\sum_ib_i$, $d$, $D^2$, $p_a$ and the three intersection numbers above; and the hypotheses of condition (c) as `P-AGH548IRREDCLASSES` states them.
 
 **Uncertainty.** Not checked in this pass: Dolgachev's Theorem 8.2.19 and Harbourne's Lemma II.6 beyond the statements and pages the V.4.8 card records, and no source outside those named on the two cards. The dependence is one-way — this card's degree-4 case is only as good as that card's characteristic-free proof, which is why the two were repaired in that order.
+
+## 2026-11-19: the corpus audit's four violation classes, and residue 5's share of them
+
+**Object and need.** `./.venv/bin/python -m qualc.audit` is the invariant check `qualc check` does not own: duplicate bodies, empty areas, collections claiming one exam twice, collections listing no problems, dangling collection references, and cards reachable from no page or manifest. It had not been run in this session; it was run here, and this records what it reports and what of it belongs to residue 5 of queue D.
+
+**Observed evidence**, one run at `QUALC_PARALLEL_WORKERS=1`, exit status 1:
+
+| check | result |
+| --- | --- |
+| `duplicate-bodies` | 1 violation: `P-MAXAT-3-05` and `P-MAXAT-4-01` share a body |
+| `empty-areas` | ok |
+| `duplicate-exams` | 4 violations: Harvard Math 21b Spring 2018 (8 collections), UGA complex-analysis Spring 2020 (3), UNL topology Spring 2006 (3), UNL topology Spring 2008 (2) |
+| `collection-lists-problems` | 1 violation: `SRC-UNSORTED-PRELIM` lists no problems |
+| `collection-problem-references` | ok |
+| `orphans` | 1 violation: 25 cards reachable from no page or manifest |
+
+**Residue 5's share, and what was done.**
+
+- **`P-MAXAT-3-05` — repaired.** The shared body is the *source's own duplication*, not a transcription error: `assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf` is three pages, and it prints "Find the ring structure on $H^*(SU(n))$, $H^*(U(n))$, $H^*(V_k(\CC^n))$" twice on printed p. 2 — as §3 item (5) under "Cohomology ring" and verbatim as §4 item (1) under "Spectral Sequences and Applications". The card now says so, names its sibling `P-MAXAT-4-01`, and carries a `source-checked` event with the page and the quotations, so the audit's report of the pair is answered with evidence rather than by deleting a card. The sibling is residue 1 and was not touched.
+- **`D-DEFFLAT` and `D-DEFNOETH` — reported, not repaired.** Both are `corpus/theory/Algebraic_Geometry` definition cards and both are among the 25 orphans. The repair is not a card edit: an orphan is a card no page or manifest embeds, so the fix is to add `[[D-DEFFLAT]]` and `[[D-DEFNOETH]]` to pages that discuss flatness and Noetherian rings, in the form the neighbouring definitions take (for example the `[[D-DEFINJOB]]` / `[[D-DEFPROJO]]` lines of `wiki/algebraic-geometry/cohomology/homological-algebra.md`). That is a wiki edit, and the other 22 orphans belong to residues 7, 9, 10, 11, 13 and 15, so the fix is a corpus-wide pass over pages rather than a residue's work; it is recorded here instead of being done piecemeal on shared pages.
+
+**What this entry does not claim.** The other four violation classes are outside residue 5 entirely — the duplicate exam terms are collection-level metadata, `SRC-UNSORTED-PRELIM` is a collection record, and the remaining orphans are other residues' cards. Nothing here asserts that any card's mathematics is wrong; a duplicate body and an unlinked card are both structural.
+
+**Uncertainty.** The classes above are one full run's output, read from its text report; the audit's `--only orphans` rerun was killed (exit 137) before printing, so the other 22 orphan ids were not itemised here, only counted. No collection metadata was edited and no page was edited.
