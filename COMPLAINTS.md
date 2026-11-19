@@ -6656,3 +6656,38 @@ search of the literature beyond these files.
 **The pattern, third instance.** `E-HAT-3.B-5` closed its proof with a `pf-qed` reading "Steps s2 and s4", and carried two ordinary steps whose entire proof was "Step s2-1" and "Step s4-1". `STYLE-08` forbids the first outright and requires the second to be written in complete sentences. Both are removed and their content folded into the steps that do the work, so the proof now has four substantive steps and no step that only points at another. The earlier instances were `E-HAT-3.3-11` (where the removed step also widened a printed "if" to "iff") and `E-HAT-3.3-2`; `3.F-3`, `4.H-2` and `4.I-2` still end with `Q.E.D.` steps and were not touched.
 
 **Not done.** The rest of the sections outside the reads — Chapter 1 throughout, §2.1 (29 cards), §2.2 (32), §2.3 (3), §3.1 (13), §3.C (9), §3.E (1), §4.2 (11), §4.A (2) and the smaller appendices — remain. The #170 source obligations are unchanged.
+
+## 2026-11-19: the card-completeness sweep obtained corpus-wide, and Katz--Mazur's pages read off the scan
+
+**The sweep that the report check keeps losing.** `tools/backlog.py --with-queues` cannot finish on
+this machine: run again today at two Pandoc workers it was killed at 4 min 55 s with exit status 137
+and a zero-length log. The section of its report that is per-card is separately obtainable, and was
+obtained: `qualc.card_completeness.check_card` over every `corpus/**/*.md`, in one process, no pandoc,
+in 15 seconds. Result on 2026-11-19: **14,412 files scanned, 0 with a completeness issue, 0
+unparseable**, none vanished between listing and reading. Two earlier attempts in the same minute
+failed, and neither was a corpus defect: one file was missing between `glob` and `read_text`, and one
+had front matter broken at column 0 for the duration of a sibling session's write. So the corpus is
+green on this measure and the failure of the report check is the report check's, not the corpus's.
+What is still not obtained is everything else the report computes — the prose-only measure, the
+provenance href scan and the two generated queues — and no claim is made about those.
+
+**Katz--Mazur, Theorem 2.1.2, at its printed pages.** The register's record of 2026-11-16 said of
+`P-AGH4422FAMILYOVERAFFINELINE` that "neither book is on this machine, so no page was read for this
+pass and neither is cited on the card", and the card's older event still says the book is "not
+available in full on this machine". The book is now held,
+`tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.pdf` with its text version beside it, and
+the pages were read off the scan by folio, as the corpus settles page identity. The scan is a
+libtiff conversion with no text layer, so `pdftotext` returns nothing on any page and the folios were
+read on the rendered images: PDF p. 75 is the Chapter 2 divider, printed p. 63, carrying (2.1.1) and
+Theorem 2.1.2; PDF p. 76 is printed p. 64, where the statement continues and the proof reduces the
+theorem to the bijection $E(T)\to\Pic^{(1)}(E_T/T)$; PDF p. 77 is printed p. 65, which opens
+"Abel's theorem. It remains to verify that the map ... is bijective"; PDF p. 79 is printed p. 67,
+where the proof concludes with $P\mapsto I^{-1}(P)$. Printed page = PDF page $-12$ in this range,
+which is the offset the card already records. The card's citation, "Theorem 2.1.2 (Abel), printed
+p. 63, proved on printed pp. 64--67", is therefore right as printed and needs no repair; what needs
+correcting is the register's statement that the book is unavailable, which is what this record does.
+
+**Repair.** This record only. **Uncertainty.** Not read: Katz--Mazur's Chapter 1 and Chapter 3 and
+everything outside printed pp. 63--67, the pages of Chapter 2 before and after the theorem, and no
+printing other than the held scan. The prose-only measure, the provenance scan and the two generated
+queues were not obtained, as above.
