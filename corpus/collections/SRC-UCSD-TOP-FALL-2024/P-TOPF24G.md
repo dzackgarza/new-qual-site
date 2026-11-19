@@ -16,6 +16,20 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three answers are correct. Removing an open ball from a 3-manifold leaves
+    the fundamental group unchanged, the gluing surface is simply connected, and
+    van Kampen gives the free product of the two copies of Z/2, the infinite
+    dihedral group. The universal cover of a punctured projective space is the
+    3-sphere with two antipodal balls removed, a cylinder on the 2-sphere, and the
+    Cayley graph of the free product of two cyclic groups of order two is a line,
+    so the cover is the bi-infinite chain of such cylinders glued along boundary
+    spheres, which is S^2 x R. Covering maps are isomorphisms on homotopy above
+    degree one, so pi_2 of the sum is pi_2 of S^2, namely Z. Nothing was changed.
+    The statement was not re-read against a scan in this pass.
 ---
 
 ::: {.problem}
