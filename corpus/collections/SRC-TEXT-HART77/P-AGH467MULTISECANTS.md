@@ -152,6 +152,90 @@ audit:
     zbMATH withholds the review text under licence, the 2014 sequel is behind institutional login, and
     no arXiv copy exists). The earlier misattribution of the 2014 sequel's abstract to the 1986 paper
     stands corrected as recorded. Not checked: the body of Kaji 1986, and steps s1--s13 of this card.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The printed definition of multisecant, Hartshorne IV.3 printed p. 310, is a line meeting X in
+    three or more distinct points, and it does not exclude the line X itself when X is a line. A
+    line meets itself in every one of its points, so under the letter of that definition the printed
+    first sentence of IV.6.7, that the line has no multisecants, is false with X itself as the
+    counterexample, and holds only for secant lines proper. The card's statement now defines a
+    multisecant as a line not contained in X meeting X in at least three distinct points, and its
+    remark records the discrepancy. The clause changes nothing else: no line is contained in a
+    planar curve of degree at least 2 or in a nonplanar curve, and the printed second sentence is
+    unaffected. The same remark now records that smoothness and integrality are not hypotheses this
+    card adds, since the Terminology of the book reserves the word curve, in Chapter IV, for a
+    nonsingular projective curve; the one hypothesis added to the printed second sentence is
+    characteristic zero, whose necessity is the Frobenius-graph counterexample recorded in the
+    event of 2026-10-31.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    SUPERSEDES, as the current state of this card, the clauses "Not checked ... steps s1--s13" in
+    the events of 2026-11-01 and 2026-11-02 above; those notes are records of their own passes and
+    are left as written (QUAL-11). Every step s1--s13 was read in this pass against the printed book
+    and is correct as the card now states it; where the prose did not support its claim, the step is
+    repaired, and the repairs are listed below.
+
+    Read for this pass in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, where printed page N
+    is PDF page N+15 and the page starts are marked in the file: IV.6.7 printed p. 355 with its
+    printed hint; the definition of multisecant and Proposition 3.7, printed pp. 310--311; IV.3.1
+    printed pp. 307--308; IV.3.4(a) and (b) printed p. 315; IV.3.6(b) printed pp. 316--317; IV.6.4
+    printed p. 351; II.7.3, the closed-immersion criterion, printed pp. 165--166; and II.8.20.3 for
+    the genus of a nonsingular plane curve. The two printed exercises the solution cites were also
+    checked against a published solution set: Egbert's solutions of IV.3.4 and IV.3.6, retained at
+    `tmp/sources/hartshorne-solutions-egbert.md`, which prove the quadratic generation of the
+    rational normal curve's homogeneous ideal and the complete-intersection statement for the
+    elliptic quartic. No retained solution set contains a solution of IV.6.7 itself: a search of the
+    retained Hartshorne sets for the word multisecant returns only Borcherds's solution of IV.3.9,
+    and Lomont's Chapter IV stops at 6.4. The thirteen steps are therefore checked against the book
+    and the results it proves, and not transcribed from a published solution of this exercise.
+
+    Per step. s1 correct as now written; the line half needed the convention of the source-corrected
+    event above. s2 correct: a section of O_l(2) whose zero scheme on the line has length at least 3
+    is zero, so every quadric through the twisted cubic contains the line, and quadratic generation
+    of the ideal makes their scheme-theoretic intersection the curve. s3 correct, cited as
+    IV.3.6(b) with the printed word irreducible restored: the two quadrics restricted to the line
+    vanish on a subscheme of length at least 3, hence on the line. s4 correct, with the added
+    justification that the lines meeting a smooth plane curve non-transversely are exactly its
+    tangents and form the dual curve, a proper closed subset of the dual plane, so the transverse
+    lines are dense and infinite. s5 repaired: the statement now names the three properties of P
+    that s7 and s8 use -- P on no multisecant, P on no tangent line T_Q X with Q different from P,
+    and T_P X meeting X only at P and there with length exactly 2 -- and the proof derives each of
+    them from the choice of P outside the finitely many intersections with X of the lines of the two
+    finite families. Previously only the first was stated, and the other two were used silently.
+    s6 repaired: the restriction of the plane sections through P is injective because X is not
+    contained in a plane, and the subsystem is now said to lie in H^0(X, H-P) instead of being
+    "divided" by the fixed zero. s7 correct, with the justification added that pi_P(P) is the
+    tangent direction because all sections of the system vanish at P, so their value there is their
+    derivative; the second case now cites property (iii). s8 correct: the first case cites (ii) and
+    the local computation at P cites (iii), and the computation itself checks out -- with
+    x = t + O(t^2), y = a_2 t^2 + O(t^3), z = b_2 t^2 + O(t^3), the differential at P vanishes
+    exactly when a_2 = b_2 = 0, which is contact order at least 3. s9 repaired: the step now
+    identifies the two conditions of the closed-immersion criterion with the injectivity of pi_P on
+    closed points and of its differential at closed points, which is the form s7 and s8 establish
+    them in; the degree computation pi_P^* O(1) = H-P of degree d-1 is correct. s10 correct, with
+    the plane-curve genus formula cited as II.8.20.3. s11 correct: Castelnuovo's printed hypotheses
+    are degree d, genus g and not contained in a plane, and the two comparisons multiply out to
+    (d-2)(d-4) <= 0 and (d-3)^2 <= 0, which with d >= 3 give d = 4 in the even case and d = 3 in
+    the odd one; cited as IV.6.4. s12 correct, on IV.3.4(b) for degree 3 and IV.3.6(b) for degree 4.
+    s13 correct: it assembles s4, s12 and the tangent finiteness supplied by tangent-char-zero.
+
+    The step tangent-char-zero was also read: its hypotheses are the ones the cited sentences
+    require (N = 3, algebraically closed of characteristic 0, X nonplanar, X smooth so that its
+    normalization is an isomorphism and hence unramified), and the passage from "general point" to
+    "all but finitely many" is sound, since Z* is locally closed, its image under the first
+    projection is constructible by Chevalley, and a constructible subset of a curve that omits the
+    generic point is finite.
+
+    Not checked in this pass: the body of Kaji, J. London Math. Soc. (2) 33 (1986) 430--440, which
+    remains a citation of the restatement in Fukasawa, arXiv:2108.00650v3, section 1, as recorded in
+    the event of 2026-11-02; and the positive-characteristic counterexample of the last step, which
+    was read but not re-derived. Its two points that would need a check of their own are the closed
+    immersion (separation of points and of tangent vectors on both charts of P^1) and the
+    injectivity of [s:t] to [s^p:t^p].
 
 ---
 
@@ -161,6 +245,9 @@ conic, the twisted cubic and the elliptic quartic in $\PP^3$ have no
 multisecants. Every other smooth integral curve in $\PP^3$ has infinitely
 many multisecants.
 
+A multisecant of $X$ is a line $\ell\not\subseteq X$ meeting $X$ in at least
+three distinct points.
+
 Hint: Consider a projection from a point of the curve to $\PP^2$.
 :::
 
@@ -168,9 +255,20 @@ Hint: Consider a projection from a point of the curve to $\PP^2$.
 Hartshorne IV.6.7 states the converse without a characteristic restriction.
 It fails in characteristic $p\ge3$, as the final step shows.
 
-As in Hartshorne IV.3, a multisecant is a line meeting $X$ in at least
-three distinct points. A tangent with intersection length $3$ at one point
-is not a multisecant under this definition.
+As in Hartshorne IV.3, printed p. 310, a multisecant is a line meeting $X$ in
+at least three distinct points, and a tangent with intersection length $3$ at
+one point is not a multisecant under that definition. The printed definition
+does not exclude the line $X$ itself when $X$ is a line, and a line meets
+itself in every one of its points, so under the letter of the definition the
+first sentence of the exercise fails for the line alone. The statement above
+therefore requires $\ell\not\subseteq X$, the only reading under which the
+printed first sentence holds in all four cases; the clause changes nothing for
+a planar curve of degree at least $2$ or for a nonplanar curve, since no line
+is contained in one of those. Smoothness and integrality are not extra
+hypotheses: the Terminology of the book reserves the word curve, in Chapter IV,
+for a nonsingular projective curve. The only hypothesis this card adds to the
+printed second sentence is characteristic zero, and the final step shows that
+it is needed.
 :::
 
 ::: {.solution}
@@ -183,11 +281,16 @@ A line and a nonsingular plane conic have no multisecants.
 
 ::: pf-proof
 
-For a line $X$, every other line meets $X$ in length at most $1$.
+Let $X$ be a line. Under the convention of the remark above a multisecant of
+$X$ is a line $\ell\not\subseteq X$, and such a line meets $X$ in at most one
+point, since two distinct points of $X$ determine the line $X$. Under the
+printed definition, which does not exclude $\ell=X$, the only line meeting
+$X$ in three distinct points is $X$ itself.
 
-Let $X$ be a nonsingular plane conic.  Any line not contained in $X$ meets
+Let $X$ be a nonsingular plane conic.  No line is contained in $X$, and any
+line meets
 the degree-$2$ plane curve $X$ in scheme-theoretic length at most $2$ by
-Bezout.  Hence no such line is a multisecant.
+Bezout.  Hence no line is a multisecant.
 
 :::
 
@@ -199,7 +302,7 @@ The twisted cubic has no multisecants.
 
 ::: pf-proof
 
-By [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4]], the homogeneous ideal of
+By [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(a)]], the homogeneous ideal of
 the twisted cubic is generated by quadrics.  Suppose a line
 $$
 \ell\subseteq\PP^3
@@ -225,15 +328,15 @@ The elliptic quartic has no multisecants.
 
 ::: pf-proof
 
-By [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6]], an elliptic quartic is a
+By [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6(b)]], an elliptic quartic is a
 complete intersection
 $$
 X=Q_1\cap Q_2
 $$
-of two quadrics in $\PP^3$.
+of two irreducible quadric surfaces in $\PP^3$.
 
 If a line $\ell$ met $X$ in length at least $3$, then each quadratic
-equation $Q_i\restrict_\ell$ would be a section of $\OO_\ell(2)$ vanishing on a
+equation $\restrictionof{Q_i}{\ell}$ would be a section of $\OO_\ell(2)$ vanishing on a
 subscheme of length at least $3$.  Hence both restrictions would vanish
 identically.  Thus
 $$
@@ -254,8 +357,10 @@ multisecants.  If $X$ is planar, then $X$ is a line or a conic.
 ::: pf-proof
 
 Let $X$ lie in a plane and have degree $d$.  If $d\ge3$, then a general line
-in that plane meets the smooth curve $X$ transversely in $d$ distinct points.
-The set of transverse lines is a nonempty open subset of the dual plane, so
+in that plane meets the smooth curve $X$ transversely in $d$ distinct points:
+the lines meeting $X$ non-transversely are exactly the tangent lines, and these
+form the dual curve, a proper closed subset of the dual plane.  Hence the set of
+transverse lines is a nonempty open subset of the dual plane, so
 there are infinitely many such lines.  Each is a multisecant, contrary to
 the finiteness hypothesis.
 
@@ -275,15 +380,39 @@ There is a point
 $$
 P\in X
 $$
-through which no multisecant passes and for which projection from $P$ is
-a closed immersion.
+with the three properties
+
+(i) $P$ lies on no multisecant of $X$;
+
+(ii) $P$ lies on no tangent line $T_QX$ with $Q\ne P$;
+
+(iii) the tangent line $T_PX$ meets $X$ only at $P$, and there with length
+exactly $2$,
+
+and for this $P$ the projection is a closed immersion.
 
 ::: pf-proof
 
-Each line in the two finite families has finite intersection with the
-integral curve $X$. Choose $P$ outside the union of these finite
-intersections. Steps [](#s6){.pf-ref}--[](#s9){.pf-ref} prove that projection
-from this point is a closed immersion.
+Each line of the two finite families meets the integral curve $X$ in a finite
+set of points, and the union of these finitely many finite sets is finite.
+Choose
+$$
+P\in X
+$$
+outside it, which is possible because a curve over an algebraically closed
+field has infinitely many points.
+
+Then (i) holds, because a multisecant through $P$ is one of the finitely many
+multisecants, and $P$ lies on none of them. (ii) holds, because if
+$P\in T_QX$ with $Q\ne P$, then $T_QX$ is a tangent line meeting $X$ again and
+so belongs to the second family, and then $P\in T_QX\cap X$ would have been
+excluded. (iii) holds, because if $T_PX$ met $X$ at a further point, or if its
+contact order at $P$ were at least $3$, then $T_PX$ would belong to the second
+family and $P\in T_PX\cap X$ would again have been excluded; the contact order
+of a tangent line is at least $2$, so it is exactly $2$.
+
+Steps [](#s6){.pf-ref}--[](#s9){.pf-ref} prove that projection from this point
+is a closed immersion, using (i)--(iii).
 
 :::
 
@@ -354,9 +483,16 @@ $$
 
 ::: pf-proof
 
-Planes through $P$ cut out a three-dimensional space of sections of $H$,
-all vanishing at $P$.  Dividing by the fixed zero at $P$ gives sections of
-$H-P$.
+The planes through $P$ form a three-dimensional linear system, and
+restriction to $X$ is injective on it because $X$ is not contained in a
+plane; so it cuts out a three-dimensional space of sections of $H$.  Every
+plane through $P$ contains $P$, so every one of these sections vanishes at
+$P$, and the space lies in
+$$
+H^0(X,H\otimes\OO_X(-P))=H^0(X,H-P):
+$$
+after the common zero at $P$ is removed it is a three-dimensional linear
+system on $H-P$.
 
 At a point $Q\ne P$, some plane through $P$ avoids $Q$, so these sections
 have no base point there.  At $P$, choose a plane through $P$ not containing
@@ -380,17 +516,20 @@ $$
 $$
 means that $P,Q,R$ are collinear.  Their common line would meet $X$ in at
 least three distinct points and hence be a multisecant through $P$, contrary
-to step [](#s5){.pf-ref}.
+to property (i) of $P$ in step [](#s5){.pf-ref}.
 
-The image of $P$ under the extended projection is the tangent direction
-$T_PX$.  If some $Q\ne P$ had
+The image of $P$ itself under the extended projection is the tangent direction
+$T_PX$: all sections of the system vanish at $P$, so their value there is
+their derivative, and the point they define is the image of the line $T_PX$.
+If some $Q\ne P$ had
 $$
 \pi_P(Q)=\pi_P(P),
 $$
-then the line $PQ$ would equal $T_PX$.  Its intersection with $X$ would
-have length at least $2$ at $P$ and would also contain $Q$. The choice
-of $P$ in step [](#s5){.pf-ref} excludes this tangent
-contact. Thus $\pi_P$ separates all points.
+then the line $PQ$ would be that same line through $P$, so $PQ=T_PX$.  Its
+intersection with $X$ would
+have length at least $2$ at $P$ and would also contain $Q$, which property
+(iii) of $P$ in step [](#s5){.pf-ref} forbids. Thus $\pi_P$ separates all
+points.
 
 :::
 
@@ -404,9 +543,8 @@ The morphism $\pi_P$ separates tangent vectors of $X$.
 
 Let $Q\ne P$.  The differential of projection at $Q$ fails to be injective
 exactly when the center $P$ lies on the embedded tangent line $T_QX$.  In
-that case the line $PQ=T_QX$ meets $X$ with length at least $2$ at $Q$ and
-also contains $P$. The choice of $P$ in step [](#s5){.pf-ref}
-excludes this tangent contact.
+that case $P$ lies on $T_QX$ with $Q\ne P$, which property (ii) of $P$ in step
+[](#s5){.pf-ref} forbids.
 
 At $P$, choose affine coordinates centered at $P$ in which the tangent line
 is the $x$-axis and a local parameter $t$ on $X$ has expansions
@@ -427,9 +565,9 @@ $$
 a_2=b_2=0.
 $$
 That condition says that both transverse coordinates vanish to order at
-least $3$, so the tangent line meets $X$ at $P$ with length at least $3$.
-The choice of $P$ in step [](#s5){.pf-ref} excludes this
-contact as well. Hence $\pi_P$ separates tangent vectors everywhere.
+least $3$, so the tangent line meets $X$ at $P$ with length at least $3$,
+which property (iii) of $P$ in step [](#s5){.pf-ref} forbids. Hence $\pi_P$
+separates tangent vectors everywhere.
 
 :::
 
@@ -443,7 +581,10 @@ nonsingular plane curve of degree $d-1$, where $d=\deg X$.
 ::: pf-proof
 
 Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} show that the base-point-free linear system in step [](#s6){.pf-ref}
-separates points and tangent vectors.  By the
+separates points and tangent vectors: the two conditions of the closed-immersion
+criterion are the injectivity of $\pi_P$ on closed points and the injectivity of
+its differential at each closed point, which is the form in which steps
+[](#s7){.pf-ref} and [](#s8){.pf-ref} establish them.  By the
 [[T-DIVMAPPN|closed-immersion criterion for a linear system]], $\pi_P$ is a
 closed immersion.
 
@@ -472,7 +613,7 @@ $$
 ::: pf-proof
 
 By step [](#s9){.pf-ref}, $X$ is isomorphic to a nonsingular plane curve of degree
-$d-1$.  The plane-curve genus formula gives
+$d-1$.  The plane-curve genus formula, II.8.20.3, gives
 $$
 g(X)
 =
@@ -494,7 +635,7 @@ $$
 
 ::: pf-proof
 
-The curve is nonplanar, so [[T-CRVCAST|Castelnuovo's bound]] applies.
+The curve is nonplanar, so [[T-CRVCAST|Castelnuovo's bound]], IV.6.4, applies.
 
 If $d$ is even, steps [](#s10){.pf-ref} and Castelnuovo give
 $$
@@ -544,9 +685,9 @@ If $d=4$, step [](#s10){.pf-ref} gives
 $$
 g(X)=1.
 $$
-By [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6]], a nonplanar degree-$4$
+By [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6(b)]], a nonplanar degree-$4$
 curve of genus $1$ is the elliptic quartic, equivalently a complete
-intersection of two quadrics.
+intersection of two irreducible quadric surfaces.
 
 :::
 
