@@ -12,7 +12,7 @@ topics:
 
 In this chapter, $G$ is a finite group and representations are finite-dimensional.
 
-By Maschke's theorem, if $\operatorname{char}k$ does not divide $\size G$, then every finite-dimensional $k[G]$-module is [[D-CYAJI|semisimple]]; the two chapters below cover what that buys over $\CC$.
+By Maschke's theorem, if $\operatorname{char}k$ does not divide $\size G$, then every finite-dimensional $k[G]$-module is [[D-CYAJI|semisimple]]; the two chapters of this part cover what that buys over $\CC$.
 
 [[T-PIO2B]]
 

@@ -17,7 +17,7 @@ topics:
 
 [[PR-OODAV]]
 
-Over a principal ideal domain the torsion sequence $0\to M_t\to M\to M/M_t\to0$ is the case of the splitting criterion below: its quotient is free.
+Over a principal ideal domain the torsion sequence $0\to M_t\to M\to M/M_t\to0$ splits by the splitting criterion, since its quotient is free.
 
 [[P-J5GIE]]
 

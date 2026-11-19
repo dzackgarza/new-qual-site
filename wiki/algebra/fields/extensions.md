@@ -28,7 +28,7 @@ The two constructions $K[\alpha]$ and $K(\alpha)$ differ only for transcendental
 
 ## The tower law
 
-Every degree statement on this page and the next is the tower law: it makes the degree of a simple extension divide the degree of any extension containing it, and it leaves an extension of prime degree with no intermediate fields other than its endpoints.
+Every degree computation in this chapter is the tower law: it makes the degree of a simple extension divide the degree of any extension containing it, and it leaves an extension of prime degree with no intermediate fields other than its endpoints.
 
 [[PR-ZO73V]]
 

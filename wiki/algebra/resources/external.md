@@ -15,4 +15,4 @@ order: 0
 
 - [UC Riverside algebra qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Algebra_Quals.pdf), a compiled scan of past qualifying examinations.
 
-The examinations the corpus holds, with their problems listed in source order, are collections: see [[algebra/resources/problems|Problem collections]].
+The examinations held as collections, with their problems listed in source order, are on [[algebra/resources/problems|Problem collections]].

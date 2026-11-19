@@ -8,7 +8,7 @@ topics:
 
 # Groups of small order
 
-Every classification below is one of three arguments: the order is a prime power, so the group is abelian or has a normal Sylow subgroup to build products from; the order is a product of two primes, so Sylow forces the larger Sylow subgroup normal and the group is a semidirect product read off from the twisting map; or the order has three prime factors, so [[T-4XKGD|Frattini's argument]] and the solvability of $p$-groups and of groups of order $pq$ finish it.
+Every classification on this page is one of three arguments: the order is a prime power, so the group is abelian or has a normal Sylow subgroup to build products from; the order is a product of two primes, so Sylow forces the larger Sylow subgroup normal and the group is a semidirect product read off from the twisting map; or the order has three prime factors, so [[T-4XKGD|Frattini's argument]] and the solvability of $p$-groups and of groups of order $pq$ finish it.
 
 ## Counting Sylow subgroups first
 

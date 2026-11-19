@@ -22,7 +22,7 @@ Each row gives the symbol this chapter uses, the notion it names, and the card t
 | $\Cl_G(x)$ | [[D-HLDEY\|conjugacy class]] | $\theset{gx\inverseof{g} \st g\in G}\subseteq G$ |
 | $N_G(H)$ | [[D-OZ2RR\|normalizer]] | $\theset{g\in G \st gH\inverseof{g} = H}\leq G$ |
 | $\Inn(G)$ | [[PR-IN9ZP\|inner automorphisms]] | the image of $g\mapsto (x\mapsto gx\inverseof{g})$, a subgroup of $\Aut(G)$ |
-| $\Out(G)$ | outer automorphisms | the quotient $\Aut(G)/\Inn(G)$ of the group on the row above, which has no local card |
+| $\Out(G)$ | outer automorphisms | the quotient $\Aut(G)/\Inn(G)$ of the inner automorphisms, which has no local card |
 
 ## Group actions
 

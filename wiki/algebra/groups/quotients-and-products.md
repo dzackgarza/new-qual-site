@@ -11,7 +11,7 @@ topics:
 
 ## The isomorphism theorems
 
-The three statements below are the whole of the quotient calculus this chapter uses: a homomorphism is read through the quotient by its kernel, and a subgroup statement is carried through a quotient by the correspondence theorem.
+The three isomorphism theorems are the whole of the quotient calculus this chapter uses: a homomorphism is read through the quotient by its kernel, and a subgroup statement is carried through a quotient by the correspondence theorem.
 
 [[T-I5N43]]
 

@@ -8,7 +8,7 @@ topics:
 
 # Splitting fields and normal extensions
 
-A finite extension is normal exactly when it is a splitting field, so a question about normality is a question about the roots of one polynomial; the price is that normality is not transitive through a tower, which is what the counterexample below shows.
+A finite extension is normal exactly when it is a splitting field, so a question about normality is a question about the roots of one polynomial; the price is that normality is not transitive through a tower.
 
 [[D-LZTAK]]
 

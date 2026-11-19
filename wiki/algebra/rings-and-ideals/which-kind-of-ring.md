@@ -10,7 +10,7 @@ topics:
 
 ## The chain of inclusions
 
-The classes of commutative rings on this page are totally ordered by inclusion, and the examples that separate consecutive classes carry the same proof that each inclusion is strict.
+The classes of commutative rings are totally ordered by inclusion, and the examples that separate consecutive classes carry the same proof that each inclusion is strict.
 
 [[PR-LLBRB]]
 

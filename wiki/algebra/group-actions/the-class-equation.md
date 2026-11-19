@@ -10,7 +10,7 @@ topics:
 # The class equation
 
 Under conjugation, a finite group falls into classes whose sizes are indices of centralizers, so every class size divides $\size{G}$ and the classes of size one are the central elements.
-The count is what forces a $p$-group to have a nontrivial center, and every statement on this page about $p$-groups rests on that.
+The count is what forces a $p$-group to have a nontrivial center, and the $p$-group statements here rest on that.
 
 [[C-O7CP3]]
 

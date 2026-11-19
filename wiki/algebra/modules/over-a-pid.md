@@ -53,7 +53,7 @@ The split of the free part from the torsion part is the case in which the quotie
 
 ## Tensor products and duals
 
-The four cards below are the finite-dimensional dualities, and the last is the module-theoretic criterion that stands in for finite-dimensionality.
+Finite-dimensionality is what makes the dualities work, and flatness is the module-theoretic condition that stands in for it.
 
 [[D-B5X33]]
 
