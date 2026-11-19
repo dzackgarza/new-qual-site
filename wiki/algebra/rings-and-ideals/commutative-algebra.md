@@ -79,7 +79,9 @@ For an integral domain, the field of fractions is the localization at the nonzer
 
 [[D-JGYK4]]
 
-For a principal ideal domain the intersection is read off the factorization of a generator into prime powers.
+The two cards below give the decomposition in general and in the structured case: existence over any Noetherian ring, and the explicit intersection over a principal ideal domain, where the prime powers of a generator name the components.
+
+[[T-LSNTH]]
 
 [[T-PRMDC]]
 
