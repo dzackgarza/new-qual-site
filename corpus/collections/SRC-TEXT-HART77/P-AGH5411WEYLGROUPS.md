@@ -183,6 +183,31 @@ audit:
     the geometric representation instead of reporting what the sources do not
     provide. The mathematics of the card is unchanged, and no part of it was
     moved from "open" to "proved" or the reverse.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c)'s missing inequality is now published and read, which is what
+    issue #158 asks for. Source: J. E. Humphreys, *Reflection Groups and
+    Coxeter Groups*, Cambridge Studies in Advanced Mathematics 29 (1990),
+    read on the copy at
+    tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf, a scan of 186
+    pages without a text layer whose printed p. N is PDF p. N+17 (the folios
+    read: PDF p. 104 is printed p. 87, PDF p. 125 is p. 108, PDF p. 128 is
+    p. 111 and PDF p. 130 is p. 113). The geometric representation is
+    constructed in §5.3, printed pp. 108--110. Theorem 5.4, printed p. 111
+    and proved on pp. 111--113, is the criterion relating the sign of
+    w(alpha_s) to the length of ws, and the Corollary on printed p. 113 reads
+    "The representation sigma: W -> GL(V) is faithful." Step weyl-faithful now
+    cites that Corollary for the bound |E_6| <= 51840, and step
+    e6-isomorphic-g concludes part (c) from |E_6| = |G| = 51840 and the
+    surjection of part (b), instead of stating the isomorphism as conditional
+    on the inequality. The order 51840 itself is Dolgachev's Corollary 8.2.16,
+    printed p. 262, already on the card and not re-read in this pass. Checked
+    against the card: the six generators of the presentation act by the six
+    reflections in a root basis of the E_6 lattice, which is the image whose
+    order weyl-order computes. Not checked: the rest of Humphreys beyond
+    §5.3--§5.4, and no other source was read for this card.
 ---
 
 ::: {.problem}
@@ -393,6 +418,24 @@ $\cardinality{\mathbf E_6}\ge\cardinality{W(\mathbf E_6)}$.
 
 :::
 
+::: {.pf-step #weyl-faithful}
+$$
+\cardinality{\mathbf E_6}\le 51840 .
+$$
+
+::: pf-proof
+The geometric representation of the Coxeter group $\mathbf E_6$ is faithful. On the real vector space
+$V$ with basis the simple roots $\alpha_s$, the form $B(\alpha_s,\alpha_t)=-\cos(\pi/m_{st})$ and the
+reflections $\sigma_s(\lambda)=\lambda-2B(\alpha_s,\lambda)\alpha_s$ define a homomorphism
+$\sigma\colon\mathbf E_6\to\operatorname{GL}(V)$, and Humphreys, *Reflection Groups and Coxeter Groups*,
+§5.4, Theorem 5.4 with the Corollary that follows it, printed pp. 111--113, proves that $\sigma$ is
+injective; the Corollary, on printed p. 113, reads "The representation $\sigma\colon W\to\operatorname{GL}(V)$ is faithful."
+Its image is the reflection group $W(\mathbf E_6)$ of the $\mathbf E_6$ lattice, of order $51840$ by step
+[](#weyl-order){.pf-ref}. Hence $\cardinality{\mathbf E_6}=51840$, and in particular the inequality displayed.
+:::
+
+:::
+
 ::: {.pf-step #sixers}
 The same order is the orbit--stabilizer count of the sixers:
 $$
@@ -428,19 +471,13 @@ $51{,}840$.
 :::
 
 ::: {.pf-step #e6-isomorphic-g}
-$\Phi$ is a surjection of $\mathbf E_6$ onto $G$ and
-$$
-\cardinality{\mathbf E_6}\ge\cardinality{G}=51840 ,
-$$
-so $\mathbf E_6\cong G$ holds exactly when $\cardinality{\mathbf E_6}\le51840$.
+$\mathbf E_6\cong G$, which is part (c).
 
 ::: pf-proof
-Steps [](#e6-surjective){.pf-ref} and [](#group-order-g){.pf-ref} give the surjection and
-$\cardinality{G}=51840$. Since a surjection has source of order at least that of its image,
-$\cardinality{\mathbf E_6}\ge51840$, and this is the inequality steps
-[](#weyl-order){.pf-ref} and [](#sixers){.pf-ref} also give. The opposite inequality
-$\cardinality{\mathbf E_6}\le51840$ is what makes the two orders equal, and with it part (c)'s
-conclusion follows, a surjection between finite groups of equal order being an isomorphism.
+Steps [](#e6-surjective){.pf-ref} and [](#group-order-g){.pf-ref} give a surjection
+$\mathbf E_6\to G$ and $\cardinality{G}=51840$; step [](#weyl-faithful){.pf-ref} gives
+$\cardinality{\mathbf E_6}=51840$. A surjection between finite groups of equal order is an
+isomorphism.
 :::
 
 :::
@@ -448,9 +485,8 @@ conclusion follows, a surjection between finite groups of equal order being an i
 ::: pf-qed
 Steps [](#an-homomorphism){.pf-ref}, [](#an-cosets){.pf-ref} and [](#an-isomorphism){.pf-ref} are
 part (a); steps [](#e6-homomorphism){.pf-ref} and [](#e6-surjective){.pf-ref} are part (b); steps
-[](#weyl-order){.pf-ref}, [](#sixers){.pf-ref}, [](#group-order-g){.pf-ref} and
-[](#e6-isomorphic-g){.pf-ref} reduce part (c) to the inequality
-$\cardinality{\mathbf E_6}\le51840$.
+[](#weyl-order){.pf-ref}, [](#weyl-faithful){.pf-ref}, [](#sixers){.pf-ref},
+[](#group-order-g){.pf-ref} and [](#e6-isomorphic-g){.pf-ref} are part (c).
 :::
 
 :::
@@ -473,6 +509,7 @@ Part (c): I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 2
 the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, printed pp. 320--321, for
 the same order as $72\cdot6!$ from the sixers. Both are orders of the reflection group of the
 $\mathbf E_6$ lattice, which the presentation maps onto, so they give
-$\cardinality{\mathbf E_6}\ge51840$; the equality of the two orders is the injectivity of the
-geometric representation of a Coxeter group.
+$\cardinality{\mathbf E_6}\ge51840$; the reverse inequality is the faithfulness of the geometric
+representation of the Coxeter group $\mathbf E_6$: Humphreys, *Reflection Groups and Coxeter Groups*,
+§5.4, Theorem 5.4 with its Corollary, printed pp. 111--113.
 :::
