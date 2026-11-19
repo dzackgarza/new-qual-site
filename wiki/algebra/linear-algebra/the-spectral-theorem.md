@@ -33,8 +33,6 @@ The page collects what it takes to diagonalize a matrix, and the one case in whi
 
 [[E-LJ7PF]]
 
-Both statements are equivalences: the matrices an orthogonal change of basis diagonalizes are exactly the symmetric ones, and those a unitary change diagonalizes are exactly the normal ones.
-
 [[T-SPRTR]]
 
 ## Simultaneous diagonalization
