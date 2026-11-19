@@ -25,7 +25,7 @@ The strategy the classification problems use is to list the values of each $n_p$
 
 ## Criteria for a group to be abelian
 
-A cyclic central quotient forces the group abelian, so for a nonabelian group the center is a proper subgroup of the wrong index.
+For a nonabelian group the center is a proper subgroup whose index is not a prime.
 
 [[E-O73XQ]]
 
