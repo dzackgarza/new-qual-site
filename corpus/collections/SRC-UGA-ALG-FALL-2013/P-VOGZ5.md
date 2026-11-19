@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Fall_2013.docx`, converted with Pandoc: the item is Problem 6, and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 ::: {.problem}
 Let $K$ be the splitting field of $x^4-2$ over $\QQ$ and set $G = \gal(K/\QQ)$.
@@ -40,6 +49,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
+This is Problem 6 of the Fall 2013 algebra examination, retained in this repository as `assets/attachments/Algebra_Fall_2013.docx`; the single numbered list of the exam.
 Put $a=\sqrt[4]{2}$, with $a>0$.
 
 ::: pf
