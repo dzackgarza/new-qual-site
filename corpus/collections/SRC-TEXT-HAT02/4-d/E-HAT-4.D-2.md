@@ -22,6 +22,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.D, printed p. 447, with the Leray--Hirsch theorem on
+    printed p. 432 and the Bockstein of §3.E (p. 303). Correct: $S^\infty/\ZZ_p$ is a $K(\ZZ_p,1)$
+    and the bundle $S^1\to S^\infty/\ZZ_p\to\CP^\infty$ has fibre $S^1/\ZZ_p\cong S^1$; the
+    restriction of the degree-one class $a$ generates $H^1$ of the fibre because
+    $H^1(-;\ZZ_p)=\operatorname{Hom}(\pi_1(-),\ZZ_p)$ and $\ZZ\to\ZZ_p$ is onto, so Leray--Hirsch
+    gives $H^*=\ZZ_p[b]\{1,a\}$ with $|a|=1$, $|b|=2$. For odd $p$, $a^2=-a^2$ by graded
+    commutativity, so the ring is $\Lambda(a)\otimes\ZZ_p[b]$; for $p=2$, $a^2\ne0$ and the
+    Bockstein is $Sq^1$, which on a degree-one class is the square, so $b=a^2$ and the ring is
+    $\ZZ_2[a]$. Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
