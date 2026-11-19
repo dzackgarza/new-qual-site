@@ -7734,3 +7734,37 @@ With that, the two commits this session made after the warning appeared (`2edda1
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each card; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-24-5` numbering 1–4 with QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** The remaining residue-5 cards of the collection (§1.6 Ex. 12 and the Ex. 5/11 series of §2–§10) are unread; the coordinate formula was checked on the two standard orthonormal pairs and by the general derivation, not on a random pair.
+
+## 2026-11-19: Yang's 5.1.7 and 5.1.10 at printed pp. 100--101 — the subgroup argument and Weil's proof, with one dropped square
+
+**Object and need.** `P-AGH517ALGEQUIV` (V.1.7) and `P-AGH5110WEILRH` (V.1.10), two more of the seven
+Chapter V cards counted in the record above.
+
+**V.1.7, printed p. 100.** (a) is two closure arguments: the chains $0=D_0,\ldots,D_n=D$ and
+$0=E_0,\ldots,E_m=E$ concatenated through $D+E_i$ give $D+E$ algebraically equivalent to $0$, and
+negating each step — prealgebraic equivalence being symmetric — gives $-D$. (b) is the family
+$(tf-u)$ on $X\times\PP^1$, whose fibres at $t=0$ and $t=1$ are $(f)$ and $0$; the card's own steps
+carry that family and the flatness it needs.
+
+**V.1.10, printed p. 101, with one dropped square.** $\Gamma^2=q(2-2g)$ since $\Gamma$ is the preimage
+of $\Delta$ under $\mathrm{Frob}\times\mathrm{id}$; $\Gamma\cdot\Delta=N$, $\Gamma\cdot l=q$,
+$\Gamma\cdot m=1$, $\Delta\cdot l=\Delta\cdot m=1$; for $D=r\Gamma+s\Delta$ the inequality
+$2(D\cdot l)(D\cdot m)\ge D^2$ reads
+$$
+2(rq+s)(r+s)\ \ge\ r^2q(2-2g)+s^2(2-2g)+2rsN,
+$$
+and dividing by $rs$ with $s=r\sqrt q$ gives $\abs{N-q-1}\le2g\sqrt q$. The entry's display prints
+$rq(2-2g)$ where the coefficient of $\Gamma^2$ is $r^2q(2-2g)$; with the printed coefficient the
+inequality would not divide through to the Hasse--Weil bound. The remark records the slip and says the
+conclusion uses the squared coefficient.
+
+**The remainder, recounted.** Five Chapter V cards still lack Yang: V.2.7, V.2.9, V.2.11, V.2.14,
+V.2.16.
+
+**Repair.** `P-AGH517ALGEQUIV` in `726542344f` and `P-AGH5110WEILRH` in `c5c07e514b`, one commit each;
+this record in the COMPLAINTS commit that carries it. No step, statement or hypothesis of either card
+changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.1.7 at printed p. 100 and 5.1.10 at printed
+p. 101, rendered as page images; the statements the two cards carry, not reopened against the book in
+this pass. Not read: the remaining five cards' entries, and the printed books themselves.
