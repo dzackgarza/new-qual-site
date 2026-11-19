@@ -15,6 +15,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card carried the right three arguments but as label-steps
+    with empty proofs over eleven nested one-sentence claims, one of them with a pf-proof nested
+    inside a nested step. It is now three proved steps: the vanishing of d_omega^2 with the
+    characteristic 2 case handled explicitly (the card's parenthetical conflated the two
+    reasons); acyclicity for omega = dx_1 by an explicit contracting homotopy h(alpha + beta
+    dx_1) = beta, with the decomposition of Lambda^*W named and dh + hd = id verified term by
+    term — this replaces the card's two parallel arguments, of which the Kuenneth one relied on
+    a formula stated without hypothesis; and the general case, where the linear automorphism
+    sending dx_1 to omega is used and checked to be a chain map because Lambda T is an algebra
+    homomorphism. Answers unchanged. Not claimed: a retained solution set.
 ---
 
 ::: {.problem}
@@ -24,113 +38,35 @@ Compute what happens when $dx_1$ is replaced with an arbitrary non-zero element 
 :::
 
 ::: {.solution}
-Let $W$ be the $n$-dimensional $k$-vector space with basis $\{dx_1,\dots,dx_n\}$ and let $\Lambda^*=\bigwedge^*W$.
-For $\omega\in\Lambda^1=W$, define $d_\omega:\Lambda^p\to\Lambda^{p+1}$ by $d_\omega(\alpha)=\alpha\wedge\omega$.
+Throughout $W$ is an $n$-dimensional $k$-vector space with basis $dx_{1},\ldots,dx_{n}$, $\Lambda^{*} = \bigwedge^{*}W$ is the exterior algebra, and for $\omega \in \Lambda^{1} = W$ the map $d_{\omega}\colon\Lambda^{p} \to \Lambda^{p+1}$ is right multiplication by $\omega$, $d_{\omega}(\alpha) = \alpha \wedge \omega$. The collection's `provenance` is the UCSD topology qualifying compilation, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
-::: {.pf-step #s1}
-Verify that $d_\omega \circ d_\omega = 0$ for any $\omega \in \Lambda^1$.
+::: {.pf-step #dd}
+$d_{\omega} \circ d_{\omega} = 0$ for every $\omega \in \Lambda^{1}$, so $(\Lambda^{*}, d_{\omega})$ is a cochain complex.
 
 ::: pf-proof
+For $\alpha \in \Lambda^{p}$ associativity of the wedge product gives $d_{\omega}\bigl(d_{\omega}(\alpha)\bigr) = (\alpha \wedge \omega)\wedge\omega = \alpha\wedge(\omega\wedge\omega)$. Since $\omega$ has degree $1$, the graded-commutativity of the exterior algebra gives $\omega \wedge \omega = (-1)^{1\cdot1}\omega\wedge\omega = -\omega\wedge\omega$, so $2(\omega\wedge\omega) = 0$; when $\operatorname{char}k \ne 2$ this gives $\omega\wedge\omega = 0$, and when $\operatorname{char} k = 2$ the vanishing is the defining alternating condition $x\wedge x = 0$ for odd $x$. Either way $d_{\omega}^{2} = 0$.
 
-::: pf-step
-For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
 :::
 
-::: pf-step
-Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
 :::
 
-::: pf-step
-Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
+::: {.pf-step #dx1}
+For $\omega = dx_{1}$ the complex is acyclic: $H^{p}(\Lambda^{*}, d_{dx_{1}}) = 0$ for all $p$.
 
 ::: pf-proof
-The computation $d_\omega(d_\omega(\alpha)) = \alpha \wedge (\omega \wedge \omega) = 0$ uses associativity of the wedge product and the fact that $\omega \wedge \omega = 0$ for $\omega \in \Lambda^1$; hence $d_\omega^2 = 0$.
-:::
+Write $W = k\\,dx_{1} \oplus W'$ with $W' = \operatorname{span}_{k}\theset{dx_{2},\ldots,dx_{n}}$, so that $\Lambda^{*}W \cong \Lambda^{*}(k\\,dx_{1}) \otimes_{k}\Lambda^{*}W'$ as graded algebras and every element is uniquely $\alpha + \beta\wedge dx_{1}$ with $\alpha, \beta \in \Lambda^{*}W'$ (the algebra $\Lambda^{*}(k\\,dx_{1})$ is two-dimensional, spanned by $1$ and $dx_{1}$, with $dx_{1}\wedge dx_{1} = 0$). Define $h\colon\Lambda^{p} \to \Lambda^{p-1}$ by $h(\alpha + \beta\wedge dx_{1}) \coloneqq \beta$. Then $d h(\alpha+\beta\wedge dx_{1}) = d(\beta) = \beta\wedge dx_{1}$ and $h d(\alpha + \beta\wedge dx_{1}) = h(\alpha\wedge dx_{1}) = \alpha$, since $\beta\wedge dx_{1}\wedge dx_{1} = 0$; hence $(dh + hd)(\alpha+\beta\wedge dx_{1}) = \alpha + \beta\wedge dx_{1}$, that is $dh + hd = \operatorname{id}$. A complex whose identity is null-homotopic is acyclic: a cycle $z$ satisfies $z = dh(z) + hd(z) = dh(z)$, so $z$ is a boundary.
 
 :::
 
 :::
 
-:::
-
-::: {.pf-step #s2}
-Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$).
+::: pf-step
+For arbitrary $0 \ne \omega \in \Lambda^{1}$ the complex $(\Lambda^{*}, d_{\omega})$ is acyclic, isomorphic to $(\Lambda^{*}, d_{dx_{1}})$.
 
 ::: pf-proof
-
-::: pf-step
-Write $W=k\cdot dx_1\oplus W'$, where $W'=\operatorname{span}_k\{dx_2,\dots,dx_n\}$.
-:::
-
-::: pf-step
-The exterior algebra decomposes as $\Lambda^*W\cong\Lambda^*(k\cdot dx_1)\otimes_k\Lambda^*W'$.
-:::
-
-::: pf-step
-$\Lambda^*(k \cdot dx_1)$ is 2-dimensional, with $\Lambda^0(k \cdot dx_1) = k \cdot 1$ and $\Lambda^1(k \cdot dx_1) = k \cdot dx_1$.
-:::
-
-::: pf-step
-The differential $d_{dx_1}$ on $\Lambda^*(k \cdot dx_1)$ maps $1 \mapsto dx_1$ (isomorphism) and $dx_1 \mapsto 0$.
-:::
-
-::: pf-step
-Thus the complex $0 \to \Lambda^0(k \cdot dx_1) \xrightarrow{d_{dx_1}} \Lambda^1(k \cdot dx_1) \to 0$ is the exact sequence $0 \to k \xrightarrow{\cdot 1} k \to 0$, which has $H^0 = 0$ and $H^1 = 0$.
-:::
-
-::: {.pf-step #s2-6}
-By the Künneth formula for complexes of vector spaces over $k$, $$H^*(\Lambda^*W,d_{dx_1})\cong H^*(\Lambda^*(k\cdot dx_1),d_{dx_1})\otimes_k\Lambda^*W'=0.$$
-:::
-
-::: {.pf-step #s2-7}
-Alternatively, every element is uniquely $\alpha+\beta\wedge dx_1$ with $\alpha,\beta\in\Lambda^*W'$. Define $h:\Lambda^p\to\Lambda^{p-1}$ by $h(\alpha+\beta\wedge dx_1)=\beta$.
-Then $(d h + h d)(\alpha + \beta \wedge dx_1) = d(\beta) + h(\alpha \wedge dx_1) = \beta \wedge dx_1 + \alpha = \alpha + \beta \wedge dx_1 = \operatorname{id}$.
-Since $\operatorname{id}$ is chain homotopic to 0, all homology groups vanish: $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p \in \{0, \dots, n\}$.
-
-::: pf-proof
-The Künneth formula (step [](#s2-6){.pf-ref}) and the explicit contracting homotopy (step [](#s2-7){.pf-ref}) are two independent arguments; each shows $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-Compute the homology when $dx_1$ is replaced with an arbitrary nonzero $\omega\in\Lambda^1=W$.
-
-::: pf-proof
-
-::: pf-step
-Write $\omega=\sum_{i=1}^n c_i dx_i$ with some $c_j\ne0$. Since $k$ is a field, extend $\omega$ to a basis of $W$ and choose an automorphism $T:W\to W$ with $T(dx_1)=\omega$.
-:::
-
-::: pf-step
-Functoriality of the exterior algebra gives a graded algebra automorphism $\bigwedge T:\Lambda^*W\to\Lambda^*W$ satisfying $(\bigwedge T)(dx_1)=\omega$.
-:::
-
-::: {.pf-step #s3-3}
-For every $\alpha\in\Lambda^*W$,
-$$
-(\bigwedge T)(d_{dx_1}\alpha)=(\bigwedge T)(\alpha\wedge dx_1)=(\bigwedge T\alpha)\wedge\omega=d_\omega((\bigwedge T)\alpha).
-$$
-Thus $\bigwedge T$ is an isomorphism of cochain complexes
-$$
-(\Lambda^*W,d_{dx_1})\xrightarrow{\cong}(\Lambda^*W,d_\omega).
-$$
-:::
-
-::: pf-step
-Therefore $H^p(\Lambda^*,d_\omega)=0$ for every $p$.
-
-::: pf-proof
-By step [](#s2){.pf-ref} the source complex is acyclic, and step [](#s3-3){.pf-ref} gives an isomorphism of complexes, so the target complex is acyclic as well.
-:::
-
-:::
+Since $\omega \ne 0$ the assignment $dx_{1} \mapsto \omega$ extends to a linear automorphism $T$ of $W$ — complete $\omega$ to a basis of $W$ and map $dx_{i}$ to the $i$-th vector — and the functoriality of the exterior algebra gives an algebra automorphism $\bigwedge T$ with $\bigwedge T(dx_{1}) = \omega$. For every $\alpha$, $(\bigwedge T)(d_{dx_{1}}\alpha) = (\bigwedge T)(\alpha\wedge dx_{1}) = \bigwedge T(\alpha) \wedge \bigwedge T(dx_{1}) = d_{\omega}\bigl(\bigwedge T(\alpha)\bigr)$, because $\bigwedge T$ is an algebra homomorphism. So $\bigwedge T$ is an isomorphism of cochain complexes from $(\Lambda^{*},d_{dx_{1}})$ to $(\Lambda^{*},d_{\omega})$, and an isomorphism of complexes carries cycles and boundaries onto cycles and boundaries, hence induces an isomorphism on cohomology; since the source is acyclic by step [](#dx1){.pf-ref}, so is the target.
 
 :::
 
