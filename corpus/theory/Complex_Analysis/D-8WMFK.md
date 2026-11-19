@@ -25,6 +25,7 @@ A continuous function $f\colon S\to\CC$ is \dfn{holomorphic} if $f\circ\phi_\alp
 :::
 
 ::: {.example title="The plane, the disc, and the sphere"}
-$\CC$, every domain in $\CC$, and the [[D-3QTVR|Riemann sphere]] with the two charts $\CC$ and $\CC\sm\set{0}$ joined by $w = 1/z$ are Riemann surfaces.
-A quotient of a Riemann surface by a group acting freely and properly discontinuously by biholomorphisms inherits the structure, which produces the compact examples: $\CP^1$ as the quotient of the sphere by rotations, and the complex torus $\CC/\Lambda$ for a lattice $\Lambda$.
+$\CC$ and every domain in $\CC$ are Riemann surfaces in the single chart $z$.
+The [[D-3QTVR|Riemann sphere]] is one in the two charts $z$ on $\CP^1\sm\theset{\infty}$ and $w = 1/z$ on $\CP^1\sm\theset{0}$, whose transition map is holomorphic on $\CC\sm\theset{0}$.
+A quotient of a Riemann surface by a group acting freely and properly discontinuously by biholomorphisms inherits the structure, which produces the compact examples: the complex torus $\CC/\Lambda$ for a lattice $\Lambda$, and the quotient of $\HH$ by a Fuchsian group acting cocompactly.
 :::
