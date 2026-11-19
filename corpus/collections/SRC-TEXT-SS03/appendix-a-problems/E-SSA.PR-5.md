@@ -44,6 +44,21 @@ audit:
     to the book's Theorem 4.1(ii), and a finite check that truncating at N = floor(sqrt n) and rounding
     reproduces p(n) for n = 1,...,12. Not claimed: a re-proof of Rademacher's theorem, which is the
     book's omission and is cited, not reproduced.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps without altering the mathematics: the scope paragraph stays as the
+    solution's opening, the notation and the three facts drawn from the book become a setup step,
+    and the sections become steps in order — Lemma 1 on the multiplier of eta, Theorem 2 (the
+    generalised transformation law), Remark 3 (the corrections the derivation forces in the printed
+    statement), the five-factor analysis of section 2, and Theorem 3 with its four steps and the
+    constant. Sections 4 and 5, which record what settles the exercise's last sentence and what the
+    book does not carry out, follow the proof block as the card had them, since they are citations
+    and bookkeeping rather than parts of the proof. The two proved corrections to the printed
+    statement (the sign of the exponent and the order of omega_{p/q}) are kept inside Remark 3, and
+    the card still says plainly that part (iii) is not proved here. Statement unchanged; the card
+    does not claim a retained solution set covers this problem.
 ---
 
 ::: {.exercise}
@@ -63,7 +78,6 @@ to the asymptotic formula for $p(n)$. When suitably modified, the resulting seri
 :::
 
 ::: {.solution}
-
 **What the exercise states, and what is proved below.** The exercise asks for three things: (i) the
 transformation law for $f$ at an arbitrary rational point $p/q$, generalizing (24); (ii) the
 contribution that the point $p/q$ then makes to the asymptotic formula for $p(n)$; (iii) the remark
@@ -75,6 +89,12 @@ $q$-dependence; (iii) is *not* proved, neither here nor in the book — the last
 precisely what is missing. So the block is complete for (i) and (ii) and explicitly incomplete
 for (iii).
 
+::: pf
+
+::: {.pf-step #setup}
+Notation: for $z=x+iy\in\HH$, $\eta(z)=e^{\pi iz/12}\prod_{n\ge1}(1-e^{2\pi inz})$ and $f(z)=e^{\pi iz/12}/\eta(z)=\sum_{n\ge0}p(n)e^{2\pi inz}$; the three facts used from the book are (24), (25) and $f(z+1)=f(z)$. Put $K=\pi\sqrt{2/3}$ and $\lambda=(n-\tfrac1{24})^{1/2}$.
+
+::: pf-proof
 Throughout $z=x+iy\in\HH$ (the upper half plane),
 $$
 \eta(z)=e^{\pi iz/12}\prod_{n\ge1}\bigl(1-e^{2\pi inz}\bigr),\qquad
@@ -90,20 +110,16 @@ book:
 
 Set $K=\pi\sqrt{2/3}$ and $\lambda=\lambda_n=(n-\tfrac1{24})^{1/2}$ for $n\ge1$; thus
 $K=\pi\sqrt{2/3}=2\pi/\sqrt6$ and $\lambda^2=n-\tfrac1{24}$.
+:::
 
-## 1. The transformation law at every rational point
+:::
 
-The printed statement is
-$$
-f\Bigl(z-\frac pq\Bigr)=\omega_{p/q}\Bigl(\frac{zq}{i}\Bigr)^{1/2}
-e^{\frac{\pi i}{12zq^2}}e^{-\frac{\pi iz}{12}}f\Bigl(-\frac{1}{zq^2}-\frac{p'}{q}\Bigr),
-\qquad pp'\equiv 1\ (\mathrm{mod}\ q),
-$$
-with $\omega_{p/q}$ "an appropriate $24$th root of unity". Theorem 2 proves this with the changes
-recorded in Remark 3: the exponent $e^{-\pi iz/12}$ must be $e^{+\pi iz/12}$, the variable must be
-the shifted one, and $\omega_{p/q}$ is a root of unity of order dividing $24q$.
 
-**Lemma 1 (multiplier of $\eta$).** Let $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(\ZZ)$
+::: {.pf-step #lem1}
+Lemma 1 (multiplier of $\eta$): for $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(\ZZ)$ with $c>0$ there is $\varepsilon(\gamma)\in\mu_{24}$ with $\eta(\gamma z)=\varepsilon(\gamma)(cz+d)^{1/2}\eta(z)$ on $\HH$.
+
+::: pf-proof
+Let $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(\ZZ)$
 with $c>0$. Then there is a constant $\varepsilon(\gamma)\in\mu_{24}:=\{\zeta:\zeta^{24}=1\}$ such
 that
 $$
@@ -121,7 +137,7 @@ $z\mapsto z+m$ for some $m\in\ZZ$ and $\eta(\gamma z)=e^{\pi im/12}\eta(z)$, whi
 with $\varepsilon=\pm e^{\pi im/12}\in\mu_{24}$ (the sign coming from
 $(0\cdot z+d)^{1/2}=d^{1/2}=\pm1$).
 
-Let $c>0$, choose $k\in\ZZ$ with $|a+kc|\le c/2$, and put
+Let $c>0$, choose $k\in\ZZ$ with $\abs{a+kc}\le c/2$, and put
 $$
 \gamma_k:=ST^k\gamma=\begin{pmatrix}0&-1\\1&k\end{pmatrix}\begin{pmatrix}a&b\\c&d\end{pmatrix}
 =\begin{pmatrix}-c&-d\\a+kc&b+kd\end{pmatrix}
@@ -160,7 +176,15 @@ $\eta(\gamma z)=\varepsilon(\gamma)(cz+d)^{1/2}\eta(z)$ with
 $\varepsilon(\gamma)=\pm\varepsilon(\gamma_1)\varepsilon_k\in\mu_{24}$: a product of $24$th roots
 of unity and signs is again a $24$th root of unity. The induction terminates because
 $|c_k|\le c/2$. $\square$
+:::
 
+:::
+
+
+::: {.pf-step #thm2}
+Theorem 2 (the generalisation of (24)): the printed transformation law at $p/q$ holds, with the three corrections recorded in step [](#rem3){.pf-ref}.
+
+::: pf-proof
 **Theorem 2 (the generalization of (24)).** Let $p,q$ be coprime with $q\ge1$, let $p'\in\ZZ$ with
 $pp'\equiv1\ (\mathrm{mod}\ q)$, and put $b=(pp'-1)/q\in\ZZ$ and
 $\gamma=\begin{pmatrix}p&b\\q&p'\end{pmatrix}\in SL_2(\ZZ)$, so that $pp'-qb=1$. Then for every
@@ -213,9 +237,15 @@ change. $\square$
 For $p/q=0/1$ one may take $p'=0$, $b=-1$, $\gamma=S$; then the two constants cancel and Theorem 2
 reads $f(\xi)=(\xi/i)^{1/2}e^{\pi i/(12\xi)}e^{\pi i\xi/12}f(-1/\xi)$ with $\omega_{0/1}=1$, i.e. it
 *is* (24). That is the check the book makes.
+:::
 
-**Remark 3 (what the derivation corrects in the printed statement).**
+:::
 
+
+::: {.pf-step #rem3}
+Remark 3: the corrections the derivation forces in the printed statement, and the order of the constant $\omega_{p/q}$.
+
+::: pf-proof
 *(a) The sign.* As printed, the statement has $e^{-\pi iz/12}$ where Theorem 2 has
 $e^{+\pi i\xi/12}$, and with the minus sign no constant $\omega_{p/q}$ can work. Indeed, take
 $q=1$, $p=1$, $p'=1$: then $f(z-p/q)=f(z-1)=f(z)$ and $f(-1/(zq^2)-p'/q)=f(-1/z-1)=f(-1/z)$, so the
@@ -240,9 +270,15 @@ $\gamma=S$, Proposition 1.9 of Chapter 10). Nothing below uses more than $|\omeg
 numerical evaluation of both sides of Theorem 2 for $p/q=1/3$ with principal branches gives an
 $\omega_{1/3}$ of order $36$, hence not a $24$th root of unity; this is a check, not part of the
 proof.)
+:::
 
-## 2. What each factor contributes
+:::
 
+
+::: {.pf-step #factors}
+The identity of Theorem 2 splits $f$ at $p/q$ into a local model $f_{p/q}$ and an error factor, and the five factors have the sizes and roles tabulated in the proof.
+
+::: pf-proof
 Write the identity of Theorem 2 as a product of a local model and an error factor, in the shifted
 variable $\xi$,
 $$
@@ -260,9 +296,15 @@ The five factors do the following.
 | $e^{\pi i/(12q^2\xi)}$ | $e^{-\pi y'/(12q^2\lvert\xi\rvert^2)}$ | The essential singularity at $p/q$, which is $q^2$ times flatter than the one at $0$: the factor is $O(1)$ once $\lvert\xi\rvert\ge\sqrt{y'}/q$, and it blows up like $e^{\pi/(12q^2\lvert\xi\rvert)}$ as $\xi\to0$. This is what replaces $s$ by $s/q$ in the computation of §4, and hence turns $K$ into $K/q$ in the exponent of the main term. |
 | $e^{\pi i\xi/12}$ | $e^{-\pi y'/12}$ | Together with the factor $e^{-2\pi in\xi}$ of (23) it gives $e^{-2\pi i(n-\frac1{24})\xi}$: this factor is exactly where the shift $n\mapsto n-\frac1{24}$ of Theorem 4.1 comes from (the book: "the fraction $1/12$ arising above will explain the occurrence of the fraction $1/24$"). |
 | $f(-1/(q^2\xi)-p'/q)$ | $1+O\bigl(e^{-2\pi y'/(q^2\lvert\xi\rvert^2)}\bigr)$ | The error factor. Since $\operatorname{Im}\bigl(-1/(q^2\xi)\bigr)=y'/(q^2\lvert\xi\rvert^2)\to+\infty$ as $\xi\to0$, (25) gives $f=1+O(e^{-2\pi y'/(q^2\lvert\xi\rvert^2)})$; where $y'/(q^2\lvert\xi\rvert^2)\le1$ one uses instead $\lvert f\rvert\le Ce^{\pi/(12\,y'/(q^2\lvert\xi\rvert^2))}$, which follows from (24) exactly as the book's (28). These are the book's two estimates (27)--(28) with $\delta/(\delta^2+x^2)$ replaced by $y'/(q^2\lvert\xi\rvert^2)$. |
+:::
 
-## 3. The contribution of the point $p/q$ to $p(n)$
+:::
 
+
+::: {.pf-step #thm3}
+Theorem 3: on a Farey arc $A_{p/q}$ about $p/q$, the model integral equals $c_{p/q}\dfrac{1}{2\pi\sqrt2}\dfrac{\dd}{\dd n}\Bigl[\dfrac{e^{(K/q)\lambda}}{\lambda}\Bigr](1+O(n^{-1/2}))$ with $c_{p/q}=\sqrt q\,e^{-2\pi inp/q}\omega_{p/q}$.
+
+::: pf-proof
 **Theorem 3.** Fix $n\ge2$, put $\lambda=(n-\frac1{24})^{1/2}$, $\mu_q=(2\sqrt6\,q\lambda)^{-1}$ and
 $s_q=\dfrac{\pi}{\sqrt6}\dfrac{\lambda}{q}=\dfrac{K\lambda}{2q}$. Let $A_{p/q}$ be an arc of
 $\operatorname{Im}z=\delta$ about $p/q$ of length $\asymp1/(q n^{1/2})$ (a Farey arc of level
@@ -284,8 +326,16 @@ $f(z)=f_{p/q}(\xi)f(-1/(q^2\xi)-p'/q)$ of Theorem 2. There
 $\operatorname{Im}\bigl(-1/(q^2\xi)-p'/q\bigr)=y'/(q^2|\xi|^2)\ge c\,n^{1/2}$ for a constant $c>0$,
 because $y'=\delta\asymp n^{-1/2}$ and $|\xi|\le C/(qn^{1/2})$; so by (25) the second factor is
 $1+O(e^{-c'n^{1/2}})$, and the discarded piece is smaller than any power of $n$.
+:::
 
-*Step 1 (the $d/dn$ device of §4).* Using $d/dn\,e^{-2\pi in\xi}=-2\pi i\,\xi e^{-2\pi in\xi}$ and
+:::
+
+
+::: {.pf-step #s1}
+Step 1 (the $\dd/\dd n$ device of §4).
+
+::: pf-proof
+Using $d/dn\,e^{-2\pi in\xi}=-2\pi i\,\xi e^{-2\pi in\xi}$ and
 $\xi\,(\xi/i)^{-1/2}=i\,(\xi/i)^{1/2}$,
 $$
 \int\Bigl(\frac{\xi}{i}\Bigr)^{1/2}e^{\pi i/(12q^2\xi)}e^{\pi i\xi/12}e^{-2\pi in\xi}d\xi
@@ -301,8 +351,16 @@ e^{-2\pi inp/q}\,\omega_{p/q}\,q^{1/2}\frac{1}{2\pi}\frac{d}{dn}
 \int_{A_{p/q}}\Bigl(\frac{\xi}{i}\Bigr)^{-1/2}e^{\pi i/(12q^2\xi)}e^{\pi i\xi/12}e^{-2\pi in\xi}d\xi ,
 $$
 the term $e(n)$ produced by the variation of the arc being absorbed as in the book.
+:::
 
-*Step 2 (rescaling).* Let $F(\zeta)=i(\zeta-1/\zeta)$ and $\xi=\mu_q\zeta$. Then
+:::
+
+
+::: {.pf-step #s2}
+Step 2 (rescaling): with $F(\zeta)=i(\zeta-1/\zeta)$ and $\xi=\mu_q\zeta$ the integral becomes the one to which Step 3 applies.
+
+::: pf-proof
+Let $F(\zeta)=i(\zeta-1/\zeta)$ and $\xi=\mu_q\zeta$. Then
 $$
 \frac{\pi i}{12q^2\xi}-2\pi i\Bigl(n-\frac1{24}\Bigr)\xi
 =\frac{s_q i}{\zeta}-s_q i\zeta=-s_qF(\zeta),
@@ -314,8 +372,16 @@ $s_q=s/q$ and $\mu_q=\mu/q$ in the notation of §4, that
 $(\xi/i)^{-1/2}d\xi=\mu_q^{1/2}(\zeta/i)^{-1/2}d\zeta$, and that $|\xi|\le C/(qn^{1/2})$ becomes
 $|\zeta|\le C'$: the arc reaches far beyond the width $s_q^{-1/2}\asymp(q/n^{1/2})^{1/2}$ of the
 Gaussian at the saddle, which is what the method needs (for fixed $q$ that width tends to $0$).
+:::
 
-*Step 3 (Laplace's method).* $F=i(\zeta-1/\zeta)$ has its only critical point at $\zeta=i$, with
+:::
+
+
+::: {.pf-step #s3}
+Step 3 (Laplace's method): $F$ has its only critical point at $\zeta=i$, with the stated value, and the integral is evaluated there.
+
+::: pf-proof
+$F=i(\zeta-1/\zeta)$ has its only critical point at $\zeta=i$, with
 $F(i)=-2$ and $F''(i)=2$, and the book's contour $\Gamma^*$ (the segments $[\pm a_n,\pm1]$ and the
 upper unit semicircle) is admissible for $F$. On the semicircle $\zeta=e^{i\theta}$, with $\theta$
 running from $\pi$ to $0$, one has $F=-2\sin\theta$ and
@@ -332,8 +398,16 @@ modulus $|\zeta|^{-1/2}\le1$ there and their total contribution is $O(a_n)=O(q\l
 $a_n=\mu_q^{-1}/2=\sqrt6\,q\lambda$; this is negligible compared with $e^{2s_q}$ for fixed $q$ as
 $n\to\infty$. (This is the book's $O(a_n\mu^{3/2})=O(1)$, with the extra $q^{1/2}$ of the prefactor;
 see section 4.)
+:::
 
-*Step 4 (the constant).* By Step 3, the integral appearing in Step 1 equals
+:::
+
+
+::: {.pf-step #s4}
+Step 4 (the constant): the integral of Step 1 equals $\frac{1}{\sqrt2}\lambda^{-1}e^{K\lambda/q}(1+O(n^{-1/2}))$, and substituting gives Theorem 3 with $c_{p/q}$ as displayed; the two bookkeeping consequences are recorded.
+
+::: pf-proof
+By Step 3, the integral appearing in Step 1 equals
 $$
 \mu_q^{1/2}\,e^{2s_q}\sqrt{\frac{\pi}{s_q}}\bigl(1+O(s_q^{-1})\bigr)
 =\frac{1}{\sqrt2}\,\lambda^{-1}e^{K\lambda/q}\bigl(1+O(n^{-1/2})\bigr),
@@ -376,6 +450,11 @@ Two consequences worth recording, since they are the bookkeeping the exercise as
   $e^{-K\lambda(1-1/q)}$, so the series over $q$ is dominated by $q=1$; and for fixed $n$ the sum of
   $c_{p/q}/\sqrt q$ over $p$ with $(p,q)=1$ is $\sum_p e^{-2\pi inp/q}\omega_{p/q}$, the
   Hardy--Ramanujan sum.
+:::
+
+:::
+
+:::
 
 ## 4. The exercise's last sentence, and what settles it
 
@@ -483,5 +562,4 @@ $1/(2\pi\sqrt2)$, both checked by reduction to Theorem 4.1(ii) at $q=1$). Items 
 the analysis the book defers with "when suitably modified"; section 4 records that Rademacher carried it
 out, states his theorem and his remainder bound, and cites them. Nothing in the exercise is false: what
 the book omits is a proof, and what this card omitted before section 4 was the theorem itself.
-
 :::
