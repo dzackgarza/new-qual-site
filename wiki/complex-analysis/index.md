@@ -40,6 +40,8 @@ Three pages collect material from several chapters:
 
 [[complex-analysis/basics/index|Background and reference]] covers undergraduate analysis and standard series expansions; [[complex-analysis/appendices/index|Appendix notes]] holds supplementary proofs and special functions.
 
+Further pages: [[complex-analysis/resources/index|resources]], the [[complex-analysis/resources/study-schedule-and-topics|syllabus topic list]], and the [[complex-analysis/workshops/index|workshops]].
+
 ## The syllabus
 
 ### Calculus and undergraduate analysis
