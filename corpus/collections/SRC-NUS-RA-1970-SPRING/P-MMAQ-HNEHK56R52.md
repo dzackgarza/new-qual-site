@@ -44,6 +44,8 @@ Prove or disprove each of the following statements.
 
 ::: {.solution}
 
+The argument is the card's own: for (f) monotone convergence applied to $f\chi_{[\eps_k,1]}$; for (g) the Riemann--Lebesgue lemma, by density of step functions together with the exact integral of an indicator; for (h) the function $x\sin(1/x)$, whose increments at $2/((2k+1)\pi)$ are at least $2/((2k+1)\pi)$. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: {.pf-step #f-is-true}
