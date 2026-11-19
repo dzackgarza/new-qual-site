@@ -27,6 +27,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continued §4.2 read. Read against Hatcher, Exercise 25 of §4.2, printed p. 391, and
+    the printed page is added, the card having had none. Checked: a $K(G,1)$ is built from $X$ by
+    attaching $(n+1)$-cells along representatives of $\pi_n(X)$ — legitimate because
+    $\pi_i(X)=0$ for $1<i<n$ — and then cells of dimension at least $n+2$; the relative chain complex
+    has nothing below degree $n+1$, so the exact sequence of the pair ends
+    $H_{n+1}(K,X)\to H_n(X)\to H_n(K)\to0$; the connecting map sends a relative $(n+1)$-cell to the
+    homology class of its attaching map, which is exactly the Hurewicz image of the corresponding
+    class; hence the quotient is $H_n(K)\cong H_n(K(\pi_1X,1))$. No defect.
 ---
 
 ::: {.problem}
@@ -34,6 +46,8 @@ For $X$ a connected CW complex with $\pi_i(X) = 0$ for $1 < i < n$ for some $n \
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 25, printed p. 391.
+
 Let $G=\pi_1(X)$. Since
 $$
 \pi_i(X)=0\qquad(1<i<n),
