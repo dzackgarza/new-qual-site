@@ -3,12 +3,16 @@ permissions:
   contents: read
   pages: write
   id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: false
 jobs:
   build:
+    # Publishing runs on the schedule and on dispatch, never per push: a
+    # push-triggered build in the pages group is superseded by the next push
+    # before it finishes when pushes come faster than one build.
+    if: github.event_name != 'push'
     needs: qc-ci
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -59,6 +63,9 @@ jobs:
           retention-days: 90
   deploy:
     needs: build
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -150,3 +157,5 @@ jobs:
     branches:
       - main
   workflow_dispatch: null
+  schedule:
+    - cron: '7,37 * * * *'
