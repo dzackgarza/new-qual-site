@@ -34,6 +34,20 @@ audit:
     the "if and only if" is the two inclusions of a one-dimensional subspace.
     Nothing uses any property of F beyond being a field. The card proves the
     steps in one line each, which is terse but correct; no change was made.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read as a second reader against the retained text; the statement matches Hoffman and Kunze
+    Exercise 1.3.8, printed p. 11, all three parts. The mathematics is correct: the zero matrix
+    sends every vector to 0; det A = ad-bc nonzero makes A invertible, so AX = 0 gives X = 0;
+    and a nonzero singular 2x2 matrix has rank 1, so the kernel is 1-dimensional and its
+    solutions are the scalar multiples of any nonzero one. Three defects repaired, none
+    mathematical: the step 'Therefore the only solution is the trivial one' had a proof that was
+    only a reference back to the preceding step and duplicated it, so it is removed and the
+    preceding step now states the conclusion; a trailing pf-qed that listed three back-
+    references and nothing else is removed, as STYLE-08 asks; and five proofs that began in
+    lower case now begin as sentences. No claim changed.
 ---
 
 ::: {.exercise}
@@ -53,6 +67,8 @@ is a $2 \times 2$ matrix over the field $F$ . Prove the following.
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 8 on printed p. 11. The argument is the card's own.
+
 **Part (a).**
 
 ::: pf
@@ -61,7 +77,7 @@ is a $2 \times 2$ matrix over the field $F$ . Prove the following.
 If $A = 0$, then $AX = 0$ for every $X = (x_1, x_2)$.
 
 ::: pf-proof
-the zero matrix sends every vector to $0$.
+The zero matrix sends every vector to $0$.
 :::
 
 :::
@@ -82,19 +98,10 @@ $\det A = ad - bc \neq 0$.
 :::
 
 ::: {.pf-step #ax0-implies-x-zero}
-Hence $AX = 0$ implies $X = A^{-1} \cdot 0 = 0$.
+Hence the only solution of $AX = 0$ is the trivial one, $X = 0$.
 
 ::: pf-proof
-multiply both sides by $A^{-1}$.
-:::
-
-:::
-
-::: {.pf-step #trivial-solution-only}
-Therefore the only solution is the trivial one.
-
-::: pf-proof
-Step [](#ax0-implies-x-zero){.pf-ref}.
+Multiplying both sides on the left by $A^{-1}$ gives $X=A^{-1}0=0$.
 :::
 
 :::
@@ -118,7 +125,7 @@ $A$ is nonzero but singular, so its rank is $1$ (a nonzero $2 \times 2$ matrix o
 Hence the solution space $\{X : AX = 0\}$ is $1$-dimensional.
 
 ::: pf-proof
-by rank–nullity, $\dim \ker A = 2 - \operatorname{rank}(A) = 1$.
+By rank–nullity, $\dim\ker A=2-\operatorname{rank}(A)=1$.
 :::
 
 :::
@@ -127,7 +134,7 @@ by rank–nullity, $\dim \ker A = 2 - \operatorname{rank}(A) = 1$.
 Let $(x_1^0, x_2^0)$ be any nonzero solution.
 
 ::: pf-proof
-such a solution exists since $\ker A \neq 0$.
+Such a solution exists because $\ker A\ne0$.
 :::
 
 :::
@@ -136,13 +143,9 @@ such a solution exists since $\ker A \neq 0$.
 Then $(x_1, x_2)$ is a solution iff $(x_1, x_2) = y(x_1^0, x_2^0)$ for some scalar $y$.
 
 ::: pf-proof
-the solution space is $1$-dimensional and spanned by $(x_1^0, x_2^0)$.
+The solution space is $1$-dimensional and spanned by $(x_1^0,x_2^0)$, so its elements are exactly the scalar multiples of that vector.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#zero-matrix-all-solutions){.pf-ref} (a), [](#trivial-solution-only){.pf-ref} (b), and [](#solution-iff-scalar-multiple){.pf-ref} (c).
 :::
 
 :::
