@@ -22,6 +22,8 @@ If $f$ is a nonnegative measurable function on $\RR$ and $p > 0$, show that $$\i
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the identity $f(x)^p=\int_0^{f(x)}p t^{p-1}\,dt$ is written at each $x$ as an integral against an indicator, and Tonelli's theorem exchanges the two integrations, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Both sides may equal $+\infty$. Write $\abs{\cdot}$ for Lebesgue measure and $\chi_{\{t < f(x)\}}$ for the indicator of $\{(x,t) \in \RR \times (0,\infty) : t < f(x)\}$.
 
 ::: pf
