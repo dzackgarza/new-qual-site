@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-185 of the 12429 problem cards that have a solution
+179 of the 12429 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,10 +15,10 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 185
+- Problems: 179
 - Problem cards with a solution: 12429
 
-## Problems (185)
+## Problems (179)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-81J56 — "Simply connected planar open sets contain the bounded complements of their curves"
@@ -29,7 +29,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-CCLL5 — "Normal subgroups and regular coverings"
 - [ ] E-CJGFE — "Heredity of the seventeen basic properties"
 - [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
-- [ ] E-HAT-2.B-3 — "Complement of a disk pair in a sphere pair"
 - [ ] E-HAT-3.2-15 — "Poincaré series and products"
 - [ ] E-HAT-3.3-16 — "Associativity of cap product"
 - [ ] E-HAT-3.3-19 — "Countability of homology of open subsets of $\RR^n$"
@@ -89,21 +88,16 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-S4J3T — "Unions of closed paracompact subspaces"
 - [ ] E-S57IX — "Products of quotient maps with locally compact Hausdorff factors"
 - [ ] E-SS1.EX-24 — "Reversing orientation negates a contour integral"
-- [ ] E-SS10.EX-10 — "Irregular growth of $r_2(n)$ and $r_4(n)$"
 - [ ] E-SS10.EX-9 — "Sums of two squares from the formula for $r_2(n)$"
 - [ ] E-SS3.EX-18 — "The Cauchy integral formula via homotopy"
 - [ ] E-SS3.EX-19 — "The maximum principle for harmonic functions"
-- [ ] E-SS4.EX-10 — "Gaussian decay in a strip passes to the Fourier transform"
 - [ ] E-SS4.EX-9 — "Phragmén--Lindelöf theorems in a half-plane and a sector"
 - [ ] E-SS4.PR-2 — "Solving a constant-coefficient linear ODE with the Fourier transform"
-- [ ] E-SS5.EX-10 — "Hadamard products of $e^z-1$ and $\cos\pi z$"
 - [ ] E-SS6.EX-9 — "An integral representation of the hypergeometric series"
 - [ ] E-SS8.EX-18 — "Continuous extension of a conformal map of the disc to the boundary"
 - [ ] E-SS8.EX-19 — "The plane slit along parallel rays is simply connected"
 - [ ] E-SS8.EX-21 — "Schwarz--Christoffel maps onto triangles"
 - [ ] E-SS8.EX-24 — "Identities between the elliptic integrals $K$ and $K'$"
-- [ ] E-SS8.PR-3 — "Hyperbolic metric on the disc and the Schwarz-Pick lemma"
-- [ ] E-SSA.PR-3 — "Power series for the Bessel and Airy functions"
 - [ ] E-SSA.PR-4 — "Coefficients of a generating function with poles on the unit circle"
 - [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
