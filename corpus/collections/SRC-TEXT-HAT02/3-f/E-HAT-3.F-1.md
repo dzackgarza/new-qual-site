@@ -37,9 +37,20 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §3.F Exercise 1, printed p. 320, both halves of the printed text matching the card. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own. Checked: the strip retractions and their compatibility under gluing; the shrinking-interval schedule and the compactness argument that makes the homotopy continuous; and that the left-hand part of the double telescope is a reverse telescope ending at $X_n$, so the same retraction extends by the identity on the right-hand tail.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 329 carries the running head 320, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.F of Hatcher, *Algebraic Topology* (2002), printed p. 320, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Given maps $f_i: X_i \to X_{i+1}$ for integers $i < 0$, show that the "reverse mapping telescope" obtained by gluing together the mapping cylinders of the $f_i$'s in the obvious way deformation retracts onto $X_0$.
 Similarly, if maps $f_i: X_i \to X_{i+1}$ are given for all $i \in \ZZ$, show that the resulting "double mapping telescope" deformation retracts onto any of the ordinary mapping telescopes contained in it, the union of the mapping cylinders of the $f_i$'s for $i$ greater than a given number $n$.
 :::
