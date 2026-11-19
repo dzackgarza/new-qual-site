@@ -30,6 +30,14 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The definition given is the standard one: the supremum of the sums of chord
+    lengths over partitions of the interval, with the path called rectifiable when
+    that supremum is finite, and the piecewise continuously differentiable case
+    identified with the integral of the speed. Both statements are correct.
 ---
 
 ::: {.problem}
