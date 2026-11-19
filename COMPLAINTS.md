@@ -8403,3 +8403,17 @@ printed book itself.
 
 **The remainder.** Forty-one Chapter IV cards still lack Yang; the queue now starts at IV.3.7
 `P-AGH437NODALPLANEQUARTICNOTAPROJECTION`, and Yang's 4.3.7 through 4.3.9 are on printed p. 88.
+
+## 2026-11-19, sixteenth item: §6.8 Ex. 11 and §7.2 Ex. 5 — correct answers whose proof bodies were all placeholders
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`. Both state the right thing and, on the old text, proved nothing: every `pf-proof` body was a placeholder or a back-reference.
+
+**`E-HK-68-11`, §6.8 Exercise 11, printed p. 225 — answer correct, five bodies rebuilt.** The exercise asks what is wrong with a proof of Theorem 13 that triangulates $T$ and splits $A=D+N$ into diagonal and strictly upper parts. The card's answer is right: nothing shows $D$ and $N$ commute, and they need not. The old bodies were "restate what the proof asserts", a restatement of the claim, "explicit counterexample", "the definition of the Jordan--Chevalley decomposition", a step consisting of three back-references and a `pf-qed` of one. The proof is now five steps: $N=A-D$ is strictly upper triangular; a strictly upper triangular $N$ is nilpotent because $N^ke_i\in\operatorname{span}(e_1,\ldots,e_{i-k})$; the missing hypothesis is $DN=ND$, which Theorem 13 requires; the counterexample $A=[[1,1],[0,2]]$ has $DN=[[0,1],[0,0]]$ and $ND=[[0,2],[0,0]]$; and so the proof does not establish the theorem. Commit `997a6f9a59`.
+
+**`E-HK-72-5`, §7.2 Exercise 5, printed p. 241 — correct, structure rebuilt.** $f(T)$ is block diagonal for $V=V_1\oplus\cdots\oplus V_k$, so $fV$ is the direct sum of the $fV_i$. The old proof's bodies were "take a relation", "linearity", a step that was one back-reference and a conclusion that was two, and it detoured through $\ker f(T)$ without using the result. It is now two steps: $fV=fV_1+\cdots+fV_k$ by linearity and $V_i\subseteq V$; and the sum is direct because each $V_i$ is $f(T)$-invariant, so a relation $\sum f(T)\alpha_i=0$ has each summand equal to the $V_i$-component of $0$. Commit `14008471fd`.
+
+**A page correction.** The first version of `E-HK-72-5` cited printed p. 231, which is §7.1's exercise block; §7.2's list ends on p. 241, and the card now cites that page. The §7.1 list runs pp. 230--231 and the §7.2 list p. 241 — the two sections' exercises are ten pages apart, which is why the wrong page was plausible.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-68-11` numbering 1–5 and `E-HK-72-5` 1–2, QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set. In `E-HK-68-11` the appeal to uniqueness of the Jordan decomposition in the card's earlier step was left as it stood and is not re-proved.
