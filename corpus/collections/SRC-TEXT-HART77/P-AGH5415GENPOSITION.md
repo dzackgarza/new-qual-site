@@ -341,6 +341,20 @@ audit:
     280 that event records is a reading of the page and was not at fault; the
     conclusion drawn from it was. Nothing further was read for this event, the
     pages it rests on being those of the event above.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #157, acceptance item 2: the rendered solution no longer claims a
+    proof it does not give. The head of the solution said part (c) "is proved
+    on the card" and then that "the proof rests on an assertion it does not
+    derive", and the qed remark said the three steps "prove (c), which is as
+    strong as the properness" that the step on the bad locus asserts and does
+    not derive. Both now say part (c) is not proved on this card and that its
+    steps carry it only on that properness; the head also states what the bad
+    locus is. No step, reference, statement or source claim changes, and no
+    earlier event is touched. Not done: the proof of that properness, which is
+    acceptance item 1 and stays open, and the check of any step of the card.
 ---
 
 ::: {.problem}
@@ -383,7 +397,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2, printed p. 277; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The transcription below proves (a), (b), (d) and (e). Part (c) is proved on the card by steps of its own, since no source listed for the card proves it, and the proof rests on an assertion it does not derive.
+The transcription below proves (a), (b), (d) and (e). Part (c) is not proved on this card. Its three steps prove the statement only given the properness of the bad locus --- the set of points $P$ for which some fixed finite word of admissible transformations makes a specified terminal triple collinear --- and the step on that locus asserts that properness without deriving it. No source listed for the card proves part (c) either.
 
 ::: pf
 
@@ -544,7 +558,7 @@ This is the second half of Theorem 4a of Nagata, printed pp. 283--284: if $r\ge9
 :::
 
 ::: pf-qed
-Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} prove (c), which is as strong as the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive, and step [](#part-c-open){.pf-ref} records that no source listed proves it. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
+Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c) only on the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive, and step [](#part-c-open){.pf-ref} records that no source listed proves it; part (c) is not proved on this card. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
 :::
 
 :::
