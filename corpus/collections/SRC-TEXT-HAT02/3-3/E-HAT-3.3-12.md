@@ -51,6 +51,22 @@ audit:
     2-cell homeomorphically onto $S^2$ minus the basepoint, so the degree is $\pm1$ and the
     hypothesis the argument needs is only nonvanishing, which is what the previous exercise's
     converse supplies. No other change; the attaching-word construction is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 12 of §3.3, printed p. 258 with
+    its bracketed hint (the exercises of §3.3 are 1--6 on p. 257, 7--14 on p. 258, 15--26 on p. 259
+    and 27--35 on p. 260, checked at PDF pages 266--269 of the held book), and the printed page is
+    added, the card having had none. Checked: the standard one-vertex cell structure of $M_g$ with
+    attaching word the commutator product; the map on $1$-skeleta sending $a_i,b_i$ to loops for
+    $v_i,w_i$, whose effect on the attaching loop is exactly $r_k$, the attaching word of $M_k$'s
+    $2$-cell, so it extends over the $2$-cell by that cell's characteristic map; and the degree,
+    computed after the collapse $M_k\to M_k/M_k^1=S^2$, where the open $2$-cell maps homeomorphically
+    onto $S^2$ minus a point and the boundary to the basepoint, giving $\pm1$. The contradiction then
+    uses the converse of Exercise 11 (card `E-HAT-3.3-11`, step `#s1`), whose own proof of
+    injectivity of $f^*$ the card records. No defect. Not claimed: a published solution of this
+    exercise, none having been located; the printed hint's construction is followed.
 ---
 
 ::: {.problem}
@@ -59,6 +75,8 @@ As an algebraic application of the preceding problem, show that in a free group 
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 12, printed p. 258.
+
 
 The argument is the card's own, built on the converse of the preceding exercise: a relation of $r_{k}$ as $j$ commutators produces a map $M_{j}\to M_{k}$ of nonzero degree, which is impossible for $j<k$.
 
