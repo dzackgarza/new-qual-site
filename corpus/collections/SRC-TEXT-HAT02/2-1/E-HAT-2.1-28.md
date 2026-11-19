@@ -55,9 +55,10 @@ audit:
     exercise is §2.1 Exercise 28, printed p. 133 (PDF p. 142 in
     tmp/sources/hatcher-2002-algebraic-topology.pdf), where item 28 reads "Let X be the cone on the
     1-skeleton of Delta^3, the union of all line segments joining points of the 1-skeleton to the
-    centre of Delta^3; compute the homology groups of X." The retained Hatcher sets do not reach it:
-    Guanyu Li's §2.1 block, Sam's §2.1 and Koukpari's §2.1 carry no Exercise 28, and the Math 538
-    homework is Chapter 4. The solution section now carries the page and says the argument is the
+    centre of Delta^3; compute the homology groups of X." The retained Hatcher sets do not cover it:
+    Guanyu Li's §2.1 block stops at Exercise 27, Sam's §2.1 carries Exercises 8, 12, 18 and 27, and
+    Koukpari's §2.1 carries 1--7, 9, 11, 12, 15, 19, 20 and 25, 29--31; the Math 538 homework is
+    Chapter 4. The solution section now carries the page and says the argument is the
     card's own.
 ---
 
@@ -69,7 +70,7 @@ Use these calculations to determine which subsets $A \subset X$ have the propert
 :::
 
 ::: {.solution}
-This is Hatcher, Algebraic Topology, §2.1 Exercise 28, printed p. 133 (PDF p. 142), where it reads "Let $X$ be the cone on the 1-skeleton of $\Delta^3$…". No retained solution set covers this exercise — the retained Hatcher sets stop short of §2.1 Exercise 28 — so the argument is the card's own.
+This is Hatcher, Algebraic Topology, §2.1 Exercise 28, printed p. 133 (PDF p. 142), where it reads "Let $X$ be the cone on the 1-skeleton of $\Delta^3$…". No retained solution set covers this exercise: Guanyu Li's §2.1 block stops at Exercise 27, Sam's carries Exercises 8, 12, 18 and 27 of §2.1, and Koukpari's carries 1--7, 9, 11, 12, 15, 19, 20, 25 and 29--31 of §2.1 — so the argument is the card's own.
 Let $G$ be the $1$-skeleton of $\Delta^3$, so $G\cong K_4$, and write
 $$
 X=CG
