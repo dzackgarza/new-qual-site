@@ -25,6 +25,14 @@ audit:
     only the extraction; it now names the examination, its item and the page of
     the scan. The statement is unchanged.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that earlier steps had answered
+    the question, which STYLE-08 forbids; it is dropped, and the last step that carries
+    content is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -159,12 +167,6 @@ so step [](#s1-2){.pf-ref} becomes the usual zero-order definition.
 
 :::
 
-::: pf-qed
-
-Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definition and its standard equivalent
-formulations.
-
-:::
 
 :::
 
