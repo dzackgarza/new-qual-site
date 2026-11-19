@@ -27,6 +27,18 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §4.2. Read against Hatcher, Exercise 19 of §4.2, printed p. 390, and
+    the printed page is added, the card having had none. Checked: the universal cover of a $K(G,1)$
+    is contractible and the preimage of $X^n$ is its $n$-skeleton; the pair has no relative cells in
+    dimensions at most $n$, so $\pi_i(\widetilde X,\widetilde X^n)=0$ there, and the exact sequence
+    of the pair with $\widetilde X$ contractible gives $\pi_i(\widetilde X^n)=0$ for $i<n$; Hurewicz
+    then identifies $\pi_n(\widetilde X^n)$ with $H_n(\widetilde X^n)$, which is the kernel of
+    $d_n:C_n\to C_{n-1}$ — there being no $(n+1)$-cells — and hence free abelian; and covering maps
+    induce isomorphisms on $\pi_n$ for $n\ge2$. No defect.
 ---
 
 ::: {.problem}
@@ -34,6 +46,8 @@ If $X$ is a $K(G, 1)$ CW complex, show that $\pi_n(X^n)$ is free abelian for $n 
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 19, printed p. 390.
+
 Let $p:\widetilde X\to X$ be the universal cover. Since $X$ is a $K(G,1)$, $\widetilde X$ is contractible. The inverse image $\widetilde X^{\,n}=p^{-1}(X^n)$ is the $n$-skeleton of $\widetilde X$.
 
 The pair $(\widetilde X,\widetilde X^{\,n})$ has no relative cells in dimensions at most $n$. Hence
