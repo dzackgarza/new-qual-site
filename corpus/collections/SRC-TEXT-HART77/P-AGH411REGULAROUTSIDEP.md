@@ -28,6 +28,27 @@ audit:
     n = max(2g, 1) this is at least 2, so L(nP) contains a function outside the
     constants, and (f) + nP >= 0 makes f regular away from P. The two cases g = 0
     and g >= 1 are separated correctly.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.1, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.1, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the degree of D = 2P - Q, the Riemann-Roch value l(nD) = n + 1 - g for
+    n > 2g - 2, and the divisor of the resulting f. Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.1 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 
@@ -79,4 +100,6 @@ Fix $n$ as in step [](#s2){.pf-ref}. The constants form a one-dimensional subspa
 The exercise stands on printed p. 297 of Hartshorne, the first of the EXERCISES opening §IV.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text.
 
 Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1, PDF p. 30, text version `tmp/sources/hartshorne-solutions-park.md`, takes $Q\neq P$ and $n>\max\{2g-2,g,1\}$ so that $\ell(n(2P-Q))>1$, giving an effective $D\in\linearsystem{n(2P-Q)}$ whose principal divisor forces a pole only at $P$; the same argument is in Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1.1, PDF p. 4, text version `tmp/sources/hartshorne-solutions-lomont.md`.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.1, printed p. 84, is the Riemann--Roch construction in one paragraph: fix $Q\ne P$ and take $D=2P-Q$ of degree $1$; for $n>\max\{2g-2,g,1\}$ one has $\ell(nD)=n+1-g\ge1$, so there is $f$ with $nD-(f)=D_0$ effective of degree $n$, that is $(f)=D_0-2nP+nQ$, and $f$ has a pole at $P$ and is regular elsewhere.
 :::
