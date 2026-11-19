@@ -17,7 +17,7 @@ A representation of a finite group is a module over the group ring. Over $\CC$ t
 
 ## Simple, semisimple, and indecomposable modules
 
-Simple, indecomposable and semisimple are three different conditions: only one implication holds between the first two, and semisimplicity is a condition on the whole category rather than on one module.
+Simple, indecomposable and semisimple are three different conditions: a simple module is indecomposable, $\ZZ/p^2\ZZ$ is indecomposable and not simple, and a module is semisimple when it is a direct sum of simple submodules, which constrains the module as a whole rather than its submodules; a category of modules is semisimple when every object in it is semisimple.
 
 [[D-4KM4P]]
 
