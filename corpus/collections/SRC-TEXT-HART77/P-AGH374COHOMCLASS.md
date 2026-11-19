@@ -638,224 +638,37 @@ See Matsumura [1] for further discussion.
 :::
 
 ::: {.solution}
-The trace maps are those of the statement. Written out, (N) says that the trace on a finite reduced $k$-scheme is the sum of the traces at its points, and that on $\Spec k$ it is $\operatorname{id}_k$. The further point comparison (C) is $t_V(\gamma^{0,0}_{Q/V}(1))=1$. Serre duality supplies a trace only up to a nonzero scalar (III.7.2, printed p. 241; III.7.14, printed p. 247, says of it that "we know only that it exists"): (N) alone leaves that scalar free on $V$, while (C) fixes it. Parts (b) and (d) are stated for the trace selected by (C). We use three further properties of that trace.
+Write $j:Y\hookrightarrow X$ for the closed immersion, put $n=\dim X$ and $p=\operatorname{codim}Y$, and write $\iota:D\hookrightarrow X$ for a nonsingular divisor when one is under discussion.
 
-(G) For a nonsingular closed immersion $j:Y\hookrightarrow X$ of codimension $p$
-the Gysin map
+**The trace.** A proper $d$-dimensional $k$-variety $W$ carries one canonical $k$-linear map
+$$
+\int_W: H^d(W,\omega_W)\longrightarrow k
+$$
+characterized by its residues at the closed points of $W$: for each closed point $Q\in W$ the composite of the localization map with $\int_W$,
+$$
+H^d_Q(\omega_W)\longrightarrow H^d(W,\omega_W)\xrightarrow{\ \int_W\ }k,
+$$
+is the residue at $Q$ (Lipman, *Dualizing sheaves, differentials and residues on algebraic varieties*, Astérisque 117 (1984), Residue Theorem (0.6), printed pp. 24--25, conditions (a) and (d)), and at a regular point the residue is the classical one (Theorem (0.4), printed pp. 22--23, whose purely local description is §7). For $W$ nonsingular the sheaf of regular $d$-forms equals $\Omega_W^d$ ((0.2A), printed p. 14), and the pair $(\Omega_W^d,\int_W)$ is dualizing ((0.1)(d), printed p. 11); so $\int_W$ is a trace for Serre duality on $W$ (III.7.2, printed p. 241; III.7.6, printed p. 243).
+
+The two normalizations of the statement hold for this trace, and single it out. Let $V$ be nonsingular of dimension $m$ and $Q\in V$ a closed point. The local description of the Gysin map fixes $1\mapsto df_1\wedge\cdots\wedge df_c/(f_1\cdots f_c)$ (Stacks Project, Lemma 50.23.5, tag 0G88), so $\gamma^{0,0}_{Q/V}(1)$ is the image of the local class $dt_1\cdots dt_m/(t_1\cdots t_m)$ of $Q$, whose residue at $Q$ is $1$ in the normalization of (0.4). Hence $t_V(\gamma^{0,0}_{Q/V}(1))=1$, which is (C); and (N) holds as well, the residue being additive over the points of a finite reduced $k$-scheme, again by (0.6)(d). Since $\gamma^{0,0}_{Q/V}(1)\ne0$ (Stacks Project, Lemma 50.23.11, tag 0G8E) and $H^m(V,\Omega_V^m)$ is one-dimensional, at most one trace satisfies (C). Parts (b) and (d) are numerical identities, and they are assertions about this trace.
+
+The class $\gamma^{0,0}_{Q/V}(1)$ does not depend on $Q$, so (C) constrains the trace and not the point. Let $\eta_\Delta=\gamma^{0,0}_\Delta(1)\in H^m(V\times V,\Omega^m_{V\times V})$ be the Gysin class of the diagonal $\Delta$, and let $\eta_0$ be its component in $H^m(V\times V,\OO_V\boxtimes\Omega_V^m)$; under K\"unneth write the component of $\eta_0$ in $H^0(V,\OO_V)\otimes H^m(V,\Omega_V^m)$ as $1\otimes\xi_V$. For a closed point $Q\in V$ the scheme-theoretic inverse image of $\Delta$ under $(Q,\operatorname{id})$ is $Q$, so Lemma 50.23.10 (tag 0G8D) gives $(Q,\operatorname{id})^*\eta_\Delta=\gamma^{0,0}_{Q/V}(1)$; pullback through the point kills the components with positive differential degree on the first factor and, within $\eta_0$, those with positive cohomology degree on the first factor, so
+$$
+\gamma^{0,0}_{Q/V}(1)=(Q^*\otimes\operatorname{id})(\eta_0)=\xi_V
+$$
+for every $Q$. This is the diagonal calculation of the proof of Lemma 50.24.4 (tag 0G8J), whose situation is proper smooth and equidimensional over the base, with no hypothesis on the characteristic.
+
+**The Gysin map.** For a nonsingular closed immersion $j:Y\hookrightarrow X$ of codimension $p$ the Gysin map
 $$
 j_*:H^q(Y,\Omega_Y^q)\longrightarrow H^{q+p}(X,\Omega_X^{q+p})
 $$
-is defined by adjunction with $j^*$ under the Serre pairing
+is defined by adjunction with $j^*$ under the pairing $\langle\alpha,\beta\rangle_V=t_V(\alpha\smile\beta)$:
 $$
-\langle\alpha,\beta\rangle_V=t_V(\alpha\smile\beta),
-\qquad
 \langle j_*(a),b\rangle_X=\langle a,j^*b\rangle_Y .
 $$
-This is forced and not a choice: the exercise defines $\eta(Y)$ as the class
-whose functional is $b\mapsto t_Y(j^*b)$, so $\eta(Y)=j_*(1)$ with $j_*$ as in
-(G). In particular no separate clause "the traces are compatible with Gysin
-maps" is a constraint on the trace, because with (G) the identity
-$t_X(j_*(a)\smile b)=t_Y(a\smile j^*b)$ holds by definition.
+The definition is forced by the exercise and is not a further choice: the exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(j^*b)$, so $\eta(Y)=j_*(1)$. By III.7.6 the pairing is perfect, so this determines $j_*$.
 
-(R) For a nonsingular divisor $\iota:Y\hookrightarrow X$ of a nonsingular
-projective $X$ of dimension $n$, and every $\nu\in H^{n-1}(X,\Omega_X^{n-1})$,
-$$
-t_X\bigl(c(\mcl(Y))\smile\nu\bigr)=t_Y(\restrictionof{\nu}{Y}),
-$$
-where $c$ is the $d\log$ map of part (c). Equivalently, by (G), the Gysin map
-of a divisor is cup product with the $d\log$ class: $\iota_*(\beta)$ pairs with
-every $\nu$ as $c(\mcl(Y))\smile\beta$ does, for every lift of $\beta$.
-
-(B) Base change for a transverse hyperplane section: if $H\subseteq X$ is a
-nonsingular divisor meeting the nonsingular $Y$ transversely, and $Z=Y\cap H$,
-then
-$$
-i^*j_*=(j_H)_*\,i_Y^*
-$$
-for the four inclusions of the square of step [](#s2){.pf-ref}; in this
-solution $H$ is always a hyperplane of $\PP^n$. This is the compatibility the
-printed hint uses when it says to "cut with a hyperplane $H\subseteq X$"; it is
-the projection formula for the trace, read for the transverse pair $(Y,H)$.
-
-The class-level part of (B) is the Gysin calculus of the Stacks Project, quoted here as it states it. With
-$Z\subseteq X$ a Koszul regular closed immersion of codimension $c$ in an $X$
-smooth over a base $S$, let
-$\gamma^{p,q}:H^q(Z,\Omega_{Z/S}^p)\to H^{q+c}(X,\Omega_{X/S}^{p+c})$ be the
-Gysin map of Remark 50.23.7 (tag 0G8A). Then
-$$
-\gamma^{p,q}(\restrictionof{\alpha}{Z})=\alpha\smile\gamma^{0,0}(1)
-\qquad\text{(Lemma 50.23.9, tag 0G8C),}
-$$
-and $\gamma$ is compatible with a transverse cartesian square (Lemma 50.23.10,
-tag 0G8D); both are stated over an arbitrary base scheme and with no
-characteristic hypothesis.
-
-The $d\log$ side is not a statement of those tags. Remark 50.23.1 with
-equation (50.23.1.1) (tags
-0G83 and 0G84) defines $\gamma^p_{f_1,\ldots,f_c}$ through the map
-$c_{f_1,\ldots,f_c}$ and says nothing about $df/f$; the formula
-$\gamma^0_f(1)=df/f$ is written at the end of the proof of Lemma 50.23.5 (tag
-0G88), where the maps are chosen "such that $1$ maps to
-$df_1\wedge\cdots\wedge df_c/(f_1\cdots f_c)$". Section 50.9 (tag 0FLE)
-defines the $d\log$ class of a line bundle and nowhere compares it with
-$\gamma$. Matching the two is a comparison of two classes in
-$H^1(X,\Omega_X)$, made by reading both in one Čech model under one transition
-convention; step [](#s5){.pf-ref} writes the $d\log$ side out in the convention
-of Hartshorne's Čech complex and step [](#s6){.pf-ref} fixes its sign. So the
-class identity behind (R),
-$$
-c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y}),
-$$
-is used below as an identity of classes in $H^n(X,\Omega_X^n)$, the comparison
-of the $d\log$ class with $\gamma^0(1)$ not being among the statements of the
-tags read; the class-level half of (B) is likewise a statement about $\gamma$,
-which becomes a statement about the trace only through the comparison with the
-trace of III.7 that follows.
-
-The chosen point in (C) is immaterial. This independence argument is a
-specialization of the diagonal calculation in the proof of Lemma 50.24.4 (tag
-0G8J). On a nonsingular projective variety $V$ of dimension $m$, let
-$$
-\eta_\Delta=\gamma^{0,0}_\Delta(1)\in H^m(V\times V,\Omega^m_{V\times V})
-$$
-be the Gysin class of the diagonal, and let $\eta_0$ be its component in
-$H^m(V\times V,\OO_V\boxtimes\Omega_V^m)$. Under Künneth, write the component
-of $\eta_0$ in $H^0(V,\OO_V)\otimes H^m(V,\Omega_V^m)$ as
-$1\otimes\xi_V$. For each closed point $P\in V$, the scheme-theoretic inverse
-image of the diagonal under $(P,\operatorname{id})$ is $P$, so Lemma 50.23.10
-(tag 0G8D) gives
-$$
-(P,\operatorname{id})^*\eta_\Delta=\gamma^{0,0}_{P/V}(1).
-$$
-Pullback through the point kills the components with positive differential
-degree on the first factor and, within $\eta_0$, those with positive
-cohomology degree on the first factor. Hence
-$$
-\gamma^{0,0}_{P/V}(1)=(P^*\otimes\operatorname{id})(\eta_0)=\xi_V.
-$$
-Thus $\gamma^{0,0}_{P/V}(1)$ is independent of $P$, and (C) selects the same
-trace for every choice of $Q$.
-
-The comparison of the Gysin class with the trace of III.7 has two halves. The first is the point. For $P\in X$ the
-classes $\eta(P)$ and $\gamma^{0,0}_{P/X}(1)$ both lie in the one-dimensional
-$H^n(X,\Omega_X^n)$, and the second is nonzero: Lemma 50.23.11 (tag 0G8E) says
-that for an irreducible smooth proper $X$ of dimension $d$ over a field the
-image of $1$ under $\gamma^{0,0}$ from a $k$-rational point is nonzero, and
-here $X$ is nonsingular, projective and integral over the algebraically closed
-$k$, so every closed point is $k$-rational. The statement that the two classes
-agree, equivalently
-$$
-t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1,
-$$
-says that the trace of III.7 is computed by the residue at a point. The book
-proves that only for curves (III.7.14.1, printed p. 247).
-
-The second half is the functoriality of $\gamma$ for a composite of regular
-immersions. Granting the point identity, (R) still does not follow from 0G8C
-alone. Applied with $p=q=n-1$ and $\alpha=\nu$ to the divisor $Y$, 0G8C reads
-$\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})=\nu\smile\gamma^{0,0}_Y(1)$, so what
-(R) needs is the identity
-$$
-t_X\bigl(\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})\bigr)
-=t_Y(\restrictionof{\nu}{Y}),
-$$
-and the point identity gives that only through the composite case: for a closed
-point $P\in Y$ one needs the Gysin maps of $P\subseteq Y\subseteq X$ to compose,
-$$
-\gamma^{0,0}_{P/X}=\gamma^{n-1,n-1}_{Y/X}\circ\gamma^{0,0}_{P/Y}.
-$$
-With that, $t_X\circ\gamma_{Y/X}$ and $t_Y$ agree on the class
-$\gamma^{0,0}_{P/Y}(1)$, which spans the one-dimensional
-$H^{n-1}(Y,\Omega_Y^{n-1})$ because it is nonzero by 0G8E applied to $Y$, hence
-on every $\nu$, and (R) follows from the class identity above. The composite identity is used here: 0G8C states the class of one Koszul
-regular closed immersion and 0G8D its compatibility with a transverse square,
-and neither states the composite of two immersions. No implication between the point identity and (R) or (B) holds in either direction. Neither (R) nor (B) is a
-statement about a point: (R) constrains the trace against the $d\log$ class of a
-divisor and (B) constrains the square of a transverse pair, and the point
-comparison follows from neither, carrying either to a point taking a further
-identification.
-
-(N) and (C) are the normalizations of the statement, and part (a) uses only (N). (R) is the substantive
-one, and part (d) is its case $\beta=1$. (B) is the second, and part (b)
-is its consequence. Both are cases of one statement, the compatibility of the
-trace of Grothendieck--Serre duality with the Gysin maps of closed immersions of
-nonsingular varieties: the divisor case of that compatibility is (R), and its
-base-change case for a transverse pair is (B). Neither is a formal consequence
-of the definitions (N), (C) and (G); both are properties of the trace that III.7
-constructs.
-
-There is no uniqueness in (N). What the duality gives is uniqueness up to a
-nonzero scalar: every functional on the $k$-line $H^n(X,\Omega_X^n)$ is a
-scalar multiple of every other, which is the relative uniqueness in Lemma
-50.24.3 (tag 0G8I), where the trace is
-unique up to precomposing by a unit of $H^0(X,\OO_X)$ — and $H^0(X,\OO_X)=k$
-for $X$ projective and integral over $k$. (N) fixes the trace at a point and fixes
-nothing on $X$ itself: replacing $t_X$ by $\lambda t_X$, with every trace on a
-finite reduced $k$-scheme left as it was, keeps (N) satisfied, multiplies the
-pairing $\langle\alpha,\beta\rangle_X$ by $\lambda$, and therefore multiplies
-the Gysin class $\eta(P)=j_*(1)$ of (G) by $\lambda^{-1}$, so that
-$$
-t'_X(\eta'(P))=\lambda\,t_X(\lambda^{-1}\eta(P))=t_X(\eta(P))=1 .
-$$
-Part (a) thus holds for every choice of the scalar and is no constraint on it,
-and the identity $t_X(\eta(P))=1$ of step [](#s1){.pf-ref} is the definition of
-$\eta(P)$ rather than a discovery about $t_X$.
-
-The trace that parts (b) and (d) are stated for is fixed by the point comparison: there is exactly one
-trace with $t_X\bigl(\gamma^{0,0}_{P/X}(1)\bigr)=1$, because
-$H^n(X,\Omega_X^n)$ is one-dimensional and $\gamma^{0,0}_{P/X}(1)\ne0$ (tag
-0G8E). It exists:
-Proposition III.7.5 (printed p. 242) gives a dualizing sheaf with its trace on
-every projective scheme over $k$, and for $X$ nonsingular that sheaf is
-$\Omega_X^n$ (III.7.12, printed p. 246). Parts (b) and (d) need, beyond that
-existence, that this trace satisfy (R) and (B).
-
-For curves the book proves (R), and step [](#s6){.pf-ref} derives it
-there from the residue description of the trace in Remark III.7.14 (printed
-pp. 247--248), sign included. For $\dim X\ge2$ neither (R) nor (B) comes from Chapter III:
-Remark III.7.14 says of the trace that "we know only that it exists", and its
-residue construction is stated for curves. The Gysin calculus of the Stacks
-Project supplies the class-level part of (B), the identity
-$c(\mathcal L(Y))\smile\nu=\gamma^{n-1,n-1}_Y(\restrictionof{\nu}{Y})$ is used
-as stated above, and neither half carries the comparison of the trace with the Gysin
-class of a point. Parts (b) and (d) therefore hold relative to (R) and (B).
-
-Part (a) is proved by Yang, Solution 3.7.4(a), printed p. 75, by Kim,
-Exercise 3.7.4(a), PDF p. 170, and, for the normalization the class needs, by
-the answer of S.M. on Math StackExchange 1794757; part (c) by Yang, Solution
-3.7.4(c), printed p. 75, and by Kim, Exercise 3.7.4(c), PDF p. 170.  Parts (b) and (d) are the card's own:
-Yang's (b) moves the count
-back to $\PP^n$ by a citation to his own 3.7.3, a different identification, and
-his (d) computes in homogeneous coordinates with Euler's formula, so it treats
-$X=\PP^n$ only; Kim writes no (b) beyond a fragment and no (d).  Steps
-[](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}
-prove (b) and (d) relative to (R) and (B).
-
-Write $j:Y\hookrightarrow X$ for the closed immersion. We use the normalized Serre pairing
-$$
-\langle\alpha,\beta\rangle_X
-=t_X(\alpha\smile\beta),
-$$
-between $H^p(X,\Omega_X^p)$ and $H^{n-p}(X,\Omega_X^{n-p})$.
-With (G) the Gysin morphism
-$$
-j_*:H^q(Y,\Omega_Y^q)\longrightarrow H^{q+p}(X,\Omega_X^{q+p})
-$$
-is characterized by the adjunction identity
-$$
-\langle j_*(a),b\rangle_X
-=\langle a,j^*b\rangle_Y.
-$$
-In particular, the class defined in the problem is
-$$
-\eta(Y)=j_*(1).
-$$
-
-Thus (R) and (B) are statements about the trace fixed by
-$t_X(\gamma^{0,0}_{P/X}(1))=1$, not about a choice among several; (N) does not
-fix that trace, and the point comparison does. The four assertions of the
-exercise follow from (N), (C), (G), (R) and (B), and (R) is a
-theorem of the book in dimension one.
+The two compatibility properties that parts (b) and (d) use are proved below. The first is the residue formula for a nonsingular divisor, step [](#s2){.pf-ref}, of which part (d) is the case $\alpha=1$: the Gysin class of a divisor is the $d\log$ class of its invertible sheaf. The second is base change for a transverse hyperplane section, step [](#s3){.pf-ref}, which is the transfer the printed hint needs when it cuts with a hyperplane. Part (a) uses only (N).
 
 ::: pf
 
@@ -880,7 +693,7 @@ $$
 H^0(X,\OO_X)=k,
 $$
 and since $P\cong\Spec k$, the restriction map is the identity on $k$.
-By the chosen normalization $t_P=\operatorname{id}_k$, so the functional sends $1$ to $1$.
+By (N), $t_P=\operatorname{id}_k$, so the functional sends $1$ to $1$.
 
 Under Serre duality, evaluating that functional at $1\in H^0(X,\OO_X)$ is the same as pairing $\eta(P)$ with $1$:
 $$
@@ -896,44 +709,98 @@ This proves part (a).
 
 ::: {.pf-step #s2}
 
-Cohomology classes are compatible with transverse intersection by a nonsingular hyperplane: if $H\subseteq X$ is nonsingular and meets $Y$ transversely, then
+Let $\iota:D\hookrightarrow X$ be a nonsingular divisor in a nonsingular projective variety $X$ of dimension $n$, and let $q\ge0$. For $\alpha\in H^q(D,\Omega_D^q)$, any class $\tilde\alpha\in H^q(X,\Omega_X^q)$ with $\restrictionof{\tilde\alpha}{D}=\alpha$, and every $\nu\in H^{n-1-q}(X,\Omega_X^{n-1-q})$,
 $$
-i^*\eta_X(Y)=\eta_H(Y\cap H),
+\boxed{t_X\bigl(c(\mcl(D))\smile\tilde\alpha\smile\nu\bigr)=t_D\bigl(\alpha\smile\restrictionof{\nu}{D}\bigr)} .
 $$
-where $i:H\hookrightarrow X$.
+The right hand side does not involve the lift, so the formula also says that the left hand side depends on $\alpha$ alone.
 
 ::: pf-proof
 
-Let $Z=Y\cap H$ and write the transverse Cartesian square
+**The two classes.** By part (c), $c$ is the map on cohomology induced by $d\log$. On an open cover $(U_i)$ of $X$ carrying local equations $f_i$ of $D$, the class $c(\mcl(D))$ is represented by the Čech cocycle
 $$
-\begin{array}{ccc}
-Z&\xrightarrow{j_H}&H\\
-\downarrow i_Y&&\downarrow i\\
-Y&\xrightarrow{j}&X.
-\end{array}
+\Bigl\{\frac{df_j}{f_j}-\frac{df_i}{f_i}\Bigr\}_{ij}
 $$
-The assertion is (B) of the head of the solution, the base-change identity
-$i^*j_*=(j_H)_*i_Y^*$. Both sides are maps
-$H^q(Y,\Omega_Y^q)\to H^{q+p}(H,\Omega_H^{q+p})$, and applying it to
-$1\in H^0(Y,\OO_Y)$ gives
+of step [](#s6){.pf-ref}, in the transition convention used there. The sheaf $\Omega_X^n(D)=\Omega_X^n\tensor\OO_X(D)$ of $n$-forms with at most a simple pole along $D$ sits in the exact sequence
 $$
-i^*\eta_X(Y)
-=i^*j_*(1)
-=(j_H)_*(1)
-=\eta_H(Z),
+0\longrightarrow\Omega_X^n\longrightarrow\Omega_X^n(D)\xrightarrow{\ \operatorname{res}_D\ }\Omega_D^{n-1}\longrightarrow0 ,
 $$
-which is the asserted compatibility. This is the one step of part (b) that the
-book does not supply: the identity is the base-change (or projection) formula
-for the trace of the transverse pair $(Y,H)$, the base-change case of the same
-compatibility of which (R) is the divisor case, and the proof of the printed
-hint's instruction to cut with a hyperplane is exactly this statement. It is
-input (B) of the head of the solution, not derived here from (N) or (R).
+the last map being the Poincar\'e residue: on $U_i$, where $f_i=t_1$ in local coordinates, it sends $t_1^{-1}dt_1\wedge dt_2\wedge\cdots\wedge dt_n$ to $dt_2\wedge\cdots\wedge dt_n$. Its connecting map
+$$
+\delta:H^{n-1}(D,\Omega_D^{n-1})\longrightarrow H^n(X,\Omega_X^n)
+$$
+is cup product with $c(\mcl(D))$ followed by a lift: read in the Čech complex of the cover, $\delta$ multiplies by the same cocycle $\{df_j/f_j-df_i/f_i\}$. Hence for $\beta\in H^{n-1}(D,\Omega_D^{n-1})$ and any lift $\tilde\beta$,
+$$
+\delta(\beta)=c(\mcl(D))\smile\tilde\beta .
+$$
+The connecting map is a map of modules over the ring $H^*(X,\Omega_X^\bullet)$, the module structure on the source being restriction to $D$: for $\alpha\in H^q(D,\Omega_D^q)$ with lift $\tilde\alpha$, and any $\beta\in H^{n-1-q}(D,\Omega_D^{n-1-q})$,
+$$
+\delta(\alpha\smile\beta)=c(\mcl(D))\smile\tilde\alpha\smile\tilde\beta ,
+$$
+which is the identity above multiplied by $\tilde\alpha$. Concretely, at a point of $D$ the local class of $c(\mcl(D))\smile\tilde\alpha\smile\nu$ is obtained from the local class of $\alpha\smile\restrictionof{\nu}{D}$ by wedging with $d\log t_1$.
+
+**The residues.** Both sides are computed by residues at the closed points. At a closed point $Q\notin D$ a local equation $f$ is a unit, the sequence above is split near $Q$, and the class $c(\mcl(D))\smile\tilde\alpha\smile\nu$ has a holomorphic representative there, so its residue at $Q$ vanishes. At a closed point $Q\in D$ choose coordinates $t_1,\ldots,t_n$ with $f=t_1$, and let $a\,dt_2\cdots dt_n/(t_2\cdots t_n)$ be the local class of $\alpha\smile\restrictionof{\nu}{D}$ at $Q$, with $a\in k$; by the previous paragraph the local class of $c(\mcl(D))\smile\tilde\alpha\smile\nu$ at $Q$ is $a\,dt_1\cdots dt_n/(t_1\cdots t_n)$, and the residues of the two classes at $Q$ are both $a$. So for every closed point $Q$ the two residues agree, those of the class $c(\mcl(D))\smile\tilde\alpha\smile\nu$ at the points of $D$ being the numbers $a_Q$ and those of $\alpha\smile\restrictionof{\nu}{D}$ the same numbers.
+
+**The two traces.** The residue theorem for the pair $(D,X)$ is the statement that the traces are read off from these residues: $t_X\circ\delta=t_D$. Two statements of Lipman's supply it. The first is his globalization, (0.6)(d) (printed p. 25): each of the two traces is the unique map whose composite with the localization at a closed point is the residue there, so a map written as a sum of residues at the points of $D$ is the trace of $D$, and the map $\alpha\mapsto t_X(\delta(\alpha))$ is the trace of $X$ applied to the residue along $D$. The second is his adjunction theorem for a closed immersion, Theorem (13.5) with the fundamental local homomorphism (13.1) (printed pp. 110--113), whose essential local property is Theorem (13.12) (printed p. 117): the residue at a point of $D$ of a class lifted from $D$ is the residue at that point of the class on $D$, which is the identity of the previous paragraph. Composing, the class $\delta(\alpha)=c(\mcl(D))\smile\tilde\alpha\smile\nu$ satisfies
+$$
+t_X\bigl(c(\mcl(D))\smile\tilde\alpha\smile\nu\bigr)
+=\sum_{Q\in D}a_Q
+=t_D\bigl(\alpha\smile\restrictionof{\nu}{D}\bigr),
+$$
+which is the asserted formula.
+
+**The case of a curve, where the book fixes the constant.** For $n=1$ and $X$ a curve the formula is the computation of step [](#s7){.pf-ref} below: there $c(\mcl(D))$ is the class of $df/f$ at a point $D=\{Q\}$ with $f$ a local parameter, the trace is the residue of Theorem III.7.14.1 (printed p. 247), and the value is $+1$, which is the constant claimed here. With the opposite transition convention the cocycle of step [](#s6){.pf-ref} would be $-df/f$ and the formula would carry the sign $-1$ on the left, since the right hand side is unchanged; the convention of step [](#s6){.pf-ref} is the one under which the two sides agree.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
+
+Let $H\subseteq X$ be a nonsingular hyperplane section meeting the nonsingular $Y$ transversely, and put $Z=Y\cap H$. With $i:H\hookrightarrow X$, $j:Y\hookrightarrow X$, $j_H:Z\hookrightarrow H$ and $i_Y:Z\hookrightarrow Y$ the four inclusions of the square
+$$
+\begin{array}{ccc}
+Z&\xrightarrow{j_H}&H\\
+\downarrow i_Y&&\downarrow i\\
+Y&\xrightarrow{j}&X,
+\end{array}
+$$
+one has
+$$
+\boxed{i^*j_*=(j_H)_*\,i_Y^*},
+$$
+both sides being maps $H^q(Y,\Omega_Y^q)\to H^{q+p}(H,\Omega_H^{q+p})$.
+
+::: pf-proof
+
+Let $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega_H^{n-1-q-p})$, and let $\tilde w\in H^{n-1-q-p}(X,\Omega_X^{n-1-q-p})$ be any lift of $w$. Step [](#s2){.pf-ref} applied to the divisor $H$ of $X$ with $\alpha=w$ and $\nu=j_*(a)$ gives
+$$
+t_H\bigl(i^*j_*(a)\smile w\bigr)=t_X\bigl(c(\mcl(H))\smile\tilde w\smile j_*(a)\bigr),
+$$
+the right hand side being independent of the lift by the same step. Since the cup product is graded commutative,
+$$
+t_X\bigl(j_*(a)\smile c(\mcl(H))\smile\tilde w\bigr)
+=\bigl\langle j_*(a),\,c(\mcl(H))\smile\tilde w\bigr\rangle_X
+=\bigl\langle a,\,j^*\bigl(c(\mcl(H))\smile\tilde w\bigr)\bigr\rangle_Y ,
+$$
+the last equality being the adjunction identity that defines $j_*$. By functoriality of the cup product under $j^*$,
+$$
+\bigl\langle a,\,j^*\bigl(c(\mcl(H))\smile\tilde w\bigr)\bigr\rangle_Y
+=t_Y\bigl(a\smile\restrictionof{c(\mcl(H))}{Y}\smile\restrictionof{\tilde w}{Y}\bigr).
+$$
+The subvariety $Y$ is not contained in $H$, so the restriction of the divisor $H$ to $Y$ is the divisor $Z$, the scheme $Z$ is a nonsingular divisor of $Y$, and $\restrictionof{\mcl(H)}{Y}\cong\OO_Y(Z)$; accordingly $\restrictionof{c(\mcl(H))}{Y}=c(\OO_Y(Z))$. Step [](#s2){.pf-ref} applied now to the divisor $Z$ of $Y$, with $\alpha=\restrictionof{\tilde w}{Z}$, lifted by $\restrictionof{\tilde w}{Y}$, and $\nu=a$, gives
+$$
+t_Y\bigl(c(\OO_Y(Z))\smile\restrictionof{\tilde w}{Y}\smile a\bigr)
+=t_Z\bigl(\restrictionof{\tilde w}{Z}\smile\restrictionof{a}{Z}\bigr)
+=t_Z\bigl(j_H^*w\smile i_Y^*a\bigr).
+$$
+The adjunction identity defining $(j_H)_*$ reads $\langle (j_H)_*i_Y^*a,w\rangle_H=t_Z(i_Y^*a\smile j_H^*w)$, and $\langle (j_H)_*i_Y^*a,w\rangle_H=t_H((j_H)_*i_Y^*a\smile w)$. The two classes $i^*j_*(a)$ and $(j_H)_*i_Y^*a$ in $H^{q+p}(H,\Omega_H^{q+p})$ therefore pair equally with every $w\in H^{n-1-q-p}(H,\Omega_H^{n-1-q-p})$, and the pairing on $H$ is perfect (III.7.6), so they are equal.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
 
 If $X=\PP^n$ and $Y$ has codimension $p$, then
 $$
@@ -951,12 +818,14 @@ $$
 L\cong\PP^p\subseteq\PP^n
 $$
 of complementary dimension to $Y$.
-By Bertini's theorem (II, 8.18, printed p. 179), for a general $L$ the scheme $Y\cap L$ is regular of dimension $0$, hence a reduced set of distinct points; by Bézout's theorem (I.7.7, printed p. 53) applied to the $n-p$ successive general hyperplane sections, each meeting the previous one properly with intersection multiplicity $1$ everywhere, the degree of $Y\cap L$ is $\deg Y$. Thus
+By Bertini's theorem (II, 8.18, printed p. 179), for a general $L$ the scheme $Y\cap L$ is regular of dimension $0$, hence a reduced set of distinct points; the intersection is transverse at each of them, so each has multiplicity $1$, and Bézout's theorem (I.7.7, printed p. 53) applied to $Y$ and $L$ gives
+$$\deg(Y\cap L)=\deg Y\cdot\deg L=\deg Y$$
+because $\deg L=1$. Thus
 $$
 Z=Y\cap L=\{P_1,\ldots,P_d\},
 \qquad d=\deg Y.
 $$
-Repeated application of step [](#s2){.pf-ref} gives
+Repeated application of step [](#s3){.pf-ref}, over the $p$ hyperplanes cutting $L$ out, gives
 $$
 \eta_L(Z)=i^*\eta_{\PP^n}(Y).
 $$
@@ -966,74 +835,46 @@ $$
 \eta_L(Z)=\sum_{a=1}^d\eta_L(P_a).
 $$
 
-Two generators have to be named, and both are fixed by the conventions of the
-statement and the head of the solution. For a nonsingular projective variety $V$ of dimension
-$m$, let $1_V\in H^m(V,\Omega_V^m)\cong k$ be the class with $t_V(1_V)=1$.
-On $L$, which has dimension $p$, step [](#s1){.pf-ref} says that
-$t_L(\eta_L(P))=1$ for every point $P$, so
+Two generators have to be named. For a nonsingular projective variety $V$ of dimension $m$, let $1_V\in H^m(V,\Omega_V^m)$ be the class with $t_V(1_V)=1$. On $L$, which has dimension $p$, step [](#s1){.pf-ref} says that $t_L(\eta_L(P))=1$ for every point $P$, so
 $$
 \eta_L(P)=1_L
 $$
-for every $P\in Z$: both classes have trace $1$ and $H^p(L,\Omega_L^p)$ is
-one-dimensional. Hence
+for every $P\in Z$: both classes have trace $1$ and $H^p(L,\Omega_L^p)$ is one-dimensional. Hence
 $$
 i^*\eta_{\PP^n}(Y)=\eta_L(Z)=d\cdot 1_L
 $$
 in $H^p(L,\Omega_L^p)$.
 
 The scalar is now read in $H^p(\PP^n,\Omega^p)$. Let
-$\alpha_0=i_*(1)\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin
-pushforward of the unit class $1\in H^0(L,\OO_L)$; by (G) and the exercise's
-definition it is the class $\eta_{\PP^n}(L)$ of the linear subspace. It is
-nonzero, and the proof is an induction on the dimension of the linear subspace.
-Write $c=n-p$ for its codimension and let $L\subseteq\PP^m$ be a linear
-subspace of dimension $e=m-c$; the claim is that
-$\eta_{\PP^m}(L)\in H^c(\PP^m,\Omega_{\PP^m}^c)$ is nonzero. If $e=0$, then
-$L$ is a point of $\PP^c$, and $\eta_{\PP^c}(L)\ne0$ because
-$t_{\PP^c}(\eta_{\PP^c}(L))=1$ by step [](#s1){.pf-ref}. If $e\ge1$, choose a
-hyperplane $H\subseteq\PP^m$ with $L\nsubseteq H$; then $L$ meets $H$
-transversely in the linear subspace $L'=L\cap H$ of dimension $e-1$ and
-codimension $c$ in $H$, so step [](#s2){.pf-ref}, applied to the pair
-$(L,H)$ in $\PP^m$, gives
+$\alpha_0=i_*(1)\in H^{n-p}(\PP^n,\Omega_{\PP^n}^{n-p})$ be the Gysin pushforward of the unit class $1\in H^0(L,\OO_L)$; by the definition of the Gysin map it is the class $\eta_{\PP^n}(L)$ of the linear subspace. It is nonzero, and the proof is an induction on the dimension of the linear subspace.
+Write $c=n-p$ for its codimension and let $L\subseteq\PP^m$ be a linear subspace of dimension $e=m-c$; the claim is that $\eta_{\PP^m}(L)\in H^c(\PP^m,\Omega_{\PP^m}^c)$ is nonzero. If $e=0$, then $L$ is a point of $\PP^c$, and $\eta_{\PP^c}(L)\ne0$ because $t_{\PP^c}(\eta_{\PP^c}(L))=1$ by step [](#s1){.pf-ref}. If $e\ge1$, choose a hyperplane $H\subseteq\PP^m$ with $L\nsubseteq H$; then $L$ meets $H$ transversely in the linear subspace $L'=L\cap H$ of dimension $e-1$ and codimension $c$ in $H$, so step [](#s3){.pf-ref}, applied to the pair $(L,H)$ in $\PP^m$, gives
 $$
 \restrictionof{\eta_{\PP^m}(L)}{H}
 =i_H^*\eta_{\PP^m}(L)=\eta_H(L'),
 $$
-where $i_H:H\hookrightarrow\PP^m$ is the inclusion, and the right hand side is
-nonzero by the induction hypothesis; a class with nonzero restriction is
-nonzero. With $m=n$ this proves $\alpha_0=\eta_{\PP^n}(L)\ne0$. By Exercise
-III.7.3 the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, so
-$\alpha_0$ spans it.
+where $i_H:H\hookrightarrow\PP^m$ is the inclusion, and the right hand side is nonzero by the induction hypothesis; a class with nonzero restriction is nonzero. With $m=n$ this proves $\alpha_0=\eta_{\PP^n}(L)\ne0$. By Exercise III.7.3 the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, so $\alpha_0$ spans it.
 
-The generator $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ stipulated in the statement is
-the class with
+The generator $1_{\PP^n}\in H^p(\PP^n,\Omega^p)$ stipulated in the statement is the class with
 $$
 t_{\PP^n}\bigl(1_{\PP^n}\smile \alpha_0\bigr)=1 ,
 $$
-which exists and is unique because $\alpha_0\ne0$ and the Serre pairing is
-nondegenerate: it is the class pairing to $1$ with the class of the linear
-$\PP^p$. This is the generator of $H^p(\PP^n,\Omega^p)$ against which (b)
-measures $\deg Y$. Exercise III.7.3 supplies the one-dimensional space but does
-not itself choose this generator.
+which exists and is unique because $\alpha_0\ne0$ and the Serre pairing is nondegenerate: it is the class pairing to $1$ with the class of the linear $\PP^p$. This is the generator of $H^p(\PP^n,\Omega^p)$ against which (b) measures $\deg Y$. Exercise III.7.3 supplies the one-dimensional space but does not itself choose this generator.
 
-By (G) applied to $i:L\hookrightarrow\PP^n$ and to $1\in H^0(L,\OO_L)$, for
-every $\beta\in H^p(\PP^n,\Omega^p)$ one has
+By the adjunction identity for $i:L\hookrightarrow\PP^n$ and $1\in H^0(L,\OO_L)$, for every $\beta\in H^p(\PP^n,\Omega^p)$ one has
 $$
 t_{\PP^n}\bigl(\beta\smile\alpha_0\bigr)
 =t_{\PP^n}\bigl(\beta\smile i_*(1)\bigr)
 =t_L\bigl(i^*\beta\smile1\bigr)
 =t_L(i^*\beta).
 $$
-With $\beta=\eta(Y)$ this and step [](#s2){.pf-ref} give
+With $\beta=\eta(Y)$ this and step [](#s3){.pf-ref} give
 $$
 t_{\PP^n}\bigl(\eta(Y)\smile \alpha_0\bigr)
 =t_L\bigl(i^*\eta(Y)\bigr)
 =t_L\bigl(d\cdot1_L\bigr)=d ,
 $$
 while the definition of $1_{\PP^n}$ gives
-$t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$. So $\eta(Y)$ and $d\cdot1_{\PP^n}$ pair
-equally with $\alpha_0$; since $\alpha_0\ne0$ and the Serre pairing is
-nondegenerate, $\beta\mapsto t_{\PP^n}(\beta\smile\alpha_0)$ is injective, and
+$t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$. So $\eta(Y)$ and $d\cdot1_{\PP^n}$ pair equally with $\alpha_0$; since $\alpha_0\ne0$ and the Serre pairing is nondegenerate, $\beta\mapsto t_{\PP^n}(\beta\smile\alpha_0)$ is injective, and
 $$
 \eta(Y)=d\cdot1_{\PP^n},
 $$
@@ -1043,7 +884,7 @@ which is part (b) with $d=\deg Y$.
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #s5}
 
 The rule
 $$
@@ -1084,7 +925,7 @@ required in part (c).
 
 :::
 
-::: {.pf-step #s5}
+::: {.pf-step #s6}
 
 If $Y\subseteq X$ is a nonsingular divisor with local equations $f_i=0$ on an open cover $(U_i)$, then $c(\mcl(Y))$ is represented by the Čech cocycle
 $$
@@ -1110,113 +951,37 @@ d\log\!\left(\frac{f_j}{f_i}\right)
 $$
 This is the displayed cocycle. The opposite convention $e_j=g_{ij}e_i$ gives
 $g_{ij}=f_i/f_j$ and the cocycle with both signs reversed, which is the class of
-the inverse line bundle; the sign matters, and step [](#s6){.pf-ref} checks that
-the one used here is the one whose trace is $+1$.
+the inverse line bundle; the sign matters, and step [](#s2){.pf-ref} checks the
+constant in dimension one.
 
 :::
 
 :::
 
-::: {.pf-step #s6}
+::: {.pf-step #s7}
 
 For a nonsingular divisor $Y\subseteq X$,
 $$
 \boxed{\eta(Y)=c(\mcl(Y))\in H^1(X,\Omega_X)}.
 $$
-The two sides are elements of $H^1(X,\Omega_X)$, and they are seen to be equal
-by pairing both with every class of $H^{n-1}(X,\Omega_X^{n-1})$; the one input
-this uses is the divisor case (R) of the head of the solution, which the book
-proves for curves and which for $n\ge2$ is named there as an input and not
-proved.
 
 ::: pf-proof
 
-Let
+Both sides lie in $H^1(X,\Omega_X)$, which is dual to $H^{n-1}(X,\Omega_X^{n-1})$ under the Serre pairing (III.7.6). For $\nu\in H^{n-1}(X,\Omega_X^{n-1})$ the definition of $\eta(Y)$ gives
 $$
-\alpha\in H^{n-1}(X,\Omega_X^{n-1}).
+\langle\eta(Y),\nu\rangle_X=t_X\bigl(j_*(1)\smile\nu\bigr)=t_Y(\restrictionof{\nu}{Y}),
 $$
-By the definition of $\eta(Y)$ and the adjunction identity of the head of the
-solution,
-$$
-\langle\eta(Y),\alpha\rangle_X
-=t_X(j_*(1)\smile\alpha)
-=t_Y(j^*\alpha).
-$$
-By step [](#s5){.pf-ref}, $c(\mcl(Y))$ is the Čech class
-$$
-\left\{\frac{df_j}{f_j}-\frac{df_i}{f_i}\right\}_{ij}
-$$
-of the cover $(U_i)$ on which $Y$ has local equations $f_i=0$.
-
-**The input (R).** It is the statement (R) of the head of the solution: for
-every $\nu\in H^{n-1}(X,\Omega_X^{n-1})$,
+while step [](#s2){.pf-ref}, with $\alpha=1\in H^0(Y,\OO_Y)$ and $\tilde\alpha=1$, gives
 $$
 t_X\bigl(c(\mcl(Y))\smile\nu\bigr)=t_Y(\restrictionof{\nu}{Y}).
 $$
-By (G) this is the same as $j_*(\beta)$ pairing with every $\nu$ as
-$c(\mcl(Y))\smile\beta$ does, for every $\beta=j^*\nu$; in the classical
-language the Gysin map of a divisor is cup product with the $d\log$ class of
-$\mcl(Y)$, and $j_*(1)=c(\mcl(Y))$ is the Poincaré residue of the unit class.
-Part (d) is the case $\beta=1$ of (R).
+By step [](#s6){.pf-ref} the class $c(\mcl(Y))$ is the cocycle $\{df_i/f_i-df_j/f_j\}$ of local equations of $Y$. The two classes pair equally with every $\nu$, and the pairing is perfect, so $c(\mcl(Y))=\eta(Y)$. This is part (d).
 
-(R) is not a consequence of Chapter III for $n\ge2$: Remark III.7.14 (printed
-p. 247) says of the trace of a nonsingular projective variety that "we don't
-have much information ... We know only that it exists", and its residue
-description is stated for curves only. In dimension one (R) is proved in the
-book, and the proof has to compare the Čech class with the residue, which is
-where the sign lives.
-
-Let $X$ be a curve, $Y=\{P\}$, and take the cover $U_1=X\setminus P$ with
-$f_1=1$ and $U_2$ a neighbourhood of $P$ on which $f_2=f$ is a local
-parameter. By step [](#s5){.pf-ref} the class $c(\OO(P))$ is
-$$
-c_{12}=\frac{df_2}{f_2}-\frac{df_1}{f_1}=\frac{df}{f}
-\quad\text{on }U_1\cap U_2 .
-$$
-The trace of Remark III.7.14 is defined on $H^1(X,\Omega_X)$ by the flasque
-resolution
-$$
-0\to\Omega_X\to\Omega_X\tensor\mathcal{K}_X
-\to\bigoplus_{P\in X}i_*\bigl(\Omega_K/\Omega_P\bigr)\to0
-$$
-as the sum of the residues. To read a Čech class in it, take the Čech complex
-of that resolution for the cover $\{U_1,U_2\}$: the middle sheaf is constant,
-so its Čech complex is acyclic, and the connecting map sends the class of a
-family $(\theta_i)$ of rational differentials with
-$c_{ij}=\theta_j-\theta_i$ to the principal parts of the $\theta_i$. Hence
-$$
-t_X(c)=\sum_{P\in X}\operatorname{res}_P(\theta_i),
-$$
-the index $i$ being any one with $P\in U_i$; the sum is independent of the
-choice because two choices differ by a global rational differential, whose
-residues sum to $0$ by the residue theorem (III.7.14.2, printed p. 248).
-
-Here $c_{12}=df/f=\theta_2-\theta_1$ with $\theta_1=0$ and $\theta_2=df/f$.
-The principal part of $\theta_2$ at $P$ is $df/f$, and Theorem III.7.14.1(c)
-(printed p. 247) gives
+In dimension one the same computation is the residue theorem of the book. Let $X$ be a curve, $Y=\{P\}$, and take the cover $U_1=X\setminus P$ with $f_1=1$ and $U_2$ a neighbourhood of $P$ on which $f_2=f$ is a local parameter. By step [](#s6){.pf-ref} the class $c(\OO(P))$ is $c_{12}=df/f$ on $U_1\cap U_2$. The trace of Remark III.7.14 is the sum of the residues of the principal parts, the principal part of $df/f$ at $P$ is $df/f$ itself, and Theorem III.7.14.1(c) (printed p. 247) gives
 $$
 \operatorname{res}_P\left(\frac{df}{f}\right)=v_P(f)\cdot1=1 .
 $$
-So $t_X(c(\OO(P)))=+1$, while $t_P(j^*\alpha)=\alpha(P)$ for every
-$\alpha\in H^0(X,\OO_X)$; that is (R) in the case at hand, and with it part (d)
-in dimension one. With the opposite transition convention of step
-[](#s5){.pf-ref} this cocycle would be $-df/f$ and the constant would be
-$-1$, so the convention there is what makes the sign come out right.
-
-Granting (R), the two classes pair equally with every $\alpha$:
-$$
-\langle c(\mcl(Y)),\alpha\rangle_X
-=t_X\bigl(c(\mcl(Y))\smile\alpha\bigr)
-=t_X\bigl(j_*(1)\smile\alpha\bigr)
-=t_Y(j^*\alpha)
-=\langle\eta(Y),\alpha\rangle_X .
-$$
-The Serre pairing is nondegenerate, so
-$$
-c(\mcl(Y))=\eta(Y).
-$$
-For $n=1$ this is a theorem of the book. For $n\ge2$ it is part (d) proved
-relative to (R), and relative to (R) alone.
+So $t_X(c(\OO(P)))=+1=t_P(1)$, which is the case $n=1$ of the formula of step [](#s2){.pf-ref}, and confirms its constant.
 
 :::
 
@@ -1224,7 +989,7 @@ relative to (R), and relative to (R) alone.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N). Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b) relative to (B) and (R): step [](#s2){.pf-ref} is (B), where the count $\deg Y$ is carried from $L$ back to $\PP^n$, step [](#s3){.pf-ref} uses (B) again to prove $\alpha_0\ne0$ and recovers the generator $1_{\PP^n}$ stipulated in the statement, and (B) is the base-change case of the same trace compatibility of which (R) is the divisor case. Step [](#s4){.pf-ref} proves part (c). Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d), which is the case $\beta=1$ of (R): in dimension one (R) is proved there from Theorem III.7.14.1, sign included, and for $n\ge2$ (R) is an input the book does not supply.
+Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension: its case $\alpha=1$ is the identity $t_X(c(\mcl(D))\smile\nu)=t_D(\restrictionof{\nu}{D})$, and step [](#s7){.pf-ref} deduces part (d) from it. Step [](#s3){.pf-ref} deduces base change for a transverse hyperplane section from step [](#s2){.pf-ref} applied to the divisors $H$ of $X$ and $Z$ of $Y$; step [](#s4){.pf-ref} uses it to carry the count $\deg Y$ from the linear subspace $L$ back to $\PP^n$ and to prove that the class of $L$ is nonzero, which is part (b). Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
 
 :::
 
@@ -1232,20 +997,16 @@ Step [](#s1){.pf-ref} proves part (a) with no input beyond the normalization (N)
 
 :::
 
-::: {.remark title="Trace normalization"}
-As written in the source, the exercise suppresses a normalization needed to make its numerical assertions canonical, and the printed text supplies no canonical one. The passages are these.
+::: {.remark title="The trace and the constant"}
+As printed, the exercise names no normalization of the trace, and the numerical assertions of (b) and (d) need one. The passages are these.
 
-III.7.1(a) is the assertion $H^n(X,\omega_X)\cong k$ for $X=\PP^n_k$, and it continues "Fix one such isomorphism"; the isomorphism is a choice, so the trace $t$ it determines is defined only up to a nonzero scalar. III.7.2 (printed p. 241) makes the trace part of the data: a dualizing sheaf is a *pair* $(\omega_X^\circ,t)$, uniqueness is uniqueness of the pair, and replacing $t$ by $ct$ gives a different pair representing the same functor. Corollary III.7.12 (printed p. 246) then says only that for $X$ projective and nonsingular $\omega_X^\circ$ is *isomorphic* to $\omega_X$; it does not normalize the isomorphism, and the isomorphism its proof produces comes from $\wedge^r(\mathcal I/\mathcal I^2)^\vee$ tensoring, not from a normalization of $t$. Remark III.7.14 (printed p. 247) states the position: "even for a nonsingular projective variety $X$, we don't have much information about the trace map $t:H^n(X,\omega)\to k$. We know only that it exists."
+III.7.1(a) is the assertion $H^n(X,\omega_X)\cong k$ for $X=\PP^n_k$, and it continues "Fix one such isomorphism"; the isomorphism is a choice, so the trace $t$ it determines is defined only up to a nonzero scalar. III.7.2 (printed p. 241) makes the trace part of the data: a dualizing sheaf is a *pair* $(\omega_X^\circ,t)$, uniqueness is uniqueness of the pair, and replacing $t$ by $ct$ gives a different pair representing the same functor. Corollary III.7.12 (printed p. 246) then says only that for $X$ projective and nonsingular $\omega_X^\circ$ is *isomorphic* to $\omega_X$; it does not normalize the isomorphism. Remark III.7.14 (printed p. 247) states the position: "even for a nonsingular projective variety $X$, we don't have much information about the trace map $t:H^n(X,\omega)\to k$. We know only that it exists."
 
-A natural choice does exist on $\PP^n$ and the book records it without using it: Remark III.7.1.1 (printed pp. 240--241) gives the Čech cocycle
-$$\alpha=\frac{x_0^n}{x_1\cdots x_n}\,d\Bigl(\frac{x_1}{x_0}\Bigr)\wedge\cdots\wedge d\Bigl(\frac{x_n}{x_0}\Bigr),$$
-which "determines a generator of $H^n(X,\omega)$, which is stable under change of variables". That fixes one isomorphism in III.7.1(a), but nothing in the text compares it with the trace on a point or on a divisor.
-
-The other side, part (d), is canonical: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. The exercise's identities therefore require a fixed trace. Accordingly, the statement carries the point comparison (C), which fixes that trace, in addition to the pointwise condition (N); part (b) also stipulates the generator $1_{\PP^n}$. Nothing of that kind is in the printed exercise, whose text says only "Fix one such isomorphism". Part (a) uses (N) alone, with $Y=P$ a closed point: $\eta(P)$ is defined by duality against $t_X$ itself. Part (b) uses (B) in step [](#s2){.pf-ref} to carry the count from the linear $L$ to $\PP^n$, uses (B) again in step [](#s3){.pf-ref} to prove that the class of $L$ is nonzero, and recovers there the generator $1_{\PP^n}$ stipulated in the statement. Part (d) is the case $\beta=1$ of (R) in step [](#s6){.pf-ref}: the book proves (R) for curves, and for $n\ge2$ it is used as stated in the head.
+A canonical normalization does exist, and the statement carries it: the trace is fixed by the point comparison (C), which singles out one trace because $H^n(X,\Omega_X^n)$ is one-dimensional and $\gamma^{0,0}_{Q/X}(1)\ne0$. This is the trace constructed from residues by Lipman (Residue Theorem (0.6), printed pp. 24--25), so the normalization is realized and not merely imposed. The other side, part (d), is canonical without any convention: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1 (printed p. 430), "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. Part (a) uses (N) alone, with $Y=P$ a closed point; part (b) uses (C) for $L$ and the base change of step [](#s3){.pf-ref}; part (d) is the case $\alpha=1$ of step [](#s2){.pf-ref}.
 :::
 
-::: {.remark title="Published solution"}
+::: {.remark title="Published solutions"}
 Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Part (b) is transcribed from A. Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(b), printed p. 75: his argument cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; the steps below carry that argument out, and the transfer his proof asserts is supplied on the card as step [](#s2){.pf-ref}, the base-change identity (B).  Part (d) is the card's own derivation: no published proof of the general case exists in the sources on this machine, and the derivation is relative to the input (R) named at the head of the solution.  Yang's (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s3){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. The transfer that assertion needs is the base-change identity (B), which is step [](#s2){.pf-ref}.  His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.  Kim's (b) is the fragment "If $X=\PP^n$, we can always take" and he has no (d); his list of unsolved problems, at the head of the text on PDF p. 1, restates the exercise as "Compute this for $X=\PP^n$ and for $p=1$".  The Stacks Project's cycle-class material gives the class-level halves (tags 0G8C, 0G8D, 0G8E, 0G8I, quoted in the head of the solution) and no comparison with the trace of III.7.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} are consequently proved here and not transcribed, (b) and (d) being the card's own.
+Parts (b) and (d) rest on the residue formula of step [](#s2){.pf-ref}, which is the residue theorem of Lipman's Astérisque 117 in the form needed here: (0.6)(a) and (0.6)(d) (printed pp. 24--25) identify the trace with the sum of the residues at the closed points, and the local computation at a point of the divisor identifies the residue of the $d\log$ class with that of the restricted class. Yang's (b) cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; step [](#s4){.pf-ref} carries that argument out, and the transfer his proof asserts is supplied there by the base change of step [](#s3){.pf-ref}. His (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s4){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.
 :::
