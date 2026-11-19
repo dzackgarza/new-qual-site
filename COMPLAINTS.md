@@ -5382,3 +5382,15 @@ So 4.5% of structured cards carry at least one step that states a claim and just
 
 **Uncertainty.** The counts are one scanner's, run once; a nested `pf-proof` inside a `pf-step` inside a proof is counted at the inner level, so a card that nests three deep is under-counted rather than over-counted. No card was edited in this pass.
 
+
+## 2026-11-19: V.4.8's third alternative is characteristic-free, closing #160's row for the card
+
+**Object and need.** `P-AGH548IRREDCLASSES` (Hartshorne V.4.8, printed pp. 407--408) and #160's row for it: the nonsingularity of the member of alternative (c) was Bertini's theorem in characteristic zero, and the characteristic-$p$ case was open.
+
+**The argument.** Now on the card: the linear system $\linearsystem{D}$ is base-point-free with a reduced irreducible general member (Harbourne, Lemma II.6(b), preprint p. 4, over an arbitrary algebraically closed field). Hence the morphism $\varphi:X\to\PP^N$ it defines is separable: an inseparable morphism onto its image pulls a general hyperplane back to a non-reduced divisor. By Hartshorne II.8.6A, printed p. 174, Lemma 8.9, printed p. 175, and Proposition 10.4, printed p. 270, $\varphi$ is smooth on a nonempty open set $U$. The bad hyperplanes are those tangent to $\varphi(X)$ at a point of $U$ — a linear subspace of codimension $2$ in the dual, dimension $N-3$ — and those meeting $\varphi(X\setminus U)$ — the dual of a curve, dimension $N-1$. Their union has dimension at most $N-1$, so a general hyperplane $H$ avoids it, and $\varphi^{-1}(H)$ lies in $U$ and is nonsingular. This is the incidence count in Vakil, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its proof, printed p. 375, applied to the linear system $\linearsystem{D}$; the characteristic-zero Corollary III.10.9, printed p. 274, is no longer used.
+
+**Impact.** The card is characteristic-free throughout, and #160's row for it is met. No statement changes.
+
+**Repair, 2026-11-19:** `P-AGH548IRREDCLASSES` in `7d548c5699`, one `source-corrected` event, the final step, the solution preamble and the remark; no statement changes. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH548IRREDCLASSES`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 9 with QED labels present and no unknown step label; the style check reports no raw bar.
+
+**Uncertainty.** Not checked: the passage from reducedness to separability is the card's own statement, not a quoted theorem; the dimension count was checked on paper; and no source outside Hartshorne, Harbourne and Vakil was read for this argument.
