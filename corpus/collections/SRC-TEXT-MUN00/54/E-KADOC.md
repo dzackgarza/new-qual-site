@@ -38,6 +38,27 @@ audit:
     bijective and open, and hence a homeomorphism. The argument is the card's own; no
     retained set is cited. Munkres §54 Exercise 4, printed p. 341. The printed statement
     needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Three corrections on 2026-11-19. The rendered preamble said "The argument is
+    the card's own; no retained solution set is cited on the card", which is
+    false, since the event of 2026-11-11 cites dbFin's Section 54 Problem 8
+    solution; it gave the exercise as "§54 Exercise 4, printed p. 341", as the
+    event of 2026-11-18 does, where the exercise is Exercise 8 on printed p. 348
+    (PDF p. 363, folio 348, printed page = PDF page - 15), and printed p. 341 is
+    the exercise page of §53; and its proof was the card's own route through the
+    homotopy lifting lemma. The solution is now dbFin's route, transcribed:
+    Theorem 54.4 makes the lifting correspondence onto the fibre a bijection, so
+    the fibre over a point of a simply connected base is a single point,
+    Exercise 3 of §53 spreads that to every fibre, and an open bijection is a
+    homeomorphism. Cited with pages: Theorem 54.4 on printed p. 345 (PDF p. 360),
+    Exercise 3 of §53 on printed p. 341 (PDF p. 356), and the exercise on printed
+    p. 348. The events of 2026-11-11 and 2026-11-18 are left as written; the
+    second's "Exercise 4, printed p. 341" is superseded by this one. The
+    statement of the exercise is unchanged.
+
 ---
 
 ::: {.exercise}
@@ -47,24 +68,33 @@ Show that if $B$ is simply connected, then $p$ is a homeomorphism.
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §54 Exercise 4, printed p. 341, with the homotopy lifting theorem (§54) and the lifting correspondence.
+The argument is that of the published solution of dbFin, "Section 54: Problem 8 Solution": Theorem 54.4 makes the lifting correspondence a bijection onto the fibre, so the fibre over a point of a simply connected base has one element, and a covering map that is an open bijection is a homeomorphism. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 8, printed p. 348; Theorem 54.4 is on printed p. 345, and Exercise 3 of §53, which makes the fibre cardinality the same over every point of a connected base, is on printed p. 341.
 
 ::: pf
 
-::: {.pf-step #transitive}
-Every fibre of $p$ is a single point.
+::: {.pf-step #fibre}
+For every $b\in B$ the fibre $p^{-1}(b)$ has exactly one point.
 
 ::: pf-proof
-Fix $e_{0}\in E$ and put $b_{0}=p(e_{0})$; let $e_{1}\in p^{-1}(\{b_{0}\})$. Since $E$ is path connected there is a path $\widetilde\alpha$ in $E$ from $e_{0}$ to $e_{1}$, and $\alpha=p\circ\widetilde\alpha$ is a loop in $B$ at $b_{0}$. Because $B$ is simply connected, $\alpha$ is path homotopic to the constant loop at $b_{0}$. The constant loop at $b_{0}$ lifts, from the point $e_{0}$, to the constant path at $e_{0}$, while $\widetilde\alpha$ is the lift of $\alpha$ from $e_{0}$; by the homotopy lifting theorem, lifts of path homotopic paths that start at the same point have the same terminal point (Munkres §54). Hence $e_{1}=e_{0}$ and $p^{-1}(\{b_{0}\})=\{e_{0}\}$. The same argument applies with $e_{0}$ replaced by any point of $E$, so every fibre is a single point.
+Fix $e_0\in E$ and put $b_0=p(e_0)$. Since $E$ is path connected, the lifting correspondence $\phi\colon\pi_1(B,b_0)\to p^{-1}(b_0)$ is surjective (Theorem 54.4, printed p. 345); since $B$ is simply connected, $\pi_1(B,b_0)$ is the trivial group, so $\phi$ takes a single value and $p^{-1}(b_0)=\{e_0\}$. The base $B$ is path connected, being simply connected, so Exercise 3 of §53, printed p. 341, gives the same cardinality over every point of $B$; every fibre is a single point.
 :::
 
 :::
 
 ::: {.pf-step #bijective}
-$p$ is bijective.
+$p$ is a bijection.
 
 ::: pf-proof
-$p$ is surjective, being a covering map. It is injective, since two points with the same image lie in a common fibre, which step [](#transitive){.pf-ref} shows to be a single point.
+$p$ is surjective, being a covering map, and injective by step [](#fibre){.pf-ref}, since two points with the same image lie in one fibre.
+:::
+
+:::
+
+::: {.pf-step #open}
+$p$ is an open map.
+
+::: pf-proof
+A covering map is a local homeomorphism: each point of $E$ has an open neighbourhood carried homeomorphically onto an open set of $B$. The image of an open set of $E$ is therefore a union of open sets of $B$, hence open.
 :::
 
 :::
@@ -73,10 +103,11 @@ $p$ is surjective, being a covering map. It is injective, since two points with 
 $p$ is a homeomorphism.
 
 ::: pf-proof
-A covering map is a local homeomorphism, hence an open map: every point of $E$ has a neighbourhood mapped homeomorphically onto an open set of $B$, so the image of any open set of $E$ is a union of open sets of $B$. Thus $p$ is a continuous open bijection, and its set-theoretic inverse is continuous; so $p$ is a homeomorphism.
+By steps [](#bijective){.pf-ref} and [](#open){.pf-ref} it is a continuous open bijection. The inverse of such a map is continuous, because the preimage of an open set under the inverse is its image under $p$, which is open; so $p$ is a homeomorphism.
 :::
 
 :::
 
 :::
+
 :::
