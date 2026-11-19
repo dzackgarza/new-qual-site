@@ -17,7 +17,7 @@ A representation of a finite group is a module over the group ring. Over $\CC$ t
 
 ## Simple, semisimple, and indecomposable modules
 
-A simple module is indecomposable and cyclic, and the converses fail; semisimplicity is the condition that every module is a direct sum of simples.
+Simple, indecomposable and semisimple are three different conditions: only one implication holds between the first two, and semisimplicity is a condition on the whole category rather than on one module.
 
 [[D-4KM4P]]
 
