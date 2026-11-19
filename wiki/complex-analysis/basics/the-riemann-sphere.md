@@ -13,7 +13,7 @@ The plane plus one point at infinity is a compact surface on which every [[D-7DF
 
 [[D-3QTVR]]
 
-Stereographic projection sends the circle $\abs z = R$ of the plane to a circle of latitude on the sphere, and the discs $\abs z<R$ to the caps below it; a sequence with $\abs{z_n}\to\infty$ is exactly a sequence leaving every such cap, which is what makes $\infty$ a limit point.
+Stereographic projection from the north pole carries the plane onto the sphere of unit diameter minus that pole, sending the circle $\abs z = R$ to a circle of latitude and the disc $\abs z<R$ to the cap below it [@SS03, ch. 3, the Riemann sphere (pp. 88--89)]; a sequence with $\abs{z_n}\to\infty$ is exactly a sequence leaving every such cap, which is what makes $\infty$ a limit point.
 
 ## Maps of the sphere
 
