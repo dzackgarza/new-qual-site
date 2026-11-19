@@ -34,7 +34,7 @@ Continuity of $f'$ is then a consequence of the Cauchy integral formula.
 
 - [[complex-analysis/cauchy-theory/the-integral-formula|The integral formula]] expresses $f$ inside a curve by an integral of $f$ over the curve.
 
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's estimates]] bound the derivatives of $f$, and Liouville's theorem follows.
+- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's estimates]] bound the derivatives of $f$, and [[T-QHIHJ|Liouville's theorem]] follows.
 
 - [[complex-analysis/residues-and-contours/the-residue-theorem|The residue theorem]] computes the integral of a function with isolated singularities inside the curve.
 

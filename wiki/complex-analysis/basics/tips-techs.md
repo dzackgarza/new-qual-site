@@ -160,7 +160,7 @@ Let $f$ be holomorphic near $z_0$.
 $$
 {1\over \abs{a\pm b}} \leq {1\over \abs{\abs{a} - \abs{b} } }.
 $$
-- The Cauchy integral formula bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
+- [[T-LA2UI|The Cauchy integral formula]] bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
 - If $u_n$ are harmonic on a bounded domain $U$, continuous on $\bar U$, and $u_n$ converges uniformly on $\bd U$, then $u_n$ converges uniformly on $\bar U$, by the maximum principle applied to $u_n - u_m$.
 - For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
 - If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]; applied to $h \coloneqq f/g$ this gives $\abs{f(z)}\leq\abs{z}\abs{g(z)}$.

@@ -113,5 +113,5 @@ See [[complex-analysis/conformal-maps/index|Conformal maps]].
 
 ## Hypotheses and counterexamples
 
-[[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]] compares the hypotheses of Liouville's theorem, the maximum modulus principle, the open mapping theorem, and the identity principle.
+[[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]] compares the hypotheses of [[T-QHIHJ|Liouville's theorem]], [[T-BYNL5|the maximum modulus principle]], [[C-FRF33|the open mapping theorem]], and [[T-SVF2W|the identity principle]].
 [[complex-analysis/counterexamples|Counterexamples]] gives functions for which Liouville's theorem, the identity principle, the maximum and minimum modulus principles, and the Riemann mapping theorem fail when one hypothesis is dropped.
