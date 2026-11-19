@@ -13,6 +13,18 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1
+    of the single-page paper retained at assets/attachments/SP13_200_Algebra_Qual.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the solution read for the element of order 3 in the automorphism group of C_61
+    and the resulting semidirect product; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared against the official UCSD Spring 2013 Algebra qualifying exam; statement matches.
@@ -31,6 +43,9 @@ Justify your answer.
 :::
 
 ::: {.solution}
+
+The problem is Problem 1 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the construction: an element of order $3$ in $\operatorname{Aut}(C_{61})$ gives a semidirect product $C_{61}\rtimes C_3$ of order $2013$ whose action is nontrivial, hence a nonabelian example
+
 Yes.
 
 ::: pf
