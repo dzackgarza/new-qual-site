@@ -34,7 +34,11 @@ Apply [[T-CF6S3|Eisenstein's criterion]] to $f(x)$, to $f(x+a)$ for some $a\in\Z
 
 ### Separability
 
-Separability is read off the derivative ([[PR-TLBPS|the derivative detects separability]]) and holds automatically over a perfect base ([[PR-25FLW|algebraic extensions of perfect fields are separable]]); the finite-extension characterizations are on [[PR-3VQBI]], and separable extensions form a [[D-JMATC|distinguished class]].
+Separability is read off the derivative ([[PR-TLBPS|the derivative detects separability]]) and holds automatically over a perfect base ([[PR-25FLW|algebraic extensions of perfect fields are separable]]).
+
+[[PR-3VQBI]]
+
+Separable extensions form a [[D-JMATC|distinguished class]].
 
 ### Normality
 
