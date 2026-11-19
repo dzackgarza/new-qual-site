@@ -14,6 +14,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Analysis Problem 4 of the official UCLA Basic Exam, May 2005 PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. On each subinterval the mean value theorem gives a
+    point with the difference equal to one n-th of the derivative there, so the
+    sum of absolute differences is the right Riemann sum of the continuous
+    function |f'| over the uniform partition with mesh 1/n, and such sums
+    converge to the integral. The statement itself was not re-read against the
+    scan in this pass: the retained file assets/attachments/basic-05S.pdf has no
+    text layer, and the source check above is the earlier one.
 ---
 
 ::: {.problem}
