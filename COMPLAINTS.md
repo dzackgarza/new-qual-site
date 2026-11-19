@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: a scripted rewrite turned `ph` into a control word on two §3.3 cards, and the whole-corpus TeX check caught what `qualc.authoring check` does not
+
+**Object and need.** `E-HAT-3.3-27` and `E-HAT-3.3-31` were committed at 15:28 by another stream after a scripted rewrite. The rewrite split ordinary words and a symbol: `isomor\varphism` for "isomorphism" (five times across the two cards), `homomor\varphisms` for "homomorphisms" (once), and, on `E-HAT-3.3-27`, the image of the symplectic form written `\var\varphi` for `\varphi` (three times). The whole-corpus gate reports them as "raw TeX the page cannot show" and "not defined by the preamble or MathJax: \var".
+
+**Observed evidence.** A snapshot run of `qualc check` at `a7d63633dc` (the tree containing the 15:28 commits) reports exactly these strings and no other errors in either card; `qualc.authoring check E-HAT-3.3-27` and `E-HAT-3.3-31` pass on the broken text, because they validate schema and Markdown and not the control words inside mathematics. Both cards were repaired to `isomorphism`, `homomorphisms` and `\varphi` with a `source-corrected` event on each recording that the repair is spelling and that no step was re-read, and each card's check passes.
+
+**Impact and owner.** Any scripted rewrite of a collection is exposed: a substitution of `ph` or of `\varphi` silently produces undefined control words, and only the whole-corpus gate sees them. The lesson is the one this file already carries for glued control words, now with a detector: run the gate, not the per-card check, before believing a scripted batch.
+
+**Uncertainty.** High confidence in the strings and the repair (verified by re-running the per-card checks and by the strings' absence). Not checked: whether the same rewrite touched other collections, since I repaired only the two cards the gate named in the snapshot's tree.
+
 ## 2026-11-19: `qualc check` reads the working tree, so a run cannot be attributed to a commit while several chats are committing; the snapshot recipe
 
 **Object and need.** Several streams commit to this clone every few minutes. `qualc check` reads the *working tree*, takes 5--20 minutes at one worker, and therefore reports whatever partial state another stream happens to be in when the crawl reaches its files. In one afternoon this produced, in successive full runs on this project's own tree: a red run for `wiki/algebra/rings-and-ideals/commutative-algebra.md: missing wiki page reference: T-GRDSOC` (the page changed at 13:41 by another stream and the error is absent from the next run), then a red run for `corpus/collections/SRC-TEXT-HAT02/3-3/E-HAT-3.3-11.md: unmatched fenced-div closer` together with "lists 'E-HAT-3.3-11', which has no card" (that card was committed at 13:49:13, after the crawl had read it mid-save, and `qualc.authoring check E-HAT-3.3-11` passes now). A commit's checks are therefore not established by a green run of the live tree, and not refuted by a red one.
