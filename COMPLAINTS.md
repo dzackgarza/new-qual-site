@@ -388,11 +388,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **70 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **69 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Twenty-seven of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 70 stand as this item lists them.
+   reported and repaired above. Twenty-eight of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 69 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -557,7 +557,14 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    supplied, and it is the correct one. So $X\to Z_n$ is an isomorphism on $\pi_i$ for $i\le n$ and
    $Z_n\to Y$ for $i\ge n+1$, as the exercise asks.
 
-   Remaining unread in this item's set: §4.1 17–23 (7), §4.2 (39), §4.3 (24) --- 70 proofs.
+   **§4.1-17, read the same day.** Correct, no card changed. With cellular models carrying no cells in
+   dimensions $\le m$ for $X$ and $\le n$ for $Y$, the relative cells of $(X\times Y,X\vee Y)$ are the
+   products of one cell from each factor, of dimension at least $(m+1)+(n+1)=m+n+2$, which is exactly
+   what makes the pair $(m+n+1)$-connected; the smash product has the same cells with $X\vee Y$ collapsed,
+   so the same count applies. The card's seven steps are that argument: model, product cells, dimension,
+   pair, smash cells, smash, conclusion.
+
+   Remaining unread in this item's set: §4.1 18–23 (6), §4.2 (39), §4.3 (24) --- 69 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
