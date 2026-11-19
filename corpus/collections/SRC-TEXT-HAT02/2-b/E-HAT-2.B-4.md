@@ -253,6 +253,34 @@ audit:
     argument is the card's own, no published proof of (b) having been located, and #proper-case
     says what it takes from §2.B Exercise 3, printed p. 176, whose proof is on `E-HAT-2.B-3`.
     Checked: that no step in part (b) reproduces a published argument, and the two pages cited above.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is (b). Read against Hatcher,
+    Exercise 4 of §2.B on printed p. 176, in `tmp/sources/hatcher-2002-algebraic-topology.md`, and
+    tom Dieck, §2.8.3 on printed p. 52, in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`.
+    No defect found. Checked in part (a): $\phi(u,v)=(v,u)/\sqrt{1+\norm{v}^2}$ has
+    $\norm{\phi(u,v)}^2=(\norm{v}^2+1)/(1+\norm{v}^2)=1$, its last $q$ coordinates
+    $u/\sqrt{1+\norm{v}^2}$ are nonzero, and both composites with $(x,y)\mapsto(y/\norm y,x/\norm y)$
+    are the identity — the second through $\norm{\phi\phi^{-1}(x,y)}=(x,y)/\sqrt{\norm y^2+\norm x^2}$
+    — so the two published formulas do give a homeomorphism. tom Dieck's printed target
+    $S^m\times E^n$ with $(x,y)\mapsto(\sqrt{1-\norm y^2}\,x,y)$ is dimensionally one exponent
+    short, since $y$ ranges in $\RR^{n+1}$ and the image lies on $S^{m+n+1}$: the card's correction
+    to $E^{n+1}$ is right. Checked in part (b): the collar $F$ is well defined at
+    $\norm x=1/2$ because $2x=x/\norm x$ there, and injective because the outer piece has
+    $\norm{F(x)}=2\norm x\in[1,2]$ while $f$ lands in $D^n$, so a common point of the two pieces
+    has norm one and forces the same preimage; $F(D^p)\cap\partial D_2=2S^{p-1}$; the two outer
+    cones are disjoint because $S^{p-1}\cap S^{q-1}=\emptyset$, and an inner point common with an
+    outer one would have norm exactly one and so lie in $f(D^p)\cap g(D^q)$; scaling by $1/2$
+    preserves embeddings, disjointness and properness. The proper case then applies Exercise 3 of
+    §2.B to $(D,S^{p-1})$, whose hypothesis $D\cap S^{n-1}=S^{p-1}$ holds, and kills the generator
+    $[S^{q-1}]$ through the contractible $E=g(D^q)$: $[S^{q-1}]$ is the image of the fundamental
+    class under the inclusion, which is a homotopy equivalence by steps `#s1` and `#s2`. Checked in
+    the degenerate case: $g(\operatorname{int}D^q)=g(D^q)\cap\operatorname{int}D^q$ by injectivity
+    and $g(\partial D^q)=\partial D^q$, that set is open by Theorem 2B.3 and closed because
+    $g(D^q)$ is compact, and $\operatorname{int}D^q$ is connected. Not claimed: a published proof
+    of (b), none having been located.
 
 ---
 
