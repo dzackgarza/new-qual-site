@@ -23,7 +23,7 @@ The same holds at $z=0$ and $z=1$ for $\qty{z(z-1)}^{1\over 2}$, and at $z=0$ fo
 ::: {.example title="Isolated and non-isolated singularities"}
 A rational function has only isolated singularities, since a nonzero polynomial has finitely many zeros.
 
-$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the branch cut $(-\infty,0)$, where $\Log$ is not continuous.
+$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the ray $(-\infty,0]$, on which $\Log$ has no values, so no punctured disc about $0$ lies in its domain.
 
 $G(z)\coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\theset{0}$, and a non-isolated singularity at $0$, where they accumulate.
 :::
