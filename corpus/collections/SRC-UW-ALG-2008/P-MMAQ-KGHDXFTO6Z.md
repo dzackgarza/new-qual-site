@@ -12,6 +12,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Algebra Preliminary Examination of September 8, 2008
+    (University of Washington), printed p. 1 of the two-page paper retained at assets/attachments/UW-
+    Algebra-Qual-2008.pdf, is the statement the card answers, and the paragraph at the head of the
+    solution records that the paper prints no solutions, so the argument is the card's own. Checked: the
+    statement against the paper's text layer at the page named; the solution read for the construction
+    of the field of q^n elements as the fixed points of the n-th Frobenius power and the extraction of
+    an element of each degree d dividing n; `qualc.authoring check` on the card, and `tmp/lam.sh` for
+    the numbering and the QED. Not checked: no retained solution set exists for this paper to compare
+    the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -37,6 +50,8 @@ Show for any positive integer $n$ that there are irreducible polynomials of degr
 :::
 
 ::: {.solution}
+
+The problem is Problem 2 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the construction: the subfield $E=\{\alpha:\alpha^{q^n}=\alpha\}$ of $\overline{F}$ has $q^n$ elements, and for each $d\mid n$ an element of $E$ of degree $d$ over $F$ gives an irreducible polynomial of that degree
 Throughout $F$ is a finite field with $\cardinality{F} = q$, $p \coloneqq \operatorname{char}F$ is prime and $q$ is a power of $p$, and $\overline{F}$ is an algebraic closure of $F$. The collection's `provenance` is the 2014 UW algebra examination, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
