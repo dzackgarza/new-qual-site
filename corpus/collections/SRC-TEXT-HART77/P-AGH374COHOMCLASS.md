@@ -731,6 +731,30 @@ audit:
     transcription and what it leaves out are recorded in COMPLAINTS.md. Not
     proved here: the same comparison and base change for a general smooth
     ambient variety, where no detecting class of this kind is available.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s8 is restated for a nonsingular projective $X$ with
+    $\dim_kH^{n-p}(X,\Omega^{n-p})=1$ instead of $\PP^n$, and the proof is the
+    same one with a general complete intersection in place of the linear
+    subspace: $L=D_1\cap\cdots\cap D_{n-p}$ for general divisors $D_j$ in an
+    ample class, $\alpha_0=\eta_X(L)=\prod_jc(\mcl(D_j))$ by step s3, the trace
+    side $\langle\eta(Y),\alpha_0\rangle=t_Y(c_1(\restrictionof{\mathcal
+    L}{Y})^{\smile\dim Y})=N$ by step s2 iterated along the successive
+    intersections of $Y$ with the $D_j$, and the Koszul side
+    $t_L(\gamma^{0,0}_{Z/L}(1))=N$ by Lemma 50.23.10 iterated, the locality of
+    the construction and (C); one nonzero class detects because the space
+    $H^{n-p}(X,\Omega^{n-p})$ is one-dimensional. The case $p=n$ is the point
+    comparison (C) with step s1 and is stated separately. The projective-space
+    case is the instance in which the hypothesis is Exercise III.7.3, printed
+    p. 249. Read in this pass: Kim's Exercise 3.7.4 at PDF p. 170 in
+    tmp/sources/dongryul-kim-hartshorne-solutions.md, and Egbert's entry at
+    printed p. 187 in tmp/sources/hartshorne-solutions-egbert.md; the
+    transcription and what those sets contain are recorded in COMPLAINTS.md.
+    Not proved: the two statements without the one-dimensionality hypothesis,
+    for which no detecting class is available in general.
 ---
 
 ::: {.problem}
@@ -1102,47 +1126,56 @@ So $t_X(c(\OO(P)))=+1=t_P(1)$, which is the case $n=1$ of the formula of step []
 
 ::: {.pf-step #s8}
 
-Let $Y\subseteq\PP^n$ be nonsingular of codimension $p$, and let $\gamma^{0,0}_{Y/\PP^n}(1)\in H^p(\PP^n,\Omega_{\PP^n}^p)$ be the Gysin class of the Koszul construction ([Stacks Project, Remark 50.23.7](https://stacks.math.columbia.edu/tag/0G8A)). Then
+Let $X$ be a nonsingular projective variety of dimension $n$ over $k$, let $Y\subseteq X$ be nonsingular of codimension $p$, and assume
 $$
-\boxed{\eta(Y)=\gamma^{0,0}_{Y/\PP^n}(1)} ,
+\dim_k H^{n-p}(X,\Omega_X^{n-p})=1 .
 $$
-and for a hyperplane $H\subseteq\PP^n$ meeting $Y$ transversely, with $Z=Y\cap H$,
+Then
 $$
-\boxed{i^*j_*=(j_H)_*\,i_Y^*} ,
+\boxed{\eta(Y)=\gamma^{0,0}_{Y/X}(1)}
 $$
-both sides being maps $H^q(Y,\Omega_Y^q)\to H^{q+1}(H,\Omega_H^{q+1})$.
+in $H^p(X,\Omega_X^p)$. If in addition $H\subseteq X$ is a nonsingular divisor meeting $Y$ transversely and $\dim_k H^{n-1-p}(H,\Omega_H^{n-1-p})=1$, then
+$$
+\boxed{i^*j_*=(j_H)_*\,i_Y^*} .
+$$
+For $X=\PP^n$ the hypothesis is Exercise III.7.3 (printed p. 249), so this contains the case of a subvariety of projective space in every codimension. For $p=n$, where $Y$ is a closed point, the two classes are equal because $H^n(X,\Omega_X^n)$ is one-dimensional and both have trace $1$, by (C) and step [](#s1){.pf-ref}; the proof below treats $p<n$.
 
 ::: pf-proof
 
-**One class detects.** Let $L\cong\PP^p$ be a general linear subspace, $i:L\hookrightarrow\PP^n$, and $\alpha_0=\eta_{\PP^n}(L)=i_*(1)$. By step [](#s4){.pf-ref} the class $\alpha_0$ is nonzero and $L$ meets $Y$ in $d=\deg Y$ distinct points; by Exercise III.7.3 (printed p. 249) the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, and by (III.7.6) the pairing is perfect. A class of $H^p(\PP^n,\Omega^p)$ is therefore determined by its pairing with $\alpha_0$.
+**A class that detects.** Fix an ample invertible sheaf $\mathcal L$ and let $D_1,\ldots,D_{n-p}\in|\mathcal L|$ be general, so that $L=D_1\cap\cdots\cap D_{n-p}$ is nonsingular of dimension $p$ and meets $Y$ transversely in $N$ reduced points $Z=Y\cap L$; this is Bertini's theorem (II.8.18, printed p. 179) applied successively. Let $i:L\hookrightarrow X$ and let $\alpha_0=\eta_X(L)=i_*(1)$ be the class of the complete intersection, which by step [](#s3){.pf-ref} is
+$$
+\alpha_0=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_{n-p}))\in H^{n-p}(X,\Omega_X^{n-p}).
+$$
+The hypothesis makes that space one-dimensional and the pairing perfect (III.7.6, printed p. 243), so a class pairs to zero with everything as soon as it pairs to zero with one nonzero class of it; it is enough to show that $\alpha_0\ne0$ and that the two classes pair equally with it.
 
-**The trace side.** By step [](#s4){.pf-ref},
+**The trace side.** Since $\eta(Y)$ is the class of the functional $b\mapsto t_Y(\restrictionof{b}{Y})$,
 $$
-\langle\eta(Y),\alpha_0\rangle_{\PP^n}=t_Y\bigl(\restrictionof{\alpha_0}{Y}\bigr)=t_Y\bigl(c_1(\OO_Y(1))^{\smile p}\bigr)=d .
+\langle\eta(Y),\alpha_0\rangle_X=t_X\bigl(\eta(Y)\smile\alpha_0\bigr)=t_Y\bigl(\restrictionof{\alpha_0}{Y}\bigr)
+=t_Y\bigl(c_1(\restrictionof{\mathcal L}{Y})^{\smile\dim Y}\bigr)=N,
 $$
+the third equality because $\restrictionof{c(\mcl(D_j))}{Y}=c(\restrictionof{\mathcal L}{Y})$ for every $j$, and the last one iterating step [](#s2){.pf-ref} along the divisors $Y\cap D_1$, $Y\cap D_1\cap D_2,\ldots$ of the successive intersections and then applying (N) at the $N$ points, as in step [](#s4){.pf-ref}. Hence $\alpha_0\ne0$ and $\langle\eta(Y),\alpha_0\rangle_X=N$.
 
-**The Koszul side.** By the adjunction identity that defines $i_*$, for every $u\in H^p(\PP^n,\Omega^p)$,
+**The Koszul side.** By the adjunction identity that defines $i_*$,
 $$
-t_{\PP^n}\bigl(u\smile\alpha_0\bigr)=t_{\PP^n}\bigl(u\smile i_*(1)\bigr)=t_L\bigl(\restrictionof{u}{L}\bigr).
+\bigl\langle\gamma^{0,0}_{Y/X}(1),\alpha_0\bigr\rangle_X
+=t_X\bigl(\gamma^{0,0}_{Y/X}(1)\smile i_*(1)\bigr)
+=t_L\bigl(\restrictionof{\gamma^{0,0}_{Y/X}(1)}{L}\bigr).
 $$
-The square with $Z=Y\cap L$ over $L$ and $Y$ over $\PP^n$ is cartesian and transverse, its vertical maps are Koszul regular immersions, and $\PP^n$ and $L$ are smooth over $k$; so Lemma 50.23.10 of the Stacks Project ([tag 0G8D](https://stacks.math.columbia.edu/tag/0G8D), printed pp. 4272--4273) gives
+Each square $Y\cap D_1\cap\cdots\cap D_j$ over $D_1\cap\cdots\cap D_j$ and $Y\cap D_1\cap\cdots\cap D_{j-1}$ over $D_1\cap\cdots\cap D_{j-1}$ is cartesian and transverse, its vertical maps are Koszul regular immersions, and the ambient schemes are smooth over $k$; so Lemma 50.23.10 of the Stacks Project ([tag 0G8D](https://stacks.math.columbia.edu/tag/0G8D), printed pp. 4272--4273), applied successively to $D_1,\ldots,D_{n-p}$, gives
 $$
-\restrictionof{\gamma^{0,0}_{Y/\PP^n}(1)}{L}=\gamma^{0,0}_{Z/L}(1) .
+\restrictionof{\gamma^{0,0}_{Y/X}(1)}{L}=\gamma^{0,0}_{Z/L}(1).
 $$
-The construction of $\gamma$ is local on its source (Lemma 50.23.3, printed p. 4269), so on the finite reduced scheme $Z$ it is the sum over the points, $\gamma^{0,0}_{Z/L}(1)=\sum_{Q\in Z}\gamma^{0,0}_{Q/L}(1)$, and the normalization (C) gives $t_L(\gamma^{0,0}_{Q/L}(1))=1$ for each of them. Hence
+The construction of $\gamma$ is local on its source (Lemma 50.23.3, printed p. 4269), so on the finite reduced scheme $Z$ it is the sum over its points, and the normalization (C) gives trace $1$ at each of them:
 $$
-\bigl\langle\gamma^{0,0}_{Y/\PP^n}(1),\alpha_0\bigr\rangle_{\PP^n}
-=t_L\bigl(\gamma^{0,0}_{Z/L}(1)\bigr)
-=d
-=\bigl\langle\eta(Y),\alpha_0\bigr\rangle_{\PP^n},
+t_L\bigl(\gamma^{0,0}_{Z/L}(1)\bigr)=\sum_{Q\in Z}t_L\bigl(\gamma^{0,0}_{Q/L}(1)\bigr)=N .
 $$
-and the two classes are equal.
+The two classes pair equally with $\alpha_0\ne0$ in a one-dimensional space, so they are equal.
 
-**Base change.** For a hyperplane $H$ and $Z=Y\cap H$, the identity just proved, applied in $\PP^n$ and in $H$, together with Lemma 50.23.10, gives
+**Base change.** Under the further hypothesis the same argument applies to $Z$ in $H$, whose codimension is again $p$, and gives $\eta_H(Z)=\gamma^{0,0}_{Z/H}(1)$; with Lemma 50.23.10 for the square over $H$,
 $$
-i^*j_*(1)=i^*\eta(Y)=i^*\gamma^{0,0}_{Y/\PP^n}(1)=\gamma^{0,0}_{Z/H}(1)=\eta_H(Z)=(j_H)_*i_Y^*(1).
+i^*j_*(1)=i^*\eta(Y)=i^*\gamma^{0,0}_{Y/X}(1)=\gamma^{0,0}_{Z/H}(1)=\eta_H(Z)=(j_H)_*i_Y^*(1).
 $$
-The class $1$ gives the general class: for $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega^{n-1-q-p})$ the left side pairs as $t_{\PP^n}(j_*a\smile i_*w)=t_Y(a\smile j^*i_*w)$, and the right side as $t_Z(i_Y^*a\smile j_H^*w)=t_Y(c_1(\OO_Y(H))\smile a\smile j^*w)$, the second equality by step [](#s2){.pf-ref} applied to the divisor $Z$ of $Y$. The case $a=1$ says, by perfectness of the pairing on $Y$, that $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$ for every $w$; that identity gives the general $a$, and with it the displayed base change.
+For a class $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega^{n-1-q-p})$, the left side pairs as $t_X(j_*a\smile i_*w)=t_Y(a\smile j^*i_*w)$ and the right side as $t_Z(i_Y^*a\smile j_H^*w)=t_Y(c_1(\OO_Y(H))\smile a\smile j^*w)$, the second equality by step [](#s2){.pf-ref} applied to the divisor $Z$ of $Y$. So the case $a=1$ says, by perfectness of the pairing on $Y$, that $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$ for every $w$, and that identity gives the general $a$, hence the displayed base change.
 
 :::
 
