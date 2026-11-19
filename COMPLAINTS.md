@@ -7439,3 +7439,17 @@ pass; and the printed books themselves.
 **Impact and owner.** (a) and (c) are repaired and recorded here. (b) blocks the citation on two cards in `corpus/theory/Algebra/` and needs the Zotero entry first; until then `D-SCHCMGOR` still carries the claim inside an example. (d) belongs to the stream that wrote `E-SSA.PR-5`.
 
 **Uncertainty.** In (a) the page was read from a retrieved scan, so the refutation holds for the 3rd edition and not for any other. In (b) the equivalence is verified in the retrieved paper text, and whether a printed book states it was not checked: no copy of Eisenbud (`Eis95`, already a key) or of Matsumura or Bruns--Herzog was retrieved, and no page number was guessed for them.
+
+## 2026-11-19, correction: the §1.2 and §1.3 Hoffman--Kunze cards read in this session are not residue 5
+
+**What this corrects.** The ninth item above opens "The residue-5 cards of `SRC-TEXT-HK71` §1.3 whose exercise numbers are 4–8", and the sixth and seventh items describe the §1.2 cards the same way. That is wrong. Under the partition rule the lane is $\operatorname{int}(\text{id after the last hyphen},36)\bmod 16 = 5$, and the suffixes of the cards read this session give other residues: `E-HK-12-6` 6, `E-HK-12-7` 7, `E-HK-12-8` 8, `E-HK-IF5V` 6, `E-HK-CG7N` 3, `E-HK-RTYK` 12, `E-HK-PNK2` 2, `E-HK-1EVA` 6, `E-HK-D0GP` 9, `E-HK-YECG` 0. §1.4 has no residue-5 card at all (its ten cards are residues 3, 9, 0, 4, 6, 9, 12, 9, 14 and 11).
+
+**What stands.** Every repair described in those items was made and pushed: the reads, the `source-corrected` event on `E-HK-IF5V`, the expansion of $\det B$ on `E-HK-PNK2`, and the two STYLE-08 removals on `E-HK-YECG`. Nothing is withdrawn as mathematics or as a record of what was checked. What is withdrawn is the claim that these cards belong to this chat's share of the partition.
+
+**Why it happened, and the rule taken from it.** The lane was defined over the cards of queue D; the Hoffman--Kunze cards are all structured and none of them is in that queue, so they carry no partition assignment. This chat extended "residue 5" to every card in the corpus, which is the convention other lanes use for their residue's cards, but did not check the arithmetic for the cards it was reading — it took a section's cards as its own because the collection was the one it had been working. The rule taken: before touching a card outside queue D, compute its residue; if it is not 5, report the defect rather than edit the card.
+
+**What remains for the six Hungerford cards.** The eighth item's six cards (`E-HK-23-4`, `-32-4`, `-37-4`, `-42-3`, `-71-3`, `-85-4`) are residues 4 and 3 by the same arithmetic — `E-HK-23-4` suffix `4`, `-42-3` suffix `3` — so the decision to report rather than edit them was the right one, and this correction does not change it.
+
+**The residue-5 cards of the collection.** There are 70 problem cards of `SRC-TEXT-HK71` in this lane's residue; the 32 that carried the "no text version" clause are repaired, and the remaining section-exercise pairs are §1.5 Ex. 5, §1.6 Ex. 12, and Ex. 5 and Ex. 11 of §2.1 through §10.4 where the suffix falls on residue 5 — the list is in the file's own ids, not inferred here.
+
+**Uncertainty.** Whether another chat holds any of these sections was not determined; the collection's cards show no review by another reader on most of them, which is consistent with no chat holding them, but that is an inference from silence.
