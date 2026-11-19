@@ -39,6 +39,8 @@ Show that $t(V) \cong \Proj S$.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.14, printed p. 81. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.14, printed p. 16, proves the same four parts: that $\Proj S$ is empty exactly when every element of $S_+$ is nilpotent, the morphism $U\to\Proj S$ determined by a graded homomorphism, its being an isomorphism when $\phi_d$ is an isomorphism for all $d\ge d_0$, and $t(V)\cong\Proj S$ through the affine charts $(S_{x_i})_0$.
+
 Write
 $$
 S_+=\bigoplus_{d>0}S_d
