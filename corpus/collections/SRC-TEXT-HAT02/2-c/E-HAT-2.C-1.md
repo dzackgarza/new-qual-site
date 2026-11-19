@@ -1,5 +1,6 @@
 ---
 
+
 schema: qual/card@1
 id: E-HAT-2.C-1
 kind: problem
@@ -238,6 +239,26 @@ audit:
     the oriented coefficient of a reversed edge was accumulated with the wrong sign. Not claimed: a
     proof for general $n$, which remains the card's own argument; and no published source exists for
     this exercise in anything searched.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the cases $n\le0$ and the
+    check that the two routes bound the same quantity. No defect found. Checked: step `cover`'s lift
+    to $\RR$; that $\bar f(w_{k+1})=w'_1+n$ because $p\bar f(w_{k+1})=f(v_1)$ and the degree is
+    $\bar f(t+1)-\bar f(t)$; that the interval $[w'_1,w'_1+n]$ carries exactly $n\ell+1$ vertices of
+    $\bar\tau'$; and that each of them is $\bar f$ of one of the $k+1$ source vertices — this last
+    from continuity alone, since the image of the connected interval is an interval containing both
+    endpoints and a target vertex in the image cannot be the image of an interior point of an edge,
+    the map being simplicial; so $k\ge n\ell$. Checked step `bound`'s fundamental-cycle form: the
+    coefficient of a target edge in $f_*(z_K)$ is a sum of $\pm1$ over the edges mapping onto it, so
+    it can equal $n$ only if at least $n$ edges do, and a simplicial structure on $S^1$ has at least
+    three edges. Checked the attainment $z\mapsto z^n$ from the $3n$-gon to the triangle, the case
+    $n<0$ by reversing the orientation, and $n=0$ by a constant map between triangles. Added, since
+    the printed question asks for "the minimum number of edges in ... $K$ and $L$" and that also
+    reads as a total: the minimum of $e(K)+e(L)$ is $3\max\{1,\abs{n}\}+3$, from the same bound.
+    Not changed: the statement as printed on p. 184 and the status of the two Math StackExchange
+    answers, which are user posts.
 ---
 
 ::: {.problem}
@@ -294,6 +315,8 @@ Steps [](#bound){.pf-ref} and [](#attain){.pf-ref} give the minimum for $n>0$, a
 $$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,\abs{n}\}.}
 $$
+
+If the question is read as the minimum of the total $e(K)+e(L)$, that minimum is $3\max\{1,\abs{n}\}+3$: for $n\neq0$ the bound gives $e(K)+e(L)\geq(\abs{n}+1)e(L)\geq3(\abs{n}+1)$ with equality at $e(L)=3$, $e(K)=3\abs{n}$, and for $n=0$ both complexes have at least three edges and three suffice.
 
 The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. The answer itself was checked by exhaustion for $n=1,2,3$: there is no simplicial map of degree $n$ from a $k$-cycle to an $l$-cycle with $l\le6$ for any $k<3n$, and degree $n$ is attained on a $3n$-cycle over a triangle, three ways for each $n$. `COMPLAINTS.md` item 11 records the disposition.
 :::
