@@ -43,63 +43,76 @@ audit:
     ring needs; the solution now checks $\sigma\frown 1=\sigma$ on a simplex from the augmentation on
     the front $0$-face. The chain-level identity and the descent to homology are as previously
     checked. Not checked: the boundary formula for the cap product is cited from p.240.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 16 of §3.3, printed p. 259, and
+    the printed page is added, the card having had none. Checked the chain-level identity against
+    Hatcher's conventions on a simplex: capping with $\varphi$ truncates to $[v_\ell,..,v_k]$ times the
+    evaluation, so capping twice truncates twice and multiplies the two evaluations, which is exactly
+    the cap product with $\varphi smi \psi$ because the cup product evaluates as the product of the two
+    evaluations on $[v_0,..,v_{\ell+m}]$. Checked the descent to homology through the boundary
+    formula, associativity on classes, and the unit from the augmentation on the front $0$-face.
 ---
 
 ::: {.problem}
-Show that $(\alpha \frown \varphi) \frown \psi = \alpha \frown (\varphi \smile \psi)$ for all $\alpha \in C_k(X; R)$, $\varphi \in C^\ell(X; R)$, and $\psi \in C^m(X; R)$.
+Show that $(\alpha \frown \var\varphi) \frown \\psi = \alpha \frown (\var\varphi \smile \\psi)$ for all $\alpha \in C_k(X; R)$, $\var\varphi \in C^\\ell(X; R)$, and $\\psi \in C^m(X; R)$.
 Deduce that cap product makes $H_*(X; R)$ a right $H^*(X; R)$ module.
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 16, printed p. 259.
+
 It is enough to check the identity on a singular $k$-simplex
 $$
 \sigma=[v_0,\ldots,v_k].
 $$
-With Hatcher's conventions, for $\varphi\in C^\ell(X;R)$,
+With Hatcher's conventions, for $\var\varphi\in C^\\ell(X;R)$,
 $$
-\sigma\frown\varphi
+\sigma\frown\var\varphi
 =
-\varphi([v_0,\ldots,v_\ell])
-[v_\ell,\ldots,v_k].
+\var\varphi([v_0,\ldots,v_\\ell])
+[v_\\ell,\ldots,v_k].
 $$
-Applying $\frown\psi$ with $\psi\in C^m(X;R)$ gives
+Applying $\frown\\psi$ with $\\psi\in C^m(X;R)$ gives
 $$
-(\sigma\frown\varphi)\frown\psi
+(\sigma\frown\var\varphi)\frown\\psi
 =
-\varphi([v_0,\ldots,v_\ell])
-\psi([v_\ell,\ldots,v_{\ell+m}])
-[v_{\ell+m},\ldots,v_k].
+\var\varphi([v_0,\ldots,v_\\ell])
+\\psi([v_\\ell,\ldots,v_{\\ell+m}])
+[v_{\\ell+m},\ldots,v_k].
 $$
 On the other hand, the cup product is
 $$
-(\varphi\smile\psi)([v_0,\ldots,v_{\ell+m}])
+(\var\varphi\smile\\psi)([v_0,\ldots,v_{\\ell+m}])
 =
-\varphi([v_0,\ldots,v_\ell])
-\psi([v_\ell,\ldots,v_{\ell+m}]),
+\var\varphi([v_0,\ldots,v_\\ell])
+\\psi([v_\\ell,\ldots,v_{\\ell+m}]),
 $$
 so
 $$
-\sigma\frown(\varphi\smile\psi)
+\sigma\frown(\var\varphi\smile\\psi)
 =
-\varphi([v_0,\ldots,v_\ell])
-\psi([v_\ell,\ldots,v_{\ell+m}])
-[v_{\ell+m},\ldots,v_k].
+\var\varphi([v_0,\ldots,v_\\ell])
+\\psi([v_\\ell,\ldots,v_{\\ell+m}])
+[v_{\\ell+m},\ldots,v_k].
 $$
 The two expressions are identical. By linearity,
 $$
-\boxed{(\alpha\frown\varphi)\frown\psi
-=\alpha\frown(\varphi\smile\psi)}
+\boxed{(\alpha\frown\var\varphi)\frown\\psi
+=\alpha\frown(\var\varphi\smile\\psi)}
 $$
 for every chain $\alpha$.
 
 The boundary formula for cap product implies that a cycle capped with a cocycle is a cycle, and changing either by a boundary or coboundary changes the cap product by a boundary. Hence cap product descends to
 $$
-H_k(X;R)\times H^\ell(X;R)\longrightarrow H_{k-\ell}(X;R).
+H_k(X;R)\times H^\\ell(X;R)\longrightarrow H_{k-\\ell}(X;R).
 $$
 The chain-level identity then gives on homology
 $$
-([\alpha]\frown[\varphi])\frown[\psi]
-=[\alpha]\frown([\varphi]\smile[\psi]),
+([\alpha]\frown[\var\varphi])\frown[\\psi]
+=[\alpha]\frown([\var\varphi]\smile[\\psi]),
 $$
 and the unit in $H^0(X;R)$ acts as the identity: on a $k$-simplex $\sigma$, $\sigma\frown 1=\sigma$ because the augmentation on the front $0$-face is the identity, so $H_*(X;R)$ is a right module over the graded ring $H^*(X;R)$.
 :::
