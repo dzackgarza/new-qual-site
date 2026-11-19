@@ -14,6 +14,14 @@ The classes of commutative rings on this page are totally ordered by inclusion, 
 
 [[PR-LLBRB]]
 
+The three classes the chain orders are defined on their own cards.
+
+[[D-NKRGN]]
+
+[[D-HTIL5]]
+
+[[D-INULL]]
+
 [[PR-GEHJF]]
 
 ## Quotients
