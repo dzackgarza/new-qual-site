@@ -27,8 +27,4 @@ A finite field is a finite extension of its prime field, so its order is a prime
 
 [[E-77EY7]]
 
-Hence a monic irreducible $f\in\FF_p[x]$ of degree $d$ splits over $\FF_{p^n}$ exactly when $d\divides n$, since its root generates $\FF_{p^d}$, and $\FF_{p^d}\subseteq\FF_{p^n}$ exactly under that divisibility.
-
-[[PR-73MCN]]
-
-[[PR-Q2IFX]]
+Hence a monic irreducible $f\in\FF_p[x]$ of degree $d$ splits over $\FF_{p^n}$ exactly when $d\divides n$: by [[PR-73MCN]] its root generates a copy of $\FF_{p^d}$, and by [[PR-Q2IFX]] the subfields of $\FF_{p^n}$ are the $\FF_{p^d}$ with $d\divides n$.
