@@ -54,6 +54,15 @@ audit:
     coming from lifting the deformation retraction. The bijection for a homotopy equivalence then
     follows by functoriality and homotopy invariance. Statement unchanged; no retained solution set
     covers this exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this exercise, and that is false: Sam's set,
+    retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves it at §4.3 Exercise 11 on
+    printed p. 26. The rendered sentence now cites it and says what the card adds. Found by
+    screening the residue's absence claims against the solution sets inventoried in
+    `wiki/topology/resources/solutions.md`; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -62,7 +71,7 @@ Show that a map $f: B_1 \to B_2$ induces $f^*: \mathcal{F}(B_2) \to \mathcal{F}(
 :::
 
 ::: {.solution}
-Everything follows from the pullback construction: pulling a fibration back along $f$ gives a fibration over $B_1$, and pullback respects fiber-preserving maps and fiber homotopies, so it induces a map on fiber homotopy classes; a homotopy $f_0\simeq f_1$ is handled by pulling back along the homotopy and using fiber transport along the interval, and functoriality plus the homotopy invariance then make $f^*$ invertible when $f$ is a homotopy equivalence. The argument is this card's own: no retained solution set covers this exercise.
+Everything follows from the pullback construction: pulling a fibration back along $f$ gives a fibration over $B_1$, and pullback respects fiber-preserving maps and fiber homotopies, so it induces a map on fiber homotopy classes; a homotopy $f_0\simeq f_1$ is handled by pulling back along the homotopy and using fiber transport along the interval, and functoriality plus the homotopy invariance then make $f^*$ invertible when $f$ is a homotopy equivalence. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 11**, printed p. 26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, where the pullback and its universal property give well-definedness on fiber homotopy classes and the composition law for $f^*$, Proposition 4.62 gives homotopy invariance, and functoriality gives the bijection for a homotopy equivalence. The steps below follow that route.
 
 ::: pf
 
