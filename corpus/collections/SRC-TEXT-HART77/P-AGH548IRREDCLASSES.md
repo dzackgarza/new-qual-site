@@ -237,6 +237,43 @@ audit:
     8.2.19 and Lemma 8.1.3, as cited above. Not checked: any printing of these
     other than the text versions beside the retained PDFs, and Jouanolou's
     book, which is not held, so the reducedness input is Harbourne's as cited.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The two elementary alternatives of exercises 4.8(a) and 4.8(b) are
+    re-proved without the general lemmas they went through, and one
+    non-sequitur of the necessity step is removed; no statement changes. Step
+    negative-square-is-a-line read "C^2 + C.K = 2h^1 - 2 >= -2, so C^2 >= -2
+    and h^1(C,O_C) = 0", and the vanishing of h^1 does not follow from that
+    inequality chain; it was Dolgachev's Lemma 8.1.3 that supplied it, the
+    citation being placed after the conclusion. The step now argues from
+    adjunction with K_X = -H and the two facts actually used: p_a = h^1(O_C)
+    is at least 0 and H.C is at least 1 because H is ample. If C^2 < 0 then
+    C^2 - H.C is at most -2, so p_a = 0 and C^2 = H.C - 2 is at least -1, hence
+    C^2 = -1 and H.C = 1, and a curve of degree 1 is a line; Theorem 4.9 of the
+    book, printed pp. 402-403, names the 27. The new proof uses no weak del
+    Pezzo lemma and no characteristic hypothesis. Step
+    conic-classes-contain-a-conic kept its enumeration of the degree 2 classes
+    of square 0 and dropped the chain Dolgachev 8.2.19, Harbourne Corollary
+    II.3, Theorem III.1(a) and Lemma II.6(a) that produced the curve: for a
+    line L and a plane P through it, P cap X is a plane cubic containing L, so
+    is L + C_P with C_P of class H-L; C_P does not contain L, since an
+    effective class containing 2L would be H-2L of degree 1 and square -5,
+    while an effective class of degree 1 is a line with square -1; a singular
+    conic is a pair of lines, both on X when C_P is contained in X, so only the
+    finitely many planes through L and another line of X give a singular
+    member, and the planes through L form a P^1. That gives a nonsingular conic
+    in each of the 27 classes H-L in every characteristic, using only that a
+    plane meets the cubic surface in a plane cubic and that a singular conic is
+    a pair of lines. Read for this pass: Hartshorne, exercises 4.8 and 4.9 with
+    Theorem 4.9, printed pp. 402-403, and the definitions of H and l in
+    Notation 4.7.3, printed p. 403, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md; and Dolgachev, Lemma
+    8.1.3, printed p. 248, for the statement the step previously used. Not
+    checked: the rendered page, and no printing other than the text versions
+    beside the retained PDFs. The step third-condition-contains-nonsingular-curve
+    is untouched and still uses Dolgachev 8.2.19 for the effective cone.
 ---
 
 ::: {.problem}
@@ -263,19 +300,18 @@ If $D$ contains an irreducible curve $C$ with $C^2<0$, then $C$ is one of the $2
 alternative (a).
 
 ::: pf-proof
-$X$ is a weak Del Pezzo surface, so $C\cdot K_X\le0$. Adjunction gives
+Adjunction on the surface, with $K_X=-H$, gives
 $$
-C^2+C\cdot K_X=2h^1(C,\OO_C)-2\ge-2,
+2p_a(C)-2=C^2+C\cdot K_X=C^2-H\cdot C,
+\qquad
+p_a(C)=h^1(C,\OO_C)\ge0,
 $$
-so $C^2\ge-2$ and $h^1(C,\OO_C)=0$, which forces $C\cong\PP^1$: this is I. V. Dolgachev, *Topics in
-Classical Algebraic Geometry* (September 27, 2010), Lemma 8.1.3 and its proof, printed p. 248. Since
-$-K_X=H$ is ample on the cubic surface, $C\cdot K_X<0$ and $C^2=-2-C\cdot K_X>-2$, so $C^2=-1$; then
-$$
-H\cdot C=-C\cdot K_X=C^2+2=1,
-$$
-and $C$ is a line. By Theorem 4.9 of the book, printed pp. 402--403, the only irreducible curves of
-negative self-intersection on $X$ are the $27$ lines $E_i,F_{ij},G_j$; the first paragraph of that
-proof derives the same conclusion from $p_a(C)\ge0$ without the general lemma.
+and $H\cdot C\ge1$ because $H$ is ample and $C$ is a curve. If $C^2<0$ then $C^2-H\cdot C\le-2$, so
+$p_a(C)=0$ and $C^2=H\cdot C-2\ge-1$, since $H\cdot C\ge1$; hence $C^2=-1$ and $H\cdot C=1$. A curve of
+degree $1$ on $X$ is a line, and by Theorem 4.9 of the book, printed pp. 402--403, the irreducible
+curves on $X$ of negative self-intersection are the $27$ lines $E_i,F_{ij},G_j$. Only the ampleness of
+$H$ and the nonnegativity of $p_a$ are used, in every characteristic; the first paragraph of the
+proof of Theorem 4.9 draws the same conclusion in the same way.
 :::
 
 :::
@@ -415,20 +451,17 @@ $H-G_i$, $H-F_{ij}$ and $H-E_i$, by the classes of those lines in Theorem 4.9, p
 This enumeration of the degree $2$ classes of square $0$ from the two equations is the card's own, in
 the manner of the proof of Theorem 4.9, which finds the $b_i$ of a line by trial.
 
-For $M$ a line, $H\cdot M=1$, and $L\cdot M$ is $-1$ if $M=L$ and $0$ or $1$ if $M\ne L$; hence
-$$
-(H-L)\cdot M=1-L\cdot M\ge0
-$$
-for every one of the $27$ lines, with equality only for the lines meeting $L$ and not equal to it.
-So $D$ is numerically effective by Dolgachev's Theorem 8.2.19, printed p. 265, and effective by
-Harbourne's Corollary II.3, preprint p. 3, since $-K_X\cdot D=D\cdot H=2>0$. Then Theorem III.1(a),
-preprint p. 7, applied to the bound $-K_X\cdot D\ge2$ gives that the sections of $D$ are base point
-free. Since $D^2=0$, the system is composed with a pencil, and Lemma II.6(a), preprint p. 4, with
-$-K_X\cdot D=2$ gives $D=rC$ with $r=1$ and $C$ the class of a reduced irreducible curve moving in a
-pencil; so $D$ itself is the class of a reduced irreducible curve $C$ with $C\cdot H=2$ and, by step
-[](#zero-square-is-a-conic){.pf-ref}, $p_a(C)=0$. A reduced irreducible curve of degree $2$ spans a
-plane and is an irreducible plane conic, and a singular plane conic is a pair of lines; so $C$ is
-nonsingular.
+Each of these classes contains an irreducible nonsingular conic. For a line $L$ on $X$ and a plane
+$\Pi$ through $L$, the intersection $\Pi\cap X$ is a plane cubic curve containing $L$, so as a divisor
+it is $L+C_\Pi$ with $C_\Pi$ a conic of class $H-L$. The conic $C_\Pi$ does not contain $L$: a class
+containing $2L$ would be $H-2L$, of degree $3-2=1$ and of square $3-4-4=-5$, whereas an effective class
+of degree $1$ is a line and has square $-1$. A singular plane conic is a union of two lines, equal or
+not, and both lie on $X$ because $C_\Pi\subseteq X$; a plane through $L$ and another line of $X$ is
+determined by that pair, so at most $26$ planes through $L$ give a singular $C_\Pi$, and every other
+one gives an irreducible nonsingular conic of the class $H-L$. The planes through a line form a
+$\PP^1$, so such a plane exists. Only two facts are used, that a plane meets the cubic surface in a
+plane cubic and that a singular conic is a pair of lines, so the argument holds in every
+characteristic.
 :::
 
 :::
