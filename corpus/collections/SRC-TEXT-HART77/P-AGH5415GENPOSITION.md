@@ -428,6 +428,65 @@ audit:
     tmp/sources/nagata-1960-rational-surfaces-ii.pdf, which the parts (d) and
     (e) steps cite. Not done: the proof of that properness, which is the open
     item of issue #157 and is not claimed here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, reader's report on the card: the two part-(c) step statements
+    are corrected to what their proofs give, the remark at five places, and the
+    earlier notes this supersedes are named. (1) Step
+    dense-general-position-extension stated part (c) itself while its proof was
+    complete only given the properness of the bad locus; its statement now
+    carries that hypothesis. (2) Step bad-locus-proper-closed said the bad set
+    "is contained in a proper closed subset of PP^2", while its proof carries
+    out the closedness only and says properness is asserted and not derived;
+    its statement now says that the set is closed and that it is proper
+    whenever the determinant is not identically zero, which is the asserted and
+    unproved point. With those two, the density proof's sentence that the
+    preceding step "produces only countably many proper closed bad subsets"
+    now reads that it produces countably many closed bad subsets, proper by the
+    hypothesis; the head, step part-c-open and the qed are unchanged. (3) The
+    remark said that Nagata's Section 2(c) is "the identification of general
+    position with non-speciality"; the paper defines non-speciality only, and
+    the identification is step general-position-is-non-special. It called
+    Nagata's Corollary to Proposition 9 "the eight-point criterion" (it is a
+    criterion for special points with no number of points), described Lemma
+    2.5 as "the generic-point statement that (c) is a spreading-out of but is
+    not" (an ungrammatical clause; Lemma 2.5 is the generic-point statement,
+    not a statement about the fibre over a fixed tuple), gave Egbert's r=8
+    list as "seven ... whose counts make 240" where his seventh row is "the
+    rest" and the 56 is the card's, and gave Yang's (a) as "in both
+    directions" where his "if" direction treats only a line through the images
+    of P_4, P_5, P_6. Each of the five now says what the source prints. (4)
+    The event of this date above whose note reads "No step, reference,
+    statement or source claim changes" is corrected here: it was true of the
+    commit it records and not of this one. (5) Earlier notes the card no
+    longer holds, named with their text: the 2026-11-16 event saying "What it
+    does not prove ... part (a) beyond its printed criterion, and part (c) in
+    full" is superseded for part (a) by step general-position-six-points,
+    whose two directions are Yang's and Hartshorne's and which the head counts
+    as proved; the event saying "Step part-c-open now names the two cases that
+    remain ... Proposition 8 of Nagata, printed p. 293" describes a step
+    removed the same day and gives the wrong page, Proposition 8 being printed
+    on p. 289; the event saying "Park (Chapter IV and V.5 ...)" is wrong about
+    V.5, Park's 5.x being Appendix C, and the rendered card says Park stops at
+    Chapter IV; the event saying Egbert has "(d) as a list of eight families"
+    and "(e) as a citation of Nagata" is wrong on both counts, as the remark
+    now says; the event saying the pages "423 and 424 are PDF pages" gives
+    V.4.10's page with V.4.15's, which is printed p. 409 = PDF p. 424 alone;
+    and the event reviewing the steps six-points-general-position-iff,
+    six-point-condition-preserved, degree-bound-nonneg-square,
+    r7-classes-fifty-six, r8-classes-two-forty,
+    negative-curve-is-minus-one-curve and r7-classes-realized-unique names
+    labels the card does not have. Checked in this pass: the printed exercise
+    on p. 409 (PDF 424); Nagata's Section 2(c) and Lemma 2.2 at printed
+    pp. 278--279, Proposition 3 and Lemma 2.5 at p. 279, Theorem 2a at
+    pp. 280--281, Theorem 4a at pp. 283--284 and Proposition 12 at p. 293, at
+    those folios of the PDF; Egbert's V.4.15 entry at PDF pp. 294--296; and
+    Yang's 5.4.15 in the text version at lines 2818--2834. Not checked: the
+    proof of the properness of the bad locus, which stays open under issue
+    #157, and no source outside those already on the card was searched for
+    part (c).
 ---
 
 ::: {.problem}
@@ -537,7 +596,7 @@ for which the word is defined on
 $$
 (P_1,\ldots,P_r,P)
 $$
-and the specified terminal triple is collinear is contained in a proper closed subset of $\PP^2$.
+and the specified terminal triple is collinear is a closed subset of $\PP^2$. It is a proper subset whenever the determinant written below is not identically zero, which this step asserts and does not prove; that nonvanishing is the one point of part (c) that this card leaves open.
 
 ::: pf-proof
 Work on the open subset on which the successive centers occurring in $w$ are noncollinear and all quadratic transformations are defined at the remaining labeled points. The standard quadratic formula [[P-AGH46CREMONA]] shows inductively that every terminal point has homogeneous coordinates which are rational functions of the coordinates of $P$. Collinearity of a specified terminal triple is therefore the vanishing of a rational determinant. Clearing denominators gives a closed condition on the initial point $P$.
@@ -550,14 +609,15 @@ What the argument gives is the closedness, which is all the rest of (c) uses: th
 :::
 
 ::: {.pf-step #dense-general-position-extension}
-If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position, there is a dense subset
+Assume that for every finite word $w$ of admissible transformations and every terminal triple the set of step [](#bad-locus-proper-closed){.pf-ref} is a proper subset of $\PP^2$.
+If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position, there is then a dense subset
 $$
 \boxed{V\subseteq\PP^2}
 $$
 such that every $P_{r+1}\in V$ makes $P_1,\ldots,P_r,P_{r+1}$ a general-position configuration.
 
 ::: pf-proof
-There are only finitely many choices of a triple of labels at each stage, so there are only countably many finite words of admissible transformations. For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore produces only countably many proper closed bad subsets of $\PP^2$ --- *given* the properness which that step asserts and does not prove, and which is the one point of (c) this card leaves open.
+There are only finitely many choices of a triple of labels at each stage, so there are only countably many finite words of admissible transformations. For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore produces only countably many bad subsets of $\PP^2$, each closed and, by the hypothesis of this step, proper.
 
 Also exclude the finitely many original lines through pairs of the fixed points and the finitely many points $P_i$ themselves. Let $B$ be the union of all these bad subsets and put
 $$
@@ -640,11 +700,11 @@ Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserv
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.15, printed p. 409, all five parts on that one page. Part (a) is decided in the book and in Yang: the "only if" direction is Yang's (a), the argument of step [](#general-position-six-points){.pf-ref}, and the "if" direction is the verification in the proof of Proposition 4.10, Case 2, printed pp. 403--404, that a quadratic transformation centred at three of six points with no three collinear and not all six on a conic produces six points with those same two properties, which is general position by induction over finite sequences.
 
-M. Nagata, *On rational surfaces, II*, Mem. Coll. Sci. Univ. Kyoto Ser. A 32 (1960), is the source the book's own note cites ("see Nagata [5, II, p. 283]"), and its Theorem 4a is the printed theorem at those pages. The paper contains: Section 2(c) with Lemma 2.2, printed pp. 278--279, the identification of general position with non-speciality, which is the hypothesis of Theorem 2a and of Proposition 12; Proposition 3, printed p. 279, the criterion for special points, that some type similar to $(1,1,1,1,0,\ldots,0)$, with $r-3$ zeros, the class of a line through three of the points, has a nonempty effective system; Lemma 2.4, printed p. 279, the descent by the operator $\mathfrak q$ that exhausts a similarity class; Lemma 2.5, printed p. 279, the generic-point statement that (c) is a spreading-out of but is not; Theorem 2a, printed pp. 280--281, the bijection between pre-exceptional types and irreducible exceptional curves of the first kind; Theorem 4a, printed pp. 283--284, finiteness at $r\le8$ with its table of pre-exceptional types for $r=8$ on p. 284, and the infinite family at $r=9$, which is the starred part (e); and Proposition 12, printed p. 293, the statement that an irreducible curve of negative self-intersection that is not of the first kind exists only when the points are special.
+M. Nagata, *On rational surfaces, II*, Mem. Coll. Sci. Univ. Kyoto Ser. A 32 (1960), is the source the book's own note cites ("see Nagata [5, II, p. 283]"), and its Theorem 4a is the printed theorem at those pages. The paper contains: Section 2(c) with Lemma 2.2, printed pp. 278--279, the definition of non-speciality, which step [](#general-position-is-non-special){.pf-ref} identifies with general position and which is the hypothesis of Theorem 2a and of Proposition 12; Proposition 3, printed p. 279, the criterion for special points, that some type similar to $(1,1,1,1,0,\ldots,0)$, with $r-3$ zeros, the class of a line through three of the points, has a nonempty effective system; Lemma 2.4, printed p. 279, the descent by the operator $\mathfrak q$ that exhausts a similarity class; Lemma 2.5, printed p. 279, the statement that independent generic points over the prime field are non-special, which is a statement about one generic configuration and not about the fibre over a fixed one; Theorem 2a, printed pp. 280--281, the bijection between pre-exceptional types and irreducible exceptional curves of the first kind; Theorem 4a, printed pp. 283--284, finiteness at $r\le8$ with its table of pre-exceptional types for $r=8$ on p. 284, and the infinite family at $r=9$, which is the starred part (e); and Proposition 12, printed p. 293, the statement that an irreducible curve of negative self-intersection that is not of the first kind exists only when the points are special.
 
 Igor V. Dolgachev, *Topics in Classical Algebraic Geometry*, Proposition 8.2.15 with its proof and its table, printed p. 261, and Section 8.2.6 with Lemma 8.2.18, printed pp. 263--264, classifies and counts the vectors with $\mathbf k_N\cdot v=-1$ and $v^2=-1$, which are the classes with $C\cdot K_X=-1$ and $C^2=-1$, at $56$ for $N=7$ and $240$ for $N=8$; Section 8.2.6 explains why on a Del Pezzo surface the image of each exceptional vector is a $(-1)$-curve, which is Dolgachev's route to the same realization that Theorem 2a gives here. Three defects of that printed passage are worth naming. The degree bound the proof draws from $(3d-1)^2\le N(d^2+1)$ is not what that inequality gives, which is $d\le3$ at $N=7$ and, the equality case $d=7$ forcing every multiplicity to equal $5/2$, $d\le6$ at $N=8$. The list for $N=8$ reads, after the classes $\mathbf e_i$, $\mathbf e_0-\mathbf e_i-\mathbf e_j$ and $2\mathbf e_0-\mathbf e_1-\cdots-\mathbf e_7+\mathbf e_i+\mathbf e_j$, the families $-\mathbf k_8+\mathbf e_i-\mathbf e_j$, $-\mathbf k_8+\mathbf e_0-\mathbf e_i-\mathbf e_j-\mathbf e_k$ and $-\mathbf k_8+2\mathbf e_{i_1}-\mathbf e_{i_2}-\cdots-\mathbf e_{i_6}$, and the last of these, read as it stands, is not a family of exceptional vectors; so the printed list is not to be read as a list of them. And even read so as to make it one, it does not reach the degree $6$ of Nagata's row $(6;3,2,\ldots,2)$ on p. 284, which is an exceptional class: $-2\mathbf k_8-\mathbf e_i$ has square $-1$ and $\mathbf k_8\cdot v=-1$. The counts $56$ and $240$ stand, in his table and in Nagata's.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a) --- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ --- and p. 295 for the rest: (b) is the single line "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and seven for $r=8$ whose counts make $240$, and there is no entry for the starred (e). His (b) cites the corollary at p. 291, which is the eight-point criterion and not the invariance of the definition.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.15, printed p. 294 for part (a) --- the statement that one curve of order $m$ passes through $m(m+3)/2$ points, by induction on $m$ --- and p. 295 for the rest: (b) is the single line "This is Nagata, Rational Surfaces II, corollary to proposition 9, and use (a) of this problem", (c) is the general-position set as the complement of the vanishing of finitely many determinants, (d) is a list of four families for $r=7$ summing to $56$ and, for $r=8$, six counted rows whose last entry is "the rest", which must be $56$ to make $240$, and there is no entry for the starred (e). His (b) cites the corollary at p. 291, which is the criterion for special points and not the invariance of the definition.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.15, printed p. 112, argues all five parts: its (a) in both directions, a conic through the six points becoming a line through three of their images and a line through three of the images pulling back to a conic through all six; (b) the composability argument; (c) the union of the lines $P_iP_j$ and the conics through five of the points, whose complement is dense because $k$ is uncountable, the printed hint's lemma used and not proved; (d) the four rows for $r=7$ and the seven for $r=8$, without saying which classes are represented by irreducible curves nor whether negative curves other than $(-1)$-curves exist; and (e) the degree-increasing argument, labelled by him "the case $r>9$".
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.15, printed p. 112, argues all five parts: its (a) in the "only if" direction, a conic through the six points becoming a line through the images of $P_4,P_5,P_6$, and in the "if" direction only the case of a line through those three images, which pulls back to a conic through all six; (b) the composability argument; (c) the union of the lines $P_iP_j$ and the conics through five of the points, whose complement is dense because $k$ is uncountable, the printed hint's lemma used and not proved; (d) the four rows for $r=7$ and the seven for $r=8$, without saying which classes are represented by irreducible curves nor whether negative curves other than $(-1)$-curves exist; and (e) the degree-increasing argument, labelled by him "the case $r>9$".
 :::
