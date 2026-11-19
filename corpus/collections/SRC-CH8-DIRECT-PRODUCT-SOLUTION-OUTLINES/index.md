@@ -56,7 +56,9 @@ source:
         - id: P-CH8-40
           comment: Exercise 40
         - id: P-CH8-49
-          comment: Exercise 49
+          comment: Exercise 41 (printed as exercise 49 when the card was created; Aut(U(25)) is
+            exercise 41 in Gallian 7e, confirmed by the book's Selected Answer at A11, exercise 49
+            being the divisibility of the order of (a,b) by lcm(m,n))
         - id: P-CH8-52
           comment: Exercise 52
         - id: P-CH8-53
