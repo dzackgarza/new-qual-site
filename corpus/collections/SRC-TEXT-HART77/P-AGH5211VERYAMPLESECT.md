@@ -31,6 +31,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.2.11, printed p. 104,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.2.11, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    h^i(L_X(D)) = h^i(L_C(b)) + h^i(L_C(b+e)) for D = C_0 + b f, the
+    drop by two on subtracting a fibre and by four on subtracting two. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.11 at printed
+    p. 104 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -428,4 +449,6 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 The exercise stands on printed p. 385 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the reference to (2.8.1) including.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.11, PDF p. 268. For (a) he first proves $h^i(\OO_X(C_0+\mathfrak b f))=h^i(\OO_C(\mathfrak b))+h^i(\OO_C(\mathfrak b+\mathfrak e))$ from the sequence $0\to\OO_X(-\mathfrak b f)\to\OO_X\to\OO_{C_0}\to0$ (his $\mathfrak e$ is the divisor of 2.8.1, of degree $-e$), then that a point is a base point on the fibre of $P$ exactly when $h^0(\OO_X(H-Pf))=h^0(\OO_X(H))-2$, and then that no point is, by adding $P$ to a divisor of $\mathfrak b$ and to one of $\mathfrak b+\mathfrak e$. For (b) he separates points and tangent vectors using the same count with $P+Q$, and argues that a tangent vector transverse to the fibre is covered by the very ampleness of $\mathfrak b+\mathfrak e$ on the base. Steps [](#s1){.pf-ref} to [](#s4){.pf-ref} are part (a) with the incidence set supplying the section $D\sim C_0+\mathfrak b f$, and steps [](#s6){.pf-ref} to [](#s9){.pf-ref} are part (b) through length-two subschemes. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.11, printed p. 104, computes the two cohomology sums the exercise turns on. With $0\to\mathcal L_X(-C_0)\to\OO_X\to\OO_C\to0$ and $D=C_0+\mathfrak b f$, the vanishing of $h^1$ and $h^2$ of $\mathcal L_X(\mathfrak bf)$ for $\mathfrak b$ nonspecial gives $h^i(\mathcal L_X(D))=h^i(\mathcal L_C(\mathfrak b))+h^i(\mathcal L_C(\mathfrak b+\mathfrak e))$, so that $h^0(\mathcal L_X(D-Pf))=h^0(\mathcal L_X(D))-2$ for every $P$, which is base-point-freeness in the form (IV, 3.1) uses; and in (b) the same count at $P+Q$ gives $h^0(\mathcal L_X(D-Pf-Qf))=h^0(\mathcal L_X(D))-4$, which separates points and tangent vectors. The card's own steps carry the same two counts.
 :::
