@@ -113,6 +113,26 @@ audit:
     book and the printed paper themselves, which were not reopened; no step
     was re-derived, and the two other sources of the paper's degeneration
     theorem remain unread as before.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.12, printed p. 89,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.12, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the smooth diagonal curve, the single node of $xyz^{d-2}+x^d+y^d$ at $d=3,4,5$ (lowest term $xy$ at $(0:0:1)$), $\frac12(d-1)(d-2)=3$ at $d=4$ and $6$ at $d=5$ for the projected rational normal curve, and the singular loci of the five explicit quartics and quintics by SymPy: the printed points hold for $(4,2)$, $(5,2)$ and $(5,5)$, fail for $(5,3)$ (off the curve) and $(5,4)$ (a triple point).
+    Not checked: Yang's Solutions outside printed p. 89; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.12 at printed
+    p. 89 beside the entries already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -258,4 +278,6 @@ Their bound (26) is $n\le\frac{(d-1)(d-2)}{2}$, and the deformation they use is 
 
 Hartshorne states the same result in the text, immediately before the exercise, as Severi's: Remark 3.11.1, printed pp. 314--315, records that for all $d,r$ with $0\le r\le\frac12(d-1)(d-2)$ the set $V_{d,r}$ is "irreducible and nonempty of dimension $\frac12d(d+3)-r$, but a complete proof was given only recently by Joe Harris".
 
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.12, printed p. 89, answers the exercise case by case rather than by the Severi theory: for $r=0$ it takes $x^d+y^d+z^d$, smooth over $\CC$ for $d=2,3,4,5$; for $r=1$ it takes $xyz^{d-2}+x^d+y^d$, whose only singular point is $(0:0:1)$, an ordinary node; for the maximum $r=\frac12(d-1)(d-2)$ at $d=4$ and $d=5$ it projects the rational normal curve of degree $d$ from $\PP^d$ to a plane curve $Y$ of the same degree $d$, which by the genus formula carries $\frac12(d-1)(d-2)$ nodes; and for the remaining five pairs $(d,r)=(4,2),(5,2),(5,3),(5,4),(5,5)$ it writes an explicit quartic or quintic and lists its nodes. Two of these steps are not established as printed. The projection in the third case has to be a general one: the count $\frac12(d-1)(d-2)$ is the number of nodes of a general plane projection of the rational normal curve, and the entry says only 'we may project it into $\PP^2$', which for a special centre gives fewer nodes or worse singularities. And the five explicit curves are asserted, not computed: 'has only two nodes' and the rest come with no singularity computation, the entry closing with 'Mathematica is Power, France is Bacon'. Checked here by exact symbolic computation on the printed strings, read at 600 dpi: for $(d,r)=(4,2)$, $(5,2)$ and $(5,5)$ the listed points are on the curve, are singular, are the whole singular locus, and have nondegenerate quadratic part --- two, two and five ordinary nodes as claimed. Two of the lines do not survive that check and are recorded rather than copied: $(5,3)$ lists $(\frac{1-\sqrt3}{2}:1:1)$ and $(-\frac{1-\sqrt3}{2}:1:1)$, and neither point is on the quintic, where the two nodes are at $(-\frac12\pm\frac{\sqrt3}{2}i:1:1)$ --- the printed coordinates are their real parts; and $(5,4)$ lists four nodes including $(1:0:0)$, which is on the curve and singular but has multiplicity three there, its lowest term being $z(y^2-yz+z^2)$, so that curve has three nodes and a triple point, not four nodes.
 :::
