@@ -127,6 +127,16 @@ $$
 Indenting below a real pole $x_0$ instead puts $x_0$ inside the contour; the counterclockwise half-circle then contributes $+i\pi\Res_{z=x_0}f$, the residue sum gains $2\pi i\Res_{z=x_0}f$, and the value is unchanged.
 :::
 
+::: {.example title="$\displaystyle\operatorname{PV}\int_\RR{\cos x\over x^2-1}\dx = -\pi\sin 1$"}
+Take $f(z) = e^{iz}/(z^2-1)$, whose simple poles $\pm1$ lie on $\RR$, and indent the semicircle above both of them.
+No pole is enclosed, so the closed integral vanishes, and the two clockwise half-circles contribute $-i\pi$ times the residues
+$$
+\Res_{z=1}f = {e^{i}\over 2}, \qquad \Res_{z=-1}f = {e^{-i}\over -2},
+$$
+whose sum is $(e^{i}-e^{-i})/2 = i\sin 1$; the large arc vanishes by [[T-ZO5UU|Jordan's lemma]], since $1/(z^2-1) = \bigo(1/R^2)$ on it.
+Hence $\operatorname{PV}\int_\RR f = i\pi\qty{\Res_{z=1}f+\Res_{z=-1}f} = i\pi\cdot i\sin1 = -\pi\sin1$, and taking real parts gives the value; the imaginary part $\operatorname{PV}\int_\RR\sin x/(x^2-1)\dx$ vanishes because that integrand is odd.
+:::
+
 ## Symmetry under rotation or translation: sectors and rectangles
 
 The integrands are functions whose values on a rotated ray or a translated line are a constant multiple of their values on the real axis.

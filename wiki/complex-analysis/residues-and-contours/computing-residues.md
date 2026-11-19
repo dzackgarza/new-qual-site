@@ -50,6 +50,15 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 [[PR-D3CDJ]]
 
+::: {.example title="The residues of $z/(1+z^2)$ add to zero"}
+For $f(z) = z/(1+z^2)$ the simple poles are at $\pm i$, with $\Res_{z=i}f = i/(2i) = 1/2$ and $\Res_{z=-i}f = -i/(-2i) = 1/2$.
+With $w = 1/z$,
+$$
+{1\over w^2}f\qty{1\over w} = {1\over w^2}\cdot{1/w\over 1+1/w^2} = {1\over w(w^2+1)},
+$$
+whose residue at the origin is $1$, so $\Res_{z=\infty}f = -1$, and $1/2+1/2-1 = 0$: the residues of $f$ on the sphere sum to zero.
+:::
+
 If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
 $$
 \sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0,
