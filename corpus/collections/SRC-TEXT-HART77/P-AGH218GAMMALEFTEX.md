@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-For any open subset $U \subseteq X$, show that the functor $\Gamma(U, \wait)$ from sheaves on $X$ to abelian groups is left exact.
+For any open subset $U \subseteq X$, show that the functor $\Gamma(U, \mcf)$ from sheaves on $X$ to abelian groups is left exact.
 That is, if
 $$
 0 \to \mcf' \to \mcf \to \mcf''
@@ -107,7 +107,7 @@ is exact.
 ::: pf-proof
 Step [](#injective-on-sections){.pf-ref} gives exactness at the first nonzero term.
 Step [](#kernel-identification){.pf-ref} identifies the image of the first map with the kernel of the second map, giving exactness at $\Gamma(U,\mcf)$.
-This is precisely left exactness of the global-sections functor $\Gamma(U,\wait)$.
+This is precisely left exactness of the global-sections functor $\Gamma(U,\mcf)$.
 :::
 
 :::
@@ -121,7 +121,11 @@ Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
 :::
 
 ::: {.remark}
-The functor $\Gamma(U, \wait)$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
+The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(U,-)$ on sheaves of abelian groups and the presheaf counterexample included.  The undefined control word \wait that stood for the sheaf in $\Gamma(U,\wait)$ has been replaced by \mcf, the macro this card uses everywhere else.
+
+The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(X,\cdot)$ on sheaves of abelian groups and the counterexample on presheaves included.
+
+The functor $\Gamma(U, \mcf)$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
 :::
 
 ::: {.remark title="Published solution"}
