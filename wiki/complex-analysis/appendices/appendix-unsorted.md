@@ -29,7 +29,7 @@ With the focus at the origin and the directrix the line $x = d$, the conic with 
 $$
 r = \frac{ed}{1+e\cos\theta},
 $$
-an ellipse for $0<e<1$, a parabola for $e = 1$, and a hyperbola for $e>1$; the polar form is what makes the conics the images of circles under Möbius transformations.
+an ellipse for $0<e<1$, a parabola for $e = 1$, and a hyperbola for $e>1$; the equation is the polar form of the focus--directrix definition, the ratio of the distance to the focus to the distance to the directrix being $e$.
 The standard forms, their classification by the discriminant, and completing the square are on [[complex-analysis/basics/precalculus|Precalculus preliminaries]].
 :::
 
