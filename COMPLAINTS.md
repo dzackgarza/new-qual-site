@@ -418,11 +418,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **65 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **64 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Thirty-two of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 65 stand as this item lists them.
+   reported and repaired above. Thirty-three of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 64 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -625,7 +625,14 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Whitehead gives $(X^n)_m\simeq(X_m)^n$; the covering of a CW complex is one, so the theorem applies to
    both sides.
 
-   Remaining unread in this item's set: §4.1 22–23 (2), §4.2 (39), §4.3 (24) --- 65 proofs.
+   **§4.1-22, read the same day.** Correct, no card changed. If $K\to X$ is a CW approximation then
+   $\pi_n(K)\cong\pi_n(X)$, and $\pi_n(K)$ is the union of the images of $\pi_n(L)$ over finite subcomplexes
+   $L$, since a sphere's image is compact and meets only finitely many cells; a countably-celled $K$ has
+   countably many finite subcomplexes, each a finite complex with countable homotopy groups, so $X$'s are
+   countable. The converse runs the §2.C construction the hint names. The card's four steps carry exactly
+   that.
+
+   Remaining unread in this item's set: §4.1-23 (1), §4.2 (39), §4.3 (24) --- 64 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
