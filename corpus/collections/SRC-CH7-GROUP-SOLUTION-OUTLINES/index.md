@@ -25,7 +25,8 @@ source:
     - id: P-CH7-8
       comment: Exercise 8
     - id: P-CH7-14
-      comment: Exercise 14
+      comment: Exercise 12 (printed; the card's id is item 14 of the retained
+        Chapter 7 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on)
     - id: P-CH7-15
       comment: Exercise 13 (printed as exercise 15 when the card was created; the
         groups-of-order-60 exercise is 13 in Gallian 7e)
@@ -34,7 +35,8 @@ source:
     - id: P-CH7-17
       comment: Exercise 17
     - id: P-CH7-20
-      comment: Exercise 20
+      comment: Exercise 18 (printed; the card's id is item 20 of the retained
+        Chapter 7 outline)
     - id: P-CH7-21
       comment: Exercise 19 (printed as exercise 21 when the card was created; the
         relatively-prime-order exercise is 19 in Gallian 7e, exercise 21 being the S_4 subgroup
@@ -58,7 +60,8 @@ source:
         orbits-of-rotations exercise is 44 in Gallian 7e, whose chapter 7 ends at
         50)
     - id: P-CH7-60
-      comment: Exercise 60
+      comment: Exercise 46 (printed; the card's id is item 60 of the retained
+        Chapter 7 outline; the square-region figure is on printed p. 152)
     - id: P-CH7-65
       comment: Exercise 49 (printed as exercise 65 when the card was created; the
         fewer-than-100-elements exercise is 49 in Gallian 7e, whose chapter 7
