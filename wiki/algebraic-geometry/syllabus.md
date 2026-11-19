@@ -184,6 +184,8 @@ References: [@GH94, Chapters 0--4; @Mir95, Chapters XI--XII; @Har92, Chapter V].
 
 4. Cohomology of smooth toric varieties: the Stanley–Reisner relation, self-intersection of invariant divisors.
 
+References: [@Ful93, Sections 1.1--1.4, 2.1--2.6, 3.1--3.4, 5.0--5.2].
+
 ## Complex algebraic geometry (minor topic)
 
 Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
