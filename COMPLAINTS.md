@@ -7295,3 +7295,59 @@ search of the literature for the superabundance question.
 **Checks.** `.scratch/report_check.py` on each card, 0 diagnostics; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels intact; the pre-commit card-YAML and schema hook on each commit.
 
 **Uncertainty.** The screen reads frontmatter only, so a wrong-book attribution written in the rendered solution rather than in an audit note would not have been caught. The four cards not read at their pages are reported from their statements and numbers, not from a page.
+
+## 2026-11-19, ninth item: §2.3 and §3.1 of Hatcher closed, and the three Q.E.D. cards repaired — twenty cards read
+
+**Object and need.** The staleness sweep takes the next section whose cards all carry an audit date
+before 2026-11-13. §2.3 (four cards, printed p. 165) and §3.1 (thirteen cards, printed pp. 204–206)
+were the next two, and `E-HAT-3.F-3`, `E-HAT-4.H-2` and `E-HAT-4.I-2` were the three cards known to
+end in a Q.E.D. step whose proof names labels.
+
+**§2.3.** `E-HAT-2.3-1`'s Cellular Boundary Formula was cited at p. 141 in two places; the formula is
+printed on p. 140 (book PDF p. 149, folio 140) and p. 141 carries the example $d_2(1)=(2,\cdots,2)$.
+`E-HAT-2.3-2` proved the exercise's vanishing only for a point and $S^0$ and called the step "the
+dimension axiom", which Hatcher does not include among his three axioms (printed p. 161); the step
+now proves $\widetilde h_n(X)=0$ for every finite-dimensional CW complex and says why it is not that
+axiom. `E-HAT-2.3-4` was correct; DeMason's binary case and induction, printed pp. 83–84, are now
+cited at the head of the solution instead of in a run-together closing paragraph. `E-HAT-2.3-3` was
+already read on 2026-11-18.
+
+**§3.1.** Three cards were in the state that `E-HAT-3.1-1`, `-3.1-5` and `-3.1-9` share: a `pf` block
+reopened inside the solution, proofs that are noun phrases ("contravariance of the
+$\operatorname{Hom}(-,G)$ functor", "definition of injective module", "Steps s3 and s4"), and a last
+step or a `pf-qed` that only names labels. All three are rewritten with substantive steps: 6, 6 and 4
+respectively. `E-HAT-3.1-8` carried an index slip $\widetilde H^{n+1}$ for $\widetilde H^{i+1}$ and
+the false sentence $H^n(X,\emptyset;G)=\widetilde H^n(X;G)$, false in degree $0$; both repaired.
+`E-HAT-3.1-7` and `-3.1-11` carried the same p. 141 for the Cellular Boundary Formula; both now
+read p. 140. `E-HAT-3.1-2`, `-3.1-3`, `-3.1-4`, `-3.1-6`, `-3.1-10`, `-3.1-12` and `-3.1-13` were
+correct; their answers were recomputed and their printed pages confirmed. `E-HAT-3.1-6`'s Klein
+bottle is the one $\Delta$-complex the book does not compute (figure on printed p. 102), and the
+card's orientations give $\ZZ\oplus\ZZ_2$ in degree one, which is the check that they are a valid
+structure.
+
+**The Q.E.D. cards.** `E-HAT-3.F-3` was also circular: it computed $H^{n+1}(X;\QQ)=0$ from "Ext
+vanishes when the coefficient group is a field", which is the assertion. The Moore-space route is now
+carried out by duality over the field $\QQ$ for a complex of vector spaces, which is not circular,
+and the algebraic route through divisibility names Baer's criterion as the one ingredient Hatcher
+does not print. `E-HAT-4.H-2` and `E-HAT-4.I-2` were mathematically right and are rewritten from
+placeholder nests into four and five steps. `E-HAT-4.H-4` is a definition card and checks out: for
+$n=1$ the conditions on $(\phi_{v_0},\phi_{v_1},\gamma)$ reduce to $\gamma(0)=f_1(\phi_{v_0})$,
+$\gamma(1)=\phi_{v_1}$, the mapping path space of printed p. 405.
+
+**A correction to the record.** The table this batch worked from says DeMason's set covers §3.1. It
+does not: his *M382C Full Credit HW Problems* jumps from Hatcher 2.3 and 2.C (printed pp. 83–84) to
+4.1 and 4.2 (printed p. 89). The only retained published solutions for §3.1 are Guanyu Li's, who
+answers 3.1.1–3.1.3 on printed p. 48 and 3.1.5–3.1.9 later; the other exercises are proved here.
+
+**Checks.** `qualc.authoring check` on each card, "schema and Markdown parsing OK (single card)";
+`tmp/lam.sh` on each card with a `pf` block, numbering re-read after every rewrite (the first two
+rewrites left the solution div unclosed and the card gate said so); `qualc.authoring check-range` on
+the two bases `9b0484eed4` and `d727f37820`, "23 changed file(s) checked" and "21 changed file(s)
+checked", no error; the pre-commit card-YAML and schema hook on each of the twenty commits. Every
+commit is on the remote.
+
+**Uncertainty.** Li's folio is taken as equal to the PDF page, as an earlier session established, and
+his pages 47–52 have no printed folio in the text layer. The Klein bottle's orientation conventions
+are the card's, not the book's, since the book prints the figure without the boundary maps; the
+homology check is what makes them credible. No certificate covers any of these cards, and none of the
+§3.1 exercises except 3.1.1–3.1.3 has a located published solution.
