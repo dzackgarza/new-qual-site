@@ -20,13 +20,11 @@ Three series measure three different failures of commutativity: a central series
 
 [[T-OSJ5S]]
 
-The composition factors are therefore an invariant of the group and not of the series, which is what makes solvability a property of the factors.
-
 [[FD-T7IQV]]
 
 ## Central and derived series
 
-The lower central series descends and the upper central series ascends, and the two reach the ends of the group at the same step; the derived series lies below the lower central series, since $G^{(i)}\leq\gamma_{i+1}(G)$ for every $i$.
+The lower central series descends and the upper central series ascends; the derived series lies below the lower central series, since $G^{(i)}\leq\gamma_{i+1}(G)$ for every $i$.
 
 [[D-5NV3N]]
 
