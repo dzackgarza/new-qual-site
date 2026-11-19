@@ -43,6 +43,16 @@ A $C^1$ map is invertible, with $C^1$ inverse, on some neighborhood of each poin
 
 :::
 
+::: {.example title="Polar coordinates, by the inverse function theorem"}
+The map $\Phi(r,\theta) = (r\cos\theta,\ r\sin\theta)$ has derivative
+$$
+\begin{pmatrix}\cos\theta & -r\sin\theta\\ \sin\theta & r\cos\theta\end{pmatrix},
+$$
+of determinant $r$, so [[T-XECJ3|the inverse function theorem]] gives a $C^1$ inverse on a neighbourhood of every point with $r\neq0$: the polar coordinates of a point off the origin.
+The local statement is all that can hold, since $\theta$ is determined only modulo $2\pi$.
+At $r = 0$ the determinant vanishes and the map is not injective near the origin: every neighbourhood of it contains $(r,\theta)$ and $(r,\theta+\pi)$ with the same image.
+:::
+
 ## Convergence of series
 
 ::: {.example title="A convergent series that is not absolutely convergent"}
