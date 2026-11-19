@@ -21,6 +21,8 @@ Let $\Omega\subseteq\CC$ be open and let $\mcf$ be a family of [[D-E7A5W|holomor
 - $\mcf$ is equicontinuous on every compact subset of $\Omega$, and
 
 - $\mcf$ is a [[D-QTJ7T|normal family]].
+
+This is [@SS03, Theorem 3.3 of Chapter 8 (p. 225)], with the two conclusions in the same order.
 :::
 
 ::: {.remark}
