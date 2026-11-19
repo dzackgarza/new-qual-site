@@ -179,9 +179,13 @@ All three now read the character, each with a `source-corrected` audit note. Ver
 `just check-card` parses it, and `qualc.tex.unrenderable_tex` over that card reports 0 errors
 where the whole-tree run reported one. Mathematics and wording unchanged.
 
-The class is still live rather than closed: it appears one card at a time as lanes transcribe
-new proofs, so the next whole-tree run is the check, not this list. It is also a build blocker —
-`qualc build` emits no site while any diagnostic stands.
+The class is a transcription habit rather than a closed set: it arrived one card at a time as
+lanes wrote new proofs, so the corpus, not this list, is what has to be checked. Deciding probe
+over the whole tree after the third repair: every card under `corpus/` (14394 of them), with the
+front matter, fenced and inline code and every math span dropped, searched for a `\S` not
+followed by a letter — **0 hits**. The standing gate for it is `qualc check`'s
+`raw-tex-dropped` diagnostic, which is also why no separate tool is kept for the probe. Any
+instance blocks `qualc build` from emitting a site.
 
 ---
 
