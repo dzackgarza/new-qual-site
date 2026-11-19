@@ -218,7 +218,7 @@ $$
 the series converging normally on $\CC\setminus\Lambda$.
 
 ::: pf-proof
-Differentiate the normally convergent series of steps [](#logderiv){.pf-ref} and [](#convergence){.pf-ref} term by term, which Weierstrass's theorem permits: $\frac{\dd}{\dd z}\frac{1}{z-\omega}=-\frac{1}{(z-\omega)^2}$, and the other two terms have derivatives $0$ and $\frac{1}{\omega^2}$. Hence $\frac{\dd}{\dd z}\frac{\sigma'}{\sigma}=-\frac1{z^2}-\sum_\omega\bigl(\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}\bigr)$, and $L'=-\frac{\dd}{\dd z}\frac{\sigma'}{\sigma}$ gives the displayed series. Its normal convergence follows from $\abs{\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}}=\abs{\frac{\omega^2-(z-\omega)^2}{\omega^2(z-\omega)^2}}\le C_K\abs\omega^{-3}$ for $\abs\omega>2\max_K\abs z$.
+Differentiate the normally convergent series of steps [](#logderiv){.pf-ref} and [](#convergence){.pf-ref} term by term, which Weierstrass's theorem permits: $\frac{d}{dz}\frac{1}{z-\omega}=-\frac{1}{(z-\omega)^2}$, and the other two terms have derivatives $0$ and $\frac{1}{\omega^2}$. Hence $\frac{d}{dz}\frac{\sigma'}{\sigma}=-\frac1{z^2}-\sum_\omega\bigl(\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}\bigr)$, and $L'=-\frac{d}{dz}\frac{\sigma'}{\sigma}$ gives the displayed series. Its normal convergence follows from $\abs{\frac{1}{(z-\omega)^2}-\frac{1}{\omega^2}}=\abs{\frac{\omega^2-(z-\omega)^2}{\omega^2(z-\omega)^2}}\le C_K\abs\omega^{-3}$ for $\abs\omega>2\max_K\abs z$.
 :::
 
 :::
