@@ -28,6 +28,38 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Printed exercise read: Hartshorne IV.6.1, printed p. 355 -- "A rational curve of degree 4 in
+    P^3 is contained in a unique quadric surface Q, and Q is necessarily nonsingular." The card
+    states it verbatim, adding and dropping no hypothesis.
+
+    The proof read step by step; every step is correct as written. s1: a plane quartic is a
+    nonsingular plane curve of genus 3 by the plane-curve formula, and X is rational, so X is not
+    planar. s2: deg 2H = 8 with X isomorphic to P^1, so h^0(X, O_X(2)) = 9, while
+    h^0(P^3, O(2)) = 10, so the restriction map has a kernel and X lies on a quadric. s3: if two
+    independent containing quadrics share a plane, irreducibility puts X in a plane; otherwise
+    their intersection Y is a complete intersection of degree 4 = deg X, and the kernel of
+    O_Y -> O_X has zero-dimensional support while O_Y, Y being a complete intersection, is
+    Cohen--Macaulay of pure dimension 1, so Y = X and p_a(Y) = 1 contradicts p_a(X) = 0. s4: a
+    singular quadric is a pair of planes, a double plane, or a cone; the first two put X in a
+    plane, and a curve of degree 4 = 2*2 on a cone has genus (2-1)^2 = 1, against 0.
+
+    Compared with the published solution. Lomont's 6.1, retained at
+    tmp/sources/hartshorne-solutions-lomont.md and beginning at line 250 of that file, gives the
+    same existence count and the same uniqueness argument by the complete-intersection genus, and
+    then ends "Then by (Ex. 3.6) X is the rational quartic curve in P^3, so Q is nonsingular.
+    (TODO - not clear?)". That last step is the one this card proves in s4, so the card is stronger
+    exactly where the published solution is unfinished.
+
+    Changed in this pass: s4 now cites the printed statement of the cone genus, Hartshorne's
+    Remark 6.4.1(d) at printed pp. 367--368, beside FE-CRVQUAD; it had cited the fact card alone.
+    No claim changed.
+
+    Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
+    which Remark 6.4.1(d) is deferred and which is not read here.
 ---
 
 ::: {.problem}
@@ -140,13 +172,10 @@ $\PP^3$ is either a union (possibly doubled) of planes or an irreducible
 quadric cone.  The first possibility would put the irreducible curve $X$ in
 a plane, contradicting step [](#s1){.pf-ref}.
 
-Suppose therefore that $Q$ is a quadric cone.  The quadric-cone calculation
-on [[FE-CRVQUAD]] says that an integral curve of even degree $2a$ on $Q$
-has
-$$
-p_a=(a-1)^2.
-$$
-Here $\deg X=4=2\cdot2$, so this gives
+Suppose therefore that $Q$ is a quadric cone.  For a curve of even degree
+$2a$ on a quadric cone the genus is $a^2-2a+1=(a-1)^2$: Hartshorne's
+Remark 6.4.1(d), printed pp. 367--368, deferred there to V. Ex. 2.9 and
+proved on [[FE-CRVQUAD]].  Here $\deg X=4=2\cdot2$, so this gives
 $$
 p_a(X)=(2-1)^2=1,
 $$
