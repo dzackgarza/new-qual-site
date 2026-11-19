@@ -36,13 +36,19 @@ Every degree statement on this page and the next is the tower law: it makes the 
 
 For $x$ algebraic over $\QQ$, a polynomial with root $x$ is found by eliminating the radicals, and the degree of the minimal polynomial is bounded by the dimension of the field the computation stays in.
 
-- For $x\coloneqq \sqrt a + \sqrt b$ with $a,b\in\QQ$, isolate a radical and square: $(x-\sqrt a)^2 = b$ gives $x^2+a-b = 2x\sqrt a$, and squaring again gives $(x^2+a-b)^2 = 4ax^2$, a monic polynomial of degree $4$ with root $x$.
+::: {.example title="Eliminating a radical"}
+For $x\coloneqq \sqrt a + \sqrt b$ with $a,b\in\QQ$, isolate a radical and square: $(x-\sqrt a)^2 = b$ gives $x^2+a-b = 2x\sqrt a$, and squaring again gives $(x^2+a-b)^2 = 4ax^2$, a monic polynomial of degree $4$ with root $x$.
+:::
 
-- If $n \coloneqq [\QQ(\alpha):\QQ]$ is known, then $1, \alpha, \ldots, \alpha^n$ are $n+1$ vectors in a space of dimension $n$, so they are $\QQ$-linearly dependent, and a dependence with coefficient $1$ on $\alpha^n$ is the minimal polynomial.
+::: {.example title="A dependence forced by the dimension"}
+If $n \coloneqq [\QQ(\alpha):\QQ]$ is known, then $1, \alpha, \ldots, \alpha^n$ are $n+1$ vectors in a space of dimension $n$, so they are $\QQ$-linearly dependent, and a dependence with coefficient $1$ on $\alpha^n$ is the minimal polynomial.
 
-- For $x \coloneqq \sqrt a + \sqrt b$, write $1, x, x^2, x^3, x^4$ in the spanning set $1, \sqrt a, \sqrt b, \sqrt{ab}$ of $\QQ(\sqrt a,\sqrt b)$; a dependence among these five vectors is a polynomial of degree at most $4$ with root $x$.
+For $x \coloneqq \sqrt a + \sqrt b$, write $1, x, x^2, x^3, x^4$ in the spanning set $1, \sqrt a, \sqrt b, \sqrt{ab}$ of $\QQ(\sqrt a,\sqrt b)$; a dependence among these five vectors is a polynomial of degree at most $4$ with root $x$.
+:::
 
-- If $\alpha,\beta\neq0$ and $\alpha\beta \in \QQ$, then $\alpha = (\alpha\beta)/\beta \in \QQ(\beta)$ and $\beta\in\QQ(\alpha)$, so $\QQ(\alpha)=\QQ(\beta)$ and the two elements generate the same simple extension, though their minimal polynomials can differ.
+::: {.example title="Two generators of one extension"}
+If $\alpha,\beta\neq0$ and $\alpha\beta \in \QQ$, then $\alpha = (\alpha\beta)/\beta \in \QQ(\beta)$ and $\beta\in\QQ(\alpha)$, so $\QQ(\alpha)=\QQ(\beta)$ and the two elements generate the same simple extension, though their minimal polynomials can differ.
+:::
 
 ## Algebraic extensions
 
