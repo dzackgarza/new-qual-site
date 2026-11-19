@@ -39,6 +39,18 @@ audit:
 
     Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
     HEAD b0cd7d86e2, all checks passing there.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §2.1, printed p. 131. Correct: one vertex, three edges and
+    one $2$-simplex give $C_0=\ZZ$, $C_1=\ZZ^3$, $C_2=\ZZ$; every edge is a loop at the single vertex,
+    so $\partial_1=0$; $\partial_2\sigma=[v_1,v_2]-[v_0,v_2]+[v_0,v_1]=c-b+a$ has coefficient vector
+    $(1,-1,1)$, which is primitive, so $\partial_2$ is injective and
+    $H_1=\ZZ^3/\langle(1,-1,1)\rangle=\ZZ^2$, with $H_0=\ZZ$ and $H_2=0$. Nothing changed. An earlier
+    event on the card records the Sage certification of the boundary matrices on the supported
+    development image; the identification of the complex with the space is the book's description.
+    Not claimed: a published solution.
 ---
 
 ::: {.problem}
