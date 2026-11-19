@@ -23,6 +23,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §4.K, printed p. 484, with the construction of
+    $\Delta X$ in §4.G and Lemma 4K.3. Correct in structure: over a simplex the preimage is the
+    iterated mapping cylinder, which deformation retracts onto the terminal vertex space while
+    $\sigma$ collapses to that vertex, so the fibres are weakly equivalent to it by the edge-map
+    hypothesis and the lemma's third part applies; over a finite subcomplex one adds one simplex
+    at a time with a collar neighbourhood and applies the lemma's first part; and over the whole
+    $\Delta$-complex, which is the union of an increasing sequence of finite subcomplexes with
+    every compact set lying in one of them, the lemma's second part applies. Nothing changed.
+    Not checked this session: the exact lettering of Lemma 4K.3's three parts, which is quoted
+    rather than re-read; the argument is the standard one. Not claimed: a published solution,
+    and no certificate.
 ---
 
 ::: {.problem}
