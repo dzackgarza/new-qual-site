@@ -24,12 +24,16 @@ is perfect: its two adjoints $R_i\to\Hom_k(R_{n-i},R_n)$ and $R_{n-i}\to\Hom_k(R
 :::
 
 ::: {.proof}
-As on [[T-GRDSOC]], the ideal $\mfm=\bigoplus_{i\geq1}R_i$ is the unique maximal ideal, so $R$ is a zero-dimensional local ring with residue field $R_0=k$, and its socle $\theset{r \st \mfm r=0}$ is one-dimensional and equal to $R_n$.
+As on [[T-GRDSOC]], the ideal $\mfm=\bigoplus_{i\geq1}R_i$ is the unique maximal ideal, so $R$ is a zero-dimensional local ring with residue field $R_0=k$, and its socle $\theset{r \st \mfm r=0}$ is one-dimensional and equal to $R_n$; in particular $\dim_k R_n=1$.
 
 Let $0\neq a\in R_i$ be homogeneous.
-The ideal $Ra$ is nonzero, and $R$ is Artinian, so the chain $Ra\supseteq\mfm(Ra)\supseteq\mfm^2(Ra)\supseteq\cdots$ stabilizes; if $\mfm^kN=\mfm^{k+1}N$ for $N=\mfm^k(Ra)$, then $N=0$ by Nakayama, so some $\mfm^k(Ra)$ is nonzero and killed by $\mfm$, that is, it is a nonzero subspace of the socle $R_n$.
-Hence $ab\in R_n$ is nonzero for some $b\in R$, and comparing degrees gives $b\in R_{n-i}$.
+The ideal $Ra$ is nonzero, and $R$ is finite-dimensional over $k$, hence Artinian, so the chain $Ra\supseteq\mfm(Ra)\supseteq\mfm^2(Ra)\supseteq\cdots$ stabilizes; if $\mfm^kN=\mfm^{k+1}N$ for $N=\mfm^k(Ra)$, then $N=0$ by Nakayama, so some $\mfm^k(Ra)$ is nonzero and killed by $\mfm$, that is, it is a nonzero subspace of the socle $R_n$.
+Hence there is $b\in R$ with $ab\in R_n$ nonzero.
 
-So the adjoint $R_i\to\Hom_k(R_{n-i},R_n)$ has zero kernel, and the same argument with the roles of $i$ and $n-i$ interchanged shows that the other adjoint has zero kernel.
-Two injections between spaces of the same finite dimension are isomorphisms, and $\dim_k R_n=1$.
+Write $b=\sum_j b_j$ with $b_j\in R_j$, so that $ab=\sum_j ab_j$ with $ab_j\in R_{i+j}$.
+The degree-$d$ component of $ab$ is the sum of those $ab_j$ with $i+j=d$, and $ab\in R_n$ makes that component zero for $d\neq n$; hence $ab_j=0$ whenever $j\neq n-i$, so that $ab_{n-i}=ab\neq0$.
+Replacing $b$ by its component $b_{n-i}\in R_{n-i}$, the adjoint $R_i\to\Hom_k(R_{n-i},R_n)$ has zero kernel.
+
+The case $i>n$ is vacuous, both $R_i$ and $R_{n-i}$ being zero, and the same argument with the roles of $i$ and $n-i$ interchanged shows that the other adjoint has zero kernel.
+Since $\dim_k R_n=1$, the space $\Hom_k(R_{n-i},R_n)$ has dimension $\dim_k R_{n-i}$, so $\dim_k R_i\leq\dim_k R_{n-i}$ and, interchanging, $\dim_k R_{n-i}\leq\dim_k R_i$; the two dimensions are equal and each injection is an isomorphism.
 :::
