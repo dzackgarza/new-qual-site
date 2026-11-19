@@ -28,6 +28,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the two parts from the long exact sequence of the pair: $H_0(X,A)=0$ exactly when $H_0(A)\to H_0(X)$ is onto, which says $A$ meets every path component; and $H_1(X,A)=0$ exactly when $H_1(A)\to H_1(X)$ is onto and the kernel of $H_0(A)\to H_0(X)$ vanishes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 16 of §2.1, printed p. 131. Correct: (a) the tail
+    $H_0(A)\to H_0(X)\to H_0(X,A)\to0$ makes $H_0(X,A)=0$ equivalent to surjectivity of $i_*$, and
+    on the component bases that says $A$ meets every path-component of $X$. (b) The segment
+    $H_1(A)\to H_1(X)\to H_1(X,A)\to H_0(A)\to H_0(X)$ makes $H_1(X,A)=0$ equivalent to
+    $H_1(A)\to H_1(X)$ onto together with $H_0(A)\to H_0(X)$ injective, and injectivity on
+    component bases says each path-component of $X$ contains at most one of $A$. Removed one thing
+    only: a closing step proved by naming two labels (STYLE-08). Not claimed: a published solution,
+    and no certificate.
 ---
 
 ::: {.problem}
@@ -107,22 +119,6 @@ is injective if and only if each path-component of $X$ contains at most one path
 ::: pf-proof
 
 Again use the component bases. Two distinct component generators of $H_0(A)$ have the same image exactly when their components lie in the same component of $X$. Thus injectivity is equivalent to the stated condition.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence
-$$
-\boxed{H_1(X,A)=0}
-$$
-if and only if $H_1(A)\to H_1(X)$ is surjective and every path-component of $X$ contains at most one path-component of $A$.
-
-::: pf-proof
-
-Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 
