@@ -21,6 +21,13 @@ audit:
     Used the map x↦1/(2+x), whose derivative has absolute value at most 1/4
     on the nonnegative axis, to obtain geometric decay of successive
     differences; the positive fixed point is sqrt(2)-1.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall97.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -34,6 +41,7 @@ Show that $(x_n)$ converges, and evaluate its limit.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1997, retained in this repository as `assets/attachments/Fall97.pdf`; the statement below is its wording.
 
 Define
 $$
