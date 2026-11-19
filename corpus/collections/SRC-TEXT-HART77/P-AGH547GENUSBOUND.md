@@ -229,6 +229,26 @@ audit:
     outside those named on the two cards. No statement of the exercise
     changed, and no part of it passes from open to proved other than the
     d = 4 case.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark of the preceding event of this date, on the rendered card:
+    its closing sentence still read that the sufficiency of condition (c) of
+    Exercise V.4.8 "is proved on P-AGH548IRREDCLASSES and needs
+    characteristic 0 there", which the same repair falsified, that card
+    being characteristic-free since 7d548c5699. The sentence now ends "in
+    every characteristic". Nothing else on the card changed: the problem
+    statement, both step statements, every proof and the rest of the remark
+    are as they were, and this event changes no mathematics. Checked after
+    the edit: ./.venv/bin/python -m qualc.authoring check
+    P-AGH547GENUSBOUND reports "schema and Markdown parsing OK (single
+    card)", tmp/lam.sh numbers the steps 1 to 9 with QED labels present,
+    tools/check_macros.py reports OK, and a search of the rendered text for
+    "characteristic" finds four sentences, each saying either that a cited
+    theorem carries no characteristic hypothesis or that the attainment
+    holds in every characteristic; no rendered sentence restricts anything
+    to characteristic 0.
 ---
 
 ::: {.problem}
@@ -465,5 +485,5 @@ its conclusion for every $d>0$ "possibly except $d=4$".
 
 For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
-[[P-AGH548IRREDCLASSES]] and needs characteristic $0$ there.
+[[P-AGH548IRREDCLASSES]] in every characteristic.
 :::
