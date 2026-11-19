@@ -39,6 +39,19 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 3 (p.204). Rechecked: ker(x2) = im(x2) = {0,2} in Z/4, the augmentation Z/4 -> Z/2 has the same kernel, Hom_{Z/4}(Z/4,Z/2) = Z/2 by evaluation at 1, and precomposition with x2 is zero because 2*phi(1) = 0 in Z/2; hence a zero-differential complex with cohomology Z/2 in every degree. Added the citation of Lemma 3.1(b) p.194 for independence of the resolution and dropped nothing.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 3 of §3.1, printed p. 204, and checked against Guanyu Li,
+    *Hatcher solutions*, Exercise 3.1.3, printed p. 48, whose resolution and conclusion agree.
+    Verified: in $\ZZ_4$ multiplication by $2$ has kernel and image $\{0,2\}$, and the quotient map
+    $\ZZ_4\to\ZZ_2=\ZZ_4/(2)$ has the same kernel, so the periodic complex of free $\ZZ_4$-modules
+    is exact; $\operatorname{Hom}_{\ZZ_4}(\ZZ_4,\ZZ_2)\cong\ZZ_2$ by evaluation at $1$; and for
+    $\ZZ_4$-linear $\varphi$ one has $\varphi(2)=2\varphi(1)=0$ in $\ZZ_2$, so every coboundary
+    vanishes and $\operatorname{Ext}^n_{\ZZ_4}(\ZZ_2,\ZZ_2)\cong\ZZ_2$ for all $n\ge0$. The card's
+    remark that the argument of Lemma 3.1(b) uses only freeness, so it applies over $\ZZ_4$, is
+    correct. Not claimed: a certificate.
 ---
 
 ::: {.problem}
