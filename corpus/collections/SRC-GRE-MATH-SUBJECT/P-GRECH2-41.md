@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 41 of the Chapter 2 review questions in assets/attachments/extracted/chapter-2.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction. The chapter extraction read n\sqrt[n]{n}; the book extraction and its Chapter 8 solution read n\sqrt[4]{n}.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 41 of the Chapter 2
+    Review Questions, printed on PDF p. 112, and its printed words are the card's. The chapter,
+    the question number and the page are now named in the solution's opening sentence. Not checked
+    in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -34,6 +42,7 @@ III. $\sum_{n=0}^{\infty} \frac{(n+1)^3}{5(n+2)(n+3)(n+4)}$
 :::
 
 ::: {.solution}
+This is question 41 of the Chapter 2 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 112; the statement below is its wording.
 
 ::: pf
 
