@@ -45,6 +45,20 @@ audit:
     therefore keeps both halves as its own: the $\varepsilon$-$\delta$ proof at an irrational and the density
     argument at a rational, and the explicit sequence of tents with pairwise disjoint supports of width below
     $1/k$, which answers the second question yes. Nothing needed correction.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The three steps opened with run-in titles ("Continuity at every irrational
+    point", "Discontinuity at every rational point", "Construction of continuous
+    functions f_k -> f pointwise") instead of claims, which STYLE-07 and STYLE-08
+    do not allow. They are now labelled steps s1 to s3 whose first paragraphs are
+    the claims that f is continuous at every irrational, discontinuous at every
+    rational, and the pointwise limit of continuous functions. The exercise is
+    Section 48 Exercise 3 at printed p. 299, as the page already on the card has
+    it. No statement, argument or citation changes.
+
 ---
 
 ::: {.exercise}
@@ -67,10 +81,8 @@ Can you find a sequence of continuous functions $f_n$ converging to $f$?
 
 ::: pf
 
-::: pf-step
-
-Continuity at every irrational point $x_0 \in \RR \setminus \QQ$:
-    *Proof:*
+::: {.pf-step #s1}
+$f$ is continuous at every irrational point.
 
 ::: pf-proof
 
@@ -126,10 +138,8 @@ Thus $\abs{f(x) - f(x_0)} < \varepsilon$ for all $x \in (x_0 - \delta, x_0 + \de
 
 :::
 
-::: pf-step
-
-Discontinuity at every rational point $x_m \in \QQ$:
-    *Proof:*
+::: {.pf-step #s2}
+$f$ is discontinuous at every rational point.
 
 ::: pf-proof
 
@@ -167,10 +177,8 @@ Hence $f$ is discontinuous at $x_m$.
 
 :::
 
-::: pf-step
-
-Construction of continuous functions $f_k \to f$ pointwise:
-    *Proof:*
+::: {.pf-step #s3}
+$f$ is the pointwise limit of continuous functions $f_k\colon\RR\to\RR$.
 
 ::: pf-proof
 
