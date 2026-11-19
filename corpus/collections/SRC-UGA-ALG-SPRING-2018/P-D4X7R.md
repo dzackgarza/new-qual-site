@@ -17,6 +17,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UGA Algebra Qualifying Exam, Spring 2018, Problem 3; both parts match.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    No retained solution set covers this examination. Structured the card's own computation
+    into numbered steps: characteristic polynomial, rank and nullity of $A+I$, the single
+    Jordan block, the generalized-eigenvector chain, and verification of the two column
+    identities $Av_2=v_1-v_2$, $Av_3=v_2-v_3$ that give $P^{-1}AP=J$. Checked the
+    determinant of $P$ and the chain equations independently.
 ---
 
 ::: {.problem}
@@ -33,57 +46,70 @@ b. Find an invertible matrix $P$ such that $\inverseof{P} AP = J$.
 :::
 
 ::: {.solution}
-**(a) Characteristic polynomial and Jordan form:**
 
-Compute $\det(\lambda I - A)$:
-$$
-\det\begin{pmatrix} \lambda & -1 & 2 \\ -1 & \lambda-1 & 3 \\ -1 & -2 & \lambda+4 \end{pmatrix}
-= \lambda [(\lambda-1)(\lambda+4) + 6] + 1 [-(\lambda+4) + 3] + 2 [2 + (\lambda-1)]
-$$
-$$
-= \lambda (\lambda^2 + 3\lambda + 2) + 1(-\lambda - 1) + 2(\lambda + 1)
-= (\lambda+1) [\lambda(\lambda+2) - 1 + 2] = (\lambda+1)(\lambda^2 + 2\lambda + 1) = (\lambda+1)^3.
-$$
-Thus the only eigenvalue is $\lambda = -1$ with algebraic multiplicity 3.
+No retained solution set covers this examination; the computation below is the card's own.
 
-Compute $A - (-1)I = A + I$:
+::: pf
+
+::: {.pf-step #charpoly}
+$\det(\lambda I-A)=(\lambda+1)^3$, so $-1$ is the only eigenvalue of $A$, with algebraic multiplicity $3$.
+
+::: pf-proof
+Expanding along the first column of
 $$
-A + I = \begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix}.
+\lambda I-A=\begin{pmatrix}\lambda&-1&2\\-1&\lambda-1&3\\-1&-2&\lambda+4\end{pmatrix}
 $$
-Row-reducing $A+I$:
+gives
 $$
-\begin{pmatrix} 1 & 1 & -2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{pmatrix} \implies \rank(A+I) = 2.
+\lambda\bigl[(\lambda-1)(\lambda+4)+6\bigr]-(-1)\bigl[(-1)(\lambda+4)+3\bigr]+(-1)\bigl[(-1)(-2)-(\lambda-1)\bigr],
 $$
-The geometric multiplicity of $\lambda = -1$ is $\nullity(A+I) = 3 - 2 = 1$.
-Since there is only 1 Jordan block for $\lambda = -1$, the Jordan canonical form is a single $3 \times 3$ block:
+which simplifies to $(\lambda+1)(\lambda^2+2\lambda+1)=(\lambda+1)^3$. The trace $-3$ and determinant $-1$ agree with $(-1)^3$.
+:::
+:::
+
+::: {.pf-step #nullity}
+$A+I$ has rank $2$, so $\lambda=-1$ has geometric multiplicity $1$ and the Jordan form is a single $3\times3$ block.
+
+::: pf-proof
 $$
-J = \begin{pmatrix} -1 & 1 & 0 \\ 0 & -1 & 1 \\ 0 & 0 & -1 \end{pmatrix}.
+A+I=\begin{pmatrix}1&1&-2\\1&2&-3\\1&2&-3\end{pmatrix},
+$$
+whose second and third rows are equal and whose first two rows are independent; hence the rank is $2$ and the nullity is $3-2=1$. A single block in a space of dimension $3$ is forced.
+:::
+:::
+
+::: {.pf-step #jordan}
+$$
+J=\begin{pmatrix}-1&1&0\\0&-1&1\\0&0&-1\end{pmatrix}.
 $$
 
-**(b) Finding the change-of-basis matrix $P$:**
+::: pf-proof
+There is one Jordan block, of size $3$, with eigenvalue $-1$; its standard form is displayed.
+:::
+:::
 
-We seek a generalized eigenvector chain $(v_1, v_2, v_3)$ such that:
+::: {.pf-step #chain}
+With
 $$
-(A+I)v_3 = v_2, \quad (A+I)v_2 = v_1, \quad (A+I)v_1 = 0 \quad (\text{with } v_1 \neq 0).
+v_3=\begin{pmatrix}0\\0\\1\end{pmatrix},\qquad
+v_2=(A+I)v_3=\begin{pmatrix}-2\\-3\\-3\end{pmatrix},\qquad
+v_1=(A+I)v_2=\begin{pmatrix}1\\1\\1\end{pmatrix},
 $$
-Compute $(A+I)^2$:
-$$
-(A+I)^2 = \begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix}\begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix} = \begin{pmatrix} 0 & -1 & 1 \\ 0 & -1 & 1 \\ 0 & -1 & 1 \end{pmatrix}.
-$$
-We choose $v_3$ such that $(A+I)^2 v_3 \neq 0$.
-Choose $v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
-Then:
-$$
-v_2 = (A+I)v_3 = \begin{pmatrix} -2 \\ -3 \\ -3 \end{pmatrix},
-$$
-$$
-v_1 = (A+I)v_2 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}.
-$$
-Check: $(A+I)v_1 = \begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$.
+the vectors satisfy $(A+I)v_1=0$, $(A+I)v_2=v_1$, and $(A+I)v_3=v_2$.
 
-Thus the columns of $P = [v_1 \mid v_2 \mid v_3]$ give:
-$$
-P = \begin{pmatrix} 1 & -2 & 0 \\ 1 & -3 & 0 \\ 1 & -3 & 1 \end{pmatrix}.
-$$
-Since $\det(P) = 1(-3) - (-2)(1) = -1 \neq 0$, $P$ is invertible and satisfies $P^{-1}AP = J$.
+::: pf-proof
+The products are computed directly from $A+I$:
+$(A+I)v_3$ is the third column, and $(A+I)v_2$ gives each entry $-2-3+6=1$. Then $(A+I)v_1$ gives $1+1-2=0$, $1+2-3=0$, $1+2-3=0$.
+:::
+:::
+
+::: {.pf-step #conjugating}
+The matrix $P=[v_1\mid v_2\mid v_3]$ is invertible and satisfies $P^{-1}AP=J$.
+
+::: pf-proof
+$P=\begin{pmatrix}1&-2&0\\1&-3&0\\1&-3&1\end{pmatrix}$ has determinant $-1\ne0$, so it is invertible. The chain identities are equivalent to $Av_1=-v_1$, $Av_2=v_1-v_2$, and $Av_3=v_2-v_3$, which say exactly that the columns of $AP$ are the columns of $PJ$. Hence $AP=PJ$ and $P^{-1}AP=J$.
+:::
+:::
+
+:::
 :::
