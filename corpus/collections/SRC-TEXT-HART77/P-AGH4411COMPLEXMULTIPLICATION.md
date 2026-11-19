@@ -25,6 +25,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.11, printed p. 93,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.11, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the degree as the area ratio $A_{\alpha L}/A_L=\abs{\alpha}^2$, the dual identity $\times\bar\alpha\circ\times\alpha=[\alpha\bar\alpha]$, and the two inclusions $\ZZ[\tau]\subseteq R\subseteq\ZZ[\tau]$ that give (c).
+    Not checked: Yang's Solutions outside printed p. 93; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.11 at printed p. 93; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -197,4 +217,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a), (
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.11, printed p. 93, does all three parts in a few lines each. (a) The degree is the index of the sublattice, so with $A_L$ the area of the period parallelogram $\deg f=A_{\alpha L}/A_L=\abs{\alpha}^2$. (b) Since $\times\alpha$ is $\CC\to\CC$ and multiplication by $N=\deg f=\alpha\bar\alpha$ induces $N_X$, the morphism $\times\bar\alpha$ is the dual: it satisfies $\times\bar\alpha\circ\times\alpha=\times N$, which is what $[N]=\hat f\circ f$ asks for. (c) If $\tau$ is integral over $\ZZ$ in the quadratic field, then $\tau^2$ is an integral combination of $\tau$ and $1$, so $\ZZ[\tau]=\ZZ\oplus\ZZ\tau=L_\tau$ and $\ZZ[\tau]\subseteq R$; conversely an $\alpha$ with $\alpha L_\tau\subseteq L_\tau$ has $\alpha=\alpha\cdot1\in L_\tau$, so $\alpha\in\ZZ[\tau]$. The one thing the entry takes for granted is that $R$ is the ring of endomorphisms fixing the origin, which is how the exercise's ring has to be read for composition to be defined.
 :::
