@@ -52,6 +52,15 @@ audit:
     nonzero at a point, so $g(X)$ lies in the union of the segments $[z_i,z_j]$, and general position keeps two
     such segments from meeting except in a shared endpoint, which the card verifies from the affine
     independence of every four of the $z_i$. Nothing needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: the data of the theorem at $m=1$, the at-most-two-nonzero
+    step, the containment in the union of segments, the two general-position checks, and the closing step on
+    the word "onto". The mathematics is the card's own, unchanged, including its recorded repair that the
+    single approximation step gives containment only. No complete published solution was located on the
+    earlier pass, whose searches are listed in the audit events above; nothing was re-searched here.
 ---
 
 ::: {.exercise}
@@ -60,28 +69,74 @@ Examine the proof of the imbedding theorem in the case $m = 1$ and show that the
 :::
 
 ::: {.solution}
-In the proof of Theorem 50.5, when $m=1$ we have $N=2m+1=3$. The finite open cover $\{U_i\}_{i=1}^r$ is chosen to have order at most $m+1=2$, and a partition of unity $\{\phi_i\}$ dominated by this cover is chosen. The approximating map is
-$$
-g(x)=\sum_{i=1}^r\phi_i(x)z_i,
-$$
-where the points $z_i\in\RR^3$ are in general position.
+No retained solution set covers this exercise: it is a check on the proof of Theorem 50.5 rather than a statement with an answer of its own, and the searches recorded in the audit events above located nothing that treats §50 Exercise 5 (printed p. 315). The argument is therefore the card's own.
 
-At each point $x\in X$, at most two of the numbers $\phi_i(x)$ are nonzero. Since they are nonnegative and sum to $1$, either
-$$
-g(x)=z_i
-$$
-for some $i$, or
-$$
-g(x)=t z_i+(1-t)z_j\qquad(0<t<1)
-$$
-for some pair $i\ne j$. Thus
-$$
-g(X)\subset \bigcup_{1\le i<j\le r}[z_i,z_j],
-$$
-a finite union of straight line segments.
+The data are those of the theorem's proof with $m=1$, so $N=2m+1=3$: a finite open cover $\{U_{1},\dots,U_{r}\}$ of order at most $2$, a partition of unity $\{\phi_{1},\dots,\phi_{r}\}$ dominated by it, points $z_{1},\dots,z_{r}\in\RR^{3}$ in general position, and $g(x)=\sum_{i}\phi_{i}(x)z_{i}$.
 
-This finite union of segments is a linear graph with vertices $z_1,\ldots,z_r$. Points in general position in $\RR^3$ have every four of them affinely independent. If $\{i,j\}\cap\{k,l\}=\varnothing$, the segments $[z_i,z_j]$ and $[z_k,z_l]$ are disjoint, since a common point would put $z_i,z_j,z_k,z_l$ in one plane. If the segments share exactly one endpoint $z_i$, they meet only at $z_i$, since $z_i,z_j,z_l$ are not collinear. So two edges meet at most in a common vertex.
+::: pf
 
-Thus $G=\bigcup_{i<j}[z_i,z_j]$ is a linear graph and the map $g$ of part (2) carries $X$ into it. The word "onto" in the exercise is realized at the end of the theorem's proof, where $g$ is shown to be injective: then $g$ is a homeomorphism of $X$ onto its image, a subspace of the linear graph $G$, and the image is the linear subgraph whose vertices are the points $g(x)$ at which exactly one partition function is nonzero.
+::: {.pf-step #order}
+At most two of the numbers $\phi_{1}(x),\dots,\phi_{r}(x)$ are nonzero at any $x\in X$, and those present are nonnegative and sum to $1$.
+
+::: pf-proof
+The cover has order at most $2$: no point of $X$ lies in three of its members. The partition of unity is dominated by the cover, so the support of $\phi_{i}$ lies in $U_{i}$, and hence $\phi_{i}(x)\ne0$ forces $x\in U_{i}$; if three of the $\phi_{i}(x)$ were nonzero, $x$ would lie in three members of the cover. Nonnegativity and the sum being $1$ are the defining properties of a partition of unity.
 :::
 
+:::
+
+::: {.pf-step #image}
+$g(x)$ is either one of the $z_{i}$ or a point of a segment $[z_{i},z_{j}]$ with $i\ne j$; consequently $g(X)\subseteq G:=\bigcup_{i<j}[z_{i},z_{j}]$.
+
+::: pf-proof
+By step [](#order){.pf-ref} either exactly one $\phi_{i}(x)=1$ and all others vanish, giving $g(x)=z_{i}$, or exactly two are nonzero, $\phi_{i}(x)=t$ and $\phi_{j}(x)=1-t$ with $0<t<1$, giving $g(x)=tz_{i}+(1-t)z_{j}\in[z_{i},z_{j}]$. In either case $g(x)$ lies in $G$, so the image is contained in it.
+:::
+
+:::
+
+::: {.pf-step #general-position}
+Every four of the $z_{i}$ are affinely independent, hence no four are coplanar and no three are collinear.
+
+::: pf-proof
+General position in $\RR^{3}$ for $r$ points means, by the definition used in the proof, that any $4=3+1$ of them are affinely independent; four affinely independent points of $\RR^{3}$ do not lie in a plane. If three of them were collinear, those three together with any fourth would lie in a plane, contradicting the preceding sentence.
+:::
+
+:::
+
+::: {.pf-step #disjoint}
+If $\{i,j\}\cap\{k,l\}=\varnothing$ then $[z_{i},z_{j}]\cap[z_{k},z_{l}]=\varnothing$.
+
+::: pf-proof
+A common point of the two segments would lie on both, so the four endpoints would all lie in the plane spanned by that point and the two lines: concretely, the two segments with a common point determine two lines meeting there, those lines span a plane, and the four $z$'s lie in it. That contradicts the affine independence of every four points from step [](#general-position){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #shared}
+If the two segments share exactly one endpoint $z_{i}$ then they meet in that point only.
+
+::: pf-proof
+Suppose $[z_{i},z_{j}]$ and $[z_{i},z_{l}]$ meet at a point other than $z_{i}$. Then the two segments have two distinct common points, so the two lines they span coincide, and $z_{i},z_{j},z_{l}$ are collinear, contrary to step [](#general-position){.pf-ref}. So the intersection is $\{z_{i}\}$.
+:::
+
+:::
+
+::: {.pf-step #graph}
+$G=\bigcup_{i<j}[z_{i},z_{j}]$ with vertices $z_{1},\dots,z_{r}$ is a linear graph in $\RR^{3}$, and $g$ carries $X$ into it.
+
+::: pf-proof
+$G$ is a finite union of straight line segments; by steps [](#disjoint){.pf-ref} and [](#shared){.pf-ref}, any two of its segments meet at most in a common endpoint, which is exactly the condition that makes such a union a linear graph with the $z_{i}$ as its vertices. Step [](#image){.pf-ref} gives $g(X)\subseteq G$.
+:::
+
+:::
+
+::: {.pf-step}
+The word "onto" in the exercise is realized at the end of the theorem's proof, after injectivity.
+
+::: pf-proof
+What the approximation step above establishes is containment, $g(X)\subseteq G$, and that is all it can give: a single choice of the partition of unity need not produce an injective map, and a Cantor set inside an edge of the graph can occur in the image of a non-injective $g$. The theorem's proof then shows that $g$ may be taken injective, and a continuous injection from the compact space $X$ into the metric space $\RR^{3}$ is an imbedding onto its image; the image, being a subspace of the linear graph $G$, is then the linear graph the exercise speaks of, with vertices the points $g(x)$ at which exactly one partition function is nonzero. So "onto a linear graph" holds in the sense that $g$ maps $X$ onto a linear graph — its image, once $g$ is injective — and the containment in $G$ proved above is the part of the statement that the approximation step alone supplies.
+:::
+
+:::
+
+:::
+:::
