@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 5, printed p. 419,
+    Theorem 4.57, printed p. 393, and Example 4.11, printed p. 349. The proof is correct:
+    K(Z,n) is built from S^n with cells of dimension at least n+2, so its (n+1)-skeleton
+    is S^n; surjectivity of [X,S^n] -> [X,K(Z,n)] is cellular approximation for the
+    n-dimensional X, and injectivity is cellular approximation for the pair
+    (X x I, X x dI), whose total space is (n+1)-dimensional, landing in
+    K(Z,n)^{n+1} = S^n. What the card did not say is the identification it was using:
+    Theorem 4.57 is stated for based classes, the exercise writes unbased [X,S^n], and
+    those agree here because pi_1(S^n) acts trivially (0 for n >= 2, and conjugation in
+    the abelian pi_1(S^1) = Z for n = 1). A sentence now says so. Statement unchanged.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -129,7 +143,7 @@ Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natur
 $[X,S^n]\cong H^n(X;\ZZ)$ for every $n$-dimensional CW complex $X$ and every $n\ge1$.
 
 ::: pf-proof
-Composing the bijection of step [](#bij){.pf-ref} with step [](#represent){.pf-ref} gives $[X,S^n]\cong[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$, which is the assertion of the exercise. The hypothesis $n\ge1$ is the one under which the hint's construction starts from $S^n$ and under which representability is stated; the exercise is posed for $n$-dimensional complexes with $n\ge1$.
+Composing the bijection of step [](#bij){.pf-ref} with step [](#represent){.pf-ref} gives $[X,S^n]\cong[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$, which is the assertion of the exercise. Two brackets are in play and coincide here: Theorem 4.57 (printed p. 393) is stated for based homotopy classes $\langle X,K(\ZZ,n)\rangle$, while the exercise writes $[X,S^n]$ for unbased ones. For a CW complex $X$ and a path-connected $Y$ the unbased classes are the orbits of $\langle X,Y\rangle$ under the action of $\pi_1(Y)$, and here that action is trivial: $\pi_1(S^n)=0$ for $n\ge2$, and for $n=1$ the action is conjugation in the abelian group $\pi_1(S^1)=\ZZ$. So $[X,S^n]=\langle X,S^n\rangle$, and the bijections above identify all three. The hypothesis $n\ge1$ is the one under which the hint's construction starts from $S^n$ and under which representability is stated; the exercise is posed for $n$-dimensional complexes with $n\ge1$.
 :::
 
 :::
