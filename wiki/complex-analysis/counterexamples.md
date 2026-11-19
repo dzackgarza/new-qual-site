@@ -101,7 +101,7 @@ An injective holomorphic function has nonvanishing derivative ([[P-Z776N]]).
 ## Holomorphy
 
 ::: {.example title="Real differentiable and not holomorphic"}
-The function $f(z) = \bar z$ is real differentiable everywhere and fails the [[D-E7A5W|Cauchy--Riemann equations]]; its difference quotient $\bar h/h$ depends on the direction of $h$.
+The function $f(z) = \bar z$ is real differentiable everywhere and fails the [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|Cauchy--Riemann equations]]; its difference quotient $\bar h/h$ depends on the direction of $h$.
 :::
 
 ::: {.example title="Cauchy--Riemann equations at one point"}
