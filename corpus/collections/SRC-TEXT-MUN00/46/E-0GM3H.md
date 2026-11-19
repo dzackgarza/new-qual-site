@@ -43,6 +43,17 @@ audit:
     search of this pass for the basis B(f, delta) of the fine topology, recorded in the COMPLAINTS.md
     entry for §43--§50, returned only a question on the fine topology of the Baire theorem of §48
     Exercise 13, which is a different statement. The card keeps its own proof.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The four parts opened with a "Part (x):" label and a "Proof:" line in front of
+    statements that were already claims; the labels and the run-in proof lines are
+    gone, so each step's first paragraph is its claim, and the preamble names the
+    exercise, Munkres, Topology (2000), Section 46, Exercise 8, printed p. 289. No
+    statement, argument or citation changes.
+
 ---
 
 ::: {.exercise}
@@ -71,8 +82,7 @@ We call it the fine topology.
 
 ::: {.pf-step #s1}
 
-Part (a): The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \RR_+)\}$ form a basis.
-    *Proof:*
+The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \RR_+)\}$ form a basis.
 
 ::: pf-proof
 
@@ -132,8 +142,7 @@ Hence $g \in B(g, \delta_3) \subseteq B(f_1, \delta_1) \cap B(f_2, \delta_2)$, p
 
 ::: {.pf-step #s2}
 
-Part (b): The fine topology contains the uniform topology.
-    *Proof:*
+The fine topology contains the uniform topology.
 
 ::: pf-proof
 
@@ -161,8 +170,7 @@ Thus every uniform ball is open in the fine topology, so the fine topology conta
 
 ::: pf-step
 
-Part (c): If $X$ is compact, the fine and uniform topologies coincide.
-    *Proof:*
+If $X$ is compact, the fine and uniform topologies coincide.
 
 ::: pf-proof
 
@@ -203,8 +211,7 @@ Thus $g \in B_{\bar{\rho}}(g, \varepsilon) \subseteq B(f, \delta)$. Every point 
 
 ::: pf-step
 
-Part (d): If $X$ is discrete, $\mathcal{C}(X, Y) = Y^X$ and the fine topology equals the box topology.
-    *Proof:*
+If $X$ is discrete, $\mathcal{C}(X, Y) = Y^X$ and the fine topology equals the box topology.
 
 ::: pf-proof
 
