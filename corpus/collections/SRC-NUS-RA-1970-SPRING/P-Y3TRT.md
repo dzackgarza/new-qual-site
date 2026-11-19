@@ -32,6 +32,9 @@ for all $x \in [0, 1]$.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the recursion is shown to define continuous $1$-Lipschitz functions slab by slab, Arzelà--Ascoli supplies a uniformly convergent subsequence, and uniform continuity of $g$ on the square passes to the limit in the integral. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: {.pf-step #fn-well-defined-bounded}
