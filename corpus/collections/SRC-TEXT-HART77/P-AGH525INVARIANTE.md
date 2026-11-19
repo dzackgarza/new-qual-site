@@ -235,6 +235,30 @@ audit:
     statement of the Theorem and not on the derivation that follows it, so the
     number decides nothing on the card. The PDF has no text layer, which is why
     the page was rendered rather than extracted.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part of #160's row for this card: parts (a) and (b) are characteristic-free,
+    and the card's qed and remark now say so instead of restricting them to
+    characteristic zero. Checked on the steps: s1 uses Ext^1(L,O) = H^1(L^-1)
+    and Serre duality H^1(K-A) = H^0(A)^*, both over any field; s2 the long
+    exact sequence of the twist, s3 the splitting of an extension and the
+    normalization degree bounds, s4 the invariant e = -deg det; s5 the duality
+    between extension classes and H^0(K+D); s6 the pullback square and its
+    dual multiplication by s_F; s7 the splitting followed by the inclusion;
+    s8 the saturation of a subsheaf and an effective divisor T of degree a-1.
+    None uses characteristic zero or the compact-Riemann-surface theory; the
+    Gunning and Lange--Narasimhan statements are the standard forms of these
+    identifications. Part (c) for g at least 2 still rests on Lange--
+    Narasimhan's Corollary 1.2, printed p. 58, whose dimension count is stated
+    over characteristic zero; the genus-one case is Hartshorne's Example
+    2.11.6, printed p. 375, and is characteristic-free; part (d) is Lange's
+    Theorem over an algebraically closed field of arbitrary characteristic,
+    printed pp. 267--268. So (a), (b), (c) at g = 1 and (d) now stand over any
+    algebraically closed field; (c) at g at least 2 remains characteristic
+    zero. Not checked: no source outside those already on the card was read,
+    and the steps were checked for their field hypotheses, not re-derived.
 ---
 
 ::: {.problem}
@@ -272,7 +296,7 @@ H^0(C,\mathcal E)\ne0
 $$
 but $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, Proposition 2.8, printed p. 372, and that for such a bundle the invariant of $X=\PP(\mathcal E)$ is $e=-\deg\det\mathcal E$, Notation 2.8.1, printed p. 373.
 
-Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74, and Theorem 14, printed pp. 87--90, together with the duality half of Hartshorne's proof of Theorem 2.12, printed p. 376; part (b) from Proposition 1.1, printed p. 57, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15, printed pp. 377--379; part (c) from their Corollary 1.2, printed p. 58, with Example 2.11.6, printed p. 375, for genus one; part (d) from Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2 Theorem, printed pp. 267--268. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so.
+Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74, and Theorem 14, printed pp. 87--90, together with the duality half of Hartshorne's proof of Theorem 2.12, printed p. 376; part (b) from Proposition 1.1, printed p. 57, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15, printed pp. 377--379; part (c) from their Corollary 1.2, printed p. 58, with Example 2.11.6, printed p. 375, for genus one; part (d) from Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2 Theorem, printed pp. 267--268. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so. The arguments of parts (a) and (b) use only $\Ext^1\cong H^1$, Serre duality and the pullback square, so they hold over an algebraically closed field of any characteristic; part (c) for $g\ge2$ is the one place the characteristic-zero hypothesis is used.
 
 ::: pf
 
@@ -379,7 +403,7 @@ This is the criterion of Lange and Narasimhan, Proposition 1.1, printed p. 57, i
 $$
 H^0(C,\OO_C(K_C+D-F))\xrightarrow{\cdot s_F}H^0(C,\OO_C(K_C+D)),
 $$
-whose projective image is $L_F$; hence the pullback splits exactly when $\xi$ annihilates that image, that is when $L_F\subseteq H$. Proposition 1.1 states them as the equivalence of $\mathrm{(i)}$ and $\mathrm{(ii)}$ for one extension $0\to\OO_X\to E\to L\to0$: the class lies in the span of an effective divisor $D$ exactly when $L(-D)$ is a subsheaf of $E$, which is the splitting of the pullback. Its §1 assumes $d\ge2$ when $g\ge2$, and it works over an algebraically closed field of characteristic zero; the cases $d=1$ and $g=1$ are outside it, and steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square.
+whose projective image is $L_F$; hence the pullback splits exactly when $\xi$ annihilates that image, that is when $L_F\subseteq H$. Proposition 1.1 states them as the equivalence of $\mathrm{(i)}$ and $\mathrm{(ii)}$ for one extension $0\to\OO_X\to E\to L\to0$: the class lies in the span of an effective divisor $D$ exactly when $L(-D)$ is a subsheaf of $E$, which is the splitting of the pullback. Its §1 assumes $d\ge2$ when $g\ge2$ and a field of characteristic zero; the criterion as proved in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} uses only the pullback square, so it is characteristic-free, and those steps also reach $d=1$ and $g=1$.
 
 :::
 
@@ -456,7 +480,7 @@ the maximum over the sublinebundles $\mathcal L\subseteq\mathcal E$, and proves 
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) from Gunning's Theorems 13 and 14, which are stated over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of characteristic zero: steps [](#s5){.pf-ref} and [](#s6){.pf-ref} carry Proposition 1.1 of Lange and Narasimhan, and steps [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and reach the cases $d=1$ and $g=1$ that its hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ over a field of characteristic zero, from Corollary 1.2, and for $g=1$ from Example 2.11.6. Step [](#s11){.pf-ref} proves part (d) from the statement of Lange's Theorem $s(\mathcal E)\le g$, stated over an algebraically closed field of arbitrary characteristic.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) over an algebraically closed field of any characteristic: the construction uses only $\Ext^1\cong H^1$ and Serre duality, and Gunning's Theorems 13 and 14 state the same identifications over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of any characteristic: [](#s5){.pf-ref} and [](#s6){.pf-ref} identify the extension class by Serre duality, and [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and run the pullback square, reaching also the cases $d=1$ and $g=1$ that the proposition's hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ over a field of characteristic zero, from Corollary 1.2, and for $g=1$ from Example 2.11.6. Step [](#s11){.pf-ref} proves part (d) from the statement of Lange's Theorem $s(\mathcal E)\le g$, stated over an algebraically closed field of arbitrary characteristic.
 
 :::
 
@@ -465,9 +489,9 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
-(a) Gunning's Theorem 13, printed pp. 71--74, identifies the extensions of one line bundle by another with a first cohomology group, and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$; with $\varphi=\OO_C$ and $\xi$ of degree $-e$ that space is $\PP H^1(C,\mathcal L^{-1})$, nonempty by Serre duality, which is steps [](#s1){.pf-ref} to [](#s4){.pf-ref}. Gunning works over a compact Riemann surface.
+(a) Gunning's Theorem 13, printed pp. 71--74, identifies the extensions of one line bundle by another with a first cohomology group, and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$; with $\varphi=\OO_C$ and $\xi$ of degree $-e$ that space is $\PP H^1(C,\mathcal L^{-1})$, nonempty by Serre duality, which is steps [](#s1){.pf-ref} to [](#s4){.pf-ref}. Gunning works over a compact Riemann surface; the steps use only the characteristic-free identifications $\Ext^1\cong H^1$ and Serre duality, so they give part (a) over any algebraically closed field.
 
-(b) Lange and Narasimhan, Proposition 1.1, printed p. 57, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, printed pp. 377--379, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; steps [](#s7){.pf-ref} and [](#s8){.pf-ref} carry those two cases.
+(b) Lange and Narasimhan, Proposition 1.1, printed p. 57, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, printed pp. 377--379, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; the two directions in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square, so part (b) holds over any algebraically closed field, and they carry those two cases.
 
 (c) Their Corollary 1.2, printed p. 58, gives for $g\ge2$ and $0<c_1(L_2)-c_1(L_1)=s\le g$ an extension with $s(E)=s$; with line bundles of degrees $d$ and $2d$, $d=-e$, its twist by the inverse of the subbundle has invariant $e$. Their proof is the dimension count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$ that the exercise's hint asks for, over a field of characteristic zero.
 
