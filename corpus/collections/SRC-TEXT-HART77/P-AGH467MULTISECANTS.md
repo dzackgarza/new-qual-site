@@ -183,8 +183,8 @@ audit:
     is PDF page N+15 and the page starts are marked in the file: IV.6.7 printed p. 355 with its
     printed hint; the definition of multisecant and Proposition 3.7, printed pp. 310--311; IV.3.1
     printed pp. 307--308; IV.3.4(a) and (b) printed p. 315; IV.3.6(b) printed pp. 316--317; IV.6.4
-    printed p. 351; II.7.3, the closed-immersion criterion, printed pp. 165--166; and II.8.20.3 for
-    the genus of a nonsingular plane curve. The two printed exercises the solution cites were also
+    printed p. 351; II.7.3, the closed-immersion criterion, printed p. 152; and II.8.20.3 for
+    the genus of a nonsingular plane curve, printed p. 183. The two printed exercises the solution cites were also
     checked against a published solution set: Egbert's solutions of IV.3.4 and IV.3.6, retained at
     `tmp/sources/hartshorne-solutions-egbert.md`, which prove the quadratic generation of the
     rational normal curve's homogeneous ideal and the complete-intersection statement for the
@@ -288,9 +288,8 @@ printed definition, which does not exclude $\ell=X$, the only line meeting
 $X$ in three distinct points is $X$ itself.
 
 Let $X$ be a nonsingular plane conic.  No line is contained in $X$, and any
-line meets
-the degree-$2$ plane curve $X$ in scheme-theoretic length at most $2$ by
-Bezout.  Hence no line is a multisecant.
+line meets the degree-$2$ plane curve $X$ in scheme-theoretic length at most
+$2$ by Bezout.  Hence no line is a multisecant.
 
 :::
 
