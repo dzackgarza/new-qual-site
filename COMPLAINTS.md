@@ -7277,3 +7277,21 @@ printed p. 251 (PDF p. 261). Not checked: any printed statement of the $N\le7$ r
 words; the classification of reducible fibres of rational elliptic surfaces, which is where the $r=8$
 obstruction lives, beyond the general statement that reducible fibres carry $(-2)$-curves; and no
 search of the literature for the superabundance question.
+
+## 2026-11-19, eighth item: six Hoffman--Kunze cards record their check against Hungerford, and two §1.3 cards read correct
+
+**Object and need.** `E-HK-IF5V`, a card of `SRC-TEXT-HK71`, carried an audit note saying it had been checked "against Hungerford, Algebra, section 1.3". A screen of the collection's frontmatter for the name of any book other than Hoffman and Kunze returns six more cards with the same sentence, each with the section and exercise number of the card itself. They are not residue 5, so they are reported here and not edited.
+
+**The six.** `E-HK-23-4` (§2.3 Ex. 4), `E-HK-32-4` (§3.2 Ex. 4), `E-HK-37-4` (§3.7 Ex. 4), `E-HK-42-3` (§4.2 Ex. 3), `E-HK-71-3` (§7.1 Ex. 3), `E-HK-85-4` (§8.5 Ex. 4).
+
+**Why the named book is wrong.** Each card's statement is Hoffman and Kunze's exercise at that number, read at the page: `E-HK-23-4`'s question — show that $\alpha_1=(1,0,-1)$, $\alpha_2=(1,2,1)$, $\alpha_3=(0,-3,2)$ form a basis of $\RR^3$ — is HK §2.3 Exercise 4 at printed p. 48, while the exercises beginning "which of the following sets of vectors ... are subspaces of $\RR^n$" are §2.2's on printed p. 39; and `E-HK-71-3`'s $T$ on $\CC^3$ with the annihilator question is §7.1 Exercise 3 at printed p. 230, the §7.2 running header on the following page notwithstanding. Both were read at their pages. The remaining four match the printed numbers by their statements and are reported on that basis.
+
+**The one repair, on the card that is residue 5.** `E-HK-IF5V` now carries a `source-corrected` event naming the misattribution and the correct locator (HK §1.3 Exercise 1, printed p. 10), and its solution cites the retained text; commit `2bf4f7775b`. The mathematics was re-read at the same time: $\det A=(1-i)^2+2i=0$, the second row is $(1+i)$ times the first, and $x_2=-(1+i)x_1$, confirmed in the second equation.
+
+**The six still need** the same one-event correction, after each statement is confirmed at its printed page; they belong to residues 3 and 4 of the queue partition.
+
+**Two further §1.3 cards read, both correct.** `E-HK-CG7N` (§1.3 Ex. 2, printed p. 10): the reduction recomputes — $R_2-2R_1=(0,7,1)$, $R_3-3R_1=(0,8,2)$, $7R_3-8R_2=(0,0,6)$ — so there is a pivot in every column, $X=0$ is the only solution, and $\det A=-6$ confirms it; commit `bcd7853589`. `E-HK-RTYK` (§1.3 Ex. 4, printed p. 11): the displayed reduced matrix was verified independently — the third row of $A$ is $-2i$ times the first minus the second, so the rank is $2$, and the null space spanned by $(1-i,1,1+i)$ scales by $1/(1+i)$ to $(-i,(1-i)/2,1)$, the null vector of the displayed $R$; commit `c77215286c`.
+
+**Checks.** `.scratch/report_check.py` on each card, 0 diagnostics; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels intact; the pre-commit card-YAML and schema hook on each commit.
+
+**Uncertainty.** The screen reads frontmatter only, so a wrong-book attribution written in the rendered solution rather than in an audit note would not have been caught. The four cards not read at their pages are reported from their statements and numbers, not from a page.
