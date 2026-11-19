@@ -18,6 +18,8 @@ If $a=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exac
 For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 :::
 
+The counting consequence is a congruence for the size of a fixed-point set that needs no group structure on the set.
+
 [[L-DJKXL]]
 
 ## The Sylow theorems
@@ -34,20 +36,20 @@ For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 
 [[T-3X5FF]]
 
-::: {.remark title="Where the conditions on $n_p$ come from"}
-The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$.
-The congruence $n_p\equiv1\pmod p$ follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
-:::
-
 ## Applications
 
+A normal Sylow subgroup $P$ gives a quotient $G/P$ of order $m$ coprime to $p$, so the classification arguments proceed by induction on $\size G$ through that quotient.
+When the normal subgroup is not a Sylow subgroup, Frattini's argument writes $G=N\,N_G(P)$ for $P\in\Syl_p(N)$, so the Sylow subgroup of the normal subgroup controls the normalizer in $G$.
+
+[[T-4XKGD]]
+
+[[P-2BYEN]]
+
+A finite group is nilpotent exactly when all of its Sylow subgroups are normal, and then it is their direct product.
+
+[[T-GM7EB]]
+
 Arguments producing normal subgroups from Sylow counts are collected on [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
-
-- **Classifying groups of a given order.** If $n_p = 1$, then $P\in\Syl_p(G)$ is normal, $\size{G/P} = m$ is coprime to $\size P$, and by the Schur--Zassenhaus theorem $P$ has a complement $H$, so $G \cong P\semidirect H$.
-
-- **Induction on the order.** A normal Sylow subgroup $P$ gives the quotient $G/P$ of order $m < \size G$.
-
-- **Nilpotence.** A finite group is [[D-53JVH|nilpotent]] if and only if every Sylow subgroup is normal, in which case it is the direct product of its Sylow subgroups.
 
 ## Exercises
 
