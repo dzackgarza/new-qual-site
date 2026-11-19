@@ -59,6 +59,18 @@ audit:
     statement (the sign of the exponent and the order of omega_{p/q}) are kept inside Remark 3, and
     the card still says plainly that part (iii) is not proved here. Statement unchanged; the card
     does not claim a retained solution set covers this problem.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance sentence added to the solution's opening paragraph, which the per-card rule requires
+    and the card lacked: the argument is the card's own, resting on the three numbered facts of the
+    book that the next paragraph lists and on the citations named inside the steps. Checked before
+    writing it: the checkout's Stein-Shakarchi material is the book and its page extractions under
+    assets/attachments, and no solution set for the book is present under tmp/sources or
+    assets/attachments. No search outside the checkout was made for this step. The mathematics of
+    the card, including the two proved corrections to the printed statement and the statement that
+    part (iii) is not proved here, is unchanged.
 ---
 
 ::: {.exercise}
@@ -87,7 +99,7 @@ Below, (i) is proved (Theorem 2), with the corrections to the printed statement 
 forces; (ii) is proved (Theorem 3), including the exact constant $1/(2\pi\sqrt2)$ and the
 $q$-dependence; (iii) is *not* proved, neither here nor in the book — the last section lists
 precisely what is missing. So the block is complete for (i) and (ii) and explicitly incomplete
-for (iii).
+for (iii). The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, the checkout holding the book and no solution set for it, so the two theorems below rest only on the three numbered facts of the book quoted next and on the citations named in the steps.
 
 ::: pf
 
