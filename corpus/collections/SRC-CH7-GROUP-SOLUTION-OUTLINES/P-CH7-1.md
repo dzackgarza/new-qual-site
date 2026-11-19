@@ -27,6 +27,15 @@ audit:
       their exhaustion of $A_4$, and the two sample products worked out. The remark on table 5.1's
       labels is unchanged. The statement is Gallian Chapter 7 Exercise 1; the collection's
       provenance is the textbook, so no retained solution set covers it.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-19
+    note: >-
+      The card said no retained solution set covers the exercise, and that is false: the collection's
+      own outline is retained in this repository as `assets/attachments/Ch7Sltns.pdf`, and its
+      entry "# 1" is this exercise. The rendered sentence now cites it and says what the card
+      adds. Found by screening the residue's absence claims against the attachments, after two Munkres
+      cards were found making the same false claim; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -34,7 +43,7 @@ Let $H = \{(1), (12)(34), (13)(24), (14)(23)\}$. Find the left cosets of $H$ in 
 :::
 
 ::: {.solution}
-The collection's provenance is the textbook, so no retained solution set covers the exercise and the computation is the card's own. Write $H=\{(1),(12)(34),(13)(24),(14)(23)\}$.
+The collection retains its solution outline as `assets/attachments/Ch7Sltns.pdf`, whose entry "# 1" is this exercise and lists the same three cosets. The card verifies each product and the exhaustion of $A_4$, and the wording below is its own. Write $H=\{(1),(12)(34),(13)(24),(14)(23)\}$.
 
 ::: pf
 

@@ -29,6 +29,15 @@ audit:
       `provenance` is the textbook ISBN, so no retained solution set covers the exercise, and the
       solution says so. Not claimed: a reading of Gallian's printed Example 2, which the earlier
       event alone records.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-19
+    note: >-
+      The card said no retained solution set covers the exercise, and that is false: the collection's
+      own outline is retained in this repository as `assets/attachments/Ch10PtASltns.pdf`, and its
+      page 1 is this exercise. The rendered sentence now cites it and says what the card
+      adds. Found by screening the residue's absence claims against the attachments, after two Munkres
+      cards were found making the same false claim; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -36,7 +45,7 @@ Prove that the mapping given in Example 2, the map $\phi : GL(2, \RR) \to \RR^*$
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise, the collection's provenance being the textbook alone, so the argument is the card's own. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
+The collection retains the source's own solution as `assets/attachments/Ch10PtASltns.pdf`, page 1, which carries this Example 2 map and its two-line check. The card states it in its own notation, and that notation is the wording below. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
 
 ::: pf
 
