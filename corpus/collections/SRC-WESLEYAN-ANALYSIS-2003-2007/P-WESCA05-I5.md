@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1, item 5 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 25: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 1 item 5. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged, and the trailing pf-qed that only announced the last step is dropped.
+
 ---
 
 ::: {.problem}
@@ -25,6 +35,10 @@ $$
 :::
 
 ::: {.solution}
+The item is Section 1 item 5 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (calculate h'(z) for h(z) = ((z^2-1)/e^z)^10), on PDF p. 25 of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 
 ::: pf
 
@@ -109,11 +123,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s1-3){.pf-ref} gives the requested derivative.
-
-:::
 
 :::
 
