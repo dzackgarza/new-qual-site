@@ -46,6 +46,19 @@ audit:
     and projecting to the first $2k+2$ circles leaves $k+1$ basis commutators, which Exercise 12
     with $k+1$ in place of $k$ forbids. Not checked: the continuity of the infinite concatenation is
     asserted from the vanishing diameters, as in Example 1.25.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 14 of §3.3, printed p. 258, and
+    the printed page is added, the card having had none. Checked part (a): if $[\gamma]=0$ in
+    $H_1(X)$ then by $H_1$ the class lies in the commutator subgroup, hence is a finite product of
+    $k$ commutators; the based collapse $r_{2k+2}$ onto the first $2k+2$ circles, a map and not a
+    retraction since the wedge is not a subspace, carries the loop to the product of the first $k+1$
+    basis commutators because the tail is collapsed, and carries the $k$ commutators to $k$
+    commutators in that free group; Exercise 12 with $k+1$ in place of $k$ forbids that. Checked part
+    (b): the retractions onto the odd and the even circles each kill every mixed commutator, so both
+    images of the class vanish while the class itself does not, and the map is not injective.
 ---
 
 ::: {.problem}
@@ -53,13 +66,15 @@ Let $X$ be the shrinking wedge of circles in Example 1.25, the subspace of $\RR^
 
 (a) If $f_n: I \to X$ is the loop based at the origin winding once around the $n$th circle, show that the infinite product of commutators $[f_1, f_2][f_3, f_4] \cdots$ defines a loop in $X$ that is nontrivial in $H_1(X)$.
 
-(b) If we view $X$ as the wedge sum of the subspaces $A$ and $B$ consisting of the odd-numbered and even-numbered circles, respectively, use the same loop to show that the map $H_1(X) \to H_1(A) \oplus H_1(B)$ induced by the retractions of $X$ onto $A$ and $B$ is not an isomorphism.
+(b) If we view $X$ as the wedge sum of the subspaces $A$ and $B$ consisting of the odd-numbered and even-numbered circles, respectively, use the same loop to show that the map $H_1(X) \to H_1(A) \oplus H_1(B)$ induced by the retractions of $X$ onto $A$ and $B$ is not an isomor\varphism.
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 14, printed p. 258.
+
 Let
 $$
-\gamma=[f_1,f_2][f_3,f_4]\cdots
+\\gamma=[f_1,f_2][f_3,f_4]\cdots
 $$
 be the infinite concatenation, parametrized so that the $j$th commutator is traversed on a subinterval whose lengths tend to $0$. Since the diameters of the circles tend to $0$, this defines a continuous based loop in $X$.
 
@@ -73,17 +88,17 @@ be the collapse map that is the identity on the first $N$ circles and crumples a
 
 ::: pf-step
 
-The class of $\gamma$ is nonzero in $H_1(X;\ZZ)$.
+The class of $\\gamma$ is nonzero in $H_1(X;\\ZZ)$.
 
 ::: pf-proof
 
-Suppose instead that $[\gamma]=0$ in $H_1(X;\ZZ)$. By the Hurewicz theorem in degree $1$,
+Suppose instead that $[\\gamma]=0$ in $H_1(X;\\ZZ)$. By the Hurewicz theorem in degree $1$,
 $$
-H_1(X;\ZZ)\cong \pi_1(X)_{\mathrm{ab}},
+H_1(X;\\ZZ)\cong \pi_1(X)_{\mathrm{ab}},
 $$
-so the element represented by $\gamma$ lies in the commutator subgroup of $\pi_1(X)$. By definition of the commutator subgroup, it is therefore a finite product of commutators:
+so the element represented by $\\gamma$ lies in the commutator subgroup of $\pi_1(X)$. By definition of the commutator subgroup, it is therefore a finite product of commutators:
 $$
-[\gamma]_{\pi_1}=[u_1,v_1]\cdots [u_k,v_k]
+[\\gamma]_{\pi_1}=[u_1,v_1]\cdots [u_k,v_k]
 $$
 for some $u_i,v_i\in\pi_1(X)$.
 
@@ -91,12 +106,12 @@ Apply $(r_{2k+2})_*$. If $x_i$ denotes the standard free generator of
 $$
 \pi_1\!\left(\bigvee_{i=1}^{2k+2}S_i^1\right)\cong F(x_1,\dots,x_{2k+2}),
 $$
-then every commutator in the tail of $\gamma$ uses circles numbered $>2k+2$ and is collapsed. Hence
+then every commutator in the tail of $\\gamma$ uses circles numbered $>2k+2$ and is collapsed. Hence
 $$
-(r_{2k+2})_*([\gamma]_{\pi_1})
+(r_{2k+2})_*([\\gamma]_{\pi_1})
 =[x_1,x_2][x_3,x_4]\cdots[x_{2k+1},x_{2k+2}].
 $$
-On the other hand, the image of the right-hand side above is a product of at most $k$ commutators in this free group. This contradicts Exercise 12, which says that the displayed product of $k+1$ basis commutators cannot be expressed as a product of fewer than $k+1$ commutators. Therefore $[\gamma]\ne0$ in $H_1(X;\ZZ)$.
+On the other hand, the image of the right-hand side above is a product of at most $k$ commutators in this free group. This contradicts Exercise 12, which says that the displayed product of $k+1$ basis commutators cannot be expressed as a product of fewer than $k+1$ commutators. Therefore $[\\gamma]\ne0$ in $H_1(X;\\ZZ)$.
 
 :::
 
@@ -108,7 +123,7 @@ The map
 $$
 H_1(X)\longrightarrow H_1(A)\oplus H_1(B)
 $$
-induced by the retractions onto the odd and even circles is not an isomorphism.
+induced by the retractions onto the odd and even circles is not an isomor\varphism.
 
 ::: pf-proof
 
@@ -116,9 +131,9 @@ Let $r_A:X\to A$ and $r_B:X\to B$ be the two retractions. Each factor
 $$
 [f_{2j-1},f_{2j}]
 $$
-contains one loop in $A$ and one loop in $B$. Under $r_A$, the even loop is collapsed, so the commutator becomes trivial; under $r_B$, the odd loop is collapsed, so it again becomes trivial. Thus both $(r_A)_*([\gamma])$ and $(r_B)_*([\gamma])$ vanish in first homology.
+contains one loop in $A$ and one loop in $B$. Under $r_A$, the even loop is collapsed, so the commutator becomes trivial; under $r_B$, the odd loop is collapsed, so it again becomes trivial. Thus both $(r_A)_*([\\gamma])$ and $(r_B)_*([\\gamma])$ vanish in first homology.
 
-By part 1, however, $[\gamma]\ne0$ in $H_1(X)$. Hence the displayed map has nonzero kernel and therefore is not an isomorphism.
+By part 1, however, $[\\gamma]\ne0$ in $H_1(X)$. Hence the displayed map has nonzero kernel and therefore is not an isomor\varphism.
 
 :::
 
