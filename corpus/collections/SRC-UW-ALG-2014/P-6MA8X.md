@@ -14,6 +14,19 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the 2014 Algebra Preliminary Examination (University of
+    Washington, September 8, 2014), printed pp. 1-2 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2014.pdf, is the statement the card answers, and the paragraph at
+    the head of the solution records that the paper prints no solutions, so the argument is the card's
+    own. Checked: the statement against the paper's text layer at the page named; the statement whose
+    parts (b) and (c) are printed on p. 2, and the solution read for the Tor computation from the two-
+    term free resolution, the flatness criterion, and the PID case; `qualc.authoring check` on the card,
+    and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for
+    this paper to compare the argument with, and no other card of the collection in this pass.
+- event: source-checked
+  by: claude
   date: 2026-11-01
   note: >-
     Statement read from the card in `corpus/collections/SRC-UW-ALG-2014`; it is the standard Tor and
@@ -41,6 +54,8 @@ Compute $\Tor_i^R(R/(x),M)$ for $i\geq 0$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed pp. 1--2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`, parts (b) and (c) being printed on p. 2. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the computation of $\Tor_i^R(R/(x),M)$ from the two-term free resolution, the flatness criterion in (b), and the conclusion over a PID
 
 Let $R$ be a commutative ring, $M$ an $R$-module, and $\Tor_i=\Tor_i^R$.
 
