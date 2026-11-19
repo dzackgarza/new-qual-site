@@ -54,7 +54,7 @@ $$
 A=\begin{pmatrix}1&1\\0&1\end{pmatrix}.
 $$
 The only eigenvalue is $\lambda=1$, of algebraic multiplicity $m=2$, and $A$ is in Jordan normal form but not diagonal, so it is not diagonalizable.
-The null space of $A-\lambda I$ has dimension $p=1$, so there are $m-p=1$ generalized eigenvectors of rank greater than $1$.
+The kernel of $A-\lambda I$ has dimension $p=1$, so there are $m-p=1$ generalized eigenvectors of rank greater than $1$.
 The eigenvector is $\mathbf v_1=(1,0)^T$.
 Solving $(A-\lambda I)\mathbf v_2=\mathbf v_1$, that is,
 $$
