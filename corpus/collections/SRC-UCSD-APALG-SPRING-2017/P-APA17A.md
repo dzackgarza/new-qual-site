@@ -11,6 +11,19 @@ classification:
   - Jordan Canonical Form
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    1 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the ranks of the powers read against the Jordan block count; `qualc.authoring
+    check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained
+    solution set exists for this paper to compare the argument with, and no other card of the collection
+    in this pass.
 ---
 
 ::: {.problem}
@@ -26,7 +39,7 @@ Determine all possibilities of Jordan's canonical form for $A$.
 
 ::: {.solution}
 
-The computation is the card's own, from the ranks and the Jordan block count; no retained set solves this exercise, and the sets searched are recorded in the audit trail.
+The computation is the card's own, from the ranks and the Jordan block count; no retained set solves this exercise — the retained paper `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`, the Qualifying Exam in Applied Algebra of May 30, 2017, prints this as Problem 1 on its p. 1 and contains no solutions — and the sets searched are recorded in the audit trail.
 
 Let $A\in\CC^{10\times10}$ with $\operatorname{rank}A=7$, $\operatorname{rank}A^{2}=4$, $\operatorname{rank}A^{3}=1$ and $\operatorname{rank}A^{4}=0$.
 
