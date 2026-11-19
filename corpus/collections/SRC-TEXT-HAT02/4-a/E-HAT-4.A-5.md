@@ -21,6 +21,22 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps without altering the mathematics: the setup (the covers X_n and
+    their deck transformation, the level complex Z and the identification of pi_1(Z) with
+    pi_1(X~_3) via assertion (*) of p. 423) is one step, and the three parts of the exercise are the
+    other three, each carrying the card's existing prose as its proof, with the section headings
+    moved from the prose into the step statements. Checked while restructuring: the counts
+    C_0 = Z, C_1 = Z^12, C_2 = Z^16 for the octahedral model, chi(Z) = 5, H_1 = Z^5 from the
+    abelianisation of the given presentation, H_2 free of rank 9 from the Euler characteristic, and
+    no homology above dimension 2; the mapping-torus description and the resulting fibre bundle
+    X~_n -> S^1 v S^1; and the presentation induction with the two stable letters and finitely many
+    conjugation relations, together with the argument that H_2 is finitely generated but not
+    finitely presented because H_2(X~_2) is not finitely generated. Statement unchanged; the card
+    does not claim a retained solution set covers this exercise.
 ---
 
 ::: {.problem}
@@ -37,6 +53,13 @@ In the latter case, deduce that $\pi_1(\tilde{X}_2)$ has no finite presentation 
 
 ::: {.solution}
 The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 5, printed p. 426; the argument below is the card's own.
+
+::: pf
+
+::: {.pf-step #setup}
+Write $X_n=(S^1\vee S^1)^n$ and let $\phi_n\colon\pi_1(X_n)=F_2^n\to\ZZ$ send each standard generator to $1$; let $\widetilde X_n\to X_n$ be the corresponding infinite cyclic cover with deck generator $T$. Then $Z=X_3\cap f^{-1}(0)$ lifts homeomorphically to a subcomplex of $\widetilde X_3$, assertion $(\ast)$ of p.~423 makes $\widetilde X_3$ homotopy equivalent to a complex obtained from $Z$ by attaching only $3$-cells, and hence $\pi_1(Z)\cong\pi_1(\widetilde X_3)$.
+
+::: pf-proof
 Write
 $$
 X_n=(S^1\vee S^1)^n
@@ -58,9 +81,15 @@ $$
 \pi_1(Z)\cong\pi_1(\widetilde X_3),
 $$
 attaching cells of dimension $3$ leaving $\pi_1$ unchanged (van Kampen, Theorem 1.20, p. 43).
+:::
 
-### (a) Homology of $Z$ for $n=3$
+:::
 
+
+::: {.pf-step #a}
+(a) For $n=3$, $H_0(Z)\cong\ZZ$, $H_1(Z)\cong\ZZ^5$, $H_2(Z)\cong\ZZ^9$, and $H_i(Z)=0$ for $i>2$.
+
+::: pf-proof
 In Hatcher's octahedral model of $Z$ (p. 426: the regular octahedron inscribed in the cube with vertices $(\pm1,\pm1,\pm1)$, each triangular face taken twice, once for each normal direction, each edge likewise doubled and opposite directed edges identified), the six vertices are all identified to one vertex. Each of the twelve edges of the octahedron occurs with two choices of normal direction, and opposite directed edges are identified, leaving twelve 1-cells. Each of the eight triangular faces occurs with two normal directions, giving sixteen 2-cells. Thus
 $$
 C_0(Z)\cong\ZZ,
@@ -97,9 +126,15 @@ H_i(Z;\ZZ)\cong
 0,&i>2.
 \end{cases}}
 $$
+:::
 
-### (b) Recursive mapping-torus description
+:::
 
+
+::: {.pf-step #b}
+(b) $\widetilde X_n$ is obtained inductively from $\widetilde X_{n-1}$ as the union of two copies of the mapping torus of the generating deck transformation of $\widetilde X_{n-1}$, with the two copies of $\widetilde X_{n-1}$ identified; hence there is a fibre bundle $\widetilde X_n\to S^1\vee S^1$ with fibre $\widetilde X_{n-1}$.
+
+::: pf-proof
 Write
 $$
 X_n=X_{n-1}\times(S^1_a\vee S^1_b).
@@ -122,9 +157,15 @@ $$
 \longrightarrow S^1\vee S^1}
 $$
 is a fiber bundle with monodromy $T$ around each circle.
+:::
 
-### (c) Presentations
+:::
 
+
+::: {.pf-step #c}
+(c) With $H_n=\pi_1(\widetilde X_n)$, the presentation is obtained by adjoining two stable letters and finitely many conjugation relations at each stage; it is finite for $n>2$, and for $n=2$ it has finitely many generators but is not finite, because $H_2(\widetilde X_2)$ is not finitely generated.
+
+::: pf-proof
 Let
 $$
 H_n=\pi_1(\widetilde X_n),
@@ -206,4 +247,9 @@ is not finitely generated. If $H_2$ had a finite presentation, its finite presen
 $$
 \boxed{\pi_1(\widetilde X_2)=H_2\text{ is finitely generated but not finitely presented}.}
 $$
+:::
+
+:::
+
+:::
 :::
