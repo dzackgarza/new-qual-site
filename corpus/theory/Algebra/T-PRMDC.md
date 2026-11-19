@@ -22,12 +22,3 @@ $$
 $$
 where $a = u\,p_1^{e_1}\cdots p_k^{e_k}$ is the factorization of a generator $a$ into a unit and powers of distinct primes.
 :::
-
-::: {.proof}
-A principal ideal domain is a [[D-INULL|unique factorization domain]], so $a$ has such a factorization, unique up to order and units.
-
-Each $\generators{p_i^{e_i}}$ is primary.
-If $xy \in \generators{p_i^{e_i}}$ and $x\notin \generators{p_i^{e_i}}$, then $p_i$ divides $x$ to a power smaller than $e_i$, while $p_i^{e_i}$ divides $xy$; comparing the exponent of $p_i$ on both sides gives $p_i\divides y$, hence $y^{e_i} \in \generators{p_i^{e_i}}$.
-
-The intersection is $\generators a$: the ideal $\generators a$ lies in every $\generators{p_i^{e_i}}$, and conversely an element $b$ lying in all of them is divisible by $p_i^{e_i}$ for every $i$, hence by the product $a$, since the $p_i$ are distinct primes and $R$ is a unique factorization domain.
-:::
