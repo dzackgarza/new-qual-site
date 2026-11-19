@@ -85,6 +85,7 @@
   "\\SS": "{\\mathbb{S}}",
   "\\SU": "{\\operatorname{SU}}",
   "\\Sch": "{\\mathsf{Sch}}",
+  "\\Sec": "\\operatorname{Sec}",
   "\\Sets": "{\\mathsf{Set}}",
   "\\Sh": "{\\mathsf{Sh}}",
   "\\Sing": "{\\operatorname{Sing}}",
