@@ -37,6 +37,20 @@ audit:
     that composite. The converse uses Exercise 1 to homotope an H-space multiplication to one with
     strict unit. The step that is asserted rather than expanded is that the $n$-skeleton of
     $J_2(S^n)$ is the fold quotient of the wedge, which is the definition's content.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §3.C, printed p. 291, and the definition of $J_2(X)$ on
+    printed p. 224. The equivalence is correct: $S^n\times S^n$ is $S^n\vee S^n$ with one $2n$-cell
+    attached by $\omega$, a multiplication with strict two-sided identity is exactly an extension
+    of the fold $\nabla$ over that cell, such an extension exists exactly when $\nabla\circ\omega$
+    is nullhomotopic, and $J_2(S^n)$ is the quotient in which the wedge is collapsed, so its
+    $2n$-cell is attached by $\nabla\circ\omega$; Exercise 1 of the same page supplies the passage
+    from an arbitrary multiplication to one with a strict identity. Added to the text: the
+    hypothesis $n\ge1$, which the cell description needs, together with the reason the case $n=0$
+    is outside the exercise's phrasing but not in doubt, $S^0=\{\pm1\}$ being a topological group.
+    Nothing else changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -46,6 +60,8 @@ Show that $S^n$ is an H-space if and only if the attaching map of the $2n$-cell 
 ::: {.solution}
 
 The argument is the card's own: a multiplication with a strict identity is exactly an extension of the fold map over the top cell of $S^{n}\times S^{n}$, and the second James stage is built so that its $2n$-cell is attached by the same composite.
+
+The CW structure used below needs $n\ge1$, which is the range the exercise is about: at $n=0$ the product $S^0\times S^0$ is four points and has no $2n$-cell attached in this sense. The conclusion is not in doubt there, since $S^0=\{\pm1\}$ is a topological group and hence an H-space; what fails is only the cell description.
 
 Let $S^{n}\vee S^{n}\hookrightarrow S^{n}\times S^{n}$ be the standard inclusion, let $\omega:S^{2n-1}\to S^{n}\vee S^{n}$ be the attaching map of the top cell of the product, and let $\nabla:S^{n}\vee S^{n}\to S^{n}$ be the fold map, the identity on each summand.
 
