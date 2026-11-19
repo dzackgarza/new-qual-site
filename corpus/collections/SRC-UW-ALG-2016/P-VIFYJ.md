@@ -12,6 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 1 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own; the earlier audit note on this card had recorded the same fact
+    inside the note only, and the paragraph now states it on the card. Checked: the statement,
+    including the printed definition of the integral closure, against the paper's text layer at the
+    page named; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution set exists for this paper to compare the argument with,
+    the mathematics of the card is not re-proved in this pass, and no other card of the collection
+    in this pass.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -40,7 +55,7 @@ Recall that for an integral domain $A$ with fraction field $K$, the integral clo
 :::
 
 ::: {.solution}
-Throughout $A = \CC[x,y]/(y^{2} - (x-1)^{3} - (x-1)^{2})$, $f \coloneqq y^{2} - (x-1)^{3} - (x-1)^{2} = y^{2} - x(x-1)^{2}$ is the defining polynomial, and $K \coloneqq \operatorname{Frac}(A)$. The collection's `provenance` is the 2016 UW algebra examination, and no solutions sheet accompanies it, so the argument below is the card's own.
+Throughout $A = \CC[x,y]/(y^{2} - (x-1)^{3} - (x-1)^{2})$, $f \coloneqq y^{2} - (x-1)^{3} - (x-1)^{2} = y^{2} - x(x-1)^{2}$ is the defining polynomial, and $K \coloneqq \operatorname{Frac}(A)$. The problem is Problem 6 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`; the paper prints no solutions and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
