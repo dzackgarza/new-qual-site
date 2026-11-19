@@ -147,5 +147,4 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exer
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), text version `tmp/sources/hartshorne-solutions-troiani.md`, gives no solution to 5.3.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.5.3, PDF pp. 44--45, text version `tmp/sources/hartshorne-solutions-egbert.md`: (a) as above; (b) "the multiplicity at the origin is the smallest degree term that appears", with the factor-out-a-linear-term remark.
 All three agree on the four multiplicities. The proof above derives the linear part $f_x(P)x+f_y(P)y$ from the translated equation, so that the equivalence in (a) is an identity of polynomials rather than a reading of coefficients, and it computes the multiplicity $2$ at the two further singular points of 5.1(c) in characteristics $7$ and $13$ from the nonvanishing second derivatives there, which no published set does.
-Agree.
 :::

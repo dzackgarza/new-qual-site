@@ -129,5 +129,4 @@ Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exer
 William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 4.1, PDF p. 15, text version `tmp/sources/hartshorne-solutions-troiani.md`: at a point $P$ of $U\cup V$, the neighbourhood of $P$ inside $U$ or $V$ on which $f$ or $g$ is a quotient of regular functions shows that the glued function is regular at $P$.
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.4.1, PDF p. 39, text version `tmp/sources/hartshorne-solutions-egbert.md`: define the new function on $U$ and on $V$ and "continue in this manner until you have defined on all such sets", that is, glue over an arbitrary family rather than over two sets.
 The problem block now names $X$ as a variety, which the printed sentence does and the card had left implicit. The proof above glues over the whole family of representatives of a rational function and proves that the resulting function represents the same class, which is the step Borcherds and Troiani give in one sentence for a single pair of open sets.
-Agree.
 :::
