@@ -30,6 +30,11 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.I Exercise 1, printed p. 462, including the bracketed hint, which is the route the card takes. No retained solution set covers this exercise; the argument is the card's own. Checked: that the retraction splits the inclusion on homology; that the long exact sequence of $(X,A)$ therefore breaks into split short exact sequences, so $(r_*,q_*)$ is an isomorphism; that suspending identifies $F_*$ with that isomorphism; and that both sides are simply connected so Whitehead applies.
 ---
 
 ::: {.problem}
@@ -38,47 +43,49 @@ If a connected CW complex $X$ retracts onto a subcomplex $A$, show that $\Sigma 
 :::
 
 ::: {.solution}
-Let
-$$
-r:X\to A
-$$
-be a retraction and
-$$
-q:X\to X/A
-$$
-the quotient map. Let $j_A$ and $j_Q$ be the two wedge inclusions. Suspending and using the pinch map of $\Sigma X$ to add maps into the same target gives
-$$
-F=(j_A\circ\Sigma r)+(j_Q\circ\Sigma q):\Sigma X\longrightarrow
-\Sigma A\vee\Sigma(X/A).
-$$
-We show that $F$ is a homology isomorphism.
+No retained solution set covers this exercise; the argument is the card's own, following the bracketed approach Hatcher suggests on printed p. 462, and checked against that page.
 
-Since $r\circ i=\operatorname{id}_A$, the inclusion
-$$
-i_*:\widetilde H_*(A)\to\widetilde H_*(X)
-$$
-is split injective, with splitting $r_*$. The long exact sequence of the pair $(X,A)$ (Theorem 2.16, p. 117) therefore breaks into split short exact sequences
-$$
-0\longrightarrow\widetilde H_j(A)
-\stackrel{i_*}{\longrightarrow}
-\widetilde H_j(X)
-\stackrel{q_*}{\longrightarrow}
-\widetilde H_j(X/A)\longrightarrow0.
-$$
-Hence
-$$
-(r_*,q_*):\widetilde H_j(X)\xrightarrow{\cong}
-\widetilde H_j(A)\oplus\widetilde H_j(X/A).
-\tag{1}
-$$
-Under the suspension isomorphisms, $F_*$ is exactly the map (1). Thus $F$ induces an isomorphism on all reduced homology groups.
+::: pf
 
-Both $\Sigma X$ and
-$$
-\Sigma A\vee\Sigma(X/A)
-$$
-are simply connected CW complexes because $X$ is connected. The homology version of Whitehead's theorem (Corollary 4.33, p. 367) therefore gives
-$$
-\boxed{\Sigma X\simeq\Sigma A\vee\Sigma(X/A).}
-$$
+::: {.pf-step #split}
+$i_*:\widetilde H_j(A)\to\widetilde H_j(X)$ is split injective, with splitting $r_*$.
+
+::: pf-proof
+$r\circ i=\mathrm{id}_A$ because $r$ is a retraction, so $r_*\circ i_*=\mathrm{id}$ on reduced homology; a map with a left inverse is injective and the identity $r_*\circ i_*=\mathrm{id}$ exhibits the splitting.
+:::
+:::
+
+::: {.pf-step #les}
+For each $j$ there is a split short exact sequence $0\to\widetilde H_j(A)\xrightarrow{i_*}\widetilde H_j(X)\xrightarrow{q_*}\widetilde H_j(X/A)\to0$.
+
+::: pf-proof
+In the long exact sequence of the pair $(X,A)$ (Theorem 2.16, p. 117) the connecting map vanishes because $i_*$ is injective, so the sequence breaks into short exact sequences; each is split by step [](#split){.pf-ref}, using that a retraction makes the connecting map zero.
+:::
+:::
+
+::: {.pf-step #iso}
+$(r_*,q_*):\widetilde H_j(X)\to\widetilde H_j(A)\oplus\widetilde H_j(X/A)$ is an isomorphism for every $j$.
+
+::: pf-proof
+A split short exact sequence presents the middle group as the direct sum of the outer two, via the map whose components are the splitting and the surjection; here those components are $r_*$ and $q_*$.
+:::
+:::
+
+::: {.pf-step #F}
+For $F=(j_A\circ\Sigma r)+(j_Q\circ\Sigma q):\Sigma X\to\Sigma A\vee\Sigma(X/A)$, the induced map $F_*$ is the isomorphism of step [](#iso){.pf-ref} under the suspension isomorphisms, hence $F$ is a homology isomorphism.
+
+::: pf-proof
+Suspension is natural, so $(\Sigma r)_*$ and $(\Sigma q)_*$ correspond under the suspension isomorphisms to $r_*$ and $q_*$; the wedge inclusions $j_A,j_Q$ induce the inclusions of the two summands into the direct sum of reduced homology of the wedge. Adding the two maps uses the pinch map of $\Sigma X$, so $F_*$ is precisely the map with components $r_*$ and $q_*$.
+:::
+:::
+
+::: {.pf-step #whitehead}
+$\Sigma X\simeq\Sigma A\vee\Sigma(X/A)$.
+
+::: pf-proof
+$X$ is connected, so $\Sigma X$ and $\Sigma A\vee\Sigma(X/A)$ are simply connected CW complexes; a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence (Corollary 4.33, p. 367), which step [](#F){.pf-ref} supplies.
+:::
+:::
+
+:::
 :::
