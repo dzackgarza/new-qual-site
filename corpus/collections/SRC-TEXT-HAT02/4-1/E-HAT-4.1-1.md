@@ -193,6 +193,19 @@ audit:
     $[g+'h]=[g]+[h]=[h]+[g]$. The dimension restriction $n\geq2$ is exactly what a second coordinate
     costs, and the same verification at $(i,j)$ gives $+_i=+_j$. Not changed: the statement as
     printed on p. 358.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, on the independent reader's report: one citation corrected, no change to the
+    mathematics. Step `#laws` cited "loc. cit., p. 87" for the identification of the cube model
+    $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's. Printed p. 87 carries
+    only the suspension $\Sigma^kX$ and the laws $+_i$ with their formula; the homeomorphism
+    $I^n/\partial I^n\cong\Sigma^nS^0$ and $\pi_n(X,x_0)=[I^n/\partial I^n,X]^0=[(I^n,\partial I^n),(X,x_0)]$
+    are on printed p. 88. The step now cites pp. 87--88 and says which half is on which page, checked
+    against `tmp/sources/tomdieck-algebraic-topology-ranicki.pdf`, whose page 100 carries the head
+    "4.3. Suspension. Homotopy Groups 87" and whose page 101 carries the folio 88 with the
+    identification. Unchanged: the four-quarter identity, the unit homotopy and the proposition.
 review: draft
 ---
 
@@ -214,7 +227,7 @@ $$
 defines a sum on maps of pairs $(I^n,\partial I^n)\to(X,x_0)$, with $+_1$ Hatcher's $+$ and $+_2$ the exercise's $+'$.
 
 ::: pf-proof
-Both halves are maps of $I^n$ into $X$, they agree on $s_i=\tfrac12$, and each is continuous; on the boundary $\partial I^n$ at least one coordinate is $0$ or $1$, so the corresponding input of $f$ or of $g$ lies on $\partial I^n$ and the value is $x_0$. Hence the sum is again a map of pairs. The identification of the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's is [loc. cit., p. 87], where $+_1$ and $+_2$ are the laws attached to the first and second coordinates.
+Both halves are maps of $I^n$ into $X$, they agree on $s_i=\tfrac12$, and each is continuous; on the boundary $\partial I^n$ at least one coordinate is $0$ or $1$, so the corresponding input of $f$ or of $g$ lies on $\partial I^n$ and the value is $x_0$. Hence the sum is again a map of pairs. The identification of the cube model $\pi_n(X,x_0)=[I^n/\partial I^n,X]_0=[\Sigma^nS^0,X]_0$ with tom Dieck's is [loc. cit., pp. 87--88], where $+_1$ and $+_2$ are the laws attached to the first and second coordinates; the homeomorphism $I^n/\partial I^n\cong\Sigma^nS^0$ and the identification of $\pi_n(X,x_0)$ with $[I^n/\partial I^n,X]_0$ are on printed p. 88.
 :::
 
 :::
