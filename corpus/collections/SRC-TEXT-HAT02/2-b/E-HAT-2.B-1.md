@@ -78,9 +78,20 @@ audit:
     and $k=\ell=0$ respectively, the last being four points and $H_0(S^1-X)=\ZZ^4$. Not claimed: a
     different published solution of the exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 185 carries the running head 176,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 2.B of Hatcher, *Algebraic Topology* (2002), printed p. 176, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee S^\ell$ or to $S^k \amalg S^\ell$.
 :::
 
