@@ -30,6 +30,14 @@ audit:
       statement is unchanged; the printed two-part wording (|a| < 1, then |a| <= 1) is
       represented by the two cases of the final step. No retained solution set covers the
       exercises of Stein-Shakarchi, so the card's solution states the argument is its own.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Notation repair after the corpus check reported raw TeX the page cannot show. The
+      sentence naming the source of the logarithm's power series wrote `\S6`, a section sign
+      written as a TeX command outside a math span, which the HTML writer drops; it now reads
+      the character `§6`. Mathematics and wording unchanged.
 ---
 
 ::: {.exercise}
@@ -51,7 +59,7 @@ $$
 \int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,\dd\theta=-\Re\sum_{n\ge1}\frac{a^n}{n}\int_0^{2\pi}e^{in\theta}\,\dd\theta .$$
 
 ::: pf-proof
-Since $\abs a<1$, the point $1-ae^{i\theta}$ lies in the disc of centre $1$ and radius $\abs a<1$, on which $\Log$ is holomorphic with $\Log(1-w)=-\sum_{n\ge1}w^n/n$ (Chapter 3, \S6, the power series of the principal logarithm); and $\log\abs{1-ae^{i\theta}}=\Re\Log(1-ae^{i\theta})$ there, because $\Log$ has real part $\log\abs\cdot$ wherever it is defined. The series converges uniformly on the closed disc $\abs w\le\abs a$ by the Weierstrass $M$-test with $M_n=\abs a^n/n$ and $\sum\abs a^n/n<\infty$. Uniform convergence permits termwise integration of the real parts, which gives the display.
+Since $\abs a<1$, the point $1-ae^{i\theta}$ lies in the disc of centre $1$ and radius $\abs a<1$, on which $\Log$ is holomorphic with $\Log(1-w)=-\sum_{n\ge1}w^n/n$ (Chapter 3, §6, the power series of the principal logarithm); and $\log\abs{1-ae^{i\theta}}=\Re\Log(1-ae^{i\theta})$ there, because $\Log$ has real part $\log\abs\cdot$ wherever it is defined. The series converges uniformly on the closed disc $\abs w\le\abs a$ by the Weierstrass $M$-test with $M_n=\abs a^n/n$ and $\sum\abs a^n/n<\infty$. Uniform convergence permits termwise integration of the real parts, which gives the display.
 :::
 
 :::
