@@ -51,4 +51,6 @@ What the search covered. NUS examination papers are held in the NUS Libraries Ex
 The list stays empty until the paper itself is produced.
 
 **2026-11-19.** The search was extended once more and the answer is unchanged. A title search of the Internet Archive's catalogue for `examination papers` together with `University of Singapore` returns zero records. The Digital Gems address the library's FAQ gives, `https://digitalgems.nus.edu.sg/browse/collection/31`, still answers 404 although the site's root answers 200, and its search endpoint answers 500, so nothing there is reachable from here. The twelve statements of this collection were read again against the imported text in the same pass and none of them changed; no document identifies the sitting they were set in, and the list above stays empty.
+
+**2026-11-19.** Two further routes, recorded with what each did and did not establish. The Internet Archive's full-text field, and not only its titles, returns zero records for `University of Singapore` together with `examination papers`. Google Books' API answered 429 with its daily query quota exhausted, so that route was not searched at all and nothing is concluded from it either way.
 :::
