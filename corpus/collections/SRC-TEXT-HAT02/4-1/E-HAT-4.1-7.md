@@ -477,6 +477,37 @@ audit:
     printed p. 358, unchanged. Not claimed: a retained solution set; the sets in `tmp/sources`
     reach §4.1 only at its first exercises, and every paragraph of the argument is attributed
     to tom Dieck, Davis–Kirk or May, or marked the card's own, as before.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is well-definedness, the
+    relative homomorphism property and the identification of Hatcher's $\gamma f$ with the transport.
+    No defect found. Checked in step `construction`: $\varphi$ carries $Q$ homeomorphically onto
+    $I^n$ and the face $B$ onto the free face, every other face of $Q$ into $J^{n-1}$; $\delta$ is
+    $0$ on the non-free faces, hence on $J^{n-1}$ and on $\partial I^{n-1}$, $1$ on the non-bottom
+    faces of $Q$ and on $\partial B$ — the displayed formula gives both, since $\nu=0$ on
+    $s_i\in\{\varepsilon,1-\varepsilon\}$ — and on the annulus $\Sigma$ it runs from $0$ to $1$; the
+    two clauses of $\gamma f$ agree on $\partial Q$ because the first is $f$ of a point of
+    $J^{n-1}$, that is $x_1$, and the second is $\gamma(1)=x_1$; and $\gamma f$ maps
+    $\partial I^n$ into $A$ and $J^{n-1}$ to $x_0$. Checked in step `well-defined`: independence of
+    the representative, with $h(\varphi(s),u)$ on $Q$ and the fixed shell value, and independence of
+    the path class, with $G(\delta(s),u)$, each continuous at the interface by the same two
+    agreements and each a map of triples with $J^{n-1}$ carried to $x_0$. Checked the lemma of step
+    `extension`: $p:E\to A$ evaluation at the basepoint of $S^{n-1}$ is a fibration whose fibre over
+    $a$ is $\pi_n(X,A,a)$; two lifts of $v$ with the same initial point and the constant homotopy
+    $v(s)$ on $I^2$ with the partial lift prescribed on three sides have an extension because
+    $(I^2,U)$ is a CW pair, and at $s=1$ the extension joins $V_1$ to $W_1$ inside $F_{a_1}$.
+    Checked step `realizes`: $V_0=f$, $V_1=\gamma f$, $V_t(J^{n-1})=\gamma(1-t)=v(t)$ for $t>0$, and
+    continuity at $t=0$ on each of $\operatorname{int}I^{n-1}$, $J^{n-1}$ and the annulus. Checked
+    step `properties`: $\beta_{\gamma\eta}=\beta_\gamma\beta_\eta$ from
+    $\overline{\gamma\eta}=\bar\eta\bar\gamma$ and functoriality, and the two composites with the
+    reversed path are the identity because each concatenation is homotopic rel endpoints to the
+    constant path. Checked step `additive`: $W_t$ is well defined on $s_1=\frac12$ because both
+    clauses take the value $v(t)$, the faces $s_1=0$ and $s_1=1$ lying in $J^{n-1}$, and it is a
+    homotopy of maps of triples ending at $V^f_1+V^g_1$. Checked step `exact`:
+    $\gamma f$ restricted to the free face is $\gamma$ applied to $f$ restricted to $I^{n-1}$ in
+    Hatcher's absolute sense. Not changed: the statement as printed on p. 358.
 ---
 
 ::: {.problem}
