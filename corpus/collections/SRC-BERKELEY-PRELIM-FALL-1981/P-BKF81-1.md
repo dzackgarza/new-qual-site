@@ -21,6 +21,13 @@ audit:
   by: chatgpt
   date: 2026-09-11
   note: "Closed the malformed math delimiter in the title and evaluated the integral by residues of e^{iz}/(1+z^4) in the upper half-plane."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall81.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1981, retained in this repository as `assets/attachments/Fall81.pdf`; the statement below is its wording.
 Consider
 $$
 F(z)=\frac{e^{iz}}{1+z^4}
