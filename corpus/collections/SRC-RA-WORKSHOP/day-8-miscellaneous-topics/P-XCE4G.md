@@ -17,6 +17,18 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) comparison with the geometric series, since
+    0 <= x^k/(1+x^k) <= x^k on [0,1); (b) the same bound gives uniform convergence on [0,a] by the
+    M-test with sum a^k; (c) term-by-term differentiation: g_k'(x) = k x^{k-1}/(1+x^k)^2 and, for
+    0 <= x <= a < 1, the denominator is at least 1, so |g_k'| <= k a^{k-1}, whose sum converges by
+    the ratio test; the M-test then gives uniform convergence of the derivative series on [0,a], and
+    the differentiation theorem applies because the partial sums converge at 0. The point 1 is
+    genuinely excluded, since the terms tend to 1/2 there and the series diverges, which the card
+    notes. All three parts are right.
 ---
 
 ::: {.problem}
