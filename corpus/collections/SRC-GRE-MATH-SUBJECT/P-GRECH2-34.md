@@ -14,6 +14,19 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 34 of the Chapter 2 review questions in assets/attachments/extracted/chapter-2.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked independently of the card's own computation. The
+    region is {x^2 <= y <= 6 - |x|}, the two curves meeting at (+-2, 4). Revolving about the y-axis,
+    a horizontal slice at height y has |x| <= min(sqrt(y), 6-y): for y < 4 the parabola bound
+    sqrt(y) is the smaller and the slice is a disk of radius sqrt(y), and for 4 < y < 6 the tent
+    bound 6-y is smaller and the slice is a disk of radius 6-y. Hence V = pi int_0^4 y dy +
+    pi int_4^6 (6-y)^2 dy = 8 pi + 8 pi/3 = 32 pi/3, which is choice (A). I first read the slice as
+    an annulus and got 64 pi; the correct reading of the inequality x^2 <= y gives the disk, and the
+    card is right. Checked a second way by shells: V = 2 pi int_0^2 x((6-x) - x^2) dx =
+    2 pi [3x^2 - x^3/3 - x^4/4]_0^2 = 2 pi (12 - 8/3 - 4) = 32 pi/3, the same value. Not claimed: any evaluation beyond the volume.
 ---
 
 ::: {.problem}
