@@ -6556,3 +6556,55 @@ $$0\to H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ\to H_n(M,B;\QQ/\ZZ)\to\operatorname{Tor}(H
 gives $H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ=0$, and a finitely generated group with that property vanishes, so $H_{n-1}(M,B;\ZZ)=0$. The fragment is then $0\to H_n(M,\partial M;\ZZ)\xrightarrow{\partial_A}H_{n-1}(A;\ZZ)\to0$, an isomorphism, which yields both $H_{n-1}(A;\ZZ)\cong\ZZ$ — so the component is orientable — and that $\partial_A$ is multiplication by a unit. The rest of the card was checked and stands: the triple sequence, the excision of $\partial M-A$, the component reduction, the mod-two case, and the change-of-coefficients argument for general $R$ including the $2R=0$ alternative. Bredon's printed pp. 356–357, which supply the vanishing, were not re-read this pass; the event of 2026-11-07 records that reading.
 
 **Not done, and open.** The #170 source obligations are unchanged: no complete published solution located for `E-HAT-2.B-3`, `-2.B-4`, `-2.B-5`, `-2.B-7`, `-2.B-9`, `E-HAT-2.C-1`, `-2.C-6`, `E-HAT-3.3-21`'s bracketed question, `E-HAT-4.1-1`, `-4.1-7`, `-4.A-1`. What this and the four preceding records of the day add is that §2.B, §2.C and §4.1 are now read in full and §3.3 is read in full, each card against the book at its printed page.
+
+## 2026-11-19: the first six exercises of §V.4 — Yang Pi-Yeh's entries are short proofs of four of them, and one repeats Egbert's false compositions
+
+**Object and need.** The cards `P-AGH541CONICSQUADRIC` (V.4.1), `P-AGH542QUADTRANSFORM` (V.4.2),
+`P-AGH545PASCAL` (V.4.5) and `P-AGH546QUARTICBASE` (V.4.6), all on printed pp. 406--407 of
+Hartshorne, and the retained solution set named in the records above. Each card named Egbert and none
+named Yang Pi-Yeh, whose Solutions 5.4.1, 5.4.2, 5.4.5 and 5.4.6 stand on printed p. 109 and cover
+those four exercises; the exercises are V.4.2 on printed pp. 406--407 and the other three on
+printed pp. 406--407 as the cards state them.
+
+**V.4.1, `P-AGH541CONICSQUADRIC`.** Yang's entry takes the conics through $P_1=(1,0,0)$,
+$P_2=(0,1,0)$ with basis $x_0x_1,x_1x_2,x_2x_0,x_2^2$, maps them to $y_1,y_2,y_3,y_0$, reads
+$y_0y_1=y_2y_3$ off the image, and identifies the graph of $(x,y,z,w)\mapsto(x,z,w)$ with the blowup of
+$\PP^2$ at the two points through the saturation of $(x_0x_1,x_1x_2,x_2x_0,x_2^2)$. It then asserts
+"$\pi\circ\psi=\mathrm{id}_{\PP^2}$, and $\psi\circ\pi=\mathrm{id}_Y$", the same two false
+compositions the card already corrects for Egbert's entry: $\pi\circ\psi$ is the blowup map on $X'$
+and $\psi\circ\pi$ is undefined at the blown-up point. The card's remark now says the correction
+applies to Yang's entry word for word.
+
+**V.4.2, `P-AGH542QUADTRANSFORM`.** The entry is Egbert's computation in the same coordinates — the
+substitution $(x,y,z)\mapsto(yz,zx,xy)$ into a curve of multiplicity $r_i$ at $P_i$, the division by
+$x^{r_1}y^{r_2}z^{r_3}$, and the two displayed numbers $2d-r_1-r_2-r_3$ and $d-r_2-r_3$ — and adds
+nothing; it does not discuss a component of $C$ through a centre, which the card's intersection-number
+argument covers.
+
+**V.4.5, `P-AGH545PASCAL`.** The entry proves the collinearity from Corollary 4.5 of the book,
+printed p. 400 (PDF p. 415), rather than by naming Cayley--Bacharach: the cubic $S\cup PQ$ passes
+through the eight points $A,B,C,A',B',C',P,Q$ in which it meets $AB'\cup BC'\cup CA'$, so the ninth,
+$R$, lies on it, and $R\notin S$ because the line $AB'$ meets the conic in $A$ and $B'$ only. The
+corollary's genericity hypotheses are not checked in the entry; the card's step
+`extends-to-degenerate-case` supplies the specializations in which they fail.
+
+**V.4.6, `P-AGH546QUARTICBASE`.** The entry states the hypothesis in linear-algebra form, the
+thirteen vectors of the fifteen degree-four monomials having rank $13$, which makes the quartics
+through the thirteen points a pencil; two members meet in $16=4\cdot4$ points, the thirteen and three
+more, and a third member is a linear combination of the two. It gives no geometric hypothesis on the
+thirteen points, which is the exercise's second question and the content of the card's two hypothesis
+steps, and it counts the sixteen points without multiplicities.
+
+**Repair.** `P-AGH541CONICSQUADRIC` in `7f4ba13bbd`, `P-AGH542QUADTRANSFORM` in `b416c7835f`,
+`P-AGH545PASCAL` in `66b2cb7a04` and `P-AGH546QUARTICBASE` in `fa4241c40d`; this record in the
+COMPLAINTS commit that carries it. No statement, step or hypothesis of any card changes: the four
+remarks gain the adjudication of the retained set's entry, and nothing moves from proved to open or
+the reverse. `P-AGH544CUBICGROUPLAW` (V.4.4) already names Yang's 5.4.4, and `P-AGH548IRREDCLASSES`
+(V.4.8), whose entry is the long one at printed pp. 110--111, is not touched here: that card is
+issue #160's and another stream's today.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.4.1, 5.4.2, 5.4.5 and 5.4.6 at printed
+p. 109, rendered as page images from `tmp/sources/lfwin-hartshorne-solutions.pdf`; Hartshorne's
+V.4.1, V.4.2, V.4.5 and V.4.6 on printed pp. 406--407, and Corollary 4.5 on printed p. 400. Not read:
+the printed books themselves; Yang's 5.4.3, 5.4.4 and 5.4.8 beyond what the records above say; and no
+search of the literature beyond these files.
