@@ -20,6 +20,13 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the script set name I, which the extraction split into I and T, against problem 141 on Ring_Theory_Qual_Problems.pdf PDF page 16.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained problem list `assets/attachments/Ring_Theory_Qual_Problems.pdf`: the statement is Problem 141, and its printed
+    words are the card's. The problem number and the file are now named in the solution's opening
+    sentence. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -29,6 +36,7 @@ Show that if $A \in \mathcal{I}$ is a maximal element of $\mathcal{I}$, then $A$
 :::
 
 ::: {.solution}
+This is Problem 141 of the Kent State University algebra qualifying examination problem list in ring theory, retained in this repository as `assets/attachments/Ring_Theory_Qual_Problems.pdf`; the statement below is its wording.
 
 Fix one of the three properties
 $$
