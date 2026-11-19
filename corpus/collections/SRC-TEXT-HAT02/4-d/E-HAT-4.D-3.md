@@ -26,8 +26,10 @@ audit:
     on each fibre and the splitting of the Gysin sequence into short exact sequences. Recorded the
     fibre dimensions 2(k-n+1)-1 = 2k-2n+1 and 4(k-n+1)-1 = 4k-4n+3 as computations rather than
     assertions, and the induction base V_1 = S^{2k-1} with the odd-degree argument for the vanishing
-    of squares. Not checked: Hatcher's page numbers, which are the card's own citations and were not
-    re-read in this pass.
+    of squares. The page numbers were then checked against the retained PDF at
+    tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9: Theorem 4D.1 on
+    p. 432 (PDF 441), the Gysin sequence on p. 438 (PDF 447) and the identification of the Euler
+    class with the top Chern class on p. 444 (PDF 453), each as cited.
 ---
 
 ::: {.problem}

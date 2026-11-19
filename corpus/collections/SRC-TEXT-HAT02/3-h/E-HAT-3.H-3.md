@@ -30,8 +30,10 @@ audit:
     homomorphisms and a step identifying the ambiguity as conjugation in Aut(G), since the prose ran
     them together; recorded explicitly that pulling back composes monodromy with f_*, which is what
     makes the classifying map and f^*(E_0) correspond; and made the disconnected case a step, both
-    sides splitting as products over the path components. Not checked: Hatcher's page numbers, which
-    are the card's citations and were not re-read in this pass.
+    sides splitting as products over the path components. The page numbers were then checked against the retained
+    PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9: Theorem 1B.8
+    and Proposition 1B.9 are both printed on p. 90 (PDF 99) and Theorem 1.38 on p. 67 (PDF 76), each
+    as cited.
 ---
 
 ::: {.problem}
