@@ -34,6 +34,16 @@ audit:
     and 1 at 2; for C the characteristic polynomial is (X-2)^5 with
     rank(C-2I) = 3, rank(C-2I)^2 = 1 and (C-2I)^3 = 0, giving blocks 3,2. No
     defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 4, Jordan forms Exercise
+    3(i)--(iii). Recomputed with exact arithmetic: $\operatorname{ch}_A=(X-1)(X+1)^2$ and
+    $\operatorname{rank}(A+I)=1$; $\operatorname{ch}_B=(X-2)(X-1)^3$ with
+    $\operatorname{rank}(B-I)=2$ and $\operatorname{rank}(B-I)^2=1$; $\operatorname{ch}_C=(X-2)^5$
+    with ranks $3,1,0$ for the powers of $C-2I$. The forms are $1,-1,-1$;
+    $J_2(1)\oplus J_1(1)\oplus J_1(2)$; $J_3(2)\oplus J_2(2)$. No defect.
 ---
 
 ::: {.exercise}
