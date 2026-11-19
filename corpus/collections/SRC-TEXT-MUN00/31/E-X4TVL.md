@@ -65,6 +65,19 @@ audit:
     the density of the rationals. One presentation repair: the statement wrote `\epsilon`, which
     STYLE-04 spells `\varepsilon`; the wording is unchanged. No defect found in the statement, §31
     Exercise 8. No retained solution set covers the exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said "No retained solution set covers this exercise", and that is false: dbFin's Section
+    31 problem 9 solution is exactly this exercise and is retained at
+    `tmp/sources/dbfin/section-31-the-separation-axioms/problem-9-solution.txt`, read 2026-11-10 from
+    https://dbfin.com/topology/munkres/chapter-4/section-31-the-separation-axioms/problem-9-solution/.
+    Its four parts are the card's four: the $K_n$ cover of $[0,1]$, the Baire-category step citing
+    Exercise 5 of §27, the interval on which $x\mapsto(-x,-x+\varepsilon)$ lies in $V$, and the
+    limit-point conclusion at each rational $q$. The rendered sentence now cites it and says what the
+    card adds, namely the two inequalities that place $x\times(-x+\varepsilon)$ in the rectangle
+    $[t,t+1/n)\times[-t,-t+1/n)$.
 ---
 
 ::: {.exercise}
@@ -83,7 +96,7 @@ Show that $[0, 1]$ is the union of the sets $K_n$ and countably many one-point s
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own; it follows the four printed steps. Write $\RR_\ell^2$ for the Sorgenfrey plane, whose basic open sets are the half-open rectangles $[x,x+\varepsilon)\times[y,y+\varepsilon')$.
+The retained published solution is dbFin, *Section 31: Problem 9 Solution* (`https://dbfin.com/topology/munkres/chapter-4/section-31-the-separation-axioms/problem-9-solution/`, read 2026-11-10, kept at `tmp/sources/dbfin/section-31-the-separation-axioms/problem-9-solution.txt`), which runs the same four steps: the $K_n$ cover of $[0,1]$ by Baire category, an interval $(a',b')$ on which $x\mapsto(-x,-x+\varepsilon)$ stays in $V$, and the limit-point conclusion at each rational $q$. The card states the same argument with the inequalities of step (c) written out. Write $\RR_\ell^2$ for the Sorgenfrey plane, whose basic open sets are the half-open rectangles $[x,x+\varepsilon)\times[y,y+\varepsilon')$.
 
 ::: pf
 
