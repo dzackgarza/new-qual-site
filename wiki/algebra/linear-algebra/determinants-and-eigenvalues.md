@@ -13,7 +13,7 @@ topics:
 
 ## Forms and normal matrices
 
-The page opens with the three structures its later sections read off a basis: a bilinear form, a matrix characterized by the change of basis that diagonalizes it, and the semisimple-plus-nilpotent splitting that exists over a perfect field.
+A basis reads three structures off a linear map: a bilinear form becomes its Gram matrix, a matrix is classified up to the change of basis that diagonalizes it, and over a perfect field an operator splits as the sum of a semisimple and a commuting nilpotent part.
 
 [[D-5BR4D]]
 
