@@ -36,6 +36,8 @@ Also $\trace A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenval
 
 $\min_A$ divides $\chi_A$ and has the same irreducible factors, so it is determined by the exponents of those factors; it is the monic divisor $p$ of $\chi_A$ of least degree, among those with every irreducible factor of $\chi_A$, such that $p(A) = 0$.
 
+[[D-GK5SF]]
+
 ### Diagonalizability
 
 $A$ is diagonalizable over $F$ if and only if $\min_A$ is a product of distinct linear factors over $F$.
@@ -89,9 +91,15 @@ If $f(A) = 0$ for a polynomial $f$, then $\min_A$ divides $f$.
 
 In each diagonalizable case, the divisor $\min_A$ of a polynomial with distinct roots in $F$ is a product of distinct linear factors.
 
+[[FT-BC6S2]]
+
 ## Consistency conditions
 
 - $\min_A$ and $\chi_A$ have the same irreducible factors.
 
 - For each eigenvalue $\lambda$, the number of Jordan blocks equals the geometric multiplicity $\dim\ker(A-\lambda I)$, and the sum of their sizes equals the algebraic multiplicity.
   The geometric multiplicity is at most the algebraic multiplicity, and $A$ is diagonalizable over $F$ if and only if $\chi_A$ splits and the two multiplicities are equal for every eigenvalue.
+
+[[L-CD6QT]]
+
+[[FT-BC6S2]]
