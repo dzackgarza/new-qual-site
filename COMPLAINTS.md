@@ -7840,3 +7840,39 @@ access to it.
 **What is cited.** The proper simply connected case is the Riemann mapping theorem, cited on the
 page to Stein--Shakarchi Theorem 3.1, printed p. 224, and the plane case is proved there from
 Liouville. The general statement stays at book level until Ahlfors or Miranda is in the checkout.
+
+## 2026-11-19: Yang's 5.2.14 and 5.2.16 at printed pp. 105--106 — the char-p bounds, and a false "coordinate ring is a PID"
+
+**Object and need.** `P-AGH5214IRRCURVESCHARP` (V.2.14) and `P-AGH5216KGROUPBUNDLE` (V.2.16), two
+more of the three Chapter V cards counted in the record above.
+
+**V.2.14, printed p. 105.** Riemann--Hurwitz and adjunction: normalizing $Y$ and composing with the
+projection to $C$ gives $2g(\widetilde Y)-2\ge d(2g-2)+\deg R$, and $g(Y)\ge g(\widetilde Y)$ by
+(4.1.8), so $2g(Y)-2\ge d(2g-2)$; adjunction gives
+$$
+(aC_0+bf)\cdot\bigl((a-2)C_0+(b+2g-2-e)f\bigr)=-ae(a-2)+a(b+2g-2-e)+b(a-2),
+$$
+that is $ae(1-a)+2b(a-2)\ge(d-a)(2g-2)$. For $2\le a\le p-1$ the degree is $d=a$ and $b\ge\frac12ae$;
+for $a\ge p$ it drops to $d=a-np$, and $(d-a)(2g-2)=2np(1-g)$ with $a-d\le a-1$ gives
+$b\ge\frac12ae+1-g$; and $a=1$ is a section, where $\deg L\ge\deg\mathcal E$ gives $b\ge0$. Part (b) is
+cut off in the retained copy, and the remark says so rather than reporting an error.
+
+**V.2.16, printed p. 106: a false first step.** The entry argues that $R=\OO_C(C)$ is a PID, hence
+every finitely generated projective module is free, hence every locally free sheaf is a sum of copies
+of $\OO_C$. The first step is false: $\OO_C(C)$ is a Dedekind domain, and a PID only when its class
+group vanishes, which it does not for an affine curve of genus $\ge1$ — the elliptic curve minus a
+point is the standard case. The exercise's statement still holds, on the right ground: for a regular
+affine curve $K_0(R)\cong\ZZ\oplus\Pic(R)$, so equal classes force equal rank and equal determinant
+class, which on a curve is the isomorphism class. The card's own steps take exactly that route, from
+$A$ a Dedekind domain rather than a PID, and the remark records the contrast.
+
+**The remainder.** One Chapter V card still lacks Yang: V.2.7, at printed p. 103, whose entry is the
+garbled one and needs the page image read before anything goes on the card.
+
+**Repair.** `P-AGH5214IRRCURVESCHARP` in `50da069890` and `P-AGH5216KGROUPBUNDLE` in `6d8cf34b17`, one
+commit each; this record in the COMPLAINTS commit that carries it. No step, statement or hypothesis of
+either card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.2.14 at printed p. 105 and 5.2.16 at printed
+p. 106, rendered as page images; the statements the two cards carry, not reopened against the book in
+this pass. Not read: V.2.7's entry, and the printed books themselves.
