@@ -33,7 +33,22 @@ audit:
     the split exact sequence, so no abelianness of pi_2(X,X^1) has to be assumed. The RP^2 counterexample
     is right: pi_2'(X) = Z/2 from the (-1)-action, pi_2'(X,X^1) = H_2(X,X^1) = Z by the relative Hurewicz
     theorem in its coinvariant form, and Z/2 -> Z is zero. Not checked: nothing outside these exercises.
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose. Checked each input: X^1 is a graph,
+    so its homotopy vanishes above degree 1 (contractible universal cover); pi_1(X^1) -> pi_1(X)
+    is onto because X has no 1-cells outside X^1, which also gives pi_1(X,X^1) = 0 and hence the
+    surjectivity of the boundary; K = ker(pi_1(X^1) -> pi_1(X)) is free by Nielsen-Schreier; and a
+    free basis lifts to a homomorphic section because a homomorphism out of a free group is free
+    on its values on a basis. One correction to the prose: it invokes Exercise 27 (the image of
+    pi_2(X) is central) to conclude the extension is a direct product, but pi_2 of a pair is
+    abelian, so a split extension of abelian groups is already a direct product, and the step now
+    says this and notes that centrality is then automatic. For RP^2 the action of Z/2 on pi_2 is
+    by the antipodal deck transformation, of degree -1, so the coinvariants are Z/2, while the
+    relative group is Z by relative Hurewicz; a homomorphism from a finite group to Z is zero.
+    Statement unchanged; no retained solution set covers this exercise.
 ---
 
 ::: {.problem}
@@ -43,50 +58,95 @@ Show also that the map $\pi_2'(X) \to \pi_2'(X, X^1)$ need not be injective by c
 :::
 
 ::: {.solution}
-Since $X^1$ is a graph,
-$$
-\pi_2(X^1)=0.
-$$
-The long exact sequence of the pair gives a short exact sequence
-$$
-0\longrightarrow\pi_2(X)
-\longrightarrow\pi_2(X,X^1)
-\xrightarrow{\partial}K\longrightarrow1,
-$$
-where
-$$
-K=\ker\bigl(\pi_1(X^1)\to\pi_1(X)\bigr).
-$$
-The group $K$ is a subgroup of the free group $\pi_1(X^1)$, hence is free by Nielsen--Schreier. Choose a free basis of $K$ and choose one lift in $\pi_2(X,X^1)$ of each basis element. By the universal property of a free group these lifts extend to a homomorphic section
-$$
-s:K\to\pi_2(X,X^1)
-$$
-of $\partial$.
+Since $X^1$ is a graph its higher homotopy vanishes, and $\pi_1(X^1)\to\pi_1(X)$ is onto because $X$ has no $1$-cells outside $X^1$; the long exact sequence of the pair therefore reads $0\to\pi_2(X)\to\pi_2(X,X^1)\to K\to1$ with $K=\ker(\pi_1(X^1)\to\pi_1(X))$ free. A free group splits the projection, by lifting a free basis, and $\pi_2$ of a pair is abelian, so the split extension is a direct product. For $X=\RP^2$ the two primed groups are $\ZZ/2$ and $\ZZ$, and a homomorphism from the first to the second is zero. The argument is this card's own: no retained solution set covers this exercise.
 
-By Exercise 27, the image of $\pi_2(X)$ in $\pi_2(X,X^1)$ is central. Hence the resulting semidirect product is in fact direct:
+::: pf
+
+::: {.pf-step #graph}
+$\pi_i(X^1)=0$ for every $i\ge2$, and $\pi_1(X^1)\to\pi_1(X)$ is surjective.
+
+::: pf-proof
+$X^1$ is a graph, and a connected graph has contractible universal cover (a tree), so all its homotopy groups above the first vanish; this is Example 1B.1 of printed p.~88 read for $\pi_i$. A CW complex is obtained from its $1$-skeleton by attaching cells of dimension $\ge2$, and each such attachment changes $\pi_1$ by a quotient, so $\pi_1(X^1)\to\pi_1(X)$ is onto.
+:::
+
+:::
+
+
+::: {.pf-step #les}
+There is a short exact sequence
 $$
-\boxed{\pi_2(X,X^1)\cong\pi_2(X)\times K.}
+0\to\pi_2(X)\to\pi_2(X,X^1)\xrightarrow{\partial}K\to1,\qquad K=\ker\bigl(\pi_1(X^1)\to\pi_1(X)\bigr).
 $$
 
-For the second assertion take $X=\RP^2$ with its standard CW structure and $X^1=S^1$. The action of
+::: pf-proof
+The long exact homotopy sequence of the pair $(X,X^1)$ is
 $$
-\pi_1(X)\cong\ZZ/2
+\pi_2(X^1)\to\pi_2(X)\to\pi_2(X,X^1)\xrightarrow{\partial}\pi_1(X^1)\to\pi_1(X)\to\pi_1(X,X^1).
 $$
-on
-$$
-\pi_2(X)\cong\pi_2(S^2)\cong\ZZ
-$$
-is multiplication by $-1$. Therefore
-$$
-\pi_2'(X)\cong\ZZ/(a\sim-a)\cong\ZZ/2.
-$$
-On the other hand the pair $(X,X^1)$ is obtained by attaching one $2$-cell, so the relative Hurewicz theorem gives
-$$
-\pi_2'(X,X^1)\cong H_2(X,X^1)\cong\ZZ.
-$$
-The induced homomorphism
-$$
-\ZZ/2\longrightarrow\ZZ
-$$
-must be zero, hence is not injective. This is the required counterexample.
+The first term vanishes by step [](#graph){.pf-ref}, so $\pi_2(X)\to\pi_2(X,X^1)$ is injective; the image of $\partial$ is exactly the kernel of $\pi_1(X^1)\to\pi_1(X)$, which is $K$ by exactness; and $\pi_1(X,X^1)=0$ because $\pi_1(X^1)\to\pi_1(X)$ is onto by step [](#graph){.pf-ref}, so $\partial$ is onto $K$. Collecting gives the displayed short exact sequence.
+:::
+
+:::
+
+
+::: {.pf-step #free}
+$K$ is a free group, of rank $1-\chi$ type computable from a graph structure.
+
+::: pf-proof
+$K$ is a subgroup of the free group $\pi_1(X^1)$, since $X^1$ is a connected graph and its fundamental group is free on the edges outside a maximal tree; subgroups of free groups are free by the Nielsen--Schreier theorem. So $K$ has a free basis $\{b_\lambda\}$.
+:::
+
+:::
+
+
+::: {.pf-step #split}
+The projection $\partial$ admits a homomorphic section $s\colon K\to\pi_2(X,X^1)$.
+
+::: pf-proof
+For each basis element $b_\lambda\in K$ choose $\tilde b_\lambda\in\pi_2(X,X^1)$ with $\partial\tilde b_\lambda=b_\lambda$, which is possible since $\partial$ is onto. A homomorphism out of a free group is determined by the images of a basis, with no relation to check, so there is a homomorphism $s\colon K\to\pi_2(X,X^1)$ with $s(b_\lambda)=\tilde b_\lambda$; then $\partial s(b_\lambda)=b_\lambda$ on a basis, so $\partial\circ s=\mathrm{id}$.
+:::
+
+:::
+
+
+::: {.pf-step #split-exact}
+A short exact sequence $0\to A\to G\xrightarrow{\partial}K\to1$ of abelian groups admitting a section splits: $G\cong A\oplus K$.
+
+::: pf-proof
+Define $\Psi(a,k)=a+s(k)\in G$. It is a homomorphism because $G$ is abelian, it is injective because $\Psi(a,k)=0$ gives $\partial\Psi(a,k)=k=0$ and then $a=0$, and it is surjective because for $g\in G$ the element $g-s(\partial g)$ has trivial image under $\partial$, so lies in the kernel of $\partial$, which is the image of $A$. Hence $G\cong A\oplus K$.
+:::
+
+:::
+
+
+::: {.pf-step #abelian}
+$\pi_2(X,X^1)$ is abelian, so step [](#split-exact){.pf-ref} applies and $\pi_2(X,X^1)\cong\pi_2(X)\times K$.
+
+::: pf-proof
+$\pi_n$ of a pair is abelian for $n\ge2$: the group structure comes from juxtaposition of maps of the $n$-disk and the two juxtapositions satisfy the interchange law, which forces commutativity when $n\ge2$ (the Eckmann--Hilton argument). With the section of step [](#split){.pf-ref} this gives the direct product decomposition. Exercise 27's statement that the image of $\pi_2(X)$ is central in $\pi_2(X,X^1)$ is a stronger fact and is automatic here, centrality being trivial in an abelian group.
+:::
+
+:::
+
+
+::: {.pf-step #rp2}
+For $X=\RP^2$ with its standard CW structure, $\pi_2'(X)\cong\ZZ/2$ and $\pi_2'(X,X^1)\cong\ZZ$, so $\pi_2'(X)\to\pi_2'(X,X^1)$ is not injective.
+
+::: pf-proof
+Here $X^1=S^1$ and $X$ is obtained from it by one $2$-cell, so $\pi_1(X)=\ZZ/2$; the universal cover is $S^2$, so $\pi_2(X)\cong\pi_2(S^2)\cong\ZZ$. The action of $\pi_1(X)=\ZZ/2$ on $\pi_2(X)$ is by the deck transformation, which on $S^2$ is the antipodal map, of degree $-1$, hence multiplication by $-1$. So $\pi_2'(X)$, the coinvariants of $\pi_2(X)$ under $\pi_1(X)$, is $\ZZ/(a\sim-a)\cong\ZZ/2$. For the pair, $\pi_1(X,X^1)=0$ makes $(X,X^1)$ $1$-connected, and the relative Hurewicz theorem gives $\pi_2'(X,X^1)\cong H_2(X,X^1)\cong\ZZ$, that group being generated by the single $2$-cell. A homomorphism $\ZZ/2\to\ZZ$ is zero, since its image is finite and $\ZZ$ is torsionfree, so the map is not injective — which is the required failure of injectivity.
+:::
+
+:::
+
+
+::: {.pf-step #conclusion}
+$\pi_2(X,X^1)\cong\pi_2(X)\times K$ with $K$ free, and for $X=\RP^2$ the map $\pi_2'(X)\to\pi_2'(X,X^1)$ is not injective.
+
+::: pf-proof
+Step [](#abelian){.pf-ref} gives the decomposition with steps [](#les){.pf-ref} and [](#free){.pf-ref} supplying the terms, and step [](#rp2){.pf-ref} gives the counterexample to injectivity.
+:::
+
+:::
+
+:::
 :::
