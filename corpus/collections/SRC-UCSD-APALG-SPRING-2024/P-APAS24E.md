@@ -10,6 +10,19 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    5 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 5 is its page 6. Checked: the statement against the paper's text layer at
+    the page named; the statement and both parts of Schur's lemma for complex finite-dimensional
+    representations; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution set exists for this paper to compare the argument with, and
+    no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -17,6 +30,8 @@ Give a complete statement and proof of Schur's Lemma, in the category of complex
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 5 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
 
 The argument is the card's own; no retained set solves this exercise, and the sets searched are recorded in the audit trail.
 
