@@ -7453,3 +7453,40 @@ pass; and the printed books themselves.
 **The residue-5 cards of the collection.** There are 70 problem cards of `SRC-TEXT-HK71` in this lane's residue; the 32 that carried the "no text version" clause are repaired, and the remaining section-exercise pairs are §1.5 Ex. 5, §1.6 Ex. 12, and Ex. 5 and Ex. 11 of §2.1 through §10.4 where the suffix falls on residue 5 — the list is in the file's own ids, not inferred here.
 
 **Uncertainty.** Whether another chat holds any of these sections was not determined; the collection's cards show no review by another reader on most of them, which is consistent with no chat holding them, but that is an inference from silence.
+
+## 2026-11-19: Yang's 5.1.1, 5.1.5 and 5.3.2 at printed pp. 100 and 107 — two more cards of the sweep, and one sign slip in the third entry
+
+**Object and need.** `P-AGH511EULERCHAR` (V.1.1, printed p. 366), `P-AGH515KSQUARED` (V.1.5, printed
+p. 367) and `P-AGH532MULTINTER` (V.3.2, printed p. 394), three of the sixteen Chapter V cards counted in
+the record above as still not naming Yang.
+
+**V.1.1, printed p. 100.** Riemann--Roch gives $\chi(\mathcal L^{-1})=\frac12C\cdot(C-K)+\chi(\OO_X)$,
+and the same for $D$ and for $C+D$; the alternating sum is
+$$
+\tfrac12\bigl((C+D)\cdot(C+D-K)-C\cdot(C-K)-D\cdot(D-K)\bigr)=C\cdot D,
+$$
+with no transversality assumed. That is the exercise's identity, and the card's own step covers the
+general case that Egbert's two proofs reach only for transverse curves.
+
+**V.1.5, printed p. 100.** (a) $K_X\sim(d-4)H$ with $H^2=d$ gives $K_X^2=d(d-4)^2$; (b)
+$K_X=p_1^*K_C+p_2^*K_{C'}$ by (II, 8.3), and $C^2=C'^2=0$, $C\cdot C'=1$ leave
+$0+2(2g-2)(2g'-2)+0=8(g-1)(g'-1)$.
+
+**V.3.2, printed p. 107, with one slip.** The entry writes $\widetilde C=\pi^*C+\mu_P(C)E$; the strict
+transform is $\pi^*C-\mu_P(C)E$, the pullback being $\widetilde C+\mu_P(C)E$. With the minus sign
+$\widetilde C\cdot\widetilde D=C\cdot D-\mu_P(C)\mu_P(D)$, and $\widetilde C\cdot\widetilde D=0$ at a
+single intersection point gives $C\cdot D=\mu_P(C)\mu_P(D)$, which is the entry's conclusion; with the
+printed plus sign the product would rise, not fall. The remark names the slip and says the conclusion
+uses the corrected sign.
+
+**The remainder, recounted.** Thirteen Chapter V cards still lack Yang: V.1.2, V.1.3, V.1.6, V.1.7,
+V.1.10, V.2.4, V.2.6, V.2.7, V.2.9, V.2.11, V.2.14, V.2.16, V.3.3.
+
+**Repair.** `P-AGH511EULERCHAR` in `ce8c6a8d14`, `P-AGH515KSQUARED` in `ceda2bf512`,
+`P-AGH532MULTINTER` in `1152ccdcde`, one commit each; this record in the COMPLAINTS commit that carries
+it. No step, statement or hypothesis of any card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.1.1 and 5.1.5 at printed p. 100 and 5.3.2 at
+printed p. 107, rendered as page images; the statements the three cards carry, transcribed from printed
+pp. 366, 367 and 394 by earlier passes, which this pass did not reopen. Not read: the remaining
+thirteen cards' Yang entries, and the printed books themselves.
