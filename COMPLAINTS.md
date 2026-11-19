@@ -7044,3 +7044,17 @@ that script on this machine and no longer a gap in what has been measured.
 a status is not a proof that a page still carries the cited text, only that the target resolves, and
 no page was read for this record. Not run: the path half of the dead-href check through the loader,
 the offline checks having covered the same 672 file hrefs on the same day.
+
+## 2026-11-19: §4.2 continued — three cards read, and 4.2-32's statement found to have no content at $n=0$
+
+**Object.** The last report left seven §4.2 cards. Exercises 15, 16 and 32 are read here, the first two at printed p. 390 and the third at p. 392; and each now cites its page, none having done so.
+
+| Card | Printed page | Mathematics checked |
+| --- | --- | --- |
+| `E-HAT-4.2-15` | Ex. 15, p. 390 | correct: $H_1=0$ by simple connectivity, $H_2\cong H^1=0$ by Poincaré duality and the universal coefficient theorem, so $M$ is a homology 3-sphere; $\pi_2=0$ by Hurewicz, else it would be the first nonzero higher group mapping isomorphically to $H_2=0$; $\pi_3\cong H_3=\ZZ$; a map $S^3\to M$ on a generator is an isomorphism on all homology, and homology Whitehead applies since both have CW type (Corollary A.12, the hint's pointer) |
+| `E-HAT-4.2-16` | Ex. 16, p. 390 | correct: the universal cover of a closed surface with infinite fundamental group is a simply connected noncompact surface; Proposition 3.29 gives $H_2=0$, simple connectivity gives $H_1=0$, so it is acyclic; a least $k\ge2$ with $\pi_k\ne0$ would make it $(k-1)$-connected with $\pi_k\cong H_k=0$; Whitehead makes it contractible |
+| `E-HAT-4.2-32` | Ex. 32, p. 392 | correct: $m=n+k$; $k\ge1$ for $n\ge2$ because a fibre $S^0$ would make $S^m$ a nontrivial two-sheeted cover of the simply connected $S^n$; the exact sequence at $\pi_n$ gives $k\le n-1$ and at $\pi_k$ gives $k\ge n-1$; $n=1$ forces $k=0$, $m=1$ |
+
+**The one addition.** `E-HAT-4.2-32`'s printed conclusion, $k=n-1$ and $m=2n-1$, has no content at $n=0$: a bundle over $S^0$ is trivial, so $S^m\cong S^0\times S^k$ is connected only when $m=k=0$, and then $k=0\neq n-1$. The card now says so, and that the two cases it treats — $n\ge2$ and $n=1$ — are exactly those in which the printed conclusion has content. This is a statement about the exercise's range, not a correction of it: no reading of the print makes $n=0$ satisfy the conclusion.
+
+**Not done.** `E-HAT-4.2-5`, `-19`, `-25`, `-36` remain, and so do the other sections named in the last two records. The #170 source obligations are unchanged.
