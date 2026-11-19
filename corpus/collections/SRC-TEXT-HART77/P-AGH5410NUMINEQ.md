@@ -273,6 +273,48 @@ audit:
     -3/4. Not checked: no source outside answer 2476483, NTU Exercise 10 and
     Hartshorne V.4.10 with (4.13)(a) was read, and the card's other steps were
     not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, reader's report on the card: two proof steps are corrected, and
+    the earlier events that certified them are named. (1) Step case-open
+    carried the maximiser constraint of the wrong set of indices. With
+    t=b_1=b_2, u=b_3, v=b_4=b_5 and w=b_6, the constraint b_2+...+b_6=2a is
+    t+u+2v+w=2a, not the 2t+u+2v+w=2a printed, which is b_1+...+b_6=2a. The
+    equation, the formula w=2a-4t-3x-2y, the two inequalities
+    5t+4x+3y<=2a and 3t+2x+y>=a, the four vertices (0,a/2,0), (a/3,0,0),
+    (2a/5,0,0), (a/4,0,a/4) and their values a^2, a^2, 24a^2/25, 15a^2/16 are
+    now correct, and the answer's remaining case b_1=b_6=2a/5 is the vertex
+    (2a/5,0,0), so the sentence claiming that the vertex check covers that
+    form is now true. This corrects the vertex values a^2, 2a^2/3, 7a^2/8 and
+    5a^2/6 asserted by the event of this date whose note reads "The three
+    reductions the sources state in one clause each are now proved ...", and
+    repeated by the event of this date whose note reads "the constant that the
+    rendered step left as an asterisk is now written out"; the COMPLAINTS
+    record of this date carries the same computation and is corrected in a
+    record of this date there. (2) Step maximiser's proof of b_5=b_4 said that
+    b_5=a/2 "gives a smaller value than either endpoint does", which is not
+    the comparison that decides the claim and fails at b_4=a/2. The proof now
+    compares the two endpoints b_5=S/2 and b_5=b_4 of the convex function
+    b_5^2+(S-b_5)^2, whose values are S^2/2 and S^2/2+2(b_4-S/2)^2, so the
+    endpoint b_5=S/2 is dominated unless b_4=S/2 and a maximiser has b_5=b_4.
+    (3) The event of 2026-11-16 whose note says "the only slip is a factor 2
+    on the right-hand side" of NTU's comparison line is false of the printed
+    line and is corrected here: the printed fraction is the vertex and the
+    slip is the doubled denominator -(3/4).2, which halves the vertex term, as
+    the rendered step says. (4) The event of this date above whose note reads
+    "the argument does not use it, the minimum on the range being read at the
+    right endpoint, and the card now says so" said so of the rendered step
+    before the step said it; the step now says that only the two coefficients
+    and the sign of the leading one are used. Checked in this pass: the
+    corrected constraint, polygon, four vertices and their values, with the
+    b-vectors they give, all in M with b_2+...+b_6=2a and sums a^2, a^2,
+    24a^2/25, 15a^2/16; the two endpoint values of b_5^2+(S-b_5)^2; the
+    constant (b_2+b_3+b_4+b_5)^2/4-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2 with its
+    two coefficients -3/4 and (1/2)(b_2+b_3+b_4+b_5); and the printed NTU line
+    at printed p. 17. Not checked: no source outside answer 2476483, NTU
+    Exercise 10 and Hartshorne V.4.10 with (4.13)(a) was read.
 ---
 
 ::: {.problem}
@@ -362,8 +404,10 @@ $M$ is closed and bounded, so a maximum is attained. If both $b_2+\cdots+b_6<2a$
 $b_5+b_6<a$, then $b_6$ can be increased, which keeps $b$ in $M$ and raises $\sum_ib_i^2$. If
 $b_1<b_2$ then $b_1$ can be increased, which keeps $b$ in $M$ and raises the sum, since $b_1$ occurs
 in neither constraint. If $b_5>a/2$ then $b_6\ge b_5$ gives $b_5+b_6>a$. Last, for fixed
-$b_5+b_6=S$ the function $b_5^2+(S-b_5)^2$ on $b_4\le b_5\le S/2$ attains its maximum at an
-endpoint, and $b_5=a/2$ gives a smaller value than either endpoint does.
+$b_5+b_6=S$ the function $b_5^2+(S-b_5)^2$ on $b_4\le b_5\le S/2$ is convex, so it attains its
+maximum at an endpoint. At $b_5=S/2$ its value is $S^2/2$; at $b_5=b_4$ it is
+$b_4^2+(S-b_4)^2=S^2/2+2(b_4-S/2)^2$, which is strictly larger unless $b_4=S/2$. Hence a maximiser
+has $b_5=b_4$.
 :::
 
 :::
@@ -444,23 +488,23 @@ $$
 ::: pf-proof
 By step [](#maximiser){.pf-ref} such a maximiser has $b_2+\cdots+b_6=2a$. Write $t=b_1=b_2$,
 $u=b_3$, $v=b_4=b_5$ and $w=b_6$, so that $0\le t\le u\le v\le w$, $v+w<a$ and
-$2t+u+2v+w=2a$. Put $x=u-t\ge0$ and $y=v-u\ge0$; then $u=t+x$, $v=t+x+y$,
-$w=2a-5t-3x-2y$, and the inequalities $w\ge v$ and $v+w\le a$ become
+$t+u+2v+w=2a$. Put $x=u-t\ge0$ and $y=v-u\ge0$; then $u=t+x$, $v=t+x+y$,
+$w=2a-4t-3x-2y$, and the inequalities $w\ge v$ and $v+w\le a$ become
 $$
-6t+4x+3y\le2a,
+5t+4x+3y\le2a,
 \qquad
-4t+2x+y\ge a .
+3t+2x+y\ge a .
 $$
 On this polygon the sum
 $$
-\sum_ib_i^2=2t^2+(t+x)^2+2(t+x+y)^2+(2a-5t-3x-2y)^2
+\sum_ib_i^2=2t^2+(t+x)^2+2(t+x+y)^2+(2a-4t-3x-2y)^2
 $$
 is a convex quadratic, so its maximum is attained at a vertex, and the vertices are
-$(t,x,y)=(0,a/2,0)$, $(a/3,0,0)$, $(a/4,0,0)$ and $(a/6,0,a/3)$, where the sum is $a^2$,
-$2a^2/3$, $7a^2/8$ and $5a^2/6$. Hence $\sum_ib_i^2\le a^2$. This reduction is the card's own
+$(t,x,y)=(0,a/2,0)$, $(a/3,0,0)$, $(2a/5,0,0)$ and $(a/4,0,a/4)$, where the sum is $a^2$,
+$a^2$, $24a^2/25$ and $15a^2/16$. Hence $\sum_ib_i^2\le a^2$. This reduction is the card's own
 completion of the answer's boundary sketch: the answer states it in the form
-$b=(b_1,b_1,b_1,b_5,b_5,b_6)$ with a remaining case $b_1=b_6=\frac{2a}{5}$, and the vertex check
-above covers that form and the further vertices it leaves out.
+$b=(b_1,b_1,b_1,b_5,b_5,b_6)$ with a remaining case $b_1=b_6=\frac{2a}{5}$, which is the vertex
+$(2a/5,0,0)$ and one of the four vertices checked.
 :::
 
 :::
@@ -510,7 +554,8 @@ If $b_1+b_2\le b_3+b_4+b_5$ then $a=\frac12(b_1+\cdots+b_5)$ and
 $$
 a^2-\sum_ib_i^2=-\tfrac34b_1^2+\tfrac12(b_2+b_3+b_4+b_5)b_1+\ast
 $$
-for the constant $\tfrac14(b_2+b_3+b_4+b_5)^2-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2$ in $b_1$. This is a quadratic in $b_1$ opening downwards, with vertex
+for the constant $\tfrac14(b_2+b_3+b_4+b_5)^2-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2$ in $b_1$; only the two
+coefficients and the sign of the leading one are used below. This is a quadratic in $b_1$ opening downwards, with vertex
 $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$; its argument range is $b_2\le b_1\le b_3+b_4+b_5-b_2$, whose
 midpoint is $\frac12(b_3+b_4+b_5)$. Since $b_1+b_2\le b_3+b_4+b_5$ and $b_1\ge b_2$ give
 $2b_2\le b_3+b_4+b_5$, one has
