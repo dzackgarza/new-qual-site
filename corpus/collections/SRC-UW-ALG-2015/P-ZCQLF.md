@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the opening step, which listed the two possible Galois groups with
+    no justification, now derives the list from the order of the group and the classification of groups of
+    order 4. The rest of the card is unchanged. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -37,6 +45,10 @@ $$
 \quad\text{or}\quad
 C_2\times C_2.
 $$
+
+::: pf-proof
+The Galois group of a finite Galois extension has order $[L:K]=4$. A group of order $4$ either contains an element of order $4$, and is then cyclic, or has every non-identity element of order $2$; in the second case two distinct involutions generate a subgroup of order $4$ isomorphic to $C_2\times C_2$.
+:::
 
 :::
 
