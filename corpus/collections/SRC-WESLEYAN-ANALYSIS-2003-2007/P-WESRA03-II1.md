@@ -29,6 +29,15 @@ audit:
     The proof ended with a pf-qed that only announced that an earlier step had answered
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The printed item names the Lebesgue measure space as (R, tau(R), m) with tau(R)
+    generic notation; the card writes the Borel sigma-algebra. The argument uses only
+    that the class is a sigma-algebra on which m is a measure, so it covers the Lebesgue
+    sigma-algebra as well, and the solution now says so. The statement is otherwise
+    unchanged.
 
 ---
 
@@ -46,6 +55,11 @@ The item is Part II item 1 of the Preliminary Exam in Analysis, Wesleyan Univers
 August 4, 2003 (for a nonnegative $f$ the set function $A\mapsto\int_A f\,dm$ is a measure), on PDF p. 38 of the retained scan
 assets/attachments/analysis_2003-2007.pdf, printed page 2.
 
+The printed item writes the Lebesgue measure space as $(\RR,\tau(\RR),m)$, with
+$\tau(\RR)$ generic notation for its $\sigma$-algebra. The argument below uses only
+that the underlying class is a $\sigma$-algebra of subsets of $\RR$ on which $m$ is a
+measure, so it applies verbatim to the Lebesgue $\sigma$-algebra, the other reading of
+the printed phrase, as well as to the Borel one written here.
 
 Define
 $$
