@@ -28,6 +28,24 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.5, printed pp. 91,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.5, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed by exact symbolic computation: the factorisation of the degree-eleven polynomial into $16\lambda(\lambda-1)^2(\lambda+1)^2(\lambda^2-6\lambda+1)(\lambda^2-\lambda+16)(16\lambda^2-\lambda+1)$, and $256(\lambda^2-\lambda+1)^3/(\lambda^2(\lambda-1)^2)$ at each root, giving $1728$, $8000$ and $-3375$.
+    Not checked: Yang's Solutions outside printed pp. 91; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's Solution 4.4.5 at printed pp. 91; it had none before. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -451,4 +469,8 @@ $j$-values of part (d), together with their realization.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.5, printed p. 91, takes (a) from the linear systems $\abs{2P_0}$ and $\abs{2f(P_0)}$, which define $\pi$ and $\pi'$, whence a degree-two $g$ with $\pi\circ f=g\circ\pi'$; in (b) it puts $X$ in Weierstrass form and takes $\pi$, $\pi'$ to be the $x$-coordinate, so that $g$ is $(x:z)\mapsto(x^2:z^2)$; and in (c) it does the ramification bookkeeping with $D=(0,0)+(1,0)+(\lambda,0)+P_0$, obtaining $f^*D=3\cdot(0,0)+(1,0)+(\lambda,0)+3\cdot P_0$ and hence $g^{-1}(\{1,\lambda\})=\{0,1,\lambda,\infty\}$, i.e. that the four branch points of $\pi'$ are the preimages of $1$ and $\lambda$. Reading that as the cross-ratio identity $(0,1,\lambda,\infty)\sim(-1,1,\sqrt\lambda,-\sqrt\lambda)$ gives the equation $256\frac{(\lambda^2-\lambda+1)^3}{\lambda^2(\lambda-1)^2}=16\frac{(\lambda^2-10\lambda+1)^3}{\lambda(\lambda-1)^4}$, and (d) clears it to the degree-eleven equation $256\lambda^{11}-1808\lambda^{10}+5504\lambda^9-21696\lambda^8-5760\lambda^7+47008\lambda^6-5760\lambda^5-21696\lambda^4+5504\lambda^3-1808\lambda^2+256\lambda=0$, listing $\lambda=-1,0,1,3\pm2\sqrt2,\frac{1\pm3\sqrt{-7}}{32},\frac{1\pm3\sqrt{-7}}{2}$ and $j=1728,8000,-3375$. Both of the last two steps were checked here and hold: the polynomial factors exactly as $16\lambda(\lambda-1)^2(\lambda+1)^2(\lambda^2-6\lambda+1)(\lambda^2-\lambda+16)(16\lambda^2-\lambda+1)$, whose roots are those listed, and the Legendre $j$ takes the values $1728$ at $\lambda=-1$, $8000$ at $3\pm2\sqrt2$ and $-3375$ at the four roots involving $\sqrt{-7}$ --- the values the exercise asks for, $2^6\cdot3^3$, $2^6\cdot5^3$ and $-3^3\cdot5^3$. The entry's 'easily calculate' is that cross-ratio computation, and it is the only place where its (c) is thin.
 :::
