@@ -607,11 +607,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **38 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **37 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Fifty-nine of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 38 stand as this item lists them.
+   reported and repaired above. Sixty of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 37 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -972,7 +972,12 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    cited. The image of $\pi_2(X,x_0)\to\pi_2(X,A,x_0)$ lies in the centre of the relative group, which is the
    statement the exercise records as belonging to §4.1.
 
-   Remaining unread in this item's set: §4.2 (14 more, incl. -5), §4.3 (24) --- 38 proofs.
+   **§4.2-28, read the same day.** Correct, no card changed; Sam's published solution covers it and is
+   cited. A free action of $\ZZ_p\times\ZZ_p$ on $S^n$ would make the sphere a covering of a quotient with
+   that group as deck group, forcing the periodic cohomology such a free action needs; the group's
+   cohomology is not periodic of that shape, which is the contradiction the argument fills in.
+
+   Remaining unread in this item's set: §4.2 (13 more, incl. -5), §4.3 (24) --- 37 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
@@ -9215,3 +9220,15 @@ the reference to proposition 2.1 for separability was likewise not read on its o
 **The remainder.** Twenty Chapter IV cards still lack Yang; the queue now starts at IV.4.17
 `P-AGH4417MULTIPLESOFAPOINT`. Yang's 4.4.17--4.4.20 are on printed p. 94, which this batch read only
 for the end of 4.4.16.
+
+## 2026-11-19: #168's sixth round — III.11.7 read complete and III.12.3's s3--s5, all correct
+
+**Object and need.** The fifth round's record leaves `P-AGH3117NONALGSHEAF` read only at `s5` and `s6`, and names `P-AGH3123JUMPINGIDEAL`'s `s3`--`s5` among the cards #168 lists and no round had reached. This round read `s1`--`s4`, `s7` and `s8` of the first, and `s3`--`s5` of the second, and checked both statements against the printed pages. No card is changed: every step read is correct.
+
+**`P-AGH3117NONALGSHEAF`, III.11.7 — read in full.** `s1`: for $r\ge2$ the sequence $0\to\mci^{r-1}/\mci^r\to\OO_{X_r}\to\OO_{X_{r-1}}\to0$ has $\mci^{r-1}/\mci^r\cong\OO_Y(-(r-1)d)$ of degree $-(r-1)d^2<0$, so $H^0$ injects and the constants force $H^0(X_r,\OO)=k$ throughout. `s2`: the ideal of $X_r$ in $X_{r+1}$ is $\mci^r/\mci^{r+1}\cong\OO_Y(-rd)$, whose square is $\mci^{2r}/\mci^{2r+1}=0$, so the square-zero Picard sequence applies; its two unit groups are $k^\times$ by `s1` and its $H^2$ term vanishes because $Y$ is a curve, leaving $0\to V_r\to\Pic X_{r+1}\to\Pic X_r\to0$ with $V_r=H^1(Y,\OO_Y(-rd))$. `s3`: $\Pic\hat X=\varprojlim_r\Pic X_r$ with every transition surjective gives the surjectivity onto $\Pic Y$, and $K_r/K_{r+1}\cong V_r$ by restricting a class of $K_r$ to $X_{r+1}$ and lifting classes of $V_r$ through the higher levels. `s4`: the hypersurface sequence twisted by $-rd$ gives $0\to V_r\to H^2(\PP^2,\OO(-(r+1)d))\to H^2(\PP^2,\OO(-rd))\to0$ for $r\gg0$, and $\binom{(r+1)d-1}{2}-\binom{rd-1}{2}=rd^2+\frac{d(d-3)}2$, so $\dim_kV_r$ is unbounded. `s7`: a class of $K$ restricts trivially to $Y$; were it $\hat{\mathscr L}$ for a rank-one reflexive $\mathscr L$ on $\PP^2$, local factoriality would make $\mathscr L$ invertible, so $\mathscr L\cong\OO_X(m)$ with $\OO_Y(m)\cong\OO_Y$ and $md=0$, forcing $m=0$ and the class to be trivial. `s8`: with (i) false by `s7` and (i)$\iff$(ii) from Exercise III.11.6(b), some locally free $\mathfrak F$ has no $n_0$; and if any twist $\mathfrak F(n_1)$ were globally generated then $\mathfrak F(n_1+r)=\mathfrak F(n_1)\otimes\OO_{\hat X}(r)$ would be for every $r\ge0$, since $\OO_{\hat X}(r)$ is, so no twist is. The statement as printed --- "its kernel is an infinite-dimensional vector space over $k$", with no hypothesis on the characteristic --- is on printed p. 281 (PDF p. 296, folio read), and is what `s6` corrects.
+
+**`P-AGH3123JUMPINGIDEAL`, III.12.3 — `s3`--`s5` correct.** `s3`: for $a\ne0$ the fibre is the rational normal quartic and $\OO_{X_a}(1)=\OO_{\PP^1}(4)$, so the restriction $H^0(\PP^4,\OO(1))\to H^0(\PP^1,\OO(4))$ is an isomorphism of five-dimensional spaces and both groups vanish. `s4`: for the special fibre cut out by $[s:u]\mapsto[s^4:s^3u:0:su^3:u^4]$, the coordinate forms restrict to $s^4,s^3u,0,su^3,u^4$, whose span has codimension one in $H^0(\PP^1,\OO(4))$; so the kernel is the span of $x_2$ and the cokernel is the span of $s^2u^2$, giving $h^0=h^1=1$. The parametrisation is a closed immersion: for $u=1$ the map $s\mapsto(s^4,s^3,s,1)$ has derivative $(4s^3,3s^2,1)\ne0$ everywhere, and on $\PP^1$ the two charts cover it, so the curve is the nonsingular rational quartic the printed exercise asks for, on printed pp. 291--292 (PDF pp. 306 and 307, folios 291 and 292 read). `s5` assembles the two rows.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card; the folios of PDF pp. 296, 306 and 307 were read as printed 281, 291 and 292, and this record's commit carries no card.
+
+**Uncertainty.** Read for this record: the eight steps of III.11.7 and the three of III.12.3 named, and the printed statements of both exercises. Not read: `s1`, `s2` of `P-AGH3123JUMPINGIDEAL`, which the card's own construction of the family uses, and the remark that refutes Yang's untwisted values; and Kim's and Yang's pages as such, which the card quotes and this round did not reopen. #168 is still not met for the eleven cards the first record names as unread beyond these two: IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.3.6, V.3.7, V.3.8, V.4.16, V.5.6 and V.5.8(b), and now III.12.3's `s1` and `s2`.
