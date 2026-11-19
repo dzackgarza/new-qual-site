@@ -92,6 +92,16 @@ audit:
     used implicitly before, and the observation that weak local connectedness implies the local
     connectedness that Hahn--Mazurkiewicz needs (§25 Exercise 6). Not claimed: a published solution;
     the located §44 set is unreadable for formulas, as the audit records.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rendered wording only. The opening sentence called the AoPS post "the one located, on §44",
+    although the `source-checked` event of 2026-11-15 names it by author, date and file and records
+    why it cannot be transcribed: the extraction drops every inline formula, and the site answers an
+    automated request with a human check. The sentence now says that, so a reader of the solution
+    alone learns which retained document covers the exercise and why the card keeps its own proof.
+    No step of the proof changed, and no claim about the post beyond the recorded one is added.
 ---
 
 ::: {.exercise}
@@ -106,7 +116,7 @@ A Hausdorff space that is the continuous image of the closed unit interval is of
 :::
 
 ::: {.solution}
-No retained solution set proves this exercise: the one located, on §44, is held with its formulas dropped by the extraction, as the audit records, and the site answers an automated request with a human check that is not worked around. The argument is therefore the card's own, checked against the book's numbered theorems.
+The retained solution that answers this exercise is the AoPS blog post by cinnamon_e, *Topology by Munkres Chapter 7 | Day 16* (2025-09-09), at its item 4 of §44, held as `tmp/sources/aops-shooting-star-munkres-ch7-day16.md`; the extraction drops every inline formula, so its answer reads as the words between blanks and cannot be transcribed, and the blog's site answers an automated request with a human check that is not worked around. The argument below is therefore the card's own, and the audit events record the search that located that post. The argument is therefore the card's own, checked against the book's numbered theorems.
 
 ::: pf
 
