@@ -25,6 +25,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.13, printed p. 93,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.13, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed $h_{13}$ from $\binom6i^2$ mod $13$; its factorisation into three irreducible quadratics over $\FF_{13}$; that $j=0$ only at $4,10$ and $j=1728$ only at $2,7,12$; the identity $256(\lambda^2-\lambda+1)^3-5\lambda^2(\lambda-1)^2\equiv-4h_{13}$ mod $13$; and $\#E(\FF_{13})=14$ with $j=5$ for $y^2=x^3+4x+7$.
+    Not checked: Yang's Solutions outside printed p. 93; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.13 at printed p. 93; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -196,4 +216,8 @@ Step [](#s3){.pf-ref} shows that no $j$-value other than $5$ can occur, while st
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.13, printed p. 93, computes the Hasse invariant of the Legendre curve in characteristic $13$ as $h_{13}(\lambda)=\sum_{i=0}^{6}\binom{6}{i}^2\lambda^i=\lambda^6+10\lambda^5+4\lambda^4+10\lambda^3+4\lambda^2+10\lambda+1$, which is right --- $\binom{6}{i}^2$ is $1,36,225,400,225,36,1$, i.e. $1,10,4,10,4,10,1$ mod $13$ --- and argues that its six roots carry a single $j$-invariant: the five transforms $\lambda\mapsto\frac1\lambda,1-\lambda,\frac{1}{1-\lambda},\frac{\lambda}{\lambda-1},\frac{\lambda-1}{\lambda}$ preserve $j$, hence carry roots to roots, so the roots are one $\Sigma_3$-orbit provided no root has $j=0$ (where the orbit has size three) or $j=1728$ (size two). The two computations that exclude those cases are garbled as printed --- one line opens a bracket it does not close and carries a stray ')' --- but the claim is true: $j=0$ at $\lambda=4,10$ and $j=1728$ at $\lambda=2,7,\tfrac12$, and $h_{13}$ vanishes at none of them, its six roots being the roots of the three irreducible quadratics $\lambda^2-6\lambda+1$, $\lambda^2-\lambda+3$ and $\lambda^2+4\lambda-4$ over $\FF_{13}$. The conclusion was checked here as well: $256(\lambda^2-\lambda+1)^3-5\lambda^2(\lambda-1)^2\equiv-4h_{13}(\lambda)\pmod{13}$ coefficient by coefficient, so $j\equiv5$ at every root; and the model curve $y^2=x^3+4x+7$ has exactly $14$ points over $\FF_{13}$, i.e. trace $0$ and supersingular, with $j\equiv5$.
 :::
