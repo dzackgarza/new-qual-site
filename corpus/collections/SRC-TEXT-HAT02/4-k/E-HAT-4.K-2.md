@@ -13,6 +13,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.K Exercise 2, and against
+    Corollary 4K.2 in the section's own text. The argument is the Quillen fibre lemma
+    route: the open stars V_sigma of L cover L, their finite intersections are the stars
+    V_rho of the simplex spanned by the sigma's, and the preimages U_rho cover K; each
+    U_rho deformation retracts onto the fibre f^{-1}(x_rho) by collapsing barycentric
+    coordinates onto the vertex of rho, so each restriction is a weak equivalence because
+    the fibre is contractible, and Corollary 4K.2 gives that f is a weak equivalence;
+    simplicial complexes have CW type, so Whitehead makes f a homotopy equivalence. One
+    citation was wrong: the corollary was placed on printed p. 478, and the running head
+    of the section puts it on printed p. 477. Statement unchanged.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -36,5 +50,5 @@ For a simplex $\sigma$ of $L$, let $V_\sigma$ be its open star: the union of the
 
 Let $x_\rho$ be the barycenter of $\rho$. The space $V_\rho$ contracts to $x_\rho$. The preimage $U_\rho$ deformation retracts onto $f^{-1}(x_\rho)$. To see this, write a point of a simplex of $K$ in barycentric coordinates. For each vertex $w$ of its image simplex, the sum of the coordinates of vertices mapping to $w$ is the $w$-coordinate of its image. Move these sums linearly toward the coordinates of $x_\rho$, scaling all coordinates in each fiber of the vertex map by the same factor. Every coordinate corresponding to a vertex of $\rho$ has positive sum throughout $U_\rho$, so this scaling is continuous. At the end the image is $x_\rho$, and points already over $x_\rho$ remain fixed.
 
-By hypothesis $f^{-1}(x_\rho)$ is contractible. Thus each restriction $f:U_\rho\to V_\rho$ is a weak homotopy equivalence. Corollary 4K.2 (p. 478) applied to the open-star covers shows that $f$ is a weak homotopy equivalence. Since simplicial complexes have CW type (Proposition A.2 and the discussion of s complexes, p. 108), the homology form of Whitehead's theorem (Corollary 4.33, p. 367) gives the required homotopy equivalence.
+By hypothesis $f^{-1}(x_\rho)$ is contractible. Thus each restriction $f:U_\rho\to V_\rho$ is a weak homotopy equivalence. Corollary 4K.2 (printed p. 477) applied to the open-star covers shows that $f$ is a weak homotopy equivalence. Since simplicial complexes have CW type (Proposition A.2 and the discussion of s complexes, p. 108), the homology form of Whitehead's theorem (Corollary 4.33, p. 367) gives the required homotopy equivalence.
 :::
