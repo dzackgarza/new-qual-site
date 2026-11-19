@@ -14,6 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Theorems and Definitions, item 5 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15: the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 1 item 5. The page had cited
+    only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged.
+
 ---
 
 ::: {.problem}
@@ -21,6 +31,10 @@ State Cauchy's Integral Formula.
 :::
 
 ::: {.solution}
+The item is Section 1 item 5 of the Complex Analysis Preliminary Examination of August 9, 2006
+(State Cauchy's Integral Formula), on the first page of that paper, PDF p. 15 of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 
 ::: pf
 
