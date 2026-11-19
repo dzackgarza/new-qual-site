@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 14, is the statement the card answers, and the head of the solution names it; the
+    retained file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the
+    blank versos, so Problem 7 stands on its page 14. Checked: the statement against the paper's text
+    layer at the page named; the eigenvalues $3,1,-1,-3$ with multiplicities $1,3,3,1$ and the Walsh
+    basis $2^{-3/2}\chi_J$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and
+    the QED. Not checked: no retained solution set exists for this paper to compare the argument with,
+    and no other card of the collection in this pass.
 - event: solution-reviewed
   by: claude
   date: 2026-11-18
@@ -33,6 +45,9 @@ Find the eigenvalues of $A$, and give an orthonormal basis for each eigenspace.
 :::
 
 ::: {.solution}
+
+The problem is Problem 7 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 14 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+
 The argument is the card's own; no retained solution set is cited on it. Write $S=(\ZZ/2\ZZ)^{3}$ and $\mathcal{F}(S)$ for the complex-valued functions on $S$, with the inner product $\langle f,g\rangle=2^{-3}\sum_{x\in S}\overline{f(x)}g(x)$.
 
 ::: pf
