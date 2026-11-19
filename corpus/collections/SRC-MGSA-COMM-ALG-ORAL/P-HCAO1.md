@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`: the statement is the first question of the Commutative Algebra section, attributed there to Vojta,
+    and its printed words are the card's. The sheet numbers nothing and prints no folios, so the
+    item is identified by its position and its opening words rather than by a number. Both are now
+    named in the solution's opening sentence. Not checked in this pass: the argument, which the
+    edit does not touch.
 ---
 
 ::: {.problem}
@@ -26,6 +35,7 @@ Show that $x_1, \ldots, x_n$ generate $M$.
 :::
 
 ::: {.solution}
+This is the first question of the Commutative Algebra section of the sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf` (attributed there to Vojta), and the statement below is its wording.
 Let $N=Ax_1+\cdots+Ax_n\subseteq M$ and $Q=M/N$. As a quotient of the finitely
 generated module $M$, the module $Q$ is finitely generated.
 
