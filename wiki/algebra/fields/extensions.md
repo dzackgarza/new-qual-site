@@ -66,7 +66,7 @@ If $\alpha,\beta\neq0$ and $\alpha\beta \in \QQ$, then $\alpha = (\alpha\beta)/\
 
 ## Distinguished classes
 
-Normality is not transitive, and the counterexample is on [[algebra/fields/splitting-and-normal|Splitting fields and normal extensions]]; separability and normality as classes of extensions are the two cards below.
+Normality is not transitive, and the counterexample is on [[algebra/fields/splitting-and-normal|Splitting fields and normal extensions]].
 
 [[D-JMATC]]
 
