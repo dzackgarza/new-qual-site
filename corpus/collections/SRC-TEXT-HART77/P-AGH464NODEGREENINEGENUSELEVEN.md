@@ -57,7 +57,8 @@ audit:
     published solution is not; that difference is the substance of this read.
 
     Changed in this pass: s4 now cites the printed cone genus, Hartshorne's Remark 6.4.1(d) at
-    printed p. 368, beside FE-CRVQUAD. No claim changed.
+    printed p. 353, beside FE-CRVQUAD. No claim changed. (The first version of this event gave
+    the page as 368, which is the PDF page; corrected here.)
 
     Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
     which Remark 6.4.1(d) is deferred and which is not read here.
@@ -235,7 +236,7 @@ $$
 d=2a+1
 $$
 on a quadric cone the genus is $a^2-a$: Hartshorne's Remark 6.4.1(d),
-printed p. 368, deferred there to V. Ex. 2.9 and proved on [[FE-CRVQUAD]].
+printed p. 353, deferred there to V. Ex. 2.9 and proved on [[FE-CRVQUAD]].
 Thus such a curve has arithmetic genus
 $$
 p_a=a(a-1).
