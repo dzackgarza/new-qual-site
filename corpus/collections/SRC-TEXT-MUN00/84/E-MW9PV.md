@@ -35,6 +35,16 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. The two answers, (n-1)(n-2)/2 and 4, are correct and are unchanged. Corrected: the proof obtained the rank from Lemma 85.2 (printed p. 514), which is a theorem of §85 stated after this exercise; the rank is now obtained from the theorems of §84 that the exercise precedes, namely Theorem 84.4 (printed p. 509), that a maximal tree contains every vertex, and Theorem 84.7 (printed p. 511), that the fundamental group of a connected graph is free with one generator for each edge outside a maximal tree. Corrected: the two graphs were not said to be connected or brought under the hypotheses of those theorems, and the count is now made with the hypothesis of connectivity checked (a complete graph on n >= 1 vertices and K_{3,3} are connected). What the certificate does not cover: the identification of the utilities graph with K_{3,3} is the usual one and the printed exercise's reference to §64; it is not proved here.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Structured the count into numbered steps: the rank formula E - V + 1 from Theorem 84.4 and
+    Theorem 84.7, the vertex and edge counts of K_n and of K_{3,3}, and the two evaluations, with
+    connectivity of both graphs checked as a hypothesis of those theorems. Also supplied the point
+    the earlier text left implicit: that a tree on V vertices has exactly V - 1 edges, which is what
+    turns "every vertex lies in T" into the arithmetic. The mathematics is the earlier reading's;
+    no defect found. Not re-read this session: printed pp. 509 and 511.
 ---
 
 ::: {.exercise}
@@ -47,28 +57,61 @@ of the utilities graph?
 
 ::: {.solution}
 
-The count for the utilities graph is the one in Jason DeVito's answer 64200 (https://math.stackexchange.com/a/64200), posted 2011-09-13 to Math Stack Exchange question 64192, "The fundamental group of $K_{3,3}$" (https://math.stackexchange.com/questions/64192, asked by William on the same day). The question quotes the corollary of May's *A Concise Course in Algebraic Topology* that a finite connected graph has $\pi_1$ free on $1-\chi(X)$ generators, and computes $4$ for $K_{3,3}$; the answer's point is that the number of generators of $\pi_1$ of an embedded graph has no relation to the surface it is embedded in, and it shows that every surface carries graphs free on $n$ generators for every $n$. Rando-Man's answer 64204 in the same thread adds that the map on $\pi_1$ induced by an embedding of the utility graph in the torus is not injective. Neither answer computes the complete graph, and neither proves the count it uses: the $1-\chi$ formula is proved in the book as Lemma 85.2 (printed p. 514) and its rank statement as Theorem 69.4 and Corollary 69.5 (printed p. 423). The card's counts for both graphs are therefore its own, with the formula cited.
+The counts are the card's own; the one published thread on the utilities graph (Math Stack Exchange question 64192, answers 64200 and 64204) computes it from the $1-\chi$ corollary of May but neither computes the complete graph nor proves the formula, as the card's audit records. The statement was checked against Munkres, *Topology* (2000), §84 Exercise 2, printed p. 513, and the theorems used are of that section.
 
+A graph means a $1$-dimensional CW complex, with $V$ vertices and $E$ edges.
 
-Let $X$ be a finite connected graph with $V$ vertices and $E$ edges. By Theorem 84.4 (printed p. 509) a maximal tree $T$ in $X$ contains all $V$ vertices, and a tree with $V$ vertices has $V-1$ edges; by Theorem 84.7 (printed p. 511) the group $\pi_1(X)$ is free, with a system of free generators in bijective correspondence with the edges of $X$ not in $T$. Hence
-$$
-\operatorname{rank}\pi_1(X)=E-(V-1)=E-V+1.
-$$
+::: pf
 
-For the complete graph $K_n$ on $n$ vertices, $V=n$ and $E=\binom n2$, and $K_n$ is connected for $n\ge1$. So
-$$
-\operatorname{rank}\pi_1(K_n)
-=\binom n2-n+1
-=\frac{(n-1)(n-2)}2 .
-$$
+::: {.pf-step #tree}
+A tree on $V$ vertices has exactly $V-1$ edges.
 
-The utilities graph is the complete bipartite graph $K_{3,3}$. It has $6$ vertices and $3\cdot3=9$ edges, and it is connected. Hence
+::: pf-proof
+Induction on $V$: for $V=1$ there are no edges. For $V>1$ a finite tree has a vertex of degree $1$, since an endpoint of a longest simple path has no neighbour other than its successor on that path; deleting it and its single incident edge leaves a tree on $V-1$ vertices, which has $V-2$ edges by induction, so the original has $V-1$.
+:::
+
+:::
+
+::: {.pf-step #rank}
+For a finite connected graph $X$ with $V$ vertices and $E$ edges, $\operatorname{rank}\pi_{1}(X)=E-V+1$.
+
+::: pf-proof
+By Theorem 84.4 (printed p. 509) a maximal tree $T\subset X$ contains every vertex of $X$, so by step [](#tree){.pf-ref} it has $V-1$ edges. By Theorem 84.7 (printed p. 511) $\pi_{1}(X)$ is free with a system of free generators in bijection with the edges of $X$ outside $T$, of which there are $E-(V-1)=E-V+1$.
+:::
+
+:::
+
+::: {.pf-step #kn}
+For the complete graph $K_{n}$ on $n\geq1$ vertices, $\operatorname{rank}\pi_{1}(K_{n})=\frac{(n-1)(n-2)}{2}$.
+
+::: pf-proof
+$K_{n}$ is connected, any two distinct vertices being joined by an edge (and for $n=1$ the graph is a point). It has $V=n$ and one edge per unordered pair of distinct vertices, so $E=\frac{n(n-1)}{2}$. Then
 $$
-\operatorname{rank}\pi_1(K_{3,3})=9-6+1=4.
+\operatorname{rank}\pi_{1}(K_{n})=\frac{n(n-1)}{2}-n+1=\frac{n^{2}-3n+2}{2}=\frac{(n-1)(n-2)}{2}
 $$
-Thus the required cardinalities are
-$$
-\boxed{\frac{(n-1)(n-2)}2\quad\text{and}\quad4.}
-$$
+by step [](#rank){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #utilities}
+For the utilities graph $K_{3,3}$, $\operatorname{rank}\pi_{1}(K_{3,3})=4$.
+
+::: pf-proof
+$K_{3,3}$ is connected, since any two vertices are joined by an edge or by a two-edge path through one of the three vertices on the opposite side. It has $V=6$ and $E=9$, so step [](#rank){.pf-ref} gives $9-6+1=4$.
+:::
+
+:::
+
+::: {.pf-step}
+A system of free generators has $\frac{(n-1)(n-2)}{2}$ elements for the complete graph on $n$ vertices and $4$ for the utilities graph.
+
+::: pf-proof
+The size of a system of free generators of a free group is its rank, so steps [](#kn){.pf-ref} and [](#utilities){.pf-ref} are the two answers. The identification of the utilities graph with $K_{3,3}$ is the exercise's own reference to §64 and is not reproved here.
+:::
+
+:::
+
+:::
 
 :::
