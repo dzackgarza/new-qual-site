@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.G, printed p. 459, with the construction of $\Delta X$
+    on the same page. Correct. Over an $n$-simplex the preimage is the iterated mapping cylinder of
+    the string of edge maps; when all of them are homeomorphisms the induction of the card gives
+    $M(f_1,\dots,f_n)\cong F\times\Delta^n$ over $\Delta^n$, the point being that the composite
+    $M_{n-1}\to X_{n-1}\to X_n$ is $(y,s)\mapsto f_n(y)$, whose mapping cylinder is
+    $F\times C(\Delta^{n-1})=F\times\Delta^n$ and not $F\times(\Delta^{n-1}\star I)$. Local
+    triviality then comes from the barycentric stars, which are open, cover $\Gamma$ and meet only
+    simplices containing the barycentre's simplex, so that the face identifications agree there.
+    The card's remark that a vertex star alone need not trivialise a loop edge, whose monodromy is
+    $f_{e,1}^{-1}f_{e,0}$, is the reason the star cover is used. Nothing changed. Not claimed: a
+    published solution, and no certificate.
 ---
 
 ::: {.problem}
