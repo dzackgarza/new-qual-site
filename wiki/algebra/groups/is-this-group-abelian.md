@@ -12,7 +12,7 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 ## From the order alone
 
-| $\cardinality{G}$ | Conclusion |
+| $\size{G}$ | Conclusion |
 | --- | --- |
 | $p$ | cyclic, hence abelian |
 | $p^2$ | abelian |

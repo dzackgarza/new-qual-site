@@ -28,7 +28,7 @@ Since $\generators S$ is the smallest subgroup containing $S$, the inclusion $\g
 
 ## Order and presentations
 
-The order of an element is the order of the cyclic subgroup it generates, so it divides $\cardinality{G}$ when $G$ is finite, by Lagrange's theorem applied to that subgroup.
+The order of an element is the order of the cyclic subgroup it generates, so it divides $\size{G}$ when $G$ is finite, by Lagrange's theorem applied to that subgroup.
 
 [[D-ZTPHF]]
 
@@ -91,7 +91,7 @@ The centralizer of a subset fixes its elements under conjugation and the normali
 
 ## Cosets and the index
 
-A map of sets is injective exactly when it has a left inverse and surjective exactly when it has a right inverse; the coset $gH$ is the image of $H$ under the bijection $h\mapsto gh$, so all cosets of $H$ have $\cardinality{H}$ elements and the index counts them.
+A map of sets is injective exactly when it has a left inverse and surjective exactly when it has a right inverse; the coset $gH$ is the image of $H$ under the bijection $h\mapsto gh$, so all cosets of $H$ have $\size{H}$ elements and the index counts them.
 
 [[FD-JI2RH]]
 

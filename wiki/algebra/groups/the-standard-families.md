@@ -11,7 +11,7 @@ topics:
 ## Nonabelian models and $p$-groups
 
 $D_4$ and $Q_8$ are the two nonabelian groups of order $8$, and the number of elements of order $2$ separates them.
-A finite $p$-group has a nontrivial center, so induction on $\cardinality{G}$ through the center is the standard argument for the class, and the fixed-point congruence is its counting form.
+A finite $p$-group has a nontrivial center, so induction on $\size{G}$ through the center is the standard argument for the class, and the fixed-point congruence is its counting form.
 
 [[D-4R2Z5]]
 

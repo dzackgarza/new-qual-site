@@ -36,7 +36,7 @@ The recognition theorem turns that hypothesis into the isomorphism, so classifyi
 ## Semidirect products
 
 With one normal factor only, the same construction produces a semidirect product whose multiplication is twisted by the conjugation map $H\to\Aut(N)$, and two twisting maps give isomorphic groups when they differ by an automorphism of $H$.
-A normal Sylow subgroup $N$ with a complement $H$ is the case this arises in for a group of order $\cardinality{N}\cardinality{H}$.
+A normal Sylow subgroup $N$ with a complement $H$ is the case this arises in for a group of order $\size{N}\size{H}$.
 
 [[T-SB6AV]]
 
