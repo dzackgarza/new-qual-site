@@ -21,15 +21,19 @@ Then $I$ is a [[D-LIEMF|free]] $R$-module if and only if $I$ is a [[D-D7VK2|prin
 :::
 
 ::: {.proof}
-Suppose first that $I$ is free with basis $B$, and suppose $B$ contains distinct elements $m_1,m_2$.
+Suppose first that $I$ is free with basis $B$.
+If $I=0$ then $I=\generations 0$ is principal, so suppose $I\neq0$, which makes $B$ nonempty.
+Suppose $B$ contains distinct elements $m_1,m_2$.
 Since $R$ is commutative,
 $$
 (-m_2)\, m_1 + m_1\, m_2 = 0,
 $$
-which is a relation among distinct basis elements with coefficients $-m_2$ and $m_1$, both nonzero because $R$ is a domain.
-This contradicts $B$ being a basis, so $B=\theset m$ has one element and $I=\generators m$ is principal.
+which is a relation among distinct basis elements whose coefficients $-m_2$ and $m_1$ are nonzero, an element of a basis being nonzero.
+This contradicts $B$ being a basis, so $B=\theset m$ has one element and $I=\generations m$ is principal.
 
-Conversely, if $I=\generators m$ with $m\neq0$, then every $x\in I$ is $\alpha m$, and $\alpha m=0$ forces $\alpha=0$ because $R$ is a domain, so $\theset m$ is a basis of $I$.
+Conversely, let $I=\generations m$ be principal.
+If $m=0$ then $I=0$ is free on the empty family.
+If $m\neq0$ then every $x\in I$ is $\alpha m$, and $\alpha m=0$ forces $\alpha=0$ because $R$ is a domain, so $\theset m$ is a basis of $I$.
 :::
 
 ::: {.example}
