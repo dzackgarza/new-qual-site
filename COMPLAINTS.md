@@ -6608,3 +6608,25 @@ p. 109, rendered as page images from `tmp/sources/lfwin-hartshorne-solutions.pdf
 V.4.1, V.4.2, V.4.5 and V.4.6 on printed pp. 406--407, and Corollary 4.5 on printed p. 400. Not read:
 the printed books themselves; Yang's 5.4.3, 5.4.4 and 5.4.8 beyond what the records above say; and no
 search of the literature beyond these files.
+
+## 2026-11-19, fifth item: the last five residue-5 cards without any provenance now cite their retained outlines
+
+**Object.** The entry of this date on the absence claims recorded five residue-5 cards in these collections that carried no provenance sentence at all: `P-CH14-11`, `P-CH15-45`, `P-CH9S-011`, `P-CH9S-051` and `P-ALGFINAL11-05`. Each now opens its solution with the retained set, its entry and its page, and says what the card adds; each carries a new `source-checked` event of this date.
+
+**The five, with the entry read.**
+
+| card | retained set, entry, page | what the outline has, and what the card adds |
+| --- | --- | --- |
+| `P-CH14-11` | `Ch14Sltns.pdf`, "# 11", PDF p. 1 | the three answers $a=1$ (since $1=-2+3$), $a=2$, $a=\gcd(m,n)$, with only the first justified; the card proves $\langle m\rangle+\langle n\rangle=\langle\gcd(m,n)\rangle$ and reads all three parts off it |
+| `P-CH15-45` | `Ch15Sltns.pdf`, "# 45", PDF p. 3 | No, because a kernel is an ideal and $\ZZ$ is not an ideal of $\RR$ ($\pi\cdot1=\pi\notin\ZZ$); the card proves both halves as steps |
+| `P-CH9S-011` | `Ch9Sltns.pdf`, "# 11", PDF p. 1 | $G$, $H$, $K$ and both quotient groups written out; the card separates them by an invariant, $G/H$ cyclic of order 4 against $\exp(G/K)=2$ |
+| `P-CH9S-051` | `Ch9Sltns.pdf`, "# 51", PDF p. 5 | the equivalence under $N\subseteq H$, proved in the two directions; the card gives the same two directions as numbered steps |
+| `P-ALGFINAL11-05` | `final2011-solns.pdf`, Problem 5, PDF p. 2 | the real cube root of $(-1+\sqrt{a^2-4})/2$, the six roots and their distinctness, $F=\QQ(x,\omega)$, the order-six $\psi$, conjugation, $D_{12}$ and the three cubic subfields; the card's twelve steps follow that route |
+
+**One card had no audit key.** `P-ALGFINAL11-05`'s frontmatter carried no `audit:` at all; the event in this pass creates the key. Its solution's first content is the `pf` block, so the provenance sentence is the solution's opening prose.
+
+**Repair.** Five commits, one per card: `P-CH14-11` `97c0aeea3d`, `P-CH15-45` `d08c38e52d`, `P-CH9S-011` `8566ed6c77`, `P-CH9S-051` `5cea82e745`, `P-ALGFINAL11-05` `7baa61fc33`. Checks: `.scratch/report_check.py` on each before its commit, 0 diagnostics; `qualc.authoring check` on each, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh` on each, step numbering and QED labels intact; the pre-commit card-YAML and schema hook on each commit. `P-CH14-11`'s audit list is indented two spaces, and the first insertion was rejected by the YAML parse until it was matched to that indentation — a reminder that this file's audit blocks are not uniformly at column 0.
+
+**What was checked, and not.** Each retained entry was read and compared with the card's answer or route; no card's proof was re-derived. The pages are the retained files' own page numbers.
+
+**Uncertainty.** The claims about what each card "adds" are readings of the two texts side by side, not a step-by-step correspondence; where the outline is a bare answer, the card's proof is its own and the sentence says so.
