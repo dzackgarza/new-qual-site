@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 23, printed p. 420,
+    and Corollary 4.73, printed p. 417. The obstruction argument is right, but the card
+    described the mapping cylinder wrongly: it said the deformation retraction r: W -> Y
+    restricts to "the identity on X", while on X subset W it restricts to i, since X
+    meets Y only in i(X); and it then wrote the pair as (Y, X), which needs X subset Y.
+    Repaired to (Y, i(X)) at both places, which is the pair the retraction really
+    collapses onto and the pair whose exact sequence has i_* in it. An independent report
+    from the swarm flagged the same sentence. Statement unchanged. Not checked: the
+    rest of the card beyond the two sentences and the extension step.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -59,7 +72,7 @@ Prove the following uniqueness result for the Quillen plus construction: Given a
 :::
 
 ::: {.solution}
-Throughout $X$ is a connected CW complex, $Y$ and $Y'$ are connected abelian CW complexes — connected CW complexes on which $\pi_{1}$ acts trivially on every homotopy group — and $i\colon X \to Y$, $i'\colon X \to Y'$ induce isomorphisms on integral homology. $W \coloneqq M_{i}$ is the mapping cylinder of $i$, with $X \subseteq W$ and the deformation retraction $r\colon W \to Y$ restricting to the identity on $X$. The exercise is Hatcher, *Algebraic Topology*, §4.3 Exercise 23.
+Throughout $X$ is a connected CW complex, $Y$ and $Y'$ are connected abelian CW complexes — connected CW complexes on which $\pi_{1}$ acts trivially on every homotopy group — and $i\colon X \to Y$, $i'\colon X \to Y'$ induce isomorphisms on integral homology. $W \coloneqq M_{i}$ is the mapping cylinder of $i$, with $X \subseteq W$ and $Y \subseteq W$; the deformation retraction $r\colon W \to Y$ restricts on $X$ to $i$, not to the identity, since $X$ meets $Y$ only in $i(X)$, so the pair it collapses onto is $(Y,i(X))$ and a map out of $(W,X)$ is the same thing as a map out of $(Y,i(X))$. The exercise is Hatcher, *Algebraic Topology*, §4.3 Exercise 23.
 
 ::: pf
 
@@ -67,7 +80,7 @@ Throughout $X$ is a connected CW complex, $Y$ and $Y'$ are connected abelian CW 
 $W \simeq Y$ and $H_{n}(W, X; \ZZ) = 0$ for every $n$.
 
 ::: pf-proof
-The mapping cylinder contains $Y$ as its top and deformation retracts onto it through maps that fix $X$, so $W \simeq Y$ and even $(W, X) \simeq (Y, X)$. The exact sequence of the pair $(Y, X)$ is $\cdots \to H_{n}(X) \xrightarrow{i_{*}} H_{n}(Y) \to H_{n}(Y,X) \to H_{n-1}(X) \to \cdots$, and $i_{*}$ is an isomorphism in every degree, so each group $H_{n}(Y,X)$ is squeezed between two isomorphisms and vanishes. Since $(W,X) \simeq (Y,X)$, $H_{n}(W,X) = 0$ for all $n$.
+The mapping cylinder contains $Y$ as its top and deformation retracts onto it through maps that fix $X$, so $W \simeq Y$ and even $(W, X) \simeq (Y, i(X))$. The exact sequence of the pair $(Y, i(X))$ is $\cdots \to H_{n}(X) \xrightarrow{i_{*}} H_{n}(Y) \to H_{n}(Y,i(X)) \to H_{n-1}(X) \to \cdots$, and $i_{*}$ is an isomorphism in every degree, so each group $H_{n}(Y,i(X))$ is squeezed between two isomorphisms and vanishes. Since $(W,X) \simeq (Y,i(X))$, $H_{n}(W,X) = 0$ for all $n$.
 
 :::
 
