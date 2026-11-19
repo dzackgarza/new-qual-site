@@ -32,6 +32,7 @@ Show that this need not be a closed subset.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.14, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.14, printed p. 6, gives it in one sentence — a zero germ vanishes on a neighbourhood — and adds the example of the exercise's second paragraph, a direct sum of skyscraper sheaves on a non-closed set, which the card does not repeat.
 
 ::: pf
 
