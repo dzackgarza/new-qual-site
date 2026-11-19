@@ -659,6 +659,27 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    re-read; §4.2 exercises 11–14 and 17–39; and §4.3 exercises 1–24. Fifty-four of the 97 proofs still stand as this
    item lists them. Exercises 10–24 of §4.3 were under an independent examination whose working notes are under
    `.ultramath/`; nothing from it has been accepted or transcribed into a card.
+
+   **2026-11-19, the second reader's pass finished: all 97 read, 21 repaired.** The remaining 54 of the set are now read.
+   `E-HAT-4.D-5`, `-6` and `-8` were re-read first-hand rather than taken from the reading above and are correct: the Gysin
+   sequence forces $k+1=n$ and the identity $\Phi(e)=U\smile U$ makes the Hopf invariant $\pm1$; the circle bundle over
+   $M^{2n}$ gives $H^1(M)=0$ and $\smile e$ an isomorphism, hence $H^*(M)=\ZZ[e]/(e^{n+1})$, with the converse by
+   classifying $\alpha$ in $H^2(M)$ by a map to $\CP^\infty$; and $T(B\times D^n)=B_+\wedge S^n=\Sigma^nB_+$, so the
+   Thom isomorphism is the suspension isomorphism shifted. §4.2 exercises 11–14 and 17–29 were read against printed
+   pp. 389–392, with the published solutions used where they exist: Proudfoot's Homework #7 for 30, 31 and 32, and
+   Sam's 2008 set for 12, 18, 20, 22, 23, 26, 27, 28, 33 — several of those cards had asserted that no retained set
+   covered them, which was false, and now carry the citation. §4.3 1–9 were read against printed pp. 419–420.
+
+   Repairs in that stretch, one commit each, in the order they were made: `E-HAT-3.F-6` (`6b9c906473`), `-8`
+   (`5ad4fec69b`), `-9` (`8035ccd488`), `E-HAT-4.1-15` (`fe0e93ba8e`), `E-HAT-4.3-10` (`6f0619ceaf`, sharpened at
+   `b60a814b8c`), `-11` (`f369a21dda`), `-12` (`77cf2abb32`), `-13` (`a72e3558ff`), `-14` (`bb147994a8`), `-16`
+   (`feda684960`), `-18` (`9696ea9952`), `-20` (`f981a13c75`, corrected at `42da6071d8`), `-21` (`5b8a2d0e40`), `-22`
+   (`2fd9673b7e`), `-23` (`d448470c54`), `-24` (`2f01bfab8d`), `-5` (`6e3510538e`), and in §4.2 `-12` (`4dbad0f50d`),
+   `-18` (`f5767056af`), `-20` (`37e6b471eb`), `-23` (`87523ed825`), `-24` (`879bbb7ed4`), `-26` (`12910ce273`), `-28`
+   (`b66a844c92`), `-31` (`3cc95acdc8`), `-32` (`c0c2c5dd6e`), `-38` (`6bac164222`). One card is read with a lighter
+   check than the rest and is named here rather than left implicit: `E-HAT-4.2-34`, whose triviality half was verified in
+   detail and whose nontriviality half rests on $C_p\simeq\CP^2$ with $x^2\ne0$ and on $H^2(C_f)\cong H^2(S^2)\oplus H^1(T^3)$;
+   both were then checked, so the card stands as read, but no step of it was recomputed from scratch.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
