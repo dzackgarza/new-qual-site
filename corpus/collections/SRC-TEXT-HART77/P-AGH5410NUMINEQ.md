@@ -315,6 +315,20 @@ audit:
     two coefficients -3/4 and (1/2)(b_2+b_3+b_4+b_5); and the printed NTU line
     at printed p. 17. Not checked: no source outside answer 2476483, NTU
     Exercise 10 and Hartshorne V.4.10 with (4.13)(a) was read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: one rendered sentence identified the exercise's hypotheses with
+    (4.13)(a) "with the pair condition read for i not equal to j" without
+    saying that this is not what the book prints. Hartshorne prints the pair
+    condition for each i,j, in (4.13)(a) on printed p. 406 and in V.4.10 on
+    printed p. 408, so the i not equal to j reading is weaker than the printed
+    hypothesis and the argument proves slightly more than the exercise asks;
+    the head now says so. Read for this event: the two printed statements in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and the answer's own
+    parenthetical interpreting the condition for i not equal to j. No other
+    sentence changes.
 ---
 
 ::: {.problem}
@@ -324,10 +338,11 @@ Prove this directly (for $a, b_1, \ldots, b_6 \in \RR$) using methods of freshma
 
 ::: {.solution}
 
-The exercise's hypotheses are the conditions of (4.13)(a) of the book for the class
-$D=a\ell-\sum_ib_ie_i$ on the cubic surface, with the pair condition read for $i\ne j$, and its
-conclusion $a^2-\sum_ib_i^2>0$ is $D^2>0$; the exercise asks for integers and then for real
-$a,b_1,\ldots,b_6$.
+The exercise's hypotheses are those of (4.13)(a) of the book for the class
+$D=a\ell-\sum_ib_ie_i$ on the cubic surface, read with the pair condition for $i\ne j$, which is
+weaker than the printed condition for each $i,j$ and so makes the argument prove slightly more than
+the exercise asks; its conclusion $a^2-\sum_ib_i^2>0$ is $D^2>0$; the exercise asks for integers and
+then for real $a,b_1,\ldots,b_6$.
 
 Math StackExchange question 2475661, answer 2476483 (Dap, 2017-10-17), orders the variables
 increasingly and supplies the maximiser analysis of steps [](#ordered-hypotheses){.pf-ref} to
