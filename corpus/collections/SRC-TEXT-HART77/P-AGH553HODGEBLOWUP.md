@@ -44,6 +44,31 @@ audit:
     isomorphism makes source and target have equal dimension. Hence it is an
     isomorphism, the connecting map from k vanishes, and the resulting short
     exact sequence in H^1 splits as k-vector spaces.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.5.3, printed p. 113, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.5.3, printed
+    p. 419, asks for H^1(X-tilde, Omega) = H^1(X, Omega) + k for a monoidal
+    transformation, with the hint of the projection formula, the sequence
+    0 -> pi^* Omega_X -> Omega_X-tilde -> Omega_X-tilde/X -> 0, the
+    identification of the last term with Omega_E, and Serre duality.
+    Recomputed: H^0(Omega_E) = H^0(P^1, O(-2)) = 0 and
+    H^1(Omega_E) = k; and that the vanishing of the connecting map needs
+    H^2(Omega_X) -> H^2(Omega_X-tilde) injective, which Serre duality and the
+    birational invariance of h^1(O) give as an isomorphism. Not checked: Yang's
+    Solutions outside printed pp. 113-114, and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.5.3 at printed p. 113 as the
+    book's hint carried out, with the one step it quotes rather than computes,
+    the identification Omega_X-tilde/X = Omega_E. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -426,4 +451,6 @@ Step [](#direct-sum-splitting){.pf-ref} gives the required direct sum.
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.3, printed p. 298 (Hodge numbers under a monoidal transformation).
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.5.3, printed p. 113, carries out the book's hint. The projection formula (III, Ex. 8.3) with (III, Ex. 8.1) gives $H^i(\widetilde X,\pi^*\Omega_X)\cong H^i(X,\pi_*\pi^*\Omega_X)\cong H^i(X,\Omega_X)$; the sequence $0\to\pi^*\Omega_X\to\Omega_{\widetilde X}\to\Omega_{\widetilde X/X}\to0$ with $\Omega_{\widetilde X/X}\cong\Omega_E$ gives the long exact sequence, in which $H^0(\Omega_E)=H^0(\PP^1,\OO(-2))=0$ and $H^1(\Omega_E)=H^1(\PP^1,\OO(-2))=k$; and Serre duality with the birational invariance of $h^1(\OO)$ makes $H^2(X,\Omega_X)\to H^2(\widetilde X,\Omega_{\widetilde X})$ an isomorphism, so that $0\to H^1(X,\Omega_X)\to H^1(\widetilde X,\Omega_{\widetilde X})\to k\to0$ is exact and splits as $k$-vector spaces. The identification $\Omega_{\widetilde X/X}\cong\Omega_E$ is quoted rather than computed: that is the local calculation the hint asks for, and the card's own step carries it out.
 :::
