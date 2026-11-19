@@ -365,6 +365,7 @@ audit:
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.10 (Fibres of a Morphism), printed pp. 28--29 of the held scan, transcribed and checked against the exercise as printed: the identification of $X\times_S\Spec k(y)$ with $f^{-1}(y)$ on the underlying space, the commutativity of the square through $B\otimes_Ak\to\Spec A$, and parts (a) to (c) -- that $f^{-1}(U)$ is a closed immersion with $f^{-1}(U)=V(AI)$, the same for $X'\\to X$, and the affine case -- together with the qualification the exponent's argument needs.
 The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 2.3.10, PDF p. 23; the Cais solutions, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194.
 
 ::: pf
