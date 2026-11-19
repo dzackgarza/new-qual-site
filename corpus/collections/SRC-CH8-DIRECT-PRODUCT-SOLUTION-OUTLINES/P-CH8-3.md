@@ -25,6 +25,16 @@ audit:
   date: 2026-11-06
   note: >-
     The retained outline's map g to (g, e_H), its homomorphism check, its kernel computation and its surjectivity are kept verbatim in substance and written as two symmetric steps; the conclusion records the copy-of-each-factor reading.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Gallian, Contemporary Abstract Algebra, seventh edition, Chapter 8
+    Exercise 3, printed p. 167 (file p. 182 of the retained copy, whose running head on that
+    page is 167). The printed exercise is the card's statement word for word, so no repair
+    was needed; the solution's opening sentence now names the exercise and the page. Not
+    checked in this pass: the argument, which the edit does not touch.
+
 ---
 
 ::: {.problem}
@@ -32,6 +42,9 @@ Let $G$ be a group with identity $e_{G}$ and let $H$ be a group with identity $e
 :::
 
 ::: {.solution}
+
+In the seventh edition this is Chapter 8 Exercise 3, printed p. 167, where the printed
+words are the statement below.
 
 Let $G,H$ be groups with identities $e_G,e_H$, and let $G\oplus\{e_H\}$ and
 $\{e_G\}\oplus H$ carry the componentwise operations of the external direct
