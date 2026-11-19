@@ -36,6 +36,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the construction: the two faces of $\Delta^3$ form a square whose order-preserving edge identifications give the Klein bottle's presentation, and the deformation retraction commutes with them; the other identifications are given by the same square with different gluing words.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §2.1, printed p. 131. Correct: the two faces
+    $[v_0,v_1,v_3]$ and $[v_0,v_2,v_3]$ form a square with boundary $v_0\to v_1\to v_3\to v_2\to v_0$,
+    the remaining two faces form an open book on $[v_1,v_2]$ so the tetrahedron deformation retracts
+    onto the square compatibly with identifications among its boundary edges, and the stated pairings
+    give the word $a^2b^{-2}$, i.e. $a^2b^2$ after $b\mapsto b^{-1}$, the Klein-bottle polygon. The
+    three further examples were checked by their words: $aba^{-1}b^{-1}$ for the torus,
+    $aa^{-1}bb^{-1}$ for the sphere (after cancelling the bigons), and for $\RP^2$ a collapse to
+    $e^0\cup_2e^1\cup e^2$. Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
