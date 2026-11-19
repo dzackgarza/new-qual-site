@@ -12,6 +12,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the statement, including the printed instruction to prove
+    the Hilbert basis theorem rather than invoke it, against the paper's text layer at the page
+    named; the solution read for the leading-coefficient argument for R[x] and the
+    coefficient-ideal argument for R[[x]]; `qualc.authoring check` on the card, and `tmp/lam.sh` for
+    the numbering and the QED. Not checked: no retained solution set exists for this paper to
+    compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -42,7 +56,7 @@ Prove that $R[x]$ and $R[[x]]$ are both Noetherian.
 
 
 ::: {.solution}
-For $R[x]$ the proof is the classical one: the ideals $L_d$ of leading coefficients of elements of $I$ of degree $d$ form an ascending chain, which stabilizes at some $N$, and finitely many elements lifting generators of $L_0,\dots,L_N$ generate $I$ by induction on degree. For $R[[x]]$ the same idea is applied to the ideals $J_n$ of coefficients of $x^n$ in elements of $I$ whose lowest term is $x^n$; after the chain stabilizes one cancels coefficients degree by degree, and the corrections assemble into formal series. The argument is this card's own: no retained solution set covers this exam, and the Hilbert basis theorem is proved here rather than invoked.
+For $R[x]$ the proof is the classical one: the ideals $L_d$ of leading coefficients of elements of $I$ of degree $d$ form an ascending chain, which stabilizes at some $N$, and finitely many elements lifting generators of $L_0,\dots,L_N$ generate $I$ by induction on degree. For $R[[x]]$ the same idea is applied to the ideals $J_n$ of coefficients of $x^n$ in elements of $I$ whose lowest term is $x^n$; after the chain stabilizes one cancels coefficients degree by degree, and the corrections assemble into formal series. The argument is this card's own: Problem 1 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`, is the statement answered here, no retained solution set covers it, and the Hilbert basis theorem is proved here rather than invoked.
 
 ::: pf
 
