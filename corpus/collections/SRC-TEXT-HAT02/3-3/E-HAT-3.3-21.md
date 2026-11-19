@@ -442,6 +442,28 @@ audit:
     set as the counterexample to uniform radial scaling; Stanford, printed p. 1, and Kottke,
     Problem 2, printed p. 2; Frankland's Theorems 1.2 and 1.3, printed p. 2. Not checked: the
     Eda--Kawamura and Wiegold papers were not re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the item the last report left unverified: the two papers the
+    degree-two counterexample rests on were read at the pages the card cites.
+    Eda--Kawamura, Theorem 3.1, printed p. 307, states that for an index set I
+    of infinite cardinality and kappa = |I^N|, H_1(H_I) is isomorphic to
+    prod^sigma_I Z + prod_{p prime} A_p + direct-sum_kappa Q, where A_p is the
+    p-adic completion of direct-sum_kappa J_p; for I = N, kappa is the
+    continuum, so the direct-sum_kappa Q is the Q direct summand the step uses.
+    The proof is on printed p. 310 ("Proof of Theorem 3.1"), where Ker(sigma) is
+    a direct summand isomorphic to p-part plus direct-sum_kappa Q by Lemma 3.4
+    ("The maximal divisible subgroup of Ker(sigma) is isomorphic to
+    direct-sum_kappa Q"). Wiegold, printed pp. 341--342: the title is the
+    result, and the last paragraph concludes that Ext(Q,Z) is torsion-free and
+    divisible of the cardinal of the continuum, hence isomorphic to the
+    additive group of R; the conclusion stands on printed p. 342. Both are as
+    the card says, so the degree-two step's two citations are confirmed at their
+    printed pages and nothing on the card changes. Not checked: the rest of
+    either paper, and no other source bearing on the bracketed question was
+    searched this pass.
 
 ---
 
