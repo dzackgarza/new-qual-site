@@ -259,6 +259,24 @@ audit:
     algebraically closed field; (c) at g at least 2 remains characteristic
     zero. Not checked: no source outside those already on the card was read,
     and the steps were checked for their field hypotheses, not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) at g at least 2 is now proved in every characteristic, and the card
+    no longer depends on Lange--Narasimhan for it. The argument is the one the
+    printed hint asks for: for d = -e with 1 <= d <= g and D of degree d,
+    extension classes lie in V = H^1(O(-D)) of dimension g-1+d. For an
+    effective E of degree d-1 the bad classes are ker(beta_E), of dimension
+    d-1, since h^0(K+D-E) = g by Riemann--Roch at degree 2g-1. For d at least
+    2 the bad pairs form a family of dimension (d-1)+(d-2) = 2d-3 in P V, and
+    for d = 1 the only E is 0, whose kernel is zero; since 2d-3 < g-2+d for
+    d <= g, a general class avoids every kernel. Part (b) makes the extension
+    normalized, and a nonzero class makes it indecomposable because a splitting
+    would realize O_C and O_C(D) as summands. Checked: the dimensions and the
+    inequality, and that the determinant is O_C(D). The Lange--Narasimhan
+    Corollary 1.2 route is kept in the remark as the characteristic-zero
+    alternative. No statement changes.
 ---
 
 ::: {.problem}
@@ -296,7 +314,7 @@ H^0(C,\mathcal E)\ne0
 $$
 but $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, Proposition 2.8, printed p. 372, and that for such a bundle the invariant of $X=\PP(\mathcal E)$ is $e=-\deg\det\mathcal E$, Notation 2.8.1, printed p. 373.
 
-Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74, and Theorem 14, printed pp. 87--90, together with the duality half of Hartshorne's proof of Theorem 2.12, printed p. 376; part (b) from Proposition 1.1, printed p. 57, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15, printed pp. 377--379; part (c) from their Corollary 1.2, printed p. 58, with Example 2.11.6, printed p. 375, for genus one; part (d) from Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2 Theorem, printed pp. 267--268. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so. The arguments of parts (a) and (b) use only $\Ext^1\cong H^1$, Serre duality and the pullback square, so they hold over an algebraically closed field of any characteristic; part (c) for $g\ge2$ is the one place the characteristic-zero hypothesis is used.
+Part (a) is transcribed from Gunning, *Lectures on vector bundles over Riemann surfaces*, Theorem 13, printed pp. 71--74, and Theorem 14, printed pp. 87--90, together with the duality half of Hartshorne's proof of Theorem 2.12, printed p. 376; part (b) from Proposition 1.1, printed p. 57, of Lange and Narasimhan, *Maximal subbundles of rank two vector bundles on curves*, whose statement is the criterion that the printed "Cf. proof of (2.15)" points at, that is the proof of Theorem 2.15, printed pp. 377--379; part (c) from the card's avoidance argument for $g\ge2$, with Lange and Narasimhan's Corollary 1.2, printed p. 58, as the characteristic-zero alternative, and Example 2.11.6, printed p. 375, for genus one; part (d) from Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2 Theorem, printed pp. 267--268. Lange and Narasimhan work over an algebraically closed field of characteristic zero and Gunning over a compact Riemann surface; where a quoted statement's hypotheses are narrower than the exercise's, the step that quotes it says so. The arguments of parts (a), (b) and (c) use only $\Ext^1\cong H^1$, Serre duality, the pullback square and the dimension count of step $s9$, so all four parts hold over an algebraically closed field of any characteristic.
 
 ::: pf
 
@@ -437,15 +455,11 @@ There is a line bundle $\mathcal M$ of negative degree and a nonzero morphism $\
 If $-g\le e<0$ and $g\ge2$, there is a ruled surface over $C$ with invariant $e$. This is part (c) for $g\ge2$.
 
 ::: pf-proof
-Put $d=-e$, so $1\le d\le g$, and let $L_1,L_2$ be line bundles with $\deg L_1=d$ and $\deg L_2=2d$. Corollary 1.2 of Lange and Narasimhan, printed p. 58, applies with $0<c_1(L_2)-c_1(L_1)=d\le g$ and produces an extension
+Put $d=-e$, so $1\le d\le g$, and fix a divisor $D$ of degree $d$. An extension
 $$
-0\longrightarrow L_1\longrightarrow\mathcal E\longrightarrow L_2\longrightarrow0
+0\longrightarrow\OO_C\longrightarrow\mathcal E\longrightarrow\OO_C(D)\longrightarrow0
 $$
-whose maximal subbundle degree is $d$, and its proof is a dimension count: $\dim\mathrm{Sec}_{d-2}(X)\le2d-3<g+d-2=\dim\PP$ in the notation of its §1, which is the count the exercise's hint asks for. Tensoring by $L_1^{-1}$ gives
-$$
-0\longrightarrow\OO_C\longrightarrow\mathcal E\tensor L_1^{-1}\longrightarrow L_2L_1^{-1}\longrightarrow0,
-$$
-in which the maximal subbundle degree has dropped to $0$; so $\mathcal E\tensor L_1^{-1}$ is normalized, having a nonzero section and no nonzero section after a negative twist. Its determinant is $L_2L_1^{-1}$ of degree $d$, so $\PP(\mathcal E\tensor L_1^{-1})$ has invariant $-d=e$ by Notation 2.8.1, printed p. 373. Corollary 1.2 is stated for $g\ge2$ over an algebraically closed field of characteristic zero; the genus-one case is step [](#s10){.pf-ref}.
+is determined by its class in $V=H^1(C,\OO_C(-D))$, a vector space of dimension $g-1+d$ by Riemann--Roch and Serre duality. For an effective divisor $E$ of degree $d-1$, the classes for which $L_E\subseteq H$ are the kernel of the pullback map $\beta_E\colon V\to H^1(C,\OO_C(-E))$ of step [](#s6){.pf-ref}, a linear subspace. Since $\deg(K_C+D-E)=2g-1$, Riemann--Roch gives $h^0(K_C+D-E)=g$; hence $\ker\beta_E$ has dimension $(g-1+d)-g=d-1$. For $d\ge2$ the pairs $(E,\xi)$ with $\xi\in\ker\beta_E$ form a family of dimension $(d-1)+(d-2)=2d-3$ in $\PP V$, and for $d=1$ the only effective $E$ is $0$, whose kernel is zero. Since $2d-3<g-2+d=\dim\PP V$ for $d\le g$, a general $\xi$ lies in no such kernel. By part (b) the extension is normalized, and a nonzero $\xi$ makes it indecomposable: a splitting would realize $\OO_C$ and $\OO_C(D)$ as summands. Its determinant is $\OO_C(D)$ of degree $d$, so $\PP(\mathcal E)$ has invariant $-d=e$ by Notation 2.8.1, printed p. 373. This is the avoidance argument the printed hint asks for; the genus-one case is step [](#s10){.pf-ref}.
 
 :::
 
@@ -480,7 +494,7 @@ the maximum over the sublinebundles $\mathcal L\subseteq\mathcal E$, and proves 
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) over an algebraically closed field of any characteristic: the construction uses only $\Ext^1\cong H^1$ and Serre duality, and Gunning's Theorems 13 and 14 state the same identifications over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of any characteristic: [](#s5){.pf-ref} and [](#s6){.pf-ref} identify the extension class by Serre duality, and [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and run the pullback square, reaching also the cases $d=1$ and $g=1$ that the proposition's hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ over a field of characteristic zero, from Corollary 1.2, and for $g=1$ from Example 2.11.6. Step [](#s11){.pf-ref} proves part (d) from the statement of Lange's Theorem $s(\mathcal E)\le g$, stated over an algebraically closed field of arbitrary characteristic.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a) over an algebraically closed field of any characteristic: the construction uses only $\Ext^1\cong H^1$ and Serre duality, and Gunning's Theorems 13 and 14 state the same identifications over a compact Riemann surface. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (b) over an algebraically closed field of any characteristic: [](#s5){.pf-ref} and [](#s6){.pf-ref} identify the extension class by Serre duality, and [](#s7){.pf-ref} and [](#s8){.pf-ref} are the card's own and run the pullback square, reaching also the cases $d=1$ and $g=1$ that the proposition's hypotheses exclude. Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c) for $g\ge2$ by the avoidance argument and for $g=1$ from Example 2.11.6, both characteristic-free. Step [](#s11){.pf-ref} proves part (d) from the statement of Lange's Theorem $s(\mathcal E)\le g$, stated over an algebraically closed field of arbitrary characteristic.
 
 :::
 
@@ -493,7 +507,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 
 (b) Lange and Narasimhan, Proposition 1.1, printed p. 57, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, printed pp. 377--379, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; the two directions in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square, so part (b) holds over any algebraically closed field, and they carry those two cases.
 
-(c) Their Corollary 1.2, printed p. 58, gives for $g\ge2$ and $0<c_1(L_2)-c_1(L_1)=s\le g$ an extension with $s(E)=s$; with line bundles of degrees $d$ and $2d$, $d=-e$, its twist by the inverse of the subbundle has invariant $e$. Their proof is the dimension count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$ that the exercise's hint asks for, over a field of characteristic zero.
+(c) Step [](#s9){.pf-ref} proves the existence for $g\ge2$ in every characteristic by the avoidance argument the hint names: the bad classes for the effective divisors $E$ of degree $d-1$ form a family of dimension $2d-3$ in $\PP H^1(\OO(-D))$, which has dimension $g-2+d$, and $2d-3<g-2+d$ because $d\le g$; a general class is therefore normalized, and a nonzero class is indecomposable. Lange and Narasimhan's Corollary 1.2, printed p. 58, gives the same existence for $g\ge2$ over characteristic zero by the secant-variety count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$.
 
 (d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2, printed pp. 267--268, proves $s(E)\le g$ for every rank-two bundle, over an algebraically closed field of arbitrary characteristic; for a normalized bundle $s(E)=\deg\det E=-e$, so $e\ge-g$, and $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8].
 
