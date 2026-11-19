@@ -125,7 +125,7 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Arthur Ogus, Math 256B (2017)](https://math.berkeley.edu/~ogus/Math_256B-2017/index.html): Berkeley course page.
 
-### Foundational texts
+### Foundational texts: links to editions and scans
 
 - [Grothendieck, *Fondements de la Géométrie Algébrique* (FGA)](http://www.math.jussieu.fr/~leila/grothendieckcircle/FGA.pdf)
 
