@@ -27,6 +27,8 @@ Construct free resolutions of $M,N$ to compute:
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
 Let $R=\ZZ[x,y]$, $M=R/(x-y)$, and $N=R/(x,y)$.
 
 ::: pf

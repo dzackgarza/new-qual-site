@@ -32,6 +32,8 @@ Here we are assuming that $\operatorname{char} F$ is $\neq 2$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Let
 $$
 F\subset K\subset E=F(\theta)

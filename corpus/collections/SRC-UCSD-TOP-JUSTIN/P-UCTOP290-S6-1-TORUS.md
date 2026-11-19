@@ -38,6 +38,8 @@ inside it.” Describe generators.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 Let $X$ be the torus $T^2$ with a closed disc $D$ attached along a circle
 $\gamma\subset T^2$, and let $X$ be built as a cell complex: triangulate $T^2$
 so that $\gamma$ is a subcomplex, triangulate $D$ so that its boundary matches

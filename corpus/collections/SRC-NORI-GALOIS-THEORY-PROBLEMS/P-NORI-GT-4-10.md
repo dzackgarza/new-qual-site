@@ -26,6 +26,8 @@ Do you know what $F[X]^{\sigma}$ and $F(X)^{\sigma}$ are?
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Let
 $$
 L=F(X)

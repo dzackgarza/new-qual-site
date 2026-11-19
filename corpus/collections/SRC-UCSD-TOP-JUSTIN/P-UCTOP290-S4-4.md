@@ -49,6 +49,8 @@ is a homomorphism.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
 Let $G$ be a path-connected, locally path-connected topological group with multiplication $m$ and inversion $i$, let $p\colon\widetilde G\to G$ be a path-connected covering, and fix $\tilde e\in p^{-1}(e)$; write $H=p_*\pi_1(\widetilde G,\tilde e)\leq\pi_1(G,e)$.
 
 ::: pf

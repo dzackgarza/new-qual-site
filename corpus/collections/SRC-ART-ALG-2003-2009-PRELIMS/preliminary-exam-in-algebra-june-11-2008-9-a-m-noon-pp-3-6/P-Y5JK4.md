@@ -26,6 +26,8 @@ Show that every coset of $I$ in $\ZZ[i]$ contains an element of norm less than $
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

@@ -33,6 +33,8 @@ Show that there is some $b \in F$ such that $L = K(b^{1/p})$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Let
 $$
 m=\abs{G}=[K:F].

@@ -23,6 +23,8 @@ Let $X$ be the topological space built in problem PP.2. Describe a $\Delta$-comp
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sets alone, so the argument is the card's own.
+
 Use the same quarter-turn face identifications and the same oriented CW cells
 $$
 A,B;\qquad p,q,r,s;\qquad F_x,F_y,F_z;\qquad C

@@ -22,6 +22,8 @@ Use cellular chain complexes to compute the homology of the solid triangular pri
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #shape}

@@ -24,6 +24,8 @@ The three polygon diagrams appear on page 1 of the source sheet.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: pf-step

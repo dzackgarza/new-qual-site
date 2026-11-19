@@ -34,6 +34,8 @@ So, state precisely where you appeal to this thm.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Define
 $$
 \rho:\operatorname{Gal}(EK/E)\to\operatorname{Gal}(K/K\cap E),

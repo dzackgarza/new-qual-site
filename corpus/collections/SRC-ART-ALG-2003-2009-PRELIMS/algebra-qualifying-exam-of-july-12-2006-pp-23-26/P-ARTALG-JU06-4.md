@@ -30,6 +30,8 @@ If $p$ is a prime, $k$ is a positive integer and $G$ is a group of order $p^k$, 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

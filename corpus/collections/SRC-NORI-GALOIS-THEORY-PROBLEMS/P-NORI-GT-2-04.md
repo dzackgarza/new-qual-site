@@ -23,6 +23,8 @@ Let $x_{1}, x_{2}, x_{3} \in F$. Find a monic degree eight $f \in F[X]$ which ha
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Put
 $$
 a=x_1,

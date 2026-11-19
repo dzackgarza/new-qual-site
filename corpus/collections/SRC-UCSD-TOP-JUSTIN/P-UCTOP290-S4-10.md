@@ -46,6 +46,8 @@ quotient is a $3$-manifold.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 Write $C=I^3$ for the cube with coordinates $(x,y,z)$, where $x$ runs from the
 left face to the right face, and let $\rho(y,z)=(1-z,y)$ be the quarter turn
 of the square $I^2$ about its centre.

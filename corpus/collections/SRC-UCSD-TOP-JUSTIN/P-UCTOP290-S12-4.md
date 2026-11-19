@@ -19,6 +19,8 @@ Show that $S^1 \times S^1$ and $S^1 \vee S^1 \vee S^2$ are not homotopy-equivale
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

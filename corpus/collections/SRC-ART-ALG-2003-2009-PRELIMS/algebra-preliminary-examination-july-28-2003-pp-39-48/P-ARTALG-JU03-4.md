@@ -33,6 +33,8 @@ Find all possible orders for $K$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
 The prime field is $\FF_2$. The possible subfield orders are
 $$
 \boxed{2,\quad4,\quad32,\quad1024},

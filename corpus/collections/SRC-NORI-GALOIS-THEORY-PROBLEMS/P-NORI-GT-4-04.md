@@ -32,6 +32,8 @@ Hint: Consider $h = \operatorname{Norm}_{F[X]}^{E[X]}(f)$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem sheet alone, so the argument is the card's own.
+
 Let
 $$
 w_1,\ldots,w_n
