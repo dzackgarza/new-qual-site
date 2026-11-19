@@ -12,6 +12,14 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/AlgebraSept2019solutions.pdf`: the statement is Problem 3 of the September 2019 algebra qualifying examination, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -26,6 +34,7 @@ Deduce for a semisimple ring $R$ that $eRe$ is semisimple too.
 :::
 
 ::: {.solution}
+This is Problem 3 of the September 2019 algebra qualifying examination, retained in this repository as `assets/attachments/AlgebraSept2019solutions.pdf`; the statement below is its wording.
 
 ::: pf
 
