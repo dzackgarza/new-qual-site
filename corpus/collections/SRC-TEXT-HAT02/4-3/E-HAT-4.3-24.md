@@ -54,7 +54,7 @@ Show that the obstructions to finding a homotopy rel $A$ between these two lifts
 :::
 
 ::: {.solution}
-Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $f_0\restrictionof{A}=f_1\restrictionof{A}$. "The situation of the relative lifting problem" is the one set up on printed p. 418, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 (printed p. 415) holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
+Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. "The situation of the relative lifting problem" is the one set up on printed p. 418, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 (printed p. 415) holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
 Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
 
 $$
@@ -66,12 +66,12 @@ For $n\ge 1$ the coefficient system written $\pi_nF$ in $H^k(W,A;\pi_nF)$ is the
 ::: pf
 
 ::: {.pf-step #cylinder}
-A homotopy rel $A$ from $f_0$ to $f_1$ all of whose levels are lifts of $g$ is the same thing as a solution of the relative lifting problem of Hatcher §4.3 for the CW pair $(W\times I,B)$, the fibration $p$, the map $G$, and the partial lift $h_0\colon B\to X$ of $G\restrictionof{B}$ given by $h_0(w,0)=f_0(w)$, $h_0(w,1)=f_1(w)$ and $h_0(a,t)=f_0(a)$ for $w\in W$, $a\in A$ and $t\in I$.
+A homotopy rel $A$ from $f_0$ to $f_1$ all of whose levels are lifts of $g$ is the same thing as a solution of the relative lifting problem of Hatcher §4.3 for the CW pair $(W\times I,B)$, the fibration $p$, the map $G$, and the partial lift $h_0\colon B\to X$ of $\restrictionof{G}{B}$ given by $h_0(w,0)=f_0(w)$, $h_0(w,1)=f_1(w)$ and $h_0(a,t)=f_0(a)$ for $w\in W$, $a\in A$ and $t\in I$.
 
 ::: pf-proof
-On $A\times\{0\}$ the first and the third formula both give $f_0(a)$, and on $A\times\{1\}$ the second gives $f_1(a)$ while the third gives $f_0(a)$, which is the same since $f_0\restrictionof{A}=f_1\restrictionof{A}$. The three closed sets $W\times\{0\}$, $A\times I$ and $W\times\{1\}$ cover $B$, so the pasting lemma makes $h_0$ a well-defined continuous map. It lifts $G\restrictionof{B}$: $p h_0(w,0)=p f_0(w)=g(w)=G(w,0)$ and $p h_0(w,1)=p f_1(w)=g(w)=G(w,1)$ because $f_0$ and $f_1$ lift $g$, and $p h_0(a,t)=p f_0(a)=g(a)=G(a,t)$.
+On $A\times\{0\}$ the first and the third formula both give $f_0(a)$, and on $A\times\{1\}$ the second gives $f_1(a)$ while the third gives $f_0(a)$, which is the same since $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. The three closed sets $W\times\{0\}$, $A\times I$ and $W\times\{1\}$ cover $B$, so the pasting lemma makes $h_0$ a well-defined continuous map. It lifts $\restrictionof{G}{B}$: $p h_0(w,0)=p f_0(w)=g(w)=G(w,0)$ and $p h_0(w,1)=p f_1(w)=g(w)=G(w,1)$ because $f_0$ and $f_1$ lift $g$, and $p h_0(a,t)=p f_0(a)=g(a)=G(a,t)$.
 
-A continuous $H\colon W\times I\to X$ with $pH=G$ and $H\restrictionof{B}=h_0$ gives the homotopy $H_t(w)=H(w,t)$, which satisfies $H_0=f_0$, $H_1=f_1$, $H_t(a)=h_0(a,t)=f_0(a)$ for $a\in A$ and $pH_t=g$. Conversely a homotopy $H_t$ rel $A$ from $f_0$ to $f_1$ through lifts of $g$ gives the continuous map $H(w,t)=H_t(w)$, which satisfies $pH=G$ and restricts to $h_0$ on $B$. The two passages are inverse to each other, both being the correspondence between a map on $W\times I$ and the family of its restrictions to the slices $W\times\{t\}$.
+A continuous $H\colon W\times I\to X$ with $pH=G$ and $\restrictionof{H}{B}=h_0$ gives the homotopy $H_t(w)=H(w,t)$, which satisfies $H_0=f_0$, $H_1=f_1$, $H_t(a)=h_0(a,t)=f_0(a)$ for $a\in A$ and $pH_t=g$. Conversely a homotopy $H_t$ rel $A$ from $f_0$ to $f_1$ through lifts of $g$ gives the continuous map $H(w,t)=H_t(w)$, which satisfies $pH=G$ and restricts to $h_0$ on $B$. The two passages are inverse to each other, both being the correspondence between a map on $W\times I$ and the family of its restrictions to the slices $W\times\{t\}$.
 :::
 
 :::
