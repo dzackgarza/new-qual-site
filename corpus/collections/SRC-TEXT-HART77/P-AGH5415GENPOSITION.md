@@ -581,6 +581,26 @@ audit:
     density step, the qed and the part-c-open step qualified to say (c) is
     proved for r <= 7 and open for r >= 8. No other step changes: (a), (b),
     (d) and (e) and the numbers 56 and 240 are untouched.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A reading in the step above corrected. Dolgachev's general-position
+    definition on printed p. 251 lists four conditions, and the step first cited
+    all four for every N <= 8; but at N <= 7 the fourth is automatic: a cubic
+    singular at one of the N points and through the other N-1 meets 3 + (N-1)
+    conditions on the 10 coefficients of a cubic, so one exists for every
+    position of the points, and a condition that always holds cannot be part of
+    a criterion that fails. The criterion at N <= 7 is therefore (i)-(iii), no
+    three collinear and no six on a conic, which is the standard statement; the
+    printed (iv) bites only at N = 8, where the count is square (8 + 2 = 10),
+    and that is the case the step now excludes. Read for this event: Dolgachev
+    printed p. 251 (PDF p. 261) again, both the definition and the sufficiency
+    argument of Proposition 8.1.9, which removes the last point and checks that
+    it lies on no (-2)-curve, the lines through three and the conics through
+    five of the remaining ones being what conditions (ii) and (iii) exclude
+    there. Not checked: whether the book states the N <= 7 reading in so many
+    words elsewhere, and the printed volume itself.
 
 ---
 
