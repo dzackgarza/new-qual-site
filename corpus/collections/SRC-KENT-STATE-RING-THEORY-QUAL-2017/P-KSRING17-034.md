@@ -15,6 +15,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 34 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) I is closed under addition because the sum of
+    two functions tending to 0 does, and under multiplication by any element of S because a bounded
+    factor does not disturb the limit; so I is an ideal, and it is not the unit ideal since the
+    constant function 1 is not in I. (b) from i(t)x(t) = x(t) one gets (i(t)-1)x(t) = 0, and where
+    |i(t)| < 1/2 the factor i(t)-1 is nonzero, so x(t) = 0 there; since i tends to 0 there is a T
+    with |i(t)| < 1/2 for |t| > T, and x vanishes beyond T. The threshold 1/2 is immaterial and any
+    bound below 1 works. Not claimed: that x has compact support, which is stronger than the
+    conclusion and false in general.
 ---
 
 ::: {.problem}
