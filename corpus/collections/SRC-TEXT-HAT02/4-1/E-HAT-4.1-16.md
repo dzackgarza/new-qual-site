@@ -36,6 +36,20 @@ audit:
     pi_0 hypothesis is met because X, Y and Z_n are connected. Not checked: no verification of the
     book's own construction beyond the two cited spans.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 16 of §4.1, printed p. 359, and against the construction the
+    card follows, printed p. 353 — the two steps preceding Proposition 4.13, which is itself on that
+    page; the section's Exercises 1--11 are on p. 358 and 12--22 on p. 359, checked at PDF pages 367
+    and 368 of the held book. Checked: attaching cells of dimension at least $n+1$ leaves $\pi_i$
+    unchanged for $i\le n$; at stage $k$ a wedge of $k$-spheres makes $\pi_k$ surjective onto
+    $\pi_k(Y)$ without changing lower groups, and $(k+1)$-cells attached along representatives of the
+    kernel, extended over the chosen nullhomotopies, make it injective; the first stage has constant
+    attaching maps, so $Z_{n+1}$ keeps $\pi_i$ for $i\le n$; and the passage to the union uses
+    compactness — a map $S^i\to Z_n$ has image in a finite subcomplex, hence in a single stage, so
+    $\pi_i(Z_n)=\varinjlim\pi_i(Z_k)$ (Hatcher, Proposition A.1). No defect.
 ---
 
 ::: {.problem}
@@ -43,7 +57,7 @@ Show that a map $f: X \to Y$ between connected CW complexes factors as a composi
 :::
 
 ::: {.solution}
-Use the cell-attachment construction from the proof preceding Proposition 4.13. Starting with
+The exercise is §4.1 Exercise 16, printed p. 359. Use the cell-attachment construction printed on p. 353, the two steps preceding Proposition 4.13. Starting with
 $$
 f:X\longrightarrow Y,
 $$
