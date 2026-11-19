@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the Berkeley Fall 2010 cards are transcriptions of the packet the collection retains, and four of them now say so
+
+**Object and need.** `SRC-BERKELEY-PRELIM-FALL-2010` retains its solution packet, `assets/attachments/f10solutions.pdf` (7 pages, the source the collection index lists under `provenance:`), and its eighteen cards were written from it. Only the card repaired earlier today, `P-BKF10-3A`, named the packet and its page; the other seventeen opened directly with mathematics, so a reader could not tell a transcription from an original argument. That is the provenance defect the acceptance rule names, and it is repaired here in batches.
+
+**Observed evidence.** Read in the packet's text layer and compared step by step with each card. `P-BKF10-1A` is Problem 1A, printed p. 1: compactness of the closed $X_i$ in the compact $X$, nonemptiness of the nested intersection by the increasing cover $\{X\setminus X_i\}$ with a finite subcover, and the separation argument with $F_i=X_i\setminus(U\cup V)$. `P-BKF10-2A` is Problem 2A, printed p. 1: the pigeonhole principle applied to the infinite list $x\mapsto x^k$ of functions on the finite ring. `P-BKF10-4A` is Problem 4A, printed p. 2: $\overline A=A^T$ is Hermiticity, and the chain $\lambda=(\lambda x,x)=(Ax,x)=(x,A^Tx)=(x,Ax)=(x,\lambda x)=\overline\lambda$. `P-BKF10-5A` is Problem 5A, printed p. 2: $(\sin x)/x$ bounded on a bounded interval gives $\abs{\sin x}\le C\abs x$, and the $M$-test applies; the card uses the stronger $C=1$, which the packet records as a parenthetical remark, and its provenance paragraph says so rather than claiming the packet proves it. Each card's opening paragraph now names the problem, the packet and the page, and says what the card adds — the step structure and the details — not more.
+
+**Impact and owner.** Four commits, one per card, each with a `source-checked` event: `f67d6d5b77`, `d38291459c`, `fc1615211b`, `4fd8ee4ab3`. Checks per card: `qualc.authoring check`, and `tmp/lam.sh` with the numbering intact and QED present (8, 4, 4 and 5 steps respectively). Fourteen cards of the collection still open without a provenance sentence: `1B`, `2B`, `3B`, `4B`, `5B`, `6A`, `6B`, `7A`, `7B`, `8A`, `8B`, `9A`, `9B` — thirteen of them, since `3A` was repaired earlier today; they are the next batch, one commit each.
+
+**Uncertainty.** High confidence in the four comparisons, each read against the packet's own sentences. Not checked: the remaining thirteen cards were not read in this pass, and the packet's pages are those of the seven-page file, not of a printed exam booklet, which the collection does not retain.
+
 ## 2026-11-19: the twenty NUS statements re-verified against the pinned dataset, with the two garbles' rows pasted
 
 **Object and need.** The two NUS collections have no paper, so the only witness for their statements is the pinned dataset `Combined_Questions.yaml` at revision `6190e0ee`. Three audit notes make claims about what that file prints — the `source-corrected` events of 2026-10-31 on `P-R623W` and on `P-MMAQ-RML5AHHINX`, and the index comment that `P-MMAQ-GSHH4MRFJW` presents the source's part (e) as (c) — and a claim about a source is worth what its quoted text is worth.
