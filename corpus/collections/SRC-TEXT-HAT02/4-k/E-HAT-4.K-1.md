@@ -36,9 +36,19 @@ audit:
     diagram by nonempty finite $J$ with its inclusions, and the commutativity of the square with
     $f$, which the prose asserted in a clause. No defect found in the statement, §4.K Exercise 1; no
     retained solution set covers it, so the argument is the card's own.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 495 carries the running head 486.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.K of Hatcher, *Algebraic Topology* (2002), printed p. 486, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that Corollary 4K.2 remains valid when $X$ and $Y$ are CW complexes and the subspaces $U_i$ and $V_i$ are subcomplexes rather than open sets.
 :::
 
