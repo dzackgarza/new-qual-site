@@ -7715,3 +7715,17 @@ R=$(git rev-parse refs/remotes/omm/main); git merge-base --is-ancestor <sha> $R 
 With that, the two commits this session made after the warning appeared (`2edda155da`, `fe28a2962a`) both verified as present, after the push tool had refused them.
 
 **Uncertainty.** The retry intervals are empirical, not tuned; a commit that fails twenty times was not seen and would need a different remedy. What created the duplicate `omm` ref was not investigated, and the fix (deleting the stray local branch) was not applied, since it is a shared clone and another chat may be using the name.
+
+## 2026-11-19, tenth item: two §2 cards of the residue read — one correct, one whose leaf steps had no proof at all
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71` read against the retained text, with the residue computed before editing, per the correction of this date.
+
+**`E-HK-22-5`, §2.2 Exercise 5, printed p. 40 — correct.** All four parts are decided as the card decides them: the invertible matrices fail because $0$ is not invertible; the singular ones fail because $\operatorname{diag}(1,0,\dots)$ and $\operatorname{diag}(0,1,0,\dots)$ are singular and sum to $I$; the matrices commuting with a fixed $B$ are the centralizer and form a subspace; and the idempotents fail because the two idempotents with upper-left blocks $[[1,1],[0,0]]$ and $[[0,0],[1,1]]$ sum to $S$ with $S^2=2S\ne S$ in every field. So "only (c)" is right. The solution now cites the retained text; commit `a17d270aec`.
+
+**`E-HK-24-5`, §2.4 Exercise 5, printed p. 50 — mathematics correct, structure rebuilt.** The claim and the coordinate formula $[(a,b)]_{\mathfrak{B}}=(ax_1+bx_2,\ ay_1+by_2)$ are right. But of the old proof's steps, every leaf step but one asserted its claim with **no `pf-proof` block at all**, and the final "Conclusion" step had none either; the two organizational containers were the only frames with a body. The proof is rewritten as four steps, each carrying its derivation — the hypotheses read as orthonormality, orthonormal vectors independent by taking inner products, two independent vectors in a plane forming a basis, and the coordinates as the two inner products — and the redundant conclusion and the containers are gone. No statement and no claim changed; commit `a2aa1d62a7`.
+
+**Why this is worth recording.** The ledger's seventh item measured the corpus-wide defect as "a `pf-step` with no `pf-proof` block at all — 3599 of 66016 leaf steps", and repaired ten cards. `E-HK-24-5` is an eleventh instance, in a different collection, and it was invisible to `qualc.authoring check`, `tmp/lam.sh` and `report_check`: all three pass on a proof whose steps have no bodies, because the steps are well-formed and their text carries the computation. Only a reader sees it.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each card; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-24-5` numbering 1–4 with QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** The remaining residue-5 cards of the collection (§1.6 Ex. 12 and the Ex. 5/11 series of §2–§10) are unread; the coordinate formula was checked on the two standard orthonormal pairs and by the general derivation, not on a random pair.
