@@ -355,6 +355,28 @@ audit:
     locus is. No step, reference, statement or source claim changes, and no
     earlier event is touched. Not done: the proof of that properness, which is
     acceptance item 1 and stays open, and the check of any step of the card.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #157, acceptance item 1, partial: a new step properness-reduction
+    writes out what the card previously only named. It records that the last
+    quadratic transformation contributes a finite union of branches, the
+    branches other than the conic being collinearities at the previous stage;
+    that the conic branch is contained in the effectivity locus of the class
+    Gamma = s_{w'}(2e_0-e_a-e_b-e_c-e_X-e_Y-e_Z), which has square -2 and
+    K-degree 0; that the case m_N = 0 is empty, by Nagata's Proposition 3,
+    printed p. 279; and that for m_N = 1 the locus is the whole plane exactly
+    when the fixed system L(d;sum m_iP_i) is superabundant, by Riemann-Roch
+    plus the fact that a positive-dimensional linear system covers the plane.
+    Step part-c-open now names the two cases that remain, m_N >= 2 and m_N = 1
+    with superabundance, and the printed range in which the second is settled
+    (Proposition 8 of Nagata, printed p. 293, for r = 8, d >= m_1+m_2+m_3,
+    m_i >= 0), with the reduction to that range not carried out. The qed now
+    says which step derives what. Part (c) is still not proved on this card
+    and no step claims otherwise. Read for this event: the printed pages cited,
+    already read for the earlier events; nothing was re-read and no other step
+    changed.
 ---
 
 ::: {.problem}
@@ -476,6 +498,36 @@ What the argument gives is the closedness, which is all the rest of (c) uses: th
 
 :::
 
+::: {.pf-step #properness-reduction}
+Let $w=w't$, where $t=(a,b,c)$ is the last triple, and let $T$ be a triple of labels. Then the bad condition the last step contributes is a finite union of collinearity conditions at stage $\abs{w'}$ and, when $T$ meets no centre, one further condition: that the three points of $T$ lie on a conic through the three centres. That conic condition is contained in the set of $P$ for which the class
+$$
+\Gamma=s_{w'}\bigl(2e_0-e_a-e_b-e_c-e_X-e_Y-e_Z\bigr)
+$$
+is effective at $(\mathbf P,P)$, and $\Gamma$ satisfies $\Gamma^2=-2$ and $\Gamma\cdot K=0$. Write $\Gamma=d e_0-\sum_{i\le r}m_ie_i-m_Ne_N$. If $m_N=0$ that set is empty; if $m_N=1$ it is the union of the members of the fixed system $\mathcal L(d;\sum_im_iP_i)$ on the blowup at the fixed points, and it is the whole plane exactly when that system is superabundant. The case $m_N\ge2$ is not decided here.
+
+::: pf-proof
+In the standard model with the centres $A,B,C$ at the coordinate points, $\tau$ has components $\ell_j\ell_k$, where $\ell_j$ is the equation of the side opposite the $j$-th centre. For points $X,Y,Z$ with coordinates $(x_i:y_i:z_i)$, the matrix with rows $(y_iz_i,x_iz_i,x_iy_i)$ is obtained from the matrix with rows $(1/x_i,1/y_i,1/z_i)$ by multiplying on the left by the diagonal matrix of the products $x_iy_iz_i$, so
+$$
+\det\bigl[\tau(X),\tau(Y),\tau(Z)\bigr]=\prod_{i=X,Y,Z}x_iy_iz_i\;\cdot\;\det\bigl[(1/x_i,1/y_i,1/z_i)\bigr]_{i=X,Y,Z}.
+$$
+The first factor vanishes exactly when one of $X,Y,Z$ lies on a line through two of the centres. The second vanishes exactly when there are $(\alpha,\beta,\gamma)\ne(0,0,0)$ with $\alpha y_iz_i+\beta x_iz_i+\gamma x_iy_i=0$ for $i=X,Y,Z$, that is, exactly when $X,Y,Z$ lie on the conic $\alpha yz+\beta xz+\gamma xy=0$, which passes through $A,B,C$. For a triple $T$ that meets the centre set, the same computation gives: the three points $Q_A,Q_B,Q_C$ are never collinear; $\tau(X),Q_B,Q_C$ are collinear exactly when $X$ lies on one of the two lines through the remaining centre; and $\tau(X),\tau(Y),Q_C$ are collinear exactly when $X$ or $Y$ lies on the line joining the other two centres, or $X,Y,C$ are collinear. Each of these is a collinearity of three points at stage $\abs{w'}$, hence a bad condition of a shorter word, and those are proper by the projection argument of step [](#bad-locus-proper-closed){.pf-ref} when the shorter word never uses the label of $P$ and by induction on $\abs{w}$ otherwise.
+
+For the conic branch, $s_{w'}$ preserves the intersection form and the canonical class --- this is the transformation formula of Lemma 2.3 of Nagata, printed pp. 277--278 --- and $2e_0-e_a-e_b-e_c-e_X-e_Y-e_Z$ has square $-2$ and $K$-degree $0$, so $\Gamma$ does too, whence
+$$
+d^2-\sum_im_i^2=m_N^2-2,\qquad 3d-\sum_im_i=m_N.
+$$
+
+If $m_N=0$ then effectivity of $\Gamma$ at $(\mathbf P,P)$ does not involve $P$: it holds for one $P$ only if it holds at $\mathbf P$, and then $\mathbf P$ is special by Proposition 3 of Nagata, printed p. 279, because $\Gamma$ lies in the Cremona orbit of $e_0-e_i-e_j-e_k$. General position forbids that, so the set is empty.
+
+If $m_N=1$ then effectivity of $\Gamma$ at $P$ says that $P$ lies on a member of the system $\mathcal L(d;\sum_im_iP_i)$ on the blowup at the fixed points. A linear system of positive dimension covers the plane, since at a point that is not a base point the members through it are a hyperplane in the system. So the set is the whole plane exactly when that system has dimension at least one. Riemann--Roch gives $h^0=\chi+h^1$ with $h^2=0$, the canonical class minus the class having degree $-3-d$, and
+$$
+\chi=1+\frac{d^2-\sum_im_i^2+3d-\sum_im_i}{2}=1+\frac{m_N^2-2+m_N}{2}=\binom{m_N+1}{2},
+$$
+so at $m_N=1$, where $\chi=1$, the system has dimension at least one exactly when $h^1\ne0$.
+:::
+
+:::
+
 ::: {.pf-step #dense-general-position-extension}
 If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position, there is a dense subset
 $$
@@ -499,7 +551,7 @@ Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open s
 No source listed for this card proves part (c).
 
 ::: pf-proof
-What the sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive.
+What the sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive. What step [](#properness-reduction){.pf-ref} leaves open is the case $m_N\ge2$ and the case $m_N=1$ with the system $\mathcal L(d;\sum_im_iP_i)$ superabundant. The second is settled for $r=8$, in the range $d\ge m_1+m_2+m_3$ with $m_i\ge0$, by Proposition 8 of Nagata, printed p. 293, which gives superabundance $0$; the reduction to that range is not carried out, and for $r\ge9$ no such statement is printed.
 :::
 
 :::
@@ -558,7 +610,7 @@ This is the second half of Theorem 4a of Nagata, printed pp. 283--284: if $r\ge9
 :::
 
 ::: pf-qed
-Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c) only on the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive, and step [](#part-c-open){.pf-ref} records that no source listed proves it; part (c) is not proved on this card. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
+Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c) only on the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts, which step [](#properness-reduction){.pf-ref} derives for the cases named there, and which no source listed proves; part (c) is not proved on this card. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
 :::
 
 :::
