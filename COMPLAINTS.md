@@ -8699,3 +8699,15 @@ and the printed book itself.
 **The remainder.** Thirty-two Chapter IV cards still lack Yang; the queue now starts at IV.4.4
 `P-AGH444JINVARIANTRATIONALINCOEFFICIENTS`, whose Yang entry is 4.4.4 on printed p. 90. IV.4.7 is not in that
 queue: it already carries a Yang citation from an earlier batch.
+
+## 2026-11-19, eighteenth item: §8.1 Ex. 5 and Ex. 11 read, both correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-81-5`, §8.1 Exercise 5, printed p. 274 — correct.** (a) with $\gamma=(x,y)$ the conditions are $x+2y=-1$ and $-x+y=3$, whose sum gives $y=2/3$ and then $x=-7/3$; substituting back gives $(\alpha\mid\gamma)=-7/3+4/3=-1$ and $(\beta\mid\gamma)=7/3+2/3=3$. (b) $(\alpha\mid\epsilon_1)=a$ and $(\alpha\mid\epsilon_2)=b$ for $\alpha=(a,b)$, so $(\alpha\mid\epsilon_1)\epsilon_1+(\alpha\mid\epsilon_2)\epsilon_2=\alpha$. Commit `a9c5bd25c8`.
+
+**`E-HK-81-11`, §8.1 Exercise 11, printed p. 275 — correct.** The double sum is the integral pairing: the sums are finite, $\int_0^1t^{j+k}dt=1/(j+k+1)$, so symmetry and bilinearity are inherited from the integral and positive definiteness follows because $f^2$ is continuous and nonnegative on $[0,1]$ and a polynomial vanishing on an interval is zero. The Gram matrix in $1,x,\ldots,x^n$ is $(1/(j+k+1))_{0\le j,k\le n}$, the $(n+1)\times(n+1)$ Hilbert matrix, displayed with corner entry $1/(2n+1)$. That is the matrix of the collection's §1.6 Exercise 12, whose card (`E-HK-EZDH`, `17876ecdc1`) proves it invertible with integer inverse — the two cards are the two halves of one classical example, and each is correct on its own. Commit `07fe15f585`.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the positive-definiteness argument in `E-HK-81-11` uses the continuity fact without proof, as the book's hint does.
