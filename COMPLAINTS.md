@@ -343,11 +343,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **76 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **75 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Twenty-one of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 76 stand as this item lists them.
+   reported and repaired above. Twenty-two of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 75 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -470,7 +470,12 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    nullhomotopic, which the non-liftability of $q$ to $\RR$ forbids; and a CW model would be weakly
    equivalent to a point by the vanishing groups, hence contractible, making $Y$ contractible too.
 
-   Remaining unread in this item's set: §4.1 10–23 (13 more), §4.2 (39), §4.3 (24) --- 76 proofs.
+   **§4.1-11, read the same day.** Correct, no card changed. A compact source lands in a finite
+   subcomplex, hence in some $X_i$, and the nullhomotopy of $X_i\hookrightarrow X_{i+1}$ kills the map out of
+   $S^n$ inside $X$; with $\pi_0$ trivial from path connectivity, $X$ is weakly equivalent to a point and
+   hence contractible, which is the claim.
+
+   Remaining unread in this item's set: §4.1 12–23 (12), §4.2 (39), §4.3 (24) --- 75 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
