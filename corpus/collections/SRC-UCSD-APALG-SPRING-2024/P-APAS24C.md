@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 3 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    3 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 3 is its page 4. Checked: the statement against the paper's text layer at
+    the page named; both directions, including the polarization that recovers $A=A^H$ from the real-
+    valued quadratic form; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and
+    the QED. Not checked: no retained solution set exists for this paper to compare the argument with,
+    and no other card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -26,6 +38,9 @@ Note: $x^H=\overline{x^T}$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 3 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 3 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+
 The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
 
 Write $x^H=\overline{x^T}$ and $A^H=\overline{A^T}$, so that $(Ax)^Hy=x^HA^Hy$ for all $x,y\in\CC^n$; also $\overline{\lambda}$ denotes the complex conjugate of a scalar and $e_1,\dots,e_n$ the standard basis of $\CC^n$.
