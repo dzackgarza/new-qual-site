@@ -15,6 +15,7 @@ order: 30
 | Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close]] |
 | How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region]] |
 | Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map]] |
+| Expand this function in a series, or compute a residue | [[complex-analysis/singularities/laurent-series]] and [[complex-analysis/residues-and-contours/computing-residues]] |
 
 ## Chapters
 
