@@ -11,6 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 13, printed p. 420,
+    and Corollary 0.21. Phi and Psi are right and Psi Phi is fibre homotopic to the
+    identity, but the homotopy K_s for Phi Psi was ill defined, as an independent report
+    from the swarm found and as recomputing shows: with K_s(a,gamma) = (H(a,1-s), P_s)
+    the inserted path P_s had to start at f(H(a,1-s)), while the formula made it end at
+    f(i(r(a))) and then concatenated gamma, which starts at f(a) --- a concatenation that
+    does not exist, and K_0 was not Phi Psi either. Repaired: K_s(a,gamma) =
+    (H(a,s), (u -> f(H(a,s(1-u)))) * gamma), whose inserted path runs from f(H(a,s)) to
+    f(H(a,0)) = f(a), so the pair lies in E_f, with K_1 = Phi Psi exactly and K_0 =
+    (a, const * gamma) fibre homotopic to the identity. Statement unchanged. Not
+    checked: nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -90,9 +105,9 @@ $$
 $$
 $\Phi$ is fibre-preserving because both projections read off $\gamma(1)$. In $\Psi$ the path $s\mapsto f(H(a,1-s))$ runs from $f(H(a,1))=f(i(r(a)))$ to $f(H(a,0))=f(a)$, so concatenating with $\gamma$ gives a path starting at $f(i(r(a)))=(f\circ i)(r(a))$, and $\Psi$ is fibre-preserving. Next, $\Psi\Phi(c,\gamma)=(r(i(c)),\ (s\mapsto f(H(i(c),1-s)))*\gamma)=(c,\mathrm{const}_{f(i(c))}*\gamma)$, because $H$ is the identity on the image of $i$; that is homotopic to $(c,\gamma)$ through fibre-preserving maps, by the standard homotopy between a path and its reparametrization, so $\Psi\Phi\simeq\mathrm{id}$. For $\Phi\Psi$, put
 $$
-K_s(a,\gamma)=\bigl(H(a,1-s),\ (u\mapsto f(H(a,1-s+us)))*\gamma\bigr);
+K_s(a,\gamma)=\bigl(H(a,s),\ (u\mapsto f(H(a,s(1-u))))*\gamma\bigr).
 $$
-the path $u\mapsto f(H(a,1-s+us))$ runs from $f(H(a,1-s))$ to $f(H(a,1))=f(i(r(a)))$, so $K_s$ lands in $E_{f\circ i}$ and is continuous in $(a,\gamma,s)$, and $K_0(a,\gamma)=(i(r(a)),\gamma)=\Phi\Psi(a,\gamma)$ while $K_1(a,\gamma)=(a,\ (u\mapsto f(H(a,u)))*\gamma)$, which differs from $(a,\gamma)$ only by reparametrizing the path coordinate and so is fibre homotopic to the identity. Hence $\Phi$ and $\Psi$ are mutually inverse fibre homotopy equivalences.
+The pair $K_s(a,\gamma)$ must lie in $E_f$, so its path coordinate must start at $f(H(a,s))$: it does, and the inserted path ends at $f(H(a,0))=f(a)$, where $\gamma$ starts, so the concatenation is defined. Then $K_1(a,\gamma)=\bigl(i(r(a)),\ (u\mapsto f(H(a,1-u)))*\gamma\bigr)$, which is exactly $\Phi\Psi(a,\gamma)$, and $K_0(a,\gamma)=\bigl(a,\ \mathrm{const}_{f(a)}*\gamma\bigr)$, which is homotopic to $(a,\gamma)$ through maps that only reparametrize the path coordinate, hence fibre homotopic to the identity. So $\Phi\Psi\simeq\mathrm{id}$. Hence $\Phi$ and $\Psi$ are mutually inverse fibre homotopy equivalences.
 
 :::
 
