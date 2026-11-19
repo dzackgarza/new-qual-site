@@ -30,6 +30,19 @@ audit:
     homeomorphism)" and leaves that unproved, which is what the affine change of coordinates needs;
     the card states the coordinatewise affine map and notes that it carries boxes to boxes, so that
     it is a box-topology homeomorphism.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution opened by claiming that no retained solution set covers the exercise, contradicting the
+    audit note above it, which transcribes dbFin's Section 33 Problem 9 solution from the copy kept at
+    tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-9-solution.txt. That copy was read again: it
+    begins by reducing to separating the origin from the complement of (-1,1)^J, which is the printed hint,
+    and it asserts without proof that a product of continuous functions is continuous. The opening
+    sentence now names the set, its route and the step the card supplies in place of the source's
+    assertion. Not checked here: the printed page of the exercise, which is the earlier session's,
+    because the book's page for Section 33 Exercise 9 was not re-read in this session.
+
 ---
 
 ::: {.exercise}
@@ -40,7 +53,7 @@ Show that $\RR^J$ in the box topology is completely regular.
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own argument follows the book's hint, with the reduction to $(-1,1)^{J}$ and the separation function as separate steps.
+The argument follows the retained published solution of dbFin, "Section 33: Problem 9 Solution" (`tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-9-solution.txt`, read 2026-11-10): it is enough to separate the origin from the complement of the box neighbourhood $(-1,1)^{J}$, which is the printed hint. The card separates that into steps and supplies what the source leaves unproved, as the audit records: the source asserts that a product of continuous functions is continuous, which is what its coordinatewise affine change of coordinates needs, and the card instead states the map $y\mapsto (y_{\alpha}-x_{\alpha})/\varepsilon_{\alpha}$ and proves that it carries boxes to boxes, so that it is a homeomorphism of the box topology. The statement is Munkres, *Topology* (2000), Section 33 Exercise 9, printed p. 213, with its printed hint.
 
 ::: pf
 
