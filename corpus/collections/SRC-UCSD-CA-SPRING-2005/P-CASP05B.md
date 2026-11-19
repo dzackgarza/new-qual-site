@@ -37,6 +37,14 @@ audit:
     |f| <= M and |phi_{c_j}| = 1 on the circle", where the modulus of phi_c on the circle |z| = r
     is not 1 and a limit must be taken. Not claimed: a retained solution set; the provenance
     names the examination paper.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. The
+    limiting step wrote the interval as `$($\abs z,1)$`, which closes the math span after the
+    opening parenthesis and leaves `\abs z,1` as prose TeX, which the HTML writer drops; it now
+    reads `$(\abs z,1)$`. Mathematics, wording and the multiplicity remark are unchanged.
 ---
 
 ::: {.problem}
@@ -84,7 +92,7 @@ At a zero $c$ of $f$ of multiplicity $m\ge1$, the list contains $c$ at most $m$ 
 $\abs{g(z)}\le M$ for every $z\in\DD$.
 
 ::: pf-proof
-Fix $z\in\DD$ and let $r$ range over $($\abs z,1)$ with $r>\max_j\abs{c_j}$. On the closed disk $\abs\zeta\le r$ the function $g$ is holomorphic, so the maximum modulus principle gives $\abs{g(z)}\le\max_{\abs\zeta=r}\abs{g(\zeta)}$. There,
+Fix $z\in\DD$ and let $r$ range over $(\abs z,1)$ with $r>\max_j\abs{c_j}$. On the closed disk $\abs\zeta\le r$ the function $g$ is holomorphic, so the maximum modulus principle gives $\abs{g(z)}\le\max_{\abs\zeta=r}\abs{g(\zeta)}$. There,
 $$
 \abs{g(\zeta)}=\frac{\abs{f(\zeta)}}{\prod_j\abs{\phi_{c_j}(\zeta)}}\le\frac{M}{\prod_j\abs{\phi_{c_j}(\zeta)}} .
 $$
