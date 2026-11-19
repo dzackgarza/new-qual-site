@@ -10,8 +10,7 @@ topics:
 # Morphisms of sheaves
 
 A morphism of sheaves is a morphism of presheaves that happens to respect the gluing, and the two constructions one wants from it — the kernel and the cokernel — do not behave alike.
-The kernel of a map of sheaves is a subsheaf of the source and needs no repair; the presheaf cokernel need not be a sheaf, so the cokernel in the category is its sheafification, and that asymmetry is the first place the geometry enters the algebra.
-This page fixes the definitions, records the stalk criterion that decides injectivity and surjectivity, and warns where a morphism that is onto as a map of sheaves is not onto on sections.
+The kernel of a map of sheaves is a subsheaf of the source and needs no repair, while the presheaf cokernel need not be a sheaf, so the cokernel in the category is its sheafification.
 
 ## Kernels, images, and cokernels
 
@@ -26,7 +25,7 @@ Sheafifying the presheaf image and the presheaf cokernel gives the image and cok
 
 A morphism is a monomorphism exactly when it is injective on every stalk, and an epimorphism exactly when it is surjective on every stalk, but a morphism that is onto on stalks need not be onto on global sections.
 The standard instance is $\exp\colon\OO_X\to\OO_X^\times$ on $X=\CC\sm\theset{0}$: surjective on stalks, not surjective on $\OO_X(X)$, and the obstruction to a global logarithm is a class in $H^1(X,\ZZ)$ ([[FE-DNTT6]]).
-That gap is what the long exact sequence of cohomology measures, and it is the reason this chapter is written before the one on cohomology.
+That gap is what the long exact sequence of cohomology measures ([[PR-COHLES]]).
 
 ## The sheaf of homomorphisms
 
