@@ -100,10 +100,10 @@ The permutation representation of $S_5$ on $\CC^5$ splits as the trivial represe
 :::
 
 ::: {.pf-step}
-(d) $A^{(4,1)}\restrictionof_{S_3\times S_2}\cong(1\boxtimes1)\oplus(\rho\boxtimes1)\oplus(1\boxtimes\varepsilon_2)$.
+(d) $\restrictionof{A^{(4,1)}}{S_3\times S_2}\cong(1\boxtimes1)\oplus(\rho\boxtimes1)\oplus(1\boxtimes\varepsilon_2)$.
 
 ::: pf-proof
-Restricting the permutation module $\CC^5$ to the Young subgroup, the first three letters give the permutation module of $S_3$, which is $1\oplus\rho$, and the last two give that of $S_2$, which is $1\oplus\varepsilon_2$; so $\CC^5\restrictionof\cong(1\oplus\rho)\boxtimes1\oplus1\boxtimes(1\oplus\varepsilon_2)$. The standard representation is $\CC^5$ with one copy of the trivial representation removed, and the trivial representation of the subgroup is $1\boxtimes1$, which occurs once in that restriction; removing it leaves $(1\boxtimes1)\oplus(\rho\boxtimes1)\oplus(1\boxtimes\varepsilon_2)$. The dimensions $1+2+1=4$ equal $\dim A^{(4,1)}=4$, so this is the complete decomposition. Parts (a), (b) and (c) are steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref} and [](#part-c){.pf-ref}.
+Restricting the permutation module $\CC^5$ to the Young subgroup, the first three letters give the permutation module of $S_3$, which is $1\oplus\rho$, and the last two give that of $S_2$, which is $1\oplus\varepsilon_2$; so $\restrictionof{\CC^5}{S_3\times S_2}\cong(1\oplus\rho)\boxtimes1\oplus1\boxtimes(1\oplus\varepsilon_2)$. The standard representation is $\CC^5$ with one copy of the trivial representation removed, and the trivial representation of the subgroup is $1\boxtimes1$, which occurs once in that restriction; removing it leaves $(1\boxtimes1)\oplus(\rho\boxtimes1)\oplus(1\boxtimes\varepsilon_2)$. The dimensions $1+2+1=4$ equal $\dim A^{(4,1)}=4$, so this is the complete decomposition. Parts (a), (b) and (c) are steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref} and [](#part-c){.pf-ref}.
 :::
 
 :::
