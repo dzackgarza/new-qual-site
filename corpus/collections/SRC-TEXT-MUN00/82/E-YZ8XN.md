@@ -33,6 +33,16 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Corrected: the definition of semilocal simple connectedness is printed on p. 494, not p. 489 as the previous note said; p. 489 carries Corollaries 81.3 and 81.4. The proof now cites the Definition of simple connectedness (printed p. 333) and the Definition of semilocal simple connectedness (printed p. 494), and states the two points the argument needs: that $X$ is a neighbourhood of each of its points, because it is open in itself, and that the induced homomorphism of the inclusion $X\to X$ is the identity of the trivial group, not only a map into a trivial group. What the certificate does not cover: nothing; the exercise has no parts.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured as a Lamport proof of the argument already on the card, which is correct:
+    taking U = X at each point makes the induced map the identity of the trivial group pi_1(X,
+    x). Added the note that the choice serves under either convention for 'neighbourhood', open
+    or not, which the card's sentence covered only for the non-open one. The Math Stack Exchange
+    answer cited by the card treats one instance (the cone on the Hawaiian earring) and does not
+    state the general case; the card's general argument is its own, as the card says.
 ---
 
 ::: {.exercise}
@@ -42,16 +52,39 @@ Show that a simply connected space is semilocally simply connected.
 :::
 
 ::: {.solution}
+$X$ is *simply connected* when it is path connected and $\pi_1(X,x)$ is the trivial group for some, hence every, base point; it is *semilocally simply connected* when for each $b \in X$ there is a neighbourhood $U$ of $b$ such that the homomorphism $i_{*}\colon\pi_1(U,b)\to\pi_1(X,b)$ induced by the inclusion is trivial (Munkres, *Topology* (2000), definitions on printed pp. 333 and 494).
 
-The two-line argument is given, for one instance, by Birch Bryant's answer 2365131 (https://math.stackexchange.com/a/2365131), posted 2017-07-20 to Math Stack Exchange question 2364579, "locally simply-connected vs. semilocally simply-connected" (https://math.stackexchange.com/questions/2364579, asked by cbro on the same day): for the cone $CX$ on the earring, which is simply connected, "the inclusion $i:\pi_1(U)\hookrightarrow\pi_1(CX)=0$ must be the trivial map", for every neighbourhood $U$ -- which is this exercise with $CX$ in place of a general simply connected $X$. The answer writes it there as the contrast with local simple connectedness and does not state the general case, so the card keeps the general proof below.
+::: pf
 
+::: {.pf-step #neighbourhood}
+For $x \in X$ the set $U \coloneqq X$ is a neighbourhood of $x$, and its inclusion into $X$ is the identity map.
 
-A space $X$ is simply connected when it is path connected and $\pi_1(X,x)$ is the trivial group for some, hence every, base point (Definition, printed p. 333). It is semilocally simply connected when for each $b\in X$ there is a neighbourhood $U$ of $b$ such that the homomorphism
-$$
-i_*:\pi_1(U,b)\longrightarrow\pi_1(X,b)
-$$
-induced by inclusion is trivial (Definition, printed p. 494).
+::: pf-proof
+A neighbourhood of $x$ is a set containing an open set containing $x$, and $X$ itself is open in $X$; the inclusion of $X$ into $X$ is the identity. If the definition in use demands the neighbourhood be open, $X$ is open as well, so the same choice serves.
 
-Let $X$ be simply connected and let $x\in X$. Take $U=X$. This is a neighbourhood of $x$, because a set is open in itself. The inclusion $i:U\to X$ is the identity map, so $i_*$ is the identity homomorphism of $\pi_1(X,x)$, which is the trivial group by hypothesis; hence $i_*$ is trivial. This is the condition at $x$, and $x$ was arbitrary. Therefore $X$ is semilocally simply connected.
+:::
 
+:::
+
+::: {.pf-step #trivial}
+The induced homomorphism $i_{*}\colon\pi_1(U,x)\to\pi_1(X,x)$ is trivial.
+
+::: pf-proof
+By step [](#neighbourhood){.pf-ref} the inclusion is the identity of $X$, so $i_{*}$ is the identity homomorphism of $\pi_1(X,x)$. That group is trivial because $X$ is simply connected, so $i_{*}$ is the zero homomorphism, which is what triviality of $i_{*}$ asserts.
+
+:::
+
+:::
+
+::: pf-step
+$X$ is semilocally simply connected.
+
+::: pf-proof
+The condition of semilocal simple connectedness is that each point $b$ admit a neighbourhood with the property of step [](#trivial){.pf-ref}; taking $U = X$ gives it at every point, so the condition holds at every point of $X$.
+
+:::
+
+:::
+
+:::
 :::
