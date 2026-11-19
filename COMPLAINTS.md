@@ -6746,3 +6746,25 @@ pp. 407--408. Not read: the printed books themselves; Yang's entries for the exe
 later; and no search of the literature beyond these files. With these, every entry of Yang's set that
 covers an exercise of §V.4, Solutions 5.4.1 to 5.4.16, is either named in a card's rendered remark or
 recorded here as not closing the exercise it covers.
+
+## 2026-11-19, fifth item: queue D measures conversion, and 470 of residue 3's structured cards have never been read
+
+**Object and need.** Queue D is a measurement of numbered steps, so a residue reaches zero while most of its cards have never been read for correctness. This records the size of that gap for residue 3 (`int(id.rsplit("-",1)[1], 36) % 16 == 3`), measured today, so that "the residue is complete" is not mistaken for "the residue is checked".
+
+**Measured.** Of the residue's cards that carry a `.solution` and at least one `pf-step`:
+
+| quantity | count |
+| --- | ---: |
+| residue-3 cards with a solution section | 839 |
+| of those, carrying a `solution-reviewed` event | 369 |
+| carrying none, i.e. structured but never read | **470** |
+
+The same query over another residue would give a different split; the point of the table is the method, not this residue's number. The counts were taken from the card text, not from a database, and a card whose review event is written by a different `by:` or in a different phrasing still counts as reviewed — the test is presence of the string `solution-reviewed`.
+
+**What a referee pass found on the fourteen cards read.** No mathematical defect: a diagonal uncountability argument, a Cauchy continuation for an ODE solution confined to a compact set, a quotient of the interval that is not Hausdorff, a rational-solution argument for rational linear systems, the degree of a self-map of `CP^{2n}`, strict diagonal dominance, two prime non-maximal ideals, the cone on a disk, integrability of `f^2`, a `p`-subgroup's fixed point, a closed bounded non-compact set, `k`-transitivity, a Kunneth computation for `L(p,1) x L(q,1)`, and `pi_3` of `P v S^3`. One **structural** defect did surface, on `P-TOPS25F`: its frontmatter held an `- event:` list with no `audit:` key above it, so the file did not parse. That fails the whole-corpus gate for every stream, not just its own, and it was repaired.
+
+**Ruled out lane-wide, cheaply.** Because one unparseable card anywhere makes every gate run fail — and the gate prints nothing until it finishes, so a killed run shows no reason — the per-card parser was run over all 839 cards of the residue: `839/839` schema and Markdown OK. The same sweep gives `839/839` clean for undefined control words (`tools/check_macros.py`) and `839/839` clean for the Lamport filter (`tmp/lam.sh`). Corpus metadata completeness is `12429` complete, `0` incomplete.
+
+**Consequence.** A residue's conversion reaching zero should be reported as conversion reaching zero, with the never-reviewed count beside it. At two or three referee reads per turn, residue 3's 470 is roughly 150 turns of work, which is a work item of its own rather than an extension of the conversion stream.
+
+**Uncertainty.** Only fourteen of the 470 were read, chosen by file length and not at random, so the 0-of-14 defect rate is not an estimate of the residue's defect rate; short cards are plausibly easier to get right than long ones. The `solution-reviewed` test is a string match over the whole file, so a card could carry the string in prose without an event. Nothing here was checked against the corpus database or the gate, the gate being unrunnable on this box today (the entry above records both kills).
