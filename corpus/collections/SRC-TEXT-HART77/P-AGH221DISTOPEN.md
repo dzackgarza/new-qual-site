@@ -28,6 +28,8 @@ Show that the locally ringed space $\qty{D(f), \restrictionof{\OO_X}{D(f)}}$ is 
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.1, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.1, printed p. 11, proves the same isomorphism at the three levels the exercise needs — sets, topology and sheaves — with the distinguished opens as a basis on both sides, which is the route the steps take through $\lambda:A\to A_f$.
+
 Let
 $$
 \lambda:A\longrightarrow A_f
