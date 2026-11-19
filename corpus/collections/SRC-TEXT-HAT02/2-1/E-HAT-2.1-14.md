@@ -29,6 +29,21 @@ audit:
   date: 2026-10-31
   note: >-
     Read the explicit sequence: $i(1)=(2,1)$ has order four, $q(a,b)=a-2b$ is surjective, and $\abs{\ker q}=4$, so the sequence is exact and the answer to the first question is yes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 14 of §2.1, printed p. 131. All three answers are right.
+    (i) $i(1)=(2,1)$ has order four in $\ZZ_8\oplus\ZZ_2$, $q(a,b)=a-2b$ is onto, $|\ker q|=4$ and
+    $\operatorname{im}i\subseteq\ker q$ with both of order four, so the sequence is exact: yes.
+    (ii) Every extension is $\langle x,y\mid p^mx=0,\ p^ny=cx\rangle$ with relation matrix
+    $\begin{pmatrix}p^m&0\\-c&p^n\end{pmatrix}$, whose first Smith factor is
+    $p^{\min(v_p(c),m,n)}$ and whose determinant has $p$-valuation $m+n$, so
+    $A\cong\ZZ_{p^r}\oplus\ZZ_{p^{m+n-r}}$ with $0\le r\le\min(m,n)$, and each $r$ occurs.
+    (iii) Every extension $0\to\ZZ\to A\to\ZZ_n\to0$ is $\langle x,y\mid ny=cx\rangle$ with
+    $A=\ZZ^2/\langle(-c,n)\rangle\cong\ZZ\oplus\ZZ_{\gcd(c,n)}$, so the middle groups are
+    $\ZZ\oplus\ZZ_d$ for $d\mid n$. Nothing changed. Not claimed: a published solution, and no
+    certificate.
 ---
 
 ::: {.problem}
