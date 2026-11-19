@@ -42,6 +42,20 @@ audit:
     kept alongside. It remains in the file's history at commit 78363c50b0. Not checked: nothing further
     in the book; the two cited spans are the whole source basis of this correction.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 13 of §4.1, printed p. 359 — the section's Exercises 1--11 are on
+    p. 358 and 12--22 on p. 359, checked at PDF page 368 of the held book, whose folio is 359 — and
+    against Lemma 4.7 at its printed page, 348, confirmed at PDF page 357. The exercise is printed
+    as "Use the extension lemma to show that a CW complex retracts onto any contractible subcomplex",
+    and the card's statement expands it into the lemma's hypotheses; that expansion is accurate.
+    Checked: a contractible $A$ has $\pi_k(A)=0$ for every $k$ and is path-connected, by composing any
+    map $S^k\to A$ with a contraction; the lemma applied with target $Y=A$ and $f=\mathrm{id}_A$
+    therefore gives $r:X\to A$ extending the identity, the induction starting at the $0$-cells of
+    $X-A$ where path-connectedness of $A$ is the hypothesis; and $r|_A=\mathrm{id}$ is a retraction.
+    No defect. The printed page is added, the card having had none.
 ---
 
 ::: {.exercise}
@@ -50,6 +64,7 @@ Use the **extension lemma** (Lemma 4.7: for a CW pair $(X,A)$, a map $f\colon A\
 :::
 
 ::: {.solution}
+The exercise is §4.1 Exercise 13, printed p. 359, and the extension lemma it names is Lemma 4.7, printed p. 348: a map $f:A\to Y$ on a CW pair $(X,A)$, with $Y$ path-connected and $\pi_{n-1}(Y)=0$ for every $n$ such that $X-A$ has cells of dimension $n$, extends to $X$.
 
 ::: pf
 
