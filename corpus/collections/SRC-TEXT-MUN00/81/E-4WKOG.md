@@ -38,6 +38,26 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. Corrected: the definition of a properly discontinuous action is on printed p. 490, not p. 488 as the previous note said. The old solution was not a Lamport proof: its four top-level steps carried indented prose labelled "Proof:" instead of pf-proof blocks, the inner steps had no proofs at all, and a literal "Q.E.D." was typed into the last one. It is now a pf block with one step for each printed part, and every step cites Munkres by number and page: the definition of local compactness (printed p. 182), Theorem 26.3 (printed p. 165) that a compact subspace of a Hausdorff space is closed, Theorem 26.5 (printed p. 166) that a continuous image of a compact space is compact, the definition of the quotient topology (printed p. 137), and the definition of a properly discontinuous action (printed p. 490). Two things were added because the old proof asserted them in passing: that the set of indices F in part (b) is finite, which needs the hypothesis applied to K_x union K_y, and that p(U) and p(V) are disjoint, which needs the translation of an equality p(u) = p(v) into u lying in some g(V). What the certificate does not cover: part (c) is the printed assertion that the action is properly discontinuous, and its proof uses only the hypothesis and Hausdorffness, not part (a).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All four parts are correct, and each uses only the printed hypotheses. (a)
+    takes x outside the union, a neighbourhood U with compact closure K, and
+    the finite set F of elements g with K union C meeting g(K union C); for g
+    outside F the set g(C) misses K and hence U, and for g in F it is compact,
+    hence closed, and avoids x, so U cut by the finitely many complements of
+    those g(C) is a neighbourhood of x missing the whole union. (b) first notes
+    that p is open, then separates p(x) and p(y) by taking neighbourhoods with
+    compact closures, the finite set F of g with K_x meeting g(K_y), finite
+    because such a g has K meeting g(K) for K the union of the two closures,
+    and disjoint neighbourhoods of x and of g(y) for g in F; the resulting U and
+    V have disjoint images, since no g carries V into U. (c) is the same
+    construction with C a compact neighbourhood, the fixed-point-free hypothesis
+    giving g(x) different from x, and it produces U with g(U) disjoint from U
+    for every g other than the identity, which is the definition on printed
+    p. 490. (d) pushes a compact neighbourhood through the open quotient map.
+    Nothing was changed.
 ---
 
 ::: {.exercise}
