@@ -15,6 +15,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 1 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the three conditions and the finitely generated
+    hypothesis against the paper's text layer at the page named; the solution read for its cycle of
+    implications through M localized at p, the identification of M tensor k(p) with the fibre
+    M_p / p M_p, and the use of Nakayama; `qualc.authoring check` on the card, and `tmp/lam.sh` for
+    the numbering and the QED. Not checked: no retained solution set exists for this paper to
+    compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -36,6 +50,9 @@ Show that for a prime ideal $\mathfrak p \subset A$, the following are equivalen
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies the cycle of implications through $M_{\mathfrak p}=0$, the identification of $M\otimes_A k(\mathfrak p)$ with $M_{\mathfrak p}/\mathfrak p A_{\mathfrak p}M_{\mathfrak p}$, and Nakayama's lemma in the direction that needs $M$ finitely generated.
+
 Let $S=A\setminus\mathfrak p$, so $A_{\mathfrak p}=S^{-1}A$ and $M_{\mathfrak p}=S^{-1}M$.
 
 ::: pf
