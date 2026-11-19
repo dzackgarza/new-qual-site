@@ -7633,3 +7633,42 @@ themselves.
 **What could not be verified.** Fourteen cards have sheets that are scans with no text layer and no `_extracted.md`: the eleven of `SRC-ART-ALG-2003-2009-PRELIMS` and `SRC-ART-ALG-2010-2015-PRELIMS`, two in the UGA Fall 2003 preliminary (`P-F03C1`, `P-FKEN5`), and `P-ALGPAN11-01`, whose review sheet holds only headings in text and images for the questions. The only extraction route in the repository is `just ocr-pdf`, which runs `tools/mistral_ocr.py` against an external service; nothing was sent. They are blocked, not deferred.
 
 **Measured, not yet worked.** Of the residue's cards that name no source at all, 279 collections hold at least one and 137 cards sit outside any collection. The largest sheet-backed groups — `SRC-GRE-MATH-SUBJECT` 18, `SRC-MATHEMATICAL-TRIVIUM` 17, `SRC-MATH4100-6100-2020` 16, `SRC-TOP-WORKSHOP` 13, `SRC-UCSD-TOP-JUSTIN` 11, `SRC-KENT-STATE-RING-THEORY-QUAL-2017` 11 — are the tractable ones; the textbook-backed groups (`SRC-TEXT-HAT02` 35, `SRC-TEXT-HK71` 21, `SRC-TEXT-SS03` 20) need a page read per card.
+
+## 2026-11-19: Yang's 5.1.3, 5.1.6 and 5.2.6 at printed pp. 100 and 103 — three more of the queue, all correct as printed
+
+**Object and need.** `P-AGH513VIRTGENUS` (V.1.3), `P-AGH516DIAGONAL` (V.1.6) and
+`P-AGH526GROTHSPLIT` (V.2.6), three more of the ten Chapter V cards counted in the record above.
+
+**V.1.3, printed p. 100.** All three parts from Riemann--Roch:
+$\chi(\OO_D)=\chi(\OO_X)-\chi(\OO_X(-D))=-\frac12D\cdot(D+K)$, so $2p_a(D)-2=D\cdot(D+K)$; that
+expression depends only on the linear equivalence class, which is (b); and (c) is
+$p_a(-D)=1+\frac12(-D)\cdot(-D+K)=D^2-p_a(D)+2$ and $p_a(C+D)=p_a(C)+p_a(D)+C\cdot D-1$. The second of
+those is checked directly: expanding $\frac12(C+D)\cdot(C+D+K)$ gives the three terms plus $C\cdot D$,
+and the constants $1-1-1$ give the $-1$.
+
+**V.1.6, printed p. 100.** $\Delta\cdot(C\times\{\mathrm{pt}\})=\Delta\cdot(\{\mathrm{pt}\}\times C)=1$
+with $\Delta\cdot K_{C\times C}=4g-4$ by (II, 8.3), so adjunction $2g-2=\Delta\cdot(\Delta+K)$ gives
+$\Delta^2=2-2g$; and a numeric relation $al+bm+c\Delta\equiv0$ tested against $l$, $m$, $\Delta$ gives
+$b+c=a+c=a+b+c(2-2g)=0$, hence $a=b=c=0$ — the three are independent for every $g$, which is what the
+exercise asks at $g\ge1$.
+
+**V.2.6, printed p. 103.** The splitting by induction on the rank: (III, 8.8) gives
+$H^1(\PP^1,\mathcal E(n))=0$ for $n\gg0$ and Serre duality $H^0(\PP^1,\mathcal E(-n))=0$ for $n\gg0$,
+so there is a largest $i$ with a section of $\mathcal E(-i)$, giving
+$0\to\OO(i)\to\mathcal E\to\mathcal F\to0$ with $\mathcal F$ locally free of rank $r-1$; if
+$\mathcal F=\bigoplus_{j\le r-1}\OO(n_j)$ then any $n_j>i$ would give a section of $\mathcal E(-n_j)$,
+contradicting the choice of $i$, so all $n_j\le i$ and
+$\operatorname{Ext}^1(\OO(n_j),\OO(i))=H^1(\PP^1,\OO(i-n_j))=0$ splits the extension. That is the
+printed hint's induction with the maximal-degree subinvertible sheaf replaced by the largest twist that
+carries a section; no slip in the entry.
+
+**The remainder, recounted.** Seven Chapter V cards still lack Yang: V.1.7, V.1.10, V.2.7, V.2.9,
+V.2.11, V.2.14, V.2.16.
+
+**Repair.** `P-AGH513VIRTGENUS` in `03e04de970`, `P-AGH516DIAGONAL` in `325d9ca586`,
+`P-AGH526GROTHSPLIT` in `6cf4a37525`, one commit each; this record in the COMPLAINTS commit that
+carries it. No step, statement or hypothesis of any card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.1.3 and 5.1.6 at printed p. 100 and 5.2.6 at
+printed p. 103, rendered as page images; the statements the cards carry, not reopened against the book
+in this pass. Not read: the remaining seven cards' entries, and the printed books themselves.
