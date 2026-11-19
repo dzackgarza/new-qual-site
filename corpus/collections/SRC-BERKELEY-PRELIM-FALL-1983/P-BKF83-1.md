@@ -17,6 +17,13 @@ audit:
   by: chatgpt
   date: 2026-09-24
   note: Checked the height-pi contour identity, the double-pole residue at i*pi/2, decay on the vertical sides, and the lambda=0 limit.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall83.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1983, retained in this repository as `assets/attachments/Fall83.pdf`; the statement below is its wording.
 
 ::: pf
 
