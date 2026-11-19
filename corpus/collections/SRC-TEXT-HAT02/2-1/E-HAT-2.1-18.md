@@ -28,6 +28,17 @@ audit:
   date: 2026-10-31
   note: >-
     Read the long exact sequence computation: $\QQ$ is totally disconnected so $H_0(\QQ)=\bigoplus_{q}\ZZ[q]$, and $H_1(\RR,\QQ)$ is the kernel of the augmentation to $H_0(\RR)=\ZZ$, the free abelian group on the classes $[q]-[q_0]$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 18 of §2.1, printed p. 131. Correct: $\RR$ is contractible so
+    $H_1(\RR)=0$ and $H_0(\RR)=\ZZ$; $\QQ$ is totally disconnected, so $H_0(\QQ)=\bigoplus_{q\in\QQ}\ZZ[q]$;
+    the pair sequence identifies $H_1(\RR,\QQ)$ with the kernel of the augmentation, which is free
+    on the classes $[q]-[0]$ for $q\ne0$ — spanning by the vanishing of the total coefficient and
+    independence by comparing coefficients of the $[q]$. Removed one thing only: a closing step
+    proved by naming the three steps above it (STYLE-08). Nothing else changed. Not claimed: a
+    published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -108,23 +119,6 @@ $$
 \sum_{q\ne0}n_q([q]-[0]),
 $$
 so $\mathcal B$ spans. If a finite linear combination of elements of $\mathcal B$ vanishes, comparison of the coefficient of each $[q]$ with $q\ne0$ shows every coefficient is zero, so the set is independent.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore
-$$
-\boxed{H_1(\RR,\QQ)
-\cong\bigoplus_{q\in\QQ\setminus\{0\}}\ZZ,}
-$$
-with basis represented by the classes $[q]-[0]$.
-
-::: pf-proof
-
-Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 
