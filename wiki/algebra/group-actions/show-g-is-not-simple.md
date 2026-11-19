@@ -10,6 +10,10 @@ topics:
 
 Throughout, $G$ is a finite group of order $n$, $p$ is a prime, $n = p^k m$ with $p\notdivides m$, and $n_p$ is the number of Sylow $p$-subgroups of $G$.
 
+[[FD-2UWAQ]]
+
+[[D-7TQ2M]]
+
 ## Constraints from the order
 
 By Sylow's third theorem,
