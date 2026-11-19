@@ -35,6 +35,23 @@ audit:
     satisfies g(θ,t) = (θ + δρ(−t), −t), so a fixed point would force t = 0 and
     δρ(0) = δ ≠ 0. This is consistent with tau(r) = chi(M ∩ P) = 0 from the preceding
     exercise, so the Lefschetz theorem does not obstruct it. No defect.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 5 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against Li, Exercise 2.C.3 (Hatcher 2.C.5),
+    whose statement closes printed p. 44 and whose solution is on printed p. 45 — the card's page is
+    right. The card's criticism of the source is also right, and was checked against the page: Li's
+    $H(x,t)$ is the identity off the collar and twists by $\pi t\abs{s}$ inside it, so at $t=0$ it is
+    not $r$ off the collar, and at $s=0$ the twist vanishes, so his fixed circles stay fixed and the
+    claim that the time-one map has no fixed point on $N$ does not follow. Checked in the card:
+    $h_s(\theta,t)=(\theta+s\delta\rho(t),t)$ is an isotopy of homeomorphisms supported in the
+    collars, so $h_s\circ r$ is a homotopy from $r$ to $g=h\circ r$; off the collars $g=r$ has no
+    fixed point because $\operatorname{Fix}(r)=M\cap P$ lies in them; inside,
+    $g(\theta,t)=(\theta+\delta\rho(-t),-t)$ forces $t=0$ and then $\delta\ne0$ in $S^1$; and
+    $\tau(r)=\chi(M\cap P)=0$ by Exercise 4, so no Lefschetz obstruction exists. No defect.
+
 ---
 
 ::: {.problem}
