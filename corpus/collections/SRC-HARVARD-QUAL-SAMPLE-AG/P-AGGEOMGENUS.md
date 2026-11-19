@@ -29,6 +29,8 @@ What might the geometric genus of a singular curve be?
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
 Let $C$ be an integral projective curve over an algebraically closed field, and let
 $$
 \nu:\widetilde C\longrightarrow C

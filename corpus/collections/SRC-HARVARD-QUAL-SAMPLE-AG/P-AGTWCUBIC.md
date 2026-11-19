@@ -32,6 +32,8 @@ More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a se
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
 Let $C\subseteq\PP^3$ be the projective closure of the affine twisted cubic.  In homogeneous coordinates $[x:y:z:w]$ it is parametrized by
 $$
 \nu_3:\PP^1\longrightarrow\PP^3,
