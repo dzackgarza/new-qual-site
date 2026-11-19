@@ -131,7 +131,7 @@ The Thom isomorphism of Corollary 4D.9 (printed p.~441) is $\Phi\colon H^i(S^n)\
 $\Phi(e)=U\smile U$ in $H^{2n}(V,S(V);\ZZ)$, and $H(p)=\pm1$.
 
 ::: pf-proof
-The identity at the end of \S4.D (printed p.~444) says that under the Thom isomorphism the Euler class corresponds to the square of the Thom class, $\Phi(e)=U\smile U$. Since $\Phi$ is an isomorphism and $e$ generates $H^n(S^n)$ by step [](#gysin){.pf-ref}, $U^2$ generates $H^{2n}(C_p;\ZZ)\cong\ZZ$. The Hopf invariant of $p$ is defined (printed p.~427) by writing $\alpha^2=H(p)\beta$ for a generator $\alpha$ of $H^n(C_p)$ and a generator $\beta$ of $H^{2n}(C_p)$; taking $\alpha=U$ makes $\alpha^2=U^2$ a generator, so the integer $H(p)$ is $\pm1$.
+The identity at the end of §4.D (printed p.~444) says that under the Thom isomorphism the Euler class corresponds to the square of the Thom class, $\Phi(e)=U\smile U$. Since $\Phi$ is an isomorphism and $e$ generates $H^n(S^n)$ by step [](#gysin){.pf-ref}, $U^2$ generates $H^{2n}(C_p;\ZZ)\cong\ZZ$. The Hopf invariant of $p$ is defined (printed p.~427) by writing $\alpha^2=H(p)\beta$ for a generator $\alpha$ of $H^n(C_p)$ and a generator $\beta$ of $H^{2n}(C_p)$; taking $\alpha=U$ makes $\alpha^2=U^2$ a generator, so the integer $H(p)$ is $\pm1$.
 :::
 
 :::

@@ -54,7 +54,7 @@ audit:
   date: 2026-11-19
   note: >-
     Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
-    cites the retained solution by section as `\S3.2`, a section sign written as a TeX command
+    cites the retained solution by section as §3.2, a section sign written as a TeX command
     outside a math span, which the HTML writer drops; it now reads the character `§3.2`, as the
     corpus does elsewhere. Mathematics and wording unchanged.
 ---
