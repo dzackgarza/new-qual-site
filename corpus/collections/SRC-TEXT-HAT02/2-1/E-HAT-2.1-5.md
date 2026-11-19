@@ -38,6 +38,17 @@ audit:
 
     Rerun on the supported Sage development image: Sage 11.0.beta5, Python 3.14.10, source
     HEAD b0cd7d86e2, all checks passing there.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 5 of §2.1, printed p. 131, using the square model of the Klein
+    bottle with its two triangles. Correct: $C_2=\ZZ^2$, $C_1=\ZZ^3$, $C_0=\ZZ$ with $\partial_1=0$
+    because all edges are loops, and with $\partial U=a+b-c$, $\partial L=a-b-c$ the matrix
+    $\begin{pmatrix}1&1\\1&-1\\-1&-1\end{pmatrix}$ is injective ($x-y=0$ and $x+y=0$ force $x=y=0$);
+    the two relations give $2b=0$ and $a=c-b$, so $H_1=\ZZ\langle c\rangle\oplus\ZZ_2\langle b\rangle$,
+    with $H_0=\ZZ$ and $H_2=0$. Nothing changed. An earlier event records the Sage certification of
+    the boundary matrices on the supported development image. Not claimed: a published solution.
 ---
 
 ::: {.problem}
