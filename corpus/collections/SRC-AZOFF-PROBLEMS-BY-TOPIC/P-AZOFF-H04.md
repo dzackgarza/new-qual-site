@@ -77,7 +77,7 @@ Hence the strict inequality holds.
 ::: {.pf-step #s2}
 
 The polynomial $p$ has exactly three zeros in the open unit disk,
-counting multiplicity.
+counting multiplicity, so the requested number of zeros is $3$.
 
 ::: pf-proof
 
@@ -91,27 +91,6 @@ $-4z^3$ has exactly three zeros there, all at $z=0$ counted with
 multiplicity.
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-
-The answer is
-$$
-\boxed{3}.
-$$
-
-::: pf-proof
-
-This is step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} gives the requested number of roots.
 
 :::
 
