@@ -8486,3 +8486,61 @@ printed book itself.
 **Impact and owner.** The ticket's last open item is closed. What remains unverified is whether the wiki page's own sentence should stay, now that the corpus answers `P-HCAO21`: it summarizes the answer to a problem the collection poses. That is an editorial question for whoever owns the oral-exam collection, not a defect.
 
 **Uncertainty.** The derivation is checked line by line against the two steps it cites; the cited solution was read, not re-proved. The Huneke page reference is as verified earlier and is not used by the card.
+
+## 2026-11-19, Yang sweep: IV.3.7--IV.3.9 cited at printed p. 88, two loose steps recorded
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.3.7, 4.3.8 and 4.3.9 are all on printed p. 88, the last three
+entries on that page before the section ends.
+
+**`P-AGH437NODALPLANEQUARTICNOTAPROJECTION`, IV.3.7 — cited, printed p. 88, no defect.** The single
+node is a computation the entry calls "clear" and states correctly: $f_x=y+4x^3$ and $f_y=x+4y^3$
+have no common zero besides the origin when $\characteristic k\neq2$, since they force $y=-4x^3$ and
+$x=-4y^3$, hence $x(1-256x^8)=0$, and on $256x^8=1$ one has $f=x^4(256x^8-3)=-2x^4\neq0$; the lowest
+term $xy$ makes the node ordinary, so $g(\widetilde C)=3-1=2$. A birational projection preserves
+degree, so the hypothetical $X\subseteq\PP^3$ has degree $4$ and genus $2$, which (4.3.6) leaves
+impossible. Commit `04fea2d690`.
+
+**`P-AGH438STRANGECURVES`, IV.3.8 — cited, printed p. 88, one opaque citation recorded.** (a) In
+characteristic $p$ the derivative of $(t,t^p,t^{2p})$ is $(1,0,0)$, so every tangent line is a
+translate of one direction and all pass through $(1:0:0:0)$, the strange point. (b) projects away
+the ambient dimension --- the image of $P$ under a projection from $O\notin X$ is a strange point of
+the image --- and then attributes $X\cong\PP^1$ to "theorem 3.9", which is not identified and does
+not read as any statement in Hartshorne §IV.3, whose 3.9 is the exercise next door. The argument the
+card carries is what settles it: in characteristic zero the projection from $P$ has vanishing
+differential at every nonsingular point, so it is constant, and $X$ lies on a line through $P$. The
+printed reduction to $\PP^3$ is unnecessary for that step. Recorded on the card. Commit
+`3d7f354097`.
+
+**`P-AGH439BERTINILEMMA`, IV.3.9 — cited, printed p. 88, one dimension count recorded as not
+giving its bound.** The strategy is right: the planes through a tangent line, and those through a
+multisecant line, are two families in $\check{\PP}^3$; if each is a proper closed subset, a general
+plane contains neither, and then $X\cap H$ is $d$ distinct points (no tangent line, so transverse)
+with no three collinear (a trisecant inside $H$ would give the collinear triple). What is printed
+cannot establish the first of those: it dimensions the tangent *variety*, a surface in $\PP^3$, and
+the planes through a surface fill the whole dual space, so the count gives $3$, not $2$. The bound is
+the card's step `#s1` --- the incidence variety $\{(P,H):T_PX\subseteq H\}$ is a $\PP^1$-bundle over
+$X$, hence two-dimensional, and the bad planes are its image --- with the trisecant bound of `#s3`
+for the second family. Recorded on the card, which points at both steps. Commit `e3d115784a`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered the steps
+$1$--$8$ on each with `(QED labels present)`, which also resolves the two `pf-ref`s this batch adds
+to `P-AGH439BERTINILEMMA`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` on the authored prose returned `None`; `tools/sync_macros.py --check`
+silent.
+
+**Push.** `github_push` answered `up_to_date` for a branch the remote did not yet have, and
+`git ls-remote` after a fetch showed all three commits on `main`. That is the second distinct form
+this session of the same hazard --- a push call whose answer is neither `pushed` nor an error still
+says nothing about whether the commits are there. `git ls-remote` after `git fetch` is the only
+check that counts.
+
+**Not checked.** Yang's Solutions outside printed p. 88; the Hartshorne pages of the three exercises,
+not reopened in this pass, the comparison being against the statements the cards carry; and the
+printed book itself.
+
+**The remainder.** Thirty-eight Chapter IV cards still lack Yang; the queue now starts at IV.3.10
+`P-AGH4310NOTEVERYSECANTMULTISECANT`, and Yang's 4.3.10 and later entries are past printed p. 88,
+whose map was established only to 4.3.9 --- the next batch has to locate them first.
