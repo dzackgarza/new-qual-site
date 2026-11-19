@@ -42,7 +42,7 @@ Calculate the residue of $1/\sin \pi z$ at $z = n \in \ZZ$.
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 103; the statement below is its wording.
+This is Exercise 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 103 [@SS03, ch. 3, Exercise 1 (p. 103)]; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. Both assertions were checked: the zeros of $\sin\pi z$ are exactly the integers, each is simple, and the residue of $1/\sin\pi z$ there is $(-1)^n/\pi$.
 
 ::: pf
