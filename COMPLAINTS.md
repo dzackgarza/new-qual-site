@@ -6362,3 +6362,13 @@ pp. 422--423, whose folios 407 and 408 are on the pages. Not read: Yang's Soluti
 pp. 109--111; the printed books themselves; and no search of the literature beyond these files. Not
 checked: whether any other entry of Yang's set covers a card of this batch correctly, in particular
 his 5.4.9, which is a sketch on printed pp. 110--111 and was not adjudicated here.
+
+## 2026-11-19, eleventh item: the CH outline collections carry the outline's exercise numbers, not Gallian's
+
+**Object.** Two residue-1 cards that named a Gallian exercise number the seventh edition does not print.
+
+**The measurement.** `P-CH13-29` said "The statement is Gallian's subfield test, Chapter 13 Exercise 29", and `P-CH13-35` said its statement was Chapter 13 Exercise 35. In the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf` (page 270 of the file, whose running head is printed p. 256) the subfield test is printed as **(Subfield Test), Exercise 25**, and the order-$2^n$ characteristic statement as **Exercise 31** — the same page, four and six items earlier. The cards' numbers are the numbers of the collection's own outline (`assets/attachments/Ch13Sltns.pdf`, entries "# 29" and "# 35"), which is a different numbering of the same chapter; each card now names both numbers and the printed page, and records a `source-corrected` event.
+
+**What that implies for the other CH cards.** The thirteen `SRC-CH*-SOLUTION-OUTLINES` collections share one provenance href, and their card ids encode the outline's numbering. Any card in them that attributes its number to Gallian needs the printed page read before the claim stands. The two here are confirmed; the rest are not measured. The outline is still the source that carries a solution, so the repair is not to renumber the cards — it is to say which numbering is being used.
+
+**How the page was located.** `pdftotext -layout` over the retained scan, then the running head of each page, since the book's printed folio is in the head and the file's own pagination runs about fourteen pages ahead of it in Chapter 13. The OCR text layer is mangled (`5` for `=`, `2` for `−`), so the exercise *numbers* and the opening words are legible but nothing should be transcribed from it; the statements were not changed.
