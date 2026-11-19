@@ -78,6 +78,15 @@ audit:
     cites the representability theorem by section as `\S4.3`, a section sign written as a TeX
     command outside a math span, which the HTML writer drops; it now reads the character `§4.3`,
     as the corpus does elsewhere. Mathematics and wording unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this exercise, and that is false: Sam's set,
+    retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves it at §4.3 Exercise 5 on
+    printed p. 25. The rendered sentence now cites it and says what the card adds. Found by
+    screening the residue's absence claims against the solution sets inventoried in
+    `wiki/topology/resources/solutions.md`; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -85,7 +94,7 @@ Show that $[X, S^n] \approx H^n(X; \ZZ)$ if $X$ is an $n$-dimensional CW complex
 :::
 
 ::: {.solution}
-Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$ built as the hint prescribes, so that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Cellular approximation makes every map out of the $n$-dimensional $X$ land in $S^n$, which gives surjectivity, and makes every homotopy out of $X\times I$ land in $K(\ZZ,n)^{n+1}=S^n$, which gives injectivity; representability of $H^n(-;\ZZ)$ finishes. The argument is this card's own: no retained solution set covers this exercise.
+Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$ built as the hint prescribes, so that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Cellular approximation makes every map out of the $n$-dimensional $X$ land in $S^n$, which gives surjectivity, and makes every homotopy out of $X\times I$ land in $K(\ZZ,n)^{n+1}=S^n$, which gives injectivity; representability of $H^n(-;\ZZ)$ finishes. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 5**, printed p. 25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which builds $K(\ZZ,n)$ from $S^n$ by attaching cells of dimension $\ge n+2$, obtains injectivity and surjectivity from cellular approximation, and concludes through $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$. The card states the identification of the unbased and based class sets that the argument uses.
 
 ::: pf
 
