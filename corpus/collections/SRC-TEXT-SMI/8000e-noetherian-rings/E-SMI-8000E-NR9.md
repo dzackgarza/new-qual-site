@@ -32,6 +32,13 @@ audit:
     I = 2Z gives the counterexample since 1/2·2 = 1 leaves 2Z; the surjective case
     uses a preimage of the scalar; and both composites are the identity on the two
     sides, the first using ker f ⊆ I. No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now says which two identities make extension and
+    contraction mutually inverse, instead of naming the conclusion. Nothing mathematical was changed.
+
 ---
 
 ::: {.exercise}
@@ -156,6 +163,11 @@ $$
 \{I\triangleleft R:\ker f\subseteq I\}
 $$
 and the ideals of $S$.
+
+::: pf-proof
+Step [](#s3){.pf-ref} gives $f(f^{-1}(J))=J$ for every ideal of $S$, and step [](#s4){.pf-ref} gives $f^{-1}(f(I))=I$ for every ideal of $R$ containing $\ker f$, so the two maps are mutually inverse.
+:::
+
 :::
 
 :::
