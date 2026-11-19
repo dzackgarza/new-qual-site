@@ -33,4 +33,4 @@ A finite field is a [[D-UI6CU|field]] with finitely many elements, and its prime
 
 [[E-77EY7]]
 
-Hence a monic irreducible $f\in\FF_p[x]$ of degree $d$ splits over $\FF_{p^n}$ exactly when $d\divides n$: by [[PR-73MCN]] its root generates a copy of $\FF_{p^d}$, and by [[PR-Q2IFX]] the subfields of $\FF_{p^n}$ are the $\FF_{p^d}$ with $d\divides n$.
+Hence a monic irreducible $f\in\FF_p[x]$ of degree $d$ splits over $\FF_{p^n}$ exactly when $d\divides n$: by [[PR-73MCN|the factorization of $x^{p^n}-x$]] its root generates a copy of $\FF_{p^d}$, and by [[PR-Q2IFX|the classification of the subfields]] the subfields of $\FF_{p^n}$ are the $\FF_{p^d}$ with $d\divides n$.
