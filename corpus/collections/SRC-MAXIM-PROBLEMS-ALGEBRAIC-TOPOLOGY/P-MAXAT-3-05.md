@@ -16,6 +16,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against section 3, problem 5 of the retained Laurentiu Maxim Problems in Algebraic Topology PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The corpus audit's duplicate-bodies violation on this card and P-MAXAT-4-01 was traced to the source
+    rather than to the corpus. Read in this pass: assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf,
+    which is three pages, section 3 "Cohomology ring" item (5) on printed p. 2 reading "Find the ring structure on
+    H*(SU(n)), H*(U(n)), H*(V_k(C^n))." and section 4 "Spectral Sequences and Applications" item (1) on the same
+    page repeating the sentence verbatim. The source prints the question twice, so two cards with one body are
+    correct; the card now says so and names its sibling. Not checked: whether the author intended the second
+    printing to be answered by a spectral-sequence argument instead, which is an inference from the section title
+    and is not recorded on the card as a claim about the source.
 ---
 
 ::: {.problem}
@@ -23,6 +35,8 @@ Find the ring structure on $H^{*}(SU(n))$, $H^{*}(U(n))$, $H^{*}(V_{k}(\CC^{n}))
 :::
 
 ::: {.solution}
+
+The printed source states this problem twice: as Problem 3.5 in the section "Cohomology ring" and verbatim again as Problem 4.1 in the section "Spectral Sequences and Applications", both on printed p. 2 of `assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf`. This card answers the first printing, by the cellular and fibration computation that section asks for; the second printing has its own card, `P-MAXAT-4-01`, whose statement is identical because the source's is. The two cards therefore share a body by design, and the corpus audit's `duplicate-bodies` violation on that pair is this duplication, not a transcription error.
 
 All cohomology groups are taken with integral coefficients. The rings are exterior algebras on odd-degree generators.
 
