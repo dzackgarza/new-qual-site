@@ -11,6 +11,22 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 12, printed p. 420,
+    and Proposition 4.62, printed p. 406. The maps Phi and Psi, their being fibre
+    preserving, and the shape of the two composites are right. The homotopy contracting
+    Psi Phi was described by a parametrization that at time s traverses H_a on
+    [0,(1-s)/2], the reverse on [(1-s)/2,1-s] and then stays at f(a) on [1-s,1], which
+    at s = 1 gives the constant path at f(a), not gamma: it contracts the whole
+    concatenation and changes the endpoint, so it is not a fibre homotopy to the
+    identity. Repaired to contract the backtracking loop inside a shrinking initial
+    segment while gamma is reparametrized onto the rest, which is (Psi Phi)(a,gamma) at
+    s = 0 and gamma at s = 1 and keeps the endpoint gamma(1) throughout. Independent
+    reports from the swarm flagged the same defect. Statement unchanged. Not checked:
+    nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -71,9 +87,9 @@ The endpoint of $\overline{H_{a}}*\gamma$ is the endpoint of $\gamma$, so $p_{g}
 $\Psi\Phi\simeq1_{E_{f}}$ and $\Phi\Psi\simeq1_{E_{g}}$ through fiber-preserving homotopies.
 
 ::: pf-proof
-On $E_{f}$, the composite sends $(a,\gamma)$ to $(a,\,H_{a}*(\overline{H_{a}}*\gamma))$, which is the path $\gamma$ preceded by the backtracking path $H_{a}*\overline{H_{a}}$ from $f(a)$ to $f(a)$. Since a path followed by its reverse is homotopic to the constant path relative to the endpoints — the standard contraction, which at time $s$ traverses $H_{a}$ on $[0,(1-s)/2]$, then $\overline{H_{a}}$ on $[(1-s)/2,1-s]$, and stays at $f(a)$ on $[1-s,1]$ — and since concatenation and reparametrisation are continuous in the data, there is a homotopy
+On $E_{f}$, the composite sends $(a,\gamma)$ to $(a,\,H_{a}*(\overline{H_{a}}*\gamma))$, which is the path $\gamma$ preceded by the backtracking path $H_{a}*\overline{H_{a}}$ from $f(a)$ to $f(a)$. The loop $H_{a}*\overline{H_{a}}$ is contracted inside a shrinking initial segment while $\gamma$ keeps the rest of the interval: at time $s\in[0,1]$ the path traverses $H_{a}$ on $\bigl[0,(1-s)/4\bigr]$, then $\overline{H_{a}}$ on $\bigl[(1-s)/4,(1-s)/2\bigr]$, then $\gamma$ reparametrized affinely onto $\bigl[(1-s)/2,1\bigr]$. At $s=0$ this is $H_{a}*\overline{H_{a}}$ followed by $\gamma$, which is $(\Psi\Phi)(a,\gamma)$; at $s=1$ the first two pieces have length zero and the path is $\gamma$ itself; and at every $s$ it runs from $f(a)$ to $\gamma(1)$, because the contracted piece is a loop at $f(a)$. Reparametrization and concatenation are continuous in $(a,\gamma,s)$, so this is a homotopy
 $$
-(a,\gamma,s)\longmapsto\big(a,\ \text{the reparametrised concatenation at time } s\big)
+(a,\gamma,s)\longmapsto\bigl(a,\ \text{the reparametrized concatenation at time } s\bigr)
 $$
 from $\Psi\Phi$ to the identity. Each stage leaves the endpoint unchanged, so the homotopy is fiber-preserving. The same argument with $g$ in place of $f$ and $\overline{H_{a}}$ in place of $H_{a}$ contracts $H_{a}$ followed by its reverse, giving $\Phi\Psi\simeq1_{E_{g}}$.
 :::
