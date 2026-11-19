@@ -10,6 +10,14 @@ audit:
   - event: source-checked
     by: gpt-5.6-sol
     date: 2026-09-14
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained sheet `assets/attachments/ist_ca_2015.pdf`: the statement is Problem 3.1,
+      whose printed words are the card's. The problem number and the file are now named in the
+      solution's opening sentence; the earlier event recorded the check without saying what was
+      read. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -22,6 +30,7 @@ Show that $\arg$ is not continuous, and determine its set of discontinuities.
 :::
 
 ::: {.solution}
+This is Problem 3.1 of the retained sheet `assets/attachments/ist_ca_2015.pdf` (the discontinuity of the principal argument), and the statement below is its wording.
 
 ::: pf
 
