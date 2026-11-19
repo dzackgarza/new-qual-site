@@ -8104,3 +8104,17 @@ carries it. No step, statement or hypothesis of any card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 4.1.9, 4.1.10 and 4.2.1 at printed p. 85,
 rendered as page images; the statements the three cards carry, not reopened against the book in this
 pass. Not read: the other fifty-six entries, and the printed books themselves.
+
+## 2026-11-19, thirteenth item: two more residue-5 cards — §2.3 Ex. 11 correct, §3.5 Ex. 5 correct with two dead steps rebuilt
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-23-11`, §2.3 Exercise 11, printed p. 48 — correct.** (a) the trace-zero condition is linear, so $V$ is a real subspace of $M_2(\CC)$; (b) writing $a,b,c$ in real and imaginary parts gives the six displayed matrices uniquely, so they are a real basis and $\dim_{\RR}V=6$; (c) the condition $A_{21}=-\overline{A_{12}}$ is preserved by addition and by real scaling, and with $a=x+iy$, $b=u+iv$ one has $c=-\bar b=-u+iv$, so every element of $W$ is $x[[1,0],[0,-1]]+y[[i,0],[0,-i]]+u[[0,1],[-1,0]]+v[[0,i],[i,0]]$ with unique real $x,y,u,v$ — the four displayed matrices are a real basis and $\dim_{\RR}W=4$. Commit `e8119bdbbf`.
+
+**`E-HK-35-5`, §3.5 Exercise 5, printed p. 110 — correct, two dead steps rebuilt.** The trace argument is right: if $AB-BA=I$ then taking traces gives $n=\operatorname{tr}(I)=\operatorname{tr}(AB-BA)=0$, since $\operatorname{tr}(AB)=\sum_i\sum_j a_{ij}b_{ji}=\operatorname{tr}(BA)$. Structural defects repaired: the first step only restated the supposition and its proof was the words "assume the contrary", and the last step's proof was only two back-references. The proof is now three steps — the trace under the assumption, the vanishing of $\operatorname{tr}(AB-BA)$, and the contradiction $n=0$ — each carrying its derivation, with the lower-case proof sentences made sentences. No claim changed. Commit `258679ba78`.
+
+**The pattern this is the twelfth instance of.** A step whose entire proof is "assume the contrary", or a bare list of `[](#…)` references, passes every gate: `qualc.authoring check` parses it, `tmp/lam.sh` numbers it, `report_check` renders it. It is a step with a body that says nothing, and only a reader sees it. The ledger's seventh item named the same defect for steps with no body at all; this is its sibling.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-35-5` numbering 1–3 with QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set, and none was sought; the proofs were checked as written against the printed statements.
