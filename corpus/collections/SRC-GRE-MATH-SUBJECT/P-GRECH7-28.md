@@ -14,6 +14,16 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 28 of the Chapter 7 review questions in assets/attachments/extracted/Chapter-7.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (A), (C) and (D) are the three metric axioms, and
+    (B) is the triangle inequality in its correct non-strict form. (E) asserts equality there, which
+    fails: in R with the usual metric and x = 0, y = 5, z = 1 one has delta(x,z) = 1 while
+    delta(x,y) + delta(y,z) = 5 + 4 = 9. So the property that is NOT a metric property is (E), which
+    is the card's conclusion.
+    property that is NOT a metric property is (E). The card's conclusion is (E), which is right.
 ---
 
 ::: {.problem}
