@@ -259,3 +259,10 @@ Step [](#annulus-zero-count){.pf-ref}.
 :::
 
 :::
+
+::: {.remark}
+The witness this card is transcribed from, row 108 of `Combined_Questions.yaml` at revision `6190e0ee`, prints $2z^5-6z^2-z+1$, and the card keeps that sign.
+The exercise also circulates with $+z$: the University of Iowa Analysis Qualifying Examination of 12 January 2024 states it as $p(z)\coloneqq 2z^5-6z^2+z+1$ and asks for the zeros of $p$, counting multiplicities, in $\operatorname{ann}(0;1,2)$ (Part II, Problem C-3).
+The count is $3$ for either sign, and the two comparisons above are already the reason: the linear term enters the triangle inequality only through $\abs z$, so on $\abs z=2$ the bound $\abs{-6z^2\pm z+1}\le 6\cdot4+2+1=27<64=\abs{2z^5}$ holds with both signs, and on $\abs z=1$ the bound $\abs{2z^5\pm z+1}\le 2+1+1=4<6=\abs{-6z^2}$ holds with both signs.
+Hence $f$ has five zeros in $\abs z<2$ and two in $\abs z<1$ either way, leaving three in the annulus.
+:::
