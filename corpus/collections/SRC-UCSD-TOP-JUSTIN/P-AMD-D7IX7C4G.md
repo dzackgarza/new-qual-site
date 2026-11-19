@@ -16,6 +16,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The statement is the case n = 2, m = 1 of problem 5 of the Fall 2004 UCSD
+    290 topology qual, in the retained extraction
+    assets/attachments/FA04_290_Topology_Qual_extracted.md: "Prove the
+    Borsuk-Ulam theorem that if n > m >= 1, then there is no map
+    g: S^n -> S^m which commutes with the antipodal map." Note on provenance:
+    this file is not among the twelve F14 sheets listed as the collection's
+    provenance, and a search of those sheets' extractions for "antipodal" returns
+    nothing, so the printed source located is the Fall 2004 exam, not the sheets
+    the collection names.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. Restricting to the equator gives an odd map
+    g: S^1 -> S^1, and an odd map of circles has odd degree: in a lift to the
+    line, the relation g(t + 1/2) = -g(t) forces the differences
+    g~(t + 1/2) - g~(t) to be k + 1/2 for a constant integer k, so the degree
+    g~(1) - g~(0) is 2k + 1, in particular nonzero. On the other hand g extends
+    over the upper hemisphere, which is a disk, so it is nullhomotopic and its
+    degree is zero. That contradiction finishes the proof. Nothing was changed.
 ---
 
 ::: {.problem}
