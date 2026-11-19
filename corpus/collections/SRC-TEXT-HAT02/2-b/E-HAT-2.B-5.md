@@ -227,6 +227,35 @@ audit:
     has only the PDF, and the remark keeps the reading copy and the page arithmetic for it
     (PDF page 131 = printed pp. 236--237). Checked: the presence of the two files, and that the
     Putman text version contains §3 and Theorem 2.1. Not changed: any page number or argument.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own steps. One gap found and repaired, in
+    step `#schoenflies-pair`: it concluded from the acyclicity of $X$ and $A$ that $H_j(X,A)=0$
+    for all $j>0$, which the exact sequence gives only for $j\geq2$. In degree one exactness gives
+    $H_1(X,A)\cong\ker(H_0(A)\to H_0(X))$, and that needs the separate remark that $A$ is
+    connected and $X$ path-connected, so that the map is an isomorphism of two copies of $\ZZ$;
+    the step now says this. Checked and unchanged in the same step: $D\cap S=h'(D^k\setminus L)=\ell$
+    and $D\cap D'=\varnothing$; $D^n\setminus L$ is star-shaped about $0$, so $D$ is contractible;
+    $S\setminus\Sigma=\ell\sqcup(S\setminus\bar\ell)$ with exactly two components, from
+    $\widetilde H_0(S\setminus\Sigma)=\ZZ$ by Proposition 2B.1(b) applied in $S\cong S^k$ and local
+    path connectedness; $D'=\overline{S\setminus\bar\ell}$ is a compact $k$-manifold with boundary
+    $\Sigma$, near $\Sigma$ through the chart $h'^{-1}$ and the half-space
+    $\{\norm{x}\geq1/2\}$; the bicollar $\beta(h'(x),t)=h'((1+t/2)x)$ has image in
+    $h'(\{\tfrac14\leq\norm x\leq\tfrac34\})\subset h'(\operatorname{int}D^k)\subset S$; Brown's
+    Theorem 5 with $n=k$ and Bredon's Theorem 19.11 then make $D'$ a disk. The excision hypotheses
+    hold as written: $\overline{\ell}^{X}=\ell$ because $\Sigma\subseteq D'$, and
+    $\ell\subseteq U=h'(\operatorname{int}D^n)\setminus h'(L)\subseteq D$, since
+    $h'(\operatorname{int}D^n)$ is open by Invariance of Domain and $h'(L)$ is compact.
+    $D\setminus\ell=h'(D^n\setminus D^k)$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$ by
+    collapsing the first $k$ coordinates and pushing the last $n-k$ out, so the exact sequence of
+    the excised pair gives the isomorphism in every degree, $H_0$ included because both relative
+    groups adjacent to it vanish. The $k=0$ paragraph was checked separately: $L=\varnothing$,
+    $D'=S^0\setminus\ell$ a point, $X\cong\RR^n$ acyclic, and $D\setminus\ell\simeq S^{n-1}$.
+    Also checked, in the first proof, that its nonvanishing is not claimed from the duality
+    pairing and that step `#normal-generator` names `#schoenflies-pair` as what supplies it. Not
+    claimed: a published solution of Exercise 2.B.5.
 ---
 
 ::: {.problem}
@@ -306,7 +335,7 @@ H_j(X,A)\cong H_j\bigl((S^n\setminus D')\setminus\ell,\,D\setminus\ell\bigr)
 $$
 the right-hand side using $D'\cup\ell=S$ and $(D^n\setminus L)\setminus\ell_0=D^n\setminus D^k$.
 
-Both $X$ and $A$ are acyclic, so the exact sequence of the pair $(X,A)$ gives $H_j(X,A)=0$ for $j>0$, and also $H_0(X,A)=0$ because $X$ is path-connected and $A\ne\varnothing$. Now $D\setminus\ell=h'(D^n\setminus D^k)$, and $D^n\setminus D^k$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$: collapse the first $k$ coordinates to $0$, which keeps every point outside $D^k$ since its last coordinates stay nonzero, then push the last $n-k$ coordinates radially out to the unit sphere. Hence $D\setminus\ell$ is homotopy equivalent to the sphere $S^{n-k-1}$ of the statement. In the exact sequence of the excised pair
+Both $X$ and $A$ are acyclic, so the exact sequence of the pair $(X,A)$ gives $H_j(X,A)=0$ for $j\geq2$. In degree $1$ exactness gives $H_1(X,A)\cong\ker\bigl(H_0(A)\to H_0(X)\bigr)$, and that kernel is zero: $A=D$ is contractible and $X$ is path-connected, so both $H_0$ are $\ZZ$ and the map between them is an isomorphism. Also $H_0(X,A)=0$, because $X$ is path-connected and $A\ne\varnothing$, so every path component of $X$ meets $A$. Now $D\setminus\ell=h'(D^n\setminus D^k)$, and $D^n\setminus D^k$ deformation retracts onto $\{0\}^k\times S^{n-k-1}$: collapse the first $k$ coordinates to $0$, which keeps every point outside $D^k$ since its last coordinates stay nonzero, then push the last $n-k$ coordinates radially out to the unit sphere. Hence $D\setminus\ell$ is homotopy equivalent to the sphere $S^{n-k-1}$ of the statement. In the exact sequence of the excised pair
 $$
 \cdots\to H_j(S^n\setminus S,\,D\setminus\ell)\to H_{j-1}(D\setminus\ell)\xrightarrow{\ i_*\ }H_{j-1}(S^n\setminus S)\to H_{j-1}(S^n\setminus S,\,D\setminus\ell)\to\cdots
 $$
