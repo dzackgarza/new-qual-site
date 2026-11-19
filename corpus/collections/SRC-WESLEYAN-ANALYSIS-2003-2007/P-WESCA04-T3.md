@@ -39,7 +39,7 @@ State the most general version of Cauchy's Theorem.
 
 ::: {.solution}
 The item is section 1.1 item 3 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (the most general form of Cauchy\'s theorem), on PDF p. 33 of the retained scan
+August 2, 2004 (the most general form of Cauchy's theorem), on PDF p. 33 of the retained scan
 assets/attachments/analysis_2003-2007.pdf, printed page 1.
 
 
