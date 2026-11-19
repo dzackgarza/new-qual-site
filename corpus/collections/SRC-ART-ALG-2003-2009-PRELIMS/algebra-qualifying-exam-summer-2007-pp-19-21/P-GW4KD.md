@@ -86,7 +86,7 @@ $$
 \qquad
 [k]\longmapsto\phi_k.
 $$
-Then $\Psi$ is a group isomorphism.
+Then $\Psi$ is a group isomorphism, that is, $\Aut(C_n)\cong(\ZZ/n\ZZ)^\times$.
 
 ::: pf-proof
 
@@ -118,27 +118,6 @@ which implies $k\equiv1\pmod n$. Hence the kernel is trivial and $\Psi$ is injec
 Finally, every automorphism of $C_n$ sends $g$ to another generator $g^k$, and by step [](#s2){.pf-ref} such a $k$ is relatively prime to $n$. Hence every automorphism is in the image of $\Psi$, so $\Psi$ is surjective.
 
 :::
-
-:::
-
-::: {.pf-step #s4}
-
-Therefore
-$$
-\boxed{\Aut(C_n)\cong(\ZZ/n\ZZ)^\times}.
-$$
-
-::: pf-proof
-
-This is step [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} is the required conclusion.
 
 :::
 
