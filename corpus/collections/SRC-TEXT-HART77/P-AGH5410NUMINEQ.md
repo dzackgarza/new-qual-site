@@ -329,6 +329,37 @@ audit:
     tmp/sources/hartshorne-1977-algebraic-geometry.md, and the answer's own
     parenthetical interpreting the condition for i not equal to j. No other
     sentence changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A third retained solution read, and the one defect among the three. Read
+    Yang Pi-Yeh, Hartshorne Solutions (9 June 2019), Solution 5.4.10, printed
+    p. 111, rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.10, printed p. 408, read
+    again on PDF p. 423, prints a - b_i - b_j > 0 for each i,j and
+    2a - sum_{i != j} b_i > 0 for each j, and asks for the argument over the
+    reals. Recomputed: the reduction to a > b_1 + b_2 and 2a > b_1 + ... + b_5
+    in the order b_1 >= ... >= b_6, which is what the printed hypotheses give;
+    that its Case I, 2b_1b_2 >= 2b_2^2 + 2b_2b_5 >= b_3^2+b_4^2+b_5^2+b_6^2,
+    is a proof; and that its Case II prints a > b_1 + ... + b_5, which is not
+    a consequence of 2a > b_1 + ... + b_5. The instance
+    b_1 = ... = b_6 = 2/5, a = 101/100 satisfies the printed hypotheses, has
+    a^2 = 1.0201 > 6/25 * 6 = 0.96, and has a = 1.01 < 8/5 = 2b_1+b_3+b_4, so
+    the printed line is false there; the integer instance b = (3,3,2,2,2,2),
+    a = 7 behaves the same way, with a < 10 = 2b_1+b_3+b_4 and
+    a^2 = 49 > 34 = sum b_i^2. Not checked: Yang's Solutions outside printed
+    pp. 109-111, and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.10 at printed p. 111,
+    records its Case I as a proof and its Case II as one that does not follow
+    from the printed hypotheses, with the two instances above. The statement,
+    the steps and the card's own argument are unchanged; nothing moves from
+    proved to open or the reverse.
 ---
 
 ::: {.problem}
@@ -633,4 +664,15 @@ the first is carried out at the two endpoint values of the quadratic in $b_2$, a
 increase of $b_3,b_4,b_5$ to $b_1+b_2=b_3+b_4+b_5$ needs $b_1\le2b_2$; the second compares the vertex
 of a downward quadratic with the midpoint of its range, the printed line carrying one factor of $2$
 too few in that vertex term.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.10, printed p. 111, reduces the
+printed hypotheses to $a-b_1-b_2>0$ and $2a-b_1-\cdots-b_5>0$ in the order $b_1\ge\cdots\ge b_6$, as
+step [](#ordered-hypotheses){.pf-ref} does, and splits into two cases. Its Case I, $b_1\ge b_2+b_5$,
+is a proof: $2b_1b_2\ge2b_2^2+2b_2b_5\ge b_3^2+b_4^2+b_5^2+b_6^2$ together with $a>b_1+b_2$ gives
+$a^2>\sum b_i^2$. Its Case II, $b_1<b_2+b_5$, prints
+$a>b_1+b_2+b_3+b_4+b_5>2b_1+b_3+b_4$, but the printed hypotheses give $2a>b_1+\cdots+b_5$ and not
+$a>b_1+\cdots+b_5$; the printed line is false at $b_1=\cdots=b_6=\frac25$, $a=\frac{101}{100}$, where
+the hypotheses hold, the conclusion $a^2>\sum b_i^2$ still holds, and $a<2b_1+b_3+b_4=\frac85$, and
+at $b=(3,3,2,2,2,2)$, $a=7$ likewise. So its Case II is not proved, and the card's argument does not
+rest on it.
 :::
