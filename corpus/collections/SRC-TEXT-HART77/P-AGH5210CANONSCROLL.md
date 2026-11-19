@@ -191,6 +191,25 @@ audit:
     checked in this pass: the rest of V.2.10's steps were not re-read, and no
     publication other than the book was opened for the hyperelliptic
     canonical-map statement.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s3 cites the sheaf form of adjunction and gave only the numerical
+    statement for it. It read "Adjunction, Proposition V.1.5, printed p. 361,
+    applied to the nonsingular curve Y", and V.1.5 is the numerical identity
+    2g - 2 = C.(C + K) for a nonsingular curve C of genus g on a surface, whose
+    proof is what quotes the sheaf form: "According to (II, 8.20) we have
+    omega_C = omega_X (x) L(C) (x) O_C", printed p. 361. The sheaf isomorphism
+    K_Y = (K_X + Y)|_Y that the step uses is Proposition II.8.20, printed
+    p. 182, whose codimension-one case reads omega_Y = omega_X (x) L (x) O_Y
+    for Y a divisor with associated invertible sheaf L. The step now cites
+    II.8.20 and says that V.1.5's proof quotes it. Read and unchanged in this
+    pass: step s3's computation K_Y = (K_X + D)|_Y = O_Y(H) and its Reid
+    cross-check alpha = a + a_2 + 2 from step s1, and the pages of both
+    statements on the PDF's folios (PDF p. 197 carrying printed 182 for
+    II.8.20). Not checked in this pass: V.1.5's printed p. 361 was read in the
+    text version only, not on the folio.
 ---
 
 ::: {.problem}
@@ -267,7 +286,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction, Proposition V.1.5, printed p. 361, applied to the nonsingular curve $Y$, and the definition $D=H-K_X$ give
+Adjunction in its sheaf form, Proposition II.8.20, printed p. 182, which the proof of Proposition V.1.5, printed p. 361, quotes, applied to the nonsingular curve $Y$, and the definition $D=H-K_X$ give
 $$
 K_Y\cong\restrictionof{(K_X+Y)}{Y}\cong\restrictionof{(K_X+D)}{Y}\cong\OO_Y(H).
 $$
