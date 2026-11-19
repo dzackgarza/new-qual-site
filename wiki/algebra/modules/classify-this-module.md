@@ -29,7 +29,7 @@ Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$; for an abelian group giv
 
 ### Smith normal form
 
-The Smith normal form of $A$ has diagonal entries $a_1 \divides a_2 \divides \cdots \divides a_k$, with $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$; see [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
+The Smith normal form of $A$ is computed from its minors, and its diagonal entries are the data the decomposition uses; see [[algebra/linear-algebra/smith-normal-form|Smith normal form]] for the statement and [[T-SMTHN]] for the theorem.
 
 ### Decomposition
 
@@ -45,7 +45,7 @@ The free rank of $M$ is $n-k$, the summands $R/\generators{a_i}$ with $a_i$ a un
 
 ### Elementary divisors and invariant factors
 
-The elementary divisors are the prime-power factors of the invariant factors, and the conversion between the two lists is a regrouping of one set of prime powers.
+The conversion between the two lists is a regrouping of one set of prime powers, over the primes dividing the invariant factors.
 
 [[PR-TLPVU]]
 
