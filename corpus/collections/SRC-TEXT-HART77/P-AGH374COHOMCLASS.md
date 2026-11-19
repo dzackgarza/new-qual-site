@@ -869,6 +869,32 @@ audit:
     p. 25, which is the form the head of the solution cites. No other step was
     re-derived, and the comparison of step s8 in the case where the products of
     first Chern classes do not span is untouched and remains open.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A whole read of the rendered solution after the repairs of this day, for
+    internal consistency only; nothing was changed. Checked and unchanged: the
+    head's four paragraphs against the steps they announce, in particular that
+    the one compatibility property it says is used, the divisor formula of s2, is
+    the only one any part rests on and that s8, which uses Lemma 50.23.10, is
+    used by no part and is marked so in the q.e.d.; the statement's normalization
+    paragraphs (N) and (C) against the head's proof of both; s1 against (N); s2
+    against the pages it cites, (0.6)(a),(d) on printed pp. 24--25, (12.1)--(12.2.3)
+    on printed pp. 105--106, (13.1), (13.5) and (13.12) on printed pp. 111, 113,
+    117; s6's convention against printed p. 218 and its two checks; s3's degrees
+    in the projection formula and its induction; s4 against the printed hint,
+    II.8.18 on printed p. 179 and I.7.7 on printed p. 53; s8's hypothesis and its
+    two specialisations; the two remarks against the steps they name, including
+    III.7.1 on printed p. 240, the definition and Proposition 7.2 on printed
+    p. 241, Corollary 7.12 on printed p. 246, Remark 7.14 and Theorem 7.14.1 on
+    printed p. 247, Corollary 7.13 on printed p. 247 and Appendix A's C1 on
+    printed p. 430. Searched for and not found: any surviving occurrence of a
+    lift-dependent claim, of a step described as an input, or of a reference to
+    the withdrawn form of s3. The one statement that is not proved anywhere on
+    the card, the comparison of s8 off the span of the complete-intersection
+    classes, is not used by any part and is recorded in COMPLAINTS.md.
 ---
 
 ::: {.problem}
