@@ -7890,3 +7890,13 @@ this pass. Not read: V.2.7's entry, and the printed books themselves.
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Nothing in either proof beyond what is recorded: the Cauchy formula was verified symbolically up to $n=5$ and by the derivation, not by a published table; the matrix-unit argument was checked entrywise but not against a second source.
+
+## 2026-11-19: the one-dimensional Gorenstein socle is asserted a second time, on a page, above the unsolved problem that asks for it
+
+**Object and need.** The record above ("four sourcing gaps behind issue #174's second review") named one place where the zero-dimensional Gorenstein socle is asserted without a source: inside an example on `D-SCHCMGOR`. Reading `wiki/algebra/rings-and-ideals/commutative-algebra.md` for a different defect found a second place, which the same missing bibliography entry blocks.
+
+**Observed evidence.** The section "Gorenstein rings" on that page reads: "For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional." It sits directly above `[[P-HCAO21]]`, "Dual module of a zero-dimensional Gorenstein algebra", which asks what can be said about $\Hom_k(R,k)$ and about the socle under a specified augmentation $\varepsilon\colon R\to k$. That card has no `solution` block and no `hint` block, so the page states the answer to a problem the corpus does not solve, and states it with no argument, no referent and no citation (`CITE-8`). Both halves are true -- the canonical module of a zero-dimensional Gorenstein ring is the ring, and Theorem 5.3 of Huneke, "Hyman Bass and Ubiquity: Gorenstein Rings", arXiv:math/0209199, printed p. 11, makes "self-injective", "socle of length one" and "Gorenstein" equivalent -- so the sentence is not wrong, it is unsupported.
+
+**Impact and owner.** Not repaired, for the same reason as the earlier record: `vocabularies/references.yaml` is a Zotero export that says not to hand-edit it, and the work needs a key. Adding it also unblocks the `D-SCHCMGOR` proposition. The page sentence and the example clause should both cite the same theorem once the key exists. Separately, `P-HCAO21` has no solution: whether the corpus wants to answer its own oral-exam problem on a chapter page is an editorial decision for whoever owns that collection.
+
+**Uncertainty.** The two true statements above are verified in the retrieved paper text; no printed book was retrieved that states either, and none is cited by page.
