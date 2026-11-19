@@ -12,6 +12,15 @@ classification:
   - Principal Ideals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained compilation `assets/attachments/Tate_Galois_Theory_Problems.pdf`: the statement is item (1) of the sheet titled "Examples of prime ideals", printed on PDF p. 12, and its printed
+    words are the card's. That sheet carries no date, so the locator names its heading and page
+    rather than inventing a date. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -25,6 +34,7 @@ review: draft
 :::
 
 ::: {.solution}
+This is item (1) of the sheet titled "Examples of prime ideals" on PDF p. 12, in the retained compilation `assets/attachments/Tate_Galois_Theory_Problems.pdf`; the sheet is undated in the source, so its heading and page locate it. The statement below is its wording.
 
 ::: pf
 
