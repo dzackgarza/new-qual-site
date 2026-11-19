@@ -28,6 +28,22 @@ audit:
     K(pi_n X, n) along it, hence principal with fibre K(pi_n X, n-1). The exercise's
     conclusion stands; the argument no longer goes through principality of p_n.
     Statement unchanged. Not checked: nothing outside this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Second pass on the same card, after an independent report pointed at two things and
+    I checked both. (1) The example was wrong: for X = RP^2 the second Postnikov stage
+    is RP^2 itself, not a contractible space, since RP^2 already has no homotopy above
+    degree 2; the fibration is p_2: RP^2 -> K(Z_2,1) with fibre K(Z,2) and the generator
+    of pi_1 acting on pi_2 by -1. (2) The previous repair produced the fibre sequence
+    K(pi_n X,n-1) -> Omega X_n -> Omega X_{n-1} -> K(pi_n X,n) from exactness of the
+    long exact homotopy sequence, which is a statement about groups and does not by
+    itself supply the map of spaces that making Omega p_n a pullback requires --- and
+    for a twisted fibration such a map need not exist. The argument now goes through
+    Theorem 4.69 applied to Omega X, which is an H-space and hence abelian (Example
+    4A.3), together with uniqueness of Postnikov towers and the fibre homotopy
+    invariance of principality. No statement changed.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -103,24 +119,28 @@ $\pi_i(\Omega X_n)=\pi_{i+1}(X_n)$. For $i+1\le n$, that is $\pi_{i+1}(X)=\pi_i(
 :::
 
 ::: {.pf-step #principal}
-The defining fibration $p_n:X_n\to X_{n-1}$ need not itself be principal, and its connecting map is nevertheless available: there is a fibre sequence
-$$
-K(\pi_nX,n-1)\longrightarrow\Omega X_n\xrightarrow{\Omega p_n}\Omega X_{n-1}\xrightarrow{\partial}K(\pi_nX,n).
-$$
+The fibrations $p_n:X_n\to X_{n-1}$ of the tower for $X$ need not be principal.
 
 ::: pf-proof
-Principality of $p_n$ would mean that $p_n$ is the pullback of the path--loop fibration $PK(\pi_nX,n+1)\to K(\pi_nX,n+1)$ along a $k$-invariant $X_{n-1}\to K(\pi_nX,n+1)$. Theorem 4.69 (printed p. 412) makes that an if-and-only-if whose condition fails in general: it requires $\pi_1(X_{n-1})$ to act trivially on $\pi_nX$. For $X=\RP^2$ the fibration $p_2:X_2\to X_1=K(\ZZ_2,1)$ has contractible total space and fibre $K(\ZZ,2)$, while the generator of $\pi_1$ acts on $\pi_2$ by $-1$; $X=S^1\vee S^2$ fails in the same way. So principality cannot be asserted of $p_n$, and it is the tower of $\Omega X$ that the exercise asks about.
+Theorem 4.69 (printed p. 412) states that a connected CW complex has a Postnikov tower of principal fibrations if and only if $\pi_1$ acts trivially on $\pi_n$ for all $n>1$, so principality of the individual fibrations is exactly the hypothesis that can fail. It fails for $X=\RP^2$: there $\pi_1=\ZZ_2$, $\pi_2=\ZZ$ and $\pi_i=0$ for $i\ge3$, so the tower is $\RP^2\to K(\ZZ_2,1)$, and the fibration $p_2:\RP^2\to K(\ZZ_2,1)$ has fibre $K(\ZZ,2)$ while the generator of $\pi_1$ acts on $\pi_2$ by $-1$ (Exercise 2 of §4.2, printed p. 389). So nothing may be assumed about $p_n$, and what the exercise asserts concerns the looped tower.
+:::
 
-What needs no hypothesis is the long exact homotopy sequence of $p_n$, which is the fibre sequence displayed: the fibre of $p_n$ is $K(\pi_nX,n)$, its loop is $K(\pi_nX,n-1)$, and the sequence continues with the base $\Omega X_{n-1}$ followed by $\Omega K(\pi_nX,n)=K(\pi_nX,n)$, the third map being the connecting map. Exactness is all the next step uses.
+:::
+
+::: {.pf-step #abelian}
+$\Omega X$ is an abelian space, and by Theorem 4.69 it therefore has a Postnikov tower of principal fibrations.
+
+::: pf-proof
+$\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for an H-space, the action of $\pi_1$ on $\pi_n$ is trivial for every $n$ (Example 4A.3, printed p. 422; the point is that the multiplication makes left and right translation by a loop agree up to homotopy). So $\pi_1(\Omega X)=\pi_2(X)$ acts trivially on every $\pi_n(\Omega X)$, which is the hypothesis of Theorem 4.69 for the connected CW complex $\Omega X$. The theorem then gives a Postnikov tower of $\Omega X$ whose fibrations are all principal.
 :::
 
 :::
 
 ::: {.pf-step #loopprincipal}
-$\Omega p_n:\Omega X_n\to\Omega X_{n-1}$ is the pullback of the path--loop fibration $PK(\pi_nX,n)\to K(\pi_nX,n)$ along $\partial$, hence is a principal fibration with fibre $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$.
+The looped tower is a Postnikov tower of $\Omega X$, hence is a tower of principal fibrations.
 
 ::: pf-proof
-The homotopy fibre of a map $\partial:B\to C$ is the pullback of $PC\to C$ along $\partial$, and the fibre sequence of step [](#principal){.pf-ref} says precisely that $\Omega p_n:\Omega X_n\to\Omega X_{n-1}$ is that homotopy fibre, with $B=\Omega X_{n-1}$ and $C=K(\pi_nX,n)$. So $\Omega p_n$ is the pullback of the path--loop fibration over $K(\pi_nX,n)$ along $\partial$: a principal fibration with delooping $K(\pi_nX,n)$, whose fibre is $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$. Together with steps [](#loop){.pf-ref} and [](#stages){.pf-ref}, the looped tower is a Postnikov tower of principal fibrations for $\Omega X$, with the index shifted by one because $\pi_{n-1}(\Omega X)=\pi_n(X)$.
+Steps [](#loop){.pf-ref} and [](#stages){.pf-ref} show that $\Omega X_n$ is the $(n-1)$-st Postnikov stage of $\Omega X$ and that $\Omega X\to\Omega X_n$ has the required effect on homotopy groups, so the looped tower is a Postnikov tower for $\Omega X$ in Hatcher's sense. Postnikov towers of a connected CW complex are unique: the $n$-th stage is determined up to homotopy equivalence under the space by its homotopy groups and the truncation property, which is the uniqueness statement of Hatcher's construction (printed p. 410), and the comparison is an isomorphism on all homotopy groups, hence a homotopy equivalence by Whitehead. Two towers of $\Omega X$ are therefore connected by fibre homotopy equivalences level by level, and principality is a fibre homotopy invariant of a fibration, being a property of its fibre homotopy type; so the looped tower, being a Postnikov tower of $\Omega X$, consists of principal fibrations, with fibre $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$ at the stage $\Omega X_n\to\Omega X_{n-1}$.
 :::
 
 :::
