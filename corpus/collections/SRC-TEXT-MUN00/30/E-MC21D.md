@@ -46,6 +46,22 @@ audit:
     without the cardinal step. Both objections are wrong: (b,+infinity) is disjoint from (a,b), which
     is exactly what the injection needs, and "|J| <= |2^D|" is the cardinal step, D being countable.
     The exercise stays on the COMPLAINTS.md list only because of part (a).
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2, both parts kept as they were: (b) the retained
+    dbFin argument following the printed hint, (a) the card's own. Re-checked: for (a) the
+    injection $I\to\mathcal{P}(\ZZ_+)$ exists since both sets have cardinality $2^{\aleph_0}$; the
+    family $D$ is countable as a countable union over finite $F$ of the countable sets
+    $\QQ^{\mathcal{P}(F)}$; and density is the pairwise-distinct-traces argument, which is now
+    written out with the witnesses $m_{ij}$ chosen in symmetric differences. For (b) the two
+    constraints at distinct coordinates give a nonempty basic open set, density puts a point of $D$
+    in it, so $F$ is injective and $\abs{J}\le\abs{\mathcal{P}(D)}\le\abs{\mathcal{P}(\ZZ_+)}$.
+    No defect found in the statement, §30 Exercise 16 on printed p. 195. Corrected the earlier
+    event's spelling of the file page only in this solution's citation: the retained dbFin text now
+    sits at `tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt`. Not
+    claimed: a published solution of part (a), which the earlier events already record as absent.
 ---
 
 ::: {.exercise}
@@ -57,37 +73,86 @@ audit:
 :::
 
 ::: {.solution}
-(a) We construct a countable dense subset of $\RR^I$, $I=[0,1]$. Choose an injection
+Part (b) is the retained published solution of dbFin, *Section 30: Problem 16 Solution* (`tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt`), which follows the printed hint. Part (a) is the card's own; no located solution of it is complete. Write $\pi_\alpha\colon\RR^J\to\RR$ for the projection at $\alpha$.
+
+::: pf
+
+::: {.pf-step #part-a}
+(a) The product space $\RR^I$ with $I=[0,1]$ has a countable dense subset.
+
+:::: pf-proof
+
+::: {.pf-step #injection}
+There is an injection $\iota\colon I\to\mathcal{P}(\ZZ_+)$.
+
+::: pf-proof
+$\abs{I}=\abs{\RR}=2^{\aleph_0}=\abs{\mathcal{P}(\ZZ_+)}$, since $[0,1]$ and $\RR$ are in bijection and $\mathcal{P}(\ZZ_+)$ has the cardinality of the set of subsets of a countable set; two sets of the same cardinality admit a bijection, and a bijection is in particular an injection.
+:::
+
+:::
+
+::: {.pf-step #countable}
+The set
 $$
-\iota:I\hookrightarrow\mathcal P(\ZZ_+).
-$$
-For every finite set $F\subset\ZZ_+$ and every function
-$$
-\phi:\mathcal P(F)\to\QQ,
-$$
-define $d_{F,\phi}\in\RR^I$ by
-$$
-d_{F,\phi}(t)=\phi(\iota(t)\cap F).
-$$
-There are only countably many such pairs $(F,\phi)$, so
-$$
-D=\{d_{F,\phi}\}
+D=\{d_{F,\phi}\mid F\subseteq\ZZ_+\text{ finite},\ \phi\colon\mathcal{P}(F)\to\QQ\},
+\qquad d_{F,\phi}(t)=\phi\bigl(\iota(t)\cap F\bigr),
 $$
 is countable.
 
-To see $D$ is dense, let a basic open set prescribe nonempty open intervals $U_1,\dots,U_n$ at distinct coordinates $t_1,\dots,t_n$. Since the sets $\iota(t_i)$ are distinct, there is a finite $F\subset\ZZ_+$ such that their traces $\iota(t_i)\cap F$ are pairwise distinct: for each pair choose one integer where the two subsets differ, and take the finite union of these witnesses. Choose rationals $q_i\in U_i$, and define $\phi$ on the distinct traces by $\phi(\iota(t_i)\cap F)=q_i$, arbitrarily elsewhere. Then $d_{F,\phi}\in D$ lies in the given basic open set. Hence $D$ is dense.
+::: pf-proof
+The function $d_{F,\phi}$ is a well-defined element of $\RR^I$, because $\iota(t)\cap F$ is a subset of $F$ and $\phi$ is defined on every such subset. The finite subsets $F$ of the countable set $\ZZ_+$ are countable in number: each is a finite subset of the $n$-th initial segment for some $n$, and the finite subsets of an $n$-element set are finitely many. For each fixed $F$ the set $\mathcal{P}(F)$ is finite, so the set $\QQ^{\mathcal{P}(F)}$ of functions $\mathcal{P}(F)\to\QQ$ is a finite product of countable sets, hence countable. A countable union of countable sets is countable, so the set of pairs $(F,\phi)$ is countable, and $D$ is its image under $(F,\phi)\mapsto d_{F,\phi}$.
+:::
 
-(b) Let $D\subset\RR^J$ be countable and dense. Fix a nonempty proper open interval $U=(0,1)$. For each $\alpha\in J$, define
-$$
-F(\alpha)=D\cap\pi_\alpha^{-1}(U)\subset D.
-$$
-We claim $F:J\to\mathcal P(D)$ is injective. If $\alpha\ne\beta$, the basic open set
-$$
-\pi_\alpha^{-1}(U)\cap\pi_\beta^{-1}((2,3))
-$$
-is nonempty, so density of $D$ gives $d\in D$ with $d_\alpha\in U$ and $d_\beta\notin U$. Hence $d\in F(\alpha)\setminus F(\beta)$. Thus
-$$
-\cardinality{J}\le \cardinality{\mathcal P(D)}\le\cardinality{\mathcal P(\ZZ_+)}.
-$$
-Therefore if $J$ has larger cardinality than $\mathcal P(\ZZ_+)$, $\RR^J$ cannot be separable.
+:::
+
+::: {.pf-step #dense}
+$D$ is dense in $\RR^I$.
+
+::: pf-proof
+A nonempty basic open set of the product topology fixes finitely many distinct coordinates $t_1,\ldots,t_n\in I$ and nonempty open intervals $U_1,\ldots,U_n$ of $\RR$, and is the set of $f$ with $f(t_i)\in U_i$ for each $i$. Since $\iota$ is injective, the sets $\iota(t_1),\ldots,\iota(t_n)$ are pairwise distinct, so for each pair $i\ne j$ choose an integer $m_{ij}$ in the symmetric difference of $\iota(t_i)$ and $\iota(t_j)$, and let $F$ be the finite set of all these $m_{ij}$. Then $\iota(t_i)\cap F\ne\iota(t_j)\cap F$ for $i\ne j$, the two differing at $m_{ij}$. Choose rationals $q_i\in U_i$, which exist because $\QQ$ is dense in $\RR$ and $U_i$ is a nonempty open interval, and define $\phi\colon\mathcal{P}(F)\to\QQ$ by $\phi(\iota(t_i)\cap F)=q_i$ for $i=1,\ldots,n$ — well defined because the traces are distinct — and $\phi=0$ on the remaining subsets of $F$. Then $d_{F,\phi}(t_i)=q_i\in U_i$ for every $i$, so $d_{F,\phi}\in D$ meets the given basic open set. Every nonempty open set contains a basic one, so $D$ is dense.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+(b) If $\abs{J}>\abs{\mathcal{P}(\ZZ_+)}$, then $\RR^J$ has no countable dense subset.
+
+:::: pf-proof
+
+::: {.pf-step #injective}
+If $D\subseteq\RR^J$ is dense, the map $F\colon J\to\mathcal{P}(D)$, $F(\alpha)=D\cap\pi_\alpha^{-1}((0,1))$, is injective.
+
+::: pf-proof
+For $\alpha\ne\beta$ the set $\pi_\alpha^{-1}((0,1))\cap\pi_\beta^{-1}((2,3))$ is a nonempty basic open set, since it imposes conditions at the two distinct coordinates only. Density of $D$ gives $d\in D$ in it, so $d_\alpha\in(0,1)$ and $d_\beta\in(2,3)$; then $d\in F(\alpha)$ while $d\notin F(\beta)$. Hence $F(\alpha)\ne F(\beta)$.
+:::
+
+:::
+
+::: {.pf-step #cardinality}
+If $\RR^J$ has a dense $D$ with $D$ countable, then $\abs{J}\le\abs{\mathcal{P}(\ZZ_+)}$.
+
+::: pf-proof
+By step [](#injective){.pf-ref} there is an injection $J\to\mathcal{P}(D)$, so $\abs{J}\le\abs{\mathcal{P}(D)}$; and $D$ countable gives $\abs{\mathcal{P}(D)}\le\abs{\mathcal{P}(\ZZ_+)}$, the power set of a countable set having at most the cardinality $2^{\aleph_0}$ of the power set of $\ZZ_+$.
+:::
+
+:::
+
+::: {.pf-step}
+(b) If $\abs{J}>\abs{\mathcal{P}(\ZZ_+)}$, then $\RR^J$ does not have a countable dense subset.
+
+::: pf-proof
+Suppose $D$ dense in $\RR^J$ with $D$ countable; step [](#cardinality){.pf-ref} gives $\abs{J}\le\abs{\mathcal{P}(\ZZ_+)}$, contradicting the hypothesis. So no such $D$ exists, and $\RR^J$ is not separable.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
 :::
