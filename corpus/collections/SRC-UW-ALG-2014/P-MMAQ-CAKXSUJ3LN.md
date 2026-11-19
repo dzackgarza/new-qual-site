@@ -12,6 +12,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the 2014 Algebra Preliminary Examination (University of
+    Washington, September 8, 2014), printed p. 2 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2014.pdf, is the statement the card answers, and the paragraph at
+    the head of the solution records that the paper prints no solutions, so the argument is the card's
+    own. Checked: the statement against the paper's text layer at the page named; the solution read for
+    the two irreducible rational representations of C_p and for the reduction of the hypothesis to every
+    element of G having order dividing 2; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -32,6 +45,8 @@ Show that $G\cong(C_2)^k$ for some $k$ (i.e., is a product of cyclic groups of o
 :::
 
 ::: {.solution}
+
+The problem is Problem 7 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the two irreducible rational representations of $C_p$, of dimensions $1$ and $p-1$, and (b) the reduction of the hypothesis to every element of $G$ having order dividing $2$, so that $G\cong(C_2)^k$
 
 ::: pf
 
