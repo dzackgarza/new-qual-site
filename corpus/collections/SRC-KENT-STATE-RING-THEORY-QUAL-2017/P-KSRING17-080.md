@@ -15,6 +15,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 80 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked, including the two arithmetic steps. Since p is
+    prime and p = b^2 + 4, b is odd and p = 5 mod 8; then x^2 - p y^2 = +-2 has no integral
+    solution: for c even the equation gives a^2 = 2 mod 4, impossible, and for c odd it gives
+    a^2 = 5 +- 2 mod 8, that is 3 or 7 mod 8, also impossible. So no element has norm +-2 and 2 is
+    irreducible. And 2 divides (b+sqrt p)(b-sqrt p) = b^2 - p = -4 without dividing either factor,
+    so 2 is not prime; an irreducible non-prime element in a domain rules out being a UFD. I checked
+    the conclusion independently for the fourteen primes of this shape with b <= 57 (5, 13, 29, 53,
+    173, 229, 293, 733, 1093, 1229, 1373, 2029, 2213, 3253), each time confirming that neither 2 nor
+    -2 is a quadratic residue and that no element of norm +-2 exists.
 ---
 
 ::: {.problem}
