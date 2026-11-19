@@ -7490,3 +7490,62 @@ it. No step, statement or hypothesis of any card changes.
 printed p. 107, rendered as page images; the statements the three cards carry, transcribed from printed
 pp. 366, 367 and 394 by earlier passes, which this pass did not reopen. Not read: the remaining
 thirteen cards' Yang entries, and the printed books themselves.
+
+## 2026-11-19, tenth item: §3.C read in full — nine cards, three rewritten, six correct
+
+**Object and need.** The next section of the staleness sweep was §3.C, *H-Spaces and Hopf Algebras*,
+whose sixteen exercises are printed on pp. 291–292; nine of its cards carried an audit date before
+2026-11-13. All nine are read here and all sixteen cards of the section now carry a 2026-11-19 or
+2026-11-18 read.
+
+**Correct, with what was checked.** `E-HAT-3.C-2` (p. 291): $\mu_A=r\circ\mu\circ(i\times i)$ works
+because $r(e)=e$, which is what the hypothesis that the retract contains the identity buys.
+`-3.C-10` (pp. 291–292): the Künneth step of (a) is the only place freeness and finite generation
+enter; the $S^3$ generator is primitive since no bidegree $(i,j)$ with $i,j>0$ sums to $3$; the
+quaternionic polynomial in (c) is proper with degree $n$. `-3.C-12` (p. 292): $\alpha$ and $\beta$
+primitive, the binomial coproducts with no Koszul sign because $\abs{\beta^i}=2i$, and the dual
+relations $x^2=0$, $y_iy_j=\binom{i+j}{i}y_{i+j}$, $xy_i=y_ix$. `-3.C-15` (p. 292): the coproduct
+$\Delta(a_n)=\sum_i\binom ni(q_n/q_iq_{n-i})a_i\otimes a_{n-i}$ and the passage back from $\QQ$ to
+$\ZZ$ through torsionfreeness of $A\otimes A$; cocommutativity and coassociativity come from the
+formula on the generator, not from assumptions on the multiplication. `-3.C-16` (p. 292): the
+coefficient table $b_{ij}$ — binomial for $d$ even, zero for $i,j$ both odd and
+$\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for $d$ odd — checked independently at
+$n=2$ and $n=3$; Lemma 1, the three cases of Lemma 2, and the algebra of Theorem 3 in cases (a) and
+(b) recomputed symbol by symbol, with the observation that neither case uses the size of $e_{ij}$,
+which is what lets Corollary 5 conclude from the flags alone. Not re-run on $-3.C-16$: the Kummer
+identity that makes the $d=1$ and $d=2$ polynomial forms share their flags, and the finite search
+over forms with $m_{1j}\le24$.
+
+**Rewritten.** `E-HAT-3.C-5` (p. 291) was a nest of `pf` blocks with noun-phrase proofs ('definition
+of an H-space', 'setup', 'homotopy invariance') and a conclusion step proved by naming two labels;
+the Eckmann--Hilton computation is kept and now sits in three steps that carry it. `-3.C-13`
+(p. 292) had ten steps of which eight had no proof child at all; it is now four steps with proofs,
+one per claim, and the two degree hypotheses — $\alpha$ odd in the exterior algebra, $\alpha$ even in
+the truncated polynomial algebra — are kept with their reasons. `-3.C-11` (p. 292) had a step whose
+proof opened 'Steps s1, s2 and s3.' and a terminal `pf-qed` naming one label; both are gone and the
+mathematics is unchanged. `-3.C-6` (p. 291) was correct and gained the hypothesis $n\ge1$ that its
+cell description needs, with the observation that $S^0$ is a topological group so the case $n=0$ is
+outside the exercise's phrasing rather than in doubt.
+
+**Two hooks, two lessons.** The commit hook, which runs STYLE-03/04 and QUAL-11 where the per-card
+`qualc.authoring check` does not, refused two commits. (i) `-3.C-11` carried the raw bar
+$|x_i||x_j|=1$ in rendered text; it now reads $\abs{x_i}\abs{x_j}=1$. (ii) On `-3.C-13` a scripted
+sweep of `\abs{\alpha}` had rewritten the text of the dated 2026-11-01 `solution-reviewed` event,
+which QUAL-11 forbids: a dated event records what that session found, so a macro sweep must be
+restricted to the body below the frontmatter. Restored verbatim, with the body corrected.
+
+**Published solutions.** Sam, *Solutions to Algebraic Topology* (2008), answers §3.C Exercise 5 only,
+on printed p. 16, and the card cites it. Koukpari lists §3.C in the table of contents at p. 20 but
+answers nothing in it: the section heading is followed immediately by §4. Li's set has no §3.C
+section. So eight of the nine cards read here rest on their own proofs, and none of them claims a
+published solution.
+
+**Checks.** `qualc.authoring check` on the two rewritten cards; the commit hook, card YAML and schema
+plus the staged-source syntax check, on each of the nine commits;
+`qualc.authoring check-range 7a1507febb`, "25 changed file(s) checked", "1 outgoing tip(s) resolve",
+exit 0. Commits: `e7c15f7da7`, `bac5c1ce87`, `2a8557220f`, `8743bf2efe`, `47e67fd3d5`, `015a409076`,
+`d0421fdc9f`, `c64cb4bff0`, `4b7db44dcd`.
+
+**Uncertainty.** The §3.C-16 development is a long one and only part of it was re-derived here; the
+event on the card says exactly which parts. No published solution covers §3.C except Exercise 5, and
+no card in the section carries a certificate.
