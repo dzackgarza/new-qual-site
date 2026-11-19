@@ -34,6 +34,8 @@ Show that $\alpha$ is bijective.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.4, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.4, printed p. 13, proves it by the same reduction: the bijection is known for affine $X$, and both sides are sheaves on the big Zariski site, so they glue.
+
 We use the affine case: for rings $A,B$ there is a natural bijection
 $$
 \Hom_{\Sch}(\Spec B,\Spec A)
