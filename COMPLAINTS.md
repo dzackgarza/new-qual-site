@@ -500,11 +500,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **51 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **50 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Forty-six of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 51 stand as this item lists them.
+   reported and repaired above. Forty-seven of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 50 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -801,7 +801,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    $n$-dimensional and so has no relations in degree $n$; a nonzero image there forces a nonzero image in
    $\pi_n(X)$, which is the injectivity asked for.
 
-   Remaining unread in this item's set: §4.2 (27 more, incl. -5), §4.3 (24) --- 51 proofs.
+   **§4.2-15, read the same day.** Correct, no card changed. Simply connected gives $H_1=0$; Poincaré
+   duality with the universal coefficient theorem then gives $H_2\cong H^1=0$ and $H_3\cong H^0=\ZZ$, so the
+   homology is that of $S^3$, and Whitehead makes the manifold homotopy equivalent to it.
+
+   Remaining unread in this item's set: §4.2 (26 more, incl. -5), §4.3 (24) --- 50 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
