@@ -627,3 +627,7 @@ form.
 :::
 
 :::
+
+::: {.remark}
+The exercise stands on printed p. 355 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and it is printed without qualification: "The line, the conic, the twisted cubic curve and the elliptic quartic curve in $\PP^3$ have no multisecants.  Every other curve in $\PP^3$ has infinitely many multisecants."  The second sentence is false as printed in positive characteristic: the graph of Frobenius of degree $p+1$ on a smooth quadric surface is a smooth nonplanar curve through which no line passes meeting it in three distinct points, for $p\ge3$.  The statement above therefore carries the hypotheses the argument uses, characteristic zero and the curve smooth and integral, and the counterexample is proved on the card; the printed hint, projection from a point of the curve to $\PP^2$, is the route the proof takes.
+:::
