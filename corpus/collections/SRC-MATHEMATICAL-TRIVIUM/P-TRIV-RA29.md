@@ -19,6 +19,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the lost arrow in phi to phi_0 against Real Analysis Problem 29 on page 10 of the source PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 29 of the Real Analysis chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -32,6 +40,7 @@ logarithmic and the integral diverges.
 :::
 
 ::: {.solution}
+This is Problem 29 of the Real Analysis chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 Assume first that
 $$
