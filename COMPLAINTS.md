@@ -5270,3 +5270,19 @@ with the verification that both vanish at each $\alpha_{i}$ and the dimension co
 **Repair, 2026-11-19:** `E-HK-26-3` in `af5e6131a4`, the solution replaced and one `solution-written` event appended; no statement or title changed. Checks: `./.venv/bin/python -m qualc.authoring check E-HK-26-3`, "schema and Markdown parsing OK (single card)"; `tools/check_macros.py` on the card, OK; the Lamport filter, five numbered steps with QED present; `tools/sync_macros.py --check`, silent; sympy recomputation of the rank, the row-reduced form, the null-space basis and both equations' vanishing at all three vectors.
 
 **Uncertainty.** Not checked: the printed statement of the exercise, since no copy of Hoffman and Kunze is retained in `tmp/sources` and the collection's provenance is the archive.org scan alone; the exercise number is the one the collection index records. The two cards outside this residue were read only at their solution openings.
+
+## 2026-11-19, fourth item: three more phrasings the provenance screen misses, all three on cards that do state their source
+
+**Object and need.** The entry above of this date screens the corpus for a provenance sentence with the phrase list `card's own`, `the card's`, `own argument`, `retained`, `transcrib`, `solution set`, `derived here`, `no published`, `re-derived`, and a later entry of this date extends that list for possessives and for the word "outline". Running the same screen over the 87 cards of queue D's residue 1 that this session converted flags three of them; all three do state where their argument came from, in wording the list does not contain, so the screen under-reports and a sweep driven by it would add a redundant sentence to correct cards.
+
+**Observed evidence, the three cards read at their solution opening.**
+
+- `E-CEDQ9` opens: "The argument is that of Math StackExchange answer 2813771, posted 2018-06-09 to question 2813729, and it is the argument the printed hint asks for." The attribution is the phrase "is that of", which the list lacks.
+- `E-HAT-3.A-1` opens: "The proof below is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`". The attribution is the possessive "is tom Dieck's", which is the possessive class the later entry of this date names.
+- `P-PRACT20-W4-01` opens: "The collection retains its solution sheet, `assets/attachments/Week4_solns.pdf`". The word is "retains", and the list carries "retained" but not the present tense.
+
+**Impact and owner.** Any sweep that applies the sentence to the cards the screen flags, and any reader who takes the screen's count as the number of cards lacking provenance. The residue-1 figure the entry above reports is a corpus-wide one, so it is not corrected here; the three cards show that its complement — the 1667 cards the screen finds — is an undercount, and the 9260 it flags is an overcount by at least these three.
+
+**Uncertainty.** These are three cards of one residue, read one at a time; the size of the error over the whole corpus is not measured here. The screen itself was not modified in this session, and no count above is offered as a corrected figure.
+
+**Repair.** None attempted: extending the phrase list is the screen owner's call, and the cards are correct as they stand. The rule this supports is that a screen flag is a candidate and a card must be opened before it is "repaired".
