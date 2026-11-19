@@ -32,7 +32,7 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 ## From a quotient
 
-A cyclic quotient by the center forces the group to be abelian, so a nonabelian group of order $p^3$ has a center of order $p$, not $p^2$.
+A nonabelian group of order $p^3$ has a center of order $p$, not $p^2$: a center of order $p^2$ would leave a cyclic quotient.
 
 [[E-O73XQ]]
 
@@ -40,7 +40,7 @@ A cyclic quotient by the center forces the group to be abelian, so a nonabelian 
 
 ## From the structure theorem
 
-The abelian groups of order $n=\prod_i p_i^{e_i}$ correspond to tuples of partitions of the exponents $e_i$, so there are $\prod_i P(e_i)$ of them; for $p^2q$ there are $P(2)P(1)=2$, namely $\ZZ/p^2\times\ZZ/q$ and $\ZZ/p\times\ZZ/p\times\ZZ/q$.
+For $p^2q$ the count is $P(2)P(1)=2$, namely $\ZZ/p^2\times\ZZ/q$ and $\ZZ/p\times\ZZ/p\times\ZZ/q$.
 
 This is the classification of finitely generated modules over the principal ideal domain $\ZZ$; see [[algebra/modules/classify-this-module|Classify this module]].
 
