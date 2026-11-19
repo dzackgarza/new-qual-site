@@ -54,6 +54,16 @@ audit:
     computation behind $q^*(u_i)=u$, and the observation that no room remains above degree $2$, so the
     listed products determine the ring. No defect found in the statement, §3.2 Exercise 1 on printed
     p. 228.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Locator refined after reading the sheet's own folios: in `tmp/sources/hatcher-solutions-sam-2008.pdf`
+    the heading of §3.2 Exercise 1 stands at the foot of the page printing folio 12 (PDF p. 13) and
+    its solution runs on the page printing folio 13 (PDF p. 14). The card named printed p. 13 alone,
+    which locates the solution but not the statement; it now names both, with the PDF page. Checked
+    the folios on both pages rather than the PDF index, and the reading of the solution is unchanged.
+    Not claimed: a change to any step of the proof, of which none was made.
 ---
 
 ::: {.problem}
@@ -61,7 +71,7 @@ Assuming as known the cup product structure on the torus $S^1 \times S^1$, compu
 :::
 
 ::: {.solution}
-The argument is that of the retained published solution, Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 1, printed p. 13 (`tmp/sources/hatcher-solutions-sam-2008.pdf`): the quotient from $M_g$ to the wedge of $g$ tori, naturality of the cup product, and the vanishing of products supported on distinct summands via the relative cup product.
+The argument is that of the retained published solution, Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 1, whose statement opens at the foot of printed p. 12 and whose solution runs on printed p. 13 (PDF p. 14 of `tmp/sources/hatcher-solutions-sam-2008.pdf`): the quotient from $M_g$ to the wedge of $g$ tori, naturality of the cup product, and the vanishing of products supported on distinct summands via the relative cup product.
 
 ::: pf
 
