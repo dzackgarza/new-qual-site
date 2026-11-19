@@ -564,7 +564,17 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    so the same count applies. The card's seven steps are that argument: model, product cells, dimension,
    pair, smash cells, smash, conclusion.
 
-   Remaining unread in this item's set: §4.1 18–23 (6), §4.2 (39), §4.3 (24) --- 69 proofs.
+   **§4.1-18, begun and NOT counted.** The card takes the pseudocircle $P=\{a,b,c,d\}$, the printed
+   exercise's standard example, and the map $P\to S^1$ for one half; the two claims the exercise turns on
+   --- that this map is a weak equivalence, and that no weak equivalence $S^1\to P$ exists --- were not
+   read in this pass, so the card stays in the count below.
+
+   Also noted for this item: the record of 2026-11-19 for issue #170 covers `E-HAT-2.B-3`, `-4`, `-5`,
+   `-7`, `-9`, `E-HAT-2.C-1`, `-6`, `E-HAT-3.3-21`, `E-HAT-4.1-1`, `E-HAT-4.1-7` and `E-HAT-4.A-1`, none of
+   which is in this item's remaining set, so the two readings do not overlap.
+
+   Remaining unread in this item's set: §4.1 18–23 (6, of which 18 is begun), §4.2 (39), §4.3 (24)
+   --- 69 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
