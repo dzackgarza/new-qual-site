@@ -31,6 +31,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.3, printed p. 100,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.3, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    chi(O_D) = chi(O_X) - chi(O_X(-D)), the adjunction identity
+    2p_a(D) - 2 = D.(D+K), and the two formulas of part (c). Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.3 at printed
+    p. 100 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -293,4 +314,6 @@ prove both identities in part (c).
 The exercise stands on printed p. 366 of Hartshorne, where its head and parts (a) and (b) stand, and part (c) opens printed p. 367 with 1.3(c); read off those pages of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as 110 dpi renders, folios 366 and 367 in the footers), and the statement above is that text.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.3, PDF p. 255: Riemann--Roch for $-D$ together with $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$ gives $\chi(\OO_D)$ ("note the last term cancels out"), (b) is "by part (a)", and (c) is the two expansions $\frac12(-D)\cdot(-D+K)$ and $\frac12(C+D)\cdot(C+D+K)$ that step [](#s5){.pf-ref} and step [](#s6){.pf-ref} carry out. His first display prints $\chi(\OO_D)$ with the sign of the last term reversed; the card's step [](#s1){.pf-ref} keeps it, and the identity $2p_a-2=D\cdot(D+K)$ follows from it. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.3, printed p. 100, has all three parts from Riemann--Roch: $\chi(\OO_D)=\chi(\OO_X)-\chi(\OO_X(-D))=-\frac12D\cdot(D+K)$ gives $2p_a(D)-2=D\cdot(D+K)$, which is (a); that expression depends only on the linear equivalence class, which is (b); and (c) is $p_a(-D)=1+\frac12(-D)\cdot(-D+K)=D^2-p_a(D)+2$ and $p_a(C+D)=p_a(C)+p_a(D)+C\cdot D-1$.
 :::
