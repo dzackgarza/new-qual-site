@@ -13,6 +13,17 @@ review: draft
 audit:
 - event: solution-reviewed
   by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 20, printed p. 390, and
+    the definition of the action on printed pp. 341-342. The argument is correct: for the
+    product, pi_n splits as a direct sum and pi_1 as a product, and the action of a loop
+    (gamma_1, gamma_2) inserts each into its factor; the K(G,1) factor contributes nothing
+    since pi_n(K(G,1)) = 0 for n > 1, and the X factor contributes nothing since pi_1(X) = 0.
+    The card said no retained set solves the exercise; Sam's does, at §4.2 Exercise 20, and
+    is now cited. Statement unchanged.
+- event: solution-reviewed
+  by: claude
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
@@ -58,7 +69,7 @@ Show that for the product $K(G, 1) \times X$ the action of $\pi_1$ on $\pi_n$ is
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 20. It is checked against Hatcher, Algebraic Topology, Section 4.2, printed p. 390, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 20, PDF p. 22**, whose argument is the one below — an element of $\pi_n$ of the product is a pair of maps, a loop in the product is a pair of loops, and the action inserts the two loops into the two factors, where the first acts trivially because $\pi_n(K(G,1))=0$ for $n>1$ and the second because $\pi_1(X)=0$. The card's steps are that argument written out, checked against Hatcher, Algebraic Topology, Section 4.2, printed p. 390, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
 
 ::: pf
 
