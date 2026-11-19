@@ -8729,3 +8729,19 @@ queue: it already carries a Yang citation from an earlier batch.
 **Impact and owner.** The pointers live in session notes, not in the tree; the tree and the issues are authoritative, and `itree next` is the intended reader of the live order -- it is not installed on this VM, so a session cannot ask the tree what is next. Until a session is given an issue number, the honest state is that the named work is finished.
 
 **Uncertainty.** Audit events are evidence that a read was *recorded*, not proof that the mathematics was read; the owner's rule says a stamp does not close a card. What is measured here is the recorded state, not the quality of each read.
+
+## 2026-11-19: the CH8 batch's citation pass is finished, and its five missing certificates are blocked rather than deferred
+
+**Object and need.** The previous entry records `SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES` as "25 of 25 revisited since 2026-11-01, all with `pf` blocks". Measured on 2026-11-19 that is not right: three cards held a single run-on paragraph of extraction residue and no `pf` block at all, and nineteen cards cited no page of Gallian. The batch was cited and repaired this day, and what remains is one item that this session cannot do.
+
+**Observed evidence.**
+
+- Page map, re-extracted from the retained copy (`tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`, running heads checked): Chapter 8 exercises 1--15 on printed p. 167 (file p. 182), 16--34 on p. 168 (p. 183), 35--57 on p. 169 (p. 184), 58 onward on p. 170 (p. 185).
+- The retained outline's numbering is *not* a constant offset from the seventh edition: outline 14, 15 are 7e 12, 13 (offset 2), outline 36--40 are 7e 32--36 (offset 4), outline 49--68 are 7e 41--58 (offset 8 to 10). Each citation was therefore made by matching the card's statement to the printed exercise, never from the id.
+- 24 of the 25 cards now carry a Gallian exercise number and printed page, and the statement was compared with that page. `P-CH8-13` is the exception and cannot be cited: no exercise of the seventh edition asks for two non-isomorphic groups of order $n^2$, and Exercises 11 and 13 of the seventh edition stand where the outline has that item. The mismatch is recorded on the card.
+- `P-CH8-30`, `-36`, `-56` now hold proofs written out from the retained outline (items 30, 36, 56 of `tmp/sources/Ch8Sltns.md`) and checked against the printed exercise; all three pass `tmp/lam.sh`.
+- `P-CH8-1`'s audit record gave the file page of printed p. 167 as both 181 and 182; page 182 is right, and a correcting event is appended (page 181's running head is 166).
+
+**Impact and owner.** Five cards (`P-CH8-7`, `-10`, `-38`, `-53`, `-67`) have no certificate remark. This is not an omission of writing: `LeanCategories/Algebra/CH8DirectProduct.lean` on `lean-categories` main holds `product_mul_apply`, `product_one_apply`, `prod_bot_eq_ker_snd`, `prod_bot_normal`, `bot_prod_normal`, `prod_comm_iff`, `prod_orderOf_eq_zero_iff` and `pi_orderOf_eq_zero_iff`, which certify `P-CH8-1`, `-3`, `-4` and `-40` -- cards that already carry remarks -- and nothing that states the isomorphism $G_1\times G_2\cong G_2\times G_1$, the count of elements of order 9 in $\ZZ_3\oplus\ZZ_9$, the matrix group of Exercise 34, the negative answer of Exercise 45, or the four decompositions of $U(165)$. Writing those remarks needs new declarations in `lean-categories`; this session holds write access to this repository only, and the two `lean-categories` checkouts on this VM belong to other projects' workspaces, so it may not write them there. The item is therefore blocked on the certificate repository, and belongs with `#114`.
+
+**Uncertainty.** The gate was green on 2026-11-19 (`14410 cards and 348 wiki pages OK`, record `02dc6d437e4d-20261119T214225.232Z-qualc-check.json`) on a tree containing the three rewrites. It has not been re-run since the `COMPLAINTS.md` entry you are reading, which touches no card.
