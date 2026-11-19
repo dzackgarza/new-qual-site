@@ -21,6 +21,25 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §3.H, printed p. 336, with the locally finite chains of
+    §3.H (p. 327) and Proposition A.1 (p. 519) on compact subsets of CW complexes. Correct. The
+    locally finite chains form a chain complex because the singular boundary has finitely many
+    terms and a neighbourhood of a face's image is one of the simplex's image, and $\partial^2=0$
+    holds simplex by simplex. Finite chains are a subcomplex, so ordinary homology maps in. A
+    proper map carries locally finite families to locally finite families — the preimage of a
+    compact set is compact and meets finitely many simplices — while the pushforward of
+    coefficients needs the extra finiteness hypothesis the card states and does not hide. A
+    locally compact CW complex is locally finite, since a compact neighbourhood lies in a finite
+    subcomplex by Proposition A.1, so an arbitrary formal sum of cells is locally finite; and on a
+    wedge of $n$-spheres the locally finite $n$-chains are the product $\prod_\alpha G$ rather than
+    the sum, with nothing in other degrees, which is where the infinite coefficients cost
+    something. The spectral-sequence comparison with the cellular complex is finite in each total
+    degree because $X$ is finite dimensional. Nothing changed. Not claimed: a published solution,
+    and no certificate.
 ---
 
 ::: {.problem}
