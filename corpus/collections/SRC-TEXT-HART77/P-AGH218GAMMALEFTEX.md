@@ -121,7 +121,7 @@ Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
 :::
 
 ::: {.remark}
-The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(U,-)$ on sheaves of abelian groups and the presheaf counterexample included.  The undefined control word \wait that stood for the sheaf in $\Gamma(U,\wait)$ has been replaced by \mcf, the macro this card uses everywhere else.
+The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(U,-)$ on sheaves of abelian groups and the presheaf counterexample included.  The undefined control word `\wait` that stood for the sheaf in $\Gamma(U,-)$ has been replaced by \mcf, the macro this card uses everywhere else.
 
 The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the left exactness of $\Gamma(X,\cdot)$ on sheaves of abelian groups and the counterexample on presheaves included.
 
