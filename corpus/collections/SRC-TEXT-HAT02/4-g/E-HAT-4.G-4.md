@@ -34,6 +34,24 @@ audit:
   date: 2026-11-08
   note: >-
     The previous 'homotopy gluing lemma therefore proves by cellular induction' asserted without carrying out induction or stating the lemma. Replaced by explicit skeleta induction: over int e, p^{-1}(int e)=int e×Δ^{\cardinality{J(e)}-1} with J(e)={i|e⊂X_i}, contractible fiber; (X^n,X^{n-1}) and (Y^n,Y^{n-1}) are CW pairs with HEP, and p is a homotopy equivalence on Y^{n-1} by induction and on the attached n-cells by the product structure, so the gluing lemma (Prop. 0.6.2) gives p:Y^n→X^n a homotopy equivalence, hence p:ΔX_U→X. The nerve corollary then follows from Proposition 4G.1 applied to X_σ→*.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §4.G, printed p. 460, with Proposition 4G.1 (p. 458),
+    Proposition 4G.2 (p. 459) and Corollary 4G.3. The skeleton induction is right: over an open
+    cell $e$ the preimage is $\operatorname{int}e\times\Delta^{\cardinality{J(e)}-1}$ with the
+    projection as bundle map, the attaching data give CW pairs on both sides, the map is a homotopy
+    equivalence on the subspace and on the attached cells, and the gluing lemma plus the colimit
+    over skeleta finishes; the nerve corollary from Proposition 4G.1 applied to the constant diagram
+    is right too. One gap found and left open, recorded here rather than repaired this session: the
+    step asserts that $J(e)=\{i:e\subset X_i\}$ is finite 'since $e$ is compact', and compactness of
+    $e$ does not bound the number of subcomplexes containing it — an index family with infinitely
+    many copies of one subcomplex is a counterexample to that sentence. What makes the step work is
+    local finiteness of the cover, under which each cell lies in finitely many $X_i$; the printed
+    exercise does not state that hypothesis, so the card should either assume it or treat infinite
+    $J(e)$ as a colimit of finite-dimensional simplices. Everything downstream of that sentence
+    presupposes it. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
