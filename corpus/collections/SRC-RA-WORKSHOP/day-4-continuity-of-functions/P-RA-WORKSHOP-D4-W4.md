@@ -21,6 +21,8 @@ Prove that $$\lim_{x\to-\infty}\frac{x-1}{x}=1.$$
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the workshop problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

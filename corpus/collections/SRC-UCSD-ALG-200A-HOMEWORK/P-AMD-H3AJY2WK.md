@@ -60,6 +60,8 @@ be the set of $H$-orbits in $X$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the homework problem sets alone, so the argument is the card's own.
 For $x\in X$, write
 $$
 \mathcal O_x=Hx=\{hx:h\in H\}

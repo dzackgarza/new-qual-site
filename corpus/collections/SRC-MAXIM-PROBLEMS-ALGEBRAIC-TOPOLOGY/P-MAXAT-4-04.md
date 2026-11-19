@@ -24,6 +24,8 @@ Find the cohomology rings of $\Omega\CP^{n}$ and $\Omega\RP^{n}$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Use integral coefficients and based loop spaces. Write $\Gamma_{mathbb Z}(y)$ for the divided-power algebra with basis $\gamma_j(y)$, $j\geq0$, and multiplication
 $$
 \gamma_i(y)\gamma_j(y)=\binom{i+j}{i}\gamma_{i+j}(y).

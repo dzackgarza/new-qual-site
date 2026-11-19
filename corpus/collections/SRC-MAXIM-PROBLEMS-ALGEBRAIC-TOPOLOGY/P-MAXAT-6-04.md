@@ -23,6 +23,8 @@ Show that the only real projective spaces which can be parallelizable are $\RP^{
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Assume $n>0$. If $\RP^n$ is parallelizable, its tangent bundle is trivial. The key point is that this forces the existence of a real division algebra of dimension $n+1$ in the sense needed by the classical Hopf invariant one theorem.
 
 ::: pf

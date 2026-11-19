@@ -25,6 +25,8 @@ However, it is the boundary of a non-orientable manifold.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Put
 $$
 M=\CP^2\#\CP^2

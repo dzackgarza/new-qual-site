@@ -24,6 +24,8 @@ If there exists a division algebra on $\RR^{n}$, then $\RP^{n-1}$ is orientable,
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Let $A$ be an $n$-dimensional real division algebra. Only bilinearity of multiplication and the absence of zero divisors are needed.
 
 ::: pf

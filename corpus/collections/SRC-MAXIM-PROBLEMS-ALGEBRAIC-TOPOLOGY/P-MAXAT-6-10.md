@@ -23,6 +23,8 @@ Find obstructions to the existence of a complex structure on an even dimensional
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Let $M^{2n}$ be a smooth manifold. A complex structure on $TM$ means a bundle endomorphism
 $$
 J:TM\to TM,

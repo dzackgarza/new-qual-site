@@ -24,6 +24,8 @@ If $M$ is a compact, closed, oriented manifold of dimension $n$, show that the t
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 All (co)homology groups below have integral coefficients. Write
 $$
 T(A)=\{a\in A: ma=0\text{ for some }m>0\}

@@ -25,6 +25,8 @@ Is the convergence of $f_n$ to $f$ uniform?
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the workshop problem sheets alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

@@ -23,6 +23,8 @@ Construct an orientable sphere bundle with zero Euler class, but no section.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Take an oriented rank-$3$ real vector bundle over $S^4$ representing the nonzero element of
 $$
 \pi_3(SO(3))\cong\ZZ,
