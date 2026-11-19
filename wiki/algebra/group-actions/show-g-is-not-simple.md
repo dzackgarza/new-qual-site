@@ -90,6 +90,10 @@ This is the action of $G$ on the cosets of $N_G(P)$.
 
 ## Arguments and conclusions
 
+The order in which the arguments are tried is itself a strategy: the Sylow count first, because it is the only one that needs no element count, and the counting arguments only for the primes the count leaves open.
+
+[[ST-DKYXZ]]
+
 | Argument | Input | Conclusion |
 | --- | --- | --- |
 | Sylow count | the factorization of $n$ | $n_p = 1$, so a Sylow $p$-subgroup is normal |
