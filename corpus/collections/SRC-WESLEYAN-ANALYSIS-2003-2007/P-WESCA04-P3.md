@@ -31,6 +31,16 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The crossing step said that each downward crossing of the negative real axis adds a full
+    turn, i.e. an argument increase of 2 pi, which is not what a single crossing does. It now
+    argues the count: at N crossings the lifted argument passes 3 pi, 5 pi, ..., (2N-1) pi and
+    ends at a positive multiple of 2 pi lying between (2N-1) pi and (2N+1) pi, namely 2 pi N.
+    The winding numbers 2 and 1 and the integral are unchanged.
+
 ---
 
 ::: {.problem}
@@ -286,8 +296,11 @@ $$
 $$
 so the lifted argument continues increasing through $\pi$ rather than
 jumping to $-\pi$.
-Since the curve begins and ends on the positive real axis, each such crossing
-adds one full turn, i.e. an argument increase of $2\pi$.
+Since the curve begins and ends on the positive real axis and every crossing of
+the negative axis is downward, the lifted argument passes through
+$\pi,3\pi,\dots,(2N-1)\pi$ at $N$ crossings and ends at the multiple of $2\pi$ that
+lies above $(2N-1)\pi$ and below $(2N+1)\pi$, namely $2\pi N$; the winding number
+is therefore the number of such crossings.
 
 :::
 
