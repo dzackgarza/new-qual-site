@@ -47,7 +47,7 @@ For appropriate $F$ and $G$, one can then use the Cauchy-Riemann equations.]
 :::
 
 ::: {.solution}
-Write $u=\Re f$ and $v=\Im f$, so that $f=u+iv$ and $\dd z=\dd x+i\,\dd y$. Because $f$ is continuously complex differentiable, $u$ and $v$ are continuously differentiable and satisfy the Cauchy--Riemann equations, so each integral that Green's theorem produces is the integral of a function vanishing identically. This is the printed hint's route, with each step checked against the book's Cauchy--Riemann equations (Chapter 1, §2) and the statement's form of Green's theorem; the argument is this card's own, since no retained solution set covers the exercises of Stein--Shakarchi.
+Write $u=\Re f$ and $v=\Im f$, so that $f=u+iv$ and $\dz=\dx+i\dy$. Because $f$ is continuously complex differentiable, $u$ and $v$ are continuously differentiable and satisfy the Cauchy--Riemann equations, so each integral that Green's theorem produces is the integral of a function vanishing identically. This is the printed hint's route, with each step checked against the book's Cauchy--Riemann equations (Chapter 1, §2) and the statement's form of Green's theorem; the argument is this card's own, since no retained solution set covers the exercises of Stein--Shakarchi.
 
 ::: pf
 
@@ -67,7 +67,7 @@ $\displaystyle\int_T u\,\dd x-v\,\dd y=0$.
 ::: pf-proof
 Apply Green's theorem as quoted in the statement to the $C^1$ field $(F,G)=(u,-v)$ on the closed triangle $T$, whose boundary is a piecewise $C^1$ closed curve and whose interior lies in $\Omega$:
 $$
-\int_T u\,\dd x-v\,\dd y=\iint_{\operatorname{int}T}\Bigl(\frac{\partial G}{\partial x}-\frac{\partial F}{\partial y}\Bigr)\dd x\,\dd y=\iint_{\operatorname{int}T}(-v_x-u_y)\,\dd x\,\dd y=0,
+\int_T u\dx-v\dy=\iint_{\operatorname{int}T}\Bigl(\frac{\partial G}{\partial x}-\frac{\partial F}{\partial y}\Bigr)\dx\dy=\iint_{\operatorname{int}T}(-v_x-u_y)\dx\dy=0,
 $$
 because $u_y=-v_x$ by step [](#components){.pf-ref}.
 :::
@@ -93,9 +93,9 @@ because $u_x=v_y$ by step [](#components){.pf-ref}.
 $\displaystyle\int_T f(z)\,\dd z=0$, so Goursat's theorem holds for every continuously complex differentiable $f$ on a neighbourhood of $T$.
 
 ::: pf-proof
-Multiplying out, $f(z)\,\dd z=(u+iv)(\dd x+i\,\dd y)=(u\,\dd x-v\,\dd y)+i(v\,\dd x+u\,\dd y)$, since $i^2=-1$. A complex-valued integral is the pair of the integrals of its real and imaginary parts, so by steps [](#real){.pf-ref} and [](#imaginary){.pf-ref}
+Multiplying out, $f(z)\dz=(u+iv)(\dx+i\dy)=(u\dx-v\dy)+i(v\dx+u\dy)$, since $i^2=-1$. A complex-valued integral is the pair of the integrals of its real and imaginary parts, so by steps [](#real){.pf-ref} and [](#imaginary){.pf-ref}
 $$
-\int_T f(z)\,\dd z=\int_T u\,\dd x-v\,\dd y+i\int_T v\,\dd x+u\,\dd y=0.
+\int_T f(z)\dz=\int_T u\dx-v\dy+i\int_T v\dx+u\dy=0.
 $$
 :::
 
