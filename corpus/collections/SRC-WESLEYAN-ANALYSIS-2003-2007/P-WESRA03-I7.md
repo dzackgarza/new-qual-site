@@ -36,6 +36,17 @@ audit:
     No published solution set is retained for this examination. The definition is
     the answer; the proof block records what follows from it and points to the
     card on which the epsilon-delta characterisation is proved.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The step on the failure of symmetry asserted that counting measure on R is
+    absolutely continuous with respect to neither Lebesgue measure nor its reverse.
+    The second half is false: a set has counting measure zero only when it is empty,
+    so Lebesgue measure is absolutely continuous with respect to counting measure.
+    The example now keeps the true half, that counting measure is not absolutely
+    continuous with respect to Lebesgue measure, and states the reverse implication
+    correctly. The boxed definition and the statement are unchanged.
 ---
 
 ::: {.problem}
@@ -61,10 +72,12 @@ $\nu$ ignores.
 ::: pf-proof
 
 The condition is exactly the statement that $\nu$-null sets are $\mu$-null. It
-is not symmetric: counting measure on $\RR$ is absolutely continuous with
-respect to neither Lebesgue measure nor its reverse, since it charges the null
-singleton $\{0\}$ while Lebesgue measure vanishes on every countable set, and
-Lebesgue measure charges a null set of counting measure.
+is not symmetric: counting measure $\sigma$ on $\RR$ is not absolutely
+continuous with respect to Lebesgue measure $m$, since $\sigma$ charges the
+$m$-null singleton $\{0\}$ while $m$ vanishes on every countable set. In the
+other direction $m\ll\sigma$ does hold, because the only set of counting measure
+zero is the empty set, so the implication $\sigma(E)=0\Rightarrow m(E)=0$ is
+vacuous. The relation is therefore genuinely asymmetric and may not be reversed.
 
 :::
 
