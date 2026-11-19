@@ -8,6 +8,21 @@ relations: []
 review: draft
 audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-14}
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the printed problem (Wesleyan topology, June 2006, Part II
+    problem 4, in the retained compilation extraction), which asks for both
+    identities by explicit path homotopies described algebraically and with a
+    diagram; the card supplies both. The homotopies are correct: lambda_s(t) =
+    (1-s) min(2t, 1) + st and mu_s(t) = (1-s) max(2t - 1, 0) + st are convex
+    combinations of points of the interval, hence continuous with values in I,
+    they equal the concatenations at s = 0 and the identity reparametrization at
+    s = 1, and both fix 0 and 1 for every s, so the homotopies are relative to
+    the endpoints. The identifications of f*c_{x_1} and c_{x_0}*f with the
+    reparametrizations at s = 0 are correct on the two halves of the interval.
+    Nothing was changed.
 ---
 
 ::: {.problem}
