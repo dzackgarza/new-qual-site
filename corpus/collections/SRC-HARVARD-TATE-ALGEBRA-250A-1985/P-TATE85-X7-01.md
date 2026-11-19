@@ -17,6 +17,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Retranscribed part (I) from the page headed X^7 - 7X + 3 in Tate_Galois_Theory_Problems.pdf; the OCR had glued math delimiters to words and dropped TeX into prose.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained compilation `assets/attachments/Tate_Galois_Theory_Problems.pdf`: the statement is item (I) of the sheet headed X^7 - 7X + 3, printed on PDF p. 9, and its printed
+    words are the card's. That sheet carries no date, so the locator names its heading and page
+    rather than inventing a date. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -29,6 +37,7 @@ But it is even easier if you know that the only non-abelian simple groups of ord
 :::
 
 ::: {.solution}
+This is item (I) of the undated sheet on PDF p. 9, whose heading is the polynomial X^7 - 7X + 3, in the retained compilation `assets/attachments/Tate_Galois_Theory_Problems.pdf`; the sheet is undated in the source, so its heading and page locate it. The statement below is its wording.
 
 Let $L$ be the splitting field of $f$, let
 $$
