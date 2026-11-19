@@ -22,6 +22,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified that the unique nontrivial left coset equals the unique nontrivial right coset for every element outside H.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Summer84.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -29,6 +36,7 @@ Show that if a subgroup $H$ of a group $G$ has just one left coset different fro
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Summer 1984, retained in this repository as `assets/attachments/Summer84.pdf`; the statement below is its wording.
 Let $H\le G$. Since $H$ has exactly one left coset other than $H$ itself, there are exactly two left cosets of $H$ in $G$.
 
 ::: pf
