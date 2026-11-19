@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7B, printed pp. 6--7 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 7B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -34,6 +43,8 @@ Since this problem is part of the proof of Schwarz's lemma, quoting that lemma d
 :::
 
 ::: {.solution}
+
+The argument is Problem 7B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 6--7 of that file, transcribed: put $g=f/z$, so that the claim is $\abs{g(0)}\le1$; by the maximum modulus principle $\abs{g(0)}$ is at most the maximum of $\abs{g}$ on the circle of radius $1-\varepsilon$, which is at most $1/(1-\varepsilon)$ because $\abs{f}\le1$ and $\abs{1/z}\le1/(1-\varepsilon)$; and $\varepsilon>0$ is arbitrary. The card adds the removal of the singularity at $0$, which makes $g$ analytic on the disc, and the step structure.
 Let
 $$
 D\coloneqq\{z\in\CC:\abs{z}<1\}.
