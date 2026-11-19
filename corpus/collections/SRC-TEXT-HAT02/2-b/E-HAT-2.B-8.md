@@ -43,6 +43,21 @@ audit:
     continuity forces a zero determinant between endpoints, exactly contradicting step s1. No
     additional claim is imported from the source's optional degree-of-maps remark.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 8 of §2.B, printed p. 177, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and checked against DeMason, Hatcher 2.B.8,
+    printed p. 71. Checked in the card: $L_a$ is onto, hence an isomorphism, for $a\neq0$, since
+    $ax=b$ is solvable; $L_{-a}=-L_a$ and $2n+1$ is odd, so $\det L_{-a}=-\det L_a$; the
+    punctured space is path-connected in dimension $2n+1\geq3$, so a path joins $a$ to $-a$; and
+    $a\mapsto\det L_a$ is continuous and nonvanishing along it, which is impossible with endpoint
+    values of opposite sign. The card does not import the source's optional remark on degrees.
+    Checked also that Hatcher's Theorem 2B.5, the classification of the commutative finite-
+    dimensional division algebras, is on printed p. 173 (PDF page 182), which is the page the
+    earlier event cites for it. Not claimed: a published solution other than the one transcribed.
+
 ---
 
 ::: {.problem}
