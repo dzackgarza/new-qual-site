@@ -14,6 +14,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Algebra Preliminary Examination, Autumn 2016
+    (University of Washington), printed p. 1 of the two-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2016.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the three parts against the paper's text layer at the page
+    named; the solution read for the affine subgroup of order 20, the coset embedding, and the
+    transitivity comparison that makes the resulting automorphism outer; `qualc.authoring check` on
+    the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, and no other card of the collection in this
+    pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -32,6 +46,8 @@ An outer automorphism is an automorphism that is not inner.
 
 
 ::: {.solution}
+
+The problem is Problem 4 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies all three parts — the affine group of the line over $\FF_5$ as the subgroup of order $20$, its coset action as the transitive embedding into $S_6$, and the action of $S_6$ on the six cosets of that subgroup as an automorphism carrying a transitive subgroup to an intransitive one, hence outer.
 
 ::: pf
 
