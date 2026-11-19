@@ -34,6 +34,24 @@ audit:
     would give F(z) = λz and hence −z = F²(z) = |λ|² z, impossible. This is the map
     Hatcher discusses on p. 180, where he also notes it is only conjugate-linear and
     that the induced CP^{2k−1} map has no fixed points. No defect.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 3 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against DeMason, Hatcher 2.C.3, printed
+    pp. 84--85. Two repairs of the rendering, neither to the mathematics. (1) The closing paragraph
+    ended "Surjectivity and well-definedness on complex lines therefore leave no fixed point", which
+    is not what the preceding steps show and mentions a surjectivity nothing uses; it now says that
+    the steps give a well-defined self-map of $\CP^{2k-1}$ and that the fixed-point computation shows
+    it has none. (2) It attributed the conjugate-linear construction to DeMason, who does not use
+    conjugate-linearity: he checks bijectivity, that $F$ carries complex lines to complex lines by
+    rewriting the real equations of a line, and then the fixed-point contradiction. The paragraph now
+    says the formulation is this card's rewriting of his line-form argument. Checked in the card:
+    $F(\lambda z)=\bar\lambda F(z)$ and $F^2=-\mathrm{id}$ pairwise, so $F$ is injective on lines and
+    maps nonzero vectors to nonzero vectors; a fixed line gives $F(z)=\lambda z$ and then
+    $-z=F^2(z)=\bar\lambda F(z)=\abs{\lambda}^2z$, impossible. No defect in the mathematics.
+
 ---
 
 ::: {.problem}
@@ -114,7 +132,7 @@ Since $z\ne0$, this would imply $\abs{\lambda}^2=-1$, impossible.
 
 Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\CP^{2k-1}$.
 
-The conjugate-linear construction and fixed-point computation are given by **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85. The present computation is a concise form of the eigenvector/line argument there: $F(z)=\lambda z$ implies $-z=F^2(z)=\bar\lambda F(z)=\abs{\lambda}^2z$, which cannot happen for $z\ne0$ and complex $\lambda$. Surjectivity and well-definedness on complex lines therefore leave no fixed point.
+The conjugate-linear construction and fixed-point computation are **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85, in the line form: he checks that $F$ is a bijection of $\CC^{2k}$, that it carries complex lines to complex lines by rewriting the real equations of a line, and that a fixed line would force $F(z)=\lambda z$ and hence a contradiction. The formulation here is the same argument in conjugate-linear coordinates — $F(\lambda z)=\bar\lambda F(z)$ and $F^2=-\mathrm{id}$ — with no new claim. Together the steps show that the formula induces a well-defined self-map of $\CP^{2k-1}$ and that it has no fixed point.
 
 
 :::
