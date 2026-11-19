@@ -26,22 +26,6 @@ topics:
 
 [[PR-5ZSSQ]]
 
-::: {.proof}
-Let $f\colon X\to X$ be a contraction with constant $c<1$ on a complete metric space $X$.
-
-Uniqueness: if $x, y$ are fixed points, then $d(x, y) = d(f(x), f(y))\leq c d(x, y)$, and $c<1$ forces $d(x, y) = 0$.
-
-Existence: choose $x_0\in X$ and set $x_k \coloneqq f(x_{k-1})$.
-Then $d(x_{k+1}, x_k) = d(f(x_k), f(x_{k-1})) \leq c\,d(x_k, x_{k-1})$, so by induction $d(x_{k+1}, x_k)\leq c^k d(x_1, x_0)$.
-For $n < m$,
-$$
-d(x_m, x_n) \leq \sum_{k=n}^{m-1} d(x_{k+1}, x_{k}) \leq \sum_{k=n}^{m-1} c^k d(x_1, x_0) \leq \frac{c^n}{1-c} d(x_1, x_0),
-$$
-which tends to $0$ as $n\to\infty$, so $(x_k)$ is Cauchy and converges to some $x\in X$.
-Since $f$ is continuous, $f(x) = \lim_k f(x_k) = \lim_k x_{k+1} = x$.
-
-:::
-
 ## The implicit and inverse function theorems
 
 
@@ -143,8 +127,8 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 [[D-OHFRH]]
 
 ::: {.remark}
-If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $\inverseof{f}$ is holomorphic ([[P-Z776N]]).
-For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\to\RR$ with $f'(0) = 0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
+If $f\colon \Omega\to\Omega'$ is a holomorphic bijection, then $\inverseof f$ is holomorphic ([[P-Z776N]]).
+Over $\RR$ the analogue fails, and $x\mapsto x^3$ is the standard witness ([[complex-analysis/counterexamples#conformal-maps|Counterexamples]]).
 
 :::
 
