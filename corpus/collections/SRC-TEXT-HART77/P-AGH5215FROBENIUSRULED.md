@@ -322,6 +322,32 @@ audit:
     than repaired: the card's step s9 keeps its claim, and this event is the
     reason it should be re-read against the printed paper before it is relied
     on.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) corrected: Xie's C' is the triple of a section, not an integral
+    curve, and the statement and steps s7 to s10 now say so. The printed p. 5
+    was read as an image -- pdftoppm at 150 dpi of PDF p. 5 of the retained Xie
+    PDF -- and it writes only "through the maps ..." with an inclusion into
+    S^p, naming no map; the second arrow is the adjoint of the cube map, the
+    only natural inclusion, so t is the cube of a section of a line bundle. The
+    section s of E \otimes L^{-1} mapping to 1 in H^0(O_C) is unique up to scale,
+    and it must vanish, since otherwise it would split the extension and
+    contradict step s5; its zero locus Sigma is a curve of class C_0 - f with
+    Sigma.f = 1 over C, hence irreducible and a section, isomorphic to C, with
+    Sigma^2 = -1 and Sigma disjoint from C_0; and Y = div(t) = 3Sigma. What
+    changed: the statement of (c) is the book's words again, since "integral" is
+    not what the construction gives; s7 now proves the section and the triple;
+    s8 no longer cites Lemma 4.4(iii), whose hypothesis is an irreducible R,
+    and instead observes that 3Sigma -> C is an isomorphism followed by the
+    triple thickening; s9 keeps the adjunction count and the argument that no
+    nonsingular curve has the class -- IV.2.5 for the purely inseparable case,
+    Riemann-Hurwitz for the separable one, both with printed pages -- and states
+    that Xie's divisor is not reduced; s10 meets 2C_0 with the irreducible
+    Sigma instead of with Y. Not checked: whether some other, reduced curve in
+    the class 3C_0 - 3f exists, since the argument here decides Xie's divisor
+    only; and no example was computed.
 
 ---
 
@@ -336,7 +362,7 @@ Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteris
 $$
 0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 $$
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$ whose normalization is $C$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains a nonsingular curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
 :::
@@ -468,11 +494,18 @@ by (2.8.1).
 :::
 
 ::: {.pf-step #s7}
-$X$ contains an integral curve
+$X$ contains the section
+$$
+\Sigma\equiv C_0-f,\qquad \Sigma\cong C,\qquad \Sigma^2=-1,
+$$
+disjoint from $C_0$, and the divisor $Y=3\Sigma$ satisfies
 $$
 Y\equiv3C_0-3f,
+\qquad
+\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P),
+\qquad
+C_0\cap Y=\emptyset.
 $$
-with $\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P)$ and $C_0\cap Y=\emptyset$.
 
 ::: pf-proof
 Xie, Example 3.1, printed pp. 5--6. Pulling the extension back by Frobenius gives the split sequence
@@ -481,11 +514,11 @@ $$
 $$
 "since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$", printed p. 5; the smoothness of $C'$ is step [](#s9){.pf-ref}, where it fails.
 
-Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$, so
-$$
-\OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P),
-$$
-which in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is the class $3C_0-3f$; and $C_0\cap Y=\emptyset$ is Xie's $E\cap C'=\emptyset$, with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
+Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$.
+
+The second arrow in that chain is the adjoint of the cube map $M\to S^3M$, so the section $t$ is the cube of one section of a line bundle, not a general section of $\OO_X(3)\otimes f^*\OO_C(-3P)$. The copy of $\OO_C$ that the first arrow maps into is the quotient of $0\to\mathcal L^{-3}\to F^*\mathcal E\otimes\mathcal L^{-3}\to\OO_C\to0$, whose space of sections is $k$, and the section of $\mathcal E\otimes\mathcal L^{-1}$ mapping to $1\in H^0(\OO_C)$ is unique up to a scalar because $H^0(\mathcal L^{-1})=0$. Call it $s$, and let $\Sigma$ be the zero locus of the section of $\OO_X(1)\otimes f^*\mathcal L^{-1}$ it induces: $t=s^3$, so $Y=\operatorname{div}(t)=3\Sigma$.
+
+If $s$ never vanished, it would generate a copy of $\OO_C$ inside $\mathcal E\otimes\mathcal L^{-1}$ and the extension $0\to\mathcal L^{-1}\to\mathcal E\otimes\mathcal L^{-1}\to\OO_C\to0$ would split, which step [](#s5){.pf-ref} forbids; so $\Sigma$ is a nonempty curve, of class $C_0-f$ and of degree $\Sigma\cdot f=1$ over $C$. Since $C_0\cdot\Sigma=1-1=0$ while a fibre meets $C_0$ once, $\Sigma$ has no fibre as a component, so its components each meet a fibre, and the total $\Sigma\cdot f=1$ forces exactly one component, meeting every fibre once: $\Sigma$ is irreducible and is a section, hence isomorphic to $C$. Then $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $\OO_X(\Sigma)=\OO_X(1)\otimes f^*\mathcal L^{-1}$ gives $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, whose class in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is $3C_0-3f$; and $C_0\cdot\Sigma=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
 :::
 
 :::
@@ -494,34 +527,27 @@ which in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is the class $3C_0-3f$;
 The morphism $\restrictionof{\pi}{Y}:Y\to C$ is purely inseparable of degree $3$.
 
 ::: pf-proof
-Xie, Lemma 4.4(iii), printed pp. 10--11: "If $R^2<0$, then $\restrictionof{f}{R}:R\to C$ is purely inseparable", for an irreducible curve $R\subset X$ different from a fibre. Here
-$$
-Y^2=(3C_0-3f)^2=9C_0^2-18\,C_0\cdot f=-9<0,
-$$
-using $C_0^2=1$, $C_0\cdot f=1$ and $f^2=0$; so $\restrictionof{f}{Y}$ is purely inseparable. Its degree is $Y\cdot f=3$, the coefficient of $C_0$ in the class of $Y$, since a fibre meets $Y$ in $\deg(\restrictionof{\pi}{Y})$ points. This is what the exercise asks of $\pi:Y\to C$ in the corrected statement.
+By step [](#s7){.pf-ref}, $Y=3\Sigma$ and $\restrictionof{\pi}{\Sigma}:\Sigma\to C$ is an isomorphism, so $\restrictionof{\pi}{Y}$ is that isomorphism followed by the triple thickening $3\Sigma\to\Sigma$. It is finite of degree $3$ --- the degree is $Y\cdot f=3(\Sigma\cdot f)=3$, since a fibre meets $Y$ in $\deg(\restrictionof{\pi}{Y})$ points counted with multiplicity --- and it induces the trivial extension of function fields, so it is purely inseparable. This is the sense in which the exercise's $\pi:Y\to C$ is purely inseparable for Xie's divisor.
 :::
 
 :::
 
 ::: {.pf-step #s9}
-No nonsingular curve on $X$ has class $3C_0-3f$; the curve $Y$ of step [](#s7){.pf-ref} is integral with normalization $C$ and has one singular point, of $\delta=1$.
+No nonsingular curve on $X$ has class $3C_0-3f$; Xie's divisor $Y=3\Sigma$ is not reduced, its reduction being the section $\Sigma\cong C$ of genus $3$, while $p_a(Y)=4$.
 
 ::: pf-proof
-This step is this card's own, and no source read carries it: it is the adjunction count that decides the printed adjective. For an integral curve $Y$ on the nonsingular surface $X$, adjunction gives
+This step is this card's own, and no source read carries it. For an effective divisor $Y$ in the class, adjunction gives
 $$
 p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
 $$
-and with $C_0^2=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ this is
+and with $C_0^2=1$ and $K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f$ the value is
 $$
 1+\frac12\qty(-9+15)=4.
 $$
-On the other hand $Y\cdot f=3$, so $\restrictionof{\pi}{Y}$ has degree $3$, and it is purely inseparable by step [](#s8){.pf-ref}: the function fields embed as
-$$
-K(C)\subset K(Y)\subset K(C)^{1/3}
-$$
-with $[K(C)^{1/3}:K(C)]=3=[K(Y):K(C)]$, so $K(Y)=K(C)^{1/3}$ and $Y$ is birational to the Frobenius twist $C^{(3)}$ of $C$. That twist is the plane quartic $V(x^3y+y^3z+z^3x)$ again, $C$ being defined over the prime field, and it has genus $3$. So the normalization of $Y$ has genus $3$ while $p_a(Y)=4$, and $Y$ is singular with $\delta=p_a-p_a(\tilde Y)=1$. A nonsingular $Y$ in this class would have genus $4$ and, being a curve of degree $3$ over $C$, the function field $K(C)^{1/3}$ of genus $3$; the printed \"nonsingular\" cannot hold. Xie's sentence that $C'$ is smooth over $k$, printed p. 5, is false for this $p$ and this $L$, by the same count: his $C'$ is this $Y$.
 
-This $Y$ is the integral curve of the corrected statement, whose normalization is $C$.
+Suppose a nonsingular curve $Y$ had this class. Then $Y\cdot f=3$, so $\restrictionof{\pi}{Y}:Y\to C$ is finite of degree $3$, and it is either separable or purely inseparable. If it is purely inseparable, Hartshorne IV.2.5, printed p. 302, makes it a composition of $k$-linear Frobenius morphisms and gives $g(Y)=g(C)=3$, against $g(Y)=p_a(Y)=4$. If it is separable, Riemann--Hurwitz, IV.2.4, printed p. 301, gives $2\cdot4-2=3(2\cdot3-2)+\deg R$, that is $6=12+\deg R<0$. So no nonsingular curve has the class.
+
+For Xie's divisor, step [](#s7){.pf-ref} gives $Y=3\Sigma$ with $\Sigma\cong C$ of genus $3$; the adjunction count above, read with $Y=3\Sigma$ and $\Sigma\cdot K_X=2g-2-\Sigma^2=4+1=5$, is $1+\frac12(-9+15)=4$, so $p_a(3\Sigma)=4$ while its reduction has genus $3$: the divisor is not reduced, and every point of $\Sigma$ is a singular point of it.
 :::
 
 :::
@@ -536,9 +562,9 @@ satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, 
 ::: pf-proof
 Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 383, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
 
-For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot Y=0$, consistently with $(3C_0-3f)\cdot C_0=3-3=0$. Since $Y$ is an integral curve on $X$,
+For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap\Sigma=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot\Sigma=0$, consistently with $(C_0-f)\cdot C_0=1-1=0$. Since $\Sigma$ is an irreducible curve on $X$,
 $$
-D\cdot Y=2\,C_0\cdot Y=0,
+D\cdot\Sigma=2\,C_0\cdot\Sigma=0,
 $$
 and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon [[T-SRFNAKAI]]. Therefore
 $$
@@ -550,7 +576,7 @@ Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, prin
 :::
 
 ::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the curve of part (c) with its purely inseparable projection, step [](#s9){.pf-ref} the correction of the printed \"nonsingular\", and step [](#s10){.pf-ref} the divisor $D=2C_0$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} part (b), steps [](#s6){.pf-ref} to [](#s8){.pf-ref} the divisor $3\Sigma$ of part (c) with its purely inseparable projection, step [](#s9){.pf-ref} the correction of the printed \"nonsingular\", and step [](#s10){.pf-ref} the divisor $D=2C_0$.
 :::
 
 :::
@@ -562,11 +588,11 @@ Parts (a) and (b) have complete published arguments, and the curve of part (c) d
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; the irreducibility of $C'$ is asserted there and not proved, and steps [](#s7){.pf-ref} to [](#s10){.pf-ref} use the integrality of $Y$ as his assertion rather than as something proved here; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as $3\Sigma$, the triple of a section, so his ``irreducible'' can only name the support and his smoothness claim is false; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
 
 ::: {.remark}
-The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that no nonsingular curve on $X$ has the class $3C_0-3f$, the curve $Y$ of step [](#s7){.pf-ref} being integral with normalization $C$ and one singular point of $\delta=1$.  The statement above therefore asks for an integral $Y$ with normalization $C$, which is what the argument proves, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
+The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that no nonsingular curve on $X$ has the class $3C_0-3f$ at all, and that Xie's divisor $Y=3\Sigma$ is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
 :::
