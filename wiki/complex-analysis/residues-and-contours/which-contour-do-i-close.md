@@ -139,6 +139,14 @@ For a rational $f$ on the keyhole, the two edges of the cut are the case $\zeta 
 For $f$ even, $\int_0^\infty f = \frac12\int_\RR f$ and a contour for $\int_\RR f$ applies; for $f$ not even with $f(\zeta z) = f(z)$ for a root of unity $\zeta$, the sector with edge $\zeta[0,\infty)$ applies.
 :::
 
+::: {.example title="$\displaystyle\int_\RR {e^{ax}\over 1+e^x}\dx = {\pi\over\sin(\pi a)}$, $0<a<1$"}
+Take $f(z) = e^{az}/(1+e^z)$ on the rectangle with vertices $\pm R$ and $\pm R+2\pi i$.
+Since $f(z+2\pi i) = e^{2\pi ia}f(z)$, the top edge, traversed from $R+2\pi i$ to $-R+2\pi i$, contributes $-e^{2\pi ia}\int_{-R}^{R}f(x)\dx$.
+On the vertical edges $\abs f\leq e^{aR}/(e^{R}-1)$ at $\Re z = R$ and $\abs f\leq e^{-aR}/(1-e^{-R})$ at $\Re z = -R$, so both vanish as $R\to\infty$ because $0<a<1$.
+The only enclosed pole is $z = i\pi$, where $1+e^z$ has a simple zero with derivative $e^{i\pi} = -1$, so the residue is $e^{i\pi a}/(-1) = -e^{i\pi a}$.
+Hence $(1-e^{2\pi ia})\int_\RR f = -2\pi i\,e^{i\pi a}$, and $1-e^{2\pi ia} = -2i\,e^{i\pi a}\sin(\pi a)$ gives $\pi/\sin(\pi a)$.
+:::
+
 ::: {.example title="A rectangle for a translation symmetry"}
 If $f(z+ib) = cf(z)$ for real $b$ and constant $c$, use the rectangle with vertices $\pm R$ and $\pm R+ib$.
 If the vertical edges contribute integrals tending to $0$, the top edge contributes $-c\int_\RR f$, so $(1-c)\int_\RR f$ is $2\pi i$ times the sum of the residues in the strip $0<\Im z<b$.

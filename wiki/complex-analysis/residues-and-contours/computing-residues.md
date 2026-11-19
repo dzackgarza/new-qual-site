@@ -29,6 +29,14 @@ $$
 
 [[FF-VOO4Q]]
 
+::: {.example title="A pole of order two"}
+The function $f(z) = 1/\bigl(z^2(1-z)\bigr)$ has a pole of order $2$ at $0$, and the formula with $n=2$ asks for one derivative of $z^2f(z) = 1/(1-z)$:
+$$
+\Res_{z=0}{1\over z^2(1-z)} = \lim_{z\to0}{d\over dz}\qty{1\over 1-z} = \lim_{z\to0}{1\over(1-z)^2} = 1.
+$$
+The same number is the coefficient of $z$ in the Taylor series $1/(1-z) = 1+z+z^2+\cdots$, read through $1/(z^2(1-z)) = z^{-2}+z^{-1}+1+\cdots$.
+:::
+
 ## By the Laurent series
 
 At an essential singularity the residue is the coefficient $a_{-1}$ of the Laurent series.
