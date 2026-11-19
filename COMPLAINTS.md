@@ -685,6 +685,12 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    check than the rest and is named here rather than left implicit: `E-HAT-4.2-34`, whose triviality half was verified in
    detail and whose nontriviality half rests on $C_p\simeq\CP^2$ with $x^2\ne0$ and on $H^2(C_f)\cong H^2(S^2)\oplus H^1(T^3)$;
    both were then checked, so the card stands as read, but no step of it was recomputed from scratch.
+
+   **2026-11-19, correction to the counts in the paragraph above.** That paragraph's lead said 21 cards repaired of 97.
+   The count taken from the commits themselves is 28 distinct cards repaired, in 30 commits — `E-HAT-4.3-10` and
+   `E-HAT-4.3-20` were each repaired twice — and 69 cards read correct with no change. The list of SHAs below the lead
+   was already the full one; the number in front of it was not, and the per-turn reporting had counted only the cards
+   repaired before the §4.2 stretch rather than all of them. The arithmetic that survives a check is 28 + 69 = 97.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
