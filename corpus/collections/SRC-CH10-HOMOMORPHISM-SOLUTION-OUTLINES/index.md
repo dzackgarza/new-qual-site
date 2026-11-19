@@ -47,7 +47,9 @@ source:
         - id: P-CH10-48
           comment: Exercise 48
         - id: P-CH10-55
-          comment: Exercise 55
+          comment: Exercise 53 (printed as exercise 55 when the card was created; evaluation of
+            polynomials at 3 is exercise 53 in Gallian 7e, confirmed by the book's Selected Answer at
+            A15, exercise 55 being the preimage decomposition of a group of order 12)
         - id: P-CH10-65
           comment: Outline item 65 (the seventh edition prints 62 exercises in this
             chapter; the outline's numbering runs ahead of it from item 37 onward)
