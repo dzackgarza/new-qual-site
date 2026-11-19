@@ -22,6 +22,24 @@ audit:
     https://dbfin.com/topology/munkres/chapter-9/section-55-retractions-and-fixed-points/problem-1-solution/
     (read 2026-11-11; kept at tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-1-solution.txt), and against Munkres,
     Topology (2000), Section 55 Exercise 1, printed p. 353. dbFin's is the same composition $i\circ f\circ r$ and Theorem 55.6; the card writes the three steps out. Nothing needed repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution on 2026-11-19. Its two steps opened with run-in titles
+    ("Retraction and map extension", "Existence of a fixed point via Brouwer's
+    Fixed Point Theorem") instead of claims, their content was a sequence of
+    unlabelled fragments, and the page carried no citation. It is now two
+    labelled steps — the composite j o f o r is a self-map of the disc, and its
+    fixed point lies in A and is fixed by f — and it cites the published solution
+    it transcribes, dbFin, "Section 55: Problem 1 Solution"
+    (https://dbfin.com/topology/munkres/chapter-9/section-55-retractions-and-fixed-points/problem-1-solution/),
+    kept at tmp/sources/dbfin/section-55-retractions-and-fixed-points/problem-1-solution.txt
+    and read on 2026-11-11. Checked against the book in
+    tmp/sources/munkres-2000-topology.md and the retained PDF: the exercise on
+    printed p. 353 (PDF p. 368, printed page = PDF page - 15) and Theorem 55.6 on
+    printed p. 351 (PDF p. 366). No statement changes.
+
 ---
 
 ::: {.exercise}
@@ -30,83 +48,28 @@ Show that if $A$ is a retract of $B^2$, then every continuous map $f: A \to A$ h
 :::
 
 ::: {.solution}
+The argument is that of the published solution of dbFin, "Section 55: Problem 1 Solution": compose the retraction, the given map and the inclusion into a self-map of the disc, apply Brouwer's theorem to that self-map, and read the fixed point back on $A$. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 1, printed p. 353, and Brouwer's fixed-point theorem for the disc is Theorem 55.6, printed p. 351.
+
+Let $r\colon B^2\to A$ be a retraction, so that $r$ is continuous and $r(a)=a$ for every $a\in A$, and let $j\colon A\to B^2$ be the inclusion.
+
 ::: pf
 
-::: pf-step
-Retraction and map extension:
+::: {.pf-step #self-map}
+For every continuous $f\colon A\to A$ the composite $g=j\circ f\circ r$ is a continuous map of $B^2$ into itself.
 
 ::: pf-proof
-
-::: pf-step
-Since $A$ is a retract of $B^2$, there exists a continuous map $r: B^2 \to A$ such that:
-$$
-r(a) = a \quad \text{for all } a \in A.
-$$
-Let $i: A \hookrightarrow B^2$ denote the inclusion map.
-:::
-
-::: pf-step
-Let $f: A \to A$ be an arbitrary continuous map.
-Define the map $g: B^2 \to B^2$ by composition:
-$$
-g = i \circ f \circ r : B^2 \to B^2.
-$$
-Because $r, f$, and $i$ are continuous, $g$ is a continuous map from the closed unit disk $B^2$ to itself.
+The maps $r$, $f$ and $j$ are continuous, so their composite is continuous, and its values lie in $j(A)\subseteq B^2$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Existence of a fixed point via Brouwer’s Fixed Point Theorem:
+::: {.pf-step #fixed-point}
+$g$ has a fixed point $x$, and every fixed point $x$ of $g$ lies in $A$ and satisfies $f(x)=x$.
 
 ::: pf-proof
-
-::: pf-step
-By the Brouwer Fixed Point Theorem in dimension 2, every continuous map from $B^2$ to $B^2$ has at least one fixed point.
-Thus there exists a point $x_0 \in B^2$ such that:
-$$
-g(x_0) = x_0.
-$$
+By Theorem 55.6, printed p. 351, there is a point $x\in B^2$ with $g(x)=x$. Now $g(x)=j(f(r(x)))$ lies in $j(A)=A$, so $x\in A$; since $r$ is a retraction, $r(x)=x$, and therefore $f(x)=f(r(x))=x$, which is the same equation $g(x)=j(f(r(x)))=x$ read in $B^2$.
 :::
 
-:::
-
-:::
-
-::: pf-step
-Proof that $x_0 \in A$ and $f(x_0) = x_0$:
-
-::: pf-proof
-
-::: pf-step
-By definition of $g$, the image of $g$ is contained in $A$:
-$$
-x_0 = g(x_0) = f(r(x_0)) \in A.
-$$
-Thus the fixed point $x_0$ necessarily belongs to the subspace $A$.
-:::
-
-::: pf-step
-Since $x_0 \in A$ and $r$ is the identity on $A$, we have $r(x_0) = x_0$.
-:::
-
-::: pf-step
-Substituting $r(x_0) = x_0$ into the equation $x_0 = f(r(x_0))$ gives:
-$$
-f(x_0) = x_0.
-$$
-Thus $x_0 \in A$ is a fixed point of $f$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-Every continuous map $f: A \to A$ has a fixed point.
 :::
 
 :::
