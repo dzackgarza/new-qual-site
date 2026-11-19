@@ -16,6 +16,19 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. Simple connectivity gives H_1 = 0 and orientability,
+    so H_3 = Z and, by Poincare duality together with the universal coefficient
+    theorem, H_2 = H^1 = 0; the integral homology is then that of the 3-sphere.
+    Hurewicz gives pi_2 = 0 and an isomorphism pi_3 with H_3, so a map from the
+    sphere sending a generator to a generator is an isomorphism on H_3, hence on
+    all homology groups, and Whitehead's theorem applies because both spaces are
+    simply connected CW complexes, triangulability of compact 3-manifolds being
+    the one external input. Nothing was changed. The statement was not re-read
+    against a scan in this pass.
 ---
 
 ::: {.problem}
