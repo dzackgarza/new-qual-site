@@ -338,6 +338,38 @@ audit:
     without naming them: it is now cited to Stanford Math 215C, Spring 2009, Solution Set 4,
     Hatcher 3.3.21, printed p. 1, and C. Kottke, Math 2420 Problem Set 3 solutions, Problem 2,
     printed p. 2. Checked: both places, and that they are the pages the two arguments are on.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: the two events of 2026-11-07 that disagree about Hatcher's
+    bracketed question are reconciled here, in a new event; neither is
+    rewritten. The first, whose note reads "DEFERRED, recorded not dropped: the
+    printed bracketed question for X = ZZ x RR is not answered ... whether the
+    isomorphism still holds is open on this card", states the status before the
+    degree-two counterexample and is superseded by the events of the same day
+    that give it. The card now answers the question, negatively, and no
+    rendered sentence says it is open. The second, whose note reads "The
+    bracketed question is now answered from Stanford Math 215C Solution Set 4",
+    is the withdrawn one: the next event of that day ("Withdraws the incorrect
+    counterexample and its audit claim") says why, a surjection
+    H_1(X^+) -> prod_N Z dualising to an injection and Hom(prod_N Z, Z) being
+    the countable direct sum by Specker's theorem, so the Stanford paragraph
+    establishes nothing about the question and is not used. What the card
+    proves, and all that it claims, is the negative answer in degree two with
+    G = Z: H_c^2(Z x R; Z) = 0 from the cofinal rectangles in step
+    compact-degree-two, against H^2((Z x R)^+, infinity; Z) != 0 in step
+    earring-degree-two through Ext_Z(Q, Z) = R and the Q direct summand of the
+    H_1 of the earring, the two values assembled in the closing step. The
+    bracketed question has no published solution in anything read, which is
+    what the last paragraphs of the card say. Checked in this pass: Hatcher,
+    section 3.3 Exercise 21 on printed p. 259 (PDF p. 268), with its cone
+    hypothesis; the first part's transcription against Stanford Math 215C,
+    Spring 2009, Solution Set 4, printed p. 1, and C. Kottke, Math 2420 Problem
+    Set 3 solutions, Problem 2, printed p. 2; and the two computations above
+    with the pair sequence at (E, infinity). Not checked in this pass: the
+    Eda--Kawamura and Wiegold papers were not re-read, and no source outside
+    those already named on the card was searched for the bracketed question.
 
 ---
 
