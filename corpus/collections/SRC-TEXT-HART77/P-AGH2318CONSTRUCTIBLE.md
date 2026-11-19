@@ -39,6 +39,7 @@ Similarly, a subset $T$ of $X$ is open if and only if it is constructible and st
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.18, printed p. 32 of the held scan, transcribed and checked against the exercise as printed: the four parts: that the family $\mathfrak C$ of finite disjoint unions of locally closed subsets is closed under the operations defining constructibility, that a closed subset is constructible exactly when it is the set of specialisations of a finite set of points, the description of the open sets, the invariance under specialisation and generalisation, and part (d)'s statement about inverse images.
 
 ::: pf
 
