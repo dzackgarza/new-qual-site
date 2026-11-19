@@ -142,6 +142,8 @@ Cohomology of sheaves:
 
 9. Flat morphisms.
 
+References: [@Har77, Chapters II.1--II.8 and III.1--III.11].
+
 ## Varieties, schemes, cohomology and curves
 
 1. Varieties: quasiprojective varieties, regular and rational maps, the definition of singularities and analytic isomorphism, abstract nonsingular curves, intersections in projective space.
@@ -151,6 +153,8 @@ Cohomology of sheaves:
 3. Cohomology: the formalism of derived functors, Čech cohomology, the vanishing theorem for Noetherian affine schemes, cohomology of projective space, Serre duality with Ext groups.
 
 4. Curves: Riemann surfaces, Hurwitz's theorem, local complete intersections, resolution of curve singularities, elliptic and hyperelliptic curves, group actions, Riemann–Roch with applications, degree of projective curves, the Abel–Jacobi map and Abel's theorem.
+
+References: [@Har77, Chapters I--IV; @Mir95, Chapters I--VIII].
 
 ## Complex algebraic surfaces
 
