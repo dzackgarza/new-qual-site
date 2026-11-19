@@ -43,6 +43,27 @@ audit:
     non-simply-connected coefficients, and the identification of the cup
     product ring with the divided polynomial algebra is reported as the book's
     consequence, not re-proved.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 17 of §3.2, printed p. 230, which is the single bracketed
+    sentence the card reproduces, and against Proposition 3.22, printed p. 224, whose statement the
+    card quotes and whose proof occupies pp. 224--225. The statement matches the printed one, and
+    the two formulas of the odd case are Hatcher's own on p. 225. Checked: the cell structure of
+    $J_m(S^n)$ with one cell in each multiple of $n$; the vanishing of the cellular boundary, from
+    the cellular surjection $q\colon(S^n)^m\to J_m(S^n)$ and the vanishing of $\partial$ on
+    $(S^n)^m$, which follows because that complex is free with cohomology of the rank of its chain
+    groups in every degree; $q^*(x_k)=\sum_{|I|=k}\alpha_I$; $x_1^m=m!\,x_m$ for even $n$ from
+    $(\alpha_1+\cdots+\alpha_m)^m=m!\,\alpha_1\cdots\alpha_m$; and the two coefficient sums of the
+    odd case, $\sum_{i=1}^{2m+1}(-1)^{i-1}=1$ and $\sum_{i_1<i_2}(-1)^{i_1+i_2-3}=m$, the second
+    checked at $m=1,2$ by hand and following the induction the card gives. Not checked: the
+    orientation conventions in $q^*(x_k)$, which the card takes with coefficient $+1$ and which are
+    a choice of cell orientations — the identities they produce are the book's, so the conventions
+    are consistent; and the identification of the even-$n$ ring with the divided polynomial algebra
+    is Hatcher's, as the card says. The terminal `pf-qed` names steps rather than carrying an
+    argument; it is left as it stands because the steps above it do carry theirs. Not claimed:
+    a certificate.
 ---
 
 ::: {.problem}
