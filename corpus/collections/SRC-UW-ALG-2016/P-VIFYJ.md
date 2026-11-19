@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was a label-step skeleton with empty proofs over ten
+    unjustified nested claims. The answers are right and unchanged — A is a domain, its real
+    points are the nodal cubic with a loop over [0,1], and the integral closure is C[t] with t =
+    y/(x-1). Added: the irreducibility argument in C[x][y] with the criterion 'monic y^2 - c
+    reducible iff c is a square' and the parity check on the exponent of x, which the card had
+    sketched as bullet points; the parametrisation y = ±(x-1)sqrt(x) with the node at x = 1 and
+    the loop described; the computations t^2 = x and t^3 - t = y in K; and the closing argument
+    that C[t], being a PID, is integrally closed, with Frac(C[t]) = K. Not claimed: a retained
+    solution set; the collection's provenance is the examination paper only.
 ---
 
 ::: {.problem}
@@ -27,110 +40,59 @@ Recall that for an integral domain $A$ with fraction field $K$, the integral clo
 :::
 
 ::: {.solution}
+Throughout $A = \CC[x,y]/(y^{2} - (x-1)^{3} - (x-1)^{2})$, $f \coloneqq y^{2} - (x-1)^{3} - (x-1)^{2} = y^{2} - x(x-1)^{2}$ is the defining polynomial, and $K \coloneqq \operatorname{Frac}(A)$. The collection's `provenance` is the 2016 UW algebra examination, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
-::: pf-step
-Proof that $A$ is an integral domain:
+::: {.pf-step #domain}
+(a) $A$ is an integral domain.
 
 ::: pf-proof
-
-::: pf-step
-The defining relation is $f(x, y) = y^2 - (x-1)^3 - (x-1)^2 = y^2 - x(x-1)^2$.
-View $f(x, y)$ as a monic polynomial of degree 2 in $y$ over the UFD $R = \CC[x]$:
-$$
-f(x, y) = y^2 - x(x-1)^2 \in R[y].
-$$
-
-:::
-
-::: pf-step
-The polynomial $f(x, y)$ is irreducible in $\CC(x)[y]$ if and only if $x(x-1)^2$ is not a square in $\CC(x)$.
-Since $x$ has odd multiplicity $1$ in $\CC[x]$, $\sqrt{x(x-1)^2} = (x-1)\sqrt{x} \notin \CC(x)$.
-Because $f$ is monic in $y$, Gauss's Lemma implies $f(x, y)$ is irreducible in $\CC[x, y]$.
-
-:::
-
-::: pf-step
-Since $\CC[x, y]$ is a UFD and $f(x, y)$ is irreducible, the principal ideal $\langle f(x, y) \rangle$ is prime.
-Therefore $A = \CC[x, y]/\langle f(x, y) \rangle$ is an integral domain.
+$\CC[x]$ is a UFD and $f = y^{2} - x(x-1)^{2}$ is monic of degree $2$ in $y$ over it. A monic polynomial $y^{2} - c$ is reducible in $R[y]$, for $R$ a UFD, exactly when $c$ is a square in $R$: a factorization into monic linears is $y^{2} - c = (y - r)(y + r)$ with $r \in R$ and $r^{2} = c$. Here $c = x(x-1)^{2}$ is not a square in $\CC[x]$, because the irreducible $x$ occurs in it to the odd power $1$ and exponents in a square are even. So $f$ is irreducible in $\CC[x][y] = \CC[x,y]$, and in a UFD an irreducible element is prime, so $(f)$ is a prime ideal and $A = \CC[x,y]/(f)$ is a domain.
 
 :::
 
 :::
 
-:::
-
-::: pf-step
-Description of the real points of $\operatorname{Spec}(A)$:
+::: {.pf-step #real}
+(a) The $\RR$-points of $\Spec A$ form the nodal cubic with a loop over $[0,1]$.
 
 ::: pf-proof
-
-::: pf-step
-The real locus consists of all $(x, y) \in \RR^2$ satisfying $y^2 = x(x-1)^2$.
-Since $y^2 \ge 0$ and $(x-1)^2 \ge 0$, real solutions exist if and only if $x \ge 0$.
-
-:::
-
-::: pf-step
-Geometric features of the curve $y = \pm (x-1)\sqrt{x}$:
-
-- At $x = 0$, $y = 0$, forming a smooth endpoint with vertical tangent ($x \sim y^2$).
-- For $0 < x < 1$, the curve splits into two branches $y = \pm (1-x)\sqrt{x}$, forming a closed loop bounded between $x = 0$ and $x = 1$.
-- At $(1, 0)$, the loop crosses itself: the two branches have tangents $y \approx \pm(x-1)$, creating an ordinary double point (node).
-- For $x > 1$, the two branches $y = \pm (x-1)\sqrt{x}$ extend to infinity.
+A real point is a pair $(x,y) \in \RR^{2}$ with $y^{2} = x(x-1)^{2}$, which forces $x \ge 0$ (the right side is $\ge 0$ only for $x \ge 0$) and gives $y = \pm(x-1)\sqrt{x}$ for $x > 0$, the two signs meeting at $x = 0$ (where $y = 0$) and at $x = 1$ (where $y = 0$ again, and the factor $(x-1)^{2}$ makes the curve singular there, a node). Between $x = 0$ and $x = 1$ the two branches bound a closed loop, and for $x > 1$ they run off to infinity as two unbounded branches.
 
 :::
 
 :::
 
-:::
-
-::: pf-step
-Integral closure of $A$:
+::: {.pf-step #t}
+(b) The element $t \coloneqq y/(x-1) \in K$ is integral over $A$, and $A = \CC[t^{2}, t^{3}-t] \subseteq \CC[t]$.
 
 ::: pf-proof
-
-::: pf-step
-Let $K = \operatorname{Frac}(A)$ be the fraction field of $A$.
-Define $t = \frac{y}{x-1} \in K$.
-Then:
-$$
-t^2 = \frac{y^2}{(x-1)^2} = \frac{x(x-1)^2}{(x-1)^2} = x \implies x = t^2.
-$$
+In $K$ one has $t^{2} = y^{2}/(x-1)^{2} = x(x-1)^{2}/(x-1)^{2} = x$, so $t$ is a root of the monic polynomial $T^{2} - x \in A[T]$ and is therefore integral over $A$. Then $t^{3} - t = t\cdot t^{2} - t = tx - t = t(x-1) = y$, so $y \in \CC[t]$ and $x = t^{2} \in \CC[t]$; hence the composite $\CC[x,y] \to A \to K$ lands in $\CC[t]$, and since $t^{2}$ and $t^{3}-t$ generate the same subalgebra as $x$ and $y$, $A = \CC[t^{2}, t^{3}-t]$ inside $\CC[t]$.
 
 :::
 
-::: pf-step
-Express $y$ in terms of $t$:
-$$
-y = t(x - 1) = t(t^2 - 1) = t^3 - t.
-$$
-Thus $A = \CC[x, y] = \CC[t^2, t^3 - t] \subseteq \CC[t] \subset K$.
-
 :::
 
-::: pf-step
-The element $t$ is integral over $A$ since $t^2 - x = 0$ is a monic polynomial in $A[T]$.
-Thus $\CC[t]$ is an integral extension of $A$.
+::: {.pf-step #closure}
+(b) $\CC[t]$ is integral over $A$ and integrally closed in $K$, hence it is the integral closure of $A$.
 
-:::
-
-::: pf-step
-The polynomial ring $\CC[t]$ is a PID, hence integrally closed in its fraction field $\operatorname{Frac}(\CC[t]) = \CC(t) = K$.
-Therefore $\CC[t]$ is the integral closure of $A$ in $K$, with normalization isomorphism $\widetilde{A} \cong \CC[t]$.
-
-:::
+::: pf-proof
+$\CC[t]$ is generated as an $A$-algebra by the single element $t$, which is integral over $A$ by step [](#t){.pf-ref}, so $\CC[t]$ is an integral extension of $A$. The ring $\CC[t]$ is a polynomial ring over a field, hence a PID, hence integrally closed in its fraction field; and $\operatorname{Frac}(\CC[t]) = \CC(t)$, which equals $K$ because $t = y/(x-1)$ lies in $K$ and $x = t^{2}$, $y = t^{3}-t$ lie in $\CC(t)$. An integral extension of $A$ inside $K$ that is integrally closed in $K$ is the integral closure of $A$ in $K$, so that closure is $\CC[t]$.
 
 :::
 
 :::
 
 ::: pf-step
-Conclusion:
-$A$ is an integral domain, its real points form a nodal cubic curve with a loop on $[0, 1]$, and its integral closure is $\CC[t]$ where $t = \frac{y}{x-1}$.
-:::
+The answers: $A$ is a domain whose real points form the nodal cubic with a loop over $[0,1]$, and the integral closure of $A$ in $K$ is $\boxed{\CC[t]}$ with $t = y/(x-1)$, so $A = \CC[t^{2}, t^{3}-t]$ and the normalization is $\CC[t]$.
+
+::: pf-proof
+Steps [](#domain){.pf-ref} and [](#real){.pf-ref} are part (a), and steps [](#t){.pf-ref} and [](#closure){.pf-ref} are part (b). The two coincidences $t^{2} = x$ and $t^{3}-t = y$ identify $A$ with the coordinate ring of the parametrized curve $(t^{2}, t^{3}-t)$, which is the standard normalization of a nodal cubic.
 
 :::
 
+:::
+
+:::
 :::
