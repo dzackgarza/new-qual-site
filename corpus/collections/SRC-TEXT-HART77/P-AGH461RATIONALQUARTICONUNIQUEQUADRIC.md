@@ -55,7 +55,8 @@ audit:
     exactly where the published solution is unfinished.
 
     Changed in this pass: s4 now cites the printed statement of the cone genus, Hartshorne's
-    Remark 6.4.1(d) at printed pp. 367--368, beside FE-CRVQUAD; it had cited the fact card alone.
+    Remark 6.4.1(d) at printed pp. 352--353, beside FE-CRVQUAD; it had cited the fact card alone.
+    (The first version of this event gave those pages as 367--368, which are PDF pages; corrected here.)
     No claim changed.
 
     Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
@@ -174,7 +175,7 @@ a plane, contradicting step [](#s1){.pf-ref}.
 
 Suppose therefore that $Q$ is a quadric cone.  For a curve of even degree
 $2a$ on a quadric cone the genus is $a^2-2a+1=(a-1)^2$: Hartshorne's
-Remark 6.4.1(d), printed pp. 367--368, deferred there to V. Ex. 2.9 and
+Remark 6.4.1(d), printed pp. 352--353, deferred there to V. Ex. 2.9 and
 proved on [[FE-CRVQUAD]].  Here $\deg X=4=2\cdot2$, so this gives
 $$
 p_a(X)=(2-1)^2=1,
