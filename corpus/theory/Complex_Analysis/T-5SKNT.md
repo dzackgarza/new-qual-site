@@ -27,4 +27,6 @@ f^+(z)=f^-(z) & z\in I,
 \end{cases}
 $$
 is holomorphic on $\Omega$.
+
+This is [@SS03, Theorem 5.5 (p. 58)], the symmetry principle.
 :::

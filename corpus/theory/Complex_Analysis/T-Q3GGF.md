@@ -22,4 +22,6 @@ F(z)\coloneqq\begin{cases}f(z), & z\in\Omega^+\cup I,\\ \overline{f(\overline{z}
 $$
 is holomorphic on $\Omega$.
 In particular, for $\Omega=\CC$: if $f$ is holomorphic on the upper half-plane, continuous on its closure, and real-valued on $\RR$, then $F$ is [[D-E7A5W|entire]].
+
+This is [@SS03, Theorem 5.6 (p. 60)], the Schwarz reflection principle.
 :::
