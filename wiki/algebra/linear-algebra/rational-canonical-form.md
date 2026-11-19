@@ -24,7 +24,7 @@ The blocks of the rational canonical form of $A$ are in bijection with the nonco
 
 ## Cyclic vectors
 
-A cyclic vector exists exactly when the minimal polynomial has degree $\dim V$, and then the matrix is a single companion block; the criterion is the last condition of [[PR-4GQIZ]].
+A cyclic vector exists exactly when the minimal polynomial has degree $\dim V$, and then the matrix is a single companion block.
 
 [[PR-K6MMW]]
 
