@@ -273,35 +273,17 @@ What remains open on the card, unchanged: the body of Kaji, J. London Math. Soc.
 
 **Closed 2026-11-02.** The citation is now to the source consulted — Fukasawa, arXiv:2108.00650v3, §1 — whose hypotheses were checked against the step; the primary reference is kept as an alternate and is not claimed to have been read. See item 4 of the numbered list at the end of this file.
 
-## The five `ad-text-*` nodes that cannot be read: their books are not in the repository
+## 2026-11-19: three of the five `ad-text-*` books are on this machine, and two are not
 
-- **Object and need:** the `ad-text-hart77` ([#102](https://github.com/dzackgarza/new-qual-site/issues/102)), `ad-text-hun74` ([#103](https://github.com/dzackgarza/new-qual-site/issues/103)),
-  `ad-text-smi` ([#104](https://github.com/dzackgarza/new-qual-site/issues/104)), `ad-text-mun00` ([#106](https://github.com/dzackgarza/new-qual-site/issues/106)) and `ad-text-hk71-locators`
-  ([#108](https://github.com/dzackgarza/new-qual-site/issues/108)) work units, each of which requires reading every card of its
-  collection against the printed book.
+**Object and need.** The `ad-text-hart77` ([#102](https://github.com/dzackgarza/new-qual-site/issues/102)), `ad-text-hun74` ([#103](https://github.com/dzackgarza/new-qual-site/issues/103)), `ad-text-smi` ([#104](https://github.com/dzackgarza/new-qual-site/issues/104)), `ad-text-mun00` ([#106](https://github.com/dzackgarza/new-qual-site/issues/106)) and `ad-text-hk71-locators` ([#108](https://github.com/dzackgarza/new-qual-site/issues/108)) work units each require reading every card of a collection against the printed book. The entry that stood here recorded, on the evidence of `assets/attachments` and `tmp/hat`, that none of the five books was present in this checkout. The inventory below is the one read off the filesystem for this record, because three of the five books have since been placed in `tmp/sources` by the streams that use them.
 
-- **Observed evidence:** the repository holds full text for exactly two of the textbooks the corpus
-  is drawn from. `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` (398 pages, OCR'd) and
-  `tmp/hat/AT.pdf` with its extracted text `tmp/hat/AT.txt` (8.1 MB / 1.8 MB). For Hartshorne,
-  Hungerford, Smith, Munkres and Hilton–Kirby there is no book: a search of `assets/attachments` for
-  PDFs over 1 MB returns no title matching any of them, and the only Hartshorne file present is
-  `Hartshorne_Solutions.pdf`, 29 pages of worked solutions, which is not the book and cannot certify
-  that a card matches a printed statement.
+**Present, in `tmp/sources`.** `hartshorne-1977-algebraic-geometry.md` (1720692 bytes) and `.pdf` (50400609 bytes); `hungerford-1974-algebra.md` and `.pdf`; `munkres-2000-topology.md` and `.pdf`; and `hatcher-2002-algebraic-topology.md` with its `.pdf`, which is the book of `ad-text-hat02` and was never part of the five. Each text version was opened for this record and begins with its own title page: Hartshorne's "Graduate Texts in Mathematics ... Robin Hartshorne, Algebraic Geometry", Hungerford's "Graduate Texts in Mathematics 73 ... Thomas W. Hungerford, ALGEBRA", Munkres's "TOPOLOGY SECOND EDITION, JAMES R. MUNKRES". The pages cited in this file's records of 2026-11-15 to 2026-11-19 (`tmp/sources/hartshorne-1977-algebraic-geometry.md`, PDF p. 399 for printed p. 384, for instance) are pages of these files.
 
-- **Impact and owner:** the five nodes stay open for a reason that is not effort. Reading
-  "against the book" is the whole required result, and a card cannot be checked against a page that
-  is not there. `audited-deployment` depends on all five.
+**Absent.** No Smith book and no Hilton--Kirby book anywhere in the tree: `find . -path ./proofs/.lake -prune -o \( -iname '*smith*' -o -iname '*hilton*' -o -iname '*kirby*' \) -print` returns one Mathematics Stack Exchange thread, one Pygments lexer and the wiki pages on Smith normal form, and nothing that is a book. So `ad-text-smi` and `ad-text-hk71-locators` stay blocked for the reason the earlier entry gave: a card cannot be checked against a page that is not there.
 
-- **Uncertainty:** verified for this checkout — the searches above are reproducible and the file list
-  is complete. Not verified: whether the books exist elsewhere on this machine outside the project
-  (the owner's rule is that the project's own assets are the source of record, and copying a
-  personal library into the repository is a decision for the owner, not for an agent). This entry
-  does not claim the books are unavailable anywhere, only that they are absent here.
+**Impact and owner.** `ad-text-hart77`, `ad-text-hun74` and `ad-text-mun00` are executable today, and their streams are executing them. What has replaced "no book" as the obstacle is retention rather than access: `tmp/` is gitignored and VM-local, a new VM or a clean discards it, and none of the three books is in a tracked inventory of retained sets, so a record that reads one must name the file and the page as the records of these weeks do, and must not describe the book as retained. Whether the books belong under a tracked inventory is the owner's decision, not an agent's.
 
-- **Repair:** obtain the five books, or make a decision that those nodes are read against a
-  different witness (a solutions manual, a table of contents plus a statement database) and say so in
-  the node. The two nodes whose books *are* present — `ad-text-hat02` and `ad-text-ss03-gaps` — have
-  been started here and are executable.
+**Uncertainty.** High confidence in both halves of the inventory, which is a filesystem reading and a search whose command is printed above. Not checked: whether the text layers of the three present books are faithful enough to certify a printed statement word for word --- that is a per-page question, and the records that rely on them report page-image checks where the wording matters; and whether a Smith or Hilton--Kirby copy exists outside this project on the same machine, which this entry does not claim either way.
 
 ## What the audit campaigns installed, and what is still open
 
