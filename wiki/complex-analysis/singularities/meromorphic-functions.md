@@ -15,7 +15,7 @@ A meromorphic function on an open set is holomorphic except on a discrete set, a
 
 [[T-UBWL2]]
 
-A meromorphic function that is holomorphic or has a pole at $\infty$ is called meromorphic in the extended complex plane, and those are exactly the rational functions [@SS03, Theorem 3.4 (p. 87)].
+A meromorphic function on $\CC$ that is holomorphic or has a pole at $\infty$ is a rational function, and every rational function is of this form [@SS03, Theorem 3.4 (p. 87)].
 
 [[T-DB3DO]]
 
