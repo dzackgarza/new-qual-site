@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded. The argument is Problem 4A, printed p. 2 of the packet, the packet the collection retains,
+    transcribed as the paragraph now at the head of the solution says; the card's addition is the
+    step structure and the details named there, and no claim of the problem changes. Checked: the
+    packet read in its text layer at the pages named, the card's steps compared with it, and
+    `qualc.authoring check` on the card. Not checked: no other card of the collection in this pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 4A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -30,6 +39,8 @@ If the complex conjugate of a complex matrix is equal to its transpose, prove th
 :::
 
 ::: {.solution}
+
+The argument is Problem 4A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 2 of that file, transcribed: $\overline A=A^T$ says $A$ is Hermitian, and for a unit eigenvector $x$ with eigenvalue $\lambda$ the chain $\lambda=(\lambda x,x)=(Ax,x)=(x,A^{T}x)=(x,Ax)=(x,\lambda x)=\overline\lambda$ forces $\lambda$ real. What the card adds is the step structure and the verification that $A^*=A$ from the hypothesis, not the argument.
 Let $A$ be the matrix in the problem.
 
 ::: pf
