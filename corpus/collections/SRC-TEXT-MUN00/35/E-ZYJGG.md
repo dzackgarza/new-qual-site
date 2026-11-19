@@ -57,6 +57,20 @@ audit:
     hypothesis of (b) does not support. The closing step now says that parts (a) and (b) are
     what is proved and that the unrestricted converse is starred Exercise 35.8 of the same
     page set, proved on E-Z964O.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The reviewer finding of 2026-11-18 14:52Z, routed to this card, is verified closed, on the
+    card and against the book. Re-read in the retained Munkres PDF: printed p. 223 (PDF p. 238)
+    carries Section 35 Exercises 5 and 6, item 6 being the absolute-retract exercise with the
+    compactness hypothesis in part (b), so the card's "printed p. 223" is right; printed p. 224
+    (PDF p. 239) carries Exercise 7(b) and the starred Exercise 8, which states as a Theorem that
+    a normal space is an absolute retract if and only if it has the universal extension property,
+    with the adjunction-space hint — so the card's closing step is right to restrict itself to (a)
+    and (b) and to name the unrestricted converse as the starred Exercise 35.8 of p. 224. The
+    cube characterization of complete regularity used for the imbedding is Theorem 34.3, which is
+    what the card cites. No change to the solution was needed.
 ---
 
 ::: {.exercise}
