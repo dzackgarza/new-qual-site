@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 28 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) is closed under addition and multiplication
+    because M(a,b) = aI + bJ with J^2 = -I, and the multiplication is commutative since J commutes
+    with I and with itself; the identity is M(1,0). (b) and (c) reduce to whether x^2 + 1 has a root
+    in the field: F_p is isomorphic to F_p[i]/(i^2+1), so it is a field exactly when x^2+1 is
+    irreducible, i.e. has no root. Checked by hand: modulo 7 the squares are 1, 2, 4, so -1 = 6 is
+    not a square and F_7 is a field; modulo 13, 5^2 = 25 = -1, so x = 5 gives a zero divisor, and
+    indeed (5+i)(5-i) = 26 = 0 in F_13. Both conclusions are right.
 ---
 
 ::: {.problem}
