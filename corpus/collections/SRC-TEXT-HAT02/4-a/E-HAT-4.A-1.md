@@ -149,6 +149,22 @@ audit:
     Hatcher's Example 4A.3 on printed p. 422 in
     `tmp/sources/hatcher-2002-algebraic-topology.md`, and Davis--Kirk's Lemma 6.56 and Theorem 6.57
     in the text version. Nothing else changes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the normalisation. No defect
+    found. Checked: $H$ is continuous at $t=0$ with $F(z,0)=f(z)x_0^{-1}=f(z)$ and at $t=1$ with
+    $F(z,1)=g(z)x_0^{-1}=g(z)$, both because $f(z_0)=g(z_0)=x_0$; and
+    $F(z_0,t)=\gamma(t)\gamma(t)^{-1}=x_0$, so the single formula is a basepoint-preserving homotopy,
+    continuity of $F$ being that of multiplication and inversion. The hypothesis used is exactly that
+    $X$ is a topological group with identity $x_0$ and that $f,g$ are pointed; no hypothesis on $Z$
+    enters, which is what the card says in comparing itself with the published arguments. Checked the
+    statement against Hatcher, Exercise 1 of §4.A on printed p. 426, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. Not changed: any part of the solution. Not
+    claimed: a published solution of the exercise in this generality; tom Dieck's Lemma (2.7.4) and
+    Davis--Kirk's Lemma 6.56 and Theorem 6.57 are the published arguments the card records beside
+    its own.
 ---
 
 ::: {.problem}
