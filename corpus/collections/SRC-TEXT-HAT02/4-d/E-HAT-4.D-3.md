@@ -15,6 +15,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose. Supplied the two statements the prose
+    used in a clause: that adding a trivial bundle leaves the positive-degree Chern classes of E
+    unchanged, which is why the whole bundle E is stably trivial and not merely of vanishing top
+    class; and the reason the vanishing Euler class gives both the class x restricting to a generator
+    on each fibre and the splitting of the Gysin sequence into short exact sequences. Recorded the
+    fibre dimensions 2(k-n+1)-1 = 2k-2n+1 and 4(k-n+1)-1 = 4k-4n+3 as computations rather than
+    assertions, and the induction base V_1 = S^{2k-1} with the odd-degree argument for the vanishing
+    of squares. Not checked: Hatcher's page numbers, which are the card's own citations and were not
+    re-read in this pass.
 ---
 
 ::: {.problem}
@@ -22,25 +35,57 @@ Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\CC^k); 
 :::
 
 ::: {.solution}
-The projection $V_n(\CC^k)\to V_{n-1}(\CC^k)$ forgets the last frame vector. Its fiber is the unit sphere of the complex orthogonal-complement bundle $E$ of rank $k-n+1$, hence is $S^{2k-2n+1}$. The first $n-1$ frame vectors trivialize the complementary summand of $E$, so
-$$
-E\oplus\underline{\CC}^{,n-1}\cong\underline{\CC}^{,k}.
-$$
-Thus all Chern classes of $E$ vanish, including its Euler class $c_{k-n+1}(E)$. The complex bundle $E$ is oriented, and the Euler class of the underlying oriented real bundle of a complex bundle is its top Chern class $c_{k-n+1}$ (p. 444). In the Gysin sequence (p. 438) of its oriented sphere bundle, vanishing of the Euler class says that a class
-$$
-x_{2k-2n+1}\in H^{2k-2n+1}(V_n(\CC^k);\ZZ)
-$$
-restricts to the generator on every fiber, and that the Gysin sequence breaks into short exact sequences. Leray--Hirsch (Theorem 4D.1, p. 432) then makes $H^*(V_n(\CC^k);\ZZ)$ a free module over $H^*(V_{n-1}(\CC^k);\ZZ)$ with basis $1,x_{2k-2n+1}$.
+This is Hatcher Exercise 4.D.3, computed as in Corollary 4D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 4D.1 (Leray--Hirsch, p. 432), the Gysin sequence (p. 438) and the identification of the Euler class with the top Chern class (p. 444).
 
-Start with $V_1(\CC^k)=S^{2k-1}$ and repeat, as in the computation of Corollary 4D.3 (p. 434). The resulting cohomology is torsionfree, and each new generator has odd degree. Graded commutativity makes twice its square zero, so its square is zero. Leray--Hirsch gives the products of distinct generators as an additive basis. Therefore
-$$
-H^*(V_n(\CC^k);\ZZ)\cong
-\Lambda_\ZZ[x_{2k-2n+1},x_{2k-2n+3},\ldots,x_{2k-1}].
-$$
+::: pf
 
-For quaternionic frames the complement is a quaternionic bundle of rank $k-n+1$, stably trivial by the same frame decomposition. Its integral Euler class is its top Chern class and vanishes. The sphere fiber has dimension $4k-4n+3$. The same Gysin and Leray--Hirsch argument yields
-$$
-H^*(V_n(\quaternions^k);\ZZ)\cong
-\Lambda_\ZZ[x_{4k-4n+3},x_{4k-4n+7},\ldots,x_{4k-1}].
-$$
+::: {.pf-step #bundle}
+The projection $p\colon V_{n}(\CC^{k})\to V_{n-1}(\CC^{k})$ forgetting the last frame vector is a fibre bundle with fibre the unit sphere of a complex bundle $E$ of rank $k-n+1$, that fibre being $S^{2k-2n+1}$.
+
+::: pf-proof
+A point of $V_{n-1}(\CC^{k})$ is an orthonormal $(n-1)$-frame, and the fibre over it consists of the unit vectors orthogonal to those $n-1$ vectors, that is the unit sphere of the orthogonal complement, a complex vector space of dimension $k-(n-1)=k-n+1$. These complements fit together as a complex vector bundle $E$ over $V_{n-1}(\CC^{k})$, the orthogonal complement of the trivial bundle spanned by the frame, and the unit sphere of a complex bundle of rank $m$ has real dimension $2m-1$, here $2(k-n+1)-1=2k-2n+1$.
+:::
+:::
+
+::: {.pf-step #trivial}
+$E\oplus\underline{\CC}^{n-1}\cong\underline{\CC}^{k}$, so all Chern classes of $E$ vanish, in particular its Euler class $c_{k-n+1}(E)$.
+
+::: pf-proof
+The tautological $(n-1)$-frame trivializes the orthogonal complement of $E$: the sum of $E$ with the bundle spanned by the frame vectors is the trivial bundle $V_{n-1}(\CC^{k})\times\CC^{k}$. Adding a trivial bundle does not change Chern classes of positive degree, so $c_{i}(E)=0$ for $i\geq1$, and the Euler class, which is the top Chern class $c_{k-n+1}(E)$ of the oriented real bundle underlying $E$ (p. 444), vanishes.
+:::
+:::
+
+::: {.pf-step #gysin}
+There is a class $x_{2k-2n+1}\in H^{2k-2n+1}(V_{n}(\CC^{k});\ZZ)$ restricting to a generator of the cohomology of each fibre, and the Gysin sequence of the oriented sphere bundle splits into short exact sequences.
+
+::: pf-proof
+The Euler class is the obstruction to a class restricting to a generator on every fibre, so its vanishing produces such an $x$; this is read off the Gysin sequence of the oriented sphere bundle $S(E)\to V_{n-1}(\CC^{k})$ (p. 438), whose fibre sphere is $S^{2k-2n+1}$ and whose Euler class is zero by step [](#trivial){.pf-ref}. With the Euler class zero the multiplication by it in the Gysin sequence is the zero map, and the sequence breaks into short exact sequences $0\to H^{q}(V_{n-1})\to H^{q}(V_{n})\to H^{q-(2k-2n+1)}(V_{n-1})\to0$.
+:::
+:::
+
+::: {.pf-step #hirsch}
+$H^{*}(V_{n}(\CC^{k});\ZZ)$ is a free module over $H^{*}(V_{n-1}(\CC^{k});\ZZ)$ with basis $\{1,x_{2k-2n+1}\}$.
+
+::: pf-proof
+Leray--Hirsch (Theorem 4D.1, p. 432) applies to a fibre bundle whose fibre cohomology is free on classes restricting to generators: here the fibre is a sphere, so its cohomology is free on $1$ and the generator, and step [](#gysin){.pf-ref} supplies a global class restricting to the generator. The theorem concludes that $H^{*}$ of the total space is free over $H^{*}$ of the base with those classes as a basis.
+:::
+:::
+
+::: {.pf-step #complex}
+$H^{*}(V_{n}(\CC^{k});\ZZ)\cong\Lambda_{\ZZ}[x_{2k-2n+1},x_{2k-2n+3},\dots,x_{2k-1}]$.
+
+::: pf-proof
+Induct on $n$ from $V_{1}(\CC^{k})=S^{2k-1}$, whose cohomology is the exterior algebra on one generator in degree $2k-1$, as in the computation of Corollary 4D.3 (p. 434). At each step step [](#hirsch){.pf-ref} multiplies the number of additive generators by two, adjoining a generator in degree $2k-2i+1$ for the step from $V_{i-1}$ to $V_{i}$. Each such generator has odd degree, so graded commutativity gives $x^{2}=-x^{2}$, that is $x^{2}=0$; together with freeness this says the products of distinct generators form an additive basis and the algebra is the exterior algebra on them.
+:::
+:::
+
+::: {.pf-step #quaternionic}
+In the quaternionic case $H^{*}(V_{n}(\quaternions^{k});\ZZ)\cong\Lambda_{\ZZ}[x_{4k-4n+3},x_{4k-4n+7},\dots,x_{4k-1}]$.
+
+::: pf-proof
+The same three inputs hold with $\CC$ replaced by $\quaternions$: the fibre of $V_{n}(\quaternions^{k})\to V_{n-1}(\quaternions^{k})$ is the unit sphere of a quaternionic bundle of rank $k-n+1$, of real dimension $4(k-n+1)-1=4k-4n+3$; that bundle is stably trivial by the frame decomposition, so its integral Euler class vanishes; and the fibre cohomology is again free on one generator, so the Gysin and Leray--Hirsch argument goes through unchanged, starting from $V_{1}(\quaternions^{k})=S^{4k-1}$ and adjoining one generator of degree $4k-4i+3$ at each step.
+:::
+:::
+:::
+
 :::
