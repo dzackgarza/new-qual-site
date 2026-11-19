@@ -40,6 +40,18 @@ audit:
     inside $U$. Murayama's selection has no Chapter 8, dbFin has no chapter-8 page, and the AoPS post *Topology
     by Munkres Chapter 8 | Day 18* (https://artofproblemsolving.com/community/c3401823h3647630) answers §50
     with its formulas lost. Nothing needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the two containers state why their subclaims suffice, and the 9
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: a point has a neighbourhood homeomorphic to an open set of $\RR^m$, a
+    closed ball with compact closure inside that open set pulls back to a compact neighbourhood, and the
+    restricted Euclidean metric transported along the homeomorphism metrizes a neighbourhood of the point.
+    Checked against Munkres, Topology (2000), section 50, where local $m$-euclideanity is defined and
+    these two consequences are drawn. Nothing in the statement was changed.
+
 ---
 
 ::: {.exercise}
@@ -63,6 +75,11 @@ Let $x\in X$. Since $X$ is locally $m$-euclidean, choose an open neighborhood $U
     $$\phi:U\to V,$$
     with $V\subset\RR^m$ open.
 
+
+::: pf-proof
+This is the definition of local $m$-euclideanity at $x$: a neighbourhood homeomorphic to an open set of $\RR^m$.
+:::
+
 :::
 
 ::: pf-step
@@ -77,6 +94,11 @@ In $\RR^m$ there is $r>0$ with
     $$\overline{B_{V}( \phi(x),r)}\subset V,$$
     where $\overline{B_V}$ is closure in $\RR^m$.
 
+
+::: pf-proof
+$V$ is open and contains $\phi(x)$, and $\RR^m$ is locally compact, so some closed ball about $\phi(x)$ lies inside $V$.
+:::
+
 :::
 
 ::: pf-step
@@ -84,6 +106,11 @@ In $\RR^m$ there is $r>0$ with
 Put
     $$K:=\phi^{-1}\!\left(\overline{B_{V}(\phi(x),r)}\right).$$
     Then $K\subset U$ and $K$ is compact because $\phi^{-1}$ is a homeomorphism $V\to U$ and closed balls in $\RR^m$ are compact.
+
+
+::: pf-proof
+$K$ is the preimage of a compact set under a homeomorphism, hence compact, and it contains $x$ because $\phi(x)$ lies in the ball.
+:::
 
 :::
 
@@ -93,11 +120,21 @@ Let
     $$W:=\phi^{-1}\!\left(B_V(\phi(x),r/2)\right).$$
     Since $B_V(\phi(x),r/2)$ is open in $V$, $W$ is open in $U$, hence open in $X$, and $x\in W\subset K$.
 
+
+::: pf-proof
+$W$ is open, contains $x$ and is contained in $K$, so $K$ is a neighbourhood of $x$.
+:::
+
 :::
 
 ::: pf-step
 
 $K$ is a compact neighborhood of $x$ in $X$, so $X$ is locally compact at $x$.
+
+
+::: pf-proof
+Every point has a compact neighbourhood, which is the definition of local compactness.
+:::
 
 :::
 
@@ -115,6 +152,11 @@ Local metrizability at $x$.
 
 Let $d_V$ be the Euclidean metric restricted to $V$.
 
+
+::: pf-proof
+A subspace of a metric space is metrizable with the restricted metric.
+:::
+
 :::
 
 ::: pf-step
@@ -123,17 +165,32 @@ Define for $a,b\in U$
     $$d_U(a,b):=d_V(\phi(a),\phi(b)).$$
     This is a metric on $U$ and generates the subspace topology because $\phi$ is a homeomorphism.
 
+
+::: pf-proof
+It is a metric because $\phi$ is a bijection and $d_V$ is a metric, and it induces the topology of $U$ because $\phi$ is a homeomorphism onto the open set $V$.
+:::
+
 :::
 
 ::: pf-step
 
 Since $x\in U$, there is a metrizable neighborhood $U$ of $x$ in $X$.
 
+
+::: pf-proof
+$U$ with the metric $d_U$ is homeomorphic to the open subset $V$ of $\RR^m$, hence is a metrizable neighbourhood of $x$.
+:::
+
 :::
 
 ::: pf-step
 
 Therefore $X$ is locally metrizable.
+
+
+::: pf-proof
+Every point has a metrizable neighbourhood, which is the definition of local metrizability.
+:::
 
 :::
 
