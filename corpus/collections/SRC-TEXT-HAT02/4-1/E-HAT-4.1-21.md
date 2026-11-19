@@ -63,6 +63,21 @@ audit:
     Not checked: nothing beyond the cited spans; no independent verification of the Whitehead-tower
     construction.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 21 of §4.1, printed p. 359, checked at PDF page 368 of the held
+    book. Checked the comparison: $\pi_i(X^n)=\pi_i(X)$ for $i\le n$ and $0$ above, and
+    $\pi_i(X_m)=0$ for $i\le m-1$ with $\pi_i(X_m)\cong\pi_i(X)$ for $i\ge m$, the latter from the
+    long exact sequence of the homotopy fibration $X_m\to X\to X^{m-1}$, not from any vanishing
+    hypothesis; $(X^n)^{m-1}\simeq X^{m-1}$ for $n\ge m-1$, so
+    $(X^n)_m\simeq\operatorname{hofib}(X^n\to X^{m-1})$; the comparison map
+    $X_m\to(X^n)_m$ is an isomorphism on $\pi_i$ for $i\le n$ and the target has no homotopy above
+    $n$, so the target is an $n$-th Postnikov stage of $X_m$, as is $(X_m)^n$, and uniqueness gives the
+    equivalence. The degenerate cases were checked: for $n<m-1$ both sides have all homotopy groups
+    zero, and for $n=m-1$ both are contractible. No defect. The printed page is added, the card having
+    had none.
 ---
 
 ::: {.problem}
@@ -72,6 +87,8 @@ Thus $\pi_i(X_m^n) \approx \pi_i(X)$ for $m \leq i \leq n$ and all other homotop
 :::
 
 ::: {.solution}
+The exercise is §4.1 Exercise 21, printed p. 359.
+
 Let $X^n$ be the $n$-th Postnikov stage of $X$, and $X_m$ an $(m-1)$-connected covering of $X$. The two constructions affect disjoint ranges of homotopy groups:
 
 - passing to $X^n$ preserves $\pi_i$ for $i\le n$ and kills $\pi_i$ for $i>n$;
