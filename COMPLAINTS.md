@@ -5939,3 +5939,28 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Not checked, and what remains.** The other 99 denial cards were screened only against `provenance` and against a solution-like filename in the card's own directory; a retained set that the collection does not name in `provenance` and that is not a `Ch<N>Sltns` outline would not be seen, so those cards are cleared by absence of evidence, not by reading each retained set. No card's mathematics was re-derived in this pass, only compared with its outline. Five other residue-5 cards in these collections (`P-CH14-11`, `P-CH15-45`, `P-CH9S-011`, `P-CH9S-051`, `P-ALGFINAL11-05`) carry no provenance sentence at all and still owe one; they were not edited here, since that is the provenance sweep's decision and not a false claim to correct.
 
 **Uncertainty.** The phrase list and the `provenance`/filename matching are heuristics; the ten found were each read and confirmed, but the size of the population the screen cannot see is unknown. The PDF pages cited are the retained files' own page numbers read with `pdftotext` per page, not printed folios; the outlines print a page number at the foot and it was not checked against every one.
+
+## 2026-11-19, second item on the absence claims: four Hatcher cards denied a retained solution set that Sam's and Proudfoot's sheets solve, and the resource inventory overstates one of those sheets
+
+**Object and need.** The entry above records ten residue-5 cards whose "no retained solution set" claims were false against the Gallian outlines and the Week 4 booklet. The same screen, run over the residue's Hatcher cards against the per-section coverage recorded in `wiki/topology/resources/solutions.md`, finds four more. Each is repaired on its own card with the set, its section and exercise, and its printed page.
+
+**The four.**
+
+| card | retained solution | where |
+| --- | --- | --- |
+| `E-HAT-4.1-5` | Sam, *Solutions to Algebraic Topology* (2008), §4.1 Ex. 5 | `tmp/sources/hatcher-solutions-sam-2008.pdf`, printed p. 17 |
+| `E-HAT-4.1-11` | Sam §4.1 Ex. 11; Proudfoot, Math 634 hw6, §4.1 Ex. 11 | Sam, printed p. 17; `tmp/sources/uoregon-proudfoot-634-hw6.md`, p. 1 |
+| `E-HAT-4.3-5` | Sam §4.3 Ex. 5 | Sam, printed p. 25 |
+| `E-HAT-4.3-11` | Sam §4.3 Ex. 11 | Sam, printed p. 26 |
+
+`E-HAT-4.1-5` is the sharpest: its own `source-corrected` event of 2026-11-07 already says "Sam's solution of this exercise (printed pp. 17-18) reaches the same identification and also writes $\alpha H$; his proof is the second construction on the card", while the rendered sentence said no retained set covered it. The repair cites Sam and marks which construction is his.
+
+**How the screen was run, and the trap in it.** Exercise numbers are not comparable across the sets: Sam's §3.3 Ex. 5 is the H-space exercise, not the orientability exercise that Hatcher numbers 3.3.5, and Li's numbering is internal, with the Hatcher number in parentheses. So each of the 13 Hatcher cards that deny a retained set was matched by **statement**, not by number, against the coverage the inventory records for Sam, Li, Proudfoot and the Stanford 215C sets. The four above matched; the other nine did not: Sam's §4.2 solves no 11 and no 39, Li's §2.2 stops before 39, no set reaches §3.3 Ex. 5, and Koukpari's §3.F, §3.H, §4.D, §4.K and §4.L hold no solution text at all.
+
+**The inventory defect this pass found.** `wiki/topology/resources/solutions.md` records Proudfoot's hw7 as covering Hatcher "§4.2 Ex. 1, 2, 30, 31, 32, 39". That is the sheet's own header list: the file `tmp/sources/uoregon-proudfoot-634-hw7.pdf`, two pages, ends with problem 32, and has no solution for 39. The row overstates the sheet. The consequence for this residue is that `E-HAT-4.2-39` keeps its claim — no retained set solves the Toda-bracket exercise — and the inventory, not the card, is what needs the correction. It is reported here rather than edited: the resource page is not this residue's.
+
+**What was checked.** For each of the four, the retained statement was read against the card's statement word for word, and the card's argument compared with the retained one: Sam's surjection-of-loops identification for 4.1-5, Whitehead through cellular approximation for 4.1-11 (in both sheets), the $K(\ZZ,n)$ construction for 4.3-5, and the pullback/Proposition 4.62 route for 4.3-11. No proof step was changed on any of the four.
+
+**Repair.** Four commits, one per card: `E-HAT-4.1-5` `bbac7a4c20`, `E-HAT-4.1-11` `e667fc2e80`, `E-HAT-4.3-5` `3663dc791b`, `E-HAT-4.3-11` `3213a4e93e`; each card carries a `source-corrected` event of this date. Checks: `qualc.authoring check` on all four, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh` on all four, steps numbered and QED labels present; `tools/sync_macros.py --check`, silent; and the pre-commit card-YAML and schema hook, one file per commit. The Sam pages are its printed pages, which run one behind the PDF index because of a cover sheet, as the inventory records.
+
+**Not checked.** The nine Hatcher cards that survive the screen are cleared by the inventory's recorded coverage plus the matching just described, not by reading every retained set end to end; Koukpari's later sections were judged by the absence of any solution text for their phrases. The other 99 denial cards of the residue remain as the first entry records them.
