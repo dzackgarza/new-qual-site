@@ -185,5 +185,7 @@ morphism. Hence $f$ is finite.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 280 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the parenthetical identification of finite fibres with quasi-finite by (II, Ex. 3.5) included.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §11, Exercise 11.2, PDF pp. 204--205, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he applies the Stein factorization, replaces $Y$ by the Stein factor to assume connected fibres, concludes that $f$ is bijective and hence a homeomorphism, proves affineness of $f$ by a Zariski-local argument, and finishes with affine plus proper implies finite (Exercise II.4.6). The proof above reaches the same conclusion by a different route: Corollary III.11.2 kills $R^1$ of every coherent ideal, Serre's criterion makes $X$ affine over an affine base, and coherence of $f_*\OO_X$ gives module finiteness. Both proofs are complete; they share only the final affine-plus-proper step.
 :::
