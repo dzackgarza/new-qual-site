@@ -166,7 +166,7 @@ so $\abs{g(z)}\to0$ as $\abs{z}\to\infty$; in particular $g$ is bounded on $\Ome
 
 
 ::: {.pf-step #s6}
-$g(x+i\varepsilon)-g(x-i\varepsilon)=\int_{-M}^{M}P_\varepsilon(y-x)h(y)\,\dd y$, and the jump of $g$ across the open interval is $h$, uniformly on compact subsets of $(-M,M)$.
+$g(x+i\varepsilon)-g(x-i\varepsilon)=\int_{-M}^{M}P_\varepsilon(y-x)h(y)\dy$, and the jump of $g$ across the open interval is $h$, uniformly on compact subsets of $(-M,M)$.
 
 ::: pf-proof
 For $x\in\RR$, $\varepsilon>0$ and $y\ne x$,
@@ -229,7 +229,7 @@ and likewise at $-M$. So the printed identity "the jump of $g$ across $[-M,M]$ i
 
 
 ::: {.pf-step #s9}
-Step 4 (Plemelj): with $A(x)=\operatorname{PV}\int_{-M}^{M}\frac{h(y)}{y-x}\dd y$ and $g^{\pm}(x)=\pm\frac{h(x)}{2}+\frac{1}{2\pi i}A(x)$, one has $g(x\pm i\varepsilon)\to g^{\pm}(x)$ uniformly on compact subsets of $(-M,M)$, so $g^{+}-g^{-}=h$ there.
+Step 4 (Plemelj): with $A(x)=\operatorname{PV}\int_{-M}^{M}\frac{h(y)}{y-x}\dy$ and $g^{\pm}(x)=\pm\frac{h(x)}{2}+\frac{1}{2\pi i}A(x)$, one has $g(x\pm i\varepsilon)\to g^{\pm}(x)$ uniformly on compact subsets of $(-M,M)$, so $g^{+}-g^{-}=h$ there.
 
 ::: pf-proof
 For $x\in(-M,M)$ set
