@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: solution-reviewed
   by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 22, printed p. 390, the
+    construction of K(G,n) by killing homotopy groups (printed p. 365) and the Moore space
+    of Example 2.40 (printed p. 143). The proof is correct and is Sam's, §4.2 Exercise 22:
+    pi_n(M(G,n)) = G by Hurewicz, the remaining homotopy is killed by cells of dimension at
+    least n+2, and no (n+1)-cells are added, so H_{n+1}(K(G,n)) = H_{n+1}(M(G,n)) = 0. The
+    citation was missing; it is now on the card. Statement unchanged.
+- event: solution-reviewed
+  by: claude
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
@@ -43,6 +53,8 @@ Show that $H_{n+1}(K(G, n); \ZZ) = 0$ if $n > 1$. [Build a $K(G, n)$ from a Moor
 :::
 
 ::: {.solution}
+The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 22, PDF p. 23**. Sam's argument is this one — a Moore space $M(G,n)$ has $\widetilde H_{n+1}=0$ and $\pi_n=G$, and a $K(G,n)$ is obtained from it by attaching cells of dimension at least $n+2$, which leaves $H_{n+1}$ unchanged. The book's own statement of the construction is the proof of the existence of $K(G,n)$ by killing homotopy groups (printed p. 365), and the Moore space is Example 2.40 (printed p. 143).
+
 For $n>1$, choose an $(n-1)$-connected Moore space $M(G,n)$, so
 $$
 \widetilde H_i(M(G,n);\ZZ)=
