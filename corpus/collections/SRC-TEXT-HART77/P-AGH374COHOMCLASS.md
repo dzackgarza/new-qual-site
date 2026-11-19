@@ -703,6 +703,34 @@ audit:
     are recorded in COMPLAINTS.md, not on the card. Not checked: the base change
     in the case where the subvariety is not a complete intersection, which no
     step of this solution uses.
+
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s8 is new and no part of the exercise needs it: on a subvariety of
+    $\PP^n$ the class $\eta(Y)$ is the Gysin class of the Koszul construction,
+    in every codimension, and the transverse base change
+    $i^*j_*=(j_H)_*i_Y^*$ follows from it. The proof pairs both classes with
+    $\alpha_0=\eta_{\PP^n}(L)=i_*(1)$ for a general linear subspace $L\cong\PP^p$,
+    which detects them because $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional
+    (Exercise III.7.3, printed p. 249), $\alpha_0\ne0$ (step s4) and the pairing
+    is perfect (III.7.6, printed p. 243); the trace side is the count of step s4,
+    and the Koszul side is Lemma 50.23.10 of the Stacks Project (tag 0G8D,
+    printed pp. 4272--4273), which carries $\gamma^{0,0}_{Y/\PP^n}(1)$ to
+    $\gamma^{0,0}_{Z/L}(1)$ for $Z=Y\cap L$, together with the locality of the
+    construction (Lemma 50.23.3, printed p. 4269) and the point normalization (C)
+    at the $d$ points. The passage from the class $1$ to an arbitrary class $a$
+    is the equivalence of that identity with the projection formula
+    $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$, by perfectness of the pairing on $Y$ and
+    step s2 applied to the divisor $Z$ of $Y$. Read in this pass: Yang Pi-Yeh's
+    Solution 3.7.4(d), printed p. 75, in the text version
+    tmp/sources/lfwin-hartshorne-solutions.md, against II.6, printed
+    pp. 141--142, the Cech differential of III.4, printed p. 218, Exercise
+    III.7.3, printed p. 249, and Theorem III.7.14.1(c), printed p. 247; the
+    transcription and what it leaves out are recorded in COMPLAINTS.md. Not
+    proved here: the same comparison and base change for a general smooth
+    ambient variety, where no detecting class of this kind is available.
 ---
 
 ::: {.problem}
@@ -1072,9 +1100,57 @@ So $t_X(c(\OO(P)))=+1=t_P(1)$, which is the case $n=1$ of the formula of step []
 
 :::
 
+::: {.pf-step #s8}
+
+Let $Y\subseteq\PP^n$ be nonsingular of codimension $p$, and let $\gamma^{0,0}_{Y/\PP^n}(1)\in H^p(\PP^n,\Omega_{\PP^n}^p)$ be the Gysin class of the Koszul construction ([Stacks Project, Remark 50.23.7](https://stacks.math.columbia.edu/tag/0G8A)). Then
+$$
+\boxed{\eta(Y)=\gamma^{0,0}_{Y/\PP^n}(1)} ,
+$$
+and for a hyperplane $H\subseteq\PP^n$ meeting $Y$ transversely, with $Z=Y\cap H$,
+$$
+\boxed{i^*j_*=(j_H)_*\,i_Y^*} ,
+$$
+both sides being maps $H^q(Y,\Omega_Y^q)\to H^{q+1}(H,\Omega_H^{q+1})$.
+
+::: pf-proof
+
+**One class detects.** Let $L\cong\PP^p$ be a general linear subspace, $i:L\hookrightarrow\PP^n$, and $\alpha_0=\eta_{\PP^n}(L)=i_*(1)$. By step [](#s4){.pf-ref} the class $\alpha_0$ is nonzero and $L$ meets $Y$ in $d=\deg Y$ distinct points; by Exercise III.7.3 (printed p. 249) the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional, and by (III.7.6) the pairing is perfect. A class of $H^p(\PP^n,\Omega^p)$ is therefore determined by its pairing with $\alpha_0$.
+
+**The trace side.** By step [](#s4){.pf-ref},
+$$
+\langle\eta(Y),\alpha_0\rangle_{\PP^n}=t_Y\bigl(\restrictionof{\alpha_0}{Y}\bigr)=t_Y\bigl(c_1(\OO_Y(1))^{\smile p}\bigr)=d .
+$$
+
+**The Koszul side.** By the adjunction identity that defines $i_*$, for every $u\in H^p(\PP^n,\Omega^p)$,
+$$
+t_{\PP^n}\bigl(u\smile\alpha_0\bigr)=t_{\PP^n}\bigl(u\smile i_*(1)\bigr)=t_L\bigl(\restrictionof{u}{L}\bigr).
+$$
+The square with $Z=Y\cap L$ over $L$ and $Y$ over $\PP^n$ is cartesian and transverse, its vertical maps are Koszul regular immersions, and $\PP^n$ and $L$ are smooth over $k$; so Lemma 50.23.10 of the Stacks Project ([tag 0G8D](https://stacks.math.columbia.edu/tag/0G8D), printed pp. 4272--4273) gives
+$$
+\restrictionof{\gamma^{0,0}_{Y/\PP^n}(1)}{L}=\gamma^{0,0}_{Z/L}(1) .
+$$
+The construction of $\gamma$ is local on its source (Lemma 50.23.3, printed p. 4269), so on the finite reduced scheme $Z$ it is the sum over the points, $\gamma^{0,0}_{Z/L}(1)=\sum_{Q\in Z}\gamma^{0,0}_{Q/L}(1)$, and the normalization (C) gives $t_L(\gamma^{0,0}_{Q/L}(1))=1$ for each of them. Hence
+$$
+\bigl\langle\gamma^{0,0}_{Y/\PP^n}(1),\alpha_0\bigr\rangle_{\PP^n}
+=t_L\bigl(\gamma^{0,0}_{Z/L}(1)\bigr)
+=d
+=\bigl\langle\eta(Y),\alpha_0\bigr\rangle_{\PP^n},
+$$
+and the two classes are equal.
+
+**Base change.** For a hyperplane $H$ and $Z=Y\cap H$, the identity just proved, applied in $\PP^n$ and in $H$, together with Lemma 50.23.10, gives
+$$
+i^*j_*(1)=i^*\eta(Y)=i^*\gamma^{0,0}_{Y/\PP^n}(1)=\gamma^{0,0}_{Z/H}(1)=\eta_H(Z)=(j_H)_*i_Y^*(1).
+$$
+The class $1$ gives the general class: for $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega^{n-1-q-p})$ the left side pairs as $t_{\PP^n}(j_*a\smile i_*w)=t_Y(a\smile j^*i_*w)$, and the right side as $t_Z(i_Y^*a\smile j_H^*w)=t_Y(c_1(\OO_Y(H))\smile a\smile j^*w)$, the second equality by step [](#s2){.pf-ref} applied to the divisor $Z$ of $Y$. The case $a=1$ says, by perfectness of the pairing on $Y$, that $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$ for every $w$; that identity gives the general $a$, and with it the displayed base change.
+
+:::
+
+:::
+
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
+Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Step [](#s8){.pf-ref} adds two statements that no part of the exercise needs: on a subvariety of $\PP^n$ the class $\eta(Y)$ is the Gysin class of the Koszul construction, in every codimension, and the transverse base change $i^*j_*=(j_H)_*i_Y^*$ follows from it. Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
 
 :::
 
