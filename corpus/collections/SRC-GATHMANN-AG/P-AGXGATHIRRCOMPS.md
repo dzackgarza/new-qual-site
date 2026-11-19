@@ -12,6 +12,20 @@ classification:
   - Integral Domains
 relations: []
 review: draft
+audit:
+  - event: solution-reviewed
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read against the Lamport standard and checked by hand. The decomposition is right: xz - y^2 =
+      z(x - yz) + y(z^2 - y), so the two generating sets generate the same ideal, and the point
+      condition splits as y = 0 or z^2 = y. Both components are irreducible: (x - yz, y) = (x, y) and
+      R/(x,y) = C[z]; and R/(x - yz, z^2 - y) = C[y,z]/(z^2 - y) = C[z], an integral domain, so both
+      ideals are prime and the Nullstellensatz gives the vanishing ideals. The two points exhibited
+      separate the components: (0,0,1) lies on the line and not on the cubic (z^2 - y = 1), and
+      (1,1,1) lies on the cubic and not on the line (y = 1). The parametrisations (0,0,t) and
+      (t^3,t^2,t) follow. Nothing outside this exercise checked; in particular no statement is made
+      about the scheme-theoretic fibre at the origin.
 ---
 
 ::: {.problem}
