@@ -21,6 +21,13 @@ audit:
     Counted labeled coset actions into S_k. Each index-k subgroup yields
     (k-1)! distinct homomorphisms with that subgroup as the stabilizer of 1,
     while n generators allow at most (k!)^n homomorphisms.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall95.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -32,6 +39,7 @@ $$
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1995, retained in this repository as `assets/attachments/Fall95.pdf`; the statement below is its wording.
 Fix generators
 $$
 g_1,\ldots,g_n
