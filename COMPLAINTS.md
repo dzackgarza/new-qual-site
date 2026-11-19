@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: `\shsheaf` on two more Hartshorne cards, and why the repair there is prose rather than a symbol
+
+**Object and need.** The whole-corpus report at the tree of `5a04ad8547` fails on four errors, all one token: `\shsheaf` in `P-AGH2121VARSHEAVES` (three times) and `P-AGH2122GLUESHEAVES` (once). Both occurrences are in `remark` prose describing the printed statement, not in the statement or the solution.
+
+**Observed evidence.** The earlier repair of `P-AGH2120SUPPSUBSHEAF` restored `\Gamma_Z(\mcf)`, because there the object was the subsheaf of sections with support and the sibling card `P-AGH256SUPPORT` writes exactly that. Here no such restoration exists: `P-AGH2121VARSHEAVES` writes `\mci_Y` for the sheaf of ideals and `\OO_X`, `\OO_Y` for the structure sheaves in its statement, and the remark's two uses of `\shsheaf_Y` do not agree with a single referent --- one introduces "the sheaf of ideals", the other sits in "the quotient $\shsheaf_Y$ with $\shsheaf$ in part (b)". A symbol that stands for two different objects cannot be restored by substitution, so both sentences now name the objects in words: "the sheaf of ideals of $Y$, the quotient of part (b)" and "the glued sheaf". No statement and no step changes.
+
+**Impact and owner.** Two commits, `P-AGH2121VARSHEAVES` and `P-AGH2122GLUESHEAVES`, each with a `source-corrected` event saying the repair is wording and that the printed pages were not re-read. `qualc.authoring check` passes on both. The three cards of this stretch that carried the token --- 1.20, 1.21 and 1.22 --- are now free of it outside backticked spans.
+
+**Uncertainty.** High confidence in the diagnosis, since the statement's own symbols are visible on each card and contradict a single reading of the remark's token. Not checked: the printed pp. 68--69 wording, which was not re-read; and the other cards of the collection were not swept for the same placeholder.
+
 ## 2026-11-19: all ten UO Fall 2019 cards name the solutions packet's problem and page
 
 **Object and need.** The survey recorded above found that collections retaining a solutions file often never mention it on their cards. `SRC-UO-TOP-FALL-2019` retains a complete solutions file for its ten problems (`assets/attachments/TopologySept19solutions.pdf`, seven pages) and none of its ten cards named it. All ten do now.
