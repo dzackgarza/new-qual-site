@@ -225,6 +225,35 @@ One sentence of the removed `Repair` bullet — that both collections carry a `p
 
 - **Repair, 2026-11-19: carried out on the 87 cards that still carried it.** Measured on this tree with the same match before the edit: 87 card files, not 89 — `SRC-TEXT-SMI` 62, `SRC-TEXT-HAT02` 7, `SRC-TEXT-HUN74` 3, `SRC-UW-ALG-2007` and `SRC-UW-ALG-2012` 2 each, and one each in `SRC-KENT-STATE-RING-THEORY-QUAL-2017`, `SRC-TEXT-HK71`, `SRC-TEXT-SS03`, `SRC-TOP-WORKSHOP`, `SRC-UW-ALG-2006`, `SRC-UW-ALG-2008`, `SRC-UW-ALG-2010`, `SRC-UW-ALG-2011`, `SRC-UW-ALG-2016`, `SRC-UW-ALG-2017` and `Algebra`. Two files left the class between the 2026-11-14 measurement and this one; the entry's own count of 90 was not re-derived per file, so which two is not recorded here. Each file lost its duplicated terminator line; files with an uncommitted edit in the shared tree at that moment were skipped, and there were none among the 87. The commit is `f07eef83f7`: 87 files, 6 insertions, 93 deletions — the fifteen extra deletions and six insertions over the 87 lines removed are a second, notation-only change the push gate forced, since four of these cards wrote a raw bar in mathematics and `pre-commit` refuses a staged card that does (STYLE-04): `E-HAT-2.C-3` and `E-HAT-2.C-8` now write `\abs`, and `P-UWALG07-7` (four spans) and `P-TSQDV` (one) now write `\restrictionof`. No statement, step or claim changed in those four. Verified: `qualc check` over the corpus with the terminator removals in the tree, exit 0, "14394 cards and 341 wiki pages OK" (record `44114db90ebd-20261119T045219.705Z`); `qualc.authoring check` on `E-HAT-2.B-6`, `P-KSRING17-042`, `E-HAT-2.C-3`, `E-HAT-2.C-8`, `P-UWALG07-7` and `P-TSQDV`, each `schema and Markdown parsing OK`; `tools/check_macros.py` on the four normalised cards, `OK`; `tools/sync_macros.py --check`, clean. A re-measurement with the same match reports 0 cards left with a doubled terminator. Not checked: any built page, so whether a horizontal rule was visible above a card's first block in the deployed theme is still unverified, though the parse defect behind it is gone; and no render of the four normalized spans, only the macro checker's reading of them.
 
+### 2026-11-19: one stream's worktree refuses every other stream's commits
+
+- **Object and need:** the local commit gate, `core.hooksPath=$HOME/.config/git/hooks`, and the QUAL-09
+  check that refuses a commit when a Git worktree exists beside the clone.
+
+- **Observed evidence:** twice during 2026-11-19 the gate refused a card commit in the one clone with
+  `QUAL-09: 1 worktree(s) exist. Streams work directly on main in this clone; land the work on main, then
+  remove the worktree.`, while the worktree was another stream's: `/…/repo/.scratch/wt-fix156` (detached at
+  `c7a14c9d89`), then `/…/repo/.scratch/wt-t2` (whose HEAD moved from `49014de8e8` to `9dc06d309a` while it
+  was observed, so that stream was live), then `/…/repo/.scratch/t2b` (detached at `eb9273cd7a`). The second
+  refusal cleared only when that stream removed its worktree, about twenty minutes later; the card that was
+  blocked (`P-APAS26E`) was staged, complete and green on every per-card check throughout.
+
+- **Impact and owner:** every stream that shares this clone, not only the one that owns the worktree. A
+  commit that creates no worktree and touches no worktree is refused for the duration, so a lane's finished
+  card waits on another lane's working state. It also invites the wrong repair: the two visible ways out are
+  deleting someone else's worktree, which destroys their uncommitted work, and `--no-verify`, which skips the
+  checks the same hook exists to run.
+
+- **Uncertainty:** the three refusals are exact quotations and the worktree paths and SHAs are read from
+  `git worktree list`; what is not established is whether the affected stream knew its worktree blocked
+  others. Not checked: whether the hook's author intended the check to be clone-wide rather than per-committer.
+
+- **Repair:** none applied, and none should be applied from a card lane. The narrow fix is to refuse a commit
+  only for the worktree's own owner, or to make the check a warning once the committing index contains no
+  path inside a worktree. What a lane can do meanwhile is what was done: retry the commit rather than remove
+  another stream's tree or bypass the gate, and record the block here so the next lane does not mistake it
+  for a defect in its own card.
+
 ## Queue head passed over, not blocked
 
 - **Object and need:** `E-SS10.PR-6` ("Eight squares from an Eisenstein series"), the first card in
@@ -4812,6 +4841,7 @@ so $h'\equiv-s^{-2n}h+(n-1)s^{-2n-1}q$; after the diagonal transition factors th
 **Acceptance, #160's V.2.17 row.** Met: part (b) is proved in characteristic 2 and in characteristic 3, and the printed answer is checked against the book. No published proof of those two characteristics is claimed; Yang's is sound away from 2 and 3, wrong in characteristic 3, and not the conormal's presentation in characteristic 2, as the card's remark says.
 
 **Uncertainty.** Not checked: the card's other steps were not re-derived in this pass; only the computation of step `s3` was verified line by line; and no source outside Hartshorne and the retained Yang extraction was read for this card.
+
 ## 2026-11-19: V.4.10 closes with its three one-clause reductions proved on the card, printed p. 408
 
 **Object and need.** `P-AGH5410NUMINEQ` (Hartshorne V.4.10, printed p. 408) and the record of 2026-11-16 that leaves its two transcribed arguments with the sources' one-clause reductions unproved. The exercise asks for a ``freshman calculus'' proof of $a^2-\sum b_i^2>0$ from the inequalities of (4.13)(a), printed p. 406. The card transcribes answer 2476483 and NTU Chapter V §4 Exercise 10, printed p. 17; both stop at three reduction assertions.
