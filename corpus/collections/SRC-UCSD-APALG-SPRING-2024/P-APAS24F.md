@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    6 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 6 is its page 7. Checked: the statement against the paper's text layer at
+    the page named; unitarity of $\omega$ under $\langle S,T\rangle=\Tr S^*T$, and the character
+    $\overline{\chi_V}\chi_W$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering
+    and the QED. Not checked: no retained solution set exists for this paper to compare the argument
+    with, and no other card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -37,6 +49,9 @@ Compute the character of $(\mathcal{L}(V,W),\omega)$ in terms of the characters 
 :::
 
 ::: {.solution}
+
+The problem is Problem 6 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 6 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+
 No retained solution set covers this problem: the collection's `provenance` names the Spring 2024 applied-algebra examination paper, which carries no solutions. The argument below is the card's own and follows the card's previous prose.
 
 Throughout $(V,\varphi)$ and $(W,\psi)$ are finite-dimensional unitary representations of a finite group $G$, $\mathcal L(V,W)$ carries the Hilbert–Schmidt inner product $\langle S,T\rangle=\operatorname{Tr}(S^*T)$, and $\omega(g)T=\psi(g)T\varphi(g^{-1})$.
