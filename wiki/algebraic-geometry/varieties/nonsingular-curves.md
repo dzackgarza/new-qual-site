@@ -42,8 +42,8 @@ The equivalence in the card is the precise statement that no information is lost
 
 ## Extension of rational maps
 
-A rational map from a nonsingular curve to a projective variety is a morphism, which is the single fact that makes the theory of curves behave: it is what forces birational smooth projective curves to be isomorphic, and it is what lets a rational function on a curve be evaluated at every point once its poles are known.
-The proof is the valuative criterion at each point: the local ring $\OO_{C,p}$ is a DVR and therefore a valuation ring, so the map is defined wherever the criterion asks for a lift, and completeness of the target supplies it.
+A rational map from a nonsingular curve to a projective variety is a morphism [@Har77, §I.4, pp. 24--27]: at each point the local ring $\OO_{C,p}$ is a discrete valuation ring, so the valuative criterion applies ([[T-SRFZMT]], [[D-8XX95]]).
+That is what forces birational smooth projective curves to be isomorphic, and it is what lets a rational function on a curve be evaluated at every point once its poles are known ([[T-CRVMINMOD]]).
 No analogue holds in higher dimension: the rational map $\AA^2\dashrightarrow\PP^1$, $(x_1,x_2)\mapsto\thevector{x_1:x_2}$, is undefined at the origin, and blowing up the origin is the standard repair.
 
 ## Genus and the canonical model
