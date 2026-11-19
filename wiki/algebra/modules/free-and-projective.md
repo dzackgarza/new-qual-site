@@ -26,7 +26,7 @@ A free module is one with a basis, its rank is the cardinality of that basis and
 
 ## Projective modules
 
-A projective module is a direct summand of a free one, which is what makes a short exact sequence ending at it split.
+A projective module is a direct summand of a free one, which is the criterion that every short exact sequence ending at it splits.
 
 [[D-RHJMK]]
 
