@@ -186,7 +186,6 @@
   "\\envlist": "",
   "\\eps": "{\\varepsilon}",
   "\\ess": "{\\mathrm{ess}}",
-  "\\ev": "\\operatorname{ev}",
   "\\evalfrom": "\\Big|",
   "\\evaluated": "{\\left. {#1} \\right\\rvert}",
   "\\exactlydivides": "\\mathrel{\\Vert}",
