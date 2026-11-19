@@ -8201,3 +8201,13 @@ carry; and the printed book itself.
 
 **The remainder.** Forty-seven Chapter IV cards still lack Yang; the queue in index order now starts
 at IV.3.1 `P-AGH431GENUSTWOVERYAMPLE`.
+
+## 2026-11-19, thirteenth item: what the residue-1 locator pass established, and the two routes it verified for the cards it did not reach
+
+**Object.** A day of locating residue-1 cards in their retained sources, and the measurements that outlive it.
+
+**Verified offsets and structures, each checked on this tree.** The Hoffman--Kunze scan `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` has printed page = PDF page − 8 in Chapter 1 and − 7 from Chapter 6 (the offset shifts with inserted front matter, so the printed folio must be read, never computed). The Stein--Shakarchi scan `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` is a clean − 19 at printed pp. 41, 81 and 281, and its chapters end with a **Problems** heading that numbers from 1. The McMullen notes have no printed folios at all: the PDF page is the only locator, and the review exercises sit in the Forward on PDF p. 2. The `Cracking the GRE Mathematics Subject Test` review-question chapters begin at PDF pp. 40, 105, 170, 188, 224, 264 and 329, which is how a card is tied to a chapter when the OCR has lost the heading — Chapters 3 and 5 lose theirs. The Mathematical Trivium ids encode chapter initials and problem numbers (`LA`, `RA`, `CA`, `DE`, `PR`, `VP`), the Lyall ids encode assignment and part (`-01` numbered, `-B01` bonus, `-C01` challenge), and the Tate ids encode the sheet date.
+
+**What that leaves, exactly.** Twenty Stein--Shakarchi cards name no source; with the − 19 offset and the Problems headings they are straightforward. Thirty-five Hatcher cards likewise, and the Hatcher text is retained as `tmp/sources/hatcher-2002-algebraic-topology.md` rather than as a paginated scan — printed page = PDF page − 9 there, but the `.md` carries no folios, so a Hatcher locator needs the printed page from another copy or the section number alone. Fourteen cards have sheets that are scans with no text layer and no extraction; `just ocr-pdf` runs `tools/mistral_ocr.py` against an external service and nothing was sent. The workshop collection's day-2..9 sheets are not in the repository at all, which is a provenance gap rather than a missing citation.
+
+**Not claimed.** No card in this pass was given a page number that was not read from the item itself. Where the number could not be established — the GRE practice-test number, the two undated Tate sheets, `P-ALGPAN11-01`'s image-only questions — the locator names the heading and page instead, and the audit event says so.
