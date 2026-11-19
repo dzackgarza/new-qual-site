@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed
+    p. 2 of the paper's own numbered pages, is the statement the card answers, and the head of the
+    solution names it; the file retained at assets/attachments/Applied-Algebra-Qual-SP20.pdf puts a
+    cover page before those two numbered pages, so paper p. 1 and p. 2 are its second and third pages.
+    Checked: the statement against the paper's text layer at the page named; the two Haar integrals over
+    $\U(2)$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no other
+    card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-19
@@ -43,6 +55,9 @@ against Haar measure.
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
+
 The collection's provenance is the examination paper, so no retained solution set covers the problem and the argument is the card's own. Normalise Haar measure on the compact group $\U(2)$ to have total mass $1$.
 
 ::: pf
