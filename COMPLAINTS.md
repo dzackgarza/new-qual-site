@@ -312,10 +312,43 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **97 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **91 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above; the rest is unaudited.
+   reported and repaired above. Six of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 91 stand as this item lists them.
+
+   **2026-11-19: §3.F 4 to 9 read, all six, and no proof in the six needed repair.** Each card was read
+   against the printed exercise it states, and each proof was read for correctness. The six exercises
+   stand on printed p. 320 of Hatcher, *Algebraic Topology* (2002), which is PDF p. 329 of
+   `tmp/sources/hatcher-2002-algebraic-topology.pdf`, and that page was read for each one. What the six
+   prove: (4) quotients of divisible groups are divisible, roots give a map $\QQ\to G$ with
+   $1\mapsto g$, $G$ is a quotient of $\bigoplus_I\QQ$, and $\operatorname{Ext}(A,\QQ)=0$ with
+   $\operatorname{Ext}$ turning $\bigoplus$ in its second variable into $\prod$ gives
+   $\operatorname{Ext}(A,G)=0$; (5) the cokernel of $\operatorname{Hom}(A,\QQ)\to
+   \operatorname{Hom}(A,\QQ/\ZZ)$ is $\operatorname{Ext}(A,\ZZ)$ by the long exact sequence, and for
+   $\ZZ_{p^\infty}$ the second Hom is $\operatorname{End}=\varprojlim\ZZ/p^n$; (6) the standard free
+   resolution with $d(r_0)=pe_1$, $d(r_n)=pe_{n+1}-e_n$ has kernel the image, and the dual sends
+   $(a_n)\mapsto(0,-a_1,-a_2,\dots)$ because $p=0$ in $\ZZ_p$, whose cokernel is $\ZZ_p$; (7) the free
+   presentation, the two-stage Moore complexes, the quotient $M(B,n)/M(A,n)$ with the homology of
+   $M(C,n)$, the universal coefficient theorem and the pair's long exact sequence give the six-term
+   sequence; (8) the universal coefficient theorem puts $\operatorname{Hom}$ and $\operatorname{Ext}$ in
+   degrees $n$ and $n+1$ only, and the coefficient sequence's other terms vanish; (9) the two long exact
+   sequences spliced at $\operatorname{Ext}(pA,\ZZ)$ give the displayed sequence, whose label $p$ is the
+   composite through that term, and writing the composite as one map loses no exactness, since the kernel
+   and the image of the composite are exactly what exactness at the two copies of
+   $\operatorname{Ext}(A,\ZZ)$ computes.
+
+   **Trap for the next reader of exercise 4.** The text version
+   `tmp/sources/hatcher-2002-algebraic-topology.md` prints "Show that a group is divisible if it is a
+   quotient of a direct sum of $\QQ$'s", one direction only; the page image on PDF p. 329 prints "iff".
+   The card's "if and only if" is the book's, and the OCR of the text version dropped the "f". It must
+   not be weakened on the strength of the text version.
+
+   Cards changed in that pass, none in statement or proof: `E-HAT-3.F-5`, `-6`, `-8` and `-9` now name
+   their exercise and its printed page, as `-4` and `-7` already did, and `-8` and `-9` say the argument
+   is the card's own. Remaining unread in this item's set: §4.A-4, §4.A-5, §4.1 10–23, §4.2 (39),
+   §4.3 (24), §4.D (10), §4.L-4, §4.L-5 --- 91 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
