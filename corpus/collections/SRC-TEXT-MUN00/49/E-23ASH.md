@@ -69,43 +69,97 @@ audit:
     argues that an interval leaving I has 0 or 1 in its interior, that t_0 = 0 and t_{2k} = 1 are vertices
     of this sawtooth, and hence that the interval which has no vertex in its interior lies in I, which is
     what the passage to "lies in one linear piece" needs. Nothing else on the card changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked the construction: $k$ with
+    $2k\varepsilon>n$ and $4k\ge n$ exists since $\varepsilon>0$; the sawtooth is continuous and
+    takes values in $[0,\varepsilon]$ with every slope of absolute value $\varepsilon/\delta$; two
+    vertices cannot lie on opposite sides of $x$ at distance $h$, since distinct vertices are
+    $\delta=2h$ apart; an interval with no vertex in its interior stays in $I$ because a backward
+    interval leaving $I$ contains the vertex $0$ and a forward one contains $1$; and hence some
+    difference quotient at each $x$ has absolute value $2k\varepsilon>n$, giving
+    $\Delta_h f>n$ at $h=1/(4k)\le1/n$. Added: the well-definedness of $f$ at the shared endpoints
+    and the statement that a quotient over a linear piece equals its slope. Not claimed: a
+    published solution of §49 Exercise 2 on printed p. 304, which the earlier event records as not
+    located; the construction is the card's own. One presentation repair: the statement wrote
+    `\epsilon`, which STYLE-04 spells `\varepsilon` and which is the glyph the book prints; the
+    wording of the statement is unchanged.
 ---
 
 ::: {.exercise}
 
-Given $n$ and $\epsilon$, define a continuous function $f: I \to \RR$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
+Given $n$ and $\varepsilon$, define a continuous function $f: I \to \RR$ such that $f \in U_n$ and $\abs{f(x)} \leq \varepsilon$ for all $x$.
 :::
 
 ::: {.solution}
-In §49 the set $U_n$, for $n\ge2$, is defined as follows. For $0<h\le 1/2$ and $x\in I$, let $\Delta f(x,h)$ be the larger, in absolute value, of the two difference quotients $(f(x+h)-f(x))/h$ and $(f(x-h)-f(x))/(-h)$ that are defined (at least one is, since $h\le1/2$), and let
-$$
-\Delta_h f=\inf\{\Delta f(x,h) \mid x\in I\}.
-$$
-Then $f\in U_n$ if and only if $\Delta_h f>n$ for some $h$ with $0<h\le 1/n$. So what must be produced is a single step $h\le1/n$ at which every point of $I$ has a secant slope exceeding $n$ in absolute value, not a step depending on the point.
+No complete published solution of this exercise was located, so the argument is the card's own; the sets searched are listed in the COMPLAINTS.md entry for §43--§50 of SRC-TEXT-MUN00. It is read with the book's set $U_n$ of printed p. 301: for $n\ge2$, $f\in U_n$ when $\Delta_h f>n$ for some $h$ with $0<h\le1/n$, where $\Delta f(x,h)$ is the larger in absolute value of the step-$h$ difference quotients of $f$ at $x$ that are defined, and $\Delta_h f=\inf_{x\in I}\Delta f(x,h)$.
 
-Let $n\ge2$ and $\varepsilon>0$ be given, and choose an integer $k$ with
-$$
-2k\varepsilon>n \qquad\text{and}\qquad 4k\ge n ,
-$$
-which is possible. Put
-$$
-\delta=\frac{1}{2k},\qquad h=\frac{\delta}{2}=\frac{1}{4k}\le\frac1n ,
-$$
-and let $t_j=j\delta$ for $j=0,1,\dots,2k$, so that $t_0=0$ and $t_{2k}=1$. Define $f:I\to\RR$ to be the continuous piecewise linear function with
-$$
-f(t_j)=\begin{cases}\varepsilon,& j \text{ odd},\\ 0,& j\text{ even},\end{cases}
-$$
-and linear on each $[t_{j-1},t_j]$.
+::: pf
 
-Plainly $0\le f(x)\le\varepsilon$ for all $x$: on each subinterval $f$ is linear between $0$ and $\varepsilon$.
+::: {.pf-step #parameters}
+Given $n\ge2$ and $\varepsilon>0$ there is an integer $k\ge1$ with $2k\varepsilon>n$ and $4k\ge n$; then $\delta=1/(2k)$ and $h=\delta/2=1/(4k)$ satisfy $0<h\le1/n$.
 
-We show $\Delta f(x,h)\ge\varepsilon/\delta=2k\varepsilon>n$ for every $x\in I$, which gives $\Delta_h f>n$ and $f\in U_n$.
+::: pf-proof
+Since $\varepsilon>0$, any integer $k>\max\{n/(2\varepsilon),\ n/4\}$ satisfies both inequalities. Then $h=1/(4k)\le1/n$ because $4k\ge n$, and $h>0$.
+:::
 
-Fix $x\in I$. The two intervals $[x-h,x]$ and $[x,x+h]$ have length $h=\delta/2$ each. At $x=0$ the forward interval $[0,h]$ is contained in $[0,\delta]$, and at $x=1$ the backward interval $[1-h,1]$ is contained in $[1-\delta,1]$, one linear piece in each case, since $h<\delta$; there the corresponding quotient has absolute value exactly $\varepsilon/\delta$. For $0<x<1$: the backward interval can leave $I$ only when $x<h$, and then $0$ lies in its interior; the forward one only when $x>1-h$, and then $1$ lies in its interior. Both $0=t_0$ and $1=t_{2k}$ are vertices, so an interval with no vertex in its interior lies in $I$. If both had a vertex in the interior, say $t\in(x-h,x)$ and $t'\in(x,x+h)$, then $t<x<t'$ and $t'-t<2h=\delta$, which is impossible because distinct vertices are at distance at least $\delta$. So at least one of the two intervals has no vertex in its interior; that interval lies in $I$, hence its interior lies in one of the open subintervals cut out by the vertices and the interval lies in the closure of that piece, which is one of the linear pieces, on which $f$ has slope $\pm\varepsilon/\delta$; the corresponding difference quotient therefore has absolute value exactly $\varepsilon/\delta$. Hence
-$$
-\Delta f(x,h)\ge\frac{\varepsilon}{\delta}=2k\varepsilon>n .
-$$
-Since $x$ was arbitrary, $\Delta_h f>n$ with $h=1/(4k)\le 1/n$, so $f\in U_n$.
+:::
 
-Therefore $f\in U_n$ and $\abs{f(x)}\le\varepsilon$ for all $x\in I$.
+::: {.pf-step #construction}
+With $t_j=j\delta$ for $j=0,\ldots,2k$, the function that is linear on each $[t_{j-1},t_j]$ and takes the value $\varepsilon$ at the odd $t_j$ and $0$ at the even $t_j$ is well defined and continuous, with $0\le f(x)\le\varepsilon$ for all $x\in I$.
+
+::: pf-proof
+The intervals $[t_{j-1},t_j]$ cover $I$ and their pairwise intersections are single points, and the two prescriptions agree at each shared endpoint, so the piecewise formula defines a function on $I$; it is continuous because it is continuous on each closed piece and the pieces agree at the endpoints. On each piece $f$ is linear between the values $0$ and $\varepsilon$, so every value lies between those two, and every slope has absolute value $\varepsilon/\delta$.
+:::
+
+:::
+
+::: {.pf-step #quotient}
+For every $x\in I$ one of the two intervals $[x-h,x]$, $[x,x+h]$ that meet $I$ contains no vertex $t_j$ in its interior, and then the corresponding difference quotient has absolute value $\varepsilon/\delta$.
+
+:::: pf-proof
+
+::: {.pf-step #no-two-vertices}
+The intervals $(x-h,x)$ and $(x,x+h)$ are not both nonempty of vertices.
+
+::: pf-proof
+Suppose $t\in(x-h,x)$ and $t'\in(x,x+h)$ are vertices. Then $t<x<t'$, so $t'-t<(x+h)-(x-h)=2h=\delta$, while distinct vertices are at distance at least $\delta$ from one another, since $t_j=j\delta$. This is a contradiction.
+:::
+
+:::
+
+::: {.pf-step #one-piece}
+An interval $[x-h,x]$ or $[x,x+h]$ with no vertex in its interior lies in $I$ and in the closure of one linear piece.
+
+::: pf-proof
+The backward interval leaves $I$ only if $x-h<0$, and then the vertex $t_0=0$ lies in $(x-h,x)$; the forward one leaves $I$ only if $x+h>1$, and then the vertex $t_{2k}=1$ lies in $(x,x+h)$. So the interval stays in $I$. Its interior holds no vertex, hence lies in one of the open intervals between consecutive vertices, whose closure contains the interval, and $f$ is linear on that closure by step [](#construction){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step}
+Some difference quotient at $x$ has absolute value exactly $\varepsilon/\delta$, so $\Delta f(x,h)\ge\varepsilon/\delta$.
+
+::: pf-proof
+By step [](#no-two-vertices){.pf-ref} at least one of the two intervals has no vertex in its interior; by step [](#one-piece){.pf-ref} it lies in a single piece, over which $f$ is linear with a slope of absolute value $\varepsilon/\delta$. A difference quotient over an interval on which $f$ is linear equals the slope, so its absolute value is $\varepsilon/\delta$, and $\Delta f(x,h)$ is the larger of the two quotients, hence at least this value.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{f\in U_n\text{ and }\abs{f(x)}\le\varepsilon\text{ for all }x\in I}$.
+
+::: pf-proof
+Step [](#quotient){.pf-ref} gives $\Delta f(x,h)\ge\varepsilon/\delta=2k\varepsilon$ for every $x\in I$, so $\Delta_h f\ge2k\varepsilon>n$ by step [](#parameters){.pf-ref}; since $0<h\le1/n$, the criterion for membership in $U_n$ at step $h$ is met and $f\in U_n$. Step [](#construction){.pf-ref} gives $0\le f(x)\le\varepsilon$ on $I$, which is the required bound on $\abs{f}$.
+:::
+
+:::
+
+:::
 :::
