@@ -35,9 +35,20 @@ audit:
   date: 2026-10-31
   note: >-
     Read the proof: the order-preserving identification merges the three vertices, the two boundary edges become a single edge class $a$ with $b$ a loop, and the $\Delta$-complex chain complex gives $H_1=\ZZ$ and $H_0=\ZZ$, so the quotient is $S^1$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 140 carries the running head 131,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 2.1 of Hatcher, *Algebraic Topology* (2002), printed p. 131, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 What familiar space is the quotient $\Delta$-complex of a 2 simplex $[v_0, v_1, v_2]$ obtained by identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$, preserving the ordering of vertices?
 :::
 
