@@ -62,7 +62,7 @@ At a point $z_0$ where $f$ is complex differentiable with derivative $a$, the re
 
 
 ::: {.pf-step #real}
-$\displaystyle\int_T u\,\dd x-v\,\dd y=0$.
+$\displaystyle\int_T u\dx-v\dy=0$.
 
 ::: pf-proof
 Apply Green's theorem as quoted in the statement to the $C^1$ field $(F,G)=(u,-v)$ on the closed triangle $T$, whose boundary is a piecewise $C^1$ closed curve and whose interior lies in $\Omega$:
@@ -76,12 +76,12 @@ because $u_y=-v_x$ by step [](#components){.pf-ref}.
 
 
 ::: {.pf-step #imaginary}
-$\displaystyle\int_T v\,\dd x+u\,\dd y=0$.
+$\displaystyle\int_T v\dx+u\dy=0$.
 
 ::: pf-proof
 Green's theorem applied to the $C^1$ field $(F,G)=(v,u)$ on the same triangle gives
 $$
-\int_T v\,\dd x+u\,\dd y=\iint_{\operatorname{int}T}(u_x-v_y)\,\dd x\,\dd y=0,
+\int_T v\dx+u\dy=\iint_{\operatorname{int}T}(u_x-v_y)\dx\dy=0,
 $$
 because $u_x=v_y$ by step [](#components){.pf-ref}.
 :::
@@ -90,7 +90,7 @@ because $u_x=v_y$ by step [](#components){.pf-ref}.
 
 
 ::: {.pf-step #conclusion}
-$\displaystyle\int_T f(z)\,\dd z=0$, so Goursat's theorem holds for every continuously complex differentiable $f$ on a neighbourhood of $T$.
+$\displaystyle\int_T f(z)\dz=0$, so Goursat's theorem holds for every continuously complex differentiable $f$ on a neighbourhood of $T$.
 
 ::: pf-proof
 Multiplying out, $f(z)\dz=(u+iv)(\dx+i\dy)=(u\dx-v\dy)+i(v\dx+u\dy)$, since $i^2=-1$. A complex-valued integral is the pair of the integrals of its real and imaginary parts, so by steps [](#real){.pf-ref} and [](#imaginary){.pf-ref}
