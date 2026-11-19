@@ -7107,3 +7107,33 @@ verdicts: the missing class is a root like the others and dies on the Del Pezzo 
 general position and Proposition 8.1.9, printed p. 251 (PDF p. 261, folio read on the page). Not read:
 Nagata's paper beyond the statements the card quotes; the printed books themselves; and no search of
 the literature for the $r\ge8$ case, which stays open under [#157](https://github.com/dzackgarza/new-qual-site/issues/157).
+
+## 2026-11-19: the Nagata render is partial and the retained PDF is not — Proposition 3 is on printed p. 279, and the card quotes it correctly
+
+**Object and need.** The citation "Proposition 3, printed p. 279" on `P-AGH5415GENPOSITION`, used for
+the case $m_N=0$ of part (c), and the observation in one of this date's swarm reports that the
+proposition's text is absent from `tmp/sources/nagata-1960-rational-surfaces-ii.md`, so that the
+citation is unverified.
+
+**Observed.** The render is partial: it carries Lemmas 1.1 to 2.8 and then jumps to Proposition 5, and
+later to Theorem 8, so Propositions 2 and 3 and Theorems 2a and 3a are missing from it, while the
+card cites all four. The retained PDF is complete, 23 pages, and
+`pdftotext -layout tmp/sources/nagata-1960-rational-surfaces-ii.pdf` carries them: its page 9 bears
+the folio 279 and "PROPOSITION 3. Given mutually distinct ordinary points $P_1,\ldots,P_r$ on an $S$ are
+special with respect to Cremona transformations if and only if there is a numerical type
+$(d,m_1,\ldots,m_r)$ which is similar to $(1,1,1,1,0,\ldots,0)$ (with $r-3$ zeros) and such that
+$\mathcal{L}(d;\sum_im_iP_i)$ is not empty." That is the statement the card attributes to it, with
+four $1$s and $r-3$ zeros, the type of a line through three of the points, and the card's parenthetical
+says so. The render also loses Proposition 2 at printed p. 277 and Theorems 2a and 3a, which the card
+quotes from the same paper; those, too, are in the PDF.
+
+**Impact.** Not a defect of the card: the citations are right, and the reading of the render is what
+fails, in the same way the NTU text version lost a table two records above. A reader who checks the
+card against the `.md` only will conclude that the paper does not state what the card says.
+
+**Repair.** This record; no card changes. The card's audit events name the PDF where they were read,
+and this record says plainly which of the two files carries which propositions.
+
+**Uncertainty.** Read for this record: the PDF's pages 1 to 23 through `pdftotext -layout`, the folio
+279 checked on page 9, and the render's structure. Not checked: whether any further proposition is
+missing from the render and present in the PDF beyond the four named, and the printed journal itself.
