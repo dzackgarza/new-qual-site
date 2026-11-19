@@ -5067,3 +5067,58 @@ The corpus-wide figure moves by less than a point, because most structured solut
 
 **Uncertainty.** The line numbers of the original list are stale, since every one of the six cards has been edited since; the items were matched by card and by the named input, not by line. Not checked: whether `P-AGH374COHOMCLASS`'s (R) or (B) has acquired a published proof in the sources this project holds, since the card is being edited by another stream and a reading of its current head would be out of date before it landed.
 
+## 2026-11-19, fourth item: a random sample of forty cards the provenance screen flags — all forty genuinely lack the sentence, so the 85% is not a phrasing artifact in the bulk population
+
+**Object and need.** The two entries above measure how many structured cards state where their argument came from, and the second shows the screen over-flags badly on one population: 24 of 24 flagged cards written by a chat that follows the rule do carry the sentence, in phrasings the list missed. That leaves the opposite question open, and it is the one the programme needs answered: on the corpus at large, are the 10 450 flagged cards really missing the sentence, or is the list tuned to the vocabulary of one writer? This item answers it by opening a random sample.
+
+**The sample.** From the 10 259 cards that have a `.solution` with at least one `.pf-step` and match none of the refined phrases, forty were drawn with `random.seed(20261119)` and `random.sample`, and each was read at the opening of its solution — the first 220 characters, which is where such a sentence is written when it is written at all:
+
+- `P-4IKKY` — `corpus/collections/SRC-UGA-ALG-FALL-2012/P-4IKKY.md`
+- `P-A5CFD` — `corpus/collections/SRC-UGA-TOP-FALL-2006/P-A5CFD.md`
+- `E-W3QMS` — `corpus/problems/Complex_Analysis/E-W3QMS.md`
+- `P-TRIV-CA07` — `corpus/collections/SRC-MATHEMATICAL-TRIVIUM/P-TRIV-CA07.md`
+- `P-AZOFF-C10` — `corpus/collections/SRC-AZOFF-PROBLEMS-BY-TOPIC/P-AZOFF-C10.md`
+- `P-3MDGM` — `corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-3MDGM.md`
+- `E-AMD-DCVAD27P` — `corpus/problems/Algebra/E-AMD-DCVAD27P.md`
+- `P-RAF11B` — `corpus/collections/SRC-UCSD-RA-FALL-2011/P-RAF11B.md`
+- `P-T07B3` — `corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B3.md`
+- `P-BKF08-5A` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-2008/P-BKF08-5A.md`
+- `P-SHON-HW4-07` — `corpus/collections/SRC-SHONKWILER-ALGEBRA-HW4/P-SHON-HW4-07.md`
+- `E-PIB7A` — `corpus/problems/Complex_Analysis/E-PIB7A.md`
+- `P-BKF03-2A` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-2003/P-BKF03-2A.md`
+- `P-JHUU45CA4` — `corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA4.md`
+- `P-AGH2612DEGSHEAF` — `corpus/collections/SRC-TEXT-HART77/P-AGH2612DEGSHEAF.md`
+- `P-BKF80-10` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-1980/P-BKF80-10.md`
+- `E-IPIKC` — `corpus/problems/Complex_Analysis/E-IPIKC.md`
+- `P-QWEAV` — `corpus/collections/SRC-UGA-ALG-SPRING-2015/P-QWEAV.md`
+- `P-CQNPO` — `corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CQNPO.md`
+- `P-IR6HQ` — `corpus/collections/SRC-TEXT-HUN74/vii-4/P-IR6HQ.md`
+- `E-HAT-1.A-12` — `corpus/collections/SRC-TEXT-HAT02/1-a/E-HAT-1.A-12.md`
+- `P-WESTOP08-II4` — `corpus/collections/SRC-WESLEYAN-TOPOLOGY-2006-2014/P-WESTOP08-II4.md`
+- `P-WESCA08-II5` — `corpus/collections/SRC-WESLEYAN-ANALYSIS-2008-2013/P-WESCA08-II5.md`
+- `P-TRIV-CA05` — `corpus/collections/SRC-MATHEMATICAL-TRIVIUM/P-TRIV-CA05.md`
+- `P-BKF12-5A` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-2012/P-BKF12-5A.md`
+- `P-B2P3P` — `corpus/collections/SRC-ALG-ART-SEPT2019/P-B2P3P.md`
+- `P-MAXAT-2-01` — `corpus/collections/SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY/P-MAXAT-2-01.md`
+- `P-TRIV-PR27` — `corpus/collections/SRC-MATHEMATICAL-TRIVIUM/P-TRIV-PR27.md`
+- `P-TOPS20B` — `corpus/collections/SRC-UCSD-TOP-SPRING-2020/P-TOPS20B.md`
+- `P-BKF15-1B` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-2015/P-BKF15-1B.md`
+- `P-HM21B18-PF6-03` — `corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6/P-HM21B18-PF6-03.md`
+- `E-HK-62-6` — `corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-6.md`
+- `P-UCLAB11S-02` — `corpus/collections/SRC-UCLA-BASIC-SPRING-2011/P-UCLAB11S-02.md`
+- `P-AGXVARIRRDECOMP` — `corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARIRRDECOMP.md`
+- `P-BKF10-3A` — `corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-3A.md`
+- `P-GRECH2-06` — `corpus/collections/SRC-GRE-MATH-SUBJECT/P-GRECH2-06.md`
+- `P-UNL872S14-9-A-1` — `corpus/collections/SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS/P-UNL872S14-9-A-1.md`
+- `E-HK-26-3` — `corpus/collections/SRC-TEXT-HK71/2-6/E-HK-26-3.md`
+- `P-M4100-20-A6-02` — `corpus/collections/SRC-MATH4100-6100-2020/P-M4100-20-A6-02.md`
+- `E-MAT367-21` — `corpus/collections/SRC-MAT367-DIFFGEOM-2017/E-MAT367-21.md`
+
+**The reading, and what it shows.** All forty open with either the `pf` block itself or a line of setup — a change of variable, a goal, a definition to be used — and none carries a sentence saying where the argument came from, in any wording. So on this sample the screen is right, and the corpus-wide figure is not an artifact of vocabulary: **40 of 40 flagged cards genuinely lack the sentence**, where the earlier sample of cards written to the rule was 0 of 24. The two results together are consistent and worth stating as one: the phrase list is unreliable on cards whose author wrote the sentence, and reliable on the bulk of the corpus, which did not.
+
+Some of the forty show a second phenomenon, which is a card defect in its own right rather than a provenance question: a few open inside a proof rather than with a statement — `P-3MDGM` begins `::: pf-step Simplify the integrand …`, `E-HK-26-3` begins `**Goal.** Find homogeneous …`, and `P-BKF10-3A` begins with a step statement `Choose $M>0$ such that …`. Those are cards whose `solution` section's opening paragraph has been dissolved into the proof, so a provenance sentence has nowhere natural to go; they are recorded and not repaired, since each needs its solution section read to decide where the setup belongs.
+
+**What this does not show.** It does not identify, per card, whether a retained set covers that card's exercise, so it does not say that the arguments are re-derived; it says only that the card does not state its provenance. Forty cards is a sample: at 40 of 40 the 95% upper bound on the true absence rate is about 7%, so the corpus-wide 85% is not in doubt, but the sample cannot certify any individual card.
+
+**Uncertainty.** The sample was drawn once with a recorded seed and was not stratified by collection. The reading was done on the first 220 characters of each solution; a card that puts its provenance sentence at the end of its solution would be misread, and no such card was seen among the forty. This entry was written twice: the first write was lost when another stream rewrote this file from a snapshot taken before it, which is recorded here because the same thing will happen again to a chat that appends to this file without re-reading it immediately before writing.
+
