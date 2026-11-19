@@ -6394,3 +6394,52 @@ his 5.4.9, which is a sketch on printed pp. 110--111 and was not adjudicated her
 **Instruments.** `.scratch/report_check.py` on each card before its commit: 0 diagnostics each. `qualc.authoring check` on each: "schema and Markdown parsing OK (single card)". The pre-commit card-YAML and schema hook ran on each commit. Each card was committed alone and pushed before the next.
 
 **Uncertainty.** The page locators are the folios of the retained scan; a copy with different pagination would move them. The printed statements were compared with the cards' statements, not with the cards' proofs.
+
+## 2026-11-19: Yang Pi-Yeh's Solutions 5.4.9 and 5.4.16 adjudicated — a sketch that reaches both printed values and proves neither, and an entry that is part (a) of its exercise only
+
+**Object and need.** The record above closed with "whether any other entry of Yang's set covers a
+card of this batch correctly, in particular his 5.4.9, which is a sketch on printed pp. 110--111 and
+was not adjudicated here". The two entries left are Solution 5.4.9, on `P-AGH549MINGENUS`
+(Hartshorne V.4.9, printed p. 408), and Solution 5.4.16, on `P-AGH5416FERMATCUBIC` (V.4.16,
+printed p. 409); Yang's 5.4.13, 5.4.14 and 5.4.15 are already named on their cards, and 5.4.12 on
+its.
+
+**V.4.9, printed pp. 110--111: the right two values, neither proved.** The entry writes
+$d=3a-\sum b_i$ and $g=\frac12(a-1)(a-2)-\frac12\sum b_i^2+\frac12\sum b_i$, takes $b_6\ge0$,
+$a\ge b_1+b_2$ and $2a\ge b_1+\cdots+b_5$ — which is what $D\cdot E_i$, $D\cdot F_{ij}$ and
+$D\cdot G_j$ nonnegative give for an irreducible curve — and rewrites $g\ge\frac12(d-6)$ as
+$a^2-6a+14\ge\sum(b_i-1)^2$, an equivalence that holds: $2g-2=D^2-d$ makes the two into
+$D^2\ge2d-8$ and $a^2-6a+8\ge\sum b_i^2-2\sum b_i$. It then computes two configurations correctly,
+$(b_1,1,0,\ldots,0)$ giving $g=a-2=\frac12(d-5)$ at $d=2a+1$ and $(b_1,2,0,\ldots,0)$ giving
+$g=a-3=\frac12(d-6)$ at $d=2a$. What it does not do is show that the minimum over the feasible
+classes is attained in those two families; it writes "clearly calculating, this two value is the
+minimal bound of $g$ when $g>1$". Two lines are wrong as printed: with $\sum_{i\ge2}b_i=0$ it gives
+$g=\frac12(a(a-3)-b(b-1))$ for the value $1+\frac12(a(a-3)-b(b-1))$, and it takes $b=a$ on the
+ground that "we must take $b$ to be big enough", which is not an argument that the minimum is at that
+end of the range. So the entry is a sketch of the same standing as Egbert's V.4.9, printed p. 290,
+which the card already records as not a proof, and the exercise's two statements remain
+Gruson--Peskine's Theorem 2.5 and Proposition 2.1 as the card states them.
+
+**V.4.16, printed p. 112: part (a), not (b) or (c).** The entry writes a line of $\PP^3$ as
+$a_0x_2+b_0x_3-x_0=a_1x_2+b_1x_3-x_1=0$, substitutes into the Fermat cubic and gets
+$a_0^3+a_1^3=-1$, $b_0^3+b_1^3=-1$, $a_0^2b_0+a_1^2b_1=0$, $a_0b_0^2+a_1b_1^2=0$; the case $a_0=0$
+gives $b_1=0$ and $b_0^3=a_1^3=-1$, and the three coordinate pairings give the $27$ lines
+$x_0+\omega^kx_3=x_1+\omega^jx_2=0$, $x_0+\omega^kx_2=x_3+\omega^jx_1=0$ and
+$x_0+\omega^kx_1=x_3+\omega^jx_2=0$, which are the families of the card's step
+`twenty-seven-lines`. Its reduction to $a_0=0$ needs the vanishing-coefficient argument it omits: if
+all four coefficients are nonzero the last two equations give $a_0/b_0=a_1/b_1$, and then the third
+gives $b_0^3+b_1^3=0$, against the second. It says nothing of the incidence relations or of the
+automorphism group, so it covers part (a) of the exercise and neither (b) nor (c). The nearest
+published attempt at the exercise remains the NTU homework's, printed pp. 18--19, whose defects the
+card records.
+
+**Repair.** `P-AGH549MINGENUS` in `bcdac34e28` and `P-AGH5416FERMATCUBIC` in `0f73adfa69`; this
+record in the COMPLAINTS commit that carries it. No statement, step or hypothesis of either card
+changes: the two remarks gain the adjudication of a fourth retained set, and nothing moves from
+proved to open or the reverse.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.4.9 at printed pp. 110--111 and 5.4.16 at
+printed p. 112, rendered as page images from
+`tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages are the printed pages; and
+Hartshorne's V.4.9 and V.4.16 on printed pp. 408--409. Not read: Yang's entries on the cards not
+named here, the printed books themselves, and no search of the literature beyond these files.
