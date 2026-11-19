@@ -314,7 +314,7 @@ The five factors do the following.
 
 
 ::: {.pf-step #thm3}
-Theorem 3: on a Farey arc $A_{p/q}$ about $p/q$, the model integral equals $c_{p/q}\dfrac{1}{2\pi\sqrt2}\dfrac{\dd}{\dd n}\Bigl[\dfrac{e^{(K/q)\lambda}}{\lambda}\Bigr](1+O(n^{-1/2}))$ with $c_{p/q}=\sqrt q\,e^{-2\pi inp/q}\omega_{p/q}$.
+Theorem 3: on a Farey arc $A_{p/q}$ about $p/q$, the model integral equals $c_{p/q}\dfrac{1}{2\pi\sqrt2}\dfrac{d}{dn}\Bigl[\dfrac{e^{(K/q)\lambda}}{\lambda}\Bigr](1+O(n^{-1/2}))$ with $c_{p/q}=\sqrt q\,e^{-2\pi inp/q}\omega_{p/q}$.
 
 ::: pf-proof
 **Theorem 3.** Fix $n\ge2$, put $\lambda=(n-\frac1{24})^{1/2}$, $\mu_q=(2\sqrt6\,q\lambda)^{-1}$ and
@@ -344,7 +344,7 @@ $1+O(e^{-c'n^{1/2}})$, and the discarded piece is smaller than any power of $n$.
 
 
 ::: {.pf-step #s1}
-Step 1 (the $\dd/\dd n$ device of §4).
+Step 1 (the $d/dn$ device of §4).
 
 ::: pf-proof
 Using $d/dn\,e^{-2\pi in\xi}=-2\pi i\,\xi e^{-2\pi in\xi}$ and
