@@ -98,6 +98,8 @@ Cohomology:
 
 7. Serre duality: the dualizing sheaf and duality for a projective scheme, invertibility of the dualizing sheaf for a local complete intersection, the isomorphism between the dualizing sheaf and the canonical sheaf for a nonsingular projective variety.
 
+References: [@Har77, Chapters II.1--II.8 and III.1--III.7].
+
 ## Schemes, cohomology and formal schemes
 
 Schemes:
