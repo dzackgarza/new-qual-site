@@ -14,6 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1, item 8 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The evaluation is correct. The integrand is e^{pi z} over (z - 1)^2, the
+    numerator is entire, and 1 lies inside the circle of radius 2, so the
+    differentiated Cauchy formula applies with the derivative evaluated at 1;
+    the derivative of e^{pi z} is pi e^{pi z}, giving 2 pi i times pi e^pi, that
+    is 2 pi^2 i e^pi. The orientation assumed is the standard positive one, which
+    the card states. Nothing was changed.
 ---
 
 ::: {.problem}
