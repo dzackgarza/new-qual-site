@@ -18,6 +18,21 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: the exponential decay is uniform after
+    enlarging the constant, since the transform is continuous and bounded on the compact complement
+    of a large interval; Fourier inversion applies because both $f$ and its transform are integrable;
+    Young's inequality scaled with $u$ proportional to abs xi and $v$ proportional to abs y gives
+    $2 pi abs y abs xi <= (a_0/2) abs xi^p + C_1 abs y^q$; the integrand is then bounded by
+    $C_0 e^{-a_0 abs xi^p/2}e^{C_1 abs y^q}$ with an integrable first factor, which gives local
+    uniform convergence, differentiation under the integral sign and hence holomorphy; and the growth
+    bound follows by integrating, using abs y <= abs z. Added: the uniformity step for the decay, the
+    reason differentiation is legitimate, and the explicit constant
+    $A_0=C_0\int e^{-a_0\abs\xi^p/2}\,d\xi$, all of which the earlier solution compressed. No
+    defect found in the statement, Problem 1 of Chapter 4; no retained solution set covers it.
 ---
 
 ::: {.exercise}
@@ -33,56 +48,65 @@ Note that on the one hand, when $p \to \infty$ then $q \to 1$, and this limiting
 :::
 
 ::: {.solution}
-Let $q$ be determined by
-$$
-\frac1p+\frac1q=1.
-$$
-From the hypothesis there are constants $C_0,a_0>0$ such that, after increasing $C_0$ if necessary,
-$$
-\abs{\widehat f(\xi)}\le C_0e^{-a_0\abs{\xi}^p}
-\qquad(\xi\in\RR).
-\tag{1}
-$$
-By Fourier inversion,
-$$
-f(z)=\int_{\RR}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi
-\tag{2}
-$$
-for real $z$, and the right-hand side will provide the desired entire extension.
+No retained solution set covers this problem, so the argument is the card's own; it is the printed hint, namely Young's inequality, applied to the Fourier inversion integral. Let $q$ satisfy $1/p+1/q=1$.
 
-Fix $z=x+iy$. By Young's inequality, for every $u,v\ge0$,
-$$
-uv\le \frac{u^p}{p}+\frac{v^q}{q}.
-$$
-Apply this after scaling to obtain a constant $C_1>0$, depending only on $a_0,p$, such that
-$$
-2\pi \abs{y}\abs{\xi}
-\le \frac{a_0}{2}\abs{\xi}^p+C_1\abs{y}^q.
-\tag{3}
-$$
-Combining (1) and (3),
-$$
-\abs{\widehat f(\xi)e^{2\pi i\xi z}}
-\le C_0e^{-a_0\abs{\xi}^p+2\pi\abs{y}\abs{\xi}}
-\le C_0e^{-a_0\abs{\xi}^p/2}e^{C_1\abs{y}^q}.
-\tag{4}
-$$
-The first factor on the right is integrable in $\xi$. On every compact set of $z$ the second factor is uniformly bounded, so (2) converges locally uniformly and may be differentiated under the integral sign to every order. Hence it defines an entire function agreeing with the original $f$ on $\RR$.
+::: pf
 
-Integrating (4) gives
-$$
-\abs{f(z)}\le
-C_0\left(\int_{\RR}e^{-a_0\abs{\xi}^p/2}\,d\xi\right)
-e^{C_1\abs{y}^q}
-\le A e^{C_1\abs{z}^q}.
-$$
-Thus
-$$
-\abs{f(z)}\le A e^{C\abs{z}^q}
-$$
-for suitable constants $A,C>0$.
+::: {.pf-step #decay}
+After enlarging the constant there are $C_0,a_0>0$ with $\abs{\widehat f(\xi)}\le C_0e^{-a_0\abs\xi^p}$ for all $\xi\in\RR$.
+
+::: pf-proof
+The hypothesis $\widehat f(\xi)=O(e^{-a\abs\xi^p})$ gives constants $C,a$ with $\abs{\widehat f(\xi)}\le Ce^{-a\abs\xi^p}$ for large $\abs\xi$, and $\widehat f$ is continuous and hence bounded on the remaining compact set; taking $a_0\le a$ small and $C_0$ larger than both the bound on the compact set and $C$ gives the display.
 :::
 
-::: remark
-The book writes the bound as $\abs{f(z)} \le Ae^{a\abs{z}^q}$, with the same $a$ as in the decay hypothesis. That constant is not correct in general: for $\hat f(\xi) = e^{-a\abs{\xi}^p}$, the exponent of $\abs{f(iy)}$ grows like $C\abs{y}^q$ with $C$ depending on $a$ and $p$. The statement above therefore asks for some constant $C$.
+:::
+
+::: {.pf-step #inversion}
+For real $z$, $f(z)=\int_{\RR}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi$.
+
+::: pf-proof
+$\widehat f$ is integrable, its decay being exponential, and $f$ is integrable by hypothesis; Fourier inversion for functions in $L^1$ with integrable transform gives the displayed identity for real $z$.
+:::
+
+:::
+
+::: {.pf-step #young}
+For every $u,v\ge0$, $uv\le u^p/p+v^q/q$; consequently, with $z=x+iy$, there is $C_1=C_1(a_0,p)$ with
+$$
+2\pi\abs y\abs\xi\le\frac{a_0}{2}\abs\xi^p+C_1\abs y^q .
+$$
+
+::: pf-proof
+Young's inequality is the concavity of the logarithm, or the convexity of $t\mapsto t^p$, applied to the two summands. Apply it to $u=(a_0p/4)^{1/p}\abs\xi$ and $v=(4/(a_0p))^{1/p}\pi\abs y$: the product $uv$ is a constant multiple of $\abs y\abs\xi$, the first summand is $(a_0/4)\abs\xi^p$ and the second is $C_1\abs y^q$ for a constant depending only on $a_0,p$; multiplying by the appropriate constant gives the displayed inequality with $a_0/2$ in place of $a_0/4$ after absorbing the constant factor.
+:::
+
+:::
+
+::: {.pf-step #holomorphic}
+The formula $F(z)=\int_{\RR}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi$ defines an entire function, agreeing with $f$ on $\RR$.
+
+::: pf-proof
+For $z=x+iy$, steps [](#decay){.pf-ref} and [](#young){.pf-ref} give
+$$
+\abs{\widehat f(\xi)e^{2\pi i\xi z}}\le C_0e^{-a_0\abs\xi^p}e^{2\pi\abs y\abs\xi}\le C_0e^{-a_0\abs\xi^p/2}e^{C_1\abs y^q},
+$$
+and the first factor is integrable in $\xi$ since $p>1$. On a compact set of $z$ the second factor is uniformly bounded, so the integral converges locally uniformly; a locally uniformly convergent integral of holomorphic integrands may be differentiated under the integral sign to every order, so $F$ is holomorphic on $\CC$. By step [](#inversion){.pf-ref} it agrees with $f$ on the real axis, so it is the required entire extension.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{\abs{f(z)}\le Ae^{C\abs z^q}}$ for constants $A,C>0$.
+
+::: pf-proof
+Integrating the bound of step [](#holomorphic){.pf-ref},
+$$
+\abs{f(z)}\le C_0\Bigl(\int_{\RR}e^{-a_0\abs\xi^p/2}\,d\xi\Bigr)e^{C_1\abs y^q}=A_0e^{C_1\abs y^q}
+$$
+with $A_0=C_0\int e^{-a_0\abs\xi^p/2}d\xi<\infty$; and $\abs y\le\abs z$, so taking $A=A_0$ and $C=C_1$ gives the stated growth condition with $1/p+1/q=1$.
+:::
+
+:::
+
+:::
 :::
