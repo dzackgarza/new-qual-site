@@ -45,6 +45,16 @@ audit:
     since both X and the point are CW complexes. The examples now have their reason: the inclusion
     Y -> Sigma Y factors through the cone CY, which is contractible. Statement unchanged; the card
     says the argument is its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this exercise, and that is false: Sam's set,
+    retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves it at §4.1 Exercise 11 on
+    printed p. 17, and Proudfoot's sheet 6, retained as `tmp/sources/uoregon-
+    proudfoot-634-hw6.md`, solves it on p. 1. The rendered sentence now cites both and says what
+    the card adds. Found by screening the residue's absence claims against the solution sets
+    inventoried in `wiki/topology/resources/solutions.md`; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -53,7 +63,7 @@ An example is $S^\infty$, or more generally the infinite suspension $S^\infty X$
 :::
 
 ::: {.solution}
-A compact source maps into a finite subcomplex of the CW complex $X$, hence into some $X_i$; the nullhomotopy of $X_i\hookrightarrow X_{i+1}$ then kills any map out of $S^n$, so all homotopy groups of $X$ vanish, and Whitehead's theorem makes $X$ contractible. The argument is this card's own: no retained solution set covers this exercise.
+A compact source maps into a finite subcomplex of the CW complex $X$, hence into some $X_i$; the nullhomotopy of $X_i\hookrightarrow X_{i+1}$ then kills any map out of $S^n$, so all homotopy groups of $X$ vanish, and Whitehead's theorem makes $X$ contractible. The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 11**, printed p. 17 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, and **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, homework 6, §4.1 Exercise 11**, p. 1 (`tmp/sources/uoregon-proudfoot-634-hw6.md`), both running Whitehead's theorem through cellular approximation and the finiteness of the cells a compact image meets. The path-connectedness step and the reasons for the two examples are the card's.
 
 ::: pf
 
