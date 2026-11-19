@@ -26,6 +26,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.3, printed pp. 90,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.3, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the reduction: $\phi(P)+\phi(-P)=P_0$ because $\phi$ fixes the origin, the coordinatewise identity that kills $b$ and $c$, the constant $d$ from the behaviour at $(x,\infty)$, and $\deg a=1$ from the degree comparison $3\deg a=3$ in $d^2x(x-1)(x-\lambda)=a(a-1)(a-\lambda)$.
+    Not checked: Yang's Solutions outside printed pp. 90; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.3 at printed pp. 90; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -502,4 +522,8 @@ of Corollary IV.4.7.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.3, printed p. 90, proves the first sentence of the exercise and stops there. Writing $R=k[x,y]/(y^2-x(x-1)(x-\lambda))$ for the functions regular away from $P_0$ and $K(X)=\operatorname{Frac}R$, it puts an automorphism fixing $P_0$ in the form $\phi(x,y)=(a(x)+b(x)y,\,c(x)+d(x)y)$ with $a,b,c,d\in k(x)$, which is the general shape of an element of $K(X)$; the involution $(x,y)\mapsto(x,-y)$ of $P\mapsto-P$ gives $\phi(P)+\phi(-P)=P_0$, because an automorphism fixing the origin is an automorphism of the group law, and subtracting the two displayed images forces $b=c=0$; fixing $P_0=(x,\infty)$ then forces $d$ to be a nonzero constant; and $(a(x),dy)\in X$ compared with $y^2=x(x-1)(x-\lambda)$ matches two cubics in $x$, forcing $\deg a=1$ and so $a(x)=ax+b$. That is exactly the exercise's first sentence, and it is what the card's steps [](#s2){.pf-ref} and [](#s3){.pf-ref} establish. **The four-case analysis is not in the entry**: it contains no description of these automorphisms for $j\ne0,1728$, for $j=1728$, for $j=0$ away from characteristic $3$, or for characteristic $3$ with $j=0=1728$, and nothing determining the group, which the card's steps [](#s5){.pf-ref} to [](#s8){.pf-ref} give as $\ZZ/2$, $\ZZ/4$, $\ZZ/6$ and $(\ZZ/3)\rtimes(\ZZ/4)$.
 :::
