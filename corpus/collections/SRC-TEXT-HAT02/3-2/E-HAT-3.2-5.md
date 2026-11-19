@@ -61,6 +61,14 @@ audit:
     for q even, H^0 = R, H^odd = ker 2 = {0,k}, H^even>0 = R/2R, 2 alpha = 2 beta = 0, k^2 = k mod 2
     so alpha^2 = k beta, and phi_{2j}, k phi_{2j+1} are nonzero cocycles not coboundaries. The
     statement and the printed hint, including the coefficient map Z_2k -> Z_2, are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. Two
+    sentences refer to the section of the book as `\S3.2`, a section sign written as a TeX
+    command outside a math span, which the HTML writer drops; both now read the character
+    `§3.2`, as the corpus does elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -69,7 +77,7 @@ Show the ring $H^*(\RP^\infty; \ZZ_{2k})$ is isomorphic to $\ZZ_{2k}[\alpha, \be
 :::
 
 ::: {.solution}
-Put $R=\ZZ_{2k}$. The additive structure comes from the cellular cochain complex of the standard CW structure on $\RP^\infty$, which has one cell in each dimension; the product comes from a cellular approximation of the diagonal, which is needed because the diagonal is not itself cellular -- Hatcher says as much at the end of \S3.2 and warns that such an approximation involves a choice, so the card's earlier attribution of this computation to the proof of Theorem 3.19, which is the geometric argument of printed p.~220, was wrong and is replaced here. The relation $\alpha\smile\alpha=k\beta$ is then re-derived a second way, from Example 3.9, and the two derivations agree.
+Put $R=\ZZ_{2k}$. The additive structure comes from the cellular cochain complex of the standard CW structure on $\RP^\infty$, which has one cell in each dimension; the product comes from a cellular approximation of the diagonal, which is needed because the diagonal is not itself cellular -- Hatcher says as much at the end of §3.2 and warns that such an approximation involves a choice, so the card's earlier attribution of this computation to the proof of Theorem 3.19, which is the geometric argument of printed p.~220, was wrong and is replaced here. The relation $\alpha\smile\alpha=k\beta$ is then re-derived a second way, from Example 3.9, and the two derivations agree.
 
 ::: pf
 
@@ -130,7 +138,7 @@ By steps [](#diagonal){.pf-ref} and [](#classes){.pf-ref}, $\alpha\smile\alpha=[
 
 
 ::: {.pf-step #example39}
-The same relation follows from Example 3.9 of \S3.2, whose inputs are the printed ones.
+The same relation follows from Example 3.9 of §3.2, whose inputs are the printed ones.
 
 ::: pf-proof
 Let $Y=S^1\cup_{2k}e^2$. In Example 3.9 Hatcher computes, for $X=S^1\cup_me^2$ with coefficients $\ZZ_m$ and $\alpha$ the generator of $H^1$, that $\alpha^2=k\beta$ when $m=2k$; so for $Y$ with coefficients $\ZZ_{2k}$ one has $\alpha_Y\smile\alpha_Y=k\beta_Y$ with $\beta_Y$ generating $H^2(Y;R)$. The degree-$k$ map $S^1\to S^1$ composed with the attaching map of $Y$, of degree $2k$, is the degree-$2k$ map $S^1\to S^1$, so it extends over the $2$-cell of $\RP^2=S^1\cup_2e^2$ and defines $f\colon\RP^2\to Y$. The map $f^*$ is a ring homomorphism; because $f$ is of degree $k$ on the $1$-cell it sends $\alpha_Y$ to $\alpha$, and because $f$ maps the $2$-cell homeomorphically it sends $\beta_Y$ to $\beta$. Finally $H^q(\RP^2;R)\to H^q(\RP^\infty;R)$ is an isomorphism for $q=1,2$ by cellular cohomology and step [](#cohomology){.pf-ref}. Hence $\alpha\smile\alpha=f^*(\alpha_Y\smile\alpha_Y)=k\,f^*(\beta_Y)=k\beta$, agreeing with step [](#square){.pf-ref}.
