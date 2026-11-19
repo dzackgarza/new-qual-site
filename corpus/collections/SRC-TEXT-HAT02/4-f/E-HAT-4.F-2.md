@@ -21,6 +21,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.F, printed p. 455, with the Freudenthal suspension
+    theorem (Corollary 4.24, p. 360) and the Puppe sequence of p. 398. Correct. For $X=S^q$ the
+    suspension map is $\pi_{q+r}(\Sigma^rY)\to\pi_{q+r+1}(\Sigma^{r+1}Y)$, and $\Sigma^rY$ is
+    $(r-1)$-connected, so $q+r<2(r-1)-1$ holds for large $r$ and Freudenthal makes it an
+    isomorphism; a finite wedge follows by the same argument applied to its summands. For the
+    inductive step, $X=A\cup_\varphi e^q$ gives the cofibration $S^{q-1}\to A\to X\to S^q$, and the
+    Puppe sequence of the suspended cofibration mapped into $\Sigma^rY$ is exact, with the two
+    consecutive sequences connected by the suspension maps; the terms are groups once $r$ is large
+    because the target is then highly connected, so the five lemma applies and gives the
+    isomorphism for $X$. Finitely many cells end the induction. Nothing changed. Not claimed: a
+    published solution, and no certificate.
 ---
 
 ::: {.problem}
