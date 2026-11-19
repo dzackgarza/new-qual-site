@@ -46,6 +46,8 @@ With the notation of the preceding problem, show that $\operatorname{Aut}(\bigve
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4, printed p. 426; the argument below is the card's own.
+
 ::: pf
 
 ::: pf-step
