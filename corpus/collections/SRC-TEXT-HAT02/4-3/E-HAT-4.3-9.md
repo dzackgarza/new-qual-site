@@ -46,6 +46,19 @@ audit:
     fibres of a bundle over the connected edge are all homeomorphic (AT.txt 20067-20068). Not checked:
     nothing outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 9 of §4.3, printed p. 419, with the preceding exercise's
+    criterion. Correct, and the repair of 2026-11-01 is confirmed: the fibres of $p(x,y)=x$ on
+    $\Delta=\{(x,y):0\le y\le\lambda(x)\}$ are $\{x\}\times[0,\lambda(x)]$, the fibre over the
+    projection $s$ of the third vertex is a nondegenerate interval, and for an endpoint
+    $x_0\ne s$ the fibre is the single base vertex, so the fibres are not all homeomorphic while
+    the base is connected. The fibration half is right because $r(x,y)=(x,\min\{y,\lambda(x)\})$
+    is a fibre-preserving retraction of the trivial bundle $I\times[0,M]\to I$ onto $\Delta$ over
+    $I$, and a retract of a fibration over the same base is a fibration. Nothing changed.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
