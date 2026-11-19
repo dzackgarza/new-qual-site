@@ -56,6 +56,14 @@ audit:
     homotopy is already cellular on the subcomplex; representability of H^n(-;Z) by K(Z,n) is
     cited from section 4.3. Statement and printed hint unchanged; the card says the argument is
     its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    cites the representability theorem by section as `\S4.3`, a section sign written as a TeX
+    command outside a math span, which the HTML writer drops; it now reads the character `§4.3`,
+    as the corpus does elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -111,7 +119,7 @@ Surjective by step [](#surj){.pf-ref} and injective by step [](#inj){.pf-ref}; a
 $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$ for a CW complex $X$ and $n\ge1$.
 
 ::: pf-proof
-Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of \S4.3 (printed p.~393).
+Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of §4.3 (printed p.~393).
 :::
 
 :::
