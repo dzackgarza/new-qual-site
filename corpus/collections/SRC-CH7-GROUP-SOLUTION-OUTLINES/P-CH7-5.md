@@ -23,6 +23,16 @@ audit:
       prose is now a numbered step with its justification; nothing in the mathematics was changed.
       The statement is unchanged, and the card says the argument is its own because no retained
       solution set in the checkout covers this chapter of Gallian.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-19
+    note: >-
+      The card said the retained solution material in the checkout covers Chapter 8 and the book
+      and not this chapter's solutions, and that is false: the collection's own outline is
+      retained as `assets/attachments/Ch7Sltns.pdf`, and its entry "# 5" on PDF p. 1 is this
+      exercise, with the coset criterion and the same three answers. The rendered sentence now
+      cites it and says what the card adds. Found by screening the residue's absence claims
+      against the retained attachments; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -36,7 +46,7 @@ Let $H = \{0, \pm 3, \pm 6, \pm 9, \ldots\}$ be as in Exercise 3. Decide whether
 :::
 
 ::: {.solution}
-Write the additive group $\ZZ$ and $H=3\ZZ=\{0,\pm3,\pm6,\pm9,\dots\}$. Two cosets coincide exactly when the difference of their representatives lies in $H$, and by Lagrange's theorem the cosets of $H$ are the three residue classes modulo $3$. Each pair below is decided by that criterion alone. The argument is this card's own: the retained solution material in the checkout covers Chapter 8 and the book itself, not this chapter's solutions.
+Write the additive group $\ZZ$ and $H=3\ZZ=\{0,\pm3,\pm6,\pm9,\dots\}$. Two cosets coincide exactly when the difference of their representatives lies in $H$, and by Lagrange's theorem the cosets of $H$ are the three residue classes modulo $3$. Each pair below is decided by that criterion alone. The collection retains its solution outline as `assets/attachments/Ch7Sltns.pdf`, whose entry "# 5" on PDF p. 1 is this exercise: it states the criterion $a+H=b+H$ exactly when $b-a\in H$ and applies it to the three pairs, answering yes, yes and no. The card proves that criterion in additive notation and decides each pair with it; the wording is its own.
 
 ::: pf
 
