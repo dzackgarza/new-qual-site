@@ -29,7 +29,7 @@ $$
 \int_\gamma \sum_{k \geq -M} c_k z^k = \sum_{k \geq -M} \int_\gamma c_k z^k = 2\pi i c_{-1}
 .$$
 
-The coefficient $c_{-1}$ of the Laurent series at a singularity is its residue, and the residue theorem sums these contributions over the singularities enclosed by a curve, weighted by winding numbers.
+The coefficient $c_{-1}$ of the Laurent series at a singularity is the [[D-C3JIU|residue]], and the residue theorem sums these contributions over the singularities enclosed by a curve, weighted by [[D-PJ7JM|winding numbers]].
 Write $\Res_{z=p}f$ for $\Res_{z=p}(f\dz)$.
 
 [[T-HRPNO]]

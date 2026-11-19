@@ -13,7 +13,7 @@ topics:
 [[D-IA5FS]]
 
 ::: {.fact}
-Every zero of a meromorphic $f$ is a simple pole of $\logd f$ whose residue is its multiplicity, and every pole of order $m$ is a simple pole of $\logd f$ whose residue is $-m$.
+Every zero of a [[D-7DFVJ|meromorphic]] $f$ is a simple pole of $\logd f$ whose [[D-C3JIU|residue]] is its multiplicity, and every pole of order $m$ is a simple pole of $\logd f$ whose residue is $-m$.
 So $\logd f$ has no other singularities, and the residue theorem applied to it counts zeros minus poles.
 
 :::

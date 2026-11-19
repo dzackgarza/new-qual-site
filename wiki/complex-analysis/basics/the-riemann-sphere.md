@@ -9,7 +9,7 @@ topics:
 
 # The Riemann sphere
 
-The plane plus one point at infinity is a compact surface on which every [[D-7DFVJ|meromorphic function]] becomes a holomorphic map to the sphere, and on which the [[D-FRVBV|Möbius transformations]] act as its biholomorphisms.
+The plane plus one point at infinity is a compact surface on which every [[D-7DFVJ|meromorphic function]] becomes a [[D-E7A5W|holomorphic]] map to the sphere, and on which the [[D-FRVBV|Möbius transformations]] act as its biholomorphisms.
 
 [[D-3QTVR]]
 
