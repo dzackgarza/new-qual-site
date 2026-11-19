@@ -14,6 +14,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read step by step. One step asserted the finiteness of the zeros and poles inside $\gamma$
+    with "compactness prevents infinite accumulation of isolated points", which does not by
+    itself exclude accumulation at a point of $\gamma$; the argument is now written out, and it
+    uses the hypothesis that $\gamma$ passes through no zero or pole, which puts the compact set
+    $\operatorname{Int}(\gamma)\cup\gamma$ in $\Omega$, together with the identity theorem in the
+    form that the zeros of a meromorphic function that is not identically zero are isolated. The
+    residues $m$ at a zero and $-k$ at a pole, the deformed contour and the orientation of the
+    small circles were re-derived and are unchanged. Not checked in this pass: a published
+    solution of the exercise, none being retained for this collection.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -174,7 +187,7 @@ The interior $\text{Int}(\gamma)$ is bounded, and its closure $\text{Int}(\gamma
 Since zeros and poles of a non-trivial meromorphic function are isolated, $\text{Int}(\gamma)$ contains only finitely many zeros $a_1, \dots, a_p$ (with multiplicities $m_1, \dots, m_p$) and finitely many poles $b_1, \dots, b_q$ (with orders $k_1, \dots, k_q$).
 
 ::: pf-proof
-*Proof:* Compactness prevents infinite accumulation of isolated points.
+*Proof:* An infinite subset of the bounded set $\text{Int}(\gamma)$ has a limit point in the compact set $\overline{\text{Int}(\gamma)} = \text{Int}(\gamma) \cup \gamma$, and $\gamma$ passes through no zero or pole of $f$ while $\gamma \subseteq \Omega$, so that whole set lies in the domain of $f$. At a point $p \in \Omega$ the zeros of a meromorphic function that is not identically zero are isolated, and so are its poles: on a disc around $p$ write $f = g/h$ with $g, h$ holomorphic and $h \not\equiv 0$; the zeros of $f$ are zeros of $g$ and its poles are zeros of $h$, and a holomorphic function that does not vanish identically has isolated zeros. So a sequence of distinct zeros, or of distinct poles, cannot converge to a point of $\Omega$; neither set has a limit point in $\overline{\text{Int}(\gamma)}$, and each is finite.
 :::
 
 :::
