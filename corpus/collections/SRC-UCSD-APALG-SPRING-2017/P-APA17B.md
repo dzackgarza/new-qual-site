@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    2 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the spectral theorem, the invariance of the eigenspaces of A under B, and the
+    spectral theorem on each; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering
+    and the QED. Not checked: no retained solution set exists for this paper to compare the argument
+    with, and no other card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -32,7 +44,7 @@ If $AB = BA$, show that there exists an orthogonal matrix $Q \in \RR^{n \times n
 
 ::: {.solution}
 
-No published solution was located for this examination problem; the argument is the card's own, and it is the standard one: the spectral theorem for $A$, invariance of its eigenspaces under $B$ from the commutation, and the spectral theorem again on each eigenspace.
+No published solution was located for this examination problem, which is Problem 2 printed on p. 2 of the retained paper `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf` (the Qualifying Exam in Applied Algebra of May 30, 2017); the argument is the card's own, and it is the standard one: the spectral theorem for $A$, invariance of its eigenspaces under $B$ from the commutation, and the spectral theorem again on each eigenspace.
 
 The statement was checked against the Spring 2017 applied-algebra examination collection holding this card. Throughout, $A,B\in\RR^{n\times n}$ are real symmetric, $\langle\cdot,\cdot\rangle$ is the Euclidean inner product on $\RR^{n}$, $A^{\mathsf{T}}=A$ and $B^{\mathsf{T}}=B$, and for an eigenvalue $\lambda$ of $A$ the eigenspace is $E_{\lambda}\coloneqq\ker(A-\lambda I)$.
 
