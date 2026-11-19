@@ -20,6 +20,21 @@ audit:
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 19 of §4.3, printed p. 420, with the homotopy fibre of a
+    fibration. Correct. The action $(e,\gamma)\cdot\lambda=(e,\gamma\cdot\lambda)$ is a right
+    action of $\Omega B$ on $F_p$ preserving the first coordinate, so $f\cdot u$ and $f$ have the
+    same image in $\langle X,E\rangle$; conversely, from a based homotopy $H$ between the $E$-parts,
+    the path $\eta_{x,s}(t)=pH(x,(1-t)s)$ joins $pH(x,s)$ to $pf_E(x)$, the formula
+    $K(x,s)=(H(x,s),\eta_{x,s}\cdot\alpha_x)$ is a homotopy in $F_p$ from $f$ to
+    $(g_E,\eta_{x,1}\alpha_x)$, and $\lambda(x)=\bar\beta_x\cdot\eta_{x,1}\cdot\alpha_x$ is a loop
+    at $b_0$ with $g\cdot\lambda\simeq f$ because $\beta_x\bar\beta_x$ contracts continuously in
+    $x$. The passage from $F$ to $F_p$ is the usual homotopy equivalence over $E$ for a fibration.
+    Nothing changed. The earlier audit event of 2026-11-02 was a batch summary and named no page.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
