@@ -37,6 +37,28 @@ audit:
     H_m = 0, and Whitehead applies since X and a point are CW complexes. Not checked: Hatcher's proof
     of Theorem 4.32 was not re-read, only its statement and hypothesis.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §4.1, which is on printed p. 359 and not p. 358 — the
+    section's Exercises 1--11 are on p. 358 and 12--22 on p. 359, checked at PDF page 368 of
+    `tmp/sources/hatcher-2002-algebraic-topology.pdf`, whose folio is 359 — and against the published
+    solution of the exercise, Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to
+    Homework #6, Problem 12, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`. The card's
+    own Hurewicz argument was checked in the event of 2026-11-02 and is unchanged. Proudfoot's route is
+    now transcribed on the card with two corrections that the transcribed text needs. (1) His citation
+    "Corollary 4.16" is the statement printed as **Proposition 4.15 on printed p. 353** of the book
+    held here — for an $n$-connected CW pair $(X,A)$ there is $(Z,A)\simeq(X,A)$ rel $A$ with all cells
+    of $Z-A$ of dimension greater than $n$ — which with $A$ a $0$-cell gives his $Z$; the errata's
+    renumbering table moves the earlier 4.16 to 4.15, and the book calls it a proposition. (2) His
+    sentence "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" requires $X$
+    to be $n$-dimensional, which is the exercise's hypothesis and is missing from his restatement of
+    it: a cellular map sends $X_n$ to $Z_n$, and $X=X_n$ only then. With both supplied the argument
+    closes. Checked also: cellular approximation (Theorem 4.8) is available for maps of CW complexes,
+    and a nullhomotopic homotopy equivalence has contractible source and target. Not claimed: that
+    the printed set states the dimension hypothesis.
+
 ---
 
 ::: {.problem}
@@ -86,6 +108,12 @@ Steps [](#hurewicz){.pf-ref} and [](#homology){.pf-ref} contradict each other un
 $$
 \boxed{X\text{ is contractible}.}
 $$
+*A second, published route.* Andrew Proudfoot, *Math 634: Algebraic Topology I*, Partial Solutions to Homework #6, Problem 12, printed p. 1 of `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, argues from the cell structure instead of from Hurewicz:
+
+> Let $X$ be an $n$-connected CW complex. Applying Corollary 4.16 when $A$ is a single $0$-cell, we see that there exists a CW complex $Z$ which is homotopy equivalent to $X$ and has the property that $Z$ has one $0$-cell and no $k$-cells for $1\leq k\leq n$. Let $f:X\to Z$ be a homotopy equivalence. By cellular approximation, we may assume that the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point! Hence $f$ is a nullhomotopic homotopy equivalence, which implies that $X$ and $Z$ are contractible.
+
+Two points of the printed argument need attention before it is used. (1) The statement it cites is **Proposition 4.15, printed p. 353** of the book held here: if $(X,A)$ is an $n$-connected CW pair then there is a CW pair $(Z,A)\simeq(X,A)$ rel $A$ with all cells of $Z-A$ of dimension greater than $n$. With $A=\{x_0\}$ this is Proudfoot's $Z$; his "Corollary 4.16" is that statement in the earlier numbering, which the book's errata renumbers to 4.15, and the book calls it a proposition. (2) The step "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" uses that $X$ is $n$-dimensional, which the exercise's hypothesis supplies and Proudfoot's sentence does not: a cellular map carries $X_n$ into $Z_n$, and $X=X_n$ only under that hypothesis. With it restored the argument is complete — $f$ is homotopic to a cellular map with image the single $0$-cell, hence nullhomotopic, and a nullhomotopic homotopy equivalence has contractible source and target.
+
 :::
 
 :::
