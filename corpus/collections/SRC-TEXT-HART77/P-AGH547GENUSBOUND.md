@@ -291,6 +291,62 @@ audit:
     rendered page, and no printing other than the text version beside the
     retained PDF. The degree 4 case is unchanged and still rests on condition
     (c) of Exercise V.4.8 as P-AGH548IRREDCLASSES now proves it.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The degree 4 attainment is replaced by a shorter proof that does not leave
+    this card: H + E_6 = pi^*(3L) - E_1 - ... - E_5 is the pullback of the
+    class of Corollary 4.7 of the book with r = 5, printed p. 405, which that
+    corollary proves very ample on the blowup of the plane at five points;
+    H + E_6 meets E_6 in 0, so its sections are the pullbacks of the sections
+    of that class, and a general member of |H + E_6| is isomorphic to a general
+    member of the very ample system, hence irreducible and nonsingular by
+    II.8.18, printed p. 179, with III.7.9.1, printed p. 245. The numbers were
+    checked from Proposition 4.8 of the book: (H+E_6)^2 = 9-5 = 4,
+    (H+E_6).K = -9+5 = -4, so p_a = 1, which is the bound at d = 4. The class
+    H + F_56 of the earlier numbering, its nonnegativity on the 27 lines and
+    the route through condition (c) of Exercise V.4.8 are kept as an
+    alternative attaining the same bound, so nothing proved is withdrawn. Read
+    for this pass: Hartshorne, Corollary V.4.7 with its proof, printed pp.
+    405-406, Proposition 4.8, printed pp. 401-402, and II.8.18 with III.7.9.1
+    at the pages recorded in the event above. Not checked: the rendered page,
+    and no printing other than the text version beside the retained PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Second published proof of the bound, located in a retained set the earlier
+    passes did not name. Read Yang Pi-Yeh, Hartshorne Solutions (9 June 2019),
+    Solution 5.4.7, printed pp. 109-110, rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page (the folios 109 and 110 stand at the foot of those pages). Checked
+    against the book: the exercise of Hartshorne, V.4.7, printed p. 407, read
+    again on the PDF page 422, which carries folio 407, asks for the two bounds
+    by the residue of d modulo 3 and for achievement by an irreducible
+    nonsingular curve for every d > 0, and the source proves the first of these
+    in both residues. Recomputed: the identity substituting a = (d + sum b_i)/3
+    into p_a = (1/2)(a-1)(a-2) - (1/2)sum b_i^2 + (1/2)sum b_i; the step
+    -(1/2)sum b_i^2 <= -(1/12)(sum b_i)^2 from 6 sum b_i^2 >= (sum b_i)^2; the
+    two completed-square bounds; the integrality of (1/6)(d-1)(d-2) in the
+    residues 1 and 2 modulo 3; and, in each of the three classes the source
+    lists, the degree 3a - sum b_i and the genus, which equal d and the bound
+    of that residue. At d = 4 the d = 3k + 1 class with k = 1 is
+    4l - (e_1+...+e_4) - 2(e_5+e_6) = H + F_56, the class of step
+    nonsingular-members. Not checked: Yang's Solutions outside printed pp.
+    109-111, and the printed book itself, only the retained copy.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now carries Yang Pi-Yeh's Solution 5.4.7 at printed pp. 109-110
+    as a second proof of the bound, with its two completed-square inequalities,
+    its three attaining classes and its one gap: the source says of those
+    classes only that they achieve the bound, so the exercise's request for an
+    irreducible nonsingular member is not proved there, and the remark says the
+    card's own step is what supplies it. The statement, the steps and the
+    attainment argument are unchanged, and no part of the proof was moved from
+    proved to open or the reverse.
 ---
 
 ::: {.problem}
@@ -481,20 +537,22 @@ the vanishing of III.7.8 and the exact sequence of $qD$ with $q$ large. So these
 degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
-[](#small-degrees){.pf-ref}. The class of degree $4$ is $H+F_{56}$, and
+[](#small-degrees){.pf-ref}. The class of degree $4$ is $H+E_6=\pi^*(3L)-E_1-\cdots-E_5$, the pullback of
+the class $\mathfrak d'$ of Corollary 4.7 of the book, printed p. 405, with $r=5$, which that corollary
+proves very ample and which embeds the blowup of $\PP^2$ at five points in $\PP^4$; since
+$H+E_6$ meets $E_6$ in $0$, its sections are the pullbacks of the sections of $\mathfrak d'$, so a
+general member of $\linearsystem{H+E_6}$ is the pullback of a general member of $\linearsystem{\mathfrak d'}$ and is isomorphic to
+it. And
 $$
-(H+F_{56})\cdot E_i=b_i>0,
-\qquad
-(H+F_{56})\cdot F_{ij}=4-b_i-b_j,
-\qquad
-(H+F_{56})\cdot G_i=b_i>0
+(H+E_6)^2=9-5=4,\qquad (H+E_6)\cdot K_X=-9+5=-4,\qquad p_a(H+E_6)=\tfrac12(4-4)+1=1,
 $$
-for the $27$ lines, so it meets every line nonnegatively, with $0$ at $F_{56}$ alone, and its
-self-intersection is $4>0$: it satisfies condition (c) of [[P-AGH548IRREDCLASSES|Exercise V.4.8]], and
-the sufficiency of that condition is proved on that card in every characteristic: Dolgachev's Theorem
-8.2.19, Harbourne's Corollary II.3, Theorem III.1(a) and Lemma II.6(b), and the incidence count of
-Vakil's Bertini theorem, printed p. 375, give a nonsingular member of the class over any algebraically
-closed field. Hence $H+F_{56}$ contains an irreducible nonsingular member.
+which is the bound at $d=4$. Bertini's theorem II.8.18 of the book, printed p. 179, and the
+connectedness of III.7.9.1, printed p. 245, give that a general member of $\linearsystem{\mathfrak d'}$, hence of
+$\linearsystem{H+E_6}$, is an irreducible nonsingular curve, in every characteristic.
+The class $H+F_{56}$ of the
+earlier numbering also has degree $4$, square $4$ and $p_a=1$, and meets every one of the $27$ lines
+nonnegatively; it attains the same bound, and the sufficiency of condition (c) of
+[[P-AGH548IRREDCLASSES|Exercise V.4.8]] gives an irreducible nonsingular member in it too.
 :::
 
 :::
@@ -529,6 +587,29 @@ sharpening in the residues $1,2$ modulo $3$ by integrality, and the classes atta
 writes $2p_a(D)=D^2+D\cdot K$ for $2p_a(D)-2=D\cdot(D+K)$; it interchanges the two multiplicities in
 its $d\equiv2$ family, so that family as printed has degree $d+2$; and it leaves $d=4$ open, stating
 its conclusion for every $d>0$ "possibly except $d=4$".
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.7, printed pp. 109--110, proves the
+same bound in a second arrangement of the same two inputs, for arbitrary real $b_i$. With
+$a=\frac{1}{3}(d+\sum b_i)$ it writes
+$$
+p_a(D)=\frac{1}{2}(a-1)(a-2)-\frac{1}{2}\sum b_i^2+\frac{1}{2}\sum b_i
+=\frac{1}{18}(d-3+\sum b_i)(d-6+\sum b_i)-\frac{1}{2}\sum b_i^2+\frac{1}{2}\sum b_i,
+$$
+then $-\frac{1}{2}\sum b_i^2\le-\frac{1}{12}\bigl(\sum b_i\bigr)^2$, which is Cauchy--Schwarz
+$6\sum b_i^2\ge\bigl(\sum b_i\bigr)^2$, and
+$$
+p_a(D)\le\frac{1}{6}d^2-\frac{1}{2}d+1-\Bigl(\frac{1}{6}\sum b_i-\frac{1}{3}d\Bigr)^2
+\le\frac{1}{6}(d-1)(d-2)+\frac{2}{3},
+$$
+sharpened to $\frac{1}{6}(d-1)(d-2)$ in the residues $1,2$ modulo $3$, where $\frac{1}{6}(d-1)(d-2)$
+is an integer and so is $p_a(D)$. Its attaining classes are $d\ell-\frac{d}{3}(e_1+\cdots+e_6)$ for
+$d\equiv0$, $d\ell-k(e_1+\cdots+e_4)-(k+1)(e_5+e_6)$ for $d=3k+1$ and
+$d\ell-k(e_1+e_2)-(k+1)(e_3+\cdots+e_6)$ for $d=3k+2$; at $d=4$ the second is $H+F_{56}$, the class
+of step [](#nonsingular-members){.pf-ref}, and its $d\equiv2$ class has degree $d$ where the NTU
+solution's printed one has degree $d+2$, so the correction recorded above is confirmed by a second
+source. Of those classes the source says only that they "achieve the bound", computing $p_a$; it says
+nothing of an irreducible nonsingular member of one, so the exercise's second request is not proved
+there and remains the card's own step.
 
 For the curves in those classes: Corollary 4.13(a),(b) of Hartshorne, printed p. 406, for the ample
 ones, and, at $d=4$, condition (c) of Exercise V.4.8, whose sufficiency is proved on
