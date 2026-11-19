@@ -49,20 +49,21 @@ $$
 ## Derivatives in coordinates
 
 ::: {.fact}
-For a holomorphic $f$,
+For a holomorphic $f = u+iv$,
 $$
-f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd u x + i \dd v x
-.$$
+f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd{u}{x}+i\dd{v}{x}.
+$$
 
 :::
 
 ::: {.fact title="Differentials"}
 $$
 \begin{aligned}
-dz &= dx + i~dy \\
-d\bar z &= dx - i~dy \\
-f_z &= f_x = f_y / i
-\end{aligned}.$$
+\dz &= \dx + i\,\dy, \\
+\dzbar &= \dx - i\,\dy, \\
+f_z &= f_x = f_y/i \quad\text{for } f \text{ holomorphic}.
+\end{aligned}
+$$
 
 :::
 

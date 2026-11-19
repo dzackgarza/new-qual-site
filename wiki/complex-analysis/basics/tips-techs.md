@@ -44,21 +44,15 @@ title: Techniques
 The algebraic identities for $z\bar z$, $\Re z$, $\Im z$, the exponential forms of $\cos$, $\sin$, $\cosh$, $\sinh$, and the zeros and periods of the hyperbolic functions are on [[complex-analysis/basics/complex-arithmetic#Identities|Complex arithmetic]].
 
 ::: {.fact}
-$$
-\begin{aligned}
-dz &= dx + i\,dy, \\
-d\bar z &= dx - i\,dy, \\
-f_z &= f_x = f_y / i \quad \text{for } f \text{ holomorphic},
-\end{aligned}
-$$
-and for $\ell\in\ZZ$,
+For $\ell\in\ZZ$,
 $$
 \int_{0}^{2 \pi} e^{i \ell x} \dx =
 \begin{cases}
 2 \pi & \ell=0, \\
-0 & \ell\neq 0.
+0 & \ell\neq 0,
 \end{cases}
 $$
+and the differentials $\dz = \dx+i\,\dy$ and $\dzbar = \dx-i\,\dy$, together with $f_z = f_x = f_y/i$ for holomorphic $f$, are on [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations#Derivatives in coordinates|the Cauchy--Riemann equations]].
 
 :::
 
