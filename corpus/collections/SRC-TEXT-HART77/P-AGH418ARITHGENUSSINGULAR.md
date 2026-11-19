@@ -214,6 +214,27 @@ audit:
     named and of the compiled book, and the restored text against
     9a74181332^. Not checked: no tag was re-read against its statement in this
     pass, and no page was re-read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.8, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.8, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the exact sequence of structure sheaves, the vanishing of
+    H^1 of the skyscraper quotient, and the two consequences in part (b). Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.8 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -637,4 +658,6 @@ steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.8, printed pp. 208–209, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves (a) by the short exact sequence $0\to H^0(X,\sum_{P}\widetilde\OO_P/\OO_P)\to H^1(X,\OO_X)\to H^1(\tilde X,\OO_{\tilde X})\to0$ obtained from (III.4.1) and the flasqueness of the skyscraper summand, whence $h^1(X,\OO_X)=h^1(\tilde X,\OO_{\tilde X})+\sum_P\delta_P$ and so $p_a(X)=p_a(\tilde X)+\sum_P\delta_P$, and (b) by observing that $p_a=0$ forces $\delta_P=0$ for every $P$, making all local rings normal and hence regular in dimension one.
 For part (c), the invariance of $\delta_P$ under analytic isomorphism is the Stacks Project's, Chapter 33, Section 33.39, read in `tmp/sources/stacks-tags/0C3T.md` and `0C3W.md` (site built from stacks-project commit a04446e57ec1fbc252a871afcec7752fb2807b14, 28 July 2026): Definition 33.39.3 (tag 0C3T) with Lemma 33.39.6 (tag 0C3W), printed pp. 2899--2901 of the retained compiled book of version ed88ff78, shows that $\delta$ is unchanged by henselization, strict henselization and completion, hence depends only on the completed local ring, and Definition 33.39.7 (tag 0C1T) is the definition that attaches $\delta$ to the point $P$ through $\mathcal O_{X,P}$; step [](#s6){.pf-ref} transcribes it. The two values $\delta_P=1$ at an ordinary cusp and at a node (steps [](#s7){.pf-ref} and [](#s8){.pf-ref}) are computed here: $k[[t]]/k[[t^2,t^3]]\cong k\cdot t$ and $(k[[x]]\times k[[y]])/k[[x,y]]/(xy)\cong k$.
 
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.8, printed p. 84, takes (a) from the exact sequence $0\to\OO_X\to f_*\OO_{\widetilde X}\to\sum_P\widetilde\OO_P/\OO_P\to0$: both outer $H^0$ are $k$ for projective curves, the quotient is a sum of skyscrapers so its $H^1$ vanishes, and the long exact sequence gives $p_a(X)=p_a(\widetilde X)+\sum_P\delta_P$. Its (b): $p_a=0$ forces every $\delta_P=0$, so every local ring is normal and the curve nonsingular, and then $p_a=0$ means genus zero, so $X\cong\PP^1$ by (1.3.5). Its (c) reduces to a plane curve by projecting, and computes $\delta_P$ from the local equation at a node or cusp.
 :::
