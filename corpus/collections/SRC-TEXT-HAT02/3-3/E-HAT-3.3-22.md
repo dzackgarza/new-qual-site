@@ -119,6 +119,29 @@ audit:
     Under K contained in L and N<=M, the source's fixed side sets include C_{L,M} in C_{K,N}, with
     B symmetric, and the intersection inclusions make the resulting relative MV diagrams commute.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 22 of §3.3, printed p. 258, and
+    against the published solution transcribed, Stanford Math 215C Spring 2009, Solution Set 4,
+    Hatcher 3.3.22, printed pp. 1--2 of `tmp/sources/stanford-math215c-spring2009-solution4.pdf` —
+    the construction, the two deformation retractions and the relative Mayer--Vietoris sequence on
+    p. 1, and the cofinality of the products $K\times[-N,N]$ with the direct limit on p. 2, so the
+    page range is right. Checked in the card: $A\cup B=X\times\RR$ and $A\cap B=X\times(-1,1)$;
+    $C\cup D$ is the complement of $K\times I_N$ and $C\cap D=(X-K)\times(-1,1)$ because $N\geq1$
+    puts $(-1,1)$ inside $I_N$; $(A,C)\simeq(X,X)$ through the slice $\{N+1\}$, the straight-line
+    homotopy respecting $C$ since a point of $C$ over $K$ has $t>N$, with no lower component because
+    $t>-1$ and $N\geq1$; $(B,D)\simeq(X,X)$ through $\{-N-1\}$; $(A\cap B,C\cap D)\simeq(X,X-K)$ by
+    projection; and relative Mayer--Vietoris then gives
+    $H^n(X\times\RR,(X\times\RR)-(K\times I_N))\cong H^{n-1}(X,X-K)$, with the comparison made in
+    degree $n-1$ of the intersection and not in degree $n$. Checked the naturality: for $K\subset L$
+    and $N\leq M$ the inclusions run $C_{L,M}\subset C_{K,N}$ and $D_{L,M}\subset D_{K,N}$, with
+    $C_{L,M}\cap D_{L,M}=(X-L)\times(-1,1)\subset(X-K)\times(-1,1)$, all induced by the identity,
+    so relative Mayer--Vietoris is natural for the filtered limit. The cofinality of the products and
+    the direct limit give the isomorphism. No change to the mathematics. The one hypothesis the card
+    states and the source does not is $N\geq1$, which is what makes $(-1,1)\subset I_N$; the source
+    takes $N\in\RR$.
 ---
 
 ::: {.problem}
