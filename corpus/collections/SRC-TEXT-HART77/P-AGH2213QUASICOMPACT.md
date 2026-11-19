@@ -36,6 +36,7 @@ We say a scheme $X$ is quasi-compact if $\underlyingspace{X}$ is.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.13, printed p. 81. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.13, printed p. 15, treats the same four parts: noetherianity as the ascending chain condition on opens, quasi-compactness of $\Spec A$ by cutting an open cover to a finite one using $(f_\alpha)=1$, noetherianity of $\Spec A$ for noetherian $A$ by the ascending chain condition on radicals, and the ring $k[[x,x^{1/2},x^{1/3},\ldots]]$ whose spectrum is two points.
 
 ::: pf
 
