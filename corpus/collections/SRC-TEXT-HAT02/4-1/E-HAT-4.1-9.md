@@ -13,6 +13,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Full read-through of the card after this date's repairs, against Hatcher's printed pp. 343--345
+    and the exercise on printed p. 358. Re-read and accepted: part (a)'s chases at the five group
+    windows, the four surrounding maps recorded for each set-valued term, the two $\pi_1$-centred
+    windows of part (a) with the non-group step replaced by the exactness assertion at the centre's
+    target, Claims 1 and 2, and, in part (b), the three exactness arguments at $n=1$ with their
+    triple-homotopy checks, the example showing the sequence stops at $\pi_0(A,B,x_0)$, the four
+    set-valued windows' five-lemma, and the hypothesis paragraph with the example that makes the
+    clause necessary. The statement is the printed one with the errata's $i_*$, and part (b) is read
+    with part (a)'s "for all choices of $x_0$", which the exercise's "the five lemma" carries.
+    Structural change in this commit: the Hardie--Kamps comparison now follows the sentence that
+    summarises exactness instead of interrupting the three arguments that establish it. Not verified
+    here: the Lean certificate was not re-elaborated, its text having been read at the pinned commit
+    and matching what the remark says of it; and no published proof of the exercise was located.
 - event: source-checked
   by: claude
   date: 2026-11-19
@@ -665,7 +682,9 @@ $$
 - *At $\pi_1(X,A,x_0)$: $\operatorname{im}j_*=\ker\partial$.* A class in the image of $j_*$ is represented by a path $f$ in $X$ from a point $b\in B$ to $x_0$; its boundary is the class of $b$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$, which is the base class because the component of $b$ in $A$ meets $B$. Conversely, let $f$ be a path in $X$ from $a\in A$ to $x_0$ whose boundary is the base class, that is, the component of $a$ in $A$ meets $B$, and choose a path $\gamma$ in $A$ from a point $b\in B$ to $a$. Then $\gamma\cdot f$ is a path in $X$ from $B$ to $x_0$, and $\gamma\cdot f$ is homotopic to $f$ through paths from $A$ to $x_0$, the start point moving along $\gamma$ inside $A$; so $[f]=j_*[\gamma\cdot f]$. This is the tacking step of printed p. 344 at $n=1$, the restriction of $f$ to the face $I^0=\{0\}$ being the point $a$ that $\gamma$ carries into $B$.
 - *At $\pi_1(A,B,x_0)$: $\operatorname{im}\partial=\ker i_*$.* For the inclusion, let $F:(D^2,S^1,s_0)\to(X,A,x_0)$ represent a class in $\pi_2(X,A,x_0)$ and let $\gamma=\restrictionof{F}{S^1}$, a loop in $A$ at $x_0$ whose class in $\pi_1(A,B,x_0)$ is $\partial[F]$. Parametrizing $S^1$ by $z:[0,1]\to S^1$ with $z(0)=s_0$ and putting $G_u(s)=F((1-u)z(s)+u s_0)$, whose argument lies in the disk, gives $G_u(0)=G_u(1)=F(s_0)=x_0$, $G_0=\gamma$ and $G_1$ constant; so $\gamma$ is null-homotopic in $X$ through loops at $x_0$, which is a homotopy of maps $([0,1],\{0,1\},\{1\})\to(X,B,x_0)$, and $i_*\partial[F]=1$. Conversely, let $f:([0,1],\{0,1\},\{1\})\to(A,B,x_0)$ be a path in $A$ from $b\in B$ to $x_0$ whose class in $\pi_1(X,B,x_0)$ is trivial, through a homotopy $F:I^2\to X$ with $F(s,0)=f(s)$, $F(s,1)=x_0$, $F(0,u)\in B$ and $F(1,u)=x_0$. Read as a map of the disk, $F$ carries $\partial I^2$ into $A$ --- the bottom edge to $f$, the left edge to $B$, the top and right edges to $x_0$ --- and the corner $(1,0)$ to $x_0$, so it represents a class $\xi\in\pi_2(X,A,x_0)$, and $\partial\xi$ is the class of the loop $g^{-1}\cdot f$, where $g=F(0,\,\cdot\,)$ is a path in $B$. Since $g^{-1}$ lies in $B$, $[g^{-1}\cdot f]=[f]$ in $\pi_1(A,B,x_0)$, so $[f]=\partial\xi$. This is Hatcher's tacking of $g$ onto $f$, printed p. 345, at $n=1$.
 
-Hardie--Kamps derive the same sequence algebraically, from the three exact pair sequences, and record that the derivation gives exactness at every term but one, the term $\pi_1(X,B,x_0)$, "where exactness has to be proved separately" (printed pp. 15--16 of the paper cited in the remark). The reason sits in their hypotheses: their Theorem 2.1 assumes exactness of type (E3) or (E3*) --- a group-stage condition --- in the left-hand column, and at the degree-one terms that column has only pointed sets. The three arguments above are Hatcher's geometric ones and need no extra step at that term: at $n=1$ the compression criterion supplies the homotopy of triples that the algebraic derivation does not. Every term of the triple sequence is therefore exact in degree $1$ as well, at the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, and the extended sequence is exact at $\pi_1(X,A,x_0)$.
+Every term of the triple sequence is therefore exact in degree $1$ as well, at the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$, and the extended sequence is exact at $\pi_1(X,A,x_0)$.
+
+Hardie--Kamps derive the same sequence algebraically, from the three exact pair sequences, and record that the derivation gives exactness at every term but one, the term $\pi_1(X,B,x_0)$, "where exactness has to be proved separately" (printed pp. 15--16 of the paper cited in the remark). The reason sits in their hypotheses: their Theorem 2.1 assumes exactness of type (E3) or (E3*) --- a group-stage condition --- in the left-hand column, and at the degree-one terms that column has only pointed sets. The three arguments above are Hatcher's geometric ones and need no extra step at that term: at $n=1$ the compression criterion supplies the homotopy of triples that the algebraic derivation does not.
 
 It cannot in general be continued by $\pi_0(X,B,x_0)$. Take $X$ the disjoint union of a point $b_0$ and an interval, $x_0=b_0$, and $B=\{b_0,b_1\}$ with $b_1$ a point of the interval; let $A=\{b_0,b_1,a_1\}$ with $a_1\neq b_1$ a further point of the interval, so that $b_1$ and $a_1$ lie in different components of the subspace $A$ while lying in the same component of $X$. Then the class of $a_1$ in $\pi_0(A,B,x_0)=\pi_0(A,x_0)/i_*\pi_0(B,x_0)$ is not the distinguished element, because its component of $A$ does not meet $B$; but its image in $\pi_0(X,B,x_0)$ is distinguished, because every component of $X$ that meets $B$ is collapsed and $a_1$ lies in the component of $b_1$. On the other hand the class of $a_1$ is not in the image of $\partial:\pi_1(X,A,x_0)\to\pi_0(A,B,x_0)$, since a path in $X$ starting in $A$ and ending at $x_0=b_0$ stays in the component $\{b_0\}$ of $X$, so its starting point lies in the component $\{b_0\}$ of $A$, which is collapsed. Hence appending $\pi_0(X,B,x_0)$ would destroy exactness at $\pi_0(A,B,x_0)$.
 
