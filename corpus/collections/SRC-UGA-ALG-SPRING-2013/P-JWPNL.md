@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Spring_2013.docx`, converted with Pandoc: the item is Problem 4, and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -22,6 +31,7 @@ Define a *simple group*. Prove that a group of order 56 can not be simple.
 :::
 
 ::: {.solution}
+This is Problem 4 of the Spring 2013 algebra examination, retained in this repository as `assets/attachments/Algebra_Spring_2013.docx`; the single numbered list of the exam.
 
 ::: pf
 
