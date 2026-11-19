@@ -61,7 +61,8 @@ def main() -> int:
         start = body.find("::: {.solution}")
         if start < 0:
             continue
-        collection = path.relative_to(args.root).parts[0]
+        parts = path.relative_to(args.root).parts
+        collection = "/".join(parts[:2]) if parts[0] == "collections" and len(parts) > 2 else parts[0]
         cid = re.search(r"^id: (\S+)", head, re.M)
         name = cid.group(1) if cid else path.stem
         total[collection] += 1
