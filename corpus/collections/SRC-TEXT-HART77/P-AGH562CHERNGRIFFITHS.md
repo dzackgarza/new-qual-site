@@ -392,6 +392,32 @@ audit:
     session; the verdicts a second reader returned on them are recorded in
     COMPLAINTS.md as leads and are not a certification. Nothing else in the
     event above is withdrawn, and the repair it records stands.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The four equality-case steps this card still owed are read in this pass and
+    all four are correct, and one citation is supplied. Read and checked:
+    clifford-equality-canonical (Clifford, Theorem 5.4 printed p. 343, with
+    h^0(C,L) bounded above by d/2 + 1 = n + 1 and below by n + 1 from
+    hyperplane-restriction-sections, so equality holds; the case D = 0 is
+    impossible because deg L = 2n > 0; the hyperelliptic case would make
+    L = f^*O(n) and every section a pullback, hence not very ample, while
+    L = O_C(1) is the restriction of a projective embedding); the computation
+    in canonical-meets-hyperplane-zero that omega_X restricted to C is
+    omega_C (x) L^{-1} and so trivial, whence K_X.A = 0 because C ~ A; the
+    count in irregularity-zero (chi(O_X) = 2 - q from p_g = 1, chi(A) = n+2-q
+    by surface Riemann-Roch at K_X ~ 0 and A^2 = 2n, h^0(A) = chi(A) by
+    Kodaira vanishing since A = omega_X (x) A, against the n+2 sections the
+    embedding gives); and main-dichotomy, whose split on L special or not is
+    exhaustive and whose second alternative is K3 as Theorem 6.3 defines it.
+    The one change is the citation on canonical-meets-hyperplane-zero: "Adjunction
+    gives" now names Proposition II.8.20, printed p. 182, whose
+    codimension-one case is omega_Y = omega_X (x) L (x) O_Y. This is the same
+    statement repaired on P-AGH5210CANONSCROLL in this round. Not read in this
+    pass: the steps before clifford-equality-canonical were read earlier in
+    this round and are unchanged, and no source other than the book was opened
+    for the adjunction.
 ---
 
 ::: {.problem}
@@ -690,7 +716,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction gives
+Adjunction in its sheaf form, Proposition II.8.20, printed p. 182, gives
 $$
 \omega_X\restrict_C
 \cong
