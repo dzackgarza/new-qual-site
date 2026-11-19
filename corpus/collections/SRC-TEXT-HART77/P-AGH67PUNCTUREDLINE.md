@@ -437,6 +437,29 @@ audit:
     else on the card changes.
     Not checked in this pass: Kock's section 4 was not re-read beyond the display
     and the sentence naming the vectors, and no page was re-read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two repairs of the printed source and one page, from a read of the card in
+    this pass. (1) The problem block dropped the exercise's last clause: the
+    printed I.6.7, on printed p. 47 (PDF p. 62, folio read), ends "Is the
+    converse true? Cf. (Ex. 3.1)", and the card ended at the question. The
+    clause is restored, since the statement keeps the source's wording and tails
+    (QUAL-01). (2) The step's citation of Anders Kock, Abstract Projective
+    Lines (4 December 2009), gave the permutation laws as "(4)--(7) on printed
+    p. 4". Read on the PDF's folios, (4), (5) and (6) are on printed p. 4 and
+    (7) is on printed p. 5, where it stands alone above the page break; the
+    sentence now gives each its page. The mathematics of the step was read in
+    this pass and is unchanged: the invariance of the cross ratio under a
+    fractional linear transformation, the three normalisations [B,A,C,D] =
+    1/rho(D), [A,C,B,D] = 1-rho(D), [A,B,D,C] = rho(C)/lambda, the six values
+    as the orbit under nu -> 1/nu and nu -> 1-nu, and the choice of mu outside
+    that orbit with k infinite. Checked in this pass: the printed exercise at
+    printed p. 47 and Kock's printed pp. 4--5 on the PDF's folios. Not checked
+    in this pass: Kock's printed pp. 6 and 8--11, which the card also cites,
+    were not re-read, and the printed pages of Borcherds's, Egbert's and
+    Cutrone--Marshburn's sets were not opened.
 ---
 ::: {.problem}
 Let $P_1, \ldots, P_r, Q_1, \ldots, Q_s$ be distinct points of $\AA^1$.
@@ -445,7 +468,7 @@ $$
 \AA^1 \sm \theset{P_1, \ldots, P_r} \cong \AA^1 \sm \theset{Q_1, \ldots, Q_s},
 $$
 show that $r = s$.
-Is the converse true?
+Is the converse true? Cf. (I, Ex. 3.1).
 :::
 
 ::: {.solution}
@@ -603,7 +626,7 @@ $$
 \qquad
 [A,B,D,C]=\frac{\rho(C)}{\lambda}=\frac1\lambda
 $$
-where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $B,A,C$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $A,C,B$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $A,B,D$ to $\infty,0,1$. These are Kock's permutation laws (4)--(7) on printed p. 4, stated there for $\mu=(A,B;C,D)$:
+where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $B,A,C$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $A,C,B$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $A,B,D$ to $\infty,0,1$. These are Kock's permutation laws (4)--(6) on printed p. 4 and (7) on printed p. 5, stated there for $\mu=(A,B;C,D)$:
 $$
 (A,B;C,D)=(B,A;D,C)=(C,D;A,B)=(D,C;B,A),
 $$
