@@ -223,6 +223,24 @@ audit:
     page markers and its OCR garbles the displays. Not checked: whether part (c)
     holds in positive characteristic, which nothing read here states and which
     the statement does not claim.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The published-solution remark's sentence on Egbert said that his route
+    through "E stable implies every nonzero morphism E -> E is an isomorphism"
+    "fails for the endomorphism id + 0 of a decomposable bundle", which reads as
+    a defect of his argument. Read on 2026-11-19 in the retained extraction
+    tmp/sources/hartshorne-solutions-egbert.md at his entries 5.2.13 to 5.2.15,
+    which carry V.2.8(a)-(c) and name PDF p. 265: his (a) states "A decomposable
+    E is a direct sum of two invertible sheaves", proves the claim from the
+    slope inequalities by factoring a nonzero endomorphism through its image,
+    and applies it to id_G + 0 on a decomposition. The claim is true of a stable
+    bundle and uses no rank hypothesis, so nothing in his argument fails for
+    id + 0; what restricts his (a) is the sentence with which he states it. The
+    remark now says that his statement of (a) is the rank-two case and that his
+    argument as written uses nothing about the ranks, and it no longer imputes a
+    failure to the argument.
 ---
 
 ::: {.problem}
@@ -459,6 +477,6 @@ Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, prove
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), PDF p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves from the claim that a stable bundle has no nonzero non-invertible endomorphism of itself, which he derives from the slope inequalities and applies to $\id_{\mathcal G}\oplus0$ on a decomposition $\mathcal E\cong\mathcal G\oplus\mathcal F$; the claim and the argument use nothing about the ranks, but he states (a) with $\mathcal E$ a direct sum of two invertible sheaves, so what he records is the rank-two case. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow.
 
 :::
