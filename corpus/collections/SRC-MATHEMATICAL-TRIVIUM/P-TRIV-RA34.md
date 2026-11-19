@@ -19,6 +19,18 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the lost arrow in theta to 0 and the split sin t against Real Analysis Problem 34 on page 10 of the source PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. From x = (alpha/t) cos t and y = (alpha/t) sin t
+    one has r = sqrt(x^2+y^2) = alpha/t = alpha/theta and tan theta = y/x = tan t, so the polar
+    equation is r = alpha/theta, which is the card's box. As theta -> 0^+ the radius tends to
+    infinity, x = alpha cos theta/theta -> +infinity and y = alpha sin theta/theta -> alpha, all
+    three of which the card states; I checked the y limit by the standard sin theta/theta -> 1. The
+    schematic description (inward-winding, crossing each ray infinitely often as theta grows) is
+    consistent with r decreasing to 0. Not claimed: any statement about the curve as a set, e.g.
+    whether it approaches the limiting point (0, alpha) along the x-axis.
 ---
 
 ::: {.problem}
