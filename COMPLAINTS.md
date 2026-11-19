@@ -8711,3 +8711,21 @@ queue: it already carries a Yang citation from an earlier batch.
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; the positive-definiteness argument in `E-HK-81-11` uses the continuity fact without proof, as the book's hint does.
+
+## 2026-11-19: every next-item pointer in the working notes is closed — measured against the tree and the issues, not assumed
+
+**Object and need.** Sessions have been briefed to "continue with the next items" from a list of next-items. This turn checked each pointer and found every one closed, so a session following them spends its budget re-deriving finished work.
+
+**Observed evidence.**
+
+- `#174`, the wiki algebra chapter: complete. All 74 pages read; the second reviewer's findings and the zero-dimensional Gorenstein socle closed at `6d7c2800fc`.
+- `#103`, Hungerford: **67 of 67** cards under `corpus/collections/SRC-TEXT-HUN74` carry a `source-checked` or `solution-written` event. `P-E4WZ4` and `P-VXWNJ`, recorded as statements-confirmed-with-proofs-unread, carry read commits from 2026-11-06 naming II.2.12(b) and II.2.1.
+- `SRC-WESLEYAN-ANALYSIS-2003-2007`: **87** cards, not the 32 the note gives; 86 carry an audit event dated 2026-11-01 or later and all 86 have a `pf` block. `P-WESRA07-I4`, named as next, has a three-step proof and a `source-checked` event of 2026-11-06.
+- `P-CH13-13`, named as next in the Gallian list: complete, and its collection index already carries the corrected locator "Exercise 11".
+- `SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES`: 25 of 25 revisited since 2026-11-01, all with `pf` blocks.
+- Ledger `#83`'s maintenance comment of 2026-11-17 orders `#150` then `#151`, `#152`, `#153`: all four are closed, on 2026-11-17 and 2026-11-18.
+- `#123`'s residue (`2.B-3`, `2.B-4`, `2.B-5`, `2.B-7`, `2.C-1`, `2.C-6`, `3.A-4`): `E-HAT-2.B-3` carries the owner's acceptance rule of 2026-11-18 applied paragraph by paragraph -- each input named at its printed page (Alexander duality, Theorem 3.44, printed p. 254; Proposition 2B.1(b), printed p. 169; reduced Mayer--Vietoris, printed pp. 149--150; Invariance of Domain, Theorem 2B.3, printed p. 172), the rest marked the card's own -- under which "not claimed: a published solution of Exercise 2.B.3" is accepted. Two searches for a published solution of `2.C-1` this day returned nothing usable, so the residue is not a place a session can expect a fix.
+
+**Impact and owner.** The pointers live in session notes, not in the tree; the tree and the issues are authoritative, and `itree next` is the intended reader of the live order -- it is not installed on this VM, so a session cannot ask the tree what is next. Until a session is given an issue number, the honest state is that the named work is finished.
+
+**Uncertainty.** Audit events are evidence that a read was *recorded*, not proof that the mathematics was read; the owner's rule says a stamp does not close a card. What is measured here is the recorded state, not the quality of each read.
