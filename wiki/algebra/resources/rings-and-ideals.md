@@ -13,18 +13,14 @@ order: 50
 
 ## Problems
 
-- [Ring-theory qualifying-exam problems](attachments/Ring_Theory_Qual_Problems.pdf)
+- [[SRC-KENT-STATE-RING-THEORY-QUAL-2017|Ring-theory qualifying-exam problems]].
 
-- MIT ring theory: [problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), [combined problem file](https://www.mit.edu/~fengt/RingProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
-
-- MIT commutative algebra: [problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), [combined problem file](https://www.mit.edu/~fengt/CAlgProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
-
-- Additional MIT qual problems: Fall 2016 A6; Spring 2015 M5.
+- The ring and commutative-algebra problems of the compiled preliminary examinations are listed, in source order with their exam locations, in [[SRC-ART-ALG-2010-2015-PRELIMS]] and [[SRC-ART-ALG-2003-2009-PRELIMS]].
 
 ## Solutions
 
-- [Solution outlines for chapter 12 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch12Sltns.pdf)
+- [[SRC-CH12-RING-SOLUTION-OUTLINES|Solution outlines for chapter 12 of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 13 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch13Sltns.pdf)
+- [[SRC-CH13-RING-SOLUTION-OUTLINES|Solution outlines for chapter 13 of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 14 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch14Sltns.pdf)
+- [[SRC-CH14-IDEAL-SOLUTION-OUTLINES|Solution outlines for chapter 14 of Gallian, *Contemporary Abstract Algebra*]]
