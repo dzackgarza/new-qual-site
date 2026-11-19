@@ -39,6 +39,22 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 15 (p.230). Rechecked the multiplicativity from Theorem 3.15 p.216 over a field, and each series against the ring computations: S^n gives 1+t^n; RP^n gives 1+t+...+t^n for char F = 2 by Theorem 3.19 p.220 and 1 or 1+t^n according to the parity of n otherwise; RP^inf gives 1/(1-t) or 1; CP^n and CP^inf give 1+t^2+...+t^{2n} and 1/(1-t^2) by Example 3.12 p.213; the two spaces of Exercise 12 give 1+t^2/(1-t); CP^inf/CP^1 gives the even tail; and the two spaces of Exercise 14 give the stated series. Not covered: the series for the spaces of Exercise 14 are reported from that card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 15 of §3.2, printed p. 230, with Theorem 3.15 (printed p. 216),
+    Theorem 3.19 (p. 220) and Example 3.12 (p. 213). Correct, and every series checked:
+    $p(X\times Y)=p(X)p(Y)$ by Künneth over a field; $S^n$ gives $1+t^n$; $\RP^n$ gives
+    $1+t+\cdots+t^n$ in characteristic $2$ and $1$ or $1+t^n$ according to the parity of $n$
+    otherwise; $\RP^\infty$ gives $(1-t)^{-1}$ or $1$; $\CP^n$ and $\CP^\infty$ give
+    $1+t^2+\cdots+t^{2n}$ and $(1-t^2)^{-1}$; the two spaces of Exercise 12 give $1+t^2/(1-t)$,
+    since $R[u,v]/(v^2)$ has one class in degree $0$ and one in every degree $\ge2$;
+    $\CP^\infty/\CP^1$ gives $1+t^4/(1-t^2)$; and the two pushouts of Exercise 14 give
+    $(1+t^{2n+1})/(1-t^2)$ in characteristic $2$ and $(1-t^{2n+2})/(1-t^2)$ otherwise. The final
+    closed form was checked by algebra: $1+t^4+\cdots+t^{4n}+t^{4n+2}/(1-t^2)=(1+t^{4n+2})/(1-t^4)$.
+    Nothing changed. Not claimed: a certificate, and the series for the Exercise 14 spaces rest on
+    that card's ring computation.
 ---
 
 ::: {.problem}
