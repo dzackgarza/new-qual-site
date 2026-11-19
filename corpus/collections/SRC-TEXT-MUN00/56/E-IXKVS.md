@@ -37,6 +37,24 @@ audit:
     for the hint's polynomial g with |w| <= 1, which is the substitution w = 1/z. The
     argument is the card's own, following the book's hint; no retained solution set covers
     this exercise. The printed statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two corrections and one structural repair on 2026-11-19. The rendered
+    preamble said "The argument is the card's own, following the book's hint; no
+    retained solution set covers this exercise", which is false, since the event
+    of 2026-11-11 cites dbFin's Section 56 Problem 1 solution and compares it
+    with the card's estimate. The page carried no citation; the exercise is
+    Munkres, Topology (2000), Section 56, Exercise 1, printed p. 356 (PDF p. 371,
+    printed page = PDF page - 15), and the preamble now cites dbFin's solution
+    and that page. The last step only announced that the earlier steps had
+    answered the question, which STYLE-08 forbids: it is dropped, the step for
+    the hint's polynomial now precedes the conclusion, and the conclusion is the
+    QED step. No statement or argument changes: the division by z^n at a root of
+    modulus at least 1, the bound 1 <= S < 1, and the equivalent statement for g
+    on the closed disc are the ones the card had.
+
 ---
 
 ::: {.exercise}
@@ -53,7 +71,9 @@ Show that if $\abs{a_{n-1}} + \cdots + \abs{a_1} + \abs{a_0} < 1$, then all the 
 :::
 
 ::: {.solution}
-The argument is the card's own, following the book's hint; no retained solution set covers this exercise, whose statement is Munkres §56 (The Fundamental Theorem of Algebra), with $B^{2}$ the open unit ball of the plane identified with $\CC$.
+The estimate is that of the published solution of dbFin, "Section 56: Problem 1 Solution", which divides out the zero roots and shows that $g(w)=1+a_{n-1}w+\cdots+a_0w^n$ has no zero with $\abs w\le1$; here the same estimate is made directly, dividing the equation by $z^n$ at a root of modulus at least $1$. The exercise is Munkres, *Topology* (2000), Section 56, Exercise 1, printed p. 356, and $g$ is the polynomial its hint names.
+
+Let $p(z)=z^n+a_{n-1}z^{n-1}+\cdots+a_1z+a_0$ and $S=\abs{a_{n-1}}+\cdots+\abs{a_0}<1$.
 
 ::: pf
 
@@ -82,15 +102,6 @@ Since $\abs{z}\ge1$ we have $\abs{z}^{-k}\le1$ for each $k\ge1$, so the right si
 
 :::
 
-::: {.pf-step #roots}
-No zero of $p$ satisfies $\abs{z}\ge1$; that is, every root of the equation lies in the open unit ball.
-
-::: pf-proof
-Steps [](#setup){.pf-ref} and [](#bound){.pf-ref} exclude every $z$ with $p(z)=0$ and $\abs{z}\ge1$, so each root $z$ satisfies $\abs{z}<1$, which is the interior of the unit ball.
-:::
-
-:::
-
 ::: {.pf-step #hint}
 The polynomial $g(w)=1+a_{n-1}w+a_{n-2}w^{2}+\dots+a_{0}w^{n}$ of the hint has no zero with $\abs{w}\le1$.
 
@@ -104,14 +115,16 @@ which is impossible; so $g$ vanishes nowhere on the closed unit disk. This is th
 
 :::
 
-::: {.pf-step}
-All roots of the equation lie in the interior of the unit ball.
+::: {.pf-step #roots}
+No zero of $p$ satisfies $\abs{z}\ge1$; that is, every root of the equation lies in the open unit ball.
 
 ::: pf-proof
-Step [](#roots){.pf-ref} is the assertion, and step [](#hint){.pf-ref} gives the equivalent statement the hint suggests; the two differ only by the substitution $w=1/z$, which interchanges $\abs{z}\ge1$ with $\abs{w}\le1$, $w\ne0$.
+Steps [](#setup){.pf-ref} and [](#bound){.pf-ref} exclude every $z$ with $p(z)=0$ and $\abs{z}\ge1$, so each root $z$ satisfies $\abs{z}<1$, which is the interior of the unit ball.
 :::
 
 :::
 
+
 :::
+
 :::
