@@ -13,7 +13,9 @@ topics:
 
 ## Computing the genus
 
-- **Hilbert polynomial.** A curve $C\subseteq\PP^n$ of degree $d$ has Hilbert polynomial $P_C(m)=dm+1-p_a$.
+[[D-L6ERW]]
+
+- **Hilbert polynomial.** A curve $C\subseteq\PP^n$ of degree $d$ has Hilbert polynomial $P_C(m)=dm+1-p_a$, since the degree of the polynomial is $\dim C=1$, its leading coefficient is $\deg C=d$, and its constant term is $1-p_a$ ([[D-L6ERW]]).
 
 - **Maps to a known curve.** A finite separable morphism $f\colon X\to Y$ of smooth projective curves satisfies Riemann--Hurwitz.
 
