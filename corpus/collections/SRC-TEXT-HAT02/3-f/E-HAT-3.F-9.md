@@ -62,6 +62,8 @@ Use this to show:
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 9, printed p. 320; the argument below is the card's own.
+
 Consider the two short exact sequences
 $$
 0\to{}_pA\to A\xrightarrow{p}pA\to0,
