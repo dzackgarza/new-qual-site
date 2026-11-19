@@ -5164,3 +5164,17 @@ Some of the forty show a second phenomenon, which is a card defect in its own ri
 **Method notes for whoever works a residue next.** The residue of an id is the segment after the **last** hyphen, so `E-HAT-4.2-1` has suffix `1` and residue 1 while `E-HAT-4.2-29` does not. `qualc.authoring check` accepts a card path as well as an id. `tmp/lam.sh` takes a **file path** and its step numbering is the quickest check that a `pf` block is well formed. A new `audit:` event must be inserted **inside the audit list**: in a card whose frontmatter carries `review:` after the audit block, inserting before the closing `---` produces invalid YAML, `qualc.authoring check` reports `expected <block end>, but found '-'`, and `tools/backlog.py` fails the same way, which is how this session found the mistake it had made. And the shared clone's branch tip and the remote both move within seconds: `git commit --no-verify -- <path>` stages one card without sweeping another session's index, and a push is best made from a branch pinned at the exact commit with `expected_remote` read immediately before it.
 
 **Uncertainty.** The residue scan matches on frontmatter `id` rather than through the queue's own loader, so a card whose id field disagreed with its filename would be counted once and listed under the id it states; 0 such disagreement was found, since every id in the scan resolved to its own basename. The two gate findings above are read from the gate's own output and their repairs are not attempted here.
+
+## 2026-11-19, second item: the 948-file authoring check of residue 1 finished, and the residue's cards are all valid
+
+**Object and need.** The entry above records that a sweep of `qualc.authoring check` over all 948 residue-1 files was started, and that its result would be recorded separately. This is that record: the sweep finished, so the residue's card validity is measured rather than assumed.
+
+**Observed evidence.** `./.venv/bin/python -m qualc.authoring check <file>`, one file at a time, over every `corpus/**/*.md` whose frontmatter `id` satisfies `int(id.rsplit("-", 1)[1], 36) % 16 == 1`, run at one process on 2026-11-19:
+
+```
+checked 948 files, failures=0
+```
+
+Together with the parse of the same 948 files recorded above — 91 non-problem cards, 857 problem cards, 857 with a solution section and all 857 with numbered steps, 0 parse failures — this says that every card of residue 1 parses, validates, and carries a structured proof.
+
+**What this does not cover.** `qualc.authoring check` reads one card's frontmatter, fence balance and raw-notation rules; it does not run the Pandoc filter, does not read mathematics, and does not run the corpus gate. The filter was run separately over the 87 cards this residue's session wrote (87 of 87 through `lamport_proof.lua` with the QED label present), not over the other 770 residue-1 cards, which were already structured before this session. The full `qualc check` gate was **killed twice at exit 137** on this machine under other sessions' memory pressure and remains CI's to run.
