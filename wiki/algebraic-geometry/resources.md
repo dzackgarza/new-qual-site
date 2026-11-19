@@ -135,7 +135,7 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Serre, *Géométrie algébrique et géométrie analytique* (GAGA)](http://www.numdam.org/item?id=AIF_1956__6__1_0), and an [English translation](http://www.math.mcmaster.ca/~arnoldt/Serre-GAGA.dvi)
 
-- [Serre, *Faisceaux algébriques cohérents* (FAC), English translation](http://students.mimuw.edu.pl/~pta/fac/fac.pdf)
+- Serre, *Faisceaux algébriques cohérents* [@Ser55]; English translation: [fac.pdf](http://students.mimuw.edu.pl/~pta/fac/fac.pdf).
 
 ### Lecture notes
 
