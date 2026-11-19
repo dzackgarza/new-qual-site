@@ -917,6 +917,24 @@ audit:
     translation is not carried out on this card, and no step uses it; what the
     card proves is the two ranges of s3 and s8. Nothing of the card's own text
     was changed in this pass.
+
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s9 is new and no part of the exercise needs it: the transverse base
+    change holds on $H^q(Y,\Omega_Y^q)$ for every $q\ge n-1-p$, hence on all of
+    the cohomology of a curve, for any nonsingular projective $X$. In that range
+    the test classes of the pairing computation of s8 lie in degree
+    $r=n-1-q-p\le0$: the space is zero, or it is $H^0(H,\OO_H)=k$ by Theorem
+    I.3.4(a), printed p. 18, where the one class is the unit, which lifts. The
+    projection formula $j^*i_*(i^*\beta)=j^*\beta\smile c_1(\OO_Y(H))$ of steps s3
+    and s7 then gives the identity for every test class, and s8's equivalence
+    turns that into the base change. This is a range s8 does not reach: for a
+    curve in a threefold with $h^{1,1}>1$ the complete-intersection classes do not
+    span $H^1(X,\Omega^1)$ and the detecting argument is silent, while s9 settles
+    the statement. No other step was touched, and what stays open is unchanged:
+    codimension $p\le n-2$ with $q<n-1-p$ in a general $X$.
 ---
 
 ::: {.problem}
@@ -1356,9 +1374,34 @@ For $p=n$ the class $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ lies in the one-dimensional 
 
 :::
 
+::: {.pf-step #s9}
+
+Let $i:H\hookrightarrow X$ be a nonsingular divisor of a nonsingular projective variety $X$ of dimension $n$, let $j:Y\hookrightarrow X$ be nonsingular of codimension $p$ with $Y\pitchfork H$, and put $Z=Y\cap H$. Then
+$$
+\boxed{i^*j_*=(j_H)_*\,i_Y^*}
+$$
+on $H^q(Y,\Omega_Y^q)$ for every $q\ge n-1-p$. In particular, for a curve $Y\subseteq X$, where $p=n-1$, it holds on all of $H^*(Y,\Omega^\bullet_Y)$.
+
+::: pf-proof
+
+By the computation at the end of the proof of step [](#s8){.pf-ref}, the identity for a class $a\in H^q(Y,\Omega_Y^q)$ is equivalent to the projection formula
+$$
+j^*i_*w=c_1(\OO_Y(H))\smile j^*w
+\qquad\text{for every } w\in H^{r}(H,\Omega_H^{r}),\quad r=n-1-q-p .
+$$
+For $q\ge n-1-p$ one has $r\le0$; the space is $0$ if $r<0$, and if $r=0$ it is $H^0(H,\OO_H)=k$ (Theorem I.3.4(a), printed p. 18), spanned by the unit. The unit is the restriction of the unit of $H^0(X,\OO_X)$, so the identity is needed only for $w=i^*\beta$ with $\beta\in H^0(X,\OO_X)$, where it is the projection formula of step [](#s3){.pf-ref} together with the class of a divisor,
+$$
+j^*i_*(i^*\beta)=j^*\bigl(\beta\smile i_*(1)\bigr)=j^*\beta\smile j^*\bigl(c_1(\OO_X(H))\bigr)=c_1(\OO_Y(H))\smile j^*\beta,
+$$
+the middle step by step [](#s7){.pf-ref}, $i_*(1)=c_1(\OO_X(H))$. Hence the projection formula holds for every $w$ in the range, and with it the identity.
+
+:::
+
+:::
+
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Step [](#s8){.pf-ref} adds two statements that no part of the exercise needs: $\eta(Y)$ and the Gysin class of the Koszul construction pair equally with the class of every smooth complete intersection of complementary dimension, hence are equal whenever those classes span, as they do for a subvariety of $\PP^n$ in every codimension, and the transverse base change $i^*j_*=(j_H)_*i_Y^*$ follows. Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
+Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Step [](#s8){.pf-ref} adds two statements that no part of the exercise needs: $\eta(Y)$ and the Gysin class of the Koszul construction pair equally with the class of every smooth complete intersection of complementary dimension, hence are equal whenever those classes span, as they do for a subvariety of $\PP^n$ in every codimension, and the transverse base change $i^*j_*=(j_H)_*i_Y^*$ follows; step [](#s9){.pf-ref} adds that the base change holds on the top two Hodge degrees of $Y$ for any $X$, and hence on all of it when $Y$ is a curve, where the test classes are in $H^0$ and lift. Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
 
 :::
 
