@@ -79,6 +79,10 @@ For an integral domain, the field of fractions is the localization at the nonzer
 
 [[D-JGYK4]]
 
+For a principal ideal domain the intersection is read off the factorization of a generator into prime powers.
+
+[[T-PRMDC]]
+
 ## Gorenstein rings
 
 [[D-DU4UQ]]
