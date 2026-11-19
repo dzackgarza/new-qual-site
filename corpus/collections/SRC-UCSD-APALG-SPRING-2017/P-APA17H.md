@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    8 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the order-four matrix A against the printed one, and the Molien computation and
+    generating set; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED.
+    Not checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -29,6 +41,9 @@ and let $G$ be the cyclic subgroup of $\mathrm{GL}_2(\CC)$ of order $4$ generate
 :::
 
 ::: {.solution}
+
+The problem is Problem 8 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 8 of the nine-page paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: Molien's formula giving the Hilbert series $\frac{1+t^4}{(1-t^2)(1-t^4)}$, and the generating set $x^2+y^2$, $x^2y^2$, $xy(x^2-y^2)$
+
 
 ::: pf
 
