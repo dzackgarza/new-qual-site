@@ -29,9 +29,19 @@ audit:
   date: 2026-10-31
   note: >-
     Review the centered proof: the reduced word $h a_1\cdots a_n$ versus $a_1\cdots a_n h$ separates $w$ from the other factor, and the conjugation reduction lands on an even-length word whose ends lie in different factors, so it has infinite order.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 62 carries the running head 53.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 1.2 of Hatcher, *Algebraic Topology* (2002), printed p. 53, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that the free product $G * H$ of nontrivial groups $G$ and $H$ has trivial center, and that the only elements of $G * H$ of finite order are the conjugates of finite-order elements of $G$ and $H$.
 :::
 
