@@ -56,8 +56,8 @@ audit:
 Let $X$ be a topological space, let $Y$ be a closed subset, and let $\mcf$ be a sheaf of abelian groups.
 Let $\Gamma_Y(X, \mcf)$ denote the group of sections of $\mcf$ with support in $Y$ (II, Ex. 1.20).
 
-(a) Show that $\Gamma_Y(X, \wait)$ is a left exact functor from $\Ab(X)$ to $\Ab$.
-We denote the right derived functors of $\Gamma_Y(X, \wait)$ by $H_Y^i(X, \wait)$.
+(a) Show that $\Gamma_Y(X, \mcf)$ is a left exact functor from $\Ab(X)$ to $\Ab$.
+We denote the right derived functors of $\Gamma_Y(X, \mcf)$ by $H_Y^i(X, \mcf)$.
 They are the cohomology groups of $X$ with supports in $Y$, and coefficients in a given sheaf.
 
 (b) If $0 \to \mcf' \to \mcf \to \mcf'' \to 0$ is an exact sequence of sheaves, with $\mcf'$ flasque, show that
@@ -248,6 +248,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, []
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 212 of Hartshorne, under its printed italic heading "Cohomology with Supports (Grothendieck [7])", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, parts (a)--(d) included.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter III §2, Exercise 3.2.3, PDF pp. 119--120, text version `tmp/sources/hartshorne-solutions-kim.md`: (a) is the kernel description of $\Gamma_Y$; (b) is the snake lemma applied to the square of sections on $X$ and on $X-Y$, whose rows are exact on the right because $\mcf'$ is flasque; (c) repeats the induction of Proposition 3.2.5, with quotients of injectives flasque; (d) is referred back to (b); (e) is the short exact sequence of complexes that (d) supplies; (f) uses that an injective resolution restricts to a flasque resolution of $\mcf\restrict_V$ and that $\Gamma_Y(V,\mci^\bullet\restrict_V)=\Gamma_Y(X,\mci^\bullet)$. Saglam--Chris treat the exercise at PDF p. 114 and Cutrone--Marshburn at PDF p. 101.
 
 The proof above replaces Kim's snake lemma in (b) by an explicit correction of a chosen lift: the restriction of the lift to $U$ comes from a section of $\mcf'$ over $U$, which flasqueness extends, and subtracting its image makes the lift supported in $Y$. It also isolates in (c) the lemma that a quotient of flasque sheaves by a flasque subsheaf is flasque, which Kim takes from an earlier exercise.
