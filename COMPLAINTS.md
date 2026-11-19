@@ -8032,3 +8032,19 @@ that carries it. No step, statement or hypothesis of any card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 4.1.6, 4.1.7 and 4.1.8 at printed p. 84,
 rendered as page images; the statements the three cards carry, not reopened against the book in this
 pass. Not read: the other fifty-nine entries, and the printed books themselves.
+
+## 2026-11-19, twelfth item: three more residue-5 cards read — §6.7, §7.1 and §7.4 — all correct, and a transcription error caught before it became a false report
+
+**Object.** Three residue-5 cards of `SRC-TEXT-HK71`, read against the retained text at their printed pages.
+
+**`E-HK-67-5`, §6.7 Exercise 5, printed p. 218 — correct.** The exercise refers to Example 3 of §6.2, whose matrix is $[[5,-6,-6],[-1,4,2],[3,-6,-4]]$ at printed p. 188; in sympy its characteristic polynomial is $(x-2)^2(x-1)$ with eigenspaces of dimensions 2 and 1, so it is diagonalizable with exactly the two values the Lagrange polynomials use. With $E_1=2I-A$ and $E_2=A-I$ the identities hold exactly: $E_1+E_2=I$, $E_1+2E_2=A$, $E_1E_2=0$, and also $E_1^2=E_1$, $E_2^2=E_2$. Commit `a7865ed900`.
+
+**`E-HK-71-5`, §7.1 Exercise 5, printed p. 231 — correct.** The independence argument is right: applying $N^{n-1-r}$ to a relation with least nonzero coefficient $c_r$ kills the terms with $j>r$ because the exponent is at least $n$, leaves $c_rN^{n-1}\alpha$, and the terms with $j<r$ vanish by choice of $r$. The matrix in $\{\alpha,N\alpha,\ldots,N^{n-1}\alpha\}$ is the subdiagonal shift, as the card displays: column $j$ is $e_{j+1}$ for $j<n-1$ and the last column is $0$. Commit `1418ecb615`.
+
+**`E-HK-74-5`, §7.4 Exercise 5, printed p. 260 — correct, all four parts.** Checked in sympy on the printed $8\times8$ matrix. (a) $\chi=x^4(x-1)^4$; $A^2(A-I)^2=0$ with $A(A-I)^2$ and $A^2(A-I)$ nonzero, so $m=x^2(x-1)^2$; $\operatorname{rank}A=\operatorname{rank}(A-I)=6$ gives two Jordan blocks at each eigenvalue, hence the invariant factors $x^2(x-1)^2$ twice. (b) $\ker A^2$ and $\ker(A-I)^2$ both have dimension 4 and the displayed spanning sets lie in them; $e_0=1-3x^2+2x^3$ satisfies $e_0\equiv1\bmod x^2$ and $e_0\equiv0\bmod(x-1)^2$, and $E_0=e_0(A)$ equals the displayed matrix exactly, kills the displayed $W_1$ vectors, and has rank and trace 4. (c) $J_2(0)\oplus J_2(0)\oplus J_2(1)\oplus J_2(1)$, agreeing with (a). (d) for $\alpha_1=e_2+e_5-e_8$ and $\alpha_2=e_4+e_6-e_8$ each four-vector chain has rank 4 and the eight vectors together have determinant $-1$, so $Z(\alpha_1;T)\oplus Z(\alpha_2;T)$ is direct and is $\RR^8$. Commit `4d2837d751`.
+
+**A near-miss worth recording.** The first run of the (d) check reported the eight vectors of rank **6**, which would have made the card's direct-sum claim false. The error was mine: I had typed $\alpha_1=e_2+e_6-e_8$ in the scratch check instead of the card's $e_2+e_5-e_8$. Re-running with the card's vectors gave determinant $-1$. The lesson is the one this file has recorded before in other forms: a computed contradiction is a claim about two texts, and the cheaper of the two to re-read is one's own transcription.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** The three cards' proofs were checked as written against the printed statements and, for the two computational ones, by independent computation; no published solution exists for any of them in the repository, and none was sought.
