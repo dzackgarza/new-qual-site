@@ -34,6 +34,8 @@ It is called the \dfn{sheaf of local morphisms of $\mcf$ into $\mcg$}, or "sheaf
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.15, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.15, printed p. 6, sketches the same two points in a paragraph — that the set of local morphisms is an abelian group under addition of values, and that it is a sheaf by the gluing axioms, uniqueness from the identity theorem for morphisms agreeing on a cover and existence by gluing the values.
+
 For an open set $U\subseteq X$, write
 $$
 \mch(U)
