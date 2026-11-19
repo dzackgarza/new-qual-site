@@ -49,7 +49,7 @@ f(z)=\frac{a_{-n}}{(z-z_0)^n}+\frac{a_{-n+1}}{(z-z_0)^{n-1}}+\cdots+\frac{a_{-1}
 $$
 with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3 (p. 75)], the sum of the negative powers is the [[D-C3JIU|principal part]] of $f$ at $z_0$, and $a_{-1}$ is the [[D-C3JIU|residue]] $\Res_{z_0}f$.
 
-[[FF-VOO4Q]]
+[[T-ESKLY]]
 
 [[C-Q6BSL]]
 

@@ -27,7 +27,7 @@ $$
 
 ## A pole of higher order
 
-[[FF-VOO4Q]]
+[[T-ESKLY]]
 
 ::: {.example title="A pole of order two"}
 The function $f(z) = 1/\bigl(z^2(1-z)\bigr)$ has a pole of order $2$ at $0$, and the formula with $n=2$ asks for one derivative of $z^2f(z) = 1/(1-z)$:
