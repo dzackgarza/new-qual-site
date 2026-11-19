@@ -10,6 +10,17 @@ classification:
     - Direct Products
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Gallian, Contemporary Abstract Algebra, seventh edition, Chapter 8
+    Exercise 6, printed p. 167 (file p. 182 of the retained copy, whose running head on that
+    page is 167). The printed exercise is the card's statement word for word, so no repair
+    was needed; the solution's opening sentence now names the exercise and the page. Not
+    checked in this pass: the argument, which the edit does not touch.
+
 ---
 
 ::: {.problem}
@@ -17,6 +28,9 @@ Prove, by comparing orders of elements, that $\ZZ_{8} \oplus \ZZ_{2}$ is not iso
 :::
 
 ::: {.solution}
+
+In the seventh edition this is Chapter 8 Exercise 6, printed p. 167, where the printed
+words are the statement below.
 
 The argument is the card's own: the two groups have different sets of element orders.
 
