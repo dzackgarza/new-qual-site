@@ -25,7 +25,7 @@ Similar matrices are the matrices of one operator in two bases, and equivalent m
 
 ## Eigenvalues
 
-The characteristic polynomial has the eigenvalues as roots with algebraic multiplicity, the minimal polynomial is the monic polynomial of least degree that annihilates the operator, and the operator is diagonalizable exactly when the minimal polynomial has distinct roots.
+Recall that the characteristic polynomial has the eigenvalues as roots with algebraic multiplicity, that the minimal polynomial is the monic polynomial of least degree annihilating the operator, and that the operator is diagonalizable exactly when its minimal polynomial has distinct roots.
 
 [[D-QFYAC]]
 
@@ -37,7 +37,7 @@ The characteristic polynomial has the eigenvalues as roots with algebraic multip
 
 [[D-B4VTH]]
 
-An operator over an algebraically closed field has an eigenvector in every nonzero invariant subspace, which is the step the triangularizability arguments use.
+Recall also that an operator over an algebraically closed field has an eigenvector in every nonzero invariant subspace, which is the step the triangularizability arguments use.
 
 [[L-C5DDK]]
 
