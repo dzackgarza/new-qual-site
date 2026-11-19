@@ -11,6 +11,19 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    1 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 1 is its page 2. Checked: the statement against the paper's text layer at
+    the page named; the orthogonality from invariance: $x\perp S$ with $AS\subseteq S$ gives $\langle
+    Ax,y\rangle=0$ for all $y\in S$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -25,6 +38,8 @@ Note: $A^H=\overline{A^T}$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 1 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 1 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
 
 No retained solution set covers this exercise: the card's own argument follows, with the orthogonality from invariance and the identification of $S^{\perp}$ as separate steps.
 
