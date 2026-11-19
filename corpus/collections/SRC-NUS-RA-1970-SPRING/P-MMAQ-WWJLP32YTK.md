@@ -141,3 +141,7 @@ Steps [](#forward-direction){.pf-ref} and [](#backward-direction){.pf-ref} give 
 :::
 
 :::
+
+::: {.remark}
+Part (a) is true as printed for the trivial reason that $K$ may be a single point, on which every function is continuous; the statement proved above is Lusin's theorem, which is strictly stronger, since it also gives $m([0,1]\setminus K)<\eps$.
+:::
