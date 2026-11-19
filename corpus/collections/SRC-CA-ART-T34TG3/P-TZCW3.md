@@ -18,6 +18,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose, which gives both proofs correctly. Added
+    the reasons the steps need: that f and g are polynomials and so holomorphic on a neighbourhood of
+    the closed disc, which is the hypothesis of Rouche's theorem on that disc; the triangle-inequality
+    estimate |P(z)| >= |a_n| R^n / 2 on the circle, and its version for large |z| giving |P| -> infinity;
+    and the argument that the maximum of |h| on the compact disc is attained at an interior point
+    because the boundary values are smaller than |h(0)|. The case a_0 = 0 is disposed of before h(0)
+    is used. Not checked: the printed question, since the collection carries no provenance file.
 ---
 
 ::: {.problem}
@@ -29,52 +40,53 @@ Prove the fundamental theorem of algebra using
 :::
 
 ::: {.solution}
-Let $P(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$ be a non-constant polynomial with complex coefficients, where $n \geq 1$ and $a_n \neq 0$.
+This is the fundamental theorem of algebra asked twice, once by Rouché's theorem and once by the maximum modulus principle, in the collection `SRC-CA-ART-T34TG3`, whose `provenance` is empty, so no source sheet was available and the printed question was not re-read; the argument below is the card's own.
 
-**(a) Rouché's theorem.**
-Let $f(z) = a_n z^n$ and $g(z) = a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$, so that $P(z) = f(z) + g(z)$.
+::: pf
 
-On the circle $C_R = \{z \in \CC : \abs{z} = R\}$ for $R > 0$:
-$$
-\abs{f(z)} = \abs{a_n} R^n,
-$$
-$$
-\abs{g(z)} \leq \abs{a_{n-1}} R^{n-1} + \cdots + \abs{a_1} R + \abs{a_0}.
-$$
-Dividing by $\abs{f(z)}$:
-$$
-\frac{\abs{g(z)}}{\abs{f(z)}} \leq \frac{\abs{a_{n-1}}}{\abs{a_n} R} + \cdots + \frac{\abs{a_0}}{\abs{a_n} R^n}.
-$$
-As $R \to \infty$, the right-hand side approaches $0$.
-Therefore, there exists a sufficiently large $R > 0$ such that for all $z \in C_R$:
-$$
-\abs{g(z)} < \abs{f(z)}.
-$$
-By Rouché's theorem, $P(z) = f(z) + g(z)$ and $f(z) = a_n z^n$ have the same number of zeros (counted with multiplicity) in the open disk $D(0, R) = \{z \in \CC : \abs{z} < R\}$.
-Since $f(z) = a_n z^n$ has exactly $n \geq 1$ zeros in $D(0, R)$ (a zero of multiplicity $n$ at the origin), $P(z)$ has exactly $n \geq 1$ zeros in $D(0, R) \subset \CC$.
-In particular, $P(z)$ has at least one complex root.
+::: {.pf-step #bound}
+With $f(z)=a_{n}z^{n}$ and $g(z)=a_{n-1}z^{n-1}+\cdots+a_{0}$, there is $R>0$ with $\abs{g(z)}<\abs{f(z)}$ for every $z$ with $\abs{z}=R$.
 
-**(b) Maximum modulus principle.**
-Suppose towards a contradiction that $P(z)$ has no zeros in $\CC$.
-Then the function:
-$$
-h(z) = \frac{1}{P(z)}
-$$
-is entire (holomorphic on all of $\CC$).
+::: pf-proof
+On $\abs{z}=R$ one has $\abs{f(z)}=\abs{a_{n}}R^{n}$ and $\abs{g(z)}\leq\abs{a_{n-1}}R^{n-1}+\cdots+\abs{a_{0}}$, so
+$$\frac{\abs{g(z)}}{\abs{f(z)}}\leq\frac{\abs{a_{n-1}}}{\abs{a_{n}}R}+\cdots+\frac{\abs{a_{0}}}{\abs{a_{n}}R^{n}},$$
+a finite sum of terms tending to $0$ as $R\to\infty$, with $a_{n}\neq0$. Choose $R$ large enough that this bound is below $1$.
+:::
+:::
 
-For $\abs{z} = R$ with $R$ large enough that $\frac{\abs{a_{n-1}}}{\abs{a_n} R} + \cdots + \frac{\abs{a_0}}{\abs{a_n} R^n} \le \frac12$:
-$$
-\abs{P(z)} = \abs{a_n} R^n \abs{ 1 + \frac{a_{n-1}}{a_n z} + \cdots + \frac{a_0}{a_n z^n} } \geq \abs{a_n} R^n \left( 1 - \frac{1}{2} \right) = \frac{\abs{a_n}}{2} R^n \to \infty \quad \text{as } R \to \infty.
-$$
-Therefore:
-$$
-\lim_{\abs{z} \to \infty} \abs{h(z)} = \lim_{\abs{z} \to \infty} \frac{1}{\abs{P(z)}} = 0.
-$$
-This implies that $\abs{h(z)}$ attains a global maximum on $\CC$:
-Since $h(0) = 1/a_0 \neq 0$ (if $a_0 = 0$, $P(0) = 0$ is already a root), there exists $R > 0$ such that $\abs{h(z)} < \abs{h(0)}$ for all $\abs{z} \geq R$.
-On the compact closed disk $\overline{D(0, R)}$, the continuous function $\abs{h(z)}$ attains its maximum at some point $z_0 \in D(0, R)$, which is therefore a global maximum of $\abs{h}$ on the entire complex plane $\CC$.
+::: {.pf-step #rouche}
+(a) $P$ has exactly $n$ zeros, counted with multiplicity, in $D(0,R)$, hence at least one zero in $\CC$.
 
-By the maximum modulus principle, since $h$ is holomorphic on $\CC$ and $\abs{h}$ attains an interior local maximum at $z_0$, $h$ must be constant.
-If $h(z)$ is constant, then $P(z) = 1/h(z)$ is constant, contradicting that $\deg(P) = n \geq 1$.
-Thus $P(z)$ must have at least one root in $\CC$.
+::: pf-proof
+$f$ and $g$ are polynomials, hence holomorphic on a neighbourhood of the closed disc $\overline{D(0,R)}$, and $\abs{g}<\abs{f}$ on its boundary circle by step [](#bound){.pf-ref}. Rouché's theorem then gives that $f+g=P$ and $f$ have the same number of zeros, counted with multiplicity, in $D(0,R)$. The function $f(z)=a_{n}z^{n}$ has the single zero $0$ there, of multiplicity $n$, so $P$ has exactly $n$ zeros in the disc; and $n\geq1$ because $P$ is nonconstant, so at least one complex root exists.
+:::
+:::
+
+::: {.pf-step #growth}
+If $P$ has no zeros, then $h=1/P$ is entire and, for $R$ as in step [](#bound){.pf-ref}, $\abs{P(z)}\geq\abs{a_{n}}R^{n}/2$ on $\abs{z}=R$; hence $\abs{P(z)}\to\infty$ and $\abs{h(z)}\to0$ as $\abs{z}\to\infty$.
+
+::: pf-proof
+$P$ is entire and nowhere zero by assumption, so $1/P$ is entire. On $\abs{z}=R$,
+$$\abs{P(z)}=\abs{a_{n}}R^{n}\abs{1+\frac{a_{n-1}}{a_{n}z}+\cdots+\frac{a_{0}}{a_{n}z^{n}}}\geq\abs{a_{n}}R^{n}\left(1-\frac{\abs{g(z)}}{\abs{f(z)}}\right)\geq\frac{\abs{a_{n}}R^{n}}{2},$$
+using the triangle inequality and step [](#bound){.pf-ref}. The same computation with $R$ tending to infinity shows $\abs{P(z)}\geq\frac{\abs{a_{n}}}{2}\abs{z}^{n}$ for all large $\abs{z}$, so $\abs{P}\to\infty$ and $\abs{h}\to0$ at infinity.
+:::
+:::
+
+::: {.pf-step #maxpoint}
+If $P$ has no zeros then $\abs{h}$ attains a global maximum on $\CC$ at a point of the open disc $D(0,R)$.
+
+::: pf-proof
+If $a_{0}=0$ then $P(0)=0$ and there is nothing to prove, so assume $a_{0}\neq0$; then $h(0)=1/a_{0}\neq0$. Since $\abs{h(z)}\to0$ at infinity there is $R'>0$ with $\abs{h(z)}<\abs{h(0)}$ for $\abs{z}\geq R'$. The continuous function $\abs{h}$ attains a maximum on the compact disc $\overline{D(0,R')}$, say at $z_{0}$; then $\abs{h(z_{0})}\geq\abs{h(0)}>\abs{h(z)}$ for every $z$ outside the disc, so $z_{0}$ is a global maximum, and $z_{0}$ lies in the open disc $D(0,R')$ because on the boundary circle $\abs{h}<\abs{h(0)}\leq\abs{h(z_{0})}$.
+:::
+:::
+
+::: {.pf-step #maximum}
+(b) $P$ has a zero in $\CC$.
+
+::: pf-proof
+Suppose not. Then $h=1/P$ is entire by step [](#growth){.pf-ref}, and by step [](#maxpoint){.pf-ref} the modulus $\abs{h}$ attains a global maximum at an interior point $z_{0}$. The maximum modulus principle for a holomorphic function attaining its maximum modulus at an interior point makes $h$ constant; then $P=1/h$ is constant, contradicting $\deg P=n\geq1$. So $P$ has at least one zero.
+:::
+:::
+:::
+
 :::
