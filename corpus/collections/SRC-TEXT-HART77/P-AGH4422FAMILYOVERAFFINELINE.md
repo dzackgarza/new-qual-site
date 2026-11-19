@@ -386,6 +386,38 @@ audit:
     proof of the section's theorem and the rest of Chapter II; the scan is not in
     a retained set and was removed after the reading, so a later session must
     fetch it again before re-reading these pages.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The first of the two analytic inputs of Youcis's proof is now read, so the
+    step that transcribes him cites it by page and by its statement. Source:
+    P. Deligne, "Théorie de Hodge : II", Publications mathématiques de
+    l'I.H.É.S. 40 (1971), pp. 5--57, read in the numdam copy, where the first
+    PDF page is numdam's notice, PDF p. 2 is printed p. 5 and PDF p. 3 carries
+    the folio 6, so printed p. N is PDF p. N-3; the pages cited were read in the
+    text layer at those positions and their folios checked. Rappel (4.4.3),
+    printed p. 51, reads: "Soit S un schéma lisse de type fini sur C. La
+    construction (4.4.2) établit une équivalence de catégorie entre: a) la
+    catégorie des schémas abéliens sur S; b) la catégorie des familles continues
+    polarisables de structures de Hodge H de type (-1,0)+(0,-1) sur S, telles
+    que H_Z soit sans torsion et que la filtration de Hodge varie
+    holomorphiquement sur S." The construction is (4.4.2), printed p. 50, under
+    section 4.4, "Homomorphismes de schémas abéliens": for an abelian scheme
+    f: X to S the exponential gives the exact sequence 0 to R^1f_*Z to Lie(X) to
+    X to 0 and the Hodge filtration is 0 to Ker(a) to R^1f_*Z (x) O_S to Lie(X)
+    to 0, with (4.4.1) on the same page giving R^1f_*Z for a proper smooth f as
+    the local system of homology of the fibres, of weight -1. So Youcis's
+    sentence is Deligne's (4.4.3) and his map is Deligne's construction. Two
+    qualifications now on the card: Deligne states it as a rappel, not as a
+    theorem proved there, and he gives its essential surjectivity to Borel [13],
+    full faithfulness resting on the Hom-scheme of two abelian schemes being
+    unramified over the base. Not checked: Deligne's section 4.4 beyond printed
+    pp. 50--51, Borel's paper as he cites it, and the manuscript's other
+    sections; the second analytic input, the constancy of the Q-variation over a
+    compactification, still rests on the cited Peters and Steenbrink and on
+    Strauch's rigidity result, neither of which is on this machine, and the
+    numdam copy was removed after the reading.
 ---
 
 ::: {.problem}
@@ -473,7 +505,7 @@ Proof of Theorem 8, as published: the local system of the family is constant bec
 
 Youcis's proof has four moves, each quoted or cited as he gives it.
 
-First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, 4.4.3.
+First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, (4.4.3), printed p. 51: "Soit $S$ un schéma lisse de type fini sur $\CC$. La construction (4.4.2) établit une équivalence de catégorie entre: a) la catégorie des schémas abéliens sur $S$; b) la catégorie des familles continues polarisables de structures de Hodge $H$ de type $(-1,0)+(0,-1)$ sur $S$, telles que $H_\ZZ$ soit sans torsion et que la filtration de Hodge varie holomorphiquement sur $S$." The construction it names is (4.4.2), printed p. 50: for an abelian scheme $f\colon X\to S$ the exponential gives the exact sequence $0\to R^1f_*\ZZ\to\operatorname{Lie}(X)\to X\to 0$, and the Hodge filtration is the exact sequence $0\to\ker(a)\to R^1f_*\ZZ\otimes\OO_S\to\operatorname{Lie}(X)\to 0$. Deligne states the equivalence as a *rappel* and gives its essential surjectivity to Borel [13], the full faithfulness resting on the scheme of homomorphisms of two abelian schemes over $S$ being unramified over $S$.
 
 Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$ is a constant local system but, a priori, one might be worried that the Hodge filtration is not constant."
 
@@ -515,7 +547,7 @@ That is the triviality the exercise asks for.
 
 Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
 The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}: Katz and Mazur's Theorem 2.1.2, printed p. 63, with its proof on printed pp. 63--66. The printed hint's first clause, "Use the section to fix the group structure on the fibres", asks for exactly that theorem.
-Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
+Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, (4.4.3), printed p. 51, stated there as a *rappel* with its essential surjectivity given to Borel, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
 The printed hint follows a different route: the points of order $2$ form an étale cover of $\AA^1_\CC$, hence are four disjoint sections, and the Legendre parameter $\lambda$ they define is a morphism $\AA^1_\CC\to\AA^1_\CC\setminus\{0,1\}$, hence constant.
