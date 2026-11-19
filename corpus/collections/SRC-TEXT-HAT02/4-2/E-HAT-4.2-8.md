@@ -26,6 +26,18 @@ audit:
     otherwise Sigma X = S^0 has H~_0 = Z, contradicting the vanishing just proved. The repaired sentence
     now says that. Not checked: nothing outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 8
+    of §4.2, printed p. 389. Checked: the suspension isomorphism gives
+    $\widetilde H_n(\Sigma X)=\widetilde H_{n-1}(X)=0$ for $n\ge1$, and $\Sigma X$ is
+    path-connected because $X$ is nonempty, acyclicity forcing that — for $X$ empty $\Sigma X=S^0$
+    has $\widetilde H_0=\ZZ$; the two open cones cover $\Sigma X$, are contractible, and meet in
+    $X\times(1/3,2/3)\simeq X$, which is path-connected; van Kampen makes $\pi_1$ trivial; and
+    Hurewicz plus Whitehead, both applicable to CW complexes, make the map to a point a homotopy
+    equivalence. No defect; the printed page is added.
 ---
 
 ::: {.problem}
@@ -33,6 +45,8 @@ Show the suspension of an acyclic CW complex is contractible.
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 8, printed p. 389.
+
 Let $X$ be an acyclic CW complex, so $\widetilde H_n(X) = 0$ for all $n$. Write $\Sigma X = X \times I / {\sim}$, with $X \times \{0\}$ and $X \times \{1\}$ each collapsed to a point.
 
 ::: pf
