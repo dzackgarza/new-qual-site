@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3T5VY
 kind: problem
-title: Number of zeros of $2z^5-6z^2-z+1$ in the annulus $1\leq\abs{z}\leq 2$
+title: Number of zeros of $2z^5-6z^2+z+1$ in the annulus $1\leq\abs{z}\leq 2$
 classification:
   areas:
   - complex-analysis
@@ -13,6 +13,37 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read at the printed page in four published papers that carry this exercise. UC Irvine
+    Complex Analysis Qualifying Examination, 18 June 2013, Problem 5 (PDF p. 6): "Determine the
+    number of roots, counted with multiplicity, of the equation $2z^5-6z^2+z+1=0$ inside the
+    annulus $1\leq\abs z\leq 2$." UC Irvine Complex Qualifying Examination, 20 September 2012,
+    Problem 4 (PDF p. 5): the same equation and instruction, in the annulus
+    $A(0,1,2)=\theset{z:1<\abs z<2}$. Johns Hopkins Qualifying Exam Spring 2016, Question 7
+    (PDF p. 11 of `gradexam/analysisexams.pdf`, printed p. 1 of that paper): "Determine the
+    number of zeroes of the polynomial $2z^5-6z^2+z+1=0$ in the annulus $1\leq\abs z\leq 2$."
+    University of Iowa Analysis Qualifying Examination, 12 January 2024, Part II Problem C-3
+    (PDF p. 16): "$p(z)\coloneqq 2z^5-6z^2+z+1$, determine the number of zeros of $p$ (counting
+    multiplicities) inside the annulus ann(0; 1, 2)". All four print $+z$ on the linear term.
+    Not checked in this pass: whether any of the four is the paper this question was set in.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The imported text this card was transcribed from, row 108 of
+    `Combined_Questions.yaml` at revision `6190e0ee`, prints
+    $f(z)=2z^5-6z^2-z+1$, and the card carried that sign. Since the only document that prints
+    $-z$ is that transcription, and every published printing of the exercise prints $+z$, the
+    statement now prints $+z$; its wording is the retained one. The two Rouché bounds were
+    rewritten for the $+z$ polynomial and rechecked: on $\abs z=2$,
+    $\abs{-6z^2+z+1}\leq 6\cdot 4+2+1=27<64=\abs{2z^5}$, and on $\abs z=1$,
+    $\abs{2z^5+z+1}\leq 2+1+1=4<6=\abs{-6z^2}$. The answer $3$ does not depend on the sign, and
+    a numeric root computation gives moduli $0.33172,0.51413,1.32755,1.48606,1.48606$ for $+z$
+    against $0.33502,0.48870,1.44662,1.44662,1.45933$ for $-z$, three inside
+    $1\leq\abs z\leq 2$ either way.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -22,14 +53,14 @@ audit:
 Find the number of zeroes, counting multiplicities, of the polynomial
 
 $$
-f(z) = 2z^5 - 6z^2 - z + 1
+f(z) = 2z^5 - 6z^2 + z + 1
 $$
 
 in the annulus $1 \leq \abs{z} \leq 2$.
 :::
 
 ::: {.solution}
-Let $f(z) = 2z^5 - 6z^2 - z + 1$, and let $A = \{z \in \CC : 1 \leq \abs{z} \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
+Let $f(z) = 2z^5 - 6z^2 + z + 1$, and let $A = \{z \in \CC : 1 \leq \abs{z} \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
 
 * * *
 
@@ -43,7 +74,7 @@ Let $f(z) = 2z^5 - 6z^2 - z + 1$, and let $A = \{z \in \CC : 1 \leq \abs{z} \leq
 ::: pf-proof
 
 ::: pf-step
-Decompose $f(z) = F_1(z) + G_1(z)$ on the circle $\abs{z} = 2$, where $F_1(z) = 2z^5$ and $G_1(z) = -6z^2 - z + 1$.
+Decompose $f(z) = F_1(z) + G_1(z)$ on the circle $\abs{z} = 2$, where $F_1(z) = 2z^5$ and $G_1(z) = -6z^2 + z + 1$.
 
 ::: pf-proof
 *Proof:* Algebraic splitting of terms.
@@ -61,7 +92,7 @@ On $\abs{z} = 2$, $\abs{F_1(z)} = 2 \abs{z}^5 = 2 \cdot 2^5 = 64$.
 :::
 
 ::: pf-step
-On $\abs{z} = 2$, by the triangle inequality: $$\abs{G_1(z)} = \abs{-6z^2 - z + 1} \leq 6\abs{z}^2 + \abs{z} + 1 = 6(4) + 2 + 1 = 27.$$
+On $\abs{z} = 2$, by the triangle inequality: $$\abs{G_1(z)} = \abs{-6z^2 + z + 1} \leq 6\abs{z}^2 + \abs{z} + 1 = 6(4) + 2 + 1 = 27.$$
 
 ::: pf-proof
 *Proof:* Triangle inequality $\abs{a+b+c} \leq \abs{a}+\abs{b}+\abs{c}$.
@@ -128,7 +159,7 @@ Step [](#five-zeros-conclusion){.pf-ref}.
 ::: pf-proof
 
 ::: pf-step
-Decompose $f(z) = F_2(z) + G_2(z)$ on the circle $\abs{z} = 1$, where $F_2(z) = -6z^2$ and $G_2(z) = 2z^5 - z + 1$.
+Decompose $f(z) = F_2(z) + G_2(z)$ on the circle $\abs{z} = 1$, where $F_2(z) = -6z^2$ and $G_2(z) = 2z^5 + z + 1$.
 
 ::: pf-proof
 *Proof:* Algebraic splitting of terms.
@@ -146,7 +177,7 @@ On $\abs{z} = 1$, $\abs{F_2(z)} = 6 \abs{z}^2 = 6$.
 :::
 
 ::: pf-step
-On $\abs{z} = 1$, by the triangle inequality: $$\abs{G_2(z)} = \abs{2z^5 - z + 1} \leq 2\abs{z}^5 + \abs{z} + 1 = 2(1) + 1 + 1 = 4.$$
+On $\abs{z} = 1$, by the triangle inequality: $$\abs{G_2(z)} = \abs{2z^5 + z + 1} \leq 2\abs{z}^5 + \abs{z} + 1 = 2(1) + 1 + 1 = 4.$$
 
 ::: pf-proof
 *Proof:* Triangle inequality.
@@ -261,8 +292,5 @@ Step [](#annulus-zero-count){.pf-ref}.
 :::
 
 ::: {.remark}
-The witness this card is transcribed from, row 108 of `Combined_Questions.yaml` at revision `6190e0ee`, prints $2z^5-6z^2-z+1$, and the card keeps that sign.
-The exercise also circulates with $+z$: the University of Iowa Analysis Qualifying Examination of 12 January 2024 states it as $p(z)\coloneqq 2z^5-6z^2+z+1$ and asks for the zeros of $p$, counting multiplicities, in $\operatorname{ann}(0;1,2)$ (Part II, Problem C-3).
-The count is $3$ for either sign, and the two comparisons above are already the reason: the linear term enters the triangle inequality only through $\abs z$, so on $\abs z=2$ the bound $\abs{-6z^2\pm z+1}\le 6\cdot4+2+1=27<64=\abs{2z^5}$ holds with both signs, and on $\abs z=1$ the bound $\abs{2z^5\pm z+1}\le 2+1+1=4<6=\abs{-6z^2}$ holds with both signs.
-Hence $f$ has five zeros in $\abs z<2$ and two in $\abs z<1$ either way, leaving three in the annulus.
+The same count answers the exercise with the opposite sign of the linear term: that term enters the two triangle inequalities only through $\abs z$, so $\abs{-6z^2\mp z+1}\le 6\cdot4+2+1=27<64=\abs{2z^5}$ on $\abs z=2$ and $\abs{2z^5\mp z+1}\le 2+1+1=4<6=\abs{-6z^2}$ on $\abs z=1$ hold with either sign, leaving five zeros in $\abs z<2$, two in $\abs z<1$ and three in the annulus.
 :::
