@@ -459,3 +459,7 @@ Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
+
+::: {.remark}
+The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that no nonsingular curve on $X$ has the class $3C_0-3f$, the curve $Y$ of step [](#s7){.pf-ref} being integral with normalization $C$ and one singular point of $\delta=1$.  The statement above therefore asks for an integral $Y$ with normalization $C$, which is what the argument proves, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
+:::
