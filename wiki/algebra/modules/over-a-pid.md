@@ -43,7 +43,7 @@ The invariant factor and elementary divisor forms of a finitely generated module
 
 [[D-ZJJ7G]]
 
-The split of the free part from the torsion part is the case in which the quotient by the torsion submodule is free, which is what a finitely generated torsion-free module over a principal ideal domain is.
+The free part splits off because $M/T(M)$ is torsion-free, and a finitely generated torsion-free module over a principal ideal domain is free, so $M\cong F\oplus T(M)$ with $F$ free.
 
 [[P-J5GIE]]
 
