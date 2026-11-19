@@ -7672,3 +7672,25 @@ carries it. No step, statement or hypothesis of any card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 5.1.3 and 5.1.6 at printed p. 100 and 5.2.6 at
 printed p. 103, rendered as page images; the statements the cards carry, not reopened against the book
 in this pass. Not read: the remaining seven cards' entries, and the printed books themselves.
+
+## 2026-11-19, sixth item: two shared-clone papercuts that read as errors — a live `index.lock` and an ambiguous `omm/main`
+
+**Object and need.** Both cost this session real turns, and both present as a failure of something other than what is wrong. Neither is a repository defect; both are artefacts of several chats working one clone.
+
+**`index.lock` is usually live, not stale.** `git commit` failed with `Unable to create '.git/index.lock': File exists` several times, and the standing advice to "remove the file manually" would have destroyed another chat's in-flight commit. `ps -eo pid,etimes,args | grep '[g]it commit'` showed the holder: another chat's `git commit` started seconds earlier, and two other chats were already running retry loops of their own against the same lock. The working pattern, which succeeded on the third attempt and again on the first in a later turn, is
+
+```
+for i in $(seq 1 20); do git commit -q -m "..." -- <paths> 2>/dev/null && break; sleep 6; done
+```
+
+The lock file itself is 2.4 MB (an index copy), which is why it looks like debris. A lock older than a minute with no `git commit` process behind it would be stale; none was seen today.
+
+**`omm/main` is an ambiguous refname.** `git merge-base --is-ancestor <sha> omm/main` began printing `warning: refname 'omm/main' is ambiguous` and returning non-zero for commits that were in fact on the remote — both a `refs/heads/omm/main` and a `refs/remotes/omm/main` exist. Ancestry checks must name `refs/remotes/omm/main`:
+
+```
+R=$(git rev-parse refs/remotes/omm/main); git merge-base --is-ancestor <sha> $R && echo ok
+```
+
+With that, the two commits this session made after the warning appeared (`2edda155da`, `fe28a2962a`) both verified as present, after the push tool had refused them.
+
+**Uncertainty.** The retry intervals are empirical, not tuned; a commit that fails twenty times was not seen and would need a different remedy. What created the duplicate `omm` ref was not investigated, and the fix (deleting the stray local branch) was not applied, since it is a shared clone and another chat may be using the name.
