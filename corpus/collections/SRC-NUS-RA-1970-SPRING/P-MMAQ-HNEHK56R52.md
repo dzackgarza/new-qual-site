@@ -16,6 +16,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Parts (f), (g) and (h) read and checked; no step of the argument was changed. What was
+    recorded is the reading of (f)'s hypothesis: the proof uses that the limit
+    $\lim_{\eps\to0^+}\int_\eps^1 f$ is finite, and that is the standard reading of "the limit
+    exists", but it is not stated in the printed sentence. The remark added at the end names it
+    and gives the one-line counterexample $f(x)=1/x$ that shows the conclusion fails once the
+    limit may be $+\infty$. Not checked in this pass: a published solution of the problem, none
+    being located.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -181,4 +192,8 @@ By steps [](#f-is-true){.pf-ref}, [](#g-is-true){.pf-ref}, and [](#h-is-false){.
 
 :::
 
+:::
+
+::: {.remark}
+The limit in the hypothesis of (f) has to be a finite one, and the finiteness is what the conclusion needs: the function $f(x)\coloneqq 1/x$ on $(0,1]$, $f(0)\coloneqq 0$, is nonnegative and Riemann integrable on $[\eps,1]$ for every $\eps>0$, while $\int_\eps^1 f\,dx=\log(1/\eps)\to+\infty$ and $\int_0^1 f\,dx=+\infty$, so $f$ is not Lebesgue integrable on $[0,1]$. If the limit is allowed to be $+\infty$, (f) is false; read as printed, with the limit existing in $\RR$, it is true, and the monotone convergence argument above proves it.
 :::
