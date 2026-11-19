@@ -33,7 +33,6 @@ audit:
     product with (k,h)(k',h') = (k c(h)(k'), hh'), whose identity and inverse are as
     displayed. No defect.
 ---
----
 
 ::: {.exercise}
 Define what is meant by:

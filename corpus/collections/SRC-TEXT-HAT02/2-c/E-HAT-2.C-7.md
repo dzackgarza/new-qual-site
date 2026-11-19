@@ -52,7 +52,6 @@ audit:
     metric construction gives g( sigma) cap sigma empty, hence zero diagonal in every field;
     additivity of trace on finite-dimensional exact sequences then gives zero on homology.
 ---
----
 
 ::: {.problem}
 Verify that the Lefschetz fixed point theorem holds also when $\tau(f)$ is defined using homology with coefficients in a field $F$.

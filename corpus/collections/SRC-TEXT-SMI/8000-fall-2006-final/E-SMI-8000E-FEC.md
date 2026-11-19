@@ -33,7 +33,6 @@ audit:
     Sylow's: the fixed-point argument for the congruence, n_p = [G : N_G(P)], and the
     PQ = Q maximality step. No defect.
 ---
----
 
 ::: {.exercise}
 (i) State all 3 parts of Sylow's theorem.

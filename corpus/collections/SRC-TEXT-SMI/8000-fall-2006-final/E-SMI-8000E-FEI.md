@@ -42,7 +42,6 @@ audit:
     Q(ζ_7), Q(ζ_7 + ζ_7^{-1}), Q(√-7) and Q of degrees 42, 6, 3, 2, 1. All three parts
     check. No defect.
 ---
----
 
 ::: {.exercise}
 Do all parts.

@@ -32,7 +32,6 @@ audit:
     Correct: scs^{-1} sends s(a_i) to s(a_{i+1}) and s(a_k) to s(a_1), and fixes
     every other point, which is exactly the cycle on the images. No defect.
 ---
----
 
 ::: {.exercise}
 Prove: if $s$ is any permutation in $S_n$, and $(a_1\,a_2\,\cdots\,a_k)$ is the cycle taking $a_1$ to $a_2$, etc., then

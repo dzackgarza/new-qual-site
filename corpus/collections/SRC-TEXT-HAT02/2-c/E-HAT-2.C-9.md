@@ -34,7 +34,6 @@ audit:
     taking nonempty subsets; so there are countably many isomorphism classes, and
     passing to homotopy types only identifies them. No defect.
 ---
----
 
 ::: {.problem}
 Show that there are only countably many homotopy types of finite CW complexes.

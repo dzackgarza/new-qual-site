@@ -35,7 +35,6 @@ audit:
     Q(i, √3, ζ_3) = Q(i, √3), where Q(i) ∩ R = Q makes √3 of degree 2 over Q(i)
     and gives degree 4 with basis 1, i, √3, i√3. Complete; no defect.
 ---
----
 
 ::: {.problem}
 \envlist

@@ -28,7 +28,6 @@ audit:
     is a polynomial ring, hence a UFD and integrally closed, is integral over the ring, and has the
     same fraction field. Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 Let $A$ be a domain and $K$ its field of fractions.

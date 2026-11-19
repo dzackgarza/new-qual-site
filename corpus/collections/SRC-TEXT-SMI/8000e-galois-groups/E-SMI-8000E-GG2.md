@@ -31,7 +31,6 @@ audit:
     being cubic, is irreducible; the quotient is then a field of 5^3 = 125
     elements. No defect.
 ---
----
 
 ::: {.exercise}
 Find an irreducible cubic polynomial mod 5, and hence construct a field with 125 elements.

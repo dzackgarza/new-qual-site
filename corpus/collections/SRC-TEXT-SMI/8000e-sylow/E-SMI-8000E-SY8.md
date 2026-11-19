@@ -39,7 +39,6 @@ audit:
     image of order p inside S_p; the product map is injective, so p^n ≤ p^k and
     k = n; hence P embeds in C_p^n and is abelian. No defect.
 ---
----
 
 ::: {.exercise}
 (i) If $p>2$ and $P$ is a Sylow $p$-subgroup of $S(2p)$, prove $P$ is abelian.

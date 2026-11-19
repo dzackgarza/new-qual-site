@@ -32,7 +32,6 @@ audit:
     abelian; and a homomorphism to an abelian group kills every commutator, so G'
     lies in its kernel. No defect.
 ---
----
 
 ::: {.exercise}
 Prove that the commutator subgroup $G'$ of $G$ is a characteristic subgroup — hence normal — that $G/G'$ is abelian, and that if a homomorphism $f: G \to K$ exists where $K$ is abelian, then $\ker(f)$ contains $G'$.

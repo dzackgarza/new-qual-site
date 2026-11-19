@@ -34,7 +34,6 @@ audit:
     equation (Appendix A, (15) and (17)), and a_0 = 3^{-2/3}/Gamma(2/3) = Ai(0),
     a_1 = -3^{-1/3}Gamma(1/3) = Ai'(0), so S = Ai by uniqueness for y'' = zy.
 ---
----
 
 ::: {.exercise}
 The Bessel functions and Airy function have the following power series expansions:

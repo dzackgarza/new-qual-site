@@ -39,7 +39,6 @@ audit:
     property; surjectivity from a transposition; and the kernel is by definition
     the even products. No defect.
 ---
----
 
 ::: {.exercise}
 Assume $n\ge 2$.

@@ -34,7 +34,6 @@ audit:
     says so. Correct: the coordinatewise quotient has exactly that kernel, so the
     isomorphism follows. No defect.
 ---
----
 
 ::: {.exercise}
 Prove

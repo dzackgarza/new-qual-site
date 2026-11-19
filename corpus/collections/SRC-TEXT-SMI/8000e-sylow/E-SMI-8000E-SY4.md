@@ -32,7 +32,6 @@ audit:
     p-subgroup of N, so it equals P and g ∈ N; the reverse inclusion is trivial.
     No defect.
 ---
----
 
 ::: {.exercise}
 The "normalizer" $N(H)$ of a subgroup $H$ of $G$ is

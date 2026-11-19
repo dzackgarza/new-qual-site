@@ -74,7 +74,6 @@ audit:
     that point and V, and pi_1(U minus a point) is isomorphic to pi_1(U) by van Kampen. Thus both
     are non-simply-connected by Bing's explicit assertion for the inward-tube construction.
 ---
----
 
 ::: {.problem}
 Modify the construction of the Alexander horned sphere to produce an embedding $S^2 \hookrightarrow \RR^3$ for which neither component of $\RR^3 - S^2$ is simply-connected.

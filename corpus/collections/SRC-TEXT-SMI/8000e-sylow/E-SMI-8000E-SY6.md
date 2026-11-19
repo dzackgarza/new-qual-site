@@ -38,7 +38,6 @@ audit:
     is not solvable; subgroups of solvable groups are solvable by intersecting a
     tower; and A_5 embeds in S_n for n ≥ 5 fixing the rest. No defect.
 ---
----
 
 ::: {.exercise}
 Prove that $S(n)$ is not solvable if $n > 4$, assuming $A(5) \cong Icos$ (the icosahedral rotation group) and the simplicity of $Icos$.

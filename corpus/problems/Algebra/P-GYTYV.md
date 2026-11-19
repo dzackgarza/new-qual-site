@@ -40,7 +40,6 @@ audit:
     defect. The card claims nothing about normality of C_G(H) in G, which is
     false in general.
 ---
----
 
 ::: {.problem}
 Let $G$ be a group and $H\le G$ a subgroup. The centralizer of $H$ is $C_G(H)=\{g\in G \st hg=gh \text{ for all } h\in H\}$. Show that $C_G(H)$ is a subgroup of $N_G(H)$.

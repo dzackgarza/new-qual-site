@@ -32,7 +32,6 @@ audit:
     noetherian module that strictly increasing chain is impossible, so a surjective
     endomorphism is injective, hence an automorphism. No defect.
 ---
----
 
 ::: {.exercise}
 (a) If $f: M \to M$ is a surjective endomorphism of an $R$ module that is not injective, prove that $\theset{\ker(f^n)}$, $n = 1, 2, 3, \ldots$, is a strictly increasing sequence of submodules.

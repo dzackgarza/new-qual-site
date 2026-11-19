@@ -33,7 +33,6 @@ audit:
     it the transported minimal polynomial has a root beta in the algebraically closed
     F and L[x]/(m) = L(alpha) → F extends the embedding. No defect.
 ---
----
 
 ::: {.exercise}
 Prove one:

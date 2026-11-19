@@ -40,7 +40,6 @@ audit:
     (X-1)(X-3)^2 for B, (X-3)(X-1)(X+2) for C and (X+2)(X-2)^3 for D, each
     re-derived here. No defect.
 ---
----
 
 ::: {.exercise}
 (i) If $A$ is a $3 \times 3$ matrix with $\mathrm{ch}(t) = (X - 4)^3$, find all Jordan forms for $A$, each with its minimal polynomial.

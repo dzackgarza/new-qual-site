@@ -32,7 +32,6 @@ audit:
     coefficients in (tI - A)adj(tI - A) = chi_A(t)I and descending the recurrence to
     B_0. Correct. No defect.
 ---
----
 
 ::: {.exercise}
 Prove one:

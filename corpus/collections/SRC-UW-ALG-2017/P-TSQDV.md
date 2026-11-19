@@ -27,7 +27,6 @@ audit:
     $\sum d^2=\abs{H_p}$ leaves exactly $p-1$ irreducibles of dimension $p$, one for each nontrivial
     character of the centre $\langle c\rangle$, constructed explicitly. Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 Let $H_n$ denote the Heisenberg group of order $n^3$, i.e.,
@@ -98,7 +97,7 @@ A one-dimensional representation factors through the abelianisation, which by st
 
 Let $\rho$ be an irreducible that is not one-dimensional. Then $\rho$ does not factor through the abelianisation, so $\rho(c)\ne\mathrm{Id}$. Since $c$ is central, Schur's lemma gives $\rho(c)=\zeta\,\mathrm{Id}$ with $\zeta$ a $p$-th root of unity, $\zeta\ne1$.
 
-Let $A=\langle a,c\rangle\subseteq H_p$, an abelian subgroup of order $p^2$, hence of index $p$, and let $\chi$ be an irreducible constituent of $\rho|_A$. Then $\chi(c)=\zeta\ne1$, and $\chi$ is one-dimensional because $A$ is abelian. Since $A$ is the stabiliser of $\chi$ under the conjugation action of the abelian group $A$ on its own characters, the representation $\operatorname{Ind}_A^{H_p}\chi$ is irreducible of dimension $[H_p:A]=p$; its character vanishes off $A$ and equals $p\chi$ on $A$, and by Frobenius reciprocity $\rho$ is a constituent of it, so $\rho\cong\operatorname{Ind}_A^{H_p}\chi$ and $\dim\rho=p$.
+Let $A=\langle a,c\rangle\subseteq H_p$, an abelian subgroup of order $p^2$, hence of index $p$, and let $\chi$ be an irreducible constituent of $\restrictionof{\rho}{A}$. Then $\chi(c)=\zeta\ne1$, and $\chi$ is one-dimensional because $A$ is abelian. Since $A$ is the stabiliser of $\chi$ under the conjugation action of the abelian group $A$ on its own characters, the representation $\operatorname{Ind}_A^{H_p}\chi$ is irreducible of dimension $[H_p:A]=p$; its character vanishes off $A$ and equals $p\chi$ on $A$, and by Frobenius reciprocity $\rho$ is a constituent of it, so $\rho\cong\operatorname{Ind}_A^{H_p}\chi$ and $\dim\rho=p$.
 
 Dimension count, $\sum_id_i^2=\abs{H_p}$:
 $$

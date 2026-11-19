@@ -32,7 +32,6 @@ audit:
     normality), and |H| ≤ [E : E^H] ≤ [E : L] with L ⊆ E^H forces equality, hence
     E^H = L, which is exactly surjectivity of the fixed-field map. No defect.
 ---
----
 
 ::: {.exercise}
 Prove one:

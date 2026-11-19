@@ -32,7 +32,6 @@ audit:
     reading: a nonzero a in P has an irreducible factor p in P, (p) is a nonzero
     prime contained in P, so (p) = P. No defect.
 ---
----
 
 ::: {.exercise}
 In a UFD $R$, prove that if every prime ideal properly contained in $P$ is $\theset{0}$, then $P$ is principal.

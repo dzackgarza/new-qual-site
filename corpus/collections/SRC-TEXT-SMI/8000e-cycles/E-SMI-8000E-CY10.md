@@ -32,7 +32,6 @@ audit:
     1; and if an abelian tower exists, H_i/H_{i+1} abelian gives H_i' ≤ H_{i+1}, so
     inductively G^{(i)} ≤ H_i and the series reaches 1. No defect.
 ---
----
 
 ::: {.exercise}
 Prove that $G$ is solvable if and only if some repeated commutator subgroup $G^{(n)} = \theset{e}$.

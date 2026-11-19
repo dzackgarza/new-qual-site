@@ -36,7 +36,6 @@ audit:
     648 forces Z/648; and minimal polynomial (t-2)^3(t-3)^4 with only 7
     dimensions forces J_3(2) ⊕ J_4(3). No defect.
 ---
----
 
 ::: {.exercise}
 (a) Find all abelian groups of order $2^3 \cdot 3^4$ with $\ker(2) \cong \ZZ/2 \times \ZZ/2$ and $\ker(2^2) \cong \ZZ/2 \times \ZZ/4$, i.e. $\ker(2)$ has dimension 2 over $\ZZ/2$, and $\ker(2^2)/\ker(2)$ has dimension 1 over $\ZZ/2$; and $\ker(3) \cong \ZZ/3 \times \ZZ/3$ and $\ker(3^2) \cong \ZZ/9 \times \ZZ/9$, i.e. $\ker(3)$ has dimension 2 over $\ZZ/3$, and $\ker(3^2)/\ker(3)$ has dimension 2 over $\ZZ/3$.

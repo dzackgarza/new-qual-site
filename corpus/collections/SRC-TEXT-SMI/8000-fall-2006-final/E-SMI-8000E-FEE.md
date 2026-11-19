@@ -32,7 +32,6 @@ audit:
     k annihilating the arbitrary element alpha, so every element is algebraic. No
     defect.
 ---
----
 
 ::: {.exercise}
 Prove one:

@@ -38,7 +38,6 @@ audit:
     2, 3, 4, 7, 7 as stated; and no nontrivial proper normal subgroup exists because
     none of 23, 27, 41, 55, 83 is a subset sum of 21, 42, 56, 24, 24. No defect.
 ---
----
 
 ::: {.exercise}
 Determine how many Sylow subgroups exist for each prime in the group $\mathrm{GL}_3(\ZZ/2)$ of invertible $3 \times 3$ matrices over $\ZZ/2$.

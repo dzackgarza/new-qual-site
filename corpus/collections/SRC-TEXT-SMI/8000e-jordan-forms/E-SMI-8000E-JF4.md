@@ -34,7 +34,6 @@ audit:
     (diag(i,-i); J_2(3) ⊕ J_1(1); diag(-2,1,3); J_2(2) ⊕ J_1(2) ⊕ J_1(-2);
     J_2(3) ⊕ J_2(2) ⊕ J_1(2)). No defect.
 ---
----
 
 ::: {.exercise}
 Find matrices $Q$ which put each of the following matrices in upper (or lower) Jordan form over $\CC$:

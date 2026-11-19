@@ -31,7 +31,6 @@ audit:
     support, and off both supports both act trivially, so the two products agree
     everywhere. No defect.
 ---
----
 
 ::: {.exercise}
 Prove disjoint cycles commute — i.e. if no $a_i$ equals any $b_j$, then

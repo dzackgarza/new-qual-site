@@ -68,7 +68,6 @@ audit:
     unexplained although it must be read as the set of vertex functions. Every remaining step of the
     card is Poulsen's, expanded.
 ---
----
 
 ::: {.problem}
 Let $X$ be homotopy equivalent to a finite simplicial complex and let $Y$ be homotopy equivalent to a finite or countably infinite simplicial complex.
@@ -97,7 +96,7 @@ $$
 
 ::: pf-proof
 
-The complex $\operatorname{sd}^rK$ has finitely many vertices, while $L$ has at most countably many vertices. A simplicial map is determined by its map on vertices, and every function from the vertex set of $\operatorname{sd}^rK$ to the vertex set of $L$ determines a simplicial map, namely its linear extension. So the simplicial maps $\operatorname{sd}^rK\to L$ correspond exactly to the vertex functions $V_{\operatorname{sd}^rK}\to V_L$, a set of cardinality $|V_L|^{|V_{\operatorname{sd}^rK}|}$, which is countable because $V_{\operatorname{sd}^rK}$ is finite and $V_L$ is at most countable.
+The complex $\operatorname{sd}^rK$ has finitely many vertices, while $L$ has at most countably many vertices. A simplicial map is determined by its map on vertices, and every function from the vertex set of $\operatorname{sd}^rK$ to the vertex set of $L$ determines a simplicial map, namely its linear extension. So the simplicial maps $\operatorname{sd}^rK\to L$ correspond exactly to the vertex functions $V_{\operatorname{sd}^rK}\to V_L$, a set of cardinality $\abs{V_L}^{\abs{V_{\operatorname{sd}^rK}}}$, which is countable because $V_{\operatorname{sd}^rK}$ is finite and $V_L$ is at most countable.
 
 :::
 

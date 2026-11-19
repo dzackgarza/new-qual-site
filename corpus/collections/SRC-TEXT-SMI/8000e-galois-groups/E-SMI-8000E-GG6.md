@@ -34,7 +34,6 @@ audit:
     conjugating the transposition around the 5-cycle. Hence the Galois group is
     S_5. No defect.
 ---
----
 
 ::: {.exercise}
 Show that $X^5 - X - 1$ factors mod 2 into an irreducible quadratic and an irreducible cubic.

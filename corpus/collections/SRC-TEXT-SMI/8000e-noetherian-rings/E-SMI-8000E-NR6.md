@@ -41,7 +41,6 @@ audit:
     The ideal axioms and the symmetric two-sided argument were checked and are
     correct under the identity hypothesis.
 ---
----
 
 ::: {.exercise}
 If $\theset{I_j}$ is any nonempty linearly ordered indexed set of proper ideals in a ring $R$ with identity — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.

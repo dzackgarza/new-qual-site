@@ -33,7 +33,6 @@ audit:
     hint's two ingredients (induction, nontrivial centre) are exactly those used.
     No defect.
 ---
----
 
 ::: {.exercise}
 Prove that if $G$ is a finite group such that $p^s$ divides $\#G$, then $G$ has a subgroup of order $p^s$.

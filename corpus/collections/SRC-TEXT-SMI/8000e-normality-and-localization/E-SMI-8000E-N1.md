@@ -35,7 +35,6 @@ audit:
     monic equation gives b | a^n, and a prime divisor of b would then divide a. No
     defect.
 ---
----
 
 ::: {.exercise}
 Any UFD is normal (integrally closed).

@@ -33,7 +33,6 @@ audit:
     chi_A(A) = 0. Correct, and it avoids substituting A into a matrix with non-scalar
     coefficients. No defect.
 ---
----
 
 ::: {.exercise}
 State and prove the Cayley-Hamilton theorem.

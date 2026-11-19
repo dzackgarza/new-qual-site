@@ -32,7 +32,6 @@ audit:
     multiplication, whose size [G : P] is prime to p, so a fixed coset gP exists
     and g^{-1}P'g ≤ P, hence equal by equal orders. No defect.
 ---
----
 
 ::: {.exercise}
 (i) Prove that the number of fixed points for the action of a $p$-group on a finite set is congruent mod $p$ to the cardinality of the set.

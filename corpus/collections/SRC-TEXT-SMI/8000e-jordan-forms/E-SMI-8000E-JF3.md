@@ -35,7 +35,6 @@ audit:
     rank(C-2I) = 3, rank(C-2I)^2 = 1 and (C-2I)^3 = 0, giving blocks 3,2. No
     defect.
 ---
----
 
 ::: {.exercise}
 Find the Jordan forms of these matrices:

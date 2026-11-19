@@ -32,7 +32,6 @@ audit:
     with t not in P forces a in P; every a/s with a not in P is a unit; so PR_P is
     proper and maximal, and every proper ideal is contained in it. No defect.
 ---
----
 
 ::: {.exercise}
 Let $R$ be an integral domain and $P$ a prime ideal of $R$.

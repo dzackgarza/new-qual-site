@@ -32,7 +32,6 @@ audit:
     there is a fixed P; then PQ is a p-subgroup and PQ = P by maximality, so
     Q ≤ P. No defect.
 ---
----
 
 ::: {.exercise}
 Imitate the proof given in class for the number of Sylow subgroups to prove that if $\#G = m(p^r)$ where $p$ does not divide $m$, and if $Q$ is any subgroup of $G$ of order $p^s$ where $s < r$, then $Q$ is contained in some Sylow subgroup of order $p^r$.

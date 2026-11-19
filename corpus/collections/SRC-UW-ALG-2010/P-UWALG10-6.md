@@ -27,7 +27,6 @@ audit:
     $v^4=c^2=1$, $cvc=v^{-1}$, i.e. dihedral of order $8$; the eight automorphisms are listed.
     Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 (a) Let $L/F$ be a field extension that is finite and Galois.

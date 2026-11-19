@@ -34,7 +34,6 @@ audit:
     y^n + b_1 y^{n-1} + b_2 s y^{n-2} + ... + b_n s^{n-1} = 0 for y = sz over R,
     so y in R by normality and z = y/s in R_P. No defect.
 ---
----
 
 ::: {.exercise}
 If $R$ is normal and $P$ prime, prove that $R_P$ is also normal.

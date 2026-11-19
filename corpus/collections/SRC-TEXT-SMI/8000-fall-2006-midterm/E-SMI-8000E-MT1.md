@@ -32,7 +32,6 @@ audit:
     a chain union is a proper ideal because 1 in the union puts 1 in a member, and a
     maximal element of the poset is a maximal ideal containing x. No defect.
 ---
----
 
 ::: {.exercise}
 (a) State Zorn's lemma.

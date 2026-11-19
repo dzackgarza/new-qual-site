@@ -31,7 +31,6 @@ audit:
     ideal of R/I is J/I for J = π^{-1} of it, J is finitely generated in R, and the
     images of the generators generate J/I. No defect.
 ---
----
 
 ::: {.exercise}
 If $R$ is a noetherian ring and $I$ any ideal, then $R/I$ is noetherian too.

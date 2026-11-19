@@ -35,7 +35,6 @@ audit:
     matrix over Q with characteristic polynomial (t-2)^3(t-3)^4 is a pair of
     partitions of 3 and 4, again 15 classes. No defect.
 ---
----
 
 ::: {.exercise}
 (a) Write down one abelian group of order $n = 2^3 \cdot 3^4$, in each isomorphism class.

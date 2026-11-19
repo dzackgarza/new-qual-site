@@ -38,7 +38,6 @@ audit:
     is a one-step radical extension and the printed expectation is wrong. No
     defect in the card.
 ---
----
 
 ::: {.exercise}
 (i) Prove that the polynomial $f(X) = X^2 + X + 1$ is irreducible over $k = \ZZ/2$, and hence that the quotient $k[X]/(f)$ defines a field of 4 elements.

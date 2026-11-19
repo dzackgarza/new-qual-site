@@ -34,7 +34,6 @@ audit:
     diagonal list with zeros and the conclusion that a unit factor makes the
     product generate with fewer than m elements. No defect.
 ---
----
 
 ::: {.exercise}
 Assume $R$ is a Euclidean domain.

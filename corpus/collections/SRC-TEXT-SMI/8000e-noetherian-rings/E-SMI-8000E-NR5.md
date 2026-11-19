@@ -33,7 +33,6 @@ audit:
     of nonzero zero divisors in the quotient, and I maximal iff the only ideals of
     R/I are 0 and R/I iff every nonzero class is invertible. No defect.
 ---
----
 
 ::: {.exercise}
 If $R$ is any ring, and $I$ an ideal, $R/I$ is a domain if and only if $I$ is prime, and $R/I$ is a field if and only if $I$ is maximal.

@@ -35,7 +35,6 @@ audit:
     Hatcher discusses on p. 180, where he also notes it is only conjugate-linear and
     that the induced CP^{2k−1} map has no fixed points. No defect.
 ---
----
 
 ::: {.problem}
 Verify that the formula $f(z_1, \cdots, z_{2k}) = (\bar{z}_2, -\bar{z}_1, \bar{z}_4, -\bar{z}_3, \cdots, \bar{z}_{2k}, -\bar{z}_{2k-1})$ defines a map $f: \CC^{2k} \to \CC^{2k}$ inducing a quotient map $\CP^{2k-1} \to \CP^{2k-1}$ without fixed points.
@@ -115,7 +114,7 @@ Since $z\ne0$, this would imply $\abs{\lambda}^2=-1$, impossible.
 
 Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\CP^{2k-1}$.
 
-The conjugate-linear construction and fixed-point computation are given by **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85. The present computation is a concise form of the eigenvector/line argument there: $F(z)=\lambda z$ implies $-z=F^2(z)=\bar\lambda F(z)=|\lambda|^2z$, which cannot happen for $z\ne0$ and complex $\lambda$. Surjectivity and well-definedness on complex lines therefore leave no fixed point.
+The conjugate-linear construction and fixed-point computation are given by **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.3, printed pp. 84--85. The present computation is a concise form of the eigenvector/line argument there: $F(z)=\lambda z$ implies $-z=F^2(z)=\bar\lambda F(z)=\abs{\lambda}^2z$, which cannot happen for $z\ne0$ and complex $\lambda$. Surjectivity and well-definedness on complex lines therefore leave no fixed point.
 
 
 :::

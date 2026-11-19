@@ -33,7 +33,6 @@ audit:
     uses a preimage of the scalar; and both composites are the identity on the two
     sides, the first using ker f ⊆ I. No defect.
 ---
----
 
 ::: {.exercise}
 If $f: R \to S$ is a ring map and $I$ an ideal of $R$, then $f(I)$ may not be an ideal of $S$.

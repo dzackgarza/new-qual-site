@@ -32,7 +32,6 @@ audit:
     the first and irreducibility transfers; both quotients are the field of 125
     elements, and the explicit isomorphism is the standard one. No defect.
 ---
----
 
 ::: {.exercise}
 Find two different irreducible cubic polynomials mod 5, hence two different realizations of the unique field with 125 elements.

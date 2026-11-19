@@ -34,7 +34,6 @@ audit:
     case is closed by the count 4·2 = 8 elements of order 3 leaving a unique Sylow
     2-subgroup. No defect.
 ---
----
 
 ::: {.exercise}
 If $p$, $q$ are distinct primes, prove:

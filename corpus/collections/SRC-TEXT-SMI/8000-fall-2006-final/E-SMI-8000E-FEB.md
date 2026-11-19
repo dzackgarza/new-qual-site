@@ -33,7 +33,6 @@ audit:
     normal (every irreducible with a root in E splits; equivalently sigma(E) = E for
     every k-embedding into an algebraic closure). No defect.
 ---
----
 
 ::: {.exercise}
 Assume $k$ is a subfield of a field $E$, and $c$ an element of $E$.

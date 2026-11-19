@@ -34,7 +34,6 @@ audit:
     C_3 × C_3 × C_5, the only groups of order 9 being C_9 and C_3 × C_3. No
     defect.
 ---
----
 
 ::: {.exercise}
 Prove every group $G$ of order $45$ is abelian.

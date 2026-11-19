@@ -35,7 +35,6 @@ audit:
     p(3)p(2)p(1) = 6 classes, and the six groups are displayed explicitly. No
     defect.
 ---
----
 
 ::: {.exercise}
 (a) State the classification theorem for finitely generated modules over a Euclidean domain, and give a brief sketch of the main steps of the existence proof.

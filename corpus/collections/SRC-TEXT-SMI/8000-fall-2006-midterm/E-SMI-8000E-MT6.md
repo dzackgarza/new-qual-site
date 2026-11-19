@@ -33,7 +33,6 @@ audit:
     eigenvalue 2 contributes a single 1 by 1 block, m_A = (x-1)^3(x-2), and (b) is
     J = diag(1,1,1,1,2) + N_J with N_J^3 = 0. No defect.
 ---
----
 
 ::: {.exercise}
 (a) Compute both the characteristic and the minimal polynomials, and also the Jordan form $J$, of this matrix:

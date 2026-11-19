@@ -33,7 +33,6 @@ audit:
     the two possible C_2-actions on C_5 give C_10 and the dihedral group, so exactly
     one nonabelian group of order 10. No defect.
 ---
----
 
 ::: {.exercise}
 Prove one:

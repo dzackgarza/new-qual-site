@@ -34,7 +34,6 @@ audit:
     X^3+X+1, X^3+X^2+1) are exactly the monic irreducibles of degree at most 3,
     checked by the no-root test the card performs. No defect.
 ---
----
 
 ::: {.exercise}
 If $k = \ZZ/2\ZZ$, find all $k[X]$ module structures on $k^3$ up to isomorphism (which extend the natural $k$ module structure).

@@ -27,7 +27,6 @@ audit:
     module of rank $d$ over the PID $\CC[f]$ and is therefore free of rank $r\le d$; its basis
     together with $f$ generates $A$. Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 By looking at degrees of polynomials, show that any $\CC$-subalgebra of the ring $\CC[x]$ of polynomials in one variable over the complex field $\CC$ is finitely generated.

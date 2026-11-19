@@ -35,7 +35,6 @@ audit:
     and 7-r of k[t]/(t-3), eight classes; requiring the minimal polynomial to be
     exactly (t-2)(t-3) excludes r = 0, 7, leaving six Jordan forms. No defect.
 ---
----
 
 ::: {.exercise}
 (a) Write down all abelian groups of order 648 annihilated by 6 (always up to isomorphism).

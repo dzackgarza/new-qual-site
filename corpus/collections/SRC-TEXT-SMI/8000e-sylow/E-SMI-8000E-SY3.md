@@ -31,7 +31,6 @@ audit:
     and is ≡ 1 mod 7, and 1, 2, 6, 5 are the four residues, so n_7 = 1 and the
     Sylow 7-subgroup is a proper nontrivial normal subgroup. No defect.
 ---
----
 
 ::: {.exercise}
 Prove no group of order 182 is simple.

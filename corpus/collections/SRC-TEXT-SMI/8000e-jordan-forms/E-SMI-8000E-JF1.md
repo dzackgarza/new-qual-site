@@ -36,7 +36,6 @@ audit:
     given invariant factors have elementary divisors giving blocks 1,3,3 at 1;
     1,1,2 at 2; 3 at 5. All lists are complete and distinct. No defect.
 ---
----
 
 ::: {.exercise}
 (i) Find all $5 \times 5$ Jordan matrices with $m(t) = (X - 5)^2$.

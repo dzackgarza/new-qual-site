@@ -31,7 +31,6 @@ audit:
     augmentation is $0$), so it kills $I$; but $g-1\in I$ for every $g$, forcing $g\in H$.
     Nothing is left in outline.
 ---
----
 
 ::: {.problem}
 Let $G$ be an abelian group.

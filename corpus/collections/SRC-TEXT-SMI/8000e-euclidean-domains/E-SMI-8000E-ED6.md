@@ -32,7 +32,6 @@ audit:
     it isomorphically onto ker f; im(hfg) = h(im f) because g is onto; and h
     induces an isomorphism N/im f → N/h(im f) on the cokernels. No defect.
 ---
----
 
 ::: {.exercise}
 Prove that if $f: M \to N$ is any $R$ module map, and $g: M \to M$ and $h: N \to N$ are isomorphisms, then $h \circ f \circ g: M \to N$ has kernel and cokernel isomorphic to those of $f$.

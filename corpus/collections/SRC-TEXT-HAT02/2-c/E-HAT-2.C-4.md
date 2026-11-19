@@ -37,7 +37,6 @@ audit:
     the alternating sum) identifies the alternating chain trace with tau(f); and the
     alternating count of simplices is the Euler characteristic. No defect.
 ---
----
 
 ::: {.problem}
 If $X$ is a finite simplicial complex and $f: X \to X$ is a simplicial homeomorphism, show that the Lefschetz number $\tau(f)$ equals the Euler characteristic of the set of fixed points of $f$.

@@ -40,7 +40,6 @@ audit:
     copy of Dummit and Foote; the statements the card proves are the ones that
     argument needs. No defect.
 ---
----
 
 ::: {.exercise}
 Work problems 14, 15, 16, 17, page 557 of Dummit and Foote, then deduce Corollary 28, page 600: every finite abelian group occurs as the Galois group over $\QQ$ of some subextension of a cyclotomic extension.

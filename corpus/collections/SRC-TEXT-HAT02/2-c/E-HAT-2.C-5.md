@@ -36,7 +36,6 @@ audit:
     δρ(0) = δ ≠ 0. This is consistent with tau(r) = chi(M ∩ P) = 0 from the preceding
     exercise, so the Lefschetz theorem does not obstruct it. No defect.
 ---
----
 
 ::: {.problem}
 Let $M$ be a closed orientable surface embedded in $\RR^3$ in such a way that reflection across a plane $P$ defines a homeomorphism $r: M \to M$ fixing $M \cap P$, a collection of circles.
