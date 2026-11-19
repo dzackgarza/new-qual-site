@@ -329,6 +329,30 @@ audit:
     Not read here: Harris's section 1 and sections 3--5, which the card does
     not use, and Yang's and Egbert's other V.6 entries. Not searched: any
     other publication for a proof of the equality case.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The equality case is published after all: Hartshorne, Algebraic Geometry
+    (1977), Theorem 5.4 (Clifford), statement printed p. 343 and proof
+    printed pp. 343--345 (text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15; PDF pp. 358--360), states the equality clause in full:
+    equality holds exactly for D=0, D=K, or X hyperelliptic with D a multiple
+    of the unique g^1_2, and proves it. Step clifford-equality-canonical
+    applies that theorem and excludes the hyperelliptic alternative because
+    O_C(1) is very ample. The earlier events of this card that record no
+    published derivation of the equality case were looking for a published
+    solution set and missed the book's own theorem; they stand as written on
+    their dates and are superseded on this point by this event and by the
+    record of this date in COMPLAINTS.md. The rendered step now cites the
+    theorem and its pages instead of calling the step the card's own, and the
+    remark states the same. With the strict case on Harris's bound, printed
+    pp. 42--44, the card's proof of V.6.2 is on published sources throughout.
+    Checked in this pass: the statement and proof of Theorem 5.4 at the pages
+    named, and the application in step clifford-equality-canonical. Not
+    checked: no other printed proof of the equality case was searched for,
+    and the card's other steps were not re-derived.
 ---
 
 ::: {.problem}
@@ -613,7 +637,9 @@ $$
 L\cong\omega_C.
 $$
 
-This step is the card's own.
+Clifford's theorem with its equality clause is Hartshorne, Theorem 5.4, printed
+p. 343 and proved on pp. 343--345; the exclusion of the hyperelliptic case by
+very ampleness is the one-line argument above.
 :::
 
 :::
@@ -844,4 +870,6 @@ $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-
 and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
 
 The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, printed p. 422, having got $\linearsystem{12K}$ nonempty by Theorem 6.1, printed p. 422; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
+
+The equality case itself is the book's own Theorem 5.4: its statement, including the classification of equality as $D=0$, $D=K$, or $C$ hyperelliptic with $D$ a multiple of the $g^1_2$, is printed on p. 343 and its proof on pp. 343--345. Step [](#clifford-equality-canonical){.pf-ref} applies it and excludes the hyperelliptic alternative because $\OO_C(1)$ is very ample. Neither entry above supplies that argument: Yang's chain in the equality case reads $2g-2=d+H\cdot K_X\ge d$ against $n+1\le h^0(\OO_H(d))=1-g+d$, which at $d=2n$ gives $g\le n$ and $g\ge n+1$ and so refutes only the non-special case, while Egbert's $d=2(g-1)$ is the Clifford equality step left unstated.
 :::
