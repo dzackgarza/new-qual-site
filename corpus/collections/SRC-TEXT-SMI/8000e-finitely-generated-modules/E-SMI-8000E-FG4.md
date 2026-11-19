@@ -33,6 +33,16 @@ audit:
     matching the card's 6 + 4 + 2 + 2. The irreducibles listed (X, X+1, X^2+X+1,
     X^3+X+1, X^3+X^2+1) are exactly the monic irreducibles of degree at most 3,
     checked by the no-root test the card performs. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 4, item #4. The irreducibles
+    of degree at most $3$ are $X$, $X+1$, $X^2+X+1$, $X^3+X+1$, $X^3+X^2+1$; the elementary
+    divisor decompositions of weighted degree $3$ are $3$ at one linear prime ($2\cdot3=6$),
+    $2+1$ at the two linear primes ($4$), $2+1$ at the quadratic and a linear prime ($2$), and
+    $3$ at a cubic ($2$), in total $14$, matching the invariant-factor count
+    $8+4+2$. No defect.
 ---
 
 ::: {.exercise}
