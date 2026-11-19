@@ -349,5 +349,7 @@ Steps [](#conics-through-two-points-basis){.pf-ref}, [](#rational-map-base-locus
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 406 of Hartshorne, in the EXERCISES that close §V.4, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the reference to (4.1) included.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.4.1, PDF pp. 285--286: he takes the conics through $P_1=(0,0,1)$ and $P_2=(0,1,0)$ with basis $x_0^2,x_0x_1,x_0x_2,x_1x_2$, notes that the map $[x_0^2:x_0x_1:x_0x_2:x_1x_2]$ has image in $y_0y_3=y_1y_2$, identifies the graph $\Gamma$ with the blowup of $\PP^2$ at the two points and with the blowup of the quadric at $p=(0,0,0,1)$, and concludes $X'=\Gamma$. His intermediate composition claims are wrong as written, $\pi\circ\psi=\mathrm{id}_{\PP^2}$ and $\psi\circ\pi=\mathrm{id}_Q$, since $\pi\circ\psi$ is the blowup map on $X'$ and $\psi\circ\pi$ is undefined at $p$; what is true is that the graph of the projection $\rho$ from $p$ is $X'$, which is steps [](#graph-is-blowup-both-ways){.pf-ref} and [](#projection-inverse){.pf-ref} here, with the quadric's nonsingularity in step [](#quadric-nonsingular){.pf-ref} and the contracted curve $L\sim H-E_1-E_2$ in step [](#exceptional-line-contracted){.pf-ref}. Matches in substance.
 :::
