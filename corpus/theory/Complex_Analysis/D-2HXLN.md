@@ -31,5 +31,5 @@ The \dfn{hyperbolic metric} is the family $\rho_{\DD}(z)\abs{\dz}$ with $\rho_{\
 
 ::: {.remark}
 The metric is complete and its geodesics are the circle arcs and diameters meeting $\bd\DD$ orthogonally; the hyperbolic distance is realised by exactly one such arc through two distinct points.
-It is invariant under the automorphisms of $\DD$: the [[D-MFPYG|Blaschke factors]] satisfy $\abs{\psi_a'(z)}/(1-\abs{\psi_a(z)}^2) = (1-\abs z^2)^{-1}$ [@SS03, ch. 8, sec. 1].
+It is invariant under the automorphisms of $\DD$: the [[D-MFPYG|Blaschke factors]] satisfy $\abs{\psi_a'(z)}/(1-\abs{\psi_a(z)}^2) = (1-\abs z^2)^{-1}$, and the invariance under every automorphism is part of [@SS03, Exercise 13(b) of Chapter 8 (p. 256)], where this distance and the metric $\abs{\dz}^2/(1-\abs z^2)^2$ are defined.
 :::
