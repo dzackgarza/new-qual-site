@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate: the remark describing the printed
+    pp. 68--69 statement used `\shsheaf_Y` twice and `\shsheaf` once, and `\shsheaf` is defined
+    nowhere. The token has no single referent to restore --- the printed statement writes `\mci_Y`
+    for the sheaf of ideals and `\OO_X`, `\OO_Y` for the structure sheaves, and the note's two uses
+    do not agree --- so the sentence now names the objects in words ("the sheaf of ideals of $Y$, the
+    quotient of part (b)") instead of guessing a symbol. No mathematics changes: the note describes
+    the statement, which itself is untouched. Checked: `qualc.authoring check` on the card, and the
+    statement read to see which symbols it uses. Not checked: the printed pages were not re-read in
+    this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-17
@@ -663,7 +676,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [
 :::
 
 ::: {.remark}
-The exercise stands on printed pp. 68--69 of Hartshorne, headed "Some Examples of Sheaves on Varieties", its head and part (a) beginning at the foot of p. 68 and parts (b)--(e) on p. 69; read off those pages (100 dpi renders of PDF pp. 83 and 84, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines).  The statement above is that text, parts (a)--(e) including the sheaf of ideals $\shsheaf_Y$ of $Y$, the quotient $\shsheaf_Y$ with $\shsheaf$ in part (b), and the exact sequences of (c), (d) and (e).
+The exercise stands on printed pp. 68--69 of Hartshorne, headed "Some Examples of Sheaves on Varieties", its head and part (a) beginning at the foot of p. 68 and parts (b)--(e) on p. 69; read off those pages (100 dpi renders of PDF pp. 83 and 84, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines).  The statement above is that text, parts (a)--(e) including the sheaf of ideals of $Y$, the quotient of part (b), and the exact sequences of (c), (d) and (e).
 
 Part (e) is an analogue of the first Cousin problem in several complex variables; see Gunning and Rossi.
 :::
