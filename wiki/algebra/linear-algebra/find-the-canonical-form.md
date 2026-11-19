@@ -28,6 +28,8 @@ Both come from the structure theorem for the finitely generated $F[t]$-module $F
 ### Characteristic polynomial
 
 The roots of $\chi_A(t) = \det(tI - A)$ are the eigenvalues, with algebraic multiplicities.
+
+[[D-QFYAC]]
 Also $\trace A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenvalues of a triangular matrix are its diagonal entries.
 
 ### Minimal polynomial
@@ -38,6 +40,10 @@ $\min_A$ divides $\chi_A$ and has the same irreducible factors, so it is determi
 
 $A$ is diagonalizable over $F$ if and only if $\min_A$ is a product of distinct linear factors over $F$.
 In that case $A$ is similar to $\diag(\lambda_1,\ldots,\lambda_n)$, with each eigenvalue repeated according to its multiplicity in $\chi_A$.
+
+[[FT-BC6S2]]
+
+[[FD-K6FVX]]
 
 ### Jordan block sizes
 
@@ -52,9 +58,15 @@ For each eigenvalue $\lambda$:
 These three numbers determine the Jordan blocks for $\lambda$ when its algebraic multiplicity is at most $6$; for multiplicity $7$, the block sizes $3+3+1$ and $3+2+2$ share all three.
 In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$.
 
+[[L-CD6QT]]
+
 ### Rational canonical form
 
 If $\chi_A$ does not split, the rational canonical form is the block diagonal matrix of the companion matrices of the invariant factors $p_1\divides\cdots\divides p_m$ of $tI-A$, and $p_m = \min_A$.
+
+[[FD-XT6HD]]
+
+[[L-Y5KNM]]
 
 ## Similarity classes from the two polynomials
 
