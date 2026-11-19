@@ -72,7 +72,7 @@ First $V(I+J)=V(I)\cap V(J)$, since a point kills $I+J$ exactly when it kills bo
 (c) $I\cap J=(tI+(1-t)J)\cap R$, inside $R[t]$.
 
 ::: pf-proof
-Put $K=tI+(1-t)J\subseteq R[t]$. If $f\in I\cap J$ then $f=tf+(1-t)f\in K$ with $f\in R$, so $I\cap J\subseteq K\cap R$. Conversely let $f\in K\cap R$, so $f=ta+(1-t)b$ with $a\in IR[t]$ and $b\in JR[t]$; specialising $t=1$ gives $f=a\restrictionof_{t=1}\in I$ and specialising $t=0$ gives $f=b\restrictionof_{t=0}\in J$, since $f$ does not involve $t$. Hence $K\cap R\subseteq I\cap J$.
+Put $K=tI+(1-t)J\subseteq R[t]$. If $f\in I\cap J$ then $f=tf+(1-t)f\in K$ with $f\in R$, so $I\cap J\subseteq K\cap R$. Conversely let $f\in K\cap R$, so $f=ta+(1-t)b$ with $a\in IR[t]$ and $b\in JR[t]$; specialising $t=1$ gives $\restrictionof{f}{t=1}\in I$ and specialising $t=0$ gives $\restrictionof{f}{t=0}\in J$, since $f$ does not involve $t$. Hence $K\cap R\subseteq I\cap J$.
 :::
 
 :::
