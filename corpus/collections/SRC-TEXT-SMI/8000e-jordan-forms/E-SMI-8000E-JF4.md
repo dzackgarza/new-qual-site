@@ -33,6 +33,16 @@ audit:
     are 2i, 4, -6, 2, 1 and each product is exactly the displayed Jordan matrix
     (diag(i,-i); J_2(3) ⊕ J_1(1); diag(-2,1,3); J_2(2) ⊕ J_1(2) ⊕ J_1(-2);
     J_2(3) ⊕ J_2(2) ⊕ J_1(2)). No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 4, Jordan forms Exercise
+    4(i)--(iii) and the two matrices at the top of page 5 (the packet's second and third
+    "(ii)", numbered (iv) and (v) on the card). Exact computation gives determinants
+    $2i,4,-6,2,1$ and $MQ=QJ$ for all five pairs, hence $Q^{-1}MQ=J$ with the displayed
+    forms $\operatorname{diag}(i,-i)$, $J_2(3)\oplus J_1(1)$, $\operatorname{diag}(-2,1,3)$,
+    $J_2(2)\oplus J_1(2)\oplus J_1(-2)$, $J_2(3)\oplus J_2(2)\oplus J_1(2)$. No defect.
 ---
 
 ::: {.exercise}
