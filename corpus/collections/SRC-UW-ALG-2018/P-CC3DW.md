@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Second provenance recorded: the same question is Problem 8 of the Algebra Preliminary
+    Examination of September 8, 2008 (University of Washington), printed p. 2 of the two-page paper
+    retained at assets/attachments/UW-Algebra-Qual-2008.pdf, and the 2008 collection's index lists
+    this card among its problems. The paragraph at the head of the solution now says so. Checked:
+    the statement against the 2008 paper's text layer at the page named, and the matching of the
+    wording to Problem 8 there; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: the 2008 paper's own statement is not re-proved in this
+    pass, the mathematics of the card is unchanged, and no other card of the 2008 collection is
+    touched here.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -34,7 +47,7 @@ Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$
 :::
 
 ::: {.solution}
-The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
+The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own. The same question also stands as Problem 8 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 2 of `assets/attachments/UW-Algebra-Qual-2008.pdf`, which is the paper the 2008 collection retains; that paper prints no solutions either.
 
 Recall that two $n\times n$ matrices are similar when $M'=SMS^{-1}$ for some invertible $S$, that similarity is an equivalence relation, and that a matrix $C\in M_d(K)$ is cyclic when it has a cyclic vector: a vector $v\in K^d$ for which $v,Cv,\dots,C^{d-1}v$ is a basis of $K^d$. The quantifier matters here; a single $v$ is never asked to serve for every vector, and $v,Cv,\dots,C^{d-1}v$ is indeed dependent for most $v$.
 
