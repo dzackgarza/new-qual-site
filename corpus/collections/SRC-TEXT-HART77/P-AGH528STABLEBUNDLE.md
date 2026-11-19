@@ -299,6 +299,28 @@ audit:
     remark now says that his statement of (a) is the rank-two case and that his
     argument as written uses nothing about the ranks, and it no longer imputes a
     failure to the argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read on 2026-11-19 the Gunning pages this card cites outside printed
+    pp. 81-82 and 87-90, and repaired four page references. Printed p. 71
+    carries (1) and (2), which define an extension and the equivalence of two
+    extensions; Theorem 13 opens printed p. 72 with "the trivial extension
+    phi_1 (+) phi_2 corresponds to the zero element of the group", so the
+    theorem is printed pp. 72-74, not 71-74 as step s10 had it. Printed p. 80
+    carries (9), div Psi = max c(phi) over subbundles, which step s1 had
+    attributed to pp. 82-83. Printed p. 83 carries the definitions of stable and
+    unstable; the sentence "phi is stable precisely when div phi < (1/2)c(xi)"
+    and (16) open printed p. 84, where Lemma 15 states its parts (i) and (ii),
+    so step s5 now gives p. 84 for that sentence and step s8 and the remark give
+    pp. 84-85 for Lemma 15. Lemma 14, printed pp. 81-82; section (c) on printed
+    p. 83; Theorem 14, printed pp. 87-90; and "every decomposable bundle is
+    unstable" on printed p. 85 stand as the card has them. The pages were read
+    as renders at 150 dpi of
+    tmp/sources/gunning-1967-vector-bundles-riemann-surfaces.pdf, PDF pp. 80,
+    81, 90, 91, 92, 93, 94, 96, 97, 98 and 99, printed page = PDF page - 9, the
+    folios -71- to -90- read on those renders. No mathematical claim changes.
 ---
 
 ::: {.problem}
@@ -352,7 +374,7 @@ $$
 for every line subbundle $\mathcal A\subsetneq\mathcal E$, and semistability to the same inequalities with $\le$.
 
 ::: pf-proof
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, defines $\Phi$ to be stable when $c(\varphi)<\frac12c(\det\Phi)$ for every line bundle $\varphi\subset\Phi$, and unstable otherwise, and sets $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$; the exercise states the same condition for locally free quotients. A rank-two bundle with a locally free nonzero proper quotient
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed p. 83, defines $\Phi$ to be stable when $c(\varphi)<\frac12c(\det\Phi)$ for every line bundle $\varphi\subset\Phi$, and unstable otherwise, and sets $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, which is his (9), printed p. 80; the exercise states the same condition for locally free quotients. A rank-two bundle with a locally free nonzero proper quotient
 $$
 0\longrightarrow\mathcal A\longrightarrow\mathcal E\longrightarrow\mathcal F\longrightarrow0
 $$
@@ -408,7 +430,7 @@ $$
 $$
 
 ::: pf-proof
-Gunning, §(c), printed p. 83: "$\Phi$ is stable precisely when $\operatorname{div}\Phi<\frac12c(\xi)$". A normalized bundle has $\operatorname{div}\mathcal E=0$ by step [](#s3){.pf-ref}, so that inequality is $0<\frac12\deg\mathcal E$. In the language of steps [](#s1){.pf-ref} and [](#s3){.pf-ref}: if $\deg\mathcal E>0$ then every line subbundle has $\deg\mathcal A\le0<\frac12\deg\mathcal E$ and stability follows, and if $\mathcal E$ is stable then the subbundle $\OO_C\subseteq\mathcal E$ of step [](#s4){.pf-ref} gives $0<\frac12\deg\mathcal E$.
+Gunning, §(c), printed p. 84: "$\Phi$ is stable precisely when $\operatorname{div}\Phi<\frac12c(\xi)$". A normalized bundle has $\operatorname{div}\mathcal E=0$ by step [](#s3){.pf-ref}, so that inequality is $0<\frac12\deg\mathcal E$. In the language of steps [](#s1){.pf-ref} and [](#s3){.pf-ref}: if $\deg\mathcal E>0$ then every line subbundle has $\deg\mathcal A\le0<\frac12\deg\mathcal E$ and stability follows, and if $\mathcal E$ is stable then the subbundle $\OO_C\subseteq\mathcal E$ of step [](#s4){.pf-ref} gives $0<\frac12\deg\mathcal E$.
 
 :::
 
@@ -444,7 +466,7 @@ $$
 $$
 
 ::: pf-proof
-This is Lemma 15 of Gunning, printed pp. 83--85. Non-semistability is $\operatorname{div}\mathcal E>\frac12c(\xi)$, that is $2\deg\mathcal A>\deg\mathcal E$ for a maximal subbundle, which is the case of the lemma's part (i). Its part (i) states and proves uniqueness: if $\varphi_1\subset\Phi$ realizes $\operatorname{div}\Phi$ and $\varphi\subset\Phi$ is another subbundle with $c(\varphi)=\operatorname{div}\Phi$, then $\varphi^{-1}\varphi_1$ has a nontrivial section while $\varphi^{-1}\varphi_2$ has none, $\varphi_2=\Phi/\varphi_1$, because $c(\varphi^{-1}\varphi_2)=-2c(\varphi_1)+c(\xi)<0$; so $\varphi=\varphi_1$. In rank-two terms, a second maximal subbundle $\mathcal B$ with $\deg\mathcal A=\deg\mathcal B=a$ and no common generic line gives a nonzero map $\mathcal A\tensor\mathcal B\to\det\mathcal E$ and hence $2a\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$.
+This is Lemma 15 of Gunning, printed pp. 84--85. Non-semistability is $\operatorname{div}\mathcal E>\frac12c(\xi)$, that is $2\deg\mathcal A>\deg\mathcal E$ for a maximal subbundle, which is the case of the lemma's part (i). Its part (i) states and proves uniqueness: if $\varphi_1\subset\Phi$ realizes $\operatorname{div}\Phi$ and $\varphi\subset\Phi$ is another subbundle with $c(\varphi)=\operatorname{div}\Phi$, then $\varphi^{-1}\varphi_1$ has a nontrivial section while $\varphi^{-1}\varphi_2$ has none, $\varphi_2=\Phi/\varphi_1$, because $c(\varphi^{-1}\varphi_2)=-2c(\varphi_1)+c(\xi)<0$; so $\varphi=\varphi_1$. In rank-two terms, a second maximal subbundle $\mathcal B$ with $\deg\mathcal A=\deg\mathcal B=a$ and no common generic line gives a nonzero map $\mathcal A\tensor\mathcal B\to\det\mathcal E$ and hence $2a\le\deg\mathcal E$, contradicting $2a>\deg\mathcal E$.
 
 :::
 
@@ -472,7 +494,7 @@ This is the opening of the proof of Theorem 2.12, printed p. 376: corresponding 
 The bundle $\mathcal E_0$ of step [](#s9){.pf-ref} is normalized, and its extension class is a nonzero $\xi\in H^1(C,\mathcal L^\vee)$ well defined up to nonzero scalar.
 
 ::: pf-proof
-Normalization is the argument of Example 2.11.6, printed p. 375: the inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero section; for $\mathcal M$ of negative degree both end terms of the twisted sequence have negative degree because $\deg\mathcal L=-e<0$, so $H^0(C,\mathcal E_0\tensor\mathcal M)=0$. The identification of extension classes with $H^1(C,\mathcal L^\vee)$ is Theorem 13 of Gunning, printed pp. 71--74, whose statement also attaches the split extension to the zero class, so a nonsplit sequence has nonzero class. Rescaling the inclusion of $\OO_C$, or the quotient to $\mathcal L$, rescales the class without changing the middle bundle, so only its nonzero scalar class is intrinsic; Theorem 14 of Gunning, printed pp. 87--90, proves that proportional classes give isomorphic bundles and non-proportional ones do not.
+Normalization is the argument of Example 2.11.6, printed p. 375: the inclusion $\OO_C\subseteq\mathcal E_0$ gives a nonzero section; for $\mathcal M$ of negative degree both end terms of the twisted sequence have negative degree because $\deg\mathcal L=-e<0$, so $H^0(C,\mathcal E_0\tensor\mathcal M)=0$. The identification of extension classes with $H^1(C,\mathcal L^\vee)$ is Theorem 13 of Gunning, printed pp. 72--74, whose equivalence of extensions is his (2), printed p. 71, whose statement also attaches the split extension to the zero class, so a nonsplit sequence has nonzero class. Rescaling the inclusion of $\OO_C$, or the quotient to $\mathcal L$, rescales the class without changing the middle bundle, so only its nonzero scalar class is intrinsic; Theorem 14 of Gunning, printed pp. 87--90, proves that proportional classes give isomorphic bundles and non-proportional ones do not.
 
 :::
 
@@ -542,7 +564,7 @@ Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](
 :::
 
 ::: {.remark title="Published solution"}
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and on printed p. 85 he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s11){.pf-ref} follow that route, steps [](#s12){.pf-ref} and [](#s12b){.pf-ref} are the rank-two form of the same classification, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so his Theorem 14 is part (c) over $\CC$; the card proves it over an algebraically closed field of any characteristic, with step [](#s12){.pf-ref} constructing the middle term from the data and step [](#s12b){.pf-ref} deciding which classes give isomorphic bundles, and without the Riemann-surface theory.
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and on printed p. 85 he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, printed pp. 84--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s11){.pf-ref} follow that route, steps [](#s12){.pf-ref} and [](#s12b){.pf-ref} are the rank-two form of the same classification, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so his Theorem 14 is part (c) over $\CC$; the card proves it over an algebraically closed field of any characteristic, with step [](#s12){.pf-ref} constructing the middle term from the data and step [](#s12b){.pf-ref} deciding which classes give isomorphic bundles, and without the Riemann-surface theory.
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) in every rank from the weighted mean of the two slopes, which is step [](#s2){.pf-ref}, and (b) by the rearrangements of steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause; its argument assumes the bundle has $\OO_C$ as a subbundle with $\deg\mathcal L<0$, that is, takes the bundle to be the normalized model, so the twist that changes the bundle and leaves the data fixed is not accounted for there.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), PDF p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
