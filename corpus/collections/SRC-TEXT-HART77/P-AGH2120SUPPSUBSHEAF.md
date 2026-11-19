@@ -50,6 +50,8 @@ Furthermore, if $\mcf$ is flasque, show that the map $\mcf \to j_*\qty{\restrict
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.20, printed p. 68. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.20, printed p. 9, does the same two parts in the same order: the presheaf of sections supported in $Z$ is a sheaf because vanishing on a cover is local, and the exact sequence is checked over each open set, where the kernel of the restriction to $U\cap V$ is exactly the sections supported in $Z\cap V$.
+
 For every open $V\subseteq X$, put
 $$
 \mch(V)
