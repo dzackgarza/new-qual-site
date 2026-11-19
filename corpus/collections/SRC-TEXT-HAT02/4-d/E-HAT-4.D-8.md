@@ -78,7 +78,7 @@ The Thom space of a disk bundle is the quotient of the total space by its sphere
 ::: {.pf-step #suspension}
 $T(E)\cong B_+\wedge S^n=\Sigma^n(B_+)$.
 
-:::: pf-proof
+::: pf-proof
 
 ::: {.pf-step #quotients}
 For CW complexes $X$ and a CW pair $(Y,Y_0)$ one has $(X\times Y)/(X\times Y_0)\cong X_+\wedge(Y/Y_0)$.
