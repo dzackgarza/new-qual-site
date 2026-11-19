@@ -56,7 +56,7 @@ $e^{-2\pi iz\xi}=e^{-2\pi ix\xi}e^{2\pi y\xi}$ because $-2\pi i(x+iy)\xi=-2\pi i
 ::: {.pf-step #arc}
 The integral of $\dfrac{e^{-2\pi iz\xi}}{(1+z^2)^2}$ over the semicircle $\abs z=R$, $\Im z\le0$, tends to $0$ as $R\to\infty$. Hence for $\xi>0$
 $$
-I(\xi)=\lim_{R\to\infty}\oint_{\Gamma_R}\frac{e^{-2\pi iz\xi}}{(1+z^2)^2}\,\dd z,
+I(\xi)=\lim_{R\to\infty}\oint_{\Gamma_R}\frac{e^{-2\pi iz\xi}}{(1+z^2)^2}\dz,
 $$
 where $\Gamma_R$ is the boundary of the half-disc $\abs z<R$, $\Im z<0$, traversed clockwise.
 
@@ -74,9 +74,9 @@ $$
 $$
 
 ::: pf-proof
-$1+z^2=(z-i)^2(z+i)^2$, so the residue at $z=-i$ is $\dfrac{\dd}{\dd z}\Bigl[\dfrac{e^{-2\pi iz\xi}}{(z-i)^2}\Bigr]$ at $z=-i$. The quotient rule gives
+$1+z^2=(z-i)^2(z+i)^2$, so the residue at $z=-i$ is $\dfrac{d}{dz}\Bigl[\dfrac{e^{-2\pi iz\xi}}{(z-i)^2}\Bigr]$ at $z=-i$. The quotient rule gives
 $$
-\frac{\dd}{\dd z}\frac{e^{-2\pi iz\xi}}{(z-i)^2}=\frac{\bigl[(-2\pi i\xi)(z-i)-2\bigr]e^{-2\pi iz\xi}}{(z-i)^3}.
+\frac{d}{dz}\frac{e^{-2\pi iz\xi}}{(z-i)^2}=\frac{\bigl[(-2\pi i\xi)(z-i)-2\bigr]e^{-2\pi iz\xi}}{(z-i)^3}.
 $$
 At $z=-i$ one has $z-i=-2i$, $(z-i)^3=8i$, $e^{-2\pi iz\xi}=e^{-2\pi\xi}$, and $(-2\pi i\xi)(-2i)-2=-4\pi\xi-2$; hence the residue is $(-4\pi\xi-2)e^{-2\pi\xi}/(8i)$, and $1/(8i)=-i/8$, so it equals $(4\pi\xi+2)e^{-2\pi\xi}i/8=\frac{i}{4}(1+2\pi\xi)e^{-2\pi\xi}$.
 :::
@@ -102,9 +102,9 @@ using $-2\pi i\cdot i/4=2\pi/4=\pi/2$.
 For $\xi<0$, $\displaystyle I(\xi)=\frac{\pi}{2}(1-2\pi\xi)e^{2\pi\xi}=\frac{\pi}{2}(1+2\pi\abs\xi)e^{-2\pi\abs\xi}$.
 
 ::: pf-proof
-In the integral defining $I(-\xi)$, substitute $x=-u$, $\dd x=-\dd u$, and flip the limits:
+In the integral defining $I(-\xi)$, substitute $x=-u$, $\dx=-\,du$, and flip the limits:
 $$
-I(-\xi)=\int_{-\infty}^{\infty}\frac{e^{2\pi iu\xi}}{(1+u^2)^2}\,\dd u=\int_{-\infty}^{\infty}\frac{e^{-2\pi iu\xi}}{(1+u^2)^2}\,\dd u=I(\xi),
+I(-\xi)=\int_{-\infty}^{\infty}\frac{e^{2\pi iu\xi}}{(1+u^2)^2}\,du=\int_{-\infty}^{\infty}\frac{e^{-2\pi iu\xi}}{(1+u^2)^2}\,du=I(\xi),
 $$
 the middle integral being the complex conjugate of $I(\xi)$ because $(1+u^2)^{-2}$ is real. So $I$ is even, and for $\xi<0$ step [](#positive){.pf-ref} applied to $\abs\xi$ gives the first display; the second is its rewriting with $\abs\xi=-\xi$, using $1-2\pi\xi=1+2\pi\abs\xi$ and $2\pi\xi=-2\pi\abs\xi$.
 :::
@@ -113,12 +113,12 @@ the middle integral being the complex conjugate of $I(\xi)$ because $(1+u^2)^{-2
 
 
 ::: {.pf-step #zero}
-For $\xi=0$, $\displaystyle I(0)=\int_{-\infty}^{\infty}\frac{\dd x}{(1+x^2)^2}=\frac{\pi}{2}$, which is the displayed formula at $\xi=0$.
+For $\xi=0$, $\displaystyle I(0)=\int_{-\infty}^{\infty}\frac{\dx}{(1+x^2)^2}=\frac{\pi}{2}$, which is the displayed formula at $\xi=0$.
 
 ::: pf-proof
-Substituting $x=\tan\theta$, $\dd x=\sec^2\theta\,\dd\theta$ and $1+x^2=\sec^2\theta$ on $(-\pi/2,\pi/2)$,
+Substituting $x=\tan\theta$, $\dx=\sec^2\theta\dtheta$ and $1+x^2=\sec^2\theta$ on $(-\pi/2,\pi/2)$,
 $$
-\int_{-\infty}^{\infty}\frac{\dd x}{(1+x^2)^2}=\int_{-\pi/2}^{\pi/2}\cos^2\theta\,\dd\theta=\frac{\pi}{2},
+\int_{-\infty}^{\infty}\frac{\dx}{(1+x^2)^2}=\int_{-\pi/2}^{\pi/2}\cos^2\theta\dtheta=\frac{\pi}{2},
 $$
 since the mean value of $\cos^2$ over a period is $\frac12$. The right-hand side of the displayed formula at $\xi=0$ is $\frac{\pi}{2}(1+0)\cdot1=\frac{\pi}{2}$.
 :::
