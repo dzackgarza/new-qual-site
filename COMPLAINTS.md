@@ -546,11 +546,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **49 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **48 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Forty-eight of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 49 stand as this item lists them.
+   reported and repaired above. Forty-nine of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 48 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -856,7 +856,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    noncompact manifolds (§3.3) puts its homology in degrees $0$ and $1$ only, and Hurewicz then makes it
    contractible, so the surface is a $K(\pi,1)$.
 
-   Remaining unread in this item's set: §4.2 (25 more, incl. -5), §4.3 (24) --- 49 proofs.
+   **§4.2-17, read the same day.** Correct, no card changed. For $X$ $(n-1)$-connected and $Y$ with a
+   single nonvanishing homotopy group in degree $n$, $[X,Y]=H^n(X;\pi_n(Y))$ by obstruction theory, and that
+   is $\operatorname{Hom}(H_n(X),\pi_n(Y))=\operatorname{Hom}(\pi_n(X),\pi_n(Y))$ by Hurewicz, which is the
+   bijection; uniqueness of $K(G,n)$ follows by the usual representability argument, the identity
+   corresponding to the identity.
+
+   Remaining unread in this item's set: §4.2 (24 more, incl. -5), §4.3 (24) --- 48 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
