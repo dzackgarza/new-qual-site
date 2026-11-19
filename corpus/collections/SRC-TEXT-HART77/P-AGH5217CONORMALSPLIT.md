@@ -294,6 +294,38 @@ audit:
     in characteristic 2, as the remark says. Not checked: the card's other
     steps were not re-derived in this pass; only step s3's computation was
     verified line by line.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Characteristics 2 and 3 re-checked, and the splitting settled without the
+    splitting theorem, so that the row of issue #160 for this exercise is met.
+    Step s3's substitution was redone by hand from b = a^n + h and
+    c = a^{n+1} + ah + q: c^{n-1} = a^{n^2-1} + (n-1)a^{n^2-n-2}(ah+q) and
+    (a^n+h)^n = a^{n^2} + n a^{n^2-n}h, so the numerator is
+    -a^{n^2-n}h + (n-1)a^{n^2-n-1}q, and dividing by c^n congruent to
+    a^{n^2+n} gives h' congruent to -s^{-2n}h + (n-1)s^{-2n-1}q; the class is
+    (n-1)s^{-1} in H^1(O(-2)), whose generator is s^{-1}. Hence n = 3 gives
+    2s^{-1}, nonzero in characteristic 3 and zero in characteristic 2, which is
+    l = m = -7 in characteristic 3 as the printed answer on p. 386 says and
+    O(-6) + O(-8) in characteristic 2. The transition identity was also checked
+    mechanically over Z in the truncated ring Z[a^{+-1},h,q]/(h,q)^2 for
+    n = 2,...,7, and the splitting follows from it by an explicit change of
+    frames rather than from Birkhoff-Grothendieck: with c = n-1 nonzero,
+    M = s^{-2n-1}AB where A = [[c,0],[-s,1]] has determinant c and entries in
+    k[s], and B = [[s^{-1}/c,1],[1/c,0]] has determinant -1/c and entries in
+    k[s^{-1}], so the frames over the two charts can be changed to make the
+    gluing scalar. Yang Pi-Yeh, Hartshorne Solutions, Solution 5.2.17(b),
+    printed p. 107, prints "If char(k) = 2,3, F(phi) is given by (t^3,u^3,0).
+    So ker F(phi) = R(-8) + R(-6)", and the characteristic 3 half of that
+    sentence is false by the computation above; its characteristic 2 half
+    agrees with the book although the degenerate row it comes from also gives
+    O(-4) + O(-6) for part (a) in characteristic 2, where the answer is
+    O(-5) + O(-5). Read for this pass: Hartshorne V.2, exercise 2.17 with its
+    printed answer, printed pp. 385-386, and Yang's Solution 5.2.17 in
+    tmp/sources/lfwin-hartshorne-solutions.md. Not checked: any printing other
+    than the text versions, and steps s1, s2, s4, s5 and s6 were read for their
+    field hypotheses only, not re-derived.
 ---
 
 ::: {.problem}
