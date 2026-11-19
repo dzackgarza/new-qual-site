@@ -5286,3 +5286,41 @@ with the verification that both vanish at each $\alpha_{i}$ and the dimension co
 **Uncertainty.** These are three cards of one residue, read one at a time; the size of the error over the whole corpus is not measured here. The screen itself was not modified in this session, and no count above is offered as a corrected figure.
 
 **Repair.** None attempted: extending the phrase list is the screen owner's call, and the cards are correct as they stand. The rule this supports is that a screen flag is a candidate and a card must be opened before it is "repaired".
+
+## 2026-11-19, correction: the provenance figure is 81.2%, not 84.7% — the first screen's phrase list was too short
+
+**What this corrects.** The entry above, "the provenance sentence the per-card rule requires is missing on about 85% of the corpus's structured solutions", measured the gap with a nine-phrase list and reported 84.7% lacking. That figure is an **upper bound produced by an incomplete screen**, and it is superseded here. The phenomenon it describes stands; the number does not.
+
+**What exposed it.** Auditing cards that carry this session's audit events surfaced two flagged as lacking provenance, and reading them showed the screen was wrong rather than the cards:
+
+- `E-PQHZN` opens "The complete published solution is **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.12, PDF pp. 6--7" — a provenance statement in the form the rule asks for, which the phrase list missed because it looked for "solution set" and "transcrib", not "published solution".
+- `P-AGHCOORDCHAR` opens "The published solutions are recorded above: Borcherds proves the forward direction…" — likewise, missed for want of "recorded above".
+
+**The re-measurement.** Same population and method — every card file with a `.solution` section and at least one `.pf-step` — with the phrase list widened to the forms the rule sanctions and their variants (`card's own`, `own argument`, `transcrib`, `retained`, `published solution`, `solution set`, `recorded above|below`, `no published`, `derived here`, `adapted from`, `is the card`):
+
+| measurement | cards | with a provenance statement | lacking |
+| --- | ---: | ---: | ---: |
+| first screen (superseded) | 10927 | 1667 (15.3%) | 9260 (84.7%) |
+| widened screen (this record) | 10944 | 2058 (18.8%) | **8886 (81.2%)** |
+
+Measured at main = `b3842939a7de`; the corpus grew by 17 cards between the two runs, so the percentages are comparable but not computed on identical populations.
+
+**What is still not established, and what is.** The widened screen is still a phrase match: it cannot distinguish a card that names a source from one that says which part is transcribed and which is its own, and a card could satisfy it with a sentence naming a set it does not use. So **81.2% is a ceiling on the gap, not a count of defective cards**; the true figure lies at or below it, and no card-by-card read was done to locate it. The five cards the widened screen catches and the narrow one missed are `P-AGH2110DIRLIM`, `P-AGH2111NOETHDIRLIM`, `P-AGH2112INVLIM`, `P-AGH2113ESPETALE` and `P-AGH2114SUPPORT`, all naming their sources in the "published solutions are recorded above" form.
+
+**The rule this yields.** A phrase screen over prose must be widened until it is shown not to miss a form one has already read on a card; two cards read by hand moved the figure by three and a half points. The remedy stated in the entry above is unchanged: the sentence is one line per card and a sweep across thousands of cards is a dispatch decision, not a chat's.
+
+## 2026-11-19, fifth item: the 87 residue-1 cards this session wrote have one `audit:` key each and 290 well-formed events
+
+**Object and need.** The residue-1 completion entry above rests on `qualc.authoring check`, which reads a card's schema but does not report duplicate YAML keys or the shape of individual audit events. Since this session appended an event to every card it touched — and one such append produced invalid YAML before it was caught — the frontmatter of those 87 cards is verified separately here.
+
+**Observed evidence.** Every card file named by the 87 ids of this residue's partition, parsed with a YAML loader that raises on a **duplicate mapping key** rather than keeping the last:
+
+```
+cards: 87   with audit: 87   total events: 290   problems: 0
+```
+
+Each file has exactly one `audit:` key, its value is a list, and each of the 290 events carries `event`, `by` and `date`, with `date` matching `YYYY-MM-DD`. The duplicate-key loader is the point: `yaml.safe_load` accepts a second `audit:` key silently, and the failure mode this session met was the reverse one — an event appended *after* `review:` in a card whose audit block is not last, which `qualc.authoring check` reports as `expected <block end>, but found '-'`.
+
+**Impact and owner.** Anyone reading these cards' audit trail, and the corpus report, which fails outright on a card whose frontmatter does not parse. The check is cheap and can be run over any residue: load with a duplicate-key-detecting constructor and assert the three keys and the date shape on each event.
+
+**Uncertainty.** This verifies structure, not content: it says nothing about whether each event's note is true, which is the reading obligation the notes themselves describe. The 290 events include earlier sessions' events on the same cards, so the count is not the number this session wrote.
