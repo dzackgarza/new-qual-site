@@ -34,6 +34,16 @@ audit:
     (t-2)(t-3)-module of dimension 7 is a direct sum with r copies of k[t]/(t-2)
     and 7-r of k[t]/(t-3), eight classes; requiring the minimal polynomial to be
     exactly (t-2)(t-3) excludes r = 0, 7, leaving six Jordan forms. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 3, #2(a),(b),(c).
+    Multiplication by $3$ is an automorphism of the $2$-primary part, so $6G=0$ forces
+    exponent $2$ there, and by $2$ of the $3$-primary part, so exponent $3$ there: the unique
+    group $(\ZZ/2)^3\oplus(\ZZ/3)^4$. A $(t-2)(t-3)$-module of dimension $7$ is
+    $(k[t]/(t-2))^r\oplus(k[t]/(t-3))^{7-r}$, eight classes; requiring the minimal polynomial
+    to be exactly $(t-2)(t-3)$ leaves $1\le r\le6$, six diagonal Jordan forms. No defect.
 ---
 
 ::: {.exercise}
