@@ -25,10 +25,10 @@ Closed path integrals of holomorphic functions vanish.
 
 :::
 
-::: {.remark title="Goursat's theorem"}
-Goursat's theorem proves $\int_{\bd T} f = 0$ for every triangle $T$ in the domain of a holomorphic $f$ by repeated bisection, with no continuity assumption on $f'$; continuity of $f'$ is then a consequence of the Cauchy integral formula.
+[[T-B3BDO]]
 
-:::
+Goursat's theorem is the triangle form: it proves $\int_{\bd T} f = 0$ by repeated bisection, with no continuity assumption on $f'$.
+Continuity of $f'$ is then a consequence of the Cauchy integral formula.
 
 ## Immediate consequences
 

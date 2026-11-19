@@ -10,12 +10,8 @@ topics:
 
 # Normal families and Montel
 
-Montel's theorem gives compactness for locally uniformly bounded families of holomorphic functions.
+Montel's theorem gives compactness for families of holomorphic functions that are [[D-MBDTR|uniformly bounded on compact subsets]], with respect to [[D-AIQG3|locally uniform convergence]].
 In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem]] it produces a locally uniformly convergent subsequence of injective maps, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] shows that the nonconstant limit is injective.
-
-::: {.remark}
-Throughout, "locally uniformly" means "uniformly on every compact subset".
-:::
 
 ## Equicontinuity
 
@@ -34,10 +30,6 @@ A family $\mathcal F$ of functions on a metric space $X$ is not uniformly equico
 [[D-MBDTR]]
 
 [[D-OHFRH]]
-
-::: {.example title="The real analogue fails"}
-The map $f(x) = x^3$ is a bijection $\RR\to\RR$ with $f'(0)=0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
-:::
 
 [[E-YFL4K]]
 
