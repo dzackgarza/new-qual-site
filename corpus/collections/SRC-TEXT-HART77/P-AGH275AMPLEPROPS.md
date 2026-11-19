@@ -20,6 +20,33 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise II.7.5 as printed in the text version, including the
+    standing hypothesis that X is noetherian and the extra hypothesis that X is
+    of finite type over a noetherian ring A in (d) and (e); the five parts
+    agree. The proof is correct. (a) tensors the globally generated M^q with
+    F tensor L^q, using that a tensor product of globally generated sheaves is
+    globally generated; (b) takes a with M tensor L^a globally generated, which
+    exists by ampleness because M is coherent, and then applies (a) with L^n-a;
+    (c) applies ampleness to F and to O_X and takes the larger bound. In (d),
+    Theorem 7.1(b) supplies g from the finitely many sections, finitely many
+    because X is quasi-compact; the graph is a closed immersion since P^s_A is
+    separated over A; i times the identity is a base change of the immersion i;
+    and Exercise II.5.11 gives the Segre closed immersion with O(1) pulling back
+    to p_1^*O(1) tensor p_2^*O(1), so the composite pulls O(1) back to
+    L tensor M. In (e), Theorem 7.6 gives h with L^h very ample, ampleness of L
+    applied to O_X gives b with L^q globally generated for q at least b, and
+    n at least h+b gives L^n = L^h tensor L^n-h very ample by (d); this is the
+    point of the exercise, since it covers all large n and not only multiples
+    of h. The three citations (Theorems 7.1 and 7.6, Exercise II.5.11) were
+    checked against the text. Added a published-solution remark citing Kim,
+    PDF pp. 85-86 (pages checked in the PDF), with Egbert's 2.7.7 at p. 136 and
+    Saglam-Chris at p. 94 noted; Kim's (b) and (e) leave the exponents
+    unspecified where the card gives them. Nothing in the statement or the
+    proof was changed.
 ---
 
 ::: {.problem}
@@ -189,4 +216,11 @@ Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §7, Exercise 2.7.5, PDF pp. 85--86, text version `tmp/sources/hartshorne-solutions-kim.md`: he first records that a tensor product of globally generated sheaves is globally generated, then proves (a) by tensoring $\mathcal F\otimes\mcl^q$ with $\mcm^q$, (b) by applying (a) one step beyond the exponent at which $\mcm\otimes\mcl^a$ is globally generated, (c) by applying ampleness to $\mathcal F$ and to $\OO_X$, (d) by the graph of the morphism defined by $\mcm$ followed by a Segre embedding, and (e) from Theorem 7.6 together with global generation of a high power. Egbert's set labels the same exercise 2.7.7 and gives the same short arguments around PDF p. 136; Saglam--Chris begin it on PDF p. 94.
+
+The card's proof of (b) states the bound $n\ge a+1$ explicitly rather than leaving the exponent unspecified, and its proof of (e) states $n_0=h+b$ and so covers every exponent beyond $n_0$, not only the multiples of $h$; Kim's "(e)" at the end of his solution is a slip for (d).
+Agree.
 :::
