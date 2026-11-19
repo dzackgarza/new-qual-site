@@ -67,6 +67,22 @@ audit:
     where $L$ is required, and the countable bound's factor $V_L^{V_{\mathrm{sd}^nK}}$ is left
     unexplained although it must be read as the set of vertex functions. Every remaining step of the
     card is Poulsen's, expanded.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 8 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against the complete published solution,
+    Poulsen, Exercise 2.C.8, printed p. 30 of `tmp/sources/poulsen-at-ex.pdf`, whose folio closes that
+    page. Checked: $\operatorname{sd}^rK$ has finitely many vertices and $L$ at most countably many,
+    a simplicial map is determined by its vertex values and every vertex function extends linearly, so
+    there are at most $\abs{V_L}^{\abs{V_{\operatorname{sd}^rK}}}$ simplicial maps, countable; the
+    union over $r$ is a countable union of countable sets; Theorem 2C.1 gives a simplicial
+    representative after finitely many subdivisions of the finite domain; and $[X,Y]\cong[K,L]$
+    through the homotopy equivalences. The two slips of the printed source that the card records were
+    confirmed: $\psi_Y$ is printed with codomain $K$, and the bound's factor is the set of vertex
+    functions. No defect.
+
 ---
 
 ::: {.problem}
