@@ -348,6 +348,23 @@ audit:
     Sigma instead of with Y. Not checked: whether some other, reduced curve in
     the class 3C_0 - 3f exists, since the argument here decides Xie's divisor
     only; and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The question the event above left open is settled: the class 3C_0 - 3f has
+    exactly one effective divisor, 3Sigma, so there is no other curve in it and
+    none that is reduced. The computation is in step s9: a divisor of
+    O_X(3) ot f^*L^{-3} is a section of it, whose space is
+    H^0(C, S^3E ot L^{-3}); the subbundle O_C of E gives S^3E a filtration with
+    successive quotients L^3, L^2, L and O_C, so the twisted bundle is filtered
+    with quotients O_C, L^{-1}, L^{-2} and L^{-3}, and h^0 is at most
+    1 + 0 + 0 + 0 = 1 because deg L = 1; it is at least 1 because t = s^3 is
+    nonzero. Hence the section is unique up to scale and 3Sigma is the only
+    effective divisor in the class. The adjunction and IV.2.5 / Riemann-Hurwitz
+    argument stays as an independent proof that no nonsingular curve has the
+    class. The remark now states the uniqueness. Not checked: nothing is claimed
+    about other classes, and no example was computed.
 
 ---
 
@@ -533,10 +550,16 @@ By step [](#s7){.pf-ref}, $Y=3\Sigma$ and $\restrictionof{\pi}{\Sigma}:\Sigma\to
 :::
 
 ::: {.pf-step #s9}
-No nonsingular curve on $X$ has class $3C_0-3f$; Xie's divisor $Y=3\Sigma$ is not reduced, its reduction being the section $\Sigma\cong C$ of genus $3$, while $p_a(Y)=4$.
+The divisor $3\Sigma$ is the only effective divisor in the class $3C_0-3f$; in particular no nonsingular curve has that class, and Xie's $Y=3\Sigma$ is not reduced, its reduction being the section $\Sigma\cong C$ of genus $3$ while $p_a(Y)=4$.
 
 ::: pf-proof
-This step is this card's own, and no source read carries it. For an effective divisor $Y$ in the class, adjunction gives
+This step is this card's own, and no source read carries it. The class has exactly one member. A divisor of $\OO_X(3)\otimes f^*\mathcal L^{-3}$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})=H^0(C,S^3\mathcal E\otimes\mathcal L^{-3})$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref} gives $S^3\mathcal E$ a filtration whose successive quotients are $\mathcal L^3$, $\mathcal L^2$, $\mathcal L$ and $\OO_C$, so the twisted bundle has one of quotients $\OO_C$, $\mathcal L^{-1}$, $\mathcal L^{-2}$, $\mathcal L^{-3}$, and
+$$
+h^0(C,S^3\mathcal E\otimes\mathcal L^{-3})\le h^0(\OO_C)+h^0(\mathcal L^{-1})+h^0(\mathcal L^{-2})+h^0(\mathcal L^{-3})=1+0+0+0=1,
+$$
+because $\deg\mathcal L=1$ makes each of the last three negative. The space is not zero, since $t=s^3\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
+
+Independently, for an effective divisor $Y$ in the class, adjunction gives
 $$
 p_a(Y)=1+\frac12\qty(Y^2+Y\cdot K_X),
 $$
@@ -594,5 +617,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark}
-The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that no nonsingular curve on $X$ has the class $3C_0-3f$ at all, and that Xie's divisor $Y=3\Sigma$ is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
+The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that the class $3C_0-3f$ has $3\Sigma$ as its only effective divisor --- the space of sections is one-dimensional --- so it contains no nonsingular curve at all, and that Xie's divisor is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
 :::
