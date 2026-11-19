@@ -5350,3 +5350,25 @@ Each file has exactly one `audit:` key, its value is a list, and each of the 290
 **Repair, 2026-11-19:** `P-AGH525INVARIANTE` in `3c9312f304`, one `source-corrected` event, the proof of step `s9`, the qed, the remark and the solution preamble; no statement changes. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH525INVARIANTE`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 12 with QED labels present and no unknown step label.
 
 **Uncertainty.** Not checked: no source outside those already on the card was read for this argument, which is the card's own; the dimension count was checked on paper, not symbolically, and no characteristic assumption is used.
+
+## 2026-11-19, sixth item: 1314 steps in 546 cards justify nothing — a defect class no queue measures, counted by a scanner and named for the cards of residue 3
+
+**Object and need.** Queue D measures cards whose solution holds **no** numbered step; issue #2's requirement is that every **substantive step** carry its justification. Nothing in the corpus's measurements looks at the second half of that sentence, and the sample of forty recorded above turned up cards whose steps are statements with an empty `pf-proof` — the container omitted, or the argument left in the step's own sentence. This item counts that class and gives the method, so a later pass can re-run it rather than re-derive it. It is a measurement and not an acceptance: an empty proof block is sometimes a **container** step whose argument is in the nested steps above it, and the scanner excludes exactly that case, but it cannot tell a step whose justification is embedded in its claim from one that has none. Each flagged card needs a reading.
+
+**The method.** For every card with a `.solution` and at least one `.pf-step`, scan the solution line by line with a stack: a line opening a `pf-proof` pushes a proof frame, a line opening a `pf-step` pushes a step frame, a bare `:::` pops. A proof frame is **vacuous** when its body holds no non-blank text and no nested `pf-step`. Run at `main` = `a615d5c25d`:
+
+| population | structured cards | cards with a vacuous step | vacuous steps |
+| --- | ---: | ---: | ---: |
+| whole corpus | 12249 | **546** | **1314** |
+| residue 3 of queue D | 912 | 38 | 112 |
+
+So 4.5% of structured cards carry at least one step that states a claim and justifies it with nothing. The worst five in the corpus are `E-SS3.PR-1` (7 of 38 steps), `P-7Q5AM` (7 of 34), `E-HK-42-9` (7 of 29), `E-26ELV` (6 of 40) and `P-M81A1-3` (6 of 36).
+
+**Two examples read in full, and what the class actually contains.** `E-26ELV` step `s1` is "Part (a): Perturbation of proper maps." with an empty proof and four nested steps beneath it — that is a container, and it is unobjectionable except that its own sentence is a title. Its nested steps are the defect: "Since $\bar\rho(f,g)<1$, $\|f(x)-g(x)\|\le1$ for all $x$" carries an empty proof, and the justification is compressed into the claim itself. `E-2TY2B` step `s1` is "Part (a): Equivalence relation and well-defined metric $D$." with an empty proof and five nested steps, the first of which ("**Equivalence relation:**" with the three axioms listed as bullets) also has an empty proof. So the class mixes two things a scanner cannot separate: a **title step** with an empty proof, and a **claim step** whose justification is written inside the claim. The first is a style defect, the second is the defect issue #2 names.
+
+**The cards of residue 3, named for the next pass.** Thirty-eight cards of this residue carry vacuous steps; the twelve worst, with their counts of vacuous over total steps, are `E-26ELV` 6/40, `P-M81A1-3` 6/36, `P-FZIG3` 5/31, `P-AMD-6OJQMSOZ` 5/26, `E-2TY2B` 5/25, `P-XLANN` 4/26, `P-PATOJ` 4/23, `P-APAS15F` 4/20, `P-APAS26B` 4/19, `E-HK-42-3` 4/16, `E-5QSZ7` 3/22 and `P-EVBF7` 3/18. They are listed here with the measurement so that the next pass over this residue starts from the worst rather than from the queue, which is empty for it.
+
+**What this does not show.** No card's mathematics is asserted wrong; a vacuous step may be a title, or a claim whose proof is its own sentence. The scanner does not look inside a step's prose, so it cannot tell whether the claim and its justification are the same sentence. Not measured: cards with **no** `pf-step` at all (Queue D's population, 179 cards), and cards whose steps carry a one-word proof such as "clear" — the scanner counts only the strictly empty, and a second pass over the shortest proofs found 227 cards in this residue alone whose shortest proof is under sixty characters, a figure this entry does not analyse.
+
+**Uncertainty.** The counts are one scanner's, run once; a nested `pf-proof` inside a `pf-step` inside a proof is counted at the inner level, so a card that nests three deep is under-counted rather than over-counted. No card was edited in this pass.
+
