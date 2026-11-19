@@ -7058,3 +7058,52 @@ the offline checks having covered the same 672 file hrefs on the same day.
 **The one addition.** `E-HAT-4.2-32`'s printed conclusion, $k=n-1$ and $m=2n-1$, has no content at $n=0$: a bundle over $S^0$ is trivial, so $S^m\cong S^0\times S^k$ is connected only when $m=k=0$, and then $k=0\neq n-1$. The card now says so, and that the two cases it treats — $n\ge2$ and $n=1$ — are exactly those in which the printed conclusion has content. This is a statement about the exercise's range, not a correction of it: no reading of the print makes $n=0$ satisfy the conclusion.
 
 **Not done.** `E-HAT-4.2-5`, `-19`, `-25`, `-36` remain, and so do the other sections named in the last two records. The #170 source obligations are unchanged.
+
+## 2026-11-19: V.4.15(c) proved for r <= 7 — the terminal collinearity is the effectivity of a class of square -2 and K-degree 0, which a Del Pezzo surface cannot carry; r >= 8 stays open
+
+**Object and need.** `P-AGH5415GENPOSITION`, Hartshorne V.4.15(c), printed p. 409, and
+[#157](https://github.com/dzackgarza/new-qual-site/issues/157). The card carried (c) only on the
+properness of the bad locus, which its step `bad-locus-proper-closed` asserted and did not derive; the
+reduction of this date left $m_N=0$ empty by Nagata's Proposition 3, $m_N=1$ equivalent to
+superabundance, and $m_N\ge2$ open.
+
+**The step that closes it for $r\le7$.** Follow the classes through a word $w$: a quadratic
+transformation centred at three current points replaces $h$ by $2h-c_1-c_2-c_3$ and the three
+exceptional classes by $h-c_j-c_k$, an integral orthogonal transformation of $\operatorname{Pic}$ that
+fixes $K=-3h+\sum_ic_i$. So for a terminal triple $\{a,b,c\}$ the class
+$D=h_w-c_a-c_b-c_c$ is fixed by $w$ alone, with $D^2=-2$, $K\cdot D=0$, $D\cdot h_w=1$, and the
+terminal triple is collinear exactly when $\linearsystem{D}\ne\emptyset$: a member meets each of
+$c_a,c_b,c_c$ in $1$, has none as a component, and maps to a line through the three. Now take $P$
+outside the closed locus where the $r+1\le8$ points fail Dolgachev's conditions of general position
+(no three collinear, no six on a conic, no cubic through them singular at one of them; Definition
+preceding Proposition 8.1.9, printed p. 251). There $X=\operatorname{Bl}_{r+1}\PP^2$ is a Del Pezzo
+surface by that proposition, $-K$ is ample, every nonzero effective class has negative $K$-degree, and
+$K\cdot D=0$ with $D\ne0$ gives $\linearsystem{D}=\emptyset$. Hence each bad set misses a nonempty
+open set, its closure is proper, and the countable union of those closures has dense complement: (c)
+holds for $r\le7$, with $V$ the complement of that union and of the finitely many points and lines.
+No uncountability is needed in that range; it enters only at $r\ge8$, where $-K$ stops being ample
+($(-K)^2=0$ at nine points, not nef beyond) and the question is as the card states it.
+
+**Two corrections the step needed.** The bad sets are *not* closed: definedness of a word is an open
+condition, so what the argument uses is that each bad set is contained in a proper closed set, the
+effectivity locus, and that the closures are proper. And at $r=7$ one more closed condition must be
+excluded, the cubic through the eight points singular at one of them: without it Dolgachev's
+Proposition 8.1.9 does not apply, and "$-K$ ample from no three collinear and no six on a conic" is
+false at eight points. Both are recorded in the step, which now also cites that proposition and page.
+
+**The swarm.** Six members on `deepseek/deepseek-v4.1-flash` at max effort; all six reports judged
+and accepted. Four of them (d3, d6, d4 and, with a weaker range, d1) reached the $r\le7$ conclusion by
+this route, one (d2) certified by exact computation that no counterexample occurs for $r\le6$ and words
+up to length five and located the $r\ge8$ gap at the independence of the prescribed-multiplicity
+conditions, which the retained Nagata pages do not settle for a fixed tuple plus one moving point. Two
+of the six claimed shorter ranges ($r\le6$ apart from one class, $r\le4$) and were corrected in the
+verdicts: the missing class is a root like the others and dies on the Del Pezzo locus.
+
+**Repair.** `P-AGH5415GENPOSITION` in `85b5c838d2`, with the wording of the same step corrected in
+`f2e09365df`; this record in the COMPLAINTS commit that carries it. No other step changes: (a), (b),
+(d) and (e) and the numbers $56$ and $240$ are untouched, and part (c) is claimed for $r\le7$ only.
+
+**Uncertainty.** Read for this record: Hartshorne V.4.15, printed p. 409; Dolgachev's definition of
+general position and Proposition 8.1.9, printed p. 251 (PDF p. 261, folio read on the page). Not read:
+Nagata's paper beyond the statements the card quotes; the printed books themselves; and no search of
+the literature for the $r\ge8$ case, which stays open under [#157](https://github.com/dzackgarza/new-qual-site/issues/157).
