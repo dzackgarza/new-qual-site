@@ -22,8 +22,6 @@ A finite extension is normal exactly when it is a splitting field, so a question
 
 ## The normal closure
 
-For a finite extension $L = K(\alpha_1,\ldots,\alpha_r)$ inside an algebraic closure $\overline K$, the normal closure is obtained by adjoining every root of each minimal polynomial, which is the splitting field of their product.
-
 [[P-0T149]]
 
 [[D-99IUP]]
@@ -39,8 +37,6 @@ In the tower $\QQ\subseteq\QQ(\sqrt 2)\subseteq\QQ(2^{1/4})$ both steps have deg
 :::
 
 ## Normal subgroups and normal intermediate fields
-
-In a finite Galois extension, an intermediate field is normal over the base exactly when its Galois group is normal in the whole group, so the two senses of normal are read off each other.
 
 [[P-BF8JM]]
 
