@@ -41,6 +41,23 @@ audit:
     now writes the equality p^{-1}(W_b) = union of the preimages over the slices, which needs the slices
     over V to partition p^{-1}(V) and their number to be the fibre cardinality. Checked against Munkres,
     Topology (2000), Section 53 Exercise 6, printed p. 341.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening paragraph carried curation prose onto the rendered
+    page: the local path of the retained copy of dbFin's solution, the remark
+    that dbFin's part (b) "is a sketch with corrupted symbols", that both parts
+    "are written out here", and that one step "is now said rather than left to be
+    read off" the source phrase. SEC-7 and QUAL-08 keep provenance, status and
+    change narration off a public page, so the paragraph now cites dbFin's
+    solution and the book's pages only. The mathematics it narrated is on the
+    step that uses it: in step gluing, V cap (E - closure N) = V - closure N lies
+    in V - N, which is where phi = 1, so the two pieces of Phi agree on the
+    overlap of the open cover. No statement, step or page citation changes, and
+    the reading of dbFin's solution and of the book's pages is the one the event
+    of 2026-11-11 records.
+
 ---
 
 ::: {.exercise}
@@ -54,10 +71,7 @@ Let $p: E \to B$ be a covering map.
 :::
 
 ::: {.solution}
-
-The four properties of part (a) and the compactness of part (b) are those of **dbFin, "Section 53: Problem 6 Solution"**, kept at `tmp/sources/dbfin/section-53-covering-spaces/problem-6-solution.txt`, whose part (a) runs the separation properties together and whose part (b) is a sketch with corrupted symbols; both parts are written out here along the lines of the book's own hint. One step of the completely regular argument is supplied in full: the two pieces of the map $\Phi$ are defined on an open cover, and what makes them agree where the cover's members meet --- that $\varphi=1$ on $V-\overline N$, which lies inside $V-N$ --- is now said rather than left to be read off the phrase "$\Phi\equiv1$ on $E-\overline N$".
-
-The statement was checked against Munkres, *Topology* (2000), §53 Exercise 6, printed p. 341, with the definition of a covering map and of slices on printed p. 336, the hint printed with the exercise, Lemma 31.1 on printed p. 196, Theorem 18.2(f) on printed p. 107, Theorem 29.2 on printed p. 185 and Theorem 33.2 on printed p. 211. Throughout, $p\colon E\to B$ is a covering map; an evenly covered open set $U\subset B$ has $p^{-1}(U)$ partitioned into slices, each mapped homeomorphically onto $U$ by $p$ (printed p. 336); and a slice $V$ over $U$ means an open set with $p(V)=U$ on which $p$ is a homeomorphism.
+The argument is that of the published solution of dbFin, "Section 53: Problem 6 Solution", for the four separation properties of part (a) and for the compactness of part (b), following the book's own hint. The exercise is Munkres, *Topology* (2000), Section 53, Exercise 6, printed p. 341; its hint uses Lemma 31.1, printed p. 196, Theorem 18.2(f), printed p. 107, Theorem 29.2, printed p. 185, and Theorem 33.2, printed p. 211. Throughout, $p\colon E\to B$ is a covering map; an evenly covered open set $U\subset B$ has $p^{-1}(U)$ partitioned into slices, each mapped homeomorphically onto $U$ by $p$, and a slice $V$ over $U$ means an open set with $p(V)=U$ on which $p$ is a homeomorphism (Munkres, printed p. 336).
 
 ::: pf
 
