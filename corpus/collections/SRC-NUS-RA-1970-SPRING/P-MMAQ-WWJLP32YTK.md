@@ -43,6 +43,8 @@ Prove or disprove each of the following statements.
 
 ::: {.solution}
 
+The argument is the card's own, apart from (a), which is Lusin's theorem quoted as such: for (b) the sets with Borel sections form a $\sigma$-algebra containing the open rectangles; for (c) the closed and open approximations are taken on the bounded pieces $E\cap[n,n+1]$ and assembled, and the converse direction reduces to a null difference. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
