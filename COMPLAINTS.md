@@ -314,11 +314,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **81 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **80 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Sixteen of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 81 stand as this item lists them.
+   reported and repaired above. Seventeen of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 80 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -407,8 +407,14 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    $x_1^{a_1}\cdots x_n^{a_n}$ with $0\le a_i\le n-i$, also of rank $n!$, so surjectivity plus equal rank
    gives the isomorphism.
 
-   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (4 of its 10)
-   --- 81 proofs.
+   **§4.D-7, read the same day.** Correct, no card changed; it is the converse of Theorem 4D.10, printed
+   p. 442, and the card names its page. A Thom class restricts to a generator of $H^n(D_b,S_b;\ZZ)$ on each
+   fibre, which is a choice of orientation of the fibre pair and, through the connecting isomorphism, a
+   generator of $H^{n-1}(S_b;\ZZ)$; the card's transport step is what upgrades the fibre-wise choice to a
+   local orientation of the bundle, which is an orientation.
+
+   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (3 of its 10)
+   --- 80 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
@@ -4772,6 +4778,7 @@ Consequently $C$ is a curve over $K$ --- the identity $K=H^0(C,\OO_C)$ is a $k$-
 **Impact and owner.** The card is unaffected, since an algebraically closed $k$ forces $K=k$. This record supersedes the hypothesis of the fourth record --- the classification there is stated for a geometrically integral curve, and it holds for every proper integral curve over its field of constants --- and closes the sixth record's open question about the $K^\times$-quotient.
 
 **Repair.** This record only, which changes no card. **Uncertainty.** Not checked: nothing new was read for this record; it uses Serre's theorems over an arbitrary field, which this file does not cite to a printed page.
+
 ## 2026-11-19: V.5.5 closes on Fuentes--Pedreira's Corollary 4.11, printed pp. 31--32
 
 **Object and need.** `P-AGH555ELEMTRANSFORM` (Hartshorne V.5.5, printed p. 419) and [#121](https://github.com/dzackgarza/new-qual-site/issues/121). The record of 2026-11-16 headed "State after the transcription pass" still lists V.5.5 among the cards that keep their own proof, on Egbert's cross-reference to his V.2.5 and Yang Pi-Yeh's incomplete outline. The card's own `solution-written` event of the same date had already replaced its bundle-level proof by a transcription of Fuentes and Pedreira, one step per printed statement. This record reconciles the two: the published proof is complete, and the card carries it.
