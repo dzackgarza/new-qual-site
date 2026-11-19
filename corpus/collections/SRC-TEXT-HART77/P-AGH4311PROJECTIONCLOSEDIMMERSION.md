@@ -429,6 +429,26 @@ audit:
     316, and II Ex. 7.7, printed p. 170, in the text version
     tmp/sources/hartshorne-1977-algebraic-geometry.md; neither exercise is
     credited with these two computations. No other step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.11, printed p. 89,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.11, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the two dimensions in (a) ($2r+1$ for secants, $2r$ for tangent spaces) against $n>2r+1$, the chordal-plane argument in (b), and the count $4+1-1=4$ for the secant variety of the Veronese surface.
+    Not checked: Yang's Solutions outside printed p. 89; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.11 at printed
+    p. 89 beside the entries already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -772,4 +792,6 @@ A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.11, print
 His entry 4.3.21, printed p. 223, argues (b) for a general point of a secant line: "If $r\in\PP^5$ is a general point on a secant line $\overline{v(P)v(Q)}$ of $X$, then $\overline{pq}$ maps to a conic $C$ in $X$ and $r$ then lies on the plane spanned by $C$. Any other line on the plane passing through $r$ is also a secant line to $C$ and thus to $X$. Thus a general point on a secant line to $X$ lies on a one-dimensional family of secant lines to $X$. Since we are in $\PP^5$ at any rate, then the secant variety has dimension at most $4$. On the other hand, the secant variety clearly has dimension at least $4$."
 Harris, Lecture 11, Example 11.22, printed p. 144, takes the same route for the Veronese surface and carries it to the upper bound: the plane $\Lambda$ spanned by $C$ contains $r$, every line through $r$ in $\Lambda$ is a secant line to $C$ and hence to $X$, so a general point of a secant line to $X$ lies on a one-dimensional family of them, whence $\dim S(X)\le4$. For the lower bound he prints only the parenthetical quoted at step [](#secant-dim-lower){.pf-ref}, "the cones $\overline{p,S}$ over $S$ with vertex a point $p\in S$ would all have to coincide", and the argument that finishes it is the card's own there: were $\dim S(X)$ equal to $3$, the cone over $X$ with vertex a point $p\in X$ — three-dimensional, all of its lines joining $p$ to points of $X$ — would be the whole of $S(X)$, and that for every $p\in X$, so that joining a point of $S(X)$ to a point of $X$ would stay in $S(X)$; adjoining the points of $X$ one at a time then puts the span of $X$, which is $\PP^5$, inside $S(X)$. Both bounds are transcribed in steps [](#secant-dim-upper){.pf-ref}, [](#secant-dim-lower){.pf-ref} and [](#secant-dim){.pf-ref}, together with Egbert's statement of them, printed p. 223.
 The clause for a general point of a secant line is what both texts give; the exercise asks it for every point of every secant line, and for those points the conic of the plane through the point is the one steps [](#veronese-conic){.pf-ref} and [](#infinitely-many-secants){.pf-ref} use.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.11, printed p. 89, does (a) by taking the criterion from what it calls proposition 3.4 --- the projection from $O\notin X$ is a closed immersion exactly when $O$ lies on no secant line and in no embedded tangent space --- and then counting: the secant lines are locally a $(X\times X-\Delta)\times\PP^1$, of dimension $2r+1$, and the tangent spaces form a family of dimension $2r$, so when $n>2r+1$ a centre outside both exists. For (b) it shows every point of every secant line of the Veronese surface lies on infinitely many secant lines: if $R\in\overline{\rho(P)\rho(Q)}$ then $R$ lies in the plane of the conic $Y=\rho(\overline{PQ})$, and every line of that plane through $R$ meets the conic twice, hence is a secant again. The count that follows is right: secant lines are a $4$-parameter family, each carries a $\PP^1$ of points, and each point lies on a $1$-parameter subfamily, so $\dim\Sec\leq4+1-1=4$. Its lower bound is not an argument as printed --- four named points $\rho(1:0:0)$, $\rho(0:1:0)$, $\rho(0:0:1)$, $\rho(1:1:0)$ described as 'linearly independent' do not bound a dimension; what supplies it is that the planes of the conics $\rho(L)$, with $L$ ranging over the dual plane, form a $2$-parameter family of planes inside $\Sec$, which is the card's step [](#secant-dim-lower){.pf-ref}, the upper bound being [](#secant-dim-upper){.pf-ref}.
 :::
