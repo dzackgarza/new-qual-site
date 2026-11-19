@@ -9,21 +9,26 @@ topics:
 
 # The class equation
 
-For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $Z(G)$, and then its [[D-HLDEY|conjugacy class]] is $\theset g$, or its conjugacy class has size $[G:C_G(g)] > 1$.
+Under conjugation, a finite group falls into classes whose sizes are indices of centralizers, so every class size divides $\size{G}$ and the classes of size one are the central elements.
+The count is what forces a $p$-group to have a nontrivial center, and every statement on this page about $p$-groups rests on that.
 
 [[C-O7CP3]]
 
 ## $p$-groups
 
-A nontrivial finite $p$-group has nontrivial center ([[E-6AOD7|class equation, part (a)]]). Consequences for a group $G$ of order $p^k$:
+[[E-6AOD7]]
 
-- If $k=2$, then $G$ is abelian ([[PR-IGLFV|groups of order $p^2$]]).
+[[T-4CDTT]]
 
-- $G$ has a normal subgroup of every order dividing $\size G$.
+For a group of order $p^k$ the count gives the following: it is abelian when $k=2$, it is nilpotent for every $k$, its maximal subgroups are normal of index $p$, and it is simple exactly when $k=1$.
 
-- $G$ is [[D-53JVH|nilpotent]].
+[[PR-IGLFV]]
 
-- $G$ is simple if and only if $k=1$.
+[[P-7H5CP]]
+
+[[E-AMD-Y5JUYURM]]
+
+[[P-NZOMZ]]
 
 ## Burnside's lemma
 
@@ -33,7 +38,5 @@ A nontrivial finite $p$-group has nontrivial center ([[E-6AOD7|class equation, p
 
 ::: {.remark title="Counting orbits"}
 Burnside's lemma counts orbits, such as colorings of the beads of a necklace or of the faces of a cube up to the action of a rotation group.
-For $g,h\in G$, $x\mapsto hx$ is a bijection $\Fix(g)\to\Fix(hg\inverseof{h})$, so $\size{\Fix(g)}$ depends only on the conjugacy class of $g$, and the sum may be taken over conjugacy classes, each weighted by its size.
+For $g,h\in G$, the map $x\mapsto hx$ is a bijection $\Fix(g)\to\Fix(hg\inverseof{h})$, so $\size{\Fix(g)}$ depends only on the conjugacy class of $g$, and the sum may be taken over conjugacy classes, each weighted by its size.
 :::
-
-[[E-6AOD7]]
