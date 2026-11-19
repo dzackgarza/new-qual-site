@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the scripted-rewrite repair was corpus-wide, not per card, and the green gate is the assurance that no undefined control word remains
+
+**Object and need.** The record above says the repair covered "only the two cards the gate named in the snapshot's tree", and that whether the rewrite touched other collections was not checked. The next snapshot showed two more cards of the same section with the same two tokens, so the scope was measured rather than assumed.
+
+**Observed evidence.** A corpus-wide scan, `rg -l 'varphism|\\var\\[a-zA-Z]+' corpus/`, returns exactly four files, all in `SRC-TEXT-HAT02/3-3`: `E-HAT-3.3-14` (3 × `isomor\varphism`), `E-HAT-3.3-16` (16 × `\var\varphi`), `E-HAT-3.3-27` (2 × `isomor\varphism`, 3 × `\var\varphi`) and `E-HAT-3.3-31` (3 × `isomor\varphism`, 1 × `homomor\varphisms`). All are repaired, one commit per card, each with a `source-corrected` event that gives the count and states that the repair is spelling and that no step was re-read. The remaining occurrences of the two strings in the tree are inside those events, in code spans, which the gate's TeX check does not read. Nothing else in `corpus/` matches either pattern, and the whole-corpus report then ran green at `d6ce6e74df0c` (`14412 cards and 348 wiki pages OK`, exit 0).
+
+**Impact and owner.** The green gate is the general assurance and not merely a check on these four cards: its TeX check resolves every control word in every card against the preamble and the MathJax list, so a passing run means no undefined or glued control word survives anywhere in the corpus. That is the check to run after any scripted rewrite of a collection, and the per-card check will not substitute for it.
+
+**Uncertainty.** High confidence in the scan's result for these two patterns and in the gate's coverage. Not checked: whether the rewrite altered anything that is *valid* TeX but wrong mathematics — a substitution that produced a defined control word in place of another would pass both the scan and the gate, and only reading the cards catches it; the four cards above were not re-read for sense in this pass, only for spelling.
+
 ## 2026-11-19: a scripted rewrite turned `ph` into a control word on two §3.3 cards, and the whole-corpus TeX check caught what `qualc.authoring check` does not
 
 **Object and need.** `E-HAT-3.3-27` and `E-HAT-3.3-31` were committed at 15:28 by another stream after a scripted rewrite. The rewrite split ordinary words and a symbol: `isomor\varphism` for "isomorphism" (five times across the two cards), `homomor\varphisms` for "homomorphisms" (once), and, on `E-HAT-3.3-27`, the image of the symplectic form written `\var\varphi` for `\varphi` (three times). The whole-corpus gate reports them as "raw TeX the page cannot show" and "not defined by the preamble or MathJax: \var".
