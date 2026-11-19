@@ -43,7 +43,7 @@ The orthogonality relations are the statement that the irreducible characters ar
 
 4. For an action of $G$ on a finite set $X$, the permutation character is $\chi(g) = \size{\Fix(g)}$; if the action is $2$-transitive, then $\chi-\chi_{\text{triv}}$ is irreducible.
 
-5. The remaining entries are determined by the column orthogonality relations of [[P-ZCY6S]].
+5. The remaining entries are determined by [[P-ZCY6S|the column orthogonality relations]].
 
 [[P-MD6VX]]
 
