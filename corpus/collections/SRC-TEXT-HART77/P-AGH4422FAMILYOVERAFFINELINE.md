@@ -435,12 +435,15 @@ audit:
     Zariski-local patching using f_*O_E = O_S (printed p. 65); the reduction to
     S affine noetherian (printed p. 66); R^1f_*L = 0 because R^1f_* is of
     formation compatible with arbitrary base change for f proper and flat of
-    relative dimension one (the case p = 2 of Mumford's Corollary 3), and over
+    relative dimension one (Katz and Mazur's assertion, with the fibre-wise
+    form in Mumford's Corollary 3 at p = 2), and over
     an algebraically closed field H^1 of an invertible sheaf of degree one on a
     genus-one curve vanishes, so the coherent sheaf R^1f_*L has zero fibres and
     is zero by Nakayama; f_*L
-    locally free of rank one from Mumford, *Abelian Varieties*, printed p. 53,
-    Corollary 3 at p = 1, the fibres H^0 being one-dimensional by Altman and
+    locally free of rank one from Mumford, *Abelian Varieties*, printed pp. 46
+    and 53, Corollary 3 at p = 1 with the finite projective complex of the main
+    theorem at p. 46 carrying the base change, the fibres H^0 being
+    one-dimensional by Altman and
     Kleiman (1.4) at printed p. 164 and (1.15) at printed p. 167; and a local
     basis of f_*L giving an effective Cartier divisor of degree one, hence a
     section by (1.2.7) on printed p. 67. The earlier rendering, which used
@@ -478,6 +481,32 @@ audit:
     (R^1f^an_*Z)^vee and the event's phrase "the local system of homology of
     the fibres, of weight -1" stand. Not checked: Deligne's section 4.4 beyond
     printed pp. 50--51, and the rest of the manuscript.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the base-change citations of step abelian-scheme, in the
+    rendered derivation and in the event of this date above that records the
+    fifth pass. Two clauses were overstated. (i) The arbitrary-base-change
+    compatibility of R^1f_*L is Katz and Mazur's assertion on printed p. 66,
+    "being an R^1f_* for f proper and flat of relative dimension one"; it is
+    not a case of Mumford's Corollary 3, which at printed p. 53 states only
+    the residue-fibre isomorphism
+    R^{p-1}f_*(F) x k(y) -> H^{p-1}(X_y, F_y), and at p = 2, H^2 of a curve
+    vanishing, gives R^1f_*L x k(y) -> H^1(E_y, L_y). (ii) Corollary 3 at
+    p = 1 gives the isomorphism f_*L x k(y) -> H^0(E_y, L_y) but not local
+    freeness over a base that need not be reduced: Mumford's Lemma 1 and
+    Corollary 2, printed pp. 50--51, need Y reduced, and over an arbitrary
+    base the finite complex of the main theorem, printed p. 46, carries the
+    argument, as in the proof of Corollary 3 on printed p. 53. Read for this
+    correction: D. Mumford, *Abelian Varieties* (1970), printed pp. 46, 50--51
+    and 53, on the wstein.org scan, where printed pp. 46--47 are PDF p. 28,
+    printed pp. 50--51 are PDF p. 30 and printed pp. 52--53 are PDF p. 31,
+    with the folios read off the pages; and Katz and Mazur, printed p. 66,
+    PDF p. 78, whose sentence is quoted in the rendered step. Nothing else in
+    the step changes: Theorem 2.1.2, printed p. 63 with its proof on printed
+    pp. 64--67, stands. Not checked: Mumford's printed pp. 48--49, 52 and 54
+    onwards; and the card's other steps were not re-derived.
 ---
 
 ::: {.problem}
@@ -525,7 +554,7 @@ Their proof is Abel's theorem in the relative setting, and it runs on printed pp
 
 For the bijection they reduce to $T=S$ (printed p. 65) and then show that the question is Zariski local on $S$: if $\{U_i\}$ is an affine open cover and $\phi_i\colon\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_{0,i})$ on $f^{-1}(U_i)$, then $f_*\OO_E=\OO_S$ and $f_*f^*(\mathcal L_{0,i})=\mathcal L_{0,i}$ show that $f_*(\mathcal L^{-1}\otimes\mathcal L')$ and $f_*(\mathcal L\otimes(\mathcal L')^{-1})$ are inverse invertible sheaves, so there are $\mathcal L_0$ on $S$, namely $f_*(\mathcal L\otimes(\mathcal L')^{-1})$, and an isomorphism $\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_0)$ (printed p. 65). Since $E/S$ is of finite presentation, this leaves $S$ affine noetherian (printed p. 66).
 
-Let $\mathcal L$ be invertible on $E$, fibrewise of degree one. Their claim (printed p. 66) is that $f_*\mathcal L$ is invertible of formation compatible with arbitrary base change and that $R^1f_*\mathcal L=0$, and they prove the vanishing first: $R^1f_*\mathcal L$ is of formation compatible with arbitrary base change --- "being an $R^1f_*$ for $f$ proper and flat of relative dimension one", which is the case $p=2$ of Mumford's Corollary 3 at printed p. 53, $H^2$ of a curve vanishing --- and over an algebraically closed field $H^1(E,\mathcal L)=0$ because $\deg\mathcal L=1>2g-2=0$, so the coherent sheaf $R^1f_*\mathcal L$ has all fibres zero and vanishes by Nakayama's lemma. Then Mumford, *Abelian Varieties* (1970), p. 53, cited by Katz and Mazur as [Mum 4], gives that $f_*\mathcal L$ is locally free and of formation compatible with arbitrary base change: Corollary 3 there, at $p=1$, is the isomorphism $f_*\mathcal L\otimes k(y)\cong H^0(E_y,\mathcal L_y)$ for every $y$, and the right side is one-dimensional for every $y$, being so over an algebraic closure of $k(y)$, so $f_*\mathcal L$ is locally free of rank one by Nakayama, and a base-change map between locally free sheaves that is an isomorphism on every fibre is an isomorphism. Over an algebraically closed field $h^0(\mathcal L)=\chi(\mathcal L)=\deg\mathcal L+\chi(\OO)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$.
+Let $\mathcal L$ be invertible on $E$, fibrewise of degree one. Their claim (printed p. 66) is that $f_*\mathcal L$ is invertible of formation compatible with arbitrary base change and that $R^1f_*\mathcal L=0$, and they prove the vanishing first: $R^1f_*\mathcal L$ is of formation compatible with arbitrary base change --- "being an $R^1f_*$ for $f$ proper and flat of relative dimension one", which is Katz and Mazur's assertion; what Mumford's Corollary 3 at printed p. 53 states is the residue-fibre isomorphism, and at $p=2$, $H^2$ of a curve vanishing, it gives $R^1f_*\mathcal L\otimes k(y)\cong H^1(E_y,\mathcal L_y)$ --- and over an algebraically closed field $H^1(E,\mathcal L)=0$ because $\deg\mathcal L=1>2g-2=0$, so the coherent sheaf $R^1f_*\mathcal L$ has all fibres zero and vanishes by Nakayama's lemma. Then Mumford, *Abelian Varieties* (1970), p. 53, cited by Katz and Mazur as [Mum 4], gives that $f_*\mathcal L$ is locally free and of formation compatible with arbitrary base change: Corollary 3 there, at $p=1$, is the isomorphism $f_*\mathcal L\otimes k(y)\cong H^0(E_y,\mathcal L_y)$ for every $y$, and the right side is one-dimensional for every $y$, being so over an algebraic closure of $k(y)$. The one-dimensional fibres alone give local freeness only over a reduced base, by Mumford's Lemma 1 on printed p. 51; over the arbitrary, possibly nonreduced base the finite complex of his main theorem on printed p. 46 carries it: over an affine open $\Spec A\subseteq S$ there is a finite complex $K^\bullet$ of finitely generated projective $A$-modules with $H^p(K^\bullet\otimes_A B)\cong H^p(E\times_S\Spec B,\mathcal L_B)$ for every $A$-algebra $B$, where $\mathcal L_B$ is the pullback of $\mathcal L$, every $H^p(K^\bullet\otimes_A k(y))$ with $p\ne0$ vanishes because it is $H^p(E_y,\mathcal L_y)$ on a curve with $H^1(E_y,\mathcal L_y)=0$, and the splitting argument in Mumford's proof of Corollary 3, printed p. 53, makes $H^0(K^\bullet)=f_*\mathcal L$ a direct summand of the projective $K^0$, of rank one, with $f_*\mathcal L\otimes_A B\cong H^0(E\times_S\Spec B,\mathcal L_B)$ for every $A$-algebra $B$. Over an algebraically closed field $h^0(\mathcal L)=\chi(\mathcal L)=\deg\mathcal L+\chi(\OO)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$.
 
 With $f_*\mathcal L$ invertible they choose a local $\OO_S$-basis $\ell$ and show that $\OO_E\to\mathcal L$, $1\mapsto\ell$, is injective and remains so after any base change, reducing to $S$ the spectrum of a field, where $\ell$ is a nonzero $k$-basis (printed p. 67); hence $(\mathcal L,\ell)$ is an effective Cartier divisor in $E/S$, of degree one fibrewise, and by (1.2.7), printed pp. 10--11 and invoked on printed p. 67, an effective Cartier divisor of degree one is a section $P\in E(S)$. The two constructions are inverse to each other, so the map $E(S)\to\Pic^{(1)}(E/S)$ is bijective (printed p. 67).
 
