@@ -165,6 +165,27 @@ audit:
     and said so on the card: no realisation theorem for every flag pattern, and no decision
     procedure -- Corollary 5 is a criterion, and the underlying equation system is infinite.
     Not checked: no independent source beyond Hatcher p.292 (PDF page 301), which was read again.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read, without change, against Hatcher, Exercise 16 of §3.C, printed p. 292 (PDF p. 301), the
+    same page the consolidated development of 2026-11-01 used. Checked at the definitions and in
+    the proofs: the coproduct $\Delta(t)=t\otimes1+1\otimes t$ and the coefficient table
+    $b_{ij}=\binom{i+j}{i}$ for even $d$, $b_{ij}=0$ for $i,j$ both odd and
+    $\binom{\lfloor(i+j)/2\rfloor}{\lfloor i/2\rfloor}$ otherwise for odd $d$ (checked independently
+    at $n=2$, where the cross terms cancel, and $n=3$, where they do not); the passage to
+    $m_{ij}=q_iq_j/q_{i+j}$ and $c_{ij}=b_{ij}/m_{ij}$; the divisor and cocycle conditions with
+    $m_{i0}=m_{0i}=1$; the recursion $q_{n+1}=q_n/m_{n,1}$; the two examples $\ZZ[t]$ and
+    $\Gamma_\ZZ[t]$; the two-operation criterion of Lemma 1; the three cases of Lemma 2; the
+    algebra of Theorem 3 in cases (a) and (b), recomputed symbol by symbol, noting that neither
+    uses more than the case, which is what lets Corollary 5 conclude from the flags alone; and
+    Theorem 4. Not checked this session: the Kummer identity used to show that the polynomial forms
+    with $d=1$ and $d=2$ have equal flags, which is quoted from the development of 2026-11-01; the
+    finite search over forms with $m_{1j}\le24$, which was not re-run; and no independent source
+    beyond Hatcher's page was consulted. The card's own statement of what it does not claim —
+    no realisation theorem for every flag pattern, no decision procedure, nothing across different
+    $d$ — is accurate as far as this read goes.
 ---
 
 ::: {.problem}
