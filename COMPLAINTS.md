@@ -243,6 +243,20 @@ The count does not turn on it. With $+z$ the same two Rouché comparisons hold o
 One sentence of the removed `Repair` bullet — that both collections carry a `provenance:` href pinning the dataset — is no longer true of the tree, and is corrected here rather than edited into the dated line: both collections now carry `provenance: []`, and the complex-analysis collection's index carries a remark saying why the two dataset files were removed rather than repointed — a YAML of transcribed questions is not a source document.
 
 ## Workflow and rendering papercuts
+### 2026-11-19: the whole-corpus `qualc check` obtained — one worker, on a box with no other gate running
+
+**Object and need:** every recorded session has reported the corpus-wide gate as unobtainable, killed with exit 137 and an empty log, so lanes have certified their work with per-card checks and the report check only; whether it can be obtained at all on this VM decides what a lane may claim about the corpus as a whole.
+
+**Observed evidence:** `QUALC_PARALLEL_WORKERS=1 ./.venv/bin/python -m qualc check`, run in the clone, finished in **269 s with exit 0** — `14410 cards and 348 wiki pages OK`, 0 diagnostics, all twelve checks at 0 errors. The run record is `~/.local/state/new-qual-site/run-records/f11af06b5419-20261119T202659.674Z-qualc-check.json`; its `commit` is `f11af06b5419` and its `work_tree_dirty` is `true`. Its timings: parse-cards 162.3 s, lamport-proofs 46.9 s, link-card-citations 38.5 s, parse-wiki-pages 11.4 s, validate-index 5.1 s, unrenderable-tex 4.0 s, the pandoc server 0.013 s.
+
+The conditions are part of the measurement. `free` showed 15 GB total with 7 GB available and no other `qualc check` in `ps`. The two attempts immediately before it failed: default workers, killed after 4 min 55 s; `QUALC_PARALLEL_WORKERS=2`, killed after 4 min 32 s; both exit 137 with 0 bytes of output. During the second, another lane's own copy of this gate held 2.37 GB RSS and a Sage job 1.04 GB, with 5 GB available.
+
+**Impact and owner:** the worker count is not the binding constraint — two workers died where one finished — and the cost sits in the parse phase, not in the Pandoc servers: 162 s of the 269 s is `parse-cards` against 0.013 s for the server. That is the budget a lane would pay if the gate were put on every push, which is how [#100](https://github.com/dzackgarza/new-qual-site/issues/100) reads. The rule this record supports: run the gate alone on a quiet box at one worker, and treat a killed run as not obtained rather than as evidence either way.
+
+**Uncertainty:** high confidence in the run and its record. The green certifies the tree at `f11af06b5419` with that dirty flag, not any later commit; `corpus/collections/SRC-NUS-CA-1970-SPRING/index.md` and six other cards changed after it, each checked per card in its own commit.
+
+**Repair:** none needed; this is the measurement, and it retires the standing "never obtained in a recorded session" claim for this clone. It does not make a full gate on every push affordable.
+
 ### 2026-11-18: the Queue D residue rule leaves 1026 of the queue's 1953 lines assigned to no chat
 
 - **Object and need:** `queues/D-prose-only-solutions.md`, as partitioned among four parallel chats by the rule `int(CARD_ID.split("-", 1)[1], 36) % 4 == K` for `K = 0,1,2,3`, together with the instruction that a chat works only the lines of its own residue and reports, never edits, any other card.
