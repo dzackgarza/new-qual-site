@@ -14,9 +14,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 2 Problems, printed
+    p. 67, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 2 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 67; the statement below is its wording.
+
 Here are some examples of analytic functions on the unit disc that cannot be extended analytically past the unit circle. The following definition is needed. Let $f$ be a function defined in the unit disc $\DD$, with boundary circle $C$. A point $w$ on $C$ is said to be regular for $f$ if there is an open neighborhood $U$ of $w$ and an analytic function $g$ on $U$, so that $f = g$ on $\DD \cap U$. A function $f$ defined on $\DD$ cannot be continued analytically past the unit circle if no point of $C$ is regular for $f$.
 
 (a) Let
