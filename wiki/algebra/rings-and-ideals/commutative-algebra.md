@@ -38,7 +38,8 @@ Every nonzero ring has a maximal ideal and every proper ideal is contained in on
 ## Noetherian rings and Krull dimension
 
 Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes, equivalently if every ideal is finitely generated.
-The three theorems on this shelf are the finiteness consequences a qualification problem uses: the principal ideal theorem bounds the height of a prime minimal over a principal ideal, Artin--Rees bounds the $I$-adic filtration of a finitely generated module, and Krull's intersection theorem is Artin--Rees followed by Nakayama's lemma applied to the finitely generated ideal $\Intersect_{n\geq1}I^n$.
+The three theorems are the finiteness consequences a qualification problem uses.
+Krull's intersection theorem is Artin--Rees followed by Nakayama's lemma applied to the finitely generated ideal $\Intersect_{n\geq1}I^n$.
 
 [[PR-VARHT]]
 
