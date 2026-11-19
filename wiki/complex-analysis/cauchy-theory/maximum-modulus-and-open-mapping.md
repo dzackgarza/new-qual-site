@@ -31,10 +31,7 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 [[T-YLI6Y]]
 
-::: {.example title="The nonvanishing hypothesis is necessary"}
-The function $f(z) = z$ on $\DD$ is nonconstant, and $\abs f$ has its minimum at the interior point $0$.
-
-:::
+The hypothesis that $f$ is nonvanishing is necessary, and $f(z) = z$ on $\DD$ is the witness: it is nonconstant, and $\abs f$ attains its minimum at the interior point $0$ ([[complex-analysis/counterexamples#The maximum and minimum modulus principles|Counterexamples]]).
 
 ## Problems
 
