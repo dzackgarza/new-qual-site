@@ -13,6 +13,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161. The Lean caveat made precise, so that a later pass does not have to rediscover it. The two
+    declarations this card links were read at the pinned commit `9b8b85840c` and their signatures
+    match what the remark says of them: `relativePiOne_map_bijective` takes $\pi_0(A)\to\pi_0(B)$,
+    $\pi_1(X,a)\to\pi_1(Y,fa)$ and $\pi_1(A,a)\to\pi_1(B,fa)$ bijective for every $a\in A$ together
+    with $\pi_0(X)\to\pi_0(Y)$ bijective, and concludes $\pi_1(X,A,x_0)\to\pi_1(Y,B,y_0)$ bijective;
+    `zerothHomotopySubtypeMap_bijective` is the $\pi_0(A,x_0)$ term, with the vertical maps at
+    $\pi_1(X,A,a)$, at $\pi_1(X,a)$ for every $a$, at $\pi_0(X)$ and at $\pi_0(X,A,x_0)$ as its four.
+    Re-elaboration is not possible in this image: no repository under
+    `$HOME/sage-image/rootfs/repos` has a built Mathlib (none has
+    `.lake/build/lib/lean/Mathlib`), so a Mathlib-importing file cannot be checked there, and the
+    host toolchain at `/opt` is not the pinned baseline and may not be cited as one. What would
+    settle it is a checkout of `lean-categories` at the pinned commit with its pinned Mathlib built;
+    the corpus gate's link check already resolves the declaration URL at that commit.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
