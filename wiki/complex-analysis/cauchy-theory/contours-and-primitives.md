@@ -29,7 +29,12 @@ A curve that is the boundary of a region oriented positively has an integral tha
 
 On a simply connected region every holomorphic function has a primitive, since its integrals over closed curves vanish ([[T-2OVCI]]); the primitive is then the integral from a fixed base point, and [[T-NRSFZ]] constructs the logarithm and its powers that way.
 
-The winding number of a closed curve about a point that the curve avoids is the obstruction to a primitive of $\inverseof{(z-a)}$ on the complement of the curve, and it is what the integral formula and the residue theorem compute.
+The winding number is the number that measures this failure.
+On $\CC\sm\theset{a}$ the function $\inverseof{(z-a)}$ has no primitive, since
+$$
+\int_\gamma{\dz\over z-a} = 2\pi i\,\Index_\gamma(a)
+$$
+for a closed curve $\gamma$ avoiding $a$, and the right-hand side is not always zero.
 
 [[D-PJ7JM]]
 
