@@ -11,6 +11,25 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    #161 batch. The step `#kernel` displayed a family that is not a homotopy from $u$ to $vu$: at
+    $s=0$ its two branches disagree at $t=0$, giving $v(0)=x_0$ on one side and $u(0)$ on the other,
+    and as $s\to1$ it tends to the constant path at $x_0$, so the family as written would contract
+    $u$ in $\pi_1(X,A,x_0)$, which is false. The display also wrote $u_s(t)$, so the symbol was
+    undefined. It is replaced by $\nu_s(t)=v(1-s+2st)$ for $t\le\tfrac12$ and $\nu_s(t)=u(2t-1)$ for
+    $t\ge\tfrac12$, whose two branches agree at $t=\tfrac12$ because $v(1)=u(0)$; each $\nu_s$ is a
+    path in $X$ from $v(1-s)\in A$ to $x_0$, so the family is a homotopy of relative paths, from $u$
+    with its first half collapsed at $s=0$ to $vu$ at $s=1$, and $[u]=[vu]$. This is the
+    endpoint-sliding homotopy that DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed
+    p. 89, describes in the reverse convention, "a homotopy $f_s(t)$ which extends the endpoint of
+    $f$ along $\gamma$ until $\gamma(s)$", with the formula written out here and checked against
+    Hatcher's definition of $\pi_1(X,A,x_0)$ and its boundary map on printed p. 343. Also repaired:
+    the solution cited the definition as "pp. 342--345"; it is on printed p. 343, and the citation
+    now says so. Not checked: no other step of the card was re-derived in this pass, and no Lean
+    declaration bears on it.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -96,7 +115,7 @@ Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longri
 :::
 
 ::: {.solution}
-The argument is the card's own, checked against the retained set that covers this exercise: Kenneth DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed p. 89, which proves the same two exactness statements in the opposite convention for relative paths. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on pp. 342--345, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
+The argument is the card's own, checked against the retained set that covers this exercise: Kenneth DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed p. 89, which proves the same two exactness statements in the opposite convention for relative paths. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on printed p. 343, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
 
 ::: pf
 
@@ -127,11 +146,10 @@ If $\alpha$ is a loop at $x_0$ then $\partial[\alpha]=[\alpha(0)]=[x_0]$, the ba
 Every class in the kernel of $\partial$ comes from a loop.
 
 ::: pf-proof
-Let $[u]\in\pi_1(X,A,x_0)$ with $\partial[u]=[x_0]$, that is, $u(0)$ lies in the component of $x_0$ in $A$. Choose a path $v:I\to A$ from $x_0$ to $u(0)$, and let $vu$ be the path that traverses $v$ on $[0,\tfrac12]$ and $u$ reparametrised on $[\tfrac12,1]$; this is a loop at $x_0$. The family
+Let $[u]\in\pi_1(X,A,x_0)$ with $\partial[u]=[x_0]$, that is, $u(0)$ lies in the component of $x_0$ in $A$. Choose a path $v:I\to A$ from $x_0$ to $u(0)$, and let $vu$ be the path that traverses $v$ on $[0,\tfrac12]$ and $u$ reparametrised on $[\tfrac12,1]$; this is a loop at $x_0$. Let
 $$
-u_s(t)=\begin{cases} v\bigl((1-s)t\bigr), & t\le s,\\ u\Bigl(\dfrac{t-s}{1-s}\Bigr), & t\ge s,\end{cases}
-$$
-with the evident interpretation at $s=1$, is a homotopy from $u_1=u$ to $u_0=vu$ through paths whose initial point is $v\bigl((1-s)\cdot0\bigr)\in A$ and whose final point is $x_0$. Hence $[u]=[vu]$ in $\pi_1(X,A,x_0)$, and $[vu]$ is the image of the loop class of $vu$.
+\nu_s(t)=\begin{cases} v(1-s+2st), & t\le\tfrac12,\\ u(2t-1), & t\ge\tfrac12,\end{cases}$$
+for $s\in[0,1]$, whose two branches agree at $t=\tfrac12$, both giving $v(1)=u(0)$. Each $\nu_s$ is a path in $X$ from $v(1-s)\in A$ to $u(1)=x_0$, and $(s,t)\mapsto\nu_s(t)$ is continuous, so $s\mapsto\nu_s$ is a homotopy of relative paths. At $s=1$ it is the path $vu$; at $s=0$ it is the constant path at $u(0)$ followed by $u$ on $[\tfrac12,1]$, which is $u$ with its first half collapsed and so represents $[u]$. Therefore $[u]=[vu]$ in $\pi_1(X,A,x_0)$, and $[vu]$ is the image of the class of the loop $vu$ at $x_0$.
 :::
 
 :::
