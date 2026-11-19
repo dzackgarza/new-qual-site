@@ -292,5 +292,5 @@ Step [](#annulus-zero-count){.pf-ref}.
 :::
 
 ::: {.remark}
-The same count answers the exercise with the opposite sign of the linear term: that term enters the two triangle inequalities only through $\abs z$, so $\abs{-6z^2\mp z+1}\le 6\cdot4+2+1=27<64=\abs{2z^5}$ on $\abs z=2$ and $\abs{2z^5\mp z+1}\le 2+1+1=4<6=\abs{-6z^2}$ on $\abs z=1$ hold with either sign, leaving five zeros in $\abs z<2$, two in $\abs z<1$ and three in the annulus.
+The same count answers the exercise with the opposite sign of the linear term: that term enters the two triangle inequalities only through $\abs z$, so $\abs{-6z^2 \pm z + 1}\le 6\cdot4+2+1=27<64=\abs{2z^5}$ on $\abs z=2$ and $\abs{2z^5 \pm z + 1}\le 2+1+1=4<6=\abs{-6z^2}$ on $\abs z=1$, the upper sign being the polynomial of this card; both signs therefore leave five zeros in $\abs z<2$, two in $\abs z<1$ and three in the annulus.
 :::
