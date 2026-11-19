@@ -69,6 +69,16 @@ audit:
     names Hatcher's section as `\S4.1`, a section sign written as a TeX command outside a math
     span, which the HTML writer drops; it now reads the character `§4.1`, as the corpus does
     elsewhere. Mathematics and wording unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this exercise, and that is false: Sam's set,
+    retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves it at §4.1 Exercise 5 on
+    printed p. 17, and the card's own 2026-11-07 event already recorded that. The rendered
+    sentence now cites it and says which construction is Sam's. Found by screening the residue's
+    absence claims against the solution sets inventoried in
+    `wiki/topology/resources/solutions.md`; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -76,7 +86,7 @@ For a pair $(X, A)$ of path-connected spaces, show that $\pi_1(X, A, x_0)$ can b
 :::
 
 ::: {.solution}
-An element of $\pi_1(X,A,x_0)$ is a path $\nu$ from $A$ to $x_0$, up to homotopies that keep the endpoint at $x_0$ and let the initial point move inside $A$; since $A$ is path-connected, prepending a path in $A$ from $x_0$ to $\nu(0)$ makes it a loop, and changing that path or $\nu$ multiplies the loop on the left by an element of $H=i_*\pi_1(A,x_0)$. The two constructions, relative class $\mapsto$ left coset and left coset $\mapsto$ relative class of a representing loop, are mutually inverse because a path in $A$ may be absorbed into the allowed motion of the initial point. The card records that the printed $\alpha H$ must be read as $\{h\alpha\}$, with $H$ on the left; the argument is this card's own, no retained solution set covering this exercise.
+An element of $\pi_1(X,A,x_0)$ is a path $\nu$ from $A$ to $x_0$, up to homotopies that keep the endpoint at $x_0$ and let the initial point move inside $A$; since $A$ is path-connected, prepending a path in $A$ from $x_0$ to $\nu(0)$ makes it a loop, and changing that path or $\nu$ multiplies the loop on the left by an element of $H=i_*\pi_1(A,x_0)$. The two constructions, relative class $\mapsto$ left coset and left coset $\mapsto$ relative class of a representing loop, are mutually inverse because a path in $A$ may be absorbed into the allowed motion of the initial point. The card records that the printed $\alpha H$ must be read as $\{h\alpha\}$, with $H$ on the left. The second construction is the retained solution set's: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 5**, printed p. 17 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, identifies the relative classes with the cosets $\alpha H$ through the surjection from loops at $x_0$ and the criterion that $\gamma_0^{-1}\gamma_1$ be a loop in $A$. The two mutually inverse maps are the card's arrangement of that identification.
 
 ::: pf
 
