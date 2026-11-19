@@ -427,5 +427,7 @@ Step [](#s7){.pf-ref} proves the required classification.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 384 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the reference to (IV, 6.4.1) and the hint (2.11.4) including.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.9, PDF pp. 266--267: the complete-intersection case from II Ex. 8.4, giving $\deg=2a$ and $g=\frac12 2a(a+2-4)+1=(a-1)^2$, and the odd case by blowing up the vertex, so that the cone becomes a ruled surface with $K=-2C_0-4f$, the hyperplane section lifts to $C_1=C_0+2f$ with $C_1^2=2$, and adjunction on $aC_1+f$ gives $a^2-a$. Steps [](#s1){.pf-ref} to [](#s5){.pf-ref} are the same two computations written out, with $H=C_0+2f$ derived from $H\cdot f=1$ and $H\cdot C_0=0$ rather than asserted; step [](#s6){.pf-ref} adds the scheme-theoretic complete-intersection statement, which his argument leaves at "it's going through the vertex". Matches.
 :::
