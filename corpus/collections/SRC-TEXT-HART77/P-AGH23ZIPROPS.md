@@ -28,6 +28,31 @@ audit:
     page 26 of the retained PDF), tails included: hypotheses, every lettered
     part and the closing clauses. Same remark on the explicit standing
     hypotheses; the three parts agree.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise I.2.3 as printed (text version, section I.2
+    exercises): the five parts agree with the book, including the hypothesis
+    Z(a) not empty in (d) and the closure in (e). The proof is correct. (a) and
+    (b) are the inclusion reversals; (c) is the degreewise identity
+    I(Y1 union Y2)_d = I(Y1)_d intersect I(Y2)_d. In (d), the inclusion
+    sqrt(a) in I(Z(a)) is the power argument at a representative, and the
+    converse splits: positive degree is Exercise I.2.1 under the hypothesis
+    Z(a) not empty, degree zero is the constant case where nonemptiness forces
+    the constant to vanish. Step s3, that the radical of a homogeneous ideal is
+    homogeneous, is proved correctly by peeling the top component: the degree
+    mD component of f^m is f_D^m, which lies in the homogeneous ideal. In (e),
+    Y is contained in Z(I(Y)), and any closed W = Z(T) containing Y has
+    T contained in I(Y), so Z(I(Y)) is contained in W and hence in the
+    intersection of all such W; Y empty is treated separately and correctly.
+    Repaired the published-solution remark, which attributed to both authors
+    what only Troiani does: Borcherds calls (a), (b), (c), (e) trivial and
+    gives only (d); the empty-locus comparison of I(Z(a)) = S with sqrt(a) = S+
+    is Troiani's; and the closed set Troiani's use of (d) fails to cover is
+    W empty, which forces Y empty, not W = P^n. Both page citations were
+    checked in the PDFs themselves (Borcherds p. 2, Troiani p. 3). The linked
+    cards were used as they stand, not re-reviewed here.
 ---
 
 ::: {.problem}
@@ -162,8 +187,10 @@ This shows why (d) excludes the empty projective zero set; its possible radicals
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.3, PDF p. 2, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.3, PDF p. 3, text version `tmp/sources/hartshorne-solutions-troiani.md`: both call (a), (b), (c) trivial, and for (d) they note that the empty projective zero set is excluded because $I(\varnothing)=S$ while $\sqrt{\mathfrak a}$ may be $S_+$, then compare homogeneous elements and invoke the homogeneous Nullstellensatz of 2.1; for (e) both show that every closed $W\supseteq Y$ has $I(Y)\supseteq I(W)\supseteq\mathfrak a$ with $W=Z(\mathfrak a)$ and hence $Z(I(Y))\subseteq W$.
-Troiani's (e) reaches this through (d), which he has just restricted to a nonempty zero set, so the case $W=\PP^n$ with $\mathfrak a=S_+$ is left uncovered there.
-The proof above proves separately that the radical of a homogeneous ideal is homogeneous, which both published arguments use implicitly when they say it suffices to compare homogeneous elements, and it handles $Y=\varnothing$ in (e) as its own sentence.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.3, PDF p. 2, text version `tmp/sources/hartshorne-solutions-borcherds.md`: he calls (a), (b), (c) and (e) trivial, and for (d) notes that $\sqrt{\mfa}\subseteq I(Z(\mfa))$ is clear, that nonemptiness of $Z(\mfa)$ forces a nonzero homogeneous polynomial vanishing on it to have positive degree, and that Exercise 2.1 then gives $f^q\in\mfa$, so that $I(Z(\mfa))\subseteq\sqrt{\mfa}$ because both sides are homogeneous.
+
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.3, PDF p. 3, text version `tmp/sources/hartshorne-solutions-troiani.md`: he calls (a), (b), (c) trivial; for (d) he observes that $Z(\mfa)=\emptyset$ gives $I(Z(\mfa))=S$ while $\sqrt{\mfa}$ may be $S_+$, so the equality cannot be asserted, and under $Z(\mfa)\neq\emptyset$ he transfers the affine equality $I_{\AA^{n+1}}Z_{\AA^{n+1}}(\mfa)=\sqrt{\mfa}$ to $\PP^n$ using that $\sqrt{\mfa}$ is homogeneous; for (e) he takes a closed $W\supseteq Y$, writes $W=Z(\mfa)$, and concludes $Z(I(Y))\subseteq W$ from $I(Y)\supseteq I(W)\supseteq\sqrt{\mfa}\supseteq\mfa$.
+
+Troiani's (e) invokes (d) without the nonemptiness restriction, so the equality $I(W)=I(Z(\mfa))=\sqrt{\mfa}$ is justified there only when $Z(\mfa)\neq\emptyset$; the closed set this misses is $W=\emptyset$, which forces $Y=\emptyset$, and then $I(Y)=S$ contains $\mfa$ anyway. The proof above proves separately that the radical of a homogeneous ideal is homogeneous, which both published arguments use implicitly, and handles $Y=\emptyset$ in (e) as its own sentence.
 Agree.
 :::
