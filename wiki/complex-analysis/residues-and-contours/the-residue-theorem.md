@@ -30,12 +30,12 @@ $$
 .$$
 
 The coefficient $c_{-1}$ of the Laurent series at a singularity is its residue, and the residue theorem sums these contributions over the singularities enclosed by a curve, weighted by winding numbers.
+Write $\Res_{z=p}f$ for $\Res_{z=p}(f\dz)$.
 
 [[T-HRPNO]]
 
 ::: {.remark title="Residues of $1$-forms"}
 The residue is an invariant of the $1$-form $f\dz$ rather than of the function $f$: if $z = \varphi(w)$ with $\varphi$ biholomorphic near $w_0$ and $\varphi(w_0)=p$, then $\Res_{w=w_0} f(\varphi(w))\varphi'(w) = \Res_{z=p} f(z)$, while $\Res_{w=w_0} f(\varphi(w))$ is in general different.
-The notation $\Res_{z=p}(f)$ abbreviates $\Res_{z=p}(f\dz)$.
 
 :::
 
