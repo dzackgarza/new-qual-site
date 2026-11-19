@@ -11,6 +11,23 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 20, printed p. 420,
+    and against Theorem 4.69, printed p. 412. Step #principal was false: it asserted that
+    each Postnikov fibration p_n is principal, citing Theorem 4.69, but that theorem is an
+    if-and-only-if whose hypothesis is the triviality of the action of pi_1(X_{n-1}) on
+    pi_n X, and the hypothesis fails (X = RP^2, where the generator of pi_1 acts on pi_2
+    by -1; likewise S^1 v S^2). Independent reports from the swarm found the same. The
+    step now records what is true without a hypothesis, the fibre sequence
+    K(pi_n X, n-1) -> Omega X_n -> Omega X_{n-1} -> K(pi_n X, n) from the long exact
+    sequence of p_n, and #loopprincipal is rebuilt on it: Omega p_n is the homotopy
+    fibre of that connecting map, hence the pullback of the path-loop fibration over
+    K(pi_n X, n) along it, hence principal with fibre K(pi_n X, n-1). The exercise's
+    conclusion stands; the argument no longer goes through principality of p_n.
+    Statement unchanged. Not checked: nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -86,36 +103,24 @@ $\pi_i(\Omega X_n)=\pi_{i+1}(X_n)$. For $i+1\le n$, that is $\pi_{i+1}(X)=\pi_i(
 :::
 
 ::: {.pf-step #principal}
-Each fibration $p_n:X_n\to X_{n-1}$ is principal: it is the pullback of a path--loop fibration along a $k$-invariant $k_n:X_{n-1}\to K(\pi_nX,n+1)$, with fibre $K(\pi_nX,n)$.
+The defining fibration $p_n:X_n\to X_{n-1}$ need not itself be principal, and its connecting map is nevertheless available: there is a fibre sequence
+$$
+K(\pi_nX,n-1)\longrightarrow\Omega X_n\xrightarrow{\Omega p_n}\Omega X_{n-1}\xrightarrow{\partial}K(\pi_nX,n).
+$$
 
 ::: pf-proof
-This is the sense in which a Postnikov tower of a connected CW complex is a tower of principal fibrations (Theorem 4.69): the fibration $X_n\to X_{n-1}$ is classified up to fibre homotopy equivalence by the class $k_n\in H^{n+1}(X_{n-1};\pi_nX)$, and a fibration over $X_{n-1}$ with fibre $K(\pi_nX,n)$ and classifying class $k_n$ is the pullback of the path--loop fibration $PK(\pi_nX,n+1)\to K(\pi_nX,n+1)$ along $k_n$.
+Principality of $p_n$ would mean that $p_n$ is the pullback of the path--loop fibration $PK(\pi_nX,n+1)\to K(\pi_nX,n+1)$ along a $k$-invariant $X_{n-1}\to K(\pi_nX,n+1)$. Theorem 4.69 (printed p. 412) makes that an if-and-only-if whose condition fails in general: it requires $\pi_1(X_{n-1})$ to act trivially on $\pi_nX$. For $X=\RP^2$ the fibration $p_2:X_2\to X_1=K(\ZZ_2,1)$ has contractible total space and fibre $K(\ZZ,2)$, while the generator of $\pi_1$ acts on $\pi_2$ by $-1$; $X=S^1\vee S^2$ fails in the same way. So principality cannot be asserted of $p_n$, and it is the tower of $\Omega X$ that the exercise asks about.
+
+What needs no hypothesis is the long exact homotopy sequence of $p_n$, which is the fibre sequence displayed: the fibre of $p_n$ is $K(\pi_nX,n)$, its loop is $K(\pi_nX,n-1)$, and the sequence continues with the base $\Omega X_{n-1}$ followed by $\Omega K(\pi_nX,n)=K(\pi_nX,n)$, the third map being the connecting map. Exactness is all the next step uses.
 :::
 
 :::
 
 ::: {.pf-step #loopprincipal}
-Looping a pullback square produces a pullback square, so $\Omega p_n:\Omega X_n\to\Omega X_{n-1}$ is the pullback of the path--loop fibration over $K(\pi_nX,n+1)$ along $\Omega k_n$.
+$\Omega p_n:\Omega X_n\to\Omega X_{n-1}$ is the pullback of the path--loop fibration $PK(\pi_nX,n)\to K(\pi_nX,n)$ along $\partial$, hence is a principal fibration with fibre $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$.
 
 ::: pf-proof
-Looping is a right adjoint of the suspension functor and preserves limits, in particular pullbacks, so the looped square exhibits $\Omega X_n\to\Omega X_{n-1}$ as the pullback along $\Omega k_n$ of the loop of the path--loop fibration $PK(\pi_nX,n+1)\to K(\pi_nX,n+1)$ (written $PK$ for the contractible path space). That loop is a fibration with contractible total space over $\Omega K(\pi_nX,n+1)=K(\pi_nX,n)$, that is the path--loop fibration of $K(\pi_nX,n)$, whose fibre is $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$. Hence the looped fibration is principal, classified by $\Omega k_n$, with fibre
-$$
-\Omega K(\pi_nX,n)=K(\pi_nX,n-1).
-$$
-Note the shift: the fibre here is the loop of the *fibre* $K(\pi_nX,n)$ of $p_n$, not the loop of its base.
-:::
-
-:::
-
-::: {.pf-step #conclusion}
-Looping a Postnikov tower for $X$ gives a Postnikov tower of principal fibrations for $\Omega X$.
-
-::: pf-proof
-Steps [](#loop){.pf-ref} and [](#stages){.pf-ref} show that the looped tower is a Postnikov tower for $\Omega X$, with stages $\Omega X_n$ indexed so that $\Omega X_n$ is the $(n-1)$-st stage. Step [](#loopprincipal){.pf-ref} shows that each fibration in it is principal, with fibre the Eilenberg--MacLane loop space $K(\pi_nX,n)=\Omega K(\pi_nX,n+1)$. Hence
-$$
-\boxed{\text{looping a Postnikov tower for }X\text{ gives a Postnikov tower of principal fibrations for }\Omega X.}
-$$
-The indexing shifts by one, which is why the fibre of $\Omega X_n\to\Omega X_{n-1}$ is $K(\pi_nX,n-1)$: the group is $\pi_{n-1}(\Omega X)=\pi_n(X)$.
+The homotopy fibre of a map $\partial:B\to C$ is the pullback of $PC\to C$ along $\partial$, and the fibre sequence of step [](#principal){.pf-ref} says precisely that $\Omega p_n:\Omega X_n\to\Omega X_{n-1}$ is that homotopy fibre, with $B=\Omega X_{n-1}$ and $C=K(\pi_nX,n)$. So $\Omega p_n$ is the pullback of the path--loop fibration over $K(\pi_nX,n)$ along $\partial$: a principal fibration with delooping $K(\pi_nX,n)$, whose fibre is $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$. Together with steps [](#loop){.pf-ref} and [](#stages){.pf-ref}, the looped tower is a Postnikov tower of principal fibrations for $\Omega X$, with the index shifted by one because $\pi_{n-1}(\Omega X)=\pi_n(X)$.
 :::
 
 :::
