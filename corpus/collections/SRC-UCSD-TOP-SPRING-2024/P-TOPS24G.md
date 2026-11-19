@@ -14,6 +14,32 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP24_290_Topology_Qual.pdf,
+    problem 7: the CW complex obtained by attaching k two-cells to S^1 by maps
+    of degrees n_1,...,n_k, and the request to compute pi_2(X) in terms of those
+    degrees. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Both cases are right. With d the gcd of the degrees, the two-cells impose
+    t^{n_i} = 1 on the generator of pi_1(S^1), so pi_1(X) = Z/d, and the
+    universal cover has d sheets, hence d vertices and d one-cells forming a
+    cycle and dk two-cells. Each lift of the i-th two-cell has cellular boundary
+    (n_i/d) z on the fundamental cycle of the lifted circle, and since the
+    integers n_i/d have gcd 1 those boundaries generate Z z, so the boundary has
+    rank 1 and its kernel has rank dk - 1; the cover is simply connected, so
+    Hurewicz and the isomorphism of pi_2 with that of the cover give
+    pi_2(X) = Z^{dk-1}. When every n_i vanishes the two-cells are attached by
+    nullhomotopic maps, X is S^1 wedge k two-spheres, the universal cover is the
+    line with k two-spheres over each vertex, and collapsing the contractible
+    line gives a wedge of two-spheres indexed by Z times {1,...,k}, whose second
+    homology, hence pi_2 by Hurewicz, is the direct sum of that many copies of Z.
+    Nothing was changed.
 ---
 
 ::: {.problem}
