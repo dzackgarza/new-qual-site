@@ -8,8 +8,7 @@ title: The Dirichlet problem
 [[D-XR64P]]
 
 ::: {.remark}
-In a Dirichlet problem the values of the function on the boundary are prescribed; in a Neumann problem its normal derivative on the boundary is prescribed.
-On a simply connected domain every real [[D-CFBSA|harmonic function]] is the real part of a [[D-E7A5W|holomorphic function]], so solutions can be sought among the functions $\Re g$ and $\Im g$ with $g$ holomorphic.
+On a simply connected domain every real [[D-CFBSA|harmonic function]] is the real part of a [[D-E7A5W|holomorphic function]], so a solution of a [[D-XR64P|Dirichlet problem]] can be sought among the functions $\Re g$ and $\Im g$ with $g$ holomorphic.
 :::
 
 ::: {.example title="Dirichlet problem on a half-strip"}
