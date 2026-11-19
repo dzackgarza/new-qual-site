@@ -14,6 +14,15 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+    the printed page): the statement is Exercise 1 at the head of the Chapter 6 Exercises,
+    printed p. 174, and its printed words are the card's. The chapter, the exercise number and
+    the page are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -27,6 +36,7 @@ whenever $s \neq 0, -1, -2, \ldots$.
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 6 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 174; the statement below is its wording.
 **Goal:** Prove Gauss's limit formula for the Gamma function:
 $$
 \Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \CC \setminus \{0, -1, -2, \dots\}.
