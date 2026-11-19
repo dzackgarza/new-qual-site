@@ -27,6 +27,8 @@ $$
 :::
 
 ::: {.solution}
+
+The argument is the card's own: it closes the half-line into the boundary of a half-disc, takes the residues at $i$ and $2i$ and bounds the contribution of the arc, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $f(z)\coloneqq\frac{z^2}{(z^2+1)(z^2+4)}$, and for $R>2$ let $C_R$ be the arc $\theset{Re^{i\theta}\st 0\le\theta\le\pi}$.
 
 ::: pf
