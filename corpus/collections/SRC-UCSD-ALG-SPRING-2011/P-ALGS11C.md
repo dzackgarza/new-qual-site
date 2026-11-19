@@ -13,6 +13,18 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 3 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 1 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: the statement and the
+    three listed conditions against the paper's text layer at the page named, the cycle of
+    implications read through, `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution exists to compare the argument with,
+    and no other card of the collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared with Problem 3 of the official UCSD Spring 2011 algebra qualifying exam.
@@ -37,6 +49,8 @@ Show that the following statements are equivalent:
 :::
 
 ::: {.solution}
+
+The problem is Problem 3 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 1 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the cycle of implications, with the nilradical identified as the intersection of the prime ideals and the prime ideals of $A/\mathfrak n$ read off from the field $A/\mathfrak n$.
 
 ::: pf
 
