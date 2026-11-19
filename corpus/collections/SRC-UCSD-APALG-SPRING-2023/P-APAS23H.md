@@ -11,6 +11,19 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part B, Problem 4 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 4 of the Part B paper retained at assets/attachments/Applied_Algebra_Part_B_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; the negative answer, from the unipotence of $\rho(1)$,
+    which would have to be diagonalizable under a $G$-invariant inner product; `qualc.authoring check`
+    on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, and no other card of the collection in this
+    pass.
 ---
 
 ::: {.problem}
@@ -24,6 +37,9 @@ Does $\CC^2$ admit a $G$-invariant inner product?
 :::
 
 ::: {.solution}
+
+The problem is Part B, Problem 4 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 4 of the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+
 No.
 
 If such a $G$-invariant inner product existed, then the operator representing the generator $1\in\ZZ$,
