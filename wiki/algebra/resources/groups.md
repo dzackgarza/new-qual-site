@@ -15,28 +15,22 @@ order: 40
 
 ## Problems
 
-- [Group theory midterm (no solutions)](attachments/Group_Theory_(No_Solns).pdf)
+- [[SRC-MA553-MIDTERM-I-SAMPLE-PROBLEMS|Midterm sample problems, including a group-theory midterm without solutions]].
 
-- MIT finite-group review: [problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), [combined problem file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
-
-- Additional MIT qual problems: Spring 2010 M1, Spring 2012 A10, Fall 2013 M2, Spring 2014 A5, Fall 2014 A1, Fall 2015 M1, Spring 2016 M1, Spring 2016 A3, Fall 2016 M1.
+- The finite-group problems of the compiled preliminary examinations are listed, in source order with their exam locations, in [[SRC-ART-ALG-2010-2015-PRELIMS]] and [[SRC-ART-ALG-2003-2009-PRELIMS]].
 
 ## Solutions and worked practice
 
-- [Solution outlines for chapter 6 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch6Sltns.pdf)
+Each Gallian chapter's outline is the provenance of the collection that owns it:
 
-- [Solution outlines for chapter 7 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch7Sltns.pdf)
+- [[SRC-CH7-GROUP-SOLUTION-OUTLINES|Solution outlines for chapter 7 of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 8 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch8Sltns.pdf)
+- [[SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES|Solution outlines for chapter 8 (direct products) of Gallian, *Contemporary Abstract Algebra*]]
 
-- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Solution outlines for chapter 9 (factor groups) of Gallian, *Contemporary Abstract Algebra*]]
+- [[SRC-CH9-FACT-GROUP-SOLUTIONS|Solution outlines for chapter 9 (factor groups) of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 10, part A, of Gallian, *Contemporary Abstract Algebra*](attachments/Ch10PtASltns.pdf)
+- [[SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES|Solution outlines for chapter 10 (group homomorphisms) of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 10 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch10Sltns.pdf)
+- [[SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES|Solution outlines for chapter 10, part A, of Gallian, *Contemporary Abstract Algebra*]]
 
-- [Solution outlines for chapter 11 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch11Sltns.pdf)
-
-- [Algebra homework 4 solutions](attachments/Algebra_HW_4_Solns.pdf)
-
-- [Nilpotent group practice](attachments/solns7.pdf)
+- [[SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES|Solution outlines for chapter 11 (finitely generated abelian groups) of Gallian, *Contemporary Abstract Algebra*]]
