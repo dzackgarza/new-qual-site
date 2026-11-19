@@ -6088,3 +6088,23 @@ and **no** residue-1 card citing `tmp/sources` has a committed namesake under `a
 **Instruments.** `.scratch/report_check.py`, the corpus report's own undefined-macro and dropped-raw-TeX diagnostic, on each card before its commit: 0 diagnostics each. `qualc.authoring check` on each: "schema and Markdown parsing OK (single card)". The pre-commit card-YAML and schema hook ran on each commit.
 
 **Uncertainty.** Two of the eleven exercise locators rest on a statement read at the page rather than on a printed exercise number alone: `E-HK-42-5`'s page 123 carries exercises 4--7 with 5 among them, and `E-HK-44-5`'s page 134 carries 1--6. A scan whose pagination differs from this copy would move the pages; the printed page is that of `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` as retained.
+
+## 2026-11-19: §4.1 finished and §3.3 continued — five cards read, one extension-not-direct-sum gap repaired
+
+**Object.** The last report left `E-HAT-4.1-18`, `-21`, `-22` and §3.3's eleven cards. The three §4.1 cards are read, closing §4.1 at all 23 cards; §3.3's Exercises 6 and 32 are read here against the book and against the sheets that solve them.
+
+| Card | Printed page | Source, at its printed page | Verdict |
+| --- | --- | --- | --- |
+| `E-HAT-4.1-18` | Ex. 18, p. 359 | — (McCord cited) | correct; page added |
+| `E-HAT-4.1-21` | Ex. 21, p. 359 | — (card's own) | correct; page added |
+| `E-HAT-4.1-22` | Ex. 22, p. 359 | — (card's own) | correct; page added |
+| `E-HAT-3.3-6` | Ex. 6, p. 257 | Math 538 HMW 3, Hatcher 3.3 #6 | **repaired**: the exceptional case's middle group is an extension, not a priori a direct sum |
+| `E-HAT-3.3-32` | Ex. 32, p. 260 | Sam, §3.3 Ex. 32, printed p. 16 | correct; pages added, the printed/PDF page offset recorded |
+
+**The repair.** `E-HAT-3.3-6`, the case where neither factor is orientable: the exact fragment is $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$, and the step said the middle group "is the direct sum with an extra $\ZZ$". Exactness alone gives only an extension, and the quotient carries two $\ZZ_2$ summands, so freeness does not split it. The step now says that and points to step `#torsion`, which determines the group: Corollary 3.28 makes the torsion of $H_{n-1}(M)$ exactly $\ZZ_2$ and the rank rises by one, so $H_{n-1}(M)\cong\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$ — one $\ZZ_2$ of the pair replaced by $\ZZ$, which is the exercise's statement. The rest of the card was checked and stands: the good-pair identification with $M_1\vee M_2$, the pair sequence, the middle degrees, the boundary maps, and part (b)'s rank count, where both alternatives contribute $(-1)^{n+1}$ and give $-\chi(S^n)$.
+
+**Page arithmetic confirmed.** §3.3's exercises are 1–6 on printed p. 257, 7–14 on p. 258, 15–26 on p. 259 and 27–35 on p. 260, checked at PDF pages 266–269 of the held book (`printed = PDF + 9`). Sam's §3.3 Exercise 32 sits on the page whose running head is "3.C. H-SPACES AND HOPF ALGEBRAS" and whose folio is 16, which is PDF page 17 of `tmp/sources/hatcher-solutions-sam-2008.pdf`: the card's "printed p. 16" is right, and a page check that reads only the PDF page number would call it wrong.
+
+**What else was checked.** `4.1-18`: the four-point pseudocircle's chains are the four vertices and the edges $ac,ad,bc,bd$; every map to $S^1$ has finite image, discrete, so constant on the connected $P$, and $g_*=0$ on $\pi_1$. `4.1-21`: the homotopy-fibre identification of $(X^n)_m$, the two Postnikov-stage properties, uniqueness, and the degenerate cases $n<m-1$ and $n=m-1$. `4.1-22`: both directions of the countability criterion. `3.3-32`: $R=\ZZ_2$ orientability, Exercise 31's $\partial[M,\partial M]=[\partial M]$, exactness $\mathrm{im}\,\partial=\ker i_*$, and the retraction's $r_*i_*=\mathrm{id}$; Sam's slip "$r\circ i$ is the identity on $M$" confirmed at the page and not reproduced.
+
+**Not done.** §3.3's remaining nine cards — 2, 12, 14, 16, 19, 25, 26, 27, 31 — are untouched; none of them has a located published solution in the retained sets except through the general results they cite. The source obligations named in the earlier records are unchanged.
