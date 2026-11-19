@@ -27,7 +27,7 @@ Each Gallian chapter's outline is the provenance of the collection that owns it:
 
 - [[SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES|Solution outlines for chapter 8 (direct products) of Gallian, *Contemporary Abstract Algebra*]]
 
-- [[SRC-CH9-FACT-GROUP-SOLUTIONS|Solution outlines for chapter 9 (factor groups) of Gallian, *Contemporary Abstract Algebra*]]
+- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Solution outlines for chapter 9 (factor groups) of Gallian, *Contemporary Abstract Algebra*]]
 
 - [[SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES|Solution outlines for chapter 10 (group homomorphisms) of Gallian, *Contemporary Abstract Algebra*]]
 
