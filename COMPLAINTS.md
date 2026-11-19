@@ -7015,3 +7015,32 @@ sets do not cover §4.A holds, and the two cards' obligation is unchanged.
 **What this item did not do.** It did not search outside the checkout for either card, and it did not read either
 card's proof against the book again; the reading of `E-HAT-4.A-4` in the #163 pass stands (correct, §4.A printed
 p. 426), and `E-HAT-2.B-4` was not read in that pass. The three-card list is now a two-card list, with the reason.
+
+## 2026-11-19: the dead provenance hrefs are checked — 31 unique URLs, none dead — and the loader now names the file it chokes on
+
+**What ran.** `qualc.provenance_hrefs.check_dead_provenance_hrefs` is the one section of the report
+that touches the network, and it had never been run here. Its loader kept failing on sibling writes,
+twice in a row: once on `corpus/theory/Complex_Analysis/T-2XFTY.md`, a file deleted between listing
+and reading, and once on `corpus/collections/SRC-TEXT-HAT02/4-2/E-HAT-4.2-32.md`, whose front matter
+was broken at column 0 for the duration of another session's write. Both failures named the file,
+which is the fix the register asked for: line 165 of `provenance_hrefs.py` now raises
+`ValueError(f"{path}: {exc}")`, so the traceback the register records as "without naming a file" can
+no longer happen. To get the measurement past the transient writes, the collection indexes were read
+directly with `model.split_front_matter` and the module's own `_hrefs` and `_is_http_href`, and the
+statuses were taken with the module's own `http_get_status`: **31 unique http hrefs across the
+collection indexes, checked at six workers in 6 seconds, with no non-2xx or 3xx status and no error.**
+The 44 counted in the record of yesterday is the number of href occurrences; the tool deduplicates,
+which is why the targets are 31. The 672 file hrefs are the other half of the same scan and were
+already green on the five offline checks.
+
+**State of the report check.** All five of its sections have now been measured separately and all are
+green: per-card completeness 14,412 files and 0 issues; provenance hrefs, 653 collections and 716
+hrefs with 0 offline findings and 0 dead URLs; prose-only 178 of 12,429; unsolved 0; and the two
+generated queues. Only the single `tools/backlog.py --with-queues` run remains unobtainable, and it
+dies at four to five minutes with exit 137 at both eight and two Pandoc workers, which is a defect of
+that script on this machine and no longer a gap in what has been measured.
+
+**Repair.** This record only. **Uncertainty.** The six-seconds figure is one run on a shared egress;
+a status is not a proof that a page still carries the cited text, only that the target resolves, and
+no page was read for this record. Not run: the path half of the dead-href check through the loader,
+the offline checks having covered the same 672 file hrefs on the same day.
