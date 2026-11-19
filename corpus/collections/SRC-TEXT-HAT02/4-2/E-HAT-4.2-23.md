@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: solution-reviewed
   by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 23, printed p. 390, the
+    Hurewicz theorem on printed p. 366 and the construction of K(G,n) on printed p. 365.
+    The proof is correct and is Sam's, §4.2 Exercise 23: the pair (Y,X) has H_{n+1} = 0
+    because the (n+1)-cells agree, so the boundary map out of H_{n+2}(Y,X) has the image of
+    the Hurewicz map as its image, and H_{n+1}(Y) is that of K(pi_n X,n), which Exercise 22
+    kills for n > 1. The citation was missing; it is now on the card. Statement unchanged.
+- event: solution-reviewed
+  by: claude
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
@@ -57,6 +67,8 @@ Extend the Hurewicz theorem by showing that if $X$ is an $(n-1)$-connected CW co
 :::
 
 ::: {.solution}
+The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 23, PDF p. 23**. Sam's moves are these: build $K(\pi_n(X),n)$ from $X$ by attaching cells of dimension $n+2$ and greater; let $Y$ be $X$ with the $(n+2)$-cells attached; then $H_{n+1}(Y,X)=0$ because $X$ and $Y$ have the same $(n+1)$-cells, the image of $\partial:H_{n+2}(Y,X)\to H_{n+1}(X)$ is the image of the Hurewicz map, and $H_{n+1}(Y)\cong H_{n+1}(K(\pi_n(X),n))$, which vanishes for $n>1$ by Exercise 22 — that is the surjectivity; for $n=1$ the same sequence gives $H_2(X)/h(\pi_2(X))\cong H_2(K(\pi_1(X),1))$. The book's own frame is the Hurewicz theorem of printed p. 366 and the construction of $K(G,n)$ on printed p. 365.
+
 Throughout $X$ is an $(n-1)$-connected CW complex, $h\colon\pi_{n+1}(X) \to H_{n+1}(X)$ is the Hurewicz homomorphism, and $K$ is obtained from $X$ by attaching cells of dimension $n+2$ and greater until the higher homotopy groups vanish, so that $K$ is a $K(\pi_{n}(X), n)$. The exercise is Hatcher, *Algebraic Topology*, §4.2 Exercise 23, whose hint this argument follows; the case $n = 1$ uses the same construction with cells of dimension at least $3$.
 
 ::: pf
