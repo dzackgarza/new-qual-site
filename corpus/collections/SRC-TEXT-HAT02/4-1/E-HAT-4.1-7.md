@@ -508,6 +508,22 @@ audit:
     homotopy of maps of triples ending at $V^f_1+V^g_1$. Checked step `exact`:
     $\gamma f$ restricted to the free face is $\gamma$ applied to $f$ restricted to $I^{n-1}$ in
     Hatcher's absolute sense. Not changed: the statement as printed on p. 358.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, on the independent reader's report: one notation repaired, no change to the
+    mathematics. Step `construction` defined the shell as $S=I^n-\operatorname{int}Q$ and the annulus
+    as $\Sigma=I^{n-1}-\operatorname{int}B$, and claimed $Q\cap S=\partial Q$. That holds for the
+    interiors taken in $I^n$ and in $I^{n-1}$, which is what the step means, but not for the absolute
+    interiors in $\RR^n$: there $\operatorname{int}B$ is not in $\operatorname{int}Q$, so it would
+    lie in $S$ and the two clauses of $\gamma f$ would be required to agree on it, which they are
+    not — the first gives $f$ of an interior point of the free face, an arbitrary point of $A$, and
+    the second gives $\gamma(1)=x_1$. The step and the definition of $V_t$ in step `realizes` now
+    write $\operatorname{int}_{I^n}Q$ and $\operatorname{int}_{I^{n-1}}B$ and say why the
+    qualification is needed. Re-checked and unchanged: the boundary values of $\delta$, the
+    agreements at $\partial Q$, the well-definedness families, the extension lemma, the identity
+    $\beta_\gamma=(\bar\gamma)_\#$ and the additivity step.
 ---
 
 ::: {.problem}
@@ -539,7 +555,7 @@ $$
 Q=[\varepsilon,1-\varepsilon]^{n-1}\times[0,1-\varepsilon],\qquad
 \varphi(s)=\Bigl(\frac{s_1-\varepsilon}{1-2\varepsilon},\dots,\frac{s_{n-1}-\varepsilon}{1-2\varepsilon},\frac{s_n}{1-\varepsilon}\Bigr),
 $$
-so that $\varphi:Q\to I^n$ is a homeomorphism carrying the face $B=[\varepsilon,1-\varepsilon]^{n-1}\times\{0\}$ of $Q$ onto the free face $I^{n-1}$ and every other face of $Q$ into $J^{n-1}$. The copy of $f$ sits in $Q$ and its free face $B$ sits in the interior of the free face of $I^n$, which is what "centered in the corresponding face" says. Write $S=I^n-\operatorname{int}Q$ for the shell and $\Sigma=I^{n-1}-\operatorname{int}B$ for the annulus of the free face outside $B$; then $\partial S=\partial I^n\cup\partial Q$ and $Q\cap S=\partial Q$. Choose a continuous $\delta:S\to[0,1]$ which is $0$ on the non-free faces of $I^n$, and hence on their closure, which contains $\partial I^{n-1}$; which is $1$ on the non-bottom faces of $Q$ and on $\partial B$; and which on $\Sigma$ runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B$. Such a function exists, for example
+so that $\varphi:Q\to I^n$ is a homeomorphism carrying the face $B=[\varepsilon,1-\varepsilon]^{n-1}\times\{0\}$ of $Q$ onto the free face $I^{n-1}$ and every other face of $Q$ into $J^{n-1}$. The copy of $f$ sits in $Q$ and its free face $B$ sits in the interior of the free face of $I^n$, which is what "centered in the corresponding face" says. Write $S=I^n-\operatorname{int}_{I^n}Q$ for the shell and $\Sigma=I^{n-1}-\operatorname{int}_{I^{n-1}}B$ for the annulus of the free face outside $B$, interiors being taken in $I^n$ and in $I^{n-1}$; with the absolute interiors in $\RR^n$ the set $S$ would contain $\operatorname{int}B$ and the two clauses below would clash there. Then $\partial S=\partial I^n\cup\partial Q$ and $Q\cap S=\partial Q$. Choose a continuous $\delta:S\to[0,1]$ which is $0$ on the non-free faces of $I^n$, and hence on their closure, which contains $\partial I^{n-1}$; which is $1$ on the non-bottom faces of $Q$ and on $\partial B$; and which on $\Sigma$ runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B$. Such a function exists, for example
 $$
 \delta(s)=1-\max\bigl(\nu(s_1,\dots,s_{n-1}),\tau(s_n)\bigr),\qquad
 \nu=\max_i\max\Bigl\{\frac{\varepsilon-s_i}{\varepsilon},\frac{s_i-(1-\varepsilon)}{\varepsilon},0\Bigr\},\qquad
@@ -609,7 +625,7 @@ $[\gamma f]=(\bar\gamma)_\#([f])$, that is $\beta_\gamma=(\bar\gamma)_\#$, where
 The family $V_t$ below is the card's own. Put $v=\bar\gamma$, the path from $x_1$ to $x_0$ given by $\bar\gamma(t)=\gamma(1-t)$, and for $t\in[0,1]$ let
 $$
 Q_t=[t\varepsilon,1-t\varepsilon]^{n-1}\times[0,1-t\varepsilon],\qquad
-V_t(s)=\begin{cases}f(\varphi_t(s)),&s\in Q_t,\\ \gamma\bigl(1-t+t\rho_t(s)\bigr),&s\notin\operatorname{int}Q_t,\end{cases}
+V_t(s)=\begin{cases}f(\varphi_t(s)),&s\in Q_t,\\ \gamma\bigl(1-t+t\rho_t(s)\bigr),&s\notin\operatorname{int}_{I^n}Q_t,\end{cases}
 $$
 where $\varphi_t:Q_t\to I^n$ is the rescaling of the construction above and $\rho_t$ is the corresponding $\delta$. Then $Q_0=I^n$ and $V_0=f$; $Q_1=Q$ and $V_1=\gamma f$. For $t>0$ the cube $Q_t$ meets the non-free faces $J^{n-1}$ in nothing, its coordinates lying in $[t\varepsilon,1-t\varepsilon]$ with $s_n\le 1-t\varepsilon<1$, so $J^{n-1}$ lies in the shell, where $\rho_t=0$; hence $V_t(J^{n-1})=\gamma(1-t)=v(t)$, which is the homotopy of the constant map $J^{n-1}\to\{x_1\}$ that the source prescribes. Each $V_t$ is a map of pairs, but not because $\partial I^n$ lies in the shell: $Q_t$ meets $\partial I^n$ exactly in its bottom face $B_t=Q_t\cap I^{n-1}$, which the first formula carries into $A$ because $f$ maps the free face into $A$, while the rest of $\partial I^n$, the annulus $\Sigma_t=I^{n-1}-\operatorname{int}B_t$ together with $J^{n-1}$, lies in the shell and is carried by the second formula into $A$ because $\gamma$ is a path in $A$. Nor does $\rho_t$ vanish on $\partial I^n$: on $\Sigma_t$ it runs from $0$ at $\partial I^{n-1}$ to $1$ at $\partial B_t$, and it is exactly that rise which carries the values of $f$ on $B_t$ to $x_1=\gamma(1)$ across the edge $\partial B_t$. The family is continuous at $t=0$: for $s\in\operatorname{int}I^{n-1}$ one has $s\in\operatorname{int}B_t$ once $t$ is small, so $V_t(s)=f(\varphi_t(s))\to f(s)$; for $s\in J^{n-1}$ one has $V_t(s)=\gamma(1-t)\to x_1=f(s)$; and for $s\in\Sigma_t$ the value $\gamma(1-t+t\rho_t(s))$ tends to $x_1$ as $t\to0$, which is $f$ on the edge $\partial I^{n-1}$. So $V_t$ is the homotopy the source constructs for the path $\bar\gamma$, and therefore
 $$
