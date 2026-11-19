@@ -62,6 +62,25 @@ audit:
     the one-argument \surjectsvia produced. Not checked: the printed book, only
     the text layer of the retained PDF; and no other retained set was searched
     for a proof of the two omitted steps.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event above says no other retained set was searched for a proof of the
+    two steps Kim omits. They were searched in this pass. Steven V. Sam's
+    solutions carry II.1.3 at printed p. 2 -- PDF p. 15 of
+    tmp/sources/hartshorne-solutions-sam.pdf, whose text layer is mirrored and
+    was read after reversing it; the running foot of that page reads
+    "1 SHEAVES 2", so printed p. = PDF p. - 13 -- and prove part (a) in both
+    directions: the lift of the germ with its representative on a neighbourhood,
+    and the converse by an index i with P in U_i. His part (b) takes
+    differentiation of analytic functions instead of the exponential: it is
+    surjective on stalks because an analytic function has an antiderivative on a
+    simply connected neighbourhood, and 1/z on C \ {0} has none, its integral
+    over the unit circle being 2 pi i. The remark now says so. Cais, printed
+    p. 1, and Cutrone--Marshburn, printed pp. 29--30, also carry the exercise;
+    they were located in this pass but not read closely enough to be named on
+    the card. Not checked: the printed copies of any of these sets.
 ---
 
 
@@ -106,7 +125,8 @@ So every germ of $\units{\OO_\CC}$ at $P$ is the exponential of a germ of $\OO_\
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), PDF p. 3, the folio printed on the page, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he lifts the germ $s_P$ to an element $t_P$, represents it by a section $t_{U_P}$ on a neighbourhood, shrinks to a $V_P$ on which $\phi(t_{U_P})$ and $s$ agree, and lets those neighbourhoods range over $U$. Of the converse he writes only that it "follows by 1.2.b"; the one line on the card is that argument, and the book states the criterion it uses as Caution 1.2.1, printed p. 65.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), PDF p. 3, the folio printed on the page, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: for (a) he lifts the germ $s_P$ to an element $t_P$, represents it by a section $t_{U_P}$ on a neighbourhood, shrinks to a $V_P$ on which $\phi(t_{U_P})$ and $s$ agree, and lets those neighbourhoods range over $U$. Of the converse he writes only that it "follows by 1.2.b"; Sam writes that direction out by the one line the card uses, and the book states the criterion it uses as Caution 1.2.1, printed p. 65.
 For (b) he uses $U=\CC\sm\{0\}$ and the exponential map of the sheaf of holomorphic functions, with the one assertion that the section $z$ "doesn't have a global inverse". The loop integral that excludes a global logarithm, and the construction of a logarithm on a disc that gives surjectivity on stalks, are the card's, as is writing the two sheaves on $\CC$ and restricting to $U = \CC^\times$.
-Egbert, PDF pp. 59--60, and Saglam--Chris, PDF p. 1, carry the same exercise and the same two omissions: each states that a logarithm exists locally and that the section $z$ has none globally, without proving either.
+Steven V. Sam, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 1.3, printed p. 2 (PDF p. 15 of `tmp/sources/hartshorne-solutions-sam.pdf`, whose text layer is mirrored), proves (a) in both directions by the same two steps, and takes differentiation $D\colon\mcf\to\mcf$ of analytic functions for the example of (b): $D$ is surjective on stalks because an analytic function has an antiderivative on a simply connected neighbourhood, and $1/z$ on $\CC^\times$ has none, its integral over the unit circle being $2\pi i$.
+Egbert, PDF pp. 59--60, and Saglam--Chris, PDF p. 1, carry the same exercise and the same two omissions as Kim: each states that a logarithm exists locally and that the section $z$ has none globally, without proving either.
 :::
