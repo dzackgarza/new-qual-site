@@ -29,3 +29,8 @@ Z_M-P_M=Z_{M+m}-P_{M+m}.
 $$
 In particular, if $M$ and $m$ are [[D-E7A5W|holomorphic]] on $\Omega$, then $M$ and $M+m$ have the same number of zeros in $\Omega_\gamma$.
 :::
+
+::: {.remark title="From the circle to a toy contour"}
+For a circle $C$ and holomorphic $f,g$ with $\abs{f}>\abs{g}$ on $C$, this is [@SS03, Theorem 4.3 (p. 91)].
+The toy-contour form follows by applying [[T-JXDQT|the argument principle]] to $M_t\coloneqq M+tm$: the hypothesis $\abs{m}<\abs{M}$ on $\gamma$ makes every $M_t$ nonvanishing on $\gamma$, so $Z_{M_t}-P_{M_t}$ depends continuously on $t\in[0,1]$ and is integer valued, hence constant.
+:::
