@@ -261,41 +261,15 @@ One sentence of the removed `Repair` bullet — that both collections carry a `p
   $(m,n)\mapsto(n,-m)$, which needs no modularity at all. The next card in this queue was `E-SS2.PR-5`,
   also now solved.
 
-## P-AGH467MULTISECANTS: recorded dependencies verified, one cited input not checked
+## 2026-11-19: the `P-AGH467MULTISECANTS` citation item closes with the page read, and steps `s1`--`s13` are re-derived
 
-- **Object and need:** `P-AGH467MULTISECANTS` (Hartshorne IV.6.7 and its converse). Its solution
-  block was moved into place on 2026-11-01; the question is whether the card's completion criteria and
-  dependencies are actually met, as opposed to whether the container is now correct.
+The removed head recorded that the card's step `#tangent-char-zero` used Kaji's theorem on tangentially degenerate curves through a DOI, that the statement and hypotheses had not been checked against the paper, and that steps `s1`--`s13` had not been re-derived. The citation half was closed on 2026-11-02, as the retained record below states: the step cites the restatement actually read, Fukasawa, arXiv:2108.00650v3, §1. What that record could not give was a page, and what it left open was the re-derivation.
 
-- **Observed evidence:** all four internal dependencies of the card resolve —
-  `[[P-AGH434RATIONALNORMALCURVE]]`, `[[P-AGH436CURVESOFDEGREEFOUR]]`, `[[T-CRVCAST]]` and
-  `[[T-DIVMAPPN]]` each exist as a card in `corpus/`. The previously open tangent-contact implication
-  now has its own step, `#tangent-char-zero`, and the characteristic-$p$ failure is a separate step,
-  `#positive-char-counterexample`; `pf-qed` names which steps carry which claim.
+Both are now done. The preprint was fetched again for this commit and read at p. 1, where §1 stands: the definition — "An irreducible projective curve $C\subset\PP^N$ with $N\ge3$ not contained in any plane over an algebraically closed field $k$ of characteristic $p\ge0$ is said to be tangentially degenerate if $(T_PC\smallsetminus\{P\})\cap C\ne\varnothing$ for a general point $P\in C$" — and, two sentences later, "For the case where $p=0$ and the morphism $X\to\PP^N$ induced by the normalization $\phi\colon X\to C$ is unramified, the nonexistence of such curves was proved by Kaji [6] in 1986". The card's step now cites §1 by page, and the three hypotheses it lists are the ones those sentences require: $N=3$, an algebraically closed field of characteristic zero, $X$ nonplanar, and $X$ smooth so that its normalization is an isomorphism and hence unramified.
 
-- **Impact and owner:** one input remains unverified. Step `#tangent-char-zero` invokes "Kaji's
-  theorem on tangentially degenerate curves" through a DOI link
-  (`10.1112/jlms/s2-33.3.430`) to conclude that the tangent line at a general point of a smooth
-  nonplanar curve does not meet the curve again. The exact statement and hypotheses of that theorem
-  were **not** checked against the paper in this pass — the article is not in the repository and the
-  publisher page is not reachable from here — so the step's citation is recorded as used but
-  unchecked.
+Steps `s1`--`s13` were re-derived in this pass and stand as written: the line and the conic by Bézout; the twisted cubic and the elliptic quartic by the sections of $\OO_\ell(2)$ vanishing on a subscheme of length three, the first with the quadrics generating a projectively normal curve's ideal and the second with $X=Q_1\cap Q_2$; the planar case by a general line in the plane; the projection from a point off the two finite bad loci, its line bundle $H-P$, base-point freeness at $P$ from a plane not containing $T_PX$, separation of points and of tangent vectors from the choices made in `s5`; the closed immersion and $\pi_P^*\OO_{\PP^2}(1)=\OO_X(H-P)$ of degree $d-1$; the plane-curve genus formula; and the two Castelnuovo comparisons, which multiply out to $(d-2)(d-4)\le0$ for even $d$ and $(d-3)^2\le0$ for odd $d$, forcing $d=4$ and $d=3$. No step required repair.
 
-- **Uncertainty:** verified — the dependency links, the block structure, and the second half of the
-  step (contact order at least three at the generic point forces $X$ onto a line in characteristic
-  zero, by the two-coordinate argument given in the step). Not verified — the Kaji citation, and
-  steps `s1`--`s13`, which were not re-derived here; the mathematical review of those remains the
-  earlier auditors' record in the card's audit trail, and no event in this pass supersedes it.
-
-- **Repair:** **partly resolved on 2026-11-01.** The paper's own abstract was retrieved from a
-  bibliographic index (the full text is behind a publisher paywall and was not obtained): it defines a
-  curve to be tangentially degenerate when *"a tangent line to $X$ at a general point $P$ meets $X$
-  again at a point other than $P$"*, and states that *"if $X$ is tangentially degenerate in
-  characteristic zero, then $X$ is contained in a 2-plane under a certain condition on singularities
-  of $X$"*. For a smooth curve the singularity condition is vacuous, so the contrapositive is exactly
-  what `tangent-char-zero` uses. Recorded on the card as a `source-checked` event. Still open: the
-  precise singularity condition (irrelevant for smooth $X$) and the body of the paper, and — separately
-  — the re-derivation of steps `s1`--`s13`, which no event in this pass supersedes.
+What remains open on the card, unchanged: the body of Kaji, J. London Math. Soc. (2) **33** (1986) 430--440, kept as the primary reference and not claimed to have been read. It is a citation step in that sense and no longer in the sense of an unchecked restatement. The numbered item at the end of this file that records the 2026-11-02 closure still says steps `s1`--`s13` are not re-derived; that clause is superseded here rather than edited there (QUAL-11).
 
 **Closed 2026-11-02.** The citation is now to the source consulted — Fukasawa, arXiv:2108.00650v3, §1 — whose hypotheses were checked against the step; the primary reference is kept as an alternate and is not claimed to have been read. See item 4 of the numbered list at the end of this file.
 
