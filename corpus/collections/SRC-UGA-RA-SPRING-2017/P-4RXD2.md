@@ -12,6 +12,20 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the five containers state why their subsections suffice, and the 22
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    analysis was re-checked: each $f_n$ integrates to $0$, has a single zero at
+    $x_n=\ln(b/a)/(n(b-a))$ with $nx_n=c$ independent of $n$, so its $L^1$ norm is $2C/n$ and the sum of
+    the norms diverges; the pointwise series sums to $a/(e^{ax}-1)-b/(e^{bx}-1)$, which tends to
+    $(b-a)/2$ at $0$ and decays like $ae^{-ax}$, and its integral is $\ln(b/a)$ by the displayed
+    antiderivative. Checked against the statement on the card, from the UGA Spring 2017 real analysis
+    qualifying exam. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -42,11 +56,21 @@ Part (a): Integration of single terms and root location.
 For each $n \ge 1$, compute the integral of $f_n$ over $[0, \infty)$:
 $$\int_0^\infty f_n(x) \, dx = \left[ -\frac{1}{n} e^{-n a x} + \frac{1}{n} e^{-n b x} \right]_0^\infty = \frac{1}{n} - \frac{1}{n} = 0.$$
 
+
+::: pf-proof
+An antiderivative of $f_n$ is $-e^{-nax}/n+e^{-nbx}/n$, which tends to $0$ at infinity and takes the value $0$ at $x=0$.
+:::
+
 :::
 
 ::: pf-step
 Find the unique root $x_n \in (0, \infty)$ of $f_n(x) = 0$:
 $$a e^{-n a x_n} = b e^{-n b x_n} \iff e^{n(b - a) x_n} = \frac{b}{a} \iff x_n = \frac{\ln(b/a)}{n(b - a)} > 0.$$
+
+
+::: pf-proof
+Setting $f_n=0$ and dividing by $e^{-nax}$ gives $a=be^{-n(b-a)x}$, and solving for $x$ gives the displayed positive root; it is unique because the exponential is strictly monotone.
+:::
 
 :::
 
@@ -56,10 +80,20 @@ Sign of $f_n(x)$:
 - For $x \in [0, x_n)$, $f_n(x) < 0$.
 - For $x \in (x_n, \infty)$, $f_n(x) > 0$.
 
+
+::: pf-proof
+At $x=0$ the value is $a-b<0$, the function is continuous with the single zero $x_n$, and it tends to $0$ from above as $x\to\infty$.
+:::
+
 :::
 
 ::: pf-step
 Since $\int_0^\infty f_n(x) \, dx = 0$, we have $-\int_0^{x_n} f_n(x) \, dx = \int_{x_n}^\infty f_n(x) \, dx$.
+
+
+::: pf-proof
+The integral over $[0,\infty)$ is the sum of the integrals over the two pieces, and that sum is $0$.
+:::
 
 :::
 
@@ -67,21 +101,41 @@ Since $\int_0^\infty f_n(x) \, dx = 0$, we have $-\int_0^{x_n} f_n(x) \, dx = \i
 Compute the $L^1$ norm of $f_n$:
 $$\int_0^\infty \abs{f_n(x)} \, dx = 2 \int_{x_n}^\infty f_n(x) \, dx = 2 \left[ -\frac{1}{n} e^{-n a x} + \frac{1}{n} e^{-n b x} \right]_{x_n}^\infty = \frac{2}{n} \left( e^{-n a x_n} - e^{-n b x_n} \right).$$
 
+
+::: pf-proof
+The integrand is negative on the first piece and positive on the second, and the two integrals have equal absolute value, so $\int\abs{f_n}=2\int_{x_n}^\infty f_n$; evaluating the antiderivative at $\infty$ and at $x_n$ gives the displayed expression.
+:::
+
 :::
 
 ::: pf-step
 Note that $n x_n = \frac{\ln(b/a)}{b - a} =: c$ is independent of $n$.
+
+
+::: pf-proof
+Substituting the formula for $x_n$ into $nx_n$.
+:::
 
 :::
 
 ::: pf-step
 Thus $C = e^{-a c} - e^{-b c} > 0$ (since $b > a \implies a c < b c \implies e^{-a c} > e^{-b c}$) is a strictly positive constant independent of $n$.
 
+
+::: pf-proof
+The exponential is strictly decreasing and $ac<bc$ because $a<b$ and $c>0$, so $e^{-ac}>e^{-bc}$.
+:::
+
 :::
 
 ::: pf-step
 Therefore:
 $$\int_0^\infty \abs{f_n(x)} \, dx = \frac{2 C}{n}.$$
+
+
+::: pf-proof
+Substituting $nx_n=c$ into the formula for the norm.
+:::
 
 :::
 
@@ -98,10 +152,20 @@ Part (a): Divergence of the integral of $\sum \abs{f_n}$.
 By Tonelli's Theorem for non-negative measurable functions:
 $$\int_0^\infty \sum_{n=1}^\infty \abs{f_n(x)} \, dx = \sum_{n=1}^\infty \int_0^\infty \abs{f_n(x)} \, dx = \sum_{n=1}^\infty \frac{2 C}{n} = 2 C \sum_{n=1}^\infty \frac{1}{n} = \infty.$$
 
+
+::: pf-proof
+The summands are non-negative and measurable, so the integral of the sum is the sum of the integrals.
+:::
+
 :::
 
 ::: pf-step
 Therefore $\sum_{n=1}^\infty \abs{f_n} \notin L^1([0, \infty))$.
+
+
+::: pf-proof
+That integral is $2C$ times the harmonic series, which diverges.
+:::
 
 :::
 
@@ -117,11 +181,21 @@ Part (b): Pointwise sum of the geometric series.
 ::: pf-step
 For each fixed $x > 0$, $0 < e^{-a x} < 1$ and $0 < e^{-b x} < 1$.
 
+
+::: pf-proof
+Since $a,b>0$ and $x>0$, both exponentials lie strictly between $0$ and $1$.
+:::
+
 :::
 
 ::: pf-step
 Summing the two geometric series:
 $$S(x) = \sum_{n=1}^\infty f_n(x) = a \sum_{n=1}^\infty (e^{-a x})^n - b \sum_{n=1}^\infty (e^{-b x})^n = \frac{a e^{-a x}}{1 - e^{-a x}} - \frac{b e^{-b x}}{1 - e^{-b x}} = \frac{a}{e^{a x} - 1} - \frac{b}{e^{b x} - 1}.$$
+
+
+::: pf-proof
+Each series is geometric with ratio $e^{-ax}$ and $e^{-bx}$ respectively; summing and clearing denominators gives the two displayed forms.
+:::
 
 :::
 
@@ -138,26 +212,51 @@ Part (b): Integrability of $S(x)$ on $[0, \infty)$.
 Near $x = 0$, expand $e^{u} - 1 = u + \frac{u^2}{2} + O(u^3)$:
 $$\frac{a}{e^{a x} - 1} = \frac{1}{x} - \frac{a}{2} + O(x), \quad \frac{b}{e^{b x} - 1} = \frac{1}{x} - \frac{b}{2} + O(x).$$
 
+
+::: pf-proof
+Substituting $u=ax$ and $u=bx$ into $e^u-1=u+u^2/2+O(u^3)$ and inverting the leading term gives each expansion.
+:::
+
 :::
 
 ::: pf-step
 Subtracting gives:
 $$\lim_{x \to 0^+} S(x) = \lim_{x \to 0^+} \left[ \left(\frac{1}{x} - \frac{a}{2}\right) - \left(\frac{1}{x} - \frac{b}{2}\right) + O(x) \right] = \frac{b - a}{2} > 0.$$
 
+
+::: pf-proof
+The two $1/x$ terms cancel and the constants combine to $(b-a)/2$.
+:::
+
 :::
 
 ::: pf-step
 Since $S(x)$ is continuous on $(0, \infty)$ and extends continuously to $x = 0$, $S$ is bounded on $(0, 1]$, so $\int_0^1 \abs{S(x)} \, dx < \infty$.
+
+
+::: pf-proof
+A continuous function on a compact interval is bounded, and the continuous extension makes $[0,1]$ such an interval.
+:::
 
 :::
 
 ::: pf-step
 As $x \to \infty$, $S(x) \sim a e^{-a x}$, which decays exponentially, so $\int_1^\infty \abs{S(x)} \, dx < \infty$.
 
+
+::: pf-proof
+The second term is exponentially smaller than the first, so the difference is asymptotic to $ae^{-ax}$.
+:::
+
 :::
 
 ::: pf-step
 Thus $S \in L^1([0, \infty))$.
+
+
+::: pf-proof
+The two pieces have finite integrals by the two preceding steps.
+:::
 
 :::
 
@@ -174,11 +273,21 @@ Part (b): Exact computation of $\int_0^\infty S(x) \, dx$.
 Observe the antiderivative:
 $$\frac{d}{dx} \ln\left( \frac{1 - e^{-a x}}{1 - e^{-b x}} \right) = \frac{a e^{-a x}}{1 - e^{-a x}} - \frac{b e^{-b x}}{1 - e^{-b x}} = S(x).$$
 
+
+::: pf-proof
+Differentiating the logarithm gives the quotient of the derivatives of numerator and denominator, which is $S(x)$.
+:::
+
 :::
 
 ::: pf-step
 For $0 < \varepsilon < R < \infty$:
 $$\int_\varepsilon^R S(x) \, dx = \left[ \ln\left( \frac{1 - e^{-a x}}{1 - e^{-b x}} \right) \right]_\varepsilon^R = \ln\left( \frac{1 - e^{-a R}}{1 - e^{-b R}} \right) - \ln\left( \frac{1 - e^{-a \varepsilon}}{1 - e^{-b \varepsilon}} \right).$$
+
+
+::: pf-proof
+This is the fundamental theorem of calculus on $[\varepsilon,R]$.
+:::
 
 :::
 
@@ -186,17 +295,32 @@ $$\int_\varepsilon^R S(x) \, dx = \left[ \ln\left( \frac{1 - e^{-a x}}{1 - e^{-b
 Upper limit as $R \to \infty$:
 $$\lim_{R \to \infty} \frac{1 - e^{-a R}}{1 - e^{-b R}} = \frac{1 - 0}{1 - 0} = 1 \implies \lim_{R \to \infty} \ln\left( \frac{1 - e^{-a R}}{1 - e^{-b R}} \right) = \ln(1) = 0.$$
 
+
+::: pf-proof
+Both exponentials tend to $0$ as $R\to\infty$, so the quotient tends to $1$.
+:::
+
 :::
 
 ::: pf-step
 Lower limit as $\varepsilon \to 0^+$:
 $$\lim_{\varepsilon \to 0^+} \frac{1 - e^{-a \varepsilon}}{1 - e^{-b \varepsilon}} = \lim_{\varepsilon \to 0^+} \frac{a e^{-a \varepsilon}}{b e^{-b \varepsilon}} = \frac{a}{b}.$$
 
+
+::: pf-proof
+L'Hôpital applied to the quotient of the two vanishing differences gives the ratio of derivatives $a/b$.
+:::
+
 :::
 
 ::: pf-step
 Taking limits as $\varepsilon \to 0^+$ and $R \to \infty$:
 $$\int_0^\infty S(x) \, dx = 0 - \ln\left(\frac{a}{b}\right) = \ln\left(\frac{b}{a}\right).$$
+
+
+::: pf-proof
+Substituting the two limits into the expression and using $-\ln(a/b)=\ln(b/a)$.
+:::
 
 :::
 
