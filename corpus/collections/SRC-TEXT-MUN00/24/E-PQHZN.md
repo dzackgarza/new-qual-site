@@ -48,6 +48,18 @@ audit:
     intervals [x_i, x_{i+1}) partition [x_0, b) when b is the supremum, so that the gluing is
     well defined, and in (f) that {b} x (0,1) is the open interval (b x 0, b^+ x 0) of L. What was
     not checked: the printed page is taken from the card's own audit, not re-read here.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card carried two solution blocks: an older prose solution and the Lamport solution written from
+    it on 2026-11-19. Both rendered, so the page showed the exercise answered twice, and the older block
+    still contained the two defects the 2026-11-19 review had corrected in the newer one -- the dropped
+    base case in (c), where b = a_0 would leave an empty interval with no induction hypothesis, and the
+    path in (d) drawn inside the half-open interval containing only one of its endpoints. The superseded
+    block was removed; the Lamport solution, which carries the corrections and the citation to
+    positron0802, remains as the card's only answer. Its text was not changed.
+
 ---
 
 ::: {.exercise}
@@ -76,24 +88,6 @@ For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval 
 
 (f) Show that $L$ cannot be imbedded in $\RR$, or indeed in $\RR^n$ for any $n$.
 [Hint: Any subspace of $\RR^n$ has a countable basis for its topology.]
-:::
-
-::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.12, PDF pp. 6--7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all six parts are theirs. Part (f) is stated on the card through the counting lemma behind the second countability of subspaces of $\RR^{n}$, which is the book's hint, rather than through Theorem 30.3, which comes later in the book.
-
-Let $S_{\Omega}$ be the minimal uncountable well-ordered set, $a_{0}$ its least element, and $L$ the long line, that is, $S_{\Omega}\times[0,1)$ in the dictionary order with its least element $a_{0}\times0$ removed.
-
-(a) If $[a,c)$ has the order type of $[0,1)$ via an order-preserving bijection $f$, then $f$ restricts to order-preserving bijections $[a,b)\to[0,f(b))$ and $[b,c)\to[f(b),1)$, and $[0,t)$ has the order type of $[0,1)$ for every $t\in(0,1)$ (via $s\mapsto s/t$). Conversely, order-preserving bijections $[a,b)\to[0,1/2)$ and $[b,c)\to[1/2,1)$ glue to an order-preserving bijection $[a,c)\to[0,1)$.
-
-(b) If $[x_{0},b)$ has the order type of $[0,1)$, then by (a) applied repeatedly each $[x_{i},x_{i+1})$ does. Conversely, if each $[x_{i},x_{i+1})$ has the order type of $[0,1)$, choose order-preserving bijections $f_{i}:[x_{i},x_{i+1})\to[1-2^{-i},\,1-2^{-i-1})$; they agree on the overlaps (each $x_{i}$ is the last point of nothing and the first point of $[x_{i},\dots)$), and together they give an order-preserving bijection $[x_{0},b)\to[0,1)$ because $\sup_{i}x_{i}=b$ corresponds to $\sup_{i}(1-2^{-i})=1$.
-
-(c) By transfinite induction on $a\ne a_{0}$ in $S_{\Omega}$, one shows that $[a_{0}\times0,\ a\times0)$ has the order type of $[0,1)$. If $a$ is the successor of an element $b$ (with $b\ge a_{0}$), then $[a_{0}\times0,b\times0)$ has the order type of $[0,1)$ by induction, and so does $[b\times0,a\times0)=\{b\}\times[0,1)$, which is order isomorphic to $[0,1)$; by (a) the same holds for $[a_{0}\times0,a\times0)$. If $a$ is not a successor, there is a strictly increasing sequence $a_{i}$ in $S_{\Omega}$ with $a=\sup_{i}a_{i}$; each $[a_{0}\times0,a_{i}\times0)$ has the order type of $[0,1)$ by induction, and by (b) so does $[a_{0}\times0,a\times0)$.
-
-(d) *$L$ is path connected.* Let $a_{1}$ be the successor of $a_{0}$. Every point of $[a_{0}\times0,a_{1}\times0)$ can be joined to $a_{1}\times0$ by a path, since that interval has the order type of $[0,1)$ (part (c)) and the order topology on it is the usual one (Theorem 24.1 and Exercise 24.7(a)). For $b\ge a_{1}$ and $t\in[0,1)$, the point $b\times t$ can be joined to $b\times0$ within $\{b\}\times[0,1)$, and $b\times0$ can be joined to $a_{1}\times0$ by (a) and (b), since $[a_{1}\times0,b\times0)$ is a union of intervals each of the order type of $[0,1)$ (part (c)); the union of those two paths joins $b\times t$ to $a_{1}\times0$. So every point of $L$ is joined to $a_{1}\times0$.
-
-(e) Every point of $L$ has a neighbourhood homeomorphic with an open interval of $\RR$. For $a_{0}\times t$ with $t\in(0,1)$ the interval $\{a_{0}\}\times(0,1)$ is such a neighbourhood, and so is $[a_{0}\times0,a_{1}\times0)$ (which is open in $L$ because $a_{0}\times0$ has been deleted and contained in the interval that has the order type of $[0,1)$). For $b>a_{0}$ and $t\in[0,1)$ the interval $(a_{0}\times0,\ b'\times0)$ with $b'$ the successor of $b$ is homeomorphic with $(0,1)$ by part (c) and Exercise 24.7(a), and it contains $b\times t$; so does the smaller open interval $(a_{0}\times0,\ b\times t)$ when $t>0$.
-
-(f) *$L$ cannot be imbedded in $\RR^{n}$.* Any subspace of $\RR^{n}$ has a countable basis for its topology (the balls with rational centre and rational radius), and in a space with a countable basis every family of pairwise disjoint nonempty open sets is countable: each member contains a basis element, and distinct members contain distinct basis elements. But the sets $\{b\}\times(0,1)$, for $b$ ranging over the uncountably many elements of $S_{\Omega}$ other than $a_{0}$, are pairwise disjoint nonempty open subsets of $L$. So $L$ has no countable basis and cannot be a subspace of $\RR^{n}$.
 :::
 
 ::: {.solution}
