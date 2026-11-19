@@ -46,6 +46,19 @@ audit:
     and each is a single orbit by tetrahedral symmetry together with moving points inside one open cell.
     Finally, applying the invariance hypothesis to `f` and to `f^{-1}` gives `f(A) = A`, so the
     invariant subsets are exactly the unions of the five orbits. No correction was needed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution section carried no citation at all: neither a retained set nor a statement that
+    the argument is the card's own. Checked against the retained book and the retained sets. The
+    exercise is §2.1 Exercise 28, printed p. 133 (PDF p. 142 in
+    tmp/sources/hatcher-2002-algebraic-topology.pdf), where item 28 reads "Let X be the cone on the
+    1-skeleton of Delta^3, the union of all line segments joining points of the 1-skeleton to the
+    centre of Delta^3; compute the homology groups of X." The retained Hatcher sets do not reach it:
+    Guanyu Li's §2.1 block, Sam's §2.1 and Koukpari's §2.1 carry no Exercise 28, and the Math 538
+    homework is Chapter 4. The solution section now carries the page and says the argument is the
+    card's own.
 ---
 
 ::: {.problem}
@@ -56,6 +69,7 @@ Use these calculations to determine which subsets $A \subset X$ have the propert
 :::
 
 ::: {.solution}
+This is Hatcher, Algebraic Topology, §2.1 Exercise 28, printed p. 133 (PDF p. 142), where it reads "Let $X$ be the cone on the 1-skeleton of $\Delta^3$…". No retained solution set covers this exercise — the retained Hatcher sets stop short of §2.1 Exercise 28 — so the argument is the card's own.
 Let $G$ be the $1$-skeleton of $\Delta^3$, so $G\cong K_4$, and write
 $$
 X=CG
