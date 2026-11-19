@@ -304,6 +304,27 @@ audit:
     printed pp. 355--358 with the printed folio one less than the PDF page of
     tmp/sources/reiser-hartshorne-solutions.pdf; Bergvall's §2.2 and the book's
     IV.2.3 were not re-read here, their pages being those of the events above.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.3, printed p. 85,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.3, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the intersection of the tangent at Q with L, and the local form
+    phi^*t = (f_y/f_x) y + x. Not checked: Yang's Solutions outside printed pp. 84-87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.3 at printed
+    p. 85 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -1068,4 +1089,6 @@ B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed p
 O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, printed pp. 3--4, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3, printed pp. 212--215, identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.3 (Plane Curves), printed p. 85, takes part (a) locally: at $P=(0,0)$ with $L=(y=0)$ and $T_P=(x=0)$, the tangent at $Q=(a,b)$ meets $L$ at $\bigl(a+\frac{f_y(Q)}{f_x(Q)}b,0\bigr)$, so if $t$ is a local parameter at $0\in\AA^1$ the dual map is $\varphi^*t=\frac{f_y}{f_x}y+x$, which is what makes the dual map a morphism and identifies the dual curve as the closure of the image.
 :::
