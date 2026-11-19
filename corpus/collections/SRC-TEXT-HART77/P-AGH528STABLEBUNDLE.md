@@ -223,6 +223,24 @@ audit:
     page markers and its OCR garbles the displays. Not checked: whether part (c)
     holds in positive characteristic, which nothing read here states and which
     the statement does not claim.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card used the word "normalized" in parts (b) and (c) and in its steps
+    without saying what it means. Read on 2026-11-19 in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md: Notation 2.8.1, printed
+    p. 373, names a rank-two bundle normalized when it satisfies the hypothesis
+    of Proposition 2.8, printed p. 372, which is H^0(C, E) nonzero and
+    H^0(C, E (x) M) = 0 for every invertible sheaf M of negative degree; the
+    book's own index enters the word at printed p. 373. The solution now states
+    that condition before the proof and writes the degree of a normalized bundle
+    as -e. Step s4 now derives "O_C is a line subbundle" from the first clause,
+    with step s3 bounding its degree, and step s3 cites printed p. 373 for the
+    vanishing rather than Proposition 2.8 alone. Nothing else on the card
+    changes, and no claim is weakened: a normalized bundle may have negative
+    degree, as Example 2.11.3, printed p. 374, shows for O_C (+) L with
+    deg L < 0.
 - event: source-corrected
   by: claude
   date: 2026-11-19
@@ -273,6 +291,8 @@ For a nonzero locally free sheaf $\mathcal F$ on $C$, write
 $$
 \mu(\mathcal F)=\frac{\deg\mathcal F}{\rank\mathcal F}.
 $$
+
+A rank-two bundle $\mathcal E$ is normalized when $H^0(C,\mathcal E)\ne0$ and $H^0(C,\mathcal E\tensor\mathcal M)=0$ for every invertible sheaf $\mathcal M$ of negative degree, the condition of Proposition 2.8, printed p. 372, which the book names at Notation 2.8.1, printed p. 373; its degree is then written $-e$, so $e=-\deg\mathcal E$.
 
 The data of part (c) are the data of the normalized model of a bundle, and tensoring by an invertible sheaf moves the bundle without moving them. Let $\mathcal E_0$ be normalized, not semistable, with data $(e,\mathcal L,\xi)$, and let $\mathcal A$ be a line bundle of degree $m\ne0$. Tensoring by $\mathcal A$ shifts every slope by $m$, so the maximal-degree line subbundle of $\mathcal E_0\tensor\mathcal A$ is $\OO_C\tensor\mathcal A$, and the data read off from it are
 $$
@@ -325,7 +345,7 @@ $$
 $$
 
 ::: pf-proof
-The inclusion is a nonzero section of $\mathcal E\tensor\mathcal A^{-1}$; if $\deg\mathcal A>0$ then $\mathcal A^{-1}$ has negative degree, contrary to the defining vanishing of Proposition 2.8, printed p. 372. In Gunning's notation this says $\operatorname{div}\mathcal E\le0$, and $H^0(C,\mathcal E)\ne0$ gives the reverse inequality.
+The inclusion is a nonzero section of $\mathcal E\tensor\mathcal A^{-1}$; if $\deg\mathcal A>0$ then $\mathcal A^{-1}$ has negative degree, contrary to the normalization of printed p. 373. In Gunning's notation this says $\operatorname{div}\mathcal E\le0$, and $H^0(C,\mathcal E)\ne0$ gives the reverse inequality.
 
 :::
 
@@ -335,7 +355,7 @@ The inclusion is a nonzero section of $\mathcal E\tensor\mathcal A^{-1}$; if $\d
 If a rank-two bundle $\mathcal E$ is normalized, then it contains $\OO_C$ as a line subbundle.
 
 ::: pf-proof
-This is the last step of the proof of Proposition 2.8, printed p. 372: a nonzero section $s\in H^0(C,\mathcal E)$ gives an injective map $\OO_C\to\mathcal E$, and its image spans a line subbundle. Normalization makes the quotient invertible — the book shows it is torsion-free and hence invertible on a curve — and the subbundle is $\OO_C$; step [](#s3){.pf-ref} bounds its degree above by $0$ and the nonzero section bounds it below.
+Normalization gives $H^0(C,\mathcal E)\ne0$; a nonzero section gives an injective map $\OO_C\to\mathcal E$, and its image spans a line subbundle $\mathcal A\subseteq\mathcal E$, whose degree is at most $0$ by step [](#s3){.pf-ref} and at least $0$ because it carries the nonzero section, so $\mathcal A\cong\OO_C$. This is the last step of the proof of Proposition 2.8, printed p. 372, where the quotient of $\mathcal E$ by that copy of $\OO_C$ is shown to be invertible.
 
 :::
 
