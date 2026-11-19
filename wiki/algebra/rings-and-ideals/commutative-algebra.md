@@ -80,7 +80,7 @@ For an integral domain, the field of fractions is the localization at the nonzer
 
 [[D-JGYK4]]
 
-The decomposition is stated twice: existence over any Noetherian ring, and the explicit intersection over a principal ideal domain, where the prime powers of a generator name the components.
+Over a Noetherian ring the decomposition exists; over a principal ideal domain the prime powers of a generator name the components.
 
 [[T-LSNTH]]
 
