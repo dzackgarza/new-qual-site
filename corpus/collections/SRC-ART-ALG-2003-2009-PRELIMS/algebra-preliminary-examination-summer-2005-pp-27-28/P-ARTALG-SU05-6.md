@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the opening step now says what the exercise is asking for, namely
+    three matrices with characteristic polynomial $(x+2)^3$ in three distinct similarity classes.
+    Nothing mathematical was changed.
+
 ---
 ::: {.problem}
 Two $n \times n$ matrices $A$ and $B$ over a field $F$ are said to be similar if there exists an $n \times n$ invertible matrix $T$ over $F$ such that $TAT^{-1} = B$.
@@ -29,6 +37,11 @@ For each, determine its elementary divisors, minimal polynomial and characterist
 ::: pf-step
 
 We need three $3 \times 3$ matrices over $\QQ$ with $-2$ as the only rational eigenvalue, pairwise non-similar.
+
+
+::: pf-proof
+This restates what the exercise asks for: three matrices, each with characteristic polynomial $(x+2)^3$ and no other rational eigenvalue, lying in three distinct similarity classes.
+:::
 
 :::
 
