@@ -38,6 +38,8 @@ is an exact sequence, show that $\mcf'$ is isomorphic to a subsheaf of $\mcf$, a
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.6, printed p. 66. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.6, printed p. 3, gives the one-line version it expands: exactness is checked on the stalks, where $(\mcf/\mcf')_P=\mcf_P/\mcf'_P$ by the definition of the quotient sheaf.
+
 Let
 $$
 q:\mcf\longrightarrow\mcf/\mcf'
