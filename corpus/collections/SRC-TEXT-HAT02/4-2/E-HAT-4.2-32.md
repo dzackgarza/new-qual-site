@@ -37,7 +37,7 @@ Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n
 
 ::: {.solution}
 
-The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
+The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. A published solution exists and is cited here for the two steps it does carry: Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 32, which derives $k<n$ and $\pi_{n-1}(S^{k})\cong\ZZ$ from the long exact sequence and stops at $k\le n-1$; the reverse inequality, which his retained text does not reach, is step [](#lower){.pf-ref} below, and both inequalities are read off the same exact sequence of Theorem 4.41, printed p. 376. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
 
 ::: pf
 
