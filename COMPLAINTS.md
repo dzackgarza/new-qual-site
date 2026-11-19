@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: all ten UO Fall 2019 cards name the solutions packet's problem and page
+
+**Object and need.** The survey recorded above found that collections retaining a solutions file often never mention it on their cards. `SRC-UO-TOP-FALL-2019` retains a complete solutions file for its ten problems (`assets/attachments/TopologySept19solutions.pdf`, seven pages) and none of its ten cards named it. All ten do now.
+
+**Observed evidence.** Each card was read against the packet's own solution before its paragraph was written. Nine are transcriptions of the packet's Solution 1, with the page named: `01` p. 1 (the retraction $K\to\alpha$ and the $H_1$ obstruction on $\beta$), `02` pp. 1--2 (four connected coverings of $M(3,1)\times\RP^2$), `03` p. 2 (the cube with axes, $Z$ contractible, $\pi_1=F_5$), `04` pp. 3--4 (Mayer--Vietoris on the mapping torus, giving $\ZZ$ in degrees $0$ to $5$), `05` pp. 4--5 (the directed system defining $H^i_c$, and $H^0_c(\RR^0)=\ZZ$ against $H^0_c(\RR^1)=0$), `06` p. 5 (Lefschetz $\tau=1$ on $(\RP^2)^{2019}$ over $\QQ$), `07` pp. 5--6 ($H_1(S^3\setminus5_2)=\ZZ$ and the two deck groups), `08` p. 6 (no closed $3$-manifold is a $K(G,2)$), `09` p. 6 ($\pi_i$ of the Grassmannian, $\cong\pi_{i-1}(SO(3))$), `10` pp. 6--7 (the primary obstruction in $H^2(X;\ZZ/2)$ and the identity example). Where the packet prints alternative sketches --- Solutions 2 and 3 for Problem 4, Solution 2 for Problems 5, 7 and 8 --- each paragraph says the card does not depend on them, which was checked.
+
+**Impact and owner.** Ten commits, one per card: `e7f520c5b5`, `89d4c1db18`, `515dad4d7c`, `b665d5b312`, `2d55961eef`, `bb9f27e5fe`, `3e308f9164`, `752bf0adcc`, `b33d44ec98`, `4bb9157c7d`, each with a `source-checked` event naming the page and what the card adds. Checks per card: `qualc.authoring check`, and `tmp/lam.sh` with the numbering intact and QED present (8 to 15 steps). A search of the collection for the packet's name now returns all ten cards and the index.
+
+**Uncertainty.** High confidence in each comparison. Not checked: the problem statements against a printed exam booklet, which the collection does not retain separately --- the packet carries the statements and the pages cited are its pages.
+
 ## 2026-11-19: the NUS 1970 paper — every route tried, and what each one returned
 
 **Object and need.** Both NUS collections carry an imported label (`NUS, 1970, Spring`) that no document supports, and their `provenance:` lists are empty because a YAML of transcribed questions is not a source. The question is the paper. This record is the coverage, so that the next session does not repeat a dead route or read a refusal as an absence.
@@ -8448,3 +8458,15 @@ printed book itself.
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-68-11` numbering 1–5 and `E-HK-72-5` 1–2, QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set. In `E-HK-68-11` the appeal to uniqueness of the Jordan decomposition in the card's earlier step was left as it stood and is not re-proved.
+
+## 2026-11-19: the Gorenstein socle blocker closes inside the corpus — and a correction to the record that called `P-HCAO21` unsolved
+
+**Object and need.** The two records above name one unclosable item: the zero-dimensional Gorenstein socle, asserted on `D-SCHCMGOR` and on the "Gorenstein rings" section of `wiki/algebra/rings-and-ideals/commutative-algebra.md`, with no source reachable through `vocabularies/references.yaml`. Both are now resolved, and one statement in the second record was wrong.
+
+**Observed evidence.** (i) `P-HCAO21`, "Dual module of a zero-dimensional Gorenstein algebra", has carried a solution since 2026-09-10 (its last content commit is `1f17231d05`, 2026-10-30, a STYLE-04 pass). The second record above says it has no `solution` block; that was my error, from a search pattern written `^.::: \{\.(solution|hint)`, which requires a character before the fence and so matches nothing. The card's six numbered steps include `#hom-r-d-iso-hom-k`, the natural isomorphism $\Hom_R(M,D)\cong\Hom_k(M,k)$, and `#dual-of-local-gorenstein-is-free-rank-one`, the self-duality $D\cong R$ for a finite-dimensional Gorenstein algebra derived through minimal resolutions. Its own `solution-reviewed` note says the self-duality was proved "rather than an uncited socle criterion".
+
+(ii) That makes the socle fact a two-line derivation with a referent in the corpus: $\Hom_R(k,R)\cong\Hom_R(k,D)\cong\Hom_k(k,k)=k$. It is now a proposition with that proof on `D-SCHCMGOR` (`6d7c2800fc`), so the theorem card and the wiki page no longer rest on an unsourced assertion, and no Zotero entry is needed. The Huneke locator recorded earlier (Theorem 5.3, printed p. 11) remains the printed source for the statement and can be attached later as a corroborating citation, but it is no longer load-bearing.
+
+**Impact and owner.** The ticket's last open item is closed. What remains unverified is whether the wiki page's own sentence should stay, now that the corpus answers `P-HCAO21`: it summarizes the answer to a problem the collection poses. That is an editorial question for whoever owns the oral-exam collection, not a defect.
+
+**Uncertainty.** The derivation is checked line by line against the two steps it cites; the cited solution was read, not re-proved. The Huneke page reference is as verified earlier and is not used by the card.
