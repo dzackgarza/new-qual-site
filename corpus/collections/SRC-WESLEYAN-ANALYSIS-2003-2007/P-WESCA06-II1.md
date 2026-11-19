@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Problems, problem 1 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf, PDF p. 15: the Complex Analysis
+    Preliminary Examination of August 9, 2006, Section 2 item 1. The page had cited
+    only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged.
+
 ---
 
 ::: {.problem}
@@ -29,6 +39,10 @@ $$
 :::
 
 ::: {.solution}
+The item is Section 2 item 1 of the Complex Analysis Preliminary Examination of August 9, 2006
+(Find and classify all isolated singularities), on the first page of that paper, PDF p. 15 of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 
 ::: pf
 
