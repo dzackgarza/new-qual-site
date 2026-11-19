@@ -20,6 +20,30 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise II.5.16 as printed in the text version, all five
+    parts, including the addition of the canonical isomorphism in (e) where the
+    book writes equality. The proof is correct. (a) counts words, monomials and
+    increasing tuples on a frame and produces the dual functionals for the
+    exterior linear independence; the rank-zero convention is stated and
+    correct. (b) is the signed permutation matrix in the frames, which is
+    invertible over any ring, with the rank-two case at n = 2, r = 1 and the
+    n = r = 0 case handled; the identification of sheaf Hom with the dual
+    tensor product is the linked card P-AGH251DUALSHEAF. (c) and (d) define the
+    filtrations as images and compare at stalks after splitting M = M' direct
+    sum M'' over the local ring, which is legitimate because M'' is free there;
+    the quotient at q = p is the comparison morphism, so it is an isomorphism
+    since it is one on every stalk. The top exterior power case is the
+    observation that only the p = n' quotient survives. (e) gives the explicit
+    inverse on elementary tensors at the level of stalks, so no flatness is
+    used. Added a published-solution remark citing Kim, PDF pp. 61-63 (pages
+    checked in the PDF), which covers all five parts and whose (c) does split on
+    a trivializing cover, unlike the stalkwise argument here; Saglam-Chris
+    begin the exercise at PDF p. 73. Nothing in the statement or the proof was
+    changed.
 ---
 
 ::: {.problem}
@@ -238,4 +262,11 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §5, Exercise 2.5.16, PDF pp. 61--63, text version `tmp/sources/hartshorne-solutions-kim.md`: for (a) he checks the free case and concludes local freeness locally; for (b) he reduces to a free sheaf with a basis and calls the pairing evident; for (c) he takes an affine cover trivializing all three sheaves, lifts a basis of $\mcf''$ to split the sequence on a refinement, and identifies the filtration with the products having exactly $i$ factors from $\mcf'$; (d) he dismisses as the same argument with alternating words; (e) is the universal property together with the free case. Saglam--Chris, *Solutions to Hartshorne*, Exercise 5.16, beginning on PDF p. 73, cover the same ground.
+
+The proof above differs from Kim's in (c) and (d) on one point: it never splits the exact sequence on $X$ or on a cover of $X$, only at stalks, where $M''$ is free over the local ring and a basis of it lifts. The comparison morphisms are defined globally and shown to be isomorphisms on stalks, so no splitting on $X$ is asserted or needed.
+Agree.
 :::
