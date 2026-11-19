@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 14, printed p. 420.
+    The argument is right but one citation was wrong: the step identifying p_i with its
+    mapping path replacement cited Exercise 12 of the section, which is about homotopic
+    maps f, g: A -> B having fibre homotopy equivalent fibrations E_f, E_g, not about a
+    fibration and its mapping path replacement. That is Proposition 4.65, printed p. 409
+    ("If p: E -> B is a fibration, then the inclusion E -> E_p is a fiber homotopy
+    equivalence"), now cited. The citation of Exercise 13 for E_{p_2 g} ~ E_{p_2} is
+    correct as printed. An independent report from the swarm flagged the same citation.
+    Statement unchanged. Not checked: nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -125,7 +138,7 @@ Then there is a homotopy equivalence $g:E_1\to E_2$ with $p_1\simeq p_2 g$, by t
 $p_1$ and $p_2$ are fibre homotopy equivalent.
 
 ::: pf-proof
-Each $p_i$ is fibre homotopy equivalent to its mapping path replacement $E_{p_i}\to B$ (Exercise 12 of this section, whose construction is the one of step [](#replacement){.pf-ref} applied to $p_i$). A homotopy $p_1\simeq p_2g$ together with the homotopy equivalence $g$ gives a fibre homotopy equivalence $E_{p_1}\simeq_f E_{p_2 g}$, and composing with $g$ gives $E_{p_2g}\simeq_f E_{p_2}$; this is the content of Exercise 13 of this section. Chaining the three fibre homotopy equivalences gives $p_1\simeq_f p_2$.
+Each $p_i$ is fibre homotopy equivalent to its mapping path replacement $E_{p_i}\to B$ (Proposition 4.65, printed p. 409: for a fibration $p$ the inclusion $E\hookrightarrow E_p$ is a fibre homotopy equivalence, whose construction is the one of step [](#replacement){.pf-ref} applied to $p_i$). A homotopy $p_1\simeq p_2g$ together with the homotopy equivalence $g$ gives a fibre homotopy equivalence $E_{p_1}\simeq_f E_{p_2 g}$, and composing with $g$ gives $E_{p_2g}\simeq_f E_{p_2}$; this is the content of Exercise 13 of this section. Chaining the three fibre homotopy equivalences gives $p_1\simeq_f p_2$.
 :::
 
 :::
