@@ -13,6 +13,16 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Fall_2012.docx`, converted with Pandoc: the item is the item beginning "Let k be a field of characteristic 0, let A, B in M_n(k)", and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -23,6 +33,7 @@ Moreover, when the characteristic of $k$ is 2, find a counterexample to this sta
 :::
 
 ::: {.solution}
+This is the item beginning "Let k be a field of characteristic 0, let A, B in M_n(k)" of the Fall 2012 algebra examination, retained in this repository as `assets/attachments/Algebra_Fall_2012.docx`; the exam restarts its numbering, so the opening words locate it.
 
 ::: pf
 
