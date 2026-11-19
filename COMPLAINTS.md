@@ -8139,3 +8139,65 @@ The old proof had four steps whose bodies said nothing: "Hence $D_T$ is an alter
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering as above for `E-HK-53-11` and $1$ for `E-HK-64-11`; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; the derivations were checked against the printed statements, and `E-HK-53-11`'s citation of Theorem 4 of §5.3 was not re-read on its page in this pass.
+
+## 2026-11-19, Yang sweep: three cards whose audit block landed after `review: draft` repaired, IV.2.5--IV.2.7 cited
+
+**Object.** Six Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne Solutions*
+(9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages are its
+printed pages.
+
+**Repair first — three cards were left with invalid YAML and no commit.** The previous turn's
+insertion script keyed on the front-matter closing `---` and put two audit events *after*
+`review: draft`. `P-AGH422GENUSTWOMODULI`, `P-AGH423DUALCURVE` and `P-AGH424FUNNYQUARTIC` each
+carry keys after `audit:`, so the events fell outside the `audit:` list and the front matter no
+longer parsed: a YAML reader saw `review: draft` followed by a top-level sequence at column 0. The
+block is 21 lines in each file and was moved to just before `review: draft`; all three now parse,
+with 17, 15 and 5 audit events respectively. The rule for the next insertion: locate `review: draft`
+at column 0 inside the front matter and insert before it, not before the last `---`. Commits
+`88b7e475e0`, `792457d5c6`, `838544b719`, one card each.
+
+**`P-AGH425HURWITZAUTOMORPHISMBOUND`, IV.2.5 — cited, printed pp. 86--87, with two reversed
+inequalities recorded.** Yang gets (a) from the orbit count: the points of $f^{-1}(f(P))$ form one
+$G$-orbit with conjugate stabilizers, so $s=\size G/r=n/r$ when $e_P=r$, and Hurwitz's formula reads
+$2g-2=n(2g(Y)-2)+\sum_{i=1}^{s}\frac{n}{r_i}(r_i-1)$, which divided by $n$ is the exercise's
+displayed equation. Part (b) is the three-case split: no branch point forces $g(Y)\geq 2$ and
+$n\leq g-1$; a positive sum with $g(Y)\geq1$ is at least $1/2$, giving $n\leq4(g-1)$; and for
+$g(Y)=0$ the least values at $s\geq5$, $s=4$ and $s=3$ are $2+1/2$, $13/6$ and $85/42$, so
+$(2g-2)/n\geq1/42$ and $n\leq84(g-1)$. Two printed inequalities run the wrong way: the first case
+concludes "$n\geq g(X)-1$" and the closing line "$n\geq84(g(X)-1)$", where the quotient bounds $n$
+above. The case analysis, the constant $1/42$ and the bound $84(g-1)$ are right. Commit `9e0892886d`.
+
+**`P-AGH426PUSHFORWARDDIVISORS`, IV.2.6 — cited, printed p. 87.** For effective $D$ Yang takes
+$0\to\mcl(-D)\to\OO_X\to\OO_D\to0$, kills $R^1f_*\mcl(-D)$ by III.8.1, applies $\det$ to the pushed
+sequence, and reads $\det(f_*\OO_D)\cong\mcl(f_*D)$ off $f_*\OO_D\cong\bigoplus_i\OO_{f_iD}$, which
+is (a). The step to arbitrary $D$ prints $0\to\mcl(D)\to\mcl(-D_2)\to\OO_{D_1}\to0$ with
+$D=D_1-D_2$; the inclusion runs the other way, $\mcl(-D_2)=\mcl(D-D_1)\subseteq\mcl(D)$ for $D_1$
+effective, and the quotient is $\mcl(D)$ restricted to $D_1$, which is $\OO_{D_1}$ only when
+$\mcl(D)$ is trivial along $D_1$ --- recorded on the card as the loose step, the formula it reaches
+being the book's. Parts (b)--(d) are clean, including $(\det f_*\OO_X)^2\cong\mcl(-B)$ from
+$K_X\sim f^*K_Y+R$. Commit `6d94f5494b`.
+
+**`P-AGH427ETALEDEGREETWO`, IV.2.7 — cited, printed p. 87, with a gap in (b) recorded.** Yang
+proves (a) stalkwise, gets $\mcl\cong\det f_*\OO_X$ from $\det$ on $0\to\OO_Y\to f_*\OO_X\to\mcl\to0$,
+and $\mcl^{\tensor2}\cong\mcl(-B)=\OO_Y$ because an étale $f$ has $B=0$; (c) splits the sequence by
+the trace $a\mapsto\frac{a+\tau a}{2}$ and identifies $X\cong\Spec(\OO_Y\oplus\mcl)$ by II Ex.\ 5.17.
+Its (b) concludes étaleness from $X$ being a normal curve with a degree-two function-field extension,
+which is not enough --- $x\mapsto x^2$ on $\PP^1$ is such a map and is ramified. What makes this
+algebra étale is that $u=\langle0,1\rangle$ has $u^2=\varphi(1\tensor1)$ with $\varphi(1\tensor1)$ a
+unit and $2\ne0$ in $k$, so $\Omega_{X/Y}\cong A/(2u)=0$. The card states that, and records the
+printed (b) as short. Commit `5d8b5f7935`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered the steps
+(IV.2.5 $1$--$8$, IV.2.6 $1$--$10$, IV.2.7 $1$--$10$) with `(QED labels present)`;
+`qualc.card_completeness.check_card` returned `[]`; `qualc.authoring.raw_notation` on the authored
+prose returned `None`; `tools/sync_macros.py --check` silent. The three repaired cards passed the
+same five checks after the move. The whole-corpus `qualc check` and `tools/backlog.py` were not run,
+per the standing instruction to check only what was touched.
+
+**Not checked.** Yang's Solutions outside printed pp. 86--87; the Hartshorne pages of all six
+exercises, which this pass did not reopen, the comparison being against the statements the cards
+carry; and the printed book itself.
+
+**The remainder.** Forty-seven Chapter IV cards still lack Yang; the queue in index order now starts
+at IV.3.1 `P-AGH431GENUSTWOVERYAMPLE`.
