@@ -105,6 +105,8 @@ The sheaf associated to a presheaf is unique up to unique isomorphism, and step 
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 65 of Hartshorne, the first exercise of §II.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the constant presheaf associated to an abelian group $A$ and its sheafification included.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.1, PDF p. 2, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he maps the constant presheaf into the constant sheaf of the text by sending $a$ to the constant function with value $a$, notes that the induced map is an isomorphism on every stalk, and concludes from the universal property of sheafification that $(\tilde\mca)^{+}\to\mca$ is an isomorphism.
 The proof above is the same argument with the two points Kim leaves implicit supplied: constant maps into the discrete group $A$ are continuous, so the presheaf map lands in $\mca(U)$, and a continuous map from a neighbourhood of a point into a discrete group is constant near that point, which is what gives $\tilde\mca_P=\mca_P=A$.
 Agree.
