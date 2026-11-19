@@ -326,6 +326,32 @@ audit:
     tmp/sources/lfwin-hartshorne-solutions.md. Not checked: any printing other
     than the text versions, and steps s1, s2, s4, s5 and s6 were read for their
     field hypotheses only, not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two claims about the cited sources were wrong, and the mathematics of no
+    step changes. (i) The remark said Yang Pi-Yeh writes the twisted cubic's
+    presentation as R(-4)^{oplus3} -> R(-2)^{oplus4}. Read on printed p. 107
+    (PDF p. 107, the folio printed at the foot, of
+    tmp/sources/lfwin-hartshorne-solutions.pdf) he writes two maps: the
+    Jacobian matrix F(kappa): R(-4)^{oplus3} -> R(-3)^4, a 4-by-3 matrix, and
+    F(phi): R(-4)^{oplus3} -> R(-2) given by (t^2, u^2, 2tu), and it is the
+    kernel of the second that he takes, getting R(-5)^{oplus2}. "R(-2)^{oplus4}"
+    occurs nowhere in his text, and a target of a 3-generator presentation does
+    not have that form. The remark now gives both maps. (ii) The solution's
+    preamble gave Eisenbud and Van de Ven's Proposition 6 as on printed p. 458
+    "with its proofs on pp. 458--460". The statement of Proposition 6 is the
+    last item on printed p. 458 (the page carries no proof text after it) and
+    "Proof of Proposition 6" opens printed p. 459, with the algebraic sketch on
+    p. 460; the range now reads pp. 459--460. The dated event above that says
+    "numbered 458 with its proofs on pp. 458--460" is left as written. Read for
+    this event: the two Yang pages at the text layer of the retained PDF, the
+    Eisenbud--Van de Ven pages 5 to 8 of the retained PDF (folios 457 to 460),
+    and the card. Checked on the card alone: qualc.authoring check,
+    "schema and Markdown parsing OK (single card)", and tools/check_macros.py,
+    both exit 0. Not checked: the printed copies, and no other page of either
+    paper.
 ---
 
 ::: {.problem}
@@ -342,7 +368,7 @@ audit:
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 458--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
+A step that transcribes a published argument names the source, numbered statement and printed page it comes from; a step no source carries is marked as this card's. Ted Shifrin, Math StackExchange answer 1583486 to question 1583326, *Normal bundle of twisted cubic*, for (a) by transition functions, in a form whose constants need $3$ invertible; Yang Pi-Yeh, *Hartshorne Solutions*, Solution 5.2.17, printed pp. 106--107, for both parts by the Jacobian presentation, which settles (b) in every characteristic other than $2$ and $3$; and D. Eisenbud and A. Van de Ven, *On the Normal Bundles of Smooth Rational Space Curves*, Math. Ann. 256 (1981), 453--463, Proposition 6, printed p. 458 with its proofs on pp. 459--460, for the normal bundle of a smooth rational curve of degree $n\ge3$ lying on a smooth quadric, over a field of characteristic $0$ as the paper assumes.
 
 For $n\ge2$, consider the parametrized rational curve
 $$
@@ -832,7 +858,7 @@ Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b)
 :::
 
 ::: {.remark title="Published solution"}
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic he writes the presentation $R(-4)^{\oplus3}\to R(-2)^{\oplus4}$ and takes its kernel $R(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.17, PDF p. 273: the starred exercise is entered and the entry reads only "starred", so there is no argument to check. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.17, printed pp. 106--107, computes the conormal sheaf as the kernel of the map of graded modules given by the Jacobian of the parametrization: for the twisted cubic he writes the Jacobian matrix as $F(\kappa)\colon R(-4)^{\oplus3}\to R(-3)^{\oplus4}$ and the map $F(\varphi)\colon R(-4)^{\oplus3}\to R(-2)$ given by $(t^2,u^2,2tu)$, and takes $\ker F(\varphi)=R(-5)^{\oplus2}$; for the quartic the kernel is $R(-7)^{\oplus2}$ when $6\ne0$, and it writes "if $\operatorname{char}(k)=2,3$, $F(\varphi)$ is given by $(t^3,u^3,0)$, so $\ker F(\varphi)=R(-8)\oplus R(-6)$". That is a sound argument for part (b) in every characteristic other than $2$ and $3$. The extra characteristic is wrong: in step [](#s3){.pf-ref} the extension class is $(n-1)\eta=2\eta$ for $n=3$, which vanishes exactly when $2=0$, and the printed answer for part (b) accordingly says $\operatorname{char}k=2$ and not $2$ or $3$; in characteristic $3$ the binomial coefficient $3$ vanishes in $(a^3+h)^3$, but the class $2\eta$ does not, so the splitting type is $\OO(-7)^{\oplus2}$ there as well. Nor does his characteristic-$2$ line stand: his presentation is not the conormal's in characteristic $2$, where his matrix for the twisted cubic becomes $(t^2,u^2,0)$ with kernel $R(-6)\oplus R(-4)$ instead of the printed $\OO(-5)^{\oplus2}$, so the method fails at a case whose answer is known.
 
 The card's computation is checked against the book's own bracket: $E_n=\varphi_n^*(\mathcal I/\mathcal I^2)$ sits in $0\to\OO(-2n-2)\to E_n\to\OO(-2n)\to0$ with class $(n-1)\eta$, which is nonzero for $n=2$ and gives $l=m=-5$ for the twisted cubic, and for $n=3$ gives $l=m=-7$ when $\operatorname{char}k\ne2$ and $\OO(-6)\oplus\OO(-8)$ when $\operatorname{char}k=2$, exactly the answer printed for part (b).
 
