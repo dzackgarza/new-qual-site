@@ -11,6 +11,18 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part A, Question 4 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 2 of the Part A paper retained at assets/attachments/Applied_Algebra_Part_A_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; the stated SVD theorem, the max characterisation of
+    $\sigma_1$, and $\rho(A)\le\omega(A)\le\sigma_1(A)$; `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for this
+    paper to compare the argument with, and no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -30,6 +42,9 @@ Prove that $\rho(A) \le \omega(A) \le \sigma_1(A)$.
 
 
 ::: {.solution}
+
+The problem is Part A, Question 4 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 2 of the Part A paper retained at `assets/attachments/Applied_Algebra_Part_A_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+
 (a) **Singular-value decomposition.** For every $A\in M_{m,n}$ there are unitary matrices $U\in M_m$ and $V\in M_n$ such that
 $$
 A=U\Sigma V^H,
