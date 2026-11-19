@@ -79,13 +79,6 @@ For an integral domain, the field of fractions is the localization at the nonzer
 
 [[D-JGYK4]]
 
-By the Lasker--Noether theorem, every ideal of a Noetherian ring is a finite intersection of primary ideals [@AM18].
-
 ## Gorenstein rings
 
 [[D-DU4UQ]]
-
-::: {.example title="Finite-dimensional graded Gorenstein algebras"}
-Let $k$ be a field and $R = R_0 \oplus R_1 \oplus \cdots \oplus R_n$ a graded commutative $k$-algebra with $R_0 = k$, $\dim_k R < \infty$, and $R_n\neq0$.
-Then $R$ is Gorenstein if and only if $R$ satisfies Poincaré duality: $\dim_k R_n = 1$, and for each $i$ the multiplication pairing $R_i \times R_{n-i} \to R_n$ is perfect.
-:::
