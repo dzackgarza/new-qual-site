@@ -89,6 +89,7 @@ Then $f^*$ commutes with all the tensor operations: for example, $f^*(S^n(\mcf))
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.16 (Tensor Operations on Sheaves), printed p. 43 of the held scan, transcribed and checked against the exercise as printed: part (a), the local freeness of $\mathcal T^n(\mathcal F)$, $S^n(\mathcal F)$ and $\Lambda^n(\mathcal F)$ with the ranks $\binom{n+r-1}{n}$ and $\binom{r}{n}$; and part (b), the pairing $\Lambda^i(\mathcal F)\otimes\Lambda^{n-i}(\mathcal F)\to\Lambda^n(\mathcal F)$ on bases with the sign $(-1)^{i(j-1)}$.
 All sheaf tensor products on $X$ are over $\OO_X$.
 Use the [[D-DEFTALG|tensor-algebra quotient constructions]] in the statement.
 Taking a stalk commutes with tensor powers and their symmetric and exterior quotients: every tensor and every defining relation uses finitely many sections, which can be represented on one common neighborhood.
