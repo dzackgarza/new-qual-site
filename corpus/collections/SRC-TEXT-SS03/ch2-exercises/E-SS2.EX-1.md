@@ -20,6 +20,15 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the contour and the parametrisation of its three pieces; the modulus $\abs{e^{-z^2}}=e^{-R^2\cos2\theta}=e^{-R^2\sin2u}$; the concavity bound $\sin2u\ge4u/\pi$; the resulting estimate $\pi/(4R)$; and the passage to real and imaginary parts, which gives the two values $\sqrt{2\pi}/4$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+    the printed page): the statement is Exercise 1 at the head of the Chapter 2 Exercises,
+    printed p. 64, and its printed words are the card's. The chapter, the exercise number and
+    the page are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -33,6 +42,7 @@ These are the Fresnel integrals. Here, $\int_0^{\infty}$ is interpreted as $\lim
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 2 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 64; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. The standard sector-contour proof was checked step by step, including the arc estimate.
 
 ::: pf
