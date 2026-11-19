@@ -13,6 +13,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: the statement against the paper's text layer at the page
+    named; the solution read for the Sylow count forcing a normal subgroup of order 19, the
+    semidirect product, and the single nonabelian action given by b a b^{-1} = a^7;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -36,7 +50,7 @@ Classify all groups of order 57.
 
 
 ::: {.solution}
-Sylow forces the $19$-subgroup normal, so $G$ is a semidirect product $C_{19}\rtimes_\varphi C_3$, and such a group is determined by the image of $\varphi$ in $\operatorname{Aut}(C_{19})\cong C_{18}$, which has a unique subgroup of order $3$; so there are exactly two groups, the cyclic one and one nonabelian one, exhibited by the relation $bab^{-1}=a^7$. The argument is this card's own: no retained solution set covers this exam.
+Sylow forces the $19$-subgroup normal, so $G$ is a semidirect product $C_{19}\rtimes_\varphi C_3$, and such a group is determined by the image of $\varphi$ in $\operatorname{Aut}(C_{19})\cong C_{18}$, which has a unique subgroup of order $3$; so there are exactly two groups, the cyclic one and one nonabelian one, exhibited by the relation $bab^{-1}=a^7$. The argument is this card's own: Problem 4 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`, is the statement answered here, and no retained solution set covers it.
 
 ::: pf
 
