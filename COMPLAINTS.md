@@ -314,11 +314,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **84 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **82 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Thirteen of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 84 stand as this item lists them.
+   reported and repaired above. Fifteen of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 82 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -387,8 +387,18 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    previous stage, and the generators have odd degree, giving the exterior algebras in the complex and
    quaternionic cases. No card changed in this pass.
 
-   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (7 of its 10)
-   --- 84 proofs.
+   **§4.D 9 and 10, read the same day.** Both correct, no card changed. `E-HAT-4.D-9`: the identity
+   $\operatorname{diag}(z,w)=\operatorname{diag}(zw,1)\operatorname{diag}(w^{-1},w)$ writes a diagonal pair as a
+   diagonal product times a determinant-one matrix, which lies in $SU(2)\cong S^3$ and is nullhomotopic there,
+   so adjacent entries can be merged one at a time; the quaternionic case is the same splitting with
+   $q\mapsto\operatorname{diag}(q^{-1},q)$ nullhomotopic because the two blocks carry degrees $-1$ and $+1$
+   in $\pi_3(Sp(2))\cong\ZZ$. `E-HAT-4.D-10`: with no eigenvalue, $t\lambda I+(1-t)A$ is invertible for all
+   $(t,\lambda)\in[0,1]\times S^3$, making $\lambda\mapsto\lambda I$ nullhomotopic in $GL_n(\HH)$; but
+   $GL_n(\HH)$ retracts to $Sp(n)$, Exercise 9 homotopes $\lambda I$ to $\operatorname{diag}(\lambda^n,1,\dots,1)$,
+   and that class is $n$ times the generator, a contradiction.
+
+   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (5 of its 10)
+   --- 82 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
