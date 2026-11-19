@@ -15,6 +15,31 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP13_202_Applied_Algebra_Qual.pdf,
+    problem (7): the parametric surface x = u - 2v, y = uv, z = v, and the three
+    parts, a reduced Groebner basis for the lexicographic order u > v > x > y > z,
+    the smallest variety containing S, and S = V. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The mathematics is right and the answer is now in the form the question
+    asks for. Substituting v = z and u = x + 2z into y = uv gives y = xz + 2z^2,
+    and the three polynomials u - x - 2z, v - z and y - xz - 2z^2 generate the
+    ideal. In the order u > v > x > y > z the leading terms are u, v and xz, by
+    the last because x > y; these are pairwise coprime, so Buchberger's
+    criterion makes the set a Groebner basis, and the elimination theorem gives
+    that the polynomials free of u and v generate the elimination ideal, namely
+    the principal ideal of y - xz - 2z^2. The set as previously displayed was not
+    reduced, since the leading coefficient of y - xz - 2z^2 is -1; the third
+    element is now written xz + 2z^2 - y with a sentence recording why xz is the
+    leading term. Parts (b) and (c) are unaffected: the variety is y = xz + 2z^2
+    and the parametrization inverse is u = x + 2z, v = z, so S = V. Nothing else
+    was changed.
 ---
 
 ::: {.problem}
@@ -58,10 +83,10 @@ substitute $v = z$ and $u = x + 2z$ into $y = uv$.
 
 ::: {.pf-step #grobner-basis-final}
 Hence the reduced Gröbner basis (for lex order $u > v > x > y > z$) is
-$$\{u - x - 2z,\ v - z,\ y - xz - 2z^2\}.$$
+$$\{u - x - 2z,\ v - z,\ xz + 2z^2 - y\}.$$
 
 ::: pf-proof
-Step [](#elimination-relation){.pf-ref} (these are the elimination polynomials, and they form a reduced Gröbner basis).
+The leading terms are $u$, $v$ and $xz$, which are pairwise coprime, so by Buchberger's criterion the three polynomials form a Gröbner basis; the reductions above produce it from the given generators. It is reduced and monic: the leading coefficients are $1$, and no non-leading monomial of any element is divisible by $u$, $v$ or $xz$. Note that $x > y > z$ in this order, so the leading term of $xz + 2z^2 - y$ is $xz$ and not $y$, which is why the polynomial is displayed with that sign.
 :::
 
 :::
