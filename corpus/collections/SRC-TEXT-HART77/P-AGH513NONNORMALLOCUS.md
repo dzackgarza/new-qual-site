@@ -125,6 +125,30 @@ audit:
     (PDF p. 53 of the checked-in extraction). Not checked in this pass: no
     further publication was searched for the closedness of the nonnormal locus;
     COMPLAINTS.md records the state.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Steps s1 to s5 read for correctness in this pass and all five found correct:
+    s1 is Theorem I.3.9A at the finite extension K/K; s2 identifies the
+    integral closure of A_p with (A-bar)_p in both directions, the second by
+    clearing a monic equation with one common denominator s and passing to
+    v = su; s3 proves M_m = 0 exactly when Ann_A M is not inside m, both
+    directions, which gives the nonnormal locus as Z(Ann_A M); s4 gets a nonzero
+    annihilator from M_(0) = 0 and so makes Z(Ann_A M) proper, in a domain; s5
+    transfers both to a variety, normality being a property of the local ring.
+    One citation is corrected: step s5 cited Proposition I.4.3 for a finite
+    affine cover U_1,...,U_N, and that proposition, printed p. 25, is that the
+    open affine subsets are a base of the topology, not that finitely many
+    suffice. The step now writes the cover as the family U_i it uses, since
+    closedness is local on any open cover and the finiteness was never used.
+    Also read and unchanged in this pass: the exercise as printed at printed
+    p. 38, read on the PDF's own folio (PDF p. 53), and the card's statement of
+    it, which differs only in rendering (5.3) as Theorem I.5.3, (3.9A) as
+    Theorem I.3.9A and (Ex. 3.17) as the card P-AGH317NORMAL, and the proof uses
+    no part of I.5.3. Not checked in this pass: the Shichijo manuscript and
+    KReiser's answer were not re-read; the statements about them are the earlier
+    events', and no published proof of the closedness was searched for again.
 ---
 
 ::: {.problem}
@@ -243,7 +267,7 @@ The nonnormal locus of $X$ is a proper closed subset of $X$.
 
 ::: pf-proof
 
-Cover $X$ by affine opens $U_1,\ldots,U_N$ [@Har77, Proposition I.4.3].
+Cover $X$ by affine opens $U_i$ [@Har77, Proposition I.4.3].
 Normality of a point is a property of its local ring, which does not change when it is computed in an open neighborhood.
 So the nonnormal locus $N$ of $X$ satisfies $N\intersect U_i=Z(\Ann_{A_i} M_i)$ in the notation of step [](#s3){.pf-ref} for $U_i$.
 Each intersection is closed in $U_i$, so $N$ is closed in $X$.
