@@ -11,6 +11,17 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Reference repair, prompted by the push gate reporting a link to a card that no card
+    carries. The opening sentence of the solution pointed at the merged duplicate with a card
+    link, and that card file was deleted in 4d7fee6b9a, which repointed nothing, so the push
+    gate refused every push of main from then on. The sentence now names the former card in
+    plain text, which keeps the record of where the argument came from without claiming a card
+    the corpus does not have. Mathematics and wording otherwise unchanged.
 ---
 
 ::: {.problem}
@@ -100,7 +111,7 @@ In particular $\norm{y}_{2}\ge1$, as $\cos\theta\le1$ requires, which is also Ca
 
 ::: {.solution}
 
-The argument below is the one carried by [[P-APAS23A]]'s card before the two were merged; it is a different route, choosing the left eigenvector first and reading the same block form off the hyperplane it defines.
+The argument below is the one the card P-APAS23A carried before the two were merged; it is a different route, choosing the left eigenvector first and reading the same block form off the hyperplane it defines.
 
 (a) The Schur decomposition is quoted as in step [](#a){.pf-ref}.
 
