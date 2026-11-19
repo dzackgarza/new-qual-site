@@ -22,6 +22,25 @@ audit:
     https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-6-solution/
     (read 2026-11-11; kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-6-solution.txt), and against Munkres,
     Topology (2000), Section 54 Exercise 6, printed p. 348. dbFin's is the same computation of the two induced homomorphisms as multiplication by $n$ and by $-n$; the card does it through the lifts $s\mapsto ns$ and $s\mapsto -ns$. Nothing needed repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution on 2026-11-19. Its three steps opened with run-in titles
+    ("Identification of pi_1(S^1,1) with Z", "Computation of g_*", "Computation
+    of h_*") instead of claims, their substeps were fragments of one computation,
+    the page carried no citation, and the closing pf-qed only announced that the
+    earlier steps answered the question. It is now three labelled steps whose
+    claims are the results, with the two answers boxed where they are proved, and
+    it cites the published solution it transcribes, dbFin, "Section 54: Problem 6
+    Solution"
+    (https://dbfin.com/topology/munkres/chapter-9/section-54-the-fundamental-group-of-the-circle/problem-6-solution/),
+    kept at tmp/sources/dbfin/section-54-the-fundamental-group-of-the-circle/problem-6-solution.txt
+    and read on 2026-11-11. Checked against the book in
+    tmp/sources/munkres-2000-topology.md and the retained PDF: the exercise on
+    printed p. 348 (PDF p. 363, printed page = PDF page - 15) with its de Moivre
+    hint, and Theorem 54.5 on printed p. 345 (PDF p. 360). No statement changes.
+
 ---
 
 ::: {.exercise}
@@ -32,98 +51,37 @@ Consider the maps $g, h: S^1 \to S^1$ given by $g(z) = z^n$ and $h(z) = 1/z^n$.
 :::
 
 ::: {.solution}
+The computation is that of the published solution of dbFin, "Section 54: Problem 6 Solution": the generator is $[f]$ with $f(t)=(\cos2\pi t,\sin2\pi t)$, the composite $g\circ f$ is $f$ traversed $n$ times and $h\circ f$ is $\bar f$ traversed $n$ times, so the induced homomorphisms are multiplication by $n$ and by $-n$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 6, printed p. 348; the isomorphism $\pi_1(S^1,b_0)\cong\ZZ$ is Theorem 54.5, printed p. 345, and the identity in the exercise's hint is de Moivre's.
+
+Throughout, $b_0=1=e^{2\pi i\cdot0}$, $\gamma(s)=e^{2\pi is}$ for $s\in[0,1]$, and $p(t)=e^{2\pi it}$ is the covering $\RR\to S^1$.
+
 ::: pf
 
-::: {.pf-step #s1}
-Identification of $\pi_1(S^1, 1)$ with $\ZZ$:
+::: {.pf-step #generator}
+$[\gamma]$ generates $\pi_1(S^1,b_0)$ and corresponds to $1$ under $\pi_1(S^1,b_0)\cong\ZZ$.
 
 ::: pf-proof
-
-::: pf-step
-Take the basepoint $b_0 = 1 = e^{i \cdot 0} \in S^1$.
-:::
-
-::: pf-step
-The standard fundamental loop generating $\pi_1(S^1, 1) \cong \ZZ$ is:
-$$\gamma(s) = e^{2\pi i s} = \cos(2\pi s) + i \sin(2\pi s) \quad \text{for } s \in [0, 1].$$
-:::
-
-::: pf-step
-Under the standard covering map $p: \RR \to S^1$ with $p(t) = e^{2\pi i t}$, the unique lift $\tilde{\gamma}: [0, 1] \to \RR$ starting at $0$ is $\tilde{\gamma}(s) = s$, with terminal point $\tilde{\gamma}(1) = 1$.
-:::
-
-::: pf-step
-Thus the isomorphism $\operatorname{deg}: \pi_1(S^1, 1) \xrightarrow{\cong} \ZZ$ sends $[\gamma] \mapsto 1$.
+Theorem 54.5, printed p. 345, identifies $\pi_1(S^1,b_0)$ with $\ZZ$ through the displacement of the lift of a loop to $\RR$. The lift of $\gamma$ with $\tilde\gamma(0)=0$ is $\tilde\gamma(s)=s$, because $p(s)=e^{2\pi is}=\gamma(s)$, and its displacement is $\tilde\gamma(1)-\tilde\gamma(0)=1$.
 :::
 
 :::
 
-:::
-
-::: {.pf-step #s2}
-Computation of $g_*$:
+::: {.pf-step #g}
+$g_*$ is multiplication by $n$: $g_*(k)=\boxed{nk}$ for every $k\in\ZZ$.
 
 ::: pf-proof
-
-::: pf-step
-The composition $g \circ \gamma: [0, 1] \to S^1$ is:
-$$(g \circ \gamma)(s) = g(e^{2\pi i s}) = (e^{2\pi i s})^n = e^{2\pi i n s} = \cos(2\pi n s) + i \sin(2\pi n s).$$
-:::
-
-::: pf-step
-The unique lift of $g \circ \gamma$ to $\RR$ starting at $0$ is $\widetilde{g \circ \gamma}(s) = n s$.
-:::
-
-::: pf-step
-The endpoint is $\widetilde{g \circ \gamma}(1) = n$.
-:::
-
-::: pf-step
-Thus $g_*([\gamma]) = [g \circ \gamma] = [\gamma]^n$.
-:::
-
-::: pf-step
-Expressing $\pi_1(S^1, 1) \cong \ZZ$ additively, $g_*$ is multiplication by $n$:
-$$g_*(k) = n k \quad \text{for all } k \in \ZZ.$$
+$(g\circ\gamma)(s)=(e^{2\pi is})^n=e^{2\pi ins}=p(ns)$ by the identity the exercise's hint records, so the lift of $g\circ\gamma$ starting at $0$ is $s\mapsto ns$, with displacement $n$. Hence $g_*$ carries the generator $[\gamma]$ to $n$, and a homomorphism of $\ZZ$ is determined by its value at a generator, so $g_*(k)=nk$.
 :::
 
 :::
 
-:::
-
-::: {.pf-step #s3}
-Computation of $h_*$:
+::: {.pf-step #h}
+$h_*$ is multiplication by $-n$: $h_*(k)=\boxed{-nk}$ for every $k\in\ZZ$.
 
 ::: pf-proof
-
-::: pf-step
-The composition $h \circ \gamma: [0, 1] \to S^1$ is:
-$$(h \circ \gamma)(s) = h(e^{2\pi i s}) = (e^{2\pi i s})^{-n} = e^{-2\pi i n s} = \cos(-2\pi n s) + i \sin(-2\pi n s).$$
+$(h\circ\gamma)(s)=(e^{2\pi is})^{-n}=e^{-2\pi ins}=p(-ns)$, so the lift of $h\circ\gamma$ starting at $0$ is $s\mapsto-ns$, with displacement $-n$. Hence $h_*$ carries the generator to $-n$, that is, $h_*(k)=-nk$.
 :::
 
-::: pf-step
-The unique lift of $h \circ \gamma$ to $\RR$ starting at $0$ is $\widetilde{h \circ \gamma}(s) = -n s$.
-:::
-
-::: pf-step
-The endpoint is $\widetilde{h \circ \gamma}(1) = -n$.
-:::
-
-::: pf-step
-Thus $h_*([\gamma]) = [h \circ \gamma] = [\gamma]^{-n}$.
-:::
-
-::: pf-step
-Expressing $\pi_1(S^1, 1) \cong \ZZ$ additively, $h_*$ is multiplication by $-n$:
-$$h_*(k) = -n k \quad \text{for all } k \in \ZZ.$$
-:::
-
-:::
-
-:::
-
-::: pf-qed
-By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, under the identification $\pi_1(S^1, 1) \cong \ZZ$ of step [](#s1){.pf-ref}, $\boxed{g_*(k) = n k \text{ and } h_*(k) = -n k}$.
 :::
 
 :::
