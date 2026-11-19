@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 18, printed p. 420.
+    The group and abelian-group bookkeeping is right and already argued: ⟨X, Omega^r K⟩ is
+    a group by pointwise concatenation for r >= 1 and abelian for r >= 2 by Eckmann--Hilton,
+    which is exactly the printed "except the last three" and "except the last six". The
+    exactness at ⟨X,E⟩ was one clause --- "lift a chosen nullhomotopy of pf" --- which
+    hides the two points that make it work: the nullhomotopy must be based, and the lift
+    needs the relative homotopy lifting property for the CW pair
+    (X x I, X x {0} u {x_0} x I), without which the homotopy does not keep the basepoint
+    fixed. That is now written out. Independent reports from the swarm flagged the same
+    step. Statement unchanged. Not checked: nothing outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -43,7 +57,7 @@ $$
 \langle X,F\rangle\longrightarrow\langle X,E\rangle
 \longrightarrow\langle X,B\rangle
 $$
-is exact: if $pf$ is nullhomotopic, lift a chosen nullhomotopy of $pf$ to homotope $f$ into the fiber. Applying this to every looped fibration in the fibration sequence
+is exact. Exactness at $\langle X,B\rangle$ is immediate: the composite $pf$ is nullhomotopic. Exactness at $\langle X,E\rangle$ is the assertion: a based map $f:X\to E$ with $pf$ based-nullhomotopic is based homotopic to a map into $F$. Take a based nullhomotopy $h:X\times I\to B$ of $pf$, so $h(x,0)=pf(x)$, $h(x,1)=b_0$ and $h(x_0,t)=b_0$. The map $(x,0)\mapsto f(x)$, $(x_0,t)\mapsto e_0$ on $X\times\{0\}\cup\{x_0\}\times I$ is a lift of $h$ restricted to that subcomplex, and $(X\times I,X\times\{0\}\cup\{x_0\}\times I)$ is a CW pair because $X$ is a CW complex with basepoint a $0$-cell; the homotopy lifting property applied to this cofibration extends the lift to $\tilde h:X\times I\to E$ with $\tilde h(x,0)=f(x)$ and $\tilde h(x_0,t)=e_0$. Then $\tilde h(-,1)$ is based — it lies in $F$ since $p\tilde h(x,1)=h(x,1)=b_0$, and it sends $x_0$ to $e_0$ — and $\tilde h$ is a homotopy through based maps from $f$ to it. Applying this to every looped fibration in the fibration sequence
 $$
 \cdots\to\Omega B\to F\to E\to B
 $$
