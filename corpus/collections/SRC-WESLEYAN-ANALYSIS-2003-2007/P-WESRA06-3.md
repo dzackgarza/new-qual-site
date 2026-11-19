@@ -19,6 +19,20 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf: item 3 of the Real Analysis Preliminary
+    Examination, 2006, with parts a to c on PDF p. 17, the first page of that paper, and
+    part d on PDF p. 19. All four printed parts are stated on the card, and part d's
+    answer on the card is 2/5, which the printed question supports: the first even digit
+    is 4 or 8 exactly when some number of initial digits are odd (probability 1/2 each)
+    and the next is 4 or 8 (probability 1/5), so the measure is sum_k (1/2)^(k-1) (1/5) =
+    2/5. The page had cited only the extraction; it now names the examination, its item
+    and the two pages of the scan. The statement is unchanged.
+
 ---
 
 ::: {.problem}
@@ -43,6 +57,10 @@ $$
 :::
 
 ::: {.solution}
+The item is item 3 of the Real Analysis Preliminary Examination, 2006, whose parts a--c are on
+the first page of that paper (PDF p. 17 of the retained scan
+assets/attachments/analysis_2003-2007.pdf) and whose part d is on its second (PDF p. 19).
+
 
 ::: pf
 
