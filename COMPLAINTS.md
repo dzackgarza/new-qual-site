@@ -5969,3 +5969,23 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Repair.** Four commits, one per card: `E-HAT-4.1-5` `bbac7a4c20`, `E-HAT-4.1-11` `e667fc2e80`, `E-HAT-4.3-5` `3663dc791b`, `E-HAT-4.3-11` `3213a4e93e`; each card carries a `source-corrected` event of this date. Checks: `qualc.authoring check` on all four, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh` on all four, steps numbered and QED labels present; `tools/sync_macros.py --check`, silent; and the pre-commit card-YAML and schema hook, one file per commit. The Sam pages are its printed pages, which run one behind the PDF index because of a cover sheet, as the inventory records.
 
 **Not checked.** The nine Hatcher cards that survive the screen are cleared by the inventory's recorded coverage plus the matching just described, not by reading every retained set end to end; Koukpari's later sections were judged by the absence of any solution text for their phrases. The other 99 denial cards of the residue remain as the first entry records them.
+
+## 2026-11-19, ninth item: 71 residue-1 cards cite `tmp/sources`, which the VM ages out, and today all 224 of their file references resolve
+
+**Object and need.** A card that cites its source by a path under `tmp/sources/` cannot be checked after the VM drops that file: the memory index says `tmp/` is VM-local and ages out, and nothing in the corpus records which cited files are committed and which are not. This measures the exposure in one residue and records the state on the day it was measured.
+
+**Observed evidence.** Over every residue-1 card file (948 files, 857 problem cards), the paths named in the card text, matched as `tmp/sources/…` or `assets/attachments/…` with a file extension:
+
+```
+references checked: 224
+cards with a missing referenced file: 0
+residue-1 cards citing tmp/sources: 71
+residue-1 cards citing assets/attachments: 110
+overlap: 0
+```
+
+So **all 224 references resolve on 2026-11-19**, and **71 cards** of this residue would lose their locator if `tmp/sources` were emptied — the 110 citing `assets/attachments` would not, those files being committed. A second check, over the citations that name a text source (`.md`, `.txt`) together with an exercise number in the same sentence, found 4 such citations and 0 whose exercise number was absent from the named file.
+
+**Impact and owner.** Anyone re-checking a citation after a VM rebuild, and the `qualc` gate, which resolves a card's *certificate* links but not its `tmp/` paths. The repair is either to copy the cited file into `assets/attachments` (as the CH outlines and the Math 504 sheet already are) or to cite the durable location beside the `tmp/` one; the first is a repository change of some size — 71 cards across several collections — and was not attempted here.
+
+**Uncertainty.** The count is of card *text*, so a `tmp/sources` mention inside an audit note counts as a citation even where the rendered solution cites nothing; and the 224 is a count of distinct path strings per card, not of distinct files. Not measured: the whole corpus, which will be larger, and the state after a VM restart, which is the case the measurement is about.
