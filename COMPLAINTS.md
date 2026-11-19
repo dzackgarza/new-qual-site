@@ -7953,3 +7953,34 @@ carries it. No step, statement or hypothesis of any card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 5.2.7 at printed p. 103 on the page image,
 and 4.1.1 and 4.1.2 at printed p. 84; the statements the three cards carry, not reopened against the
 book in this pass. Not read: the other 63 Chapter IV entries, and the printed books themselves.
+
+## 2026-11-19: Yang's 4.1.3, 4.1.4 and 4.1.5 at printed p. 84 — two affineness criteria and the dim|D| bound, with one arithmetic slip
+
+**Object and need.** `P-AGH413NONPROPERISAFFINE` (IV.1.3), `P-AGH414NOPROPERCOMPONENT` (IV.1.4) and
+`P-AGH415DIMLEQDEG` (IV.1.5), three more of the sixty-five Chapter IV cards counted in the record
+above.
+
+**IV.1.3, printed p. 84.** The hint followed: (II, 4.10.2(e)) embeds $X$ as an open subset of a complete
+$\bar X$ with finite complement $\{P_1,\ldots,P_r\}$; the previous exercise gives $f$ with poles exactly
+there; and $f$ is a finite morphism $\bar X\to\PP^1$, so $X=f^{-1}(\AA^1)$ is affine. The finiteness is
+where regularity and dimension one enter.
+
+**IV.1.4, printed p. 84.** Reduction to the integral case: (III, 3.3.1) and (III, 3.3.2) let one assume
+$X$ integral; the normalization $\widetilde X$ is then not proper either, so (4.1.3) makes it affine, and
+$\widetilde X\to X$ is finite by (III, 3.4.2), hence $X$ is affine.
+
+**IV.1.5, printed p. 84, one arithmetic slip.** $\dim\linearsystem{D}=\ell(D)-1=\deg D-g+\ell(K-D)$
+with $\ell(K-D)\le\ell(K)=g$ for $D$ effective gives $\dim\linearsystem{D}\le\deg D$, equality only for
+$D=0$ or $g=0$. The entry's display of the last input is wrong as printed: it writes
+$\ell(K)-\ell(K-K)=2g-2+1-g=g$, where $2g-2+1-g=g-1$; the value $g$ comes from
+$\ell(K)-\ell(0)=g-1$ together with $\ell(0)=1$. The conclusion uses $\ell(K)=g$, which is right.
+
+**Repair.** `P-AGH413NONPROPERISAFFINE` in `233bad470b`, `P-AGH414NOPROPERCOMPONENT` in `267af3a502`,
+`P-AGH415DIMLEQDEG` in `4c6230571f`, one commit each; this record in the COMPLAINTS commit that carries
+it. No step, statement or hypothesis of any card changes.
+
+**The remainder.** Sixty-two Chapter IV cards still lack Yang.
+
+**Uncertainty.** Read for this record: Yang's Solutions 4.1.3, 4.1.4 and 4.1.5 at printed p. 84,
+rendered as page images; the statements the three cards carry, not reopened against the book in this
+pass. Not read: the other sixty-two entries, and the printed books themselves.
