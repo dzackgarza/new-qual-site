@@ -12,6 +12,20 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2, the four parts as the top-level steps and (d) as
+    the QED step. Re-checked: $V(I+J)=V(I)\cap V(J)$ and $I(\varnothing)=R$ drive (b) in both
+    directions, with $1\in\sqrt{I+J}$ giving $1\in I+J$; the Rabinowitsch trick in (c) is valid in
+    both directions because specialising at $t=1$ and $t=0$ maps $IR[t]$ into $I$ and $JR[t]$ into
+    $J$; and (d) is the UFD property. Added: the use of algebraic closure in (a), the identification
+    of $I(\varnothing)$ with $R$ in (b), and the note that a specialisation of an element of $IR[t]$
+    at $t=1$ lies in $I$, which is what makes the second inclusion work. No defect found in the
+    statement. The collection's provenance is the Spring 2013 examination paper, so no retained
+    solution set covers the problem.
 ---
 
 ::: {.problem}
@@ -32,108 +46,45 @@ $$
 :::
 
 ::: {.solution}
-Let
-$$
-R=k[x_1,\ldots,x_n].
-$$
+The collection's provenance is the examination paper, so no retained solution set covers the problem; the argument is the card's own, and the four parts are the standard consequences of the Nullstellensatz. Write $R=k[x_1,\ldots,x_n]$ with $k$ algebraically closed.
 
-For part (a), the **Weak Nullstellensatz** says that every maximal ideal of $R$ has the form
-$$
-(x_1-a_1,\ldots,x_n-a_n)
-$$
-for a unique point $a=(a_1,\ldots,a_n)\in k^n$.
+::: pf
 
-Hilbert's **Nullstellensatz** says that for every ideal $I\subseteq R$,
-$$
-I(V(I))=\sqrt I,
-$$
-where
-$$
-V(I)=\{a\in k^n:f(a)=0\text{ for all }f\in I\}
-$$
-and
-$$
-I(X)=\{f\in R:f(a)=0\text{ for all }a\in X\}.
-$$
+::: {.pf-step #statements}
+(a) The Weak Nullstellensatz: every maximal ideal of $R$ is $(x_1-a_1,\ldots,x_n-a_n)$ for a unique $a\in k^n$. Hilbert's Nullstellensatz: $I(V(I))=\sqrt I$ for every ideal $I\subseteq R$.
 
-For part (b), note that
-$$
-V(I+J)=V(I)\cap V(J).
-$$
-If $I+J=R$, then $1\in I+J$, so $V(I+J)=\varnothing$, hence
-$$
-V(I)\cap V(J)=\varnothing.
-$$
+::: pf-proof
+These are the two statements in question, with $V(I)=\{a\in k^n:f(a)=0\text{ for all }f\in I\}$ and $I(X)=\{f\in R:f(a)=0\text{ for all }a\in X\}$. The first is the case of the second for maximal ideals, and both use that $k$ is algebraically closed: over a non-algebraically-closed field the maximal ideals of $R$ need not be of that form.
+:::
 
-Conversely, suppose
-$$
-V(I)\cap V(J)=\varnothing.
-$$
-Then $V(I+J)=\varnothing$. By the Nullstellensatz,
-$$
-\sqrt{I+J}=I(V(I+J))=I(\varnothing)=R.
-$$
-Hence $1\in\sqrt{I+J}$, so $1^m=1\in I+J$ for some $m$, and therefore $I+J=R$. Thus $I$ and $J$ are comaximal.
+:::
 
-For part (c), work in the polynomial ring
-$$
-R[t]=k[x_1,\ldots,x_n,t].
-$$
-Set
-$$
-K=tI+(1-t)J.
-$$
-We prove
-$$
-I\cap J=K\cap R.
-$$
+::: {.pf-step #comaximal}
+(b) $I+J=R$ if and only if $V(I)\cap V(J)=\varnothing$.
 
-If $f\in I\cap J$, then
-$$
-f=tf+(1-t)f\in tI+(1-t)J=K,
-$$
-and of course $f\in R$. Hence
-$$
-I\cap J\subseteq K\cap R.
-$$
+::: pf-proof
+First $V(I+J)=V(I)\cap V(J)$, since a point kills $I+J$ exactly when it kills both $I$ and $J$. If $I+J=R$ then $1\in I+J$, so no point kills $I+J$ and $V(I)\cap V(J)=\varnothing$. Conversely if $V(I)\cap V(J)=\varnothing$ then $V(I+J)=\varnothing$, so $\sqrt{I+J}=I(V(I+J))=I(\varnothing)=R$ by the Nullstellensatz, the ideal of the empty set being the whole ring; hence $1\in\sqrt{I+J}$, which means $1^m=1\in I+J$ for some $m\ge1$, so $I+J=R$.
+:::
 
-Conversely, let $f\in K\cap R$. Then
-$$
-f=t a+(1-t)b
-$$
-for some $a\in I R[t]$ and $b\in J R[t]$. Since $f$ is independent of $t$, specializing at $t=1$ gives
-$$
-f=a\evalfrom_{t=1}\in I,
-$$
-while specializing at $t=0$ gives
-$$
-f=b\evalfrom_{t=0}\in J.
-$$
-Thus $f\in I\cap J$, proving
-$$
-\boxed{I\cap J=(tI+(1-t)J)\cap R.}
-$$
+:::
 
-For part (d), let
-$$
-I=(f),\qquad J=(g).
-$$
-Because $R=k[x_1,\ldots,x_n]$ is a UFD, a least common multiple $h=\operatorname{lcm}(f,g)$ exists, unique up to multiplication by a unit.
+::: {.pf-step #intersection}
+(c) $I\cap J=(tI+(1-t)J)\cap R$, inside $R[t]$.
 
-Since $f\mid h$ and $g\mid h$,
-$$
-h\in(f)\cap(g),
-$$
-so
-$$
-(h)\subseteq(f)\cap(g).
-$$
-Conversely, if $q\in(f)\cap(g)$, then both $f\mid q$ and $g\mid q$. By the defining divisibility property of the least common multiple,
-$$
-h\mid q.
-$$
-Hence $q\in(h)$. Therefore
-$$
-\boxed{(f)\cap(g)=(\operatorname{lcm}(f,g)).}
-$$
+::: pf-proof
+Put $K=tI+(1-t)J\subseteq R[t]$. If $f\in I\cap J$ then $f=tf+(1-t)f\in K$ with $f\in R$, so $I\cap J\subseteq K\cap R$. Conversely let $f\in K\cap R$, so $f=ta+(1-t)b$ with $a\in IR[t]$ and $b\in JR[t]$; specialising $t=1$ gives $f=a\restrictionof_{t=1}\in I$ and specialising $t=0$ gives $f=b\restrictionof_{t=0}\in J$, since $f$ does not involve $t$. Hence $K\cap R\subseteq I\cap J$.
+:::
+
+:::
+
+::: {.pf-step}
+(d) If $I=(f)$ and $J=(g)$ then $I\cap J=(\operatorname{lcm}(f,g))$.
+
+::: pf-proof
+$R$ is a UFD, so a least common multiple $h=\operatorname{lcm}(f,g)$ exists and is unique up to a unit. Since $f\mid h$ and $g\mid h$, $h\in(f)\cap(g)$, giving $(h)\subseteq(f)\cap(g)$. Conversely if $q\in(f)\cap(g)$ then $f\mid q$ and $g\mid q$, and the defining property of the least common multiple gives $h\mid q$, that is $q\in(h)$. Hence $(f)\cap(g)=(h)$. Parts (a), (b) and (c) are steps [](#statements){.pf-ref}, [](#comaximal){.pf-ref} and [](#intersection){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
