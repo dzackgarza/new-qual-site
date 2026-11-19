@@ -165,9 +165,20 @@ audit:
     claimed: a published solution of the exercise in this generality; tom Dieck's Lemma (2.7.4) and
     Davis--Kirk's Lemma 6.56 and Theorem 6.57 are the published arguments the card records beside
     its own.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 430 carries the running head 421,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.A of Hatcher, *Algebraic Topology* (2002), printed p. 421, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show directly that if $X$ is a topological group with identity element $x_0$, then any two maps $f, g: (Z, z_0) \to (X, x_0)$ which are homotopic are homotopic through basepoint-preserving maps.
 :::
 
