@@ -19,6 +19,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 31: item 1 of the Real Analysis
+    Preliminary Examination, 2005, whose heading is printed on that page. The page had
+    cited only the extraction; it now names the examination, its item and the page of
+    the scan. The statement is unchanged, and the printed symbols
+    $\overline{A}$ and $\underline{A}$ for the two sets are reproduced in meaning.
 ---
 
 ::: {.problem}
@@ -36,6 +46,12 @@ Let $X$ be nonempty and let $\mathcal A$ be a collection of subsets of $X$.
 :::
 
 ::: {.solution}
+The item is item 1 of the Real Analysis Preliminary Examination, 2005 (sigma-algebras;
+the sets of points lying in infinitely many, resp. all but finitely many, members of a
+sequence; and the possible cardinalities of a sigma-algebra on a five-point set), on
+PDF p. 31 of the retained scan assets/attachments/analysis_2003-2007.pdf.
+The printed statement names the two sets $\overline{A}$ and $\underline{A}$; the card
+states them in words.
 
 ::: pf
 
