@@ -49,7 +49,8 @@ source:
         - id: P-CH10-55
           comment: Exercise 55
         - id: P-CH10-65
-          comment: Exercise 65
+          comment: Outline item 65 (the seventh edition prints 62 exercises in this
+            chapter; the outline's numbering runs ahead of it from item 37 onward)
         - id: P-CH10-66
           comment: Exercise 66
   date:
