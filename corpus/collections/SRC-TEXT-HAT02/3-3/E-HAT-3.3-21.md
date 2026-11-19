@@ -370,6 +370,34 @@ audit:
     with the pair sequence at (E, infinity). Not checked in this pass: the
     Eda--Kawamura and Wiegold papers were not re-read, and no source outside
     those already named on the card was searched for the bracketed question.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the answer to the bracketed
+    question. No defect found. Checked in the first part: $H_c^n(X;G)$ is the direct limit of
+    $H^n(X,X\setminus K;G)$ over compact $K$; excision of the point $\infty$, whose closure lies in
+    the interior of $U_K=X^+\setminus K$, gives $H^n(X^+,U_K)\cong H^n(X,X\setminus K)$; the sets
+    $U_K$ are cofinal among the neighbourhoods of $\infty$; inside a cone neighbourhood, the
+    subcones are cofinal and radial scaling contracts each to the cone point, so the restriction
+    $H^n(X^+,U)\cong H^n(X^+,\infty)$ for those $U$, and the isomorphisms are compatible with
+    shrinking. Checked in step `compact-degree-two`: on $K_N$ the pair $(X,X\setminus K_N)$ splits
+    over the lines, the $2N+1$ lines meeting $K_N$ contribute $H^q(\RR,\RR\setminus J_N)$, which is
+    $\ZZ$ for $q=1$ and zero otherwise, and every other line contributes a pair of equal spaces; so
+    $H^q=\ZZ^{2N+1}$ for $q=1$ and $0$ for $q\neq1$, and the direct limit vanishes in degree two.
+    Checked in step `earring-degree-two`: the one-point compactification of $\ZZ\times\RR$ is the
+    Hawaiian earring, since a neighbourhood of $\infty$ contains all but finitely many whole lines
+    and each line closes up to a circle through $\infty$; the pair sequence gives
+    $H^2(E,\infty)\cong H^2(E)$ because $H^1(\{\infty\})=H^2(\{\infty\})=0$; universal coefficients
+    gives an injection $\operatorname{Ext}(H_1(E),\ZZ)\hookrightarrow H^2(E)$; and with
+    $H_1(E)\cong\prod^\sigma_I\ZZ\oplus\prod_pA_p\oplus\bigoplus_\kappa\QQ$, read at
+    Eda--Kawamura's Theorem 3.1 statement with $\kappa=\abs{I^{\NN}}$ the continuum, together with
+    $\operatorname{Ext}(\QQ,\ZZ)\cong\RR$ from Wiegold, the target is nonzero. Checked in step
+    `degree-one`: both sides are the free abelian group on countably many generators, the left from
+    the same rectangle family, the right from Frankland's Theorem 1.3, so degree one does not decide
+    the question — the point the rejected Stanford paragraph missed. Not claimed: a published
+    solution of the bracketed question; the reading here is of the card's own assembly from those
+    three theorems.
 
 ---
 
