@@ -49,9 +49,19 @@ audit:
     homotopy equivalence behind $H_{n-k}(M-\partial M)\cong H_{n-k}(M)$ (in the companion card), and
     the identification of $\dim H^1(X;\QQ)$ with $\rank H_1(X)$. No defect found in the statement,
     §3.3 Exercise 29. No retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 269 carries the running head 260.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 29 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), printed p. 260, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Use the preceding problem to show that if the closed orientable surface $M_g$ of genus $g$ retracts onto a graph $X \subset M_g$, then $H_1(X)$ has rank at most $g$.
 Deduce an alternative proof of Exercise 13 from this, and construct a retraction of $M_g$ onto a wedge sum of $k$ circles for each $k \leq g$.
 :::
