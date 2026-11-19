@@ -32,6 +32,20 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 16 (p.230) including the bracketed hint. Rechecked the criterion and its use: for a finite CW complex the coefficient sequence of 0 -> Z -> Z -> F_p -> 0 gives dim_Fp H^i(Z;F_p) = b_i + t_i + t_{i+1} with t_i the number of p-power summands, while dim_Q H^i(Z;Q) = b_i, so equality in every degree is exactly the vanishing of all t_i; Künneth over a field (Theorem 3.15 p.216) makes the dimension sequences of X x Y the convolutions of those of X and Y, which agree for F_p and for Q, so X x Y has no p-primary torsion. Citations added for Theorem 3.15. Not covered: the exercise leaves the field-coefficient Künneth to the reader and so does the card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 16 of §3.2, printed p. 230, with Theorem 3.15 (printed p. 216).
+    Correct. The coefficient sequence $0\to\ZZ\to\ZZ\to\FF_p\to0$ gives
+    $0\to H^i(Z;\ZZ)/pH^i(Z;\ZZ)\to H^i(Z;\FF_p)\to H^{i+1}(Z;\ZZ)[p]\to0$, and for a finitely
+    generated $A$ one has $\dim A/pA=\operatorname{rank}A+(\text{number of }p\text{-power summands})$
+    and $\dim A[p]=(\text{number of }p\text{-power summands})$, so
+    $\dim_{\FF_p}H^i(Z;\FF_p)=b_i+t_i+t_{i+1}$ while $\dim_\QQ H^i(Z;\QQ)=b_i$; since the $t_i$ are
+    non-negative, equality in every degree is exactly the vanishing of all $p$-primary torsion.
+    Künneth over a field makes the dimension sequence of $X\times Y$ the convolution of those of
+    $X$ and $Y$, the same convolution for $\FF_p$ and for $\QQ$ by the hypothesis, and the criterion
+    applied to $X\times Y$ concludes. Nothing changed. Not claimed: a certificate.
 ---
 
 ::: {.problem}
