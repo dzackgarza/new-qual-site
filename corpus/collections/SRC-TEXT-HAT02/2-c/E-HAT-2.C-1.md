@@ -259,9 +259,20 @@ audit:
     reads as a total: the minimum of $e(K)+e(L)$ is $3\max\{1,\abs{n}\}+3$, from the same bound.
     Not changed: the statement as printed on p. 184 and the status of the two Math StackExchange
     answers, which are user posts.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied from the card's earlier event: PDF p. 193 carries the
+    running head 184 and the section text the exercise belongs to, so the printed page is the claimed
+    one. The durable part of the locator is the printed page; the file path is this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 2.C of Hatcher, *Algebraic Topology* (2002), printed p. 184, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 What is the minimum number of edges in simplicial complex structures $K$ and $L$ on $S^1$ such that there is a simplicial map $K \to L$ of degree $n$?
 :::
 
