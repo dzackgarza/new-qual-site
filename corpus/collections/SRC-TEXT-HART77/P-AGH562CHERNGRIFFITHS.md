@@ -378,6 +378,20 @@ audit:
     V.6.2, printed p. 423 (PDF p. 438, folio read). Not checked in this pass:
     the two sources' printed pages 115 and 303 were not re-read, the numbered
     statement being quoted in the text versions above.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event above, of this date, ends "Read and unchanged in this pass: steps
+    clifford-equality-canonical, canonical-meets-hyperplane-zero,
+    irregularity-zero and main-dichotomy", and that is not true of this pass.
+    The step read at length here is trivial-canonical-pg-one, whose attribution
+    the event corrects, together with the statement against the printed V.6.2
+    at printed p. 423 (PDF p. 438, folio read). The other four equality-case
+    steps were not read, so #168's acceptance is not met for them by this
+    session; the verdicts a second reader returned on them are recorded in
+    COMPLAINTS.md as leads and are not a certification. Nothing else in the
+    event above is withdrawn, and the repair it records stands.
 ---
 
 ::: {.problem}
