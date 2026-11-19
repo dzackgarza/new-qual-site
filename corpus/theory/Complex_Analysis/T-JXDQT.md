@@ -32,4 +32,5 @@ $$
 $$
 
 For a circle this is [@SS03, Theorem 4.1 (p. 90)], and the extension to toy contours is [@SS03, Corollary 4.2 (p. 90)].
+The weighted integral $\frac{1}{2\pi i}\int_\gamma zf'(z)/f(z)\dz$ is an addition here: it follows by applying the same theorem to the logarithmic derivative of $zf'(z)/f(z)$.
 :::
