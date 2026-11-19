@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 2, problem 2 (Summer 2005) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 27: the Complex Analysis Section of
+    the Analysis Qualifier, Wesleyan University, Summer 2005, Section 2 item 2. The page had cited
+    only the extraction; it now names the examination, its item and the page of the
+    scan. The statement is unchanged.
+
 ---
 
 ::: {.problem}
@@ -29,6 +39,10 @@ Hint: use Liouville's theorem.
 :::
 
 ::: {.solution}
+The item is Section 2 item 2 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
+University, Summer 2005 (a polynomial of degree at least one has a root), on PDF p. 27 of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 
 ::: pf
 
