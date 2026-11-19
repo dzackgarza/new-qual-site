@@ -28,7 +28,7 @@ The left adjoint is named first in each pair.
 
 - For $X=\Spec A$, the functor $M\mapsto\widetilde M$ from $A$-modules to quasicoherent $\OO_X$-modules and global sections $\Gamma(X,-)$.
 
-- Tensor $\wait \tensor_A N$ and $\Hom_A(N,\wait)$, as functors $\mods{A} \to \mods{A}$ for a fixed $A$-module $N$.
+- Tensor $- \tensor_A N$ and $\Hom_A(N,-)$, as functors $\mods{A} \to \mods{A}$ for a fixed $A$-module $N$.
 
 - Inverse image $\pi^{-1}$ and pushforward $\pi_*$, between sheaves on $X$ and sheaves on $Y$, for a fixed $\pi: X \to Y$.
 
@@ -38,7 +38,7 @@ The left adjoint is named first in each pair.
 :::
 
 ::: {.remark}
-For the adjunctions between abelian categories, [[T-DEFRAPL]] implies that an additive left adjoint is right exact and an additive right adjoint is left exact. Thus $\wait\tensor_A N$ is right exact, $\Hom_A(N,\wait)$ and $\pi_*$ are left exact, and their failures of exactness lead to $\Tor$, $\Ext$, and $R^i\pi_*$. This exactness language does not apply to the Set/Grp adjunction in the first bullet.
+For the adjunctions between abelian categories, [[T-DEFRAPL]] implies that an additive left adjoint is right exact and an additive right adjoint is left exact. Thus $-\tensor_A N$ is right exact, $\Hom_A(N,-)$ and $\pi_*$ are left exact, and their failures of exactness lead to $\Tor$, $\Ext$, and $R^i\pi_*$. This exactness language does not apply to the Set/Grp adjunction in the first bullet.
 
 For an open immersion, $i^{-1}$ is a right adjoint (of $i_!$) and a left adjoint (of $i_*$) at the same time, so it is exact; in particular, restricting a short exact sequence of sheaves to an open set keeps it exact.
 :::
