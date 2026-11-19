@@ -5,11 +5,7 @@ order: 0
 
 # Topics and remarks
 
-::: {.remark}
-Adapted from a remark written by Roy Smith, August 2006:
-
-"As a general rule, students are responsible for knowing both the theory (proofs) and practical applications (e.g. how to find the Jordan or rational canonical form of a given matrix, or the Galois group of a given polynomial) of the topics mentioned."
-:::
+The topics each chapter of this guide covers, with the sections of the standard texts in which each is treated and the page counts of the course notes that carry them.
 
 ## General references
 
