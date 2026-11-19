@@ -12,6 +12,16 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Fall_2012.docx`, converted with Pandoc: the item is the item beginning "Let f(x) in Q[x] be an irreducible polynomial of degree 5", and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -20,6 +30,7 @@ Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 :::
 
 ::: {.solution}
+This is the item beginning "Let f(x) in Q[x] be an irreducible polynomial of degree 5" of the Fall 2012 algebra examination, retained in this repository as `assets/attachments/Algebra_Fall_2012.docx`; the exam restarts its numbering, so the opening words locate it.
 
 Let $K$ be the splitting field of $f$ over $\QQ$ and $G=\operatorname{Gal}(K/\QQ)$, acting on its five roots.
 
