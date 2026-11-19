@@ -4895,3 +4895,24 @@ so $h'\equiv-s^{-2n}h+(n-1)s^{-2n-1}q$; after the diagonal transition factors th
 **Acceptance under #121/#132.** Met: the strict case is Harris's published theorem, the equality case is Hartshorne's Theorem 5.4 with its published proof, and the card's application is checked against both.
 
 **Uncertainty.** Not checked: no other printed proof of the equality case was searched for; the card's other steps were not re-derived; and the earlier record's statement that the equality case had no published proof is superseded here, not edited on its date.
+
+## 2026-11-19: the provenance sentence the per-card rule requires is missing on about 85% of the corpus's structured solutions
+
+**Object and need.** The dispatch rule for the structured-proof programme (issue #2, owner's comment of 2026-11-06) says a structured proof is written from the retained solution set, that set and its page are cited in the card's `solution` section, and that **re-derivation is the fallback only when no retained set covers the exercise, "and the card says so."** This entry measures how often a structured card says so. It is a measurement, not an acceptance: a card without the sentence is not thereby wrong, but the programme's own record of where its arguments came from is absent on it.
+
+**Observed evidence.** Screening over every corpus card file that has a `.solution` section and at least one `.pf-step` — the parser's own definition of a structured solution — for a provenance phrase in the solution text (`card's own`, `the card's`, `own argument`, `retained`, `transcrib`, `solution set`, `derived here`, `no published`, `re-derived`, case-insensitive):
+
+| population | cards | phrase in the solution's opening paragraph | phrase anywhere in the solution |
+| --- | ---: | ---: | ---: |
+| whole corpus | 10927 | 1545 (14.1%) | 1667 (15.3%) |
+| residue 5 of queue D | 874 | — | 140 (16.0%) |
+
+So **9260 of 10927 structured cards (84.7%) contain no provenance sentence anywhere in the solution.** The corpus grows under the measurement — other chats commit cards while it runs — so the figure is a snapshot taken at `main` = `a43976be1c5b` and the ratio is stable across two runs a few minutes apart (84.8% and 84.7%).
+
+**Read before believing the screen.** Three cards the screen flags were opened at their solution opening and carry no such sentence in any wording: `P-AGFS15-05` (solution begins "Let $g(x)=(x-e_1)(x-e_2)(x-e_3)$", no attribution), `P-AGXHWREDUCED` (begins "Write $P$ for the presheaf $U\mapsto\OO_X(U)^\red$") and `P-ALGCOMP03-05` (whose solution opens directly with the `pf` block and step `s1`). The screen is a phrase match, so it can miss an unusual phrasing; it cannot invent one, and the three samples confirm the phenomenon is real rather than a markup artifact.
+
+**What this does not show, and is not claimed.** No card's mathematics is asserted wrong; the same 1045 residue-5 files pass `qualc.authoring check` with zero failures, and the corpus gate is green at the tips that carry this session's commits (run records `309ff30e222b-20261119T075348.534Z` and `07bbc86eb690-20261119T080318.779Z`, exit 0, 0 diagnostics, 14402 cards and 341 wiki pages). The audit events, which do often say "the argument is the card's own", are bookkeeping and not the card, by the owner's own rule that an audit stamp is not the work.
+
+**Impact and owner.** The sentence is one line per card and needs no mathematics; applying it across 9261 cards is a mechanical sweep that no single chat's residue covers, and the partition rule forbids a chat from editing cards outside its residue. So this is a dispatch decision, not a card repair: either the per-card rule is relaxed to allow the audit event to stand as the record, or a sweep is assigned with the exact sentence to insert. Nothing in this entry was edited on any card.
+
+**Uncertainty.** The 84.8% is a screening figure over a phrase list, not a card-by-card read; the three samples above are the only cards opened to confirm it. Not checked: whether some cards state provenance in a `remark` outside the `solution` section (the screen would count them as absent), and no attempt was made to identify, per card, whether a retained set actually covers that card's exercise.
