@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-ZXBBI
 kind: lemma
-title: Nonconstant holomorphic maps from compact Riemann surfaces
+title: A nonconstant holomorphic map from a compact Riemann surface is surjective
 slogan: 'A nonconstant holomorphic map from a compact Riemann surface is onto a compact target, with finite fibres and finite branching.'
 classification:
   areas:
