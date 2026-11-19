@@ -6929,3 +6929,41 @@ The other three proofs of the card were rewritten in sentences that start as sen
 **What the gates do not see.** Both defects in `E-HK-12-5` pass `qualc check`'s per-card checks: an assertion that its proof does not establish, and a qed that only points backwards. The second has a style rule; the first has nothing but a reader.
 
 **Uncertainty.** The remaining §1.2 cards (`E-HK-12-6`, `-7`, `-8`) were not read in this pass, and nothing is claimed about them. The three cards called correct were checked for the computations the card displays, not re-derived from the axioms.
+
+## 2026-11-19: Yang's 5.5.4 gives the matrix proof of negative definiteness, with one false hypothesis named; and V.4.15(c)'s properness put to a swarm
+
+**Object and need.** `P-AGH554CONTRACTEDCURVES` (Hartshorne V.5.4, printed p. 417) and, separately,
+the last open item of the §V.4 batch that is a mathematical question rather than another stream's
+card work: the properness of the bad locus in V.4.15(c), open under
+[#157](https://github.com/dzackgarza/new-qual-site/issues/157).
+
+**V.5.4, Yang's entry at printed p. 113.** Part (a): a very ample $H$ on $X_0$ has
+$f^*H\cdot Y=H\cdot f_*Y=0$ and $(f^*H)^2=H^2>0$, so Hodge index gives $Y^2<0$ — the entry says
+$f^*H$ is ample on $X$, which is false for a pullback under a birational morphism, and the nef form of
+Hodge index is what the argument uses. Part (b) is the matrix proof: with the factorization of $f$,
+$H_2\sim H_1+\sum m_iY_i$ for $m_i=\operatorname{ord}_{Y_i}(f)>0$, so $S'=MSM$ has $S'_{ij}\ge0$ off
+the diagonal and $\sum_iS'_{ij}=-H_1\cdot m_jY_j\le0$; the identity
+$\sum_{i,j}v_iv_jS'_{ij}=\sum_j(\sum_iS'_{ij})v_j^2-\sum_{i<j}S'_{ij}(v_i-v_j)^2$ makes $S'$ negative
+semidefinite, strict negativity at a $j$ whose $Y_j$ meets $H_1$ and the connectivity of
+$\bigcup Y_i$ make it definite. That is a published proof of (b) that does not run through the
+factorization into point blowups, and it is the same argument as the NTU homework's Exercise 4 of §5;
+the card's own step reaches the conclusion by Hodge index on the blown-up model, and both stand.
+
+**V.4.15(c): the properness, put to a swarm.** Part (c) of the exercise, printed p. 409, asks for a
+dense $V\subseteq\PP^2$ such that adjoining any $P_{r+1}\in V$ to a general-position $r$-tuple keeps
+general position, on an uncountable field, with the hint that a variety is not a countable union of
+proper closed subsets. The card's reduction leaves exactly the properness of each bad locus $B_w$,
+one for each finite word $w$ of admissible transformations: closedness is proved, and of the three
+branches its reduction isolated, $m_N=0$ is empty by Nagata's Proposition 3, printed p. 279, $m_N=1$
+is the whole plane exactly when the fixed system is superabundant, and $m_N\ge2$ was left open. A
+swarm of six members was started this date on the question as stated — prove each $B_w$ proper, or
+refute it — with the card's reduction given as a claim to check and not as established. Its report
+will be recorded here, with the verdict, when it arrives; nothing on the card changes until then.
+
+**Repair.** `P-AGH554CONTRACTEDCURVES` in `6b6e1c71a2`; this record in the COMPLAINTS commit that
+carries it. No statement, step or hypothesis of the card changes.
+
+**Uncertainty.** Read for this record: Yang's Solution 5.5.4 at printed p. 113, rendered as a page
+image; Hartshorne's V.5.4 on printed p. 417 and V.4.15 on printed p. 409; and the card's own steps on
+part (c). Not read: Nagata's paper beyond the statements the card quotes; the printed books
+themselves; and no search of the literature for a published proof of the properness.
