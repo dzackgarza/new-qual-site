@@ -6284,3 +6284,22 @@ bodies under 45 characters — have been removed from seven cards). A check for 
 rest of this sweep mechanical. Three of my own measurements of the second class were wrong before I
 read the filter's fence grammar: the pattern must accept `::: {.pf-proof}` as well as `::: pf-proof`,
 or it reports proved steps as unproved.
+
+## 2026-11-19: §3.3 continued — four cards read, the second back-referencing Q.E.D. ending removed
+
+**Object.** The last report left nine §3.3 cards. Exercises 2, 12, 19 and 25 are read here against the book at their printed pages; five remain (14, 16, 26, 27, 31).
+
+| Card | Printed page | Source | Verdict |
+| --- | --- | --- | --- |
+| `E-HAT-3.3-2` | Ex. 2, p. 257 | — (card's own) | correct; **the trailing Q.E.D. step removed** |
+| `E-HAT-3.3-12` | Ex. 12, p. 258 | — (card's own, on Ex. 11's converse) | correct |
+| `E-HAT-3.3-19` | Ex. 19, p. 259 | — (card's own, on Ex. 17) | correct |
+| `E-HAT-3.3-25` | Ex. 25, p. 259 | Li, 3.3.9 (Hatcher 3.3 #25), p. 59 | correct, the source's Ext/Hom slip recorded |
+
+**The repair, and why it recurs.** `E-HAT-3.3-2` ended, like `E-HAT-3.3-11` before it, with a last step reading "Conclusion: … Q.E.D." whose whole proof was "Steps s1 and s2". `STYLE-08` forbids a last step that only says the earlier steps answer the question; on 3.3-11 that step also widened the printed claim, here it did not. It is removed and its references kept as a closing sentence. A search of `SRC-TEXT-HAT02` for the literal `Q.E.D.` now finds three cards, all outside this batch — `E-HAT-3.F-3`, `E-HAT-4.H-2`, `E-HAT-4.I-2` — which were not touched.
+
+**What was checked.** `3.3-2`: $M$ orientable iff the orientation cover is trivial; the cover of $M-\{x_0\}$ is the restriction; and deleting finitely many points from a connected $n$-manifold with $n\ge2$ leaves it connected, so an orientable $M$ loses one point from each of two components and a nonorientable one loses two from its connected cover. `3.3-12`: the one-vertex cell structure of $M_g$; the $1$-skeleton map $a_i\mapsto v_i$, $b_i\mapsto w_i$ whose image of the attaching word is $r_k$, so the map extends over the $2$-cell by its characteristic map; the degree $\pm1$ seen after collapsing $M_k$ to $S^2$; and the contradiction with Exercise 11's converse, whose injectivity-of-$f^*$ proof the card spells out. `3.3-19`: a direct limit over a countable index set of countable groups is countable; and an open $X\subset\RR^n$ is exhausted by finite cubical polyhedra, so $C_*(X)=\varinjlim C_*(K_j)$ and Exercise 17 turns homology into a countable direct limit of finitely generated groups. `3.3-25`: torsionfree plus finitely generated gives free, so the Ext term vanishes; $H^k\cong\operatorname{Hom}(H_k,\ZZ)$ is free; and Poincaré duality gives $H_k\cong H^k$.
+
+**Page arithmetic.** §3.3's exercises are 1–6 on printed p. 257, 7–14 on p. 258, 15–26 on p. 259 and 27–35 on p. 260, at PDF pages 266–269 of the held book.
+
+**Not done.** `E-HAT-3.3-14`, `-16`, `-26`, `-27`, `-31` are untouched; none has a located published solution. The source obligations of the earlier records are unchanged.
