@@ -20,6 +20,13 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the arrow in the automorphism and set the statement in LaTeX against problem 69 on Ring_Theory_Qual_Problems.pdf PDF page 11.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained problem list `assets/attachments/Ring_Theory_Qual_Problems.pdf`: the statement is Problem 69, and its printed
+    words are the card's. The problem number and the file are now named in the solution's opening
+    sentence. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ Let $R$ be a commutative ring with identity and $\sigma : R \to R$ a ring automo
 :::
 
 ::: {.solution}
+This is Problem 69 of the Kent State University algebra qualifying examination problem list in ring theory, retained in this repository as `assets/attachments/Ring_Theory_Qual_Problems.pdf`; the statement below is its wording.
 
 Let
 $$
