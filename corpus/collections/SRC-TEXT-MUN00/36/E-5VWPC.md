@@ -31,6 +31,29 @@ audit:
     and its explanation of the role of point-finiteness is interrupted mid-sentence ("To construct a
     counterexample we would need a space such that it is a) normal, b) there is"); the card gives the
     closed set and the covering argument in full.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Statement read in Munkres, Topology (2000), section 36 Exercise 4, printed
+    p. 227 (PDF p. 242 of the retained book): the definition of a point-finite
+    indexed family and the shrinking lemma agree, including that the cover is
+    indexed by the positive integers and that the conclusion is the closure of
+    V_n inside U_n.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The induction is correct. At stage k the closed set A_k is the complement
+    of the union of the earlier V_j and the later U_i, and it lies in U_k
+    because the intermediate family covers; normality then gives an open V_k
+    with A_k in V_k and the closure of V_k in U_k, and V_k together with the
+    rest of the intermediate family covers X, which restores the hypothesis at
+    the next stage. The final covering argument is also correct: if m is the
+    largest index with x in U_m, point-finiteness makes that set of indices
+    finite and nonempty, x lies in no U_i with i larger than m, and the
+    intermediate family at k = m therefore puts x in some V_j with j at most m.
+    Nothing was changed.
 ---
 
 ::: {.exercise}
