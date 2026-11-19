@@ -1021,6 +1021,12 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     body = match["body"]
     if not isinstance(meta, dict):
         raise TypeError(f"{path}: front matter must be a mapping")
+    first_body_line = next((line for line in body.splitlines() if line.strip()), "")
+    if first_body_line.strip() == "---":
+        raise ValueError(
+            f"{path}: doubled front-matter terminator: the second --- line heads the body "
+            "and renders as a horizontal rule above the card"
+        )
     return meta, body
 
 
