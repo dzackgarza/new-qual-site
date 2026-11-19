@@ -31,6 +31,14 @@ audit:
     commutators" problem 1, with the sheet's right-to-left composition convention.
     Correct: scs^{-1} sends s(a_i) to s(a_{i+1}) and s(a_k) to s(a_1), and fixes
     every other point, which is exactly the cycle on the images. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, cycles and commutators
+    problem 1. For $1\le i<k$, $(scs^{-1})(s(a_i))=s(a_{i+1})$ and
+    $(scs^{-1})(s(a_k))=s(a_1)$; a point outside $\{s(a_i)\}$ has $s^{-1}(x)$ outside
+    $\{a_i\}$ and is fixed. Both sides agree everywhere. No defect.
 ---
 
 ::: {.exercise}
