@@ -10,15 +10,11 @@ title: Special functions
 [[D-5LZQ4]]
 
 ::: {.remark title="Normalization"}
-With the normalization
+The [[D-5LZQ4|Fourier transform]] puts the $2\pi$ in the exponent, so in this normalization the inversion formula reads
 $$
-\hat{f}(\xi) \coloneqq \int_\RR e^{-i\xi x} f(x)\dx = \mcl(f)(i\xi),
+f(x) = \int_\RR e^{2\pi i\xi x} \hat{f}(\xi) \dxi,
 $$
-where $\mcl$ is the two-sided Laplace transform,
-the inversion formula reads
-$$
-f(x) = {1\over 2\pi}\int_\RR e^{i\xi x} \hat{f}(\xi) \dxi.
-$$
+and the transform is the two-sided Laplace integral $\int_\RR e^{-px}f(x)\dx$ evaluated at $p = 2\pi i\xi$.
 
 The one-sided Laplace transform $\mcl(f)(p)=\int_0^\infty e^{-pt}f(t)\,dt$ of standard functions, for $\Re p$ large enough:
 
