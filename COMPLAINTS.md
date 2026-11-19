@@ -8895,3 +8895,61 @@ and the printed book itself. Of 4.4.4, the cases 1--6 were read but only case 7 
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-83-5` numbering 1–3 and `E-HK-83-11` 1–4, QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; `E-HK-83-11` uses the identity $\operatorname{range}E=(\ker E^*)^\perp$ from Exercise 4 and the self-adjointness of orthogonal projections as the book states them, without re-proving either.
+
+## 2026-11-19, Yang sweep: IV.4.8--IV.4.10 cited at printed p. 92, no defect, three unnamed steps
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.4.7--4.4.10 all sit on printed p. 92, which ends the page with
+4.4.10; 4.4.11--4.4.16 are on p. 93.
+
+**`P-AGH448ALGEBRAICFUNDAMENTALGROUP`, IV.4.8 — cited, printed p. 92, no defect.** One frame gives
+all three answers: an étale cover of an elliptic curve is unramified hence of genus one; the dual of
+4.4.7 makes a degree-$n$ étale $f$ satisfy $g\circ f=n_E$, so the multiplication maps are cofinal and
+$\pi_1=\varprojlim\Gal(n_E)$; and each case then reads off $\Gal(n_E)$. In characteristic zero,
+$\Gal(n_E)=\ker n_E\cong(\ZZ/n\ZZ)^2$ because $n_E\circ f=n_E$ forces $\deg f=1$; with Hasse
+invariant zero, $n_E$ is étale exactly for $p\nmid n$ so the limit is over those indices; with Hasse
+invariant nonzero, $\Gal(n_E\circ\hat{\mathrm{Frob}}^r)\cong(\ZZ/n\ZZ)^2\times(\ZZ/p^r\ZZ)$ by
+4.4.15 and the limit is $\ZZ_p\times\prod_{\ell\ne p}(\ZZ_\ell\times\ZZ_\ell)$. The one step left
+implicit is that the dual of a finite étale map of elliptic curves is again finite étale, which is
+what lets 4.4.7 apply; the printed $\characteristic(K)$ for $\characteristic(k)$ in cases 2 and 3 is
+a typo. Commit `f5cec15a8e`.
+
+**`P-AGH449ISOGENY`, IV.4.9 — cited, printed p. 92, no defect.** (a) reflexivity and transitivity are
+immediate, symmetry is the dual isogeny; (b) is the hint's count: $\ker f$ is a finite subgroup, and
+two isogenies with the same kernel $G$ have $K(X')=K(X)^G=K(X'')$, so the targets are isomorphic as
+smooth curves. Two steps are implicit and named on the card: that the dual is chosen to fix the
+origin, and that the finite subgroups of $X$ are countable --- true because one of order $m$ lies in
+the finite group $X[m]$. Commit `bbdd86690d`.
+
+**`P-AGH4410PICOFPRODUCT`, IV.4.10 — cited, printed p. 92, no defect.** The entry normalises
+$\mathscr M$ by its restrictions to the two rulings through $P_0$, so that $\mathscr F$ is trivial on
+both; flatness of $X\times X\to X$ makes $\deg\restrictionof{\mathscr F}{X\times\{P\}}$ constant,
+hence $0$; $\psi:\Pic^0X\cong X$ then turns $P\mapsto\psi(\restrictionof{\mathscr F}{X\times\{P\}})$
+into an element of $R$ fixing $P_0$. Surjectivity of $\Phi$ is asserted, and the kernel is computed by
+triviality on every fibre, giving $\ker\Phi=p_1^*\Pic X\oplus p_2^*\Pic X$ and the exact sequence.
+Three steps are named rather than proved and are on the card: that $\Phi$ is a homomorphism (the
+theorem of the cube), its surjectivity (the graph of an endomorphism), and that a line bundle trivial
+on every fibre of a flat proper morphism with connected fibres is pulled back from the base (the
+see-saw). Commit `9c476ff36a`.
+
+**A style defect the per-card gate caught, and the repair.** The first draft wrote the restrictions as
+$\mathscr M|_{X\times\{P_0\}}$, and `qualc.authoring.raw_notation` rejected it --- STYLE-04, a raw bar
+where a semantic macro exists. The five occurrences were rewritten with `\restrictionof{}{}`, after
+which the check returns `None`. Worth remembering that this gate fires on `|` inside math but not on
+an undefined control word, which is the defect found in the previous batch; the two sweeps are
+complementary and both are cheap.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$10$, $1$--$8$
+and $1$--$6$ with `(QED labels present)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None` after the repair; the macro sweep reported only `\ge`
+and `\overset`, both standard.
+
+**Not checked.** Yang's Solutions outside printed p. 92; the Hartshorne pages of the three exercises,
+not reopened in this pass, the comparison being against the statements the cards carry; and the
+printed book itself. In particular the citation of 4.4.15 inside 4.4.8 was taken from the text and
+not read on its own page.
+
+**The remainder.** Twenty-six Chapter IV cards still lack Yang; the queue now starts at IV.4.11
+`P-AGH4411COMPLEXMULTIPLICATION`, and Yang's 4.4.11--4.4.16 are on printed p. 93.
