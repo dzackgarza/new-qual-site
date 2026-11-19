@@ -34,6 +34,7 @@ for each $i \geq 0$.
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise III.8.2, printed p. 259. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter III §8, Exercise 3.8.2, printed p. 171, proves it by the same reduction: Corollary 3.8.2 lets $Y$ be taken affine, affineness of $f$ makes $X$ affine too, and Proposition 3.8.5 then gives the vanishing that Exercise 8.1 asks for.
 
 ::: pf
 
