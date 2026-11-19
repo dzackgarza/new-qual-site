@@ -16,6 +16,16 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Checked against Chapter 3 review Question 28 in both assets/attachments/extracted/chapter-3.md and the Mistral OCR extraction of the whole book, assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md, with the book's Chapter 8 solution where they disagree."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. The two surfaces meet where 1 - q = sqrt(q) - 1
+    with q = x^2 + y^2/9, that is (sqrt(q)+2)(sqrt(q)-1) = 0, so sqrt(q) = 1 and the projection is
+    the ellipse x^2 + y^2/9 <= 1, which is the region the card states. The vertical thickness is
+    z_top - z_bottom = (1-q) - (sqrt(q)-1) = 2 - q - sqrt(q) = 2 - x^2 - y^2/9 - sqrt(x^2 + y^2/9),
+    matching choice (E), and on the ellipse q <= 1 makes it nonnegative, as a thickness must be.
+    Not claimed: any evaluation of the integral, which the question forbids, nor the volume itself.
 ---
 
 ::: {.problem}
