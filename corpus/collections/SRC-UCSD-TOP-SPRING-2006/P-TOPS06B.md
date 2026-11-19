@@ -12,6 +12,16 @@ classification:
   - Euler Characteristic
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. A degree-d covering has chi(total) = d chi(base), so
+    2 - 2(n+1) = d(2 - 2n), giving d = n/(n-1); for n > 2 this lies strictly between 1 and 3/2 and so
+    is not an integer, and no finite covering exists. Checked the Euler characteristic of a genus-g
+    surface is 2 - 2g and that multiplicativity under finite coverings is the one input, and that
+    n = 2 is genuinely excluded (d = 2 there, and a double cover does exist).
 ---
 
 ::: {.problem}
