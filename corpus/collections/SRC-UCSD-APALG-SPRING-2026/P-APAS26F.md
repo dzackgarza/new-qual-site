@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 12, is the statement the card answers, and the head of the solution names it; the
+    retained file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the
+    blank versos, so Problem 6 stands on its page 12. Checked: the statement against the paper's text
+    layer at the page named; both directions of the centralizer criterion and the classification of the
+    maximal commutative subalgebras of $\operatorname{End}(V)$; `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for this
+    paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -25,6 +37,8 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 :::
 
 ::: {.solution}
+
+The problem is Problem 6 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 12 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 ::: pf
 
