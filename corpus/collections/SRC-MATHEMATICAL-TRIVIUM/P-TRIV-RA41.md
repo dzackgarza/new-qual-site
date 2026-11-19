@@ -19,6 +19,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Removed a stray extraction digit against Real Analysis Problem 41 on page 11 of the source PDF.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 41 of the Real Analysis chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -43,6 +51,7 @@ for the Euclidean distance and $\rho$ for the cylindrical radius.
 :::
 
 ::: {.solution}
+This is Problem 41 of the Real Analysis chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 ::: pf
 
