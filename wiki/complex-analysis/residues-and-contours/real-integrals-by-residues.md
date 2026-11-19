@@ -7,10 +7,16 @@ topics: [Contour Integration]
 # Real integrals by residues
 
 Worked evaluations and exercises, grouped by the contour cases on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
+The evaluations every qual expects are on [[complex-analysis/standard-integrals|Standard integrals]], and the estimates that close the arcs are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]].
 
 ## Rational, superlinear decay
 
-Upper semicircle; the arc integral tends to $0$ by the ML estimate.
+Upper semicircle; the arc integral tends to $0$ by the [[T-SFXI7|ML estimate]].
+
+::: {.example title="$\displaystyle\int_\RR{\dx\over 1+x^4} = {\pi\over\sqrt 2}$"}
+The poles of $1/(1+z^4)$ are the fourth roots of $-1$, of which $e^{i\pi/4}$ and $e^{3i\pi/4}$ lie in $\HH$, and the residue at a simple pole $z_0$ is $1/(4z_0^3) = -z_0/4$, since $z_0^4 = -1$.
+The two residues sum to $-\qty{e^{i\pi/4}+e^{3i\pi/4}}/4 = -i\sqrt2/4$, so the integral is $2\pi i\cdot(-i\sqrt2/4) = \pi\sqrt2/2 = \pi/\sqrt2$.
+:::
 
 [[E-SS3.EX-2]]
 [[E-SS3.EX-6]]
