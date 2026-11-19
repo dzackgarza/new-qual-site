@@ -68,26 +68,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the card now requires $L\ne0$, with a `source-corrected` audit note pointing here; the solution proves both directions of the corrected statement.
   The correction is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean> proves that `L = ⊥` satisfies the printed hypothesis for every $\alpha$, and proves both directions of the corrected statement, with `#print axioms` showing no `sorryAx`.
 
-### UCSD covering-spaces subgroup matching card holds no recoverable posed task
-
-- **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
-
-- **Observed evidence:** the card body lists five subgroups of $\langle a,b\rangle$ and five images of covering diagrams, but no posed question.
-  The card was intaken from the vendored compilation `assets/Topology/650_UCSD_Qual_Questions/Quals/Topology Problems (Solutions).pdf` (with its checked-in extraction), whose "Covering Spaces" section reads only "Generators of the subgroups:" followed by the same list and the same images: those bytes are the author's answer material, recorded without the question, because the compilation assumes the reader has the original course sheet.
-
-- **Searched:** the vendored compilation and its extraction, `UCSD_290_F14_sheet*` extractions, `UCSD_Topology_Qual_Problems_2020-05-29`, `UCSD_290_Qualifying_Exams`, and the `qual-wiki` UCSD finals.
-  **Found:** the subgroup list and images only.
-  **Conclusion:** the posed task is not recoverable from any retained source.
-  **Confidence:** high for absence from retained bytes.
-  **Gaps:** the original UCSD 290 covering-spaces homework sheet that posed the question is not in this repository or the sibling clones; the vendored compilation is owner-authored notes and so is also not a valid `provenance:` oracle, which is why the collection's provenance list stays empty.
-
-- **Impact and owner:** the card is not a self-contained problem; a solution cannot be authored without inventing the task.
-  The five covering diagrams in `assets/Topology/650_UCSD_Qual_Questions/Quals/assets/` are the only record of the covers.
-
-- **Uncertainty:** the intended task (presumably matching each subgroup with the corresponding cover of $S^1\vee S^1$) is a plausible reconstruction, not a reading of any source.
-
-- **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
-
 ### NUS 1970 collections rest on a dataset, not on an examination paper
 
 - **Object and need:** `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING`, 20 problem cards between them.

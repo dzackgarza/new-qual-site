@@ -206,3 +206,7 @@ Conjugacy preserves the rank of a free subgroup, so picture 5 is not a conjugate
 
 :::
 :::
+
+::: {.remark}
+The source is `assets/attachments/UCSD_290_F14_sheet4.pdf`, the UCSD Math 290 (Fall 2014) problem sheet whose section 4 is headed "Covering spaces", where this is Problem 7 on printed p. 253: part (a) as the pictures above, part (b) as the five subgroups above. The sheet names no basepoint, so the basepoints the solution uses are chosen rather than printed.
+:::
