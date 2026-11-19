@@ -338,6 +338,36 @@ audit:
     tmp/sources/ntu-ag2-chapter5.md at PDF p. 8. The argument of steps s3 to s6
     is unchanged; what changes is that the card no longer claims the semistable
     direction as its own.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) checked for its ground field, the row of issue #160 for this
+    exercise, which recorded that Gunning is a book about compact Riemann
+    surfaces. The classification is carried by steps s10, s11, s12 and s12b,
+    none of which uses more than Ext^1 = H^1, Serre duality and the elementary
+    theory of line bundles on a complete curve, and Gunning's Theorem 14,
+    printed pp. 87-90, is named only as the characteristic-zero alternative.
+    Checked on this pass: step s11's bound, h^1(L^v) nonzero implies
+    deg L^v <= 2g-2 by IV.1.3.4, equivalently a nonzero section of K_C + L of
+    degree 2g-2-e; and step s12b's injectivity in rank two, where the point
+    that needs the sign is that a line subbundle M of a middle term either maps
+    injectively to L, giving deg M <= deg L < 0, or lies in the kernel O_C,
+    giving deg M <= 0 with equality only for O_C itself, so O_C is the unique
+    line subbundle of degree 0 and an isomorphism carries it to the
+    corresponding one; the automorphisms of O_C and of L are then nonzero
+    constants because H^0(C,O_C) = k, so the two classes differ by a scalar.
+    The same sign is what makes the indecomposability argument of step s11
+    valid: a decomposition of the middle term would put O_C on one side and a
+    summand isomorphic to L of negative degree on the other, so the given
+    inclusion would be the summand one and the class would vanish. Read for
+    this pass: steps s10, s11, s12 and s12b of this card, Hartshorne's
+    Theorem 2.12 with its proof, printed pp. 375-376, and the statements of
+    Gunning's Theorem 13 and Theorem 14 at the printed pages the card records,
+    in tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md.
+    Not checked: steps s3 to s9 were read for their field hypotheses only, not
+    re-derived, and no printing other than the text versions beside the
+    retained PDFs.
 ---
 
 ::: {.problem}
