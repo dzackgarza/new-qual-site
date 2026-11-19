@@ -31,5 +31,5 @@ $$
 \frac{1}{2\pi i}\int_\gamma\frac{zf'(z)}{f(z)}\dz=\sum_{k=1}^mz_k.
 $$
 
-For a circle this is [@SS03, Theorem 4.1 (p. 90)], and the extension to toy contours is [@SS03, Corollary 4.2 (p. 91)].
+For a circle this is [@SS03, Theorem 4.1 (p. 90)], and the extension to toy contours is [@SS03, Corollary 4.2 (p. 90)].
 :::
