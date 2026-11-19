@@ -35,7 +35,9 @@ source:
         - id: P-CH8-14
           comment: Exercise 14
         - id: P-CH8-15
-          comment: Exercise 15
+          comment: Exercise 13 (printed as exercise 15 when the card was created; the isomorphism of
+            the additive group of the complex numbers with R + R is exercise 13 in Gallian 7e,
+            exercise 15 being "if G + H is cyclic then G and H are cyclic")
         - id: P-CH8-19
           comment: Exercise 17 (printed as exercise 19 when the card was created;
             the subgroup-of-Zm-x-Zn exercise is 17 in Gallian 7e)
