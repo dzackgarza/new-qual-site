@@ -28,7 +28,7 @@ The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihi
 [[T-SJCF7]]
 
 ::: {.remark title="The two polynomials do not determine the operator"}
-$\min_A$ divides $\chi_A$ and has the same irreducible factors, and when $\chi_A$ splits the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$ while the exponent in $\chi_A$ is the sum of the block sizes; the pair therefore does not determine the Jordan form, as $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ show on [[algebra/linear-algebra/jordan-canonical-form|Jordan canonical form]].
+The pair $(\min_A,\chi_A)$ does not determine the Jordan form: $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ share the characteristic polynomial $x^4$ and the minimal polynomial $x^2$, as the block-counting data on [[algebra/linear-algebra/jordan-canonical-form|Jordan canonical form]] show.
 :::
 
 ## Computing the minimal polynomial
