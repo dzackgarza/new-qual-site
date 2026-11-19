@@ -49,6 +49,8 @@ Compute the divisor class group $\Cl(X)$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
 Let $\overline X\subseteq\PP^2_k$ be the projective closure of $X$.
 
 ::: pf

@@ -52,6 +52,8 @@ Errata to the statement: in type IV the ideal is $\pi^* A + g(X)A$ with $M = \pi
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is Tate's homework problem sets alone, so the argument is the card's own.
+
 Write $A=B[X]$, and use the conclusions of Problem 3 proved in [[P-TATE85-PI-03]].
 
 ::: pf

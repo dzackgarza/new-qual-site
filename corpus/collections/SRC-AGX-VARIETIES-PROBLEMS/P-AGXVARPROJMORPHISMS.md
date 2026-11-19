@@ -76,6 +76,8 @@ is an isomorphism.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
 Choose projective embeddings
 $$
 X\subseteq\PP^n_\CC,

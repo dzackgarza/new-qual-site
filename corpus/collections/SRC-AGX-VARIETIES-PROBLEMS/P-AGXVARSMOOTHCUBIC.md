@@ -50,6 +50,8 @@ Show that $C$ is an elliptic curve.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #c-irreducible}

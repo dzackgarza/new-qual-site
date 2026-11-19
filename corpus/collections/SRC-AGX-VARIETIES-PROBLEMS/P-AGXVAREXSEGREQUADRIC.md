@@ -49,6 +49,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
 Write
 $$
 \sigma\bigl([a_0:a_1],[b_0:b_1]\bigr)
