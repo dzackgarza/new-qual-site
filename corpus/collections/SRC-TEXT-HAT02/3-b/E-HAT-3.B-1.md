@@ -60,7 +60,6 @@ audit:
     term-by-term identification of the Kueneth summands, and the closed form
     N_i = max(0, min(m,i) - max(0,i-n) + 1). No defect found in the statement, §3.B Exercise 1.
 ---
----
 
 ::: {.problem}
 Compute the groups $H_i(\RP^m \times \RP^n; G)$ and $H^i(\RP^m \times \RP^n; G)$ for $G = \ZZ$ and $\ZZ_2$ via the cellular chain and cochain complexes.
