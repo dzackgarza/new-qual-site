@@ -11,7 +11,7 @@ topics:
 
 [[D-SRFINT]]
 
-A self-intersection can be negative: the exceptional curve $E$ of a blowup at a point has $E^2=-1$.
+A self-intersection can be negative: the exceptional curve $E$ of the blowup at a smooth point of a surface has $E\cong\PP^1$ and $E^2=-1$, with $K_{\widetilde X}=\pi^*K_X+E$ ([[PR-VAREM1]]).
 
 [[T-SRFADJ]]
 
