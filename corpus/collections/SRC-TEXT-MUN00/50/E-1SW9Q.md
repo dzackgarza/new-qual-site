@@ -46,6 +46,22 @@ audit:
     basis, which is where the inequality $c_1+b_1x<c_2+a_2x$ for small $x>0$ is used, and the failure of
     normality, which is the cardinality argument on the closed discrete set $L$ against the countable set of
     points with rational coordinates. Nothing needed correction.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The four steps carried run-in part labels and "Proof:" lines instead of
+    claims, the page cited no source, and the first group ended with a substep
+    that only restated its conclusion. Each group is now a labelled step (basis,
+    euclidean, hausdorff, not-normal) whose first paragraph is its claim, that
+    substep is gone, and the preamble names the exercise and the pages the
+    argument leans on: supplementary Exercise 6 of §50 at printed pp. 317-318,
+    the pattern of Example 3 of §31 for the non-normality, and Theorem 18.3 at
+    printed p. 108 for continuity on the two halves. As the event of 2026-11-11
+    records, no complete published solution was located, so the argument remains
+    the card's own and the page claims nothing else.
+
 ---
 
 ::: {.exercise}
@@ -114,13 +130,12 @@ Compare Example 3 of §31.]
 :::
 
 ::: {.solution}
+The exercise is supplementary Exercise 6 of §50, printed pp. 317--318. The non-normality argument follows the pattern of Example 3 of §31, and the continuity of each $f_c$ on the two halves of the plane is Theorem 18.3, printed p. 108.
 
 ::: pf
 
-::: pf-step
-
-Part (a) & (b): Geometric description and basis verification.
-    *Proof:*
+::: {.pf-step #basis}
+The sets of types (i)--(iii) form a basis for a topology on $X$, and a basic neighbourhood of a point of $B_c$ with $x=0$ meets $A$ in a wedge $A_c(I,\varepsilon)$.
 
 ::: pf-proof
 
@@ -142,20 +157,13 @@ Intersections: Intersections of type (i) with (i) or (iii) are open in $A$ (type
 
 :::
 
-::: pf-step
-
-Thus types (i)-(iii) form a basis.
 
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Part (c) & (d): Homeomorphism $f_c: \RR^2 \to A \cup B_c$ and local 2-euclidean structure.
-    *Proof:*
+::: {.pf-step #euclidean}
+Each $f_c$ is a homeomorphism of $\RR^2$ onto $A\cup B_c$, and $A\cup B_c$ is open in $X$, so every point of $X$ has a neighbourhood homeomorphic to a ball in $\RR^2$.
 
 ::: pf-proof
 
@@ -199,10 +207,8 @@ For any $p \in A \cup B_c$, $p$ possesses a basis neighborhood contained in $A \
 
 :::
 
-::: pf-step
-
-Part (e): $X$ is Hausdorff.
-    *Proof:*
+::: {.pf-step #hausdorff}
+$X$ is Hausdorff.
 
 ::: pf-proof
 
@@ -233,10 +239,8 @@ Thus $X$ is Hausdorff.
 
 :::
 
-::: pf-step
-
-Part (f): $X$ is not normal.
-    *Proof:*
+::: {.pf-step #not-normal}
+$X$ is not normal.
 
 ::: pf-proof
 
