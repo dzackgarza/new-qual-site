@@ -18,6 +18,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the one step that stated its function without a justification now
+    says why the formula defines a function on the whole interval and why it is bounded. The mathematics
+    is unchanged: the step function with a single jump is of bounded variation, which is what refutes the
+    statement. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -44,6 +53,10 @@ Statement (a) is false.
 
 ::: pf-step
 Let $f(x) = 0$ on $[0, 1/2]$ and $f(x) = 1$ on $(1/2, 1]$.
+
+::: pf-proof
+The two intervals are disjoint and their union is $[0,1]$, so the formula defines a function on the whole of $[0,1]$; its values are $0$ and $1$, so it is bounded.
+:::
 :::
 
 ::: pf-step
