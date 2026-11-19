@@ -53,7 +53,7 @@ Part (i) is the mean value inequality integrated over the disc: averaging the ci
 ::: {.pf-step #mean}
 (i) For $f\in H(G)$, $a\in G$ and $0<\rho<r$ with $\overline{B(a,r)}\subset G$,
 $$
-\abs{f(a)}\le\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}\dd t .
+\abs{f(a)}\le\frac1{2\pi}\int_0^{2\pi}\abs{f(a+\rho e^{it})}\dt .
 $$
 
 ::: pf-proof
@@ -64,10 +64,10 @@ $f$ is holomorphic near the closed disc, so $\abs f$ is subharmonic there and sa
 
 
 ::: {.pf-step #area}
-(i) $r^2\abs{f(a)}\le\dfrac1\pi\displaystyle\int_{B(a,r)}\abs{f(z)}\dd A(z)$, hence $\abs{f(a)}\le\dfrac{1}{\abs B}\displaystyle\int_B\abs{f}$ with $\abs B=\pi r^2$.
+(i) $r^2\abs{f(a)}\le\dfrac1\pi\displaystyle\int_{B(a,r)}\abs{f(z)}\dA(z)$, hence $\abs{f(a)}\le\dfrac{1}{\abs B}\displaystyle\int_B\abs{f}$ with $\abs B=\pi r^2$.
 
 ::: pf-proof
-Multiply the inequality of step [](#mean){.pf-ref} by $2\rho>0$ and integrate over $\rho\in(0,r)$: the left side becomes $\abs{f(a)}\int_0^r2\rho\,\dd\rho=r^2\abs{f(a)}$, and the right side becomes $\frac1\pi\int_0^r\!\!\int_0^{2\pi}\abs{f(a+\rho e^{it})}\rho\,\dd t\,\dd\rho$, which is $\frac1\pi\int_{B(a,r)}\abs f\dd A$ by the polar-coordinate formula for the area integral (the integrand is continuous and the disc is compact inside $G$). Dividing by $\pi r^2=\abs B$ gives the second display.
+Multiply the inequality of step [](#mean){.pf-ref} by $2\rho>0$ and integrate over $\rho\in(0,r)$: the left side becomes $\abs{f(a)}\int_0^r2\rho\,d\rho=r^2\abs{f(a)}$, and the right side becomes $\frac1\pi\int_0^r\!\!\int_0^{2\pi}\abs{f(a+\rho e^{it})}\rho\dt\,d\rho$, which is $\frac1\pi\int_{B(a,r)}\abs f\dA$ by the polar-coordinate formula for the area integral (the integrand is continuous and the disc is compact inside $G$). Dividing by $\pi r^2=\abs B$ gives the second display.
 :::
 
 :::
