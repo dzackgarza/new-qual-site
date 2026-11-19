@@ -56,6 +56,7 @@ Then regard $S'$ as the global sections of the sheaf of rings $\mcs=\bigoplus_{n
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.14, printed p. 41 of the held scan, transcribed and checked against the exercise as printed, part by part.
 Write $L=\OO_X(1)$ and $R(X,L)=\bigoplus_{n\ge0}\Gamma(X,L^{\otimes n})$.
 Use the [[P-AGH2510SATIDEAL|saturated nonnegative section ideal]] in the definition of $S(X)$, so $X\cong\Proj S(X)$.
 The natural map $S(X)\to R(X,L)$ is injective in every degree, since the kernel of restriction from the polynomial ring is precisely that ideal.
