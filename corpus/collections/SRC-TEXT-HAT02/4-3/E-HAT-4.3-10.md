@@ -11,6 +11,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 10, printed p. 419,
+    and against the action convention of p. 342. The transport the card defines --- lift
+    the homotopy that moves the basepoint along beta and leaves the sphere constant ---
+    is an anti-action, as an independent report from the swarm found and as recomputing
+    the defining square confirms: its boundary is a·beta·alpha_1^{-1}·beta^{-1}, so
+    alpha_1 = beta^{-1}·alpha, while Hatcher's action of a loop delta is [alpha]->[delta
+    alpha] = delta·alpha·delta^{-1} (p. 342, beta_delta beta_eta = beta_{delta eta}). The
+    card's identity (beta gamma)·alpha = beta·(gamma·alpha) is therefore false: the true
+    law is T_{beta gamma} = T_gamma T_beta, and the composite pi_1(F) -> Aut is the action
+    of beta^{-1}, not of beta. Repaired by proving the reversed composition law in step
+    #homomorphism, by defining the action as beta -> T_{beta^{-1}} in a new step #action
+    (with T_beta = beta_{beta^{-1}} read off the square), and by rewriting #restriction as
+    T_{beta^{-1}} = beta_beta. Statement unchanged. Not checked: nothing outside this
+    exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -65,10 +83,19 @@ A homotopy of $\alpha$ rel basepoint, or of $\beta$ rel endpoints, changes the d
 :::
 
 ::: {.pf-step #homomorphism}
-$[\beta]\mapsto\bigl([\alpha]\mapsto[\beta]\cdot[\alpha]\bigr)$ is a homomorphism $\pi_1(E,e_0)\to\operatorname{Aut}\bigl(\pi_n(F,e_0)\bigr)$.
+Transport along a product of loops reverses the order: $T_{\beta\gamma}=T_{\gamma}\circ T_{\beta}$ for loops $\beta,\gamma$ at $e_0$.
 
 ::: pf-proof
-Concatenating loops concatenates the transports: the lift for $\beta\gamma$ restricts over the first half of the $t$-interval to the lift used for $\gamma$ applied to $\alpha$, and over the second half to the lift for $\beta$ applied to that, by uniqueness of lifts rel the subcomplex; so $(\beta\gamma)\cdot\alpha=\beta\cdot(\gamma\cdot\alpha)$. Taking $\beta^{-1}$ gives the inverse operation, since $\beta\beta^{-1}$ is homotopic to the constant loop and the constant loop acts as the identity — its lift is the constant homotopy on $\alpha$. So the assignment is a homomorphism into the automorphism group.
+Concatenate $\beta$ then $\gamma$ and lift the resulting homotopy as in step [](#transport){.pf-ref}. The lift restricted to $S^n\times[0,\tfrac12]$, reparametrized over $[0,1]$, is exactly the lift used to define $T_\beta$, so at $t=\tfrac12$ the sphere carries the class $T_\beta[\alpha]$, based at $\beta(1)$. Restricted to $S^n\times[\tfrac12,1]$, again reparametrized, it is the lift used to define $T_\gamma$ applied to that class, since the basepoint track there is $\gamma$. So the time-one class is $T_\gamma T_\beta[\alpha]$, and this holds for every $[\alpha]$.
+:::
+
+:::
+
+::: {.pf-step #action}
+$[\beta]\mapsto T_{\beta^{-1}}$ is a homomorphism $\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$, and $T_{\beta^{-1}}$ is Hatcher's change-of-basepoint map $\beta_{\beta}$.
+
+::: pf-proof
+By step [](#homomorphism){.pf-ref}, $T_{(\beta\gamma)^{-1}}=T_{\gamma^{-1}\beta^{-1}}=T_{\beta^{-1}}T_{\gamma^{-1}}$, so $\Phi([\beta]):=T_{\beta^{-1}}$ is multiplicative; it is bijective with inverse $\Phi([\beta^{-1}])$ and depends only on $[\beta]$ by step [](#well-defined){.pf-ref}. For the identification, Hatcher's action of a loop $\delta$ is $[\alpha]\mapsto[\delta\alpha]$ (printed p. 342, where $\beta_\delta\beta_\eta=\beta_{\delta\eta}$ and each element acts as $[f]\mapsto[\gamma f]$), and the defining square of step [](#transport){.pf-ref} has boundary $\alpha\cdot\beta\cdot\alpha_1^{-1}\cdot\beta^{-1}\simeq1$ in the boundary of $S^1\times I$: reading it off, $\alpha_1\simeq\beta^{-1}\alpha\beta=[\beta^{-1}\alpha]$. So $T_\beta[\alpha]=[\beta^{-1}\alpha]=\beta_{\beta^{-1}}[\alpha]$, and $T_{\beta^{-1}}=\beta_{\beta}$.
 :::
 
 :::
@@ -77,7 +104,7 @@ Concatenating loops concatenates the transports: the lift for $\beta\gamma$ rest
 The composite $\pi_1(F,e_0)\to\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$ is the usual action, so if $\pi_1(E)=0$ that action is trivial.
 
 ::: pf-proof
-A loop $\beta$ in $F$ has $p\beta$ constant at $b_0$, so the homotopy $(x,t)\mapsto p\beta(t)$ is the constant homotopy and its lift is a homotopy of $\alpha$ within $F$ from $\alpha$ to $\alpha_1$; that is exactly the basepoint-change action of $[\beta]\in\pi_1(F,e_0)$ on $\pi_n(F,e_0)$. Hence the composite is the usual action, by the very construction of that action, and it is the trivial action whenever $\pi_1(E,e_0)=0$, since the homomorphism then has trivial domain.
+For $\beta$ a loop in $F$ the class $[\beta]$ lies in the image of $\pi_1(F,e_0)\to\pi_1(E,e_0)$, and the composite sends it to $T_{\beta^{-1}}=\beta_{(\beta^{-1})^{-1}}=\beta_\beta$, which is by definition the usual action of $[\beta]$ on $\pi_n(F,e_0)$ (printed p. 342). So the composite $\pi_1(F,e_0)\to\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$ is the usual action, and it is trivial whenever $\pi_1(E,e_0)=0$, the homomorphism then having trivial domain.
 :::
 
 :::
