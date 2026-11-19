@@ -27,6 +27,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.15, printed pp. 93,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.15, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the chain $\Omega$-injectivity $\Leftrightarrow$ $H^1$ surjectivity by Serre duality on a genus-one curve, and $\deg_s([p]_X)=\deg_s(\hat F')\deg_s(F')=\deg_s(\hat F')\in\{1,p\}$ giving the two kernels.
+    Not checked: Yang's Solutions outside printed pp. 93; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.15 at printed pp. 93; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -235,4 +255,8 @@ two possible groups of $p$-torsion points.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.15, printed p. 93, runs the first half as a chain of equivalences: $\hat F':X\to X_p$ is separable iff $\hat F'^*\Omega_{X_p}\to\Omega_X$ is injective iff $H^0(X_p,\Omega_{X_p})\to H^0(X,\Omega_X)$ is, which by Serre duality is iff $F'^*:H^1(X,\OO_X)\to H^1(X_p,\OO_{X_p})$ is surjective, which is exactly the Hasse invariant being $1$. Since $F'$ is purely inseparable, one has $\deg_s(F')=1$, so $\deg_s([p]_X)=\deg_s(\hat F')$, and the separable degree of $[p]_X$ is the number of geometric points in its kernel: it is $p$ when $\hat F'$ is separable and $1$ when it is not, giving $X[p]\cong\ZZ/p$ and $X[p]=0$ respectively. One sentence in the middle of that argument is printed with $\deg$ where $\deg_s$ is needed --- "$\deg(\hat F')=\deg(n_X)$" and "$\#\ker n_X=\deg(\hat F')$" --- and with ordinary degrees it would make $\#\ker[p]_X=p$ in both cases, contradicting the second; the later lines, which write $\deg_s$, are the correct ones.
 :::
