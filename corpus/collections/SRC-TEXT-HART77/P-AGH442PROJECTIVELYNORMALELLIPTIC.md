@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.2, printed pp. 89--90,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.2, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the vanishing used at both steps: $h^1$ of a line bundle of positive degree on a genus-one curve is $0$ by Serre duality against $H^0$ of a negative-degree bundle, and $\supp\mathscr G$ has dimension $1$ so the induction applies to it.
+    Not checked: Yang's Solutions outside printed pp. 89--90; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.2 at printed pp. 89--90; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -276,4 +296,8 @@ embedding.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.2, printed pp. 89--90, proves normal generation first and converts at the end. The engine is a lemma it attributes to Castelnuovo: if $\mathcal F$ is coherent on $X$ with $H^1(X,\mathcal F)=H^1(X,\mathcal F\otimes\mcl(-D))=0$, then $H^0(X,\mathcal F\otimes\mcl(nD))\otimes H^0(X,\mcl(D))\to H^0(X,\mathcal F\otimes\mcl((n+1)D))$ is surjective. For $\supp\mathcal F$ of dimension $0$ it picks $s\in H^0(X,\mcl(D))$ nonzero at every point of the support, so that $H^0(X,\mathcal F)\otimes k\cdot s\to H^0(X,\mathcal F\otimes\mcl(D))$ is an isomorphism; for $\supp\mathcal F$ of dimension $1$ it forms $\mathscr G=\mathcal F/\mathcal F\otimes\mcl(-D)$, draws the two-row diagram and applies the five lemma to get an exact sequence $\coker f\to\coker g\to\coker h$, with $\coker h=0$ and $\coker f=0$ from the two applications of the lemma. With $\mathcal F=\OO_X$ this gives $H^0(X,\mcl(D))\otimes H^0(X,\mcl(nD))\to H^0(X,\mcl((n+1)D))$ surjective for all $n\geq1$, i.e. generation of $\bigoplus_kH^0(X,\mcl(kD))$ in degree one. The projective-normality half is the second diagram: with $\OO_{\PP^n}(k)$ above $\OO_X(k)$ it shows inductively that $H^0(\PP^n,\OO_{\PP^n}(k))\to H^0(X,\OO_X(k))$ is surjective for every $k$, which by (II.5.14(d)) is the definition. The lower-degree step is sound as printed: with $\deg D=d\geq3$ and $E$ effective of degree $d-2$ supported on the divisor $D$, one has $H^1(X,\mcl(D-E))=0$ by Serre duality, since $K_X=\OO_X$ on an elliptic curve and $\mcl(D-E)$ has degree $2>0$. The one typo worth noting is 'we just need to replace $\mathcal F$ to $\mathcal F\otimes\mcl((n-1)D)$' for 'by'.
 :::
