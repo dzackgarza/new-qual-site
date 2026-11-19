@@ -19,6 +19,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 3 (printed p. 2 of the 2007 real-analysis paper). The card had cited neither the
+    examination nor a page; it now names both, and the statement was compared with the
+    printed item and left unchanged.
+
 ---
 
 ::: {.problem}
@@ -29,6 +38,9 @@ $$
 :::
 
 ::: {.solution}
+The item is Part II item 5 of the Real Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the limit of $\int_0^1(1+nx^2)/(1+x^2)^n\,dx$), on PDF p. 3 (printed p. 2 of the 2007 real-analysis paper) of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 
 Let $f_n(x) \coloneqq \frac{1+n x^2}{(1+x^2)^n}$ on $[0,1]$.
 
