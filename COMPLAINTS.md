@@ -254,6 +254,39 @@ One sentence of the removed `Repair` bullet — that both collections carry a `p
   another stream's tree or bypass the gate, and record the block here so the next lane does not mistake it
   for a defect in its own card.
 
+### 2026-11-19: the residue-6 lane holds no line of Queue D, and the queue is emptying without it
+
+- **Object and need:** the partition of `queues/D-prose-only-solutions.md` among sixteen parallel
+  chats by `int(CARD_ID.rsplit("-", 1)[1], 36) % 16 == K`, and the residue-6 lane in particular.
+
+- **Observed evidence:** the queue held 475 lines when this lane began and holds 178 now, so the other
+  lanes have converted close to three hundred cards in the same interval. Measured on the 178: the
+  residues present are 2 (40), 7 (6), 8 (14), 9 (41), 10 (25), 12 (16), 13 (33) and 15 (3), and
+  **residue 6 holds zero lines** — as it did at 475 and at the 526 and 503 measurements earlier today.
+  The lane's own residue is not short of cards (1009 residue-6 problem cards in the corpus) but every
+  one of them already carries a `.pf-step`, so none of them is a Queue D card; confirmed twice, by a
+  source scan and by the queue's own parser (`tools/qualc/prose.py`).
+
+- **Impact and owner:** the lane cannot take work from the queue it was given, so it has spent its turns
+  auditing its residue instead: seventeen units landed (`E-HE912`, `E-DWC4M`, `E-MPI86`, `E-EDUVQ`,
+  `E-H5NO6`, `E-PTY7A`, `E-XFMJA`, `E-HK-23-12`, `E-HK-32-12`, `P-APAS26E`, `P-AMD-F7UPRCWM`,
+  `P-S06G6`, the 87-card front-matter unit, the four-card indentation unit, the seven-card `Agree.`
+  removal, and two records in this file), and the last seven turns of reading found nothing to repair.
+  Every mechanical class this residue admits now measures clean: front matter shape, display-math
+  indentation, `\(`/`\qed` usage, theorem and lemma kinds, exercise-number existence, statement fidelity
+  to the printed text, `iff` preservation, hypothesis preservation, and false "no retained set" claims.
+
+- **Uncertainty:** the queue's own count is the authority and it moves; the 178 is this turn's measurement,
+  not a claim about the end state. Not established: whether the dispatcher intended residue 6 to be empty
+  (the `% 8` rule the briefs also mention would merge residues 6 and 14, both of which are empty here, so
+  that variant would not help either).
+
+- **Repair:** none attempted, because the choice of which cards a chat owns is the dispatcher's. The
+  narrow fix is to partition on the queue's sorted position rather than on a hash of the card id: with
+  178 lines and sixteen chats that is eleven lines each, and no lane is left without work. What this lane
+  has done meanwhile is the residue audit above; if the partition stands, the honest forecast is that its
+  turns will keep reporting verified-clean cards rather than repairs.
+
 ## Queue head passed over, not blocked
 
 - **Object and need:** `E-SS10.PR-6` ("Eight squares from an Eisenstein series"), the first card in
