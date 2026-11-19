@@ -35,6 +35,21 @@ audit:
     diagram are isomorphisms by the noncompact duality applied to the interior and to $\partial M$,
     and the five lemma then makes the middle map $D_M$ an isomorphism. The stored text broke off
     mid-sentence ("The middle map is ... are isomorphisms"), which is corrected.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked the five-lemma strategy: the collar
+    gives the compactly supported LES of the pair; cap product with fundamental classes gives the
+    vertical maps, natural by Exercise 34; excision through the collar identifies
+    $H_c^k(M,\partial M)$ with $H_c^k$ of the interior, and noncompact duality identifies that with
+    $H_{n-k}$ of the interior, which is $H_{n-k}(M)$; $\partial M$ being an $(n-1)$-manifold without
+    boundary gives the two adjacent isomorphisms; and the five-lemma then yields the middle one.
+    Added: the reason $H_{n-k}(M-\partial M)\cong H_{n-k}(M)$, namely the homotopy equivalence
+    supplied by the collar, which the earlier text used without saying, and the identification of
+    which one of the two $D_M$ columns is being proved. No defect found in the statement, §3.3
+    Exercise 35; the earlier repair of the broken sentence stands. No retained solution set covers
+    it.
 ---
 
 ::: {.problem}
@@ -50,45 +65,49 @@ $$
 :::
 
 ::: {.solution}
-Because $\partial M$ has a collar, compactly supported cohomology has the long exact sequence
-$$
-\cdots\to H_c^{k-1}(\partial M;R)
-\to H_c^k(M,\partial M;R)
-\to H_c^k(M;R)
-\to H_c^k(\partial M;R)\to\cdots.
-$$
-The homology long exact sequence of the pair is
-$$
-\cdots\to H_{n-k}(\partial M;R)
-\to H_{n-k}(M;R)
-\to H_{n-k}(M,\partial M;R)
-\to H_{n-k-1}(\partial M;R)\to\cdots.
-$$
-Cap product with the fundamental classes gives the vertical maps in Hatcher's diagram, and Exercise 34's cap-product/naturality argument shows the diagram commutes up to sign.
+No retained solution set covers this exercise, so the argument is the card's own; it is the five-lemma comparison of the two exact sequences in the printed diagram. Write $D$ for cap product with the appropriate fundamental class.
 
-Now $M-\partial M$ is an $R$-orientable noncompact manifold without boundary. By excision through the collar,
+::: pf
+
+::: {.pf-step #sequences}
+Because $\partial M$ has a collar, there is a long exact sequence
 $$
-H_c^k(M,\partial M;R)\cong H_c^k(M-\partial M;R),
+\cdots\to H_c^{k-1}(\partial M;R)\to H_c^k(M,\partial M;R)\to H_c^k(M;R)\to H_c^k(\partial M;R)\to\cdots,
 $$
-and the already-proved noncompact Poincaré duality theorem gives
-$$
-H_c^k(M,\partial M;R)\xrightarrow{\cong}H_{n-k}(M;R).
-$$
-Similarly, $\partial M$ is an $R$-orientable $(n-1)$-manifold without boundary, so
-$$
-H_c^{k-1}(\partial M;R)\xrightarrow{\cong}H_{n-k}(\partial M;R)
-$$
-and
-$$
-H_c^k(\partial M;R)\xrightarrow{\cong}H_{n-k-1}(\partial M;R).
-$$
-The same interior duality also gives $H_c^{k+1}(M,\partial M;R)\cong H_{n-k-1}(M;R)$. Thus, in the five-term segment displayed in the diagram, the four vertical maps other than the middle one are isomorphisms, the middle one being
-$$
-D_M:H_c^k(M;R)\longrightarrow H_{n-k}(M,\partial M;R).
-$$
-The five-lemma applied to this segment therefore makes $D_M$ an isomorphism as well. Hence
-$$
-\boxed{H_c^k(M;R)\cong H_{n-k}(M,\partial M;R)}
-$$
-for every $k$.
+and the pair $(M,\partial M)$ has the homology long exact sequence displayed as the bottom row of the diagram.
+
+::: pf-proof
+The collar $\partial M\times[0,1)$ lets one extend compactly supported cochains on $\partial M$ to $M$ and restrict those on $M$ to the complement of the collar, which gives the exact sequence of the pair for compactly supported cohomology; this is the standard compactly supported LES of a manifold with collared boundary. The bottom row is the ordinary LES of the pair in degree $n-k$.
+:::
+
+:::
+
+::: {.pf-step #commutes}
+Cap product with fundamental classes gives vertical maps making the diagram commute up to sign.
+
+::: pf-proof
+The vertical maps are cap products with the fundamental classes of $M$ and of $\partial M$, and naturality of the cap product with respect to inclusions and connecting homomorphisms is the computation of Exercise 34. The signs are the ones arising from the boundary orientation of $\partial M$.
+:::
+
+:::
+
+::: {.pf-step #four-iso}
+All vertical maps other than $D_M\colon H_c^k(M;R)\to H_{n-k}(M,\partial M;R)$ are isomorphisms.
+
+::: pf-proof
+$M-\partial M$ is an $R$-orientable noncompact $n$-manifold without boundary, and excision through the collar gives $H_c^k(M,\partial M;R)\cong H_c^k(M-\partial M;R)$; the noncompact Poincaré duality theorem then identifies this with $H_{n-k}(M-\partial M;R)\cong H_{n-k}(M;R)$, since $M-\partial M$ is homotopy equivalent to $M$. That is the vertical map in the column of $H_c^k(M,\partial M;R)$. For $\partial M$, which is an $R$-orientable $(n-1)$-manifold without boundary, the same theorem gives $H_c^{k-1}(\partial M)\cong H_{n-k}(\partial M)$ and $H_c^k(\partial M)\cong H_{n-k-1}(\partial M)$, the two remaining columns. The shift $H_c^{k+1}(M,\partial M)\cong H_{n-k-1}(M)$ is the same interior duality one degree up, and it is the fourth isomorphism needed.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{H_c^k(M;R)\cong H_{n-k}(M,\partial M;R)}$ for all $k$.
+
+::: pf-proof
+The five-lemma applied to the commutative diagram of steps [](#commutes){.pf-ref} and [](#four-iso){.pf-ref} — in which four of every five consecutive vertical maps are isomorphisms — makes the remaining one, $D_M\colon H_c^k(M;R)\to H_{n-k}(M,\partial M;R)$, an isomorphism. As $k$ was arbitrary, Poincaré duality holds in this form for every degree.
+:::
+
+:::
+
+:::
 :::
