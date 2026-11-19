@@ -40,6 +40,22 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 12 (p.205), whose extra paragraph restating Lemma 2.34's second proof matches Hatcher pp.137-139. The cohomological transcription rechecked step by step: good pair and Proposition 2.22 p.124 for the reduction to Y = X/X^n; vanishing of H^k(Y^m,Y^{m-1}) for k != m now derived from Theorem 3.5 p.203 applied to the wedge of m-spheres rather than cited vaguely, with the product (not sum) in degree m noted; the restriction maps injective by the sequence of the pair on p.200; steps for Z and T as in the book. Not covered: the book's own homology proof is not re-derived here, only its cohomological counterpart.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §3.1, printed p. 205, and against the second proof of
+    Lemma 2.34(c) on printed pp. 137--139 which the exercise transcribes, with Proposition 2.22
+    (printed p. 124), Theorem 3.5 (printed p. 203) and the sequence of a pair on printed p. 200.
+    Repaired one step. The vanishing of $\widetilde H^k(Z)$ was derived from a claimed isomorphism
+    $\widetilde H^k(Z)\cong H^k(Z,R)$ justified by $\widetilde H^k(R)=0$; that hypothesis gives only
+    that $\widetilde H^k(Z)$ is a quotient of $H^k(Z,R)$, not an isomorphism. The step now draws
+    the quotient conclusion, which is what the argument needs and what the vanishing of
+    $H^k(Z,R)\cong\widetilde H^k(Z/R)$ supplies. The rest checks out: the reduction to
+    $Y=X/X^n$, the finite-dimensional induction using $H^k(Y^m,Y^{m-1})=0$ for $0<k\ne m$ with the
+    product in degree $m$, and the two telescope steps, where the middle group of a sequence with
+    both neighbours zero is legitimately zero. Not claimed: the book's homology proof is not
+    re-derived, and no certificate.
 ---
 
 ::: {.problem}
@@ -95,8 +111,7 @@ $\widetilde H^k(Z)=0$ for $k\le n$.
 
 ::: pf-proof
 
-$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so the sequence of the pair (p.200) in the form $H^k(Z,R)\to\widetilde H^k(Z)\to\widetilde H^k(R)=0$ gives $\widetilde H^k(Z)\cong H^k(Z,R)$, and Proposition 2.22 (p.124) gives $H^k(Z,R)\cong\widetilde H^k(Z/R)$.
-The quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}.
+$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so in the sequence of the pair (p.200) the last term of $H^k(Z,R)\to\widetilde H^k(Z)\to\widetilde H^k(R)=0$ vanishes and $\widetilde H^k(Z)$ is a quotient of $H^k(Z,R)$. Proposition 2.22 (p.124) gives $H^k(Z,R)\cong\widetilde H^k(Z/R)$, and the quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}. Hence $\widetilde H^k(Z)=0$.
 
 :::
 
