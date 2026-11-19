@@ -120,11 +120,11 @@ As in step [](#upper-strip){.pf-ref}'s application, a $\mathcal{T}_1$-open set c
 $\mathcal{T}_1\subseteq\mathcal{T}_3$.
 
 ::: pf-proof
-By Exercise 16.9 the dictionary order topology on $\RR\times\RR$ is the product topology $\RR_d\times\RR$, with $\RR_d$ discrete; by Theorem 16.3 (printed p. 90) a subspace of a product has the product of the subspace topologies, so $\mathcal{T}_3$ is the topology of $\RR_d\restrictionof_I\times\RR\restrictionof_I$, where $\RR_d\restrictionof_I$ is discrete and $\RR\restrictionof_I$ is the usual topology of $I$. A $\mathcal{T}_1$-basis element is $A\times B$ with $A,B$ open in $I$, and
+By Exercise 16.9 the dictionary order topology on $\RR\times\RR$ is the product topology $\RR_d\times\RR$, with $\RR_d$ discrete; by Theorem 16.3 (printed p. 90) a subspace of a product has the product of the subspace topologies, so $\mathcal{T}_3$ is the topology of $\restrictionof{\RR_d}{I}\times\restrictionof{\RR}{I}$, where $\restrictionof{\RR_d}{I}$ is discrete and $\restrictionof{\RR}{I}$ is the usual topology of $I$. A $\mathcal{T}_1$-basis element is $A\times B$ with $A,B$ open in $I$, and
 $$
 A\times B=\bigcup_{x\in A}\{x\}\times B
 $$
-is a union of basis elements $\{x\}\times B$ of $\mathcal{T}_3$, since $\{x\}$ is open in the discrete space $\RR_d\restrictionof_I$ and $B$ is open in $I$. So every basis element of $\mathcal{T}_1$ lies in $\mathcal{T}_3$.
+is a union of basis elements $\{x\}\times B$ of $\mathcal{T}_3$, since $\{x\}$ is open in the discrete space $\restrictionof{\RR_d}{I}$ and $B$ is open in $I$. So every basis element of $\mathcal{T}_1$ lies in $\mathcal{T}_3$.
 :::
 
 :::
