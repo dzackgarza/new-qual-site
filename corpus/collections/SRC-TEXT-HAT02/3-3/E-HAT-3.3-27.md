@@ -13,6 +13,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate at this date's tree and made here so
+    that the gate is usable again; no mathematics changes. A scripted rewrite split words and control
+    words: `isomor\varphism` for "isomorphism" twice, and the image of the symplectic form written
+    `\var\varphi` for `\varphi` three times. The count repaired is 5. Every step and every claim of
+    the argument stands as it stood; only those tokens change. Checked: `qualc.authoring check` on the
+    card, and neither `varphism` nor `\var\varphi` now occurs in it. Not checked: no source and no
+    step of the argument was re-read in this pass, the repair being spelling.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -99,7 +110,7 @@ Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular
 $$
 B:L\times L\to\\ZZ.
 $$
-Nonsingularity over $\\ZZ$ means the adjoint map $L\to L^*$ is an isomor\varphism.
+Nonsingularity over $\\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
 A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, chapitre IX, §5, no. 1, théorème 1, printed pp. 79--80** (`tmp/sources/bourbaki-algebra-ch9-1959.pdf`). Its induction on rank uses the largest invariant factor of the image of the adjoint, splits off a two-dimensional orthogonal summand, and repeats on its orthogonal complement. For $A=\\ZZ$ it gives $B(e_{2i-1},e_{2i})=\alpha_i$ with all other pairings zero. Nonsingularity makes the adjoint surjective, so the largest invariant factor at each stage is all of $\\ZZ$; hence every $\alpha_i$ is $\pm1$, and changing the sign of every second basis vector where necessary gives the required blocks. **D. G. James, *Witt's Theorem for Symplectic Modular Forms*, p. 410** (`tmp/sources/james-witt-symplectic-modular-forms-1967.pdf`) states this integral decomposition and cites Bourbaki, but does not reproduce its induction. The following is the same splitting argument specialized to the unimodular integral case, with the primitive-functional step made explicit.
 
@@ -109,7 +120,7 @@ A complete published proof in greater generality is **N. Bourbaki, *Algèbre*, c
 Every primitive $e\in L$ has a partner $f\in L$ with $B(e,f)=1$.
 
 ::: pf-proof
-Let $B^\flat:L\to L^*$ be the adjoint isomor\varphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and an integer $\abs{m}>1$, then applying $(B^\flat)^{-1}$ shows that $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. The cases $m=0$ and $m=\pm1$ are harmless. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
+Let $B^\flat:L\to L^*$ be the adjoint isomorphism. If $B^\flat(e)=m\lambda$ for some $\lambda\in L^*$ and an integer $\abs{m}>1$, then applying $(B^\flat)^{-1}$ shows that $e$ is $m$ times an element of $L$, contradicting primitivity of $e$. The cases $m=0$ and $m=\pm1$ are harmless. Thus $B^\flat(e)$ is primitive in $L^*$. A primitive functional is not an integer multiple of another functional with larger content, so its values include $1$: some $f\in L$ has $B(e,f)=1$.
 :::
 
 :::
@@ -142,7 +153,7 @@ Thus $x'\in P^\perp$, and the first two terms in the formula for $x$ give the co
 The restriction of $B$ to $P^\perp$ is integral, skew-symmetric, and nonsingular.
 
 ::: pf-proof
-It is integral and skew-symmetric by restriction. Given $\var\varphi\in(P^\perp)^*$, extend it by zero on $P$. Nonsingularity of $B$ on $L$ gives $y\in L$ with $B(y,x)=\var\varphi(x)$ for every $x\in P^\perp$. Writing $y=p+z$ with $p\in P$ and $z\in P^\perp$ from step [](#orthogonal-splitting){.pf-ref} shows that $B(z,x)=\var\varphi(x)$ for all $x\in P^\perp$, so the restriction's adjoint is surjective. It is injective since $z\in P^\perp\cap(P^\perp)^\perp$ forces $z=0$ using the same decomposition for the zero functional.
+It is integral and skew-symmetric by restriction. Given $\varphi\in(P^\perp)^*$, extend it by zero on $P$. Nonsingularity of $B$ on $L$ gives $y\in L$ with $B(y,x)=\varphi(x)$ for every $x\in P^\perp$. Writing $y=p+z$ with $p\in P$ and $z\in P^\perp$ from step [](#orthogonal-splitting){.pf-ref} shows that $B(z,x)=\varphi(x)$ for all $x\in P^\perp$, so the restriction's adjoint is surjective. It is injective since $z\in P^\perp\cap(P^\perp)^\perp$ forces $z=0$ using the same decomposition for the zero functional.
 :::
 
 :::
