@@ -182,6 +182,47 @@ audit:
     displayed computations in Lemma 14 and Theorem 14 are free of error, and
     whether part (a) holds in rank above two, which is a question about the
     exercise and not about the sources read.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Repaired the card on 2026-11-19 for issue #159. Re-read the printed exercise
+    at Hartshorne, Algebraic Geometry (1977), V.2, exercise 2.8, printed p. 384
+    (PDF p. 399): its (c) reads "classified, up to isomorphism, by giving (1) an
+    integer 0 < e <= 2g-2, (2) an element L in Pic C of degree -e, and (3) a
+    nonzero xi in H^1(L^dual) determined up to a nonzero scalar multiple", and
+    the printed "up to isomorphism" is false, since tensoring by an invertible
+    sheaf of nonzero degree preserves indecomposability and non-semistability
+    and leaves the triple (e, L, xi) fixed while changing the determinant. Under
+    QUAL-01 the statement now reads "up to tensoring with an invertible sheaf",
+    which is what steps s9 to s13 prove, and it records the field: "for C a
+    curve over C", Gunning's Theorem 14 being a statement about a compact
+    Riemann surface. Part (a) is now proved in every rank, where the event above
+    of 2026-11-16 says it was not and no source read proves it; that event is
+    left as written and this one supersedes it. The proof is Yang Pi-Yeh,
+    Hartshorne Solutions, Solution 5.2.8(a), printed pp. 103-104, read on the
+    retained PDF: the solution displays the weighted mean
+    mu(E) = (r'/(r'+r''))mu(E') + (r''/(r'+r''))mu(E'') at its head on printed
+    p. 104 and argues "If E = F (+) G is stable, we may assume mu(F) <= mu(G).
+    Then consider the morphism E -> F -> 0, we have mu(E) < mu(F). Since
+    mu(F) <= mu(E) <= mu(G), we have mu(E) < mu(F) <= mu(E), which is
+    impossible". The two summand quotient sequences are also in Algebraic
+    Geometry II, National Taiwan University, 2020 Spring, Chapter V Surfaces
+    homework, Exercise 8 of section 2 (Tzu-Yang Chou), PDF p. 8 of
+    tmp/sources/ntu-ag2-chapter5.pdf, which concludes that "looking at the
+    slopes we see that E can not be stable". Read for the rank-two statements:
+    Gunning, printed p. 82 for the decomposable clause of Lemma 14 with its
+    hypothesis, a direct sum phi_1 (+) ... (+) phi_m of line bundles, which the
+    card now states with (13) as its proof; printed p. 85 for "every
+    decomposable bundle is unstable"; printed pp. 83-85 for Lemma 15; and
+    printed pp. 87-90 for Theorem 14. The pages were checked on rendered pages
+    of tmp/sources/gunning-1967-vector-bundles-riemann-surfaces.pdf at 150 dpi,
+    printed page = PDF page - 9, the folio "-85-" on PDF p. 94 confirming the
+    offset there; the text version
+    tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md has no
+    page markers and its OCR garbles the displays. Not checked: whether part (c)
+    holds in positive characteristic, which nothing read here states and which
+    the statement does not claim.
 ---
 
 ::: {.problem}
@@ -199,7 +240,7 @@ Replacing $>$ by $\geqslant$ defines **semistable**.
 
 (b) If $\mathcal{E}$ has rank 2 and is normalized, then $\mathcal{E}$ is stable (respectively, semistable) if and only if $\deg \mathcal{E}>0$ (respectively, $\geqslant 0$).
 
-(c) Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to isomorphism, by giving
+(c) For $C$ a curve over $\CC$, show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
 
    (1) an integer $0<e \leqslant 2 g-2$,
 
@@ -215,13 +256,13 @@ $$
 \mu(\mathcal F)=\frac{\deg\mathcal F}{\rank\mathcal F}.
 $$
 
-Read as printed, the clause "up to isomorphism" in part (c) cannot hold, and what steps [](#s9){.pf-ref} to [](#s13){.pf-ref} classify is the same data up to tensoring by an invertible sheaf. Let $\mathcal E_0$ be normalized, not semistable, with data $(e,\mathcal L,\xi)$, and let $\mathcal A$ be a line bundle of degree $m\ne0$. Tensoring by $\mathcal A$ shifts every slope by $m$, so the maximal-degree line subbundle of $\mathcal E_0\tensor\mathcal A$ is $\OO_C\tensor\mathcal A$, and the invariant data read off from it are
+The data of part (c) are the data of the normalized model of a bundle, and tensoring by an invertible sheaf moves the bundle without moving them. Let $\mathcal E_0$ be normalized, not semistable, with data $(e,\mathcal L,\xi)$, and let $\mathcal A$ be a line bundle of degree $m\ne0$. Tensoring by $\mathcal A$ shifts every slope by $m$, so the maximal-degree line subbundle of $\mathcal E_0\tensor\mathcal A$ is $\OO_C\tensor\mathcal A$, and the data read off from it are
 $$
 \det(\mathcal E_0\tensor\mathcal A)\tensor(\OO_C\tensor\mathcal A)^{-2}
 \cong\det\mathcal E_0,\qquad
 (\mathcal E_0\tensor\mathcal A)\tensor(\OO_C\tensor\mathcal A)^{-1}\cong\mathcal E_0,
 $$
-so $e$, $\mathcal L$ and $\xi$ are unchanged, while $\deg(\mathcal E_0\tensor\mathcal A)=2m-e\ne-e=\deg\mathcal E_0$. Thus two non-isomorphic bundles carry the same triple, and the classification is up to tensor equivalence.
+so $e$, $\mathcal L$ and $\xi$ are unchanged, while $\deg(\mathcal E_0\tensor\mathcal A)=2m-e\ne-e=\deg\mathcal E_0$ and the two bundles have different determinants, hence are not isomorphic. Part (c) therefore classifies these bundles up to tensoring with an invertible sheaf, which is the form step [](#s13){.pf-ref} proves.
 
 ::: pf
 
@@ -244,14 +285,16 @@ has $\rank\mathcal A=\rank\mathcal F=1$ and $\deg\mathcal F=\deg\mathcal E-\deg\
 :::
 
 ::: {.pf-step #s2}
-A decomposable rank-two bundle is never stable. This is part (a) in rank two.
+A decomposable bundle is never stable, in any rank. This is part (a).
 
 ::: pf-proof
-Write $\mathcal E=\mathcal A\oplus\mathcal B$ with $\mathcal A,\mathcal B$ invertible and, after interchanging them, $\deg\mathcal A\ge\deg\mathcal B$. Then
+Write $\mathcal E\cong\mathcal F\oplus\mathcal G$ with $\mathcal F,\mathcal G$ locally free of ranks $r_{\mathcal F},r_{\mathcal G}\ge1$, and interchange the summands if necessary so that $\mu(\mathcal F)\le\mu(\mathcal G)$. The projection $\mathcal E\twoheadrightarrow\mathcal F$ with kernel $\mathcal G$ is a nonzero locally free quotient of $\mathcal E$ other than $\mathcal E$, so it is one of the quotients the definition of stability tests. Since $\deg\mathcal E=\deg\mathcal F+\deg\mathcal G$ and $\rank\mathcal E=r_{\mathcal F}+r_{\mathcal G}$,
 $$
-\deg\mathcal A\ge\frac{\deg\mathcal A+\deg\mathcal B}{2}=\frac12\deg\mathcal E,
+\mu(\mathcal E)=\frac{r_{\mathcal F}}{r_{\mathcal F}+r_{\mathcal G}}\mu(\mathcal F)+\frac{r_{\mathcal G}}{r_{\mathcal F}+r_{\mathcal G}}\mu(\mathcal G),
 $$
-so the line subbundle $\mathcal A$ fails the strict inequality that step [](#s1){.pf-ref} tests, and $\mathcal E$ is not stable. This argument is the card's own, and it is the rank-two case of Gunning's Lemma 14, printed pp. 81--82, read through his §(c): for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$ the determinant has $c(\det\Phi)=c(\varphi_1)+\cdots+c(\varphi_m)$, so some $j$ has $c(\varphi_j)\ge\frac1mc(\det\Phi)$ and $\operatorname{div}\Phi=\max_jc(\varphi_j)\ge\frac1mc(\det\Phi)$, which is the instability of his rank-two definition on printed p. 83. The exercise states stability with locally free quotients rather than with line subbundles, and step [](#s1){.pf-ref} is the passage between the two in rank two.
+a mean of $\mu(\mathcal F)$ and $\mu(\mathcal G)$ with positive weights, so $\mu(\mathcal F)\le\mu(\mathcal E)$; stability would require $\mu(\mathcal F)>\mu(\mathcal E)$, and $\mathcal E$ is therefore not stable. A decomposition into more than two summands is regrouped as a decomposition into two.
+
+This is Solution 5.2.8(a) of Yang Pi-Yeh, *Hartshorne Solutions*, printed pp. 103--104, which displays the weighted mean at the head of the solution and reads the contradiction off the quotient $\mathcal E\twoheadrightarrow\mathcal F$; the same two quotient sequences, with kernels $\mathcal F$ and $\mathcal G$, are used in Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework, Exercise 8 of §2 (Tzu-Yang Chou), PDF p. 8, which concludes that "looking at the slopes we see that $\mathcal E$ can not be stable". In rank two the summands are line bundles, step [](#s1){.pf-ref} turns the quotient inequality of the exercise into the line-subbundle one, and Gunning records the conclusion for that case on printed p. 85, where Lemma 14 gives $\operatorname{div}\mathcal E\ge\frac12c(\xi)$ for a decomposable $\mathcal E$ and hence that "every decomposable bundle is unstable". The decomposable case of Lemma 14 itself, printed pp. 81--82, is stated for a direct sum $\varphi_1\oplus\cdots\oplus\varphi_m$ of line bundles, and its proof runs through (13), $\operatorname{div}(\varphi_1\oplus\cdots\oplus\varphi_m)=\max_jc(\varphi_j)$, so it does not reach a decomposable bundle of rank three or more; the mean of slopes does.
 
 :::
 
@@ -402,7 +445,7 @@ Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degre
 :::
 
 ::: pf-qed
-Step [](#s2){.pf-ref} proves part (a) for a decomposable bundle of rank two, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove the corrected classification in part (c), for a curve over $\CC$, Gunning's Theorem 14 being stated for a compact Riemann surface.
+Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove part (c) for a curve over $\CC$, a compact Riemann surface, where the parametrization and the injectivity of the classification are Gunning's Theorem 14.
 
 :::
 
@@ -411,10 +454,10 @@ Step [](#s2){.pf-ref} proves part (a) for a decomposable bundle of rank two, ste
 :::
 
 ::: {.remark title="Published solution"}
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, which with his rank-two stability definition is part (a) in rank two, and $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$ in general; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s1){.pf-ref} to [](#s13){.pf-ref} follow that route, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so part (c) is established there over $\CC$; the rank-two argument of step [](#s12){.pf-ref} supplies the indecomposability of the constructed bundle directly, while the parametrization and the injectivity of the classification are his Theorem 14.
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) and (b) by the slope inequalities, the same route as steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause, with no tensor twist considered, so it carries the defect recorded at the head of this solution rather than repairing it.
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and on printed p. 85 he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s13){.pf-ref} follow that route, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, which is the case of part (c) that the statement records; the rank-two argument of step [](#s12){.pf-ref} supplies the indecomposability of the constructed bundle directly, while the parametrization and the injectivity of the classification are his Theorem 14.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) in every rank from the weighted mean of the two slopes, which is step [](#s2){.pf-ref}, and (b) by the rearrangements of steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause; its argument assumes the bundle has $\OO_C$ as a subbundle with $\deg\mathcal L<0$, that is, takes the bundle to be the normalized model, so the twist that changes the bundle and leaves the data fixed is not accounted for there.
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), printed p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
+Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), PDF p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.8, PDF pp. 265--266. Part (a) he proves through "$\mathcal E$ stable $\Rightarrow$ every nonzero morphism $\mathcal E\to\mathcal E$ is an isomorphism", which fails for the endomorphism $\id\oplus0$ of a decomposable bundle. Part (b) he proves in both directions: a (semi)stable bundle of (negative) non-positive degree has no sections, so normalized forces degree $\ge0$, and conversely a line subbundle of degree $>\frac12\deg\mathcal E$ would give a section of $\mathcal E\tensor\mathcal F^\vee$ of negative degree. Part (c) he derives from a Harder--Narasimhan filtration, citing Potier for its uniqueness, concludes "Since the filtration was unique we have this up to isomorphism", and does not address the tensor twist: his $\mathcal L$ is the quotient $\mathcal E/F_1$ rather than the normalized determinant, and the subbundle $F_1$ is not among the data, so his last inference does not follow.
 
