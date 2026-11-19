@@ -61,8 +61,11 @@ audit:
     multiplication by p is both surjective and injective, the identification of A_n with A_n tensor Q
     over a Q-vector space, and the final Ext-Hom sequence whose outer terms vanish. Checked the one
     implication the prose compresses: that A_n tensor Z_p = A_n / pA_n and Tor(A_n, Z_p) = A_n[p] are
-    the two facts that make divisibility and torsionfreeness come out. Not checked: Hatcher's page
-    numbers, which are the card's citations and were not re-read in this pass.
+    the two facts that make divisibility and torsionfreeness come out. The page numbers were then checked
+    against the retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF
+    page - 9: Theorem 3A.3 on p. 264 (PDF 273), Proposition 3A.5 on p. 265 (PDF 274) and Corollary
+    3A.6 on p. 266 (PDF 275), each as cited. What is still not checked: the universal coefficient
+    theorem's own page, 197, which the search did not locate by its heading.
 ---
 
 ::: {.problem}

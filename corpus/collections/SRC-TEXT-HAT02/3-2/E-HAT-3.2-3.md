@@ -50,8 +50,11 @@ audit:
     argued in a clause: a path in S^n from x to -x maps to a path between antipodal points of S^{n-1},
     so its projection is the nontrivial class in pi_1(RP^{n-1}) = Z_2, and H^1(-;Z_2) is Hom(pi_1, Z_2)
     on a space with pi_1 = Z_2. Checked the cup-product contradictions in both (a) parts, including
-    that beta_n^{m+1} spans a torsion-free group because m+1 <= n. Not checked: Hatcher's page numbers,
-    which are the card's citations and were not re-read in this pass.
+    that beta_n^{m+1} spans a torsion-free group because m+1 <= n. The page numbers were then
+    checked: the retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf was searched page by
+    page and each cited statement located, with printed page = PDF page - 9; Theorem 3.19 is printed
+    on p. 220 (PDF 229), Proposition 3.10 on p. 210 (PDF 219) and Example 3.12 on p. 213 (PDF 222),
+    all as the card cites them.
 ---
 
 ::: {.problem}
