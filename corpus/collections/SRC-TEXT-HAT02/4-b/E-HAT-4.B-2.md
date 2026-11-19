@@ -30,6 +30,20 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.B, printed p. 427, with Corollary 4.9 (p. 349),
+    Corollary 4.25 (p. 361), the homotopy sequence of a bundle (p. 376), Theorem 3.30 (p. 241)
+    and Corollary 3.39 (p. 250). Correct. Dimensions give $m=n+k$; for $n>1$ the fibre is not
+    $S^0$, and $\pi_n(S^m)=0\to\pi_n(S^n)=\ZZ\to\pi_{n-1}(S^k)$ forces $k\le n-1$, while
+    $k<n-1$ would give the exact segment $0=\pi_{k+1}(S^n)\to\pi_k(S^k)=\ZZ\to\pi_k(S^m)=0$; so
+    $k=n-1$ and $m=2n-1$, with the exceptional $S^0\to S^1\to S^1$ at $n=1$ treated by its own
+    exact segment. The mapping cone $C_p$ is a closed orientable $2n$-manifold, its $H^n$ and
+    $H^{2n}$ are $\ZZ$, and Poincare duality in the form of Corollary 3.39 makes the cup product
+    pairing nonsingular, so $\alpha^2=H(p)\gamma$ with $\gamma$ a generator forces $H(p)=\pm1$.
+    Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
