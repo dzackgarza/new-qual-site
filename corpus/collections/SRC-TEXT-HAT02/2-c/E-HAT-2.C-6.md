@@ -271,6 +271,31 @@ audit:
     computed on the card and marked there as the card's own, and the remark says that no single
     source states the exercise. Checked: the three Dugger places and that the trace computation is
     the card's. Not claimed: that Dugger works Hatcher's exercise.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the Lefschetz computation.
+    No defect found. Checked: the model — a sphere with $m$ antipodal pairs of holes and a punctured
+    torus glued to each of the $2m$ boundary circles — has $\chi=(2-2m)-2m=2-4m=2-2g$ at $g=2m$, so
+    it is the closed orientable surface of genus $2m$; $f$ is well defined at the interface because
+    the partner of the handle at $H_i$ is attached by the chart $\restrictionof{\alpha\circ h_i}{\partial T}$,
+    so $f(h_i(y))=h_{i'}(y)=\alpha(h_i(y))$ for $y\in\partial T$; $f\circ f=\mathrm{id}$; and no
+    point is fixed, the central sphere being mapped antipodally and every handle into its partner.
+    The trace on $H_1$: by Mayer--Vietoris over $M=A\cup B$ with $B$ the $2m$ punctured tori, the
+    boundary circle of a punctured torus is a commutator and so vanishes in $H_1(T)$, and the $2m$
+    boundary circles generate $H_1(A)$ with the single relation that their sum is zero, so
+    $H_1(M)\cong\bigoplus_{i=1}^{2m}H_1(T_i)$, of rank $4m=2g$; $f_*$ permutes the summands in $m$
+    transpositions, giving a matrix with zero diagonal. The trace on $H_2$: at a point of the central
+    sphere away from the attaching regions $f$ agrees with the antipodal map, of local degree $-1$,
+    and $f^{-1}(f(p))=\{p\}$, so the degree of $f$ is $-1$ and $f_*$ is multiplication by $-1$; the
+    nonorientability of the quotient $N_{2m+1}$ is the independent confirmation. Hence
+    $\tau(f)=1-0-1=0$, as a fixed-point-free map on an orientable surface requires, which is also the
+    check on the two traces. Checked in the remark: Example 2C.4's signed contributions, $1$ on
+    $H_0$, $-2$ on $H_1$ (trace $2$: $\alpha_1\leftrightarrow\alpha_3$ and
+    $\beta_1\leftrightarrow\beta_3$ contribute zero, $\alpha_2$ and $\beta_2$ contribute one each)
+    and $+1$ on $H_2$, so $\tau=1-2+1=0$ there, which is the genus-3 case and not this one. Not
+    claimed: a published solution of Exercise 2.C.6.
 ---
 
 ::: {.problem}
