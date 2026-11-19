@@ -5,28 +5,80 @@ title: "Algebra qual prep week 4: rings"
 
 # Algebra qual prep week 4: rings
 
-## Topics
+The ring material of one session, in the order the questions are asked: what an ideal is and what it does to the quotient, how the classes of domains sit inside one another, and which of the properties are decided by a valuation, a chain condition, or a localization.
 
-- Ring homomorphisms, ideals, quotients, zero divisors, the isomorphism theorems, the Chinese remainder theorem
+## Ideals and quotients
 
-- Irreducible and prime elements, nilpotent elements, units
+[[D-GOFWL]]
 
-- Radicals, the nilradical, $\Spec R$ and $\mspec R$
+[[D-5BM46]]
 
-- Classes of rings: Euclidean domains $\implies$ PIDs $\implies$ UFDs $\implies$ integral domains; Dedekind domains; Noetherian and Artinian rings
+[[D-7XH2R]]
 
-- Existence arguments using Zorn's lemma
+[[PR-76BDN]]
 
-- Localization
+[[PR-Z3YWJ]]
 
-[[P-AMH-ALG-SG16-17]]
+[[PR-GGCEU]]
 
-[[P-AMH-ALG-SG16-19]]
+[[PR-LJE4C]]
 
-[[P-AMH-ALG-SG16-21]]
+## Elements and factorization
 
-[[P-AMH-ALG-SG16-22]]
+[[D-4I3SL]]
 
-[[P-3PTP5]]
+[[D-QQIQZ]]
 
-[[P-AMH-ALG-SG16-28]]
+[[D-TO3IY]]
+
+[[D-AWSKI]]
+
+[[PR-LX7GH]]
+
+[[D-GIGM2]]
+
+## Radicals and the two spectra
+
+[[D-JLCOX]]
+
+[[D-C2IM4]]
+
+[[P-C2WAH]]
+
+[[D-CXXCG]]
+
+[[D-NX4KW]]
+
+[[P-R9XZL]]
+
+## Classes of rings
+
+The classes of domains are totally ordered by inclusion, each inclusion is strict, and outside the chain sit the Dedekind, Noetherian and Artinian rings.
+
+[[PR-LLBRB]]
+
+[[PR-GEHJF]]
+
+[[D-WUGPG]]
+
+[[D-TZXBO]]
+
+[[T-YYLPH]]
+
+## Existence by Zorn's lemma
+
+[[PR-UTFSY]]
+
+[[P-2E7UB]]
+
+## Localization
+
+[[D-OXIVT]]
+
+[[D-TGB4R]]
+
+## Problems
+
+[[P-AMH-ALG-SG16-17]] [[P-AMH-ALG-SG16-19]] [[P-AMH-ALG-SG16-21]]
+
+[[P-AMH-ALG-SG16-22]] [[P-3PTP5]] [[P-AMH-ALG-SG16-28]]
