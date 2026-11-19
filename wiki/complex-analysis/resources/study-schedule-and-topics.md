@@ -9,7 +9,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 ## Preliminaries
 
-- $\CC$, $\DD$, $\HH$, $\CP^1$
+- $\CC$, $\DD$, $\HH$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere $\CP^1$]] and [[complex-analysis/basics/complex-arithmetic|complex arithmetic]]
 - [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]]
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
@@ -67,13 +67,13 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 - [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
 - [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel's theorem]]
-- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]] and uniformization
+- [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 
 ## Further topics
 
-- $\operatorname{SL}_2(\RR)$, modular forms, and elliptic curves
-- The hyperbolic metric
-- Riemann surfaces
+- [[complex-analysis/conformal-maps/sl2-and-modular-forms|$\SL_2(\RR)$, modular forms, and elliptic curves]]
+- [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]]
+- [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 - [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
 - [[complex-analysis/appendices/special-functions#Infinite series and products|Canonical products]]
 - [[complex-analysis/appendices/pdes|The Dirichlet problem]]
