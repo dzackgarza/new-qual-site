@@ -14,6 +14,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise 1.3.8 of Hoffman and Kunze, Linear Algebra, in the
+    retained PDF assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf, PDF
+    p. 19 (the Section 1.3 exercises, item 8): the three parts agree, including
+    the field F as base and the "if and only if there is a scalar y" of (c).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three arguments are correct, and no hypothesis is missing. (a) is
+    immediate. (b) is det A = ad - bc not zero, so A is invertible and the only
+    solution is A^{-1} times 0. (c) is the observation that a nonzero singular
+    2 x 2 matrix has rank 1, rank-nullity then gives a one-dimensional kernel,
+    a nonzero solution exists, and every solution is a scalar multiple of it;
+    the "if and only if" is the two inclusions of a one-dimensional subspace.
+    Nothing uses any property of F beyond being a field. The card proves the
+    steps in one line each, which is terse but correct; no change was made.
 ---
 
 ::: {.exercise}
