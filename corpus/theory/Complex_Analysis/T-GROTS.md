@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{D_R(z_0)}\subseteq\Omega$.
-Then for every $z\in D_R(z_0)$ the series below converges and
+Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{\DD_R(z_0)}\subseteq\Omega$.
+Then for every $z\in \DD_R(z_0)$ the series below converges and
 $$
 f(z)=\sum_{n=0}^{\infty}a_n(z-z_0)^n,
 $$

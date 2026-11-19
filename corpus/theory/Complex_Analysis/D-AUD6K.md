@@ -18,8 +18,8 @@ review: draft
 ---
 
 ::: {.definition}
-Let $z_0\in\CC$, let $r>0$, and let $f$ be [[D-E7A5W|holomorphic]] on the punctured disc $D_r(z_0)\setminus\{z_0\}$.
-For an integer $n\ge1$, $f$ has a \dfn{pole of order $n$} at $z_0$ if there exist $0<\rho\le r$ and a holomorphic function $h\colon D_\rho(z_0)\to\CC$ with $h(z_0)\neq0$ such that
+Let $z_0\in\CC$, let $r>0$, and let $f$ be [[D-E7A5W|holomorphic]] on the punctured disc $\DD_r(z_0)\setminus\{z_0\}$.
+For an integer $n\ge1$, $f$ has a \dfn{pole of order $n$} at $z_0$ if there exist $0<\rho\le r$ and a holomorphic function $h\colon \DD_\rho(z_0)\to\CC$ with $h(z_0)\neq0$ such that
 $$
 f(z)=(z-z_0)^{-n}h(z)\qquad\text{for } 0<\abs{z-z_0}<\rho.
 $$
@@ -27,14 +27,14 @@ $f$ has a \dfn{pole} at $z_0$ if it has a pole of some order $n\ge1$ there, and 
 :::
 
 ::: {.proposition}
-Let $f$ be holomorphic on $D_r(z_0)\setminus\{z_0\}$ and let $n\ge1$.
+Let $f$ be holomorphic on $\DD_r(z_0)\setminus\{z_0\}$ and let $n\ge1$.
 The following are equivalent.
 
 (a) $f$ has a pole of order $n$ at $z_0$.
 
-(b) There is $0<\rho\le r$ such that $f$ has no zeros in $D_\rho(z_0)\setminus\{z_0\}$ and $g\coloneqq1/f$, extended by $g(z_0)\coloneqq0$, is holomorphic on $D_\rho(z_0)$ with a [[D-65VIK|zero of order $n$]] at $z_0$.
+(b) There is $0<\rho\le r$ such that $f$ has no zeros in $\DD_\rho(z_0)\setminus\{z_0\}$ and $g\coloneqq1/f$, extended by $g(z_0)\coloneqq0$, is holomorphic on $\DD_\rho(z_0)$ with a [[D-65VIK|zero of order $n$]] at $z_0$.
 
-(c) The Laurent expansion of $f$ on $D_r(z_0)\setminus\{z_0\}$ has the form $f(z)=\sum_{k\ge-n}c_k(z-z_0)^k$ with $c_{-n}\neq0$.
+(c) The Laurent expansion of $f$ on $\DD_r(z_0)\setminus\{z_0\}$ has the form $f(z)=\sum_{k\ge-n}c_k(z-z_0)^k$ with $c_{-n}\neq0$.
 
 Moreover, $f$ has a pole at $z_0$ if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
 :::
