@@ -60,6 +60,14 @@ audit:
     for the components C of X, so the double cover of M has two components. The empty-factor case
     the prose mentions is now a step, since M x N = empty is vacuously orientable. Statement
     unchanged; no retained solution set covers this exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. The
+    sentence naming the book's own treatment wrote `\S3.3`, a section sign written as a TeX
+    command outside a math span, which the HTML writer drops; it now reads the character
+    `§3.3`. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -85,7 +93,7 @@ If $M=\emptyset$ then $M\times N=\emptyset$; the empty manifold has a unique (em
 For $x\in M$ and $y\in N$ there is a natural isomorphism $H_{m+n}(M\times N,M\times N-\{(x,y)\};\ZZ)\cong H_m(M,M-\{x\};\ZZ)\otimes H_n(N,N-\{y\};\ZZ)$.
 
 ::: pf-proof
-Choose coordinate balls $U\ni x$ and $V\ni y$ with $U$ homeomorphic to $\RR^m$ and $V$ to $\RR^n$, so that $U\times V$ is a neighbourhood of $(x,y)$ homeomorphic to $\RR^{m+n}$. By excision, the inclusions of pairs induce isomorphisms $H_*(U\times V,U\times V-\{(x,y)\})\cong H_*(M\times N,M\times N-\{(x,y)\})$ and $H_*(U,U-\{x\})\cong H_*(M,M-\{x\})$, $H_*(V,V-\{y\})\cong H_*(N,N-\{y\})$. The Künneth formula applied to the product pair $(U\times V,U\times V-\{(x,y)\})$ gives the tensor decomposition in degree $m+n$, the only degree in which both factors are nonzero, and the same decomposition is natural for inclusions of coordinate balls; this is the pairing $\mu_x\otimes\nu_y\mapsto\mu_x\times\nu_y$ used in Hatcher, \S3.3.
+Choose coordinate balls $U\ni x$ and $V\ni y$ with $U$ homeomorphic to $\RR^m$ and $V$ to $\RR^n$, so that $U\times V$ is a neighbourhood of $(x,y)$ homeomorphic to $\RR^{m+n}$. By excision, the inclusions of pairs induce isomorphisms $H_*(U\times V,U\times V-\{(x,y)\})\cong H_*(M\times N,M\times N-\{(x,y)\})$ and $H_*(U,U-\{x\})\cong H_*(M,M-\{x\})$, $H_*(V,V-\{y\})\cong H_*(N,N-\{y\})$. The Künneth formula applied to the product pair $(U\times V,U\times V-\{(x,y)\})$ gives the tensor decomposition in degree $m+n$, the only degree in which both factors are nonzero, and the same decomposition is natural for inclusions of coordinate balls; this is the pairing $\mu_x\otimes\nu_y\mapsto\mu_x\times\nu_y$ used in Hatcher, §3.3.
 :::
 
 :::
