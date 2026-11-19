@@ -37,7 +37,7 @@ The sequence is a chain complex when $\im d_{n+1}\subseteq\ker d_n$ for all $n$.
 A chain complex is exact at $A_n$ if and only if its homology $\ker d_n/\im d_{n+1}$ at $A_n$ is zero.
 :::
 
-::: {.example}
+::: {.remark title="What short exactness unpacks to"}
 A sequence of $R$-module maps
 $$
 0 \mapsvia{d_1} A \mapsvia{d_2} B \mapsvia{d_3} C \mapsvia{d_4} 0
