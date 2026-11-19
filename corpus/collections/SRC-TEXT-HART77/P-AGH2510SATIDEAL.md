@@ -44,6 +44,7 @@ For $r\ge1$, this ideal is $\Gamma_*(\mci_Y)$; the nonnegative truncation also c
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.10, printed p. 41 of the held scan, transcribed and checked against the exercise as printed, part by part.
 For $0\le i\le r$, put $T_i=S_{x_i}$, $R_i=(T_i)_0$, and $U_i=D_+(x_i)=\Spec R_i$.
 The degree-one element $x_i$ is a unit in $T_i$ and trivializes $\OO_X(1)$ on $U_i$.
 
