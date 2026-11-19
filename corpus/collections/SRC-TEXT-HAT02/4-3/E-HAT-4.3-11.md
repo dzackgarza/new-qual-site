@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 11, printed p. 420,
+    and Proposition 4.62, printed p. 406. The pullback, functoriality and two-sided
+    inverse steps are correct. Step #homotopy proved the homotopy-invariance by asserting
+    that a pullback along a homotopy equivalence is a fibre homotopy equivalence and
+    deriving it in one clause --- which is the special case of the very proposition the
+    exercise rests on, so the card was giving a compressed proof of 4.62 rather than
+    citing it. Repaired to cite Proposition 4.62, with a parenthetical recording that
+    this is what 4.62 says and why quoting it is legitimate. An independent report from
+    the swarm flagged the same circularity. Statement unchanged. Not checked: nothing
+    outside this exercise.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -76,7 +90,7 @@ A map $u\colon E\to E'$ over $B_2$ gives $f^*u$ over $B_1$ by acting on the seco
 If $f_0\simeq f_1\colon B_1\to B_2$ then $f_0^*=f_1^*$ on $\mathcal F(B_2)$.
 
 ::: pf-proof
-Let $H\colon B_1\times I\to B_2$ be a homotopy and $p\colon E\to B_2$ a fibration; then $H^*E\to B_1\times I$ is a fibration whose restriction to $B_1\times\{t\}$ is $f_t^*E$. The inclusion $B_1\times\{t\}\hookrightarrow B_1\times I$ is a homotopy equivalence, and a pullback along a homotopy equivalence of a fibration is a fiber homotopy equivalence: the reverse comparison comes from lifting the deformation retraction $B_1\times I\to B_1\times\{t\}$ by the homotopy lifting property, which produces fiber-preserving maps both ways whose composites are fiber homotopic to the identity. So $f_0^*E$ and $f_1^*E$ are fiber homotopy equivalent, naturally in $E$, and $f_0^*=f_1^*$.
+Let $H\colon B_1\times I\to B_2$ be a homotopy and $p\colon E\to B_2$ a fibration; then $H^*E\to B_1\times I$ is a fibration whose restriction to $B_1\times\{t\}$ is $f_t^*E$. This is the situation of Proposition 4.62 (printed p. 406): for a fibration $p:E\to B$ and a homotopy $f_t:A\to B$, the pullbacks $f_0^*(E)$ and $f_1^*(E)$ over $A$ are fibre homotopy equivalent. Applying it to the fibration $H^*E\to B_1\times I$ with $A=B_1$ gives a fibre homotopy equivalence $f_0^*E\simeq_f f_1^*E$ over $B_1$; the construction uses only the pullback and the homotopy lifting property, so it is natural in $E$, and $f_0^*=f_1^*$. (Proposition 4.62 is not a consequence of this exercise but its proof: for a fibration over $B\times I$ the restrictions $E_s\to B$ are all fibre homotopy equivalent, by lifting the deformation retraction $B\times I\to B\times\{s\}$. Quoting it avoids arguing the special case as though it were immediate.)
 :::
 
 :::
