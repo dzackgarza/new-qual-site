@@ -23,6 +23,8 @@ Let $R_{1}$ and $R_{2}$ be commutative rings with identities and let $R = R_{1} 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Let
 $$
 I\trianglelefteq R_1\times R_2.

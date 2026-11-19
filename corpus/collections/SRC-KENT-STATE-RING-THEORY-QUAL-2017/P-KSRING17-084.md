@@ -28,6 +28,8 @@ Let $D = \ZZ[\sqrt{-11}] = \{m + n\sqrt{-11} \st m, n \in \ZZ\}$ and $F = \QQ(\s
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Set
 $$
 f(x)

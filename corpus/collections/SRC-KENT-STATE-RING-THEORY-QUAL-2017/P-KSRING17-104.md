@@ -24,6 +24,8 @@ Let D be an integral domain and $D [ x ]$ the polynomial ring over D in the inde
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

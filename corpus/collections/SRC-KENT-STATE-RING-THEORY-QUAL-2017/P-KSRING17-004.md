@@ -28,6 +28,8 @@ Denote the set of invertible elements of the ring $\ZZ_{n}$ by $U_{n}$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

@@ -24,6 +24,8 @@ Show that if $p$ is a prime such that $p \equiv 1 \pmod{6}$, then $x^{3} + 1$ sp
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination paper alone, so the argument is the card's own.
+
 Assume
 $$
 p\equiv1\pmod6.
