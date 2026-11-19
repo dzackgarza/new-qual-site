@@ -27,6 +27,21 @@ audit:
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §4.3, printed p. 419, with Exercise 4 and Theorem 4.57.
+    Correct: $K\times K$ is a $K(G\oplus G,n)$, so homotopy classes $K\times K\to K$ are
+    $\operatorname{Hom}(G\oplus G,G)$ through $[B,K(G,n)]\cong H^n(B;G)$ and
+    $H^n(K(G\oplus G,n);G)=\operatorname{Hom}(G\oplus G,G)$; addition gives a multiplication whose
+    restrictions to $K\times\{e\}$ and $\{e\}\times K$ correspond to $a\mapsto a+0$ and
+    $b\mapsto 0+b$, so the unit holds up to homotopy; associativity, commutativity and the inverse
+    $a\mapsto-a$ follow because the three composites induce the same homomorphism on
+    $\pi_n=G\oplus G\oplus G$ or $G\oplus G$; and uniqueness holds because any H-space
+    multiplication restricts to the identity on each factor up to homotopy, hence induces
+    $(a,b)\mapsto a+b$, which determines it up to homotopy. Nothing changed. Not claimed: a
+    published solution, and no certificate.
 ---
 
 ::: {.problem}
