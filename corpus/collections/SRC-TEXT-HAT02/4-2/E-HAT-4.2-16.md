@@ -35,6 +35,18 @@ audit:
     connectivity, and the use of Whitehead's theorem via CW type. Not re-derived: the half-page proof
     of Proposition 3.29 itself, which is the book's.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §4.2. Read against Hatcher, Exercise 16 of §4.2, printed p. 390, and
+    the printed page is added, the card having had none. Checked: the universal cover of a closed
+    surface with infinite fundamental group is a simply connected surface, infinite-sheeted hence
+    noncompact; Proposition 3.29 gives $H_i(\widetilde M;R)=0$ for $i\ge n$, so with $n=2$ and
+    $R=\ZZ$ the group $H_2(\widetilde M)$ vanishes, and $H_1$ vanishes by simple connectivity, so the
+    cover is acyclic; a least $k\ge2$ with $\pi_k\ne0$ would make the cover $(k-1)$-connected with
+    $\pi_k\cong H_k=0$ by Hurewicz, a contradiction; and Whitehead, applicable since the cover has
+    CW type, makes it contractible, so $M$ is a $K(\pi_1(M),1)$. No defect.
 ---
 
 ::: {.problem}
@@ -42,6 +54,8 @@ Show that the closed surfaces with infinite fundamental group are $K(\pi, 1)$'s 
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 16, printed p. 390.
+
 Let $M$ be a closed surface with infinite fundamental group, and let
 $$
 p:\widetilde M\to M
