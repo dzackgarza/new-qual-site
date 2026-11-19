@@ -35,6 +35,19 @@ audit:
     previous claim that n>=2 omitted n=1 and was repairable by odd vanishing
     misread the domain, since odd vanishing does not supply the missing H^n,
     H^{2n}=Z. No change to the proof text is needed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: $C_h$ has three cells and its only
+    possible boundary is multiplication by $\deg h=0$ because $2n-1>n$ makes $h$ null; the Hopf
+    invariant is the coefficient of $x_h^2$ on the generator $y_h$ and is well defined under the
+    $\pm1$ ambiguity of generators; and the two attaching squares give the coefficient statements
+    $x_g\mapsto x_{gf}$, $y_g\mapsto d\,y_{gf}$ and $x_{gf}\mapsto d\,x_f$, $y_{gf}\mapsto y_f$, from
+    which $d\,H(g)$ and $d^2H(f)$ follow. Added: the well-definedness of $H(h)$ under change of
+    generators, the exact form of the boundary map as the degree of the collapsed attaching map, and
+    the division by the generator $y_f$, which is legitimate because $H^{2n}$ is infinite cyclic.
+    No defect found in the statement, §4.B Exercise 1; no retained solution set covers it.
 ---
 
 ::: {.problem}
@@ -42,20 +55,54 @@ Show that the Hopf invariant of a composition $S^{2n-1} \xrightarrow{f} S^{2n-1}
 :::
 
 ::: {.solution}
-For a map $h:S^{2n-1}\to S^n$, write $C_h=S^n\cup_h e^{2n}$ (p. 427). Its cohomology is $\ZZ$ in degrees $0$, $n$ and $2n$ and zero otherwise, since the cellular chain complex has one cell in each of those dimensions and the boundary $\ZZ\to\ZZ$ in degree $2n$ is multiplication by $\deg h=0$ as $2n-1>n$ (Theorem 2.35, p. 139). Choose generators $x_h\in H^n(C_h;\ZZ)$ and $y_h\in H^{2n}(C_h;\ZZ)$ compatible with orientations. The Hopf invariant is defined by
-$$
-x_h^2=H(h)y_h.
-$$
+No retained solution set covers this exercise, so the argument is the card's own, from the definition of the Hopf invariant on p. 427 and the cellular cohomology of the mapping cone.
 
-First let $f:S^{2n-1}\to S^{2n-1}$ have degree $d$ and $g:S^{2n-1}\to S^n$. The commutative attaching-map square gives a map $C_{gf}\to C_g$ that is the identity on the bottom sphere and has degree $d$ on the top cell. Its cohomology map sends $x_g$ to $x_{gf}$ and $y_g$ to $d y_{gf}$. Pulling back $x_g^2=H(g)y_g$ gives
-$$
-x_{gf}^2=dH(g)y_{gf},
-$$
-so $H(gf)=dH(g)$.
+::: pf
 
-Now let $f:S^{2n-1}\to S^n$ and let $g:S^n\to S^n$ have degree $d$. The attaching-map square gives a map $C_f\to C_{gf}$ that restricts to $g$ on the bottom sphere and has degree $1$ on the top cell. Its cohomology map sends $x_{gf}$ to $d x_f$ and $y_{gf}$ to $y_f$. Pulling back $x_{gf}^2=H(gf)y_{gf}$ gives
-$$
-d^2H(f)y_f=H(gf)y_f.
-$$
-Therefore $H(gf)=d^2H(f)$.
+::: {.pf-step #cohomology}
+For $h\colon S^{2n-1}\to S^n$ with $n>1$, the complex $C_h=S^n\cup_h e^{2n}$ has $H^k(C_h;\ZZ)=\ZZ$ for $k=0,n,2n$ and $0$ otherwise.
+
+::: pf-proof
+$C_h$ is a CW complex with one $0$-cell, one $n$-cell and one $2n$-cell, so its cellular chain complex is $\ZZ$ in degrees $0,n,2n$. The only possibly nonzero boundary is $\partial_{2n}\colon\ZZ\to\ZZ$, which is multiplication by the degree of the attaching map $h$ composed with the collapse $S^n\to S^n/S^{n-1}$; since $2n-1>n$, the map $h$ is nullhomotopic, so its degree on the top-dimensional sphere is $0$. Hence all boundaries vanish, the homology is $\ZZ$ in the three degrees, and by the universal coefficient theorem so is the cohomology.
+:::
+
+:::
+
+::: {.pf-step #definition}
+Choose generators $x_h\in H^n(C_h;\ZZ)$ and $y_h\in H^{2n}(C_h;\ZZ)$ compatibly with orientations; then $x_h^2=H(h)\,y_h$ defines the integer $H(h)$.
+
+::: pf-proof
+The cup product $x_h^2$ lies in $H^{2n}(C_h;\ZZ)=\ZZ\,y_h$, the group being infinite cyclic by step [](#cohomology){.pf-ref}, so $x_h^2$ is a unique integer multiple of the generator $y_h$. Changing the choice of generators multiplies $x_h$ by $\pm1$ and $y_h$ by $\pm1$, leaving the ratio unchanged.
+:::
+
+:::
+
+::: {.pf-step #first}
+If $f\colon S^{2n-1}\to S^{2n-1}$ has degree $d$ and $g\colon S^{2n-1}\to S^n$, then $H(gf)=d\,H(g)$.
+
+::: pf-proof
+The attaching map of $C_{gf}$ is $gf$, so the attaching square gives a cellular map $\varphi\colon C_{gf}\to C_g$ that is the identity on $S^n$ and has degree $d$ on the $2n$-cell. On cohomology $\varphi^*$ sends $x_g$ to $x_{gf}$, the bottom cell being fixed, and sends $y_g$ to $d\,y_{gf}$, the top cell having degree $d$. Applying $\varphi^*$ to $x_g^2=H(g)y_g$ gives $x_{gf}^2=d\,H(g)\,y_{gf}$, and comparing with $x_{gf}^2=H(gf)y_{gf}$ from step [](#definition){.pf-ref}, together with the fact that $y_{gf}$ is a generator and so not a torsion element, gives $H(gf)=d\,H(g)$.
+:::
+
+:::
+
+::: {.pf-step #second}
+If $f\colon S^{2n-1}\to S^n$ and $g\colon S^n\to S^n$ has degree $d$, then $H(gf)=d^2\,H(f)$.
+
+::: pf-proof
+The attaching square now gives a cellular map $\psi\colon C_f\to C_{gf}$ that restricts to $g$ on the bottom sphere and has degree $1$ on the top cell, since the attaching map $gf$ is the composite of $f$ with $g$. On cohomology $\psi^*$ sends $x_{gf}$ to $d\,x_f$, the bottom sphere carrying $g$ of degree $d$, and $y_{gf}$ to $y_f$, the top cell carrying a degree-$1$ map. Applying $\psi^*$ to $x_{gf}^2=H(gf)y_{gf}$ gives $d^2x_f^2=H(gf)y_f$, that is $d^2H(f)y_f=H(gf)y_f$; dividing by the generator $y_f$ gives $H(gf)=d^2H(f)$.
+:::
+
+:::
+
+::: {.pf-step}
+$\boxed{H(gf)=\deg(f)\,H(g)\quad\text{and}\quad H(gf)=(\deg g)^2\,H(f)}$ for the two indicated compositions.
+
+::: pf-proof
+The two identities are steps [](#first){.pf-ref} and [](#second){.pf-ref}; in each, the degree statement is read off from which cells the induced map of mapping cones fixes and which it multiplies, and the cup-product computation then compares coefficients on the generator of $H^{2n}$.
+:::
+
+:::
+
+:::
 :::
