@@ -61,6 +61,14 @@ audit:
     the printed notation is kept as a step, with the reason: only left multiplication arises, and
     H need not be normal, so the printed alpha H is to be read as {h alpha}. Statement unchanged;
     the card says the argument is its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    names Hatcher's section as `\S4.1`, a section sign written as a TeX command outside a math
+    span, which the HTML writer drops; it now reads the character `§4.1`, as the corpus does
+    elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -76,7 +84,7 @@ An element of $\pi_1(X,A,x_0)$ is a path $\nu$ from $A$ to $x_0$, up to homotopi
 An element of $\pi_1(X,A,x_0)$ is represented by a path $\nu\colon I\to X$ with $\nu(0)\in A$ and $\nu(1)=x_0$, two such being identified when homotopic through paths whose endpoint is $x_0$ throughout and whose initial point stays in $A$.
 
 ::: pf-proof
-This is Hatcher's definition in \S4.1. The set is a pointed set with basepoint the constant path at $x_0$, whose initial point is $x_0\in A$; no group structure is used below.
+This is Hatcher's definition in §4.1. The set is a pointed set with basepoint the constant path at $x_0$, whose initial point is $x_0\in A$; no group structure is used below.
 :::
 
 :::
