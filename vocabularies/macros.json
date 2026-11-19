@@ -138,7 +138,6 @@
   "\\colim": "\\operatorname*{colim}",
   "\\conjugate": "{\\overline{{#1}}}",
   "\\containing": "\\supseteq",
-  "\\contradiction": "\\mathord{\\unicode{x21AF}}",
   "\\converges": "\\overset{#1}",
   "\\convergesto": "\\overset{#1}\\too",
   "\\convolve": "\\ast",
