@@ -22,6 +22,11 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured the prose solution into Lamport steps. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.G Exercise 1, printed p. 456, the mapping telescope and the instruction to do the case $n=2$ first matching the printed text; the card's argument is the $n=2$ picture applied stage by stage. No retained solution set covers this exercise; the argument is the card's own. Checked: the finite telescope $T_n$ sits inside the finite iterated mapping cylinder $M_n$; the ordinary mapping cylinder retracts onto its target fixed on the target, so the $r_n$ are compatible; and the direct-limit topology of the union makes the assembled homotopy continuous.
 ---
 
 ::: {.problem}
@@ -29,40 +34,49 @@ Show that for a sequence of maps $X_0 \xrightarrow{f_1} X_1 \xrightarrow{f_2} \c
 :::
 
 ::: {.solution}
-Let
-$$
-X_0\xrightarrow{f_1}X_1\xrightarrow{f_2}X_2\to\cdots
-$$
-be the sequence. For each finite stage, the iterated mapping cylinder
-$$
-M_n=M(f_1,\ldots,f_n)
-$$
-contains the finite telescope
-$$
-T_n=X_0\times[0,1]\cup X_1\times[1,2]\cup\cdots\cup X_{n-1}\times[n-1,n]\cup X_n
-$$
-with the usual identifications at integer levels.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.G Exercise 1, printed p. 456.
 
-The ordinary mapping cylinder $M(f)$ deformation retracts onto the copy of the interval cylinder together with its target, and this retraction can be chosen fixed on the target. Apply this successively to the nested mapping-cylinder pieces of $M_n$. This gives a deformation retraction
-$$
-r_n:M_n\times I\to M_n
-$$
-onto $T_n$, chosen so that $r_{n+1}$ restricts to $r_n$ on $M_n$. Concretely, on the new mapping-cylinder block one only straightens the extra cylinder coordinate; all earlier stages are left unchanged.
+::: pf
 
-The infinite iterated mapping cylinder carries the topology of the union of the nested closed subspaces $M_n$, so a map out of it, or out of it times $I$, is continuous as soon as its restrictions to the $M_n\times I$ are (this is the standard criterion for the direct-limit topology used for mapping telescopes in §4.F, p. 455). Since the finite-stage homotopies are compatible, they therefore assemble on the union
-$$
-M(f_1,f_2,\ldots)=\bigcup_nM_n
-$$
-to a continuous homotopy
-$$
-r:M(f_1,f_2,\ldots)\times I\to M(f_1,f_2,\ldots).
-$$
-At time $1$ its image is
-$$
-\bigcup_nT_n,
-$$
-which is exactly the mapping telescope. The homotopy fixes the telescope pointwise throughout. Hence
-$$
-\boxed{M(f_1,f_2,\ldots)\text{ deformation retracts onto the mapping telescope}.}
-$$
+::: {.pf-step #finite}
+Each finite iterated mapping cylinder $M_n=M(f_1,\dots,f_n)$ contains the finite telescope $T_n=X_0\times[0,1]\cup\dots\cup X_{n-1}\times[n-1,n]\cup X_n$ as a closed subspace.
+
+::: pf-proof
+By definition $M_n$ is obtained from $\coprod_{j<n}X_j\times I\amalg X_n$ by identifying $(x,1)\in X_j\times I$ with $(f_{j+1}(x),0)\in X_{j+1}\times I$; the copies $X_j\times[j,j+1]$ together with the top copy $X_n$ form a closed subspace of this quotient, which is $T_n$.
+:::
+:::
+
+::: {.pf-step #retract}
+There is a deformation retraction $r_n:M_n\times I\to M_n$ onto $T_n$, and these may be chosen so that $r_{n+1}$ restricts to $r_n$ on $M_n$.
+
+::: pf-proof
+The ordinary mapping cylinder of $f$ deformation retracts onto the union of the interval cylinder over its source with its target, by straightening the interval coordinate, and the retraction can be chosen to fix the target pointwise. Applying this to the mapping-cylinder piece added at stage $n$ while leaving the earlier pieces fixed gives $r_n$; because the added piece is disjoint from $M_{n-1}$ away from its boundary, the construction at stage $n+1$ restricts to the earlier one.
+:::
+:::
+
+::: {.pf-step #assemble}
+The $r_n$ assemble to a continuous homotopy $r:M(f_1,f_2,\dots)\times I\to M(f_1,f_2,\dots)$.
+
+::: pf-proof
+The infinite iterated mapping cylinder is the union of the nested closed subspaces $M_n$ with the direct-limit topology, so a map on it is continuous exactly when its restrictions to the $M_n$ are; by step [](#retract){.pf-ref} these restrictions agree on overlaps, so they define a continuous $r$.
+:::
+:::
+
+::: {.pf-step #image}
+At time $1$ the image of $r$ is $\bigcup_nT_n$, the mapping telescope, and $r$ fixes it pointwise throughout.
+
+::: pf-proof
+Each $r_n$ ends in $T_n$ and fixes $T_n$ at every time, so $r$ ends in $\bigcup_nT_n$ and is the identity there for all $t$; conversely $\bigcup_nT_n\subset\bigcup_nM_n$ is contained in the image at every time because $r$ fixes it.
+:::
+:::
+
+::: {.pf-step}
+$M(f_1,f_2,\dots)$ deformation retracts onto the mapping telescope.
+
+::: pf-proof
+Steps [](#assemble){.pf-ref} and [](#image){.pf-ref} exhibit the deformation retraction and identify its image.
+:::
+:::
+
+:::
 :::
