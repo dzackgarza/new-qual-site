@@ -23,6 +23,21 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §4.A, printed p. 426, with the action of Proposition 4A.1
+    (p. 422), the change-of-basepoint isomorphism of §4.1 (p. 342), Proposition 4A.2 (p. 422) and
+    Proposition 1B.9 (p. 90). Correct. A homotopy $H$ representing the action of $\gamma$ gives,
+    for each based $a\colon S^n\to X$, a homotopy $H\circ(a\times\mathrm{id})$ from $fa$ to
+    $(\gamma f)a$ whose basepoint traces $\gamma$, which is exactly the definition of $\beta_\gamma$
+    on $\pi_n(Y)$, so $(\gamma f)_*=\beta_\gamma f_*$ for every $a$ and hence as homomorphisms.
+    For $n=1$, $\beta_\gamma$ is conjugation by $\gamma$, so free homotopy classes of maps into
+    $K(\pi,1)$ are the orbits of $\operatorname{Hom}(\pi_1(X),\pi)$ under $\operatorname{Inn}(\pi)$,
+    and when $\pi$ is abelian the orbits are singletons, giving
+    $[X,K(\pi,1)]=\langle X,K(\pi,1)\rangle=\operatorname{Hom}(\pi_1(X),\pi)$. Nothing changed.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
