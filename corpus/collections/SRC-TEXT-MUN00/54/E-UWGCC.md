@@ -38,6 +38,19 @@ audit:
   date: 2026-11-18
   note: >-
     Same repair as on E-PBG3W, applied on the same reading: Munkres's definition of a covering map (printed p. 336) requires surjectivity, and the step proving that p: R^2 -> T is a covering map gave only the local product structure. The step now records that p is surjective because q is onto and p(s,t) = (q(s),q(t)).
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two corrections on 2026-11-19, neither touching a claim. The preamble gave
+    the proof being generalised as "Theorem 54.5, printed pp. 342--345"; the
+    theorem is stated on printed p. 345 and its proof ends on printed p. 346
+    (PDF pp. 360 and 361 of the retained PDF, folios 345 and 346, printed page =
+    PDF page - 15), while printed p. 342 carries Lemma 54.1, so the range is now
+    pp. 345--346. And the last step's claim now carries the result in \boxed, as
+    STYLE-08 asks of the step that establishes it. The exercise, at printed
+    p. 348, and dbFin's Solution 7 are as the events of this date record them.
+
 ---
 
 ::: {.exercise}
@@ -46,7 +59,7 @@ Generalize the proof of Theorem 54.5 to show that the fundamental group of the t
 :::
 
 ::: {.solution}
-The argument is dbFin's, **dbFin, "Section 54: Problem 7 Solution"** (Munkres, *Topology*, Section 54, Problem 7), which gives the correspondence $\Phi$ and observes that a product of loops lifts to a path ending at the sum; the exercise is Munkres, *Topology* (2000), Section 54 Exercise 7, printed p. 348, and the proof being generalised is that of Theorem 54.5, printed pp. 342--345.
+The argument is dbFin's, **dbFin, "Section 54: Problem 7 Solution"** (Munkres, *Topology*, Section 54, Problem 7), which gives the correspondence $\Phi$ and observes that a product of loops lifts to a path ending at the sum; the exercise is Munkres, *Topology* (2000), Section 54 Exercise 7, printed p. 348, and the proof being generalised is that of Theorem 54.5, printed pp. 345--346.
 
 Write $T=S^1\times S^1$ and $p(s,t)=\bigl(e^{2\pi is},e^{2\pi it}\bigr)$, with basepoints $(1,1)\in T$ and $(0,0)\in\RR^2$.
 
@@ -107,7 +120,7 @@ Suppose $\Phi([f])=(0,0)$, that is, $\tilde f$ is a loop at $(0,0)$. Since $\RR^
 :::
 
 ::: {.pf-step #conclusion}
-$\pi_1(S^1\times S^1,(1,1))\cong\ZZ\times\ZZ$.
+$\pi_1(S^1\times S^1,(1,1))\cong\boxed{\ZZ\times\ZZ}$.
 
 ::: pf-proof
 By steps [](#welldefined){.pf-ref}, [](#homomorphism){.pf-ref}, [](#surjective){.pf-ref} and [](#injective){.pf-ref}, $\Phi$ is an isomorphism of groups onto $\ZZ^2$.
