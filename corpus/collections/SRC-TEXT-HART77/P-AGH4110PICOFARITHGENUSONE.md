@@ -117,6 +117,27 @@ audit:
     printed p. 299 (PDF p. 314 of the checked-in extraction). Not checked in
     this pass: the NTU set the remark also cites was not reopened, and no
     publication was searched for this step; COMPLAINTS.md records the state.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.10, printed p. 85,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.10, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    deg K = p_a - 1 = 0, the reduction of D + P_0 to a divisor on X_reg,
+    and the bijection X_reg -> Pic^0 X. Not checked: Yang's Solutions outside printed pp. 84-86; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.10 at printed
+    p. 85 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -437,4 +458,6 @@ The argument for that step is KReiser's, answer 4978046 (https://math.stackexcha
 R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §19.9], text version `tmp/sources/vakil-rising-sea-2025-10-21.md`, printed pp. 555--556, gives the bijection $\Pic^0 C\leftrightarrow$ degree 1 points for a regular curve $C$ of genus 1: (19.9.1) $\omega_C\cong\mco_C$ and $h^0(C,\mcl)=\deg\mcl$ for $\deg\mcl>0$; (19.9.2) every degree 1 bundle is the divisor of a point, and distinct points give distinct bundles because a degree 1 bundle has one section up to scalars; (19.9.3) twisting by $\mco(-p)$ gives the bijection. Steps [](#s5){.pf-ref} and the existence half of step [](#s6){.pf-ref} transcribe that. Vakil's curve is regular, so his §19.9 does not cover the exercise's $X$, which is only a locally complete intersection with $p_a=1$ and may be singular; the point of the divisor of zeros is put in $X_{\reg}$ by step [](#s6-regular){.pf-ref}, and that argument is not his.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.10, printed pp. 209--210, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.1.14), takes $\deg K_X=p_a-1$ from IV.1.9(d), so a divisor of degree zero has $K_X-D-P_0$ of degree $-1$ and hence no sections, and concludes that $\dim\linearsystem{D+P_0}=\deg D=0$; the resulting assignment of degree-one divisors to points of $\Pic^0 X$ is the bijection with which the card identifies $\Pic^0 X$ for $p_a=1$.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.10, printed p. 85, argues in the pattern of (1.3.7): with $p_a=1$ the canonical divisor has degree $p_a-1=0$ by the previous exercise, so for a degree-zero $D$ the divisor $D+P_0$ corresponds to an invertible sheaf of a divisor supported on $X_{\reg}$, and on $X_{\reg}$ the degree-zero divisor $D_0-P_0$ corresponds to some $P-P_0$ by (II, 1.3.7); hence $D\sim P-P_0$ for a regular point $P$, and conversely every such difference is a degree-zero invertible sheaf, so $X_{\reg}\to\Pic^0X$ is a bijection.
 :::
