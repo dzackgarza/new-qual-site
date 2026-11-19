@@ -14,6 +14,15 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If Ax = 0 and x != 0, choosing i with |x_i| maximal gives
+    (|a_ii| - sum_{j != i} |a_ij|)|x_i| <= 0, and strict diagonal dominance makes the bracket
+    positive, so x_i = 0 and then x = 0. Checked that the hypothesis is used strictly, at the single
+    point where the bracket's sign is decided, and that the maximal-coordinate choice is what lets
+    every |x_j| be replaced by |x_i|. Not checked: the printed paper, which was not re-read.
 ---
 
 ::: {.problem}
