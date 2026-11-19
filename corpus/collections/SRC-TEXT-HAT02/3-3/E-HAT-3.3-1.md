@@ -42,9 +42,20 @@ audit:
     MathJax command set the site loads defines, so the page could not render it; the card writes
     `\RR` everywhere else, including three lines above, and now does here too. Mathematics
     unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 266 carries the running head 257, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), printed p. 257, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that there exist nonorientable 1-dimensional manifolds if the Hausdorff condition is dropped from the definition of a manifold.
 :::
 
