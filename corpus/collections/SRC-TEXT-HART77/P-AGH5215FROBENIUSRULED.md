@@ -215,6 +215,37 @@ audit:
     tests the command's name and not how many arguments it is given. Not
     checked: the rendered page in a browser, and no mathematics was read or
     altered by this repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two corrections, read for issue #164; no conclusion of the card moves.
+    (i) Step s4 justified the surjectivity of H^1(C,O_C(-3P)) -> H^1(C,O_C)
+    by saying that the H^0 part of 0 -> O_C(-3P) -> O_C -> O_{3P} -> 0 is an
+    isomorphism h^0(O_C) = h^0(O_{3P}) = 1. That is false: O_{3P} is the
+    structure sheaf of the length-3 subscheme 3P, so h^0(O_{3P}) = 3, and
+    H^0(O_C) -> H^0(O_{3P}) is injective and not surjective. The conclusion is
+    right, for a reason the step now gives: H^1(C,O_{3P}) = 0 because 3P is
+    zero-dimensional, so the map on H^1 is surjective and its kernel has
+    dimension 5 - 3 = 2. (ii) Step s10 cited Remark 2.21.1 as printed p. 382.
+    Proposition 2.21 and its hypotheses are on printed p. 382, the folio at the
+    foot of PDF p. 397 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf;
+    Remark 2.21.1, "In the remaining case e < 0, char k = p > 0, g >= 2, we
+    cannot get necessary and sufficient conditions", is on printed p. 383, the
+    folio at the foot of PDF p. 398. The step now says p. 383; the dated event
+    above that gives "Proposition 2.21(b) with Remark 2.21.1, both printed
+    p. 382" is left as written. Everything else on the card was checked in this
+    pass and stands: the printed statement on p. 385 with the correction of
+    "nonsingular" recorded in the remark; s1 to s3, including the monomials of
+    F^2 and their vanishing exponents; the Riemann-Roch dimensions 3 and 5;
+    s5's dimension count; s6's e = -1 and the normalized-bundle argument; s7
+    and s8, Y^2 = -9 and Y.f = 3; s9's adjunction p_a = 1 + (-9+15)/2 = 4
+    against genus 3; and s10's non-ampleness of D = 2C_0 from C_0.Y = 0.
+    Checks: qualc.authoring check P-AGH5215FROBENIUSRULED, "schema and Markdown
+    parsing OK (single card)"; tools/check_macros.py on the card, OK; tmp/lam.sh
+    numbering the steps 1 to 10 with QED labels present and no unknown step
+    label. Not checked: the printed copies of Hartshorne, Xie or Hartshorne
+    1971; the text layers of the retained PDFs only.
 
 ---
 
@@ -316,7 +347,7 @@ h^1-h^0=g-1-\deg,
 $$
 with $h^0=0$ at negative degree: $h^1(\OO_C(-P))=2+1=3$ and $h^1(\OO_C(-3P))=2+3=5$.
 
-The kernel is counted from the restriction sequence $0\to\OO_C(-3P)\to\OO_C\to\OO_{3P}\to0$, whose $H^0$ part is an isomorphism $h^0(\OO_C)=h^0(\OO_{3P})=1$, so that $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ is surjective and its kernel has dimension $5-3=2$. For $P$ the same sequence shows that $H^1(C,\OO_C(-P))\to H^1(C,\OO_C)$ is an isomorphism, which is the equality of dimensions the count below uses.
+The kernel is counted from the restriction sequence $0\to\OO_C(-3P)\to\OO_C\to\OO_{3P}\to0$: the quotient $\OO_{3P}$ is supported on the zero-dimensional scheme $3P$, so $H^1(C,\OO_{3P})=0$ and $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ is surjective, with kernel of dimension $5-3=2$. For $P$ the same sequence shows that $H^1(C,\OO_C(-P))\to H^1(C,\OO_C)$ is an isomorphism, which is the equality of dimensions the count below uses.
 :::
 
 :::
@@ -427,7 +458,7 @@ $$
 satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, but is not ample.
 
 ::: pf-proof
-Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 382, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
+Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 383, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
 
 For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot Y=0$, consistently with $(3C_0-3f)\cdot C_0=3-3=0$. Since $Y$ is an integral curve on $X$,
 $$
