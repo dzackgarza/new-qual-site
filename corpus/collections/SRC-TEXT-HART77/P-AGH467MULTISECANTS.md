@@ -292,6 +292,34 @@ audit:
     $\ell\not\subseteq X$ is the reading that holds for all four curves, instead of calling it the
     only possible reading, and s9 says that the criterion's two conditions are equivalent to the two
     injectivities rather than identical with them.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    CLOSES the one item the first event of this date left open short of the body of Kaji: the
+    positive-characteristic counterexample, there "read but not re-derived", is re-derived here,
+    and the sentences whose reasons it had left implicit now carry them.
+
+    The step, re-derived. The map $[s:t]\mapsto[s^{p+1}:s^pt:st^p:t^{p+1}]$ is given by four
+    linearly independent forms of degree $p+1$, so its image has degree $p+1$. On $s\ne0$ it reads
+    $u\mapsto(1,u,u^p,u^{p+1})$ and on $t\ne0$ $v\mapsto(v^{p+1},v^p,v,1)$; the derivatives
+    $(0,1,0,u^p)$ and $(v^p,0,1,0)$ never vanish, so the differential is injective everywhere, and
+    with injectivity on points and $\PP^1$ proper the map is a closed immersion. Hence $C$ is smooth
+    of degree $p+1$, and the independence of $1,u,u^p,u^{p+1}$ makes it nonplanar. $C$ lies on the
+    smooth quadric $X_0X_3=X_1X_2$. A trisecant would meet that quadric in three points, hence lie
+    on it, since a line not contained in a quadric surface meets it in at most two points; every
+    point of the quadric is $(s^p,t^p)^T(s,t)$ because Frobenius is bijective on the algebraically
+    closed field; a ruling line fixes one of the two factors; and both $[s:t]$ and $[s^p:t^p]$ are
+    determined by the point of $C$, the second because $x^p=y^p$ forces $x=y$. So each ruling meets
+    $C$ once and no line meets it three times. Since $p+1\ge4$ and $C$ is rational, it is none of
+    the four curves of the exercise.
+
+    Added in this pass, with no claim changed: the two derivatives, the Bezout bound for a line and
+    a quadric surface, the bijectivity of Frobenius used to write every point of $Q$ as a rank-one
+    matrix, and the reason the $p$-th power map on $\PP^1$ is injective.
+
+    Not checked: the body of Kaji 1986, unchanged, the citation resting on Fukasawa,
+    arXiv:2108.00650v3, section 1.
 
 ---
 
@@ -806,7 +834,11 @@ $$
 $$
 On $s\ne0$, the first two coordinates recover $t/s$; on $t\ne0$, the last
 two recover $s/t$. These coordinates also separate tangent vectors on both
-charts, so the map is a closed immersion. Its image $C$ is smooth and has
+charts: on $s\ne0$ the map is $u\mapsto(1,u,u^p,u^{p+1})$ with derivative
+$(0,1,0,u^p)$, and on $t\ne0$ it is $v\mapsto(v^{p+1},v^p,v,1)$ with
+derivative $(v^p,0,1,0)$, neither of which vanishes. So the differential is
+injective everywhere, and with injectivity on points and $\PP^1$ proper the
+map is a closed immersion. Its image $C$ is smooth and has
 degree $p+1$. The four coordinate sections are linearly independent, since
 on $s\ne0$ they are $1,u,u^p,u^{p+1}$; hence $C$ is nonplanar. It lies on
 the smooth quadric
@@ -815,6 +847,7 @@ Q=\{X_0X_3=X_1X_2\}.
 $$
 
 A line meeting $C$ in three distinct points meets $Q$ in three distinct
+points, and a line not contained in a quadric surface meets it in at most two
 points, so it must lie on $Q$. Write a point of $Q$ as a rank-one matrix
 $$
 \begin{pmatrix}X_0&X_1\\X_2&X_3\end{pmatrix}
@@ -822,9 +855,12 @@ $$
 \begin{pmatrix}s^p\\t^p\end{pmatrix}
 \begin{pmatrix}s&t\end{pmatrix}.
 $$
+This is possible for every point of $Q$ because the $p$-th power map is
+bijective on the algebraically closed field $k$.
 Each ruling line fixes one of the two projective factors. On $C$, both
 $[s:t]$ and $[s^p:t^p]$ determine a unique geometric point: the second
-map is injective because $k$ is a field of characteristic $p$. Thus every
+map is injective because $x^p=y^p$ forces $x=y$ in a field of
+characteristic $p$. Thus every
 ruling line meets $C$ at only one distinct point. No line contains three
 distinct points of $C$.
 
