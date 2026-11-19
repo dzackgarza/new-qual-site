@@ -6,12 +6,18 @@ aliases: [Algebra Fields Review 1]
 
 # Fields review sheet 1
 
-## Homework 1
+## Scope
 
-The seventeen problems of the sheet are in [[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]].
+The sheet tests the first half of the chapter: the degree of a field extension as a dimension, the equality of $K[\alpha]$ with $K(\alpha)$ for algebraic $\alpha$ and its failure for transcendental $\alpha$, and the passage from a minimal polynomial to the degree of a simple extension.
+
+[[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]]
+
+[[D-PUOGJ]]
+
+[[PR-ZO73V]]
 
 ## Problems
 
-[[P-TTUVH]] [[P-HFGO7]] [[FD-3GZPO]] [[P-UZDCX]]
+[[P-DUXVY]] [[P-CDUB4]] [[P-HI4U2]] [[P-IEZIG]]
 
-[[P-CDUB4]] [[P-HI4U2]] [[P-IEZIG]] [[P-DUXVY]]
+[[P-UZDCX]] [[P-TTUVH]] [[P-HFGO7]] [[FD-3GZPO]]
