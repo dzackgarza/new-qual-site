@@ -7351,3 +7351,25 @@ his pages 47–52 have no printed folio in the text layer. The Klein bottle's or
 are the card's, not the book's, since the book prints the figure without the boundary maps; the
 homology check is what makes them credible. No certificate covers any of these cards, and none of the
 §3.1 exercises except 3.1.1–3.1.3 has a located published solution.
+
+## 2026-11-19, ninth item: §1.3 finished — five cards read, the mathematics correct on all five, three structural defects on one, and a second back-reference qed
+
+**Object.** The residue-5 cards of `SRC-TEXT-HK71` §1.3 whose exercise numbers are 4–8 had one reviewing reader each, their author. All five were read here against the retained text at printed p. 11 (`assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf`, printed page = PDF page − 8), and each statement was checked against the printed exercise.
+
+**What the read found.**
+
+| card | exercise | verdict |
+| --- | --- | --- |
+| `E-HK-RTYK` | 1.3.4 | correct; the displayed reduced matrix verified independently — row 3 of $A$ is $-2iR_1-R_2$, and the null space spanned by $(1-i,1,1+i)$ scales to $(-i,(1-i)/2,1)$, the null vector of $R$ |
+| `E-HK-PNK2` | 1.3.5 | correct; $\det A=-6$ and $\det B=0$ both recompute, and the minor on rows 1–2 gives rank $2$ — but the step **asserted** $\det B=0$ without the expansion, which is now written out |
+| `E-HK-1EVA` | 1.3.6 | correct; the enumeration is exhaustive — two nonzero rows force $I_2$ or the anti-identity (sum $2$), one nonzero row forces $[[1,-1],[0,0]]$ or $[[0,0],[1,-1]]$, and the zero matrix is the third |
+| `E-HK-D0GP` | 1.3.7 | correct; $(R_i,R_j)\to(R_i+R_j,R_j)\to(R_i+R_j,-R_i)\to(R_j,-R_i)\to(R_j,R_i)$, using only $\pm1$, so valid in every characteristic |
+| `E-HK-YECG` | 1.3.8 | correct in all three parts, with three structural defects repaired |
+
+**The defects on `E-HK-YECG`, none mathematical.** (1) The step "Therefore the only solution is the trivial one" had a proof that was only a reference back to the preceding step, and duplicated that step's claim; it is removed and the preceding step now states the conclusion. (2) A trailing `pf-qed` whose whole content was "Steps (a), (b), (c)" — three back-references — is removed. (3) Five proofs began in lower case and now begin as sentences. This is the **second** card of this session with a back-reference-only qed (`E-HK-12-5` was the first, `0ad37ea965`), and the same defect the seventh item recorded on `P-AMD-6OJQMSOZ` and `P-EVBF7`: it recurs across collections and no gate sees it.
+
+**Repair.** Five commits, one per card: `E-HK-RTYK` `c77215286c`, `E-HK-PNK2` `563c82fde7`, `E-HK-1EVA` `628791e042`, `E-HK-D0GP` `8e12a2e159`, `E-HK-YECG` `a334b3f0c6`. Each card carries a `solution-reviewed` event of this date with the check in the note; `E-HK-1EVA`, `-D0GP` and `-YECG` also carry the retained text's locator in the rendered solution.
+
+**Checks.** `.scratch/report_check.py` on each card, 0 diagnostics; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels intact — `E-HK-YECG` now numbers $1$; $1,2$; $1$–$4$ across its three parts; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** `E-HK-9X41`, §1.3's remaining card, is not residue 5 and was not read. The six cards of the eighth item that name Hungerford as their book remain unrepaired, being residues 3 and 4. Nothing here re-derives the printed exercise text beyond the statements.
