@@ -28,13 +28,27 @@ topics:
 
 ## Criteria for Galois extensions
 
-**Irreducibility of $f\in\QQ[x]$.** Apply [[T-CF6S3|Eisenstein's criterion]] to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
+### Irreducibility of a polynomial over $\QQ$
 
-**Separability.** [[PR-TLBPS|The derivative detects separability]]; [[PR-25FLW|algebraic extensions of perfect fields are separable]]; [[PR-3VQBI|characterizations of separability for finite extensions]]; separable extensions form a [[D-JMATC|distinguished class]].
+Apply [[T-CF6S3|Eisenstein's criterion]] to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
 
-**Normality.** [[PR-TZN4M|Finite normal extensions are splitting fields]].
+### Separability
 
-**Galois.** [[D-5JYEI|Galois extension]]; [[PR-ZCKLJ|separable splitting fields are Galois]]. Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield.
+Separability is read off the derivative ([[PR-TLBPS|the derivative detects separability]]) and holds automatically over a perfect base ([[PR-25FLW|algebraic extensions of perfect fields are separable]]); the finite-extension characterizations are on [[PR-3VQBI]], and separable extensions form a [[D-JMATC|distinguished class]].
+
+### Normality
+
+[[PR-TZN4M|Finite normal extensions are splitting fields]].
+
+### Galois
+
+[[D-5JYEI|Galois extension]]
+
+[[PR-ZCKLJ|separable splitting fields are Galois]]
+
+Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield, so the Frobenius automorphism generates the group.
+
+[[PR-OGUA5]]
 
 ## Irreducibility
 
