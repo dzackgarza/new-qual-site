@@ -20,6 +20,31 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-17
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise II.3.13 as printed: the seven parts (a)-(g) match the
+    text version of the book, and every argument is correct. (a) applies
+    Exercise II.3.11(b) for the closed subscheme of an affine and Exercise
+    II.3.3(b) for finite type; the empty generating set is legitimate because
+    A -> A/I is surjective. (b) is the computation A_f = A[f^{-1}] on
+    distinguished opens. (c) composes the affine charts supplied by Exercise
+    II.3.1; with B = C[b_1,...,b_m] and A = B[a_1,...,a_n] one does get
+    A = C[b_1,...,b_m,a_1,...,a_n]. (d) uses A tensor_B B' = B'[a_1 tensor 1,
+    ..., a_n tensor 1], and the passage from affine charts to the general base
+    change is left to the reader in one sentence but is standard. (f), the
+    substantial part, applies the only-if direction of Exercise II.3.1 to g
+    composed with f over an affine chart of Z and then shrinks to a
+    distinguished affine U' inside U intersect f^{-1}(V); the equality
+    B[alpha_1,...,alpha_n] = A_a holds because C[alpha] = A_a and B[alpha] is a
+    subring of A_a. (g) is Hilbert's basis theorem applied to the finite affine
+    charts of Exercise II.3.3(b), over the finite affine cover of a noetherian
+    Y. Kim's published solution, PDF pp. 25-26 (page checked in the PDF
+    itself), agrees part by part; Cais covers (a)-(c) in the same way. The
+    citations II.3.1, II.3.2, II.3.3(a)-(c) and II.3.11(b) are exercises of
+    section II.3, not the propositions numbered 3.1 and 3.2 there, which state
+    unrelated criteria. Nothing in the statement or the proof was changed.
 ---
 
 ::: {.problem}
