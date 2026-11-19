@@ -50,7 +50,7 @@ Write $h=p\circ g$, which is continuous. Near a point $y_0$ pick an evenly cover
 ::: pf
 
 ::: {.pf-step #setup}
-Let $h=p\circ g$, which is continuous. Fix $y_0\in Y$ and choose an evenly covered neighbourhood $U$ of $h(y_0)$; let $V_0$ be the sheet over $U$ containing $g(y_0)$, and $s\colon U\to V_0$ the inverse of $p\restrictionof{V_0}$.
+Let $h=p\circ g$, which is continuous. Fix $y_0\in Y$ and choose an evenly covered neighbourhood $U$ of $h(y_0)$; let $V_0$ be the sheet over $U$ containing $g(y_0)$, and $s\colon U\to V_0$ the inverse of $\restrictionof{p}{V_0}$.
 
 ::: pf-proof
 By hypothesis $h=p\circ g$ is continuous, so $h(y_0)$ is a point of $B$; a covering map has an evenly covered neighbourhood at each point of the base, so there is an open $U\ni h(y_0)$ whose preimage is a disjoint union of sheets, each mapped homeomorphically onto $U$. The point $g(y_0)$ lies in $p^{-1}(U)$, hence in exactly one sheet, $V_0$; on $V_0$ the restriction of $p$ is a homeomorphism onto $U$, and $s$ denotes its inverse, which is continuous.
@@ -80,7 +80,7 @@ Both are continuous maps $[0,1]\to E$: $g\circ\gamma$ by hypothesis, and $s\circ
 
 
 ::: {.pf-step #continuity}
-$g\restrictionof{W}=s\circ h\restrictionof{W}$, which is continuous; hence $g$ is continuous at $y_0$, and since $y_0$ was arbitrary, on $Y$.
+$\restrictionof{g}{W}=s\circ\restrictionof{h}{W}$, which is continuous; hence $g$ is continuous at $y_0$, and since $y_0$ was arbitrary, on $Y$.
 
 ::: pf-proof
 Step [](#agree){.pf-ref} gives the identity on $W$: for every $y\in W$ there is a path in $W$ from $y_0$ to $y$ because $W$ is path-connected. The composite $s\circ h$ is continuous on $h^{-1}(U)\supseteq W$, so $g$ agrees on the open neighbourhood $W$ of $y_0$ with a continuous function, which is continuity of $g$ at $y_0$. Continuity is a local property, so $g$ is continuous.
