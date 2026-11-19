@@ -38,6 +38,15 @@ audit:
       page 1 is this exercise. The rendered sentence now cites it and says what the card
       adds. Found by screening the residue's absence claims against the attachments, after two Munkres
       cards were found making the same false claim; no step of the proof changed.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`: Chapter 10
+      Example 2, the determinant map from GL(2,R) to R*, is printed on p. 201 (page 215 of the file), and the
+      exercise that asks for its being a homomorphism is Chapter 10 Exercise 1 on printed p. 211 (page 225 of
+      the file). The pages are now named in the solution's opening sentence. Not checked in this pass: the
+      two-line check, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -45,7 +54,7 @@ Prove that the mapping given in Example 2, the map $\phi : GL(2, \RR) \to \RR^*$
 :::
 
 ::: {.solution}
-The collection retains the source's own solution as `assets/attachments/Ch10PtASltns.pdf`, page 1, which carries this Example 2 map and its two-line check. The card states it in its own notation, and that notation is the wording below. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
+The collection retains the source's own solution as `assets/attachments/Ch10PtASltns.pdf`, page 1, which carries this Example 2 map and its two-line check. The card states it in its own notation, and that notation is the wording below. In the seventh edition the exercise is **Chapter 10 Exercise 1 on printed p. 211**, and the Example 2 it names is printed on p. 201; both are read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
 
 ::: pf
 
