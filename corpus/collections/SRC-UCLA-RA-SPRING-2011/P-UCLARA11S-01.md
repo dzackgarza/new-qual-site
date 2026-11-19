@@ -6,6 +6,14 @@ title: Weak $L^2$ convergence implies uniform convergence of primitives
 classification: {areas: [real-analysis], topics: [Weak Convergence, L², Uniform Convergence]}
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained source: the statement is Problem 1 of the Analysis Qualifying Examination, Spring 2011, and the printed words are
+    the card's. The problem number and the file are now named in the solution's opening sentence.
+    Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -21,6 +29,7 @@ Show that $F_n,F\in C([0,1])$ and that $F_n\to F$ uniformly on $[0,1]$.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Analysis Qualifying Examination, Spring 2011, retained in this repository as `assets/attachments/analysis-11S.pdf`, read in its checked-in extraction `assets/attachments/analysis-11S_extracted.md`, and the statement below is its wording.
 
 ::: pf
 
