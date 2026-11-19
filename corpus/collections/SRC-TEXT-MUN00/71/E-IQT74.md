@@ -23,6 +23,22 @@ audit:
     Theorem 26.5 and Theorem 27.3 (printed pp. 165--173), and the definition of coherence (printed p. 435).
     Part (c) is written as a quotient, so that both the circle topologies and the failure of the Hausdorff
     condition are computed from the definition of the quotient topology rather than asserted.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    All three parts are correct. In (a) each circle is compact, hence closed in a
+    Hausdorff space; conversely, with the circles closed, the diagonal is the
+    finite union of the diagonals of the closed subsets S_i x S_i, each closed
+    because a circle is Hausdorff, so the diagonal is closed and the space is
+    Hausdorff. In (b), closedness of the circles gives coherence directly, and
+    coherence gives closedness because each S_i meets every S_j in S_i or in the
+    single point p, both closed in S_j. Part (c) is a genuine example: the two
+    arcs are identified away from the marked points, which keeps each circle a
+    closed copy of S^1 in the quotient while making every neighbourhood of q_1
+    meet every neighbourhood of q_2. One wording point, not an error: the closing
+    sentence of step 3 is clumsy, the argument it points at being step 4. Nothing
+    was changed.
 ---
 
 ::: {.exercise}
