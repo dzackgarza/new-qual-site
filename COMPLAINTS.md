@@ -9284,3 +9284,17 @@ printed book itself. The citation of (II.6.8) inside 4.4.19 was taken from the t
 **The remainder.** Seventeen Chapter IV cards still lack Yang; the queue now starts at IV.4.20
 `P-AGH4420ENDOMORPHISMRINGCHARP`, whose Yang entry is 4.4.20 on printed p. 94 and which this batch
 read only its first two lines of.
+
+## 2026-11-19, twenty-second item: §9.3 Ex. 5 and Ex. 11 read, both correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-93-5`, §9.3 Exercise 5, printed p. 330 — correct.** $A=\begin{pmatrix}1&1/2\\1/2&1/3\end{pmatrix}$ is symmetric with leading minors $1$ and $1/3-1/4=1/12$, so positive definite by Sylvester. Gram--Schmidt in the $A$-inner product: $\|X_1\|^2=1$ so $E_1=X_1$; $(X_2\mid E_1)=1/2$ so $U_2=(-1/2,1)$ with $U_2^tAU_2=1/12$, giving $E_2=(-\sqrt3,2\sqrt3)$. With $Q$ the matrix of those columns, $Q^tAQ=I$ gives $A=(Q^{-1})^tQ^{-1}$, and $Q^{-1}=\begin{pmatrix}1&1/2\\0&1/(2\sqrt3)\end{pmatrix}$ multiplies out to $A$. All entries recomputed. Commit `5f1ed36f80`.
+
+**`E-HK-93-11`, §9.3 Exercise 11, printed p. 330 — correct.** $E$ self-adjoint gives $cI+E$ self-adjoint, and $((cI+E)x\mid x)=c\|x\|^2+\|Ex\|^2>0$ for $x\ne0$ and $c>0$. With $T=I+bE$, $T^2=I+(2b+b^2)E$, so $b^2+2b=1$; $b=\sqrt2-1$ gives $T=I+(\sqrt2-1)E$, self-adjoint with $T^2=I+E$ — the coefficient recomputed as $2\sqrt2-2+3-2\sqrt2=1$. Commit `68ce66136c`.
+
+**A transport note.** The push of `68ce66136c` failed twice with `github_unavailable` after GitHub stopped answering; the commit is on local `main` and lands with the next successful push from any lane, so this record's own commit travels with it. The earlier pushes of this turn (`5f1ed36f80`) had already landed.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering 1–3 and 1–2 with QED labels; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the Sylvester criterion and the Gram--Schmidt formula are used as the book states them.
