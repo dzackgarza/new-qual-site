@@ -31,6 +31,8 @@ order: 7
 
 [[T-NRSFZ]]
 
+[[T-DB3DO]]
+
 See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 ## Cauchy theory
@@ -69,6 +71,8 @@ See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 [[T-Q3GGF]]
 
+[[T-8NGWE]]
+
 See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 ## Singularities
@@ -98,6 +102,8 @@ See [[complex-analysis/singularities/index|Singularities]].
 [[T-SFXI7]]
 
 [[T-ZO5UU]]
+
+[[T-ESKLY]]
 
 See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Evaluated integrals are on [[complex-analysis/standard-integrals|Standard integrals]].
 
@@ -157,7 +163,25 @@ The statements of the chapter's newer topics, which carry the same weight on the
 
 [[D-7PTGC]]
 
+[[T-BBQLQ]]
+
 See [[complex-analysis/basics/the-riemann-sphere|The Riemann sphere]], [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]], [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]], and [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]].
+
+## Entire functions and growth
+
+[[T-2WJ4U]]
+
+[[T-IEJFA]]
+
+[[T-QX4MB]]
+
+[[T-6XDRA]]
+
+[[T-C7GBB]]
+
+[[T-HWBWI]]
+
+Entire functions of finite order, the products that carry their zeros, the growth bound that kills a function in a sector, and the two theorems on values attained: the fundamental theorem of algebra, Gauss--Lucas, and Picard's little theorem.
 
 ## Hypotheses and counterexamples
 
