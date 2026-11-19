@@ -38,6 +38,20 @@ audit:
     d=(-1)^{n+1}, equal to the antipodal degree. The two-point case n=0 is covered by its only
     fixed-point-free map, the antipodal transposition, rather than by applying that formula.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against the transcription's source,
+    DeMason, Hatcher 2.C.2, printed p. 84 — the exercise and its solution both fall on that page,
+    whose next heading is 2.C.3. Checked: $\deg a=(-1)^{n+1}$ as the composite of $n+1$ coordinate
+    reflections, each of degree $-1$; for $n\geq1$ the Lefschetz number is $\Lambda(f)=1+(-1)^nd$,
+    the trace on $H_0$ being $1$ and that on $H_n$ being $d$, all other reduced groups vanishing; and
+    $1+(-1)^nd=0$ exactly when $d=(-1)^{n+1}$. The case $n=0$ is handled separately and correctly: on
+    two points the only fixed-point-free self-map is the transposition, which is the antipodal map.
+    No defect.
+
 ---
 
 ::: {.problem}
