@@ -170,6 +170,27 @@ audit:
     The remark's sentence "which neither source states" is removed in favour of
     the two vanishings and their reason: whether a source states a step is not
     content for a rendered remark, and the absence is recorded here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s7 read for its mathematics; its one unsupported sentence is given its
+    source, and the rest is unchanged. The step ended "a hyperelliptic curve of
+    genus at least 2 has canonical map of degree 2 onto a rational normal curve"
+    with no citation and no proof, and it is the sentence that turns the
+    embedding of step s5 into nonhyperellipticity. Hartshorne IV.5.3, printed
+    pp. 342--343, states it: a hyperelliptic curve of genus at least 2 has a
+    unique g^1_2, with morphism f_0 : X -> P^1, and its canonical morphism is
+    f_0 followed by the (g-1)-uple embedding, so its degree is 2 and its image
+    is a rational normal curve. The step now cites it there, and also names the
+    uniqueness of the g^1_2 and the (g-1)-uple embedding, which are what make
+    the degree exactly 2. Step s5's restriction isomorphism H^0(O_X(H)) =
+    H^0(Y, K_Y) was read again and stands as the card's own, as its event of
+    2026-11-16 says. Checked in this pass: Hartshorne IV.5.2 and IV.5.3 at
+    printed p. 341 and pp. 342--343, the folio of PDF p. 356 read as 341. Not
+    checked in this pass: the rest of V.2.10's steps were not re-read, and no
+    publication other than the book was opened for the hyperelliptic
+    canonical-map statement.
 ---
 
 ::: {.problem}
@@ -324,7 +345,7 @@ of degree
 $$
 Y\cdot f=D\cdot f=3,
 $$
-so the pullback of $\linearsystem{\OO_{\PP^1}(1)}$ is a base-point-free $g^1_3$ on $Y$; Reid §2.10, printed p. 20, records this as the statement that the pencil $A$ of the scroll cuts out the $g^1_3$ on its canonical curve. By step [](#s5){.pf-ref} the complete canonical map of $Y$ is an embedding, whereas a hyperelliptic curve of genus at least $2$ has canonical map of degree $2$ onto a rational normal curve; so $Y$ is not hyperelliptic.
+so the pullback of $\linearsystem{\OO_{\PP^1}(1)}$ is a base-point-free $g^1_3$ on $Y$; Reid §2.10, printed p. 20, records this as the statement that the pencil $A$ of the scroll cuts out the $g^1_3$ on its canonical curve. By step [](#s5){.pf-ref} the complete canonical map of $Y$ is an embedding, whereas a hyperelliptic curve of genus at least $2$ has canonical map of degree $2$ onto a rational normal curve: its unique $g^1_2$ is $f_0:X\to\PP^1$ and the canonical morphism is $f_0$ followed by the $(g-1)$-uple embedding [@Har77, Proposition IV.5.3, printed pp. 342--343]. So $Y$ is not hyperelliptic.
 
 :::
 
