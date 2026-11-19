@@ -536,7 +536,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    no card changed; the remaining verification in this card is (c), and the next reader should do it rather
    than treat this record as covering it.
 
-   Remaining unread in this item's set: §4.1 16–23 (8), §4.2 (39), §4.3 (24) --- 71 proofs.
+   **§4.1-16, begun and NOT counted as read.** The statement was read against the printed exercise,
+   and the card opens with the construction of the proof preceding Proposition 4.13: attach cells to the
+   source in dimensions at least $n+1$, extending $f$ over each, which is the printed route. The two
+   isomorphism claims --- on $\pi_i$ for $i\le n$ for $X\to Z_n$, and for $i\ge n+1$ for $Z_n\to Y$ ---
+   were not verified in this pass, so the card stays in the unread count below. A reader who continues
+   should finish those two claims rather than treat this note as covering them.
+
+   Remaining unread in this item's set: §4.1 16–23 (8, of which 16 is begun), §4.2 (39), §4.3 (24)
+   --- 71 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
