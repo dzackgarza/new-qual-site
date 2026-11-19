@@ -39,6 +39,22 @@ audit:
     beta to beta+alpha, and the action on pi_2(X,A) = Z beta is trivial because f_* fixes the class of
     beta modulo Z alpha. Not checked: nothing outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §4.2. Read against Hatcher, Exercise 5 of §4.2, printed p. 389 — the
+    exercises are 1--12 on p. 389, 13--23 on p. 390, 24--29 on p. 391 and 30--39 on p. 392, at PDF
+    pages 398--401 of the held book — and the printed page is added, the card having had none.
+    Checked: $f_*$ on $\pi_2=\ZZ\alpha\oplus\ZZ\beta$ is the identity on the $\alpha$ summand and
+    sends $\beta$ to $\beta+\alpha$ for a degree-one $h$, giving the matrix in the card, invertible
+    with the stated inverse; $f$ is a homotopy equivalence, so the universal cover of its mapping
+    torus — the double mapping telescope — deformation retracts onto $F$, which gives
+    $\pi_2(X)\cong\ZZ^2$ and $\pi_1(X)\cong\ZZ$; $A=S^1\times S^2_\alpha$ has $\pi_2=\pi_1=\ZZ$;
+    the pair sequence is $0\to\ZZ\xrightarrow{\alpha}\ZZ^2\to\ZZ\to0$ because the boundary dies as
+    $\pi_1(A)\to\pi_1(X)$ is an isomorphism; and the actions are trivial on $\pi_2(A)$ (a product),
+    nontrivial on $\pi_2(X)$ (the monodromy sends $\beta\mapsto\beta+\alpha$), and trivial on
+    $\pi_2(X,A)=\ZZ\beta$ because the monodromy fixes $\beta$ modulo $\ZZ\alpha$. No defect.
 ---
 
 ::: {.problem}
@@ -50,6 +66,8 @@ In particular, show the action of $\pi_1(A)$ is trivial on $\pi_2(A)$ and $\pi_2
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 5, printed p. 389.
+
 ::: pf
 
 ::: pf-step
