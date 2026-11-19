@@ -34,6 +34,16 @@ audit:
     the two generalized eigenspaces meet in 0, giving 15 modules; and a Jordan
     matrix over Q with characteristic polynomial (t-2)^3(t-3)^4 is a pair of
     partitions of 3 and 4, again 15 classes. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 3, "Finitely generated abelian
+    grps and k[X] modules" 1(a),(b),(c). $648=2^3\cdot3^4$ gives $p(3)p(4)=3\cdot5=15$
+    abelian groups; the generalized eigenspaces $V(2),V(3)$ have trivial intersection and
+    dimensions $3,4$, so $V=V(2)\oplus V(3)$ and the module types are the same 15 pairs of
+    partitions; a Jordan matrix with characteristic polynomial $(t-2)^3(t-3)^4$ likewise
+    corresponds to a pair of partitions. No defect.
 ---
 
 ::: {.exercise}
