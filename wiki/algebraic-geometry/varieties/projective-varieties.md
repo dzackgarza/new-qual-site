@@ -30,9 +30,7 @@ The passage back is the projective closure, and it is the first place where a ge
 
 ## The homogeneous coordinate ring
 
-::: {.definition title="Homogeneous coordinate ring"}
-For a closed subset $X\subseteq\PP^n$ with homogeneous ideal $I(X)\subseteq S=k[x_0,\ldots,x_n]$, the \dfn{homogeneous coordinate ring} of $X$ is $S(X)\coloneqq S/I(X)$, graded by degree.
-:::
+For a closed subset $X\subseteq\PP^n$ with homogeneous ideal $I(X)\subseteq S=k[x_0,\ldots,x_n]$, the homogeneous coordinate ring is $S(X)=S/I(X)$, graded by degree ([[D-L6ERW]]).
 
 $S(X)$ is the coordinate ring of the affine cone $C(X)\subseteq\AA^{n+1}$ over $X$, and it is not an invariant of the variety: the same $\PP^1$ embedded by $\OO(1)$ has $S=k[x,y]$, and embedded by $\OO(2)$ has the Veronese subring $k[x^2,xy,y^2]$.
 What is invariant is the Hilbert function of $S(X)$ in large degree, which is a polynomial — the Hilbert polynomial — whose degree and leading coefficient are the dimension and the degree of $X$ ([[D-L6ERW]]).
