@@ -13,15 +13,9 @@ order: 0
 
 - [@Rud74]
 
-- Richard Silverman, *Complex Analysis with Applications*
-
 - [@SS03]
 
 - [@Tay19]
-
-- Simon, *Basic Complex Analysis*
-
-- Hörmander, *An Introduction to Complex Analysis in Several Variables*
 
 - [@Lan10]
 
