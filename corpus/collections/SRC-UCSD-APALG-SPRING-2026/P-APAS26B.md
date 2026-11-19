@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 4, is the statement the card answers, and the head of the solution names it; the retained
+    file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the blank
+    versos, so Problem 2 stands on its page 4. Checked: the statement against the paper's text layer at
+    the page named; the singular values $\sqrt{r_i}$ and the left and right singular spaces read off the
+    one-hot columns; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution set exists for this paper to compare the argument with, and
+    no other card of the collection in this pass.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
@@ -37,6 +49,8 @@ Determine the **nonzero singular values** of $A$, and give explicit **orthonorma
 :::
 
 ::: {.solution}
+
+The problem is Problem 2 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 4 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 ::: pf
 
