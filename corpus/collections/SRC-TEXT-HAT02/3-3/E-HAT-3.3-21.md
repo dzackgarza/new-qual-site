@@ -398,6 +398,50 @@ audit:
     the question — the point the rejected Stanford paragraph missed. Not claimed: a published
     solution of the bracketed question; the reading here is of the card's own assembly from those
     three theorems.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, reader's report on the card: four rendered sentences are corrected and the earlier
+    notes this supersedes are named. (1) Step cone-case's proof said the Stanford set "reads
+    H~^m(U_K;G)=0 from the exact sequence of the pair (X^+,U_K)"; the vanishing is that U_K is a
+    cone and hence contractible, and the exact sequence is what converts it into the isomorphism.
+    (2) The same proof said a smaller cone-shaped neighbourhood contracts to the cone point "by
+    radial scaling", which is false: a neighbourhood of the cone point need not contain the image of
+    any uniform scaling, the cone on a countable discrete set with shrinking radii being a
+    counterexample; the sentence now reparametrizes each ray by an interval chosen inside the
+    neighbourhood, which gives a subspace homeomorphic to the cone and contracting along the rays.
+    The event of this date added under issue #170, whose note reads "the subcones are cofinal and
+    radial scaling contracts each to the cone point", endorses the sentence corrected here. (3) The
+    closing paragraph's "as step degree-one computes directly" is replaced by the citation the claim
+    needs, Frankland, Theorem 1.2 (Specker's theorem), printed p. 2; step degree-one computes
+    H^1(E), not Hom(prod_N Z, Z). (4) Step degree-one's claim said the two groups "are both free
+    abelian on countably many generators, so degree one does not separate the two sides", which
+    overclaims: abstract isomorphism is not an isomorphism of the evident map. It and the closing
+    step now say that no invariant of the two groups as abstract groups can decide the question in
+    degree one, and that nothing asserts the degree-one map fails. (5) Earlier notes the card no
+    longer holds, named with their text: the 2026-11-07 event whose note says "The definite answer
+    to Hatcher's bracketed question ... remains deferred" states a status the card left behind when
+    it answered the question in degree two, and is superseded as the first deferral was; the
+    2026-11-14 event saying "The card's closing paragraph now also says which part of the exercise
+    is published ... and which is not" describes a paragraph removed on 2026-11-16; the 2026-11-16
+    event saying answer 4224683 "shows only that infinity has no cone neighbourhood ... which is not
+    the question" is false of the answer, which also identifies the compactification with the
+    Hawaiian earring, as the rendered step uses it; the event saying Eda--Kawamura, Wiegold,
+    Stanford Solution Set 4 and Kottke "have no text version in tmp/sources" is false, all four
+    having a .md beside the PDF; the event saying the Stanford and Kottke transcriptions "are
+    unchanged" was overtaken by the 2026-11-18 change to cone-case and by this one; and the event
+    saying "every step now names its source with the numbered statement and the printed page" is
+    inexact, three of the six steps citing a paragraph of a set that has no numbered statements.
+    (6) The event of this date above whose note says "The bracketed question has no published
+    solution in anything read, which is what the last paragraphs of the card say" attributes to the
+    rendered text something it does not carry: the card's last paragraphs record what the Stanford
+    paragraph gets wrong and that the question is settled, and the statement that no published
+    solution exists is this audit trail's and COMPLAINTS', not the page's. Checked in this pass:
+    Hatcher, section 3.3 Exercise 21 on printed p. 259 (PDF 268); the cone on a countable discrete
+    set as the counterexample to uniform radial scaling; Stanford, printed p. 1, and Kottke,
+    Problem 2, printed p. 2; Frankland's Theorems 1.2 and 1.3, printed p. 2. Not checked: the
+    Eda--Kawamura and Wiegold papers were not re-read.
 
 ---
 
@@ -432,7 +476,7 @@ $$
 If $\infty$ has a cone neighborhood in $X^+$, then the evident map $H_c^n(X;G)\to H^n(X^+,\infty;G)$ is an isomorphism for all $n$.
 
 ::: pf-proof
-This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2, printed p. 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, and reads $\widetilde H^m(U_K;G)=0$ from the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood of the cone point contains a smaller cone-shaped neighborhood that contracts to the cone point by radial scaling. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
+This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2, printed p. 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, uses that each $U_K$ is a cone and therefore contractible, so that $\widetilde H^m(U_K;G)=0$ for all $m$, and then reads the isomorphism off the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood $W$ of the cone point contains a smaller cone-shaped neighborhood: choose on each ray of the cone an interval ending at the cone point and lying in $W$, and reparametrize the ray by that interval, which turns their union with the cone point into a subspace homeomorphic to the cone, contained in $W$, and contracting to the cone point along the rays. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
 $$
 H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
 $$
@@ -473,7 +517,7 @@ By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Th
 
 ::: {.pf-step #degree-one}
 
-For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so degree one does not separate the two sides.
+For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\infty;\ZZ)$ are both free abelian on countably many generators, so no invariant of the two groups as abstract groups, and in particular no countability argument, can separate the two sides in degree one.
 
 ::: pf-proof
 
@@ -497,7 +541,7 @@ The argument of this step is the card's own, on three published theorems: **K. E
 $$
 \boxed{H_c^2(\ZZ\times\RR;\ZZ)=0,\qquad H^2((\ZZ\times\RR)^+,\infty;\ZZ)\ne0,}
 $$
-so the evident map cannot be an isomorphism, and the cone-neighborhood hypothesis of step [](#cone-case){.pf-ref} cannot hold for $\ZZ\times\RR$. The separation is in degree two; by step [](#degree-one){.pf-ref} degree one does not separate the two sides, and nothing here asserts that the degree-one map fails.
+so the evident map cannot be an isomorphism, and the cone-neighborhood hypothesis of step [](#cone-case){.pf-ref} cannot hold for $\ZZ\times\RR$. The separation is in degree two; step [](#degree-one){.pf-ref} shows only that the two groups in degree one are abstractly isomorphic, and nothing here asserts that the degree-one map fails.
 :::
 
 :::
@@ -510,6 +554,6 @@ H^n(X,X\setminus L)=H^n(X,V\setminus\{\infty\})\cong H^n(X^+,V)\cong H^n(X^+,\in
 $$
 the first group by the identity just written, the middle isomorphism by excision of the point $\infty$ — closed in $X^+$ and contained in the open set $V$, so that its closure lies in the interior of $V$ — and the last by the deformation retraction of $V$ onto $\infty$. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. Kottke writes the middle group as $H^n(X,V)$, where $V$ is an open set of $X^+$ containing $\infty$ and so is not a subspace of $X$; the excision removes $\infty$ from it, and the group meant is the one written above.
 
-Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, as step [](#degree-one){.pf-ref} computes directly. The bracketed question is settled above, in degree two with $G=\ZZ$.
+Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, stated as Theorem 1.2 of Frankland, *Cohomology of the Hawaiian Earring*, printed p. 2. The bracketed question is settled above, in degree two with $G=\ZZ$.
 
 :::
