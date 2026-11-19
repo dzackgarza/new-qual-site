@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.3.7, printed p. 88,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.3.7, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the common zero of $f_x=y+4x^3$ and $f_y=x+4y^3$ (only the origin, and the spurious solutions of $256x^8=1$ have $f=-2x^4\ne0$), the ordinary node from the lowest term $xy$, $g(\widetilde C)=3-1=2$, and the degree-preservation of a birational projection.
+    Not checked: Yang's Solutions outside printed p. 88; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.3.7 at printed
+    p. 88 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -330,4 +350,6 @@ Hence it is the required counterexample.
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.7, printed p. 222, text version `tmp/sources/hartshorne-solutions-egbert.md`, notes that the nodal quartic has a single ordinary node, so its normalization has genus one less than the arithmetic genus, while a nonsingular space curve of the same degree has the larger arithmetic genus; a birational projection preserving degree is therefore impossible.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.7, printed p. 88, gives the counterexample in three sentences. The quartic $f=xy+x^4+y^4$ has only the one node $(0,0)$: the two partials $f_x=y+4x^3$ and $f_y=x+4y^3$ vanish together only there when $\characteristic k\neq2$, since together they force $y=-4x^3$ and $x=-4y^3$, hence $x(1-256x^8)=0$, and at $256x^8=1$ one has $f=x^4(256x^8-3)=-2x^4\neq0$; the lowest term $xy$ is a product of two distinct linear forms, so the node is ordinary and the normalization has $g=2$, one less than the arithmetic genus $3$ of a plane quartic. A birational projection of a nonsingular $X\subseteq\PP^3$ onto $C$ preserves the degree, so $\deg X=4$, and $X\cong\widetilde C$ would have genus $2$; but (4.3.6) leaves only $g=0$ and $g=1$ for a degree-four curve in $\PP^3$. So no such $X$ exists. The entry's 'clearly' is the two-partial computation, which is what makes the single node a fact rather than an impression.
 :::
