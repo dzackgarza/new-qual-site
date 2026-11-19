@@ -9,12 +9,12 @@ order: 30
 
 | Question | Page |
 | --- | --- |
-| Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic\|Is it holomorphic?]] |
-| Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant\|Theorems that give a constant]] |
-| Classify this singularity, or compute its order | [[complex-analysis/singularities/classifying-a-singularity\|Classifying a singularity]] |
-| Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close\|Which contour do I close?]] |
-| How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
-| Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
+| Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic]] |
+| Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant]] |
+| Classify this singularity, or compute its order | [[complex-analysis/singularities/classifying-a-singularity]] |
+| Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close]] |
+| How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region]] |
+| Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map]] |
 
 ## Chapters
 
