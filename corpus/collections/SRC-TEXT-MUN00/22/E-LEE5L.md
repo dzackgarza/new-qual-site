@@ -27,7 +27,7 @@ audit:
     composite of a retraction and a homeomorphism, hence a quotient map; the open half-plane
     in A maps to (0,infinity) and the closed set cut out by the tangent graph maps to an
     open interval, so it is neither open nor closed. (tmp/sources/munkres-solutions-
-    (tmp/sources/munkres-solutions-positron-ch2.pdf).
+    positron-ch2.pdf).
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -80,7 +80,7 @@ The set $U=(\RR\times(0,\infty))\cap A=\theset{x\times y\mid x\ge0,\ y>0}$ is op
 $q$ is not a closed map.
 
 ::: pf-proof
-Let $C=\theset{x\times\tan x\mid \pi/2<x<3\pi/2}$, a subspace of $\RR^{2}$. It is closed: if $x_{k}\times\tan x_{k}$ converges to $x\times y$ in $\RR^{2}$, then $x_{k}\to x\in[\pi/2,3\pi/2]$ and $\tan x_{k}\to y$ is bounded, and $|\tan t|\to\infty$ as $t$ decreases to $\pi/2$ or increases to $3\pi/2$, so $x$ lies in the open interval $(\pi/2,3\pi/2)$ and $y=\tan x$, giving $x\times y\in C$. Every point of $C$ has positive abscissa, so $C\subset A$ and $C=C\cap A$ is closed in $A$. But $q(C)=(\pi/2,3\pi/2)$, which is not closed in $\RR$, since $\pi/2$ is a limit point of it that it does not contain.
+Let $C=\theset{x\times\tan x\mid \pi/2<x<3\pi/2}$, a subspace of $\RR^{2}$. It is closed: if $x_{k}\times\tan x_{k}$ converges to $x\times y$ in $\RR^{2}$, then $x_{k}\to x\in[\pi/2,3\pi/2]$ and $\tan x_{k}\to y$ is bounded, and $\abs{\tan t}\to\infty$ as $t$ decreases to $\pi/2$ or increases to $3\pi/2$, so $x$ lies in the open interval $(\pi/2,3\pi/2)$ and $y=\tan x$, giving $x\times y\in C$. Every point of $C$ has positive abscissa, so $C\subset A$ and $C=C\cap A$ is closed in $A$. But $q(C)=(\pi/2,3\pi/2)$, which is not closed in $\RR$, since $\pi/2$ is a limit point of it that it does not contain.
 :::
 
 :::
