@@ -246,6 +246,28 @@ audit:
     numbering the steps 1 to 10 with QED labels present and no unknown step
     label. Not checked: the printed copies of Hartshorne, Xie or Hartshorne
     1971; the text layers of the retained PDFs only.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The irreducibility of Xie's curve, read for issue #164 and recorded rather
+    than repaired. Example 3.1, printed p. 5, writes "The section t determines
+    an irreducible curve C' on X" and gives no argument for it, and this card's
+    steps s7 to s10 use the integrality of Y: s9 computes one singular point
+    and the normalization from it, and s10 meets D with Y as an irreducible
+    curve. The assertion is not a consequence of the data the construction
+    supplies. Y.f = 3 and Y.C_0 = 0, so a decomposition Y = Y_1 + Y_2 would
+    give a component with Y_1.f = 1, that is a section, of class C_0 + bf, and
+    Y_1.C_0 = 0 reads 1 + b = 0, so b = -1 and Y_1^2 = 1 + 2b = -1; nothing in
+    the construction excludes a section of that class, and Xie does not argue
+    that none occurs. What stands as computed: the zero locus Y of his t has
+    class 3C_0 - 3f and is disjoint from C_0, and pi: Y -> C has degree
+    Y.f = 3. The remark now says that the irreducibility is his assertion; the
+    statement of (c) keeps "integral", which is the form the corrected statement
+    can have if his assertion holds. Not checked: whether Y is irreducible for
+    this X, for which no proof was found in the paper and no other source was
+    searched; the printed Xie was not read, only the retained PDF's text layer
+    at pp. 5-6.
 
 ---
 
@@ -486,7 +508,7 @@ Parts (a) and (b) have complete published arguments, and the curve of part (c) d
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*: Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the irreducible curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section; the irreducibility of $C'$ is asserted there and not proved, and steps [](#s7){.pf-ref} to [](#s10){.pf-ref} use the integrality of $Y$ as his assertion rather than as something proved here; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
