@@ -16,6 +16,31 @@ audit:
   - event: solution-written
     by: gemini-3.7-flash
     date: 2026-08-25
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained extraction assets/attachments/Complex_Analysis_Spring_2011_extracted.md,
+      problem 2: "Find all meromorphic functions that have a simple pole at the
+      point 2 and a double pole at infinity, but are analytic elsewhere. Prove
+      that your list is complete." The card agrees.
+  - event: solution-reviewed
+    by: claude
+    date: 2026-11-19
+    note: >-
+      The list is correct and the completeness argument closes. Subtracting the
+      principal part A/(z-2), with A the residue, leaves an entire function,
+      because the simple pole at 2 is the only finite singularity, and
+      subtracting a term that vanishes at infinity leaves the order of the pole
+      there unchanged, so the difference has a double pole at infinity. An
+      entire function with a pole of order two at infinity is a polynomial of
+      degree exactly two: the Laurent expansion at infinity is a_2 z^2 + a_1 z +
+      a_0 + O(1/z), and after subtracting that quadratic, Liouville applied to a
+      function tending to zero at infinity gives zero. Conversely each
+      A/(z-2) + Bz^2 + Cz + D with A and B nonzero has exactly the two
+      prescribed poles, since the rational term is holomorphic and vanishing at
+      infinity and the quadratic term has a double pole there. Nothing was
+      changed.
 ---
 ::: {.problem}
 Find all meromorphic functions that have a simple pole at $z=2$ and a double pole at $z=\infty$, but are analytic elsewhere. Prove that your list is complete.
