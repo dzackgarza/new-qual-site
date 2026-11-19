@@ -29,6 +29,15 @@ audit:
     Read against the printed problem, Smith 8000e.pdf page 8, problem 4, with its
     printed hint (1i)(1j)(1i) = (ij). Correct: the star transpositions give every
     transposition by conjugation, and transpositions generate S_n. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, cycles problem 4, with its
+    printed hint. $(1i)(1j)(1i)=(ij)$ by conjugation, so every transposition lies in
+    $\langle(12),\ldots,(1n)\rangle$, and
+    $(a_1\cdots a_k)=(a_1a_k)(a_1a_{k-1})\cdots(a_1a_2)$ writes every cycle as a product of
+    transpositions. No defect.
 ---
 
 ::: {.exercise}
