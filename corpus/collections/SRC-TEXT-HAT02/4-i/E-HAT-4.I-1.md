@@ -35,9 +35,20 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.I Exercise 1, printed p. 462, including the bracketed hint, which is the route the card takes. No retained solution set covers this exercise; the argument is the card's own. Checked: that the retraction splits the inclusion on homology; that the long exact sequence of $(X,A)$ therefore breaks into split short exact sequences, so $(r_*,q_*)$ is an isomorphism; that suspending identifies $F_*$ with that isomorphism; and that both sides are simply connected so Whitehead applies.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 471 carries the running head 462, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.I of Hatcher, *Algebraic Topology* (2002), printed p. 462, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 If a connected CW complex $X$ retracts onto a subcomplex $A$, show that $\Sigma X \simeq \Sigma A \lor \Sigma(X/A)$.
 [One approach: Show the map $\Sigma r + \Sigma q: \Sigma X \to \Sigma A \lor \Sigma(X/A)$ induces an isomorphism on homology, where $r: X \to A$ is the retraction and $q: X \to X/A$ is the quotient map.]
 :::
