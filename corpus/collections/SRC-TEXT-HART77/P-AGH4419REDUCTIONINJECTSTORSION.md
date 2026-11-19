@@ -30,6 +30,26 @@ audit:
     Rechecked the finite-flat and finite-etale arguments fibre by fibre,
     the specialization equalizer argument over Z_(p), and the point counts
     at p=3,5 used to rule out torsion in Exercises IV.4.17 and IV.4.18.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.19, printed p. 94,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.19, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the shape of the argument: a finite flat group scheme over a Dedekind domain whose fibre at $(p)$ is étale for $(n,p)=1$ injects into its $\FF_p$-points, which is the statement needed; and checked that surjectivity of reduction is not available for it.
+    Not checked: Yang's Solutions outside printed p. 94; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.19 at printed p. 94; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -278,4 +298,8 @@ torsion-free applications.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.19, printed p. 94, builds the integral model: $X$ sits in $\PP^2_\ZZ$ as $f(x,y,z)=0$, so the generic fibre is $X/\QQ$ and the fibre at $(p)$ is $X_p$; over $T=D(2\Delta)$ the addition and negation morphisms extend, hence so does $[n]$, and $[n]$ is flat there because for a prime $\ell$ the fibre $(\ell_X)_p$ is either constant or flat by (II.6.8) and cannot be constant for all $p$ --- a nonconstant morphism of curves over a Dedekind base is flat --- while finiteness is (4.17); so $\ker[n]$ is finite and flat over $T$. Its conclusion is the injection $X(\QQ)[n]\hookrightarrow X_{(p)}(\FF_p)$ for $(n,p)=1$, which is what the exercise asks. The final line as printed overshoots it: it writes an exact sequence $0\to\ker\pi_p\to X(\QQ)\to X_{(p)}(\FF_p)\to 0$, and reduction on rational points is not surjective in general --- the group of components of the special fibre can carry $\FF_p$-points that no $\QQ$-point reduces to --- so the sequence is exact only at the left. The finite flat kernel of $[n]$, not any surjectivity of $\pi_p$, is what makes the torsion injection true.
 :::
