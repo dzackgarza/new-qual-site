@@ -12,6 +12,20 @@ classification:
   - Green's Theorem
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The evaluation is correct, and there is a quick check of it: the region is the
+    upper half of the disk of radius one centred at (1,0), whose centroid lies at
+    x = 1 and whose area is pi/2, so the double integral of 2x is pi, which is
+    what the polar computation gives. Green's theorem applies since both
+    coefficients are smooth, the boundary is a piecewise smooth simple closed
+    curve traversed counterclockwise, and the integrand of the double integral is
+    dQ/dx - dP/dy = 2x. Nothing was changed. The statement itself was not
+    re-read against the scan in this pass: the retained file
+    assets/attachments/grad_prelim_Fall14.pdf has no text layer.
 ---
 
 ::: {.problem}
