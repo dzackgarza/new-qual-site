@@ -8953,3 +8953,20 @@ not read on its own page.
 
 **The remainder.** Twenty-six Chapter IV cards still lack Yang; the queue now starts at IV.4.11
 `P-AGH4411COMPLEXMULTIPLICATION`, and Yang's 4.4.11--4.4.16 are on printed p. 93.
+
+## 2026-11-19, tenth item: a macro defined for MathJax but not for Pandoc renders as a literal command, and every per-card check passes it
+
+**What the whole-corpus gate caught that nothing else did.** `P-AGH218GAMMALEFTEX` used `\mcf` forty times. `\mcf` is defined in the author's `~/.pandoc/styles/macros/tier1-mathjax-simple.tex` (it expands to `\mathcal{F}`) but **not** in `~/.pandoc/styles/dzg-macros.sty`, which is the preamble the corpus renders with. The consequences, in order of how late they were discovered:
+
+- `qualc.authoring check` passed: the YAML and the Markdown parse are fine.
+- `tools/check_macros.py` passed: it reports *undefined* control words, and `\mcf` is not undefined in the file it consults.
+- `tools/sync_macros.py --check` passed, and `vocabularies/macros.json` even lists `\mcf` with its expansion, because that mirror is generated from **usage** in corpus and wiki, not from the preamble alone.
+- `qualc check` failed, at the one step that actually renders the mathematics: `raw TeX the page cannot show: '\\mcf'`.
+
+So the command would have reached the reader as the literal string `\mcf`, and four separate checks passed it on the way.
+
+**The repair.** All forty occurrences were replaced by `\mathcal{F}`, the macro's own expansion, and the card records a `source-corrected` event saying why. No mathematics changed.
+
+**The rule.** A macro is usable on a card only if the **preamble the build feeds the renderer** defines it. The mirrors answer different questions: `macros.json` says "this is used somewhere and here is what it means", `check_macros.py` says "this is not an unknown control sequence", and neither says "the page can show this". The check that says that is the full `qualc check`, which is why a session's work is not verified until the corpus gate has run over it — a lesson this session needed three times, once for div nesting, once for fence length, once here.
+
+**What is not established.** How many other cards use tier-1 MathJax macros that the Pandoc preamble lacks: not measured, and not measurable by the mirror, since the mirror records usage rather than availability. The gate is the instrument; it reports them one at a time.
