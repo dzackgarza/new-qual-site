@@ -506,6 +506,27 @@ audit:
     bad-locus-proper-closed, step part-c-open and the qed say, and nothing on
     the card changes. Not done: the Scribd compilations and the dokumen.pub
     page were not read, and no library or print source was consulted.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the item the last report left open: the proof of step
+    bad-locus-proper-closed now proves the properness in the case where no
+    centre triple of the word contains the label of P. There the word acts on
+    the fixed configuration by part (b), so the terminal positions of
+    P_1,...,P_r have no three collinear, and the terminal position of P is
+    T(P) for the composite T of the word's quadratic transformations, a
+    birational map of the plane; a terminal triple not containing P gives a
+    condition independent of P, which is empty, and one containing P gives
+    T(P) in L for the line through the other two terminal points, whose
+    preimage is a proper closed subset because T is dominant and L is proper.
+    The case where some centre triple contains P stays open and the proof says
+    so; no claim of the step changes, and the head, step part-c-open and the
+    qed still say (c) is not proved on this card. Read for this event: the
+    exercise on printed p. 409, and part (b) as step
+    general-position-preserved-under-sequence proves it. Not checked: the case
+    with P among the centres, for which no published proof was located; the
+    search is recorded in the event above.
 
 ---
 
@@ -623,7 +644,7 @@ Work on the open subset on which the successive centers occurring in $w$ are non
 
 The determinant is not identically zero, and the proof of that is the one point of this step that the card does not carry out.
 
-What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion. The natural route is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this card asserts properness and does not prove it: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is therefore not proved on this card for any particular $w$. What is proved without it is (a), (b), and everything in (d) and (e).
+What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The case in which some centre triple of $w$ contains $P$ is not proved here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this card asserts properness and does not prove it in general: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is therefore not proved on this card for any particular $w$. What is proved without it is (a), (b), and everything in (d) and (e).
 :::
 
 :::
