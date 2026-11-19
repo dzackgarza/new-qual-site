@@ -160,6 +160,17 @@ audit:
     gives O_X(Z - P_0) = O_X(D) = mcl. Not checked in this pass: the Vakil
     page 555 and the NTU solution's printed p. 4, which the preamble of s5 and
     s6 cite, were not re-opened.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event above, of this date, ends "Read and unchanged in this pass: steps
+    s1 to s5 and s7", which overstates what was read. Read here at length: step
+    s3 entire, s4 entire, s5 entire, and s6, which is the step the event
+    repairs; and the last line of s6 that closes the argument. Read in part
+    only: s1's statement and s2's opening lines. Not read: s7. The steps read
+    in part or not at all are not certified by this pass, and nothing else in
+    the event above is withdrawn.
 ---
 
 ::: {.problem}
