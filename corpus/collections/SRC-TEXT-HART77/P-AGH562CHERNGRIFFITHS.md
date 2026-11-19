@@ -353,6 +353,31 @@ audit:
     named, and the application in step clifford-equality-canonical. Not
     checked: no other printed proof of the equality case was searched for,
     and the card's other steps were not re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step trivial-canonical-pg-one's attribution is corrected: it said Yang and
+    Egbert "record |12K_X| nonempty by Theorem 6.1", which is the book's number
+    and not the number either source prints. Read in the text versions of
+    tmp/sources/lfwin-hartshorne-solutions.md, Solution 5.6.2, and
+    tmp/sources/hartshorne-solutions-egbert.md at its 5.6.2 entry: Yang writes
+    "Then by theorem 6.2., we have |12K| != 0. So since 12K = 0, we have
+    kappa = 0 by theorem 6.3", and Egbert "Assuming F is not ruled, then by thm
+    V.6.2, 6.3, there is r > 0, D >= 0 with D ~ rK_X" and then "Since X is
+    non-ruled then |12K| nonempty by thm 6.2". Both cite Theorem 6.2, and the
+    statement they use is the book's Theorem 6.1, printed p. 422:
+    kappa = -1 iff |12K| is empty iff X is rational or ruled. Theorem 6.2 on
+    the same page is Castelnuovo's criterion p_a = P_2 = 0. The step now says
+    which number each source prints and which theorem states what they use.
+    The mathematics of the step was read in this pass and is unchanged: A.D = 0
+    for the effective canonical divisor D because A is ample, hence D = 0, hence
+    omega_X is trivial and p_g = 1 over C. Read and unchanged in this pass:
+    steps clifford-equality-canonical, canonical-meets-hyperplane-zero,
+    irregularity-zero and main-dichotomy, and the statement against the printed
+    V.6.2, printed p. 423 (PDF p. 438, folio read). Not checked in this pass:
+    the two sources' printed pages 115 and 303 were not re-read, the numbered
+    statement being quoted in the text versions above.
 ---
 
 ::: {.problem}
@@ -723,11 +748,7 @@ h^0(X,\omega_X)
 =1.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, record
-$\linearsystem{12K_X}\ne\emptyset$ by Theorem 6.1, printed p. 422, for $X$
-not ruled, then $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3, printed
-p. 422; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3"
-and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
+Yang, printed p. 115, and Egbert, printed p. 303, both cite "theorem 6.2" for the nonemptiness of $\linearsystem{12K_X}$ on a surface that is not ruled --- Yang's "Then by theorem 6.2., we have $\abs{12K}\neq0$" and Egbert's "$\abs{12K}\neq\emptyset$ by thm 6.2" --- and that statement is the book's Theorem 6.1, printed p. 422, $\kappa=-1\Leftrightarrow\linearsystem{12K}=\emptyset\Leftrightarrow X$ rational or ruled, while Theorem 6.2 on the same page is Castelnuovo's criterion. With it $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3, printed p. 422; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3" and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
 from an effective divisor of class $K_X$ meeting the ample class $A$ in zero
 to $\omega_X\cong\OO_X$ and $p_g(X)=1$, is the card's own.
 :::
