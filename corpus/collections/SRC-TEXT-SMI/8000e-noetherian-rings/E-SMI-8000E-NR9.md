@@ -39,6 +39,14 @@ audit:
     Every step now carries a pf-proof: the final step now says which two identities make extension and
     contraction mutually inverse, instead of naming the conclusion. Nothing mathematical was changed.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The closing step had the two identities interchanged: it attributed $f(f^{-1}(J))=J$ to
+    step s3 and $f^{-1}(f(I))=I$ to step s4, while s3 proves the second identity and s4 the
+    first. The sentence now matches each reference to the identity its own step proves; the
+    steps and the bijection are unchanged.
 ---
 
 ::: {.exercise}
@@ -165,7 +173,7 @@ $$
 and the ideals of $S$.
 
 ::: pf-proof
-Step [](#s3){.pf-ref} gives $f(f^{-1}(J))=J$ for every ideal of $S$, and step [](#s4){.pf-ref} gives $f^{-1}(f(I))=I$ for every ideal of $R$ containing $\ker f$, so the two maps are mutually inverse.
+Step [](#s3){.pf-ref} gives $f^{-1}(f(I))=I$ for every ideal of $R$ containing $\ker f$, and step [](#s4){.pf-ref} gives $f(f^{-1}(J))=J$ for every ideal of $S$, so the two maps are mutually inverse.
 :::
 
 :::
