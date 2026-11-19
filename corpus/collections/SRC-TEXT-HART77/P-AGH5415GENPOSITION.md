@@ -704,7 +704,7 @@ What the argument gives is the closedness, which is all the rest of (c) uses: th
 :::
 
 ::: {.pf-step #properness-r-at-most-seven}
-If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
+If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is contained in a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
 
 ::: pf-proof
 Fix a word $w$ and a terminal triple $T=\{a,b,c\}$. The classes on $\operatorname{Bl}_{r+1}\PP^2$ can be followed through the moves of $w$: a quadratic transformation centred at three of the current points replaces $h$ by $2h-c_1-c_2-c_3$ and the three exceptional classes by $h-c_j-c_k$, an integral orthogonal transformation of $\operatorname{Pic}$ which fixes $K=-3h+\sum_ic_i$. So the classes $h_w$ and $c_1,\ldots,c_{r+1}$ attached to the terminal plane depend on $w$ alone and not on $P$, and
@@ -715,7 +715,7 @@ The three terminal points are collinear exactly when $\linearsystem{D}\ne\emptys
 
 Now let $U$ be the complement in $\PP^2$ of the finitely many closed subsets on which the $r+1$ points fail to satisfy Dolgachev's conditions (i)--(iv) of the definition preceding Proposition 8.1.9, printed p. 251: three collinear, six on a conic, or a cubic through the points singular at one of them. Each is proper, the first two because the fixed tuple is in general position and the finitely many lines through its pairs and conics through its fives are proper closed subsets, the third because the cubics through the $r+1$ points singular at a fixed one of them are the solutions of a square system whose determinant is not identically zero. $U$ is nonempty. For $P\in U$ the blowup of $\PP^2$ at the $r+1\le8$ points is a Del Pezzo surface by Proposition 8.1.9 on that page, so $-K$ is ample and every nonzero effective class has negative $K$-degree; since $K\cdot D=0$ and $D\ne0$, $\linearsystem{D}=\emptyset$.
 
-Hence no point of $U$ lies in a set of step [](#bad-locus-proper-closed){.pf-ref}: were $w$ defined at $P\in U$ with the terminal triple collinear, $\linearsystem{D}$ would be nonempty there. Each of those sets is closed and misses the nonempty open set $U$, so each is proper, and step [](#dense-general-position-extension){.pf-ref} gives (c) for $r\le7$, with $V$ the complement of their countable union and of the finitely many points and lines.
+Hence no point of $U$ lies in a set of step [](#bad-locus-proper-closed){.pf-ref}: were $w$ defined at $P\in U$ with the terminal triple collinear, $\linearsystem{D}$ would be nonempty there. Each of those sets is therefore contained in the complement of $U$, a proper closed subset of $\PP^2$, and step [](#dense-general-position-extension){.pf-ref} applied to their closures gives (c) for $r\le7$, with $V$ the complement of the countable union of those closures and of the finitely many points and lines. The sets themselves need not be closed, since definedness of a word is an open condition; it is their closures that the density argument uses.
 :::
 
 :::
