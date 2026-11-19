@@ -10,7 +10,7 @@ topics:
 
 ## Polynomial rings and Gauss's lemma
 
-For a field $k$, the division algorithm makes $k[x]$ a Euclidean domain under the degree, which is the case in which the chain of classes of rings collapses; over a general unique factorization domain the passage between $R[x]$ and $F[x]$ is Gauss's lemma.
+For a field $k$ the division algorithm makes $k[x]$ a Euclidean domain under the degree, so $k[x]$ is a principal ideal domain and a unique factorization domain as well; over a general unique factorization domain $R$ with fraction field $F$, Gauss's lemma passes irreducibility between $R[x]$ and $F[x]$.
 
 [[FD-CI4NB]]
 
