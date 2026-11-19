@@ -39,23 +39,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Field Homework 1, problem 1(a): the invariant subspace must be nonzero
-
-- **Object and need:** `P-FHW1-01` in `SRC-FIELDS-HOMEWORK-1`, whose provenance is `assets/attachments/fields-homework-1.pdf`.
-  The sheet asks: $\alpha\in F$ is algebraic over $K$ if and only if $F$ contains a finite-dimensional $K$-subspace $L$ with $\alpha L\subseteq L$.
-
-- **Observed evidence:** `assets/attachments/fields-homework-1_extracted.md`, problem 1(a), reads "if and only if F contains a finite-dimensional K-vector subspace L such that $\alpha\cdot L\subset L$", and the page image of the scan agrees; no nonvanishing hypothesis is stated.
-  The subspace $L=\{0\}$ is finite-dimensional and satisfies $\alpha L\subseteq L$ for every $\alpha\in F$, so the converse implication fails as written: taking $F=K(t)$ and $\alpha=t$, no nonzero finite-dimensional $K$-subspace of $K(t)$ is stable under multiplication by $t$, since such an $L$ would make $t$ algebraic over $K$ by the very argument the problem asks for in the forward direction.
-
-- **Impact and owner:** the statement of `P-FHW1-01`, and any solution of it: part (a) is false without the hypothesis, and part (b) refers back to part (a)'s hypothesis, so its minimal polynomial statement inherits the same gap.
-
-- **Uncertainty:** verified error, not a source ambiguity.
-  The sheet is a scan with a machine extraction, but the missing words are absent from the page image, not lost by the extraction; every other problem on the sheet was read against the image at the same time.
-  A reader who insists the sheet means "nonzero" by implication is reading in a hypothesis the page does not print.
-
-- **Repair:** the card now requires $L\ne0$, with a `source-corrected` audit note pointing here; the solution proves both directions of the corrected statement.
-  The correction is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean> proves that `L = ⊥` satisfies the printed hypothesis for every $\alpha$, and proves both directions of the corrected statement, with `#print axioms` showing no `sorryAx`.
-
 ### NUS 1970 collections rest on a dataset, not on an examination paper
 
 - **Object and need:** `SRC-NUS-CA-1970-SPRING` and `SRC-NUS-RA-1970-SPRING`, 20 problem cards between them.
