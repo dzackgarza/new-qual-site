@@ -11,6 +11,28 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/FA25_-_Applied_Algebra_Qualifying_Exam.pdf,
+    problem 3: two distinct eigenvalues -2 and -3 of algebraic multiplicities 6
+    and 1, rank of (A + 2I)^3 equal to 2, and the request for exactly one
+    Jordan form from each similarity class. The card states the same data.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The count is correct. On the one-dimensional -3 eigenspace the operator
+    (A + 2I)^3 is multiplication by -1, of rank 1, so the -2 blocks must
+    contribute rank 1. On a nilpotent Jordan block of size s the cube has rank
+    max(s - 3, 0), so exactly one -2 block exceeds size 3 and it must have size
+    exactly 4, since size 5 gives rank 2 and size 6 gives 3; the remaining
+    dimension is 2, partitioned either as 2 or as 1 + 1. That yields the two
+    forms J_4(-2) + J_2(-2) + [-3] and J_4(-2) + [-2] + [-2] + [-3], and no
+    others, since a Jordan form over C is determined by the eigenvalues and the
+    multiset of block sizes. Nothing was changed.
 ---
 
 ::: {.problem}
