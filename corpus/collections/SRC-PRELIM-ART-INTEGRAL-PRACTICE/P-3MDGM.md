@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance repaired, the defect this date's COMPLAINTS screen recorded (the solution opened with
+    the step statement, leaving no place for a provenance sentence). The solution now opens with one:
+    the argument is the card's own, from $\sec x\cos x=1$, from $\tan x+\cot x=1/(\sin x\cos x)$
+    and from the substitution $u=\sin x$. The collection has no retained source --- its
+    `provenance:` is empty and its `source_kind` is `homework` --- so no page is cited. Both
+    antiderivatives were recomputed here and stand: $\tan x+e^{\sin x}+C$ and
+    $\tfrac12\sin^2x+C=-\tfrac12\cos^2x+C'$. Checked: `qualc.authoring check`; the Lamport filter,
+    steps 1, 1.1--1.4, 2, 2.1--2.4 with QED present. Not checked: no source exists to check the sheet
+    against, the two statements being read off the card's own problem block.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -27,6 +40,9 @@ Evaluate, on intervals where the integrands are defined,
 :::
 
 ::: {.solution}
+
+The argument is the card's own: both antiderivatives follow from $\sec x\cos x=1$, from $\tan x+\cot x=1/(\sin x\cos x)$ and from the substitution $u=\sin x$, with no source transcribed. The collection records no retained problem or answer sheet --- its `provenance:` list is empty and its `source_kind` is `homework` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
