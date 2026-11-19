@@ -418,11 +418,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **62 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **61 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Thirty-five of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 62 stand as this item lists them.
+   reported and repaired above. Thirty-six of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 61 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -643,7 +643,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    $\pi_n(S^n)=\ZZ$ with the action given by that degree: $-1$ for $n$ even, $+1$ for $n$ odd. The case
    $n=1$ is separate and trivial, $\RP^1=S^1$ with an abelian group acting on itself by conjugation.
 
-   Remaining unread in this item's set: §4.2 (38 more), §4.3 (24) --- 62 proofs.
+   **§4.2-3, read the same day.** Correct, no card changed. For $L^{2n+1}=S^{2n+1}/G$ with $G\cong\ZZ_m$ and
+   $X=L-\{x\}$, deleting the point lifts to deleting the $G$-orbit in $S^{2n+1}$, whose complement is
+   homotopy equivalent to a wedge of $m$ copies of $S^{2n}$; so $\pi_{2n}(X)=\pi_{2n}(\widetilde X)=H_{2n}(\widetilde X)$
+   by Hurewicz, and that is the free abelian group on $G$ with $G$ acting by left translation --- the regular
+   module $\ZZ[G]$, i.e. $\ZZ[\pi_1(X)]$ itself as a left module over itself.
+
+   Remaining unread in this item's set: §4.2 (37 more), §4.3 (24) --- 61 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
