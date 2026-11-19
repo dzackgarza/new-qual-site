@@ -59,9 +59,19 @@ audit:
     F_r/T_r bookkeeping as a step, the derivation of the one-factor homology from the complex, the
     term-by-term identification of the Kueneth summands, and the closed form
     N_i = max(0, min(m,i) - max(0,i-n) + 1). No defect found in the statement, §3.B Exercise 1.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 289 carries the running head 280.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.B of Hatcher, *Algebraic Topology* (2002), printed p. 280, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Compute the groups $H_i(\RP^m \times \RP^n; G)$ and $H^i(\RP^m \times \RP^n; G)$ for $G = \ZZ$ and $\ZZ_2$ via the cellular chain and cochain complexes.
 [See Example 3B.4.]
 :::
