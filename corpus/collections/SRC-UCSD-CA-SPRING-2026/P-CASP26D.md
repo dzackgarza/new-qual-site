@@ -61,7 +61,7 @@ On each open interval of $\RR\setminus\{0\}$ the function $f$ is continuous up t
 $F$ has a Laurent expansion $F(z)=\sum_{k\in\ZZ}a_kz^k$ on $\CC\setminus\{0\}$, and for every $r>0$ its coefficients satisfy $\abs{a_k}\le(r^N+r^{-N})r^{-k}$.
 
 ::: pf-proof
-$F$ is holomorphic on the annulus $0<\abs z<\infty$, so it has a Laurent expansion there with $a_k=\dfrac1{2\pi i}\oint_{\abs z=r}F(z)z^{-k-1}\dd z$ for every $r>0$; the Laurent expansion about $0$ in an annulus containing the circle gives the same coefficients in every such annulus. Estimating the integral by the maximum of the integrand on $\abs z=r$ gives $\abs{a_k}\le r^{-k}\max_{\abs z=r}\abs{F}\le r^{-k}(r^N+r^{-N})$ by step [](#reflect){.pf-ref}.
+$F$ is holomorphic on the annulus $0<\abs z<\infty$, so it has a Laurent expansion there with $a_k=\dfrac1{2\pi i}\oint_{\abs z=r}F(z)z^{-k-1}\dz$ for every $r>0$; the Laurent expansion about $0$ in an annulus containing the circle gives the same coefficients in every such annulus. Estimating the integral by the maximum of the integrand on $\abs z=r$ gives $\abs{a_k}\le r^{-k}\max_{\abs z=r}\abs{F}\le r^{-k}(r^N+r^{-N})$ by step [](#reflect){.pf-ref}.
 :::
 
 :::
