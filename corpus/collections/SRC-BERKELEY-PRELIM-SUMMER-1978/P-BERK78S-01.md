@@ -26,6 +26,13 @@ audit:
     group A_5, and Z/2Z as a quotient of Z. Proved A_5 simple from its
     conjugacy-class sizes and proved that every index-two subgroup is
     normal, so part 8 is impossible.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Summer78.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -49,6 +56,7 @@ For each of the following, either give an example or prove that no such example 
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Summer 1978, retained in this repository as `assets/attachments/Summer78.pdf`; the statement below is its wording.
 
 ::: pf
 
