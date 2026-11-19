@@ -51,14 +51,14 @@ An element $h \in G$ stabilizes $y$ if and only if $h \cdot y = y$.
 ::: pf-step
 
 Substituting $y = g \cdot x$:
-    $$h \cdot (g \cdot x) = g \cdot x \iff (g^{-1} h g) \cdot x = x \iff g^{-1} h g \in G_x.$$
+$$h \cdot (g \cdot x) = g \cdot x \iff (g^{-1} h g) \cdot x = x \iff g^{-1} h g \in G_x.$$
 
 :::
 
 ::: pf-step
 
 Multiplying on the left by $g$ and on the right by $g^{-1}$:
-    $$g^{-1} h g \in G_x \iff h \in g G_x g^{-1}.$$
+$$g^{-1} h g \in G_x \iff h \in g G_x g^{-1}.$$
 
 :::
 
@@ -111,14 +111,14 @@ Each of the $k$ distinct conjugates contains $\cardinality{H} - 1$ non-identity 
 ::: pf-step
 
 Bound the size of the union of all conjugates:
-    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } = \cardinality{ \{e\} \cup \bigcup_{i=1}^k (H_i \setminus \{e\}) } \le 1 + \sum_{i=1}^k (\cardinality{H_i} - 1) = 1 + k (\cardinality{H} - 1).$$
+$$\cardinality{ \bigcup_{g \in G} g H g^{-1} } = \cardinality{ \{e\} \cup \bigcup_{i=1}^k (H_i \setminus \{e\}) } \le 1 + \sum_{i=1}^k (\cardinality{H_i} - 1) = 1 + k (\cardinality{H} - 1).$$
 
 :::
 
 ::: pf-step
 
 Since $k \le [G : H]$, we have
-    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le 1 + [G : H](\cardinality{H} - 1) = 1 + [G : H]\cardinality{H} - [G : H] = \cardinality{G} + 1 - [G : H].$$
+$$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le 1 + [G : H](\cardinality{H} - 1) = 1 + [G : H]\cardinality{H} - [G : H] = \cardinality{G} + 1 - [G : H].$$
 
 :::
 
@@ -131,7 +131,7 @@ Since $H$ is a proper subgroup ($H \ne G$), the index $[G : H] \ge 2$.
 ::: pf-step
 
 Thus:
-    $$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le \cardinality{G} + 1 - [G : H] \le \cardinality{G} - 1 < \cardinality{G}.$$
+$$\cardinality{ \bigcup_{g \in G} g H g^{-1} } \le \cardinality{G} + 1 - [G : H] \le \cardinality{G} - 1 < \cardinality{G}.$$
 
 :::
 
@@ -224,7 +224,7 @@ Let $X^g = \{s \in S : g \cdot s = s\}$ denote the fixed point set of $g \in G$.
 ::: pf-step
 
 By Burnside's Lemma, the number of orbits is the average number of fixed points:
-        $$1 = \frac{1}{\cardinality{G}} \sum_{g \in G} \cardinality{X^g} \implies \cardinality{G} = \sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g}.$$
+$$1 = \frac{1}{\cardinality{G}} \sum_{g \in G} \cardinality{X^g} \implies \cardinality{G} = \sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g}.$$
 
 :::
 
@@ -237,7 +237,7 @@ Since the identity fixes all of $S$, $\cardinality{X^e} = \cardinality{S} \ge 2$
 ::: pf-step
 
 If every $g \ne e$ had at least one fixed point ($\cardinality{X^g} \ge 1$), then
-        $$\sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g} \ge 2 + (\cardinality{G} - 1) = \cardinality{G} + 1,$$
+$$\sum_{g \in G} \cardinality{X^g} = \cardinality{X^e} + \sum_{g \ne e} \cardinality{X^g} \ge 2 + (\cardinality{G} - 1) = \cardinality{G} + 1,$$
         a contradiction.
 
 :::

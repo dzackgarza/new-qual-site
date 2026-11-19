@@ -38,15 +38,15 @@ Show that if $U$ is connected, then the partition of $p^{-1}(U)$ into slices is 
 ::: pf-step
 
 Slices over an evenly covered set:
-    *Proof:*
+*Proof:*
 
 ::: pf-proof
 
 ::: pf-step
 
 By the definition of an evenly covered open set, there exists a partition of $p^{-1}(U)$ into a collection of pairwise disjoint open sets $\{V_\alpha\}_{\alpha \in A}$ in $E$:
-    $$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
-    such that for each $\alpha \in A$, the restriction $p\restrict_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
+$$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
+such that for each $\alpha \in A$, the restriction $p\restrict_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
 
 :::
 
@@ -63,7 +63,7 @@ The open sets $V_\alpha$ are called the *slices* of $p^{-1}(U)$.
 ::: pf-step
 
 Connectedness and clopen property of slices:
-    *Proof:*
+*Proof:*
 
 ::: pf-proof
 
@@ -92,7 +92,7 @@ Therefore each slice $V_\alpha$ is both open and closed (clopen) in the subspace
 ::: pf-step
 
 Characterization of slices as connected components:
-    *Proof:*
+*Proof:*
 
 ::: pf-proof
 
@@ -138,6 +138,6 @@ Thus $C = V_\alpha$.
 
 :::
 
-    *Proof:*
-    By step [](#s3){.pf-ref}, the slices $\{V_\alpha\}_{\alpha \in A}$ of $p^{-1}(U)$ are precisely the connected components of the topological subspace $p^{-1}(U)$. Because the partition of any topological space into its connected components is uniquely determined, the partition of $p^{-1}(U)$ into slices is unique.
+*Proof:*
+By step [](#s3){.pf-ref}, the slices $\{V_\alpha\}_{\alpha \in A}$ of $p^{-1}(U)$ are precisely the connected components of the topological subspace $p^{-1}(U)$. Because the partition of any topological space into its connected components is uniquely determined, the partition of $p^{-1}(U)$ into slices is unique.
 :::

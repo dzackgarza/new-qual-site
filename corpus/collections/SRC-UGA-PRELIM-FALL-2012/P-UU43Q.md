@@ -28,7 +28,7 @@ Prove that the line integral $\displaystyle\int_C (x+y^3)\,dx + (e^y+3xy^2)\,dy$
 ::: pf-step
 
 Construction of a potential function $f(x, y)$:
-    *Proof:*
+*Proof:*
 
 ::: pf-proof
 
@@ -41,22 +41,22 @@ Let $P(x, y) = x + y^3$ and $Q(x, y) = e^y + 3xy^2$ be the components of the 1-f
 ::: pf-step
 
 We seek a $C^1$ function $f(x, y)$ on $\RR^2$ such that $\nabla f = (P, Q)$, which requires:
-    $$\frac{\partial f}{\partial x} = x + y^3, \qquad \frac{\partial f}{\partial y} = e^y + 3xy^2.$$
+$$\frac{\partial f}{\partial x} = x + y^3, \qquad \frac{\partial f}{\partial y} = e^y + 3xy^2.$$
 
 :::
 
 ::: pf-step
 
 Integrating $\frac{\partial f}{\partial x} = x + y^3$ with respect to $x$ while holding $y$ constant yields
-    $$f(x, y) = \int (x + y^3)\,dx = \frac{1}{2}x^2 + xy^3 + g(y),$$
-    where $g(y)$ is an arbitrary differentiable function of $y$.
+$$f(x, y) = \int (x + y^3)\,dx = \frac{1}{2}x^2 + xy^3 + g(y),$$
+where $g(y)$ is an arbitrary differentiable function of $y$.
 
 :::
 
 ::: pf-step
 
 Differentiating this expression with respect to $y$:
-    $$\frac{\partial f}{\partial y} = 3xy^2 + g'(y).$$
+$$\frac{\partial f}{\partial y} = 3xy^2 + g'(y).$$
 
 :::
 
@@ -69,7 +69,7 @@ Setting $\frac{\partial f}{\partial y} = Q(x, y) = e^y + 3xy^2$ gives $3xy^2 + g
 ::: pf-step
 
 Integrating with respect to $y$ gives $g(y) = e^y + C$. Setting $C = 0$ yields the potential function
-    $$f(x, y) = \frac{1}{2}x^2 + xy^3 + e^y.$$
+$$f(x, y) = \frac{1}{2}x^2 + xy^3 + e^y.$$
 
 :::
 
@@ -86,7 +86,7 @@ Direct verification: $\frac{\partial f}{\partial x} = x + y^3 = P(x, y)$ and $\f
 ::: pf-step
 
 Path-independence via the Fundamental Theorem for Line Integrals:
-    *Proof:*
+*Proof:*
 
 ::: pf-proof
 
@@ -99,14 +99,14 @@ Let $C$ be any piecewise smooth curve in $\RR^2$ parameterized by $\mathbf{r}(t)
 ::: pf-step
 
 By the chain rule:
-    $$\int_C (x + y^3)\,dx + (e^y + 3xy^2)\,dy = \int_a^b \nabla f(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt = \int_a^b \frac{d}{dt}[f(\mathbf{r}(t))]\,dt.$$
+$$\int_C (x + y^3)\,dx + (e^y + 3xy^2)\,dy = \int_a^b \nabla f(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt = \int_a^b \frac{d}{dt}[f(\mathbf{r}(t))]\,dt.$$
 
 :::
 
 ::: pf-step
 
 By the Fundamental Theorem of Calculus:
-    $$\int_C (x + y^3)\,dx + (e^y + 3xy^2)\,dy = f(\mathbf{r}(b)) - f(\mathbf{r}(a)) = f(B) - f(A).$$
+$$\int_C (x + y^3)\,dx + (e^y + 3xy^2)\,dy = f(\mathbf{r}(b)) - f(\mathbf{r}(a)) = f(B) - f(A).$$
 
 :::
 
@@ -128,6 +128,6 @@ Conclusion:
 
 :::
 
-    *Proof:*
-    The line integral is path-independent.
+*Proof:*
+The line integral is path-independent.
 :::

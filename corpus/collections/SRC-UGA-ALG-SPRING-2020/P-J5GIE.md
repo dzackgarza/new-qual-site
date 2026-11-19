@@ -94,7 +94,7 @@ Extend to a module homomorphism: By the universal property of the free module $F
 Verify the section condition $\pi \circ \sigma = \operatorname{id}_F$:
         - For any element $x \in F$, write $x = \sum_{b \in B} r_b b$ as a finite linear combination.
         - Applying $\pi \circ \sigma$:
-        $$(\pi \circ \sigma)(x) = \pi\left( \sigma\left( \sum_{b \in B} r_b b \right) \right) = \pi\left( \sum_{b \in B} r_b y_b \right) = \sum_{b \in B} r_b \pi(y_b) = \sum_{b \in B} r_b b = x.$$
+$$(\pi \circ \sigma)(x) = \pi\left( \sigma\left( \sum_{b \in B} r_b b \right) \right) = \pi\left( \sum_{b \in B} r_b y_b \right) = \sum_{b \in B} r_b \pi(y_b) = \sum_{b \in B} r_b b = x.$$
         - Thus $\pi \circ \sigma = \operatorname{id}_F$.
 
 :::
@@ -128,8 +128,8 @@ Define $T = \operatorname{tor}(M)$. Since $R$ is a PID (hence an integral domain
 ::: pf-step
 
 Consider the canonical short exact sequence:
-    $$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
-    where $q(m) = m + T$.
+$$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
+where $q(m) = m + T$.
 
 :::
 
