@@ -25,6 +25,16 @@ audit:
     p = -3) gives -2, 1 and 1. Expanding (x-1)^2(x+2) returns x^3 - 3x + 2, so the three values are
     exactly the roots, the root 1 arising twice as the exercise says it should. The validity of the
     cubic formula is not proved, as the exercise instructs. Nothing in the statement was changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Substituting x = c - p/(3c) into x^3 + px + q gives
+    c^3 - p^3/(27c^3) + q, and with c^3 = A = -q/2 + s this vanishes exactly because
+    (q/2 + s)(-q/2 + s) = s^2 - q^2/4 = p^3/27, so 27A(q/2 + s) = p^3. Checked that identity, which is
+    the whole content of the formula, and that the hypotheses are exactly that s is one chosen square
+    root and c one chosen cube root of A (so the other roots come from the other cube roots). Not
+    checked: the printed exam, which was not re-read.
 ---
 
 ::: {.problem}
