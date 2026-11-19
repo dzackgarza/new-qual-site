@@ -41,8 +41,8 @@ audit:
     quotient sentence wrote $i'_*\pi_0(B,x_0)$ where the target's subset $i'_*\pi_0(D,y_0)$ is meant.
     The card's solution and remark assert no half of the five-lemma, and no instance of exactness, to
     be open: the dated events in this list that assert it are records of the passes of 2026-11-16,
-    and the three events at the head of the list, which prove full injectivity at both $\pi_1$
-    windows and withdraw the surjectivity caveat, supersede them, as does this event. Checked against
+    and the three events of 2026-11-16 that follow this one, which prove full injectivity at both
+    $\pi_1$ windows and withdraw the surjectivity caveat, supersede them, as does this event. Checked against
     Hatcher's printed pp. 343--345 (definitions, compression criterion, Theorem 4.3 and its proof,
     naturality) and the exercise on printed p. 358, in
     `tmp/sources/hatcher-2002-algebraic-topology.md` and in the PDF's own text layer. Not checked: no
