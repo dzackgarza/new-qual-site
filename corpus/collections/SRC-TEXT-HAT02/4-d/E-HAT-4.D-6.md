@@ -29,6 +29,25 @@ audit:
     computation and ring identification, the classification of alpha by [M, CP^infinity] = H^2(M), and
     the E-cohomology and Whitehead steps of the converse, none of which changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §4.D, printed p. 447, with the Gysin sequence on printed
+    p. 438, Theorem 4.57 (p. 393), Proposition 4A.2 (p. 422), Corollary 4.25 (p. 361),
+    Corollary 4.33 (p. 367) and Corollary A.12 (p. 529). Both directions check out. Forward:
+    $\pi_1(M)=0$ from $\pi_1(S^{2n+1})\to\pi_1(M)\to\pi_0(S^1)$; $M$ is a closed orientable
+    $2n$-manifold; the Gysin sequence with $H^k(S^{2n+1})=0$ for $1\le k\le2n$ makes
+    $\smile e\colon H^j(M)\to H^{j+2}(M)$ an isomorphism for $0\le j\le2n-2$ and kills $H^1(M)$,
+    so $H^*(M)=\ZZ[e]/(e^{n+1})$. Converse: the classifying map of $\alpha$ and the pullback of
+    $S^\infty\to\CP^\infty$ have Euler class $\alpha$; the Gysin sequence gives $H^k(E)=0$ for
+    $1\le k\le2n$ and $H^{2n+1}(E)=\ZZ$; $\pi_1(E)=0$ follows from surjectivity of $c_*$ on $H_2$,
+    which is the repair recorded on 2026-11-04 and which this read confirms as sufficient, an
+    element $\xi$ with $\langle\alpha,\xi\rangle=1$ existing because $\alpha$ generates
+    $\operatorname{Hom}(H_2(M),\ZZ)$; and then $E$ is $2n$-connected with
+    $\pi_{2n+1}(E)\cong\ZZ$, so a generator $S^{2n+1}\to E$ is a homology isomorphism between
+    simply connected CW complexes, hence a homotopy equivalence. Nothing changed. Not claimed:
+    a published solution, an isomorphism on $H_2$ (deliberately not claimed), and no certificate.
 ---
 
 ::: {.problem}
