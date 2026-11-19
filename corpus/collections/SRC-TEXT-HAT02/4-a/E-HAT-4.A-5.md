@@ -36,6 +36,7 @@ In the latter case, deduce that $\pi_1(\tilde{X}_2)$ has no finite presentation 
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 5, printed p. 426; the argument below is the card's own.
 Write
 $$
 X_n=(S^1\vee S^1)^n
