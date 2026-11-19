@@ -10,29 +10,36 @@ topics:
 
 ## Principal ideal domains and other rings
 
-Over a [[D-HTIL5|principal ideal domain]] $R$ -- for example $\ZZ$, $k[x]$ and $k[\![x]\!]$ for a field $k$, and every Euclidean domain -- the structure theorem classifies finitely generated $R$-modules: each is the direct sum of a free module and a torsion module, and the torsion module is determined up to isomorphism by its invariant factors.
+Over a principal ideal domain — $\ZZ$, $k[x]$, $k[\![x]\!]$ for a field $k$, and every Euclidean domain — the structure theorem is available and the classification is a computation; over $k[x,y]$, $\ZZ[x]$, or a quotient $k[x,y]/I$ it is not.
+For finitely generated modules over such a ring the four conditions free, projective, flat, and torsion-free can differ, and over a principal ideal domain they coincide.
 
-Over a ring that is not a PID, such as $k[x,y]$, $\ZZ[x]$, or a quotient $k[x,y]/I$, the structure theorem does not apply.
-For finitely generated modules over such a ring, the properties of being [[D-LIEMF|free]], [[D-RHJMK|projective]], flat, and [[D-ZJJ7G|torsion-free]] can differ; over a PID they coincide.
+[[PR-UVUS6]]
 
 ## The computation over a PID
 
-Let $R$ be a PID and $M$ a finitely generated $R$-module.
+Let $R$ be a principal ideal domain and $M$ a finitely generated $R$-module.
 
-1. **Presentation.** Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$.
-   For an abelian group given by generators and relations, $A$ is the relation matrix.
+### Presentation
 
-2. **Smith normal form.** The Smith normal form of $A$ has diagonal entries $a_1 \divides a_2 \divides \cdots \divides a_k$, with $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$.
-   See [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
+Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$; for an abelian group given by generators and relations, $A$ is the relation matrix.
 
-3. **Decomposition.**
-   $$
-   M \cong R^{n-k} \oplus \bigoplus_{i=1}^k R/\generators{a_i}.
-   $$
-   The free rank of $M$ is $n-k$, and the summands $R/\generators{a_i}$ with $a_i$ a unit are zero; the nonunit $a_i$ are the invariant factors of $M$.
+### Smith normal form
 
-4. **Elementary divisors and invariant factors.** The elementary divisors are the prime-power factors of the invariant factors.
-   Conversely, the largest invariant factor is the product, over the primes $p$, of the largest elementary divisor that is a power of $p$; removing those elementary divisors and repeating gives the next invariant factor.
+The Smith normal form of $A$ has diagonal entries $a_1 \divides a_2 \divides \cdots \divides a_k$, with $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$; see [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
+
+### Decomposition
+
+$$
+M \cong R^{n-k} \oplus \bigoplus_{i=1}^k R/\generators{a_i}.
+$$
+
+The free rank of $M$ is $n-k$, the summands $R/\generators{a_i}$ with $a_i$ a unit are zero, and the nonunit $a_i$ are the invariant factors of $M$.
+
+### Elementary divisors and invariant factors
+
+The elementary divisors are the prime-power factors of the invariant factors, and the conversion between the two lists is a regrouping of one set of prime powers.
+
+[[PR-TLPVU]]
 
 ## Three instances of the structure theorem
 
@@ -46,12 +53,19 @@ A square matrix $A$ over a field $k$ makes $k^n$ a $k[x]$-module with $x$ acting
 
 ## Free, projective, flat, and torsion-free modules
 
-For modules over an integral domain,
+For modules over an integral domain the implications run
+
 $$
 \text{free} \implies \text{projective} \implies \text{flat} \implies \text{torsion-free},
 $$
-and none of the implications reverses in general.
-For finitely generated modules over a PID, the four conditions coincide.
+
+and none of them reverses in general; over a principal ideal domain the four conditions coincide for finitely generated modules.
+
+[[PR-RPL4Q]]
+
+[[PR-4K4XZ]]
+
+[[D-FS52P]]
 
 ::: {.example title="Separating the conditions"}
 \envlist
@@ -60,10 +74,10 @@ For finitely generated modules over a PID, the four conditions coincide.
 
 - $\QQ$ over $\ZZ$ is flat, not projective, and not finitely generated.
 
-- The ideal $\generators{2,x} \subseteq \ZZ[x]$ is torsion-free and not flat. Its localization at $\mathfrak m=\generators{2,x}$ is a finitely generated ideal of the local Noetherian domain $\ZZ[x]_{\mathfrak m}$ that needs two generators, since $\mathfrak m/\mathfrak m^2$ is $2$-dimensional over $\FF_2$; a finitely generated flat module over a local Noetherian ring is free, and a free ideal is principal ([[PR-ASW5L]]).
+- The ideal $\generators{2,x} \subseteq \ZZ[x]$ is torsion-free and not flat. Its localization at $\mathfrak m=\generators{2,x}$ is a finitely generated ideal of the local Noetherian domain $\ZZ[x]_{\mathfrak m}$ that needs two generators, since $\mathfrak m/\mathfrak m^2$ is $2$-dimensional over $\FF_2$; a finitely generated flat module over a local Noetherian ring is free, and a free ideal is principal.
 :::
 
-## Free ideals
+[[FF-QILDV]]
 
 [[PR-ASW5L]]
 
