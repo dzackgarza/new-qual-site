@@ -20,6 +20,15 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the Bezout combination giving $\omega_1/q$; the density step and the resulting periods tending to $0$; that poles would accumulate; and that the difference quotients along the periods force $f'\equiv0$.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+    the printed page): the statement is Exercise 1 at the head of the Chapter 9 Exercises,
+    printed p. 278, and its printed words are the card's. The chapter, the exercise number and
+    the page are now named in the solution's opening sentence. Not checked in this pass: the
+    argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -31,6 +40,7 @@ Suppose that a meromorphic function $f$ has two periods $\omega_1$ and $\omega_2
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 278; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. Part (a) is the Bezout identity for $p,q$; part (b) uses the density of $\{m-n\tau\}$ and the isolatedness of poles.
 
 ::: pf
