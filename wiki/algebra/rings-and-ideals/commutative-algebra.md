@@ -89,10 +89,10 @@ The two cards below give the decomposition in general and in the structured case
 
 [[D-DU4UQ]]
 
-In the graded case the Gorenstein condition already fixes the top degree: a finite-dimensional graded Gorenstein algebra with $R_0=k$ and $R_n\neq0$ has $\dim_k R_n=1$, since its top piece lies in the one-dimensional socle.
+In the graded case the Gorenstein condition forces Poincaré duality, and the consequence for the Hilbert function is that it is symmetric about $n/2$.
 
-[[T-GRDSOC]]
+[[T-GRDPD]]
 
-For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional; that computation is on the second card.
+For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional.
 
 [[P-HCAO21]]
