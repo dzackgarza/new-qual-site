@@ -35,6 +35,18 @@ audit:
     identification of End_A(V) with the product of matrix algebras is an isomorphism of
     algebras and not only of vector spaces. Not claimed: a retained solution set; the
     provenance names the examination paper only. Statement unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Macro repair, prompted by the corpus check failing on an undefined control word. The
+    structured proof committed as c93cc70fe2 wrote \End_A(S_i) once in the proof of the
+    endomorphism-algebra step; neither vocabularies/macros.json nor the MathJax command set the
+    site loads defines \End, so the site could not render it. The other occurrences on the card
+    already read \operatorname{End}, and this one now does too. Nothing else changed: the
+    statement, the argument and the audit history above stand. Checked with
+    tools/check_macros.py, which now reports the card OK, and with qualc.authoring check, tmp/lam.sh
+    and the corpus check.
 ---
 
 ::: {.problem}
@@ -67,7 +79,7 @@ An $A$-linear map $S_i\to S_j$ with $i\ne j$ has kernel and image that are $A$-s
 $\operatorname{End}_A(V)\cong\prod_{i=1}^rM_{m_i}(\CC)$ as $\CC$-algebras.
 
 ::: pf-proof
-Write $V=\bigoplus_iV_i$ with $V_i=S_i^{\oplus m_i}$. An $A$-linear $f:V\to V$ decomposes into components $f_{ji}:V_i\to V_j$, and by step [](#schur){.pf-ref} $f_{ji}=0$ unless $i=j$, while $f_{ii}$ is an $m_i\times m_i$ matrix with entries in $\End_A(S_i)=\CC$. So $f$ is block diagonal with blocks in $M_{m_i}(\CC)$, and conversely any such block-diagonal family is $A$-linear; composition is matrix multiplication block by block. So the endomorphism algebra is the product of the matrix algebras.
+Write $V=\bigoplus_iV_i$ with $V_i=S_i^{\oplus m_i}$. An $A$-linear $f:V\to V$ decomposes into components $f_{ji}:V_i\to V_j$, and by step [](#schur){.pf-ref} $f_{ji}=0$ unless $i=j$, while $f_{ii}$ is an $m_i\times m_i$ matrix with entries in $\operatorname{End}_A(S_i)=\CC$. So $f$ is block diagonal with blocks in $M_{m_i}(\CC)$, and conversely any such block-diagonal family is $A$-linear; composition is matrix multiplication block by block. So the endomorphism algebra is the product of the matrix algebras.
 
 :::
 
