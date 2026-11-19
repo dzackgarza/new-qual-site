@@ -50,9 +50,19 @@ audit:
     which one of the two $D_M$ columns is being proved. No defect found in the statement, §3.3
     Exercise 35; the earlier repair of the broken sentence stands. No retained solution set covers
     it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 269 carries the running head 260.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 35 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), printed p. 260, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 If $M$ is a noncompact $R$-orientable $n$-manifold with boundary $\partial M$ having a collar neighborhood in $M$, show that there are Poincaré duality isomorphisms $H_c^k(M;R)\approx H_{n-k}(M,\partial M;R)$ for all $k$, using the five-lemma and the following diagram:
 
 $$
