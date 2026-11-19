@@ -320,6 +320,22 @@ The count does not turn on it. With $+z$ the same two Rouché comparisons hold o
 One sentence of the removed `Repair` bullet — that both collections carry a `provenance:` href pinning the dataset — is no longer true of the tree, and is corrected here rather than edited into the dated line: both collections now carry `provenance: []`, and the complex-analysis collection's index carries a remark saying why the two dataset files were removed rather than repointed — a YAML of transcribed questions is not a source document.
 
 ## Workflow and rendering papercuts
+### 2026-11-19: four corpus-gate reds in one evening, only one of them real — and the raw `\mathcal{F}` that caused the last
+
+**Object and need:** the whole-corpus gate is now obtainable (the record above), so lanes will run it more often, and each red costs a session the same diagnosis unless the two ways a red can lie are named.
+
+**Observed evidence:** five runs of `QUALC_PARALLEL_WORKERS=1 ./.venv/bin/python -m qualc check` in this clone, in order:
+two greens, `14410 cards and 348 wiki pages OK` (run records `f11af06b5419…` and `ab6b6891f03f…`);
+a red on `SRC-TEXT-HAT02/4-1/E-HAT-4.1-1.md` — `expected <block end>, but found '-'` at its line 209 plus two `lists 'E-HAT-4.1-1', which has no card` — which **parsed cleanly when read again straight afterwards**, the same signature a lane writing a card while another lane's gate reads it;
+a red on `SRC-TEXT-HART77/P-AGH218GAMMALEFTEX.md`, `raw TeX the page cannot show: '\\wait '` and `'\\mcf'` — where `vocabularies/macros.json` defines `\wait` as `{-}` and `\mcf` as `{\mathcal{F}}`, so neither is raw TeX at all, and the file again parsed after the run;
+and a red on the same card, now `raw TeX the page cannot show: '\\mathcal{F}'`.
+
+**Impact and owner:** the last one is real and its cause is on the card, in its own audit line: "occurrence was replaced by the standard `\mathcal{F}`, which is what the macro expands to". The macro is the corpus form and raw `\mathcal{F}` is what the check refuses; the repair is `\mathcal{F}` -> `\mcf`, which is the same body and so cannot change the mathematics. The three reds before it are the false-alarm class: a diagnostic that names a parse error or an undefined macro on a card that parses and whose macro is defined should be re-read on a settled tree before anyone edits the card, and a lane should not "fix" a card from a single red.
+
+**Uncertainty:** the greens are certain (run records above). That the three intervening reds were mid-write reads is inferred from the files parsing immediately afterwards and from the same card changing between runs; the diagnostics themselves are quoted exactly.
+
+**Repair:** the `\mathcal{F}` -> `\mcf` substitution is for the Hartshorne lane, whose card it is; nothing on the NUS lane is implicated by any of the five runs.
+
 ### 2026-11-19: the whole-corpus `qualc check` obtained — one worker, on a box with no other gate running
 
 **Object and need:** every recorded session has reported the corpus-wide gate as unobtainable, killed with exit 137 and an empty log, so lanes have certified their work with per-card checks and the report check only; whether it can be obtained at all on this VM decides what a lane may claim about the corpus as a whole.
