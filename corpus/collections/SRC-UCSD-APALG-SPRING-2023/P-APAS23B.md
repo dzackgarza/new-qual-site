@@ -11,6 +11,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part A, Question 2 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 2 of the Part A paper retained at assets/attachments/Applied_Algebra_Part_A_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; the real eigenvalues, the stated Courant-Fischer theorem,
+    and the min and max characterisations; `qualc.authoring check` on the card, and `tmp/lam.sh` for the
+    numbering and the QED. Not checked: no retained solution set exists for this paper to compare the
+    argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -44,7 +55,7 @@ $$
 
 
 ::: {.solution}
-No retained solution set covers this problem: the collection's `provenance` names the Spring 2023 applied-algebra examination paper, which carries no solutions. The argument below is the card's own and follows the card's previous prose.
+The problem is Part A, Question 2 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 2 of the Part A paper retained at `assets/attachments/Applied_Algebra_Part_A_SP23.pdf`. No retained solution set covers it — that paper carries no solutions — so the argument below is the card's own and follows the card's previous prose.
 
 Throughout $A\in M_n$ is Hermitian, $A^H=A$, and its eigenvalues are ordered $\lambda_n\le\cdots\le\lambda_1$.
 
