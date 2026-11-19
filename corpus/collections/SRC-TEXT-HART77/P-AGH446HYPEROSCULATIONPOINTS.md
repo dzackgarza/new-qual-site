@@ -28,6 +28,24 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.6, printed pp. 91,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.6, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed $6(g-1)+3d=3d^2-6d-6r$ at $g=\frac12(d-1)(d-2)-r$, the $n=3$ case $12(g-1)+4d$, and the induction's arithmetic, which yields $(n+1)d$ rather than the printed $(n-1)d$.
+    Not checked: Yang's Solutions outside printed pp. 91; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.4.6 at printed pp. 91 beside the material already there. No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -476,4 +494,6 @@ zero, or at least $\characteristic k\nmid d$.
 
 ::: {.remark}
 The exercise stands on printed p. 337 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, both parts, the exclusion of nodes as inflection points and the hypothesis $\operatorname{char}k=0$ of (a) included.  Part (a) is the method of Exercise 2.3 counted with the nodes removed, and part (b) is the definition and existence of the osculating hyperplane; the card proves both, and no published solution was located for it.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.6, printed p. 91, does (a) with the dual map: for $\psi$ the projection from a point off the line $L$, Hurwitz gives $\deg R_\psi=2g-2+2d=d^2-d-2r$, so $\deg X^*=d^2-d-2r$, and a second Hurwitz for $\phi:P\mapsto T_PX\cap L$ gives $\deg R_\phi=2g-2+2(d^2-d-2r)=3d^2-5d-6r$, whence $3d^2-6d-6r$ inflection points after dropping the $d$-ramified ones; with $g=\frac12(d-1)(d-2)-r$ that is $6(g-1)+3d$, the exercise's count. Part (b) is done first at $n=3$, where $X^*$ meets the hyperplane of $\PP^{3*}$ dual to $O$ in the hyperosculation points of the plane model, so $\#\text{hyperosculation}=\#\text{inflection}=6(g-1)+3d$ and Hurwitz gives $2g-2+2\deg X^*=12(g-1)+4d$, the formula at $n=3$; the induction for $n>3$ then runs on the induction hypothesis $n(n-1)(g-1)+nd$ for the projection to $\PP^{n-1}$ and subtracts $(n-2)(n-1)(g-1)+(n-1)d$ for the points already counted. That recursion does give $n(n+1)(g-1)+(n+1)d$ --- expanding, $(n-1)(n+2)+2=n(n+1)$ and the $d$-coefficient is $2n-(n-1)=n+1$ --- but the entry prints its result as $n(n+1)(g-1)+(n-1)d$, which contradicts its own $12(g-1)+4d$ at $n=3$; the coefficient $(n-1)d$ is a slip for $(n+1)d$. Part (c) is right and short: $P_0$ is hyperosculating, so $P$ is hyperosculating exactly when the hyperplane meets $X$ in $dP$, i.e. when $d(P-P_0)=0$, and those are the $d^2$ points of $X[d]$ in characteristic zero.
 :::
