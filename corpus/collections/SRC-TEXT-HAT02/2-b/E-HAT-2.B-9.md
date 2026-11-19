@@ -169,6 +169,29 @@ audit:
     chain section are marked as the card's own, since the book neither states nor proves a splitting.
     Checked: the two printed places and the absence of a splitting in them. Not claimed: that the
     book works out the trivial covering.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the two-sheet computation
+    for the trivial cover. No defect in the mathematics, and one false statement about the
+    coefficients corrected. Checked: with $\tilde X=X\times S^0$, $C_*(\tilde X;\ZZ_2)$ is
+    $C_*(X;\ZZ_2)\oplus C_*(X;\ZZ_2)$, the transfer $\tau(c)=(c,c)$ is the diagonal, $p_\#$ is
+    addition, $\tau$ is injective, $p_\#$ is onto, and over $\ZZ_2$ the kernel of addition is exactly
+    the diagonal, so the sequence $0\to C_*(X)\xrightarrow{\Delta}C_*(X)^2\xrightarrow{+}C_*(X)\to0$
+    is exact; the chain map $s(c)=(c,0)$ satisfies $p_\#s=\mathrm{id}$, so it splits and the
+    connecting maps vanish, giving $0\to H_n(X)\to H_n(X)^2\to H_n(X)\to0$ in each degree. The
+    correction: the remark and the `source-checked` event of 2026-11-18 said that "the exercise's
+    sequence is over $\ZZ$". It is not — §2.B's transfer is set up over $\ZZ_2$, as Hatcher says at
+    printed p. 174 in the proof of 2B.6, "we let the coefficient group $\ZZ_2$ be implicit", and
+    the exercise asks for that sequence, which is the one the card computes. The remark now says
+    this, and records that over $\ZZ$ the same two-sheet computation runs with $\tau(c)=(c,-c)$ in
+    place of the diagonal, where the kernel of addition is the anti-diagonal, so the sequence is
+    exact and split in that case too. Checked against Hatcher (2002), Exercise 9 of §2.B on printed
+    p. 177 and the transfer on printed pp. 174--175, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`; the $\ZZ_2$ hypothesis is not a weakening of
+    the exercise, it is the exercise's own coefficient group. Not claimed: a printed treatment of the
+    trivial covering.
 ---
 
 ::: {.problem}
@@ -242,5 +265,5 @@ $$
 in each degree, which is the same two-sheet computation at the cochain level: over $\ZZ_2$ the cochain complex of $\tilde X$ is $C^*(X;\ZZ_2)\oplus C^*(X;\ZZ_2)$, and $C^*p$ is the diagonal while $\tau^*$ is addition, because $C_*p(a,b)=a+b$ is addition and $\tau(c)=(c,c)$ is the diagonal. The sequence splits by $\alpha\mapsto(\alpha,0)$, so $H^m(\tilde X;\ZZ_2)\cong H^m(X;\ZZ_2)^{\oplus2}$ for every $m$. Hausmann asks for exactly this computation as Exercise 4.4 of Chapter 4, printed p. 166, "Write the transfer exact sequence for a trivial 2-fold covering", and prints no solution to it; the two-sheet coordinates supplied here are the cohomological counterpart of those of the exercise as Hatcher states it.
 
 ::: {.remark title="Sources"}
-Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), read in `tmp/sources/hausmann-mod-two-homology-cohomology.md`: Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the transfer for a two-sheeted covering, printed pp. 174--175, $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields; the general transfer for an $n$-sheeted covering is §3.G, "Transfer Homomorphisms", printed p. 321, where $\tau$ is defined as the sum of the $n$ lifts and $\tau\pi^*=n$ is proved, and §2.B points there at printed p. 175. Both printed passages use $\ZZ_2$ coefficients, the exercise's sequence is over $\ZZ$, and neither passage works out the trivial covering. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$. The disposition of this card under the repository's rule is that the exercise is answered from the book's own transfer construction, cited at the pages where the book states it, and that the specialisation to the trivial cover is the card's argument, cited to those pages; Hatcher states the transfer as a construction in the text rather than as a numbered theorem, and the card says so at each step.
+Hausmann, *Mod Two Homology and Cohomology* (Springer, 2014), read in `tmp/sources/hausmann-mod-two-homology-cohomology.md`: Proposition 4.3.9, printed p. 123, proves the transfer exact sequence in cohomology, over a CW complex, with the characteristic class $w(p)$ as the connecting map, and his Lemma 4.3.6(3), printed p. 120, identifies $w(p)=0$ with triviality of the covering; the corresponding computation for the trivial 2-fold covering is asked for as Exercise 4.4 of Chapter 4, printed p. 166. Neither prints the two-sheet cochain coordinates for it. Hatcher, *Algebraic Topology* (2002), read in `tmp/sources/hatcher-2002-algebraic-topology.md`: the transfer for a two-sheeted covering, printed pp. 174--175, $\tau$ the sum of the two lifts, the short exact sequence of chain complexes $0\to C_n(X;\ZZ_2)\xrightarrow{\tau}C_n(\tilde X;\ZZ_2)\xrightarrow{p_\sharp}C_n(X;\ZZ_2)\to0$, and the long exact sequence it yields; the general transfer for an $n$-sheeted covering is §3.G, "Transfer Homomorphisms", printed p. 321, where $\tau$ is defined as the sum of the $n$ lifts and $\tau\pi^*=n$ is proved, and §2.B points there at printed p. 175. Both printed passages use $\ZZ_2$ coefficients, and that is the sequence the exercise asks for: §2.B's transfer is set up over $\ZZ_2$, as the book says at printed p. 174 in the proof of 2B.6 ("we let the coefficient group $\ZZ_2$ be implicit"). Over $\ZZ$ the same two-sheet computation runs with $\tau(c)=(c,-c)$ in place of the diagonal, so the sequence is again exact and split, and the card proves the $\ZZ_2$ form; neither passage works out the trivial covering. Hatcher neither calls that sequence split nor proves it split, and it is not split as chain complexes in general; for the trivial covering it is, by the two-sheet coordinates, which is what the exercise asks for. The exercise is Exercise 9 of §2.B, printed p. 177, and the trivial covering is that construction with $\tilde X=X\times S^0$. The disposition of this card under the repository's rule is that the exercise is answered from the book's own transfer construction, cited at the pages where the book states it, and that the specialisation to the trivial cover is the card's argument, cited to those pages; Hatcher states the transfer as a construction in the text rather than as a numbered theorem, and the card says so at each step.
 :::
