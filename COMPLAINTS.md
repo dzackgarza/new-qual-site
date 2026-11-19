@@ -39,6 +39,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the twenty NUS statements re-verified against the pinned dataset, with the two garbles' rows pasted
+
+**Object and need.** The two NUS collections have no paper, so the only witness for their statements is the pinned dataset `Combined_Questions.yaml` at revision `6190e0ee`. Three audit notes make claims about what that file prints — the `source-corrected` events of 2026-10-31 on `P-R623W` and on `P-MMAQ-RML5AHHINX`, and the index comment that `P-MMAQ-GSHH4MRFJW` presents the source's part (e) as (c) — and a claim about a source is worth what its quoted text is worth.
+
+**Observed evidence.** `https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml` re-fetched: HTTP 200, 224899 bytes, sha256 `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`, the value `sources/mmaq-source.yaml` records, and it parses to 508 rows.
+Row 108 prints `$f(z) = 2z^5 - 6z^2 - z + 1 = 0$`: that is the sign `P-3T5VY`'s audit says the imported text carried, before the four published printings settled the card on $+z$.
+Row 195 prints `If $\lim_{n\to\infty} |a_n+1/a_n|$ exists`, so the garble `P-R623W`'s audit quotes is there verbatim. The claim beside it — that the same file writes the genuine ratio where it means it — also holds: the string `\frac{|a_{n+1}|}{|a_n|}` occurs exactly once in the file, in row 49, in the ratio/root theorem that the card proves.
+Row 205 prints `there exists $x_0 \in (i1, 1)$` and closes its hint `theorem.)` with no opening parenthesis: the two garbles `P-MMAQ-RML5AHHINX`'s audit names.
+Row 204 closes part (h) with `bounded variation on [0, 1]$`, a stray dollar that `P-MMAQ-HNEHK56R52` does not reproduce; that is a typographic slip and not a mathematical one, and it is named here so that the count of slips is four and not three.
+Rows 202, 203 and 204 are each question 4, carrying parts (a), (c), (d); (b), (e); and (f), (g), (h). The cards that state them as (a), (b), (c) and as (b), (c) are therefore renumberings, and the collection index comments name the source parts, which is the practice already recorded for this collection.
+Every one of the twenty statements agrees with its row apart from those renumberings and the four slips above; no statement of either collection is a defect against its witness.
+
+**Impact and owner.** The two `source-corrected` audits now rest on the pasted rows, and no card of either collection changes. No repair was needed and none was made.
+
+**Uncertainty.** High confidence in the file's identity, its hash and the row contents quoted, all read in this pass. Not established: anything about the paper the rows were transcribed from, which is the separate question this file cannot answer.
+
+**Repair:** no repair required on 2026-11-19; the verification is the record, and the paper remains unidentified.
+
 ## 2026-11-19: `P-3T5VY` states the sign its published printings carry, and three more cards of the two NUS collections are repaired
 
 **Object and need.** [#166](https://github.com/dzackgarza/new-qual-site/issues/166) asks that the NUS 1970 complex-analysis card `P-3T5VY` state the problem with the sign its published sources print, or carry a remark that states the discrepancy. The card printed $f(z)=2z^5-6z^2-z+1$, which is what its imported row prints. The record of this day above takes the other decision ("so the printed sign stays on `P-3T5VY`"), on the ground that no paper is identified as the source of the imported row.
