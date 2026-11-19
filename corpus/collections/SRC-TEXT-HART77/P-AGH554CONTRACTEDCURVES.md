@@ -197,6 +197,35 @@ audit:
     tmp/sources/reid-chapters-algebraic-surfaces.pdf, and both places now name
     it. No mathematical claim changes: Theorem A.7(1) is still on printed p. 29
     with its proof on pp. 30--31.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.5.4, printed p. 113, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.5.4, printed
+    p. 417, asks for Y^2 < 0 for a curve contracted by a birational morphism of
+    a nonsingular surface, and that the intersection matrix of the components
+    is negative definite. Recomputed: f^*H.Y = H.f_*Y = 0 at H^2 = (f^*H)^2 >
+    0, so the nef form of Hodge index gives Y^2 < 0, and the entry's S' = M S M
+    with S'_ij >= 0 off the diagonal and sum_i S'_ij = -H_1.m_j Y_j <= 0, the
+    identity for v^T S' v as a difference of a weighted sum of squares and
+    sum_{i<j} S'_ij (v_i - v_j)^2, strict negativity at one j, and the
+    connectivity of the union. Found: the entry calls f^*H ample, where the
+    pullback of a very ample class under a birational morphism is nef and need
+    not be ample; the nef form of Hodge index is what its argument uses. Not
+    checked: Yang's Solutions outside printed pp. 113-114, and the printed book
+    itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.5.4 at printed p. 113 as a
+    published proof of both parts by the matrix argument, with the nef
+    hypothesis its part (a) needs recorded. No step, statement or hypothesis of
+    the card changes, and the card's own route through the factorization into
+    point blowups stands.
 ---
 
 ::: {.problem}
@@ -546,4 +575,10 @@ complement to the whole exceptional fibre and prove part (b).
 ::: {.remark title="Published solution"}
 M. Reid, *Chapters on Algebraic Surfaces*, arXiv:alg-geom/9602006v1 (6 February 1996), a draft of the notes submitted to the 1993 volume of the IAS/AMS Park City lecture notes series, read in `tmp/sources/reid-chapters-algebraic-surfaces.pdf` and in its MinerU text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, whose "Status of this draft" is printed p. 2, text version `tmp/sources/reid-chapters-algebraic-surfaces.md`, Theorem A.7(1), statement on printed p. 29 and proof on printed pp. 30--31, states part (b) as a theorem --- the intersection matrix of a bunch of curves contracted to points by a projective birational morphism of a nonsingular surface is negative definite --- and proves it; with $k=1$ it gives $Y^2<0$ in part (a), and by restriction to a principal submatrix the same for a curve among several components of a fibre, and his Castelnuovo criterion, printed p. 10, gives $Y\cong\PP^1$ with $Y^2=-1$ when the contraction has no other exceptional curve. The identity of the image point as a nonsingular one, which is what turns $Y^2<0$ into $Y^2=-1$ there, is his Contraction Theorem (Artin), the theorem of Section 4.15, stated on printed p. 93 and proved in Section 4.16, together with his Theorem (Artin) of Section 4.17, whose statement begins on printed p. 94 and whose proof of part (1) lies wholly on printed p. 95, part (2)'s proof running on pp. 96--97. The steps above are not a transcription of Reid: they reach both parts through the factorization into point blowups and Hodge index, the second of which he records as Ex. A.16, and they cover a contracted curve inside a larger exceptional locus, which his criterion does not.
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.5.4, printed p. 298, is a corollary of the Hodge index theorem for contracted curves; its part (a) proves only $Y^2\le0$, from the false statement that the pullback of an ample divisor is ample, and says nothing about $Y\cong\PP^1$.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.5.4, printed p. 113, proves both parts by another route. Part (a): a very ample $H$ on $X_0$ has $f^*H\cdot Y=H\cdot f_*Y=0$, and the entry calls $f^*H$ ample on $X$, where the pullback of a very ample class under a birational morphism is nef and need not be ample; the nef form of Hodge index, with $(f^*H)^2=H^2>0$, then gives $Y^2<0$ as the entry claims. Part (b) is the matrix argument: with $f$ factored as the book's, the strict transforms satisfy $H_2\sim H_1+\sum m_iY_i$ for $m_i=\operatorname{ord}_{Y_i}(f)>0$, so $S'=MSM$ with $S'_{ij}\ge0$ for $i\ne j$ and $\sum_iS'_{ij}=-H_1\cdot m_jY_j\le0$; then
+$$
+\sum_{i,j}v_iv_jS'_{ij}=\sum_j\Bigl(\sum_iS'_{ij}\Bigr)v_j^2-\sum_{i<j}S'_{ij}(v_i-v_j)^2\le0,
+$$
+with strict negativity at a $j$ whose $Y_j$ meets $H_1$; connectivity of $\bigcup Y_i$ then forces $v=0$, so $S'$, and with it $S$, is negative definite. That is a published proof of (b) which does not go through the factorization into point blowups: it is the same argument as the NTU homework's Exercise 4 of §5 and the card's own step reaches the conclusion by the Hodge index on the blown-up model instead.
 :::
