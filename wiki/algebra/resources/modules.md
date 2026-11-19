@@ -11,14 +11,8 @@ order: 70
 
 - MIT [supplemental notes on rational canonical form](https://www.mit.edu/~fengt/LAnotes.pdf).
 
+The canonical forms these notes cover are stated on [[algebra/linear-algebra/index|Linear algebra]], and the module structure theorem they use is on [[algebra/modules/over-a-pid|Modules over a PID]].
+
 ## Problems
 
-- [Math 7200 exercise set 8 with solutions, Fall 2006](attachments/ExerciseSet8f06a.pdf)
-
-- MIT linear algebra: [problems for discussion](https://www.mit.edu/~fengt/LinearAlgebra.pdf), [combined problem file](https://www.mit.edu/~fengt/LAproblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/LinearAlgebraSolns.pdf).
-
-- MIT modules and homological algebra: [problems for discussion](https://www.mit.edu/~fengt/Modules.pdf), [combined problem file](https://www.mit.edu/~fengt/ModuleProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/ModuleSolns.pdf).
-
-- Additional MIT linear algebra qual problems: Spring 2013 A5, Spring 2015 A4, Fall 2015 Q6, Spring 2016 M2, Fall 2016 M3, Fall 2016 A5.
-
-- Additional MIT module qual problems: Fall 2011 A1, Fall 2012 M3, Spring 2014 M2, Spring 2016 A2.
+- The linear-algebra and module problems of the compiled preliminary examinations are listed, in source order with their exam locations, in [[SRC-ART-ALG-2010-2015-PRELIMS]] and [[SRC-ART-ALG-2003-2009-PRELIMS]].
