@@ -464,6 +464,23 @@ audit:
     printed pages and nothing on the card changes. Not checked: the rest of
     either paper, and no other source bearing on the bracketed question was
     searched this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the second item the last report left open: a further search for
+    a published solution of Hatcher's bracketed question, the answer to which
+    the card gives in degree two. Searched were Ceramic for the exercise's own
+    wording and Linkup for the exercise and its Z x R question; the hits were
+    Stanford Math 215C, Spring 2009, Solution Set 4 (printed p. 1, already
+    transcribed at steps excision-limit and cone-case and rejected in its
+    Z x R paragraph), Math Stack Exchange 4224576 (the cone failure, already
+    recorded) and 4812778 (the exercise, no answers), and Hatcher's errata
+    page. No new source and no published solution of the bracketed question was
+    located, so nothing on the card changes and the statement that no published
+    solution exists stands. Not done: the Scribd compilations returned by the
+    same search were not readable, and no print or library source was
+    consulted.
 
 ---
 
