@@ -11,6 +11,12 @@ A finite field is a finite extension of its prime field, which is what forces it
 
 [[PR-ZO73V]]
 
+A finite field is a [[D-UI6CU|field]] with finitely many elements, and its prime field is the copy of $\FF_p$ inside it.
+
+[[D-UI6CU]]
+
+[[D-EOCCU]]
+
 [[T-QBQLM]]
 
 [[PR-ADLQN]]
