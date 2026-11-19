@@ -473,3 +473,7 @@ has degree $d^2$, but its set of geometric points can have fewer than $d^2$
 elements.  Thus the literal point-count conclusion requires characteristic
 zero, or at least $\characteristic k\nmid d$.
 :::
+
+::: {.remark}
+The exercise stands on printed p. 337 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, both parts, the exclusion of nodes as inflection points and the hypothesis $\operatorname{char}k=0$ of (a) included.  Part (a) is the method of Exercise 2.3 counted with the nodes removed, and part (b) is the definition and existence of the osculating hyperplane; the card proves both, and no published solution was located for it.
+:::
