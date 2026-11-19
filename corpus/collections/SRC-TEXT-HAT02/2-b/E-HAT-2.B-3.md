@@ -148,40 +148,101 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 :::
 
 ::: {.solution}
-Provenance, paragraph by paragraph: a paragraph that names a printed source records that source's argument at the page given, and a paragraph that names none is the card's own, possibly applying a result cited in another paragraph.
 
-The two results the argument uses are the Mayer--Vietoris sequence of §2.2, printed pp. 149--150 (Hatcher leaves it unnumbered; the reduced form is the display on p. 150), and Alexander duality, Theorem 3.44 (p. 254), applied with $K$ a sphere: for a compact locally contractible $K\subset S^n$ it gives $\widetilde H_j(S^n-K)\cong\widetilde H^{n-j-1}(K)$, and here $K$ is $S\subset S^{n-1}$, a sphere of dimension $k-1$, or $S^k\subset S^n$. The case $k=n$ also uses Invariance of Domain, Theorem 2B.3 (p. 172).
+The proof is the route the exercise's printed hint names, with the two complement computations taken from Alexander duality (Theorem 3.44, printed p. 254); the remark after this solution records what is the book's and what is the card's. Throughout, $\widetilde H$ denotes reduced homology with $\ZZ$ coefficients and $d=n-k-1$.
 
-If $k=0<n$, then $D$ is one interior point of $D^n$, and radial projection from that point retracts $D^n\setminus D$ onto $S^{n-1}$. Hence the inclusion induces an isomorphism.
+::: pf
 
-Now suppose $0<k<n$ and put $d=n-k-1\ge0$. Write
-$$
-A=S^{n-1}\setminus S,\qquad B=D^n\setminus D.
-$$
-Glue two copies of $(D^n,D)$ to the ends of $(S^{n-1}\times I,S\times I)$. Their ambient union is $S^n$, and the two copies of $D^k$, joined by $S^{k-1}\times I$, form an embedded $S^k$. Let $W$ be its complement. In $W$ the two ends $B_1,B_2$, each a copy of $B$, are joined by the cylinder $A\times I$, and the two open sets that cover $W$ have to overlap across that cylinder: enlargements of $B_1$ and $B_2$ that stop short of each other leave the band $A\times[\eta,1-\eta]$ uncovered. Take instead
-$$
-U_1=B_1\cup A\times[0,\tfrac23),\qquad U_2=B_2\cup A\times(\tfrac13,1],
-$$
-open in $W$. Then $U_1\cup U_2=W$, because $\tfrac13<\tfrac23$, and $U_1\cap U_2=A\times(\tfrac13,\tfrac23)$ deformation retracts onto $A=A\times\{\tfrac12\}$. Each $U_i$ deformation retracts onto its copy $B_i$, and the composite $A\hookrightarrow U_i\to B_i$ is homotopic to the inclusion $A=S^{n-1}-S\hookrightarrow D^n-D=B$, because $A$ is the part of $\partial B$ to which the cylinder is attached and the two sets meet along $A\times\{0\}$. So both inclusions induce the map $i_*$ of the statement, and the sign in the Mayer--Vietoris map below is the standard one. Reduced Mayer--Vietoris therefore contains
-$$
-\cdots\longrightarrow\widetilde H_j(A)
-\xrightarrow{(i_*,-i_*)}\widetilde H_j(B)^2
-\longrightarrow\widetilde H_j(W)
-\longrightarrow\widetilde H_{j-1}(A)\longrightarrow\cdots.
-$$
-Alexander duality for the embedded spheres $S\subset S^{n-1}$ and $S^k\subset S^n$ gives
-$$
-\widetilde H_j(A)\cong\widetilde H_j(W)\cong
-\begin{cases}\ZZ,&j=d,\\0,&j\ne d.\end{cases}
-$$
-Thus $\widetilde H_j(B)=0$ for $j\ne d$. In degree $d$, the adjacent groups vanish, so the sequence reduces to
-$$
-0\longrightarrow\ZZ\xrightarrow{(i_*,-i_*)}
-\widetilde H_d(B)^2\longrightarrow\ZZ\longrightarrow0.
-$$
-The middle group is free of rank two because this sequence splits as a sequence of abelian groups. Hence $\widetilde H_d(B)\cong\ZZ$. After choosing orientations, $i_*$ is multiplication by a positive integer $m$. The cokernel of the diagonal map $(m,-m):\ZZ\to\ZZ^2$ is $\ZZ\oplus\ZZ_m$, while the displayed exact sequence says it is $\ZZ$. Therefore $m=1$, and $i_*$ is an isomorphism. The reduced result gives the ordinary $H_0$ result as well, since both spaces are nonempty.
+::: {.pf-step #k0}
+If $k=0$ then the inclusion $S^{n-1}\setminus S\to D^{n}\setminus D$ is a homotopy equivalence.
 
-If $k=n$, then $S=S^{n-1}$ and $A$ is empty. The embedded $D^n$ has its boundary on $\partial D^n$. Invariance of domain makes its interior image open in $\operatorname{int}D^n$; it is also closed there, since the image of the whole disk is compact and its boundary image lies on $\partial D^n$. Hence $D=D^n$, so $B$ is empty too.
+::: pf-proof
+For $k=0$ the pair $(D,S)$ is a point of the interior of $D^{n}$, so $D=\{p\}$ with $p\in\operatorname{int}D^{n}$ and $S=\varnothing$; thus $S^{n-1}\setminus S=S^{n-1}$ and $D^{n}\setminus D=D^{n}\setminus\{p\}$. Radial projection from $p$ retracts $D^{n}\setminus\{p\}$ onto $S^{n-1}$ — the map $x\mapsto p+(x-p)/\abs{x-p}$ in coordinates centred at $p$ — Let $\rho(x)=p+(x-p)/\abs{x-p}$ be the radial projection. For $x\in S^{n-1}$ one has $\rho(x)=x$, so $\rho$ composed with the inclusion is the identity of $S^{n-1}$; and the composite inclusion-then-$\rho$ is homotopic to the identity of $D^{n}\setminus\{p\}$ through the homotopy $H_{t}(x)=p+(1-t)(x-p)+t\,(x-p)/\abs{x-p}$, which is continuous because $x\neq p$ on the whole space, starts at the identity and ends at $\rho$. So $\rho$ is a homotopy inverse of the inclusion, which is therefore a homotopy equivalence and induces an isomorphism on homology.
+:::
+
+:::
+
+::: {.pf-step #setup}
+Assume $0<k<n$. Let $A=S^{n-1}\setminus S$ and $B=D^{n}\setminus D$. Then $W$, the complement in $S^{n}$ of an embedded $S^{k}$, is covered by the two open sets $U_{1}=B_{1}\cup A\times[0,\tfrac23)$ and $U_{2}=B_{2}\cup A\times(\tfrac13,1]$, whose intersection deformation retracts onto $A$; each $U_{i}$ deformation retracts onto its copy $B_{i}$ of $B$, and the composite $A\to U_{i}\to B_{i}$ is homotopic to the inclusion $A\hookrightarrow B$.
+
+::: pf-proof
+Glue two copies of $(D^{n},D)$ to the two ends of $(S^{n-1}\times I,S\times I)$. The ambient union is $S^{n}$ and the two copies of $D^{k}$, joined by $S^{k-1}\times I$, form an embedded $S^{k}$; its complement $W$ consists of the two copies $B_{1},B_{2}$ of $B=D^{n}\setminus D$ joined by the cylinder $A\times I$ with $A=S^{n-1}\setminus S$. Enlargements of $B_{1}$ and $B_{2}$ that stop short of each other leave the band $A\times[\eta,1-\eta]$ uncovered, so the cover must overlap across the cylinder; with the displayed $U_{1},U_{2}$ the union is $W$ because $\tfrac13<\tfrac23$, the intersection is $A\times(\tfrac13,\tfrac23)$, which deformation retracts onto $A=A\times\{\tfrac12\}$, and each $U_{i}$ deformation retracts onto $B_{i}$ by collapsing the cylinder coordinate. The composite $A\hookrightarrow U_{i}\to B_{i}$ is the inclusion of $A$ in $B_{i}$ up to the homotopy moving along the cylinder, and $A$ is precisely the part of $\partial B$ to which the cylinder is attached, since the two pieces meet along $A\times\{0\}$.
+:::
+
+:::
+
+::: {.pf-step #mv}
+Reduced Mayer--Vietoris applied to $U_{1},U_{2}$ contains the exact sequence
+$$
+\cdots\to\widetilde H_{j}(A)\xrightarrow{(i_{*},-i_{*})}\widetilde H_{j}(B)^{2}\to\widetilde H_{j}(W)\to\widetilde H_{j-1}(A)\to\cdots
+$$
+in which both maps out of $\widetilde H_{j}(A)$ and into it are induced by the inclusion $i\colon A\to B$.
+
+::: pf-proof
+The reduced Mayer--Vietoris sequence of the open cover $W=U_{1}\cup U_{2}$ relates the homology of $U_{1}$, $U_{2}$, their intersection and $W$. By step [](#setup){.pf-ref} the intersection is homotopy equivalent to $A$ and each $U_{i}$ to $B$, and the maps induced by the four inclusions are those of the inclusion $A\to B$ in each factor, with the standard sign convention $(i_{*},-i_{*})$ on the map to the direct sum.
+:::
+
+:::
+
+::: {.pf-step #duality}
+$\widetilde H_{j}(A)\cong\widetilde H_{j}(W)\cong\ZZ$ for $j=d$ and both vanish otherwise.
+
+::: pf-proof
+$S\subset S^{n-1}$ is an embedded $(k-1)$-sphere and $A=S^{n-1}\setminus S$ is its complement in $S^{n-1}$; Alexander duality with $K=S$ and $n$ replaced by $n-1$ gives $\widetilde H_{j}(A)\cong\widetilde H^{n-1-j-1}(S)=\widetilde H^{n-j-2}(S^{k-1})$, which is $\ZZ$ exactly when $n-j-2=k-1$, that is $j=n-k-1=d$, and $0$ otherwise. Likewise $W=S^{n}\setminus S^{k}$ and Alexander duality in $S^{n}$ gives $\widetilde H_{j}(W)\cong\widetilde H^{n-j-1}(S^{k})=\ZZ$ exactly when $n-j-1=k$, again $j=d$.
+:::
+
+:::
+
+::: {.pf-step #vanish}
+$\widetilde H_{j}(B)=0$ for $j\neq d$.
+
+::: pf-proof
+For $j\neq d$, step [](#duality){.pf-ref} makes both $\widetilde H_{j}(A)$ and $\widetilde H_{j}(W)$ vanish, so the sequence of step [](#mv){.pf-ref} gives $\widetilde H_{j}(B)=0$ directly, and for $j\neq d+1$ it does so with both neighbours of $\widetilde H_{j}(B)$ trivial.
+:::
+
+:::
+
+::: {.pf-step #middledegree}
+$\widetilde H_{d}(B)\cong\ZZ$ and $i_{*}\colon\widetilde H_{d}(A)\to\widetilde H_{d}(B)$ is an isomorphism.
+
+::: pf-proof
+In degree $d$ the sequence of step [](#mv){.pf-ref} reads
+$$
+0\to\ZZ\xrightarrow{(i_{*},-i_{*})}\widetilde H_{d}(B)^{2}\to\ZZ\to0
+$$
+because the neighbouring groups vanish by step [](#duality){.pf-ref}. The middle group is free of rank two: as a short exact sequence of abelian groups with $\ZZ$ on the right, it splits. After choosing orientations, $i_{*}$ is multiplication by an integer $m$, so the displayed map is $(m,-m)\colon\ZZ\to\ZZ^{2}$; its cokernel is $\ZZ\oplus\ZZ_{m}$, while exactness says the cokernel is the $\ZZ$ on the right. Hence $\ZZ\oplus\ZZ_{m}\cong\ZZ$, forcing $m=1$; so $i_{*}$ is an isomorphism, and $\widetilde H_{d}(B)\cong\ZZ$ since the exact sequence exhibits it as an extension of $\ZZ$ by $\ZZ$ that is free of rank two, hence $\ZZ$.
+:::
+
+:::
+
+::: {.pf-step #ordinary}
+The inclusion $S^{n-1}\setminus S\to D^{n}\setminus D$ induces an isomorphism on ordinary homology as well.
+
+::: pf-proof
+Both spaces are nonempty, so $H_{0}\cong\widetilde H_{0}\oplus\ZZ$ and $H_{j}=\widetilde H_{j}$ for $j\geq1$; an isomorphism on reduced homology is therefore an isomorphism on ordinary homology.
+:::
+
+:::
+
+::: {.pf-step #kn}
+If $k=n$ then $S=S^{n-1}$, $A=\varnothing$, $D=D^{n}$ and $B=\varnothing$, so the conclusion is trivial.
+
+::: pf-proof
+Here $(D,S)\subset(D^{n},S^{n-1})$ is a homeomorphic copy of the whole pair, so $S=S^{n-1}$ and $A=\varnothing$. The embedded $D^{n}$ has its boundary on $\partial D^{n}$; by Invariance of Domain (Theorem 2B.3, printed p. 172) its interior is open in $\operatorname{int}D^{n}$, and it is also closed there because the image of the whole disc is compact while its boundary image lies on $\partial D^{n}$. An open and closed subset of the connected set $\operatorname{int}D^{n}$ is all of it, so $D=D^{n}$ and $B=D^{n}\setminus D=\varnothing$. Both spaces are empty, so the inclusion induces the identity of the trivial group.
+:::
+
+:::
+
+::: {.pf-step}
+For every $0\leq k\leq n$ the inclusion $S^{n-1}\setminus S\hookrightarrow D^{n}\setminus D$ induces an isomorphism on homology.
+
+::: pf-proof
+The cases are steps [](#k0){.pf-ref} ($k=0$), [](#middledegree){.pf-ref} with [](#ordinary){.pf-ref} ($0<k<n$) and [](#kn){.pf-ref} ($k=n$), which exhaust the possible $k$.
+:::
+
+:::
+
+:::
 :::
 
 ::: {.remark title="What the proof is"}
