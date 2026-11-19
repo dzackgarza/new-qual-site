@@ -13,6 +13,19 @@ review: draft
 audit:
 - event: solution-reviewed
   by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 18, printed p. 390,
+    the Kunneth formula (printed p. 291) and Whitehead's theorem. The proof is correct:
+    relatively prime finite orders kill the tensor and Tor terms of Kunneth, so
+    H~_n(X x Y) = H~_n(X) + H~_n(Y), which is the image of H~_n(X v Y), so the inclusion
+    is a homology isomorphism and, both spaces being simply connected CW complexes, a
+    homotopy equivalence; then H~_*(X ^ Y) = 0 by the exact sequence of the pair and
+    X ^ Y is simply connected, so it is contractible. The card's opening claim that no
+    retained solution set covers the exercise was false: Sam's set does, at §4.2
+    Exercise 18, and is now cited. Statement unchanged.
+- event: solution-reviewed
+  by: claude
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
@@ -49,7 +62,7 @@ If $X$ and $Y$ are simply-connected CW complexes such that $\tilde{H}_i(X)$ and 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 18, printed p. 390.
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 18, PDF p. 22**, which argues exactly this way — Künneth kills the mixed terms because the orders are relatively prime, the inclusion $X\vee Y\to X\times Y$ is then a homology isomorphism, and $X\wedge Y$ has vanishing reduced homology. The card's steps are that argument written out and checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 18, printed p. 390, with the Künneth formula of §3.B (printed p. 291) and Whitehead's theorem (printed p. 346). (An earlier note on this card said no retained set covers the exercise; that was wrong — Proudfoot's Homework #7 is not the only §4.2 set in the checkout.)
 
 ::: pf
 
