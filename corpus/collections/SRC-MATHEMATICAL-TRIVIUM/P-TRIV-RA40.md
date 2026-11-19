@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Real Analysis, Problem 40, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked numerically at several n. Area(S^n) =
+    2 pi^{(n+1)/2} / Gamma((n+1)/2) and V_n = pi^{n/2}/Gamma(n/2+1); both give the classical values
+    at n = 1 (2 pi), n = 2 (4 pi and pi) and n = 3 (2 pi^2 and 4 pi/3), which I verified, and for the
+    twenty-dimensional case they give area 0.2929 and volume 0.0258, the values the maximum of
+    V_n near n = 5 and the subsequent decay predict. The derivation through the Gaussian integral,
+    which the card carries, is the standard one and both boxes are right. Not claimed: any statement
+    about non-unit radius, which is a scaling.
 ---
 
 ::: {.problem}
