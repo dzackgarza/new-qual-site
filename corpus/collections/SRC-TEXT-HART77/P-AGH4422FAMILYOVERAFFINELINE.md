@@ -404,9 +404,9 @@ audit:
     que H_Z soit sans torsion et que la filtration de Hodge varie
     holomorphiquement sur S." The construction is (4.4.2), printed p. 50, under
     section 4.4, "Homomorphismes de schémas abéliens": for an abelian scheme
-    f: X to S the exponential gives the exact sequence 0 to R^1f_*Z to Lie(X) to
-    X to 0 and the Hodge filtration is 0 to Ker(a) to R^1f_*Z (x) O_S to Lie(X)
-    to 0, with (4.4.1) on the same page giving R^1f_*Z for a proper smooth f as
+    f: X to S the exponential gives the exact sequence 0 to R_1f_*Z to Lie(X) to
+    X to 0 and the Hodge filtration is 0 to Ker(a) to R_1f_*Z (x) O_S to Lie(X)
+    to 0, with (4.4.1) on the same page giving R_1f_*Z for a proper smooth f as
     the local system of homology of the fibres, of weight -1. So Youcis's
     sentence is Deligne's (4.4.3) and his map is Deligne's construction. Two
     qualifications now on the card: Deligne states it as a rappel, not as a
@@ -455,6 +455,29 @@ audit:
     Kleiman's printed pp. 164 and 167, whose folios were read. Not checked:
     Mumford's printed pp. 54 onwards, and the card's other steps were not
     re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the notation of Deligne (4.4.1) and (4.4.2) in the event of
+    this date above and in the rendered step deligne-argument: the sheaf there
+    is the homology sheaf R_1f_*Z, not the cohomology sheaf R^1f_*Z. Read for
+    this correction in P. Deligne, "Théorie de Hodge : II", Publications
+    mathématiques de l'I.H.É.S. 40 (1971), pp. 5--57, the copy of the numdam
+    PDF at publications.ias.edu (Number15.pdf), where the first PDF page is
+    numdam's notice, so printed p. N is PDF p. N-3, and printed p. 50, PDF
+    p. 47, was read with its folio: (4.4.1) reads "Pour f: X to S un morphisme
+    propre et lisse, on désignera par R_1f_*Z le système local sur S^an de
+    l'homologie des fibres de f. En chaque point s in S, (R_1f_*Z)_s isomorphe
+    à H_1(X_s,Z) est muni d'une structure de Hodge de poids -1, duale de la
+    structure de Hodge de H^1(X_s,Z). Cette structure varie continûment avec
+    s in S." and (4.4.2) reads "l'exponentielle définit une suite exacte de
+    faisceaux sur S^an 0 to R_1f_*Z to Lie(X) to X to 0, et la filtration de
+    Hodge est la suite exacte courte 0 to Ker(alpha) to R_1f_*Z (x) O to
+    Lie(X) to 0." The dual of R_1f_*Z is R^1f_*Z, so Youcis's quoted
+    (R^1f^an_*Z)^vee and the event's phrase "the local system of homology of
+    the fibres, of weight -1" stand. Not checked: Deligne's section 4.4 beyond
+    printed pp. 50--51, and the rest of the manuscript.
 ---
 
 ::: {.problem}
@@ -548,7 +571,7 @@ Proof of Theorem 8, as published: the local system of the family is constant bec
 
 Youcis's proof has four moves, each quoted or cited as he gives it.
 
-First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, (4.4.3), printed p. 51: "Soit $S$ un schéma lisse de type fini sur $\CC$. La construction (4.4.2) établit une équivalence de catégorie entre: a) la catégorie des schémas abéliens sur $S$; b) la catégorie des familles continues polarisables de structures de Hodge $H$ de type $(-1,0)+(0,-1)$ sur $S$, telles que $H_\ZZ$ soit sans torsion et que la filtration de Hodge varie holomorphiquement sur $S$." The construction it names is (4.4.2), printed p. 50: for an abelian scheme $f\colon X\to S$ the exponential gives the exact sequence $0\to R^1f_*\ZZ\to\operatorname{Lie}(X)\to X\to 0$, and the Hodge filtration is the exact sequence $0\to\ker(a)\to R^1f_*\ZZ\otimes\OO_S\to\operatorname{Lie}(X)\to 0$. Deligne states the equivalence as a *rappel* and gives its essential surjectivity to Borel [13], the full faithfulness resting on the scheme of homomorphisms of two abelian schemes over $S$ being unramified over $S$.
+First, "By 4.4.3 of Deligne's *Théorie de Hodge II* there is an equivalence of categories between abelian schemes and polarizable $\ZZ$-variations of Hodge structure. The map is given by $\mathscr A\mapsto(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$." The cited statement is Deligne, *Théorie de Hodge II*, (4.4.3), printed p. 51: "Soit $S$ un schéma lisse de type fini sur $\CC$. La construction (4.4.2) établit une équivalence de catégorie entre: a) la catégorie des schémas abéliens sur $S$; b) la catégorie des familles continues polarisables de structures de Hodge $H$ de type $(-1,0)+(0,-1)$ sur $S$, telles que $H_\ZZ$ soit sans torsion et que la filtration de Hodge varie holomorphiquement sur $S$." The construction it names is (4.4.2), printed p. 50: for an abelian scheme $f\colon X\to S$ the exponential gives the exact sequence $0\to R_1f_*\ZZ\to\operatorname{Lie}(X)\to X\to 0$, and the Hodge filtration is the exact sequence $0\to\ker(a)\to R_1f_*\ZZ\otimes\OO_S\to\operatorname{Lie}(X)\to 0$. Deligne states the equivalence as a *rappel* and gives its essential surjectivity to Borel [13], the full faithfulness resting on the scheme of homomorphisms of two abelian schemes over $S$ being unramified over $S$.
 
 Second, "since $V^\text{an}$ is simply connected then the $\ZZ$-local system $(R^1f^{\text{an}}_*\underline{\ZZ})^\vee$ is a constant local system but, a priori, one might be worried that the Hodge filtration is not constant."
 
