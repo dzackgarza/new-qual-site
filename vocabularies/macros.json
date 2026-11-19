@@ -328,7 +328,6 @@
   "\\sumpower": "{ {}^{ \\oplus{#1} }  }",
   "\\supp": "\\operatorname{supp}",
   "\\surjects": "\\twoheadrightarrow",
-  "\\surjectsvia": "\\xrightarrow[#1]{#2} { \\mathrel{\\mkern-16mu}\\rightarrow }\\,",
   "\\tensor": "\\otimes",
   "\\tensorpower": "{ {}^{ \\scriptstyle\\otimes_{#1}^{#2} }  }",
   "\\theset": "\\left\\{{#1}\\right\\}",
