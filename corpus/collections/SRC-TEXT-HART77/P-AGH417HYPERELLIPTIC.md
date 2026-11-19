@@ -24,6 +24,27 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.7, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.7, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    dim|K| = 1 at g = 2, the Riemann-Roch difference
+    l(P) - l(K-P) = 0, and the degree-two projection off the quadric. Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.7 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -222,4 +243,6 @@ Step [](#s3){.pf-ref} proves part (a), and steps [](#s4){.pf-ref} and [](#s5){.p
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.7, printed pp. 207–208, text version `tmp/sources/hartshorne-solutions-egbert.md`, obtains hyperellipticity from $\dim\linearsystem{K_X}=g-1$ and $\deg K_X=2g-2$, so that for $g=2$ the canonical system is a base-point-free $g^1_2$ giving a degree-two morphism to $\PP^1$ by (II, 7.8.1).
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.7, printed p. 84, has (a) as follows: for $g=2$, $\deg K=2$ and $\dim\linearsystem{K}=\ell(K)-1=1$; Riemann--Roch at a point gives $\ell(P)-\ell(K-P)=1+1-2=0$, and $\dim\linearsystem{P}=1$ would be a degree-one map, impossible for $g>1$, so $\ell(P)=1$ and $\ell(K-P)=1$ — which is to say $P$ is not a base point of $\linearsystem{K}$. A base-point-free system of degree $2$ and dimension $1$ gives a degree-two morphism by (II, 7.8.1). Its (b) takes a curve of type $(g+1,2)$ on $\PP^1\times\PP^1$ and the second projection, finite and nonconstant by (II, 6.8), of degree $2$ by (II, 6.9).
 :::
