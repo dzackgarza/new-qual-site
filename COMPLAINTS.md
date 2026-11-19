@@ -314,11 +314,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **80 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **79 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Seventeen of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 80 stand as this item lists them.
+   reported and repaired above. Eighteen of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 79 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -413,8 +413,15 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    generator of $H^{n-1}(S_b;\ZZ)$; the card's transport step is what upgrades the fibre-wise choice to a
    local orientation of the bundle, which is an orientation.
 
-   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (3 of its 10)
-   --- 80 proofs.
+   **§4.D-5, read the same day.** Correct, no card changed. Gysin for the sphere bundle $S^k\to S^m\to S^n$
+   has $H^k(S^m)=H^{k+1}(S^m)=0$ for $n>1$, so cupping with the Euler class is an isomorphism
+   $\ZZ\to H^{k+1}(S^n)$, forcing $k+1=n$ and then $m=n+k=2n-1$; the Thom class generates
+   $H^n(V,S(V))$ as $\Phi(1)$, and the identity at the end of §4.D gives $\Phi(e)=U\smile U$, so the Euler
+   class generates and the Hopf invariant is $\pm1$; $n=1$ is separated, where $k\ge1$ would force a
+   surjection $\pi_1(S^m)\to\ZZ$ from a trivial group.
+
+   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (2 of its 10)
+   --- 79 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
