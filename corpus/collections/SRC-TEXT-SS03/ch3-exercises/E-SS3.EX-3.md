@@ -35,7 +35,7 @@ $$
 
 ::: {.solution}
 
-The computation is the card's own; the statement is the exercise stored on the card, and no source text or solution set is retained for it.
+The computation is the card's own; the statement is Exercise 3 of [@SS03, ch. 3 (p. 103)], printed as $\int_{-\infty}^\infty\frac{\cos x}{x^2+a^2}\,dx=\pi\frac{e^{-a}}{a}$ for $a>0$, and no published solution set is retained for it.
 
 Let $a>0$, let $F(z)=e^{iz}/(z^{2}+a^{2})$, and for $R>a$ let $\gamma_{R}$ be the closed contour made of the interval $[-R,R]$ on the real axis and the upper semicircle $C_{R}=\{Re^{i\theta}\mid 0\leq\theta\leq\pi\}$.
 
