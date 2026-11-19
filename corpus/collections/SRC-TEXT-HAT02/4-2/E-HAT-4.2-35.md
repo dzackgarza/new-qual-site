@@ -74,7 +74,7 @@ For $z\in\CC$ and $q\in\quaternions$ one has $qz=zq$, the complex numbers being 
 Dividing each fibre $S^3$ by the right $S^1$-action gives $S^2$, and the local trivializations descend.
 
 ::: pf-proof
-The right action of $S^1$ on $S^3$ is free, its orbits being the cosets $qS^1$, and the orbit map $S^3\to S^3/S^1$ is the Hopf bundle $S^3\to S^2$; so each fibre of the quaternionic bundle becomes an $S^2$. A local trivialization $S^{4n+3}\restrictionof_U\cong U\times S^3$ of the quaternionic bundle is $S^3$-equivariant, hence $S^1$-equivariant for the right action, so it descends to a homeomorphism of $S^{4n+3}/S^1$ over $U$ with $U\times(S^3/S^1)$.
+The right action of $S^1$ on $S^3$ is free, its orbits being the cosets $qS^1$, and the orbit map $S^3\to S^3/S^1$ is the Hopf bundle $S^3\to S^2$; so each fibre of the quaternionic bundle becomes an $S^2$. A local trivialization $\restrictionof{S^{4n+3}}{U}\cong U\times S^3$ of the quaternionic bundle is $S^3$-equivariant, hence $S^1$-equivariant for the right action, so it descends to a homeomorphism of $S^{4n+3}/S^1$ over $U$ with $U\times(S^3/S^1)$.
 :::
 
 :::
