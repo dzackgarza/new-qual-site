@@ -5528,3 +5528,15 @@ The UNL pair is the sharpest: the two exams differ in their course number (970/9
 **What I did not do.** No collection index, schema file or audit code was edited: the first is another lane's metadata, and the second and third are tooling whose change reaches the whole corpus and needs the owner behind it. This record is the report, per the partition rule that a card — or here a check — outside one's residue is reported rather than changed.
 
 **Uncertainty.** The Harvard, UGA and both UNL entries' titles and provenance files were read for this record; the individual PDFs behind the four UNL and Harvard collections were not opened, so "different papers" rests on their titles and file names, not on their contents. Whether other `university-exam` keys hold more than one paper without yet colliding (because the collections' dates differ by accident) was not measured.
+
+## 2026-11-19, sixth item: a naive scan for undefined control words reports `\dfn`, which is a processed corpus convention
+
+**Object and need.** A check of the kind this session ran over its own cards — collect every `\name` inside dollar-delimited spans and test it against `vocabularies/macros.json` and `tools/qualc/mathjax_commands.json` — reports `\dfn` on many cards and cannot distinguish a genuinely undefined macro from a command the corpus pipeline handles itself. Recording this so the next session does not raise the alarm it nearly raised here.
+
+**Observed evidence.** `\dfn{...}` occurs in 702 corpus files. It is **not** an error: `tools/qualc/tex.py` names it as DEF-26, the one prose command the corpus is written with, and rewrites it into a `<dfn>` element before a reader sees the page (`DFN_COMMAND = re.compile(r"\\dfn\{")`, `DFN_CLASSES = "{.dfn .qual-dfn}"`). The same module's docstring is the authority on which raw TeX survives to the reader and which is dropped.
+
+**The measurement error, which is the real content of this entry.** My first pass reported "30 unknown macros over 14414 files" with `\dfn` leading at 148 cards. The count was an artifact: the span regex `\$[^$]+\$` matches *between* two spans as readily as inside one, so text sitting between a closing and an opening `$` was read as mathematics. Samples printed for inspection made this plain — `$ is the \dfn{matrix of the quadratic form} in these coordinates. :::` is prose, not a span — and the remaining single-letter "macros" (`\c`, `\y`, `\b`, …) are the same artifact.
+
+**The rule this yields.** A control-word inventory is only as good as the span parser behind it; `qualc.model` has one (`unread_math`, `math_spans`) and a hand-written regex does not. Before reporting an undefined macro, read `tools/qualc/tex.py` for the commands the pipeline processes, and check a printed sample of the hits.
+
+**Uncertainty.** The corpus-wide inventory was not redone with the real span parser, so the number of genuinely undefined control words in the corpus is **not** established by this session; what is established is that `\dfn` is not one of them and that the reported 30 were not evidence.
