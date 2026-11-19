@@ -29,7 +29,9 @@ source:
     - id: P-CH11-16
       comment: Exercise 16
     - id: P-CH11-21
-      comment: Exercise 21
+      comment: Exercise 19 (printed as exercise 21 when the card was created; the group of units
+        modulo 91 exercise is 19 in Gallian 7e, exercise 21 being the "only Abelian groups of order
+        n are cyclic" characterisation)
     - id: P-CH11-26
       comment: Exercise 26
     - id: P-CH11-34
