@@ -14,6 +14,20 @@ review: draft
 audit:
 - event: source-checked
   by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers, and the
+    paragraph at the head of the solution records that the paper prints no solutions, so the
+    argument is the card's own. Checked: both parts, including the printed presentation of H_n and
+    its order n^3, against the paper's text layer at the page named; the solution read for the
+    isomorphism with the unitriangular matrices and the list of irreducible complex representations
+    of H_p (p^2 characters and p - 1 of dimension p); `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists for
+    this paper to compare the argument with, and no other card of the collection in this pass.
+- event: source-checked
+  by: claude
   date: 2026-11-01
   note: >-
     Statement read from the card in `corpus/collections/SRC-UW-ALG-2017`; no correction is claimed.
@@ -43,6 +57,8 @@ $$
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the isomorphism of $H_n$ with the upper unitriangular matrices over $\ZZ/n\ZZ$ with its order count, and (b) the classification of the irreducible complex representations of $H_p$ — the $p^2$ characters and the $p-1$ representations of dimension $p$, induced from the characters of the index-$p$ abelian subgroup $\langle a,c\rangle$ on which $c$ acts nontrivially.
 
 For $n\ge1$ let
 $$
