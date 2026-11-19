@@ -34,6 +34,21 @@ audit:
     π₁ = ⟨a | a²⟩ = Z_2; cells of dimension at least 3 do not change π₁. The
     generator is the rotation loop in a fixed 2-plane, and the characteristic disk of
     e^2 is the explicit nullhomotopy of its double. No defect.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 2
+    of §3.D, printed p. 302 — the §3.D exercises 1--3 are on that page, checked at PDF page 311 of
+    the held book. Checked: the cells of $SO(n)$ are indexed by admissible sequences
+    $n>i_1>\cdots>i_r>0$ of dimension $i_1+\cdots+i_r$ (Proposition 3D.1, printed p. 294), so in
+    dimensions at most two there are exactly $e^0,e^1,e^2$; those two cells are the images of the
+    cells of $\RP^{n-1}$ under $\rho(v)=r(v)r(e_1)$, and the characteristic map of the $2$-cell
+    restricts to the double cover $S^1\to\RP^1$, so the $2$-cell attaches by a degree-two map; hence
+    $\pi_1$ of the $2$-skeleton is $\langle a\mid a^2\rangle=\ZZ_2$, and cells of dimension at least
+    three do not change it. Checked the two requested exhibits as well: the rotation loop in a fixed
+    $2$-plane is the $1$-cell's loop, and the characteristic disk of $e^2$ is the explicit
+    nullhomotopy of its double. No defect.
 ---
 
 ::: {.problem}
