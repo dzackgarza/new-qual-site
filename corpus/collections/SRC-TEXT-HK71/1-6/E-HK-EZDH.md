@@ -21,6 +21,19 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read as a second reader against the retained text; the statement matches Hoffman and Kunze
+    Exercise 1.6.12, printed p. 26. The proof was checked end to end: R_j(x_m) = delta_mj by
+    construction, the residue at -y_i is the displayed b_ij, and evaluating the partial fraction
+    at z = x_m gives CB = I; the specialization x_j = j-1, y_i = i gives x_i + y_j = i+j-1, and
+    the four products reduce to the factorials displayed, with (-1)^{2n-i-j} = (-1)^{i+j} giving
+    the sign; the binomial form was checked to equal the factorial form by expanding and
+    cancelling. Independently, both formulas were compared with the exact inverse of the Hilbert
+    matrix for n = 2, 3, 4, 5 in sympy, all entries agreeing and all integral. The solution now
+    cites the retained text; no step changed.
 ---
 
 ::: {.exercise}
@@ -37,6 +50,8 @@ Can you prove that?
 
 
 ::: {.solution}
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.6 Exercise 12 on printed p. 26. The argument is the card's own.
+
 Write $H_n=(h_{ij})_{1\le i,j\le n}$ with
 $$
 h_{ij}=\frac1{i+j-1}.
