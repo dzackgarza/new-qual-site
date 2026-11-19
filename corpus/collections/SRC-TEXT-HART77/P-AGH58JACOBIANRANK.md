@@ -66,7 +66,31 @@ audit:
     the criterion holds for any generating set, which is what the exercise and
     the card assume. The remark now names the text version; the printed page is
     p. 4 of the notes.
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Exercise I.5.8 as printed with its three hints; the card
+    agrees. All five steps are correct and the conclusion follows. The row
+    scaling lambda^{d_i-1} keeps the rank fixed under a change of
+    representative. The dehomogenized g_i do generate the ideal of Y cap U_l,
+    and since the affine Jacobian criterion needs the ideal of the variety and
+    not merely a defining ideal, the reason was added to the card: the
+    degree-zero part of I(Y) localized at x_l is the ideal of the chart, and it
+    is radical because localization carries radical ideals to radical ideals.
+    For j not equal to l the partial of g_i with respect to u_j at p is the
+    partial of f_i with respect to x_j at a, so the affine Jacobian is J(P)
+    with column l deleted. Euler's identity gives sum_j a_j d f_i/d x_j (a) =
+    d_i f_i(a) = 0 at a point of Y, so column l is minus the sum over j not
+    equal to l of a_j times column j; this holds in every characteristic
+    because f_i(a) vanishes rather than d_i. The affine criterion on the chart,
+    which has dimension r, then gives the boxed equivalence. The remark was
+    re-verified: Block's Proposition 17 and Lemma 18 read in the text version
+    (printed p. 4), Egbert p. 47 checked in the PDF and reading "The hint is
+    the answer", and Borcherds and Troiani contain no occurrence of the number
+    5.8, so they do not treat it. Not checked here: Block's Theorem 11, the
+    affine criterion his proof invokes, which the earlier source-corrected
+    event also excludes.
 ---
 
 ::: {.problem}
@@ -134,7 +158,7 @@ The point $P$ corresponds to the affine point
 $$
 p=(a_0,\ldots,\widehat{a_\ell},\ldots,a_n).
 $$
-Since localization and dehomogenization preserve the vanishing ideal on the chart, these $g_i$ generate the ideal of $Y\cap U_\ell$ there.
+Since localization and dehomogenization preserve the vanishing ideal on the chart, these $g_i$ generate the ideal of $Y\cap U_\ell$ there: the degree-zero part of the localized homogeneous ideal $I(Y)_{x_\ell}$ is the ideal of $Y\cap U_\ell$ in $k[u_0,\ldots,\widehat{u_\ell},\ldots,u_n]$, it is radical because localizing a radical ideal gives a radical ideal, and the dehomogenized $f_i$ generate it.
 The open subvariety $Y\cap U_\ell$ has the same dimension $r$ as $Y$, because it is a nonempty open subset of the irreducible variety $Y$.
 :::
 
