@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 16, printed p. 420,
+    and Exercise 10 of the same section, printed p. 419. The argument is right: pi_1(E_f)
+    -> pi_1(Y) an isomorphism makes pi_1(F_f) -> pi_1(E_f) zero by exactness, Exercise 10
+    makes the action of pi_1(F_f) on its own homotopy groups factor through pi_1(E_f),
+    hence trivial, so F_f is abelian and the Hurewicz theorem turns H̃_* = 0 into the
+    vanishing of all homotopy groups. One sentence was missing, which independent reports
+    from the swarm asked for: the hypothesis gives H̃_0(F_f) = 0 only if one notices that
+    this is exactly path connectivity, which is what makes pi_1(F_f) a group to act. That
+    is now said. Statement unchanged. Not checked: the last steps of the card beyond the
+    Hurewicz application.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -42,6 +56,7 @@ where $E_f\simeq X$. The hypothesis on $\pi_1$ says
 $$
 \pi_1(E_f)\xrightarrow{\cong}\pi_1(Y).
 $$
+The hypothesis also includes $\widetilde H_0(F_f;\ZZ)=0$, which says that $F_f$ is path connected: $\widetilde H_0$ of a space is $\ZZ^{\pi_0}-$reduced, so it vanishes exactly when there is one path component. Hence $\pi_1(F_f)$ is a group acting on the groups $\pi_n(F_f)$, and $F_f$ is connected in every degree in which the argument below uses it.
 The long exact sequence therefore shows that
 $$
 \pi_1(F_f)\to\pi_1(E_f)
