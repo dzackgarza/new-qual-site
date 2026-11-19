@@ -21,6 +21,8 @@ If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \
 :::
 
 ::: {.solution}
+
+The argument is the card's own: it splits $\sigma_n$ into a fixed head and a tail whose terms are bounded by $K$, and reads the $\limsup$ off that bound, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Write $\sigma_n = \frac{1}{n}\sum_{i=1}^n a_i$.
 
 ::: pf
