@@ -291,6 +291,27 @@ audit:
     the PDF pages of tmp/sources/ntu-ag2-chapter4.pdf. Not read in this pass:
     Reiser, Gruenewald, Egbert and the book, whose pages are those of the events
     above.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.2, printed p. 85,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.2, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    deg R = 6 from Hurwitz at g = 2, the ramification indices 2, and the
+    six split primes in O_K. Not checked: Yang's Solutions outside printed pp. 84-87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.2 at printed
+    p. 85 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -774,4 +795,6 @@ Steps [](#canonical-degree-two){.pf-ref} and
 R. Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, 21 October 2025 version [@Vak25, §§19.5--19.6], printed pp. 546--550, proves parts (a) and (b) by a different route: Theorem 19.5.1 (printed p. 546) is the count $2g+2$ of branch points, proved in 19.5.2 (printed pp. 546--547), which constructs the double cover branched at a prescribed even set of points as the normalization of $y^2=f(x)$ and is unique, and in 19.5.4 (printed pp. 547--548), which computes its genus as $r/2-1$ from the Čech complex of the two affine charts; Proposition 19.5.7 (printed pp. 548--549) shows that a curve of genus at least $2$ admits at most one double cover of $\PP^1$; and 19.6.2 (printed p. 550) assembles the bijection between genus-$2$ curves and double covers branched at six points. Proposition 19.5.2 is the statement of part (e)'s uniqueness.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.2, printed p. 210, classifies genus-2 curves by the six branch points of the canonical double cover, with Hurwitz $2g-2=2(-2)+6$ fixing the count.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.2 (Classification of Curves of Genus 2), printed p. 85, has (a) from Hurwitz: $2g_X-2=2(0-2)+\deg R$ gives $\deg R=6$, and since $e_P\le2$ while $p\ne2$, every ramified point has $e_P=2$, so $R$ is six reduced points. Its (b) reads the splitting in $\mathcal O_K$: a prime $(x-\alpha)$ splits in $\mathcal O_K$ exactly when $\alpha$ is one of $\alpha_1,\ldots,\alpha_6$, the infinity valuation does not split, and each of the six is ramified with index $2$. Its (b) then writes "$\deg R=2$" where its own (a) and the count give $6$; the slip is recorded here rather than copied.
 :::
