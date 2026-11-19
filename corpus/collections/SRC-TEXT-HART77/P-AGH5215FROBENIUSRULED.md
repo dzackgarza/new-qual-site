@@ -293,6 +293,35 @@ audit:
     which the argument needs, and Xie's citation of [Sc01, Proposition 3.3] for
     (iii) itself; the printed paper was not read, only the retained PDF's text
     layer at pp. 10-11.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A shape for Y that the card does not consider, and that every number it
+    computes is consistent with. Xie's section t is the image of 1 under
+    H^0(C,O_C) -> H^0(C,F^*E \otimes L^{-3}) -> H^0(C,S^3(E) \otimes L^{-3}), and the
+    second map is the adjoint of the p-th power map M -> F_*M^p, so the image of
+    the pulled-back section is its cube. Concretely: E \otimes L^{-1} is the
+    nonsplit extension 0 -> L^{-1} -> E \otimes L^{-1} -> O_C -> 0, so
+    H^0(E \otimes L^{-1}) = k, spanned by the section s mapping to 1 in H^0(O_C);
+    F^*s maps to s^3 under the second arrow, and the kernel L^{-3} of the
+    sequence 0 -> L^{-3} -> F^*E \otimes L^{-3} -> O_C -> 0 has no global section,
+    so t = s^3 up to a scalar. Then Y = div(t) = 3D with D = div(s) the zero
+    locus of a section of O_X(1) \otimes f^*L^{-1}: a section of the ruled surface,
+    isomorphic to C, of self-intersection D^2 = 1 + 2(-1) = -1, disjoint from
+    C_0. That reproduces every number on the card -- Y^2 = 9D^2 = -9,
+    Y.f = 3 deg(D -> C) = 3, Y.K_X = 3(2g-2-D^2) = 15 and p_a = 4 -- and it
+    makes Y non-reduced: the normalization is D = C, but the divisor is a
+    triple section, not an integral curve with one singular point. If that
+    reading is right, the "integral" of the corrected statement and the "one
+    singular point of delta = 1" of step s9 are both wrong, and the truth is
+    that 3C_0 - 3f is 3 times the section D, which is also why the printed
+    "nonsingular" cannot hold. Not established here: that Xie's second arrow is
+    the adjoint p-th power map -- his paper does not say which map it is, and
+    the printed paper was not read; and no example was computed. Recorded rather
+    than repaired: the card's step s9 keeps its claim, and this event is the
+    reason it should be re-read against the printed paper before it is relied
+    on.
 
 ---
 
