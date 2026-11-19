@@ -6538,3 +6538,21 @@ Theorem 8.2.19 in `tmp/sources/dolgachev-topics-classical-ag.md`; Gunning's Theo
 of these books, Hirschfeld's book (not held, and no longer used), Lange and Narasimhan beyond the
 statements and pages the cards record, and Jouanolou's book, whose Corollaire 6.4.2 Harbourne cites
 for the reducedness step.
+
+## 2026-11-19: §3.3 closed — the last five cards read, and a UCT inference in 3.3-31 repaired
+
+**Object.** The last report left `E-HAT-3.3-14`, `-16`, `-26`, `-27`, `-31` as the remaining §3.3 cards. All five are read against Hatcher at their printed pages (14 on p. 258; 16, 26 on p. 259; 27, 31 on p. 260), and with them **every card in §3.3 now has a read on or after 2026-11-13** — 35 of 35.
+
+| Card | Printed page | Mathematics checked / defect repaired |
+| --- | --- | --- |
+| `E-HAT-3.3-14` | Ex. 14, p. 258 | correct: the collapse $r_{2k+2}$ (a map, not a retraction) sends the loop to $k+1$ basis commutators and $k$ commutators to $k$, against Exercise 12 with $k+1$; and the two retractions kill the class while it is nonzero |
+| `E-HAT-3.3-16` | Ex. 16, p. 259 | correct: capping twice truncates twice and multiplies the two evaluations, which is capping with the cup product; descent, associativity and the unit checked |
+| `E-HAT-3.3-26` | Ex. 26, p. 259 | correct: the two top products are the orientation class, the squares and cross-summand products vanish — exactly, because $H^4(M)$ injects into the sum of the summands' $H^4$ — and the rest vanish for degree reasons |
+| `E-HAT-3.3-27` | Ex. 27, p. 260 | correct: primitive vector, symplectic correction, orthogonal splitting, nonsingular restriction, induction, and the sign change giving the printed block |
+| `E-HAT-3.3-31` | Ex. 31, p. 260 | **repaired**: the passage from $H_n(M,B;G)=0$ to the boundary isomorphism |
+
+**The repair.** `E-HAT-3.3-31` argued: $H_n(M,B;G)=0$ for every $G$; take $G=\QQ/\ZZ$ and "the universal coefficient theorem shows $H_{n-1}(M,B;\ZZ)$ is torsion-free"; then "since the cokernel is torsion-free, $\partial_A$ must be onto". Neither half holds. A torsion-free cokernel does not force surjectivity — $\ZZ\xrightarrow{0}\ZZ$ has torsion-free cokernel and is not onto — and $\QQ/\ZZ$ gives more than torsion-freeness: the universal coefficient sequence
+$$0\to H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ\to H_n(M,B;\QQ/\ZZ)\to\operatorname{Tor}(H_{n-2}(M,B;\ZZ),\QQ/\ZZ)\to0$$
+gives $H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ=0$, and a finitely generated group with that property vanishes, so $H_{n-1}(M,B;\ZZ)=0$. The fragment is then $0\to H_n(M,\partial M;\ZZ)\xrightarrow{\partial_A}H_{n-1}(A;\ZZ)\to0$, an isomorphism, which yields both $H_{n-1}(A;\ZZ)\cong\ZZ$ — so the component is orientable — and that $\partial_A$ is multiplication by a unit. The rest of the card was checked and stands: the triple sequence, the excision of $\partial M-A$, the component reduction, the mod-two case, and the change-of-coefficients argument for general $R$ including the $2R=0$ alternative. Bredon's printed pp. 356–357, which supply the vanishing, were not re-read this pass; the event of 2026-11-07 records that reading.
+
+**Not done, and open.** The #170 source obligations are unchanged: no complete published solution located for `E-HAT-2.B-3`, `-2.B-4`, `-2.B-5`, `-2.B-7`, `-2.B-9`, `E-HAT-2.C-1`, `-2.C-6`, `E-HAT-3.3-21`'s bracketed question, `E-HAT-4.1-1`, `-4.1-7`, `-4.A-1`. What this and the four preceding records of the day add is that §2.B, §2.C and §4.1 are now read in full and §3.3 is read in full, each card against the book at its printed page.
