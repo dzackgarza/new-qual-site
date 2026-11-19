@@ -14,6 +14,18 @@ classification:
   - Sheaf of Germs
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UCSD Complex Analysis Qualifying Exam, Spring 2015; all five items match.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    No retained solution set covers this examination. Structured the card's own answers:
+    the real-part counterexample, the slit-plane Riemann map, the residue obstruction,
+    the polynomial/transcendental cases for density, and the etale sheaf neighborhood.
 ---
 
 ::: {.problem}
@@ -35,45 +47,55 @@ Then there is a function element $(f, D)$ such that $\zeta_n = (f)_{\pi(\zeta_n)
 :::
 
 ::: {.solution}
-**(i) False.** Take $u(z)=\operatorname{Re}z$ and $v(z)=0$ on
-$U=\CC$. They agree on the imaginary axis, which has accumulation
-points in $U$, but $u\ne v$.
 
-**(ii) True.** The slit plane
-$$
-U=\CC\setminus(-\infty,0]
-$$
-is simply connected and proper, so by the Riemann mapping theorem there is a
-nonconstant biholomorphism $F:U\to\DD$. In particular $\abs{F}<1$.
+No retained solution set covers this examination; the argument below is the card's own.
 
-**(iii) False.** If polynomials $p_n$ converged uniformly on
-$1<\abs{z}<2$ to $1/[z(z-3)]$, then they would converge uniformly on the circle
-$\abs{z}=3/2$. Hence
-$$
-0=\int_{\abs{z}=3/2}p_n(z)\,dz
-\longrightarrow
-\int_{\abs{z}=3/2}\frac{dz}{z(z-3)}.
-$$
-The latter integral equals
-$2\pi i\operatorname{Res}_{z=0}(1/[z(z-3)])=-2\pi i/3\ne0$, a
-contradiction.
+::: pf
 
-**(iv) True.** If a nonconstant entire function is a polynomial, it is
-surjective onto $\CC$ by the fundamental theorem of algebra applied to
-$f-w$. If it is transcendental entire, Great Picard at $\infty$ says that it
-takes every complex value, with at most one exception, infinitely often.
-Either way its image is dense in $\CC$.
+::: {.pf-step #i-false}
+Statement (i) is false.
 
-**(v) True.** The sheaf space $\mathcal O$ is equipped with the étalé-space
-topology. A basic neighborhood of the germ $\zeta=(f)_a$ is
+::: pf-proof
+On $U=\CC$, take $u(z)=\operatorname{Re}z$ and $v(z)=0$. Both are harmonic, and they agree on the imaginary axis, every point of which is an accumulation point in $U$; but $u\ne v$.
+:::
+:::
+
+::: {.pf-step #ii-true}
+Statement (ii) is true.
+
+::: pf-proof
+The slit plane $U=\CC\setminus(-\infty,0]$ is a proper simply connected domain. The Riemann mapping theorem gives a nonconstant biholomorphism $F:U\to\DD$, and then $\abs{F(z)}<1$ for all $z\in U$.
+:::
+:::
+
+::: {.pf-step #iii-false}
+Statement (iii) is false.
+
+::: pf-proof
+Uniform polynomial convergence on the annulus would give convergence on the circle $\abs z=3/2$. Each polynomial has zero integral there, so
 $$
-\{(f)_z:z\in D\},
+0=\int_{\abs z=3/2}p_n(z)\,dz\longrightarrow \int_{\abs z=3/2}\frac{dz}{z(z-3)}
+=2\pi i\operatorname{Res}_{z=0}\frac1{z(z-3)}=-\frac{2\pi i}{3}\ne0,
 $$
-where $(f,D)$ is a function element representing $\zeta$. Convergence
-$\zeta_n\to\zeta$ therefore implies that all sufficiently large $\zeta_n$
-belong to such a basic neighborhood. Thus
-$$
-\zeta_n=(f)_{\pi(\zeta_n)}
-$$
-for all sufficiently large $n$.
+a contradiction.
+:::
+:::
+
+::: {.pf-step #iv-true}
+Statement (iv) is true.
+
+::: pf-proof
+A nonconstant polynomial is surjective onto $\CC$ by the fundamental theorem of algebra applied to $f(z)-w$. A transcendental entire function has an essential singularity at infinity, so Casorati--Weierstrass says its image is dense in $\CC$. Thus every nonconstant entire function has dense image; a constant function need not.
+:::
+:::
+
+::: {.pf-step #v-true}
+Statement (v) is true.
+
+::: pf-proof
+In the etale topology on $\mathcal O$, a basic neighborhood of the germ $\zeta$ represented by $(f,D)$ is $\{(f)_z:z\in D\}$. By definition of convergence, all sufficiently large $\zeta_n$ lie in this neighborhood, hence are germs of the same function element: $\zeta_n=(f)_{\pi(\zeta_n)}$ for all large $n$.
+:::
+:::
+
+:::
 :::
