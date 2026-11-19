@@ -109,7 +109,27 @@ See [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 [[T-4MDS6]]
 
+[[C-BKYF7]]
+
+[[T-2KGOX]]
+
 See [[complex-analysis/conformal-maps/index|Conformal maps]].
+
+## Conformal geometry
+
+The statements of the chapter's newer topics, which carry the same weight on the exam.
+
+[[D-3QTVR]]
+
+[[T-UBWL2]]
+
+[[D-2HXLN]]
+
+[[T-ZAEWG]]
+
+[[D-7PTGC]]
+
+See [[complex-analysis/basics/the-riemann-sphere|The Riemann sphere]], [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]], [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]], and [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]].
 
 ## Hypotheses and counterexamples
 
