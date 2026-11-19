@@ -861,7 +861,12 @@ audit:
     intersection number $L_1\cdot L_2$ of I.7.7, printed p. 53. The opposite
     convention would give $-1$, so the sign of s6 is the one the intersection
     numbers require. Checked in this pass: the three chart computations, by hand
-    and against the definitions of §7 and (0.4) of Lipman; no other step was
+    and against the definitions of \S7 and (0.4) of Lipman; also read in this
+    pass, on the printed pages of the same scan, Lipman's Residue Theorem (0.6)
+    with its condition (a), the normalization at regular local rings, on printed
+    p. 24 and its condition (d), the globalization reading
+    $\int_V:H^d(V,\omega_V)\to k$ as the residue at each closed point, on printed
+    p. 25, which is the form the head of the solution cites. No other step was
     re-derived, and the comparison of step s8 in the case where the products of
     first Chern classes do not span is untouched and remains open.
 ---
