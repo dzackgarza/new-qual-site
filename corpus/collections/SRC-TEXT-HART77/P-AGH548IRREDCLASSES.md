@@ -197,6 +197,46 @@ audit:
     p. 375, applied to the linear system |D|. Checked: the dimension count
     (codimension 2 over U, dimension N-1 over the curve complement) and the
     passage from reducedness to separability. No statement changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two wrongly cited steps in the nonsingularity paragraph of step
+    third-condition-contains-nonsingular-curve, repaired against the book and
+    the two papers. Lemma 8.9, printed p. 175, is a local-ring criterion for a
+    module over a local domain to be free, and it is not the statement that a
+    coherent sheaf of rank 2 at the generic point of an integral scheme is
+    locally free of rank 2 on a nonempty open set; that statement is Exercise
+    II.5.7(a), printed p. 125, which is what the proof of Theorem II.8.15 uses
+    for the same passage, and the citation is now that exercise. The folios
+    were checked in the retained PDF: PDF p. 140 carries the folio 125 and is
+    the first page of section II.5, whose Exercise 5.8 follows Exercise 5.7 on
+    that page, and PDF pp. 190 and 285 carry the folios 175 and 270, so
+    printed page = PDF page - 15 holds for the three citations. Second,
+    Proposition 10.4, printed p. 270, requires both varieties of the morphism
+    to be nonsingular, and the image of the morphism defined by the linear
+    system need not be nonsingular; the open set is now cut down to the points
+    where the sheaf of relative differentials is locally free of rank 2 and
+    the image is nonsingular, which is nonempty since both conditions hold at
+    the generic point, and the proposition is applied to the restriction to
+    that set. The passage from smoothness and transversality of a hyperplane to
+    the nonsingularity of the member was asserted and is now argued: at a point
+    where the differential is onto, the tangent space of the member is the
+    inverse image of the line cut on the tangent space of the image by the
+    hyperplane, of dimension 1, which is the dimension of the member. Read for
+    this pass: the printed statements of Exercise II.5.7 and Lemma II.8.9 and
+    Proposition III.10.4 in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    with the folios of PDF pp. 140, 190 and 285 checked in
+    tmp/sources/hartshorne-1977-algebraic-geometry.pdf; Harbourne,
+    Anticanonical Rational Surfaces, the abstract and the introduction, which
+    state that every result is proved over an algebraically closed field of
+    arbitrary characteristic, Corollary II.3, Theorem III.1(a) and Lemma II.6(b)
+    with its proof, whose reducedness step uses Jouanolou's Corollaire 6.4.2
+    for the failure of the general section to be reduced in a Frobenius-composed
+    system; and Dolgachev, Topics in Classical Algebraic Geometry, Theorem
+    8.2.19 and Lemma 8.1.3, as cited above. Not checked: any printing of these
+    other than the text versions beside the retained PDFs, and Jouanolou's
+    book, which is not held, so the reducedness input is Harbourne's as cited.
 ---
 
 ::: {.problem}
@@ -325,13 +365,24 @@ tangent to $\varphi(X)$ at $\varphi(x)$, or $\varphi(X)\subseteq H$. The morphis
 separable: the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4, and an
 inseparable morphism onto its image pulls a general hyperplane back to a non-reduced divisor. Hence
 $\Omega_{X/\varphi(X)}$ has rank $2$ at the generic point by II.8.6A, printed p. 174, and is locally
-free of rank $2$ on a nonempty open set $U$ by Lemma 8.9, printed p. 175, so $\varphi$ is smooth on
-$U$ by Proposition 10.4, printed p. 270. Over a point of $U$ the hyperplanes through $\varphi(x)$
-and tangent to the image form a linear subspace of codimension $2$ in $\PP^{N\vee}$, of dimension
-$N-3$; over the complement of $U$, a proper closed subset of the surface, the hyperplanes meeting
-$\varphi(X\setminus U)$ form the dual of a curve, of dimension $N-1$. Thus $\dim Z\le N-1$, and a
-general hyperplane $H$ lies outside the image of $Z$ in $\PP^{N\vee}$. For such $H$ the member
-$\varphi^{-1}(H)$ lies in $U$, where $\varphi$ is smooth, and is therefore nonsingular. This is the
+free of rank $2$ on a nonempty open set by Exercise II.5.7(a), printed p. 125, the stalk at the
+generic point being a two-dimensional vector space over the function field $k(X)$, and it stays so
+after shrinking that set. Let $U$ be the open set of points at which $\Omega_{X/\varphi(X)}$ is
+locally free of rank $2$ and $\varphi(x)$ is a nonsingular point of the surface $\varphi(X)$; it is
+nonempty, both conditions holding at the generic point of $X$, whose image is the generic point of
+$\varphi(X)$, and on it $\varphi$ is smooth of relative dimension $2$ by Proposition 10.4, printed
+p. 270, applied to the morphism $U\to\varphi(U)$, whose source and target are nonsingular varieties
+there. At $x\in U$ the differential $T_xX\to T_{\varphi(x)}\varphi(X)$ is onto, so a hyperplane $H$
+through $\varphi(x)$ meets $\varphi(X)$ transversally there exactly when
+$T_{\varphi(x)}H\cap T_{\varphi(x)}\varphi(X)$ is a line, and for such an $H$ the tangent space
+$T_x\varphi^{-1}(H)$ is the inverse image of that line, of dimension $1$, which is the dimension of
+$\varphi^{-1}(H)$, so $\varphi^{-1}(H)$ is nonsingular at $x$. Over a point of $U$ the hyperplanes
+through $\varphi(x)$ and tangent to the image form a linear subspace of codimension $2$ in
+$\PP^{N\vee}$, of dimension $N-3$; over the complement of $U$, a proper closed subset of the
+surface, the hyperplanes meeting $\varphi(X\setminus U)$ form the dual of a curve, of dimension
+$N-1$. Thus $\dim Z\le N-1$, and a general hyperplane $H$ lies outside the image of $Z$ in
+$\PP^{N\vee}$. For such $H$ every point of the member $\varphi^{-1}(H)$ lies in $U$, where $\varphi$
+is smooth and $H$ is transverse, so the member is nonsingular. This is the
 argument of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its
 proof, printed p. 375, applied to the linear system $\linearsystem{D}$ instead of the hyperplane system; the
 characteristic-zero Corollary III.10.9, printed p. 274, is not needed.
