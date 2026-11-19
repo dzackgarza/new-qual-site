@@ -652,3 +652,7 @@ $f^*\mcl\tensor g^*\mcl$ has degree $2$. Likewise,
 $p_2^*\mcl$ has degree zero on each $p_1$-fibre only when
 $\deg\mcl=0$.
 :::
+
+::: {.remark}
+The exercise stands on printed p. 337 of Hartshorne, under its printed italic heading "The Dual of a Morphism", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, parts (a)--(c) and the instruction to do the separable and purely inseparable cases separately.  The card proves the three parts itself; no published solution was located for it.
+:::
