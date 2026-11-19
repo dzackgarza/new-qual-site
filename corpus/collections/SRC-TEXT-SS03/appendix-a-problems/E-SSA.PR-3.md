@@ -55,6 +55,8 @@ $$
 :::
 
 ::: {.solution}
+No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3, printed pp. 341--343.
+
 **The defect in the printed display, and the statement that replaces it.** Everything below is proved; nothing is asserted by editing a formula.
 
 ::: pf

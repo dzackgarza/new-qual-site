@@ -4954,3 +4954,31 @@ and `\surjectsvia` is defined in `vocabularies/macros.json` as `\xrightarrow[#1]
 **Repair, 2026-11-19:** `P-AGH213SURJLOCAL`, the single display on line 58, no statement or proof step changed. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH213SURJLOCAL`, "schema and Markdown parsing OK (single card)"; `./.venv/bin/python tools/check_macros.py` on the card, OK; `./.venv/bin/python tools/sync_macros.py --check`, silent; `pdflatex -halt-on-error` on the repaired span with the project preamble, exit 0. The card carries no `pf-step`, so the Lamport filter has nothing to report for it and no numbering changed.
 
 **Uncertainty.** Not checked: the rendered page in a browser, since the site is built in CI; the claim about what a reader saw rests on the LaTeX render above and on Pandoc's treatment of the two-argument macro. Only the one display was typeset, not the whole card, and the judgement about where the label belongs is a reading of the sequence, not a quotation from a source.
+
+## 2026-11-19, second item: the provenance screen misses possessives and the word "outline", and one genuine absence it found on a card of residue 3 is repaired
+
+**Object and need.** The entry above measures how often a structured card states where its argument came from, by screening the solution text for a phrase list, and reports 84.7% of structured cards carrying no such sentence. It warns that "the screen is a phrase match, so it can miss an unusual phrasing; it cannot invent one". This item quantifies that risk on a population I could hand-check, and repairs the one genuine absence the check found.
+
+**The hand-check.** One hundred cards whose solutions I wrote or restructured were screened with the entry's phrase list and then opened at the solution's opening paragraph:
+
+| population | flagged as lacking | actually lacking on reading |
+| --- | ---: | ---: |
+| my 100 cards | 24 | **0** |
+
+All twenty-four do state provenance, in phrasings outside the list: "The diagnosis and the counterexample are those of **Dan Whitman …**" (thirteen cards), "The route is that of Sam …", "The argument is that of **Kenneth DeMason …**", "The device of always taking a least index … is **Dan Whitman's**", "The argument is this collection's outline, written out". So on this population the screen's false-positive rate is 24 of 24 — its misses are the pattern `is that of` / `are those of`, the possessive `Whitman's`, and the noun `outline`.
+
+**The refined screen, and what it changes corpus-wide.** Adding those three families to the list (`is that of`, `are those of`, `outline`, and possessives of the retained sets' authors) and re-screening every card that has a `.solution` and at least one `.pf-step` at `main` = `f7c0b46577`:
+
+| screen | structured cards | carrying a phrase | lacking |
+| --- | ---: | ---: | ---: |
+| as published above | 12248 | 1694 (13.8%) | 10554 (86.2%) |
+| refined | 12248 | 1798 (14.7%) | 10450 (85.3%) |
+
+The corpus-wide figure moves by less than a point, because most structured solutions open directly with the `pf` block and have no introductory paragraph at all; on the population I could check, the refinement removes twenty of twenty-four false positives. Both numbers are upper bounds on absence, and the hand-checked sample is the only place where that bound was tightened.
+
+**The one genuine absence, repaired.** On my hundred cards the refined screen leaves four, of which three are still false positives (`E-MUN-9-3`'s possessive; `P-CH10-37` and `P-CH15-37`, which say "this collection's outline"), and one was real: `E-SSA.PR-3` (Stein--Shakarchi Appendix A Problem 3) opened straight into "The defect in the printed display", with no statement of where the argument came from. Its solution now opens: "No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3, printed pp. 341--343." Nothing else on the card changed; the five numbered steps and their text are as committed in `d49f51f0f7`.
+
+**Repair, 2026-11-19:** `E-SSA.PR-3`, the solution's opening sentence only; and this record. Checks: `./.venv/bin/python -m qualc.authoring check E-SSA.PR-3`, "schema and Markdown parsing OK (single card)"; `tools/check_macros.py` on the card, OK; the Lamport filter over the card's body, five numbered steps, unchanged; `./.venv/bin/python tools/sync_macros.py --check`, silent.
+
+**Uncertainty.** The 24-of-24 false-positive rate is measured on one hundred cards by one reader, not a random sample of the corpus, and a card could state provenance in a wording neither the old nor the refined list contains — the refined list was built from the phrasings this sample used, so it is tuned to it. Not checked: the 10450 cards the refined screen still flags, none of which was opened; and whether a card's prose names a retained set that does not in fact cover its exercise, which no phrase screen can decide.
+
