@@ -15,6 +15,18 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof is correct. Writing the map as (x,y) to (ax+by, cx+dy), the two
+    Cauchy-Schwarz estimates bound the squared norm by the sum of squares of the
+    four entries times the squared norm of the argument, so the map is Lipschitz
+    with that constant, and the epsilon-delta argument at an arbitrary point
+    follows by linearity; the degenerate case of the zero map is disposed of
+    separately. Nothing was changed. The statement was not re-read against the
+    scan in this pass: the retained file
+    assets/attachments/grad_prelim_Spring03.pdf has no extractable text.
 ---
 
 ::: {.problem}
