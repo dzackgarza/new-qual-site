@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 10, is the statement the card answers, and the head of the solution names it; the
+    retained file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the
+    blank versos, so Problem 5 stands on its page 10. Checked: the statement against the paper's text
+    layer at the page named; the GNS construction from the faithful state and the trace on the resulting
+    algebra of operators; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and
+    the QED. Not checked: no retained solution set exists for this paper to compare the argument with,
+    and no other card of the collection in this pass.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
@@ -41,6 +53,8 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 :::
 
 ::: {.solution}
+
+The problem is Problem 5 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 10 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 The GNS form of the faithful state turns $\mathcal A$ into a $*$-algebra of operators on a finite-dimensional Hilbert space, and the Hilbert-space trace gives the tracial state. The argument is the card's own; nothing published was consulted for it.
 
