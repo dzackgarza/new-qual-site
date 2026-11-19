@@ -8299,3 +8299,15 @@ whitespace-only commit over three cards would break one-card-per-commit for noth
 
 **The remainder.** Forty-four Chapter IV cards still lack Yang; the queue in index order now starts
 at IV.3.4 `P-AGH434RATIONALNORMALCURVE`, and Yang's 4.3.4 through 4.3.9 are all on printed p. 88.
+
+## 2026-11-19, fifteenth item: §6.6 Ex. 11 and §6.8 Ex. 5 read, both correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-66-11`, §6.6 Exercise 11, printed p. 212 — correct.** With $E_j$ the projection onto $W_j$ along $V_j=W_1+\cdots+\widehat{W_j}+\cdots+W_k$, each $f_j=f\circ E_j$ lies in $V_j^0$ because $E_j$ kills $V_j$, and $\sum_jf_j=f$ because $\sum_jE_j=I$, so the annihilators span $V^*$. For directness, a relation $\sum_jg_j=0$ with $g_j\in V_j^0$ evaluated at $w\in W_i$ gives $g_i(w)=0$, since $W_i\subseteq V_j$ for $j\ne i$ and the other $g_j$ vanish there; $W_i+V_i=V$ then gives $g_i=0$. Locator note: the exercise list on printed p. 212 carries the running header "Sec. 6.7", the section beginning below the list — the same page-header trap as §1.5's exercises on p. 21. Commit `4b2e916890`.
+
+**`E-HK-68-5`, §6.8 Exercise 5, printed p. 225 — correct.** $g(D)$ is diagonalizable in a basis that diagonalizes $D$. With $T=D+N$ commuting and $g=\sum a_rx^r$, $(D+N)^r-D^r=NQ_r(D,N)$, so $M=g(T)-g(D)=NQ(D,N)$ commutes with $D$ and $N$ and hence with $g(D)$; and $M^s=N^sQ^s=0$ when $N^s=0$, all factors commuting. Thus $g(T)=g(D)+M$ is a Jordan decomposition, and uniqueness of the diagonalizable--nilpotent decomposition identifies $g(D)$ as the diagonalizable part. Commit `ce0a8adf60`.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the two arguments were checked against the printed statements, and `E-HK-68-5`'s appeal to uniqueness was taken from the book's theorem rather than re-proved.
