@@ -77,6 +77,28 @@ audit:
     closed connected 1-manifold is a circle, so the connected sum is S^1, part (a) is vacuous there
     (0 < i < 1) and part (b) reads 0 = 0 + 0 - 0.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 6 of §3.3, printed p. 257 — the
+    exercises of §3.3 are 1--6 on p. 257, 7--14 on p. 258, 15--26 on p. 259 and 27--35 on p. 260,
+    checked at PDF pages 266--269 of the held book — and against the sheet the card transcribes, the
+    Math 538 homework solutions, where "Hotcher 3.3. #6" heads the connected-sum solution and the
+    relative homology argument follows, identified in the OCR of `tmp/sources/hatcher-math538-homework4-solutions.md`
+    (`tmp/sources/hatcher-math538-homework4-solutions.pdf`, 19 image-only pages). The claim that the
+    passage is on PDF pages 14--16 is the earlier event's and was not re-rendered this pass. One
+    repair of the argument: step `#cases` said, in the case where neither factor is orientable, that
+    the middle group of $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$ "is the
+    direct sum with an extra $\ZZ$". Exactness alone gives only an extension, and the quotient here
+    carries $\ZZ_2$ summands, so the extension does not split by freeness. The step now says that, and
+    points to step `#torsion`, which does determine the group: Corollary 3.28 makes the torsion of
+    $H_{n-1}(M)$ exactly $\ZZ_2$, and the rank rises by one, so
+    $H_{n-1}(M)\cong\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$ — one $\ZZ_2$ of the pair replaced
+    by $\ZZ$, as the exercise says. Checked and unchanged: the good-pair identification with
+    $M_1\vee M_2$, the pair sequence and the middle degrees, the boundary maps (an isomorphism for
+    an orientable factor and zero for a nonorientable one), and part (b)'s rank count, in which the
+    two alternatives both contribute $(-1)^{n+1}$ and give $-\chi(S^n)=-1-(-1)^n$.
 ---
 
 ::: {.problem}
@@ -90,6 +112,7 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 6, printed p. 257.
 
 The solution is the one printed in the Math 538 homework solutions, HMW 3, handwritten pages 2--4 (PDF pages 14, 15 and 16 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #6: the same identification $M_1\sharp M_2/S^{n-1}=M_1\vee M_2$, the same pair sequence, the same three cases with Corollary 3.28 for the torsion, and part (b) by a degree-by-degree count of ranks. Two things that sheet leaves implicit are supplied here: the case $n=2$, where $H_{n-2}(S^{n-1})\ne0$ and the sequence must be read in reduced homology, and the good-pair justification of $H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)$. Coefficients are $\ZZ$ throughout.
 
@@ -145,7 +168,7 @@ For $n\ge3$ one has $n-2\ne n-1$, so $\widetilde H_{n-2}(S^{n-1})=0$, which turn
 For $n\ge3$ the following hold, and $M$ is orientable exactly when both $M_i$ are: if both are orientable then $H_n(M)\cong\ZZ$ and $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$; if exactly one is, then $H_n(M)=0$ and the same isomorphism for $H_{n-1}$; if neither is, then $\psi=0$ and $H_{n-1}(M)\cong\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$.
 
 ::: pf-proof
-Both orientable: $\psi:\ZZ\oplus\ZZ\to\ZZ$ is onto, so $H_n(M)=\ker\psi\cong\ZZ$ and $H_{n-1}(M)\cong\operatorname{coker}\psi=0$ in the exact fragment of step [](#top){.pf-ref}, that is $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$. Exactly one orientable: $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$ and again $\operatorname{coker}\psi=0$. Neither: $\psi=0$, so the fragment is $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$, and the middle group is the direct sum with an extra $\ZZ$. Orientability is read off from $H_n(M)=\ker\psi$.
+Both orientable: $\psi:\ZZ\oplus\ZZ\to\ZZ$ is onto, so $H_n(M)=\ker\psi\cong\ZZ$ and $H_{n-1}(M)\cong\operatorname{coker}\psi=0$ in the exact fragment of step [](#top){.pf-ref}, that is $H_{n-1}(M)\cong H_{n-1}(M_1)\oplus H_{n-1}(M_2)$. Exactly one orientable: $\psi:\ZZ\to\ZZ$ is an isomorphism, so $H_n(M)=0$ and again $\operatorname{coker}\psi=0$. Neither: $\psi=0$, so the fragment is $0\to\ZZ\to H_{n-1}(M)\to H_{n-1}(M_1)\oplus H_{n-1}(M_2)\to0$; exactness makes $H_{n-1}(M)$ an extension of that direct sum by $\ZZ$, and the extension need not split a priori, since the quotient carries $\ZZ_2$ summands — what it is, step [](#torsion){.pf-ref} determines, from Corollary 3.28 and the rank, to be $\ZZ\oplus H_{n-1}(M_1)\oplus H_{n-1}(M_2)$. Orientability is read off from $H_n(M)=\ker\psi$.
 :::
 
 :::
