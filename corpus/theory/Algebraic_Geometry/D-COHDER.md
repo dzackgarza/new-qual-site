@@ -21,8 +21,8 @@ prompts:
 ---
 
 ::: {.definition}
-For $X$ a topological space, $\globsec{X; \wait}: \Sh(X; \Ab) \to \Ab$ is left exact.
-Define $H^i(X, \mcf) \coloneqq R^i \globsec{X; \wait}(\mcf)$: choose an injective resolution $\mcf \injects \mci^\bullet$, apply $\globsec{X; \wait}$, and take cohomology.
+For $X$ a topological space, $\globsec{X; -}: \Sh(X; \Ab) \to \Ab$ is left exact.
+Define $H^i(X, \mcf) \coloneqq R^i \globsec{X; -}(\mcf)$: choose an injective resolution $\mcf \injects \mci^\bullet$, apply $\globsec{X; -}$, and take cohomology.
 :::
 
 ::: {.remark title="Enough injectives"}
@@ -32,10 +32,10 @@ Then $\Hom(\mcg, \mci) \cong \prod_x \Hom_{\ZZ}(\mcg_x, I_x)$. The stalk functor
 :::
 
 ::: {.remark title="Acyclic resolutions"}
-If $\mcf\to\mca^\bullet$ is a resolution by $\globsec{X;\wait}$-acyclic sheaves, then
+If $\mcf\to\mca^\bullet$ is a resolution by $\globsec{X;-}$-acyclic sheaves, then
 $$
 H^i(X,\mcf)\cong H^i\bigl(\globsec{X;\mca^\bullet}\bigr).
 $$
-Flasque sheaves are $\globsec{X;\wait}$-acyclic, so flasque resolutions compute sheaf cohomology.
+Flasque sheaves are $\globsec{X;-}$-acyclic, so flasque resolutions compute sheaf cohomology.
 The functors $(H^i)_{i\geq0}$ form the universal cohomological $\delta$-functor extending global sections. Thus a natural transformation from $H^0$ to the degree-zero term of another cohomological $\delta$-functor extends uniquely to a morphism from $(H^i)$ to that $\delta$-functor. Additional hypotheses are required for such a comparison to be an isomorphism in positive degrees.
 :::
