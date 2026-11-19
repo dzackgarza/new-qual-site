@@ -33,6 +33,19 @@ audit:
     graded groups. Step 4 now names the last isomorphism — for odd-degree generators the tensor
     product of exterior algebras is the exterior algebra on the union of the generators, with
     $x_ix_j=-x_jx_i$ — instead of asserting it in a parenthesis. No statement was changed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 11 of §3.C, printed p. 292. The answer is right:
+    $H_*((S^1)^n;\ZZ)$ with the Pontryagin product is $\Lambda_\ZZ[x_1,\dots,x_n]$ on degree-one
+    generators, since $x^2=0$ in $H_*(S^1)$, Künneth identifies the homology with the tensor power
+    through the Eilenberg--Zilber map, that map is a ring map for the Pontryagin products because
+    the group structure of $T^n$ is coordinatewise, and the tensor product of exterior algebras on
+    odd generators is the exterior algebra on their union. Two structural repairs only: the step
+    whose proof opened with 'Steps s1, s2 and s3.' now begins with the substantive sentence it was
+    introducing, and the terminal `pf-qed` naming one label is gone. No mathematical change.
+    Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -89,15 +102,9 @@ Hence $H_*(T^n) \cong \Lambda_\ZZ[x_1, \ldots, x_n]$, the exterior algebra on ge
 
 ::: pf-proof
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}. It remains to name the last isomorphism: for generators of odd degree the tensor product of exterior algebras is the exterior algebra on the disjoint union of the generators, with $x_ix_j=-x_jx_i$ because $|x_i||x_j|=1$ is odd, and $x_i^2=0$; applied $n$ times this gives $\Lambda_\ZZ[x_1,\dots,x_n]$.
+It remains to name the last isomorphism: for generators of odd degree the tensor product of exterior algebras is the exterior algebra on the disjoint union of the generators, with $x_ix_j=-x_jx_i$ because $\abs{x_i}\abs{x_j}=1$ is odd, and $x_i^2=0$; applied $n$ times this gives $\Lambda_\ZZ[x_1,\dots,x_n]$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref}.
 
 :::
 
