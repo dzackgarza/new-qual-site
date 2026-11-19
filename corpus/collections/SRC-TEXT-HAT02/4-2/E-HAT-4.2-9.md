@@ -35,6 +35,18 @@ audit:
     redundant. Acyclic noncontractible complexes exist (for instance an acyclic K(G,1)). Not checked:
     nothing outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 9
+    of §4.2, printed p. 389. Checked: the cofibration sequence $X\to Y\to C_f$ with $\widetilde H_*(C_f)=0$
+    makes $f_*$ an isomorphism on reduced homology, and the homology Whitehead theorem for simply
+    connected CW complexes turns that into a homotopy equivalence; and the counterexample: for the
+    constant map $A\to*$ with $A$ acyclic and noncontractible the mapping cone is $CA/A\cong\Sigma A$,
+    contractible by Exercise 8, while $f$ is not a homotopy equivalence. The example complex cited
+    (Hatcher Example 2.38, printed p. 142) has the stated presentation. No defect; the printed page is
+    added.
 ---
 
 ::: {.problem}
@@ -43,6 +55,8 @@ Use the preceding exercise to give an example where this fails in the nonsimply-
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 9, printed p. 389.
+
 Let $f:X\to Y$ be a map of simply-connected CW complexes and suppose its mapping cone $C_f$ is contractible. The cofibration sequence
 $$
 X\xrightarrow f Y\longrightarrow C_f
