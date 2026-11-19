@@ -32,7 +32,9 @@ See [[complex-analysis/cauchy-theory/morera-and-converses|Morera and converses]]
 
 ## Given a formula built from holomorphic functions
 
+::: {.fact}
 Sums, products, quotients with nonvanishing denominators, and compositions of holomorphic functions are holomorphic, and $e^z$, $\sin z$, $\cos z$, and the polynomials are entire [@SS03, ch. 1].
+:::
 
 ## Obstructions to holomorphy
 

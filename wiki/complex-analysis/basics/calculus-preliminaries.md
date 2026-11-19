@@ -114,8 +114,6 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 [[FT-3ZL25]]
 
-## Convergence of functions
-
 Uniform continuity, uniform convergence, and the compactness theorem for families of functions are on [[complex-analysis/basics/uniform-convergence|Uniform convergence]]; normal families are on [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel]].
 
 ## Problems

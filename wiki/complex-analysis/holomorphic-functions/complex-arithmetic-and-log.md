@@ -76,7 +76,9 @@ Removing the cut fixes the discontinuity, and the point $z=0$ remains: it is a [
 
 ## The quadratic formula over $\CC$
 
-For $a\neq 0$, the roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$, where $w$ is either square root of $\Delta \coloneqq b^2-4ac\in\CC$.
+::: {.fact}
+For $a\neq 0$, the roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$, where $w$ is either square root of $\Delta\coloneqq b^2-4ac\in\CC$; the two roots coincide exactly when $\Delta = 0$, and over $\CC$ the discriminant always has a square root.
+:::
 
 ## Exercises
 
