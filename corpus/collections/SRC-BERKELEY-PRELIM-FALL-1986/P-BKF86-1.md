@@ -10,6 +10,13 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall86.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -27,6 +34,7 @@ Sketch the graph of a typical member of the sequence in each case.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1986, retained in this repository as `assets/attachments/Fall86.pdf`; the statement below is its wording.
 
 ::: pf
 
