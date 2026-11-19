@@ -45,6 +45,21 @@ audit:
     multiplication by p, and Ext(A_p,Z) ≅ Hom(A_p,Q/Z) from Exercise 5 detects
     A_p = 0. What this note does not do: it does not certify the converse of (a),
     which the printed exercise does not ask for.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The 2026-11-06 note on this card is wrong about the source and reversed a correct
+    repair. Hatcher, Algebraic Topology (2002), §3.F Exercise 9(a), printed p. 321,
+    reads "Ext(A, Z) is divisible iff A is torsionfree", read from the PDF page itself
+    and not from the extracted text alone. The iff is therefore restored in the
+    statement, and its converse proved in step #s2. That step was also defective as
+    written: it showed Ext(V,Z) nonzero only for finite-dimensional V, while _pA can be
+    infinite dimensional. Replaced by a direct-summand argument: a nonzero element of
+    _pA spans a Z_p summand, so Ext(_pA,Z) has the nonzero summand Ext(Z_p,Z) = Z_p.
+    The splicing, the identification of the composite with multiplication by p, and
+    (b) with its converse were rechecked and are correct. Not checked: nothing outside
+    this exercise.
 
 ---
 
@@ -56,7 +71,7 @@ $$\operatorname{Hom}(pA, \ZZ) \to \operatorname{Ext}(A_p, \ZZ) \to \operatorname
 where the map labeled "$p$" is multiplication by $p$.
 Use this to show:
 
-(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if $A$ is torsionfree.
+(a) $\operatorname{Ext}(A, \ZZ)$ is divisible if and only if $A$ is torsionfree.
 
 (b) $\operatorname{Ext}(A, \ZZ)$ is torsionfree if $A$ is divisible, and the converse holds if $\operatorname{Hom}(A, \ZZ) = 0$.
 :::
@@ -124,11 +139,11 @@ Conversely, if $\operatorname{Ext}(A,\ZZ)$ is divisible then $A$ is torsionfree.
 
 ::: pf-proof
 
-Suppose ${}_pA\ne0$ for some prime $p$; then ${}_pA$ is a nonzero vector space over $\ZZ/p$.
+Suppose ${}_pA\ne0$ for some prime $p$; then ${}_pA$ is a nonzero vector space over $\ZZ_p$, since $p\,{}_pA=0$.
 
 Divisibility makes multiplication by $p$ surjective on $\operatorname{Ext}(A,\ZZ)$, so in the spliced sequence $\operatorname{Ext}(A,\ZZ)\xrightarrow{p}\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}({}_pA,\ZZ)\to0$ the map into $\operatorname{Ext}({}_pA,\ZZ)$ is zero, whence $\operatorname{Ext}({}_pA,\ZZ)=0$.
 
-But for a nonzero finite-dimensional $\ZZ/p$-vector space $V$ one has $\Ext^1_\ZZ(V,\ZZ)\cong\operatorname{Hom}_{\ZZ/p}(V,\ZZ/p)\ne0$: the resolution $0\to\ZZ\xrightarrow{p}\ZZ\to\ZZ/p\to0$ gives $\Ext^1_\ZZ(\ZZ/p,\ZZ)\cong\ZZ/p$, $\Ext^1$ is additive over finite direct sums, and a nonzero finite-dimensional space over a field carries a nonzero linear functional. This contradicts $\operatorname{Ext}({}_pA,\ZZ)=0$, so ${}_pA=0$ for every prime $p$, that is, $A$ is torsionfree.
+But $\operatorname{Ext}({}_pA,\ZZ)\ne0$: a nonzero element of ${}_pA$ spans a subgroup isomorphic to $\ZZ_p$ that is a direct summand of ${}_pA$ over $\ZZ_p$, so ${}_pA\cong\ZZ_p\oplus W$ and $\operatorname{Ext}(-,\ZZ)$, additive on direct sums, gives $\operatorname{Ext}({}_pA,\ZZ)\cong\operatorname{Ext}(\ZZ_p,\ZZ)\oplus\operatorname{Ext}(W,\ZZ)$; and $\operatorname{Ext}(\ZZ_p,\ZZ)\cong\ZZ_p$ is nonzero, computed from the resolution $0\to\ZZ\xrightarrow{p}\ZZ\to\ZZ_p\to0$. This contradicts $\operatorname{Ext}({}_pA,\ZZ)=0$, so ${}_pA=0$ for every prime $p$, that is, $A$ is torsionfree.
 
 :::
 
