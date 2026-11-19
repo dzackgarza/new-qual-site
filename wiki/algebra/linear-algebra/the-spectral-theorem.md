@@ -13,7 +13,7 @@ topics:
 
 # The spectral theorem
 
-A real symmetric or complex Hermitian matrix is diagonalizable in an orthonormal basis of eigenvectors, and the two classes of matrices are the ones whose diagonalizing change of basis can be taken orthogonal or unitary.
+The page collects what it takes to diagonalize a matrix, and the one case in which the diagonalizing change of basis can be chosen orthonormal, so that the diagonal form is reached by an orthogonal or unitary matrix rather than by an arbitrary one.
 
 [[D-DVLK5]] [[D-BSUV4]]
 
@@ -33,7 +33,9 @@ A real symmetric or complex Hermitian matrix is diagonalizable in an orthonormal
 
 [[E-LJ7PF]]
 
-The converse holds as well and is short: if $Q^tAQ = D$ with $Q$ orthogonal and $D$ diagonal, then $A = QDQ^t$ and $A^t = QD^tQ^t = A$, so a matrix that is orthogonally diagonalizable is symmetric; the unitary statement with $Q^{\dagger}$ in place of $Q^t$ shows the same way that a unitarily diagonalizable matrix is normal.
+Both statements are equivalences: the matrices an orthogonal change of basis diagonalizes are exactly the symmetric ones, and those a unitary change diagonalizes are exactly the normal ones.
+
+[[T-SPRTR]]
 
 ## Simultaneous diagonalization
 
