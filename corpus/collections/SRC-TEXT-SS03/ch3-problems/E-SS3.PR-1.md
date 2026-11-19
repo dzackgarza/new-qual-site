@@ -14,9 +14,20 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 3 Problems, printed
+    p. 108, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 108; the statement below is its wording.
+
 Consider a holomorphic map on the unit disc $f : \DD \to \CC$ which satisfies $f(0) = 0$.
 By the open mapping theorem, the image $f(\DD)$ contains a small disc centered at the origin.
 We then ask: does there exist $r > 0$ such that for all $f : \DD \to \CC$ with $f(0) = 0$, we have $D_r(0) \subset f(\DD)$?
