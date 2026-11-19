@@ -1362,7 +1362,7 @@ and if $H\subseteq X$ is a nonsingular divisor with $Y\pitchfork H$ for which th
 
 ::: pf-proof
 
-**The vanishing.** Let $\mathcal L$ be ample and let $D_1,\ldots,D_{n-p}\in|\mathcal L|$ be general, so that $L=D_1\cap\cdots\cap D_{n-p}$ is nonsingular of dimension $p$ and meets $Y$ transversely in $N$ reduced points $Z=Y\cap L$; this is Bertini's theorem (II.8.18, printed p. 179) applied successively. By step [](#s3){.pf-ref} the class of the complete intersection is
+**The vanishing.** Let $\mathcal L$ be ample and let $D_1,\ldots,D_{n-p}\in\linearsystem{\mathcal L}$ be general, so that $L=D_1\cap\cdots\cap D_{n-p}$ is nonsingular of dimension $p$ and meets $Y$ transversely in $N$ reduced points $Z=Y\cap L$; this is Bertini's theorem (II.8.18, printed p. 179) applied successively. By step [](#s3){.pf-ref} the class of the complete intersection is
 $$
 \alpha_0:=\eta_X(L)=i_*(1)=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_{n-p}))\in H^{n-p}(X,\Omega_X^{n-p}),
 $$
