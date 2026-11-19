@@ -26,6 +26,8 @@ Use pictures to describe the Sylow $3$-subgroups of $S_3,S_4,\ldots,S_9$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Picture the letters in the blocks $\{1,2,3\}$, $\{4,5,6\}$, $\{7,8,9\}$. The
 subgroups below rotate letters within blocks and, for $S_9$, also rotate the
 blocks.

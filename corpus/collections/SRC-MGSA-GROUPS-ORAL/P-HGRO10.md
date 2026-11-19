@@ -26,6 +26,8 @@ Give an example of a finite nonabelian group with no nontrivial homomorphic imag
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Take $G=A_5$.
 
 ::: pf

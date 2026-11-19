@@ -28,6 +28,8 @@ Prove that the groups in your classification are pairwise nonisomorphic.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
+
 ::: pf
 
 ::: pf-step
