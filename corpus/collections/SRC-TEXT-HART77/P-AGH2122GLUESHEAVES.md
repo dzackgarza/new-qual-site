@@ -13,6 +13,15 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate: the remark describing the printed
+    p. 69 statement wrote the glued sheaf as `$\shsheaf$`, and `\shsheaf` is defined nowhere. The
+    sentence now says "the glued sheaf" without a symbol rather than guessing one; the statement
+    itself, and every step of the solution, are untouched. Checked: `qualc.authoring check` on the
+    card. Not checked: the printed page was not re-read in this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-17
@@ -436,7 +445,7 @@ Step [](#s10){.pf-ref} is precisely the sheaf-gluing assertion of the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 69 of Hartshorne, headed "Gluing Sheaves", read off that page (a 100 dpi render of PDF p. 84, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines); the statement above is that page's text, the open cover, the isomorphisms $\varphi_{ij}$, the cocycle conditions and the glued sheaf $\shsheaf$ included.
+The exercise stands on printed p. 69 of Hartshorne, headed "Gluing Sheaves", read off that page (a 100 dpi render of PDF p. 84, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines); the statement above is that page's text, the open cover, the isomorphisms $\varphi_{ij}$, the cocycle conditions and the glued sheaf included.
 
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.22, PDF p. 11, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he either glues the espaces étalés of the given sheaves or, as written, defines $\mcf(V)$ as the set of tuples $s_i\in\Gamma(U_i\cap V,\mcf_i)$ with $\phi_{ij}(s_i)=s_j$ on the overlaps, and inverts the projection $\psi_i$ explicitly.
 The proof above is the second construction, with the two sheaf axioms proved for arbitrary covers, the inverse computed, and the uniqueness of the pair $(\mcf,\{\psi_i\})$ added.
