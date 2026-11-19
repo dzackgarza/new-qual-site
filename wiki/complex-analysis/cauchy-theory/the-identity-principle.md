@@ -23,8 +23,6 @@ On the disconnected open set $\DD\cup\DD_1(3)$, the function equal to $0$ on $\D
 
 :::
 
-[[T-OFMGU]]
-
 ::: {.example title="Transferring a real identity to the plane"}
 Since $\sin^2(z)+\cos^2(z) = 1$ on $\RR$, which has limit points in $\CC$, the identity holds on $\CC$.
 For the addition law, let $F(z, w) \coloneqq e^{z+w}-e^z e^w$.

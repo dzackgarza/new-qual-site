@@ -100,7 +100,7 @@ The equality holds on the entire plane.
 ::: pf-proof
 
 The entire function $f(z)-z-1$ vanishes on the nonempty
-open set $H$. The [[T-RGE7C|identity theorem]] on the connected
+open set $H$. The [[T-SVF2W|identity theorem]] on the connected
 plane makes it identically zero. Hence
 $f(z)=z+1$ for every $z\in\CC$.
 This translation indeed preserves $U$ and has the two

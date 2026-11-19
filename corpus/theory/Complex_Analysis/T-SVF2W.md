@@ -26,3 +26,13 @@ The following are equivalent.
 
 Condition (ii) is the form usually called the identity theorem [@SS03, Theorem 4.8 (p. 52)].
 :::
+
+::: {.corollary}
+Let $\Omega\subseteq\CC$ be a connected open set and let $S\subseteq\Omega$ have a [[D-TFSPT|limit point]] in $\Omega$.
+
+(a) If $f$ and $g$ are [[D-V6UQJ|analytic]] on $\Omega$ and $f(z)=g(z)$ for all $z\in S$, then $f(z)=g(z)$ for all $z\in\Omega$; this is (ii) applied to $f-g$.
+
+(b) If $F\colon\Omega\times\Omega\to\CC$ is holomorphic in each variable separately and $F(z,w)=0$ for all $z,w\in S$, then $F(z,w)=0$ for all $z,w\in\Omega$.
+
+For (b), fixing $w\in S$ shows $z\mapsto F(z,w)$ vanishes on $\Omega$ by (a), and then fixing $z\in\Omega$ shows $w\mapsto F(z,w)$ vanishes on $\Omega$ by (a) again.
+:::
