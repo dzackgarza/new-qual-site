@@ -41,6 +41,25 @@ audit:
     H_*(S^infty) vanishes in those degrees. This card explicitly proves the exceptional n=1 and
     n=0 ends of the sequence instead of leaving the conclusion to induction from n=0.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 10 of §2.B, printed p. 177, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against both published solutions at their
+    printed pages. The statement matches the print. Two defects of citation corrected. (1) Li's
+    solution is on printed p. 43, not p. 44: `tmp/sources/hatcher-solutions-guanyu-li.pdf` carries
+    the folio 43 on the page whose head is "Appendix 2.B" and which holds Exercise 2.B.1 (2.B.10) and
+    Exercise 2.B.2 (2.B.11), and printed p. 44 is blank of §2.B. (2) Poulsen's Ex. 2.B.10, printed
+    p. 30 of `tmp/sources/poulsen-at-ex.pdf`, is a second published solution and is now cited beside
+    Li's. Checked in the card: $S^\infty$ contractible, so $H_n(S^\infty;\ZZ_2)=0$ for $n>0$;
+    for $n\geq2$ the sequence collapses to $0\to H_n(\RP^\infty)\xrightarrow{\partial}H_{n-1}(\RP^\infty)\to0$,
+    and for $n=1$ to $0\to H_1\to H_0(\RP^\infty)\xrightarrow{\tau_*}H_0(S^\infty)\xrightarrow{p_*}H_0(\RP^\infty)\to0$,
+    where $p_*$ is an isomorphism of two copies of $\ZZ_2$, so $\tau_*=0$ and $\partial$ is an
+    isomorphism there too — which is the step Li's chain of equalities and Poulsen's paragraph both
+    leave to the reader. Hence $H_n(\RP^\infty;\ZZ_2)\cong\ZZ_2$ for every $n\geq0$. Not claimed: a
+    source that computes the homology by a different method.
+
 ---
 
 ::: {.problem}
@@ -140,7 +159,7 @@ The degree-zero group is $\ZZ_2$ because $\RP^\infty$ is connected. Apply the is
 :::
 
 :::
-The transfer argument for the double cover is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.1 (Hatcher 2.B.10), printed p. 44 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The card elaborates the low-degree step that the source abridges: since $p_*$ is an isomorphism on $H_0$, exactness gives $\tau_*=0$ there and the connecting map is an isomorphism as well as in degrees at least $2$.
+The transfer argument for the double cover is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.1 (Hatcher 2.B.10), printed p. 43 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`, and a second published solution of the same exercise is **Morten Poulsen, *Algebraic Topology — Exercise Solutions*, Ex. 2.B.10, printed p. 30** of `tmp/sources/poulsen-at-ex.pdf`, which draws the low-degree exact sequence out in full. The card elaborates the low-degree step that the sources abridge: since $p_*$ is an isomorphism on $H_0$, exactness gives $\tau_*=0$ there and the connecting map is an isomorphism as well as in degrees at least $2$.
 
 
 :::
