@@ -85,7 +85,7 @@ $$
 $$
 The last identity cuts an $n\times n$ square of dots into $L$-shaped layers of $1, 3, 5, \ldots, 2n-1$ dots:
 
-![](figures/2021-12-11_22-09-24.png)
+![](/assets/figures/2021-12-11_22-09-24.png)
 
 :::
 
@@ -106,7 +106,7 @@ The rising-factorial sums are discrete analogues of $\int_0^n x^p \dx = { n^{p+1
 Writing $k^2 = k(k+1) - k$ gives $\sum_{k=1}^n k^2 = \frac{n(n+1)(n+2)}{3} - \frac{n(n+1)}{2} = {n(n+1)(2n+1) \over 6}$.
 The identity $\sum_{k=1}^n k = n(n+1)/2$ counts a staircase of $n$ columns as half of an $n\times(n+1)$ rectangle:
 
-![](figures/2021-12-11_22-15-41.png)
+![](/assets/figures/2021-12-11_22-15-41.png)
 
 :::
 

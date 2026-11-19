@@ -18,15 +18,15 @@ The interior angles of a convex $n$-gon sum to $(n-2)\pi$, so each interior angl
 - Circle: $x^2 + y^2 = r^2$, or $\abs{z-z_0}=r$.
   For $z_1\neq z_2$ in $\CC$ and a constant $c>0$ with $c\neq 1$, the locus $\abs{z-z_1} = c\abs{z-z_2}$ of points whose distances $d_1, d_2$ to the two points $z_1, z_2$ have constant ratio $d_1/d_2 = c$ is also a circle:
 
-![](figures/2021-12-04_00-49-30.png)
+![](/assets/figures/2021-12-04_00-49-30.png)
 
 - Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$, or $\abs{z-z_1} + \abs{z-z_2} = c$ with $c > \abs{z_1-z_2}$, the locus of points whose distances to $z_1$ and $z_2$ have constant sum $d_1 + d_2 = c$:
 
-![](figures/2021-12-04_00-53-36.png)
+![](/assets/figures/2021-12-04_00-53-36.png)
 
 - Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$, or $\abs{\abs{z-z_1} - \abs{z-z_2}} = c$ with $0 < c < \abs{z_1-z_2}$:
 
-![](figures/2021-12-04_00-57-40.png)
+![](/assets/figures/2021-12-04_00-57-40.png)
 
   The rectangular hyperbola is $xy = \frac{c^2}{2}$.
 - Parabola: $y^2 = 4ax$.
@@ -47,12 +47,12 @@ For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with at lea
 
 - The ellipse $\qty{x\over a}^2 + \qty{y\over b}^2 = 1$ is parameterized by $t\mapsto (a\cos(t), b\sin(t))$:
 
-![](figures/2021-12-30_19-31-42.png)
+![](/assets/figures/2021-12-30_19-31-42.png)
 
   - In complex form, $\gamma(t) = pe^{it} + qe^{-it}$ with $p \coloneqq \frac{a+b}{2}$ and $q \coloneqq \frac{a-b}{2}$, since $pe^{it} + qe^{-it} = a\cos(t) + ib\sin(t)$.
   - For $a\geq b$ the foci are $(\pm c, 0)$ with $c\coloneqq \sqrt{a^2-b^2}$, and the vertices are $(\pm a, 0)$ and $(0, \pm b)$:
 
-    ![](figures/2022-01-01_00-11-24.png)
+    ![](/assets/figures/2022-01-01_00-11-24.png)
 
 - The circle $(x-h)^2 + (y-k)^2 = r^2$ is parameterized by $t\mapsto (r\cos(t) + h, r\sin(t) + k)$, in complex form $\gamma(t) = z_0 + re^{it}$ with $z_0\coloneqq h + ik$.
 
