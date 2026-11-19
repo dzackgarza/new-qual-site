@@ -210,6 +210,32 @@ audit:
     displayed with them, and that the printed left and right sides of NTU's
     comparison line are the two computed above. Not verified: nothing beyond
     those two sources, and no third reading of the NTU page as an image.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The three reductions the sources state in one clause each are now proved
+    on the card, so its proof of V.4.10 is complete and stands on its own
+    where the sources stop. Read for this pass: Hartshorne V.4.10, printed
+    p. 408, with (4.13)(a) on printed p. 406; answer 2476483 in
+    tmp/sources/mse-2475661-hart-v410-freshman-calculus.md; and NTU Chapter V
+    §4 Exercise 10, printed p. 17. The reductions, now marked on their steps
+    as the card's own: (i) at a maximiser with b_5+b_6=a and b_4<=a/3, one
+    has b_2=b_3=b_4, since with t=b_1=b_2, u=b_3, v=b_4=b_5 the constraint
+    t+u+v<=a is automatic for t,u<=v<=a/3 and 2t^2+u^2 is increasing in each
+    variable on that range, so t=u=v; (ii) at one with b_5+b_6=a and
+    b_4>=a/3, one has b_2+b_3+b_4=a, since if t+u+v<a then either u<v and
+    increasing u raises 2t^2+u^2, or u=v and t<v, so increasing t does;
+    (iii) in the case b_5+b_6<a, write t=b_1=b_2, x=b_3-t, y=b_4-b_3; then
+    u=t+x, v=t+x+y, w=2a-5t-3x-2y, the constraints w>=v and v+w<=a become
+    6t+4x+3y<=2a and 4t+2x+y>=a, and the sum of squares is a convex
+    quadratic on that polygon, whose vertices (0,a/2,0), (a/3,0,0),
+    (a/4,0,0) and (a/6,0,a/3) give a^2, 2a^2/3, 7a^2/8 and 5a^2/6. Checked:
+    the endpoint quadratics of steps case-small and case-large have maximum
+    1 on their intervals, and the four vertex values above. The
+    transcriptions of the rest of the two arguments are unchanged. Not
+    checked: no source outside these two and the book was read, and the
+    card's other steps were not re-derived in this pass.
 ---
 
 ::: {.problem}
@@ -310,17 +336,20 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2=b_3=b_4$, which answer 2476483 states with the reason that otherwise
-$b_3$ or $b_2$ could be increased. Together with $b_1=b_2$ and $b_5=b_4$ from step
-[](#maximiser){.pf-ref} this
-makes $b_1,\ldots,b_5$ equal to $b_4$, and $b_6=a-b_4$, so
+At such a maximiser $b_2=b_3=b_4$. Write $t=b_1=b_2$, $u=b_3$ and $v=b_4=b_5$, so that
+$b_6=a-v$ and $0\le t\le u\le v\le a/3$. The second constraint is $t+u+v\le a$, and it is
+automatic on this range because $t+u\le2v\le a-v$; for fixed $v$ the function $2t^2+u^2$ is
+increasing in $t$ and in $u$ on $0\le t\le u\le v$, so its maximum there is at $t=u=v$. Hence
+$b_1=\cdots=b_5=v$ and $b_6=a-v$, so
 $$
-\sum_ib_i^2=5b_4^2+(a-b_4)^2=6b_4^2-2ab_4+a^2 .
+\sum_ib_i^2=5v^2+(a-v)^2=6v^2-2av+a^2 .
 $$
-This is a quadratic in $b_4$ with positive leading coefficient, so on $0\le b_4\le a/3$ it is at most
-the larger endpoint value; at $b_4=0$ the value is $a^2$ and at $b_4=a/3$ it is
-$5a^2/9+4a^2/9=a^2$. The answer writes $4b_4^2$ in place of the five equal terms $5b_4^2$ and reports
-$a^2$ at both endpoints, which are the endpoint values of $5b_4^2+(a-b_4)^2$.
+This is a quadratic in $v$ with positive leading coefficient, so on $0\le v\le a/3$ it is at most
+the larger endpoint value; at $v=0$ the value is $a^2$ and at $v=a/3$ it is
+$5a^2/9+4a^2/9=a^2$. The reduction to $b_1=\cdots=b_5=v$ is the card's own; answer 2476483 states it
+with the reason that otherwise $b_3$ or $b_2$ could be increased. The answer writes $4b_4^2$ in
+place of the five equal terms $5b_4^2$ and reports $a^2$ at both endpoints, which are the endpoint
+values of $5b_4^2+(a-b_4)^2$.
 :::
 
 :::
@@ -332,8 +361,12 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2+b_3+b_4=a$, which the answer states with the same reason that otherwise $b_3$
-or $b_2$ could be increased; with $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step
+At such a maximiser $b_2+b_3+b_4=a$. If $t=b_2$, $u=b_3$ and $v=b_4=b_5$, then $b_6=a-v$, and the
+constraints are $0\le t\le u\le v$, $v\in[a/3,a/2]$ and $t+u+v\le a$. If $t+u+v<a$, then either
+$u<v$, and increasing $u$ preserves the ordering and raises $2t^2+u^2$, or $u=v$, and then $t<v$
+because $t+2v<a$, so increasing $t$ raises the sum; in neither case is the point a maximiser. Hence
+$t+u+v=a$. This reduction is the card's own; the answer states it with the reason that otherwise
+$b_3$ or $b_2$ could be increased. With $b_1=b_2$, $b_5=b_4$ and $b_6=a-b_4$ from step
 [](#maximiser){.pf-ref} this gives
 $$
 b=(b_2,b_2,a-b_4-b_2,b_4,b_4,a-b_4).
@@ -370,21 +403,25 @@ $$
 $$
 
 ::: pf-proof
-By step [](#maximiser){.pf-ref} such a maximiser has $b_2+\cdots+b_6=2a$. The answer reduces it to the
-form
+By step [](#maximiser){.pf-ref} such a maximiser has $b_2+\cdots+b_6=2a$. Write $t=b_1=b_2$,
+$u=b_3$, $v=b_4=b_5$ and $w=b_6$, so that $0\le t\le u\le v\le w$, $v+w<a$ and
+$2t+u+2v+w=2a$. Put $x=u-t\ge0$ and $y=v-u\ge0$; then $u=t+x$, $v=t+x+y$,
+$w=2a-5t-3x-2y$, and the inequalities $w\ge v$ and $v+w\le a$ become
 $$
-b=(b_1,b_1,b_1,b_5,b_5,b_6),
+6t+4x+3y\le2a,
+\qquad
+4t+2x+y\ge a .
 $$
-as follows: with $b_1=b_2$ and $b_4=b_5$ held fixed the sum $b_3+b_6$ is fixed, so the maximum of
-$b_3^2+b_6^2$ is attained by decreasing $b_3$ as far as the constraints allow, which either makes
-$b_1=b_2=b_3$ or brings the maximiser to $b_5+b_6=a$, the two cases of steps
-[](#case-small){.pf-ref} and [](#case-large){.pf-ref}; and with $b_1$ held fixed the maximum of
-$2b_5^2+b_6^2$ is likewise attained on the boundary, at $b_5=b_1$, at $b_5=b_6$, or at
-$b_5+b_6=a$. Of the maximisers of that form, those with $b_5+b_6=a$ are the two steps above, and the
-remaining one is $b_1=b_6=\frac{2a}{5}$, all six entries equal to $\frac{2a}{5}$, with
+On this polygon the sum
 $$
-\sum_ib_i^2=6\cdot\frac{4a^2}{25}=\frac{24}{25}a^2<a^2 .
+\sum_ib_i^2=2t^2+(t+x)^2+2(t+x+y)^2+(2a-5t-3x-2y)^2
 $$
+is a convex quadratic, so its maximum is attained at a vertex, and the vertices are
+$(t,x,y)=(0,a/2,0)$, $(a/3,0,0)$, $(a/4,0,0)$ and $(a/6,0,a/3)$, where the sum is $a^2$,
+$2a^2/3$, $7a^2/8$ and $5a^2/6$. Hence $\sum_ib_i^2\le a^2$. This reduction is the card's own
+completion of the answer's boundary sketch: the answer states it in the form
+$b=(b_1,b_1,b_1,b_5,b_5,b_6)$ with a remaining case $b_1=b_6=\frac{2a}{5}$, and the vertex check
+above covers that form and the further vertices it leaves out.
 :::
 
 :::
