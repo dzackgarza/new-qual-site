@@ -39,6 +39,20 @@ audit:
     values. The argument is the card's own; no retained set is cited on the card. Notation
     repaired: the earlier prose wrote \nu_a and \nu(x) where the functions are u_a and u.
     Munkres §33 Exercise 4(a), printed p. 212.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution section said "the argument is the card's own ... no retained solution set is
+    cited", contradicting the card's own solution-written event of 2026-11-10, which records the
+    transcription from Möller's S33 set, Exercise 33.8, PDF p. 2. It also cited §33 Exercise 4(a),
+    whereas the card's statement is Exercise 8 of §33: re-read in the retained book, printed
+    p. 213 (PDF p. 228) prints "8. Let X be completely regular; let A and B be disjoint closed
+    subsets of X. Show that if A is compact, there is a continuous function f: X -> [0,1] such that
+    f(A) = {0} and f(B) = {1}.". The retained file was re-read and does contain Ex. 33.8. The
+    solution section now names the set and the step at which the card departs from it (maximum in
+    place of sum). The 2026-11-18 review note above is left as it was written; this event is the
+    correction.
 ---
 
 ::: {.exercise}
@@ -48,7 +62,7 @@ Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ su
 :::
 
 ::: {.solution}
-The argument is the card's own; it is the standard Urysohn argument of this exercise, and no retained solution set is cited on the card. It is checked against Munkres §33 Exercise 4(a), printed p. 212, with the definition of complete regularity in §33.
+The argument is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S33.pdf, Exercise 33.8, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S33.pdf`, Internet Archive snapshot 20200331153844), with one change of detail: where Moller sums the finitely many functions $g_i$ the card takes their maximum, which keeps the values in $[0,1]$ without dividing by the number of terms. It is checked against Munkres, Topology (2000), §33 Exercise 8, printed p. 213, with the definition of complete regularity in §33 and Exercise 18.8 for the continuity of a maximum of finitely many real-valued continuous functions.
 
 ::: pf
 
