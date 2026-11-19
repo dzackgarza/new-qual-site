@@ -33,7 +33,10 @@ source:
         - id: P-CH17-20
           comment: Exercise 20
         - id: P-CH17-21
-          comment: Exercise 21
+          comment: Exercise 19 (printed as exercise 21 when the card was created; the isomorphism
+            Z3[x]/<x^2+1> = Z3[i] is exercise 19 in Gallian 7e, confirmed by the book's Selected
+            Answer at A24, exercise 21 being "find all monic irreducible polynomials of degree 2
+            over Z3")
         - id: P-CH17-23
           comment: Exercise 23
         - id: P-CH17-24
