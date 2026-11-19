@@ -8628,3 +8628,74 @@ arguments rather than polynomials and were not re-derived.
 **The remainder.** Thirty-five Chapter IV cards still lack Yang; §IV.3 is now complete on both sides,
 and the queue starts at IV.4.1 `P-AGH441GRADEDRINGWEIERSTRASS`. Yang's §4.4 begins on printed p. 89
 and continues on pp. 92--95 by the page search, so the next batch pages those before citing.
+
+## 2026-11-19, Yang sweep: the §IV.4 page map, and IV.4.1--IV.4.3 cited at printed pp. 89--90
+
+**The map, built this turn and reusable.** Entries 4.4.1--4.4.2 on printed p. 89; 4.4.3--4.4.4 on
+p. 90; 4.4.5--4.4.6 on p. 91; 4.4.7--4.4.10 on p. 92; 4.4.11--4.4.16 on p. 93; 4.4.17--4.4.20 on
+p. 94; 4.4.21--4.4.22 and 4.5.1--4.5.3 on p. 95; 4.5.4--4.5.6 on p. 96; 4.5.7 and 4.6.1--4.6.3 on
+p. 97; 4.6.4--4.6.8 on p. 98; 4.6.9 on p. 99; §5.1 begins on p. 100. The PDF page is the printed
+page throughout, as for the rest of this set.
+
+**A structural difference from every earlier batch.** These three cards carried no
+`{.remark title="Published solution"}` block at all --- the body ended with its `pf` and solution
+fences --- so each received a new remark block appended after them rather than a paragraph inside an
+existing one. Written as such in the `solution-written` events, which say the card had no remark
+before.
+
+**`P-AGH441GRADEDRINGWEIERSTRASS`, IV.4.1 — cited, printed p. 89, one implicit step.** The entry
+exhibits $\phi:k[x,y,t]\to R$ with $x\mapsto x$, $y\mapsto y$, $t\mapsto 1\in H^0(X,\OO_X(P))$ ---
+legitimate because $h^0(X,\OO_X(P))=1=g$, so $R_1$ is the line of the constant section --- proves
+surjectivity from "every section of $\OO_X(nP)$ is a rational function with one pole at $P$", notes
+$y^2-x(x-t^2)(x-\lambda t^2)\in\ker\phi$, and closes on Riemann--Roch. Its last comparison is with
+$\dim R_{(n)}$, which is a tautology; what the isomorphism needs, and what the card now records, is
+that the source has the same Hilbert function: $(1-s^6)/((1-s)(1-s^2)(1-s^3))$ has coefficients
+$1,1,2,3,4,5,6,7,8,9,\dots$. Commit `a830c3ae29`.
+
+**`P-AGH442PROJECTIVELYNORMALELLIPTIC`, IV.4.2 — cited, printed pp. 89--90, no defect.** The entry
+proves normal generation and converts: Castelnuovo's lemma by a case split on $\dim\supp\mathcal F$
+and a five-lemma induction, giving $H^0(X,\mcl(D))\otimes H^0(X,\mcl(nD))\twoheadrightarrow
+H^0(X,\mcl((n+1)D))$ for every $n\geq1$; then a second diagram descends to
+$H^0(\PP^n,\OO_{\PP^n}(k))\twoheadrightarrow H^0(X,\OO_X(k))$ for all $k$, which is projective
+normality by (II.5.14(d)). The vanishing it uses at degree $d-2$ is Serre duality against a
+negative-degree bundle, correct because $K_X=\OO_X$ on a genus-one curve. One typo, "replace
+$\mathcal F$ to $\mathcal F\otimes\mcl((n-1)D)$" for "by". Commit `cdbf080be9`.
+
+**`P-AGH443AUTOMORPHISMSFIXINGORIGIN`, IV.4.3 — cited, printed p. 90; covers the first sentence
+only.** It reduces $\phi\in\Aut(X,P_0)$ to $(a(x)+b(x)y,\,c(x)+d(x)y)$, kills $b$ and $c$ using
+$\phi(P)+\phi(-P)=P_0$, makes $d$ constant from the point at infinity, and gets $\deg a=1$ by matching
+$d^2x(x-1)(x-\lambda)=a(a-1)(a-\lambda)$. That is the exercise's first sentence, which is the card's
+steps `#s2`--`#s3`. **The four-case analysis, and the group, are not in the entry** --- nothing on
+$j\ne0,1728$, on $j=1728$, on $j=0$, or on characteristic $3$, so no $\ZZ/2$, $\ZZ/4$, $\ZZ/6$ or
+$(\ZZ/3)\rtimes(\ZZ/4)$; those are the card's own `#s5`--`#s8`. Recorded on the card. Commit
+`7249d02aaf`.
+
+**A defect class the gates do not catch, found and fixed in this batch.** The first draft of the
+4.4.2 paragraph wrote `\Supp`, which is not in `vocabularies/macros.json` (the defined macro is
+`\supp`, and $\operatorname{Supp}$ is written out in the few cards that want the capital). Every
+gate passed on it: `qualc.authoring check`, `tmp/lam.sh`, `card_completeness` and `raw_notation` all
+accept an undefined control word, and only a sweep of every `\name` in the card against
+`macros.json` plus a list of built-ins found it. That sweep is worth running on any prose this
+sweep adds; it reported nothing else on these three cards.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$8$, $1$--$6$
+and $1$--$9$ with `(QED labels present)`, resolving the four `pf-ref`s this batch adds to
+`P-AGH443AUTOMORPHISMSFIXINGORIGIN`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None`; macros sweep clean after the `\Supp` repair.
+
+**`tools/sync_macros.py --check` fails, and it is not this batch.** It reports that
+`vocabularies/macros.json` differs from `$HOME/.pandoc/styles/dzg-macros.sty`. The committed
+`macros.json` was changed at 21:47 today by another session (commit `f2d43611c1`, "macros mirror
+refreshed"), while that `.sty` carries an Oct 31 timestamp; nothing in this batch touched either, and
+the commit hook's own macro check passed. Regenerating the `.sty` would rewrite a file in the shared
+home that every project of this VM renders through, so it was left alone and is reported here
+instead.
+
+**Not checked.** Yang's Solutions outside printed pp. 89--90; the Hartshorne pages of the three
+exercises, not reopened in this pass, the comparison being against the statements the cards carry;
+and the printed book itself.
+
+**The remainder.** Thirty-two Chapter IV cards still lack Yang; the queue now starts at IV.4.4
+`P-AGH444JINVARIANTRATIONALINCOEFFICIENTS`, whose Yang entry is 4.4.4 on printed p. 90. IV.4.7 is not in that
+queue: it already carries a Yang citation from an earlier batch.
