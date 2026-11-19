@@ -5198,3 +5198,25 @@ checked 948 files, failures=0
 Together with the parse of the same 948 files recorded above — 91 non-problem cards, 857 problem cards, 857 with a solution section and all 857 with numbered steps, 0 parse failures — this says that every card of residue 1 parses, validates, and carries a structured proof.
 
 **What this does not cover.** `qualc.authoring check` reads one card's frontmatter, fence balance and raw-notation rules; it does not run the Pandoc filter, does not read mathematics, and does not run the corpus gate. The filter was run separately over the 87 cards this residue's session wrote (87 of 87 through `lamport_proof.lua` with the QED label present), not over the other 770 residue-1 cards, which were already structured before this session. The full `qualc check` gate was **killed twice at exit 137** on this machine under other sessions' memory pressure and remains CI's to run.
+
+## 2026-11-19: a scripted delimiter rewrite deleted the absolute values on a card, and what caught it
+
+**Object and need.** `E-SSA.PR-5` was restructured into steps by a script that also had to convert its absolute-value delimiters, because the corpus gate refuses the raw forms on any line a commit introduces. The conversion was first written as `.replace(r"\lvert","").replace(r"\rvert","")` — a deletion of the two delimiters rather than a wrapping of what lies between them. That silently removed the absolute values from every site in the card while leaving text that still parses. This entry records the fault, how it was caught, the recovery, and the rule the next scripted edit should follow; the memory of this file carries no equivalent.
+
+**What was damaged.** Twelve `\lvert … \rvert` pairs, three of them inside a table:
+
+- `$(q\lvert\xi\rvert)^{1/2}$` became `$(q\xi)^{1/2}$` — the modulus dropped from the weight-$\tfrac12$ factor;
+- `$e^{-\pi y'/(12q^2\lvert\xi\rvert^2)}$` became `$e^{-\pi y'/(12q^2\xi^2)}$` — a complex quantity where a modulus belongs, in the cell that explains why the essential singularity is $q^2$ times flatter at $p/q$;
+- `$\lvert\xi\rvert\ge\sqrt{y'}/q$` and `$\lvert f\rvert\le Ce^{\pi/(12y'/(q^2\lvert\xi\rvert^2))}$` likewise, and the same loss at eleven further sites.
+
+Every one of these still parses, so `qualc.authoring check` — schema and Markdown — passed on the damaged card.
+
+**What caught it.** Two things, neither of them the schema check alone. The gate's `unread-math` diagnostic fired on the reconstructed file: a rewritten cell read `$ c_{p/q}=\sqrt q$`, with a space after the opening `$`, which pandoc declines to read as math and the check reports as "a \$ reached the page as text: write \$x\$ not \$ x \$". Following that lead into the same table exposed the dropped moduli. Separately, reading one transformed line per construct — not just the first — showed `(q\xi)^{1/2}` where the source had `(q\lvert\xi\rvert)^{1/2}`.
+
+**Recovery.** The card was restored from `74ce2a7b19` (the commit before the restructure), the conversion redone with a **wrapping** substitution — `\lvert X\rvert` and `|X|` both rewritten to `\abs{X}`, never to nothing — and every construct re-read afterwards. The restored card carries `\abs{\xi}`, `\abs{c_{p/q}}`, `\abs{c_k}` and the rest, and passes the gate.
+
+**The rule this yields.** A scripted replacement of a *delimited* construct must be written as a wrap, never as a deletion of the delimiters: `.replace` on a token that wraps content is a deletion by construction, and no parser will tell you, because the text it leaves is well-formed. After any scripted edit over a card, read one output line per transformed construct and compare it with the input line; a schema check answers only whether the file still parses.
+
+**Which delimiter forms the gate refuses, as observed this session.** Raw `|` inside math (`|c_k|`, `\bigl|…\bigr|`, `\Bigl|…\Bigr|`) and the paired `\lvert`/`\rvert` both draw `STYLE-04`; the accepted spelling is `\abs{…}`. Whether the gate is scoped to the lines a commit introduces or to the whole staged file was **not determined** here: the pre-restructure card carried `\lvert` at twelve sites and had been committed, while the same spellings were refused in the rewritten file.
+
+**Uncertainty.** No other card was searched for the same fault, and no claim is made that the deletion was confined to this one — only that this card is repaired and that the checks named above are the ones that would expose it again.
