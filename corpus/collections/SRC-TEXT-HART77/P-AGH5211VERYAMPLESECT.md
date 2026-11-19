@@ -425,5 +425,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 385 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the reference to (2.8.1) including.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.11, PDF p. 268. For (a) he first proves $h^i(\OO_X(C_0+\mathfrak b f))=h^i(\OO_C(\mathfrak b))+h^i(\OO_C(\mathfrak b+\mathfrak e))$ from the sequence $0\to\OO_X(-\mathfrak b f)\to\OO_X\to\OO_{C_0}\to0$ (his $\mathfrak e$ is the divisor of 2.8.1, of degree $-e$), then that a point is a base point on the fibre of $P$ exactly when $h^0(\OO_X(H-Pf))=h^0(\OO_X(H))-2$, and then that no point is, by adding $P$ to a divisor of $\mathfrak b$ and to one of $\mathfrak b+\mathfrak e$. For (b) he separates points and tangent vectors using the same count with $P+Q$, and argues that a tangent vector transverse to the fibre is covered by the very ampleness of $\mathfrak b+\mathfrak e$ on the base. Steps [](#s1){.pf-ref} to [](#s4){.pf-ref} are part (a) with the incidence set supplying the section $D\sim C_0+\mathfrak b f$, and steps [](#s6){.pf-ref} to [](#s9){.pf-ref} are part (b) through length-two subschemes. Matches.
 :::
