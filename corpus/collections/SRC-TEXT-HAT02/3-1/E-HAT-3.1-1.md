@@ -33,6 +33,26 @@ audit:
   date: 2026-11-07
   note: >-
     Re-read against Hatcher pp.194-195 with Exercise 1 (p.204); the statement matches the printed text. Two placeholder proofs ("setup.") replaced by the existence of the free resolution of p.195 and by Lemma 3.1(b); the lifting step cites Lemma 3.1(a) (p.194) instead of an unnamed comparison theorem, and the independence-of-lift step now carries the chain-homotopy computation. Not covered: the extension interpretation of Ext on p.195, which the exercise does not ask for.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read against Hatcher, Exercise 1 of §3.1, printed p. 204, and what it uses: Lemma 3.1(a),
+    (b) on printed p. 194, the construction of the two-term free resolution and the definition of
+    $\operatorname{Ext}(H,G)$ on printed pp. 194--195. Repaired the solution throughout. Four of
+    its proofs were noun phrases rather than arguments ('contravariance of the
+    $\operatorname{Hom}(-,G)$ functor', 'definition of $\operatorname{Ext}$ for abelian groups',
+    'quotient map between cokernels', 'composition of chain maps'); a `pf` block was opened and
+    closed inside the solution, leaving three separately numbered runs; and the final step
+    concluded from two earlier steps alone, which STYLE-08 forbids. The solution is now six steps
+    with substantive proofs: the lifting of $\alpha$ to a chain map by Lemma 3.1(a), the dual map
+    and its descent to the cokernels, independence of the lift through the two-term chain homotopy
+    formula $\alpha_i-\alpha_i'=d_1'\lambda_i+\lambda_{i-1}d_i$ with $\lambda_{-1}=0$ (this
+    replaces the earlier sentence about kernels, which was superfluous: the difference of the two
+    dual maps lands in $\operatorname{im}d_1^*$ on all of $\operatorname{Hom}(F_1',G)$),
+    functoriality in $H$, the descent of post-composition by $\beta\colon G\to G'$, and
+    functoriality in $G$. Not claimed: the extension interpretation of $\operatorname{Ext}(H,G)$
+    on printed p. 195, which the exercise does not ask for.
 ---
 
 ::: {.problem}
@@ -40,203 +60,98 @@ Show that $\operatorname{Ext}(H, G)$ is a contravariant functor of $H$ for fixed
 :::
 
 ::: {.solution}
+For an abelian group $H$ choose a free resolution
+$$
+0\longrightarrow F_1\xrightarrow{d_1}F_0\xrightarrow{\varepsilon}H\longrightarrow0,
+$$
+which exists with $F_0$ free on a set of generators of $H$ and $F_1=\ker\varepsilon$ free, being a subgroup of a free abelian group (Hatcher, p. 195). Applying $\operatorname{Hom}(-,G)$ gives the cochain complex
+$$
+0\longrightarrow\operatorname{Hom}(F_0,G)\xrightarrow{d_1^*}\operatorname{Hom}(F_1,G)\longrightarrow0,
+\qquad d_1^*(\varphi)=\varphi\circ d_1,
+$$
+which vanishes above degree $1$, and
+$$
+\operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_*,G))=\operatorname{Hom}(F_1,G)\big/d_1^*\operatorname{Hom}(F_0,G)
+$$
+by the definition on p. 195. Lemma 3.1(b) (p. 194) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1, printed p. 204.
+
 ::: pf
 
-::: pf-step
-Definition of $\operatorname{Ext}(H, G)$: for a free resolution $0 \to F_1 \xrightarrow{d} F_0 \xrightarrow{\varepsilon} H \to 0$ with $F_i = 0$ for $i > 1$, $\operatorname{Ext}(H, G) = H^1(\operatorname{Hom}(F, G)) = \operatorname{coker}(d^*)$.
+::: {.pf-step #s1}
+
+Let $\alpha\colon H\to H'$ be a homomorphism and let $F_*$, $F_*'$ be free resolutions of $H$ and $H'$. Then $\alpha$ lifts to a chain map $(\alpha_0,\alpha_1)$, that is $\varepsilon'\alpha_0=\alpha\varepsilon$ and $d_1'\alpha_1=\alpha_0d_1$.
 
 ::: pf-proof
-Hatcher p.195: $\operatorname{Ext}(H, G)$ is $H^1(F; G)$ for such a resolution, independent of the resolution by Lemma 3.1(b) (p.194), and $H^1$ of a two-term complex is $\operatorname{Hom}(F_1, G)/\operatorname{im}(d^*)$.
 
-::: pf-step
-For an abelian group $H$, choose a free resolution $0 \to F_1 \xrightarrow{d} F_0 \xrightarrow{\varepsilon} H \to 0$.
-
-::: pf-proof
-Hatcher p.195: take $F_0$ free on a set of generators of $H$ and $F_1 = \ker \varepsilon$, free because a subgroup of a free abelian group is free.
-:::
-
-:::
-
-::: pf-step
-Applying $\operatorname{Hom}(-, G)$ yields the cochain complex:
-$$
-0 \to \operatorname{Hom}(F_0, G) \xrightarrow{d^*} \operatorname{Hom}(F_1, G) \to 0,
-$$
-where $d^*(\varphi) = \varphi \circ d$.
-
-::: pf-proof
-contravariance of the $\operatorname{Hom}(-, G)$ functor.
-:::
-
-:::
-
-::: pf-step
-By definition, $\operatorname{Ext}(H, G) = \operatorname{coker}(d^*) = \operatorname{Hom}(F_1, G) / \operatorname{im}(d^*)$.
-
-::: pf-proof
-definition of Ext for abelian groups.
-:::
-
-:::
+Lemma 3.1(a) (p. 194) chooses $\alpha_0$ on a free basis of $F_0$ by taking preimages under the surjection $\varepsilon'$, and then $\alpha_1$ on a free basis of $F_1$ by taking preimages under $d_1'$, which is possible because $\alpha_0d_1$ takes values in $\ker\varepsilon'=\operatorname{im}d_1'$: indeed $\varepsilon'\alpha_0d_1=\alpha\varepsilon d_1=0$.
 
 :::
 
 :::
 
 ::: {.pf-step #s2}
-Contravariance of $\operatorname{Ext}(-, G)$ in the first variable $H$:
+
+Dualizing a lift gives a homomorphism $\alpha^*\colon\operatorname{Ext}(H',G)\to\operatorname{Ext}(H,G)$.
 
 ::: pf-proof
 
-::: pf-step
-Let $\alpha: H \to H'$ be a group homomorphism, and let $0 \to F_1' \xrightarrow{d'} F_0' \xrightarrow{\varepsilon'} H' \to 0$ be a free resolution of $H'$.
-
-::: pf-proof
-$H'$ has a free resolution by the construction on p.195, and $H$ one by the first step; this is the hypothesis of Hatcher Lemma 3.1(a) (p.194).
-:::
-
-:::
-
-::: pf-step
-By projectivity of $F_0$ and $F_1$, there exists a chain map $(\alpha_0, \alpha_1)$ lifting $\alpha$:
-$$
-\varepsilon' \circ \alpha_0 = \alpha \circ \varepsilon \quad \text{and} \quad d' \circ \alpha_1 = \alpha_0 \circ d.
-$$
-
-::: pf-proof
-Hatcher Lemma 3.1(a) (p.194), which produces the chain map $\alpha_i$ inductively from the freeness of the $F_i$.
-:::
-
-:::
-
-::: pf-step
-Applying $\operatorname{Hom}(-, G)$ induces dual maps $\alpha_0^*: \operatorname{Hom}(F_0', G) \to \operatorname{Hom}(F_0, G)$ and $\alpha_1^*: \operatorname{Hom}(F_1', G) \to \operatorname{Hom}(F_1, G)$ satisfying $d^* \circ \alpha_0^* = \alpha_1^* \circ (d')^*$.
-
-::: pf-proof
-functoriality of $\operatorname{Hom}(-, G)$.
-:::
-
-:::
-
-::: {.pf-step #s2-4}
-The commutativity implies $\alpha_1^*(\operatorname{im}((d')^*)) \subseteq \operatorname{im}(d^*)$, so $\alpha_1^*$ descends to a well-defined homomorphism on quotients:
-$$
-\alpha^*: \operatorname{Ext}(H', G) \longrightarrow \operatorname{Ext}(H, G), \quad [\psi] \mapsto [\psi \circ \alpha_1].
-$$
-
-::: pf-proof
-quotient map between cokernels.
-:::
-
-:::
-
-::: {.pf-step #s2-5}
-Any two lifts of $\alpha$ are chain homotopic, so the induced map $\alpha^*$ is independent of the choice of lift $(\alpha_0, \alpha_1)$.
-
-::: pf-proof
-Hatcher Lemma 3.1(a) (p.194) gives a chain homotopy $h$ with $\alpha_1 - \alpha_1' = d h + h d'$; then $\alpha_1^* - (\alpha_1')^* = h^* d^* + (d')^* h^*$ takes values in $\operatorname{im} d^*$ on $\ker (d')^*$, so the two maps of cokernels agree.
-:::
-
-:::
-
-::: {.pf-step #s2-6}
-It is direct that $(\operatorname{id}_H)^* = \operatorname{id}_{\operatorname{Ext}(H, G)}$ and $(\beta \circ \alpha)^* = \alpha^* \circ \beta^*$ for $\beta: H' \to H''$.
-
-::: pf-proof
-composition of chain maps.
-:::
-
-:::
-
-::: pf-step
-Thus $\operatorname{Ext}(-, G)$ is a contravariant functor from the category of abelian groups to itself.
-
-::: pf-proof
-Steps [](#s2-4){.pf-ref}, [](#s2-5){.pf-ref}, and [](#s2-6){.pf-ref}.
-:::
-
-:::
+The map $\alpha_1^*\colon\operatorname{Hom}(F_1',G)\to\operatorname{Hom}(F_1,G)$, $\psi\mapsto\psi\circ\alpha_1$, satisfies $d_1^*\circ\alpha_0^*=\alpha_1^*\circ(d_1')^*$, both sides sending $\psi$ to $\psi\circ\alpha_0\circ d_1=\psi\circ d_1'\circ\alpha_1$. Hence $\alpha_1^*$ carries $\operatorname{im}(d_1')^*$ into $\operatorname{im}d_1^*$ and descends to a homomorphism of the cokernels, which is $\alpha^*$.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Covariance of $\operatorname{Ext}(H, -)$ in the second variable $G$:
+
+$\alpha^*$ is independent of the lift.
 
 ::: pf-proof
 
-::: pf-step
-Let $\beta: G \to G'$ be a group homomorphism, and fix a free resolution $0 \to F_1 \xrightarrow{d} F_0 \to H \to 0$.
-
-::: pf-proof
-One resolution of $H$ is fixed throughout; $\operatorname{Ext}(H, G)$ does not depend on the choice by Lemma 3.1(b) (p.194), so covariance may be checked on this single resolution.
-:::
-
-:::
-
-::: pf-step
-Post-composition with $\beta$ defines homomorphisms $\beta_*: \operatorname{Hom}(F_k, G) \to \operatorname{Hom}(F_k, G')$ by $\beta_*(\varphi) = \beta \circ \varphi$ for $k = 0, 1$.
-
-::: pf-proof
-covariance of $\operatorname{Hom}(F_k, -)$.
-:::
-
-:::
-
-::: pf-step
-For any $\varphi \in \operatorname{Hom}(F_0, G)$, $\beta_*(d^*(\varphi)) = \beta \circ (\varphi \circ d) = (\beta \circ \varphi) \circ d = d^*(\beta_*(\varphi))$.
-Thus $\beta_* \circ d^* = d^* \circ \beta_*$.
-
-::: pf-proof
-associativity of map composition.
-:::
-
-:::
-
-::: {.pf-step #s3-4}
-This implies $\beta_*(\operatorname{im}(d^*_G)) \subseteq \operatorname{im}(d^*_{G'})$, so $\beta_*$ descends to a well-defined homomorphism:
+Let $(\alpha_0',\alpha_1')$ be a second lift. By Lemma 3.1(a) (p. 194) there is $\lambda\colon F_0\to F_1'$ with $\alpha_0-\alpha_0'=d_1'\lambda$ and $\alpha_1-\alpha_1'=\lambda d_1$; this is the chain homotopy formula $\beta_i=d_1'\lambda_i+\lambda_{i-1}d_i$ for a two-term complex, with $\lambda_{-1}=0$. Then for $\psi\in\operatorname{Hom}(F_1',G)$,
 $$
-\beta_*: \operatorname{Ext}(H, G) \longrightarrow \operatorname{Ext}(H, G'), \quad [\varphi] \mapsto [\beta \circ \varphi].
+(\alpha_1^*-\alpha_1'^*)(\psi)=\psi\circ(\alpha_1-\alpha_1')=\psi\circ\lambda\circ d_1=d_1^*(\psi\circ\lambda),
 $$
+which lies in $\operatorname{im}d_1^*$, so the two maps induce the same map of cokernels.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+$\operatorname{Ext}(-,G)$ is a contravariant functor of $H$.
 
 ::: pf-proof
-quotient map between cokernels.
-:::
+
+The identity of $H$ lifts to the identity chain map, so $(\operatorname{id}_H)^*$ is the identity of $\operatorname{Ext}(H,G)$. If $(\alpha_i)$ lifts $\alpha\colon H\to H'$ and $(\beta_i)$ lifts $\beta\colon H'\to H''$, then $(\beta_i\circ\alpha_i)$ is a lift of $\beta\circ\alpha$, and since the induced map does not depend on the lift by the preceding step, $(\beta\alpha)^*=\alpha^*\circ\beta^*$. Thus $H\mapsto\operatorname{Ext}(H,G)$ is contravariant.
 
 :::
 
-::: {.pf-step #s3-5}
-It is direct that $(\operatorname{id}_G)_* = \operatorname{id}_{\operatorname{Ext}(H, G)}$ and $(\gamma \circ \beta)_* = \gamma_* \circ \beta_*$ for $\gamma: G' \to G''$.
+:::
+
+::: {.pf-step #s5}
+
+A homomorphism $\beta\colon G\to G'$ induces $\beta_*\colon\operatorname{Ext}(H,G)\to\operatorname{Ext}(H,G')$.
 
 ::: pf-proof
-composition of post-composition maps.
-:::
+
+Fix one free resolution $F_*$ of $H$; by Lemma 3.1(b) (p. 194) any other gives the same group, so it is enough to define the map on $\operatorname{Hom}(F_1,G)/\operatorname{im}d_1^*$. Post-composition $\beta_*(\psi)=\beta\circ\psi$ defines $\operatorname{Hom}(F_k,G)\to\operatorname{Hom}(F_k,G')$ for $k=0,1$, and $\beta_*d_1^*=d_1^*\beta_*$ because $\beta\circ(\psi\circ d_1)=(\beta\circ\psi)\circ d_1$; hence $\beta_*$ preserves $\operatorname{im}d_1^*$ and descends to the quotients.
 
 :::
 
-::: pf-step
-Thus $\operatorname{Ext}(H, -)$ is a covariant functor.
+:::
+
+::: {.pf-step #s6}
+
+$\operatorname{Ext}(H,-)$ is a covariant functor of $G$.
 
 ::: pf-proof
-Steps [](#s3-4){.pf-ref} and [](#s3-5){.pf-ref}.
-:::
+
+On the fixed resolution, $(\operatorname{id}_G)_*$ is the identity, and for $\gamma\colon G'\to G''$ the composites satisfy $(\gamma\circ\beta)_*(\psi)=\gamma\circ\beta\circ\psi=\gamma_*(\beta_*(\psi))$, so $(\gamma\beta)_*=\gamma_*\circ\beta_*$. Both statements are independent of the resolution by the same lemma, so they hold for $\operatorname{Ext}$ as defined.
 
 :::
 
 :::
 
 :::
-
-::: pf-step
-Conclusion: $\operatorname{Ext}(H, G)$ is contravariant in $H$ and covariant in $G$.
-
-::: pf-proof
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-:::
-
-:::
-
-:::
-
 :::
