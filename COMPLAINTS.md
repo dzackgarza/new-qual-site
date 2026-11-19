@@ -7996,3 +7996,39 @@ it. No step, statement or hypothesis of any card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 4.1.3, 4.1.4 and 4.1.5 at printed p. 84,
 rendered as page images; the statements the three cards carry, not reopened against the book in this
 pass. Not read: the other sixty-two entries, and the printed books themselves.
+
+## 2026-11-19: Yang's 4.1.6, 4.1.7 and 4.1.8 at printed p. 84 — and a construction that yields only constants on an elliptic curve
+
+**Object and need.** `P-AGH416MAPTOP1DEGREE` (IV.1.6), `P-AGH417HYPERELLIPTIC` (IV.1.7) and
+`P-AGH418ARITHGENUSSINGULAR` (IV.1.8), three more of the Chapter IV cards counted in the record above.
+
+**IV.1.6, printed p. 84: the divisor is one short.** The entry takes $D=gP$ and quotes
+$\ell(D)\ge\deg D+1-g=1$, then concludes a morphism of degree $g$. The inequality $\ell\ge1$ gives no
+nonconstant function: for $g=1$, $\ell(P)=1+\ell(K-P)=1$ since $\deg(K-P)=-1$, so the only sections of
+$\OO(P)$ are constants, and a degree-one map would make $X$ rational anyway. With $D=(g+1)P$ one has
+$\ell(D)\ge(g+1)+1-g=2$, so there is a nonconstant $f$ with its only pole at $P$, of order at most
+$g+1$, and the morphism it defines has degree at most $g+1$ — which is the bound the exercise states,
+not an equality. Both points are recorded on the card's remark.
+
+**IV.1.7, printed p. 84.** At $g=2$, $\deg K=2$ and $\dim\linearsystem{K}=1$; Riemann--Roch at a point
+gives $\ell(P)-\ell(K-P)=1+1-2=0$, and $\dim\linearsystem{P}=1$ would be a degree-one map, impossible
+for $g>1$; hence $\ell(P)=1=\ell(K-P)$ and $P$ is not a base point of $\linearsystem{K}$. A
+base-point-free system of degree $2$ and dimension $1$ gives a degree-two morphism by (II, 7.8.1). Part
+(b) is the second projection off a curve of type $(g+1,2)$ on $\PP^1\times\PP^1$, finite and nonconstant
+by (II, 6.8) and of degree $2$ by (II, 6.9).
+
+**IV.1.8, printed p. 84.** From $0\to\OO_X\to f_*\OO_{\widetilde X}\to\sum_P\widetilde\OO_P/\OO_P\to0$,
+with both outer $H^0$ equal to $k$ and the skyscraper quotient having no $H^1$, the long exact sequence
+gives $p_a(X)=p_a(\widetilde X)+\sum_P\delta_P$; then $p_a=0$ forces every $\delta_P=0$, so the curve is
+nonsingular of genus zero, hence $\PP^1$ by (1.3.5). Part (c) reduces to a plane curve by projection and
+computes $\delta_P$ at a node and a cusp.
+
+**Repair.** `P-AGH416MAPTOP1DEGREE` in `997dce1ccb`, `P-AGH417HYPERELLIPTIC` in `e01e56c9c0`,
+`P-AGH418ARITHGENUSSINGULAR` in `5e43a7c74e`, one commit each; this record in the COMPLAINTS commit
+that carries it. No step, statement or hypothesis of any card changes.
+
+**The remainder.** Fifty-nine Chapter IV cards still lack Yang.
+
+**Uncertainty.** Read for this record: Yang's Solutions 4.1.6, 4.1.7 and 4.1.8 at printed p. 84,
+rendered as page images; the statements the three cards carry, not reopened against the book in this
+pass. Not read: the other fifty-nine entries, and the printed books themselves.
