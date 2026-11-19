@@ -935,6 +935,27 @@ audit:
     span $H^1(X,\Omega^1)$ and the detecting argument is silent, while s9 settles
     the statement. No other step was touched, and what stays open is unchanged:
     codimension $p\le n-2$ with $q<n-1-p$ in a general $X$.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The statement block checked sentence by sentence against the printed
+    exercise, III.7.4 on printed pp. 249--250, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. $N$ is
+    PDF p. $N+15$. Faithful in the opening paragraph (the map
+    $\Omega_X\otimes\OO_Y\to\Omega_Y$ of II.8.12, the induced map
+    $H^{n-p}(X,\Omega_X^{n-p})\to H^{n-p}(Y,\Omega_Y^{n-p})$, the trace, and the
+    correspondence with $\eta(Y)\in H^p(X,\Omega_X^p)$ by (7.13)), and in parts
+    (a), (c) and (d), including (d)'s hypothesis $p=1$ and the closing reference
+    to Matsumura. Two passages are the card's and were added deliberately: the
+    paragraph normalizing the trace at a point and on a finite reduced scheme,
+    which the printed text leaves open and without which the numerical
+    assertions of (b) and (d) have no meaning, and the paragraph fixing the
+    point comparison (C); in part (b) the card also says which generator the
+    identification of (Ex. 7.3) takes to $1$, the printed instruction being
+    silent on that choice. Nothing else differs. No change was made to the card
+    in this pass.
 ---
 
 ::: {.problem}
