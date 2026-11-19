@@ -39,6 +39,8 @@ If $f$ is continuous on $(-1, 1)$, show that $f$ is indeed differentiable at $0$
 
 ::: {.solution}
 
+The argument is the card's own: for (a) Darboux's theorem applied to $g=f-2x$, proved here by the minimum argument; for (b) the mean value theorem on $[0,x]$ and on $[x,0]$, with the intermediate point tending to $0$. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
