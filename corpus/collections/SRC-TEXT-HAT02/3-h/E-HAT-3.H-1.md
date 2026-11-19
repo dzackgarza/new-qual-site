@@ -34,9 +34,19 @@ audit:
     injectivity of multiplication by $2$ used in computing the cokernel, and the remark on why
     homology and cohomology sit in complementary degrees, none of which the earlier text stated. No
     defect found in the statement, §3.H Exercise 1. No retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 345 carries the running head 336.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.H of Hatcher, *Algebraic Topology* (2002), printed p. 336, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Compute $H_*(S^1; E)$ and $H^*(S^1; E)$ for $E \to S^1$ the nontrivial bundle with fiber $\ZZ$.
 :::
 
