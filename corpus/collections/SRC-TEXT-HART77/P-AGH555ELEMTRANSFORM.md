@@ -226,6 +226,29 @@ audit:
     tmp/sources/hartshorne-1977-algebraic-geometry.md, whose marker is the PDF
     page and whose printed page is the marker minus fifteen. Nothing else on the
     card changed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Closed under #121 on the published proof that the transcription event of
+    2026-11-16 names. Read for this pass in Luis Fuentes and Manuel Pedreira,
+    *The Projective Theory of Ruled Surfaces*, on the PDF copy
+    tmp/sources/projective-theory-ruled-surfaces.pdf, whose printed page is
+    the PDF page (the folios 15, 26, 30, 31 and 32 were read on those pages):
+    Theorem 3.2(2), printed p. 15; Definition 4.3 and Proposition 4.4, printed
+    p. 26; Theorem 4.9, statement printed p. 30 and proof printed p. 31;
+    Corollary 4.10, printed p. 31; Corollary 4.11, statement printed p. 31
+    and proof printed p. 32; and Theorem 4.12(1), printed pp. 31--32. The
+    proof of Corollary 4.11 is complete: Corollary 4.10 carries S to a
+    decomposable S_0, its second paragraph carries C x P^1 to S_0 by
+    elementary transformations at the points P_i f cap X_0 whose sum is
+    -e_0, and composing with the inverse sequence, which Definition 4.3
+    supplies, carries S to C x P^1. The card's steps transcribe these
+    statements, and its step two-surfaces-joined supplies the passage from
+    one ruled surface to another that the statement of the corollary leaves
+    to the reader. No sentence of the card changes; the COMPLAINTS entry
+    that still says V.5.5 keeps its own proof is superseded by the record of
+    this date.
 ---
 
 ::: {.problem}
