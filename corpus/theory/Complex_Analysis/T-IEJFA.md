@@ -22,4 +22,6 @@ $$
 f(z)=e^{g(z)}\frac{h_1(z)}{h_2(z)},
 $$
 where the [[D-65VIK|zeros]] of $h_1$ are the zeros of $f$, with the same multiplicities, and the zeros of $h_2$ are the [[D-AUD6K|poles]] of $f$, with multiplicities equal to their orders.
+
+For $D = \CC$ this is [@SS03, ch. 5, Exercise 15 (pp. 155--156)]; the general simply connected case is the exercise's argument applied to the primitive of $f'/f$ on $D$.
 :::
