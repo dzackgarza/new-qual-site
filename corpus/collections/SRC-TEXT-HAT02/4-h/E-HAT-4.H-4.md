@@ -14,6 +14,21 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §4.H, printed p. 462, whose wording the problem block
+    reproduces. Checked the definition as a definition: the conditions $\phi_\sigma|_\tau =
+    f_{\max\sigma,\max\tau}\circ\phi_\tau$ are consistent over chains
+    $\rho\subseteq\tau\subseteq\sigma$ because the $f_{ji}$ compose, and for $n=1$ the data reduce
+    to $\gamma(0)=f_1(\phi_{v_0})$ and $\gamma(1)=\phi_{v_1}$, which is the mapping path space
+    $E_{f_1}$ of printed p. 405, the Eckmann--Hilton dual of the mapping cylinder. Checked the
+    pages the card uses: $\Delta X$ for a complex of spaces and the surrounding discussion are on
+    printed p. 459 inside §4.G, which the table of contents puts at p. 456, and §4.H begins on
+    printed p. 460. The passage from $\nabla(f_1,\dots,f_n)$ to $\nabla X$ reverses the structure
+    maps, which is what the duality requires. Not claimed: a certificate, and no uniqueness claim
+    for the definition, which the exercise does not ask for.
 ---
 
 ::: {.problem}
