@@ -9,61 +9,45 @@ topics:
 # Classifying a singularity
 
 An isolated singularity of a holomorphic function is removable, a pole, or essential.
-Three criteria decide the type: the behavior of $f(z)$ as $z\to z_0$, boundedness near $z_0$, and the negative part of the Laurent series.
+Three criteria decide which: a bound on $\abs f$ near $z_0$, the behaviour of $f(z)$ as $z\to z_0$, and the negative part of the Laurent series; they are the same three conditions, and which one to use depends on what is known about $f$.
 
 ## Isolated and non-isolated singularities
 
-The classification into removable singularities, poles, and essential singularities applies to isolated singularities.
+[[D-IWIA5]]
 
 ::: {.example title="Branch points"}
-$f(z) \coloneqq z^{1\over 2}$ has no holomorphic branch on any punctured disc about $0$, so $f$ has no Laurent expansion there and $z=0$ is not an isolated singularity of a single-valued holomorphic function; it is a branch point.
-The same holds at $z = 0$ and $z = 1$ for $\qty{z(z-1)}^{1\over 2}$, and at $z=0$ for $\Log(z)$.
+The function $f(z)\coloneqq z^{1\over 2}$ has no holomorphic branch on any punctured disc about $0$, so $f$ has no Laurent expansion there and $z=0$ is not an isolated singularity of a single-valued holomorphic function; it is a branch point.
+The same holds at $z=0$ and $z=1$ for $\qty{z(z-1)}^{1\over 2}$, and at $z=0$ for $\Log(z)$.
 :::
 
 ::: {.example title="Isolated and non-isolated singularities"}
 A rational function has only isolated singularities, since a nonzero polynomial has finitely many zeros.
 
-$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the branch cut $(-\infty, 0)$, where $\Log$ is not continuous.
+$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the branch cut $(-\infty,0)$, where $\Log$ is not continuous.
 
-$G(z) \coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\theset{0}$, and a non-isolated singularity at $0$, where they accumulate.
+$G(z)\coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\theset{0}$, and a non-isolated singularity at $0$, where they accumulate.
 :::
 
 ## The limit criterion
 
-For an isolated singularity $z_0$ of $f$:
+[[FF-QZXBS]]
 
-- **Removable.** $\lim_{z\to z_0} f(z)$ exists in $\CC$.
-
-- **Pole.** $\lim_{z\to z_0} \abs{f(z)} = \infty$.
-
-- **Essential.** Neither limit exists.
-
-The cases are exhaustive and mutually exclusive.
-For example, $\sin(z)/z \to 1$ as $z\to 0$, and $\abs{1/(z-1)^3}\to\infty$ as $z\to 1$.
-
-Two paths to $z_0$ along which $f$ has different limiting behavior show that neither limit exists.
-For $e^{1/z}$ at $0$: along $\RR_{>0}$, $e^{1/z}\to\infty$, and along $\RR_{<0}$, $e^{1/z}\to 0$.
+::: {.example title="Two paths with different limits"}
+For $e^{1/z}$ at $0$ the limit along $\RR_{>0}$ is $\infty$, since $e^{1/x}\to\infty$ as $x\to0^+$, and the limit along $\RR_{<0}$ is $0$.
+So $\lim_{z\to0}\abs{e^{1/z}}$ exists neither in $\CC$ nor as $\infty$, and $0$ is an essential singularity.
+:::
 
 ## The boundedness criterion
 
-By Riemann's removable singularity theorem, if $f$ is bounded on a punctured neighborhood of $z_0$, then the singularity is removable and $f$ extends holomorphically across $z_0$.
+[[T-ZZJDP]]
+
 The criterion uses only a bound on $\abs f$, so it applies when $\abs f$ can be estimated but not evaluated, for instance to show that a function extends to an entire function.
 
 ## The Laurent series criterion
 
-Let $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc about $z_0$.
+[[D-C3JIU]]
 
-- **Removable.** $c_{k} = 0$ for all $k \leq -1$.
-
-- **Pole of order $N$.** $c_{-N}\neq 0$ and $c_k = 0$ for all $k<-N$.
-
-- **Essential.** $c_k \neq 0$ for infinitely many $k<0$.
-
-This criterion also gives the order of a pole and the residue $c_{-1}$.
-
-[[D-IWIA5]]
-
-In terms of the order, a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order $n$ has $v_{z_0}(f) = -n$, a removable singularity has $v_{z_0}(f) \geq 0$, and an essential singularity has $v_{z_0}(f) = -\infty$.
+In terms of the order of [[D-IWIA5]], a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order $n$ has $v_{z_0}(f) = -n$, a removable singularity has $v_{z_0}(f)\geq 0$, and an essential singularity has $v_{z_0}(f) = -\infty$.
 
 ## Summary
 
@@ -77,4 +61,6 @@ In terms of the order, a zero of order $n$ has $v_{z_0}(f) = n$, a pole of order
 
 ## Singularities at infinity
 
-The type of the singularity of $f$ at $z=\infty$ is the type of the singularity of $g(w) \coloneqq f(1/w)$ at $w = 0$, and the limit, boundedness, and Laurent series criteria apply to $g$.
+[[D-BPBSQ]]
+
+The type of the singularity of $f$ at $\infty$ is the type of the singularity of $g(w)\coloneqq f(1/w)$ at $w=0$, so the limit, boundedness, and Laurent series criteria apply to $g$.
