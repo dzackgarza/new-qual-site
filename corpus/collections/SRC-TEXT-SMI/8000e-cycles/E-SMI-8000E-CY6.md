@@ -31,6 +31,15 @@ audit:
     (ac)(ab) = (abc) and (cd)(ab) = (abc)(bcd). The three cases for a pair of
     transpositions (equal, sharing one point, disjoint) are exhaustive, and pairing
     an even decomposition gives every element of A_n. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, problem 6, with its printed
+    hint. $(ac)(ab)=(abc)$, and $(cd)(ab)=(ab)(cd)=(abc)(bcd)$ for four distinct letters; equal,
+    overlapping and disjoint pairs exhaust the cases, so a product of two transpositions is a
+    product of $3$-cycles, and pairing an even transposition decomposition gives $A_n\le H$
+    while every $3$-cycle is even gives $H\le A_n$. No defect.
 ---
 
 ::: {.exercise}
