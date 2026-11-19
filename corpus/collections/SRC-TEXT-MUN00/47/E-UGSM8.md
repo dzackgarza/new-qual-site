@@ -42,6 +42,23 @@ audit:
     Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange
     searches of this pass, recorded in the COMPLAINTS.md entry for §43--§50, returned nothing on the
     passage from the general Ascoli theorem to Theorem 45.4. The card keeps its own proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The printed exercise was re-read at section 47 Exercise 3, printed p. 293
+    (PDF p. 308): "Show that the general version of Ascoli's theorem implies
+    the classical version (Theorem 45.4) when X is Hausdorff", which is what
+    the card states. Both implications are correct. For the direct one, on a
+    compact X the topology of compact convergence is the uniform topology, which
+    is metrizable, hence Hausdorff; pointwise boundedness in R^n makes each
+    F_a relatively compact by Heine-Borel, so part (a) of Theorem 47.1 puts F
+    inside a compact subspace, which is closed in the Hausdorff function space,
+    so the closure of F is compact. For the converse, the closure of F is a
+    compact subspace containing F; X is compact Hausdorff and therefore locally
+    compact Hausdorff, so part (b) of Theorem 47.1 gives equicontinuity and
+    compact closures of the F_a, and Heine-Borel turns those into boundedness.
+    Nothing was changed.
 ---
 
 ::: {.exercise}
