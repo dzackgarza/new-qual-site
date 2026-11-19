@@ -23,6 +23,13 @@ audit:
     Exhibited a basis p_1=e_2, p_2=e_1+e_3, p_3=e_2+e_4, p_4=e_3
     on which B has exactly the displayed matrix A, equivalently BP=PA
     for the invertible change-of-basis matrix P.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring00.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -46,6 +53,7 @@ similar over $\RR$?
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 2000, retained in this repository as `assets/attachments/Spring00.pdf`; the statement below is its wording.
 Let $e_1,e_2,e_3,e_4$ denote the standard basis of $\RR^4$, and set
 $$
 p_1=e_2,
