@@ -27,6 +27,4 @@ topics:
 
 [[PR-IP6ZG]]
 
-The noetherian hypothesis is needed.
-On the discrete space $X=\NN$, let $\mcf_i$ be the sheaf with stalk $\ZZ$ at the points $n\le i$ and $0$ elsewhere.
-Then $\colim_i\mcf_i$ is the constant sheaf $\ZZ$, with $\Gamma(X,\ZZ)=\prod_n\ZZ$, while $\colim_i\Gamma(X,\mcf_i)=\bigoplus_n\ZZ$.
+The noetherian hypothesis is needed ([[FE-SHFCOLIMGAMMA]]).
