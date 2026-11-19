@@ -823,6 +823,28 @@ audit:
     in COMPLAINTS.md. Lipman's (0.1)(d) on printed p. 11 and (0.2A) on printed
     p. 14 were attempted a second time in this pass and the scan again did not
     arrive; they remain unread here.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The two pages of Lipman the head cites, which the earlier attempts could not
+    fetch, are now read from a cached copy of the same Numdam scan on the machine
+    (140 pages, printed p. = PDF p. $-3$, identified by its printed pp. 74, 113
+    and 117 carrying (8.4), (13.5) and (13.12)). Printed p. 11, Theorem (0.1)(d):
+    for a smooth proper $d$-dimensional $V$ the pair $(\Omega_V^d,\int_V)$ is
+    dualizing, representing the functor
+    $\operatorname{Hom}_k(H^d(V,\mathcal F),k)$ of coherent $\mathcal O_V$-modules.
+    Printed p. 14, Theorem (0.2A) with statement (i): $\omega_V$ is the unique
+    $\mathcal O_V$-submodule of the constant sheaf of meromorphic $d$-forms whose
+    sections over $\operatorname{Spec}C$ are the $\Omega_{C/B}$, and the natural
+    map $\Omega^d_V\to\Omega^d_{k(V)/k}$ lands in it with equality at smooth
+    points. Both are exactly what the head cites them for. Read also in this pass:
+    Dongryul Kim's Exercise 3.7.3 at PDF p. 170, transcribed and checked; his
+    proof is complete and needs no Serre duality, where Yang's cites Exercise
+    II.5.16(c) for the exterior-power filtration (d) and Egbert's stops before the
+    region $i>r$. The transcription is recorded in COMPLAINTS.md. Not checked:
+    nothing of the card's own text was changed in this pass.
 ---
 
 ::: {.problem}
