@@ -19,6 +19,23 @@ audit:
   date: 2026-11-01
   note: >-
     Proof repaired: the card invoked Poincare duality for an arbitrary local system, which is false -- for M = N_g with the trivial system H_2(M;Z)=0 while H^0(M;Z)=Z. The step is replaced by the duality that actually applies, Theorem 3H.6 for the orientation system, with the fundamental class supplied by Example 3H.3. The groups the card computes are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §3.H, printed p. 336, with Theorem 3H.6 (p. 336), Example
+    3H.3 (p. 329), Theorem 3.26 (p. 236) and Theorem 3.2 (p. 195). Correct, both ways. By duality
+    with the orientation system, $H_j(M;\widetilde\ZZ)\cong H^{2-j}(M;\ZZ)$, and for
+    $M=N_g$ the integral cohomology is $\ZZ,\ZZ^{g-1},\ZZ_2$ in degrees $0,1,2$, so
+    $H_2=\ZZ$, $H_1=\ZZ^{g-1}$, $H_0=\ZZ_2$. By the twisted cellular complex with one $0$-cell,
+    $g$ $1$-cells and one $2$-cell: $d_1(a_i)=((-1)-1)e^0=-2e^0$ gives $H_0=\ZZ_2$; the attaching
+    word $a_1^2\cdots a_g^2$ gives coefficient $1+(-1)=0$ for each $a_i$, so $d_2=0$ and
+    $H_2=\ZZ$; and $\ker d_1=\{m:\sum m_i=0\}=\ZZ^{g-1}=H_1$. The two computations agree, and at
+    $g=1$ both give $H_1(\RP^2;M_\ZZ)=0=H^1(\RP^2;\ZZ)$. The 2026-11-01 repair, which replaced an
+    appeal to Poincare duality with an arbitrary local system by Theorem 3H.6 for the orientation
+    system, is confirmed correct: for the trivial system $H_2(N_g;\ZZ)=0$ while $H^0(N_g;\ZZ)=\ZZ$,
+    so the general statement is indeed false. Nothing changed. Not claimed: a published solution,
+    and no certificate.
 ---
 
 ::: {.problem}
@@ -36,7 +53,7 @@ Setup and Poincaré Duality with local coefficients:
 ::: pf-step
 Let $M$ be a closed nonorientable surface. The duality used below, Theorem 3H.6 (p. 336), is stated for a *closed connected* $n$-manifold, so the computation is carried out for connected $M$, written $M=N_g$ ($g\ge 1$, homeomorphic to $\#^g\RP^2$).
 
-For a general closed nonorientable $M$ with components $M_1,\dots,M_r$ each $M_i$ is itself a closed connected nonorientable surface, and the chain groups of §3.H split: $C_n(M;M_\ZZ)=\bigoplus_i C_n(M_i;M_{\ZZ|M_i})$, because a chain is a finite sum of singular simplices each of which has image in a single component (p. 331). Hence the disjoint-union axiom for homology with local coefficients (p. 333) gives
+For a general closed nonorientable $M$ with components $M_1,\dots,M_r$ each $M_i$ is itself a closed connected nonorientable surface, and the chain groups of §3.H split: $C_n(M;M_\ZZ)=\bigoplus_i C_n(M_i;\restrictionof{M_\ZZ}{M_i})$, because a chain is a finite sum of singular simplices each of which has image in a single component (p. 331). Hence the disjoint-union axiom for homology with local coefficients (p. 333) gives
 $$
 H_n(M;M_\ZZ)\cong\bigoplus_{i=1}^r H_n(M_i;M_{\ZZ}),
 $$
