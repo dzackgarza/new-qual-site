@@ -7,7 +7,7 @@ topics:
 
 # Finite fields
 
-A finite field is a finite extension of its prime field, so its order is a prime power $p^n$ and its additive group is $(\ZZ/p)^n$; the multiplicative group has order $q-1$, and the Frobenius map generates the Galois group of the extension.
+A finite field is a finite extension of its prime field, which is what forces its order to be a prime power and makes the Frobenius map an automorphism of the extension.
 
 [[PR-ZO73V]]
 
