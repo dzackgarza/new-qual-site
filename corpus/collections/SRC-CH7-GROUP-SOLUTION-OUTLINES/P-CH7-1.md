@@ -36,6 +36,15 @@ audit:
       entry "# 1" is this exercise. The rendered sentence now cites it and says what the card
       adds. Found by screening the residue's absence claims against the attachments, after two Munkres
       cards were found making the same false claim; no step of the proof changed.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`: the left
+      cosets of the Klein four-subgroup in $A_4$ are Chapter 7 Exercise 1, printed p. 149 (page 163 of
+      the file, whose running head is p. 149). The printed words are the card's statement, and the
+      number the card already carried is the book's. The page is now named in the solution's opening
+      sentence. Not checked in this pass: the proof, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -43,7 +52,7 @@ Let $H = \{(1), (12)(34), (13)(24), (14)(23)\}$. Find the left cosets of $H$ in 
 :::
 
 ::: {.solution}
-The collection retains its solution outline as `assets/attachments/Ch7Sltns.pdf`, whose entry "# 1" is this exercise and lists the same three cosets. The card verifies each product and the exhaustion of $A_4$, and the wording below is its own. Write $H=\{(1),(12)(34),(13)(24),(14)(23)\}$.
+The collection retains its solution outline as `assets/attachments/Ch7Sltns.pdf`, whose entry "# 1" is this exercise and lists the same three cosets. In the seventh edition the exercise is printed as **Chapter 7 Exercise 1 on p. 149**, where the printed words are the card's statement; the outline and the book number it the same. The card verifies each product and the exhaustion of $A_4$, and the wording below is its own. Write $H=\{(1),(12)(34),(13)(24),(14)(23)\}$.
 
 ::: pf
 
