@@ -419,6 +419,42 @@ audit:
     degree adjustment used here) were each checked step by step before
     transcription; the card carries the third, it being the shortest, and
     states it in the card's own words.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Independent check of step positive-characteristic, the step that makes the
+    exercise proved in characteristic p, and three repairs to its citations;
+    the event above is left as written and no statement or bound changes.
+    Checked again from Fulton's (8) and (7), printed p. 90: the preliminary
+    transformation has three new ordinary points of multiplicities n, n-m and
+    n-m, so with deg C_1 = 2n-m its invariant is
+    binom(2n-m-1,2) - sum binom(r_Q,2) - binom(n,2) - 2 binom(n-m,2), which
+    equals g*(C) = binom(n-1,2) - sum binom(r_Q,2) exactly when
+    binom(2n-m-1,2) - binom(n,2) - 2 binom(n-m,2) = binom(n-1,2) - binom(m,2),
+    the identity of step genus-invariant-drops at r = m; since m is 0 or 1 the
+    right-hand side is binom(n-1,2), and both sides are (n^2-m^2-3n+m+2)/2,
+    which was checked at n = 3, 4, 5 for m = 0 and m = 1. The points over the
+    three centres have multiplicity at most 1, so the subtracted sum is empty
+    and g* is preserved; the three new points are ordinary and the old
+    non-ordinary points are preserved with their multiplicities, so N is
+    preserved too, which is what the doubling of Fulton's bound needs. The
+    congruence n'-r congruent to n-m mod p and the choice of m (m = 0 when p
+    does not divide r, m = 1 when it does, since n is then congruent to r and
+    n-1 is not) are as the step states. Repairs: the claim that the projection
+    from P has degree n-r was cited to step excellent-position, which does not
+    state it, and is now derived from the intersection of C with a general
+    line through P; the degree and multiplicity of C_1 at P_1, cited as loc.
+    cit., now name step algebraic-transform-multiplicities; and the
+    ordinariness of the three fundamental points, likewise cited as loc. cit.
+    to a step that does not prove it, now names step excellent-position, whose
+    part (b) proves exactly that passage. Read for this pass: Fulton, Algebraic
+    Curves (2008), (7) and (8) and Lemma 1 on printed pp. 89-90 and Theorem 2
+    on printed p. 91, and Appendix A on printed p. 113, in
+    tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md. Not
+    checked: any printing other than that text version, and no source outside
+    Fulton was re-read, Hirschfeld's Theorem 3.27 no longer being used anywhere
+    in the proof.
 
 ---
 
@@ -616,13 +652,13 @@ n'-r\equiv 2n-m-r\equiv n-m \pmod p,
 $$
 and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$.
 
-By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is available exactly when the projection $\pi_P$ from $P$ is separable; what the appendix above supplies is the transformation that produces that hypothesis when it fails. If $\pi_P$ is not separable then $p\mid(n-r)$, the inseparable degree of $\pi_P$ being a power $p^e>1$ dividing its degree $n-r$ (step [](#excellent-position){.pf-ref}). Choose the preliminary transformation $T$ of the paragraph above, centred at $Q$ of multiplicity $m\in\{0,1\}$ and two points off $C$, with $P$ on no fundamental line, no fundamental line containing a singular point of $C$ other than $Q$, and every fundamental line meeting $C$ transversally at smooth points; write $C_1=T(C)$ and $P_1=T(P)$. Then:
+By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is available exactly when the projection $\pi_P$ from $P$ is separable; what the appendix above supplies is the transformation that produces that hypothesis when it fails. If $\pi_P$ is not separable then $p\mid(n-r)$: a general line through $P$ meets $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity, so $\pi_P$ has degree $n-r$, and the inseparable degree of $\pi_P$ is a power $p^e>1$ dividing that degree. Choose the preliminary transformation $T$ of the paragraph above, centred at $Q$ of multiplicity $m\in\{0,1\}$ and two points off $C$, with $P$ on no fundamental line, no fundamental line containing a singular point of $C$ other than $Q$, and every fundamental line meeting $C$ transversally at smooth points; write $C_1=T(C)$ and $P_1=T(P)$. Then:
 
 (i) $P$ is not a fundamental point and lies on no fundamental line, so $T$ is an isomorphism near $P$, and $P_1$ has multiplicity $r$ and the singularity of $P$ (step [](#algebraic-transform-multiplicities){.pf-ref}).
 
-(ii) $\deg C_1=2n-m$ (loc. cit.), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
+(ii) $\deg C_1=2n-m$ and $\mu_{P_1}(C_1)=r$ (step [](#algebraic-transform-multiplicities){.pf-ref}), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
 
-(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary, the fundamental lines meeting $C$ transversally at smooth points (loc. cit.); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$, and $g^*(C_1)=g^*(C)$ because the cancellation of step [](#genus-invariant-drops){.pf-ref} applies verbatim with the sum taken over the points over the three centres, each of multiplicity at most $1$ here.
+(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary multiple points of multiplicities $n$, $n-m$ and $n-m$, the fundamental lines meeting $C$ transversally at smooth points (step [](#excellent-position){.pf-ref}); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$, and $g^*(C_1)=g^*(C)$ because the cancellation of step [](#genus-invariant-drops){.pf-ref} applies verbatim with the sum taken over the points over the three centres, each of multiplicity at most $1$ here.
 
 So $(C_1,P_1)$ has the numbers $N$ and $g^*$ of $(C,P)$, the singularity of $P$, and a separable projection at $P_1$; the descent step of steps [](#excellent-position-attained){.pf-ref} and [](#genus-invariant-drops){.pf-ref} then applies at $P_1$ and drops $N+g^*$ by at least $1$, as step [](#termination){.pf-ref} records. Each descent step is preceded by at most one preliminary transformation, so at most $2(N+g^*(C))$ quadratic transformations suffice, $N+g^*$ being a non-negative integer by step [](#genus-invariant-nonnegative){.pf-ref}. No theorem for characteristic $p$ beyond this count is used: the preliminary transformation is the one Fulton prescribes in Appendix A, and the only thing added here is that it is neutral for $N$ and $g^*$ and that it restores the hypothesis of step [](#excellent-position-attained){.pf-ref}.
 
