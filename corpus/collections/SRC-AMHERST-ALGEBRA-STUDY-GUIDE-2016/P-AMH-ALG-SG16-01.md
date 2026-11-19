@@ -15,6 +15,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored Amherst College Study Guide for Algebra (September 2016).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained document `assets/attachments/Study_Guide_for_Algebra.pdf`: the statement is item 1 of the Subgroups section, dated January 2012, of the Amherst study guide, and its printed words are
+    the card's. The item and the file are now named in the solution's opening sentence. Not
+    checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -23,6 +30,7 @@ Prove the following standard theorem about subgroups: that $H\cap K$ is a subgro
 :::
 
 ::: {.solution}
+This is item 1 of the Subgroups section, dated January 2012, of the Amherst study guide, retained in this repository as `assets/attachments/Study_Guide_for_Algebra.pdf`; the statement below is its wording.
 
 ::: pf
 
