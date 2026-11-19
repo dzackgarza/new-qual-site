@@ -15,6 +15,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis section 1.3, problem 4 (August 2, 2004) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 34, printed page 2: section 1.3 item 4 of
+    the Preliminary Examination in Analysis, Wesleyan University, August 2, 2004. The
+    page had cited only the extraction; it now names the examination, its item and the
+    page of the scan. The statement is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had answered
+    the question, which STYLE-08 forbids; it is dropped, and the step that carries the
+    result is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -27,6 +44,10 @@ Show that $f$ is constant on $D$.
 :::
 
 ::: {.solution}
+The item is section 1.3 item 4 of the Preliminary Examination in Analysis, Wesleyan University,
+August 2, 2004 (an analytic $f=u+iv$ with $v=u^2$ is constant), on PDF p. 34 of the retained scan
+assets/attachments/analysis_2003-2007.pdf, printed page 2.
+
 
 ::: pf
 
@@ -234,11 +255,6 @@ Both its real and imaginary parts are constant by steps [](#s1-6){.pf-ref} throu
 
 :::
 
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} is the desired conclusion.
-
-:::
 
 :::
 
