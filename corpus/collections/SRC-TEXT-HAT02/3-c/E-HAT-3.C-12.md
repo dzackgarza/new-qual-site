@@ -42,6 +42,21 @@ audit:
     with $xy_i=y_ix$ from graded commutativity in even degree $|y_i|=2i$. Also corrected a typo in
     the text ($H_{2n+1}(H;\ZZ_p)$) and added the remark that the displayed relations determine the
     multiplication. The boxed answer $\Lambda_{\ZZ_p}(x)\otimes\Gamma_{\ZZ_p}(y)$ is correct.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §3.C, printed p. 292, with $p$ odd. The answer
+    $\Lambda_{\ZZ_p}(x)\otimes\Gamma_{\ZZ_p}(y)$ and the three relations are right, and the route
+    through the coproduct checks out: $H^*(L;\ZZ_p)=\Lambda(\alpha)\otimes\ZZ_p[\beta]$ with
+    $|\alpha|=1$, $|\beta|=2$; $\alpha$ is primitive by bidegree; $\beta=\pm\beta_1(\alpha)$ is
+    primitive because $\beta_1$ is natural and additive and $\Delta$ is a ring map;
+    $\Delta(\beta^n)=\sum_i\binom ni\beta^i\otimes\beta^{n-i}$ and
+    $\Delta(\alpha\beta^n)=\sum_i\binom ni(\alpha\beta^i\otimes\beta^{n-i}+\beta^i\otimes\alpha\beta^{n-i})$
+    with no sign because $|\beta^i|=2i$ is even; dualizing gives $x^2=0$, $y_iy_j=\binom{i+j}{i}y_{i+j}$
+    and $xy_i=y_ix$ by graded commutativity in even degree, and the pairings against
+    $\alpha\beta^m$ give the remaining products. The tensor decomposition with
+    $y_0=1$ is the divided-power algebra $\Gamma(y)$. Nothing changed. Not claimed: a certificate.
 ---
 
 ::: {.problem}
