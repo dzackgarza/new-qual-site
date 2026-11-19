@@ -12,6 +12,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part B, Problem 3 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 3 of the Part B paper retained at assets/attachments/Applied_Algebra_Part_B_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; the decomposition of $\CC[X]$ and
+    $\dim\operatorname{End}_{S_5}(\CC[X])=15$, checked both by the multiplicities and by the orbit count
+    on $X\times X$; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED.
+    Not checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -30,7 +42,7 @@ Let $\CC[X]$ be the associated permutation representation.
 :::
 
 ::: {.solution}
-The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
+The problem is Part B, Problem 3 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 3 of the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf`. No retained solution set covers it, so the argument is the card's own.
 
 Write $A=\{1,2,3,4,5\}$, $X=A\times A$ and $S^\lambda$ for the irreducible $S_5$-module indexed by the partition $\lambda$ of $5$. Maschke's theorem applies, so every $S_5$-module over $\CC$ is semisimple.
 
