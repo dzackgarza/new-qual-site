@@ -45,7 +45,7 @@ With $s=\tfrac12+it$ the two factors of the reflection formula are complex conju
 For $s=\tfrac12+it$ one has $1-s=\overline s$, and $\Gamma(\overline s)=\overline{\Gamma(s)}$.
 
 ::: pf-proof
-$1-(\tfrac12+it)=\tfrac12-it=\overline s$. The identity $\Gamma(\overline s)=\overline{\Gamma(s)}$ for $\Re s>0$ follows because the integral $\Gamma(s)=\int_0^\infty e^{-x}x^{s-1}\dd x$ defining $\Gamma$ on the half-plane $\Re s>0$ may be differentiated under the integral sign, so it is holomorphic there and real for real $s$; a holomorphic function on a domain symmetric about the real axis that is real on the real axis satisfies $f(\overline s)=\overline{f(s)}$, by the Schwarz reflection principle or by expanding in a power series about a real point.
+$1-(\tfrac12+it)=\tfrac12-it=\overline s$. The identity $\Gamma(\overline s)=\overline{\Gamma(s)}$ for $\Re s>0$ follows because the integral $\Gamma(s)=\int_0^\infty e^{-x}x^{s-1}\dx$ defining $\Gamma$ on the half-plane $\Re s>0$ may be differentiated under the integral sign, so it is holomorphic there and real for real $s$; a holomorphic function on a domain symmetric about the real axis that is real on the real axis satisfies $f(\overline s)=\overline{f(s)}$, by the Schwarz reflection principle or by expanding in a power series about a real point.
 :::
 
 :::
