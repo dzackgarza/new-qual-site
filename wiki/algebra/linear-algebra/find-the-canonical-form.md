@@ -30,7 +30,7 @@ Both come from the structure theorem for the finitely generated $F[t]$-module $F
 The roots of $\chi_A(t) = \det(tI - A)$ are the eigenvalues, with algebraic multiplicities.
 
 [[D-QFYAC]]
-Also $\trace A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenvalues of a triangular matrix are its diagonal entries.
+Also $\trace A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and the eigenvalues of a triangular matrix are its diagonal entries; both are on [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]].
 
 ### Minimal polynomial
 
