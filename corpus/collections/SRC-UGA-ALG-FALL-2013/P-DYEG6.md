@@ -13,6 +13,14 @@ classification:
   - Finite Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the step stating the definition of separability now records that
+    it is a definition. Nothing mathematical was changed.
+
 ---
 
 ::: {.problem}
@@ -35,6 +43,11 @@ Give an example of a finite extension $L/K$ that is not separable.
 ::: {.pf-step #def}
 
 $L/K$ is separable when the minimal polynomial over $K$ of every $\alpha\in L$ has distinct roots in an algebraic closure of $K$.
+
+
+::: pf-proof
+This is the definition of separability used below: every element has a minimal polynomial with distinct roots.
+:::
 
 :::
 
