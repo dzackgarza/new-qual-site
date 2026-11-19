@@ -85,17 +85,6 @@ $$
 
 :::
 
-::: pf-step
-
-Therefore $G$ is abelian.
-
-::: pf-proof
-
-By step [](#s2){.pf-ref} every pair of elements of $G$ commutes.
-
-:::
-
-:::
 
 :::
 
