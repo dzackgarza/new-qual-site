@@ -72,6 +72,19 @@ $$
 
 ## Branch cuts: logarithms
 
+::: {.example title="$\displaystyle\int_0^\infty{\log x\over 1+x^3}\dx = -{2\pi^2\over 27}$"}
+The logarithm is the derivative in the exponent of the power integral: for $0<a<n$,
+$$
+\int_0^\infty{x^{a-1}\over 1+x^n}\dx = {\pi/n\over\sin(\pi a/n)},
+$$
+whose value for a *single* $a$ comes from the keyhole or sector contour with the branch cut, and differentiating in $a$ gives
+$$
+\int_0^\infty{x^{a-1}\log x\over 1+x^n}\dx = -{\pi^2\over n^2}{\cos(\pi a/n)\over\sin^2(\pi a/n)}.
+$$
+At $a=1$ and $n=3$ this is $-(\pi^2/9)\cot(\pi/3)\csc(\pi/3) = -(\pi^2/9)\cdot{1\over\sqrt3}\cdot{2\over\sqrt3} = -2\pi^2/27$, and numerically the integral is $-0.7310818\ldots$ either way.
+Differentiating under the integral sign is justified on any compact interval of $a$ inside $(0,n)$, where $x^{a-1}\abs{\log x}/(1+x^n)$ is integrable and bounds the derivative.
+:::
+
 [[E-SS3.EX-10]]
 [[P-3JE4U]]
 [[P-CAEXAMPREP-05]]
