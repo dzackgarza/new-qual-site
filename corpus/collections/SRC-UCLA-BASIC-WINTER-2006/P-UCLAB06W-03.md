@@ -31,10 +31,12 @@ audit:
     sum with the h/2-weighted sum over consecutive pairs, which is what makes the per-interval bound
     add up; the reason the affine interpolant integrates to the trapezoid term, which is the step
     where the estimate is actually used; the evaluation of the integral of t(h - t) as h^3/6; and the
-    simplification n h^3 = (b - a)^3 / n^2. Not checked: the printed statement. The retained exam is
-    a Xerox scan with no text layer, so the printed 1/n recorded in the audit above and in the erratum
-    remark could not be confirmed here; the correction itself is verified by the constant-function
-    counterexample the remark gives.
+    simplification n h^3 = (b - a)^3 / n^2. The printed statement was then confirmed: the retained
+    exam has no text layer, so the page was rendered as an image instead, and Problem 3 of
+    assets/attachments/basic-06W.pdf, page 1, prints "(1/n)( 1/2 f(x_0) + f(x_1) + ... + f(x_{n-1}) +
+    1/2 f(x_n) )" against the integral, with the bound "M/n^2" -- the prefactor 1/n that the erratum
+    remark corrects, not (b-a)/n. The remark's counterexample is arithmetic on the same reading: for
+    f identically 1 the bracket is 1 while the integral is b-a.
 ---
 
 ::: {.problem}
