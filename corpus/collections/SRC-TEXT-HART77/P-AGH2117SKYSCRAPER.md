@@ -33,8 +33,6 @@ Show that this sheaf can also be described as $i_*(A)$, where $A$ denotes the co
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.17, printed p. 68. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.17, printed p. 6, computes the same stalks — $A$ at points of $\closure{\{P\}}$ and $0$ elsewhere — and identifies the sheaf with the pushforward of the constant sheaf on $\closure{\{P\}}$, as the steps do.
-
 Let
 $$
 \mcs=i_P(A).

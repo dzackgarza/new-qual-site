@@ -28,8 +28,6 @@ If $X$ is a scheme, show that every nonempty irreducible closed subset has a uni
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.9, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.9, printed p. 14, proves existence and uniqueness the same way: on an affine open meeting $Z$ the closed subset corresponds to a prime ideal, whose generic point is the one required, and two affine opens share a nonempty piece of $Z$, so their generic points agree.
-
 Let
 $$
 Z\subseteq X

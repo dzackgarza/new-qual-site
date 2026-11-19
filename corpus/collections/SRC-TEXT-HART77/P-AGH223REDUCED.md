@@ -38,7 +38,6 @@ Show that there is a unique morphism $g: X \to Y_{\mathrm{red}}$ such that $f$ i
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.3, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.3, printed p. 12, treats the same three parts by the same reduction to affine opens: a ring is reduced exactly when its localizations at primes are, the reduced presheaf is a sheaf whose stalks are the reductions of the local rings, and the universal property follows because a map into a reduced scheme factors uniquely through a reduced quotient.
 
 ::: pf
 

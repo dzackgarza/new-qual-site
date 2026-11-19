@@ -27,7 +27,6 @@ Describe $\Spec \ZZ$, and show that it is a final object for the category of sch
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.5, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.5, printed p. 13, gives the same description of $\Spec\ZZ$ — a generic point and one point per prime, with the nonempty opens cofinite and containing the generic point — and concludes the final-object property from $\Hom(\ZZ,\Gamma(X,\OO_X))$ being a singleton.
 
 ::: pf
 

@@ -48,8 +48,6 @@ $$
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.11, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.11, printed p. 5, proves the same statement by the same route: a cover of $U$ is cut down to a finite subcover using noetherianity, filtered colimits commute with finite limits to give the exact sequence, and the sections are then glued.
-
 Let
 $$
 \mcp(U)=\varinjlim_i\mcf_i(U)

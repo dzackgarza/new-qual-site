@@ -30,8 +30,6 @@ How many points are there with a given residue field?
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.11, printed p. 81. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.11, printed p. 15, gives the same description: the primes are the zero ideal and the ideals $(f)$ for monic irreducible $f$, the residue field at $(f)$ is $\FF_{p^{\deg f}}$, and the count of points with a given residue field is the count of monic irreducibles of that degree.
-
 Put
 $$
 X=\Spec \FF_p[x].

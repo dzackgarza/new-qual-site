@@ -66,7 +66,6 @@ is exact.
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.21, printed p. 68. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.21, printed p. 10, treats the same five parts, and on the affine opens where the structure sheaf is a quotient of a polynomial ring, which is the device the steps use for (b) and the exactness statements.
 
 ::: pf
 

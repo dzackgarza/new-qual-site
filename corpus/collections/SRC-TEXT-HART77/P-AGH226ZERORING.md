@@ -30,8 +30,6 @@ Since $0 = 1$ in the zero ring, each ring $R$ admits a unique homomorphism to th
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.6, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.6, printed p. 13, argues in the same way: $\Spec 0$ is the empty space, its structure sheaf is trivial, and the unique map to it is a morphism of locally ringed spaces, which is the initial-object property.
-
 Let $0$ denote the zero ring, in which
 $$
 0=1.

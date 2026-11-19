@@ -29,7 +29,6 @@ We call this the \dfn{induced scheme structure} on the open set $U$, and we refe
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.2, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.2, printed p. 12, proves it by the same two steps: an affine neighbourhood of each point, and then a distinguished open inside its intersection with the given open set.
 
 ::: pf
 

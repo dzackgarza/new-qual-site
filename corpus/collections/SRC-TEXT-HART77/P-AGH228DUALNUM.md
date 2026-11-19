@@ -31,8 +31,6 @@ Show that to give a $k$-morphism $\Spec k[\eps]/\eps^2 \to X$ is equivalent to g
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.8, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.8, printed p. 14, works the same identification: a morphism from $\Spec k[\varepsilon]/(\varepsilon^2)$ is a rational point and a local homomorphism sending the maximal ideal into $(\varepsilon)$, which is a $k$-linear functional on $\mathfrak m_x/\mathfrak m_x^2$, and conversely $\OO_x\cong k\oplus\mathfrak m_x$ builds the homomorphism.
-
 Put
 $$
 R=k[\varepsilon]/(\varepsilon^2),

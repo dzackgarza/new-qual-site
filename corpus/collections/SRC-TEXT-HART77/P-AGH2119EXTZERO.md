@@ -42,7 +42,6 @@ $$
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.19, printed p. 68. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.19, printed p. 9, treats the same three parts by the same devices: the stalks of the direct image are computed as a filtered colimit over the open sets meeting $Z$, the sheaf $j_!\mcf$ is pinned by its stalks because sheafification does not change them, and the exact sequence is checked on stalks.
 
 ::: pf
 

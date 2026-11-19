@@ -51,7 +51,6 @@ Show that $\mcg$ is a flasque sheaf and that there is a natural injective morphi
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.16, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.16, printed p. 6, sketches the same five parts, each in a line or two; the steps below write out what his sketches leave implicit, and follow his order.
 
 ::: pf
 
