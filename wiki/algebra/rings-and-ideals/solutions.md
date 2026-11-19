@@ -5,16 +5,18 @@ order: 90
 
 # Solutions (rings)
 
-## Ring homomorphisms and polynomial rings
+The Gallian chapter outlines that cover ring theory are held by the collections that own them, each with its per-exercise list:
 
-[Solution outlines for chapter 15 (ring homomorphisms) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch15Sltns.pdf)
+- [[SRC-CH12-RING-SOLUTION-OUTLINES|Chapter 12 ring solution outlines]]
 
-[Solution outlines for chapter 16 (polynomial rings) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch16Sltns.pdf)
+- [[SRC-CH13-RING-SOLUTION-OUTLINES|Chapter 13 ring-theory solution outlines]]
 
-[Solution outlines for chapter 17 (factorization of polynomials) of Gallian, *Contemporary Abstract Algebra*](attachments/Ch17Sltns.pdf)
+- [[SRC-CH14-IDEAL-SOLUTION-OUTLINES|Chapter 14 ideal solution outlines]]
 
-## Commutative algebra
+- [[SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES|Chapter 15 ring-homomorphism solution outlines]]
 
-- [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), also collected in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
+- [[SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES|Chapter 16 polynomial-ring solution outlines]]
 
-- [Hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf) to those problems.
+- [[SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES|Chapter 17 polynomial solution outlines]]
+
+The statements of the ring chapter are on [[algebra/rings-and-ideals/index|Rings and ideals]], and the corpus solutions to those problems are on the cards of the collections above.
