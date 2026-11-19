@@ -11,7 +11,7 @@ topics:
 
 ## Cyclotomic extensions
 
-The Galois group of $\QQ(\zeta_n)/\QQ$ is the unit group modulo $n$, acting on $\zeta_n$ by $\sigma_a\colon\zeta_n\mapsto\zeta_n^a$, so the intermediate fields of a cyclotomic extension are the subgroups of an abelian group and every one of them is Galois over $\QQ$.
+A cyclotomic extension is the case in which the group is read off the action on a root of unity, and since that group is abelian, every intermediate field of a cyclotomic extension is Galois over $\QQ$.
 
 [[D-JX3YC]]
 
@@ -25,7 +25,7 @@ The Galois group of $\QQ(\zeta_n)/\QQ$ is the unit group modulo $n$, acting on $
 
 ## Radical extensions
 
-Adjoining an $n$th root of $a$ splits $x^n-a$ only after $\zeta_n$ is present, and then the extension is cyclic of degree dividing $n$ over the cyclotomic field; this is the Kummer setting, and the Galois group is a subgroup of $\ZZ/n\semidirect(\ZZ/n)^\times$.
+Adjoining an $n$th root of $a$ splits $x^n-a$ only after $\zeta_n$ is present, which is why the group of a binomial sits inside a semidirect product rather than being cyclic.
 
 [[P-Z6MHZ]]
 
@@ -41,7 +41,7 @@ For $a=2$ the two steps are visible: $\QQ(\zeta_3)/\QQ$ has degree $2$ and $\QQ(
 
 ## Solvability
 
-A polynomial over a field of characteristic $0$ is solvable by radicals exactly when its Galois group is solvable, and $S_n$ is solvable exactly for $n\leq4$, so the obstruction is a Galois group that is not solvable.
+Since $S_n$ is solvable only up to $n=4$, the obstruction to solvability by radicals in degree five and above is a Galois group that is not solvable.
 
 [[D-DFIDP]]
 
