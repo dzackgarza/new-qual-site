@@ -13,7 +13,7 @@ topics:
 
 Throughout, rings are commutative with identity, except where stated otherwise.
 
-The kernel of a ring homomorphism is an ideal, and the quotient $R/I$ is what makes the isomorphism theorems the way a ring is constructed from a presentation: an ideal is the data a homomorphism out of $R$ can be made to vanish on.
+The kernel of a ring homomorphism is an ideal, and every ideal is such a kernel, since $I=\ker(R\to R/I)$. The quotient is the universal ring in which $I$ vanishes, so a presentation of a ring is the choice of a generating set together with the ideal of relations among them.
 
 [[PR-PZZUO]]
 
