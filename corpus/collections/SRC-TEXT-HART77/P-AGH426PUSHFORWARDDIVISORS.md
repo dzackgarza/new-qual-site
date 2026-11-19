@@ -27,6 +27,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.6, printed p. 87,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.6, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the effective-$D$ determinant identity, the constant $n$ of $f_*f^*$, and the chain in (c)--(d) that ends at $(\det f_*\OO_X)^2\cong\mcl(-B)$.
+    Not checked: Yang's Solutions outside printed p. 87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.6 at printed
+    p. 87 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -427,4 +447,6 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.6, printed p. 216, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.2.18), computes $f_*$ of a divisor by summing over the points of each fibre with their ramification indices, checks linear equivalence, and identifies the determinant of $f_*\OO_X$ with $\OO_Y(-B)$ times the trace-zero data, using that $\deg f_*\OO_X$ is the rank.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.6 ($f_*$ for Divisors), printed p. 87, takes (a) with $X$ and $Y$ affine: for effective $D$ the sequence $0\to\mcl(-D)\to\OO_X\to\OO_D\to0$ has $R^1f_*\mcl(-D)=0$ (III.8.1), so $0\to f_*\mcl(-D)\to f_*\OO_X\to f_*\OO_D\to0$ is exact, and $\det$ is multiplicative on it, giving $\det(f_*\mcl(-D))\cong\det(f_*\OO_X)\tensor(\det f_*\OO_D)^{-1}$; since $f_*\OO_D\cong\bigoplus_{i=1}^{n}\OO_{f_iD}$, one has $\det(f_*\OO_D)\cong\mcl(f_*D)$, which is the formula of (a) for effective $D$. For an arbitrary $D$ it writes $0\to\mcl(D)\to\mcl(-D_2)\to\OO_{D_1}\to0$ with $D=D_1-D_2$; the inclusion printed runs the other way, $\mcl(-D_2)=\mcl(D-D_1)\subseteq\mcl(D)$ for $D_1$ effective, and the quotient is $\mcl(D)$ restricted to $D_1$, which is $\OO_{D_1}$ only when $\mcl(D)$ is trivial along $D_1$, so this step is where the entry is loose, while the formula it reaches is the exercise's. In (b) it divides by (a) that $f_*D$ depends only on the class of $D$ and reads $f_*f^*=n$ off a point, whose pullback has degree $n$. In (c) it takes $f^!\Omega_Y\cong\Omega_X$ (III, Ex.\ 7.2) with duality for the finite morphism (III, Ex.\ 6.10), giving $f_*\Omega_X\cong\sheafhom_Y(f_*\OO_X,\Omega_Y)\cong(f_*\OO_X)^{-1}\tensor\Omega_Y$ and hence $\det f_*\Omega_X\cong(\det f_*\OO_X)^{-1}\tensor\Omega_Y^{\tensor n}$. In (d) it writes $K_X\sim f^*K_Y+R$, so $f_*K_X\sim nK_Y+B$ and $\mcl(-B)\cong\Omega_Y^{\tensor n}\tensor\mcl(f_*K_X)^{-1}$, which by (a) and (c) is $(\det f_*\OO_X)^2$.
 :::
