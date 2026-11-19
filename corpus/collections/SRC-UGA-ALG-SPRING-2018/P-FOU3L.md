@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Algebra_Spring_2018.docx`, converted with Pandoc: the item is the item beginning "Let R be a PID and M be an R-module", and its
+    printed words are the card's. The document numbers its problems automatically and those
+    numbers do not survive the conversion where a list restarts, so the opening words are the
+    locator there. The file and the locator are now named in the solution's opening sentence.
+    Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +40,7 @@ Show that if $M$ is $\generators{p}\dash$primary, then $S$ is pure if and only i
 :::
 
 ::: {.solution}
+This is the item beginning "Let R be a PID and M be an R-module" of the Spring 2018 algebra examination, retained in this repository as `assets/attachments/Algebra_Spring_2018.docx`; the exam restarts its numbering, so the opening words locate it.
 
 ::: pf
 
