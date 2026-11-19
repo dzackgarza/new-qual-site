@@ -115,7 +115,6 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - [Cambridge Part III past papers](https://www.maths.cam.ac.uk/postgrad/part-iii/pastpapers/2016/index.html): examination papers by year.
 
-- [Spring 2013 Algebra Qualifying Exam](/assets/algebraic-geometry/resources/2013SP_algebra.pdf): qualifying exam paper.
 
 ### Problem lists and course pages
 
@@ -223,7 +222,6 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 - Cambridge Part III Algebraic Geometry: [2021](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2021/paper_113.pdf), [2019](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2019/paper_113.pdf), [2018](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2018/paper_113.pdf), [2017](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2017/paper_113.pdf), [2016](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2016/paper_113.pdf).
 
-- Cambridge Part III Commutative Algebra: [2021](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2021/paper_101.pdf), [2019](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2019/paper_148.pdf), [2018](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2018/paper_101.pdf), [2017](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2017/paper_128.pdf), [2016](https://www.maths.cam.ac.uk/postgrad/part-iii/files/pastpapers/2016/paper_101.pdf).
 
 - [Harvard, old qualifying exams](https://www.math.harvard.edu/graduate/study-the-qualifying-exam/some-old-qualifying-exams/), and the [1990–2002 collection](https://www.math.harvard.edu/media/quals90-02.pdf).
 
