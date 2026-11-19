@@ -47,6 +47,7 @@ This statement is Chevalley's theorem; see Cartan and Chevalley, exposé 7, and 
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.19, printed p. 32--33 of the held scan, transcribed and checked against the exercise as printed: the reduction to $X$ noetherian, the valuation-ring argument through the field of fractions, the case of a finitely generated field extension treated over $\ZZ$ and over a field, and the conclusion that $f(X)$ is constructible, whence $f(V)$ is for every constructible $V$.
 
 ::: pf
 
