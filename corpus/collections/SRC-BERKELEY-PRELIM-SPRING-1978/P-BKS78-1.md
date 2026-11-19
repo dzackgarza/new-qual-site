@@ -8,6 +8,13 @@ relations: []
 review: draft
 audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring78.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -19,6 +26,8 @@ For which values of $k$ does $(f_n)$ converge uniformly on $\RR$? For which valu
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1978, retained in this repository as `assets/attachments/Spring78.pdf`; the statement below is its wording.
+
 ::: pf
 
 ::: pf-step
