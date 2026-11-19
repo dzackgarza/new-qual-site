@@ -10,6 +10,16 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported an undefined control word. The
+    three occurrences of `\Ind_{H}^{G}`, in parts (a) and (c) and in the proof of (a), name a
+    control word that neither vocabularies/macros.json nor the MathJax command set the site
+    loads defines, so the page could not render it; all three now read
+    `\operatorname{Ind}_{H}^{G}`, the operator spelling. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -43,10 +53,10 @@ Let $H\le G$ finite, $A:H\to\GL_{n}(\CC)$ with space $V$ and character $\chi^{A}
 ::: pf
 
 ::: {.pf-step #define}
-(a) $A\uparrow_{H}^{G}$ is the representation of $G$ on $\Ind_{H}^{G}V=\CC[G]\otimes_{\CC[H]}V$ with $g\cdot(x\otimes v)=(gx)\otimes v$.
+(a) $A\uparrow_{H}^{G}$ is the representation of $G$ on $\operatorname{Ind}_{H}^{G}V=\CC[G]\otimes_{\CC[H]}V$ with $g\cdot(x\otimes v)=(gx)\otimes v$.
 
 ::: pf-proof
-$\CC[G]$ is a $(G,H)$-bimodule, so the tensor product over $\CC[H]$ carries a left $G$-action by multiplication on the first factor, and it is finite dimensional: choosing coset representatives $t_{1},\dots,t_{r}$ of $G/H$ gives $\CC[G]=\bigoplus_{i}t_{i}\CC[H]$ as right $\CC[H]$-modules, hence $\Ind_{H}^{G}V=\bigoplus_{i}t_{i}\otimes V\cong V^{\oplus r}$ as vector spaces.
+$\CC[G]$ is a $(G,H)$-bimodule, so the tensor product over $\CC[H]$ carries a left $G$-action by multiplication on the first factor, and it is finite dimensional: choosing coset representatives $t_{1},\dots,t_{r}$ of $G/H$ gives $\CC[G]=\bigoplus_{i}t_{i}\CC[H]$ as right $\CC[H]$-modules, hence $\operatorname{Ind}_{H}^{G}V=\bigoplus_{i}t_{i}\otimes V\cong V^{\oplus r}$ as vector spaces.
 :::
 
 :::
@@ -70,7 +80,7 @@ Fix $g$ and $h\in H$; for $x\in G$ one has $(xh)^{-1}g(xh)=h^{-1}(x^{-1}gx)h$, w
 :::
 
 ::: {.pf-step #reciprocity}
-(c) For a representation $W$ of $G$ with character $\chi^{B}$, $\dim\Hom_{G}\big(\Ind_{H}^{G}V,W\big)=\dim\Hom_{H}\big(V,\Res_{H}^{G}W\big)$, equivalently $\langle\chi^{A\uparrow},\chi^{B}\rangle_{G}=\langle\chi^{A},\restrictionof{\chi^{B}}{H}\rangle_{H}$.
+(c) For a representation $W$ of $G$ with character $\chi^{B}$, $\dim\Hom_{G}\big(\operatorname{Ind}_{H}^{G}V,W\big)=\dim\Hom_{H}\big(V,\Res_{H}^{G}W\big)$, equivalently $\langle\chi^{A\uparrow},\chi^{B}\rangle_{G}=\langle\chi^{A},\restrictionof{\chi^{B}}{H}\rangle_{H}$.
 
 ::: pf-proof
 Tensor-Hom adjunction for the ring extension $\CC[H]\subseteq\CC[G]$ gives a natural isomorphism $\Hom_{G}\big(\CC[G]\otimes_{\CC[H]}V,W\big)\cong\Hom_{H}\big(V,W\big)$, the $H$-module structure on the right being the restriction; and $\Hom_{G}(\CC[G],W)\cong W$ by evaluation at $1$, which is compatible with the $H$-action. Taking dimensions gives the stated equality of inner products, since $\dim\Hom_{G}(U,W)=\langle\chi^{U},\chi^{W}\rangle_{G}$ for finite groups.
