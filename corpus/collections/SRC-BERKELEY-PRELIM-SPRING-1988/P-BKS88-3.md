@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. The answer is yes. Gaussian elimination over Q gives a rational reduced
+    row-echelon matrix R defining the same homogeneous system over C, so a nonzero complex solution
+    forces a free column; setting that free variable to 1 and the others to 0 gives a rational
+    solution with a nonzero coordinate. Checked the two points the proof leans on: that rational row
+    operations keep all entries rational, and that row operations preserve the solution set of a
+    homogeneous system. Not checked: the printed paper, which was not re-read in this pass.
 ---
 
 ::: {.problem}
