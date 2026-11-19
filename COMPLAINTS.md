@@ -5430,3 +5430,22 @@ So 4.5% of structured cards carry at least one step that states a claim and just
 **What this entry does not claim.** The other four violation classes are outside residue 5 entirely — the duplicate exam terms are collection-level metadata, `SRC-UNSORTED-PRELIM` is a collection record, and the remaining orphans are other residues' cards. Nothing here asserts that any card's mathematics is wrong; a duplicate body and an unlinked card are both structural.
 
 **Uncertainty.** The classes above are one full run's output, read from its text report; the audit's `--only orphans` rerun was killed (exit 137) before printing, so the other 22 orphan ids were not itemised here, only counted. No collection metadata was edited and no page was edited.
+
+## 2026-11-19, correction to the audit entry above: the two residue-5 orphans are twins of cards the pages already link, so the remedy is a merge decision, not an embed
+
+**What this corrects.** The entry above says the repair for the orphaned definitions `D-DEFFLAT` and `D-DEFNOETH` is to add `[[D-DEFFLAT]]` and `[[D-DEFNOETH]]` to pages that discuss flatness and Noetherian rings. Reading the candidates shows that would write a second copy of a definition the page already carries. That recommendation is withdrawn for these two cards.
+
+**Observed evidence, read in this pass.**
+
+| orphan | the card the page already links | where | what differs between the two cards |
+| --- | --- | --- | --- |
+| `D-DEFFLAT`, "flat" (title "Flat modules") | `D-FS52P`, "flat": "$M\otimes_R-\colon R\text{-mod}\to R\text{-mod}$ is exact" | `wiki/algebra/modules/classify-this-module.md` line 76, under the heading "Free, projective, flat, and torsion-free modules" | `D-DEFFLAT` states "$-\otimes_A N$ is exact" and adds that an $A$-algebra is flat when it is flat as a module; the two conditions agree over a commutative ring, so the difference is the side the tensor is written on plus one clause |
+| `D-DEFNOETH`, "Noetherian rings and modules" | `D-TZXBO`, "Noetherian ring": ascending chain condition on ideals, stabilising at some $N$ | `wiki/algebra/rings-and-ideals/commutative-algebra.md` line 40, "Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes" | `D-DEFNOETH` adds the equivalent finite-generation form, the Noetherian *module* notion, and a second div defining locally Noetherian schemes |
+
+So both are twins of linked cards rather than unreferenced definitions, and the audit classes them as orphans only because nothing *on a page* reaches them. Embedding them would put two definitions of one notion on the same page — the duplication the corpus's own record already flags elsewhere as needing a merge decision, not a link.
+
+**What each card does carry that the linked twin does not.** `D-DEFNOETH` is not a strict subset: the module-level notion and the locally Noetherian scheme definition have no home elsewhere in that form, and three cards point at it through `relations` (`D-DEFREGLR`, `T-DEFNAKA` and `D-DEFREGSQ`). `D-DEFFLAT` likewise is the target of `T-FLATCRIT` and `D-DEFTOR` by `relations`, and it is cited inline by `FF-QILDV` and `PR-KX7L7`. So the decision is a merge that keeps the extra material, not a deletion of either card.
+
+**The remedy, stated so it can be executed.** For `D-DEFNOETH`: merge its module and scheme definitions into `D-TZXBO` (or into a scheme-level card) and leave one Noetherian definition to be linked; for `D-DEFFLAT`: merge the algebra clause and pick one side for the tensor, then link the survivor from `wiki/algebra/modules/classify-this-module.md`. Both are authoring decisions about which card survives, which this chat may not take for the wiki pages that would receive them.
+
+**Uncertainty.** Only these two orphans were read; the other 23 are likewise unrepaired and unexamined. Whether the audit's `orphans` check should count a card reached from other cards' `relations` as reachable is a question about the check, not about these cards, and is not decided here.
