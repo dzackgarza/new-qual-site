@@ -6888,3 +6888,25 @@ unsolved-card queue, started separately in this pass. No claim is made here abou
 **Repair.** This record only. **Uncertainty.** The 178 was not inspected card by card; the measure is
 the tool's, and the queue file's own header states the rule it applies, that a solution is structured
 when a `.pf` root holds at least one `.pf-step`. Not read for this record: the list of 178 card ids.
+
+## 2026-11-19: Queue C is empty — no problem card in the corpus lacks a solution — and the report check's five sections are all but one obtained
+
+**What ran.** `QUALC_PARALLEL_WORKERS=2 ./.venv/bin/python tools/unsolved_queue.py`, the generator of
+`queues/C-unsolved-cards.md`. It finished with exit status 0 in 5 min 43 s and reported the queue file
+**up to date**, so the file on disk is the current measurement: **0 problem cards have no solution
+section**, which agrees with the count that the prose-only measure reports from the same parse,
+12,429 problem cards all of which hold one. The queue file is 16 lines and is that header; the
+generator wrote nothing, which is its own confirmation.
+
+**The report check's five sections, each obtained on its own.** The per-card completeness sweep,
+14,412 files scanned with 0 issues; the provenance href scan, 653 collections and 716 hrefs with 0
+findings on the five offline checks; the prose-only measure, 178 of 12,429; Queue C, 0; and Queue D,
+which is written by the same run as the prose measure. What is not obtained is the report's single
+run, which dies with exit 137 at four to five minutes at both eight and two Pandoc workers, and two
+things deliberately not run: `check_dead_provenance_hrefs`, which fetches 44 third-party URLs, and
+nothing else. So the corpus is green on every section of that report that has been measured, and the
+failure belongs to the one script rather than to the corpus.
+
+**Repair.** This record only. **Uncertainty.** The four counts above are the tools'; the 178 was not
+inspected card by card and the 12,429 was not either. Not run, as above: the dead-href fetch. Not
+read for this record: any card file.
