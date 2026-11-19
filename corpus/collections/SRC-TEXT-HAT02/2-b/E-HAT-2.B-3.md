@@ -138,6 +138,28 @@ audit:
     applying a result cited in another paragraph. The three case analyses are of the second kind.
     Checked: that the paragraphs naming Alexander duality, Mayer--Vietoris and Invariance of Domain
     carry their pages, and that the remark names each input. Not changed: any argument.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own steps. One defect found and repaired, in
+    step `#k0`, the case $k=0$; the step's statement is unchanged and what was rewritten is its
+    proof. The step defined $\rho(x)=p+(x-p)/\abs{x-p}$ and said it takes
+    values in $S^{n-1}$ "because $\abs{\rho(x)-p}=1$": that norm is one, so $\rho$ lands on the
+    sphere of radius one about $p$, which is $S^{n-1}$ only when $p=0$, and $\rho$ fixes
+    $S^{n-1}$ pointwise only in that case as well, so neither of the two identities the step used
+    held as written. The step now uses the radial projection from $p$ onto $\partial D^{n}$ — the
+    point where the ray from $p$ through $x$ meets the sphere, given by the positive root of the
+    quadratic $\abs{p+s(x-p)}=1$, continuous because that root is — which is a retraction of
+    $D^{n}\setminus\{p\}$ onto $S^{n-1}$, and the straight-line homotopy $H_t(x)=p+((1-t)+t\,s(x-p))(x-p)$,
+    which stays in $D^{n}$ by convexity and avoids $p$. Checked, unchanged, in the rest of the card:
+    the cover $U_1,U_2$ of $W$ and its intersection $A\times(1/3,2/3)\simeq A$; the reduced
+    Mayer--Vietoris sequence and the map $(i_*,-i_*)$; the two Alexander-duality computations, in
+    which $\tilde H_j(A)\cong\tilde H^{n-j-2}(S^{k-1})$ is $\ZZ$ exactly for $j=n-k-1$; the
+    vanishing of $\tilde H_j(B)$ off degree $d$; the middle-degree argument, where the cokernel of
+    $(m,-m)\colon\ZZ\to\ZZ^{2}$ is $\ZZ\oplus\ZZ_m$ and exactness forces $m=\pm1$, so $i_*$ is an
+    isomorphism; and the case $k=n$ through Invariance of Domain. Not claimed: a published solution
+    of Exercise 2.B.3, none having been located.
 
 ---
 
@@ -157,7 +179,21 @@ The proof is the route the exercise's printed hint names, with the two complemen
 If $k=0$ then the inclusion $S^{n-1}\setminus S\to D^{n}\setminus D$ is a homotopy equivalence.
 
 ::: pf-proof
-For $k=0$ the pair $(D,S)$ is a point of the interior of $D^{n}$, so $D=\{p\}$ with $p\in\operatorname{int}D^{n}$ and $S=\varnothing$; thus $S^{n-1}\setminus S=S^{n-1}$ and $D^{n}\setminus D=D^{n}\setminus\{p\}$. Let $\rho(x)=p+(x-p)/\abs{x-p}$ be the radial projection from $p$; it is defined on $D^{n}\setminus\{p\}$, where $x\neq p$, and takes values in $S^{n-1}$ because $\abs{\rho(x)-p}=1$. For $x\in S^{n-1}$ one has $\rho(x)=x$, so $\rho$ composed with the inclusion is the identity of $S^{n-1}$; and the composite inclusion-then-$\rho$ is homotopic to the identity of $D^{n}\setminus\{p\}$ through the homotopy $H_{t}(x)=p+(1-t)(x-p)+t\,(x-p)/\abs{x-p}$, which is continuous because $x\neq p$ on the whole space, starts at the identity and ends at $\rho$. So $\rho$ is a homotopy inverse of the inclusion, which is therefore a homotopy equivalence and induces an isomorphism on homology.
+For $k=0$ the pair $(D,S)$ is a point of the interior of $D^{n}$, so $D=\{p\}$ with $p\in\operatorname{int}D^{n}$ and $S=\varnothing$; thus $S^{n-1}\setminus S=S^{n-1}$ and $D^{n}\setminus D=D^{n}\setminus\{p\}$.
+
+Let $\rho(x)$ be the point in which the ray $\{p+s(x-p):s\geq0\}$ meets $S^{n-1}$. The ray meets the sphere exactly once, at the parameter
+$$
+s(x-p)=\frac{-p\cdot(x-p)+\sqrt{(p\cdot(x-p))^{2}+(1-\abs{p}^{2})\abs{x-p}^{2}}}{\abs{x-p}^{2}},
+$$
+which is positive because $1-\abs{p}^{2}>0$ and $\abs{x-p}>0$, and which is continuous on $D^{n}\setminus\{p\}$ because $x-p\neq0$ there; so $\rho(x)=p+s(x-p)(x-p)$ is a continuous map of $D^{n}\setminus\{p\}$ into $S^{n-1}$. For $x\in S^{n-1}$ the point $x$ itself lies on the ray at parameter $1$ and on the sphere, so $s(x-p)=1$ and $\rho(x)=x$.
+
+Hence $\rho$ composed with the inclusion is the identity of $S^{n-1}$, and the composite inclusion-then-$\rho$ is homotopic to the identity of $D^{n}\setminus\{p\}$ through
+$$
+H_{t}(x)=p+\bigl((1-t)+t\,s(x-p)\bigr)(x-p),
+$$
+which is continuous because $x\neq p$ on the whole space and $s$ is continuous, starts at the identity, and ends at $\rho$. Each $H_t(x)$ lies on the segment between $x$ and $\rho(x)$, hence in $D^{n}$ by convexity, and at a positive parameter, hence differs from $p$. So $\rho$ is a homotopy inverse of the inclusion, which is therefore a homotopy equivalence and induces an isomorphism on homology.
+
+The projection $p+(x-p)/\abs{x-p}$ is not a substitute for $\rho$ when $p\neq0$: it takes values on the sphere of radius one about $p$, which is not $S^{n-1}$ unless $p=0$.
 :::
 
 :::
