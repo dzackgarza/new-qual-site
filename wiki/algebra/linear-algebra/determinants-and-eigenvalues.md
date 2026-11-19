@@ -25,8 +25,6 @@ The page opens with the three structures its later sections read off a basis: a 
 
 [[D-BSUV4]]
 
-[[E-LJ7PF]]
-
 [[D-B4VTH]]
 
 [[D-GIGM2]]

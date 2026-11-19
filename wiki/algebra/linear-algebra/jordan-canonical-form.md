@@ -50,8 +50,6 @@ In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number 
 
 The generalized eigenspace of $\lambda$ is $\ker(A-\lambda I)^n$ for $n=\dim V$, the largest of the subspaces $\ker(A-\lambda I)^m$; when $\chi_A$ splits these subspaces are the primary components of $V$ as a $k[x]$-module, and they are the summands the Jordan blocks are written in.
 
-[[D-JQNJQ]]
-
 ## Problems
 
 [[E-23SLE]]

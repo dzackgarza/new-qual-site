@@ -27,8 +27,6 @@ Because a representation of a finite group splits into irreducibles, the charact
 
 [[T-YHH3M]]
 
-[[P-ZCY6S]]
-
 ## Orthogonality
 
 The orthogonality relations are the statement that the irreducible characters are orthonormal for the inner product of class functions, and the column form is what determines the last entries of a table.

@@ -91,15 +91,9 @@ If $f(A) = 0$ for a polynomial $f$, then $\min_A$ divides $f$.
 
 In each diagonalizable case, the divisor $\min_A$ of a polynomial with distinct roots in $F$ is a product of distinct linear factors.
 
-[[FT-BC6S2]]
-
 ## Consistency conditions
 
 - $\min_A$ and $\chi_A$ have the same irreducible factors.
 
 - For each eigenvalue $\lambda$, the number of Jordan blocks equals the geometric multiplicity $\dim\ker(A-\lambda I)$, and the sum of their sizes equals the algebraic multiplicity.
   The geometric multiplicity is at most the algebraic multiplicity, and $A$ is diagonalizable over $F$ if and only if $\chi_A$ splits and the two multiplicities are equal for every eigenvalue.
-
-[[L-CD6QT]]
-
-[[FT-BC6S2]]

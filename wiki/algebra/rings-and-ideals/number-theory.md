@@ -21,8 +21,6 @@ The Chinese remainder theorem splits $\ZZ/n\ZZ$ over the prime powers dividing $
 
 [[T-TTZ2Y]]
 
-[[P-BXBHJ]]
-
 ## The theorems of Euler and Fermat
 
 [[FT-BAV4D]]
