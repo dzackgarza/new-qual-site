@@ -86,7 +86,9 @@ $$
 \wp'(z) = -2\sum_{\omega\in\Lambda}{1\over (z-\omega)^3}.
 $$
 This series is invariant under $z\mapsto z+\omega$ for $\omega\in\Lambda$, since it permutes the terms.
-So $z\mapsto \wp(z+\omega)-\wp(z)$ has vanishing derivative and is a constant $c(\omega)$, and $\wp$ is even — the sum defining it pairs the term of $\omega$ with the term of $-\omega$ — so evaluating at $z = -\omega/2$ gives $c(\omega) = \wp(\omega/2)-\wp(-\omega/2) = 0$.
+So $z\mapsto \wp(z+\omega)-\wp(z)$ has vanishing derivative and is a constant $c(\omega)$, and $c$ is additive on $\Lambda$: $c(\omega+\omega') = c(\omega)+c(\omega')$.
+$\wp$ is even — the sum defining it pairs the term of $\omega$ with the term of $-\omega$ — so for $\omega\in\Lambda$ with $\omega/2\notin\Lambda$, evaluating at $z = -\omega/2$ gives $c(\omega) = \wp(\omega/2)-\wp(-\omega/2) = 0$.
+Each element of a lattice basis has $\omega_i/2\notin\Lambda$, so additivity gives $c\equiv0$ on $\Lambda$.
 Hence $\wp$ is doubly periodic, and so are all its derivatives.
 :::
 
