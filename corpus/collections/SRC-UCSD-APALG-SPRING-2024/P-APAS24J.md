@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 10 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    10 of the paper's own numbered pages, is the statement the card answers, and the head of the
+    solution names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page
+    before those pages, so paper p. 10 is its page 11. Checked: the statement against the paper's text
+    layer at the page named; Molien's formula for the diagonal $\pm1$ group, giving $1/(1-t^2)^n$;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no
+    retained solution set exists for this paper to compare the argument with, and no other card of the
+    collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-19
@@ -42,6 +54,8 @@ Find the Hilbert series of the invariant ring $\CC[x_1,x_2,\ldots,x_n]^G$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 10 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 10 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
 
 The argument is the card's own; no source text or solution set is retained for it.
 
