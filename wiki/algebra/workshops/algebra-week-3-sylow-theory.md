@@ -5,33 +5,61 @@ title: "Algebra qual prep week 3: Sylow theory"
 
 # Algebra qual prep week 3: Sylow theory
 
-## Topics
+The three Sylow theorems, the counting argument they support, and the classification of the groups of small composite order — the material on [[algebra/group-actions/sylow|Sylow theory]] and [[algebra/groups/groups-of-small-order|Groups of small order]], collected for one session.
 
-- The three Sylow theorems
+## The three theorems
 
-- Criteria for a group to be abelian
+[[T-WRMBM]]
 
-- Classification:
+[[T-EF2MZ]]
 
-  - The structure theorem for finitely generated abelian groups
+[[T-3X5FF]]
 
-  - Recognizing direct and semidirect products
+## Counting before classifying
 
-  - Groups of specified orders:
+The strategy the classification problems use is to list the values of each $n_p$ the congruence and divisibility allow, then to exclude all but one by counting the nonidentity elements the Sylow subgroups contribute.
 
-    - $p$
+[[ST-DKYXZ]]
 
-    - $pq$
+[[L-DJKXL]]
 
-    - $pqr$
+## Criteria for a group to be abelian
 
-    - $p^2$
+A cyclic central quotient forces the group abelian, so for a nonabelian group the center is a proper subgroup of the wrong index.
 
-    - $p^2 q$
+[[E-O73XQ]]
 
-## Exercises
+[[P-6HPKO]]
 
-- Sketch a proof of each of the Sylow theorems.
+## Groups of specified orders
+
+[[PR-LFGHA]]
+
+[[PR-IGLFV]]
+
+[[PR-SLWTB]]
+
+[[PR-2ZOAV]]
+
+[[P-BL7XW]]
+
+[[FF-TDXQT]]
+
+## Direct and semidirect products
+
+The recognition theorems are what turn a normal Sylow subgroup and a complement into an isomorphism type.
+
+[[T-YNKCZ]]
+
+[[T-SB6AV]]
+
+[[E-R6I7G]]
+
+## The structure theorem
+
+[[D-SS34F]]
+
+[[D-JQNJQ]]
 
 ## Problems
 
