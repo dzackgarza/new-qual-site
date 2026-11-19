@@ -5338,3 +5338,15 @@ Each file has exactly one `audit:` key, its value is a list, and each of the 290
 
 **How the error happened, so it is not repeated.** The claim was written from a session note that listed three residue-4 Hatcher cards as `#123` obligations, without re-reading the list itself; the list is the authority and it names two. The check that would have caught it is one command — grep the unlocated-solution paragraph for each card id before calling it open — and it was not run before the record was committed.
 
+
+## 2026-11-19: V.2.5(c) at g≥2 is proved in every characteristic, closing #160's row for the card
+
+**Object and need.** `P-AGH525INVARIANTE` (Hartshorne V.2.5, printed p. 377) and the last part of #160's row for it: (c) for $g\ge2$ was proved only over characteristic zero, by Lange--Narasimhan's Corollary 1.2, printed p. 58, whose proof is the secant-variety dimension count.
+
+**The argument.** Let $d=-e$ with $1\le d\le g$ and fix $D$ of degree $d$. Extension classes of $0\to\OO_C\to\mathcal E\to\OO_C(D)\to0$ lie in $V=H^1(C,\OO_C(-D))$, of dimension $g-1+d$ by Riemann--Roch and Serre duality. For an effective $E$ of degree $d-1$, the classes for which $L_E\subseteq H$ are $\ker\beta_E$, of dimension $d-1$, because $\deg(K_C+D-E)=2g-1$ gives $h^0(K_C+D-E)=g$. For $d\ge2$ the bad pairs $(E,\xi)$ form a family of dimension $(d-1)+(d-2)=2d-3$ in $\PP V$; for $d=1$ the only $E$ is $0$, whose kernel is zero. Since $2d-3<g-2+d$ for $d\le g$, a general $\xi$ avoids every kernel. Part (b) makes the extension normalized, and a nonzero $\xi$ makes it indecomposable, since a splitting would realize $\OO_C$ and $\OO_C(D)$ as summands. Its determinant is $\OO_C(D)$, so $\PP(\mathcal E)$ has invariant $-d=e$. This is the avoidance argument the printed hint asks for and it is characteristic-free.
+
+**Impact.** The row is met in all four parts over an algebraically closed field of any characteristic: (a) and (b) were already characteristic-free on the card, (c) is now `s9` for $g\ge2$ and Example 2.11.6 for $g=1$, and (d) is Lange's Theorem over an arbitrary characteristic, printed pp. 267--268. Lange--Narasimhan's Corollary 1.2 remains in the remark as the characteristic-zero alternative.
+
+**Repair, 2026-11-19:** `P-AGH525INVARIANTE` in `3c9312f304`, one `source-corrected` event, the proof of step `s9`, the qed, the remark and the solution preamble; no statement changes. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH525INVARIANTE`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 12 with QED labels present and no unknown step label.
+
+**Uncertainty.** Not checked: no source outside those already on the card was read for this argument, which is the card's own; the dimension count was checked on paper, not symbolically, and no characteristic assumption is used.
