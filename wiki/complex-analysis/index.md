@@ -110,7 +110,7 @@ Three pages collect material from several chapters:
 
 - Riemann surfaces and uniformization: [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]].
 
-- $\SL_2(\RR)$ and modular forms: [[complex-analysis/conformal-maps/sl2-and-modular-forms|$\SL_2(\RR)$ and modular forms]].
+- [[complex-analysis/conformal-maps/sl2-and-modular-forms|Modular forms]] and the action of $\SL_2(\RR)$ on the upper half plane.
 
 ### References
 

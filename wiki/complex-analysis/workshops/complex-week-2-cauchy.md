@@ -15,7 +15,7 @@ title: "Complex analysis workshop week 2: Cauchy's integral formula and residues
 
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequalities]]
 
-- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Computing integrals]] — [[complex-analysis/residues-and-contours/computing-residues|residue formulas]], the [[complex-analysis/residues-and-contours/arc-estimates|$ML$-inequality]], and [[T-ZO5UU|Jordan's lemma]]
+- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Computing integrals]] — [[complex-analysis/residues-and-contours/computing-residues|residue formulas]], the [[complex-analysis/residues-and-contours/arc-estimates|ML estimate]], and [[T-ZO5UU|Jordan's lemma]]
 
 ## Review
 

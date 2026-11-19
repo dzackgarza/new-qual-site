@@ -9,7 +9,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 ## Preliminaries
 
-- $\CC$, $\DD$, $\HH$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere $\CP^1$]] and [[complex-analysis/basics/complex-arithmetic|complex arithmetic]]
+- $\CC$, $\DD$, $\HH$, $\CP^1$: [[complex-analysis/basics/the-riemann-sphere|the Riemann sphere]] and [[complex-analysis/basics/complex-arithmetic|complex arithmetic]]
 - [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]]
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
@@ -71,7 +71,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 ## Further topics
 
-- [[complex-analysis/conformal-maps/sl2-and-modular-forms|$\SL_2(\RR)$, modular forms, and elliptic curves]]
+- $\SL_2(\RR)$, modular forms, and elliptic curves: [[complex-analysis/conformal-maps/sl2-and-modular-forms|modular forms]]
 - [[complex-analysis/conformal-maps/the-hyperbolic-metric|The hyperbolic metric]]
 - [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces]] and [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization#Uniformization|uniformization]]
 - [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]

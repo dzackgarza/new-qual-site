@@ -25,4 +25,4 @@ Conformal maps between plane regions, the automorphism group of the disc, normal
 
 - [[complex-analysis/conformal-maps/riemann-surfaces-and-uniformization|Riemann surfaces and uniformization]], the three simply connected models and the surfaces they cover.
 
-- [[complex-analysis/conformal-maps/sl2-and-modular-forms|$\SL_2(\RR)$ and modular forms]], the action on $\HH$, Eisenstein series, and the fundamental domain.
+- [[complex-analysis/conformal-maps/sl2-and-modular-forms|Modular forms]], the action of $\SL_2(\RR)$ on $\HH$, Eisenstein series, and the fundamental domain.
