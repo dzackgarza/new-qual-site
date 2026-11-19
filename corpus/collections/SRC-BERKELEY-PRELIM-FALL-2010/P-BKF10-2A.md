@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded. The argument is Problem 2A, printed p. 1 of the packet, the packet the collection retains,
+    transcribed as the paragraph now at the head of the solution says; the card's addition is the
+    step structure and the details named there, and no claim of the problem changes. Checked: the
+    packet read in its text layer at the pages named, the card's steps compared with it, and
+    `qualc.authoring check` on the card. Not checked: no other card of the collection in this pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 2A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -29,6 +38,8 @@ Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x
 :::
 
 ::: {.solution}
+
+The argument is Problem 2A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 1 of that file, transcribed: the functions $x\mapsto x^k$ form an infinite list of functions from the finite set $R$ to itself, so two of them coincide by the pigeonhole principle, and that equality is the required $x^m=x^n$. What the card adds is the step structure and the explicit $f_k$, not the argument.
 
 ::: pf
 
