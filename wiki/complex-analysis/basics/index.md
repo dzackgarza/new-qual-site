@@ -17,4 +17,6 @@ order: 12
 
 - [[analytic-nt|Summation by parts]] — summation by parts, Dirichlet's test, and Abel's test for power series.
 
+- [[uniform-convergence|Uniform convergence]] — uniform continuity and Heine--Cantor, uniform convergence of sequences and series, and compactness in function spaces.
+
 Holomorphic functions are treated in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].

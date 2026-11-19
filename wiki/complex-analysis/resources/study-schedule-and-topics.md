@@ -13,14 +13,14 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 - [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]]
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
-- Uniform continuity, uniform differentiability, uniform convergence, and the Heine--Cantor theorem
+- [[complex-analysis/basics/uniform-convergence|Uniform continuity, uniform convergence, and the Heine--Cantor theorem]]
 - [[complex-analysis/basics/calculus-preliminaries|Calculus]] — the [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|implicit and inverse function theorems]], [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]], and [[complex-analysis/basics/calculus-preliminaries#Stokes' theorem|Stokes' theorem]]
 
 ## Differentiation and integration
 
 - The Laplace equation and [[complex-analysis/holomorphic-functions/harmonic-functions|harmonic functions]]
 - [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]]
-- Contours, parameterizations, and primitives
+- [[complex-analysis/cauchy-theory/contours-and-primitives|Contours, parameterizations, and primitives]]
 - [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
 

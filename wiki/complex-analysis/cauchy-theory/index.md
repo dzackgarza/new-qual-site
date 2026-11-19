@@ -10,6 +10,8 @@ topics:
 
 Cauchy's theorem, the Cauchy integral formula, and their consequences for holomorphic functions.
 
+- [[complex-analysis/cauchy-theory/contours-and-primitives|Contours and primitives]], contour integrals, the ML estimate, and when an integral depends only on the endpoints.
+
 - [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], the hypotheses under which a holomorphic function is constant.
 
 - [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]] and contour integrals.
