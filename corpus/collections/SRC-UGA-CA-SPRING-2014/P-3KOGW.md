@@ -12,6 +12,28 @@ classification:
   - Entire Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/Complex_Analysis_Spring_2014_extracted.md,
+    problem 1: the mean-square identity for a power series converging in |z| < R,
+    and the instruction to deduce Liouville's theorem, whose statement the paper
+    prints as "if f is entire and bounded then f is constant". The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Both parts are correct. On a closed disk inside the radius of convergence the
+    series converges absolutely and uniformly, so the double series for the
+    squared modulus converges uniformly in theta and may be integrated term by
+    term; the exponentials are orthogonal, so only the diagonal terms survive and
+    the identity follows. For Liouville, the identity holds for an entire
+    function at every radius, and bounding the left side by the square of the
+    bound makes each coefficient with positive index satisfy |c_n|^2 r^{2n} at
+    most M^2 for every r, which forces it to vanish; hence the function equals its
+    constant term. Nothing was changed.
 ---
 
 ::: {.problem}
