@@ -41,7 +41,7 @@ The examination asks for the statement, so what follows states it and records th
 ::: pf
 
 ::: {.pf-step #hypotheses}
-The hypotheses are: $f_{1}, f_{2}, \\ldots \\colon X \\to [0,\\infty]$ are measurable, $0 \\le f_{1}(x) \\le f_{2}(x) \\le \\cdots$ for every $x \\in X$, and $f_{n}(x) \\to f(x)$ for almost every $x \\in X$.
+The hypotheses are: $f_{1}, f_{2}, \ldots \colon X \to [0,\infty]$ are measurable, $0 \le f_{1}(x) \le f_{2}(x) \le \cdots$ for every $x \in X$, and $f_{n}(x) \to f(x)$ for almost every $x \in X$.
 
 ::: pf-proof
 These are the three conditions the theorem assumes, recorded here as the hypothesis of the statement.
@@ -54,37 +54,37 @@ These are the three conditions the theorem assumes, recorded here as the hypothe
 The limit function $f$ may be taken measurable.
 
 ::: pf-proof
-Put $g(x) \\coloneqq \\lim_{n}f_{n}(x)$ where the limit exists in $[0,\\infty]$ and $g(x) \\coloneqq 0$ elsewhere. The set where the limit fails is null, and on the set where it exists $g = \\limsup_{n}f_{n}$ is measurable because each $f_{n}$ is; a function differing from a measurable function on a null set is measurable, and $f = g$ almost everywhere.
+Put $g(x) \coloneqq \lim_{n}f_{n}(x)$ where the limit exists in $[0,\infty]$ and $g(x) \coloneqq 0$ elsewhere. The set where the limit fails is null, and on the set where it exists $g = \limsup_{n}f_{n}$ is measurable because each $f_{n}$ is; a function differing from a measurable function on a null set is measurable, and $f = g$ almost everywhere.
 
 :::
 
 :::
 
 ::: {.pf-step #monotone-integrals}
-The sequence $\\int f_{n}\\,d\\mu$ increases, so $L \\coloneqq \\lim_{n}\\int f_{n}\\,d\\mu = \\sup_{n}\\int f_{n}\\,d\\mu \\in [0,\\infty]$ exists.
+The sequence $\int f_{n}\\,d\mu$ increases, so $L \coloneqq \lim_{n}\int f_{n}\\,d\mu = \sup_{n}\int f_{n}\\,d\mu \in [0,\infty]$ exists.
 
 ::: pf-proof
-$f_{n} \\le f_{n+1}$ pointwise by hypothesis, and the integral is monotone: $h \\le k$ pointwise implies $\\int h \\le \\int k$, since $\\int k = \\int h + \\int (k-h)$ and the last integral is $\\ge 0$. An increasing sequence in $[0,\\infty]$ has a limit there.
+$f_{n} \le f_{n+1}$ pointwise by hypothesis, and the integral is monotone: $h \le k$ pointwise implies $\int h \le \int k$, since $\int k = \int h + \int (k-h)$ and the last integral is $\ge 0$. An increasing sequence in $[0,\infty]$ has a limit there.
 
 :::
 
 :::
 
 ::: {.pf-step #two-bounds}
-$L \\le \\int f\\,d\\mu$ and $\\int f\\,d\\mu \\le L$.
+$L \le \int f\\,d\mu$ and $\int f\\,d\mu \le L$.
 
 ::: pf-proof
-For the first, $f_{n} \\le f$ holds almost everywhere for every $n$, because the sequence increases to $f$ wherever it converges; monotonicity of the integral and the vanishing of integrals over null sets give $\\int f_{n} \\le \\int f$, hence $L \\le \\int f$. For the second, Fatou's lemma applied to the sequence $(f_{n})$, which is nonnegative and measurable, gives $\\int \\liminf_{n} f_{n}\\,d\\mu \\le \\liminf_{n}\\int f_{n}\\,d\\mu$; here $\\liminf_{n}f_{n} = f$ almost everywhere and $\\liminf_{n}\\int f_{n} = L$, so $\\int f \\le L$. Fatou's lemma is used rather than the monotone convergence theorem itself, so the argument does not assume what it proves.
+For the first, $f_{n} \le f$ holds almost everywhere for every $n$, because the sequence increases to $f$ wherever it converges; monotonicity of the integral and the vanishing of integrals over null sets give $\int f_{n} \le \int f$, hence $L \le \int f$. For the second, Fatou's lemma applied to the sequence $(f_{n})$, which is nonnegative and measurable, gives $\int \liminf_{n} f_{n}\\,d\mu \le \liminf_{n}\int f_{n}\\,d\mu$; here $\liminf_{n}f_{n} = f$ almost everywhere and $\liminf_{n}\int f_{n} = L$, so $\int f \le L$. Fatou's lemma is used rather than the monotone convergence theorem itself, so the argument does not assume what it proves.
 
 :::
 
 :::
 
 ::: pf-step
-Lebesgue's monotone convergence theorem: under the hypotheses of step [](#hypotheses){.pf-ref}, $f$ is measurable and $\\int_{X} f\\,d\\mu = \\lim_{n\\to\\infty}\\int_{X} f_{n}\\,d\\mu$, both sides allowed to be $+\\infty$.
+Lebesgue's monotone convergence theorem: under the hypotheses of step [](#hypotheses){.pf-ref}, $f$ is measurable and $\int_{X} f\\,d\mu = \lim_{n\to\infty}\int_{X} f_{n}\\,d\mu$, both sides allowed to be $+\infty$.
 
 ::: pf-proof
-Measurability is step [](#measurable){.pf-ref}. Steps [](#monotone-integrals){.pf-ref} and [](#two-bounds){.pf-ref} give $L \\le \\int f$ and $\\int f \\le L$, so the two sides of the displayed equality are equal in $[0,\\infty]$, which is the assertion.
+Measurability is step [](#measurable){.pf-ref}. Steps [](#monotone-integrals){.pf-ref} and [](#two-bounds){.pf-ref} give $L \le \int f$ and $\int f \le L$, so the two sides of the displayed equality are equal in $[0,\infty]$, which is the assertion.
 
 :::
 
