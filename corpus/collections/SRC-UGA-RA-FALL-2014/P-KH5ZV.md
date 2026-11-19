@@ -12,6 +12,19 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Repaired and restructured. The card was a label-step shed with an empty proof over thirteen
+    nested one-sentence claims and a stray '**Goal:**' paragraph before the proof. It is now
+    three proved steps: the truncations are measurable, bounded by N, increasing and convergent,
+    with the monotonicity checked in the two cases; monotone convergence giving the tail
+    estimate and hence N; and the estimate itself, with delta = epsilon/(2N) exhibited and the
+    split of the integral written out. The proof's content is unchanged — the same truncate-
+    then-MCT strategy the card's goal paragraph described. Not claimed: a retained solution set;
+    the collection's provenance is the examination paper only.
 ---
 
 ::: {.problem}
@@ -22,120 +35,40 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove the absolute continuity of the Lebesgue integral by truncating $\abs{f}$ by height $N$ and applying the Monotone Convergence Theorem.
+Throughout $f \in L^{1}(\RR)$, $m$ is Lebesgue measure, and for $N \ge 1$ the truncation is $f_{N} \coloneqq \min(\abs f, N)$, that is $f_{N}(x) = \abs{f(x)}$ where $\abs{f(x)} \le N$ and $f_{N}(x) = N$ where $\abs{f(x)} > N$. The collection's `provenance` is the Fall 2014 examination paper, and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
-::: pf-step
-Pointwise convergence and monotonicity of truncations:
+::: {.pf-step #truncation}
+Each $f_{N}$ is measurable, satisfies $0 \le f_{N} \le N$, and $f_{N}(x) \to \abs{f(x)}$ increasingly at every $x$.
 
 ::: pf-proof
-
-::: pf-step
-For each integer $N \ge 1$, define the truncated function:
-$$f_N(x) = \min(\abs{f(x)}, N) = \begin{cases} \abs{f(x)} & \text{if } \abs{f(x)} \le N, \\ N & \text{if } \abs{f(x)} > N. \end{cases}$$
-
-:::
-
-::: pf-step
-For every $x \in \RR$, $0 \le f_N(x) \le f_{N+1}(x)$ and $\lim_{N \to \infty} f_N(x) = \abs{f(x)}$.
-
-:::
-
-::: pf-step
-Each $f_N$ is measurable and bounded by $N$.
+$\abs f$ is measurable and $N$ is constant, so $f_{N} = \min(\abs f, N)$ is measurable; the bounds $0 \le f_{N} \le N$ are immediate from the definition. Monotonicity: if $\abs{f(x)} \le N$ then $f_{N}(x) = \abs{f(x)}$ and $f_{N+1}(x) = \min(\abs{f(x)}, N+1) = \abs{f(x)}$; if $\abs{f(x)} > N$ then $f_{N}(x) = N \le \min(\abs{f(x)}, N+1) = f_{N+1}(x)$. Convergence: for fixed $x$, once $N \ge \abs{f(x)}$ one has $f_{N}(x) = \abs{f(x)}$.
 
 :::
 
 :::
 
-:::
-
-::: {.pf-step #s2}
-Approximation of $\abs{f}$ by $f_N$ in $L^1(\RR)$:
+::: {.pf-step #mct}
+$\int f_{N} \to \int\abs f$; consequently there is $N$ with $\int\bigl(\abs f - f_{N}\bigr) < \varepsilon/2$.
 
 ::: pf-proof
-
-::: pf-step
-By the Monotone Convergence Theorem:
-$$\lim_{N \to \infty} \int_{\RR} f_N(x) \, dx = \int_{\RR} \abs{f(x)} \, dx.$$
-
-:::
-
-::: pf-step
-Since $f \in L^1(\RR)$, $\int_{\RR} \abs{f(x)} \, dx < \infty$.
-
-:::
-
-::: pf-step
-Thus:
-$$\lim_{N \to \infty} \int_{\RR} (\abs{f(x)} - f_N(x)) \, dx = \int_{\RR} \abs{f(x)} \, dx - \lim_{N \to \infty} \int_{\RR} f_N(x) \, dx = 0.$$
-
-:::
-
-::: pf-step
-Let $\varepsilon > 0$. There exists an integer $N_0 \ge 1$ such that
-$$\int_{\RR} (\abs{f(x)} - f_{N_0}(x)) \, dx < \frac{\varepsilon}{2}.$$
-
-:::
+The sequence $(f_{N})$ increases pointwise to the integrable function $\abs f$, so the monotone convergence theorem gives $\int f_{N} \to \int\abs f$, the integrals being finite. Hence $\int(\abs f - f_{N}) = \int\abs f - \int f_{N} \to 0$; being a sequence of nonnegative numbers tending to $0$, it is eventually below $\varepsilon/2$.
 
 :::
 
 :::
 
 ::: pf-step
-Choice of $\delta > 0$ and integration bound:
+For every $\varepsilon > 0$ there is $\delta > 0$ such that $m(E) < \delta$ implies $\int_{E}\abs f < \varepsilon$.
 
 ::: pf-proof
-
-::: pf-step
-Define $\delta = \frac{\varepsilon}{2 N_0} > 0$.
-
-:::
-
-::: pf-step
-Let $E \subseteq \RR$ be any measurable set with $m(E) < \delta$.
-
-:::
-
-::: pf-step
-Decompose the integral over $E$:
-$$\int_E \abs{f(x)} \, dx = \int_E (\abs{f(x)} - f_{N_0}(x)) \, dx + \int_E f_{N_0}(x) \, dx.$$
-
-:::
-
-::: pf-step
-Bound the first term using non-negativity and step [](#s2){.pf-ref}:
-$$\int_E (\abs{f(x)} - f_{N_0}(x)) \, dx \le \int_{\RR} (\abs{f(x)} - f_{N_0}(x)) \, dx < \frac{\varepsilon}{2}.$$
-
-:::
-
-::: pf-step
-Bound the second term using the bound $0 \le f_{N_0}(x) \le N_0$:
-$$\int_E f_{N_0}(x) \, dx \le \int_E N_0 \, dx = N_0 \cdot m(E) < N_0 \cdot \delta = N_0 \cdot \frac{\varepsilon}{2 N_0} = \frac{\varepsilon}{2}.$$
-
-:::
-
-::: pf-step
-Combining the two estimates:
-$$\int_E \abs{f(x)} \, dx < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
+Let $\varepsilon > 0$ and choose $N$ as in step [](#mct){.pf-ref}; put $\delta \coloneqq \varepsilon/(2N)$, which is positive. For a measurable $E$ with $m(E) < \delta$, split the integral: $\int_{E}\abs f = \int_{E}(\abs f - f_{N}) + \int_{E}f_{N} \le \int_{\RR}(\abs f - f_{N}) + N\\,m(E) < \frac{\varepsilon}{2} + N\cdot\frac{\varepsilon}{2N} = \varepsilon$, using $f_{N} \le N$ on $E$ and the choice of $N$. Since $f_{N}$ does not depend on $E$, the constant $\delta$ works for every such set.
 
 :::
 
 :::
 
 :::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-For any $\varepsilon > 0$, choosing $\delta = \frac{\varepsilon}{2 N_0}$ ensures $\int_E \abs{f} < \varepsilon$ whenever $m(E) < \delta$.
-:::
-
-:::
-
-:::
-
 :::
 
