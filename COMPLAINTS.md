@@ -7383,3 +7383,41 @@ homology check is what makes them credible. No certificate covers any of these c
 **Checks.** `.scratch/report_check.py` on each card, 0 diagnostics; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels intact — `E-HK-YECG` now numbers $1$; $1,2$; $1$–$4$ across its three parts; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** `E-HK-9X41`, §1.3's remaining card, is not residue 5 and was not read. The six cards of the eighth item that name Hungerford as their book remain unrepaired, being residues 3 and 4. Nothing here re-derives the printed exercise text beyond the statements.
+
+## 2026-11-19: Yang's §V.1 entries begin to be named — 5.1.8 and 5.1.9 at printed p. 101, and eighteen Chapter V cards still without him
+
+**Object and need.** `P-AGH518COHOMCLASS` (V.1.8, printed pp. 367--368) and `P-AGH519HODGEINDEX`
+(V.1.9, printed p. 368), both of which named Egbert alone.
+
+**V.1.9, printed p. 101.** Yang gives both parts of the hint. (a) $E=(H^2)D-(H\cdot D)H$ has
+$E\cdot H=0$, so Hodge index gives $E^2\le0$, and
+$E^2=(H^2)^2D^2-(H^2)(H\cdot D)^2$ divided by $H^2>0$ is $H^2D^2\le(H\cdot D)^2$, with equality only
+for $D$ numerically zero. (b) on $C\times C'$ with $H=l+m$, $E=l-m$, $H^2=2$, $E^2=-2$, $H\cdot E=0$,
+the class $D'=-4D+2(a+b)H-2(a-b)E$ has $D'\cdot H=0$ and $D'^2=16D^2-32ab$, so $D^2\le2ab$ with
+equality only for $D\equiv bl+am$. Both are Egbert's arguments; the card's steps carry the same two
+computations.
+
+**V.1.8, printed p. 101.** Part (a) is the commutative square with the trace map on $D$:
+$c_D(F)=(\deg F)\cdot1$ by (III, 3.7.4), so $\langle c(D),c(E)\rangle=\deg_D(\OO(E)\otimes\OO_D)=D\cdot E$;
+part (b) is the linear-independence count: a relation $\sum_ki_kc(D_k)=0$ tested against $c(E)$ for
+every divisor $E$ gives $(\sum_ki_kD_k)\cdot E=0$, so numeric independence forces every $i_k=0$ and
+$\Num X$ embeds in the dual of the finite-dimensional $H^1(X,\Omega_X)$.
+
+**What this pass did not read.** The Hartshorne pages 367 and 368 carry no text layer; the earlier
+events on both cards record them as read at 110 dpi renders, and this pass compared Yang's entries with
+the statements the cards carry rather than reopening them. The audit events say so.
+
+**The remaining sweep, counted.** Of the 63 cards of `SRC-TEXT-HART77` whose index comments place them
+in Chapter V, **18 still do not mention Yang**: V.1.1, V.1.2, V.1.3, V.1.5, V.1.6, V.1.7, V.1.10,
+V.2.4, V.2.6, V.2.7, V.2.9, V.2.11, V.2.14, V.2.16, V.3.2, V.3.3 (sixteen listed; the count of
+eighteen includes V.1.8 and V.1.9 as they stood before this pass), and his set covers §V.1 to §V.6 on
+printed pp. 100--115, so each of them has an entry to check. That is the next pass's queue, in this
+order or another.
+
+**Repair.** `P-AGH519HODGEINDEX` in `49936d73c2` and `P-AGH518COHOMCLASS` in `f34b71b427`, one commit
+each; this record in the COMPLAINTS commit that carries it. No step, statement or hypothesis of either
+card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.1.8 and 5.1.9 at printed p. 101, rendered as
+page images. Not read: the other sixteen cards' Yang entries; Hartshorne's printed pp. 367--368 in this
+pass; and the printed books themselves.
