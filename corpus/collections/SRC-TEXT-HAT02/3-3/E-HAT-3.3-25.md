@@ -43,6 +43,20 @@ audit:
     not Ext(H_k(M),Z). Poincare duality then gives H_k(M), and Hom of a finitely generated group
     into Z is free (in particular torsionfree).
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 25 of §3.3, printed p. 259, and
+    against the transcription's source, Guanyu Li, Exercise 3.3.9 (Hatcher 3.3 #25), printed p. 59 of
+    `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The printed page is added, the card having had
+    none. Checked: $H_{k-1}(M)$ finitely generated and torsionfree is free, so
+    $\operatorname{Ext}(H_{k-1}(M),\ZZ)=0$; the universal coefficient sequence then gives
+    $H^k(M;\ZZ)\cong\operatorname{Hom}(H_k(M),\ZZ)$, free because $H_k(M)$ is finitely generated;
+    and Poincaré duality on the closed orientable $2k$-manifold gives $H^k(M)\cong H_k(M)$, so $H_k$
+    is free and in particular torsionfree. The source's slip — writing $\operatorname{Ext}(H_k(M),\ZZ)$
+    for the surviving term after its Ext vanishes — is recorded on the card and not reproduced. No
+    defect.
 ---
 
 ::: {.problem}
@@ -50,6 +64,8 @@ Show that if a closed orientable manifold $M$ of dimension $2k$ has $H_{k-1}(M; 
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 25, printed p. 259.
+
 Since $M$ is a closed manifold, all its homology groups are finitely generated. Thus the hypothesis that $H_{k-1}(M;\ZZ)$ is torsionfree implies that it is free abelian, and therefore
 $$
 \operatorname{Ext}(H_{k-1}(M;\ZZ),\ZZ)=0.
