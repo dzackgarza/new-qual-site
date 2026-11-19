@@ -13,6 +13,20 @@ review: draft
 
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 1 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: the statement and the
+    demand that each subfield be exhibited as a simple extension with a justified primitive element
+    against the paper's text layer at the page named; the list of four subfields and the two
+    primitive elements read through (the sums a and b with a+b = -1 and ab = 2, giving
+    (a-b)^2 = -7); `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution exists to compare the argument with, and no other card
+    of the collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared with Problem 4 of the official UCSD Spring 2011 algebra qualifying exam.
@@ -32,6 +46,9 @@ Express each subfield in the form $\QQ(\alpha)$ for some $\alpha \in \CC$, where
 :::
 
 ::: {.solution}
+
+The problem is Problem 4 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 1 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the list of the four subfields together with the primitive elements the question demands — $\zeta+\zeta^{-1}$ for the real cubic subfield, and $a-b$ with $(a-b)^2=-7$ for the quadratic one — and the verification that each of them generates the field claimed for it.
+
 Let $\zeta=e^{2\pi i/7}$.
 Since
 $$
