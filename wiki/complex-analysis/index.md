@@ -44,7 +44,7 @@ Three pages collect material from several chapters:
 
 ### Calculus and undergraduate analysis
 
-> References: [@Rud76, chaps. 2--5, 7, 9].
+> References: [@Rud76, chaps. 2--7, 9].
 
 - Continuity and differentiation in one and several real variables: [[real-analysis/undergraduate/continuity|continuity]] and [[real-analysis/undergraduate/differentiability|differentiability]].
 

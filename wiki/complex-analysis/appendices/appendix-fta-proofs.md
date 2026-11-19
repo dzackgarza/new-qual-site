@@ -51,7 +51,7 @@ It suffices to show that $P$ has a zero; the full count follows by induction on 
 Suppose $P$ has no zeros, so that $1/P$ is entire.
 
 Write $P(z) = z^n \qty{a_n + \frac{a_{n-1}}{z}+\cdots+\frac{a_{0}}{z^{n}}}$.
-The bracket tends to $a_n$ as $z\to\infty$, so there is $R>0$ with $\abs{P(z)} \geq B$ for $\abs z\geq R$, where $B \coloneqq \abs{a_n}R^n/2 > 0$.
+The bracket tends to $a_n$ as $z\to\infty$, so there is $R>0$ with $\abs{P(z)}\geq \frac12\abs{a_n}\abs z^n$ for $\abs z\geq R$, and then $\abs{P(z)}\geq B$ there for $B\coloneqq \frac12\abs{a_n}R^n>0$.
 On the compact disc $\abs z\leq R$ the continuous function $\abs P$ attains a minimum $A$, and $A>0$ because $P$ has no zeros.
 With $C \coloneqq \min(A, B)$, $\abs{P(z)}\geq C$ on $\CC$, so $\abs{1/P(z)}\leq 1/C$ on $\CC$.
 By [[T-QHIHJ|Liouville's theorem]] $1/P$ is constant, so $P$ is constant, a contradiction.

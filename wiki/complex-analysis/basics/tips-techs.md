@@ -128,7 +128,7 @@ Let $f$ be holomorphic on a punctured disc about $z_0$.
 - $z_0$ is essential if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
   Two sequences $z_k\to z_0$ along which $f$ has different limits show this.
 
-A meromorphic function $f$ and its derivative $f'$ have the same poles.
+A meromorphic function $f$ and its derivative $f'$ have the same poles, and at such a pole the order of $f'$ is one more than the order of $f$.
 
 :::
 

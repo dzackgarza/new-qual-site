@@ -25,6 +25,8 @@ Then for every $n\ge0$,
 $$
 \abs{f^{(n)}(z_0)}\le\frac{n!\,M}{R^n}.
 $$
+
+This is [@SS03, Corollary 4.3 (p. 48)], where $M$ is written as the supremum of $\abs f$ on the boundary circle.
 :::
 
 ::: {.remark title="Variations"}
