@@ -13,6 +13,31 @@ classification:
   - Projective Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained exam assets/attachments/SP05_290_Topology_Qual_extracted.md,
+    problem 3: part (a) asks for the integral and mod 2 cohomology and homology
+    of RP^2 x RP^3 and for orientability, part (b) for the action of the
+    Bockstein beta_1 on mod 2 cohomology. The card agrees.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. Kunneth over Z for the two factors gives Z in
+    degree 0, (Z/2)^2 in degree 1, Z/2 in degree 2 from H_1 tensor H_1, Z plus
+    Z/2 in degree 3 from the tensor term H_0 tensor H_3 and Tor(H_1, H_1), Z/2
+    in degree 4 from H_1 tensor H_3, and nothing in degree 5. The universal
+    coefficient theorem then gives Z, 0, (Z/2)^2, Z plus Z/2, Z/2, Z/2, which is
+    what the card lists. With field coefficients the Kunneth theorem is a ring
+    isomorphism, and F_2[x]/(x^3) tensor F_2[y]/(y^4) has the Betti numbers
+    1,2,3,3,2,1 the card gives. H_5 vanishes, so the closed five-manifold is not
+    orientable. The Bockstein of 0 -> Z/2 -> Z/4 -> Z/2 -> 0 is Sq^1, which sends
+    each degree-one generator to its square and acts on monomials by the Cartan
+    formula with Sq^1(t^r) = r t^(r+1) mod 2, so the displayed formula is right,
+    including the vanishing beyond x^2 and y^3. Nothing was changed.
 ---
 
 ::: {.problem}
