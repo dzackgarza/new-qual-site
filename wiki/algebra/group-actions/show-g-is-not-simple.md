@@ -18,12 +18,11 @@ n_p \equiv 1 \pmod p, \qquad n_p \divides m.
 $$
 If $n_p = 1$, the unique Sylow $p$-subgroup $P$ is normal: for $g\in G$, $gP\inverseof{g}$ is again a Sylow $p$-subgroup, so $gP\inverseof{g} = P$.
 
-Groups of prime-power order:
+For a prime-power order the answer is always no except at the primes: a group of order $p$ is simple, and a group of order $p^k$ with $k\geq 2$ has a proper nontrivial normal subgroup, the center when the group is nonabelian and a subgroup of order $p$ when it is abelian.
 
-- If $n$ is prime, $G$ is cyclic and simple.
+[[P-NZOMZ]]
 
-- If $n = p^k$ with $k\geq 2$, then $Z(G) \neq 1$ by the class equation.
-  If $Z(G)\neq G$, then $Z(G)$ is a proper nontrivial normal subgroup; if $Z(G)=G$, then $G$ is abelian and every subgroup of order $p$ is proper, nontrivial, and normal.
+[[T-4CDTT]]
 
 ## A Sylow count with $n_p = 1$
 
@@ -61,8 +60,7 @@ If $n_2 = 1$, the Sylow $2$-subgroup is normal.
 
 ## Index the smallest prime
 
-If $H \leq G$ has index $q$, the smallest prime dividing $\size G$, then $H$ is normal in $G$.
-In particular, a subgroup of index $2$ is normal.
+A subgroup of index the smallest prime dividing $\size G$ is normal, so a subgroup of index $2$ is normal and the search for a proper nontrivial normal subgroup ends there.
 
 [[PR-PADL7]]
 
@@ -98,5 +96,10 @@ This is the action of $G$ on the cosets of $N_G(P)$.
 
 ## Simple groups
 
-The groups of prime order and the alternating groups $A_n$ for $n\geq 5$ are simple.
-The group $A_5$ of order $60$ is the smallest nonabelian simple group, and every simple group of order $60$ is isomorphic to $A_5$.
+The groups of prime order and the alternating groups $A_n$ for $n\geq 5$ are the simple groups these arguments are tested against, and $A_5$ of order $60$ is the smallest nonabelian one.
+
+[[P-SPA3I]]
+
+[[P-HPYC5]]
+
+[[P-MMAQ-RQA4XXNOF3]]
