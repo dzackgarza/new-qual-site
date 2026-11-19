@@ -30,6 +30,16 @@ audit:
     open cover with no countable subcover gives a family of closed sets with the countable intersection
     property and empty intersection. No correction was needed; the proof uses closedness only in the
     converse direction, where the exercise's arbitrary subsets are replaced by their closures.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured as a Lamport proof of the argument already on the card, whose two directions
+    are correct; the audit event of 2026-11-10 records that no complete published solution was
+    located and that the proof was checked against Munkres §37 Exercise 2, printed p. 235.
+    Added: closedness of the complement sets is now used explicitly in the converse, which
+    replaces the arbitrary subsets of the hypothesis by their closures; and the derivation of
+    the countable subcover from Lindelöfness is written out rather than summarised.
 ---
 
 ::: {.exercise}
@@ -45,41 +55,49 @@ is nonempty.
 :::
 
 ::: {.solution}
-Assume first that $X$ is Lindelöf, and let $\mathcal A$ have the countable intersection property. Suppose
-$$
-\bigcap_{A\in\mathcal A}\overline A=\varnothing.
-$$
-Then the open sets
-$$
-X\setminus\overline A,\qquad A\in\mathcal A,
-$$
-cover $X$. Lindelöfness gives a countable subcover
-$$
-X=\bigcup_{n=1}^\infty (X\setminus\overline{A_n}).
-$$
-Taking complements,
-$$
-\bigcap_{n=1}^\infty\overline{A_n}=\varnothing,
-$$
-so certainly $\bigcap_{n=1}^\infty A_n=\varnothing$, contradicting the countable intersection property. Hence the intersection of all closures is nonempty.
+A collection $\mathcal{A}$ of subsets of $X$ has the countable intersection property when the intersection of any countable subcollection is nonempty, and $X$ is Lindelöf when every open cover of $X$ has a countable subcover (Munkres, *Topology* (2000), §37, printed p. 235).
 
-Conversely, assume the stated closure-intersection property, and let
-$$
-\mathcal U=\{U_i:i\in I\}
-$$
-be an open cover of $X$. Suppose no countable subfamily covers $X$. Put
-$$
-A_i=X\setminus U_i.
-$$
-For every countable set of indices $i_1,i_2,\dots$, the union $U_{i_1}\cup U_{i_2}\cup\cdots$ is not all of $X$, so
-$$
-A_{i_1}\cap A_{i_2}\cap\cdots\ne\varnothing.
-$$
-Thus $\{A_i:i\in I\}$ has the countable intersection property. Each $A_i$ is closed, so the assumed property gives
-$$
-\varnothing\ne\bigcap_{i\in I}\overline{A_i}
-=\bigcap_{i\in I}A_i
-=X\setminus\bigcup_{i\in I}U_i,
-$$
-contradicting that $\mathcal U$ covers $X$. Therefore every open cover has a countable subcover, and $X$ is Lindelöf.
+::: pf
+
+::: {.pf-step #forward}
+If $X$ is Lindelöf and $\mathcal{A}$ has the countable intersection property, then $\bigcap_{A \in \mathcal{A}} \overline{A} \ne \varnothing$.
+
+::: pf-proof
+Suppose the intersection of the closures is empty. Then no point of $X$ lies in every $\overline{A}$, so each $x \in X$ has some $A$ with $x \notin \overline{A}$; the open sets $X \setminus \overline{A}$, $A \in \mathcal{A}$, therefore cover $X$. Lindelöfness gives a countable subcover $X = \bigcup_{n}(X \setminus \overline{A_{n}})$, that is $\bigcap_{n}\overline{A_{n}} = \varnothing$. Since $A_{n} \subseteq \overline{A_{n}}$, also $\bigcap_{n}A_{n} = \varnothing$, contradicting the countable intersection property of $\mathcal{A}$.
+
+:::
+
+:::
+
+::: {.pf-step #closed-cover}
+Assume the closure property. Let $\mathcal{U} = \theset{U_{i} \mid i \in I}$ be an open cover of $X$ with no countable subcover; then the closed sets $A_{i} \coloneqq X \setminus U_{i}$ have the countable intersection property.
+
+::: pf-proof
+For indices $i_{1}, i_{2}, \ldots$, the union $U_{i_{1}} \cup U_{i_{2}} \cup \cdots$ is not all of $X$, since it is the union of a countable subfamily; taking complements gives $A_{i_{1}} \cap A_{i_{2}} \cap \cdots \ne \varnothing$. Each $A_{i}$ is closed, being the complement of an open set.
+
+:::
+
+:::
+
+::: {.pf-step #contradiction}
+Assuming the closure property, no open cover of $X$ can fail to have a countable subcover.
+
+::: pf-proof
+With $\mathcal{U}$ and the $A_{i}$ as in step [](#closed-cover){.pf-ref}, the hypothesis gives $\bigcap_{i \in I}\overline{A_{i}} \ne \varnothing$. Each $A_{i}$ is closed, so $\overline{A_{i}} = A_{i}$ and the intersection is $\bigcap_{i}(X \setminus U_{i}) = X \setminus \bigcup_{i}U_{i} = \varnothing$, since $\mathcal{U}$ covers $X$. This is a contradiction, so every open cover of $X$ has a countable subcover.
+
+:::
+
+:::
+
+::: pf-step
+$X$ is Lindelöf if and only if for every collection $\mathcal{A}$ of subsets of $X$ with the countable intersection property, $\bigcap_{A \in \mathcal{A}}\overline{A} \ne \varnothing$.
+
+::: pf-proof
+Step [](#forward){.pf-ref} is the implication from Lindelöfness, and step [](#contradiction){.pf-ref} supplies the converse: it shows that under the closure property every open cover has a countable subcover, which is Lindelöfness.
+
+:::
+
+:::
+
+:::
 :::
