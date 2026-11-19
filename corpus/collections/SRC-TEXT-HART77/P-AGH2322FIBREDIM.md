@@ -49,6 +49,7 @@ See Cartan and Chevalley, exposé 8.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.22, printed p. 33 of the held scan, transcribed and checked against the exercise as printed: parts (a) to (d): a closed point of a fibre over a closed point, the identity $\operatorname{tr.deg}_{k}k(x)=\dim\OO_{X,y}+\dim\OO_{X_y,x}$, the correspondence with the irreducible components of the fibre, and the dimension formula for $S=\Spec A$ with $B$ an $A$-algebra.
 We use the standard local dimension inequality for a homomorphism of noetherian rings.
 If a prime $\mathfrak q\subseteq S$ lies over $\mathfrak p\subseteq R$, then
 $$
