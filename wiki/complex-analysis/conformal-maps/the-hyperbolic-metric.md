@@ -17,11 +17,12 @@ The unit disc carries a distance in which its own automorphisms are isometries a
 
 [[D-MFPYG]]
 
-The Blaschke factors are isometries of the hyperbolic metric, and since they move any point to $0$, the hyperbolic distance between two points is computed by pushing one of them to the origin:
+The Blaschke factors are isometries of the hyperbolic metric, and since they move any point to $0$, the hyperbolic distance between two points is computed by pushing one of them to the origin.
+For $w = s\in[0,1)$ the shortest curve from $0$ to $s$ is the segment, and its length in the metric $\abs{\dz}/(1-\abs z^2)$ is
 $$
-d_{\HH}(0,w) = \log\frac{1+\abs w}{1-\abs w},
+\int_0^s\frac{\dr}{1-r^2} = \operatorname{artanh}s = \frac12\log\frac{1+s}{1-s},
 $$
-the length of the diameter from $0$ to $w$ in the metric $\abs{\dz}/(1-\abs z^2)$.
+so $d_{\DD}(0,w) = \frac12\log\frac{1+\abs w}{1-\abs w} = \operatorname{artanh}\abs w$.
 
 [[T-DAETF]]
 
@@ -30,7 +31,7 @@ For holomorphic $f\colon\DD\to\DD$ the Schwarz lemma applied to $\psi_{f(z)}\cir
 $$
 \frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\leq\frac{1}{1-\abs z^2}\qquad\text{for all } z\in\DD,
 $$
-which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\HH}(f(z),f(w))\leq d_{\HH}(z,w)$.
+which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$.
 Equality at one point forces $f$ to be an automorphism of $\DD$.
 :::
 
@@ -38,7 +39,8 @@ Equality at one point forces $f$ to be an automorphism of $\DD$.
 
 A [[D-FRVBV|Möbius transformation]] carrying $\HH$ onto $\DD$ carries the hyperbolic metric of $\DD$ to
 $$
-\frac{\abs{\dz}}{\Im z}
+\frac{\abs{\dz}}{2\Im z}
 $$
-on $\HH$, and the isometries of that metric are exactly the real Möbius transformations [[T-VGDFW|Automorphisms of the upper half-plane]].
+on $\HH$: for the Cayley transform $\Psi(z) = (z-i)/(z+i)$ one has $\abs{\Psi'(z)} = 2/\abs{z+i}^2$ and $1-\abs{\Psi(z)}^2 = 4\Im z/\abs{z+i}^2$, so $\abs{\Psi'\,dz}/(1-\abs{\Psi}^2) = \abs{\dz}/(2\Im z)$.
+The holomorphic isometries of that metric are exactly the real Möbius transformations [[T-VGDFW|Automorphisms of the upper half-plane]].
 The two models are the same metric in different coordinates, and the hyperbolic distance is invariant under every biholomorphism between domains that carries one model to the other.
