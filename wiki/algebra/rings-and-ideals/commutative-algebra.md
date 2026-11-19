@@ -89,6 +89,10 @@ The two cards below give the decomposition in general and in the structured case
 
 [[D-DU4UQ]]
 
-For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional; that computation is on the card below.
+In the graded case the Gorenstein condition already fixes the top degree: a finite-dimensional graded Gorenstein algebra with $R_0=k$ and $R_n\neq0$ has $\dim_k R_n=1$, since its top piece lies in the one-dimensional socle.
+
+[[T-GRDSOC]]
+
+For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional; that computation is on the second card.
 
 [[P-HCAO21]]
