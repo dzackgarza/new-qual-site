@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The answer and the proof are correct. If the series of square roots
+    converges then its terms tend to zero, so the terms themselves are less than
+    one from some index on; there each term is at most its square root, and
+    comparison with the convergent series of square roots makes the series of
+    terms converge, so no divergent positive-term series has convergent square
+    roots. Nothing was changed. The statement was not re-read against a scan in
+    this pass.
 ---
 
 ::: {.problem}
