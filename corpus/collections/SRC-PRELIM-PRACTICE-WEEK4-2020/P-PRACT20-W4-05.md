@@ -23,6 +23,15 @@ audit:
     The answer letter (A) is kept and tied to the attached page image, which is the source of the
     choices and is not transcribed here. Statement unchanged; the card says the argument is its
     own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this problem, and that is false: the
+    collection's `provenance` names `assets/attachments/Week4_solns.pdf`, a booklet that prints
+    each problem with its worked solution, and Problem 5 is solved there on PDF p. 2. The
+    rendered sentence now cites it and says what the card adds. Found by screening the residue's
+    absence claims against the retained attachments; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -32,7 +41,7 @@ Which of the following indicates the graphs of two functions satisfying $\left( 
 :::
 
 ::: {.solution}
-The equation factors, so the solution is forced; the only work is to say what the graph looks like and to fix the answer among the printed options, which are in the attached page image. The equation $(y')^2+2yy'+y^2=0$ is $(y'+y)^2=0$, whose solutions are $y=Ce^{-x}$, and only those. The argument is this card's own: no retained solution set covers this problem.
+The equation factors, so the solution is forced; the only work is to say what the graph looks like and to fix the answer among the printed options, which are in the attached page image. The equation $(y')^2+2yy'+y^2=0$ is $(y'+y)^2=0$, whose solutions are $y=Ce^{-x}$, and only those. This is Problem 5 of the retained Week 4 solutions (`assets/attachments/Week4_solns.pdf`, PDF p. 2), and the argument is that sheet's: the factorisation, $y=Ce^{-x}$ and the conclusion that the graphs decay to zero are its, while the sign and monotonicity description and the choice (A) are added here from the attached page image.
 
 ::: pf
 
