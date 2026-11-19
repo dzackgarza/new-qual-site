@@ -29,6 +29,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.12, printed p. 93,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.4.12, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the norm equations: $(a+\tfrac b2)^2-\tfrac{b^2d}{4}=2$ at $d=-7$ has $b=\pm1$ (giving $2$) and not $b=\pm2$ (giving $8$), and $a^2-b^2d=2$ gives exactly $(\pm1,\pm1,-1)$ and $(0,\pm1,-2)$.
+    Not checked: Yang's Solutions outside printed p. 93; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.12 at printed p. 93; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -393,4 +413,8 @@ Step [](#s4){.pf-ref} proves part (a), steps [](#s5){.pf-ref} and [](#s6){.pf-re
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.12, printed p. 93, proves (a) by units: an automorphism fixing $P_0$ is an endomorphism of degree $1$, so by 4.4.11 its multiplier has $\abs{\alpha}=1$ and is a root of unity; since $\QQ(\alpha)\subseteq\QQ(\tau)$ has degree at most $2$ over $\QQ$ and $\alpha\ne\pm1$, the degree is exactly $2$, so $n=4$ or $6$ and $\alpha=i$ or $\omega$, whence $\tau=i$ or $\tau=\omega$. (The printed list omits $n=3$, which is harmless: $\zeta_3=-\zeta_6^{-1}$ lies in $\ZZ[\omega]$ and gives the same $\tau$.) Part (b) turns a degree-two endomorphism into a norm equation. For $d\equiv1\bmod4$ the multiplier is $\alpha=(a+\frac b2)+\frac b2\sqrt d$ with $(a+\frac b2)^2-\frac{b^2d}{4}=2$, and the printed integer solution '$d=-7$, $a=0$, $b=\pm2$' is wrong: it gives $1+7=8$, not $2$. The solution is $b=\pm1$, for which $\frac14+\frac74=2$, and it gives the same $\tau=\frac{-1+\sqrt{-7}}{2}$ the entry reaches. For $d\equiv2,3\bmod4$ it has $\alpha=a+b\sqrt d$ with $a^2-b^2d=2$, whose solutions $(\pm1,\pm1,-1)$ and $(0,\pm1,-2)$ give $\tau=i$ and $\tau=\sqrt{-2}$, correctly. The three values are the exercise's answers and are matched on the card with the three $j$ of IV.4.5.
 :::
