@@ -16,6 +16,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 40 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked in both directions. If P is prime then R/P is an
+    integral domain: the class of 1 is nonzero because P is proper, and if (a+P)(b+P) = P then ab is
+    in P, so a or b is in P. Conversely if R/P is a domain then P is proper (the class of 1 is not
+    zero) and ab in P gives (a+P)(b+P) = P, hence a+P = P or b+P = P. The card's steps follow this,
+    and both uses of the hypothesis that R is commutative with 1 are visible: the quotient is a ring
+    with 1, and primeness is stated for the commutative product ab. Not claimed: any statement about
+    noncommutative rings, where "prime" splits into several notions.
 ---
 
 ::: {.problem}
