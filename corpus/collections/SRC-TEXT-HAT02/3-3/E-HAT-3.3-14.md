@@ -13,6 +13,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair of the same scripted rewrite that broke `E-HAT-3.3-27` and
+    `E-HAT-3.3-31` on this date, reported by the whole-corpus gate's TeX check: `isomor\varphism` for
+    "isomorphism", three times. The count repaired is 3, and no mathematics changes --- the sentences
+    are the same sentences with the word spelled. Checked: `qualc.authoring check` on the card and the
+    string's absence from the body. Not checked: no source and no step of the argument was re-read in
+    this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -66,7 +76,7 @@ Let $X$ be the shrinking wedge of circles in Example 1.25, the subspace of $\RR^
 
 (a) If $f_n: I \to X$ is the loop based at the origin winding once around the $n$th circle, show that the infinite product of commutators $[f_1, f_2][f_3, f_4] \cdots$ defines a loop in $X$ that is nontrivial in $H_1(X)$.
 
-(b) If we view $X$ as the wedge sum of the subspaces $A$ and $B$ consisting of the odd-numbered and even-numbered circles, respectively, use the same loop to show that the map $H_1(X) \to H_1(A) \oplus H_1(B)$ induced by the retractions of $X$ onto $A$ and $B$ is not an isomor\varphism.
+(b) If we view $X$ as the wedge sum of the subspaces $A$ and $B$ consisting of the odd-numbered and even-numbered circles, respectively, use the same loop to show that the map $H_1(X) \to H_1(A) \oplus H_1(B)$ induced by the retractions of $X$ onto $A$ and $B$ is not an isomorphism.
 :::
 
 ::: {.solution}
@@ -123,7 +133,7 @@ The map
 $$
 H_1(X)\longrightarrow H_1(A)\oplus H_1(B)
 $$
-induced by the retractions onto the odd and even circles is not an isomor\varphism.
+induced by the retractions onto the odd and even circles is not an isomorphism.
 
 ::: pf-proof
 
@@ -133,7 +143,7 @@ $$
 $$
 contains one loop in $A$ and one loop in $B$. Under $r_A$, the even loop is collapsed, so the commutator becomes trivial; under $r_B$, the odd loop is collapsed, so it again becomes trivial. Thus both $(r_A)_*([\\gamma])$ and $(r_B)_*([\\gamma])$ vanish in first homology.
 
-By part 1, however, $[\\gamma]\ne0$ in $H_1(X)$. Hence the displayed map has nonzero kernel and therefore is not an isomor\varphism.
+By part 1, however, $[\\gamma]\ne0$ in $H_1(X)$. Hence the displayed map has nonzero kernel and therefore is not an isomorphism.
 
 :::
 
