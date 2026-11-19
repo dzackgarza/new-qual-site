@@ -12,6 +12,19 @@ classification:
   - Character Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 9 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 18, is the statement the card answers, and the head of the solution names it; the
+    retained file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the
+    blank versos, so Problem 9 stands on its page 18. Checked: the statement against the paper's text
+    layer at the page named; the two summands of $V$ and the character table of $S_3$; `qualc.authoring
+    check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained
+    solution set exists for this paper to compare the argument with, and no other card of the collection
+    in this pass.
 ---
 
 ::: {.problem}
@@ -25,6 +38,8 @@ Write out the character table of $S_3$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 9 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 18 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 No retained solution set covers this exercise: the card's own argument follows, with the two summands, the irreducibility of the standard piece and the character table as separate steps.
 
