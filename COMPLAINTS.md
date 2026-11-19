@@ -7137,3 +7137,23 @@ and this record says plainly which of the two files carries which propositions.
 **Uncertainty.** Read for this record: the PDF's pages 1 to 23 through `pdftotext -layout`, the folio
 279 checked on page 9, and the render's structure. Not checked: whether any further proposition is
 missing from the render and present in the PDF beyond the four named, and the printed journal itself.
+
+**Searched outside the checkout the same day, and neither card closes.** Two queries on `E-HAT-2.B-4` and two
+on `E-HAT-4.A-4`, through `Ceramic` (which returned nothing for either) and then `Linkup`.
+
+For `E-HAT-2.B-4`, the linked-spheres exercise, the only item of substance is Mathematics Stack Exchange question
+666444, "Show that they are not the boundaries of any disjointly embedded disks", whose body is the exercise and
+whose one substantive remark is a hint: use the linking number, and the fact that it is independent of the choice
+of disks bounding the spheres. A hint is not a complete published solution, and the ledger's rule for this
+obligation is explicit that a list of sources searched does not close a card. Nothing else surfaced.
+
+For `E-HAT-4.A-4`, the automorphism group of a wedge of spheres, the search returned Hatcher's own §4.A chapter
+file at `pi.math.cornell.edu`, which states the exercise with its hint ($\operatorname{GL}_n(\ZZ)$ is the
+automorphism group of $\pi_k\approx H_k$) and does not solve it, plus material about wedges of spheres that is not
+about this exercise.
+
+**Consequence.** `E-HAT-2.B-4` and `E-HAT-4.A-4` stay open as source obligations, now with a search of the open
+literature recorded against them rather than only a search of the checkout. Closing either needs a source this
+project does not yet hold — a course solution set that reaches §2.B and §4.A, or a paper proving the statement —
+and the card's own proof, which for `E-HAT-4.A-4` was read correct in the #163 pass, is not a substitute for that
+source under the rule this obligation states.
