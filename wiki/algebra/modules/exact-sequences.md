@@ -38,5 +38,7 @@ Right exactness needs no hypothesis on $M$; the other half of exactness is the f
 [[PR-KX7L7]]
 
 ::: {.remark title="The failure in $\ZZ$-modules"}
-Multiplication by $2$ on $\ZZ$ is injective, and tensored with $\ZZ/2$ it is the zero map on $\ZZ/2$, which is not injective.
+Multiplication by $2$ on $\ZZ$ is injective, and tensored with $\ZZ/2$ it is the zero map on $\ZZ/2$, which is not injective; the kernel of that zero map is the first Tor group, which the card below computes.
 :::
+
+[[T-TORCY]]
