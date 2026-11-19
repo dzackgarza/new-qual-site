@@ -12,7 +12,7 @@ A holomorphic function on the upper half of a symmetric region that is real on t
 The proof glues two holomorphic functions along a segment and applies [[T-LHSMY|Morera's theorem]].
 
 ::: {.remark}
-Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, and $\Omega^+ \coloneqq \Omega\cap\theset{\Im z>0}$, $I\coloneqq\Omega\cap\RR$, and $\Omega^- \coloneqq \Omega\cap\theset{\Im z<0}$.
+Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$.
 
 :::
 
