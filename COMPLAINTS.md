@@ -7232,3 +7232,11 @@ COMPLAINTS commit that carries it. No statement, step or hypothesis of either ca
 page images; Hartshorne's V.5.2, V.5.3 and V.5.1 on printed p. 419, read in the retained PDF and its
 text version. Not read: Yang's Solutions outside printed pp. 113--114; the printed book itself; and no
 search of the literature beyond these files.
+
+**One source outside the checkout was fetched and does not reach either card.** Takumi Murayama, *Selected
+Solutions to Hatcher's Algebraic Topology* (MAT 560, Princeton, Spring 2013), obtained from the GitHub mirror
+`awasthi/math-solutions` at `Hatcher/Hatcher Solutions.tex` and read whole: it is a partial set — its own preface
+says so — covering Chapter 0 (§0.1–§0.3), §1.1 and §1.2, and ending after the van Kampen problems of §1.2. It
+contains nothing from §2.B or §4.A, so it does not serve either obligation. It is recorded here so that the next
+attempt does not fetch it again; the copy is not retained in the checkout, and the citation above is by repository
+path rather than by printed page because the set carries no printed page numbering of its own.
