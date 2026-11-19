@@ -10,6 +10,18 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-18
+  note: Read against the UCSD Complex Analysis Qualifying Exam, Spring 2013; all four items match.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    No retained solution set covers this examination. Structured the card's own answers:
+    the disconnected-domain counterexample, the order-zero pole defect, the mean-value
+    limit for harmonic functions, and the residue obstruction on |z|=5/2.
 ---
 
 ::: {.problem}
@@ -28,47 +40,51 @@ If $u_n$ converges to $u$ uniformly on compact subsets, then $u$ is harmonic on 
 :::
 
 ::: {.solution}
-**(a) True.** The hypothesis says only that $U$ is open, not connected. Take
-$$
-U=D(0,1)\cup D(3,1),
-$$
-and define $u=0$ on $D(0,1)$ and $u(z)=\operatorname{Re}z$ on $D(3,1)$.
-Then $u$ is harmonic and nonconstant on $U$, while every point of $D(0,1)$
-lies in
-$$
-Z=\{u_x=u_y=0\}.
-$$
-Thus $Z$ has accumulation points in $U$.
 
-**(b) False.** Taking $n=m=0$, the statement requires a pole of order
-$$
-n^2+m^2=0
-$$
-at $(0,0)$. A pole has positive integer order, so a pole of order $0$ does
-not exist. Hence the asserted meromorphic function cannot exist as stated.
+No retained solution set covers this examination; the argument below is the card's own.
 
-**(c) True.** The mean-value property passes to locally uniform limits. If
-$\overline{B(a,r)}\subset\DD$, then
+::: pf
+
+::: {.pf-step #a-true}
+Statement (a) is true.
+
+::: pf-proof
+Take $U=D(0,1)\cup D(3,1)$ and set $u=0$ on the first disk and $u(z)=\operatorname{Re}z$ on the second. Each restriction is harmonic, so $u$ is harmonic on the disconnected open set $U$, and $u$ is nonconstant. On $D(0,1)$ both partial derivatives vanish, so this disk lies in $Z$; every point of the disk is then an accumulation point of $Z$ in $U$.
+:::
+:::
+
+::: {.pf-step #b-false}
+Statement (b) is false.
+
+::: pf-proof
+At $(n,m)=(0,0)$, both coordinates are even and $n^2+m^2=0$. A pole of order $0$ is not defined; poles have positive integer order. Therefore no meromorphic function can satisfy the stated order condition at the origin.
+:::
+:::
+
+::: {.pf-step #c-true}
+Statement (c) is true.
+
+::: pf-proof
+Fix a closed disk $\overline{B(a,r)}\subset\DD$. Each $u_n$ has the mean-value property
 $$
 u_n(a)=\frac1{2\pi}\int_0^{2\pi}u_n(a+re^{it})\,dt.
 $$
-Taking $n\to\infty$ uniformly on the circle gives the same identity for $u$.
-Hence $u$ has the mean-value property and is harmonic.
+Since $u_n\to u$ uniformly on the compact circle, passage to the limit gives the same identity for $u$. Thus $u$ has the mean-value property on a neighborhood of every point; by Weyl's mean-value characterization it is harmonic.
+:::
+:::
 
-**(d) False.** Let
+::: {.pf-step #d-false}
+Statement (d) is false.
+
+::: pf-proof
+If polynomials $p_n$ converged uniformly to $h(z)=1/(z^2(z-5)^3)$ on $2\le\abs z\le3$, then on $\abs z=5/2$ we could interchange limits and integrals:
 $$
-K=\{2\le \abs{z}\le3\}.
+0=\int_{\abs z=5/2}p_n(z)\,dz\longrightarrow\int_{\abs z=5/2}h(z)\,dz
+=2\pi i\operatorname{Res}_{z=0}h(z).
 $$
-If polynomials $p_n$ converged uniformly on $K$ to
-$$
-h(z)=\frac1{z^2(z-5)^3},
-$$
-then for the circle $\abs{z}=5/2$ we would have
-$$
-\int_{\abs{z}=5/2}p_n(z)\,dz\to
-\int_{\abs{z}=5/2}h(z)\,dz.
-$$
-The left side is always $0$. But the right side is
-$2\pi i\operatorname{Res}_{z=0}h$, and that residue is nonzero. Contradiction.
-Thus such polynomial approximation is impossible.
+The residue at $0$ of $z^{-2}(z-5)^{-3}$ is the coefficient of $z$ in $(z-5)^{-3}$, namely $-3(-5)^{-4}= -3/625\ne0$. The limiting integral is therefore nonzero, a contradiction.
+:::
+:::
+
+:::
 :::
