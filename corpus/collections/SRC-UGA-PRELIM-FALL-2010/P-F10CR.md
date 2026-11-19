@@ -65,11 +65,6 @@ evaluate step [](#s2){.pf-ref} for $k = 0, 1, 2$:
 
 :::
 
-::: pf-qed
-
-Step [](#s3){.pf-ref}.
-
-:::
 
 :::
 
