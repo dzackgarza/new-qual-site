@@ -11,11 +11,9 @@ topics:
 
 # Determinants and eigenvalues
 
-## Definitions
+## Forms and normal matrices
 
-A bilinear form $b$ on a finite-dimensional vector space $V$ has a [[D-H4TDM|Gram matrix]] $G=(b(e_i,e_j))_{i,j}$ in each basis $(e_i)$ of $V$, and $b$ is [[D-5BR4D|nondegenerate]] if and only if $G$ is invertible; for a nondegenerate symmetric form and a subspace $W\subseteq V$, $\dim W+\dim W^\perp=\dim V$.
-A complex matrix is [[D-BSUV4|normal]] if it commutes with its conjugate transpose, and normal matrices are exactly the unitarily diagonalizable ones.
-Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley decomposition $T=T_s+T_n$ with $T_s$ [[D-B4VTH|semisimple]], $T_n$ [[D-GIGM2|nilpotent]], and $T_sT_n=T_nT_s$; for invertible $T$, the multiplicative form is $T=T_sT_u$ with $T_u=I+\inverseof{T_s} T_n$ [[D-23FX7|unipotent]].
+A bilinear form is read in a basis by its Gram matrix, which decides nondegeneracy, and a complex matrix is normal exactly when it is unitarily diagonalizable; over a perfect field every operator splits uniquely into commuting semisimple and nilpotent parts.
 
 [[D-5BR4D]]
 
@@ -23,7 +21,11 @@ Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley d
 
 [[D-H4TDM]]
 
+[[PR-WDPF7]]
+
 [[D-BSUV4]]
+
+[[E-LJ7PF]]
 
 [[D-B4VTH]]
 
@@ -33,9 +35,7 @@ Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley d
 
 [[PR-24CPI]]
 
-[[PR-WDPF7]]
-
-[[D-JIGMN|Similar]] matrices have the same characteristic polynomial, minimal polynomial, and Jordan form; two matrices over a field are [[D-JRPTK|equivalent]] if and only if they have the same size and rank.
+Similar matrices have the same characteristic polynomial, minimal polynomial, and Jordan form, and two matrices over a field are equivalent exactly when they have the same size and rank.
 
 [[D-JIGMN]]
 
@@ -95,13 +95,13 @@ $$
 $$
 In particular
 $$
-\tr(A) = \sum_i \lambda_i, \qquad \det(A) = \prod_i \lambda_i.
+\trace(A) = \sum_i \lambda_i, \qquad \det(A) = \prod_i \lambda_i.
 $$
 The eigenvalues of a triangular matrix are its diagonal entries, so its determinant is the product of its diagonal entries.
 :::
 
 ::: {.fact title="Similarity invariants"}
-$\tr(AB) = \tr(BA)$, so similar matrices have the same trace: $\tr(PJ\inverseof{P}) = \tr(\inverseof{P} P J) = \tr J$.
+$\trace(AB) = \trace(BA)$, so similar matrices have the same trace: $\trace(PJ\inverseof{P}) = \trace(\inverseof{P} P J) = \trace J$.
 The determinant, characteristic polynomial, and minimal polynomial are also similarity invariants.
 :::
 
@@ -119,14 +119,12 @@ a_1^k & & * \\
 0 & & a_n^k
 \end{array}\right).
 $$
-By induction on $k$: a product of upper-triangular matrices is upper triangular, and its $i$th diagonal entry is the product of the $i$th diagonal entries of the factors.
+A product of upper-triangular matrices is upper triangular, and its $i$th diagonal entry is the product of the $i$th diagonal entries of the factors, which gives the statement by induction on $k$.
 :::
 
 ## Matrix groups
 
-The [[D-J5AAX|general linear group]] $\GL_n(F)$ is the group of invertible $n\times n$ matrices over $F$, and the [[D-P5D3T|special linear group]] $\SL_n(F)$ is its subgroup of matrices of determinant $1$.
-The [[D-3ZPR7|orthogonal group]] $\theset{A \st A^tA=I}$ is the group of matrices preserving the standard symmetric bilinear form, the [[D-QZ2LQ|unitary group]] $\theset{A\st A^\dagger A=I}$ preserves the standard Hermitian form, and the [[D-3V3SP|symplectic group]] $\theset{A\st A^tJA=J}$ preserves the standard alternating form with Gram matrix $J=\matt{0}{I_n}{-I_n}{0}$.
-The [[D-GY7ZN|special orthogonal]] and [[D-MCUTE|special unitary]] groups are the subgroups of matrices of determinant $1$.
+The classical groups are the invertible matrices preserving one form: the orthogonal group preserves the standard symmetric form, the unitary group the standard Hermitian one, and the symplectic group the standard alternating one, with the special linear, special orthogonal and special unitary groups cut out by determinant $1$.
 
 [[D-J5AAX]]
 
@@ -143,7 +141,7 @@ The [[D-GY7ZN|special orthogonal]] and [[D-MCUTE|special unitary]] groups are th
 [[D-3V3SP]]
 
 ::: {.example title="A basis of $\mathfrak{su}(2)$ from the Pauli matrices"}
-The Lie algebra $\mathfrak{su}(2) = \theset{X \in \Mat_{2\times 2}(\CC) \suchthat X^* = -X,\ \trace X = 0}$ is a real vector space of dimension $3$ with basis
+The Lie algebra $\mathfrak{su}(2) = \theset{X \in \Mat_{2\times 2}(\CC) \suchthat X^\dagger = -X,\ \trace X = 0}$ is a real vector space of dimension $3$ with basis
 $$
 \sigma_1 \coloneqq \frac{1}{\sqrt 2}\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix},\qquad
 \sigma_2 \coloneqq \frac{1}{\sqrt 2}\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix},\qquad
@@ -157,7 +155,7 @@ Each Pauli matrix is Hermitian and traceless, so $i$ times it is skew-Hermitian 
 
 [[PR-UQ3XJ]]
 
-Since $\det\colon\GL_n(\FF_q)\to\FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, $\size{\SL_n(\FF_q)} = \size{\GL_n(\FF_q)}/(q-1)$.
+Since $\det\colon \GL_n(\FF_q)\to \FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, the order of $\SL_n(\FF_q)$ is that of $\GL_n(\FF_q)$ divided by $q-1$.
 
 ## Problems
 
