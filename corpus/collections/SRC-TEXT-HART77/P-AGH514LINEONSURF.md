@@ -295,6 +295,8 @@ nonsingular degree-$d$ surface containing the line $x=y=0$, proving part (b).
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 367 of Hartshorne, read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 367 in the footer); the statement above is that page's text, the characteristic-zero hypothesis of (b) and the line $x=y=0$ included.
+
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, text version `tmp/sources/ntu-ag2-chapter5.md`, Exercise 4 (solution by Yi-Tsung Wang), printed p. 2 of that set: for (a), $\omega_X\cong\OO_X(d-4)$, so $K\sim(d-4)H$ and $C\cdot H=\deg C=1$, and adjunction $C^2=2g(C)-2-C\cdot K=2-d$; for (b), $X:x+y=0$ for $d=1$ and $X:x^{d-1}z+xz^{d-1}+y^{d-1}w+yw^{d-1}=0$ for $d\ge2$. That degree-$d$ surface contains $x=y=0$, and the four equations
 $$
 (d-1)x^{d-2}z+z^{d-1}=0,\quad x^{d-1}+(d-1)xz^{d-2}=0,\quad (d-1)y^{d-2}w+w^{d-1}=0,\quad y^{d-1}+(d-1)yw^{d-2}=0
