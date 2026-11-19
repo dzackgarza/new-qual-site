@@ -112,7 +112,7 @@ Since $\abs{G_1(z)} \leq 27 < 64 = \abs{F_1(z)}$ on $\abs{z} = 2$, the strict in
 :::
 
 ::: pf-step
-By Rouché's Theorem, $f(z) = F_1(z) + G_1(z)$ and $F_1(z) = 2z^5$ have the same number of zeros inside $\abs{z} < 2$.
+By [[T-CJCKL|Rouché's theorem]], $f(z) = F_1(z) + G_1(z)$ and $F_1(z) = 2z^5$ have the same number of zeros inside $\abs{z} < 2$.
 
 ::: pf-proof
 *Proof:* Hypotheses of Rouché's Theorem are satisfied on the simple closed curve $\abs{z}=2$.
@@ -197,7 +197,7 @@ Since $\abs{G_2(z)} \leq 4 < 6 = \abs{F_2(z)}$ on $\abs{z} = 1$, the strict ineq
 :::
 
 ::: pf-step
-By Rouché's Theorem, $f(z) = F_2(z) + G_2(z)$ and $F_2(z) = -6z^2$ have the same number of zeros inside $\abs{z} < 1$.
+By [[T-CJCKL|Rouché's theorem]], $f(z) = F_2(z) + G_2(z)$ and $F_2(z) = -6z^2$ have the same number of zeros inside $\abs{z} < 1$.
 
 ::: pf-proof
 *Proof:* Hypotheses of Rouché's Theorem are satisfied on the simple closed curve $\abs{z}=1$.
