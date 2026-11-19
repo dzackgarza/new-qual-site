@@ -22,7 +22,7 @@ Two $m\times n$ matrices over $R$ are [[D-JRPTK|equivalent]] if and only if they
 :::
 
 ::: {.remark}
-The matrices $P$ and $Q$ are the products of the elementary row and column operations that clear the entries of $A$ below and to the right of each pivot in turn, so the form is computed by the same algorithm that computes a basis adapted to a submodule; the entries $a_i$ are the invariant factors of the [[PR-UVUS6|module]] $R^n/\im(A)$.
+The matrices $P$ and $Q$ are the products of the elementary row and column operations that clear the entries of $A$ below and to the right of each pivot in turn, so the form is computed by the same algorithm that computes a basis adapted to a submodule; the entries $a_i$ are the invariant factors of the [[PR-UVUS6|module]] $R^n/\im(A)$. The theorem is the matrix form of the structure theorem for finitely generated modules over a PID [@DF04, Theorem 5, p. 462]: apply that theorem to $R^n/\im(A)$ and lift the direct sum decomposition to bases of $R^n$ and $R^m$, which is what $P$ and $Q$ record.
 :::
 
 ::: {.remark}
