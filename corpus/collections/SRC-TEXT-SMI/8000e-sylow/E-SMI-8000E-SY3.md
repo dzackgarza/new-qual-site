@@ -30,6 +30,14 @@ audit:
     "Prove no group of order 182 is simple." Correct: 182 = 2·7·13, n_7 divides 26
     and is ≡ 1 mod 7, and 1, 2, 6, 5 are the four residues, so n_7 = 1 and the
     Sylow 7-subgroup is a proper nontrivial normal subgroup. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 3.
+    $182=2\cdot7\cdot13$, $n_7\mid26$ and $n_7\equiv1\pmod7$; the divisors $1,2,13,26$ are
+    $1,2,6,5$ modulo $7$, so $n_7=1$ and the Sylow $7$-subgroup is a proper nontrivial normal
+    subgroup. No defect.
 ---
 
 ::: {.exercise}
