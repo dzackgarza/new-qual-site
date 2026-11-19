@@ -26,6 +26,7 @@ Show that a finite morphism is proper.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.1, printed p. 34 of the held scan, transcribed and checked against the exercise as printed at printed p. 106: finiteness gives affinity by definition, separatedness by the earlier chapter, and the composition of finite morphisms, the printed argument being that finiteness is stable under base change and composition.
 Let
 $$
 f:X\longrightarrow Y
