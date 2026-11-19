@@ -21,7 +21,7 @@ The character is constant on conjugacy classes, its value at the identity is the
 
 - $\chi_{V\oplus W} = \chi_V + \chi_W$ and $\chi_{V\tensor W} = \chi_V\chi_W$.
 
-Because a representation of a finite group splits into irreducibles and the multiplicity of each irreducible summand is recovered from the character, the character determines the representation.
+Because a representation of a finite group splits into irreducibles, the character is a complete invariant once the multiplicities are read off it.
 
 [[T-PIO2B]]
 
