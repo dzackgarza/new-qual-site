@@ -24,12 +24,39 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne II.4.11(a) has no restriction, but when O = K is a field and L/K is algebraic no DVR of L dominates O. The statement now assumes that O is not a field or that L is not algebraic over K.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The exercise is now stated as printed and the defect the event of
+    2026-10-29 above repaired by rewriting the statement is stated on the card
+    instead, which is the form the rule asks for. Read at Hartshorne,
+    Algebraic Geometry (1977), Chapter II section 4, exercise 4.11, printed
+    pp. 107--108: the folios were checked in the retained PDF, where PDF p. 122
+    carries the folio 107 and the opening of the exercise, "If you are willing
+    to do some harder commutative algebra, and stick to noetherian schemes,
+    then we can express the valuative criteria ... using only discrete
+    valuation rings", and PDF p. 123 carries the folio 108 with "L dominating
+    O. Prove this in the following steps", the four hints and part (b); so
+    printed page = PDF page - 15 holds here, and part (a) as printed has no
+    hypothesis beyond O noetherian local and L/K finitely generated. The
+    problem block now carries the printed wording, the card quotes "we" for the
+    book's "you" and drops "some", and the excluded case is proved impossible
+    rather than asserted: a ring dominating O = K has m_R cap K = 0, so it is a
+    valuation of L trivial on K, and a valuation trivial on K is trivial on an
+    algebraic extension, by the minimum-attained-at-an-endpoint argument now on
+    the card. Step s2's sentence that used the rewritten statement now appeals
+    to the hypothesis the proof keeps. Not checked: part (b)'s proof beyond its
+    statement, and no published solution set is cited by page yet, the held
+    copy of Yang Pi-Yeh's Solutions being an image-only scan of 119 pages whose
+    chapter 2 leaves were not located, so the transcription claim of a card of
+    this collection is not made here.
 ---
 
 ::: {.problem}
 If we are willing to do harder commutative algebra and stick to noetherian schemes, then the valuative criteria of separatedness and properness can be expressed using only **discrete** valuation rings.
 
-(a) If $(\OO,\mfm)$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$ such that $\OO$ is not a field or $L$ is not algebraic over $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$. Prove this in the following steps.
+(a) If $(\OO,\mfm)$ is a noetherian local domain with quotient field $K$, and if $L$ is a finitely generated field extension of $K$, then there exists a discrete valuation ring $R$ of $L$ dominating $\OO$. Prove this in the following steps.
 
     - By taking a polynomial ring over $\OO$, reduce to the case where $L$ is a finite extension field of $K$.
     - Show that for a suitable choice of generators $x_1, \ldots, x_n$ of $\mfm$, the ideal $\mfa = (x_1)$ in $\OO' = \OO[x_2/x_1, \ldots, x_n/x_1]$ is not the unit ideal.
@@ -46,6 +73,8 @@ $$
 (\OO,\mathfrak m)
 $$
 be a noetherian local domain with fraction field $K$, and let $L/K$ be finitely generated.
+
+As printed, part (a) needs no further hypothesis, and it fails in one case: if $\OO=K$ is a field and $L/K$ is algebraic, then no discrete valuation ring of $L$ dominates $\OO$. A ring $R$ dominating $\OO$ has $\mathfrak m_R\cap K=\mathfrak m_\OO=0$, so it is a valuation ring of $L$ trivial on $K$, and a valuation trivial on $K$ is trivial on an algebraic extension of $K$: for $a\in L$ with minimal polynomial $a^n+c_{n-1}a^{n-1}+\cdots+c_0$ over $K$, if $v(a)>0$ then $v(c_ia^i)=iv(a)$ has its minimum at $i=0$, so $v(a^n+c_{n-1}a^{n-1}+\cdots+c_0)=0$ while it is $nv(a)>0$; if $v(a)<0$ the minimum is at $i=n$ and the same contradiction holds. So the proof below, like any proof of the printed claim, keeps the hypothesis that $\OO$ is not a field or that $L$ is not algebraic over $K$, and the case it excludes is exactly $\OO=K$ with $L/K$ finite algebraic.
 
 ::: pf
 
@@ -65,7 +94,7 @@ L/K(t_1,\ldots,t_r)
 $$
 is finite.
 
-If $r=0$, then $L/K$ is already finite.  Since $L$ is algebraic over $K$, the hypothesis of part (a) says that $\OO$ is not a field, so $\mathfrak m\ne0$.
+If $r=0$, then $L/K$ is already finite.  Since $L$ is algebraic over $K$, the hypothesis kept above says that $\OO$ is not a field, so $\mathfrak m\ne0$.
 
 If $r>0$, put
 $$
