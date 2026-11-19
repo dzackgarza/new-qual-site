@@ -15,6 +15,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Differential Equations, Problem 40, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. The characteristics of x f_x - y f_y = 0 satisfy
+    dx/x = -dy/y, so xy is constant along them and the general solution is f = Phi(xy) for an
+    arbitrary differentiable Phi; conversely any such Phi solves the equation, since
+    x d/dx Phi(xy) - y d/dy Phi(xy) = Phi'(xy)(x y - y x) = 0. Both directions are in the card. Not
+    claimed: any regularity beyond differentiability, or a statement about the equation with a
+    non-zero right-hand side.
 ---
 
 ::: {.problem}
