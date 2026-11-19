@@ -35,6 +35,15 @@ audit:
     collection's provenance is that paper, so no retained solution set covers it and the argument is
     the card's own. One presentation repair: the opening definition wrote `:=`, which STYLE-04
     spells `\coloneqq`, and the step no longer needs the abbreviation.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Real_Analysis_Fall_2016.docx`, converted with
+    Pandoc: the item is the sixth and last problem, and its printed words are the card's. The document
+    numbers its problems automatically and that numbering does not survive the conversion, so the
+    position and the opening words are the locator rather than a number. Both are now named in the
+    solution's opening sentence. Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -51,6 +60,7 @@ $$
 :::
 
 ::: {.solution}
+This is the last of the six problems of the Fall 2016 real analysis examination, retained in this repository as `assets/attachments/Real_Analysis_Fall_2016.docx`; the conversion loses the document's automatic numbering, so the position and the opening words locate it.
 The collection's provenance is the examination paper, so no retained solution set covers the problem and the argument is the card's own: approximate $g$ by a compactly supported $L^2$ function, and use that $f$ has small $L^2$ tails.
 
 ::: pf
