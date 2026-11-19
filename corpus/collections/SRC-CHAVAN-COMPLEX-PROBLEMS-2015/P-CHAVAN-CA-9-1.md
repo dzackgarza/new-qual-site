@@ -11,6 +11,14 @@ audit:
     by: gpt-5.6-sol
     date: 2026-09-14
     note: The extraction drops the phrase "not equal to zero" after determinant; the surrounding determinant-zero-set discussion forces the invertible-matrix statement recorded here.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained sheet `assets/attachments/ist_ca_2015.pdf`: the statement is Problem 9.1,
+      whose printed words are the card's. The problem number and the file are now named in the
+      solution's opening sentence; the earlier event recorded the check without saying what was
+      read. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -22,6 +30,7 @@ is dense in $M_n(\CC)$.
 :::
 
 ::: {.solution}
+This is Problem 9.1 of the retained sheet `assets/attachments/ist_ca_2015.pdf` (the density of the matrices with non-zero determinant), and the statement below is its wording.
 
 ::: pf
 
