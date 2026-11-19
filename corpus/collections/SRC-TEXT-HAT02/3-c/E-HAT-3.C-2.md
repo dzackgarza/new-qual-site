@@ -35,6 +35,18 @@ audit:
     homotopies for $\mu_A$ are the composites of the given homotopies with $i$ and $r$, using
     $r\circ i=\mathrm{id}$. The identity element stays in $A$ by hypothesis, which is what makes
     $\mu_A(e,a)$ and $\mu_A(a,e)$ well formed.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 2 of §3.C, printed p. 291, and the definition of an H-space on
+    printed p. 281. Correct. With $i\colon A\to X$, $r\colon X\to A$, $ri=\mathrm{id}_A$ and $e\in A$,
+    the multiplication $\mu_A=r\circ\mu\circ(i\times i)$ satisfies $\mu_A(a,e)=r\mu(i(a),e)$ and
+    $\mu_A(e,a)=r\mu(e,i(a))$, and composing the basepoint-preserving unit homotopies of the H-space
+    structure with $i$ and $r$ gives $\mu_A(a,e)\simeq ri(a)=a$ and the same on the other side.
+    These are basepoint-preserving because $r(e)=e$, which follows from $ri=\mathrm{id}_A$ and
+    $e\in A$; that is why the hypothesis that the retract contains the identity is needed. Nothing
+    changed. Not claimed: a published solution of this exercise, and no certificate.
 ---
 
 ::: {.problem}
