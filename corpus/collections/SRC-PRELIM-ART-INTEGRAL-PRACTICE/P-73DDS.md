@@ -16,6 +16,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by differentiation: with u = sin x, du = cos x dx,
+    the integral is int u^{-2} du = -1/u + C = -csc x + C, and d/dx(-csc x) = csc x cot x =
+    cos x/sin^2 x, so the answer is right. The card also checks it by differentiating, which is the
+    right way to close an indefinite integral. Not claimed: any definite-integral variant, or the
+    behaviour at the zeros of sin x, where the antiderivative has poles.
 ---
 
 ::: {.problem}
