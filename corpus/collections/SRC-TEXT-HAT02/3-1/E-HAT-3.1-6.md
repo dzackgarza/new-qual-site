@@ -41,6 +41,24 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 6 (p.205). All six answers recomputed from the dual complexes: torus H^0=G, H^1=G^2, H^2=G; RP^2 integral Z, 0, Z/2 and mod 2 all Z/2; Klein bottle integral Z, Z, Z/2 and mod 2 Z/2, Z/2^2, Z/2. Cross-checked each against Theorem 3.2 (p.195). Boundary formulas are now cited: Example 2.3 p.106 for the torus, Example 2.4 p.106 for RP^2, the figure on p.102 for the Klein bottle (which the book does not compute). Not covered: nothing about the higher-dimensional surfaces.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 6 of §3.1, printed p. 205, and recomputed all six answers from
+    the dualized $\Delta$-complexes, whose boundary formulas were checked on their printed pages:
+    Example 2.3 on printed p. 106 prints $\partial_2U=a+b-c=\partial_2L$ for the torus, Example 2.4
+    on the same page prints $\partial_2U=-a+b+c$ and $\partial_2L=a-b+c$ with $\partial a=\partial
+    b=w-v$, $\partial c=0$ for $\mathbb{RP}^2$, and the three squares of printed p. 102 give the
+    Klein bottle complex, which the book does not compute and whose orientations the card states.
+    Checked: torus $G,G^2,G$ from $\ker\delta^1=\{x+y=z\}$ and $\operatorname{im}\delta^1$ the
+    diagonal; $\mathbb{RP}^2$ integral $\ZZ,0,\ZZ_2$ with $\ker\delta^1=\ZZ(1,1,0)$ and the gcd of
+    the $2\times2$ minors of $\delta^1$ equal to $2$, and mod $2$ one-dimensional in each degree;
+    Klein bottle integral $\ZZ,\ZZ,\ZZ_2$ with $\ker\delta^1=\{(0,q,q)\}$ and the same minor
+    computation, and mod $2$ equal to $(\ZZ_2)^2$ in degree one. The Klein bottle's answer
+    $\ZZ\oplus\ZZ_2$ in degree one agrees with its homology, which is the check that the stated
+    orientations are a valid $\Delta$-complex structure. Not claimed: a published solution of this
+    exercise.
 ---
 
 ::: {.problem}
