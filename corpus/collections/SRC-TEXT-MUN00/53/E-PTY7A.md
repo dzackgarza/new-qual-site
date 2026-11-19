@@ -32,6 +32,18 @@ audit:
     https://dbfin.com/topology/munkres/chapter-9/section-53-covering-spaces/problem-1-solution/
     (read 2026-11-11; kept at tmp/sources/dbfin/section-53-covering-spaces/problem-1-solution.txt), and against Munkres, Topology (2000), Section 53
     Exercise 1, printed p. 341, with the definition of a covering map on printed p. 336. dbFin's is the same three lines. What was corrected: the stored statement had added the hypothesis that $Y$ is nonempty. The book prints "Let $Y$ have the discrete topology", and the exercise needs $Y$ nonempty, because a covering map is by definition a continuous surjection (printed p. 336) and the projection $X\times\varnothing\to X$ has empty domain; the printed wording is restored and the solution now names that hypothesis and the counterexample without it.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution opened by claiming that no retained solution set covers the exercise, contradicting the
+    source-checked event above it, which compares the argument with dbFin's Section 53 Problem 1 solution
+    kept at tmp/sources/dbfin/section-53-covering-spaces/problem-1-solution.txt. That copy was read again:
+    it gives continuity, surjectivity and the decomposition of the preimage into open slices
+    homeomorphic to $X$, which is the argument the card states. The opening sentence now names the set and
+    its three clauses, and keeps the printed statement with the omitted nonemptiness hypothesis in the
+    card's own step. Not checked here: the printed pages, which are the earlier session's citations.
+
 ---
 
 ::: {.exercise}
@@ -42,7 +54,7 @@ Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own argument follows. The printed statement is kept as printed, and the hypothesis it omits is named in step [](#hypothesis){.pf-ref} with a counterexample.
+The argument is the retained published solution of dbFin, "Section 53: Problem 1 Solution" (`tmp/sources/dbfin/section-53-covering-spaces/problem-1-solution.txt`, read 2026-11-11): $p$ is continuous and surjective, and $p^{-1}(X)=\bigcup_{y\in Y}X\times\{y\}$, each slice $X\times\{y\}$ being open in $X\times Y$ because $Y$ is discrete and homeomorphic to $X$. The printed statement is kept as printed, and the hypothesis it omits is named in step [](#hypothesis){.pf-ref}, with a counterexample: for $X$ a one-point space and $Y$ empty the projection is not surjective, so it is not a covering map.
 
 Let $Y$ be discrete and $p:X\times Y\to X$ the projection on the first coordinate. In Munkres a covering map is a continuous surjection $p:E\to B$ such that every point of $B$ has an evenly covered neighbourhood (printed p. 336).
 
