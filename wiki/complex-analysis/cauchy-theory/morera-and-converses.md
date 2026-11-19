@@ -9,7 +9,7 @@ topics:
 # Morera and converses
 
 By Goursat's theorem, a holomorphic function has vanishing integrals over triangles.
-Morera's theorem is the converse for continuous functions, and it shows that locally uniform limits and series of holomorphic functions are holomorphic.
+Morera's theorem is the converse for continuous functions, and it shows that [[D-AIQG3|locally uniform]] limits and series of holomorphic functions are holomorphic.
 
 ## Morera's theorem
 

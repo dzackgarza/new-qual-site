@@ -19,7 +19,7 @@ Near a zero of order $n$ of the limit, the $n$ zeros of $f_k$ for large $k$ conv
 :::
 
 ::: {.corollary}
-Let $\Omega$ be a connected open set and let $f_k\to f$ locally uniformly on $\Omega$, with each $f_k$ holomorphic and nowhere zero on $\Omega$.
+Let $\Omega$ be a connected open set and let $f_k\to f$ [[D-AIQG3|locally uniformly]] on $\Omega$, with each $f_k$ holomorphic and nowhere zero on $\Omega$.
 Then $f$ is nowhere zero on $\Omega$ or identically zero.
 :::
 

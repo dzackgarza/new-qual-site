@@ -9,7 +9,7 @@ topics:
 
 # Riemann surfaces and uniformization
 
-A Riemann surface is a one-dimensional complex manifold, and the uniformization theorem says that the simply connected ones are exactly the sphere, the plane, and the disc: every Riemann surface is a quotient of one of those three by a group of biholomorphisms.
+A Riemann surface is a one-dimensional complex manifold, and the uniformization theorem says that the [[D-GFM35|simply connected]] ones are exactly the sphere, the plane, and the disc: every Riemann surface is a quotient of one of those three by a group of biholomorphisms.
 
 [[D-8WMFK]]
 
