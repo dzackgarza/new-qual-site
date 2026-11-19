@@ -268,6 +268,31 @@ audit:
     this X, for which no proof was found in the paper and no other source was
     searched; the printed Xie was not read, only the retained PDF's text layer
     at pp. 5-6.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Xie's Lemma 4.4(iii), printed pp. 10-11, whose last step the paper leaves
+    unargued, read in full. After showing that the components R_1, ..., R_n of
+    psi^{-1}(R) have equal negative self-intersection, it concludes "Since rho(X_B)
+    = 2, we have deg h(x) = n = 1". The step is correct, and the argument is
+    this. X_B is a P^1-bundle over B by Lemma 4.4(i), so Num(X_B) has rank two,
+    with a fibre f_B and a section sigma as basis, f_B^2 = 0 and f_B.sigma = 1;
+    the classes orthogonal to f_B are the multiples of f_B. Each R_i maps
+    finitely onto B, so a_i := R_i.f_B > 0. If R_1 and R_2 are distinct
+    irreducible curves with R_1^2 = R_2^2 < 0, the class alpha = a_2R_1 - a_1R_2
+    has alpha.f_B = 0, hence alpha = m f_B for some rational m; pairing with R_1
+    gives alpha.R_1 = a_2R_1^2 - a_1(R_1.R_2) < 0 and pairing with R_2 gives
+    alpha.R_2 = a_2(R_1.R_2) - a_1R_2^2 > 0, since distinct irreducible curves on
+    a surface meet nonnegatively. But alpha.R_i = m a_i with a_i > 0, so the
+    first inequality forces m < 0 and the second m > 0, a contradiction. So no
+    two components exist and n = 1. The earlier half of (iii) was checked too:
+    the R_i meet pairwise nonnegatively, so (sum R_i)^2 >= 0 if their
+    self-intersections are nonnegative, while sum R_i = psi^*R has square
+    deg(psi) R^2 < 0. Not checked: that the multiplicities on psi^{-1}(R) are 1,
+    which the argument needs, and Xie's citation of [Sc01, Proposition 3.3] for
+    (iii) itself; the printed paper was not read, only the retained PDF's text
+    layer at pp. 10-11.
 
 ---
 
