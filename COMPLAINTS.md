@@ -6861,3 +6861,30 @@ head of §2.13 at printed p. 47 (PDF p. 60), rendered as page images, together w
 of the scan at printed p. viii; Yang's Solutions 5.5.1 at printed p. 113; and Hartshorne's V.5.1 at
 printed p. 420. Not read: Humphreys outside §§2.11 and 5.3--5.4; Yang's entries for §V.5 beyond 5.5.1;
 the printed books themselves; and no search of the literature beyond these files.
+
+## 2026-11-19: the prose-only measure obtained — 178 of 12,429 — and the report check is now covered piece by piece
+
+**Object and need.** The prose-only measure is the section of the report check that needs Pandoc, and
+it is the one the register calls Queue D. `tools/backlog.py --with-queues` cannot finish here; the
+measure itself can, and did.
+
+**What ran.** `QUALC_PARALLEL_WORKERS=2 ./.venv/bin/python tools/prose_queue.py`, which parses every
+card through the Pandoc batch, classifies each problem card whose solution holds at least one
+`.pf-step` and writes `queues/D-prose-only-solutions.md`. It finished with exit status 0 in 4 min
+51 s and reported the queue file **up to date**, so the file on disk is the current measurement rather
+than a stale one: **178 of the 12,429 problem cards that have a solution section hold no numbered
+step in it**. The generator wrote nothing, which is its own confirmation that the count in the file is
+the count now. The file is another session's uncommitted regeneration and was left uncommitted, as
+work in the tree that is not this lane's.
+
+**What that leaves of the report check.** Four of its five sections are now obtained separately and
+all are clean: the per-card completeness sweep (14,412 files, 0 issues), the provenance href scan (653
+collections, 716 hrefs, 0 findings on the five offline checks), the prose-only measure (178 of
+12,429), and the two generated queues that ride with them. What remains unobtained is the report's
+own single run — which dies at 4-5 minutes with exit 137 whatever else is done — and two things
+deliberately not run: `check_dead_provenance_hrefs`, which fetches 44 third-party URLs, and the
+unsolved-card queue, started separately in this pass. No claim is made here about either.
+
+**Repair.** This record only. **Uncertainty.** The 178 was not inspected card by card; the measure is
+the tool's, and the queue file's own header states the rule it applies, that a solution is structured
+when a `.pf` root holds at least one `.pf-step`. Not read for this record: the list of 178 card ids.
