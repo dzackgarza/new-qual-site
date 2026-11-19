@@ -51,6 +51,22 @@ audit:
     r_* projection onto a direct summand, so the Lefschetz number is preserved over F. Hatcher's
     metric construction gives g( sigma) cap sigma empty, hence zero diagonal in every field;
     additivity of trace on finite-dimensional exact sequences then gives zero on homology.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 7 of §2.C, printed p. 184, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against Hatcher's proof of Theorem 2C.3 on
+    printed pp. 180--181, which the card follows. Checked: the retraction $r:K\to X$ leaves the fixed
+    set unchanged, and $r_*$ is the projection onto the direct summand $\operatorname{im} i_*$ with
+    $r_*i_*=\mathrm{id}$, so $f_*r_*=(f_*\text{ on }\operatorname{im}i_*)\oplus0$ and the traces agree;
+    the metric step uses compactness, $d(x,f(x))>\varepsilon$, stars of diameter $<\varepsilon/2$ and
+    simplicial approximation, all coefficient-free; $g(\sigma)\cap\sigma=\varnothing$ makes the
+    diagonal of the endomorphism of $H_n(K^n,K^{n-1};F)$ vanish; and additivity of trace over $F$ on
+    the exact sequences of cycles, boundaries and homology cancels the boundary terms. Hatcher's own
+    sentence at printed p. 182, that the argument is the analog of Theorem 2.44 for trace instead of
+    rank, is what the card's step `trace` invokes. No defect.
+
 ---
 
 ::: {.problem}
