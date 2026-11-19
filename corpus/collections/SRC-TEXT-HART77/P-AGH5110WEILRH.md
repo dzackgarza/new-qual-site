@@ -29,6 +29,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.10, printed p. 101,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.10, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    Gamma^2 = q(2-2g) from the preimage description, the four
+    intersection numbers with l, m and Delta, and the reduction of the Hodge
+    index inequality to |N - q - 1| <= 2g sqrt(q). Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.10 at printed
+    p. 101 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -377,4 +399,6 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 The exercise stands on printed p. 368 of Hartshorne, read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 368 in the footer), and the statement above is that page's text, the printed italic heading "Well's Proof [2] of the Analogue of the Riemann Hypothesis for Curves" and the closing reference to (App. C, Ex. 5.7) aside.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.10, PDF p. 260: $\Gamma$ is the inverse image of $\Delta$ under $(f,1)$, "thus $\Gamma^2=\Delta^2\deg(f)=(2-2g)q$"; $\Gamma\cdot\Delta=N$ "clearly gives the number of fixed points"; $\Gamma$ meets $l$ in $f^{-1}(\mathrm{pt})$ and $m$ in one point, so $\Gamma$ has type $(q,1)$ and $\Delta$ type $(1,1)$; then $D=r\Gamma+s\Delta$ has $D^2=rq(2-2g)+s(2-2g)+2rsN$ and V.1.9 gives $N\le1+q+g(qr/s+s/r)$, maximised at $x=\pm1/\sqrt q$. Step [](#s4){.pf-ref} is the step he leaves implicit, that the intersection at a fixed point is transverse because the differential of Frobenius vanishes, so that $\Gamma\cdot\Delta$ is the number of fixed points rather than a length. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.10, printed p. 101, runs Weil's proof in the book's notation: with $\Gamma$ the graph of Frobenius, $\Gamma^2=q(2-2g)$ because $\Gamma$ is the preimage of $\Delta$ under $\mathrm{Frob}\times\mathrm{id}$, $\Gamma\cdot\Delta=N$, $\Gamma\cdot l=q$, $\Gamma\cdot m=1$ and $\Delta\cdot l=\Delta\cdot m=1$; for $D=r\Gamma+s\Delta$ the inequality $2(D\cdot l)(D\cdot m)\ge D^2$ of (1.9) reads $2(rq+s)(r+s)\ge r^2q(2-2g)+s^2(2-2g)+2rsN$, and dividing by $rs$ with $s=r\sqrt q$ gives $\abs{N-q-1}\le2g\sqrt q$. Its display prints $rq(2-2g)$ where the coefficient of $\Gamma^2$ is $r^2q(2-2g)$; the conclusion uses the squared coefficient.
 :::
