@@ -13,6 +13,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair of the same scripted rewrite that broke `E-HAT-3.3-27` and
+    `E-HAT-3.3-31` on this date, reported by the whole-corpus gate's TeX check: the cochain written
+    `\var\varphi` for `\varphi`, sixteen times. The count repaired is 16, and no mathematics
+    changes --- every formula is the formula it was, with the token spelled as the card means it.
+    Checked: `qualc.authoring check` on the card and the string's absence from the body. Not checked:
+    no source and no step of the argument was re-read in this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -57,7 +67,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $(\alpha \frown \var\varphi) \frown \\psi = \alpha \frown (\var\varphi \smile \\psi)$ for all $\alpha \in C_k(X; R)$, $\var\varphi \in C^\\ell(X; R)$, and $\\psi \in C^m(X; R)$.
+Show that $(\alpha \frown \varphi) \frown \\psi = \alpha \frown (\varphi \smile \\psi)$ for all $\alpha \in C_k(X; R)$, $\varphi \in C^\\ell(X; R)$, and $\\psi \in C^m(X; R)$.
 Deduce that cap product makes $H_*(X; R)$ a right $H^*(X; R)$ module.
 :::
 
@@ -68,40 +78,40 @@ It is enough to check the identity on a singular $k$-simplex
 $$
 \sigma=[v_0,\ldots,v_k].
 $$
-With Hatcher's conventions, for $\var\varphi\in C^\\ell(X;R)$,
+With Hatcher's conventions, for $\varphi\in C^\\ell(X;R)$,
 $$
-\sigma\frown\var\varphi
+\sigma\frown\varphi
 =
-\var\varphi([v_0,\ldots,v_\\ell])
+\varphi([v_0,\ldots,v_\\ell])
 [v_\\ell,\ldots,v_k].
 $$
 Applying $\frown\\psi$ with $\\psi\in C^m(X;R)$ gives
 $$
-(\sigma\frown\var\varphi)\frown\\psi
+(\sigma\frown\varphi)\frown\\psi
 =
-\var\varphi([v_0,\ldots,v_\\ell])
+\varphi([v_0,\ldots,v_\\ell])
 \\psi([v_\\ell,\ldots,v_{\\ell+m}])
 [v_{\\ell+m},\ldots,v_k].
 $$
 On the other hand, the cup product is
 $$
-(\var\varphi\smile\\psi)([v_0,\ldots,v_{\\ell+m}])
+(\varphi\smile\\psi)([v_0,\ldots,v_{\\ell+m}])
 =
-\var\varphi([v_0,\ldots,v_\\ell])
+\varphi([v_0,\ldots,v_\\ell])
 \\psi([v_\\ell,\ldots,v_{\\ell+m}]),
 $$
 so
 $$
-\sigma\frown(\var\varphi\smile\\psi)
+\sigma\frown(\varphi\smile\\psi)
 =
-\var\varphi([v_0,\ldots,v_\\ell])
+\varphi([v_0,\ldots,v_\\ell])
 \\psi([v_\\ell,\ldots,v_{\\ell+m}])
 [v_{\\ell+m},\ldots,v_k].
 $$
 The two expressions are identical. By linearity,
 $$
-\boxed{(\alpha\frown\var\varphi)\frown\\psi
-=\alpha\frown(\var\varphi\smile\\psi)}
+\boxed{(\alpha\frown\varphi)\frown\\psi
+=\alpha\frown(\varphi\smile\\psi)}
 $$
 for every chain $\alpha$.
 
@@ -111,8 +121,8 @@ H_k(X;R)\times H^\\ell(X;R)\longrightarrow H_{k-\\ell}(X;R).
 $$
 The chain-level identity then gives on homology
 $$
-([\alpha]\frown[\var\varphi])\frown[\\psi]
-=[\alpha]\frown([\var\varphi]\smile[\\psi]),
+([\alpha]\frown[\varphi])\frown[\\psi]
+=[\alpha]\frown([\varphi]\smile[\\psi]),
 $$
 and the unit in $H^0(X;R)$ acts as the identity: on a $k$-simplex $\sigma$, $\sigma\frown 1=\sigma$ because the augmentation on the front $0$-face is the identity, so $H_*(X;R)$ is a right module over the graded ring $H^*(X;R)$.
 :::
