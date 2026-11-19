@@ -5,9 +5,7 @@ title: Proofs of the fundamental theorem of algebra
 
 # Proofs of the fundamental theorem of algebra
 
-::: {.theorem title="Fundamental theorem of algebra"}
-Every nonconstant polynomial $P(z) = a_nz^n + \cdots + a_0\in\CC[z]$ with $a_n\neq 0$ and $n\geq 1$ has exactly $n$ zeros in $\CC$, counted with multiplicity.
-:::
+[[T-6XDRA]]
 
 ## By the argument principle
 
@@ -62,10 +60,10 @@ By [[T-QHIHJ|Liouville's theorem]] $1/P$ is constant, so $P$ is constant, a cont
 ## By the open mapping theorem
 
 ::: {.proof title="Using the open mapping theorem"}
-Extend $P$ to a holomorphic map $P\colon \PP^1(\CC) \to \PP^1(\CC)$ with $P(\infty) = \infty$.
-Its image is compact, since $\PP^1(\CC)$ is compact, and hence closed, since $\PP^1(\CC)$ is Hausdorff.
+Extend $P$ to a holomorphic map $P\colon \CP^1 \to \CP^1$ with $P(\infty) = \infty$.
+Its image is compact, since $\CP^1$ is compact, and hence closed, since $\CP^1$ is Hausdorff.
 Since $P$ is nonconstant, the image is open by the [[C-FRF33|open mapping theorem]] applied in local coordinates.
-The image is nonempty and $\PP^1(\CC)$ is connected, so the image is all of $\PP^1(\CC)$.
+The image is nonempty and $\CP^1$ is connected, so the image is all of $\CP^1$.
 In particular $0 = P(z_0)$ for some $z_0$, and $z_0\neq\infty$ because $P(\infty)=\infty$.
 :::
 
@@ -76,8 +74,8 @@ In particular $0 = P(z_0)$ for some $z_0$, and $z_0\neq\infty$ because $P(\infty
 [[L-ZXBBI]]
 
 ::: {.proof title="Using the lemma on maps from compact Riemann surfaces"}
-Extend $P$ to a nonconstant holomorphic map $P\colon \PP^1(\CC) \to \PP^1(\CC)$ with $P(\infty) = \infty$.
-Since $\PP^1(\CC)$ is compact, $P$ is surjective by [[L-ZXBBI]], so $P(z_0) = 0$ for some $z_0\in\PP^1(\CC)$, and $z_0\neq\infty$.
+Extend $P$ to a nonconstant holomorphic map $P\colon \CP^1 \to \CP^1$ with $P(\infty) = \infty$.
+Since $\CP^1$ is compact, $P$ is surjective by [[L-ZXBBI]], so $P(z_0) = 0$ for some $z_0\in\CP^1$, and $z_0\neq\infty$.
 :::
 
 ## Singularities and omitted values
