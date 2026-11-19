@@ -256,6 +256,37 @@ audit:
     triples, and the attribution r(O_S(C)) = 2. The certificate and its recorded
     output are linked on the card at the commit that narrowed the script, and
     the review field stays draft with the earlier source-status events standing.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A fourth retained solution read and adjudicated. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.4.9, printed pp. 110-111,
+    rendered as page images from tmp/sources/lfwin-hartshorne-solutions.pdf,
+    whose PDF page is the printed page (folios 110 and 111 at the feet of
+    those pages). Checked against the book: Hartshorne V.4.9, printed p. 408,
+    asks for g >= (1/2)(d-6) for even d >= 8 and g >= (1/2)(d-5) for odd
+    d >= 13, the minimum attained in each range, which is what the card
+    proves from Gruson-Peskine. Recomputed: the identity
+    a^2 - 6a + 14 >= sum (b_i - 1)^2 is equivalent to g >= (1/2)(d-6) given
+    d = 3a - sum b_i and 2g - 2 = D^2 - d, and the entry's rewriting of it is
+    right; its two configurations give g = a - 2 = (1/2)(d-5) at d = 2a + 1
+    and g = a - 3 = (1/2)(d-6) at d = 2a, also right. Two lines are wrong as
+    printed: with sum_{i >= 2} b_i = 0 it gives g = (1/2)(a(a-3) - b(b-1))
+    for the value 1 + (1/2)(a(a-3) - b(b-1)), and it takes b = a from "we
+    must take b to be big enough" with no argument. The entry states that the
+    two computed values are the minimum ("clearly calculating") and does not
+    show it. Not checked: Yang's Solutions outside printed pp. 109-111, and
+    the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now adjudicates Yang Pi-Yeh's Solution 5.4.9 at printed
+    pp. 110-111 as a sketch that reaches both printed values without proving
+    either, with its two wrong lines named, alongside the Egbert paragraph
+    that already stood there. No step, hypothesis, bound or equality class of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -1235,4 +1266,6 @@ R. Hartshorne, *Genre des courbes algébriques dans l'espace projectif [d'après
 The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, applies Ex. V.4.8 on $X_r$ for $r\ge3$ and on $X_2$, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.9, printed p. 290, is a working draft and not a proof: its lower-bound half is a chain of unattributed algebraic manipulations that does not close, and its existence half fixes $b_6^2=3$ and then applies the five-squares lemma of Bourbaki's Proposition 2.1 with $k=a$, which does not respect the degree $d=3a-\sum b_i$ that it is meant to realize.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.9, printed pp. 110--111, reaches both printed values and proves neither. It writes $d=3a-\sum b_i$ and $g=\frac12(a-1)(a-2)-\frac12\sum b_i^2+\frac12\sum b_i$, uses $b_6\ge0$, $a\ge b_1+b_2$ and $2a\ge b_1+\cdots+b_5$ — which is what an irreducible curve gives, since $D\cdot E_i=b_i\ge0$, $D\cdot F_{ij}=a-b_i-b_j\ge0$ and $D\cdot G_j=2a-\sum_{i\ne j}b_i\ge0$ — and rewrites $g\ge\frac12(d-6)$ as $a^2-6a+14\ge\sum(b_i-1)^2$, correctly. It then computes the two configurations $(b_1,1,0,\ldots,0)$ and $(b_1,2,0,\ldots,0)$, getting $g=a-2=\frac12(d-5)$ at $d=2a+1$ and $g=a-3=\frac12(d-6)$ at $d=2a$, both correctly. What it does not do is show that the minimum over the feasible classes is attained in those two families; it writes only "clearly calculating, this two value is the minimal bound of $g$ when $g>1$". Two of its steps are also wrong as printed: with $\sum_{i\ge2}b_i=0$ it gives $g=\frac12\bigl(a(a-3)-b(b-1)\bigr)$, where the value is $1+\frac12\bigl(a(a-3)-b(b-1)\bigr)$, and it takes $b=a$ because "we must take $b$ to be big enough" with no argument that the minimum wants that end of the range. Its entry is a sketch, of the same standing as Egbert's, and what proves the exercise's two statements is the pair of articles above.
 :::
