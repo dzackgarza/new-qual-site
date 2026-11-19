@@ -175,6 +175,24 @@ audit:
     of pairs, and the observation that the same computation with coordinates $(i,j)$ gives
     $+_i=+_j$. No defect found in the statement, §4.1 Exercise 1 on printed p. 358; the card's remark
     on Hatcher's different commutativity homotopy stands.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the correctness read of this card's own part, which is the four-quarter interchange.
+    No defect found. Checked: each $+_i$ lands in maps of pairs, a boundary point having some
+    coordinate $0$ or $1$, which the substitution $s_i\mapsto2s_i$ or $2s_i-1$ either keeps or maps
+    to $0$ or $1$; the stretching homotopy $H_t$ is continuous because at $s_i=(1+t)/2$ its argument
+    is $1$, and it is stationary on $\partial I^n$; and the interchange identity, evaluated on the
+    four quarters, is $f(2s_1,2s_2)$, $h(2s_1,2s_2-1)$, $g(2s_1-1,2s_2)$, $k(2s_1-1,2s_2-1)$ on
+    both sides, so it holds as an identity of maps. Checked tom Dieck's (4.3.1) chain of equalities
+    one step at a time, each step being a unit law or the interchange rule with $(a,e_1,e_1,e_2)$,
+    which gives $e_1$ as a right unit for $+_2$ and then $e_1=e_2$, $+_1=+_2$ and the commutativity
+    and associativity of the common law. Checked the deduction: with $+_1=+$ and $+_2=+'$ on
+    $\pi_n(X,x_0)$ the proposition gives $[f+'k]=[f]+_2[k]=[f]+[k]=[f+k]$ and
+    $[g+'h]=[g]+[h]=[h]+[g]$. The dimension restriction $n\geq2$ is exactly what a second coordinate
+    costs, and the same verification at $(i,j)$ gives $+_i=+_j$. Not changed: the statement as
+    printed on p. 358.
 review: draft
 ---
 
