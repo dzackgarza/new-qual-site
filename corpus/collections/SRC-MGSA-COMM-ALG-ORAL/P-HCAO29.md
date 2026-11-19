@@ -23,6 +23,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`: the statement is the question asking how to calculate lt(I), attributed there to Sturmfels,
+    and its printed words are the card's. The sheet numbers nothing and prints no folios, so the
+    item is identified by its position and its opening words rather than by a number. Both are now
+    named in the solution's opening sentence. Not checked in this pass: the argument, which the
+    edit does not touch.
 ---
 
 ::: {.problem}
@@ -36,6 +45,7 @@ $$
 
 
 ::: {.solution}
+This is the question of the Commutative Algebra section of the sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf` that asks how to calculate $\operatorname{lt}(I)$ (attributed there to Sturmfels), and the statement below is its wording.
 Write the polynomial ring as $R=k[x_1,\ldots,x_n]$, and introduce a new
 variable $t$. For $f\in R$ of degree $d$, let
 $f^h=t^df(x_1/t,\ldots,x_n/t)\in k[x_1,\ldots,x_n,t]$ be its total-degree
