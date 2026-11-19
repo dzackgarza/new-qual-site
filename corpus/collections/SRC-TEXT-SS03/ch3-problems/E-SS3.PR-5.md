@@ -46,6 +46,17 @@ audit:
     recorded corrections to the printed statement (the jump identity on the open interval, and the
     endpoint hypothesis needed for uniformity) are retained in the remarks. Statement unchanged; the
     card does not claim a retained solution set covers this problem.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance sentence added to the solution's opening, which the per-card rule requires and the
+    card lacked. Checked before writing it: the checkout's sources for Stein-Shakarchi are the book
+    itself (assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf and its page extractions), and
+    no solution set for the book is present under tmp/sources or assets/attachments; the Hartshorne
+    solution file that carries Stein's name is a different book's solutions. No search outside the
+    checkout was made for this step, and no page of a solution set was read. The mathematics of the
+    card is unchanged.
 ---
 
 ::: {.exercise}
@@ -81,7 +92,7 @@ $$
 g(z)\coloneqq\frac{1}{2\pi i}\int_{-M}^{M}\frac{h(y)}{y-z}\,dy,\qquad z\in\Omega\coloneqq\CC\setminus[-M,M].
 $$
 
-The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated.
+The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated. The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, the checkout holding the text of the book and no solution set for it, so the derivation below is the card's throughout.
 
 ::: pf
 
