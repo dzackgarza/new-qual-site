@@ -17,6 +17,33 @@ audit:
   by: claude
   date: 2026-11-19
   note: >-
+    #161, the state of the record, so that the second clause of the acceptance ("no note on the card
+    says a half is open") can be read off the audit rather than found by searching it. Six events
+    assert openness, each as the finding of its own day: 2026-11-14, "Withdraws the two counterexamples
+    added earlier today" (the question open at $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$); 2026-11-14,
+    "Three statements were wrong and are repaired" (a set-valued five-lemma for the triple not proved
+    on the card); 2026-11-16 third pass, "The withdrawal stands at the two $\pi_1$ pointed-set
+    windows" and "Printed part (b) remains unproved at the two $\pi_1$ pointed-set windows"; 2026-11-16
+    third pass continued, "Open, and stated as open: both directions at those two $\pi_1$ pointed-set
+    windows"; 2026-11-16 fourth pass, "The two windows centred at the pointed sets
+    $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$ remain unproved as claims"; and 2026-11-16 fifth and sixth
+    passes, "their surjectivity halves are not proved" and "The surjectivity halves remain unproved".
+    Each is superseded, and the pairs are: the two $\pi_1(X,A,x_0)$ and $\pi_0(A,x_0)$ windows by the
+    2026-11-14 event beginning "The printed (a) is now stated as proved at both set-valued terms",
+    whose certificate is the `lean-categories` declarations; the two $\pi_1$ windows of the triple by
+    the three events of 2026-11-16 at the head of this list, which prove the two surjectivity halves
+    by explicit homotopies, prove full injectivity at both windows, and withdraw the sentence "The
+    surjectivity halves remain unproved"; and the remaining caution in the fifth- and sixth-pass
+    events by the same three. This date's events then add what those did not: exactness at the three
+    degree-one terms, the all-basepoints clause as a stated hypothesis with the example that makes it
+    necessary, the published sources, and the end-to-end review. No event of this date, and none of
+    the three 2026-11-16 events at the head of the list, asserts any half of the five-lemma or any
+    instance of exactness to be open. The earlier six stand as the record of their days and are not
+    edited (QUAL-11).
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
     #161. The card now checks its two parts against each other in the one case where they overlap.
     With $B=\{x_0\}$ and $D=\{y_0\}$ the triple sequence is the pair sequence of $(X,A)$ and
     $\pi_0(A,B,x_0)=\pi_0(A,x_0)$, so part (b) is part (a) there; its four set-valued windows are the
