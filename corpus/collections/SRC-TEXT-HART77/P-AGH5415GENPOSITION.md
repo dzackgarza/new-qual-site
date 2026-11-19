@@ -548,6 +548,39 @@ audit:
     is a word that uses P as a centre and then continues past that step, whose
     later centres are functions of P. No claim of the step changes and (c) is
     still not claimed as proved on this card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (c) proved for r <= 7, so the sentence above is superseded for those
+    r. Read for this event: Dolgachev, Topics in Classical Algebraic Geometry,
+    §8.1, the definition of points in general position (i)-(iv) and
+    Proposition 8.1.9, both printed p. 251 (PDF p. 261, folio read on the
+    page), that the blowup of N <= 8 points is a Del Pezzo surface exactly when
+    the points are in general position; and Hartshorne V.4.15, printed p. 409.
+    Recomputed: the bookkeeping of a quadratic transformation on classes,
+    h -> 2h - c_1 - c_2 - c_3 and c_j -> h - c_k - c_l, an integral isometry
+    fixing K = -3h + sum c_i, so that for a word w and a terminal triple
+    {a,b,c} the class D = h_w - c_a - c_b - c_c has square -2, K-degree 0 and
+    D.h_w = 1, independently of P; that the terminal triple is collinear
+    exactly when the linear system of D is nonempty, a member of it meeting
+    each of c_a, c_b, c_c in 1 and so having none as a component; and that on a
+    Del Pezzo surface every nonzero effective class has negative K-degree,
+    which kills D. The closed sets to exclude are the lines through pairs of
+    the fixed points, the conics through its fives, and the locus where a cubic
+    through the r+1 points is singular at a fixed one of them, a square system
+    whose determinant is not identically zero; the Del Pezzo locus is their
+    nonempty complement. Not checked: Nagata's paper beyond the statements the
+    card quotes; r >= 8, where -K is not ample and the question stays open; and
+    the printed books themselves, only the retained copies.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    New step properness-r-at-most-seven, with the head, the bad-locus step, the
+    density step, the qed and the part-c-open step qualified to say (c) is
+    proved for r <= 7 and open for r >= 8. No other step changes: (a), (b),
+    (d) and (e) and the numbers 56 and 240 are untouched.
 
 ---
 
@@ -591,7 +624,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2, printed p. 277; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a (printed p. 282) a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The transcription below proves (a), (b), (d) and (e). Part (c) is not proved on this card. Its three steps prove the statement only given the properness of the bad locus --- the set of points $P$ for which some fixed finite word of admissible transformations makes a specified terminal triple collinear --- and the step on that locus asserts that properness without deriving it. No source listed for the card proves part (c) either.
+The transcription below proves (a), (b), (d) and (e), and it proves (c) for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}. For $r\ge8$ its three steps prove (c) only given the properness of the bad locus --- the set of points $P$ for which some fixed finite word of admissible transformations makes a specified terminal triple collinear --- and the step on that locus asserts that properness without deriving it. No source listed for the card proves part (c) for any $r$.
 
 ::: pf
 
@@ -665,7 +698,24 @@ Work on the open subset on which the successive centers occurring in $w$ are non
 
 The determinant is not identically zero, and the proof of that is the one point of this step that the card does not carry out.
 
-What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this card asserts properness and does not prove it in general: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and (c) is therefore not proved on this card for any particular $w$. What is proved without it is (a), (b), and everything in (d) and (e).
+What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this card asserts properness and does not prove it in general: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and for $r\ge8$ part (c) is therefore not proved on this card. The case $r\le7$ is proved in step [](#properness-r-at-most-seven){.pf-ref}, where the Del Pezzo criterion turns every one of these sets proper. What is proved without it is (a), (b), and everything in (d) and (e).
+:::
+
+:::
+
+::: {.pf-step #properness-r-at-most-seven}
+If $r\le7$, every set of step [](#bad-locus-proper-closed){.pf-ref} is a proper closed subset of $\PP^2$, and part (c) holds for those $r$.
+
+::: pf-proof
+Fix a word $w$ and a terminal triple $T=\{a,b,c\}$. The classes on $\operatorname{Bl}_{r+1}\PP^2$ can be followed through the moves of $w$: a quadratic transformation centred at three of the current points replaces $h$ by $2h-c_1-c_2-c_3$ and the three exceptional classes by $h-c_j-c_k$, an integral orthogonal transformation of $\operatorname{Pic}$ which fixes $K=-3h+\sum_ic_i$. So the classes $h_w$ and $c_1,\ldots,c_{r+1}$ attached to the terminal plane depend on $w$ alone and not on $P$, and
+$$
+D=h_w-c_a-c_b-c_c,\qquad D^2=1-3=-2,\qquad K\cdot D=0,\qquad D\cdot h_w=1 .
+$$
+The three terminal points are collinear exactly when $\linearsystem{D}\ne\emptyset$: a member of $\linearsystem{D}$ meets each of $c_a,c_b,c_c$ in $1$, so none of them is a component of it, and its image in the terminal plane is a line through the three; conversely the strict transform of that line lies in $\linearsystem{D}$.
+
+Now let $U$ be the complement in $\PP^2$ of the finitely many closed subsets on which the $r+1$ points fail to satisfy Dolgachev's conditions (i)--(iv) of the definition preceding Proposition 8.1.9, printed p. 251: three collinear, six on a conic, or a cubic through the points singular at one of them. Each is proper, the first two because the fixed tuple is in general position and the finitely many lines through its pairs and conics through its fives are proper closed subsets, the third because the cubics through the $r+1$ points singular at a fixed one of them are the solutions of a square system whose determinant is not identically zero. $U$ is nonempty. For $P\in U$ the blowup of $\PP^2$ at the $r+1\le8$ points is a Del Pezzo surface by Proposition 8.1.9 on that page, so $-K$ is ample and every nonzero effective class has negative $K$-degree; since $K\cdot D=0$ and $D\ne0$, $\linearsystem{D}=\emptyset$.
+
+Hence no point of $U$ lies in a set of step [](#bad-locus-proper-closed){.pf-ref}: were $w$ defined at $P\in U$ with the terminal triple collinear, $\linearsystem{D}$ would be nonempty there. Each of those sets is closed and misses the nonempty open set $U$, so each is proper, and step [](#dense-general-position-extension){.pf-ref} gives (c) for $r\le7$, with $V$ the complement of their countable union and of the finitely many points and lines.
 :::
 
 :::
@@ -685,7 +735,7 @@ Also exclude the finitely many original lines through pairs of the fixed points 
 $$
 V=\PP^2\setminus B.
 $$
-Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word, which is the definition of general position. Every point of $V$ therefore satisfies (c) --- given that each of the countably many bad sets is proper, which is what step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive; without that properness the intersection $V$ can be empty and part (c) is not proved. Part (c) is therefore not proved on this card.
+Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word, which is the definition of general position. Every point of $V$ therefore satisfies (c) --- given that each of the countably many bad sets is proper, which for $r\le7$ is step [](#properness-r-at-most-seven){.pf-ref} and for $r\ge8$ is what step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive; without that properness the intersection $V$ can be empty. Part (c) is therefore proved on this card for $r\le7$ and not for $r\ge8$.
 :::
 
 :::
@@ -694,7 +744,7 @@ Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open s
 No source listed for this card proves part (c).
 
 ::: pf-proof
-What the sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive. Of the solution sets retained for the book, two print part (c), and neither proves it: Egbert at printed p. 295, which treats the tuple $(P_1,\ldots,P_r)$ as a point of $(\PP^2)^r$ and does not address the fibre over a fixed tuple, and Yang Pi-Yeh at printed p. 112, whose argument uses part (a), the criterion for six points, for general $r$. The other sets retained for the book stop before Chapter V: Borcherds and Troiani at Chapter I, Cais, Sam, Lomont and Park at Chapter IV, and Stein, Saglam--Chris and Kim in Chapter III.
+What the sources print is the generic-point statement, Lemma 2.5 of Nagata, printed p. 279, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c), printed p. 409, is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete for $r\le7$ by step [](#properness-r-at-most-seven){.pf-ref} and, for $r\ge8$, given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive. Of the solution sets retained for the book, two print part (c), and neither proves it: Egbert at printed p. 295, which treats the tuple $(P_1,\ldots,P_r)$ as a point of $(\PP^2)^r$ and does not address the fibre over a fixed tuple, and Yang Pi-Yeh at printed p. 112, whose argument uses part (a), the criterion for six points, for general $r$. The other sets retained for the book stop before Chapter V: Borcherds and Troiani at Chapter I, Cais, Sam, Lomont and Park at Chapter IV, and Stein, Saglam--Chris and Kim in Chapter III.
 :::
 
 :::
@@ -753,7 +803,7 @@ This is the second half of Theorem 4a of Nagata, printed pp. 283--284: if $r\ge9
 :::
 
 ::: pf-qed
-Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c) only on the properness of the bad locus, which step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive, and step [](#part-c-open){.pf-ref} records that no source listed proves it; part (c) is not proved on this card. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
+Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c): for $r\le7$ the properness they rest on is step [](#properness-r-at-most-seven){.pf-ref}, and for $r\ge8$ it is asserted there and not derived, step [](#part-c-open){.pf-ref} records that no source listed proves it, and part (c) is not proved on this card for $r\ge8$. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
 :::
 
 :::
