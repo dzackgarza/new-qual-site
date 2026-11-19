@@ -44,15 +44,4 @@ Reference pages:
 
 - [[algebra/groups/groups-of-small-order|Groups of small order]] -- the groups of orders $p$, $p^2$, and $pq$, and of each composite order up to $20$.
 
-Also: [[algebra/resources/index|resources]] and [[algebra/workshops/index|workshops]].
-
-## Syllabus
-
-See [[algebra/resources/syllabus|Syllabus]].
-
-## Acknowledgements
-
-Thanks to Paco Adajar and Swaroop Hegde for solutions and proofs.
-Many solutions contain input from other graduate students and faculty at UGA, and from questions answered on Math Stack Exchange and MathOverflow.
-
-Extra drill problems are drawn from Pierce's algebra qual collections at UC Riverside, on [groups](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/) and on [Galois theory](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/galois/).
+Also: [[algebra/resources/index|resources]], [[algebra/resources/syllabus|syllabus]], and [[algebra/workshops/index|workshops]].
