@@ -28,7 +28,7 @@ A homogeneous ideal $I\subseteq S$ gives the closed subscheme $\Proj(S/I)\subset
 [[T-SCHPRJC]]
 
 For a ring $A$, $\PP^n_A=\PP^n_\ZZ\times_{\Spec\ZZ}\Spec A$, and $\OO_{\PP^n_A}(d)$ is the pullback of $\OO_{\PP^n_\ZZ}(d)$.
-Since $\PP^n_\ZZ\to\Spec\ZZ$ is proper and properness is stable under [[algebraic-geometry/schemes/fibre-products-and-base-change|base change]], $\PP^n_A\to\Spec A$ is proper.
+Since $\PP^n_\ZZ\to\Spec\ZZ$ is proper ([[D-MORPROJ]]) and properness is stable under [[algebraic-geometry/schemes/fibre-products-and-base-change|base change]], $\PP^n_A\to\Spec A$ is proper.
 
 ## Quotients by group actions
 
