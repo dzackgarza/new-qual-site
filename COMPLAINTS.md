@@ -343,11 +343,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **78 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **77 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Nineteen of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 78 stand as this item lists them.
+   reported and repaired above. Twenty of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 77 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -458,8 +458,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    computation identifies $H^*(E)$ with that of $S^{2n+1}$; simply connected and of the right cohomology,
    $E$ is homotopy equivalent to $S^{2n+1}$.
 
-   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24), and §4.D (1 of its 10,
-   namely -8) --- 78 proofs.
+   **§4.D-8, read the same day, completing §4.D's ten.** The proof is correct --- T(B x D^n) =
+   (B x D^n)/(B x S^{n-1}) = B_+ smash (D^n/S^{n-1}) = B_+ smash S^n by the product-quotient identity
+   and the one-point compactification of the interior --- and the card needed one repair that was not
+   mathematical: its `suspension` step opened the `pf-proof` child with four colons, which the parser
+   tolerates but which closed that child and reopened a sibling. Corrected to three colons.
+
+   Remaining unread in this item's set: §4.1 10–23 (14), §4.2 (39), §4.3 (24) --- 77 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
