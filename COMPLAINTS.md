@@ -5603,3 +5603,23 @@ So the empty list is documented as the collection's finished state. The director
 **The shape of the fix for this one.** A collection is entitled to an empty problem list when it is a bucket rather than a source document, and the check has no way to tell. The smallest change that keeps the check honest is a field the collection can set — e.g. `problems: []` together with `intentionally_empty: true`, or a `source_kind: bucket` — which the check then skips, leaving a genuinely unfilled list still reported. What I did not do: no collection, schema or audit code was edited, for the same reasons as the record above — the collection is another lane's file and the check is tooling that reaches the whole corpus.
 
 **Uncertainty.** The remaining 23 orphans were not examined, so the audit's `orphans` count may contain more twins and more genuine defects; that is the one class whose reading is unfinished.
+
+## 2026-11-19: `collection-lists-problems` is the audit's third false positive, and what the audit's six classes actually contain
+
+**Object and need.** With `duplicate-exams` and `duplicate-bodies` traced (records above), the third flagged class was read here. It is also not a defect. This closes the reading of the audit's output: of five violations across four classes, none is a data error, and the audit's exit status of 1 does not mean the corpus is broken.
+
+**The flagged collection.** `corpus/collections/SRC-UNSORTED-PRELIM/index.md` has `source_kind: compilation`, `date: {kind: unknown}` and `problems: []`, which is what the check reports. Its own body says why, in a remark written deliberately:
+
+> The list is empty because no document was found, and this collection currently lists no problems at all: its `source.problems` is `[]`. It is a placeholder for prelim problems whose source is not identified, and it is not itself a source document.
+>
+> The empty list is the finished state here, not a gap in it. No card this collection lists carries a `source` or `provenance` field, and it holds no card files of its own.
+
+So the empty list is documented as the collection's finished state. The directory holds exactly one file, its `index.md`; no card's listing was lost and nothing was dropped from the list. Removing the collection would lose the bucket; filling the list would invent sources.
+
+**The audit's six classes, read to the end.** `empty-areas` and `collection-problem-references` pass. `duplicate-bodies` (1) is the source's own double printing, answered on `P-MAXAT-3-05` with printed p. 2 quoted. `duplicate-exams` (4) is a schema gap: `ExamSource` has no field for which paper a collection is, so a course's midterm, final and eight practice finals are formally one exam. `orphans` (25) is at least partly twin definitions — the two residue-5 ones are, and 23 were not examined. `collection-lists-problems` (1) is this deliberate empty. **Not one of them is a card with wrong mathematics, and not one can be repaired by editing the flagged data.**
+
+**The shape of the fix for this one.** A collection is entitled to an empty problem list when it is a bucket rather than a source document, and the check cannot tell. The smallest change that keeps the check honest is a field the collection can set — `intentionally_empty: true`, or a `source_kind: bucket` — which the check then skips, leaving a genuinely unfilled list still reported. What I did not do: no collection, schema or audit code was edited, for the same reasons as the record above — the collection is another lane's file and the check is tooling that reaches the whole corpus.
+
+**A lost update, recorded because it happened here.** The first attempt at this entry was appended to `COMPLAINTS.md` and then vanished before the commit: another chat rewrote the file from a working copy that did not hold it. It is the same fault this file records against `db470b07ac`, and it is why the append and the commit below are done in one step.
+
+**Uncertainty.** The remaining 23 orphans were not examined, so the audit's `orphans` count may contain more twins and more genuine defects; that is the one class whose reading is unfinished.
