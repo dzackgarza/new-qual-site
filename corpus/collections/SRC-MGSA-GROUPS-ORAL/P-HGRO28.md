@@ -12,6 +12,17 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked: this is the Frattini argument. N <= N_G(N) is
+    trivial. For the reverse inclusion, g in N_G(N) gives gPg^{-1} <= gNg^{-1} = N, and both P and
+    gPg^{-1} are Sylow p-subgroups of N because |P| is the full p-part of |G| and hence of |N| (N
+    contains P); Sylow conjugacy inside N gives n in N with gPg^{-1} = nPn^{-1}, so n^{-1}g
+    normalizes P and lies in N, whence g in N. The card's steps follow this exactly, and the point
+    that |P| is the full p-part of |N| is stated. Not claimed: any statement about N_G(H) for
+    non-Sylow H, where the equality fails.
 ---
 
 ::: {.problem}
