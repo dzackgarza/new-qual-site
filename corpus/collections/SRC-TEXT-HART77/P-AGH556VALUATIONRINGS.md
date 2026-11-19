@@ -240,6 +240,33 @@ audit:
     tmp/sources/abhyankar-1956-valuations-centered-local-domain.md, printed
     page = PDF page plus 320. Not checked: nothing new; the card's steps were
     not re-derived in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Closed under #132's alternative: no published proof of R contained in
+    R_0 was located, and the card's own proof of kind (3) is checked here
+    against the book. Read: Hartshorne V.5.6, printed p. 420, and Exercise
+    II.4.12 with its Note, printed p. 108. Checked step by step:
+    unique-center-exists is the valuative criterion for the proper X;
+    center-not-generic-point, because a centre at the generic point would
+    make R dominate K and hence equal it, against R proper; the codim-one
+    case, because a valuation ring dominating the discrete valuation ring
+    O_{X,x} with the same fraction field is that ring; the divisorial case,
+    because the local ring of the exceptional divisor is the discrete
+    valuation ring of its generic point; and element-eventually-regular,
+    which is the hint: resolve [f:1] by point blowups (Exercise V.5.1),
+    compare the centres y_j of R on the resolution with the centres x_i
+    defining R_0 to get O_{Y_m,y_m} = A_N, and use that f in R gives a
+    morphism Spec R -> A^1 which must agree with the morphism through Y_m
+    because P^1 is separated, so f lies in A_N. Then R_0 contained in R is
+    union-contained-in-r and R contained in R_0 is the previous step, so
+    R = R_0. The argument uses no characteristic. No published proof of
+    R contained in R_0 is claimed: COMPLAINTS lists the sources searched
+    (Egbert printed p. 299, Yang printed p. 114, MathOverflow 12717 and MSE
+    1125594), each of which asserts the step or omits it. Not checked: no
+    source outside those named was read; the five steps were checked as
+    named and not re-derived beyond that.
 ---
 
 ::: {.problem}
