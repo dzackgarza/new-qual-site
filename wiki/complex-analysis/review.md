@@ -63,10 +63,6 @@ See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 [[T-K66DJ]]
 
-[[T-BYNL5]]
-
-[[T-YLI6Y]]
-
 [[C-FRF33]]
 
 [[T-5SKNT]]
@@ -80,8 +76,6 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 [[T-4XPWL]]
 
 [[T-ZZJDP]]
-
-[[T-UBWL2]]
 
 [[T-C5VEI]]
 
