@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the two statements of Hatcher §4.1 Exercise 9 are tom Dieck's problems, and what stays open is a proof
+
+**Object and need.** The first record of this date says that no published source states Hatcher's Exercise 9 and that Heath--Kamps was not obtained. Two published statements exist, in Friedrich tom Dieck, *Algebraic Topology* (EMS, 2008), and `E-HAT-4.1-9` now cites them by printed page.
+
+**Observed evidence.** §6.1 Problem 3, printed p. 125, states the exact sequence of a pointed triple and ends "The sequence ends with $\pi_1(X,A,b)$"; §6.2 Problem 3, printed p. 129, states the five-lemma at the pointed-set end for a map of pairs as "a Five Lemma type result", with the surjectivity half and the injectivity half separate, the injectivity hypothesis required "for each $c\in A$" and the conclusion "for each $a\in A$". Read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md` and in the PDF's own text layer; the running heads of PDF pages 138 and 142 read 125 and 129, so printed $=$ PDF $-13$ for this copy and §6.2's problems fall on printed p. 129. Both entries are problems in the book: they are stated and not proved. The clause "for each $c\in A$" is the same all-basepoints restriction that `E-HAT-4.1-9` part (b) now states, and it is the clause without which the five-lemma is false, as three counterexamples found in this session's swarm confirm (each fails at a basepoint in $B$, where the vertical map at $\pi_1(A,B,\cdot)$ stops being injective).
+
+**Impact and owner.** The #123 obligation on `E-HAT-4.1-9` is now a *proof* obligation only: the form, the page and the basepoint clause are published and cited, and no published proof has been located. The card's audit records this, and also records that the two Lean declarations it links were not re-elaborated, the shared image's `lean-categories` checkout being at `064b5cfd` and containing no `LeanCategories/Topology/PairHomotopySequence.lean`.
+
+**Uncertainty.** High confidence in both pages and in the reading of the two statements; they were read in two independent extractions of the same book. Not checked: whether a published proof of Hatcher's Exercise 9 or of tom Dieck's two problems exists; the Heath--Kamps paper is still unobtained, and Project Euclid answers automated requests with a bot challenge.
+
 ## 2026-11-19: `E-HAT-4.1-9` proves exactness at the pointed-set terms of the triple sequence, and a displayed homotopy on `E-HAT-4.1-8` is replaced
 
 **Object and need.** [#161](https://github.com/dzackgarza/new-qual-site/issues/161) asks that `E-HAT-4.1-9` state and prove exactness at every term of the long exact sequence of a triple, $\cdots\to\pi_2(X,A)\to\pi_1(A,B)\to\pi_1(X,B)\to\pi_1(X,A)\to\pi_0(A,B)$, including the pointed-set terms, and that no note on the card say a half is open. The acceptance is the card's mathematics, not a published citation.
