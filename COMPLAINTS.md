@@ -9160,3 +9160,58 @@ So the register's 84.7% of structured cards overstates the gap by about 28 point
 **Checks.** `qualc.authoring check P-AGH562CHERNGRIFFITHS`: "schema and Markdown parsing OK (single card)"; the pre-commit card-YAML and schema hook on the commit, "Card YAML and schema: 1 changed file(s) checked"; and the folio of PDF p. 197 read as printed 182 for II.8.20.
 
 **Uncertainty.** Read for this record: the eleven steps named, and the statements they use at the pages they cite, in the text version of the book; the printed folios were re-read only for II.8.20. Not read this round: `hyperplane-restriction-sections`, `harris-bound` and `nonspecial-implies-pg-zero` were read in the fourth round and are unchanged, and `trivial-canonical-pg-one` in the fourth; the remaining steps of `P-AGH3117NONALGSHEAF`, `s1` to `s4`, `s7` and `s8`, are not read by this round, so #168's acceptance is not met for that card. The twelve cards the first record names as unread are still unread, except that `P-AGH4110PICOFARITHGENUSONE` and `P-AGH5111FINITEAUT` are now read in full for the steps #168 lists.
+
+## 2026-11-19, Yang sweep: IV.4.14--IV.4.16 cited at printed pp. 93--94, five printed slips
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.4.14 and 4.4.15 are on printed p. 93; 4.4.16 begins on p. 93 and
+continues onto p. 94, so the citation is to both pages.
+
+**`P-AGH4414FERMATCUBICHASSE`, IV.4.14 — cited, printed p. 93, one omitted sign.** The criterion of
+(4.21) turns the question into the coefficient of $(xyz)^{p-1}$ in $(x^3+y^3-z^3)^{p-1}$: a term
+$x^{3i}y^{3j}(-z)^{3k}$ with $i+j+k=p-1$ matches only when $3i=3j=3k=p-1$, impossible if
+$3\nmid p-1$, and otherwise $i=j=k=\frac{p-1}{3}$ with coefficient $\pm\frac{(p-1)!}{(((p-1)/3)!)^3}$,
+a unit because neither factorial carries the factor $p$. So $X_{(p)}$ is supersingular exactly for
+$p\equiv2\bmod3$, a set of density $\frac12$ by Dirichlet. The printed coefficient drops the sign
+$(-1)^{(p-1)/3}$ from the $z$-entries; it does not affect vanishing. Commit `ae87b54c6d`.
+
+**`P-AGH4415PTORSIONANDHASSE`, IV.4.15 — cited, printed p. 93, one $\deg/\deg_s$ slip.** The first
+half is a chain: $\hat F'$ separable $\Leftrightarrow$ $\hat F'^*\Omega_{X_p}\to\Omega_X$ injective
+$\Leftrightarrow$ $H^0(X_p,\Omega_{X_p})\to H^0(X,\Omega_X)$ injective $\Leftrightarrow$ (Serre
+duality) $F'^*:H^1(X,\OO_X)\to H^1(X_p,\OO_{X_p})$ surjective $\Leftrightarrow$ Hasse invariant $1$.
+The second half uses that $F'$ is purely inseparable, so $\deg_s([p]_X)=\deg_s(\hat F')$, and that the
+separable degree of $[p]_X$ counts its geometric kernel points: $p$ when $\hat F'$ is separable,
+$1$ when not. The middle sentence prints "$\deg(\hat F')=\deg(n_X)$" and
+"$\#\ker n_X=\deg(\hat F')$"; with ordinary degrees that would make $\#\ker[p]_X=p$ in both cases
+and contradicts the Hasse-zero conclusion, and the later lines, which write $\deg_s$, are the correct
+form. Recorded on the card. Commit `5a0180c05a`.
+
+**`P-AGH4416HASSEBOUNDRIEMANNHYPOTHESIS`, IV.4.16 — cited, printed pp. 93--94, three slips.**
+(a) Frobenius on $\Spec\FF_q$ is an isomorphism, so $X_q\cong X$ and the twist acts as the $q$-th
+power map on coordinates. (b) $F'^*\omega=0$ for $\omega=\frac{dx}{2y+a_1x+a_3}$ because
+$d(x^q)=qx^{q-1}dx=0$, so $(1-F')^*\omega=\omega$, $1-F'$ is separable, and its kernel is $X(\FF_q)$.
+(c) With $a=1+\deg F'-\deg(1-F')$ one recovers $[a]=F'+\hat F'$ from
+$(1-F')(1-\hat F')=1-F'-\hat F'+[q]$, and $N=q-a+1$. (d) $\deg(m+nF')(m+n\hat F')=m^2+n^2q+amn\ge0$
+and the AM-GM step give $\abs a\le2\sqrt q$. (e) $m+nF'$ is separable iff $p\nmid m$, so Hasse zero
+$\Leftrightarrow$ $\hat F'$ inseparable $\Leftrightarrow$ $p\mid a$, which with $\abs a\le2\sqrt q<p$
+forces $a=0$ and $N=p+1$. The slips: the expansion in (c) prints $+F'\hat F'$ twice where the middle
+is $-1_X+F'+\hat F'-[q]$; the closing line of (e) reads $N=a+1$ for $N=q-a+1$; and that same line
+prints "$p\nmid a$" where the preceding sentences have $p\mid a$, with "$p>5$" where
+$\abs a\le2\sqrt q<p$ already holds at $p\ge5$. The conclusions match the exercise. Commit
+`f169a03649`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$6$, $1$--$8$
+and $1$--$10$ with `(QED labels present)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None` on all three at the first attempt; the macro sweep
+reported only standard names (`\log`, `\varphi`, `\Leftrightarrow`, `\ge`, `\le`).
+
+**Not checked.** Yang's Solutions outside printed pp. 93--94; the Hartshorne pages of the three
+exercises, not reopened in this pass, the comparison being against the statements the cards carry;
+and the printed book itself. In 4.4.14 the citation of (4.21) was taken from the text, and in 4.4.16
+the reference to proposition 2.1 for separability was likewise not read on its own page.
+
+**The remainder.** Twenty Chapter IV cards still lack Yang; the queue now starts at IV.4.17
+`P-AGH4417MULTIPLESOFAPOINT`. Yang's 4.4.17--4.4.20 are on printed p. 94, which this batch read only
+for the end of 4.4.16.
