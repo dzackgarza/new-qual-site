@@ -36,6 +36,8 @@ In particular, the original presheaf $\mcf$ was a sheaf if and only if for each 
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.13, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.13, printed p. 5, proves the same two claims it turns on: that the strongest topology making every $\bar s$ continuous is described section-wise, and that a section of $\operatorname{Spe}(\mcf)$ is continuous exactly when it is a section of $\mcf^+$.
+
 Write
 $$
 E=\operatorname{Spe}(\mcf)=\coprod_{P\in X}\mcf_P
