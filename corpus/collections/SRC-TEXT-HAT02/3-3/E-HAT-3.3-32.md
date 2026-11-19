@@ -43,6 +43,25 @@ audit:
     except that Sam's own text slips in writing the retraction identity on M instead of on the
     boundary. Read against Hatcher: the ZZ_2 coefficient ring makes orientability automatic and
     Exercise 31 supplies the nonzero boundary class.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 32 of §3.3, printed p. 260 — the
+    exercises of §3.3 are 1--6 on p. 257, 7--14 on p. 258, 15--26 on p. 259 and 27--35 on p. 260,
+    checked at PDF pages 266--269 of the held book — and against the source transcribed, Steven V.
+    Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 32, whose printed folio is 16 while
+    the PDF page is 17 of `tmp/sources/hatcher-solutions-sam-2008.pdf` (the page's running head
+    "3.C. H-SPACES AND HOPF ALGEBRAS" and its number 16), so the card's "printed p. 16" is right and
+    the offset is what a page check must allow for. Checked: with $R=\ZZ_2$ every manifold is
+    $R$-orientable, so Exercise 31 applies and $\partial[M,\partial M]=[\partial M]$; exactness of
+    $H_n(M,\partial M)\to H_{n-1}(\partial M)\xrightarrow{i_*}H_{n-1}(M)$ gives
+    $\mathrm{im}\,\partial=\ker i_*$, so a retraction, which makes $i_*$ injective by
+    $r_*i_*=\mathrm{id}$, forces $\partial=0$, contradicting $\partial[M,\partial M]=[\partial M]\ne0$
+    — the form in which Sam states it; the card states the equivalent form $i_*[\partial M]=0$ with
+    $[\partial M]\ne0$. Confirmed at the page: Sam writes "$r\circ i$ is the identity on $M$" where
+    the composite is the identity on $\partial M$, the slip the card records and does not reproduce.
+    No defect. The printed page is added, the card having had none.
 ---
 
 ::: {.problem}
@@ -50,6 +69,7 @@ Show that a compact manifold does not retract onto its boundary.
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 32, printed p. 260.
 
 The argument is the one in Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 32, printed p. 16: coefficients $\ZZ_{2}$ so that orientability is free, Exercise 31 to make the boundary map nonzero on the fundamental class, and exactness to make $i_{*}$ kill that class. Sam's text prints "$r\circ i$ is the identity on $M$" where the composite is the identity on $\partial M$; the slip is not reproduced here.
 
