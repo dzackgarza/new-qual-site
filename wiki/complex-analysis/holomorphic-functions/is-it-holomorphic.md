@@ -26,7 +26,7 @@ See [[complex-analysis/holomorphic-functions/power-series|Power series]].
 
 ## Given a limit or an integral
 
-[[T-LHSMY|Morera's theorem]]: a continuous $f$ whose integral over every triangle in an open set vanishes is holomorphic there.
+[[T-LHSMY|Morera's theorem]] — a continuous $f$ whose integral over every triangle in an open set vanishes is holomorphic there.
 It applies to functions with no formula to differentiate: a locally uniform limit of holomorphic functions ([[C-TODSQ]]), a series of them, or an integral depending holomorphically on a parameter.
 See [[complex-analysis/cauchy-theory/morera-and-converses|Morera and converses]].
 
