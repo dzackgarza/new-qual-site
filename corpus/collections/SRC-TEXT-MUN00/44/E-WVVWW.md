@@ -52,6 +52,16 @@ audit:
     all of R: Tietze on the n coordinate functions (R normal by Theorem 32.2, S closed) and
     the explicit piecewise-linear filling. The argument is the card's own; no retained set
     covers this exercise. No repair needed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution section said "the argument is the card's own; no retained solution set covers this
+    exercise", contradicting the card's own solution-written event of 2026-11-11, which records the
+    transcription from Zinger's Problem Set 7 solution of Munkres §44 Exercise 2 (p. 274), PDF p. 2,
+    and names what was adapted. The retained file was re-read and does carry that construction. The
+    solution section now names the set and the adaptations. The earlier note is left as written; this
+    event is the correction.
 ---
 
 ::: {.exercise}
@@ -60,7 +70,7 @@ Show there is a continuous surjective map $f: \RR \to \RR^n$.
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set covers this exercise. Its one input from the book is the space-filling curve of §44: by [[E-SADP0]], which is Exercise 44.1 obtained from Theorem 44.1, the cube $I^{n}$ is a continuous image of $I$.
+The argument is transcribed from the retained solution of Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, Problem Set 7, "Solution to Problem p274, #2", PDF p. 2 (`tmp/sources/munkres-solutions-zinger-mat530-ps7.pdf`), which builds a continuous surjection of $[2m-1,2m]$ onto $[-m,m]^{n}$ for each $m$, pastes these, and extends to $\RR$. Its one input from the book is the space-filling curve of §44: by [[E-SADP0]], which is Exercise 44.1 obtained from Theorem 44.1, the cube $I^{n}$ is a continuous image of $I$. Where the card departs from Zinger: he extends by Tietze's theorem applied to the coordinates of the pasted map, and the card states that theorem by number, and it records his remark that the extension may be taken linear over each gap and constant on $(-\infty,1]$.
 
 ::: pf
 
