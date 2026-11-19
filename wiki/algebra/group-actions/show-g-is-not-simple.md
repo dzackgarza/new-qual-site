@@ -66,12 +66,16 @@ A subgroup of index the smallest prime dividing $\size G$ is normal, so a subgro
 
 ## The normalizer of a Sylow subgroup
 
-For a Sylow $p$-subgroup $P$, orbit-stabilizer for the conjugation action on the Sylow $p$-subgroups gives $n_p = [G : N_G(P)]$.
-Hence a bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to which [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]] and [[algebra/group-actions/show-g-is-not-simple#Index the smallest prime|Index the smallest prime]] apply.
+A bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to which [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]] and [[algebra/group-actions/show-g-is-not-simple#Index the smallest prime|Index the smallest prime]] apply.
+
+[[T-3X5FF]]
 
 ## Two Sylow subgroups meeting nontrivially
 
 Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, satisfy $\size{P\intersect Q} = p$.
+
+[[PR-IGLFV]]
+
 Groups of order $p^2$ are abelian, so $D \coloneqq P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
 Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $\size G\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $\size G\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
@@ -81,6 +85,8 @@ $G$ acts by conjugation on its $n_p$ Sylow $p$-subgroups, giving a homomorphism 
 By Sylow's second theorem the action is transitive, so $\ker\rho$ is a proper normal subgroup when $n_p > 1$.
 If $G$ is simple and $n_p>1$, then $\rho$ is injective and $\size G \divides n_p!$.
 This is the action of $G$ on the cosets of $N_G(P)$.
+
+[[T-EF2MZ]]
 
 ## Arguments and conclusions
 
