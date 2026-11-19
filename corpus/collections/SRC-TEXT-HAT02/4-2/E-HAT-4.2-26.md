@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 26, printed p. 391,
+    and Proposition 2.45, printed p. 146. The proof is Sam's, §4.2 Exercise 26, and is
+    correct: pi_i(X~ x K(pi_1 X,1)) = pi_i(X) for i >= 2 and pi_1 = pi_1(X); a connected
+    finite-dimensional CW complex has finitely many nonzero homology groups, while
+    K(pi_1 X,1) is infinite dimensional when pi_1 has an element of finite order and its
+    homology, being the group homology, is nonzero in infinitely many degrees. One slip of
+    Sam's is not copied: he writes pi_i(X~) = pi_i(X) for i > 2 where i >= 2 is meant.
+    Statement unchanged.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -35,6 +47,9 @@ Generalizing the example of $\RP^2$ and $S^2 \times \RP^\infty$, show that if $X
 :::
 
 ::: {.solution}
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 26, PDF p. 23**, and the argument below is that one, checked against the book: the homotopy groups agree because the universal cover has the same $\pi_i$ for $i\ge2$ and $\pi_1(X)$ is recovered from $K(\pi_1(X),1)$; the two spaces cannot be homotopy equivalent because a connected finite-dimensional CW complex has only finitely many nonzero homology groups, while $K(\pi_1(X),1)$ for a group with an element of finite order is infinite dimensional (Proposition 2.45, printed p. 146) and has infinitely many nonzero homology groups — its homology is the group homology of $\pi_1(X)$, whose torsion shows in infinitely many degrees.
+
+
 
 The argument is the card's own: the two spaces have the same homotopy groups, and a homotopy equivalence would make the homology of a finite-dimensional cover receive the periodic homology of $K(C_{p},1)$ as a direct summand.
 
