@@ -9,11 +9,13 @@ topics:
 
 # Rational maps
 
-A rational map is a morphism defined on a dense open subset ([[D-VARREG]]), so on an irreducible variety it is determined by its values on any nonempty open set and is given by rational functions.
+[[D-VARBIRAT]]
+
+A rational map is a morphism defined on a dense open subset ([[D-VARBIRAT]]), so on an irreducible variety it is determined by its values on any nonempty open set and is given by rational functions.
 
 ## Rational maps and dominance
 
-[[D-VARREG]]
+[[D-VARBIRAT]]
 
 For the rule $\thevector{x:y:z}\mapsto\thevector{x:y}$ on $\PP^2$, the indeterminacy locus is the single point $\thevector{0:0:1}$.
 The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Har77, §I.4, pp. 24--27]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
@@ -27,7 +29,7 @@ A rational map to $\PP^n$ is a linear system on $X$ with no requirement that it 
 
 ## Birational equivalence
 
-Two varieties are birational when there are dominant rational maps between them that are inverse after restriction to open sets, and this is the same as an isomorphism $k(X)\cong k(Y)$ of fields over $k$ [@Har77, Corollary I.4.5, p. 26].
+Two varieties are birational when there is a birational map between them ([[D-VARBIRAT]]), and this is the same as an isomorphism $k(X)\cong k(Y)$ of fields over $k$ [@Har77, Corollary I.4.5, p. 26].
 So the birational classes of varieties over $k$ are the finitely generated field extensions of $k$ of finite transcendence degree, and a variety is a model of its function field.
 Invariants of the field alone are therefore birational invariants, and a birational question may be asked of the field.
 
