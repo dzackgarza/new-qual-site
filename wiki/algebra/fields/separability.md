@@ -7,7 +7,7 @@ topics:
 
 # Separability
 
-Every algebraic extension of a [[D-KQFIV|perfect field]] is separable, and the finite fields are perfect, so an inseparable extension needs an imperfect field of characteristic $p$.
+An inseparable extension needs an imperfect field of characteristic $p$: every algebraic extension of a [[D-KQFIV|perfect field]] is separable, and the finite fields are perfect.
 
 [[D-ZT46D]]
 
