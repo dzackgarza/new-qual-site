@@ -11,28 +11,29 @@ Throughout, $G$ is a finite group and representations are finite-dimensional ove
 
 [[D-CTAKB]]
 
-::: {.remark title="Characters determine representations"}
-The [[D-CTAKB|character]] $\chi_V$ of a representation $V$ determines $V$ up to isomorphism: by [[T-PIO2B|Maschke's theorem]] $V$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the multiplicity of each irreducible summand is an inner product of characters.
+## Characters and their arithmetic
+
+The character is constant on conjugacy classes, its value at the identity is the degree, and it is additive over direct sums and multiplicative over tensor products.
 
 - $\chi_V$ is a class function, since the trace is invariant under conjugation.
 
 - $\chi_V(1) = \dim V$.
 
 - $\chi_{V\oplus W} = \chi_V + \chi_W$ and $\chi_{V\tensor W} = \chi_V\chi_W$.
-:::
+
+Because a representation of a finite group splits into irreducibles and the multiplicity of each irreducible summand is recovered from the character, the character determines the representation.
+
+[[T-PIO2B]]
+
+[[T-YHH3M]]
+
+[[P-ZCY6S]]
 
 ## Orthogonality
 
-For representations $V$ and $W$,
-$$
-\inner{\chi_V}{\chi_W} \coloneqq {1\over\size G}\sum_{g\in G} \chi_V(g)\overline{\chi_W(g)} = \dim \Hom_G(V,W),
-$$
-and the irreducible characters form an orthonormal basis of the space of class functions on $G$.
-Consequently:
+The orthogonality relations are the statement that the irreducible characters are orthonormal for the inner product of class functions, and the column form is what determines the last entries of a table.
 
-- $V$ is irreducible if and only if $\inner{\chi_V}{\chi_V} = 1$.
-
-- The multiplicity of an irreducible $V_i$ as a summand of $W$ is $\inner{\chi_W}{\chi_{V_i}}$.
+[[P-ZCY6S]]
 
 ## Building a character table
 
@@ -44,8 +45,18 @@ Consequently:
 
 4. For an action of $G$ on a finite set $X$, the permutation character is $\chi(g) = \size{\Fix(g)}$; if the action is $2$-transitive, then $\chi-\chi_{\text{triv}}$ is irreducible.
 
-5. The remaining entries are determined by the column orthogonality relations $\sum_i \chi_i(g)\overline{\chi_i(h)} = \size{C_G(g)}$ if $g$ and $h$ are conjugate and $0$ otherwise; for $g=h=1$ this is $\size G = \sum_i d_i^2$.
+5. The remaining entries are determined by the column orthogonality relations of [[P-ZCY6S]].
+
+[[P-MD6VX]]
+
+[[P-UIXFV]]
+
+[[P-ZVXTG]]
+
+## Permutation characters
 
 ::: {.remark title="Permutation characters and Burnside's lemma"}
 For the permutation character $\chi(g) = \size{\Fix(g)}$ of an action on $X$, Burnside's lemma states that the number of orbits is $\inner{\chi}{\chi_{\text{triv}}}$; see [[algebra/group-actions/the-class-equation|The class equation]].
 :::
+
+[[C-HE5SL]]
