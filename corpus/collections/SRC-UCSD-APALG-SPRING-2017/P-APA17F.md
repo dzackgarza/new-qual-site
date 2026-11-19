@@ -11,6 +11,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    6 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; both parts, and the examples checked against the printed wording (real
+    irreducible module with a non-scalar endomorphism; indecomposable but not irreducible complex
+    module); `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no other
+    card of the collection in this pass.
 - event: solution-written
   by: claude
   date: 2026-11-18
@@ -33,7 +46,7 @@ Give examples of each of the following objects.
 :::
 
 ::: {.solution}
-Throughout $G$ is a group, a $G$-module over a field $k$ is a $k$-vector space with a linear action of $G$, irreducible means having no nonzero proper $G$-stable subspace, and indecomposable means not being the direct sum of two nonzero $G$-stable subspaces. The collection's `provenance` is the Spring 2017 preliminary examination, and no solutions sheet accompanies it, so the examples below are the card's own.
+Throughout $G$ is a group, a $G$-module over a field $k$ is a $k$-vector space with a linear action of $G$, irreducible means having no nonzero proper $G$-stable subspace, and indecomposable means not being the direct sum of two nonzero $G$-stable subspaces. The problem is Problem 6 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 6 of the paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`; no solutions sheet accompanies it, so the examples below are the card's own.
 
 ::: pf
 
