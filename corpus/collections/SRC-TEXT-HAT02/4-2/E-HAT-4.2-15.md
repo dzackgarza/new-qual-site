@@ -37,6 +37,20 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §4.2. Read against Hatcher, Exercise 15 of §4.2, printed p. 390 with
+    its bracketed hint — §4.2's exercises are 1--12 on p. 389, 13--23 on p. 390, 24--29 on p. 391
+    and 30--39 on p. 392, checked at PDF pages 398--401 of the held book — and the printed page is
+    added, the card having had none. Checked: $H_1=0$ by simple connectivity, $H_2\cong H^1=0$ by
+    Poincaré duality and the universal coefficient theorem, and $H_0=H_3=\ZZ$, so $M$ is a homology
+    3-sphere; then $\pi_2=0$ by Hurewicz (otherwise it would be the first nonzero higher group and
+    would map isomorphically to $H_2=0$), $\pi_3\cong H_3=\ZZ$ by Hurewicz applied to the
+    2-connected $M$, and a map $S^3\to M$ carrying a generator is an isomorphism on $H_3$ and hence
+    on all homology groups, so homology Whitehead applies — both spaces having CW type, which is the
+    hint's Corollary A.12. No defect.
 ---
 
 ::: {.problem}
@@ -44,6 +58,8 @@ Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$. 
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 15, printed p. 390.
+
 Let $M$ be a closed simply-connected $3$-manifold. Poincaré duality gives
 $$
 H_i(M;\ZZ)\cong
