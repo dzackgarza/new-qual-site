@@ -57,6 +57,27 @@ audit:
     inserted source-checked note inside audit, before the YAML separator, and separated the source
     text from the closing display as required by the source renderer.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 1 of §2.B, printed p. 176, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and the transcription checked against
+    DeMason, *M382C Full Credit HW Problems*, Hatcher 2.B.1, printed pp. 68--70 of
+    `tmp/sources/demason-m382c-hatcher-20210404.pdf`, whose section begins on p. 68 and whose next
+    exercise begins on p. 70. Two points checked. (1) Theorem 3.44 is on printed p. 254, not
+    p. 253 as the event of 2026-11-06 has it (PDF page 263 of the book, whose folio is 254); the
+    statement itself is quoted correctly. (2) The source's displayed answer for the disjoint union
+    lists an entry at $i=0$ separately from those at $i=n-k-1$ and $i=n-\ell-1$; the card keeps
+    the entries at $n-k-1$, $n-\ell-1$ and the $\widetilde H^{n-1}(X)$ term and merges coincident
+    indices, which is the correct reading: for the wedge the complement of $S^n-X$ is connected
+    unless $n-k-1=0$ or $n-\ell-1=0$, and in those cases the entry coincides with one already
+    present. Checked in the card: the wedge's reduced cohomology as a direct sum, Alexander duality
+    in the form $\widetilde H_i(S^n-X)\cong\widetilde H^{n-i-1}(X)$, and the component counts
+    $\widetilde H^0(X)=\ZZ,\ZZ^2,\ZZ^3$ for a disjoint union with $k,\ell\geq1$, exactly one zero,
+    and $k=\ell=0$ respectively, the last being four points and $H_0(S^1-X)=\ZZ^4$. Not claimed: a
+    different published solution of the exercise.
+
 ---
 
 ::: {.problem}
