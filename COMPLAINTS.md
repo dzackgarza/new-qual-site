@@ -6810,3 +6810,44 @@ own outputs above, by running them; the collections' `index.md` files were not r
 **Page arithmetic confirmed.** §4.2's exercises are 1–12 on printed p. 389, 13–23 on p. 390, 24–29 on p. 391 and 30–39 on p. 392, at PDF pages 398–401 of the held book. None of the four cards cited a printed page; each now does.
 
 **Not done.** `E-HAT-4.2-5`, `-15`, `-16`, `-19`, `-25`, `-32`, `-36` remain, as do the other sections the last report listed (Chapter 1, §2.1, §2.2, §2.3, §3.1, §3.C, §3.E, §3.H, §4.A and the smaller appendices). The #170 source obligations are unchanged.
+
+## 2026-11-19: the order of W(E6) given a second printed derivation, the scan's page offset is not constant, and Yang's 5.5.1 recorded
+
+**Object and need.** `P-AGH5411WEYLGROUPS` (issue #158) and `P-AGH551RESOLVERATFN` (V.5.1). The first
+card's part (c) rests on $|W(\mathbf E_6)|=51840$, which it took from Dolgachev's orbit--stabilizer
+count on the exceptional vectors; the same book that supplies the faithfulness of the geometric
+representation evaluates that order independently, and the entry was not on the card.
+
+**The second derivation, Humphreys §2.11, printed pp. 43--44.** The section's method is
+orbit--stabilizer for $W$ acting on the roots, with the isotropy of the highest root read off from
+Theorem 1.12(a) and the data of §2.10; for $\mathbf E_6$ it reads "The 72 roots form a single orbit.
+The highest root is orthogonal to all simple roots except $\alpha_2$, so its isotropy group is of type
+$A_5$ (having order $6!$). Therefore $|W|=6!72=2^73^45$", and Table 2 on the same page lists
+$2^7\cdot3^4\cdot5$ against $72$ roots. Recomputed: $6!\cdot72=720\cdot72=51840=2^7\cdot3^4\cdot5$, and
+the same paragraph's $24\cdot48$ for $F_4$ and $2^5 6!\,126$ for $E_7$ check the transcription. So the
+order has two printed derivations, one on the exceptional vectors and one on the roots, and step
+`weyl-order` now records both.
+
+**The scan's offset is not constant.** The audit events of this date recorded printed p. $N$ = PDF
+p. $N+17$ for printed pp. 109--113 of `tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf`,
+and that is right there; in §2.11 the same scan has PDF p. 56 carrying folio 43 and PDF p. 60 folio 47,
+that is printed p. $N$ = PDF p. $N+13$. A blanket offset for this scan would have put §2.11 at printed
+pp. 47--48 and the citation would have been wrong by four pages. Every page cited for the card was
+therefore read at its own folio, and the event says so.
+
+**V.5.1, Yang's entry at printed p. 113.** The entry takes Theorem 3.9's embedded resolution of
+$\sum C_i$ and blows up a point of $C_i\cap C_j$ with $n_in_j<0$; it then says that finitely many
+blowups suffice because $(f)$ is a finite sum, which is the termination its two predecessors also
+assert without proof. The card's own step `zero-pole-disjoint` supplies it, through the drop of
+$(\pi^*f)_0\cdot(\pi^*f)_\infty$ by $\mu_P((f)_\infty)^2$ at each blowup. It is recorded beside
+Egbert's entry, which has the same shape.
+
+**Repair.** `P-AGH5411WEYLGROUPS` in `3b193875bb`, `P-AGH551RESOLVERATFN` in `f874601811`; this record
+in the COMPLAINTS commit that carries it. No statement, step, hypothesis or number of either card
+changes.
+
+**Uncertainty.** Read for this record: Humphreys §2.11 at printed pp. 43--44 (PDF pp. 56--57) and the
+head of §2.13 at printed p. 47 (PDF p. 60), rendered as page images, together with the contents page
+of the scan at printed p. viii; Yang's Solutions 5.5.1 at printed p. 113; and Hartshorne's V.5.1 at
+printed p. 420. Not read: Humphreys outside §§2.11 and 5.3--5.4; Yang's entries for §V.5 beyond 5.5.1;
+the printed books themselves; and no search of the literature beyond these files.
