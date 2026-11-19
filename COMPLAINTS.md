@@ -6007,3 +6007,24 @@ So **all 224 references resolve on 2026-11-19**, and **71 cards** of this residu
 **Two structural defects found while doing it, both invisible to any step count.** The step beginning "All four groups exist and are distinct" in `P-ARTALG-AL04-3` was **cut in half by a `:::` fence**, with its continuation lying loose in the enclosing proof frame; rejoining it took a compensating closer, and the first attempt at that produced a document pandoc refused with "unknown div inside a proof step" even though `qualc.authoring check` passed. And `P-TOPS25F` had no `audit:` key at all until a referee pass added one and swept an uncommitted edit of mine into its commit.
 
 **The rule.** The same rule as the sixth item, one level down: a hand-written scanner is the weakest link in a report like this, and the fence length is exactly the property it is easiest to get wrong, because the corpus is free to use either form and both render. When a count is about to drive work, print the blocks it flags and read one of them — and when a repair changes fences, run the filter, not the schema check, since the schema does not see div nesting.
+
+## 2026-11-19, tenth item: the `tmp/sources` citations of residue 1 are 59 files and 121.6 MB, dominated by three textbooks, so copying them into the repository is not the repair
+
+**Object and need.** The entry above measured 71 residue-1 cards citing `tmp/sources` and named two possible repairs: copy the cited file into `assets/attachments`, or cite the durable location beside the `tmp/` one. This measures which repair is available.
+
+**Observed evidence.** The distinct files the residue-1 cards cite under `tmp/sources`, and their sizes:
+
+```
+distinct cited files: 59      total: 121.6 MB
+  50.4 MB  hartshorne-1977-algebraic-geometry.pdf        (3 cards)
+  23.5 MB  demason-m382c-hatcher-20210404.pdf            (1 card)
+  13.9 MB  hatcher-2002-algebraic-topology.pdf           (3 cards)
+   6.4 MB  Gallian-Contemporary-Abstract-Algebra-7e.pdf  (2 cards)
+   3.0 MB  tomdieck-algebraic-topology-ranicki.pdf       (2 cards)
+```
+
+and **no** residue-1 card citing `tmp/sources` has a committed namesake under `assets/attachments` (`0` of `70`), so no citation can simply be repointed today.
+
+**Impact and owner.** Copying into the repository would add 121.6 MB, of which the largest items are three copyrighted textbooks — the repository already keeps exam papers and small solution sheets under `assets/attachments`, not whole books, so this is a licensing and repository-size decision rather than a card repair. The realistic repair for those citations is the second option: name the durable location (publisher, arXiv or course page) beside the `tmp/` path, which for the textbooks, Stein--Shakarchi aside, is what several cards already do in their audit notes.
+
+**Uncertainty.** The size is of the files as they sit on this VM, and a text version of the same book is one of the 59 (`hatcher-2002-algebraic-topology.md`, 2.2 MB, cited by 5 cards). Not measured: whether every one of the 59 is reachable from a public location, which is what the second repair needs.
