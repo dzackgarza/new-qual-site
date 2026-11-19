@@ -20,3 +20,11 @@ Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomo
 
 (ii) If moreover $\Omega$ is bounded, $f$ extends continuously to $\overline{\Omega}$, and $f$ is nonconstant, then $\min_{\overline{\Omega}}\abs{f}$ is attained only at points of $\partial\Omega$.
 :::
+
+::: {.example}
+The hypothesis that $f$ has no zeros is needed: $f(z) = z$ on $\DD$ has $\min_{\overline\DD}\abs f = 0$, attained only at the interior point $0$, while $\abs f = 1$ on $\bd\DD$.
+:::
+
+::: {.remark}
+This is the maximum modulus principle [@SS03, Theorem 4.5 and Corollary 4.6 of Chapter 3 (p. 92)] applied to $1/f$, which is holomorphic because $f$ is nonvanishing.
+:::
