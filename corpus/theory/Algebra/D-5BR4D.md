@@ -17,14 +17,14 @@ review: draft
 ---
 
 ::: {.definition}
-Let $V$ be a real vector space with a symmetric bilinear form, or a complex vector space with a Hermitian form, and write $\inner{\wait}{\wait}$ for the form.
+Let $V$ be a real vector space with a symmetric bilinear form, or a complex vector space with a Hermitian form, and write $\inner{-}{-}$ for the form.
 A vector $v\in V$ is a \dfn{null vector} if $\inner{v}{w} = 0$ for every $w\in V$; the null vectors form the \dfn{nullspace} of the form.
 The form is \dfn{nondegenerate} if its nullspace is $\theset 0$, that is, if for every $v \neq 0$ there is some $v'\in V$ with $\inner{v}{v'} \neq 0$.
 Otherwise it is \dfn{degenerate}.
 :::
 
 ::: {.proposition}
-Let $V$ and $\inner{\wait}{\wait}$ be as in the definition, with $V$ finite-dimensional.
+Let $V$ and $\inner{-}{-}$ be as in the definition, with $V$ finite-dimensional.
 
 1. Fix a basis of $V$ and let $A$ be the matrix of the form in that basis.
    Then $v$ is a null vector if and only if its coordinate vector $Y$ satisfies $AY = 0$, so the form is nondegenerate if and only if $A$ is invertible.
