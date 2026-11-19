@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: all eighteen Berkeley Fall 2010 cards now name the packet's problem and page
+
+**Object and need.** The earlier record of this date began this batch: the collection retains its solution packet and its cards never said they were written from it. Thirteen cards remained then; they are done, and the collection is closed on this defect.
+
+**Observed evidence.** Every card now carries an opening provenance paragraph naming the problem, the packet `assets/attachments/f10solutions.pdf` and the page in that file, read in its text layer for each pass. Three of the thirteen turned on a comparison rather than a stamp: `P-BKF10-3B` is **not** a transcription --- the packet reaches the sector by $z\mapsto z-i$, $1/z$, $z-i/2$ and a fourth root, while the card goes to the half-plane by $i(1+z)/(1-z)$ and takes the fourth root there, different maps onto the same sector --- and the paragraph says so; `P-BKF10-6A` records that the packet's sentence prints "max" where the $\gcd$ needs "min", an evident slip the card's $\min$ corrects; and `P-BKF10-5A` records that the card takes the packet's parenthetical $C=1$, which the packet states and does not prove, and proves it. `P-BKF10-9A` records the reading of $u^{2/3}$ as $(\sqrt[3]{u})^2$ that makes the packet's piecewise second solution differentiable at $x=-3$.
+
+**Impact and owner.** Thirteen commits, one per card: `2ce2827f7f`, `1219a9a80a`, `b1869aea6c`, `79870913ce` (1B--4B), `2e669ec388`, `976dd2af4f`, `949c43e88d`, `ef0c26ce7d` (6A, 8A, 9A, 5B), `ad3a2f9c94`, `f99069f95d`, `33d3c474cc`, `5cc128a668`, `0e274f321f` (6B--9B), each with a `source-checked` event naming the page and what the card adds. Checks per card: `qualc.authoring check`, and `tmp/lam.sh` with the numbering intact and QED present (4 to 9 steps). A search of the collection for the packet's name now returns all eighteen files.
+
+**Uncertainty.** High confidence in each comparison, made against the packet's own sentences. Not checked: the cards' statements against a printed exam booklet, which the collection does not retain --- the packet is the seven-page solution file and its pages are cited as pages of that file.
+
 ## 2026-11-19: an undefined control word inside an audit note, and what that shows about which text the TeX check reads
 
 **Object and need.** The whole-corpus report at the tree of `79870913ce42` fails on one error: `corpus/collections/SRC-TEXT-HART77/P-AGH2120SUPPSUBSHEAF.md: not defined by the preamble or MathJax: \shsheaf in '\\shsheaf_Z(\mcf)'`. The card was committed at 20:47:30 that evening; the occurrence is in its `audit:` note describing the printed p. 68 statement, not in the rendered problem or solution.
