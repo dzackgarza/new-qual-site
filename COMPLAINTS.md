@@ -8749,3 +8749,65 @@ queue: it already carries a Yang citation from an earlier batch.
 **Impact and owner.** Five cards (`P-CH8-7`, `-10`, `-38`, `-53`, `-67`) have no certificate remark. This is not an omission of writing: `LeanCategories/Algebra/CH8DirectProduct.lean` on `lean-categories` main holds `product_mul_apply`, `product_one_apply`, `prod_bot_eq_ker_snd`, `prod_bot_normal`, `bot_prod_normal`, `prod_comm_iff`, `prod_orderOf_eq_zero_iff` and `pi_orderOf_eq_zero_iff`, which certify `P-CH8-1`, `-3`, `-4` and `-40` -- cards that already carry remarks -- and nothing that states the isomorphism $G_1\times G_2\cong G_2\times G_1$, the count of elements of order 9 in $\ZZ_3\oplus\ZZ_9$, the matrix group of Exercise 34, the negative answer of Exercise 45, or the four decompositions of $U(165)$. Writing those remarks needs new declarations in `lean-categories`; this session holds write access to this repository only, and the two `lean-categories` checkouts on this VM belong to other projects' workspaces, so it may not write them there. The item is therefore blocked on the certificate repository, and belongs with `#114`.
 
 **Uncertainty.** The gate was green on 2026-11-19 (`14410 cards and 348 wiki pages OK`, record `02dc6d437e4d-20261119T214225.232Z-qualc-check.json`) on a tree containing the three rewrites. It has not been re-run since the `COMPLAINTS.md` entry you are reading, which touches no card.
+
+## 2026-11-19, Yang sweep: IV.4.4--IV.4.6 cited at printed pp. 90--91, three printed slips found
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entry 4.4.4 runs from printed p. 90 onto p. 91 --- it begins at the foot of
+p. 90 and its case analysis and the $j$-formula in the $a_i$ are on p. 91 --- and 4.4.5 and 4.4.6 are
+both on p. 91.
+
+**`P-AGH444JINVARIANTRATIONALINCOEFFICIENTS`, IV.4.4 — cited, printed pp. 90--91, two slips.**
+The completion of the square, the factorization $(x-a)(x-b)(x-c)$, the Legendre value of $j$ with
+$\lambda=\frac{a-c}{a-b}$, the $a_i$ formula by Vieta, and the seven existence cases are all there.
+Two do not hold as printed. The symmetric form
+$\frac{(a^2+b^2+c^2-ab-bc-ca)^3}{((a-b)(b-c)(c-a))^2}$ is missing the factor $2^8$ that its own
+preceding expression carries: at $(a,b,c)=(\lambda,1,0)$, which is the Legendre curve itself, the
+numerator is $(\lambda^2-\lambda+1)^3$ and the denominator $\lambda^2(\lambda-1)^2$, so the two
+printed forms differ by exactly $256$. And case 7 offers $y^2=x^3+2kx+2k$ with $k=\frac{j}{1728-j}$;
+that curve has $j=1728\frac{8k}{8k+27}$, which equals $j$ only at $j=1728$. With $3kx$ in place of
+$2kx$ the same $k$ gives $1728\frac{k}{k+1}=j$, so the coefficient of $x$ is the slip and the value of
+$k$ is right. Both are recorded on the card, with the corrected forms. Commit `dd1cfb02fb`.
+
+**`P-AGH445DEGREETWOENDOMORPHISM`, IV.4.5 — cited, printed p. 91, no defect; its last two steps
+machine-checked.** The entry takes $\pi,\pi'$ from $\abs{2P_0}$ and $\abs{2f(P_0)}$, makes
+$g=(x:z)\mapsto(x^2:z^2)$, and runs the ramification bookkeeping with
+$D=(0,0)+(1,0)+(\lambda,0)+P_0$ to get $g^{-1}(\{1,\lambda\})=\{0,1,\lambda,\infty\}$; the cross-ratio
+identity $(0,1,\lambda,\infty)\sim(-1,1,\sqrt\lambda,-\sqrt\lambda)$ is where its "easily calculate"
+sits, and it is the one thin place. What it produces was checked here and is right: the degree-eleven
+polynomial $256\lambda^{11}-1808\lambda^{10}+\cdots+256\lambda$ factors exactly as
+$16\lambda(\lambda-1)^2(\lambda+1)^2(\lambda^2-6\lambda+1)(\lambda^2-\lambda+16)(16\lambda^2-\lambda+1)$,
+whose roots are precisely those listed, and $256(\lambda^2-\lambda+1)^3/(\lambda^2(\lambda-1)^2)$ at
+them takes the values $1728$ at $\lambda=-1$, $8000$ at $3\pm2\sqrt2$ and $-3375$ at the four roots
+involving $\sqrt{-7}$ --- the exercise's $2^6\cdot3^3$, $2^6\cdot5^3$ and $-3^3\cdot5^3$. Commit
+`260ced87c6`.
+
+**`P-AGH446HYPEROSCULATIONPOINTS`, IV.4.6 — cited, printed p. 91, one slip in the induction.** Part
+(a) is the dual-map count: $\deg R_\psi=2g-2+2d=d^2-d-2r=\deg X^*$, then
+$\deg R_\phi=2g-2+2(d^2-d-2r)=3d^2-5d-6r$, giving $3d^2-6d-6r=6(g-1)+3d$ inflection points at
+$g=\frac12(d-1)(d-2)-r$, which is the exercise's count. Part (b) is done at $n=3$, where
+$\#\text{hyperosculation}=\#\text{inflection}$ and Hurwitz gives $12(g-1)+4d$, and then by induction on
+$n$ from the hypothesis $n(n-1)(g-1)+nd$ for the projection to $\PP^{n-1}$. That recursion does give
+$n(n+1)(g-1)+(n+1)d$ --- since $(n-1)(n+2)+2=n(n+1)$ and the $d$-coefficient is $2n-(n-1)=n+1$ ---
+but the entry prints $n(n+1)(g-1)+(n-1)d$, contradicting its own $12(g-1)+4d$ at $n=3$. The
+coefficient is a slip for $(n+1)d$ and the card records it as such. Part (c) is right: $P$ is
+hyperosculating exactly when $d(P-P_0)=0$, so the hyperosculation points are $X[d]$, of order $d^2$
+in characteristic zero. Commit `43c8ca9c31`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$6$, $1$--$9$
+and $1$--$9$ with `(QED labels present)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None`; a sweep of every `\name` in each card against
+`vocabularies/macros.json` plus the standard set reported only `\ne`, `\ker`, `\nmid` and `\dfn`,
+each of which is used across the collection already. The two computations used `/usr/bin/python3`
+(SymPy 1.14); nothing outside `.scratch/` was written.
+
+**Not checked.** Yang's Solutions outside printed pp. 90--91; the Hartshorne pages of the three
+exercises, not reopened in this pass, the comparison being against the statements the cards carry;
+and the printed book itself. Of 4.4.4, the cases 1--6 were read but only case 7 was recomputed; of
+4.4.5, the ramification bookkeeping in (c) was read, not re-derived from Hurwitz.
+
+**The remainder.** Twenty-nine Chapter IV cards still lack Yang; the queue now starts at IV.4.8
+`P-AGH448ALGEBRAICFUNDAMENTALGROUP`. IV.4.7 is cited already; 4.4.7--4.4.10 are on printed p. 92 and
+4.4.11--4.4.16 on p. 93, so the next batch has two pages to read.
