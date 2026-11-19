@@ -25,6 +25,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.4.21, printed pp. 95,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF pages are the printed
+    pages. Checked against the book: Hartshorne IV.4.21, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the divisibility step ($b\omega\in R$ since $a\in\ZZ\subseteq R$, then $b=qf+r$ with $r\omega\in R$ forcing $r=0$) and the identity $\ZZ\oplus\ZZ(f\omega)=\ZZ+f\OO$ for $\OO=\ZZ\oplus\ZZ\omega$.
+    Not checked: Yang's Solutions outside printed pp. 95; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.4.21 at printed pp. 95; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -163,4 +183,8 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove existence of the required repr
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.4.21, printed p. 95, is the shortest possible proof of the conductor: with $\OO=\ZZ\oplus\ZZ\omega$ and $f$ the least positive integer such that $f\omega\in R$, any $a+b\omega\in R$ has $b\omega\in R$ because $\ZZ\subseteq R$, and dividing $b$ by $f$ leaves $r\omega\in R$ with $0\le r<f$, hence $r=0$; so $f\mid b$ and $R=\ZZ\oplus\ZZ(f\omega)=\ZZ+f\OO$. That is exactly right, and it gives uniqueness too, since $f$ is determined by $R$. The printed $\omega$ is $\frac{d+\sqrt d}{2}$, which generates $\OO$ only when $-d\equiv1\bmod4$ --- in general one takes $\omega=\frac{1+\sqrt d}{2}$ in that case and $\omega=\sqrt d$ when $-d\equiv2,3\bmod4$ --- and the entry does not split on the residue of $d$, so it proves the statement for one of the two shapes of $\OO$. Since $\frac{d+\sqrt d}{2}-\frac{d-1}{2}=\frac{1+\sqrt d}{2}$, the lattice it names is the right one in the case it covers.
 :::
