@@ -33,6 +33,8 @@ Find a conformal map from $\CC \backslash \{ x \in \RR : \abs{ x } \geq 1 \}$ on
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Let
 $$
 D=\CC\sm\{x\in\RR:\abs x\geq1\}

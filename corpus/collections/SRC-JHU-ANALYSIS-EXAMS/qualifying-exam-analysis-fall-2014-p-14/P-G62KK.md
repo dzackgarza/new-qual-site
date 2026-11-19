@@ -48,6 +48,8 @@ $f_k\to f$ uniformly on $A_\varepsilon$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
+
 ::: pf
 
 ::: pf-step

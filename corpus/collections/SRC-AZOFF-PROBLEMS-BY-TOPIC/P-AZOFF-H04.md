@@ -32,6 +32,8 @@ How many roots does the equation $z^7-4z^3-1=0$ have in the open disk $\abs{z}<1
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Set
 $$
 p(z)=z^7-4z^3-1.

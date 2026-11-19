@@ -22,6 +22,8 @@ Determine all holomorphic automorphisms of the upper half plane $\HH = \{z : \Im
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 Let $\HH=\{z:\Im z>0\}$ and let $\phi(z)=\frac{z-i}{z+i}$, the Cayley transform, a biholomorphism $\HH\to\DD$.
 
 ::: pf

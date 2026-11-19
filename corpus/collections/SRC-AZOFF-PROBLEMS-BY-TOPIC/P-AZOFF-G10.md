@@ -36,6 +36,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Set
 $$
 F(z)=\frac{e^{iz}}{(z^2+a^2)^2}.

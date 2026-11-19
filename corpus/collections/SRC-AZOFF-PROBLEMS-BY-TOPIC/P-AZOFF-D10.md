@@ -34,6 +34,8 @@ This is Liouville’s Theorem.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 Choose $M\geq0$ such that
 $$
 \abs{f(z)}\leq M

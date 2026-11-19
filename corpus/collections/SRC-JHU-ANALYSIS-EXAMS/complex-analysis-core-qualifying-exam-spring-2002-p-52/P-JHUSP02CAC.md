@@ -32,6 +32,8 @@ Classify all simply connected regions in the extended complex plane up to biholo
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 Up to biholomorphic equivalence, the complete list is
 $$
 \boxed{\widehat{\CC},\qquad \CC,\qquad \Delta.}

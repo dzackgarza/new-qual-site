@@ -30,6 +30,8 @@ Show that any sequence in $\mathcal{F}$ has a subsequence that converges uniform
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 The functions in $\mathcal F$ are taken absolutely continuous, so that $f(x)=\int_0^xf'(t)\,dt$ for $f\in\mathcal F$.
 
 ::: pf

@@ -29,6 +29,8 @@ Compute: $\displaystyle\int_{0}^{\infty} \frac{dx}{1 + x^{3}}$.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the collection of past analysis examinations alone, so the argument is the card's own.
 The value is
 $$
 \boxed{\frac{2\pi}{3\sqrt3}}.

@@ -40,6 +40,8 @@ Find the Laurent series for the following functions about $0$ and classify their
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1}

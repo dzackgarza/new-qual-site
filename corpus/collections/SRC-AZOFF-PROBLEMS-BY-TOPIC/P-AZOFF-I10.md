@@ -43,6 +43,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the problem compilation alone, so the argument is the card's own.
 For $c\in\DD$, define the disk automorphism
 $$
 \phi_c(z)=\frac{z-c}{1-\bar c z}.
