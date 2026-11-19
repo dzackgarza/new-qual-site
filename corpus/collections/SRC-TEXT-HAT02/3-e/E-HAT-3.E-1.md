@@ -65,6 +65,15 @@ audit:
     has no text layer on the pages carrying it, so the citation is to the section and its printed
     range, not to a single page.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The page left unpinned in the event above is now pinned. Rendering the running heads at 120 dpi:
+    PDF page 318 carries 309, page 319 carries 310 with the heading Exercises at its foot, and page
+    320 carries 311, where Section 3.F begins. The exercises of Section 3.E are therefore all on
+    printed p. 310, and this card's Exercise 1 is printed there.
+
 ---
 
 ::: {.problem}
