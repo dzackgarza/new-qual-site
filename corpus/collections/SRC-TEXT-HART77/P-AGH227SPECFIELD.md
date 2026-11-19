@@ -32,6 +32,8 @@ Show that to give a morphism $\Spec K \to X$ is equivalent to giving a point $x 
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.2.7, printed p. 80. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §2, Exercise 2.2.7, printed p. 14, argues in the same way: a morphism $\Spec K\to X$ is a point together with a local homomorphism of local rings, which because it is local has image the maximal ideal, hence is a map $k(x)\to K$.
+
 Let
 $$
 S=\Spec K.
