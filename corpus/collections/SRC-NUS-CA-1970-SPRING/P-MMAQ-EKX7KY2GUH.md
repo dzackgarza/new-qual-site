@@ -33,6 +33,8 @@ State and prove the divergence theorem on any rectangle in $\RR^2$.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the theorem is proved here by identifying $\mathbf n\,ds=(dy,-dx)$ along the counterclockwise boundary and applying the fundamental theorem of calculus to each of the two claims, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 ### Statement of the divergence theorem on a rectangle
 
 Let $R = [a, b] \times [c, d] \subset \RR^2$ be a closed rectangle, and let $\partial R$ denote its boundary oriented counterclockwise.
