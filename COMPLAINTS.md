@@ -388,11 +388,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **71 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **70 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Twenty-six of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 71 stand as this item lists them.
+   reported and repaired above. Twenty-seven of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 70 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -548,15 +548,16 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    no card changed; the remaining verification in this card is (c), and the next reader should do it rather
    than treat this record as covering it.
 
-   **§4.1-16, begun and NOT counted as read.** The statement was read against the printed exercise,
-   and the card opens with the construction of the proof preceding Proposition 4.13: attach cells to the
-   source in dimensions at least $n+1$, extending $f$ over each, which is the printed route. The two
-   isomorphism claims --- on $\pi_i$ for $i\le n$ for $X\to Z_n$, and for $i\ge n+1$ for $Z_n\to Y$ ---
-   were not verified in this pass, so the card stays in the unread count below. A reader who continues
-   should finish those two claims rather than treat this note as covering them.
+   **§4.1-16, finished and counted read.** The construction is the printed one: having made
+   $\pi_i$ an isomorphism for $i\le n$, at each stage $k\ge n+1$ wedge $k$-spheres onto representatives
+   of the classes of $\pi_k(Y)$ not yet hit --- which keeps the lower groups fixed and makes the map onto
+   $\pi_k$ --- and attach $(k+1)$-cells along representatives of the kernel, extending over $Y$ by chosen
+   nullhomotopies, which makes it injective there. The union $Z_n$ inherits both properties by compactness,
+   since a sphere is compact and so lands in a finite stage; that is the one step the card's audit says it
+   supplied, and it is the correct one. So $X\to Z_n$ is an isomorphism on $\pi_i$ for $i\le n$ and
+   $Z_n\to Y$ for $i\ge n+1$, as the exercise asks.
 
-   Remaining unread in this item's set: §4.1 16–23 (8, of which 16 is begun), §4.2 (39), §4.3 (24)
-   --- 71 proofs.
+   Remaining unread in this item's set: §4.1 17–23 (7), §4.2 (39), §4.3 (24) --- 70 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
@@ -5552,3 +5553,53 @@ The UNL pair is the sharpest: the two exams differ in their course number (970/9
 **What was repaired.** All ten cards with unproved leaves now carry a `pf-proof` on every step: a sentence deriving each leaf from the preceding steps, and, on each container, a sentence saying why its subclaims suffice. The mathematics was not changed; each card's audit event says what was re-read and what was not. Commits: `E-26ELV` `2cbeff008a`, `P-FZIG3` `7bc7968997`, `E-2TY2B` `56d3ec7052`, `P-XLANN` `8fca60f12c`, `E-5QSZ7` `f5d8ed7faf`, `P-PATOJ` `d45e4e55be`, `P-AMD-6OJQMSOZ` `337cb191b6`, `E-HK-42-3` `6a766a1382`, `P-EVBF7` `d38c5f49a8`, `P-APAS26B` `a300444cdb`. Three of these also carried a STYLE violation the proof text had hidden: a `pf-qed` whose only content was a back-reference to earlier steps (`P-AMD-6OJQMSOZ`, `P-EVBF7`), and a `**Goal.**` paragraph restating the card's own statement (`E-HK-42-3`, `P-APAS26B`); all four are gone, and the last step of the proof now carries the QED label.
 
 **The rule this yields.** A stack scan over fenced divs is only as good as its fence pairing, and the corpus's uniform `:::` fences give a hand-written scanner no hint of depth. Before reporting a structural defect from a scan, print the block and read it: a blank proof body followed by steps is a container, not an empty proof. The measured quantity that matters for this corpus is the absence of the whole block, which no fence-pairing error can fabricate.
+
+## 2026-11-19: #170's eleven Hatcher cards read for correctness — two proofs repaired, one gap closed, three false remarks and two citations corrected
+
+**Object.** [Issue #170](https://github.com/dzackgarza/new-qual-site/issues/170) lists the eleven `SRC-TEXT-HAT02` cards whose own steps no reader had checked: the parts #123 dispositioned as "published steps plus a marked own assembly", or as the card's own. The acceptance is that each listed part is read correct, or repaired, by a reader other than its author. This is that read. No source obligation moves: none of the eleven has a located published solution, which is what made them the batch.
+
+**What the read found, card by card.**
+
+| Card | Card's own part | Verdict |
+| --- | --- | --- |
+| `E-HAT-2.B-3` | the assembly after the repaired cover | **repaired**: step `#k0`'s radial projection |
+| `E-HAT-2.B-4` | (b), the collared-disk reduction | correct as it stands |
+| `E-HAT-2.B-5` | the bicollar step on Bredon 19.11, pp. 236–239 | **gap closed**: the degree-one relative group |
+| `E-HAT-2.B-7` | the model of rank $4^n$ read from the figure | **repaired**: the figure is two handles, so the rank is $2^{n+1}$ |
+| `E-HAT-2.B-9` | beyond Hausmann Prop. 4.3.9 | proof correct; **three false statements** around it |
+| `E-HAT-2.C-1` | $n\leq0$ | correct; the minimum of $e(K)+e(L)$ added |
+| `E-HAT-2.C-6` | the trace (Lefschetz) computation | correct as it stands |
+| `E-HAT-3.3-21` | the bracketed question on $\ZZ\times\RR$ | correct as it stands |
+| `E-HAT-4.1-1` | the four-quarter interchange | correct; one citation page |
+| `E-HAT-4.1-7` | well-definedness, the homomorphism property, $\gamma f$ | correct; one interior notation |
+| `E-HAT-4.A-1` | beyond tom Dieck Lemma 2.7.4 | correct as it stands |
+
+**The two mathematical repairs.** `E-HAT-2.B-3`'s case $k=0$ retracted $D^n-\{p\}$ onto the sphere by $\rho(x)=p+(x-p)/\abs{x-p}$, said to land in $S^{n-1}$ "because $\abs{\rho(x)-p}=1$": that is the sphere of radius one about $p$, and it is $S^{n-1}$ only when $p=0$, so neither identity the step used held. The step now uses the radial projection from $p$ onto $\partial D^n$ — the positive root of $\abs{p+s(x-p)}=1$, continuous in $x$ — whose straight-line homotopy stays in $D^n$ by convexity and avoids $p$. `E-HAT-2.B-7`'s model was a misreading of the figure: the exercise doubles "the number of handles in the basic building block", the block of Example 2B.2 being a solid torus, a ball with one handle, so the doubled block has two; the figure draws two, one at each end, each with its own pair of hooked horns and its own dashed short handle. The card had read the two pairs as four horns of one handle, which gave $a\mapsto[a_1,a_2][a_3,a_4]$ and rank $4^n$. The correct count is $2^{n+1}$ handles with one commutator per handle, and then the doubled construction *is* the classical one begun one stage later: its stages are $F_{2^{n+1}}$, the classical system's at $n+1$, so the direct limit is the group of Example 2B.2 itself, not a larger one. Doubling the block changes the staging, not the complement group, and not the homology.
+
+**The gap.** `E-HAT-2.B-5`'s excision argument concluded from the acyclicity of $X$ and $A$ that $H_j(X,A)=0$ for all $j>0$. Exactness gives that for $j\geq2$; in degree one it gives $H_1(X,A)\cong\ker(H_0(A)\to H_0(X))$, which is zero here because $A$ is connected and $X$ path-connected. The step now says so. The rest of the second proof was checked and holds: $D^n-L$ star-shaped, the two components of $S-\Sigma$, $D'$ a $k$-manifold with boundary $\Sigma$ through the chart, the bicollar $\beta(h'(x),t)=h'((1+t/2)x)$ with image in $h'(\{1/4\leq\norm x\leq3/4\})$, Brown's Theorem 5 with $n=k$, and the excision hypotheses.
+
+**The record defects, all on `E-HAT-2.B-9`.** The proof is right; three sentences about it were not. (1) The separating example said that for $z\mapsto z^2$ on $S^1$ "both sides have $H_1=\ZZ_2$": the left side does, and the right side would be $\ZZ_2^{\oplus2}$, which is the failure. (2) The remark said "the exercise's sequence is over $\ZZ$": §2.B's transfer is over $\ZZ_2$, as its own proof says, and that is the sequence the exercise names; §3.G, printed p. 321, is the one stated for any coefficient group. (3) Hausmann's Proposition 2.6.2 is on printed p. 33, not p. 34, which carries Lemma 2.6.3. Two citations elsewhere: `E-HAT-4.1-1`'s identification of the cube model with tom Dieck's is on printed p. 88, not p. 87; and `E-HAT-4.1-7`'s shell is $I^n-\operatorname{int}_{I^n}Q$, since with the absolute interior $\operatorname{int}B$ would lie in the shell and the two clauses of $\gamma f$ would clash on it.
+
+**How the read was done, and its independent second check.** Each card was read against the book at the printed page and against the source it cites, with the computations redone: the reduced Mayer--Vietoris sequence and the cokernel $\ZZ\oplus\ZZ_m$ forcing $m=\pm1$; the collar's injectivity and the cone disjointness; the star-shaped contraction and the excision closure conditions; the $\chi$ count $2-4m$ and the $2m$-transposition trace; the cofinal rectangle computation and $\Ext(\QQ,\ZZ)=\RR$; the four quarters and Eckmann--Hilton; $\delta$'s boundary values and May's lifting square. A swarm of eight independent readers (`smwngci6x`) worked the same eleven cards on other directions; four of its reports are accepted and their findings are in the repairs above — the $k=0$ defect, the three `E-HAT-2.B-9` sentences with the Hausmann page, the tom Dieck page and the interior notation. Two of its members verified `E-HAT-2.B-7`'s rank $4^n$ explicitly without reading the figure, saying so in their reports; their computation is right as the conditional statement "four horns per handle would give $F_{4^n}$", which is not the block the exercise's wording and figure give. The reading of the figure was therefore checked twice: rendered at 600 dpi from PDF page 186 against Hatcher's single-handle drawing on printed p. 171, and against the exercise's own sentence about the number of handles in the basic building block.
+
+**Not done, and recorded.** No published solution was located for any of the eleven, so all eleven source obligations stay open exactly as #123 left them; this item closes the correctness read, not the sources. The eleven cards' audit trails keep their earlier contradictory entries: where a dated entry is superseded, the correction is a new entry of this date, and no dated entry was rewritten.
+
+**One process defect, for the record.** The `E-HAT-2.B-7` repair (together with its first read note) is in commit `80d2ccbce6`, a `COMPLAINTS` commit of another session: the clone is shared (QUAL-09) and a concurrent `git commit` took the whole staged index, so the card's change went in under another session's message rather than as its own commit. Its content is in `main`'s history and is correct; only the commit boundary is not the one intended. `git commit --only <path>` was used for every later card in this batch.
+
+## 2026-11-19: `collection-lists-problems` is the audit's third false positive, and what the audit's six classes actually contain
+
+**Object and need.** With `duplicate-exams` and `duplicate-bodies` traced (records above), the third flagged class was read here. It is also not a defect. This closes the reading of the audit's output: of five violations across four classes, none is a data error, and the audit's exit status of 1 does not mean the corpus is broken.
+
+**The flagged collection.** `corpus/collections/SRC-UNSORTED-PRELIM/index.md` has `source_kind: compilation`, `date: {kind: unknown}` and `problems: []`, which is what the check reports. Its own body says why, in a remark that was written deliberately:
+
+> The list is empty because no document was found, and this collection currently lists no problems at all: its `source.problems` is `[]`. It is a placeholder for prelim problems whose source is not identified, and it is not itself a source document.
+>
+> The empty list is the finished state here, not a gap in it. No card this collection lists carries a `source` or `provenance` field, and it holds no card files of its own.
+
+So the empty list is documented as the collection's finished state. The directory holds exactly one file, its `index.md`; there is no card whose listing was lost, and nothing was dropped from the list. Removing the collection would lose the bucket; filling the list would invent sources.
+
+**The audit's six classes, read to the end.** `empty-areas` and `collection-problem-references` pass. `duplicate-bodies` (1) is the source's own double printing, answered on `P-MAXAT-3-05` with printed p. 2 quoted. `duplicate-exams` (4) is a schema gap: `ExamSource` has no field for which paper a collection is, so a course's midterm, final and eight practice finals are formally one exam. `orphans` (25) is at least partly twin definitions — the two residue-5 ones are, and 23 were not examined. `collection-lists-problems` (1) is this deliberate empty. **Not one of them is a card with wrong mathematics, and not one can be repaired by editing the flagged data.**
+
+**The shape of the fix for this one.** A collection is entitled to an empty problem list when it is a bucket rather than a source document, and the check has no way to tell. The smallest change that keeps the check honest is a field the collection can set — e.g. `problems: []` together with `intentionally_empty: true`, or a `source_kind: bucket` — which the check then skips, leaving a genuinely unfilled list still reported. What I did not do: no collection, schema or audit code was edited, for the same reasons as the record above — the collection is another lane's file and the check is tooling that reaches the whole corpus.
+
+**Uncertainty.** The remaining 23 orphans were not examined, so the audit's `orphans` count may contain more twins and more genuine defects; that is the one class whose reading is unfinished.
