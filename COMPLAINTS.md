@@ -5674,3 +5674,20 @@ So the empty list is documented as the collection's finished state. The director
 **Repair, 2026-11-19:** `P-AGH543ORDINARYSING` in `33b6ec0681`, one `source-corrected` event, the statement and last paragraph of step `excellent-position-attained`, the whole of step `positive-characteristic`, the qed, the solution's opening paragraph and the "Published solution" remark; the exercise's statement, the other six steps and the published-treatment remark are untouched. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH543ORDINARYSING`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 8 with QED labels present and no unknown step label; `tools/check_macros.py`, OK; and a search of the rendered text for "Hirschfeld", which finds only the Egbert entry.
 
 **Uncertainty.** Not checked: the rendered page in a browser. Read for this record: the card's own transcription of Fulton's Appendix A and its formula (8) on printed p. 90, which is the cancellation used for $g^*$; no page of Fulton was re-read beyond what the card already carries. The three swarm proofs are recorded in `.ultramath/smwng561f/`, not in the repository.
+
+## 2026-11-19, seventh item: the arbitrary-$A$ certificates exist and are linked, so the sentence calling them open in this session's residue-1 entry is withdrawn
+
+**Object and need.** The residue-1 completion entry above lists, among what completion does not mean, "#134's arbitrary-$A$ certificates for `E-HAT-3.A-2` and `E-HAT-3.A-6`". That is wrong, and this entry withdraws it rather than editing a dated record.
+
+**Observed evidence.** Both certificates are in `proofs/README.md` section 1, and both cards carry a `source-checked` event of 2026-11-18 that links the declaration and states what it proves:
+
+- `E-HAT-3.A-2` — `lean-categories/LeanCategories/Homological/TorExercise3A2.lean` at `5848f0f2f881ba032eb8bb69baa051300498ba6b`, declarations `torOneQzAddEquivTorsion` ($\operatorname{Tor}_1^\ZZ(A,\QQ/\ZZ)\cong\operatorname{torsion}_\ZZ A$) and `isTorsionFree_iff_forall_subsingleton_torOne` (both directions), for **every** abelian group $A$ with no finiteness hypothesis; the card's note records that the file was read at that commit, contains no `sorry` and no `axiom`, and that it was **not** re-elaborated in that pass.
+- `E-HAT-3.A-6` — `lean-categories/LeanCategories/Homological/TorExercise3A6.lean` at the same commit, declarations `isAddTorsion_torOne` and `torOne_exists_addOrderOf_iff` for all abelian $A$ and $B$, the latter giving the exercise's direction and the converse the card proves in addition.
+
+So the #134 obligation named there is **met**, not open; what remains unverified about them is narrower and is stated on the cards themselves (no re-elaboration in the checking pass; the recorded elaboration is the registry's).
+
+**How the error arose.** The claim was carried over from this session's working state rather than read off the cards, and it was repeated in several turn reports before being checked. It is the same failure mode as the two false "no retained solution set" sentences repaired today on `E-V98N5` and `E-X4TVL`: a remembered status asserted in durable text without opening the file.
+
+**Rule.** A status carried in a session's notes is not a status of the repository. Before writing "still open" about a certificate, a source or a gate, read the card's own link and the registry row.
+
+**Uncertainty.** Neither Lean file was re-elaborated in this session (Mathlib's pinned revision and the toolchain are not on this machine's PATH in the form the registry records), so this entry establishes that the certificates are linked and what they claim, not that they elaborate today.
