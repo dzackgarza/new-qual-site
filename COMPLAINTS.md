@@ -8544,3 +8544,17 @@ printed book itself.
 **The remainder.** Thirty-eight Chapter IV cards still lack Yang; the queue now starts at IV.3.10
 `P-AGH4310NOTEVERYSECANTMULTISECANT`, and Yang's 4.3.10 and later entries are past printed p. 88,
 whose map was established only to 4.3.9 --- the next batch has to locate them first.
+
+## 2026-11-19, seventeenth item: §7.2 Ex. 11 rebuilt from placeholder bodies, §7.3 Ex. 11 correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`.
+
+**`E-HK-72-11`, §7.2 Exercise 11, printed p. 242 — correct, structure rebuilt.** For $3\times3$ matrices, similarity gives equal $\chi$ and $m$ (conjugation carries $xI-A$ to $P^{-1}(xI-A)P$ and $f(A)$ to $P^{-1}f(A)P$); and conversely, since $\deg\chi=3$ and the largest invariant factor is $m$, the three degree cases force the invariant factors — $\deg m=3$ gives the single factor $m=\chi$, $\deg m=2$ gives $\chi/m$ and $m$, $\deg m=1$ gives $m,m,m$ — so the rational canonical forms agree. The $4\times4$ counterexample is right: $J_2(0)\oplus0\oplus0$ has invariant factors $(x,x,x^2)$ and $J_2(0)\oplus J_2(0)$ has $(x^2,x^2)$, both $\chi=x^4$ and $m=x^2$, but the ranks are $1$ and $2$ (checked in sympy: ranks 1 and 2, characteristic polynomial $x^4$ for both, nilpotency index 2 for both).
+
+The old bodies were "degree count", "enumerate the possible degree decompositions of 3", a step that was one back-reference and a `pf-qed` that was one. The proof is now four steps, each with its derivation, and the example carries the rank check. Commit `fcd4308583`. **A page correction:** the card first cited p. 241, which holds Exercise 5; Exercise 11 is on p. 242.
+
+**`E-HK-73-11`, §7.3 Exercise 11, printed p. 249 — correct.** A nilpotent matrix's Jordan block sizes form a partition of the dimension; the largest part is the exponent of $x$ in $m$ and the number of parts is the nullity. The card's table lists the eleven partitions of 6 and no two share the pair (largest part, number of parts), so the two data determine the partition in dimension six. In dimension seven, $3+3+1$ and $3+2+2$ share the pair $(3,3)$: $J_3(0)\oplus J_3(0)\oplus J_1(0)$ and $J_3(0)\oplus J_2(0)\oplus J_2(0)$ both have $m=x^3$ and nullity 3 and are not similar. The table was re-checked row by row. Commit `1d4dbce0a7`.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-72-11` numbering 1–4 and `E-HK-73-11` 1–2, QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the invariant-factor reasoning in `E-HK-72-11` cites the rational canonical form rather than re-proving it, and `E-HK-73-11`'s Jordan-form facts are used at the level the book states them.
