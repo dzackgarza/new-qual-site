@@ -7876,3 +7876,17 @@ either card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 5.2.14 at printed p. 105 and 5.2.16 at printed
 p. 106, rendered as page images; the statements the two cards carry, not reopened against the book in
 this pass. Not read: V.2.7's entry, and the printed books themselves.
+
+## 2026-11-19, eleventh item: two more residue-5 cards read — the Hilbert matrix and the matrix-unit eigenbasis — both correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, residues computed before editing, read against the retained text.
+
+**`E-HK-EZDH`, §1.6 Exercise 12, printed p. 26 — correct.** The card proves the Hilbert matrix $H_n=(1/(i+j-1))$ invertible with integer inverse through the Cauchy-matrix inverse. The proof was checked end to end: $R_j(x_m)=\delta_{mj}$ by construction; the residue of $R_j$ at $-y_i$ is the displayed $b_{ij}$, the signs working out as $\prod_{\ell\ne j}(-y_i-x_\ell)=(-1)^{n-1}\prod_{\ell\ne j}(x_\ell+y_i)$ over $\prod_{\ell\ne i}(y_\ell-y_i)=(-1)^{n-1}\prod_{\ell\ne i}(y_i-y_\ell)$; and evaluating the partial fraction at $z=x_m$ gives $CB=I$. The specialization $x_j=j-1$, $y_i=i$ gives $x_i+y_j=i+j-1$ and the four products reduce to the displayed factorials, with $(-1)^{2n-i-j}=(-1)^{i+j}$. The binomial form was checked equal to the factorial form by expanding and cancelling. Independently, both formulas were compared with the exact inverse of $H_n$ in sympy for $n=2,3,4,5$: every entry agrees and every entry is an integer. (For $n=4$ the inverse is $[[16,-120,240,-140],[-120,1200,-2700,1680],[240,-2700,6480,-4200],[-140,1680,-4200,2800]]$.) Commit `17876ecdc1`.
+
+**`E-HK-65-5`, §6.5 Exercise 5, printed pp. 206--207 — correct.** For $A=\operatorname{diag}(a_1,\ldots,a_n)$ the matrix unit satisfies $AE_{ij}=a_iE_{ij}$ and $E_{ij}A=a_jE_{ij}$ entrywise, so $T_A(E_{ij})=(a_i-a_j)E_{ij}$; the $n^2$ matrix units are a basis, so the one basis diagonalizes every $T_A$ in the family. Commit `faee7340f2`.
+
+**An operational note.** The working text of the book used for these page checks, `.scratch/hk.txt`, was overwritten by another process during this pass: it went from 416 pages to one. It was regenerated with `pdftotext` into `.scratch/hkbook.txt` (416 pages) and the checks were made against that. Any lane using a shared `.scratch` path for an extraction should expect another lane to clobber it; a file per lane is safer.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Nothing in either proof beyond what is recorded: the Cauchy formula was verified symbolically up to $n=5$ and by the derivation, not by a published table; the matrix-unit argument was checked entrywise but not against a second source.
