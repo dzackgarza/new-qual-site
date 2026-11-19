@@ -271,6 +271,37 @@ audit:
     skew lines, 72 sixers and 36 double-sixers. That computation also confirms
     the commutation of y with x_4 and x_5. Not checked: the printed books
     themselves, only the copies named, and no source outside those named.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The order 51840 given a second printed derivation, in the book the card
+    already cites for faithfulness. Read Humphreys, Reflection Groups and
+    Coxeter Groups, §2.11 "Computing the order of W", printed pp. 43-44,
+    rendered as page images from
+    tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf: the method on
+    printed p. 44, orbit-stabilizer for W acting on the roots with the isotropy
+    of the highest root described by Theorem 1.12(a) and the data of §2.10;
+    the computation for E_6 there, "The 72 roots form a single orbit. The
+    highest root is orthogonal to all simple roots except alpha_2, so its
+    isotropy group is of type A_5 (having order 6!). Therefore |W| = 6!72 =
+    2^7 3^4 5"; and Table 2 on the same page, whose E_6 entry is 2^7 3^4 5
+    beside 72 roots. Recomputed: 6! * 72 = 720 * 72 = 51840 = 2^7 * 3^4 * 5,
+    with 24 * 48 for F_4 and 2^5 6! 126 for E_7 in the same paragraph as a
+    check of the transcription. Page arithmetic: in this part of the scan
+    printed p. N is PDF p. N + 13 (PDF p. 56 carries folio 43, PDF p. 60 folio
+    47), where the events above record N + 17 for printed pp. 109-113; the
+    offset is not constant, so each page cited here was read at its own folio.
+    Not checked: Humphreys outside §§2.11 and 5.3-5.4, and the printed book
+    itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step weyl-order now records Humphreys' evaluation of |W(E6)| at printed
+    p. 44 beside Dolgachev's, so the order part (c) uses has two printed
+    derivations, one on the exceptional vectors and one on the roots. No
+    statement, step, hypothesis or number of the card changes.
 ---
 
 ::: {.problem}
@@ -478,6 +509,14 @@ $\#W(\mathbf E_4)=5!=120$. Hence
 $$
 \#W(\mathbf E_6)=27\cdot\#W(\mathbf E_5)=27\cdot16\cdot120=2^3\cdot3^2\cdot6!=51840 .
 $$
+Humphreys evaluates the same order in the book cited for faithfulness, and independently of the
+exceptional vectors: §2.11, printed p. 44, reads "The 72 roots form a single orbit. The highest root
+$\tilde\alpha$ is orthogonal to all simple roots except $\alpha_2$, so its isotropy group is of type
+$A_5$ (having order $6!$). Therefore $\cardinality{W}=6!72=2^7 3^4 5$", the bars written with the
+semantic macro, and his Table 2 on that page lists
+$2^7\cdot3^4\cdot5$ against $72$ roots for $\mathbf E_6$. Since $6!\cdot72=51840$, the order the
+card uses has two printed derivations, one by orbit--stabilizer on the exceptional vectors and one by
+orbit--stabilizer on the roots.
 For the inequality: the generators $x_i$ and $y$ of the presentation act on the $\mathbf E_6$ lattice
 by the reflections in the corresponding root basis, whose pairwise products have orders $2$ and $3$
 as the diagram prescribes, so the assignment is a homomorphism $\mathbf E_6\to W(\mathbf E_6)$, and
