@@ -15,6 +15,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Real Analysis, Problem 35, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 35 of the Real Analysis chapter, and
+    its printed words are the card's. The chapter, the problem number and the file are now named in
+    the solution's opening sentence. Not checked in this pass: the argument, which the edit does not
+    touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ In what regions of $\RR^3$ are these coordinate changes regular?
 :::
 
 ::: {.solution}
+This is Problem 35 of the Real Analysis chapter of *Mathematical Trivium*, retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording.
 
 Use spherical coordinates
 $$
