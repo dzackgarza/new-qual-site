@@ -9,6 +9,17 @@ classification:
   - Galois Groups of Polynomials
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card carried no provenance sentence and no audit key. The collection's own solution set
+    is retained as `assets/attachments/final2011-solns.pdf`, and Problem 5 on PDF p. 2 is this
+    exercise, with the same route: the real cube root, the six roots and their distinctness, the
+    splitting field, the order-six automorphism, conjugation, the dihedral group and the cubic
+    subfields. The rendered solution now cites it; the audit key is created by this event. No
+    proof step changed.
 ---
 
 ::: {.problem}
@@ -29,6 +40,8 @@ Show that there are precisely three fields $E \subset F$ such that $[E : \QQ] = 
 :::
 
 ::: {.solution}
+
+The collection retains its solution set as `assets/attachments/final2011-solns.pdf`, whose Problem 5 on PDF p. 2 is this exercise: it takes the real cube root $x$ of $(-1+\sqrt{a^2-4})/2$, shows the six displayed roots are distinct because $a\ne\pm2$, gets $F=\QQ(x,\omega)$, builds the order-six $\psi$ with $\psi(x)=\omega/x$ and $\psi(\omega)=\omega^2$, uses complex conjugation, and concludes $D_{12}$ and the three cubic subfields. The card's steps follow that route.
 
 ::: pf
 
