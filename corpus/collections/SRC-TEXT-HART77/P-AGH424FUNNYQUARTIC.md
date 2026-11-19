@@ -26,6 +26,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.4, printed p. 86,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.4, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the three partials and their common zero, the vanishing of the
+    Hessian in characteristic 3, and the dual map (a,b,c) -> (c^3,a^3,b^3). Not checked: Yang's Solutions outside printed pp. 84-87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.4 at printed
+    p. 86 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -316,4 +337,6 @@ inflection point, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} identify the dual 
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.4, printed p. 215, text version `tmp/sources/hartshorne-solutions-egbert.md`, applies the Jacobian criterion to $F=x^3y+y^3z+z^3x$ in characteristic $3$: the partials are $F_x=z^3$, $F_y=x^3$, $F_z=y^3$, never simultaneously zero, so $X$ is nonsingular; the Hessian vanishes identically, so every point is an inflection point; the Gauss map is the Frobenius, purely inseparable, and $X\cong X^*$.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.4 (A Funny Curve in Characteristic $p$), printed p. 86, computes for $f=x^3y+y^3z+z^3x$ in characteristic $3$ that $f_x=z^3$, $f_y=x^3$, $f_z=y^3$, whose only common zero is $(0,0,0)$, so $X$ is nonsingular; that every second partial derivative vanishes in characteristic $3$, so the Hessian is identically zero and every point is an inflection point; and that the tangent at $(a,b,c)$ is $c^3x+a^3y+b^3z=0$, so the dual map is $(a,b,c)\mapsto(c^3,a^3,b^3)$, the Frobenius after a cyclic permutation of the coordinates — purely inseparable of degree $3$, with $X^*\cong X$.
 :::
