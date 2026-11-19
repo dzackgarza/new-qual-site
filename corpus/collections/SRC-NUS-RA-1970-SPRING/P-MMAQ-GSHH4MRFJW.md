@@ -29,6 +29,8 @@ Prove or disprove each of the following statements.
 
 ::: {.solution}
 
+The argument is the card's own: for (b) it uses the sliding bump $f_k=k^{-1}\chi_{[0,k]}$, uniformly small with integral $1$; for (c) it takes a rapidly convergent subsequence, applies Chebyshev's inequality at the thresholds $2^{-j/2}$ and then Borel--Cantelli. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: {.pf-step #b-is-false}
