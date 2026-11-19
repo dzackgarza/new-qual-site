@@ -13,7 +13,7 @@ Isolated singularities of holomorphic functions: their classification, Laurent s
 
 - [[complex-analysis/singularities/laurent-series|Laurent series]], the expansion on an annulus.
 
-- [[complex-analysis/singularities/removable-poles-essential|Removable singularities, poles, essential singularities]], statements and proofs for each kind.
+- [[complex-analysis/singularities/removable-poles-essential|Removable singularities, poles, essential singularities]], the examples and consequences of each kind.
 
 - [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]], functions whose singularities are poles.
 

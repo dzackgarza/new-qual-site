@@ -24,7 +24,19 @@ The two residues sum to $-\qty{e^{i\pi/4}+e^{3i\pi/4}}/4 = -i\sqrt2/4$, so the i
 
 ## Rational against $e^{iz}$
 
-Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by Jordan's lemma.
+Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by [[T-ZO5UU|Jordan's lemma]].
+
+::: {.example title="$\displaystyle\int_\RR{x\sin x\over x^2+1}\,\dx = {\pi\over e}$"}
+The function $ze^{iz}/(z^2+1)$ has simple poles at $\pm i$, and only $z=i$ lies in $\HH$, with residue
+$$
+\Res_{z=i}{ze^{iz}\over z^2+1} = {ie^{i\cdot i}\over 2i} = {e^{-1}\over 2}.
+$$
+The integrand on $\abs z = R$ is $\bigo(1/R)$ and $\abs{e^{iz}}\leq 1$ on $\HH$, so the arc vanishes by Jordan's lemma, and
+$$
+\int_\RR{xe^{ix}\over x^2+1}\dx = 2\pi i\cdot{e^{-1}\over 2} = {\pi i\over e},
+$$
+whose imaginary part is the value.
+:::
 
 [[E-SS3.EX-4]]
 [[E-SS3.EX-3]]
