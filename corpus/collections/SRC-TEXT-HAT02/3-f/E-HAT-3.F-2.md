@@ -31,6 +31,22 @@ audit:
     lim¹ G_i = coker Φ (Hatcher's definition, p. 316); Mittag-Leffler makes the image
     of G_{i+n} in G_i stabilise at some I_i, and solving Φ(g) = h by choosing g_i in a
     stabilised preimage gives surjectivity of Φ, hence vanishing of lim¹. No defect.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 2
+    of §3.F, printed p. 320, with the definitions of $\varprojlim$ and $\varprojlim^1$ at printed
+    p. 316 and the invariance under cofinal subsequences at printed p. 313. Checked: with
+    $\Phi((g_i))=(g_i-\alpha_{i+1}(g_{i+1}))$ one has $\varprojlim=\ker\Phi$ and
+    $\varprojlim^1=\operatorname{coker}\Phi$; the stable images $I_i$ satisfy
+    $\alpha_{i+1}(I_{i+1})=I_i$, so $\Phi$ carries $\prod I_i$ into itself and is onto it — given
+    $b\in\prod I_i$, take $g_0=0$ and choose $g_{i+1}\in I_{i+1}$ with
+    $\alpha_{i+1}(g_{i+1})=g_i-b_i$, possible because $g_i-b_i\in I_i=\alpha_{i+1}(I_{i+1})$ — so
+    $\varprojlim^1I_i=0$; the quotient tower $G_i/I_i$ is pro-zero, so after passing to a cofinal
+    subsequence its bonding maps vanish and $\Phi$ is the identity, giving
+    $\varprojlim^1Q_i=0$; and the snake lemma on the short exact sequence of towers gives
+    $\varprojlim^1G_i=0$ between the two vanishing terms. No defect.
 ---
 
 ::: {.problem}
