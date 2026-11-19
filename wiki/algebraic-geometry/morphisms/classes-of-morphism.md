@@ -41,7 +41,7 @@ $$
 $$
 A finite morphism to a quasi-compact scheme $Y$ with an ample invertible sheaf is projective.
 Closed immersions, finite, projective, and proper morphisms are of finite type; a universally closed morphism need not be: $\Spec\overline{\QQ}\to\Spec\QQ$ is integral, hence universally closed, and not of finite type.
-Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projective but not finite, and the hyperbola projection, which is quasi-finite but not proper.
+[[FE-MORNOTPROPER]]
 
 ## Base change
 
