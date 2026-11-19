@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 28, printed p. 391, and
+    the covering space theory of §1.3. The proof is correct and is sharper than the
+    published one where it counts: a free action of Z_p x Z_p on S^n gives a covering
+    S^n -> M with M a closed n-manifold and pi_1(M) = G; building a K(G,1) from M by one
+    (n+1)-cell and then cells of dimension at least n+2 bounds dim H^{n+1}(K(G,1);F_p) by
+    the number of (n+1)-cells, which is 1, while Kunneth on K(Z_p,1) x K(Z_p,1) gives
+    dimension n+2 there. The card's claim that no retained set solves the exercise was
+    false: Sam's does, at §4.2 Exercise 28, and is now cited. Statement unchanged.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -69,7 +81,7 @@ Show that the group $\ZZ_p \times \ZZ_p$ with $p$ prime cannot act freely on any
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 28. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 28, printed p. 391, against the covering space theory of Section 1.3, and against the cohomology of Eilenberg--MacLane spaces in Section 4.3.
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 28, PDF p. 24**, whose argument is the skeleton of the one below — a free action gives a covering $S^n\to M$ with $M$ a closed $n$-manifold and $\pi_1(M)=G$, a $K(G,1)$ is built from $M$ by one $(n+1)$-cell and then higher cells, so $H^{n+1}(K(G,1);\FF_p)$ has $\FF_p$-dimension at most $1$, while the Künneth formula for $K(\ZZ_p,1)\times K(\ZZ_p,1)$ gives dimension $n+2$; Sam's last step cites the group cohomology of $\ZZ_p\times\ZZ_p$ where the card computes it. The card's argument is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 28, printed p. 391, against the covering space theory of Section 1.3, and againstst the cohomology of Eilenberg--MacLane spaces in Section 4.3.
 
 ::: pf
 
