@@ -16,6 +16,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 129 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained problem list `assets/attachments/Ring_Theory_Qual_Problems.pdf`: the statement is Problem 129, and its printed
+    words are the card's. The problem number and the file are now named in the solution's opening
+    sentence. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -23,6 +30,7 @@ Let $D$ be a principal ideal domain and let $P$ be a non-zero prime ideal. Show 
 :::
 
 ::: {.solution}
+This is Problem 129 of the Kent State University algebra qualifying examination problem list in ring theory, retained in this repository as `assets/attachments/Ring_Theory_Qual_Problems.pdf`; the statement below is its wording.
 
 Set
 $$
