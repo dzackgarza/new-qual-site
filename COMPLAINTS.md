@@ -6443,3 +6443,72 @@ printed p. 112, rendered as page images from
 `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages are the printed pages; and
 Hartshorne's V.4.9 and V.4.16 on printed pp. 408--409. Not read: Yang's entries on the cards not
 named here, the printed books themselves, and no search of the literature beyond these files.
+
+## 2026-11-19: issue #160's six cards — two false inferences removed, one characteristic settled against a published set, and the corpus report check killed again
+
+**Object and need.** Issue #160 lists six Hartshorne Chapter V cards whose parts were proved only in
+characteristic zero or rested on a source never read: `P-AGH547GENUSBOUND` (V.4.7),
+`P-AGH548IRREDCLASSES` (V.4.8), `P-AGH543ORDINARYSING` (V.4.3), `P-AGH525INVARIANTE` (V.2.5),
+`P-AGH5217CONORMALSPLIT` (V.2.17) and `P-AGH528STABLEBUNDLE` (V.2.8(c)). The batch below reads each
+proof against its source by printed page and repairs what does not hold. Seven commits, all ancestors
+of `main` at `defb8e5688`, each path-limited to its own card: `b3ee79136e`, `3afdf957a2`,
+`4aac9f7cf7`, `a8f55210d8`, `74aa2313ae`, `5ba244aabb`, `e379a2fd14`, and `5fa66170fb`.
+
+**Two statements that were false.** (1) `P-AGH525INVARIANTE` step s9 inferred from a nonzero extension
+class that the rank-two bundle is indecomposable. It is not: `O_C(P) + O_C(Q)` for distinct points is
+a normalized non-split extension of `O_C(P+Q)` by `O_C`, with `d = 2` and `g = 3`, and `h^0` of a
+twist by `O_C(-R)` vanishes unless `R` is `P` or `Q`. What the avoidance argument proves is
+non-splitting, and part (c) of the exercise asks for the surface and its invariant, not for an
+indecomposable bundle, which is part (a)'s condition; the step now says exactly that.
+(2) `P-AGH548IRREDCLASSES` step `negative-square-is-a-line` read "`C^2 + C.K = 2h^1 - 2 >= -2`, so
+`C^2 >= -2` and `h^1(C,O_C) = 0`", and the vanishing does not follow; Dolgachev's Lemma 8.1.3, cited
+after the conclusion, was supplying it. The step now argues from ampleness and `p_a >= 0` alone: with
+`K = -H` and `H.C >= 1`, `C^2 < 0` forces `p_a = 0`, `C^2 = H.C - 2 >= -1`, hence `C^2 = -1` and
+`H.C = 1`.
+
+**What moved from open to proved.** V.4.3 in characteristic `p`: Fulton's Appendix A, printed p. 113,
+with the neutrality of the preliminary transformation for `N` and `g^*` shown by the identity
+`binom(2n-m-1,2) - binom(n,2) - 2 binom(n-m,2) = binom(n-1,2) - binom(m,2)`, which holds for every
+centre multiplicity `m`; Hirschfeld's Theorem 3.27 is no longer cited. V.2.17(b) in characteristics 2
+and 3: the extension class is `(n-1)s^{-1}` in `H^1(O(-2))`, so characteristic 3 gives `l = m = -7`
+and characteristic 2 gives `O(-6) + O(-8)`; Hartshorne's printed answer on p. 386 is correct and
+Yang Pi-Yeh's printed sentence "If `char(k) = 2,3`, `F(phi)` is given by `(t^3,u^3,0)`. So
+`ker F(phi) = R(-8) + R(-6)`" is false in characteristic 3. V.2.5(c) for `g >= 2` by the avoidance
+count of the printed hint. V.2.8(c) by steps s10 to s12b, with Gunning's Theorems 13 and 14 left as the
+characteristic-zero alternative. V.4.8(c) by Dolgachev's Theorem 8.2.19, Harbourne's Corollary II.3,
+Theorem III.1(a) and Lemma II.6(b) — that paper states in its abstract that it works over an
+algebraically closed field of arbitrary characteristic — and Vakil's incidence count. V.4.7's `d = 4`
+attainment now by `H + E_6`, the pullback of Corollary V.4.7's very ample class at `r = 5`, with
+`p_a = 1`, so that degree no longer depends on V.4.8(c) at all; V.4.8(b)'s conic classes are filled by
+the plane-pencil conics through a line, with no general lemma, and V.4.8(a) as above.
+
+**Citations repaired against pages.** `P-AGH548IRREDCLASSES` cited Lemma II.8.9 for local freeness of a
+coherent sheaf of rank 2 at the generic point, which is Exercise II.5.7(a), printed p. 125, and applied
+Proposition III.10.4, printed p. 270, to a possibly singular image; it now restricts to the regular
+locus of the image and argues the transversality-to-nonsingularity passage by tangent spaces.
+`P-AGH547GENUSBOUND` attributed Corollary V.4.13(b) to Bertini alone, whereas the book's proof uses
+II.8.18 and III.7.9.1, and the earlier note placed III.7.9.1 at printed p. 273 when it stands at
+printed p. 245, Corollary III.7.9 being at p. 244. `P-AGH543ORDINARYSING` cited the degree of the
+projection from a point to a step that does not state it and used "loc. cit." twice for facts proved
+in a different step. Folios were checked in the retained PDFs, where printed page = PDF page - 15
+holds at PDF pp. 140, 190, 260 and 285.
+
+**The corpus report check, again.** `QUALC_PARALLEL_WORKERS=2 ./.venv/bin/python tools/backlog.py
+--with-queues` was run in the background on 2026-11-19 and was killed at 4 min 55 s with exit status
+137, leaving a zero-length log: no verdict, and `BACKLOG.md` and the two generated queues untouched.
+This is the same failure the register records, now measured once more with two Pandoc workers. What
+stands in its place is card-scoped only: `qualc.authoring check`, `tools/check_macros.py`,
+`tmp/lam.sh` and `qualc.card_completeness.check_card` on each of the six files, all green, and no
+corpus-wide green for this batch.
+
+**Uncertainty.** Read for this batch: Hartshorne's printed pages 125, 174-175, 179-180, 244-245, 270,
+364, 372-377, 385-386, 401-409 in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; Fulton's
+§7.4 and Appendix A in `tmp/sources/fulton-2008-algebraic-curves-pp55-62-86-92-110-115.md`;
+Harbourne's Corollary II.3, Theorem III.1(a) and Lemma II.6(b) in
+`tmp/sources/harbourne-1995-anticanonical-rational-surfaces.md`; Dolgachev's Lemma 8.1.3 and
+Theorem 8.2.19 in `tmp/sources/dolgachev-topics-classical-ag.md`; Gunning's Theorems 13 and 14 in
+`tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md`; Yang's Solutions 5.2.17 in
+`tmp/sources/lfwin-hartshorne-solutions.md`; and Vakil's Theorem 13.4.2. Not read: any printed copy
+of these books, Hirschfeld's book (not held, and no longer used), Lange and Narasimhan beyond the
+statements and pages the cards record, and Jouanolou's book, whose Corollaire 6.4.2 Harbourne cites
+for the reducedness step.
