@@ -36,6 +36,16 @@ audit:
     No published solution set is retained for this examination. The statement is
     the answer to the printed item; the proof block proves the well-posedness of
     the integral formula and the uniqueness half, which is part of the theorem.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The uniqueness step wrote 0 = integral over D_k of (h' - h) dnu, which subtracts two
+    integrals that may both be infinite. It now restricts to measurable subsets of D_k on
+    which both measures are finite, possible by sigma-finiteness, integrates h' >= h + 1/k
+    there without subtracting, and exhausts D_k by countably many such sets. The theorem
+    and its conclusion are unchanged.
+
 ---
 
 ::: {.problem}
@@ -81,8 +91,13 @@ everywhere, so a density is unique.
 
 ::: pf-proof
 
-For $k\ge1$ let $D_k=\{h'>h+1/k\}$. On $D_k$ the integrand $h'-h$ exceeds
-$1/k$, so $0=\int_{D_k}(h'-h)\,d\nu\ge\frac1k\nu(D_k)$ and $\nu(D_k)=0$. Hence
+For $k\ge1$ let $D_k=\{h'>h+1/k\}$. On $D_k$ one has $h<\infty$, so the
+difference $h'-h$ is defined there and exceeds $1/k$. Fix a measurable
+$E\subseteq D_k$ with $\mu(E)<\infty$ and $\nu(E)<\infty$; such sets exhaust
+$D_k$, because both measures are $\sigma$-finite. Integrating the inequality
+over $E$ subtracts no infinite quantities and gives
+$$\mu(E)=\int_Eh'\ \ge\ \int_Eh+\tfrac1k\nu(E)=\mu(E)+\tfrac1k\nu(E),$$
+so $\nu(E)=0$, and a countable exhaustion gives $\nu(D_k)=0$. Hence
 $\nu(\{h'>h\})=\nu(\bigcup_kD_k)=0$, and exchanging the roles of $h$ and $h'$
 gives $\nu(\{h>h'\})=0$; off the union of those null sets the two functions
 agree. Any two candidate densities satisfy the hypothesis by the theorem's
