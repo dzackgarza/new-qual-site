@@ -9,6 +9,16 @@ classification:
   - Calculus
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Since varphi takes values in the compact set K and f is continuous on
+    U, M = sup_K |f| is finite and the integral equation gives |varphi(t2) - varphi(t1)| <= M|t2-t1|,
+    so the family is Cauchy as t -> b- and R^d complete gives the limit. The delta = eps/(M+1) in the
+    closing step is what makes the bound strict. Not checked: the printed paper, which was not
+    re-read in this pass.
 ---
 
 ::: {.problem}
