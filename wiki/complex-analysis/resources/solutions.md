@@ -7,8 +7,6 @@ order: 20
 
 - [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
 
-- [Minnesota complex analysis exam, Fall 2015](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf)
-
 - [Chateley, complex analysis qualifying exam solutions](http://www.jchateley.com/project/complex_qual.pdf), arranged by topic.
 
 - [Minnesota complex analysis prelim solutions](http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf)
