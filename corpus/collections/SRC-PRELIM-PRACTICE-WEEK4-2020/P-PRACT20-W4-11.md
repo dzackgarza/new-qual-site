@@ -24,6 +24,15 @@ audit:
     k + (4 - k) = 4 vectors for k = 1, 2, 3, 4 and lies in R^7 because 8 - k <= 7, and its
     intersection with span(e_1..e_4) is span(e_1..e_k). Statement unchanged; the card says the
     argument is its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers this problem, and that is false: the
+    collection's `provenance` names `assets/attachments/Week4_solns.pdf`, a booklet that prints
+    each problem with its worked solution, and Problem 11 is solved there on PDF p. 4. The
+    rendered sentence now cites it and says what the card adds. Found by screening the residue's
+    absence claims against the retained attachments; no step of the proof changed.
 ---
 
 ::: {.problem}
@@ -33,7 +42,7 @@ audit:
 :::
 
 ::: {.solution}
-Both parts are the two bounds on the dimension of an intersection: $\dim V\cap W\le\min(\dim V,\dim W)$ because the intersection lies in both, and $\dim V\cap W\ge\dim V+\dim W-n$ by the dimension formula inside an ambient space of dimension $n$; then every intermediate value is realised by coordinate subspaces. The argument is this card's own: no retained solution set covers this problem.
+Both parts are the two bounds on the dimension of an intersection: $\dim V\cap W\le\min(\dim V,\dim W)$ because the intersection lies in both, and $\dim V\cap W\ge\dim V+\dim W-n$ by the dimension formula inside an ambient space of dimension $n$; then every intermediate value is realised by coordinate subspaces. This is Problem 11 of the retained Week 4 solutions (`assets/attachments/Week4_solns.pdf`, PDF p. 4), and the argument is that sheet's: the two bounds, the ranges $0\le\dim(V\cap W)\le2$ and $1\le\dim(V\cap W)\le4$, and the coordinate examples for the first case are its; the explicit witnesses $W_k$ for the second case are added here, which the sheet leaves to the reader.
 
 ::: pf
 
