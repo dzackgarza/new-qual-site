@@ -38,7 +38,7 @@ For a field $k$, the division algorithm makes $k[x]$ a Euclidean domain under th
 
 ## Characteristic, automorphisms, and perfect fields
 
-The characteristic decides the arithmetic of the field, and in characteristic $p$ the Frobenius map is a ring homomorphism, which is what separates the perfect fields from the others.
+The characteristic decides the arithmetic of the field, and perfectness is decided by the Frobenius map.
 
 [[D-JNCUB]]
 
