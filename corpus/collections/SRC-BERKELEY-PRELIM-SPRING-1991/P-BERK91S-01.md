@@ -25,6 +25,13 @@ audit:
   by: chatgpt
   date: 2026-09-22
   note: Checked the trivial group, all possible element orders, representative independence and bijectivity of the explicit homomorphisms, and pairwise nonisomorphism of the listed groups.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Spring91.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -50,6 +57,7 @@ the groups of order $4$ by their element orders.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Spring 1991, retained in this repository as `assets/attachments/Spring91.pdf`; the statement below is its wording.
 For a positive integer $m$, write $C_m\coloneqq(\ZZ/m\ZZ,+)$.
 Let $G$ be a finite group with identity $e$ and $\abs{G}\leq5$.
 
