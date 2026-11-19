@@ -236,6 +236,43 @@ audit:
     transcriptions of the rest of the two arguments are unchanged. Not
     checked: no source outside these two and the book was read, and the
     card's other steps were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: the two events of 2026-11-16 that record what was then not
+    supplied are corrected here, in a new event; neither earlier text is
+    rewritten. The event whose note reads "Not reviewed and not supplied: a
+    proof of the three reduction assertions ... and no such proof was added"
+    records the card before c820143f0f; that commit proves all three on the
+    card, at steps case-small (b_2 = b_3 = b_4 when b_5+b_6 = a and
+    b_4 <= a/3), case-large (b_2+b_3+b_4 = a when b_5+b_6 = a and
+    b_4 >= a/3) and case-open (the vertex check on the polygon in t, x, y),
+    each marked there as the card's own and each naming the answer's
+    one-clause reason that it replaces. The event whose note reads "Left open
+    and recorded in COMPLAINTS: the two reductions the answer states without
+    proof, and the range of NTU's first case" is corrected the same way: the
+    two reductions are proved above, and the range b_1 <= 2b_2 is not open but
+    is the exact range of NTU's first case, carried in the claim of step
+    second-argument, with (10,1,1,1,1,1) outside it where the increase of
+    b_3, b_4, b_5 to b_1+b_2 = b_3+b_4+b_5 is unavailable. The constant that
+    the rendered step left as an asterisk is now written out: with
+    a = (b_1+...+b_5)/2 it is
+    (b_2+b_3+b_4+b_5)^2/4 - (b_2^2+b_3^2+b_4^2+b_5^2) - b_6^2, the value of
+    a^2 - sum b_i^2 at b_1 = 0; the argument does not use it, the minimum on
+    the range being read at the right endpoint, and the card now says so.
+    Checked in this pass: the three reductions recomputed; the four
+    properties of a maximiser; the endpoint values a^2 and a^2 of
+    5v^2+(a-v)^2, a^2 and 15a^2/16 of 7(a-b_4)^2/4+2b_4^2, and a^2 and a^2
+    of 2(a-2b_4)^2+3b_4^2+(a-b_4)^2; the endpoint values 2b_4b_5-2b_5^2 and
+    2b_4b_5-b_5^2 of the quadratic in b_2; the four vertex values a^2,
+    2a^2/3, 7a^2/8 and 5a^2/6; the identity for the constant at b_1 = 0 and
+    its coefficients -3/4 and (1/2)(b_2+b_3+b_4+b_5); and the printed line of
+    NTU, printed p. 17, whose fraction is the vertex
+    b_1^* = (1/3)(b_2+b_3+b_4+b_5) and whose denominator -3/4.2 should read
+    -3/4. Not checked: no source outside answer 2476483, NTU Exercise 10 and
+    Hartshorne V.4.10 with (4.13)(a) was read, and the card's other steps were
+    not re-derived.
 ---
 
 ::: {.problem}
@@ -251,9 +288,11 @@ conclusion $a^2-\sum_ib_i^2>0$ is $D^2>0$; the exercise asks for integers and th
 $a,b_1,\ldots,b_6$.
 
 Math StackExchange question 2475661, answer 2476483 (Dap, 2017-10-17), orders the variables
-increasingly and supplies steps [](#ordered-hypotheses){.pf-ref} to [](#case-open){.pf-ref}.
+increasingly and supplies the maximiser analysis of steps [](#ordered-hypotheses){.pf-ref} to
+[](#case-open){.pf-ref}; the three reductions in that analysis are its own one-clause reasons, and
+each is proved on the card.
 Chapter V §4 Exercise 10 of the National Taiwan University *Algebraic Geometry II* homework (2020
-Spring), by Shuang-Yen Lee, printed p. 17, orders them decreasingly and supplies step
+Spring), by Shuang-Yen Lee, printed p. 17, orders them decreasingly and supplies the argument of step
 [](#second-argument){.pf-ref}, which is transcribed in that order.
 
 ::: pf
@@ -471,7 +510,7 @@ If $b_1+b_2\le b_3+b_4+b_5$ then $a=\frac12(b_1+\cdots+b_5)$ and
 $$
 a^2-\sum_ib_i^2=-\tfrac34b_1^2+\tfrac12(b_2+b_3+b_4+b_5)b_1+\ast
 $$
-for a constant $\ast$ in $b_1$. This is a quadratic in $b_1$ opening downwards, with vertex
+for the constant $\tfrac14(b_2+b_3+b_4+b_5)^2-(b_2^2+b_3^2+b_4^2+b_5^2)-b_6^2$ in $b_1$. This is a quadratic in $b_1$ opening downwards, with vertex
 $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$; its argument range is $b_2\le b_1\le b_3+b_4+b_5-b_2$, whose
 midpoint is $\frac12(b_3+b_4+b_5)$. Since $b_1+b_2\le b_3+b_4+b_5$ and $b_1\ge b_2$ give
 $2b_2\le b_3+b_4+b_5$, one has
@@ -480,7 +519,7 @@ b_1^{*}-\tfrac12(b_3+b_4+b_5)=\tfrac16\left(2b_2-(b_3+b_4+b_5)\right)\le0,
 $$
 so the vertex lies at or to the left of the midpoint, the right endpoint is the farther one, and the
 minimum on the range is at $b_1=b_3+b_4+b_5-b_2$, that is, at $b_1+b_2=b_3+b_4+b_5$, which is the
-preceding case. The printed line makes this comparison and leaves the constant $\ast$ unwritten, but
+preceding case. The printed line makes this comparison and leaves the constant term unwritten, but
 its vertex term carries one factor of $2$ too few: its fraction
 $\frac{-\frac12(b_2+b_3+b_4+b_5)}{-\frac34\cdot2}$ is the vertex
 $b_1^{*}=\frac13(b_2+b_3+b_4+b_5)$, so the left side as printed is
