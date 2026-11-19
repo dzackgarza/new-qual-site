@@ -679,7 +679,18 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    by Hurewicz, and that is the free abelian group on $G$ with $G$ acting by left translation --- the regular
    module $\ZZ[G]$, i.e. $\ZZ[\pi_1(X)]$ itself as a left module over itself.
 
-   Remaining unread in this item's set: §4.2 (37 more), §4.3 (24) --- 61 proofs.
+   **§4.2-4, half read, not counted.** The card sets $X=\bigcup_k S_k^n\subset\RR^{n+1}$, the spheres of
+   radius $1/k$ about $(1/k,0,\dots,0)$. What was checked: the spheres meet only at the basepoint, since
+   $\abs{x}^2=2x_1/j$ on $S_j^n$; each $r_k\colon X\to S_k^n$ that is the identity on $S_k^n$ and constant at
+   $0$ elsewhere is continuous --- near a point of $S_k^n$ the far spheres lie in $B(0,d/2)$, and at $0$
+   the image lands in $S_k^n\cap B(0,\varepsilon)$ --- so $\Phi([f])=([r_k\circ f])_k$ is a homomorphism
+   $\pi_n(X)\to\prod_k\pi_n(S_k^n)$, and $X$ is path connected. NOT read, and they are the exercise: step
+   `higher` ($\pi_i(X)=0$ for $i<n$), and the construction in `balls`/`surjective_map` with the coordinate
+   check in `coordinates` that makes $\Phi$ onto. A retained published set covers the exercise --- Sam
+   (2008), §4.2 Exercise 4 --- so the next reader can check those steps against a published solution as
+   well as against the book.
+
+   Remaining unread in this item's set: §4.2 (37, of which -4 is half read), §4.3 (24) --- 61 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
