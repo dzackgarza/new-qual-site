@@ -20,6 +20,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps from the card's own prose. Added what the prose left implicit:
+    that A_n is finite because |phi|^n/(1+x^2) <= M^n/(1+x^2) with integral pi M^n, evaluating
+    the integral of 1/(1+x^2) as pi; that E_eps has positive measure by the definition of the
+    essential supremum; and that c_eps > 0 so c_eps^{1/n} -> 1, which is what makes the lower
+    bound converge. The two-sided conclusion is stated as limsup <= liminf = M. Statement
+    unchanged; the card says the argument is its own.
 ---
 
 ::: {.problem}
@@ -31,50 +41,52 @@ $$
 :::
 
 ::: {.solution}
+Both bounds come from the same inequality: $\abs\phi\le M$ bounds $\int\abs\phi^n/(1+x^2)$ above by $\pi M^n$, and on the set where $\abs\phi>M-\varepsilon$, of positive measure, it bounds the integral below by $(M-\varepsilon)^n$ times the positive number $\int_{E_\varepsilon}\frac{\dd x}{1+x^2}$, whose $n$-th root tends to $1$. The argument is this card's own: no retained solution set covers this exam.
 
-Put
-$$
-M:=\norm{\phi}_\infty,
-\qquad
-A_n:=\left(\int_{\RR}\frac{\abs{\phi(x)}^n}{1+x^2}\,dx\right)^{1/n}.
-$$
-If $M=0$, then $\phi=0$ a.e. and $A_n=0$ for every $n$. Assume $M>0$.
+::: pf
 
-Since $\abs{\phi}\le M$ a.e.,
-$$
-A_n^n\le M^n\int_{\RR}\frac{dx}{1+x^2}=\pi M^n,
-$$
-so
-$$
-\limsup_{n\to\infty}A_n\le M.
-$$
+::: {.pf-step #setup}
+Put $M=\norm\phi_\infty$ and $A_n=\Bigl(\int_\RR\dfrac{\abs{\phi(x)}^n}{1+x^2}\,\dd x\Bigr)^{1/n}$; then $A_n$ is defined and finite for every $n\ge1$.
 
-Now fix $0<\varepsilon<M$ and let
+::: pf-proof
+$\abs\phi\le M$ almost everywhere, so $\abs\phi^n/(1+x^2)\le M^n/(1+x^2)$, which is integrable on $\RR$ with integral $\pi M^n$; hence the integral defining $A_n$ is finite and nonnegative, and $A_n$ is its nonnegative $n$-th root. If $M=0$ then $\phi=0$ almost everywhere and $A_n=0$ for every $n$, so the limit is $0=\norm\phi_\infty$; assume $M>0$ from here.
+:::
+
+:::
+
+
+::: {.pf-step #upper}
+$\limsup_nA_n\le M$.
+
+::: pf-proof
+By step [](#setup){.pf-ref}, $A_n^n\le M^n\int_\RR\frac{\dd x}{1+x^2}=\pi M^n$, since $\int_\RR\frac{\dd x}{1+x^2}=\arctan x\,\evalfrom_{-\infty}^{\infty}=\pi$. Taking $n$-th roots, $A_n\le\pi^{1/n}M$, and $\pi^{1/n}\to1$, so $\limsup_nA_n\le M$.
+:::
+
+:::
+
+
+::: {.pf-step #lower}
+For each $0<\varepsilon<M$, $\liminf_nA_n\ge M-\varepsilon$.
+
+::: pf-proof
+Let $E_\varepsilon=\{x:\abs{\phi(x)}>M-\varepsilon\}$. By the definition of the essential supremum as the infimum of the $t$ with $\abs\phi\le t$ almost everywhere, $E_\varepsilon$ has positive Lebesgue measure $m(E_\varepsilon)>0$; otherwise $\abs\phi\le M-\varepsilon$ almost everywhere. Put $c_\varepsilon=\int_{E_\varepsilon}\frac{\dd x}{1+x^2}$, which is positive because the integrand is positive everywhere and $E_\varepsilon$ has positive measure. On $E_\varepsilon$ one has $\abs\phi^n>(M-\varepsilon)^n$, so
 $$
-E_\varepsilon:=\{x:\abs{\phi(x)}>M-\varepsilon\}.
+A_n^n\ge\int_{E_\varepsilon}\frac{\abs\phi^n}{1+x^2}\,\dd x\ge(M-\varepsilon)^n c_\varepsilon,
 $$
-By the definition of essential supremum, $m(E_\varepsilon)>0$. Since $(1+x^2)^{-1}>0$ everywhere,
-$$
-c_\varepsilon:=\int_{E_\varepsilon}\frac{dx}{1+x^2}>0.
-$$
-Therefore
-$$
-A_n^n\ge (M-\varepsilon)^n c_\varepsilon,
-$$
-and hence
-$$
-A_n\ge (M-\varepsilon)c_\varepsilon^{1/n}.
-$$
-Letting $n\to\infty$ gives
-$$
-\liminf_{n\to\infty}A_n\ge M-\varepsilon.
-$$
-Since $\varepsilon>0$ is arbitrary,
-$$
-\liminf_{n\to\infty}A_n\ge M.
-$$
-Together with the upper bound,
-$$
-\boxed{\lim_{n\to\infty}A_n=\norm{\phi}_\infty.}
-$$
+the first inequality because the integrand is nonnegative off $E_\varepsilon$. Taking $n$-th roots, $A_n\ge(M-\varepsilon)c_\varepsilon^{1/n}$, and $c_\varepsilon^{1/n}\to1$ as $n\to\infty$ because $c_\varepsilon>0$; hence $\liminf_nA_n\ge M-\varepsilon$. Since $\varepsilon\in(0,M)$ is arbitrary and the bound is monotone in $\varepsilon$, $\liminf_nA_n\ge M$.
+:::
+
+:::
+
+
+::: {.pf-step #conclusion}
+$\displaystyle\lim_{n\to\infty}\Bigl(\int_\RR\frac{\abs{\phi(x)}^n}{1+x^2}\,\dd x\Bigr)^{1/n}=\norm\phi_\infty$.
+
+::: pf-proof
+Steps [](#upper){.pf-ref} and [](#lower){.pf-ref} give $\limsup_nA_n\le M\le\liminf_nA_n$, so the limit exists and equals $M=\norm\phi_\infty$; the case $M=0$ is settled in step [](#setup){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
