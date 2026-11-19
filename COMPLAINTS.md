@@ -39,6 +39,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: an undefined control word inside an audit note, and what that shows about which text the TeX check reads
+
+**Object and need.** The whole-corpus report at the tree of `79870913ce42` fails on one error: `corpus/collections/SRC-TEXT-HART77/P-AGH2120SUPPSUBSHEAF.md: not defined by the preamble or MathJax: \shsheaf in '\\shsheaf_Z(\mcf)'`. The card was committed at 20:47:30 that evening; the occurrence is in its `audit:` note describing the printed p. 68 statement, not in the rendered problem or solution.
+
+**Observed evidence.** `\shsheaf` is defined nowhere — `vocabularies/macros.json` carries `\sheafhom` and no sheaf-with-supports macro — and the same passage's notation is Hartshorne's $\Gamma_Z(\mcf)$, which the sibling card `P-AGH256SUPPORT` writes. The substitution therefore restores the author's intended symbol rather than inventing one; no rendered statement changes, because the span sits in an audit note.
+
+**What this corrects in this file.** Two earlier records of this date say the TeX check "leaves the `audit:` block alone", offered as the reason a repair event could name a broken token without keeping the gate red. That is not what the check does: it reads audit text too, and the earlier repairs passed only because their events quote the broken tokens inside code spans, which the check skips. The correct statement is the narrower one: MathJax inside `$...$` is checked wherever it occurs in the file, audit notes included, and backticked spans are not.
+
+**Impact and owner.** The card is repaired, with a `source-corrected` event saying the repair is notation and that no statement changed. Any future audit note that quotes a control word must quote it in backticks, not in math, or the gate will reject the tree.
+
+**Uncertainty.** High confidence in the token and in the substitution, which the sibling card and Hartshorne's own notation support. Not checked: the printed p. 68 passage was not re-read here, and no other audit note of the corpus was swept for the same mistake.
+
 ## 2026-11-19: the Berkeley Fall 2010 cards are transcriptions of the packet the collection retains, and four of them now say so
 
 **Object and need.** `SRC-BERKELEY-PRELIM-FALL-2010` retains its solution packet, `assets/attachments/f10solutions.pdf` (7 pages, the source the collection index lists under `provenance:`), and its eighteen cards were written from it. Only the card repaired earlier today, `P-BKF10-3A`, named the packet and its page; the other seventeen opened directly with mathematics, so a reader could not tell a transcription from an original argument. That is the provenance defect the acceptance rule names, and it is repaired here in batches.
