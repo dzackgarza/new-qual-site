@@ -56,7 +56,7 @@ For fixed $t$ the indicator is $1$ exactly on $\{x : f(x) > t\}$.
 :::
 
 ::: pf-qed
-By step [](#pointwise-layer-cake-identity){.pf-ref}, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step [](#integrand-nonneg-measurable){.pf-ref}, Tonelli's theorem allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step [](#x-integral-gives-measure){.pf-ref} the inner $x$-integral is $\abs{\{f > t\}}$, so
+By step [](#pointwise-layer-cake-identity){.pf-ref}, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step [](#integrand-nonneg-measurable){.pf-ref}, [[T-X7XZX|Tonelli's theorem]] allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step [](#x-integral-gives-measure){.pf-ref} the inner $x$-integral is $\abs{\{f > t\}}$, so
 $$\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{x : f(x) > t\}} ~dt.$$
 :::
 
