@@ -15,6 +15,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis, Problem 28, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked numerically. The saddle-point argument gives
+    sqrt(2/(pi x)) exp(i(x - pi nu/2 - pi/4)), which is the standard large-argument form of the
+    Hankel function of the first kind; I confirmed it against scipy at nu = 0 and nu = 3/2 for
+    x = 500 and x = 5000, where the relative error falls from 2.5e-4 to 2.5e-5 (and from 2.0e-3 to
+    2.0e-4), the expected 1/x behaviour. The branch with the +i(x - ...) phase is the first-kind
+    one, as the exercise's contour requires. Not claimed: the error term beyond the leading order,
+    which the card does not compute.
 ---
 
 ::: {.problem}
