@@ -6232,3 +6232,48 @@ $\\cardinality{\\mathbf E_6}\\le51840$. The card's route through Tits faithfulne
 be the only one: a coset count of the $D_5$ parabolic of index $27$ exists, but it also runs through
 the reflection representation (the orbit of the fundamental weight $\\omega_1$), and no
 relations-only derivation of the two indices $27$ and $16$ was found.
+
+## 2026-11-19: residue 11 — one false answer corrected, and two table cards left with their form unrestructured
+
+The prose-only queue for this residue is empty: every card in it now carries a `pf` root whose
+steps are stated and proved. Two items are recorded here because they will not be finished by a
+proof-structure pass.
+
+**`P-RA18M3` was wrong and is corrected** (commit `5b6bf48201`). The card concluded
+$f\in\mathcal R(\alpha)$ on $[-1,1]$ with integral $9$, for $f=-1$ on $[-2,0)$, $3$ on $[0,2]$ and
+$\alpha=-2$ on $[-2,0]$, $1$ on $(0,2]$. On $[-1,1]$ the function $\alpha$ is constant on each side
+of $0$, so every Riemann--Stieltjes sum collapses to $3f(\tau)$ for the single tag $\tau$ on the
+subinterval meeting both sides, giving $-3$ for $\tau<0$ and $9$ for $\tau\ge0$: the sums do not
+converge and the integral does not exist. The card's earlier argument kept the tags on the right of
+`0` without noticing that the same partition admits tags on the left. The card now proves
+non-integrability through the Cauchy criterion with $\varepsilon=6$. **A search for the same defect
+elsewhere found none:** of the five cards mentioning Riemann--Stieltjes, `P-RA19J5` was recomputed
+and is correct ($\alpha$ jumps by $1$ at $2$, so the value is
+$(e^4-1)/2+3(e^8-e^4)/2+e^4=(3e^8-1)/2$), `P-RASP16D` is an operator-norm computation, and
+`P-DEYSQ` and `P-3SSNK` are not evaluations against a step function.
+
+**`E-873VF` is mathematically right but structurally unrestructured.** The seventeen-property table
+for metric spaces is correct as it stands: the seven properties every metric space has are Hausdorff,
+regular, completely regular, normal, first-countable, locally metrizable and metrizable, and the ten
+it need not have each carry a valid witness on the card (two-point discrete space for connected and
+path connected; $\{0\}\cup\{1/n\}$ for local connectedness, with the implication locally path
+connected $\Rightarrow$ locally connected used correctly; $\RR$ for compactness and $\ZZ\subset\RR$
+for limit point compactness; $\QQ$ for local compactness; an uncountable discrete metric space for
+second countability, Lindelöfness and separability). What is missing is only that each reason sits
+inside its step's claim instead of in a `pf-proof`, so seven steps carry no proof. Rewriting all
+seventeen rows is a large edit, and it must not change a verdict.
+
+**`P-CSEAZ` (ten steps without proofs) is deliberately untouched.** Part (a) answers "list all
+isomorphism classes of groups of size 120" with tables spread over three steps, claiming
+$39+5+3=47$ groups, which matches the known number; restructuring it without a checkable
+classification to hand would put a proof-shaped surface on a table nobody has verified. Parts (b)
+and (c) are elementary rational canonical form and are safe to restructure on their own.
+
+**Measurement.** Two shapes in this residue pass `qualc check` and should not: a `pf-step` with no
+`pf-proof` child (twelve cards, thirty-seven such steps when last measured, of which six cards have
+since been rebuilt), and a `pf-qed` whose whole text points at earlier steps, e.g. "Step [#s3]." or
+"Step [#s1-1] is the assertion" (182 such `pf-qed` bodies in the residue, of which the broken ones —
+bodies under 45 characters — have been removed from seven cards). A check for both would make the
+rest of this sweep mechanical. Three of my own measurements of the second class were wrong before I
+read the filter's fence grammar: the pattern must accept `::: {.pf-proof}` as well as `::: pf-proof`,
+or it reports proved steps as unproved.
