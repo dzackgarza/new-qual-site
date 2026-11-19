@@ -158,7 +158,7 @@ Affected pages: `wiki/topology/covering-spaces/covering-spaces.md` (title and he
 
 ---
 
-## 6. Three cards write a section sign as raw TeX, so the page drops it (repaired here)
+## 6. Four cards write a section sign as raw TeX, so the page drops it (repaired here)
 
 Successive `qualc check` runs of the whole tree on 2026-11-19, each after a batch of card lanes
 committed, reported one class and nothing else:
@@ -167,6 +167,7 @@ committed, reported one class and nothing else:
 SRC-TEXT-HAT02/3-2/E-HAT-3.2-11.md: raw TeX the page cannot show: '\\S'   (at 8a4449d9ea)
 SRC-TEXT-HAT02/4-1/E-HAT-4.1-5.md:  raw TeX the page cannot show: '\\S'   (at 8a4449d9ea)
 SRC-TEXT-HAT02/4-3/E-HAT-4.3-5.md:  raw TeX the page cannot show: '\\S'   (at 388ef940d0)
+SRC-TEXT-HAT02/4-k/E-HAT-4.K-5.md:  raw TeX the page cannot show: '\\S'   (at 63033e316e)
 ```
 
 Each card names a Hatcher section as `\S3.2`, `\S4.1`, `\S4.3` in prose, a TeX command outside a
@@ -175,17 +176,18 @@ in ." with the section and its sign gone. Three cards had had the same repair al
 (`E-SS3.EX-11`, `E-HAT-3.2-5`, `E-HAT-3.3-5`, each with the same note), and the convention the
 corpus settled on is the character: `§3.2`.
 
-All three now read the character, each with a `source-corrected` audit note. Verified per card:
+All four now read the character, each with a `source-corrected` audit note. Verified per card:
 `just check-card` parses it, and `qualc.tex.unrenderable_tex` over that card reports 0 errors
 where the whole-tree run reported one. Mathematics and wording unchanged.
 
 The class is a transcription habit rather than a closed set: it arrived one card at a time as
 lanes wrote new proofs, so the corpus, not this list, is what has to be checked. Deciding probe
-over the whole tree after the third repair: every card under `corpus/` (14394 of them), with the
-front matter, fenced and inline code and every math span dropped, searched for a `\S` not
-followed by a letter — **0 hits**. The standing gate for it is `qualc check`'s
-`raw-tex-dropped` diagnostic, which is also why no separate tool is kept for the probe. Any
-instance blocks `qualc build` from emitting a site.
+on the current tip, after the fourth repair: the same stage `qualc check` runs — pandoc parse
+plus `qualc.tex.unrenderable_tex` — over every card committed since that run's revision
+(`63033e316e42`), which is the only part of the tree its verdict does not already cover:
+**0 raw-TeX and 0 undefined-macro errors over 22 cards**. A regex sweep for `\S` over all 14394
+cards also reads 0. The standing gate for the class is `qualc check`'s `raw-tex-dropped`
+diagnostic, so no separate tool is kept. Any instance blocks `qualc build` from emitting a site.
 
 ---
 
