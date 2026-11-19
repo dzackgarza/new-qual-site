@@ -51,8 +51,6 @@ See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 [[T-SVF2W]]
 
-[[C-F2ZZQ]]
-
 [[C-TODSQ]]
 
 [[T-BYNL5]]
