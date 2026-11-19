@@ -281,6 +281,28 @@ audit:
     batch. Not read in this pass: Kleiman-Altman's own Theorem 7, not in
     tmp/sources, as before; Serre vanishing was cited, not re-read; and no
     other step was re-derived.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Printed exercise re-read for this pass at printed p. 355 -- the folio was read at the foot of
+    PDF p. 370 of tmp/sources/hartshorne-1977-algebraic-geometry.pdf, which carries the whole of
+    6.1--6.9, so 6.8 and 6.9 are on p. 355 and not on p. 356; a review report put them on 355 and
+    was right, and a brief that placed them on 356 was one page late. The card's statement is the
+    printed exercise with its star and its printed hint, and "for each m >> 0" is kept.
+
+    The import is named in the step transcribed-theorem: Dan--Kaur, Theorem 3.3, printed p. 3, who
+    attribute it to Kleiman--Altman's Theorem 7, and the card records that no ground-field
+    hypothesis appears in that restatement while the paper's own section 2 works over an
+    algebraically closed field. Added in this pass: the same step now says that Kleiman--Altman's
+    own Theorem 7 is not in this checkout and that the reading of it recorded on this card reports a
+    requirement that the ground field be infinite, which an algebraically closed field satisfies, so
+    the debt is visible rather than closed. The card's own step, the regularity computation that
+    makes X (m-1)-regular so that Serre vanishing III.5.2(b), printed p. 228, applies, was read and
+    is correct.
+
+    Not checked: Kleiman--Altman's own Theorem 7, which is not retained here; the card says so too.
+
 ---
 
 ::: {.problem}
@@ -331,6 +353,7 @@ Dan--Kaur, Theorem 3.3, printed p. 3, quoted: if for any $e>0$ such that $Z_e\ne
 
 This is the statement of Dan--Kaur, Theorem 3.3, printed p. 3, with the attribution there, "$[KA79,\text{ Theorem }7]$", to Kleiman--Altman.
 No hypothesis on the ground field is stated there, and the paper's own context in its §2 is a smooth projective variety over an algebraically closed field.
+Kleiman--Altman's own Theorem 7 is not in this checkout, and the reading of it recorded on this card reports that it requires the ground field to be infinite. That hypothesis is therefore not verified here; it holds anyway, since an algebraically closed field is infinite, and it is named here so that the debt is visible.
 
 :::
 
