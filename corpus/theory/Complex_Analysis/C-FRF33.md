@@ -18,5 +18,5 @@ review: draft
 
 ::: {.corollary}
 Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be a nonconstant [[D-E7A5W|holomorphic]] function on $\Omega$.
-Then $f$ is an open map: $f(U)$ is open for every open set $U\subseteq\Omega$.
+Then $f$ is an open map: $f(U)$ is open for every open set $U\subseteq\Omega$ [@SS03, Theorem 4.4 of Chapter 3 (p. 92)].
 :::
