@@ -41,6 +41,23 @@ audit:
     so H_n(B) = H_n(X) + H_{n-1}(B), and induction reaches the direct sum with indices i<=n rather
     than the source's displayed repeated n. The card also has an explicit splitting section j.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 11 of §2.B, printed p. 177, in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`, and against Li's solution at its printed page.
+    The statement matches the print. One defect of citation corrected: Li's solution is on printed
+    p. 43, not p. 44 — the folio 43 is on the page headed "Appendix 2.B", which holds both 2.B.10
+    and 2.B.11. Checked in Li's printed statement: it reads $\bigoplus_{i\leq n}H_n(X;\ZZ_2)$, so the
+    index is $i\leq n$ as the card has it and the symbol on the right is $H_n$ where $H_i$ is meant,
+    which is what the card records. Checked in the card: $H_n(E)\cong H_n(X)$ because $S^\infty$ is
+    contractible; $p_*$ is split injective through $j(x)=(x,b_0)$ with $q\circ j=\mathrm{id}_X$;
+    $r_\#\tau(\sigma)=2q_\#(\sigma)=0$ over $\ZZ_2$, and $r_*$ is an isomorphism, so $\tau_*=0$;
+    exactness then gives $0\to H_n(X)\xrightarrow{p_*}H_n(B)\xrightarrow{\delta}H_{n-1}(B)\to0$, split by
+    $q_*$, and induction gives $\bigoplus_{i\leq n}H_i(X;\ZZ_2)$. Not claimed: a published proof of
+    the trivial-covering case, which is `E-HAT-2.B-9`.
+
 ---
 
 ::: {.problem}
@@ -150,7 +167,7 @@ For $n=0$, $H_0(B)\cong H_0(X)$ because $\RP^\infty$ is connected. Iterating the
 :::
 
 :::
-The covering-space recurrence is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.2 (Hatcher 2.B.11), printed p. 44 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The source's displayed final index reads $H_n$ where $H_i$ is intended; step [](#s3){.pf-ref} gives the corrected induction. In the present proof the two lifts in $S^\infty$ have the same $X$-coordinate, so the transfer is zero over $\ZZ_2$, and the section $j$ splits the sequence. Li instead only observes that the sequence splits over a field.
+The covering-space recurrence is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.2 (Hatcher 2.B.11), printed p. 43 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`. The source's displayed statement reads $\bigoplus_{i\leq n}H_n(X;\ZZ_2)$, with $H_n$ where $H_i$ is intended; step [](#s3){.pf-ref} gives the corrected induction. In the present proof the two lifts in $S^\infty$ have the same $X$-coordinate, so the transfer is zero over $\ZZ_2$, and the section $j$ splits the sequence. Li instead only observes that the sequence splits over a field.
 
 
 :::
