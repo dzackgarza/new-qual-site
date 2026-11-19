@@ -40,6 +40,22 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 8 (p.205) with all three parts as printed, the closedness and deformation-retract hypotheses of (b) included. (a) rewritten to give the two induction steps with their citations: Theorem 2.16 p.117 for the reduced sequence of the pair and Theorem 2.20 p.119 for the excision identifying H^{i+1}(D^{n+1},S^n) with H^{i+1}(S^{n+1},D^{n+1}_+), plus the Mayer-Vietoris sequence of p.149; the base case S^0 and the passage from reduced to unreduced are now explicit. (b) cites Proposition 2.22 p.124 and Theorem 3.2 p.195 with the naturality of p.196, and notes the case A empty, which Proposition 2.22 excludes. (c) now records why the connecting map vanishes: delta = delta i^* r^* = 0. Not covered: no treatment of the axioms beyond the three cases asked.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 8 of §3.1, printed p. 205, with Theorem 2.16 (printed p. 117),
+    Theorem 2.20 (printed p. 119), Proposition 2.22 (printed p. 124), the Mayer--Vietoris sequence
+    of printed p. 149 and Theorem 3.2 with its naturality on printed pp. 195--196. The three parts
+    check out: the two inductions for $H^i(S^n;G)$, the good-pair isomorphism through the
+    universal coefficient ladder and the five lemma, and the splitting for a retract from
+    $\delta=\delta i^*r^*=0$. Two corrections made. (1) The excision step read
+    $\widetilde H^{n+1}(S^{n+1})$ where the induction variable is $i$; it now reads
+    $\widetilde H^{i+1}(S^{n+1})$. (2) The case $A=\emptyset$ was dismissed with
+    $H^n(X,\emptyset;G)=\widetilde H^n(X;G)$, which is false in degree $0$: $H^n(X,\emptyset)$ is
+    unreduced. It now reads $H^n(X,\emptyset;G)=H^n(X;G)\cong\widetilde H^n(X\sqcup\mathrm{pt};G)$,
+    with the split sequence of the pair $(X\sqcup\mathrm{pt},\mathrm{pt})$ supplying the last
+    isomorphism. Not claimed: the axioms beyond the three cases asked, and no certificate.
 ---
 
 ::: {.problem}
@@ -76,7 +92,7 @@ with the usual interpretation for $S^0$.
 
 ::: pf-proof
 
-The reduced long exact sequence of the pair (Theorem 2.16, p.117) runs $\widetilde H^i(D^{n+1})\to\widetilde H^i(S^n)\to H^{i+1}(D^{n+1},S^n)\to\widetilde H^{i+1}(D^{n+1})$, and both outer groups vanish because $D^{n+1}$ is contractible, so $\widetilde H^i(S^n)\cong H^{i+1}(D^{n+1},S^n)$. Write $S^{n+1}$ as the union of its closed hemispheres $D^{n+1}_+\cup D^{n+1}_-$ with intersection $S^n$; the same sequence for the pair $(S^{n+1},D^{n+1}_+)$, whose first term vanishes, identifies $\widetilde H^{n+1}(S^{n+1})$ with $H^{i+1}(S^{n+1},D^{n+1}_+)$, and excision (Theorem 2.20, p.119) identifies the latter with $H^{i+1}(D^{n+1}_-,S^n)$, where $D^{n+1}_-$ is a disk and so contractible. Hence $\widetilde H^i(S^n)\cong\widetilde H^{i+1}(S^{n+1})$. Starting from $\widetilde H^0(S^0;G)=G$ and $\widetilde H^i(S^0;G)=0$ for $i>0$, induction gives $\widetilde H^i(S^n;G)=G$ for $i=n$ and $0$ otherwise, and since $S^n$ is path-connected for $n>0$ this is the displayed unreduced answer.
+The reduced long exact sequence of the pair (Theorem 2.16, p.117) runs $\widetilde H^i(D^{n+1})\to\widetilde H^i(S^n)\to H^{i+1}(D^{n+1},S^n)\to\widetilde H^{i+1}(D^{n+1})$, and both outer groups vanish because $D^{n+1}$ is contractible, so $\widetilde H^i(S^n)\cong H^{i+1}(D^{n+1},S^n)$. Write $S^{n+1}$ as the union of its closed hemispheres $D^{n+1}_+\cup D^{n+1}_-$ with intersection $S^n$; the same sequence for the pair $(S^{n+1},D^{n+1}_+)$, whose first term vanishes, identifies $\widetilde H^{i+1}(S^{n+1})$ with $H^{i+1}(S^{n+1},D^{n+1}_+)$, and excision (Theorem 2.20, p.119) identifies the latter with $H^{i+1}(D^{n+1}_-,S^n)$, where $D^{n+1}_-$ is a disk and so contractible. Hence $\widetilde H^i(S^n)\cong\widetilde H^{i+1}(S^{n+1})$. Starting from $\widetilde H^0(S^0;G)=G$ and $\widetilde H^i(S^0;G)=0$ for $i>0$, induction gives $\widetilde H^i(S^n;G)=G$ for $i=n$ and $0$ otherwise, and since $S^n$ is path-connected for $n>0$ this is the displayed unreduced answer.
 
 :::
 
@@ -116,7 +132,7 @@ Proposition 2.22 (p.124) applies to a nonempty closed subspace $A$ that is a def
 $$
 H_j(X,A;\ZZ)\xrightarrow{\cong}\widetilde H_j(X/A;\ZZ)
 $$
-for every $j$. For a complex of free abelian groups the universal coefficient sequence of Theorem 3.2 (p.195) is $0\to\operatorname{Ext}(H_{j-1},G)\to H^j(-;G)\to\operatorname{Hom}(H_j,G)\to0$, and it is natural in the chain complex (p.196). Applying it to the singular chains of $(X,A)$ and of $(X/A,\mathrm{pt})$ and using the homology isomorphism on $H_n$ and $H_{n-1}$ gives isomorphisms of both outer terms in the induced ladder; the five lemma gives the isomorphism in the middle. For $A=\emptyset$ the statement is immediate, since then $X/A=X\sqcup\mathrm{pt}$ and $H^n(X,\emptyset;G)=\widetilde H^n(X;G)=\widetilde H^n(X\sqcup\mathrm{pt};G)$.
+for every $j$. For a complex of free abelian groups the universal coefficient sequence of Theorem 3.2 (p.195) is $0\to\operatorname{Ext}(H_{j-1},G)\to H^j(-;G)\to\operatorname{Hom}(H_j,G)\to0$, and it is natural in the chain complex (p.196). Applying it to the singular chains of $(X,A)$ and of $(X/A,\mathrm{pt})$ and using the homology isomorphism on $H_n$ and $H_{n-1}$ gives isomorphisms of both outer terms in the induced ladder; the five lemma gives the isomorphism in the middle. For $A=\emptyset$ the statement follows from the split sequence of the pair $(X\sqcup\mathrm{pt},\mathrm{pt})$: here $X/A=X\sqcup\mathrm{pt}$ and $H^n(X,\emptyset;G)=H^n(X;G)$, while $H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)\oplus H^n(\mathrm{pt};G)$ with the second summand $G$ in degree $0$ and $0$ otherwise, so $\widetilde H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)$.
 
 :::
 
