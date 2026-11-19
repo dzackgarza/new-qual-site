@@ -8850,3 +8850,13 @@ and the printed book itself. Of 4.4.4, the cases 1--6 were read but only case 7 
 **Checks.** `qualc.authoring check P-AGH29PROJCLOSURE`: "schema and Markdown parsing OK (single card)"; the pre-commit card-YAML and schema hook on the commit, "Card YAML and schema: 1 changed file(s) checked".
 
 **Uncertainty.** The printed pages of Yang's and Egbert's sets were not read, so the card cites neither; the proof on the card was read again in this pass and is unchanged. Nothing else in the record above is affected, and the fifteen cards it lists as unread are still unread.
+
+## 2026-11-19: #168's first batch, second correction — V.2.10's step s7 is read and its unsupported sentence cited
+
+**Object and need.** The record of this date headed "#168's first batch --- the user-post steps of I.2.9, I.5.5, I.5.13 and I.6.7 read, ..." lists `P-AGH5210CANONSCROLL` (V.2.10) among the cards "not read in this pass". It was read before the batch ended, and its step `s7` was repaired, so that listing is superseded for this card. A dated record is not rewritten; `QUAL-11` asks for a new record, and this is it.
+
+**`P-AGH5210CANONSCROLL`, V.2.10 step `s7` — the gap and the repair.** The step's last sentence, "a hyperelliptic curve of genus at least $2$ has canonical map of degree $2$ onto a rational normal curve", carried no citation and no proof, and it is the sentence that converts step `s5`'s embedding into nonhyperellipticity. Hartshorne IV.5.3, printed pp. 342--343 (the folio of PDF p. 356 read as 341 for IV.5.2 on the preceding page, and the marker for PDF p. 357 on printed p. 342 carrying IV.5.3), states it: a hyperelliptic curve of genus at least $2$ has a unique $g^1_2$, with morphism $f_0:X\to\PP^1$, and its canonical morphism is $f_0$ followed by the $(g-1)$-uple embedding. That gives degree $2$ and a rational normal image, and the step now says so and cites the proposition. Step `s5`'s restriction isomorphism $H^0(\OO_X(H))\cong H^0(Y,K_Y)$ was read again and stands as the card's own, which its event of 2026-11-16 records. Commit `a571c35f6d`.
+
+**Checks.** `qualc.authoring check P-AGH5210CANONSCROLL`: "schema and Markdown parsing OK (single card)"; the pre-commit card-YAML and schema hook on the commit.
+
+**Uncertainty.** The other steps of V.2.10 were not re-read in this pass, and no publication besides the book was opened for the hyperelliptic canonical-map statement. The second reader who raised this step also raised a locator question on step `s10`'s $K_{C\times C}$ display; it is not checked here and is not repaired.
