@@ -47,6 +47,8 @@ We say that $\mcf$ is obtained by \dfn{glueing} the sheaves $\mcf_i$ via the iso
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.22, printed p. 69. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.22, printed p. 11, gives the same two constructions — gluing the espaces étalés, and defining $\mcf(V)$ as the compatible tuples of local sections — and the steps carry out the second, with the cocycle consequences the source takes for granted written out first.
+
 First note that the cocycle conditions imply
 $$
 \phi_{ji}=\phi_{ij}^{-1}.
