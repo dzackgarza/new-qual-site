@@ -895,6 +895,28 @@ audit:
     the withdrawn form of s3. The one statement that is not proved anywhere on
     the card, the comparison of s8 off the span of the complete-intersection
     classes, is not used by any part and is recorded in COMPLAINTS.md.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The transverse base change of step s3 and step s8 in its general form is
+    available in the retained Stacks book, in the duality language rather than in
+    the Hodge-cohomology one used here. Read on the printed pages in this pass:
+    Lemma 48.7.1, "Trace map and base change", printed p. 4100, which says that
+    for a tor-independent cartesian square the two ways of pushing the relative
+    trace through the square agree; the paragraph on printed p. 4111 that
+    specialises it to $X'=Y'\times_YX$, $\omega^\bullet_{X'/Y'}=L(g')^*
+    \omega^\bullet_{X/Y}$ and the trace of $f'$ being the base change of the
+    trace of $f$; and Section 48.10, Lemmas 48.10.1 and 48.10.2 on printed
+    p. 4107, base change for the right adjoint $i^!$ of a pseudo-coherent closed
+    immersion. With Lemma 50.24.3 on printed p. 4274, which identifies the
+    relative trace $t:Rf_*\Omega^n_{X/S}[n]\to O_S$ with the duality trace, these
+    give the identity once $i^!$ is read as the Gysin map, $\Omega^n[n]$ as the
+    dualizing complex and the Serre pairings as the duality pairings. That
+    translation is not carried out on this card, and no step uses it; what the
+    card proves is the two ranges of s3 and s8. Nothing of the card's own text
+    was changed in this pass.
 ---
 
 ::: {.problem}
