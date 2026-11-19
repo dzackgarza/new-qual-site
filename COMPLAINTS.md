@@ -591,11 +591,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **46 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **45 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Fifty-one of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 46 stand as this item lists them.
+   reported and repaired above. Fifty-two of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 45 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -919,7 +919,12 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    the cellular chain complex; the pair's sequence with $\pi_i(\widetilde X)=0$ turns that into
    $\pi_n(\widetilde X^n)$, and $\widetilde X^n\to X^n$ is a cover for $n\ge2$, so $\pi_n(X^n)$ is free abelian.
 
-   Remaining unread in this item's set: §4.2 (22 more, incl. -5), §4.3 (24) --- 46 proofs.
+   **§4.2-20, read the same day.** Correct, no card changed; Sam's published solution covers it and is
+   cited. A $K(G,1)$ has no higher homotopy, so $\pi_n(K\times X)=\pi_n(X)$ for $n\ge2$; the universal cover
+   is the product of the contractible cover of the $K(G,1)$ with $X$, and $G$ acts only on the contractible
+   factor, so the action on $\pi_n(X)$ is trivial.
+
+   Remaining unread in this item's set: §4.2 (21 more, incl. -5), §4.3 (24) --- 45 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
