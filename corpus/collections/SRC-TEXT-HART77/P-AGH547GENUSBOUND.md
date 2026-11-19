@@ -267,6 +267,30 @@ audit:
     agrees with the hand computation recorded above, including the identity
     D.G_j = b_j, which follows from 2a = sum_i b_i = 8. No text of the card
     changed, and no claim is weakened or added.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two repairs to the siting of the attainment for degrees other than 4, and
+    no change of statement. Step nonsingular-members said that the proof of
+    Corollary 4.13(b) rests on Bertini's theorem II.8.18 alone; it rests on
+    II.8.18 and III.7.9.1, as the book's own proof of the corollary says, and
+    the step now names both, with what each supplies: II.8.18 the regularity of
+    the section, by the count of the bad hyperplanes B_x at each closed point,
+    and III.7.9.1 the connectedness, which is Corollary III.7.9 with its
+    vanishing III.7.8. Page correction: the event of 2026-11-16 above places
+    III.7.9.1 at printed p. 273; it stands on printed p. 245, and Corollary
+    III.7.9 on printed p. 244, the retained PDF carrying Corollary 7.9's proof
+    on PDF p. 260, whose printed folio is 245, so that printed page = PDF page
+    - 15 holds there as it does at the folios 179 and 270 checked for the other
+    citations. Read for this pass: Hartshorne, Algebraic Geometry (1977),
+    Corollary V.4.13 with its proof, printed p. 406, Theorem II.8.18 with its
+    proof, printed pp. 179-180, and Corollary III.7.9 with Remark 7.9.1,
+    printed pp. 244-245, in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    with the folio of PDF p. 260 checked in the retained PDF. Not checked: the
+    rendered page, and no printing other than the text version beside the
+    retained PDF. The degree 4 case is unchanged and still rests on condition
+    (c) of Exercise V.4.8 as P-AGH548IRREDCLASSES now proves it.
 ---
 
 ::: {.problem}
@@ -447,8 +471,13 @@ $d>\frac{2(d+1)}{3}$, that is $d>2$, in the third, and $d>\frac{2d}{3}$ in the f
 because $d>0$ in the first family, $d>1$ in the second and $d>2$ in the third. The class of degree $5$
 has $a=4$, $b_1=2$ and the remaining $b_i$ equal to $1$, so $a=4>b_i+b_j$ and
 $2a=8>6=\sum_ib_i-1\ge\sum_{i\ne j}b_i$. By Corollary 4.13(b) each of these classes contains an
-irreducible nonsingular curve; its proof rests on Bertini's theorem for hyperplane sections, II.8.18 of
-the book, printed p. 179, whose statement carries no hypothesis on the characteristic, so these
+irreducible nonsingular curve; the corollary's proof uses Bertini's theorem for hyperplane sections, II.8.18 of
+the book, printed p. 179, together with III.7.9.1, printed p. 245, and neither carries a hypothesis on
+the characteristic: II.8.18 is stated for a nonsingular closed subvariety of $\PP^n_k$ over an
+algebraically closed field $k$ and proves regularity by counting the dimension of the bad hyperplanes
+$B_x$, and the connectedness III.7.9.1 adds is Corollary III.7.9, printed p. 244, for an integral
+normal projective variety of dimension at least $2$ over an algebraically closed field, proved from
+the vanishing of III.7.8 and the exact sequence of $qD$ with $q$ large. So these
 degrees are attained over every algebraically closed field $k$.
 
 The classes of degrees $1$ and $2$ are the line and the conic of step
