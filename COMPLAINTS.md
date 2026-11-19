@@ -6977,3 +6977,31 @@ carries it. No statement, step or hypothesis of the card changes.
 image; Hartshorne's V.5.4 on printed p. 417 and V.4.15 on printed p. 409; and the card's own steps on
 part (c). Not read: Nagata's paper beyond the statements the card quotes; the printed books
 themselves; and no search of the literature for a published proof of the properness.
+
+## 2026-11-19, fourth item revisited: the three Hatcher cards carried as "source obligation open" are two
+
+**Object and need.** The 2026-11-19 entry *the six "still open after both passes" items of 2026-11-18 re-checked*
+ends with a consequence: `E-HAT-4.A-4` remains open as a source obligation, "so do `E-HAT-2.B-4` and
+`E-HAT-4.1-4`, which this session did not search". A status written into a session's notes is not a status of the
+repository, so this item reads the three cards before acting on that list.
+
+**Checked.** `E-HAT-4.1-4` is **closed as a source obligation**: its solution opens "The proof is **Nicholas
+Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Partial Solutions to Homework #6,
+§4.1 Exercise 4, printed p. 1**". I read that source in the checkout (`tmp/sources/uoregon-proudfoot-634-hw6.md`,
+whose coverage line reads "Exercises from Hatcher: 4.1, Problems 4, 11, 12, 14, 15") and its argument is the
+printed formula: the naturality identity $f_*\circ\beta_h(\delta)=\beta_{f\circ h}(f_*\delta)$ applied with
+$f=p$, $h=\tilde\gamma$, $\delta=\gamma_*(\alpha)$ gives
+$p_*\circ\beta_{\tilde\gamma}\circ\gamma_*(\alpha)=\beta_\gamma\circ p_*(\alpha)$, the second equality because
+$\gamma$ acts by deck transformations, so $p\circ\gamma=p$ — which is the exercise's
+$\gamma p_*(\alpha)=p_*\beta_{\tilde\gamma}(\gamma_*(\alpha))$ with $\beta$ Hatcher's change-of-basepoint map of
+printed pp. 341--342. The card's citation is therefore complete and the record's claim about it is stale.
+
+**Not closed.** `E-HAT-4.A-4` still says "the argument below is the card's own", and `E-HAT-2.B-4` names no
+source. Searched in the checkout for both: Sam's 2008 set, Guanyu Li's, DeMason's M382c, and the UCR Math 205B
+help file contain no §4.A section at all (`grep -c "4\.A"` returns 0 in each); Koukpari's set has the §4.A heading
+at line 999 and no solution under it, running straight on to 4.B. So the 2026-11-19 statement that the inspected
+sets do not cover §4.A holds, and the two cards' obligation is unchanged.
+
+**What this item did not do.** It did not search outside the checkout for either card, and it did not read either
+card's proof against the book again; the reading of `E-HAT-4.A-4` in the #163 pass stands (correct, §4.A printed
+p. 426), and `E-HAT-2.B-4` was not read in that pass. The three-card list is now a two-card list, with the reason.
