@@ -16,6 +16,8 @@ Let $T_n$ denote the closed orientable surface of genus $n$, for $n\ge1$. Prove 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

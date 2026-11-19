@@ -22,6 +22,8 @@ Which theorem or theorems from the course seem most interesting, and why?
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
+
 One reasonable answer is that the **Dominated Convergence Theorem** and the
 **Uniform Boundedness Theorem** are especially interesting because they
 share the same broad pattern:

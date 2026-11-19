@@ -22,6 +22,8 @@ Let $X_n$ be the bouquet of $n$ circles, whose fundamental group (based at the v
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #stallings-core-part-a}

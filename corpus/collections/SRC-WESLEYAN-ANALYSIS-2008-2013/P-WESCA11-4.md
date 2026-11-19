@@ -32,6 +32,8 @@ is at least $AB$.
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the preliminary-examination papers alone, so the argument is the card's own.
+
 Let $R$ denote the radius of convergence of
 $$
 \sum_{n=0}^{\infty}a_nb_nz^n.

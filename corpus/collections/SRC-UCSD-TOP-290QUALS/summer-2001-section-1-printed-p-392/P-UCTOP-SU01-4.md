@@ -19,6 +19,8 @@ Prove that $X$ is homotopy-equivalent to the "bouquet of two spheres" $S^2 \vee 
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the qualifying-examination papers alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #hurewicz-iso}
