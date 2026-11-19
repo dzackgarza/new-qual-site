@@ -12,6 +12,25 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.J Exercise 1, printed p. 475.
+    The proof of the printed claim is correct, but the card wrapped it in a qualification
+    and a counterexample that are both false. It said the claim fails when a component is
+    a point, instancing X = S^1 u {pt} with Sigma X = S^2 v S^1 against
+    Sigma(wedge of components) = S^2: that is wrong, because the suspension of a point is
+    a point (reduced) or an interval (unreduced), and an interval is contractible, so the
+    singleton component contributes nothing on either side and Sigma X = S^2 in both
+    readings. Removed: the counterexample step, the "no component is a point" hypothesis
+    in the collapse step, and the opening claim that a qualification is needed. Also
+    corrected: the step proving Omega Sigma X path-connected justified it by
+    reparametrising loops, which gives the group structure and not connectivity; it now
+    argues that Sigma X is simply connected, as a wedge of suspensions of path-connected
+    CW complexes, so pi_0(Omega Sigma X) = pi_1(Sigma X) = 0. The earlier audit note that
+    says the restructure preserved "its qualification" is left as it stands, being the
+    record of that day. Statement unchanged.
 - event: source-checked
   by: claude
   date: 2026-11-06
@@ -41,7 +60,7 @@ Show that $\Omega\Sigma X$ for a nonconnected CW complex $X$ reduces to the conn
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.J Exercise 1, printed p. 475. The card proves the printed claim under the stated qualification and records the counterexample to it in general.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.J Exercise 1, printed p. 475. The printed claim needs no qualification, and the argument below proves it as it stands: the suspension of one point is a point — or, in the unreduced convention, an interval, which is contractible — so a component that is a single point contributes nothing to either side.
 
 ::: pf
 
@@ -54,10 +73,10 @@ The reduced suspension is the smash product $X\wedge S^1$, computed componentwis
 :::
 
 ::: {.pf-step #collapse}
-If no component of $X$ is a point, then $S(X_\alpha)\simeq\Sigma X_\alpha$ for $\alpha\neq\alpha_0$.
+$S(X_\alpha)\simeq\Sigma X_\alpha$ for every $\alpha\neq\alpha_0$, whether or not the component is a point.
 
 ::: pf-proof
-For such $\alpha$ the pair $(S(X_\alpha),\{*_\alpha\}\times I)$ has contractible second term and is a CW pair, so collapsing that interval, which carries $S(X_\alpha)$ to the reduced suspension $\Sigma X_\alpha$, is a homotopy equivalence by Proposition 0.17 (p. 15).
+For each such $\alpha$ the pair $(S(X_\alpha),\{*_\alpha\}\times I)$ has contractible second term and is a CW pair, so collapsing that interval, which carries $S(X_\alpha)$ to the reduced suspension $\Sigma X_\alpha$, is a homotopy equivalence by Proposition 0.17 (p. 15).
 :::
 :::
 
@@ -73,7 +92,7 @@ Apply step [](#collapse){.pf-ref} to each summand of step [](#pieces){.pf-ref}; 
 $\Omega\Sigma X\simeq\Omega\Sigma(\bigvee_\alpha X_\alpha)$, which is path-connected; and $\bigvee_\alpha X_\alpha$ is path-connected.
 
 ::: pf-proof
-$\Omega$ carries the homotopy equivalence of step [](#wedge){.pf-ref} to one of loop spaces. A loop space is path-connected because loops can be reparametrised to concatenate, and the wedge is path-connected because its components are path-connected and share the basepoint.
+$\Omega$ carries the homotopy equivalence of step [](#wedge){.pf-ref} to one of loop spaces. $\Omega\Sigma X$ is path-connected because $\Sigma X$ is simply connected: $\Sigma X_\alpha$ is a suspension of a path-connected CW complex, hence simply connected by van Kampen, and a wedge of simply connected CW complexes is simply connected, so $\pi_0(\Omega\Sigma X)=\pi_1(\Sigma X)=0$. The wedge is path-connected because its components are path-connected and share the basepoint.
 :::
 :::
 
@@ -85,11 +104,11 @@ By step [](#loops){.pf-ref} $\Omega\Sigma X$ has a single path-component, namely
 :::
 :::
 
-::: {.pf-step #counterexample}
-Without the hypothesis that no component is a point the claim fails: $X=S^1\sqcup\{\mathrm{pt}\}$ gives $\Sigma X=S^2\vee S^1$ but $\Sigma(\bigvee_\alpha X_\alpha)=S^2$.
+::: {.pf-step #conclusion}
+Each path-component of $\Omega\Sigma X$ is homotopy equivalent to $\Omega\Sigma(\bigvee_\alpha X_\alpha)$.
 
 ::: pf-proof
-For the singleton component, $S(X_\alpha)$ is an interval and $\Sigma X_\alpha$ is a point, so step [](#pieces){.pf-ref} gives $\Sigma X=S^2\vee S^1$ while the wedge of the components is $S^1$ with $\Sigma$ equal to $S^2$. Then $\pi_1$ of $\Omega\Sigma X=\pi_2(S^2\vee S^1)$, which is free abelian on countably many generators, while $\pi_2(S^2)\cong\ZZ$.
+By step [](#loops){.pf-ref} $\Omega\Sigma X$ has a single path-component, namely itself, and it is homotopy equivalent to $\Omega\Sigma(\bigvee_\alpha X_\alpha)$, which is a connected CW complex, so Theorem 4J.1 (p. 471) applies to it and its conclusion transfers to $\Omega\Sigma X$.
 :::
 :::
 
