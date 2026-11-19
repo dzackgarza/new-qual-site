@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5B, printed pp. 5--6 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 5B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -49,6 +58,8 @@ Differentiate.
 :::
 
 ::: {.solution}
+
+The argument is Problem 5B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 5--6 of that file, transcribed: $g'(x)=(xf'(x)-f(x))/x^2$ by the quotient rule, so it suffices to show $xf'(x)>f(x)$; the mean value theorem on $[0,x]$ gives $c\in(0,x)$ with $f'(c)=f(x)/x$; and $f'$ increasing gives $xf'(x)>xf'(c)=f(x)$. What the card adds is the step structure and the endpoint discussion at $x=0$, not the argument.
 
 ::: pf
 
