@@ -74,9 +74,19 @@ audit:
     320 carries 311, where Section 3.F begins. The exercises of Section 3.E are therefore all on
     printed p. 310, and this card's Exercise 1 is printed there.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 319 carries the running head 310.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.E of Hatcher, *Algebraic Topology* (2002), printed p. 310, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that $H^*(K(\ZZ_m, 1); \ZZ_k)$ is isomorphic as a ring to $H^*(K(\ZZ_m, 1); \ZZ_m) \otimes \ZZ_k$ if $k$ divides $m$.
 In particular, if $m/k$ is even, this is $\Lambda_{\ZZ_k}[x] \otimes \ZZ_k[y]$.
 :::
