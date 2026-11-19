@@ -60,8 +60,15 @@ audit:
     because its mod-two reduction is. The card's two citations were then located in the
     retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9:
     Theorem 3D.2 is printed on p. 297 (PDF 306) and Proposition 3D.4 on p. 300 (PDF 309), both as
-    the card cites them. Still not checked: the additive computation itself, which depends on the
-    cell structure of SO(5) and its Bockstein data and was not recomputed here.
+    the card cites them. The additive computation was then recomputed. The cell
+    structure was taken from the proof of Proposition 3D.3 in the retained text, not from the card:
+    C^{2i} has basis e^0, e^{2i}, e^{2i-1}, e^{2i}e^{2i-1} with d e^{2i} = 2 e^{2i-1}, and
+    C_*(SO(2k+1)) = C^2 tensor ... tensor C^{2k}, so C_*(SO(5)) = C^2 tensor C^4. The tensor complex
+    was built with d(x tensor y) = dx tensor y + (-1)^{|x|} x tensor dy and its homology computed
+    from Smith normal forms over Z: the result is Z in degrees 0, 3, 7, 10 and Z_2 in degrees
+    1, 3, 4, 5, 6, 8, with 0 in degrees 2 and 9, which is exactly the card's list. That check also
+    corrected the card's description of the factors, which had omitted the unit cell e^0; it is now
+    named.
 ---
 
 ::: {.problem}
@@ -74,7 +81,7 @@ This is Hatcher Exercise 3.D.3. No published solution set is transcribed: the ar
 ::: pf
 
 ::: {.pf-step #complex}
-The cellular chain complex of $SO(5)$ is $C^{2}\otimes C^{4}$, where $C^{2}$ and $C^{4}$ have generators $e^{2i-1}$, $e^{2i}$ and $E_{i}=e^{2i}e^{2i-1}$, with $\partial e^{2i}=2e^{2i-1}$ and $\partial e^{2i-1}=\partial E_{i}=0$.
+The cellular chain complex of $SO(5)$ is $C^{2}\otimes C^{4}$, where $C^{2i}$ has basis $e^{0}$, $e^{2i}$, $e^{2i-1}$ and $E_{i}=e^{2i}e^{2i-1}$, with $\partial e^{2i}=2e^{2i-1}$ and $\partial e^{0}=\partial e^{2i-1}=\partial E_{i}=0$; here $i=1,2$, and $C^{0}$ is spanned by the unit $e^{0}$ in each factor.
 
 ::: pf-proof
 Hatcher's cell structure on $SO(5)$ gives one cell in each dimension $0,\dots,10$, and the boundary formula $\partial e^{2i}=2e^{2i-1}$, $\partial e^{2i-1}=0$ is the one computed there. The product cell decomposition is the tensor product of the complexes $C^{2}$ spanned by $e^{1},e^{2}$ and $C^{4}$ spanned by $e^{3},e^{4}$, with the cells $E_{i}=e^{2i}e^{2i-1}$ of the product; Leibniz's rule and $\partial e^{2i-1}=0$ make $E_{i}$ a cycle.
