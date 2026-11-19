@@ -30,9 +30,7 @@ topics:
 
 ### Irreducibility of a polynomial over $\QQ$
 
-[[T-CF6S3]]
-
-Eisenstein's criterion may be applied to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
+[[T-CF6S3|Eisenstein's criterion]] may be applied to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$. If $f\in\ZZ[x]$ has leading coefficient prime to $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$. A polynomial of degree $2$ or $3$ is irreducible if and only if it has no root.
 
 ### Separability
 
