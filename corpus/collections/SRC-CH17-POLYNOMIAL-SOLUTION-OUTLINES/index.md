@@ -21,7 +21,9 @@ source:
         - id: P-CH17-8
           comment: Exercise 8
         - id: P-CH17-9
-          comment: Exercise 9
+          comment: Exercise 7 (printed as exercise 9 when the card was created; constructing a
+            field of order 25 is exercise 7 in Gallian 7e, exercise 9 being the reducibility of
+            x^3+x^2+x+1 over Q)
         - id: P-CH17-12
           comment: Exercise 12
         - id: P-CH17-15
