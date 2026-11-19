@@ -6642,3 +6642,17 @@ search of the literature beyond these files.
 **What was checked, and not.** Each retained entry was read and compared with the card's answer or route; no card's proof was re-derived. The pages are the retained files' own page numbers.
 
 **Uncertainty.** The claims about what each card "adds" are readings of the two texts side by side, not a step-by-step correspondence; where the outline is a bare answer, the card's proof is its own and the sentence says so.
+
+## 2026-11-19: outside the closed sections — three cards read in §3.B, §3.D and §3.F, and the back-referencing pattern found a third time
+
+**Object.** The last report named the sections its reads had not covered. Three cards are read here, one from each of three small appendices, against the book at their printed pages.
+
+| Card | Printed page | Mathematics checked / defect repaired |
+| --- | --- | --- |
+| `E-HAT-3.B-5` | Ex. 5, p. 280 | correct: both slant products, the chain-map computation $\varphi(e^j)\partial e^i$ for a cocycle, the cocycle condition $\varphi(\partial c\times d)=\varphi(\partial(c\times d))=0$ for a cycle, and the change-of-representatives paragraph with its sign $(-1)^{n-j+1}$. **Repaired**: two steps whose proof was a reference to another step, and a `pf-qed` whose argument was "Steps s2 and s4", folded into the steps that carry their content |
+| `E-HAT-3.D-2` | Ex. 2, p. 302 | correct: cells of $SO(n)$ indexed by admissible sequences of dimension $i_1+\cdots+i_r$, so $e^0,e^1,e^2$ only up to dimension two; the $2$-cell restricts to the double cover $S^1\to\RP^1$ and attaches by degree two; $\pi_1=\langle a\mid a^2\rangle$; and the requested loop and its explicit nullhomotopy |
+| `E-HAT-3.F-2` | Ex. 2, p. 320 | correct: $\varprojlim=\ker\Phi$, $\varprojlim^1=\operatorname{coker}\Phi$; the stable images $I_i$ have $\alpha_{i+1}(I_{i+1})=I_i$ and $\Phi$ is onto $\prod I_i$ by the recursion $g_{i+1}\mapsto g_i-b_i$; the quotient tower is pro-zero and vanishes after a cofinal subsequence; the snake lemma gives the result |
+
+**The pattern, third instance.** `E-HAT-3.B-5` closed its proof with a `pf-qed` reading "Steps s2 and s4", and carried two ordinary steps whose entire proof was "Step s2-1" and "Step s4-1". `STYLE-08` forbids the first outright and requires the second to be written in complete sentences. Both are removed and their content folded into the steps that do the work, so the proof now has four substantive steps and no step that only points at another. The earlier instances were `E-HAT-3.3-11` (where the removed step also widened a printed "if" to "iff") and `E-HAT-3.3-2`; `3.F-3`, `4.H-2` and `4.I-2` still end with `Q.E.D.` steps and were not touched.
+
+**Not done.** The rest of the sections outside the reads — Chapter 1 throughout, §2.1 (29 cards), §2.2 (32), §2.3 (3), §3.1 (13), §3.C (9), §3.E (1), §4.2 (11), §4.A (2) and the smaller appendices — remain. The #170 source obligations are unchanged.
