@@ -20,7 +20,7 @@ relations:
 review: draft
 prompts:
 - State RAPL and LAPC.
-- Deduce that $\Hom_A(N,\wait)$ is left exact and $\wait\tensor_A N$ is right exact.
+- Deduce that $\Hom_A(N,-)$ is left exact and $-\tensor_A N$ is right exact.
 - Why does knowing which side of an adjunction a functor sits on settle its exactness?
 ---
 
@@ -42,12 +42,12 @@ That is exactly the universal property of $\projectivelim G(B_i)$.
 The colimit statement is the same argument run the other way.
 
 Consequently the tensor-hom pair is one-sided exact, with no diagram chase.
-Kernels are limits and cokernels are colimits, so for the adjunction with $\wait\tensor_A N$ on the left and $\Hom_A(N,\wait)$ on the right: given $0 \to M' \to M \to M''$, one has $M' \cong \ker(M \to M'')$, so
+Kernels are limits and cokernels are colimits, so for the adjunction with $-\tensor_A N$ on the left and $\Hom_A(N,-)$ on the right: given $0 \to M' \to M \to M''$, one has $M' \cong \ker(M \to M'')$, so
 $$
 \Hom(N,M') \cong \Hom(N, \ker(M \to M'')) \cong \ker\qty( \Hom(N,M) \to \Hom(N,M'') ) ,
 $$
-which is left exactness of $\Hom_A(N,\wait)$.
-Symmetrically, $\wait \tensor_A N$ preserves the cokernel and is therefore right exact.
+which is left exactness of $\Hom_A(N,-)$.
+Symmetrically, $- \tensor_A N$ preserves the cokernel and is therefore right exact.
 
 For sheaves, $\pi^{-1}$ and $\pi^*$ are left adjoints and hence right exact, while $\pi_*$ is a right adjoint and hence left exact; the failure of exactness of $\pi_*$ is measured by its higher direct images.
 :::
