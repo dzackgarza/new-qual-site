@@ -133,6 +133,8 @@ never from a second run of the work done to watch the total split.
 
 Read the relevant cards before changing their titles, classifications, relations, or content (`QUAL-01`). Make semantic decisions from the mathematics, not from filenames or text similarity (`QUAL-02`). A title names the mathematics on the card (`CARD-01`, `CARD-02`, `CARD-06`), and public prose follows the policy families above.
 
+A refutation of a formula is re-derived from the formula as the person making the claim wrote it (`QUAL-02`). Hand-substituting a corrected version and then evaluating that checks the corrector's formula instead, and the two differ by exactly the correction in dispute: a claim about a factor $(-1)^n$ is evaluated term by term with $(-1)^n$, not by multiplying the whole sum by $-1$. A numeric test names and prints the expression it evaluates and states the accuracy it reached, and it never replaces a proof or a cited published proof where one is owed (`QUAL-06`).
+
 A canonical problem states one mathematical problem.
 An exam or textbook collection lists those problems in the order they appeared.
 Appearances on a problem page are generated from that list.

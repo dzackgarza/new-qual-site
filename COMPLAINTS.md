@@ -302,38 +302,7 @@ What remains open on the card, unchanged: the body of Kaji, J. London Math. Soc.
   different witness (a solutions manual, a table of contents plus a statement database) and say so in
   the node. The two nodes whose books *are* present — `ad-text-hat02` and `ad-text-ss03-gaps` — have
   been started here and are executable.
-## A numeric refutation of mine that was wrong, and the rule it breaks
 
-- **Object and need:** a proposed correction to the printed Airy series in
-  `E-SSA.PR-3` (`SRC-TEXT-SS03`, Appendix A §5 problem 3). The proposal was that the series printed
-  for $\operatorname{Ai}(-x)$ needs a factor $(-1)^n$.
-
-- **Observed evidence:** I tested it by summing $\frac1\pi\sum_n \frac{x^n}{n!}\sin\frac{2\pi(n+1)}{3}
-  3^{n/3-2/3}\Gamma(\frac n3+\frac13)$ twice — once as printed, once "with $(-1)^n$" — and concluded
-  that the printed series is $\operatorname{Ai}(x)$ (correct) but that the proposed fix gives
-  $-\operatorname{Ai}(x)$, hence was also wrong. **The second half of that was my error:** the test
-  multiplied every term by the constant $(-1)$ instead of by $(-1)^n$, so it computed $-S(1)$ rather
-  than $S(-1)$. Redone correctly, $S(z)=\operatorname{Ai}(z)$ to $10^{-31}$ at $z=\pm0.5,\pm1,\pm2$,
-  so $(-1)^n$ does give $\operatorname{Ai}(-x)$ and the proposal was right.
-
-- **Impact and owner:** I rejected a correct submission on the strength of it, and wrote the wrong
-  conclusion into a commit message (`c1ccb13fdc`). The card has since been corrected: its statement
-  now reads $\operatorname{Ai}(x)=S(x)$, with a `source-corrected` event recording the printed line,
-  the numeric agreement and the ODE proof ($S''=zS$, matching initial values, so $S=\operatorname{Ai}$
-  by uniqueness). The swarm member was told plainly that the rejection was mine to own.
-
-- **Uncertainty:** verified — the corrected numerics, the ODE identity, and the printed text at PDF
-  p.360 (printed p.341), which shows the label `Ai(−x)` over a series in $x^n$, so the print's own
-  two sides disagree. Not verified: whether the printed book carries a minus sign that the OCR layer
-  dropped; the extraction shows `xn` with the superscript inline and no sign, which is why the card
-  records the disagreement rather than asserting a typo.
-
-- **Repair:** done in the card, and here is the rule it establishes, which belongs with the other
-  audit rules rather than in a session's memory: **a numeric refutation must be re-derived from the
-  formula as stated by the person making the claim.** Substituting a "corrected" version by hand and
-  evaluating that is not a check of their claim, it is a check of mine, and the two differ by exactly
-  the correction under discussion. Where a claim is about a formula, the refutation must evaluate the
-  claim's own expression, printed out, preferably symbolically rather than by transcription.
 ## What the audit campaigns installed, and what is still open
 
 Recorded so that "swarm ended solved" and "queue 0" are not read as "the collection is verified".
@@ -1046,6 +1015,7 @@ The nearest published text is Vakil, *The Rising Sea* (21 October 2025), §19.9.
 
 **Correction, 2026-11-16, on the reader's report of #121: the I.7.8 entry restored.** This record is one of the four restored in the I.3.16 entry, for the reason given there. Its one correction is that the sentence `b479c82a73` inserted, naming the two places where the card writes out what Borcherds and Harris leave implicit, was true of the card and is not in the restored text: the passage from Borcherds's last sentence to $X$ equal to its linear span, and the comparison of the homogeneous coordinate rings of $Y$ in $L$ and in $\PP^n$, are both marked as the card's own there. Nothing else in the record changes, and the restored text is true as it stands.
 
+**2026-11-19:** both cards now cite the exercise at its printed page and carry what the published sets do with it. Read in this pass: `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, at printed p. 55, where I.7.7 and I.7.8 stand and where both statements match the cards verbatim; A. Egbert, Exercise I.7.7(b) and I.7.8, PDF p. 58, text version `tmp/sources/hartshorne-solutions-egbert.md`; and Joe Cutrone and Nick Marshburn, Chapter I §7, PDF p. 27, text version `tmp/sources/hartshorne-solutions-cutrone-marshburn.md`. Egbert's 7.7(b) ends the printed induction with the two identities "by Thm 7.7, 7.6b, $\deg X\cap H=\deg X$" and "by induction $\deg X\cap H\le\deg Y\cap H\le\deg Y=d$"; Cutrone--Marshburn's with the same pair and the added claim that $X\cap H$ is the cone over $Y\cap H$; neither proves either identity. Egbert's 7.8 gives the span and stops, which is the sentence that this entry records as asserted and not proved. The remarks now added to `P-AGH77CONEDEGDROP` and `P-AGH78DEGTWOSPAN` state this with the pages, and state the routes the cards take instead: the blow-up identity $(\beta^*H-E)^r=\delta\deg Z=d-1$ for 7.7(b), and for 7.8 the principal height-one prime of $k[x_0,\ldots,x_{r+1}]$ with degree $2$ by I.7.6(d), printed p. 52. The entry's own conclusion does not change: no complete published proof of I.7.7(b) or of the quadric half of I.7.8 was located, and the entry stays open on that obligation.
 
 ### `SRC-TEXT-MUN00`: the eleven net exercises of §29 now carry transcriptions (they had no located published solution)
 
