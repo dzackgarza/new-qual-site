@@ -20,6 +20,13 @@ audit:
     Characterized compact sets as the closed norm-bounded subsets whose
     derivative family is equicontinuous. Necessity uses Arzela-Ascoli on the
     derivative image; sufficiency reconstructs functions from f(0) and f'.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/Fall96.pdf`: the statement is its Problem 1, and the printed words
+    are the card's. The exam, the problem number and the file are now named in the solution's
+    opening sentence. Not checked in this pass: the solution, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -31,6 +38,7 @@ Which subsets of $M$ are compact?
 :::
 
 ::: {.solution}
+This is Problem 1 of the Preliminary Exam, Fall 1996, retained in this repository as `assets/attachments/Fall96.pdf`; the statement below is its wording.
 For a subset $K\subseteq M$, write
 $$
 K'
