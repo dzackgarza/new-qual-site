@@ -30,6 +30,18 @@ audit:
   date: 2026-11-11
   note: >-
     Checked against Munkres, Topology (2000), Section 79 Exercise 4, printed p. 483. The three coverings S^1 x R, R^2 and T over T realizing <(m,0)>, the trivial subgroup, and <(m,0),(0,n)>. Checked against Theorem 79.4. No complete published solution of this exercise was located: dbFin's index ends at Section 67 and has no Chapter 12 or 13 page, 9beach stops at Chapter 4, and every set searched is listed in the COMPLAINTS.md entry for Sections 74 to 85. The proof is the card's own, checked against the book's numbered theorems.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step (b) cited "Theorem 52.3 and §51" for the claim that a contractible space is simply connected.
+    Checked against the retained text of Munkres, Topology (2000), kept at
+    tmp/sources/munkres-2000-topology.md: §52 numbers Theorem 52.1, Corollary 52.2, the definition of
+    simple connectedness, then Lemma 52.3, which is the item cited. There is no Theorem 52.3, and Lemma
+    52.3 states the converse, so it cannot yield that R^2 is simply connected. The step now argues the
+    implication from nullhomotopy of the identity, as Munkres does in §70, and names Lemma 52.3 as the
+    opposite direction. Not checked here: printed page numbers, which the retained text does not carry.
+
 ---
 
 ::: {.exercise}
@@ -87,7 +99,7 @@ The total space $S^{1}\times\RR$ is connected, so by the classification of cover
 (b) The universal covering $p(s,t)=\big(q(s),q(t)\big)$ of $\RR^{2}$ onto $T$ corresponds to the trivial subgroup.
 
 ::: pf-proof
-$p$ is the product of two copies of the covering $\RR\to S^{1}$, hence a covering map, and $\RR^{2}$ is contractible, hence simply connected (Theorem 52.3 and §51). The image of the trivial group is the trivial subgroup, so $p$ corresponds to it.
+$p$ is the product of two copies of the covering $\RR\to S^{1}$, hence a covering map. $\RR^{2}$ is contractible, in the sense that its identity map is nullhomotopic (§51, Exercise 3): a nullhomotopy of the identity carries every loop to a constant loop, so $\pi_{1}(\RR^{2})=0$, and $\RR^{2}$ is path connected, so it is simply connected. The implication is not Lemma 52.3, which runs the other way, from simple connectedness to path homotopy of paths with the same endpoints; it is the form Munkres uses in §70, where $\RR^{2}$ minus two points is simply connected because it is contractible. The image of the trivial group is the trivial subgroup, so $p$ corresponds to it.
 :::
 
 :::
