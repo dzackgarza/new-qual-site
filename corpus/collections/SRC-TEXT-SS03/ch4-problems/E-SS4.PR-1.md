@@ -33,9 +33,20 @@ audit:
     reason differentiation is legitimate, and the explicit constant
     $A_0=C_0\int e^{-a_0\abs\xi^p/2}\,d\xi$, all of which the earlier solution compressed. No
     defect found in the statement, Problem 1 of Chapter 4; no retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 4 Problems, printed
+    p. 131, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 4 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 131; the statement below is its wording.
+
 Suppose $\hat{f}(\xi) = O(e^{-a\abs{\xi}^p})$ as $\abs{\xi} \to \infty$, for some $p > 1$. Then $f$ is holomorphic for all $z$ and satisfies the growth condition
 $$
 \abs{f(z)} \leq Ae^{C\abs{z}^q}
