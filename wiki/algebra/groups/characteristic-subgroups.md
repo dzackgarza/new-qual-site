@@ -12,8 +12,6 @@ A characteristic subgroup is invariant under the whole automorphism group of $G$
 
 ## Characteristic subgroups
 
-Invariance under $\Aut(G)$ implies invariance under $\Inn(G)$, and the converse fails; the automorphisms of $H$ enter through the conjugation map of its normalizer, whose kernel is the centralizer.
-
 [[D-53LTN]]
 
 [[P-QASPQ]]
