@@ -55,6 +55,7 @@ A section is an $A$-algebra map $A[x_1,\ldots,x_n]\to A$, determined by the tupl
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.18 (Vector Bundles), printed p. 45 of the held scan, transcribed and checked against the exercise as printed, part by part.
 Write $\mathcal S_X=\mcs(X/Y)$ for the sheaf of sections of a bundle $f:X\to Y$.
 All duals and symmetric algebras in this solution are over $\OO_Y$, and all spectra of sheaves of algebras are relative spectra.
 
