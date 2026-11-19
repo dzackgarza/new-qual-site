@@ -34,6 +34,8 @@ for some $\epsilon > 0$, and all $z$ near $z_0$. Show that the singularity of $f
 :::
 
 ::: {.solution}
+The statement is Exercise 13 of [@SS03, ch. 3 (p. 105)], printed with the hypothesis $\abs{f(z)}\le A\abs{z-z_0}^{-1+\epsilon}$ for some $\epsilon>0$ and all $z$ near $z_0$.
+
 
 The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 3, Exercise 13. Here $f$ is holomorphic on a punctured disc $D_r(z_0)-\theset{z_0}$ and satisfies $\abs{f(z)}\leq A\abs{z-z_0}^{-1+\epsilon}$ for some $\epsilon>0$, some $A$ and all $z$ near $z_0$; after translating, $z_0=0$, and $f(z)=\sum_{n\in\ZZ}a_nz^{n}$ is its Laurent expansion on an annulus $0<\abs{z}<\rho$.
 
