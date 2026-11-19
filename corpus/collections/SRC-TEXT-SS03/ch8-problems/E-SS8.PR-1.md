@@ -28,9 +28,20 @@ audit:
     identity explicitly, the injectivity argument in full, and the identification of the differential
     of $\overline f$ as $v\mapsto\overline{Av}$. No defect found in the statement, Problem 1 of
     Chapter 8; no retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 8 Problems, printed
+    p. 254, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 8 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 254; the statement below is its wording.
+
 Let $f$ be a complex-valued $C^1$ function defined in the neighborhood of a point $z_0$. There are several notions closely related to conformality at $z_0$. We say that $f$ is isogonal at $z_0$ if whenever $\gamma(t)$ and $\eta(t)$ are two smooth curves with $\gamma(0) = \eta(0) = z_0$, that make an angle $\theta$ there ($\abs{\theta} < \pi$), then $f(\gamma(t))$ and $f(\eta(t))$ make an angle of $\theta'$ at $t = 0$ with $\abs{\theta'} = \abs{\theta}$ for all $\theta$. Also, $f$ is said to be isotropic if it magnifies lengths by some factor for all directions emanating from $z_0$, that is, if the limit
 $$
 \lim_{r \to 0} \frac{\abs{f(z_0 + re^{i\theta}) - f(z_0)}}{r}
