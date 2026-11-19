@@ -59,7 +59,7 @@ Expand the square: $(y'+y)^2=(y')^2+2y'y+y^2$. A square of a real number is $0$ 
 The solutions of $y'+y=0$ on an interval are exactly $y(x)=Ce^{-x}$ with $C\in\RR$.
 
 ::: pf-proof
-If $y'+y=0$, multiply by the integrating factor $e^x$: $\frac{\dd}{\dd x}(e^xy)=e^x(y'+y)=0$, so $e^xy=C$ is constant and $y=Ce^{-x}$. Conversely $y=Ce^{-x}$ satisfies $y'+y=-Ce^{-x}+Ce^{-x}=0$.
+If $y'+y=0$, multiply by the integrating factor $e^x$: $\frac{d}{dx}(e^xy)=e^x(y'+y)=0$, so $e^xy=C$ is constant and $y=Ce^{-x}$. Conversely $y=Ce^{-x}$ satisfies $y'+y=-Ce^{-x}+Ce^{-x}=0$.
 :::
 
 :::
