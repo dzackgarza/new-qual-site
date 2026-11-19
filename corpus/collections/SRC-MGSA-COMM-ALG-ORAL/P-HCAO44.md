@@ -34,6 +34,8 @@ $$
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Define
 $$
 \phi:M/\mathfrak mM\longrightarrow M_{\mathfrak m}/\mathfrak mM_{\mathfrak m},

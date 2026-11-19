@@ -31,6 +31,8 @@ Give an example of a ring and a nonzero ideal which satisfy its hypotheses.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 One standard form of Nakayama's lemma is the following.
 
 ::: pf

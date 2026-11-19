@@ -29,6 +29,8 @@ Show that an Artinian ring has only finitely many maximal ideals.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Suppose, for contradiction, that $R$ has infinitely many distinct maximal
 ideals $\mathfrak m_1,\mathfrak m_2,\ldots$.
 

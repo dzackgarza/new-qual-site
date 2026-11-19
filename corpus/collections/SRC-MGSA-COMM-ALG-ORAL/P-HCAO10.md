@@ -29,6 +29,8 @@ Show that every maximal ideal in a commutative ring with identity is prime.
 :::
 
 ::: {.solution}
+
+No retained solution set covers this problem: the collection's provenance is the oral examination questions alone, so the argument is the card's own.
 Let $R$ be a commutative ring with identity and let $\mathfrak m$ be a maximal
 ideal.
 
