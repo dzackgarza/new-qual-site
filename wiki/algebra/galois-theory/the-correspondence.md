@@ -42,9 +42,9 @@ Separability is read off the derivative ([[PR-TLBPS|the derivative detects separ
 
 ### Galois
 
-[[D-5JYEI|Galois extension]]
+A Galois extension is one whose fixed field is the base field; a separable splitting field is the case the criterion detects.
 
-[[PR-ZCKLJ|separable splitting fields are Galois]]
+[[PR-ZCKLJ]]
 
 Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield, so the Frobenius automorphism generates the group.
 
