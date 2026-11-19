@@ -245,6 +245,46 @@ audit:
   by: claude
   date: 2026-11-19
   note: >-
+    Part (c) was stated for a curve over C only because steps s12 and s13 rested
+    on Gunning's Theorem 14, printed pp. 87-90, a theorem about a compact
+    Riemann surface. Read for this repair on 2026-11-19: the chapter's standing
+    convention, that "curve" means a complete nonsingular curve over an
+    algebraically closed field k, Chapter IV, printed p. 294, checked on the
+    page rendered at 130 dpi from tmp/sources/hartshorne-1977-algebraic-geometry.pdf
+    (PDF p. 309, folio 294); and Gunning's Theorem 14 with its proof, printed
+    pp. 87-90, read in
+    tmp/sources/gunning-1967-vector-bundles-riemann-surfaces-pp69-92.md with its
+    statement and the outset of the proof on printed pp. 87-88 rendered at
+    150 dpi from the PDF beside it (PDF pp. 96-97, folios -87- and -88-), where
+    the correspondence is stated as a one-to-one correspondence between the
+    bundles of rank 2 with subbundle phi and determinant xi and the points of
+    P^n of dimension n = dim H^1(M, O(phi^2 xi^{-1})) - 1, and where the
+    equivalence of bundles is (20), Phi'_{alpha beta} = theta_alpha Phi_{alpha
+    beta} theta_beta^{-1}, which is what makes the criterion at (24) the
+    proportional-classes criterion. That reading confirms the card's earlier
+    description of Lemma 14 and Theorem 14 and changes nothing in it. What
+    changes is that the classification no longer needs that setting: in rank two
+    the injectivity is available over any algebraically closed field, so part
+    (c) now reads as the exercise prints it, with the chapter's convention as
+    its only hypothesis, and a new step s12b proves that two extensions of an
+    invertible sheaf L of negative degree have isomorphic middle terms exactly
+    when their classes differ by a nonzero scalar. Its argument: the composite
+    of a line subbundle M of the middle term with the quotient map to L is
+    either zero, forcing M into O_C and deg M <= 0 with equality only at O_C, or
+    injective, forcing deg M <= deg L < 0; so O_C is the unique line subbundle
+    of degree 0, an isomorphism of middle terms must carry O_C to O_C, and the
+    scalars it induces on O_C and on L move the extension class by a nonzero
+    scalar. Steps s12 and s13 cite that step in place of Theorem 14, the qed
+    says part (c) over an algebraically closed field of any characteristic, and
+    the remark keeps Theorem 14 as the published argument over C. Parts (a) and
+    (b), the bound 0 < e <= 2g-2, and the boxed data of part (c) are unchanged.
+    Not checked: whether section V.2 restates the chapter's convention anywhere,
+    which its opening pages do not; and whether the classification extends to a
+    ground field that is not algebraically closed, which nothing here claims.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
     The published-solution remark's sentence on Egbert said that his route
     through "E stable implies every nonzero morphism E -> E is an isomorphism"
     "fails for the endomorphism id + 0 of a decomposable bundle", which reads as
@@ -262,7 +302,7 @@ audit:
 ---
 
 ::: {.problem}
-A locally free sheaf $\mathcal{E}$ on a curve $C$ is said to be **stable** if for every quotient locally free sheaf
+Throughout, $C$ is a complete nonsingular curve over an algebraically closed field $k$, as the chapter's convention has it (IV, printed p. 294). A locally free sheaf $\mathcal{E}$ on a curve $C$ is said to be **stable** if for every quotient locally free sheaf
 $$
 \mathcal{E} \rightarrow \mathcal{F} \rightarrow 0, \qquad \mathcal{F} \neq \mathcal{E}, \mathcal{F} \neq 0
 ,$$
@@ -276,7 +316,7 @@ Replacing $>$ by $\geqslant$ defines **semistable**.
 
 (b) If $\mathcal{E}$ has rank 2 and is normalized, then $\mathcal{E}$ is stable (respectively, semistable) if and only if $\deg \mathcal{E}>0$ (respectively, $\geqslant 0$).
 
-(c) For $C$ a curve over $\CC$, show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
+(c) Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, up to tensoring with an invertible sheaf, by giving
 
    (1) an integer $0<e \leqslant 2 g-2$,
 
@@ -463,7 +503,17 @@ $$
 let $0\to\OO_C\to\mathcal E_0\to\mathcal L\to0$ be the corresponding extension. Then $\mathcal E_0$ is normalized, indecomposable and not semistable.
 
 ::: pf-proof
-Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of negative degree, so $\mathcal E_0$ is not semistable by step [](#s6){.pf-ref}. Indecomposability is Theorem 14 of Gunning, printed pp. 87--90, which parametrizes the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$ and proves that two bundles are isomorphic exactly when their classes are proportional: for $\varphi=\OO_C$ that space is $\PP H^1(C,\mathcal L^\vee)$, and the nonzero class $\xi$ is one of its points. Theorem 14 is stated for a compact Riemann surface, as Gunning's whole book is; the direct rank-two argument that follows gives the indecomposability of $\mathcal E_0$ without that setting. In rank two: if $\mathcal E_0\cong\mathcal B\oplus\mathcal C$ then one summand has a nonzero section, hence degree $0$ by step [](#s3){.pf-ref} and is $\OO_C$, the other is $\det\mathcal E_0\cong\mathcal L$ of negative degree and so has no sections, and the given inclusion is then the standard summand up to scalar, so the extension splits.
+Normalization is step [](#s10){.pf-ref}. The determinant is $\mathcal L$ of negative degree, so $\mathcal E_0$ is not semistable by step [](#s6){.pf-ref}. Indecomposability is the argument that follows, which uses nothing of the ground field; over $\CC$ it is also part of Gunning's Theorem 14, printed pp. 87--90, which parametrizes the indecomposable bundles with subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, that space being $\PP H^1(C,\mathcal L^\vee)$ for $\varphi=\OO_C$. In rank two: if $\mathcal E_0\cong\mathcal B\oplus\mathcal C$ then one summand has a nonzero section, hence degree $0$ by step [](#s3){.pf-ref} and is $\OO_C$, the other is $\det\mathcal E_0\cong\mathcal L$ of negative degree and so has no sections, and the given inclusion is then the standard summand up to scalar, so the extension splits.
+
+:::
+
+:::
+
+::: {.pf-step #s12b}
+Let $\mathcal L$ be invertible of degree $-e<0$, and let $\mathcal E$ and $\mathcal E'$ be middle terms of extensions $0\to\OO_C\to\mathcal E\to\mathcal L\to0$ and $0\to\OO_C\to\mathcal E'\to\mathcal L\to0$ with classes $\xi$ and $\xi'$. Then $\mathcal E\cong\mathcal E'$ if and only if $\xi'$ is a nonzero scalar multiple of $\xi$, so the isomorphism class of the middle term depends exactly on the point $[\xi]\in\PP H^1(C,\mathcal L^\vee)$.
+
+::: pf-proof
+Two extensions with the same class are isomorphic as extensions, so their middle terms are isomorphic, and multiplying the inclusion $\OO_C\to\mathcal E$ by $\lambda\in k^*$ gives an extension of class $\lambda\xi$ whose middle term is $\mathcal E$; proportional classes therefore give isomorphic bundles. Conversely let $\varphi:\mathcal E\to\mathcal E'$ be an isomorphism. For a line subbundle $\mathcal M\subseteq\mathcal E$ the composite $\mathcal M\to\mathcal E\to\mathcal L$ is either zero or injective, so either $\deg\mathcal M\le\deg\mathcal L<0$, or $\mathcal M\subseteq\ker(\mathcal E\to\mathcal L)=\OO_C$ and the inclusion $\mathcal M\to\OO_C$, a nonzero map of invertible sheaves, gives $\deg\mathcal M\le0$ with equality exactly when $\mathcal M=\OO_C$. So $\OO_C$ is the unique line subbundle of $\mathcal E$ of degree $0$, and the same argument applies to $\mathcal E'$, whence $\varphi(\OO_C)=\OO_C$. The isomorphism $\varphi$ therefore carries the first extension to the second and induces an automorphism of $\OO_C$ and one of $\mathcal L$; an automorphism of an invertible sheaf on a complete curve is multiplication by a nonzero constant, since $H^0(C,\OO_C)=k$, so these are scalars, and the class of an extension changes by the scalar they contribute. Hence $\xi'$ is a nonzero multiple of $\xi$.
 
 :::
 
@@ -476,14 +526,14 @@ $$
 $$
 
 ::: pf-proof
-Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a canonical normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose own maximal subbundle is $\OO_C$ with quotient $\mathcal L=\det\mathcal E_0$; this is Theorem 14 of Gunning, printed pp. 87--90, read with the uniqueness of Lemma 15, printed pp. 83--85. Two extensions with proportional nonzero classes have isomorphic middle bundles and otherwise distinct ones, again by Theorem 14, and step [](#s12){.pf-ref} shows that every displayed triple occurs; the bijection is therefore over a compact Riemann surface, Theorem 14 being what gives both the parametrization and the injectivity of the classification. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, while the determinant changes and the triple $(e,\mathcal L,[\xi])$ does not, so a bundle and its twist are not isomorphic; the classification is therefore of tensor-equivalence classes rather than of isomorphism classes.
+Starting from $\mathcal E$, step [](#s8){.pf-ref} gives its unique maximal-degree line subbundle $\mathcal A$, and tensoring by $\mathcal A^{-1}$ gives a normalized representative $\mathcal E_0$ of its tensor-equivalence class, whose maximal subbundle is $\OO_C$ and whose quotient is $\mathcal L=\det\mathcal E_0$. A normalized representative with maximal subbundle $\OO_C$ is unique in its tensor-equivalence class, because the maximal line subbundle of $\mathcal E_0\tensor\mathcal B$ is $\mathcal B$, the degrees of line subbundles shifting by $\deg\mathcal B$; so two bundles are tensor-equivalent exactly when their representatives with maximal subbundle $\OO_C$ are isomorphic. By steps [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} such a representative is the middle term of an extension of $\mathcal L$ by $\OO_C$ with $\deg\mathcal L=-e<0$, its data being $(e,\mathcal L,[\xi])$; step [](#s12){.pf-ref} shows that every displayed triple occurs, and step [](#s12b){.pf-ref} that two representatives are isomorphic exactly when their classes are proportional. That is the bijection. Tensoring by a line bundle preserves indecomposability and shifts every slope by the same degree, so it preserves non-semistability, while the determinant changes and the triple $(e,\mathcal L,[\xi])$ does not, so a bundle and its twist are not isomorphic; the classification is therefore of tensor-equivalence classes rather than of isomorphism classes.
 
 :::
 
 :::
 
 ::: pf-qed
-Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove part (c) for a curve over $\CC$, a compact Riemann surface, where the parametrization and the injectivity of the classification are Gunning's Theorem 14.
+Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b), and steps [](#s7){.pf-ref} to [](#s13){.pf-ref} prove part (c) over an algebraically closed field of any characteristic, step [](#s12){.pf-ref} giving the parametrization of the classification and step [](#s12b){.pf-ref} its injectivity.
 
 :::
 
@@ -492,7 +542,7 @@ Step [](#s2){.pf-ref} proves part (a) in every rank, steps [](#s3){.pf-ref}, [](
 :::
 
 ::: {.remark title="Published solution"}
-Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and on printed p. 85 he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s13){.pf-ref} follow that route, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, which is the case of part (c) that the statement records; the rank-two argument of step [](#s12){.pf-ref} supplies the indecomposability of the constructed bundle directly, while the parametrization and the injectivity of the classification are his Theorem 14.
+Gunning, *Lectures on vector bundles over Riemann surfaces*, §(c), printed pp. 82--83, states the stability condition in the form $c(\varphi)<\frac12c(\det\Phi)$ for every line subbundle, defines $\operatorname{div}\Phi=\max_{\varphi\subset\Phi}c(\varphi)$, and observes that $\Phi$ is stable exactly when $\operatorname{div}\Phi<\frac12c(\det\Phi)$; his Lemma 14, printed pp. 81--82, gives $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)$ for a decomposable $\Phi=\varphi_1\oplus\cdots\oplus\varphi_m$, a direct sum of line bundles, which with his rank-two stability definition is part (a) in rank two, and on printed p. 85 he records that "every decomposable bundle is unstable"; in general $\operatorname{div}\Phi\ge\frac1{\rank}c(\det\Phi)-g$; his Lemma 15, printed pp. 83--85, is the uniqueness of the maximal-degree line subbundle; and his Theorem 14, printed pp. 87--90, parametrizes the indecomposable unstable bundles with a given subbundle $\varphi$ and determinant $\xi$ by the points of $\PP H^1(C,\OO(\varphi^2\xi^{-1}))$, which is the classification of part (c) with $\varphi=\OO_C$ and $\xi=\mathcal L$. Steps [](#s3){.pf-ref} to [](#s11){.pf-ref} follow that route, steps [](#s12){.pf-ref} and [](#s12b){.pf-ref} are the rank-two form of the same classification, and step [](#s2){.pf-ref} is the slope argument for part (a) in every rank, with the determinant bound $0<e\le2g-2$ of step [](#s11){.pf-ref} from the proof of Theorem 2.12, printed p. 376, the normalization of step [](#s10){.pf-ref} from Example 2.11.6, printed p. 375, and the existence of the maximum of step [](#s7){.pf-ref}, which Gunning establishes on printed p. 80 by bounding the Chern classes of subbundles from above, and which the card also proves by global generation. Gunning works over a compact Riemann surface, so his Theorem 14 is part (c) over $\CC$; the card proves it over an algebraically closed field of any characteristic, with step [](#s12){.pf-ref} constructing the middle term from the data and step [](#s12b){.pf-ref} deciding which classes give isomorphic bundles, and without the Riemann-surface theory.
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.8, printed pp. 103--104, proves (a) in every rank from the weighted mean of the two slopes, which is step [](#s2){.pf-ref}, and (b) by the rearrangements of steps [](#s1){.pf-ref} to [](#s6){.pf-ref}, and concludes (c) with "all indecomposable locally free sheaves $\mathcal E$ of rank 2 that are not semistable are classified, up to isomorphism, by these three conditions" — the printed clause; its argument assumes the bundle has $\OO_C$ as a subbundle with $\deg\mathcal L<0$, that is, takes the bundle to be the normalized model, so the twist that changes the bundle and leaves the data fixed is not accounted for there.
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions, Exercise 8 of §2 (solution by Tzu-Yang Chou), PDF p. 8 of that set, proves (a) by exhibiting both summand quotients and (b) in both directions, "if $\mathcal E$ is unstable, say $\exists F\subseteq\mathcal E$ invertible with $\deg F\ge\frac12\deg\mathcal E>0$, then $0\to\OO\to\mathcal E\tensor F^{-1}$ but $H^0(\mathcal E\tensor F^{-1})=0$ by the normalized assumption". Its (c) is the single sentence "This is just the proof of Theorem 2.12, combined with (b)", so it gives no argument for (c) and does not treat the twist either.
