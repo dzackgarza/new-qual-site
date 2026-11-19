@@ -1,0 +1,40 @@
+---
+title: The Riemann sphere
+order: 58
+topics:
+- Riemann Sphere
+- Extended Complex Plane
+- Möbius Transformations
+---
+
+# The Riemann sphere
+
+The plane plus one point at infinity is a compact surface on which every [[D-7DFVJ|meromorphic function]] becomes a holomorphic map to the sphere, and on which the [[D-FRVBV|Möbius transformations]] act as its biholomorphisms.
+
+[[D-3QTVR]]
+
+Stereographic projection sends the circle $\abs z = R$ of the plane to a circle of latitude on the sphere, and the discs $\abs z<R$ to the caps below it; a sequence with $\abs{z_n}\to\infty$ is exactly a sequence leaving every such cap, which is what makes $\infty$ a limit point.
+
+## Maps of the sphere
+
+[[T-UBWL2]]
+
+[[D-FRVBV]]
+
+A Möbius transformation permutes the generalized circles — the circles and the lines of $\CC$, a line being a circle through $\infty$ — and acts transitively on the triples of distinct points of $\CP^1$.
+
+[[PR-74KHY]]
+
+::: {.example title="The point at infinity in a coordinate"}
+The map $z\mapsto1/z$ interchanges $0$ and $\infty$, and in the coordinate $w = 1/z$ near $\infty$ it reads $w\mapsto w$: the pole of $1/z$ at $0$ is the behaviour at $\infty$ of $z$ itself.
+A polynomial of degree $n\geq1$ has a pole of order $n$ at $\infty$, since $p(1/w)$ has a pole of order $n$ at $w=0$ ([[D-BPBSQ|singularities at infinity]]).
+:::
+
+## Distance on the sphere
+
+The chordal distance between two points of $\CP^1$, measured in the stereographic model, is
+$$
+d(z,w) = \frac{2\abs{z-w}}{\sqrt{1+\abs z^2}\sqrt{1+\abs w^2}}, \qquad d(z,\infty) = \frac{2}{\sqrt{1+\abs z^2}},
+$$
+which makes $\CP^1$ a compact metric space and agrees with the topology above.
+It is the quantity that makes $\CP^1$ the natural domain of the rational functions: a rational function extends to a continuous map $\CP^1\to\CP^1$, and a sequence of them that is bounded in this distance on a set converges there uniformly.

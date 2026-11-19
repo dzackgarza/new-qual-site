@@ -1,0 +1,35 @@
+---
+schema: qual/card@1
+id: D-2HXLN
+kind: definition
+title: Hyperbolic metric on the disc
+prompts:
+- What is the hyperbolic length of a curve in the unit disc?
+- What is the hyperbolic distance on the disc?
+classification:
+  areas:
+  - complex-analysis
+  topics:
+  - Hyperbolic Metric
+  - Hyperbolic Geometry
+relations: []
+review: draft
+---
+
+::: {.definition}
+For a piecewise $C^1$ curve $\gamma\colon[a,b]\to\DD$ its \dfn{hyperbolic length} is
+$$
+\length_{\HH}(\gamma)\coloneqq\int_\gamma\frac{\abs{\dz}}{1-\abs z^2}=\int_a^b\frac{\abs{\gamma'(t)}}{1-\abs{\gamma(t)}^2}\dt,
+$$
+and the \dfn{hyperbolic distance} between $z,w\in\DD$ is
+$$
+d_{\HH}(z,w)\coloneqq\inf_\gamma\length_{\HH}(\gamma),
+$$
+the infimum over piecewise $C^1$ curves in $\DD$ from $z$ to $w$.
+The \dfn{hyperbolic metric} is the family $\rho_{\DD}(z)\abs{\dz}$ with $\rho_{\DD}(z) = (1-\abs z^2)^{-1}$.
+:::
+
+::: {.remark}
+The metric is complete and its geodesics are the circle arcs and diameters meeting $\bd\DD$ orthogonally; the hyperbolic distance is realised by exactly one such arc through two distinct points.
+It is invariant under the automorphisms of $\DD$: the [[D-MFPYG|Blaschke factors]] satisfy $\abs{\psi_a'(z)}/(1-\abs{\psi_a(z)}^2) = (1-\abs z^2)^{-1}$ [@SS03, ch. 8, sec. 1].
+:::
