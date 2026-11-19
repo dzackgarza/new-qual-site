@@ -38,6 +38,15 @@ audit:
     the two claims above it give, and that `\abs` is already the card's notation for a modulus in
     the same display. Not checked in this pass: the argument of either claim, which this edit does
     not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the appendix section, the problem number, the file and
+    the printed pages. The card's 2026-11-01 event had already recorded the reading (Appendix A, §5,
+    problem 1, PDF pp. 359-363, printed pp. 341-343); this event only moves that locator into the
+    rendered text, where a reader sees it, and the page range was re-confirmed at PDF p. 360, whose
+    running head is printed p. 341 under the heading "5. Problems". No mathematics changed.
 ---
 
 ::: {.exercise}
@@ -61,6 +70,7 @@ and integrate by parts $k$ times.
 :::
 
 ::: {.solution}
+This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed pp. 341-343; the statement below is its wording.
 Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, printed p. 160). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
 
 ::: pf
