@@ -34,6 +34,18 @@ audit:
     has H_1 = pi_1^ab instead of an isomorphism, which the card does not claim. Not checked: nothing
     outside this exercise.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, outside the sections already closed. Read against Hatcher, Exercise 6
+    of §4.2, printed p. 389. Checked: $\pi_i(CX,X)\cong\pi_{i-1}(X)$ for $i\ge2$ from the pair
+    sequence with $CX$ contractible, so an $(n-2)$-connected $X$ gives an $(n-1)$-connected pair,
+    and $\pi_1(CX,X)=0$ since both spaces are simply connected; relative Hurewicz then identifies
+    $\pi_n(CX,X)$ with $H_n(CX,X)$, which the pair sequence computes as $\widetilde H_{n-1}(X)$;
+    naturality of the Hurewicz homomorphism makes the comparison square commute, so the bottom map is
+    an isomorphism. The restriction $n\ge3$ is right and necessary, the absolute theorem in dimension
+    $n-1$ beginning at $2$. No defect; the printed page is added.
 ---
 
 ::: {.problem}
@@ -41,6 +53,8 @@ Show that the relative form of the Hurewicz theorem in dimension $n$ implies the
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 6, printed p. 389.
+
 
 The argument is the card's own: the cone pair has the homotopy of a suspension of $X$, so the relative theorem applied to it is the absolute theorem one degree down. One hypothesis is checked here that the original left implicit, namely that the relative Hurewicz theorem applies in its isomorphism form to this pair.
 
