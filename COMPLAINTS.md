@@ -5691,3 +5691,23 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Rule.** A status carried in a session's notes is not a status of the repository. Before writing "still open" about a certificate, a source or a gate, read the card's own link and the registry row.
 
 **Uncertainty.** Neither Lean file was re-elaborated in this session (Mathlib's pinned revision and the toolchain are not on this machine's PATH in the form the registry records), so this entry establishes that the certificates are linked and what they claim, not that they elaborate today.
+
+## 2026-11-19, correction: residue 5 has three orphans, not two, and the third is not a twin
+
+**What this corrects.** The record above, "the two residue-5 orphans are twins of cards the pages already link", names `D-DEFFLAT` and `D-DEFNOETH` and withdraws the embed remedy for both. There is a **third** residue-5 orphan, `D-DEFFFLAT`, and it is not a twin: the embed remedy is right for it, and only for it. The blanket withdrawal was wrong, and so was the count.
+
+**Why the third was missed.** The audit prints only the first ten of the twenty-five orphan ids and then an ellipsis. The ten printed were read and typed by hand into a residue computation, and `D-DEFFFLAT` was one of them — its residue is 5 — but the two ids `D-DEFFLAT` and `D-DEFFFLAT` differ by one letter, and the list I carried forward held only one of them. The lesson is the one this file has recorded before: read the ids from machine output, never from a truncated text line.
+
+**The three residue-5 orphans, each read.**
+
+| orphan | title | is a linked twin? | disposition |
+| --- | --- | --- | --- |
+| `D-DEFFLAT` | flat modules: "$-\otimes_A N$ is exact", plus flat algebras | yes — `D-FS52P`, linked at `wiki/algebra/modules/classify-this-module.md:76` | merge decision: keep the algebra clause, pick one side for the tensor |
+| `D-DEFNOETH` | Noetherian rings and modules: chain condition, finite generation, Noetherian modules, locally Noetherian schemes | partly — `D-TZXBO` is linked at `wiki/algebra/rings-and-ideals/commutative-algebra.md:40`, and this card adds the module and scheme notions | merge decision: the extra material has no other home |
+| `D-DEFFFLAT` | faithfully flat modules, and descent of exactness: a complex is exact iff its tensor is | **no** | **embed**: no page carries this notion |
+
+**The evidence for the third.** Read in this pass: `corpus/theory/Algebraic_Geometry/D-DEFFFLAT.md` defines "$N$ is faithfully flat if for every complex $M'\to M\to M''$ of $A$-modules, the complex is exact if and only if its tensor with $N$ is", which is the descent criterion at module level. The two other cards that use the phrase are `D-MORFLAT`, which defines it for *morphisms* ("$f$ is faithfully flat if it is flat and surjective") and is linked from `wiki/algebraic-geometry/morphisms/finite-and-flat.md`, and this one. No wiki page defines or uses faithful flatness at module level: a search of `wiki/` for the phrase returns one index line naming an unrelated page title. So the criterion exists on a card that nothing reaches, and the embed is the repair.
+
+**Where it would go, stated so it can be executed.** `wiki/algebraic-geometry/morphisms/finite-and-flat.md` already embeds `[[D-MORFLAT]]` under "Flatness and fibres" and `[[T-FLATCRIT]]` under "Criteria for flatness"; `[[D-DEFFFLAT]]` belongs beside one of those, since descent of exactness is exactly a criterion for flatness. I did not write the line: the page is another lane's, and this chat's authority is the cards of its residue.
+
+**Uncertainty.** Of the twenty-five orphans this accounts for three; the other twenty-two belong to residues 7, 9, 10, 11, 13 and 15 and are unexamined. Whether `D-DEFFFLAT` should instead be merged *into* `D-MORFLAT` — one card stating the module criterion and the morphism definition together — is an authoring choice, not something the evidence settles.
