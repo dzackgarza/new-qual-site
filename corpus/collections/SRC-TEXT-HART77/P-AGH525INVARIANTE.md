@@ -277,6 +277,35 @@ audit:
     inequality, and that the determinant is O_C(D). The Lange--Narasimhan
     Corollary 1.2 route is kept in the remark as the characteristic-zero
     alternative. No statement changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Reader's finding on the event above, repaired here; that event is left as
+    written. Its last inference is false: a non-split extension of O_C(D) by
+    O_C need not be indecomposable. A standard non-split extension realises
+    O_C(P) + O_C(Q) for distinct points P, Q of C: the diagonal O_C inside that
+    sum has quotient of degree 2 and hence isomorphic to O_C(P+Q), so
+    O_C(P) + O_C(Q) is a non-split extension of O_C(P+Q) by O_C, and at
+    g = 3 with d = 2 it is normalized, h^0 being nonzero and h^0 of a twist by
+    O_C(-R) vanishing unless R is P or Q. Non-splitting gives only that the
+    bundle is not O_C + O_C(D), which is what the argument proves. Part (c)
+    asks for a ruled surface of invariant e and not for an indecomposable
+    bundle, that being the condition of part (a), so step s9 now states the
+    non-splitting, and its use of Notation 2.8.1, printed p. 373, that the
+    invariant of P(E) is minus the degree of the determinant for a normalized
+    E, is unchanged. Checked in this pass, from the printed statements: that
+    h^0(K_C+D-E) = g for an effective E of degree d-1, the degree 2g-1 being
+    greater than 2g-2, so that ker(beta_E) has dimension d-1 inside the
+    (g-1+d)-dimensional H^1(C,O_C(-D)); that the bad pairs form a family of
+    dimension 2d-3, the effective divisors of degree d-1 forming a family of
+    that dimension minus one and each kernel a linear subspace of dimension
+    d-2 projectively; and the inequality 2d-3 < g-2+d for d <= g. Read for this
+    pass: Hartshorne V.2, exercise 2.5 with Notation 2.8.1 and Proposition 2.8,
+    printed pp. 372-377, in tmp/sources/hartshorne-1977-algebraic-geometry.md,
+    and step s6 of this card. Not checked: Lange and Narasimhan's Corollary
+    1.2 beyond the statement and page the card records, and no printing of the
+    book other than the text version.
 ---
 
 ::: {.problem}
@@ -459,7 +488,7 @@ Put $d=-e$, so $1\le d\le g$, and fix a divisor $D$ of degree $d$. An extension
 $$
 0\longrightarrow\OO_C\longrightarrow\mathcal E\longrightarrow\OO_C(D)\longrightarrow0
 $$
-is determined by its class in $V=H^1(C,\OO_C(-D))$, a vector space of dimension $g-1+d$ by Riemann--Roch and Serre duality. For an effective divisor $E$ of degree $d-1$, the classes for which $L_E\subseteq H$ are the kernel of the pullback map $\beta_E\colon V\to H^1(C,\OO_C(-E))$ of step [](#s6){.pf-ref}, a linear subspace. Since $\deg(K_C+D-E)=2g-1$, Riemann--Roch gives $h^0(K_C+D-E)=g$; hence $\ker\beta_E$ has dimension $(g-1+d)-g=d-1$. For $d\ge2$ the pairs $(E,\xi)$ with $\xi\in\ker\beta_E$ form a family of dimension $(d-1)+(d-2)=2d-3$ in $\PP V$, and for $d=1$ the only effective $E$ is $0$, whose kernel is zero. Since $2d-3<g-2+d=\dim\PP V$ for $d\le g$, a general $\xi$ lies in no such kernel. By part (b) the extension is normalized, and a nonzero $\xi$ makes it indecomposable: a splitting would realize $\OO_C$ and $\OO_C(D)$ as summands. Its determinant is $\OO_C(D)$ of degree $d$, so $\PP(\mathcal E)$ has invariant $-d=e$ by Notation 2.8.1, printed p. 373. This is the avoidance argument the printed hint asks for; the genus-one case is step [](#s10){.pf-ref}.
+is determined by its class in $V=H^1(C,\OO_C(-D))$, a vector space of dimension $g-1+d$ by Riemann--Roch and Serre duality. For an effective divisor $E$ of degree $d-1$, the classes for which $L_E\subseteq H$ are the kernel of the pullback map $\beta_E\colon V\to H^1(C,\OO_C(-E))$ of step [](#s6){.pf-ref}, a linear subspace. Since $\deg(K_C+D-E)=2g-1$, Riemann--Roch gives $h^0(K_C+D-E)=g$; hence $\ker\beta_E$ has dimension $(g-1+d)-g=d-1$. For $d\ge2$ the pairs $(E,\xi)$ with $\xi\in\ker\beta_E$ form a family of dimension $(d-1)+(d-2)=2d-3$ in $\PP V$, and for $d=1$ the only effective $E$ is $0$, whose kernel is zero. Since $2d-3<g-2+d=\dim\PP V$ for $d\le g$, a general $\xi$ lies in no such kernel. By part (b) the extension is normalized, and a nonzero $\xi$ means that the extension does not split, that is $\mathcal E\not\cong\OO_C\oplus\OO_C(D)$. Its determinant is $\OO_C(D)$ of degree $d$, so $\PP(\mathcal E)$ has invariant $-d=e$ by Notation 2.8.1, printed p. 373. Part (c) asks for the surface and its invariant, not for an indecomposable $\mathcal E$, which is the condition of part (a); non-splitting of the extension is what the argument gives, and it is all that the invariant needs. This is the avoidance argument the printed hint asks for; the genus-one case is step [](#s10){.pf-ref}.
 
 :::
 
@@ -507,7 +536,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} 
 
 (b) Lange and Narasimhan, Proposition 1.1, printed p. 57, is the criterion the printed "Cf. proof of (2.15)" points at, and the book's proof of Theorem 2.15, printed pp. 377--379, runs one direction of it: normalization makes the map $\gamma$ injective. Their Proposition 1.1 assumes $d\ge2$ when $g\ge2$, so the cases $d=1$ and $g=1$ lie outside it, and their field is an algebraically closed field of characteristic zero; the two directions in steps [](#s7){.pf-ref} and [](#s8){.pf-ref} use only the pullback square, so part (b) holds over any algebraically closed field, and they carry those two cases.
 
-(c) Step [](#s9){.pf-ref} proves the existence for $g\ge2$ in every characteristic by the avoidance argument the hint names: the bad classes for the effective divisors $E$ of degree $d-1$ form a family of dimension $2d-3$ in $\PP H^1(\OO(-D))$, which has dimension $g-2+d$, and $2d-3<g-2+d$ because $d\le g$; a general class is therefore normalized, and a nonzero class is indecomposable. Lange and Narasimhan's Corollary 1.2, printed p. 58, gives the same existence for $g\ge2$ over characteristic zero by the secant-variety count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$.
+(c) Step [](#s9){.pf-ref} proves the existence for $g\ge2$ in every characteristic by the avoidance argument the hint names: the bad classes for the effective divisors $E$ of degree $d-1$ form a family of dimension $2d-3$ in $\PP H^1(\OO(-D))$, which has dimension $g-2+d$, and $2d-3<g-2+d$ because $d\le g$; a general class is therefore normalized and gives a non-split extension, the invariant being $-\deg\det=-d=e$. Lange and Narasimhan's Corollary 1.2, printed p. 58, gives the same existence for $g\ge2$ over characteristic zero by the secant-variety count $\dim\mathrm{Sec}_{s-2}(X)\le2s-3<g+s-2=\dim\PP$.
 
 (d) Lange, *Higher secant varieties of curves and the theorem of Nagata on ruled surfaces*, §2, printed pp. 267--268, proves $s(E)\le g$ for every rank-two bundle, over an algebraically closed field of arbitrary characteristic; for a normalized bundle $s(E)=\deg\det E=-e$, so $e\ge-g$, and $e\ge-2$ at $g=2$. That is the bound the printed Note attributes to Nagata [8].
 
