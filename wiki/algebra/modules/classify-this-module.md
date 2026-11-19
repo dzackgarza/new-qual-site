@@ -11,7 +11,7 @@ topics:
 ## Principal ideal domains and other rings
 
 Over a principal ideal domain — $\ZZ$, $k[x]$, $k[\![x]\!]$ for a field $k$, and every Euclidean domain — the structure theorem is available and the classification is a computation; over $k[x,y]$, $\ZZ[x]$, or a quotient $k[x,y]/I$ it is not.
-For finitely generated modules over such a ring the four conditions free, projective, flat, and torsion-free can differ, and over a principal ideal domain they coincide.
+For finitely generated modules over $k[x,y]$ the four conditions free, projective, flat, and torsion-free can differ; over a principal ideal domain they coincide.
 
 [[PR-UVUS6]]
 
@@ -29,7 +29,7 @@ Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$; for an abelian group giv
 
 ### Smith normal form
 
-The Smith normal form of $A$ is computed from its minors, and its diagonal entries are the data the decomposition uses; see [[algebra/linear-algebra/smith-normal-form|Smith normal form]] for the statement and [[T-SMTHN]] for the theorem.
+The Smith normal form of $A$ is computed from its minors, and its diagonal entries are the data the decomposition uses; the statement and the computation are on [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
 
 ### Decomposition
 
