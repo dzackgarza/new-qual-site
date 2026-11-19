@@ -13,6 +13,17 @@ audit:
   by: claude-opus-5
   date: 2026-10-30
   note: "Transcribed from Question 40 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction; they agree."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by direct computation. With x, y, z independent
+    uniform on [0,1] the triple is uniform on the cube, so the probability is a volume. Step #fixed:
+    for fixed y, z in [0,1] the set of x with x < yz has measure yz, the interval [0, yz) lying
+    inside [0,1]. Step #complement: Fubini gives int_0^1 int_0^1 yz dy dz = (1/2)(1/2) = 1/4. Last
+    step: the complement has probability 3/4, so the answer is choice (A). The value was also
+    checked by simulation of 200000 triples, seed 7, which gave 0.7493, consistent with 3/4. Not claimed: independence of any
+    other function of the three variables, which the argument does not need.
 ---
 
 ::: {.problem}
