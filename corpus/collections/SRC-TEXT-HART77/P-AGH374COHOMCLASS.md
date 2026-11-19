@@ -940,7 +940,11 @@ audit:
     I.3.4(a), printed p. 18, where the one class is the unit, which lifts. The
     projection formula $j^*i_*(i^*\beta)=j^*\beta\smile c_1(\OO_Y(H))$ of steps s3
     and s7 then gives the identity for every test class, and s8's equivalence
-    turns that into the base change. This is a range s8 does not reach: for a
+    turns that into the base change. Corrected in the same pass: the statement of
+    s9 requires $H$ connected, since the argument uses that $H^0(H,\OO_H)=k$ is
+    spanned by the unit, and a nonsingular divisor with several components would
+    have a larger $H^0$; the hyperplane sections of the exercise are connected,
+    and no other step uses the connectedness. This is a range s8 does not reach: for a
     curve in a threefold with $h^{1,1}>1$ the complete-intersection classes do not
     span $H^1(X,\Omega^1)$ and the detecting argument is silent, while s9 settles
     the statement. No other step was touched, and what stays open is unchanged:
@@ -1407,7 +1411,7 @@ For $p=n$ the class $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ lies in the one-dimensional 
 
 ::: {.pf-step #s9}
 
-Let $i:H\hookrightarrow X$ be a nonsingular divisor of a nonsingular projective variety $X$ of dimension $n$, let $j:Y\hookrightarrow X$ be nonsingular of codimension $p$ with $Y\pitchfork H$, and put $Z=Y\cap H$. Then
+Let $i:H\hookrightarrow X$ be a nonsingular, connected divisor of a nonsingular projective variety $X$ of dimension $n$, let $j:Y\hookrightarrow X$ be nonsingular of codimension $p$ with $Y\pitchfork H$, and put $Z=Y\cap H$. Then
 $$
 \boxed{i^*j_*=(j_H)_*\,i_Y^*}
 $$
@@ -1420,7 +1424,7 @@ $$
 j^*i_*w=c_1(\OO_Y(H))\smile j^*w
 \qquad\text{for every } w\in H^{r}(H,\Omega_H^{r}),\quad r=n-1-q-p .
 $$
-For $q\ge n-1-p$ one has $r\le0$; the space is $0$ if $r<0$, and if $r=0$ it is $H^0(H,\OO_H)=k$ (Theorem I.3.4(a), printed p. 18), spanned by the unit. The unit is the restriction of the unit of $H^0(X,\OO_X)$, so the identity is needed only for $w=i^*\beta$ with $\beta\in H^0(X,\OO_X)$, where it is the projection formula of step [](#s3){.pf-ref} together with the class of a divisor,
+For $q\ge n-1-p$ one has $r\le0$; the space is $0$ if $r<0$, and if $r=0$ it is $H^0(H,\OO_H)=k$, because $H$ is connected and projective over the algebraically closed field (Theorem I.3.4(a), printed p. 18), and it is spanned by the unit. The unit is the restriction of the unit of $H^0(X,\OO_X)$, so the identity is needed only for $w=i^*\beta$ with $\beta\in H^0(X,\OO_X)$, where it is the projection formula of step [](#s3){.pf-ref} together with the class of a divisor,
 $$
 j^*i_*(i^*\beta)=j^*\bigl(\beta\smile i_*(1)\bigr)=j^*\beta\smile j^*\bigl(c_1(\OO_X(H))\bigr)=c_1(\OO_Y(H))\smile j^*\beta,
 $$
