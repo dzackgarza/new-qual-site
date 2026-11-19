@@ -33,6 +33,14 @@ audit:
     for z over R_P into the monic equation
     y^n + b_1 y^{n-1} + b_2 s y^{n-2} + ... + b_n s^{n-1} = 0 for y = sz over R,
     so y in R by normality and z = y/s in R_P. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 6, Exercise 7. Clearing the
+    denominators $s\notin P$ and putting $y=sz$ gives the monic equation
+    $y^n+b_1y^{n-1}+b_2s\,y^{n-2}+\cdots+b_ns^{n-1}=0$ over $R$, so $y\in R$ and
+    $z=y/s\in R_P$. No defect.
 ---
 
 ::: {.exercise}
