@@ -94,6 +94,20 @@ audit:
     and unchanged: the puncture argument, $X\setminus\{p\}\cong\RR^3$, the two complementary domains
     $U\setminus\{p\}$ and $V$, and $\pi_1(U\setminus\{p\})\cong\pi_1(U)$ by van Kampen with
     $B$ and $B\setminus\{p\}$ simply connected.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A narrowing of the check note above, about what was and was not read. That note gives Alexander's
+    pages as printed pp. 9--10, which is the card's pre-existing page claim; the offprint held at
+    `tmp/sources/alexander-horned-sphere-1924.pdf` is three pages and its text layer carries no
+    printed folios, so the page numbers were not confirmed this pass, only the words quoted: the
+    surface has genus zero, "the interior of the limiting surface is simply connected", and "its
+    exterior is not a simply connected region". Bing's pages were confirmed at their running heads,
+    "1953  EXAMPLES AND COUNTEREXAMPLES  315" and "316  PI MU EPSILON JOURNAL  April". Nothing on the
+    card changes; the pages of the two papers stand as the card had them, with Alexander's now marked
+    as unconfirmed here.
+
 ---
 
 ::: {.problem}
