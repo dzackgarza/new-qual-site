@@ -44,6 +44,21 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 10 (p.205) with the lens-space definition of Example 2.43 supplied as context. Rechecked the four coefficient cases from the alternating differential: delta^k = 0 for k even and m for k odd gives G at k = 0 and 2n-1, G/mG at even interior k, G[m] at odd interior k; Z gives Z, Z_m and 0; Q gives Q at the ends and 0 inside; Z_m gives Z_m throughout; Z_p gives Z_p throughout when p divides m and only at the two ends when p does not. All four agree with Theorem 3.2 p.195 applied to H_k = Z, Z_m, 0. The step that asserted immediacy now carries the kernel and image computation, and the cellular complex is cited to Theorem 3.5 p.203 and Example 2.43 pp.144-145. Not covered: the multiplicative structure, which the exercise does not ask for.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 10 of §3.1, printed p. 205, with Example 2.43 on printed
+    pp. 144--145 and Theorem 3.5 on printed p. 203. Verified the alternating complex: with
+    $d_k=0$ for $k$ odd and $d_k=\times m$ for $k$ even, the cochain differential is $\delta^k=0$
+    for $k$ even and $\times m$ for $k$ odd, so $H^k=G$ for $k=0,2n-1$, $G/mG$ for even interior
+    $k$ and $G[m]$ for odd interior $k$. Checked the four coefficient cases: $\ZZ$ gives
+    $\ZZ,\ZZ_m,0$; $\QQ$ gives $\QQ$ at the two ends and $0$ inside; $\ZZ_m$ gives $\ZZ_m$
+    throughout because $\times m$ is zero; $\ZZ_p$ gives $\ZZ_p$ throughout when $p\mid m$ and
+    otherwise $\ZZ_p$ only at the ends. The universal coefficient check is the card's, and it
+    reproduces the same formula from $H_k=\ZZ,\ZZ_m,0$ with $\operatorname{Hom}(\ZZ_m,G)=G[m]$ and
+    $\operatorname{Ext}(\ZZ_m,G)=G/mG$. Not claimed: the multiplicative structure, which the
+    exercise does not ask for, and no certificate.
 ---
 
 ::: {.problem}
