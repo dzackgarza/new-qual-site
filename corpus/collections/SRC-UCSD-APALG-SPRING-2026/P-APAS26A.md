@@ -11,6 +11,19 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 2, is the statement the card answers, and the head of the solution names it; the retained
+    file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the blank
+    versos, so Problem 1 stands on its page 2. Checked: the statement against the paper's text layer at
+    the page named; the parallelogram counterexample, the operator norm on Hom(V,W) being the largest
+    singular value; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED.
+    Not checked: no retained solution set exists for this paper to compare the argument with, and no
+    other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -21,6 +34,8 @@ Note: On this exam, a Hilbert space is a finite-dimensional complex vector space
 :::
 
 ::: {.solution}
+
+The problem is Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 2 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 No retained solution set covers this exercise: the card's own parallelogram counterexample follows, with the choices, the four norms and the failure as separate steps.
 
