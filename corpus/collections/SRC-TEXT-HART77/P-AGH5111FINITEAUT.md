@@ -210,6 +210,27 @@ audit:
     post, the two text versions of the sets, and the printed exercise at
     Hartshorne V.1.11, printed p. 368. Not checked: no publication was searched
     for a proof of part (b) in this pass, and no step was re-derived.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s10's display K = K_(C x C) = pi_1^*K_C + pi_2^*K_C had no locator and
+    is now cited, and steps s4, s8, s9, s10 and s11 were read in this pass and
+    found correct. The display is (II, Ex. 8.3(b)), printed p. 187 (PDF p. 202,
+    folio read): for nonsingular varieties X and Y over k,
+    omega_(X x Y) = p_1 omega_X (x) p_2 omega_Y, which for X = Y = C is the
+    card's sum in divisor notation. The rest of s10 stands: adjunction gives
+    Gamma.K = 4g - 4 for the graph of an automorphism, independent of the
+    automorphism, and K is ample because K^2 = 2(2g-2)^2 > 0 and
+    K.D = (2g-2)(deg p_1|D + deg p_2|D) > 0 for every curve D, the two degrees
+    summing to at least one since D is not a point under both projections.
+    Also read and unchanged: s4's Hodge-index bound, s8's N_{graph sigma} of
+    degree 2 - 2g, s9's separation of distinct graphs by Gamma^2 = 2 - 2g < 0
+    against V.1.4's nonnegativity of the intersection of curves with no common
+    component, and s11's application of part (a) with d = 4g - 4. Not checked in
+    this pass: the page of Bragg's Proof 2, which the card names without a
+    printed folio, and the printed pages of the two retained sets the remark
+    cites.
 ---
 
 ::: {.problem}
@@ -404,7 +425,7 @@ $$
 in $4g-4$, and $K$ is ample.
 
 ::: pf-proof
-This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
+This step is the card's own: its source is the post of the remark, which is not a publication. That the canonical divisor of $C\times C$ is the sum of the two pullbacks of $K_C$ is (II, Ex. 8.3(b)), printed p. 187, where $\omega_{X\times Y}\cong p_1^*\omega_X\tensor p_2^*\omega_Y$ for nonsingular varieties is the same statement in divisor notation. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
 $$
 K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
