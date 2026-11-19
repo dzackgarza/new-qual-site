@@ -515,6 +515,26 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    discreteness plus path connectivity gives a point.
 
    Remaining unread in this item's set: §4.1 13–23 (11), §4.2 (39), §4.3 (24) --- 74 proofs.
+
+   **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
+   repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
+   resolution of $\ZZ_{p^\infty}$, the identity $p^Ne_N=\sum_{j=1}^Np^{j-1}d(r_j)+d(r_0)$, which is false: the sum
+   telescopes to $p^Ne_{N+1}+(p-1)e_1$. It is replaced by $p^Ne_N\equiv p^{N+1}e_{N+1}=p(p^Ne_{N+1})\equiv pe_1=d(r_0)$
+   and by a descending highest-index argument for the independence of the $r_n$, which had one clause.
+   `E-HAT-3.F-8` (`5ad4fec69b`) said all terms of the Bockstein sequence outside degrees $n,n+1$ vanish, false at $n=1$
+   where $H^0(M;C)=C$ sits before $H^1(M;A)$ and reaches zero only because $A\to B$ is injective; that case is now
+   argued, and the two steps whose proofs read "definition of a Moore space" and "Step [](#s1) and the universal
+   coefficient theorem" carry their arguments. `E-HAT-3.F-9` (`8035ccd488`) had (a) as "divisible if $A$ is
+   torsionfree": printed (a) on p. 321 reads **iff**, read on that page itself, so the 2026-11-06 note on that card
+   that reverted the earlier correct repair is wrong and the iff is restored; its converse was proved only for
+   finite-dimensional ${}_pA$, which is not what ${}_pA$ is, and is now a direct-summand argument. `E-HAT-4.1-15`
+   (`fe0e93ba8e`) wrote the local linearity of part (a) as a property of $f$ after the reduction to the map $f_1$ of
+   Lemma 4.10, and never said why $f_1$ suffices.
+
+   Not read by that second reader: `E-HAT-4.D-5`, `-6`, `-8`, which stand on the reading recorded above and were not
+   re-read; §4.2 exercises 11–14 and 17–39; and §4.3 exercises 1–24. Fifty-four of the 97 proofs still stand as this
+   item lists them. Exercises 10–24 of §4.3 were under an independent examination whose working notes are under
+   `.ultramath/`; nothing from it has been accepted or transcribed into a card.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
