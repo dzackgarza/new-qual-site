@@ -179,6 +179,24 @@ audit:
     step conic-classes-contain-a-conic, and the enumeration of the 27 degree 2
     classes of square 0 carries the mark that it is the card's own. Nothing
     else on the card changed, and no part passes from open to proved.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The characteristic-p case of the third alternative, the part of this card
+    that #160 records as open, is now proved, and the card is
+    characteristic-free. The final step no longer invokes Bertini's
+    characteristic-zero corollary: the morphism defined by the base-point-free
+    system is separable because its general member is reduced (Harbourne's
+    Lemma II.6(b), over an arbitrary algebraically closed field), so it is
+    smooth on a nonempty open set U by Hartshorne II.8.6A, Lemma 8.9 and
+    Proposition 10.4; the bad hyperplanes, tangent at a point of U or meeting
+    the image of the complement of U, form a closed subset of the dual of
+    dimension at most N-1, so a general hyperplane gives a member lying in U
+    and nonsingular. The incidence count is Vakil's proof of Bertini, printed
+    p. 375, applied to the linear system |D|. Checked: the dimension count
+    (codimension 2 over U, dimension N-1 over the curve complement) and the
+    passage from reducedness to separability. No statement changes.
 ---
 
 ::: {.problem}
@@ -196,7 +214,7 @@ Hint: Generalize (4.11) to the surfaces obtained by blowing up $2,3,4$, or 5 poi
 ::: {.solution}
 
 Write $X$ for the cubic surface, so that $-K_X=H$ is the hyperplane class, and let $k$ be
-algebraically closed of characteristic $0$.
+algebraically closed.
 
 ::: pf
 
@@ -300,11 +318,23 @@ Fourth, a general member is reduced and irreducible: since $D^2>0$ the system is
 pencil, and Harbourne's Lemma II.6(b), preprint p. 4, then gives $D^2>0$ and that the general section
 of $D$ is reduced and irreducible.
 
-Finally, it is nonsingular: a general member of a base-point-free linear system on a nonsingular
-projective surface over an algebraically closed field of characteristic $0$ is nonsingular, which is
-Bertini's theorem in Corollary III.10.9 of the book, printed p. 274. Over a field of characteristic
-$p$ that corollary fails, as its Remark 10.9.3, printed p. 275, records, and Lemma II.6(b) then gives
-only a reduced irreducible member.
+Finally, it is nonsingular, in every characteristic. Let $\varphi\colon X\to\PP^N$ be the morphism
+defined by the base-point-free system $\linearsystem{D}$, and let $Z\subseteq X\times\PP^{N\vee}$ be the closed
+subset of pairs $(x,H)$ with $\varphi(x)\in H$ and either $\varphi$ is not smooth at $x$, or $H$ is
+tangent to $\varphi(X)$ at $\varphi(x)$, or $\varphi(X)\subseteq H$. The morphism $\varphi$ is
+separable: the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4, and an
+inseparable morphism onto its image pulls a general hyperplane back to a non-reduced divisor. Hence
+$\Omega_{X/\varphi(X)}$ has rank $2$ at the generic point by II.8.6A, printed p. 174, and is locally
+free of rank $2$ on a nonempty open set $U$ by Lemma 8.9, printed p. 175, so $\varphi$ is smooth on
+$U$ by Proposition 10.4, printed p. 270. Over a point of $U$ the hyperplanes through $\varphi(x)$
+and tangent to the image form a linear subspace of codimension $2$ in $\PP^{N\vee}$, of dimension
+$N-3$; over the complement of $U$, a proper closed subset of the surface, the hyperplanes meeting
+$\varphi(X\setminus U)$ form the dual of a curve, of dimension $N-1$. Thus $\dim Z\le N-1$, and a
+general hyperplane $H$ lies outside the image of $Z$ in $\PP^{N\vee}$. For such $H$ the member
+$\varphi^{-1}(H)$ lies in $U$, where $\varphi$ is smooth, and is therefore nonsingular. This is the
+argument of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its
+proof, printed p. 375, applied to the linear system $\linearsystem{D}$ instead of the hyperplane system; the
+characteristic-zero Corollary III.10.9, printed p. 274, is not needed.
 :::
 
 :::
@@ -402,8 +432,10 @@ with a pencil has $D^2>0$ and reduced irreducible general section, and that a cl
 composed with a pencil is a multiple of a class with reduced irreducible general section; and Theorem
 III.1(a), preprint p. 7, that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
 paper works over an algebraically closed field of arbitrary characteristic, so its Lemma II.6 gives
-reduced irreducible members in every characteristic, while the nonsingularity of the member of a
-class of the third alternative is Bertini's theorem in characteristic $0$.
+reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
+the third alternative is then the incidence count of Vakil's Bertini theorem, printed p. 375,
+applied to the linear system $\linearsystem{D}$: the bad hyperplanes form a closed subset of the dual of
+dimension at most $N-1$.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, printed p. 248, on irreducible curves of negative self-intersection on a weak Del Pezzo
@@ -412,6 +444,8 @@ $d\ne8,9$ is generated by its $(-1)$-curves, whose proof leaves the degrees $8$ 
 reader.
 
 Theorem 4.9 of Hartshorne, printed pp. 402--403, for the $27$ lines and for the curves of negative
-self-intersection; Corollary III.10.9, printed p. 274, and its Remark 10.9.3, printed p. 275, for
-Bertini's theorem in characteristic $0$ and its failure in characteristic $p$.
+self-intersection; J. Vakil, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its proof,
+printed p. 375, for the incidence count used on the linear system $\linearsystem{D}$; Hartshorne, Proposition
+10.4, printed p. 270, II.8.6A, printed p. 174, and Lemma 8.9, printed p. 175, for the smoothness of a
+separable morphism on an open set.
 :::
