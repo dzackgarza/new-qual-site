@@ -25,6 +25,16 @@ audit:
   date: 2026-10-31
   note: >-
     Review all three steps: the polygonal path avoids the finitely many lines through points of $F$, the coning point avoids the finitely many affine spans because $n\ge3$, and the triangles assemble into the disk.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. The load-bearing step is the coning: for each point p of the finite set
+    F and each segment e_i of the polygonal loop, the affine span of p with e_i has dimension at most
+    2, so for n >= 3 there is q in X outside their finite union; a segment from q to a point of e_i
+    that met p would put q in that span, so the cone on the loop over q misses F and gives the disk.
+    Checked that avoiding the spans also avoids F, since p lies in every such span, and that the
+    argument needs n >= 3 exactly (the spans are proper only then).
 ---
 
 ::: {.problem}
