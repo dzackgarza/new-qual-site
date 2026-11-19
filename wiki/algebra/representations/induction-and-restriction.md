@@ -30,6 +30,6 @@ Restriction is the forgetful direction: a representation of $G$ is a representat
 
 ## Characters of induced representations
 
-An induced character is computed from the values on the conjugates of the subgroup, so the character table of a group can be built from that of a subgroup of small index; the chapters on [[algebra/representations/characters|Characters]] carry the orthogonality relations that the computation uses.
+An induced character is computed from the values on the conjugates of the subgroup, so the character table of a group can be built from that of a subgroup of small index; the orthogonality relations the computation uses are on [[algebra/representations/characters|Characters]].
 
 [[P-QSGCO]]
