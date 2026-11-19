@@ -16,14 +16,6 @@ The degree is a dimension, the tower law makes it multiplicative, and $K[\alpha]
 
 [[D-PUOGJ]]
 
-[[P-DUXVY]]
-
-[[P-CDUB4]]
-
-[[P-HI4U2]]
-
-[[P-IEZIG]]
-
 ## Splitting fields and normality
 
 A finite extension is normal exactly when it is a splitting field, and the normal closure of a simple extension is the splitting field of its minimal polynomial.
