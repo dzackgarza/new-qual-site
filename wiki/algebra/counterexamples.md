@@ -13,7 +13,7 @@ topics:
 A finite group need not have a subgroup of each order dividing its order.
 The [[D-TMME3|alternating group]] $A_4$ has order $12$ and no subgroup of order $6$; $A_5$ has order $60$ and no subgroup of order $30$.
 
-For $A_5$: a subgroup of index $2$ is normal, and $A_5$ is simple ([[P-AMD-6TLQZZWT]]), so there is none of order $30$.
+For $A_5$: a subgroup of index $2$ is normal, and $A_5$ is simple ([[P-HPYC5]]), so there is none of order $30$.
 For $A_4$: suppose $H\leq A_4$ has order $6$. The $3$-cycles generate $A_4$ ([[PR-JY4PV]]), so some $3$-cycle $x$ lies outside $H$; the cosets $H$, $xH$, $x^2H$ are only two distinct cosets, and each coincidence forces $x\in H$: $H=xH$ gives $x\in H$, $x^2H=H$ gives $x^2=\inverseof{x}\in H$, and $xH=x^2H$ gives $x=x^2\inverseof{x}\in H$.
 :::
 
