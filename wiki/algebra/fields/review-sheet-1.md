@@ -64,7 +64,7 @@ The field of $p^n$ elements exists and is unique, its subfields are the $\FF_{p^
 
 ## The problems of the sheet
 
-The sheet is the collection [[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]]; its problems are
+[[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]]
 
 [[P-DUXVY]] [[P-CDUB4]] [[P-HI4U2]] [[P-IEZIG]]
 

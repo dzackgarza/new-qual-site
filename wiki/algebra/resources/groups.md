@@ -21,8 +21,6 @@ order: 40
 
 ## Solutions and worked practice
 
-Each Gallian chapter's outline is the provenance of the collection that owns it:
-
 - [[SRC-CH7-GROUP-SOLUTION-OUTLINES|Solution outlines for chapter 7 of Gallian, *Contemporary Abstract Algebra*]]
 
 - [[SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES|Solution outlines for chapter 8 (direct products) of Gallian, *Contemporary Abstract Algebra*]]
