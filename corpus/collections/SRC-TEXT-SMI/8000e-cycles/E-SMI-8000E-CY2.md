@@ -30,6 +30,14 @@ audit:
     on the support of one cycle the other acts trivially and preserves that
     support, and off both supports both act trivially, so the two products agree
     everywhere. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, problem 2. On the support
+    of $\sigma$ the cycle $\tau$ is the identity and $\sigma$ preserves its own support; on
+    the support of $\tau$ symmetrically; and off both supports both are the identity. The two
+    products agree everywhere. No defect.
 ---
 
 ::: {.exercise}
