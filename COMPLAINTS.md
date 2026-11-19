@@ -8990,3 +8990,69 @@ The old bodies were "the axis is the orthogonal complement of $W$", "cross produ
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering 1–4 with QED labels on both; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; `E-HK-84-5` uses Rodrigues' formula after deriving it, and `E-HK-84-11` uses Exercise 10's identities for $T_{\alpha,\beta}$ as the book gives them.
+
+## 2026-11-19, Yang sweep: IV.4.11--IV.4.13 cited at printed p. 93, one slip, one verification
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.4.11, 4.4.12 and 4.4.13 are all on printed p. 93.
+
+**`P-AGH4411COMPLEXMULTIPLICATION`, IV.4.11 — cited, printed p. 93, no defect.** (a) The degree is
+the index of the sublattice, so $\deg f=A_{\alpha L}/A_L=\abs{\alpha}^2$ with $A_L$ the area of the
+period parallelogram. (b) Multiplication by $N=\alpha\bar\alpha$ induces $[N]$, so $\times\bar\alpha$
+satisfies $\times\bar\alpha\circ\times\alpha=[N]$ and is the dual. (c) $\tau$ integral gives
+$\tau^2\in\ZZ\oplus\ZZ\tau$, hence $\ZZ[\tau]=\ZZ\oplus\ZZ\tau=L_\tau\subseteq R$, and conversely
+$\alpha=\alpha\cdot1\in L_\tau$ forces $\alpha\in\ZZ[\tau]$. The only thing taken for granted is that
+$R$ means $\End(X,P_0)$, without which composition is not defined. Commit `f6b36d3c85`.
+
+**`P-AGH4412PERIODLATTICEAUTOMORPHISMS`, IV.4.12 — cited, printed p. 93, one arithmetic slip.**
+(a) An automorphism fixing $P_0$ has degree $1$, so by 4.4.11 its multiplier has $\abs{\alpha}=1$ and
+is a root of unity; $\QQ(\alpha)\subseteq\QQ(\tau)$ has degree at most $2$ and $\alpha\ne\pm1$, so the
+degree is $2$, giving $\alpha=i$ or $\omega$ and $\tau=i$ or $\omega$. The printed list of $n$ omits
+$3$, harmlessly, since $\zeta_3=-\zeta_6^{-1}$ lies in $\ZZ[\omega]$ and gives the same $\tau$.
+(b) reduces a degree-two endomorphism to a norm equation. For $d\equiv1\bmod4$ the printed solution
+"$d=-7$, $a=0$, $b=\pm2$" is wrong --- it makes $(a+\frac b2)^2-\frac{b^2d}{4}$ equal $1+7=8$, not
+$2$ --- and the solution is $b=\pm1$, for which $\frac14+\frac74=2$; the $\tau=\frac{-1+\sqrt{-7}}{2}$
+the entry reaches is unaffected. For $d\equiv2,3\bmod4$ the solutions $(\pm1,\pm1,-1)$ and
+$(0,\pm1,-2)$ of $a^2-b^2d=2$ are right and give $\tau=i$ and $\tau=\sqrt{-2}$. Recorded on the card,
+which keeps the three answers and matches them with the three $j$ of IV.4.5. Commit `52a62ea818`.
+
+**`P-AGH4413SUPERSINGULARJATTHIRTEEN`, IV.4.13 — cited, printed p. 93, the answer verified.**
+$h_{13}(\lambda)=\sum_{i=0}^{6}\binom6i^2\lambda^i$ is right: the squares are
+$1,36,225,400,225,36,1$, i.e. $1,10,4,10,4,10,1$ mod $13$. Its six roots carry one $j$ because the
+five fractional transformations of $\lambda$ preserve $j$ and hence permute the roots, so the roots
+are one $\Sigma_3$-orbit as soon as no root has $j=0$ (orbit of size three) or $j=1728$ (size two).
+The two computations excluding those are garbled as printed --- one line opens a bracket it never
+closes and carries a stray `)` --- but the claim holds: $j=0$ exactly at $\lambda=4,10$ and
+$j=1728$ exactly at $\lambda=2,7,\frac12$ in $\FF_{13}$, and $h_{13}$ vanishes at none of them, its
+roots being the roots of $\lambda^2-6\lambda+1$, $\lambda^2-\lambda+3$ and $\lambda^2+4\lambda-4$.
+The answer was checked directly: $256(\lambda^2-\lambda+1)^3-5\lambda^2(\lambda-1)^2\equiv
+-4h_{13}(\lambda)\pmod{13}$ holds coefficient by coefficient --- the coefficients of the difference
+plus $4h_{13}$ are $260,624,2431,182$, all divisible by $13$ --- and the model curve $y^2=x^3+4x+7$
+has exactly $14$ points over $\FF_{13}$, so trace $0$ and supersingular, with $j\equiv5$ both by the
+formula and by the identity. Commit `c1ea668101`.
+
+**A style defect again caught by the gate.** The first drafts wrote $\abs{\alpha}^2$ as
+$|\alpha|^2$ and $|\alpha|=1$, and `qualc.authoring.raw_notation` rejected both under STYLE-04; the
+three spans were rewritten with `\abs{}` and the check then returns `None`. This is the second batch
+running in which that gate found a real defect that `qualc.authoring check` and `tmp/lam.sh` had both
+passed, the other being an undefined `\Supp`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$4$, $1$--$8$
+and $1$--$5$ with `(QED labels present)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None` after the repair; the macro sweep reported only
+standard names (`\tfrac`, `\bmod`, `\pmod`, `\hline`, `\ge`, `\le`). The computations used
+`/usr/bin/python3` (SymPy 1.14) and plain integer arithmetic mod $13$.
+
+**Push.** `github_push` answered `non_fast_forward`; the fetch showed all three card commits already
+on `main`, carried by a sibling's push that landed between them. That is the third form this session
+of the same hazard, and `git ls-remote` after a fetch remains the only check that decides.
+
+**Not checked.** Yang's Solutions outside printed p. 93; the Hartshorne pages of the three exercises,
+not reopened in this pass, the comparison being against the statements the cards carry; and the
+printed book itself. In 4.4.13 the citation of Corollary 4.22 for $h_{13}$ was taken from the text
+and not read on its own page.
+
+**The remainder.** Twenty-three Chapter IV cards still lack Yang; the queue now starts at IV.4.14
+`P-AGH4414FERMATCUBICHASSE`, and Yang's 4.4.14--4.4.16 are on printed p. 93, 4.4.17--4.4.20 on p. 94.
