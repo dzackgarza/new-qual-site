@@ -29,9 +29,20 @@ audit:
     termwise. Added: the explicit majorant in each limit step and the reason a vanishing sum of
     non-negative terms kills each term, which the prose compressed. No defect found in the statement,
     Problem 1 of Chapter 7; no retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+    printed page): the statement is Problem 1 at the head of the Chapter 7 Problems, printed
+    p. 203, and its printed words are the card's. The chapter, the problem number and the page
+    are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+    the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 7 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 203; the statement below is its wording.
+
 Let $F(s) = \sum_{n=1}^{\infty} a_n/n^s$, where $\abs{a_n} \leq M$ for all $n$.
 
 (a) Then
