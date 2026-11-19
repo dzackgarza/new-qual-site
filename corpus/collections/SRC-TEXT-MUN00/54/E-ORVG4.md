@@ -38,6 +38,24 @@ audit:
     therefore fails, and that the clockwise loop has no lift to R_+ from 1. The argument is
     the card's own; no retained set is cited. Munkres §54 Exercise 2, printed p. 341, with
     Example 2 of §53. The printed statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two corrections on 2026-11-19. The rendered preamble said "The argument is
+    the card's own; no retained solution set is cited on the card", which is
+    false, since the event of 2026-11-11 cites dbFin's Section 54 Problem 1
+    solution and compares it with the card; and it gave the exercise as "§54
+    Exercise 2, printed p. 341", as the event of 2026-11-18 does. The exercise is
+    Exercise 1 of §54, printed p. 347 (PDF p. 362 of the retained PDF, folio 347,
+    printed page = PDF page - 15); printed p. 341 is the exercise page of §53. The
+    preamble now cites dbFin's solution, with Lemma 54.1 on printed p. 342
+    (PDF p. 357) and the definition of a covering map on printed p. 336. The event
+    of 2026-11-18 is left as written and its "Exercise 2, printed p. 341" is
+    superseded by this one. No step or statement changes: the two halves the card
+    proves are the two halves of dbFin's answer, the incomplete sheet over the
+    initial interval and the clockwise loop whose lift dies at 0.
+
 ---
 
 ::: {.exercise}
@@ -46,7 +64,7 @@ What goes wrong with the "path-lifting lemma" (Lemma 54.1) for the local homeomo
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §54 Exercise 2, printed p. 341, and against Example 2 of §53 and Lemma 54.1.
+The argument is that of the published solution of dbFin, "Section 54: Problem 1 Solution": the subdivision step of the path-lifting lemma fails at $b_0=(1,0)$, whose neighbourhoods have an incomplete sheet over an initial interval, and the clockwise loop from $1$ lifts initially as $1-t$ and dies at $0\notin\RR_+$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 1, printed p. 347; Lemma 54.1 is on printed p. 342, Example 2 of §53 is the map described below, and an evenly covered set and a covering map are defined on printed p. 336.
 
 In Example 2 of §53 the map
 $$
