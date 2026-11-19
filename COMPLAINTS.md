@@ -5856,3 +5856,33 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Repair.** The table row now reads pp. 64--67. The dated records that first gave pp. 63--66 stand as written; the correction of this date is the record that fixes them.
 
 **Uncertainty.** Not checked this pass: the other rows of the table, and Katz and Mazur beyond printed pp. 63--67.
+
+## 2026-11-19, eighth item: ten cards of residue 1 said no retained solution set covered them, and the repository retains the solution in each case
+
+**Object and need.** The per-card rule allows a card to re-derive an argument only when no retained set covers the exercise, "and the card says so". Ten cards of queue D's residue 1 say so falsely. Each is repaired on its own card with the document, its exercise or page, and what the card adds; this entry records the class, the screens that found it, and what the screens do not catch.
+
+**The ten, by the document that was already in the repository.**
+
+| card | retained document | where |
+| --- | --- | --- |
+| `E-V98N5` | dbFin, Section 30 Problem 18 | `tmp/sources/dbfin/section-30-the-countability-axioms/problem-18-solution.txt` |
+| `E-X4TVL` | dbFin, Section 31 Problem 9 | `tmp/sources/dbfin/section-31-the-separation-axioms/problem-9-solution.txt` |
+| `E-HAT-2.2-41` | Guanyu Li, Hatcher solutions | `tmp/sources/hatcher-solutions-guanyu-li.md`, heading "Exercise 2.2.19 (2.2.41)" |
+| `P-CH13-35`, `P-CH13-29` | Gallian Ch. 13 outline, entries "# 35" and "# 29" | `assets/attachments/Ch13Sltns.pdf` |
+| `P-CH10-35` | Ch. 10 outline, entry "# 35" | `assets/attachments/Ch10Sltns.pdf` |
+| `P-CH10A-1` | Ch. 10 part A outline, Example 2 | `assets/attachments/Ch10PtASltns.pdf`, page 1 |
+| `P-CH16-1` | Ch. 16 outline, entry "# 1" | `assets/attachments/Ch16Sltns.pdf` |
+| `P-CH7-1` | Ch. 7 outline, entry "# 1" | `assets/attachments/Ch7Sltns.pdf` |
+| `P-M504F03-1` | Math 504 final solutions, item 1 | `assets/attachments/Algebra_Final_Solns.pdf`, page 1 |
+
+**The screens, in the order that found them, over the 122 residue-1 cards that make the claim in 51 collections.**
+
+1. **Does the card name a retained file while denying one exists?** Found the six CH cards and `E-HAT-2.2-41`; the CH cards are self-contradictory because their own audit events cite the outline. Two further hits named only the search record `mse-searches-146.md`, which is not a source.
+2. **Does the collection's `provenance` name a solution-like file?** Found `P-M504F03-1`. This screen needs the card globs `corpus/collections/*/*.md` **and** `corpus/collections/*/*/*.md`: the first pass used only the section-level pattern and reported nothing.
+3. **Does the card's section appear in any retained solution file?** Found `E-V98N5` and `E-X4TVL` (dbFin's section directories) and cleared the twelve Munkres, eighteen Hatcher and twenty-one Hungerford claims that survive it.
+
+**Two screens that return nothing and should not be trusted.** Intersecting the claiming collections with the 137 solution-like files in `assets/attachments` by filename returned zero hits, and filtering the same collections by whether their `provenance` names a solution-like file also returned zero in the first pass: the CH collections' remarks say the outline "is not the document, so the textbook is listed and the outline is not", so the attachment is in the tree and named nowhere but on the card. A screen keyed on provenance or on the attachments directory cannot see it; the card's own text can.
+
+**What is still unchecked.** The 112 claiming cards that pass all three screens are cleared by absence of evidence in the retained inventory, not by reading each exercise in each retained set. `qualc check` does not test this claim and no gate does.
+
+**Uncertainty.** The three screens are phrase matches and path matches; a card whose claim is worded differently from "no retained (solution) set" would not be in the population of 122 at all, and that population was not estimated independently.
