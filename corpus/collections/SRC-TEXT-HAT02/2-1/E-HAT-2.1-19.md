@@ -27,6 +27,18 @@ audit:
   date: 2026-10-31
   note: >-
     Read the Mayer--Vietoris setup: $U$ and $V$ are contractible by the vertical homotopy that preserves the rational first coordinate, and their intersection is the four boundary edges together with the rational vertical segments cut at $1/4<y<3/4$, whose homology the computation then takes.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 19 of §2.1, printed p. 131. Correct: with $U=X\cap\{y<3/4\}$ and
+    $V=X\cap\{y>1/4\}$ both contractible by the vertical homotopy that preserves the first
+    coordinate, and $U\cap V$ retracting to $(\QQ\cap I)\times\{1/2\}$, which is totally
+    disconnected with $H_0$ free on the rationals and no positive-dimensional homology because every
+    singular simplex there is constant; reduced Mayer--Vietoris then gives $H_1(X)\cong\widetilde H_0(U\cap V)$,
+    free on the rationals other than the basepoint, and $H_k(X)=0$ for $k\ge2$, with $H_0(X)=\ZZ$
+    since $X$ is path connected. Removed one thing only: a closing step proved by naming three
+    labels (STYLE-08). Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
@@ -123,28 +135,6 @@ $$
 \widetilde H_k(X)\cong\widetilde H_{k-1}(U\cap V)=0
 $$
 by step [](#s2){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore
-$$
-\boxed{
-H_0(X)\cong\ZZ,
-\qquad
-H_1(X)\cong
-\bigoplus_{q\in(\QQ\cap I)\setminus\{0\}}\ZZ,
-\qquad
-H_k(X)=0\ (k\ge2).
-}
-$$
-
-::: pf-proof
-
-Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 
