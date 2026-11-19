@@ -8244,3 +8244,58 @@ at IV.3.1 `P-AGH431GENUSTWOVERYAMPLE`.
 **What that leaves, exactly.** Twenty Stein--Shakarchi cards name no source; with the − 19 offset and the Problems headings they are straightforward. Thirty-five Hatcher cards likewise, and the Hatcher text is retained as `tmp/sources/hatcher-2002-algebraic-topology.md` rather than as a paginated scan — printed page = PDF page − 9 there, but the `.md` carries no folios, so a Hatcher locator needs the printed page from another copy or the section number alone. Fourteen cards have sheets that are scans with no text layer and no extraction; `just ocr-pdf` runs `tools/mistral_ocr.py` against an external service and nothing was sent. The workshop collection's day-2..9 sheets are not in the repository at all, which is a provenance gap rather than a missing citation.
 
 **Not claimed.** No card in this pass was given a page number that was not read from the item itself. Where the number could not be established — the GRE practice-test number, the two undated Tate sheets, `P-ALGPAN11-01`'s image-only questions — the locator names the heading and page instead, and the audit event says so.
+
+## 2026-11-19, Yang sweep: IV.3.1--IV.3.3 cited at printed pp. 87--88
+
+**Object.** Three Chapter IV cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.3.1 and 4.3.2 are on printed p. 87, 4.3.3 and everything up to
+4.3.9 on printed p. 88.
+
+**`P-AGH431GENUSTWOVERYAMPLE`, IV.3.1 — cited, printed p. 87, with one impossible equality
+recorded.** Both directions are there: the reverse one is Corollary IV.3.2(b) at
+$\deg D\geq2g+1=5$; the forward one excludes each degree below five --- $\ell(D)\leq\deg D+1\leq2$
+for $\deg D\leq1$ by (4.1.5), $\ell(D)=\ell(K-D)+1\leq2$ for $\deg D=2$, $\ell(K-D)=0$ and
+$\ell(D)=2$ for $\deg D=3$, and $\ell(D)=3$ with $\abs D$ base-point-free for $\deg D=4$, giving a
+plane quartic of genus $3\neq2$ --- against $\ell(D)\geq3$, which very ampleness forces. Its (⇒)
+opens with "$\ell(D)=\ell(D-P-Q)\geq2$ for any two points $P,Q$", which cannot hold: for a very
+ample $D$ one has $\ell(D-P-Q)=\ell(D)-2$, so the intended inequality is $\ell(D)\geq3$. The
+conclusion the argument uses is that one, and the card records the printed equality rather than
+copying it. Commit `94731586e6`.
+
+**`P-AGH432PLANEQUARTICNOTHYPERELLIPTIC`, IV.3.2 — cited, printed pp. 87--88, no defect.** (a) For
+$D=X.L$: $\deg D=4=\deg K$ by Bézout, $\ell(D)=3$ because the lines cut a $\PP^2$ inside $\abs D$,
+and Riemann--Roch gives $\ell(K-D)=\ell(D)+g-1-\deg D=1$, so $K=D$; the lines and $\abs K$ are both
+a $\PP^2$, so the line sections are exactly the effective canonical divisors. (b) With $L=PQ$ one
+has $K=X.L=P+Q+R+S$, and $\dim\abs{P+Q}=\dim\abs K-2=0$ because a very ample $K$ makes $P+Q$ impose
+two independent conditions. (c) A degree-two divisor with $\dim\abs D=1$ would give a degree-two
+morphism $X\to\PP^1$, which (b) forbids. Commit `134c47a134`.
+
+**`P-AGH433COMPLETEINTERSECTIONCANONICAL`, IV.3.3 — cited, printed p. 88, with a silently used
+hypothesis recorded.** Yang takes $K_X\cong\OO_X(m)$ with $m=\sum_i d_i-N-1$ from the
+complete-intersection formula (II, Ex.\ 8.4, which the entry cites as 2.8.4(e)), and for $m>0$ reads
+$\abs K$ as the $m$-uple embedding, so $K$ is very ample; then $\deg K=2$ for $g=2$, not very ample
+by (Ex.\ 4.3.1), so no complete intersection has genus $2$. The printed "$m>0$" is asserted before
+the genus is used, and it is exactly the exercise's hypothesis that supplies it:
+$\deg K=m\deg X=2g-2>0$ for $g\geq2$, while a line in $\PP^3$ has $m=-2$ and a plane conic $m=-1$.
+Recorded on the card. Commit `4cbe64711d`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered the steps
+(IV.3.1 $1$--$9$, IV.3.2 $1$--$8$, IV.3.3 $1$--$5$) with `(QED labels present)`;
+`qualc.card_completeness.check_card` returned `[]`; `qualc.authoring.raw_notation` on the authored
+prose returned `None`; `tools/sync_macros.py --check` silent. All three carry `review:` before
+`audit:`, so the two events went in at the front-matter close, not before `review:` --- the
+distinction the previous batch got wrong on three other cards.
+
+**Not checked.** Yang's Solutions outside printed pp. 87--88; the Hartshorne pages of the three
+exercises, not reopened in this pass, the comparison being against the statements the cards carry;
+and the printed book itself.
+
+**Also.** The three cards committed in the previous batch (`P-AGH425`, `P-AGH426`, `P-AGH427`) end
+without a trailing newline, where 436 of the 442 cards in the collection end with one; the three in
+this batch were normalised before committing and the earlier three were left as pushed, since a
+whitespace-only commit over three cards would break one-card-per-commit for nothing that renders.
+
+**The remainder.** Forty-four Chapter IV cards still lack Yang; the queue in index order now starts
+at IV.3.4 `P-AGH434RATIONALNORMALCURVE`, and Yang's 4.3.4 through 4.3.9 are all on printed p. 88.
