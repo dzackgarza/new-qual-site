@@ -321,6 +321,23 @@ audit:
     tmp/sources/gunning-1967-vector-bundles-riemann-surfaces.pdf, PDF pp. 80,
     81, 90, 91, 92, 93, 94, 96, 97, 98 and 99, printed page = PDF page - 9, the
     folios -71- to -90- read on those renders. No mathematical claim changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s6 said that the semistable criterion "is the card's own" because
+    Gunning states no semistable one. Both directions of part (b) are in the
+    published sets, and the sentence now names them: Yang Pi-Yeh, Hartshorne
+    Solutions, Solution 5.2.8(b), printed p. 104, which runs the two directions
+    with the parentheses "(> )" and "(>=)" carrying the strict and weak cases
+    and contradicts normalization by a section of E (x) F^vee with deg F^vee
+    negative; and Exercise 8(b) of the National Taiwan University set (Tzu-Yang
+    Chou), PDF p. 8, which gives the same two directions in the same order. Read
+    on 2026-11-19 in tmp/sources/lfwin-hartshorne-solutions.md at printed
+    pp. 103-104, the folios checked on the retained PDF, and in
+    tmp/sources/ntu-ag2-chapter5.md at PDF p. 8. The argument of steps s3 to s6
+    is unchanged; what changes is that the card no longer claims the semistable
+    direction as its own.
 ---
 
 ::: {.problem}
@@ -443,7 +460,7 @@ $$
 $$
 
 ::: pf-proof
-Semistability is the exercise's definition, the weak inequalities of step [](#s1){.pf-ref}; Gunning defines stability and instability only, and states no semistable criterion, so this step is the card's own. With $\operatorname{div}\mathcal E=0$ by step [](#s3){.pf-ref} every line subbundle has $\deg\mathcal A\le0$, so $\deg\mathcal E\ge0$ gives the weak inequalities, and the subbundle $\OO_C$ of step [](#s4){.pf-ref} gives the converse. Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b).
+Semistability is the exercise's definition, the weak inequalities of step [](#s1){.pf-ref}; Gunning defines stability and instability only and states no semistable criterion. With $\operatorname{div}\mathcal E=0$ by step [](#s3){.pf-ref} every line subbundle has $\deg\mathcal A\le0$, so $\deg\mathcal E\ge0$ gives the weak inequalities, and the subbundle $\OO_C$ of step [](#s4){.pf-ref} gives the converse. Both directions, with the parentheses of the sources carrying the weak inequality, are Solution 5.2.8(b) of Yang Pi-Yeh, *Hartshorne Solutions*, printed p. 104, and Exercise 8(b) of the National Taiwan University set (Tzu-Yang Chou), PDF p. 8: a line subbundle of degree at least half the degree of $\mathcal E$ gives a section of $\mathcal E\tensor\mathcal F^{-1}$, which the normalization of printed p. 373 forbids because $\mathcal F^{-1}$ has negative degree. Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b).
 
 :::
 
