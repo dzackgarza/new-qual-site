@@ -33,6 +33,15 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 1, printed p. 257. The collection's provenance is the book, and no retained solution set covers this exercise; the argument is the card's own. Checked: each copy of $\RR$ is an open chart; the two origins are not separated by disjoint neighbourhoods, so the Hausdorff condition genuinely fails; the transition is increasing on the positive component and equal to $t\mapsto1/t$, which is decreasing, on the negative one; and no choice of chart orientations can be consistent on both components, which is nonorientability.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported an undefined control word. The closing
+    sentence of the chart step wrote `\R`, which neither vocabularies/macros.json nor the
+    MathJax command set the site loads defines, so the page could not render it; the card writes
+    `\RR` everywhere else, including three lines above, and now does here too. Mathematics
+    unchanged.
 ---
 
 ::: {.problem}
@@ -56,7 +65,7 @@ The identification is a homeomorphism between the punctured lines, so the quotie
 $X$ is a 1-dimensional manifold, with each copy of $\RR$ as a chart.
 
 ::: pf-proof
-The image of $\RR_+$ in $X$ is the whole of $X$ minus the single point $0_-$, and likewise for $\RR_-$; each is open, and the map from $\RR$ to its image is a bijection onto an open set that is a homeomorphism for the quotient topology. So every point of $X$ lies in a chart homeomorphic to an open subset of $\R$.
+The image of $\RR_+$ in $X$ is the whole of $X$ minus the single point $0_-$, and likewise for $\RR_-$; each is open, and the map from $\RR$ to its image is a bijection onto an open set that is a homeomorphism for the quotient topology. So every point of $X$ lies in a chart homeomorphic to an open subset of $\RR$.
 :::
 :::
 
