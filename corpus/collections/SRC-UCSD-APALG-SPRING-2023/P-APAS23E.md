@@ -12,6 +12,18 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Part B, Problem 1 of the Spring 2023 Applied Algebra Qualifying Exam, printed
+    p. 1 of the Part B paper retained at assets/attachments/Applied_Algebra_Part_B_SP23.pdf, is the
+    statement the card answers, and the head of the solution names it. Checked: the statement against
+    the paper's text layer at the page named; the isomorphism $D_6\cong S_3\times C_2$ and the character
+    table obtained from it; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and
+    the QED. Not checked: no retained solution set exists for this paper to compare the argument with,
+    and no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -24,6 +36,8 @@ Let $D_6$ be the group of symmetries of a regular hexagon, let $S_3$ be the symm
 
 
 ::: {.solution}
+
+The problem is Part B, Problem 1 of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 1 of the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
 
 No retained solution set covers this exercise: the card's own decomposition and the table obtained from it are set out step by step.
 
