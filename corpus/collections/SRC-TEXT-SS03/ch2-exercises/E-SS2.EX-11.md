@@ -75,10 +75,10 @@ The denominator is $\abs{Re^{i\gamma}-r}^2=R^2-2Rr\cos\gamma+r^2$. The numerator
 ::: {.pf-step #setup}
 Let $0<\abs z<R<R_0$ and put $w=R^2/\overline z$. Then $\abs w>R$, so $f$ is holomorphic on a disc containing the closed disc of radius $R$, and
 $$
-f(z)=\frac1{2\pi i}\oint_{\abs\zeta=R}f(\zeta)\Bigl(\frac1{\zeta-z}-\frac1{\zeta-w}\Bigr)\dd\zeta .$$
+f(z)=\frac1{2\pi i}\oint_{\abs\zeta=R}f(\zeta)\Bigl(\frac1{\zeta-z}-\frac1{\zeta-w}\Bigr)\,d\zeta .$$
 
 ::: pf-proof
-$\abs w=R^2/\abs z>R$. Also $R<R_0$ and $f$ is holomorphic on $D_{R_0}(0)$, so $f$ is holomorphic on a neighbourhood of the closed disc $\abs\zeta\le R$. Cauchy's integral formula (Chapter 2, Theorem 4.4) gives $f(z)=\frac1{2\pi i}\oint_{\abs\zeta=R}\frac{f(\zeta)}{\zeta-z}\,\dd\zeta$, the point $z$ being inside the circle. Since $\zeta\mapsto f(\zeta)/(\zeta-w)$ is holomorphic on and inside the circle $\abs\zeta=R$, Cauchy's theorem (Chapter 2, Theorem 4.1) gives $\oint_{\abs\zeta=R}\frac{f(\zeta)}{\zeta-w}\,\dd\zeta=0$. Subtracting the second identity from the first gives the display.
+$\abs w=R^2/\abs z>R$. Also $R<R_0$ and $f$ is holomorphic on $D_{R_0}(0)$, so $f$ is holomorphic on a neighbourhood of the closed disc $\abs\zeta\le R$. Cauchy's integral formula (Chapter 2, Theorem 4.4) gives $f(z)=\frac1{2\pi i}\oint_{\abs\zeta=R}\frac{f(\zeta)}{\zeta-z}\,d\zeta$, the point $z$ being inside the circle. Since $\zeta\mapsto f(\zeta)/(\zeta-w)$ is holomorphic on and inside the circle $\abs\zeta=R$, Cauchy's theorem (Chapter 2, Theorem 4.1) gives $\oint_{\abs\zeta=R}\frac{f(\zeta)}{\zeta-w}\,d\zeta=0$. Subtracting the second identity from the first gives the display.
 :::
 
 :::
@@ -107,13 +107,13 @@ whose real part is $1+2\Re\frac{z}{\zeta-z}$. The two expressions agree.
 
 
 ::: {.pf-step #parta}
-(a) For $0<\abs z<R$, $\displaystyle f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\Re\Bigl(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\Bigr)\dd\varphi$.
+(a) For $0<\abs z<R$, $\displaystyle f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\Re\Bigl(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\Bigr)\,d\varphi$.
 
 ::: pf-proof
-Parametrize $\zeta=Re^{i\varphi}$, so that $\dd\zeta=iRe^{i\varphi}\dd\varphi=i\zeta\,\dd\varphi$ and $\frac1{2\pi i}\dd\zeta=\frac{\zeta}{2\pi}\dd\varphi$. By step [](#setup){.pf-ref},
+Parametrize $\zeta=Re^{i\varphi}$, so that $d\zeta=iRe^{i\varphi}\,d\varphi=i\zeta\,d\varphi$ and $\frac1{2\pi i}\,d\zeta=\frac{\zeta}{2\pi}\,d\varphi$. By step [](#setup){.pf-ref},
 $$
-f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\,\zeta\Bigl(\frac1{\zeta-z}-\frac1{\zeta-w}\Bigr)\dd\varphi
-=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\Re\Bigl(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\Bigr)\dd\varphi,
+f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\,\zeta\Bigl(\frac1{\zeta-z}-\frac1{\zeta-w}\Bigr)\,d\varphi
+=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\Re\Bigl(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\Bigr)\,d\varphi,
 $$
 the second equality by step [](#kernel){.pf-ref} with $\zeta=Re^{i\varphi}$.
 :::
@@ -122,17 +122,17 @@ the second equality by step [](#kernel){.pf-ref} with $\zeta=Re^{i\varphi}$.
 
 
 ::: {.pf-step #origin}
-At $z=0$ the same identity holds, and it is the mean value property: $f(0)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\,\dd\varphi$.
+At $z=0$ the same identity holds, and it is the mean value property: $f(0)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\,d\varphi$.
 
 ::: pf-proof
-At $z=0$ the kernel of step [](#kernel){.pf-ref} is $\Re\frac{\zeta}{\zeta}=1$ for every $\zeta$ on the circle, so the right-hand side of part (a) is $\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\dd\varphi$; and that equals $f(0)$ by the mean value property, which is Cauchy's integral formula at the centre of the disc (Chapter 2, Theorem 4.4 with $z=0$). So the formula of part (a) holds for every $\abs z<R$, which is what the statement asks.
+At $z=0$ the kernel of step [](#kernel){.pf-ref} is $\Re\frac{\zeta}{\zeta}=1$ for every $\zeta$ on the circle, so the right-hand side of part (a) is $\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\,d\varphi$; and that equals $f(0)$ by the mean value property, which is Cauchy's integral formula at the centre of the disc (Chapter 2, Theorem 4.4 with $z=0$). So the formula of part (a) holds for every $\abs z<R$, which is what the statement asks.
 :::
 
 :::
 
 
 ::: {.pf-step #poisson}
-Combining the two parts, for $z=re^{i\theta}$ with $0\le r<R$, $\displaystyle f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\frac{R^2-r^2}{R^2-2Rr\cos(\varphi-\theta)+r^2}\,\dd\varphi$.
+Combining the two parts, for $z=re^{i\theta}$ with $0\le r<R$, $\displaystyle f(z)=\frac1{2\pi}\int_0^{2\pi}f(Re^{i\varphi})\frac{R^2-r^2}{R^2-2Rr\cos(\varphi-\theta)+r^2}\,d\varphi$.
 
 ::: pf-proof
 Rotating by $e^{-i\theta}$ reduces the kernel to the case of part (b): with $\gamma=\varphi-\theta$, the quotient $\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}$ equals $\frac{Re^{i\gamma}+r}{Re^{i\gamma}-r}$ after multiplying numerator and denominator by $e^{-i\theta}$, and a real factor does not change a real part; taking real parts of the value computed in step [](#partb){.pf-ref} gives the displayed kernel. This is the Poisson formula for the disc, and it is recorded here because it is the form in which the identity of part (a) is usually applied.
