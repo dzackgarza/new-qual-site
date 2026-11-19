@@ -14,6 +14,20 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2. Re-checked: differentiability gives
+    $\abs{f(z_0+rv)-f(z_0)}/r\to\norm{Av}$, so isotropy is $\norm{Av}=\lambda\norm v$; polarization
+    turns that into $A^{T}A=\lambda^2I$, i.e. $A=\lambda Q$ with $Q$ orthogonal; such a map preserves
+    absolute angles, so isotropy implies isogonality; conversely isogonality forces $A$ injective,
+    preserves perpendicularity, and the pair $e_1\pm e_2$ forces $\norm{Ae_1}=\norm{Ae_2}$, giving
+    $A^{T}A=\lambda^2I$; and $\det Q=\pm1$ gives $Av=cv$ or $Av=c\overline v$, which are exactly
+    complex-linearity of $A$ and of the differential of $\overline f$. Added: the polarization
+    identity explicitly, the injectivity argument in full, and the identification of the differential
+    of $\overline f$ as $v\mapsto\overline{Av}$. No defect found in the statement, Problem 1 of
+    Chapter 8; no retained solution set covers it.
 ---
 
 ::: {.exercise}
@@ -27,52 +41,67 @@ Then $f$ is isogonal at $z_0$ if and only if it is isotropic at $z_0$; moreover,
 :::
 
 ::: {.solution}
-Let $A=Df(z_0):\RR^2\to\RR^2$ be the real differential. For a unit vector $v=e^{i\theta}$,
-$$
-f(z_0+rv)-f(z_0)=rAv+o(r),
-$$
-so
-$$
-\lim_{r\to0}\frac{\abs{f(z_0+rv)-f(z_0)}}{r}=\norm{Av}.
-$$
-Thus $f$ is isotropic at $z_0$ exactly when there is a number $\lambda>0$ such that
-$$
-\norm{Av}=\lambda\norm{v}\qquad(v\in\RR^2).
-\tag{1}
-$$
-By polarization, (1) is equivalent to
-$$
-\langle Av,Aw\rangle=\lambda^2\langle v,w\rangle
-$$
-for all $v,w$, or equivalently
-$$
-A^TA=\lambda^2I.
-\tag{2}
-$$
-Hence $A=\lambda Q$ with $Q\in O(2)$. Such a map preserves the absolute value of every angle, so isotropy implies isogonality.
+No retained solution set covers this problem, so the argument is the card's own; it is the linear-algebra reduction of the three notions to the real differential of $f$ at $z_0$. Write $A=Df(z_0)$, the real differential, which exists because $f$ is $\mathcal{C}^1$ near $z_0$.
 
-Conversely, suppose $f$ is isogonal. Then $A$ cannot kill a nonzero direction, since otherwise the image tangent direction of a curve with that tangent would be undefined. Choose orthonormal vectors $e_1,e_2$. Isogonality gives $Ae_1\perp Ae_2$. Applying it also to the pair $e_1+e_2,e_1-e_2$, which are perpendicular, yields
-$$
-0=\langle A(e_1+e_2),A(e_1-e_2)\rangle
-=\norm{Ae_1}^2-\norm{Ae_2}^2.
-$$
-Thus $\norm{Ae_1}=\norm{Ae_2}=\lambda>0$, and since their images are orthogonal, (2) follows. Therefore $f$ is isotropic.
+::: pf
 
-It remains to identify the two possibilities for $A$. Every $Q\in O(2)$ has determinant $1$ or $-1$. If $\det Q=1$, then $Q$ is rotation by some angle and, after identifying $\RR^2$ with $\CC$,
-$$
-Av=cv
-$$
-for some $c\in\CC\setminus\{0\}$. Hence the complex derivative $f'(z_0)$ exists and equals $c$.
+::: {.pf-step #isotropic}
+$f$ is isotropic at $z_0$ if and only if there is $\lambda>0$ with $\norm{Av}=\lambda\norm v$ for all $v\in\RR^2$.
 
-If $\det Q=-1$, then $Q$ is a rotation followed by reflection, so
-$$
-Av=c\overline v
-$$
-for some $c\ne0$. Equivalently,
-$$
-D\overline f(z_0)(v)=\overline c\,v,
-$$
-so $\overline f$ has a nonzero complex derivative at $z_0$.
+::: pf-proof
+For a unit vector $v$, differentiability gives $f(z_0+rv)-f(z_0)=rAv+o(r)$ as $r\to0$, so $\abs{f(z_0+rv)-f(z_0)}/r\to\norm{Av}$. Isotropy says this limit exists, is nonzero and is independent of the direction $v$; that is exactly the existence of $\lambda>0$ with $\norm{Av}=\lambda$ for every unit $v$, which by homogeneity of the norm is the stated condition for all $v$.
+:::
 
-Conversely, either of these two differential forms is a nonzero similarity and therefore preserves absolute angles and magnifies every direction by the same factor. Thus the three stated conditions are equivalent.
+:::
+
+::: {.pf-step #orthogonal}
+The condition $\norm{Av}=\lambda\norm v$ for all $v$, with $\lambda>0$, is equivalent to $A^{T}A=\lambda^2I$.
+
+::: pf-proof
+If $\norm{Av}=\lambda\norm v$ then the polarization identity gives $\langle Av,Aw\rangle=\lambda^2\langle v,w\rangle$ for all $v,w$, which is $\langle A^{T}Av,w\rangle=\lambda^2\langle v,w\rangle$, that is $A^{T}A=\lambda^2I$. Conversely $A^{T}A=\lambda^2I$ gives $\norm{Av}^2=\langle A^{T}Av,v\rangle=\lambda^2\norm v^2$.
+:::
+
+:::
+
+::: {.pf-step #similarity}
+$A^{T}A=\lambda^2I$ with $\lambda>0$ holds if and only if $A=\lambda Q$ for an orthogonal $Q$, and then $A$ multiplies all lengths by $\lambda$ and preserves the absolute value of every angle; so isotropy implies isogonality.
+
+::: pf-proof
+$A^{T}A=\lambda^2I$ means $(A/\lambda)^{T}(A/\lambda)=I$, that is $Q=A/\lambda$ is orthogonal. Such an $A$ satisfies $\norm{Av}=\lambda\norm v$ and $\langle Av,Aw\rangle=\lambda^2\langle v,w\rangle$, so the angle between any two nonzero vectors is preserved in absolute value, and the angle between the images of two curves with tangents $v,w$ is that same angle.
+:::
+
+:::
+
+::: {.pf-step #isogonal-implies}
+If $f$ is isogonal at $z_0$ then $A^{T}A=\lambda^2I$ for some $\lambda>0$.
+
+::: pf-proof
+First $A$ is injective: if $Av=0$ for $v\ne0$, a curve through $z_0$ with tangent $v$ would have image tangent $0$, so the image curve would have no direction and the angle condition could not hold. Take an orthonormal pair $e_1,e_2$; isogonality turns the angle $\pi/2$ into an angle of absolute value $\pi/2$, so $Ae_1\perp Ae_2$. The vectors $e_1+e_2$ and $e_1-e_2$ are also perpendicular, so
+$$
+0=\langle A(e_1+e_2),A(e_1-e_2)\rangle=\norm{Ae_1}^2-\norm{Ae_2}^2,
+$$
+using the orthogonality of $Ae_1$ and $Ae_2$. With $\lambda=\norm{Ae_1}=\norm{Ae_2}>0$, the images of an orthonormal basis being orthogonal of equal length $\lambda$, the operator $A$ satisfies $\norm{Av}=\lambda\norm v$ for all $v$, and step [](#orthogonal){.pf-ref} gives $A^{T}A=\lambda^2I$.
+:::
+
+:::
+
+::: {.pf-step #two-cases}
+$A=\lambda Q$ with $Q$ orthogonal if and only if either $A$ is multiplication by some $c\ne0$ or $A$ is $v\mapsto c\overline v$ for some $c\ne0$; these are respectively the cases $\det Q=1$ and $\det Q=-1$.
+
+::: pf-proof
+An orthogonal $Q$ has $\det Q=\pm1$. If $\det Q=1$, $Q$ is a rotation, and a rotation of the plane is multiplication by the complex number $e^{i\alpha}$, so $Av=cv$ with $c=\lambda e^{i\alpha}$. If $\det Q=-1$, then $Q$ is a rotation followed by the reflection $v\mapsto\overline v$, so $Av=c\overline v$ with $c=\lambda e^{i\alpha}$. Conversely multiplication by $c\ne0$ and $v\mapsto c\overline v$ are $\abs c$ times a rotation, respectively a rotation composed with a reflection, hence $\abs c$ times an orthogonal map.
+:::
+
+:::
+
+::: {.pf-step}
+$f$ is isogonal at $z_0$ if and only if it is isotropic there, and if and only if either $f'(z_0)$ exists and is nonzero or $(\overline f)'(z_0)$ exists and is nonzero.
+
+::: pf-proof
+Steps [](#isotropic){.pf-ref} and [](#orthogonal){.pf-ref} identify isotropy with $A^{T}A=\lambda^2I$; step [](#similarity){.pf-ref} gives isogonality from it, and step [](#isogonal-implies){.pf-ref} gives it back from isogonality, so the first two notions coincide. For a $\mathcal{C}^1$ function the complex derivative $f'(z_0)$ exists exactly when the real differential $A$ is complex-linear, that is exactly when $Av=cv$ for some complex $c$, which is nonzero precisely when $A$ is invertible; and the differential of $\overline f$ is $v\mapsto\overline{Av}$, which equals $\overline c\,v$ when $Av=c\overline v$. By step [](#two-cases){.pf-ref} a similarity is of one of these two forms, so the third condition is equivalent to the first two.
+:::
+
+:::
+
+:::
 :::
