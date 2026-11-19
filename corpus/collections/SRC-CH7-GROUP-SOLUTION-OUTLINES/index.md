@@ -36,7 +36,9 @@ source:
     - id: P-CH7-20
       comment: Exercise 20
     - id: P-CH7-21
-      comment: Exercise 21
+      comment: Exercise 19 (printed as exercise 21 when the card was created; the
+        relatively-prime-order exercise is 19 in Gallian 7e, exercise 21 being the S_4 subgroup
+        problem)
     - id: P-CH7-26
       comment: Exercise 26
     - id: P-CH7-27
