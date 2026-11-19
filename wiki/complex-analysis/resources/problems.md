@@ -35,6 +35,4 @@ order: 10
 
 - [Utah Math 6220 assignments](http://www.math.utah.edu/~astephan/134.pdf)
 
-- [Minnesota complex analysis exam, Fall 2015](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf)
-
 - [TCU sample complex-analysis prelim questions](https://faculty.tcu.edu/richardson/Prelim/PrelimSampleQsCpx_2.pdf)
