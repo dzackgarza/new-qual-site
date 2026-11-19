@@ -15,6 +15,6 @@ order: 12
 
 - [[complex-arithmetic|Complex arithmetic]] — problems on complex arithmetic and holomorphy, and algebraic identities.
 
-- [[analytic-nt|Summation by parts and Abel's theorem]] — Dirichlet's test, Abel's theorem, and summation by parts.
+- [[analytic-nt|Summation by parts]] — summation by parts, Dirichlet's test, and Abel's test for power series.
 
 Holomorphic functions are treated in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
