@@ -10,6 +10,16 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, whose contents page gives the exam as item
+    392 of the printed sequence: the statement is Problem 1 of the Summer 2001 exam on printed
+    p. 392, and the printed words are the card's. The exam, the problem number and the page are
+    now named in the solution's opening sentence. Not checked in this pass: the computation,
+    which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -18,6 +28,7 @@ Prove by a topological argument that $p$ must have a root in the complex plane.
 :::
 
 ::: {.solution}
+This is Problem 1 of the Summer 2001 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 392, and the statement below is its wording.
 
 ::: pf
 
