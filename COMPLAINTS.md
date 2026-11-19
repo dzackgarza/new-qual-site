@@ -5886,3 +5886,23 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **What is still unchecked.** The 112 claiming cards that pass all three screens are cleared by absence of evidence in the retained inventory, not by reading each exercise in each retained set. `qualc check` does not test this claim and no gate does.
 
 **Uncertainty.** The three screens are phrase matches and path matches; a card whose claim is worded differently from "no retained (solution) set" would not be in the population of 122 at all, and that population was not estimated independently.
+
+## 2026-11-19: §4.1's low-degree half — five exercises read at printed pp. 358–359, and the page that §4.1 Exercises 12–22 are on is 359, not 358
+
+**Object.** The last report left §4.1 with eight cards without a read since 2026-11-13. Five are read here against the book and, where they exist, against published solutions at their printed pages: Exercises 2, 12, 13, 16 and 19.
+
+| Card | Printed page | Source, at its printed page | Verdict |
+| --- | --- | --- | --- |
+| `E-HAT-4.1-2` | Ex. 2, p. 358 | DeMason, 4.1.2, p. 89 | correct; the naturality lemma now written out |
+| `E-HAT-4.1-12` | Ex. 12, **p. 359** | Proudfoot, HW6 Problem 12, p. 1; Hatcher Prop. 4.15, p. 353 | **repaired and transcribed**: citation corrected, dimension hypothesis restored |
+| `E-HAT-4.1-13` | Ex. 13, **p. 359** | Hatcher, Lemma 4.7, p. 348 | correct; both pages named |
+| `E-HAT-4.1-16` | Ex. 16, **p. 359** | Hatcher, the construction before Prop. 4.13, p. 353 | correct; both pages named |
+| `E-HAT-4.1-19` | Ex. 19, **p. 359** | — (the card's own proof) | correct; page named, the printed "iff" confirmed |
+
+**The page defect, and why it is one.** §4.1's Exercises 1–11 are printed on p. 358 and Exercises 12–22 on p. 359 — checked at PDF pages 367 and 368 of `tmp/sources/hatcher-2002-algebraic-topology.pdf`, whose folios are 358 and 359. None of the eight cards for Exercises 12 and up cited a printed page at all: their source notes cite `AT.txt` line numbers, which are a property of the checked-in extraction and not of the book. The five cards read here now carry their printed pages, together with the page of each book result they use.
+
+**The transcription, and the two corrections it needed.** `E-HAT-4.1-12` now carries Proudfoot's proof beside the card's own Hurewicz argument, with two points repaired. (1) His "Corollary 4.16" is the statement printed as **Proposition 4.15 on p. 353**: for an $n$-connected CW pair $(X,A)$ there is $(Z,A)\simeq(X,A)$ rel $A$ with all cells of $Z-A$ of dimension greater than $n$; with $A$ a $0$-cell this is his $Z$, and the errata's renumbering table moves the earlier 4.16 to 4.15. (2) His sentence "the image of $f$ lies in the $n$-skeleton of $Z$, which is a single point" requires $X$ to be $n$-dimensional — the exercise's hypothesis, absent from his restatement: a cellular map sends $X_n$ to $Z_n$, and $X=X_n$ only then. With both supplied the argument is complete, and the card says which part is whose.
+
+**What else was checked.** `4.1-2`: DeMason's lemma, that a homotopy $h_t$ with track $\gamma(t)=h_{1-t}(x_0)$ satisfies $h_{0*}=\beta_\gamma h_{1*}$, written out on the card through the reparametrized path $\gamma_t$; the two applications give $\beta_\eta(\psi\varphi)_*=\mathrm{id}$ and $\varphi_*\psi_*=\beta_{\eta'}$, whence $\varphi_*$ is injective and surjective. `4.1-13`: contractibility gives every $\pi_k(A)=0$ and path-connectedness; Lemma 4.7 with target $A$ extends $\mathrm{id}_A$ over the $0$-cells and then inductively, and the extension is a retraction. `4.1-16`: the two-step construction of p. 353 — wedge $k$-spheres for surjectivity, attach $(k+1)$-cells along kernel representatives — leaves $\pi_i$ for $i\le n$ alone, and the passage to the union uses compactness and Proposition A.1. `4.1-19`: the forward direction from a common CW approximation, and the backward direction through CW approximations of the zigzag's vertices, consecutive ones homotopy equivalent by Whitehead (Theorem 4.5).
+
+**Not done.** `E-HAT-4.1-18`, `-21` and `-22` still carry no printed page; §3.3's thirteen cards without a read since 2026-11-13 are untouched this turn. The source obligations named in the last two records are unchanged.
