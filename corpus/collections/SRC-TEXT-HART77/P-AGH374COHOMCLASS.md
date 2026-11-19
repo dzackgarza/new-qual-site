@@ -845,6 +845,25 @@ audit:
     II.5.16(c) for the exterior-power filtration (d) and Egbert's stops before the
     region $i>r$. The transcription is recorded in COMPLAINTS.md. Not checked:
     nothing of the card's own text was changed in this pass.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s6 carries a second check of its transition convention, in codimension
+    two, which the dimension-one computation against Theorem III.7.14.1(c) did
+    not reach: for the lines $x_0=0$ and $x_1=0$ of $\PP^2$ the local equations
+    give the same cocycle on the cover $x_i\ne0$, the cup product of the two
+    classes is the $2$-cocycle $d\log(x_0/x_1)\wedge d\log(x_1/x_2)$ on the triple
+    intersection, equal there to $d\log(x_1/x_0)\wedge d\log(x_2/x_0)$; in the
+    three affine charts its residues are $+1$ at $[1:0:0]$, $-1$ at $[0:1:0]$ and
+    $+1$ at $[0:0:1]$ and vanish elsewhere, so the trace is $1$, which is the
+    intersection number $L_1\cdot L_2$ of I.7.7, printed p. 53. The opposite
+    convention would give $-1$, so the sign of s6 is the one the intersection
+    numbers require. Checked in this pass: the three chart computations, by hand
+    and against the definitions of §7 and (0.4) of Lipman; no other step was
+    re-derived, and the comparison of step s8 in the case where the products of
+    first Chern classes do not span is untouched and remains open.
 ---
 
 ::: {.problem}
@@ -1180,6 +1199,18 @@ $$
 This is the displayed cocycle. On a curve with $Y=\{P\}$, on the cover $U_1=X\setminus P$, where $f_1=1$, and $U_2$ a neighbourhood of $P$ on which $f_2=f$ is a local parameter, it reads $c_{12}=df/f$, whose residue at $P$ is $1$ by Theorem III.7.14.1(c) (printed p. 247). The opposite convention $e_j=g_{ij}e_i$ gives
 $g_{ij}=f_i/f_j$ and the cocycle with both signs reversed, $-df/f$, which is the class of
 the inverse line bundle $\OO(-P)$; the sign matters, and step [](#s2){.pf-ref} fixes it.
+
+**A second check of the sign, in codimension two.** For the lines $L_1=\{x_0=0\}$ and $L_2=\{x_1=0\}$ of $\PP^2$, on the affine opens $U_i=\{x_i\ne0\}$, the local equations $f^1=(1,x_0/x_1,x_0/x_2)$ and $f^2=(x_1/x_0,1,x_1/x_2)$ give, by the formula above, the same cocycle
+$$
+\Bigl(d\log\frac{x_0}{x_1},\ d\log\frac{x_0}{x_2},\ d\log\frac{x_1}{x_2}\Bigr)
+$$
+on the pairs $01,02,12$. The cup product of the two classes is the $2$-cocycle $a_{01}\wedge b_{12}$ with values in $\Omega^2$, and on $U_{012}$
+$$
+a_{01}\wedge b_{12}
+=d\log\frac{x_0}{x_1}\wedge d\log\frac{x_1}{x_2}
+=d\log\frac{x_1}{x_0}\wedge d\log\frac{x_2}{x_0},
+$$
+because $d\log(x_0/x_1)=-d\log(x_1/x_0)$ and $d\log(x_1/x_2)=d\log(x_2/x_0)-d\log(x_1/x_0)$. Its residues at the closed points are $+1$ at $[1:0:0]$, $-1$ at $[0:1:0]$ and $+1$ at $[0:0:1]$, computed in the affine coordinates $x_j/x_i,\ x_k/x_i$ at each, and $0$ everywhere else, where the form is holomorphic; so its trace is $1$, which is $L_1\cdot L_2$ by Bézout's theorem (I.7.7, printed p. 53). With the opposite transition convention both cocycles would change sign and the trace would be $-1$.
 
 :::
 
