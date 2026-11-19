@@ -7168,3 +7168,18 @@ literature recorded against them rather than only a search of the checkout. Clos
 project does not yet hold — a course solution set that reaches §2.B and §4.A, or a paper proving the statement —
 and the card's own proof, which for `E-HAT-4.A-4` was read correct in the #163 pass, is not a substitute for that
 source under the rule this obligation states.
+
+## 2026-11-19: §4.2 closed — the last four cards read at printed pp. 389–392, no defect found
+
+**Object.** The last report left `E-HAT-4.2-5`, `-19`, `-25`, `-36`. All four are read here against the book, and with them **every card in §4.2 now has a read on or after 2026-11-13** — 39 of 39.
+
+| Card | Printed page | Mathematics checked |
+| --- | --- | --- |
+| `E-HAT-4.2-5` | Ex. 5, p. 389 | correct: the matrix $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ on $\pi_2=\ZZ\alpha\oplus\ZZ\beta$; $f$ a homotopy equivalence, so the universal cover — the double mapping telescope — retracts onto $F$, giving $\pi_2(X)=\ZZ^2$, $\pi_1(X)=\ZZ$; $A=S^1\times S^2_\alpha$ has $\pi_2=\pi_1=\ZZ$; the pair sequence is $0\to\ZZ\xrightarrow{\alpha}\ZZ^2\to\ZZ\to0$ because the boundary dies ($\pi_1(A)\to\pi_1(X)$ an isomorphism); and the actions: trivial on $\pi_2(A)$, nontrivial on $\pi_2(X)$ ($\beta\mapsto\beta+\alpha$), trivial on $\pi_2(X,A)=\ZZ\beta$ since the monodromy fixes $\beta$ modulo $\ZZ\alpha$ |
+| `E-HAT-4.2-19` | Ex. 19, p. 390 | correct: the cover of a $K(G,1)$ is contractible with $p^{-1}(X^n)$ its $n$-skeleton; no relative cells in dimensions $\le n$ gives $\pi_i(\tilde X,\tilde X^n)=0$ there, hence $\pi_i(\tilde X^n)=0$ for $i<n$; Hurewicz identifies $\pi_n(\tilde X^n)$ with $\ker d_n$, a subgroup of a free abelian group; and covering maps are isomorphisms on $\pi_n$ for $n\ge2$ |
+| `E-HAT-4.2-25` | Ex. 25, p. 391 | correct: build a $K(G,1)$ by attaching $(n+1)$-cells along $\pi_n(X)$ and then cells of dimension $\ge n+2$; the relative complex has nothing below $n+1$, so $H_{n+1}(K,X)\to H_n(X)\to H_n(K)\to0$; the connecting map sends a relative cell to the homology class of its attaching map, which is the Hurewicz image |
+| `E-HAT-4.2-36` | Ex. 36, p. 392 | correct: $S^1\times S^n$ is $S^1\vee S^n$ with one $(n+1)$-cell attached by $[\iota_1,\iota_n]$; the universal cover of the wedge is the bi-infinite string of $n$-spheres, the lifted cell joins consecutive ones, and its boundary represents $\iota_n-\iota_1\cdot\iota_n$ up to sign; applying $f\vee g$ gives $[f,g]=\pm(g-fg)$ |
+
+**What this adds.** None of the four carried a printed page; each now cites its exercise's page, and §4.2's exercise pages are recorded once more: 1–12 on p. 389, 13–23 on p. 390, 24–29 on p. 391, 30–39 on p. 392, at PDF pages 398–401 of the held book.
+
+**Not done.** The sections the last reports named are still open outside these — Chapter 1 (1.1–1.B, about 95 cards), §2.1 (29), §2.2 (32), §2.3 (3), §3.1 (13), §3.C (9), §3.E (1), §3.H (2), §4.A (2), and the smaller appendices, none of them read under the current standard. The #170 source obligations are unchanged.
