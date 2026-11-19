@@ -13,6 +13,18 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1
+    of the single-page paper retained at assets/attachments/SP13_200_Algebra_Qual.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; both parts, including the ideal $I_x=\{\alpha:\alpha x\in A\}$ of the printed
+    hint; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution set exists for this paper to compare the argument with, and no other
+    card of the collection in this pass.
+- event: source-checked
   by: OpenAI
   date: 2026-09-08
 - event: solution-written
@@ -38,6 +50,8 @@ $$
 :::
 
 ::: {.solution}
+
+The problem is Problem 4 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: the powers $f_i^{n_i}$ still generate the unit ideal, and the ideal $I_x$ of elements $\alpha$ with $\alpha x\in A$ is all of $A$ because each $f_i^{n_i}$ lies in it, so $x\in A$
 
 ::: pf
 
