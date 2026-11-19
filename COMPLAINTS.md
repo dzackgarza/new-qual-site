@@ -9125,3 +9125,22 @@ and not read on its own page.
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-85-5` 1–2 and `E-HK-85-11` 1–3 with QED labels; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; `E-HK-85-11`'s two ingredients — the normality of powers and the kernel identity — were checked here, but the book's own proof of them was not consulted.
+
+## 2026-11-19: the provenance figure is corrected — the screen read only the solution fence, and 56.9% of structured cards lack a sentence, not 84.7%
+
+**Object and need.** The record of 2026-11-19 headed "the provenance screen misses possessives and the word 'outline'" reports 84.7% of structured cards carrying no provenance sentence, and a refined screen at 85.3%. Both screens read the `.solution` block alone. In this corpus a card may state its provenance in a `::: {.remark title="Published solution"}` block after the solution, and most of the Hartshorne cards do: `P-AGH2110DIRLIM`, for one, names Kim's Exercise 1.10 at PDF p. 4 and says "The proof above is the same" in exactly such a remark. A screen that reads only the solution counts every one of those as absent.
+
+**The corrected measurement.** `tools/provenance_screen.py` applies the same phrase test to the solution *and* every remark, from the solution fence to the end of the file, over every card whose frontmatter says `kind: problem` and that has a solution:
+
+| population | cards | without a provenance phrase |
+| --- | ---: | ---: |
+| problem cards with a solution | 12427 | 7292 (58.7%) |
+| of those, structured (with `pf-step`) | 10961 | 6234 (56.9%) |
+
+So the register's 84.7% of structured cards overstates the gap by about 28 points; the corrected figure on the same population is 56.9%, and the population has grown from 10927 to 10961. The largest blocks are `collections/` (6406 of 11357) and `problems/` (886 of 1070).
+
+**What the corrected screen still cannot do, and one sample read to confirm it is not vacuous.** It is a phrase match: it cannot tell a true sentence from a false one, and it misses phrasings outside its list, so 6234 is an upper bound on absence. Opened to confirm the screen is measuring something real: `P-AGFS15-05` (§ `SRC-AG-EXAM-PROBLEMS-2015`) begins its solution with "Let $g(x)=(x-e_1)(x-e_2)(x-e_3)$" and names no source anywhere in the solution or in a remark — genuinely absent, as the 2026-11-19 record also found when it opened the same card.
+
+**A correction to this session's own work.** Between 2026-11-19 and this record I added a provenance sentence to 28 `SRC-TEXT-HART77` cards on the strength of the old screen, then found that every one of them already carried a `Published solution` remark naming the set and page, and withdrew all 28 in `355b94b963`, verifying each against the commit that had inserted it. No card text from that batch survives; the episode is why the screen now reads the remarks.
+
+**Repair.** `tools/provenance_screen.py` in `6c58eba06a`, this record in the COMPLAINTS commit that carries it; no card is edited. **Uncertainty.** No whole-corpus `qualc check` was run for this record, and the 24-of-24 false-positive rate that the 2026-11-19 record measured on one lane's hundred cards was not re-measured here; the phrase list is that record's plus the retained-set author names and the `[@` citation marker.
