@@ -18,5 +18,5 @@ review: draft
 
 ::: {.theorem ref="Morera"}
 Let $\Omega\subseteq\CC$ be open and let $f\colon\Omega\to\CC$ be continuous.
-If $\int_{\partial T}f(z)\dz=0$ for every closed triangle $T\subseteq\Omega$, then $f$ is [[D-E7A5W|holomorphic]] on $\Omega$ [@SS03, Theorem 5.1 (p. 53), stated there for a disc].
+If $\int_{\bd T}f(z)\dz=0$ for every closed triangle $T\subseteq\Omega$, then $f$ is [[D-E7A5W|holomorphic]] on $\Omega$ [@SS03, Theorem 5.1 (p. 53), stated there for a disc].
 :::

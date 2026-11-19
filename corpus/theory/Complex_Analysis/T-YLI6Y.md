@@ -18,7 +18,7 @@ Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomo
 
 (i) If $\abs{f}$ has a local minimum at some $z_0\in\Omega$, then $f$ is constant on $\Omega$.
 
-(ii) If moreover $\Omega$ is bounded, $f$ extends continuously to $\overline{\Omega}$, and $f$ is nonconstant, then $\min_{\overline{\Omega}}\abs{f}$ is attained only at points of $\partial\Omega$.
+(ii) If moreover $\Omega$ is bounded, $f$ extends continuously to $\overline{\Omega}$, and $f$ is nonconstant, then $\min_{\overline{\Omega}}\abs{f}$ is attained only at points of $\bd\Omega$.
 :::
 
 ::: {.example}

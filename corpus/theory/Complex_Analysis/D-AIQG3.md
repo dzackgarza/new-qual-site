@@ -20,5 +20,5 @@ The sequence $(f_n)$ \dfn{converges locally uniformly} to $f$ on $\Omega$ if $f_
 
 ::: {.proposition}
 Let $\Omega\subseteq\CC$ be open and let $f_k,f\colon\Omega\to\CC$, with the convention $\operatorname{dist}(A,\varnothing)=+\infty$ when $\Omega=\CC$.
-Then $f_k\to f$ locally uniformly on $\Omega$ if and only if $f_k\to f$ uniformly on every bounded set $A\subseteq\Omega$ with $\operatorname{dist}(A,\partial\Omega)>0$.
+Then $f_k\to f$ locally uniformly on $\Omega$ if and only if $f_k\to f$ uniformly on every bounded set $A\subseteq\Omega$ with $\operatorname{dist}(A,\bd\Omega)>0$.
 :::

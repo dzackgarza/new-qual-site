@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $U\subseteq\CC$ be a bounded open set whose boundary $\partial U$ consists of finitely many piecewise smooth closed curves, oriented positively with respect to $U$, and let $f$ be [[D-E7A5W|holomorphic]] on an open set containing $\overline{U}$.
+Let $U\subseteq\CC$ be a bounded open set whose boundary $\bd U$ consists of finitely many piecewise smooth closed curves, oriented positively with respect to $U$, and let $f$ be [[D-E7A5W|holomorphic]] on an open set containing $\overline{U}$.
 Then for every $p\in U$,
 $$
-f(p)=\frac{1}{2\pi i}\int_{\partial U}\frac{f(z)}{z-p}\dz.
+f(p)=\frac{1}{2\pi i}\int_{\bd U}\frac{f(z)}{z-p}\dz.
 $$
 :::
