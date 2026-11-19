@@ -27,6 +27,18 @@ audit:
     for each of the points in A, which form a separation of A", which is not valid as stated -- every
     Hausdorff space would be disconnected by that reasoning; the card uses connectedness of the
     plane, which is Moller's argument.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution opened by claiming that no retained solution set covers the exercise, contradicting the
+    audit note above it, which transcribes Moller's file S35.pdf Exercise 35.4 from the copy kept at
+    tmp/sources/munkres-solutions-poulsen-S35.md. That copy was read again: it answers all three parts,
+    citing Exercise 31.5, Theorem 23.5 and the retraction $x/\abs x$, and leaves the book's closing
+    question unanswered, which is the one step the card supplies itself. The opening sentence now names
+    the set, its three citations and the card's own addition. Not checked here: the printed page of the
+    exercise, which is the earlier session's citation, not re-read in this session.
+
 ---
 
 ::: {.exercise}
@@ -45,7 +57,7 @@ Can you conjecture whether or not $S^1$ is a retract of $\RR^2$?
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own argument follows, with the three parts and the closing conjecture as separate steps.
+Parts (a), (b) and (c) are the retained published solution of Jesper Michael Møller, *Solutions to exercises in Munkres*, file `S35.pdf`, Exercise 35.4 (`tmp/sources/munkres-solutions-poulsen-S35.md`): $Y=\{z\in Z\mid r(z)=z\}$ is closed in a Hausdorff $Z$ by Exercise 31.5, a retract of $\RR^{2}$ is connected by Theorem 23.5 while a two-point set is not, and $r(x)=x/\abs x$ retracts the punctured plane onto $S^{1}$. The card states (a) as the equalizer of $r$ and the identity and answers the closing conjecture, which the sheet leaves as the book's question, in its own step. Checked against Munkres, *Topology* (2000), Section 35 Exercise 4, printed p. 223, Exercise 31.5 and Theorem 23.5; "Doug's World"'s (b) is not used, because its separation argument would disconnect every Hausdorff space.
 
 Recall that $Y\subseteq Z$ is a retract of $Z$ when there is a continuous $r:Z\to Y$ with $r(y)=y$ for $y\in Y$.
 
