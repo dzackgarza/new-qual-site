@@ -71,6 +71,10 @@ Chapter: [[algebra/group-actions/index|Group actions]].
 
 [[PR-UTFSY]]
 
+[[T-LSNTH]]
+
+[[T-PRMDC]]
+
 Chapter: [[algebra/rings-and-ideals/index|Rings and ideals]].
 
 ## Modules
@@ -84,6 +88,10 @@ Chapter: [[algebra/rings-and-ideals/index|Rings and ideals]].
 [[PR-ASW5L]]
 
 [[PR-RPL4Q]]
+
+[[T-TENSR]]
+
+[[T-TORCY]]
 
 Chapter: [[algebra/modules/index|Modules]].
 
@@ -100,6 +108,10 @@ Chapter: [[algebra/modules/index|Modules]].
 [[FT-BC6S2]]
 
 [[T-WQHMA]]
+
+[[T-SPRTR]]
+
+[[T-SMTHN]]
 
 [[PR-GV5CF]]
 
