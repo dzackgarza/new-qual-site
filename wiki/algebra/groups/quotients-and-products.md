@@ -36,7 +36,7 @@ The recognition theorem turns that hypothesis into the isomorphism, so classifyi
 ## Semidirect products
 
 With one normal factor only, the same construction produces a semidirect product whose multiplication is twisted by the conjugation map $H\to\Aut(N)$, and two twisting maps give isomorphic groups when they differ by an automorphism of $H$.
-A normal Sylow subgroup $N$ with a complement $H$ is the case this arises in for a group of order $\size{N}\size{H}$.
+A normal Sylow subgroup $N$ of $G$ with a complement $H$ is the case this arises in: $N\intersect H=1$ and $NH=G$, so the recognition theorem applies to the pair.
 
 [[T-SB6AV]]
 
@@ -53,7 +53,7 @@ An automorphism of a cyclic group is multiplication by a unit of $\ZZ/n$, so the
 ## Finitely generated abelian groups
 
 A finitely generated abelian group is a free abelian group times finitely many finite cyclic groups, the finite part is canonically the direct sum of its $p$-primary parts, and the two standard decompositions differ only in the grouping of those cyclic factors.
-The invariant factors are ordered by divisibility and the elementary divisors are the prime powers; the number of groups of a given order is a product of partition numbers.
+The invariant factors are ordered by divisibility and the elementary divisors are the prime powers; the number of abelian groups of order $\prod_i p_i^{e_i}$ is the product of the partition numbers $P(e_i)$.
 
 [[D-SS34F]]
 
