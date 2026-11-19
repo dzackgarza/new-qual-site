@@ -755,6 +755,28 @@ audit:
     transcription and what those sets contain are recorded in COMPLAINTS.md.
     Not proved: the two statements without the one-dimensionality hypothesis,
     for which no detecting class is available in general.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s8 is stated in its sharp form. The one-dimensionality was used only to
+    pass from an equality of pairings to an equality of classes, and the equality
+    of pairings needs no hypothesis: for a smooth complete intersection $L$ of
+    dimension $p$ meeting $Y$ transversely in $N$ points,
+    $\langle\eta(Y),\eta_X(L)\rangle=t_Y(\eta_X(L)|_Y)
+    =t_Y(c_1(\restrictionof{\mathcal L}{Y})^{\smile\dim Y})=N$ by step s2
+    iterated, and $\langle\gamma^{0,0}_{Y/X}(1),\eta_X(L)\rangle
+    =t_L(\gamma^{0,0}_{Z/L}(1))=N$ by Lemma 50.23.10 iterated, the locality of
+    $\gamma$ and (C). The difference is therefore annihilated by the span of the
+    complete-intersection classes, and the comparison and the base change follow
+    as soon as that span is the whole of $H^{n-p}(X,\Omega^{n-p})$; the case
+    $p=n$ is settled directly by (C) with step s1. Read in this pass: the pages
+    the proof cites, II.8.18 printed p. 179, III.7.3 printed p. 249, III.7.6
+    printed p. 243, and Stacks' Lemma 50.23.3 and Lemma 50.23.10 at printed
+    pp. 4269 and 4272--4273, all read on the printed pages earlier on this day.
+    Not proved: the comparison when the complete-intersection classes span a
+    proper subspace, and the base change in that case.
 ---
 
 ::: {.problem}
@@ -1126,34 +1148,31 @@ So $t_X(c(\OO(P)))=+1=t_P(1)$, which is the case $n=1$ of the formula of step []
 
 ::: {.pf-step #s8}
 
-Let $X$ be a nonsingular projective variety of dimension $n$ over $k$, let $Y\subseteq X$ be nonsingular of codimension $p$, and assume
+Let $X$ be a nonsingular projective variety of dimension $n$ over $k$ and let $Y\subseteq X$ be nonsingular of codimension $p$. For every smooth complete intersection $L\subseteq X$ of dimension $p$ that meets $Y$ transversely, in $N$ points,
 $$
-\dim_k H^{n-p}(X,\Omega_X^{n-p})=1 .
+\boxed{\bigl\langle\eta(Y)-\gamma^{0,0}_{Y/X}(1),\,\eta_X(L)\bigr\rangle_X=0} .
 $$
-Then
+Consequently, if the classes $\eta_X(L)$ of such complete intersections span the space $H^{n-p}(X,\Omega_X^{n-p})$, then
 $$
-\boxed{\eta(Y)=\gamma^{0,0}_{Y/X}(1)}
+\eta(Y)=\gamma^{0,0}_{Y/X}(1)
+\qquad\text{in } H^p(X,\Omega_X^p),
 $$
-in $H^p(X,\Omega_X^p)$. If in addition $H\subseteq X$ is a nonsingular divisor meeting $Y$ transversely and $\dim_k H^{n-1-p}(H,\Omega_H^{n-1-p})=1$, then
-$$
-\boxed{i^*j_*=(j_H)_*\,i_Y^*} .
-$$
-For $X=\PP^n$ the hypothesis is Exercise III.7.3 (printed p. 249), so this contains the case of a subvariety of projective space in every codimension. For $p=n$, where $Y$ is a closed point, the two classes are equal because $H^n(X,\Omega_X^n)$ is one-dimensional and both have trace $1$, by (C) and step [](#s1){.pf-ref}; the proof below treats $p<n$.
+and if $H\subseteq X$ is a nonsingular divisor with $Y\pitchfork H$ for which the same spanning holds in $H$ for the codimension $p$ of $Z=Y\cap H$, then $i^*j_*=(j_H)_*\,i_Y^*$. For $X=\PP^n$ the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional (Exercise III.7.3, printed p. 249) and spanned by such a class, so the corollary covers subvarieties of projective space in every codimension; for $p=n$, where $Y$ is a point, the equality itself holds by (C) with step [](#s1){.pf-ref}.
 
 ::: pf-proof
 
-**A class that detects.** Fix an ample invertible sheaf $\mathcal L$ and let $D_1,\ldots,D_{n-p}\in|\mathcal L|$ be general, so that $L=D_1\cap\cdots\cap D_{n-p}$ is nonsingular of dimension $p$ and meets $Y$ transversely in $N$ reduced points $Z=Y\cap L$; this is Bertini's theorem (II.8.18, printed p. 179) applied successively. Let $i:L\hookrightarrow X$ and let $\alpha_0=\eta_X(L)=i_*(1)$ be the class of the complete intersection, which by step [](#s3){.pf-ref} is
+**The vanishing.** Let $\mathcal L$ be ample and let $D_1,\ldots,D_{n-p}\in|\mathcal L|$ be general, so that $L=D_1\cap\cdots\cap D_{n-p}$ is nonsingular of dimension $p$ and meets $Y$ transversely in $N$ reduced points $Z=Y\cap L$; this is Bertini's theorem (II.8.18, printed p. 179) applied successively. By step [](#s3){.pf-ref} the class of the complete intersection is
 $$
-\alpha_0=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_{n-p}))\in H^{n-p}(X,\Omega_X^{n-p}).
+\alpha_0:=\eta_X(L)=i_*(1)=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_{n-p}))\in H^{n-p}(X,\Omega_X^{n-p}),
 $$
-The hypothesis makes that space one-dimensional and the pairing perfect (III.7.6, printed p. 243), so a class pairs to zero with everything as soon as it pairs to zero with one nonzero class of it; it is enough to show that $\alpha_0\ne0$ and that the two classes pair equally with it.
+where $i:L\hookrightarrow X$. The two pairings with $\alpha_0$ are computed as in the proof of step [](#s4){.pf-ref}.
 
 **The trace side.** Since $\eta(Y)$ is the class of the functional $b\mapsto t_Y(\restrictionof{b}{Y})$,
 $$
 \langle\eta(Y),\alpha_0\rangle_X=t_X\bigl(\eta(Y)\smile\alpha_0\bigr)=t_Y\bigl(\restrictionof{\alpha_0}{Y}\bigr)
 =t_Y\bigl(c_1(\restrictionof{\mathcal L}{Y})^{\smile\dim Y}\bigr)=N,
 $$
-the third equality because $\restrictionof{c(\mcl(D_j))}{Y}=c(\restrictionof{\mathcal L}{Y})$ for every $j$, and the last one iterating step [](#s2){.pf-ref} along the divisors $Y\cap D_1$, $Y\cap D_1\cap D_2,\ldots$ of the successive intersections and then applying (N) at the $N$ points, as in step [](#s4){.pf-ref}. Hence $\alpha_0\ne0$ and $\langle\eta(Y),\alpha_0\rangle_X=N$.
+the third equality because $\restrictionof{c(\mcl(D_j))}{Y}=c(\restrictionof{\mathcal L}{Y})$ for every $j$, and the last one iterating step [](#s2){.pf-ref} along the divisors $Y\cap D_1$, $Y\cap D_1\cap D_2,\ldots$ of the successive intersections and then applying (N) at the $N$ points.
 
 **The Koszul side.** By the adjunction identity that defines $i_*$,
 $$
@@ -1167,15 +1186,19 @@ $$
 $$
 The construction of $\gamma$ is local on its source (Lemma 50.23.3, printed p. 4269), so on the finite reduced scheme $Z$ it is the sum over its points, and the normalization (C) gives trace $1$ at each of them:
 $$
-t_L\bigl(\gamma^{0,0}_{Z/L}(1)\bigr)=\sum_{Q\in Z}t_L\bigl(\gamma^{0,0}_{Q/L}(1)\bigr)=N .
+\bigl\langle\gamma^{0,0}_{Y/X}(1),\alpha_0\bigr\rangle_X
+=t_L\bigl(\gamma^{0,0}_{Z/L}(1)\bigr)
+=\sum_{Q\in Z}t_L\bigl(\gamma^{0,0}_{Q/L}(1)\bigr)=N .
 $$
-The two classes pair equally with $\alpha_0\ne0$ in a one-dimensional space, so they are equal.
+The two pairings agree, which is the displayed vanishing for the class of this particular complete intersection; a general one is of this form for its own ample class and general members, and the pairing is linear in $\alpha_0$.
 
-**Base change.** Under the further hypothesis the same argument applies to $Z$ in $H$, whose codimension is again $p$, and gives $\eta_H(Z)=\gamma^{0,0}_{Z/H}(1)$; with Lemma 50.23.10 for the square over $H$,
+**The consequences.** If the classes $\eta_X(L)$ span $H^{n-p}(X,\Omega^{n-p})$, then $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ pairs to zero with every class of that space; by (III.7.6, printed p. 243) it is zero. Under the same spanning condition in $H$, the equality proved in $H$ gives $\eta_H(Z)=\gamma^{0,0}_{Z/H}(1)$, and Lemma 50.23.10 for the square over $H$ gives
 $$
 i^*j_*(1)=i^*\eta(Y)=i^*\gamma^{0,0}_{Y/X}(1)=\gamma^{0,0}_{Z/H}(1)=\eta_H(Z)=(j_H)_*i_Y^*(1).
 $$
 For a class $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega^{n-1-q-p})$, the left side pairs as $t_X(j_*a\smile i_*w)=t_Y(a\smile j^*i_*w)$ and the right side as $t_Z(i_Y^*a\smile j_H^*w)=t_Y(c_1(\OO_Y(H))\smile a\smile j^*w)$, the second equality by step [](#s2){.pf-ref} applied to the divisor $Z$ of $Y$. So the case $a=1$ says, by perfectness of the pairing on $Y$, that $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$ for every $w$, and that identity gives the general $a$, hence the displayed base change.
+
+For $p=n$ the class $\eta(Y)-\gamma^{0,0}_{Y/X}(1)$ lies in the one-dimensional space $H^n(X,\Omega_X^n)$ and has trace $t_X(\eta(Y))-t_X(\gamma^{0,0}_{Y/X}(1))=1-1=0$ by step [](#s1){.pf-ref} and by (C), so it is zero.
 
 :::
 
@@ -1183,7 +1206,7 @@ For a class $a\in H^q(Y,\Omega_Y^q)$ and $w\in H^{n-1-q-p}(H,\Omega^{n-1-q-p})$,
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Step [](#s8){.pf-ref} adds two statements that no part of the exercise needs: on a subvariety of $\PP^n$ the class $\eta(Y)$ is the Gysin class of the Koszul construction, in every codimension, and the transverse base change $i^*j_*=(j_H)_*i_Y^*$ follows from it. Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
+Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Step [](#s8){.pf-ref} adds two statements that no part of the exercise needs: $\eta(Y)$ and the Gysin class of the Koszul construction pair equally with the class of every smooth complete intersection of complementary dimension, hence are equal whenever those classes span, as they do for a subvariety of $\PP^n$ in every codimension, and the transverse base change $i^*j_*=(j_H)_*i_Y^*$ follows. Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
 
 :::
 
