@@ -363,8 +363,33 @@ audit:
     nonzero. Hence the section is unique up to scale and 3Sigma is the only
     effective divisor in the class. The adjunction and IV.2.5 / Riemann-Hurwitz
     argument stays as an independent proof that no nonsingular curve has the
-    class. The remark now states the uniqueness. Not checked: nothing is claimed
-    about other classes, and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Reading step s9 for its mathematics found a notation collision, and the
+    step is repaired. The solution's preamble fixes L(A) = O_C(A) for a divisor
+    A, under which the bare symbol L is O_C, of degree 0. Step s7 then writes
+    "L = O_C(P)", of degree 1, for the bundle of Xie's quotation, and the bound
+    of step s9, "deg L = 1 makes each of the last three negative", holds only of
+    that second reading: read with the preamble's convention the four summands
+    are all h^0(O_C) = 1 and the count is 4, which does not give the uniqueness
+    the step concludes, while the second reading gives 1 + 0 + 0 + 0. The step
+    now names the line bundles O_C(-P), O_C(-2P) and O_C(-3P) and the sheaf of
+    the class, O_X(3) ot f^*O_C(-3P), so that the filtration's quotients
+    O_C(3P), O_C(2P), O_C(P) and O_C are exactly those of the extension
+    0 -> O_C -> E -> O_C(P) -> 0 of step s6, and the bound stands on its own
+    terms. No number changes: p_a(Y) = 4 by adjunction, 3Sigma is the unique
+    effective divisor of the class, and the separable and purely inseparable
+    cases of the last paragraph are as they were. Checked in this pass:
+    Hartshorne V.2.15(b)-(c) as printed on printed p. 385, read on the PDF's
+    own folio (PDF p. 400), whose extension is 0 -> O_C -> E -> L(P) -> 0 with
+    his L the trivial bundle, so that his L(P) is O_C(P) and his L(-P) is
+    O_C(-P); and Hartshorne 1971, Example 3.2, printed p. 85, "The degree of E
+    is 1", which fixes deg E = 1 and hence C_0^2 = -e = 1. Not checked in this
+    pass: Xie's Example 3.1 was not re-read, and the statement repair the printed
+    "nonsingular" needed is the one the earlier events of this card record and
+    is not re-decided here.
 
 ---
 
@@ -553,11 +578,11 @@ By step [](#s7){.pf-ref}, $Y=3\Sigma$ and $\restrictionof{\pi}{\Sigma}:\Sigma\to
 The divisor $3\Sigma$ is the only effective divisor in the class $3C_0-3f$; in particular no nonsingular curve has that class, and Xie's $Y=3\Sigma$ is not reduced, its reduction being the section $\Sigma\cong C$ of genus $3$ while $p_a(Y)=4$.
 
 ::: pf-proof
-This step is this card's own, and no source read carries it. The class has exactly one member. A divisor of $\OO_X(3)\otimes f^*\mathcal L^{-3}$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})=H^0(C,S^3\mathcal E\otimes\mathcal L^{-3})$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref} gives $S^3\mathcal E$ a filtration whose successive quotients are $\mathcal L^3$, $\mathcal L^2$, $\mathcal L$ and $\OO_C$, so the twisted bundle has one of quotients $\OO_C$, $\mathcal L^{-1}$, $\mathcal L^{-2}$, $\mathcal L^{-3}$, and
+This step is this card's own, and no source read carries it. The class has exactly one member. A divisor of $\OO_X(3)\otimes f^*\OO_C(-3P)$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\OO_C(-3P))=H^0(C,S^3\mathcal E\otimes\OO_C(-3P))$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref}, whose quotient is $\OO_C(P)$, gives $S^3\mathcal E$ a filtration whose successive quotients are $\OO_C(3P)$, $\OO_C(2P)$, $\OO_C(P)$ and $\OO_C$, so the twisted bundle has quotients $\OO_C$, $\OO_C(-P)$, $\OO_C(-2P)$ and $\OO_C(-3P)$, and
 $$
-h^0(C,S^3\mathcal E\otimes\mathcal L^{-3})\le h^0(\OO_C)+h^0(\mathcal L^{-1})+h^0(\mathcal L^{-2})+h^0(\mathcal L^{-3})=1+0+0+0=1,
+h^0(C,S^3\mathcal E\otimes\OO_C(-3P))\le h^0(\OO_C)+h^0(\OO_C(-P))+h^0(\OO_C(-2P))+h^0(\OO_C(-3P))=1+0+0+0=1,
 $$
-because $\deg\mathcal L=1$ makes each of the last three negative. The space is not zero, since $t=s^3\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
+because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is not zero, since $t=s^3\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
 
 Independently, for an effective divisor $Y$ in the class, adjunction gives
 $$
