@@ -1,9 +1,44 @@
 ---
 order: 100
 title: Complex arithmetic
+topics:
+- Complex Numbers
+- Roots of Unity
+- Geometry
 ---
 
 # Complex arithmetic
+
+$\CC$ is the field $\RR[x]/(x^2+1)$, and the identification $x+iy\leftrightarrow(x,y)$ makes it the Euclidean plane with an algebra structure: addition is vector addition, and multiplication is a rotation followed by a dilation.
+
+## Identities
+
+::: {.fact title="Conjugate, modulus, and argument"}
+For $z,w\in\CC$:
+$\bar z = x-iy$, $\abs z^2 = z\bar z$, $z\bar w+\bar zw = 2\Re(z\bar w)$, $\abs{zw} = \abs z\abs w$, and $\abs{z+w}\leq\abs z+\abs w$ with equality exactly when one of $z,w$ is a nonnegative real multiple of the other.
+If $z\neq0$ then $z = re^{i\theta}$ with $r = \abs z$ and $\theta = \arg z$ defined modulo $2\pi$, and multiplication reads $r_1e^{i\theta_1}\cdot r_2e^{i\theta_2} = r_1r_2e^{i(\theta_1+\theta_2)}$.
+The triangle $\abs{z-w}\geq\abs{\abs z-\abs w}$ is the reverse triangle inequality, and $\abs{z+w}^2+\abs{z-w}^2 = 2\abs z^2+2\abs w^2$ is the parallelogram law.
+:::
+
+## Multiplication as a map of the plane
+
+::: {.fact title="Rotation and dilation"}
+Multiplication by $w = \rho e^{i\varphi}\neq0$ is the map $z\mapsto \rho e^{i\varphi}z$, the dilation of ratio $\rho$ composed with the rotation through $\varphi$ about $0$.
+It is $\RR$-linear with matrix $\begin{pmatrix}\rho\cos\varphi & -\rho\sin\varphi\\ \rho\sin\varphi & \rho\cos\varphi\end{pmatrix}$ and multiplies every length by $\rho$ and every oriented angle by adding $\varphi$.
+Conjugation $z\mapsto\bar z$ is the reflection in the real axis; it preserves lengths and reverses oriented angles, so it is not [[D-TM4TE|conformal]].
+:::
+
+::: {.example title="The circle group and $n$-th roots"}
+The unit circle $S^1 = \theset{z : \abs z = 1}$ is a group under multiplication, isomorphic to $\RR/2\pi\ZZ$ by $\theta\mapsto e^{i\theta}$.
+Its elements of order dividing $n$ are the $n$-th roots of unity $\zeta_n^k = e^{2\pi i k/n}$, which form a cyclic group of order $n$; they are the vertices of a regular $n$-gon inscribed in $S^1$, and their sum is $0$ for $n\geq2$, since $\sum_{k=0}^{n-1}\zeta_n^k = (\zeta_n^n-1)/(\zeta_n-1)$.
+:::
+
+## Polynomials over $\CC$
+
+::: {.fact title="Roots and factorization"}
+$\CC$ is algebraically closed ([[complex-analysis/appendices/appendix-fta-proofs|the fundamental theorem of algebra]]): a polynomial of degree $n\geq1$ with complex coefficients has exactly $n$ roots counted with multiplicity, and factors as $c\prod_{k=1}^n(z-z_k)$.
+The roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$ for either square root $w$ of the discriminant $b^2-4ac$ ([[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|roots and the logarithm]]).
+:::
 
 ## Problems on complex arithmetic
 
@@ -38,121 +73,3 @@ title: Complex arithmetic
 [[P-7UIYI]]
 
 [[P-V7ULH]]
-
-[[P-UGA8150S21-HW2-05]]
-
-[[P-UGA8150S21-HW2-12]]
-
-## Identities
-
-::: {.fact title="Sums of two exponentials"}
-For real $a, b, \omega$,
-$$
-\begin{aligned}
-e^{a i \omega}+e^{b i \omega} &=2 \cos \qty{\frac{a-b}{2} \omega} e^{\frac{a+b}{2} i \omega}, \\
-e^{a i \omega}-e^{b i \omega} &=2 i \sin \qty{\frac{a-b}{2} \omega} e^{\frac{a+b}{2} i \omega}.
-\end{aligned}
-$$
-So a sum or difference of two exponentials is a unimodular complex scalar times a real trigonometric function.
-:::
-
-::: {.proof}
-Put $\ell \coloneqq \frac{a+b}{2}$ and $k \coloneqq \frac{a-b}{2}$, so that $a - \ell = k$ and $b - \ell = -k$.
-Then
-$$
-e^{ai\omega} \pm e^{bi\omega} = e^{\ell i\omega} \qty{ e^{(a-\ell)i\omega} \pm e^{(b - \ell)i\omega} } = e^{\ell i\omega} \qty{ e^{ki\omega} \pm e^{-ki\omega}},
-$$
-which is $e^{\ell i\omega}\cdot 2\cos(k\omega)$ for the sum and $e^{\ell i\omega}\cdot 2i\sin(k\omega)$ for the difference.
-:::
-
-::: {.example}
-With $\omega \coloneqq \pi/2$, $a=-1$, $b=-3$,
-$$
-\begin{aligned}
-e^{-i\pi / 2}+ e^{-3i\pi / 2}
-&= e^{-i\omega} + e^{-3i\omega} \\
-&= e^{-2i\omega} \qty{e^{i\omega} + e^{-i\omega}}\\
-&= e^{-2i\omega}\cdot 2\cos(\omega) \\
-&= e^{-i\pi}\cdot 2\cos\qty{\pi / 2} \\
-&= 0.
-\end{aligned}
-$$
-:::
-
-::: {.fact title="Complex algebra"}
-For $z, w\in\CC$,
-$$
-\begin{aligned}
-z + \bar{z} &= 2\Re(z), & z - \bar{z} &= 2i\Im(z), \\
-z\bar z &= \abs{z}^2, & \arg(z/w) &\equiv \arg(z) - \arg(w) \pmod{2\pi} \quad (z,w\neq 0), \\
-{1\over i} &= -i = i^3, & {1\over i^3} &= i.
-\end{aligned}
-$$
-
-With $w\coloneqq e^{iz}$,
-$$
-\begin{aligned}
-\cos(z) &= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ \inverseof{w}),\\
-\sin(z) &= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-\inverseof{w}).
-\end{aligned}
-$$
-
-The hyperbolic functions are
-$$
-\begin{aligned}
-\cosh(z) &= \cos(iz) = {1\over 2}\qty{e^z + e^{-z}}, \\
-\sinh(z) &= -i \sin(iz) = {1\over 2}\qty{e^z - e^{-z}}.
-\end{aligned}
-$$
-
-:::
-
-::: {.fact title="Hyperbolic functions"}
-\envlist
-
-- $\cosh$ and $\sinh$ are periodic with period $2\pi i$.
-
-- $\frac{d}{dz}\cosh(z) = \sinh(z)$ and $\frac{d}{dz}\sinh(z) = \cosh(z)$; more generally $$ \cosh^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2}, \qquad \sinh^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2}.
-$$
-
-- $\sinh$ is odd and $\cosh$ is even.
-
-- $\cosh(z + i\pi) = -\cosh(z)$ and $\sinh(z + i\pi) = -\sinh(z)$.
-
-- The zeros of $\cosh$ are the points $i\qty{\pi/2 + k\pi}$ with $k\in\ZZ$.
-
-- The zeros of $\sinh$ are the points $i\pi k$ with $k\in\ZZ$.
-
-:::
-
-::: {.fact}
-For $z, w\in\CC$ and real $a,b,c,d$,
-$$
-\begin{aligned}
-\abs{z \pm w}^2 &= \abs{z}^2 + \abs{w}^2 \pm 2\Re(\bar{w}z), \\
-(a+bi)(c+di) &= (ac - bd) + (ad + bc)i, \\
-{1\over \abs{z+w}} &\leq {1 \over \abs z - \abs w} \quad \text{if } \abs z > \abs w, \\
-\abs{e^{z}} &= e^{\Re(z)}, \qquad \arg(e^z) \equiv \Im(z) \pmod{2\pi}.
-\end{aligned}
-$$
-
-:::
-
-::: {.fact}
-In polar coordinates the inversion $z\mapsto 1/z$ is $Re^{i\theta}\mapsto {1\over R}e^{-i\theta}$: it inverts the modulus and reflects the argument.
-
-![](../../../assets/figures/2021-12-18_23-32-13.png)
-
-:::
-
-## Further problems
-
-[[E-X4MBB]]
-
-[[E-WNNSK]]
-
-[[E-P7SIB]]
-
-[[E-JWO2G]]
-
-[[E-ZCPKK]]
