@@ -234,6 +234,8 @@ Step [](#s6){.pf-ref} is the assertion of the exercise.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 66 of Hartshorne, headed "Direct Limit", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.10, PDF p. 4, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he takes the direct limit of the presheaves and applies the universal property of sheafification to obtain the sheaf-theoretic one.
 The proof above is the same, separating the compatibility of the canonical maps $\mcf_i\to\varinjlim\mcf_i$ (step [](#s1){.pf-ref}) from the uniqueness of the induced morphism of sheaves (steps [](#s3){.pf-ref} and [](#s5){.pf-ref}).
 Agree.
