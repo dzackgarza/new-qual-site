@@ -13,7 +13,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
     - A nonempty subset $H\subseteq G$ with $x\inverseof{y} \in H$ for all $x,y\in H$ is a subgroup
 
-  - Cosets: the index [[D-VJGH5]], and the partition of $G$ by the left cosets [[PR-VUKHO]]
+  - Cosets: the [[D-VJGH5|index of a subgroup]], and [[PR-VUKHO|left cosets are equal or disjoint]]
 
   - The index of a subgroup
 
