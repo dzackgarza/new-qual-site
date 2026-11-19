@@ -6691,3 +6691,58 @@ correcting is the register's statement that the book is unavailable, which is wh
 everything outside printed pp. 63--67, the pages of Chapter 2 before and after the theorem, and no
 printing other than the held scan. The prose-only measure, the provenance scan and the two generated
 queues were not obtained, as above.
+
+## 2026-11-19: Yang Pi-Yeh's §V.4 sweep closed — V.4.8's entry does not close, V.4.13's covers both parts, and V.4.14's table is nine rows that check
+
+**Object and need.** The last three exercises of the batch whose Yang entries were not on the rendered
+card or not read: `P-AGH548IRREDCLASSES` (V.4.8, printed p. 407), whose card is issue #160's, and
+`P-AGH5413DELPEZZO4` (V.4.13, printed p. 408) and `P-AGH5414SPACECURVES` (V.4.14, printed p. 408),
+whose cards name Yang only in their audit events or only for one part.
+
+**V.4.8, printed p. 110: two places it does not close.** The entry lists the lines of $X_r$ for
+$2\le r\le5$, takes the classes $D_0,\ldots,D_5$ of Lemma 4.12 with Corollaries 4.1 and 4.3, and reads
+off the very-ampleness thresholds $a>b_1+b_2$ for $r<5$ and $a>b_1+b_2+b_5$ for $r=5$, equivalently
+$D\cdot L>0$ for every line. From (i) to (iii) it contracts to $X_r$ and concludes $D\cdot L\ge0$,
+without excluding $D^2=0$ from the third alternative, which is where the conic of (b) sits. From (iii)
+to (ii) it takes a member of the system of $D'=\pi_r(D)$ and applies the criterion that produces an
+irreducible nonsingular member of a class meeting every line *strictly* positively, while the
+hypothesis gives only $D\cdot L\ge0$; the hypothesis $D^2>0$ that the exercise adds for exactly that
+case is never used. The instance is $H+F_{56}$, the class of the V.4.7 card: it meets $F_{56}$ in $0$,
+meets all $27$ lines nonnegatively and has square $4$, so condition (c) gives it a nonsingular member
+while the strict criterion does not apply to it. The card's own proof — Harbourne's Lemma II.6 and
+Theorem III.1(a) with Dolgachev's Theorem 8.2.19 — does not depend on the entry.
+
+**V.4.13, printed p. 111: both parts.** Part (a) counts the sixteen curves on the blowup at five
+points, the five $E_i$, the ten $F_{ij}=H-E_i-E_j$ and the conic $G=2H-\sum_{i\le5}E_i$. Part (b)
+computes $h^0(\OO_X(2))=h^0(\OO_X(-2K))=\frac12(-2K-K)\cdot(-2K)+1=3K^2+1=13$ by Riemann--Roch, with
+$h^1=0$, and concludes $h^0(\mathcal I_X(2))=15-13=2$. That conclusion needs the restriction
+$H^0(\OO_{\PP^4}(2))\to H^0(\OO_X(2))$ to be onto, which the entry does not prove — projective
+normality is what supplies it — and it then states the complete-intersection conclusion without the
+degree count. The audit event of 2026-11-16 recorded the second point and said nothing of the first;
+the remark now carries both, at the page.
+
+**V.4.14, printed p. 112: the table is there and is right.** The text version
+`tmp/sources/lfwin-hartshorne-solutions.md` prints the entry as "As following." and then nothing, the
+nine-row table being an image it drops. On the page the table has nine rows, one for each printed pair,
+and each was recomputed here from $d=3a-\sum b_i$ and $p_a(D)=\frac12(a-1)(a-2)-\frac12\sum b_i^2+\frac12\sum b_i$:
+$(8;3,3,3,3,2,2)$ gives $d=8$, $p_a=21-22+8=7$; $(8;4,3,3,2,2,2)$ gives $8$ and $6$; $(9;4,3,3,3,3,2)$
+gives $9$ and $9$; $(9;4,4,3,3,2,2)$ gives $9$ and $8$; $(9;4,4,4,2,2,2)$ gives $9$ and $7$;
+$(10;5,3,3,3,3,3)$ gives $10$ and $11$; $(11;5,5,4,3,3,3)$ gives $10$ and $10$;
+$(12;5,5,5,5,3,3)$ gives $10$ and $9$; $(10;6,3,3,3,3,2)$ gives $10$ and $8$. Every row also satisfies
+the very-ampleness conditions $b_i>0$, $a>b_i+b_j$ and $2a>\sum_{j\ne i}b_j$, the last with the least
+margin at $(12;5,5,5,5,3,3)$, where $2a=24$ against $23$. So the card's sentence that the entry gives
+the same nine pairs as a table of classes is right, and its further sentence, that the entry does not
+show a member to be nonsingular, is right as well: nonsingularity is Corollary 4.13(b) or the card's
+own step, not the table.
+
+**Repair.** `P-AGH548IRREDCLASSES` in `cb7cbe820e`, `P-AGH5413DELPEZZO4` in `8a45e47a4f`; this record
+in the COMPLAINTS commit that carries it. No statement, step or hypothesis of either card changes, and
+`P-AGH5414SPACECURVES` needed no change: its sentence about Yang is confirmed at the page.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.4.8 at printed p. 110, 5.4.13 at printed
+p. 111 and 5.4.14 at printed p. 112, rendered as page images from
+`tmp/sources/lfwin-hartshorne-solutions.pdf`; and Hartshorne's V.4.8, V.4.13 and V.4.14 on printed
+pp. 407--408. Not read: the printed books themselves; Yang's entries for the exercises of §V.5 and
+later; and no search of the literature beyond these files. With these, every entry of Yang's set that
+covers an exercise of §V.4, Solutions 5.4.1 to 5.4.16, is either named in a card's rendered remark or
+recorded here as not closing the exercise it covers.
