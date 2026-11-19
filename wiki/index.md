@@ -6,7 +6,7 @@ order: 0
 # Wiki
 
 Notes, definitions, theorems, and worked problems for graduate qualifying exams, filed by subject.
-Each subject page lists its chapters and syllabus; the [guides](guides.html) arrange the same subjects as one ordered sequence each.
+Each subject page lists its chapters and syllabus; the guides arrange the same subjects as one ordered sequence each, and are reached from the site navigation.
 
 - [[prelim/index|Prelims]]
 
