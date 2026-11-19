@@ -15,6 +15,17 @@ audit:
   by: claude
   date: 2026-11-19
   note: >-
+    Correction to my own repair of this card. Step #abelian said the triviality of the
+    action is "the hypothesis of Theorem 4.69 for the connected CW complex Omega X", and
+    Omega X is not in general a CW complex: Theorem 4.69 is stated for a connected CW
+    complex. The step now passes to a CW approximation W -> Omega X, which inherits an
+    H-space structure up to homotopy and hence is abelian, applies Theorem 4.69 there, and
+    observes that a Postnikov tower of W is one of Omega X because a weak equivalence
+    induces isomorphisms on all homotopy groups. Nothing else changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
     Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 20, printed p. 420,
     and against Theorem 4.69, printed p. 412. Step #principal was false: it asserted that
     each Postnikov fibration p_n is principal, citing Theorem 4.69, but that theorem is an
@@ -131,7 +142,7 @@ Theorem 4.69 (printed p. 412) states that a connected CW complex has a Postnikov
 $\Omega X$ is an abelian space, and by Theorem 4.69 it therefore has a Postnikov tower of principal fibrations.
 
 ::: pf-proof
-$\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for an H-space, the action of $\pi_1$ on $\pi_n$ is trivial for every $n$ (Example 4A.3, printed p. 422; the point is that the multiplication makes left and right translation by a loop agree up to homotopy). So $\pi_1(\Omega X)=\pi_2(X)$ acts trivially on every $\pi_n(\Omega X)$, which is the hypothesis of Theorem 4.69 for the connected CW complex $\Omega X$. The theorem then gives a Postnikov tower of $\Omega X$ whose fibrations are all principal.
+$\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for an H-space, the action of $\pi_1$ on $\pi_n$ is trivial for every $n$ (Example 4A.3, printed p. 422; the point is that the multiplication makes left and right translation by a loop agree up to homotopy). So $\pi_1(\Omega X)=\pi_2(X)$ acts trivially on every $\pi_n(\Omega X)$. The loop space is not in general a CW complex, and Theorem 4.69 is stated for a connected CW complex, so apply it to a CW approximation $W\to\Omega X$, which is a weak homotopy equivalence: $W$ inherits an H-space structure up to homotopy, hence is abelian, and Theorem 4.69 gives a Postnikov tower of $W$ whose fibrations are all principal. A Postnikov tower of $W$ is one of $\Omega X$, since a weak equivalence induces isomorphisms on all homotopy groups, so $\Omega X$ has a Postnikov tower of principal fibrations.
 :::
 
 :::
