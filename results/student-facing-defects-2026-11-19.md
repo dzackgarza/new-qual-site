@@ -51,12 +51,16 @@ The cause is the gate, not the deployer. `build` in `tools/qualc/cli.py` runs th
 `load()` as `check` and returns 1 on *any* diagnostic before it emits a page
 (`tools/qualc/cli.py:181-190`), and the workflow's build step is plain `uv run qualc build`
 (`.github/workflows/development.yml:41`). In run 44437330383 the `build` job failed at exactly
-that step, so `deploy` was skipped.
+that step, so `deploy` was skipped, and every run after it was superseded in the `pages`
+concurrency group before it could build.
 
-Consequence for the ledger: the class is the open undefined-macro / dropped-TeX diagnostics
-(the 48 of that run), which another chat is repairing. Not duplicated here; this entry exists
-so that whoever lands that repair knows the deploy resumes by itself and the backlog of 1605
-commits goes live with it.
+**Status while this was being read (2026-11-19 02:25 UTC):** that gate is now clear. A
+`qualc check` of the whole tree, run against `main` at `6928b4b1f391`, printed
+"14394 cards and 341 wiki pages OK" with no diagnostics, so the undefined-macro and
+dropped-TeX class is closed and the next build that actually runs should deploy. The site a
+student reads is still the 2026-11-18 11:38 build until it does. So this entry is not a
+repair request: it is the reason the 1605-commit backlog is invisible, and the check that the
+backlog went live is `GET /revision.txt` naming a current commit.
 
 Affected: the site as a whole.
 
