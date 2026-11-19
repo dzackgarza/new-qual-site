@@ -82,6 +82,27 @@ audit:
     equality proof passes to a large even power "since L is ample", which O_X is
     not; 53.10.2 assumes deg L = d > 0. Nothing else on the card rested on the
     truncated text.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.1.5, printed p. 84,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.1.5, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    dim|D| = l(D) - 1 = deg D - g + l(K-D), the bound l(K-D) <= l(K),
+    and the value l(K) = g that the conclusion needs. Not checked: Yang's Solutions outside printed pp. 84-85; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.1.5 at printed
+    p. 84 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -261,4 +282,6 @@ Step [](#s2){.pf-ref} proves the inequality and step [](#s8){.pf-ref} characteri
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.5, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, computes $\dim\abs{D}=h^0(D)-1=\deg D-g+h^0(K-D)\le\deg D-g+h^0(K)=\deg D$ using $h^0(K)=g$, and reads off equality exactly when $h^0(K-D)=h^0(K)$, that is $D=0$ or $g=0$. Lomont, Chapter IV §1, Exercise 1.5, PDF p. 4, text version `tmp/sources/hartshorne-solutions-lomont.md`, has the same argument.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.5, printed p. 84, runs Riemann--Roch: $\dim\linearsystem{D}=\ell(D)-1=\deg D-g+\ell(K-D)$, and $\ell(K-D)\le\ell(K)=g$ for $D$ effective, so $\dim\linearsystem{D}\le\deg D$ with equality only for $D=0$ or $g=0$. Its display of the last input is wrong as printed: it writes $\ell(K)-\ell(K-K)=2g-2+1-g=g$, where $2g-2+1-g=g-1$ and the value $g$ comes from $\ell(K)-\ell(0)=g-1$ with $\ell(0)=1$. The conclusion uses $\ell(K)=g$, which is right.
 :::
