@@ -37,6 +37,8 @@ $$
 :::
 
 ::: {.solution}
+The statement is Exercise 10 of [@SS03, ch. 3 (p. 104)], printed as $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx=\frac{\pi}{2a}\log a$ for $a>0$, with the hint to use its Figure 10.
+
 No retained solution set covers this exercise: the collection's provenance is a Google Books record, so the argument is the card's own. Let $a>0$ and
 $$
 I(a)=\int_0^{\infty}\frac{\log x}{x^2+a^2}\,dx,
