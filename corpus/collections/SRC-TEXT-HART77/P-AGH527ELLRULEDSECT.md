@@ -30,6 +30,30 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise, on the page image rather than the
+    text version, whose extraction of this entry is garbled. Read Yang Pi-Yeh,
+    Hartshorne Solutions (9 June 2019), Solution 5.2.7, printed p. 103,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf. Checked against the book:
+    Hartshorne V.2.7, whose printed page the card's earlier events record; this
+    pass did not reopen it, and the comparison is against the statement the
+    card carries. Recomputed: the correspondence between sections and
+    surjections E -> L(d) with deg d = 1, the shift to C_0 + (P - P_0)f, the
+    halving of the line bundle, and the injectivity of P -> P - P_0 in Pic^0
+    for an elliptic curve. Not checked: Yang's Solutions outside printed
+    pp. 100-107; the book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.2.7 at printed p. 103 beside
+    Egbert's entry. With it the sweep of his entries for the ten Chapter V
+    section-5 cards that lacked him is complete. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -399,4 +423,6 @@ members are linearly equivalent.
 The exercise stands on printed p. 384 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the reference to the elliptic ruled surface (2.11.6) included.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.7, PDF p. 265, text version `tmp/sources/hartshorne-solutions-egbert.md`: from (2.11.6) he has $e=-1$, hence $\mathcal E$ indecomposable of degree $1$ by (2.12a), and he uses the classification of indecomposable rank-two bundles of degree one on an elliptic curve, whose isomorphism classes correspond to the points of $C$ (his "2.16"), to get one section per point; two of them are linearly inequivalent because $\mathcal L(P)\cong\mathcal L(Q)$ would force $P=Q$ on an elliptic curve. The card reaches the same conclusion without the classification: step [](#s2){.pf-ref} computes $\dim\Hom(\mathcal E,\OO_C(P))=1$ for every $P$ by Riemann--Roch and normalizedness, step [](#s5){.pf-ref} gives $D^2=2\deg\mathcal L-\deg\mathcal E$ for the section belonging to a quotient $\mathcal L$, and step [](#s6){.pf-ref} shows $D^2=1$ forces $\mathcal L\cong\OO_C(P)$. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.2.7, printed p. 103, runs the correspondence the exercise asks for: $\mathcal E$ is the normalized indecomposable bundle with $e=-1$ by the proof of (2.12) and the surface is unique by (2.15); a section corresponds to a surjection $\mathcal E\to\mathcal L(\mathfrak d)\to0$, and (2.15) forces $\deg\mathfrak d=1$, so $\mathfrak d=P$ for a point of $C$; conversely (2.16) gives one $\mathcal E'$ for each $P\in C$. The section attached to $P$ is $C_0+(P-P_0)f$, with $\mathcal E'\cong\mathcal E\otimes\mathcal L\bigl(\frac{P-P_0}{2}\bigr)$, the halves existing because $\Pic^0$ of an elliptic curve is divisible. Two of them, $C_0+(P-P_0)f$ and $C_0+(Q-Q_0)f$, are linearly equivalent only if $Pf\sim Qf$, which on an elliptic curve forces $P=Q$: a degree-one map $C\to\PP^1$ would make $C$ rational. That is the one-dimensional family parametrized by $C$ with no two members linearly equivalent.
 :::
