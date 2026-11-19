@@ -13,7 +13,7 @@ topics:
 
 # The spectral theorem
 
-The page collects what it takes to diagonalize a matrix, and the one case in which the diagonalizing change of basis can be chosen orthonormal, so that the diagonal form is reached by an orthogonal or unitary matrix rather than by an arbitrary one.
+Diagonalizing a matrix means changing basis to make it diagonal. Over an inner product space the change of basis can be taken orthonormal exactly when the matrix is symmetric in the real case or normal in the complex case, so the diagonal form is reached by an orthogonal or unitary matrix rather than by an arbitrary one.
 
 [[D-DVLK5]] [[D-BSUV4]]
 
