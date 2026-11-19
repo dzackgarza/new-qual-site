@@ -12,7 +12,7 @@ topics:
 
 A del Pezzo surface is one whose anticanonical class is ample, and on a toric surface that condition is a statement about the fan: the anticanonical polytope is a lattice polytope whose normal fan is the fan.
 Among the sixteen reflexive polygons of the plane exactly five are smooth, and those five are the toric del Pezzo surfaces — the plane, the quadric surface, and the plane blown up at one, two, and three torus-fixed points.
-This page is where the classification of surfaces, the classification of Fano polytopes, and the blowup calculus meet, and where the failure of a fourth blowup is a single intersection number.
+The failure of a fourth blowup is a single intersection number.
 
 ## Reflexive polytopes
 
@@ -36,7 +36,7 @@ What makes the list short is the smoothness condition: a smooth reflexive polygo
 
 The plane is the fan with three rays $e_1,e_2,-e_1-e_2$; the quadric $\PP^1\times\PP^1$ is the fan with four rays $\pm e_1,\pm e_2$, which is the square's normal fan; and the three blowups are the fans with four, five and six rays obtained by star subdivisions, the first of which is the fan of $\FF_1$.
 The invariant that counts this is the number of rays, through the self-intersection of the canonical class: for a smooth complete toric surface with $d$ rays, $K^2=12-d$ ([[PR-FULKSQ]]).
-So the degrees of the five are $9, 8, 8, 7, 6$: the plane has $K^2=9$, and each blowup at a point lowers it by one — which is the intersection-theoretic calculation behind the table.
+So the degrees of the five are $9, 8, 8, 7, 6$: the plane has $K^2=9$, and each blowup at a point lowers it by one.
 
 ## The blowup relations
 
@@ -57,13 +57,13 @@ $$
 P_{-K}=\theset{m\in M_\RR \st \inner{m}{u_\rho}\ge-1 \text{ for every ray } \rho}
 $$
 is a reflexive lattice polytope whose normal fan is $\Sigma$, so the classification of toric del Pezzo surfaces is a classification of lattice polygons and nothing else.
-The same table settles smoothness, completeness and projectivity at once, which is why the toric case is where the general statements are tested first: a property of a variety becomes a property of a finite set of cones.
+Smoothness, completeness and projectivity are then conditions on the polygon, and each is decided by a determinant or a cone count ([[PR-FULCRIT]]).
 
 ## Why there are exactly five
 
 The obstruction to a fourth blowup is one number.
 Blowing up a torus-fixed point of $\Bl_3\PP^2$ creates two $(-2)$-curves $C$, and adjunction gives $-K\cdot C=2+C^2=2-2=0$, so $-K$ is nef and big but not ample, and the surface is not del Pezzo.
-That is the last row of the table above, and it is the geometric content of the reflexivity condition failing: the new ray sits at lattice distance two from the cone it subdivides.
+In the fan the fourth blowup adds a ray $\rho$ with $-K\cdot D_\rho=0$, so the facet of $P_{-K}$ cut out by $\rho$ passes through the origin: that facet is at lattice distance $0$ from the origin, and $P_{-K}$ is not a reflexive polytope.
 
 Among the ten deformation classes of del Pezzo surfaces — $\PP^1\times\PP^1$ and $\Bl_k\PP^2$ for $0\le k\le8$ — exactly these five carry a torus action, and the other five, $\Bl_k\PP^2$ for $4\le k\le8$, have no anticanonical polytope that is a lattice polygon.
-The toric ones are therefore the ones whose geometry is computable from a finitely many lattice points, and the discrepancy between "toric del Pezzo" and "del Pezzo" is the same kind of discrepancy as between "toric Fano" and "Fano" in higher dimension, where the toric ones are a finite list out of infinitely many deformation families ([[D-TORREFL]]).
+In higher dimension the same separation holds: the toric Fano varieties are a finite list, while the Fano deformation families are infinite ([[D-TORREFL]]).
