@@ -45,6 +45,17 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 41, printed p. 159, which asks for the equality of the Euler characteristic with the alternating sum of the dimensions of $H_n(X;F)$ over a field. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own. Checked: the two short exact sequences, the dimension count, and the cancellation of the $B$-terms in the alternating sum.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card said no retained solution set covers the exercise, and that is false:
+    `tmp/sources/hatcher-solutions-guanyu-li.md` solves it under the older numbering, at the heading
+    "Exercise 2.2.19 (2.2.41)", by the same finite-dimensional complex and the same alternating-sum
+    cancellation. The rendered sentence now cites it and says what the card adds, the two short exact
+    sequences made explicit. Found by screening the residue's absence claims against the retained
+    inventory after two such claims were found false in the §30 and §31 Munkres cards; no step of the
+    proof changed, and the statement was re-read against Hatcher printed p. 159.
 ---
 
 ::: {.problem}
@@ -52,7 +63,7 @@ For $X$ a finite CW complex and $F$ a field, show that the Euler characteristic 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 41, printed p. 159. The point is the dimension count over a field: $\dim C_n=\dim B_n+\dim H_n+\dim B_{n-1}$, whose boundary terms cancel in the alternating sum.
+The retained published solution is Guanyu Li's *Hatcher solutions*, which answers this exercise under the older numbering "Exercise 2.2.19 (2.2.41)": it takes the $F$-coefficient cellular complex, notes each $C_i$ is finite dimensional because $X$ is a finite CW complex, and cancels the boundary dimensions in the alternating sum. The card states the same count with the two short exact sequences written out. Checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 41, printed p. 159. The point is the dimension count over a field: $\dim C_n=\dim B_n+\dim H_n+\dim B_{n-1}$, whose boundary terms cancel in the alternating sum.
 
 ::: pf
 
