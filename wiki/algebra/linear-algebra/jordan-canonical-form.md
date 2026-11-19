@@ -17,7 +17,7 @@ The Jordan canonical form of $A$ exists if and only if the characteristic polyno
 ## Where the form comes from
 
 Make $V=k^n$ a $k[x]$-module with $x$ acting by $A$.
-If $\chi_A$ splits, every invariant factor of $V$ is a power of a linear polynomial, so every elementary divisor is some $(x-\lambda)^e$, and that summand $k[x]/\generators{(x-\lambda)^e}$ is the Jordan block $J_e(\lambda)$ in the basis $(x-\lambda)^{e-1},\ldots,(x-\lambda),1$.
+If $\chi_A$ splits, every invariant factor of $V$ is a power of a linear polynomial, so every elementary divisor is some $(x-\lambda)^e$, and that summand $k[x]/\generators{(x-\lambda)^e}$ is the Jordan block $J_e(\lambda)$ in the basis $(x-\lambda)^{e-1},\ldots,(x-\lambda),1$. The generalized eigenspace $\ker(A-\lambda I)^n$, with $n=\dim V$, is the largest of the subspaces $\ker(A-\lambda I)^m$, and these are the primary components of $V$ as a $k[x]$-module: the summands the Jordan blocks are written in.
 
 [[L-W5S2W]]
 
@@ -45,10 +45,6 @@ For $4\times 4$ matrices with $\min_A(t) = t^2$ and $\chi_A(t) = t^4$ there are 
 They are distinguished by $\dim\ker A$, which is $2$ and $3$ respectively.
 In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$, which is the rank-sequence computation of [[PR-5A2W4|the Jordan-chain construction]].
 :::
-
-## Generalized eigenspaces
-
-The generalized eigenspace of $\lambda$ is $\ker(A-\lambda I)^n$ for $n=\dim V$, the largest of the subspaces $\ker(A-\lambda I)^m$; when $\chi_A$ splits these subspaces are the primary components of $V$ as a $k[x]$-module, and they are the summands the Jordan blocks are written in.
 
 ## Problems
 
