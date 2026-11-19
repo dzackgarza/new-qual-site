@@ -15,6 +15,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked against Question 28 of the Chapter 2 review questions in assets/attachments/extracted/chapter-2.md (Mistral OCR), compared with the same page in the Cracking the GRE Mathematics Subject Test book extraction.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by differentiation. With x = sin theta on the
+    principal branch, cos theta = sqrt(1-x^2) >= 0 and dx = cos theta d theta, so the integral is
+    int sin^2 theta d theta = theta/2 - sin(2 theta)/4 = (1/2)(arcsin x) - (1/2) x sqrt(1-x^2),
+    which is choice (D). Differentiating that expression gives
+    (1/2)(1/sqrt(1-x^2)) - (1/2)(sqrt(1-x^2) - x^2/sqrt(1-x^2)) = x^2/sqrt(1-x^2), so the answer is
+    confirmed independently of the substitution. The principal branch is what makes cos theta
+    non-negative and hence the square root unambiguous. Nothing outside this question checked.
 ---
 
 ::: {.problem}
