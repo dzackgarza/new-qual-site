@@ -43,7 +43,7 @@ Recall that a commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it
 
 ### Euclidean domains, principal ideal domains, and unique factorization domains
 
-Euclidean domains, principal ideal domains and unique factorization domains are ordered by adding a requirement at each step, and each of the three inclusions is strict.
+Euclidean domains, principal ideal domains and unique factorization domains are ordered by adding a requirement at each step, and each of the two inclusions is strict.
 
 [[PR-LLBRB]]
 
