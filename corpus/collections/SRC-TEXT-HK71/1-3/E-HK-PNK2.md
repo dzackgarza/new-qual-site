@@ -21,6 +21,16 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read as a second reader against the retained text; the statement matches Hoffman and Kunze
+    Exercise 1.3.5, printed p. 11. The two determinants were recomputed: A is lower triangular
+    with det A = 2(-1)3 = -6, so rank 3; and det B expands to 1(0*5+3) - 1(-10+1) + 2(-6) = 3 +
+    9 - 12 = 0, with the minor on rows 1-2 and columns 1-2 equal to 2, so rank 2. Elementary row
+    operations preserve rank, so the matrices are not row-equivalent. The step that asserted det
+    B = 0 now carries the expansion; no other step changed.
 ---
 
 ::: {.exercise}
@@ -58,9 +68,9 @@ Hence $A$ is invertible and has rank $3$.
 The matrix $B$ has rank $2$.
 
 ::: pf-proof
-Its determinant is
+Expanding along the first row,
 $$
-\det B=0,
+\det B=1\,(0\cdot5-(-1)\cdot3)-1\,((-2)\cdot5-(-1)\cdot1)+2\,((-2)\cdot3-0\cdot1)=3+9-12=0,
 $$
 so its rank is at most $2$. The minor formed by the first two rows and first two
 columns is
