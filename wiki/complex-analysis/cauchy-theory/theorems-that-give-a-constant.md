@@ -73,7 +73,7 @@ The proofs of Liouville's theorem and of the polynomial-growth bound end with th
 
 By the [[T-HWBWI|little Picard theorem]], a nonconstant entire function omits at most one value of $\CC$.
 
-If an entire function $f$ omits every value in a disc $D_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
+If an entire function $f$ omits every value in a disc $\DD_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
 [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
 ## Hypotheses
