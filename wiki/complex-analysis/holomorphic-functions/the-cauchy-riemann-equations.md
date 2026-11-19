@@ -41,7 +41,7 @@ $$
 ,$$
 and
 $$
-\del \exp\qty{-\abs z^2} = \del \exp\qty{-z\bar z} = e^{-\abs z^2}\cdot\del(z\bar z) = \bar z e^{-\abs z^2}
+\del \exp\qty{-\abs z^2} = \del \exp\qty{-z\bar z} = e^{-\abs z^2}\cdot\del(-z\bar z) = -\bar z e^{-\abs z^2}
 .$$
 
 :::
