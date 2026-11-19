@@ -61,8 +61,6 @@ See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 [[PR-QW3ZK]]
 
-[[C-KOFDQ]]
-
 [[T-K66DJ]]
 
 [[T-BYNL5]]

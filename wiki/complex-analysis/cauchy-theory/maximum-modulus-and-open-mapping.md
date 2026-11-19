@@ -25,7 +25,7 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 [[PR-QW3ZK]]
 
-[[C-KOFDQ]]
+
 
 ## Minimum modulus
 

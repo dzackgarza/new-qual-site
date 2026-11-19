@@ -125,7 +125,7 @@ sections:
       - ref: PR-UWGI6
       - ref: PR-6WOTK
       - ref: PR-QW3ZK
-      - ref: C-KOFDQ
+      - ref: PR-QW3ZK
       - ref: D-XR64P
   - slug: cauchy-theory
     title: Cauchy theory
