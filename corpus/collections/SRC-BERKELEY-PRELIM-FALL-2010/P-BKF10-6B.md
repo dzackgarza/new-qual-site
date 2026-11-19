@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 6B, printed p. 6 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 6B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -37,6 +46,8 @@ Show that if a noncyclic simple group has order divisible by a prime $p$, then i
 :::
 
 ::: {.solution}
+
+The argument is Problem 6B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 6 of that file, transcribed: in a simple group of order $30$ no Sylow subgroup is normal, so there are at least $p+1$ of them for each prime $p$ dividing $30$, and since two of them meet in at most one element there are at least $p^2-1$ elements of order $p$; that gives at least $24$ elements of order $5$ and $8$ of order $3$, more than $30$ in all. What the card adds is the Sylow count $n_5=6$ computed from $n_5\mid 6$ and $n_5\equiv1\pmod 5$, and the step structure.
 Suppose, for contradiction, that $G$ is simple and
 $$
 \abs{G}=30=2\cdot3\cdot5.
