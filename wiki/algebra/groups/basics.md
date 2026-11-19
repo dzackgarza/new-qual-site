@@ -15,8 +15,7 @@ Throughout, $G$ is a group with identity $e$, and $H$ and $K$ are subgroups of $
 
 ## Subgroups
 
-Membership in a subgroup is decided by the one-step criterion [[PR-U5CHT]], which replaces the three axioms of [[D-IQ4OX]] by the single condition $xy^{-1}\in H$.
-Since $\generators S$ is the smallest subgroup containing $S$, the inclusion $\generators S\leq H$ follows from $S\subseteq H$, so a subgroup is shown to contain a generated subgroup by checking the generators.
+Recall that $\generators S$ is the smallest subgroup containing $S$ ([[D-D36IY]]), so an inclusion $\generators S\leq H$ is checked on $S$ alone, and that membership in a subset is decided by one closure condition rather than three ([[PR-U5CHT]]).
 
 [[D-IQ4OX]]
 
