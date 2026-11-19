@@ -7825,3 +7825,18 @@ Neither was in the 470-item set when it was taken; `E-HK-CG7N` now counts as rev
 **Advice for the next dispatcher.** Treat a residue as a work queue, not a property: check a card for an existing `solution-reviewed` or same-day `solution-written` event before spending a read on it, which is what caught both cases here and cost one command each. Any count of remaining work should be re-measured rather than quoted from an earlier entry, this one included.
 
 **Uncertainty.** Two sightings out of three picks is a small sample and could reflect a single chat finishing a batch; the briefs of the other chats were not read, so how the overlap arose is not established. The residue values were computed from the card ids with the formula in the brief, not from any assignment record.
+
+## Complex analysis: the one card with no printed-page source (2026-11-19)
+
+**`T-ZAEWG`, the uniformization theorem, printed page unknown.** The card, and the sentence that
+states the theorem on `wiki/complex-analysis/conformal-maps/riemann-surfaces-and-uniformization`,
+carry no locator. The two books in the bibliography that contain the theorem, Ahlfors `[@Ahl79]`
+and Miranda `[@Mir95]`, are not in the checkout, and nothing retained states it: Stein--Shakarchi
+has no uniformization theorem, Hartshorne's text mentions only uniformizing parameters, and the
+Gunning extract under `tmp/sources` covers vector bundles. A key for an outside source cannot be
+added either, since `CITE-1` puts bibliographic metadata in Zotero and this environment has no
+access to it.
+
+**What is cited.** The proper simply connected case is the Riemann mapping theorem, cited on the
+page to Stein--Shakarchi Theorem 3.1, printed p. 224, and the plane case is proved there from
+Liouville. The general statement stays at book level until Ahlfors or Miranda is in the checkout.
