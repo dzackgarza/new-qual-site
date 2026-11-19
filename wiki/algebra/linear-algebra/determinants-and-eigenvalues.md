@@ -13,7 +13,7 @@ topics:
 
 ## Forms and normal matrices
 
-A bilinear form is read in a basis by its Gram matrix, which decides nondegeneracy, and a complex matrix is normal exactly when it is unitarily diagonalizable; over a perfect field every operator splits uniquely into commuting semisimple and nilpotent parts.
+The page opens with the three structures its later sections read off a basis: a bilinear form, a matrix characterized by the change of basis that diagonalizes it, and the semisimple-plus-nilpotent splitting that exists over a perfect field.
 
 [[D-5BR4D]]
 
@@ -34,8 +34,6 @@ A bilinear form is read in a basis by its Gram matrix, which decides nondegenera
 [[D-23FX7]]
 
 [[PR-24CPI]]
-
-Similar matrices have the same characteristic polynomial, minimal polynomial, and Jordan form, and two matrices over a field are equivalent exactly when they have the same size and rank.
 
 [[D-JIGMN]]
 
