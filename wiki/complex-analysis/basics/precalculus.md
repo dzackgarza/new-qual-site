@@ -28,7 +28,7 @@ The interior angles of a convex $n$-gon sum to $(n-2)\pi$, so each interior angl
 
 ![](/assets/figures/2021-12-04_00-57-40.png)
 
-  The rectangular hyperbola is $xy = \frac{c^2}{2}$.
+  The rectangular hyperbola $x^2-y^2 = a^2$ is $xy = a^2/2$ after the rotation by $\pi/4$, whose focal distance is $a\sqrt2$; in the notation $c$ of the ellipse above the constant is therefore $c^2/4$, not $c^2/2$.
 - Parabola: $y^2 = 4ax$.
 
 :::
