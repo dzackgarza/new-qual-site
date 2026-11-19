@@ -170,6 +170,8 @@ References: [@Har77, Chapters I--IV; @Mir95, Chapters I--VIII].
 
 6. The Enriques–Kodaira classification.
 
+References: [@GH94, Chapters 0--4; @Mir95, Chapters XI--XII; @Har92, Chapter V].
+
 7. The Bogomolov–Miyaoka–Yau inequality.
 
 ## Toric varieties
