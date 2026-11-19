@@ -60,6 +60,8 @@ in the annulus $1 \leq \abs{z} \leq 2$.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: two applications of Rouché's theorem, on $\abs z=2$ against $2z^5$ and on $\abs z=1$ against $-6z^2$, with the count in the annulus read off between them, and no source transcribed. The statement is the exercise as it is printed on four published qualifying examinations, named with their pages in the audit, none of which is accompanied by a solution. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $f(z) = 2z^5 - 6z^2 + z + 1$, and let $A = \{z \in \CC : 1 \leq \abs{z} \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
 
 * * *
