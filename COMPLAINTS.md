@@ -4788,3 +4788,19 @@ Consequently $C$ is a curve over $K$ --- the identity $K=H^0(C,\OO_C)$ is a $k$-
 **Repair, 2026-11-19:** `P-AGH555ELEMTRANSFORM` in `686f84b92c`, one `source-checked` event appended and no rendered sentence changed, and this record; no other card changes. Checks on the card: `./.venv/bin/python -m qualc.authoring check P-AGH555ELEMTRANSFORM`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh` on the card file, numbering the steps 1 to 7 with QED labels present and no unknown step label; `./.venv/bin/python tools/sync_macros.py --check`, silent.
 
 **Uncertainty.** Confidence high in the page placements, read off the PDF's own folios. Not checked: the rest of Fuentes--Pedreira beyond the statements named; Lemma 4.6 and Proposition 3.8 were not re-read in this pass; and no source outside the paper and Hartshorne's printed exercise was read for this card.
+## 2026-11-19: V.2.17(b) in characteristics 2 and 3 is decided by the card's own extension class, and agrees with the printed answer
+
+**Object and need.** `P-AGH5217CONORMALSPLIT` (Hartshorne V.2.17(b), printed p. 386) and [#160](https://github.com/dzackgarza/new-qual-site/issues/160), whose row for this card records part (b) open in characteristics 2 and 3: Yang Pi-Yeh's Jacobian presentation is undecided in characteristic 3 and unusable in characteristic 2. The card's own computation of the extension class is characteristic-free; this pass checks it against the book.
+
+**Evidence.** Hartshorne, *Algebraic Geometry* (1977), V.2.17, printed p. 386, with the printed Answer "If $\operatorname{char}k\ne2$, then $l=m=-7$; if $\operatorname{char}k=2$, then $l,m=-6,-8$" (text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`, printed p. $N$ = PDF p. $N+15$, the exercise under the marker of PDF p. 401). The card's step `s3` computes, on the affine chart with $q=c-ab$ and $h=b-a^n$, the substitutions $b=a^n+h$ and $c=a^{n+1}+ah+q$:
+$$
+ac^{n-1}-b^n=-a^{n^2-n}h+(n-1)a^{n^2-n-1}q\pmod{(q,h)^2},
+\qquad c^n\equiv a^{n^2+n},
+$$
+so $h'\equiv-s^{-2n}h+(n-1)s^{-2n-1}q$; after the diagonal transition factors the extension class is $(n-1)\eta$, where $0\ne\eta\in H^1(\PP^1,\OO(-2))$. For $n=3$ this is $2\eta$, which is zero exactly when $2=0$. Hence characteristic 3 gives the non-split $\OO(-7)\oplus\OO(-7)$, the book's answer for $\operatorname{char}k\ne2$, and characteristic 2 gives the split $\OO(-6)\oplus\OO(-8)$ by step `s4`, the book's answer there. The printed answer is confirmed in both characteristics by the card's own proof.
+
+**What changed.** `P-AGH5217CONORMALSPLIT` in `95de9c1cbf`, one `source-checked` event appended; no rendered sentence changed. This record changes no card.
+
+**Acceptance, #160's V.2.17 row.** Met: part (b) is proved in characteristic 2 and in characteristic 3, and the printed answer is checked against the book. No published proof of those two characteristics is claimed; Yang's is sound away from 2 and 3, wrong in characteristic 3, and not the conormal's presentation in characteristic 2, as the card's remark says.
+
+**Uncertainty.** Not checked: the card's other steps were not re-derived in this pass; only the computation of step `s3` was verified line by line; and no source outside Hartshorne and the retained Yang extraction was read for this card.
