@@ -27,6 +27,15 @@ audit:
     case from the connectedness of the complement in the sphere together with the constancy of
     the winding number on components of the complement of the cycle. Not claimed: a retained
     solution set; the collection's provenance is the examination compilation.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read the item on 2026-11-19 in the retained scan
+    assets/attachments/analysis_2003-2007.pdf at PDF p. 25. The card had cited neither the
+    examination nor a page; it now names both, and the statement was compared with the
+    printed item and left unchanged.
+
 ---
 
 ::: {.problem}
@@ -34,6 +43,9 @@ State the global Cauchy Theorem.
 :::
 
 ::: {.solution}
+The item is Section 1 item 3 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan University, Summer 2005 (statement of the global Cauchy theorem), on PDF p. 25 of the retained scan
+assets/attachments/analysis_2003-2007.pdf.
+
 The examination asks for the statement, so the card's answer is the statement itself, together with the definitions that make it intelligible and the special case that is usually quoted. Throughout $U \subseteq \CC$ is open, $f\colon U \to \CC$ is analytic, a cycle in $U$ is a finite formal sum $\Gamma = \sum_{j}n_{j}\gamma_{j}$ of closed paths in $U$ with integer coefficients, and $\operatorname{Ind}(\Gamma,w) \coloneqq \frac{1}{2\pi i}\int_{\Gamma}\frac{d\zeta}{\zeta - w}$ is the winding number of $\Gamma$ about $w \notin \Gamma$. The collection's `provenance` is the Wesleyan analysis compilation, and no solutions sheet accompanies it.
 
 ::: pf
