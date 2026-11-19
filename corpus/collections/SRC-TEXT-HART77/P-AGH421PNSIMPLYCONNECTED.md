@@ -23,6 +23,27 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.1, printed p. 85,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.1, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the connectedness of f^*H by (III, 7.9), the triviality of the
+    restricted cover by induction, and the conclusion deg f = 1. Not checked: Yang's Solutions outside printed pp. 84-86; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.1 at printed
+    p. 85 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -221,4 +242,6 @@ Step [](#s7){.pf-ref} is exactly the required conclusion.
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.1, printed p. 210, text version `tmp/sources/hartshorne-solutions-egbert.md`, retypes the $\PP^1$ case ($2g(X)-2=n(-2)$ with $g\ge0$ forces $g=0$, $n=1$) and then inducts: pulling back an étale cover of $\PP^n$ to a hyperplane gives a connected cover by ampleness and (III.7.9), so the cover has degree one.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.1, printed p. 85, runs the induction on $n$ that (2.5.3) asks for: for an étale covering $f:X\to\PP^n$ and a hyperplane $H$, the pullback $f^*H$ is ample, so it is connected by (III, 7.9); $f$ restricts to an étale covering $f^*H\to H$, which is trivial by the induction hypothesis, so $f$ is an isomorphism over $H$, hence $\deg f=1$ and $f$ is an isomorphism.
 :::
