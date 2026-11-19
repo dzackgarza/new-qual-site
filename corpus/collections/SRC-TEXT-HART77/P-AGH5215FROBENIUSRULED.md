@@ -512,7 +512,7 @@ Xie, Example 3.1, printed pp. 5--6. Pulling the extension back by Frobenius give
 $$
 0\to\OO_C\to F^*\mathcal E\to\mathcal L^3\to0
 $$
-"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$", printed p. 5; the smoothness of $C'$ is step [](#s9){.pf-ref}, where it fails.
+"since the extension class of (4) is just $F^*\eta(\alpha)=0$", which here is the choice of $\xi$ in step [](#s5){.pf-ref}. From it he obtains the exact sequence $0\to\OO_C\to F^*\mathcal E\otimes\mathcal L^{-3}\to\mathcal L^{-3}\to0$, "which determines a section $t\in H^0(X,\OO_X(3)\otimes f^*\mathcal L^{-3})$ through the maps $H^0(C,\OO_C)\hookrightarrow H^0(C,F^*\mathcal E\otimes\mathcal L^{-p})\hookrightarrow H^0(C,S^p(\mathcal E)\otimes\mathcal L^{-p})=H^0(X,\OO_X(p)\otimes f^*\mathcal L^{-p})$", and "The section $t$ determines an irreducible curve $C'\subset X$ such that $\OO_X(C')\cong\OO_X(p)\otimes f^{*}\mathcal L^{-p}$". He adds "It is easy to verify that both $E$ and $C'$ are smooth over $k$, and $E\cap C'=\emptyset$", printed p. 5; the smoothness of $C'$ is false, by steps [](#s7){.pf-ref} and [](#s9){.pf-ref}.
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$.
 
@@ -584,7 +584,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-Parts (a) and (b) have complete published arguments, and the curve of part (c) does too, apart from the printed adjective.
+Parts (a) and (b) have complete published arguments, and part (c) is published too, in the form steps [](#s7){.pf-ref} to [](#s9){.pf-ref} correct.
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
