@@ -27,6 +27,25 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed from a source-verified pass. Two corrections to the printed statement are proved rather than asserted: the jump identity holds on the open interval and gives h(+-M)/2 at the endpoints, and the uniform convergence claimed in (b) fails when h(+-M) != 0, since |g(M+i eps)| = (|h(M)|/2 pi) log(1/eps) + O(1). The characterisation is unique as stated on the closed interval.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Structured into Lamport steps without altering the mathematics: the two lemmas, Steps 1 to 6
+    and the endpoint discussion are now numbered steps, each carrying the prose that was already on
+    the card as its proof, and the four remarks on the printed statement follow the proof block as
+    the card had them. Checked while restructuring: the Poisson kernel normalisation and its tail
+    estimate; the holomorphy of g from the parametrised integral over [0,1] and Theorem 5.4 of
+    Chapter 2; the vanishing at infinity from |y - z| >= |z|/2 for |z| >= 2M; the jump identity from
+    the difference of the two kernels equalling 2 i epsilon/((y-x)^2 + epsilon^2), which is
+    2 pi P_epsilon(y - x); the endpoint value h(+-M)/2 from half of the kernel's mass falling
+    outside [-M, M]; the Plemelj formula with the three estimates (existence of A, B_epsilon ->
+    pi h, A_epsilon -> A); the uniform version when h(+-M) = 0 using the extension H and Lemma 2;
+    and the characterisation, both uniqueness (symmetry principle, maximum modulus, removable
+    singularity, Liouville) and the failure when h(M) != 0 (logarithmic growth). The card's two
+    recorded corrections to the printed statement (the jump identity on the open interval, and the
+    endpoint hypothesis needed for uniformity) are retained in the remarks. Statement unchanged; the
+    card does not claim a retained solution set covers this problem.
 ---
 
 ::: {.exercise}
@@ -56,7 +75,6 @@ $$
 :::
 
 ::: {.solution}
-
 Let $M>0$, let $h\colon[-M,M]\to\CC$ be continuous, put $B\coloneqq\sup_{[-M,M]}\abs{h}$, and set
 
 $$
@@ -65,21 +83,31 @@ $$
 
 The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated.
 
-**Lemma 1 (the Poisson kernel of the half-plane).** For $\varepsilon>0$ and $t\in\RR$ put $P_\varepsilon(t)\coloneqq\frac{1}{\pi}\frac{\varepsilon}{t^2+\varepsilon^2}$. Then $\int_\RR P_\varepsilon(t)\,dt=1$, and for every $\gamma>0$
+::: pf
+
+::: {.pf-step #lem1}
+For $\varepsilon>0$ and $t\in\RR$ put $P_\varepsilon(t)\coloneqq\frac{1}{\pi}\frac{\varepsilon}{t^2+\varepsilon^2}$. Then $\int_\RR P_\varepsilon(t)\,dt=1$, and for every $\gamma>0$
 
 $$
 \int_{\abs{t}>\gamma}P_\varepsilon(t)\,dt=\frac{2}{\pi}\arctan\frac{\varepsilon}{\gamma}\longrightarrow0\qquad(\varepsilon\to0^+).
 $$
 
-*Proof.* The substitution $t=\varepsilon u$ gives $\int_\RR P_\varepsilon=\frac1\pi\int_\RR\frac{du}{1+u^2}=1$ and $\int_{\abs{t}>\gamma}P_\varepsilon=\frac1\pi\int_{\abs{u}>\gamma/\varepsilon}\frac{du}{1+u^2}=1-\frac{2}{\pi}\arctan\frac{\gamma}{\varepsilon}=\frac{2}{\pi}\arctan\frac{\varepsilon}{\gamma}$, using $\arctan(1/s)=\frac\pi2-\arctan s$ for $s>0$. $\square$
+::: pf-proof
+The substitution $t=\varepsilon u$ gives $\int_\RR P_\varepsilon=\frac1\pi\int_\RR\frac{du}{1+u^2}=1$ and $\int_{\abs{t}>\gamma}P_\varepsilon=\frac1\pi\int_{\abs{u}>\gamma/\varepsilon}\frac{du}{1+u^2}=1-\frac{2}{\pi}\arctan\frac{\gamma}{\varepsilon}=\frac{2}{\pi}\arctan\frac{\varepsilon}{\gamma}$, using $\arctan(1/s)=\frac\pi2-\arctan s$ for $s>0$. $\square$
+:::
 
-**Lemma 2 (approximate identity on the line).** Let $H\colon\RR\to\CC$ be continuous, bounded by $B$, and uniformly continuous; for instance $H$ the extension of $h$ by $0$ outside $[-M,M]$, which is uniformly continuous as soon as $h$ satisfies the Hölder condition of part (b) and $h(\pm M)=0$. Then
+:::
+
+
+::: {.pf-step #lem2}
+Let $H\colon\RR\to\CC$ be continuous, bounded by $B$, and uniformly continuous; for instance $H$ the extension of $h$ by $0$ outside $[-M,M]$, which is uniformly continuous as soon as $h$ satisfies the Hölder condition of part (b) and $h(\pm M)=0$. Then
 
 $$
 \sup_{x\in\RR}\abs{\int_\RR P_\varepsilon(y-x)H(y)\,dy-H(x)}\longrightarrow0\qquad(\varepsilon\to0^+).
 $$
 
-*Proof.* Fix $\eta>0$ and choose $\gamma>0$ with $\abs{H(y)-H(x)}<\eta$ whenever $\abs{y-x}<\gamma$, uniformly in $x$ by uniform continuity. Then, since $\int_\RR P_\varepsilon=1$,
+::: pf-proof
+Fix $\eta>0$ and choose $\gamma>0$ with $\abs{H(y)-H(x)}<\eta$ whenever $\abs{y-x}<\gamma$, uniformly in $x$ by uniform continuity. Then, since $\int_\RR P_\varepsilon=1$,
 
 $$
 \abs{\int_\RR P_\varepsilon(y-x)H(y)dy-H(x)}
@@ -88,10 +116,16 @@ $$
 $$
 
 by Lemma 1, and the right side is $<\eta+2B\cdot\frac{2}{\pi}\frac{\varepsilon}{\gamma}$ for all $x$ at once. $\square$
+:::
 
-**Part (a): holomorphy, vanishing at infinity, and the jump.**
+:::
 
-**Step 1: $g$ is holomorphic on $\Omega$.** The substitution $y=-M+2Ms$ turns the integral into an integral over $[0,1]$:
+
+::: {.pf-step #s4}
+$g$ is holomorphic on $\Omega=\CC\setminus[-M,M]$.
+
+::: pf-proof
+The substitution $y=-M+2Ms$ turns the integral into an integral over $[0,1]$:
 
 $$
 g(z)=\frac{M}{\pi i}\int_0^1\frac{h(-M+2Ms)}{-M+2Ms-z}\,ds=\frac{M}{\pi i}\int_0^1F(z,s)\,ds,
@@ -99,16 +133,32 @@ g(z)=\frac{M}{\pi i}\int_0^1\frac{h(-M+2Ms)}{-M+2Ms-z}\,ds=\frac{M}{\pi i}\int_0
 $$
 
 For each $s\in[0,1]$ the denominator $-M+2Ms-z$ is a non-zero holomorphic function of $z$ on $\Omega$ (its zero $-M+2Ms$ lies on $[-M,M]$), so $F(\cdot,s)$ is holomorphic on $\Omega$; and $F$ is continuous on $\Omega\times[0,1]$, because $h$ is continuous on $[-M,M]$ and $\abs{-M+2Ms-z}$ is continuous and nowhere zero there. By Theorem 5.4 of Chapter 2 [@SS03] the integral is holomorphic on $\Omega$.
+:::
 
-**Step 2: $g$ vanishes at infinity.** If $\abs{z}\ge2M$ and $\abs{y}\le M$ then $\abs{y-z}\ge\abs{z}-M\ge\abs{z}/2$, hence
+:::
+
+
+::: {.pf-step #s5}
+$g$ vanishes at infinity.
+
+::: pf-proof
+If $\abs{z}\ge2M$ and $\abs{y}\le M$ then $\abs{y-z}\ge\abs{z}-M\ge\abs{z}/2$, hence
 
 $$
 \abs{g(z)}\le\frac{1}{2\pi}\int_{-M}^{M}\frac{\abs{h(y)}}{\abs{y-z}}\,dy\le\frac{1}{2\pi}\cdot 2M\cdot\frac{B}{\abs{z}/2}=\frac{2MB}{\pi\abs{z}},
 $$
 
 so $\abs{g(z)}\to0$ as $\abs{z}\to\infty$; in particular $g$ is bounded on $\Omega$.
+:::
 
-**Step 3: the jump.** For $x\in\RR$, $\varepsilon>0$ and $y\ne x$,
+:::
+
+
+::: {.pf-step #s6}
+$g(x+i\varepsilon)-g(x-i\varepsilon)=\int_{-M}^{M}P_\varepsilon(y-x)h(y)\,\dd y$, and the jump of $g$ across the open interval is $h$, uniformly on compact subsets of $(-M,M)$.
+
+::: pf-proof
+For $x\in\RR$, $\varepsilon>0$ and $y\ne x$,
 
 $$
 \frac{1}{y-x-i\varepsilon}-\frac{1}{y-x+i\varepsilon}
@@ -133,7 +183,7 @@ $$
 and with $\gamma>0$ chosen so that $\abs{h(y)-h(x)}<\eta$ for $\abs{y-x}<\gamma$ (possible uniformly in $x$ because $h$ is uniformly continuous on the compact interval $[-M,M]$),
 
 $$
-\Bigl|\int_{-M}^{M}P_\varepsilon(y-x)h(y)dy-h(x)\Bigr|
+\abs{\int_{-M}^{M}P_\varepsilon(y-x)h(y)dy-h(x)}
 \le\eta+2B\int_{\abs{t}>\gamma}P_\varepsilon(t)\,dt+B\int_{\abs{t}>\delta}P_\varepsilon(t)\,dt .
 $$
 
@@ -145,8 +195,16 @@ h(x)=\lim_{\substack{\varepsilon\to0\\ \varepsilon>0}}\bigl(g(x+i\varepsilon)-g(
 $$
 
 uniformly on compact subsets of $(-M,M)$.
+:::
 
-**The endpoints.** The same computation locates the limit at $x=\pm M$: with $y=M-u$,
+:::
+
+
+::: {.pf-step #s7}
+At $x=\pm M$ the limit of $g(x+i\varepsilon)-g(x-i\varepsilon)$ is $h(\pm M)/2$, not $h(\pm M)$.
+
+::: pf-proof
+The same computation locates the limit at $x=\pm M$: with $y=M-u$,
 
 $$
 g(M+i\varepsilon)-g(M-i\varepsilon)=\frac{1}{\pi}\int_{0}^{2M}\frac{\varepsilon}{u^2+\varepsilon^2}h(M-u)\,du
@@ -154,12 +212,16 @@ g(M+i\varepsilon)-g(M-i\varepsilon)=\frac{1}{\pi}\int_{0}^{2M}\frac{\varepsilon}
 $$
 
 and likewise at $-M$. So the printed identity "the jump of $g$ across $[-M,M]$ is $h$" holds on the open interval only: at an endpoint the segment bounds $\Omega$ from one side, half of the kernel mass falls outside $[-M,M]$, and the limit of the difference is $h(\pm M)/2$. On the open interval, where the jump is two-sided, the identity is exactly as printed.
+:::
 
-**Part (b): boundary values under a Hölder condition, and the characterisation.**
+:::
 
-From now on $h$ satisfies the Hölder condition of the statement: there are $C>0$ and $0<\alpha\le1$ with $\abs{h(y)-h(x)}\le C\abs{y-x}^{\alpha}$ for all $x,y\in[-M,M]$.
 
-**Step 4: the Plemelj formula, uniformly on compact subsets of the open interval.** For $x\in(-M,M)$ set
+::: {.pf-step #s9}
+Step 4 (Plemelj): with $A(x)=\operatorname{PV}\int_{-M}^{M}\frac{h(y)}{y-x}\dd y$ and $g^{\pm}(x)=\pm\frac{h(x)}{2}+\frac{1}{2\pi i}A(x)$, one has $g(x\pm i\varepsilon)\to g^{\pm}(x)$ uniformly on compact subsets of $(-M,M)$, so $g^{+}-g^{-}=h$ there.
+
+::: pf-proof
+For $x\in(-M,M)$ set
 
 $$
 A(x)\coloneqq\operatorname{PV}\!\int_{-M}^{M}\frac{h(y)}{y-x}\,dy,\qquad
@@ -200,7 +262,7 @@ so $A(x)$ is finite, and $A$ is continuous on $(-M,M)$ by dominated convergence.
 *(ii) $B_\varepsilon\to\pi h$.* This is the estimate of Step 3: for $x\in[-M+\delta,M-\delta]$,
 
 $$
-\Bigl|\frac{B_\varepsilon(x)}{\pi}-h(x)\Bigr|\le\eta(\gamma)+2B\int_{\abs{t}>\gamma}P_\varepsilon(t)\,dt+B\int_{\abs{t}>\delta}P_\varepsilon(t)\,dt
+\abs{\frac{B_\varepsilon(x)}{\pi}-h(x)}\le\eta(\gamma)+2B\int_{\abs{t}>\gamma}P_\varepsilon(t)\,dt+B\int_{\abs{t}>\delta}P_\varepsilon(t)\,dt
 $$
 
 with $\eta(\gamma)\coloneqq\sup\{\abs{h(y)-h(x)}:\abs{y-x}<\gamma\}$, which tends to $0$ with $\gamma$ uniformly in $x$ by uniform continuity of $h$ on $[-M,M]$.
@@ -211,7 +273,7 @@ $$
 A_\varepsilon(x)-A(x)=\int_{-M}^{M}\bigl(h(y)-h(x)\bigr)\Bigl(K_\varepsilon(y-x)-\frac{1}{y-x}\Bigr)dy+h(x)\bigl(J_\varepsilon(x)-J(x)\bigr).
 $$
 
-For $u\neq0$, $\bigl|K_\varepsilon(u)-\frac1u\bigr|=\frac{\varepsilon^2}{\abs{u}(u^2+\varepsilon^2)}\le\min\Bigl(\frac{2}{\abs{u}},\frac{\varepsilon^2}{\abs{u}^3}\Bigr)$; and for $\abs{x}\le M-\delta$, $\abs{J_\varepsilon(x)-J(x)}\le\frac12\Bigl(\frac{\varepsilon^2}{(M-x)^2}+\frac{\varepsilon^2}{(M+x)^2}\Bigr)\le\frac{\varepsilon^2}{\delta^2}$, using $\abs{\log(1+s)}\le s$ for $s\ge0$. Hence, for any $\gamma>0$ and $\abs{x}\le M-\delta$,
+For $u\neq0$, $\abs{K_\varepsilon(u)-\frac1u}=\frac{\varepsilon^2}{\abs{u}(u^2+\varepsilon^2)}\le\min\Bigl(\frac{2}{\abs{u}},\frac{\varepsilon^2}{\abs{u}^3}\Bigr)$; and for $\abs{x}\le M-\delta$, $\abs{J_\varepsilon(x)-J(x)}\le\frac12\Bigl(\frac{\varepsilon^2}{(M-x)^2}+\frac{\varepsilon^2}{(M+x)^2}\Bigr)\le\frac{\varepsilon^2}{\delta^2}$, using $\abs{\log(1+s)}\le s$ for $s\ge0$. Hence, for any $\gamma>0$ and $\abs{x}\le M-\delta$,
 
 $$
 \abs{A_\varepsilon(x)-A(x)}
@@ -222,8 +284,16 @@ $$
 independently of $x$. Letting first $\varepsilon\to0^+$ and then $\gamma\to0^+$ proves (iii). Combining (i)–(iii) gives the claim, since $g(x+i\varepsilon)-g^{+}(x)=\frac{1}{2\pi i}\bigl(A_\varepsilon(x)-A(x)\bigr)+\frac{1}{2\pi}\bigl(B_\varepsilon(x)-\pi h(x)\bigr)$; the computation for $g(x-i\varepsilon)$ and $g^{-}(x)$ is the same with $\varepsilon$ replaced by $-\varepsilon$. $\square$
 
 So without any hypothesis at the endpoints $g$ has the two boundary functions $g^{\pm}$, and $g^{+}-g^{-}=h$, on the open interval, uniformly on compact subsets.
+:::
 
-**Step 5: the boundary functions are uniform up to the endpoints when $h(\pm M)=0$.** Assume in addition $h(\pm M)=0$. Then the extension $H$ of $h$ by $0$ outside $[-M,M]$ satisfies the same Hölder inequality on all of $\RR$: for $y\in[-M,M]$ and $x>M$ one has $\abs{H(y)-H(x)}=\abs{h(y)}=\abs{h(y)-h(M)}\le C(y-M)^{\alpha}\le C\abs{y-x}^{\alpha}$, and symmetrically at $-M$. Consequently
+:::
+
+
+::: {.pf-step #s10}
+Step 5: if in addition $h(\pm M)=0$, the convergence is uniform on the closed interval $[-M,M]$.
+
+::: pf-proof
+Assume in addition $h(\pm M)=0$. Then the extension $H$ of $h$ by $0$ outside $[-M,M]$ satisfies the same Hölder inequality on all of $\RR$: for $y\in[-M,M]$ and $x>M$ one has $\abs{H(y)-H(x)}=\abs{h(y)}=\abs{h(y)-h(M)}\le C(y-M)^{\alpha}\le C\abs{y-x}^{\alpha}$, and symmetrically at $-M$. Consequently
 
 $$
 \sup_{x\in[-M,M]}\abs{g(x+i\varepsilon)-g^{+}(x)}\longrightarrow0,
@@ -247,8 +317,16 @@ $$
 $$
 
 Likewise $B_\varepsilon(x)=\pi\int_\RR P_\varepsilon(y-x)H(y)\,dy$ and Lemma 2 gives $\sup_{x\in\RR}\abs{B_\varepsilon(x)-\pi H(x)}\to0$. Both statements are uniform on $\RR$, hence on $[-M,M]$. $\square$
+:::
 
-**Step 6: the characterisation.** Let $\mathcal{C}$ be the class of functions $G$ with
+:::
+
+
+::: {.pf-step #s11}
+Step 6 (the characterisation): $\mathcal C$ has at most one element, and $g\in\mathcal C$ if and only if $h(\pm M)=0$.
+
+::: pf-proof
+Let $\mathcal{C}$ be the class of functions $G$ with
 
 - (i) $G$ holomorphic on $\Omega$;
 - (ii) $G(z)\to0$ as $\abs{z}\to\infty$;
@@ -281,7 +359,7 @@ $$
 g(M+i\varepsilon)=-\frac{1}{2\pi i}\int_0^{2M}\frac{h(M-u)}{u+i\varepsilon}\,du .
 $$
 
-Write $h(M-u)=h(M)+\rho(u)$ with $\abs{\rho(u)}\le Cu^{\alpha}$. Then $\bigl|\int_0^{2M}\frac{\rho(u)}{u+i\varepsilon}du\bigr|\le C\int_0^{2M}u^{\alpha-1}du=\frac{C(2M)^{\alpha}}{\alpha}$, while
+Write $h(M-u)=h(M)+\rho(u)$ with $\abs{\rho(u)}\le Cu^{\alpha}$. Then $\abs{\int_0^{2M}\frac{\rho(u)}{u+i\varepsilon}du}\le C\int_0^{2M}u^{\alpha-1}du=\frac{C(2M)^{\alpha}}{\alpha}$, while
 
 $$
 \int_0^{2M}\frac{du}{u+i\varepsilon}=\log(2M+i\varepsilon)-\log(i\varepsilon)=\log\frac{2M}{\varepsilon}-\frac{\pi i}{2}+o(1)\qquad(\varepsilon\to0^+).
@@ -294,6 +372,11 @@ $$
 $$
 
 and the same holds at $-M$ and for $g(M-i\varepsilon)$. So $g(M+i\varepsilon)$ has no finite limit as $\varepsilon\to0^+$, and (iii) fails. $\square$
+:::
+
+:::
+
+:::
 
 **Remarks on the printed statement.**
 
@@ -310,5 +393,4 @@ G(z)\coloneqq g(z)+\frac{1}{z^2-M^2}
 $$
 
 also satisfies (i) and (ii) (its only poles are at $\pm M\notin\Omega$), and $G(x\pm i\varepsilon)$ converge uniformly on compact subsets of $(-M,M)$ with $G^{+}-G^{-}=h$, since $\frac{1}{z^2-M^2}$ is continuous at every point of $(-M,M)$ and has the same limit from either side; yet $G\ne g$, and $G-g$ is not entire. So what singles $g$ out is the boundedness of $G-g$ near the two endpoints — the hypothesis that makes $G-g$ entire — and not condition (iii) alone.
-
 :::
