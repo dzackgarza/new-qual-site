@@ -33,4 +33,4 @@ An inseparable extension needs an imperfect field of characteristic $p$: every a
 
 [[PR-KFQJG]]
 
-A splitting field need not be Galois in characteristic $p$: over $k=\FF_p(t)$ the polynomial $x^p-t$ equals $(x-t^{1/p})^p$, so its only root is $t^{1/p}$ and its splitting field is $k(t^{1/p})$, which [[PR-MK2W6]] shows to be inseparable of degree $p$.
+A splitting field need not be Galois in characteristic $p$: over $k=\FF_p(t)$ the polynomial $x^p-t$ equals $(x-t^{1/p})^p$, so its only root is $t^{1/p}$ and its splitting field is $k(t^{1/p})$, which is inseparable of degree $p$; the polynomial $x^p-t$ is [[PR-MK2W6|the standard irreducible inseparable example]].
