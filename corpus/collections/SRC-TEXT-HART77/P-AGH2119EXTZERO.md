@@ -405,6 +405,8 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 68 of Hartshorne, headed "Extending a Sheaf by Zero", read off that page (a 100 dpi render of PDF p. 83, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines); the statement above is that page's text, parts (a)--(c) and the exact sequence $0\to j_!(\restrictionof{\mcf}{U})\to\mcf\to i_*i^{-1}\mcf\to0$ included.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.19, PDF p. 9, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: (a) the colimit of $\mcf(V\cap Z)$ over the $V\ni P$, which is cofinal with the neighbourhoods of $P$ in $Z$; (b) the same computation for $j_!$, with uniqueness obtained by extending the isomorphism on $U$ to the presheaf defining $j_!$ and checking stalks; (c) the unit of $\inverseof i\dashv i_*$ together with the morphism $j_!\to\mcf$, checked at the two kinds of point.
 The proof above is that argument in ten steps.
 Agree.
