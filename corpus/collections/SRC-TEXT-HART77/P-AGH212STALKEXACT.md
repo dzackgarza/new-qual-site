@@ -95,6 +95,8 @@ $$
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, both parts -- the stalks of kernel, image and cokernel of a morphism of sheaves, and the equivalence of injectivity, surjectivity and bijectivity with the corresponding property on every stalk.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.2, PDF pp. 2--3, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he reduces both identities of (a) to two facts, that sheafification does not change stalks and that kernels and images of abelian-group maps commute with the directed colimits which compute stalks, then reads (b) off as $\ker\phi=0$ and $\coker\phi=0$ and (c) off as $\ker\phi^{i}=\im\phi^{i-1}$ checked on stalks.
 The proof above uses the same commutation for the kernels, but carries (a) out as an explicit chase on representatives, and the paragraph above carries the image out the same way; (b) and (c) are the same.
 Agree.
