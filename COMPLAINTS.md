@@ -9107,3 +9107,17 @@ and not read on its own page.
 **What stands.** The four repairs of the fourth round are unchanged: the notation declared on `P-AGH4110PICOFARITHGENUSONE`, the two theorem numbers on `P-AGH562CHERNGRIFFITHS`, the sheaf form of adjunction on `P-AGH5210CANONSCROLL` — whose event names only what was read, `s3` — and the product canonical divisor on `P-AGH5111FINITEAUT`. What changes is the size of the claim: of the steps #168 lists for these cards, `trivial-canonical-pg-one` and V.1.11's `s4` and `s10` are read and correct, `s6` of IV.1.10 and `s3` of V.2.10 are read and repaired, and the rest are not read.
 
 **Uncertainty.** Nothing here is a judgement on the four unread steps; a second reader returned SOUND on each of them and that is a lead, not a certification. The next round's items are those steps: `clifford-equality-canonical`, `canonical-meets-hyperplane-zero`, `irregularity-zero` and `main-dichotomy` of `P-AGH562CHERNGRIFFITHS`; `s1`, `s2` and `s7` of `P-AGH4110PICOFARITHGENUSONE`; and `s8`, `s9` and `s11` of `P-AGH5111FINITEAUT`.
+
+## 2026-11-19, twenty-first item: §8.5 Ex. 5 rebuilt, Ex. 11 correct with its closing qed made a step
+
+**Object.** The last two residue-5 cards of `SRC-TEXT-HK71` §8.5.
+
+**`E-HK-85-5`, §8.5 Exercise 5, printed p. 316 — correct, structure rebuilt.** The nilpotent shift $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has $A^2=0$, which is normal, while $A^*A=\operatorname{diag}(0,1)$ and $AA^*=\operatorname{diag}(1,0)$ differ, so $A$ is not normal. Structural defects repaired: a `**Goal.**` paragraph restated the card's own statement — the same defect the ledger's seventh item removed from `E-HK-42-3` and `P-APAS26B` — every proof body was a placeholder ("a candidate", "conjugate transpose", "multiply"), and a trailing `pf-qed` was a back-reference. The proof is now two steps, each with its computation. Commit `c13053a019`.
+
+**`E-HK-85-11`, §8.5 Exercise 11, printed p. 317 — correct, one structural change.** For normal $M$ the identity $\|M\gamma\|=\|M^*\gamma\|$ gives $\ker M^2=\ker M$; powers of a normal operator are normal, so $\ker N^{2^m}=\ker N$; taking $2^m\ge k$ with $N^k=0$ gives $\ker N=V$ and $N=0$. The closing argument sat in a `pf-qed` block rather than a step; it is now the third step, which carries the QED label. No claim changed. Commit `8a823ff06d`.
+
+**The shape of the §8 batch.** Of the eight §8 cards read, five had the right mathematics and proof bodies that said nothing (`E-HK-84-5`, `-85-5` entirely, `-83-5`, `-84-11` and `-85-11` at the edges); three were clean (`E-HK-81-5`, `-81-11`, `-83-11`). Every repair was structural: no statement changed and no claim was withdrawn.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-85-5` 1–2 and `E-HK-85-11` 1–3 with QED labels; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; `E-HK-85-11`'s two ingredients — the normality of powers and the kernel identity — were checked here, but the book's own proof of them was not consulted.
