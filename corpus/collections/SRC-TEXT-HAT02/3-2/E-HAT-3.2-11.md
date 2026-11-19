@@ -49,6 +49,14 @@ audit:
     the section and exercise rather than a page, and the earlier reference to "printed p. 14" is
     replaced by that. The evaluation-pairing argument the card already carried is kept as a second
     step and labelled as the card's own. Statement and bracketed hypotheses unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    cites the retained solution by section as `\S3.2`, a section sign written as a TeX command
+    outside a math span, which the HTML writer drops; it now reads the character `§3.2`, as the
+    corpus does elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -56,7 +64,7 @@ Using cup products, show that every map $S^{k+\ell} \to S^k \times S^\ell$ induc
 :::
 
 ::: {.solution}
-Both generators of the top cohomology of $S^k\times S^\ell$ are cup products of the two degree-$k$ and degree-$\ell$ classes, and each of those pulls back to $0$ under a map from $S^{k+\ell}$ because the intermediate cohomology of the sphere vanishes; so $f^*$ is zero in the top degree, and the top homology map is its linear-algebraic dual. The argument is the retained published solution: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), \S3.2 Exercise 11** (`tmp/sources/hatcher-solutions-sam-2008.md`), whose route runs through the naturality of the universal coefficient theorem; the evaluation pairing gives the same conclusion and is recorded as a second step, as the card already had it. Sam's text has no reliable page markers, so the set is cited by section and exercise.
+Both generators of the top cohomology of $S^k\times S^\ell$ are cup products of the two degree-$k$ and degree-$\ell$ classes, and each of those pulls back to $0$ under a map from $S^{k+\ell}$ because the intermediate cohomology of the sphere vanishes; so $f^*$ is zero in the top degree, and the top homology map is its linear-algebraic dual. The argument is the retained published solution: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §3.2 Exercise 11** (`tmp/sources/hatcher-solutions-sam-2008.md`), whose route runs through the naturality of the universal coefficient theorem; the evaluation pairing gives the same conclusion and is recorded as a second step, as the card already had it. Sam's text has no reliable page markers, so the set is cited by section and exercise.
 
 ::: pf
 
