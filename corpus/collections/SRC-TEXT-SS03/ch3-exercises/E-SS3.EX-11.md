@@ -56,7 +56,7 @@ For $\abs a<1$ the logarithm is expanded in a uniformly convergent power series 
 ::: {.pf-step #series}
 For $\abs a<1$ the series $\Log(1-w)=-\sum_{n\ge1}\frac{w^n}{n}$ converges uniformly on $\abs w\le\abs a$, and hence
 $$
-\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,\dd\theta=-\Re\sum_{n\ge1}\frac{a^n}{n}\int_0^{2\pi}e^{in\theta}\,\dd\theta .$$
+\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\dtheta=-\Re\sum_{n\ge1}\frac{a^n}{n}\int_0^{2\pi}e^{in\theta}\dtheta .$$
 
 ::: pf-proof
 Since $\abs a<1$, the point $1-ae^{i\theta}$ lies in the disc of centre $1$ and radius $\abs a<1$, on which $\Log$ is holomorphic with $\Log(1-w)=-\sum_{n\ge1}w^n/n$ (Chapter 3, §6, the power series of the principal logarithm); and $\log\abs{1-ae^{i\theta}}=\Re\Log(1-ae^{i\theta})$ there, because $\Log$ has real part $\log\abs\cdot$ wherever it is defined. The series converges uniformly on the closed disc $\abs w\le\abs a$ by the Weierstrass $M$-test with $M_n=\abs a^n/n$ and $\sum\abs a^n/n<\infty$. Uniform convergence permits termwise integration of the real parts, which gives the display.
@@ -66,17 +66,17 @@ Since $\abs a<1$, the point $1-ae^{i\theta}$ lies in the disc of centre $1$ and 
 
 
 ::: {.pf-step #inner}
-For $\abs a<1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,\dd\theta=0$.
+For $\abs a<1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\dtheta=0$.
 
 ::: pf-proof
-For every integer $n\ge1$, $\int_0^{2\pi}e^{in\theta}\,\dd\theta=\frac{e^{2\pi in}-1}{in}=0$, since $e^{2\pi in}=1$. So every term of the series in step [](#series){.pf-ref} vanishes and the integral is $0$.
+For every integer $n\ge1$, $\int_0^{2\pi}e^{in\theta}\dtheta=\frac{e^{2\pi in}-1}{in}=0$, since $e^{2\pi in}=1$. So every term of the series in step [](#series){.pf-ref} vanishes and the integral is $0$.
 :::
 
 :::
 
 
 ::: {.pf-step #boundary}
-For $\abs a=1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,\dd\theta=\int_0^{2\pi}\log\bigl(2\abs{\sin(\theta/2)}\bigr)\dd\theta$, the value being independent of the argument of $a$.
+For $\abs a=1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\dtheta=\int_0^{2\pi}\log\bigl(2\abs{\sin(\theta/2)}\bigr)\dtheta$, the value being independent of the argument of $a$.
 
 ::: pf-proof
 Write $a=e^{i\varphi}$. Then $\abs{1-e^{i\varphi}e^{i\theta}}=\abs{1-e^{i(\theta+\varphi)}}$, and $\theta\mapsto\log\abs{1-e^{i(\theta+\varphi)}}$ is $2\pi$-periodic and integrable (see step [](#majorant){.pf-ref}), so its integral over any interval of length $2\pi$ equals its integral over $[0,2\pi]$; substituting $\theta'=\theta+\varphi$ gives the claimed independence of $\varphi$. Finally $\abs{1-e^{i\theta'}}^2=(1-\cos\theta')^2+\sin^2\theta'=2-2\cos\theta'=4\sin^2(\theta'/2)$, so $\abs{1-e^{i\theta'}}=2\abs{\sin(\theta'/2)}$.
@@ -96,7 +96,7 @@ $\abs{1-re^{i\theta}}^2=(1-r)^2+4r\sin^2(\theta/2)$. The lower bound uses $(1-r)
 
 
 ::: {.pf-step #limit}
-$\displaystyle\int_0^{2\pi}\log\abs{1-e^{i\theta}}\,\dd\theta=\lim_{r\uparrow1}\int_0^{2\pi}\log\abs{1-re^{i\theta}}\,\dd\theta=0$.
+$\displaystyle\int_0^{2\pi}\log\abs{1-e^{i\theta}}\dtheta=\lim_{r\uparrow1}\int_0^{2\pi}\log\abs{1-re^{i\theta}}\dtheta=0$.
 
 ::: pf-proof
 For each $\theta\notin\{0,2\pi\}$ one has $\abs{1-re^{i\theta}}\to\abs{1-e^{i\theta}}>0$ as $r\uparrow1$, hence $\log\abs{1-re^{i\theta}}\to\log\abs{1-e^{i\theta}}$; the exceptional set $\{0,2\pi\}$ is null, so the convergence is almost everywhere. Step [](#majorant){.pf-ref} supplies an integrable majorant independent of $r$, so dominated convergence gives the first equality, and the limit of the integrals is $0$ by step [](#inner){.pf-ref}, whose hypothesis $\abs a=r<1$ holds along the sequence.
@@ -106,7 +106,7 @@ For each $\theta\notin\{0,2\pi\}$ one has $\abs{1-re^{i\theta}}\to\abs{1-e^{i\th
 
 
 ::: {.pf-step #conclusion}
-For every $\abs a\le1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,\dd\theta=0$.
+For every $\abs a\le1$, $\displaystyle\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\dtheta=0$.
 
 ::: pf-proof
 If $\abs a<1$ this is step [](#inner){.pf-ref}; if $\abs a=1$ it is step [](#boundary){.pf-ref} combined with step [](#limit){.pf-ref}. These two cases exhaust $\abs a\le1$.
