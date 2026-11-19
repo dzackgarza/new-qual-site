@@ -7561,3 +7561,41 @@ no card in the section carries a certificate.
 **Impact and owner.** No change to the load-bearing finding: p. 479 states the Smith normal form of $xI-A$ over $F[x]$ and does not state the criterion "equivalent if and only if the same Smith normal form", which is why that citation was removed from the sentence it was attached to.
 
 **Uncertainty.** Third edition only, as before. The exercise's chapter-versus-section numbering was not read off a Contents page, only off the page foot, which is why the card now cites the page and not the section.
+
+## 2026-11-19: Yang's 5.1.2, 5.2.4 and 5.3.3 at printed pp. 100, 102 and 107 — three more of the queue, and four slips of his recorded
+
+**Object and need.** `P-AGH512HILBPOLY` (V.1.2), `P-AGH524SECTSELFINT` (V.2.4) and
+`P-AGH533AMPLEPULLBACK` (V.3.3), three more of the thirteen Chapter V cards counted in the record
+above.
+
+**V.1.2, printed p. 100: the Hilbert polynomial.** $P(n)=\frac12n^2H^2-\frac12n\,H\cdot K+1+p_a$ for
+$n\gg0$ gives $a=H^2$ and $c=1+p_a$; adjunction $H\cdot(H+K)=2\pi-2$ gives
+$H\cdot K=2\pi-2-H^2$ and $b=\frac12H^2+1-\pi$; and for a curve $C$, a hyperplane meeting both $C$ and
+$X$ transversally gives $C\cdot H=\#(C\cap X\cap S)=\deg C$ by Bézout in that hyperplane. All three
+coefficients are the exercise's.
+
+**V.2.4, printed p. 102: sections of $C\times\PP^1$.** With $e=0$ and $C_0=C$, $K\sim_{\mathrm{num}}-2C+(2g-2)f$;
+a section $D=C+rf$ has $D^2=2g-2-D\cdot K=2r$, which is the parity. $r=0$ is $D=C$; for $d\ge g+1$ the
+base-point-free nonspecial divisor of (IV, Ex. 6.8) gives $D=C+Ef$ with $D^2=2r$. Part (b) identifies
+sections with morphisms $C\to\PP^1$, so the possible $r$ are their possible degrees. Two slips:
+"Since $g(C)=1$" carries the wrong genus, the exclusion of $r=1$ being that a degree-one map to
+$\PP^1$ would make $C$ rational; and its parenthetical doubts whether both $r=2$ and $r=3$ can occur at
+$g=3$, where exactly one does, the hyperelliptic and the plane-quartic cases.
+
+**V.3.3, printed p. 107: $2\pi^*D-E$.** The square is $4D^2-1\ge3>0$, and for a strict transform
+$\widetilde C=\pi^*C-rE$ with $r=\mu_P(C)\le\deg C$, $(2\pi^*D-E)\cdot\widetilde C=2\deg C-r\ge\deg C>0$.
+Two things left: the exceptional curve $E$ itself, on which $(2\pi^*D-E)\cdot E=1>0$, is not among the
+curves checked, and the closing sentence names $D$ where the class proved ample is $2\pi^*D-E$. The
+card's own steps cover both.
+
+**The remainder, recounted.** Ten Chapter V cards still lack Yang: V.1.3, V.1.6, V.1.7, V.1.10, V.2.6,
+V.2.7, V.2.9, V.2.11, V.2.14, V.2.16.
+
+**Repair.** `P-AGH512HILBPOLY` in `c769a363b2`, `P-AGH524SECTSELFINT` in `fcaa346a43`,
+`P-AGH533AMPLEPULLBACK` in `556e6d707a`, one commit each; this record in the COMPLAINTS commit that
+carries it. No step, statement or hypothesis of any card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.1.2 at printed p. 100, 5.2.4 at printed
+p. 102 and 5.3.3 at printed p. 107, rendered as page images; the statements the cards carry, which this
+pass did not reopen against the book. Not read: the remaining ten cards' entries, and the printed books
+themselves.
