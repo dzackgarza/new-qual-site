@@ -63,6 +63,21 @@ audit:
     recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The four parts opened with run-in "Part (x):" labels and "Proof:" lines
+    instead of claims, and the page cited no source. Each part is now a labelled
+    step (metric, complete, totally-bounded, compact; the two that already carried
+    labels keep s2 and s3) whose first paragraph is its claim, and the preamble
+    names the exercise, Munkres, Topology (2000), Section 45, Exercise 7, printed
+    pp. 280-281, with the note that the exercise prints the hints the last three
+    parts follow. As the event of 2026-11-11 records, no complete published
+    solution was located, so the argument remains the card's own. No statement,
+    argument or citation changes.
+
 ---
 
 ::: {.exercise}
@@ -89,13 +104,12 @@ If $X$ is compact in the metric $d$, then the space $\mathcal{H}$ is compact in 
 :::
 
 ::: {.solution}
+The exercise is Munkres, *Topology* (2000), Section 45, Exercise 7, printed pp. 280--281, and it prints the hints that the last three parts follow.
 
 ::: pf
 
-::: pf-step
-
-Part (a): $D$ is a well-defined metric on $\mathcal{H}$.
-    *Proof:*
+::: {.pf-step #metric}
+$D$ is a well-defined metric on $\mathcal H$.
 
 ::: pf-proof
 
@@ -130,8 +144,7 @@ Part (a): $D$ is a well-defined metric on $\mathcal{H}$.
 
 ::: {.pf-step #s2}
 
-Part (b): Completeness of $(\mathcal{H}, D)$ when $(X, d)$ is complete.
-    *Proof:*
+$(\mathcal H,D)$ is complete whenever $(X,d)$ is complete.
 
 ::: pf-proof
 
@@ -183,8 +196,7 @@ Thus $D(A_n, A) \le 2^{-(n-2)} \to 0$ as $n \to \infty$, so the subsequence of s
 
 ::: {.pf-step #s3}
 
-Part (c): Total boundedness of $(\mathcal{H}, D)$ when $(X, d)$ is totally bounded.
-    *Proof:*
+$(\mathcal H,D)$ is totally bounded whenever $(X,d)$ is totally bounded.
 
 ::: pf-proof
 
@@ -240,10 +252,8 @@ Hence $(\mathcal{H}, D)$ is totally bounded.
 
 :::
 
-::: pf-step
-
-Part (d): Compactness of $(\mathcal{H}, D)$ when $(X, d)$ is compact.
-    *Proof:*
+::: {.pf-step #compact}
+$(\mathcal H,D)$ is compact whenever $(X,d)$ is compact.
 
 ::: pf-proof
 
