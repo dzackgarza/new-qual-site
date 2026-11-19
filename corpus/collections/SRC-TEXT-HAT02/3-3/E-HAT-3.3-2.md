@@ -28,6 +28,22 @@ audit:
     restriction, so it is enough to know whether removing at most two points disconnects a
     connected $n$-manifold for $n\ge2$, which it does not. Both cases (orientable and not) are
     carried through by that step.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 2 of §3.3, printed p. 257, and
+    the printed page is added, the card having had none. The argument through the orientation double
+    cover was checked: $M$ is orientable iff $\widetilde M\to M$ is the trivial two-sheeted cover;
+    the orientation cover of $M-\{x_0\}$ is the restriction $p^{-1}(M-\{x_0\})$, a two-sheeted cover
+    of $M-\{x_0\}$; and for $n\geq2$ deleting finitely many points from a connected $n$-manifold
+    leaves it connected, by a Euclidean chart and paths perturbed off the deleted points. Both cases
+    follow: if $M$ is orientable the cover loses one point from each of its two components and stays
+    disconnected, and if it is not, the connected cover loses two points and stays connected. One
+    repair, the same pattern as on `E-HAT-3.3-11`: the solution ended with a `pf-step` reading
+    "Conclusion: ... Q.E.D." whose whole proof was "Steps s1 and s2", which is the back-referencing
+    last step the style rule forbids. It is removed, and its two references are kept as a closing
+    sentence outside the proof.
 ---
 
 ::: {.problem}
@@ -35,6 +51,8 @@ Show that deleting a point from a manifold of dimension greater than 1 does not 
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 2, printed p. 257.
+
 Orientability is determined on connected components. Only the component containing the deleted point changes, so assume below that $M$ is connected.
 
 ::: pf
@@ -144,19 +162,8 @@ Step [](#s2-1){.pf-ref} applied to the connected cover $\widetilde{M}$.
 
 :::
 
-::: pf-step
-
-Conclusion:
-$M \setminus \{x_0\}$ is orientable if and only if $M$ is orientable for all $n \ge 2$. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
 :::
 
-:::
-
-:::
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the two cases: $M\setminus\{x_0\}$ is orientable exactly when $M$ is, for $n\ge2$.
 
 :::
