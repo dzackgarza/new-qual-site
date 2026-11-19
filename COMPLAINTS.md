@@ -314,13 +314,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **91 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **89 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Six of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 91 stand as this item lists them.
+   reported and repaired above. Eight of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 89 stand as this item lists them.
 
-   **2026-11-19: §3.F 4 to 9 read, all six, and no proof in the six needed repair.** Each card was read
+   **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
    stand on printed p. 320 of Hatcher, *Algebraic Topology* (2002), which is PDF p. 329 of
    `tmp/sources/hatcher-2002-algebraic-topology.pdf`, and that page was read for each one. What the six
@@ -349,8 +349,22 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
    Cards changed in that pass, none in statement or proof: `E-HAT-3.F-5`, `-6`, `-8` and `-9` now name
    their exercise and its printed page, as `-4` and `-7` already did, and `-8` and `-9` say the argument
-   is the card's own. Remaining unread in this item's set: §4.A-4, §4.A-5, §4.1 10–23, §4.2 (39),
-   §4.3 (24), §4.D (10), §4.L-4, §4.L-5 --- 91 proofs.
+   is the card's own.
+
+   **The §4.A pair, read the same day, after §3.F.** Both stand on printed p. 426 of the same book, PDF
+   p. 435, and both were read against that page. `E-HAT-4.A-4`, the automorphisms of a wedge of spheres:
+   for $k>1$ the wedge is $(k-1)$-connected, Hurewicz gives $\pi_k=H_k=\ZZ^n$ with the summand inclusions
+   a basis, based self-maps are their tuples of restrictions so the monoid is $M_n(\ZZ)$, and an
+   invertible matrix gives a homology isomorphism in every degree --- cells only in dimensions $0$ and
+   $k$ --- hence a homotopy equivalence by Corollary 4.33; the card's numbered citations (Theorems 4.8,
+   4.32, 2.35, Corollary 4.33) were each checked against the book. `E-HAT-4.A-5`, the homology of $Z$
+   for $n=3$: one $0$-cell, twelve $1$-cells and sixteen $2$-cells give $\chi=5$, $\pi_1(Z)=\pi_1(\widetilde X_3)$
+   since $\widetilde X_3$ is $Z$ with $3$-cells attached, the presentation of part (c) abelianizes to
+   $\ZZ^5$ because its five relators become identities there, and $H_2=\ZZ^9$ follows from $\chi$ with
+   torsion-freeness. Both cards needed only their locator; no statement or proof was altered.
+
+   Remaining unread in this item's set: §4.1 10–23, §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5 ---
+   89 proofs.
 3. **`E-HAT-3.C-16`, the mod-$p$ classification: RESOLVED, on a consolidated development (2026-11-01).**
    The exercise is read from the source — Hatcher, printed p.292 (PDF page 301). The card now carries one
    numbered development, replacing four contradictory audit notes and their superseded numbering.
