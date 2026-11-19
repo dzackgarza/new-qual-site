@@ -7549,3 +7549,15 @@ exit 0. Commits: `e7c15f7da7`, `bac5c1ce87`, `2a8557220f`, `8743bf2efe`, `47e67f
 **Uncertainty.** The §3.C-16 development is a long one and only part of it was re-derived here; the
 event on the card says exactly which parts. No published solution covers §3.C except Exercise 5, and
 no card in the section carries a certificate.
+
+## 2026-11-19: correction to "four sourcing gaps behind issue #174's second review" — Exercise 35 is at printed p. 502, and how the p. 479 versus p. 478 split was settled
+
+**Object and need.** Two page claims in the record above are corrected here rather than edited in place (`QUAL-11`).
+
+**Observed evidence.** (i) The record says the formula $a_i=d_i/d_{i-1}$ is "Exercise 35 of §12.2". It is not: §12.3 begins at printed p. 495, and the numbered item that states the formula is printed at p. 502 under the chapter foot "Chap.12 Modules over Principal Ideal Domains", beginning "For $0\leq i\leq n$, let $d_i$ be the g.c.d. of the determinants of all the $i\times i$ minors of $xI-A$ ... Prove that the $i$th element along the diagonal of the Smith Normal Form for $A$ is $d_i/d_{i-1}$." The card's clause now names the page and asserts nothing about the section (`570fb333e0`).
+
+(ii) The record's claim that p. 479 prints Theorem 21 stands, but eight independent readers split 4--2 on it with the rest abstaining, the dissenters reporting p. 478 from a page map built out of running heads. The page is settled by the folio *sequence*, not by a bracket of heads: in the chapter-12 scan one PDF page is one printed page, since printed = PDF + 455 holds across printed 463, 472, 473, 474, 476, 477, 478, 479 and 480, and the page whose own foot reads "Sec 12.2 The Rational Canonical Form 479" contains Theorem 21 in full with "Proof. cf. the exercises." above that foot. The section-title page confirms the same map from the other end: the run-in title "12.2 THE RATIONAL CANONICAL FORM" is on the page footed 472. A bracket of running heads misplaces a page whenever OCR drops one head, which is what happened to the two dissenters.
+
+**Impact and owner.** No change to the load-bearing finding: p. 479 states the Smith normal form of $xI-A$ over $F[x]$ and does not state the criterion "equivalent if and only if the same Smith normal form", which is why that citation was removed from the sentence it was attached to.
+
+**Uncertainty.** Third edition only, as before. The exercise's chapter-versus-section numbering was not read off a Contents page, only off the page foot, which is why the card now cites the page and not the section.
