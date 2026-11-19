@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.3 Exercise 21, printed p. 420.
+    The step P_n(X x X) = P_n X x P_n X was justified by "both sides have the same
+    homotopy groups through degree n and none above", which is not an argument: isomorphic
+    homotopy groups give a homotopy equivalence only with a map in hand. Repaired by
+    naming the map theta induced by the two projections and concluding with Whitehead's
+    theorem, with a parenthetical saying why the original sentence was not enough.
+    Independent reports from the swarm flagged the same sentence. Statement unchanged.
+    Not checked: the coherence steps of the argument beyond this one.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -34,11 +46,11 @@ Show that in the Postnikov tower of an H-space, all the spaces are H-spaces and 
 :::
 
 ::: {.solution}
-Let $P_nX$ denote the $n$-th Postnikov stage. The Postnikov construction is functorial up to homotopy, and
+Let $P_nX$ denote the $n$-th Postnikov stage: a space with $\pi_i(P_nX)\cong\pi_i(X)$ for $i\le n$ and $\pi_i(P_nX)=0$ for $i>n$, under $X$. The construction is functorial in the homotopy category, so the two projections give a map
 $$
-P_n(X\times X)\simeq P_nX\times P_nX
+\theta:P_n(X\times X)\longrightarrow P_nX\times P_nX .
 $$
-because both sides have the same homotopy groups through degree $n$ and none above.
+Both sides are CW complexes, $\pi_i(P_nX\times P_nX)=\pi_i(X)\oplus\pi_i(X)=\pi_i(X\times X)$ for $i\le n$ and $0$ for $i>n$, and $\theta$ induces exactly these isomorphisms, so $\theta$ is a weak homotopy equivalence by Whitehead's theorem, hence a homotopy equivalence. (Having the same homotopy groups is not by itself enough — no map would be given — and it is the map $\theta$ that the argument needs.)
 
 If
 $$
