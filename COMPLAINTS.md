@@ -5330,3 +5330,11 @@ Each file has exactly one `audit:` key, its value is a list, and each of the 290
 **Impact and owner.** Anyone reading these cards' audit trail, and the corpus report, which fails outright on a card whose frontmatter does not parse. The check is cheap and can be run over any residue: load with a duplicate-key-detecting constructor and assert the three keys and the date shape on each event.
 
 **Uncertainty.** This verifies structure, not content: it says nothing about whether each event's note is true, which is the reading obligation the notes themselves describe. The 290 events include earlier sessions' events on the same cards, so the count is not the number this session wrote.
+## 2026-11-19: correction to this morning's residue-4 record — `E-HAT-4.1-4` is not an open source obligation
+
+**What was wrong.** The residue-4 completion record written earlier today ends by saying that `E-HAT-2.B-4`, `E-HAT-4.1-4` and `E-HAT-4.A-4` "remain open as a source obligation". That is wrong for the middle one. Item 11 of the 2026-11-07 record closes `E-HAT-4.1-4` on **Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Solutions to Homework #6, §4.1 Exercise 4, printed p. 1**, and the card cites that sheet (`proudfoot-634-hw6`), so the obligation is discharged at the card and the card is not in the unlocated-solution list. A later item verifies the card against that source again and finds no change.
+
+**Corrected statement.** Residue 4 has **two** open source obligations, not three: `E-HAT-2.B-4` (the mathematics is settled on the card, including part (b) as printed on p. 176, but no published exercise solution has been located) and `E-HAT-4.A-4` (searched again today, nothing usable located, recorded here separately). `E-HAT-3.B-4` leaves that list on Kottke's PS3, as the entry just above records, and `E-HAT-4.1-4` was never on it after item 11.
+
+**How the error happened, so it is not repeated.** The claim was written from a session note that listed three residue-4 Hatcher cards as `#123` obligations, without re-reading the list itself; the list is the authority and it names two. The check that would have caught it is one command — grep the unlocated-solution paragraph for each card id before calling it open — and it was not run before the record was committed.
+
