@@ -12,6 +12,35 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The figure was read at assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1518395458668.png
+    (the image the card embeds). It shows a cube whose three pairs of opposite
+    faces carry, respectively, P, rho and R, with the R on the visible right
+    face drawn rotated through a quarter turn against the upright R on the left
+    face, and the P and rho pairs drawn without such a rotation. The card's
+    description had called the rho pair "Q"; that is corrected to the label the
+    figure carries. The reading of the gluing, two translations and one quarter
+    turn, is what the answer depends on.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Given that gluing, the computation is correct. Gluing the P and rho pairs by
+    translations makes each slice parallel to the R faces a torus, and the R
+    pair, glued by a quarter turn of the square, induces an orientation
+    preserving automorphism of that torus whose matrix on H_1 is the quarter
+    turn A, with determinant 1 on H_2. The Wang sequence of the resulting mapping
+    torus is 0 -> coker(1 - f_*) -> H_k(X) -> ker(1 - f_*) -> 0 in each degree;
+    on H_1 the matrix 1 - A has determinant 2, so its kernel vanishes and its
+    cokernel is cyclic of order 2, while on H_0 the difference is zero, whose
+    kernel is Z, so H_1 is Z/2 + Z, splitting because Z is free; on H_2 the
+    cokernel is Z and the kernel on H_1 vanishes; on H_3 the kernel on H_2 is Z.
+    The result Z, Z + Z/2, Z, Z is consistent with chi = 0 for this closed
+    orientable three-manifold. Nothing was changed beyond the label.
 ---
 
 ::: {.problem}
@@ -31,7 +60,7 @@ $$A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.$$
 
 ::: pf-proof
 
-The letters $P$ and $Q$ appear in the same position on their paired faces, so these two pairs are glued by translations, and each slice of the cube parallel to the $R$ faces becomes a torus. The letter $R$ on the right face is the letter $R$ of the left face turned through $90^\circ$, so the last pair is glued by a quarter turn of the square. A quarter turn carries the pair of horizontal sides of the square to the pair of vertical sides, so it respects the translation identifications and induces $\rho$. It sends the horizontal generator of $H_1(T^2)$ to the vertical one and the vertical one to minus the horizontal one.
+The letters $P$ and $\rho$ appear in the same position on their paired faces, so these two pairs are glued by translations, and each slice of the cube parallel to the $R$ faces becomes a torus. The letter $R$ on the right face is the letter $R$ of the left face turned through $90^\circ$, so the last pair is glued by a quarter turn of the square. A quarter turn carries the pair of horizontal sides of the square to the pair of vertical sides, so it respects the translation identifications and induces $\rho$. It sends the horizontal generator of $H_1(T^2)$ to the vertical one and the vertical one to minus the horizontal one.
 
 :::
 
