@@ -7,18 +7,7 @@ title: Series reference
 
 ## Factorial notation
 
-::: {.definition title="Rising and falling factorials"}
-For $n\in\CC$ and $k\in\ZZ_{\geq 0}$, the \dfn{rising factorial} is
-$$
-\rising{n}{k} \coloneqq n(n+1)(n+2) \cdots (n+k-1),
-$$
-and the \dfn{falling factorial} is
-$$
-\falling{n}{k} \coloneqq n(n-1)(n-2)\cdots(n-k+1);
-$$
-each is a product of $k$ factors, and the empty product for $k=0$ is $1$.
-
-:::
+[[D-5NQWE]]
 
 ::: {.fact}
 For $n\in\ZZ_{>0}$,
