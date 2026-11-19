@@ -274,6 +274,37 @@ audit:
     checked: the rendered page, and no printing other than the text versions
     beside the retained PDFs. The step third-condition-contains-nonsingular-curve
     is untouched and still uses Dolgachev 8.2.19 for the effective cone.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.4.8, printed p. 110, rendered as a page
+    image from tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is
+    the printed page. Checked against the book: Hartshorne V.4.8, printed
+    p. 407, asks that a class contain an irreducible curve iff it contain an
+    irreducible nonsingular one, and that this happen exactly for a line, a
+    conic of square 0, or a class meeting every line nonnegatively with
+    positive square. Recomputed: its list of the lines of X_r, the very ample
+    classes D_0,...,D_5 with the two threshold forms a > b_1 + b_2 for r < 5
+    and a > b_1 + b_2 + b_5 for r = 5, and the two directions of its argument.
+    Found: the implication from the third alternative to the second uses a
+    criterion producing a nonsingular member of a class meeting every line
+    strictly positively, while the hypothesis gives only nonnegative
+    intersections, and the entry never uses D^2 > 0; the class H + F_56 meets
+    F_56 in 0, so the strict criterion does not apply to it. Also found: the
+    implication from the first alternative to the third omits the exclusion of
+    square 0. Not checked: Yang's Solutions outside printed pp. 109-111, and
+    the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.8 at printed p. 110,
+    records what it proves and the two places it does not close, with the class
+    H + F_56 as the instance the strict criterion excludes. No step, statement
+    or hypothesis of the card changes, and the entries (a) and (b) that this
+    card proves are untouched.
 ---
 
 ::: {.problem}
@@ -532,4 +563,20 @@ self-intersection; J. Vakil, *The Rising Sea* (21 October 2025), Theorem 13.4.2 
 printed p. 375, for the incidence count used on the linear system $\linearsystem{D}$; Hartshorne, Proposition
 10.4, printed p. 270, II.8.6A, printed p. 174, and Lemma 8.9, printed p. 175, for the smoothness of a
 separable morphism on an open set.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, printed p. 110, argues both
+implications through the blowups $X_r$, $2\le r\le5$: it lists the lines of $X_r$, the $E_i$ and
+$F_{ij}$ with $G$ added at $r=5$, takes the classes $D_0,\ldots,D_5$ of Lemma 4.12 and Corollaries
+4.1 and 4.3, and reads off that $a>b_1+b_2$ for $r<5$ and $a>b_1+b_2+b_5$ for $r=5$ make a class very
+ample on $X_r$, equivalently $D\cdot L>0$ for every line. For (i) implies (iii) it contracts to $X_r$
+and concludes $D\cdot L\ge0$, without excluding $D^2=0$ from the third alternative, which is where the
+conic sits. For (iii) implies (ii) it takes a member of the system of $D'=\pi_r(D)$; and there the
+entry does not close: the step it cites as its (*) produces an irreducible nonsingular member of a
+class meeting every line strictly positively, while (iii) gives only $D\cdot L\ge0$, and the
+hypothesis $D^2>0$ that the exercise adds for that case is never used. The class $H+F_{56}$ of
+[[P-AGH547GENUSBOUND|V.4.7]] is the case in point: it meets $F_{56}$ in $0$, meets every one of the
+$27$ lines nonnegatively
+and has square $4$, so (c) gives it an irreducible nonsingular member while the strict criterion the
+entry invokes does not apply. The card's own proof, Harbourne's Lemma II.6 and Theorem III.1(a) with
+Dolgachev's Theorem 8.2.19, does not depend on the entry.
 :::
