@@ -19,6 +19,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained examination `assets/attachments/Real_Analysis_Fall_2017.docx`, converted with
+    Pandoc: the item is the second problem, beginning "Let f(x) = x^2", and its printed words are the
+    card's. The document numbers its problems automatically and that numbering does not survive the
+    conversion, so the position and the opening words are the locator. Both are now named in the
+    solution's opening sentence. Not checked: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -30,6 +39,7 @@ Let $f(x) = x^2$ and let $E \subseteq [0, \infty)$.
 :::
 
 ::: {.solution}
+This is the second problem of the Fall 2017 real analysis examination, retained in this repository as `assets/attachments/Real_Analysis_Fall_2017.docx`; the conversion loses the document's automatic numbering, so the position and the opening words locate it.
 
 ::: pf
 
