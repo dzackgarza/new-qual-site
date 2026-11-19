@@ -354,6 +354,38 @@ audit:
     p. 53, which is cited as Katz and Mazur cite it; and Altman and Kleiman's
     Chapter VIII beyond the theorems named, in particular the residue theory of
     its sections 2 to 4, which this step does not use.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mumford's page was obtained and read, so the base-change citation of step
+    abelian-scheme is now verified rather than transcribed. Source: D. Mumford,
+    *Abelian Varieties*, Tata Institute of Fundamental Research Studies in
+    Mathematics 5, Oxford University Press, 1970, Chapter II section 5,
+    "Cohomology and base change", read on a scan fetched for this check from
+    wstein.org and kept for the reading only; that scan puts two book pages on a
+    PDF page, printed pp. 46--47 being PDF p. 28, printed pp. 50--51 PDF p. 30
+    and printed pp. 52--53 PDF p. 31, each folio read off the page. What stands
+    there: the section's main theorem, printed p. 46, "Let f: X to Y be a proper
+    morphism of noetherian schemes with Y = Spec A affine, and F a coherent
+    sheaf on X, flat over Y", gives a finite complex of finitely generated
+    projective A-modules computing H^p(X x_Y Spec B, F x_A B); Corollary 2,
+    printed pp. 50--51, states that for Y reduced and connected and F as in the
+    theorem, the constancy of y to dim H^p(X_y, F_y) is equivalent to R^pf_*(F)
+    being locally free with the natural map R^pf_*(F) x k(y) to H^p(X_y, F_y) an
+    isomorphism for all y; Corollary 3, printed p. 53, states that if
+    H^p(X_y, F_y) vanishes for all y, then R^{p-1}f_*(F) x k(y) to
+    H^p-1(X_y, F_y) is an isomorphism for all y. Corollary 3 at p = 1 and
+    Corollary 2 at p = 0 are exactly the two facts the step attributes to
+    Mumford's p. 53, and the step now names both with their pages. The previous
+    event's caveat that Hartshorne III.12.11 asks for a projective morphism is
+    discharged: Mumford's theorem is stated for a proper morphism, so nothing in
+    the step needs projectivity, and the rendered step no longer points to
+    Hartshorne for this statement, the page numbers standing in the event above.
+    Not checked: Mumford's printed pp. 48--49, 52 and 54 onwards, that is the
+    proof of the section's theorem and the rest of Chapter II; the scan is not in
+    a retained set and was removed after the reading, so a later session must
+    fetch it again before re-reading these pages.
 ---
 
 ::: {.problem}
@@ -397,7 +429,7 @@ I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)\cong I^{-1}(R)\otimes f_T^*(\mathcal L_0)
 $$
 There $I(P)$ is the ideal sheaf of a section $P$ viewed as an effective Cartier divisor of degree one in $E$, and $f_T\colon E_T\to T$ is the projection.
 
-Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. Its fibre input is Riemann's theorem and Serre duality: for an invertible sheaf $\mathcal L$ of degree one on a curve of genus one over an algebraically closed field, $\chi(\mathcal L)=\deg\mathcal L+\chi(\mathcal O)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$; so $h^0(\mathcal L)=1$ on every fibre, and $\mathcal L$ of fibrewise degree one is what the map above is applied to. Consequently $R^1f_*\mathcal L=0$ and $f_*\mathcal L$ is invertible of formation compatible with base change, which Katz and Mazur cite to Mumford, *Abelian Varieties* (1970), p. 53; the book at hand states that theorem as III.12.11 (Cohomology and Base Change) with Corollary 12.9 (Grauert), printed pp. 290 and 288. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
+Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. Its fibre input is Riemann's theorem and Serre duality: for an invertible sheaf $\mathcal L$ of degree one on a curve of genus one over an algebraically closed field, $\chi(\mathcal L)=\deg\mathcal L+\chi(\mathcal O)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$; so $h^0(\mathcal L)=1$ on every fibre, and $\mathcal L$ of fibrewise degree one is what the map above is applied to. Consequently $R^1f_*\mathcal L=0$ and $f_*\mathcal L$ is invertible of formation compatible with base change, which Katz and Mazur cite to Mumford, *Abelian Varieties* (1970), Chapter II §5, where the statements are these: Corollary 3, printed p. 53, that if $H^p$ vanishes on the fibres for one $p$ then $R^{p-1}f_*\mathcal L\otimes k(y)\to H^{p-1}(X_y,\mathcal L_y)$ is an isomorphism for every $y$; and Corollary 2, printed pp. 50--51, that for $Y$ reduced and connected, $h^p$ constant on $Y$ is equivalent to $R^pf_*\mathcal L$ being locally free with $R^pf_*\mathcal L\otimes k(y)\to H^p(X_y,\mathcal L_y)$ an isomorphism for all $y$. At $p=1$ the first gives constancy of $h^0=1$, and at $p=0$ the second gives the invertibility of $f_*\mathcal L$ together with that compatibility, $S=\AA^1_\CC$ being reduced and connected; the theorem of the section, printed p. 46, is stated for $f$ proper and $\mathcal L$ flat over an affine noetherian base. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
 
 That is a group scheme over $S$ with identity $O$ in the sense of the definition before Remark 4.10.5, printed p. 324: the identity is the section $O$, the inverse and the operation are morphisms over $S$, and the two axioms asserted there are the group-scheme axioms of Katz and Mazur. Since $\pi$ is smooth and proper with geometrically connected fibres, $E$ is an abelian scheme over $S$ in the sense of Youcis, "a smooth proper group scheme with connected fibers", from his section "Two statements of the main result".
 
