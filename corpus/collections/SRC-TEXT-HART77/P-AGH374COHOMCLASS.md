@@ -914,9 +914,19 @@ audit:
     relative trace $t:Rf_*\Omega^n_{X/S}[n]\to O_S$ with the duality trace, these
     give the identity once $i^!$ is read as the Gysin map, $\Omega^n[n]$ as the
     dualizing complex and the Serre pairings as the duality pairings. That
-    translation is not carried out on this card, and no step uses it; what the
-    card proves is the two ranges of s3 and s8. Nothing of the card's own text
-    was changed in this pass.
+    translation is not carried out on this card, and no step uses it. A
+    qualification added the same day: Section 48.10's isomorphism, Lemma 48.10.2
+    on printed p. 4107, is proved for $f$ flat, and in the square used here both
+    horizontal maps are closed immersions, so that lemma does not apply as it
+    stands; what applies is the criterion of Lemma 48.10.1 on the same page, which
+    reduces the question to the compatibility
+    $Lj^*R\mathcal H om_{\OO_X}(\OO_H,\omega^\bullet_X)\cong
+    R\mathcal H om_{\OO_Y}(\OO_Z,Lj^*\omega^\bullet_X)$ for two transverse closed
+    immersions, with Lemma 48.10.3 on the same page as the tool. That
+    compatibility is the Koszul statement that a Koszul resolution restricts to a
+    Koszul resolution; it is not stated as such in the places read, and it is what
+    would have to be supplied. Nothing of the card's own text was changed in this
+    pass.
 
 - event: solution-written
   by: claude
