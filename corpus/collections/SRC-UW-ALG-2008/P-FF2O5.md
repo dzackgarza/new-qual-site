@@ -17,6 +17,13 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the final step now says what makes the invariant factors a
+    complete invariant, rather than asserting the classification. Nothing mathematical was changed.
+
 ---
 
 ::: {.problem}
@@ -162,6 +169,11 @@ R/(a)\oplus R/(b)
 R/(c)\oplus R/(d)
 $$
 are isomorphic if and only if their two Smith invariant factors, computed as in step [](#s7){.pf-ref}, agree pairwise up to associates.
+
+
+::: pf-proof
+The Smith invariant factors are a complete set of invariants for finitely generated modules over a principal ideal domain, so two such sums are isomorphic exactly when their invariant factors agree up to associates; step [](#s7){.pf-ref} computes them from the determinantal divisors.
+:::
 
 :::
 
