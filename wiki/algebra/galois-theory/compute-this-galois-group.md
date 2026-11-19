@@ -25,7 +25,7 @@ The classification for each degree is a card, and the two degrees a qualifying p
 
 [[P-PDJ5S]]
 
-The case $n=5$ runs the same way: a subgroup of $S_5$ of order divisible by $5$ contains a $5$-cycle, and the transitive subgroups are $S_5$, $A_5$, the Frobenius group $F_5$ of order $20$, $D_5$ and $C_5$, with $F_5=\generators{a,b \st a^5,\ b^4,\ bab^{-1}=a^2}$.
+The case $n=5$ runs the same way: a subgroup of $S_5$ of order divisible by $5$ contains a $5$-cycle, and the transitive subgroups are $S_5$, $A_5$, the Frobenius group $F_5$ of order $20$, $D_5$ and $C_5$, with $F_5=\generators{a,b \st a^5,\ b^4,\ ba\inverseof{b}=a^2}$.
 
 ## The discriminant
 
