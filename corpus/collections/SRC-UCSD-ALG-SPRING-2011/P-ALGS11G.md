@@ -14,6 +14,20 @@ review: draft
 
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 2 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: the three parts and the
+    printed instruction to prove or give a justified counterexample against the paper's text layer
+    at the page named, and the three verdicts against them (false, true, false);
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not
+    checked: no retained solution exists to compare the argument with (the existence of a retained
+    solution set would change what the card should say, and none is recorded for this collection),
+    and no other card of the collection in this pass.
+- event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Compared with Problem 7 of the official UCSD Spring 2011 algebra qualifying exam.
@@ -48,6 +62,8 @@ Prove or give an example to disprove (with justification):
 :::
 
 ::: {.solution}
+
+The problem is Problem 7 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 2 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies the justification each part asks for — a direct sum of cyclic groups for (i), the basis argument for (ii), and $\QQ$ over $\ZZ$ for (iii) — together with the verifications that the examples have the properties asserted of them.
 
 ::: pf
 
