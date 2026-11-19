@@ -22,6 +22,8 @@ $$
 \Res_{z=\infty}f=\Res_{z=0}g=-\frac{1}{2\pi i}\int_{\abs{z}=\rho}f(z)\dz
 $$
 for every $\rho>R$, the circle $\abs{z}=\rho$ being oriented counterclockwise.
+
+Equivalently, if $f(z) = \sum_{k\in\ZZ}a_kz^k$ is the Laurent expansion on $\abs z>R$, then $\Res_{z=\infty}f = -a_{-1}$, the coefficient of $z^{-1}$ with the sign that the orientation of the circle gives.
 :::
 
 ::: {.remark}

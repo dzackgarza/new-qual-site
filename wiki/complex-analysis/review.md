@@ -97,7 +97,7 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-SSNLT]]
 
-[[PR-D3CDJ]]
+[[T-WFXQP]]
 
 See [[complex-analysis/singularities/index|Singularities]].
 

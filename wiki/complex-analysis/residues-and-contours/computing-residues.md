@@ -48,7 +48,7 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 ## The residue at infinity
 
-[[PR-D3CDJ]]
+[[T-WFXQP]]
 
 ::: {.example title="The residues of $z/(1+z^2)$ add to zero"}
 For $f(z) = z/(1+z^2)$ the simple poles are at $\pm i$, with $\Res_{z=i}f = i/(2i) = 1/2$ and $\Res_{z=-i}f = -i/(-2i) = 1/2$.
