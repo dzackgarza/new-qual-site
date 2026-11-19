@@ -196,6 +196,39 @@ audit:
     section is connected, hence irreducible and nonsingular, when dim X >= 2.
     The event that carried the wrong page is left as written, and the
     correction is the record of this date in COMPLAINTS.md.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The attainment at d = 4 in characteristic p, recorded as open in the
+    third and fourth passes of 2026-11-16 and in COMPLAINTS.md, is now
+    proved, and the card claims attainment at every d > 0 over an
+    algebraically closed field of any characteristic. The two steps that
+    excluded it, nonsingular-members and conclusion, are rewritten, and
+    the degree 4 paragraph no longer routes through Corollary III.10.9,
+    printed p. 274, whose Bertini hypothesis is characteristic 0: it
+    cites condition (c) of Exercise V.4.8, whose sufficiency
+    P-AGH548IRREDCLASSES proves in every characteristic in 7d548c5699 by
+    Dolgachev's Theorem 8.2.19, printed p. 265, Harbourne's Corollary
+    II.3, Theorem III.1(a) and Lemma II.6(b), preprint pp. 3, 4 and 7,
+    and the incidence count of Vakil's Bertini theorem, printed p. 375.
+    Checked in this pass by recomputation from Proposition 4.8 of the
+    book, printed pp. 401-402: H + F_56 is 4l - (e_1+e_2+e_3+e_4) -
+    2(e_5+e_6), so a = 4, sum_i b_i = 8, d = 3a - sum_i b_i = 4,
+    D^2 = 16 - 12 = 4 and p_a = 1; D.E_i = b_i and D.G_i = 2a -
+    (sum_k b_k - b_i) = b_i are positive, and D.F_ij = 4 - b_i - b_j is
+    2, 1 or 0, vanishing at F_56 alone, so D meets all 27 lines
+    nonnegatively and has D^2 > 0, which is condition (c). Also checked:
+    that condition (c) is what P-AGH548IRREDCLASSES assumes, D.L >= 0
+    for every line with D^2 > 0, and that D.H = 4 >= 2 is the input its
+    Hodge-index step needs. The two events of 2026-11-16 saying that no
+    characteristic p attainment is claimed are superseded here and left
+    as written, as the corrections of that date are. Not read in this
+    pass: Dolgachev's Theorem 8.2.19 and Harbourne's Lemma II.6 beyond
+    the statements and pages P-AGH548IRREDCLASSES records, and no source
+    outside those named on the two cards. No statement of the exercise
+    changed, and no part of it passes from open to proved other than the
+    d = 4 case.
 ---
 
 ::: {.problem}
@@ -363,9 +396,8 @@ $d\equiv1\pmod3$. The source excludes $d=4$ from that family and writes "For $d=
 :::
 
 ::: {.pf-step #nonsingular-members}
-For every $d\ne4$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
-degree $d$ contains an irreducible nonsingular curve over every algebraically closed field $k$, and at
-$d=4$ the same holds when $k$ has characteristic $0$.
+For every $d$ the class of step [](#extremal-classes){.pf-ref} or [](#small-degrees){.pf-ref} of
+degree $d$ contains an irreducible nonsingular curve over every algebraically closed field $k$.
 
 ::: pf-proof
 For the classes of the first three families of step [](#extremal-classes){.pf-ref} and for the class of
@@ -392,18 +424,18 @@ $$
 $$
 for the $27$ lines, so it meets every line nonnegatively, with $0$ at $F_{56}$ alone, and its
 self-intersection is $4>0$: it satisfies condition (c) of [[P-AGH548IRREDCLASSES|Exercise V.4.8]], and
-the sufficiency of that condition is proved on that card from Dolgachev's Theorem 8.2.19, Harbourne's
-Corollary II.3, Theorem III.1(a) and Lemma II.6(b), with Bertini's theorem in the form of Corollary
-III.10.9 of the book, printed p. 274, whose hypothesis is that $k$ have characteristic $0$. Under that
-hypothesis $H+F_{56}$ contains an irreducible nonsingular member.
+the sufficiency of that condition is proved on that card in every characteristic: Dolgachev's Theorem
+8.2.19, Harbourne's Corollary II.3, Theorem III.1(a) and Lemma II.6(b), and the incidence count of
+Vakil's Bertini theorem, printed p. 375, give a nonsingular member of the class over any algebraically
+closed field. Hence $H+F_{56}$ contains an irreducible nonsingular member.
 :::
 
 :::
 
 ::: {.pf-step #conclusion}
 The bound of the exercise holds for every divisor of degree $d$, and its maximum is achieved by an
-irreducible nonsingular curve for every $d\ne4$ over an algebraically closed field $k$ of any
-characteristic, and for $d=4$ when $k$ has characteristic $0$.
+irreducible nonsingular curve for every $d$, over an algebraically closed field $k$ of any
+characteristic.
 
 ::: pf-proof
 The bound is step [](#genus-bound){.pf-ref} and the attainment is step
