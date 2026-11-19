@@ -13,6 +13,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Mechanical LaTeX repair, reported by the whole-corpus gate at this date's tree and made here so
+    that the gate is usable again; no mathematics changes. A scripted rewrite split words:
+    `isomor\varphism` for "isomorphism" three times and `homomor\varphisms` for "homomorphisms" once.
+    The count repaired is 4. Every step and every claim of the argument stands as it stood; only those
+    words change. Checked: `qualc.authoring check` on the card, and `varphism` no longer occurs in it.
+    Not checked: no source and no step of the argument was re-read in this pass, the repair being
+    spelling.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -150,7 +161,7 @@ audit:
     that coefficient the universal coefficient sequence gives
     $H_{n-1}(M,B;\ZZ)$ tensor $\QQ/\ZZ$ equal to zero, and a finitely generated group with that property
     is zero, so $H_{n-1}(M,B;\ZZ)=0$ and the fragment is a short exact sequence whose first map is an
-    isomor\varphism. The step now says this, and derives both that the component is orientable and that
+    isomorphism. The step now says this, and derives both that the component is orientable and that
     the boundary map is multiplication by a unit. Checked and unchanged: the triple sequence, the
     excision, the component reduction, the mod-two case where both groups are $\ZZ_2$, and the
     change-of-coefficients argument for general $R$, including the $2R=0$ alternative. Not re-read
@@ -187,14 +198,14 @@ $$
 \xrightarrow{\ \partial_A\ }H_{n-1}(A;\\ZZ)
 \longrightarrow 0,
 $$
-an isomor\varphism. Since $H_n(M,\partial M;\\ZZ)\cong\\ZZ$, this gives $H_{n-1}(A;\\ZZ)\cong\\ZZ$ — in particular $A$ is orientable — and $\partial_A$ is multiplication by a unit. Doing this for every $A$ proves Bredon's identity
+an isomorphism. Since $H_n(M,\partial M;\\ZZ)\cong\\ZZ$, this gives $H_{n-1}(A;\\ZZ)\cong\\ZZ$ — in particular $A$ is orientable — and $\partial_A$ is multiplication by a unit. Doing this for every $A$ proves Bredon's identity
 $$
 \partial_*[M]_{\\ZZ}=[\partial M]_{\\ZZ}.
 $$
 
-The same argument with $\\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\\ZZ_2)$ and $H_{n-1}(A;\\ZZ_2)$ are $\\ZZ_2$, so the beginning of the exact sequence is $0\to\\ZZ_2\to\\ZZ_2$ and $\partial_A$ is an isomor\varphism. This is the unrestricted $\\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
+The same argument with $\\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\\ZZ_2)$ and $H_{n-1}(A;\\ZZ_2)$ are $\\ZZ_2$, so the beginning of the exact sequence is $0\to\\ZZ_2\to\\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
 
-For general $R$, use naturality of connecting homomor\varphisms under change of coefficients. If $M$ is $\\ZZ$-orientable, apply $\\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
+For general $R$, use naturality of connecting homomorphisms under change of coefficients. If $M$ is $\\ZZ$-orientable, apply $\\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
 $$
 \boxed{\partial_*[M]_{R}=[\partial M]_{R}.}
 $$
