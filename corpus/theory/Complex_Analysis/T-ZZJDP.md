@@ -35,6 +35,8 @@ The following are equivalent.
 (vii) The Laurent expansion of $f$ on a punctured disc $\{z : 0<\abs{z-z_0}<\delta\}\subseteq\Omega$ has vanishing principal part: $f(z)=\sum_{k\geq0}c_k(z-z_0)^k$ there.
 
 The extension in (iv) is unique.
+
+The equivalence (i)$\iff$(ii) is [@SS03, Theorem 3.1 of Chapter 3 (p. 84)].
 :::
 
 ::: {.remark title="Variations"}
