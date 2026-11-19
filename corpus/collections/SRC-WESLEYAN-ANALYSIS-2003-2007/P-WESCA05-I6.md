@@ -24,6 +24,14 @@ audit:
     only the extraction; it now names the examination, its item and the page of the
     scan. The statement is unchanged.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The proof ended with a pf-qed that only announced that an earlier step had
+    answered the question, which STYLE-08 forbids; it is dropped, and the step that
+    carries the result is now the QED step. No argument or statement changes.
+
 ---
 
 ::: {.problem}
@@ -109,11 +117,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s1-3){.pf-ref} is the required winding number.
-
-:::
 
 :::
 
