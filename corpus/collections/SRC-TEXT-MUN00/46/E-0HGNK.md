@@ -56,6 +56,17 @@ audit:
     card's own, as the audit of 2026-11-15 records. No statement, argument or
     citation changes.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The argument is correct. It is enough to show that each subbasis element
+    S(C,U) of the compact-open topology is open in T. For f_0 in S(C,U), the
+    preimage of U under the evaluation map is open and contains the slice
+    C x {f_0}; the Tube Lemma, applied with the compact factor C playing the
+    role of the space and f_0 the role of the point, gives a T-open
+    neighbourhood W of f_0 with C x W inside that preimage; and any f in W then
+    satisfies f(C) contained in U, so W lies in S(C,U). Nothing was changed.
 ---
 
 ::: {.exercise}
