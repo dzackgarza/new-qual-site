@@ -408,11 +408,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **67 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **66 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Thirty of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 67 stand as this item lists them.
+   reported and repaired above. Thirty-one of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 66 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -603,7 +603,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    equivalences by Whitehead, so replacing each term of a zigzag by a CW approximation and orienting it
    produces a common one. The card notes the printed claim is an iff, which is what it states.
 
-   Remaining unread in this item's set: §4.1 20–23 (4), §4.2 (39), §4.3 (24) --- 67 proofs.
+   **§4.1-20, read the same day.** Correct, no card changed. With $d=\dim X$, the map $Y\to Y^d$ to the
+   $d$-th Postnikov stage is an isomorphism on $\pi_i$ for $i\le d$ and the stage has no higher homotopy, so
+   obstruction theory makes $[X,Y]\to[X,Y^d]$ a bijection; the stage is reached by finitely many principal
+   fibrations with fibres $K(\pi_n,n)$ for the finite groups $\pi_n$, and $[X,K(\pi_n,n)]=H^n(X;\pi_n)$ is
+   finite because $X$ is a finite complex, so the set is finite.
+
+   Remaining unread in this item's set: §4.1 21–23 (3), §4.2 (39), §4.3 (24) --- 66 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
