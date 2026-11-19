@@ -7,7 +7,7 @@ topics:
 
 # Separability
 
-Every algebraic extension of a field of characteristic $0$ or of a finite field is separable; inseparable extensions occur only over imperfect fields of characteristic $p$.
+Every algebraic extension of a [[D-KQFIV|perfect field]] is separable, and the finite fields are perfect, so an inseparable extension needs an imperfect field of characteristic $p$.
 
 [[D-ZT46D]]
 
@@ -33,4 +33,4 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[PR-KFQJG]]
 
-A splitting field need not be Galois in characteristic $p$: [[PR-MK2W6|$\FF_p(t^{1/p})$ over $\FF_p(t)$]] is the splitting field of $x^p-t$ and is inseparable.
+A splitting field need not be Galois in characteristic $p$: over $k=\FF_p(t)$ the polynomial $x^p-t$ equals $(x-t^{1/p})^p$, so its only root is $t^{1/p}$ and its splitting field is $k(t^{1/p})$, which [[PR-MK2W6]] shows to be inseparable of degree $p$.
