@@ -57,9 +57,11 @@ audit:
     a cycle, the reason the Kunneth terms land in the listed degrees, the identification of b and d
     with the primitives of Proposition 3D.4 and hence of bd with a generator of the top group, and the
     verification that t is a cycle, that 2t is a boundary via d(e^4 e^2), and that t is nonzero
-    because its mod-two reduction is. Not checked: the additive computation itself, which depends on
-    Hatcher's cell structure and Bockstein data and was not recomputed here; the card's citation of
-    the printed results was not re-read either.
+    because its mod-two reduction is. The card's two citations were then located in the
+    retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9:
+    Theorem 3D.2 is printed on p. 297 (PDF 306) and Proposition 3D.4 on p. 300 (PDF 309), both as
+    the card cites them. Still not checked: the additive computation itself, which depends on the
+    cell structure of SO(5) and its Bockstein data and was not recomputed here.
 ---
 
 ::: {.problem}
