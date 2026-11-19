@@ -38,6 +38,21 @@ audit:
     characterization [X,X]_* = M_n(Z), its multiplicativity, and the based/free identification at the
     end. Not checked: re-verification of the printed hint's parenthetical beyond its restatement here.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 4 of §4.A, printed p. 426, with Theorem 4.8 (p. 349), the
+    Hurewicz theorem (p. 366), Theorem 2.35 (p. 139) and Corollary 4.33 (p. 367). Correct:
+    $X=\bigvee_nS^k$ is $(k-1)$-connected for $k>1$ by cellular approximation, so
+    $\pi_k(X)\cong H_k(X)=\ZZ^n$ with basis the summand inclusions, and a based map out of the
+    wedge is a family of maps from the summands, so $[X,X]_*\cong\prod_j\pi_k(X)=M_n(\ZZ)$ with
+    $M(g\circ f)=M(g)M(f)$. The 2026-11-04 repair is confirmed: an isomorphism on $\pi_k$ alone
+    does not detect a homotopy equivalence in general, and the card no longer claims it does — the
+    argument runs through naturality of Hurewicz to an isomorphism on $H_k$, all other reduced
+    homology of $X$ vanishing because its cells sit in dimensions $0$ and $k$, and then the
+    homology form of Whitehead. Invertibility over $\ZZ$ is $\det=\pm1$, i.e. $\operatorname{GL}_n(\ZZ)$.
+    Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
