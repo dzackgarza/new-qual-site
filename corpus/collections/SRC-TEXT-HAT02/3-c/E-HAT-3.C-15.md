@@ -43,6 +43,22 @@ audit:
     commutative, which is not assumed. Torsion-freeness of $A\otimes A$ is what carries the rational
     computation back to $\ZZ$, and it is used twice, once for the coproduct and once for
     commutativity and associativity of the Pontryagin product.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 15 of §3.C, printed p. 292. Correct throughout. $A\otimes\QQ=\QQ[\alpha]$
+    with $A$ free in each degree gives $A_{nd}$ of rank one and nothing else in positive degrees,
+    and $d$ even because $\alpha^2\ne0$ in a graded-commutative ring. With $a_n=q_n\alpha^n$ and
+    $a_ia_j=m_{ij}a_{i+j}$ one has $m_{ij}=q_iq_j/q_{i+j}$, so the $q_n$ are determined by the
+    integral ring up to rescaling $\alpha$; $\Delta(\alpha)=\alpha\otimes1+1\otimes\alpha$ because
+    $d$ is the least positive degree, so no decomposables occur, and multiplicativity of $\Delta$
+    gives $\Delta(a_n)=\sum_i\binom ni(q_n/q_iq_{n-i})a_i\otimes a_{n-i}$. $A\otimes A$ is free, hence
+    torsionfree, so the rational coproduct determines the integral one; the coproduct formula is
+    cocommutative and coassociative as an identity on the generator, which is where those two Hopf
+    axioms come from without assuming the H-space multiplication is homotopy commutative or
+    associative; dualizing gives the Pontryagin product, $H_*$ being degreewise finite free.
+    Nothing changed. Not claimed: a published solution, and no certificate.
 ---
 
 ::: {.problem}
