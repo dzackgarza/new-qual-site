@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 12, printed p. 390,
+    Proposition 4.1 (printed p. 348) and Corollary 4.33 (printed p. 368), and against the
+    published solution in Steven V. Sam's Solutions to Hatcher's Algebraic Topology (2008),
+    §4.2 Exercise 12, PDF p. 22. The card's steps are correct and are Sam's argument: the
+    lift exists because X~ is simply connected, the hypothesis makes f~ a homology
+    isomorphism, Whitehead makes f~ a homotopy equivalence, and Proposition 4.1 carries
+    the resulting isomorphisms on pi_i down to f_* for i > 1; with pi_1 by hypothesis and
+    pi_0 by connectivity, f is a weak equivalence of CW complexes. The card had called the
+    argument its own although the set covers the exercise; the citation is now there.
+    Statement unchanged.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -51,7 +65,7 @@ Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence
 
 ::: {.solution}
 
-The argument is the card's own: the lift to universal covers is a homotopy equivalence by the homology form of Whitehead, and higher homotopy descends through covering maps.
+The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 12, PDF p. 22**. Sam's argument is exactly the three moves needed — the lift to universal covers is a homotopy equivalence by the homology form of Whitehead's theorem (Corollary 4.33, printed p. 368), so $\tilde f_*$ is an isomorphism on every homotopy group, and Proposition 4.1 (printed p. 348) carries that down through the covering maps to $f_*$ for $i>1$. The card's steps are that argument written out.
 
 Let $f:X\to Y$ be a map of connected CW complexes inducing an isomorphism on $\pi_{1}$, and let $\widetilde f:\widetilde X\to\widetilde Y$ be a lift of $f$ to the universal covers (its existence is part of the data).
 
