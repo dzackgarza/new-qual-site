@@ -53,9 +53,19 @@ audit:
     that an isotopy must be continuous in both variables, and the Hausdorff requirement for the
     manifold property, which the earlier text left to the reader. No defect found in the statement,
     §3.D Exercise 1.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 311 carries the running head 302.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.D of Hatcher, *Algebraic Topology* (2002), printed p. 302, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that a topological group with a finite-dimensional CW structure is an orientable manifold.
 [Consider the homeomorphisms $x \mapsto gx$ or $x \mapsto xg$ for fixed $g$ and varying $x$ in the group.]
 :::
