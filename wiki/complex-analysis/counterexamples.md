@@ -42,7 +42,7 @@ The function $f(z) = z$ is nonconstant on $\DD$, and $\abs f$ attains its minimu
 
 ::: {.example title="An unbounded domain"}
 On the strip $S\coloneqq\theset{\abs{\Im z}<\pi/2}$ the function $f(z) = \exp(e^z)$ is holomorphic on $\overline S$ with $\abs f = 1$ on $\bd S$, since $e^z = \pm ie^x$ there, and $f(x) = \exp(e^x)$ is unbounded on $\RR\subseteq S$.
-The growth of $f$ is of the critical order for the [[T-QX4MB|Phragmén--Lindelöf principle]]: $\abs{f(z)} = \exp(e^{\Re z}\cos\Im z)\leq \exp(e^{\abs{\Re z}})$.
+So a bound on $\bd S$ does not extend to $S$, and no form of the [[T-QX4MB|Phragmén--Lindelöf principle]] can drop its growth hypothesis: the sector form of the principle is on that card, and here the growth is $\abs{f(z)} = \exp(e^{\Re z}\cos\Im z)\leq\exp(e^{\abs{\Re z}})$, of the critical order that the hypothesis excludes.
 :::
 
 ## The Phragmén--Lindelöf principle
@@ -71,7 +71,8 @@ The function $1/\sin(\pi/z)$ has a non-isolated singularity at $0$.
 ## Convergence
 
 ::: {.example title="Pointwise convergence without local uniformity"}
-On $\DD$ the monomials $z^k$ converge pointwise to $0$ and not uniformly, so pointwise convergence neither gives a holomorphic limit by [[C-TODSQ|the locally uniform limit theorem]] nor controls the derivatives.
+On $\DD$ the monomials $z^k$ converge pointwise to $0$ and not uniformly, so pointwise convergence does not supply the hypothesis of [[C-TODSQ|the locally uniform limit theorem]].
+The limit here is holomorphic, and that is the point: what fails is the uniformity through which the theorem controls the limit function and its derivatives.
 :::
 
 ::: {.remark}
