@@ -49,6 +49,7 @@ Nothing here identifies an original paper, and this record does not claim one.
 The public NUS qualifying-exam archive at `zr9558.com/nationaluniversityofsingapore/phd-qe-papers/analysis/`, whose complex- and real-analysis papers begin with 2000--2001, holds no 1970 paper; the upstream history recorded below carries no source asset, URL or paper identifier for these rows; and the NUS Libraries Examination Papers database is restricted to NUS staff and students, so it cannot be searched from here.
 The statements themselves are circulating qualifying-exam items: the retained text agrees with the pinned witness — fetched and hashed again for this record — apart from the two garbles repaired on `P-R623W` and `P-MMAQ-RML5AHHINX`, and the parts split across cards agree part by part.
 The year `1970` stays as the dataset's unverified label, which both collection titles state.
+The sentence in the 2026-11-01 `Verified.` paragraph below that both files "are now listed in the two collections' `provenance`" is what the tree held that day; both lists are empty now, for the reason the 2026-11-19 record below gives.
 
 The question of which 1970 papers these twenty statements came from is therefore an open source ambiguity, not a defect of any card: no statement in the two collections disagrees with its witness, and the one item that also circulates with a different sign has the same answer either way, which `P-3T5VY` now records.
 
