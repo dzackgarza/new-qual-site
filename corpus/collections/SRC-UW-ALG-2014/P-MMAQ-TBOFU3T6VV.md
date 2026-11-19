@@ -154,11 +154,6 @@ Step [](#s2-4){.pf-ref}.
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
-:::
 
 :::
 
