@@ -25,7 +25,7 @@ Similar matrices are the matrices of one operator in two bases, and equivalent m
 
 ## Eigenvalues
 
-Recall that the characteristic polynomial has the eigenvalues as roots with algebraic multiplicity, that the minimal polynomial is the monic polynomial of least degree annihilating the operator, and that the operator is diagonalizable exactly when its minimal polynomial has distinct roots.
+Recall that the characteristic polynomial has the eigenvalues as roots with algebraic multiplicity, that the minimal polynomial is the monic polynomial of least degree annihilating the operator, and that the operator is diagonalizable over $F$ exactly when its minimal polynomial splits over $F$ with distinct roots.
 
 [[D-QFYAC]]
 
@@ -43,7 +43,15 @@ Recall also that an operator over an algebraically closed field has an eigenvect
 
 ## The determinant
 
-The permutation expansion, cofactor expansion along a row, the adjugate inverse, and the identification of the trace and the determinant with the elementary symmetric functions of the eigenvalues are on [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]], and factoring a cubic by the rational root theorem is on [[algebra/linear-algebra/minimal-and-characteristic-polynomials|Minimal and characteristic polynomials]].
+::: {.example title="Cofactor expansion"}
+For
+$$
+A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 & 1 \\ 0 & 1 & 2 \end{pmatrix},
+$$
+expanding along the first row gives $\det A = 2\cdot(3\cdot2 - 1\cdot1) - 1\cdot(1\cdot2 - 1\cdot0) + 0\cdot(1\cdot1-3\cdot0) = 2\cdot5 - 2 = 8$, and expanding along the third column gives $0\cdot(1\cdot1-3\cdot0) - 1\cdot(2\cdot1 - 1\cdot0) + 2\cdot(2\cdot3 - 1\cdot1) = -2 + 10 = 8$: the expansions agree because each cofactor carries the sign $(-1)^{i+j}$.
+:::
+
+The permutation expansion, the adjugate inverse, and the identification of the trace and the determinant with the elementary symmetric functions of the eigenvalues are on [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]], and factoring a cubic by the rational root theorem is on [[algebra/linear-algebra/minimal-and-characteristic-polynomials|Minimal and characteristic polynomials]].
 
 ## Inner products and forms
 
