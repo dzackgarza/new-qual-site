@@ -11,10 +11,8 @@ topics:
 
 ## The isomorphism theorems
 
-For a homomorphism $\varphi\colon G\to H$, the first isomorphism theorem gives $G/\ker\varphi\cong\im\varphi$.
-The second theorem compares a subgroup $H\le G$ with a normal subgroup $N\normal G$: $HN/N\cong H/(H\intersect N)$.
-The third theorem compares nested normal subgroups $K\le N$ of $G$: $(G/K)/(N/K)\cong G/N$.
-The correspondence theorem identifies the subgroups of $G/N$ with the subgroups of $G$ containing $N$.
+The first isomorphism theorem computes the image of a homomorphism as the quotient by its kernel; the second computes the quotient of the product $HN$ and the third the quotient of a quotient, and the correspondence theorem identifies the subgroups of $G/N$ with the subgroups of $G$ that contain $N$.
+The three quotients are what a classification argument uses: a normal subgroup gives one of them, and the correspondence theorem carries normality through it.
 
 [[T-I5N43]]
 
@@ -22,38 +20,40 @@ The correspondence theorem identifies the subgroups of $G/N$ with the subgroups 
 
 [[T-6CQEB]]
 
-## Products
+## Direct products
 
-A group $G$ is the internal direct product of subgroups $H$ and $K$ if $H,K\normal G$, $H\intersect K=1$, and $HK=G$; then $hk=kh$ for all $h\in H$, $k\in K$, and $G\cong H\times K$.
-If only $N\normal G$ is normal, $H\le G$, $N\intersect H=1$, and $NH=G$, then conjugation defines a homomorphism $\psi\colon H\to\Aut(N)$, $\psi(h)(n)=hn\inverseof{h}$, and $G\cong N\semidirect_\psi H$.
-In particular, when a Sylow subgroup $N$ of $G$ is normal and has a complement $H$, the isomorphism type of $G$ is determined by $N$, $H$, and $\psi$.
-
-[[PR-BEIVF]]
-
-[[T-TTZ2Y]]
+A direct product decomposition is exhibited by subgroups rather than by a map: normal subgroups that together generate $G$ and meet trivially, one at a time in the sense of the intersection condition below, multiply to $G$ by an isomorphism.
+The recognition theorem turns that hypothesis into the isomorphism, so classifying a group up to isomorphism becomes the search for normal subgroups of prescribed orders and intersections.
 
 [[E-R6I7G]]
 
 [[T-YNKCZ]]
 
+[[PR-BEIVF]]
+
+[[T-TTZ2Y]]
+
+## Semidirect products
+
+With one normal factor only, the same construction produces a semidirect product whose multiplication is twisted by the conjugation map $H\to\Aut(N)$, and two twisting maps give isomorphic groups when they differ by an automorphism of $H$.
+A normal Sylow subgroup $N$ with a complement $H$ is the case this arises in for a group of order $\cardinality{N}\cardinality{H}$.
+
 [[T-SB6AV]]
 
-::: {.remark title="Semidirect products with a given kernel and complement"}
-For groups $N$ and $H$, if $\varphi,\psi\colon H\to\Aut(N)$ satisfy $\psi=\varphi\circ\alpha$ for some $\alpha\in\Aut(H)$, then $N\semidirect_\varphi H\cong N\semidirect_\psi H$.
-For $N=\ZZ/n$, $\Aut(\ZZ/n)\cong(\ZZ/n)^\times$, so every semidirect product $\ZZ/n\semidirect_\psi H$ is given by a homomorphism $\psi\colon H\to(\ZZ/n)^\times$.
-:::
+[[PR-SD8CY]]
 
 ## Automorphism groups
 
-For cyclic $N\cong\ZZ/n$, $\Aut(N)\cong(\ZZ/n)^\times$, whose order is the number of integers in $\theset{1,\ldots,n}$ coprime to $n$, the value at $n$ of [[D-JX3YC|Euler's totient function]].
+An automorphism of a cyclic group is multiplication by a unit of $\ZZ/n$, so the automorphism group is a unit group, and the twisting maps of the semidirect products above are counted there.
 
 [[PR-N6S6P]]
 
+[[D-JX3YC]]
+
 ## Finitely generated abelian groups
 
-A finite abelian group has an [[D-SS34F|invariant factor decomposition]] $\ZZ/d_1\times\cdots\times\ZZ/d_k$ with $d_1\divides d_2\divides\cdots\divides d_k$, and an [[D-JQNJQ|elementary divisor decomposition]] as a product of cyclic groups of prime-power order; each is unique up to the order of the factors.
-The elementary divisors are the prime-power factors of the $d_i$, and $d_k$ is the product, over the primes $p$, of the largest elementary divisor that is a power of $p$.
-The order of the group is $d_1\cdots d_k$ and its exponent is $d_k$.
+A finitely generated abelian group is a free abelian group times finitely many finite cyclic groups, the finite part is canonically the direct sum of its $p$-primary parts, and the two standard decompositions differ only in the grouping of those cyclic factors.
+The invariant factors are ordered by divisibility and the elementary divisors are the prime powers; the number of groups of a given order is a product of partition numbers.
 
 [[D-SS34F]]
 
