@@ -21,4 +21,6 @@ $$
 f(z_0)=\frac{1}{2\pi}\int_0^{2\pi}f(z_0+re^{i\theta})\dtheta=\frac{1}{\pi r^2}\iint_{\DD_r(z_0)}f(z)\dA.
 $$
 The same identities hold for $u=\Re f$ in place of $f$, by taking real parts.
+
+The identity for $f$ is [@SS03, Corollary 7.2 of Chapter 2 (p. 102)], and the one for $u = \Re f$ is [@SS03, Corollary 7.3 (p. 103)].
 :::
