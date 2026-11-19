@@ -9,9 +9,9 @@ topics:
 
 # Computing cohomology
 
-Sheaf cohomology $H^i(X,-)$ is the $i$th right derived functor of $\Gamma(X,-)$ on sheaves of abelian groups.
-For a quasi-coherent sheaf on a noetherian separated scheme, the Čech complex of a finite affine open cover computes it.
-The cover of $\PP^n_A$ by the $n+1$ opens $D_+(x_i)$ gives $H^*(\PP^n_A,\OO(d))$ for every $d$.
+Sheaf cohomology $H^i(X,-)$ is the $i$th right derived functor of $\Gamma(X,-)$ on sheaves of abelian groups [@Har77, §III.2, pp. 204--207].
+For a quasi-coherent sheaf on a noetherian separated scheme, the Čech complex of a finite affine open cover computes it [@Har77, Theorem III.4.5, p. 222].
+The cover of $\PP^n_A$ by the $n+1$ opens $D_+(x_i)$ gives $H^*(\PP^n_A,\OO(d))$ for every $d$ [@Har77, Theorem III.5.1, p. 225].
 
 [[D-PTIW0]]
 
