@@ -225,7 +225,7 @@ Write $A\cong\ZZ^{r}\oplus\bigoplus_{j=1}^{s}\ZZ_{n_{j}}$, the classification of
 $\operatorname{Tor}(A,B)$ is a torsion group for every abelian group $A$.
 
 ::: pf-proof
-$A$ is the directed union of its finitely generated subgroups $A_{\alpha}$, and Tor commutes with direct limits in the first variable (Exercise 4), so $\operatorname{Tor}(A,B)\cong\varinjlim_{\alpha}\operatorname{Tor}(A_{\alpha},B)$. An element of the direct limit is represented by an element of some $\operatorname{Tor}(A_{\alpha},B)$, which has finite order by step [](#finitely-generated){.pf-ref}, and its class in the colimit has the same finite order because the transition maps are group homomorphisms. Hence every element of $\operatorname{Tor}(A,B)$ has finite order.
+$A$ is the directed union of its finitely generated subgroups $A_{\alpha}$, and Tor commutes with direct limits in the first variable (Exercise 4), so $\operatorname{Tor}(A,B)\cong\varinjlim_{\alpha}\operatorname{Tor}(A_{\alpha},B)$. An element of the direct limit is represented by an element of some $\operatorname{Tor}(A_{\alpha},B)$, which has finite order by step [](#finitely-generated){.pf-ref}, and its class in the colimit has finite order dividing that one, because a group homomorphism carries an element of order $m$ to an element of order dividing $m$; the transition maps here need not be injective, so the order can drop and only the divisibility is asserted. Hence every element of $\operatorname{Tor}(A,B)$ has finite order.
 :::
 
 :::
