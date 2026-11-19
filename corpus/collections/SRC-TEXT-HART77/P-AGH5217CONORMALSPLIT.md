@@ -268,7 +268,32 @@ audit:
     three spans with `pdflatex` produced a fatal error before the repair and a
     PDF after it. Not checked: the rendered page in a browser, and no
     mathematics was read or altered by this repair.
-
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Part (b) in characteristics 2 and 3, the part of this card that #160
+    records as open. Read for it: Hartshorne, Algebraic Geometry (1977),
+    V.2.17, printed p. 386, with the printed Answer "If char k neq 2, then
+    l = m = -7; if char k = 2, then l, m = -6, -8" (text version
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, where printed p. N is
+    PDF p. N+15 and the exercise stands under the marker of PDF p. 401).
+    Checked against the card's own step s3, line by line: with q = c - ab and
+    h = b - a^n, the substitutions b = a^n + h and c = a^{n+1} + ah + q give
+    a c^{n-1} - b^n = -a^{n^2-n}h + (n-1)a^{n^2-n-1}q modulo (q,h)^2 and
+    c^n = a^{n^2+n}, so h' = -s^{-2n}h + (n-1)s^{-2n-1}q; after the diagonal
+    transition factors the class is (n-1)eta, a generator of
+    H^1(P^1,O(-2)) multiplied by n-1. For n = 3 this is 2eta, zero exactly
+    when 2 = 0: characteristic 3 gives the non-split O(-7) + O(-7), the
+    book's answer for char k neq 2, and characteristic 2 gives the split
+    O(-6) + O(-8) by step s4. The card's own proof therefore decides both
+    characteristics and agrees with the printed answer. No published proof
+    of them is claimed: Yang Pi-Yeh, Solution 5.2.17, printed p. 107, is
+    sound away from 2 and 3, is wrong in characteristic 3 (he prints the
+    split answer there), and his Jacobian presentation is not the conormal's
+    in characteristic 2, as the remark says. Not checked: the card's other
+    steps were not re-derived in this pass; only step s3's computation was
+    verified line by line.
 ---
 
 ::: {.problem}
