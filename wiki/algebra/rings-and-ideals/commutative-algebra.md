@@ -88,3 +88,7 @@ The two cards below give the decomposition in general and in the structured case
 ## Gorenstein rings
 
 [[D-DU4UQ]]
+
+For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional; that computation is on the card below.
+
+[[P-HCAO21]]
