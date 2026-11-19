@@ -37,7 +37,7 @@ $$
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the collection's provenance is a Google Books record, so the argument is the card's own. Let $a>0$ and put
+The statement is Exercise 4 of [@SS03, ch. 3 (p. 103)], printed as $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$ for $a>0$. No retained solution set covers this exercise: the collection's provenance is a Google Books record, so the argument is the card's own. Let $a>0$ and put
 $$
 F(z)=\frac{z\,e^{iz}}{z^2+a^2},
 $$
