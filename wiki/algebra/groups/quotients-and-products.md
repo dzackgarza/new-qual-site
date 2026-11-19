@@ -42,7 +42,7 @@ A normal Sylow subgroup $N$ of $G$ with a complement $H$ is the case this arises
 
 ## Automorphism groups
 
-An automorphism of a cyclic group is multiplication by a unit of $\ZZ/n$, so the automorphism group is a unit group, and the twisting maps $H\to\Aut(N)$ of the semidirect products are counted there.
+An automorphism of a cyclic group is multiplication by a unit of $\ZZ/n$, so the automorphism group is a unit group, and when $N$ is cyclic the twisting maps $H\to\Aut(N)$ of the semidirect products are counted there.
 
 [[PR-N6S6P]]
 
