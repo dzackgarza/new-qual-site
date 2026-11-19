@@ -288,6 +288,40 @@ audit:
     card's own, and the conclusion stays relative to it. Not checked: no other
     source was searched for this step in this pass, and no step of the exercise
     was re-derived.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step abelian-scheme now carries a published proof of the relative statement,
+    which is what issue #155 asks for, and the card no longer says that the step
+    is unproved. Read for it: Katz and Mazur, *Arithmetic Moduli of Elliptic
+    Curves* (1985), (2.1.1) and Theorem 2.1.2 (Abel) with its proof, printed
+    pp. 63--66, in the text version
+    tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.md and on the
+    rendered pages of
+    tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.pdf, where
+    printed p. N is PDF p. N+12, so that printed p. 63 is PDF p. 75 and the
+    proof's last page, printed p. 66, is PDF p. 78. Their (2.1.1) defines an
+    elliptic curve over an arbitrary scheme as a proper smooth curve with
+    geometrically connected fibres of genus one and a section, which is the
+    exercise's data, and Theorem 2.1.2 supplies the commutative group-scheme
+    structure by transporting that of the relative Picard functor along Abel's
+    map, so the step's statement is a published theorem and not the card's own.
+    Two of that proof's citations were read in the same text: Mumford,
+    *Abelian Varieties* (1970), p. 53, for the invertibility and base-change
+    compatibility of the pushforward of a fibrewise-degree-one sheaf, and their
+    (1.2.7), that an effective Cartier divisor of degree one in E/S is a
+    section, which the proof quotes on printed p. 66. Checked against the book
+    for the comparison with Hartshorne's language: the definition of a group
+    scheme before Remark 4.10.5, printed p. 324, Theorem 4.11 with its last
+    clause identifying the group structure of Remark 4.10.6, printed p. 325,
+    and the printed exercise, IV Ex. 4.22 on printed p. 340, whose statement is
+    unchanged. The conclusion of the solution and the remark on the published
+    solution now read the step as proved. Not checked: Mumford's p. 53 itself,
+    which is in no retained set and is cited as Katz and Mazur cite it;
+    Deligne, *Theorie de Hodge II*, 4.4.3, and the results of Peters and
+    Steenbrink and of Strauch that Youcis cites, as before; and the card's other
+    steps were not re-derived in this pass.
 ---
 
 ::: {.problem}
@@ -308,22 +342,34 @@ $$
 S=\AA^1_{\CC}=\Spec\CC[t],
 $$
 let $\pi:E\to S$ be the family, and let $O:S\to E$ be the given section.
-The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line".
+The proof is A. Youcis, *Abelian schemes over the integers* (2016), section "The case over the complex line", once the family is one of abelian varieties over $S$, which is step [](#abelian-scheme){.pf-ref} and is Katz and Mazur's Theorem 2.1.2.
 His Theorem 8 is stronger than the exercise and is applied to $V=S$ in step [](#conclusion){.pf-ref}.
 
 ::: pf
 
 ::: {.pf-step #abelian-scheme}
 
-The section $O$ makes each fibre $E_t$ an elliptic curve with origin $O(t)$, so $E\to S$ is a family of elliptic curves pointed by $O$; that it is consequently a family of abelian varieties over $S$ in the sense of Youcis, a smooth proper group scheme with connected fibres, is the card's own step.
+$E\to S$ is a smooth proper group scheme over $S$ with geometrically connected fibres, with identity $O$: a family of abelian varieties over $S$ in the sense of Youcis.
 
 ::: pf-proof
 
-This step is the card's own.
+The data are an elliptic curve over $S$ in the sense of Katz and Mazur, *Arithmetic Moduli of Elliptic Curves* (1985), (2.1.1), printed p. 63: "Let $S$ be an arbitrary scheme. An elliptic curve $E/S$ is a proper smooth curve" --- their display carries the morphisms $E\to S$ and the section "$0$" --- "with geometrically connected fibers all of genus one, given with a section '$0$'." The exercise gives exactly that: $\pi\colon E\to S$ proper and smooth with fibres of genus $1$, and the section $O$.
 
-The printed hint of the exercise begins "Use the section to fix the group structure on the fibres", and each fibre $E_t$ is a smooth curve of genus $1$ with the point $O(t)$: a genus-one curve with a chosen point is an elliptic curve, and its group law has that point as identity.
-What the book proves about that point is Hartshorne IV.4: an elliptic curve is its own Jacobian, Theorem 4.11, printed p. 325, whose last clause identifies the group structure of Remark 4.10.6, printed p. 324, with the one of (4.7); the book's definition of an abelian variety is "a complete group variety over $k$", printed p. 140. That is the fibre-level statement over $k=\CC$, and it makes each $E_t$ an abelian variety. It is not the relative statement this step needs: the theorem quantifies over an elliptic curve over $k$ and over $k$-schemes $T$, so it fixes the curve and varies only the test scheme, and it says nothing about a family $E\to S$.
-Youcis's definition, in his section "Two statements of the main result", is "an abelian scheme $\mathscr A/S$ is a smooth proper group scheme with connected fibers", and the passage from the pointed family to a smooth proper group scheme over $S$ needs two things that are not proved here: that the fibrewise group laws are the restrictions of morphisms $E\times_SE\to E$ and $E\to E$ over $S$, and the representability of the relative Picard functor $\Pic^0_{E/S}$ together with the identification $E\cong\Pic^0_{E/S}$ that would supply them. The printed hint asserts the first of the two.
+Katz and Mazur, Theorem 2.1.2 (Abel), printed p. 63, proved on printed pp. 63--66: "There exists a unique structure of commutative group-scheme on $E/S$ such that for any $S$-scheme $T$, and any three points $P,Q,R$ in $E(T)=E_T(T)$, we have
+$$
+P+Q=R
+$$
+if and only if there exists an invertible sheaf $\mathcal L_0$ on $T$ and an isomorphism of invertible sheaves on $E_T$
+$$
+I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)\cong I^{-1}(R)\otimes f_T^*(\mathcal L_0)."
+$$
+There $I(P)$ is the ideal sheaf of a section $P$ viewed as an effective Cartier divisor of degree one in $E$, and $f_T\colon E_T\to T$ is the projection.
+
+Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. For such a sheaf $\mathcal L$ one has $R^1f_*\mathcal L=0$: $R^1f_*$ for $f$ proper and flat of relative dimension one is of formation compatible with base change, and over an algebraically closed field $H^1(E,\mathcal L)=0$ for $\deg\mathcal L>2g-2=0$; then $f_*\mathcal L$ is invertible and of formation compatible with base change, Mumford, *Abelian Varieties* (1970), p. 53, as they cite it. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
+
+That is a group scheme over $S$ with identity $O$ in the sense of the definition before Remark 4.10.5, printed p. 324: the identity is the section $O$, the inverse and the operation are morphisms over $S$, and the two axioms asserted there are the group-scheme axioms of Katz and Mazur. Since $\pi$ is smooth and proper with geometrically connected fibres, $E$ is an abelian scheme over $S$ in the sense of Youcis, "a smooth proper group scheme with connected fibers", from his section "Two statements of the main result".
+
+On a fibre the law is the classical one. At $T=\Spec\CC$ over a closed point $t\in S$ the condition reads $I^{-1}(P)\otimes I^{-1}(Q)\otimes I(O)\cong I^{-1}(R)$ in $\Pic E_t$ for $P+Q=R$, which is the identification of the genus-one curve $E_t$ with its own Picard group of degree zero, Hartshorne Theorem 4.11, printed p. 325, whose last clause identifies the group structure of Remark 4.10.6, printed p. 324, with the classical one.
 
 :::
 
@@ -389,7 +435,7 @@ $$
 
 Take $V=S=\AA^1_\CC$ in step [](#theorem-eight){.pf-ref}.
 $S$ is a smooth connected algebraic variety over $\CC$, and $S^\text{an}=\CC$ is simply connected, being contractible: the homotopy $x\mapsto(1-s)x$, $0\le s\le1$, contracts $\CC$ to the origin.
-Step [](#abelian-scheme){.pf-ref} is what makes $E\to S$ a family of abelian varieties over $V=S$; that step is the card's own and unproved, so what follows is relative to it.
+Step [](#abelian-scheme){.pf-ref} makes $E\to S$ a family of abelian varieties over $V=S$.
 With it, Theorem 8 applies through its proof in step [](#deligne-argument){.pf-ref} and $E\to S$ is isotrivial, that is, by step [](#constant-family){.pf-ref}, a product $E_0\times_\CC\AA^1_\CC$ over $\AA^1_\CC$.
 That is the triviality the exercise asks for.
 
@@ -404,7 +450,7 @@ That is the triviality the exercise asks for.
 ::: {.remark title="Published solution"}
 
 Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
-The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}, which is the card's own and unproved.
+The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}: Katz and Mazur's Theorem 2.1.2, printed p. 63, with its proof on printed pp. 63--66. The printed hint's first clause, "Use the section to fix the group structure on the fibres", asks for exactly that theorem.
 Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, 4.4.3, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
