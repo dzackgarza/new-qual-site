@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 8A, printed pp. 3--4 of the packet is the source of the argument, and the paragraph at the head
+    of the solution says what the card adds. Checked: the packet read in its text layer at the page
+    named and the card's steps compared with its sentences, `qualc.authoring check` on the card, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 8A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -35,6 +44,8 @@ If $f$ is nonnegative for all real arguments, show that $f$ can be written as a 
 :::
 
 ::: {.solution}
+
+The argument is Problem 8A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 3--4 of that file, transcribed: assume the matrix symmetric; induct on $n$; if $a_{11}=0$ then every other entry of the first row and column vanishes, since $f$ would otherwise take negative values, so $a_{11}>0$; then completing the square in $x_1$ kills the rest of the first row and column and leaves a non-negative form in $n-1$ variables, which is a sum of squares by induction. What the card adds is the symplectisation to $S=(A+A^T)/2$ and the step structure, not the argument.
 Let $A=(a_{jk})$ and regard $x=(x_1,\ldots,x_n)^T$ as a column vector,
 so that
 $$
