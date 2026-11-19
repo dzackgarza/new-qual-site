@@ -49,6 +49,7 @@ Furthermore, $X$ itself is a Zariski space if and only if the map $\alpha: X \to
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.17 (Zariski Spaces), printed p. 31--32 of the held scan, transcribed and checked against the exercise as printed: part (d), that a point of $X$ outside a proper open subset is the generic point of an irreducible closed subset; part (a), the uniqueness of that generic point and the affine case; and the conclusion that a Zariski space with a unique generic point is a bijection.
 
 ::: pf
 
