@@ -17,6 +17,11 @@ For $f(z) = z^3 - 1$ the hull is the triangle whose vertices are the cube roots 
 If all zeros of a nonconstant polynomial $f$ lie in a closed half-plane $H$, then all zeros of $f^{(k)}$ lie in $H$ for every $k$ such that $f^{(k)}$ is nonconstant.
 :::
 
+::: {.example title="One zero of $f''$ from three on a line"}
+For $f(z) = (z-1)(z-2)(z-3) = z^3-6z^2+11z-6$ the zeros lie on the line $\RR$, and $f''(z) = 6z-12$ vanishes only at $z=2$, which is the midpoint of $1$ and $3$ and lies in the hull $[1,3]$ of the zeros.
+The corollary with the half-plane $H = \theset{z : \Im z\geq0}$ gives the same thing, and the same argument applies to every $f^{(k)}$ that is nonconstant.
+:::
+
 ::: {.proof}
 $H$ is convex, so it contains the convex hull of the zeros of $f$, and the [[T-C7GBB|Gauss--Lucas theorem]] gives the case $k=1$; induct on $k$.
 :::

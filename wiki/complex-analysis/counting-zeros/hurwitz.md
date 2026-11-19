@@ -14,6 +14,12 @@ topics:
 
 [[T-FZWEC]]
 
+::: {.example title="A double zero born from two simple ones"}
+The functions $f_k(z) = z^2 + z/k = z(z+1/k)$ converge locally uniformly to $f(z) = z^2$, which has a double zero at $0$.
+Hurwitz's theorem predicts exactly two zeros of $f_k$ near $0$ for large $k$, and there they are: $0$ and $-1/k$, each simple, both inside $\abs z<\delta$ as soon as $1/k<\delta$; the count is two with multiplicity, matching the order of the limit's zero.
+Away from $0$ the limit vanishes nowhere, and neither do the $f_k$.
+:::
+
 ::: {.slogan}
 Near a zero of order $n$ of the limit, the $n$ zeros of $f_k$ for large $k$ converge to that zero.
 :::
