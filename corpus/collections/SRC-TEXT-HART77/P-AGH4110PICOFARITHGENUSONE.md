@@ -171,6 +171,16 @@ audit:
     only: s1's statement and s2's opening lines. Not read: s7. The steps read
     in part or not at all are not certified by this pass, and nothing else in
     the event above is withdrawn.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The whole-corpus check rejected this card with "lamport proof: the pf root can contain only steps":
+    the notation paragraph stood between `::: pf` and the first step, which the filter refuses and the
+    page would not have rendered. The paragraph is unchanged in wording and now sits in the solution
+    immediately before the proof root, where the rest of the corpus puts such a preamble. No mathematics
+    was changed.
+
 ---
 
 ::: {.problem}
@@ -183,9 +193,9 @@ This generalizes (II, 6.11.4) and (II, Ex.
 :::
 
 ::: {.solution}
-::: pf
+With the notation fixed once for the whole proof: Throughout, $\mcl(D)$ denotes the invertible sheaf $\mco_X(D)$ associated to a divisor $D$, which is the notation of Hartshorne's Example IV.1.3.7, printed p. 297, and the bare $\mcl$ a given invertible sheaf; so $\mcl(E)$ in step [](#s6){.pf-ref} is $\mco_X(E)$ of the divisor $E$, not the class $\mcl$ twisted by $\mco_X(E)$.
 
-Throughout, $\mcl(D)$ denotes the invertible sheaf $\mco_X(D)$ associated to a divisor $D$, which is the notation of Hartshorne's Example IV.1.3.7, printed p. 297, and the bare $\mcl$ a given invertible sheaf; so $\mcl(E)$ in step [](#s6){.pf-ref} is $\mco_X(E)$ of the divisor $E$, not the class $\mcl$ twisted by $\mco_X(E)$.
+::: pf
 
 ::: {.pf-step #s1}
 
