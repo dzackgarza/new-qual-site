@@ -55,7 +55,7 @@ Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting 
 [[PR-PB6UE]]
 
 ::: {.remark}
-Over a finite field $\FF_p$, a polynomial of degree $d$ is irreducible if and only if it has no monic irreducible factor of degree at most $d/2$, which can be checked by dividing by each monic irreducible polynomial of degree at most $d/2$.
+Over a finite field $\FF_p$, a polynomial of degree $d$ with no monic irreducible factor of degree at most $d/2$ is irreducible: a factorization $f=gh$ into factors of degree at least $1$ has one factor of degree at most $d/2$. So irreducibility is decided by dividing by the monic irreducibles up to degree $d/2$.
 :::
 
 ::: {.example title="Irreducibility modulo $2$"}
