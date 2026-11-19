@@ -58,6 +58,19 @@ audit:
     components by sign of determinant, with the reflection having degree -1. Not checked: no recomputation
     of local degrees, and the deformation in (c) is accepted at the level of the standard argument rather
     than expanded.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.1 Exercise 15, printed
+    pp. 359-360, and against Lemma 4.10, printed pp. 350-351. Parts (b) and (c) are
+    correct. Part (a) had one defect: after replacing f by the map f_1 that Lemma 4.10
+    produces, it wrote the local linearity as a property of f ("f|_{B_i}: B_i -> B is
+    linear and invertible"), which is false of the original f, and it never said why
+    proving the theorem for f_1 suffices. Repaired: the local model is now written for
+    f_1, the balls B_i are required to lie in the interiors of the pieces through the
+    p_i, and the reduction [f] = [f_1] is stated. Nothing else changed. Not checked:
+    no recomputation of local degrees.
 
 ---
 
@@ -84,11 +97,11 @@ Since $q\in U$ and $K\supset f_1^{-1}(U)$, the preimage $f_1^{-1}(q)$ lies in $K
 $$
 f_1^{-1}(q)=\{p_1,\dots,p_k\}
 $$
-is finite, and at each $p_i$ the map $f_1$ agrees with an invertible affine map on a neighbourhood of $p_i$ in its piece, that is, with an invertible linear map in suitable coordinates. Choose pairwise disjoint small balls $B_i$ about the $p_i$'s and a ball $B$ about $q$ so that
+is finite, and at each $p_i$ the map $f_1$ agrees with an invertible affine map on a neighbourhood of $p_i$ in its piece, that is, with an invertible linear map in suitable coordinates. Choose pairwise disjoint small balls $B_i$ about the $p_i$'s, each lying in the interior of the piece through $p_i$, and a ball $B$ about $q$ so that
 $$
-f\restrict_{B_i}:B_i\to B
+f_1\restrict_{B_i}:B_i\to B
 $$
-is linear and invertible in these coordinates.
+is linear and invertible in these coordinates. The homotopy from $f$ to $f_1$ is a homotopy of maps $S^n\to S^n$, so it is enough to prove the theorem for $f_1$; the argument below therefore applies to $f_1$, the original $f$ differing from it by a homotopy.
 
 ### (b) Split into one-preimage pieces
 
