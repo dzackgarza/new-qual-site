@@ -53,6 +53,19 @@ audit:
     introduced when the hint was restored, not two printed hints; one copy is removed. No other statement
     text is touched, and the "if and only if" reading of the exercise is unchanged.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 22 of §4.1, printed p. 359, with the bracketed hint printed once,
+    checked at PDF page 368 of the held book. Checked both directions. Forward: the inductive
+    construction adds countably many cells at each stage, the kernels being countable because
+    $\pi_n$ of a countable CW complex is countable — every map $S^n\to K$ has compact image, hence
+    lies in one of countably many finite subcomplexes, each with countable homotopy groups by
+    simplicial approximation against a finite simplicial model. Converse: a countable CW approximation
+    $K\to X$ transfers the homotopy groups, every class lies in the image from a finite subcomplex,
+    and there are countably many of those. No defect in the mathematics. The printed page is added,
+    the card having had none.
 ---
 
 ::: {.problem}
@@ -61,6 +74,8 @@ Show that a path-connected space $X$ has a CW approximation with countably many 
 :::
 
 ::: {.solution}
+The exercise is §4.1 Exercise 22, printed p. 359, where the hint is printed in brackets.
+
 We use the standard inductive construction of a CW approximation, keeping track of cardinalities.
 
 Start with one $0$-cell and attach $1$-cells representing a generating set for $\pi_1(X)$. Since $\pi_1(X)$ is countable, only countably many $1$-cells are needed. Attach countably many $2$-cells to kill the kernel of the resulting map on $\pi_1$: the kernel is countable because the fundamental group of a countable CW complex is countable.
