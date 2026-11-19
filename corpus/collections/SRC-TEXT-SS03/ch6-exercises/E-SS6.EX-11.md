@@ -46,27 +46,27 @@ The source prints the strip $\abs{y} < \pi$ and the answer $\Gamma(a + i\xi)$. S
 :::
 
 ::: {.solution}
-With the book's convention $\widehat f(\xi)=\int f(x)e^{-2\pi ix\xi}\dd x$ the substitution $t=e^x$ turns the integral into the definition of the Gamma function at $a-2\pi i\xi$, whose real part is $a>0$; the decay on the strip is the printed observation and is proved in its own step. The argument is this card's own; no retained solution set covers the exercises of Stein--Shakarchi. The statement's printed constants differ from the book's, and the remark above records why.
+With the book's convention $\widehat f(\xi)=\int f(x)e^{-2\pi ix\xi}\dx$ the substitution $t=e^x$ turns the integral into the definition of the Gamma function at $a-2\pi i\xi$, whose real part is $a>0$; the decay on the strip is the printed observation and is proved in its own step. The argument is this card's own; no retained solution set covers the exercises of Stein--Shakarchi. The statement's printed constants differ from the book's, and the remark above records why.
 
 ::: pf
 
 ::: {.pf-step #transform}
-With $f(x)=e^{ax}e^{-e^x}$ and $a>0$, $\displaystyle\widehat f(\xi)=\int_{-\infty}^{\infty}e^{(a-2\pi i\xi)x}e^{-e^x}\,\dd x$, the integral converging absolutely for every $\xi\in\RR$.
+With $f(x)=e^{ax}e^{-e^x}$ and $a>0$, $\displaystyle\widehat f(\xi)=\int_{-\infty}^{\infty}e^{(a-2\pi i\xi)x}e^{-e^x}\dx$, the integral converging absolutely for every $\xi\in\RR$.
 
 ::: pf-proof
-By the convention $\widehat f(\xi)=\int f(x)e^{-2\pi ix\xi}\dd x$ and $e^{ax}e^{-2\pi ix\xi}=e^{(a-2\pi i\xi)x}$. The modulus of the integrand is $e^{ax}e^{-e^x}$, independent of $\xi$: for $x\le0$ one has $e^{-e^x}\le1$ and $e^{ax}\le1$, so the integrand is bounded by $1$ there, and for $x\ge0$ one has $e^x\ge x$ hence $e^{-e^x}\le e^{-x}$ and $e^{ax}e^{-e^x}\le e^{(a-1)x}$, which is integrable at $+\infty$ because $e^{-e^x}$ beats every exponential: $e^{ax}e^{-e^x}\to0$ superexponentially. So the integral converges absolutely, and uniformly in $\xi$.
+By the convention $\widehat f(\xi)=\int f(x)e^{-2\pi ix\xi}\dx$ and $e^{ax}e^{-2\pi ix\xi}=e^{(a-2\pi i\xi)x}$. The modulus of the integrand is $e^{ax}e^{-e^x}$, independent of $\xi$: for $x\le0$ one has $e^{-e^x}\le1$ and $e^{ax}\le1$, so the integrand is bounded by $1$ there, and for $x\ge0$ one has $e^x\ge x$ hence $e^{-e^x}\le e^{-x}$ and $e^{ax}e^{-e^x}\le e^{(a-1)x}$, which is integrable at $+\infty$ because $e^{-e^x}$ beats every exponential: $e^{ax}e^{-e^x}\to0$ superexponentially. So the integral converges absolutely, and uniformly in $\xi$.
 :::
 
 :::
 
 
 ::: {.pf-step #substitution}
-With $t=e^x$, $\displaystyle\widehat f(\xi)=\int_0^\infty t^{a-2\pi i\xi-1}e^{-t}\,\dd t$.
+With $t=e^x$, $\displaystyle\widehat f(\xi)=\int_0^\infty t^{a-2\pi i\xi-1}e^{-t}\dt$.
 
 ::: pf-proof
-The substitution $t=e^x$ is a strictly increasing diffeomorphism of $\RR$ onto $(0,\infty)$ with $\dd x=\dd t/t$, and $e^{(a-2\pi i\xi)x}=t^{a-2\pi i\xi}$ because $x=\log t$. Hence
+The substitution $t=e^x$ is a strictly increasing diffeomorphism of $\RR$ onto $(0,\infty)$ with $\dx=\dt/t$, and $e^{(a-2\pi i\xi)x}=t^{a-2\pi i\xi}$ because $x=\log t$. Hence
 $$
-e^{(a-2\pi i\xi)x}e^{-e^x}\,\dd x=t^{a-2\pi i\xi}e^{-t}\,\frac{\dd t}{t}=t^{a-2\pi i\xi-1}e^{-t}\,\dd t,
+e^{(a-2\pi i\xi)x}e^{-e^x}\dx=t^{a-2\pi i\xi}e^{-t}\,\frac{\dt}{t}=t^{a-2\pi i\xi-1}e^{-t}\dt,
 $$
 and the integral is absolutely convergent on both sides by step [](#transform){.pf-ref}, so the substitution is legitimate.
 :::
@@ -75,10 +75,10 @@ and the integral is absolutely convergent on both sides by step [](#transform){.
 
 
 ::: {.pf-step #gamma}
-$\displaystyle\int_0^\infty t^{a-2\pi i\xi-1}e^{-t}\,\dd t=\Gamma(a-2\pi i\xi)$.
+$\displaystyle\int_0^\infty t^{a-2\pi i\xi-1}e^{-t}\dt=\Gamma(a-2\pi i\xi)$.
 
 ::: pf-proof
-The Gamma function is defined on the half-plane $\Re s>0$ by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\,\dd t$. Here $s=a-2\pi i\xi$ satisfies $\Re s=a>0$ by the hypothesis $a>0$, so the defining integral converges and equals $\Gamma(s)$; the integral of step [](#substitution){.pf-ref} is that one with $s=a-2\pi i\xi$.
+The Gamma function is defined on the half-plane $\Re s>0$ by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\dt$. Here $s=a-2\pi i\xi$ satisfies $\Re s=a>0$ by the hypothesis $a>0$, so the defining integral converges and equals $\Gamma(s)$; the integral of step [](#substitution){.pf-ref} is that one with $s=a-2\pi i\xi$.
 :::
 
 :::
