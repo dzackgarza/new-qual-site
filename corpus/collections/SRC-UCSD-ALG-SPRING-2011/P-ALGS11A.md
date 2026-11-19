@@ -12,6 +12,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the UCSD Algebra Qualifying Exam, Spring 2011, p. 1 of the
+    two-page paper retained at assets/attachments/SP11_200_Algebra_Qual.pdf, is the statement the
+    card answers, and the paragraph at the head of the solution records that the paper prints the
+    questions and no solutions, so the argument is the card's own. Checked: the statement against
+    the paper's text layer at the page named, the classification read through (the Sylow count
+    forcing a normal subgroup of order 13, the splitting of the group over it, the image of the
+    action of order 1 or 3, and the single nontrivial isomorphism type), `qualc.authoring check` on
+    the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution
+    exists to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
@@ -31,6 +44,9 @@ Classify all such groups $G$ up to isomorphism.
 :::
 
 ::: {.solution}
+
+The problem is Problem 1 of the UCSD Algebra Qualifying Exam, Spring 2011, printed on p. 1 of the two-page paper retained at `assets/attachments/SP11_200_Algebra_Qual.pdf`. The paper is the examination paper and prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the case analysis the question asks for, namely the Sylow count forcing the subgroup of order $13$ to be normal, the splitting of $G$ over it, the image of the action of order $1$ or $3$, and the isomorphism of the two nontrivial actions.
+
 Let $x\in G$ have order $9$.
 
 ::: pf
