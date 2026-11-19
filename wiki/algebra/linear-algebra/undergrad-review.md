@@ -5,7 +5,7 @@ order: 20
 
 # Undergraduate review
 
-The undergraduate facts a qualifying exam assumes without stating them, each with the card that states it and the page that uses it.
+The undergraduate facts a qualifying exam assumes without stating them, each with the statement that carries it and the page that uses it.
 
 ## Dimension and rank
 

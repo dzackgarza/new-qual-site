@@ -7,7 +7,7 @@ order: 0
 
 Throughout, $G$ is a group, $H\leq G$ is a subgroup, and $g,h,x\in G$.
 
-Each row gives the symbol this chapter uses, the notion it names, and the card that defines the notion; the third column reads the symbol and is not a second definition.
+Each row gives the symbol this chapter uses, the notion it names, and the definition that governs the notion; the third column reads the symbol and is not a second definition.
 
 ## Subgroups and conjugacy
 

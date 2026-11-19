@@ -11,7 +11,7 @@ topics:
 
 # Ideals and quotients
 
-Throughout, rings are commutative with identity, except where a card states otherwise.
+Throughout, rings are commutative with identity, except where stated otherwise.
 
 The kernel of a ring homomorphism is an ideal, and the quotient $R/I$ is what makes the isomorphism theorems the way a ring is constructed from a presentation: an ideal is the data a homomorphism out of $R$ can be made to vanish on.
 

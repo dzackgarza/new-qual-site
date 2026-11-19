@@ -18,7 +18,7 @@ For $\lambda\in F$ and $k\geq 1$, the number $n_A(k,\lambda)$ of Jordan $\lambda
 $$
 n_A(k,\lambda)=\rank\big((A-\lambda I)^{k-1}\big)-\rank\big((A-\lambda I)^{k}\big),
 $$
-which is the block count of the Jordan-form data card in rank form.
+which is the block count of the Jordan-form data in rank form.
 
 [[L-CD6QT]]
 

@@ -19,7 +19,7 @@ The group $G$ is determined by combining upper bounds (the transitive subgroups 
 
 ## Transitive subgroups of $S_n$
 
-The classification for each degree is a card, and the two degrees a qualifying problem asks about are $3$ and $4$.
+The classification of the transitive subgroups of $S_n$ is known up to conjugacy for $n\leq5$, and the two degrees a qualifying problem asks about are $3$ and $4$.
 
 [[P-IFQ4C]]
 
