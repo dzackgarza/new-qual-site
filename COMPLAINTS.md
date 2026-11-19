@@ -4865,3 +4865,17 @@ so $h'\equiv-s^{-2n}h+(n-1)s^{-2n-1}q$; after the diagonal transition factors th
 **Acceptance under #132.** Met by the alternative: the published sources are transcribed for kinds (1) and (2), the sources searched for kind (3) are the ones named above, and the card's own proof is checked step by step against the book's Exercise V.5.6, printed p. 420, and Exercise II.4.12 with its Note, printed p. 108.
 
 **Uncertainty.** Not checked: whether a published proof of $R\subseteq R_0$ exists outside the sources named; the card's other steps were checked as recorded in the event and not re-derived beyond that; and no characteristic assumption is used, but the card states none either.
+
+## 2026-11-19: V.6.2 closes on Hartshorne's own Clifford theorem, printed pp. 343--345
+
+**Object and need.** `P-AGH562CHERNGRIFFITHS` (Hartshorne V.6.2, printed p. 423) and the record of 2026-11-16 that leaves the equality case $d=2n$ open: no published derivation of the equality case of Clifford's theorem for V.6.2 was located, and the case was marked as the card's own in steps `clifford-equality-canonical` and `canonical-meets-hyperplane-zero`. The exercise's own hint is to cut with a hyperplane and use Clifford's theorem (IV, 5.4).
+
+**Evidence.** Hartshorne, *Algebraic Geometry* (1977), Theorem 5.4 (Clifford), statement printed p. 343 and proof printed pp. 343--345 (text version `tmp/sources/hartshorne-1977-algebraic-geometry.md`, printed p. $N$ = PDF p. $N+15$, PDF pp. 358--360). The theorem states the equality clause in full: equality $\dim|D|=\frac12\deg D$ holds exactly for $D=0$, $D=K$, or $X$ hyperelliptic with $D$ a multiple of the unique $g^1_2$, and the proof of the second statement is printed there. Applied to $L=\OO_C(1)$ with $d=2n$ and $h^0(C,L)=n+1$: $L$ is nonzero, and the hyperelliptic alternative would make $L$ a pullback from $\PP^1$, hence not very ample; therefore $L\cong\omega_C$. The step `clifford-equality-canonical` is exactly this application, and the exclusion is one line. The strict case $d<2n$ is Harris's bound, printed pp. 42--44, already on the card. Thus V.6.2 is on published sources throughout.
+
+**What changed.** `P-AGH562CHERNGRIFFITHS` in `11dc0af9af`: the step now cites Theorem 5.4 with its pages instead of calling the case the card's own, the remark adds the same attribution and the two solution-set gaps, and a `source-corrected` event records the reading. No statement changes.
+
+**Repair, 2026-11-19:** the card in `11dc0af9af`, and this record; no other card changes. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH562CHERNGRIFFITHS`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering the steps 1 to 9 with QED labels present and no unknown step label; `./.venv/bin/python tools/sync_macros.py --check`, silent.
+
+**Acceptance under #121/#132.** Met: the strict case is Harris's published theorem, the equality case is Hartshorne's Theorem 5.4 with its published proof, and the card's application is checked against both.
+
+**Uncertainty.** Not checked: no other printed proof of the equality case was searched for; the card's other steps were not re-derived; and the earlier record's statement that the equality case had no published proof is superseded here, not edited on its date.
