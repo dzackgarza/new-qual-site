@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the four repaired §3.3 bodies now carry exactly the control words they carried before the scripted rewrite
+
+**Object and need.** The record above leaves open whether the scripted rewrite changed anything that is valid TeX but wrong mathematics, "since a substitution that produced a defined control word in place of another would pass both the scan and the gate". That is now measured for the four cards it touched, rather than argued.
+
+**Observed evidence.** For each card, the multiset of control words in the body (the text after the YAML block, so the audit events that describe the repair are excluded) was compared between the commit before the rewrite and the current HEAD: `git show <rewrite>^:<card>` against `git show HEAD:<card>`, counting `\\[A-Za-z]+` occurrences. The rewrite commits are `b909f512ef` (`E-HAT-3.3-14`), `4c1babc239` (`-3.3-16`), `a025e476a0` (`-3.3-27`) and `1205306fb3` (`-3.3-31`). Three of the four bodies now agree with their pre-rewrite selves exactly (`{}` differences): `-3.3-14`, `-3.3-16` and `-3.3-27`. `-3.3-31` differs, by `ZZ` +7, `QQ` +5, `otimes` +2, `longrightarrow` +2, `to` +2, `cong` +1, `operatorname` +1, `pm` -1, `text` -1, `partial` -1; those are the substance of the rewrite commit's own stated repair, which replaced a torsion-freeness argument by the `\QQ/\ZZ` computation, and not the `\var` insertion, whose two tokens are repaired.
+
+**Impact and owner.** For the corruption class actually observed --- a `\var` inserted before `\varphi` and before "phism" --- the repair is provably complete on three cards and separated from the intended repair on the fourth. The general caveat stands and is narrower than it was: a rewrite that *substitutes* one defined control word for another still needs the cards read, but no such substitution is visible here, and an insertion of `\var` cannot pass the gate, which rejects `\var` as undefined.
+
+**Uncertainty.** High confidence in the comparison, which is mechanical and printed above. Not checked: whether the rewrite touched collections outside `SRC-TEXT-HAT02/3-3` in ways that leave valid TeX; the corpus-wide scans of the record above found only these four files for both of its patterns.
+
 ## 2026-11-19: the scripted-rewrite repair was corpus-wide, not per card, and the green gate is the assurance that no undefined control word remains
 
 **Object and need.** The record above says the repair covered "only the two cards the gate named in the snapshot's tree", and that whether the rewrite touched other collections was not checked. The next snapshot showed two more cards of the same section with the same two tokens, so the scope was measured rather than assumed.
