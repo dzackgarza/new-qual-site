@@ -5504,3 +5504,27 @@ So both are twins of linked cards rather than unreferenced definitions, and the 
 
 **Not done here.** No card was edited for this; the session's budget went to the residue's 77 queue-D cards, and this entry exists so that the 923 are not mistaken for work already done.
 
+## 2026-11-19: the audit's four `duplicate-exams` violations are false positives — `ExamSource` has no slot for which paper is meant
+
+**Object and need.** `python -m qualc.audit` reports four `duplicate-exams` violations. Read one by one, all four are distinct exam papers collapsed by an identity key that cannot tell them apart, so the violation is a gap in the model and the check rather than four data errors — and "fixing" the data to silence it would mean writing a false date. This records the evidence and the shape of the fix.
+
+**Where the key is defined.** `tools/qualc/model.py:197--209`: "One instance of a qualifying exam, identified by **institution + area + date**", with fields `source_kind`, `institution`, `area`, `date`, `problems` — and nothing else. `tools/qualc/audit.py:99--107` keys on `(institution, area, date.kind, year, term)` and reports any key holding more than one collection.
+
+**The four reported collisions, with what the collection titles say they are.**
+
+| key | collections | what they are |
+| --- | --- | --- |
+| (harvard, applied-algebra, spring 2018) | `SRC-HARVARD-MATH21B-SPRING-2018-FINAL`, `…-PRACTICE-1`, `…-PRACTICE-3` through `…-PRACTICE-8` | one course's final exam and eight practice finals, nine different papers from nine files (`solution.pdf`, `solution1.pdf`, …) |
+| (uga, complex-analysis, spring 2020) | `SRC-UGA-CA-SPRING-2020`, `SRC-UGA-MATH8150-SPRING-2020-FINAL`, `SRC-UGA-MATH8150-SPRING-2020-MIDTERM` | a course problem list, the final, and the midterm: `Complex_Analysis_Spring_2020.docx`, `Spring2020Final.pdf`, `Spring2020Midterm.pdf` |
+| (unl, topology, spring 2006) | `SRC-TOP-UNL-2006Q1`, `SRC-UNL-QUAL-850-871-JANUARY-2006`, `SRC-UNL-QUAL-852-970-JANUARY-2006` | titled "UNL Mathematics Qualifying Exam **970/971**, January 2006" and "… **850/871**, January 2006" — two different qualifying papers, distinguished only by course number, plus a course page |
+| (unl, topology, spring 2008) | `SRC-TOPOLOGY-PHD-F07` ("Topology Ph.D. Qualifying Exam, January 12, 2008"), `SRC-UNL-QUAL-850-871-JANUARY-2008` ("UNL Mathematics Qualifying Exam 850/871, January 2008") | two different papers from two different programmes in the same month |
+
+The UNL pair is the sharpest: the two exams differ in their course number (970/971 against 850/871), and the schema has nowhere to put a course number, so they are formally one exam.
+
+**Why this is not silenceable by editing the data.** The only fields available are the date and the area; distinguishing the papers would mean either inventing a date for one of them — false metadata — or dropping a collection, which loses a paper. Neither is a repair.
+
+**The shape of the fix, stated so it can be decided.** Add one optional field to `ExamSource` — a paper label, e.g. `paper: str | None` holding `final`, `midterm`, `practice 3`, or the course number `850/871` — and add it to the key in `audit.py`. Optional keeps every existing collection valid; the four collisions above then separate, and any real duplicate (one paper transcribed twice) would still be reported, since two collections for one paper would share the label too. A narrower alternative, if the model is to stay fixed, is for the check to compare collection titles as well as the source block, and to record explicitly that then two collections for one paper must differ in title to be believed distinct.
+
+**What I did not do.** No collection index, schema file or audit code was edited: the first is another lane's metadata, and the second and third are tooling whose change reaches the whole corpus and needs the owner behind it. This record is the report, per the partition rule that a card — or here a check — outside one's residue is reported rather than changed.
+
+**Uncertainty.** The Harvard, UGA and both UNL entries' titles and provenance files were read for this record; the individual PDFs behind the four UNL and Harvard collections were not opened, so "different papers" rests on their titles and file names, not on their contents. Whether other `university-exam` keys hold more than one paper without yet colliding (because the collections' dates differ by accident) was not measured.
