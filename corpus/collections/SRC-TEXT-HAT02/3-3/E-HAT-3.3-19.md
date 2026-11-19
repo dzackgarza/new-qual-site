@@ -34,6 +34,19 @@ audit:
     Read both parts: a countable disjoint union modulo a relation is countable, and an open set in
     $\RR^n$ is exhausted by finite subcomplexes so that chains and homology are the direct limits
     of the compact stages.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 19 of §3.3, printed p. 259, and
+    the printed page is added, the card having had none. Checked: the direct limit over a countable
+    index set of countable groups is a quotient of the countable disjoint union, hence countable; and
+    for $X\subset\RR^n$ open an exhaustion $K_1\subset\operatorname{int}K_2\subset\cdots$ by finite
+    cubical polyhedra, so that every compact subset — in particular every singular simplex and every
+    finite chain — lies in a stage; then $C_*(X)=\varinjlim C_*(K_j)$ and Exercise 17 (card
+    `E-HAT-3.3-17`) gives $H_i(X)=\varinjlim H_i(K_j)$, a direct limit of finitely generated, hence
+    countable, groups over a countable set. No defect. The exhaustion's existence is stated rather
+    than proved on the card, as a standard cubulation argument.
 ---
 
 ::: {.problem}
@@ -42,6 +55,8 @@ Apply this to show that if $X$ is an open set in $\RR^n$ then $H_i(X; \ZZ)$ is c
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 19, printed p. 259.
+
 If the indexing set is countable and every $G_\alpha$ is countable, then the disjoint union
 $$
 \coprod_\alpha G_\alpha
