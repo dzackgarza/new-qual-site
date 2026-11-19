@@ -408,11 +408,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **69 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **68 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Twenty-eight of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 69 stand as this item lists them.
+   reported and repaired above. Twenty-nine of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 68 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -584,20 +584,21 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    so the same count applies. The card's seven steps are that argument: model, product cells, dimension,
    pair, smash cells, smash, conclusion.
 
-   **§4.1-18, half verified, not counted.** The card takes the pseudocircle $P=\{a,b,c,d\}$ and assigns
+   **§4.1-18, finished and counted.** The card takes the pseudocircle $P=\{a,b,c,d\}$ and assigns
    $X=S^1$, $Y=P$: step `s1` claims a weak homotopy equivalence $S^1\to P$, and step `s2` shows no weak
    homotopy equivalence $P\to S^1$ exists --- every map $P\to S^1$ has finite image, which is discrete in
    $S^1$, while $P$ is path connected, so the image is a point and the map is nullhomotopic, inducing the
-   zero map on $\pi_1$. That second half was checked and is right. Unread, and the whole substance of the
-   card: `s1`'s computation that $S^1\to P$ induces isomorphisms on all homotopy groups. Until that is
-   read the card stays out of the count.
+   zero map on $\pi_1$. The positive half, read later: the order complex of $P$ with $a,b<c,d$ has the
+   chains of $P$ as simplices --- four vertices and the four edges $ac$, $ad$, $bc$, $bd$, which form one
+   cycle --- so its realization is $S^1$, and McCord's theorem makes the McCord map from that realization to
+   $P$ a weak homotopy equivalence, $P$ being finite and $T_0$. So $S^1\to P$ is one and $P\to S^1$ is not,
+   which is the example the exercise asks for.
 
    Also noted for this item: the record of 2026-11-19 for issue #170 covers `E-HAT-2.B-3`, `-4`, `-5`,
    `-7`, `-9`, `E-HAT-2.C-1`, `-6`, `E-HAT-3.3-21`, `E-HAT-4.1-1`, `E-HAT-4.1-7` and `E-HAT-4.A-1`, none of
    which is in this item's remaining set, so the two readings do not overlap.
 
-   Remaining unread in this item's set: §4.1 18–23 (6, of which 18 is begun), §4.2 (39), §4.3 (24)
-   --- 69 proofs.
+   Remaining unread in this item's set: §4.1 19–23 (5), §4.2 (39), §4.3 (24) --- 68 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
@@ -5831,3 +5832,17 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Repair.** `P-AGH4422FAMILYOVERAFFINELINE` (the audit event's three occurrences and the rendered step's two, with a new `source-corrected` event recording the re-reading) and this paragraph. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH4422FAMILYOVERAFFINELINE`, schema and Markdown parsing OK; `tmp/lam.sh` on the card, steps numbered 1 to 5 with QED labels present; and `.scratch/report_check.py` on the card, the corpus report's own undefined-macro and dropped-raw-TeX diagnostic, 0 diagnostics.
 
 **Uncertainty.** Confidence high in the two displays, read in the page image at 130 dpi with the folio 50. Not checked: Deligne's section 4.4 beyond printed pp. 50--51, and the rest of the manuscript.
+
+## 2026-11-19, correction: Mumford's Corollary 3 is the residue-fibre isomorphism, and local freeness over an arbitrary base needs the finite complex of p. 46
+
+**Object and need.** `P-AGH4422FAMILYOVERAFFINELINE`, step `abelian-scheme`, the rendered derivation of Katz and Mazur's proof of Theorem 2.1.2 and the `source-corrected` event of this date that records its fifth pass. A reader of the changed material of #155 reported two overstatements there: the card called the arbitrary-base-change compatibility of $R^1f_*\mathcal L$ "the case $p=2$ of Mumford's Corollary 3", and it got the local freeness of $f_*\mathcal L$ from the one-dimensional fibres by Nakayama alone. Both are real.
+
+**Evidence, Mumford's printed p. 53.** D. Mumford, *Abelian Varieties*, Tata Institute of Fundamental Research Studies in Mathematics 5, Oxford University Press, 1970, Chapter II section 5, printed pp. 46, 50--51 and 53, read on the wstein.org scan (`Mumford-Abelian_Varieties.pdf`), where printed pp. 46--47 are PDF p. 28, printed pp. 50--51 are PDF p. 30 and printed pp. 52--53 are PDF p. 31, each folio read off the page. **Corollary 3, printed p. 53**, reads: "Let $X$, $Y$, $f$ and $\mathcal F$ be as above (unlike Corollary 2, $Y$ need not be reduced). Assume for some $p$ that $H^p(X_y,\mathcal F_y)=(0)$, all $y\in Y$. Then the natural map $R^{p-1}f_*(\mathcal F)\otimes_{\mathcal O_Y}k(y)\to H^{p-1}(X_y,\mathcal F_y)$ is an isomorphism for all $y\in Y$." That is a residue-fibre isomorphism, not an arbitrary-base-change statement. Its proof uses the complex of the main theorem, printed p. 46: for $f$ proper noetherian with $Y=\Spec A$ affine and $\mathcal F$ coherent and flat over $Y$, "there is a finite complex $K^\bullet: 0\to K^0\to\cdots\to K^n\to0$ of finitely generated projective $A$-modules and an isomorphism of functors $H^p(X\times_Y\Spec B,\mathcal F\otimes_A B)\cong H^p(K^\bullet\otimes_A B)$, $p\ge0$, on the category of $A$-algebras $B$." **Corollary 2 and Lemma 1, printed pp. 50--51**, are where fibre dimension alone gives local freeness, and Lemma 1 states it for $Y$ reduced: "If $Y$ is reduced and $\mathcal F$ a coherent sheaf on $Y$ such that $\dim_{k(y)}\mathcal F\otimes_{\mathcal O_Y}k(y)=r$, all $y\in Y$, then $\mathcal F$ is locally free of rank $r$ on $Y$." A nonreduced base is exactly the case the lemma excludes.
+
+**Evidence, Katz and Mazur's printed p. 66.** *Arithmetic Moduli of Elliptic Curves* (1985), printed p. 66 (PDF p. 78 of `tmp/sources/katz-mazur-arithmetic-moduli-of-elliptic-curves.pdf`, folio read): "It suffices to prove that $\mathbf{R}^1\mathbf{f}_*\mathscr L=0$, for then [Mum 4, p. 53] $\mathbf{f}_*\mathscr{L}$ is automatically locally free and of formation compatible with arbitrary change of base... Now $\mathbf{R}^1\mathbf{f}_*\mathscr L=0$ because it is of formation compatible with arbitrary change of base (being an $\mathbf{R}^1\mathbf{f}_*$ for $f$ proper and flat of relative dimension one)...". So the arbitrary-base-change compatibility is Katz and Mazur's assertion, and the acceptance citation of #155 stands on their sentence; what Mumford's Corollary 3 supplies at $p=2$, with $H^2$ of a curve vanishing, is the identification of the fibres $R^1f_*\mathcal L\otimes k(y)\cong H^1(E_y,\mathcal L_y)$.
+
+**The repair.** The rendered derivation now says which statement is whose: the compatibility is Katz and Mazur's, Corollary 3 gives the residue-fibre isomorphism at $p=2$, and Corollary 3 at $p=1$ gives $f_*\mathcal L\otimes k(y)\cong H^0(E_y,\mathcal L_y)$. For local freeness over the arbitrary base it now uses Mumford's finite complex of printed p. 46: over an affine open $\Spec A\subseteq S$, the complex $K^\bullet$ of finitely generated projective $A$-modules computes $H^p(E\times_S\Spec B,\mathcal L_B)$ for every $A$-algebra $B$; every $H^p(K^\bullet\otimes_A k(y))$ with $p\ne0$ vanishes because it is $H^p(E_y,\mathcal L_y)$ on a curve with $H^1(E_y,\mathcal L_y)=0$; and the splitting in the proof of Corollary 3, printed p. 53, makes $H^0(K^\bullet)=f_*\mathcal L$ a direct summand of the projective $K^0$, of rank one, with base change for every $B$. The same two clauses in the fifth-pass audit event are corrected in place, and a new `source-corrected` event records the re-reading.
+
+**Repair.** `P-AGH4422FAMILYOVERAFFINELINE` (the rendered derivation and the fifth-pass event, with the new event) and this paragraph. Checks: `./.venv/bin/python -m qualc.authoring check P-AGH4422FAMILYOVERAFFINELINE`, schema and Markdown parsing OK; `tmp/lam.sh` on the card, steps numbered 1 to 5 with QED labels present; and `.scratch/report_check.py` on the card, the corpus report's own undefined-macro and dropped-raw-TeX diagnostic, 0 diagnostics.
+
+**Uncertainty.** Confidence high in the three statements and their pages, read on the rendered pages at 110 dpi with the folios 46, 50, 51 and 53. Not checked: Mumford's printed pp. 48--49, 52 and 54 onwards, that is the rest of the proof of the section's theorem and the rest of Chapter II; and the card's other steps were not re-derived.
