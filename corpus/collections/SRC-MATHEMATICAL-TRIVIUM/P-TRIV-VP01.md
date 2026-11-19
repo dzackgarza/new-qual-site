@@ -15,6 +15,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Variational Principle, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash prefixes “Fubini instanton” with a garbled decorative glyph; that non-problem artifact is omitted from the card.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Big_List_of_Math_Problems.pdf`: the statement is Problem 1 of the Variational
+    Principle chapter, and its printed parts (a), (b) and (c) are the card's three. The chapter, the
+    problem number and the file are now named in the solution's opening sentence. Not checked in this
+    pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ audit:
 :::
 
 ::: {.solution}
+This is Problem 1 of the Variational Principle chapter of *Mathematical Trivium* (the "Fubini instanton"), retained in this repository as `assets/attachments/Big_List_of_Math_Problems.pdf`; the statement below is its wording, parts (a) to (c) all printed there.
 
 ::: pf
 
