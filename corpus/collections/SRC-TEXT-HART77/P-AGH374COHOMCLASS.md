@@ -797,11 +797,11 @@ which is the asserted formula.
 
 ::: {.pf-step #s3}
 
-Let $H_1,\ldots,H_c\subseteq X=\PP^n$ be hyperplanes in general position, put $L=H_1\cap\cdots\cap H_c\cong\PP^{n-c}$, and let $i:L\hookrightarrow\PP^n$ be its inclusion. Then
+Let $H_1,\ldots,H_r\subseteq X=\PP^n$ be hyperplanes in general position, put $L=H_1\cap\cdots\cap H_r\cong\PP^{n-r}$, and let $i:L\hookrightarrow\PP^n$ be its inclusion. Then
 $$
-\boxed{\eta_{\PP^n}(L)=i_*(1)=c(\mcl(H_1))\smile\cdots\smile c(\mcl(H_c))} ,
+\boxed{\eta_{\PP^n}(L)=i_*(1)=c(\mcl(H_1))\smile\cdots\smile c(\mcl(H_r))} ,
 $$
-the empty product for $c=0$ being $1\in H^0(\PP^n,\OO_{\PP^n})$.
+the empty product for $r=0$ being $1\in H^0(\PP^n,\OO_{\PP^n})$.
 
 ::: pf-proof
 
@@ -817,7 +817,7 @@ t_X\bigl(\iota_*\bigl(x\smile\restrictionof{\gamma}{D}\bigr)\smile z\bigr)
 $$
 the middle term being $t_D\bigl(x\smile\restrictionof{(\gamma\smile z)}{D}\bigr)$ because restriction is a ring homomorphism. The pairing is perfect (III.7.6, printed p. 243), so the two classes agree.
 
-**The class of a linear subspace.** Put $L_k=H_1\cap\cdots\cap H_k$ and let $\iota_k:L_k\hookrightarrow\PP^n$ and $\nu_k:L_k\hookrightarrow L_{k-1}$ be the inclusions, so that $L_0=\PP^n$, $L_c=L$, and $\iota_k=\iota_{k-1}\circ\nu_k$. The two adjunction Gysin maps compose, in the sense that
+**The class of a linear subspace.** Put $L_k=H_1\cap\cdots\cap H_k$ and let $\iota_k:L_k\hookrightarrow\PP^n$ and $\nu_k:L_k\hookrightarrow L_{k-1}$ be the inclusions, so that $L_0=\PP^n$, $L_r=L$, and $\iota_k=\iota_{k-1}\circ\nu_k$. The two adjunction Gysin maps compose, in the sense that
 $$
 (\iota_k)_*(1)=(\iota_{k-1})_*\bigl((\nu_k)_*(1)\bigr),
 $$
