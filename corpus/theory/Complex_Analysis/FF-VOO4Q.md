@@ -22,4 +22,6 @@ Then the [[D-C3JIU|residue]] of $f$ at $z_0$ is
 $$
 \Res_{z=z_0} f = \lim_{z\to z_0} {1 \over (n-1)!} \frac{d^{n-1}}{dz^{n-1}}\qty{(z-z_0)^n f(z)}.
 $$
+
+This is [@SS03, Theorem 1.4 of Chapter 3 (p. 76)].
 :::
