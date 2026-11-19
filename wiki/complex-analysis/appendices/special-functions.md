@@ -89,7 +89,9 @@ The series defining $\wp$ converges uniformly on compact subsets of $\CC\setminu
 $$
 \wp'(z) = -2\sum_{\omega\in\Lambda}{1\over (z-\omega)^3}.
 $$
-This series is visibly invariant under $z\mapsto z+\omega$ for $\omega\in\Lambda$, and $\wp$ and all its derivatives are doubly periodic: $\wp(z+\omega)=\wp(z)$ for every $\omega\in\Lambda$.
+This series is invariant under $z\mapsto z+\omega$ for $\omega\in\Lambda$, since it permutes the terms.
+So $z\mapsto \wp(z+\omega)-\wp(z)$ has vanishing derivative and is a constant $c(\omega)$, and $\wp$ is even — the sum defining it pairs the term of $\omega$ with the term of $-\omega$ — so evaluating at $z = -\omega/2$ gives $c(\omega) = \wp(\omega/2)-\wp(-\omega/2) = 0$.
+Hence $\wp$ is doubly periodic, and so are all its derivatives.
 :::
 
 ## Elliptic functions
