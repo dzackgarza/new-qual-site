@@ -20,4 +20,6 @@ By Maschke's theorem, if $\operatorname{char}k$ does not divide $\size G$, then 
 
 - [[algebra/representations/maschke-and-schur|Maschke and Schur]] -- semisimplicity, and homomorphisms between irreducible representations.
 
+- [[algebra/representations/induction-and-restriction|Induction and restriction]] -- the regular representation, induced representations, and Frobenius reciprocity.
+
 - [[algebra/representations/characters|Characters]] -- orthogonality relations and character tables.
