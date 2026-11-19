@@ -16,6 +16,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 68 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. (a) P is proper and contained in a maximal ideal
+    M, which is prime; since P is the only prime ideal, M = P, so P is maximal and R/P is a field.
+    (b) the card shows that every element outside P is a unit: if s were not a unit, the ideal (s)
+    would be proper and hence contained in a maximal, hence prime, ideal, which must be P in spite of
+    s not being in P; so s is a unit, every element of R minus P is invertible, and the localisation
+    R_P is R itself with the identity map as isomorphism. Both parts are right, and the uniqueness of
+    the prime ideal is used in each. Not claimed: the converse, that a ring with exactly one maximal
+    ideal and this property is local in this sense.
 ---
 
 ::: {.problem}
