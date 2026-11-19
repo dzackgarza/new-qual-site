@@ -26,9 +26,20 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §4.F Exercise 1, printed p. 455, both halves matching the printed text. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own beyond the two results it cites from the book: that axioms (1) and (2) give the wedge sum axiom for finite wedges (p. 160), and the definition of the direct limit axiom over finite subcomplexes (p. 455). Checked: a finite subcomplex of a wedge lies in a finite subwedge; filtered colimits commute with fixed direct sums; the telescope is homotopy equivalent to $X$; $1-s_*$ is injective on the direct sum by the first-nonzero-coordinate argument; and exactness identifies $\widetilde h_n(T)$ with the colimit.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 464 carries the running head 455, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.F of Hatcher, *Algebraic Topology* (2002), printed p. 455, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom.
 Show that the converse also holds for countable CW complexes.
 :::
