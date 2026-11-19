@@ -25,6 +25,16 @@ audit:
     the single equation gives x_2 = -(1+i)x_1, checked by substituting into the second equation. Checked
     against Hungerford, Algebra, section 1.3, the exercise as printed on the card. Nothing in the
     statement was changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The 2026-08-30 event says the card was checked against Hungerford, Algebra, section 1.3, and
+    that is the wrong book: this card is in SRC-TEXT-HK71, and its statement is Hoffman and
+    Kunze Exercise 1.3.1, printed p. 10 of the retained scan, where the system is printed as
+    here. The rendered solution now records that locator. The mathematics was read again: det A
+    = (1-i)^2 + 2i = 0, the second row is (1+i) times the first, and the single equation gives
+    x2 = -(1+i)x1, which substitution into the second equation confirms. No proof step changed.
 ---
 
 ::: {.exercise}
@@ -38,6 +48,7 @@ $$
 :::
 
 ::: {.solution}
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 1 on printed p. 10. The argument is the card's own.
 
 ::: pf
 
