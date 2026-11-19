@@ -8563,3 +8563,64 @@ The old bodies were "degree count", "enumerate the possible degree decomposition
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-72-11` numbering 1–4 and `E-HK-73-11` 1–2, QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set; the invariant-factor reasoning in `E-HK-72-11` cites the rational canonical form rather than re-proving it, and `E-HK-73-11`'s Jordan-form facts are used at the level the book states them.
+
+## 2026-11-19, Yang sweep: IV.3.10--IV.3.12 cited at printed p. 89, with two of Yang's five explicit curves wrong
+
+**Object.** The last three cards of §IV.3 in `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne
+Solutions* (9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF pages
+are its printed pages. Entries 4.3.10, 4.3.11 and 4.3.12 are all on printed p. 89, which also carries
+the start of §4.4; there is no entry 4.3.13.
+
+**`P-AGH4310NOTEVERYSECANTMULTISECANT`, IV.3.10 — cited, printed p. 89, two corrections
+recorded.** The method is a product incidence: the tuples lying on a line form a closed subvariety
+$H\subseteq(\PP^n)^{\times n}$, $X^{\times n}\not\subset H$ because $X$ is in no $\PP^{n-1}$, so the
+complement meets $X^{\times n}$ in a nonempty open set. $H$ is not a hyperplane --- the collinear
+$n$-tuples have dimension $2(n-1)+n$, codimension $(n-1)(n-2)$, already $2$ at $n=3$ --- and the
+argument needs only closedness and properness. More seriously, collinearity is not the condition the
+exercise turns on: $n-1$ general points span a $\PP^{n-2}$, and a further point of $X$ inside it
+means the $n$ points lie in a $\PP^{n-2}$. With that condition the same incidence argument closes
+(those tuples have codimension $2$); as printed the entry proves only that a general $n$-tuple is not
+collinear. Both recorded on the card. Commit `ec7dc0224a`.
+
+**`P-AGH4311PROJECTIONCLOSEDIMMERSION`, IV.3.11 — cited, printed p. 89, one unsupported step.**
+(a) is right: the secant lines are locally $(X\times X-\Delta)\times\PP^1$ of dimension $2r+1$, the
+tangent spaces a family of dimension $2r$, so $n>2r+1$ leaves a centre outside both. (b) shows a
+point of a secant line of the Veronese lies in the plane of a Veronese conic and hence on infinitely
+many secants, and the count $4+1-1=4$ for the secant variety is correct. The lower bound is not:
+four named points called "linearly independent" bound nothing; what gives it is the $2$-parameter
+family of chordal planes $\Pi_{\rho(L)}$, which is the card's `#secant-dim-lower`. Commit
+`f7d032d76a`.
+
+**`P-AGH4312NODALCURVESEXIST`, IV.3.12 — cited, printed p. 89; two of the five explicit curves are
+wrong, found by computation.** The entry answers the exercise by cases: $x^d+y^d+z^d$ for $r=0$;
+$xyz^{d-2}+x^d+y^d$ for $r=1$; a plane projection of the rational normal curve for the maximum
+$r=\frac12(d-1)(d-2)$ at $d=4,5$; and explicit quartics and quintics for the other five pairs. The
+maximum case needs a *general* projection, which the entry does not choose. The five explicit curves
+are asserted rather than computed --- "has only two nodes", and the entry signs off with "Mathematica
+is Power, France is Bacon". Checked here by exact symbolic computation in SymPy on the printed
+strings, read at 600 dpi: for $(d,r)=(4,2)$, $(5,2)$ and $(5,5)$ the listed points are on the curve,
+are singular, are the entire singular locus, and have nondegenerate quadratic part. Two do not
+survive. $(5,3)$ lists $(\frac{1-\sqrt3}{2}:1:1)$ and $(-\frac{1-\sqrt3}{2}:1:1)$, and neither lies on
+the quintic --- $f$ takes the values $\frac{23-17\sqrt3}{8}$ and $\frac{-27+9\sqrt3}{8}$ there ---
+while the two nodes are at $(-\frac12\pm\frac{\sqrt3}{2}i:1:1)$, whose real parts are exactly what is
+printed. $(5,4)$ lists $(1:0:0)$ as a node, and it is on the curve and singular, but its lowest term
+there is $z(y^2-yz+z^2)$, so it is a triple point: that curve has three nodes and a triple point, and
+$\delta\ge3+3$ against the $4$ the count needs. Both are recorded on the card as the printed state,
+not as fact. Commit `d5c59a5dff`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered
+$1$--$10$, $1$--$12$ and $1$--$7$ with `(QED labels present)`, resolving the two `pf-ref`s this batch
+adds to `P-AGH4311PROJECTIONCLOSEDIMMERSION`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` on the authored prose returned `None`; `tools/sync_macros.py --check`
+silent. The SymPy checks used the interpreter at `/usr/bin/python3` (SymPy 1.14), the project venv
+having no SymPy; no file outside `.scratch/` was written by them.
+
+**Not checked.** Yang's Solutions outside printed p. 89; the Hartshorne pages of the three exercises,
+not reopened in this pass, the comparison being against the statements the cards carry; the printed
+book itself; and, of the eight cases of 4.3.12, the maximum cases $(4,3)$ and $(5,6)$, which are
+arguments rather than polynomials and were not re-derived.
+
+**The remainder.** Thirty-five Chapter IV cards still lack Yang; §IV.3 is now complete on both sides,
+and the queue starts at IV.4.1 `P-AGH441GRADEDRINGWEIERSTRASS`. Yang's §4.4 begins on printed p. 89
+and continues on pp. 92--95 by the page search, so the next batch pages those before citing.
