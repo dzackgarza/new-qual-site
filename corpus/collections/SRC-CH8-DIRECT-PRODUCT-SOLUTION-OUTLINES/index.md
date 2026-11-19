@@ -33,7 +33,8 @@ source:
         - id: P-CH8-13
           comment: Exercise 13
         - id: P-CH8-14
-          comment: Exercise 14
+          comment: Exercise 12 (printed; the card's id is item 14 of the retained
+            Chapter 8 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on)
         - id: P-CH8-15
           comment: Exercise 13 (printed as exercise 15 when the card was created; the isomorphism of
             the additive group of the complex numbers with R + R is exercise 13 in Gallian 7e,
@@ -42,7 +43,8 @@ source:
           comment: Exercise 17 (printed as exercise 19 when the card was created;
             the subgroup-of-Zm-x-Zn exercise is 17 in Gallian 7e)
         - id: P-CH8-20
-          comment: Exercise 20
+          comment: Exercise 18 (printed; the card's id is item 20 of the retained
+            Chapter 8 outline)
         - id: P-CH8-23
           comment: Exercise 23
         - id: P-CH8-26

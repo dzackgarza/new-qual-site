@@ -19,7 +19,8 @@ source:
         - id: P-CH17-2
           comment: Exercise 2
         - id: P-CH17-8
-          comment: Exercise 8
+          comment: Exercise 6 (printed; the card's id is item 8 of the retained
+            Chapter 17 outline, whose numbering runs two ahead of Gallian 7e from item 6 on)
         - id: P-CH17-9
           comment: Exercise 7 (printed as exercise 9 when the card was created; constructing a
             field of order 25 is exercise 7 in Gallian 7e, exercise 9 being the reducibility of

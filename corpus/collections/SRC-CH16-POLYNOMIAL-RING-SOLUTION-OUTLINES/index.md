@@ -38,7 +38,8 @@ source:
         - id: P-CH16-19
           comment: Exercise 19
         - id: P-CH16-20
-          comment: Exercise 20
+          comment: Exercise 18 (printed; the card's id is item 20 of the retained
+            Chapter 16 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on)
         - id: P-CH16-28
           comment: Exercise 28
         - id: P-CH16-50
