@@ -31,7 +31,7 @@ For holomorphic $f\colon\DD\to\DD$ the Schwarz lemma applied to $\psi_{f(z)}\cir
 $$
 \frac{\abs{f'(z)}}{1-\abs{f(z)}^2}\leq\frac{1}{1-\abs z^2}\qquad\text{for all } z\in\DD,
 $$
-which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ [@SS03, ch. 8, Problem 3(a)--(b) (pp. 256--257)].
+which says that $f$ does not increase hyperbolic length; integrating it along a curve gives $d_{\DD}(f(z),f(w))\leq d_{\DD}(z,w)$ [@SS03, ch. 8, Problem 3(a)--(b) (p. 256)].
 Equality at one point forces $f$ to be an automorphism of $\DD$.
 :::
 
