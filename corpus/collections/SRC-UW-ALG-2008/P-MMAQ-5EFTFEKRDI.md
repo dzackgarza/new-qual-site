@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 1 of the Algebra Preliminary Examination of September 8, 2008
+    (University of Washington), printed p. 1 of the two-page paper retained at assets/attachments/UW-
+    Algebra-Qual-2008.pdf, is the statement the card answers, and the paragraph at the head of the
+    solution records that the paper prints no solutions, so the argument is the card's own. Checked: the
+    statement against the paper's text layer at the page named; the solution read for (a) the 5-cycle
+    and transposition generating S_5 and the unsolvability that follows, and for (b) the quadratic
+    subfield of the splitting field with no intermediate Galois field; `qualc.authoring check` on the
+    card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set exists
+    for this paper to compare the argument with, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -28,6 +41,8 @@ Construct a Galois extension $K$ of degree 2 over $\QQ$ lying in $E$ such that *
 :::
 
 ::: {.solution}
+
+The problem is Problem 1 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the 5-cycle and the transposition in the Galois group, which generate $S_5$ and make $f$ unsolvable by radicals, and (b) the quadratic subfield of the splitting field inside which no proper intermediate field is Galois over $\QQ$
 
 ::: pf
 
