@@ -27,6 +27,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.7, printed p. 87,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.7, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the determinantal identification $\mcl\cong\det f_*\OO_X$, the splitting of the trace sequence over $2$, and the discriminant $4\varphi(1\tensor1)$ that makes $\OO_Y\oplus\mcl$ étale over $\OO_Y$.
+    Not checked: Yang's Solutions outside printed p. 87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.7 at printed
+    p. 87 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -403,4 +423,6 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-re
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.7, printed p. 217, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.2.22), builds the quadratic étale cover from a $2$-torsion invertible sheaf $\mathcal L$ by the $\OO_Y\oplus\mathcal L$-algebra with multiplication twisted by a trivialization of $\mathcal L^{\otimes2}$, and shows that the two constructions are inverse on both sides.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.7 (Étale Covers of Degree 2), printed p. 87, proves (a) stalkwise: $(f_*\OO_X)_P$ is free of rank two over $\OO_{Y,P}$, so $\mcl_P$ is free of rank one and $\mcl$ is invertible; $\det$ on $0\to\OO_Y\to f_*\OO_X\to\mcl\to0$ gives $\mcl\cong\det\mcl\cong\det f_*\OO_X\tensor(\det\OO_Y)^{-1}\cong\det f_*\OO_X$, and then $\mcl^{\tensor2}\cong(\det f_*\OO_X)^{\tensor2}\cong\mcl(-B)$ by (Ex.\ 2.6), which is $\OO_Y$ because $B=0$ for an étale $f$. Its (c) uses the involution $\tau$ and the trace $a\mapsto\frac{a+\tau a}{2}$ to split $0\to\OO_Y\to f_*\OO_X\to\mcl\to0$, so that $f_*\OO_X\cong\OO_Y\oplus\mcl$ and $X\cong\Spec(\OO_Y\oplus\mcl)$ (II, Ex.\ 5.17). Its (b) is where the entry is short: it concludes that $f$ is étale from $X$ being a normal curve whose function field is an extension of degree two, and a map of smooth curves of degree two need not be étale; what makes this one étale is that $u=\langle 0,1\rangle$ satisfies $u^2=\varphi(1\tensor1)$ with $\varphi(1\tensor1)$ a unit of $\OO_Y$ and $2\ne0$ in $k$, so that $\OO_Y\oplus\mcl\cong\OO_Y[u]/(u^2-\varphi(1\tensor1))$ and $\Omega_{X/Y}\cong A/(2u)=0$, $f$ being finite, flat and unramified.
 :::
