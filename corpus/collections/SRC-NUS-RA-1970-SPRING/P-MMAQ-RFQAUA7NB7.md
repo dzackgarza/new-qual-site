@@ -44,6 +44,8 @@ If $\{f_n\}$ converges uniformly to a function $f$ on $I$, then $f$ is also unif
 
 ::: {.solution}
 
+The argument is the card's own: a step function for (a), the intermediate value theorem applied to $f(x)-x$ for (b), the three-$\eps$ argument for (c), and for (d) a smooth function on the circle whose gradient is orthogonal to the chord at every point of the circle while its two endpoint values differ. No source is transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
+
 ::: pf
 
 ::: pf-step
