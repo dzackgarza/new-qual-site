@@ -39,6 +39,19 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 12 (p.229) with the bracketed pointer to §4.L. Rechecked both sides over an arbitrary coefficient ring: for Q the good pair gives H^*(Q) = H^*(S^1 x Y, S^1 x y_0) = H^*(S^1) tensor H~(Y) by the relative cross product of Theorem 3.18 p.219, so additively u^k and s u^k, multiplicatively v^2 = s^2 u^2 = 0, giving R[u,v]/(v^2) with |u| = 2, |v| = 3; and S^3 x CP^inf gives R[u] tensor Lambda(v) with v^2 = 0 in H^6(S^3) = 0. The cited theorems are now named with pages, including Theorem 3.15 p.216 and Example 3.12 p.213. Not covered: the failure of homotopy equivalence, which the exercise defers to §4.L.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 12 of §3.2, printed p. 229, with the relative cross product of
+    Theorem 3.18 (printed p. 219) and the cohomology of $\CP^\infty$ in Example 3.12 (printed
+    p. 213). Correct: $Q=(S^1\times\CP^\infty)/(S^1\times\{y_0\})$ is a good pair, so
+    $\widetilde H^*(Q)=H^*(S^1\times Y,S^1\times y_0)=H^*(S^1)\otimes\widetilde H^*(Y)$ with basis
+    $u^k$ and $su^k$ for $k\ge1$; the products are $u^iu^j=u^{i+j}$, $su^i\cdot u^j=su^{i+j}$ and
+    $su^i\cdot su^j=s^2u^{i+j}=0$ since $H^2(S^1)=0$, so the ring is $R[u,v]/(v^2)$ with $|u|=2$,
+    $|v|=3$, which is also $H^*(S^3)\otimes R[u]$. Nothing changed; the four steps each carry their
+    proof. Not claimed: the failure of homotopy equivalence, which the exercise defers to §4.L, and
+    no certificate.
 ---
 
 ::: {.problem}
