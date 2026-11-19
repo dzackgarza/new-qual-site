@@ -41,6 +41,19 @@ audit:
     limit found under d must be the same point as the d-prime limit; the card's part (b) is the
     Riverside argument, with the identity's continuity supplying the last step. The card also has the
     printed statement's part (a), which the Riverside set does not answer.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution opened by claiming that no retained solution set covers the exercise, contradicting the
+    audit note above it, which transcribes Tze Heng for part (a) and the Riverside Math 205A set for part (b).
+    Both citations were re-read in the retained text versions: Tze Heng's "Exercise after §43" does contain
+    the metrically-equivalent item as number 3, parts (a) and (b), at lines 51--61 of
+    tmp/sources/munkres-solutions-ttheng-ch7.txt, and the statement matches Munkres's printed Section 43
+    Exercise 3 verbatim. The sentence now names both sets and the page to the book. Not verified here: the
+    page of the Riverside PDF, which the earlier session records as its printed p. 4; the retained file is a
+    scan whose pagination was not re-measured in this session.
+
 ---
 
 ::: {.exercise}
@@ -54,7 +67,7 @@ Two metrics $d$ and $d'$ on a set $X$ are said to be metrically equivalent if th
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own argument follows, with the two uniform-continuity estimates of (a) separated and the Cauchy-sequence transfer of (b) stated as its own step.
+The retained solutions cover one part each, as the audit records: part (a) is Tze Heng's item 3(a) under "Exercise after §43" (`tmp/sources/munkres-solutions-ttheng-ch7.txt`, lines 51--61), where the identity is uniformly continuous both ways because $\bar d\le d$ and conversely $d(x,y)= \bar d(x,y)$ once $\bar d(x,y)<1$; part (b) is the Riverside *Solutions to exercises for Mathematics 205A* answer to Section 43 Exercise 3(b) (`tmp/sources/munkres-solutions-ucr-math205-gentop.pdf`), transferred through uniform continuity of the identity and its inverse. The card's own contribution is what the audit records as corrected: the blog's part (b) reuses $\delta=\varepsilon$ from part (a) and never says that the limit found under $d$ is the same point as the $d'$-limit, so the card's part (b) closes the Riverside argument with continuity of the identity. The statement is Munkres's Section 43 Exercise 3, printed p. 270, the page the book's index gives for "metrically equivalent" (`tmp/sources/munkres-2000-topology.md`), and the bounded metric is that of Section 20.
 
 Recall that $d$ and $d'$ are metrically equivalent when the identity $i:(X,d)\to(X,d')$ and its inverse are both uniformly continuous, and that $\bar d(x,y)=\min\theset{d(x,y),1}$.
 
