@@ -19,25 +19,13 @@ The group $G$ is determined by combining upper bounds (the transitive subgroups 
 
 ## Transitive subgroups of $S_n$
 
-::: {.fact title="Transitive subgroups of $S_n$ for $n\leq 5$"}
-Write $C_n$ for the cyclic group of order $n$.
+The classification for each degree is a card, and the two degrees a qualifying problem asks about are $3$ and $4$.
 
-| $n$ | Transitive subgroups of $S_n$ up to conjugacy | Orders | Nonabelian |
-| --- | --- | --- | --- |
-| $1$ | $1$ | $1$ | none |
-| $2$ | $S_2 \cong C_2$ | $2$ | none |
-| $3$ | $S_3\cong D_3$, $A_3 \cong C_3$ | $6$, $3$ | $S_3$ |
-| $4$ | $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$ | $24$, $12$, $8$, $4$, $4$ | $S_4$, $A_4$, $D_4$ |
-| $5$ | $S_5$, $A_5$, $F_5\cong C_5\semidirect C_4$, $D_5$, $C_5$ | $120$, $60$, $20$, $10$, $5$ | $S_5$, $A_5$, $F_5$, $D_5$ |
+[[P-IFQ4C]]
 
-Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\generators{a,b \st a^5, b^4, ba\inverseof{b} = a^2}$.
+[[P-PDJ5S]]
 
-The quaternion group
-$$
-Q_{8}=\left\langle\alpha, \beta \mid \alpha^{4}=\beta^{4}=1, \alpha \beta \alpha=\beta, \beta^{2}=\alpha^{2}\right\rangle
-$$
-is a transitive subgroup of $S_8$ via its regular action, and it is not isomorphic to a subgroup of $S_m$ for any $m<8$.
-:::
+The case $n=5$ runs the same way: a subgroup of $S_5$ of order divisible by $5$ contains a $5$-cycle, and the transitive subgroups are $S_5$, $A_5$, the Frobenius group $F_5$ of order $20$, $D_5$ and $C_5$, with $F_5=\generators{a,b \st a^5,\ b^4,\ bab^{-1}=a^2}$.
 
 ## The discriminant
 
@@ -100,19 +88,15 @@ Similarly, $x^7-x-1$ is irreducible modulo $2$ and factors modulo $3$ into irred
 
 ## Distinguishing the remaining candidates
 
-::: {.remark title="Criteria for $n = 4$ and $n=5$"}
-$n=4$:
+### Distinguishing the candidates
 
-- $C_4$ contains a $4$-cycle and $C_2^2$ does not; both contain elements of type $(2,2)$.
+For $n=4$, $C_4$ contains a $4$-cycle and $C_2^2$ does not, while both contain elements of type $(2,2)$; $A_4$ contains neither a transposition nor a $4$-cycle, so exhibiting either one excludes it, and the discriminant separates $S_4$ from $A_4$.
 
-- $A_4$ contains no transposition and no $4$-cycle, so either one in $G$ excludes $A_4$; the discriminant separates $S_4$ from $A_4$.
+For $n=5$, a transposition together with a $5$-cycle generates $S_5$, and in general a transposition $(a\,b)$ together with an $n$-cycle generates $S_n$ exactly when $\gcd(b-a,n)=1$.
 
-$n=5$ and general $n$:
+[[P-C2K6O]]
 
-- A subgroup of $S_5$ containing a transposition and a $5$-cycle is $S_5$.
-
-- $S_n = \generators{(a,b), (1,2,\ldots,n)}$ if and only if $\gcd(b-a, n) = 1$.
-:::
+[[P-MQK32]]
 
 [[PR-5PI25]]
 
@@ -161,9 +145,6 @@ Two generating statements are what a Galois computation uses: a transposition $(
 
 :::
 
-::: {.remark title="Degrees and indices"}
-For a finite Galois extension $L/F$ with $G = \Gal(L/F)$ and an intermediate field $K$ corresponding to $H = \Gal(L/K)$,
-$$
-[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G.
-$$
-:::
+The degree and index bookkeeping that turns a subgroup of $G=\Gal(L/F)$ into the degree of the corresponding intermediate field is part of the correspondence.
+
+[[T-NLPZY]]
