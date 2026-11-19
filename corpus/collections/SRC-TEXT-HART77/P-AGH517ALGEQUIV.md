@@ -29,6 +29,27 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.7, printed p. 100,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.7, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed
+    the two chains that make the algebraically trivial divisors a subgroup,
+    and the symmetry of prealgebraic equivalence. Not checked: Yang's Solutions outside printed pp. 100-107; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.7 at printed
+    p. 100 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -331,4 +352,6 @@ prove part (c).
 The exercise stands on printed p. 367 of Hartshorne, under its printed italic heading "Algebraic Equivalence of Divisors", read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 367 in the footer); the statement above is that page's text, parts (a)--(c), the hint to (III, 9.9) and the printed Note on Néron and Severi included.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.7, PDF p. 257: (a) closure under inverses by negating a chain and under sums by concatenating a chain from $0$ to $D$ with its translate by $D$; (b) "since the difference of linearly equivalent divisors is principal, we just need to show $(f)\equiv0$ ... $(tf-u)$ restricts to $(f)$ over $(1,0)$ and to $0$ over $(0,1)$; thus $(f)=0$", printing equality where prealgebraic equivalence is meant; (c) "by Bertini we can consider differences of very ample divisors", then equality of the degrees in $\PP^n$ of the two fibres of a flat family by III.9.9, and $D\cdot H$ is that degree. Step [](#s3){.pf-ref} writes (b) as the pencil $ts_0+us_1$ on $X\times\PP^1$, which is the printed hint, and step [](#s4){.pf-ref} and step [](#s5){.pf-ref} are his (c). Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.7, printed p. 100, takes (a) as the two closure arguments: the concatenation of the chains $0=D_0,\ldots,D_n=D$ and $0=E_0,\ldots,E_m=E$ through $D+E_i$ shows $D+E$ is algebraically equivalent to $0$, and negating each step, which is allowed since prealgebraic equivalence is symmetric, gives $-D$. Its (b) is the standard family $(tf-u)$ on $X\times\PP^1$ whose fibres at $t=0$ and $t=1$ are $(f)$ and $0$; the card's own steps carry that family and the flatness it needs.
 :::
