@@ -15,6 +15,31 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Group B, problem B4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read in the same extraction, Problem B4 (the entry beginning on line 99):
+    the measurable f with support in [0,1], the three sets X, Y, Z, the
+    hypothesis that the integrals converge in [0, infinity], the demanded
+    identity with alpha, beta, gamma, and the hint naming the monotone and
+    dominated convergence theorems all agree with the card.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. On Y the integrand is 1, so the integral is
+    lambda(Y) for every n. On Z the integrand tends pointwise to 0 and is
+    dominated by the indicator of Z, which is integrable because Z sits in
+    [0,1], so the limit is 0. On X the integrands increase pointwise to the
+    function that is infinite on X and 0 elsewhere, and the monotone convergence
+    theorem gives an integral that is 0 when lambda(X) is 0 and infinite
+    otherwise, the second case by testing against M times the indicator of X.
+    Summing the three pieces gives lambda(Y) when lambda(X) vanishes and
+    infinity otherwise, and the constants beta = 1, gamma = 0 with alpha = 0 or
+    infinity realise exactly those two cases. Note that the argument does not
+    use the hypothesis that the limit exists, which it shows always does in
+    [0, infinity]. Nothing was changed.
 ---
 
 ::: {.problem}
