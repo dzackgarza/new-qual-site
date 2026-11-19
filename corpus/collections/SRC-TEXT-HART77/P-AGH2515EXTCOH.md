@@ -58,6 +58,7 @@ For part (e), given a section $s$ on $U$, apply (d) to the subsheaf of $\mcf\res
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.15 (Extension of Coherent Sheaves), printed p. 41 of the held scan, transcribed and checked against the exercise as printed, part by part.
 For an open inclusion $i:U\hookrightarrow X$ of noetherian schemes, direct image takes [[D-QNTZY|quasi-coherent]] sheaves to [[D-QNTZY|quasi-coherent]] sheaves [@Har77, Proposition II.5.8(c)].
 Indeed, $i$ is quasi-compact because every open subset of a noetherian space is quasi-compact, and it is separated.
 Kernels, cokernels, and images of morphisms of quasi-coherent sheaves are quasi-coherent [@Har77, Proposition II.5.7].
