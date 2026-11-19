@@ -38,6 +38,16 @@ audit:
     No published solution set is retained for this examination. The example is
     named on the card and its three properties are verified in the proof block,
     which is more than the printed instruction requires.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The nowhere-density step bounded the length of an interval contained in a finite
+    union of intervals each shorter than 2^-n, which is false without disjointness.
+    The sets S_n are unions of pairwise disjoint closed intervals, and an interval
+    contained in such a union lies in one member, so the sentence now says that. The
+    statement and the conclusion are unchanged.
+
 ---
 
 ::: {.problem}
@@ -77,11 +87,11 @@ $S$ contains no nonempty open interval.
 
 ::: pf-proof
 
-After stage $n$ we have $S\subseteq S_n$, a union of $2^n$ closed intervals of
-total length $m(S_n)=1-\sum_{k\le n}2^{-k-1}=\frac12+2^{-n-1}$, so each has
-length below $2^{-n}$. If $S$ contained an interval of length $L>0$, that
-interval would lie in $S_n$ for every $n$; an interval contained in a finite
-union of intervals each of length below $2^{-n}$ has length below $2^{-n}$, so
+After stage $n$ we have $S\subseteq S_n$, a union of $2^n$ pairwise disjoint
+closed intervals of total length $m(S_n)=1-\sum_{k\le n}2^{-k-1}=\frac12+2^{-n-1}$,
+so each has length below $2^{-n}$. If $S$ contained an interval of length $L>0$, that
+interval would lie in $S_n$ for every $n$; an interval contained in a finite union of
+pairwise disjoint intervals lies in one of them, hence has length below $2^{-n}$, so
 $L\le2^{-n}$ for all $n$ and $L=0$, a contradiction.
 
 :::
