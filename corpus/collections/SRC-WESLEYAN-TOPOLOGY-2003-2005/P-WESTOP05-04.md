@@ -23,6 +23,8 @@ Give Hausdorff examples of each requested phenomenon:
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
+
 Let $\sorgenfrey$ denote the Sorgenfrey line.
 
 ## 1. Normal factors with nonnormal product

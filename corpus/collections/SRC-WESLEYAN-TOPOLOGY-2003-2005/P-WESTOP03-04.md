@@ -18,6 +18,8 @@ audit:
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the examination papers alone, so the argument is the card's own.
+
 All surfaces below are understood to be compact, connected, and without boundary.
 
 ::: pf
