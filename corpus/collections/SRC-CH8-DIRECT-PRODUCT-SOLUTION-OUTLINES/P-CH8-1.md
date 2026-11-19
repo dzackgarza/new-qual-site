@@ -33,6 +33,16 @@ audit:
     Chapter 8 Exercise 1 on printed p. 167 (page 181 of the file, whose running head is p. 167), where the
     printed words are the card's statement. The page is now named in the solution's opening sentence. Not
     checked in this pass: the group axioms, which the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The note of 2026-11-19 above gives the file page of printed p. 167 as page 181; that is
+    wrong. Re-extracted on 2026-11-19: file page 181 carries the running head 166, and file
+    page 182 carries 8 | External Direct Products 167, which is where Exercise 1 stands. The
+    printed page number 167, which is what the solution cites, is unaffected, and the other
+    Chapter 8 cards already give file page 182 for it.
+
 ---
 
 ::: {.problem}
