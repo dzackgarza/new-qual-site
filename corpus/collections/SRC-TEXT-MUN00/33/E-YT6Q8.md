@@ -34,6 +34,20 @@ audit:
     countability giving Lindelof, Theorem 32.1 giving normality, and (a) giving the
     contradiction. The argument is the card's own; no retained set is cited. Munkres §33
     Exercise 4(b), printed p. 212. The printed statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Two defects in the solution section, both corrected here. First it said "the argument is the
+    card's own; no retained solution set is cited", contradicting the card's own solution-written
+    event of 2026-11-10, which records the transcription from Doug's World, Problem 33.2, printed
+    p. 8 of the file; the retained file was re-read and does carry that problem, its (a) being
+    Urysohn between two closed points plus connectedness of the image. Second it checked the card
+    against "§33 Exercise 4(b)", which is a different exercise: re-read in the retained book, printed
+    p. 212 (PDF p. 227) prints "2. (a) Show that a connected normal space having more than one point
+    is uncountable. (b) Show that a connected regular space having more than one point is
+    uncountable. [Hint: Any countable space is Lindelöf.]", which is the statement the card carries.
+    The 2026-11-18 note above is left as written; this event is the correction.
 ---
 
 ::: {.exercise}
@@ -45,7 +59,7 @@ audit:
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §33 Exercise 4(b), printed p. 212, Urysohn's lemma (§33), Theorem 32.1 (regular Lindelöf implies normal) and the countability results of §30.
+The argument is transcribed from the retained solution "Doug's World", *Munkres — Topology — Chapter 4 Solutions* (30 August 2017; the file names no author), Problem 33.2, printed p. 8 of the file (`tmp/sources/munkres-solutions-dougsworld-ch4.pdf`), with the countable-space-is-Lindelöf step stated and proved on the card. It is checked against Munkres, Topology (2000), §33 Exercise 2, printed p. 212, Urysohn's lemma (§33), Theorem 32.1 (regular Lindelöf implies normal) and the countability results of §30.
 
 ::: pf
 
