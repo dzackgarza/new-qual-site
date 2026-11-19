@@ -137,6 +137,25 @@ audit:
     gives the arbitrary-R statement up to the global unit on each connected component. The
     bracketed question on E-HAT-3.3-21 is a separate open item and is unchanged.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §3.3. Read against Hatcher, Exercise 31 of §3.3, printed p. 260, and
+    the printed page is added, the card having had none. One inference repaired. The step from
+    "$H_n(M,B;G)=0$ for every $G$" to the surjectivity of the boundary map said the universal
+    coefficient theorem makes $H_{n-1}(M,B;\ZZ)$ torsion-free and that a torsion-free cokernel forces
+    surjectivity. Both halves fail: a torsion-free cokernel does not force surjectivity, as the zero
+    map $\ZZ$ to $\ZZ$ shows, and the coefficient group $\QQ/\ZZ$ gives more than torsion-freeness. With
+    that coefficient the universal coefficient sequence gives
+    $H_{n-1}(M,B;\ZZ)$ tensor $\QQ/\ZZ$ equal to zero, and a finitely generated group with that property
+    is zero, so $H_{n-1}(M,B;\ZZ)=0$ and the fragment is a short exact sequence whose first map is an
+    isomor\varphism. The step now says this, and derives both that the component is orientable and that
+    the boundary map is multiplication by a unit. Checked and unchanged: the triple sequence, the
+    excision, the component reduction, the mod-two case where both groups are $\ZZ_2$, and the
+    change-of-coefficients argument for general $R$, including the $2R=0$ alternative. Not re-read
+    this pass: Bredon's printed pp. 356--357, which supply the vanishing; the event of 2026-11-07
+    records that reading.
 ---
 
 ::: {.problem}
@@ -144,6 +163,8 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
+The exercise is §3.3 Exercise 31, printed p. 260.
+
 Use **Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1, printed pp. 356--357** (PDF page 193 of `tmp/sources/bredon-topology-and-geometry.pdf`). Bredon proves precisely the required compatibility, $[\partial M]=\partial_*[M]$. The following is his argument, with the coefficient and disconnected cases made explicit.
 
 Compactness leaves only finitely many components of $M$. The long exact sequences of the pairs and the local characterization of fundamental classes split over these components, so we may assume that $M$ is connected. A closed component has empty boundary and needs no further argument; in particular, no global injectivity claim is required. Assume now that $\partial M\ne\varnothing$.
@@ -156,20 +177,24 @@ H_n(M,B)\longrightarrow H_n(M,\partial M)
 $$
 Excision identifies $H_{n-1}(\partial M,B)$ with $H_{n-1}(A)$. If $c$ is a representative relative cycle for $[M]$, then $\partial_A[M]$ is represented by the part of $\partial c$ lying in $A$. Thus surjectivity of $\partial_A$ is exactly what is needed for this boundary component.
 
-Bredon's collar and orientation-sheaf computation gives $H_n(M,B;G)=0$ for every coefficient group $G$: after excision this is a compactly supported section group over the connected noncompact manifold $M^\circ\setminus(B\times(0,1))$. Taking $G=\QQ/\ZZ$ and applying the universal coefficient theorem shows that $H_{n-1}(M,B;\ZZ)$ is torsion-free. The displayed exact sequence therefore becomes
+Bredon's collar and orientation-sheaf computation gives $H_n(M,B;G)=0$ for every coefficient group $G$: after excision this is a compactly supported section group over the connected noncompact manifold $M^\circ\setminus(B\times(0,1))$. Taking $G=\\QQ/\\ZZ$, the universal coefficient sequence
 $$
-0\longrightarrow H_n(M,\partial M;\ZZ)
-\xrightarrow{\ \partial_A\ }H_{n-1}(A;\ZZ)
-\longrightarrow \text{a torsion-free group}.
+0\to H_{n-1}(M,B;\\ZZ)\otimes\\QQ/\\ZZ\longrightarrow H_n(M,B;\\QQ/\\ZZ)\longrightarrow\operatorname{Tor}(H_{n-2}(M,B;\\ZZ),\\QQ/\\ZZ)\to0
 $$
-Here $H_n(M,\partial M;\ZZ)\cong\ZZ$, while $H_{n-1}(A;\ZZ)$ is either $\ZZ$ or $0$ according as $A$ is orientable. Since the cokernel is torsion-free, the second group must be $\ZZ$ and $\partial_A$ must be onto. Hence $\partial_A$ is multiplication by $\pm1$. Doing this for every $A$ proves Bredon's identity
+gives $H_{n-1}(M,B;\\ZZ)\otimes\\QQ/\\ZZ=0$, and a finitely generated group whose tensor product with $\\QQ/\\ZZ$ vanishes is zero, so $H_{n-1}(M,B;\\ZZ)=0$. The displayed exact sequence therefore becomes
 $$
-\partial_*[M]_{\ZZ}=[\partial M]_{\ZZ}.
+0\longrightarrow H_n(M,\partial M;\\ZZ)
+\xrightarrow{\ \partial_A\ }H_{n-1}(A;\\ZZ)
+\longrightarrow 0,
+$$
+an isomor\varphism. Since $H_n(M,\partial M;\\ZZ)\cong\\ZZ$, this gives $H_{n-1}(A;\\ZZ)\cong\\ZZ$ — in particular $A$ is orientable — and $\partial_A$ is multiplication by a unit. Doing this for every $A$ proves Bredon's identity
+$$
+\partial_*[M]_{\\ZZ}=[\partial M]_{\\ZZ}.
 $$
 
-The same argument with $\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\ZZ_2)$ and $H_{n-1}(A;\ZZ_2)$ are $\ZZ_2$, so the beginning of the exact sequence is $0\to\ZZ_2\to\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
+The same argument with $\\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\\ZZ_2)$ and $H_{n-1}(A;\\ZZ_2)$ are $\\ZZ_2$, so the beginning of the exact sequence is $0\to\\ZZ_2\to\\ZZ_2$ and $\partial_A$ is an isomor\varphism. This is the unrestricted $\\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
 
-For general $R$, use naturality of connecting homomorphisms under change of coefficients. If $M$ is $\ZZ$-orientable, apply $\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
+For general $R$, use naturality of connecting homomor\varphisms under change of coefficients. If $M$ is $\\ZZ$-orientable, apply $\\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
 $$
 \boxed{\partial_*[M]_{R}=[\partial M]_{R}.}
 $$
