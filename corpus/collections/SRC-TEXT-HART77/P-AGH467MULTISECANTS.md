@@ -287,7 +287,11 @@ audit:
     Not checked in this pass, unchanged: the body of Kaji 1986, the citation resting on the
     restatement in Fukasawa, arXiv:2108.00650v3, section 1; and the positive-characteristic
     counterexample of the last step, which was re-read but whose two delicate points, the closed
-    immersion and the injectivity of $[s:t]\mapsto[s^p:t^p]$, were not re-derived here.
+    immersion and the injectivity of $[s:t]\mapsto[s^p:t^p]$, were not re-derived here. Two
+    sentences are tightened in the same pass, both mine: the remark now says that the clause
+    $\ell\not\subseteq X$ is the reading that holds for all four curves, instead of calling it the
+    only possible reading, and s9 says that the criterion's two conditions are equivalent to the two
+    injectivities rather than identical with them.
 
 ---
 
@@ -313,8 +317,9 @@ one point is not a multisecant under that definition. The printed definition
 does not exclude the line $X$ itself when $X$ is a line, and a line meets
 itself in every one of its points, so under the letter of the definition the
 first sentence of the exercise fails for the line alone. The statement above
-therefore requires $\ell\not\subseteq X$, the only reading under which the
-printed first sentence holds in all four cases; the clause changes nothing for
+therefore requires $\ell\not\subseteq X$: with that clause the printed first
+sentence holds for all four curves, and without it the line is the one
+exception. The clause changes nothing for
 a planar curve of degree at least $2$ or for a nonplanar curve, since no line
 is contained in one of those. Smoothness and integrality are not extra
 hypotheses: the Terminology of the book reserves the word curve, in Chapter IV,
@@ -656,9 +661,9 @@ nonsingular plane curve of degree $d-1$, where $d=\deg X$.
 
 Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} show that the base-point-free linear system in step [](#s6){.pf-ref}
 separates points and tangent vectors: the two conditions of the closed-immersion
-criterion are the injectivity of $\pi_P$ on closed points and the injectivity of
-its differential at each closed point, which is the form in which steps
-[](#s7){.pf-ref} and [](#s8){.pf-ref} establish them.  By the
+criterion are, equivalently, the injectivity of $\pi_P$ on closed points and the
+injectivity of its differential at each closed point, which is the form in which
+steps [](#s7){.pf-ref} and [](#s8){.pf-ref} establish them.  By the
 [[T-DIVMAPPN|closed-immersion criterion for a linear system]], $\pi_P$ is a
 closed immersion.
 
