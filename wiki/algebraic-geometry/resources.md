@@ -62,11 +62,11 @@ A selection of exercises from [@Har77] recommended by Elham Izadi, by chapter an
 
 - I.1: 1, 2, 4, 5, 6; 7, 8, 9, 10.
 
-- I.2: 2, 6, 7, 8, 10; attempt 9.
+- I.2: 2, 6, 7, 8, 9, 10.
 
 - II.1: 1, 2, 3, 4, 5; 6, 7, 8, 17, 22; 9; 18.
 
-- II.2: 1, 2, 3, 5; 6, 7, 8, 9, 12; 14, 16, 17, 18, 19; and 11, which is harder (compare Stacks Project 32.14 on universally closed morphisms).
+- II.2: 1, 2, 3, 5; 6, 7, 8, 9, 12; 14, 16, 17, 18, 19; and 11 (compare Stacks Project 32.14 on universally closed morphisms).
 
 - II.3: 1, 2, 3, 4, 5; 6, 7, 8, 9, 10.
 
