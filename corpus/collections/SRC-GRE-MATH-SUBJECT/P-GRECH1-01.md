@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Re-transcribed from Chapter 1 review Question 1 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), replacing the earlier chapter-1.pdf transcription.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is question 1 of the Chapter 1
+    Review Questions, and its printed words are the card's. The chapter, the question number and the
+    file are now named in the solution's opening sentence. Not checked in this pass: the argument,
+    which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -28,6 +36,7 @@ Find the sum of the roots of the equation $\sqrt{x-1} + \sqrt{2x-1} = x$.
 :::
 
 ::: {.solution}
+This is question 1 of the Chapter 1 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`; the statement below is its wording.
 
 ::: pf
 
