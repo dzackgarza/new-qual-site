@@ -7907,3 +7907,49 @@ this pass. Not read: V.2.7's entry, and the printed books themselves.
 **Impact and owner.** Not repaired, for the same reason as the earlier record: `vocabularies/references.yaml` is a Zotero export that says not to hand-edit it, and the work needs a key. Adding it also unblocks the `D-SCHCMGOR` proposition. The page sentence and the example clause should both cite the same theorem once the key exists. Separately, `P-HCAO21` has no solution: whether the corpus wants to answer its own oral-exam problem on a chapter page is an editorial decision for whoever owns that collection.
 
 **Uncertainty.** The two true statements above are verified in the retrieved paper text; no printed book was retrieved that states either, and none is cited by page.
+
+## 2026-11-19: the macro-arity class behind #164 measured and closed — 158 `\dd` and 20 `\restrictionof` spans, repaired in 28 commits
+
+**Object and need.** The entry of 2026-11-17 headed "the corpus validates again, the two blocking errors were notation, and the gate cannot see the class they belong to" measured the class with the rule "a declared argument whose token is `_`, `^`, `$`, `}` or `&`" and reported "one pre-existing span, the `\units` of line 29 of `PR-N6S6P`, and nothing else in either tree". Issue #164 was filed on the same class. That measurement undercounts it twice: it does not see a macro given fewer brace groups than it declares when the next token is a control sequence, and it does not see a two-argument macro given one braced argument followed by an ordinary token. Measured with the full arity test instead — for each macro with declared arguments, count the arguments actually present, braced or not, and flag the occurrence when fewer than the declared number are there — the corpus carries **158 occurrences of `\dd` and 20 of `\restrictionof` with fewer than their two arguments**, in 20 and 8 files respectively, and `wiki/` carries none. `\dd` is `\frac{\partial #1}{\partial #2}` and `\restrictionof` is `\left.#1\right|_{#2}`, both two-argument; `\dd x$` dies with `! Missing } inserted` under the project preamble and `\dd x\Bigr` silently sets $\partial x/\partial\Bigr$, so both are rendering failures a reader sees and the gate does not.
+
+**Repaired.** `P-AGH213SURJLOCAL`'s `\surjectsvia` (already done in `a7eb7ed9d4`) and the two #164 spans of 2026-11-17 are not counted here. The rest were repaired on 2026-11-19, one commit per card, no statement or citation touched: the `\dd` uses now write `\dx`, `\dy`, `\dz`, `\dt`, `\dw`, `\dr`, `\dA`, `\dtheta` where those macros exist and `\,du`, `\,ds`, `\,d\zeta`, `\,d\varphi`, `\,d\alpha`, `\,d\rho` where they do not, and `\frac{\dd}{\dd z}` now reads `\frac{d}{dz}`; the `\restrictionof` uses now give both arguments, the restricted object read off each sentence (`\restrictionof{f_0}{A}`, `\restrictionof{S^{4n+3}}{U}`, `\restrictionof{\RR_d}{I}`, `\restrictionof{f}{t=1}`, ...). 27 cards, 28 commits: `b36394bb83`, `fb071ae448`, `f658a2faf5`, `04a9fbc6c3`, `5dae59cce1`, `f9bc1234d2`, `6b6102b987`, `005f99eb31`, `2e605c501e`, `4b41d8b6c4`, `e0df1ddc99`, `7738544e62`, `8867355aff`, `f738abe0d9`, `82b1e58e05`, `2e1728fb52`, `3a2cf3bccc`, `003a9687a2`, `f44ec93b14`, `e7226a1e63`, `60eb02385b`, `a25c3db397`, `c6f64fea1b`, `6266bbe718`, `181436ea7f`, `dc728a8ae9`, `2c4730d44a`, `6dbdad1e15`.
+
+**Measured after, on the same rule.** Zero `\dd` and zero `\restrictionof` with fewer than two arguments in `corpus/` and in `wiki/`, and zero fatal arity spans for any of the 68 argument-taking macros of `vocabularies/macros.json` across both trees. Typeset with the project preamble, each repaired form renders as written and each snippet leaves `pdflatex -halt-on-error` at exit 0.
+
+**A false positive the screen cannot avoid.** Five spans in `E-BGKED` read `\dd fx`, `\dd fy`: a two-argument macro with two unbraced arguments, legal and correct ($\partial f/\partial x$). They are the reason "bare `\dd`" is not the same as a defect, and they were left alone.
+
+**What zero does not mean.** The test is textual and arity-only. It cannot see an argument taken from a token such as `(` or `=`, which is legal TeX and wrong mathematics — the case the 2026-11-17 entry itself names as invisible — so the measurement establishes that no declared argument is missing, not that every macro use says what it should.
+
+**Repair.** This record only, in the COMPLAINTS commit that carries it; the cards are in the commits named above. **Uncertainty.** Not checked: the rendered site, which is built in CI; and no whole-corpus `qualc check` was run for this record — the checks are the per-card `qualc.authoring check`, `tools/check_macros.py`, `tools/sync_macros.py --check` and `tools/extraction_detector.py --range-gate` on the touched files, and the scan above.
+
+## 2026-11-19: the Chapter V sweep closes on V.2.7, and Chapter IV opens — 4.1.1 and 4.1.2 at printed p. 84
+
+**Object and need.** `P-AGH527ELLRULEDSECT` (V.2.7, the last Chapter V card without Yang), and
+`P-AGH411REGULAROUTSIDEP` (IV.1.1) and `P-AGH412POLESATFINITESET` (IV.1.2), the first two of the
+Chapter IV cards, which are **65 of 67** — Yang's set covers Chapter IV as well, and the Chapter V
+sweep is now complete.
+
+**V.2.7, printed p. 103, read on the page image.** The retained text version's extraction of this entry
+is garbled, so the reading was made on the rendered page. $\mathcal E$ is the normalized indecomposable
+bundle with $e=-1$ by the proof of (2.12), and the surface is unique by (2.15); a section corresponds
+to a surjection $\mathcal E\to\mathcal L(\mathfrak d)\to0$, with $\deg\mathfrak d=1$ by (2.15), so
+$\mathfrak d=P$ for a point of $C$; conversely (2.16) gives one $\mathcal E'$ for each $P\in C$. The
+section attached to $P$ is $C_0+(P-P_0)f$, with $\mathcal E'\cong\mathcal E\otimes\mathcal L\bigl(\frac{P-P_0}{2}\bigr)$
+— the half exists because $\Pic^0$ of an elliptic curve is divisible — and two sections are linearly
+equivalent only if $Pf\sim Qf$, which forces $P=Q$, since a degree-one map $C\to\PP^1$ would make $C$
+rational. That is the one-dimensional family with no two members linearly equivalent.
+
+**IV.1.1, printed p. 84.** With $Q\ne P$ and $D=2P-Q$ of degree $1$, taking $n>\max\{2g-2,g,1\}$ gives
+$\ell(nD)=n+1-g\ge1$, so $nD-(f)=D_0$ is effective of degree $n$ and $(f)=D_0-2nP+nQ$: a pole at $P$,
+regular elsewhere.
+
+**IV.1.2, printed p. 84.** The same with $D=2P_1+\cdots+2P_r-(2r-1)Q$ of degree $1$: $(f)$ is
+$D_0-2n(P_1+\cdots+P_r)+n(2r-1)Q$, so the poles are exactly at the $P_i$ and their orders are $2n$.
+
+**Repair.** `P-AGH527ELLRULEDSECT` in `81446bee3c`, `P-AGH411REGULAROUTSIDEP` in `fae454db75`,
+`P-AGH412POLESATFINITESET` in `195b8b1ef5`, one commit each; this record in the COMPLAINTS commit that
+carries it. No step, statement or hypothesis of any card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.2.7 at printed p. 103 on the page image,
+and 4.1.1 and 4.1.2 at printed p. 84; the statements the three cards carry, not reopened against the
+book in this pass. Not read: the other 63 Chapter IV entries, and the printed books themselves.
