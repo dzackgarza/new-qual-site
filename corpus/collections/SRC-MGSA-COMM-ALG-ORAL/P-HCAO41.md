@@ -23,6 +23,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`: the statement is the item "Let A be a noetherian valuation ring which is not a field. Show that A is a dvr.",
+    and its printed words are the card's. The sheet numbers nothing and prints no folios, so the
+    item is identified by its position and its opening words rather than by a number. Both are now
+    named in the solution's opening sentence. Not checked in this pass: the argument, which the
+    edit does not touch.
 ---
 
 ::: {.problem}
@@ -32,6 +41,7 @@ Show that $A$ is a discrete valuation ring.
 
 
 ::: {.solution}
+This is the sheet `assets/attachments/MGSA_Commutative_Algebra_Oral_Questions.pdf`, Commutative Algebra section, item "Let A be a noetherian valuation ring which is not a field. Show that A is a dvr."; the statement below is its wording.
 Let $\mathfrak m$ be the maximal ideal of the valuation ring $A$. Since $A$
 is not a field, $\mathfrak m\ne0$.
 
