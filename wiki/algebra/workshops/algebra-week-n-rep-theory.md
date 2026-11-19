@@ -5,7 +5,7 @@ title: "Algebra qual prep: representation theory"
 
 # Algebra qual prep: representation theory
 
-A representation of a finite group is a module over the group ring, and over $\CC$ the two theorems of Maschke and Schur make that category semisimple; the character table is then a finite computation. This page collects the statements, in the order a session needs them.
+A representation of a finite group is a module over the group ring. Over $\CC$ the theorems of Maschke and Schur make that category semisimple, so a representation is determined by the multiplicities of its irreducible summands, and those multiplicities are read off the character.
 
 ## Representations and the group ring
 
@@ -44,4 +44,6 @@ A simple module is indecomposable and cyclic, and the converses fail; semisimpli
 
 ## Problems
 
-See [[algebra/representations/index|Representations]] for the chapter these statements are drawn from, and [[algebra/review|Review sheet]] for the theorem list by chapter.
+The representation-theory problems of the preliminary examinations, with their exam locations, are listed in [[SRC-ART-ALG-2010-2015-PRELIMS]] and [[SRC-ART-ALG-2003-2009-PRELIMS]]; the worked character tables are on the cards for $D_4$, $A_4$, $S_4$ and $S_5$.
+
+[[P-CRR65]] [[P-ZBUS2]] [[P-N47GH]] [[P-WYH52]]
