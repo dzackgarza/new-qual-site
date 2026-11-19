@@ -53,7 +53,7 @@ The ring material of one session, in the order the questions are asked: what an 
 
 ## Classes of rings
 
-The classes of domains are totally ordered by inclusion, each inclusion is strict, and outside the chain sit the Dedekind, Noetherian and Artinian rings.
+Outside the chain of domains sit the Dedekind, Noetherian and Artinian rings, which is where the questions that are not about factorization begin.
 
 [[PR-LLBRB]]
 
