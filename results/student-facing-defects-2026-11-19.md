@@ -64,6 +64,15 @@ backlog went live is `GET /revision.txt` naming a current commit.
 
 Affected: the site as a whole.
 
+**Addressed and then withdrawn, by the maintainer.** `2d25da7c3f` moved publishing to a
+schedule (:07, :37) and to dispatch so a push could not supersede the build; `c5efcc703e`
+restored the previous push-triggered workflow, on the ground that a scheduled build would
+publish card lanes mid-rewrite and that publishing is not an outstanding issue. So the stale
+deploy is a decision, not a defect: nothing here asks for a workflow change. What remains
+true is the mechanism — while a corpus diagnostic is open, `qualc build` emits nothing at all,
+so a stale site is the first symptom to look for, and `GET /revision.txt` is what says which
+commit a student is reading.
+
 ---
 
 ## 3. Source links a browser refuses
@@ -81,6 +90,13 @@ Affected: the site as a whole.
 
 Affected: `SRC-GATHMANN-AG`. Fix: repoint at a URL that loads (or at the archived copy the
 collection already records in its own provenance), after checking the new target by hand.
+
+**Closed before this was filed.** `48fb03d583` ("SRC-GATHMANN-AG: the 2019 notes are
+archived, not served (#151)") replaced the href with the archived whole-book PDF and recorded
+why in the collection: the host answers `~gathmann/` with a placeholder, and under the
+mismatched certificate the server also answered 404. No `alggeom-2019-c1.pdf` href remains in
+the corpus; the copy that still shows one is `BACKLOG.md`, which is the generated report and
+was not regenerated after that commit.
 
 ---
 
@@ -107,6 +123,38 @@ problems came from:
 This is authored-content work (open the document, record where it is), not a code fix, so it
 is filed and not repaired here. Note that the five `SRC-UNSORTED-*` collections are
 compilations of unknown origin: whether their provenance exists at all is a reading decision.
+
+**Re-measured 2026-11-19, and closed.** The list above is `BACKLOG.md`'s, which is stale: the
+current tree measures **6** (`uv run python -m qualc.provenance_hrefs --only
+empty-provenance`, 112 collections): `SRC-AGX-MISC-AG-PROBLEMS` and the five `SRC-UNSORTED-*`
+buckets. Those five say in their own bodies that the empty list is the finished state — they
+are buckets for problems whose source is not identified, not source documents — and
+`SRC-AGX-MISC-AG-PROBLEMS` is a set of oral-exam questions with no document behind it. So
+there is no provenance to add, and inventing one would be the defect.
+
+---
+
+## 5. The wiki sidebar labels two pages with one name (repaired here)
+
+`just doctor` reports `sibling-duplicate-titles: 1`: `wiki/topology/covering-spaces/` carries
+`title: Covering spaces` on both `index.md` and `covering-spaces.md`. A directory enters the
+sidebar through its `index.md` and its pages are listed again as children
+(`tools/qualc/emit.py:500-520`), so the live page shows two adjacent entries reading
+"Covering spaces", one to `index.html` and one to `covering-spaces.html`, and a student has no
+way to tell the orientation page from the detailed one.
+
+The folder page already names the child: it reads "The statements and examples are on
+[[topology/covering-spaces/covering-spaces|Covering spaces (detailed)]]". So the child's
+`title` and its own `# heading` now say "Covering spaces (detailed)": the sidebar entry, the
+page heading and the only inbound link all use one name.
+
+Verified: `just doctor` prints `sibling-duplicate-titles: ok`; `tests/test_wiki_doctor.py`
+passes (12 tests); the folder's two pages parse with no errors, the tree check reports
+nothing, and after the change the titles read `('Covering spaces (detailed)', 'Covering
+spaces')`.
+
+Affected pages: `wiki/topology/covering-spaces/covering-spaces.md` (title and heading),
+`wiki/topology/covering-spaces/index.md` (unchanged; it already used the distinguishing name).
 
 ---
 
