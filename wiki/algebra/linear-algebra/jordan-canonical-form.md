@@ -17,7 +17,7 @@ The Jordan canonical form of $A$ exists if and only if the characteristic polyno
 ## Where the form comes from
 
 Make $V=k^n$ a $k[x]$-module with $x$ acting by $A$.
-If $\chi_A$ splits, every invariant factor of $V$ is a power of a linear polynomial, so every elementary divisor is some $(x-\lambda)^e$, and that summand $k[x]/\generates{(x-\lambda)^e}$ is the Jordan block $J_e(\lambda)$ in the basis $(x-\lambda)^{e-1},\ldots,(x-\lambda),1$.
+If $\chi_A$ splits, every invariant factor of $V$ is a power of a linear polynomial, so every elementary divisor is some $(x-\lambda)^e$, and that summand $k[x]/\generators{(x-\lambda)^e}$ is the Jordan block $J_e(\lambda)$ in the basis $(x-\lambda)^{e-1},\ldots,(x-\lambda),1$.
 
 [[L-W5S2W]]
 
