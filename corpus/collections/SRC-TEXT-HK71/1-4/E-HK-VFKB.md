@@ -53,9 +53,6 @@ Step [](#subtracting-gives-0eq1){.pf-ref}.
 
 :::
 
-::: pf-qed
-Step [](#no-pair-satisfies-both){.pf-ref}.
-:::
 
 :::
 
