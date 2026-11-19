@@ -16,8 +16,13 @@ Write $J_d(\lambda)$ for the Jordan block of size $d$ with eigenvalue $\lambda$,
 
 For $\lambda\in F$ and $k\geq 1$, the number $n_A(k,\lambda)$ of Jordan $\lambda$-blocks of size at least $k$ is
 $$
-n_A(k,\lambda)=\rank\big((A-\lambda I)^{k-1}\big)-\rank\big((A-\lambda I)^{k}\big).
+n_A(k,\lambda)=\rank\big((A-\lambda I)^{k-1}\big)-\rank\big((A-\lambda I)^{k}\big),
 $$
+which is the block count of the Jordan-form data card in rank form.
+
+[[L-CD6QT]]
+
+[[L-W5S2W]]
 
 Let $T$ be a nilpotent operator on an $n$-dimensional vector space $V$ with $T^{n-1}\neq 0$.
 
