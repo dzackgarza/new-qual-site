@@ -23,6 +23,17 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source does not assume $R$ is a domain, and $\ZZ/4\ZZ$ is a counterexample. The statement now assumes $R$ is a Noetherian integral domain.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. Noetherian gives finite generation of every ideal;
+    the induction on the number n of generators is sound: for I = (a_1,...,a_n) the ideal
+    J = (a_1,...,a_{n-1}) is principal by hypothesis, say J = (d), so I = (d,a_n) is two-generated
+    and hence principal by the hypothesis of the problem. That the passage I = (d,a_n) is legitimate
+    is the only point requiring care, and the card proves it. Conclusion: every ideal is principal,
+    and R is a domain by hypothesis, so R is a PID. Not claimed: that two-generationality alone
+    (without Noetherian) suffices, which it does not.
 ---
 
 ::: {.problem}
