@@ -5731,3 +5731,23 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **Where it would go, stated so it can be executed.** `wiki/algebraic-geometry/morphisms/finite-and-flat.md` already embeds `[[D-MORFLAT]]` under "Flatness and fibres" and `[[T-FLATCRIT]]` under "Criteria for flatness"; `[[D-DEFFFLAT]]` belongs beside one of those, since descent of exactness is exactly a criterion for flatness. I did not write the line: the page is another lane's, and this chat's authority is the cards of its residue.
 
 **Uncertainty.** Of the twenty-five orphans this accounts for three; the other twenty-two belong to residues 7, 9, 10, 11, 13 and 15 and are unexamined. Whether `D-DEFFFLAT` should instead be merged *into* `D-MORFLAT` — one card stating the module criterion and the morphism definition together — is an authoring choice, not something the evidence settles.
+
+## 2026-11-19, fourth item: `qualc check` prints nothing until it finishes, so a killed run yields no verdict at all
+
+**Object and need.** Two attempts to run the full corpus gate from this box today were killed, and both left nothing usable: the first at 20 min 10 s, the second at 5 min 59 s, each with exit status 137 and no diagnostic beyond the shell's own `Killed` line. The second attempt redirected output to a file rather than through `tail`, precisely to preserve partial output, and the file was **0 bytes**. So the gate's failure mode under load is not "partial report, interrupted" but "no information"; a session that spends twenty minutes on a killed run learns nothing about the tree.
+
+**Readings at the two attempts, and at a third moment.**
+
+| moment | load average (1/5/15 min) | memory available | nproc | outcome |
+| --- | --- | ---: | ---: | --- |
+| first attempt | 30.22 / 27.61 / 18.49 | 4 GB | 4 | killed at 20 min 10 s |
+| second attempt started | 6.50 / 8.91 / 11.98 | 5 GB | 4 | killed at 5 min 59 s |
+| just after the second | 12.71 / 8.11 / 10.37 | 3 GB | 4 | — |
+
+`top` over RSS during the first attempt showed other projects' processes in the top four slots (`python` 2.1 GB, `python` 1.0 GB, `lean` 0.9 GB, `python` 0.6 GB), so the machine is shared with concurrent sessions and the gate is competing with them.
+
+**What this does not establish.** It is not evidence of a defect in the tree: no gate output was produced, so neither a pass nor a failure follows. It is also not an OOM finding — this project's rule that a bare `Killed` is not evidence of OOM applies, and the second attempt died with 5 GB available at start and 3 GB at the end, which does not look like exhaustion. Whether the gate would complete on an idle box was not tested, because this box was not idle at any point today.
+
+**Consequence for how a session should work.** The full gate should be treated as a CI-tier check and not attempted locally while the load average exceeds a small multiple of `nproc`. What a session can run locally to a verdict, and did run on every residue-3 card today: `qualc.authoring check` per card, `tmp/lam.sh` per card (839/839 clean), `tools/check_macros.py` per card (839/839 clean), `qualc.card_completeness` (12429 complete, 0 incomplete), `tools/sync_macros.py --check`, and `tools/extraction_detector.py`. Those cover schema, Markdown, step labels, undefined control words, metadata and macro drift, which is most of what the gate checks; they do not cover whole-corpus cross-card rules.
+
+**Uncertainty.** No output from the gate was inspected because none was produced; the conclusion that it emits nothing before finishing rests on two runs and on a 0-byte redirect file, not on reading the command's source. The load readings are point samples, not a time series, and the identities of the other sessions' processes were not established beyond the command names listed.
