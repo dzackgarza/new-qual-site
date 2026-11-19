@@ -15,6 +15,14 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Transcribed from Question 41 of the Practice Test (Chapter 9) in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR)."
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`: the statement is problem 41 of the practice test, printed
+    on PDF p. 424, and its printed words are the card's. The test carries no printed number, so the
+    locator names its opening page (p. 415) and the problem number rather than inventing a test
+    number. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.problem}
@@ -36,6 +44,7 @@ What is the smallest number $m$ that makes the statement $f(1) \leq m$ true?
 :::
 
 ::: {.solution}
+This is problem 41 of the practice test that begins on PDF p. 415 of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf` (the test is printed without a number, so its opening page and the problem number locate it); the item is on PDF p. 424, and the statement below is its wording.
 
 ::: pf
 
