@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. For the constant map D^2 -> {y} the only identification is
+    D^2 x {1} collapsed to a point, so the mapping cylinder is the unreduced cone on D^2, which is
+    the join D^2 * {y} and is homeomorphic to the closed 3-ball: the cone on a closed n-ball is a
+    closed (n+1)-ball. Checked that the base copy D^2 x {0} is untouched and that no other point is
+    identified, which is what makes it the cone rather than a quotient of it. Not checked: the
+    printed worksheet, which was not re-read in this pass.
 ---
 
 ::: {.problem}

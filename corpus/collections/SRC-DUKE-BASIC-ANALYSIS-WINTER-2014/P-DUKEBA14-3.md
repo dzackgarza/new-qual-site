@@ -19,6 +19,15 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. With |f| <= M and M >= 1, |f(x)^2 - f(y)^2| <= 2M|f(x) - f(y)|, so the
+    oscillation of f^2 on any subinterval is at most 2M times that of f, and the Darboux criterion
+    carries integrability of f to f^2. Checked that M >= 1 is available (take max(M,1)) and is not an
+    extra hypothesis, and that the criterion is applied to a bounded function, f^2 being bounded by
+    M^2. Not checked: the printed exam, which was not re-read in this pass.
 ---
 
 ::: {.problem}
