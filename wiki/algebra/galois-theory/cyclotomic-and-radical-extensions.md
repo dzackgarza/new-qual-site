@@ -11,7 +11,7 @@ topics:
 
 ## Cyclotomic extensions
 
-A cyclotomic extension is the case in which the group is read off the action on a root of unity, and since that group is abelian, every intermediate field of a cyclotomic extension is Galois over $\QQ$.
+A cyclotomic extension $\QQ(\zeta_n)/\QQ$ has Galois group $(\ZZ/n\ZZ)^{\times}$, read off from the action on $\zeta_n$; that group is abelian, so every intermediate field of a cyclotomic extension is Galois over $\QQ$.
 
 [[D-JX3YC]]
 
