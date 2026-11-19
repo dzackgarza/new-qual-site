@@ -6768,3 +6768,30 @@ The same query over another residue would give a different split; the point of t
 **Consequence.** A residue's conversion reaching zero should be reported as conversion reaching zero, with the never-reviewed count beside it. At two or three referee reads per turn, residue 3's 470 is roughly 150 turns of work, which is a work item of its own rather than an extension of the conversion stream.
 
 **Uncertainty.** Only fourteen of the 470 were read, chosen by file length and not at random, so the 0-of-14 defect rate is not an estimate of the residue's defect rate; short cards are plausibly easier to get right than long ones. The `solution-reviewed` test is a string match over the whole file, so a card could carry the string in prose without an event. Nothing here was checked against the corpus database or the gate, the gate being unrunnable on this box today (the entry above records both kills).
+
+## 2026-11-19: the provenance href scan, which the register records as crashing, runs and is clean
+
+**Object and need.** The report check `tools/backlog.py --with-queues` dies on this machine, and its
+provenance section is one of the parts that has never been obtained; the register records that
+`provenance_hrefs.py` line 163 crashed in `load_corpus_provenance`, inside `split_front_matter` and
+`load_front_matter`, without naming the file it choked on. The section is separately obtainable, and
+was obtained today.
+
+**What ran.** `qualc.provenance_hrefs.load_collection_provenance` over the whole checkout, then the
+five checks that do not need the network: `check_empty_provenance`, `check_shared_provenance_hrefs`,
+`check_markdown_provenance_hrefs`, `check_image_provenance_hrefs`,
+`check_forbidden_provenance_hrefs`. The load took 40 seconds and returned **653 collections carrying
+a `provenance:` block, with 716 hrefs, 672 of them to files and 44 to URLs**; the five checks took 31
+seconds together and returned **0 findings each**. So no collection that declares a provenance has an
+empty one, no two collections share a provenance href, every markdown and every image href resolves
+as a path, and no href is one of the forms the policy forbids. The earlier crash does not reproduce:
+whatever the loader choked on was a collection index being written by a sibling session at that
+moment, which is the same explanation the register gives for the parse fault it records.
+
+**Not run, and not claimed.** `check_dead_provenance_hrefs`, which fetches the 44 URLs, was not run:
+it is a network check on someone else's site and belongs in a pass that asks for it. Nothing here
+says anything about the *card-level* provenance sentence, the defect class the register measures
+separately for problem cards; this record is about `corpus/collections/*/index.md` only.
+
+**Repair.** This record only. **Uncertainty.** Read for this record: nothing but the two modules'
+own outputs above, by running them; the collections' `index.md` files were not read by hand.
