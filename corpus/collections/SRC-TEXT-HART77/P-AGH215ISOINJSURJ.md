@@ -119,6 +119,8 @@ If $\phi$ is injective and surjective, then $\phi(U)$ is a bijection for every $
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the equivalence of a morphism of sheaves being an isomorphism with its being both injective and surjective.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.5, PDF p. 3, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he identifies injective together with surjective with exactness of $0\to\mcf\to\mcg\to0$, which by Exercise 1.2 is exactness of every stalk sequence and hence bijectivity of every $\phi_P$; the converse builds the inverse on sections by lifting with Exercise 1.3 and gluing.
 The proof above is that argument, with the uniqueness of the lifts used explicitly so that the local inverses glue.
 Agree.
