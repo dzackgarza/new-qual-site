@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4B, printed p. 5 of the packet. The paragraph at the head of the solution now says what is
+    the packet's and what is the card's, and the packet was read in its text layer at the page named.
+    Checked: the card's steps compared with the packet's sentences, `qualc.authoring check`, and
+    `tmp/lam.sh` for the numbering and the QED. Not checked: no other card of the collection in this
+    pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 4B of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -34,6 +43,8 @@ You may give your answer as a product of powers of primes.
 :::
 
 ::: {.solution}
+
+The argument is Problem 4B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 5 of that file, transcribed: dividing row $j$ of $(j^k)_{1\le j,k\le6}$ by $j$ leaves the Vandermonde matrix $(j^{k-1})$, so the determinant is $\prod_{0\le i<j\le6}(j-i)=1^6\,2^5\,3^4\,4^3\,5^2\,6$, which the card evaluates in powers of primes. What the card adds is the step structure and the evaluation, not the argument.
 Let
 $$
 A=(j^k)_{1\le j,k\le6}.
