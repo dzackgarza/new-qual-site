@@ -53,6 +53,13 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the existing solution into Lamport steps without changing its conclusion, including its qualification: the printed claim holds for every nonconnected CW complex with no single-point component, and $S^1\sqcup\{\mathrm{pt}\}$ is a counterexample in general. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.J Exercise 1, printed p. 475. No retained solution set covers this exercise; the argument is the card's own. Checked: the componentwise computation of $\Sigma X$ as a wedge of the suspension of the based component and the unreduced suspensions of the others; the collapse $S(X_\alpha)\to\Sigma X_\alpha$ as a homotopy equivalence by Proposition 0.17; the distribution of $\Sigma$ over the wedge; and the resulting single path-component.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card carried its closing step twice, byte for byte, under the same label `conclusion`,
+    which the whole-corpus Lamport filter refuses as a duplicate step label. One copy is removed;
+    nothing else changes, and the remaining step is the one the card already had.
 ---
 
 ::: {.problem}
@@ -93,14 +100,6 @@ $\Omega\Sigma X\simeq\Omega\Sigma(\bigvee_\alpha X_\alpha)$, which is path-conne
 
 ::: pf-proof
 $\Omega$ carries the homotopy equivalence of step [](#wedge){.pf-ref} to one of loop spaces. $\Omega\Sigma X$ is path-connected because $\Sigma X$ is simply connected: $\Sigma X_\alpha$ is a suspension of a path-connected CW complex, hence simply connected by van Kampen, and a wedge of simply connected CW complexes is simply connected, so $\pi_0(\Omega\Sigma X)=\pi_1(\Sigma X)=0$. The wedge is path-connected because its components are path-connected and share the basepoint.
-:::
-:::
-
-::: {.pf-step #conclusion}
-Each path-component of $\Omega\Sigma X$ is homotopy equivalent to $\Omega\Sigma(\bigvee_\alpha X_\alpha)$.
-
-::: pf-proof
-By step [](#loops){.pf-ref} $\Omega\Sigma X$ has a single path-component, namely itself, and it is homotopy equivalent to $\Omega\Sigma(\bigvee_\alpha X_\alpha)$, which is a connected CW complex, so Theorem 4J.1 (p. 471) applies to it and its conclusion transfers to $\Omega\Sigma X$.
 :::
 :::
 
