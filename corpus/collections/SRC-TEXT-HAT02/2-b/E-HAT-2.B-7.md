@@ -301,6 +301,23 @@ audit:
     of each complementary domain is Proposition 2B.1(b), printed p. 169, and the ball property is
     the uniform-convergence argument of printed pp. 170--172, which uses nothing about the number of
     handles. Not claimed: a published analysis of the doubled block, none having been located.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, a second check on the figure reading, since it is the one judgment this card's
+    repair rests on and three independent readers of the swarm verified the rank $4^n$ without
+    reading the figure, saying so explicitly. The wording of the exercise settles it: it asks what
+    happens when "the number of handles in the basic building block ... is doubled", and the basic
+    building block of Example 2B.2 is a solid torus, which Hatcher introduces at printed p. 170 as a
+    ball with one handle attached. Doubling the number of its handles gives two, not four, and the
+    figure draws two, one at each end, each with its own pair of horns and its own dashed short
+    handle. The reading of four horns on a single handle therefore contradicts the exercise's own
+    sentence, and the rank is $2^{n+1}$. Checked again at the figure rendered at 600 dpi from PDF page
+    186 of `tmp/sources/hatcher-2002-algebraic-topology.pdf`, and against Hatcher's drawing of the
+    single handle on printed p. 171 (PDF page 180). What the three readers verified is the
+    conditional statement, that four horns per handle would give $F_{4^n}$, $4^{n+1}$ and a perfect
+    limit; that conditional is true and is not the exercise's block.
 ---
 
 ::: {.problem}
@@ -308,7 +325,7 @@ Analyze what happens when the number of handles in the basic building block for 
 :::
 
 ::: {.solution}
-The figure on printed p. 177 doubles the basic building block: it draws a ball with **two** handles, each of them shown the way Hatcher draws his one — a pair of horns hooked through one another together with a short handle, the dashed arc at that end of the ball — so that the block has two handles where Example 2B.2 starts with a solid torus. Thereafter the construction is Hatcher's word for word, one decomposition per handle: each handle is written as a pair of horns and a short handle, the short handle is deleted, and the number of handles doubles. Stage $n$ therefore carries $2^{n+1}$ handles rather than $2^n$, the free groups grow as $F_2\subset F_4\subset F_8\subset\cdots$, and the complement of the limiting sphere has the same fundamental group as the complement of the Alexander horned sphere, the doubled system being the classical one begun one stage later.
+The figure on printed p. 177 doubles the basic building block, and the wording of the exercise says what that means: the block of Example 2B.2 is a solid torus, a ball with **one** handle, and doubling the number of its handles gives a ball with **two**. The figure draws exactly that — two handles, one at each end of the ball, each of them shown the way Hatcher draws his one, a pair of horns hooked through one another together with a short handle, the dashed arc at that end. Thereafter the construction is Hatcher's word for word, one decomposition per handle: each handle is written as a pair of horns and a short handle, the short handle is deleted, and the number of handles doubles. Stage $n$ therefore carries $2^{n+1}$ handles rather than $2^n$, the free groups grow as $F_2\subset F_4\subset F_8\subset\cdots$, and the complement of the limiting sphere has the same fundamental group as the complement of the Alexander horned sphere, the doubled system being the classical one begun one stage later.
 
 ::: pf
 
