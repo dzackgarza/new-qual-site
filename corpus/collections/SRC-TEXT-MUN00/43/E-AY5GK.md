@@ -37,6 +37,21 @@ audit:
     43.2 and Exercise 17.13 (X Hausdorff iff the diagonal is closed), and the conclusion that the
     irrationals are topologically complete from the expression of the irrationals as a countable
     intersection of open sets.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Rewrote the solution's frame on 2026-11-19, leaving every argument as it was.
+    The five steps carried run-in part labels and "Proof:" lines instead of
+    claims, and the page cited no source. Each is now a labelled step (closed,
+    product, open, g-delta, irrationals) whose first paragraph is its claim, and
+    the preamble names the exercise (Section 43 Exercise 6, printed p. 270) and
+    what is transcribed and what is the card's own: parts (a) and (c) follow the
+    University of California, Riverside Mathematics 205A set, Part 3, answers to
+    Exercise 6(a) and 6(c), printed p. 5 of that set, as the event of 2026-11-11
+    records, and parts (b) and (d) are the card's own following the hints. No
+    statement, argument or citation changes.
+
 ---
 
 ::: {.exercise}
@@ -61,13 +76,13 @@ Imbed $U$ in $X \times \RR$ by setting $f(x) = x \times \phi(x)$.]
 :::
 
 ::: {.solution}
+The exercise is Munkres, *Topology* (2000), Section 43, Exercise 6, printed p. 270. Parts (a) and (c) follow the published solution in "Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, answers to Exercise 6(a) and 6(c), printed p. 5 of that set; parts (b) and (d) are the card's own, following the exercise's hints, and the last step applies (d) to $\RR\setminus\QQ=\bigcap_n(\RR\setminus\{q_n\})$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #closed}
 
-Part (a): Closed subspaces of topologically complete spaces are topologically complete.
-    *Proof:*
+A closed subspace of a topologically complete space is topologically complete.
 
 ::: pf-proof
 
@@ -117,10 +132,9 @@ Thus every Cauchy sequence in $(A, d_A)$ converges in $A$, so $(A, d_A)$ is comp
 
 :::
 
-::: pf-step
+::: {.pf-step #product}
 
-Part (b): Countable products of topologically complete spaces are topologically complete.
-    *Proof:*
+A countable product of topologically complete spaces is topologically complete in the product topology.
 
 ::: pf-proof
 
@@ -177,10 +191,9 @@ Setting $y = (y_1, y_2, \dots) \in X$, $x^{(k)} \to y$ in the product topology, 
 
 :::
 
-::: pf-step
+::: {.pf-step #open}
 
-Part (c): Open subspaces of topologically complete spaces are topologically complete.
-    *Proof:*
+An open subspace of a topologically complete space is topologically complete.
 
 ::: pf-proof
 
@@ -241,8 +254,7 @@ By part (a), $f(U)$ is complete, so $U \cong f(U)$ is topologically complete.
 
 ::: {.pf-step #s4}
 
-Part (d): $G_\delta$ subsets are topologically complete.
-    *Proof:*
+A $G_\delta$ subset of a topologically complete space is topologically complete.
 
 ::: pf-proof
 
@@ -298,10 +310,9 @@ By part (a), the closed subspace $\Delta(A) \subseteq Y$ is topologically comple
 
 :::
 
-::: pf-step
+::: {.pf-step #irrationals}
 
-Application to the irrational numbers $\RR \setminus \QQ$:
-    *Proof:*
+$\RR\setminus\QQ$ is topologically complete.
 
 ::: pf-proof
 
