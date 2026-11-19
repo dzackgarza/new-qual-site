@@ -5,6 +5,9 @@ title: Proofs of the fundamental theorem of algebra
 
 # Proofs of the fundamental theorem of algebra
 
+The statement of the theorem is the card below.
+The sections after it are proofs of it, one per tool — the argument principle, Rouché's theorem, Liouville's theorem, the open mapping theorem, and the compactness of $\CP^1$ — collected for comparison rather than for the statement they prove.
+
 [[T-6XDRA]]
 
 ## By the argument principle
