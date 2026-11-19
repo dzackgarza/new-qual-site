@@ -23,13 +23,6 @@ $$
 is an isomorphism.
 :::
 
-::: {.proof}
-Because $k$ is algebraically closed and $\dim_k M$ is finite, every $k$-linear endomorphism of $M$ has an eigenvalue: the characteristic polynomial has a root in $k$.
-Let $f\in\Endo_G(M)$ and let $\lambda$ be an eigenvalue.
-The map $f-\lambda\id_M$ is $G$-equivariant, and its kernel is a nonzero $G$-stable subspace of $M$, hence all of $M$.
-So $f = \lambda\id_M$, and $\lambda\mapsto\lambda\id_M$ is a bijection $k\to\Endo_G(M)$.
-:::
-
 ::: {.remark}
 For an irreducible representation $M$ of $G$ over an arbitrary field $k$, every nonzero $G$-equivariant endomorphism of $M$ has $G$-stable kernel $0$ and image $M$, so $\Endo_G(M)$ is a division algebra over $k$.
 :::
