@@ -32,9 +32,20 @@ audit:
       justifying each interchange. Repaired: a raw $abs{.}$ pair written with big delimiters, which
       STYLE-04 requires as the semantic macro. No defect found in the statement; no retained solution
       set covers it.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead of the
+      printed page): the statement is Problem 1 at the head of the Chapter 9 Problems, printed
+      p. 281, and its printed words are the card's. The chapter, the problem number and the page
+      are now named in the solution's opening sentence. Not checked in this pass: the argument, which
+      the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 281; the statement below is its wording.
+
 Besides the approach in Section 1.2, there are several alternate ways of dealing with the sum $\sum 1/(z+\omega)^2$, where $\omega = n + m\tau$. For example, one may sum either (a) circularly, (b) first in $n$ then in $m$, (c) or first in $m$ then in $n$.
 
 (a) Prove that if $z \notin \Lambda$, then
