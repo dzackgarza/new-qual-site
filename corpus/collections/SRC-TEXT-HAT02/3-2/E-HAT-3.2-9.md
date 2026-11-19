@@ -32,6 +32,19 @@ audit:
   date: 2026-11-07
   note: >-
     Statement matches Exercise 9 (p.229). Rechecked: Ext(H_{n-1},Z_p) = 0 and Ext(H_{n-1},Z) = 0 by freeness, so H^n(X;Z_p) = Hom(H_n,Z_p) = Hom(H_n,Z) tensor Z_p = H^n(X;Z) tensor Z_p, and the identification is multiplicative because the cochain cup product formula of Lemma 3.6 p.206 is polynomial in the values, so a coefficient ring map carries cup products to cup products. Terse proofs now cite Theorem 3.2 p.195 and the properties of Ext on p.195, and the multiplicativity argument is written out instead of alluded to. Not covered: no example showing the hypothesis is needed.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 9 of §3.2, printed p. 229, with Theorem 3.2 and the properties of
+    $\operatorname{Ext}$ on printed p. 195 and the cochain cup product formula of Lemma 3.6 on
+    printed p. 206. The mathematics is right: freeness kills both Ext terms, so
+    $H^n(X;\ZZ_p)=\operatorname{Hom}(H_n,\ZZ_p)=\operatorname{Hom}(H_n,\ZZ)\otimes\ZZ_p=H^n(X;\ZZ)\otimes\ZZ_p$,
+    the middle step because for free $F$ both sides are $\prod_B\ZZ_p$; and the identification is
+    multiplicative because the cochain cup product is polynomial in the values, so the coefficient
+    map $\ZZ\to\ZZ_p$ carries cup products to cup products. Rewritten from seven steps, of which
+    five were proved by naming others and one closed a `pf-qed` by label, into two steps that carry
+    the two halves. Not claimed: an example showing the hypothesis is needed, and no certificate.
 ---
 
 ::: {.problem}
@@ -39,16 +52,21 @@ Show that if $H_n(X; \ZZ)$ is free for each $n$, then $H^*(X; \ZZ_p)$ and $H^*(X
 :::
 
 ::: {.solution}
+Assume $H_n(X;\ZZ)$ is free for every $n$; the exercise is Exercise 9 of §3.2, printed p.~229. Coefficients $\ZZ_p$ are written for a prime $p$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-By the universal coefficient theorem, $H^n(X; \ZZ_p) \cong \operatorname{Hom}(H_n(X), \ZZ_p) \oplus \operatorname{Ext}(H_{n-1}(X), \ZZ_p)$.
+$H^n(X;\ZZ_p)\cong H^n(X;\ZZ)\otimes\ZZ_p$ for every $n$.
 
 ::: pf-proof
 
-Theorem 3.2 (p.195), applied to the singular chain complex, whose terms are free abelian.
+The universal coefficient sequence of Theorem 3.2 (printed p.~195) is
+$$
+0\to\operatorname{Ext}(H_{n-1}(X),\ZZ_p)\to H^n(X;\ZZ_p)\to\operatorname{Hom}(H_n(X),\ZZ_p)\to0,
+$$
+and $\operatorname{Ext}$ vanishes because $H_{n-1}(X)$ is free, by the properties of $\operatorname{Ext}$ listed on the same page. For a free $F$ with basis $B$ one has $\operatorname{Hom}(F,\ZZ_p)=\prod_B\ZZ_p=(\prod_B\ZZ)\otimes\ZZ_p=\operatorname{Hom}(F,\ZZ)\otimes\ZZ_p$, the middle equality because tensoring the exact sequence $0\to\ZZ\to\ZZ\to\ZZ_p\to0$ with the product gives $\prod_B\ZZ_p$. Applying this to $F=H_n(X)$ and using $H^n(X;\ZZ)\cong\operatorname{Hom}(H_n(X),\ZZ)$, again because the Ext term vanishes, gives the claim.
 
 :::
 
@@ -56,82 +74,15 @@ Theorem 3.2 (p.195), applied to the singular chain complex, whose terms are free
 
 ::: {.pf-step #s2}
 
-Since $H_{n-1}(X)$ is free, $\operatorname{Ext}(H_{n-1}(X), \ZZ_p) = 0$.
+The isomorphism is multiplicative, so it is an isomorphism of graded rings.
 
 ::: pf-proof
 
-The second of the three properties of Ext listed on p.195: $\operatorname{Ext}(H,G)=0$ if $H$ is free.
+The coefficient homomorphism $\ZZ\to\ZZ_p$ induces a ring map $H^*(X;\ZZ)\to H^*(X;\ZZ_p)$: on cochains the cup product of Lemma 3.6 (printed p.~206) is a polynomial expression in the values of the two cochains, so reducing values along a ring homomorphism carries $\varphi\smile\psi$ to the cup product of the reduced cochains. Composing with the quotient map $H^*(X;\ZZ)\to H^*(X;\ZZ)\otimes\ZZ_p$ gives a ring map $H^*(X;\ZZ)\otimes\ZZ_p\to H^*(X;\ZZ_p)$, which is the isomorphism of the first step in every degree and hence an isomorphism of graded rings.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
-
-Hence $H^n(X; \ZZ_p) \cong \operatorname{Hom}(H_n(X), \ZZ_p)$.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
-
 :::
-
-:::
-
-::: {.pf-step #s4}
-
-Since $H_n(X)$ is free, $\operatorname{Hom}(H_n(X), \ZZ_p) \cong \operatorname{Hom}(H_n(X), \ZZ) \otimes \ZZ_p \cong H^n(X; \ZZ) \otimes \ZZ_p$.
-
-::: pf-proof
-
-For a free abelian $F$ with basis $B$, $\operatorname{Hom}(F,\ZZ_p)=\prod_B\ZZ_p=\operatorname{Hom}(F,\ZZ)\otimes\ZZ_p$; and $H^n(X;\ZZ)\cong\operatorname{Hom}(H_n(X),\ZZ)$ by Theorem 3.2 (p.195), again because $\operatorname{Ext}(H_{n-1},\ZZ)=0$.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Hence $H^n(X; \ZZ_p) \cong H^n(X; \ZZ) \otimes \ZZ_p$ for each $n$.
-
-::: pf-proof
-
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-This isomorphism is compatible with the cup product (it is induced by the natural map $\ZZ \to \ZZ_p$ on coefficients, which is a ring homomorphism), so it is an isomorphism of rings.
-
-::: pf-proof
-
-The cochain formula of Lemma 3.6 (p.206) is polynomial in the two cochain values, so a ring homomorphism $R\to R'$ carries $\varphi\smile\psi$ to the cup product of the reduced cochains and gives a ring map $H^*(X;R)\to H^*(X;R')$; in particular $\ZZ\to\ZZ_p$ makes $H^*(X;\ZZ_p)$ a $\ZZ_p$-algebra. The isomorphism above is exactly this map followed by the identification with $H^*(X;\ZZ)\otimes\ZZ_p$.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-Hence $H^*(X; \ZZ_p) \cong H^*(X; \ZZ) \otimes \ZZ_p$ as rings.
-
-::: pf-proof
-
-Steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s7){.pf-ref}.
-
-:::
-
-:::
-
 :::
