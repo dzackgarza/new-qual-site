@@ -26,6 +26,16 @@ audit:
     complement again nondegenerate; characteristic $\ne2$ is what makes $\omega(v,v)=0$.
     (b) an isotropic $W$ satisfies $W\subseteq W^\perp$, so $\dim W\le\dim W^\perp=\dim V-\dim W$.
     Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Re-read the printed exercise, UW Algebra Preliminary Examination 2007, problem 7, printed
+    p. 2: the card's statement is verbatim. The printed exercise omits finite-dimensionality,
+    without which part (a) is false: the orthogonal direct sum of countably many hyperbolic
+    planes carries a nondegenerate skew form and has dimension $\aleph_0$, not $2n$. The
+    solution now names that hypothesis; the induction, the dimension formula and part (b)
+    were read step by step and need no other change.
 ---
 
 ::: {.problem}
@@ -42,6 +52,8 @@ Show that the dimension of an isotropic subspace is at most $\frac12\dim V$.
 ::: {.solution}
 
 Let $\omega$ be a nondegenerate skew-symmetric form on a $k$-vector space $V$ with $\operatorname{char}k\ne2$.
+
+The exercise as printed does not assume $V$ finite dimensional, and its conclusion needs that hypothesis. On the orthogonal direct sum of countably many hyperbolic planes with basis $e_i,f_i$, $i\ge1$, the form is nondegenerate, yet $\dim V=\aleph_0$ is not of the form $2n$, so a basis of the printed shape does not exist. The argument below proves the finite-dimensional case, which is the case the printed parenthetical asserts.
 
 ::: pf
 
