@@ -76,7 +76,7 @@ Both are monic, so they are equal.
 :::
 
 ::: {.remark}
-The sheet prints problem 1(a) with no nonvanishing condition on $L$, and with $L=\{0\}$ the printed hypothesis holds for every $\alpha\in F$, so the printed statement is false.
+The sheet is `assets/attachments/fields-homework-1.pdf`, and on its printed p. 1 problem 1(a) puts no nonvanishing condition on $L$: with $L=\{0\}$ the printed hypothesis holds for every $\alpha\in F$, so the printed statement is false.
 The statement above adds $L\ne0$.
 The refutation of the printed form and both directions of the corrected form are checked in Lean in <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FieldHomework1.lean>.
 :::
