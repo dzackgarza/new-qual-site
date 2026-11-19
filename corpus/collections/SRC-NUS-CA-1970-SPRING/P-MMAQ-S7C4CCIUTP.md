@@ -38,6 +38,8 @@ Use Green theorem or otherwise to prove the Cauchy theorem.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: $f\,dz$ is split into its real and imaginary line integrals and Green's theorem is applied to each, with the Cauchy--Riemann equations making both double integrals vanish, and no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 ### Statement of Cauchy's theorem for $C^1$ functions
 
 Let $\Omega \subset \CC$ be a simply connected domain.
