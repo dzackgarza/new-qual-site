@@ -45,24 +45,22 @@ The one-sided Laplace transform $\mcl(f)(p)=\int_0^\infty e^{-pt}f(t)\,dt$ of st
 
 The integral defines $\Gamma$ on the right half-plane $\Re z>0$, and the functional equation $\Gamma(z+1) = z\Gamma(z)$, written as $\Gamma(z) = \Gamma(z+n)/\qty{z(z+1)\cdots(z+n-1)}$, continues $\Gamma$ meromorphically to $\Re z > -n$ for each $n$ and locates its poles.
 
-::: {.remark title="Properties of $\Gamma$"}
-$\Gamma$ has simple poles at $z=0,-1,-2,\ldots$ with residues $\Res_{z=-m} \Gamma(z) = (-1)^m/m!$, and no other poles.
+::: {.proposition title="Properties of the Gamma function"}
+The function $\Gamma$ has simple poles at $z=0,-1,-2,\ldots$ with residues $\Res_{z=-m}\Gamma(z) = (-1)^m/m!$, and no other poles.
 It has the product expansion
 $$
-\Gamma(z) = {1 \over ze^{\gamma z} \prod_{n=1}^\infty \qty{1 + {z\over n}}e^{-z/n} },
+\Gamma(z) = {1\over ze^{\gamma z}\prod_{n=1}^\infty\qty{1+{z\over n}}e^{-z/n}},
 \qquad
-\gamma \coloneqq \lim_{N\to\infty } \qty{\sum_{n=1}^N {1\over n} - \log(N)},
+\gamma\coloneqq\lim_{N\to\infty}\qty{\sum_{n=1}^N{1\over n}-\log(N)},
 $$
 and satisfies the reflection formula
 $$
-\Gamma(z) \Gamma(1-z) = {\pi \over \sin(\pi z)},
+\Gamma(z)\Gamma(1-z) = {\pi\over\sin(\pi z)},
 $$
-which together with the product expansion gives a product expansion of $\sin(\pi z)$.
+which together with the product expansion gives a product expansion of $\sin(\pi z)$ [@SS03, ch. 6, sec. 1].
 In terms of the Laplace transform $\mcl$, $\mcl(t^{z-1})(1) = \Gamma(z)$ for $\Re z>0$, and $\mcl(t^n)(1) = \Gamma(n+1) = n!$.
 
-By the reflection formula, $1/\Gamma(z)=\Gamma(1-z)\sin(\pi z)/\pi$ is entire: the simple poles of $\Gamma(1-z)$ at $z=1,2,3,\ldots$ cancel the simple zeros of $\sin(\pi z)$ there.
-So $1/\Gamma$ is entire, and its zeros are exactly the simple zeros at $z=0,-1,-2,\ldots$.
-
+By the reflection formula, $1/\Gamma(z) = \Gamma(1-z)\sin(\pi z)/\pi$ is entire, and its zeros are exactly the simple zeros at $z=0,-1,-2,\ldots$.
 :::
 
 ## The Beta function
@@ -116,9 +114,6 @@ Let $z_j\in\CC$ with $z_j\neq -1$ for every $j$, and let $\Log$ be the principal
 [[T-IEJFA]]
 
 [[T-2WJ4U]]
-
-The Weierstrass factorization theorem gives an entire function with prescribed zeros as a convergent product of elementary factors, unique up to multiplication by $e^{g}$ with $g$ entire.
-For an entire function of finite order $\rho$, the Hadamard factorization theorem uses elementary factors of degree at most $\lfloor\rho\rfloor$ and restricts $g$ to a polynomial of degree at most $\rho$.
 
 [[E-DR5LY]]
 
