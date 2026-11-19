@@ -16,15 +16,53 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card had misread the printed diagram. Sheet 7, problem 11 of the
+    retained UCSD 290 problem sheets reads "(forward arrow) H_{n+1}(X)
+    (arrow) H_n(A cap B) (arrow) H_n(A) + H_n(B) (arrow) H_n(X) (arrow)" over
+    the corresponding row of Y, which is the Mayer-Vietoris segment shifted by
+    one and is correct. The card's statement replaced the leading H_{n+1}(X) by
+    H_n(X) and the trailing H_n(X) by H_{n-1}(X), and its first step then
+    declared the source's diagram wrong and "corrected" it. The statement now
+    reproduces the printed diagram and that step is gone; the remaining steps
+    are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Statement re-read in the extraction of sheet 7 of the retained problem
+    sheets (assets/attachments/UCSD_290_F14_sheet7_extracted.md, problem 11),
+    with the hint to prove the analogue for H_*(A+B) and H_*(C+D) first, which
+    is step s5 of the card.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    With the statement restored, the proof is correct. The singular chains on
+    A+B form a subcomplex containing those on A and on B, and the sequence with
+    the two inclusions and their difference followed by the sum is exact: the
+    kernel consists of pairs (alpha, -alpha), and a chain supported in both A
+    and B lies in A cap B. The hypotheses f(A) in C and f(B) in D put the three
+    subcomplexes of Y in place, and the chain-level squares commute by
+    naturality of the inclusions. Homology of a short exact sequence of chain
+    complexes is natural, connecting homomorphisms included, which gives the
+    ladder for S_*(A+B) and S_*(C+D). The small-simplices theorem identifies
+    the homology of those subcomplexes with the homology of X and Y through
+    barycentric subdivision, naturally in f, and substituting turns the ladder
+    into the diagram of the statement. Nothing beyond the statement and the
+    removed step was changed.
 ---
 
 ::: {.problem}
 Show that the Mayer-Vietoris sequence is natural, i.e. If $X\mapsvia{f} Y$ where $f(A) \subset C$ and $f(B) \subset D$, then this commutes:
 $$
 \begin{CD}
-H_n(X) @>>> H_n(A\intersect B) @>>> H_n(A) \oplus H_n(B) @>>> H_{n-1}(X)\\
+H_{n+1}(X) @>>> H_n(A\intersect B) @>>> H_n(A) \oplus H_n(B) @>>> H_n(X)\\
 @VVf_*V @VVf_*V  @VVf_*V @VVf_*V\\
-H_n(Y) @>>> H_n(C\intersect D) @>>> H_n(C) \oplus H_n(D) @>>> H_{n-1}(Y)\\
+H_{n+1}(Y) @>>> H_n(C\intersect D) @>>> H_n(C) \oplus H_n(D) @>>> H_n(Y)\\
 \end{CD}
 $$
 :::
@@ -32,27 +70,6 @@ $$
 ::: {.solution}
 
 ::: pf
-
-::: pf-step
-
-The diagram printed in the retained source has the Mayer--Vietoris groups in the wrong order.
-
-::: pf-proof
-
-The source displays
-$$
-H_n(X)\longrightarrow H_n(A\cap B)\longrightarrow H_n(A)\oplus H_n(B)\longrightarrow H_{n-1}(X),
-$$
-which is not a segment of the Mayer--Vietoris long exact sequence. The correct segment is
-$$
-H_n(A\cap B)\xrightarrow{(i_*,-j_*)}H_n(A)\oplus H_n(B)
-\xrightarrow{k_*+\ell_*}H_n(X)\xrightarrow{\partial}H_{n-1}(A\cap B).
-$$
-Thus the intended assertion is the naturality of this correct sequence.
-
-:::
-
-:::
 
 ::: pf-step
 
@@ -126,7 +143,7 @@ This is the small-simplices theorem for excisive covers. Barycentric subdivision
 
 ::: pf-step
 
-Under the identifications in step [](#s5){.pf-ref}, the ladder in step [](#s4){.pf-ref} is exactly the Mayer--Vietoris naturality ladder. Thus the intended Mayer--Vietoris sequence is natural.
+Under the identifications in step [](#s5){.pf-ref}, the ladder in step [](#s4){.pf-ref} is exactly the Mayer--Vietoris naturality ladder, so every square in the diagram of the statement commutes.
 
 ::: pf-proof
 
