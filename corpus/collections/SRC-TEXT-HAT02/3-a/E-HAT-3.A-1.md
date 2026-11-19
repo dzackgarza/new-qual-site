@@ -177,9 +177,20 @@ audit:
     batch, the text versions in `tmp/sources` having been the ones consulted; and no certificate of
     the statement in Lean, which #134 records as open for this card.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 276 carries the running head 267, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.A of Hatcher, *Algebraic Topology* (2002), printed p. 267, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely generated, so the Euler characteristic $\chi(X) = \sum_n (-1)^n \operatorname{rank} H_n(X; \ZZ)$ is defined, then for any coefficient field $F$ we have $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$.
 :::
 
