@@ -42,13 +42,11 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 
 [[PR-D3CDJ]]
 
-::: {.remark title="Sum of residues"}
 If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
 $$
-\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0
-.$$
-
-:::
+\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0,
+$$
+which is [[T-HRPNO|the residue theorem]] applied to a circle containing every $z_j$: its integral is $2\pi i\sum_j\Res_{z=z_j}f$ and also $-2\pi i\Res_{z=\infty}f$.
 
 ## Exercises
 

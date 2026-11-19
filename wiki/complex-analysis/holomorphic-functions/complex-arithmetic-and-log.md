@@ -68,7 +68,7 @@ For the principal branch:
 - $\log(z_-) \to \ln\abs x - i\pi$.
 
 So no value at $z$ makes $\log$ continuous across the negative real axis.
-The point $z=0$ is a \dfn{branch point}: $\log$ has no continuous branch on any punctured neighborhood of the origin, whatever cut is chosen.
+Removing the cut fixes the discontinuity, and the point $z=0$ remains: it is a [[D-9KMTV|branch point]], since $\log$ has no continuous branch on any punctured neighborhood of the origin, whatever cut is chosen.
 
 :::
 
