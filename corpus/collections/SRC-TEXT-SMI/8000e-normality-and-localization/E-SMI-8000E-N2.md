@@ -31,6 +31,13 @@ audit:
     the card states the proper-containment reading and says so. Correct under that
     reading: a nonzero a in P has an irreducible factor p in P, (p) is a nonzero
     prime contained in P, so (p) = P. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 6, Exercise 2. For $P\ne0$
+    an irreducible factor $p$ of a nonzero element of $P$ lies in $P$; $(p)$ is a nonzero
+    prime contained in $P$, so by the hypothesis $(p)=P$. $P=0$ is principal. No defect.
 ---
 
 ::: {.exercise}
