@@ -407,6 +407,27 @@ audit:
     Proposition 3, printed p. 279) and, for m_N = 1, is the whole plane exactly
     when the fixed system L(d;sum m_i P_i) is superabundant; m_N >= 2 was left
     open there. Part (c) is not proved on this card and no step claims it is.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165: one rendered sentence contradicted the rest of the card. The
+    last sentence of step dense-general-position-extension read "This is
+    exactly the definition of general position, proving (c)", while the head of
+    the solution, step bad-locus-proper-closed and the qed all say that (c) is
+    not proved on this card, its three steps carrying it only on the properness
+    of the bad locus, which step bad-locus-proper-closed asserts and does not
+    derive. The sentence now says what the step proves: every point of V
+    satisfies (c) given that properness, and without it V can be empty and (c)
+    is not proved. No step, reference, statement or source claim changes, and
+    the events of 2026-11-19 that made the head, the qed and step part-c-open
+    say (c) is open stand. Checked in this pass: the printed exercise,
+    Hartshorne V.4.15 on printed p. 409 (PDF p. 424), and the three part-(c)
+    steps against it; and Nagata, Proposition 12 on printed p. 293 with
+    Theorem 4a on printed pp. 283--284, read at those folios of
+    tmp/sources/nagata-1960-rational-surfaces-ii.pdf, which the parts (d) and
+    (e) steps cite. Not done: the proof of that properness, which is the open
+    item of issue #157 and is not claimed here.
 ---
 
 ::: {.problem}
@@ -542,7 +563,7 @@ Also exclude the finitely many original lines through pairs of the fixed points 
 $$
 V=\PP^2\setminus B.
 $$
-Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word. This is exactly the definition of general position, proving (c).
+Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word, which is the definition of general position. Every point of $V$ therefore satisfies (c) --- given that each of the countably many bad sets is proper, which is what step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive; without that properness the intersection $V$ can be empty and part (c) is not proved. Part (c) is therefore not proved on this card.
 :::
 
 :::
