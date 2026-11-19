@@ -37,6 +37,8 @@ Use Cauchy's theorem to prove the argument principle.
 :::
 
 ::: {.solution}
+
+The argument is the card's own: it computes the residue of $f'/f$ at a zero and at a pole, deforms $\gamma$ to the small circles around them and applies Cauchy's theorem on the region between, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 The argument principle: if $f$ is meromorphic and not identically zero in a simply connected domain $\Omega$, and $\gamma$ is a positively oriented simple closed contour in $\Omega$ passing through no zeros or poles of $f$, then: $$\frac{1}{2\pi i} \oint_\gamma \frac{f'(z)}{f(z)} \, dz = Z_f - P_f,$$ where $Z_f$ and $P_f$ are the total number of zeros and poles of $f$ inside $\gamma$, counted with multiplicity.
 
 * * *
