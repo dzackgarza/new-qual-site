@@ -38,6 +38,16 @@ audit:
     well defines sgn; multiplicativity of the action gives the homomorphism
     property; surjectivity from a transposition; and the kernel is by definition
     the even products. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, problem 5, continuing on
+    the next page, with the restored hypothesis $n\ge2$. A transposition negates the single
+    factor $X_a-X_b$ and pairs every other factor with the pair's product unchanged, so
+    $\Delta\mapsto-\Delta$; transpositions generate $S_n$, so $m(\Delta)=\pm\Delta$;
+    multiplicativity gives the homomorphism; $(12)$ gives surjectivity; and the kernel is
+    exactly the even products. No defect.
 ---
 
 ::: {.exercise}
