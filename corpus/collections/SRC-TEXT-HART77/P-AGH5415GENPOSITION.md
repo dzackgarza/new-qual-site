@@ -487,6 +487,26 @@ audit:
     proof of the properness of the bad locus, which stays open under issue
     #157, and no source outside those already on the card was searched for
     part (c).
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #165, the item the last report left open: a search outside the
+    retained sets for a published proof of part (c) of V.4.15, printed p. 409.
+    Searched were Ceramic for the exercise's own wording and for "general
+    position" with Cremona and quadratic transformations, and Linkup for the
+    exercise by number and parts; the hits were the Egbert set already held in
+    tmp/sources (its V.4.15 entry is the one read at PDF pp. 294--296, which
+    proves (a) by the m(m+3)/2 count and lists (d) without proving (c)),
+    a dokumen.pub page titled "Algebraic Geometry by Robin Hartshorne Full
+    Solutions" which returns HTTP 502 and so was not read, two Scribd
+    compilations whose text is not served to a reader, and the published book.
+    No complete published proof of (c) was located, so part (c) stays open on
+    the properness of the bad locus exactly as the head, step
+    bad-locus-proper-closed, step part-c-open and the qed say, and nothing on
+    the card changes. Not done: the Scribd compilations and the dokumen.pub
+    page were not read, and no library or print source was consulted.
+
 ---
 
 ::: {.problem}
