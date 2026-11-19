@@ -57,6 +57,12 @@ $$
 ::: {.solution}
 **The defect in the printed display, and the statement that replaces it.** Everything below is proved; nothing is asserted by editing a formula.
 
+::: pf
+
+::: {.pf-step #printed}
+The printed display cannot hold as printed: attaching the series $S$ to $\operatorname{Ai}(-x)$ with $x$ as its variable gives the wrong value at $x=1$.
+
+::: pf-proof
 *(a) The printed series, read at positive arguments, is $\operatorname{Ai}(x)$.* Evaluating
 $$
 S(x)=\frac{1}{\pi}\sum_{n=0}^{\infty}\frac{x^n}{n!}\,\sin\Bigl(\frac{2\pi(n+1)}{3}\Bigr)3^{n/3-2/3}\Gamma\Bigl(\frac n3+\frac13\Bigr)
@@ -73,7 +79,14 @@ $$
 \operatorname{Ai}(-x)=\frac1\pi\sum_{n=0}^{\infty}\frac{(-x)^n}{n!}\sin\Bigl(\frac{2\pi(n+1)}{3}\Bigr)3^{n/3-2/3}\Gamma\Bigl(\frac n3+\frac13\Bigr)\quad(x>0). \qquad(\star)
 $$
 Statement $(\star)$ is proved in Theorem A; with it, part (a) becomes the identity "the Bessel expression of (a) equals $S(-x)$", verified in Step 2 by comparing coefficients. No step below uses an unproved normalisation.
+:::
 
+:::
+
+::: {.pf-step #theorema}
+The series $S$ defines an entire function equal to $\operatorname{Ai}$, so the corrected display $(\star)$ is $\operatorname{Ai}(z)=S(z)$ and the mislabelling is in the argument of the printed statement, not in a coefficient.
+
+::: pf-proof
 **Theorem A.** The series $S$ defines an entire function, and $S(z)=\operatorname{Ai}(z)$ for all $z\in\CC$.
 
 *Proof.* (A1) *$S$ is entire.* All summands with $n\equiv2\ (3)$ vanish. For $m\ge0$ (empty products being $1$) the identities $\prod_{k=0}^{m-1}(k+c)=\Gamma(m+c)/\Gamma(c)$ and $\Gamma(m+\tfrac43)=(m+\tfrac13)\Gamma(m+\tfrac13)$ give
@@ -111,7 +124,14 @@ $$
 By (A1)–(A5), $S$ and $\operatorname{Ai}$ are entire solutions of $y''=zy$ with the same initial values, hence $S=\operatorname{Ai}$. $\square$
 
 *Consequence.* For $x>0$, $\operatorname{Ai}(-x)=S(-x)$, which is the series in $(\star)$; and the numerical witnesses of the first paragraph are upgraded to a proof.
+:::
 
+:::
+
+::: {.pf-step #parta}
+Part (a): for $x>0$, $\operatorname{Ai}(-x)=\frac{x^{1/2}}{3}\bigl[J_{1/3}(\tfrac23x^{3/2})+J_{-1/3}(\tfrac23x^{3/2})\bigr]$.
+
+::: pf-proof
 **(a) Verification of the identity.**
 
 *Step 1: the two Bessel series at $y=\frac23x^{3/2}$.* Fix $x>0$ and $y=\frac23x^{3/2}$, so $\frac y2=\frac{x^{3/2}}{3}$ and $\frac{y^2}{4}=\frac{x^3}{9}$. For $\nu=\pm\frac13$ and $m\ge0$, $\Gamma(\nu+m+1)=(\nu+m)(\nu+m-1)\cdots(\nu+1)\Gamma(\nu+1)\neq0$, so the ratio of the moduli of consecutive summands of the Bessel series is $\frac{y^2/4}{(m+1)(\nu+m+1)}\to0$: absolute convergence for every $y$, termwise rearrangement allowed. Hence
@@ -151,7 +171,14 @@ $$
 \frac{x^{1/2}}{3}\Bigl[J_{1/3}\Bigl(\frac23x^{3/2}\Bigr)+J_{-1/3}\Bigl(\frac23x^{3/2}\Bigr)\Bigr]=S(-x)=\operatorname{Ai}(-x)\qquad(x>0),
 $$
 which is (a).
+:::
 
+:::
+
+::: {.pf-step #partb}
+Part (b): $\operatorname{Ai}$ extends to an entire function of order exactly $3/2$.
+
+::: pf-proof
 **(b) $\operatorname{Ai}$ extends to an entire function of order $3/2$.** By Theorem A, $\operatorname{Ai}=S$ is entire; it remains to compute the order of growth in the sense of Chapter 5, §2 ($\abs{f(z)}\le Ae^{B\abs z^\rho}$ for all $z$, the order being the infimum of such $\rho$).
 
 *Step 3: the size of the coefficients.* The only input is the comparison of sums with integrals: for a nondecreasing $f\ge0$ on $[0,\infty)$ and integers $0\le M_1<M_2$,
@@ -203,6 +230,21 @@ $$
 \qquad\text{since } \tfrac1\rho-\tfrac23>0,
 $$
 a contradiction. Hence the order of growth of $\operatorname{Ai}$ is exactly $3/2$.
+:::
+
+:::
+
+::: {.pf-step}
+Both parts hold, with the printed display corrected as $(\star)$.
+
+::: pf-proof
+Part (a) is step [](#parta){.pf-ref} and part (b) is step [](#partb){.pf-ref}; the correction of the display is steps [](#printed){.pf-ref} and [](#theorema){.pf-ref}.
+:::
+
+:::
+
+:::
 
 *Remark.* The numerical values of the first paragraph and the identity of part (a) were rechecked independently to $40$--$50$ digits (mpmath): $S(x)=\operatorname{Ai}(x)$ at $x=0.5,1,2,3$; $S(-x)=\operatorname{Ai}(-x)$ at $x=0.5,1,2,3,5,12$; the relation $(n+2)(n+3)a_{n+3}=a_n$ for $n\le40$; and the asymptotic (5) for $m\le2\cdot10^4$. These checks are not part of the proof.
+
 :::
