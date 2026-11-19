@@ -31,6 +31,14 @@ audit:
     both directions: the derived series is an abelian normal tower when it reaches
     1; and if an abelian tower exists, H_i/H_{i+1} abelian gives H_i' ≤ H_{i+1}, so
     inductively G^{(i)} ≤ H_i and the series reaches 1. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 9, problem 10, with the sheet's
+    definition of solvable. If $G^{(n)}=1$, the derived series is an abelian subnormal tower;
+    conversely an abelian tower has $H_i'\le H_{i+1}$, so $G^{(i)}\le H_i$ by induction and
+    $G^{(r)}=1$. No defect.
 ---
 
 ::: {.exercise}
