@@ -24,56 +24,7 @@ $\Omega$ simply connected: a biholomorphism is a homeomorphism, and $\DD$ is sim
 
 :::
 
-::: {.proof title="Sketch"}
-The proof maximizes $\abs{f'(z_0)}$ over injective holomorphic maps $f\colon\Omega\to\DD$ with $f(z_0)=0$ and shows that a maximizer is surjective.
-
-- Fix $z_0\in \Omega$ and set $\mathcal F = \theset{f\in \Hol(\Omega, \DD) \st f(z_0) = 0,\ f \text{ injective}}$.
-
-- $\mathcal F$ is nonempty.
-  Choose $a\in\CC\sm\Omega$.
-  Since $z-a$ does not vanish on the simply connected set $\Omega$, it has a holomorphic square root $g$ on $\Omega$, and $g$ is injective.
-  By the open mapping theorem $g(\Omega)$ contains a disc $D_r(g(z_0))$, and $g(\Omega)$ is disjoint from $D_r(-g(z_0))$: if $g(z)\in D_r(-g(z_0))$, then $-g(z) = g(z')$ for some $z'\in\Omega$, so $z = z'$ after squaring and $g(z) = 0$, which contradicts $a\notin\Omega$.
-  Then $z\mapsto (r/2)/(g(z)+g(z_0))$ is injective and maps $\Omega$ into $\DD$, and composing with the Blaschke factor that sends its value at $z_0$ to $0$ gives an element of $\mathcal F$.
-
-- For $w\in\DD$, the automorphisms $h_w$ of $\DD$ satisfy
-$$
-\begin{aligned}
-h_w(z) &\coloneqq {z-w \over 1-\bar{w} z} \in \Hol(\DD) \\
-h'_w(0) &= 1 - \abs{w}^2 \\
-h'_w(w) &= {1\over 1 - \abs{w}^2}
-\end{aligned}.$$
-
-- A non-surjective $f\in\mathcal F$ is not a maximizer.
-  Let $w\in\DD\sm f(\Omega)$; then $w\neq 0$ and $h_w\circ f$ is injective and nonvanishing on $\Omega$, with value $-w$ at $z_0$.
-  Let $s$ be a holomorphic square root of $h_w\circ f$, which is injective, and $F\coloneqq h_{s(z_0)}\circ s\in\mathcal F$.
-  Then $\abs{s(z_0)}^2 = \abs w$ and
-  $$
-  \abs{F'(z_0)} = \frac{\abs{s'(z_0)}}{1-\abs w} = \frac{(1-\abs w^2)\abs{f'(z_0)}}{2\sqrt{\abs w}\,(1-\abs w)} = \frac{1+\abs w}{2\sqrt{\abs w}}\abs{f'(z_0)} > \abs{f'(z_0)}
-  .$$
-
-- The family is bounded by $1$, hence normal by Montel's theorem.
-
-- Set $m\coloneqq \sup_{f\in \mathcal F} \abs{f'(z_0)}$.
-  Then $m>0$ because injective holomorphic maps have nonvanishing derivative, and $m<\infty$ because, for $\overline{D_R(z_0)}\subseteq\Omega$, the Cauchy estimate gives
-$$
-\abs{f'(z_0)} \leq \max_{\abs{z-z_0} = R} { \abs{f(z)} \over R} \leq {1\over R}
-.$$
-
-- Take $\theset{f_k}\subseteq\mathcal F$ with $\abs{f_k'(z_0)} \to m$, and use Montel to extract a locally uniformly convergent subsequence with limit $h$.
-
-- $h\in\mathcal F$: $h$ is holomorphic with $h(z_0)=0$ and $\abs{h'(z_0)} = m>0$, so it is nonconstant, maps into $\DD$ by the maximum modulus principle, and is injective by Hurwitz's theorem as a locally uniform limit of injective maps.
-
-- $h$ is surjective, since a non-surjective element of $\mathcal F$ is not a maximizer.
-  Multiplying $h$ by $\overline{h'(z_0)}/\abs{h'(z_0)}$ gives a biholomorphism $F\colon\Omega\to\DD$ with $F(z_0)=0$ and $F'(z_0)>0$.
-
-:::
-
-::: {.proof title="Uniqueness"}
-Let $F_1, F_2\colon\Omega\to\DD$ be biholomorphisms with $F_j(z_0)=0$ and $F_j'(z_0)>0$.
-Then $G\coloneqq F_1\circ\inverseof{F_2}$ is an automorphism of $\DD$ with $G(0)=0$, so $G(z)=e^{i\theta}z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]].
-By the chain rule, $e^{i\theta} = G'(0) = F_1'(z_0)/F_2'(z_0) > 0$, so $G$ is the identity and $F_1=F_2$.
-
-:::
+The proof maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $\Omega\to\DD$ carrying $z_0$ to $0$, and shows a maximizer is surjective [@SS03, Theorem 3.1 (p. 224)].
 
 ::: {.remark title="Ingredients of the proof"}
 [[complex-analysis/conformal-maps/normal-families-and-montel|Montel's theorem]] gives a convergent maximizing subsequence, [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] gives injectivity of the limit, [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|the Cauchy estimate]] gives $m<\infty$, and square roots on simply connected sets together with [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]] give nonemptiness of $\mathcal F$ and the derivative increase.
