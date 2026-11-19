@@ -20,7 +20,7 @@ review: draft
 
 ::: {.theorem ref="CauchyIntegral"}
 Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $z_0\in\Omega$ and $R>0$ satisfy $\overline{\DD_R(z_0)}\subseteq\Omega$.
-Let $\gamma\coloneqq\partial \DD_R(z_0)$, oriented counterclockwise.
+Let $\gamma\coloneqq\bd\DD_R(z_0)$, oriented counterclockwise.
 Then for every $z\in \DD_R(z_0)$ and every $n\geq0$,
 $$
 f^{(n)}(z)=\frac{n!}{2\pi i}\int_\gamma\frac{f(\xi)}{(\xi-z)^{n+1}}\dxi,
