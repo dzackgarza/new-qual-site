@@ -13,9 +13,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
     - A nonempty subset $H\subseteq G$ with $x\inverseof{y} \in H$ for all $x,y\in H$ is a subgroup
 
-  - Cosets
-
-    - $xH \coloneqq \theset{xh\st h\in H}$, $G/H \coloneqq \theset{xH \st x\in G}$, and the left cosets partition $G$
+  - Cosets: the index [[D-VJGH5]], and the partition of $G$ by the left cosets [[PR-VUKHO]]
 
   - The index of a subgroup
 
@@ -89,7 +87,7 @@ For everything that follows, assume $G$ is a finite group.
 
 - $\size G$ denotes the order of $G$.
 
-- $e$ or $e_G$ denotes the identity element of $G$.
+- $e$ denotes the identity element of $G$.
 
 - The group operation is written multiplicatively.
 
