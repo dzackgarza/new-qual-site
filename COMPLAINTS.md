@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the two provenance cards this date left unrepaired are repaired, one of them on the retained packet's own page
+
+**Object and need.** The earlier record of this date named two cards "with the defect and not repaired here", asking that their solution sections be read "to decide whether the setup belongs in an opening paragraph or in a step": `P-3MDGM` (`SRC-PRELIM-ART-INTEGRAL-PRACTICE`) and `P-BKF10-3A` (`SRC-BERKELEY-PRELIM-FALL-2010`). Both are quiet cards, last touched 2026-10-31 and 2026-09-24. In both the setup belongs in an opening paragraph: each solution opened directly with a step, so there was nowhere for a provenance sentence to stand.
+
+**Observed evidence.** `P-BKF10-3A`: the collection retains its solution packet, `assets/attachments/f10solutions.pdf`, and Problem 3A there, printed p. 2 of the file, gives exactly the card's three steps --- the Laurent coefficient formula on $\abs{z}=r$, the estimate $\abs{c_j}\le Mr^{-j}$ from $\abs{f}\le M$, and "if $j$ is negative then by taking $r$ to zero, we get $c_j=0$". The card's paragraph now says so and names the page; the problem statement is the packet's Problem 3A. `P-3MDGM`: the collection's `provenance:` is empty and its `source_kind` is `homework`, so there is nothing to cite; the paragraph says the argument is the card's own, from $\sec x\cos x=1$, $\tan x+\cot x=1/(\sin x\cos x)$ and $u=\sin x$, and that no page is implied. Both antiderivatives were recomputed and stand.
+
+**Impact and owner.** Both cards now carry the provenance sentence the acceptance rule asks for, in an opening paragraph rather than inside a step, and both keep their Lamport structure (steps 1, 1.1--1.4, 2, 2.1--2.4, and steps 1--5, each with QED present). Commits `1dc77a7300` and `afe4345cfa`; checks were `qualc.authoring check` on each card and `tmp/lam.sh` on each.
+
+**Uncertainty.** High confidence in the packet quotation, read from its text layer. Not checked: no other card of either collection was read, so the same screen may name others that this pass did not reach; and the integral-practice sheet has no retained source at all, so `P-3MDGM`'s statement is checked only against its own problem block.
+
 ## 2026-11-19: the four repaired §3.3 bodies now carry exactly the control words they carried before the scripted rewrite
 
 **Object and need.** The record above leaves open whether the scripted rewrite changed anything that is valid TeX but wrong mathematics, "since a substitution that produced a defined control word in place of another would pass both the scan and the gate". That is now measured for the four cards it touched, rather than argued.
