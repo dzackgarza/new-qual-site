@@ -75,6 +75,23 @@ audit:
     recorded here and in the COMPLAINTS.md entry for §43--§50 as located with its formulas
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around. The card keeps its own proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Restructured into a structured proof under #2 with (a) and (b) as the top-level parts and (b) as
+    the QED step. Re-checked every claim: $I$ compact and connected gives the same for the image;
+    a closed subset of $I$ is compact so its image is closed, and fibres are closed and compact,
+    which is the perfect map; the fibre over $x$ is covered by finitely many intervals inside
+    $f^{-1}(U)$, their images are connected with common point $x$, and $X-f(I-W)$ is an open
+    neighbourhood of $x$ inside $C$ because $f$ is closed and onto; second countability transfers by
+    E-Y4MFU(d); and compact Hausdorff gives regularity, so Urysohn's theorem metrizes. For (b):
+    Tychonoff, Theorem 20.5, the union of the $X_F$ for connectedness, and connected basic
+    neighbourhoods for weak local connectedness. Added: the explicit verification that
+    $f^{-1}(x)\cap V_i\ne\varnothing$ and that the closure of a connected set is connected, both
+    used implicitly before, and the observation that weak local connectedness implies the local
+    connectedness that Hahn--Mazurkiewicz needs (§25 Exercise 6). Not claimed: a published solution;
+    the located §44 set is unreadable for formulas, as the audit records.
 ---
 
 ::: {.exercise}
@@ -89,26 +106,90 @@ A Hausdorff space that is the continuous image of the closed unit interval is of
 :::
 
 ::: {.solution}
-(a) Let $f:I\to X$ be continuous and surjective, with $X$ Hausdorff. Since $I$ is compact, $X=f(I)$ is compact. Since $I$ is connected, $X$ is connected.
+No retained solution set proves this exercise: the one located, on §44, is held with its formulas dropped by the extraction, as the audit records, and the site answers an automated request with a human check that is not worked around. The argument is therefore the card's own, checked against the book's numbered theorems.
 
-The map $f$ is closed: a closed subset of $I$ is compact, and its image is compact, hence closed in the Hausdorff space $X$. Its fibers are closed subsets of $I$, hence compact. Thus $f$ is a perfect quotient map.
+::: pf
 
-Let $x\in X$ and let $U$ be an open neighborhood of $x$. The compact fiber $F=f^{-1}(x)$ lies in the open set $f^{-1}(U)$. Cover $F$ by finitely many connected open intervals $V_1,\ldots,V_m$ contained in $f^{-1}(U)$. Each $f(V_i)$ is connected and contains $x$, so $C=\bigcup_i f(V_i)$ is connected and lies in $U$. Since $f$ is closed and $\bigcup_i V_i$ is an open neighborhood of $F$, the set $X\setminus f(I\setminus\bigcup_i V_i)$ is an open neighborhood of $x$ contained in $C$. Thus $C$ is a connected neighborhood of $x$ inside $U$, and $X$ is weakly locally connected.
+::: {.pf-step #compact-connected}
+(a) If $f\colon I\to X$ is continuous and onto and $X$ is Hausdorff, then $X$ is compact and connected.
 
-Finally, $I$ is second countable, and perfect maps preserve second countability by [[E-Y4MFU]](d). Thus $X$ is second countable. A compact Hausdorff space is regular, so the Urysohn metrization theorem implies that $X$ is metrizable.
+::: pf-proof
+$I$ is compact (Theorem 27.1), and a continuous image of a compact space is compact (Theorem 26.5), so $X=f(I)$ is compact. $I$ is connected (Theorem 24.1), and a continuous image of a connected space is connected (Theorem 23.5), so $X$ is connected.
+:::
 
-Therefore every Hausdorff continuous image of $I$ is compact, connected, weakly locally connected, and metrizable.
+:::
 
-(b) The Hilbert cube
-$$
-I^\omega=\prod_{n\ge1}I
-$$
-is compact by the Tychonoff theorem (Theorem 37.3) and metrizable because it is a countable product of metrizable spaces (Theorem 20.5). It is connected because a product of connected spaces is: fix a point $a$ of the product; for each finite set $F$ of indices the subspace $X_F=\{x \mid x_i=a_i \text{ for } i\notin F\}$ is a finite product of connected spaces, hence connected (Theorem 23.6), and all the $X_F$ contain $a$, so their union is connected (Theorem 23.3) and dense in the product; therefore the product is connected (Theorem 23.4). This applies to $I^\omega$.
+::: {.pf-step #perfect}
+(a) $f$ is a closed map and each of its fibres is compact.
 
-It is also weakly locally connected. A basic neighbourhood of a point of $I^\omega$ is $\prod_{i\le N}J_i\times\prod_{i>N}I$ with open intervals $J_i$ containing the coordinates; being a product of connected spaces, it is connected by the argument above. The basic sets form a neighbourhood basis, so each point has a neighbourhood basis of connected sets.
+::: pf-proof
+A closed subset $F$ of $I$ is compact, being a closed subset of a compact space (Theorem 26.2); its image $f(F)$ is compact (Theorem 26.5) and therefore closed in the Hausdorff space $X$ (Theorem 26.3). A fibre $f^{-1}(x)$ is closed in $I$ because $\{x\}$ is closed in $X$ and $f$ is continuous, hence compact. So $f$ is a perfect map in the sense of §46.
+:::
 
-Hence $I^\omega$ satisfies the hypotheses of the Hahn--Mazurkiewicz theorem quoted in the exercise. Therefore there exists a continuous surjection
-$$
-I\twoheadrightarrow I^\omega.
-$$
+:::
+
+::: {.pf-step #weakly-locally-connected}
+(a) $X$ is weakly locally connected.
+
+:::: pf-proof
+
+::: {.pf-step #finitely-many-intervals}
+For $x\in X$ and an open neighbourhood $U$ of $x$ there are finitely many connected open intervals $V_1,\ldots,V_m$ with $f^{-1}(x)\subseteq V_1\cup\cdots\cup V_m\subseteq f^{-1}(U)$.
+
+::: pf-proof
+$f^{-1}(x)$ is compact by step [](#perfect){.pf-ref} and lies in the open set $f^{-1}(U)$, since $f(f^{-1}(x))=\{x\}\subseteq U$. The open intervals of $I$ form a base, so each point of $f^{-1}(x)$ lies in an open interval contained in $f^{-1}(U)$, and compactness extracts a finite subcover; each interval is connected.
+:::
+
+:::
+
+::: {.pf-step #connected-neighbourhood}
+The set $C=\bigcup_{i=1}^{m}f(V_i)$ is connected, lies in $U$, and contains an open neighbourhood of $x$.
+
+::: pf-proof
+Each $f(V_i)$ is connected, being a continuous image of a connected set, and contains $x=f(p)$ for any $p\in V_i\cap f^{-1}(x)$, which is nonempty because the $V_i$ cover $f^{-1}(x)$. A union of connected sets with a common point is connected, so $C$ is connected; and $f(V_i)\subseteq U$ because $V_i\subseteq f^{-1}(U)$. For the neighbourhood: $W=V_1\cup\cdots\cup V_m$ is open with $f^{-1}(x)\subseteq W$, so $x\notin f(I-W)$, and $X-f(I-W)$ is open because $f$ is closed by step [](#perfect){.pf-ref}. Moreover $X-f(I-W)\subseteq C$: if $y\notin f(I-W)$ then $f^{-1}(y)\subseteq W$, and $f^{-1}(y)\ne\varnothing$ because $f$ is onto, so $f^{-1}(y)$ meets some $V_i$ and $y\in f(V_i)\subseteq C$. Hence $x\in X-f(I-W)\subseteq C$, and $C\subseteq U$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #metrizable}
+(a) If there is a continuous surjection $f\colon I\to X$ and $X$ is Hausdorff, then $X$ is metrizable.
+
+::: pf-proof
+$I$ is second countable, and a perfect map onto a second countable space has second countable image, which is [[E-Y4MFU]](d): $f$ is closed with compact fibres by step [](#perfect){.pf-ref}. A compact Hausdorff space is normal, hence regular, so the Urysohn metrization theorem (Theorem 34.1) applies to the second countable regular space $X$ and gives a metric inducing its topology. With steps [](#compact-connected){.pf-ref} and [](#weakly-locally-connected){.pf-ref}, this proves (a).
+:::
+
+:::
+
+::: {.pf-step}
+(b) There is a continuous surjection $f\colon I\to I^\omega$.
+
+:::: pf-proof
+
+::: {.pf-step #cube-facts}
+The Hilbert cube $I^\omega=\prod_{n\ge1}I$ is compact, connected, metrizable and weakly locally connected.
+
+::: pf-proof
+Compactness is Tychonoff's theorem (Theorem 37.3). Metrizability is Theorem 20.5, a countable product of metrizable spaces being metrizable. For connectedness: fix $a\in I^\omega$; for each finite $F\subseteq\ZZ_+$ the set $X_F=\{x:x_i=a_i\text{ for }i\notin F\}$ is a finite product of intervals, hence connected (Theorem 23.6), and all the $X_F$ contain $a$, so their union $Y$ is connected (Theorem 23.3); $Y$ is dense in $I^\omega$ because a basic open set constrains only finitely many coordinates, and the closure of a connected set is connected, so $I^\omega$ is connected. For weak local connectedness: a basic neighbourhood of a point is $\prod_{i\le N}J_i\times\prod_{i>N}I$ with $J_i$ open intervals containing the coordinates, and this is a product of connected spaces, hence connected by the same union-of-$X_F$ argument; basic sets form a neighbourhood base, so every neighbourhood of a point contains a connected one.
+:::
+
+:::
+
+::: {.pf-step}
+(b) The Hahn--Mazurkiewicz theorem, assumed as the exercise directs, applies.
+
+::: pf-proof
+That theorem states that a Hausdorff space which is compact, connected, locally connected and metrizable is a continuous image of $I$ (see [H-Y], p. 129, as the exercise cites it). Step [](#cube-facts){.pf-ref} supplies compactness, connectedness and metrizability, and supplies weak local connectedness at each point, which by §25 Exercise 6 implies local connectedness; so the hypotheses hold and there is a continuous surjection $I\to I^\omega$.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
 :::
