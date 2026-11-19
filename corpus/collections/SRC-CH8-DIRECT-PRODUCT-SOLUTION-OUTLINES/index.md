@@ -62,7 +62,9 @@ source:
         - id: P-CH8-53
           comment: Exercise 53
         - id: P-CH8-55
-          comment: Exercise 55
+          comment: Exercise 47 (printed as exercise 55 when the card was created; the count of
+            isomorphisms from Z12 to Z4 + Z3 is exercise 47 in Gallian 7e, exercise 55 being a
+            different problem)
         - id: P-CH8-56
           comment: Exercise 56
         - id: P-CH8-67
