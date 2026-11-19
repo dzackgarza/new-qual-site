@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: `qualc check` reads the working tree, so a run cannot be attributed to a commit while several chats are committing; the snapshot recipe
+
+**Object and need.** Several streams commit to this clone every few minutes. `qualc check` reads the *working tree*, takes 5--20 minutes at one worker, and therefore reports whatever partial state another stream happens to be in when the crawl reaches its files. In one afternoon this produced, in successive full runs on this project's own tree: a red run for `wiki/algebra/rings-and-ideals/commutative-algebra.md: missing wiki page reference: T-GRDSOC` (the page changed at 13:41 by another stream and the error is absent from the next run), then a red run for `corpus/collections/SRC-TEXT-HAT02/3-3/E-HAT-3.3-11.md: unmatched fenced-div closer` together with "lists 'E-HAT-3.3-11', which has no card" (that card was committed at 13:49:13, after the crawl had read it mid-save, and `qualc.authoring check E-HAT-3.3-11` passes now). A commit's checks are therefore not established by a green run of the live tree, and not refuted by a red one.
+
+**Observed evidence.** Five full runs in this session: two at `QUALC_PARALLEL_WORKERS=2` killed with exit 137 (13m38s, 8m47s; 11 of 15 GB in use with other streams' gates resident), one at one worker killed as well (5m54s) in the same conditions, and three one-worker runs finished green at 5--21 minutes when the machine was otherwise quiet. Each green run's record names the tree it read (`run-records/<sha>-<timestamp>-qualc-check.json`), which is how the runs above were attributed.
+
+**Impact and owner.** Every stream's acceptance "the corpus report passes" is affected. The recipe used to attribute a run to a commit, without a worktree and without touching the checkout: `git archive <sha> corpus wiki vocabularies publications assets | tar -x -C <dir>`, then `./.venv/bin/python -m qualc --root <dir> check`. It needs `mkdir <dir>/proofs` (the certificate loader reads that path), takes 523 MB for the tracked data of this tree, and it ran green at `8c162b7429` in 14 minutes while other streams kept committing to the live tree. The snapshot is scratch and is deleted after the run.
+
+**Uncertainty.** High confidence in the mechanism (the loader is `root`-relative, `tools/qualc/cli.py` line 134, and the run record records the tree), and in the two misattributed reds, each of which named a file last committed after the run started. Not checked: whether `--root` skips any check that the working tree triggers through git metadata; the run at `8c162b7429` reported the same totals as the live runs (14414 cards, 348 wiki pages), which is evidence that it does not, but not proof.
+
 ## 2026-11-19: Hardie--Kamps on exact sequence interlocking is obtained, and the term it singles out is the card's
 
 **Object and need.** The records above say that the only located treatment of Hatcher's Exercise 9 was unobtainable, and that the exercise's delicate term is $\pi_1(X,B,x_0)$. A published paper the earlier searches did not name was obtained instead, from an open archive.
