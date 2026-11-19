@@ -29,6 +29,8 @@ What is the probability that $j$'s student gets a happy ticket, $1 \leqslant j \
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

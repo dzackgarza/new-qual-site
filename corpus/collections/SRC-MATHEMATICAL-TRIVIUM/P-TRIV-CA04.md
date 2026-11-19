@@ -22,6 +22,8 @@ Compute the Laurent series of $f(z) = \frac{e^z}{(z - 1)^2}$ around $z_0 = 1$; g
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

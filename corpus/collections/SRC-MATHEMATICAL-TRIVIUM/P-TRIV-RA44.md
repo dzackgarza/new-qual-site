@@ -27,6 +27,8 @@ The electric field $\vec{E}$ created by a point charge $q$ at a certain distance
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Assume the observation point lies a distance $d>0$ from the center along the
 positive symmetry axis.
 

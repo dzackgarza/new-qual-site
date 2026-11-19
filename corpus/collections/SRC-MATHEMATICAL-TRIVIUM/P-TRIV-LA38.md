@@ -31,6 +31,8 @@ Consider the matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, $a, b, c
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Write
 $$
 g_1=

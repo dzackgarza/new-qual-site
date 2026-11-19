@@ -33,6 +33,8 @@ The question about the image of the origin suggests the disk $\{z : \abs{z} < R\
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Interpret the domain, as in the remark, as
 $$
 D_R

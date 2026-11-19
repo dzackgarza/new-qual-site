@@ -23,6 +23,8 @@ How are det A and det B related?
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 ::: pf
 
 ::: {.pf-step #s1-1}

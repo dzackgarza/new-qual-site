@@ -23,6 +23,8 @@ Consider a spherically symmetric potential satisfying the Laplace equation in $d
 
 ::: {.solution}
 
+No retained solution set covers this problem: the collection's provenance is the problem list alone, so the argument is the card's own.
+
 Let $u=u(r)$ with $r=\norm{x}$ in $\RR^d$, where $d\geq3$.
 
 ::: pf
