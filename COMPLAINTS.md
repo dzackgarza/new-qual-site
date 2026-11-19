@@ -8123,3 +8123,19 @@ pass. Not read: the other fifty-six entries, and the printed books themselves.
 **Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-35-5` numbering 1–3 with QED labels present; the pre-commit card-YAML and schema hook on each commit.
 
 **Not checked.** Neither card has a retained solution set, and none was sought; the proofs were checked as written against the printed statements.
+
+## 2026-11-19, fourteenth item: §5.3 Ex. 11 rebuilt from four dead steps, §6.4 Ex. 11 correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-53-11`, §5.3 Exercise 11, printed p. 155 — correct, structure rebuilt.** All four parts hold: $D_T$ is $n$-linear and alternating; the alternating $n$-linear functions are the $1$-dimensional span of $\det$, so $D_T=\lambda\det$, and evaluating at the standard basis gives $\lambda=\det(T\epsilon_1,\ldots,T\epsilon_n)=c$; the matrix $M$ of $T$ in the standard basis has the columns $T\epsilon_i$, so $\det M=c$; and $A=P^{-1}MP$ for a change of basis gives $\det A=\det M=c$; so $c$ is $\det T$.
+
+The old proof had four steps whose bodies said nothing: "Hence $D_T$ is an alternating $n$-linear function" with two back-references, "Hence $D_T=c\det$" with one, "Therefore $\det(T\alpha)=c\det(\alpha)$" with two, and a `pf-qed` whose whole content was "parts (a)–(d)". The proof is now eight steps across the four parts, each carrying its derivation, and the qed is gone. No claim changed. Commit `49ead4833a`.
+
+**`E-HK-64-11`, §6.4 Exercise 11, printed p. 205 — correct.** The assertion is false and the counterexample settles it: $A=[[1,1],[0,2]]$ is upper triangular with a nonzero $(1,2)$ entry; $A(1,0)=(1,0)$ and $A(1,1)=(2,2)=2(1,1)$, so $P=[[1,1],[0,1]]$ gives $AP=P\operatorname{diag}(1,2)$ and $P^{-1}AP=\operatorname{diag}(1,2)$. Commit `59ca57277a`.
+
+**The fence hazard, recorded for the next session.** Rebuilding `E-HK-53-11` part by part, the first draft put one `:::` too many at each part boundary, and `qualc` reported "unmatched fenced-div closer on line 109" — the count was right in total but the closers were one per part too many, which closed the solution block after part (a). The check caught it before any commit; `tmp/lam.sh` then numbered the four parts $1$–$2$, $1$–$2$, $1$–$3$, $1$ as intended.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering as above for `E-HK-53-11` and $1$ for `E-HK-64-11`; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the derivations were checked against the printed statements, and `E-HK-53-11`'s citation of Theorem 4 of §5.3 was not re-read on its page in this pass.
