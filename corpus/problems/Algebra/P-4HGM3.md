@@ -72,7 +72,7 @@ By Lagrange's theorem every element has order $1$, $2$, $4$ or $8$. An element o
 :::
 
 ::: {.pf-step #index-two}
-$H \coloneqq \generatedby{r}$ has order $4$ and index $2$, so it is normal in $G$, and for $s \notin H$ one has $G = H \sqcup sH$.
+$H \coloneqq \generators{r}$ has order $4$ and index $2$, so it is normal in $G$, and for $s \notin H$ one has $G = H \sqcup sH$.
 
 ::: pf-proof
 $r$ has order $4$, so $\cardinality{H} = 4$ and its index is $8/4 = 2$. A subgroup of index $2$ is normal: for $g \in G$ with $g \notin H$ the two left cosets are $H$ and $gH$, so $gH = G \setminus H$, and the two right cosets are $H$ and $Hg$, so $Hg = G \setminus H$ as well; hence $gH = Hg$ and $gHg^{-1} = H$, while $g \in H$ gives $gHg^{-1} = H$ directly. Choosing $s \notin H$ gives the disjoint decomposition $G = H \cup sH$.
@@ -85,14 +85,14 @@ $r$ has order $4$, so $\cardinality{H} = 4$ and its index is $8/4 = 2$. A subgro
 Conjugation by $s$ sends $r$ to $r^{-1}$, and $s^{2} \in \theset{1, r^{2}}$.
 
 ::: pf-proof
-Since $H$ is normal, $srs^{-1} \in H$, and $h \mapsto shs^{-1}$ is an automorphism of $H$; it sends the generator $r$ of $H \cong C_{4}$ to a generator, that is to $r$ or to $r^{3} = r^{-1}$. Were the image $r$, then $s$ would commute with $r$ and hence with every element of $H$, and since every element of $G$ is $r^{i}$ or $sr^{i}$ by step [](#index-two){.pf-ref}, $s$ would commute with every element of $G$, contradicting that $G$ is nonabelian. So $srs^{-1} = r^{-1}$. Also $s^{2} \in H = \theset{1, r, r^{2}, r^{3}}$ by step [](#index-two){.pf-ref}. If $s^{2}$ were $r$ or $r^{3}$, then $s^{2}$ would generate $H$, since $r$ and $r^{3}$ are both generators of a cyclic group of order $4$; then $r \in \generatedby{s^{2}} \subseteq \generatedby{s}$ would commute with $s$, contradicting $srs^{-1} = r^{-1} \ne r$. Hence $s^{2} \in \theset{1, r^{2}}$.
+Since $H$ is normal, $srs^{-1} \in H$, and $h \mapsto shs^{-1}$ is an automorphism of $H$; it sends the generator $r$ of $H \cong C_{4}$ to a generator, that is to $r$ or to $r^{3} = r^{-1}$. Were the image $r$, then $s$ would commute with $r$ and hence with every element of $H$, and since every element of $G$ is $r^{i}$ or $sr^{i}$ by step [](#index-two){.pf-ref}, $s$ would commute with every element of $G$, contradicting that $G$ is nonabelian. So $srs^{-1} = r^{-1}$. Also $s^{2} \in H = \theset{1, r, r^{2}, r^{3}}$ by step [](#index-two){.pf-ref}. If $s^{2}$ were $r$ or $r^{3}$, then $s^{2}$ would generate $H$, since $r$ and $r^{3}$ are both generators of a cyclic group of order $4$; then $r \in \generators{s^{2}} \subseteq \generators{s}$ would commute with $s$, contradicting $srs^{-1} = r^{-1} \ne r$. Hence $s^{2} \in \theset{1, r^{2}}$.
 
 :::
 
 :::
 
 ::: {.pf-step #dihedral}
-If $s^{2} = 1$ then $G \cong D_{8}$, the group with presentation $\generatedby{r, s \mid r^{4} = s^{2} = 1,\ srs^{-1} = r^{-1}}$.
+If $s^{2} = 1$ then $G \cong D_{8}$, the group with presentation $\generators{r, s \mid r^{4} = s^{2} = 1,\ srs^{-1} = r^{-1}}$.
 
 ::: pf-proof
 The eight elements $r^{i}$ and $sr^{i}$, $0 \le i \le 3$, are exactly the elements of $G$ by step [](#index-two){.pf-ref}, and the relations $r^{4} = 1$, $s^{2} = 1$ and $srs^{-1} = r^{-1}$ hold by the choice of $r$ and $s$ and by step [](#conjugation){.pf-ref}. The presented group has at most eight elements, since $s^{2} = 1$ and $sr = r^{-1}s$ reduce every word to a normal form $r^{i}s^{j}$ with $0 \le i \le 3$ and $0 \le j \le 1$, and it has exactly eight because the symmetries of the square realise it with $r$ a quarter turn and $s$ a reflection. The assignments $r \mapsto r$, $s \mapsto s$ define a surjective homomorphism from the presented group onto $G$, which is therefore an isomorphism between groups of order $8$.
@@ -102,7 +102,7 @@ The eight elements $r^{i}$ and $sr^{i}$, $0 \le i \le 3$, are exactly the elemen
 :::
 
 ::: {.pf-step #quaternion}
-If $s^{2} = r^{2}$ then $G \cong Q_{8}$, the group with presentation $\generatedby{r, s \mid r^{4} = 1,\ s^{2} = r^{2},\ srs^{-1} = r^{-1}}$.
+If $s^{2} = r^{2}$ then $G \cong Q_{8}$, the group with presentation $\generators{r, s \mid r^{4} = 1,\ s^{2} = r^{2},\ srs^{-1} = r^{-1}}$.
 
 ::: pf-proof
 Writing $i \coloneqq r$ and $j \coloneqq s$ gives $i^{4} = 1$, $j^{2} = i^{2}$, $jij^{-1} = i^{-1}$ and $i^{2} \ne 1$, the defining relations of $Q_{8}$; the group they present has the eight elements $i^{k}$ and $i^{k}j$ and is realised by $\theset{\pm1, \pm i, \pm j, \pm k}$ inside the quaternions. As in step [](#dihedral){.pf-ref} the resulting surjection $Q_{8} \to G$ between groups of order $8$ is an isomorphism.

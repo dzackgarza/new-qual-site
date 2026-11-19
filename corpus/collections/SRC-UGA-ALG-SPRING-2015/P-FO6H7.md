@@ -36,7 +36,7 @@ Prove that there is a basis $\mcb_3$ with respect to which $A$ and $B$ are both 
 :::
 
 ::: {.solution}
-Throughout $V$ is a finite-dimensional $F$-vector space, $A, B \in \End_{F}(V)$ satisfy $AB = BA$, and $E_{\lambda}(A) \coloneqq \ker(A - \lambda I)$ is the eigenspace of $A$ for $\lambda \in F$.
+Throughout $V$ is a finite-dimensional $F$-vector space, $A, B \in \Endo_{F}(V)$ satisfy $AB = BA$, and $E_{\lambda}(A) \coloneqq \ker(A - \lambda I)$ is the eigenspace of $A$ for $\lambda \in F$.
 
 ::: pf
 
