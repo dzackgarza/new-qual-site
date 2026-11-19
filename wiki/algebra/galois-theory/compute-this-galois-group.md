@@ -37,13 +37,9 @@ $$
 G \subseteq A_n \iff \sqrt{\Delta_f} \in \QQ.
 $$
 
-::: {.remark title="Formulas"}
-- For $f = ax^2+bx+c$, $\Delta = b^2-4ac$.
-
-- For $f = ax^3+bx^2+cx+d$, $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$.
-  For $a=1$, the substitution $x = t - b/3$ gives $t^3+pt+q$, with the same discriminant $\Delta = -4p^3-27q^2$.
-
-- $\Delta_f = 0$ if and only if $f$ has a repeated root.
+::: {.example title="Discriminants in low degree"}
+The definition gives $\Delta = b^2-4ac$ for $f = ax^2+bx+c$ and $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$ for $f = ax^3+bx^2+cx+d$.
+For $a=1$ the substitution $x = t-b/3$ gives $t^3+pt+q$ with the same discriminant, $\Delta = -4p^3-27q^2$.
 :::
 
 ## Cycle types from reduction modulo $p$
@@ -100,11 +96,9 @@ For $n=5$, a transposition together with a $5$-cycle generates $S_5$, and in gen
 
 [[PR-5PI25]]
 
-::: {.remark title="Parity"}
-\envlist
+Parity is read off the cycle type, so a cycle type decides membership in $A_n$ without writing the permutation as a product of transpositions.
 
-- A permutation lies in $A_n$ if and only if it has an even number of cycles of even length.
-:::
+[[FD-GHDF2]]
 
 ::: {.fact title="Cycle types in the transitive subgroups of $S_4$"}
 Number of elements of each cycle type in each transitive subgroup of $S_4$, with $V=\theset{e,(12)(34),(13)(24),(14)(23)}$:
@@ -118,8 +112,6 @@ Number of elements of each cycle type in each transitive subgroup of $S_4$, with
 | $(4)$ | $6$ | $0$ | $2$ | $2$ | $0$ |
 | Order | $24$ | $12$ | $8$ | $4$ | $4$ |
 :::
-
-The other generating statements a Galois computation uses are transpositions for $S_n$ and $3$-cycles for $A_n$; the criterion for a transposition together with an $n$-cycle is stated above.
 
 [[P-ZFVEO]]
 
