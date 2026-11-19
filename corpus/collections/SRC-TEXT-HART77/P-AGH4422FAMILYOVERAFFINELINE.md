@@ -322,6 +322,38 @@ audit:
     Deligne, *Theorie de Hodge II*, 4.4.3, and the results of Peters and
     Steenbrink and of Strauch that Youcis cites, as before; and the card's other
     steps were not re-derived in this pass.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The fibre input of step abelian-scheme is now cited, and the first of the
+    two citations the step rests on is a source on this machine. Altman and
+    Kleiman, *Introduction to Grothendieck Duality Theory*, Lecture Notes in
+    Mathematics 146 (1970), read in
+    tmp/sources/altman-kleiman-introduction-to-grothendieck-duality.md and on
+    the rendered pages of
+    tmp/sources/altman-kleiman-introduction-to-grothendieck-duality.pdf, where
+    printed p. N is PDF p. N+2 (printed p. 164 is PDF p. 166, printed p. 167 is
+    PDF p. 169): Theorem (1.4) (Riemann), printed p. 164, gives
+    chi(D) = deg(D) + chi(O_X) for X proper over an artinian ring, and Theorem
+    (1.15) (Roch), printed p. 167, gives H^0(X, Hom(F, omega_X)) isomorphic to
+    H^1(X, F)^* for X a reduced proper curve over a field and F a coherent
+    subsheaf of K_X. Applied to an invertible sheaf of degree one on a curve of
+    genus one they give h^1 = 0 and h^0 = 1, which is the rank the pushforward
+    is asserted to have fibrewise. The base-change half is left as Katz and
+    Mazur give it, cited to Mumford, Abelian Varieties (1970), p. 53, and the
+    step now also names the book's own form of that theorem, III.12.11
+    (Cohomology and Base Change) at printed p. 290 with Corollary 12.9
+    (Grauert) at printed p. 288, read in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md between the page markers
+    of PDF pages 305 and 306, and before that of 304. No step of this card
+    needs Mumford, Fogarty and Kirwan, Geometric Invariant Theory: the earlier
+    records named its Theorem 6.14 as a candidate relative source, the step is
+    now carried by Katz and Mazur's Theorem 2.1.2, and that book is not
+    available in full on this machine. Not checked: Mumford's Abelian Varieties,
+    p. 53, which is cited as Katz and Mazur cite it; and Altman and Kleiman's
+    Chapter VIII beyond the theorems named, in particular the residue theory of
+    its sections 2 to 4, which this step does not use.
 ---
 
 ::: {.problem}
@@ -365,7 +397,7 @@ I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)\cong I^{-1}(R)\otimes f_T^*(\mathcal L_0)
 $$
 There $I(P)$ is the ideal sheaf of a section $P$ viewed as an effective Cartier divisor of degree one in $E$, and $f_T\colon E_T\to T$ is the projection.
 
-Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. For such a sheaf $\mathcal L$ one has $R^1f_*\mathcal L=0$: $R^1f_*$ for $f$ proper and flat of relative dimension one is of formation compatible with base change, and over an algebraically closed field $H^1(E,\mathcal L)=0$ for $\deg\mathcal L>2g-2=0$; then $f_*\mathcal L$ is invertible and of formation compatible with base change, Mumford, *Abelian Varieties* (1970), p. 53, as they cite it. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
+Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. Its fibre input is Riemann's theorem and Serre duality: for an invertible sheaf $\mathcal L$ of degree one on a curve of genus one over an algebraically closed field, $\chi(\mathcal L)=\deg\mathcal L+\chi(\mathcal O)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$; so $h^0(\mathcal L)=1$ on every fibre, and $\mathcal L$ of fibrewise degree one is what the map above is applied to. Consequently $R^1f_*\mathcal L=0$ and $f_*\mathcal L$ is invertible of formation compatible with base change, which Katz and Mazur cite to Mumford, *Abelian Varieties* (1970), p. 53; the book at hand states that theorem as III.12.11 (Cohomology and Base Change) with Corollary 12.9 (Grauert), printed pp. 290 and 288. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
 
 That is a group scheme over $S$ with identity $O$ in the sense of the definition before Remark 4.10.5, printed p. 324: the identity is the section $O$, the inverse and the operation are morphisms over $S$, and the two axioms asserted there are the group-scheme axioms of Katz and Mazur. Since $\pi$ is smooth and proper with geometrically connected fibres, $E$ is an abelian scheme over $S$ in the sense of Youcis, "a smooth proper group scheme with connected fibers", from his section "Two statements of the main result".
 
