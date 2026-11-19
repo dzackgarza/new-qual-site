@@ -10,30 +10,11 @@ topics:
 
 # Removable singularities, poles, essential singularities
 
-Criteria for the type of an isolated singularity are on [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]].
+The three types, and the criteria that decide which applies — the limit, the bound on $\abs f$, and the Laurent coefficients — are on [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]]; the examples and consequences for each type are below.
 
 [[D-IWIA5]]
 
 [[FF-QZXBS]]
-
-::: {.remark title="The two classifications agree"}
-In terms of the Laurent expansion $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc about $z_0$:
-
-- removable: $c_{k} = 0$ for $k \leq -1$;
-
-- pole of order $N$: $c_{-N}\neq 0$ and $c_k = 0$ for $k<-N$;
-
-- essential: $c_k\neq 0$ for infinitely many $k<0$.
-
-In terms of limiting behavior:
-
-- removable: $\lim_{z\to z_0} f(z)$ exists in $\CC$, equivalently $f$ is bounded on a punctured neighborhood of $z_0$;
-
-- pole: $\lim_{z\to z_0} \abs{f(z)} = \infty$;
-
-- essential: neither limit exists.
-
-:::
 
 ## Removable
 
@@ -49,22 +30,6 @@ In terms of limiting behavior:
 :::
 
 [[T-ZZJDP]]
-
-::: {.remark title="(ii) implies (vii) by Laurent coefficients"}
-Suppose $\abs f\leq M$ on $0<\abs{z-z_0}<\delta$, and write $f(z)=\sum_{k\in\ZZ}c_k(z-z_0)^k$ there.
-For $n\geq 1$ and $0<r<\delta$,
-$$
-\abs{c_{-n}} = \abs{\frac{1}{2\pi i}\oint_{\abs{z-z_0}=r} f(z)(z-z_0)^{n-1}\,dz} \leq M r^{n} ,
-$$
-which tends to $0$ as $r\to 0$.
-So $c_{-n}=0$ for every $n\geq 1$, and the Laurent series is a power series that extends $f$ holomorphically across $z_0$.
-
-:::
-
-::: {.remark title="Showing a singularity is removable"}
-A singularity at $z_0$ is removable if the Laurent expansion $\sum_{k\in\ZZ} c_k (z-z_0)^k$ has $c_k = 0$ for $k<0$, or if $f$ is bounded near $z_0$, by Riemann's theorem [[T-ZZJDP]].
-
-:::
 
 ## Zeros and their order
 
