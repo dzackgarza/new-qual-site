@@ -19,4 +19,4 @@ The Gallian chapter outlines that cover ring theory are held by the collections 
 
 - [[SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES|Chapter 17 polynomial solution outlines]]
 
-The statements of the ring chapter are on [[algebra/rings-and-ideals/index|Rings and ideals]], and the corpus solutions to those problems are on the cards of the collections above.
+The statements of the ring chapter are on [[algebra/rings-and-ideals/index|Rings and ideals]].
