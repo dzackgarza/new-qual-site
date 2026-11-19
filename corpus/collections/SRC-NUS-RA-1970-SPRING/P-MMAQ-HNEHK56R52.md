@@ -72,7 +72,7 @@ As $\eps_k$ decreases, the sets $[\eps_k, 1]$ increase and exhaust $(0,1]$.
 :::
 
 ::: {.pf-step #monotone-convergence-integral}
-Monotone convergence: $\int_{(0,1]} f = \lim_k \int_{\eps_k}^1 f = \lim_{\eps \to 0^+} \int_\eps^1 f < \infty$.
+[[T-5K3IO|Monotone convergence]]: $\int_{(0,1]} f = \lim_k \int_{\eps_k}^1 f = \lim_{\eps \to 0^+} \int_\eps^1 f < \infty$.
 
 ::: pf-proof
 Monotone convergence applied to step [](#decreasing-sets-exhaust){.pf-ref}, using that the limit in the hypothesis exists and is finite; the point $\theset{0}$ has measure zero.
