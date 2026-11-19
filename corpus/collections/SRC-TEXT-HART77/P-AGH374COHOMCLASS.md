@@ -1261,7 +1261,7 @@ $$
 \eta(Y)=\gamma^{0,0}_{Y/X}(1)
 \qquad\text{in } H^p(X,\Omega_X^p),
 $$
-and if $H\subseteq X$ is a nonsingular divisor with $Y\pitchfork H$ for which the same spanning holds in $H$ for the codimension $p$ of $Z=Y\cap H$, then $i^*j_*=(j_H)_*\,i_Y^*$. For $X=\PP^n$ the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional (Exercise III.7.3, printed p. 249) and spanned by such a class, so the corollary covers subvarieties of projective space in every codimension; for $p=n$, where $Y$ is a point, the equality itself holds by (C) with step [](#s1){.pf-ref}.
+and if $H\subseteq X$ is a nonsingular divisor with $Y\pitchfork H$ for which the same spanning holds in $H$ for the codimension $p$ of $Z=Y\cap H$, then $i^*j_*=(j_H)_*\,i_Y^*$. For $X=\PP^n$ the space $H^{n-p}(\PP^n,\Omega^{n-p})$ is one-dimensional (Exercise III.7.3, printed p. 249) and spanned by such a class, so the corollary covers subvarieties of projective space in every codimension; for a nonsingular projective $X$ of dimension at most two it holds in every codimension, $p=1$ being the divisor case of step [](#s2){.pf-ref} and $p=2$ having $H^0(X,\OO_X)=k$; and for $p=n$, where $Y$ is a point, the equality itself holds by (C) with step [](#s1){.pf-ref}.
 
 ::: pf-proof
 
