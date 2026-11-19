@@ -28,7 +28,25 @@ audit:
     comparison with tmp/hat/AT.txt, and that this session re-verified at the cited lines before
     applying the repair. The restored text is the printed wording and the mathematics of the
     statement is otherwise unchanged.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170's continuation, §4.2. Read against Hatcher, Exercise 32 of §4.2, printed p. 392, and
+    the printed page is added, the card having had none. Checked: dimensions add, $m=n+k$; for
+    $n\ge2$ a fibre $S^0$ would make $S^m$ a nontrivial two-sheeted cover of the simply connected
+    $S^n$, hence disconnected, so $k\ge1$; the exact sequence at $\pi_n$ injects $\pi_n(S^n)=\ZZ$
+    into $\pi_{n-1}(S^k)$ because $\pi_n(S^m)=0$ for $m>n$, giving $k\le n-1$; the sequence at
+    $\pi_k$ surjects $\pi_{k+1}(S^n)$ onto $\pi_k(S^k)=\ZZ$ because $\pi_k(S^m)=0$ for $m>k$,
+    giving $k+1\ge n$; so $k=n-1$ and $m=2n-1$; and for $n=1$ the case $k\ge1$ would force
+    $\pi_1(S^m)\neq0$, hence $m=1$, against $m=1+k\ge2$, so $k=0$ and the bundle is $S^0\to S^1\to
+    S^1$. One addition: the statement's conclusion has no content at $n=0$, where a bundle over
+    $S^0$ is trivial and connectedness forces $m=k=0$, giving $k=0\ne n-1$; the card now says that
+    the two cases treated are exactly the meaningful ones. The published solution cited for the
+    upper bound is Proudfoot, Homework #7, Problem 32, whose text stops at $k\le n-1$; the lower
+    bound is the card's own and was checked directly.
 review: draft
+
 ---
 
 ::: {.problem}
@@ -36,6 +54,7 @@ Show that if $S^k \to S^m \to S^n$ is a fiber bundle, then $k = n-1$ and $m = 2n
 :::
 
 ::: {.solution}
+The exercise is §4.2 Exercise 32, printed p. 392.
 
 The argument is the card's own: the homotopy exact sequence of the bundle in two degrees pins $k$ between $n-1$ and $n-1$. A published solution exists and is cited here for the two steps it does carry: Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 32, which derives $k<n$ and $\pi_{n-1}(S^{k})\cong\ZZ$ from the long exact sequence and stops at $k\le n-1$; the reverse inequality, which his retained text does not reach, is step [](#lower){.pf-ref} below, and both inequalities are read off the same exact sequence of Theorem 4.41, printed p. 376. Throughout $S^{k}\to S^{m}\to S^{n}$ is a fibre bundle with connected total space $S^{m}$.
 
@@ -97,6 +116,8 @@ $$
 \pi_{1}(S^{k})\to\pi_{1}(S^{m})\to\pi_{1}(S^{1})\to\pi_{0}(S^{k})
 $$
 shows that $\pi_{1}(S^{m})\to\ZZ$ is surjective, so $\pi_{1}(S^{m})\ne0$ and hence $m=1$. But $m=n+k=1+k\ge2$ by step [](#dimension){.pf-ref}, a contradiction. So $k=0$ and $m=1$, which is the double cover $S^{1}\to S^{1}$ with fibre $S^{0}$, and gives $k=n-1=0$ and $m=2n-1=1$.
+The case $n=0$ is excluded by the statement itself: a bundle over $S^0$ is trivial, so $S^m\cong S^0\times S^k$, connected only when $m=k=0$, and then $k=0\neq n-1$. The two cases treated above are exactly those in which the printed conclusion has content.
+
 :::
 
 :::
