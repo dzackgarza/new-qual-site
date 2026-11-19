@@ -231,6 +231,16 @@ audit:
     this pass: the page of Bragg's Proof 2, which the card names without a
     printed folio, and the printed pages of the two retained sets the remark
     cites.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The event above, of this date, says steps s4, s8, s9, s10 and s11 were read
+    in this pass and found correct. Read here: s10 entire, which is the step the
+    event repairs, and s4, read in the previous round. Not read on the card in
+    this pass: s8, s9 and s11; the sentences the event gives for them are its
+    second reader's, restated, and they are not certified by this pass. Nothing
+    else in the event above is withdrawn.
 ---
 
 ::: {.problem}
