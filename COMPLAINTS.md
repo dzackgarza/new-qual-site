@@ -7183,3 +7183,15 @@ source under the rule this obligation states.
 **What this adds.** None of the four carried a printed page; each now cites its exercise's page, and §4.2's exercise pages are recorded once more: 1–12 on p. 389, 13–23 on p. 390, 24–29 on p. 391, 30–39 on p. 392, at PDF pages 398–401 of the held book.
 
 **Not done.** The sections the last reports named are still open outside these — Chapter 1 (1.1–1.B, about 95 cards), §2.1 (29), §2.2 (32), §2.3 (3), §3.1 (13), §3.C (9), §3.E (1), §3.H (2), §4.A (2), and the smaller appendices, none of them read under the current standard. The #170 source obligations are unchanged.
+
+## 2026-11-19, seventh item: §1.2 of Hoffman--Kunze finished — the last three cards read, all correct
+
+**Object.** The sixth item above read `E-HK-12-2` through `-5` and named `E-HK-12-6`, `-7`, `-8` as unread. This closes the section.
+
+**The three, and what the read checked.** `E-HK-12-6` (printed p. 5): the row-space argument is complete — a homogeneous system with coefficient span $W$ has solution set $W^{\perp}$, the standard pairing on $F^2$ gives $\dim W^{\perp}=2-\dim W$, so $(W^{\perp})^{\perp}=W$, and equal solution sets force equal spans, which is equivalence. `E-HK-12-7`: $0,1\in F$ gives $\ZZ\subseteq F$, and for $m/n$ with $n\ne0$ the element $n$ is nonzero in the subfield $F\subseteq\CC$, so $n^{-1}\in F$ and $m n^{-1}=m/n\in F$. `E-HK-12-8`: $\iota(n)=n\cdot1_F$ has kernel $0$ in characteristic zero and so is injective; $m/n\mapsto\iota(m)\iota(n)^{-1}$ is well defined because $mn'=m'n$ transports through $\iota$, preserves the field operations by the common-denominator calculation, and is injective because $\iota(m)=0$ forces $m=0$; the image is a copy of $\QQ$. No defect found on any of the three; statements match the printed exercises at p. 5.
+
+**One thing deliberately not changed.** `E-HK-12-1`, the section's remaining card, has a `pf-qed` that states the conclusion in substance ("$F$ contains 1, is closed under subtraction, multiplication, and taking inverses of non-zero elements; hence $F=\QQ(\sqrt2)$ is a subfield of $\CC$") and then names the step range it rests on. That is not the banned form — the seventh item's two examples had a back-reference and nothing else — so it stands.
+
+**Repair.** Three commits, one per card: `E-HK-12-6` `707506cfe8`, `E-HK-12-7` `dac8806343`, `E-HK-12-8` `a99a1cd3f7`. Each records a `solution-reviewed` event of this date with the check in the note. Checks: `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering and QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Uncertainty.** These are correctness reads of the written arguments at the level the cards state them; none of the three was re-derived from the field axioms beyond what the notes record, and no source beyond the book's exercise text was consulted.
