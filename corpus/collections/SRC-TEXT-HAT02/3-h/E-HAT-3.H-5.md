@@ -40,6 +40,17 @@ audit:
     boxed conclusions. The step statements were written to name each claim; the proofs are the
     card's existing prose, unchanged. Statement unchanged; the card does not claim a retained
     solution set covers this exercise.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance sentence added to the solution's opening, which the per-card rule requires and the
+    card lacked: the argument is the card's own, and why. Checked before writing it: the checkout
+    holds four Hatcher solution sets as text (Sam 2008, Guanyu Li, diagonalargument, Koukpari);
+    Koukpari's file carries the §3.H heading at its line 940 with the very next heading being §4.1,
+    so its §3.H section is empty, and the other three stop earlier (Sam's contents end at §4.3 and
+    it begins at §1.1). No page was read for a §3.H solution because none exists in those files, and
+    no search outside the checkout was made for this step. The mathematics of the card is unchanged.
 ---
 
 ::: {.problem}
@@ -59,6 +70,8 @@ $$
 H^n(X;\ZZ[\pi])\cong H_c^n(\widetilde X;\ZZ).
 $$
 Since $X$ is a finite connected graph with free fundamental group of rank $g>0$, $\widetilde X$ is a tree (Example 1B.1, p. 88: a connected graph is a $K(G,1)$ because its universal cover is a tree), it is locally finite because $X$ is (each vertex of $X$ has finitely many incident edges, and Lemma 1A.3, p. 85, says the cover is again a graph with vertices and edges the lifts), and it is contractible.
+
+The argument is this card's own: no retained solution set in the checkout covers §3.H, whose section is empty in the Koukpari file and absent from the Sam, Guanyu Li and diagonalargument files, so the proof below is derived here, and each step names the printed theorem it uses.
 
 ::: pf
 
