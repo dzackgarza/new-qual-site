@@ -31,6 +31,15 @@ audit:
     X^3+X^2+1 is its reciprocal, so a root of the second gives an inverse root of
     the first and irreducibility transfers; both quotients are the field of 125
     elements, and the explicit isomorphism is the standard one. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 10, Galois problem 3.
+    $X^3+X^2+1$ is the reciprocal of $X^3+X+1$, so it is irreducible and its root
+    $\beta=\alpha^{-1}$ satisfies $\beta^3+\beta^2+1=0$; evaluation at $\beta$ gives an
+    injective, hence bijective, $\mathbf F_5$-algebra map between the two 125-element
+    fields. No defect.
 ---
 
 ::: {.exercise}
