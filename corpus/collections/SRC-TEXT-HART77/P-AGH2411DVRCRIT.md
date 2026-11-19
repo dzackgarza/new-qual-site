@@ -51,6 +51,25 @@ audit:
     copy of Yang Pi-Yeh's Solutions being an image-only scan of 119 pages whose
     chapter 2 leaves were not located, so the transcription claim of a card of
     this collection is not made here.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The transcription is now named with its pages. Yang Pi-Yeh's Solutions is
+    held as an image-only scan of 119 pages, so the text version carries no page
+    markers and the pages were located by rendering leaves and reading them:
+    PDF p. 36 and p. 37 carry Solutions 2.4.6 and 2.4.7, PDF p. 38 carries
+    Solution 2.4.10 and the opening of 2.4.11, and PDF p. 39 carries the rest of
+    2.4.11 and then Solution 2.4.12, so the entry spans pp. 38--39. The leaves
+    read carry running heads and no visible folio, so the pages are the PDF
+    pages, the convention the register records for this set at Solutions 5.4.9;
+    no printed folio was read. Checked against the exercise: the five hints at
+    printed pp. 107--108 are the five parts the transcription runs, and part (b)
+    appeals to the criteria of (4.3) and (4.7), printed pp. 100--103. Read for
+    this pass: Yang's Solutions 2.4.6, 2.4.7, 2.4.10, 2.4.11 and 2.4.12 in the
+    text version beside the scan, and the rendered leaves of PDF pp. 36--39. Not
+    read: Yang's entries for the other exercises of this section, and no printed
+    copy of his set.
 ---
 
 ::: {.problem}
@@ -75,6 +94,8 @@ $$
 be a noetherian local domain with fraction field $K$, and let $L/K$ be finitely generated.
 
 As printed, part (a) needs no further hypothesis, and it fails in one case: if $\OO=K$ is a field and $L/K$ is algebraic, then no discrete valuation ring of $L$ dominates $\OO$. A ring $R$ dominating $\OO$ has $\mathfrak m_R\cap K=\mathfrak m_\OO=0$, so it is a valuation ring of $L$ trivial on $K$, and a valuation trivial on $K$ is trivial on an algebraic extension of $K$: for $a\in L$ with minimal polynomial $a^n+c_{n-1}a^{n-1}+\cdots+c_0$ over $K$, if $v(a)>0$ then $v(c_ia^i)=iv(a)$ has its minimum at $i=0$, so $v(a^n+c_{n-1}a^{n-1}+\cdots+c_0)=0$ while it is $nv(a)>0$; if $v(a)<0$ the minimum is at $i=n$ and the same contradiction holds. So the proof below, like any proof of the printed claim, keeps the hypothesis that $\OO$ is not a field or that $L$ is not algebraic over $K$, and the case it excludes is exactly $\OO=K$ with $L/K$ finite algebraic.
+
+The proof is the argument of Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.11, pp. 38--39 of the held scan, transcribed step by step and checked against the exercise and its hints at printed pp. 107--108: the reduction to a finite extension by adjoining the generators, the ideal $(x_1)$ in $\OO[x_2/x_1,\dots,x_n/x_1]$ that is not the unit ideal, the minimal prime and its one-dimensional localization, the Krull--Akizuki step, and the localization at a maximal ideal. Part (b) is proved from the criteria of (4.3) and (4.7) at printed pp. 100--103, which is where the book states them.
 
 ::: pf
 
