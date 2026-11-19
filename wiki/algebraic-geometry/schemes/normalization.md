@@ -44,9 +44,7 @@ That sheaf is also what the normalization is glued from: the integral closure of
 
 ## Normalization
 
-For an integral scheme $X$ the normalization $\nu\colon\tilde X\to X$ is characterized by a universal property among dominant morphisms from normal integral schemes, and it exists: affine-locally it is $\Spec\tilde A\to\Spec A$ for the integral closure, and the pieces glue.
-For a variety over a field the map $\nu$ is finite and birational, and it is projective when $X$ is [@Har77, Exercise II.3.8].
-The universal property is what makes normalization a functorial repair rather than an arbitrary desingularization: any dominant map from a normal scheme into $X$ lifts uniquely.
+[[D-SCHNORM]]
 
 ## Normalization of curves
 
