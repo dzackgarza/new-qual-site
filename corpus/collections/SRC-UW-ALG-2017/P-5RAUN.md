@@ -12,6 +12,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 7 of the Algebra Preliminary Examination 2017 (University of
+    Washington), printed p. 1 of the single-page paper retained at
+    assets/attachments/UW-Algebra-Qual-2017.pdf, is the statement the card answers; the paragraph
+    at the head of the solution already recorded that the paper prints no solutions, and now names
+    the problem and the page. Checked: the statement and its printed hint about the determinant
+    against the paper's text layer at the page named; the solution read for the faithful
+    representation with determinant one, the divisibility of the character degree by the group
+    order, and the element of order 2 acting as minus the identity; `qualc.authoring check` on the
+    card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained solution set
+    exists for this paper to compare the argument with, the mathematics of the card is not
+    re-proved in this pass, and no other card of the collection in this pass.
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
@@ -36,7 +51,7 @@ Show that a finite simple group cannot have a 2-dimensional irreducible represen
 
 
 ::: {.solution}
-No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/UW-Algebra-Qual-2017.pdf`, which is the question paper (it opens "Do as many of the eight problems as you can") and contains no solutions. The argument below is the card's own; it is the card's previous prose with the character-degree divisibility made a separate step and its conclusion used in the place it is needed.
+No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/UW-Algebra-Qual-2017.pdf`, the question paper of the Algebra Preliminary Examination 2017 (University of Washington) (it opens "Do as many of the eight problems as you can", and this is Problem 7, printed p. 1), and it contains no solutions. The argument below is the card's own; it is the card's previous prose with the character-degree divisibility made a separate step and its conclusion used in the place it is needed.
 
 Throughout $G$ is a finite simple group, $\rho:G\to\GL(V)$ is an irreducible complex representation with $\dim_\CC V=2$, and $\cardinality{\cdot}$ denotes order.
 
