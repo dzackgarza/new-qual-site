@@ -27,9 +27,20 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.G Exercise 1, printed p. 456, the mapping telescope and the instruction to do the case $n=2$ first matching the printed text; the card's argument is the $n=2$ picture applied stage by stage. No retained solution set covers this exercise; the argument is the card's own. Checked: the finite telescope $T_n$ sits inside the finite iterated mapping cylinder $M_n$; the ordinary mapping cylinder retracts onto its target fixed on the target, so the $r_n$ are compatible; and the direct-limit topology of the union makes the assembled homotopy continuous.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 465 carries the running head 456, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.G of Hatcher, *Algebraic Topology* (2002), printed p. 456, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Show that for a sequence of maps $X_0 \xrightarrow{f_1} X_1 \xrightarrow{f_2} \cdots$, the infinite iterated mapping cylinder $M(f_1, f_2, \ldots)$, which is the union of the finite iterated mapping cylinders $M(f_1, \ldots, f_n)$, deformation retracts onto the mapping telescope.
 :::
 
