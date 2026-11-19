@@ -11,6 +11,19 @@ classification:
   - Character Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    4 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the printed presentation of Q_8 against the classes used, and the completed
+    character table; `qualc.authoring check` on the card. The card carries no `pf` block, so `tmp/lam.sh`
+    does not apply to it and was not run. Not checked: no retained solution set exists for this paper to compare the argument with, and
+    no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -31,6 +44,9 @@ Calculate the character table of $Q_8$.
 :::
 
 ::: {.solution}
+
+The problem is Problem 4 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 4 of the nine-page paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the character table itself: the five conjugacy classes, the four one-dimensional characters through the abelianisation, and the two-dimensional irreducible representation
+
 The conjugacy classes are
 $$
 \{1\},\qquad \{-1\},\qquad \{\pm i\},\qquad \{\pm j\},\qquad \{\pm k\}.
