@@ -89,4 +89,4 @@ UBC Math 440/508, Fall 2017:
 
 UCSD Math 220A, Fall 2017:
 
-- [Homework 6 solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)
+- [Homework 6 solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%206%20Solutions.pdf)
