@@ -6910,3 +6910,22 @@ failure belongs to the one script rather than to the corpus.
 **Repair.** This record only. **Uncertainty.** The four counts above are the tools'; the 178 was not
 inspected card by card and the 12,429 was not either. Not run, as above: the dead-href fetch. Not
 read for this record: any card file.
+
+## 2026-11-19, sixth item: §1.2 of Hoffman--Kunze read by a second reader — three cards correct, one with an asserted-but-unproved associativity and a back-reference qed
+
+**Object.** The collection's §1.2 cards had one `solution-reviewed` reader each and that reader was their author. Four were read here against the retained text: `E-HK-12-2`, `E-HK-12-3`, `E-HK-12-4` and `E-HK-12-5`, at printed p. 5 of `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf`, where each statement was checked against the printed exercise.
+
+**The three that are correct.** `E-HK-12-2`: the four identities relating $A_1=x_1-x_2$, $A_2=2x_1+x_2$ to $B_1=3x_1+x_2$, $B_2=x_1+x_2$ all recompute coefficientwise, so the two spans coincide. `E-HK-12-3`: all five identities relating the 3×3 and 2×3 systems recompute. `E-HK-12-4`: $(1+i,2i,3,0)$ satisfies both equations of the first system and gives $11/3-i/3\ne0$ in the second system's fourth equation, so the systems are not equivalent. Each card records the second read as a `solution-reviewed` event of this date with the computation in the note.
+
+**The one repaired: `E-HK-12-5`, the two-element field.** Two defects, neither visible to any gate.
+
+1. The step `addition-commutative-associative` claimed "Addition is commutative and associative" and its proof showed only symmetry of the table, the identity and the self-inverse claim. Associativity on $\{0,1\}$ is not free: the two bracketings are now checked, $(1+1)+1=0+1=1=1+0=1+(1+1)$ and $(1+1)+0=0+0=0=1+1=1+(1+0)$, with a triple containing a $0$ reducing to the sum of the other two.
+2. A trailing `pf-qed` whose whole content was `Step [](#f-is-field)` — a back-reference and nothing else — was removed, as STYLE-08 asks; the last step is now the QED step. This is the same defect the seventh item of this date recorded on `P-AMD-6OJQMSOZ` and `P-EVBF7`, so it is not confined to one collection.
+
+The other three proofs of the card were rewritten in sentences that start as sentences with the same content: multiplication is associative because a product is $1$ exactly when all three factors are $1$; distributivity because $a=0$ gives $0=0$ and $b=0$ or $c=0$ reduces to the remaining product, leaving $1(1+1)=1\cdot0=0=1+1=1\cdot1+1\cdot1$. No statement and no other step changed.
+
+**Repair.** Four commits: `E-HK-12-2` `e67f315767`, `E-HK-12-3` `03f608dc24`, `E-HK-12-4` `f66b18b40b`, `E-HK-12-5` `0ad37ea965`. Checks on each: `.scratch/report_check.py`, 0 diagnostics; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, steps numbered and QED labels present; `tools/check_macros.py` on `E-HK-12-5`, OK; the pre-commit card-YAML and schema hook on each commit.
+
+**What the gates do not see.** Both defects in `E-HK-12-5` pass `qualc check`'s per-card checks: an assertion that its proof does not establish, and a qed that only points backwards. The second has a style rule; the first has nothing but a reader.
+
+**Uncertainty.** The remaining §1.2 cards (`E-HK-12-6`, `-7`, `-8`) were not read in this pass, and nothing is claimed about them. The three cards called correct were checked for the computations the card displays, not re-derived from the axioms.
