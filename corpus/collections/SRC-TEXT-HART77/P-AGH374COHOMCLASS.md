@@ -643,6 +643,66 @@ audit:
     p. 117, which are the pages steps s2 and the head cite. Not checked: no
     source for the base change the withdrawn s3 asserted was located in this
     pass, and the card no longer uses one.
+
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The two pages step s2 rests on, and the status of the transverse-square base
+    change. (i) Read on the printed pages, as page images of the Numdam scan,
+    Theorem (13.5), printed p. 113: at any point where $X$ is locally
+    Cohen-Macaulay the map (13.4) is an isomorphism of
+    $\operatorname{Ext}^{n-d}_{\OO_X}(\OO_V,\tilde\omega_X)$ onto
+    $\tilde\omega_V$; and Theorem (13.12), printed p. 117, with (13.12.1) and
+    (13.12.2): for $\nu\in\Omega^d_{R/k}$ there is a $\nu'\in g\tilde\omega:P$
+    satisfying (13.12.1), unique modulo $g\tilde\omega$, and it satisfies
+    (13.12.2), that its residue is the residue of $\nu$. The assumptions are
+    those of (13.11), $R=\OO_{X,v}$ Cohen-Macaulay, which holds at the points of
+    a nonsingular divisor in a nonsingular $X$; Corollary (13.6) on printed
+    p. 113 is the local complete intersection case and is not needed here. (ii)
+    The divisor formula of step s2 has a second published proof in characteristic
+    zero: Axiom (A9) of the Stacks Project's Section 50.22, printed pp. 4267--4268,
+    proves the commutativity of the square joining restriction, cup with
+    $c_1^{dR}(\OO_X(Y))$ and the two traces, which for
+    $\nu\in H^{d-1}(X,\Omega^{d-1})$ is that formula, the two traces agreeing
+    because both take the value $1$ on the class of a point; the section is over a
+    field of characteristic $0$ (printed p. 4265), and its auxiliary statement,
+    that the kernel of restriction is killed by $c_1^{dR}(\OO_X(Y))$, is Lemma
+    50.15.6, printed p. 4240, which holds in every characteristic. (iii) The
+    base change of the withdrawn step s3 is used by no step of the solution, and
+    no proof of it for these Gysin maps was located. What the Stacks Project
+    proves is base change for the $\gamma$-maps, Lemma 50.23.10, printed
+    pp. 4272--4273, and it compares $\gamma$ with a trace only in the divisor case
+    (Axiom (A9)) and at a point (Lemma 50.23.11, printed p. 4273). The identity is
+    itself equivalent to the projection formula $j^*i_*w=c_1(\OO_Y(H))\smile j^*w$
+    for every class $w$ on $H$: testing it against $w$, and applying the divisor
+    formula to $Z\subset Y$, turns it into that identity, and the two sides of
+    that identity agree whenever $w$ is the restriction of a class on $X$. Not
+    checked in this pass: no other source was searched for the base change.
+
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s3 was stated for hyperplanes of a projective space and is now stated
+    for nonsingular divisors $D_1,\ldots,D_r$ of a nonsingular projective $X$
+    whose partial intersections are nonsingular of the expected codimension. No
+    step of the induction changes: the proof already used only the divisor case
+    of s2, the composition of the adjunction Gysin maps and the projection
+    formula, with $\mathcal L(D_k)|_{Y_{k-1}}=\OO_{Y_{k-1}}(Y_k)$ in place of the
+    hyperplane restriction. The general statement carries a corollary that the
+    hyperplane form did not, and it is the base change of the transverse square
+    in the case where the subvariety is a complete intersection: if a nonsingular
+    divisor $H$ meets every $Y_k$ transversely, the product formula in $H$ for
+    the divisors $D_k\cap H$ and the multiplicativity of $i^*$ give
+    $i^*\eta(Y)=\eta_H(Y\cap H)$, which is $i^*j_*=(j_H)_*i_Y^*$ on the class
+    $1$. Read in this pass: Yang Pi-Yeh's Solution 3.7.4(b), printed p. 75, in
+    the text version tmp/sources/lfwin-hartshorne-solutions.md, against the
+    printed exercise, III.7.4(b) on printed p. 250, II.8.18 on printed p. 179 and
+    Exercise III.7.3 on printed p. 249; the transcription and what it leaves out
+    are recorded in COMPLAINTS.md, not on the card. Not checked: the base change
+    in the case where the subvariety is not a complete intersection, which no
+    step of this solution uses.
 ---
 
 ::: {.problem}
@@ -711,7 +771,7 @@ $$
 $$
 The definition is forced by the exercise and is not a further choice: the exercise defines $\eta(Y)$ as the class of the functional $b\mapsto t_Y(j^*b)$, so $\eta(Y)=j_*(1)$. By III.7.6 the pairing is perfect, so this determines $j_*$.
 
-One compatibility property is used, and it is proved below: the residue formula for a nonsingular divisor, step [](#s2){.pf-ref}, which relates the trace on $X$ to the trace on $D$. In class form it is part (d), the Gysin class of a divisor being the $c_1$ of its invertible sheaf; step [](#s7){.pf-ref} reads that form off. Step [](#s3){.pf-ref} then computes the Gysin class of a linear subspace from it and from the projection formula, and step [](#s4){.pf-ref} proves part (b) by cutting $Y$ with $n-p$ general hyperplanes and iterating the divisor formula on $Y$ itself, which is the cut the printed hint asks for. Part (a) uses only (N).
+One compatibility property is used, and it is proved below: the residue formula for a nonsingular divisor, step [](#s2){.pf-ref}, which relates the trace on $X$ to the trace on $D$. In class form it is part (d), the Gysin class of a divisor being the $c_1$ of its invertible sheaf; step [](#s7){.pf-ref} reads that form off. Step [](#s3){.pf-ref} then computes the Gysin class of a smooth complete intersection, in particular of a linear subspace, from it and from the projection formula, and step [](#s4){.pf-ref} proves part (b) by cutting $Y$ with $n-p$ general hyperplanes and iterating the divisor formula on $Y$ itself, which is the cut the printed hint asks for. Part (a) uses only (N).
 
 ::: pf
 
@@ -797,11 +857,15 @@ which is the asserted formula.
 
 ::: {.pf-step #s3}
 
-Let $H_1,\ldots,H_r\subseteq X=\PP^n$ be hyperplanes in general position, put $L=H_1\cap\cdots\cap H_r\cong\PP^{n-r}$, and let $i:L\hookrightarrow\PP^n$ be its inclusion. Then
+Let $D_1,\ldots,D_r$ be nonsingular divisors of a nonsingular projective variety $X$ such that every intersection $Y_k=D_1\cap\cdots\cap D_k$ is nonsingular of codimension $k$, and let $\iota_k:Y_k\hookrightarrow X$ be the inclusion; put $Y=Y_r$. Then
 $$
-\boxed{\eta_{\PP^n}(L)=i_*(1)=c(\mcl(H_1))\smile\cdots\smile c(\mcl(H_r))} ,
+\boxed{\eta(Y_k)=(\iota_k)_*(1)=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_k))}
 $$
-the empty product for $r=0$ being $1\in H^0(\PP^n,\OO_{\PP^n})$.
+in $H^k(X,\Omega_X^k)$, the empty product for $k=0$ being $1$. If in addition $H\subseteq X$ is a nonsingular divisor meeting every $Y_k$ transversely, and $Z=Y\cap H$, then
+$$
+\boxed{i^*\eta(Y)=\eta_H(Z)},
+$$
+which is the base change $i^*j_*=(j_H)_*\,i_Y^*$ of the transverse square for the class $1$.
 
 ::: pf-proof
 
@@ -817,21 +881,33 @@ t_X\bigl(\iota_*\bigl(x\smile\restrictionof{\gamma}{D}\bigr)\smile z\bigr)
 $$
 the middle term being $t_D\bigl(x\smile\restrictionof{(\gamma\smile z)}{D}\bigr)$ because restriction is a ring homomorphism. The pairing is perfect (III.7.6, printed p. 243), so the two classes agree.
 
-**The class of a linear subspace.** Put $L_k=H_1\cap\cdots\cap H_k$ and let $\iota_k:L_k\hookrightarrow\PP^n$ and $\nu_k:L_k\hookrightarrow L_{k-1}$ be the inclusions, so that $L_0=\PP^n$, $L_r=L$, and $\iota_k=\iota_{k-1}\circ\nu_k$. The two adjunction Gysin maps compose, in the sense that
+**The class of a complete intersection.** Put $Y_0=X$ and let $\nu_k:Y_k\hookrightarrow Y_{k-1}$ be the inclusion, so that $\iota_k=\iota_{k-1}\circ\nu_k$. The two adjunction Gysin maps compose, in the sense that
 $$
 (\iota_k)_*(1)=(\iota_{k-1})_*\bigl((\nu_k)_*(1)\bigr),
 $$
-because each side pairs with $w\in H^{n-k}(\PP^n,\Omega_{\PP^n}^{n-k})$ to $t_{L_k}(\restrictionof{w}{L_k})$: for the left side that is the definition of $(\iota_k)_*$, and for the right side it is the definition of $(\nu_k)_*$ followed by that of $(\iota_{k-1})_*$. The claim is $(\iota_k)_*(1)=c(\mcl(H_1))\smile\cdots\smile c(\mcl(H_k))$, by induction on $k$; the case $k=1$ is part (d) in the class form of step [](#s2){.pf-ref}. For $k\ge2$ the hyperplane $L_{k-1}$ meets $H_k$ transversely in $L_k$, so $\restrictionof{\mcl(H_k)}{L_{k-1}}\cong\OO_{L_{k-1}}(L_k)$, and step [](#s2){.pf-ref} applied to the divisor $L_k$ of $L_{k-1}$ gives
+because each side pairs with $w\in H^{n-k}(X,\Omega^{n-k})$ to $t_{Y_k}(\restrictionof{w}{Y_k})$: for the left side that is the definition of $(\iota_k)_*$, and for the right side that of $(\nu_k)_*$ followed by that of $(\iota_{k-1})_*$. The claim is $(\iota_k)_*(1)=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_k))$, by induction on $k$; the case $k=1$ is part (d) in the class form of step [](#s2){.pf-ref}. For $k\ge2$ the divisor $Y_k$ of $Y_{k-1}$ is cut out by $D_k$, so $\restrictionof{\mcl(D_k)}{Y_{k-1}}\cong\OO_{Y_{k-1}}(Y_k)$, and step [](#s2){.pf-ref} applied to the divisor $Y_k$ of $Y_{k-1}$ gives
 $$
-(\nu_k)_*(1)=c\bigl(\OO_{L_{k-1}}(L_k)\bigr)=\restrictionof{c(\mcl(H_k))}{L_{k-1}} .
+(\nu_k)_*(1)=c\bigl(\OO_{Y_{k-1}}(Y_k)\bigr)=\restrictionof{c(\mcl(D_k))}{Y_{k-1}} .
 $$
 The projection formula and the induction hypothesis then give
 $$
 (\iota_k)_*(1)
-=(\iota_{k-1})_*\bigl(\restrictionof{c(\mcl(H_k))}{L_{k-1}}\bigr)
-=(\iota_{k-1})_*(1)\smile c(\mcl(H_k))
-=c(\mcl(H_1))\smile\cdots\smile c(\mcl(H_k)).
+=(\iota_{k-1})_*\bigl(\restrictionof{c(\mcl(D_k))}{Y_{k-1}}\bigr)
+=(\iota_{k-1})_*(1)\smile c(\mcl(D_k))
+=c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_k)).
 $$
+The case used in step [](#s4){.pf-ref} is $X=\PP^n$ with the $D_i$ hyperplanes, where $L=Y_r\cong\PP^{n-r}$.
+
+**Base change in this case.** If $H$ meets every $Y_k$ transversely, then $Y_k\cap H$ is a nonsingular divisor of $Y_{k-1}\cap H$, cut out by the restriction of $D_k$, so the formula just proved applies in $H$ to the divisors $D_k\cap H$ and gives
+$$
+\eta_H(Z)=c\bigl(\mcl_H(D_1\cap H)\bigr)\smile\cdots\smile c\bigl(\mcl_H(D_r\cap H)\bigr).
+$$
+Since $\mcl_H(D_k\cap H)=i^*\mcl(D_k)$ and $i^*$ is a ring homomorphism on $H^*(\Omega^\bullet)$,
+$$
+i^*\eta(Y)=i^*\bigl(c(\mcl(D_1))\smile\cdots\smile c(\mcl(D_r))\bigr)
+=c(i^*\mcl(D_1))\smile\cdots\smile c(i^*\mcl(D_r))=\eta_H(Z),
+$$
+which is the identity of the statement.
 
 :::
 
@@ -998,7 +1074,7 @@ So $t_X(c(\OO(P)))=+1=t_P(1)$, which is the case $n=1$ of the formula of step []
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a linear subspace with the product of the $c_1$ of the hyperplanes cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
+Step [](#s1){.pf-ref} proves part (a) from the normalization (N). Step [](#s5){.pf-ref} proves part (c). Step [](#s2){.pf-ref} proves the residue formula for a nonsingular divisor, valid in every dimension, and step [](#s7){.pf-ref} reads part (d) off it, the class of a divisor being the $c_1$ of its invertible sheaf. Step [](#s3){.pf-ref} identifies the Gysin class of a smooth complete intersection with the product of the $c_1$ of the divisors cutting it out, and step [](#s4){.pf-ref} pairs that class with the class of $Y$, counting $d=\deg Y$ by the divisor formula of step [](#s2){.pf-ref} along the hyperplane sections of $Y$, which is part (b). Every assertion of the exercise is therefore a theorem about the one trace fixed by (N) and (C).
 
 :::
 
@@ -1017,5 +1093,5 @@ A canonical normalization does exist, and the statement carries it: the trace is
 ::: {.remark title="Published solutions"}
 Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), printed p. 75, the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), PDF p. 170, the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), printed p. 75, and Kim, Exercise 3.7.4(c), PDF p. 170, both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Parts (b) and (d) rest on the residue formula of step [](#s2){.pf-ref}, which is the residue theorem of Lipman's Astérisque 117 in the form needed here: (0.6)(a) and (0.6)(d) (printed pp. 24--25) identify the trace with the sum of the residues at the closed points, and the local computation at a point of the divisor identifies the residue of the $d\log$ class with that of the restricted class. Yang's (b) cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; step [](#s4){.pf-ref} carries that argument out, and the transfer his proof asserts is supplied there by pairing the class of the linear subspace, which step [](#s3){.pf-ref} computes, with the class of $Y$, which step [](#s2){.pf-ref} evaluates on the points. His (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s4){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.
+Parts (b) and (d) rest on the residue formula of step [](#s2){.pf-ref}, which is the residue theorem of Lipman's Astérisque 117 in the form needed here: (0.6)(a) and (0.6)(d) (printed pp. 24--25) identify the trace with the sum of the residues at the closed points, and the local computation at a point of the divisor identifies the residue of the $d\log$ class with that of the restricted class. In characteristic zero the same identity has a second proof, in the Stacks Project's verification that de Rham cohomology is a Weil cohomology theory: Axiom (A9) of Section 50.22, printed pp. 4267--4268, is the commutativity of the square joining restriction $H^{2d-2}_{dR}(X/k)\to H^{2d-2}_{dR}(Y/k)$, cup product with $c_1^{dR}(\mathcal O_X(Y))$, and the two traces $\lambda_X,\lambda_Y$, which for $\nu\in H^{d-1}(X,\Omega^{d-1})$ is the formula of step [](#s2){.pf-ref}. Its proof uses that the kernel of restriction is killed by $c_1^{dR}(\mathcal O_X(Y))$ (Lemma 50.15.6, printed p. 4240), reduces to the one class $c_1^{dR}(L)^{d-1}$ for ample $L$, where $H^{2d-2}_{dR}(Y/k)$ is one-dimensional by Poincaré duality for $Y$, and closes with the cycle identity $(Y\to X)_*(c_1(L|_Y)^{d-1}\cap[Y])=c_1(\mathcal O_X(Y))\cap c_1(L)^{d-1}\cap[X]$. That section works over a field of characteristic $0$ (printed p. 4265), so the residue proof remains the one that holds in every characteristic. Yang's (b) cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; step [](#s4){.pf-ref} carries that argument out, and the transfer his proof asserts is supplied there by pairing the class of the linear subspace, which step [](#s3){.pf-ref} computes, with the class of $Y$, which step [](#s2){.pf-ref} evaluates on the points. His (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s4){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.
 :::
