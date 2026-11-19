@@ -31,6 +31,21 @@ The proof maximizes $\abs{f'(z_0)}$ over the injective holomorphic maps $\Omega\
 
 :::
 
+::: {.example title="The map of a strip, written down"}
+For the strip $L = \theset{0<\Im z<\pi}$ the exponential carries $L$ onto $\HH$, and [[complex-analysis/conformal-maps/build-me-a-map|the Cayley map]] carries $\HH$ onto $\DD$, so
+$$
+F(z) = {e^z-i\over e^z+i}
+$$
+is a biholomorphism $L\to\DD$.
+It is the normalized one at $z_0 = i\pi/2$: $F(i\pi/2) = 0$, and since $F'(z) = 2ie^z/(e^z+i)^2$,
+$$
+F'(i\pi/2) = {2i\cdot i\over (2i)^2} = \frac12 > 0,
+$$
+which is the pair of conditions under which [@SS03, Theorem 3.1 (p. 224)] makes the map unique.
+The boundary lines land on the two semicircles: $\Im z = 0$ on the lower one, through $F(0) = -i$, and $\Im z = \pi$ on the upper one, through $F(i\pi) = i$, with both ends tending to $-1$ and to $1$.
+Inside, $F(0.3+0.7i) = 0.1802\ldots-0.4527\ldots i$, of modulus $0.4872\ldots$
+:::
+
 [[C-BKYF7]]
 
 [[P-Z776N]]
