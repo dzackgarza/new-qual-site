@@ -39,6 +39,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: the NUS 1970 paper — every route tried, and what each one returned
+
+**Object and need.** Both NUS collections carry an imported label (`NUS, 1970, Spring`) that no document supports, and their `provenance:` lists are empty because a YAML of transcribed questions is not a source. The question is the paper. This record is the coverage, so that the next session does not repeat a dead route or read a refusal as an absence.
+
+**Observed evidence, route by route.**
+
+| Route | What it returned |
+| --- | --- |
+| Internet Archive catalogue, title field: `examination papers` with `University of Singapore` | `numFound: 0` |
+| Internet Archive catalogue, `text:` field, same terms | `numFound: 0` |
+| `digitalgems.nus.edu.sg/browse/collection/31` (the address the library FAQ gives for examination papers) | 404, while the site root answers 200 |
+| `digitalgems.nus.edu.sg/search?q=examination+papers` | 500 |
+| WorldCat search | 429 on the first request; not retried |
+| Google Books API, `"University of Singapore" "examination papers"` | 429, "Quota exceeded … 'Queries per day'" for the platform's project — twice, an hour apart |
+| `search.nus.edu.sg` (NUS Libraries catalogue) | connection timeout from this VM, twice |
+| `catalogue.nlb.gov.sg` | 200, but a JavaScript application ("Vega Discover") with no server-rendered results to read |
+| NUS Libraries Examination Papers database | the library's FAQ states access is restricted to NUS staff and students and that only the five most recent years are offered |
+
+**Impact and owner.** No route names the paper. What the collections' pages carry is the negative result and the fact that the label is imported; nothing here identifies a sitting, and the cards' mathematics does not depend on one.
+The one route that is untried rather than negative is the Google Books index: its quota is per project per day, so a later session may query it.
+
+**Uncertainty.** The Internet Archive and Digital Gems results are absences and are reported as such; the 429s, the timeout and the JavaScript catalogue are refusals or failures and are reported as neither absence nor presence.
+
+**Repair:** none available from this VM; the identification is open.
+
 ## 2026-11-19: all eighteen Berkeley Fall 2010 cards now name the packet's problem and page
 
 **Object and need.** The earlier record of this date began this batch: the collection retains its solution packet and its cards never said they were written from it. Thirteen cards remained then; they are done, and the collection is closed on this defect.
