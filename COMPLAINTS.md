@@ -8876,3 +8876,17 @@ and the printed book itself. Of 4.4.4, the cases 1--6 were read but only case 7 
 **Checks.** `qualc.authoring check` on both cards: "schema and Markdown parsing OK (single card)"; the pre-commit card-YAML and schema hook on both commits; the folios of PDF pp. 62 and 4--5 of Kock read with `pdftotext` on the single page.
 
 **Uncertainty.** Four leads of the second reader are recorded here and not acted on, because the cards are not read: `P-AGH5111FINITEAUT` step `s10`'s display $K_{C\times C}=p_1^*K_C+p_2^*K_C$, for which it names II Ex 8.3(b), printed p. 187, as the locator; `P-AGH562CHERNGRIFFITHS`'s `trivial-canonical-pg-one`, which attributes to Yang and Egbert "by Theorem 6.1" while both retain sets print 6.2; `P-AGH5210CANONSCROLL` step `s3`'s sheaf form of $K_Y=\OO_Y(H)$, which it attributes to V.1.5 (the numerical version) rather than II.8.20; and `P-AGH4110PICOFARITHGENUSONE` step `s6`'s $L(E)$, which reads as false under one sense of the symbol and as the intended step under the other. None of the four is verified here, and none is repaired. The fifteen cards the first record lists as unread are still unread.
+
+## 2026-11-19, nineteenth item: §8.3 Ex. 5 repaired at the edges, Ex. 11 correct
+
+**Object.** Two residue-5 cards of `SRC-TEXT-HK71`, read against the retained text.
+
+**`E-HK-83-5`, §8.3 Exercise 5, printed p. 297 — correct, two edge repairs.** The mathematics is right: with $(AB)^*=B^*A^*$, one has $(T^{-1})^*T^*=(TT^{-1})^*=I$ and $T^*(T^{-1})^*=(T^{-1}T)^*=I$, so $(T^{-1})^*$ is a two-sided inverse of $T^*$. Two structural defects repaired: the last step's proof was only two back-references and now unpacks what a two-sided inverse is, and a trailing `pf-qed` that was only `Step [](#s3)` is removed. Commit `871fb9b7c4`. The page was first written as 284 and corrected to 297.
+
+**`E-HK-83-11`, §8.3 Exercise 11, printed p. 298 — correct.** If $E=E^*$ then $EE^*=E^2=E^*E$. Conversely, $EE^*=E^*E$ gives $\|E^*v\|^2=(EE^*v\mid v)=(E^*Ev\mid v)=\|Ev\|^2$, so $\ker E=\ker E^*$; then $\operatorname{range}E=(\ker E^*)^\perp=(\ker E)^\perp$ by the adjoint identity of Exercise 4, so $E$ is the orthogonal projection onto its range along its kernel, and those are self-adjoint. Commit `bb2b7e2f66`.
+
+**A small lesson on the anchor.** The first attempt to extend `E-HK-83-5`'s audit note asserted that the sentence "No claim changed; the solution now cites the retained text" occurs in the file; it does not, because the YAML block scalar wraps it across two lines. The assertion stopped the script before anything was written, so the card was untouched; the edit was redone by anchoring on the wrapped final line instead. A text anchor inside a wrapped YAML note has to match the file's line breaks, not the sentence's.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, `E-HK-83-5` numbering 1–3 and `E-HK-83-11` 1–4, QED labels present; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; `E-HK-83-11` uses the identity $\operatorname{range}E=(\ker E^*)^\perp$ from Exercise 4 and the self-adjointness of orthogonal projections as the book states them, without re-proving either.
