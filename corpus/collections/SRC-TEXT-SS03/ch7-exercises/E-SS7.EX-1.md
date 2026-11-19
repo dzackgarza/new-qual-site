@@ -18,6 +18,15 @@ audit:
     date: 2026-11-18
     note: >-
       Restructured the prose solution into Lamport steps. The collection's provenance is the publisher's catalogue record only, with no retained text and no retained solution set, so the statement is taken as the card prints it; the argument is the card's own. Checked: the Abel summation identity, the boundary estimate $MN^{-\sigma}$, the integral form of the differences and its bound, and the uniform $M$-test bound $MCn^{-1-\delta}$ on compact subsets.
+  - event: source-checked
+    by: claude
+    date: 2026-11-19
+    note: >-
+      Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, at its printed folio (the scan runs nineteen pages ahead of
+      the printed page): the statement is Exercise 1 at the head of the Chapter 7 Exercises,
+      printed p. 199, and its printed words are the card's. The chapter, the exercise number and
+      the page are now named in the solution's opening sentence. Not checked in this pass: the
+      argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
@@ -35,6 +44,7 @@ converges for $\Re(s) > 0$ and defines a holomorphic function in this half-plane
 :::
 
 ::: {.solution}
+This is Exercise 1 of Chapter 7 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 199; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. The proof is summation by parts followed by the integral estimate for the differences $n^{-s}-(n+1)^{-s}$, which gives absolute and locally uniform convergence on $\Re s>0$.
 
 ::: pf
