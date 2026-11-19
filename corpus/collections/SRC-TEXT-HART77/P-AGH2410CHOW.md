@@ -62,6 +62,7 @@ Show that $h$ is a closed immersion, hence $X'$ is projective over $S$.
 :::
 
 ::: {.solution}
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.10, p. 38 of the held scan, transcribed step by step and checked against the exercise at printed p. 107: the reduction to $S$ affine and $X$ integral, the closed immersion into a projective scheme over $S$, the blowup along the ideal of the image and the identification of the open set on which the blowup is an isomorphism.
 
 ::: pf
 
