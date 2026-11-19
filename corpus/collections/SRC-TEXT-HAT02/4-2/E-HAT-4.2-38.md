@@ -13,6 +13,19 @@ review: draft
 audit:
 - event: solution-reviewed
   by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology (2002), §4.2 Exercise 38, printed p. 392, and
+    Example 4.52, printed p. 380. The argument is right: the universal cover of S^1 v S^2
+    is a wedge of countably many 2-spheres indexed by Z, Example 4.52 gives pi_3 of that
+    wedge as the free abelian group on the Hopf classes eta_k and the Whitehead products
+    [iota_a, iota_b] with a < b, and the deck transformation acts by shifting the index, so
+    pi_3(S^1 v S^2) is a free Z[t,t^{-1}]-module of infinite rank and no finitely generated
+    submodule can contain it. One sentence needed repair: the card said the checkout's only
+    §4.2 set is Proudfoot's, which is false since Sam's set is there too; the coverage claim
+    about this exercise is nonetheless correct. Statement unchanged.
+- event: solution-reviewed
+  by: claude
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m7__proofs-4-2-14-26.md (14-26: 11 correct, 16 and 26 each a single named step; both repaired) and m5__proofs-4-2-27-39.md (27-39: 10 correct, 28, 29 defective single cases, 34 a wrong intermediate assertion; all three repaired). No card in this slice has an unmet piece.
@@ -39,7 +52,7 @@ Show $\pi_3(S^1 \vee S^2)$ is not finitely generated as a module over $\ZZ[\pi_1
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, printed p. 392, and it rests on Example 4.52, printed p. 380, which computes $\pi_3$ of a wedge of $2$-spheres.
+No retained solution set covers this exercise: of the two §4.2 sets in the checkout, Sam's reaches exercise 32 and Proudfoot's Homework #7 covers 1, 2, 30, 31, 32 and 39, so neither reaches 38. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, printed p. 392, and it rests on Example 4.52, printed p. 380, which computes $\pi_3$ of a wedge of $2$-spheres.
 
 Let $X=S^1\vee S^2$. Its universal cover $\widetilde X$ is an infinite string of copies $S^2_k$ of $S^2$, one attached at each integer $k\in\ZZ$; write $\iota_k\in\pi_2(\widetilde X)$ for the class of the inclusion of the $k$-th sphere, and $t$ for the deck transformation generating the deck group.
 
