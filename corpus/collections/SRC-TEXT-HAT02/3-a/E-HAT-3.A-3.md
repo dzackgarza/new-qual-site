@@ -64,8 +64,12 @@ audit:
     the two facts that make divisibility and torsionfreeness come out. The page numbers were then checked
     against the retained PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF
     page - 9: Theorem 3A.3 on p. 264 (PDF 273), Proposition 3A.5 on p. 265 (PDF 274) and Corollary
-    3A.6 on p. 266 (PDF 275), each as cited. What is still not checked: the universal coefficient
-    theorem's own page, 197, which the search did not locate by its heading.
+    3A.6 on p. 266 (PDF 275), each as cited. The universal coefficient theorem's own page was
+    then located: the card cited p. 197, but the page search puts the algebraic form of the theorem,
+    with its sequence 0 -> Ext(H_{n-1}(C),G) -> H^n(C;G) -> Hom(H_n(C),G) -> 0, on printed p. 195
+    (PDF 204) and the topological form for a space X on printed p. 198 (PDF 207), while printed
+    p. 197 (PDF 206) is the section's title page and states nothing. The citation is corrected to
+    those two pages.
 ---
 
 ::: {.problem}
@@ -81,7 +85,7 @@ The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a comp
 For a field $F$ one has $H^{n}(X;F)\cong\Hom_{F}(H_{n}(X;F),F)$; hence the hypothesis of the exercise implies $\widetilde H_{n}(X;\QQ)=0$ and $\widetilde H_{n}(X;\ZZ_{p})=0$ for every $n$ and every prime $p$.
 
 ::: pf-proof
-For a field $F$, $C^{n}(X;F)=\Hom_{\ZZ}(C_{n}(X),F)\cong\Hom_{F}(C_{n}(X)\otimes_{\ZZ}F,F)=\Hom_{F}(C_{n}(X;F),F)$, so the cochain complex over $F$ is the $F$-dual of the chain complex of $F$-vector spaces. Dualizing vector spaces is exact, so taking homology commutes with the duality and $H^{n}(X;F)\cong\Hom_{F}(H_{n}(X;F),F)$; this is the module-coefficient universal coefficient theorem over a field, where the $\Ext$ term vanishes (p. 197). A vector space with trivial dual is trivial, so vanishing of the cohomology over $F=\QQ$ and over $F=\ZZ_{p}$ forces the corresponding homology to vanish.
+For a field $F$, $C^{n}(X;F)=\Hom_{\ZZ}(C_{n}(X),F)\cong\Hom_{F}(C_{n}(X)\otimes_{\ZZ}F,F)=\Hom_{F}(C_{n}(X;F),F)$, so the cochain complex over $F$ is the $F$-dual of the chain complex of $F$-vector spaces. Dualizing vector spaces is exact, so taking homology commutes with the duality and $H^{n}(X;F)\cong\Hom_{F}(H_{n}(X;F),F)$; this is the module-coefficient universal coefficient theorem over a field, where the $\Ext$ term vanishes (printed p. 195 for the algebraic form, printed p. 198 for the topological one). A vector space with trivial dual is trivial, so vanishing of the cohomology over $F=\QQ$ and over $F=\ZZ_{p}$ forces the corresponding homology to vanish.
 :::
 :::
 
