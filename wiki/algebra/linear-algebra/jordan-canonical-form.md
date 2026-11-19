@@ -43,7 +43,7 @@ For $\lambda = -6$, the block sizes sum to $2$ and the largest is $1$, so the bl
 ::: {.warnings title="The two polynomials do not determine the form"}
 For $4\times 4$ matrices with $\min_A(t) = t^2$ and $\chi_A(t) = t^4$ there are two similarity classes, $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$.
 They are distinguished by $\dim\ker A$, which is $2$ and $3$ respectively.
-In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$, which is the rank-sequence computation of [[PR-5A2W4]].
+In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number of Jordan blocks for $\lambda$ of size at least $k$, which is the rank-sequence computation of [[PR-5A2W4|the Jordan-chain construction]].
 :::
 
 ## Generalized eigenspaces
