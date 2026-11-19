@@ -81,9 +81,15 @@ the only enclosed pole being $z_0 = e^{i\pi/n}$, where $z_0^n = -1$ and the resi
 Dividing, $\int_0^\infty \dx/(1+x^n) = -2\pi i\,z_0/\bigl(n(1-\zeta_n)\bigr) = \pi/\bigl(n\sin(\pi/n)\bigr)$, since $1-\zeta_n = -2i\,e^{i\pi/n}\sin(\pi/n)$.
 :::
 
-::: {.example title="$\displaystyle\int_0^\infty {x^{n-1}\over 1+x^n}\dx = {\pi/n\over\sin(\pi/n)}$"}
-The same sector contour applies to $f(z) = z^{n-1}/(1+z^n)$, which likewise satisfies $f(\zeta_n z) = f(z)$.
-Now the residue at $z_0 = e^{i\pi/n}$ is $z_0^{n-1}/(nz_0^{n-1}) = 1/n$, so $(1-\zeta_n)\int_0^\infty f = 2\pi i/n$ and the integral is $\pi/\bigl(n\sin(\pi/n)\bigr)$ as before.
+::: {.example title="$\displaystyle\int_0^\infty {x^{a-1}\over 1+x^n}\dx = {\pi/n\over\sin(\pi a/n)}$, $0<a<n$"}
+Take the same sector of angle $2\pi/n$ and, on it, the branch of $z^{a-1}$ with $\arg z\in[0,2\pi/n]$.
+On the ray $z = \zeta_n t$ one has $\dz = \zeta_n\dt$ and $(\zeta_n t)^{a-1} = e^{2\pi i(a-1)/n}t^{a-1}$, so that ray, traversed toward $0$, contributes $-e^{2\pi i a/n}\int_0^R x^{a-1}/(1+x^n)\dx$, and
+$$
+\qty{1-e^{2\pi i a/n}}\int_0^\infty{x^{a-1}\over 1+x^n}\dx = 2\pi i\Res_{z=z_0}{z^{a-1}\over 1+z^n},
+$$
+with $z_0 = e^{i\pi/n}$ the only enclosed pole.
+There the residue is $z_0^{a-1}/(nz_0^{n-1}) = z_0^{a-n}/n = -e^{i\pi a/n}/n$, and $1-e^{2\pi i a/n} = -2ie^{i\pi a/n}\sin(\pi a/n)$, so the integral is $\pi/\bigl(n\sin(\pi a/n)\bigr)$.
+The case $a = n$ is excluded, and there the integral diverges logarithmically, the integrand being asymptotic to $1/x$.
 :::
 
 ::: {.example title="$\displaystyle\int_0^\infty \sin(x^2)\dx = \int_0^\infty \cos(x^2)\dx = \frac12\sqrt{\pi\over 2}$"}
