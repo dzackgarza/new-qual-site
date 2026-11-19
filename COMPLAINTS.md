@@ -6303,3 +6303,62 @@ or it reports proved steps as unproved.
 **Page arithmetic.** §3.3's exercises are 1–6 on printed p. 257, 7–14 on p. 258, 15–26 on p. 259 and 27–35 on p. 260, at PDF pages 266–269 of the held book.
 
 **Not done.** `E-HAT-3.3-14`, `-16`, `-26`, `-27`, `-31` are untouched; none has a located published solution. The source obligations of the earlier records are unchanged.
+
+## 2026-11-19: the cubic-surface batch's fourth retained set — Yang Pi-Yeh covers V.4.7 and V.4.10, and one of the two entries has a case that does not follow
+
+**Object and need.** `P-AGH547GENUSBOUND` (Hartshorne V.4.7, printed p. 407) and `P-AGH5410NUMINEQ`
+(V.4.10, printed p. 408), and the retained solution set named for the first time in the previous
+record of this date: Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), whose PDF page is its printed
+page. The batch's earlier passes named the NTU homework, Egbert, Math StackExchange and Dolgachev;
+Yang's set covers Solutions 5.4.1 to 5.4.16 and had not been read.
+
+**V.4.7, second published proof of the bound, printed pp. 109--110.** With $D=a\ell-\sum b_ie_i$ and
+$d=3a-\sum b_i$, the entry substitutes $a=\frac13(d+\sum b_i)$ into
+$p_a(D)=\frac12(a-1)(a-2)-\frac12\sum b_i^2+\frac12\sum b_i$ and bounds the result by
+$\frac16(d-1)(d-2)+\frac23$, using $6\sum b_i^2\ge(\sum b_i)^2$ and the square
+$(\frac16\sum b_i-\frac13 d)^2\ge0$; the sharpening to $\frac16(d-1)(d-2)$ in the residues $1,2$
+modulo $3$ is the integrality of $\frac16(d-1)(d-2)$ there against that of $p_a(D)$. No sign
+hypothesis on the $b_i$ is used, so the argument covers the exercise's "any divisor of degree $d$".
+Its attaining classes are $d\ell-\frac d3(e_1+\cdots+e_6)$, $d\ell-k(e_1+\cdots+e_4)-(k+1)(e_5+e_6)$
+and $d\ell-k(e_1+e_2)-(k+1)(e_3+\cdots+e_6)$ for $d\equiv0,1,2$ modulo $3$ with $d=3k+1$, $3k+2$; the
+second at $k=1$ is $4\ell-(e_1+\cdots+e_4)-2(e_5+e_6)=H+F_{56}$, the class the card uses at $d=4$, and
+its $d\equiv2$ class has degree $d$ where the NTU solution's printed one has degree $d+2$, so a second
+source confirms the correction the card records. Of the classes the entry says only that they "achieve
+the bound", computing $p_a$; that an irreducible nonsingular curve lies in one is not proved there,
+and the card's own step remains the proof of the exercise's second request.
+
+**V.4.10, a case that does not follow, printed p. 111.** The entry reduces the printed hypotheses to
+$a>b_1+b_2$ and $2a>b_1+\cdots+b_5$ in the order $b_1\ge\cdots\ge b_6$, and splits. Case I,
+$b_1\ge b_2+b_5$, is a proof: $2b_1b_2\ge2b_2^2+2b_2b_5\ge b_3^2+b_4^2+b_5^2+b_6^2$ with
+$a>b_1+b_2$ gives $a^2>\sum b_i^2$. Case II, $b_1<b_2+b_5$, prints
+$a>b_1+b_2+b_3+b_4+b_5>2b_1+b_3+b_4$; the printed hypotheses give $2a>b_1+\cdots+b_5$, not
+$a>b_1+\cdots+b_5$, so the first of those inequalities does not follow, and the inequality the case
+uses, $a^2>4b_1^2+b_3^2+b_4^2+4b_1b_3+4b_1b_4+2b_3b_4$, fails where the printed line fails. The
+instance $b_1=\cdots=b_6=\frac25$, $a=\frac{101}{100}$ satisfies the printed hypotheses
+($a-b_i-b_j=0.21>0$, $2a-\sum_{i\ne j}b_i=0.02>0$), has $b_1<b_2+b_5$, has $a^2=1.0201>0.96=\sum b_i^2$
+— so the exercise's conclusion is not in question — and has $a=1.01<\frac85=2b_1+b_3+b_4$. The integer
+instance $b=(3,3,2,2,2,2)$, $a=7$ behaves the same way, with $a<10=2b_1+b_3+b_4$ and $a^2=49>34$.
+The exercise is true; the entry's Case II is not proved, and the card's argument, which is answer
+2476483's maximiser analysis, does not rest on it.
+
+**A commit that carries work of another stream, disclosed.** The V.4.7 card's edits of this date —
+Yang's paragraph, its two audit events, and the repair of four raw $|H+E_6|$ and $|{\mathfrak d}'|$
+bars into `\linearsystem` — were committed into `e379a2fd14`, whose message names the $d=4$
+attainment by $H+E_6$ and issue #160 and says nothing of them. The card's own commit for that work
+therefore does not exist, and `e379a2fd14` is where a reader will find it. The V.4.10 card's work is
+in `497a64bf34`, whose message names it.
+
+**Repair.** `P-AGH547GENUSBOUND` in `e379a2fd14` (another stream's commit, see above) and
+`P-AGH5410NUMINEQ` in `497a64bf34`; this record in the COMPLAINTS commit that carries it. No
+statement and no step of either card changes: the bound's proof, the attainment and the card's
+argument are as they were, and what the record and the remarks add is the second source and its one
+gap.
+
+**Uncertainty.** Read for this record: Yang Pi-Yeh's Solutions 5.4.7, 5.4.10, 5.4.11 and 5.4.12 at
+printed pp. 109--111, rendered as page images from
+`tmp/sources/lfwin-hartshorne-solutions.pdf`; Hartshorne's V.4.7, V.4.9, V.4.10, V.4.11 and V.4.12
+on printed pp. 407--408, rendered from `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` at PDF
+pp. 422--423, whose folios 407 and 408 are on the pages. Not read: Yang's Solutions outside printed
+pp. 109--111; the printed books themselves; and no search of the literature beyond these files. Not
+checked: whether any other entry of Yang's set covers a card of this batch correctly, in particular
+his 5.4.9, which is a sketch on printed pp. 110--111 and was not adjudicated here.
