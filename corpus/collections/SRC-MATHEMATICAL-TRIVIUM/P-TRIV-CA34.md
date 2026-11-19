@@ -19,6 +19,19 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Described the Figure 3 contour referenced by Complex Analysis Problem 34, from pages 15 and 18 of the source PDF.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. Integrating log z/(1+z^alpha) over the keyhole
+    contour with the branch cut on the positive axis: the two straight pieces contribute
+    -2 pi i times the real integral (the log picks up 2 pi i on the lower edge), the large circle
+    contributes O(R log R/R^alpha) -> 0 since alpha > 1, and the small circle tends to 0 because
+    z log z/(1+z^alpha) -> 0. The residues at the alpha-th roots of -1 give -2 pi i times
+    (pi/alpha^2) csc(pi/alpha) summed, and cancelling the common factor -2 pi i yields
+    (pi/alpha) csc(pi/alpha). Checked at alpha = 2 (pi/2) and alpha = 3 (2 pi/(3 sqrt 3) = 2 sqrt3 pi/9,
+    confirmed by a computer algebra system). The convergence of the two circle contributions is
+    exactly where alpha > 1 is used. Not claimed: any statement for non-integer alpha.
 ---
 
 ::: {.problem}
