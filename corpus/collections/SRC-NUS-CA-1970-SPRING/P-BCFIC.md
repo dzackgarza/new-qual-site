@@ -22,6 +22,8 @@ Find an analytic isomorphism from the open region between $\abs{z} = 1$ and $\ab
 :::
 
 ::: {.solution}
+
+The argument is the card's own: three explicit maps are composed --- $1/(z-1)$ to a vertical strip, an affine map to a horizontal strip of height $\pi$, and the exponential to the upper half-plane --- with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $\Omega = \{z \in \CC : \abs{z} < 1 \text{ and } \abs{z - 1/2} > 1/2\}$ be the crescent and $\halfplane = \{w \in \CC : \text{Im}(w) > 0\}$ the upper half-plane.
 
 * * *
