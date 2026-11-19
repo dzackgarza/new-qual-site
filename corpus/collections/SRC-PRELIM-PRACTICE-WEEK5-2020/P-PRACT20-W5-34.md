@@ -17,6 +17,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 34).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. The proof is by contradiction and does not
+    invoke Picard, as the exercise requires: if the image omitted a disc D(z_0, epsilon) then
+    g = 1/(f - z_0) would be entire, since the denominator never vanishes, and bounded by
+    1/epsilon, so Liouville makes g constant and hence f constant, contradicting the hypothesis.
+    The card runs exactly this and unpacks the final equivalence into the epsilon-statement. Not
+    claimed: the stronger Picard theorem that at most one point is omitted, which the exercise
+    explicitly leaves out.
 ---
 
 ::: {.problem}
