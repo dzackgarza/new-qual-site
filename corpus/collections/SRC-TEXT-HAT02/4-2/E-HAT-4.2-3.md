@@ -44,8 +44,10 @@ audit:
     naturality that makes the Hurewicz identification one of Z[G]-modules. Also justified the
     computation of the kernel of multiplication by t-1 on Z[G] (an element fixed by t is a multiple
     of N) and that the image is I_G, and recorded that pi_1(X) = G because deleting a point from a
-    manifold of dimension at least 3 changes nothing. Not checked: Hatcher's printed hint for this
-    exercise, which was not re-read in this pass.
+    manifold of dimension at least 3 changes nothing. The exercise was then located in the retained
+    PDF at tmp/sources/hatcher-2002-algebraic-topology.pdf: it is Exercise 3 of section 4.2, printed
+    p. 389 (PDF 398), and it prints the statement with no hint, so there is no printed hint for this
+    card to have missed.
 
 ---
 
