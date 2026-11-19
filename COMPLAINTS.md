@@ -39,6 +39,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-19: Hardie--Kamps on exact sequence interlocking is obtained, and the term it singles out is the card's
+
+**Object and need.** The records above say that the only located treatment of Hatcher's Exercise 9 was unobtainable, and that the exercise's delicate term is $\pi_1(X,B,x_0)$. A published paper the earlier searches did not name was obtained instead, from an open archive.
+
+**Observed evidence.** K. A. Hardie and K. H. Kamps, *Exact sequence interlocking and free homotopy theory*, Cahiers de topologie et géométrie différentielle catégoriques **26** (1985) 3--31, read from the Numdam PDF of the volume (`http://www.numdam.org/item?id=CTGDC_1985__26_1_3_0`, 30 pages, printed $=$ PDF page $+1$). §3.A, printed pp. 15--16: the exact homotopy sequence of a triple $(X,A,B,x_0)$ is derived from the three exact pair sequences by their Theorem 2.1, and the text says the derivation gives exactness "except at $\pi_1(X,B,x_0)$ where exactness has to be proved separately". §1, printed pp. 4--5: the exactness types (E0)--(E4) for pointed sets and pointed maps, of which (E2) is precisely the fibre-coset structure --- $\beta(b)=\beta(b')$ exactly when $b'=a\cdot b$ for some $a$ --- that `E-HAT-4.1-9`'s coset lemma now proves for the map of a pair.
+
+**Impact and owner.** `E-HAT-4.1-9` cites both passages by printed page. The citation says what the paper does not do: Theorem 2.1 is an exactness result, it says nothing at the set-valued terms of a ladder, and the exercise is not treated. The #123 proof obligation therefore stays open, as does *On exact orbit sequences* itself, which is behind Project Euclid's bot challenge.
+
+**Uncertainty.** High confidence in both passages, read from the volume's PDF text layer and checked against the running heads of the pages cited (4, 5, 15 and 16 on PDF pages 3, 4, 14 and 15). Not checked: whether Theorem 2.1 can be turned into a five-lemma at $\pi_1(A,B,x_0)$ or $\pi_1(X,B,x_0)$ under the all-basepoints clause; and whether *On exact orbit sequences* is obtainable anywhere outside Project Euclid.
+
 ## 2026-11-19: the two statements of Hatcher §4.1 Exercise 9 are tom Dieck's problems, and what stays open is a proof
 
 **Object and need.** The first record of this date says that no published source states Hatcher's Exercise 9 and that Heath--Kamps was not obtained. Two published statements exist, in Friedrich tom Dieck, *Algebraic Topology* (EMS, 2008), and `E-HAT-4.1-9` now cites them by printed page.
