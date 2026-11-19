@@ -71,6 +71,17 @@ audit:
     and (b) and to name the unrestricted converse as the starred Exercise 35.8 of p. 224. The
     cube characterization of complete regularity used for the imbedding is Theorem 34.3, which is
     what the card cites. No change to the solution was needed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution section said "the argument is the card's own; no retained solution set is cited",
+    contradicting the card's own solution-written event of 2026-11-10, which records part (b) as
+    transcribed from Möller's S35 set, Exercise 35.6, page 2 of the file, and records the one place
+    the card departs from it (Möller's citation of Exercise 31.5 for the retract step, replaced by
+    Exercise 35.5(b)). The retained file was re-read and does contain Ex. 35.6. The solution section
+    now names the set, which part is transcribed and which is the card's, and the departure. The
+    2026-11-18 note above is left as written; this event is the correction.
 ---
 
 ::: {.exercise}
@@ -86,7 +97,7 @@ Imbed $Y$ in $[0, 1]^J$.]
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §35 Exercise 6, printed p. 223, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3.
+Part (b) is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S35.pdf, Exercise 35.6, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S35.pdf`, Internet Archive snapshot 20220130234235); part (a) is the card's, since a homeomorphism from the closed copy $Y_0$ extends to $Z$ and postcomposition with its inverse retracts $Z$ onto $Y_0$. It is checked against Munkres, Topology (2000), §35 Exercise 6, printed p. 223, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3. Where the card departs from Moller: he cites Exercise 31.5 for the retract step, which is the equalizer exercise, and the card cites Exercise 35.5(b) instead.
 
 ::: pf
 
