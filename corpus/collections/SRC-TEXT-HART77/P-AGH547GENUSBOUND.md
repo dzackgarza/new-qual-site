@@ -249,6 +249,24 @@ audit:
     theorem carries no characteristic hypothesis or that the attainment
     holds in every characteristic; no rendered sentence restricts anything
     to characteristic 0.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Independent verification of the intersection numbers the preceding
+    events of this date quote, run as a script rather than by hand, since
+    they are what places the d = 4 class in condition (c) of Exercise V.4.8.
+    With a class a*l - sum_i b_i*e_i stored as (a, -b_1, ..., -b_6) and the
+    form u.v = u_0 v_0 - sum_{i>=1} u_i v_i (l^2 = 1, e_i^2 = -1, l.e_i =
+    0), the 27 lines were built as E_i = e_i, F_ij = l - e_i - e_j and
+    G_j = 2l - sum_{i != j} e_i, and the script reported: every one of the
+    27 has self-intersection -1; D = (4,-1,-1,-1,-1,-2,-2) = H + F_56
+    pairs nonnegatively with all of them, with a single zero at F_56 and
+    values 1, 1, 1, 1, 2, 2 on the E_i, 1, 1, 1, 1, 2, 2 on the G_j and
+    0, 1, 2 on the F_ij; D^2 = 4; deg D = 3*4 - 8 = 4; p_a = 1. This
+    agrees with the hand computation recorded above, including the identity
+    D.G_j = b_j, which follows from 2a = sum_i b_i = 8. No text of the card
+    changed, and no claim is weakened or added.
 ---
 
 ::: {.problem}
