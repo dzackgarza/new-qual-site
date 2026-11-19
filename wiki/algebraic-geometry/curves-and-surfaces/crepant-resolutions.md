@@ -15,7 +15,7 @@ For a proper birational morphism $f\colon Y\to X$ of normal varieties with $\QQ$
 $$
 K_Y=f^*K_X+\sum_i a_iE_i
 $$
-over the $f$-exceptional prime divisors $E_i$. The numbers $a_i$ are the discrepancies of $f$; $f$ is crepant when every $a_i=0$, canonical when every $a_i\ge0$, and terminal when every $a_i>0$ ([[D-VARCREPANT]]).
+over the $f$-exceptional prime divisors $E_i$. The numbers $a_i$ are the discrepancies of $f$, and $f$ is crepant when every $a_i=0$ ([[D-VARCREPANT]]).
 
 ## Discrepancy of a blowup
 
