@@ -29,5 +29,6 @@ f'(z)=\sum_{k\ge1}kc_k(z-z_0)^{k-1},\qquad \abs{z-z_0}<R,
 $$
 where the differentiated series has the same radius of convergence $R$.
 
-The radius and its Hadamard formula are [@SS03, Theorem 2.5 of Chapter 1 (p. 15)], which states the absolute convergence, the divergence, and the formula; termwise differentiation inside the disc is [@SS03, Corollary 2.7 (p. 18)].
+The radius and its Hadamard formula are [@SS03, Theorem 2.5 of Chapter 1 (p. 15)], which states the absolute convergence, the divergence, and the formula, and termwise differentiation inside the disc is [@SS03, Corollary 2.7 (p. 18)].
+The uniform convergence on closed discs and the equality of the differentiated series' radius are additions here, both consequences of the comparison test inside $\DD_R(z_0)$.
 :::
