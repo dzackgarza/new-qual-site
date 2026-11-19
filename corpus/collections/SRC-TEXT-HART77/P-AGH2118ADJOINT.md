@@ -34,6 +34,8 @@ Hence $\inverseof{f}$ is a \dfn{left adjoint} of $f_*$, and $f_*$ is a \dfn{righ
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.18, printed p. 68. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.18, printed p. 7, builds the same two natural maps — the counit $f^{-1}f_*\mcf\to\mcf$ from the compatible family of restrictions, and the unit $\mcg\to f_*f^{-1}\mcg$ through $f_*f^*\mcg$ — and concludes the adjunction from the unit-counit identities, which the steps verify on sections.
+
 Recall that for a sheaf $\mcg$ on $Y$, the inverse-image sheaf $f^{-1}\mcg$ is the sheaf associated to the presheaf
 $$
 \mcp_{\mcg}(U)
