@@ -19,6 +19,17 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source says every nonzero ideal; $A=R$ is contained in no prime ideal. The statement now says every nonzero proper ideal.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked. The proof takes a maximal element I among the
+    ideals containing no product of primes above them (Zorn/Noetherian), and shows I is prime: if
+    a,b are outside I then I+(a) and I+(b) strictly contain I, hence each contains a product of
+    primes, and the product of those products lies in (I+(a))(I+(b)) <= I + (ab) <= I since ab is in
+    I, a contradiction. The case I+(a) = R is handled separately by multiplying 1 = i + ra by b to
+    get b in I, which is the step usually skipped, and the card does it. Hence the maximal bad ideal
+    is prime, which is itself the product of one prime, a contradiction. Correct.
 ---
 
 ::: {.problem}
