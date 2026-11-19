@@ -16,8 +16,6 @@ Every classification below is one of three arguments: the order is a prime power
 
 ## Groups of special orders
 
-For primes $p<q$, a group of order $pq$ has its Sylow $q$-subgroup normal, and the twisting map $C_p\to\Aut(C_q)\cong C_{q-1}$ is nontrivial exactly when $p$ divides $q-1$.
-
 [[PR-LFGHA]]
 
 [[PR-IGLFV]]
@@ -34,7 +32,7 @@ For primes $p<q$, a group of order $pq$ has its Sylow $q$-subgroup normal, and t
 
 ## The small orders
 
-The abelian groups of a given order are the tuples of partitions of its prime exponents, and the nonabelian ones are separated by the invariants on [[algebra/groups/is-this-group-abelian|Is this group abelian?]].
+The nonabelian groups of a given order are separated by the invariants on [[algebra/groups/is-this-group-abelian|Is this group abelian?]].
 
 [[PR-2JG3F]]
 
