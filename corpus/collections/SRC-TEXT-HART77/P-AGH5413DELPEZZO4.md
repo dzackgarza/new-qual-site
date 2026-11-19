@@ -238,6 +238,32 @@ audit:
     correction is a new event, so both of its copies stand, adjacent. Nothing
     else on the card or in the events changes. Not checked: nothing new; the
     card's steps were not re-derived in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution named in the rendered remark, where until now it stood
+    only in the audit. Read Yang Pi-Yeh, Hartshorne Solutions (9 June 2019),
+    Solution 5.4.13, printed p. 111, rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.4.13, printed p. 408, asks for
+    the sixteen lines on the degree-four Del Pezzo surface and for the
+    identification of the surface with a complete intersection of two quadrics
+    in P^4. Recomputed: the count 5 + 10 + 1 = 16 from the exceptional curves,
+    the lines F_ij = H - E_i - E_j and the conic G = 2H - sum E_i; and the
+    Riemann-Roch value h^0(O_X(2)) = 3K^2 + 1 = 13 at K^2 = 4, whence
+    15 - 13 = 2 sections of I_X(2) once the restriction from P^4 is onto. Not
+    checked: Yang's Solutions outside printed pp. 111-112, and the printed book
+    itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.4.13 at printed p. 111 for
+    both parts, with part (a)'s sixteen curves, part (b)'s Riemann-Roch count
+    and the surjectivity it needs and does not prove. The sentence that stood
+    in the audit event of 2026-11-16 said the same of part (b) and said nothing
+    of part (a). No step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -636,6 +662,18 @@ printed p. 248. The card's own step [](#h0-two-h-thirteen){.pf-ref} reaches the 
 Riemann--Roch on the blow-up and needs neither. Part (a), the sixteen lines, is not proved there either: his
 §8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an argument for the count, so part (a) rests on
 the card's steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.13, printed p. 111, covers both parts of
+the exercise. Part (a) is the count on the blowup at the five points: the five exceptional curves $E_i$,
+the ten strict transforms $F_{ij}=H-E_i-E_j$ of the lines through the pairs, and the strict transform
+$G=2H-\sum_{i=1}^{5}E_i$ of the conic through the five, sixteen in all; that is steps
+[](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}. Part (b) computes
+$h^0(\OO_X(2))=h^0(\OO_X(-2K))=\frac12(-2K-K)\cdot(-2K)+1=3K^2+1=13$ by Riemann--Roch, with $h^1=0$, and
+concludes $h^0(\mathcal I_X(2))=15-13=2$; the conclusion needs the restriction
+$H^0(\OO_{\PP^4}(2))\to H^0(\OO_X(2))$ to be onto, which the entry does not prove — the projective
+normality is what supplies it — and the entry then states the complete-intersection conclusion without
+the degree count of steps [](#quadrics-no-common-component){.pf-ref} and
+[](#x-is-complete-intersection){.pf-ref}.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.13, printed pp. 292--294, read in
 `tmp/sources/hartshorne-solutions-egbert.pdf` and in its MinerU text version
