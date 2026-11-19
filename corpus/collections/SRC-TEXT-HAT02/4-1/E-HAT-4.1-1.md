@@ -206,10 +206,21 @@ audit:
     against `tmp/sources/tomdieck-algebraic-topology-ranicki.pdf`, whose page 100 carries the head
     "4.3. Suspension. Homotopy Groups 87" and whose page 101 carries the folio 88 with the
     identification. Unchanged: the four-quarter identity, the unit homotopy and the proposition.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 367 carries the running head 358, so
+    the printed page is the one the card's earlier event claimed. The durable part of the locator is
+    that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
+    reset. No mathematics changed.
 review: draft
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.1 of Hatcher, *Algebraic Topology* (2002), printed p. 358, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Suppose a sum $f +' g$ of maps $f, g: (I^n, \partial I^n) \to (X, x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f + g$.
 Verify the formula $(f + g) +' (h + k) = (f +' h) + (g +' k)$, and deduce that $f +' k \simeq f + k$ so the two sums agree on $\pi_n(X, x_0)$, and also that $g +' h \simeq h + g$ so the addition is abelian.
 :::
