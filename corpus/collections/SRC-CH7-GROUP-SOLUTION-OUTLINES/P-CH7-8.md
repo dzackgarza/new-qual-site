@@ -55,7 +55,7 @@ Let $G=\langle a\rangle$ with $\cardinality{G}=15$ and $H=\langle a^{5}\rangle$.
 
 ::: {.pf-step #order}
 
-$H=\ts{e,a^{5},a^{10}}$ has order $3$.
+$H=\theset{e,a^{5},a^{10}}$ has order $3$.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ The order of $a^{5}$ is $15/\gcd(15,5)=3$: generally $\cardinality{a^{m}}=|a|/\g
 for a cyclic group, and here this is directly checkable, since $(a^{5})^{3}=a^{15}=e$ while
 $(a^{5})^{1}=a^{5}\ne e$ and $(a^{5})^{2}=a^{10}\ne e$, the exponents $5,10,15$ all being
 less than the order $15$ of $a$ at the first two and equal to it at the third. Hence $H$,
-the set of powers $(a^{5})^{k}$, is $\ts{e,a^{5},a^{10}}$, three distinct elements.
+the set of powers $(a^{5})^{k}$, is $\theset{e,a^{5},a^{10}}$, three distinct elements.
 
 :::
 
@@ -71,13 +71,13 @@ the set of powers $(a^{5})^{k}$, is $\ts{e,a^{5},a^{10}}$, three distinct elemen
 
 ::: {.pf-step #list}
 
-For $k=0,1,2,3,4$, the coset $a^{k}H$ is $\ts{a^{k},a^{k+5},a^{k+10}}$.
+For $k=0,1,2,3,4$, the coset $a^{k}H$ is $\theset{a^{k},a^{k+5},a^{k+10}}$.
 
 ::: pf-proof
 
-$a^{k}H=\ts{a^{k}h : h\in H}=\ts{a^{k}e,a^{k}a^{5},a^{k}a^{10}}=\ts{a^{k},a^{k+5},a^{k+10}}$
+$a^{k}H=\theset{a^{k}h : h\in H}=\theset{a^{k}e,a^{k}a^{5},a^{k}a^{10}}=\theset{a^{k},a^{k+5},a^{k+10}}$
 by the laws of exponents. The three exponents $k,k+5,k+10$ are distinct and lie in
-$\ts{0,\dots,14}$, so by step [](#order){.pf-ref} times $a^{k}$ each of the three elements
+$\theset{0,\dots,14}$, so by step [](#order){.pf-ref} times $a^{k}$ each of the three elements
 is distinct.
 
 :::
@@ -91,10 +91,10 @@ The five cosets of step [](#list){.pf-ref} are pairwise distinct.
 ::: pf-proof
 
 Suppose $a^{j}H=a^{k}H$ with $0\le j,k\le4$. Then $j\equiv k\pmod 5$, because
-$a^{j}H=\ts{a^{m} : m\equiv j \pmod 5}$: indeed $a^{j+5t}=a^{j}(a^{5})^{t}\in a^{j}H$ for
+$a^{j}H=\theset{a^{m} : m\equiv j \pmod 5}$: indeed $a^{j+5t}=a^{j}(a^{5})^{t}\in a^{j}H$ for
 every $t$, and the $m$ with $m\equiv j\pmod5$ are exactly the $m=j+5t$; there are three of
-them in $\ts{0,\dots,14}$, which is all of $a^{j}H$ by step [](#list){.pf-ref}. Since $j,k$
-lie in $\ts{0,\dots,4}$, $j\equiv k\pmod 5$ forces $j=k$.
+them in $\theset{0,\dots,14}$, which is all of $a^{j}H$ by step [](#list){.pf-ref}. Since $j,k$
+lie in $\theset{0,\dots,4}$, $j\equiv k\pmod 5$ forces $j=k$.
 
 :::
 
@@ -120,8 +120,8 @@ printed p. 141).
 ::: {.pf-step #answer}
 
 The left cosets of $\langle a^{5}\rangle$ in $\langle a\rangle$ are
-$\ts{e,a^{5},a^{10}}$, $\ts{a,a^{6},a^{11}}$, $\ts{a^{2},a^{7},a^{12}}$,
-$\ts{a^{3},a^{8},a^{13}}$ and $\ts{a^{4},a^{9},a^{14}}$.
+$\theset{e,a^{5},a^{10}}$, $\theset{a,a^{6},a^{11}}$, $\theset{a^{2},a^{7},a^{12}}$,
+$\theset{a^{3},a^{8},a^{13}}$ and $\theset{a^{4},a^{9},a^{14}}$.
 
 ::: pf-proof
 
