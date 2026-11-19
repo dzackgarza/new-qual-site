@@ -158,6 +158,31 @@ Affected pages: `wiki/topology/covering-spaces/covering-spaces.md` (title and he
 
 ---
 
+## 6. Two cards write a section sign as raw TeX, so the page drops it (repaired here)
+
+A `qualc check` of the whole tree at `8a4449d9ea` (2026-11-19 02:53 UTC), the first run after
+the card lanes committed that day's batches, reported 2 diagnostics and nothing else:
+
+```
+corpus/collections/SRC-TEXT-HAT02/3-2/E-HAT-3.2-11.md: raw TeX the page cannot show: '\\S'
+corpus/collections/SRC-TEXT-HAT02/4-1/E-HAT-4.1-5.md:  raw TeX the page cannot show: '\\S'
+```
+
+Each card names a section of Hatcher's book as `\S3.2` / `\S4.1` in prose, a TeX command outside
+a math span, which the HTML writer drops: a student reads "Exercise 11" and "Hatcher's
+definition in ." with the section and its sign gone. Three cards had had the same repair
+already (`E-SS3.EX-11`, `E-HAT-3.2-5`, `E-HAT-3.3-5`, each with the same note), and the
+convention the corpus settled on is the character: `§3.2`.
+
+Both now read `§3.2` and `§4.1`, each with a `source-corrected` audit note. Verified:
+`just check-card` parses each card, and `qualc.tex.unrenderable_tex` over the two cards reports
+0 errors where it reported one each before. Mathematics and wording unchanged.
+
+This is the shape of the class to watch, because it is also a build blocker: `qualc build`
+refuses to emit a site while any diagnostic stands.
+
+---
+
 ## Not filed
 
 - **Reader findings on #2: none outstanding.** All 29 cards named in the two comments
