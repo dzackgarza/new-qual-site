@@ -29,6 +29,19 @@ audit:
   date: 2026-10-31
   note: >-
     Read the construction: the cross-polytope's boundary is a simplicial complex whose facets choose one vertex from each antipodal pair, and the antipodal identification folds it onto a $\Delta$-complex structure on $\RP^n$ with the stated vertices.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Exercise 3 of §2.1, printed p. 131. Correct: the boundary of the
+    cross-polytope on $\pm e_0,\dots,\pm e_n$ is a simplicial $n$-sphere whose facets are the
+    $[\varepsilon_0e_0,\dots,\varepsilon_ne_n]$ and whose vertices are the $2(n+1)$ vectors $\pm e_i$;
+    radial projection is a homeomorphism onto $S^n$ because the origin is an interior point; the
+    antipodal map is simplicial, carries each facet to the opposite one, and meets no simplex in both
+    $e_i$ and $-e_i$, so the action is free; a free simplicial action gives a $\Delta$-complex on the
+    quotient, whose vertices are the $n+1$ pairs $\{e_i,-e_i\}$. Removed one thing only: a closing
+    step whose proof was the bare reference to step s4. Not claimed: a published solution, and no
+    certificate.
 ---
 
 ::: {.problem}
@@ -120,23 +133,6 @@ $$
 Pair each simplex of $\partial C$ with its antipodal simplex.
 Since the antipodal action is simplicial and free, the quotient characteristic maps remain injective on simplex interiors and their face identifications are affine.
 These are precisely the axioms of a $\Delta$-complex.
-
-:::
-
-:::
-
-::: pf-step
-
-The vertices of the quotient are the $n+1$ antipodal pairs
-$$
-\{e_i,-e_i\},
-\qquad 0\le i\le n.
-$$
-
-::: pf-proof
-
-This is immediate from the quotient construction in step [](#s4){.pf-ref}.
-Thus the required $\Delta$-complex on $\RP^n$ is obtained from the stated $S^n$ triangulation.
 
 :::
 
