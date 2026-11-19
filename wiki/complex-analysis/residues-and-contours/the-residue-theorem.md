@@ -34,6 +34,21 @@ Write $\Res_{z=p}f$ for $\Res_{z=p}(f\dz)$.
 
 [[T-HRPNO]]
 
+::: {.example title="A closed integral computed by residues"}
+On the circle $\abs z = 3$ the integrand
+$$
+f(z) = {z^2+1\over z(z-1)(z+2)}
+$$
+has all three of its poles inside, with residues
+$$
+\Res_{z=0}f = {1\over (0-1)(0+2)} = -\frac12,\qquad
+\Res_{z=1}f = {2\over 1\cdot 3} = \frac23,\qquad
+\Res_{z=-2}f = {5\over (-2)(-3)} = \frac56,
+$$
+whose sum is $1$, so the integral is $2\pi i$, which is also what the parametrization returns.
+The circle $\abs z = 2$ would not do: it passes through the pole at $z = -2$.
+:::
+
 ::: {.remark title="Residues of $1$-forms"}
 The residue is an invariant of the $1$-form $f\dz$ rather than of the function $f$: if $z = \varphi(w)$ with $\varphi$ biholomorphic near $w_0$ and $\varphi(w_0)=p$, then $\Res_{w=w_0} f(\varphi(w))\varphi'(w) = \Res_{z=p} f(z)$, while $\Res_{w=w_0} f(\varphi(w))$ is in general different.
 
