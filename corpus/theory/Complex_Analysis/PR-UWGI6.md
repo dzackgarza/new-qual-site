@@ -20,5 +20,5 @@ Then
 $$
 u(z_0)=\frac{1}{2\pi r}\oint_{\bd D_r(z_0)}u\,ds=\frac{1}{\pi r^2}\iint_{D_r(z_0)}u(x,y)\dx\dy,
 $$
-where $ds$ is arc length on the circle $\bd D_r(z_0)$.
+where $ds$ is arc length on the circle $\bd D_r(z_0)$ [@SS03, Corollary 7.3 (p. 103)].
 :::
