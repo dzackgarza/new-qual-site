@@ -9,54 +9,51 @@ topics:
 
 # The class group and the Picard group
 
-Two groups are attached to a scheme and measure the same thing from opposite sides: $\Cl X$, the Weil divisors modulo principal divisors, which is a statement about codimension-one subvarieties, and $\Pic X$, the invertible sheaves modulo isomorphism under tensor product, which is a statement about line bundles and needs no integrality to define.
-On an integral scheme the map between them is an isomorphism, and the content of this page is that map: what it sends a divisor to, how a rational section builds a divisor back, and what the two groups become on the schemes where they differ.
+For an integral scheme $X$ with rational-function sheaf $\mck$, the Cartier divisors modulo principal divisors are the invertible sheaves modulo isomorphism:
+$$
+\CaCl(X)\iso\Pic(X),\qquad [D]\longmapsto[\OO_X(D)]
+$$
+[@Har77, Proposition II.6.15, p. 144].
+The Weil divisors modulo principal divisors form the group $\Cl(X)$, and a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16, pp. 141 and 145], and in particular for a regular integral separated noetherian scheme [@Har77, Remark II.6.11.1A].
+On a scheme that is not locally factorial the inclusion is strict, and [[D-5PQ5W]] records both groups on the affine quadric cone.
 
 ## The Picard group
 
 [[D-MODPIC]]
 
-$\Pic$ is a functor: a morphism $f\colon X\to Y$ pulls an invertible sheaf back to an invertible sheaf, so $\Pic$ is contravariant on schemes, and the group law is $\tensor$ with inverse given by the dual.
-The definition mentions no divisors, which is why $\Pic$ is the invariant that survives on a singular or non-integral scheme; what gets lost there is only the description of its elements by codimension-one data.
+$\Pic$ is a contravariant functor to abelian groups: a morphism $f\colon X\to Y$ of ringed spaces pulls an invertible $\OO_Y$-module back to an invertible $\OO_X$-module ([[D-MODPULL]]).
 
-## Cartier divisors to invertible sheaves
+## Cartier divisors and invertible sheaves
 
 [[PR-DIVLB]]
 
-The composite is the whole dictionary: a Cartier divisor is a rational function modulo units on each open set, $\OO_X(D)$ is the subsheaf of the rational-function sheaf consisting of functions that vanish along $D$ to at most the order $D$ prescribes, and a nonzero rational section of an invertible sheaf gives a Cartier divisor back.
-Because every invertible sheaf on an integral scheme embeds in the rational-function sheaf as an invertible subsheaf [@Har77, Proposition II.6.15], the map $\CaCl(X)\to\Pic(X)$ is an isomorphism and the two descriptions of the same class are interchangeable.
-
-That is not yet a statement about $\Cl$, which is the group of Weil divisors, and the passage between the two groups is where the hypotheses are.
-For a noetherian integral separated scheme the Cartier divisors are the locally principal Weil divisors, so there is an injection $\CaCl(X)\into\Cl(X)$, and it is an isomorphism when $X$ is locally factorial — in particular for every regular integral scheme, since regular local rings are factorial ([[D-5PQ5W]]).
-Where factoriality fails the inclusion can be strict, and then $\Cl$ is the larger group: on the quadric cone $V(xy-z^2)$ the ruling is a Weil divisor that is not Cartier, $\Cl\cong\ZZ/2$, and $\Pic=0$.
-
 ## The divisor of a rational section
 
-The section-level form of the dictionary is the one used in computation.
-For an invertible sheaf $\mcl$ on an integral scheme $X$ with rational section $s$, the local expressions $\restrictionof{s}{U} = f_U$ differ by units on overlaps, so the collection $\theset{(U, f_U)}$ is a Cartier divisor, written $\operatorname{div}(s)$, and
+Let $D$ be a divisor on an integral scheme $X$ with rational-function sheaf $\mck$. The invertible sheaf $\OO_X(D)\subseteq\mck$ has global sections
 $$
-H^0(X,\mcl) \cong \theset{s \in \mck^\times : \operatorname{div}(s) + D \ge 0} \cup \theset{0}
+\Gamma(X,\OO_X(D))=\theset{f\in\mck(X)^\times:\operatorname{div}(f)+D\ge0}\cup\theset{0}
 $$
-when $\mcl = \OO_X(D)$.
-So an effective divisor is a global section of $\OO_X(D)$, and the linear system $\linearsystem{D}$ is the projectivisation of that vector space; the sections of a line bundle and the effective divisors in its class are the same object read two ways ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
+[@Har77, Definition II.6, p. 145].
+For a nonsingular projective variety $X$ over an algebraically closed field, the nonzero global sections of $\OO_X(D)$, modulo multiplication by $k^\times$, are the effective divisors linearly equivalent to $D$, so the complete linear system $\linearsystem{D}$ is the projective space of $\Gamma(X,\OO_X(D))$ [@Har77, Proposition II.7.7, p. 157].
+An effective divisor is thus a nonzero section of an invertible sheaf, and a linear system is a linear subspace of sections ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
-## Computations: projective space
+## Projective space and open complements
 
 [[FE-DIVPN]]
 
 [[D-CB9XS]]
 
-$\Cl(\PP^n)\cong\ZZ$ by degree, generated by a hyperplane, and $\Pic(\PP^n)\cong\ZZ$ generated by $\OO(1)$; the dictionary above matches the two, because $\OO(1)=\OO(H)$ for a hyperplane $H=V(x_0)$ and a hypersurface of degree $d$ is the divisor of a homogeneous form of degree $d$.
-The hypersurface complement is the first place a torsion class appears: restricting to the complement of an integral plane curve of degree $d$ kills the hyperplane class up to $d$, so the class group of the affine surface $\PP^2\sm Y$ is $\ZZ/d$.
-Two facts about class groups behind it are worth having in mind, restriction to an open subset is surjective with kernel generated by the prime divisors in the complement, and it is injective when the complement has codimension at least two [@Har77, Proposition II.6.5].
+For a hypersurface $D=V(f)$ of degree $d$ in $\PP^n_k$, the invertible sheaf $\OO_{\PP^n}(D)$ is $\OO_{\PP^n}(d)$, and $\OO_{\PP^n}(1)$ generates $\Pic(\PP^n_k)\cong\ZZ$ [@Har77, Corollary II.6.17, p. 145].
 
-## Computations: singular curves
+Let $X$ be a noetherian integral separated scheme regular in codimension one and let $Z\subsetneq X$ be closed.
+Restriction of divisors to $U=X\sm Z$ is surjective, with kernel generated by the prime divisors in $Z$; it is an isomorphism when $\operatorname{codim}(Z,X)\ge2$, and when $Z$ is irreducible of codimension one there is an exact sequence $\ZZ\to\Cl(X)\to\Cl(U)\to0$ carrying $1$ to the class of $Z$ [@Har77, Proposition II.6.5, p. 133].
+For an integral curve $Y\subseteq\PP^2_k$ of degree $d$ the class of $Y$ is $d$ times the class of a line, so $\Cl(\PP^2_k\sm Y)\cong\ZZ/d$.
+
+## Singular curves
 
 [[FE-ADOKK]]
 
-On a singular curve the normalization $\nu\colon\tilde C\to C$ carries the calculation, and the quotient $\nu_*\OO_{\tilde C}^\times/\OO_C^\times$ is a skyscraper whose stalk at a singular point measures the units that do not descend.
-At a node that stalk is $k^\times$ and at a cusp it is $k^+$, so $\Pic^0$ of the nodal cubic is $\GG_m$ and of the cuspidal cubic is $\GG_a$ — one of them is a group of multiplicative type and the other is unipotent.
-Neither is proper, which is the visible symptom of a singularity: for a smooth projective curve $\Pic^0$ is an abelian variety ([[algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians|embeddings and Jacobians]]), and the degree-zero part of the Picard group stops being one the moment the curve is allowed to be singular.
+$\Pic^0$ of the nodal cubic is $\GG_m$ and $\Pic^0$ of the cuspidal cubic is $\GG_a$, so neither is an abelian variety; for a smooth projective curve $C$, $\Pic^0(C)$ is the Jacobian of $C$ ([[FE-ADOKK]]).
 
 ## Line bundles as torsors
 
@@ -64,5 +61,9 @@ Neither is proper, which is the visible symptom of a singularity: for a smooth p
 
 [[PR-ET5PQ]]
 
-A line bundle is locally a free module of rank one, so its transition data are units on overlaps: $\Pic(X)$ is the first Čech cohomology of the sheaf $\OO_X^\times$, and the same computation identifies extensions of $\OO_X$-modules with classes in $\Ext^1$.
-That identification is the bridge between this chapter and [[algebraic-geometry/cohomology/computing-cohomology|computing cohomology]], and it is the reason the exponential sequence computes $\Pic$ of a complex manifold or a smooth curve through $H^1(X,\ZZ)$ and $H^1(X,\OO_X)$.
+A line bundle is locally free of rank one, so its isomorphism class is a class in $H^1(X,\OO_X^\times)$, and the same cocycle computation identifies $\CaCl(X)$ with $\Pic(X)$ over an integral $X$ ([[D-MODPIC]]).
+The exponential sequence
+$$
+0\to\ZZ\to\OO_X\to\OO_X^\times\to0
+$$
+of a complex manifold or a smooth complex curve then computes $\Pic(X)$ from $H^1(X,\ZZ)$ and $H^1(X,\OO_X)$ ([[algebraic-geometry/cohomology/computing-cohomology|computing cohomology]]).
