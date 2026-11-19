@@ -183,10 +183,11 @@ where the whole-tree run reported one. Mathematics and wording unchanged.
 The class is a transcription habit rather than a closed set: it arrived one card at a time as
 lanes wrote new proofs, so the corpus, not this list, is what has to be checked. Deciding probe
 on the current tip, after the fourth repair: the same stage `qualc check` runs — pandoc parse
-plus `qualc.tex.unrenderable_tex` — over every card committed since that run's revision
-(`63033e316e42`), which is the only part of the tree its verdict does not already cover:
-**0 raw-TeX and 0 undefined-macro errors over 22 cards**. A regex sweep for `\S` over all 14394
-cards also reads 0. The standing gate for the class is `qualc check`'s `raw-tex-dropped`
+plus `qualc.tex.unrenderable_tex` — over every card committed since the last whole-tree run
+(`63033e316e42`), which is the only part of the tree that run's verdict does not already cover:
+**0 raw-TeX and 0 undefined-macro errors**. Re-run as the tree moves; the count of cards it
+reads is whatever that delta is, so it is not worth recording. A regex sweep for `\S` over all
+14394 cards also reads 0. The standing gate for the class is `qualc check`'s `raw-tex-dropped`
 diagnostic, so no separate tool is kept. Any instance blocks `qualc build` from emitting a site.
 
 ---
