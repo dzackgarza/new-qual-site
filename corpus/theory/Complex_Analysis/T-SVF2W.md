@@ -23,4 +23,6 @@ The following are equivalent.
 (ii) There are $z_0\in\Omega$ and a sequence $(z_k)_{k\geq1}$ of distinct points of $\Omega$ with $z_k\to z_0$ and $f(z_k)=0$ for all $k$.
 
 (iii) There is $z_0\in\Omega$ with $f^{(n)}(z_0)=0$ for all $n\geq0$.
+
+Condition (ii) is the form usually called the identity theorem [@SS03, Theorem 4.8 (p. 52)].
 :::
