@@ -362,6 +362,63 @@ audit:
     elsewhere (for example in the solution of `E-SS7.EX-8'). The quotation is
     otherwise unchanged. Not checked: the rendered page in a browser, and no
     source was re-read for this repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The characteristic-p case is now proved on the card, and the citation of
+    Hirschfeld, Algebraic Curves over Finite Fields, Theorem 3.27 is no longer
+    used anywhere in the proof. What the card had was Fulton's Appendix A,
+    printed p. 113, transcribed as far as "one of the choices m = 0, 1 will
+    insure that p doesn't divide n - r" together with the remark that the
+    printed sentence needs n' - r where it writes n - r, and then the sentence
+    "the case is Hirschfeld, Theorem 3.27". What was missing is that the
+    preliminary transformation of the appendix is neutral and that it restores
+    the hypothesis of Fulton's Lemma 1, so that his Theorem 2 runs in
+    characteristic p unchanged. Three steps and two sentences changed: (1)
+    excellent-position-attained now assumes that the projection from P is
+    separable rather than that char k = 0, char 0 being the case in which every
+    projection is separable, and its last paragraph says that the coprimality
+    of G_lambda and G'_lambda is reducedness of the fibre of pi_P, which holds
+    for all but finitely many slopes exactly under that hypothesis; (2)
+    positive-characteristic now states and proves the characteristic-p case: if
+    pi_P is not separable then p divides n - r, the inseparable degree being a
+    power of p dividing the degree; the preliminary transformation centred at Q
+    of multiplicity m in {0,1} and two points off C, with P on no fundamental
+    line and the fundamental lines transverse at smooth points, sends P to a
+    point of the same multiplicity r and leaves N and g* unchanged (the points
+    over the centres are smooth, the three new points are ordinary, and the
+    cancellation of step genus-invariant-drops applies with an empty sum over
+    the centres), and deg pi_{P_1} = 2n - m - r is congruent to n - m modulo p,
+    so m = 0 when p does not divide r and m = 1 when it does gives p not
+    dividing that degree, hence separability; the descent then applies at P_1
+    and drops N + g*, so at most 2(N + g*(C)) transformations suffice; (3) the
+    termination bound is quoted in that doubled form in the step and in the
+    qed, which no longer says the case is Hirschfeld's. The introductory
+    paragraph of the solution and the "Published solution" remark were brought
+    into line, the latter saying that Appendix A settles characteristic p once
+    the neutrality of its preliminary transformation is observed. The remark
+    that quotes Egbert's one-sentence pointer to Hirschfeld is unchanged: it is
+    a true statement about his entry, and the card no longer depends on it.
+    Checked in this pass: the congruence and the choice of m (m = 0 if
+    p does not divide r, since n = r modulo p; m = 1 if p does divide r, since
+    then n is 0 modulo p and n - 1 is not); that an inseparable morphism of
+    curves has degree divisible by p; that the preliminary transformation
+    preserves N and g*, by the same cancellation the card already carries for
+    the descent step, with the sum over the points over the three centres, each
+    of multiplicity at most 1; and that the descent step at P_1 then applies,
+    its inputs being exactly separability at P_1 and the identity for g*.
+    Gates: ./.venv/bin/python -m qualc.authoring check P-AGH543ORDINARYSING,
+    "schema and Markdown parsing OK (single card)"; tmp/lam.sh, numbering the
+    steps 1 to 8 with QED labels present and no unknown step label;
+    tools/check_macros.py, OK. Not checked: the rendered page in a browser, and
+    no source was re-read for this pass beyond Fulton's Appendix A as the card
+    already transcribed it. The argument was found and checked in this session
+    in a swarm of eight agents working the exercise independently, whose three
+    surviving proofs (conic-pencil repair, branch-height measure, and the
+    degree adjustment used here) were each checked step by step before
+    transcription; the card carries the third, it being the shortest, and
+    states it in the card's own words.
 
 ---
 
@@ -378,7 +435,7 @@ The argument is that of Fulton, *Algebraic Curves* (2008), §7.4, printed pp. 87
 $$
 g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2},
 $$
-the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2, printed p. 91: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and the case is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
+the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2, printed p. 91: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and it is not a reduction to another theorem: the preliminary transformation it prescribes is neutral for $N$ and for $g^*$, and it restores the separability that the count needs, so the same count runs in every characteristic with the bound doubled.
 
 ::: pf
 
@@ -474,7 +531,7 @@ Part (b) is the case in which the reading is not immediate. Fulton obtains it by
 :::
 
 ::: {.pf-step #excellent-position-attained}
-Assume $\operatorname{char}k=0$. For every irreducible $F$ and every point $P\in F$ there is a projective change of coordinates $T$ such that $F^T$ is in excellent position and $T([0:0:1])=P$.
+Let $F$ be irreducible and let $P\in F$ be a point whose projection $\pi_P$ is separable. Then there is a projective change of coordinates $T$ such that $F^T$ is in excellent position and $T([0:0:1])=P$. In characteristic $0$ the hypothesis is automatic, every projection from a point being separable.
 
 ::: pf-proof
 This is Lemma 1 of Fulton, §7.4, printed p. 90, and its input is Problem 5.26 of the same book, printed p. 60: for an irreducible curve of degree $n$ over a field of characteristic $0$ and a point $P$, all but finitely many lines through $P$ meet $C$ in $n-r$ distinct points other than $P$. Fulton's proof of the lemma chooses lines
@@ -493,7 +550,7 @@ F=A_r(X,Z)Y^{n-r}+\cdots+A_n(X,Z),
 \qquad
 A_r\neq0;
 $$
-then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq0$, which fails for only finitely many $\lambda$; and $G_\lambda$ has $n-r$ distinct roots whenever in addition $F\cap F_Y\cap L_\lambda=\{P\}$, that is, whenever $G_\lambda$ and its derivative have no common root on $L_\lambda$, which again fails for only finitely many $\lambda$ because $F$ and $F_Y$ have no common component. In characteristic $0$ that is the whole condition; in characteristic $p$ it is not, which is the one place separability enters, and step [](#positive-characteristic){.pf-ref} treats that case.
+then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq0$, which fails for only finitely many $\lambda$; and $G_\lambda$ has $n-r$ distinct roots whenever in addition $F\cap F_Y\cap L_\lambda=\{P\}$, that is, whenever $G_\lambda$ and its derivative have no common root on $L_\lambda$, which again fails for only finitely many $\lambda$ because $F$ and $F_Y$ have no common component. In characteristic $0$ that is the whole condition, the coprimality of $G_\lambda$ and $G'_\lambda$ being reducedness of the fibre of $\pi_P$ over the slope $\lambda$; in characteristic $p$ it is not, and the hypothesis of this step is exactly that the coprimality holds for all but finitely many $\lambda$, that is, that the generic fibre of $\pi_P$ is reduced. Step [](#positive-characteristic){.pf-ref} arranges that hypothesis at a point where it fails, by a preliminary transformation.
 :::
 
 :::
@@ -548,7 +605,7 @@ This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic
 :::
 
 ::: {.pf-step #positive-characteristic}
-Assume $\operatorname{char}k=p>0$. Then at most one point of $C$ is terrible for excellent position, and one quadratic transformation centred at a point of multiplicity $0$ or $1$ makes that point not terrible; the exercise's case in this characteristic is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
+Assume $\operatorname{char}k=p>0$. Then the transformation sequence of step [](#termination){.pf-ref} exists in this characteristic, at most $2(N+g^*(C))$ transformations sufficing: where the projection from the chosen point is inseparable, one preliminary quadratic transformation, centred at a point of multiplicity $0$ or $1$ and two points off $C$, changes neither $N$ nor $g^*$, creates only ordinary points, and makes the projection from the image of that point separable.
 
 ::: pf-proof
 This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$; then $p$ divides $n-r$. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
@@ -559,7 +616,15 @@ n'-r\equiv 2n-m-r\equiv n-m \pmod p,
 $$
 and one of the choices $m=0$, $m=1$ makes $p$ not divide $n-m$, hence not divide $n'-r$. The transformation is an isomorphism near $P$, so the multiplicity of $P$ on $F'$ is still $r$, and the point of $F'$ corresponding to $P$ is therefore not terrible for $F'$.
 
-In characteristic $p$ the case is Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.
+By step [](#excellent-position-attained){.pf-ref} excellent position at $P$ is available exactly when the projection $\pi_P$ from $P$ is separable; what the appendix above supplies is the transformation that produces that hypothesis when it fails. If $\pi_P$ is not separable then $p\mid(n-r)$, the inseparable degree of $\pi_P$ being a power $p^e>1$ dividing its degree $n-r$ (step [](#excellent-position){.pf-ref}). Choose the preliminary transformation $T$ of the paragraph above, centred at $Q$ of multiplicity $m\in\{0,1\}$ and two points off $C$, with $P$ on no fundamental line, no fundamental line containing a singular point of $C$ other than $Q$, and every fundamental line meeting $C$ transversally at smooth points; write $C_1=T(C)$ and $P_1=T(P)$. Then:
+
+(i) $P$ is not a fundamental point and lies on no fundamental line, so $T$ is an isomorphism near $P$, and $P_1$ has multiplicity $r$ and the singularity of $P$ (step [](#algebraic-transform-multiplicities){.pf-ref}).
+
+(ii) $\deg C_1=2n-m$ (loc. cit.), so $\deg\pi_{P_1}=2n-m-r\equiv n-m\pmod p$. Since $p\mid(n-r)$, the choice $m=0$ when $p\nmid r$ and $m=1$ when $p\mid r$ gives $p\nmid(n-m)$, hence $p\nmid\deg\pi_{P_1}$; and an inseparable morphism of curves has degree divisible by $p$. So $\pi_{P_1}$ is separable.
+
+(iii) The points of $C_1$ over $Q$ are smooth, $m$ being $0$ or $1$; the three fundamental points of $C_1$ are ordinary, the fundamental lines meeting $C$ transversally at smooth points (loc. cit.); and $T$ is an isomorphism near every other point of $C$, all singular points other than $P$ being off the fundamental lines by construction. Hence the non-ordinary points of $C_1$ are exactly those of $C$ other than $P$, together with $P_1$: $N(C_1)=N(C)$, and $g^*(C_1)=g^*(C)$ because the cancellation of step [](#genus-invariant-drops){.pf-ref} applies verbatim with the sum taken over the points over the three centres, each of multiplicity at most $1$ here.
+
+So $(C_1,P_1)$ has the numbers $N$ and $g^*$ of $(C,P)$, the singularity of $P$, and a separable projection at $P_1$; the descent step of steps [](#excellent-position-attained){.pf-ref} and [](#genus-invariant-drops){.pf-ref} then applies at $P_1$ and drops $N+g^*$ by at least $1$, as step [](#termination){.pf-ref} records. Each descent step is preceded by at most one preliminary transformation, so at most $2(N+g^*(C))$ quadratic transformations suffice, $N+g^*$ being a non-negative integer by step [](#genus-invariant-nonnegative){.pf-ref}. No theorem for characteristic $p$ beyond this count is used: the preliminary transformation is the one Fulton prescribes in Appendix A, and the only thing added here is that it is neutral for $N$ and $g^*$ and that it restores the hypothesis of step [](#excellent-position-attained){.pf-ref}.
 
 The appendix's sentence on the choice of $m$ reads "one of the choices $m=0,1$ will insure that $p$ doesn't divide $n-r$", with $n-r$ where the congruence requires $n'-r$; the divisibility it needs is that of $n'-r$, and $n-r$ is divisible by $p$ by the first paragraph.
 :::
@@ -567,7 +632,7 @@ The appendix's sentence on the choice of $m$ reads "one of the choices $m=0,1$ w
 :::
 
 ::: pf-qed
-Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-position){.pf-ref} compute the multiplicities of a quadratic transform and of the multiple points it creates or preserves. Step [](#excellent-position-attained){.pf-ref} puts the current curve in excellent position at the chosen centre in characteristic $0$, and step [](#positive-characteristic){.pf-ref} treats the failure of that in characteristic $p>0$. Step [](#termination){.pf-ref} iterates the transformation finitely many times, with Fulton's bound, and the strict transform that results has no bad point, that is, only ordinary multiple points. This proves the exercise over an algebraically closed field of characteristic $0$; in characteristic $p>0$ the case is Fulton's Appendix A with Hirschfeld's Theorem 3.27. The hint (3.8) is not used: the proof resolves no curve by point blowups, terminating instead on the count of bad points against $g^*$.
+Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-position){.pf-ref} compute the multiplicities of a quadratic transform and of the multiple points it creates or preserves. Step [](#excellent-position-attained){.pf-ref} puts the current curve in excellent position at the chosen centre in characteristic $0$, and step [](#positive-characteristic){.pf-ref} treats the failure of that in characteristic $p>0$. Step [](#termination){.pf-ref} iterates the transformation finitely many times, with Fulton's bound, and the strict transform that results has no bad point, that is, only ordinary multiple points. This proves the exercise over an algebraically closed field of characteristic $0$; in characteristic $p>0$ the same descent applies, the preliminary transformation of step [](#positive-characteristic){.pf-ref} restoring the separability that step [](#excellent-position-attained){.pf-ref} needs, at the cost of doubling the bound. The hint (3.8) is not used: the proof resolves no curve by point blowups, terminating instead on the count of bad points against $g^*$.
 :::
 
 :::
@@ -576,7 +641,7 @@ Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-positio
 ::: {.remark title="Published solution"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, and its notion of ordinary singularity is that of (I, Ex. 5.14).
 
-The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113.
+The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. Appendix A is where the characteristic-$p$ case is settled, once it is observed that the preliminary transformation Fulton prescribes there is neutral for $N$ and for $g^*$ and restores the hypothesis of his Lemma 1: that observation is step [](#positive-characteristic){.pf-ref}, and with it his Theorem 2 runs unchanged in every characteristic.
 
 Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, printed p. 25, states excellent position; Propositions 20 and 21, printed pp. 26--27, prove the sum $\sum_i I(P_i,C'\cap L)=n$ and the multiplicities $n$, $n-r$, $n-r$, and Proposition 21 states the ordinariness of $P$, $P'$ and $P''$ in its second part while its proof reaches only those multiplicities, so that passage stays the card's own; the invariant $g^*$ is defined in the paragraph before his Remark 23, printed p. 27, and Proposition 22, printed p. 27, states that it is a nonnegative integer; Theorem 13, printed p. 28, gives the finite sequence; and §7.3, printed p. 40, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
 :::
