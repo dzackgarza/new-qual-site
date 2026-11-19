@@ -16,9 +16,23 @@ audit:
   date: '2026-11-01'
   note: Stein and Shakarchi Ch. 10, Problem 1 prints a,k positive. Its converse then fails
     for n=7. The card uses nonnegative a,k so the stated three-square theorem is true.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read in the retained book `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` at its printed folio (the scan runs nineteen pages ahead): the
+    statement is Problem 1 at the head of the Chapter 10 Problems, printed p. 297, and its printed words
+    are the card's except in one respect recorded here: the book prints "where a and k are positive
+    integers", while the card says nonnegative. Both claims are true -- the standard three-squares
+    theorem excludes every n = 4^a(8k+7) with a, k >= 0, and 7 itself (a = k = 0) is not a sum of three
+    squares -- so the card states the theorem in its usual, slightly stronger form and the printed
+    hypothesis is the weaker one. The statement is left as the card has it, and this difference is the
+    reason. Not checked in this pass: the argument, which the edit does not touch.
 ---
 
 ::: {.exercise}
+This is Problem 1 of Chapter 10 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 297; the statement below is its wording.
+
 Suppose $n=4^a(8k+7)$, where $a$ and $k$ are nonnegative integers. Show that $n$ cannot be written as a sum of three integer squares. The converse for positive integers is the three-square theorem of Legendre and Gauss.
 :::
 
