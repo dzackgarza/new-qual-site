@@ -22,6 +22,8 @@ Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to
 :::
 
 ::: {.solution}
+
+The argument is the card's own: an affine map to a strip of height $\pi$, the exponential to the upper half-plane and the inverse Joukowsky map to the upper half-disc are composed, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $\Omega = \{z = x+iy \in \CC : 1 < x < 3\}$ be the vertical strip and $\DD^+ = \{w \in \CC : \abs{w} < 1 \text{ and } \text{Im}(w) > 0\}$ the upper half unit disk.
 
 * * *
