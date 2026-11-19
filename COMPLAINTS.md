@@ -376,11 +376,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **74 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **73 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Twenty-three of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 74 stand as this item lists them.
+   reported and repaired above. Twenty-four of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 73 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -514,7 +514,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    so there is none, and Whitehead makes the complex contractible. The $n=0$ case is separated, where
    discreteness plus path connectivity gives a point.
 
-   Remaining unread in this item's set: §4.1 13–23 (11), §4.2 (39), §4.3 (24) --- 74 proofs.
+   **§4.1-13, read the same day.** Correct, no card changed. This card is an `exercise` block, not a
+   `problem` one --- a trap for a `sed` anchor on `.problem` --- and it asks for a retraction onto a
+   contractible subcomplex. A contractible $A$ has $\pi_{k}(A)=0$ for all $k$ and is path connected, so
+   Lemma 4.7 applies to $\operatorname{id}_A$ with $Y=A$ and extends it to $r\colon X\to A$; a map whose
+   restriction to $A$ is the identity is a retraction, which is the claim.
+
+   Remaining unread in this item's set: §4.1 14–23 (10), §4.2 (39), §4.3 (24) --- 73 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
