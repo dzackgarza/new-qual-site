@@ -30,6 +30,8 @@ Show that this is a direct limit in the category of sheaves on $X$: given a shea
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.10, printed p. 66. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.10, printed p. 4, states in two sentences what the steps below write out: that the sectionwise direct limit $U\mapsto\varinjlim_i\mcf_i(U)$ is a direct limit in the category of presheaves, and that the universal property of sheafification factors every compatible map uniquely through it.
+
 Let
 $$
 \mcp(U)=\varinjlim_i\mcf_i(U)
