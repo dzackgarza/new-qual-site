@@ -46,7 +46,7 @@ Layer cake: $\abs{f(x)}$ is the measure of the set of levels $\alpha>0$ below it
 ::: pf
 
 ::: {.pf-step #pointwise}
-For every $x$, $\displaystyle\abs{f(x)}=\int_0^\infty\mathbf 1_{\{\alpha<\abs{f(x)}\}}\,\dd\alpha$.
+For every $x$, $\displaystyle\abs{f(x)}=\int_0^\infty\mathbf 1_{\{\alpha<\abs{f(x)}\}}\,d\alpha$.
 
 ::: pf-proof
 For a fixed real $t\ge0$, the set of $\alpha>0$ with $\alpha<t$ is $(0,t)$, whose measure is $t$; and for $t=0$ it is empty, of measure $0$. Since $t\mapsto\mathbf 1_{\{\alpha<t\}}$ is the indicator of an interval, the integral equals $\abs{f(x)}$.
@@ -66,20 +66,20 @@ $\{(x,\alpha):\alpha<\abs{f(x)}\}$ is the set where the measurable function $(x,
 
 
 ::: {.pf-step #tonelli}
-$\displaystyle\int_\RR\abs{f(x)}\,\dd x=\int_0^\infty\!\!\int_\RR\mathbf 1_{\{\abs{f(x)}>\alpha\}}\,\dd x\,\dd\alpha$.
+$\displaystyle\int_\RR\abs{f(x)}\dx=\int_0^\infty\!\!\int_\RR\mathbf 1_{\{\abs{f(x)}>\alpha\}}\dx\,d\alpha$.
 
 ::: pf-proof
-By step [](#pointwise){.pf-ref}, $\int_\RR\abs f\,\dd x=\int_\RR\int_0^\infty\mathbf 1_{\{\alpha<\abs{f(x)}\}}\,\dd\alpha\,\dd x$. The integrand is nonnegative and measurable by step [](#measurable){.pf-ref}, so Tonelli's theorem permits the interchange of the two integrals and gives the displayed identity; the condition $\alpha<\abs{f(x)}$ is the same as $\abs{f(x)}>\alpha$.
+By step [](#pointwise){.pf-ref}, $\int_\RR\abs f\dx=\int_\RR\int_0^\infty\mathbf 1_{\{\alpha<\abs{f(x)}\}}\,d\alpha\dx$. The integrand is nonnegative and measurable by step [](#measurable){.pf-ref}, so Tonelli's theorem permits the interchange of the two integrals and gives the displayed identity; the condition $\alpha<\abs{f(x)}$ is the same as $\abs{f(x)}>\alpha$.
 :::
 
 :::
 
 
 ::: {.pf-step #conclusion}
-$\displaystyle\int_\RR\abs{f(x)}\,\dd x=\int_0^\infty m(E_\alpha)\,\dd\alpha$, where $E_\alpha=\{x:\abs{f(x)}>\alpha\}$.
+$\displaystyle\int_\RR\abs{f(x)}\dx=\int_0^\infty m(E_\alpha)\,d\alpha$, where $E_\alpha=\{x:\abs{f(x)}>\alpha\}$.
 
 ::: pf-proof
-By step [](#tonelli){.pf-ref} the inner integral $\int_\RR\mathbf 1_{\{\abs{f(x)}>\alpha\}}\dd x$ equals the Lebesgue measure of $\{x:\abs{f(x)}>\alpha\}=E_\alpha$, for each fixed $\alpha>0$. Substituting gives the identity; both sides are finite or both infinite, and the left side is finite here because $f\in L^1$, so the right-hand side defines an integrable function of $\alpha$.
+By step [](#tonelli){.pf-ref} the inner integral $\int_\RR\mathbf 1_{\{\abs{f(x)}>\alpha\}}\dx$ equals the Lebesgue measure of $\{x:\abs{f(x)}>\alpha\}=E_\alpha$, for each fixed $\alpha>0$. Substituting gives the identity; both sides are finite or both infinite, and the left side is finite here because $f\in L^1$, so the right-hand side defines an integrable function of $\alpha$.
 :::
 
 :::
