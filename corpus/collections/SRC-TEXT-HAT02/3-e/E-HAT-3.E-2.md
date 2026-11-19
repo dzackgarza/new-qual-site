@@ -72,6 +72,21 @@ audit:
     paragraph, which STYLE-04 rejects and which no earlier pass had flagged because the card had
     not been touched since the rule was added. Not claimed: the classification theorem itself
     (Exercise 29 of §4.2), and nothing geometric beyond the arithmetic LensDegree.lean certifies.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology, Section 3.E, Exercise 2, printed p. 310 (pinned by the
+    running heads: PDF 319 carries 310 with the Exercises heading, PDF 320 carries 311 where Section
+    3.F begins). The card's statement is the printed one, parts (a) to (d) included.
+    Checked in this pass: part (a). The argument is right -- h*(y') = a y by naturality of the
+    Bockstein, h*(z') = eps z with eps = plus or minus one because a homotopy equivalence has degree
+    plus or minus one on integral top cohomology, and pulling back x'(y')^(n-1) = t'z' gives
+    a^n t = eps t', so [t'] = [t] in Z_m^* modulo the nth powers up to sign. The preliminary remark
+    that replacing x by ax multiplies t by a^n is also right.
+    NOT checked in this pass: parts (b), (c) and (d), which are the degree computation, the induced
+    quotient map and its effect on tau. No claim is made about them here.
+
 ---
 
 ::: {.problem}
