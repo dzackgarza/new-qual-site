@@ -7768,3 +7768,34 @@ changes.
 **Uncertainty.** Read for this record: Yang's Solutions 5.1.7 at printed p. 100 and 5.1.10 at printed
 p. 101, rendered as page images; the statements the two cards carry, not reopened against the book in
 this pass. Not read: the remaining five cards' entries, and the printed books themselves.
+
+## 2026-11-19: Yang's 5.2.9 and 5.2.11 at printed p. 104 — the quadric cone's two cases and the two cohomology sums
+
+**Object and need.** `P-AGH529QUADCONE` (V.2.9) and `P-AGH5211VERYAMPLESECT` (V.2.11), two more of the
+five Chapter V cards counted in the record above.
+
+**V.2.9, printed p. 104.** The complete-intersection case first: for $Y=X_0\cap S$ of degree $a\ge1$,
+(2.8.4) gives $\deg Y=2a$ and $g(Y)=\frac12\cdot2\cdot a(a+2-4)+1=(a-1)^2$. Then, for a curve that is
+not a complete intersection, the vertex is blown up to the ruled surface $X\to X_0$ with $e=-2$ by
+(2.11.4); $Y\sim aC_0+bf$ with $b=2a+1$; with $\widetilde H\sim_{\mathrm{num}}C_0+2f$ the degree reads
+$\widetilde H\cdot Y_0=2a+b=2a+1$; and adjunction $2g-2=(aC_0+bf)\cdot(aC_0+bf+K)$ with
+$K\sim_{\mathrm{num}}-2C_0-4f$, $C_0^2=-2$ expands to $g=a^2-a$. The entry's own adjunction display is
+cut off in the copy; its two results are the exercise's.
+
+**V.2.11, printed p. 104.** With $0\to\mathcal L_X(-C_0)\to\OO_X\to\OO_C\to0$ and $D=C_0+\mathfrak bf$,
+the vanishing of $h^1$ and $h^2$ of $\mathcal L_X(\mathfrak bf)$ for $\mathfrak b$ nonspecial gives
+$h^i(\mathcal L_X(D))=h^i(\mathcal L_C(\mathfrak b))+h^i(\mathcal L_C(\mathfrak b+\mathfrak e))$, so
+$h^0(\mathcal L_X(D-Pf))=h^0(\mathcal L_X(D))-2$ for every $P$ — base-point-freeness in the form
+(IV, 3.1) uses — and at $P+Q$ the count gives $h^0(\mathcal L_X(D-Pf-Qf))=h^0(\mathcal L_X(D))-4$,
+which is what (b) needs.
+
+**The remainder, recounted.** Three Chapter V cards still lack Yang: V.2.7, V.2.14, V.2.16, at printed
+pp. 103--106.
+
+**Repair.** `P-AGH529QUADCONE` in `ddb39089cb` and `P-AGH5211VERYAMPLESECT` in `d20cd0cc1b`, one commit
+each; this record in the COMPLAINTS commit that carries it. No step, statement or hypothesis of either
+card changes.
+
+**Uncertainty.** Read for this record: Yang's Solutions 5.2.9 and 5.2.11 at printed p. 104, rendered as
+page images; the statements the two cards carry, not reopened against the book in this pass. Not read:
+V.2.7, V.2.14 and V.2.16's entries, and the printed books themselves.
