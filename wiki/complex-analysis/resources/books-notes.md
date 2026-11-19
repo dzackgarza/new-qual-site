@@ -37,8 +37,6 @@ order: 0
 
 ## Summaries
 
-- [UC Irvine complex-analysis computational summary](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf)
-
 - [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, complex-analysis notes following Stein--Shakarchi]]
 
 - [[attachments/complex.pdf|Douglas N. Arnold, complex-analysis lecture notes (Penn State, Spring 1997)]]
@@ -46,8 +44,6 @@ order: 0
 - [[attachments/ist_ca_2015.pdf|Sameer Chavan, problems in complex analysis]]
 
 - [Robert Won, UCSD complex-analysis qual review](http://www.math.ucsd.edu/~rwon/files/qualprep/complex.pdf)
-
-- [Stanford Math Camp complex-analysis review](http://web.stanford.edu/~yuvalwig/math/teaching/ComplexAnalysisNotes.pdf)
 
 - [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
 
@@ -63,9 +59,5 @@ order: 0
 - [Ko Honda, complex-analysis course notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
 
 - [Cambridge Part IB complex analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
-
-- [Arun Debray, complex-analysis lecture notes](https://web.ma.utexas.edu/users/a.debray/lecture_notes/116notes.pdf)
-
-- [Missouri S&T complex-analysis course notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
 
 - [[attachments/McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]
