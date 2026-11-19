@@ -65,7 +65,7 @@ Write $R=P/Q$ in lowest terms. The hypothesis $\deg Q\ge\deg P+2$ makes $R$ inte
 ::: pf
 
 ::: {.pf-step #setup}
-$R$ is continuous on $\RR$ and $\abs{R(x)}\le C\abs x^{-2}$ for $\abs x\ge\rho$, so the transform $T(\xi)=\int_{\RR}R(x)e^{-2\pi ix\xi}\dd x$ converges absolutely for every $\xi$; and $R$ has finitely many poles, none on $\RR$, each of some multiplicity.
+$R$ is continuous on $\RR$ and $\abs{R(x)}\le C\abs x^{-2}$ for $\abs x\ge\rho$, so the transform $T(\xi)=\int_{\RR}R(x)e^{-2\pi ix\xi}\dx$ converges absolutely for every $\xi$; and $R$ has finitely many poles, none on $\RR$, each of some multiplicity.
 
 ::: pf-proof
 Because $Q$ is a polynomial with no real zeros, $R$ is continuous on $\RR$ and bounded there. Since $\deg Q\ge\deg P+2$, the quotient satisfies $\abs{R(z)}\le C\abs z^{-2}$ for large $\abs z$, so $\int_{\abs x\ge\rho}\abs{R}<\infty$ and the integral defining $T$ converges absolutely, as $\abs{e^{-2\pi ix\xi}}=1$ for real $x$. A nonzero polynomial has finitely many roots, so $Q$ has finitely many zeros; $R$ is in lowest terms, so each zero $\alpha$ of $Q$ is a pole of $R$ of order equal to its multiplicity as a root of $Q$.
@@ -75,7 +75,7 @@ Because $Q$ is a polynomial with no real zeros, $R$ is continuous on $\RR$ and b
 
 
 ::: {.pf-step #arc}
-For $R>\rho$ put $\Gamma^+_R$ for the boundary of the half-disc $\{\abs z<R,\ \Im z>0\}$ and $\Gamma^-_R$ for that of $\{\abs z<R,\ \Im z<0\}$. Then $\lim_{R\to\infty}\int_{\text{semicircle}}\abs{R(z)e^{-2\pi iz\xi}}\abs{\dd z}=0$: on the upper semicircle when $\xi<0$, and on the lower semicircle when $\xi>0$.
+For $R>\rho$ put $\Gamma^+_R$ for the boundary of the half-disc $\{\abs z<R,\ \Im z>0\}$ and $\Gamma^-_R$ for that of $\{\abs z<R,\ \Im z<0\}$. Then $\lim_{R\to\infty}\int_{\text{semicircle}}\abs{R(z)e^{-2\pi iz\xi}}\abs{\dz}=0$: on the upper semicircle when $\xi<0$, and on the lower semicircle when $\xi>0$.
 
 ::: pf-proof
 For $z=x+iy$ one has $\abs{e^{-2\pi iz\xi}}=e^{2\pi y\xi}$. If $\xi<0$ and $y\ge0$ this is at most $1$; if $\xi>0$ and $y\le0$ it is also at most $1$. In either case, by step [](#setup){.pf-ref} the integrand is bounded by $C R^{-2}$ on the semicircle, whose length is $\pi R$, so the integral is at most $C\pi R^{-1}\to0$.
@@ -90,15 +90,15 @@ For $\xi<0$, $\displaystyle T(\xi)=2\pi i\sum_{\Im\alpha_j>0}\operatorname{Res}_
 ::: pf-proof
 Let $\xi<0$ and let $R$ be so large that all upper poles lie inside $\Gamma^+_R$. The function $R(z)e^{-2\pi iz\xi}$ is holomorphic except at the poles of $R$, so the residue theorem gives
 $$
-\oint_{\Gamma^+_R}R(z)e^{-2\pi iz\xi}\dd z=2\pi i\sum_{\Im\alpha_j>0}\operatorname{Res}_{z=\alpha_j}\bigl(R(z)e^{-2\pi iz\xi}\bigr),
+\oint_{\Gamma^+_R}R(z)e^{-2\pi iz\xi}\dz=2\pi i\sum_{\Im\alpha_j>0}\operatorname{Res}_{z=\alpha_j}\bigl(R(z)e^{-2\pi iz\xi}\bigr),
 $$
 the contour being traversed counterclockwise. The contour integral is the sum of the integral over $[-R,R]$, which tends to $T(\xi)$ by step [](#setup){.pf-ref}, and the integral over the upper semicircle, which tends to $0$ by step [](#arc){.pf-ref}. Passing to the limit gives the display.
 
 For the shape of a single residue, write $R(z)=(z-\alpha)^{-m}g(z)$ with $g$ holomorphic near $\alpha$ and $g(\alpha)\ne0$. Then
 $$
-\operatorname{Res}_{z=\alpha}\bigl(R(z)e^{-2\pi iz\xi}\bigr)=\frac{1}{(m-1)!}\Bigl(\frac{\dd}{\dd z}\Bigr)^{m-1}\Bigl[g(z)e^{-2\pi iz\xi}\Bigr]_{z=\alpha}.
+\operatorname{Res}_{z=\alpha}\bigl(R(z)e^{-2\pi iz\xi}\bigr)=\frac{1}{(m-1)!}\Bigl(\frac{d}{dz}\Bigr)^{m-1}\Bigl[g(z)e^{-2\pi iz\xi}\Bigr]_{z=\alpha}.
 $$
-By the Leibniz rule, $(\dd/\dd z)^{m-1}(g\,e^{-2\pi iz\xi})$ evaluated at $\alpha$ is $\sum_{r=0}^{m-1}\binom{m-1}{r}g^{(m-1-r)}(\alpha)(-2\pi i\xi)^re^{-2\pi i\alpha\xi}$, a polynomial in $\xi$ of degree at most $m-1$ times $e^{-2\pi i\alpha\xi}$.
+By the Leibniz rule, $(d/dz)^{m-1}(g\,e^{-2\pi iz\xi})$ evaluated at $\alpha$ is $\sum_{r=0}^{m-1}\binom{m-1}{r}g^{(m-1-r)}(\alpha)(-2\pi i\xi)^re^{-2\pi i\alpha\xi}$, a polynomial in $\xi$ of degree at most $m-1$ times $e^{-2\pi i\alpha\xi}$.
 :::
 
 :::
