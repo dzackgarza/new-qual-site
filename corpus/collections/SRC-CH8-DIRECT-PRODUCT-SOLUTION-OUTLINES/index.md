@@ -34,7 +34,9 @@ source:
           comment: Exercise 13
         - id: P-CH8-14
           comment: Exercise 12 (printed; the card's id is item 14 of the retained
-            Chapter 8 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on)
+            Chapter 8 outline, whose numbering runs two ahead of Gallian 7e from its item 12 on;
+            the offset is not constant later, since outline 36--40 are 7e 32--36 and outline 49--68
+            are 7e 41--58, so a citation is made from the statement, not from the id)
         - id: P-CH8-15
           comment: Exercise 13 (printed as exercise 15 when the card was created; the isomorphism of
             the additive group of the complex numbers with R + R is exercise 13 in Gallian 7e,
