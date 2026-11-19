@@ -7806,3 +7806,22 @@ card changes.
 **Uncertainty.** Read for this record: Yang's Solutions 5.2.9 and 5.2.11 at printed p. 104, rendered as
 page images; the statements the two cards carry, not reopened against the book in this pass. Not read:
 V.2.7, V.2.14 and V.2.16's entries, and the printed books themselves.
+
+## 2026-11-19, seventh item: residue 3 is being edited by more than one chat, so the never-reviewed count is not one lane's
+
+**Object and need.** The fifth item above recorded 470 never-reviewed cards in residue 3 (`int(id.rsplit("-",1)[1], 36) % 16 == 3`) and treated them as one lane's work. Picking cards this session showed that other chats are writing into the same residue, so that framing is wrong in a way that matters for scheduling: duplicated reads are possible, and the count falls for reasons other than the lane's own work.
+
+**Evidence, from cards picked as unreviewed and then found touched the same day.** Both are residue 3 and both carry a `claude` event dated 2026-11-19 that this chat did not write:
+
+| card | residue | event found |
+| --- | ---: | --- |
+| `E-HK-CG7N` | 3 | `solution-reviewed` by `claude`, 2026-11-19, recomputing a Hoffman--Kunze 1.3.2 row reduction |
+| `P-7CUNN` | 3 | `solution-written` by `claude`, 2026-11-19, supplying parts (c), (e), (f), (g) and checking each answer by differentiation |
+
+Neither was in the 470-item set when it was taken; `E-HK-CG7N` now counts as reviewed and `P-7CUNN` as freshly completed, both by someone else. A third card picked the same way, `P-KU6C3` (residue 3), was still untouched.
+
+**What follows, and what does not.** It follows that the brief's partition is not exclusive in practice: either two chats were given the same residue, or a chat is working a different modulus (`% 8` against `% 16` would put every `% 16 == 3` card inside the `% 8 == 3` class only when the residues agree, and they do not always). It does **not** follow that any specific card was read twice; the two above were read once each, by the other chat, and this chat moved on when it saw the event.
+
+**Advice for the next dispatcher.** Treat a residue as a work queue, not a property: check a card for an existing `solution-reviewed` or same-day `solution-written` event before spending a read on it, which is what caught both cases here and cost one command each. Any count of remaining work should be re-measured rather than quoted from an earlier entry, this one included.
+
+**Uncertainty.** Two sightings out of three picks is a small sample and could reflect a single chat finishing a batch; the briefs of the other chats were not read, so how the overlap arose is not established. The residue values were computed from the card ids with the formula in the brief, not from any assignment record.
