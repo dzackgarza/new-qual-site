@@ -11,6 +11,19 @@ classification:
   - Symmetric Functions
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 5 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p.
+    5 of the nine-page paper retained at assets/attachments/APPLIED-ALGEBRA-EXAM.pdf, is the statement
+    the card answers, and the paragraph at the head of the solution records that the paper prints no
+    solutions, so the argument is the card's own. Checked: the statement against the paper's text layer
+    at the page named; the symmetric-cube character, its pairings, and the endomorphism algebra read off
+    the multiplicities; `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the
+    QED. Not checked: no retained solution set exists for this paper to compare the argument with, and
+    no other card of the collection in this pass.
 ---
 
 ::: {.problem}
@@ -24,7 +37,7 @@ Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-module
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the card's own character computation is completed here, with the symmetric-cube character, its pairings and the endomorphism algebra as separate steps.
+No retained solution set covers Problem 5, printed on p. 5 of the paper at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf` (the Qualifying Exam in Applied Algebra of May 30, 2017): the card's own character computation is completed here, with the symmetric-cube character, its pairings and the endomorphism algebra as separate steps.
 
 Let $W=\CC^{4}$ be the permutation representation of $S_{4}$, so $V=\CC[x_{1},\dots,x_{4}]_{3}\cong\operatorname{Sym}^{3}W$.
 
