@@ -13,9 +13,15 @@ order: 7
 
 [[PR-JKE6C]]
 
+[[PR-TVPCM]]
+
 [[PR-QNDSD]]
 
 [[T-GROTS]]
+
+[[PR-NQ64T]]
+
+[[PR-4LISY]]
 
 [[T-B7YTE]]
 
@@ -45,6 +51,22 @@ See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 [[T-SVF2W]]
 
+[[C-F2ZZQ]]
+
+[[C-TODSQ]]
+
+[[C-GM57K]]
+
+[[C-YQUHR]]
+
+[[PR-6WOTK]]
+
+[[PR-QW3ZK]]
+
+[[C-KOFDQ]]
+
+[[T-K66DJ]]
+
 [[T-BYNL5]]
 
 [[T-YLI6Y]]
@@ -69,6 +91,14 @@ See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-DDOWW]]
 
+[[C-Q6BSL]]
+
+[[PR-L4Y5F]]
+
+[[T-SSNLT]]
+
+[[PR-D3CDJ]]
+
 See [[complex-analysis/singularities/index|Singularities]].
 
 ## Residues and contours
@@ -89,6 +119,8 @@ See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Eval
 
 [[T-CJCKL]]
 
+[[FT-FZERI]]
+
 [[T-FZWEC]]
 
 See [[complex-analysis/counting-zeros/index|Counting zeros]].
@@ -102,6 +134,12 @@ See [[complex-analysis/counting-zeros/index|Counting zeros]].
 [[T-W26VL]]
 
 [[T-VGDFW]]
+
+[[PR-74KHY]]
+
+[[PR-OOHFS]]
+
+[[T-SULVA]]
 
 [[FF-XZGIY]]
 
