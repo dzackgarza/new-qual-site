@@ -54,6 +54,7 @@ Use this to get another proof that $\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ) \app
 :::
 
 ::: {.solution}
+The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 5, printed p. 320; the argument below is the card's own.
 Apply $\operatorname{Hom}(A,-)$ to $0\to\ZZ\to\QQ\to\QQ/\ZZ\to0$: the resulting long exact sequence ends $\operatorname{Hom}(A,\QQ)\to\operatorname{Hom}(A,\QQ/\ZZ)\to\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}(A,\QQ)$, and $\QQ$ being divisible (equivalently, injective) kills the last term, so $\operatorname{Ext}(A,\ZZ)$ is the cokernel. For $A=\ZZ_{p^\infty}$ the first Hom vanishes because $\QQ$ is torsionfree while $A$ is torsion, and the second is $\operatorname{End}(\ZZ_{p^\infty})\cong\varprojlim\ZZ/p^n$ because an endomorphism of the Prüfer group is exactly a compatible family of residues. The argument is this card's own: no retained solution set covers this exercise.
 
 ::: pf
