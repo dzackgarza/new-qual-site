@@ -30,6 +30,8 @@ Show that it has the universal property of an inverse limit in the category of s
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.1.12, printed p. 67. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 2.1.12, printed p. 5, gives it in two sentences: the gluing axiom is a limit condition, so the sectionwise inverse limit is a sheaf, and an inverse limit of sheaves is one in the category of presheaves, the sheaves forming a full subcategory.
+
 Let
 $$
 \mcp(U)=\varprojlim_i\mcf_i(U).
