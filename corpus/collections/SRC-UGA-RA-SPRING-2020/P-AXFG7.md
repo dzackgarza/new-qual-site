@@ -20,6 +20,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-11
   note: Reviewed both finite- and infinite-outer-measure cases for the Borel hull and the Caratheodory-measurable-set decomposition; the proof correctly handles the infinite case by bounded pieces.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the four containers state why their subsections suffice, and the 30
+    leaf steps that asserted their claim with no justification each carry a sentence deriving it. The
+    mathematics is unchanged: the $G_\delta$ hull is built from covers of total length below
+    $m_*(E)+1/k$, the infinite case reduces to the finite one by cutting the line into unit half-open
+    intervals, Carathéodory's condition applied to the hull gives a null difference set, and the
+    measurable case assembles the pieces over the same partition. Checked against the statement on the
+    card, from the UGA Spring 2020 real analysis qualifying exam. Nothing in the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -55,36 +67,71 @@ Part (a): Case $m_*(E) < \infty$.
 By definition of outer measure on $\RR$, for any $E \subseteq \RR$:
 $$m_*(E) = \inf \left\{ \sum_{j=1}^\infty \setmeasure{I_j} \;\st\; E \subseteq \bigcup_{j=1}^\infty I_j, \, I_j \text{ open intervals} \right\}.$$
 
+
+::: pf-proof
+This is the definition of Lebesgue outer measure as the infimum of the total lengths of countable covers by open intervals.
+:::
+
 :::
 
 ::: pf-step
 For each integer $k \ge 1$, by the definition of the infimum, there exists a countable collection of open intervals $\{I_{j, k}\}_{j=1}^\infty$ covering $E$ such that
 $$\sum_{j=1}^\infty \setmeasure{I_{j, k}} < m_*(E) + \frac{1}{k}.$$
 
+
+::: pf-proof
+The number $m_*(E)+1/k$ is not a lower bound for the set of cover sums, so some cover has total length below it.
+:::
+
 :::
 
 ::: pf-step
 Define the open set $U_k = \bigcup_{j=1}^\infty I_{j, k}$.
+
+
+::: pf-proof
+This is a definition: the union of the chosen cover.
+:::
 
 :::
 
 ::: pf-step
 Then $E \subseteq U_k$, and by countable subadditivity, $m_*(U_k) \le \sum_{j=1}^\infty \setmeasure{I_{j, k}} < m_*(E) + \frac{1}{k}$.
 
+
+::: pf-proof
+The cover contains $E$, and countable subadditivity bounds the outer measure of a union by the sum of the outer measures of its members, each at most the length of the interval.
+:::
+
 :::
 
 ::: pf-step
 Define the $G_\delta$ set $B = \bigcap_{k=1}^\infty U_k$.
+
+
+::: pf-proof
+This is a definition of the candidate Borel hull.
+:::
 
 :::
 
 ::: pf-step
 Since $B$ is a countable intersection of open sets, $B$ is a Borel set.
 
+
+::: pf-proof
+A countable intersection of open sets is a $G_\delta$ set, hence Borel.
+:::
+
 :::
 
 ::: pf-step
 Since $E \subseteq U_k$ for every $k$, $E \subseteq B$.
+
+
+::: pf-proof
+$E$ lies in every $U_k$, hence in their intersection.
+:::
 
 :::
 
@@ -92,10 +139,20 @@ Since $E \subseteq U_k$ for every $k$, $E \subseteq B$.
 By monotonicity of outer measure:
 $$m_*(E) \le m_*(B) \le m_*(U_k) < m_*(E) + \frac{1}{k} \quad \text{for all } k \ge 1.$$
 
+
+::: pf-proof
+$E\subseteq B\subseteq U_k$, and outer measure is monotone.
+:::
+
 :::
 
 ::: pf-step
 Taking $k \to \infty$ gives $m_*(B) = m_*(E)$.
+
+
+::: pf-proof
+The difference $m_*(B)-m_*(E)$ is non-negative and bounded by $1/k$ for every $k$.
+:::
 
 :::
 
@@ -111,40 +168,80 @@ Part (a): Case $m_*(E) = \infty$.
 ::: pf-step
 Partition $\RR$ into bounded, pairwise disjoint intervals $J_n = [n, n+1)$ for $n \in \ZZ$.
 
+
+::: pf-proof
+The half-open unit intervals partition the line.
+:::
+
 :::
 
 ::: pf-step
 Define $E_n = E \cap J_n$ for each $n \in \ZZ$.
+
+
+::: pf-proof
+This is a definition of the pieces of $E$.
+:::
 
 :::
 
 ::: pf-step
 Since $E_n \subseteq J_n$, $m_*(E_n) \le m_*(J_n) = 1 < \infty$.
 
+
+::: pf-proof
+Monotonicity, and the outer measure of an interval is its length.
+:::
+
 :::
 
 ::: pf-step
 By step [](#borel-hull-finite-case){.pf-ref}, for each $n \in \ZZ$, there exists a Borel set $B_n \supseteq E_n$ such that $m_*(B_n) = m_*(E_n)$.
+
+
+::: pf-proof
+The finite case applies because each piece has finite outer measure.
+:::
 
 :::
 
 ::: pf-step
 Define $B = \bigcup_{n \in \ZZ} B_n$.
 
+
+::: pf-proof
+This is a definition of the union.
+:::
+
 :::
 
 ::: pf-step
 As a countable union of Borel sets, $B$ is Borel, and $E = \bigcup_{n \in \ZZ} E_n \subseteq \bigcup_{n \in \ZZ} B_n = B$.
+
+
+::: pf-proof
+A countable union of Borel sets is Borel, and $E_n\subseteq B_n$ for every $n$.
+:::
 
 :::
 
 ::: pf-step
 Since $E \subseteq B$, $m_*(E) \le m_*(B)$.
 
+
+::: pf-proof
+Monotonicity of outer measure.
+:::
+
 :::
 
 ::: pf-step
 Since $m_*(E) = \infty$, $m_*(B) = \infty = m_*(E)$.
+
+
+::: pf-proof
+If $m_*(B)$ were finite, monotonicity would make $m_*(E)$ finite as well.
+:::
 
 :::
 
@@ -160,16 +257,31 @@ Part (b): Case $m_*(E) < \infty$.
 ::: pf-step
 By step [](#borel-hull-finite-case){.pf-ref}, choose a Borel set $B \supseteq E$ such that $m_*(B) = m_*(E) < \infty$.
 
+
+::: pf-proof
+The hypothesis of this case is finite outer measure, so the finite case applies.
+:::
+
 :::
 
 ::: pf-step
 Apply Carathéodory's condition to the test set $A = B$:
 $$m_*(B) = m_*(B \cap E) + m_*(B \cap E^c).$$
 
+
+::: pf-proof
+Carathéodory's condition holds for the measurable set $E$ and every test set, in particular for $B$.
+:::
+
 :::
 
 ::: pf-step
 Since $E \subseteq B$, $B \cap E = E$ and $B \cap E^c = B \setminus E$.
+
+
+::: pf-proof
+$E\subseteq B$ gives both identifications.
+:::
 
 :::
 
@@ -177,16 +289,31 @@ Since $E \subseteq B$, $B \cap E = E$ and $B \cap E^c = B \setminus E$.
 Thus:
 $$m_*(B) = m_*(E) + m_*(B \setminus E).$$
 
+
+::: pf-proof
+Substituting the two identifications into Carathéodory's equation.
+:::
+
 :::
 
 ::: pf-step
 Since $m_*(B) = m_*(E) < \infty$, subtract $m_*(E)$ from both sides:
 $$m_*(B \setminus E) = m_*(B) - m_*(E) = 0.$$
 
+
+::: pf-proof
+Both terms are finite, so $m_*(E)$ may be subtracted.
+:::
+
 :::
 
 ::: pf-step
 Set $N = B \setminus E$. Then $m_*(N) = 0$ and $E = B \setminus N$.
+
+
+::: pf-proof
+This is a definition, and $E\subseteq B$ gives $B\setminus(B\setminus E)=E$.
+:::
 
 :::
 
@@ -202,25 +329,50 @@ Part (b): Case $m_*(E) = \infty$.
 ::: pf-step
 Again partition $\RR$ via $J_n = [n, n+1)$ for $n \in \ZZ$, and set $E_n = E \cap J_n$.
 
+
+::: pf-proof
+This is the same partition as in the infinite case of part (a).
+:::
+
 :::
 
 ::: pf-step
 Since $E$ is Carathéodory-measurable and each interval $J_n$ is measurable, each $E_n = E \cap J_n$ is Carathéodory-measurable with $m_*(E_n) \le 1 < \infty$.
+
+
+::: pf-proof
+The intersection of two measurable sets is measurable.
+:::
 
 :::
 
 ::: pf-step
 By step [](#measurable-decomposition-finite-case){.pf-ref}, for each $n \in \ZZ$, there exists a Borel set $B_n \supseteq E_n$ such that $N_n = B_n \setminus E_n$ has $m_*(N_n) = 0$.
 
+
+::: pf-proof
+Each $E_n$ is measurable with finite outer measure, so the finite case applies to it.
+:::
+
 :::
 
 ::: pf-step
 Define $B = \bigcup_{n \in \ZZ} B_n$. Then $B$ is a Borel set containing $E$.
 
+
+::: pf-proof
+A countable union of Borel sets, containing the pieces of $E$.
+:::
+
 :::
 
 ::: pf-step
 Define $N = B \setminus E = \left( \bigcup_{n \in \ZZ} B_n \right) \setminus \left( \bigcup_{n \in \ZZ} E_n \right) \subseteq \bigcup_{n \in \ZZ} (B_n \setminus E_n) = \bigcup_{n \in \ZZ} N_n$.
+
+
+::: pf-proof
+This is a definition of the exceptional set.
+:::
 
 :::
 
@@ -228,10 +380,20 @@ Define $N = B \setminus E = \left( \bigcup_{n \in \ZZ} B_n \right) \setminus \le
 By countable subadditivity of outer measure:
 $$m_*(N) \le \sum_{n \in \ZZ} m_*(N_n) = \sum_{n \in \ZZ} 0 = 0.$$
 
+
+::: pf-proof
+$B\setminus E\subseteq\bigcup_n(B_n\setminus E_n)$, and outer measure is countably subadditive.
+:::
+
 :::
 
 ::: pf-step
 Thus $m_*(N) = 0$ and $E = B \setminus N$.
+
+
+::: pf-proof
+A null set has outer measure zero, and $E\subseteq B$ gives $E=B\setminus N$.
+:::
 
 :::
 
