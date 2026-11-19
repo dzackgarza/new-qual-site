@@ -27,6 +27,17 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed following the book's own strategy: the cutoff lemma by n integrations by parts with vanishing boundary terms, uniform for Re s >= 0, giving (a); and (b) by reducing to the case m-k in (-1,0] and then k integrations by parts whose boundary terms vanish because m-k+1 > 0, with the Gamma factors identified through Gamma(m+1) = (m-k)! Gamma(m-k+1).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again while the corpus style rules were swept over this residue: the absolute value in the
+    closing step named its own delimiters with explicit sizing commands instead of `\abs{...}`, which
+    STYLE-04 asks for, and it is now `\abs{...}`. Nothing inside the absolute value, and nothing in
+    the bound beside it, changed. Checked in this pass: that the closing step's formula is the one
+    the two claims above it give, and that `\abs` is already the card's notation for a modulus in
+    the same display. Not checked in this pass: the argument of either claim, which this edit does
+    not touch.
 ---
 
 ::: {.exercise}
@@ -177,7 +188,7 @@ By Lemma 1.2 of Chapter 6 (printed p. 161), $\Gamma(w+1)=w\Gamma(w)$; applied $k
 ::: pf-qed
 Step [](#parta){.pf-ref} proves assertion (a) of the problem, and step [](#partb){.pf-ref} proves assertion (b). Together they give, for every $m>-1$, every integer $n\ge1$ and all $s$ with $\Re(s)\ge0$, $\abs{s}\ge1$,
 $$
-\Bigl|\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1)\Bigr|\le C_{m,n,\eta}\abs{s}^{-n},
+\abs{\int_0^\infty e^{-sx}x^m\eta(x)\,dx-s^{-m-1}\Gamma(m+1)}\le C_{m,n,\eta}\abs{s}^{-n},
 $$
 and choosing $n=\max(1,\lceil N\rceil)$ for the given $N>0$ yields $\int_0^\infty e^{-sx}x^m\eta(x)\,dx=s^{-m-1}\Gamma(m+1)+O(s^{-N})$ as $\abs{s}\to\infty$ in the closed half-plane $\Re(s)\ge0$, as required.
 
