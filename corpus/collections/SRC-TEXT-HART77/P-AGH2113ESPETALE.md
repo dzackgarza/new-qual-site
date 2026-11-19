@@ -376,6 +376,8 @@ Steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} identify continuit
 :::
 
 ::: {.remark}
+The exercise stands on printed p. 67 of Hartshorne, headed "Espace Etale of a Presheaf", read off that page (a 100 dpi render of PDF p. 82, printed p. $N$ being PDF p. $N+15$, since the text layer of this stretch drops numbered lines); the statement above is that page's text, the parenthetical reference to Godement [1, Ch. II, §1.2] and the construction of $\operatorname{Sp\'e}(\mcf)$ included.
+
 This exercise connects Hartshorne's definition of a sheaf with the espace étalé definition used elsewhere in the literature, for example in Godement.
 :::
 
