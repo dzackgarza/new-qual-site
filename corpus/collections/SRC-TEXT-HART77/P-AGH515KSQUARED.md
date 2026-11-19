@@ -28,6 +28,28 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 5.1.5, printed p. 100,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne V.1.5, printed p. 367,
+    which the card's earlier events record as read at a 110 dpi render of the
+    text-layerless page; this pass did not reopen it, and the comparison is
+    against the statement the card carries. Recomputed the two displays K^2 = d(d-4)^2 and K^2 = 8(g-1)(g'-1), the second
+    through C^2 = C'^2 = 0 and C.C' = 1. Not
+    checked: Yang's Solutions outside printed pp. 100-107; Hartshorne's printed
+    p. 367 in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 5.1.5 at printed
+    p. 100 beside Egbert's entry. No step, statement or hypothesis of
+    the card changes.
 ---
 
 ::: {.problem}
@@ -200,4 +222,6 @@ Step [](#s2){.pf-ref} proves part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-r
 The exercise stands on printed p. 367 of Hartshorne, read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 367 in the footer), and the statement above is that page's text, both parts and the reference to (II, Ex. 8.3) included.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.5, PDF p. 256: (a) $K_X=(d-4)H$ by adjunction since the canonical class of $\PP^3$ is $-4H$, and $H^2=d$ by the previous exercise, so $K_X^2=(d-4)^2d$; (b) $K_X=p_1^*K_C+p_2^*K_{C'}$ from II.8.3, so $K_X^2=(p_1^*K_C)^2+2p_1^*K_C\cdot p_2^*K_{C'}+(p_2^*K_{C'})^2$, "the middle term is $2(2g-2)(2g'-2)$ and the outer terms disappear". Steps [](#s3){.pf-ref} to [](#s5){.pf-ref} are this computation, with the vanishing of the outer terms proved in step [](#s4){.pf-ref} rather than asserted. Matches.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.1.5, printed p. 100, has both parts: (a) $K_X\sim(d-4)H$ with $H^2=d$ from the previous exercise, so $K_X^2=d(d-4)^2$; (b) $K_X=p_1^*K_C+p_2^*K_{C'}$ by (II, 8.3), and with $C^2=C'^2=0$ and $C\cdot C'=1$ the three terms are $0+2(2g-2)(2g'-2)+0=8(g-1)(g'-1)$.
 :::
