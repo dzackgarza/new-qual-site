@@ -272,5 +272,7 @@ step [](#s6){.pf-ref} proves that it fails for projective curves.
 :::
 
 ::: {.remark title="Published solution"}
+The exercise stands on printed p. 385 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text, the closing sentence "This is false for a projective curve" including.
+
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.2.16, PDF p. 273: he identifies the sheaves with finitely generated projective modules over the affine ring, uses that a Dedekind domain is a "$?$-category" so that equal Grothendieck classes give $A\oplus D\cong B\oplus D$ (his Rotman 7.77), and then that stably isomorphic projective modules over a Dedekind domain are isomorphic (Rotman 11.118). Step [](#s3){.pf-ref} recovers the determinant from the Grothendieck class as he does, and step [](#s4){.pf-ref} is Steinitz's theorem $P\cong A^{r-1}\oplus\det P$, which replaces his two citations by the classical statement; step [](#s6){.pf-ref} is the projective counterexample, which he does not give. Matches.
 :::
