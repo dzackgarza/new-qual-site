@@ -13,10 +13,10 @@ topics:
 
 ## The two sequences
 
-Neither sequence in [[D-4GCH6]] is left exact in general; injectivity of the leftmost map requires additional hypotheses.
-The relative sequence is also exact on the left when $X\to Y$ is smooth.
+Both sequences of [[D-4GCH6]] are exact on the right, and the leftmost map is injective only under additional hypotheses: for the conormal sequence this holds when $X$ is smooth over $k$ and $Z$ is nonsingular in $X$ [@Har77, Theorem II.8.17, p. 178].
+The relative sequence is exact on the left when $X\to Y$ is smooth [@Har77, §II.8, pp. 174--176].
 For a finite separable morphism $f\colon X\to Y$ of smooth curves, $f^*\Omega_Y \to \Omega_X$ is injective and its cokernel $\Omega_{X/Y}$ is a torsion sheaf whose length at $p$ is the coefficient of $p$ in the ramification divisor; Riemann--Hurwitz is the degree count of this sequence.
-The conormal sequence is exact on the left when $X$ and $Z$ are smooth over a field, and taking determinants gives adjunction, the computation behind the genus formulas in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
+The conormal sequence is exact on the left when $Z$ is nonsingular in a nonsingular $X$, and taking determinants gives adjunction, the computation behind the genus formulas in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 
 [[D-MODCONORM]]
 
