@@ -21,6 +21,8 @@ If $f$ is a finite real valued measurable function on a measurable set $E \subse
 :::
 
 ::: {.solution}
+
+The argument is the card's own: the graph is written as the zero set of the measurable function $\Phi(x,y)=y-f(x)$ on $E\times\RR$, and Tonelli's theorem with singleton vertical sections then gives it measure zero, with no source transcribed. The collection records no retained paper --- its `provenance:` list is empty and its `source_kind` is `university-exam` --- so no printed page is cited here, and none is implied.
 Let $E \subseteq \RR$ be a Lebesgue measurable set, let $f: E \to \RR$ be measurable, and let $\Gamma(f) = \{(x, f(x)) : x \in E\} \subseteq \RR^2$ be its graph. We show that $\Gamma(f)$ is Lebesgue measurable with measure zero.
 
 ::: pf
