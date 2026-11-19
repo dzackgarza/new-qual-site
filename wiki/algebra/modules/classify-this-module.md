@@ -29,7 +29,9 @@ Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$; for an abelian group giv
 
 ### Smith normal form
 
-The Smith normal form of $A$ is computed from its minors, and its diagonal entries are the data the decomposition uses; the statement and the computation are on [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
+The Smith normal form of $A$ is computed from its minors, and its diagonal entries are the data the decomposition uses.
+
+[[T-SMTHN]]
 
 ### Decomposition
 
