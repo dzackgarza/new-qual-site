@@ -138,6 +138,28 @@ audit:
     The remark now names Yang Pi-Yeh's Solution 4.1.10 at printed
     p. 85 beside the entry already there. No step, statement or
     hypothesis of the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Step s6 read for its mathematics: the argument is right and its notation was
+    not, and the solution now declares the notation. s6 writes mcl(E) for the
+    sheaf of the divisor E = D + P_0 while mcl alone is the given class in
+    Pic^0 X, and the symbol is used both ways in the same step: "mcl = mcl(D)",
+    then "a section of mcl(E)", then "deg mcl(E) = deg E = 1". Read as
+    mcl twisted by O_X(E), that is O_X(2D + P_0), and the conclusion
+    mcl = O_X(Z - P_0) fails; read as O_X(E) of the divisor, which is what the
+    step's own l(E) = 1 from step s3 forces, the count is right: chi(O_X) = 0,
+    chi(O_X(E)) = deg E + 1 - p_a = 1, so the zero-dimensional quotient O_Z(E)
+    has length 1 and Z is one closed point. The solution now says at its head
+    that mcl(D) is O_X(D) of a divisor and the bare mcl a given sheaf, which is
+    Hartshorne's own use of the letter at Example IV.1.3.7, printed p. 297
+    (PDF p. 312, folio read), where the map is P -> L(P - P_0), and at IV.1.10,
+    printed p. 299, which asks the reader to imitate it. Read and unchanged in
+    this pass: steps s1 to s5 and s7, and s6's last line, where Z ~ E = D + P_0
+    gives O_X(Z - P_0) = O_X(D) = mcl. Not checked in this pass: the Vakil
+    page 555 and the NTU solution's printed p. 4, which the preamble of s5 and
+    s6 cite, were not re-opened.
 ---
 
 ::: {.problem}
@@ -151,6 +173,8 @@ This generalizes (II, 6.11.4) and (II, Ex.
 
 ::: {.solution}
 ::: pf
+
+Throughout, $\mcl(D)$ denotes the invertible sheaf $\mco_X(D)$ associated to a divisor $D$, which is the notation of Hartshorne's Example IV.1.3.7, printed p. 297, and the bare $\mcl$ a given invertible sheaf; so $\mcl(E)$ in step [](#s6){.pf-ref} is $\mco_X(E)$ of the divisor $E$, not the class $\mcl$ twisted by $\mco_X(E)$.
 
 ::: {.pf-step #s1}
 
