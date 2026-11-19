@@ -91,9 +91,20 @@ audit:
     the two constructions is not needed for either failure. Not claimed: a published solution of
     this exercise, which the retained sets do not contain (DeMason's set answers 2.3.3 and 2.3.4
     only), and no certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 174 carries the running head 165,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 2.3 of Hatcher, *Algebraic Topology* (2002), printed p. 165, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 If $T_n(X, A)$ denotes the torsion subgroup of $H_n(X, A; \ZZ)$, show that the functors $(X, A) \mapsto T_n(X, A)$, with the obvious induced homomorphisms $T_n(X, A) \to T_n(Y, B)$ and boundary maps $T_n(X, A) \to T_{n-1}(A)$, do not define a homology theory.
 Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \ZZ) / T_n(X, A)$.
 :::
