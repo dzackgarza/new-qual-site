@@ -54,15 +54,5 @@ The criterion applies when the image curve $f\circ\gamma$ or the change of $\arg
 [[T-FZWEC]]
 
 Consequently a limit of nowhere-zero functions is nowhere zero or identically zero, and a limit of univalent functions is univalent or constant ([[T-SULVA]]).
+Applying [[T-CJCKL|Rouché's theorem]] to $f-w$ counts the solutions of $f(z) = w$ in $\Omega$ for each $w$, and [[complex-analysis/counting-zeros/the-argument-principle#Solutions of an equation|the argument principle]] shows the count is constant on each component of $\CC\sm f(\bd\Omega)$.
 
-## Solutions of $f(z) = w$
-
-::: {.example title="The number of solutions is constant on a component"}
-Applying [[T-CJCKL|Rouché's theorem]] to $f-w$ counts the solutions of $f(z) = w$ in $\Omega$ for each $w$.
-By [[T-52HK6|the argument principle]] the same count is
-$$
-F(w)\coloneqq{1\over 2\pi i}\oint_{\bd\Omega}{f'(z)\over f(z)-w}\dz,
-$$
-which is continuous and integer valued on each connected component of $\CC\sm f(\bd\Omega)$, hence constant there.
-So the number of solutions of $f(z) = w$ in $\Omega$ is the same for all $w$ in one component of $\CC\sm f(\bd\Omega)$.
-:::

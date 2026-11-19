@@ -13,7 +13,8 @@ topics:
 [[D-IA5FS]]
 
 ::: {.fact}
-Every zero of a meromorphic $f$ is a simple pole of $\logd f$ whose residue is its multiplicity.
+Every zero of a meromorphic $f$ is a simple pole of $\logd f$ whose residue is its multiplicity, and every pole of order $m$ is a simple pole of $\logd f$ whose residue is $-m$.
+So $\logd f$ has no other singularities, and the residue theorem applied to it counts zeros minus poles.
 
 :::
 
@@ -51,18 +52,16 @@ For a curve in $\HH$ from a point of $(0,\infty)$ to a point of $(-\infty,0)$, a
 
 :::
 
-## Counting solutions of $f(z) = w$
+## Solutions of an equation
 
-::: {.remark}
+::: {.example title="The number of solutions of $f(z)=w$"}
 The integral
 $$
 F(w) \coloneqq {1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z) - w} \dz
 $$
-is $\frac{1}{2\pi i}\oint_{\bd\Omega} \logd g_w(z)\dz$ for $g_w(z) \coloneqq f(z) - w$, so for holomorphic $f$ it counts the solutions of $f(z) = w$ in $\Omega$ with multiplicity.
-It is a continuous function of $w$ on each connected component of $\CC\sm f(\bd\Omega)$ and takes values in $\ZZ$, hence is constant on each component.
-
-A solution of $f(z) = a$ of multiplicity $m \geq 2$ is a zero of $f'$.
-
+is $\frac{1}{2\pi i}\oint_{\bd\Omega} \logd g_w(z)\dz$ for $g_w(z) \coloneqq f(z) - w$, so for holomorphic $f$ it counts the solutions of $f(z) = w$ in $\Omega$ with multiplicity, by [[T-JXDQT|the argument principle]].
+It is a continuous function of $w$ on each connected component of $\CC\sm f(\bd\Omega)$ — the denominator is bounded away from $0$ there — and it takes values in $\ZZ$, hence it is constant on each component.
+A solution of $f(z) = a$ of multiplicity $m\geq2$ is a zero of $f'$, so where the count jumps, $f'$ vanishes.
 :::
 
 ## Exercises
