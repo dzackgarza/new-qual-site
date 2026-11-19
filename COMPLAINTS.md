@@ -574,10 +574,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    so the same count applies. The card's seven steps are that argument: model, product cells, dimension,
    pair, smash cells, smash, conclusion.
 
-   **§4.1-18, begun and NOT counted.** The card takes the pseudocircle $P=\{a,b,c,d\}$, the printed
-   exercise's standard example, and the map $P\to S^1$ for one half; the two claims the exercise turns on
-   --- that this map is a weak equivalence, and that no weak equivalence $S^1\to P$ exists --- were not
-   read in this pass, so the card stays in the count below.
+   **§4.1-18, half verified, not counted.** The card takes the pseudocircle $P=\{a,b,c,d\}$ and assigns
+   $X=S^1$, $Y=P$: step `s1` claims a weak homotopy equivalence $S^1\to P$, and step `s2` shows no weak
+   homotopy equivalence $P\to S^1$ exists --- every map $P\to S^1$ has finite image, which is discrete in
+   $S^1$, while $P$ is path connected, so the image is a point and the map is nullhomotopic, inducing the
+   zero map on $\pi_1$. That second half was checked and is right. Unread, and the whole substance of the
+   card: `s1`'s computation that $S^1\to P$ induces isomorphisms on all homotopy groups. Until that is
+   read the card stays out of the count.
 
    Also noted for this item: the record of 2026-11-19 for issue #170 covers `E-HAT-2.B-3`, `-4`, `-5`,
    `-7`, `-9`, `E-HAT-2.C-1`, `-6`, `E-HAT-3.3-21`, `E-HAT-4.1-1`, `E-HAT-4.1-7` and `E-HAT-4.A-1`, none of
@@ -5772,3 +5775,17 @@ So the #134 obligation named there is **met**, not open; what remains unverified
 **What was checked and left alone.** `E-HAT-2.B-1`: the wedge's reduced cohomology as a direct sum, Alexander duality's two degree shifts, and the component counts of the disjoint case, $\widetilde H^0(X)=\ZZ,\ZZ^2,\ZZ^3$ for two positive spheres, exactly one zero, and $k=\ell=0$ — the last being four points in $S^1$, so $H_0(S^1-X)=\ZZ^4$. The source's displayed answer carries a separate entry at $i=0$; the card's merging of coincident indices is the correct reading, since for the wedge the complement is connected unless one of the two dimensions is $n-1$, and there the entries coincide. `E-HAT-2.B-2`: the leaf induction with $A=S^n-e$, $B=S^n-T'$, $A\cup B=S^n-v\simeq\RR^n$; the added-edge sequence $0\to\ZZ\to\widetilde H_{n-2}(S^n-X)\to\ZZ^{r-1}\to0$; and the universal-coefficient step, valid because a graph's homology is free. `E-HAT-2.B-8`: $L_a$ invertible by solvability, $\det L_{-a}=-\det L_a$ in odd dimension, the path in the punctured space, and the sign contradiction; Hatcher's Theorem 2B.5 confirmed at printed p. 173. `E-HAT-2.B-10`: contractibility of $S^\infty$, the connecting isomorphism above degree one, and the degree-one sequence where $p_*$ is an isomorphism of two copies of $\ZZ_2$ forces $\tau_*=0$. `E-HAT-2.B-11`: $H_n(E)\cong H_n(X)$, the section $j(x)=(x,b_0)$ with $q\circ j=\mathrm{id}$, $r_\#\tau=2q_\#=0$ over $\ZZ_2$, and the split sequence giving $\bigoplus_{i\leq n}H_i(X;\ZZ_2)$; Li's own display reads $\bigoplus_{i\leq n}H_n(X;\ZZ_2)$, with $H_n$ where $H_i$ is meant, which is what the card records. `E-HAT-2.B-6`: Alexander's printed pp. 9–10 give non-simple-connectedness of the exterior only — "the interior of the limiting surface is simply connected" — which is why the card uses Bing's inward-tube solids for both sides; the puncture argument, $U\setminus\{p\}$ and $V$, and $\pi_1(U\setminus\{p\})\cong\pi_1(U)$ by van Kampen were re-checked.
 
 **Not done.** No new published solution was located by search for Exercises 3, 4, 5, 7 and 9, and the source obligations of those five and of #170's other six are unchanged by this pass. The §2.C collection was not touched this turn.
+
+## 2026-11-19 12:26Z: seven concurrent whole-corpus gates saturate the VM, and a chat can often cite an existing record instead of running its own
+
+**Object and need.** Several chats run `qualc check` on the same 15 GB, 4-CPU VM. This records what that looks like when it happens, what it costs, and the two things that would stop it — one a rule, one a habit. It is written from observation, not from a plan.
+
+**Observed, at 12:26Z.** `uptime` reported load average `18.46` on 4 CPUs; `free -g` reported 15 GB total, 14 used, **0 available**; `ps` counted **seven** `./.venv/bin/python -m qualc check` processes alive at once, the largest holding 2.18 GB, and 25 `qualc`-related processes including their bash wrappers. Nothing else of size was running.
+
+**What it costs.** Today's casualty list, all from this chat's own job log unless marked: `jmwn9yv5f` killed after **4 min 45 s** (exit 137); `jmwnhxrvd` killed after **11 min 57 s** (exit 137); `jmwnbgzoe` stopped by this chat to release memory after ten minutes with a zero-byte log. In the project job list, two runs of another chat ended the same way — `jmwn5mv3b` and `jmwn90luj`, both `Killed`. A run that completes takes 200--280 s at two workers and ~300 s at one, so the difference is not the work; it is the contention. A bare `Killed` is not evidence of OOM, and this record does not claim it: what is observed is seven concurrent whole-corpus parses, 0 GB reported available, and kills.
+
+**The habit that removes most of it.** The run records under `~/.local/state/new-qual-site/run-records/` name the commit each gate ran on. A green record **does** certify a later commit when that commit is a *descendant* with no card, wiki, certificate or citation change in between — this chat verified three of its own card commits that way against `e6026ea39b3b` rather than re-running. What it does **not** do is certify a commit that changes the corpus itself, which is most commits in these lanes, so the habit helps only when a chat's work is already an ancestor of someone else's green tip. Worth checking before starting a run; not a substitute for one.
+
+**The rule that would remove the rest.** Serialise the gate: a lock file in the shared clone — `mkdir .scratch/gate.lock` or a `flock` on a fixed path — taken before `qualc check` and released on exit, so a second chat waits instead of starting a seventh parse. Nothing in the repository enforces this today and nothing in this record changes tooling: it is an ask, addressed to whoever dispatches the chats, since each chat is behaving as its brief says.
+
+**Uncertainty.** The seven processes were counted, not attributed: `ps` shows the command line and the memory, not which chat started each, so this record does not say who is over-running. Whether the seven were seven distinct chats or one chat with restarted jobs was not determined.
