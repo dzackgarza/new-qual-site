@@ -10,6 +10,19 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p.
+    2 of the paper's own numbered pages, is the statement the card answers, and the head of the solution
+    names it; the file retained at assets/attachments/SP24_math_202_exam.pdf puts a cover page before
+    those pages, so paper p. 2 is its page 3. Checked: the statement against the paper's text layer at
+    the page named; the Gershgorin argument from an eigenvector and a coordinate of maximal modulus;
+    `qualc.authoring check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no
+    retained solution set exists for this paper to compare the argument with, and no other card of the
+    collection in this pass.
 ---
 
 ::: {.problem}
@@ -26,11 +39,13 @@ $$
 
 ::: {.solution}
 
+The problem is Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+
 No retained solution set covers this exercise: the collection's provenance is the exam paper `assets/attachments/SP24_math_202_exam.pdf` and no solutions sheet accompanies it, so the argument below is the card's own; it is the standard proof of the first half of the Gershgorin circle theorem. The earlier version of the card left two points unstated: that the maximum modulus coordinate exists and is nonzero, and that every $\abs{x_{j}}$ is at most $\abs{x_{i}}$ — which is the inequality the estimate turns on.
 
 Throughout, $A=(a_{ij})\in M_{n}(\CC)$, and for $1\leq i\leq n$
 $$
-D_{i}\coloneqq\Biggl\{\beta\in\CC\ \Big|\ \abs{\beta-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}\Biggr\}.
+D_{i}\coloneqq\Biggl\{\beta\in\CC\ \mid\ \abs{\beta-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}\Biggr\}.
 $$
 
 ::: pf
@@ -59,7 +74,7 @@ $\abs{\lambda-a_{ii}}\abs{x_{i}}\leq\abs{x_{i}}\sum_{j\neq i}\abs{a_{ij}}$.
 ::: pf-proof
 Taking moduli in step [](#row-equation){.pf-ref} and applying the triangle inequality,
 $$
-\abs{\lambda-a_{ii}}\abs{x_{i}}=\Big|\sum_{j\neq i}a_{ij}x_{j}\Big|\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{j}}\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{i}}=\abs{x_{i}}\sum_{j\neq i}\abs{a_{ij}},
+\abs{\lambda-a_{ii}}\abs{x_{i}}=\abs{\sum_{j\neq i}a_{ij}x_{j}}\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{j}}\leq\sum_{j\neq i}\abs{a_{ij}}\abs{x_{i}}=\abs{x_{i}}\sum_{j\neq i}\abs{a_{ij}},
 $$
 where the middle inequality uses $\abs{x_{j}}\leq\abs{x_{i}}$ from step [](#maximal-coordinate){.pf-ref} and the fact that each $\abs{a_{ij}}$ is nonnegative.
 :::
