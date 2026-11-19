@@ -94,7 +94,7 @@ Then $p/q$ is a sum of the following terms:
 ::: {.remark}
 Inside its radius of convergence, a power series may be integrated and differentiated term by term, and the resulting series have the same radius of convergence.
 A uniformly convergent series of continuous functions on a compact interval may be integrated term by term.
-A uniformly convergent series of differentiable functions need not be differentiable term by term: $\sum_{n\geq1} \frac{\sin(n^2x)}{n^2}$ converges uniformly on $\RR$ while the series of derivatives $\sum_{n\geq 1} \cos(n^2x)$ diverges at $x=0$.
+A uniformly convergent series of differentiable functions need not be differentiable term by term ([[complex-analysis/basics/uniform-convergence|Uniform convergence]]).
 
 :::
 
@@ -116,21 +116,7 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 ## Convergence of functions
 
-[[D-AIQG3]]
-
-[[D-2CCDB]]
-
-[[FF-XZGIY]]
-
-[[D-QTJ7T]]
-
-[[D-OHFRH]]
-
-::: {.remark}
-If $f\colon \Omega\to\Omega'$ is a holomorphic bijection, then $\inverseof f$ is holomorphic ([[P-Z776N]]).
-Over $\RR$ the analogue fails, and $x\mapsto x^3$ is the standard witness ([[complex-analysis/counterexamples#conformal-maps|Counterexamples]]).
-
-:::
+Uniform continuity, uniform convergence, and the compactness theorem for families of functions are on [[complex-analysis/basics/uniform-convergence|Uniform convergence]]; normal families are on [[complex-analysis/conformal-maps/normal-families-and-montel|Normal families and Montel]].
 
 ## Problems
 
