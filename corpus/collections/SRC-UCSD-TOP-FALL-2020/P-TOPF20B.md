@@ -76,11 +76,6 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 :::
 
-::: pf-qed
-
-Step [](#s4){.pf-ref}.
-
-:::
 
 :::
 
