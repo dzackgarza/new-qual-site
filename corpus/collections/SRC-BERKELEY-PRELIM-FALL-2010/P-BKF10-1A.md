@@ -11,6 +11,15 @@ relations: []
 review: draft
 audit:
 - event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded. The argument is Problem 1A, printed p. 1 of the packet, the packet the collection retains,
+    transcribed as the paragraph now at the head of the solution says; the card's addition is the
+    step structure and the details named there, and no claim of the problem changes. Checked: the
+    packet read in its text layer at the pages named, the card's steps compared with it, and
+    `qualc.authoring check` on the card. Not checked: no other card of the collection in this pass.
+- event: source-checked
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 1A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
@@ -35,6 +44,8 @@ Prove that $\bigcap_{i=1}^{\infty}X_i$ is nonempty and connected.
 :::
 
 ::: {.solution}
+
+The argument is Problem 1A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 1 of that file, transcribed: that each $X_i$ is compact because it is closed in the compact $X$; that a nested sequence of nonempty compact sets has nonempty intersection, by taking the increasing open cover $\{X\setminus X_i\}$ and a finite subcover; and that a separation of the intersection by disjoint open sets $U$ and $V$ makes $F_i=X_i\setminus(U\cup V)$ a nested sequence of compact sets with empty intersection, so some $F_i$ is empty, which contradicts the connectedness of $X_i$. What the card adds is the step structure and the details of each of those three moves, not the argument.
 Put
 $$
 K\coloneqq\bigcap_{i=1}^{\infty}X_i.
