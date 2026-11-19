@@ -26,6 +26,19 @@ audit:
     compact, with each of the three terms bounded by equicontinuity, pointwise convergence and
     continuity of f. Not claimed: a retained solution set; the provenance names the examination
     paper.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Rewritten as a Lamport structured proof of the argument already on the card, correct as it
+    stood. Added: the integral of f_n' along the segment giving the Lipschitz bound on each
+    covering disk, with the maximum of the finitely many bounds; the sharpened continuity step,
+    which computes |f(w) - f(w')| as the limit of |f_n(w) - f_n(w')| so that f inherits the
+    Lipschitz bound (the prose's epsilon/3 argument chose n depending on the point w, which is
+    not a proof); and the subsequence-and-limit-point contradiction for uniform convergence on a
+    compact, with each of the three terms bounded by equicontinuity, pointwise convergence and
+    continuity of f. Not claimed: a retained solution set; the provenance names the examination
+    paper.
 ---
 
 ::: {.problem}
@@ -47,7 +60,7 @@ For each compact $K\Subset G$ there is $M$ with $\abs{f_n(z)-f_n(w)}\le M\abs{z-
 ::: pf-proof
 Since $K$ is compact and $G$ is open, finitely many closed disks $\overline{D_j}\Subset G$ cover $K$. The continuous $h$ is bounded on each compact $\overline{D_j}$, say by $M_j$. For $z,w\in D_j$ the segment $[z,w]$ lies in $D_j$, so
 $$
-\abs{f_n(z)-f_n(w)}=\Bigl|\int_0^1f_n'(w+t(z-w))(z-w)\,dt\Bigr|\le M_j\abs{z-w}
+\abs{f_n(z)-f_n(w)}=\abs{\int_0^1f_n'(w+t(z-w))(z-w)\,dt}\le M_j\abs{z-w}
 $$
 for every $n$. Taking $M=\max_jM_j$ and shrinking the cover slightly so that the pieces remain at distance $>0$ from $\partial G$ gives the bound for $z,w\in K$; a uniform Lipschitz bound is equicontinuity.
 
