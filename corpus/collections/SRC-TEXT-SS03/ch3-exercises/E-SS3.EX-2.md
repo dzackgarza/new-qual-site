@@ -24,6 +24,8 @@ Where are the poles of $1/(1 + z^4)$?
 :::
 
 ::: {.solution}
+This is Exercise 2 of [@SS03, ch. 3 (p. 103)], printed as $\int_{-\infty}^{\infty}\frac{dx}{1+x^4}$ with the question where the poles of $1/(1+z^4)$ are; no published solution set is retained, so the computation is the card's own.
+
 The poles of
 $$
 \frac1{1+z^4}
