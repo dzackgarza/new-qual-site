@@ -418,6 +418,42 @@ audit:
     compactification, still rests on the cited Peters and Steenbrink and on
     Strauch's rigidity result, neither of which is on this machine, and the
     numdam copy was removed after the reading.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Correction of the pagination and of the rendered derivation of Katz and
+    Mazur's proof of Theorem 2.1.2, in the event of this date above that gives
+    them as printed pp. 63--66, and in the rendered solution and remark. (i) The statement of Theorem 2.1.2 ends on
+    printed p. 63, which is PDF p. 75; the proof begins on printed p. 64, PDF
+    p. 76; and its last line, "are inverse isomorphisms. Q.E.D.", and the
+    invocation of (1.2.7) stand on printed p. 67, PDF p. 79, where (2.2) begins
+    below them. Printed p. 66, PDF p. 78, stops in the middle of the
+    effective-Cartier-divisor argument. (ii) The rendered derivation is now
+    Katz and Mazur's argument in their order: the bijection
+    E(T) -> Pic^(1)(E_T/T) (printed p. 64); the reduction to T = S and the
+    Zariski-local patching using f_*O_E = O_S (printed p. 65); the reduction to
+    S affine noetherian (printed p. 66); R^1f_*L = 0 because R^1f_* is of
+    formation compatible with arbitrary base change for f proper and flat of
+    relative dimension one, and over an algebraically closed field H^1 of an
+    invertible sheaf of degree one on a genus-one curve vanishes, so the
+    coherent sheaf R^1f_*L has zero fibres and is zero by Nakayama; f_*L
+    locally free of rank one from Mumford, *Abelian Varieties*, printed p. 53,
+    Corollary 3 at p = 1, the fibres H^0 being one-dimensional by Altman and
+    Kleiman (1.4) at printed p. 164 and (1.15) at printed p. 167; and a local
+    basis of f_*L giving an effective Cartier divisor of degree one, hence a
+    section by (1.2.7) on printed p. 67. The earlier rendering, which used
+    Mumford's Corollary 3 at p = 1 for "constancy of h^0" and Corollary 2 at
+    p = 0 for the invertibility, with S = A^1_C reduced and connected, is
+    withdrawn: Corollary 3 at p = 1 is the base-change isomorphism for
+    R^0f_*, the constancy of h^0 is the fibre computation, the vanishing of
+    R^1f_* is the relative-dimension-one and Nakayama argument, and no
+    reducedness or connectedness of S or of T is used. Checked in this pass:
+    the pages of the scan named in (i), at 160 dpi; Mumford's printed
+    pp. 50--53 on the wstein.org scan, whose folios were read; and Altman and
+    Kleiman's printed pp. 164 and 167, whose folios were read. Not checked:
+    Mumford's printed pp. 54 onwards, and the card's other steps were not
+    re-derived.
 ---
 
 ::: {.problem}
@@ -451,7 +487,7 @@ $E\to S$ is a smooth proper group scheme over $S$ with geometrically connected f
 
 The data are an elliptic curve over $S$ in the sense of Katz and Mazur, *Arithmetic Moduli of Elliptic Curves* (1985), (2.1.1), printed p. 63: "Let $S$ be an arbitrary scheme. An elliptic curve $E/S$ is a proper smooth curve" --- their display carries the morphisms $E\to S$ and the section "$0$" --- "with geometrically connected fibers all of genus one, given with a section '$0$'." The exercise gives exactly that: $\pi\colon E\to S$ proper and smooth with fibres of genus $1$, and the section $O$.
 
-Katz and Mazur, Theorem 2.1.2 (Abel), printed p. 63, proved on printed pp. 63--66: "There exists a unique structure of commutative group-scheme on $E/S$ such that for any $S$-scheme $T$, and any three points $P,Q,R$ in $E(T)=E_T(T)$, we have
+Katz and Mazur, Theorem 2.1.2 (Abel), printed p. 63, proved on printed pp. 64--67: "There exists a unique structure of commutative group-scheme on $E/S$ such that for any $S$-scheme $T$, and any three points $P,Q,R$ in $E(T)=E_T(T)$, we have
 $$
 P+Q=R
 $$
@@ -461,7 +497,13 @@ I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)\cong I^{-1}(R)\otimes f_T^*(\mathcal L_0)
 $$
 There $I(P)$ is the ideal sheaf of a section $P$ viewed as an effective Cartier divisor of degree one in $E$, and $f_T\colon E_T\to T$ is the projection.
 
-Their proof is Abel's theorem in the relative setting. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, into the invertible sheaves on $E_T$ that are fibrewise of degree one modulo those pulled back from $T$, is a bijection. Its fibre input is Riemann's theorem and Serre duality: for an invertible sheaf $\mathcal L$ of degree one on a curve of genus one over an algebraically closed field, $\chi(\mathcal L)=\deg\mathcal L+\chi(\mathcal O)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$; so $h^0(\mathcal L)=1$ on every fibre, and $\mathcal L$ of fibrewise degree one is what the map above is applied to. Consequently $R^1f_*\mathcal L=0$ and $f_*\mathcal L$ is invertible of formation compatible with base change, which Katz and Mazur cite to Mumford, *Abelian Varieties* (1970), Chapter II §5, where the statements are these: Corollary 3, printed p. 53, that if $H^p$ vanishes on the fibres for one $p$ then $R^{p-1}f_*\mathcal L\otimes k(y)\to H^{p-1}(X_y,\mathcal L_y)$ is an isomorphism for every $y$; and Corollary 2, printed pp. 50--51, that for $Y$ reduced and connected, $h^p$ constant on $Y$ is equivalent to $R^pf_*\mathcal L$ being locally free with $R^pf_*\mathcal L\otimes k(y)\to H^p(X_y,\mathcal L_y)$ an isomorphism for all $y$. At $p=1$ the first gives constancy of $h^0=1$, and at $p=0$ the second gives the invertibility of $f_*\mathcal L$ together with that compatibility, $S=\AA^1_\CC$ being reduced and connected; the theorem of the section, printed p. 46, is stated for $f$ proper and $\mathcal L$ flat over an affine noetherian base. The zero locus of a local basis of $f_*\mathcal L$ is an effective Cartier divisor, of degree one fibrewise, and an effective Cartier divisor of degree one in $E/S$ is a section, their (1.2.7), cited there; the two constructions are inverse to each other. Composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, gives a bijection of $E(T)$ with the abelian group $\Pic^{(0)}(E_T/T)$, functorial in $T$, and the group law transported along it satisfies the condition displayed above, which by the bijection is the only law that does.
+Their proof is Abel's theorem in the relative setting, and it runs on printed pp. 64--67. The map $E(T)\to\Pic^{(1)}(E_T/T)$, $P\mapsto$ the class of $I^{-1}(P)$, where $\Pic^{(1)}(E_T/T)$ is the set of isomorphism classes of invertible sheaves on $E_T$ that are fibrewise of degree one modulo those of the form $f_T^*(\mathcal L_0)$ with $\mathcal L_0$ on $T$, is what they prove bijective (printed pp. 64--67). Given the bijection, $I^{-1}(P)\otimes I^{-1}(Q)\otimes I(0)$ is fibrewise of degree one, hence is isomorphic to $I^{-1}(R)\otimes f_T^*(\mathcal L_0)$ for a unique $R\in E(T)$; composing with $\Pic^{(1)}(E_T/T)\to\Pic^{(0)}(E_T/T)$, $\mathcal L\mapsto\mathcal L\otimes I(0)$, transports the group law of the abelian group $\Pic^{(0)}(E_T/T)$ to $E(T)$, functorially in $T$, and the bijection is what makes that law unique.
+
+For the bijection they reduce to $T=S$ (printed p. 65) and then show that the question is Zariski local on $S$: if $\{U_i\}$ is an affine open cover and $\phi_i\colon\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_{0,i})$ on $f^{-1}(U_i)$, then $f_*\OO_E=\OO_S$ and $f_*f^*(\mathcal L_{0,i})=\mathcal L_{0,i}$ show that $f_*(\mathcal L^{-1}\otimes\mathcal L')$ and $f_*(\mathcal L\otimes(\mathcal L')^{-1})$ are inverse invertible sheaves, so there are $\mathcal L_0$ on $S$, namely $f_*(\mathcal L\otimes(\mathcal L')^{-1})$, and an isomorphism $\mathcal L\cong\mathcal L'\otimes f^*(\mathcal L_0)$ (printed p. 65). Since $E/S$ is of finite presentation, this leaves $S$ affine noetherian (printed p. 66).
+
+Let $\mathcal L$ be invertible on $E$, fibrewise of degree one. Their claim (printed p. 66) is that $f_*\mathcal L$ is invertible of formation compatible with arbitrary base change and that $R^1f_*\mathcal L=0$, and they prove the vanishing first: $R^1f_*\mathcal L$ is of formation compatible with arbitrary base change, "being an $R^1f_*$ for $f$ proper and flat of relative dimension one", and over an algebraically closed field $H^1(E,\mathcal L)=0$ because $\deg\mathcal L=1>2g-2=0$, so the coherent sheaf $R^1f_*\mathcal L$ has all fibres zero and vanishes by Nakayama's lemma. Then Mumford, *Abelian Varieties* (1970), p. 53, cited by Katz and Mazur as [Mum 4], gives that $f_*\mathcal L$ is locally free and of formation compatible with arbitrary base change: Corollary 3 there, at $p=1$, is the isomorphism $f_*\mathcal L\otimes k(y)\cong H^0(E_y,\mathcal L_y)$ for every $y$, and the right side is one-dimensional for every $y$, being so over an algebraic closure of $k(y)$, so $f_*\mathcal L$ is locally free of rank one by Nakayama, and a base-change map between locally free sheaves that is an isomorphism on every fibre is an isomorphism. Over an algebraically closed field $h^0(\mathcal L)=\chi(\mathcal L)=\deg\mathcal L+\chi(\OO)=1+0=1$ by Altman and Kleiman, *Introduction to Grothendieck Duality Theory* (1970), Theorem (1.4) (Riemann), printed p. 164, and $H^1(\mathcal L)\cong H^0(\omega\otimes\mathcal L^{-1})^*=0$ by their Theorem (1.15) (Roch), printed p. 167, the sheaf $\omega\otimes\mathcal L^{-1}$ having degree $2g-2-1=-1$.
+
+With $f_*\mathcal L$ invertible they choose a local $\OO_S$-basis $\ell$ and show that $\OO_E\to\mathcal L$, $1\mapsto\ell$, is injective and remains so after any base change, reducing to $S$ the spectrum of a field, where $\ell$ is a nonzero $k$-basis (printed p. 67); hence $(\mathcal L,\ell)$ is an effective Cartier divisor in $E/S$, of degree one fibrewise, and by (1.2.7), printed pp. 10--11 and invoked on printed p. 67, an effective Cartier divisor of degree one is a section $P\in E(S)$. The two constructions are inverse to each other, so the map $E(S)\to\Pic^{(1)}(E/S)$ is bijective (printed p. 67).
 
 That is a group scheme over $S$ with identity $O$ in the sense of the definition before Remark 4.10.5, printed p. 324: the identity is the section $O$, the inverse and the operation are morphisms over $S$, and the two axioms asserted there are the group-scheme axioms of Katz and Mazur. Since $\pi$ is smooth and proper with geometrically connected fibres, $E$ is an abelian scheme over $S$ in the sense of Youcis, "a smooth proper group scheme with connected fibers", from his section "Two statements of the main result".
 
@@ -546,7 +588,7 @@ That is the triviality the exercise asks for.
 ::: {.remark title="Published solution"}
 
 Youcis's Theorem 8, section "The case over the complex line", proves the exercise once the family is one of abelian varieties in his sense, and more: the base may be any smooth connected complex algebraic variety with simply connected analytification, and the fibres may be abelian varieties of any dimension.
-The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}: Katz and Mazur's Theorem 2.1.2, printed p. 63, with its proof on printed pp. 63--66. The printed hint's first clause, "Use the section to fix the group structure on the fibres", asks for exactly that theorem.
+The passage from the exercise's family, which carries a section, to a family of abelian varieties is step [](#abelian-scheme){.pf-ref}: Katz and Mazur's Theorem 2.1.2, printed p. 63, with its proof on printed pp. 64--67. The printed hint's first clause, "Use the section to fix the group structure on the fibres", asks for exactly that theorem.
 Its two analytic inputs are cited rather than proved there: the equivalence of Deligne, *Théorie de Hodge II*, (4.4.3), printed p. 51, stated there as a *rappel* with its essential surjectivity given to Borel, and the constancy of the $\QQ$-variation of Hodge structure over a compactification, for which his remark after the proof invokes the cited result of Peters and Steenbrink together with the rigidity result of Strauch that he takes from a MathOverflow post.
 The section closes with his remark that the theorem "becomes wildly false" outside the algebraic category, the family of elliptic curves over the upper half-plane $\halfplane$ with $g_4$ and $g_6$ the level-one modular forms being non-isotrivial although $\halfplane$ is simply connected, and that $\halfplane$ is not algebraic is what saves the theorem.
 
