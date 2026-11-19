@@ -977,7 +977,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    that group as deck group, forcing the periodic cohomology such a free action needs; the group's
    cohomology is not periodic of that shape, which is the contradiction the argument fills in.
 
-   Remaining unread in this item's set: §4.2 (13 more, incl. -5), §4.3 (24) --- 37 proofs.
+   **§4.2-29, opened and deferred.** It finishes the homotopy classification of lens spaces begun in §3.E
+   Exercise 2: two lens spaces are homotopy equivalent exactly when the products of their parameters are
+   congruent up to sign times a power of a unit. The card is long and the classification is a whole
+   argument, so it is named here as deferred rather than opened and left: with `-5` this makes two cards in
+   §4.2 that want a session of their own, and the short cards behind them should be taken first.
+
+   Remaining unread in this item's set: §4.2 (12 more, incl. -5 and -29), §4.3 (24) --- 37 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
