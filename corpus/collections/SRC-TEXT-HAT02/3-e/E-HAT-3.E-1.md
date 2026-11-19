@@ -51,6 +51,20 @@ audit:
     cellular boundary with the degree of the attaching map, and the case $m/k$ odd, where the
     exterior$-$polynomial description fails, which the earlier text left unsaid. No defect found in
     the statement, §3.E Exercise 1. No retained solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against Hatcher, Algebraic Topology, Section 3.E (printed pp. 303-310): the exercise is
+    Exercise 1 of that section. The argument was checked against the section itself. Example 3E.1
+    states H^n(X;Z_m) = Z_m in every degree for X = K(Z_m,1), which is the card's second step, and
+    the cellular boundary being 0 or multiplication by m is Example 2.43; with m = 0 in Z_m and in
+    Z_k the cochain differentials vanish, so each coefficient ring appears in every degree, as the
+    card says. The special form for m/k even follows because x^2 = (m/2)y reduces to x^2 = 0 in Z_k
+    exactly when k divides m/2. The exact page of the exercise block was not pinned: the retained PDF
+    has no text layer on the pages carrying it, so the citation is to the section and its printed
+    range, not to a single page.
+
 ---
 
 ::: {.problem}
