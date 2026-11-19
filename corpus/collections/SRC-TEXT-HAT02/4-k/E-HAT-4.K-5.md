@@ -39,6 +39,14 @@ audit:
     two colimit identifications and passing the stagewise isomorphisms to the limit; (c) notes that
     the path t -> F-bar_t(b) lies in the component of b, so the configuration is read there. The
     statement and its three conditions are unchanged; the card says the argument is its own.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Notation repair after the corpus check reported raw TeX the page cannot show. One sentence
+    names the fibration sequence by section as `\S4.3`, a section sign written as a TeX command
+    outside a math span, which the HTML writer drops; it now reads the character `§4.3`, as the
+    corpus does elsewhere. Mathematics and wording unchanged.
 ---
 
 ::: {.problem}
@@ -54,7 +62,7 @@ Show these three conditions are equivalent, and prove Lemma 4K.3 for quasifibrat
 :::
 
 ::: {.solution}
-Fix $b$ and $x_0\in p^{-1}(b)$ and let $F_b$ be the homotopy fiber. Condition (ii) says the inclusion $j\colon p^{-1}(b)\to F_b$, made by the constant path at $b$, is a weak equivalence; comparing the long exact sequences of $(E,p^{-1}(b))$ and $(E_p,F_b)$ through the fibration sequence of \S4.3, with $E_p\simeq E$, turns that into condition (i) with the five lemma, the $\pi_0$ clause included. Conditions (i) and (ii) mention only homotopy classes of maps from spheres and disks based at $b$, so they are conditions on the path component of $b$ alone, which is (iii). The three parts of Lemma 4K.3 are then checked part by part on a path component, the printed proofs being available verbatim there. The argument is this card's own: no retained solution set covers this exercise.
+Fix $b$ and $x_0\in p^{-1}(b)$ and let $F_b$ be the homotopy fiber. Condition (ii) says the inclusion $j\colon p^{-1}(b)\to F_b$, made by the constant path at $b$, is a weak equivalence; comparing the long exact sequences of $(E,p^{-1}(b))$ and $(E_p,F_b)$ through the fibration sequence of §4.3, with $E_p\simeq E$, turns that into condition (i) with the five lemma, the $\pi_0$ clause included. Conditions (i) and (ii) mention only homotopy classes of maps from spheres and disks based at $b$, so they are conditions on the path component of $b$ alone, which is (iii). The three parts of Lemma 4K.3 are then checked part by part on a path component, the printed proofs being available verbatim there. The argument is this card's own: no retained solution set covers this exercise.
 
 ::: pf
 
