@@ -581,11 +581,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **47 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **46 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Fifty of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 47 stand as this item lists them.
+   reported and repaired above. Fifty-one of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 46 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -903,7 +903,13 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    tensor and Tor group vanishes, so $X\wedge Y$ is contractible and the inclusion is a homotopy
    equivalence.
 
-   Remaining unread in this item's set: §4.2 (23 more, incl. -5), §4.3 (24) --- 47 proofs.
+   **§4.2-19, read the same day.** Correct, no card changed. The universal cover $\widetilde X$ of a
+   $K(G,1)$ is contractible; the pair $(\widetilde X,\widetilde X^n)$ has no relative cells in dimensions
+   $\le n$, so relative Hurewicz identifies $\pi_{n+1}$ of the pair with $H_{n+1}$ of it, which is free by
+   the cellular chain complex; the pair's sequence with $\pi_i(\widetilde X)=0$ turns that into
+   $\pi_n(\widetilde X^n)$, and $\widetilde X^n\to X^n$ is a cover for $n\ge2$, so $\pi_n(X^n)$ is free abelian.
+
+   Remaining unread in this item's set: §4.2 (22 more, incl. -5), §4.3 (24) --- 46 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
