@@ -26,6 +26,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.2.5, printed pp. 86--87,
+    rendered as a page image from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.2.5, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the orbit count $s=n/r$, the divided Hurwitz identity, and the three cases' bounds $g-1$, $4(g-1)$ and $84(g-1)$, including the minimum $1/42$ at $(r_1,r_2,r_3)=(2,3,7)$.
+    Not checked: Yang's Solutions outside printed pp. 86--87; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The remark now names Yang Pi-Yeh's Solution 4.2.5 at printed
+    p. 86--87 beside the entry already there. No step, statement or
+    hypothesis of the card changes.
 review: draft
 ---
 
@@ -379,4 +399,6 @@ minimum in part (b), and step [](#s7){.pf-ref} gives the required automorphism b
 
 ::: {.remark title="Published solution"}
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.5, printed p. 215, text version `tmp/sources/hartshorne-solutions-egbert.md` (entry 4.2.16), argues that the points of $X$ over a branch point $y$ form an orbit of $\operatorname{Aut}(X)$ with conjugate stabilizers, so that the number of them is $\cardinality{G}/r$ when the ramification index at $x$ is $r$; summing over branch points bounds the order of $G$ in terms of $g$.
+
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.5 (Automorphisms of a Curve of Genus $\geq 2$), printed pp. 86--87, proves (a) by the orbit count: the points of $f^{-1}(f(P))$ form one orbit of $G$ and their stabilizers are conjugate, so when $e_P=r$ each stabilizer has order $r$ and the fibre has $s=\size G/r=n/r$ points; Hurwitz's formula then reads $2g-2=n(2g(Y)-2)+\sum_{i=1}^{s}\frac{n}{r_i}(r_i-1)$, which on dividing by $n$ is the displayed equation of the exercise. Its (b) splits into three cases. If $g(Y)\geq 1$ and $\sum_i(1-1/r_i)=0$ there is no branch point, so $g(Y)\ne 1$ and $g(Y)\geq 2$, whence $n=(2g-2)/(2g(Y)-2)\leq g-1$. If $g(Y)\geq 1$ and the sum is positive, its least value is $1/2$, whence $n\leq 4(g-1)$. If $g(Y)=0$ then $\sum_i(1-1/r_i)=(2g-2)/n+2>2$ with $s\geq 3$: $s\geq 5$ gives at least $2+1/2$, the least case at $s=4$ is $(2,2,2,3)$ giving $2+1/6$, and the least case at $s=3$ is $(2,3,7)$ giving $2+1/42$, so that $(2g-2)/n\geq 1/42$ and $n\leq 42(2g-2)=84(g-1)$. Two inequalities in (b) are printed the wrong way round: the first case concludes ``$n\geq g(X)-1$'' and the closing line ``$n\geq 84(g(X)-1)$'', where the quotient $\frac{2g-2}{n}$ bounds $n$ from above. The case analysis, the value $1/42$ and the bound $84(g-1)$ the exercise asks for are all right, and the reversal in those two sentences is recorded here rather than copied.
 :::
