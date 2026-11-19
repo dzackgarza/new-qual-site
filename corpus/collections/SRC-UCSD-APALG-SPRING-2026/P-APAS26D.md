@@ -11,6 +11,18 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Provenance recorded: Problem 4 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C),
+    printed p. 8, is the statement the card answers, and the head of the solution names it; the retained
+    file assets/attachments/SP26_202_Applied_Algebra_Qual.pdf numbers every page including the blank
+    versos, so Problem 4 stands on its page 8. Checked: the statement against the paper's text layer at
+    the page named; both directions, through the normality of $a+b$ and of $a+ib$; `qualc.authoring
+    check` on the card, and `tmp/lam.sh` for the numbering and the QED. Not checked: no retained
+    solution set exists for this paper to compare the argument with, and no other card of the collection
+    in this pass.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -34,6 +46,9 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 :::
 
 ::: {.solution}
+
+The problem is Problem 4 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 8 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+
 One direction is immediate. For the other, the normality of $a+b$ and of $a+ib$ gives two linear relations among the four products $ab^*$, $ba^*$, $a^*b$, $b^*a$, and adding and subtracting them separates $ab^*=b^*a$; since the involution is onto, that says every element commutes with every other. Nothing about a norm or a $C^*$-condition is used, only that the conjugation is antilinear, antimultiplicative and involutive. The argument is this card's own: no retained solution set covers this exam.
 
 ::: pf
