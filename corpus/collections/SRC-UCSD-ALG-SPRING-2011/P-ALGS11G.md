@@ -24,6 +24,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-08
   note: Supplied explicit counterexamples for (i) and (iii) and a basis argument for (ii).
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof. The last step was broken structurally: its boxed answer lay after
+    the step and after the proof root had both been closed, so the filter never saw it and the page showed
+    the claim "Hence the answers are" followed by an orphaned formula. The display is now inside the step,
+    which carries a justification collecting the three verdicts. The mathematics is unchanged. Nothing in
+    the statement was changed.
+
 ---
 
 ::: {.problem}
@@ -111,12 +121,15 @@ Therefore $\QQ$ is not a free $\ZZ$-module.
 ::: pf-step
 
 Hence the answers are
-
-:::
-
-:::
-
 $$
 \boxed{\text{(i) false,}\qquad\text{(ii) true,}\qquad\text{(iii) false.}}
 $$
+
+::: pf-proof
+The three verdicts collect the conclusions of the three parts proved above: the first assertion fails, the second holds, and the third fails.
+:::
+
+:::
+
+:::
 :::
