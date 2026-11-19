@@ -12,12 +12,12 @@ The value comes from [[T-HRPNO|the residue theorem]] once the boundary pieces ar
 
 ::: {.example title="$\displaystyle\int_\RR {\dx\over 1+x^2} = \pi$"}
 Close the contour with the semicircle of radius $R$ in $\HH$.
-The arc contributes $\bigo(1/R^2)$ by the [[T-SFXI7|ML estimate]], so it vanishes in the limit.
+The arc contributes $\bigo(1/R)$ by the [[T-SFXI7|ML estimate]], so it vanishes in the limit.
 The integrand has a simple pole at $z=i$ with residue $1/(2i)$, and $2\pi i\cdot{1\over 2i} = \pi$.
 :::
 
 ::: {.remark}
-The same contour evaluates every rational integrand whose denominator has no real zeros and degree at least two more than the numerator: the arc is $\bigo(R^{-2})$ and the enclosed residues are the poles in $\HH$.
+The same contour evaluates every rational integrand whose denominator has no real zeros and degree at least two more than the numerator: the integrand is $\bigo(R^{-2})$ on the arc, so the arc integral is $\bigo(R^{-1})$, and the enclosed residues are the poles in $\HH$.
 :::
 
 ::: {.example title="$\displaystyle\int_\RR {\cos x\over 1+x^2}\dx = {\pi\over e}$"}
