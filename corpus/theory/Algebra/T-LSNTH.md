@@ -16,5 +16,5 @@ review: draft
 
 ::: {.theorem}
 Let $R$ be a [[D-TZXBO|Noetherian]] ring and $I\subsetneq R$ a proper ideal.
-Then $I$ is a finite intersection of [[D-JGYK4|primary ideals]].
+Then $I$ is a finite intersection of [[D-JGYK4|primary ideals]] [@DF04, Theorem 21, §15.2].
 :::
