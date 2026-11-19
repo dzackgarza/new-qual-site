@@ -43,9 +43,20 @@ audit:
   date: 2026-11-18
   note: >-
     Restructured the prose solution into Lamport steps and checked the statement against Hatcher, *Algebraic Topology* (2002), §3.C Exercise 1, printed p. 291, both sentences of the printed text matching the card. The collection's provenance is the book, and no retained solution set covers the exercise; the argument is the card's own in the sense that the steps verify the hypotheses of the cited strictification theorem for this situation. The citation of tom Dieck--Kamps--Puppe, *Homotopy Theory*, Theorem 3.37 and Proposition 3.38 was kept from the earlier solution; I did not read that book, so the theorem's statement is relied on as cited rather than checked against its page.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 300 carries the running head 291,
+    so the printed page is the one the card's earlier event claimed. The durable part of the locator
+    is that printed page; the file path names this machine's copy and `tmp/sources` does not survive a
+    VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 3.C of Hatcher, *Algebraic Topology* (2002), printed p. 291, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Suppose that $X$ is a CW complex with basepoint $e \in X$ a 0-cell.
 Show that $X$ is an H-space if there is a map $\mu: X \times X \to X$ such that the maps $X \to X$, $x \mapsto \mu(x, e)$ and $x \mapsto \mu(e, x)$, are homotopic to the identity.
 [Sometimes this is taken as the definition of an H-space, rather than the more restrictive condition in the definition we have given.] With the same hypotheses, show also that $\mu$ can be homotoped so that $e$ is a strict two-sided identity.
