@@ -15,6 +15,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Every step now carries a pf-proof: the step that boxed the definition of Lebesgue outer measure now
+    records that it is a definition, and of which construction. Nothing mathematical was changed.
+
 ---
 
 ::: {.problem}
@@ -44,6 +51,10 @@ A\subseteq\bigcup_{j=1}^\infty I_j,
 \ I_j\text{ open intervals}
 \right\}}.
 $$
+
+::: pf-proof
+This is the definition of Lebesgue outer measure: the infimum of the total lengths of the countable covers of $A$ by open intervals, taken in $[0,\infty]$.
+:::
 
 :::
 
