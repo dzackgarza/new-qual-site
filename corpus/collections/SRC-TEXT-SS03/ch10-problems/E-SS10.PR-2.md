@@ -19,6 +19,14 @@ audit:
   date: 2026-09-11
   note: >-
     Repaired transcription defects in the fundamental-domain condition, congruence notation, and the quotient by {±I}.
+- event: solution-written
+  by: claude
+  date: 2026-11-18
+  note: >-
+    Restructured into numbered steps for issue #2: the imaginary-part formula, the reduction algorithm with its
+    termination, the case analysis of part (b) by $c=0$ and $c=\pm1$, and the stabilizer argument of part (c).
+    No retained solution set covers this exercise (the collection retains the textbook, not a solutions
+    manual), so the argument is the card's own; the case checks were re-read for this pass.
 ---
 
 ::: {.exercise}
@@ -52,119 +60,86 @@ The source prints the condition $\abs{\Im(\tau)} \geq 0$ in $\mathcal{F}_1$; the
 :::
 
 ::: {.solution}
-Let $\Gamma=\langle S,T_1\rangle$, where
+No retained solution set covers this exercise; the collection retains the textbook (`assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`) and no solutions manual, so the argument is the card's own. Write $\Gamma=\langle S,T_{1}\rangle$ with $S(\tau)=-1/\tau$ and $T_{1}(\tau)=\tau+1$, and
 $$
-S(\tau)=-\frac1\tau,
-\qquad
-T_1(\tau)=\tau+1.
-$$
-For
-$$
-g=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\ZZ),
-$$
-a direct calculation gives
-$$
-\Im(g\tau)=\frac{\Im\tau}{\abs{c\tau+d}^2}.
-\tag{1}
+\mathcal F_{1}=\{\tau:\abs{\tau}\ge1,\ \abs{\Re\tau}\le\tfrac12,\ \Im\tau>0\}.
 $$
 
-For part (a), start with $z=\tau\in\halfplane$. Translate by an integral power of $T_1$ so that
-$$
-\abs{\Re z}\le\frac12.
-$$
-If $\abs{z}\ge1$, then $z\in\mathcal F_1$. If $\abs{z}<1$, apply $S$. Since
-$$
-\Im(Sz)=\frac{\Im z}{\abs{z}^2}>\Im z,
-$$
-this strictly increases the imaginary part; then translate again into the strip $\abs{\Re z}\le1/2$, and repeat.
+::: pf
 
-The process must terminate. Indeed every intermediate point has the form
-$$
-z=\gamma\tau,
-\qquad \gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma,
-$$
-and its imaginary part never decreases. Thus by (1), for every stage after the first,
-$$
-\abs{c\tau+d}^2\le1.
-$$
-There are only finitely many integer pairs $(c,d)$ satisfying this inequality: if $\tau=x+iy$, then $\abs{c}y\le1$, so only finitely many $c$ occur, and then $\abs{cx+d}\le1$ leaves only finitely many $d$. Since every application of $S$ strictly increases the imaginary part, infinitely many such steps are impossible. Hence the algorithm stops at a point of $\mathcal F_1$.
+::: {.pf-step #imaginary}
+For $g=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_{2}(\ZZ)$ and $\tau\in\halfplane$, $\Im(g\tau)=\dfrac{\Im\tau}{\abs{c\tau+d}^{2}}$.
 
-For part (b), suppose $\tau,\tau'\in\mathcal F_1$ and $\tau'=g\tau$. Since congruence is symmetric, interchange $\tau$ and $\tau'$ if necessary so that
-$$
-\Im\tau'\ge\Im\tau.
-$$
-Equation (1) then gives
-$$
-\abs{c\tau+d}\le1.
-\tag{2}
-$$
-Write $\tau=x+iy$. From $\abs{x}\le1/2$ and $\abs{\tau}\ge1$,
-$$
-y\ge\frac{\sqrt3}{2}.
-$$
-Thus (2) implies $\abs{c}\le1$.
+::: pf-proof
+$g\tau=\frac{a\tau+b}{c\tau+d}=\frac{(a\tau+b)\overline{(c\tau+d)}}{\abs{c\tau+d}^{2}}$, and the imaginary part of the numerator is $\Im\bigl((a\tau+b)(\overline{c\tau+d})\bigr)$. Expanding with $\tau=x+iy$, $\bar\tau=x-iy$, the coefficient of $i$ is $y(ad-bc)=y$ since $ad-bc=1$; hence $\Im(g\tau)=y/\abs{c\tau+d}^{2}$.
+:::
 
-If $c=0$, the determinant condition gives $a=d=\pm1$, so
-$$
-\tau'=\tau+n
-$$
-for some $n\in\ZZ$. Since both real parts lie in $[-1/2,1/2]$, either $n=0$, giving $\tau'=\tau$, or the points lie on the vertical boundary and
-$$
-\Re\tau=\frac12,\quad \tau'=\tau-1,
-$$
-or
-$$
-\Re\tau=-\frac12,\quad \tau'=\tau+1.
-$$
+:::
 
-Now suppose $\abs{c}=1$. Since $g$ and $-g$ act identically, take $c=1$; then $ad-b=1$, and
-$$
-\tau'=\frac{a\tau+b}{\tau+d}=a-\frac{1}{\tau+d},
-$$
-while (2) says $\abs{\tau+d}\le1$. If $\abs{d}\ge2$, then $\abs{\tau+d}\ge\abs{d}-\abs{x}\ge\frac32$, which is impossible. If $d=\pm1$, then
-$$
-\abs{\tau\pm1}^2=\abs{\tau}^2\pm2x+1\ge2\pm2x\ge1,
-$$
-with equality only for $\abs{\tau}=1$ and $x=\mp\frac12$. If $d=0$, then $\abs{\tau}\le1$, so $\abs{\tau}=1$. In every case $\abs{\tau}=1$, so $1/\tau=\bar\tau$.
+::: {.pf-step #reduction}
+(a) For every $\tau\in\halfplane$ there is $g\in\Gamma$ with $g(\tau)\in\mathcal F_{1}$.
 
-If $d=0$, then $\tau'=a-\bar\tau=a-x+iy$. This lies in $\mathcal F_1$ only if $\abs{a-x}\le\frac12$: either $a=0$ and $\tau'=-1/\tau$, or $x=\pm\frac12$, $a=\pm1$, and $\tau'=\tau$.
+::: pf-proof
+Run the algorithm, then show that it terminates.
 
-If $d=1$, then $\tau=e^{2\pi i/3}$, $\tau+1=e^{i\pi/3}$, and $\tau'=a-e^{-i\pi/3}=a-\frac12+\frac{\sqrt3}2i$. This lies in $\mathcal F_1$ only for $a=0$, where $\tau'=\tau$, or $a=1$, where $\tau'=\tau+1=-1/\tau$. The case $d=-1$ is the reflection $\tau\mapsto-\bar\tau$ of this one: $\tau=e^{i\pi/3}$ and $\tau'\in\{\tau,\tau-1\}$, with $\tau-1=-1/\tau$.
+::: {.pf-step #algorithm}
+Starting from $z=\tau$, repeat: translate by an integral power of $T_{1}$ so that $\abs{\Re z}\le\frac12$; if $\abs{z}\ge1$ stop, otherwise apply $S$ and repeat.
 
-Thus a point $\tau'\ne\tau$ with $\abs{c}=1$ has $\abs{\tau}=1$ and $\tau'=-1/\tau$, and distinct congruent points of $\mathcal F_1$ occur exactly as stated.
+::: pf-proof
+An integral translation changes $\Re z$ by an integer and leaves $\Im z$ and $\abs{\cdot}$ conditions otherwise untouched, so after finitely many translations $\abs{\Re z}\le\frac12$. If then $\abs{z}\ge1$, the two defining inequalities of $\mathcal F_{1}$ hold and $z\in\mathcal F_{1}$. If instead $\abs{z}<1$, apply $S$: $\Im(Sz)=\frac{\Im z}{\abs{z}^{2}}>\Im z$ by step [](#imaginary){.pf-ref} with $c=1,d=0$, so the imaginary part strictly increases and the algorithm can be iterated. Every point reached is $\gamma\tau$ with $\gamma\in\Gamma$ a product of the operations performed.
+:::
 
-For part (c), let $G\in\operatorname{SL}_2(\ZZ)$. By part (a), there is $h\in\Gamma$ such that
-$$
-hG(2i)\in\mathcal F_1.
-$$
-But $2i$ is an interior point of $\mathcal F_1$, and $hG(2i)$ is congruent to $2i$. Part (b) therefore forces
-$$
-hG(2i)=2i.
-$$
-If
-$$
-A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\ZZ)
-$$
-fixes $2i$, then
-$$
-\frac{2ia+b}{2ic+d}=2i.
-$$
-Comparing real and imaginary parts gives
-$$
-b=-4c,
-\qquad a=d.
-$$
-The determinant condition becomes
-$$
-a^2+4c^2=1,
-$$
-so $c=0$, $a=d=\pm1$, and $b=0$. Hence $A=\pm I$. Therefore
-$$
-hG=\pm I,
-$$
-so in $\operatorname{PSL}_2(\ZZ)$,
-$$
-G=h^{-1}\in\Gamma.
-$$
-Thus $S$ and $T_1$ generate $\operatorname{PSL}_2(\ZZ)=\operatorname{SL}_2(\ZZ)/\{\pm I\}$, equivalently every associated fractional linear transformation is a finite composition of $S,T_1$, and their inverses.
+:::
+
+::: {.pf-step #termination}
+The algorithm stops after finitely many steps.
+
+::: pf-proof
+Every intermediate point has the form $z=\gamma\tau$ with $\gamma\in\Gamma$, and its imaginary part is at least $\Im\tau$ throughout, since translations preserve $\Im$ and $S$ increases it. By step [](#imaginary){.pf-ref} applied to $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, each stage after the first satisfies $\abs{c\tau+d}^{2}\le1$, that is $\abs{c\tau+d}\le1$. Only finitely many integer pairs $(c,d)$ satisfy this: with $\tau=x+iy$ and $y>0$ the inequality gives $\abs{c}y\le\abs{c\tau+d}\le1$, so finitely many $c$, and for each such $c$ the condition $\abs{cx+d}\le1$ leaves finitely many $d$. Each use of $S$ strictly increases $\Im$, and finitely many generators with bounded $(c,d)$ cannot support infinitely many strict increases; so only finitely many steps occur and the algorithm ends at a point of $\mathcal F_{1}$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) Distinct congruent points of $\mathcal F_{1}$ are related by $\tau'=\tau\mp1$ at $\Re\tau=\pm\frac12$, or by $\tau'=-1/\tau$ at $\abs{\tau}=1$.
+
+::: pf-proof
+Congruence is symmetric, so interchange $\tau$ and $\tau'$ if necessary to have $\Im\tau'\ge\Im\tau$; write $\tau'=g\tau$ with $g=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_{2}(\ZZ)$. Step [](#imaginary){.pf-ref} then gives $\abs{c\tau+d}\le1$, and with $\tau=x+iy$ the inequalities $\abs{x}\le\frac12$, $\abs{\tau}\ge1$ give $y\ge\frac{\sqrt3}{2}$, so $\abs{c}\le1$.
+
+::: {.pf-step #c-zero}
+If $c=0$ then $\tau'=\tau+n$ with $n\in\ZZ$, and since both real parts lie in $[-\frac12,\frac12]$ either $n=0$ and $\tau'=\tau$, or $\Re\tau=\frac12,\tau'=\tau-1$, or $\Re\tau=-\frac12,\tau'=\tau+1$.
+
+::: pf-proof
+$c=0$ with $ad-bc=1$ gives $ad=1$, so $a=d=\pm1$ and $g\tau=a^{2}\tau+ab=\tau+n$ with $n=ab\in\ZZ$. Both $\tau$ and $\tau'$ have real part in $[-\frac12,\frac12]$, so $n\in\{-1,0,1\}$; $n=0$ gives $\tau'=\tau$, $n=-1$ forces $\Re\tau=\frac12$ (so $\tau'=\tau-1$), and $n=1$ forces $\Re\tau=-\frac12$ (so $\tau'=\tau+1$).
+:::
+
+:::
+
+::: {.pf-step #c-one}
+If $\abs{c}=1$ then $\abs{\tau}=1$ and $\tau'=-1/\tau$ unless $\tau'=\tau$.
+
+::: pf-proof
+Since $g$ and $-g$ induce the same map, take $c=1$; then $ad-b=1$ and $\tau'=\frac{a\tau+b}{\tau+d}=a-\frac{1}{\tau+d}$, while $\abs{\tau+d}\le1$. If $\abs{d}\ge2$ then $\abs{\tau+d}\ge\abs{d}-\abs{x}\ge\frac32>1$, impossible; so $d\in\{-1,0,1\}$. For $d=\pm1$, $\abs{\tau\pm1}^{2}=\abs{\tau}^{2}\pm2x+1\ge2\pm2x\ge1$ by $\abs{x}\le\frac12$, and $\le1$ forces $\abs{\tau}=1$ and $x=\mp\frac12$. For $d=0$, $\abs{\tau}\le1$ together with $\abs{\tau}\ge1$ gives $\abs{\tau}=1$. In every case $\abs{\tau}=1$, hence $1/\tau=\bar\tau$ and $\tau'=a-\overline{\tau+d}$ evaluated at the relevant $d$: for $d=0$, $\tau'=a-\bar\tau=a-x+iy$, which lies in $\mathcal F_{1}$ only if $\abs{a-x}\le\frac12$, so either $a=0$ and $\tau'=-1/\tau$, or $x=\pm\frac12,a=\pm1$ and $\tau'=\tau$; for $d=1$ one has $\tau=e^{2\pi i/3}$ and $\tau'=a-e^{-i\pi/3}=a-\frac12+\frac{\sqrt3}{2}i$, which lies in $\mathcal F_{1}$ only for $a=0$ (giving $\tau'=\tau$) or $a=1$ (giving $\tau'=\tau+1=-1/\tau$); the case $d=-1$ is its reflection $\tau\mapsto-\bar\tau$, giving $\tau=e^{i\pi/3}$ and $\tau'\in\{\tau,\tau-1\}$ with $\tau-1=-1/\tau$. So a distinct congruent point with $\abs{c}=1$ has $\abs{\tau}=1$ and $\tau'=-1/\tau$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-c}
+(c) $S$ and $T_{1}$ generate $\operatorname{PSL}_{2}(\ZZ)$, so every fractional linear transformation of $\operatorname{SL}_{2}(\ZZ)$ is a finite composition of $S,T_{1}$ and their inverses.
+
+::: pf-proof
+Let $G\in\operatorname{SL}_{2}(\ZZ)$. The point $2i$ lies in the interior of $\mathcal F_{1}$, since $\abs{2i}=2>1$ and $\Re(2i)=0$. By part (a), step [](#reduction){.pf-ref}, there is $h\in\Gamma$ with $hG(2i)\in\mathcal F_{1}$; the points $hG(2i)$ and $2i$ are congruent, so by part (b), step [](#part-b){.pf-ref}, and the fact that a neighbourhood of the interior point $2i$ contains no other point of $\mathcal F_{1}$ on the boundary lines, they coincide: $hG(2i)=2i$. Let $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_{2}(\ZZ)$ fix $2i$; then $\frac{2ia+b}{2ic+d}=2i$, so $2ia+b=-4c+2id$ and comparing parts gives $b=-4c$ and $a=d$; the determinant condition $a^{2}+4c^{2}=1$ then forces $c=0$ and $a=d=\pm1$, $b=0$, that is $A=\pm I$. Hence $hG=\pm I$, so in $\operatorname{PSL}_{2}(\ZZ)=\operatorname{SL}_{2}(\ZZ)/\{\pm I\}$ one has $G=h^{-1}\in\Gamma$. So the subgroup generated by $S$ and $T_{1}$ is all of $\operatorname{PSL}_{2}(\ZZ)$, which is the assertion.
+:::
+
+:::
+
+:::
 :::
