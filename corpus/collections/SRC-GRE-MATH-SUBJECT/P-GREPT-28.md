@@ -15,6 +15,16 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Transcribed from Question 28 of the Practice Test (Chapter 9) in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR)."
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read against the Lamport standard and checked by rank. The three rows of A are 1,4,7; 2,5,8;
+    3,6,9, and each row is an arithmetic progression, so R3 - 2R2 + R1 = 0 and rank A = 2 while
+    R1, R2 are visibly independent; det A = 0 confirms it. The image of the linear map is the column
+    space, which is two-dimensional and contains the origin, hence a plane through the origin, choice
+    (C). A plane is not through a point other than the origin precisely because f(0) = 0. Checked
+    symbolically. Not claimed: any description of the kernel, which the question does not ask.
 ---
 
 ::: {.problem}
