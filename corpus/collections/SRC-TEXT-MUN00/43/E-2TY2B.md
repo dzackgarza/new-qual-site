@@ -69,6 +69,22 @@ audit:
     the application of part (d) to h(X). Checked against Munkres, Topology (2000), section 43 Exercise 9,
     printed p. 271. The trailing Q.E.D. sentence was dropped from the last step because the filter
     labels that step itself. Nothing in the statement was changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, all five parts. (a) is correct: the quadrilateral bound gives both the
+    convergence of $d(x_n,y_n)$ in $\RR$ and its independence of the representatives, and the
+    metric axioms pass to the limit. (b): $D(h(x),h(y))=d(x,y)$ on constant sequences, so $h$ is
+    injective and carries balls to traces of balls. (c): $D(h(x_k),[\mathbf x])=\lim_nd(x_k,x_n)$,
+    which the Cauchy condition bounds by $\varepsilon$ for $k\ge N$. (d) is correct, the
+    approximating sequence $a_k$ being Cauchy in $A$ and converging in $Z$. (e) applies (d) to
+    $A=h(X)$: a Cauchy sequence in $h(X)$ is the image of a Cauchy sequence of $X$ and converges
+    to its class by (c). No numbered theorem is cited beyond the completeness of $\RR$ in (a). The
+    solution had no provenance sentence; one now says the construction is the exercise's own
+    outline carried out. Citation by number: §43 Exercise 9, read in
+    `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
@@ -113,6 +129,8 @@ Show that $h$ is an isometric imbedding.
 :::
 
 ::: {.solution}
+
+The construction is the exercise's outline carried out step by step; the argument is the card's own, and the audit records what was searched.
 
 ::: pf
 
