@@ -13,8 +13,6 @@ Throughout, rings are commutative with identity.
 
 ## Zorn's lemma
 
-Every nonzero ring has a maximal ideal and every proper ideal is contained in one; both are the same application of Zorn's lemma to the proper ideals containing a given ideal, in which the union of a chain is a proper ideal and bounds the chain.
-
 [[D-P6XOT]]
 
 [[FT-PUVIQ]]
@@ -37,9 +35,7 @@ Every nonzero ring has a maximal ideal and every proper ideal is contained in on
 
 ## Noetherian rings and Krull dimension
 
-Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes, equivalently if every ideal is finitely generated.
-The three theorems are the finiteness consequences a qualification problem uses.
-Krull's intersection theorem is Artin--Rees followed by Nakayama's lemma applied to the finitely generated ideal $\Intersect_{n\geq1}I^n$.
+Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes.
 
 [[PR-VARHT]]
 
@@ -80,8 +76,6 @@ For an integral domain, the field of fractions is the localization at the nonzer
 
 [[D-JGYK4]]
 
-Over a Noetherian ring the decomposition exists; over a principal ideal domain the prime powers of a generator name the components.
-
 [[T-LSNTH]]
 
 [[T-PRMDC]]
@@ -90,10 +84,6 @@ Over a Noetherian ring the decomposition exists; over a principal ideal domain t
 
 [[D-DU4UQ]]
 
-In the graded case the Gorenstein condition forces Poincaré duality, and the consequence for the Hilbert function is that it is symmetric about $n/2$.
-
 [[T-GRDPD]]
-
-For a zero-dimensional Gorenstein algebra the dualizing module is the algebra itself, and the socle against a specified augmentation is one-dimensional.
 
 [[P-HCAO21]]
