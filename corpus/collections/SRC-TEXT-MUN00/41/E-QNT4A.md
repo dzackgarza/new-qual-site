@@ -88,7 +88,7 @@ Let $p: X \to Y$ be a perfect map.
 
 ::: {.solution}
 
-Part (a) is the argument of Feryll, *Praying For Stockholm*, "Paracompactness and Perfect Maps (6.41.8)" (31 December 2014), http://feryll.blogspot.com/2014/12/paracompactness-and-perfect-maps-6418.html, read 2026-11-20; that post states the exercise in the combined form "if $X$ is Hausdorff, $X$ is paracompact if and only if $Y$ is" and does not ask for $Y$ to be Hausdorff. Part (b) here is the card's own: the closed refinement $\mathcal F$ of the pullback cover, the closed images $p(F)$, their local finiteness through the compact fibre, and the separate proofs that $Y$ is Hausdorff and regular.
+Part (a) is the argument of Feryll, *Praying For Stockholm*, "Paracompactness and Perfect Maps (6.41.8)" (31 December 2014), http://feryll.blogspot.com/2014/12/paracompactness-and-perfect-maps-6418.html, read 2026-11-20; that post states the exercise in the combined form "if $X$ is Hausdorff, $X$ is paracompact if and only if $Y$ is" and does not ask for $Y$ to be Hausdorff; its own part (a) works with $p(V_y)$, which need not be open, and the card uses instead the open $V_y=Y-p(X-O_y)$ supplied by the lemma of step [](#lemma){.pf-ref}. Part (b) here is the card's own: the closed refinement $\mathcal F$ of the pullback cover, the closed images $p(F)$, their local finiteness through the compact fibre, and the separate proofs that $Y$ is Hausdorff and regular.
 
 ::: pf
 
