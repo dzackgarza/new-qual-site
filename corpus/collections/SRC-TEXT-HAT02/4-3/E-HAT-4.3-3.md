@@ -11,6 +11,15 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page locator corrected. The solution cited the exercise at printed p. 391, which is the page
+    on which §4.3 opens; Exercise 3 is on printed p. 419, the page of the §4.3 exercise list
+    (tmp/hat/AT.txt segment 427, PDF p. 428 of tmp/hat/AT.pdf). The mathematics is unchanged.
+    The sentence that no retained set covers the exercise stands: Sam's §4.3 runs over
+    exercises 1, 2, 4-9, 11-15, 17-20, 23 and skips 3.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -48,7 +57,7 @@ Show that $S^1$ is a retract of $X$.
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.3 Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 3, printed p. 391.
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.3 Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 3, printed p. 419.
 
 Let $i\colon S^{1}\hookrightarrow X$ be the inclusion of the given subcomplex and $i_{*}\colon H_{1}(S^{1};\ZZ)\to H_{1}(X;\ZZ)$ the induced map, which by hypothesis is injective with image a direct summand isomorphic to $\ZZ$. Fix a generator $\iota\in H^{1}(S^{1};\ZZ)$.
 
