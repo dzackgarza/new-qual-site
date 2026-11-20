@@ -53,9 +53,9 @@ Recall that a ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals 
 
 ## Localization
 
-[[D-OXIVT]]
+[[D-HNEQ1]]
 
-For a submonoid $S\leq(R,\cdot)$, the localization $R\localize{S}$ inverts the elements of $S$; its construction and universal property are [Tag 00CM](https://stacks.math.columbia.edu/tag/00CM) of the Stacks Project.
+[[D-OXIVT]]
 
 ::: {.warnings}
 The canonical map
