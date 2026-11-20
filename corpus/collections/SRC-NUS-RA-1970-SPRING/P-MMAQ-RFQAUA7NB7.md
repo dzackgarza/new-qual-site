@@ -102,7 +102,7 @@ $f: [0,1] \to [0,1]$, so $f(0) \in [0,1]$ and $f(1) \in [0,1]$; continuity of $g
 :::
 
 ::: pf-step
-By the intermediate value theorem, there is $x_0 \in [0,1]$ with $g(x_0) = 0$, i.e. $f(x_0) = x_0$.
+By the [[T-RA-WORKSHOP-D4-3-4|intermediate value theorem]], there is $x_0 \in [0,1]$ with $g(x_0) = 0$, i.e. $f(x_0) = x_0$.
 
 ::: pf-proof
 IVT applied to $g$: $0$ lies between $g(0) \geq 0$ and $g(1) \leq 0$.
