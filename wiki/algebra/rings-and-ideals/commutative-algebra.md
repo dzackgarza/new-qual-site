@@ -68,7 +68,9 @@ $$
 need not be injective: its kernel is $\theset{x\in R \st sx=0 \text{ for some } s\in S}$.
 :::
 
-For an integral domain, the field of fractions is the localization at the nonzero elements, $\ff(R)\cong R\localize{(\nonzeroof{R})}$.
+::: {.fact title="The field of fractions is a localization"}
+For an integral domain $R$, the [[D-HNEQ1|localization]] at the nonzero elements is the field of fractions, $\ff(R)\cong R\localize{(\nonzeroof{R})}$: the classes $x/s$ with $s\neq0$ form a field, and every element of the fraction field is such a class.
+:::
 
 ## Hilbert's basis theorem and primary ideals
 
