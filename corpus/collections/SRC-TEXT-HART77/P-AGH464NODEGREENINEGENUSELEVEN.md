@@ -71,6 +71,17 @@ audit:
     why 2H is effective: H is very ample, so 2H is very ample, so h^0(X, 2H) > 0 and 2H is linearly
     equivalent to an effective divisor. A review of this card noted the gap as implicit; it is now
     stated.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation form (#184). Every reference in this card's text is now carried by its numbered
+    statement: Exercise IV.6.4 with its printed hint; Theorem IV.6.4 (Castelnuovo); Theorem IV.5.4
+    (Clifford); Remark IV.6.4.1 with Exercise V.2.9 for the quadric-cone genus; Exercise II.8.4(g)
+    and Example II.8.20.3 for the genus formulas; and Yang Pi-Yeh's Solution 4.6.4 of the Hartshorne
+    exercises, cited by its exercise number. No page, PDF page or page offset appears in the card's
+    text; the locators inside the events of 2026-09-18 and 2026-11-19 are records of those passes and
+    are left as written (QUAL-11). The mathematics is unchanged in this pass.
 ---
 
 ::: {.problem}
@@ -80,7 +91,7 @@ Hint: Show that it would have to lie on a quadric surface, then use (6.4.1).
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.4, printed p. 355. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.4, printed p. 98, argues by the same Riemann--Roch and Clifford count on $\linearsystem{2D}$ that forces the quadric, and then applies (6.4.1) as the printed hint directs.
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.4. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.4, argues by the same Riemann--Roch and Clifford count on $\linearsystem{2D}$ that forces the quadric, and then applies (6.4.1) as the printed hint directs.
 
 Suppose for contradiction that
 $$
@@ -247,8 +258,8 @@ quadric cone.  For a curve of odd degree
 $$
 d=2a+1
 $$
-on a quadric cone the genus is $a^2-a$: Hartshorne's Remark 6.4.1(d),
-printed p. 353, deferred there to V. Ex. 2.9 and proved on [[FE-CRVQUAD]].
+on a quadric cone the genus is $a^2-a$: Hartshorne's Remark IV.6.4.1(d),
+deferred there to Exercise V.2.9 and proved on [[FE-CRVQUAD]].
 Thus such a curve has arithmetic genus
 $$
 p_a=a(a-1).
