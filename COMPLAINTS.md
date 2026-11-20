@@ -9372,3 +9372,19 @@ the printed book itself. The citation of (2.5) inside 4.4.20(b) was taken from t
 **The remainder.** Fifteen cards still lack Yang, all now in §IV.5; the queue starts at IV.5.1
 `P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION`. Yang's 4.5.1--4.5.3 are on printed p. 95 and
 4.5.4--4.5.6 on p. 96, so the next batch reads p. 95 from the entry 4.4.22 downward.
+
+## 2026-11-19: #168's eighth round — V.3.6's Tjurina half read, the two numbers recomputed, both correct
+
+**Object and need.** My last report names V.3.6 and V.3.7 as the next items. This round read `P-AGH536ANALYTICEQUIV`'s statement, its Tjurina-invariance step and its two computations; V.3.7 is not reached. No card is changed.
+
+**The statement.** As printed and as repaired earlier, it asks that analytically isomorphic curve singularities be equivalent in the sense of (3.9.4) but not conversely; the printed V.3.6 asks only the first half, and the card's audit of 2026-11-16 records that the printed text asks for the equivalence.
+
+**`tjurina-number-invariant` is correct.** $\tau(f)=\dim_k k[[x,y]]/(f,f_x,f_y)$ is carried by a formal coordinate change $\Phi$ to the Tjurina ideal of $\Phi(f)$, because the Jacobian of $\Phi$ is invertible and the chain rule makes $(\Phi(f)_x,\Phi(f)_y)$ an invertible linear combination of $(\Phi(f_x),\Phi(f_y))$; and $(ug,(ug)_x,(ug)_y)=(g,g_x,g_y)$ for a unit $u$, since $u_xg$ and $u_yg$ lie in $(g)$. It cites Greuel--Lossen--Shustin, Remark 3.43.3, printed p. 219, for the invariance independently.
+
+**`tjurina-f1-twelve` is correct.** For $f_1=y^3+x^7$, $(f_{1x},f_{1y})=(7x^6,3y^2)$ gives $(f_1,f_{1x},f_{1y})=(x^6,y^2)$, since $x^7\in(x^6)$ and $y^3\in(y^2)$; the quotient has the $6\times2=12$ monomials $x^iy^j$ with $i\le5$, $j\le1$. Greuel--Lossen--Shustin print $12$ for $y^3-x^7$ in Example 3.43.1(a), printed p. 218.
+
+**`tjurina-f2-eleven` is correct, and my own first count of it was wrong.** For $f_2=y^3+x^5y+x^7$ the three relations give $y^2=-\frac13x^5$, $x^4y=-\frac75x^6$ and $x^7=0$, and the step takes $\{y^2+\frac13x^5,\ x^4y+\frac75x^6,\ x^7\}$ with leading terms $y^2,x^4y,x^7$ under lexicographic order with $y>x$. Counting with $x^5y=0$ alone gives twelve standard monomials; the third relation kills $x^4y$ as well, leaving $1,x,\dots,x^6$ and $y,xy,x^2y,x^3y$, which is $7+4=11$. The step's number agrees with the printed $11$ for $y^3+x^5y-x^7$ at Example 3.43.1(a), printed p. 218, and the substitution $(x,y)\mapsto(x,-y)$ carries that germ to $-f_2$.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read for this record: the statement, `tjurina-number-invariant`, `tjurina-f1-twelve` and `tjurina-f2-eleven`, and the printed pages 218--219 of Greuel--Lossen--Shustin as the card quotes them, not re-opened. Not read this round: the multiplicity-sequence steps `same-multiplicity-sequence`, `puiseux-pair`, `c1-c2-equivalent`, and the equivalence half `analytic-implies-topological` to `automorphism-identifies-resolution-data`; and none of V.3.7. So #168's acceptance is not met for V.3.6's first half or for V.3.7, and V.3.6's "not conversely" half is now read. Still unread: IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.3.7, V.4.16, V.5.6, V.5.8(b).
