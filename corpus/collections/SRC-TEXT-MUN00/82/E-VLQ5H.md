@@ -65,7 +65,7 @@ Let $X$ be the infinite earring (see Example 1 of §80). Show that $X$ is a comp
 ::: {.solution}
 The injection argument is Paul Frost's, in his answer 3928674 (https://math.stackexchange.com/a/3928674, 2020-11-30) to question 3925195, "Fundamental group of Hawaiian earring is uncountable" (https://math.stackexchange.com/questions/3925195), and in his answer 4917615 (https://math.stackexchange.com/a/4917615, 2024-05-16) to question 4917558, which supplies the continuity check the first leaves to the reader; he writes the loop with prescribed winding numbers, and recovers the $n$-th one from the retraction $r_n$, so that $\ZZ^{\NN}$ embeds in $\pi_1$. The card's proof is that injection with the zeros and ones of the printed hint in place of the winding numbers, and it also proves the first half of the exercise, that $X$ is compact Hausdorff with a countable basis, which neither answer addresses.
 
-Throughout, $X=\bigcup_{n\ge1}C_n$ is the infinite earring of Example 1 of §80 (printed p. 487): $C_n$ is the circle of radius $1/n$ with centre $(1/n,0)$, so that every $C_n$ passes through the origin $p$ --- the book's $b_0$ --- and $C_n$ has diameter $2/n$. The exercise is §82 Supplementary Exercise 5 (printed p. 500).
+Throughout, $X=\bigcup_{n\ge1}C_n$ is the infinite earring of Example 1 of §80: $C_n$ is the circle of radius $1/n$ with centre $(1/n,0)$, so that every $C_n$ passes through the origin $p$ --- the book's $b_0$ --- and $C_n$ has diameter $2/n$. The exercise is §82 Supplementary Exercise 5.
 
 ::: pf
 
@@ -87,7 +87,7 @@ $X$ lies in the disk of radius $2$ about $p$, so it is bounded. For closedness l
 $X$ is compact, Hausdorff and second countable.
 
 ::: pf-proof
-A closed and bounded subspace of $\RR^2$ is compact (Theorem 27.3, printed p. 173). As a subspace of the Hausdorff space $\RR^2$ it is Hausdorff (Theorem 31.2(a), printed p. 196), and as a subspace of the second-countable space $\RR^2$ it is second countable (Theorem 30.2, printed p. 191).
+A closed and bounded subspace of $\RR^2$ is compact (Theorem 27.3). As a subspace of the Hausdorff space $\RR^2$ it is Hausdorff (Theorem 31.2(a)), and as a subspace of the second-countable space $\RR^2$ it is second countable (Theorem 30.2).
 :::
 
 :::
@@ -100,7 +100,7 @@ A closed and bounded subspace of $\RR^2$ is compact (Theorem 27.3, printed p. 17
 For each $n$ the map $r_n:X\to C_n$ that is the identity on $C_n$ and sends every other circle to $p$ is a continuous retraction.
 
 ::: pf-proof
-It is a retraction by construction, and Example 1 of §80 (printed p. 487) introduces it. For continuity: at a point of $C_n$ other than $p$ it agrees with the identity on $C_n$, which is continuous; at a point $x\in C_i$ with $i\ne n$ and $x\ne p$, a neighbourhood of $x$ in $X$ can be taken inside $C_i$ and away from $C_n$, and there $r_n$ is constant with value $p$; at $p$, a neighbourhood $U$ of $p$ in $X$ satisfies $r_n(U)\subset U\cup\{p\}=U$, because points of $U\cap C_n$ map to themselves and all other points of $U$ map to $p$. So $r_n$ is continuous.
+It is a retraction by construction, and Example 1 of §80 introduces it. For continuity: at a point of $C_n$ other than $p$ it agrees with the identity on $C_n$, which is continuous; at a point $x\in C_i$ with $i\ne n$ and $x\ne p$, a neighbourhood of $x$ in $X$ can be taken inside $C_i$ and away from $C_n$, and there $r_n$ is constant with value $p$; at $p$, a neighbourhood $U$ of $p$ in $X$ satisfies $r_n(U)\subset U\cup\{p\}=U$, because points of $U\cap C_n$ map to themselves and all other points of $U$ map to $p$. So $r_n$ is continuous.
 :::
 
 :::
@@ -109,7 +109,7 @@ It is a retraction by construction, and Example 1 of §80 (printed p. 487) intro
 For each $a=(a_1,a_2,\ldots)\in\{0,1\}^{\NN}$ the map $f_a$ defined below is a continuous loop in $X$ based at $p$.
 
 ::: pf-proof
-Let $I_n=[1-2^{-(n-1)},1-2^{-n}]$ for $n\ge1$, closed intervals whose union is $[0,1]$ and which meet only in the points $1-2^{-k}$, and on $I_n$ let $f_a$ traverse $C_n$ once from $p$ back to $p$ if $a_n=1$ and let $f_a$ be constant at $p$ if $a_n=0$; set $f_a(1)=p$. This is well defined, since on $I_n\cap I_{n+1}=\{1-2^{-n}\}$ both prescriptions give $p$. It is continuous: on the interior of each $I_n$ it is a path in the closed set $C_n$, hence continuous; at a junction point $1-2^{-k}$ the restrictions to the two closed intervals $I_k$ and $I_{k+1}$ are continuous and agree there, so the pasting lemma (Theorem 18.3, printed p. 108) applies to their union; and at $t=1$, where $f_a(1)=p$, every value of $f_a$ on $I_n$ lies in $C_n$, of diameter $2/n$, so $f_a(t)\to p$ as $t\to1$. Hence $f_a$ is continuous with $f_a(0)=f_a(1)=p$, a loop based at $p$.
+Let $I_n=[1-2^{-(n-1)},1-2^{-n}]$ for $n\ge1$, closed intervals whose union is $[0,1]$ and which meet only in the points $1-2^{-k}$, and on $I_n$ let $f_a$ traverse $C_n$ once from $p$ back to $p$ if $a_n=1$ and let $f_a$ be constant at $p$ if $a_n=0$; set $f_a(1)=p$. This is well defined, since on $I_n\cap I_{n+1}=\{1-2^{-n}\}$ both prescriptions give $p$. It is continuous: on the interior of each $I_n$ it is a path in the closed set $C_n$, hence continuous; at a junction point $1-2^{-k}$ the restrictions to the two closed intervals $I_k$ and $I_{k+1}$ are continuous and agree there, so the pasting lemma (Theorem 18.3) applies to their union; and at $t=1$, where $f_a(1)=p$, every value of $f_a$ on $I_n$ lies in $C_n$, of diameter $2/n$, so $f_a(t)\to p$ as $t\to1$. Hence $f_a$ is continuous with $f_a(0)=f_a(1)=p$, a loop based at $p$.
 :::
 
 :::
@@ -118,7 +118,7 @@ Let $I_n=[1-2^{-(n-1)},1-2^{-n}]$ for $n\ge1$, closed intervals whose union is $
 For every $n$, $(r_n)_*[f_a]$ is trivial if $a_n=0$ and is the generator of $\pi_1(C_n,p)\cong\ZZ$ if $a_n=1$.
 
 ::: pf-proof
-The composite $r_n\circ f_a$ is constant at $p$ on each $I_i$ with $i\ne n$, because $f_a$ takes values in $C_i$ there and $r_n$ collapses $C_i$ to $p$, and on $I_n$ it is the loop that traverses $C_n$ once, or is constant when $a_n=0$. So $[r_n\circ f_a]$ is respectively the class of a generator or the trivial class in $\pi_1(C_n,p)$, which is isomorphic to $\ZZ$ (Theorem 54.5, printed p. 345). Since $(r_n)_*[f_a]=[r_n\circ f_a]$, the claim follows.
+The composite $r_n\circ f_a$ is constant at $p$ on each $I_i$ with $i\ne n$, because $f_a$ takes values in $C_i$ there and $r_n$ collapses $C_i$ to $p$, and on $I_n$ it is the loop that traverses $C_n$ once, or is constant when $a_n=0$. So $[r_n\circ f_a]$ is respectively the class of a generator or the trivial class in $\pi_1(C_n,p)$, which is isomorphic to $\ZZ$ (Theorem 54.5). Since $(r_n)_*[f_a]=[r_n\circ f_a]$, the claim follows.
 :::
 
 :::
@@ -127,7 +127,7 @@ The composite $r_n\circ f_a$ is constant at $p$ on each $I_i$ with $i\ne n$, bec
 $\pi_1(X,p)$ is uncountable.
 
 ::: pf-proof
-Let $a\ne b$ in $\{0,1\}^{\NN}$ and choose $n$ with $a_n\ne b_n$. By step [](#winding){.pf-ref} the classes $(r_n)_*[f_a]$ and $(r_n)_*[f_b]$ differ, one being trivial and the other the generator; if $[f_a]=[f_b]$ in $\pi_1(X,p)$, applying the homomorphism $(r_n)_*$ would give equal images. Hence $[f_a]\ne[f_b]$, and $a\mapsto[f_a]$ is an injection of $\{0,1\}^{\NN}$ into $\pi_1(X,p)$. The set of binary sequences is in bijection with the power set of $\NN$, which is uncountable (Theorem 7.8, printed p. 50), so $\pi_1(X,p)$ is uncountable. Together with step [](#compact){.pf-ref} this proves the exercise.
+Let $a\ne b$ in $\{0,1\}^{\NN}$ and choose $n$ with $a_n\ne b_n$. By step [](#winding){.pf-ref} the classes $(r_n)_*[f_a]$ and $(r_n)_*[f_b]$ differ, one being trivial and the other the generator; if $[f_a]=[f_b]$ in $\pi_1(X,p)$, applying the homomorphism $(r_n)_*$ would give equal images. Hence $[f_a]\ne[f_b]$, and $a\mapsto[f_a]$ is an injection of $\{0,1\}^{\NN}$ into $\pi_1(X,p)$. The set of binary sequences is in bijection with the power set of $\NN$, which is uncountable (Theorem 7.8), so $\pi_1(X,p)$ is uncountable. Together with step [](#compact){.pf-ref} this proves the exercise.
 :::
 
 :::
