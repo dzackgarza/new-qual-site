@@ -19,6 +19,15 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Compared with Real Analysis (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA2, whose solution repeats this tail-infimum argument."
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The closing step of the Fatou argument carried its justification as a run-in "Proof:" inside the
+    claim, which STYLE-07 forbids, so the claim is now the displayed identity and the proof derives its
+    three relations. Sources are cited by numbered statement: the monotone convergence theorem and the
+    definition of the lower limit of a sequence. No page reference is written in the body of this card or
+    in the event above. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -64,7 +73,12 @@ $g_k \leq f_n$ pointwise for $n \geq k$ (step [](#s1-1){.pf-ref}) and both are n
 :::
 
 ::: {.pf-step #s1-4}
-Take the limit as $k \to \infty$: $$\int_X \liminf_n f_n ~d\mu = \lim_k \int_X g_k ~d\mu \leq \lim_k \inf_{n \geq k} \int_X f_n ~d\mu = \liminf_n \int_X f_n ~d\mu.$$ Proof: Left equality by step [](#s1-2){.pf-ref}; inequality by step [](#s1-3){.pf-ref} (passing to the limit); right equality by definition of $\liminf$ applied to the sequence $\int_X f_n$.
+$$\int_X \liminf_n f_n ~d\mu = \lim_k \int_X g_k ~d\mu \leq \lim_k \inf_{n \geq k} \int_X f_n ~d\mu = \liminf_n \int_X f_n ~d\mu.$$
+
+::: pf-proof
+The functions $g_k$ increase to $\liminf_n f_n$ pointwise, by the definition of $g_k$ as the pointwise infimum over $n \ge k$, so the monotone convergence theorem identifies the limit of their integrals with the integral of the pointwise lower limit, which is the left equality. The inequality is step [](#s1-3){.pf-ref} passed to the limit in $k$, which preserves a non-strict inequality of extended real numbers. The right-hand side is $\lim_k \inf_{n\ge k}\int_X f_n\,d\mu$, which is the definition of the lower limit of the sequence of integrals.
+:::
+
 :::
 
 ::: pf-qed
