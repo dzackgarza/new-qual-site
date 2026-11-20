@@ -15,6 +15,7 @@ $$
 On $[\delta,\infty)$ each term is at most $1/(n^2\delta)$, so the series converges uniformly there by the Weierstrass $M$-test, and $g$ is continuous on $(0,\infty)$.
 The convergence is not uniform on $(0,\infty)$: at $x = 1/N^2$ the $N$th term equals $1/2$, so the tails $\sum_{n\geq N} (1+n^2x)^{-1}$ are not uniformly small.
 
+The uniform convergence on $[\delta,\infty)$ is the Weierstrass $M$-test of [@Rud76, ch. 7, Theorem 7.10], and the failure on $(0,\infty)$ is the card's own computation, which is the uniform Cauchy criterion of [@Rud76, ch. 7, Theorem 7.8] read negatively.
 :::
 
 ## Variations on the Dirichlet function
@@ -33,6 +34,7 @@ Every interval contains rationals and irrationals, so $f$ is continuous nowhere 
 On $[0,1]$ every upper Darboux sum is $1$ and every lower Darboux sum is $0$, so $f$ is not Riemann integrable.
 Since $f=0$ almost everywhere, $f$ is Lebesgue integrable with $\int_\RR f = 0$.
 
+This is the first function of [@Rud76, ch. 4, Example 4.27], which computes its discontinuity set; the failure of Riemann integrability is [@Rud76, ch. 11, Theorem 11.33(b)], since a Riemann integrable function is continuous almost everywhere and this one is continuous nowhere, and the Lebesgue integral is $0$ because $f$ vanishes off a null set.
 :::
 
 ::: {.example title="A Dirichlet-type function continuous at exactly one point"}
@@ -46,6 +48,7 @@ Since $\abs{f(x)}\leq\abs x$, $f$ is continuous at $0$; at $x_0\neq0$, rationals
 At $0$ the difference quotient $f(h)/h = \chi_\QQ(h)$ has no limit, so $f$ is differentiable nowhere.
 On $[0,1]$ the upper Darboux integral is $\int_0^1 x\dx = 1/2$ and the lower Darboux integral is $0$, so $f$ is not Riemann integrable; $f=0$ almost everywhere, so $f$ is Lebesgue integrable with $\int_\RR \abs f = 0$.
 
+This is the second function of [@Rud76, ch. 4, Example 4.27], continuous at $0$ and at no other point; the Darboux values are the card's computation and the Lebesgue statement is again $f=0$ almost everywhere.
 :::
 
 ::: {.example title="A Dirichlet-type function differentiable at exactly one point"}
@@ -59,6 +62,7 @@ As before $D_f = \RR\smz$.
 At $0$, $\abs{f(h)/h}\leq\abs h\to0$, so $f'(0)=0$, and $f$ is not differentiable at any point of discontinuity, so $D_f'=\RR\smz$.
 The Darboux integrals on $[0,1]$ are $1/3$ and $0$, so $f$ is not Riemann integrable; $f=0$ almost everywhere, so $\int_\RR\abs f=0$.
 
+This is the variant of the second function of [@Rud76, ch. 4, Example 4.27] with $x$ replaced by $x^2$; the discrepancy $D_f=\RR\smz$, the derivative $f'(0)=0$ and the Darboux values are the card's computation.
 :::
 
 ::: {.example title="A Dirichlet-type function taking two values of opposite sign"}
@@ -72,10 +76,13 @@ Since $\abs{f(x)} = \abs x$, $f$ is continuous at $0$, and $D_f = \RR\smz$.
 At $0$ the difference quotient $f(h)/h = \pm1$ according to whether $h$ is rational, so $f$ is differentiable nowhere.
 Since $\abs f = \abs x$ everywhere, $f$ is not Lebesgue integrable on $\RR$.
 
+This is a further variant of the family of [@Rud76, ch. 4, Example 4.27]; the sign convention is what makes $\abs f=\abs x$, and the non-integrability is $\int_\RR\abs x\,\dx=\infty$.
 :::
 
 ::: {.proposition title="The Darboux integrals of $x\qty{\chi_\QQ - \chi_{\RR\setminus\QQ}}$ on $[0,1]$"}
 For $f(x) \coloneqq x\qty{\chi_\QQ(x) - \chi_{\RR\setminus\QQ}(x)}$, the upper Darboux integral of $f$ on $[0,1]$ is $1/2$ and the lower Darboux integral is $-1/2$.
+
+The computation is the proof below; the upper and lower integrals it computes are those of [@Rud76, ch. 6, Definition 6.1].
 
 :::
 
@@ -101,6 +108,8 @@ For $\varepsilon>0$, only finitely many rationals in a bounded interval have den
 Hence $f$ is continuous exactly on $\RR\setminus\QQ$ and $D_f=\QQ$.
 $f$ is differentiable nowhere.
 Since $D_f$ is countable, hence null, and $f$ is bounded, $f$ is Riemann integrable on every $[a,b]$ by the Lebesgue criterion, with $\int_a^b f = 0$; it is also Lebesgue integrable on $\RR$ with integral $0$.
+
+This is Thomae's function, and neither retained book prints it: the continuity set and the differentiability are the computation above, and the Riemann integrability is the Lebesgue criterion of [@Rud76, ch. 11, Theorem 11.33(b)], since the set of discontinuities is countable and hence of measure zero.
 
 :::
 
