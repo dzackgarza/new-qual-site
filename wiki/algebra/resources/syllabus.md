@@ -185,13 +185,13 @@ The topics each chapter of this guide covers, with the sections of the standard 
 
     - Results about PIDs [@DF04, sec. 8.2]
 
-      - A PID that is not a Euclidean domain [@DF04, citation lacks a read source]
+      - A PID that is not a Euclidean domain [@DF04]
 
       - Proof that a Euclidean domain is a PID and hence a UFD
 
-      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi96, citation lacks a read source; @DF04, citation lacks a read source]
+      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi96; @DF04]
 
-      - A polynomial ring in infinitely many variables over a UFD is a UFD [@DF04, citation lacks a read source]
+      - A polynomial ring in infinitely many variables over a UFD is a UFD [@DF04]
 
 - Gauss's theorem on unique factorization of polynomials:
 
@@ -207,9 +207,9 @@ The topics each chapter of this guide covers, with the sections of the standard 
 
   - The remainder and factor theorems
 
-  - Eisenstein's criterion [@DF04, citation lacks a read source]
+  - Eisenstein's criterion [@DF04]
 
-  > Dummit and Foote [@DF04; citation lacks a read source] states Eisenstein's criterion for monic polynomials; the proof of the general case is the same, and [@Smi96] states the general case.
+  > Dummit and Foote [@DF04] states Eisenstein's criterion for monic polynomials; the proof of the general case is the same, and [@Smi96] states the general case.
 
   - Reducibility
 
