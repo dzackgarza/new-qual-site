@@ -32,7 +32,7 @@ $$\deg C^\vee = d(d-1) - 2\delta - 3\kappa.$$
 
 The smooth case is [@Har77, Exercise IV.2.3(e)]: the morphism of part (a) sends $P$ to $T_PC\cap L$ for a line $L$ not tangent to $C$, and its degree is $d(d-1)$, so a smooth plane curve of degree $d\geq2$ has class $d(d-1)$.
 The correspondence between the singularities of $C^\vee$ and the multiple tangents and inflections of $C$ is parts (b) and (c) of the same exercise: an ordinary node of $C^\vee$ is a bitangent of $C$ and an ordinary cusp an inflection, which is what the corrections $2\delta$ and $3\kappa$ count.
-The formula with $\delta$ and $\kappa$ is not printed in Hartshorne; it follows from Hurwitz's theorem in IV.2 applied to $p\mapsto T_pC$ from the normalization of $C$, and no retained source prints it as a numbered statement, so it is recorded as stated and not as cited.
+The formula with $\delta$ and $\kappa$ is the Plücker formula, and it is stated and proved as Theorem 1.2.5 of Dolgachev, *Lectures on Classical Algebraic Geometry*, whose §1.2.3 derives it from the polar $P_a(C)$ and the identity $d(d-1)-\deg(C^\vee)=\sum_{x}i(C,P_a(C))_x$ at (1.40); the same section records the nonsingular case as (1.39). Dolgachev is not in `vocabularies/references.yaml`, so this is attributed by author, title and statement number rather than by a citation key.
 :::
 
 ::: {.example}
