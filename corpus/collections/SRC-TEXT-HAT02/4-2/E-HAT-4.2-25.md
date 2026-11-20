@@ -60,7 +60,7 @@ For $X$ a connected CW complex with $\pi_i(X) = 0$ for $1 < i < n$ for some $n \
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers sections up to part of §4.1, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card own, from the construction of Moore and Eilenberg–MacLane spaces by attaching cells (§4.2), the cellular chain complex of a CW pair (Theorem 2.35), the Hurewicz theorem (Theorem 4.32) and the long exact sequence of homology groups of a pair (§2.1).
+No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card own, from the construction of Moore and Eilenberg–MacLane spaces by attaching cells (§4.2), the cellular chain complex of a CW pair (Theorem 2.35), the Hurewicz theorem (Theorem 4.32) and the long exact sequence of homology groups of a pair (§2.1).
 
 ::: pf
 

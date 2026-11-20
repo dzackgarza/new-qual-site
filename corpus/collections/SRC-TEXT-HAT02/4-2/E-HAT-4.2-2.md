@@ -64,7 +64,7 @@ Show the action of $\pi_1(\RP^n)$ on $\pi_n(\RP^n) \approx \ZZ$ is trivial for $
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers sections up to part of §4.1, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card own, from Theorem 1.38 and Proposition 1.30 in §1.3, Proposition 4.1, Corollary 4.25 and the degree of the antipodal map.
+This solution is transcribed from DeMason, *M382C Full Credit HW Problems*, §4.2 Exercise 2, and each step is checked against Hatcher: the action is the deck action on $\pi_n(S^n)$ with deck group $\ZZ_2$ (Theorem 1.38, Proposition 4.1), the nontrivial deck transformation is the antipodal map, and $\pi_n(S^n)\cong\ZZ$ is the degree isomorphism of Corollary 4.25. The route and the split into the $n=1$ and $n\ge2$ cases are that solution's; the steps below add the numbered references and nothing else. No other retained set covers the exercise: Guanyu Li's set ends with §3.3 and the Stanford 215C sets cover §3.B and §3.3 exercises.
 
 ::: pf
 
