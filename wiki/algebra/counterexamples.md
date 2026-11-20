@@ -72,19 +72,11 @@ An [[D-BJYH3|exact sequence]] need not [[D-3JJJN|split]]; $0\to\ZZ/2\to\ZZ/4\to\
 
 ## Linear algebra
 
-Further matrix counterexamples are on [[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]].
-
 ::: {.example title="Characteristic polynomials and similarity"}
 Matrices with the same [[D-QFYAC|characteristic polynomial]] and the same [[D-GK5SF|minimal polynomial]] need not be [[D-JIGMN|similar]]; $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0) \oplus J_1(0)$ both have characteristic polynomial $x^4$ and minimal polynomial $x^2$.
 :::
 
-::: {.example title="Real eigenvalues"}
-A real matrix need not have a real eigenvalue: the rotation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has characteristic polynomial $x^2+1$.
-:::
-
-::: {.example title="Diagonalizability over the real and complex numbers"}
-The same rotation is diagonalizable over $\CC$, with eigenvalues $\pm i$, and not over $\RR$.
-:::
+A real rotation with no real eigenvalue, the Jordan blocks $J_2(1)$ and $J_3(1)$, and a pair of nilpotent matrices with equal characteristic polynomials are worked on [[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]].
 
 ## Fields
 
