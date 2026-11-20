@@ -59,8 +59,8 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 11, printed p. 358,
-    Proposition A.1 (printed p. 520) for compact images, and Theorem 4.5 for Whitehead. Repair: step
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 11,
+    Proposition A.1 for compact images, and Theorem 4.5 for Whitehead. Repair: step
     `groups` concluded pi_n(X) = 0 from a nullhomotopy, but step `null` produces only a free one, and
     the passage from a free nullhomotopy of a based map to a vanishing based class is not free when
     n >= 1. The step now runs that passage: the change-of-basepoint isomorphism beta_gamma, taken along
@@ -79,7 +79,7 @@ An example is $S^\infty$, or more generally the infinite suspension $S^\infty X$
 :::
 
 ::: {.solution}
-A compact source maps into a finite subcomplex of the CW complex $X$, hence into some $X_i$; the nullhomotopy of $X_i\hookrightarrow X_{i+1}$ then kills any map out of $S^n$, so all homotopy groups of $X$ vanish, and Whitehead's theorem makes $X$ contractible. The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 11**, printed p. 17 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, and **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, homework 6, §4.1 Exercise 11**, p. 1 (`tmp/sources/uoregon-proudfoot-634-hw6.md`), both running Whitehead's theorem through cellular approximation and the finiteness of the cells a compact image meets. The path-connectedness step and the reasons for the two examples are the card's.
+A compact source maps into a finite subcomplex of the CW complex $X$, hence into some $X_i$; the nullhomotopy of $X_i\hookrightarrow X_{i+1}$ then kills any map out of $S^n$, so all homotopy groups of $X$ vanish, and Whitehead's theorem makes $X$ contractible. The argument is that of retained solutions: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.1 Exercise 11** (`tmp/sources/hatcher-solutions-sam-2008.pdf`), and **Nicholas Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, homework 6, §4.1 Exercise 11** (`tmp/sources/uoregon-proudfoot-634-hw6.md`), both running Whitehead's theorem through cellular approximation and the finiteness of the cells a compact image meets. The path-connectedness step and the reasons for the two examples are the card's.
 
 ::: pf
 
