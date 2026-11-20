@@ -10296,3 +10296,29 @@ Hoffman--Kunze §5.2 Exercise 8 on p. 149 and §6.4 Exercise 8 on p. 205. Taken 
 and Justin sheet 4. The statements of `P-OWBTK`, `P-5YLZS`, `P-OKDFC`, `P-ARTALG-JU03-8`, `P-JXIIG`,
 `P-QYKXK` and `P-ANJIW` were not read against a printed examination paper here, and stand as the
 cards have them.
+
+## 2026-11-20, second item: §4.1 10-23, verdict per card, and the re-check of 4.1-15's repair
+
+The fourteen cards of §4.1 in #163, against Hatcher, *Algebraic Topology* (2002), printed pp. 358-360, and the
+numbered results each step cites: Lemma 4.10 (pp. 350-351), Theorem 4.8 and Example 4.11 (p. 349), Theorem 4.32
+(p. 366), Corollary 4.33 (p. 368), Lemma 4.7 (p. 348), Proposition 4.22 (p. 357), Corollary 4.12 (p. 349).
+
+| card | printed p. | verdict | how read |
+| --- | --- | --- | --- |
+| `E-HAT-4.1-10` | 358 | read correct | step by step in this pass: the quasi-circle facts from §1.3 Exercise 7 (p. 79), Hahn--Mazurkiewicz giving $S^n$ as a quotient of $I$, the finite tree and its contraction, and the covering-lifting argument that $q$ is not nullhomotopic |
+| `E-HAT-4.1-11` | 358 | read correct | read in full earlier in this session, seven steps, and its compactness step re-checked against Proposition A.1 |
+| `E-HAT-4.1-12` | 359 | read correct | steps re-checked in this pass: $n=0$ separated; Hurewicz in the least degree $m>n$ where homotopy survives; cellular homology vanishing above dimension $n$; Whitehead |
+| `E-HAT-4.1-13` | 359 | read correct | steps re-checked in this pass: contractibility kills all homotopy and gives path connectivity; Lemma 4.7 (p. 348) extends $\mathrm{id}_A$ to $r:X\to A$; $r$ is a retraction |
+| `E-HAT-4.1-14` | 359 | read correct | steps re-checked in this pass: cellular approximations of $f$ and $g$; cellular maps carry $X^n$ to $Y^n$; the restricted homotopies made cellular rel $X^n\times\partial I$ land in $X^{n+1}=X^n$; both composites, then Whitehead |
+| `E-HAT-4.1-15` | 359 | repaired, repair re-checked | the repair writes the local linearity for $f_1$ rather than $f$, puts the balls $B_i$ in the interiors of the pieces through $p_i$, and states $[f]=[f_1]$; re-read this pass and sound |
+| `E-HAT-4.1-16` | 359 | read correct | read in full earlier; the inductive construction, the colimit by compactness, and the two isomorphism ranges |
+| `E-HAT-4.1-17` | 359 | read correct | read in full earlier; the CW model with no cells in dimensions $1..m$, the cells outside $X\vee Y$ of dimension at least $m+n+2$, Corollary 4.12 for both the pair and the smash product |
+| `E-HAT-4.1-18` | 359 | read correct | read in full earlier; the pseudocircle, McCord's weak equivalence, and constancy of maps out of a finite space into $S^1$ |
+| `E-HAT-4.1-19` | 359 | read correct | read in full earlier; the zigzag into a common CW approximation, and Whitehead for CW complexes |
+| `E-HAT-4.1-20` | 359 | read correct | read in full earlier; Postnikov truncation, the cell-by-cell count at each stage, and the finite union over components |
+| `E-HAT-4.1-21` | 359 | read correct | read in full earlier; the homotopy-fibre model, the index shift, and uniqueness of Postnikov stages |
+| `E-HAT-4.1-22` | 359 | read correct | read in full earlier; countability of the finite subcomplexes, of the triangulations, and of the simplicial maps |
+| `E-HAT-4.1-23` | 360 | read correct | read in full earlier; the CW models, cellular $f'$, homotopy-pushout invariance for the pair, and the quotient for the cone |
+
+No card in the fourteen needed a change in this pass; `4.1-15` is the one whose repair was made earlier and is
+re-checked here rather than re-repaired.
