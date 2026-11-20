@@ -1,9 +1,9 @@
 ---
 order: 200
-title: Summary of standard topics
+title: Objects and theorems of algebraic topology
 ---
 
-# Summary of standard topics
+# Objects and theorems of algebraic topology
 
 ## Algebraic topology topics
 
