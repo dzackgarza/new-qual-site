@@ -506,6 +506,19 @@ audit:
     same search were not readable, and no print or library source was
     consulted.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator repair, no mathematics: the live text cites each source by its numbered statement alone. The
+    cofinal rectangles are those of Stanford *Solution Set 4*; the rational summand of $H_1(E;\ZZ)$ is K. Eda
+    and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1; $\Ext_\ZZ(\QQ,\ZZ)\cong\RR$
+    is James Wiegold, *Ext(Q,Z) is the additive group of real numbers*; and the degree-one value and the same
+    summand are Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 and Theorem 1.3
+    with the sentence after it. Every page reference is gone from the problem, the steps and the remarks —
+    including the two inside the bolded attributions, which now end at the theorem number. The split the card
+    draws between published theorems and its own assembly is unchanged, and no step changed. The dated events
+    above keep their text, page references included, as QUAL-11 requires. `qualc.authoring check` passes.
 ---
 
 ::: {.problem}
@@ -552,7 +565,7 @@ These isomorphisms commute with restriction to smaller cone neighborhoods. Takin
 For $X=\ZZ\times\RR$ and integer coefficients, $H_c^2(X;\ZZ)=0$.
 
 ::: pf-proof
-The argument of this step is the card's own, on the family of rectangles that Stanford *Solution Set 4*, printed p. 1, uses as its cofinal compact sets. Let $J_N=[-N-1/2,N+1/2]$ and $K_N=([-N-1/2,N+1/2]^2)\cap X$ for $N\ge1$. These compact rectangles are cofinal among compact subsets of $X$. On each of the $2N+1$ lines meeting $K_N$, the relative cohomology is $H^q(\RR,\RR-J_N;\ZZ)$, which is $\ZZ$ for $q=1$ and zero otherwise. Hence
+The argument of this step is the card's own, on the family of rectangles that Stanford *Solution Set 4* uses as its cofinal compact sets. Let $J_N=[-N-1/2,N+1/2]$ and $K_N=([-N-1/2,N+1/2]^2)\cap X$ for $N\ge1$. These compact rectangles are cofinal among compact subsets of $X$. On each of the $2N+1$ lines meeting $K_N$, the relative cohomology is $H^q(\RR,\RR-J_N;\ZZ)$, which is $\ZZ$ for $q=1$ and zero otherwise. Hence
 $$
 H^q(X,X-K_N;\ZZ)\cong
 \begin{cases}
@@ -573,7 +586,7 @@ That the one-point compactification of $\ZZ\times\RR$ is the Hawaiian earring is
 $$
 \operatorname{Ext}_{\ZZ}(H_1(E;\ZZ),\ZZ)\hookrightarrow H^2(E;\ZZ).
 $$
-By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with the proof on printed p. 310**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring***. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
+By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring***. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
 :::
 
 :::
@@ -600,7 +613,7 @@ $$
 The answer to the bracketed question is no, already for $G=\ZZ$ and $n=2$.
 
 ::: pf-proof
-The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with its proof on printed p. 310**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers***, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 on printed p. 3 and Theorem 1.3 with the sentence after it on printed p. 2**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
+The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers***, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 and Theorem 1.3 with the sentence after it**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
 $$
 \boxed{H_c^2(\ZZ\times\RR;\ZZ)=0,\qquad H^2((\ZZ\times\RR)^+,\infty;\ZZ)\ne0,}
 $$
