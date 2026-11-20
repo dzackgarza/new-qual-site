@@ -1044,6 +1044,24 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    `qualc.authoring check` clean, `tmp/lam.sh` reporting numbered steps and QED labels,
    `tools/check_macros.py` clean. No whole-corpus gate this turn.
 
+   **2026-11-20, third record: the §3.C-16 gaps closed, and where queue D actually stands.** The two
+   arguments the second record listed as not re-derived on `E-HAT-3.C-16` are now steps with proofs:
+   `#kummer` proves Legendre's formula $v_p(n!)=(n-s_p(n))/(p-1)$ from the digit expansion inside
+   $\sum_j\lfloor n/p^j\rfloor$ and derives the digit-sum form of $v_p\binom nk$; `#flags-polynomial`
+   compares the polynomial forms of least degree $1$ and $2$ in the three parities using $s_2(2m)=s_2(m)$
+   and $s_2(a+b+1)\le s_2(a)+s_2(b)+1$, and separates the two classes by $B_1=\FF_2$ against $B_1=0$;
+   `#recursion` proves the converse of the classification of forms by induction on $j$ with the cocycle
+   relation at $k=1$ as the induction step. Commit `04c30ba4f3`. **Queue D's own file is stale** --- it
+   still lists the §3.3 and §3.C cards this lane converted --- so ownership was established by a direct
+   parse of the corpus rather than by the queue: 13 cards of `SRC-TEXT-HAT02` still carry a solution with
+   no numbered step, and by the split recorded above the unclaimed ones are `E-HAT-3.D-2` (§3.D) and
+   `E-HAT-3.A-2` (§3.A); `-4.D-2` and the §4.1 cards are the other Hatcher stream's, and `-3.F-2` is
+   its §3.F. Outside Hatcher the largest remaining blocks are `SRC-TEXT-SS03` (7), `SRC-JHU-ANALYSIS-EXAMS`
+   (5), `SRC-PRELIM-PRACTICE-WEEK4-2020` (5) and `SRC-TEXT-HART77` (5), none of which this register claims
+   for any lane. The next items for this lane are `E-HAT-3.D-2` and `E-HAT-3.A-2`. Checks on the card:
+   `qualc.authoring check` clean, `tmp/lam.sh` reporting sixteen numbered steps with QED labels,
+   `tools/check_macros.py` clean. No whole-corpus gate this turn.
+
    **2026-11-21, §4.3 finished and re-cited by numbered statement.** All twenty-four cards of `4-3/` carry a
    structured proof, and six of them --- `E-HAT-4.3-2`, `-9`, `-16`, `-18`, `-21`, `-22` --- were converted from
    prose to numbered steps in this lane; the rest were already read and repaired on 2026-11-19. The
