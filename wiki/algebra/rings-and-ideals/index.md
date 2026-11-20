@@ -21,4 +21,4 @@ topics:
 
 - [[algebra/rings-and-ideals/number-theory|Number theory]] -- norms in number fields, Euler's totient function, and the theorems of Euler and Fermat.
 
-- [[algebra/rings-and-ideals/solutions|Solutions (rings)]] -- the Gallian ring-theory chapter outlines, one collection per chapter.
+- [[algebra/rings-and-ideals/solutions|Solutions (rings)]] -- the exercises of Gallian's ring chapters 12--17, each with a solution outline.
