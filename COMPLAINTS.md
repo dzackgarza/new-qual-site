@@ -10212,3 +10212,11 @@ the one the exercise cites.
 
 **Repair:** the remark is corrected on the card, and a `solution-written` entry of this date withdraws the 2026-11-19 referee note that repeated the claim, with the book's pages checked in its own text layer (printed page $=$ PDF page $-9$): §3.G printed p. 321, §2.B printed pp. 174--175, Example 3H.3 printed pp. 329--330, §3.H opening printed p. 327, Proposition 3H.4 printed p. 331, Exercise 9 printed p. 177. Card commit `a6ff1e6bbe`. The card passes `qualc.authoring check E-HAT-2.B-9`, the macro check and the extraction detector; no whole-corpus `qualc check` was run for it.
 
+
+## 2026-11-20: the whole-corpus `qualc check` completed green on the tree carrying #160's repairs
+
+**Result.** `./.venv/bin/python -m qualc check`, with `QUALC_PARALLEL_WORKERS=2`, exit 0 after 194 s: "14418 cards and 351 wiki pages OK", 0 diagnostics. Run record `/workspace/nucleus/work/home/.local/state/new-qual-site/run-records/c2c7adc0e32f-20261120T061940.260Z-qualc-check.json`, commit `c2c7adc0e32f3ffc7a2809dd2f2bd0bb8b31ddf4`, `work_tree_dirty: true`, started 06:19:40Z and finished 06:22:54Z.
+
+**Coverage.** The run commit is an ancestor of `main`'s tip. Every #160 commit of this date — `2922f53a72`, `c34ecd7222`, `149b8a2e0b`, `31904b1e29`, `a0f4d9db08`, `c2f490f474`, `4616cc3c62`, `a4a1b420b7`, `6d5534d6f3`, `a968b8450b` — is an ancestor of it, so the green covers the six cards in their final state. After the run commit, two files under the checked paths changed on `main`, both other lanes' work: `corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-8.md` and `wiki/algebra/rings-and-ideals/index.md`; the run does not certify those. The dirty-tree flag is stated: the run parsed the working tree, which carried other sessions' uncommitted edits beside the committed state of the six cards.
+
+**Repair.** This record in the COMPLAINTS commit that carries it, which changes no card.
