@@ -52,6 +52,23 @@ audit:
     of G by connectedness, that G is then sigma-compact, and that a regular sigma-compact
     space is paracompact (E-KVFCT(a)). The argument is the card's own; no retained set is
     cited. Munkres §41 Exercise 7, printed p. 257. The printed statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with the #184 citation repair, and a wrong exercise number corrected. The
+    solution cited "§41 Exercise 7" for this card's exercise, and the 2026-11-18 event repeated
+    the number: the exercise proved here is §41 Exercise 9, the locally compact connected
+    topological group, as the collection index records it, while §41 Exercise 7 is the one about
+    finite or countable unions of closed paracompact subspaces. The number in the solution is
+    corrected; the 2026-11-18 event keeps its text (QUAL-11) and its number is superseded here.
+    The proof itself was read and is correct: by Theorem 29.2 there is an open $U'$ with compact
+    closure, and intersecting with its inverse keeps this and makes $K=K^{-1}$; the union of the
+    $K^n$ is a subgroup, open as a union of translates of the open $U$ it contains and closed as
+    the complement of the other cosets, hence all of $G$ by connectedness; $G$ is then
+    $\sigma$-compact and paracompact by part (a) of Exercise 41.6, for which the regularity
+    supplied by the topological-group exercises of §22 is enough.
+
 ---
 
 ::: {.exercise}
@@ -64,7 +81,7 @@ This result holds without assuming $G$ is connected, but the proof requires more
 :::
 
 ::: {.solution}
-The argument is the card's own, following the book's hint; no retained solution set is cited on the card. It is checked against Munkres §41 Exercise 7, with [[E-KVFCT]](a) (a regular $\sigma$-compact space is paracompact).
+The argument is the card's own, following the book's hint; no retained solution set is cited on the card. It is checked against Munkres §41 Exercise 9, with [[E-KVFCT]](a) (a regular $\sigma$-compact space is paracompact).
 
 ::: pf
 
