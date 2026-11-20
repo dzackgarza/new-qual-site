@@ -9537,3 +9537,15 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: the statement, `secants`, `tangent-locus`, `infinitely-many-secants` and the dimension bookkeeping of `secant-dim` and `closed-immersion-b` as far as their claims, the printed exercise at printed p. 409 being the one checked in an earlier round. Not read: `centre`, `lemma-criterion`, `corollary`, `veronese-conic`, `secant-dim-lower`, and the bodies of `secant-dim` and `closed-immersion-b`; Harris's printed p. 144 and Shafarevich's printed p. 136 are the card's citations and were not re-opened. So #168's acceptance is met for the two points the issue names in this card and not for the card. Still unread: V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b).
+
+## 2026-11-19: #168's fourteenth round — V.2.12 and V.2.13 opened, the degree-5 case reconciled, the steps not read
+
+**Object and need.** The thirteenth round read IV.3.11(b); the last two cards #168 names are `P-AGH5212ELLRULEDAMPLE` (V.2.12) and `P-AGH5213ELLSCROLL` (V.2.13), where the issue records that the Atiyah surface $e=-1$ and the indecomposable $e=0$ cases lie outside Fuentes--Pedreira. This round read both statements and reconciled their arithmetic; it did **not** read the seven and six steps of the two cards, and does not report them.
+
+**The two statements.** V.2.12: for $X$ ruled over an elliptic curve $C$ with invariant $e$, part (a) asks for a section $D\sim C_0+\mathfrak b f$ with $|D|$ base-point-free when $\deg\mathfrak b\ge e+2$, part (b) that $|C_0+\mathfrak b f|$ be very ample exactly when $\deg\mathfrak b\ge e+3$, and the note is that $e=-1$ needs special attention. V.2.13: for every $e\ge-1$ and $n\ge e+3$ there is an elliptic scroll of degree $d=2n-e$ in $\PP^{d-1}$, in particular of degree $5$ in $\PP^4$.
+
+**The degree-5 case is $e=-1$, $n=2$, and the numbers agree.** With $e=-1$ the threshold of V.2.12(b) is $\deg\mathfrak b\ge2$, so $n=2$ is the smallest admissible twist; then $d=(C_0+nf)^2=-e+2n=1+4=5$, and $d(n)=2n-e$ gives the same, while the embedding dimension is $h^0=d+1-g=5+1-1=5$, i.e. $\PP^{d-1}=\PP^4$. So the case V.2.13 singles out is exactly the one V.2.12's note flags, and both are consistent with very ampleness holding with no room to spare at $\deg\mathfrak b=e+3$.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** The steps of both cards are unread — `s1` to `s7` of V.2.12 and `s1` to `s6` of V.2.13 — so nothing is certified about their proofs, and #168's acceptance is not met for either card. The printed exercises at printed pp. 385--386 were checked in an earlier round and were not re-opened here; the sources the steps cite (Fuentes, Fuentes--Pedreira, Atiyah, Hartshorne 1971) were not opened at all. With those two cards opened and not closed, the remaining items of #168 are V.2.12, V.2.13, V.4.16, V.5.6 and V.5.8(b), and the steps of IV.2.3, IV.3.11 and III.11.7 the earlier records list as unread.
