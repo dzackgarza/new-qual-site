@@ -44,7 +44,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 2.2 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 1; the statement below is its wording.
 
 Prove the Brouwer fixed point theorem for maps $f: D^n \to D^n$ by applying degree theory to the map $S^n \to S^n$ that sends both the northern and southern hemispheres of $S^n$ to the southern hemisphere via $f$.
 [This was Brouwer's original proof.]
@@ -69,7 +69,7 @@ The map $F$ has degree zero.
 
 ::: pf-proof
 
-Its image is contained in the closed southern hemisphere, hence misses every point in the interior of the northern hemisphere, so $F$ is not surjective and factors through the contractible space $S^n-\{x_0\}$ for a point $x_0$ outside its image. By property (b) of degree (Hatcher, p. 134), a non-surjective map $S^n\to S^n$ has degree zero:
+Its image is contained in the closed southern hemisphere, hence misses every point in the interior of the northern hemisphere, so $F$ is not surjective and factors through the contractible space $S^n-\{x_0\}$ for a point $x_0$ outside its image. By property (b) of degree in §2.2, a non-surjective map $S^n\to S^n$ has degree zero:
 $$
 \deg F=0.
 $$
@@ -92,7 +92,7 @@ On the southern hemisphere this is exactly the assertion that $f(x)\ne x$. On th
 
 ::: {.pf-step #s3}
 
-Any fixed-point-free map $G:S^n\to S^n$ is homotopic to the antipodal map (property (g) of degree, Hatcher p. 134; the homotopy is written out for completeness).
+Any fixed-point-free map $G:S^n\to S^n$ is homotopic to the antipodal map (property (g) of degree in §2.2; the homotopy is written out for completeness).
 
 ::: pf-proof
 
@@ -116,7 +116,7 @@ If $f$ had no fixed point, then by steps [](#s2){.pf-ref} and [](#s3){.pf-ref}
 $$
 \deg F=\deg(-\operatorname{id}_{S^n})=(-1)^{n+1},
 $$
-using homotopy invariance of degree, property (c) of Hatcher p. 134, and the degree $(-1)^{n+1}$ of the antipodal map, property (f) on the same page. This is $\pm1$, contradicting step [](#s1){.pf-ref}, where $\deg F=0$. Hence every continuous map
+using homotopy invariance of degree, property (c) of degree in §2.2, and the degree $(-1)^{n+1}$ of the antipodal map, property (f) of degree in §2.2. This is $\pm1$, contradicting step [](#s1){.pf-ref}, where $\deg F=0$. Hence every continuous map
 $$
 f:D^n\to D^n
 $$
