@@ -28,7 +28,7 @@ Does there exist a closed orientable 3-manifold with these homology groups?
 :::
 
 ::: {.solution}
-This is Problem 1 of the Summer 2009 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 399, and the statement below is its wording.
+This is Problem 1 of the Summer 2009 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 

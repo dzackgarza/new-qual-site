@@ -31,7 +31,7 @@ Show that $f$ is homotopic to $g$.
 :::
 
 ::: {.solution}
-This is Problem 1 of the Fall 2011 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 403, and the statement below is its wording.
+This is Problem 1 of the Fall 2011 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 

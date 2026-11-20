@@ -30,7 +30,7 @@ Compute the fundamental group of the resulting quotient space.
 :::
 
 ::: {.solution}
-This is Problem 1 of the Summer 2007 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 397, and the statement below is its wording.
+This is Problem 1 of the Summer 2007 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 

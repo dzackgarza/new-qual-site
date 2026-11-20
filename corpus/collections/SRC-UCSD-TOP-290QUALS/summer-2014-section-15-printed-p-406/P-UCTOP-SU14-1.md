@@ -27,7 +27,7 @@ Compute the fundamental group and homology groups of the space obtained by remov
 :::
 
 ::: {.solution}
-This is Problem 1 of the Summer 2014 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 406, and the statement below is its wording.
+This is Problem 1 of the Summer 2014 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 

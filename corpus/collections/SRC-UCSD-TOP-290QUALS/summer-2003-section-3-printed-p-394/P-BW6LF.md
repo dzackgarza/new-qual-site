@@ -19,7 +19,7 @@ Construct a space $X$ having $H_0(X;\ZZ) \cong \ZZ$ and $H_5(X;\ZZ) \cong \ZZ_4$
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the collection's provenance is the compiled `assets/attachments/UCSD_290_Qualifying_Exams.pdf` and no solutions sheet accompanies it. The earlier version of the card gave the construction only, in notation that did not compile, and computed no homology; the construction is kept and the computation is supplied here, using the cellular chain complex as in Hatcher, *Algebraic Topology* (2002), Theorem 2.35, printed p. 139, and the cellular boundary formula on printed pp. 140--141.
+No retained solution set covers this exercise: the collection's provenance is the compiled `assets/attachments/UCSD_290_Qualifying_Exams.pdf` and no solutions sheet accompanies it. The earlier version of the card gave the construction only, in notation that did not compile, and computed no homology; the construction is kept and the computation is supplied here, using the cellular chain complex as in Hatcher, *Algebraic Topology* (2002), Theorem 2.35, and the cellular boundary formula on printed pp. 140--141.
 
 ::: pf
 

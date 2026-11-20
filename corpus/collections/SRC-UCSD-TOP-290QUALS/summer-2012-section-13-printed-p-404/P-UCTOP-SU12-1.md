@@ -31,7 +31,7 @@ Show that $H$ is free, and find its rank.
 :::
 
 ::: {.solution}
-This is Problem 1 of the Summer 2012 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, printed p. 404, and the statement below is its wording.
+This is Problem 1 of the Summer 2012 qualifying exam in the retained compilation `assets/attachments/UCSD_290_Qualifying_Exams.pdf`, and the statement below is its wording.
 
 ::: pf
 
