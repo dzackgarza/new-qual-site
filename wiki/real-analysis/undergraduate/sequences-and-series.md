@@ -22,10 +22,7 @@ topics:
 
 [[D-S2YWR]]
 
-::: {.remark}
-The series $\sum_{n\geq1}(1+n^2x)^{-1}$ converges uniformly on every $[a,\infty)$ with $a>0$ and not on $(0,\infty)$: see [[real-analysis/counterexamples-undergraduate#A continuous limit without uniform convergence|Undergraduate counterexamples]].
-
-:::
+An example of a series of continuous functions that converges non-uniformly to a continuous function is on [[real-analysis/counterexamples-undergraduate#A continuous limit without uniform convergence|Undergraduate counterexamples]].
 
 ## Sequences of numbers
 
