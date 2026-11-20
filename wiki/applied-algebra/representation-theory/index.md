@@ -45,5 +45,4 @@ so characters of $G$ are obtained by inducing characters of subgroups and decomp
 
 The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by [[T-HOOK|the hook length formula]]; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].
 
-For an irreducible character $\chi$ of $G$, the [[T-FSIND|Frobenius--Schur indicator]] is $1$ when the representation is realizable over $\RR$, $0$ when $\chi$ is not real-valued, and $-1$ when the representation is quaternionic.
-Its sign is the difference of the multiplicities of $\chi$ in the symmetric and the exterior square of the representation, which is the reading of the indicator that [[T-YHH3M|Schur's lemma]] supports.
+For an irreducible character $\chi$ of $G$, [[T-FSIND|the Frobenius--Schur theorem]] sorts the representation into one of three types: $\chi$ is not real-valued, or it is real-valued and the representation is realizable over $\RR$, or it is real-valued and not realizable over $\RR$, in which case its real form has the quaternions as commuting algebra.
