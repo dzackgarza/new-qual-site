@@ -9707,3 +9707,17 @@ right but the division is not: the theorem's *statement* is on printed p. 111 al
 **Not done.** No source beyond the files named was searched for a published proof, and Humphreys was
 not read outside §§2.11 and 5.3--5.4; the printed book itself was not consulted. The Chapter IV queue
 (IV.5.4 onward, eight cards) stands where the last report left it.
+
+## 2026-11-19, twenty-fifth item: §10.2 Ex. 5 and Ex. 11 read, both correct — §10.1 and §10.2 are now complete in the residue
+
+**Object.** The two residue-5 cards of `SRC-TEXT-HK71` §10.2, read against their printed pages. With `E-HK-101-5` and `-101-11` of the previous item, every residue-5 card of §10.1 and §10.2 is now read.
+
+**`E-HK-102-5`, §10.2 Exercise 5, printed p. 372 — correct.** Completing the square for $q=ax_1^2+2bx_1x_2+cx_2^2$ with $a\ne0$ gives $q=a(x_1+\frac ba x_2)^2+(c-\frac{b^2}a)x_2^2$, so the coordinate change $y_1=x_1+\frac ba x_2$, $y_2=x_2$ has inverse $U=\begin{pmatrix}1&-b/a\\0&1\end{pmatrix}$ of determinant $1$; and $q(Ux)=a(x_1-\frac ba x_2)^2+2b(x_1-\frac ba x_2)x_2+cx_2^2=a x_1^2+(c-\frac{b^2}a)x_2^2$, recomputed by expanding. Commit `55f8615ed6`.
+
+**`E-HK-102-11`, §10.2 Exercise 11, printed p. 373 — correct.** $L_f$ is an isomorphism because $f$ is non-degenerate and $V$ finite-dimensional; for fixed $\beta$ the functional $\alpha\mapsto f(T\alpha,\beta)$ is $f(\cdot,T'\beta)$ for a unique $T'\beta$, and $T'$ is linear and unique by non-degeneracy. The three identities follow from the defining relation and uniqueness: $(T_1T_2)'=T_2'T_1'$ and linearity by composing the relation, and $(T')'=T$ because symmetry makes $T$ an adjoint of $T'$. The card's extra step on the degenerate case is also correct — $\operatorname{im}L_f=R^0$, existence iff $T(R)\subseteq R$, non-uniqueness exactly modulo operators with image in $R$ — though it goes beyond what the exercise asks. Commit `e01c9566dd`.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, 1–3 and 1–4 with QED labels; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the identification $\operatorname{rank}f=\operatorname{rank}L_f$ and the induced-form argument in the degenerate step are used as the book states them.
+
+**What remains in the residue.** Three cards: `E-HK-103-5`, `E-HK-103-11` (§10.3) and `E-HK-104-5` (§10.4); `E-HK-104-11` was repaired in the provenance batch.
