@@ -62,6 +62,15 @@ audit:
 
     Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
     which Remark 6.4.1(d) is deferred and which is not read here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    One clause added to s1, no claim changed. Clifford's theorem applies to an effective divisor,
+    and the step went straight from "suppose 2H is special" to Clifford's bound. The step now says
+    why 2H is effective: H is very ample, so 2H is very ample, so h^0(X, 2H) > 0 and 2H is linearly
+    equivalent to an effective divisor. A review of this card noted the gap as implicit; it is now
+    stated.
 ---
 
 ::: {.problem}
@@ -102,8 +111,9 @@ $$
 h^0(X,2H)=18+1-11=8.
 $$
 
-Suppose instead that $2H$ is special.  By [[T-CRVCLIFF|Clifford's
-theorem]],
+Suppose instead that $2H$ is special.  The divisor $2H$ is effective: $H$ is
+very ample, so $2H$ is very ample, so $h^0(X,2H)>0$ and $2H$ is linearly
+equivalent to an effective divisor.  By [[T-CRVCLIFF|Clifford's theorem]],
 $$
 h^0(X,2H)\le\frac{18}{2}+1=10.
 $$
