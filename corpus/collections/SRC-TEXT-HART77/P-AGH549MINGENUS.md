@@ -329,6 +329,57 @@ audit:
     Bourbaki's Theorem 5.1 with the hypotheses verified on the card; and the
     printed pages of Hartshorne's book were not re-read, only its text
     version.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Completes the source-checked event above of this date, which is left as
+    written. The printed Lemma 2.6 is inconsistent beyond its item (1): exact
+    maximisation of sum alpha_i^2 over conditions (3) and (4) of Lemma 2.2 gives
+    5t^2/4 for t <= d/3, 5(d-3t/2)^2/9 for d/3 <= t <= 4d/9,
+    t^2/4+(d-2t)^2 for 4d/9 <= t <= d/2, and (d-3t/2)^2 for
+    d/2 <= t <= 2d/3. The printed item (1) is half the first, items (2) and (4)
+    are the next two unhalved, and item (3) prints (d-t)^2 where the maximum
+    has (d-2t)^2; at t = d/3 items (1) and (2) differ by a factor 2. None of
+    this touches the card, which uses neither M_d, m_d nor Lemma 2.6. Checked
+    by exact vertex enumeration for every even d at most 60 and every
+    1 <= t <= 2d/3, and by the displayed inequalities; not checked beyond that
+    range.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repairs five defects found by an independent audit of the solution-reviewed
+    event above of this date, which is left as written. In step
+    equality-members-exist the inference "dimension at least two since M^2>0"
+    is replaced by the two computations h^0(M_ev)=3(s-1) and
+    h^0(M_odd)>=chi(M_odd)=3s+2 via h^2=0. In step almost-very-ample the
+    product-jet argument is replaced by the V+W case analysis, the citation
+    V.4.12 becomes Lemma V.4.12 (II. Ex. 7.5), and "both differentials" is
+    qualified as on Y for M_ev and on X_2 for M_odd. In step
+    contraction-preserves-invariants Castelnuovo's criterion V.5.7 is cited. In
+    step repeat-contraction the del Pezzo degree and uniqueness (V.4.7,
+    Remark V.4.7.1) are stated and the positivity conclusion is placed at every
+    surface of the process, in particular X_2. In step
+    d-squared-bound-r-geq-3 ampleness of -K_{X_r} is cited to Corollary V.4.7.
+    Two unsupported sentences are deleted: the claim that V.4.8 is proved for
+    X_2 in even-equality-realized, and the alternative "in characteristic zero
+    the lemma of V.4.8 gives one as well" in odd-equality-realized. The remark
+    gains the parity reason in the r=2 paragraph and the Lemma 2.6
+    qualification, and loses the false statement that Bourbaki Section 1's
+    criterion is used by the contraction and equality steps. No statement,
+    hypothesis, bound or equality class changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read the repaired steps. Checked the new h^0 computations, the sign
+    (K_{X_2}-M_odd).(-K_{X_2}) = -(2s+10), the V+W jet case analysis at the
+    three kinds of points, the del Pezzo degree argument, and the two citations
+    (Corollary V.4.7, Lemma V.4.12). The proof now closes the gap the earlier
+    event of this date missed. Not checked: no Sage or Lean computation; the
+    characteristic-p attainment is unchanged; the source pages are those of the
+    earlier events.
 ---
 
 ::: {.problem}
@@ -392,11 +443,12 @@ the curve.
 
 ::: pf-proof
 Because $C$ and $E$ are distinct irreducible curves with intersection zero,
-they are disjoint. Contract
+they are disjoint. By Castelnuovo's criterion (V.5.7), the $(-1)$-curve $E$ can
+be contracted; let
 $$
 \sigma:X_r\longrightarrow X_{r-1}
 $$
-with exceptional curve $E$. Then
+be the contraction with exceptional curve $E$. Then
 $$
 D=\sigma^*D'
 $$
@@ -423,7 +475,7 @@ Thus the anticanonical degree $d$ is unchanged as well.
 
 ::: {.pf-step #repeat-contraction-until-x2-or-positive}
 Repeat step [](#contraction-preserves-invariants){.pf-ref} while a zero-intersection line exists. The process
-either reaches $X_2$, or stops on some $X_r$ with $r\ge3$ at a class,
+either reaches a surface isomorphic to $X_2$, or stops on some $X_r$ with $r\ge3$ at a class,
 still denoted $D$, satisfying
 $$
 D\cdot E>0
@@ -431,11 +483,16 @@ $$
 for every $(-1)$-curve $E$.
 
 ::: pf-proof
-Each contraction lowers the Picard number by one, so the process stops after
-finitely many steps, on some $X_s$ with $0\le s\le6$. If $s\le2$, then $X_2$
-occurs among the surfaces $X_6,X_5,\ldots,X_s$ of the process; if $s\ge3$ the
-process stops on some $X_r$ with $r\ge3$. So exactly one of the two
-alternatives of the step holds. Step
+Each contraction lowers the Picard number by one and raises $K^2$ by one, so the
+process stops after finitely many steps, on a del Pezzo surface of degree
+$9-s$ with $0\le s\le6$. Every del Pezzo surface of degree at least $4$ is a
+blowup $\operatorname{Bl}_s\PP^2$ of the plane at $s$ points, except that in
+degree $8$ there is also $\PP^1\times\PP^1$ (V.4.7 and Remark V.4.7.1), and the
+del Pezzo surface of degree $7$ is $\operatorname{Bl}_2\PP^2$ up to isomorphism.
+Hence the chain either stops at one of the surfaces $X_6,X_5,X_4,X_3$, of degree
+at most $6$, or it reaches a surface isomorphic to $X_2$ when it reaches degree
+$7$ and may then continue to degree $8$ or $9$; in the first case the second
+alternative of the step holds, and in the second the first does. Step
 [](#contraction-preserves-invariants){.pf-ref} shows that $d,D^2,g$ are unchanged
 throughout.
 
@@ -462,8 +519,9 @@ strict transform of a line of $X_r$, and the intersection numbers of the
 descended class with the lines of the new surface are those of $D$ with the
 corresponding strict transforms. Since $D\cdot L\ge0$ for all $27$ lines of
 $X_6$ by step [](#case-c-applies){.pf-ref}, induction gives $D\cdot L\ge0$ for
-every line $L$ of the surface on which the process stops. On that surface no
-line has intersection zero, so all these intersections are positive.
+every line $L$ of every surface of the process, in particular of $X_2$. On a
+surface on which the process stops with $r\ge3$ no line has intersection zero,
+so all these intersections are positive.
 :::
 
 :::
@@ -483,6 +541,8 @@ A^2=9-r\le6,
 \qquad
 N=D-A=D+K_{X_r}.
 $$
+The class $A$ is ample: $-K_{X_r}$ is very ample by Corollary V.4.7, since
+$r\le6$.
 Step [](#contraction-preserves-invariants){.pf-ref} identifies $A$ with the pullback of the
 hyperplane class of the cubic surface, so $d=A\cdot D$ and $A\cdot N=d-A^2$.
 
@@ -1105,8 +1165,15 @@ the four points that step [](#contraction-pullback-preserves-invariants){.pf-ref
 
 ::: pf-proof
 Both classes are base-point-free, so the members through a prescribed point
-form a hyperplane of the linear system, and both systems have dimension at
-least two, since $M_{\mathrm{ev}}^2=4(s-2)>0$ and $M_{\mathrm{odd}}^2=4s-1>0$;
+form a hyperplane of the linear system. The two systems have dimension at least
+two: $M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2)$ has $h^0=3(s-1)$ and
+$\dim\linearsystem{M_{\mathrm{ev}}}=3s-4\ge8$, while
+$h^2(M_{\mathrm{odd}})=h^0(K_{X_2}-M_{\mathrm{odd}})=0$ because
+$(K_{X_2}-M_{\mathrm{odd}})\cdot(-K_{X_2})=-(2s+3)-7<0$ and $-K_{X_2}$ is ample,
+so Riemann--Roch gives
+$h^0(M_{\mathrm{odd}})\ge\chi(M_{\mathrm{odd}})
+=1+\frac12(M_{\mathrm{odd}}^2+2s+3)=3s+2$ and
+$\dim\linearsystem{M_{\mathrm{odd}}}\ge3s+1\ge16$;
 finitely many nonempty open conditions in a projective space have nonempty
 intersection, so it is enough to find one nonsingular irreducible member of
 each system and then to move it off the prescribed points.
@@ -1158,7 +1225,8 @@ $i>0$ (Bourbaki's exposé 592, §5, printed p. 312); on a surface it is the
 pair of conditions that the locus where the differential has rank at most one
 is of codimension at least one and the locus where it vanishes is of
 codimension at least two. A very ample system is almost very ample, and here
-both differentials are injective at every point, so every $\Sigma_i$ is empty
+both differentials are injective at every point --- on $Y$ for
+$\OO_Y(2,s-2)$, on $X_2$ for $M_{\mathrm{odd}}$ --- so every $\Sigma_i$ is empty
 and the condition holds.
 
 ::: pf-proof
@@ -1167,18 +1235,23 @@ $$\OO_Y(2,s-2)=\OO_Y(1,1)+\OO_Y(1,0)+(s-3)\OO_Y(0,1)$$
 with $s-3\ge0$: the hyperplane class $\OO_Y(1,1)$ of the embedding of $Y$ in
 $\PP^3$ is very ample, the two ruling classes are base-point-free, and a sum
 of a very ample class and base-point-free classes is very ample, the form in
-which the proof of V.4.12 uses this.
+which the proof of Lemma V.4.12 uses this (II. Ex. 7.5).
 
 For the second, write
 $$M_{\mathrm{odd}}=(h-e_1)+(s-1)(h-e_2)+h=A+B,$$
 where $A=\psi^*\OO_Y(1,s-1)$ and $B=h=\pi^*\OO_{\PP^2}(1)$ for the blowdown
 $\pi:X_2\to\PP^2$. Both are base-point-free, and the product of a section of
 $A$ and a section of $B$ is a section of $M_{\mathrm{odd}}$ whose $1$-jet at a
-point $x$ is $a(x)\,db_x+b(x)\,da_x$. Fixing $a$ with $a(x)\ne0$ and letting
-$b$ vary, the span of these jets contains every $1$-jet of $B$ at $x$, because
-$a(x)$ is invertible, and symmetrically it contains every $1$-jet of $A$ at
-$x$; so the $1$-jets of $H^0(M_{\mathrm{odd}})$ contain those of $A$ and of
-$B$.
+point $x$ is $a(x)\,db_x+b(x)\,da_x$. Let $V$ and $W$ be the spans of the
+$1$-jets at $x$ of $A$ and of $B$. The product $ab$ has jet
+$a(x)\beta+b(x)\alpha$ for $\alpha\in V$, $\beta\in W$. If either span is
+two-dimensional it is the whole cotangent space; if both are one-dimensional
+and distinct, a product with $a(x)b(x)\ne0$ is a nonzero combination of two
+independent forms; and if they coincide, the products with $a(x)b(x)\ne0$ give
+that line. Hence the $1$-jets of $H^0(M_{\mathrm{odd}})$ span the cotangent
+space at every point: off $F_{12}$ or off $e_1\cup e_2$ because one of the two
+spans is two-dimensional, and at a point of $F_{12}\cap e_i$ because the two
+one-dimensional spans are distinct.
 
 Now $A$ is the pullback of a very ample class along a morphism that is an
 isomorphism away from $F_{12}$, so its jets span the cotangent space at every
@@ -1258,9 +1331,7 @@ step [](#contraction-pullback-preserves-invariants){.pf-ref}, and its pullback t
 Step [](#equality-members-exist){.pf-ref} supplies such a member in every characteristic, through the
 descent $M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2)$ of step [](#quadric-model){.pf-ref}, the very ampleness of that
 class in step [](#almost-very-ample){.pf-ref}, the connectedness of its members in step [](#members-connected){.pf-ref} and
-the smoothness theorem of step [](#members-smooth){.pf-ref}. In characteristic zero the same conclusion follows
-from the lemma of V.4.8, which is proved for $X_2$ by exhibiting classes of
-this form. Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls the curve back to a nonsingular
+the smoothness theorem of step [](#members-smooth){.pf-ref}. Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls the curve back to a nonsingular
 irreducible curve on the cubic surface, of degree $d$ and genus
 $$\frac{d-6}{2},$$
 the degree and genus of the class by step [](#even-equality-class){.pf-ref}.
@@ -1279,8 +1350,7 @@ is a nonnegative integral combination of $h,h-e_1,h-e_2$, and its square is
 positive by step [](#odd-equality-class){.pf-ref}. Step [](#equality-members-exist){.pf-ref} supplies a
 nonsingular irreducible member in every characteristic, through the
 immersiveness of the system in step [](#almost-very-ample){.pf-ref}, the ampleness of $M_{\mathrm{odd}}$ in
-step [](#members-connected){.pf-ref} and the smoothness theorem of step [](#members-smooth){.pf-ref}; in
-characteristic zero the lemma of V.4.8 gives one as well. Step
+step [](#members-connected){.pf-ref} and the smoothness theorem of step [](#members-smooth){.pf-ref}. Step
 [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls the curve back to a nonsingular irreducible curve
 on the cubic surface, of degree $d$ and genus
 $$\frac{d-5}{2},$$
@@ -1299,13 +1369,13 @@ for every odd $d\ge13$.
 :::
 
 ::: {.remark title="Published solution"}
-The published proof is [@GP82], read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case. The $M_d(r)$ that the proof uses is the maximum of $\frac12\sum_2^6\alpha_i^2$: the definition on printed p. 409 prints the sum without the factor, but the genus formula on printed p. 407 is $g=F_d(r)-\frac12\sum_2^6\alpha_i^2$ and the proof of Proposition 2.1 there sets $2\eta=\sum_2^6\alpha_i^2$ with $\eta=F_d(r)-g$, while Lemma 2.6(1) gives $m_d(t)=5t^2/8$, half of the maximum $5t^2/4$ of the sum over five $\alpha_i\le t/2$; the factor is therefore forced, its absence is the print's, and no statement above uses $M_d$.
+The published proof is [@GP82], read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case. The $M_d(r)$ that the proof uses is the maximum of $\frac12\sum_2^6\alpha_i^2$: the definition on printed p. 409 prints the sum without the factor, but the genus formula on printed p. 407 is $g=F_d(r)-\frac12\sum_2^6\alpha_i^2$ and the proof of Proposition 2.1 there sets $2\eta=\sum_2^6\alpha_i^2$ with $\eta=F_d(r)-g$, while Lemma 2.6(1) gives $m_d(t)=5t^2/8$, half of the maximum $5t^2/4$ of the sum over five $\alpha_i\le t/2$; the factor is therefore forced, its absence is the print's, and no statement above uses $M_d$. The printed Lemma 2.6 is inconsistent for the same reason: its item (1) is in the halved normalization, items (2) and (4) are in the unhalved one, and item (3) is misprinted; no statement above uses any of them.
 
-Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$ as a sum of five squares drawn from $\{0,4\}$, so $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. The arithmetic of these six assignments --- the squared sums and the identity $\sum x_i^2=8(F_d(2)-g)$ for $d=2m$ and $d=2m+1$ --- is certified exactly in [the certificate script](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage), whose recorded run, with the interpreter, the source revision and the timings, is [its recorded output](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.out); there the rejected $(2,2,0,0,0)$ has squared sum $8$, which is $8(F_d(2)-g)$ at $g=(d-3)/2$ and not at the minimum, while the minimum $(d-5)/2$ is where $8(F_d(2)-g)$ equals the squared sum $16$ of $(2,2,2,2,0)$. That certificate covers this arithmetic and no more: the squared-sum condition is one hypothesis of (2.1) and of (2.5), it proves neither statement, and it says nothing about the existence of a curve, about the lower bound, or about the classification. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
+Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$; this is divisible by $4$, while five odd squares sum to $5$, so the five integers are even and each square is $0$ or $4$. Hence $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. The arithmetic of these six assignments --- the squared sums and the identity $\sum x_i^2=8(F_d(2)-g)$ for $d=2m$ and $d=2m+1$ --- is certified exactly in [the certificate script](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage), whose recorded run, with the interpreter, the source revision and the timings, is [its recorded output](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.out); there the rejected $(2,2,0,0,0)$ has squared sum $8$, which is $8(F_d(2)-g)$ at $g=(d-3)/2$ and not at the minimum, while the minimum $(d-5)/2$ is where $8(F_d(2)-g)$ equals the squared sum $16$ of $(2,2,2,2,0)$. That certificate covers this arithmetic and no more: the squared-sum condition is one hypothesis of (2.1) and of (2.5), it proves neither statement, and it says nothing about the existence of a curve, about the lower bound, or about the classification. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
 
-The Bourbaki exposé [@Har82], text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, which is what step [](#contraction-pullback-preserves-invariants){.pf-ref} and the equality constructions use; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1 (printed p. 312), which produces reduced nonsingular members of a system that is almost very ample --- the locus where the differential of the associated morphism has kernel of dimension at least $i$ being of codimension at least $i$, for every $i>0$ --- and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; it is proved in the corpus at [[P-AGH541CONICSQUADRIC]], which the quadric-model step of the proof above cites, and the exceptional curve and the two rulings are derived from it there and on this card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
+The Bourbaki exposé [@Har82], text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne's Lemma V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, a criterion the proof above does not invoke, since it uses the explicit classes on $X_2$ and Theorem 5.1 instead; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1 (printed p. 312), which produces reduced nonsingular members of a system that is almost very ample --- the locus where the differential of the associated morphism has kernel of dimension at least $i$ being of codimension at least $i$, for every $i>0$ --- and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; it is proved in the corpus at [[P-AGH541CONICSQUADRIC]], which the quadric-model step of the proof above cites, and the exceptional curve and the two rulings are derived from it there and on this card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
 
-The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, applies Ex. V.4.8 on $X_r$ for $r\ge3$ and on $X_2$, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
+The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, uses Ex. V.4.8 once, on $X_6$, for the case (c) alternatives, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.9, printed p. 290, is a working draft and not a proof: its lower-bound half is a chain of unattributed algebraic manipulations that does not close, and its existence half fixes $b_6^2=3$ and then applies the five-squares lemma of Bourbaki's Proposition 2.1 with $k=a$, which does not respect the degree $d=3a-\sum b_i$ that it is meant to realize.
 
