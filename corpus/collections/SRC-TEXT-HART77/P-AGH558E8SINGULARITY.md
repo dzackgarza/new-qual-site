@@ -268,6 +268,24 @@ audit:
     3 or 5. Not checked: whether the eight blowups are minimal, which no event
     above settled either; and Brieskorn's Satz 2.11 row by row, which this card
     does not cite.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A sentence of the solution-reviewed event above is corrected here rather
+    than rewritten in place. It said that the multiplicity of every exceptional
+    divisor in its total transform is 2 and that therefore every E_i^2 = -2.
+    The first clause is what was computed: every centre is a point of
+    multiplicity two. The inference is not valid as it stands, a blowup at a
+    singular point producing an exceptional curve whose self-intersection is
+    not fixed by the multiplicity alone. The self-intersections were computed
+    separately, from the equations div(x) times E_j = 0 with the orders of x
+    along the eight curves, 3, 5, 9, 6, 15, 10, 12 and 8, of which the first two
+    were read off the chart equations by hand, and with the strict transform of
+    the curve x=0 meeting only E_8; each of the eight equations then gives
+    E_j^2 = -2 and no other integral value is compatible with the incidences
+    found. Whether the eight blowups are minimal is still not settled here. No
+    step of the card changes.
 ---
 
 ::: {.problem}
