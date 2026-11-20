@@ -10290,8 +10290,9 @@ does not supply the provenances a separate sweep owes; and it runs no whole-corp
 CI's. The corpus-wide figure in the entry above falls by 117; whatever remains in residues 0, 1, 2,
 9--15 is still to be counted on the tree, not inferred from this entry.
 
-**Uncertainty.** Two of the fifteen source locators are the cards' own `source-checked` events
-(UCSD 290 F14 sheet 7; Justin sheet 4) rather than pages this session read, and the examinations of
-`P-OWBTK`, `P-5YLZS`, `P-OKDFC`, `P-ARTALG-JU03-8`, `P-JXIIG`, `P-QYKXK` and `P-ANJIW` are not in
-the checkout at all, so their statements are taken as the cards have them. The five Hoffman--Kunze
-and Munkres locators were read in the retained text at the printed page named.
+**Uncertainty.** Not every locator was re-read here. Read at the printed page in the retained text:
+Hoffman--Kunze §5.2 Exercise 8 on p. 149 and §6.4 Exercise 8 on p. 205. Taken from the card's own
+`source-checked` event and not re-read: the two Munkres pages (p. 236, p. 194), UCSD 290 F14 sheet 7
+and Justin sheet 4. The statements of `P-OWBTK`, `P-5YLZS`, `P-OKDFC`, `P-ARTALG-JU03-8`, `P-JXIIG`,
+`P-QYKXK` and `P-ANJIW` were not read against a printed examination paper here, and stand as the
+cards have them.
