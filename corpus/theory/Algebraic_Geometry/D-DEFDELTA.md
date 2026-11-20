@@ -47,5 +47,5 @@ If $\mca$ has enough injectives and $F$ is left exact, then $(R^iF)_{i\ge0}$ is 
 
 ::: {.remark}
 Two universal $\delta$-functors with isomorphic degree-$0$ functors are isomorphic.
-For $A$-modules $M,N$, the groups $\Ext^i_A(M,N)$ computed from a projective resolution of $M$ form, as functors of $N$, a $\delta$-functor with $\Ext^0_A(M,\wait)=\Hom_A(M,\wait)$ that vanishes on injective $N$ in positive degrees; so they are the right derived functors of $\Hom_A(M,\wait)$.
+For $A$-modules $M,N$, the groups $\Ext^i_A(M,N)$ computed from a projective resolution of $M$ form, as functors of $N$, a $\delta$-functor with $\Ext^0_A(M,-)=\Hom_A(M,-)$ that vanishes on injective $N$ in positive degrees; so they are the right derived functors of $\Hom_A(M,-)$.
 :::
