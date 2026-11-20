@@ -112,6 +112,20 @@ audit:
     document answering Appendix A, Problem 5 was found. This search located no published set
     answering this Problem, and none is retained in this repository. Not checked: whether such a set
     exists outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Appendix A*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 5 and checked against Appendix A, Problem 5: the modular transformation on the Farey arc
+    adjacent to each reduced fraction $h/k$, the transformed factor tending exponentially to $1$, the
+    Gaussian saddle integral evaluated as at the cusp, the sum over conjugate arcs giving the
+    hyperbolic sine, and the Kloosterman-type sums $A_k(n)$ in the final formula. It is an outline of
+    the printed derivation; the card's proof supplies the estimates it compresses. The set is not
+    retained in this checkout, so the citation names it as read at its source. Not checked: anything
+    in the published document outside its Problem 5.
 ---
 
 ::: {.exercise}
@@ -144,7 +158,7 @@ Below, (i) is proved (Theorem 2), with the corrections to the printed statement 
 forces; (ii) is proved (Theorem 3), including the exact constant $1/(2\pi\sqrt2)$ and the
 $q$-dependence; (iii) is *not* proved, neither here nor in the book — the last section lists
 precisely what is missing. So the block is complete for (i) and (ii) and explicitly incomplete
-for (iii). The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, and the published set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Appendix A Problems, so the two theorems below rest only on the three numbered facts of the book quoted next and on the citations named in the steps.
+for (iii). A published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 5), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, which is not retained in this checkout and was read at its source. Checked against Appendix A, Problem 5, it takes the printed route: the modular transformation on the Farey arc adjacent to each reduced fraction $h/k$, the transformed factor tending exponentially to $1$, the Gaussian saddle integral evaluated as at the cusp, the sum over conjugate arcs producing the hyperbolic sine, and the Kloosterman-type sums $A_k(n)$ in the final formula. The argument below follows the printed derivation and supplies the estimates the published text compresses; the two theorems below rest only on the three numbered facts of the book quoted next and on the citations named in the steps.
 
 ::: pf
 
