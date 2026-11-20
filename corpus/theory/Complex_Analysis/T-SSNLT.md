@@ -24,4 +24,6 @@ $$
 $$
 
 ![A circular arc of radius epsilon about a, traversed counterclockwise from angle alpha to angle beta; as epsilon tends to 0 the integral over it tends to (beta - alpha) i times the residue of f at a.](../../assets/figures/2021-12-22_05-13-02.png)
+
+This is item 27 of §3 of Robert Won, *Complex Analysis Qual Sheet* (`assets/attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf`): for a simple pole $z_0$ of $f$ and an arc $C_R$ of $\{\abs{z-z_0}=R\}$ of angle $\theta$, the integral over $C_R$ tends to $\theta i\Res_{z=z_0}f$ as its radius tends to $0$. The arc above is that arc with radius $\varepsilon$ and angle $\beta-\alpha$.
 :::
