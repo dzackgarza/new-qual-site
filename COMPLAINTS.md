@@ -1011,6 +1011,19 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
    Remaining unread in this item's set: §4.3 (24) --- 33 proofs overall, of which §4.2's eight belong to
    the other chat.
+   **2026-11-21, §4.3 finished and re-cited by numbered statement.** All twenty-four cards of `4-3/` carry a
+   structured proof, and six of them --- `E-HAT-4.3-2`, `-9`, `-16`, `-18`, `-21`, `-22` --- were converted from
+   prose to numbered steps in this lane; the rest were already read and repaired on 2026-11-19. The
+   mathematics the lane settled beyond the read: `E-HAT-4.3-1` decides the coefficient ring (over a field the
+   `Ext` term vanishes, so trivial homology forces trivial cohomology, while the map of the exercise is nonzero
+   on `H_2(-;F_2)`) and proves, rather than quotes, that no splitting of the universal coefficient sequence is
+   natural, from the vanishing of both outer maps; `E-HAT-4.3-21` derives the Postnikov product comparison from
+   Example 4.16 and Lemma 4.7 instead of assuming functoriality, and proves `X -> P_nX` an H-map; `E-HAT-4.3-22`
+   separates the two directions and drops the false claim that a fibration over a CW base has total space of CW
+   type, which fails for `B x Q -> B`. Every card of the lane now cites by chapter, section and numbered
+   statement; where an earlier dated event records a page locator that event is left as written under QUAL-11
+   and a 2026-11-21 event supersedes it. The register line above, that §4.3 is unread, is superseded by this
+   paragraph.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
