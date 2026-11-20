@@ -39,6 +39,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-20: eleven exercise cards said the book itself was not retained, and it is
+
+- **Object and need:** `SRC-TEXT-SS03`. Eleven exercise cards carried, as the first sentence of the solution, "no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed." The first half of that sentence is false on this tree: the book is retained at `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` and has been read from there all through this round.
+
+- **Observed evidence:** the identical sentence on `E-SS2.EX-7`, `E-SS2.EX-13`, `E-SS3.EX-13`, `E-SS4.EX-7`, `E-SS5.EX-7`, `E-SS5.EX-13`, `E-SS6.EX-7`, `E-SS6.EX-13`, `E-SS8.EX-13`, `E-SS9.EX-7` and `E-SS10.EX-7`, each in the solution's opening paragraph. It dates from a pass in which the book was not yet in the checkout and `tmp/sources` was how sources were held; both facts changed and the sentence did not.
+
+- **Impact and owner:** a reader checking a card is told the book is absent when it is present and one link away, which is the kind of provenance claim that stops a reader from checking the mathematics. The second half, "no published solution set ... is retained", remains true as written (retention, not existence), so only the first half was corrected.
+
+- **Uncertainty:** the corrected sentence says the book is retained and that no solution set is retained, both checked on this tree; it does not claim that no published solution set exists, which this round's searches showed to be false for these chapters (`wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions` covers the Exercises as well as the Problems).
+
+- **Repair:** the sentence now reads "the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained". One commit per card: `1f98db21a9`, `ee415a27dc`, `de215e95c1`, `23193acfe0`, `fe00e45332`, `019fc8bb61`, `f97002f5c6`, `53f22d5ad8`, `7c5e7268fa`, `17eb7d729c`, `a61af43c03`. Dated audit events carrying the same false clause were left as written (QUAL-11).
+
 ## 2026-11-20: #172 item (5) — the one located published solution of a Stein--Shakarchi Problem is a course sheet behind a human check, named here for its text version
 
 - **Object and need:** `SRC-TEXT-SS03` and issue #172's transcription clause: where a published solution set covers a changed end-of-chapter *Problem*, the card transcribes it and checks it against the book. Eleven cards now record the search that found none they could transcribe (`E-SS2.PR-2`, `E-SS3.PR-3`, `E-SS4.PR-1`, `E-SS4.PR-4`, `E-SS7.PR-3`, `E-SS8.PR-3`, `E-SS8.PR-7`, `E-SS9.PR-4`, `E-SSA.PR-2`, `E-SSA.PR-4`, `E-SSA.PR-5`). The clause stays NOT MET while the one candidate that does answer a Problem cannot be read, so this record names that candidate exactly, and the parts of it that matter, so that someone with a browser can make the text version the repository would then transcribe.
