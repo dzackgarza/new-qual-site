@@ -27,7 +27,7 @@ Let $X$ be a normed vector space.
 
 (b) Define what it means for $L$ to be *bounded* and show $L$ is bounded $\iff L$ is continuous.
 
-(c) Prove that $(\dualof{X}, \norm{\wait}_{\operatorname{op}})$ is a Banach space.
+(c) Prove that $(\dualof{X}, \norm{\cdot}_{\operatorname{op}})$ is a Banach space.
 :::
 
 ::: {.solution}
@@ -86,13 +86,13 @@ Then $y_n = x_n/n \to 0$ while $\abs{L(y_n)} \ge 1$, contradicting continuity at
 
 ::: pf-step
 
-(c) $(X^*, \norm{\wait}_{\operatorname{op}})$ is a Banach space.
+(c) $(X^*, \norm{\cdot}_{\operatorname{op}})$ is a Banach space.
 
 ::: pf-proof
 
 ::: pf-step
 
-$\norm{\wait}_{\operatorname{op}}$ is a norm on $X^*$.
+$\norm{\cdot}_{\operatorname{op}}$ is a norm on $X^*$.
 
 ::: pf-proof
 
