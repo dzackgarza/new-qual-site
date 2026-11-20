@@ -278,7 +278,7 @@ The exercise's own notion is the one Hartshorne states just before (I, 5.6.1), w
 Two reduced plane curve singularities are topologically equivalent if and only if they have the same system of multiplicity sequences. Hence analytically isomorphic plane curve singularities have the same system of multiplicity sequences.
 
 ::: pf-proof
-This is Greuel--Lossen--Shustin, Theorem 3.42, a result they attribute to Brauner and Zariski. The system of multiplicity sequences is defined earlier on printed p. 215: for an irreducible germ it is the sequence
+This is Greuel--Lossen--Shustin, Theorem 3.42, a result they attribute to Brauner and Zariski. The system of multiplicity sequences is defined in the paragraph headed "System of Multiplicity Sequences" that precedes Proposition 3.41: for an irreducible germ it is the sequence
 $$
 (m_0,m_1,\ldots,m_{n-1}),\qquad m_0=\mu_0(C),\quad m_i=\mu_{q^{(i)}}(C^{(i)}),
 $$
@@ -291,7 +291,7 @@ where $q^{(i)}$ is the unique point in which the $i$-th strict transform meets t
 The system of multiplicity sequences is determined by, and determines, the characteristic exponents of the branches together with their pairwise intersection numbers.
 
 ::: pf-proof
-This is Greuel--Lossen--Shustin, Proposition 3.41, whose induction step is that the characteristic exponents of a blown-up branch, and its intersection number with the exceptional curve, are determined by the characteristic exponents of the branch; the partitions are determined by the pairwise intersection numbers by Proposition 3.21 of the same book, and conversely. The source lists on printed p. 216 the resolution graph, the Puiseux pairs with the pairwise intersection numbers, the characteristic exponents with those numbers, and the iterated torus knots as further data equivalent to the system of multiplicity sequences, and proves the equivalence only for the Puiseux pairs and the characteristic exponents, Proposition 3.41 being that proof.
+This is Greuel--Lossen--Shustin, Proposition 3.41, whose induction step is that the characteristic exponents of a blown-up branch, and its intersection number with the exceptional curve, are determined by the characteristic exponents of the branch; the partitions are determined by the pairwise intersection numbers by Proposition 3.21 of the same book, and conversely. The paragraph preceding Proposition 3.41 that begins "There are many data equivalent to the system of multiplicity sequences" lists the resolution graph, the Puiseux pairs with the pairwise intersection numbers, the characteristic exponents with those numbers, and the iterated torus knots as further data equivalent to the system of multiplicity sequences, and proves the equivalence only for the Puiseux pairs and the characteristic exponents, Proposition 3.41 being that proof.
 :::
 
 :::
@@ -664,9 +664,9 @@ isomorphic, proving that the converse fails.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, with the definition of equivalence in (3.9.4) on printed p. 393 and of analytic isomorphism before (I, 5.6.1) on printed p. 34.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.6, with the definition of equivalence in (3.9.4) and of analytic isomorphism before (I, 5.6.1).
 
-Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), carries the frame of both halves. Definition 3.30, states analytic and topological equivalence of a germ side by side; Theorem 3.42, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined on printed p. 215; Proposition 3.41, identifies that data with the characteristic exponents of the branches and their pairwise intersection numbers. Example 3.43.1(a), gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, records that the Tjurina number is an analytic invariant.
+Greuel, Lossen and Shustin, *Introduction to Singularities and Deformations* (2007), carries the frame of both halves. Definition 3.30, states analytic and topological equivalence of a germ side by side; Theorem 3.42, is the theorem of Brauner and Zariski that the topological type of a reduced plane curve singularity is determined by, and determines, the system of multiplicity sequences defined before Proposition 3.41; Proposition 3.41, identifies that data with the characteristic exponents of the branches and their pairwise intersection numbers. Example 3.43.1(a), gives the pair $y^3-x^7$ and $y^3+x^5y-x^7$, which have the same multiplicity sequence $3\longrightarrow3\longrightarrow1\longrightarrow1\longrightarrow1$ and are not analytically equivalent, the printed Singular output being $\tau=12$ for the first and $\tau=11$ for the second; Remark 3.43.3, records that the Tjurina number is an analytic invariant.
 
 Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.3.6, gives the forward implication through completion: the strict transform's local ring splits over the points of the exceptional curve, completion commutes with that splitting, and so the completed local ring determines the resolution. He then states that $y^3+x^7$ and $y^3+x^5y+x^7$ are equivalent and not analytically isomorphic, without computing either. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.6, cites Wall, *Singular Points of Plane Curves*, for both halves and states the same pair; Wall's criterion there is that equisingularity of plane branches is equivalent to equality of Puiseux characteristics.
 :::
