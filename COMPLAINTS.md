@@ -10843,3 +10843,15 @@ and not only against the book.
 date. `tmp/lam.sh` on `E-HAT-4.2-6` after the repair: four steps numbered, QED labels present; the first
 attempt inserted a second `pf-proof` block inside the same step and was corrected before committing. No
 whole-corpus gate in this turn.
+
+## 2026-11-20: two section headings on the number-theory page were empty, and the topics behind them have no card
+
+**Object and need:** `wiki/algebra/rings-and-ideals/number-theory.md` ended with the headings "Norms in number fields" and "Primes in arithmetic progressions" and nothing under either, and `wiki/algebra/rings-and-ideals/index.md` described the page as covering "norms in number fields".
+
+**Observed evidence:** the page's body stopped at the heading, and `SEC-1` says a section that contains no fenced logical unit has no content, so a heading with nothing under it is not a section. The corpus has no card to hang under either heading: no theory card in `corpus/theory/Algebra/` is titled or states the norm of an element of a number field, and no algebra card states Dirichlet's theorem or any statement about primes in an arithmetic progression — the only card in the corpus on primes in progressions is `E-SS7.PR-4`, an exercise of a complex-analysis collection.
+
+**Impact and owner:** the two headings are removed (commit follows), and the chapter-index gloss now names what the page holds — the unit group modulo $n$, Euler's totient function, and the theorems of Euler and Fermat. The two topics are unwritten: filling them needs a definition card for the norm in a number field and a card for primes in an arithmetic progression, neither of which this lane could source from a retained text by numbered statement.
+
+**Uncertainty:** the retained texts were searched, not exhausted. Hungerford's *Algebra* is extracted to `tmp/sources/hungerford-1974-algebra.md` and a search for a numbered definition or theorem of the norm of an element finds none; Bourbaki's chapter 9 has no arithmetic-progression statement. The `SRC-TEXT-SS03` cards are the analytic treatment and are filed under complex analysis, so they do not carry the algebra page's claim.
+
+**Repair:** the two headings and the index gloss, in the commit that carries this record. No card was created, and no statement is made on the page about the two topics.

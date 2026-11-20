@@ -30,7 +30,3 @@ The group $(\ZZ/n)^\times$ is what makes the two congruences below instances of 
 [[P-BXBHJ]]
 
 [[P-G2KO6]]
-
-## Norms in number fields
-
-## Primes in arithmetic progressions
