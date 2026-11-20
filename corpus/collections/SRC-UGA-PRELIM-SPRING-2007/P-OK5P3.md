@@ -23,6 +23,17 @@ audit:
   date: 2026-10-31
   note: The paper (page render) sends the arc from (2,0) to (0,-2), not (0,2); statement and solution
     now follow the three-quarter disk.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two steps asserted their claim with no justification; each now carries a pf-proof. One identifies the
+    integrand's $P$ and $Q$ and differentiates them, which is where the constant $1$ comes from; the
+    other states the hypotheses of Green's theorem on this path: positively oriented piecewise-smooth
+    boundary of $D$, with continuous partials on an open set containing $D$. The value $3\pi$ is
+    unchanged: three quarters of a disk of radius $2$ has area $3\pi$. The collection retains only the
+    exam paper, `assets/attachments/grad_prelim_Spring07.pdf`, and no solution sheet, so the argument is
+    the card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -51,7 +62,7 @@ The circular arc runs counterclockwise from $(2,0)$ through $(0,2)$ and $(-2,0)$
 
 :::
 
-::: pf-step
+::: {.pf-step #integrand}
 Write the integrand as
 $$
 P\,dx+Q\,dy
@@ -63,6 +74,11 @@ $$
 \frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=2-1=1.
 $$
 
+
+::: pf-proof
+Here $P(x,y) = y$ and $Q(x,y) = 2x$, so $\partial Q/\partial x = 2$ and $\partial P/\partial y = 1$, whose difference is the constant $1$; both partial derivatives are continuous on the plane, hence on an open set containing $D$.
+:::
+
 :::
 
 ::: {.pf-step #s3}
@@ -71,6 +87,11 @@ $$
 \int_\gamma y\,dx+2x\,dy
 =\iint_D 1\,dA.
 $$
+
+
+::: pf-proof
+The first step shows that $\gamma$ is the positively oriented boundary of the three-quarter disk $D$ and that it is piecewise smooth, and the second step shows that $P$ and $Q$ have continuous partial derivatives on an open set containing $D$; Green's theorem therefore applies and gives $\int_\gamma P\,dx + Q\,dy = \iint_D \left(\partial Q/\partial x - \partial P/\partial y\right) dA$, whose integrand is the constant $1$ computed in step [](#integrand){.pf-ref}.
+:::
 
 :::
 
