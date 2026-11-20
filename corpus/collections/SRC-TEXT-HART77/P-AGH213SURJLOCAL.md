@@ -81,6 +81,31 @@ audit:
     p. 1, and Cutrone--Marshburn, printed pp. 29--30, also carry the exercise;
     they were located in this pass but not read closely enough to be named on
     the card. Not checked: the printed copies of any of these sets.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Corrects the measurement in the 2026-11-19 event above, which says the
+    display "renders one arrow with exp above it, not the doubled arrow the
+    one-argument \surjectsvia produced". The page does render one arrow with exp
+    above it, but the doubled arrow was never on the page: pdftotext read the
+    text layer, where the macro body's second arrowhead,
+    {\mathrel{\mkern-16mu}\rightarrow}, laid over the first to restore a normal
+    head, prints as a second glyph whether or not the arguments are right. Four
+    spans were typeset afterwards, one per document, with the author's preamble
+    and each page read as an image. \surjectsvia{\exp}, the printed text, is
+    correct there, the preamble declaring the macro with one optional and one
+    mandatory argument, and is wrong against the macro the site ships, whose two
+    parameters are both mandatory because _macro_arity in tools/qualc/emit.py
+    reads them off the macro body: there exp goes below the arrow, a bare
+    opening parenthesis above it, and the parenthesised pair loses its bracket.
+    \surjectsvia{}{\exp} is the reverse, correct on the site and an unlabelled
+    arrow with exp spilled as text beside it under the preamble.
+    \xrightarrow{\ \exp\ } is correct under both, so the display is unchanged
+    from a7eb7ed9d4, and \surjectsvia is not to be written in corpus/ or wiki/,
+    no brace form satisfying both renderers. Not checked: the rendered page in a
+    browser, the site being built in CI, and MathJax itself, the site-side
+    column having been typeset as the macro vocabularies/macros.json defines it.
 ---
 
 

@@ -82,7 +82,6 @@
   "\\SF": "\\operatorname{SF}",
   "\\SL": "{\\operatorname{SL}}",
   "\\SO": "{\\operatorname{SO}}",
-  "\\SS": "{\\mathbb{S}}",
   "\\SU": "{\\operatorname{SU}}",
   "\\Sch": "{\\mathsf{Sch}}",
   "\\Sec": "\\operatorname{Sec}",
@@ -345,6 +344,5 @@
   "\\verticalequals": "\\Vert",
   "\\vol": "\\operatorname{vol}",
   "\\wait": "{-}",
-  "\\wedgeprod": "\\vee",
   "\\zar": "{\\mathrm{zar}}"
 }
