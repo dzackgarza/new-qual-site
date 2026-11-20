@@ -64,7 +64,7 @@ Show that if $A \supset D$, then $A \in \mathcal{D}$.
 :::
 
 ::: {.solution}
-Parts (a) and (b), the counterexample in (c) and the Hausdorff form of (c) are the argument of the retained published solution, Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, Problem Set 4, "Solution to Problem p235, \#1", PDF pp. 1--2 (`tmp/sources/munkres-solutions-zinger-mat530-ps4.pdf`); the sheet carries no printed page numbers, so the PDF page is the locator. The printed hypothesis of (c) is $T_1$, and as printed the assertion is false; step [](#part-c){.pf-ref} records the counterexample and proves the Hausdorff form.
+Parts (a) and (b), the counterexample in (c) and the Hausdorff form of (c) are the argument of the retained published solution, Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, Problem Set 4, "Solution to Exercise 1 of §37" (`tmp/sources/munkres-solutions-zinger-mat530-ps4.pdf`); the sheet carries no printed page numbers, so the PDF page is the locator. The printed hypothesis of (c) is $T_1$, and as printed the assertion is false; step [](#part-c){.pf-ref} records the counterexample and proves the Hausdorff form.
 
 ::: pf
 
@@ -131,7 +131,7 @@ Suppose $x\ne y$ both lie in the intersection. Hausdorffness gives disjoint neig
 (c) The $T_1$ hypothesis of the printed statement must be read as Hausdorff, and then the conclusion of (c) holds.
 
 ::: pf-proof
-The printed statement is refuted by step [](#t1-counterexample){.pf-ref}, while step [](#hausdorff-form){.pf-ref} proves the claim under the Hausdorff axiom, which is what the argument needs and which the first edition of the book printed. Parts (a) and (b) are steps [](#part-a){.pf-ref} and [](#part-b){.pf-ref}, so the exercise printed on p. 235 is answered as printed, with the counterexample that shows its part (c) false as stated.
+The printed statement is refuted by step [](#t1-counterexample){.pf-ref}, while step [](#hausdorff-form){.pf-ref} proves the claim under the Hausdorff axiom, which is what the argument needs and which the first edition of the book printed. Parts (a) and (b) are steps [](#part-a){.pf-ref} and [](#part-b){.pf-ref}, so the exercise printed is answered as printed, with the counterexample that shows its part (c) false as stated.
 :::
 
 :::

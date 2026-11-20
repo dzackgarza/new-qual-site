@@ -36,7 +36,7 @@ Show that the subspace $(a, b)$ of $\RR$ is homeomorphic with $(0, 1)$ and the s
 
 ::: {.solution}
 
-The maps and the argument are those of **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5, manual p. 181, PDF p. 184 (`tmp/sources/munkres-solutions-whitman.pdf`), including his observation on the degenerate case; the statement was checked against Munkres, *Topology* (2000), §18 Exercise 5. Both parts presuppose $a<b$: for $a=b$ the interval $(a,a)$ is empty and $[a,a]$ is a one-point space, so the statement as printed is understood with $a<b$, and the degenerate case is recorded in the last step below.
+The maps and the argument are those of **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5 (`tmp/sources/munkres-solutions-whitman.pdf`), including his observation on the degenerate case; the statement was checked against Munkres, *Topology* (2000), §18 Exercise 5. Both parts presuppose $a<b$: for $a=b$ the interval $(a,a)$ is empty and $[a,a]$ is a one-point space, so the statement as printed is understood with $a<b$, and the degenerate case is recorded in the last step below.
 
 ::: pf
 

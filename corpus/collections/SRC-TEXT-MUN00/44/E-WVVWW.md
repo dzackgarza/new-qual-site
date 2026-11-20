@@ -70,7 +70,7 @@ Show there is a continuous surjective map $f: \RR \to \RR^n$.
 :::
 
 ::: {.solution}
-The argument is transcribed from the retained solution of Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, Problem Set 7, "Solution to Problem p274, #2", PDF p. 2 (`tmp/sources/munkres-solutions-zinger-mat530-ps7.pdf`), which builds a continuous surjection of $[2m-1,2m]$ onto $[-m,m]^{n}$ for each $m$, pastes these, and extends to $\RR$. Its one input from the book is the space-filling curve of §44: by [[E-SADP0]], which is Exercise 44.1 obtained from Theorem 44.1, the cube $I^{n}$ is a continuous image of $I$. Where the card departs from Zinger: he extends by Tietze's theorem applied to the coordinates of the pasted map, and the card states that theorem by number, and it records his remark that the extension may be taken linear over each gap and constant on $(-\infty,1]$.
+The argument is transcribed from the retained solution of Aleksey Zinger, *MAT 530: Topology & Geometry, I*, Fall 2005, Problem Set 7, "Solution to Exercise 2 of §44" (`tmp/sources/munkres-solutions-zinger-mat530-ps7.pdf`), which builds a continuous surjection of $[2m-1,2m]$ onto $[-m,m]^{n}$ for each $m$, pastes these, and extends to $\RR$. Its one input from the book is the space-filling curve of §44: by [[E-SADP0]], which is Exercise 44.1 obtained from Theorem 44.1, the cube $I^{n}$ is a continuous image of $I$. Where the card departs from Zinger: he extends by Tietze's theorem applied to the coordinates of the pasted map, and the card states that theorem by number, and it records his remark that the extension may be taken linear over each gap and constant on $(-\infty,1]$.
 
 ::: pf
 

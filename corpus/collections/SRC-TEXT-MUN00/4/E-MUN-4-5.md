@@ -67,7 +67,7 @@ Prove the following properties of $\ZZ$ and $\ZZ_{+}$ :
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.5** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) and (c) follow the book's hints as he does, and (d) is his inductive set $X_c$ below.
 
-Throughout, $\ZZ_+$ is the set of positive integers, inductive means a subset of $\RR$ containing $1$ and closed under $x\mapsto x+1$, so by the principle of induction $\ZZ_+$ is contained in every inductive set (definition and principle (2), printed p. 32; the exercise is on printed p. 35).
+Throughout, $\ZZ_+$ is the set of positive integers, inductive means a subset of $\RR$ containing $1$ and closed under $x\mapsto x+1$, so by the principle of induction $\ZZ_+$ is contained in every inductive set (definition and principle (2); the exercise is).
 
 ::: pf
 
