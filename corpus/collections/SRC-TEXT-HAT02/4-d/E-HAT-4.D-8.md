@@ -52,6 +52,16 @@ audit:
     H~^{n+i}(Sigma^n B_+;R)$, splits $Sigma^n B_+ = Sigma^n B v S^n$, and gives the reduced form for
     $i >= 1$ together with the $i = 0$ case. Not claimed: any statement for a non-product bundle,
     or the Gysin sequence.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.D Exercise 8, Corollary 4D.9,
+    Theorem 4D.10 and the reduced cross product of §3.2. Correct: the disk bundle of the sphere bundle
+    S^n -> E -> B has Thom class the suspension of a generator, the Thom isomorphism gives the shift
+    by n in cohomology, and the homology analogue at the end is marked as the card's addition rather
+    than as part of the printed exercise. Two page locators in the opening paragraph replaced by
+    Corollary 4D.9; no mathematics changed.
 ---
 
 ::: {.problem}
@@ -59,7 +69,7 @@ If $E$ is the product bundle $B \times D^n$ with $B$ a CW complex, show that the
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.D Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.D Exercise 8, against the Thom isomorphism theorem of pp. 441--442 and against the reduced cross product of Section 3.2. The printed exercise asks for the cohomology statement $\tilde H^i(B;R)\approx\tilde H^{n+i}(\Sigma^nB;R)$; the homology analogue at the end is additional and is marked as such.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.D Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.D Exercise 8, against the Thom isomorphism theorem of Section 4.D, Corollary 4D.9, and against the reduced cross product of Section 3.2. The printed exercise asks for the cohomology statement $\tilde H^i(B;R)\approx\tilde H^{n+i}(\Sigma^nB;R)$; the homology analogue at the end is additional and is marked as such.
 
 ::: pf
 
