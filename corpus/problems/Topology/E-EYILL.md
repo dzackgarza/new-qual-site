@@ -50,7 +50,7 @@ $f\homotopic a$.
 
 ::: pf-proof
 
-By step [](#nonzero){.pf-ref}, $G(t,x)=H(t,x)/\norm{H(t,x)}$ is a continuous map $[0,1]\times S^n\to S^n$ with $G(0,\wait)=f$ and $G(1,\wait)=a$.
+By step [](#nonzero){.pf-ref}, $G(t,x)=H(t,x)/\norm{H(t,x)}$ is a continuous map $[0,1]\times S^n\to S^n$ with $G(0,-)=f$ and $G(1,-)=a$.
 
 :::
 
