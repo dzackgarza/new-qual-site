@@ -37,7 +37,7 @@ Prove that a graded commutative ring $A=\oplus_{n=0}^{\infty} A_n$ is Noetherian
 
 ::: {.solution}
 
-The problem is Problem 3 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both directions: one from $A$ being a quotient of $A_0[x_1,\dots,x_r]$, the other from the finite generation of $A_+$ by homogeneous elements
+The problem is Problem 3 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both directions: one from $A$ being a quotient of $A_0[x_1,\dots,x_r]$, the other from the finite generation of $A_+$ by homogeneous elements
 
 ::: pf
 

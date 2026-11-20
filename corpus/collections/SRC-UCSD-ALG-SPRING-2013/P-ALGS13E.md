@@ -48,7 +48,7 @@ Let us assume $m$ is the order of $g$, i.e. $g^{m'} \neq 1$ for $0 < m' < m$.
 
 ::: {.solution}
 
-The problem is Problem 5 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the minimal polynomial divides $x^m-1$, which has distinct roots over $\CC$, so $g$ is diagonalizable, and (b) the eigenvalues are roots of unity algebraic of degree at most $n$ over $\QQ$, so their orders satisfy $\varphi(d)\le n$ and the order of $g$ is bounded in terms of $n$ alone
+The problem is Problem 5 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the minimal polynomial divides $x^m-1$, which has distinct roots over $\CC$, so $g$ is diagonalizable, and (b) the eigenvalues are roots of unity algebraic of degree at most $n$ over $\QQ$, so their orders satisfy $\varphi(d)\le n$ and the order of $g$ is bounded in terms of $n$ alone
 
 **Part (a).**
 

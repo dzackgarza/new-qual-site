@@ -52,7 +52,7 @@ Show that the Galois group $\Gal(\overline{\FF_p}/\FF_p)$ has no nontrivial fini
 :::
 
 ::: {.solution}
-Throughout $p$ is prime, $\overline{\FF}_{p}$ is an algebraic closure of $\FF_{p}$, $G \coloneqq \Gal(\overline{\FF}_{p}/\FF_{p})$, $\operatorname{Frob}_{p}(x) = x^{p}$ is the Frobenius automorphism, $\widehat{\ZZ} \coloneqq \varprojlim_{n}\ZZ/n\ZZ$ is the profinite completion, and $\ZZ_{q} \coloneqq \varprojlim_{k}\ZZ/q^{k}\ZZ$ is the ring of $q$-adic integers. The problem is Problem 6 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`; no solutions sheet accompanies it, so the argument below is the card's own.
+Throughout $p$ is prime, $\overline{\FF}_{p}$ is an algebraic closure of $\FF_{p}$, $G \coloneqq \Gal(\overline{\FF}_{p}/\FF_{p})$, $\operatorname{Frob}_{p}(x) = x^{p}$ is the Frobenius automorphism, $\widehat{\ZZ} \coloneqq \varprojlim_{n}\ZZ/n\ZZ$ is the profinite completion, and $\ZZ_{q} \coloneqq \varprojlim_{k}\ZZ/q^{k}\ZZ$ is the ring of $q$-adic integers. The problem is Problem 6 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`; no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 

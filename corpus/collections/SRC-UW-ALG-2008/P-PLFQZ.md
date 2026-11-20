@@ -41,7 +41,7 @@ Show that any irreducible left module over the group algebra $\CC G$ has complex
 
 ::: {.solution}
 
-The problem is Problem 7 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the bound $d\le\sqrt n$ from $\sum_i d_i^2=n$, and (b) the example $G=S_3$ of order $6$, whose two-dimensional irreducible module has dimension $\lfloor\sqrt6\rfloor=2$
+The problem is Problem 7 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is (a) the bound $d\le\sqrt n$ from $\sum_i d_i^2=n$, and (b) the example $G=S_3$ of order $6$, whose two-dimensional irreducible module has dimension $\lfloor\sqrt6\rfloor=2$
 
 ::: pf
 

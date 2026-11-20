@@ -45,7 +45,7 @@ Let $\langle\,\cdot\,,\,\cdot\,\rangle$ be the scalar product on the ring of sym
 
 ::: {.solution}
 
-The problem is Problem 6 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
+The problem is Problem 6 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020)'s numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
 
 No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/Applied-Algebra-Qual-SP20.pdf`, the examination paper, which carries no solutions. The argument below is the card's own and follows the card's previous prose.
 

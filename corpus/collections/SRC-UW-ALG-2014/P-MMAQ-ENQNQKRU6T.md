@@ -46,7 +46,7 @@ Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
 
 ::: {.solution}
 
-The problem is Problem 4 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the four parts: the radical vanishes, the characteristic is $2$, the ring is commutative, and a finite such ring is $(\ZZ/2\ZZ)^d$
+The problem is Problem 4 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the four parts: the radical vanishes, the characteristic is $2$, the ring is commutative, and a finite such ring is $(\ZZ/2\ZZ)^d$
 
 ::: pf
 

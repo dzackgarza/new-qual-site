@@ -47,7 +47,7 @@ By looking at degrees of polynomials, show that any $\CC$-subalgebra of the ring
 
 ::: {.solution}
 
-The problem is Problem 4 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the degree argument: an element $f$ of least positive degree makes $\CC[x]$ a free $\CC[f]$-module of rank at most $\deg f$, so $A$ is generated over $\CC$ by $f$ and a $\CC[f]$-basis of $A$
+The problem is Problem 4 of the Algebra Preliminary Examination of September 8, 2008 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2008.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the degree argument: an element $f$ of least positive degree makes $\CC[x]$ a free $\CC[f]$-module of rank at most $\deg f$, so $A$ is generated over $\CC$ by $f$ and a $\CC[f]$-basis of $A$
 
 Let $A\subseteq\CC[x]$ be a $\CC$-subalgebra.
 

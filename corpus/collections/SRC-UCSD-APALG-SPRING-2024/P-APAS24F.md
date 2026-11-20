@@ -50,7 +50,7 @@ Compute the character of $(\mathcal{L}(V,W),\omega)$ in terms of the characters 
 
 ::: {.solution}
 
-The problem is Problem 6 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 6 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+The problem is Problem 6 of the Qualifier Exam in Applied Algebra of May 23, 2024's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
 
 No retained solution set covers this problem: the collection's `provenance` names the Spring 2024 applied-algebra examination paper, which carries no solutions. The argument below is the card's own and follows the card's previous prose.
 

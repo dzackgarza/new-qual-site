@@ -41,7 +41,7 @@ Show that $G$ contains a *normal* subgroup $N$ such that $n\leq[G:N]\leq n!$
 
 ::: {.solution}
 
-The problem is Problem 1 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the normal core of a subgroup of index $n$, which gives $n\le[G:N]\le n!$, and the order-$36$ case, where the Sylow count leaves a subgroup of index $4$ and part (a) then forces a proper normal subgroup
+The problem is Problem 1 of the 2014 Algebra Preliminary Examination (University of Washington, September 8, 2014), retained at `assets/attachments/UW-Algebra-Qual-2014.pdf`, both parts. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the normal core of a subgroup of index $n$, which gives $n\le[G:N]\le n!$, and the order-$36$ case, where the Sylow count leaves a subgroup of index $4$ and part (a) then forces a proper normal subgroup
 
 ::: pf
 

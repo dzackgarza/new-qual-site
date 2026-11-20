@@ -53,7 +53,7 @@ and that the Frobenius norm $\norm{\psi}_{\mathrm{Frob}}$ is exactly $1$.
 
 ::: {.solution}
 
-The problem is Problem 2 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 1 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the singular-value estimate over orthonormal $k$-frames, which forces $\dim\ker(\phi+\psi)\le1$ from $\norm{\psi}_{\mathrm{Frob}}=1$, and the rank-one conclusion in (b)
+The problem is Problem 2 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020)'s numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the singular-value estimate over orthonormal $k$-frames, which forces $\dim\ker(\phi+\psi)\le1$ from $\norm{\psi}_{\mathrm{Frob}}=1$, and the rank-one conclusion in (b)
 
 Throughout $\phi, \psi\colon\CC^{10} \to \CC^{10}$ are linear, $\sigma_{1}(\phi) \ge \cdots \ge \sigma_{10}(\phi)$ are the singular values with $\sigma_{i}(\phi) = 11 - i$, so $\sigma_{9} = 2$ and $\sigma_{10} = 1$, $\norm{\psi}_{\mathrm{Frob}}^{2} = \sum_{j}\norm{\psi e_{j}}^{2}$ for any orthonormal basis, and $K \coloneqq \ker(\phi+\psi)$. The collection's `provenance` is the Spring 2020 preliminary examination, and no solutions sheet accompanies it, so the argument below is the card's own.
 

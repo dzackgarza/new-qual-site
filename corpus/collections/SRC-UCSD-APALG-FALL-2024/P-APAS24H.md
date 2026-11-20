@@ -35,7 +35,7 @@ Using character theory or otherwise, prove that the standard representation is i
 
 ::: {.solution}
 
-The problem is Problem 8 of the Qualifier Exam in Applied Algebra of September 10, 2024, printed p. 8 of the paper retained at `assets/attachments/FA24_202_Applied_Algebra_Qual.pdf`; the same question is Problem 8 of the May 23, 2024 paper, printed p. 8 of `assets/attachments/SP24_math_202_exam.pdf`. Neither paper prints solutions, so nothing below is transcribed: the argument is the card's own.
+The problem is Problem 8 of the Qualifier Exam in Applied Algebra of September 10, 2024, retained at `assets/attachments/FA24_202_Applied_Algebra_Qual.pdf`; the same question is Problem 8 of the May 23, 2024 paper. Neither paper prints solutions, so nothing below is transcribed: the argument is the card's own.
 
 Assume $n\ge2$. Let $S_n$ act on $\CC^n$ by permuting the standard basis $e_1,\ldots,e_n$. The **standard representation** is the invariant subspace
 $$

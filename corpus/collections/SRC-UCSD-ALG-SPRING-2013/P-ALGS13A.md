@@ -44,7 +44,7 @@ Justify your answer.
 
 ::: {.solution}
 
-The problem is Problem 1 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the construction: an element of order $3$ in $\operatorname{Aut}(C_{61})$ gives a semidirect product $C_{61}\rtimes C_3$ of order $2013$ whose action is nontrivial, hence a nonabelian example
+The problem is Problem 1 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the construction: an element of order $3$ in $\operatorname{Aut}(C_{61})$ gives a semidirect product $C_{61}\rtimes C_3$ of order $2013$ whose action is nontrivial, hence a nonabelian example
 
 Yes.
 

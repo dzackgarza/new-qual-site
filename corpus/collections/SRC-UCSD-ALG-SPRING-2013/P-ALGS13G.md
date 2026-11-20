@@ -51,7 +51,7 @@ Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
 
 ::: {.solution}
 
-The problem is Problem 7 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the normal closure $N$ of $E$ and $G=\operatorname{Gal}(N/F)$: the hypothesis gives $p\mid\cardinality{G}$, a proper Sylow $p$-subgroup $P$ would make $N^P/F$ a proper extension of degree $[G:P]$ prime to $p$, so $G$ is a $p$-group and $[E:F]=[G:H]$ is a power of $p$
+The problem is Problem 7 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the normal closure $N$ of $E$ and $G=\operatorname{Gal}(N/F)$: the hypothesis gives $p\mid\cardinality{G}$, a proper Sylow $p$-subgroup $P$ would make $N^P/F$ a proper extension of degree $[G:P]$ prime to $p$, so $G$ is a $p$-group and $[E:F]=[G:H]$ is a power of $p$
 
 
 ::: pf

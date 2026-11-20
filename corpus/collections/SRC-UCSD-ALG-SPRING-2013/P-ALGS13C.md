@@ -42,7 +42,7 @@ Show that $M$ has a submodule which is isomorphic to $A/(p)$ as an $A$-module.
 
 ::: {.solution}
 
-The problem is Problem 3 of the Spring 2013 UCSD Algebra Qualifying Examination, printed p. 1 of the single-page paper retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the elementary-divisor decomposition, which exhibits $A/(p^k)$ as a direct summand, together with the class of $p^{k-1}$ in it, whose annihilator is exactly $(p)$
+The problem is Problem 3 of the Spring 2013 UCSD Algebra Qualifying Examination, retained at `assets/attachments/SP13_200_Algebra_Qual.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the elementary-divisor decomposition, which exhibits $A/(p^k)$ as a direct summand, together with the class of $p^{k-1}$ in it, whose annihilator is exactly $(p)$
 
 ::: pf
 

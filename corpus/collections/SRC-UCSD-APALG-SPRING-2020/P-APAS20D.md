@@ -51,7 +51,7 @@ $$
 
 ::: {.solution}
 
-The problem is Problem 4 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the class sizes from column orthogonality, $\cardinality{C_j}=\cardinality{G}/\sum_i\abs{\chi_i(g_j)}^2$
+The problem is Problem 4 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020)'s numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the class sizes from column orthogonality, $\cardinality{C_j}=\cardinality{G}/\sum_i\abs{\chi_i(g_j)}^2$
 
 If $g\in G$, column orthogonality for the irreducible character table gives
 $$

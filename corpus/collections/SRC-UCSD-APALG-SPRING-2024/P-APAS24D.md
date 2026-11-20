@@ -44,7 +44,7 @@ for all $B\in M_n(\CC)=\CC^{n\times n}$.
 
 ::: {.solution}
 
-The problem is Problem 4 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 4 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
+The problem is Problem 4 of the Qualifier Exam in Applied Algebra of May 23, 2024's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own.
 
 Let
 $$

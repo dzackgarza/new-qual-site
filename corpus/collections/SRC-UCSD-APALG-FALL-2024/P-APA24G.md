@@ -60,7 +60,7 @@ is the orthogonal projection of $V$ onto $V^G$.
 
 ::: {.solution}
 
-The problem is Problem 7 of the Qualifier Exam in Applied Algebra of September 10, 2024, printed p. 7 of the paper retained at `assets/attachments/FA24_202_Applied_Algebra_Qual.pdf`; the same question is Problem 7 of the May 23, 2024 paper, printed p. 7 of `assets/attachments/SP24_math_202_exam.pdf`. Neither paper prints solutions, so nothing below is transcribed: the argument is the card's own.
+The problem is Problem 7 of the Qualifier Exam in Applied Algebra of September 10, 2024, retained at `assets/attachments/FA24_202_Applied_Algebra_Qual.pdf`; the same question is Problem 7 of the May 23, 2024 paper. Neither paper prints solutions, so nothing below is transcribed: the argument is the card's own.
 
 The invariant subspace is
 $$

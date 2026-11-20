@@ -55,7 +55,7 @@ Find the Hilbert series of the invariant ring $\CC[x_1,x_2,\ldots,x_n]^G$.
 
 ::: {.solution}
 
-The problem is Problem 10 of the Qualifier Exam in Applied Algebra of May 23, 2024, printed p. 10 of the paper's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+The problem is Problem 10 of the Qualifier Exam in Applied Algebra of May 23, 2024's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
 
 The argument is the card's own; no source text or solution set is retained for it.
 

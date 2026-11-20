@@ -56,7 +56,7 @@ against Haar measure.
 
 ::: {.solution}
 
-The problem is Problem 8 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020), printed p. 2 of the paper's numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
+The problem is Problem 8 of the Math 202 Qualifying Exam, Spring 2020 (June 3, 2020)'s numbered pages — the retained file `assets/attachments/Applied-Algebra-Qual-SP20.pdf` puts a cover page before them.
 
 The collection's provenance is the examination paper, so no retained solution set covers the problem and the argument is the card's own. Normalise Haar measure on the compact group $\U(2)$ to have total mass $1$.
 

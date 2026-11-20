@@ -36,7 +36,7 @@ Denote by $\sigma_i(A)$ (resp., $\sigma_i(B)$) the $i$-th largest singular value
 
 ::: {.solution}
 
-The problem is Problem 3 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 3 of the nine-page paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the min-max argument: a subspace attaining the maximum for $B$ gives $\sigma_i(A)>\sigma_i(B)$ through the strict inequality on its compact unit sphere and the Courant--Fischer characterisation for $A$
+The problem is Problem 3 of the Qualifying Exam in Applied Algebra of May 30, 2017, retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the min-max argument: a subspace attaining the maximum for $B$ gives $\sigma_i(A)>\sigma_i(B)$ through the strict inequality on its compact unit sphere and the Courant--Fischer characterisation for $A$
 
 
 ::: pf

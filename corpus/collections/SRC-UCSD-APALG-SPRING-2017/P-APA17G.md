@@ -48,7 +48,7 @@ You do not need to do this procedure.
 
 ::: {.solution}
 
-The problem is Problem 7 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 7 of the nine-page paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: Buchberger's criterion with the $S$-polynomial procedure, and the standard monomial basis of $14$ square-free monomials not divisible by $x_1x_2x_3$
+The problem is Problem 7 of the Qualifying Exam in Applied Algebra of May 30, 2017, retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: Buchberger's criterion with the $S$-polynomial procedure, and the standard monomial basis of $14$ square-free monomials not divisible by $x_1x_2x_3$
 
 
 ::: pf

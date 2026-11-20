@@ -52,7 +52,7 @@ Given any surjection $\phi:A^n\rightarrow M$ from a finite free $A$-module, show
 :::
 
 ::: {.solution}
-Throughout $A$ is a commutative ring, all modules are left $A$-modules, and $M$ is finitely presented: there are a finite free $A^{r}$ and a finite free $A^{m}$ with an exact sequence $A^{m} \xrightarrow{\psi} A^{r} \xrightarrow{\pi} M \to 0$. $\phi\colon A^{n} \to M$ is a given surjection with $n$ finite. The problem is Problem 3 of the Algebra Preliminary Examination 2017 (University of Washington), printed p. 1 of the single-page paper retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`; no solutions sheet accompanies it, so the argument below is the card's own.
+Throughout $A$ is a commutative ring, all modules are left $A$-modules, and $M$ is finitely presented: there are a finite free $A^{r}$ and a finite free $A^{m}$ with an exact sequence $A^{m} \xrightarrow{\psi} A^{r} \xrightarrow{\pi} M \to 0$. $\phi\colon A^{n} \to M$ is a given surjection with $n$ finite. The problem is Problem 3 of the Algebra Preliminary Examination 2017 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2017.pdf`; no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 
