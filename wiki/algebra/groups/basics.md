@@ -15,7 +15,7 @@ Throughout, $G$ is a group with identity $e$, and $H$ and $K$ are subgroups of $
 
 ## Subgroups
 
-Recall that $\generators S$ is the smallest subgroup containing $S$ ([[D-D36IY]]), so an inclusion $\generators S\leq H$ is checked on $S$ alone, and that membership in a subset is decided by one closure condition rather than three ([[PR-U5CHT]]).
+An inclusion $\generators S\leq H$ is checked on the generators alone.
 
 [[D-IQ4OX]]
 
@@ -27,7 +27,7 @@ Recall that $\generators S$ is the smallest subgroup containing $S$ ([[D-D36IY]]
 
 ## Order and presentations
 
-The order of an element is the order of the cyclic subgroup it generates, which is why Lagrange's theorem applies to it.
+Lagrange's theorem applies to an element through the cyclic subgroup it generates.
 
 [[D-ZTPHF]]
 
@@ -37,7 +37,7 @@ The order of an element is the order of the cyclic subgroup it generates, which 
 
 ## Commutators and the derived series
 
-$[x,y]=e$ exactly when $x$ and $y$ commute, and iterating the commutator subgroup gives the [[D-W2QAA|derived series]].
+$[x,y]=e$ exactly when $x$ and $y$ commute.
 
 [[D-BQ4BQ]]
 
@@ -59,7 +59,7 @@ Conjugation by $g$ is an automorphism of $G$, so conjugate elements have the sam
 
 ## Normal subgroups
 
-Normality is the condition under which the cosets of $H$ carry a group structure, and it is weaker than being characteristic: see [[algebra/groups/characteristic-subgroups|Characteristic subgroups]].
+Normality is weaker than being characteristic: see [[algebra/groups/characteristic-subgroups|Characteristic subgroups]].
 
 [[D-EKE4Q]]
 
@@ -72,8 +72,6 @@ Normality is the condition under which the cosets of $H$ carry a group structure
 [[T-I5N43]]
 
 ## Centralizers, normalizers, and the center
-
-The centralizer of a subset fixes its elements under conjugation and the normalizer permutes them, so $C_G(H)\leq N_G(H)$; the center is the centralizer of $G$, and also the intersection of the centralizers of its elements.
 
 [[D-PX64W]]
 
@@ -89,7 +87,7 @@ The centralizer of a subset fixes its elements under conjugation and the normali
 
 ## Cosets and the index
 
-A map of sets is injective exactly when it has a left inverse and surjective exactly when it has a right inverse; the coset $gH$ is the image of $H$ under the bijection $h\mapsto gh$, so all cosets of $H$ have $\size{H}$ elements and the index counts them.
+All cosets of $H$ have $\size{H}$ elements.
 
 [[FD-JI2RH]]
 
@@ -107,7 +105,7 @@ A map of sets is injective exactly when it has a left inverse and surjective exa
 
 [[T-WR7CD]]
 
-The tower law makes the index multiplicative down a chain of subgroups, and Lagrange's theorem is the tower law with $K$ trivial.
+Lagrange's theorem is the tower law with $K$ trivial.
 
 [[E-NNTQB]]
 
