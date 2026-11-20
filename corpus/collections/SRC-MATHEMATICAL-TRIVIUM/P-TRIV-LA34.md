@@ -104,7 +104,7 @@ Substitute $\lambda=0$ into the definitions in step [](#s1-1){.pf-ref}.
 
 ::: {.pf-step #s1-3}
 
-Therefore, to first order,
+Part (a): therefore, to first order,
 $$
 \boxed{
 e^{-\lambda B}Ae^{\lambda B}
@@ -117,19 +117,6 @@ $$
 ::: pf-proof
 
 Apply the Taylor expansion of $F$ at $\lambda=0$ using step [](#s1-2){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -254,7 +241,7 @@ Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the expansion to arbitr
 
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 
