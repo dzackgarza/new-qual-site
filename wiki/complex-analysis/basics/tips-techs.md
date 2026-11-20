@@ -93,6 +93,7 @@ The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theo
 - If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product.
 - The substitutions $z\mapsto 1/z$, $f\mapsto 1/f$, and $w = e^z$ transfer statements between $0$ and $\infty$, between zeros and poles, and between strips and annuli.
 
+The first item is [@Ahl73, ch. 4, §3.2, Zeros and Poles], which notes that $g=1/f$ is defined and analytic where $f\neq0$; the minimum principle is the maximum principle applied to that $1/f$, and the constancy follows as for Liouville. The second is [@Ahl73, ch. 4, §4.3, Exact Differentials in Simply Connected Regions], which constructs a single-valued logarithm of a nonvanishing function on a simply connected region; the $n$th root is $e^{g/n}$ as in [[D-T6INB]]. The third is [@Ahl73, ch. 6, §1.2, Boundary Behavior] for the unimodular-on-the-circle case, which is the finite Blaschke product [[T-W26VL]] describes.
 :::
 
 ## Constancy
@@ -132,6 +133,7 @@ Let $f$ be holomorphic on a punctured disc about $z_0$.
 
 A meromorphic function $f$ and its derivative $f'$ have the same poles, and at such a pole the order of $f'$ is one more than the order of $f$.
 
+The three classifications are [@Ahl73, ch. 4, §3.1, Removable Singularities. Taylor's Theorem], whose Theorem 7 is the removable criterion $\lim(z-z_0)f(z)=0$, and [@Ahl73, ch. 4, §3.2, Zeros and Poles], which defines a pole by $f(z)\to\infty$, reads its order off the zero of $1/f$ and off the lowest Laurent term, and calls the remaining case essential. The two-sequence test is the definition read negatively, and the statement about $f'$ follows by differentiating the factorisation $f=(z-z_0)^{-m}g$ with $g(z_0)\neq0$.
 :::
 
 ::: {.fact}
