@@ -43,7 +43,7 @@ Establish the following properties of infinite products.
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 5, Exercise 7. Here $a_n\neq-1$ for every $n$, so no factor $1+a_n$ vanishes; the principal logarithm is used once $\abs{a_n}<1$, and the expansion $\log(1+a)=\sum_{k\geq1}(-1)^{k+1}a^{k}/k$ then gives $\log(1+a)=a+O(\abs{a}^{2})$ with an absolute constant.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 5, Exercise 7. Here $a_n\neq-1$ for every $n$, so no factor $1+a_n$ vanishes; the principal logarithm is used once $\abs{a_n}<1$, and the expansion $\log(1+a)=\sum_{k\geq1}(-1)^{k+1}a^{k}/k$ then gives $\log(1+a)=a+O(\abs{a}^{2})$ with an absolute constant.
 
 ::: pf
 
