@@ -27,6 +27,16 @@ audit:
     since the antiderivative is evaluated at the endpoints. Checked the equality case in (d) (the
     radial segment) and that delta < 1 for points of the disc, which is what lets (d) be applied to
     delta. Not checked: the printed problem, which was not re-read in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The printed problem is now read: Chapter 8, Problem 3 on printed p. 256 (PDF p. 275), running to
+    p. 257 for part (e). The card's statement is the print's, parts (a)--(e), including the paragraph
+    defining the hyperbolic length and the Poincare metric, the infimum definition of $d$, and the
+    converse in (b) with the bar over $\varphi$. The asterisk the print sets before "3." is recorded
+    in the remark. Not checked: the argument, which the event above reviews and this pass did not
+    re-derive.
 ---
 
 ::: {.exercise}
@@ -82,6 +92,10 @@ d (0, s) = \frac{1}{2} \log \frac{1 + s}{1 - s}.
 $$
 
 (e) Find a formula for the hyperbolic distance between any two points in the unit disc.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 8, Problem 3, printed p. 256).
 :::
 
 ::: {.solution}
