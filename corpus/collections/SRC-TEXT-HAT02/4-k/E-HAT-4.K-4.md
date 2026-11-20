@@ -35,7 +35,7 @@ Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the de
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.K. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.K Exercise 4, and it refers to Example 4K.5 on printed p. 482.
+No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.K. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.K Exercise 4, and it refers to Example 4K.5.
 
 ::: pf
 

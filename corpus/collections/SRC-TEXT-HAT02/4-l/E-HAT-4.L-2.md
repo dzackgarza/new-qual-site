@@ -49,7 +49,7 @@ X=(S^1\times\CP^\infty)/(S^1\times\{x_0\}),
 \qquad
 Y=S^3\times\CP^\infty.
 $$
-With $\ZZ_2$-coefficients, the Künneth theorem over a field (Corollary 3B.7, p. 276) applied to the pair $(S^1\times\CP^\infty, S^1\times\{x_0\})$ gives
+With $\ZZ_2$-coefficients, the Künneth theorem over a field (Corollary 3B.7) applied to the pair $(S^1\times\CP^\infty, S^1\times\{x_0\})$ gives
 $$
 \widetilde H^*(X;\ZZ_2)
 \cong
@@ -66,13 +66,13 @@ be the standard generators. Then the unique nonzero class in $H^3(X;\ZZ_2)$ is
 $$
 u=a\times x.
 $$
-Using the Cartan formula (Theorem 4L.12, p. 504),
+Using the Cartan formula (Theorem 4L.12),
 $$
 Sq^2(u)
 =Sq^2(a\times x)
 =a\times Sq^2x,
 $$
-since $Sq^1a=a^2=0$ and $Sq^2a=0$ by instability. For the degree-two generator of $\CP^\infty$ the unstable property of Theorem 4L.12 (p. 504) gives
+since $Sq^1a=a^2=0$ and $Sq^2a=0$ by instability. For the degree-two generator of $\CP^\infty$ the unstable property of Theorem 4L.12 gives
 $$
 Sq^2x=x^2,
 $$

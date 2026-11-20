@@ -47,7 +47,7 @@ Suppose that $A$ is row-reduced and also that $a + b + c + d = 0$ . Prove that t
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 6 on printed p. 11. The argument is the card's own.
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 6. The argument is the card's own.
 
 The three matrices are
 $$

@@ -38,7 +38,7 @@ Prove that the interchange of two rows of a matrix can be accomplished by a fini
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 7 on printed p. 11. The argument is the card's own.
+No retained solution set covers this exercise; the book's text is retained as `assets/attachments/Hoffman-Kunze-Linear-Algebra.pdf` (Hoffman and Kunze, *Linear Algebra*, 2nd ed., 1971), where it is §1.3 Exercise 7. The argument is the card's own.
 
 Suppose the two rows to be interchanged are $R_i$ and $R_j$.
 

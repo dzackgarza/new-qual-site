@@ -59,7 +59,7 @@ $\Sigma(X\times Y)\simeq\Sigma X\vee\Sigma Y\vee\Sigma(X\wedge Y)$ for CW comple
 
 ::: pf-proof
 
-This is Proposition 4I.1 on printed p. 467. It applies here because Eilenberg--MacLane spaces of discrete groups are CW complexes.
+This is Proposition 4I.1. It applies here because Eilenberg--MacLane spaces of discrete groups are CW complexes.
 
 :::
 
@@ -111,7 +111,7 @@ $\Sigma(X\wedge Y)\simeq *$, and hence $\Sigma K(\ZZ_m\times\ZZ_n,1)\simeq\Sigma
 
 ::: pf-proof
 
-A suspension is simply connected, and the suspension isomorphism gives $\widetilde H_k(\Sigma(X\wedge Y))\cong\widetilde H_{k-1}(X\wedge Y)=0$ for all $k$. By the homology form of Whitehead's theorem, Corollary 4.33 on printed p. 367, a map from a simply connected CW complex to a point that induces isomorphisms on all homology groups is a homotopy equivalence, so $\Sigma(X\wedge Y)\simeq *$. Substituting into the splitting of the first step and applying the second gives the stated equivalence.
+A suspension is simply connected, and the suspension isomorphism gives $\widetilde H_k(\Sigma(X\wedge Y))\cong\widetilde H_{k-1}(X\wedge Y)=0$ for all $k$. By the homology form of Whitehead's theorem, Corollary 4.33, a map from a simply connected CW complex to a point that induces isomorphisms on all homology groups is a homotopy equivalence, so $\Sigma(X\wedge Y)\simeq *$. Substituting into the splitting of the first step and applying the second gives the stated equivalence.
 
 :::
 

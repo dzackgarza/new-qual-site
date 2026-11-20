@@ -115,7 +115,7 @@ Apply steps [](#quotients){.pf-ref} and [](#disc){.pf-ref} with $X=B$, $Y=D^n$ a
 The class $1\times u\in H^n(B\times D^n,B\times S^{n-1};R)$, where $u\in H^n(D^n,S^{n-1};R)\cong R$ is the fibre orientation class, is a Thom class for $E$, and cap product with it is the Thom isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$.
 
 ::: pf-proof
-The product bundle is orientable, with fibre orientation $u$; the Thom isomorphism theorem for a disk bundle with a Thom class (Corollary 4D.9, p. 441) then gives that $a\mapsto a\times u$ is an isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$ for every $i$, the relative cross product being taken in the pair $(B\times D^n,B\times S^{n-1})$.
+The product bundle is orientable, with fibre orientation $u$; the Thom isomorphism theorem for a disk bundle with a Thom class (Corollary 4D.9) then gives that $a\mapsto a\times u$ is an isomorphism $H^i(B;R)\to H^{n+i}(E,E';R)$ for every $i$, the relative cross product being taken in the pair $(B\times D^n,B\times S^{n-1})$.
 :::
 
 :::
