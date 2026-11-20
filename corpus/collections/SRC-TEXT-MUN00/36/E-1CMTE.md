@@ -55,6 +55,30 @@ audit:
     and this pass did not re-read it; the search is recorded in the COMPLAINTS.md entry for
     §30--§36 with every query.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against the Supplementary Exercises: Review of the Basics, Exercise 7, and the
+    numbered results of Chapters 6 and 7, and repaired in two places. (i) "It passes to closed
+    subspaces (§41)" is now Theorem 41.2, which reads in the book "Every closed subspace of a
+    paracompact space is paracompact". (ii) The sentence introducing the failure of paracompactness
+    under finite products said "$\RR_\ell\times\RR_\ell$ being paracompact in each factor",
+    which states the opposite of what the argument uses; it now says that each factor $\RR_\ell$
+    is paracompact, being regular and Lindel\"of, while the product is not, by Example 4 of §41.
+    Everything else was checked and kept. Paracompactness: Theorem 41.1 excludes (c), (f), (j) and
+    (k) through nonnormality or nonregularity; Theorem 41.4 gives (g) and (h); Theorem 41.5 gives
+    (e); compactness gives (b) and (d); Exercise 41.2(a), that a product of a paracompact space and
+    a compact one is paracompact, with part (b), is the first route for (a); and Example 5 of §41
+    says in terms that $\RR^\omega$ is paracompact in the product and uniform topologies because it
+    is metrizable there and that it is not known whether it is paracompact in the box topology, so
+    the "?" of entry (i) is the book's own open question and the pointer to the comment at Exercise
+    5 of §32 is the book's. Topological completeness: §43 Exercise 6 is the definition the card
+    quotes; metrizability excludes all but (g) and (h); Exercise 43.6(a), (b) and (c) are exactly
+    the closed-subspace, countable-product and open-subspace statements the operation table uses;
+    and the remark opening §48, that a metrizable space is a Baire space if it is topologically
+    complete, is what rules out the rationals as a subspace of $\RR$. Not checked: the card's
+    count of the questions is the book's, and no published key to Exercise 7 was searched for here.
 ---
 
 ::: {.exercise}
@@ -103,7 +127,7 @@ Exercises 1–6 classified properties (1)–(17). The tables below supply proper
 | Every metric space | Yes | No |
 | Every compact Hausdorff space | Yes | No |
 
-Paracompactness is not hereditary: $S_\Omega$ is a subspace of the compact, hence paracompact, $\overline S_\Omega$ and is not paracompact. It passes to closed subspaces (§41) and not to open ones, $S_\Omega$ again being open in $\overline S_\Omega$. It is not preserved by finite products, $\RR_\ell\times\RR_\ell$ being paracompact in each factor, Example 4 of §41, and not paracompact; padding a finite counterexample with one-point factors gives the countable and arbitrary columns, and the uncountable product $\RR^J$ is not paracompact for a second reason, being Hausdorff and nonnormal, Example 6 of §41. Continuous images fail by Exercise 41.4(b). Every metrizable space is paracompact, Theorem 41.4, and every compact space is paracompact, so the last two rows are Yes.
+Paracompactness is not hereditary: $S_\Omega$ is a subspace of the compact, hence paracompact, $\overline S_\Omega$ and is not paracompact. It passes to closed subspaces, Theorem 41.2 and not to open ones, $S_\Omega$ again being open in $\overline S_\Omega$. It is not preserved by finite products: each factor $\RR_\ell$ is paracompact, being regular and Lindelöf, while $\RR_\ell\times\RR_\ell$ is not, by Example 4 of §41; padding a finite counterexample with one-point factors gives the countable and arbitrary columns, and the uncountable product $\RR^J$ is not paracompact for a second reason, being Hausdorff and nonnormal, Example 6 of §41. Continuous images fail by Exercise 41.4(b). Every metrizable space is paracompact, Theorem 41.4, and every compact space is paracompact, so the last two rows are Yes.
 
 Topological completeness passes to closed subspaces, Exercise 43.6(a), to open subspaces, Exercise 43.6(c), and to countable products in the product topology, Exercise 43.6(b), which also covers finite products after padding with one-point spaces. It does not pass to arbitrary subspaces: $\QQ$ is a subspace of the complete space $\RR$ and is not topologically complete, since a topologically complete space is a Baire space (the remark at the start of §48) and $\QQ$ is a countable union of nowhere dense singletons. It does not pass to arbitrary products, since $\RR^J$ is not even metrizable for uncountable $J$, Example 2 of §21; and it is not preserved by continuous images, since the identity from a set with the discrete topology onto a non-metrizable space of the same cardinality is continuous, while a discrete space is complete in the discrete metric. The last two rows are No: $\QQ$ is a metric space that is not topologically complete, and $\overline S_\Omega$ is a compact Hausdorff space that is not, being nonmetrizable.
 :::
