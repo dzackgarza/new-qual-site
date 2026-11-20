@@ -55,25 +55,41 @@ Use the preceding exercise to give an example where this fails in the nonsimply-
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 9.
+No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers §4.2 Exercises 1, 2, 14 and 27 only, and the Stanford 215C sets cover §3.B and §3.3 exercises. So the argument is the card own, from the cofiber sequence of a map (§4.2), Corollary 4.33, Example 2.38 and §4.2 Exercise 8.
 
-Let $f:X\to Y$ be a map of simply-connected CW complexes and suppose its mapping cone $C_f$ is contractible. The cofibration sequence
-$$
-X\xrightarrow f Y\longrightarrow C_f
-$$
-gives the long exact sequence in reduced homology. Since $\widetilde H_*(C_f)=0$, the map
-$$
-f_*:H_i(X;\ZZ)\xrightarrow{\cong}H_i(Y;\ZZ)
-$$
-is an isomorphism for every $i$. The homology Whitehead theorem for simply-connected CW complexes then implies that $f$ is a homotopy equivalence.
+::: pf
 
-The simply-connected hypothesis is essential. Let $A$ be any acyclic, noncontractible CW complex (for example the 2-dimensional complex of Hatcher, Example 2.38, obtained from $S^1\vee S^1$ by attaching two cells by the words $a^5b^{-3}$ and $b^3(ab)^{-2}$, whose $d_2$ has determinant $-1$ (absolute value $1$) so that $\widetilde H_*(A)=0$ while $\pi_1(A)$ is the nontrivial group $\langle a,b\mid a^5=b^3=(ab)^2\rangle$), and take the constant map
-$$
-f:A\longrightarrow *.
-$$
-Its mapping cone is
-$$
-C_f=CA/A\cong\Sigma A.
-$$
-By the preceding exercise the suspension of an acyclic CW complex is contractible. Thus $C_f$ is contractible, while $f$ is not a homotopy equivalence because $A$ is not contractible. This gives the required nonsimply-connected counterexample.
+::: {.pf-step #homology}
+Let $f:X\to Y$ be a map of simply connected CW complexes with $C_f$ contractible. Then $f_*:H_i(X;\ZZ)\to H_i(Y;\ZZ)$ is an isomorphism for every $i$.
+
+::: pf-proof
+The cofibration sequence $X\xrightarrow{f}Y\to C_f$ gives the long exact sequence in reduced homology, in which the terms $\widetilde H_i(C_f)$ vanish because $C_f$ is contractible; exactness at $\widetilde H_i(Y)$ and at $\widetilde H_i(X)$ then forces $f_*$ to be injective and surjective in each degree.
+:::
+:::
+
+::: {.pf-step #whitehead}
+$f$ is a homotopy equivalence.
+
+::: pf-proof
+$X$ and $Y$ are simply connected CW complexes, so Corollary 4.33 applies: a map between simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence. Step [](#homology){.pf-ref} supplies the isomorphisms.
+:::
+:::
+
+::: {.pf-step #counterexample}
+Let $A$ be the acyclic noncontractible CW complex of Example 2.38 and $f:A\to *$ the constant map. Then $C_f\cong\Sigma A$ is contractible while $f$ is not a homotopy equivalence.
+
+::: pf-proof
+In Example 2.38 $A$ is obtained from $S^1\vee S^1$ by attaching two $2$-cells along the words $a^5b^{-3}$ and $b^3(ab)^{-2}$; the boundary matrix has determinant $-1$, so $\widetilde H_i(A)=0$ for all $i$, and $\pi_1(A)$ has the nontrivial presentation $\langle a,b\mid a^5b^{-3},\,b^3(ab)^{-2}\rangle$, so $A$ is not contractible. The mapping cone of $A\to *$ is the cone on $A$ with its base collapsed, which is the suspension $\Sigma A$, and $\Sigma A$ is contractible by §4.2 Exercise 8 because $A$ is acyclic. So the mapping cone is contractible and $f$ is not a homotopy equivalence.
+:::
+:::
+
+::: {.pf-step #conclusion}
+The simply connected hypothesis cannot be dropped.
+
+::: pf-proof
+Steps [](#whitehead){.pf-ref} and [](#counterexample){.pf-ref} together give the statement and its sharpness.
+:::
+:::
+
+:::
 :::
