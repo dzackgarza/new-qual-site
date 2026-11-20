@@ -31,6 +31,15 @@ audit:
     with f^n(y_n) = x ≠ 0 in ker f, so y_n ∈ ker f^{n+1} but not ker f^n; and on a
     noetherian module that strictly increasing chain is impossible, so a surjective
     endomorphism is injective, hence an automorphism. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 11, midterm 4(a),(b).
+    $\ker f^n\subseteq\ker f^{n+1}$ always; if $f$ is surjective and not injective, a nonzero
+    $x\in\ker f$ has a preimage $y_n$ under the surjective $f^n$, and $y_n$ witnesses
+    $\ker f^n\subsetneq\ker f^{n+1}$; a noetherian module has ACC, so a surjective endomorphism
+    is injective, hence an automorphism. No defect.
 ---
 
 ::: {.exercise}
