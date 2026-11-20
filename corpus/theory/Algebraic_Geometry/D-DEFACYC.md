@@ -37,6 +37,6 @@ Injective objects are $F$-acyclic for every left exact $F$, and projective objec
 An acyclic object need not be injective: on a one-point space every sheaf is $\Gamma$-acyclic, and the constant sheaf $\ZZ$ is not an injective abelian group.
 
 Flasque sheaves are $\Gamma$-acyclic, so a flasque resolution computes $H^i(X;\mcf)$.
-Free and projective modules are acyclic for $\wait \tensor_A N$, so a free resolution computes $\Tor$.
+Free and projective modules are acyclic for $-\tensor_A N$, so a free resolution computes $\Tor$.
 Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic by Serre's theorem; hence for a Noetherian separated scheme $X$, an open affine cover $\mathfrak U$, and a quasicoherent sheaf $\mcf$, the Čech complex of $\mathfrak U$ computes $H^i(X,\mcf)$ [@Har77, Theorem III.4.5].
 :::
