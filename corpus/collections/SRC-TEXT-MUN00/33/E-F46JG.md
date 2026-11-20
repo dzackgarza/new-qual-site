@@ -103,7 +103,7 @@ This exercise is adapted from [M-Z], to which the reader is referred for further
 :::
 
 ::: {.solution}
-The argument is the card's own: it fills in the skeleton Munkres gives in §33 Exercise 10, printed p. 213 ("proceed as in the Urysohn lemma"), and no checkable published solution was located for it — dbFin's Section 33 Problem 10 prose is corrupted where it matters, as the card's earlier audit note records. Every step below is checked against the printed construction: $V_{n+1}^{2}\subset V_{n}$, the dyadic sets $U(k/2^{n})$ with $U\big((2k+1)/2^{n+1}\big)=V_{n+1}U(k/2^{n})$, and the inclusion $V_{n}U(k/2^{n})\subset U\big((k+1)/2^{n}\big)$.
+The argument is the card's own: it fills in the skeleton Munkres gives in §33 Exercise 10 ("proceed as in the Urysohn lemma"), and no checkable published solution was located for it — dbFin's Section 33 Problem 10 prose is corrupted where it matters, as the card's earlier audit note records. Every step below is checked against the printed construction: $V_{n+1}^{2}\subset V_{n}$, the dyadic sets $U(k/2^{n})$ with $U\big((2k+1)/2^{n+1}\big)=V_{n+1}U(k/2^{n})$, and the inclusion $V_{n}U(k/2^{n})\subset U\big((k+1)/2^{n}\big)$.
 
 Throughout, $G$ is a topological group with identity $e$; $\mathcal{D}$ is the set of dyadic rationals; $U(p)=\varnothing$ for $p\le0$ and $U(p)=G$ for $p>1$; and $V_{n}$ is a symmetric open neighbourhood of $e$ with $V_{n+1}^{2}\subset V_{n}$ for $n\ge0$, such a $V_{n+1}$ existing at each stage because multiplication is continuous at $(e,e)$ and inversion is continuous.
 
