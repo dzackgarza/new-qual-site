@@ -78,6 +78,17 @@ audit:
     convergence by completeness, continuity of f from the Lipschitz bound, the fixed point
     identity, and uniqueness from (1-alpha)d(x,y) <= 0. The argument is the card's own; no
     retained set is cited on it. No repair needed to the statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. The proof is correct: the bound $d(x_{n+1},x_n)\le\alpha^nc$ by induction, the
+    Cauchy estimate $d(x_m,x_n)\le c\alpha^n/(1-\alpha)$ from the triangle inequality and the
+    geometric sum, completeness giving the limit, continuity from the Lipschitz inequality, and the
+    uniqueness step. No numbered theorem is cited beyond the definitions of completeness and of a
+    contraction; the argument is the card's own, and no retained solution set covers the exercise.
+    Citation by number: §43 Exercise 5, read in `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
