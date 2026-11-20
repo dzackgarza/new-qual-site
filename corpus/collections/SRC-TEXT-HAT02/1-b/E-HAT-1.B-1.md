@@ -43,10 +43,16 @@ audit:
     Re-confirmed in this pass rather than copied: PDF p. 105 carries the running head 96.
     The durable part of the locator is that printed page; the file path names this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement carried a printed page, the name of the retained file and the offset between the printed
+    and PDF pagination. All three removed; the exercise is cited as §1.B Exercise 1. No mathematics changed.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 1.B of Hatcher, *Algebraic Topology* (2002), printed p. 96, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §1.B Exercise 1; the statement below is its wording.
 
 Suppose a group $G$ acts simplicially on a $\Delta$-complex $X$, where "simplicially" means that each element of $G$ takes each simplex of $X$ onto another simplex by a linear homeomorphism.
 If the action is free, show it is a covering space action.
