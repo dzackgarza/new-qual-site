@@ -82,7 +82,7 @@ The retained published solution is Guanyu Li's *Hatcher solutions*, which answer
 The cellular chain groups $C_n=C_n^{CW}(X;F)$ are finite-dimensional over $F$ with $\dim_FC_n=c_n$, the number of $n$-cells, and $H_n(C_*)\cong H_n(X;F)$.
 
 ::: pf-proof
-The cellular chain complex of a CW complex has one basis element per $n$-cell over any coefficient ring, and its homology computes the singular homology with those coefficients (Theorem 2.35, p. 139, in its coefficient form). Since $X$ is a finite CW complex, only finitely many $c_n$ are nonzero.
+The cellular chain complex of a CW complex has one basis element per $n$-cell over any coefficient ring, and its homology computes the singular homology with those coefficients (Theorem 2.35, in its coefficient form). Since $X$ is a finite CW complex, only finitely many $c_n$ are nonzero.
 :::
 :::
 
