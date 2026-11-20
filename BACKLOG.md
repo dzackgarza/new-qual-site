@@ -29,7 +29,7 @@ ok
 
 ok
 
-## orphans (27)
+## orphans (26)
 
 - D-1H2E1
 
@@ -52,8 +52,6 @@ ok
 - D-DEFREGSQ
 
 - D-DEFTALG
-
-- D-DEFTENS
 
 - D-W4KQ7
 
@@ -87,7 +85,7 @@ ok
 
 ## prose-only-solutions (1)
 
-- 169 of the 12428 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
+- 168 of the 12428 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
 
 ## empty-provenance (6)
 
