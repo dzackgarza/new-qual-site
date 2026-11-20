@@ -27,11 +27,6 @@ $$
 
 ## Uniform continuity
 
-::: {.remark}
-A function $f\colon\RR\to\RR$ is uniformly continuous if and only if $\norm{f(\cdot+y)-f}_u \to 0$ as $y \to 0$.
-
-:::
-
 [[PR-SX6NO]]
 
 [[T-O4UD3]]
