@@ -444,10 +444,14 @@ audit:
     mapping to 1 in H^0(O_C)", and no such section exists, because the
     connecting map of 0 -> L^{-1} -> E \otimes L^{-1} -> O_C -> 0 sends 1 to the
     nonzero extension class xi, so H^0(E \otimes L^{-1}) = 0. The step now
-    computes t locally as the cube of the local section e_2 + a e_1 of
-    F^*E \otimes L^{-3} and reads off its zero locus as the section Sigma
+    computes t locally as the cube of the local section f_2 + a f_1 of
+    E \otimes L^{-1} and reads off its zero locus as the section Sigma
     directly; the conclusion Y = 3 Sigma and all the numbers after it are
-    unchanged. The rendered remark no longer says that part (c) is published in
+    unchanged. A correction to that paragraph, made in the commit after this
+    one: the cube must be taken in S^3(E \otimes L^{-1}), since F^*L^{-1} =
+    L^{-3} identifies F^*E \otimes L^{-3} with F^*(E \otimes L^{-1}); cubing a
+    section of E \otimes L^{-1} directly would land in L^{-9} and is wrong. The
+    rendered remark no longer says that part (c) is published in
     the form the steps correct. Not checked: the printed copies of Xie, Egbert
     or Yang, only the retained text layers and, for Xie, the arXiv v5, v6 and
     v7 PDF text.
@@ -621,11 +625,11 @@ Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$.
 
 Everything from here to the end of the step is this card's own, and no source read carries it: Xie prints only that $t$ determines an irreducible curve $C'$ of that class, and in this case the divisor is three times a section, so his irreducibility can only name the support while his smoothness claim is false. The local computation that follows replaces an earlier argument of this card which named a section of $\mathcal E\otimes\mathcal L^{-1}$ mapping to $1\in H^0(\OO_C)$: no such section exists, because the connecting map of $0\to\mathcal L^{-1}\to\mathcal E\otimes\mathcal L^{-1}\to\OO_C\to0$ sends $1$ to the nonzero extension class $\xi$ of step [](#s5){.pf-ref}, so $H^0(\mathcal E\otimes\mathcal L^{-1})=0$.
 
-The second arrow in that chain is the cube map $F^*\mathcal E\to S^3\mathcal E$, $e\mapsto e^3$. Let $U\subseteq C$ be an open set on which $\mathcal L$ is trivial, with local generator $l$, and choose a local frame $e_1,e_2$ of $\restrictionof{F^*\mathcal E}{U}$ in which $e_1$ spans the subbundle $\OO_C$ and $e_2$ maps to $l^3$. The sequence $0\to\mathcal L^{-3}\to F^*\mathcal E\otimes\mathcal L^{-3}\to\OO_C\to0$ splits, and a splitting carries $1$ to a section $u=(e_2+a e_1)\otimes l^{-3}$ with $a\in\OO_C(U)$; since $H^0(\mathcal L^{-3})=0$ the lift is unique. Then
+The second arrow in that chain is the cube map. Since $F^*\mathcal L^{-1}=\mathcal L^{-3}$, the bundle $F^*\mathcal E\otimes\mathcal L^{-3}$ is $F^*(\mathcal E\otimes\mathcal L^{-1})$, and the arrow sends a local section $v$ to $v^3\in S^3(\mathcal E\otimes\mathcal L^{-1})=S^3\mathcal E\otimes\mathcal L^{-3}$. Tensoring $0\to\OO_C\to F^*\mathcal E\to\mathcal L^3\to0$ by $\mathcal L^{-3}$ gives $0\to\mathcal L^{-3}\to F^*(\mathcal E\otimes\mathcal L^{-1})\to\OO_C\to0$, which splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$, unique because $H^0(\mathcal L^{-3})=0$. Choose a local frame $f_1,f_2$ of $\mathcal E\otimes\mathcal L^{-1}$ over an open $U$, with $f_1$ spanning the subbundle $\mathcal L^{-1}$ and $f_2$ mapping to a generator of $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\mathcal L^{-1})$. Then $u=\restrictionof{f_2^F}{U}+a\restrictionof{f_1^F}{U}$ for some $a\in\OO_C(U)$, and
 $$
-t=u^3=(e_2^3+a^3e_1^3)\otimes l^{-3}=\bigl((e_2+ae_1)\otimes l^{-1}\bigr)^3 .
+t=u^3=f_2^3+a^3f_1^3=(f_2+af_1)^3 ,
 $$
-In the fibre coordinate $[\alpha:\beta]$ for $\alpha e_1+\beta e_2$ over $U$, the section $t$ vanishes exactly where $\beta+a\alpha=0$, one point in each fibre, and these local equations agree on overlaps because they cut out the zero locus of $t$. So the zero locus is a section $\Sigma$ of $X\to C$, isomorphic to $C$, and $t$ vanishes to order $3$ along it: $Y=\operatorname{div}(t)=3\Sigma$. Since $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, the class of $\Sigma$ is $C_0-f$, so $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $C_0\cdot\Sigma=1-1=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
+the cross terms vanishing in characteristic $3$. In the fibre coordinate $[\alpha:\beta]$ for $\alpha f_1+\beta f_2$, the section $t$ reads $\beta^3+a^3\alpha^3=(\beta+a\alpha)^3$, which vanishes exactly where $\beta+a\alpha=0$: one point in each fibre, of multiplicity three. These local equations agree on overlaps because they cut out the zero locus of $t$, so that locus is a section $\Sigma$ of $X\to C$ isomorphic to $C$, and $Y=\operatorname{div}(t)=3\Sigma$. Since $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, the class of $\Sigma$ is $C_0-f$, so $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $C_0\cdot\Sigma=1-1=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
 :::
 
 :::
