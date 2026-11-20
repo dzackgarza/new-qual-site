@@ -31,6 +31,13 @@ audit:
     n-dimensional space are dependent, and the dependence is a nonzero polynomial over
     k annihilating the arbitrary element alpha, so every element is algebraic. No
     defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 12, final part E(i). In an
+    $n$-dimensional $E$, the $n+1$ vectors $1,\alpha,\ldots,\alpha^n$ are dependent, giving
+    a nonzero polynomial over $k$ with $p(\alpha)=0$; $\alpha$ was arbitrary. No defect.
 ---
 
 ::: {.exercise}
