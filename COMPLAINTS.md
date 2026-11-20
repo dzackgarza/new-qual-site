@@ -9762,3 +9762,17 @@ is still not in `tmp/sources` --- only `bourbaki-algebra-ch9-1959.pdf` is, so *L
 Algebras* Chapters 4--6 would have to be supplied if a second printed route is wanted. Chapter IV was
 not touched; its queue stands at IV.5.4 with eight cards, and the IV.5.2 Lefschetz finding stays
 recorded where it is.
+
+## 2026-11-19: #168's twenty-first round — the issue's Abhyankar pages are not in the paper
+
+**Object and need.** The brief for V.5.6 sends the reader to "Abhyankar Def. 3 and Lemma 12 at printed pp. 398, 412, 413". This round opened the retained paper and the card's own events, and the pages do not exist. No card is changed; the correction is to the brief and to anything that copies its page numbers.
+
+**The paper's page range settles it.** Abhyankar, *On the valuations centered in a local domain*, Amer. J. Math. 78 (1956), occupies printed pp. 321--348, which is what the card states and what the retained file is: `tmp/sources/abhyankar-1956-valuations-centered-local-domain.pdf` reports 28 pages, PDF p. 1 is printed p. 321 and PDF p. 28 is printed p. 348, so the file is the whole paper and nothing else. Printed p. 398 and printed pp. 412--413 are therefore not in this paper at all, and no reading of Definition 3 or Lemma 12 can be made at them.
+
+**The card's own locators are the right ones and are inside the file.** Its audit events record Definition 3 at printed p. 335, Lemma 10 at printed pp. 334--335 and Proposition 3 at printed pp. 336--337, with printed = PDF + 320, i.e. PDF pp. 15, 14--15 and 16--17; and a later event records that Lemma 12 is cited only to be set aside, because the quadratic transform it needs is defined for a regular local domain along a valuation and not for the local centre of a blowup. Those pages are all within printed 321--348.
+
+**What this round therefore changes.** The pages the brief gives for Abhyankar are withdrawn, and the card is left as it is. What remains open is the transcription check of the third kind at printed pp. 334--337, which the card's events claim and which this round did not redo: the PDF's text layer does not carry the words "Definition 3" as such on PDF p. 14, so the heading has to be located by its folio and its typography before the definition can be quoted.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card. The page count and the first and last folios were read from the PDF with `pdfinfo` and `pdftotext`.
+
+**Uncertainty.** Read: the page range of the paper and of the file, and the card's locators from its events. Not read: Definition 3's text, Lemma 12's text, and the card's remaining steps. #168's acceptance is still unmet for V.5.6, and V.5.8(b) and the unread V.4.16 steps are not reached. Any future brief for this card should give printed pp. 334--337, not 398 and 412--413.
