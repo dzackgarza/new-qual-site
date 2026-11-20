@@ -165,8 +165,12 @@ That is precisely similarity.
 
 ::: {.pf-step #s1-6}
 
-Similar matrices have the same rank.
-
+Therefore similar matrices have the same rank:
+$$
+\boxed{
+\operatorname{rank}(A)=\operatorname{rank}(B).
+}
+$$
 
 ::: pf-proof
 
@@ -188,27 +192,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-7}
-
-Therefore
-$$
-\boxed{
-\operatorname{rank}(A)=\operatorname{rank}(B).
-}
-$$
-
-
-::: pf-proof
-
-This is exactly step [](#s1-6){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-7){.pf-ref} is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 
