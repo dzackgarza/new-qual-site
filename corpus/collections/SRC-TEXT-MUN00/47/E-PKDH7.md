@@ -47,6 +47,17 @@ audit:
     and (d); and the convergence x^{1/n} -> 1 that produces the failure in (c). Not claimed: a
     retained solution set; the collection's provenance is the Munkres textbook, whose text is
     not retained here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. All four answers are right: $f_n=x+\sin nx$ is pointwise bounded by
+    $|x|+1$ and fails equicontinuity at $0$, since $x=\pi/(2n)$ gives $f_n(x)-f_n(0)=\pi/(2n)+1>1$;
+    $g_n=n+\sin x$ is unbounded at each point and equicontinuous with $\delta=\varepsilon$;
+    $h_n=|x|^{1/n}$ is bounded by $\max\{1,|x|\}$ and fails equicontinuity at $0$; and
+    $k_n=n\sin(x/n)$ satisfies $|k_n(x)|\le|x|$ and $|k_n(y)-k_n(x)|\le|y-x|$. The failure in (c)
+    now names its $\varepsilon=1/2$. Citation by number: §47 Exercise 1.
+
 ---
 
 ::: {.exercise}
@@ -92,7 +103,7 @@ At a fixed $x$ one has $g_{n}(x) \ge n - 1$, which is unbounded above, so the fa
 (c) The family $h_{n}(x) = \abs{x}^{1/n}$ is pointwise bounded and not equicontinuous.
 
 ::: pf-proof
-At a fixed $x$: if $\abs{x} \ge 1$ then $\abs{x}^{1/n} \le \abs{x}$ because $t^{1/n} \le t$ for $t \ge 1$ and $n \ge 1$; if $\abs{x} \le 1$ then $\abs{x}^{1/n} \le 1$. So $0 \le h_{n}(x) \le \max\theset{1,\abs{x}}$ for every $n$. Failure of equicontinuity at $0$: given $\delta > 0$ take $0 < x < \min\theset{\delta,1}$; since $x^{1/n} \to 1$ as $n \to \infty$ there is $n$ with $h_{n}(x) > 1/2$, while $h_{n}(0) = 0$, so $\abs{h_{n}(x) - h_{n}(0)} > 1/2$.
+At a fixed $x$: if $\abs{x} \ge 1$ then $\abs{x}^{1/n} \le \abs{x}$ because $t^{1/n} \le t$ for $t \ge 1$ and $n \ge 1$; if $\abs{x} \le 1$ then $\abs{x}^{1/n} \le 1$. So $0 \le h_{n}(x) \le \max\theset{1,\abs{x}}$ for every $n$. Failure of equicontinuity at $0$, with $\varepsilon = 1/2$: given $\delta > 0$ take $0 < x < \min\theset{\delta,1}$; since $x^{1/n} \to 1$ as $n \to \infty$ there is $n$ with $h_{n}(x) > 1/2$, while $h_{n}(0) = 0$, so $\abs{h_{n}(x) - h_{n}(0)} > 1/2$.
 
 :::
 
