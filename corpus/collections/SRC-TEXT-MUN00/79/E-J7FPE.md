@@ -58,6 +58,22 @@ audit:
   date: 2026-11-11
   note: >-
     Step-by-step check against the printed pages, and the repair. The proof now cites Munkres by number and page at each step: Exercise 4 of §79 (printed p. 483) for the identification pi_1(T) = Z^2, Theorem 53.1 (printed p. 337) for the covering R^2 -> T, Theorem 53.3 (printed p. 339) for products of coverings, Theorem 54.6 (printed p. 346) for p_* injective, Chapter 13 Convention (printed p. 477) for path and local path connectedness, and Theorem 79.4 (printed p. 482) for equivalence of coverings with conjugate subgroups. Corrected: part (b) said "assume the covering p: E -> T is connected", which the Chapter 13 Convention (printed p. 477) already gives for every covering map of the chapter, so the sentence now cites the Convention instead of assuming a hypothesis; and it now states that replacing p by f_A o p keeps E and changes H by A, which is what lets the three normal forms of the hint be applied. What the certificate does not cover: the algebra result in the hint (free abelian groups of rank 2) is used as the printed hint allows, not proved on the card.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose in two headed parts with no `pf` structure. It is
+    now a `pf` with eight steps covering (a) and (b), each carrying a `pf-proof`. The mathematics is
+    transcribed from the two published answers the earlier event names: Sammy Black's answer 971387
+    for part (a), whose identification $(f_A)_*=A$ is asserted there and computed here on the two
+    factor circles, and David Yang's MATH104 Homework 11 for part (b), the normal form of the printed
+    hint, the three product coverings and the equivalence theorem. Cited by numbered statement only:
+    Munkres, Topology, §79 Exercise 5, Theorem 53.1, Theorem 53.3, Theorem 60.1, Theorem 79.4,
+    Example 3 of §53 and Exercise 4 of §79. Checked: that $A(\ZZ^2)=\ZZ^2$ makes $f_A$ well defined
+    with $p\circ L_A=f_A\circ p$, that $f_{A^{-1}}$ inverts $f_A$, that $(f_A)_*$ sends the two factor
+    loops to the loops representing the columns of $A$, that $f_A\circ p$ is a covering with subgroup
+    $A(H)$, and that each of the three model coverings has the subgroup claimed for it.
+
 ---
 
 ::: {.exercise}
@@ -80,42 +96,83 @@ If $E$ is a covering space of $T$, then $E$ is homeomorphic either to $\RR^2$, o
 :::
 
 ::: {.solution}
-Both parts are taken from published solutions. Part (a)'s construction is Sammy Black's, answer 971387 (https://math.stackexchange.com/a/971387), posted 2014-10-13 to Math Stack Exchange question 971171, "Automorphism of fundamental group of torus" (https://math.stackexchange.com/questions/971171, asked by ChesterX on the same day): a matrix $A\in GL_2(\ZZ)$ lifts to the linear map $\tilde\varphi_A$ of $\RR^2$, which carries $\ZZ^2$ into itself and so descends to $T$, giving $(\varphi_A)_* = A$. That answer asserts the last equation without computing it, and the computation on the two factor circles below is this card's. Part (b) is David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 35--77 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L35-L77: the normal form of the printed hint, part (a) to put the subgroup into it, the three product coverings, and the equivalence theorem. The wording below is his argument with the book's results cited where he cites his own: he names Theorem 79.2 for the equivalence, Theorem 53.3 for products of coverings, and "Exercise 54.4" for the composition of two covering maps with finite fibres, a number whose exercise says nothing of the kind — the printed statement with that content is Exercise 4 of §53, which the book leaves to the reader — and the card cites Theorem 53.3 and Theorem 79.4 for the other two steps and proves the composite covering directly.
 
-Write $p: \RR^2 \to T = \RR^2/\ZZ^2$ for the standard covering map of Theorem 53.1; it is the universal covering, since $\RR^2$ is convex and a loop $f$ in $\RR^2$ is path homotopic to the constant loop at $f(0)$ by $H(s,t) = (1-t)f(s)$.
+Both parts are transcribed from published answers. Part (a) is Sammy Black's, answer 971387 to Math Stack Exchange question 971171, "Automorphism of fundamental group of torus"; that answer asserts the identification $(f_A)_*=A$ without computing it, and the computation on the two factor circles below is this card's. Part (b) is David Yang's, *MATH104: Topology, Fall 2023*, Homework 11, the argument of its problem on covering spaces of the torus, with Munkres's numbered results cited where Yang cites his own. No retained set in `tmp/sources` answers this exercise; the search is recorded in the `COMPLAINTS.md` entry for Sections 74 to 85.
 
-(a) The torus is $S^1 \times S^1$, so by Exercise 4 of §79 the projections of $T$ onto its two factors induce an isomorphism
-$$
-\pi_1(T,x_0)\cong\ZZ^2 .
-$$
-Every automorphism of $\ZZ^2$ is given by a matrix $A \in GL_2(\ZZ)$, so every isomorphism of $\pi_1(T,x_0)$ with itself corresponds to such an $A$ under that isomorphism.
+::: pf
 
-Let $L_A:\RR^2\to\RR^2$ be the linear map with matrix $A$. Since $A(\ZZ^2)=\ZZ^2$, the map $L_A$ carries the equivalence classes of $p$ to equivalence classes, so it induces
-$$
-f_A:T\to T,\qquad [v]\mapsto[Av].
-$$
-As $L_A(0)=0$ and $x_0 = p(0)$, the map $f_A$ fixes $x_0$, and $p \circ L_A = f_A \circ p$. Since $A^{-1}\in GL_2(\ZZ)$, the map $f_{A^{-1}}$ is an inverse for $f_A$, so $f_A$ is a homeomorphism.
+::: {.pf-step #identification}
+(a) The projections of $T=S^1\times S^1$ onto its two factors induce an isomorphism $\pi_1(T,x_0)\cong\ZZ^2$, and every isomorphism of $\pi_1(T,x_0)$ with itself corresponds under it to a matrix $A\in GL_2(\ZZ)$.
 
-On fundamental groups, $(f_A)_*$ carries the class of the loop $t \mapsto [te_i]$ to the class of $t \mapsto [A(te_i)]$, which is the image under $A$ of the class of $t\mapsto[te_i]$, for $i=1,2$; those two classes correspond to the two factor circles, hence generate $\pi_1(T,x_0)$ by the same Exercise 4 of §79. Therefore $(f_A)_* = A$, and every isomorphism of $\pi_1(T,x_0)$ with itself is induced by a homeomorphism of $T$ fixing $x_0$.
+::: pf-proof
+The fundamental group of a product is the product of the fundamental groups of the factors (Munkres, Theorem 60.1), so $\pi_1(T,x_0)\cong\ZZ\times\ZZ$, with the two factor circles $\{b_0\}\times S^1$ and $S^1\times\{b_0\}$ as generators. An automorphism of $\ZZ^2$ is given by an integer matrix with integer inverse, that is, by $A\in GL_2(\ZZ)$.
+:::
 
-(b) By the Convention of Chapter 13, a covering map of this chapter has path connected and locally path connected total space and base, so there is nothing to assume. Put
-$$
-H=p_*\pi_1(E,e_0)\le\pi_1(T,x_0)\cong\ZZ^2 .
-$$
-The subgroup $H$ is nonzero or zero. If $H \ne 0$, the algebra result quoted in the printed hint of the exercise (printed p. 484), applied to the free abelian group $F=\ZZ^2$ of rank $2$ and to the subgroup $H$, gives a basis $a_1,a_2$ of $\ZZ^2$ in which either $H=\langle m a_1\rangle$ or $H=\langle m a_1, n a_2\rangle$, with $m,n>0$. A basis change is an element $A \in GL_2(\ZZ)$, and by part (a) it is realised by the homeomorphism $f_A$ of $T$ fixing $x_0$. The map $f_A \circ p: E \to T$ is again a covering map with the same total space and the same slices: if an open set $U$ of $T$ is evenly covered by $p$, with slices $V_\alpha$, then $(f_A \circ p)^{-1}(f_A(U)) = p^{-1}(U)$ because $f_A$ is a bijection, and $f_A \circ p$ carries each $V_\alpha$ homeomorphically onto $f_A(U)$, so $f_A(U)$ is evenly covered by $f_A \circ p$. The subgroup of $f_A \circ p$ is $A(H)$, so it is enough to treat the three normal forms $H=0$, $H=\langle m e_1\rangle$, $H=\langle m e_1, n e_2\rangle$.
+:::
 
-The coverings of $T$ whose subgroups are these are the three displayed in [[E-XFMJA]] (Exercise 4 of §79): the universal covering $p:\RR^2\to T$ with subgroup $0$; the covering
-$$
-S^1\times\RR\longrightarrow T,\qquad (z,t)\longmapsto (z^m,e^{2\pi i t}),
-$$
-which is the product of the covering $z\mapsto z^m$ of $S^1$ (Example 3 of §53) with the covering $\RR\to S^1$ of Theorem 53.1, hence a covering map by Theorem 53.3, and whose subgroup is $m\ZZ\times 0=\langle m e_1\rangle$: by Theorem 60.1 the fundamental group of a product is the product of the fundamental groups of the factors, and a product map induces the product of the homomorphisms induced by its factors, so this subgroup is the product of the subgroup $m\ZZ$ of $\pi_1(S^1)$ of the covering $z\mapsto z^m$ with the subgroup $0$ of the covering $\RR\to S^1$; and the covering
-$$
-T\longrightarrow T,\qquad (z,w)\longmapsto(z^m,w^n),
-$$
-again a product of coverings by Theorem 53.3, whose subgroup is $\langle m e_1, n e_2\rangle$.
+::: {.pf-step #action}
+(a) For $A\in GL_2(\ZZ)$ the linear map $L_A:\RR^2\to\RR^2$ descends to a homeomorphism $f_A:T\to T$ with $p\circ L_A=f_A\circ p$ and $f_A(x_0)=x_0$.
 
-By Theorem 79.4 two coverings of $T$ are equivalent if and only if their subgroups are conjugate, and $\pi_1(T,x_0)$ is abelian, so conjugacy is equality. Hence $E$ is homeomorphic to the total space of the covering of $T$ with subgroup $H$, and therefore
-$$
-\boxed{E\cong\RR^2,\quad S^1\times\RR,\quad\text{or}\quad T.}
-$$
+::: pf-proof
+Write $p:\RR^2\to T=\RR^2/\ZZ^2$ for the standard covering map (Munkres, Theorem 53.1). Since $A(\ZZ^2)=\ZZ^2$, equivalent vectors have equivalent images, so $f_A([v])=[Av]$ is well defined and $p\circ L_A=f_A\circ p$. $L_A(0)=0$ and $x_0=p(0)$, so $f_A$ fixes $x_0$. Since $A^{-1}\in GL_2(\ZZ)$, the map $f_{A^{-1}}$ is an inverse of $f_A$, so $f_A$ is a homeomorphism.
+:::
+
+:::
+
+::: {.pf-step #induced-map}
+(a) $(f_A)_*=A$ under the identification of step [#identification]{.pf-ref}.
+
+::: pf-proof
+Let $e_1,e_2$ be the standard basis of $\RR^2$ and let $\gamma_i(t)=[te_i]$ be the loop representing the $i$-th factor circle. Then $(f_A)_*[\gamma_i]$ is the class of $t\mapsto[A(te_i)]=t\mapsto tAe_i$, which is the loop representing $Ae_i$. The two classes $[\gamma_1],[\gamma_2]$ generate $\pi_1(T,x_0)$ by step [#identification]{.pf-ref}, so $(f_A)_*$ acts on the whole group as $A$.
+:::
+
+:::
+
+::: {.pf-step #part-a}
+(a) Every isomorphism of $\pi_1(T,x_0)$ with itself is induced by a homeomorphism of $T$ fixing $x_0$.
+
+::: pf-proof
+Given an isomorphism, step [#identification]{.pf-ref} gives the matrix $A\in GL_2(\ZZ)$ it corresponds to, and steps [#action]{.pf-ref} and [#induced-map]{.pf-ref} give a homeomorphism $f_A$ of $T$ fixing $x_0$ with $(f_A)_*=A$.
+:::
+
+:::
+
+::: {.pf-step #subgroup}
+(b) With $H=p_*\pi_1(E,e_0)\le\pi_1(T,x_0)\cong\ZZ^2$, the algebra result quoted in the exercise's hint puts $H$ into one of three normal forms after a change of basis.
+
+::: pf-proof
+The Convention of Munkres's Chapter 13 makes a covering map's total space and base path connected and locally path connected, so $\pi_1(E,e_0)$ is defined. If $H\ne0$, the printed algebra result applies to the free abelian group $\ZZ^2$ of rank $2$ and its nontrivial subgroup $H$: there is a basis $a_1,a_2$ with either $H=\langle ma_1\rangle$ or $H=\langle ma_1,na_2\rangle$, $m,n>0$. A change of basis is an element $A\in GL_2(\ZZ)$.
+:::
+
+:::
+
+::: {.pf-step #replace-cover}
+(b) Replacing $p$ by $f_A\circ p$ does not change the total space, so it is enough to treat the three normal forms.
+
+::: pf-proof
+$\mathrm{id}$ is a homeomorphism of $E$, so the total space is unchanged. The composite $f_A\circ p:E\to T$ is a covering map with subgroup $A(H)$: if $U$ is evenly covered by $p$ with slices $V_\alpha$, then $(f_A\circ p)^{-1}(f_A(U))=p^{-1}(U)$, since $f_A$ is a bijection, and $f_A\circ p$ carries each $V_\alpha$ homeomorphically onto $f_A(U)$. So the classification of $E$ depends only on $A(H)$.
+:::
+
+:::
+
+::: {.pf-step #three-coverings}
+(b) The coverings of $T$ with subgroups $0$, $\langle me_1\rangle$ and $\langle me_1,ne_2\rangle$ have total spaces $\RR^2$, $S^1\times\RR$ and $T$.
+
+::: pf-proof
+These are the three coverings of Munkres, Exercise 4 of §79. The universal covering $p:\RR^2\to T$ has subgroup $0$, as $\RR^2$ is convex and simply connected (Munkres, Theorem 53.1). The map $S^1\times\RR\to T$, $(z,t)\mapsto(z^m,e^{2\pi it})$, is the product of the covering $z\mapsto z^m$ of $S^1$ (Example 3 of §53) with $\RR\to S^1$ (Theorem 53.1), hence a covering map by Theorem 53.3; by Theorem 60.1 and the fact that a product map induces the product of the induced homomorphisms, its subgroup is $m\ZZ\times0=\langle me_1\rangle$. The map $T\to T$, $(z,w)\mapsto(z^m,w^n)$, is likewise a product of coverings and has subgroup $\langle me_1,ne_2\rangle$.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) $E$ is homeomorphic to $\RR^2$, to $S^1\times\RR$, or to $T$.
+
+::: pf-proof
+By the classification of coverings (Munkres, Theorem 79.4) two coverings of $T$ are equivalent exactly when their subgroups are conjugate, and $\pi_1(T,x_0)$ is abelian by step [#identification]{.pf-ref}, so conjugacy is equality. Hence $E$ is homeomorphic to the total space of the covering with subgroup $H$, which is one of the three of step [#three-coverings]{.pf-ref} by steps [#subgroup]{.pf-ref} and [#replace-cover]{.pf-ref}. So $\boxed{E\cong\RR^2,\ S^1\times\RR,\ \text{or}\ T}$.
+:::
+
+:::
+
+:::
+
 :::
