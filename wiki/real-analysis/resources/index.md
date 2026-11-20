@@ -15,6 +15,4 @@ order: 11
 
 - [[real-analysis/resources/solutions|Solutions]] -- solution collections.
 
-- [[real-analysis/resources/extra-questions|Extra questions]] -- the problems of the UNL real analysis workshop packet, in source order on its collection page.
-
 The [[archives/card-archives|Sources]] listing lists exams by subject, institution, and year, and each exam page links its source material.
