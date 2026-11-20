@@ -13,7 +13,6 @@ topics:
 # The spaces
 
 Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$.
-By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 [[PR-NFB7Q]]
 
@@ -55,8 +54,3 @@ For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense sub
 [[E-IAQ6D]]
 
 [[PR-C626A]]
-
-::: {.remark title="Consequences of the Riesz--Fischer proof"}
-The proof of the Riesz--Fischer theorem shows that every sequence converging in $L^p$, $1\leq p<\infty$, has a subsequence converging almost everywhere to the same limit.
-
-:::
