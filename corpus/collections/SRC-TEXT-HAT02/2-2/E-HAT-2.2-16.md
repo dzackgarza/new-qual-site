@@ -165,7 +165,7 @@ Here $\binom{n}{n+1}=0$.
 
 ::: pf-proof
 
-The simplex is contractible, so its reduced singular homology vanishes: $H_n(\Delta^n)=0$ for $n>0$ and $\widetilde H_0(\Delta^n)=0$, by Proposition 2.8 (p. 110) for the one-point space together with Corollary 2.11 (p. 111), homotopy invariance. The simplicial chain complex computes the singular homology by Theorem 2.27 (p. 128), so the reduced simplicial chain complex is exact. Thus
+The simplex is contractible, so its reduced singular homology vanishes: $H_n(\Delta^n)=0$ for $n>0$ and $\widetilde H_0(\Delta^n)=0$, by Proposition 2.8 for the one-point space together with Corollary 2.11, homotopy invariance. The simplicial chain complex computes the singular homology by Theorem 2.27, so the reduced simplicial chain complex is exact. Thus
 $$
 Z_i=B_i
 $$

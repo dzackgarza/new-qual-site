@@ -89,7 +89,7 @@ This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/
 
 ::: {.pf-step #s2}
 
-For $n=3$, the quotient has the corresponding standard cellular structure, whose top attaching maps are those of $\RP^3$: two opposite orientation components cancel, with degree $1+(-1)^3=0$ by the cellular boundary computation of Theorem 2.35 (p. 139). Thus $\partial_3=0$. The chain complex simplifies to
+For $n=3$, the quotient has the corresponding standard cellular structure, whose top attaching maps are those of $\RP^3$: two opposite orientation components cancel, with degree $1+(-1)^3=0$ by the cellular boundary computation of Theorem 2.35. Thus $\partial_3=0$. The chain complex simplifies to
 $$
 \ZZ^2\xrightarrow{\partial_3=0}\ZZ\xrightarrow{\ \partial_2=2\ }\ZZ\xrightarrow{\ \partial_1=0\ }\ZZ
 $$

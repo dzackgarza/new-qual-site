@@ -54,7 +54,7 @@ The quotient map is a homeomorphism on the open cell. Its inverse images show th
 The inclusion $A\hookrightarrow X$ induces a surjection on fundamental groups.
 
 ::: pf-proof
-Let $\gamma$ be a loop in $X$ based at $x_0\in A$. Apply the subdivision argument of Lemma 1.15 (p. 35) to the open cover in step [](#open-cover){.pf-ref}, with the first and last pieces chosen in $U$. Combine consecutive pieces that lie in the same cover set. Each remaining $V$ piece has both endpoints in $U\cap V$. Replace it by a path in $U\cap V$ with the same endpoints. The replacement is homotopic relative to endpoints in $V$, because $V$ is simply connected. This yields a loop in $U$ homotopic to $\gamma$ relative to $x_0$. The deformation retraction $U\to A$ then gives a loop in $A$ representing $[\gamma]$.
+Let $\gamma$ be a loop in $X$ based at $x_0\in A$. Apply the subdivision argument of Lemma 1.15 to the open cover in step [](#open-cover){.pf-ref}, with the first and last pieces chosen in $U$. Combine consecutive pieces that lie in the same cover set. Each remaining $V$ piece has both endpoints in $U\cap V$. Replace it by a path in $U\cap V$ with the same endpoints. The replacement is homotopic relative to endpoints in $V$, because $V$ is simply connected. This yields a loop in $U$ homotopic to $\gamma$ relative to $x_0$. The deformation retraction $U\to A$ then gives a loop in $A$ representing $[\gamma]$.
 :::
 
 :::

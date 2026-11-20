@@ -70,7 +70,7 @@ H_1(R)=\ZZ^g,
 \qquad
 H_i(R)=0\quad(i\ge2).
 $$
-The homology of $M_g$ is that of Example 2.36 (p. 141):
+The homology of $M_g$ is that of Example 2.36:
 $$
 H_0(M_g)=\ZZ,\qquad H_1(M_g)=\ZZ^{2g},\qquad H_2(M_g)=\ZZ.
 $$
@@ -148,7 +148,7 @@ $$
 
 ::: pf-proof
 
-The long exact sequence of the pair, that of Theorem 2.16 (p. 117), begins
+The long exact sequence of the pair, that of Theorem 2.16, begins
 $$
 0=H_3(R)\to H_3(R,M_g)\to H_2(M_g)=\ZZ\to H_2(R)=0,
 $$
