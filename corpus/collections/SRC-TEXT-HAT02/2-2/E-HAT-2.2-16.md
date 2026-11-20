@@ -183,7 +183,7 @@ Starting with
 $$
 \operatorname{rank}B_{-1}=1
 $$
-in the augmented complex, where $\partial_0=\varepsilon:C_0\to\ZZ$ is the augmentation of p. 110 and $B_{-1}=\operatorname{im}\varepsilon=\ZZ$, and using Pascal's identity gives inductively
+in the augmented complex, where $\partial_0=\varepsilon:C_0\to\ZZ$ is the augmentation defined in §2.2 and $B_{-1}=\operatorname{im}\varepsilon=\ZZ$, and using Pascal's identity gives inductively
 $$
 \operatorname{rank}Z_i
 =
