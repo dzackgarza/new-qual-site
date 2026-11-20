@@ -83,6 +83,21 @@ audit:
     Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the
     Exercises and not the end-of-chapter Problems, so no published solution of this Problem was
     located.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 3*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 5 and checked against Chapter 3, Problem 5: the Cauchy transform is holomorphic off the
+    segment and $O(1/\abs z)$ at infinity; the difference of its two boundary values is the Poisson
+    approximate identity applied to the continuous density, so it tends to $h(x)$; Hölder continuity
+    makes the singular kernel bounded by $C\abs{t-x}^{\alpha-1}$, giving the uniform convergence to
+    $g_\pm=\mp\frac12h+\frac1{2\pi i}\operatorname{p.v.}\int h(t)/(t-x)\,dt$; and uniqueness follows
+    by patching a difference with equal boundary values and applying Morera and Liouville. Its text
+    is an outline; the card's steps supply the endpoint behaviour at $\pm M$ the printed Problem asks
+    about, and the estimates. Not checked: anything in the published document outside its Problem 5.
 ---
 
 ::: {.exercise}
@@ -122,7 +137,7 @@ $$
 g(z)\coloneqq\frac{1}{2\pi i}\int_{-M}^{M}\frac{h(y)}{y-z}\,dy,\qquad z\in\Omega\coloneqq\CC\setminus[-M,M].
 $$
 
-The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated. The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, and the published set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, so the derivation below is the card's throughout.
+The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated. A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 3* (Problem 5), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`; checked against Chapter 3, Problem 5, it carries the argument: $g(z)=\frac1{2\pi i}\int_{-M}^{M}h(t)/(t-z)\,dt$ is holomorphic off the segment and vanishes at infinity, the difference of the two boundary values is the Poisson approximate identity applied to $h$, Hölder continuity gives the uniform bound by $C\abs{t-x}^{\alpha-1}$ and hence the boundary values $g_\pm$, and patching across the segment with Morera plus Liouville gives uniqueness. The derivation below follows that route and supplies the endpoint behaviour the printed Problem asks about; the audit trail records the comparison.
 
 ::: pf
 
