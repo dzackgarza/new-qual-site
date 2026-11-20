@@ -31,6 +31,18 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 39 Exercise 2, printed p. 247, with the definitions of point-finite and locally finite, and the fact that $1/n\to0$. No correction was needed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §39 Exercise 2 and found correct. The negative search for a published set
+    is recorded once, for all of §39--§42, in `COMPLAINTS.md`. The construction is
+    $\mathcal{A}=\{(-\infty,1),(0,\infty)\}\cup\{(1/(n+1),1/(n-1)):n\ge2\}$, an open cover
+    because the two rays already cover $\RR$; it is point-finite because a point $x$ lies in
+    $U_n$ exactly when $1/x-1<n<1/x+1$, an interval of length two, so at most two of the $U_n$,
+    and because no $U_n$ meets $(-\infty,0]$; and it is not locally finite at $0$, every
+    neighbourhood of which meets $U_n$ for all large $n$. Checked that the failure is at $0$ and
+    not at $1$, where only finitely many $U_n$ reach a small neighbourhood.
 ---
 
 ::: {.exercise}
