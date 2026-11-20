@@ -69,7 +69,7 @@ Write $\chi(K)=\sum_{k}(-1)^{k}(\text{number of }k\text{-cells})$ for a finite C
 $\chi(M_{g})=2-2g$.
 
 ::: pf-proof
-The standard CW structure of Example 2.36 has one $0$-cell, $2g$ $1$-cells and one $2$-cell; the alternating sum of those numbers, which is the definition of $\chi$ on printed p. 146, is $1-2g+1=2-2g$.
+The standard CW structure of Example 2.36 has one $0$-cell, $2g$ $1$-cells and one $2$-cell; the alternating sum of those numbers, which is the definition of $\chi$ for a finite CW complex, is $1-2g+1=2-2g$.
 :::
 
 :::
