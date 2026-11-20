@@ -1,11 +1,11 @@
 ---
-title: The statements
+title: Tonelli and Fubini
 order: 10
 topics:
 - Measure Theory
 ---
 
-# The statements
+# Tonelli and Fubini
 
 Let $(X,\mathcal M,\mu)$ and $(Y,\mathcal N,\nu)$ be $\sigma$-finite measure spaces with product measure $\mu\times\nu$ on $\mathcal M\otimes\mathcal N$.
 [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]] compares the hypotheses.
