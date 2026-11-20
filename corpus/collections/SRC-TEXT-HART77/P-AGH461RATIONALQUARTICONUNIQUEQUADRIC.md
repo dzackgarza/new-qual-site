@@ -87,6 +87,17 @@ audit:
     p. 188. Those references were used and not named.
 
     Not checked: the same two items as above, FE-CRVQUAD's proof and Hartshorne V. Ex. 2.9.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Citation form (#184). Every reference in this card's text is now carried by its numbered
+    statement: Exercise IV.6.1; Exercise IV.3.4(a), (b); Exercise IV.3.6(b); Example II.8.20.3 and
+    Exercise II.8.4(f) for the plane-curve genus; Exercise II.8.4(g) for the (2,2)
+    complete-intersection genus; Remark IV.6.4.1(d) with Exercise V.2.9 for the quadric-cone genus.
+    No page, PDF page or page offset appears in the card's text; the locators inside the events of
+    2026-09-18 and 2026-11-19 are records of those passes and are left as written (QUAL-11). The
+    mathematics is unchanged in this pass.
 ---
 
 ::: {.problem}
@@ -110,8 +121,7 @@ it would have genus
 $$
 \frac{(4-1)(4-2)}2=3
 $$
-by the plane-curve genus formula, Hartshorne II.8.20.3 at printed p. 183 and
-II. Ex. 8.4(f).
+by the plane-curve genus formula, Hartshorne Example II.8.20.3 and Exercise II.8.4(f).
 But $X$ is rational, so its genus is $0$.  Hence $X$ is nondegenerate in
 $\PP^3$.
 
@@ -185,8 +195,7 @@ P_X(t)=4t+1-g(X)=4t+1,
 \qquad
 P_Y(t)=4t+1-p_a(Y)=4t,
 $$
-the second by the complete-intersection genus formula, Hartshorne II. Ex.
-8.4(g) at printed p. 188, which gives
+the second by the complete-intersection genus formula, Hartshorne Exercise II.8.4(g), which gives
 $$
 p_a(Y)
 =1+\frac{(2)(2)(2+2-4)}2
