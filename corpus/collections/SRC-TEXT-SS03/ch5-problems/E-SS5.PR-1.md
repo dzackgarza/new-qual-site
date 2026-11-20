@@ -28,10 +28,17 @@ audit:
     p. 156, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 5 sets its asterisks before Problems 2, 3 and 4 only, so
+    none stands before Problem 1. The remark records that. The locator by numbered statement is
+    Chapter 5, Problem 1; the page readings in the earlier events are superseded by it. Not checked in this pass: the wording of the statement and the argument.
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 5 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 156; the statement below is its wording.
+This is Problem 1 of Chapter 5 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Prove that if $f$ is holomorphic in the unit disc, bounded, and not identically zero, and $z_1,z_2,\ldots$ are its zeros, with $\abs{z_k}<1$, then
 
@@ -40,6 +47,10 @@ $$
 $$
 
 *Hint.* Use Jensen's formula.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 5, Problem 1).
 :::
 
 ::: {.solution}
