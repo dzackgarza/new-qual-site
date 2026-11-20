@@ -15,6 +15,13 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 10 sets its asterisks before Problems 1, 5 and 6
+    only, so none stands before Problem 4. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -35,6 +42,10 @@ $$
 hence $\sum 1/(k^2 + \ell^2) < \infty$, where the sum is over all integers $k$ and $\ell$ such that $k, \ell \neq 0$. Why is this a contradiction?]
 
 (d) Prove that if $F : \halfplane \to \CC$ is holomorphic, bounded, and invariant under $G$, then $F$ is constant. [Hint: Replace $F(\tau)$ by $F(\tau) - F(i)$ so that we can assume $F(i) = 0$ and prove $F = 0$. For each relatively prime $c$ and $d$ with opposite parity, choose $g \in G$ so that $g(i) = x_{c,d} + i/(c^2 + d^2)$ with $\abs{x_{c,d}} \le 1$.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 10, Problem 4).
 :::
 
 ::: {.solution}
