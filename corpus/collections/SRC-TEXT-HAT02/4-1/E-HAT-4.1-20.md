@@ -55,8 +55,7 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 20, printed p. 359,
-    and the obstruction theory of §4.3 (printed pp. 412-419). Two repairs, both in the proofs rather
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 20, and the obstruction theory of §4.3. Two repairs, both in the proofs rather
     than in the statements. (1) Step `postnikov` justified the vanishing of the obstructions with "the
     coefficients vanish for i >= d+1", which is false: above degree d the fibre of Y -> Y^d has the
     homotopy of Y, and the statement assumes nothing there. The step now separates the two ranges:
@@ -76,7 +75,7 @@ Show that $[X, Y]$ is finite if $X$ is a finite connected CW complex and $\pi_i(
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 20. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 20, printed p. 359, and against the obstruction theory of Section 4.3 (pp. 412--419), in particular the compression of maps of a $d$-dimensional complex into the $d$-th Postnikov stage.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 20. It is checked against Hatcher, Algebraic Topology, §4.1 Exercise 20, and against the obstruction theory of §4.3, in particular the compression of maps of a $d$-dimensional complex into the $d$-th Postnikov stage.
 
 ::: pf
 
