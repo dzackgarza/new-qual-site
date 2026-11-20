@@ -44,7 +44,7 @@ Since $\frac1x = \int_0^\infty e^{-xt}\dt$ for $x>0$, applying Fubini's theorem 
 :::
 
 ::: {.proposition title="Layer cake formula"}
-If $\mu$ is $\sigma$-finite and $f$ is measurable, then $\int \abs f\,d\mu = \int_0^\infty \mu(\theset{\abs f > t})\dt$ [@Fol99, §6.4].
+If $\mu$ is $\sigma$-finite and $f$ is measurable, then $\int \abs f\,d\mu = \int_0^\infty \mu(\theset{\abs f > t})\dt$ [@Fol99, Proposition 6.24].
 
 :::
 
