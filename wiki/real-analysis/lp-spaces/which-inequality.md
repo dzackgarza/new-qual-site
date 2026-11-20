@@ -34,10 +34,9 @@ $$
 
 [[T-5BFVS]]
 
-::: {.remark}
-For $1<p<\infty$, equality holds in [[PR-7BGSE|Hölder's inequality]] exactly when $\abs f^p$ and $\abs g^q$ are proportional almost everywhere [@Fol99, §6.1].
-
-The case of equality in Hölder's inequality is the case of equality in the Young inequality $\abs{fg}\le\frac{\abs f^p}{p}+\frac{\abs g^q}{q}$ used in the proof: that inequality is an equality exactly when $\abs f^p=\abs g^q$, and after normalising $\norm f_p=\norm g_q=1$ the Hölder bound is attained there.
+::: {.proposition title="The case of equality in Hölder's inequality"}
+Let $1<p<\infty$ and let $q$ be its conjugate exponent.
+For $f\in L^p$ and $g\in L^q$, equality holds in [[PR-7BGSE|Hölder's inequality]] exactly when $\alpha\abs f^p=\beta\abs g^q$ almost everywhere for some constants $\alpha,\beta$ with $\alpha\beta\neq0$ [@Fol99, Theorem 6.2].
 :::
 
 
