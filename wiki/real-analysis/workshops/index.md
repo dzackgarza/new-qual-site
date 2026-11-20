@@ -20,6 +20,6 @@ The week's topics and review problems are on [[real-analysis/workshops/real-week
 
 The second week constructs Lebesgue measure from an outer measure and Carathéodory's criterion, then passes to measurable functions and the almost-everywhere quantifier ([[D-ALMOSTEVERY]]).
 The convergence theorems compare the hypotheses under which limits pass through integrals: monotone convergence handles increasing nonnegative sequences, Fatou's lemma gives the inequality that survives without a dominating function, and dominated convergence gives equality under one integrable majorant ([[T-5K3IO]], [[T-LDJNS]], [[T-IJQQG]]).
-Product measures introduce slices ([[D-SLICES]]); Tonelli's theorem integrates nonnegative functions in either order, and Fubini's theorem extends the interchange to integrable functions ([[T-4GPEF]], [[FT-4JRQX]]).
+Product measures introduce slices ([[D-SLICES]]); Tonelli's theorem integrates nonnegative functions in either order ([[FT-4JRQX]]), and Fubini's theorem extends the interchange to integrable functions ([[T-4GPEF]]).
 Egorov's and Lusin's theorems are the two regularity statements behind Littlewood's principles ([[FT-OGS76]], [[T-CGFCU]]).
 The week's topics and review problems are on [[real-analysis/workshops/real-week-2-measure-theory|Week 2: measure theory and Fubini--Tonelli]].
