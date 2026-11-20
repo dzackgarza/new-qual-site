@@ -9469,3 +9469,17 @@ printed book itself. The three cited propositions --- (4.3.3), (5.2) and (5.5.5)
 `P-AGH455CURVESOFGENUSFIVE`, IV.5.7 `P-AGH457AUTOMORPHISMSGENUSTHREE`, IV.6.1 and the rest of §IV.6.
 Four of the eight were closed by other work between the last batch and this one; the count is
 measured, not carried.
+
+## 2026-11-19, twenty-fourth item: §10.1 Ex. 5 and Ex. 11 read, both correct
+
+**Object.** The first two residue-5 cards of `SRC-TEXT-HK71` §10.1.
+
+**`E-HK-101-5`, §10.1 Exercise 5, printed p. 365 — correct.** A bilinear form $f$ with $f(\alpha,\beta)=-f(\beta,\alpha)$ has $a_{ij}=f(e_i,e_j)=-a_{ji}$ and $a_{ii}=0$ over $\RR$, so its matrix is skew-symmetric; conversely $f(\beta,\alpha)=\beta^tA\alpha=\alpha^tA^t\beta=-\alpha^tA\beta$ for skew-symmetric $A$; and the general real skew-symmetric $3\times3$ matrix has three parameters, giving $f=a(x_1y_2-x_2y_1)+b(x_1y_3-x_3y_1)+c(x_2y_3-x_3y_2)$ with $a,b,c\in\RR$. Commit `2b60107c02`.
+
+**`E-HK-101-11`, §10.1 Exercise 11, printed p. 366 — correct.** $L_{f_1}:V_1\to V_1^*$ is injective because the restriction of $f$ is non-degenerate, so $\operatorname{rank}L_{f_1}=\dim V_1$; and $L_{f_1}=\rho L_f i$ with $i$ the inclusion and $\rho$ the restriction of functionals, so $\operatorname{rank}L_{f_1}\le\operatorname{rank}L_f=\operatorname{rank}f$, giving $\operatorname{rank}f\ge\dim V_1$. Commit `4beac22d29`.
+
+**Checks.** `.scratch/report_check.py`, 0 diagnostics on each; `qualc.authoring check`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, numbering 1–3 with QED labels on both; the pre-commit card-YAML and schema hook on each commit.
+
+**Not checked.** Neither card has a retained solution set; the rank inequality for a composition and the identification $\operatorname{rank}f=\operatorname{rank}L_f$ are used as the book states them.
+
+**The residue.** Seven residue-5 HK cards remain after this pair: `E-HK-102-5`, `-102-11`, `-103-5`, `-103-11`, `-104-5` — five, in fact, since `-104-11` was repaired in the provenance batch — plus `E-HK-68-11`'s neighbours already done. The §10 pairs are the last group.
