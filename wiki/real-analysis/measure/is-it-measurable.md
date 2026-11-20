@@ -14,9 +14,9 @@ topics:
 
 ::: {.proposition}
 Let $(X,\mathcal M)$ be a measurable space and $f,g\colon X\to\RR$ [[D-DHFN4|measurable]] functions.
-Then $\varphi\circ f$ is measurable for every continuous $\varphi\colon\RR\to\RR$, and $fg$ and $f/g$ are measurable, where $g$ does not vanish.
-If $\theset{E_k}$ is a countable measurable cover of $X$ and $h\restrict_{E_k}$ is measurable for every $k$, then $h$ is measurable.
-Continuous functions and monotone functions $\RR\to\RR$ are Borel measurable, and a function equal almost everywhere to a Lebesgue measurable function is Lebesgue measurable [@Fol99, §2.1].
+Then $f+g$ and $fg$ are measurable, and if $(f_n)$ is a sequence of measurable functions converging pointwise to $h$, then $h$ is measurable [@Fol99, Proposition 2.6 and Theorem 2.9].
+If $X=\bigcup_{k\geq1}E_k$ with $E_k$ measurable and $h\restrict_{E_k}$ measurable for every $k$, then $h$ is measurable: the preimage of a Borel set is the union of its preimages in the pieces, which is to say the argument of [@Fol99, Exercise 2.21].
+Continuous functions $\RR\to\RR$ are Borel measurable [@Fol99, Proposition 2.2], and a function equal almost everywhere to a Lebesgue measurable function is Lebesgue measurable, Lebesgue measure being complete [@Fol99, Proposition 2.11].
 
 :::
 
