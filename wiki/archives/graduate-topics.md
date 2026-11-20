@@ -7,7 +7,7 @@ order: 110
 
 The topics of the graduate courses that the qualifying examinations cover,
 grouped by subject and, within each subject, by the part of it the course treats.
-Each topic links the page that treats it, or its entry page if that page is not written yet.
+Each topic links the card or page that treats it, or its entry page if that page is not written yet.
 
 ## Algebra
 
@@ -33,7 +33,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[algebra/group-theory/cayleys-theorem|Cayley's theorem]]
 
-- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]]
+- [[T-XDMK2|Cauchy's theorem]]
 
 - [[C-O7CP3|class equation]]
 
@@ -54,8 +54,6 @@ Each topic links the page that treats it, or its entry page if that page is not 
 - [[algebra/group-theory/dihedral-groups|dihedral groups]]
 
 - [[algebra/group-theory/direct-products|direct products]]
-
-- [[algebra/group-theory/factor-groups|factor groups]]
 
 - [[algebra/group-theory/finitely-generated-groups|finitely generated groups and their presentations]]
 
@@ -81,7 +79,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[algebra/group-theory/normal-subgroups|normal subgroups]]
 
-- [[algebra/group-theory/groups|$p$-groups]]
+- [[algebra/groups/the-standard-families|$p$-groups]]
 
 - [[algebra/group-theory/quotient-groups|quotient groups]]
 
@@ -186,8 +184,6 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 [@DF04, chs. 13--14].
 
-- [[algebra/field-theory/algebraic-and-transcendental-extensions|algebraic and transcendental extensions]]
-
 - [[algebra/field-theory/algebraic-closures|algebraic closures]]
 
 - [[algebra/field-theory/algebraic-extensions|algebraic extensions]]
@@ -213,8 +209,6 @@ Each topic links the page that treats it, or its entry page if that page is not 
 - [[algebra/field-theory/normal-extensions|normal extensions]]
 
 - [[algebra/field-theory/separable-and-inseparable-extensions|separable and inseparable extensions]]
-
-- [[algebra/field-theory/separable-extensions|separable extensions]]
 
 - [[algebra/field-theory/solvability-of-polynomials-by-radicals|solvability of polynomials by radicals]]
 
@@ -458,8 +452,6 @@ Each topic links the page that treats it, or its entry page if that page is not 
 - [[complex-analysis/mappings-of-finitely-connected-domains|mappings of finitely connected domains]]
 
 - [[T-BYNL5|maximum modulus principle]]
-
-- [[complex-analysis/maximum-principle|maximum principle]]
 
 - [[complex-analysis/mean-value-property|mean value property]]
 

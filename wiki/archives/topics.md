@@ -7,7 +7,7 @@ title: Undergraduate syllabus topics
 
 The topics of the undergraduate courses in calculus, linear algebra, algebra,
 real analysis, complex analysis, and point-set topology, grouped by course.
-Each topic links the page that treats it, or its entry page if that page is not written yet.
+Each topic links the card or page that treats it, or its entry page if that page is not written yet.
 
 ## Calculus (Stewart)
 
@@ -76,7 +76,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 - [[algebra/finite-field-extensions|finite field extensions]]
 - [[algebra/fields/finite-fields|finite fields]]
 - [[algebra/finitely-generated-abelian-groups|finitely generated abelian groups]]
-- [[algebra/resources/groups|groups]]
+- [[algebra/groups/index|groups]]
 - [[algebra/groups-acting-on-sets|groups acting on sets]]
 - [[algebra/homomorphisms|homomorphisms]]
 - [[algebra/ideals|ideals]]
@@ -181,7 +181,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 - [[T-QHIHJ|Liouville's theorem]]
 - [[complex-analysis/logarithm-function|logarithm function]]
 - [[complex-analysis/mapping-properties-of-linear-fractional|mapping properties of linear fractional transformations]]
-- [[complex-analysis/maximum-principle|maximum principle]]
+- [[T-BYNL5|maximum principle]]
 - [[T-HRPNO|residue theorem]]
 - [[complex-analysis/mean-value-property|mean value property]]
 - [[T-LHSMY|Morera's theorem]]
