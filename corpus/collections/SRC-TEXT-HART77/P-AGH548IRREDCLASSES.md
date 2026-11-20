@@ -388,6 +388,42 @@ audit:
     rank-zero locus. No statement, hypothesis or alternative of the exercise changes;
     the step's conclusion is the one it stated before. Not checked: no certificate or
     computation is claimed, and no printing of the book was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The rank-stratification repair recorded in the event above is withdrawn, and the step is
+    proved instead by a genus identity. The withdrawn argument failed at the rank-zero stratum:
+    from "the general member has multiplicity at least p at a point of C" it inferred "the general
+    member is non-reduced", which is false, since X^{p+1} - Y^p has multiplicity p at the origin
+    and is reduced; and separability was inferred from reducedness of the general member, which is
+    also false: the degree-2 del Pezzo surface Z^2 = XW + Y^2 in P(1,1,1,2) over a field of
+    characteristic 2, with D = O(1) = -K_X, has a complete base-point-free system, D^2 = 2 > 0 and
+    a smooth general member, while the morphism is purely inseparable. A characteristic-3 pencil
+    with a curve in its rank-zero locus on which the map is not constant was also checked. The
+    step now uses the identity p_a(Y) - p_g(Y) = -h^1(X, O_X(D-H)) for a general member Y, which
+    is at most 0, against p_a(Y) >= p_g(Y) for a reduced irreducible curve, with equality iff Y is
+    nonsingular. Read for this: Hartshorne Theorem III.7.11 with its proof, printed p. 245,
+    Corollary III.7.7, printed p. 244, Proposition V.1.5, printed p. 361, Theorem V.1.6, printed
+    p. 362, Theorem V.1.9, printed p. 364, and Theorem II.8.18, printed p. 179, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md; the two counterexamples named above, the
+    second in the arithmetically verified form recorded by the reader of this date, and the first
+    by its two partial derivatives. Not checked: no printing of the book, only the text version;
+    no computation of the del Pezzo example was run here, its invariants being those of the
+    reader's computation.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read the genus-identity proof. Checked the two vanishing statements p_g(X) = q(X) = 0 from
+    the sequence of a cubic surface in P^3, the bound D.H >= 2 from the Hodge index theorem, the
+    vanishing h^2(D) = 0 from Serre duality and ampleness of H, the adjunction isomorphism
+    omega_Y = (K_X+D)|_Y from Theorem III.7.11, the two Riemann-Roch computations, the use of a
+    smooth plane cubic H with h^0(O_H(D)) = D.H, the resulting identity
+    p_a(Y) - p_g(Y) = -h^1(D-H), and the normalization inequality p_g(Y) <= p_a(Y) with equality
+    iff Y is nonsingular. No statement, hypothesis or alternative of the exercise changes; the
+    step's conclusion is the one it stated before. Not checked: no certificate or computation is
+    claimed, and no printing of the book was read.
 ---
 
 ::: {.problem}
@@ -512,59 +548,59 @@ Fourth, a general member is reduced and irreducible: since $D^2>0$ the system is
 pencil, and Harbourne's Lemma II.6(b), preprint p. 4, then gives $D^2>0$ and that the general section
 of $D$ is reduced and irreducible.
 
-Finally, it is nonsingular, in every characteristic. Let $\varphi\colon X\to\PP^N$ be the morphism
-defined by the base-point-free system $\linearsystem{D}$; then $N=\dim\linearsystem{D}\ge2$,
-because a base-point-free pencil has $D^2=0$, and $\varphi$ is generically finite onto a surface,
-because if the image of $\varphi$ were a curve then $D=\varphi^*\OO(1)$ would have $D^2=0$. The
-morphism $\varphi$ is separable: if $k(X)/k(\varphi(X))$ were not separable, $\varphi$ would
-factor as a purely inseparable morphism $f\colon X\to X'$ of degree $p^m>1$ followed by a morphism
-to $\varphi(X)$, and the pullback of a general hyperplane would be $p^m$ times a divisor, hence
-non-reduced, whereas the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4.
-Consequently $\varphi$ has generic rank $2$, and $\Omega_{X/\varphi(X)}$ is zero at the generic
-point: the extension $k(X)/k(\varphi(X))$ is finite and separable of transcendence degree $0$, so
-$\dim_{k(X)}\Omega_{k(X)/k(\varphi(X))}=0$ by Theorem II.8.6A, printed p. 174, and the sheaf is
-locally free of rank $0$ on a nonempty open set by Exercise II.5.7(a), printed p. 125.
+Finally, it is nonsingular, in every characteristic, by the genus identity below. Put
+$H=\OO_X(1)=-K_X$, so $H^2=3$. Since $X$ is a cubic surface in $\PP^3$, the sequence
+$0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
+$p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
+printed p. 364, gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
+the integer $D\cdot H$ has absolute value at least $2$ and is positive because $D$ is nef and $H$
+is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, printed p. 244, gives
+$h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
+effective.
 
-For $x\in X$ let $r(x)$ be the rank of the differential
-$d\varphi_x\colon T_xX\to T_{\varphi(x)}\PP^N$, and let
+Let $Y\in\linearsystem{D}$ be a general member; by the fourth paragraph $Y$ is reduced and
+irreducible. Since $Y$ is a divisor in the smooth surface $X$, Theorem III.7.11, printed p. 245,
+gives $\omega_Y\cong\restrictionof{(K_X+Y)}{Y}=\restrictionof{(D-H)}{Y}$. From
 $$
-Z=\{(x,H)\in X\times\PP^{N\vee}:\varphi(x)\in H,\ d(\ell_H\circ\varphi)_x=0\},
+0\longrightarrow\OO_X(K_X)\longrightarrow\OO_X(K_X+D)\longrightarrow\omega_Y\longrightarrow0
 $$
-where $\ell_H$ is a linear form defining $H$. At $(x,H)$ the local equation of the member
-$\varphi^{-1}(H)$ on the nonsingular surface $X$ is $\ell_H\circ\varphi$; if its differential is
-nonzero at $x$ it is part of a regular system of parameters, so the quotient local ring is regular
-of dimension $1$ and the member is nonsingular at $x$ by Theorem I.5.1, printed p. 32. It is
-therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset.
+and $h^0(K_X)=p_g(X)=0$, $h^1(K_X)=q(X)=0$, we get
+$$
+p_g(Y)=h^0(Y,\omega_Y)=h^0(X,\OO_X(D-H)).
+$$
+Riemann--Roch on the surface, Theorem V.1.6, printed p. 362, and $h^1(D)=h^2(D)=0$ give
+$$
+h^0(X,\OO_X(D))=\chi(\OO_X(D))=1+\tfrac12(D^2+D\cdot H),
+$$
+and the adjunction formula, Proposition V.1.5, printed p. 361, gives
+$$
+p_a(Y)=1+\tfrac12(D^2-D\cdot H).
+$$
+By Bertini's theorem for hyperplane sections, Theorem II.8.18, printed p. 179, a general plane
+section $H\in\linearsystem{-K_X}$ is a smooth plane cubic, of genus $1$; since
+$\deg\OO_H(D)=D\cdot H\ge2>0$, Riemann--Roch on $H$ gives $h^0(H,\OO_H(D))=D\cdot H$. From
+$$
+0\longrightarrow\OO_X(D-H)\longrightarrow\OO_X(D)\longrightarrow\OO_H(D)\longrightarrow0
+$$
+and $h^1(D)=0$,
+$$
+h^0(D-H)=h^0(D)-D\cdot H+h^1(D-H).
+$$
+Substituting the two displays,
+$$
+p_g(Y)=1+\tfrac12(D^2+D\cdot H)-D\cdot H+h^1(D-H)
+=p_a(Y)+h^1(D-H),
+$$
+so $p_a(Y)-p_g(Y)=-h^1(D-H)\le0$.
 
-The locus $r=2$ is nonempty and open, because $\varphi$ has generic rank $2$; hence the locus
-$r\le1$ is a proper closed subset of the surface, of dimension at most $1$. Where $r(x)=2$ the
-image $d\varphi_x(T_xX)$ is a $2$-plane in $T_{\varphi(x)}\PP^N$, and the hyperplanes $H$ with
-$(x,H)\in Z$ are those containing it, a linear subspace of $\PP^{N\vee}$ of dimension $N-3$; this
-part of $Z$ has dimension at most $2+(N-3)=N-1$. Where $r(x)=1$ the hyperplanes $H$ with
-$(x,H)\in Z$ contain the line $d\varphi_x(T_xX)$, a linear subspace of dimension $N-2$; over the
-at most one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N-2)=N-1$. Where
-$r(x)=0$ every hyperplane through $\varphi(x)$ satisfies $(x,H)\in Z$. Each component $C$ of the
-closed locus $r=0$ is contracted by $\varphi$: if $\restrictionof{\varphi}{C}$ were non-constant, then on the
-normalization of $C$ it would be a finite morphism of smooth curves with identically zero
-differential, hence not separable by Theorem II.8.6A, printed p. 174. In the factorization of a
-finite morphism of curves as a purely inseparable morphism followed by a separable one, the purely
-inseparable part has degree $p^m>1$ here, and the pullback of a local parameter of $\varphi(C)$
-along it is a $p^m$-th power by Proposition IV.2.5, printed p. 302; so
-for a general hyperplane $H$ meeting $\varphi(C)$ the equation $\ell_H\circ\varphi$ would have
-multiplicity at least $p$ at the corresponding point of $C$, and $\varphi^{-1}(H)$ would be
-non-reduced, contradicting the reducedness of the general member. Hence $\varphi$ maps the locus
-$r=0$ to a finite set, and this part of $Z$ lies in the union of the $\PP^{N-1}$ of hyperplanes
-through the finitely many points of that set, so it has dimension at most $N-1$.
-
-Thus $Z$ has dimension at most $N-1$, and so does its image in $\PP^{N\vee}$, which is closed
-because $X$ is proper. A general hyperplane $H$ therefore lies outside that image, and for such
-$H$ no point of the member $\varphi^{-1}(H)$ lies in $Z$, so the member is nonsingular. This is
-the incidence count of the proof of Vakil's Bertini theorem, *The Rising Sea* (21 October 2025),
-Theorem 13.4.2, printed pp. 375--376, carried out for the morphism $\varphi$ rather than for a
-smooth closed subvariety of $\PP^N$: where $\varphi$ is a closed immersion the fibre of $Z$ is the
-$\PP^{N-1-\dim X}$ of Vakil's proof, and the cases $r=1$ and $r=0$ above are the additional
-$\PP^{N-2}$ and $\PP^{N-1}$ fibres created by the drop in rank. The characteristic-zero Corollary
-III.10.9, printed p. 274, is not used.
+For a reduced irreducible curve $Y$ one has $p_g(Y)\le p_a(Y)$: for the normalization
+$\nu\colon\tilde Y\to Y$, $\chi(\OO_Y)=\chi(\OO_{\tilde Y})-\ell(\nu_*\OO_{\tilde Y}/\OO_Y)$, so
+$p_a(Y)=g(\tilde Y)+\sum_{p\in Y_{\mathrm{sing}}}\delta_p$ with $\delta_p\ge1$, while
+$\nu^*\omega_Y\cong\omega_{\tilde Y}$ because both are line bundles on the smooth curve $\tilde Y$
+that agree on the dense open set where $\nu$ is an isomorphism, and pulling sections back gives
+$p_g(Y)=h^0(Y,\omega_Y)\le h^0(\tilde Y,\omega_{\tilde Y})=g(\tilde Y)$. Hence $p_a(Y)=p_g(Y)$
+and $\sum\delta_p=0$, so $Y$ is nonsingular. No Bertini theorem for a base-point-free system, no
+separability of the morphism of $\linearsystem{D}$ and no hypothesis on the characteristic is used.
 :::
 
 :::
@@ -660,10 +696,10 @@ composed with a pencil is a multiple of a class with reduced irreducible general
 III.1(a), preprint p. 7, that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
 paper works over an algebraically closed field of arbitrary characteristic, so its Lemma II.6 gives
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
-the third alternative is then the incidence count of Vakil's proof of Theorem 13.4.2, printed
-pp. 375--376, carried out for the morphism defined by $\linearsystem{D}$ and stratified by the rank of
-its differential: the bad hyperplanes form a closed subset of the dual of dimension at most $N-1$,
-the rank-zero stratum being contracted because otherwise the general member would be non-reduced.
+the third alternative is then the genus identity of the step: for a general member $Y$,
+$\omega_Y\cong\restrictionof{(K_X+D)}{Y}$ by Theorem III.7.11, and the identity
+$p_a(Y)-p_g(Y)=-h^1(X,\OO_X(D-H))\le0$ together with $p_g(Y)\le p_a(Y)$ for a reduced curve makes
+$Y$ nonsingular.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, printed p. 248, on irreducible curves of negative self-intersection on a weak Del Pezzo
@@ -673,10 +709,9 @@ used: the numerical effectivity of step third-condition-contains-nonsingular-cur
 Hartshorne's Theorem 4.11, printed pp. 405--406, which has no hypothesis on the characteristic.
 
 Theorem 4.9 of Hartshorne, printed pp. 402--403, for the $27$ lines and for the curves of negative
-self-intersection; J. Vakil, *The Rising Sea* (21 October 2025), Theorem 13.4.2 and its proof,
-printed pp. 375--376, for the incidence count; Hartshorne, Theorem I.5.1, printed p. 32, Theorem
-II.8.6A, printed p. 174, Exercise II.5.7(a), printed p. 125, and Propositions IV.2.1 and IV.2.5,
-printed pp. 300 and 302, for the nonsingularity of the general member and for the rank-zero stratum.
+self-intersection; Hartshorne, Theorem III.7.11, printed p. 245, Corollary III.7.7, printed p. 244,
+Theorem V.1.6, printed p. 362, Proposition V.1.5, printed p. 361, Theorem V.1.9, printed p. 364, and
+Theorem II.8.18, printed p. 179, for the genus identity that makes the general member nonsingular.
 
 Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, printed p. 110, argues both
 implications through the blowups $X_r$, $2\le r\le5$: it lists the lines of $X_r$, the $E_i$ and
