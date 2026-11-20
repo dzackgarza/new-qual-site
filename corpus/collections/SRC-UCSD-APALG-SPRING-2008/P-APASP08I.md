@@ -31,6 +31,16 @@ audit:
     the hook-content values 2, 48, 400, 2000, 7350, 21952, 56448 at n = 2,...,8, recomputed
     from the hook-content formula. Not checked: no run of the SF package; no retained
     solution set exists for this exercise.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The hook-content check in part (a) argued that the two sides are degree-seven polynomials
+    in n and that agreement at seven values makes them identical; a nonzero degree-seven
+    polynomial has at most seven roots, so eight values are needed. The check now runs over
+    n = 2,...,9, with 129600 added at n = 9, recomputed from the hook-content formula on both
+    sides. The six coefficients were re-enumerated independently over the nine candidate
+    shapes.
 ---
 
 ::: {.problem}
@@ -67,10 +77,10 @@ A shape $\lambda\vdash7$ must contain $(2,2)$ with $\lambda/(2,2)$ of size $3$; 
 :::
 
 ::: {.pf-step #check}
-(a) The expansion is confirmed independently: for every $n=2,\dots,8$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
+(a) The expansion is confirmed independently: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
 
 ::: pf-proof
-Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, which is polynomial in $n$. The products and sums agree at $n=2,3,4,5,6,7,8$ — for instance $2,48,400,2000,7350,21952,56448$ on both sides. The difference of the two sides is a polynomial in $n$ of degree $7$, so agreement at seven values forces it to vanish identically; since the functions $n\mapsto s_{\lambda}(1^{n})$ for $\lambda\vdash7$ are linearly independent, the six coefficients above are the whole expansion. This is the check of (a) that the card performs; the SF package is not run here.
+Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, which is polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. The difference of the two sides is a polynomial in $n$ of degree at most $7$, so agreement at eight values forces it to vanish identically; since the functions $n\mapsto s_{\lambda}(1^{n})$ for $\lambda\vdash7$ are linearly independent, the six coefficients above are the whole expansion. This is the check of (a) that the card performs; the SF package is not run here.
 :::
 
 :::
