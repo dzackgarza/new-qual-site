@@ -45,6 +45,24 @@ audit:
     extensions from the dense copy of X into a Hausdorff target. The argument is the card's
     own; no retained set is cited. Munkres §38 Exercise 2, printed pp. 241-242. The printed
     statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §38 Exercise 10 and repaired in two places, neither of them the
+    mathematics. The head of the solution attributed the exercise to "Munkres §38 Exercise 2,
+    printed pp. 241--242"; the exercise is §38 Exercise 10, and the page is gone. What remains is
+    the numbered statement: the two parts use Theorem 38.4, whose target is any compact Hausdorff
+    space, and the inclusion is dense, so two continuous maps out of $\beta X$ into a Hausdorff
+    space that agree on $i_X(X)$ agree everywhere. The proofs were checked and kept. Part (i):
+    $\beta(\mathsf{l}_X)$ and $\mathsf{l}_{\beta X}$ are continuous self-maps of $\beta X$ that
+    agree on $i_X(X)$, so they are equal. Part (ii): for $x\in X$,
+    $\beta(g)(\beta(f)(i_X(x)))=\beta(g)(i_Y(f(x)))=i_Z(g(f(x)))=i_Z((g\circ f)(x))$, which is
+    the value of $\beta(g\circ f)$ there, so the two continuous maps into the Hausdorff
+    $\beta Z$ agree on a dense subset and hence everywhere. Searched for a published proof before
+    checking: Poulsen's §38 sheet covers Exercises 38.4 to 38.9, dbFin's index stops at §67 with a
+    gap before it, and no other retained set reaches §38, so nothing is transcribed. Not checked:
+    no published solution of Exercise 10 was located, and none is claimed.
 ---
 
 ::: {.exercise}
@@ -61,7 +79,7 @@ These properties tell us that the correspondence we have constructed is what is 
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §38 Exercise 2, printed pp. 241--242, with the uniqueness clause of the Stone--Čech extension property (Theorem 38.4).
+The argument is the card's own; no retained solution set is cited on the card. It is checked against §38 Exercise 10 and against the uniqueness clause of Theorem 38.4, which both parts use: $\beta X$, $\beta Y$ and $\beta Z$ are compact Hausdorff, hence satisfy the extension property of Theorem 38.2, and a map of $\beta X$ into a compact Hausdorff space that agrees with another on the dense image of $X$ agrees with it everywhere.
 
 Let $i_{X}:X\to\beta X$, $i_{Y}:Y\to\beta Y$ and $i_{Z}:Z\to\beta Z$ be the canonical inclusions, and write $\beta f:\beta X\to\beta Y$ for the extension of $i_{Y}\circ f$.
 
