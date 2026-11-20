@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space, $R$ a commutative ring, and $n\geq 0$.
 For a singular cochain $\varphi\in C^n(X;R) = \Hom_R(C_n(X;R), R)$ and a singular chain $\alpha\in C_n(X;R)$, put $\inner{\varphi}{\alpha} \coloneqq \varphi(\alpha)$.
-The \dfn{Kronecker pairing}, also called the \dfn{Kronecker product} [@Hat02], is the $R$-bilinear map
+The \dfn{Kronecker pairing}, also called the \dfn{Kronecker product} [@Hat02, §3.1], is the $R$-bilinear map
 $$
 \inner{\cdot}{\cdot}\colon H^n(X; R) \cross H_n(X; R) \to R, \qquad \inner{[\varphi]}{[\alpha]} \coloneqq \varphi(\alpha),
 $$
