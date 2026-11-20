@@ -57,6 +57,18 @@ audit:
     solution file that carries Stein's name is a different book's solutions. No search outside the
     checkout was made for this step, and no page of a solution set was read. The mathematics of the
     card is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk the print sets before "5." was read from the page image of printed p. 110 (PDF
+    p. 129), which is also the locator the first event gives, so that locator is right. The two
+    recorded corrections to the printed statement were re-checked and hold: the jump limit at
+    $x=\pm M$ is $h(\pm M)/2$, half the Poisson mass falling outside $[-M,M]$, and the uniform
+    convergence of (b) does fail at the endpoints when $h(\pm M)\ne0$, since
+    $\int_{-M}^{M}dx/(x-M-i\epsilon)=-\log(1/\epsilon)+O(1)$ makes
+    $\abs{g(M+i\epsilon)}=\frac{\abs{h(M)}}{2\pi}\log(1/\epsilon)+O(1)$. Not checked: the
+    Plemelj estimates and the uniqueness argument were read for sense but not re-derived today.
 ---
 
 ::: {.exercise}
@@ -83,6 +95,10 @@ $$
 g^+(x)-g^-(x)=h(x).
 $$
 [Hint: If $G$ is another function satisfying these conditions, $g-G$ is entire.]
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 3, Problem 5, printed p. 110).
 :::
 
 ::: {.solution}
