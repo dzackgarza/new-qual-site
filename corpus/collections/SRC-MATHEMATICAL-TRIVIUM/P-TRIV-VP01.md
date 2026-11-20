@@ -42,7 +42,7 @@ This is Problem 1 of the Variational Principle chapter of *Mathematical Trivium*
 
 ::: {.pf-step #s1-1}
 
-The Euler--Lagrange equation for
+Part (a): the Euler--Lagrange equation for
 $$
 S[f]
 =
@@ -93,19 +93,6 @@ $$
 =0.
 $$
 Divide by $x^3$ for $x>0$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -318,7 +305,7 @@ Multiply by $\sqrt{2/\lambda}$.
 
 ::: {.pf-step #s1-9}
 
-Together with
+Part (b): together with
 $$
 \boxed{f\equiv0},
 $$
@@ -333,19 +320,6 @@ $$
 The functions in step [](#s1-8){.pf-ref} decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
 Step [](#s1-7){.pf-ref} exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
 The zero solution is immediate.
-
-:::
-
-:::
-
-::: {.pf-step #s1-10}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -592,7 +566,7 @@ Steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give the action on all sol
 
 ::: pf-qed
 
-Steps [](#s1-2){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 
