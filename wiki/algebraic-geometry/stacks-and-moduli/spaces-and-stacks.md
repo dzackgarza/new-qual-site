@@ -21,7 +21,7 @@ The Hilbert functor of a projective scheme is representable by a scheme, the Hil
 
 [[D-ALGSPACE]]
 
-An algebraic space is a sheaf for the étale topology that admits an étale surjection from a scheme whose two projections give an étale equivalence relation, and the category of algebraic spaces is closed under the fibre-product constructions the category of schemes has ([[D-ALGSPACE]]).
+Recall that an [[D-ALGSPACE|algebraic space]] is the quotient of a scheme by an étale equivalence relation, and that every scheme and every free finite-group quotient is an example.
 
 ## Stacks
 
@@ -29,4 +29,4 @@ Objects with nontrivial automorphisms, such as hyperelliptic curves of genus $g\
 
 [[D-ALGSTACK]]
 
-A stack is a category fibred in groupoids over the site satisfying descent, and an algebraic stack is one admitting a smooth surjection from a scheme; the automorphism groups of the objects are then part of the structure rather than an obstruction to it ([[D-ALGSTACK]]).
+Recall that an [[D-ALGSTACK|algebraic stack]] is a stack with a smooth atlas from a scheme, and that a Deligne--Mumford stack is one with an étale atlas.
