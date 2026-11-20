@@ -88,7 +88,7 @@ for every $n$.
 
 ::: pf-proof
 
-The reduced Mayer--Vietoris sequence, the reduced form of the sequence in the subsection beginning on p. 149 and set out on p. 150, contains
+The reduced Mayer--Vietoris sequence, the reduced form of the sequence in the subsection on Mayer--Vietoris sequences in §2.2, contains
 $$
 \widetilde H_n(A\cap B)
 \longrightarrow
