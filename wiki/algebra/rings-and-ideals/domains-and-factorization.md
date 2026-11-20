@@ -11,7 +11,7 @@ topics:
 
 The implications among the classes of rings, with a ring separating each class from the next, are on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]].
 
-## Elements
+## Divisibility, units, irreducibles, and associates
 
 [[D-AVBIP]]
 
@@ -25,7 +25,7 @@ The implications among the classes of rings, with a ring separating each class f
 
 [[PR-LX7GH]]
 
-## Classes of rings
+## Division rings, zero divisors, domains, fields, and simple rings
 
 [[D-7O2CH]]
 
@@ -53,7 +53,7 @@ The implications among the classes of rings, with a ring separating each class f
 
 [[D-NKRGN]]
 
-### Other classes of rings
+### Noetherian, reduced, local, and other classes
 
 [[D-TZXBO]]
 
@@ -79,7 +79,7 @@ The implications among the classes of rings, with a ring separating each class f
 
 [[FF-CQSNC]]
 
-## Structure theorems
+## Simple and semisimple modules, Artin--Wedderburn, and Wedderburn's little theorem
 
 [[D-4KM4P]]
 
