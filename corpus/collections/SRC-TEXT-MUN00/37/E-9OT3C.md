@@ -48,6 +48,31 @@ audit:
     as printed. Checked: the three parts at the printed exercise, p. 236, with the cited theorems.
     Not checked: any published solution, none having been located; the search is recorded in the
     COMPLAINTS.md entry for §37--§42.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §37 Exercise 4. Every step of this card is unlabelled, all twenty-four of
+    them, and the prose referred to them by a numbering that no longer exists: "Steps 1.1--1.9",
+    "(1.5)", "(1.6--1.7)", "(1.8)", "step 1.2", "Steps 2.1--2.4", "step 2.3", "Steps 3.1--3.7",
+    "step 3.8" and the rest, eighteen references in all, each pointing at a step a reader could not
+    identify. Each is now the name of the step it meant -- the nonemptiness step, the normality
+    step, the finite-intersection steps, the separation step, the Zorn step, the concluding step --
+    so the argument can be followed without a key. The mathematics was checked at the same time and
+    needed no repair. Part (a): the intersection of a chain is closed by Theorem 26.2 and contains
+    the two points; a separation of it into closed pieces makes those pieces closed in $X$, which is
+    compact Hausdorff hence normal by Theorem 32.3, so they sit in disjoint open sets $U$ and $V$;
+    the sets $B\setminus(U\cup V)$ over the chain are closed with empty intersection, so finitely
+    many are empty by the finite intersection property of Theorem 26.9, and a chain member $B_0$
+    contained in the others is then inside $U\cup V$; its traces on $U$ and on $V$ separate it with
+    the two points on opposite sides, against $B_0\in\mathcal{A}$. Part (b): $X$ itself is a
+    member, reverse inclusion is a partial order, part (a) bounds the chains, so Zorn's lemma of §11
+    gives a minimal member. Part (c): a separation $D=C_1\cup D_1$ makes $C_1$ closed in $X$ and a
+    proper subset of $D$, a separation of $C_1$ transfers to one of $D$, so $C_1$ is again a member
+    of $\mathcal{A}$ and contradicts minimality; $D$ is therefore connected and, containing both
+    points, lies in one component by Theorem 25.1, while a connected set never meets two
+    quasicomponents. Not checked: no published solution of §37 Exercise 4 was located in the
+    retained sets, so nothing here is transcribed.
 ---
 
 ::: {.exercise}
@@ -81,7 +106,7 @@ Part (a): every chain in $\mathcal{A}$ has a lower bound in $\mathcal{A}$.
 
 ::: pf-proof
 
-Let $\mathcal{B}\subseteq\mathcal{A}$ be a chain and $B_\infty=\bigcap_{B\in\mathcal{B}}B$. Steps 1.1--1.9 show $B_\infty\in\mathcal{A}$: a separation of $B_\infty$ would have its two closed pieces separated by disjoint open sets $U,V$ (1.5), compactness would place one member $B_0$ of the chain inside $U\cup V$ (1.6--1.7), and the two open sets would then separate $B_0$, contradicting $B_0\in\mathcal{A}$ (1.8).
+Let $\mathcal{B}\subseteq\mathcal{A}$ be a chain and $B_\infty=\bigcap_{B\in\mathcal{B}}B$. The steps below show $B_\infty\in\mathcal{A}$: a separation of $B_\infty$ would have its two closed pieces separated by disjoint open sets $U,V$ (the normality step), compactness would place one member $B_0$ of the chain inside $U\cup V$ (the finite-intersection steps), and the two open sets would then separate $B_0$, contradicting $B_0\in\mathcal{A}$ (the separation step).
 
 ::: pf-step
 
@@ -89,7 +114,7 @@ Let $\mathcal{B} \subseteq \mathcal{A}$ be a chain ordered by inclusion, and let
 
 ::: pf-proof
 
-Since $X\in\mathcal{A}$ (step 2.1) the chain may be taken nonempty, and then $B_\infty\subseteq B\subseteq X$ for any $B\in\mathcal{B}$; so $B_\infty$ is a well-defined subset of $X$.
+Since $X\in\mathcal{A}$ (the nonemptiness step) the chain may be taken nonempty, and then $B_\infty\subseteq B\subseteq X$ for any $B\in\mathcal{B}$; so $B_\infty$ is a well-defined subset of $X$.
 
 :::
 
@@ -113,7 +138,7 @@ Suppose for contradiction that $x$ and $y$ do not belong to the same quasicompon
 
 ::: pf-proof
 
-This is the assumption to be refuted: steps 1.4--1.8 derive a contradiction from it, and step 1.9 concludes its negation. By the definition in the statement, the assumption says that $B_\infty$ admits a separation putting $x$ and $y$ on opposite sides; step 1.4 names that separation.
+This is the assumption to be refuted: the steps that follow derive a contradiction from it, and the last of them concludes its negation. By the definition in the statement, the assumption says that $B_\infty$ admits a separation putting $x$ and $y$ on opposite sides; the step after it names that separation.
 
 :::
 
@@ -137,7 +162,7 @@ Since $B_\infty$ is closed in the normal space $X$, $C$ and $D$ are disjoint clo
 
 ::: pf-proof
 
-$C$ and $D$ are closed in $B_\infty$ by step 1.4 and $B_\infty$ is closed in $X$ by step 1.2, so both are closed in $X$. A compact Hausdorff space is normal (Theorem 32.3), so the disjoint closed sets $C$ and $D$ have disjoint open neighbourhoods $U\supseteq C$ and $V\supseteq D$.
+$C$ and $D$ are closed in $B_\infty$ by the step naming the two pieces and $B_\infty$ is closed in $X$ by the step proving it closed, so both are closed in $X$. A compact Hausdorff space is normal (Theorem 32.3), so the disjoint closed sets $C$ and $D$ have disjoint open neighbourhoods $U\supseteq C$ and $V\supseteq D$.
 
 :::
 
@@ -149,7 +174,7 @@ Then $B_\infty \subseteq U \cup V$, so $\bigcap_{B \in \mathcal{B}} (B \setminus
 
 ::: pf-proof
 
-$B_\infty=C\cup D\subseteq U\cup V$ by steps 1.4 and 1.5. A point of the intersection lies in $B\setminus(U\cup V)$ for every $B\in\mathcal{B}$, hence lies in $B_\infty$ and outside $U\cup V$, which is impossible; so the intersection is empty.
+$B_\infty=C\cup D\subseteq U\cup V$ by the steps that name the pieces and produce $U$ and $V$. A point of the intersection lies in $B\setminus(U\cup V)$ for every $B\in\mathcal{B}$, hence lies in $B_\infty$ and outside $U\cup V$, which is impossible; so the intersection is empty.
 
 :::
 
@@ -161,7 +186,7 @@ By the Finite Intersection Property of compact closed sets in $X$, there exists 
 
 ::: pf-proof
 
-Each $B\setminus(U\cup V)$ is closed in $X$, because $B$ is closed and $U\cup V$ is open, and $X$ is compact. By step 1.6 the family $\{B\setminus(U\cup V):B\in\mathcal{B}\}$ has empty intersection, so by the finite intersection property (Theorem 26.9) finitely many of its members already have empty intersection: $(B_1\setminus(U\cup V))\cap\cdots\cap(B_n\setminus(U\cup V))=\varnothing$. The members of $\mathcal{B}$ are simply ordered by inclusion, so one of $B_1,\dots,B_n$, say $B_0$, is contained in all the others; then $B_0\setminus(U\cup V)$ is contained in that empty intersection, hence is empty, that is $B_0\subseteq U\cup V$.
+Each $B\setminus(U\cup V)$ is closed in $X$, because $B$ is closed and $U\cup V$ is open, and $X$ is compact. By the step showing that intersection empty, the family $\{B\setminus(U\cup V):B\in\mathcal{B}\}$ has empty intersection, so by the finite intersection property (Theorem 26.9) finitely many of its members already have empty intersection: $(B_1\setminus(U\cup V))\cap\cdots\cap(B_n\setminus(U\cup V))=\varnothing$. The members of $\mathcal{B}$ are simply ordered by inclusion, so one of $B_1,\dots,B_n$, say $B_0$, is contained in all the others; then $B_0\setminus(U\cup V)$ is contained in that empty intersection, hence is empty, that is $B_0\subseteq U\cup V$.
 
 :::
 
@@ -173,7 +198,7 @@ Then $B_0 \cap U$ and $B_0 \cap V$ form a separation of $B_0$ into disjoint open
 
 ::: pf-proof
 
-$B_0\subseteq U\cup V$ by step 1.7 and $U\cap V=\varnothing$ by step 1.5, so $B_0\cap U$ and $B_0\cap V$ are disjoint, open in $B_0$ and cover $B_0$. Both are nonempty: $x\in B_0$ because $B_0\in\mathcal{B}\subseteq\mathcal{A}$, and $x\in C\subseteq U$ by steps 1.4 and 1.5; likewise $y\in B_0\cap V$. So $B_0=(B_0\cap U)\cup(B_0\cap V)$ is a separation of $B_0$ with $x$ and $y$ on opposite sides, which is exactly what $B_0\in\mathcal{A}$ forbids.
+$B_0\subseteq U\cup V$ by the finite-intersection step and $U\cap V=\varnothing$ by the normality step, so $B_0\cap U$ and $B_0\cap V$ are disjoint, open in $B_0$ and cover $B_0$. Both are nonempty: $x\in B_0$ because $B_0\in\mathcal{B}\subseteq\mathcal{A}$, and $x\in C\subseteq U$ by the steps that name the pieces and produce $U$ and $V$; likewise $y\in B_0\cap V$. So $B_0=(B_0\cap U)\cup(B_0\cap V)$ is a separation of $B_0$ with $x$ and $y$ on opposite sides, which is exactly what $B_0\in\mathcal{A}$ forbids.
 
 :::
 
@@ -185,7 +210,7 @@ Hence $x$ and $y$ lie in the same quasicomponent of $B_\infty$, so $B_\infty \in
 
 ::: pf-proof
 
-The assumption of step 1.3 led to the contradiction of step 1.8, so no separation of $B_\infty$ puts $x$ and $y$ on opposite sides; that is, they lie in the same quasicomponent of $B_\infty$. And $B_\infty$ is closed in $X$ by step 1.2, so $B_\infty\in\mathcal{A}$.
+The assumption of a separation led to the contradiction of the separation step, so no separation of $B_\infty$ puts $x$ and $y$ on opposite sides; that is, they lie in the same quasicomponent of $B_\infty$. And $B_\infty$ is closed in $X$ by the step proving it closed, so $B_\infty\in\mathcal{A}$.
 
 :::
 
@@ -201,7 +226,7 @@ Part (b): the existence of a minimal element $D \in \mathcal{A}$.
 
 ::: pf-proof
 
-Steps 2.1--2.4 apply Zorn's lemma to $\mathcal{A}$ ordered by reverse inclusion: the collection is nonempty (2.1), that order is a partial order (2.2), every chain has an upper bound (2.3), and a maximal element for reverse inclusion is a minimal element for inclusion (2.4).
+The steps below apply Zorn's lemma to $\mathcal{A}$ ordered by reverse inclusion: the collection is nonempty, that order is a partial order, every chain has an upper bound, and a maximal element for reverse inclusion is a minimal element for inclusion (the Zorn step).
 
 ::: pf-step
 
@@ -233,7 +258,7 @@ By Part (a), every chain in $\mathcal{A}$ has an upper bound under this ordering
 
 ::: pf-proof
 
-Let $\mathcal{B}\subseteq\mathcal{A}$ be a chain for the reverse order; the same pairs are comparable for inclusion, so by step 1.9 its intersection $B_\infty$ lies in $\mathcal{A}$. And $B_\infty\subseteq B$ for every $B\in\mathcal{B}$, that is $B\le B_\infty$ in the reverse order, so $B_\infty$ is an upper bound.
+Let $\mathcal{B}\subseteq\mathcal{A}$ be a chain for the reverse order; the same pairs are comparable for inclusion, so by the conclusion step its intersection $B_\infty$ lies in $\mathcal{A}$. And $B_\infty\subseteq B$ for every $B\in\mathcal{B}$, that is $B\le B_\infty$ in the reverse order, so $B_\infty$ is an upper bound.
 
 :::
 
@@ -245,7 +270,7 @@ By Zorn's Lemma, $\mathcal{A}$ contains a maximal element with respect to revers
 
 ::: pf-proof
 
-$\mathcal{A}$ is nonempty by step 2.1 and every chain in it has an upper bound by step 2.3, so Zorn's lemma (Munkres, §11) gives an element $D\in\mathcal{A}$ maximal for reverse inclusion. If $A\in\mathcal{A}$ and $A\subseteq D$, then $D\le A$ in that order, hence $A=D$; so $D$ is minimal for inclusion.
+$\mathcal{A}$ is nonempty by the nonemptiness step and every chain in it has an upper bound by the chain step, so Zorn's lemma (Munkres, §11) gives an element $D\in\mathcal{A}$ maximal for reverse inclusion. If $A\in\mathcal{A}$ and $A\subseteq D$, then $D\le A$ in that order, hence $A=D$; so $D$ is minimal for inclusion.
 
 :::
 
@@ -261,7 +286,7 @@ Part (c): $D$ is connected, and the two notions agree.
 
 ::: pf-proof
 
-Steps 3.1--3.7 refute the assumption that $D$ is disconnected: a separation $D=C_1\cup D_1$ with $x$ and $y$ both in $C_1$ (3.2) makes $C_1$ a strictly smaller member of $\mathcal{A}$ (3.3--3.5), contradicting minimality (3.6). Step 3.8 then places $x$ and $y$ in one component, which is contained in every quasicomponent holding them.
+The steps below refute the assumption that $D$ is disconnected: a separation $D=C_1\cup D_1$ with $x$ and $y$ both in $C_1$ makes $C_1$ a strictly smaller member of $\mathcal{A}$, contradicting minimality. The concluding step then places $x$ and $y$ in one component, which is contained in every quasicomponent holding them.
 
 ::: pf-step
 
@@ -293,7 +318,7 @@ $C_1$ is a closed subset of $D$ (hence of $X$). Because $D_1 \neq \varnothing$, 
 
 ::: pf-proof
 
-$C_1$ is closed in $D$ by step 3.1, and $D$ is closed in $X$ because $D\in\mathcal{A}$, so $C_1$ is closed in $X$. Since $D_1$ is nonempty and $C_1\cap D_1=\varnothing$, $C_1\ne D$.
+$C_1$ is closed in $D$ by the separation step, and $D$ is closed in $X$ because $D\in\mathcal{A}$, so $C_1$ is closed in $X$. Since $D_1$ is nonempty and $C_1\cap D_1=\varnothing$, $C_1\ne D$.
 
 :::
 
@@ -305,7 +330,7 @@ If $x$ and $y$ were separated in $C_1$ by $C_1 = E \cup F$, then $D = E \cup (F 
 
 ::: pf-proof
 
-$E$ and $F$ are open in $C_1$, and $C_1$ is open in $D$ because it is the complement in $D$ of the open set $D_1$; so $E$ and $F$, and hence also $F\cup D_1$, are open in $D$. $E$ is disjoint from $F$ and from $D_1$, so $E\cap(F\cup D_1)=\varnothing$, and both parts are nonempty, $E$ and $F$ because they are the pieces of a separation of $C_1$, and $D_1$ by step 3.1. Thus $D=E\cup(F\cup D_1)$ is a separation of $D$ with $x\in E$ and $y\in F\cup D_1$, contrary to $D\in\mathcal{A}$.
+$E$ and $F$ are open in $C_1$, and $C_1$ is open in $D$ because it is the complement in $D$ of the open set $D_1$; so $E$ and $F$, and hence also $F\cup D_1$, are open in $D$. $E$ is disjoint from $F$ and from $D_1$, so $E\cap(F\cup D_1)=\varnothing$, and both parts are nonempty, $E$ and $F$ because they are the pieces of a separation of $C_1$, and $D_1$ by the separation step. Thus $D=E\cup(F\cup D_1)$ is a separation of $D$ with $x\in E$ and $y\in F\cup D_1$, contrary to $D\in\mathcal{A}$.
 
 :::
 
@@ -317,7 +342,7 @@ Thus $x, y$ lie in the same quasicomponent of $C_1$, which implies $C_1 \in \mat
 
 ::: pf-proof
 
-A separation of $C_1$ putting $x$ and $y$ on opposite sides would, by step 3.4, give a separation of $D$ doing the same, which $D\in\mathcal{A}$ forbids. So $x$ and $y$ lie in the same quasicomponent of $C_1$. And $C_1$ is closed in $X$ by step 3.3, so $C_1\in\mathcal{A}$.
+A separation of $C_1$ putting $x$ and $y$ on opposite sides would, by the step transferring a separation of $C_1$ to $D$, give a separation of $D$ doing the same, which $D\in\mathcal{A}$ forbids. So $x$ and $y$ lie in the same quasicomponent of $C_1$. And $C_1$ is closed in $X$ by the step proving it closed, so $C_1\in\mathcal{A}$.
 
 :::
 
@@ -329,7 +354,7 @@ This contradicts the minimality of $D$ in $\mathcal{A}$.
 
 ::: pf-proof
 
-$C_1\in\mathcal{A}$ by step 3.5 and $C_1\subsetneq D$ by step 3.3, whereas $D$ is minimal for inclusion among the members of $\mathcal{A}$ by step 2.4.
+$C_1\in\mathcal{A}$ by the step showing that, and $C_1\subsetneq D$ by the step showing the inclusion strict, whereas $D$ is minimal for inclusion among the members of $\mathcal{A}$ by the Zorn step.
 
 :::
 
@@ -341,7 +366,7 @@ Therefore $D$ is connected.
 
 ::: pf-proof
 
-The assumption of step 3.1 is refuted: $D$ admits no separation, so $D$ is connected (Munkres, §23).
+The assumption of a separation is refuted: $D$ admits no separation, so $D$ is connected (Munkres, §23).
 
 :::
 
@@ -353,7 +378,7 @@ Since $D$ is a connected subspace containing both $x$ and $y$, $x$ and $y$ belon
 
 ::: pf-proof
 
-$D$ is connected by step 3.7 and contains $x$ and $y$ because $D\in\mathcal{A}$. The components of a space are its maximal connected subspaces, and each connected subspace lies in one component (Theorem 25.1); so $D$, and with it both points, lies in one component of $X$. A component is connected and so lies in a single quasicomponent, namely the one holding $x$ and $y$; hence the two notions select the same pair.
+$D$ is connected by the step ruling out a separation and contains $x$ and $y$ because $D\in\mathcal{A}$. The components of a space are its maximal connected subspaces, and each connected subspace lies in one component (Theorem 25.1); so $D$, and with it both points, lies in one component of $X$. A component is connected and so lies in a single quasicomponent, namely the one holding $x$ and $y$; hence the two notions select the same pair.
 
 :::
 
