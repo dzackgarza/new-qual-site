@@ -53,7 +53,7 @@ the second dual being forced by part (b): at $l=-n-1$ the formula must return $R
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise III.8.4, printed p. 259. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter III §8, Exercise 3.8.4, printed p. 172, works the same computation: $\pi_*\OO(l)=S^l\mathcal E$ and the vanishing of $R^i\pi_*\OO(l)$ for $0<i<n$ from the projection formula together with the cohomology of projective space, and the exact sequence of (b) by the Euler sequence twisted and pushed forward.
+The argument is the card's own, and it is checked against Hartshorne's Exercise III.8.4. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter III §8, Exercise 3.8.4, works the same computation: $\pi_*\OO(l)=S^l\mathcal E$ and the vanishing of $R^i\pi_*\OO(l)$ for $0<i<n$ from the projection formula together with the cohomology of projective space, and the exact sequence of (b) by the Euler sequence twisted and pushed forward.
 
 Write
 $$

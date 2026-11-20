@@ -494,7 +494,7 @@ $$
 In the dual affine chart where the coefficient of $y$ is $1$, this is exactly
 the displayed parametrization of $\gamma$.
 
-Reiser, Exercise IV.2.3(b), printed p. 356, computes the same tangent lines in parametrized form: for $\Spec k[[t]]\to\AA^2$ given by $t\mapsto(f(t),g(t))$, the tangent line at $t=t_0$ is
+Reiser, Exercise IV.2.3(b), computes the same tangent lines in parametrized form: for $\Spec k[[t]]\to\AA^2$ given by $t\mapsto(f(t),g(t))$, the tangent line at $t=t_0$ is
 $$
 g'(t_0)\bigl(x-f(t_0)\bigr)-f'(t_0)\bigl(y-g(t_0)\bigr)=0,
 $$
@@ -508,7 +508,7 @@ The morphism $\varphi:X\to L$ of part (a) is ramified at $P$ if and
 only if $P\in L$ or $P$ is an inflection point.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(a), printed pp. 355--356. Take an affine chart and change
+Reiser, Exercise IV.2.3(a). Take an affine chart and change
 coordinates so that $P=(0,0)\in\AA^2$ and $X\cap\AA^2$ is cut out by a polynomial
 $f$ whose linear term is $x$; then $T_P(X)=V(x)$.
 
@@ -612,7 +612,7 @@ finite and separable.  Its ramification locus is finite.  By step [](#s2){.pf-re
 inflection point outside the finite set $X\cap L$ lies in that ramification
 locus, so the set of inflection points is finite.
 
-Reiser, Exercise IV.2.3(a), printed p. 356, draws the same conclusion in one line --- "by Hurwitz's formula, $\deg R<\infty$, so $X$ must have finitely many inflection points" --- where the finiteness of $\deg R$ is finiteness of the ramification divisor of the morphism $\varphi$ shown nonconstant here.
+Reiser, Exercise IV.2.3(a), draws the same conclusion in one line --- "by Hurwitz's formula, $\deg R<\infty$, so $X$ must have finitely many inflection points" --- where the finiteness of $\deg R$ is finiteness of the ramification divisor of the morphism $\varphi$ shown nonconstant here.
 :::
 
 :::
@@ -623,7 +623,7 @@ $P_1,\ldots,P_s$, then the corresponding point $[M]\in X^*$ is an ordinary
 $s$-fold point.  Consequently $X$ has only finitely many multiple tangents.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(b), printed pp. 356--357. An equation for the dual curve
+Reiser, Exercise IV.2.3(b). An equation for the dual curve
 is hard to get at, so the branches are computed from a formal parametrization of
 $X$. Put coordinates so that $M=V(x)$ and one contact point is $[0:0:1]$, with no
 contact point an inflection point. Locally at $[0:0:1]$ the curve is cut out by
@@ -682,7 +682,7 @@ points give different tangent lines through $O$.
 Because $O\notin X$, a general line through $O$ meets $X$ in $d$ points,
 counted with multiplicity, so $\deg\psi=d$.
 
-Reiser, Exercise IV.2.3(c), printed p. 357, computes this in coordinates $O=[0:0:1]$, $L=V(z)$, where $\psi$ is $(x,y)\mapsto[x:y]$ and $x/y$ is a local coordinate at $[0:1]$: $\psi$ is ramified at $P$ exactly when $x$ lies in the square of the maximal ideal at $P$, that is, exactly when $V(x)=OP$ meets $X$ at $P$ with multiplicity at least $2$; $O$ on no inflectional tangent makes the index exactly $2$, and $O$ on no multiple tangent makes distinct ramification points correspond to distinct lines through $O$.
+Reiser, Exercise IV.2.3(c), computes this in coordinates $O=[0:0:1]$, $L=V(z)$, where $\psi$ is $(x,y)\mapsto[x:y]$ and $x/y$ is a local coordinate at $[0:1]$: $\psi$ is ramified at $P$ exactly when $x$ lies in the square of the maximal ideal at $P$, that is, exactly when $V(x)=OP$ meets $X$ at $P$ with multiplicity at least $2$; $O$ on no inflectional tangent makes the index exactly $2$, and $O$ on no multiple tangent makes distinct ramification points correspond to distinct lines through $O$.
 :::
 
 :::
@@ -727,7 +727,7 @@ O^*\cdot X^*=d(d-1),
 $$
 which is the degree of $X^*$.
 
-Reiser, Exercise IV.2.3(c), printed p. 357, runs the same count: $g(X)=\frac{(d-1)(d-2)}{2}$ by (I, Ex. 7.2), so Hurwitz gives $\deg R=(d-1)(d-2)-2-d(-2)=d(d-1)$, and $R$ is a sum of distinct points each corresponding uniquely to a tangent to $X$ through $O$. The passage from that count of tangents to $\deg X^*$ is the transversal intersection $O^*\cap X^*$ computed here.
+Reiser, Exercise IV.2.3(c), runs the same count: $g(X)=\frac{(d-1)(d-2)}{2}$ by (I, Ex. 7.2), so Hurwitz gives $\deg R=(d-1)(d-2)-2-d(-2)=d(d-1)$, and $R$ is a sum of distinct points each corresponding uniquely to a tangent to $X$ through $O$. The passage from that count of tangents to $\deg X^*$ is the transversal intersection $O^*\cap X^*$ computed here.
 :::
 
 :::
@@ -740,7 +740,7 @@ $$
 tangent lines to $X$, other than $T_O(X)$, pass through $O$.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(d), printed p. 357. By steps [](#s3){.pf-ref} and
+Reiser, Exercise IV.2.3(d). By steps [](#s3){.pf-ref} and
 [](#s4){.pf-ref} there are only finitely many inflectional and multiple tangent
 lines, each meeting $X$ in finitely many points; excluding those points and the
 inflection points of $X$ removes only finitely many $O$. That count of the
@@ -806,7 +806,7 @@ $$
 \deg\varphi=d(d-1).
 $$
 
-Reiser, Exercise IV.2.3(e), printed p. 357: $\varphi^{-1}(P)$ is exactly the set of points $Q\in X$ with $P\in T_Q(X)$, which by part (c) has $d(d-1)$ points for a general $P$, so $\deg\varphi=d(d-1)$.
+Reiser, Exercise IV.2.3(e): $\varphi^{-1}(P)$ is exactly the set of points $Q\in X$ with $P\in T_Q(X)$, which by part (c) has $d(d-1)$ points for a general $P$, so $\deg\varphi=d(d-1)$.
 :::
 
 :::
@@ -858,7 +858,7 @@ $$
 $$
 which is exactly the asserted weighted inflection count.
 
-Reiser, Exercise IV.2.3(e), printed p. 357: Hurwitz gives $\deg R=(d-1)(d-2)-2+2d(d-1)=3d^2-5d$, and subtracting the $d$ points of $L\cap X$ leaves $3d^2-6d=3d(d-2)$.
+Reiser, Exercise IV.2.3(e): Hurwitz gives $\deg R=(d-1)(d-2)-2+2d(d-1)=3d^2-5d$, and subtracting the $d$ points of $L\cap X$ leaves $3d^2-6d=3d(d-2)$.
 :::
 
 :::
@@ -885,7 +885,7 @@ Thus the branch has multiplicity $2$ and its tangent line meets it with
 multiplicity $3$.  Equivalently, after formal changes of local coordinates it
 has parametrization $(t^2,t^3)$, the ordinary cusp.
 
-Reiser, Exercise IV.2.3(e), printed p. 357, obtains the same branch in parametrized form: at an ordinary inflection point $X$ is cut out by $x-uy^3$ with $u$ a unit, so $X$ is formally parametrized by $(ut^3,t)$ and he reads off the dual curve as
+Reiser, Exercise IV.2.3(e), obtains the same branch in parametrized form: at an ordinary inflection point $X$ is cut out by $x-uy^3$ with $u$ a unit, so $X$ is formally parametrized by $(ut^3,t)$ and he reads off the dual curve as
 $$
 t\longmapsto[1:3ut^2+u't^3:-(4ut^3+u't^4)]=[1:t^2(3u+u't):-t^3(4u+u't)],
 $$
@@ -949,8 +949,7 @@ $$
 $$
 This is the $E_6$ cusp (characteristic parametrization $(t^3,t^4)$).
 
-The first paragraph is the card's paraphrase of Reiser, Exercise IV.2.3(f), printed
-p. 357, whose sentence is: "it's clear that $\varphi:X\to X^*$ is finite, as
+The first paragraph is the card's paraphrase of Reiser, Exercise IV.2.3(f), whose sentence is: "it's clear that $\varphi:X\to X^*$ is finite, as
 it's a nonconstant map of curves. We also have that it is generically
 one-to-one on points: the only way to violate injectivity is to have multiple
 tangents, which happens only finitely often by (b). Since we're in
@@ -961,7 +960,7 @@ in characteristic zero" is what makes the inference valid, and the paraphrase
 carries it as the separability of $\gamma$. The second paragraph, the local form
 of $X^*$ at a hyperflex and its $\delta$-invariant, is the card's own: Reiser's
 part (h), printed p. 358, only substitutes $d=4$ in part (f), and Bergvall's
-§2.2, printed pp. 3--4, counts hyperflex lines as bitangents but says nothing
+§2.2, counts hyperflex lines as bitangents but says nothing
 about the singularity of the dual curve there.
 :::
 
@@ -1030,7 +1029,7 @@ $$
 $$
 Dividing by $2$ proves part (f).
 
-Reiser, Exercise IV.2.3(f), printed p. 357, computes the same number by the same route: $p_a(X^*)=p_a(X)+I+B$ from (IV, Ex. 1.8), with $p_a(X^*)=\binom{d(d-1)-1}{2}$ and $I=3d(d-2)$ from (e), so
+Reiser, Exercise IV.2.3(f), computes the same number by the same route: $p_a(X^*)=p_a(X)+I+B$ from (IV, Ex. 1.8), with $p_a(X^*)=\binom{d(d-1)-1}{2}$ and $I=3d(d-2)$ from (e), so
 $$
 B=\binom{d(d-1)-1}{2}-\binom{d-1}{2}-3d(d-2),
 $$
@@ -1044,7 +1043,7 @@ A plane cubic has exactly nine inflection points, all ordinary, and
 the line through any two of them meets the cubic in a third inflection point.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(g), printed p. 358. Part (e) with $d=3$ gives the total
+Reiser, Exercise IV.2.3(g). Part (e) with $d=3$ gives the total
 weight
 $$
 3\cdot3\cdot(3-2)=9,
@@ -1074,7 +1073,7 @@ Consequently there are always exactly $28$ bitangent lines when
 hyperflex lines are counted as bitangents.
 
 ::: pf-proof
-Reiser, Exercise IV.2.3(h), printed p. 358, substitutes $d=4$ in part (f):
+Reiser, Exercise IV.2.3(h), substitutes $d=4$ in part (f):
 $$
 \frac12\cdot4\cdot2\cdot1\cdot7=28.
 $$
@@ -1082,7 +1081,7 @@ Under the hypothesis of part (f) every inflection is ordinary and every multiple
 tangent is a strict bitangent, so this is the count for a general smooth quartic.
 
 For an arbitrary smooth quartic, hyperflexes included, the count is Bergvall's.
-His definition, §2.2, printed p. 3, is the one part (h) needs: "a bitangent to a
+His definition, §2.2, is the one part (h) needs: "a bitangent to a
 plane quartic $C$ is a line $L$ which is tangent to $C$ at two points or has
 contact order $4$ at one point", a line of the second kind being a hyperflex line.
 For such a line the divisor $L.C=2P+2Q$ is canonical, with $P=Q$ allowed, so the
@@ -1149,9 +1148,9 @@ case $d=3$ of the weighted count.
 :::
 
 ::: {.remark title="Published solution"}
-B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, printed pp. 354--358, solves parts (a)--(g) and the count of (h), and says nothing about the printed parenthetical of (h), which step [](#s11){.pf-ref} carries: (a) at printed pp. 355--356, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
+B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, solves parts (a)--(g) and the count of (h), and says nothing about the printed parenthetical of (h), which step [](#s11){.pf-ref} carries: (a) at printed pp. 355--356, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
 
-O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, printed pp. 3--4, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
+O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3, printed pp. 212--215, identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
 

@@ -176,9 +176,9 @@ Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} pr
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.3, PDF p. 4, text version `tmp/sources/hartshorne-solutions-borcherds.md`: (a) the homomorphism $f\mapsto f\circ\phi$ on germs of regular functions; (b) both directions, the inverse being a morphism by the pullback formula applied to $\phi^{-1}$; (c) a germ with zero pullback vanishes on the dense set $\phi(X)\cap V$ and hence is zero.
-William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.3, PDF pp. 9--10, text version `tmp/sources/hartshorne-solutions-troiani.md`: (a) through the colimit description of the stalk; (b) both directions through the induced maps on local rings; (c) two unequal germs remain unequal after restriction to $U\cap\phi(X)$, which is dense in $U$.
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.3, PDF pp. 31--32, text version `tmp/sources/hartshorne-solutions-egbert.md`: (a) and (c) as above, and (b) in one line for each direction.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 3.3, text version `tmp/sources/hartshorne-solutions-borcherds.md`: (a) the homomorphism $f\mapsto f\circ\phi$ on germs of regular functions; (b) both directions, the inverse being a morphism by the pullback formula applied to $\phi^{-1}$; (c) a germ with zero pullback vanishes on the dense set $\phi(X)\cap V$ and hence is zero.
+William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 3.3, text version `tmp/sources/hartshorne-solutions-troiani.md`: (a) through the colimit description of the stalk; (b) both directions through the induced maps on local rings; (c) two unequal germs remain unequal after restriction to $U\cap\phi(X)$, which is dense in $U$.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.3.3, text version `tmp/sources/hartshorne-solutions-egbert.md`: (a) and (c) as above, and (b) in one line for each direction.
 The source prints (c) as a third part and the problem block above now labels it so, as the three sets do; the proof above derives (b) by composing pullbacks along $\phi$ and the inverse homeomorphism rather than by inspecting representatives, which is where Borcherds and Egbert leave a sentence.
 Agree.
 :::

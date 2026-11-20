@@ -471,7 +471,7 @@ and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains 
 :::
 
 ::: {.solution}
-A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, printed pp. 84--85, and Example 3.2, printed pp. 85--86, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008), Example 3.1, printed pp. 5--6, and Lemma 4.4, printed pp. 10--11, for the curve of part (c). Every citation of Xie below is to that version, in which the construction is Example 3.1 on printed p. 5; in v3 (7 May 2007) the same statement is Theorem 3.1, printed pp. 4--5, so the number and the page depend on the version. Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
+A step that transcribes a published argument names the source, numbered statement and printed page; a step no source carries is marked as this card's. Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89, Lemma 3.1, and Example 3.2, for parts (a) and (b); and Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008), Example 3.1, and Lemma 4.4, for the curve of part (c). Every citation of Xie below is to that version, in which the construction is Example 3.1 on printed p. 5; in v3 (7 May 2007) the same statement is Theorem 3.1, so the number and the page depend on the version. Hartshorne 1971 runs this example over a field of characteristic $3$ and its curve is the plane quartic of the exercise.
 
 As in Hartshorne's notation, write
 $$
@@ -497,7 +497,7 @@ $$
 and the latter has a basis of the three negative monomials $\frac{1}{x^2yz}$, $\frac{1}{xy^2z}$, $\frac{1}{xyz^2}$.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 84: "Let $g=x^3y+y^3z+z^3x$. Then we have an exact sequence
+Hartshorne 1971, Lemma 3.1: "Let $g=x^3y+y^3z+z^3x$. Then we have an exact sequence
 $$
 0\to\OO_P(-4)\xrightarrow{g}\OO_P\to\OO_X\to0,
 $$
@@ -518,7 +518,7 @@ $$
 of Frobenius on $\PP^2$ with multiplication by $g^2$.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 85: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
+Hartshorne 1971, Lemma 3.1: "Under the isomorphism (1), the action of frobenius on $H^1(X,\OO_X)$ becomes the composition ... of frobenius on $\PP^2$ with multiplication by $g^2$." Then "frobenius takes our three monomials into their cubes", listed as $1/x^6y^3z^3$, $1/x^3y^6z^3$, $1/x^3y^3z^6$.
 
 The thickening behind the map: pulling the displayed exact sequence back by the characteristic-$3$ Frobenius changes $\OO(-4)$ to $\OO(-12)$ and sends a class to its cube, and the restriction from the thickening cut out by $F^3$ to $C$ is multiplication by $F^{3-1}=F^2$ on the first term.
 :::
@@ -529,7 +529,7 @@ The thickening behind the map: pulling the displayed exact sequence back by the 
 The action of the $k$-linear Frobenius morphism on $H^1(C,\OO_C)$ is identically zero.
 
 ::: pf-proof
-Hartshorne 1971, Lemma 3.1, printed p. 85: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
+Hartshorne 1971, Lemma 3.1: "Every monomial of $g^2$ contains either $x^6$ or $y^3$ or $z^3$. Hence $g^2/x^6y^3z^3=0$ in $H^2(P,\OO_P(-4))$. By symmetry, $g^2$ also kills the other two monomials, so we find that frobenius on $H^1(X,\OO_X)$ is 0."
 
 Carried out term by term, as the sentence says: the six monomial types of $F^2=(x^3y+y^3z+z^3x)^2$ are $x^6y^2$, $y^6z^2$, $z^6x^2$, $x^3y^4z$, $x^4yz^3$ and $xy^3z^4$, and after multiplication by $(x^6y^3z^3)^{-1}$ they leave respectively the $x$-, $y$-, $z$-, $y$-, $z$- and $y$-exponent at least zero, so each is zero in the top cohomology; the other two basis monomials are the cyclic permutations of the first, and $F$ is cyclically symmetric. This proves part (a).
 :::
@@ -546,7 +546,7 @@ $$
 and the kernel of $H^1(C,\OO_C(-3P))\to H^1(C,\OO_C)$ has dimension $2$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$", printed p. 85. Both are Riemann--Roch on a curve of genus $3$,
+Hartshorne 1971, Example 3.2, gives the first as "By Riemann--Roch, $H^1(X,\OO(-P))$ has dimension 3", and the second is his "By Riemann--Roch, $\dim H^1(X,\OO_X(-3P))=5$", printed p. 85. Both are Riemann--Roch on a curve of genus $3$,
 $$
 h^1-h^0=g-1-\deg,
 $$
@@ -565,7 +565,7 @@ $$
 with $f^*\xi=0$ in $H^1(C,\OO_C(-3P))$.
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 86: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The diagram he prints between those two sentences is the naturality square of $f^*$ over the two restriction maps to $H^1(X,\OO_X)$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
+Hartshorne 1971, Example 3.2: "Now frobenius is 0 on $H^1(X,\OO_X)$. So by counting dimensions, there is a $\hat\xi\ne0$ in $H^1(X,\OO_X(-P))$ with $f^*(\xi)=0$." The diagram he prints between those two sentences is the naturality square of $f^*$ over the two restriction maps to $H^1(X,\OO_X)$; the count it names is the one step [](#s4){.pf-ref} carries out, with the two printed numbers: $f^*$ maps a three-dimensional space into the two-dimensional kernel of $H^1(\OO_C(-3P))\to H^1(\OO_C)$, since the composite $H^1(\OO_C(-P))\to H^1(\OO_C)$ is an isomorphism and Frobenius vanishes on $H^1(\OO_C)$ by step [](#s3){.pf-ref}, so the map has a nonzero kernel. This proves part (b).
 :::
 
 :::
@@ -581,7 +581,7 @@ $$
 $$
 
 ::: pf-proof
-Hartshorne 1971, Example 3.2, printed p. 85, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, printed p. 5, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle; the section is $C_0$, with $C_0^2=1$ and $C_0^2=-e$.
+Hartshorne 1971, Example 3.2, gives the extension and "The degree of $E$ is 1". Xie, Example 3.1, writes for the same construction, with $\mathcal L=\OO_C(L)$ of degree $1$ and $X=\PP(\mathcal E)$: "The sequence (3) determines a section $E$ of $f$ through the map $H^0(C,\OO_C)\hookrightarrow H^0(C,\mathcal E)=H^0(X,\OO_X(1))$, hence $\OO_X(E)\cong\OO_X(1)$", and "$E^2=\deg\mathcal E=\deg\mathcal L>0$". Xie writes $E$ for the section and $\mathcal E$ for the bundle; the section is $C_0$, with $C_0^2=1$ and $C_0^2=-e$.
 
 That the bundle is normalized is this card's own argument, and no source read carries it. Let $M$ be a line bundle of negative degree on $C$. If $\deg M\le-2$, then $M$ and $M(P)$ both have negative degree, so $\mathcal E\tensor M$ has no global section. If $\deg M=-1$ and $M\not\cong\OO_C(-P)$, then $M(P)$ is a nontrivial line bundle of degree $0$ and again has no section, while $M$ has none. Finally for $M=\OO_C(-P)$, the twisted sequence is $0\to\OO_C(-P)\to\mathcal E(-P)\to\OO_C\to0$, whose connecting map
 $$
@@ -611,7 +611,7 @@ C_0\cap Y=\emptyset.
 $$
 
 ::: pf-proof
-Xie, Example 3.1, printed pp. 5--6. Pulling the extension back by Frobenius gives the split sequence
+Xie, Example 3.1. Pulling the extension back by Frobenius gives the split sequence
 $$
 0\to\OO_C\to F^*\mathcal E\to\mathcal L^3\to0
 $$
@@ -673,9 +673,9 @@ $$
 satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, but is not ample.
 
 ::: pf-proof
-Proposition 2.21(b), printed p. 382, reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, printed p. 383, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
+Proposition 2.21(b), reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$, printed p. 382. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
 
-For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap\Sigma=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1, printed p. 5; in intersection numbers that is $C_0\cdot\Sigma=0$, consistently with $(C_0-f)\cdot C_0=1-1=0$. Since $\Sigma$ is an irreducible curve on $X$,
+For non-ampleness, step [](#s7){.pf-ref} gives $C_0\cap\Sigma=\emptyset$, Xie's $E\cap C'=\emptyset$ in his Example 3.1; in intersection numbers that is $C_0\cdot\Sigma=0$, consistently with $(C_0-f)\cdot C_0=1-1=0$. Since $\Sigma$ is an irreducible curve on $X$,
 $$
 D\cdot\Sigma=2\,C_0\cdot\Sigma=0,
 $$
@@ -683,7 +683,7 @@ and an ample divisor meets every irreducible curve positively, by Nakai--Moishez
 $$
 \boxed{D\text{ is not ample}.}
 $$
-Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, printed pp. 85--86, is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
+Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
 :::
 
 :::
@@ -699,13 +699,13 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 ::: {.remark title="Published solution"}
 Parts (a) and (b) have complete published arguments. For part (c) the published record contains the construction but no proof: Xie asserts that his $C'$ is an irreducible smooth curve, and both assertions fail here, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} identifying his divisor as $3\Sigma$, the triple of a section, and correcting the printed statement.
 
-Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
+Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
-Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008): Example 3.1, printed pp. 5--6, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as $3\Sigma$, the triple of a section, so his ``irreducible'' can only name the support and his smoothness claim is false; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
+Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008): Example 3.1, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as $3\Sigma$, the triple of a section, so his ``irreducible'' can only name the support and his smoothness claim is false; Lemma 4.4(iii), printed pp. 10--11, is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, PDF pp. 271--273, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15, printed pp. 105--106, reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
 :::
 
 ::: {.remark}
-The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that the class $3C_0-3f$ has $3\Sigma$ as its only effective divisor --- the space of sections is one-dimensional --- so it contains no nonsingular curve at all, and that Xie's divisor is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, printed pp. 5--6, asserts the smoothness of his curve as well, and it fails for him by the same count.
+The printed (c), on printed p. 385, reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the adjective is what fails: step [](#s9){.pf-ref} shows that the class $3C_0-3f$ has $3\Sigma$ as its only effective divisor --- the space of sections is one-dimensional --- so it contains no nonsingular curve at all, and that Xie's divisor is the triple of the section $\Sigma\cong C$ of step [](#s7){.pf-ref}, so it is not even reduced. The statement above keeps the book's words, and the printed "nonsingular" is recorded as false here rather than kept.  Xie's Example 3.1, asserts the smoothness of his curve as well, and it fails for him by the same count.
 :::
