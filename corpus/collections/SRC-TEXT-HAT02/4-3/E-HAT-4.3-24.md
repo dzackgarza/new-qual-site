@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page corrected. Theorem 4.71 is on printed p. 414, not p. 415: the folio 414 of tmp/hat/AT.txt
+    carries "Theorem 4.71. Every map f: X -> Y between connected CW complexes has a
+    Moore-Postnikov factorization". The events of 2026-11-18 that cite p. 415 are left as written
+    under QUAL-11 and are superseded here. The argument is unchanged.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
