@@ -57,7 +57,7 @@ $f^*$ preserves quasicoherence always, and coherence when $f$ is a morphism of N
 
 ::: {.remark}
 Pullback and pushforward have different exactness behavior.
-$f^*$ is right exact: on affines it is $\wait \tensor_A B$.
+$f^*$ is right exact: on affines it is $-\tensor_A B$.
 It is exact when $B$ is flat over $A$, equivalently when the corresponding morphism is flat.
 $f_*$ is only left exact, and its failure to be exact is the definition of higher direct images $R^i f_*$; its failure to preserve coherence is visible already in $f: \AA^1_k \to \Spec k$, where $f_*\OO_{\AA^1}$ has global sections $k[t]$, not finite over $k$.
 For a proper morphism of Noetherian schemes and coherent $\mcf$, every $R^i f_*\mcf$ is coherent.
