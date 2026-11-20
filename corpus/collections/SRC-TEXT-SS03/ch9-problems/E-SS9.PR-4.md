@@ -60,6 +60,19 @@ audit:
     Steps s1--s3 are unchanged. Provenance: no published solution set covers this Problem (Rhoades,
     *Solutions/Hints to the Exercises*, 2006, covers a selection of the Exercises), so the argument
     is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second component of step s4 repaired, on a referee's report of this session: the properness
+    argument, and the identification of $\wp(R)$ with a half-plane before it, presupposed that
+    $\wp(R)$ meets neither the real axis nor infinity, which the card had not proved. A connected
+    open subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is a half-plane, but only under
+    that disjointness, which fails for $\CC\setminus[0,\infty)$. The step now proves it: if
+    $\wp(z)\in\RR$ then $\wp(z)=\wp(\bar z)$ by step s1, and $\wp(z)=\wp(w)$ forces
+    $z\equiv\pm w\pmod\Lambda$ since $\wp$ is even with a double pole at $0$ as its only pole, so
+    $2\operatorname{Im}z\in t\ZZ$ or $2\operatorname{Re}z\in\ZZ$, neither of which holds on $R$.
+    The rest of the step is unchanged.
 ---
 
 ::: {.exercise}
@@ -151,7 +164,9 @@ $\wp(R)$ is open (step [](#s3){.pf-ref} and the open mapping theorem) and connec
 
 An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$.
 
-It remains to see that $\restrictionof{\wp}{R}$ is injective, which does not follow from local injectivity alone: $\exp$ is a local biholomorphism on the simply connected $\CC$ and is not injective. What is needed is properness. Let $K\subseteq\wp(R)$ be compact. Then $\wp^{-1}(K)\cap R$ is closed in $R$, and it stays at a positive distance from $\partial R$: if $z_k\in\wp^{-1}(K)\cap R$ tended to $z\in\partial R$, then $\wp(z_k)\in K$ would converge to $\wp(z)\in\RR$ by continuity of $\wp$ on $\overline R\setminus\Lambda$, or to $\infty$ at the corner $0\in\Lambda$, and either is impossible because $K$ is a compact subset of a half-plane. Since $\overline R$ is bounded, $\wp^{-1}(K)\cap R$ is compact, so $\restrictionof{\wp}{R}$ is proper. A proper local homeomorphism is a covering map, and a covering of the simply connected $\wp(R)$ by the connected $R$ is trivial, so $\restrictionof{\wp}{R}$ is a homeomorphism onto $\wp(R)$: it is injective and conformal.
+It remains to see that $\restrictionof{\wp}{R}$ is injective, which does not follow from local injectivity alone: $\exp$ is a local biholomorphism on the simply connected $\CC$ and is not injective. First, $\wp$ takes no real value on $R$. If $\wp(z)\in\RR$, then $\wp(z)=\overline{\wp(z)}=\wp(\bar z)$ by step [](#s1){.pf-ref}; and $\wp(z)=\wp(w)$ forces $z\equiv\pm w\pmod\Lambda$, because for fixed $w$ the function $\wp(z)-\wp(w)$ has its only pole at $0$, of order $2$, and therefore exactly two zeros counted with multiplicity, at $z=w$ and $z=-w$. Hence $z\equiv\bar z$ or $z\equiv-\bar z\pmod\Lambda$, that is $2\operatorname{Im}z\in t\ZZ$ or $2\operatorname{Re}z\in\ZZ$, and neither holds on $R$. So $\wp(R)\subseteq\CC\setminus\RR$.
+
+What is needed next is properness. Let $K\subseteq\wp(R)$ be compact. Then $\wp^{-1}(K)\cap R$ is closed in $R$, and it stays at a positive distance from $\partial R$: if $z_k\in\wp^{-1}(K)\cap R$ tended to $z\in\partial R$, then $\wp(z_k)\in K$ would converge to $\wp(z)\in\RR$ by continuity of $\wp$ on $\overline R\setminus\Lambda$, or to $\infty$ at the corner $0\in\Lambda$, and either is impossible because $K$ is a compact subset of a half-plane. Since $\overline R$ is bounded, $\wp^{-1}(K)\cap R$ is compact, so $\restrictionof{\wp}{R}$ is proper. A proper local homeomorphism is a covering map, and a covering of the simply connected $\wp(R)$ by the connected $R$ is trivial, so $\restrictionof{\wp}{R}$ is a homeomorphism onto $\wp(R)$: it is injective and conformal.
 
 Which half-plane depends on the rectangle: adjacent rectangles give opposite signs, because the values on a shared edge are real and $\wp$ is a local homeomorphism there, so the images lie on opposite sides.
 
