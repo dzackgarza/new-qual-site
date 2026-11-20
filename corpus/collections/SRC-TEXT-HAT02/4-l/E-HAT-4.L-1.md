@@ -36,9 +36,19 @@ audit:
     determined by the fundamental class, and the explicit identification of the two degree families
     for odd $p$ with the Bockstein. No defect found in the statement, §4.L Exercise 1. No retained
     solution set covers it.
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The solution's opening sentence now names the exercise, the printed page and the retained copy.
+    Re-confirmed in this pass rather than copied: PDF p. 526 carries the running head 517.
+    The durable part of the locator is that printed page; the file path names this machine's copy and
+    `tmp/sources` does not survive a VM reset. No mathematics changed.
 ---
 
 ::: {.problem}
+This is Exercise 1 of Section 4.L of Hatcher, *Algebraic Topology* (2002), printed p. 517, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+
 Determine all cohomology operations $H^1(X; \ZZ) \to H^n(X; \ZZ)$, $H^2(X; \ZZ) \to H^n(X; \ZZ)$, and $H^1(X; \ZZ_p) \to H^n(X; \ZZ_p)$ for $p$ prime.
 :::
 
