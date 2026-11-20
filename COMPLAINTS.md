@@ -9483,3 +9483,17 @@ measured, not carried.
 **Not checked.** Neither card has a retained solution set; the rank inequality for a composition and the identification $\operatorname{rank}f=\operatorname{rank}L_f$ are used as the book states them.
 
 **The residue.** Seven residue-5 HK cards remain after this pair: `E-HK-102-5`, `-102-11`, `-103-5`, `-103-11`, `-104-5` — five, in fact, since `-104-11` was repaired in the provenance batch — plus `E-HK-68-11`'s neighbours already done. The §10 pairs are the last group.
+
+## 2026-11-19: #168's tenth round — V.3.6 closed, and V.3.7's first blowups recomputed
+
+**Object and need.** The ninth round leaves V.3.6's `puiseux-pair` and `c1-c2-equivalent` unread. This round read both and they are correct, which closes V.3.6; and it recomputed the first blowups of V.3.7's five germs, four of whose $\delta$ labels the recomputation confirms. No card is changed.
+
+**`puiseux-pair` is correct.** For $C_1$ the parametrisation $x=t^3$, $y=-t^7$ satisfies $y^3+x^7=-t^{21}+t^{21}=0$ and has $\gcd(3,7)=1$, so its characteristic pair is $(3,7)$. For $C_2$ the substitution $x=t^3$, $y=t^7z$ gives $t^{21}(z^3+tz+1)$, and $z^3+1$ has the simple root $z=-1$ since the $z$-derivative $3z^2+t$ is $3\ne0$ at $(0,-1)$; the formal implicit-function theorem then gives $z\in\CC[[t]]$ with $z(0)=-1$, so $C_2$ is parametrised by $x=t^3$, $y=-t^7+\cdots$ and has the same pair.
+
+**`c1-c2-equivalent` is correct.** In the chart $y=xy'$ the two strict transforms are $y'^3+x^4$ and $y'^3+x^3y'+x^4$, both of multiplicity $3$ with tangent cone $y'^3$; the second blowup in $y'=xy''$ gives $y''^3+x$ and $y''^3+xy''+x$, both nonsingular at the origin (the $x$-partial is $1$ and $y''+1$). Read there, the two equations are $x+y''^3$ and $x(1+y'')+y''^3$ with the same exceptional curve $x=0$, and $x\mapsto x(1+y'')$, $y''\mapsto y''$ is an automorphism carrying one to the other, so the resolutions coincide from then on. The cross-check is right too: $\delta=\binom32+\binom32=6=\frac{(3-1)(7-1)}2$.
+
+**V.3.7's first blowups, recomputed.** (a) $x^3+y^5$: $\mu_0=3$, chart $x=uy$ gives $u^3+y^2$ of multiplicity $2$, one more gives $u+v^2$; sequence $3,2,1$ and $\delta=4$. (b) $x^3+x^4+y^5$: $u^3+u^4y+y^2$, then $u+u^3v+v^2$; sequence $3,2,1$ and $\delta=4$, the same at every stage as (a). (c) $x^3+y^4+y^5$: chart $x=uy$ gives $u^3+y+y^2$, whose linear part is $y$, so $\delta=3$. (e) $x^3+xy^3+y^5$: chart $x=uy$ gives $u^3+uy+y^2$, whose quadratic part is $y(u+y)$, two distinct tangents, a node; so $\delta=\binom32+1=4$ and the second branch data differ from (a)'s, which is the card's non-equivalence. My first pass at (e) dropped the $uy$ term and read the point as a cusp; the card is right and I was wrong.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Not read: V.3.7's step texts, and (d) $x^3+y^5+y^6$ was not recomputed; so #168's acceptance is not met for V.3.7. Still unread: V.3.7, IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b). With `puiseux-pair` and `c1-c2-equivalent` read here, V.3.6 is read in full and every step of it is correct as written.
