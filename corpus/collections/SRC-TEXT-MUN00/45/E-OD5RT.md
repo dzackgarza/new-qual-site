@@ -72,6 +72,23 @@ audit:
     compact), and the definition of total boundedness in §45. One page citation in the earliest
     event is removed under the citation rule now in force.
 ---
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with three repairs found in the verification. The metric $D$ of Exercise
+    20.3(b) is correct, and both stages of the exercise are answered: total boundedness of the
+    factors gives total boundedness of the product, and compactness of the factors is turned into
+    completeness coordinatewise. Repaired: the net step concluded $D(x,y)\le\varepsilon$ from
+    terms each below $\varepsilon$, which does not pass to a supremum --- the bound is now the
+    maximum of $1/(N+1)$ and the finitely many terms with $i\le N$, all below $\varepsilon$; the
+    sentence on compact spaces said "compactness of the completion-free sequential compactness",
+    which garbled the appeal to Theorem 28.2 and now reads as sequential compactness; and the
+    final step used total boundedness of the compact factors without saying so, which is now
+    derived from Theorem 45.1, the cover by $\varepsilon$-balls having a finite subcover. The
+    argument is the card's own; the AoPS page for this section loses its formulas and was not
+    transcribed. Citation by number: §45 Exercise 1, Exercise 20.3, Theorems 28.2 and 45.1.
+
 ::: {.exercise}
 
 If $X_n$ is metrizable with metric $d_n$, then
@@ -123,7 +140,7 @@ is finite, and for every $x\in X$ there is $y\in F$ with $D(x,y)<\varepsilon$.
 
 ::: pf-proof
 
-$F$ is a product of finitely many finite sets and singleton factors, hence finite, and nonempty because every factor is nonempty. Given $x$, choose $y_i\in F_i$ with $\bar d_i(x_i,y_i)<\varepsilon i$ for $i\le N$, possible by step 2, and put $y_i=a_i$ for $i>N$; then $y\in F$. For $i\le N$ the $i$-th term of the supremum is below $\varepsilon$, and for $i>N$ it is $\bar d_i(x_i,y_i)/i\le1/i\le1/(N+1)<\varepsilon$; hence $D(x,y)\le\varepsilon$, and the bound is strict because all terms are.
+$F$ is a product of finitely many finite sets and singleton factors, hence finite, and nonempty because every factor is nonempty. Given $x$, choose $y_i\in F_i$ with $\bar d_i(x_i,y_i)<\varepsilon i$ for $i\le N$, possible by step 2, and put $y_i=a_i$ for $i>N$; then $y\in F$. For $i\le N$ the $i$-th term of the supremum is below $\varepsilon$, and for $i>N$ it is $\bar d_i(x_i,y_i)/i\le1/i\le1/(N+1)<\varepsilon$; hence $D(x,y)\le\max\{1/(N+1),\max_{i\le N}\bar d_i(x_i,y_i)/i\}<\varepsilon$, the first entry and the finitely many others all being below $\varepsilon$.
 
 :::
 
@@ -147,7 +164,7 @@ If every $X_i$ is compact then each is complete, and a $D$-Cauchy sequence is Ca
 
 ::: pf-proof
 
-A compact metric space is complete: a Cauchy sequence has a convergent subsequence by compactness of the completion-free sequential compactness of metric spaces (Theorem 28.2), and a Cauchy sequence with a convergent subsequence converges. For the coordinate claim, $\bar d_i(x_i,y_i)/i\le D(x,y)$ gives $\bar d_i(x_i,y_i)\le iD(x,y)$, so a $D$-Cauchy sequence is $\bar d_i$-Cauchy for each $i$, hence $d_i$-Cauchy, hence convergent in $X_i$; the coordinatewise limits define a point $x$ of the product.
+A compact metric space is complete: a Cauchy sequence has a convergent subsequence by the sequential compactness of compact metric spaces (Theorem 28.2), and a Cauchy sequence with a convergent subsequence converges. For the coordinate claim, $\bar d_i(x_i,y_i)/i\le D(x,y)$ gives $\bar d_i(x_i,y_i)\le iD(x,y)$, so a $D$-Cauchy sequence is $\bar d_i$-Cauchy for each $i$, hence $d_i$-Cauchy, hence convergent in $X_i$; the coordinatewise limits define a point $x$ of the product.
 
 :::
 
@@ -171,7 +188,7 @@ A complete totally bounded metric space is compact, so the countable product of 
 
 ::: pf-proof
 
-That is Theorem 45.1. Steps 4 and 6 give total boundedness and completeness of $(X,D)$, and $D$ induces the product topology by Exercise 20.3(b), so $X$ is compact in the product topology.
+That is Theorem 45.1. Each compact $X_i$ is totally bounded, its cover by the open $\varepsilon$-balls having a finite subcover, so steps 4 and 6 give total boundedness and completeness of $(X,D)$, and $D$ induces the product topology by Exercise 20.3(b), so $X$ is compact in the product topology.
 
 :::
 
