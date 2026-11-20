@@ -20,4 +20,6 @@ $$
 \Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\dt
 $$
 converges absolutely, and it defines a [[D-E7A5W|holomorphic]] function on the right half-plane $\theset{s\in\CC\st\Re s>0}$.
+
+This is [@SS03, ch. 6, Proposition 1.1].
 :::
