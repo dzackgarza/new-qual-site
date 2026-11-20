@@ -70,6 +70,22 @@ audit:
     Problem 4 was found. This search located no published set answering this Problem, and none is
     retained in this repository. Not checked: whether such a set exists outside what a web search
     reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Appendix A*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 4 and checked against Appendix A, Problem 4: Cauchy's formula on a circle of radius
+    $1+\delta$ minus the residues at the boundary poles, the outer integral $O(R^{-n})$, and the
+    conclusion $F_n=-\sum_jP_j(n)+O(e^{-\varepsilon n})$, with each $P_j$ a polynomial in $n$ times
+    $\alpha_j^{-n}$. Two things it states that the card had already corrected independently: the
+    printed plus sign is an error, with the counterexample $F(w)=1/(1-w)$, where $F_n=1$ while the
+    printed residue term is $-1$; and the factor $\alpha_j^{-n}$ in each $P_j$. Its text is an
+    outline, and the card's steps supply the residue computation, the estimate on the outer circle
+    and the bookkeeping of the polynomial degree. Not checked: anything in the published document
+    outside its Problem 4.
 ---
 
 ::: {.exercise}
@@ -85,7 +101,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 :::
 
 ::: {.solution}
-No published solution set covers this problem: the collection's provenance is the book, quoted through the OCR transcription of its Appendix A Problems, and the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Appendix A Problems; no other set was located, and the argument on the card is its own. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against the printed Problem, it reaches the same two corrected forms the card states: Cauchy's formula on $|w|=R$ with $1<R$ inside the meromorphic region gives $F_n$ as the outer integral $O(R^{-n})$ minus the sum of the residues of $F(w)w^{-n-1}$, which is $-\sum_jP_j(n)+O(e^{-\varepsilon n})$, and it too records that the printed plus sign is an error, with the counterexample $F(w)=1/(1-w)$, where $F_n=1$ while the printed residue term is $-1$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$.
 
 ::: pf
 
