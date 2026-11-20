@@ -86,6 +86,19 @@ audit:
     gives [X,X]_* = product over j of pi_k(X), and pi_k(X) = Z^n for k > 1, so [X,X]_* = M_n(Z) with
     composition matrix multiplication, whose group of units is GL_n(Z); k > 1 is what makes pi_k
     abelian and free, and that is why the argument does not extend to k = 1. Correct as written.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read correct, and recorded as standing under the decision the orchestrator posted on issue #163 for
+    this exercise: no published solution was found, so the card's own proof stands once a reader reads it
+    correct. The reading: the wedge of n copies of S^k with k > 1 is (k-1)-connected, by cellular
+    approximation with Theorem 4.8 and by van Kampen in degree one; Hurewicz, Theorem 4.32, gives
+    pi_k(X) = H_k(X) = Z^n, cellular homology computing the latter by Theorem 2.35; the inclusion classes
+    form a basis by naturality; the wedge's universal property gives [X,X]_* = product of n copies of
+    pi_k(X) = M_n(Z) with composition matrix multiplication; and the group of units of M_n(Z) is GL_n(Z).
+    The hypothesis k > 1 is exactly what makes pi_k abelian and free. The source obligation is closed by
+    the decision, not by a citation.
 ---
 
 ::: {.problem}
