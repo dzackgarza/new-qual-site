@@ -130,7 +130,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove both assertions.
 ::: {.remark title="Published solution"}
 The exercise is II.3.6, printed p. 91 of Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.6, PDF p. 21, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's whole argument is that any nonempty affine open $\Spec A$ contains $\xi$, which corresponds to $(0)$, so the local ring there is $A_{(0)}=\Frac(A)$.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.6, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim's whole argument is that any nonempty affine open $\Spec A$ contains $\xi$, which corresponds to $(0)$, so the local ring there is $A_{(0)}=\Frac(A)$.
 The proof above adds that $\xi$ lies in every nonempty open and that the stalk of the restricted sheaf on that open agrees with the stalk of $\OO_X$, which is what makes the identification a statement about $\OO_\xi$.
 Agree.
 :::

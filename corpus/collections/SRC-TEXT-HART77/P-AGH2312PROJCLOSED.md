@@ -246,7 +246,7 @@ Hartshorne II.5.16 shows that every closed subscheme of $X$ comes from a homogen
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.12, PDF p. 25, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gets $U=\Proj T$ from $\phi(S_+)=T_+$ and closedness of $\Proj T\to\Proj S$ from surjectivity of $(S_f)_0\to(T_{\phi(f)})_0$ for homogeneous $f\in S_+$, and disposes of (b) by noting that $S/I$ and $S/I'$ agree in large degree and citing 2.14.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.12, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim gets $U=\Proj T$ from $\phi(S_+)=T_+$ and closedness of $\Proj T\to\Proj S$ from surjectivity of $(S_f)_0\to(T_{\phi(f)})_0$ for homogeneous $f\in S_+$, and disposes of (b) by noting that $S/I$ and $S/I'$ agree in large degree and citing 2.14.
 The proof above proves the degree-zero surjectivity by lifting a homogeneous numerator, notes that $I'$ is an ideal, and cites 2.14(c) for the same isomorphism in large degree.
 Agree.
 :::

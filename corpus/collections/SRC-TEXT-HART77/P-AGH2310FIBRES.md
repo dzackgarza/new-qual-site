@@ -366,7 +366,7 @@ audit:
 
 ::: {.solution}
 The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.10 (Fibres of a Morphism), printed pp. 28--29 of the held scan, transcribed and checked against the exercise as printed: the identification of $X\times_S\Spec k(y)$ with $f^{-1}(y)$ on the underlying space, the commutativity of the square through $B\otimes_Ak\to\Spec A$, and parts (a) to (c) -- that $f^{-1}(U)$ is a closed immersion with $f^{-1}(U)=V(AI)$, the same for $X'\\to X$, and the affine case -- together with the qualification the exponent's argument needs.
-The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 2.3.10, PDF p. 23; the Cais solutions, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Exercise 3.10, printed pp. 5--8; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, Exercise II.3.10, printed p. 84; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194.
+The sources cited at the steps are Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Exercise 2.3.10; the Cais solutions, Exercise 3.10, PDF p. 12 of 29, the file having no printed folio; A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Exercise 3.10; A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*, Exercise II.3.10; and, for the characteristic-two case, comments 3488648 and 3489729 on Math StackExchange question 1709194.
 
 ::: pf
 
@@ -376,9 +376,9 @@ The homeomorphism of (a) is proved with $Y$ affine and then $X$ affine, the affi
 ::: pf-proof
 The base ring is written $B$ and the coordinate ring of the total space $A$ throughout this proof.  Kim, Cais and Egbert use the opposite letters, writing $A$ for the base ring and $B$ for the total space; what is transcribed from them below is stated in the letters of this proof, with $A$ and $B$ interchanged and nothing else changed.  Shichijo writes $\phi:B\to A$ for the map of rings, the same letters as here.
 
-Kim, Exercise 2.3.10(a), PDF p. 23: "Since the fiber product of schemes is fiber product of affine schemes glued together, we may assume first that $Y$ is affine and then $X$ is affine."
+Kim, Exercise 2.3.10(a): "Since the fiber product of schemes is fiber product of affine schemes glued together, we may assume first that $Y$ is affine and then $X$ is affine."
 
-Cais, Exercise 3.10(a), PDF p. 12: for an affine neighbourhood $\Spec B$ of $y$, whose coordinate ring he calls $A$, the universal property of the fibre product gives, in the letters of this proof,
+Cais, Exercise 3.10(a): for an affine neighbourhood $\Spec B$ of $y$, whose coordinate ring he calls $A$, the universal property of the fibre product gives, in the letters of this proof,
 $$
 X_y
 =
@@ -386,7 +386,7 @@ X_y
 $$
 and for $U\subseteq X$ open, $p^{-1}(U)=U\times_Y\Spec\kappa(y)$, so the affine statements glue.
 
-Shichijo, Exercise 3.10(a), printed pp. 5--7, makes the same split into an affine case and a general case, where $f^{-1}(\tilde Y)=\bigcup X_i$ is an affine cover over the affine open $\tilde Y\ni y$ and $X_y$ is the gluing of the schemes $(X_y)_i=X_i\times_{\tilde Y}\Spec(\OO_{\tilde Y,y}/\mathfrak m_{\tilde Y,y})$.  He writes the affine case for $\phi:B\to A$, with $X=\Spec A$ over $Y=\Spec B$, as here.
+Shichijo, Exercise 3.10(a), makes the same split into an affine case and a general case, where $f^{-1}(\tilde Y)=\bigcup X_i$ is an affine cover over the affine open $\tilde Y\ni y$ and $X_y$ is the gluing of the schemes $(X_y)_i=X_i\times_{\tilde Y}\Spec(\OO_{\tilde Y,y}/\mathfrak m_{\tilde Y,y})$.  He writes the affine case for $\phi:B\to A$, with $X=\Spec A$ over $Y=\Spec B$, as here.
 :::
 
 :::
@@ -402,13 +402,13 @@ S=B\setminus\mfp.
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.10(a), PDF p. 23, decomposes the total ring along the base prime,
+Kim, Exercise 2.3.10(a), decomposes the total ring along the base prime,
 $$
 A\longrightarrow A/\mfp A\longrightarrow (B-\mfp)^{-1}(A/\mfp A)=A\otimes_B\kappa(\mfp),
 $$
 his decomposition $B\to B/\mathfrak pB\to(A-\mathfrak p)^{-1}(B/\mathfrak pB)$ being the same with the two letters exchanged.
 
-Shichijo, Exercise 3.10(a), printed p. 6, computes the same tensor with $I_{\mfp}=\phi(\mfp)A$ and $T$ the image of $S$:
+Shichijo, Exercise 3.10(a), computes the same tensor with $I_{\mfp}=\phi(\mfp)A$ and $T$ the image of $S$:
 $$
 A\otimes_B\frac{S^{-1}B}{S^{-1}\mfp}
 \cong
@@ -434,14 +434,14 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.10(a), printed p. 6: by Atiyah--Macdonald Proposition 1.1 and 3.11 the primes of $T^{-1}(A/I_{\mfp})$ are the primes of $A$ containing $I_{\mfp}$ and meeting $T$ trivially, and his equivalence $(\ast)$ proves
+Shichijo, Exercise 3.10(a): by Atiyah--Macdonald Proposition 1.1 and 3.11 the primes of $T^{-1}(A/I_{\mfp})$ are the primes of $A$ containing $I_{\mfp}$ and meeting $T$ trivially, and his equivalence $(\ast)$ proves
 $$
 I_{\mfp}\subseteq\mfq\ \text{and}\ T\cap\bar\mfq=\emptyset
 \iff
 f(\mfq)=\phi^{-1}(\mfq)=\mfp .
 $$
 
-Egbert, Exercise II.3.10(a), printed p. 84, obtains the same set; his letters are the opposite of those of this proof, $A$ for the base ring and $B$ for the total space, so that his display reads
+Egbert, Exercise II.3.10(a), obtains the same set; his letters are the opposite of those of this proof, $A$ for the base ring and $B$ for the total space, so that his display reads
 $$
 \Spec(B_{\mathfrak p}/\mathfrak pB_{\mathfrak p})
 \approx
@@ -451,7 +451,7 @@ f^{-1}(y),
 $$
 with $y$ the point $\mathfrak p$ of $\Spec A$ and $\mfq$ the variable point of $\Spec B$.  His first condition prints $f^{-1}(y)\subset\mathfrak p$ where $f^{-1}(\mfq)\subseteq\mathfrak p$ belongs, the condition being on $\mfq$ and not on $y$; read that way his two conditions say $f^{-1}(\mfq)=\mathfrak p=y$, and the set is the fibre over $y$, which in the letters of this proof is the display above.
 
-Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp A\subseteq\mfq$ and $\mfq\cap g(B-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$; his $g$ is the map of rings from the base to the total, $g:B\to A$ in the letters of this proof.
+Cais, Exercise 3.10(a), states the two conditions as $\mfp A\subseteq\mfq$ and $\mfq\cap g(B-\mfp)=\emptyset$, which together say $g^{-1}(\mfq)=\mfp$; his $g$ is the map of rings from the base to the total, $g:B\to A$ in the letters of this proof.
 :::
 
 :::
@@ -460,7 +460,7 @@ Cais, Exercise 3.10(a), PDF p. 12, states the two conditions as $\mfp A\subseteq
 The bijection of step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism of $\underlyingspace{U_y}$ onto $U\cap f^{-1}(y)$ with the induced topology.
 
 ::: pf-proof
-Cais, Exercise 3.10(a), PDF p. 12, factors the projection $p$ as
+Cais, Exercise 3.10(a), factors the projection $p$ as
 $$
 \Spec(A\otimes_B\kappa(\mfp))
 \xrightarrow{\ \Spec\psi\ }
@@ -471,7 +471,7 @@ $$
 his factorization $\Spec(B\otimes_A\kappa(p))\to\Spec(B\otimes_AA_p)\to\Spec B$ being the same with the letters exchanged: its two maps are his $\phi$, the structure map of the localization $A\to A\otimes_BB_{\mfp}$, written $\theta$ here because $\phi$ is Shichijo's $B\to A$ of step [](#reduce-fibre-topology-to-affine){.pf-ref}, and his $\psi$.
 The map $\psi$ is surjective, so by Exercise II.2.18(c) $\Spec\psi$ is a homeomorphism onto the closed subset $V(\ker\psi)$; and $\Spec\theta$ is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\cap S=\emptyset}$ with $S=g(B-\mfp)$, since $\Spec\theta(V(I))=V(\theta^{-1}(I))\cap\Spec\theta(\Spec(A\otimes_BB_{\mfp}))$, the image lying in $\Spec A$. The kernel of $\psi$ is the ideal the base prime generates in $A\otimes_BB_{\mfp}$, that is $\ker\psi=\mfp(A\otimes_BB_{\mfp})$.  Cais writes this kernel as $\ker\psi=pB$, $pB$ being an ideal of the total space while $\psi$ has the localized ring $B\otimes_AA_p$ as its source, so that identity is his slip of notation; what his argument uses is the prime-level form, that a prime $\mfq$ of the total space with $\mfq\cap S=\emptyset$ contains $pB$ exactly when $g^{-1}(\mfq)=\mfp$, which holds, and which the next sentence proves in the letters of this proof.  A prime $\mfq\subseteq A$ with $\mfq\cap S=\emptyset$ contains the contraction of that kernel exactly when it contains $\mfp A=g(\mfp)A$, since every element of $S$ lies outside $\mfq$.  So the composite is a homeomorphism onto $\set{\mfq\in\Spec A \st \mfq\supseteq\mfp A,\ \mfq\cap S=\emptyset}$, which is $\set{\mfq \st g^{-1}(\mfq)=\mfp}$.
 
-Shichijo, Exercise 3.10(a), printed p. 6, gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
+Shichijo, Exercise 3.10(a), gives the same conclusion through the general facts that $\Spec(A/\mathfrak a)$ is homeomorphic to the closed subset $V(\mathfrak a)$ and $\Spec S^{-1}A$ to the primes of $A$ avoiding $S$.
 :::
 
 :::
@@ -484,7 +484,7 @@ $$
 is a homeomorphism onto the set-theoretic fibre with the subspace topology.
 
 ::: pf-proof
-The homeomorphisms of the affine pieces are compatible with the projections to $X$, so they glue: Kim, Exercise 2.3.10(a), PDF p. 23, and Shichijo, Exercise 3.10(a), printed p. 7, general case, where $\operatorname{sp}(X_y)$ is glued from the $\operatorname{sp}(X_y)_i$, and the restriction of $f$ to $X_i$ has fibre $f^{-1}(y)\cap X_i$, the pieces covering $f^{-1}(y)$.
+The homeomorphisms of the affine pieces are compatible with the projections to $X$, so they glue: Kim, Exercise 2.3.10(a), and Shichijo, Exercise 3.10(a), general case, where $\operatorname{sp}(X_y)$ is glued from the $\operatorname{sp}(X_y)_i$, and the restriction of $f$ to $X_i$ has fibre $f^{-1}(y)\cap X_i$, the pieces covering $f^{-1}(y)$.
 :::
 
 :::
@@ -498,7 +498,7 @@ s\longmapsto t^2 .
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23, and Shichijo, Exercise 3.10(b), printed p. 7, eliminate $s$ by the relation $s=t^2$, so that $k[s,t]/(s-t^2)\cong k[t]$ and the base ring maps by $s\mapsto t^2$; Egbert, printed p. 84, writes the elements of the fibre ring as $a_0+a_1t$ with $t^2=a$.
+Kim, Exercise 2.3.10(b), and Shichijo, Exercise 3.10(b), eliminate $s$ by the relation $s=t^2$, so that $k[s,t]/(s-t^2)\cong k[t]$ and the base ring maps by $s\mapsto t^2$; Egbert, writes the elements of the fibre ring as $a_0+a_1t$ with $t^2=a$.
 :::
 
 :::
@@ -510,9 +510,9 @@ $$
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23: "the fiber is given by $\Spec k[s,t]/(s-t^2,s-a)\cong\Spec k[t]/(t^2-a)$". Egbert, printed p. 84, computes the same spectrum.
+Kim, Exercise 2.3.10(b): "the fiber is given by $\Spec k[s,t]/(s-t^2,s-a)\cong\Spec k[t]/(t^2-a)$". Egbert, computes the same spectrum.
 
-Shichijo, Exercise 3.10(b), printed p. 7, gets it from his Lemma Ex3.10.1,
+Shichijo, Exercise 3.10(b), gets it from his Lemma Ex3.10.1,
 $$
 \frac{k[s][t]}{I}\otimes_{k[s]}\frac{k[s]}{J}\cong\frac{k[s][t]}{I+J^e},
 $$
@@ -540,9 +540,9 @@ which has the unique prime $(t-r)$ and the nonzero nilpotent class of $t-r$.
 Assume $a\ne0$ and $\operatorname{char}k\ne2$. Then $X_y$ consists of two points, each with residue field $k$.
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23: "If $a\ne0$ then this is isomorphic to $k\times k$ so we have two points."
+Kim, Exercise 2.3.10(b): "If $a\ne0$ then this is isomorphic to $k\times k$ so we have two points."
 
-Shichijo, Exercise 3.10(b), printed p. 7, writes the same step as
+Shichijo, Exercise 3.10(b), writes the same step as
 $$
 \frac{k[t]}{(t^2-a)}
 =
@@ -565,7 +565,7 @@ All three need $\operatorname{char}k\ne2$: $t-\sqrt a$ and $t+\sqrt a$ are disti
 If $a=0$, the fibre is a nonreduced one-point scheme.
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23: "if $a=0$ then it is $k[t]/(t^2)$ which is a non-reduced one-point scheme". Cais, Exercise 3.10(b), PDF p. 12, and Egbert, printed p. 84, the latter calling it the dual numbers; Shichijo, printed p. 8, adds that the spectrum is one point and not reduced, and states the maximal ideal, writing that $(t)$ modulo $(t^2)$ is the unique maximal ideal of a local ring.  His sentence names the ring $(t^2)$, which is a slip: the ring is $k[t]/(t^2)$, and its unique maximal ideal is $(t)/(t^2)$.
+Kim, Exercise 2.3.10(b): "if $a=0$ then it is $k[t]/(t^2)$ which is a non-reduced one-point scheme". Cais, Exercise 3.10(b), and Egbert, the latter calling it the dual numbers; Shichijo, adds that the spectrum is one point and not reduced, and states the maximal ideal, writing that $(t)$ modulo $(t^2)$ is the unique maximal ideal of a local ring.  His sentence names the ring $(t^2)$, which is a slip: the ring is $k[t]/(t^2)$, and its unique maximal ideal is $(t)/(t^2)$.
 :::
 
 :::
@@ -579,15 +579,15 @@ X_\eta\cong\Spec\bigl(k(s)[t]/(t^2-s)\bigr).
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.10(b), PDF p. 23: "If $\eta$ is the generic point, then the fiber is $\operatorname{Quot}(k[s,t]/(s-t^2))=k(s)[t]/(t^2-s)$ while $Y_\eta=\Spec k(s)$".
+Kim, Exercise 2.3.10(b): "If $\eta$ is the generic point, then the fiber is $\operatorname{Quot}(k[s,t]/(s-t^2))=k(s)[t]/(t^2-s)$ while $Y_\eta=\Spec k(s)$".
 
-Shichijo, Exercise 3.10(b), printed p. 8, computes it by localizing at $S=k[s]\setminus\set0$,
+Shichijo, Exercise 3.10(b), computes it by localizing at $S=k[s]\setminus\set0$,
 $$
 \frac{k[s,t]}{(s-t^2)}\otimes_{k[s]}S^{-1}k[s]\cong S^{-1}\frac{k[s,t]}{(s-t^2)}\cong\frac{k(s)[t]}{(t^2-s)},
 $$
 with $\kappa(\eta)=k(s)$.
 
-Cais, Exercise 3.10(b), PDF p. 12, identifies the same fibre as the primes of $k[s,t]/(s-t^2)$ contracting to $(0)$, those containing no polynomial in $s$, and finds the single one $(s-t^2)$.
+Cais, Exercise 3.10(b), identifies the same fibre as the primes of $k[s,t]/(s-t^2)$ contracting to $(0)$, those containing no polynomial in $s$, and finds the single one $(s-t^2)$.
 :::
 
 :::
@@ -596,7 +596,7 @@ Cais, Exercise 3.10(b), PDF p. 12, identifies the same fibre as the primes of $k
 The polynomial $t^2-s\in k(s)[t]$ is irreducible.
 
 ::: pf-proof
-Shichijo, Exercise 3.10(b), printed p. 8: "$t^2-s$ is an irreducible polynomial with coefficients in $k(s)$, so this ring is a field". Cais, PDF p. 12, and Egbert, printed p. 84, state the same: the quotient is a field, of degree two in $t$.
+Shichijo, Exercise 3.10(b): "$t^2-s$ is an irreducible polynomial with coefficients in $k(s)$, so this ring is a field". Cais, and Egbert, state the same: the quotient is a field, of degree two in $t$.
 
 The card's check of the assertion is the valuation: $v_s(s)=1$ is odd, and every square in $k(s)$ has even $v_s$-valuation, so $s$ is not a square and the quadratic $t^2-s$ has no root. This holds in every characteristic, since it uses no separability.
 :::
@@ -610,7 +610,7 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.10(b), printed p. 8: the quotient is a field, so $X_\eta=\Spec k(s)[t]/(t^2-s)$ "is a one point space", and its residue field is a degree two extension of $k(\eta)$. Kim, PDF p. 23, and Egbert, printed p. 84, conclude the same from the degree of the defining polynomial; Cais, PDF p. 12, writes it as a one-point scheme whose residue field is a degree-two extension of $k(s)$.
+Shichijo, Exercise 3.10(b): the quotient is a field, so $X_\eta=\Spec k(s)[t]/(t^2-s)$ "is a one point space", and its residue field is a degree two extension of $k(\eta)$. Kim, and Egbert, conclude the same from the degree of the defining polynomial; Cais, PDF p. 12, writes it as a one-point scheme whose residue field is a degree-two extension of $k(s)$.
 :::
 
 :::
@@ -628,7 +628,7 @@ The exercise prints the two-point assertion for $a\neq0$ with no hypothesis on $
 :::
 
 ::: {.remark title="Published solution"}
-For (a), Cais, Exercise 3.10(a), PDF p. 12, is the complete argument --- reduction to $Y=\Spec B$ and $X=\Spec A$ by the universal property, the factorization of $p$ through $\Spec(A\otimes_BB_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 6, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(A_{\mfp}/\mfp A_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover.  Kim, Cais and Egbert write the two rings with the opposite letters to those used here; their displays are transcribed above with $A$ and $B$ exchanged, the statements unchanged. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
+For (a), Cais, Exercise 3.10(a), is the complete argument --- reduction to $Y=\Spec B$ and $X=\Spec A$ by the universal property, the factorization of $p$ through $\Spec(A\otimes_BB_{\mfp})$, and the identification of the composite as a homeomorphism onto $\set{\mfq \st g^{-1}(\mfq)=\mfp}$ --- with Kim, PDF p. 23, for the reduction, Shichijo, printed p. 6, for the affine computation $A\otimes_B\kappa(\mfp)\cong T^{-1}(A/I_{\mfp})$ and its equivalence $(\ast)$, Egbert, printed p. 84, for the chain $\Spec(A_{\mfp}/\mfp A_{\mfp})\approx f^{-1}(\mfp)$, and Shichijo for the gluing over an affine cover.  Kim, Cais and Egbert write the two rings with the opposite letters to those used here; their displays are transcribed above with $A$ and $B$ exchanged, the statements unchanged. For (b), the closed fibres are Kim, Shichijo and Egbert as cited, the generic fibre Kim, Shichijo, Cais and Egbert.
 
 The two-point assertion for $a\ne0$ needs the two roots of $t^2-a$ to be distinct, that is $\operatorname{char}k\ne2$: the passage from $k[t]/(t^2-a)$ to $k\times k$ is the Chinese remainder theorem for coprime factors, and in characteristic two the polynomial is $(t-r)^2$ with $r^2=a$. Math StackExchange 1709194 records that the printed claim fails there (comments 3488648 and 3489729, quoted in step [](#char-two-fibre-not-two-points){.pf-ref}). The irreducibility of $t^2-s$ over $k(s)$ is step [](#t2-s-irreducible){.pf-ref}, by the $s$-adic valuation, which needs no separability and so holds in every characteristic.
 :::

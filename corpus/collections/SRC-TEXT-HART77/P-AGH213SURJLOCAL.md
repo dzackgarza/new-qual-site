@@ -178,7 +178,7 @@ The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartsho
 
 The proof above is Steven V. Sam's, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3, printed p. 2 (PDF p. 15 of `tmp/sources/hartshorne-solutions-sam.pdf`). He proves part (a) in both directions, the converse by the index $i$ with $P \in U_i$, and for part (b) takes differentiation of analytic functions: it is surjective on stalks because an analytic function has an antiderivative on a simply connected neighbourhood, and $1/z$ on $\CC^\times$ has none, its integral over the unit circle being $2\pi i$.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), PDF p. 3, the folio printed on the page, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, solves the same exercise by the same two steps for (a), writing of the converse only that it "follows by 1.2.b", and takes for (b) the exponential sequence of sheaves on $\CC$,
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), the folio printed on the page, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, solves the same exercise by the same two steps for (a), writing of the converse only that it "follows by 1.2.b", and takes for (b) the exponential sequence of sheaves on $\CC$,
 $$
 0 \to \underline{\ZZ} \injects (\OO_\CC, +) \xrightarrow{\ \exp\ } (\units{\OO_\CC}, \cdot) \to 0,
 $$

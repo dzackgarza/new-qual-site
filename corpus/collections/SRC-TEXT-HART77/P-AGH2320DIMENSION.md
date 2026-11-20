@@ -329,7 +329,7 @@ $$
 :::
 
 ::: {.solution}
-Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, PDF pp. 31--32, and by A. Shichijo, Exercise 3.20, printed pp. 17--18, at the steps that cite them, and parts (a) and (b) by both as well.  Parts (e) and (f) are proved here: Kim proves (e) by his (a), and Shichijo's sentence for it stops before the conclusion; for (f), Kim reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$, and Shichijo passes through the purely transcendental intermediate field $k_T$, while the proof below reads the dimension off a Noether normalization after the base change.
+Parts (c) and (d) are proved by Dongryul Kim, Exercise 2.3.20, and by A. Shichijo, Exercise 3.20, at the steps that cite them, and parts (a) and (b) by both as well.  Parts (e) and (f) are proved here: Kim proves (e) by his (a), and Shichijo's sentence for it stops before the conclusion; for (f), Kim reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$, and Shichijo passes through the purely transcendental intermediate field $k_T$, while the proof below reads the dimension off a Noether normalization after the base change.
 
 We use the following standard affine dimension theorem.
 
@@ -494,11 +494,11 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.20(c), printed p. 18: take $Z=V(\mathfrak p_Z)\subseteq\Spec A$ for an irreducible closed $Z$ in an affine chart $X=\Spec A$, and a maximal chain of primes
+Shichijo, Exercise 3.20(c): take $Z=V(\mathfrak p_Z)\subseteq\Spec A$ for an irreducible closed $Z$ in an affine chart $X=\Spec A$, and a maximal chain of primes
 $$
 (0)\subsetneq\cdots\subsetneq\mathfrak p_Z,
 $$
-whose length is $\codim(Z,X)$ by the order-reversing correspondence between the irreducible closed subsets of $\Spec A$ and the prime ideals of $A$.  Shichijo states that correspondence for $\Spec R$ of a ring in his Claim Ex3.20.1, printed p. 17, where the irreducible closed subsets of $\Spec R$ stand in bijection with the primes of $R$ and the inclusion is reversed, and cites Ch. I Prop. 1.7 there only as the analogue for an affine variety; Proposition I.1.7, printed p. 6, is the equality of the dimension of an affine algebraic set with that of its coordinate ring.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
+whose length is $\codim(Z,X)$ by the order-reversing correspondence between the irreducible closed subsets of $\Spec A$ and the prime ideals of $A$.  Shichijo states that correspondence for $\Spec R$ of a ring in his Claim Ex3.20.1, where the irreducible closed subsets of $\Spec R$ stand in bijection with the primes of $R$ and the inclusion is reversed, and cites Ch. I Prop. 1.7 there only as the analogue for an affine variety; Proposition I.1.7, is the equality of the dimension of an affine algebraic set with that of its coordinate ring.  Localizing at $\mathfrak p_Z$ gives a chain of the same length
 $$
 (0)_{\mathfrak p_Z}\subsetneq\cdots\subsetneq(\mathfrak p_Z)_{\mathfrak p_Z},
 $$
@@ -512,7 +512,7 @@ $$
 $$
 for every irreducible closed $Z$, the map $Z\mapsto\zeta_Z$ being a bijection onto the points of $X$.
 
-Kim, Exercise 2.3.20(c), PDF p. 32, proves the same identity for irreducible closed $Y$ (his letter) by computing with an affine chart and the prime $\mathfrak p$ of $Y$: he has $\dim Y=\dim A/\mathfrak p$ and
+Kim, Exercise 2.3.20(c), proves the same identity for irreducible closed $Y$ (his letter) by computing with an affine chart and the prime $\mathfrak p$ of $Y$: he has $\dim Y=\dim A/\mathfrak p$ and
 $$
 \codim(Y,X)=\dim\bigl(X\times_YK(Y)\bigr)=\dim\bigl(\Spec A\times_YK(Y)\bigr)=\dim A_{\mathfrak p},
 $$
@@ -531,7 +531,7 @@ $$
 $$
 
 ::: pf-proof
-The reduction to irreducible $Y$ is Kim's, Exercise 2.3.20(c), PDF p. 32: "Since $\operatorname{codim}(Y,X)$ is defined as the infimum of codimension of irreducible closed subsets, it suffices to show this for $Y$ irreducible closed."  The irreducible case is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c), printed p. 18: he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing it at the generic point, which counts the height of the prime $\mathfrak p_Y$ of $Y$ --- the computation of step [](#codim-z-equals-dim-op){.pf-ref} --- and with it the codimension of $Y$, that is
+The reduction to irreducible $Y$ is Kim's, Exercise 2.3.20(c): "Since $\operatorname{codim}(Y,X)$ is defined as the infimum of codimension of irreducible closed subsets, it suffices to show this for $Y$ irreducible closed."  The irreducible case is A. Shichijo's argument, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 2 section 3, Exercise 3.20(c): he proves it for $Y$ irreducible closed by reading a maximal chain of primes in an affine chart and localizing it at the generic point, which counts the height of the prime $\mathfrak p_Y$ of $Y$ --- the computation of step [](#codim-z-equals-dim-op){.pf-ref} --- and with it the codimension of $Y$, that is
 $$
 \codim(Z,X)=\dim\mathcal O_{X,\zeta_Z};
 $$
@@ -566,7 +566,7 @@ $$
 $$
 
 ::: pf-proof
-Shichijo, Exercise 3.20(d), printed p. 18: with $X=\Spec A$ affine and $\mathfrak p$ the prime of the irreducible closed $Z$, Chapter I Theorem 1.8A(b) gives
+Shichijo, Exercise 3.20(d): with $X=\Spec A$ affine and $\mathfrak p$ the prime of the irreducible closed $Z$, Chapter I Theorem 1.8A(b) gives
 $$
 \dim\frac{A}{\mathfrak p}+\operatorname{height}\mathfrak p=\dim A,
 $$
@@ -575,7 +575,7 @@ $$
 \dim Z+\codim(Z,X)=\dim X .
 $$
 
-Kim, Exercise 2.3.20(d), PDF p. 32, proves it the same way: "in (c) we have computed $\dim Y=\dim A/\mathfrak p$ and $\operatorname{codim}(Y,X)=\operatorname{height}\mathfrak p$. Then $\dim X=\dim A$."
+Kim, Exercise 2.3.20(d), proves it the same way: "in (c) we have computed $\dim Y=\dim A/\mathfrak p$ and $\operatorname{codim}(Y,X)=\operatorname{height}\mathfrak p$. Then $\dim X=\dim A$."
 
 The card's form of the same statement, by the affine dimension formula of the head, is step [](#dimx-equals-trdeg){.pf-ref} applied to $Z$ together with the identity of step [](#codim-z-equals-dim-op){.pf-ref}:
 $$
@@ -595,7 +595,7 @@ $$
 $$
 
 ::: pf-proof
-Kim, Exercise 2.3.20(d), PDF p. 32: "Since $\dim Y$ is the maximum among the dimensions of the irreducible components and $\operatorname{codim}(Y,X)$ is the minimum among the codimensions of the irreducible components, it suffices to show the formula for irreducible $Y$" --- which is step [](#dimz-plus-codimz-equals-dimx){.pf-ref}.
+Kim, Exercise 2.3.20(d): "Since $\dim Y$ is the maximum among the dimensions of the irreducible components and $\operatorname{codim}(Y,X)$ is the minimum among the codimensions of the irreducible components, it suffices to show the formula for irreducible $Y$" --- which is step [](#dimz-plus-codimz-equals-dimx){.pf-ref}.
 
 The two facts of that reduction, spelled out: for the irreducible components
 $$
@@ -785,10 +785,10 @@ Part (a) is step [](#dim-op-equals-dimx-closed-point){.pf-ref}: at a closed poin
 :::
 
 ::: {.remark}
-The exercise prints (c) and (d) for an arbitrary closed subset $Y$.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$, which is the hypothesis the statements above carry. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, printed pp. 17--18, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
+The exercise prints (c) and (d) for an arbitrary closed subset $Y$.  For $Y=\emptyset$ the right-hand side of (c) is an infimum over the empty family, and with the usual conventions $\codim(\emptyset,X)=+\infty$ and $\krulldim\emptyset=-1$ the identity of (d) fails, so the two assertions are meaningful only for nonempty $Y$, which is the hypothesis the statements above carry. A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (2020/March), Chapter 2 section 3, Exercise 3.20, proves (a)--(d) for irreducible $Y$ and then passes to an arbitrary closed $Y$ by the same infimum, so it does not treat $Y=\emptyset$ either.
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, PDF pp. 31--32, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.20, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim computes dimensions through Noether normalization and going up, observes that the local rings at all closed points have the same dimension, and for (f) first reduces to algebraic base extensions and then to algebraically closed $k$ and $k'$ by comparing $X_{k'}$ with the two closures.
 The proof above uses the dimension formula $\dim A_{\mathfrak p}+\operatorname{trdeg}_k\kappa(\mathfrak p)=\operatorname{trdeg}_kK$ for a finitely generated algebra over a field, derives (b) from the affine case together with a chain argument, and for (f) tensors a Noether normalization of an affine chart with $k'$ and reads the dimension of each component off the normalization.
 :::
