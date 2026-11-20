@@ -17,6 +17,12 @@ A nonconstant morphism of smooth projective curves is finite and flat.
 
 [[PR-RJ3P7]]
 
+Going up is what makes a finite morphism behave like a branched cover: for $B$ integral over $A$ the map $\Spec B \to \Spec A$ is closed and surjective, every prime of $A$ is the contraction of a prime of $B$, and every chain of primes of $A$ lifts to a chain of $B$ above it [@AM18, Theorems 5.10 and 5.11].
+
+Going down is the same statement with the chains reversed: a chain of primes of $A$ extends downwards once a prime of $B$ above its top is fixed, when $A \subseteq B$ are domains with $A$ integrally closed and $B$ integral over $A$ [@AM18, Theorem 5.16], and for every flat ring map [Stacks, Lemma 10.39.19, tag 00HS].
+
+In geometric terms, going down says that every generization of a point of the image of $\Spec B \to \Spec A$ lifts to a generization of any chosen point above it.
+
 ## Flatness and fibres
 
 [[D-MORFLAT]]
