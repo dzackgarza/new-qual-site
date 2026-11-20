@@ -48,7 +48,7 @@ $$
 0\to\mathcal{Z}^n\to\mathcal{G}^n(\mcf)\to\mathcal{Z}^{n+1}\to0
 $$
 is exact, and splicing these short exact sequences along $\mathcal{Z}^{n+1}\to\mathcal{G}^{n+1}(\mcf)$ exhibits $0\to\mcf\to\mathcal{G}^\bullet(\mcf)$ as exact.
-Functoriality and exactness in $\mcf$ hold step by step: the stalk $\mcf\mapsto\mcf_x$ is an exact functor because a stalk is a filtered colimit ([[D-0QSI0]]), the product $\prod_{x\in U}$ is exact in $\Ab$, and the cokernel is exact, so a short exact sequence $0\to\mcf'\to\mcf\to\mcf''\to0$ gives short exact sequences $0\to\mathcal{Z}'^n\to\mathcal{Z}^n\to\mathcal{Z}''^n\to0$ and $0\to\mathcal{G}^n(\mcf')\to\mathcal{G}^n(\mcf)\to\mathcal{G}^n(\mcf'')\to0$ by induction on $n$.
+Functoriality and exactness in $\mcf$ hold step by step: the stalk $\mcf\mapsto\mcf_x$ is an exact functor because a stalk is a filtered colimit ([[D-0QSI0]]), the product $\prod_{x\in U}$ is exact in $\Ab$ because a product of surjections of abelian groups is surjective, and a cokernel, taken of a short exact sequence of complexes that is exact in each degree, is again exact in each degree, so a short exact sequence $0\to\mcf'\to\mcf\to\mcf''\to0$ gives short exact sequences $0\to\mathcal{Z}'^n\to\mathcal{Z}^n\to\mathcal{Z}''^n\to0$ and $0\to\mathcal{G}^n(\mcf')\to\mathcal{G}^n(\mcf)\to\mathcal{G}^n(\mcf'')\to0$ by induction on $n$.
 
 **(3)**
 Each $\mathcal{G}^n(\mcf)$ is flasque by (1), hence $\globsec{X;-}$-acyclic ([[D-COHFLQ]]), so by [[D-DEFACYC]] the resolution of (2) computes the right derived functors of $\globsec{X;-}$, that is, $H^i(X,\mcf)\cong H^i\big(\Gamma(X,\mathcal{G}^\bullet(\mcf))\big)$.
