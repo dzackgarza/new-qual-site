@@ -19,6 +19,8 @@ Let $D\subseteq\CC$ be a connected open set and let $h=u+iv$ be a complex-valued
 (a) If $\abs{h(z)}\le M$ for all $z\in D$ and $\abs{h(z_0)}=M$ for some $z_0\in D$, then $h$ is constant on $D$.
 
 (b) If moreover $D$ is bounded and $h$ extends continuously to $\overline D$, and $\abs{h(z)}\le M$ for all $z\in\bd D$, then $\abs{h(z)}\le M$ for all $z\in D$.
+
+The real input is [@Ahl73, ch. 4, §6, Theorem 23], that a nonconstant harmonic function has neither a maximum nor a minimum in its region; the reduction of (a) to it, through the real harmonic function $\Re(e^{-i\varphi}h)$, is the card's own and is written out below. The boundary form (b) is the usual argument from (a).
 :::
 
 ::: {.proof}
