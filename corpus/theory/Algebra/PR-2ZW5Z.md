@@ -16,7 +16,7 @@ review: draft
 
 ::: {.proposition}
 Let $K$ be a number field with ring of integers $\OO_K$.
-For $a \in K$, let $N(a) \coloneqq \det(m_a)$, where $m_a\colon K \to K$ is the $\QQ$-linear map $x \mapsto ax$; this defines the norm $N = N_{K/\QQ}\colon K \to \QQ$.
+Write $N(a)\coloneqq N_{K/\QQ}(a)$ for the [[D-8SVC3|norm]] of $a$.
 
 - For all $a, b \in K$, $N(ab) = N(a)N(b)$.
 

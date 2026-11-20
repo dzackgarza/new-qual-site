@@ -10986,3 +10986,15 @@ unchanged, so none was needed on them. No whole-corpus gate this turn.
 
 **Open in this lane.** Chapters 1 and 2 of `SRC-TEXT-HAT02` hold the 129 cards whose newest audit event predates
 2026-11-18; two of them are read above and the rest are not. §4.2 is complete, and §4.3 remains hlg7's lane.
+
+## 2026-11-20: the number-theory page's norms section is restored — the earlier record's search missed the card
+
+**Object and need:** the record above of this day, "two section headings on the number-theory page were empty", removed the heading "Norms in number fields" after reporting that no theory card in `corpus/theory/Algebra/` is titled or states the norm of an element of a number field.
+
+**Observed evidence:** that report was wrong. `PR-2ZW5Z`, "Multiplicativity of the norm $N_{K/\QQ}$ and units of $\mathcal O_K$", defines the norm of an element of a number field as $\det(m_a)$ and states its multiplicativity, its integrality on $\mathcal O_K$, its divisibility behaviour and the unit criterion. The search that missed it read titles only, and the card's title names multiplicativity rather than the definition.
+
+**Repair:** the section is restored over two cards. The definition, which `PR-2ZW5Z` was carrying inside its own statement — a definition inside a proposition block, which `SEC-11` assigns to a definition card — is now `D-8SVC3`, transcribed from Hungerford: the determinant formula is chapter VII, §1, exercise 9(b), and the conjugate-product form, given as the card's remark, is chapter V, §7, definition 7.1. `PR-2ZW5Z` now writes $N(a)\coloneqq N_{K/\QQ}(a)$ and links the card, so its statement is about multiplicativity and units alone. The chapter-index gloss names the section again. Commits follow this record.
+
+**Uncertainty:** the second heading, "Primes in arithmetic progressions", stays removed. Nothing in the corpus states it in the algebra area, and the only card on the subject, `E-SS7.PR-4`, is an exercise of a complex-analysis collection.
+
+**Repair of the record:** this record supersedes the one above it in the norms half only; that record is not rewritten.
