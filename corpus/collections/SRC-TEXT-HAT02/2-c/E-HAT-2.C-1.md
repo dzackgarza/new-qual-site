@@ -288,10 +288,32 @@ audit:
     running head 184 and the section text the exercise belongs to, so the printed page is the claimed
     one. The durable part of the locator is the printed page; the file path is this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #170's item for this card, the cases $n\le0$ and the agreement of the two counts, read step by
+    step and found correct. For $n>0$ the universal-cover count is sound: a simplicial circle with $k$
+    vertices lifts to a simplicial structure on $\RR$ with the covering simplicial, a simplicial $f$ lifts,
+    consecutive lifts $w_1<\cdots<w_{k+1}=w_1+1$ satisfy $\bar f(w_{k+1})=\bar f(w_1)+n$ with $n=\deg f$,
+    the segment of length $n$ contains $n\ell+1$ vertices of the lifted target, each is the image of one of
+    the $w_i$ by the intermediate value theorem, so $k\ge n\ell$ and $e(K)\ge n\,e(L)$ because a simplicial
+    circle has as many edges as vertices. The fundamental-cycle form is the same count: $f_*(z_K)$ is
+    $n$ times the target cycle with each domain edge contributing $0$ or $\pm1$, so each target edge is
+    covered by at least $n$ distinct domain edges. The lower bound on the target, $e(L)\ge3$, holds because
+    a simplicial circle has no loop and no repeated edge; attainment is the polygon of $3n$ edges wound $n$
+    times round a triangle. For $n<0$ the same polygon with the reverse orientation gives degree $n$ and
+    the bound with $\abs n$ gives the lower bound, and for $n=0$ the constant map between triangles
+    attains $e(K)=e(L)=3$; so $e(L)=3$, $e(K)=3\max\{1,\abs n\}$, and the minimum of the total is
+    $3\max\{1,\abs n\}+3$ as the card says, the two readings of the question agreeing. The provenance
+    statement is accurate: the bound and the attainment come from the two Math StackExchange answers named,
+    which are user posts and are marked on the card as the card's own argument. No step changed. Not
+    claimed: that the posts' text was re-read this session; what was checked is the mathematics as it
+    stands on the card, and no published solution of the exercise is known.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 2.C of Hatcher, *Algebraic Topology* (2002), printed p. 184, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 2.C of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.md`; the statement below is its wording.
 
 What is the minimum number of edges in simplicial complex structures $K$ and $L$ on $S^1$ such that there is a simplicial map $K \to L$ of degree $n$?
 :::
@@ -349,5 +371,5 @@ $$
 
 If the question is read as the minimum of the total $e(K)+e(L)$, that minimum is $3\max\{1,\abs{n}\}+3$: for $n\neq0$ the bound gives $e(K)+e(L)\geq(\abs{n}+1)e(L)\geq3(\abs{n}+1)$ with equality at $e(L)=3$, $e(K)=3\abs{n}$, and for $n=0$ both complexes have at least three edges and three suffice.
 
-The exercise is Exercise 1 of §2.C, printed p. 184 of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. The answer itself was checked by exhaustion for $n=1,2,3$: there is no simplicial map of degree $n$ from a $k$-cycle to an $l$-cycle with $l\le6$ for any $k<3n$, and degree $n$ is attained on a $3n$-cycle over a triangle, three ways for each $n$. `COMPLAINTS.md` item 11 records the disposition.
+The exercise is Exercise 1 of §2.C of Hatcher, *Algebraic Topology* (2002). No published argument proves any step of this solution: the bound and the attainment are a checked transcription of a Math StackExchange answer, a user post and not a publication, and each step is marked on the card as the card's own. The answer itself was checked by exhaustion for $n=1,2,3$: there is no simplicial map of degree $n$ from a $k$-cycle to an $l$-cycle with $l\le6$ for any $k<3n$, and degree $n$ is attained on a $3n$-cycle over a triangle, three ways for each $n$. `COMPLAINTS.md` item 11 records the disposition.
 :::
