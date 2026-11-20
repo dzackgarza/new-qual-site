@@ -29,6 +29,12 @@ audit:
   date: 2026-10-31
   note: >-
     Review the cell count for the cube quotient and the eight-element bound; the closing step now says how the eight words multiply, instead of pointing at earlier steps.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The page after "Proposition 1.26(b)" removed; the proposition is cited by its number. No mathematics
+    changed.
 ---
 
 ::: {.problem}
@@ -204,7 +210,7 @@ k j^{-1}=i
 \iff
 k=ij.
 $$
-The single $3$-cell does not alter the fundamental group: Proposition 1.26(b) (p. 50) applied with $X=X^2$ and $n=3$.
+The single $3$-cell does not alter the fundamental group: Proposition 1.26(b) applied with $X=X^2$ and $n=3$.
 
 :::
 
