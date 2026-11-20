@@ -31,6 +31,14 @@ audit:
     collected into one Laurent series, absolute convergence on compact subsets of the open annulus
     follows from the two geometric bounds, and the series is unique. The pole case then follows by
     taking $a_n=0$ for $n<-k$. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the event above: Chapter 3, Problem 3 is on PDF p. 128 of the retained scan,
+    printed p. 109; PDF p. 127 is printed p. 108 and carries Problem 1 and the start of Problem 2.
+    The item was not otherwise re-read in this pass, and this card carries no asterisk -- the print's
+    Chapter 3 marks are before Problems 1, 4 and 5 only.
 ---
 
 ::: {.exercise}
@@ -81,11 +89,11 @@ On $C_{r_2}$ one has $\abs{(z-z_0)/(\zeta-z_0)}\le\varrho<1$, and on $C_{r_1}$ o
 
 For $\zeta\in C_{r_2}$, $\abs{\zeta-z_0}=r_2$ and $\abs{z-z_0}<r_2$, so
 $$
-\Bigl|\frac{z-z_0}{\zeta-z_0}\Bigr|=\frac{\abs{z-z_0}}{r_2}=:\varrho<1 .
+\abs{\frac{z-z_0}{\zeta-z_0}}=\frac{\abs{z-z_0}}{r_2}=:\varrho<1 .
 $$
 For $\zeta\in C_{r_1}$, $\abs{\zeta-z_0}=r_1$ and $\abs{z-z_0}>r_1$, so
 $$
-\Bigl|\frac{\zeta-z_0}{z-z_0}\Bigr|=\frac{r_1}{\abs{z-z_0}}=:\varrho'<1 .
+\abs{\frac{\zeta-z_0}{z-z_0}}=\frac{r_1}{\abs{z-z_0}}=:\varrho'<1 .
 $$
 
 :::
