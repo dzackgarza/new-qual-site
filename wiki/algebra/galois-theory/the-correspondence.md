@@ -58,7 +58,7 @@ Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting 
 
 [[PR-PB6UE]]
 
-::: {.remark}
+::: {.proposition title="Irreducibility over a finite field needs only the factors up to half the degree"}
 Over a finite field $\FF_p$, a polynomial of degree $d$ with no monic irreducible factor of degree at most $d/2$ is irreducible: a factorization $f=gh$ into factors of degree at least $1$ has one factor of degree at most $d/2$. So irreducibility is decided by dividing by the monic irreducibles up to degree $d/2$.
 :::
 
@@ -69,7 +69,7 @@ Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irred
 
 [[T-CF6S3]]
 
-::: {.remark title="Shifting"}
+::: {.proposition title="Shifting to reach Eisenstein's criterion"}
 For $a\in\ZZ$, $g(x)\mapsto g(x+a)$ is a ring automorphism of $\QQ[x]$, so if $f(x+a)$ satisfies Eisenstein's criterion at $p$, then $f$ is irreducible.
 For monic $f$ of degree $n\geq2$, in that case $f(x+a)\equiv x^n \pmod p$, so $f \bmod p$ has a repeated root, and $p$ divides $\Delta_f = \Delta_{f(x+a)}$; the primes to test are among the prime divisors of the discriminant.
 :::
