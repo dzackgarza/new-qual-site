@@ -41,6 +41,19 @@ audit:
     n = 2,...,9, with 129600 added at n = 9, recomputed from the hook-content formula on both
     sides. The six coefficients were re-enumerated independently over the nine candidate
     shapes.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The hook-content agreement cannot prove the expansion, and the claim that the functions
+    s_lambda(1^n) are linearly independent was false: there are fifteen of them, each a
+    polynomial of degree at most seven. The specialisation is not injective on the
+    degree-seven symmetric functions, since m_(2,2,2,1)(1^n) = m_(4,1,1,1)(1^n) =
+    4 binom(n,4) for every n. Step (a) now presents the hook-content computation as a check
+    of the six coefficients and names the enumeration of the Littlewood--Richardson tableaux
+    in step #table as the proof; the SF package is still not run. Checked: the non-injectivity
+    identity for n = 0,...,20, the values at n = 2,...,9, and the six tableaux by an
+    independent enumeration of the nine candidate shapes.
 ---
 
 ::: {.problem}
@@ -58,7 +71,7 @@ No retained solution set covers this exercise: the expansion is the card's own c
 ::: pf
 
 ::: {.pf-step #rule}
-$s_{(2,2)}s_{(2,1)}=\sum_{\lambda\vdash7}c^{\lambda}_{(2,2),(2,1)}s_{\lambda}$, where $c^{\lambda}_{(2,2),(2,1)}$ is the number of semistandard tableaux of skew shape $\lambda/(2,2)$ with content $(2,1)$ whose reverse reading word is a lattice word.
+$s_{(2,2)}s_{(2,1)}=\sum_{\lambda\vdash7}c^{\lambda}_{(2,2),(2,1)}s_{\lambda}$, where $c^{\lambda}_{(2,2),(2,1)}$ is the number of semistandard tableaux of skew shape $\lambda/(2,2)$ with content $(2,1)$ whose word, read from right to left in each row from the top, is a lattice word.
 
 ::: pf-proof
 This is [[T-LRULR|the Littlewood--Richardson rule]] with $\mu=(2,2)$ and $\nu=(2,1)$: the coefficient $c^{\lambda}_{\mu\nu}$ counts the semistandard tableaux of skew shape $\lambda/\mu$ and content $\nu$ whose word, read from right to left in each row from the top, is a lattice word.
@@ -77,10 +90,10 @@ A shape $\lambda\vdash7$ must contain $(2,2)$ with $\lambda/(2,2)$ of size $3$; 
 :::
 
 ::: {.pf-step #check}
-(a) The expansion is confirmed independently: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
+(a) The expansion passes the hook-content check: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
 
 ::: pf-proof
-Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, which is polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. The difference of the two sides is a polynomial in $n$ of degree at most $7$, so agreement at eight values forces it to vanish identically; since the functions $n\mapsto s_{\lambda}(1^{n})$ for $\lambda\vdash7$ are linearly independent, the six coefficients above are the whole expansion. This is the check of (a) that the card performs; the SF package is not run here.
+Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, a polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. This agreement checks the coefficients; it is not by itself a proof of the expansion, because the specialisation $f\mapsto f(1^{n})$ is not injective on the degree-seven symmetric functions: $m_{(2,2,2,1)}(1^{n})=m_{(4,1,1,1)}(1^{n})=4\binom n4$ for every $n$, so two distinct symmetric functions can agree at every $n$. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}; the SF package check that the problem asks for is not performed.
 :::
 
 :::
@@ -95,7 +108,7 @@ The Littlewood–Richardson rule is exactly the branching rule for induction: fo
 :::
 
 ::: {.pf-qed}
-The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, verified in step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
+The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, consistent with the hook-content values of step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
 :::
 
 :::
