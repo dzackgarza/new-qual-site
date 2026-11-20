@@ -19,6 +19,13 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 4 sets its asterisks before Problems 3 and 4 only,
+    so none stands before Problem 2. The remark records that. Not checked in this pass: the wording
+    of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -63,6 +70,10 @@ Conclude by the Fourier inversion theorem that
 $$
 \sum_{j=0}^{n} a_j \left( \frac{d}{dt} \right)^j u(t) = f(t).
 $$
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 4, Problem 2).
 :::
 
 ::: {.solution}
