@@ -49,7 +49,7 @@ Determine the truth of each of the following statements and of their converses:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.5, printed pp. 7--8** (`tmp/sources/munkres-solutions-whitman.pdf`), which decides each implication and each converse; the verdicts below are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.5** (`tmp/sources/munkres-solutions-whitman.pdf`), which decides each implication and each converse; the verdicts below are his.
 
 The counterexamples take $\mathcal A=\{\{1\},\{2\}\}$ and $x=1$, so that $\bigcup_{A\in\mathcal A}A=\{1,2\}$ and $\bigcap_{A\in\mathcal A}A=\varnothing$.
 

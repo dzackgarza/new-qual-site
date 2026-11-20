@@ -39,7 +39,7 @@ Show that if $U$ is open in $X$ and $A$ is closed in $X$, then $U - A$ is open i
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.4, PDF p. 6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two complements are theirs. Whitman proves the same two statements on his printed p. 160 by way of a set identity and its corollary.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.4** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two complements are theirs. Whitman proves the same two statements on his printed p. 160 by way of a set identity and its corollary.
 
 Throughout, $A$ and $U$ are subsets of $X$ with $U$ open and $A$ closed.
 

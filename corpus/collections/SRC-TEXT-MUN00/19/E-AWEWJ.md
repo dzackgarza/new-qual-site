@@ -58,7 +58,7 @@ What happens if $\RR^\omega$ is given the box topology?
 
 ::: {.solution}
 
-The lemma, the product-topology proof and the box-topology answer are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.8, printed pp. 195--196** (`tmp/sources/munkres-solutions-whitman.pdf`); the steps below are his argument.
+The lemma, the product-topology proof and the box-topology answer are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.8** (`tmp/sources/munkres-solutions-whitman.pdf`); the steps below are his argument.
 
 Throughout $\mathbf{x}=(x_{1},x_{2},\dots)$, $f_{i}(t)=a_{i}t+b_{i}$ with $a_{i}>0$, $h(\mathbf{x})=(f_{1}(x_{1}),f_{2}(x_{2}),\dots)$, and $h_{i}=f_{i}\circ\pi_{i}$ is the $i$-th coordinate function of $h$. Note that $a_{i}>0$ is what makes $f_{i}$ invertible with inverse $g_{i}(t)=(t-b_{i})/a_{i}$.
 

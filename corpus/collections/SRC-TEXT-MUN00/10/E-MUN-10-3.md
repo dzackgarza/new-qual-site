@@ -48,7 +48,7 @@ Do they have the same order type?
 
 ::: {.solution}
 
-The proof and the closing remark are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.3, printed p. 109** (`tmp/sources/munkres-solutions-whitman.pdf`).
+The proof and the closing remark are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.3** (`tmp/sources/munkres-solutions-whitman.pdf`).
 
 Write $A=\{1,2\}\times\ZZ_{+}$ and $B=\ZZ_{+}\times\{1,2\}$, each with the dictionary order: $(i,a)<(j,b)$ when $i<j$, or when $i=j$ and $a<b$.
 

@@ -38,7 +38,7 @@ Lemma (Tukey, 1940). Let $\mathcal A$ be a collection of sets. If $\mathcal A$ i
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.6, printed p. 125** (`tmp/sources/munkres-solutions-whitman.pdf`); the verification that the hypothesis of the Kuratowski lemma holds is his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.6** (`tmp/sources/munkres-solutions-whitman.pdf`); the verification that the hypothesis of the Kuratowski lemma holds is his.
 
 ::: pf
 

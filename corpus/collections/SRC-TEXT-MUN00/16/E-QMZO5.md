@@ -53,7 +53,7 @@ Compare this topology with the standard topology on $\RR^2$.
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 16.9, PDF p. 5** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; the same argument is in **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.9**, read in the retained PDF, with one correction to the notation of the middle piece below.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 16.9** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; the same argument is in **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.9**, read in the retained PDF, with one correction to the notation of the middle piece below.
 
 Throughout, $\prec$ is the dictionary order on $\RR\times\RR$, $\mathcal{T}_d$ its order topology, $\mathcal{T}_p$ the product topology of $\RR_d\times\RR$ where $\RR_d$ is $\RR$ discrete, and $\mathcal{T}$ the standard topology of $\RR^2$. The exercise is §16 Exercise 9. A basis for $\mathcal{T}_p$ is $\{\{a\}\times(b,d)\}$, since $\{\{a\}\}$ is a basis for $\RR_d$, $\{(b,d)\}$ one for $\RR$, and products of basis elements form a basis for the product (Theorem 16.2); a basis for $\mathcal{T}_d$ is the collection of open intervals, since $\RR\times\RR$ has no least and no greatest element in the dictionary order.
 

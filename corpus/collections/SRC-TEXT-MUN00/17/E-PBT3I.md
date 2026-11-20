@@ -40,7 +40,7 @@ Show that if $A$ is closed in $X$ and $B$ is closed in $Y$, then $A \times B$ is
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.3, PDF p. 6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman's printed p. 159 has the same proof, with the identity below verified pointwise.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.3** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs. Whitman's printed p. 159 has the same proof, with the identity below verified pointwise.
 
 ::: pf
 

@@ -44,7 +44,7 @@ If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.2, PDF p. 11** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the counterexample is theirs, and Whitman, gives the same one.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.2** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the counterexample is theirs, and Whitman, gives the same one.
 
 ::: pf
 

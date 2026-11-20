@@ -48,7 +48,7 @@ Prove the following:
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.6, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); (a) and (b) are theirs, with Whitman's printed p. 162 supplying the same two arguments in neighbourhood form; the counterexample to the converse of (c) is theirs. Whitman's example for (c) on printed p. 162 is the family $A_{n}=(1/n,2]$ in $\RR$, whose union is $(0,2]$: the point $0$ lies in its closure and in no $\overline{A_{n}}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); (a) and (b) are theirs, with Whitman's printed p. 162 supplying the same two arguments in neighbourhood form; the counterexample to the converse of (c) is theirs. Whitman's example for (c) on printed p. 162 is the family $A_{n}=(1/n,2]$ in $\RR$, whose union is $(0,2]$: the point $0$ lies in its closure and in no $\overline{A_{n}}$.
 
 Throughout, $\overline{A}$ is the closure of $A$ in $X$: a closed set containing $A$ and contained in every closed set containing $A$ (Theorem 17.5).
 

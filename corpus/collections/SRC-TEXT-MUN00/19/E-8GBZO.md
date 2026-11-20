@@ -49,7 +49,7 @@ Which one?
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.5, printed p. 192** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer and the proof of the surviving implication are his. One source line is repaired: the counterexample is Example 2 of §19 as the book prints it, the map $f(t)=(t,t,t,\dots)$, and not the map $f(t)=(t,2t,3t,\dots)$ with which an earlier version of this card identified it.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer and the proof of the surviving implication are his. One source line is repaired: the counterexample is Example 2 of §19 as the book prints it, the map $f(t)=(t,t,t,\dots)$, and not the map $f(t)=(t,2t,3t,\dots)$ with which an earlier version of this card identified it.
 
 Throughout, $f:A\to\prod_{\alpha\in J}X_{\alpha}$ is given by $f(a)=(f_{\alpha}(a))_{\alpha\in J}$ and the product carries the box topology; $\pi_{\beta}$ is the projection.
 

@@ -61,7 +61,7 @@ We shall return to this question in Chapter 3.
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.7, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); part (a) and both answers of (b) are theirs. Whitman, proves (a) in the same way and proves the two answers of (b) at greater length, supplying the two lemmas used below.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); part (a) and both answers of (b) are theirs. Whitman, proves (a) in the same way and proves the two answers of (b) at greater length, supplying the two lemmas used below.
 
 Call $f:\RR\to\RR$ **continuous from the right** when $\lim_{x\to a^{+}}f(x)=f(a)$ for every $a$, that is, when for every $a$ and every $\varepsilon>0$ there is $\delta>0$ such that $0<x-a<\delta$ implies $\abs{f(x)-f(a)}<\varepsilon$; and **non-decreasing from the right** when for every $x$ and every $\varepsilon>0$ there is $\delta>0$ such that $x\le y<x+\delta$ implies $f(x)\le f(y)<f(x)+\varepsilon$.
 

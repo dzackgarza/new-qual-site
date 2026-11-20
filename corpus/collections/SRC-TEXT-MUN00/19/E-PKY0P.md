@@ -56,7 +56,7 @@ Justify your answer.
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.7, printed pp. 194--195** (`tmp/sources/munkres-solutions-whitman.pdf`); both answers and their proofs are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.7** (`tmp/sources/munkres-solutions-whitman.pdf`); both answers and their proofs are his.
 
 ::: pf
 

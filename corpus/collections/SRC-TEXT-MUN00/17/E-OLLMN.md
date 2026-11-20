@@ -39,7 +39,7 @@ Show that if $A$ is closed in $Y$ and $Y$ is closed in $X$, then $A$ is closed i
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.2, PDF p. 6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the one-line argument is theirs. Whitman proves the same thing on his printed p. 159 by exhibiting $X-A$ as a union of two open sets.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.2** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the one-line argument is theirs. Whitman proves the same thing on his printed p. 159 by exhibiting $X-A$ as a union of two open sets.
 
 ::: pf
 

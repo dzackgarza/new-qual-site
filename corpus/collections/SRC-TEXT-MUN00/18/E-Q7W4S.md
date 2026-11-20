@@ -60,7 +60,7 @@ $$
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.12, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three parts below are theirs, and Whitman, gives the same, proving (c) by composing with the diagonal map instead of testing a neighbourhood directly.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three parts below are theirs, and Whitman, gives the same, proving (c) by composing with the diagonal map instead of testing a neighbourhood directly.
 
 Recall that $F(x,y)=xy/(x^{2}+y^{2})$ for $(x,y)\neq(0,0)$ and $F(0,0)=0$. Throughout, $x\times y$ is written $(x,y)$.
 

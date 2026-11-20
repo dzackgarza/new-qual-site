@@ -79,7 +79,7 @@ Show that $f$ preserves inclusions and unions only:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.2, printed pp. 11--12** (`tmp/sources/munkres-solutions-whitman.pdf`), all eight parts; the chains of equivalences for the preimage, the injective directions of (g) and (h), and the counterexamples are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.2** (`tmp/sources/munkres-solutions-whitman.pdf`), all eight parts; the chains of equivalences for the preimage, the injective directions of (g) and (h), and the counterexamples are his.
 
 For preimages the only input is the equivalence $x\in f^{-1}(S)\iff f(x)\in S$. Throughout, $f:A\to B$, $A_{i}\subset A$ and $B_{i}\subset B$ for $i=0,1$.
 

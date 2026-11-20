@@ -39,7 +39,7 @@ Show that the $T_1$ axiom is equivalent to the condition that for each pair of p
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, gives the same two directions through Corollary 17.7.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, gives the same two directions through Corollary 17.7.
 
 The points in the condition are distinct, since a neighbourhood of a point contains that point.
 

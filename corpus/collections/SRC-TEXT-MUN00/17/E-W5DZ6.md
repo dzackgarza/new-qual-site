@@ -45,7 +45,7 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.9, printed p. 164** (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.9** (`tmp/sources/munkres-solutions-whitman.pdf`); both inclusions are his.
 
 Let $A\subset X$ and $B\subset Y$; a basis element of $X\times Y$ is a product $U\times V$ of an open $U\subset X$ and an open $V\subset Y$.
 

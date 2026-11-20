@@ -47,7 +47,7 @@ Under what conditions does equality hold?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.5, printed p. 161** (`tmp/sources/munkres-solutions-whitman.pdf`); the inclusion, the criterion for equality in terms of immediate successor and predecessor, and the remark that the Hausdorff axiom does not suffice are his. The degenerate case $a=b$ is added here: it is the one case his criterion does not cover.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the inclusion, the criterion for equality in terms of immediate successor and predecessor, and the remark that the Hausdorff axiom does not suffice are his. The degenerate case $a=b$ is added here: it is the one case his criterion does not cover.
 
 Let $X$ be an ordered set in the order topology, and let $a\le b$ in $X$.
 

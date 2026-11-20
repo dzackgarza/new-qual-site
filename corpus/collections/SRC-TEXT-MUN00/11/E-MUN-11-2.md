@@ -55,7 +55,7 @@ audit:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.2, printed p. 119** (`tmp/sources/munkres-solutions-whitman.pdf`); both verifications are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.2** (`tmp/sources/munkres-solutions-whitman.pdf`); both verifications are his.
 
 A strict partial order on $A$ is a relation $\prec$ that is nonreflexive, so $a\prec a$ holds for no $a$, and transitive. The relation $\preceq$ of (a) is defined by: $a\preceq b$ when $a\prec b$ or $a=b$.
 

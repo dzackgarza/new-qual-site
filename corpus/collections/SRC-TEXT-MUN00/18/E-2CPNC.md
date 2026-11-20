@@ -59,7 +59,7 @@ Show that if the family $\theset{A_\alpha}$ is locally finite and each $A_\alpha
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.9, printed pp. 186--187** (`tmp/sources/munkres-solutions-whitman.pdf`); (b) and (c) are his, and (a) is proved here in the closed-cover form rather than by his induction on the number of sets. Whitman notes that the cover of (b) is not locally finite: every neighbourhood of $0$ meets infinitely many of its members.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.9** (`tmp/sources/munkres-solutions-whitman.pdf`); (b) and (c) are his, and (a) is proved here in the closed-cover form rather than by his induction on the number of sets. Whitman notes that the cover of (b) is not locally finite: every neighbourhood of $0$ meets infinitely many of its members.
 
 ::: pf
 

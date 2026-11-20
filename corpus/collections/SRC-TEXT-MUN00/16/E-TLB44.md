@@ -71,7 +71,7 @@ $$
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.3, printed pp. 150--151** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer, the four decompositions and the arguments for the five sets are his. One source line is corrected: the integer $n$ used for $E$ comes from the well-ordering of the integers, §4 Exercise 9(a), not from a statement about intervals.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 16.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer, the four decompositions and the arguments for the five sets are his. One source line is corrected: the integer $n$ used for $E$ comes from the well-ordering of the integers, §4 Exercise 9(a), not from a statement about intervals.
 
 Write $Y=[-1,1]$ and $K=\{1/n\mid n\in\ZZ_+\}$.
 

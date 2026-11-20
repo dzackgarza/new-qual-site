@@ -48,7 +48,7 @@ The collection of all sets of the form $\prod_{\alpha \in J} B_\alpha$, where $B
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.1, printed p. 189** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 19.1, checks the two basis conditions directly instead.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 19.1, checks the two basis conditions directly instead.
 
 Let $\mathcal{B}_{\alpha}$ be a basis for the topology of $X_{\alpha}$, and let
 $$

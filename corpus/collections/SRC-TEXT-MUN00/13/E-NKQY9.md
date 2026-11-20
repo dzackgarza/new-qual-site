@@ -64,7 +64,7 @@ is a basis that generates a topology different from the lower limit topology on 
 :::
 
 ::: {.solution}
-The retained published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.8, printed p. 147** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his, with the two basis conditions checked explicitly in (a). Write $\mathcal{T}$ for the standard topology of $\RR$ and $\mathcal{T}_\ell$ for the lower limit topology.
+The retained published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.8** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his, with the two basis conditions checked explicitly in (a). Write $\mathcal{T}$ for the standard topology of $\RR$ and $\mathcal{T}_\ell$ for the lower limit topology.
 
 ::: pf
 

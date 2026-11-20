@@ -61,7 +61,7 @@ Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and t
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4, printed pp. 143--144** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts below are his, checked step by step against Munkres §13 (definition of subbasis and the proof following it). Throughout, $(\mathcal{T}_\alpha)_\alpha$ is a family of topologies on a set $X$.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts below are his, checked step by step against Munkres §13 (definition of subbasis and the proof following it). Throughout, $(\mathcal{T}_\alpha)_\alpha$ is a family of topologies on a set $X$.
 
 ::: pf
 

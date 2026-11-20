@@ -38,7 +38,7 @@ Show that $X$ is Hausdorff if and only if the diagonal $\Delta = \theset{x \time
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.13, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, proves the same two directions with Theorem 17.5 and Corollary 17.7 in place of the direct openness arguments.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.13** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, proves the same two directions with Theorem 17.5 and Corollary 17.7 in place of the direct openness arguments.
 
 Let $\Delta=\theset{x\times x\mid x\in X}\subset X\times X$. A basis element of $X\times X$ is a product $U\times V$ of open subsets of $X$ (printed p. 86).
 

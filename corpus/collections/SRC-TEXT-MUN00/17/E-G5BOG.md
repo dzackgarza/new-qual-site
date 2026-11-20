@@ -40,7 +40,7 @@ Show that a subspace of a Hausdorff space is Hausdorff.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.12, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the proof is theirs, and Whitman's printed p. 165 is the same.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the proof is theirs, and Whitman's printed p. 165 is the same.
 
 ::: pf
 
