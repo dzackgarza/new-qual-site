@@ -38,6 +38,14 @@ $$
 This is the two displays above read at a circle $\abs z=\rho$ enclosing every $z_j$: the [[T-HRPNO|residue theorem]] gives $2\pi i\sum_j\Res_{z=z_j}f$ for the integral, and the residue at infinity gives $-2\pi i\Res_{z=\infty}f$ for the same integral.
 :::
 
+::: {.corollary}
+Let $f$ be holomorphic on $\{z : \abs z>R\}$ and suppose $f(z)=a_{-1}z^{-1}+O(z^{-2})$ as $\abs z\to\infty$ — in particular this holds when $f(z)\to0$ and $zf(z)$ has a limit there.
+Then
+$$
+\Res_{z=\infty}f = -a_{-1} = -\lim_{\abs z\to\infty} zf(z).
+$$
+:::
+
 ::: {.remark}
 Residues belong to the differential form $f(z)\dz$ rather than to the function $f$.
 Under $w=1/z$ the form $f(z)\dz$ becomes $f(1/w)\,d(1/w)=-\frac{1}{w^2}f(1/w)\dw=g(w)\dw$, and the counterclockwise circle $\abs{z}=\rho$ becomes the clockwise circle $\abs{w}=1/\rho$, which accounts for the sign.
