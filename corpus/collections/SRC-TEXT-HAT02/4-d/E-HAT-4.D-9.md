@@ -38,6 +38,18 @@ audit:
     bundle $S^3=Sp(1)\to Sp(2)\to S^7$ for $\pi_3(S^3)\cong\pi_3(Sp(2))$, Corollary 4.25
     (printed p. 361) for $\pi_3(S^3)\cong\ZZ$, and the conjugate block inclusions for the sign.
     Nothing else changed. Not claimed: a published solution, and no certificate.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with six steps, three for each of the two cases, each carrying a `pf-proof`; both claims are
+    unchanged and the homotopies are the ones the prose had. Cited by number only: Example 1.14
+    for $SU(2)\cong S^3$, Corollary 4.25 for $\pi_3(S^3)\cong\ZZ$, and the exact homotopy
+    sequence of the bundle $S^3=Sp(1)\to Sp(2)\to S^7$. Checked: the entrywise product identity
+    in the complex and in the quaternionic case, that the second factor lies in $SU(2)$ and is a
+    loop, that the two block inclusions of $Sp(1)$ in $Sp(2)$ are conjugate and so induce the
+    same isomorphism on $\pi_3$, and that the two classes $-1$ and $+1$ sum to zero.
 ---
 
 ::: {.problem}
@@ -47,38 +59,79 @@ Do the same for the diagonal subgroup of $Sp(n)$.
 :::
 
 ::: {.solution}
-We first prove the unitary statement. For two diagonal entries,
+
+Throughout, $\operatorname{diag}(a,b)$ is the diagonal matrix with the displayed entries in the first two slots.
+
+::: pf
+
+::: pf-step
+For diagonal entries $z,w$ of modulus $1$,
 $$
-\operatorname{diag}(z,w)
-=\operatorname{diag}(zw,1)\operatorname{diag}(w^{-1},w).
+\operatorname{diag}(z,w)=\operatorname{diag}(zw,1)\operatorname{diag}(w^{-1},w),
 $$
-The second factor is a loop in $SU(2)\cong S^3$, hence is nullhomotopic because $S^3$ is simply connected (equivalently, $\CP^1$ is connected, which is the route suggested by the printed hint: a diagonal matrix is a composition of scalar multiplications on the $n$ coordinate lines, and the parameter space of those is connected). Multiplying a chosen nullhomotopy by $\operatorname{diag}(zw,1)$ gives a homotopy, natural in $(z,w)$, from
+and the second factor is a loop in $SU(2)\cong S^3$, hence nullhomotopic.
+
+::: pf-proof
+Multiplying the two diagonal matrices entrywise gives diagonal entries $(zw)(w^{-1})=z$ and $1\cdot w=w$. The second factor has determinant $w^{-1}w=1$ and unitary diagonal entries, so it lies in $SU(2)$. Hatcher's Example 1.14 identifies $SU(2)$ with $S^3$, which is simply connected, so every loop in it is nullhomotopic; the loop in question is $w\mapsto\operatorname{diag}(w^{-1},w)$, that is the composite of $w\mapsto(w^{-1},w)$ with the diagonal inclusion $S^1\times S^1\to SU(2)$, which factors through $\CP^1$, connected, as the hint suggests.
+:::
+
+:::
+
+::: pf-step
+Multiplying a chosen nullhomotopy of the second factor by $\operatorname{diag}(zw,1)$ gives a homotopy, natural in $(z,w)$, from $\operatorname{diag}(z,w)$ to $\operatorname{diag}(zw,1)$.
+
+::: pf-proof
+Let $H:S^1\times I\to SU(2)$ run from $H(w,0)=\operatorname{diag}(w^{-1},w)$ to $H(w,1)=I_2$. Then $(z,w,t)\mapsto\operatorname{diag}(zw,1)H(w,t)$ is continuous in all three variables, starts at $\operatorname{diag}(z,w)$ by step 1 and ends at $\operatorname{diag}(zw,1)$. Both endpoints depend continuously on $(z,w)$, so the homotopy is natural in the pair.
+:::
+
+:::
+
+::: pf-step
+Iterating step 2 over adjacent entries,
 $$
-\operatorname{diag}(z,w)
+\operatorname{diag}(z_1,\dots,z_n)\simeq\operatorname{diag}(z_1\cdots z_n,1,\dots,1),
 $$
-to $\operatorname{diag}(zw,1)$. Applying this successively to adjacent diagonal entries yields a homotopy
+so the diagonal inclusion $T^n\hookrightarrow U(n)$ is homotopic to $T^n\xrightarrow{(z_i)\mapsto\prod z_i}U(1)\hookrightarrow U(n)$.
+
+::: pf-proof
+Applying step 2 to the first two entries replaces $(z_1,z_2,z_3,\dots)$ by $(z_1z_2,1,z_3,\dots)$ and leaves the other entries alone, since the homotopy only touches the first two slots; repeating it $n-1$ times moves the product of all entries into the first slot. A composite of finitely many homotopies is a homotopy, so the diagonal inclusion is homotopic to the map sending $(z_i)$ to $\operatorname{diag}(\prod z_i,1,\dots,1)$, which is exactly the composite of $(z_i)\mapsto\prod z_i$ with the block inclusion $U(1)\hookrightarrow U(n)$.
+:::
+
+:::
+
+::: pf-step
+For $Sp(n)$ the diagonal subgroup is $Sp(1)^n=(S^3)^n$, and the same reduction begins with
 $$
-\operatorname{diag}(z_1,\ldots,z_n)
-\simeq
-\operatorname{diag}(z_1\cdots z_n,1,\ldots,1).
-$$
-Thus the diagonal inclusion $T^n\hookrightarrow U(n)$ is homotopic to
-$$
-T^n\xrightarrow{(z_i)\mapsto\prod z_i}U(1)\hookrightarrow U(n).
+\operatorname{diag}(q_1,q_2)=\operatorname{diag}(q_1q_2,1)\operatorname{diag}(q_2^{-1},q_2).
 $$
 
-For $Sp(n)$, the diagonal subgroup is $Sp(1)^n=(S^3)^n$. The same reduction works because
+::: pf-proof
+$Sp(n)$ is the group of quaternionic matrices preserving the standard Hermitian form; its diagonal matrices have entries of quaternionic modulus $1$, that is elements of $Sp(1)\cong S^3$, so the diagonal subgroup is $(S^3)^n$. The displayed identity is verified entrywise as in step 1, in the associative algebra $\HH$: the first diagonal entry is $(q_1q_2)(q_2^{-1})=q_1$ and the second is $1\cdot q_2=q_2$.
+:::
+
+:::
+
+::: pf-step
+The map $S^3\to Sp(2)$, $q\mapsto\operatorname{diag}(q^{-1},q)$, is nullhomotopic, because $\pi_3(Sp(2))\cong\ZZ$ and the two diagonal blocks represent $-1$ and $+1$, which sum to zero.
+
+::: pf-proof
+The unit sphere bundle of $\HH^2$ is $S^3=Sp(1)\to Sp(2)\to S^7$, and its exact homotopy sequence gives $\pi_3(Sp(1))\cong\pi_3(Sp(2))$ since $\pi_3(S^7)=0$ and $\pi_2(S^7)=0$; Corollary 4.25 gives $\pi_3(S^3)\cong\ZZ$, so $\pi_3(Sp(2))\cong\ZZ$. The block inclusions $q\mapsto\operatorname{diag}(q,1)$ and $q\mapsto\operatorname{diag}(1,q)$ are conjugate by the swap matrix, which lies in $Sp(2)$, and conjugation by a fixed element of a topological group is homotopic to the identity through multiplication, so the two induce the same isomorphism of $\pi_3$. With the first block giving the generator $+1$, the second gives $+1$ as well, and the map $q\mapsto\operatorname{diag}(q^{-1},q)$ is the sum of the classes of $q\mapsto\operatorname{diag}(q^{-1},1)$ and $q\mapsto\operatorname{diag}(1,q)$, that is $-1+1=0$, because inversion of $Sp(1)$ acts as $-1$ on $\pi_3(S^3)$. A map whose class in $\pi_3$ vanishes is nullhomotopic.
+:::
+
+:::
+
+::: pf-step
+Iterating gives
 $$
-\operatorname{diag}(q_1,q_2)
-=\operatorname{diag}(q_1q_2,1)\operatorname{diag}(q_2^{-1},q_2).
+\operatorname{diag}(q_1,\dots,q_n)\simeq\operatorname{diag}(q_1\cdots q_n,1,\dots,1),
 $$
-The map
-$$
-S^3\to Sp(2),\qquad q\mapsto\operatorname{diag}(q^{-1},q),
-$$
-is nullhomotopic: $\pi_3(Sp(n))\cong\ZZ$ is generated by the inclusion $Sp(1)\hookrightarrow Sp(n)$ (the bundle $S^3=Sp(1)\to Sp(2)\to S^7$ has $\pi_3(S^3)\cong\pi_3(Sp(2))$ by its exact homotopy sequence, and $\pi_3(S^3)\cong\ZZ$ by Corollary 4.25, p. 361; the two block inclusions are conjugate by the swap matrix, and conjugation is trivial on homotopy groups because $Sp(2)$ is a topological group, so both inclusions induce the same isomorphism), so under $\pi_3(Sp(1))\to\pi_3(Sp(2))\cong\ZZ$ the two diagonal blocks represent $-1$ and $+1$, which sum to zero. Iterating gives
-$$
-\boxed{\operatorname{diag}(q_1,\ldots,q_n)
-\simeq\operatorname{diag}(q_1\cdots q_n,1,\ldots,1).}
-$$
+so the diagonal inclusion $Sp(1)^n\hookrightarrow Sp(n)$ is homotopic to the composite through $Sp(1)$.
+
+::: pf-proof
+The homotopy of step 5 is natural in the pair $(q_1,q_2)$, exactly as in step 2 with $H$ replaced by a nullhomotopy of $q\mapsto\operatorname{diag}(q^{-1},q)$ inside $Sp(2)$, so it may be applied to adjacent entries and iterated, moving the product of the entries into the first slot. The result is a homotopy from the diagonal inclusion to $(q_i)\mapsto\operatorname{diag}(\prod q_i,1,\dots,1)$, which is the composite of $(q_i)\mapsto\prod q_i$ with the block inclusion $Sp(1)\hookrightarrow Sp(n)$.
+:::
+
+:::
+
+:::
 :::
