@@ -10513,3 +10513,24 @@ with "wedge of spheres" in the title.
 **Uncertainty:** the five locators are read off the OCR text in `tmp/sources`, whose numbering is the printed numbering where the OCR preserves it; `[@FH91, Hook Length Formula 4.12]` is a named display rather than a numbered theorem, and Serre's three types are section prose cited through Proposition 38.
 
 **Repair:** add Cox–Little–O'Shea to Zotero and re-export to cite `T-DICKSN` and `D-INVRING`; obtain Benson–Grove or Sturmfels for `T-MOLIEN`, and Derksen–Kemper, Horn–Johnson, Macdonald and Isaacs for the remaining five.
+
+## 2026-11-20, sixth item: the whole-corpus gate green on the tree carrying the §4.1 and §4.D repairs
+
+`./.venv/bin/python -m qualc check` with `QUALC_PARALLEL_WORKERS=1`, run from the repository root after the
+five §4.1 repairs, the `E-HAT-4.D-7` audit event and this date's entries were committed and pushed. Its last
+lines:
+
+```
+exit=0
+14436 cards and 351 wiki pages OK
+record: /workspace/nucleus/work/home/.local/state/new-qual-site/run-records/47d7d0cc5845-20261120T071347.026Z-qualc-check.json
+```
+
+The wiki count reads 351 here and 352 in a run four minutes earlier, the difference being another lane's
+edits to the wiki pages in the shared tree; the card count is the same in both. Style checks that the
+connector push does not run were made by hand on the seven files this session touched: no raw `\mathbb` and
+no `|` inside math in any of them (`STYLE-03`, `STYLE-04`).
+
+**Checks not run.** `tests/test_static_site.py` was not run — the VM has no `node`, the environment gap
+recorded on 2026-11-19. No Lamport structure check beyond `tmp/lam.sh` on the six card files, which numbered
+every step and found the QED labels in each.
