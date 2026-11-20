@@ -11177,37 +11177,43 @@ consequence stated after Proposition 1A.2, the deformation retraction in the pro
 Proposition 4.1 and Theorem 4.5, and records the counterexample. The entry above counts two repairs on this
 card; it took three. The two reported there stand. Commit `2c469a0de4`.
 
-## 2026-11-20, twelfth item: `E-HAT-1.2-1` and `E-HAT-1.B-5` read, and the page-locator count corrected upward
+## 2026-11-20, twelfth item: 1.2-1 and 1.B-5 read; the page-locator count corrected upward
 
-**`E-HAT-1.2-1` read step by step and correct; no commit, per `QUAL-03`.** Every element of $G*H$ has a unique
-reduced word. For the centre: with $w=a_1\cdots a_n$ reduced, $a_1\in G$ and $1\ne h\in H$, the word $hw$ is
-reduced with first letter in $H$, while $wh$ reduces to a word with first letter $a_1\in G$ — in the case
-$a_n\in H$ the reduction eats $a_nh$ and leaves $a_1\cdots a_{n-1}$, nonempty because $n\ge2$ — so the two
-differ by uniqueness of reduced words. For torsion: conjugation reduces the length until the first and last
-letters lie in different factors, and such a word of even length $m\ge2$ has $v^k$ reduced of length $km$, hence
-infinite order. Both conclusions therefore hold, and the card is unchanged.
+**E-HAT-1.2-1 read step by step and correct; no commit, per QUAL-03.** For the centre: with w = a_1...a_n
+reduced, a_1 in G and 1 != h in H, the word hw is reduced with first letter in H while wh reduces to a word
+with first letter in G -- in the case a_n in H the reduction eats a_n h and leaves a_1...a_{n-1}, nonempty
+because n >= 2 -- so the two differ by uniqueness of reduced words. For torsion: conjugation reduces length
+until the first and last letters lie in different factors, and such a word of even length m >= 2 has v^k
+reduced of length km, hence infinite order. The card is unchanged.
 
-**`E-HAT-1.B-5` read and correct, with two locators repaired** (`c33ad878d0`). The presentation is the HNN
-extension of Example 1B.13 with $\varphi(c)=a$ and $\psi(c)=a^2$, giving $bab^{-1}=a^2$, the Baumslag--Solitar
-group of the exercise; the edge injections are both injective, so Theorem 1B.11 makes $K_\Gamma$ a $K(G,1)$, the
-lifted vertex spaces are copies of $\RR$ and the lifted edge cylinders are strips $\RR\times I$, and the
-incidence graph is the tree of Theorem 1B.11's proof. Two pages remained — "at p. 93" and "on p. 95" — which the
-earlier sweep missed because it matched only parenthesised forms; they are now Example 1B.13 and the proof of
-Theorem 1B.11.
+**E-HAT-1.B-5 read and correct, two locators repaired (c33ad878d0).** The presentation is the HNN extension
+of Example 1B.13 with phi(c) = a and psi(c) = a^2, giving bab^{-1} = a^2; both edge injections are injective,
+so Theorem 1B.11 makes K_Gamma a K(G,1); the lifted vertex spaces are copies of R and the lifted edge
+cylinders are strips R x I; the incidence graph is the tree of Theorem 1B.11's proof. The two pages removed
+were "at p. 93" and "on p. 95", which the earlier sweep missed because it matched only parenthesised forms.
 
-**The count was wrong and is corrected.** The earlier scan reported 31 cards carrying a page citation in the
-body. That pattern matched only `(p. N)`, `printed p. N` and `PDF page`; a second scan for a bare `p. N` after
-a preposition finds **32 cards and 54 locators**, of which the earlier pass repaired none of the bare ones. The
-cards are `E-HAT-1.1-9`, `-1.2-6`, `-1.2-7`, `-1.B-5`, `-2.1-1`, `-2.1-10`, `-2.1-29`, `-2.2-1`, `-2.2-5`,
-`-2.2-6`, `-2.2-10`, `-2.2-13`, `-2.2-15`, `-2.2-16`, `-2.2-17`, `-2.2-18`, `-2.2-23`, `-2.2-24`, `-2.2-29`,
-`-2.2-30`, `-2.2-31`, `-2.2-36`, `-2.2-37`, `-2.2-40`, `-2.2-41`, `-2.2-43`, `-2.3-1`, `-2.3-3`, `-2.B-6`,
-`-2.B-10`, `-2.C-2`, `-2.C-5`, `-2.C-9`. That is the Chapter 2 batch, and only `E-HAT-2.1-1` was opened this turn.
+**The count was wrong and is corrected.** The earlier scan reported 31 cards with a body page citation, but
+matched only (p. N), printed p. N and PDF page. A scan for a bare p. N after a preposition finds 32 cards and
+54 locators, none of the bare ones repaired by that pass: E-HAT-1.1-9, 1.2-6, 1.2-7, 1.B-5, 2.1-1, 2.1-10,
+2.1-29, 2.2-1, 2.2-5, 2.2-6, 2.2-10, 2.2-13, 2.2-15, 2.2-16, 2.2-17, 2.2-18, 2.2-23, 2.2-24, 2.2-29,
+2.2-30, 2.2-31, 2.2-36, 2.2-37, 2.2-40, 2.2-41, 2.2-43, 2.3-1, 2.3-3, 2.B-6, 2.B-10, 2.C-2, 2.C-5, 2.C-9.
+Only E-HAT-2.1-1 was opened, and its proof was not read.
 
-**Not reached.** The Chapter 2 proofs from `E-HAT-2.1-1` on were not read in this turn. The brief asked for them
-after the two Chapter 1 cards; the two were done, and the Chapter 2 batch is opened but not begun.
+**Not reached.** The Chapter 2 proofs from E-HAT-2.1-1 on. The two Chapter 1 cards the brief named are done;
+the Chapter 2 batch is opened but not begun.
 
-**Policy note taken from this turn's reading of `CONTRIBUTING.md`.** `QUAL-03` says a card whose mathematics is
-already correct gets no commit and no audit event; the earlier turns of this stream added events to correct
-cards, which that rule does not sanction. From here a correct card is read and left alone, and an event is
-written only where the card changes. `just commit-card` is the commit route, and it is what carried
-`c33ad878d0`.
+**Policy note from reading CONTRIBUTING.md.** QUAL-03 requires that a card whose mathematics is already
+correct gets no commit and no audit event. Earlier turns of this stream added events to correct cards, which
+that rule does not sanction. From here a correct card is read and left alone, and an event is written only
+where the card changes. just commit-card is the commit route, and it carried c33ad878d0.
+
+
+## 2026-11-20 (#176): seven cards whose fact no retained text states, recorded here because the schema forbids an audit trail on them
+
+**Why this record and not a card event.** The brief for these cards asks that a missing source "go in the card's audit trail". `tools/qualc/model.py` gives `audit:` to `ProblemCard` alone: a `definition` or `fact` card carrying the key fails the schema check with "extra inputs are not permitted". The seven cards below are of those two kinds, so the record is here. Extending `audit:` to the other kinds is a schema decision and is not taken here.
+
+**`D-5NQWE`, rising and falling factorials.** Neither retained book defines them. Searched: Ahlfors, ch. 2 §3 and ch. 5 §1--2, where the Taylor coefficients and the Gamma function are treated; Stein--Shakarchi ch. 6 §1. No numbered statement of the rising or falling factorial is in either. The card's definition is its own notation for the products the binomial coefficients and the Gamma ratios use, and it claims no printed definition. A standard text that numbers it is what the card still lacks.
+
+**`D-BPBSQ`, singularities at infinity.** The card defines the three types at $\infty$ by transporting along $w=1/z$. Ahlfors's ch. 4 §3.2 classifies the singularity at a finite point only, and its ch. 1 §2.4 gives the extended plane and its neighbourhoods; Stein--Shakarchi states nothing at $\infty$. The definition is therefore the construction that applies the retained classification in the coordinate $w=1/z$, and the card claims no printed definition of the notion.
+
+**`FF-2ABHQ`, `FF-7KQCC`, `FF-WDDTM`, `FF-Y6IOA`, `FF-A7OEY`, the five arctangent values.** No retained text states $rctan\sqrt3=\pi/3$, $rctan(1/\sqrt3)=\pi/6$, $rctan 1=\pi/4$, $rctan 0=0$, or $\lim_{x	o+\infty}rctan x=\pi/2$. Searched: Ahlfors's trigonometric and cyclometric sections, ch. 2 §3.2 and §3.4, and the arctangent series of ch. 5 §1.2, which gives the series and not the values; Stein--Shakarchi's ch. 1. The nearest retained statement is Exercise 3 of Ahlfors ch. 5 §2.1, which derives $\pi/4=1-1/3+1/5-\cdots$, the Leibniz series and not the value of $rctan 1$. Each of the five is the elementary real identity $	an$ of the named angle together with the range $(-\pi/2,\pi/2)$ of $rctan$, and each card states that reasoning; what they lack is a printed statement of the value.
