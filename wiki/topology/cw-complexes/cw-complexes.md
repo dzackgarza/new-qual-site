@@ -23,6 +23,8 @@ Then $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, so $p_X(t) = 1 + t^a + t
 
 :::
 
+[[D-EZILB]]
+
 [[E-GTNVU]]
 
 ## CW structures on common spaces
