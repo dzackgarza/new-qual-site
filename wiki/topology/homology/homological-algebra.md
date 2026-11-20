@@ -36,18 +36,18 @@ The exact sequences, resolutions and derived functors used in the homology chapt
 
 [[D-PKIY7]]
 
-## Tor
+## $\Tor$
 
 [[D-4VGLT]]
 
 [[FF-D2KJJ]]
 
-## Ext
+## $\Ext$
 
 [[D-BYIZA]]
 
 [[FF-WZDSS]]
 
-## Hom
+## $\Hom$
 
 [[FF-JXE7U]]
