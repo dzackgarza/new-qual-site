@@ -318,6 +318,27 @@ audit:
     quotient is $N_{2m+1}$, nonorientable. Checked that the statement is the exercise's: the even
     genus analogue of Example 2C.4, printed p. 181, whose own contributions are $1$, $-2$ and $+1$.
     Not claimed: a published solution of Exercise 2.C.6, none located.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #170's item for this card, the Lefschetz trace, read step by step and found correct. The model is
+    consistent: a sphere with $m$ antipodal pairs of disks removed and a punctured torus on each boundary
+    circle has $\chi=(2-2m)-2m=2-4m$, so the closed orientable surface is $T_{2m}$; the two clauses of $f$
+    agree on the interface because $f(h_i(y))=h_{i'}(y)=\alpha(h_i(y))$ for $y\in\partial T$; the clauses are
+    inverse to each other and $\alpha$ is an involution, so $f^2=\operatorname{id}$; and $f$ is free, since
+    the antipodal map of the sphere has no fixed point and each handle is carried into the distinct partner
+    handle. The homology computation was redone: Mayer--Vietoris for $M_{2m}=A\cup B$ has the $2m$ boundary
+    circles zero in $H_1(B)$, where each is a commutator, and generating $H_1(A)$ with the single relation
+    that their sum vanishes, so $H_1(M_{2m})\cong\bigoplus_{i=1}^{2m}H_1(T_i)$ of rank $4m=2g$, on which
+    $f_*$ permutes the summands in $m$ transpositions and has trace $0$; $f_*$ on $H_2$ is multiplication by
+    the local degree at a point of the central sphere, which is the antipodal map's degree $-1$; and
+    $H_0$ contributes $1$, so $\tau(f)=1-0+(-1)=0$, as a fixed-point-free map must have. Checked the
+    sources by statement: Dugger's Proposition 2.8 states $T^{\mathrm{anti}}_{2g}\cong S^2_a\#_2T_g$ with
+    its proof left to the reader, and Theorem 4.1(a) states that for even $g$ the unique free
+    $C_2$-structure is represented by the antipodal action, both as the card quotes them; Hatcher's
+    Example 2C.4 contributes $1$, $-2$ and $1$ as the remark records. No step changed. Not claimed: a
+    published solution of Exercise 2.C.6, which is not in the retained sets.
 ---
 
 ::: {.problem}
