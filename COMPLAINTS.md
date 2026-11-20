@@ -11534,3 +11534,32 @@ joined by these; no further search of the same places is warranted without a new
 **Pages touched in this pass, all outside the cited numbers or in the two chapters' own stragglers:** `wiki/real-analysis/undergraduate/riemann-integrability` (the consequences corollary now cites Rudin ch. 6 Theorems 6.8 and 6.9), `wiki/complex-analysis/appendices/special-functions` (infinite products cite Ahlfors ch. 5 §2.2 Theorem 5), `wiki/complex-analysis/residues-and-contours/the-residue-theorem` (the $k=-1$ integral names the winding-number card and Ahlfors ch. 4 §2.1), `wiki/real-analysis/workshops/real-week-2-measure-theory` (the region-under-the-graph corollary carries its Tonelli argument in the block).
 
 **Uncertainty.** Read in the extraction, not on paper: number, lettering, hypotheses and conclusions are confirmed, the printer's spacing and any figure are not.
+
+## 2026-11-21, item: the named retained sets checked for `2.B-4(b)` and `4.A-4`, and the two open re-reads finished
+
+**The retained sets, checked one by one.** The sets named for this sweep, and what each holds:
+
+| set | file | result |
+| --- | --- | --- |
+| Koukpari | `tmp/sources/koukpari-hatcher-solutions.md` | solves §2.B Exercise 4, including part (b), but its part (b) assumes $D^p\cap S^{p+q-1}=S^{p-1}$, which Hatcher's printed statement does not give; nothing on §4.A Exercise 4 |
+| tom Dieck | `tmp/sources/tomdieck-algebraic-topology-ranicki.md` | §2.8.3 gives part (a) of §2.B Exercise 4 only; no §4.A Exercise 4 |
+| Guanyu Li | `tmp/sources/hatcher-solutions-guanyu-li.md` | no §2.B Exercise 4, no §4.A Exercise 4 |
+| DeMason | `tmp/sources/demason-m382c-hatcher-20210404.pdf` | no occurrence of §4.A; nothing on the wedge automorphism group |
+| Casassas | `tmp/sources/casassas-acyclic-classes-2014.md` | an unrelated paper on acyclic classes; neither exercise |
+| Putman | `putman-finite-order-homology.md`, `putman-generalized-schoenflies.md`, `putman-schoenflies.md` | three papers on Schoenflies-type theorems; no occurrence of "wedge" |
+| Stanford 215C | `tmp/sources/stanford-math215c-spring2009-solution2.md` | one occurrence of "wedge", in a cup-product computation for $M_1$; not either exercise |
+| Bredon | — | not retained in `tmp/sources` at all |
+
+So the earlier conclusion stands: no published solution of **§2.B Exercise 4(b)** as printed — the only one found,
+Koukpari's, proves a different statement — and none of **§4.A Exercise 4**. The cards' provenance sentences of
+2026-11-20 already say this and name the entry of that date.
+
+**The two re-reads left open, now finished, both correct.** `E-HAT-2.B-4`'s final contradiction: §2.B Exercise 3
+gives $\widetilde H_{q-1}(S^{n-1}-S^{p-1})\cong\widetilde H_{q-1}(D^n-D)$ for the proper disk $D=f(D^p)$, the
+class $[S^{q-1}]$ generates the source by step `s3`, while $S^{q-1}=\partial E$ for the disk $E=g(D^q)$ inside
+$D^n-D$, which is contractible, so that class maps to zero — contradiction. `E-HAT-4.A-4`'s realization: the
+wedge's universal property makes $[X,X]_*\cong\prod_{j}\pi_k(X)$, and $\pi_k(X)\cong\ZZ^n$ for $k>1$, so
+$[X,X]_*\cong M_n(\ZZ)$ with composition matrix multiplication, whose group of units is $GL_n(\ZZ)$; $k>1$ is
+exactly what makes $\pi_k$ abelian and free, which is why the argument fails at $k=1$. Neither card's text
+changed, so neither gets a commit under `QUAL-03`; the audit events that said these parts were not re-read are
+corrected, they being of this date.
