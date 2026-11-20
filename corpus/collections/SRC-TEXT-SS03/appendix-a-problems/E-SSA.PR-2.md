@@ -73,6 +73,10 @@ $$
 This can be proved by using the results of Problem 1 in place of Proposition 1.3.
 :::
 
+::: {.remark}
+Appendix A sets its asterisk before Problem 5 only, so none stands before this problem (Appendix A, Problem 2).
+:::
+
 ::: {.solution}
 No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
 
