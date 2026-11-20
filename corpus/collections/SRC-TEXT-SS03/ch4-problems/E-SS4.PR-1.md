@@ -75,6 +75,18 @@ audit:
     Chapter 4, Problem 1; the page readings recorded in the earlier events are superseded by it, the
     events themselves standing as written. Not checked in this pass: the wording of the statement
     and the argument.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 4, Problem 1 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
