@@ -88,7 +88,7 @@ from .static_site import (
     build_asset_catalog,
     write_page,
 )
-from .tex import mark_definienda
+from .tex import macro_body, mark_definienda
 from .wiki import (
     BIBLIOGRAPHY_PAGE,
     SITE_PAGES,
@@ -2479,12 +2479,45 @@ def _macro_arity(tex_name: str, definition: str) -> int:
     return max(parameters, default=0)
 
 
-def tex_preamble(macros: dict[str, str]) -> str:
-    """The corpus macros as LaTeX definitions, for pandoc's `latex_macros` to expand."""
-    return "\n".join(
-        f"\\newcommand{{{name}}}[{arity}]{{{definition}}}" if (arity := _macro_arity(name, definition)) else f"\\newcommand{{{name}}}{{{definition}}}"
-        for name, definition in macros.items()
-    )
+def _macro_parameters(tex_name: str, definition: str | list) -> tuple[int, str | None]:
+    """The declared parameter count of one macro and its optional default.
+
+    A macro declared with an optional first parameter is stored as
+    `[body, parameters, default]`; its count is the declared one, which can be
+    larger than the number of parameters the body writes. Every other macro's
+    count is read off its body, as before.
+    """
+    if isinstance(definition, list):
+        body, parameters, default = definition
+        if (
+            not isinstance(body, str)
+            or not isinstance(parameters, int)
+            or not isinstance(default, str)
+            or parameters < 1
+        ):
+            raise TypeError(f"invalid definition for TeX macro {tex_name}: {definition!r}")
+        return parameters, default
+    return _macro_arity(tex_name, definition), None
+
+
+def tex_preamble(macros: dict[str, str | list]) -> str:
+    """The corpus macros as LaTeX definitions, for pandoc's `latex_macros` to expand.
+
+    A macro stored as `[body, parameters, default]` was declared with an optional
+    first parameter, and is written back with it, `\\newcommand{\\foo}[2][]{...}`,
+    so that pandoc reads the same declaration the author's preamble carries.
+    """
+    definitions = []
+    for name, definition in macros.items():
+        parameters, default = _macro_parameters(name, definition)
+        body = macro_body(definition)
+        if not parameters:
+            definitions.append(f"\\newcommand{{{name}}}{{{body}}}")
+        elif default is None:
+            definitions.append(f"\\newcommand{{{name}}}[{parameters}]{{{body}}}")
+        else:
+            definitions.append(f"\\newcommand{{{name}}}[{parameters}][{default}]{{{body}}}")
+    return "\n".join(definitions)
 
 
 def _tab_titles(pandoc: PandocServer, titles: list[str], preamble: str) -> list[str]:
@@ -2550,13 +2583,20 @@ def mathjax_header(macros: dict) -> str:
             raise TypeError(f"invalid TeX macro name type: {type(tex_name).__name__}")
         if not tex_name.startswith("\\") or tex_name == "\\":
             raise ValueError(f"invalid TeX macro name: {tex_name!r}")
-        if not isinstance(definition, str):
-            raise TypeError(f"invalid definition for TeX macro {tex_name}: {definition!r}")
         name = tex_name[1:]
         if name in mathjax_macros:
             raise ValueError(f"duplicate MathJax macro name: {name}")
-        argument_count = _macro_arity(tex_name, definition)
-        mathjax_macros[name] = [definition, argument_count] if argument_count else definition
+        body = macro_body(definition)
+        argument_count, default = _macro_parameters(tex_name, definition)
+        if argument_count == 0:
+            mathjax_macros[name] = body
+        elif default is None:
+            mathjax_macros[name] = [body, argument_count]
+        else:
+            # MathJax's third entry is the default of an optional (bracketed)
+            # first parameter, so `\surjectsvia{\exp}` takes the default below the
+            # arrow and `\exp` above it, as the author's preamble does.
+            mathjax_macros[name] = [body, argument_count, default]
     # The corpus writes multi-line display maths as `\[ a &= b \\ &= c \]`, with bare
     # alignment characters and no environment: 831 blocks across 458 cards. The author's
     # own LaTeX pipeline treats `\[...\]` as aligned, but MathJax's is plain display

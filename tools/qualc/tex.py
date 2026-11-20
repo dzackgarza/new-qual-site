@@ -151,6 +151,16 @@ def _probe(kind: str, fmt: str, text: str, api: object) -> str:
     return json.dumps({"pandoc-api-version": api, "meta": {}, "blocks": blocks})
 
 
+def macro_body(definition: str | list) -> str:
+    """The replacement text of one `vocabularies/macros.json` entry.
+
+    A macro declared with an optional first parameter is stored as
+    `[body, parameters, default]`, the form MathJax's `macros` option takes;
+    every other macro is stored as its body alone.
+    """
+    return definition[0] if isinstance(definition, list) else definition
+
+
 def unrenderable_tex(
     pandoc: PandocServer,
     documents: list[tuple[str, str]],
@@ -163,7 +173,7 @@ def unrenderable_tex(
     nothing (`\\envlist`, vertical glue) loses nothing when the writer drops it.
     """
     known = frozenset(name.removeprefix("\\") for name in preamble) | mathjax_commands()
-    invisible = frozenset(name for name, body in preamble.items() if not body.strip())
+    invisible = frozenset(name for name, definition in preamble.items() if not macro_body(definition).strip())
     found: list[tuple[str, list[tuple[str, str, str]]]] = []
     raw: set[tuple[str, str, str]] = set()
     api: object = None
