@@ -21,6 +21,8 @@ $$
 $$
 at every point $\zeta\in S^1$ where $u$ is continuous.
 A \dfn{solution} of the Dirichlet problem is such a function $\tilde u$.
+
+The problem is named and posed in [@Ahl73, ch. 6, §4, The Dirichlet Problem] as that of finding a harmonic function with given boundary values, and the disc case is what Poisson's formula solves there; the book states it for continuous boundary values, which is the case of the definition above with $u$ continuous everywhere.
 :::
 
 ::: {.remark}

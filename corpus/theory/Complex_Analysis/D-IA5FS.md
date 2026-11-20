@@ -20,6 +20,8 @@ The \dfn{logarithmic derivative} of $f$ is the meromorphic function on $\Omega$
 $$
 \partial_{\log}f\coloneqq\frac{f'}{f}.
 $$
+
+This is the quotient $f'/f$ of [@Ahl73, ch. 4, §5.2, The Argument Principle], where it is shown to have a simple pole with residue $h$ at a zero of order $h$ and residue $-h$ at a pole of order $h$ — the two clauses of the proposition below.
 :::
 
 ::: {.proposition}
