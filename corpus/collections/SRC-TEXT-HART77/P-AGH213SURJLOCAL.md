@@ -150,7 +150,7 @@ audit:
 :::
 
 ::: {.solution}
-**Part (a).** The argument is transcribed from Steven V. Sam, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3, printed p. 2 (PDF p. 15 of `tmp/sources/hartshorne-solutions-sam.pdf`, whose running head reads "1 SHEAVES 2"), where both directions are written out.
+**Part (a).** The argument is transcribed from Steven V. Sam, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3, where both directions are written out.
 
 ($\Rightarrow$) By (1.2(b)), $\varphi$ is surjective if and only if $\varphi_P$ is surjective for every point $P \in X$.
 Suppose $\varphi_P$ is surjective for every $P \in X$.
@@ -164,7 +164,7 @@ The condition applied to $U$ gives an open covering $\theset{U_i}$ of $U$ and el
 So each $\varphi_P$ is surjective, and thus $\varphi$ is surjective.
 Sam writes this direction with a global section $s \in \mcg(X)$ and a covering of $X$; the condition is stated for every open set, and applying it to the neighbourhood on which the germ is represented is the one adaptation made here, and is the card's.
 
-**Part (b).** Also Sam, on the same page. Let $\mcf$ be the sheaf on $\CC$ with the usual topology that sends an open set $U$ to the group of all analytic functions on $U$, with the obvious restriction maps, and let $D: \mcf \to \mcf$ be differentiation: for an open set $U$, $D(U)$ sends $f$ to its derivative, which is also analytic.
+**Part (b).** Also Sam, Exercise 3. Let $\mcf$ be the sheaf on $\CC$ with the usual topology that sends an open set $U$ to the group of all analytic functions on $U$, with the obvious restriction maps, and let $D: \mcf \to \mcf$ be differentiation: for an open set $U$, $D(U)$ sends $f$ to its derivative, which is also analytic.
 An analytic function $f$ on an open set $U$ has an antiderivative if and only if the integral of $f$ over any closed contour in $U$ is $0$; in particular the integral over a closed contour $C$ is $0$ if $f$ is analytic in the region bounded by $C$.
 For any open set $U$ and analytic function $f$ on $U$ there exists an open covering $\theset{U_i}$ of $U$ such that each $U_i$ is simply connected (take a small enough neighbourhood around each point).
 Thus the integral of $f$ along any contour in $U_i$ is $0$, so $f$ has an antiderivative, which is of course analytic.
@@ -174,15 +174,15 @@ The function $f(z) = 1/z$ is analytic on $U$, but has no antiderivative, since t
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is II.1.3 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, part for part.
+The exercise is II.1.3 of Hartshorne, and the statement above is its text, part for part.
 
-The proof above is Steven V. Sam's, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3, printed p. 2 (PDF p. 15 of `tmp/sources/hartshorne-solutions-sam.pdf`). He proves part (a) in both directions, the converse by the index $i$ with $P \in U_i$, and for part (b) takes differentiation of analytic functions: it is surjective on stalks because an analytic function has an antiderivative on a simply connected neighbourhood, and $1/z$ on $\CC^\times$ has none, its integral over the unit circle being $2\pi i$.
+The proof above is Steven V. Sam's, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3. He proves part (a) in both directions, the converse by the index $i$ with $P \in U_i$, and for part (b) takes differentiation of analytic functions: it is surjective on stalks because an analytic function has an antiderivative on a simply connected neighbourhood, and $1/z$ on $\CC^\times$ has none, its integral over the unit circle being $2\pi i$.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), the folio printed on the page, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, solves the same exercise by the same two steps for (a), writing of the converse only that it "follows by 1.2.b", and takes for (b) the exponential sequence of sheaves on $\CC$,
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.3 (his Exercise 2.1.3), source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, solves the same exercise by the same two steps for (a), writing of the converse only that it "follows by 1.2.b", and takes for (b) the exponential sequence of sheaves on $\CC$,
 $$
 0 \to \underline{\ZZ} \injects (\OO_\CC, +) \xrightarrow{\ \exp\ } (\units{\OO_\CC}, \cdot) \to 0,
 $$
 with the section $z$ on $U = \CC^\times$: he asserts without proof that $z$ "doesn't have a global inverse", leaving the two steps the assertion needs, the loop integral that excludes a global logarithm and the construction of a logarithm on a disc that gives surjectivity on stalks, to the reader. That example is Kim's; the solution above is Sam's, and it is the one transcribed.
 
-Egbert, PDF pp. 59--60, and Saglam--Chris, PDF p. 1, carry the same exercise and the same two omissions as Kim: each states that a logarithm exists locally and that the section $z$ has none globally, without proving either.
+Egbert and Saglam--Chris carry the same exercise and the same two omissions as Kim: each states that a logarithm exists locally and that the section $z$ has none globally, without proving either.
 :::
