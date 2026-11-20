@@ -10060,3 +10060,32 @@ The printed Lemma 2.6 has its item (1) at half the first value, items (2) and (4
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card. The image was produced with `pdftoppm -f 14 -l 14 -r 200` and its folio 334 read at the head of the page.
 
 **Uncertainty.** Read: Lemma 10 and, on the same page, Lemma 9. Not read: Lemma 12, for which PDF p. 27 is rendered to `.scratch/abhy-p27-27.png` but was not examined this round, and the card's five remaining steps. #168's acceptance is still unmet for V.5.6; V.5.8(b) and the V.4.16 steps are not reached.
+
+## 2026-11-19, eighth item: five of the eight §4.2 cards read step by step, none needing repair
+
+The split is that
+this stream takes the eight §4.2 cards whose earlier verdicts rested on a partial reading, and lane hlg7 takes §4.3
+only. Read here step by step against Hatcher and the numbered statements each step cites:
+
+- `E-HAT-4.2-25` (printed p. 391), every step. The construction of $K$ from $X$ uses $\pi_i(X)=0$ for $1<i<n$ to
+  attach $(n+1)$-cells along representatives of $\pi_n(X)$ and then cells of dimension at least $n+2$; the relative
+  chain complex of $(K,X)$ is concentrated in degrees at least $n+1$, so $H_i(K,X)=0$ for $i\le n$ and the exact
+  sequence gives $H_n(K)\cong\operatorname{coker}\partial$ with $\operatorname{im}\partial=h(\pi_n(X))$, each
+  relative cell's boundary being the Hurewicz class of its attaching map. Correct.
+- `E-HAT-4.2-21` (p. 390), every step. Compactness (Proposition A.1) gives the colimit description
+  $\pi_n(X)\cong\varinjlim\pi_n(X_N)$; $\pi_n$ of the finite product is $\prod_{i\le N}\pi_n(K(G_i,i))=G_n$ for
+  $N\ge n$; and the bonding map inserts a factor $\pi_n(K(G_{n+1},n+1))=0$, so it is an isomorphism from $N=n$ on.
+  Correct, and its note that Sam's entry is not a proof of the exercise is accurate.
+- `E-HAT-4.2-32` (p. 392), every step. $m=n+k$ from local triviality and $k\ne0$ for $n\ge2$; the exact sequence in
+  degree $n$ injects $\ZZ=\pi_n(S^n)$ into $\pi_{n-1}(S^k)$, giving $k\le n-1$; the sequence in degree $k$ makes
+  $\pi_{k+1}(S^n)$ surject onto $\pi_k(S^k)=\ZZ$, giving $k\ge n-1$; hence $k=n-1$ and $m=2n-1$, with $n=1$ and $n=0$
+  separated and correct.
+- `E-HAT-4.2-27` (p. 390), every step. $\operatorname{im}j_*=\ker\partial$ by exactness; Lemma 4.39 (p. 373) gives
+  $a+b-a=(\partial a)b$; for $a$ in the image $\partial a=0$, so $a+b-a=b$ and $a+b=b+a$ — the identity is used
+  without assuming $\pi_2(X,A)$ abelian, which is the point of the exercise.
+- `E-HAT-4.2-29` (p. 391), all three parts. Part (a) is the change of generator; part (b) computes
+  $\deg g=k_1\cdots k_n+dm$ from the pinch, the degree-$d$ self-map and the $m$-sheeted covering;
+  part (c) gets $d_0P\equiv P'$ and $P\equiv\pm P'$ with $P$ a unit mod $m$, hence $d_0\equiv\pm1$ and a choice of $d$
+  with $\deg g=\pm1$, after which $g$ is a weak equivalence of finite CW complexes.
+
+Three remain from the eight and are not recorded here as read: `E-HAT-4.2-5`, `-17`, `-33`.
