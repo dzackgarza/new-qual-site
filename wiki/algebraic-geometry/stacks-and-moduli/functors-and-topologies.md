@@ -9,7 +9,7 @@ topics:
 
 # Functors and topologies
 
-A scheme is studied through the functor it represents on test schemes, and once the objects are functors the topology can be changed: covers need not be open immersions, and the sheaf condition is stated for a Grothendieck topology rather than for a topological space [@Vak25, §6.2, pp. 177--178].
+A scheme is studied through the functor it represents on test schemes, and once the objects are functors the topology can be changed: covers need not be open immersions, and the sheaf condition is stated for a Grothendieck topology rather than for a topological space [@Vak25, §6.2].
 
 ## Functors of points
 
