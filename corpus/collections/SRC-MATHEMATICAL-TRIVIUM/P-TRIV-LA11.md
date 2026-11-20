@@ -156,7 +156,7 @@ coefficient of $x_n^{n-1}$ is $C$. Compare with step [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-Inductively,
+Part (a): inductively,
 $$
 \boxed{
 D_n(x_1,\ldots,x_n)
@@ -187,22 +187,9 @@ and combine the factors. The base case is step [](#s1-1){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-9}
 
-One has
+Part (b): one has
 $$
 D_n(x_1,\ldots,x_n)=0
 $$
@@ -233,22 +220,9 @@ for some $i<j$.
 
 :::
 
-::: {.pf-step #s1-10}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-9){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-8){.pf-ref} and [](#s1-10){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 
