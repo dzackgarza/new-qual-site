@@ -52,7 +52,7 @@ How many of the students surveyed are enrolled in all three of these courses?
 :::
 
 ::: {.solution}
-This is problem 35 of the practice test that begins on PDF p. 415 of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf` (the test is printed without a number, so its opening page and the problem number locate it); the item is on PDF p. 423, and the statement below is its wording.
+This is problem 35 of the practice test in *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf` (the test is printed without a number, so the problem number locates it); the statement below is its wording.
 
 ::: pf
 
