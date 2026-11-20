@@ -7,7 +7,7 @@ order: 0
 
 Throughout, $G$ is a group, $H\leq G$ is a subgroup, and $g,h,x\in G$.
 
-Each row gives the symbol this chapter uses, the notion it names, and the definition that governs the notion; the third column reads the symbol and is not a second definition.
+Each row gives the symbol this chapter uses, the notion it names, and how the symbol reads.
 
 ## Subgroups and conjugacy
 
@@ -26,7 +26,7 @@ Each row gives the symbol this chapter uses, the notion it names, and the defini
 
 ## Group actions
 
-For a [[D-WYC7C|group action]] of $G$ on a set $X$, equivalently a homomorphism $G\to\Aut_\Sets(X)$ ([[D-3T6O2]]), and for $x\in X$:
+For a [[D-WYC7C|group action]] of $G$ on a set $X$ ([[D-3T6O2]]), and for $x\in X$:
 
 | Symbol | Notion | Reads as |
 | --- | --- | --- |
