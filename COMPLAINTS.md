@@ -9776,3 +9776,84 @@ recorded where it is.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card. The page count and the first and last folios were read from the PDF with `pdfinfo` and `pdftotext`.
 
 **Uncertainty.** Read: the page range of the paper and of the file, and the card's locators from its events. Not read: Definition 3's text, Lemma 12's text, and the card's remaining steps. #168's acceptance is still unmet for V.5.6, and V.5.8(b) and the unread V.4.16 steps are not reached. Any future brief for this card should give printed pp. 334--337, not 398 and 412--413.
+
+## 2026-11-20: #173's CARD-04 merge retires an id, and the QUAL-11 removal check refuses that deletion
+
+**Object and need.** Issue #173 asks that `P-O2J6S` and `P-UCTOP290-S4-7` be merged under `CARD-04`: read both statements, keep one survivor, repoint every appearance, delete the other id. The two cards state one printed problem, UCSD Math 290 Fall 2014 sheet 4 Problem 7 with its converse part and Problem 8, so the merge is the repair. Both cards carry dated audit events, and `removal_errors` in `tools/qualc/authoring.py` refuses a commit that deletes a card whose id no surviving path carries (`QUAL-11`), which is every `CARD-04` merge of two dated cards: whichever id is retired, its path is a deletion whose id is gone.
+
+**Observed evidence.** In `removal_errors(version, base)` a deleted Markdown path is excused only when `source_identity(previous_source(path, base))` is in `surviving_card_ids(version, base)`, the ids read from the paths the same diff keeps, adds or renames to; a merge keeps one path with one `id`, so the other card's id is never in that set. The tests state the rule for a deletion (`test_deleting_a_card_deletes_its_dated_events`) and for a move (`test_a_renamed_card_keeps_the_audit_text_of_its_earlier_path`), and no test or code path covers a merge.
+
+**Impact and owner.** The merge was made as #173 requires: `P-UCTOP290-S4-7` survives with the printed statement and the complete solution, `P-O2J6S` is deleted, its six dated events (one of 2026-10-29, four of 2026-11-01, one of 2026-11-18) are summarized in the survivor's new event of 2026-11-20, and its `SRC-UNSORTED-TOPOLOGY` appearance is removed because that collection holds only problems whose source is not identified. `qualc.authoring check-range` on the merge commit would refuse it, naming the deleted path, and the gate was not edited to let it pass. A merge of two dated cards needs a rule: either the survivor may carry the retired id in a record the removal check reads, or the retired events are copied into the survivor and the deletion is excused when every one of them stands there verbatim.
+
+**Uncertainty.** High confidence in the code path, read rather than inferred: `removal_errors` and `surviving_card_ids` are quoted above, and the two tests named are in `tests/test_card_git_validation.py`. Not checked: whether CI runs the removal check on a pushed range; the local pre-commit hook runs only `ai-review-ci/scripts/local-check.py`, which parses `.py`/`.json`/`.toml` and reads no card.
+
+**Repair.** Needs a decision in `CONTRIBUTING.md` (`QUAL-11`) and a change in `tools/qualc/authoring.py`; the card work of #173 does not depend on it and is committed.
+
+**2026-11-19, sixth item: #163 item by item for the 58 cards this stream owns.** Lane hlg7 owns §4.2; the other
+58 of the 97 are read here, each against the printed exercise and the section's own text, with a published set
+transcribed or cited where the checkout holds one. Every repair is its own commit and passes `qualc.authoring
+check` on the card alone. Page numbers are the printed folios.
+
+| card | printed p. | verdict | commit |
+| --- | --- | --- | --- |
+| `E-HAT-3.F-4` | 320 | read correct | — |
+| `E-HAT-3.F-5` | 320 | read correct | — |
+| `E-HAT-3.F-6` | 320 | repaired: the telescoping identity in the resolution's exactness is false | `6b9c906473` |
+| `E-HAT-3.F-7` | 320 | read correct | — |
+| `E-HAT-3.F-8` | 320 | repaired: the n = 1 end of the collapse; two empty proof steps written out | `5ad4fec69b` |
+| `E-HAT-3.F-9` | 321 | repaired: printed (a) restored to an iff; converse fixed for infinite-dimensional ${}_pA$ | `8035ccd488` |
+| `E-HAT-4.A-4` | 426 | read correct (source obligation still open, see the search record above) | — |
+| `E-HAT-4.A-5` | 426 | read correct, $H_1(Z)=\ZZ^5$ re-derived from the $\Lambda$-chain complex | — |
+| `E-HAT-4.1-10` | 358 | read correct | — |
+| `E-HAT-4.1-11` | 358 | read correct | — |
+| `E-HAT-4.1-12` | 359 | read correct | — |
+| `E-HAT-4.1-13` | 359 | read correct | — |
+| `E-HAT-4.1-14` | 359 | read correct | — |
+| `E-HAT-4.1-15` | 359 | repaired: the local linearity belongs to $f_1$, not to $f$ | `fe0e93ba8e` |
+| `E-HAT-4.1-16` | 359 | read correct | — |
+| `E-HAT-4.1-17` | 359 | read correct | — |
+| `E-HAT-4.1-18` | 359 | read correct | — |
+| `E-HAT-4.1-19` | 359 | read correct | — |
+| `E-HAT-4.1-20` | 359 | read correct | — |
+| `E-HAT-4.1-21` | 359 | read correct | — |
+| `E-HAT-4.1-22` | 359 | read correct | — |
+| `E-HAT-4.1-23` | 360 | read correct | — |
+| `E-HAT-4.3-1` | 419 | read correct | — |
+| `E-HAT-4.3-2` | 419 | read correct | — |
+| `E-HAT-4.3-3` | 419 | read correct | — |
+| `E-HAT-4.3-4` | 419 | read correct | — |
+| `E-HAT-4.3-5` | 419 | repaired: based and unbased brackets identified | `6e3510538e` |
+| `E-HAT-4.3-6` | 419 | read correct | — |
+| `E-HAT-4.3-7` | 419 | read correct | — |
+| `E-HAT-4.3-8` | 419 | read correct | — |
+| `E-HAT-4.3-9` | 419 | read correct | — |
+| `E-HAT-4.3-10` | 419 | repaired: the transport is an anti-action; action defined by the reverse loop | `6f0619ceaf`, `b60a814b8c` |
+| `E-HAT-4.3-11` | 420 | repaired: homotopy invariance is Proposition 4.62, quoted not re-argued | `f369a21dda` |
+| `E-HAT-4.3-12` | 420 | repaired: the contracting homotopy keeps $\gamma$ | `77cf2abb32` |
+| `E-HAT-4.3-13` | 420 | repaired: the fibre homotopy for $\Phi\Psi$ was ill defined | `a72e3558ff` |
+| `E-HAT-4.3-14` | 420 | repaired: the mapping-path replacement is Proposition 4.65, not Exercise 12 | `bb147994a8` |
+| `E-HAT-4.3-15` | 420 | read correct | — |
+| `E-HAT-4.3-16` | 420 | repaired: $\widetilde H_0=0$ is the connectedness the argument needs | `feda684960` |
+| `E-HAT-4.3-17` | 420 | read correct | — |
+| `E-HAT-4.3-18` | 420 | repaired: exactness at $\langle X,E\rangle$ with a based nullhomotopy and the relative HLP | `9696ea9952` |
+| `E-HAT-4.3-19` | 420 | read correct | — |
+| `E-HAT-4.3-20` | 420 | repaired: Postnikov fibrations are not principal; the looped tower is, via Theorem 4.69 | `f981a13c75`, `42da6071d8` |
+| `E-HAT-4.3-21` | 420 | repaired: $P_n(X\times X)$ needs the map induced by the projections and Whitehead | `5b8a2d0e40` |
+| `E-HAT-4.3-22` | 420 | repaired: p. 412's weak equivalences upgraded via p. 405 and Whitehead | `2fd9673b7e` |
+| `E-HAT-4.3-23` | 420 | repaired: the cylinder retracts onto $(Y,i(X))$, not onto $(Y,X)$ | `d448470c54` |
+| `E-HAT-4.3-24` | 420 | repaired: the principal-tower hypothesis of "the situation" stated | `2f01bfab8d` |
+| `E-HAT-4.D-1` | 434 | read correct | — |
+| `E-HAT-4.D-2` | 434 | read correct | — |
+| `E-HAT-4.D-3` | 434 | read correct | — |
+| `E-HAT-4.D-4` | 447 | read correct | — |
+| `E-HAT-4.D-5` | 446 | read correct, first-hand | — |
+| `E-HAT-4.D-6` | 447 | read correct, first-hand | — |
+| `E-HAT-4.D-7` | 447 | read correct | — |
+| `E-HAT-4.D-8` | 447 | read correct, first-hand | — |
+| `E-HAT-4.D-9` | 447 | read correct | — |
+| `E-HAT-4.D-10` | 447 | read correct | — |
+| `E-HAT-4.L-4` | 517 | read correct | — |
+| `E-HAT-4.L-5` | 517 | read correct | — |
+
+That is 58 cards: 16 repaired in 18 commits, 42 read correct with no change. §4.2's 39 cards are not listed here
+and are not this stream's reading; `E-HAT-4.2-32` and the rest belong to lane hlg7.
