@@ -21,4 +21,6 @@ $$
 \rho(A) = \lim_{k\to\infty}\norm{A^k}^{1/k},
 $$
 and if the norm is submultiplicative then also $\rho(A) = \inf_{k\geq1}\norm{A^k}^{1/k}$ and $\rho(A)\leq\norm A$.
+
+The submultiplicative clauses are Rudin, *Functional Analysis*, Theorem 10.13(b); the limit for an arbitrary norm on the finite-dimensional space $M_n(\CC)$ follows from the equivalence of norms.
 :::
