@@ -1310,10 +1310,12 @@ $(K_{X_2}-M_{\mathrm{odd}})\cdot(-K_{X_2})=-(2s+3)-7<0$ and $-K_{X_2}$ is ample,
 so Riemann--Roch gives
 $h^0(M_{\mathrm{odd}})\ge\chi(M_{\mathrm{odd}})
 =1+\frac12(M_{\mathrm{odd}}^2+2s+3)=3s+2$ and
-$\dim\linearsystem{M_{\mathrm{odd}}}\ge3s+1\ge16$;
-finitely many nonempty open conditions in a projective space have nonempty
-intersection, so it is enough to find one nonsingular irreducible member of
-each system and then to move it off the prescribed points.
+$\dim\linearsystem{M_{\mathrm{odd}}}\ge3s+1\ge16$.
+The nonsingular members of a linear system form an open subset: the pairs $(x,H)$ with $x$ a
+singular point of $\varphi^{-1}(H)$ are closed in $X\times\linearsystem{L}$, and their image in
+$\linearsystem{L}$ is closed because $X$ is proper. Hence finitely many nonempty open conditions in
+a projective space have nonempty intersection, so it is enough to find one nonsingular irreducible
+member of each system and then to move it off the prescribed points.
 
 The two classes are treated by different routes because only
 $M_{\mathrm{ev}}$ descends along a blowdown of $X_2$. In a presentation
