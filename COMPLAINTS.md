@@ -1021,9 +1021,9 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Example 4.16 and Lemma 4.7 instead of assuming functoriality, and proves `X -> P_nX` an H-map; `E-HAT-4.3-22`
    separates the two directions and drops the false claim that a fibration over a CW base has total space of CW
    type, which fails for `B x Q -> B`. Every card of the lane now cites by chapter, section and numbered
-   statement; where an earlier dated event records a page locator that event is left as written under QUAL-11
-   and a 2026-11-21 event supersedes it. The register line above, that §4.3 is unread, is superseded by this
-   paragraph.
+   statement, in the statement and solution of every card and in its events of today; the events dated before
+   today are left as written under QUAL-11 and a 2026-11-20 event on each card records the convention and
+   supersedes their locators. The register line above, that §4.3 is unread, is superseded by this paragraph.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
