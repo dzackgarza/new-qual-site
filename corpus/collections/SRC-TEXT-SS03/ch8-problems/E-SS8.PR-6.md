@@ -36,10 +36,25 @@ audit:
     bounded and simply connected, are checked against the book's Jordan curve theorem. The step of
     Exercise 18 that fails without smoothness is named. No correction to the printed statement is
     claimed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the first event: this is Chapter 8, Problem 6, on printed p. 258 (PDF
+    p. 277), in the chapter's Problems section, not a "§3" problem. Re-read there today: the printed
+    item is "The results of Exercise 18 extend to the case when $\gamma$ is assumed merely to be
+    closed, simple, and continuous. The proof, however, requires further ideas.", and the card's
+    sentence is that, with the cross-reference to the collection's own Exercise 18 card. The
+    asterisk the print sets before "6." is recorded in the remark. Not checked: the argument, whose
+    scope the event above states and which this pass did not re-derive.
 ---
 
 ::: {.exercise}
 The results of [[E-SS8.EX-18|Exercise 18]] extend to the case when $\gamma$ is assumed merely to be closed, simple, and continuous. The proof requires further ideas.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 8, Problem 6, printed p. 258).
 :::
 
 ::: {.solution}
