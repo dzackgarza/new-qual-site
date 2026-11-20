@@ -11294,3 +11294,12 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Bibliography keys for the two section-cited sources.** Five cards cite a source by section name because that source has no key in `vocabularies/references.yaml`: `D-8WMFK` and `L-ZXBBI` cite C. McMullen, *Advanced Complex Analysis*; `FT-FZERI`, `T-SSNLT` and `T-ZAEWG` cite Robert Won, *Complex Analysis Qual Sheet*. The file is generated from a live Zotero by `tools/sync_bibliography.py` and has no second source, so a key cannot be added here by hand without being overwritten — a `[@…]` citation needs an entry in that file. Until someone adds the two works to the bibliography, these five cards name their source in prose by chapter, section and item, which is what #184 asks of a citation, but they carry no `[@…]` key.
 
 **Uncertainty.** The searches named above are the sections read; neither book was read whole for these two questions.
+
+
+## 2026-11-20 (#176): T-BBQLQ states a fact neither retained book gives, and the three other theorem cards are cited
+
+**`T-BBQLQ`, holomorphic functions on a compact connected complex manifold are constant.** Searched Ahlfors's ch. 4 §3.4, whose maximum principle is stated for a region in $\CC$, and its ch. 6 §1, and Stein–Shakarchi's ch. 3 §4 and ch. 8; neither states the manifold case. McMullen's §1 records $\mathcal O(\widehat{\CC})=\CC$, the sphere alone. The card's statement is therefore its own, proved on the card from compactness and the maximum modulus principle applied on complex lines through a point of the maximum set; what it lacks is a printed statement in that generality.
+
+**The three that are cited.** `C-Q6BSL` cites Ahlfors ch. 4 §5.1, whose simple-pole rule and worked quotient $\frac{e^z}{(z-a)(z-b)}$ are the card's quotient read at a simple zero of the denominator. `PR-QW3ZK` cites ch. 4 §6 Theorem 23 for the real input, the reduction to it being the card's. `T-K66DJ` cites ch. 4 §2.2 Theorem 6, the winding-number form of the integral formula, the card's display being its case $n(\bd U,p)=1$.
+
+**Uncertainty.** The searches are the sections named; neither book was read whole for the manifold question.
