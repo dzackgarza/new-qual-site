@@ -119,7 +119,7 @@ to the asymptotic formula for $p(n)$. When suitably modified, the resulting seri
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Appendix A, Problem 5, printed p. 343).
+The book marks this problem with an asterisk (Appendix A, Problem 5).
 :::
 
 ::: {.solution}
