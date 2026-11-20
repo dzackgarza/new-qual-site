@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. f even and f(0) = 0 give a zero of order at least 2 at 0, so
+    f = z^2 g with g holomorphic on the disc; on each circle |z| = r the bound |f| < 2000 gives
+    |g| < 2000/r^2, and the maximum principle on the disc of radius r then passes |g| <= 2000 to the
+    limit, including at 0. Hence |f(1/45)| = (1/45)^2 |g(1/45)| <= 2000/2025 < 1. Checked that the
+    evenness is what produces the double zero (f' odd, so f'(0) = 0) and that no Schwarz lemma is
+    needed: the estimate is immediate from the factorisation, which is what the closing step says.
 ---
 
 ::: {.problem}

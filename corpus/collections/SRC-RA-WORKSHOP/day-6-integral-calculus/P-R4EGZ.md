@@ -15,6 +15,15 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Continuity at 0 with f(0) > 0 gives delta in (0,1) with f > f(0)/2 on
+    [0, delta], whence the integral over [0, delta] is at least (f(0)/2) delta, and nonnegativity of f
+    gives the same lower bound for the integral over [0,1]. Checked that both hypotheses are used:
+    positivity at 0 for the local bound and nonnegativity on the rest to discard the remaining
+    interval, and that monotonicity of the integral is the only tool required.
 ---
 ::: {.problem}
 Suppose that $f$ is continuous and $f(x)\geq 0$ on $[0,1]$.
