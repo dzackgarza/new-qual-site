@@ -12,6 +12,18 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card carried no audit list; this one records the change. The definitional step asserted the
+    extension is finite without saying why, and now derives it from the degree of each generator over
+    $K$, which divides $n$. The Galois and abelian-exponent computations, and the converse as the main
+    theorem of Kummer theory, were already justified and are unchanged. Not checked: the converse is
+    cited to Kummer theory rather than proved, which is what the question asks for. The card stands
+    alone, with no collection provenance and no retained published solution, so the argument is the
+    card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -26,6 +38,11 @@ Let $K$ be a field, let $n\ge2$ be an integer with $\operatorname{char}K\nmid n$
 ::: pf-step
 
 A Kummer extension of exponent dividing $n$ is a finite extension of the form $L=K\bigl(\sqrt[n]{a_1},\ldots,\sqrt[n]{a_r}\bigr)$ with $a_1,\ldots,a_r\in K^\times$.
+
+
+::: pf-proof
+This is the definition of a Kummer extension. It is finite because each generator $\sqrt[n]{a_i}$ is algebraic over $K$ of degree dividing $n$, being a root of $x^n - a_i$, so adjoining the $r$ of them gives $\left[L : K\right] \le n^r$; the exponent condition refers to the Galois group, which the next steps compute.
+:::
 
 :::
 
