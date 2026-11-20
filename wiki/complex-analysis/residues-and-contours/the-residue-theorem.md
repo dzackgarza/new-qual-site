@@ -22,6 +22,7 @@ $$
 \end{cases}
 $$
 
+The computation is the one displayed; the case $k=-1$ is the index of the circle about the origin, $n(\gamma,0)=\frac{1}{2\pi i}\int_\gamma\dz/z=1$, which is [[D-PJ7JM|the winding number]] and also [@Ahl73, ch. 4, §2.1, The Index of a Point with Respect to a Closed Curve], where this integral is computed as $2\pi i$.
 :::
 
 For a Laurent series with finitely many negative terms converging on a neighborhood of $S^1$, the convergence is uniform on $S^1$, so term-by-term integration keeps only the coefficient of $\inverseof{z}$:
