@@ -26,6 +26,19 @@ audit:
     card drops the relative "which can be", which changes no mathematics and
     no quantifier. No repair needed; the exercise carries no star. What was
     not checked: the solution was read only for consistency, not re-derived.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with three steps, each carrying a `pf-proof`, and the remark on the published solutions is
+    kept verbatim outside it. The induction, the two cases and the published-solution agreement
+    are unchanged. Cited by number only: Exercises I.1.1, I.1.2 and I.1.8 of the book, the last
+    being the statement that every irreducible component of a hyperplane section of an
+    irreducible closed set not contained in the hypersurface has dimension one less. Checked:
+    that an irreducible set contained in a finite union of closed sets lies in one of them, that
+    the case $D\subseteq Z(f_j)$ gives the stronger bound $n-j+1$, and that the induction is
+    anchored at $j=0$.
 ---
 
 ::: {.problem}
@@ -34,15 +47,46 @@ Show that every irreducible component of $Z(\mfa)$ has dimension at least $n - r
 :::
 
 ::: {.solution}
-Let $\mfa = \generators{f_1,\ldots,f_r}$, put $Y_j = Z(f_1,\ldots,f_j)$, so $Y_0 = \AA^n$ and $Y_j = Y_{j-1} \intersect Z(f_j)$.
-We prove by induction on $j$ that every irreducible component of $Y_j$ has dimension at least $n - j$.
-The case $j = 0$ is clear.
-If $Y_j = \emptyset$ there is no component to consider, so suppose $C$ is an irreducible component of $Y_j$.
-Since $Y_j = \Union_D (D \intersect Z(f_j))$, where $D$ runs over the irreducible components of $Y_{j-1}$, the irreducible set $C$ lies in some $D \intersect Z(f_j)$, and by maximality $C$ is an irreducible component of $D \intersect Z(f_j)$.
-If $D \subseteq Z(f_j)$, then $C = D$ and $\dim C \geq n - j + 1$.
-Otherwise Ex. 1.8 applies to $D$ and $Z(f_j)$ and gives
-$\dim C = \dim D - 1 \geq n - j$.
-At $j = r$ this is the claim.
+
+::: pf
+
+::: pf-step
+
+Let $\mathfrak a=\langle f_1,\dots,f_r\rangle$ and $Y_j=Z(f_1,\dots,f_j)$, so $Y_0=\AA^n$ and $Y_j=Y_{j-1}\cap Z(f_j)$. It is enough to prove, for each $j$, that every irreducible component of $Y_j$ has dimension at least $n-j$.
+
+::: pf-proof
+
+$Z(f_1,\dots,f_j)$ is by definition the common zero set of the first $j$ generators, so $Y_j=Y_{j-1}\cap Z(f_j)$; in particular $Y_r=Z(\mathfrak a)$, and the case $j=r$ is the assertion. The sets are closed, and $\AA^n$ is irreducible of dimension $n$ (Hartshorne Exercise I.1.1 and I.1.2).
+
+:::
+
+:::
+
+::: pf-step
+
+For the induction step, if $Y_j=\varnothing$ there is no component to consider; otherwise let $C$ be an irreducible component of $Y_j$. Since $Y_j=\bigcup_D(D\cap Z(f_j))$ over the irreducible components $D$ of $Y_{j-1}$, the irreducible set $C$ lies in some $D\cap Z(f_j)$ and, by maximality, is an irreducible component of that intersection.
+
+::: pf-proof
+
+$Y_{j-1}$ is a finite union of its irreducible components $D$, so $Y_j=\bigcup_D(D\cap Z(f_j))$. If $C$ is an irreducible closed subset of $Y_j$, it is contained in the union of finitely many closed sets $D\cap Z(f_j)$; an irreducible set contained in a finite union of closed sets is contained in one of them. As $C$ is a component of $Y_j$, i.e. maximal among irreducible closed subsets of $Y_j$, and $C\subseteq D\cap Z(f_j)\subseteq Y_j$ with $D\cap Z(f_j)$ closed, taking an irreducible component of $D\cap Z(f_j)$ containing $C$ shows $C$ equals it.
+
+:::
+
+:::
+
+::: pf-step
+
+If $D\subseteq Z(f_j)$ then $C=D$ and $\dim C\ge n-j+1$; otherwise Exercise I.1.8 applied to the irreducible $D$ and the hypersurface $Z(f_j)$ gives $\dim C=\dim D-1\ge n-j$. At $j=r$ this is the claim.
+
+::: pf-proof
+
+If $D\subseteq Z(f_j)$ then $D\cap Z(f_j)=D$ with $D$ irreducible, so $C=D$ and the bound is the induction hypothesis $\dim D\ge n-(j-1)=n-j+1$, which is stronger. Otherwise $D$ is not contained in $Z(f_j)$: Exercise I.1.8 says that for an irreducible closed $D\subseteq\AA^n$ and a hypersurface $Z(f)$ not containing $D$, every irreducible component of $D\cap Z(f)$ has dimension exactly $\dim D-1$; with the induction hypothesis $\dim D\ge n-j+1$ this gives $\dim C\ge n-j$. The induction starts at $j=0$ with the single component $\AA^n$ of dimension $n$.
+
+:::
+
+:::
+
+:::
 :::
 
 ::: {.remark title="Published solution"}
