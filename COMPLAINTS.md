@@ -11393,3 +11393,15 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Repair.** `T-GELFND` cites Rudin, *Functional Analysis*, Theorem 10.13(b) for the submultiplicative clauses, with the arbitrary-norm limit argued from the equivalence of norms on $M_n(\CC)$; `T-NOETHD`'s existing Cox--Little--O'Shea locator is exact. `T-MOLIEN` remains the one without a stated theorem in any retained text: Cox--Little--O'Shea, Chapter 7, §3 names Molien's theorem and refers to Benson--Grove (1985), Chapter 7 and Sturmfels (1993), Chapter 2, neither of which is retained, and the card records that referral.
 
 **Uncertainty.** `vocabularies/references.yaml` has no entry for Rudin's *Functional Analysis* or for Cox--Little--O'Shea, so both citations are prose locators rather than `[@key]` citations; adding the works to Zotero and regenerating the file would close that gap.
+
+## 2026-11-20, #179 reading of the applied-algebra collections: four card defects outside the reader's list
+
+**`P-APASP08L`, the Gröbner system.** The card's nine listed solutions of $-x^2+y+z=x-y^2+z=x+y-z^2=0$ are not solutions except $(0,0,0)$. A lex Gröbner basis is $[x+y-z^2,\ (y-z)(y+z+1),\ (2y-z^2)(z^2+1),\ z(z-2)(z^2+1)(z^2+2z+2)]$, and the solution set is $(0,0,0)$, $(2,2,2)$, and the six points $(i,i,-1-i)$, $(i,-1-i,i)$, $(-1-i,i,i)$, $(-i,-i,-1+i)$, $(-i,-1+i,-i)$, $(-1+i,-i,-i)$. Substituting the card's nine points leaves only $(0,0,0)$; the others give $(1,1,1)$, $(-3,-3,-3)$, $(2,0,0)$, $(0,2,0)$, $(0,0,2)$ and three copies of $(-2,-2,-2)$.
+
+**`P-APA17C`, the min-max formula.** The formula indexed by $\dim V=n-i+1$ computes $\sigma_{n-i+1}$, not $\sigma_i$ for the card's $i$-th largest singular value: for $M=\operatorname{diag}(3,2,1)$ it gives $1,2,3$ in place of $3,2,1$. The repair is $\dim V=i$ in the formula and $\dim V_i=i$ in the choice of subspace.
+
+**`P-APASP08F`, the scalar product.** Line 108 prints $\frac{120-30}{120}=1$; the numerator is $1\cdot5\cdot5\cdot6=150$, and $1=\frac{150-30}{120}$ as line 124 has it. The displayed chain is false as printed.
+
+**`P-APA17D`, the classes of $Q_8$.** Line 76 says $i$ and $-i$ are not conjugate because a conjugating element would need $jij^{-1}=\pm i$ with the minus sign, and then computes $jij^{-1}=-i$; the computation is correct and the premise is false, so $\{\pm i\}$ is one class, as the conclusion drawn there says. The same computation with $j$ and $k$ gives the other two pairs.
+
+**Reported by the same audit, not read independently here.** `P-APASP08B`: the claim that a nilpotent element of a group algebra has zero Fourier transform is false for non-abelian $G$, since $\CC[S_3]\cong\CC\times\CC\times M_2(\CC)$ has a nonzero nilpotent whose transform is nonzero; the printed problem needs an abelian hypothesis. `P-APASP08D`: the Garnir computation uses the French orientation, against `D-YTABL`. `P-APASP08M`: one displayed ideal identity has a wrong cofactor and one occurrence of "anti-invariant" is wrong. Each needs a reading before repair.
