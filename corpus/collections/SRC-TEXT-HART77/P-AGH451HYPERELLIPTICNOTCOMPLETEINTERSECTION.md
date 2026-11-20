@@ -27,6 +27,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.5.1, printed p. 95,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.5.1, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the contradiction's shape: (4.3.3) applies only for $g\ge2$, which is the range in which a hyperelliptic curve has a $g^1_2$, and (5.2) gives $\abs K=(g-1)g^1_2$ there, so the two statements are mutually exclusive for every $g\ge2$.
+    Not checked: Yang's Solutions outside printed p. 95; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.5.1 at printed p. 95; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -35,6 +55,8 @@ Cf. (Ex. 3.3).
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.5.1, printed p. 348. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.5.1, printed p. 95, gives it in one line from (4.3.3) and Proposition 5.2; the steps below write out the argument those two results carry, starting from the hyperelliptic involution.
+
 Let $X$ be hyperelliptic of genus $g\ge2$.  Choose a finite morphism
 $$
 f:X\longrightarrow\PP^1
@@ -181,4 +203,8 @@ very-ampleness theorem.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.1, printed p. 95, is the whole entry: 'By 4.3.3 and proposition 5.2, trivial.' The composition is exact --- a complete intersection of genus $\geq2$ has $K$ very ample by (4.3.3), while on a hyperelliptic curve $\abs K=(g-1)g^1_2$ is not very ample by (5.2) --- and it is the argument the card carries, its step [](#s3){.pf-ref} being the non-very-ampleness and [](#s4){.pf-ref} the conclusion. What the entry does not do is exhibit either ingredient: both are quoted, and a reader who wants the computation has to take it from the book's own propositions.
 :::
