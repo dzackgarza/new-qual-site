@@ -24,17 +24,18 @@ prompts:
 
 ::: {.proposition}
 Let $(X,\OO_X)$ be a ringed space.
-Then $\Pic(X) \cong H^1(X, \OO_X^\times)$.
+Then $\Pic(X) \cong H^1(X, \OO_X^\times)$ [@Har77, Exercise III.4.5].
 For $\OO_X$-modules $\mcf$ and $\mcg$, equivalence classes of extensions
 $$
 0 \to \mcf \to \mce \to \mcg \to 0
 $$
-are classified by $\Ext^1_{\OO_X}(\mcg,\mcf)$. If $\mcg$ is finite locally free, then
+are classified by $\Ext^1_{\OO_X}(\mcg,\mcf)$ [@Har77, Exercise III.6.1]. If $\mcg$ is finite locally free, then
 $$
 \Ext^1_{\OO_X}(\mcg,\mcf)
 \cong
-H^1\bigl(X,\mcf\tensor_{\OO_X}\mcg^\vee\bigr).
+H^1\bigl(X,\mcf\tensor_{\OO_X}\mcg^\vee\bigr)
 $$
+[@Har77, Proposition III.6.7 with Proposition III.6.3].
 :::
 
 ::: {.remark}
