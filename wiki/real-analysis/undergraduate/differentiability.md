@@ -8,9 +8,6 @@ topics:
 
 # Differentiability
 
-By the mean value theorem, a differentiable function with $\abs{f'}\leq C$ on an interval is $C$-Lipschitz there.
-If each $f_n$ is differentiable on a bounded interval $I$, $\sum_n f_n'$ converges uniformly on $I$, and $\sum_n f_n(x_0)$ converges for some $x_0\in I$, then $\sum_n f_n$ converges uniformly on $I$ and $\qty(\sum_n f_n)' = \sum_n f_n'$.
-
 [[T-OXNTU]]
 
 [[T-RA-WORKSHOP-D7-6-4]]
