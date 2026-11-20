@@ -69,11 +69,7 @@ The Hawaiian earring is path connected and locally path connected, and it is not
 
 :::
 
-::: {.remark}
-For a path-connected, locally path-connected, semilocally simply connected space $X$ with basepoint $x_0$, conjugacy classes of subgroups of $\pi_1(X,x_0)$ correspond to isomorphism classes of connected [[D-ANO2D|covering spaces]] of $X$.
-For the Hawaiian earring the trivial subgroup corresponds to no covering space.
-
-:::
+Since the Hawaiian earring is not semilocally simply connected, [[T-1C38C|the classification of covering spaces]] does not apply to it: the trivial subgroup corresponds to no covering space.
 
 ## Homology
 
@@ -83,7 +79,7 @@ The Poincaré homology sphere has the homology of $S^3$, and its fundamental gro
 :::
 
 ::: {.example title="Homology does not determine the fundamental group"}
-For path-connected $X$, $H_1(X)$ is the abelianization of $\pi_1(X)$.
+For path-connected $X$, the [[T-GL7E6|Hurewicz theorem]] identifies $H_1(X)$ with the abelianization of $\pi_1(X)$.
 The fundamental group of the Poincaré homology sphere is perfect and nontrivial, so $H_1 = 0$ while $\pi_1\neq 1$.
 
 :::
@@ -91,7 +87,7 @@ The fundamental group of the Poincaré homology sphere is perfect and nontrivial
 ::: {.example title="A homology isomorphism need not be a homotopy equivalence"}
 Collapsing the complement of an open $3$-ball in the Poincaré homology sphere $P$ gives a map $P\to S^3$ of degree $1$, which induces isomorphisms on all homology groups.
 It is not a homotopy equivalence, since $\pi_1(P)\neq 1$.
-By Whitehead's theorem, a map between simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence.
+By [[T-SDEOY|Whitehead's theorem]], a map between simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence.
 
 :::
 
@@ -101,15 +97,12 @@ Its path components are its points, so $H_0(X)$ is free abelian of uncountable r
 
 :::
 
-::: {.remark}
-For good pointed spaces $X_\alpha$, $\tilde H_*(\bigvee_\alpha X_\alpha)\cong\bigoplus_\alpha \tilde H_*(X_\alpha)$.
-
-:::
+[[PR-B6BB2]]
 
 ## Manifolds
 
 ::: {.example title="A closed manifold need not have top homology $\ZZ$"}
-For a connected closed $n$-manifold $M$, $H_n(M)\cong\ZZ$ if $M$ is [[D-6CI7D|orientable]] and $H_n(M)=0$ otherwise.
+For a connected closed $n$-manifold, [[PR-LR35S|the top homology is $\ZZ$ exactly when the manifold is orientable]].
 The Klein bottle is non-orientable and has $H_2=0$, while the torus has $H_2\cong\ZZ$.
 
 :::
