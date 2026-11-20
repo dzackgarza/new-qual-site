@@ -23,15 +23,21 @@ The table names the quantity to bound and the inequality that bounds it; the sta
 
 [[FT-GQRV2]]
 
-For $0<p<r<q\leq\infty$ and $\frac1r=\frac\theta p+\frac{1-\theta}q$ with $\theta\in(0,1)$, Hölder's inequality applied to $\abs f^{r\theta}\cdot\abs f^{r(1-\theta)}$ gives the interpolation inequality
+::: {.proposition title="Interpolation"}
+For $0<p<r<q\leq\infty$ and $\frac1r=\frac\theta p+\frac{1-\theta}q$ with $\theta\in(0,1)$, Hölder's inequality applied to $\abs f^{r\theta}\cdot\abs f^{r(1-\theta)}$ gives
 $$
 \norm f_r \leq \norm f_p^{\theta}\norm f_q^{1-\theta}
 $$
 [@Fol99, §6.5].
 
-For $g\in L^q$, $\abs{\int fg}\leq\norm f_p\norm g_q$, so $f\mapsto\int fg$ is a bounded linear functional on $L^p$ of norm at most $\norm g_q$; for $1\leq p<\infty$ every bounded linear functional on $L^p$ arises this way ([[T-5BFVS]]).
+:::
 
+[[T-5BFVS]]
+
+::: {.remark}
 For $1<p<\infty$, equality holds in Hölder's inequality exactly when $\abs f^p$ and $\abs g^q$ are proportional almost everywhere [@Fol99, §6.1].
+:::
+
 
 ## Chebyshev's inequality
 
