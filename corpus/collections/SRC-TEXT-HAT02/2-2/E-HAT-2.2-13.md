@@ -53,7 +53,7 @@ $$
 \qquad
  d_2(a,b)=2a+3b.
 $$
-Hence, cellular homology being singular homology by Theorem 2.35 (Hatcher p. 139),
+Hence, cellular homology being singular homology by Theorem 2.35,
 $$
 H_2(X)=\ker d_2=\ZZ(3,-2),
 \qquad H_1(X)=\ZZ/\operatorname{im}d_2=0,
@@ -142,7 +142,7 @@ First attach the degree-$2$ cell, obtaining $A_2$. Its fundamental group is
 $$
 \pi_1(A_2)\cong\ZZ_2.
 $$
-The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space, by Proposition 0.18 (Hatcher p. 16).
+The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space, by Proposition 0.18.
 
 With this replacement, $S^1\cup e^2_3$ is a disk, so the remaining degree-$2$ cell is attached to a contractible disk along a loop that is nullhomotopic there. Therefore the resulting space is homotopy equivalent to
 $$
