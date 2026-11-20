@@ -22,6 +22,8 @@ $$
 $$
 is [[D-E7A5W|holomorphic]].
 A continuous function $f\colon S\to\CC$ is \dfn{holomorphic} if $f\circ\phi_\alpha^{-1}$ is holomorphic on $V_\alpha$ for every chart, and a continuous map $S\to S'$ of Riemann surfaces is holomorphic if it is holomorphic in charts on both sides.
+
+This is the definition opening §2 of C. McMullen, *Advanced Complex Analysis*, which takes a Riemann surface to be a connected complex $1$-manifold given by charts whose transition functions are analytic, and defines a function on it to be analytic when its composites with the charts are.
 :::
 
 ::: {.example title="The plane, the disc, and the sphere"}
