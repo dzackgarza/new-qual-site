@@ -87,7 +87,7 @@ splits.
 
 ::: pf-proof
 
-The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian, as a subgroup of a free abelian group. A short exact sequence with free quotient splits, by the remark following the Splitting Lemma on p. 148, so choose a complement $L_n\subset C_n$ such that
+The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian, as a subgroup of a free abelian group. A short exact sequence with free quotient splits, by the remark following the Splitting Lemma, so choose a complement $L_n\subset C_n$ such that
 $$
 C_n=K_n\oplus L_n.
 $$
