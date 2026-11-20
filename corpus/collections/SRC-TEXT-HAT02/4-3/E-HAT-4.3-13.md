@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page corrected. The sentence citing "printed p. 15" for the statement that the mapping
+    cylinder contains both ends as deformation retracts is Corollary 0.21, printed p. 16; p. 15
+    carries the preceding discussion, and the mapping cylinder phrase does not occur there. The
+    mathematics is unchanged.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -127,7 +135,7 @@ Set $\widehat f[c,t]=f(g(c))$ for $(c,t)\in C\times I$ and $\widehat f[a]=f(a)$ 
 $i_A:A\to M_g$ and $i_C:C\to M_g$ are both inclusions of deformation retracts.
 
 ::: pf-proof
-For $i_A$: define $D:M_g\times I\to M_g$ by $D([c,t],s)=[c,\ t+s(1-t)]$ and $D([a],s)=[a]$. The two formulas agree on the glued sets — at $t=1$ the first gives $[c,1]=[g(c)]$, which is the point of $A$ that the second fixes — so $D$ is well defined and continuous by the gluing lemma for closed covers of the cone coordinate. It fixes $A$ pointwise, $D(-,0)=\mathrm{id}$, and the image of $D(-,1)$ lies in $A$ with $\restrictionof{D(-,1)}{A}=\mathrm{id}$; so $A$ is a deformation retract of $M_g$. For $i_C$: the book states that for a homotopy equivalence $g$ the mapping cylinder $M_g$ contains *both* $C$ and $A$ as deformation retracts (printed p. 15, proved in Corollary 0.21, printed p. 16); that is the form quoted by Sam, and it applies because $g$ is a homotopy equivalence by hypothesis.
+For $i_A$: define $D:M_g\times I\to M_g$ by $D([c,t],s)=[c,\ t+s(1-t)]$ and $D([a],s)=[a]$. The two formulas agree on the glued sets — at $t=1$ the first gives $[c,1]=[g(c)]$, which is the point of $A$ that the second fixes — so $D$ is well defined and continuous by the gluing lemma for closed covers of the cone coordinate. It fixes $A$ pointwise, $D(-,0)=\mathrm{id}$, and the image of $D(-,1)$ lies in $A$ with $\restrictionof{D(-,1)}{A}=\mathrm{id}$; so $A$ is a deformation retract of $M_g$. For $i_C$: the book states that for a homotopy equivalence $g$ the mapping cylinder $M_g$ contains *both* $C$ and $A$ as deformation retracts (Corollary 0.21, printed p. 16); that is the form quoted by Sam, and it applies because $g$ is a homotopy equivalence by hypothesis.
 :::
 
 :::
