@@ -49,6 +49,13 @@ audit:
     compact set, because a compact subset of $\RR$ is bounded, while $f$ is unbounded. Citation by
     number: §46 Exercise 2.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to this card's event of the same date: the exercise is §46 Exercise 3, as the
+    collection index records (§46.3), not Exercise 2. The mathematics of that event is unaffected.
+
 ---
 
 ::: {.exercise}
