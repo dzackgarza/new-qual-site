@@ -51,6 +51,18 @@ audit:
     $(0,1)$, a neighbourhood $(a,1)\cap(0,1)$ of a point meeting only those members with
     $1/n\ge a$, and neither is locally finite in $\RR$, where every neighbourhood of $0$ meets
     every member.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. Two repairs in the
+    proof that $\mathcal C$ is locally finite in $(0,1)$. The inequality excluding the members
+    with $m\ge n+2$ was strict at $m=n+2$, where $1/m=1/(n+2)=a$: the correct conclusion is
+    $1/m\le a$, and each such member lies in $(0,a]$ and misses $V=(a,1)\cap(0,1)$, so the count
+    of the remaining members stands. And the existence of $n$ with
+    $1/(n+1)\le x\le1/n$ was asserted; it is now taken as the least $n$ with $1/(n+1)<x$, whose
+    existence is the archimedean property, minimality giving $1/n\ge x$. No other step changed.
+
 ---
 
 ::: {.exercise}
@@ -97,7 +109,7 @@ Let $x\in(0,1)$ and choose $a$ with $0<a<x$; then $V=(a,1)\cap(0,1)$ is a neighb
 $\mathcal{C}=\{(1/(n+1),1/n)\mid n\in\ZZ_{+}\}$ is locally finite in $(0,1)$ and not in $\RR$.
 
 ::: pf-proof
-Let $x\in(0,1)$. Choose $n$ with $1/(n+1)\le x\le1/n$; then $a=1/(n+2)$ satisfies $0<a<1/(n+1)$. The set $V=(a,1)\cap(0,1)$ is a neighbourhood of $x$ in $(0,1)$, and every member $(1/(m+1),1/m)$ with $m\ge n+2$ satisfies $1/(m+1)<1/m<a$, so it misses $V$; only the finitely many members with $m<n+2$ remain. So $\mathcal{C}$ is locally finite in $(0,1)$. In $\RR$ every neighbourhood of $0$ contains some $(-\delta,\delta)$ with $\delta>0$, and for every $m$ with $1/m<\delta$ the interval $(1/(m+1),1/m)$ meets $(-\delta,\delta)$; infinitely many $m$ satisfy this, so $\mathcal{C}$ is not locally finite in $\RR$.
+Let $x\in(0,1)$. Choose the least $n\ge1$ with $1/(n+1)<x$, which exists because $1/(n+1)\to0$; then $1/n\ge x$ by minimality, so $1/(n+1)\le x\le1/n$. Put $a=1/(n+2)$, so that $0<a<1/(n+1)$. The set $V=(a,1)\cap(0,1)$ is a neighbourhood of $x$ in $(0,1)$. A member $(1/(m+1),1/m)$ with $m\ge n+2$ has $1/m\le1/(n+2)=a$, hence lies in $(0,a]$ and misses $V$; only the finitely many members with $m<n+2$ remain. So $\mathcal{C}$ is locally finite in $(0,1)$. In $\RR$ every neighbourhood of $0$ contains some $(-\delta,\delta)$ with $\delta>0$, and for every $m$ with $1/m<\delta$ the interval $(1/(m+1),1/m)$ meets $(-\delta,\delta)$; infinitely many $m$ satisfy this, so $\mathcal{C}$ is not locally finite in $\RR$.
 :::
 
 :::
