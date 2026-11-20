@@ -15,6 +15,13 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 2 sets its asterisks before Problems 1(b), 2 and 5
+    only, so none stands before Problem 3. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -39,6 +46,10 @@ $$
 f_\epsilon(z) = \int_{\RR^2} f(z - w)\, \varphi_\epsilon(w)\, dV(w),
 $$
 where the integral denotes the usual integral of functions of two variables, with $dV(w)$ the area element of $\RR^2$. Then $f_\epsilon$ is smooth, satisfies condition (16), and $f_\epsilon \to f$ uniformly on any compact subset of $\CC$.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 2, Problem 3).
 :::
 
 ::: {.solution}
