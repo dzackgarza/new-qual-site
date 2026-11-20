@@ -24,5 +24,7 @@ z &\mapsto e^{iz}
 $$
 is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto -i\Log(w)$, where $\Log$ is the [[D-4CSPM|principal branch]] of the logarithm.
 
+This is the exponential correspondence of [@Ahl73, ch. 3, §4.1, The Use of Level Curves]: there $\zeta=e^{z}$ maps the strip $-\pi/2<\Im z<\pi/2$ onto $\Re\zeta>0$, sending the lines $x=x_0$ to circles about the origin and $y=y_0$ to rays, and the map above is that statement read on the strip rotated by $\pi/2$, as on [[PR-TQDIL]], which states the same correspondence.
+
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_18-22-45.png)
 :::

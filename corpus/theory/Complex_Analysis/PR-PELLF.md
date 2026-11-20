@@ -21,6 +21,8 @@ $$
 F\colon\theset{z\st\abs{z}<1,\ \Im z>0}\to\theset{w\st\Re w<0,\ 0<\Im w<\pi},\qquad F(z)=\Log z,
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
+
+This is the exponential correspondence of [@Ahl73, ch. 3, §4.1, The Use of Level Curves] restricted to the half-disc: $e^z$ maps $\Re z<0$, $0<\Im z<\pi$ onto the upper half-disc, which is the statement above with $z$ and $w$ exchanged, and the logarithm there is the principal branch.
 :::
 
 ::: {.example}
