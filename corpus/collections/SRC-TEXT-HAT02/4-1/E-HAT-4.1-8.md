@@ -13,6 +13,15 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-20
+  note: >-
+    #161, the reader's report of this date: the solution's opening sentence called the argument the
+    card's own while naming the retained set that covers the exercise. It is now labelled a
+    transcription from DeMason, *M382C Full Credit HW Problems*, §4.1 Exercise 8, restated in
+    Hatcher's convention and checked against Hatcher, *Algebraic Topology*, §4.1 Exercise 8; the
+    mathematics, the homotopy and the convention are unchanged.
+- event: source-corrected
+  by: claude
   date: 2026-11-19
   note: >-
     #161 batch. The step `#kernel` displayed a family that is not a homotopy from $u$ to $vu$: at
@@ -115,7 +124,7 @@ Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longri
 :::
 
 ::: {.solution}
-The argument is the card's own, checked against the retained set that covers this exercise: Kenneth DeMason, M382C Full Credit HW Problems, §4.1 exercise 8, printed p. 89, which proves the same two exactness statements in the opposite convention for relative paths. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 8, printed p. 358, and the definition of $\pi_1(X,A,x_0)$ on printed p. 343, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
+The argument is transcribed from the retained solution set that covers this exercise: Kenneth DeMason, *M382C Full Credit HW Problems*, §4.1 Exercise 8, which proves both exactness statements in the opposite convention for relative paths; the transcription is restated here in Hatcher's convention and checked against Hatcher, *Algebraic Topology*, §4.1 Exercise 8, and against the definition of $\pi_1(X,A,x_0)$ in §4.1, where $\pi_1(X,A,x_0)$ is defined as the set of homotopy classes of paths $u:I\to X$ with $u(0)\in A$ and $u(1)=x_0$, homotopies being through paths of the same form, and the boundary map is $\partial[u]=[u(0)]$.
 
 ::: pf
 
