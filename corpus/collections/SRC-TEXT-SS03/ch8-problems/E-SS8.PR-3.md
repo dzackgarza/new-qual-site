@@ -37,6 +37,16 @@ audit:
     converse in (b) with the bar over $\varphi$. The asterisk the print sets before "3." is recorded
     in the remark. Not checked: the argument, which the event above reviews and this pass did not
     re-derive.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance sentence corrected on the reader's report. It said only that no published solution
+    set is transcribed, which does not name what was searched. The set of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (September 5,
+    2006), covers a selection of the Exercises of Chapters 1--10 and not the Problems, and no
+    published solution of this Problem was located, so the sentence now states that and its
+    consequence, that the argument is the card's own. Statement and argument are unchanged.
 ---
 
 ::: {.exercise}
@@ -99,7 +109,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 3, printed p. 2
 :::
 
 ::: {.solution}
-This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). No published solution set is transcribed: the argument is the card's own, and the Schwarz--Pick lemma in the infinitesimal form (Exercise 13 of the same chapter) is used as given.
+This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). No published solution set covers it: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the end-of-chapter Problems, and no other set was located, so the argument is the card's own; the Schwarz--Pick lemma in the infinitesimal form (Exercise 13 of the same chapter) is used as given.
 
 ::: pf
 
