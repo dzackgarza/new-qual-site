@@ -25,14 +25,14 @@ Bounded convergence is dominated convergence with $g\equiv M$, which is integrab
 
 ## Choosing a theorem
 
-1. **Monotone nonnegative sequences.** For measurable $0\leq f_1\leq f_2\leq\cdots$, the monotone convergence theorem gives $\int f_n\to\int\lim_n f_n$ in $[0,\infty]$, and for measurable $g_k\geq0$ it gives $\int\sum_k g_k = \sum_k\int g_k$.
+1. For measurable $0\leq f_1\leq f_2\leq\cdots$, the monotone convergence theorem gives $\int f_n\to\int\lim_n f_n$ in $[0,\infty]$, and for measurable $g_k\geq0$ it gives $\int\sum_k g_k = \sum_k\int g_k$.
 
-2. **Dominated sequences.** The dominated convergence theorem requires an integrable $g$ with $\abs{f_n}\leq g$ for all $n$.
+2. The dominated convergence theorem requires an integrable $g$ with $\abs{f_n}\leq g$ for all $n$.
    Common choices are a bound independent of $n$ obtained from an explicit estimate, $\sum_k\abs{h_k}$ when $f_n$ are partial sums of $\sum_k h_k$ with $\sum_k\int\abs{h_k}<\infty$, and $f_1$ when $0\leq f_{n+1}\leq f_n$ and $f_1\in L^1$.
 
-3. **Uniformly bounded sequences on a finite measure space.** The bounded convergence theorem applies.
+3. On a finite measure space, a uniformly bounded sequence satisfies the hypotheses of the bounded convergence theorem.
 
-4. **Nonnegative sequences without domination.** Fatou's lemma gives the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and the inequality is strict for each sequence $n\chi_{(0,1/n)}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
+4. Without a dominating function, Fatou's lemma gives only the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and the inequality is strict for each sequence $n\chi_{(0,1/n)}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
 
 ## Failure of the interchange
 
