@@ -55,6 +55,17 @@ audit:
     therefore a repair and not a weakening, the exponent actually delivered being
     $c(p)a^{-1/(p-1)}$; the remark below states this on the page. Not checked: the argument, which
     the 2026-11-19 event reviews and this pass did not re-derive.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance sentence corrected on the reader's report: it claimed no retained solution set covers
+    the problem, which is true of the checkout but does not name what was searched. The set of
+    R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi*
+    (September 5, 2006), covers a selection of the Exercises of Chapters 1--10 and not the Problems,
+    and no published solution of this Problem was located, so the sentence now says that and keeps
+    the claim that the argument is the card's own application of the printed hint. The mathematics
+    and the statement are unchanged.
 ---
 
 ::: {.exercise}
@@ -76,7 +87,7 @@ The print states the growth as $\abs{f(z)}\le Ae^{a\abs{z}^q}$ with the same con
 :::
 
 ::: {.solution}
-No retained solution set covers this problem, so the argument is the card's own; it is the printed hint, namely Young's inequality, applied to the Fourier inversion integral. Let $q$ satisfy $1/p+1/q=1$.
+No published solution set covers this problem: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the end-of-chapter Problems, and no other set was located; the argument is the card's own, and it is the printed hint, namely Young's inequality, applied to the Fourier inversion integral. Let $q$ satisfy $1/p+1/q=1$.
 
 ::: pf
 
