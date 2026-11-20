@@ -12,7 +12,7 @@ topics:
 
 - [[real-analysis/integration/construction|Constructing the integral]] -- simple functions, nonnegative measurable functions, and integrable functions.
 
-- [[real-analysis/integration/the-convergence-theorems|The convergence theorems]] -- statements and proofs, with Egorov's and Lusin's theorems.
+- [[real-analysis/integration/the-convergence-theorems|The convergence theorems]] -- the monotone, dominated, and bounded convergence theorems and Fatou's lemma, with Egorov's and Lusin's theorems.
 
 - [[real-analysis/integration/l1|$L^1$]] -- basic properties of integrable functions and the modes of convergence.
 
