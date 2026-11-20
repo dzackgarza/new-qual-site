@@ -1,10 +1,9 @@
 ---
+title: Integral practice
 order: 3
 ---
 
 # Integral practice
-
-A video with further integrals: [integration practice](https://www.youtube.com/watch?v=dgm4-3-Iv3s).
 
 ## Techniques
 
@@ -52,33 +51,40 @@ A video with further integrals: [integration practice](https://www.youtube.com/w
 
 In each formula, $a\neq0$, and the constant of integration is omitted.
 
-1. $\displaystyle \int x^r \dx = \frac {x^{r+1}}{r+1}$ for $r\neq-1$, and $\displaystyle \int \frac {1}{x} \dx = \ln \abs x$.
+### Powers and exponentials
 
-2. $\displaystyle \int b^{cx} \dx = \frac {b^{cx}}{c \ln b}$ for $b>0$, $b\neq1$, $c\neq0$.
+$$
+\int x^r \dx = \frac {x^{r+1}}{r+1} \quad (r\neq-1), \qquad
+\int \frac {\dx}{x} = \ln \abs x, \qquad
+\int b^{cx} \dx = \frac {b^{cx}}{c \ln b} \quad (b>0,\ b\neq1,\ c\neq0).
+$$
 
 [[P-JHXZS]]
 
-3. Trigonometric functions:
-   $$
-   \begin{aligned}
-   \int \sin (ax) \dx &= - \frac {1}{a} \cos (ax), & \int \cos (ax) \dx &= \frac {1}{a} \sin (ax), \\
-   \int \tan (ax) \dx &= - \frac {1}{a} \ln \abs{\cos (ax)}, & \int \cot (ax) \dx &= \frac {1}{a} \ln \abs{\sin (ax)}, \\
-   \int \sec (ax) \dx &= \frac {1}{a} \ln \abs{\sec (ax) + \tan (ax)}, & \int \csc (ax) \dx &= - \frac {1}{a} \ln \abs{\csc (ax) + \cot (ax)}, \\
-   \int \sec ^2 (ax) \dx &= \frac {1}{a} \tan (ax), & \int \csc ^2 (ax) \dx &= - \frac {1}{a} \cot (ax), \\
-   \int \sec (ax) \tan (ax) \dx &= \frac {1}{a} \sec (ax). & &
-   \end{aligned}
-   $$
+### Trigonometric functions
+
+$$
+\begin{aligned}
+\int \sin (ax) \dx &= - \frac {1}{a} \cos (ax), & \int \cos (ax) \dx &= \frac {1}{a} \sin (ax), \\
+\int \tan (ax) \dx &= - \frac {1}{a} \ln \abs{\cos (ax)}, & \int \cot (ax) \dx &= \frac {1}{a} \ln \abs{\sin (ax)}, \\
+\int \sec (ax) \dx &= \frac {1}{a} \ln \abs{\sec (ax) + \tan (ax)}, & \int \csc (ax) \dx &= - \frac {1}{a} \ln \abs{\csc (ax) + \cot (ax)}, \\
+\int \sec ^2 (ax) \dx &= \frac {1}{a} \tan (ax), & \int \csc ^2 (ax) \dx &= - \frac {1}{a} \cot (ax), \\
+\int \sec (ax) \tan (ax) \dx &= \frac {1}{a} \sec (ax). & &
+\end{aligned}
+$$
 
 [[P-OSVPH]]
 
 [[P-KAQ4G]]
 
-4. Inverse trigonometric functions, for $a>0$:
-   $$
-   \int \frac {\dx}{\sqrt {a^2-x^2}} = \sin ^{-1} \frac {x}{a}, \qquad
-   \int \frac {\dx}{x^2+a^2} = \frac {1}{a} \tan ^{-1} \frac {x}{a}, \qquad
-   \int \frac {\dx}{x \sqrt {x^2 - 1}} = \sec ^{-1} x \quad (x>1).
-   $$
+### Inverse trigonometric functions
+
+For $a>0$:
+$$
+\int \frac {\dx}{\sqrt {a^2-x^2}} = \sin ^{-1} \frac {x}{a}, \qquad
+\int \frac {\dx}{x^2+a^2} = \frac {1}{a} \tan ^{-1} \frac {x}{a}, \qquad
+\int \frac {\dx}{x \sqrt {x^2 - 1}} = \sec ^{-1} x \quad (x>1).
+$$
 
 [[P-73DDS]]
 
@@ -91,14 +97,15 @@ since $\sqrt {4-9x^2} = 3 \sqrt {(2/3)^2 - x^2}$.
 
 [[P-UGR7G]]
 
-5. Antiderivatives of inverse trigonometric functions:
-   $$
-   \begin{aligned}
-   \int \sin^{-1}x \dx &= x\sin^{-1}x + \sqrt {1 - x^2}, \\
-   \int \tan^{-1}x \dx &= x \tan^{-1}x - \frac {1}{2} \ln (x^2 + 1), \\
-   \int \sec ^{-1} x \dx &= x \sec ^{-1} x - \ln \left(x + \sqrt {x^2 - 1}\right) \quad (x>1).
-   \end{aligned}
-   $$
+### Antiderivatives of inverse trigonometric functions
+
+$$
+\begin{aligned}
+\int \sin^{-1}x \dx &= x\sin^{-1}x + \sqrt {1 - x^2}, \\
+\int \tan^{-1}x \dx &= x \tan^{-1}x - \frac {1}{2} \ln (x^2 + 1), \\
+\int \sec ^{-1} x \dx &= x \sec ^{-1} x - \ln \left(x + \sqrt {x^2 - 1}\right) \quad (x>1).
+\end{aligned}
+$$
 
 [[P-7NXQ7]]
 
