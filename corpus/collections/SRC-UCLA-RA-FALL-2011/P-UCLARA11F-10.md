@@ -302,13 +302,12 @@ Conjugating the identity map by $\psi$ gives the identity map.
 
 Finally,
 $$
-f
-=
-\phi^{-1}\circ F\circ\phi
-=
-\operatorname{id}_{\Omega}.
+f=\phi^{-1}\circ F\circ\phi=\operatorname{id}_{\Omega},
 $$
-
+that is,
+$$
+\boxed{f(z)=z\qquad\text{for every }z\in\Omega}.
+$$
 
 ::: pf-proof
 
@@ -318,27 +317,9 @@ Use step [](#s1-11){.pf-ref} and the definition of $F$.
 
 :::
 
-::: {.pf-step #s1-13}
-
-Thus
-$$
-\boxed{
-f(z)=z
-\qquad\text{for every }z\in\Omega}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-12){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-13){.pf-ref} is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 
