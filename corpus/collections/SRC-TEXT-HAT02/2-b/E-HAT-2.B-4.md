@@ -282,6 +282,30 @@ audit:
     $g(D^q)$ is compact, and $\operatorname{int}D^q$ is connected. Not claimed: a published proof
     of (b), none having been located.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of part (b)'s own steps, which are the five steps no published proof
+    covers. Each was checked against the printed pages its statement needs and found sound.
+    `#collar-extension`: the two halves of $F$ agree at $\norm x=\tfrac12$ because $2x=x/\norm x$
+    there, the outer value has norm $2\norm x\in[1,2]$ since $f$ of the unit sphere has norm one,
+    so radii and then directions are recovered and the pieces meet only on the overlap;
+    $F(\partial D^p)=2S^{p-1}$ and $F(D^p)\cap\partial D_2=2S^{p-1}$ follow from $\norm{F(x)}=2$
+    exactly at $\norm x=1$. `#collar-disjoint`: the inner pieces are disjoint by hypothesis, the
+    outer cones because $S^{p-1}\cap S^{q-1}=\emptyset$, and an inner point in an outer cone has
+    norm one, hence lies on $S^{q-1}=g(\partial D^q)\subset g(D^q)$, against disjointness.
+    `#collar-rescale`: division by $2$ is a homeomorphism $D_2\to D^n$ carrying $\partial D_2$ to
+    $S^{n-1}$, so it preserves the embeddings, the disjointness and the properness. `#proper-case`:
+    Exercise 3 of §2.B (printed p. 176) applies because $D\cap S^{n-1}=S^{p-1}$ holds by the
+    properness just arranged, so $[S^{q-1}]$ has nonzero image in $\widetilde H_{q-1}(D^n-D)$, while
+    the factorization $S^{q-1}=\partial E\hookrightarrow E\hookrightarrow D^n-D$ through the
+    contractible $E=g(D^q)$ kills it — the two are contradictory and no such pair exists. The
+    closing step then dispatches $p,q\ge1$ through `#collar` and `#proper-case` and $p=0$ or $q=0$
+    through `#degenerate`, which rests on Invariance of Domain, Theorem 2B.3, printed p. 172.
+    Nothing changed this pass: the repair of `#proper-case` recorded on 2026-11-16 (the class dies
+    through a contractible disk, no fundamental chain) is what the argument needs and uses.
+    Not claimed: a published proof of (b), none located.
 ---
 
 ::: {.problem}
