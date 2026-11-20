@@ -152,7 +152,7 @@ audit:
 ---
 
 ::: {.problem}
-It is a fact that any regular local ring is an integrally closed domain (Matsumura [2, Th. 36, p. 121]).
+It is a fact that any regular local ring is an integrally closed domain (Matsumura [2, Theorem 36]).
 Thus we see from Theorem I.5.3 that any variety has a nonempty open subset of normal points ([[P-AGH317NORMAL]]).
 In this exercise, show directly (without using Theorem I.5.3) that the set of nonnormal points of a variety is a proper closed subset (you will need the finiteness of integral closure: see Theorem I.3.9A).
 :::
