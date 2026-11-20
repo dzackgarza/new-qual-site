@@ -39,6 +39,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+## 2026-11-20: #172 item (5) — the one located published solution of a Stein--Shakarchi Problem is a course sheet behind a human check, named here for its text version
+
+- **Object and need:** `SRC-TEXT-SS03` and issue #172's transcription clause: where a published solution set covers a changed end-of-chapter *Problem*, the card transcribes it and checks it against the book. Eleven cards now record the search that found none they could transcribe (`E-SS2.PR-2`, `E-SS3.PR-3`, `E-SS4.PR-1`, `E-SS4.PR-4`, `E-SS7.PR-3`, `E-SS8.PR-3`, `E-SS8.PR-7`, `E-SS9.PR-4`, `E-SSA.PR-2`, `E-SSA.PR-4`, `E-SSA.PR-5`). The clause stays NOT MET while the one candidate that does answer a Problem cannot be read, so this record names that candidate exactly, and the parts of it that matter, so that someone with a browser can make the text version the repository would then transcribe.
+
+- **The candidate, exactly.** Title as the host lists it, *Solution of Assignment 8 - Complex Analysis*; course label MATH 246A, class Complex Analysis, institution as the host records it, University of California, Los Angeles; author not shown — the host credits nobody and no name appears in the text it exposes; document identifier 6834488; URL `https://www.docsity.com/en/docs/solution-of-assignment-8-complex-analysis-math-246a/6834488/`.
+
+- **Which parts of the book it answers, from the text the host exposes.** It is an assignment sheet numbering its own items. Its item 7 is Chapter 8, **Problem 7**, the Koebe-domain and Carathéodory proof of the Riemann mapping theorem, whose printed statement it reproduces, and it answers at least parts (a)--(c): for (a) it writes $f(z)=zg(z)$, applies the maximum principle to $1/g$ and concludes $\abs{f'(0)}=\abs{g(0)}>1$ together with $r_{f(K)}\ge r_K$; for the iteration it derives $\abs{F_n'(0)}=\prod_k\abs{f_k'(0)}$, monotone increasing, and bounds it by Schwarz's lemma on $D(0,r)$ for $r<r_K$. Its item 8 is Chapter 8, **Exercise 8**, the harmonic function on the first quadrant with the Figure 11 hint.
+
+- **Pages.** The sheet's own pagination is the one thing this record cannot give: the host refused automated access, so neither its page count nor its page numbers were read. The anchors to ask for instead are its item 7, headed "Problem 7", and its item 8 following it; the statements they answer are Chapter 8, Problem 7, and Chapter 8, Exercise 8.
+
+- **Observed evidence.** A direct fetch of the URL answered with a Cloudflare human check and was not retried or worked around. The quotations above are the search index's excerpts of that page: they establish that the document answers Problem 7 and Exercise 8, and they are not a readable copy, so no card transcribes them and no card claims to. Two other hosts carry the same problem as a *question* only — a question page on a homework-help site, and a course take-home final (Math 440/508, Fall 2014) that reproduces it — and neither is a solution set.
+
+- **Impact and owner:** #172's item (5) and the provenance sentences of the eleven cards above. The owner is whoever can open the document in a browser. The resolving repair is a checked-in text version — under `assets/attachments/` beside the book if it is to be kept, or `tmp/sources/` if only for the pass — after which `E-SS8.PR-7` transcribes the sheet's solution of Problem 7 and checks each step against Chapter 8, Problem 7, and any other card the sheet is found to cover does the same.
+
+- **Uncertainty.** *Searched:* the open web for sets answering the end-of-chapter Problems of this book, and the head of the Rhoades set, which answers Exercises. *Found:* one document answering Chapter 8, Problem 7 and Chapter 8, Exercise 8, unreadable as above; nothing else. *Conclusion:* no published solution set of these Problems could be read in this pass. *Confidence:* high for what the index shows, because the statement it quotes is the book's word for word; low for coverage beyond Problem 7 and Exercise 8, which the index does not show. *Gaps:* the document's pagination, author and completeness; whether a second sheet the host lists for the same course, "Homework 6 Solution", answers another Problem.
+
+- **Repair:** none applied by this record; what resolves it is the text version named above followed by a transcription commit on each card the sheet covers. Link: #172.
+
 ## 2026-11-19: `\shsheaf` on two more Hartshorne cards, and why the repair there is prose rather than a symbol
 
 **Object and need.** The whole-corpus report at the tree of `5a04ad8547` fails on four errors, all one token: `\shsheaf` in `P-AGH2121VARSHEAVES` (three times) and `P-AGH2122GLUESHEAVES` (once). Both occurrences are in `remark` prose describing the printed statement, not in the statement or the solution.
