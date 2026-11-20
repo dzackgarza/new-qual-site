@@ -40,7 +40,7 @@ Show that the product of two Hausdorff spaces is Hausdorff.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.11, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the proof is theirs. Whitman, printed p. 165, gives the same argument.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.11, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the proof is theirs. Whitman, gives the same argument.
 
 ::: pf
 

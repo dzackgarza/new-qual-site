@@ -127,7 +127,7 @@ $A$ is closed by step [](#part-a){.pf-ref} and $B$ is closed by the same step ap
 The map $h$ is the pasting of $f\restriction_{A}$ and $g\restriction_{B}$ and is continuous.
 
 ::: pf-proof
-On $A$ one has $h(x)=f(x)$, since $f(x)\le g(x)$ there; on $B$ one has $h(x)=g(x)$. So $h$ is well defined by these two formulas, the two formulas agree on $A\cap B$ by step [](#b-cover){.pf-ref}, and $A\cup B=X$. The restrictions $f\restrict_{A}$ and $g\restrict_{B}$ are continuous, the sets $A$ and $B$ are closed in $X$, and the family $\{A,B\}$ is finite, so the pasting lemma (Theorem 18.3, printed p. 108) gives that $h$ is continuous.
+On $A$ one has $h(x)=f(x)$, since $f(x)\le g(x)$ there; on $B$ one has $h(x)=g(x)$. So $h$ is well defined by these two formulas, the two formulas agree on $A\cap B$ by step [](#b-cover){.pf-ref}, and $A\cup B=X$. The restrictions $f\restrict_{A}$ and $g\restrict_{B}$ are continuous, the sets $A$ and $B$ are closed in $X$, and the family $\{A,B\}$ is finite, so the pasting lemma (Theorem 18.3) gives that $h$ is continuous.
 :::
 
 :::

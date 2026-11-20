@@ -58,7 +58,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.19, printed pp. 173--175** (`tmp/sources/munkres-solutions-whitman.pdf`); (a), (b) and (c) are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.19, PDF p. 9, gives the same three and a simpler counterexample for (d), which is the one used below; Whitman's printed p. 174 uses $\RR-\{0\}$ in the finite complement topology instead.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.19, printed pp. 173--175** (`tmp/sources/munkres-solutions-whitman.pdf`); (a), (b) and (c) are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.19, gives the same three and a simpler counterexample for (d), which is the one used below; Whitman's printed p. 174 uses $\RR-\{0\}$ in the finite complement topology instead.
 
 Throughout $A\subset X$, $\operatorname{Bd}A=\overline{A}\cap\overline{(X-A)}$, and $\operatorname{Int}A$ is the union of the open subsets of $A$: it is open, and it is the set of points having a neighbourhood contained in $A$.
 

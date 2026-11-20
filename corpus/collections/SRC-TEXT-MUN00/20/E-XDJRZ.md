@@ -64,9 +64,9 @@ is a well-defined metric on $X$.
 
 ::: {.solution}
 
-All three parts are **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.10, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`). The Cauchy--Schwarz inequality is not proved here and is not silent either: it is Exercise 9(b) of the same section (printed p. 128), which the exercise's own hint directs the reader to for part (a), and its use for the *infinite* sums of part (c) is derived from the finite case by passing to limits, which the earlier prose passed over.
+All three parts are **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.10, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`). The Cauchy--Schwarz inequality is not proved here and is not silent either: it is Exercise 9(b) of the same section, which the exercise's own hint directs the reader to for part (a), and its use for the *infinite* sums of part (c) is derived from the finite case by passing to limits, which the earlier prose passed over.
 
-The statement was checked against Munkres, *Topology* (2000), §20 Exercise 10, printed p. 128, with Exercise 9 on the same page. Throughout, $X$ is the set of sequences $\mathbf{x}=(x_{1},x_{2},\dots)$ of real numbers for which $\sum_{i\geq1}x_{i}^{2}$ converges, $\mathbf{x}_{n}\coloneqq(x_{1},\dots,x_{n})\in\RR^{n}$, $\norm{\mathbf{x}_{n}}\coloneqq\big(\sum_{i=1}^{n}x_{i}^{2}\big)^{1/2}$, and $\mathbf{x}\cdot\mathbf{y}$ is the dot product of $\RR^{n}$ for the truncated vectors. The standard facts about series used are that a series of nonnegative terms with bounded partial sums converges, and that a limit of converging sequences is the limit of their limits.
+The statement was checked against Munkres, *Topology* (2000), §20 Exercise 10, with Exercise 9 on the same page. Throughout, $X$ is the set of sequences $\mathbf{x}=(x_{1},x_{2},\dots)$ of real numbers for which $\sum_{i\geq1}x_{i}^{2}$ converges, $\mathbf{x}_{n}\coloneqq(x_{1},\dots,x_{n})\in\RR^{n}$, $\norm{\mathbf{x}_{n}}\coloneqq\big(\sum_{i=1}^{n}x_{i}^{2}\big)^{1/2}$, and $\mathbf{x}\cdot\mathbf{y}$ is the dot product of $\RR^{n}$ for the truncated vectors. The standard facts about series used are that a series of nonnegative terms with bounded partial sums converges, and that a limit of converging sequences is the limit of their limits.
 
 ::: pf
 
@@ -84,7 +84,7 @@ For $\mathbf{x},\mathbf{y}\in X$ and every $n$, $\sum_{i=1}^{n}\abs{x_{i}y_{i}}\
 
 ::: pf-proof
 
-For vectors of $\RR^{n}$ the Cauchy--Schwarz inequality reads $\abs{\mathbf{x}_{n}\cdot\mathbf{y}_{n}}\leq\norm{\mathbf{x}_{n}}\norm{\mathbf{y}_{n}}$ (Exercise 9(b), printed p. 128), so
+For vectors of $\RR^{n}$ the Cauchy--Schwarz inequality reads $\abs{\mathbf{x}_{n}\cdot\mathbf{y}_{n}}\leq\norm{\mathbf{x}_{n}}\norm{\mathbf{y}_{n}}$ (Exercise 9(b)), so
 $$
 \sum_{i=1}^{n}\abs{x_{i}y_{i}}\leq\norm{\mathbf{x}_{n}}\norm{\mathbf{y}_{n}}=\Big(\sum_{i=1}^{n}x_{i}^{2}\Big)^{1/2}\Big(\sum_{i=1}^{n}y_{i}^{2}\Big)^{1/2}\leq\Big(\sum_{i\geq1}x_{i}^{2}\Big)^{1/2}\Big(\sum_{i\geq1}y_{i}^{2}\Big)^{1/2},
 $$

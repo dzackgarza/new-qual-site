@@ -46,7 +46,7 @@ Consider the subset $A$ of $(\ZZ_{+})^{\omega}$ consisting of all infinite seque
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.9, printed pp. 113--114** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of the section in (a) with an order isomorphism onto $(\ZZ_+)^{n}$, and the minimal-index argument of (b), are his. The statement is Munkres, *Topology* (2000), §10 Exercise 9, printed p. 67.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.9, printed pp. 113--114** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of the section in (a) with an order isomorphism onto $(\ZZ_+)^{n}$, and the minimal-index argument of (b), are his. The statement is Munkres, *Topology* (2000), §10 Exercise 9.
 
 ::: pf
 

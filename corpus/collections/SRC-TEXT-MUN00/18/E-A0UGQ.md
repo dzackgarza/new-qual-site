@@ -38,12 +38,12 @@ Find a function $f: \RR \to \RR$ that is continuous at precisely one point.
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.6, printed p. 181** (`tmp/sources/munkres-solutions-whitman.pdf`); the function and the proof are his, with the two cases of the discontinuity argument separated below. The same answer is recorded by "positron0802", *Solutions to Topology, Chapter 2*, Exercise 18.6, PDF p. 11.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.6, printed p. 181** (`tmp/sources/munkres-solutions-whitman.pdf`); the function and the proof are his, with the two cases of the discontinuity argument separated below. The same answer is recorded by "positron0802", *Solutions to Topology, Chapter 2*, Exercise 18.6.
 
 ::: pf
 
 ::: {.pf-step #definition}
-Define $f:\RR\to\RR$ by $f(x)=0$ for $x\in\QQ$ and $f(x)=x$ for $x\notin\QQ$; then $f(0)=0$. Continuity at a point is the $\varepsilon$-$\delta$ condition (Exercise 18.1, printed p. 104).
+Define $f:\RR\to\RR$ by $f(x)=0$ for $x\in\QQ$ and $f(x)=x$ for $x\notin\QQ$; then $f(0)=0$. Continuity at a point is the $\varepsilon$-$\delta$ condition (Exercise 18.1).
 
 ::: pf-proof
 $0\in\QQ$, so $f(0)=0$; and for metric spaces the $\varepsilon$-$\delta$ condition at a point is equivalent to continuity there, which is the content of Exercise 18.1.

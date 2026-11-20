@@ -39,7 +39,7 @@ Justify your answer.
 
 ::: {.solution}
 
-The answer and both inclusions are those of **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.5, PDF p. 19 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); its converse inclusion is written there with a radius $\varepsilon<1$, and the forward inclusion is reorganised below as a statement about a single ball missing $\RR^{\infty}$. The statement was checked against Munkres, *Topology* (2000), §20 Exercise 5, printed p. 127, with the uniform metric on printed p. 124, the basis of balls on printed p. 119, and Theorem 17.5(a) on printed p. 96.
+The answer and both inclusions are those of **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.5, PDF p. 19 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); its converse inclusion is written there with a radius $\varepsilon<1$, and the forward inclusion is reorganised below as a statement about a single ball missing $\RR^{\infty}$. The statement was checked against Munkres, *Topology* (2000), §20 Exercise 5, with the uniform metric on printed p. 124, the basis of balls on printed p. 119, and Theorem 17.5(a) on printed p. 96.
 
 Throughout, $\RR^{\infty}$ is the set of sequences $\mathbf{y}\in\RR^{\omega}$ with $y_{i}=0$ for all but finitely many $i$,
 $$
@@ -53,7 +53,7 @@ is the uniform metric, and $Z\coloneqq\theset{\mathbf{x}\in\RR^{\omega}\mid x_{i
 For every $\mathbf{x}$ and $\varepsilon>0$ the ball $B_{\bar\rho}(\mathbf{x},\varepsilon)$ is open, and every open set containing $\mathbf{x}$ contains such a ball.
 
 ::: pf-proof
-The collection of $\varepsilon$-balls of a metric is by definition a basis for the metric topology (§20, printed p. 119); a basis element is open, and every open set containing a point contains a basis element containing that point.
+The collection of $\varepsilon$-balls of a metric is by definition a basis for the metric topology (§20); a basis element is open, and every open set containing a point contains a basis element containing that point.
 :::
 
 :::
@@ -89,7 +89,7 @@ so $\bar\rho(\mathbf{x},\mathbf{y})>\varepsilon$ and $\mathbf{y}$ is not in the 
 $\mathbf{x}\notin\overline{\RR^{\infty}}$.
 
 ::: pf-proof
-The open set $B_{\bar\rho}(\mathbf{x},\varepsilon)$ of step [](#empty-ball){.pf-ref} contains $\mathbf{x}$ and meets $\RR^{\infty}$ in no point; by Theorem 17.5(a) (printed p. 96) a point of the closure has every open set about it meeting the set, so $\mathbf{x}$ is not in the closure.
+The open set $B_{\bar\rho}(\mathbf{x},\varepsilon)$ of step [](#empty-ball){.pf-ref} contains $\mathbf{x}$ and meets $\RR^{\infty}$ in no point; by Theorem 17.5(a) a point of the closure has every open set about it meeting the set, so $\mathbf{x}$ is not in the closure.
 :::
 
 :::
@@ -125,7 +125,7 @@ Let $U$ be open with $\mathbf{x}\in U$. By step [](#balls){.pf-ref} there is $\v
 $\mathbf{x}\in\overline{\RR^{\infty}}$.
 
 ::: pf-proof
-Theorem 17.5(a) (printed p. 96) says that a point lies in the closure of a set exactly when every open set containing it meets that set, which is step [](#truncation){.pf-ref} together with the preceding step.
+Theorem 17.5(a) says that a point lies in the closure of a set exactly when every open set containing it meets that set, which is step [](#truncation){.pf-ref} together with the preceding step.
 :::
 
 :::

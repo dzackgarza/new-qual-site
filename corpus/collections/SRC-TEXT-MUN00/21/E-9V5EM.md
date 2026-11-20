@@ -66,7 +66,7 @@ Let $0<\varepsilon<1$ and let $N\ge1$. Put $x=\varepsilon^{1/N}$, which lies in 
 Equivalently, the limit function is not continuous, while every $f_{n}$ is.
 
 ::: pf-proof
-Each $f_{n}$ is continuous. The function $f$ of step [](#pointwise){.pf-ref} satisfies $f(x)=0\to0$ as $x\to1^{-}$ while $f(1)=1$, so it is discontinuous at $1$. A uniformly convergent sequence of continuous functions has continuous limit (Theorem 21.6, printed p. 132), so the convergence cannot be uniform.
+Each $f_{n}$ is continuous. The function $f$ of step [](#pointwise){.pf-ref} satisfies $f(x)=0\to0$ as $x\to1^{-}$ while $f(1)=1$, so it is discontinuous at $1$. A uniformly convergent sequence of continuous functions has continuous limit (Theorem 21.6), so the convergence cannot be uniform.
 :::
 
 :::

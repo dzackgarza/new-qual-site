@@ -77,7 +77,7 @@ For box topologies: a box basis element is $\prod_{\alpha}V_{\alpha}$ with every
 $h$ is continuous in both topologies.
 
 ::: pf-proof
-Each $f_{i}$ is continuous, being affine with $a_{i}\neq0$, so step [](#coordinatewise){.pf-ref} applies to $h=\prod_{i}f_{i}$. In the product topology the same conclusion also follows from Theorem 19.6 (printed p. 117): a map into a product is continuous when each of its coordinate functions is, and $h_{i}=f_{i}\circ\pi_{i}$ is a composite of continuous maps.
+Each $f_{i}$ is continuous, being affine with $a_{i}\neq0$, so step [](#coordinatewise){.pf-ref} applies to $h=\prod_{i}f_{i}$. In the product topology the same conclusion also follows from Theorem 19.6: a map into a product is continuous when each of its coordinate functions is, and $h_{i}=f_{i}\circ\pi_{i}$ is a composite of continuous maps.
 :::
 
 :::

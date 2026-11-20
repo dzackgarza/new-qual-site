@@ -63,7 +63,7 @@ The complement of the closed interval is a union of open rays,
 $$
 X-[a,b]=(-\infty,a)\cup(b,\infty),
 $$
-which is open in the order topology; so $[a,b]$ is closed. As $(a,b)\subset[a,b]$ and $\overline{(a,b)}$ is the smallest closed set containing $(a,b)$ (Theorem 17.5, printed p. 97), the inclusion follows.
+which is open in the order topology; so $[a,b]$ is closed. As $(a,b)\subset[a,b]$ and $\overline{(a,b)}$ is the smallest closed set containing $(a,b)$ (Theorem 17.5), the inclusion follows.
 
 :::
 

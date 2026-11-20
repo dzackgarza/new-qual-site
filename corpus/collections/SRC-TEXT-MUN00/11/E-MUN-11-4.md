@@ -42,7 +42,7 @@ Given two points $(x_0, y_0)$ and $(x_1, y_1)$ of $\RR^2$, define $(x_0, y_0) \p
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.4, printed pp. 121--125** (`tmp/sources/munkres-solutions-whitman.pdf`); the classification and the verifications below are his. The statement is Munkres, *Topology*, 2nd ed. (2000), §11 Exercise 4, printed pp. 71--72.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.4, printed pp. 121--125** (`tmp/sources/munkres-solutions-whitman.pdf`); the classification and the verifications below are his. The statement is Munkres, *Topology*, 2nd ed. (2000), §11 Exercise 4.
 
 ::: pf
 

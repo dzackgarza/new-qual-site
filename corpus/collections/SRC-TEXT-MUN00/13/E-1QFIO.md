@@ -61,7 +61,7 @@ Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and t
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4, printed pp. 143--144** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts below are his, checked step by step against Munkres §13 (definition of subbasis and the proof following it, printed pp. 82--83). Throughout, $(\mathcal{T}_\alpha)_\alpha$ is a family of topologies on a set $X$.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.4, printed pp. 143--144** (`tmp/sources/munkres-solutions-whitman.pdf`); all three parts below are his, checked step by step against Munkres §13 (definition of subbasis and the proof following it). Throughout, $(\mathcal{T}_\alpha)_\alpha$ is a family of topologies on a set $X$.
 
 ::: pf
 
@@ -128,7 +128,7 @@ A topology on $X$ is a collection of subsets containing $\varnothing$ and $X$ an
 $\mathcal{S}=\bigcup_\alpha\mathcal{T}_\alpha$ is a subbasis for a topology $\mathcal{T}_s$ on $X$: it is a collection of subsets of $X$ whose union is $X$.
 
 ::: pf-proof
-Every $\mathcal{T}_\alpha$ is a topology, so $X\in\mathcal{T}_\alpha$ for every $\alpha$; hence $X\in\mathcal{S}$ and $\bigcup\mathcal{S}=X$. By the definition of subbasis (§13, printed p. 82), $\mathcal{S}$ is then a subbasis for a topology $\mathcal{T}_s$ on $X$, and the collection $\mathcal{B}$ of all finite intersections of elements of $\mathcal{S}$ is a basis for $\mathcal{T}_s$, whose elements are the unions of subcollections of $\mathcal{B}$.
+Every $\mathcal{T}_\alpha$ is a topology, so $X\in\mathcal{T}_\alpha$ for every $\alpha$; hence $X\in\mathcal{S}$ and $\bigcup\mathcal{S}=X$. By the definition of subbasis (§13), $\mathcal{S}$ is then a subbasis for a topology $\mathcal{T}_s$ on $X$, and the collection $\mathcal{B}$ of all finite intersections of elements of $\mathcal{S}$ is a basis for $\mathcal{T}_s$, whose elements are the unions of subcollections of $\mathcal{B}$.
 :::
 
 :::

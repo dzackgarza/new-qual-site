@@ -49,7 +49,7 @@ $A$ is closed in $X$.
 
 ::: pf-proof
 
-Since $A$ is closed in the subspace $Y$, Theorem 17.2 (printed p. 95) gives a set $C$, closed in $X$, with $A=Y\cap C$. The set $Y$ is closed in $X$ by hypothesis, so $A$ is the intersection of the two closed subsets $Y$ and $C$ of $X$, and an intersection of closed sets is closed (Theorem 17.1, printed p. 95).
+Since $A$ is closed in the subspace $Y$, Theorem 17.2 gives a set $C$, closed in $X$, with $A=Y\cap C$. The set $Y$ is closed in $X$ by hypothesis, so $A$ is the intersection of the two closed subsets $Y$ and $C$ of $X$, and an intersection of closed sets is closed (Theorem 17.1).
 
 :::
 

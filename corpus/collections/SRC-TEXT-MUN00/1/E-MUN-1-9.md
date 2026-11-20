@@ -50,7 +50,7 @@ Formulate and prove DeMorgan's laws for arbitrary unions and intersections.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.9, printed pp. 9--10** (`tmp/sources/munkres-solutions-whitman.pdf`); the two identities and their chains of equivalences below are his, and the statement is Munkres, *Topology* (2000), §1 Exercise 9, printed p. 15.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.9, printed pp. 9--10** (`tmp/sources/munkres-solutions-whitman.pdf`); the two identities and their chains of equivalences below are his, and the statement is Munkres, *Topology* (2000), §1 Exercise 9.
 
 ::: pf
 

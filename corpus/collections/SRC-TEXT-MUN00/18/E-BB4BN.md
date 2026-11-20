@@ -36,7 +36,7 @@ Show that the subspace $(a, b)$ of $\RR$ is homeomorphic with $(0, 1)$ and the s
 
 ::: {.solution}
 
-The maps and the argument are those of **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5, manual p. 181, PDF p. 184 (`tmp/sources/munkres-solutions-whitman.pdf`), including his observation on the degenerate case; the statement was checked against Munkres, *Topology* (2000), §18 Exercise 5, printed p. 111. Both parts presuppose $a<b$: for $a=b$ the interval $(a,a)$ is empty and $[a,a]$ is a one-point space, so the statement as printed is understood with $a<b$, and the degenerate case is recorded in the last step below.
+The maps and the argument are those of **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 18.5, manual p. 181, PDF p. 184 (`tmp/sources/munkres-solutions-whitman.pdf`), including his observation on the degenerate case; the statement was checked against Munkres, *Topology* (2000), §18 Exercise 5. Both parts presuppose $a<b$: for $a=b$ the interval $(a,a)$ is empty and $[a,a]$ is a one-point space, so the statement as printed is understood with $a<b$, and the degenerate case is recorded in the last step below.
 
 ::: pf
 
@@ -53,7 +53,7 @@ Since $b-a>0$, if $a<x<b$ then $0<\frac{x-a}{b-a}<\frac{b-a}{b-a}=1$, so $f$ tak
 $f$ is a homeomorphism of $(a,b)$ onto $(0,1)$.
 
 ::: pf-proof
-By step [](#interval-bijection){.pf-ref} it is a bijection, with inverse $g(t)\coloneqq a+t(b-a)$. The map $x\mapsto(x-a)/(b-a)$ is linear on $\RR$, hence continuous, and $f$ is its restriction to the subspace $(a,b)$, so $f$ is continuous by Theorem 18.2(d) (printed p. 107); likewise $g$ is linear and $g=f^{-1}$ is continuous. A continuous bijection with continuous inverse is a homeomorphism.
+By step [](#interval-bijection){.pf-ref} it is a bijection, with inverse $g(t)\coloneqq a+t(b-a)$. The map $x\mapsto(x-a)/(b-a)$ is linear on $\RR$, hence continuous, and $f$ is its restriction to the subspace $(a,b)$, so $f$ is continuous by Theorem 18.2(d); likewise $g$ is linear and $g=f^{-1}$ is continuous. A continuous bijection with continuous inverse is a homeomorphism.
 :::
 
 :::

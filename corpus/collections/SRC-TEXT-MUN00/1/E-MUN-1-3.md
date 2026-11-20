@@ -63,7 +63,7 @@ audit:
 
 The answer, including all six truth values, is that of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.3, printed p. 6** (`tmp/sources/munkres-solutions-whitman.pdf`); the arithmetic is shown here and the restatement of each implication is written out before it is judged.
 
-Throughout, $P\Longrightarrow Q$ is read as the material conditional, which is false exactly when $P$ is true and $Q$ is false; this is the convention under which Munkres, *Topology* (2000), §1 (printed p. 14) asks the exercise.
+Throughout, $P\Longrightarrow Q$ is read as the material conditional, which is false exactly when $P$ is true and $Q$ is false; this is the convention under which Munkres, *Topology* (2000), §1 asks the exercise.
 
 ::: pf
 

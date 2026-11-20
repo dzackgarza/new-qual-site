@@ -98,7 +98,7 @@ Compare the four topologies that $H$ inherits as a subspace of $X$.
 ::: {.solution}
 The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.8, PDF pp. 20--22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; one step is repaired, where that text exhibits a point with $Nt^{2}+s^{2}>4\varepsilon^{2}$ and the earlier transcription of this card had written $Nt^{2}+\varepsilon^{2}$.
 
-Throughout, $X$ is the set of sequences with $\sum x_i^2$ convergent, $d_{\ell^2}(\mathbf{x},\mathbf{y})=\big(\sum_i (x_i-y_i)^2\big)^{1/2}$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ is the uniform metric of §20 (printed p. 124); $B_{\ell^2}$ and $B_{\bar\rho}$ are the balls of these two metrics, and $\RR^\infty$ is the set of eventually zero sequences.
+Throughout, $X$ is the set of sequences with $\sum x_i^2$ convergent, $d_{\ell^2}(\mathbf{x},\mathbf{y})=\big(\sum_i (x_i-y_i)^2\big)^{1/2}$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ is the uniform metric of §20; $B_{\ell^2}$ and $B_{\bar\rho}$ are the balls of these two metrics, and $\RR^\infty$ is the set of eventually zero sequences.
 
 ::: pf
 
@@ -199,7 +199,7 @@ this is a product-basic neighbourhood of $\mathbf{x}$ because all but finitely m
 $$
 \sum_n (x_n-y_n)^2<\sum_{n<N}\frac{\varepsilon^2}{2^{n+1}}+\sum_{n\ge N}\frac{1}{n^2}<\frac{\varepsilon^2}{2}+\frac{\varepsilon^2}{2}=\varepsilon^2
 $$
-because $\sum_{n<N}2^{-(n+1)}<1/2$. So $U\subset B_{\ell^2}(\mathbf{x},\varepsilon)\cap H$ and the product topology contains the $\ell^2$-topology. By step [](#a-uniform){.pf-ref} the uniform topology is contained in the $\ell^2$-topology, and by Theorem 20.4 (printed p. 124) the product topology is contained in the uniform topology; so the three are equal, while the box topology is strictly finer by step [](#c-box){.pf-ref}.
+because $\sum_{n<N}2^{-(n+1)}<1/2$. So $U\subset B_{\ell^2}(\mathbf{x},\varepsilon)\cap H$ and the product topology contains the $\ell^2$-topology. By step [](#a-uniform){.pf-ref} the uniform topology is contained in the $\ell^2$-topology, and by Theorem 20.4 the product topology is contained in the uniform topology; so the three are equal, while the box topology is strictly finer by step [](#c-box){.pf-ref}.
 :::
 
 :::

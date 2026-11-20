@@ -46,7 +46,7 @@ Suppose that $a$ has order $15$. Find all of the left cosets of $\langle a^{5} \
 
 The exercise is Gallian, *Contemporary Abstract Algebra* (7th ed.), Chapter 7 exercise 8,
 printed p. 149, and is item 8 of the retained Chapter 7 solution outline
-(`assets/attachments/Ch7Sltns.pdf`, PDF p. 1). The outline's five cosets are proved below to
+(`assets/attachments/Ch7Sltns.pdf`). The outline's five cosets are proved below to
 be distinct and exhaustive.
 
 Let $G=\langle a\rangle$ with $\cardinality{G}=15$ and $H=\langle a^{5}\rangle$.
@@ -59,7 +59,7 @@ $H=\theset{e,a^{5},a^{10}}$ has order $3$.
 
 ::: pf-proof
 
-The order of $a^{5}$ is $15/\gcd(15,5)=3$: generally $\cardinality{a^{m}}=|a|/\gcd(|a|,m)$
+The order of $a^{5}$ is $15/\gcd(15,5)=3$: generally $\cardinality{a^{m}}=\cardinality{a}/\gcd(\cardinality{a},m)$
 for a cyclic group, and here this is directly checkable, since $(a^{5})^{3}=a^{15}=e$ while
 $(a^{5})^{1}=a^{5}\ne e$ and $(a^{5})^{2}=a^{10}\ne e$, the exponents $5,10,15$ all being
 less than the order $15$ of $a$ at the first two and equal to it at the third. Hence $H$,

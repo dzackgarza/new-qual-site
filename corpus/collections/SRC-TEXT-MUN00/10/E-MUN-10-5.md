@@ -45,7 +45,7 @@ Show the well-ordering theorem implies the choice axiom.
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 10.5, printed p. 110** (`tmp/sources/munkres-solutions-whitman.pdf`); the construction is his, and the card adds the bookkeeping that the set obtained is exactly the form the choice axiom asserts for a disjoint family, together with the choice-function form for a general one.
 
-Throughout, $A$ with an order relation is well-ordered when every nonempty subset of $A$ has a smallest element (definition, printed p. 63), and then every subset of $A$ is well ordered in the restricted order (property (1) of §10, printed pp. 63--64). The well-ordering theorem is the assertion that every set admits an order relation making it well ordered (§10, printed p. 65); the exercise is on printed p. 67.
+Throughout, $A$ with an order relation is well-ordered when every nonempty subset of $A$ has a smallest element (definition, printed p. 63), and then every subset of $A$ is well ordered in the restricted order (property (1) of §10). The well-ordering theorem is the assertion that every set admits an order relation making it well ordered (§10); the exercise is on printed p. 67.
 
 ::: pf
 
@@ -73,7 +73,7 @@ Each $A\in\mathcal{A}$ is nonempty and is a subset of the well-ordered set $U$, 
 If the members of $\mathcal{A}$ are pairwise disjoint, the range of $c$ is a set consisting of exactly one element of each $A\in\mathcal{A}$.
 
 ::: pf-proof
-Let $C=c(\mathcal{A})$. Then $C$ is contained in $\bigcup_{A\in\mathcal{A}}A$, and $c(A)\in C\cap A$ because $c(A)\in A$. If $x\in C\cap A$ then $x=c(A')$ for some $A'\in\mathcal{A}$ and $x\in A$; if $A'\neq A$ then $x\in A'\cap A=\varnothing$, a contradiction, so $A'=A$ and $x=c(A)$. Hence $C\cap A=\{c(A)\}$ for every $A\in\mathcal{A}$, which is the assertion of the choice axiom (§9, printed p. 59).
+Let $C=c(\mathcal{A})$. Then $C$ is contained in $\bigcup_{A\in\mathcal{A}}A$, and $c(A)\in C\cap A$ because $c(A)\in A$. If $x\in C\cap A$ then $x=c(A')$ for some $A'\in\mathcal{A}$ and $x\in A$; if $A'\neq A$ then $x\in A'\cap A=\varnothing$, a contradiction, so $A'=A$ and $x=c(A)$. Hence $C\cap A=\{c(A)\}$ for every $A\in\mathcal{A}$, which is the assertion of the choice axiom (§9).
 
 :::
 

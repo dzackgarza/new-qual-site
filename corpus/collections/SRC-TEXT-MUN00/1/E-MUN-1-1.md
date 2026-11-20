@@ -53,7 +53,7 @@ Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1, printed pp. 1--2** (`tmp/sources/munkres-solutions-whitman.pdf`), which derives all four laws as chains of logical equivalences between membership statements; the statement is Munkres, *Topology* (2000), §1 Exercise 1, printed p. 14. The steps transcribe his argument, naming the propositional law each equivalence uses.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 1.1, printed pp. 1--2** (`tmp/sources/munkres-solutions-whitman.pdf`), which derives all four laws as chains of logical equivalences between membership statements; the statement is Munkres, *Topology* (2000), §1 Exercise 1. The steps transcribe his argument, naming the propositional law each equivalence uses.
 
 ::: pf
 

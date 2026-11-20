@@ -61,7 +61,7 @@ Fix $\mathbf{x}\in\RR^{\omega}$ and $0<\varepsilon<1$, and put $U(\mathbf{x},\va
 $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{n}\bar d(x_{n},y_{n})$ with $\bar d(a,b)=\min\{\abs{a-b},1\}$; and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{n}\abs{x_{n}-y_{n}}$ whenever $\abs{x_{n}-y_{n}}<1$ for every $n$.
 
 ::: pf-proof
-The first display is the definition of the uniform metric on $\RR^{\omega}$ (§20, printed p. 123), and the second follows because $\bar d(a,b)=\abs{a-b}$ when $\abs{a-b}<1$, the minimum then being attained by the first entry.
+The first display is the definition of the uniform metric on $\RR^{\omega}$ (§20), and the second follows because $\bar d(a,b)=\abs{a-b}$ when $\abs{a-b}<1$, the minimum then being attained by the first entry.
 :::
 
 :::
@@ -81,7 +81,7 @@ For every $n$ one has $0<\varepsilon_{n}<\varepsilon$ and $\varepsilon_{n}\to\va
 :::
 
 ::: {.pf-qed}
-The point $\mathbf{y}$ of step [](#a-point){.pf-ref} lies in $U(\mathbf{x},\varepsilon)$, and it does not lie in $B_{\bar\rho}(\mathbf{x},\varepsilon)$, whose members are the points at $\bar\rho$-distance strictly less than $\varepsilon$ from $\mathbf{x}$ (§20, printed p. 121). Hence the two sets differ.
+The point $\mathbf{y}$ of step [](#a-point){.pf-ref} lies in $U(\mathbf{x},\varepsilon)$, and it does not lie in $B_{\bar\rho}(\mathbf{x},\varepsilon)$, whose members are the points at $\bar\rho$-distance strictly less than $\varepsilon$ from $\mathbf{x}$ (§20). Hence the two sets differ.
 :::
 
 :::
@@ -103,7 +103,7 @@ Let $\delta>0$. Since $\varepsilon_{n}\to\varepsilon$, choose $N$ with $\abs{\va
 :::
 
 ::: {.pf-qed}
-The point $\mathbf{y}$ lies in $U(\mathbf{x},\varepsilon)$ by step [](#a-point){.pf-ref}, and step [](#b-ball){.pf-ref} produces, for each $\delta>0$, a point of $B_{\bar\rho}(\mathbf{y},\delta)$ outside $U(\mathbf{x},\varepsilon)$. So no ball about $\mathbf{y}$ is contained in $U(\mathbf{x},\varepsilon)$, and the balls of the uniform metric form a basis of the uniform topology (§20, printed p. 123), so $U(\mathbf{x},\varepsilon)$ is not open in it.
+The point $\mathbf{y}$ lies in $U(\mathbf{x},\varepsilon)$ by step [](#a-point){.pf-ref}, and step [](#b-ball){.pf-ref} produces, for each $\delta>0$, a point of $B_{\bar\rho}(\mathbf{y},\delta)$ outside $U(\mathbf{x},\varepsilon)$. So no ball about $\mathbf{y}$ is contained in $U(\mathbf{x},\varepsilon)$, and the balls of the uniform metric form a basis of the uniform topology (§20), so $U(\mathbf{x},\varepsilon)$ is not open in it.
 :::
 
 :::

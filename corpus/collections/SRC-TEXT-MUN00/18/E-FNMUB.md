@@ -37,12 +37,12 @@ Show that if $f$ may be extended to a continuous function $g: \overline{A} \to Y
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.13, PDF p. 13 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); Whitman, *Solutions Manual* (30 November 2019), Exercise 18.13, manual p. 189, PDF p. 192, has the same proof. The statement was checked against Munkres, *Topology* (2000), §18 Exercise 13, printed p. 112.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.13, PDF p. 13 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); Whitman, *Solutions Manual* (30 November 2019), Exercise 18.13, manual p. 189, has the same proof. The statement was checked against Munkres, *Topology* (2000), §18 Exercise 13.
 
 ::: pf
 
 ::: {.pf-step #setup}
-Let $g_{1},g_{2}\colon\overline{A}\to Y$ be continuous and suppose that $g_{1}|A=g_{2}|A=f$. Then $g_{1}$ and $g_{2}$ agree on $A$.
+Let $g_{1},g_{2}\colon\overline{A}\to Y$ be continuous and suppose that $\restrictionof{g_1}{A}=\restrictionof{g_2}{A}=f$. Then $g_{1}$ and $g_{2}$ agree on $A$.
 
 ::: pf-proof
 By hypothesis each $g_{i}$ extends $f$, so for $x\in A$ one has $g_{1}(x)=f(x)=g_{2}(x)$.
@@ -81,7 +81,7 @@ Both $g_{1}$ and $g_{2}$ are continuous, so $g_{1}^{-1}(U)$ and $g_{2}^{-1}(V)$ 
 $W\cap A\neq\emptyset$.
 
 ::: pf-proof
-Write $W=\overline{A}\cap O$ with $O$ open in $X$, possible because $W$ is open in the subspace $\overline{A}$. Then $x_{0}\in W\subset O$, and $x_{0}\in\overline{A}$; by Theorem 17.5(a) (printed p. 96) the open set $O$ containing $x_{0}$ meets $A$, so there is $y\in O\cap A$. Since $A\subset\overline{A}$, that $y$ also lies in $\overline{A}\cap O=W$.
+Write $W=\overline{A}\cap O$ with $O$ open in $X$, possible because $W$ is open in the subspace $\overline{A}$. Then $x_{0}\in W\subset O$, and $x_{0}\in\overline{A}$; by Theorem 17.5(a) the open set $O$ containing $x_{0}$ meets $A$, so there is $y\in O\cap A$. Since $A\subset\overline{A}$, that $y$ also lies in $\overline{A}\cap O=W$.
 :::
 
 :::

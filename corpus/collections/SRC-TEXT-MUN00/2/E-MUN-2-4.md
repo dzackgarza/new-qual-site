@@ -63,7 +63,7 @@ Let $f: A \to B$ and $g: B \to C$ .
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.4, printed pp. 15--16** (`tmp/sources/munkres-solutions-whitman.pdf`); his summary of (b)--(e) is his Theorem 2.4.1, reproduced as step [](#summary){.pf-ref}, and his examples for (c) and (e) are replaced by the smaller ones below. The statement is Munkres, *Topology*, 2nd ed. (2000), §2 Exercise 4, printed p. 21.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.4, printed pp. 15--16** (`tmp/sources/munkres-solutions-whitman.pdf`); his summary of (b)--(e) is his Theorem 2.4.1, reproduced as step [](#summary){.pf-ref}, and his examples for (c) and (e) are replaced by the smaller ones below. The statement is Munkres, *Topology*, 2nd ed. (2000), §2 Exercise 4.
 
 ::: pf
 

@@ -39,7 +39,7 @@ Show that the $T_1$ axiom is equivalent to the condition that for each pair of p
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, printed p. 166, gives the same two directions through Corollary 17.7.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.15, PDF p. 8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs. Whitman, gives the same two directions through Corollary 17.7.
 
 The points in the condition are distinct, since a neighbourhood of a point contains that point.
 
@@ -63,7 +63,7 @@ If each of two distinct points has a neighbourhood not containing the other, the
 
 ::: pf-proof
 
-By Theorem 17.8 (printed p. 98) it is enough to show that every one-point set is closed. Let $x\in X$. For each $y\in X-\{x\}$ the hypothesis gives a neighbourhood $U_{y}$ of $y$ with $x\notin U_{y}$, that is $U_{y}\subset X-\{x\}$. Then
+By Theorem 17.8 it is enough to show that every one-point set is closed. Let $x\in X$. For each $y\in X-\{x\}$ the hypothesis gives a neighbourhood $U_{y}$ of $y$ with $x\notin U_{y}$, that is $U_{y}\subset X-\{x\}$. Then
 $$
 X-\{x\}=\bigcup_{y\in X-\{x\}}U_{y},
 $$
