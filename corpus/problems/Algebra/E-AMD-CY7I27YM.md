@@ -17,6 +17,16 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Superseded by P-FHW1-02, which states the same theorem and is the card
+    the wiki transcludes on wiki/algebra/fields/extensions.md. Read again
+    here: the solution proves the statement by sufficiency of the tower $F\subseteq F_0\subseteq F_0(\alpha)$ and the tower law,
+    so the card adds no mathematics the survivor lacks. The card is kept
+    for the two dated events above and is listed by no collection; its
+    statement and solution are unchanged.
 ---
 
 ::: {.exercise}
