@@ -11460,3 +11460,30 @@ post that proves the statement — naming the file and the numbered statement, t
 against the book. Until one exists the card's own checked proof stands and the source obligation stays open.
 Two negative results already recorded for `4.A-4` (the 2026-11-19 record and the Math Stack Exchange sweep) are
 joined by these; no further search of the same places is warranted without a new place to search.
+
+
+## 2026-11-20 (#176/#177): the twelve Folland numbers on the real-analysis wiki read against the numbering-preserving reproduction
+
+**Text used.** Greyson C. Wesley, *Notes Following Folland's Real Analysis* (version of 30 April 2024), which prints its own number and Folland's side by side — "Theorem 1.31: 1.11: Carathéodory's Theorem", "Proposition 2.8: Extended Version of 2.6", "Theorem 6.12: 6.8" — and the C. Bishop Stony Brook chapter-5 notes the #177 record already names. The printed book is still not in the checkout; every reading below is of a statement-preserving reproduction, and no page number is written here.
+
+**Read and correct, one by one.**
+
+| repo citation | Folland's statement, as read | verdict |
+| --- | --- | --- |
+| `outer-measure`: **Theorem 1.11** | "If $\mu^*$ is an outer measure on $X$, the collection $\mathcal M$ of $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\mathcal M$ is a complete measure" | **correct**, hypothesis and both conclusions |
+| `appendix-inequalities`: **Theorem 6.8(b)** | part (b) of Wesley's Theorem 6.12 = Folland 6.8: "$\norm{\cdot}_\infty$ is a norm on $L^\infty$" | **correct** |
+| `which-inequality`: **Proposition 6.10** | Wesley's Proposition 6.16 = Folland 6.10: $0<p<q<r\le\infty$ gives $L^p\cap L^r\subset L^q$ and $\norm f_q\le\norm f_p^\lambda\norm f_r^{1-\lambda}$, $\frac1q=\frac\lambda p+\frac{1-\lambda}r$ | **correct** |
+| `which-one-applies`: **Proposition 6.24** | Wesley's Proposition 6.66 = Folland 6.24: $\int\abs f^p\,d\mu=p\int_0^\infty\alpha^{p-1}\lambda_f(\alpha)\,d\alpha$ for $0<p<\infty$ | **correct** |
+| `is-it-measurable`: **Corollary 2.2** | Wesley's Corollary 2.3 = Folland 2.2: continuous $f:X\to Y$ is $(\mathcal B_X,\mathcal B_Y)$-measurable | **correct** |
+| `is-it-measurable`: **Proposition 2.6** | Wesley's Proposition 2.8 is headed "Extended Version of 2.6" and lists $f+g$, $\lambda f$, $fg$, $\sup_k f_k$, $\limsup$ measurable | **correct** |
+| `is-it-measurable`: **Corollary 2.9** | Wesley's Corollary 2.11 = Folland 2.9: a pointwise limit of measurable functions is measurable | **correct** |
+| `l1`: **Proposition 2.29 and Theorem 2.30** | 2.29 is "$f_n\to f$ in $L^1$ implies $f_n\to f$ in measure"; 2.30's second part is "if $f_n\to f$ in measure then some subsequence converges a.e." | **correct as a chain, and now says which does what** |
+
+**Two that the reconstruction places but that no reproduction prints as a statement.**
+`is-it-measurable` cites **Proposition 2.11** for "equal a.e. to a measurable function is measurable". Wesley goes from Theorem 2.18 (= Folland 2.10, approximation by simple functions) to Proposition 2.22 (= Folland 2.12), so Folland's 2.11 is the one item between them and the content is what the gap admits; it is not read. `is-it-measurable` also cites **Exercise 2.5** for "measurable on countably many pieces implies measurable"; Wesley uses "Folland Exercise 2.5" in exactly that way when assembling a function from pieces, which is consistent but is a use, not a statement read.
+
+**Also confirmed by the #177 record, not re-read here:** Theorem 5.13 (uniform boundedness) and Exercise 1.29(b) (nonmeasurable subset of a set of positive measure), with the caveats that record states — 5.13 is lettered (a)/(b) and $Y$ need not be complete; 1.29 is an exercise, and part (b) needs $E$ Lebesgue measurable of positive measure, not positive outer measure.
+
+**No number was changed.** None read was wrong; the one change is `l1`'s sentence, which now attributes the measure step to 2.29 and the subsequence to 2.30. **Pages touched:** `wiki/real-analysis/integration/l1.md` only.
+
+**Uncertainty.** Wording comes from statement-preserving reproductions, so numbers and part-lettering are what is verified, not the printed wording; 2.11 and Exercise 2.5 rest on the reconstructed consecutive numbering and a corroborating use, and both would be settled by the printed book.
