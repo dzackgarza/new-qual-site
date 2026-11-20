@@ -89,16 +89,12 @@ Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not 
 
 ::: {.corollary}
 Let $f\geq0$ on $\RR^d$ and $\mathcal A\coloneqq\theset{(x,y)\in\RR^d\times\RR \st 0\leq y\leq f(x)}$.
-Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$.
+Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$ [@Fol99, Exercise 2.50].
+
+The direction from $f$ to $\mathcal A$ and the identity of the two integrals are Folland's Exercise 2.50; the converse is the section direction of the [[PR-6NDTF|measurable-slice theorem]].
 :::
 
 ::: {.remark}
-If $f$ is measurable then $\mathcal A=\theset{y\geq0}\cap\theset{y\leq f(x)}$ is measurable.
-Conversely, if $\mathcal A$ is measurable then [[FT-4JRQX|Tonelli's theorem]] applied to $\chi_{\mathcal A}$ gives
-$$
-m(\mathcal A)=\int_{\RR^d}m(\mathcal A_x)\dx=\int_{\RR^d}f(x)\dx,
-$$
-and it makes $x\mapsto m(\mathcal A_x)=f(x)$ measurable, which is the section direction of the [[PR-6NDTF|measurable-slice theorem]].
 The slices $\mathcal A_x=[0,f(x)]$ being intervals does not by itself make $\mathcal A$ measurable: the non-measurable $E$ above has every slice measurable.
 :::
 
