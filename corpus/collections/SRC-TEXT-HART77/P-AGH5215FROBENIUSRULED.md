@@ -641,6 +641,51 @@ audit:
     proves (c), so steps s7, s8 and s9 remain marked as this card's own. Not
     checked: the printed book, only the retained text layer; Miyanishi's book,
     which is not retained and was not read; and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A second check of this card's repaired proof, run as eight independent
+    directions, found two further defects; both are repaired here, and neither
+    moves a conclusion of the card. (i) The vanishing at a twist of degree -1 was
+    argued by twisting 0 -> O_C(-P) -> E' -> O_C -> 0, with E' = E tensor
+    O_C(-P), which computes H^0(C, E' tensor M) and not the group
+    H^0(C, E tensor M) that the projection formula produces from
+    O_X(1) tensor pi^*M; the twisting needed is that of
+    0 -> O_C -> E -> O_C(P) -> 0 by M, giving 0 -> M -> E tensor M -> M(P) -> 0,
+    with H^0(M) = 0 at degree -1 and H^0(M(P)) = 0 except for M = O_C(-P), where
+    the connecting map sends 1 to xi and xi is nonzero. That correction was made
+    by the commit e37ba753ce on this card and is not this pass's. (ii) The
+    non-cube paragraph inferred Y = 3 Sigma, for Sigma the section through the
+    graph of f_2 + bf_1, from the agreement of Y and 3 Sigma on the dense open
+    set pi^{-1}(V) and the absence of fibre components; that inference is not
+    valid, since the difference of two divisors can be supported in the fibres
+    over the complement, and the argument also needs Sigma to exist, which is
+    what it is meant to contradict. The paragraph is replaced by an argument
+    that names no curve on X: with a = b^3 and sigma = f_2 + bf_1, a rational
+    section of E tensor O_C(-P) whose image in k(C) is 1, one has
+    t = sigma^3 in S^3(E tensor O_C(-P)) tensor k(C), because the two agree over
+    the open set where b is regular; at a point p the order of sigma^3 is
+    3 ord_p(sigma), and t is regular there, so ord_p(sigma) >= 0 at every p and
+    sigma is a global section, nonzero because its image is 1, against step s6.
+    (iii) The genus defect delta is now written p_a(Y) - p_a(Y~) with Y~ the
+    normalization, which is the form Exercise IV.1.8(a) gives, and p_a(C) = 3 is
+    its value at Y~ = C^(1). (iv) The map psi now also cites Hartshorne 1971,
+    Example 3.2, where the same inclusion F^*E in S^3(E) is recorded and used
+    only for the semistability of S^3(E). What the check confirmed and did not
+    change: the equivalence between "a is a cube" and "t is the cube of a
+    rational section", which is frame independent because x^3 + y^3 = (x+y)^3;
+    the irreducibility of beta^3 + a alpha^3 over k(C) and the integrality of Y;
+    the pure inseparability and degree 3 of pi restricted to Y; the normalization
+    as the Frobenius twist of Example IV.2.4.3, isomorphic to C by Proposition
+    IV.2.5; p_a(Y) = 1-3e = 4 and delta = 1 at one point; and the falsity of the
+    printed "nonsingular", which step s9 proves with Corollary IV.2.4 and
+    Proposition IV.2.5. One arithmetic claim made against this card in the check,
+    that Y.K_X = 3e+6g and p_a = 3g-8-3e hold only at e = -1, is false and the
+    card keeps both: expanding (3C_0-3f).(-2C_0+(2g-2-e)f) with C_0^2 = -e,
+    C_0.f = 1 and f^2 = 0 gives 6e+6g-6-3e+6 = 3e+6g, and
+    p_a = 1+(Y^2+Y.K_X)/2 = 3g-8-3e. Not checked: the printed book, Xie and
+    Miyanishi, only the retained text layers, and no example was computed.
 
 ---
 
@@ -804,7 +849,7 @@ $$
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$. That $t\ne0$, that nothing else lies in the class, and the shape of $Y$ are this card's own, and no source read carries them.
 
-The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the relation $g\tensor v=1\tensor g^3v$ in the Frobenius pullback, whose $\OO_C$-module structure is twisted by $g\mapsto g^3$, makes $\psi(g\tensor v)=g\,v^3$ well defined, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
+The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the relation $g\tensor v=1\tensor g^3v$ in the Frobenius pullback, whose $\OO_C$-module structure is twisted by $g\mapsto g^3$, makes $\psi(g\tensor v)=g\,v^3$ well defined, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Hartshorne 1971, Example 3.2, records the same map as an inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ and uses it only to conclude that $S^3(\mathcal E)$ is not semistable; he draws no consequence for a curve on $X$. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
 $$
 \restrictionof{u}{U}=f_2^F+a\,f_1^F,\qquad a\in\OO_C(U),
 $$
@@ -847,7 +892,7 @@ Degree: $Y\cdot f=3$ by step [](#s7){.pf-ref}, and a fibre meets $Y$ in $\deg(\r
 
 The local shape. By step [](#s7){.pf-ref}, over an open $U\subseteq C$ the equation of $Y$ in the fibre coordinate $[\alpha:\beta]$ is the cubic form $\beta^3+a\alpha^3$ with $a\in\OO_C(U)$, and over the algebraic closure of $k(C)$ that form is $(\beta+a^{1/3}\alpha)^3$: $Y$ meets each fibre over $U$ in one point, of multiplicity $3$.
 
-The coefficient $a$ is not a cube in $k(C)$, in the frame of step [](#s7){.pf-ref}; equivalently, $t$ is not the cube of a section of $\mathcal E\tensor\OO_C(-P)$ over any nonempty open subset of $C$, since a section $v=pf_1+qf_2$ has $v^3=q^3f_2^3+p^3f_1^3$ in characteristic $3$, so that $v^3=f_2^3+a\,f_1^3$ forces $q^3=1$, which forces $q=1$ because $x^3-1=(x-1)^3$ there, and $p^3=a$. This has to be proved over $U$ directly. Step [](#s6){.pf-ref} gives the vanishing of $H^0$ of one line bundle on $C$, and a line bundle on $X$ with no nonzero global section can still have a nonzero section over an open subset; so that vanishing says nothing about sections over the open set $U$. Suppose then that $a=b^3$ with $b\in k(C)$, and let $V\subseteq U$ be a nonempty open set on which $b$ is regular. Over $V$ one has $t=(f_2+bf_1)^3$, the cross terms vanishing in characteristic $3$, and $f_2+bf_1$ is a nowhere vanishing section of $\mathcal E\tensor\OO_C(-P)$ over $V$; so over $\pi^{-1}(V)$ the divisor $Y$ is three times the graph of $p\mapsto\langle f_2(p)+b(p)f_1(p)\rangle$ in $\PP(\mathcal E_p)$; the point is read off from the cubic form $t=(f_2+bf_1)^3$ in $S^3(\mathcal E\tensor\OO_C(-P))(V)$, not from the section $u$ of the Frobenius pullback. Let $\Sigma$ be the closure of that graph in $X$. The morphism $\Sigma\to C$ is finite, birational and of degree $1$, hence an isomorphism onto $C$, since $X$ is proper over the smooth curve $C$; so $\Sigma$ is a section of $\pi$. Now $Y$ and $3\Sigma$ agree on the dense open set $\pi^{-1}(V)$. The divisor $Y$ contains no fibre, because $t(p)\ne0$ in $S^3(\mathcal E\tensor\OO_C(-P))_p$ for every $p\in C$: the section $u$ of step [](#s7){.pf-ref} is nowhere vanishing and $\psi$ carries a nonzero vector to a nonzero form. The divisor $3\Sigma$ contains no fibre either, because $\Sigma$ is a section. Hence $Y=3\Sigma$, so $\Sigma\equiv C_0-f$, which step [](#s7){.pf-ref} excludes. So $a$ is not a cube in $k(C)$.
+The coefficient $a$ is not a cube in $k(C)$, in the frame of step [](#s7){.pf-ref}; equivalently, $t$ is not the cube of a rational section of $\mathcal E\tensor\OO_C(-P)$, since a rational section $v=pf_1+qf_2$ has $v^3=q^3f_2^3+p^3f_1^3$ in characteristic $3$, so that $v^3=f_2^3+a\,f_1^3$ forces $q^3=1$, which forces $q=1$ because $x^3-1=(x-1)^3$ there, and $p^3=a$. This is a statement about the open set $U$ and not about global sections: step [](#s6){.pf-ref} vanishes $H^0$ of line bundles on $C$, and a line bundle on $X$ with no nonzero global section can still have a nonzero section over an open subset. Suppose then that $a=b^3$ with $b\in k(C)$, and put $\sigma=f_2+b\,f_1$, a rational section of $\mathcal E\tensor\OO_C(-P)$ whose image in $k(C)$ is $1$. Over the open set on which $b$ is regular one has $t=(f_2+bf_1)^3=\sigma^3$, the cross terms vanishing in characteristic $3$; two rational sections of $S^3(\mathcal E\tensor\OO_C(-P))$ that agree on a nonempty open set are equal, so $t=\sigma^3$ in $S^3(\mathcal E\tensor\OO_C(-P))\tensor k(C)$. At a point $p$ of $C$ choose a local frame $g_1,g_2$ of $\mathcal E\tensor\OO_C(-P)$ and write $\sigma=z^m u$ there, with $u$ a regular section generating the bundle at $p$ and $m=\operatorname{ord}_p\sigma\in\ZZ$; then $\sigma^3=z^{3m}u^3$ has order $3m$ at $p$. The section $t$ is regular at every $p$, being a global section of $S^3(\mathcal E\tensor\OO_C(-P))$, so $3m\ge0$ and $m\ge0$ at every $p$: $\sigma$ extends to a global section of $\mathcal E\tensor\OO_C(-P)$. Its image in $H^0(\OO_C)$ is $1\ne0$, so $H^0(C,\mathcal E\tensor\OO_C(-P))\ne0$, against step [](#s6){.pf-ref}. So $a$ is not a cube in $k(C)$.
 
 Irreducibility and pure inseparability. A reducible cubic form in two variables over a field $K$ has a linear factor, hence a $K$-rational zero, and if $[1:x]$ is one then $x^3=-a$ and $\beta^3+a\alpha^3=(\beta-x\alpha)^3$, because $(\beta-x\alpha)^3=\beta^3-x^3\alpha^3$ in characteristic $3$; conversely a cube root of $-a$ makes the form a cube. So the form is reducible exactly when $-a$ is a cube in $k(C)$, that is exactly when $a$ is a cube, since $-1=(-1)^3$. Neither holds, so $\beta^3+a\alpha^3$ is irreducible over $k(C)$, and $k(Y)=k(C)[x]/(x^3+a)$ is a field of degree $3$ over $k(C)$: $Y$ is integral, hence reduced. The class $x$ of $\beta/\alpha$ satisfies $x^3=-a\in k(C)$, so $k(Y)/k(C)$ is purely inseparable of degree $3$, and $\restrictionof{\pi}{Y}$ is finite of that degree and purely inseparable.
 
@@ -881,9 +926,9 @@ A nonsingular curve in the class can be excluded in both cases of the projection
 
 The genus defect of the member. By step [](#s8){.pf-ref} the curve $Y$ is integral and $\restrictionof{\pi}{Y}$ is purely inseparable of degree $3=p$, so $k(Y)/k(C)$ is purely inseparable of degree $3$. The curve with function field $k(C)^{1/p}$ is the Frobenius twist $C^{(1)}$ of Example IV.2.4.3, of degree $p$ over $C$, and by Proposition IV.2.5 it is isomorphic to $C$ as an abstract scheme, hence of genus $3$; step [](#s8){.pf-ref} identifies it with the normalization of $Y$. So the normalization of $Y$ is $C$, and with $p_a(Y)=4$ from the count above,
 $$
-\delta:=p_a(Y)-p_a(C)=4-3=1 .
+\delta:=p_a(Y)-p_a(\widetilde Y)=4-3=1 ,
 $$
-This is the genus defect of an integral curve, and the content lies in its two inputs, both computed here: $p_a(Y)=4$ by the arithmetic-genus form of adjunction on the surface, and $p_a(C)=3$ as the genus of the normalization, which the purely inseparable projection supplies. By Exercise IV.1.8(a) the arithmetic genus of an integral projective curve splits as $p_a(Y)=p_a(\widetilde Y)+\sum_P\delta_P$, the sum over the points of $Y$, with $\delta_P=\operatorname{length}(\widetilde{\OO}_{Y,P}/\OO_{Y,P})$ and $\delta_P=0$ at a nonsingular point; so $\delta=\sum_P\delta_P$ is the sum of the local invariants at the singular points, each at least $1$, and since the sum is $1$, the singular locus of $Y$ is exactly one point, of $\delta$-invariant $1$.
+This is the genus defect of an integral curve, and the content lies in its two inputs, both computed here: $p_a(Y)=4$ by the arithmetic-genus form of adjunction on the surface, and $p_a(\widetilde Y)=p_a(C)=3$ as the genus of the normalization $\widetilde Y=C^{(1)}$, which the purely inseparable projection supplies. By Exercise IV.1.8(a) the arithmetic genus of an integral projective curve splits as $p_a(Y)=p_a(\widetilde Y)+\sum_P\delta_P$, the sum over the points of $Y$, with $\delta_P=\operatorname{length}(\widetilde{\OO}_{Y,P}/\OO_{Y,P})$ and $\delta_P=0$ at a nonsingular point; so $\delta=\sum_P\delta_P$ is the sum of the local invariants at the singular points, each at least $1$, and since the sum is $1$, the singular locus of $Y$ is exactly one point, of $\delta$-invariant $1$.
 
 So the class holds an integral curve, singular in one point, with purely inseparable degree-$3$ projection to $C$: the curve the exercise asks for, except that it is not nonsingular, which is why the printed adjective fails.
 :::
