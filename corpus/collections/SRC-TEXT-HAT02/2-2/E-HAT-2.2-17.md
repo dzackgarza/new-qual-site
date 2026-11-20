@@ -97,7 +97,7 @@ H_{n-1}(X^{n-1})
 \longrightarrow
 H_{n-1}(X^{n-1},X^{n-2}),
 $$
-that is, $d_n=j_{n-1}\partial_n$ in the notation of p. 139, where the diagram defining the cellular complex is drawn. Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence of Theorem 2.16, as stated in the subsection on naturality (p. 127), and the second by functoriality of relative homology (p. 115). Therefore the square
+that is, $d_n=j_{n-1}\partial_n$ in the notation of the diagram defining the cellular complex in the proof of Theorem 2.35. Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence of Theorem 2.16, as stated in the subsection on naturality, and the second by functoriality of relative homology. Therefore the square
 $$
 \begin{array}{ccc}
 C_n^{CW}(X)&\xrightarrow{d_n}&C_{n-1}^{CW}(X)\\
