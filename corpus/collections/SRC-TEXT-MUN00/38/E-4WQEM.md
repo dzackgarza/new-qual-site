@@ -83,7 +83,7 @@ exist and are equal; it is extendable to the two-point compactification of Examp
 
 The verification is the card's own; no published solution of Munkres §38 Exercise 1 was located, and the sets searched are recorded in the audit trail.
 
-Write $X=(0,1)$ and let $f:X\to\RR$ be bounded and continuous. Since $X$ is first countable, $\lim_{x\to0^{+}}f$ exists with value $c$ exactly when $f(x_{n})\to c$ for every sequence $x_{n}\to0$ in $X$, and likewise at $1$ (§21, printed p. 130).
+Write $X=(0,1)$ and let $f:X\to\RR$ be bounded and continuous. Since $X$ is first countable, $\lim_{x\to0^{+}}f$ exists with value $c$ exactly when $f(x_{n})\to c$ for every sequence $x_{n}\to0$ in $X$, and likewise at $1$ (§21).
 
 ::: pf
 
@@ -96,7 +96,7 @@ Write $X=(0,1)$ and let $f:X\to\RR$ be bounded and continuous. Since $X$ is firs
 If both limits exist and equal $c$, then $f$ extends continuously with $F(\infty)=c$.
 
 ::: pf-proof
-Define $F:X^{*}\to\RR$ by $\restrictionof{F}{X}=f$ and $F(\infty)=c$; it is continuous on the open subspace $X$. For continuity at $\infty$ let $\varepsilon>0$ and choose $\delta_{0},\delta_{1}>0$ with $\abs{f(x)-c}<\varepsilon$ for $0<x<\delta_{0}$ and for $1-\delta_{1}<x<1$. The set $K=X\cap[\delta_{0},1-\delta_{1}]$ is closed and bounded in $\RR$, hence compact, so $X^{*}\setminus K$ is a neighbourhood of $\infty$ (§29, printed p. 184). Every $x\in X^{*}\setminus K$ lies in $X$ with $x<\delta_{0}$ or $x>1-\delta_{1}$, or else equals $\infty$; in each case $\abs{F(x)-c}<\varepsilon$, since $F(\infty)=c$. So $F$ is continuous at $\infty$.
+Define $F:X^{*}\to\RR$ by $\restrictionof{F}{X}=f$ and $F(\infty)=c$; it is continuous on the open subspace $X$. For continuity at $\infty$ let $\varepsilon>0$ and choose $\delta_{0},\delta_{1}>0$ with $\abs{f(x)-c}<\varepsilon$ for $0<x<\delta_{0}$ and for $1-\delta_{1}<x<1$. The set $K=X\cap[\delta_{0},1-\delta_{1}]$ is closed and bounded in $\RR$, hence compact, so $X^{*}\setminus K$ is a neighbourhood of $\infty$ (§29). Every $x\in X^{*}\setminus K$ lies in $X$ with $x<\delta_{0}$ or $x>1-\delta_{1}$, or else equals $\infty$; in each case $\abs{F(x)-c}<\varepsilon$, since $F(\infty)=c$. So $F$ is continuous at $\infty$.
 :::
 
 :::
