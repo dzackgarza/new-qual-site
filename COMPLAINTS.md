@@ -10597,3 +10597,31 @@ every step and found the QED labels in each.
 **Not changed:** `artifacts/import-manifests/authored-md.json` and the two `sources/*.jsonl` routing records still name `E-AMD-CY7I27YM` among the cards an intake run minted. They record what that run created; rewriting them would falsify the intake history.
 
 **Uncertainty:** the appearance list of `P-FHW1-02` now names `SRC-UNSORTED-ALGEBRA` twice, because the collection held the theorem in two places. Whether a repeated appearance of one card in one collection should collapse is a rendering question this record does not settle, and no check for it was run: the whole-corpus gate was not run in this turn, only the two single-card checks named in the card commit.
+
+
+## 2026-11-20 (#176): the four theorem cards and the summing-by-residues proposition, searched against every retained text by numbered statement
+
+**Object.** `T-ZO5UU` (Jordan's lemma), `T-SSNLT` (fractional residue), `FT-FZERI` (symmetric Rouché), `T-ZAEWG` (uniformization), and the proposition "Summing series by residues" on `wiki/complex-analysis/appendices/special-functions`.
+
+**Files searched, all read.** `tmp/sources/ahlfors-1966-complex-analysis.md` (Ahlfors, *Complex Analysis*, second edition), `tmp/sources/rudin-1976-principles-of-mathematical-analysis.md` (Rudin, *Principles*, third edition), and the text extraction of the retained Stein–Shakarchi, `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, together with `assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md` and `assets/attachments/Won_-_Complex_Analysis_Qual_Sheet_extracted.md`. Conway is not retained: no file under `tmp/sources` or `assets/attachments` carries his *Functions of One Complex Variable*. A scan of all 1192 Markdown texts under those two trees for the five results returned ten files for "Jordan's lemma", one for "fractional residue", none for the symmetric Rouché inequality, seven for "uniformization" and none for the summation formula; each of the ten and the seven is a research paper, an exercise sheet or a solution set, not a statement of the result.
+
+**Disposition.**
+
+| item | numbered statement found | state |
+| --- | --- | --- |
+| `T-SSNLT` fractional residue | Won, *Complex Analysis Qual Sheet*, §3 item 27 | cited |
+| `FT-FZERI` symmetric Rouché | the same sheet, §3 item 25 | cited |
+| `T-ZAEWG` uniformization | McMullen, *Advanced Complex Analysis*, §2 Theorem 2.1 | cited |
+| `T-ZO5UU` Jordan's lemma | **none** | unread |
+| summing by residues | **none** | unread |
+
+**What each book actually has, read at the statement.** Ahlfors: no Jordan's lemma — the word Jordan occurs only for Jordan arcs, curves and the curve theorem; the semicircle estimate appears once inside an example, $\pi iB$ for a single term, with no general arc; Rouché appears only as the corollary of Theorem 20, in the form $\abs{f-g}<\abs{f}$; the uniformization theorem is not stated. Stein–Shakarchi: Rouché is Theorem 4.3, again the form $\abs{f}>\abs{g}$; the semicircle appears only in worked examples of ch. 3 §2.1; no Jordan's lemma, no uniformization theorem, no general summation formula — ch. 3 §9 Problems 1–5 are Casorati–Weierstrass, Poisson, Laurent, simple connectivity and the jump formula, and Exercise 12 of §8 is the one cotangent identity, which is already a card linked on `analytic-nt`. Rudin has no complex analysis: no residue theorem, no Rouché, no Jordan's lemma.
+
+**The two unread items.**
+`T-ZO5UU` states the quantitative bound $\abs{\int_{C_R}e^{i\alpha z}g}\le\pi M_R/\alpha$. The nearest retained statements are weaker and are not it: Won §3 item 26 gives only the vanishing for an analytic $f$ with $M_R	o0$, and prints its semicircle with the parameter range of a full circle; the UCLA solution set's Jordan's-lemma exercise states $\le100/k$ for a quarter circle. Neither states the bound the card carries, and the card is not weakened to meet them.
+
+The wiki proposition states the four summation formulas for the kernels $\pi\cot\pi z$, $\pi\csc\pi z$, $\pi	an\pi z$ and $\pi\sec\pi z$. No retained text states the four; McMullen's §1 paragraph "Residues and infinite sums" works the $\pi\cot\pi z$ case to evaluate $\zeta(2k)$ but states no general formula, and the paragraph is unnumbered, so it cannot be cited as a numbered statement. The four signs on the page were checked against the kernels' residues and are correct, so the defect is the absent source, not the mathematics.
+
+**Also repaired, same day, in the same neighbourhood.** The residue-sum identity that `residues-and-contours/computing-residues` stated in page prose with a justification is now a corollary on `T-WFXQP`, the card that already owns the residue at infinity; the page transcludes that card once and states nothing further. The card version is the same identity at a circle enclosing every singularity, with the residue theorem and the residue at infinity as its two terms.
+
+**Uncertainty.** The scanned-not-read claim for the ten and seven hits: each was opened far enough to see it is not a statement of the result, not read whole. No textbook statement of the symmetric Rouché or of the general fractional residue is retained; the two cards stand on a qual-review sheet.
