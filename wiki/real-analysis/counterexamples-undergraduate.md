@@ -106,10 +106,20 @@ f(x) \coloneqq \begin{cases}
 $$
 For $\varepsilon>0$, only finitely many rationals in a bounded interval have denominator at most $1/\varepsilon$, so $f(x)\to0$ as $x\to x_0$ for every $x_0$.
 Hence $f$ is continuous exactly on $\RR\setminus\QQ$ and $D_f=\QQ$.
-$f$ is differentiable nowhere.
+
+$f$ is differentiable nowhere, that is, $D_f'=\RR$.
+At a rational $x_0$ it is not even continuous.
+At an irrational $x$ we have $f(x)=0$, and for every $N\geq1$ the pigeonhole principle gives integers $p$ and $q$ with $1\leq q\leq N$ and $\abs{x-p/q}<1/(qN)$.
+Writing $q'$ for the denominator of $p/q$ in lowest terms, $q'\mid q$, so $f(p/q)=1/q'\geq1/q$ and
+$$
+\abs{\frac{f(p/q)-f(x)}{p/q-x}} = \frac{f(p/q)}{\abs{p/q-x}} > \frac1q\cdot qN = N ,
+$$
+while along irrationals $y\to x$ the difference quotient is $0$.
+So the quotient is unbounded and has no limit, and $f$ is not differentiable at $x$.
+
 Since $D_f$ is countable, hence null, and $f$ is bounded, $f$ is Riemann integrable on every $[a,b]$ by the Lebesgue criterion, with $\int_a^b f = 0$; it is also Lebesgue integrable on $\RR$ with integral $0$.
 
-This is Thomae's function: the continuity set and the differentiability are computed above, and the Riemann integrability is the Lebesgue criterion of [@Rud76, ch. 11, Theorem 11.33(b)], since the set of discontinuities is countable and hence of measure zero.
+This is Thomae's function: the continuity and differentiability sets are computed above, and the Riemann integrability is the Lebesgue criterion of [@Rud76, ch. 11, Theorem 11.33(b)], since the set of discontinuities is countable and hence of measure zero.
 
 :::
 
