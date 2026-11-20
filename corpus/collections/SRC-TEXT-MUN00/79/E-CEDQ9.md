@@ -65,7 +65,7 @@ Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nullhomotopic.
 :::
 
 ::: {.solution}
-The argument is that of Math StackExchange answer 2813771, posted 2018-06-09 to question 2813729, and it is the argument the printed hint asks for. The same argument for $n=2$ alone is answer 783783, posted 2014-05-06 to question 783766, with nothing added. Take the universal covering $p\colon\RR\to S^1$, $p(t)=e^{2\pi it}$, of Theorem 53.1 (printed p. 337).
+The argument is that of Math StackExchange answer 2813771, posted 2018-06-09 to question 2813729, and it is the argument the printed hint asks for. The same argument for $n=2$ alone is answer 783783, posted 2014-05-06 to question 783766, with nothing added. Take the universal covering $p\colon\RR\to S^1$, $p(t)=e^{2\pi it}$, of Theorem 53.1.
 
 ::: pf
 
@@ -73,7 +73,7 @@ The argument is that of Math StackExchange answer 2813771, posted 2018-06-09 to 
 For $n>1$ and continuous $f\colon S^n\to S^1$, there is a continuous $\tilde f\colon S^n\to\RR$ with $p\circ\tilde f=f$.
 
 ::: pf-proof
-Choose $x_0\in S^n$ and put $b_0=f(x_0)$; since $p$ is onto, choose $e_0\in p^{-1}(b_0)$, so that $p(e_0)=f(x_0)$, which is the base-point condition of Lemma 79.1. The sphere $S^n$ is path connected, locally path connected and, for $n>1$, simply connected, so $f_*\pi_1(S^n,x_0)=0$; and $\RR$ is contractible, so $p_*\pi_1(\RR,e_0)=0$. Hence $f_*\pi_1(S^n,x_0)\subseteq p_*\pi_1(\RR,e_0)$, and Lemma 79.1, the general lifting lemma (printed p. 478), applied with $Y=S^n$ and $y_0=x_0$, produces the lift with $\tilde f(x_0)=e_0$.
+Choose $x_0\in S^n$ and put $b_0=f(x_0)$; since $p$ is onto, choose $e_0\in p^{-1}(b_0)$, so that $p(e_0)=f(x_0)$, which is the base-point condition of Lemma 79.1. The sphere $S^n$ is path connected, locally path connected and, for $n>1$, simply connected, so $f_*\pi_1(S^n,x_0)=0$; and $\RR$ is contractible, so $p_*\pi_1(\RR,e_0)=0$. Hence $f_*\pi_1(S^n,x_0)\subseteq p_*\pi_1(\RR,e_0)$, and Lemma 79.1, the general lifting lemma, applied with $Y=S^n$ and $y_0=x_0$, produces the lift with $\tilde f(x_0)=e_0$.
 :::
 
 :::

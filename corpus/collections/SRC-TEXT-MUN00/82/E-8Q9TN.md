@@ -149,7 +149,7 @@ Extract a finite subcover $A_1,\dots,A_n$ and choose $C_1,\dots,C_n$ as in step 
 
 ::: pf-proof
 
-$X$ is compact, so the open cover $\mathcal{A}$ has a finite subcover (definition of compactness, printed p. 164). A compact Hausdorff space is normal (Theorem 32.3, printed p. 202), so step [](#shrinking){.pf-ref} applies to $A_1,\dots,A_n$.
+$X$ is compact, so the open cover $\mathcal{A}$ has a finite subcover (definition of compactness, printed p. 164). A compact Hausdorff space is normal (Theorem 32.3), so step [](#shrinking){.pf-ref} applies to $A_1,\dots,A_n$.
 
 :::
 

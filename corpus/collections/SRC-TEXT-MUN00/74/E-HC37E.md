@@ -59,7 +59,7 @@ The proof is that of Math StackExchange answer 1527539 (https://math.stackexchan
 $\pi_{1}(T^{\#n})$ is $F/N$, where $F$ is free on $\alpha_{1},\beta_{1},\dots,\alpha_{n},\beta_{n}$ and $N$ is the least normal subgroup containing $[\alpha_{1},\beta_{1}][\alpha_{2},\beta_{2}]\cdots[\alpha_{n},\beta_{n}]$.
 
 ::: pf-proof
-This is Theorem 74.3 (printed p. 452): the $n$-fold torus is a cell complex whose two-cells are attached along the commutator product, and van Kampen computes its fundamental group as the quotient of the free group on the four $n$ generators by the normal closure of that product.
+This is Theorem 74.3: the $n$-fold torus is a cell complex whose two-cells are attached along the commutator product, and van Kampen computes its fundamental group as the quotient of the free group on the four $n$ generators by the normal closure of that product.
 :::
 
 :::

@@ -45,7 +45,7 @@ If $m > 1$, show the fundamental group of the $m$-fold projective plane is not a
 
 The argument is that of **David Yang, *MATH104: Topology, Fall 2023*, Homework 10, solution to Section 74 Exercise 7**, in `HW/hw10.tex` lines 35--70 of the GitHub repository `dyang5/MATH104-Topology` at commit `12686a815d58f29aeaadb90a30449ae85c0a613f` (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw10.tex#L35-L70; it carries out the exercise's printed hint, and each of its steps is checked below against Theorem 74.4.
 
-Let $m>1$, let $G$ be the free group on $\alpha_{1},\ldots,\alpha_{m}$, and let $H=\ZZ/2*\ZZ/2=\langle\gamma,\delta\mid\gamma^{2}=\delta^{2}=1\rangle$. By Theorem 74.4 (printed p. 453), $\pi_{1}(P^{2}\#\cdots\#P^{2})\cong G/N$, where $N$ is the least normal subgroup of $G$ containing $\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2}$.
+Let $m>1$, let $G$ be the free group on $\alpha_{1},\ldots,\alpha_{m}$, and let $H=\ZZ/2*\ZZ/2=\langle\gamma,\delta\mid\gamma^{2}=\delta^{2}=1\rangle$. By Theorem 74.4, $\pi_{1}(P^{2}\#\cdots\#P^{2})\cong G/N$, where $N$ is the least normal subgroup of $G$ containing $\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2}$.
 
 ::: pf
 
@@ -62,7 +62,7 @@ $G$ is free on the $\alpha_{i}$ and $H$ is a group, so any assignment of an elem
 $\varphi$ vanishes on $N$, hence induces a homomorphism $\psi:G/N\to H$.
 
 ::: pf-proof
-$\varphi(\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2})=\gamma^{2}\delta^{2}\cdots\delta^{2}=1$, since $\gamma^{2}=1$ and $\delta^{2}=1$ in $H$; so the normal generator of $N$ lies in $\ker\varphi$, and $\ker\varphi$, being a normal subgroup containing that element, contains $N$, the least normal subgroup containing it, by the definition of least normal subgroup. A homomorphism vanishing on a normal subgroup induces one on the quotient: the rule $\psi(gN)=\varphi(g)$ is well defined because $g_{1}N=g_{2}N$ gives $g_{1}g_{2}^{-1}\in N\subset\ker\varphi$, hence $\varphi(g_{1})=\varphi(g_{2})$, and it is a homomorphism because $\varphi$ is (§68, printed p. 411).
+$\varphi(\alpha_{1}^{2}\alpha_{2}^{2}\cdots\alpha_{m}^{2})=\gamma^{2}\delta^{2}\cdots\delta^{2}=1$, since $\gamma^{2}=1$ and $\delta^{2}=1$ in $H$; so the normal generator of $N$ lies in $\ker\varphi$, and $\ker\varphi$, being a normal subgroup containing that element, contains $N$, the least normal subgroup containing it, by the definition of least normal subgroup. A homomorphism vanishing on a normal subgroup induces one on the quotient: the rule $\psi(gN)=\varphi(g)$ is well defined because $g_{1}N=g_{2}N$ gives $g_{1}g_{2}^{-1}\in N\subset\ker\varphi$, hence $\varphi(g_{1})=\varphi(g_{2})$, and it is a homomorphism because $\varphi$ is (§68).
 :::
 
 :::

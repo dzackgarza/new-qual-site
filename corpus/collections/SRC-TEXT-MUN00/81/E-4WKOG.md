@@ -101,7 +101,7 @@ Let $x\in X$ with $x\notin\bigcup_{g\in G}g(C)$. There is an open neighbourhood 
 
 ::: {.pf-proof}
 
-$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (definition, printed p. 182); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2, printed p. 165). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
+$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (definition, printed p. 182); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
 
 :::
 
@@ -113,7 +113,7 @@ There is an open neighbourhood $V$ of $x$ disjoint from $\bigcup_{g\in G}g(C)$.
 
 ::: {.pf-proof}
 
-For $g\notin F$ one has $K\cap g(C)\subseteq(K\cup C)\cap g(K\cup C)=\varnothing$, hence $U\cap g(C)=\varnothing$. For $g\in F$ the set $g(C)$ is compact, being a continuous image of the compact space $C$ (Theorem 26.5, printed p. 166), hence closed in the Hausdorff space $X$ (Theorem 26.3, printed p. 165), and $x\notin g(C)$. So
+For $g\notin F$ one has $K\cap g(C)\subseteq(K\cup C)\cap g(K\cup C)=\varnothing$, hence $U\cap g(C)=\varnothing$. For $g\in F$ the set $g(C)$ is compact, being a continuous image of the compact space $C$ (Theorem 26.5), hence closed in the Hausdorff space $X$ (Theorem 26.3), and $x\notin g(C)$. So
 $$
 V=U\cap\bigcap_{g\in F}\left(X\setminus g(C)\right)
 $$
@@ -195,7 +195,7 @@ an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\su
 
 ::: pf-proof
 
-Let $p(x)\in X/G$. Since $X$ is locally compact at $x$, there is a compact subspace $K$ of $X$ containing an open neighbourhood $W$ of $x$. Then $p(K)$ is compact, being the continuous image of a compact space (Theorem 26.5, printed p. 166), and $p(W)$ is open by step [](#openmap){.pf-ref}, with $p(x)\in p(W)\subseteq p(K)$. So $p(x)$ has a compact neighbourhood, and $X/G$ is locally compact (definition, printed p. 182); it is Hausdorff by step [](#hausdorff){.pf-ref}.
+Let $p(x)\in X/G$. Since $X$ is locally compact at $x$, there is a compact subspace $K$ of $X$ containing an open neighbourhood $W$ of $x$. Then $p(K)$ is compact, being the continuous image of a compact space (Theorem 26.5), and $p(W)$ is open by step [](#openmap){.pf-ref}, with $p(x)\in p(W)\subseteq p(K)$. So $p(x)$ has a compact neighbourhood, and $X/G$ is locally compact (definition); it is Hausdorff by step [](#hausdorff){.pf-ref}.
 
 :::
 

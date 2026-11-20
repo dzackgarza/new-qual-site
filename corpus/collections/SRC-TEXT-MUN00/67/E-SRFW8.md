@@ -47,7 +47,7 @@ $G_2$ is isomorphic to $\ZZ/2\ZZ$.
 
 ::: pf-proof
 
-A direct sum is symmetric in its two summands, so Corollary 67.3 (printed p. 409), applied to the decomposition $\ZZ=G_2\oplus 2\ZZ$, gives $\ZZ/2\ZZ=\ZZ/G_1\cong G_2$.
+A direct sum is symmetric in its two summands, so Corollary 67.3, applied to the decomposition $\ZZ=G_2\oplus 2\ZZ$, gives $\ZZ/2\ZZ=\ZZ/G_1\cong G_2$.
 
 :::
 

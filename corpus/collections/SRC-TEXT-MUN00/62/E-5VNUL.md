@@ -77,7 +77,7 @@ Give an example to show that the conclusion of the Borsuk lemma need not hold if
 :::
 
 ::: {.solution}
-The construction is the one in the retained set, **Problem (6) of "MATH 4530 -- Topology. Practice Problems For Final solutions", Cornell MATH 4530 (Fall 2010), printed p. 2** (`tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt`), which states it for Lawson's book; the same construction is given by the Math StackExchange answer 1840946 to question 1840940 (`tmp/sources/mse-1840940-munkres-62-1.md`). Each step below is checked against Munkres' own statement of the lemma, Lemma 62.2 (printed p. 382), whose hypotheses are that $a,b\in S^2$, that $A$ is compact, that $f:A\to S^2-\{a,b\}$ is continuous and injective, and that $f$ is nullhomotopic, and whose conclusion is that $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis except injectivity.
+The construction is the one in the retained set, **Problem (6) of "MATH 4530 -- Topology. Practice Problems For Final solutions", Cornell MATH 4530 (Fall 2010), printed p. 2** (`tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt`), which states it for Lawson's book; the same construction is given by the Math StackExchange answer 1840946 to question 1840940 (`tmp/sources/mse-1840940-munkres-62-1.md`). Each step below is checked against Munkres' own statement of the lemma, Lemma 62.2, whose hypotheses are that $a,b\in S^2$, that $A$ is compact, that $f:A\to S^2-\{a,b\}$ is continuous and injective, and that $f$ is nullhomotopic, and whose conclusion is that $a$ and $b$ lie in the same component of $S^2-f(A)$. The example keeps every hypothesis except injectivity.
 
 Throughout, $S^2$ is the unit sphere in $\RR^3$ with centre the origin, $a=(0,0,1)$ is the north pole, $b=(0,0,-1)$ is the south pole, $E=\{(x,y,0) \mid x^2+y^2=1\}$ is the equator, and $A=[0,2]$.
 
@@ -87,7 +87,7 @@ Throughout, $S^2$ is the unit sphere in $\RR^3$ with centre the origin, $a=(0,0,
 $A$ is compact, $g:A\to E$ is given by the displayed formula, and $E\subset S^2-\{a,b\}$.
 
 ::: pf-proof
-$A=[0,2]$ is a closed bounded subset of $\RR$, hence compact (Theorem 27.3, printed p. 173). Both clauses of the formula for $g$ are continuous on their intervals because the trigonometric functions are, and at $t=1$ they both take the value $(\cos 2\pi,\sin 2\pi,0)=(1,0,0)$, so $g$ is well defined. Its two clauses trace $E$ and $E$ backwards respectively, so $g(A)=E$. Finally $E\subset\RR^2\times\{0\}$ while $a$ and $b$ have third coordinate $\pm1$, so $E\subset S^2-\{a,b\}$, and $g$ takes values in $S^2$.
+$A=[0,2]$ is a closed bounded subset of $\RR$, hence compact (Theorem 27.3). Both clauses of the formula for $g$ are continuous on their intervals because the trigonometric functions are, and at $t=1$ they both take the value $(\cos 2\pi,\sin 2\pi,0)=(1,0,0)$, so $g$ is well defined. Its two clauses trace $E$ and $E$ backwards respectively, so $g(A)=E$. Finally $E\subset\RR^2\times\{0\}$ while $a$ and $b$ have third coordinate $\pm1$, so $E\subset S^2-\{a,b\}$, and $g$ takes values in $S^2$.
 :::
 
 :::
@@ -96,7 +96,7 @@ $A=[0,2]$ is a closed bounded subset of $\RR$, hence compact (Theorem 27.3, prin
 $g$ is continuous.
 
 ::: pf-proof
-The closed intervals $[0,1]$ and $[1,2]$ are closed subsets of $A$ with union $A$, and the two clauses of the formula are continuous functions on them agreeing at the single common point $t=1$; by the pasting lemma (Theorem 18.3, printed p. 108) their union is a continuous map $A\to\RR^3$, which is $g$.
+The closed intervals $[0,1]$ and $[1,2]$ are closed subsets of $A$ with union $A$, and the two clauses of the formula are continuous functions on them agreeing at the single common point $t=1$; by the pasting lemma (Theorem 18.3) their union is a continuous map $A\to\RR^3$, which is $g$.
 :::
 
 :::
@@ -123,7 +123,7 @@ Define $H:A\times I\to S^2-\{a,b\}$ by $H(t,s)=g\big((1-s)t\big)$. For $(t,s)\in
 The points $a$ and $b$ lie in different components of $S^2-g(A)$.
 
 ::: pf-proof
-By step [](#data){.pf-ref} $g(A)=E$, and $S^2-E$ is the union of the open upper hemisphere $U=\{(x,y,z)\in S^2 \mid z>0\}$ and the open lower hemisphere $L=\{(x,y,z)\in S^2 \mid z<0\}$. These two sets are disjoint, open in $S^2$, and each is connected: vertical projection is a homeomorphism of $U$ onto the open unit disc $D$ of $\RR^2$, the map $x\mapsto x/\sqrt{1+\norm{x}^2}$ is a homeomorphism of $\RR^2$ onto $D$, and $\RR^2=\RR\times\RR$ is connected as a finite product of connected spaces (Theorem 23.6, printed p. 151). A separation of $S^2-E$ is thus a pair of disjoint nonempty open sets covering it, so $U$ and $L$ are its two components. Since $a=(0,0,1)\in U$ and $b=(0,0,-1)\in L$, the points $a$ and $b$ lie in different components of $S^2-g(A)$, while the remaining hypotheses of Lemma 62.2 hold by steps [](#data){.pf-ref}, [](#continuous){.pf-ref} and [](#null){.pf-ref} and injectivity fails by step [](#not-injective){.pf-ref}. So the conclusion of the Borsuk lemma does not hold for this $g$, which is the required example.
+By step [](#data){.pf-ref} $g(A)=E$, and $S^2-E$ is the union of the open upper hemisphere $U=\{(x,y,z)\in S^2 \mid z>0\}$ and the open lower hemisphere $L=\{(x,y,z)\in S^2 \mid z<0\}$. These two sets are disjoint, open in $S^2$, and each is connected: vertical projection is a homeomorphism of $U$ onto the open unit disc $D$ of $\RR^2$, the map $x\mapsto x/\sqrt{1+\norm{x}^2}$ is a homeomorphism of $\RR^2$ onto $D$, and $\RR^2=\RR\times\RR$ is connected as a finite product of connected spaces (Theorem 23.6). A separation of $S^2-E$ is thus a pair of disjoint nonempty open sets covering it, so $U$ and $L$ are its two components. Since $a=(0,0,1)\in U$ and $b=(0,0,-1)\in L$, the points $a$ and $b$ lie in different components of $S^2-g(A)$, while the remaining hypotheses of Lemma 62.2 hold by steps [](#data){.pf-ref}, [](#continuous){.pf-ref} and [](#null){.pf-ref} and injectivity fails by step [](#not-injective){.pf-ref}. So the conclusion of the Borsuk lemma does not hold for this $g$, which is the required example.
 :::
 
 :::

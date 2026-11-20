@@ -65,7 +65,7 @@ The orbit space $S^3/G$ is called the lens space $L(n, k)$.
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the collection's provenance is the textbook, and the searches for this exercise are recorded on the card and in the `COMPLAINTS.md` entry for Sections 74--85 of `SRC-TEXT-MUN00`. The argument is the card's own, checked stepwise against Munkres, *Topology* (2000), Section 81 Exercise 5, printed p. 493, and the numbered theorems cited in each step.
+No retained solution set covers this exercise: the collection's provenance is the textbook, and the searches for this exercise are recorded on the card and in the `COMPLAINTS.md` entry for Sections 74--85 of `SRC-TEXT-MUN00`. The argument is the card's own, checked stepwise against Munkres, *Topology* (2000), Section 81 Exercise 5, and the numbered theorems cited in each step.
 
 Write $S^3=\{(z_1,z_2)\in\CC^2:\abs{z_1}^2+\abs{z_2}^2=1\}$ and $\omega=e^{2\pi i/n}$, $\eta=e^{2\pi ik/n}$, so that $h(z_1,z_2)=(\omega z_1,\eta z_2)$ and $\gcd(k,n)=1$.
 
@@ -133,7 +133,7 @@ $S^3$ is a metric space. It is path connected: any point $p\in S^3$ has $\abs p=
 The action of the finite group $G$ on the Hausdorff space $S^3$ is properly discontinuous.
 
 ::: pf-proof
-$S^3$ is Hausdorff, being a metric space, and $G$ is a finite group of homeomorphisms whose action is fixed-point free by step [](#parta){.pf-ref}. Exercise 4 of §81 (printed p. 493) says exactly this: a finite fixed-point-free action of homeomorphisms on a Hausdorff space is properly discontinuous.
+$S^3$ is Hausdorff, being a metric space, and $G$ is a finite group of homeomorphisms whose action is fixed-point free by step [](#parta){.pf-ref}. Exercise 4 of §81 says exactly this: a finite fixed-point-free action of homeomorphisms on a Hausdorff space is properly discontinuous.
 :::
 
 :::
@@ -142,7 +142,7 @@ $S^3$ is Hausdorff, being a metric space, and $G$ is a finite group of homeomorp
 $\pi:S^3\to L(n,k)=S^3/G$ is a regular covering map whose group of covering transformations is $G$.
 
 ::: pf-proof
-$S^3$ is path connected and locally path connected by step [](#smooth){.pf-ref}, and the action is properly discontinuous by step [](#proper){.pf-ref}; Theorem 81.5 (printed p. 490) then gives that the quotient map $\pi$ is a covering map, that it is regular, and that $G$ is its group of covering transformations.
+$S^3$ is path connected and locally path connected by step [](#smooth){.pf-ref}, and the action is properly discontinuous by step [](#proper){.pf-ref}; Theorem 81.5 then gives that the quotient map $\pi$ is a covering map, that it is regular, and that $G$ is its group of covering transformations.
 :::
 
 :::
@@ -151,7 +151,7 @@ $S^3$ is path connected and locally path connected by step [](#smooth){.pf-ref},
 $\pi_1\big(L(n,k),u_0\big)\cong G\cong\ZZ/n$ for a basepoint $u_0=\pi(x_0)$.
 
 ::: pf-proof
-$S^3$ is simply connected by Theorem 59.3 (printed p. 369), since $3\ge2$. Corollary 81.4 (printed p. 489) then identifies the group of covering transformations of $\pi$ with the fundamental group of the base: $\mathcal C(S^3,\pi,L(n,k))\cong\pi_1(L(n,k),u_0)$. By step [](#covering){.pf-ref} that group of covering transformations is $G$, and $G\cong\ZZ/n$ by step [](#parta){.pf-ref}.
+$S^3$ is simply connected by Theorem 59.3, since $3\ge2$. Corollary 81.4 then identifies the group of covering transformations of $\pi$ with the fundamental group of the base: $\mathcal C(S^3,\pi,L(n,k))\cong\pi_1(L(n,k),u_0)$. By step [](#covering){.pf-ref} that group of covering transformations is $G$, and $G\cong\ZZ/n$ by step [](#parta){.pf-ref}.
 :::
 
 :::
@@ -169,7 +169,7 @@ A homeomorphism $\phi:L(n,k)\to L(n',k')$ carries a basepoint $u_0$ to $\phi(u_0
 $L(n,k)$ is compact.
 
 ::: pf-proof
-$S^3$ is compact, being closed and bounded in $\CC^2\cong\RR^4$, and $\pi$ is continuous and onto, so $L(n,k)=\pi(S^3)$ is compact by Theorem 26.5 (printed p. 166).
+$S^3$ is compact, being closed and bounded in $\CC^2\cong\RR^4$, and $\pi$ is continuous and onto, so $L(n,k)=\pi(S^3)$ is compact by Theorem 26.5.
 :::
 
 :::
@@ -196,8 +196,8 @@ For open $U\subseteq S^3$, the preimage $\pi^{-1}\pi(U)=\bigcup_{g\in G}g(U)$ is
 $L(n,k)$ is Hausdorff.
 
 ::: pf-proof
-Let $u\ne v$ in $L(n,k)$ and choose $x,y\in S^3$ with $\pi(x)=u$, $\pi(y)=v$. The orbits $Gx$ and $Gy$ are finite, hence closed in the Hausdorff space $S^3$ (Theorem 17.8, printed p. 99), and they are disjoint: if $gx=g'y$ then $u=\pi(x)=\pi(gx)=\pi(g'y)=\pi(y)=v$.
-$S^3$ is compact and Hausdorff, hence normal (Theorem 32.3, printed p. 202), so there are disjoint open sets $U_0\supseteq Gx$ and $V_0\supseteq Gy$. Put $U=\bigcap_{g\in G}g(U_0)$ and $V=\bigcap_{g\in G}g(V_0)$; these are open, being finite intersections of open sets, and they contain $Gx$ and $Gy$ respectively, because $g(Gx)=Gx\subseteq g(U_0)$ for every $g$. They are $G$-invariant: $g(U)=\bigcap_{g'}gg'(U_0)=\bigcap_{g''}g''(U_0)=U$ since $g'$ runs over the group. And $U\cap V=\varnothing$: a point $z$ of the intersection would give $g^{-1}(z)\in U_0$ and $g^{-1}(z)\in V_0$ for every $g$, contradicting disjointness.
+Let $u\ne v$ in $L(n,k)$ and choose $x,y\in S^3$ with $\pi(x)=u$, $\pi(y)=v$. The orbits $Gx$ and $Gy$ are finite, hence closed in the Hausdorff space $S^3$ (Theorem 17.8), and they are disjoint: if $gx=g'y$ then $u=\pi(x)=\pi(gx)=\pi(g'y)=\pi(y)=v$.
+$S^3$ is compact and Hausdorff, hence normal (Theorem 32.3), so there are disjoint open sets $U_0\supseteq Gx$ and $V_0\supseteq Gy$. Put $U=\bigcap_{g\in G}g(U_0)$ and $V=\bigcap_{g\in G}g(V_0)$; these are open, being finite intersections of open sets, and they contain $Gx$ and $Gy$ respectively, because $g(Gx)=Gx\subseteq g(U_0)$ for every $g$. They are $G$-invariant: $g(U)=\bigcap_{g'}gg'(U_0)=\bigcap_{g''}g''(U_0)=U$ since $g'$ runs over the group. And $U\cap V=\varnothing$: a point $z$ of the intersection would give $g^{-1}(z)\in U_0$ and $g^{-1}(z)\in V_0$ for every $g$, contradicting disjointness.
 Finally $\pi(U)$ and $\pi(V)$ are disjoint: if $w=\pi(a)=\pi(b)$ with $a\in U$, $b\in V$, then $b=ga$ for some $g\in G$, so $a=g^{-1}b\in g^{-1}V=V$, a contradiction. By step [](#open){.pf-ref} both are open, and they contain $u$ and $v$.
 :::
 

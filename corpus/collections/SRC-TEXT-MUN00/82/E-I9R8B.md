@@ -49,7 +49,7 @@ Show that $C(X)$ is simply connected, but is not locally simply connected at the
 The same thread answers this exercise in part. Birch Bryant's answer 2365131 (https://math.stackexchange.com/a/2365131), posted 2017-07-20 to Math Stack Exchange question 2364579 (https://math.stackexchange.com/questions/2364579), argues that the cone on the earring is not locally simply connected at the image of the limit point: a small neighbourhood of that point "deformation retracts onto a neighbourhood of $x$ in $X$", which is not simply connected. The deformation retraction is asserted and not written, and the cone there is $(X\times I)/(X\times\{0\})$, identified with the subspace of $\RR^3$ that the exercise defines nowhere in the thread; simple connectedness is quoted from the question. The card keeps its own proofs of both halves.
 
 
-Let $X=\bigcup_{n\ge1}C_n$ be the earring of Example 1 of §80 (printed p. 487), the union of the circles $C_n$ of radius $1/n$ through the origin $o$. Let $q:X\times[0,1]\to\RR^3$ be the map $q(x,t)=(1-t)x+t\,p$; its image is $C(X)$ and $q(x,1)=p$ for every $x$.
+Let $X=\bigcup_{n\ge1}C_n$ be the earring of Example 1 of §80, the union of the circles $C_n$ of radius $1/n$ through the origin $o$. Let $q:X\times[0,1]\to\RR^3$ be the map $q(x,t)=(1-t)x+t\,p$; its image is $C(X)$ and $q(x,1)=p$ for every $x$.
 
 ::: pf
 
@@ -59,7 +59,7 @@ $q$ induces a homeomorphism of the quotient space $(X\times[0,1])/(X\times\{1\})
 
 ::: pf-proof
 
-Distinct points $(x,t)$ and $(x',t')$ of $X\times[0,1)$ have distinct images under $q$: two such points lie on the line segments joining $p$ to $x$ and to $x'$, which meet only in $p$ because $p\notin\RR^2\times 0$, and on one such segment $q$ is injective. So $q$ is constant exactly on the fibres of the projection to $(X\times[0,1])/(X\times\{1\})$, and therefore induces a continuous bijection $Q$ of that quotient onto $C(X)$. That quotient is compact, being the image of the compact space $X\times[0,1]$ under a continuous map (Theorem 26.5, printed p. 166); here $X$ is compact, being closed and bounded in $\RR^2$, and a product of two compact spaces is compact (Theorem 26.7, printed p. 167). The space $C(X)$ is Hausdorff, being a subspace of $\RR^3$. A continuous bijection of a compact space onto a Hausdorff space is a homeomorphism (Theorem 26.6, printed p. 167), so $Q$ is one.
+Distinct points $(x,t)$ and $(x',t')$ of $X\times[0,1)$ have distinct images under $q$: two such points lie on the line segments joining $p$ to $x$ and to $x'$, which meet only in $p$ because $p\notin\RR^2\times 0$, and on one such segment $q$ is injective. So $q$ is constant exactly on the fibres of the projection to $(X\times[0,1])/(X\times\{1\})$, and therefore induces a continuous bijection $Q$ of that quotient onto $C(X)$. That quotient is compact, being the image of the compact space $X\times[0,1]$ under a continuous map (Theorem 26.5); here $X$ is compact, being closed and bounded in $\RR^2$, and a product of two compact spaces is compact (Theorem 26.7). The space $C(X)$ is Hausdorff, being a subspace of $\RR^3$. A continuous bijection of a compact space onto a Hausdorff space is a homeomorphism (Theorem 26.6), so $Q$ is one.
 
 :::
 
@@ -95,7 +95,7 @@ For each $n$ the loop $\gamma_n$ that traverses $C_n$ once is not nullhomotopic 
 
 ::: pf-proof
 
-The retraction $r_n:X\to C_n$ that maps $C_i$ to $o$ for $i\ne n$ and fixes $C_n$ is continuous, and $(r_n)_*:\pi_1(X,o)\to\pi_1(C_n,o)$ is injective by Lemma 55.1 (printed p. 348). The class $(r_n)_*[\gamma_n]$ generates $\pi_1(C_n,o)\cong\ZZ$ (Theorem 54.5, printed p. 345) and is therefore nonzero, so $[\gamma_n]\ne 0$ in $\pi_1(X,o)$. If $\gamma_n$ were nullhomotopic in $U$, applying the retraction $r:U\to X$ of step [](#retract){.pf-ref} would give a nullhomotopy of $\gamma_n$ in $X$, and then $(r_n)_*[\gamma_n]=(r_n\circ r)_*[\gamma_n]=0$, a contradiction.
+The retraction $r_n:X\to C_n$ that maps $C_i$ to $o$ for $i\ne n$ and fixes $C_n$ is continuous, and $(r_n)_*:\pi_1(X,o)\to\pi_1(C_n,o)$ is injective by Lemma 55.1. The class $(r_n)_*[\gamma_n]$ generates $\pi_1(C_n,o)\cong\ZZ$ (Theorem 54.5) and is therefore nonzero, so $[\gamma_n]\ne 0$ in $\pi_1(X,o)$. If $\gamma_n$ were nullhomotopic in $U$, applying the retraction $r:U\to X$ of step [](#retract){.pf-ref} would give a nullhomotopy of $\gamma_n$ in $X$, and then $(r_n)_*[\gamma_n]=(r_n\circ r)_*[\gamma_n]=0$, a contradiction.
 
 :::
 

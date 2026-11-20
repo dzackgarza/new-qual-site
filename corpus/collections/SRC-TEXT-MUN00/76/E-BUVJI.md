@@ -63,7 +63,7 @@ Which (if either) argument is correct?
 
 ::: {.solution}
 
-The argument is the card's own; no published solution of Munkres §76 Exercise 2 was located, and the sets searched are recorded in the audit trail. The elementary operations are those of §76 (printed p. 460): permuting the edge labels cyclically, flipping a scheme, pasting two polygons along a pair of edges whose label occurs exactly twice in the total scheme, and cancelling an adjacent pair $aa^{-1}$ whose label occurs nowhere else.
+The argument is the card's own; no published solution of Munkres §76 Exercise 2 was located, and the sets searched are recorded in the audit trail. The elementary operations are those of §76: permuting the edge labels cyclically, flipping a scheme, pasting two polygons along a pair of edges whose label occurs exactly twice in the total scheme, and cancelling an adjacent pair $aa^{-1}$ whose label occurs nowhere else.
 
 Let $X$ be obtained from two polygonal regions with schemes $w_{1}=abcc$ and $w_{2}=c^{-1}c^{-1}ab$.
 

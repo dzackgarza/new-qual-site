@@ -43,7 +43,7 @@ It is called an isometric imbedding of $X$ in $Y$.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three steps are theirs. Dan Whitman, *Solutions Manual*, printed p. 235, runs the same three.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three steps are theirs. Dan Whitman, *Solutions Manual*, runs the same three.
 
 Let $f:X\to Y$ satisfy $d_{Y}\big(f(x_{1}),f(x_{2})\big)=d_{X}(x_{1},x_{2})$ for all $x_{1},x_{2}\in X$, and let $f':X\to f(X)$ be $f$ with its range restricted.
 
@@ -62,7 +62,7 @@ If $f(x)=f(y)$ then $d_{X}(x,y)=d_{Y}\big(f(x),f(y)\big)=0$, and a metric vanish
 $f$, and hence $f'$, is continuous.
 
 ::: pf-proof
-Let $x\in X$ and let $V$ be a neighbourhood of $f(x)$ in $Y$; choose $r>0$ with $B_{d_{Y}}\big(f(x),r\big)\subseteq V$. Then $f^{-1}\big(B_{d_{Y}}(f(x),r)\big)=\theset{y\in X\mid d_{Y}(f(y),f(x))<r}=\theset{y\mid d_{X}(y,x)<r}=B_{d_{X}}(x,r)$, a neighbourhood of $x$ carried into $V$; so $f$ is continuous at $x$. The restriction of the range of a continuous map to a subspace containing its image is continuous (Theorem 18.2(e), printed p. 107), so $f'$ is continuous.
+Let $x\in X$ and let $V$ be a neighbourhood of $f(x)$ in $Y$; choose $r>0$ with $B_{d_{Y}}\big(f(x),r\big)\subseteq V$. Then $f^{-1}\big(B_{d_{Y}}(f(x),r)\big)=\theset{y\in X\mid d_{Y}(f(y),f(x))<r}=\theset{y\mid d_{X}(y,x)<r}=B_{d_{X}}(x,r)$, a neighbourhood of $x$ carried into $V$; so $f$ is continuous at $x$. The restriction of the range of a continuous map to a subspace containing its image is continuous (Theorem 18.2(e)), so $f'$ is continuous.
 :::
 
 :::

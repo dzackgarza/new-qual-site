@@ -86,7 +86,7 @@ $$
 :::
 
 ::: {.solution}
-No retained solution set is used for the recursion itself: the reformulation below is the card's own, built so that Munkres's principle of recursive definition (Theorem 8.4) applies to a one-term recursion on pairs. Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.9, printed pp. 92--93, supplies the same reformulation for (a), the repaired construction for (b) and the contradiction for (c); the statement is Munkres, *Topology* (2000), §7 Exercise 9, printed p. 52.
+No retained solution set is used for the recursion itself: the reformulation below is the card's own, built so that Munkres's principle of recursive definition (Theorem 8.4) applies to a one-term recursion on pairs. Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.9, supplies the same reformulation for (a), the repaired construction for (b) and the contradiction for (c); the statement is Munkres, *Topology* (2000), §7 Exercise 9.
 
 ::: pf
 

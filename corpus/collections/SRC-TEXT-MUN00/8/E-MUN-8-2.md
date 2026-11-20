@@ -51,7 +51,7 @@ Use Theorem 8.4 to define this product rigorously.
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.2, printed p. 94** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice of $\rho$ below is his.
 
-Theorem 8.4 (printed p. 54) reads: given a set $A$, an element $a_{0}\in A$, and a function $\rho$ assigning to each function from a nonempty section of $\ZZ_{+}$ into $A$ an element of $A$, there is a unique $h:\ZZ_{+}\to A$ with $h(1)=a_{0}$ and $h(i)=\rho\bigl(\restrictionof{h}{\{1,\dots,i-1\}}\bigr)$ for $i>1$. The application is with $A=\RR$.
+Theorem 8.4 reads: given a set $A$, an element $a_{0}\in A$, and a function $\rho$ assigning to each function from a nonempty section of $\ZZ_{+}$ into $A$ an element of $A$, there is a unique $h:\ZZ_{+}\to A$ with $h(1)=a_{0}$ and $h(i)=\rho\bigl(\restrictionof{h}{\{1,\dots,i-1\}}\bigr)$ for $i>1$. The application is with $A=\RR$.
 
 ::: pf
 

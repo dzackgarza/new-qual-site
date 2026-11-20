@@ -45,7 +45,7 @@ If $f$ is homotopic to a map that is extendable to a continuous map $h: X \to Y$
 
 ::: {.solution}
 
-Let $H:A\times I\to Y$ be a homotopy from $f$ to $h|_A$: $H(a,0)=f(a)$ and $H(a,1)=h(a)$.
+Let $H:A\times I\to Y$ be a homotopy from $f$ to $\restrictionof{h}{A}$: $H(a,0)=f(a)$ and $H(a,1)=h(a)$.
 
 ::: pf
 
@@ -67,7 +67,7 @@ $F$ extends to a continuous $\widetilde F:X\times I\to\RR^n$.
 
 ::: pf-proof
 
-$X$ is homeomorphic to the closed subspace $X\times\theset{0}$ of the normal space $X\times I$, so $X$ is normal; $T$ is closed in $X\times I$. By the Tietze extension theorem, Theorem 35.1 (printed p. 219), applied to the $n$ coordinate functions, each a continuous real-valued function on $T$, there is a continuous extension $\widetilde F$ to $X\times I$.
+$X$ is homeomorphic to the closed subspace $X\times\theset{0}$ of the normal space $X\times I$, so $X$ is normal; $T$ is closed in $X\times I$. By the Tietze extension theorem, Theorem 35.1, applied to the $n$ coordinate functions, each a continuous real-valued function on $T$, there is a continuous extension $\widetilde F$ to $X\times I$.
 
 :::
 
@@ -79,7 +79,7 @@ $U=\widetilde F^{-1}(Y)$ is an open subset of $X\times I$ containing $T$, and th
 
 ::: pf-proof
 
-$U$ is open since $Y$ is open and $\widetilde F$ is continuous, and $T\subseteq U$ since $\widetilde F|_T=F$ takes values in $Y$. As $A\times I\subseteq U$ and $I$ is compact, the tube lemma (Lemma 26.8, printed p. 167) gives an open neighbourhood $W$ of $A$ in $X$ with $W\times I\subseteq U$. The sets $A$ and $X\setminus W$ are disjoint closed sets in the normal space $X$, so Urysohn's lemma (Theorem 33.1, printed p. 207) gives a continuous $\mu:X\to[0,1]$ equal to $0$ on $A$ and to $1$ on $X\setminus W$. If $x\in W$ then all $(x,t)\in U$; if $x\notin W$ then $\mu(x)=1$ and $(x,1)\in X\times\theset{1}\subseteq U$. Hence $(x,t)\in U$ whenever $t\ge\mu(x)$.
+$U$ is open since $Y$ is open and $\widetilde F$ is continuous, and $T\subseteq U$ since $\restrictionof{\widetilde F}{T}=F$ takes values in $Y$. As $A\times I\subseteq U$ and $I$ is compact, the tube lemma (Lemma 26.8) gives an open neighbourhood $W$ of $A$ in $X$ with $W\times I\subseteq U$. The sets $A$ and $X\setminus W$ are disjoint closed sets in the normal space $X$, so Urysohn's lemma (Theorem 33.1) gives a continuous $\mu:X\to[0,1]$ equal to $0$ on $A$ and to $1$ on $X\setminus W$. If $x\in W$ then all $(x,t)\in U$; if $x\notin W$ then $\mu(x)=1$ and $(x,1)\in X\times\theset{1}\subseteq U$. Hence $(x,t)\in U$ whenever $t\ge\mu(x)$.
 
 :::
 

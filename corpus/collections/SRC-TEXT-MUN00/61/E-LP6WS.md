@@ -60,7 +60,7 @@ Show that if $C$ is a subspace of $S^2$ homeomorphic to the closed topologist's 
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It checks the two hypotheses of the general separation theorem, Munkres §61 Theorem 61.4, printed p. 380.
+The argument is the card's own; no retained solution set is cited on the card. It checks the two hypotheses of the general separation theorem, Munkres §61 Theorem 61.4.
 
 Let $A_{1}$ be the topologist's sine curve, the union of the graph $\{(x,\sin(1/x))\mid 0<x\le1\}$ with the segment $\{0\}\times[-1,1]$, and let $A_{2}$ be the broken line from $(0,-1)$ to $(0,-2)$ to $(1,-2)$ to $(1,\sin1)$; then $A=A_{1}\cup A_{2}$.
 
@@ -88,7 +88,7 @@ $A_{2}$ is the union of three segments: from $(0,-1)$ to $(0,-2)$, from $(0,-2)$
 If $C\subset S^{2}$ is homeomorphic to $A$, then $C$ separates $S^{2}$.
 
 ::: pf-proof
-Let $h:A\to C$ be a homeomorphism. Then $h(A_{1})$ and $h(A_{2})$ are connected, being continuous images of connected sets, and compact, being continuous images of the compact sets of step [](#clopen){.pf-ref}, hence closed in the Hausdorff space $S^{2}$ (Theorem 26.3). Their intersection is the two points $h(0,-1)$ and $h(1,\sin1)$ and their union is $C$. Two closed connected subsets of $S^{2}$ whose intersection consists of exactly two points have a union that separates $S^{2}$ (Theorem 61.4, printed p. 380), so $C$ separates $S^{2}$.
+Let $h:A\to C$ be a homeomorphism. Then $h(A_{1})$ and $h(A_{2})$ are connected, being continuous images of connected sets, and compact, being continuous images of the compact sets of step [](#clopen){.pf-ref}, hence closed in the Hausdorff space $S^{2}$ (Theorem 26.3). Their intersection is the two points $h(0,-1)$ and $h(1,\sin1)$ and their union is $C$. Two closed connected subsets of $S^{2}$ whose intersection consists of exactly two points have a union that separates $S^{2}$ (Theorem 61.4), so $C$ separates $S^{2}$.
 :::
 
 :::

@@ -98,8 +98,8 @@ Show that $\restrictionof{p}{E'}$ is not a covering map.
 :::
 
 ::: {.solution}
-The exercise is §60 Exercise 3, printed p. 375, about the covering map
-$p:E\to X$ constructed in the proof of Lemma 60.5 (printed pp. 373--374): $X$ is
+The exercise is §60 Exercise 3, about the covering map
+$p:E\to X$ constructed in the proof of Lemma 60.5: $X$ is
 the union of two circles $A$ and $B$ meeting in the single point $x_0$, and $E$ is
 the union of the $x$-axis, the $y$-axis, and a small circle tangent to each
 nonzero integer point of either axis, with $p$ wrapping the $x$-axis around $A$,

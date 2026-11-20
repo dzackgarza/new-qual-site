@@ -60,7 +60,7 @@ There is an isomorphism of $\pi_1(T, b_0 \times b_0)$ with $\ZZ \times \ZZ$ indu
 
 The covering of part (a), and the computation of each of the three images in $\pi_{1}(T)$, are the card's own. Paul Frost's answer 4590100, cited at the foot of this solution, states the correspondence for $e_{n}$ and $e_{\infty}$ without computing the induced maps, and gives no covering for part (a).
 
-Write $q:\RR\to S^{1}$ for $q(t)=e^{2\pi i t}$ and $T=S^{1}\times S^{1}$, and identify $\pi_{1}(T,b_{0}\times b_{0})$ with $\ZZ\oplus\ZZ$ through the two projections, so that the loop $t\mapsto(q(t),b_{0})$ represents $(1,0)$ and $t\mapsto(b_{0},q(t))$ represents $(0,1)$; the exercise states this isomorphism. For a covering $p:(E,e_{0})\to(T,b_{0})$ the corresponding subgroup is $p_{*}\big(\pi_{1}(E,e_{0})\big)$ (Theorem 54.5, printed p. 345, and §80).
+Write $q:\RR\to S^{1}$ for $q(t)=e^{2\pi i t}$ and $T=S^{1}\times S^{1}$, and identify $\pi_{1}(T,b_{0}\times b_{0})$ with $\ZZ\oplus\ZZ$ through the two projections, so that the loop $t\mapsto(q(t),b_{0})$ represents $(1,0)$ and $t\mapsto(b_{0},q(t))$ represents $(0,1)$; the exercise states this isomorphism. For a covering $p:(E,e_{0})\to(T,b_{0})$ the corresponding subgroup is $p_{*}\big(\pi_{1}(E,e_{0})\big)$ (Theorem 54.5, and §80).
 
 ::: pf
 
@@ -88,7 +88,7 @@ $\pi_{1}(S^{1}\times\RR)\cong\pi_{1}(S^{1})\oplus\pi_{1}(\RR)\cong\ZZ\oplus0$ (T
 :::
 
 ::: {.pf-qed}
-The total space $S^{1}\times\RR$ is connected, so by the classification of coverings the covering $p_{m}$ corresponds to a subgroup of $\ZZ\oplus\ZZ$, namely $p_{m*}(\pi_{1})$ (Theorem 54.5, printed p. 345), which step [](#a-image){.pf-ref} identifies as $\langle(m,0)\rangle$. That is the required covering.
+The total space $S^{1}\times\RR$ is connected, so by the classification of coverings the covering $p_{m}$ corresponds to a subgroup of $\ZZ\oplus\ZZ$, namely $p_{m*}(\pi_{1})$ (Theorem 54.5), which step [](#a-image){.pf-ref} identifies as $\langle(m,0)\rangle$. That is the required covering.
 :::
 
 :::

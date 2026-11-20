@@ -50,7 +50,7 @@ Let $C_1$ and $C_2$ be disjoint simple closed curves in $S^2$.
 
 ::: {.solution}
 
-By Theorem 63.4 (the Jordan curve theorem, printed p. 390) the complement $S^2-C_i$ has exactly two components, and each has $C_i$ as its boundary, that is $C_i=\overline{W}-W$ for each of the two. Write $S^2-C_1=W_1\sqcup W_1'$ and $S^2-C_2=W_2\sqcup W_2'$, with $W_1$ the component of $S^2-C_1$ disjoint from $C_2$ and $W_2$ the component of $S^2-C_2$ disjoint from $C_1$. Each of the four sets is open in $S^2$, being a component of an open set in the locally connected space $S^2$ (as in the proof of Lemma 61.1, printed p. 377).
+By Theorem 63.4 (the Jordan curve theorem) the complement $S^2-C_i$ has exactly two components, and each has $C_i$ as its boundary, that is $C_i=\overline{W}-W$ for each of the two. Write $S^2-C_1=W_1\sqcup W_1'$ and $S^2-C_2=W_2\sqcup W_2'$, with $W_1$ the component of $S^2-C_1$ disjoint from $C_2$ and $W_2$ the component of $S^2-C_2$ disjoint from $C_1$. Each of the four sets is open in $S^2$, being a component of an open set in the locally connected space $S^2$ (as in the proof of Lemma 61.1).
 
 ::: pf
 
@@ -72,7 +72,7 @@ $\overline{W}_1\cup\overline{W}_2$ does not separate $S^2$.
 
 ::: pf-proof
 
-Apply Theorem 63.3 (printed p. 390) with $D_1=\overline{W}_1$ and $D_2=\overline{W}_2$. The sets $D_i$ are closed. Neither separates $S^2$, by step 1. And $D_1\cap D_2=\emptyset$ by step 1, so $S^2-D_1\cap D_2=S^2$, which is simply connected by Theorem 59.3 (printed p. 369). The theorem then gives that $D_1\cup D_2$ does not separate $S^2$.
+Apply Theorem 63.3 with $D_1=\overline{W}_1$ and $D_2=\overline{W}_2$. The sets $D_i$ are closed. Neither separates $S^2$, by step 1. And $D_1\cap D_2=\emptyset$ by step 1, so $S^2-D_1\cap D_2=S^2$, which is simply connected by Theorem 59.3. The theorem then gives that $D_1\cup D_2$ does not separate $S^2$.
 
 :::
 

@@ -52,7 +52,7 @@ Let $X$ be obtained by pasting the edges of a polygonal region in pairs, let $T_
 $X$ is homeomorphic to exactly one of $S^{2}$, $T_{g}$ for $g\ge1$ and $P_{r}$ for $r\ge1$.
 
 ::: pf-proof
-Every quotient of a polygonal region by a pairwise pasting is a compact surface, and the classification of compact surfaces (Theorem 77.5) says that such a surface is homeomorphic to exactly one member of that list. Uniqueness is decided by two invariants: orientability, and the Euler characteristic, which for the standard forms is $\chi(T_{g})=2-2g$ and $\chi(P_{r})=2-r$ (§77, printed p. 466). The pairs (orientable or not, $\chi$) are distinct on that list, with $S^{2}$ the unique orientable member of characteristic $2$, the $T_{g}$ the orientable members of characteristic $2-2g<2$, and the $P_{r}$ the non-orientable ones of characteristic $2-r\le1$.
+Every quotient of a polygonal region by a pairwise pasting is a compact surface, and the classification of compact surfaces (Theorem 77.5) says that such a surface is homeomorphic to exactly one member of that list. Uniqueness is decided by two invariants: orientability, and the Euler characteristic, which for the standard forms is $\chi(T_{g})=2-2g$ and $\chi(P_{r})=2-r$ (§77). The pairs (orientable or not, $\chi$) are distinct on that list, with $S^{2}$ the unique orientable member of characteristic $2$, the $T_{g}$ the orientable members of characteristic $2-2g<2$, and the $P_{r}$ the non-orientable ones of characteristic $2-r\le1$.
 :::
 
 :::
@@ -61,7 +61,7 @@ Every quotient of a polygonal region by a pairwise pasting is a compact surface,
 $P_{2g+1}\cong T_{g}\#P^{2}$ and $P_{2g+2}\cong T_{g}\#K$ for every $g\ge1$.
 
 ::: pf-proof
-Lemma 77.4 (printed p. 463) converts one torus summand together with one crosscap pair into two additional crosscaps, that is $T_{1}\#P_{r}\cong P_{r+2}$ for $r\ge1$; applying it $g$ times to $T_{g}\#P_{r}$ gives $T_{g}\#P_{r}\cong P_{r+2g}$. Taking $r=1$ gives $T_{g}\#P^{2}\cong P_{2g+1}$ and taking $r=2$, with $P_{2}=K$, gives $T_{g}\#K\cong P_{2g+2}$.
+Lemma 77.4 converts one torus summand together with one crosscap pair into two additional crosscaps, that is $T_{1}\#P_{r}\cong P_{r+2}$ for $r\ge1$; applying it $g$ times to $T_{g}\#P_{r}$ gives $T_{g}\#P_{r}\cong P_{r+2g}$. Taking $r=1$ gives $T_{g}\#P^{2}\cong P_{2g+1}$ and taking $r=2$, with $P_{2}=K$, gives $T_{g}\#K\cong P_{2g+2}$.
 :::
 
 :::

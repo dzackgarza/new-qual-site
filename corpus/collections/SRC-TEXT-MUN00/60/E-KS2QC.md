@@ -56,7 +56,7 @@ What are they?
 :::
 
 ::: {.solution}
-The exercise is §60 Exercise 4, printed p. 375, and $P^1$ is defined as for
+The exercise is §60 Exercise 4, and $P^1$ is defined as for
 $n\ge2$ on printed p. 373: the space obtained from $S^1$ by identifying each point
 with its antipode.
 
@@ -66,7 +66,7 @@ solutions, Cornell 2005, §60 Exercise 4, his p. 27, read in
 $p:S^1\to P^1$ is $p(z)=z^2$, the two-sheeted covering of the circle by itself.
 The source says that this map is a covering map because it was met earlier; in
 this book it is the map $q(z)=z^2$ whose quotient and covering properties are
-established in the proof of Theorem 57.1 (printed p. 356).
+established in the proof of Theorem 57.1.
 
 ::: pf
 
@@ -92,7 +92,7 @@ $P^1$. By step [](#constant-on-antipodes){.pf-ref} the map $q$ is constant on th
 orbits of that identification and separates distinct orbits, so it induces a
 bijection $\bar q$ with $\bar q(\theset{z,-z})=z^2$, and $\bar q$ is continuous by
 the universal property of the quotient map. The space $P^1$ is compact, being a
-continuous image of the compact space $S^1$ (Theorem 26.5, printed p. 166), and
+continuous image of the compact space $S^1$ (Theorem 26.5), and
 $S^1$ is Hausdorff, so $\bar q$ is a homeomorphism by Theorem 26.6 (printed
 p. 167).
 :::

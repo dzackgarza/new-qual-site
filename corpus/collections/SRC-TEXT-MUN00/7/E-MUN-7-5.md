@@ -78,7 +78,7 @@ Justify your answers.
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 7.5, printed pp. 85--89** (`tmp/sources/munkres-solutions-whitman.pdf`); the ten verdicts and the justifications below are his, with the numbered results of §7 named for each.
 
-Throughout, $X^\omega$ is the set of functions $\ZZ_+\to X$ and $X^n$ the set of functions $\{1,\dots,n\}\to X$; a set is countable when it is finite or countably infinite, and a subset of a countable set is countable (Corollary 7.3, printed p. 48). The results used are: $\ZZ_+\times\ZZ_+$ countably infinite (Corollary 7.4, printed p. 48), a countable union of countable sets countable (Theorem 7.5, printed p. 48), a finite product of countable sets countable (Theorem 7.6, printed p. 49), and $\{0,1\}^\omega$ uncountable (Theorem 7.7, printed p. 49). The exercise is on printed p. 51.
+Throughout, $X^\omega$ is the set of functions $\ZZ_+\to X$ and $X^n$ the set of functions $\{1,\dots,n\}\to X$; a set is countable when it is finite or countably infinite, and a subset of a countable set is countable (Corollary 7.3). The results used are: $\ZZ_+\times\ZZ_+$ countably infinite (Corollary 7.4), a countable union of countable sets countable (Theorem 7.5), a finite product of countable sets countable (Theorem 7.6), and $\{0,1\}^\omega$ uncountable (Theorem 7.7). The exercise is on printed p. 51.
 
 ::: pf
 

@@ -56,7 +56,7 @@ audit:
 
 ::: {.exercise}
 
-Assume the hypotheses of the Seifert–van Kampen theorem (Theorem 70.1, printed p. 426).
+Assume the hypotheses of the Seifert–van Kampen theorem (Theorem 70.1).
 
 Suppose that the homomorphism $i_*$ induced by inclusion $i: U \cap V \to X$ is trivial.
 
@@ -74,7 +74,7 @@ where $N_1$ is the least normal subgroup of $\pi_1(U, x_0)$ containing image $i_
 
 ::: {.solution}
 
-Keep the notation of Theorem 70.1 (printed p. 426): $i_1:\pi_1(U\cap V)\to\pi_1(U)$, $i_2:\pi_1(U\cap V)\to\pi_1(V)$, $j_1:\pi_1(U)\to\pi_1(X)$, $j_2:\pi_1(V)\to\pi_1(X)$, the maps induced by inclusion. Put $q_1:\pi_1(U)\to\pi_1(U)/N_1$ and $q_2:\pi_1(V)\to\pi_1(V)/N_2$ for the quotient maps and $J_1,J_2$ for the injections of the two quotients into their free product.
+Keep the notation of Theorem 70.1: $i_1:\pi_1(U\cap V)\to\pi_1(U)$, $i_2:\pi_1(U\cap V)\to\pi_1(V)$, $j_1:\pi_1(U)\to\pi_1(X)$, $j_2:\pi_1(V)\to\pi_1(X)$, the maps induced by inclusion. Put $q_1:\pi_1(U)\to\pi_1(U)/N_1$ and $q_2:\pi_1(V)\to\pi_1(V)/N_2$ for the quotient maps and $J_1,J_2$ for the injections of the two quotients into their free product.
 
 ::: pf
 
@@ -84,7 +84,7 @@ The homomorphisms $j_i$ carry $N_i$ to the identity, so they induce $h$.
 
 ::: pf-proof
 
-$j_1\circ i_1=j_2\circ i_2=i$ is trivial by hypothesis, so $i_1(\pi_1(U\cap V))\subseteq\ker j_1$; since $N_1$ is the least normal subgroup containing that image and $\ker j_1$ is normal, $N_1\subseteq\ker j_1$. Likewise $N_2\subseteq\ker j_2$. Hence $j_i$ factors through $q_i$, and the two resulting maps of the quotients extend, by the extension condition for free products (Lemma 68.3, printed p. 418), to a homomorphism $h$ of the free product.
+$j_1\circ i_1=j_2\circ i_2=i$ is trivial by hypothesis, so $i_1(\pi_1(U\cap V))\subseteq\ker j_1$; since $N_1$ is the least normal subgroup containing that image and $\ker j_1$ is normal, $N_1\subseteq\ker j_1$. Likewise $N_2\subseteq\ker j_2$. Hence $j_i$ factors through $q_i$, and the two resulting maps of the quotients extend, by the extension condition for free products (Lemma 68.3), to a homomorphism $h$ of the free product.
 
 :::
 

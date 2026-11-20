@@ -78,7 +78,7 @@ Part (a) is the argument of two answers to Math Stack Exchange question 142987, 
 (a) For every continuous $f:P^{2}\to S^{1}$ the induced homomorphism $f_{*}:\pi_{1}(P^{2},x_{0})\to\pi_{1}(S^{1},f(x_{0}))$ is zero.
 
 ::: pf-proof
-$\pi_{1}(P^{2},x_{0})$ has order $2$ (Corollary 60.4, printed p. 373) and $\pi_{1}(S^{1})\cong\ZZ$ (Theorem 54.5, printed p. 345). In the identification $\pi_{1}(P^{2},x_{0})=\ZZ/2$, a homomorphism $h$ into $\ZZ$ satisfies $2h(1)=h(0)=0$, and $\ZZ$ has no element of order $2$, so $h(1)=0$ and $h$ is the zero homomorphism.
+$\pi_{1}(P^{2},x_{0})$ has order $2$ (Corollary 60.4) and $\pi_{1}(S^{1})\cong\ZZ$ (Theorem 54.5). In the identification $\pi_{1}(P^{2},x_{0})=\ZZ/2$, a homomorphism $h$ into $\ZZ$ satisfies $2h(1)=h(0)=0$, and $\ZZ$ has no element of order $2$, so $h(1)=0$ and $h$ is the zero homomorphism.
 :::
 
 :::
@@ -87,7 +87,7 @@ $\pi_{1}(P^{2},x_{0})$ has order $2$ (Corollary 60.4, printed p. 373) and $\pi_{
 (a) $f$ lifts to $\tilde f:P^{2}\to\RR$ along the universal covering $p:\RR\to S^{1}$, and is therefore nulhomotopic.
 
 ::: pf-proof
-$P^{2}$ is path connected and locally path connected. Let $p:\RR\to S^{1}$ be the universal covering, put $b_{0}=f(x_{0})$ and choose $e_{0}\in p^{-1}(b_{0})$. Since $f_{*}\pi_{1}(P^{2},x_{0})=0\subset p_{*}\pi_{1}(\RR,e_{0})$, the general lifting lemma (Lemma 79.1, printed p. 478) applies with $Y=P^{2}$ and gives a continuous $\tilde f:P^{2}\to\RR$ with $p\circ\tilde f=f$. The space $\RR$ is contractible, so $\tilde f$ is homotopic to the constant map at $\tilde f(x_{0})$; composing that homotopy with $p$ gives a homotopy from $f$ to the constant map at $b_{0}$.
+$P^{2}$ is path connected and locally path connected. Let $p:\RR\to S^{1}$ be the universal covering, put $b_{0}=f(x_{0})$ and choose $e_{0}\in p^{-1}(b_{0})$. Since $f_{*}\pi_{1}(P^{2},x_{0})=0\subset p_{*}\pi_{1}(\RR,e_{0})$, the general lifting lemma (Lemma 79.1) applies with $Y=P^{2}$ and gives a continuous $\tilde f:P^{2}\to\RR$ with $p\circ\tilde f=f$. The space $\RR$ is contractible, so $\tilde f$ is homotopic to the constant map at $\tilde f(x_{0})$; composing that homotopy with $p$ gives a homotopy from $f$ to the constant map at $b_{0}$.
 :::
 
 :::
@@ -96,7 +96,7 @@ $P^{2}$ is path connected and locally path connected. Let $p:\RR\to S^{1}$ be th
 (b) The first projection $f:T^{2}\to S^{1}$, $f(x,y)=x$, is not nulhomotopic.
 
 ::: pf-proof
-Under the isomorphism $\pi_{1}(T^{2})\cong\ZZ\oplus\ZZ$ (Corollary 60.2, printed p. 372) the induced homomorphism $f_{*}$ carries the class of a loop with winding numbers $(r,s)$ to $r$; in particular $f_{*}$ is onto $\ZZ$ and not the zero homomorphism. A nulhomotopic map induces the trivial homomorphism on fundamental groups (Corollary 58.6, printed p. 364), so $f$ is not nulhomotopic.
+Under the isomorphism $\pi_{1}(T^{2})\cong\ZZ\oplus\ZZ$ (Corollary 60.2) the induced homomorphism $f_{*}$ carries the class of a loop with winding numbers $(r,s)$ to $r$; in particular $f_{*}$ is onto $\ZZ$ and not the zero homomorphism. A nulhomotopic map induces the trivial homomorphism on fundamental groups (Corollary 58.6), so $f$ is not nulhomotopic.
 :::
 
 :::

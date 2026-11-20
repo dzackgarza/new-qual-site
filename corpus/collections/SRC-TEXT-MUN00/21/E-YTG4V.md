@@ -79,11 +79,11 @@ $$
 
 The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.12, PDF pp. 26--27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the four parts, the $\delta=\varepsilon/2$ of (a), the three-term expansion of (b) and the five cases of (c) are that solution's, and Whitman, printed pp. 249--250, gives the same four. One slip is repaired: the table of preimages in (c) listed the case $a=0<b$ with a superfluous " $=f^{-1}((a,b))$" and left the five cases unseparated from their justifications, so the cases are now computed one by one, each from the inequalities.
 
-The statement was checked against Munkres, *Topology* (2000), §21 Exercise 12, printed p. 135, with Lemma 21.4 on printed p. 131, Theorem 18.2 on printed p. 107, Theorem 18.4 on printed p. 110 and Exercises 18.10 and 18.11 on printed p. 112. Throughout $d(a,b)=\abs{a-b}$ on $\RR$ and
+The statement was checked against Munkres, *Topology* (2000), §21 Exercise 12, with Lemma 21.4 on printed p. 131, Theorem 18.2 on printed p. 107, Theorem 18.4 on printed p. 110 and Exercises 18.10 and 18.11 on printed p. 112. Throughout $d(a,b)=\abs{a-b}$ on $\RR$ and
 $$
 \rho\big((x,y),(x_{0},y_{0})\big)\coloneqq\max\theset{\abs{x-x_{0}},\ \abs{y-y_{0}}}
 $$
-on $\RR^{2}$, which is a metric inducing the product topology (Exercise 21.3(a), printed p. 133); so continuity of a map on $\RR^{2}$ is to be checked in $\rho$-balls, and continuity on the subspace $\RR\times(\RR-\theset{0})$ is checked in the traces of those balls.
+on $\RR^{2}$, which is a metric inducing the product topology (Exercise 21.3(a)); so continuity of a map on $\RR^{2}$ is to be checked in $\rho$-balls, and continuity on the subspace $\RR\times(\RR-\theset{0})$ is checked in the traces of those balls.
 
 ::: pf
 
@@ -187,7 +187,7 @@ In each of the five cases $f^{-1}\big((a,b)\big)$ is open in $\RR-\theset{0}$, s
 
 ::: pf-proof
 
-An interval $(1/b,1/a)$ and a ray $(-\infty,1/a)$ or $(1/b,+\infty)$ are open in $\RR$; each of the five preimages is therefore the trace on $\RR-\theset{0}$ of an open set of $\RR$ — none of them contains $0$, since $1/a$ and $1/b$ are nonzero with the signs computed above — and so is open in the subspace $\RR-\theset{0}$. The open intervals $(a,b)$ with $a<b$ form a basis for the topology of $\RR$ (§13, printed p. 81), so an arbitrary open $U\subset\RR$ is a union of them and $f^{-1}(U)$ is a union of sets open in $\RR-\theset{0}$, hence open there. That is the definition of continuity of $f$.
+An interval $(1/b,1/a)$ and a ray $(-\infty,1/a)$ or $(1/b,+\infty)$ are open in $\RR$; each of the five preimages is therefore the trace on $\RR-\theset{0}$ of an open set of $\RR$ — none of them contains $0$, since $1/a$ and $1/b$ are nonzero with the signs computed above — and so is open in the subspace $\RR-\theset{0}$. The open intervals $(a,b)$ with $a<b$ form a basis for the topology of $\RR$ (§13), so an arbitrary open $U\subset\RR$ is a union of them and $f^{-1}(U)$ is a union of sets open in $\RR-\theset{0}$, hence open there. That is the definition of continuity of $f$.
 
 :::
 
@@ -203,9 +203,9 @@ An interval $(1/b,1/a)$ and a ray $(-\infty,1/a)$ or $(1/b,+\infty)$ are open in
 
 ::: pf-proof
 
-For subtraction, let $\nu\colon\RR\to\RR$, $\nu(y)\coloneqq-y$, which is an isometry of $\RR$ and hence continuous, since $\abs{\nu(y)-\nu(y_{0})}=\abs{(-y)-(-y_{0})}=\abs{y-y_{0}}$, so that $\delta=\varepsilon$ serves in the definition. By Exercise 18.10 (printed p. 112) the product map $\mathrm{id}_{\RR}\times\nu\colon\RR^{2}\to\RR^{2}$ is continuous, and $x-y$ is the composite of it with the continuous addition of step [](#addition){.pf-ref}; a composite of continuous maps is continuous (Theorem 18.2(c), printed p. 107).
+For subtraction, let $\nu\colon\RR\to\RR$, $\nu(y)\coloneqq-y$, which is an isometry of $\RR$ and hence continuous, since $\abs{\nu(y)-\nu(y_{0})}=\abs{(-y)-(-y_{0})}=\abs{y-y_{0}}$, so that $\delta=\varepsilon$ serves in the definition. By Exercise 18.10 the product map $\mathrm{id}_{\RR}\times\nu\colon\RR^{2}\to\RR^{2}$ is continuous, and $x-y$ is the composite of it with the continuous addition of step [](#addition){.pf-ref}; a composite of continuous maps is continuous (Theorem 18.2(c)).
 
-For the quotient, let $Z\coloneqq\RR\times(\RR-\theset{0})$, a subspace of $\RR^{2}$. The map $\Phi\colon Z\to\RR^{2}$, $\Phi(x,y)\coloneqq(x,1/y)$, is continuous: its first coordinate is the restriction to $Z$ of the projection $\pi_{1}$, and its second is $f\circ\pi_{2}$ with $f$ the continuous map of step [](#reciprocal){.pf-ref}, both continuous by Theorem 18.4 (printed p. 110) and Theorem 18.2(d) (printed p. 107). Since $x/y$ is the composite of $\Phi$ with the continuous multiplication of step [](#multiplication){.pf-ref}, it too is continuous on $Z$, and that is the quotient operation with its stated domain. So (d) holds.
+For the quotient, let $Z\coloneqq\RR\times(\RR-\theset{0})$, a subspace of $\RR^{2}$. The map $\Phi\colon Z\to\RR^{2}$, $\Phi(x,y)\coloneqq(x,1/y)$, is continuous: its first coordinate is the restriction to $Z$ of the projection $\pi_{1}$, and its second is $f\circ\pi_{2}$ with $f$ the continuous map of step [](#reciprocal){.pf-ref}, both continuous by Theorem 18.4 and Theorem 18.2(d). Since $x/y$ is the composite of $\Phi$ with the continuous multiplication of step [](#multiplication){.pf-ref}, it too is continuous on $Z$, and that is the quotient operation with its stated domain. So (d) holds.
 
 :::
 
