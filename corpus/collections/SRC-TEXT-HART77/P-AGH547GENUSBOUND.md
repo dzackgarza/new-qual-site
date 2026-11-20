@@ -552,7 +552,7 @@ irreducible nonsingular curve; the corollary's proof uses Bertini's theorem for 
 the book, printed p. 179, together with III.7.9.1, printed p. 245, and neither carries a hypothesis on
 the characteristic: II.8.18 is stated for a nonsingular closed subvariety of $\PP^n_k$ over an
 algebraically closed field $k$ and proves regularity by counting the dimension of the bad hyperplanes
-$B_x$, and the connectedness III.7.9.1 adds is Corollary III.7.9, printed p. 244, for an integral
+$B_x$, and the connectedness III.7.9.1 adds is Corollary III.7.9, for an integral
 normal projective variety of dimension at least $2$ over an algebraically closed field, proved from
 the vanishing of III.7.8 and the exact sequence of $qD$ with $q$ large. So these
 degrees are attained over every algebraically closed field $k$.

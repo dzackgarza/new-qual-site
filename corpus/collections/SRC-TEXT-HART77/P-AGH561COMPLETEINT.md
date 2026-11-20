@@ -181,9 +181,8 @@ $$
 K_X\sim aH.
 $$
 
-This is Hartshorne's Exercise II.8.4(e), printed p. 188, for a nonsingular
-complete intersection, and for a hypersurface Example II.8.20.3, printed
-p. 183. Yang Pi-Yeh's solution 5.6.1, printed p. 115, opens with the same
+This is Hartshorne's Exercise II.8.4(e), for a nonsingular
+complete intersection, and for a hypersurface Example II.8.20.3. Yang Pi-Yeh's solution 5.6.1, printed p. 115, opens with the same
 formula.
 :::
 
@@ -332,8 +331,7 @@ $$
 \linearsystem{12K_X}=\emptyset,
 $$
 a nonzero section being an effective divisor linearly equivalent to a
-negative multiple of an ample class. Hartshorne's Theorem 6.1, printed
-p. 422, then makes $X$ rational or ruled, that is $\kappa(X)=-1$. This is
+negative multiple of an ample class. Hartshorne's Theorem 6.1, then makes $X$ rational or ruled, that is $\kappa(X)=-1$. This is
 Egbert's step at printed p. 303, who for $n=3$ takes $d_1=2$ or $d_1=3$ so
 that $K_X$ is a negative multiple of ample and concludes from
 $\linearsystem{12K}=\emptyset$ by 6.1 that $X$ is rational or ruled; Yang
@@ -399,7 +397,7 @@ namely $4$, $6$, and $8$.
 Yang gives these three tuples at printed p. 115, as the case
 $\sum d_i-n-1=0$, and records that they are K3 surfaces; Egbert, printed
 p. 303, places them so, taking $n=4$ with $(d_1,d_2)=(2,3)$ and $n=5$ with
-$(2,2,2)$, where $K_X\equiv0$, and citing Theorem 6.3, printed p. 422, which
+$(2,2,2)$, where $K_X\equiv0$, and citing Theorem 6.3, which
 lists the surfaces of Kodaira dimension zero with those invariants. The
 verification above, that $\omega_X\cong\OO_X$ with $H^1(X,\OO_X)=0$ gives
 $q=0$ and $p_g=1$, is the card's own.

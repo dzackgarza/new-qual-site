@@ -219,5 +219,5 @@ Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-L
 
 Yang Pi-Yeh, *Hartshorne Solutions*, text version `tmp/sources/lfwin-hartshorne-solutions.md`, exercise 5.2.2, printed p. 102, asserts both directions: "clearly the sections corresponding to $L$ and $L'$ have no intersection", and in the converse "since $C\cap C'=\emptyset$, we have $K\oplus K'\to E$ is injective".
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.2, PDF p. 261, text version `tmp/sources/hartshorne-solutions-egbert.md`: the whole entry is the citation "Marumaye, Remark 1.20"; Maruyama's paper is not in `tmp/sources`, so there is no argument to read.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.2, text version `tmp/sources/hartshorne-solutions-egbert.md`: the whole entry is the citation "Marumaye, Remark 1.20"; Maruyama's paper is not in `tmp/sources`, so there is no argument to read.
 :::

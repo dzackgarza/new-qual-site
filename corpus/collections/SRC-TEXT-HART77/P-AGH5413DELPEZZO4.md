@@ -479,7 +479,7 @@ By Bertini's theorem (II.8.18, printed p. 179) the hyperplanes whose section of
 $X\subseteq\PP^4$ is regular form a dense open subset of the dual projective
 space, over an algebraically closed field of any characteristic --- the corpus
 card `T-BERTINI` records the statement in that generality --- and by Remark
-III.7.9.1, printed p. 245, that section is connected and irreducible when the
+III.7.9.1, that section is connected and irreducible when the
 variety has dimension at least two. Choose such a hyperplane and let
 $E\subseteq X$ be its section, so that $E$ is a nonsingular curve in $\abs{H}$
 with $\OO_X(E)\cong\OO_X(H)$. Adjunction gives
@@ -634,9 +634,9 @@ Igor V. Dolgachev, *Topics in Classical Algebraic Geometry* (27 September 2010),
 `tmp/sources/dolgachev-topics-classical-ag.pdf` and in its MinerU text version
 `tmp/sources/dolgachev-topics-classical-ag.md`, whose printed page is the PDF page minus ten (the text
 version marks the PDF pages in blocks of twenty, so a single printed page is located in the PDF), §8.5.1,
-Theorem 8.5.1, printed p. 291 with its proof on pp. 291--292, proves part of part (b) and not all of it. What
+Theorem 8.5.1 with its proof on pp. 291--292, proves part of part (b) and not all of it. What
 it proves: an anticanonical model $X$ of a weak Del Pezzo surface of degree $4$ is projectively normal (his
-Theorem 8.4.5, printed p. 280) and has $h^0(\OO_X(2))=13$ (his Lemma 8.3.1, printed p. 272), so that
+Theorem 8.4.5) and has $h^0(\OO_X(2))=13$ (his Lemma 8.3.1), so that
 $h^0(\mathcal I_X(2))=15-13=2$ and $X$ lies in a pencil $t_0Q_0+t_1Q_1=0$ of quadrics; that pencil has exactly five
 singular members, by the discriminant count, and taking their singular points as coordinate points puts the
 two equations in the diagonal form
@@ -657,8 +657,7 @@ The hypotheses match, with the exercise's own convention: the five points are in
 (Hartshorne V.4.7), so $X$ is the degree-four Del Pezzo surface embedded by $\abs{-K}$ with $K^2=9-5=4$,
 which is precisely his anticanonical model. One correction to the citation: his Lemma 8.3.1 proves its
 dimension count by invoking Ramanujam's vanishing theorem by name, with no reference given, and the reference
-to Lazarsfeld, *Positivity in Algebraic Geometry* I, Theorem 4.3.1, stands in the proof of his Lemma 8.1.4,
-printed p. 248. The card's own step [](#h0-two-h-thirteen){.pf-ref} reaches the same $h^0=13$ by
+to Lazarsfeld, *Positivity in Algebraic Geometry* I, Theorem 4.3.1, stands in the proof of his Lemma 8.1.4. The card's own step [](#h0-two-h-thirteen){.pf-ref} reaches the same $h^0=13$ by
 Riemann--Roch on the blow-up and needs neither. Part (a), the sixteen lines, is not proved there either: his
 §8.5.2 uses "the 16 lines on $X$" at printed p. 293 without an argument for the count, so part (a) rests on
 the card's steps [](#sixteen-lines-total){.pf-ref} and [](#no-other-lines){.pf-ref}.
@@ -730,7 +729,7 @@ $\deg X=4=\deg(Q\cap Q')$. Two passages of it are garbled and are repaired on
 the steps: the exclusion of a reducible quadric, which he does through what he
 calls Klein's theorem and with "since $Q$ is assumed to be irreducible" written
 where the argument needs the opposite, and the closing degree count, which is
-asserted rather than counted. His Lemma 2.2.8, printed pp. 19--20, supplies the
+asserted rather than counted. His Lemma 2.2.8, supplies the
 nondegeneracy of $X$ in $\PP^4$ that the first repair uses: $\abs{-K_X}$ separates
 points and tangent vectors, so the anticanonical map is an embedding. The
 embedding is also (4.7) of the book, printed p. 400, which the exercise is

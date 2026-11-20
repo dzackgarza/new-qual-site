@@ -265,7 +265,7 @@ By Proposition 1.2 of Fuentes and Pedreira, printed p. 3, which is Hartshorne V.
 $$
 X=\PP(\mathcal E),\qquad X'=\PP(\mathcal E')
 $$
-for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quotient convention of Hartshorne V.2. An elementary transformation is the operation of Hartshorne's Example 5.7.1, printed p. 416: blow up a point and contract the strict transform of the fibre through it (Definition 4.3 below, printed p. 26).
+for locally free sheaves $\mathcal E,\mathcal E'$ of rank $2$ on $C$, in the quotient convention of Hartshorne V.2. An elementary transformation is the operation of Hartshorne's Example 5.7.1: blow up a point and contract the strict transform of the fibre through it (Definition 4.3 below, printed p. 26).
 
 ::: pf
 
@@ -314,7 +314,7 @@ This is Theorem 4.9 of Fuentes and Pedreira, statement printed p. 30 and proof p
 $$
 e'=-X_0'^2=-X_0^2+1=e+1.
 $$
-Lemma 4.6, printed p. 28, computes the normal bundle of a transformed section and gives $\OO_{X_0'}(X_0')\cong\OO_C(\mathfrak e-P)$, which is the divisor-class form of the same statement. This is the second computation of the printed hint: the invariant $e$ rises by one at each such transformation.
+Lemma 4.6, computes the normal bundle of a transformed section and gives $\OO_{X_0'}(X_0')\cong\OO_C(\mathfrak e-P)$, which is the divisor-class form of the same statement. This is the second computation of the printed hint: the invariant $e$ rises by one at each such transformation.
 :::
 
 :::

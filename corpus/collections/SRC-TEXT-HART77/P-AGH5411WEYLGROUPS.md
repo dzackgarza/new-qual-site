@@ -565,13 +565,13 @@ Corollary 8.2.16, stated on printed p. 261 and proved on printed p. 262, which c
 an exceptional vector: the orthogonal complement of $e_N$ in $I^{1,N}$ is $I^{N-1}$, so the stabilizer
 of $e_N$ in
 $W(\mathbf E_N)$ is $W(\mathbf E_{N-1})$; the orbit of $e_N$ is the set of exceptional vectors, of
-which there are $27$ for $N=6$ by the table of Proposition 8.2.15, printed p. 261; and
+which there are $27$ for $N=6$ by the table of Proposition 8.2.15; and
 $\#W(\mathbf E_4)=5!=120$. Hence
 $$
 \#W(\mathbf E_6)=27\cdot\#W(\mathbf E_5)=27\cdot16\cdot120=2^3\cdot3^2\cdot6!=51840 .
 $$
 Humphreys evaluates the same order in the book cited for faithfulness, and independently of the
-exceptional vectors: §2.11, printed p. 44, reads "The 72 roots form a single orbit. The highest root
+exceptional vectors: §2.11, reads "The 72 roots form a single orbit. The highest root
 $\tilde\alpha$ is orthogonal to all simple roots except $\alpha_2$, so its isotropy group is of type
 $A_5$ (having order $6!$). Therefore $\cardinality{W}=6!72=2^7 3^4 5$", the bars written with the
 semantic macro, and his Table 2 on that page lists
@@ -603,7 +603,7 @@ Injectivity gives $\cardinality{\mathbf E_6}=\cardinality{\sigma(\mathbf E_6)}$,
 computed next; that comparison of the two normalisations is the card's own.
 
 Let $(\beta_1,\ldots,\beta_6)$ be a canonical root basis of the lattice $\mathbf E_6$ of the same book:
-Definition 8.5, printed p. 256, so that its Gram matrix $(\beta_i\cdot\beta_j)$ is the Cartan matrix
+Definition 8.5, so that its Gram matrix $(\beta_i\cdot\beta_j)$ is the Cartan matrix
 of type $E_6$, and the basis displayed in (8.5) on the same page, $\beta_1=\alpha_{123}$ and
 $\beta_i=\alpha_{i-1,i}$ for $i\ge2$, is one. On that page the diagonal entries of a Cartan matrix are
 $-2$, and the matrix $C+2I$ is the incidence matrix of the diagram, so the off-diagonal entry of the
@@ -639,12 +639,11 @@ $$
 
 ::: pf-proof
 A sixer is a set of six mutually orthogonal exceptional vectors of the $\mathbf E_6$ lattice:
-Dolgachev, §9.1, printed p. 319. Theorem 9.1.2, printed p. 320, lists the $36$ double-sixers, the
+Dolgachev, §9.1. Theorem 9.1.2, lists the $36$ double-sixers, the
 pairs of sixers carried to each other by the reflection in the associated root, and they number
 $1+15+20=36$, so there are $72$ sixers. The roots of $\mathbf E_6$ number $72$ by the list on
 printed p. 256, and the proof of Proposition 9.1.3 records that the number of sixers equals the number
-of roots, while §9.1.2, printed p. 325, records "72 sixes of lines, 36 double-sixes". Proposition 9.1.3,
-printed p. 321, states and proves that $W(\mathbf E_6)$ acts transitively on the sixers and that the
+of roots, while §9.1.2, records "72 sixes of lines, 36 double-sixes". Proposition 9.1.3, states and proves that $W(\mathbf E_6)$ acts transitively on the sixers and that the
 stabilizer of the sixer
 $(\mathbf a_1,\ldots,\mathbf a_6)$ is $\mathfrak S_6$; orbit--stabilizer then gives the displayed
 order.
@@ -718,8 +717,8 @@ Parts (b) and (c): Proposition 4.10 and Remark 4.10.1 of the book, printed pp. 4
 generation of $G$ and its order $51{,}840$.
 
 Part (c): I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010), Proposition
-8.2.15 and Corollary 8.2.16, printed pp. 261--262, for $\#W(\mathbf E_6)=2^3\cdot3^2\cdot6!$ from
-the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, printed pp. 320--321, for
+8.2.15 and Corollary 8.2.16, for $\#W(\mathbf E_6)=2^3\cdot3^2\cdot6!$ from
+the count of exceptional vectors, and Theorem 9.1.2 and Proposition 9.1.3, for
 the same order as $72\cdot6!$ from the sixers. Both are orders of the reflection group of the
 $\mathbf E_6$ lattice, which the presentation maps onto, so they give
 $\cardinality{\mathbf E_6}\ge51840$; the reverse inequality is the faithfulness of the geometric

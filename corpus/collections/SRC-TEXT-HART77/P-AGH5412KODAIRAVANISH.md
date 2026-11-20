@@ -156,7 +156,7 @@ $$
 $$
 
 ::: pf-proof
-This is the implication (ii) $\Rightarrow$ (iii) of Hartshorne's Theorem 4.11, printed p. 405, whose four conditions on a divisor $D$ of the cubic surface are: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$ and $D\cdot L>0$ for every line $L\subseteq X$; (iv) $D\cdot L>0$ for every line $L\subseteq X$. The book obtains (ii) $\Rightarrow$ (iii) from the easy direction of the Nakai--Moishezon criterion, Theorem 1.10, printed p. 365: a divisor $D$ on a surface is ample if and only if $D^2>0$ and $D\cdot C>0$ for every irreducible curve $C$.
+This is the implication (ii) $\Rightarrow$ (iii) of Hartshorne's Theorem 4.11, whose four conditions on a divisor $D$ of the cubic surface are: (i) $D$ is very ample; (ii) $D$ is ample; (iii) $D^2>0$ and $D\cdot L>0$ for every line $L\subseteq X$; (iv) $D\cdot L>0$ for every line $L\subseteq X$. The book obtains (ii) $\Rightarrow$ (iii) from the easy direction of the Nakai--Moishezon criterion, Theorem 1.10: a divisor $D$ on a surface is ample if and only if $D^2>0$ and $D\cdot C>0$ for every irreducible curve $C$.
 :::
 
 :::
@@ -165,7 +165,7 @@ This is the implication (ii) $\Rightarrow$ (iii) of Hartshorne's Theorem 4.11, p
 $D$ is very ample.
 
 ::: pf-proof
-Step [](#positive-on-lines){.pf-ref} gives condition (iv) of Theorem 4.11, so (i) holds by the implication (iv) $\Rightarrow$ (i) proved on printed pp. 405--406. That proof runs as follows. Choose six mutually skew lines $E_6',E_5',\ldots,E_1'$: take for $E_6'$ a line on which $D$ is minimal, then for $E_5'$ a line not meeting $E_6'$ on which $D$ is minimal among those, then $E_4',E_3'$ similarly, and finally $E_1',E_2'$ among the three remaining lines, ordered so that $D\cdot E_1'\ge D\cdot E_2'$. The configuration of the $27$ lines is the same for any six mutually skew ones, so by (4.10) the labelling may be changed to make $E_i'=E_i$ for every $i$. Then $D\cdot E_i=b_i$ with $D\sim al-\sum_ib_ie_i$, so $b_1\ge b_2\ge\cdots\ge b_6>0$; and $F_{12}$ was a candidate when $E_3'$ was chosen, so $D\cdot F_{12}\ge D\cdot E_3'$, that is $a-b_1-b_2\ge b_3$. Lemma 4.12, printed p. 405, states that a class with $b_1\ge\cdots\ge b_6>0$ and $a\ge b_1+b_2+b_5$ is very ample, and its proof writes $D$ as a nonnegative combination $\sum_ic_iD_i$ of
+Step [](#positive-on-lines){.pf-ref} gives condition (iv) of Theorem 4.11, so (i) holds by the implication (iv) $\Rightarrow$ (i) proved on printed pp. 405--406. That proof runs as follows. Choose six mutually skew lines $E_6',E_5',\ldots,E_1'$: take for $E_6'$ a line on which $D$ is minimal, then for $E_5'$ a line not meeting $E_6'$ on which $D$ is minimal among those, then $E_4',E_3'$ similarly, and finally $E_1',E_2'$ among the three remaining lines, ordered so that $D\cdot E_1'\ge D\cdot E_2'$. The configuration of the $27$ lines is the same for any six mutually skew ones, so by (4.10) the labelling may be changed to make $E_i'=E_i$ for every $i$. Then $D\cdot E_i=b_i$ with $D\sim al-\sum_ib_ie_i$, so $b_1\ge b_2\ge\cdots\ge b_6>0$; and $F_{12}$ was a candidate when $E_3'$ was chosen, so $D\cdot F_{12}\ge D\cdot E_3'$, that is $a-b_1-b_2\ge b_3$. Lemma 4.12, states that a class with $b_1\ge\cdots\ge b_6>0$ and $a\ge b_1+b_2+b_5$ is very ample, and its proof writes $D$ as a nonnegative combination $\sum_ic_iD_i$ of
 $$
 D_0=l,\quad D_1=l-e_1,\quad D_2=2l-e_1-e_2,\quad D_3=2l-e_1-e_2-e_3,
 $$
@@ -181,7 +181,7 @@ with $c_6>0$, each $D_i$ moving in a base-point-free linear system, $D_6$ very a
 The linear system $\abs{D}$ contains an irreducible nonsingular curve $C$. In particular $D$ is effective.
 
 ::: pf-proof
-Corollary 4.13(a), printed p. 406, is the translation of (4.11) into coordinates: $D\sim al-\sum_ib_ie_i$ is ample if and only if $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{j\ne i}b_j$ for each $i$. Corollary 4.13(b) then states that in any divisor class satisfying those conditions there is an irreducible nonsingular curve, which the book derives from Bertini's theorem (II, 8.18) and (III, 7.9.1). Since $D$ is ample, its class satisfies the conditions, so $\abs{D}$ contains an irreducible nonsingular curve $C$.
+Corollary 4.13(a), is the translation of (4.11) into coordinates: $D\sim al-\sum_ib_ie_i$ is ample if and only if $b_i>0$ for each $i$, $a>b_i+b_j$ for each $i,j$, and $2a>\sum_{j\ne i}b_j$ for each $i$. Corollary 4.13(b) then states that in any divisor class satisfying those conditions there is an irreducible nonsingular curve, which the book derives from Bertini's theorem (II, 8.18) and (III, 7.9.1). Since $D$ is ample, its class satisfies the conditions, so $\abs{D}$ contains an irreducible nonsingular curve $C$.
 :::
 
 :::
@@ -190,7 +190,7 @@ Corollary 4.13(a), printed p. 406, is the translation of (4.11) into coordinates
 $D$ is numerically $1$-connected: for every decomposition $D=D_1+D_2$ with $D_1,D_2>0$ effective one has $D_1\cdot D_2\ge1$.
 
 ::: pf-proof
-This is Lemma 3.11(i) of Reid, printed pp. 72--73, whose statement is that for a nonsingular projective surface and an effective divisor $D$, nef together with $D^2>0$ implies that $D$ is numerically $1$-connected in the sense of Section 3.9, printed p. 71. The hypotheses hold: $D$ is effective by step [](#nonsingular-curve-in-class){.pf-ref}, $D^2>0$ by step [](#positive-on-lines){.pf-ref}, and $D$ is nef because $D\cdot\Gamma>0$ for every curve $\Gamma$, which is Theorem 1.10 again. The proof is Reid's: from $D$ nef, $D\cdot D_i\ge0$ for $i=1,2$; if $D_1\cdot D_2\le0$, then
+This is Lemma 3.11(i) of Reid, printed pp. 72--73, whose statement is that for a nonsingular projective surface and an effective divisor $D$, nef together with $D^2>0$ implies that $D$ is numerically $1$-connected in the sense of Section 3.9. The hypotheses hold: $D$ is effective by step [](#nonsingular-curve-in-class){.pf-ref}, $D^2>0$ by step [](#positive-on-lines){.pf-ref}, and $D$ is nef because $D\cdot\Gamma>0$ for every curve $\Gamma$, which is Theorem 1.10 again. The proof is Reid's: from $D$ nef, $D\cdot D_i\ge0$ for $i=1,2$; if $D_1\cdot D_2\le0$, then
 $$
 D_1^2D_2^2\ge(D_1\cdot D_2)^2\ge0,
 $$
@@ -209,7 +209,7 @@ Let $F$ be the cubic form with $X=V(F)\subseteq\PP^3$. The ideal sheaf of $X$ is
 $$
 0\longrightarrow\OO_{\PP^3}(-3)\longrightarrow\OO_{\PP^3}\longrightarrow\OO_X\longrightarrow0
 $$
-is exact: it is the ideal sheaf sequence of a closed subscheme, Hartshorne II.5.9, printed p. 116. Theorem III.5.1(b), printed p. 225, gives $H^i(\PP^3,\OO_{\PP^3}(n))=0$ for $0<i<3$ and all $n$, so that $H^1(\PP^3,\OO_{\PP^3})=0$ and $H^2(\PP^3,\OO_{\PP^3}(-3))=0$, while $H^0(\PP^3,\OO_{\PP^3}(-3))=0$ and $H^0(\PP^3,\OO_{\PP^3})=k$ by (a) of the same theorem. The long exact sequence therefore has $H^1(X,\OO_X)=0$ between two zero groups and $H^0(X,\OO_X)\cong k$ at the other end.
+is exact: it is the ideal sheaf sequence of a closed subscheme, Hartshorne II.5.9, printed p. 116. Theorem III.5.1(b), gives $H^i(\PP^3,\OO_{\PP^3}(n))=0$ for $0<i<3$ and all $n$, so that $H^1(\PP^3,\OO_{\PP^3})=0$ and $H^2(\PP^3,\OO_{\PP^3}(-3))=0$, while $H^0(\PP^3,\OO_{\PP^3}(-3))=0$ and $H^0(\PP^3,\OO_{\PP^3})=k$ by (a) of the same theorem. The long exact sequence therefore has $H^1(X,\OO_X)=0$ between two zero groups and $H^0(X,\OO_X)\cong k$ at the other end.
 :::
 
 :::
@@ -221,7 +221,7 @@ $$
 $$
 
 ::: pf-proof
-Because $D$ is effective, $\OO_D=\OO_X/\OO_X(-D)$ is the structure sheaf of the subscheme $D\subseteq X$, as in Reid's Section 3.9, printed p. 71. Lemma 3.11(ii), printed pp. 72--73, states that a numerically $1$-connected effective divisor has $H^0(\OO_D)=$ constants. Step [](#numerically-one-connected){.pf-ref} supplies the hypothesis, so $H^0(X,\OO_D)$ is one-dimensional over $k$.
+Because $D$ is effective, $\OO_D=\OO_X/\OO_X(-D)$ is the structure sheaf of the subscheme $D\subseteq X$, as in Reid's Section 3.9. Lemma 3.11(ii), printed pp. 72--73, states that a numerically $1$-connected effective divisor has $H^0(\OO_D)=$ constants. Step [](#numerically-one-connected){.pf-ref} supplies the hypothesis, so $H^0(X,\OO_D)$ is one-dimensional over $k$.
 :::
 
 :::
@@ -240,7 +240,7 @@ is exact, so its long exact cohomology sequence begins
 $$
 0\longrightarrow H^0(\OO_X(-D))\longrightarrow H^0(\OO_X)\longrightarrow H^0(\OO_D)\longrightarrow H^1(\OO_X(-D))\longrightarrow H^1(\OO_X).
 $$
-By step [](#structure-sheaf){.pf-ref} one has $H^0(\OO_X)=k$ and $H^1(\OO_X)=0$, and by step [](#structure-sheaf-of-D){.pf-ref} one has $H^0(\OO_D)=k$; the map between the two one-dimensional spaces sends the constant function $1$ to the constant function $1$, so it is an isomorphism. Exactness then forces $H^1(X,\OO_X(-D))=0$. This is the argument of Reid's Section 3.12, printed p. 73, carried there for a K3 surface and then stated for any surface with $H^1(\OO_X)=0$: the vanishing holds for an effective divisor that is numerically $1$-connected, in particular for an effective, nef and big divisor.
+By step [](#structure-sheaf){.pf-ref} one has $H^0(\OO_X)=k$ and $H^1(\OO_X)=0$, and by step [](#structure-sheaf-of-D){.pf-ref} one has $H^0(\OO_D)=k$; the map between the two one-dimensional spaces sends the constant function $1$ to the constant function $1$, so it is an isomorphism. Exactness then forces $H^1(X,\OO_X(-D))=0$. This is the argument of Reid's Section 3.12, carried there for a K3 surface and then stated for any surface with $H^1(\OO_X)=0$: the vanishing holds for an effective divisor that is numerically $1$-connected, in particular for an effective, nef and big divisor.
 :::
 
 :::
@@ -251,7 +251,7 @@ By step [](#structure-sheaf){.pf-ref} one has $H^0(\OO_X)=k$ and $H^1(\OO_X)=0$,
 ::: {.remark title="Published solutions"}
 The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.12, printed p. 408.
 
-The book gives Theorem 4.11 with Lemma 4.12 for the passage from ample to very ample and Corollary 4.13 for the numerical translation and the nonsingular member; Reid's Park City notes give Lemma 3.11 with Section 3.12 for the cohomological step. Reid's Section 3.12 gives the vanishing in the form this exercise asks for, $H^1(\OO_X(-D))=0$ for $D$ effective and $1$-connected on a surface with $H^1(\OO_X)=0$, and derives it, as on this card, from $H^0(\OO_D)=$ constants and the long exact sequence of $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$; the Discussion that closes his Section 3.12, printed p. 74, then records that the characteristic-zero proofs of the general theorem are Ramanujam's and the Bogomolov--Mumford one, neither of which the cubic surface needs.
+The book gives Theorem 4.11 with Lemma 4.12 for the passage from ample to very ample and Corollary 4.13 for the numerical translation and the nonsingular member; Reid's Park City notes give Lemma 3.11 with Section 3.12 for the cohomological step. Reid's Section 3.12 gives the vanishing in the form this exercise asks for, $H^1(\OO_X(-D))=0$ for $D$ effective and $1$-connected on a surface with $H^1(\OO_X)=0$, and derives it, as on this card, from $H^0(\OO_D)=$ constants and the long exact sequence of $0\to\OO_X(-D)\to\OO_X\to\OO_D\to0$; the Discussion that closes his Section 3.12, then records that the characteristic-zero proofs of the general theorem are Ramanujam's and the Bogomolov--Mumford one, neither of which the cubic surface needs.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.4.12, printed p. 292, is wholly on that one page and takes the same route with the two structure-sheaf facts stated rather than derived: he records $H^0(\OO_X)=k$, $H^1(\OO_X)=0$ and $H^2(\OO_X)=H^0(\OO_X(-3))=p_g=0$, writes "By chapter 1, $H^0(D,\OO_D)=k$" for the divisor $D$, and reads the long exact sequence term by term. His closing step, "Suppose there is an effective divisor linearly equivalent to $-D$. Then by V.4.11, this effective divisor should meet at least one line with negative intersection which is silly", needs a completion. A negative intersection with a line is no contradiction: an effective $E=L+E'$ with $E'\cdot L=0$ has $E\cdot L=-1$, so a line in the support of an effective divisor can meet that divisor negatively. The contradiction is with very ampleness directly: $D$ very ample gives $D\cdot\Gamma>0$ for every irreducible curve $\Gamma$, hence $D\cdot E>0$ for every nonzero effective $E$, while $E\sim-D$ gives $D\cdot E=-D^2<0$, which $D^2>0$ excludes. The number his sentence cites needs care because two results share it: the exercise printed as 4.11 in §4 is the Weyl groups exercise and says nothing about divisors, while **Theorem 4.11** is the criterion. The existence of a nonsingular member of $\abs{D}$, which his entry does not supply, is Corollary 4.13(b) here.
 

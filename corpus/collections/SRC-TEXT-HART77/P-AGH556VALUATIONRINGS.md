@@ -754,7 +754,7 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420. Exercise II.4.12, printed p. 108, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420. Exercise II.4.12, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
 
 Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, printed p. 114, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
 
