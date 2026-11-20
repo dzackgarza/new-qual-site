@@ -1011,6 +1011,24 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
 
    Remaining unread in this item's set: §4.3 (24) --- 33 proofs overall, of which §4.2's eight belong to
    the other chat.
+   **2026-11-20, after §4.3: the §3.3 lane opened, and what it has converted so far.** With §4.3 closed,
+   the next block of prose-only Hatcher cards in `queues/D-prose-only-solutions.md` is §3.3, five cards:
+   `E-HAT-3.3-16`, `-19`, `-22`, `-25`, `-31`. No other chat holds that section --- §4.1, §4.2, §3.F,
+   §4.A, §4.B, §4.D, §4.F and §4.L are the two Hatcher streams' --- so this chat took it, one commit per
+   card. `-16` is converted in eight steps and its statement repaired: it wrote its cochain with a doubled
+   backslash, which renders as a line break and the letters of the command, so the exercise's own symbol
+   was not on the card; the same doubling ran through the body. `-19` is converted in six steps, with the
+   exhaustion by dyadic cubical grids built rather than asserted, since that is what makes the indexing
+   set countable, and the direct limit cited as §3.3 Exercise 17. `-25` transcribes Guanyu Li's Exercise
+   3.3.9, which is this exercise in his numbering, cites it by exercise number with no page, keeps his
+   slip recorded (he writes `Ext` where the universal coefficient sequence gives `Hom`), and adds the
+   finiteness step that makes torsionfree imply free. `-31` has its 34 doubled coefficient-ring macros
+   repaired and its Bredon citation moved to chapter, section and numbered results; its prose is still
+   prose, so its step conversion is the next item, followed by `-22`, whose argument is Stanford's
+   Solution Set 4 for Hatcher 3.3.22. Checks on each: `qualc.authoring check` clean, `tmp/lam.sh`
+   reporting numbered steps and QED labels on the three converted cards, `tools/check_macros.py` clean.
+   No whole-corpus gate this turn.
+
    **2026-11-21, §4.3 finished and re-cited by numbered statement.** All twenty-four cards of `4-3/` carry a
    structured proof, and six of them --- `E-HAT-4.3-2`, `-9`, `-16`, `-18`, `-21`, `-22` --- were converted from
    prose to numbered steps in this lane; the rest were already read and repaired on 2026-11-19. The
