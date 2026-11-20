@@ -23,7 +23,7 @@ f^y\colon X\to Z,\quad f^y(x)\coloneqq f(x,y),
 \qquad
 f_x\colon Y\to Z,\quad f_x(y)\coloneqq f(x,y),
 $$
-and the \dfn{slices} of $E$ are
+and the slices of $E$ are
 $$
 E^y\coloneqq\theset{x\in X\st (x,y)\in E},
 \qquad
