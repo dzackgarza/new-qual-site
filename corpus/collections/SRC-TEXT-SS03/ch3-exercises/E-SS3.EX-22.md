@@ -28,7 +28,7 @@ Show that there is no holomorphic function $f$ in the unit disc $\DD$ that exten
 :::
 
 ::: {.solution}
-The statement is Exercise 22 of [@SS03, ch. 3 (p. 108)], printed beginning "Show that there is no holomorphic function in the unit disc extending continuously with the boundary values $1/z$".
+The statement is Exercise 22 of Stein--Shakarchi, *Complex Analysis* [@SS03, ch. 3, §8, Exercise 22], printed beginning "Show that there is no holomorphic function $f$ in the unit disc $\DD$ that extends continuously to $\partial\DD$ such that $f(z) = 1/z$ for $z \in \partial\DD$".
 
 No retained solution set covers this exercise; the collection retains the textbook (`assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`) and no solutions manual, so the argument is the card's own. Suppose such an $f$ exists: holomorphic in $\DD$, continuous on $\overline{\DD}$, with $f(z)=1/z$ for $\abs{z}=1$.
 
