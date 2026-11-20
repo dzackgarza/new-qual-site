@@ -64,6 +64,19 @@ audit:
     retained solution set; the collection's provenance is the Hatcher textbook, whose text is
     not retained here, so Corollary 4.73 and Proposition 4.74 are cited by number as the card
     cites them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The event above says no retained solution set is claimed, and that is false: Steven V. Sam's
+    set, retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves §4.3 Exercise 23 on
+    printed p. 29, by exactly this route --- the mapping cylinder $W$, Corollary 4.73 for the
+    lift, and Proposition 4.74 for the homotopy equivalence. The solution's lead now cites it
+    and names what the card adds. Re-read in the same pass against Hatcher, §4.3 Exercise 23,
+    printed p. 420, Corollary 4.73 (printed p. 417) and Proposition 4.74 (printed p. 417):
+    the map of pairs $(W,X)\to(Y,i(X))$, the vanishing of $H_{n}(Y,i(X))$, the universal
+    coefficient sequence, and $f_{*}i_{*}=i'_{*}$ with both outer maps isomorphisms are all
+    correct. No step changed. Not checked: no certificate.
 
 ---
 
@@ -72,7 +85,7 @@ Prove the following uniqueness result for the Quillen plus construction: Given a
 :::
 
 ::: {.solution}
-Throughout $X$ is a connected CW complex, $Y$ and $Y'$ are connected abelian CW complexes — connected CW complexes on which $\pi_{1}$ acts trivially on every homotopy group — and $i\colon X \to Y$, $i'\colon X \to Y'$ induce isomorphisms on integral homology. $W \coloneqq M_{i}$ is the mapping cylinder of $i$, with $X \subseteq W$ and $Y \subseteq W$; the deformation retraction $r\colon W \to Y$ restricts on $X$ to $i$, not to the identity, since $X$ meets $Y$ only in $i(X)$, so the pair it collapses onto is $(Y,i(X))$ and a map out of $(W,X)$ is the same thing as a map out of $(Y,i(X))$. The exercise is Hatcher, *Algebraic Topology*, §4.3 Exercise 23.
+Throughout $X$ is a connected CW complex, $Y$ and $Y'$ are connected abelian CW complexes — connected CW complexes on which $\pi_{1}$ acts trivially on every homotopy group — and $i\colon X \to Y$, $i'\colon X \to Y'$ induce isomorphisms on integral homology. $W \coloneqq M_{i}$ is the mapping cylinder of $i$, with $X \subseteq W$ and $Y \subseteq W$; the deformation retraction $r\colon W \to Y$ restricts on $X$ to $i$, not to the identity, since $X$ meets $Y$ only in $i(X)$, so the pair it collapses onto is $(Y,i(X))$ and a map out of $(W,X)$ is the same thing as a map out of $(Y,i(X))$. The exercise is Hatcher, *Algebraic Topology*, §4.3 Exercise 23. The argument is that of the retained solution set **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 23**, printed p. 29 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which takes the mapping cylinder $W$ of $X\to Y$, obtains the extension $W\to Y'$ from Corollary 4.73, and concludes with Proposition 4.74; the steps below write out the identification of pairs, the universal coefficient sequence and the algebra $f_{*}=i'_{*}(i_{*})^{-1}$ that the solution compresses.
 
 ::: pf
 
