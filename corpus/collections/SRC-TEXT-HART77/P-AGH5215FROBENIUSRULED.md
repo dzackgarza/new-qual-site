@@ -590,6 +590,57 @@ audit:
     checked: the printed copies of any of these sets, only the retained text
     layers; and the search outside the retained sets is bounded by the
     repositories and threads named here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the reader's verdict at 507bd75c88: the two NOT MET items on the
+    card's mathematics, repaired. (i) Step s8 inferred that t is not the cube of
+    a section over U from step s6, which is the vanishing of H^0 of one line
+    bundle on C. That is a non sequitur: a line bundle with no nonzero global
+    section can have one over an open set, so s6 says nothing about sections
+    over U. The step now proves the non-cube statement over U. If the
+    coefficient a were b^3 in k(C), then over an open set on which b is regular,
+    t = (f_2+bf_1)^3, so Y would be 3Sigma for the section Sigma through that
+    graph, and Sigma would be numerically C_0-f. By Proposition 2.9 a section
+    Sigma equiv C_0-f corresponds to a quotient L of degree 0, and by
+    Proposition 2.6 its sheaf is O_X(1) tensor pi^*M with M = L tensor
+    O_C(-e) of degree -1, e being the divisor with O_C(e) = wedge^2 E of
+    degree -e; then H^0(O_X(Sigma)) = H^0(C, E tensor M) = 0 for
+    every M of degree -1, because 0 -> M(-P) -> E tensor M -> M -> 0 is exact
+    and the two outer terms have degrees -1 and -2. So no section lies in the
+    class C_0-f and Y is not a triple. Step s7's own paragraph, which had
+    identified O_X(Sigma) with O_X(1) tensor f^*O_C(-P), made the same
+    conflation; it now carries the corrected argument, and the claim of s7 is
+    restated as the absence of a section of pi in the class C_0-f. (ii) The
+    arithmetic-genus count applied Proposition 1.5 to every effective divisor,
+    and that proposition assumes a nonsingular curve. The count now cites
+    Exercise 1.3(a), the effective-divisor form 2p_a-2 = D.(D+K) with
+    p_a = 1-chi(O_D), and says that Proposition 1.5 is used only on the
+    hypothetical nonsingular Y of the exclusion argument. Re-checked as
+    consequences of (i): the integrality and pure inseparability of s8, since
+    the cubic form beta^3+a alpha^3 is reducible over k(C) exactly when -a is a
+    cube, that is exactly when a is a cube, so the form is irreducible and
+    k(Y) = k(C)[x]/(x^3+a) is a field of degree 3, purely inseparable; the
+    normalization of s9, the Frobenius twist C^(1) of Example IV.2.4.3, of
+    degree p over C and isomorphic to C as an abstract scheme by Proposition
+    IV.2.5, hence of genus 3; and the genus defect, delta = 1 at one point,
+    from Exercise IV.1.8(a), which is the identity the text had called
+    definitional. Also corrected: the map psi of s7 is now written with its
+    value on a decomposable 1 tensor v, since it is O_C-linear and sends
+    1 tensor v to v^3, so the coefficient of f_1^3 in t is a and not a^3.
+    (iii) The transcription item. The two published treatments of (c) were read
+    again: Egbert, Exercise V.2.15, which cites Miyanishi, Open Algebraic
+    Surfaces, lemma 2.5.2.2 and calls Y some section of C, and Yang,
+    Solution 5.2.15(c), which infers inseparability from deg pi = 3 alone and
+    then calls Y a set-theoretic section, which is impossible since a curve in
+    the class isomorphic to C would have p_a = 3 against p_a = 4. The rendered
+    remark now says that its record is bounded to the sources it names and that
+    no retained set proves (c), and it keeps the printed "nonsingular" recorded
+    as false with the argument of s9. No published solution set was found that
+    proves (c), so steps s7, s8 and s9 remain marked as this card's own. Not
+    checked: the printed book, only the retained text layer; Miyanishi's book,
+    which is not retained and was not read; and no example was computed.
 
 ---
 
@@ -742,7 +793,7 @@ Y=\operatorname{div}(t)\equiv3C_0-3f,\qquad
 \OO_X(Y)\cong\OO_X(3)\tensor f^*\OO_C(-3P),\qquad
 Y\cdot f=3 ,
 $$
-and no section of $X\to C$ lies in the class.
+and no section of $X\to C$ lies in the class $C_0-f$, so $Y$ is not three times a section.
 
 ::: pf-proof
 Xie, Example 3.1: pulling the extension back by Frobenius gives the split sequence
@@ -753,7 +804,7 @@ $$
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$. That $t\ne0$, that nothing else lies in the class, and the shape of $Y$ are this card's own, and no source read carries them.
 
-The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the cube map $v\mapsto v^3$ into $S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$; being a map of $\OO_C$-modules it sends $\sum g_iv_i$ to $\sum g_iv_i^3$. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
+The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the relation $g\tensor v=1\tensor g^3v$ in the Frobenius pullback, whose $\OO_C$-module structure is twisted by $g\mapsto g^3$, makes $\psi(g\tensor v)=g\,v^3$ well defined, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
 $$
 \restrictionof{u}{U}=f_2^F+a\,f_1^F,\qquad a\in\OO_C(U),
 $$
@@ -769,11 +820,15 @@ $$
 $$
 which over the algebraic closure of $k(C)$ is $(\beta+a^{1/3}\alpha)^3$: one point of the fibre, of multiplicity $3$. So $Y=\operatorname{div}(t)$ meets each fibre in one point and $Y\cdot f=3$.
 
-That $Y$ is not a multiple of a section is where the reading of an earlier pass of this card failed. A section $\Sigma$ of class $C_0-f$ would have $\OO_X(\Sigma)=\OO_X(1)\otimes f^*\OO_C(-P)$, so
+That $Y$ is not a multiple of a section is this card's own, and it does not follow from step [](#s6){.pf-ref} alone: $H^0(C,\mathcal E\tensor\OO_C(-P))=0$ is a statement about one line bundle, while a section of $\pi$ with class $C_0-f$ carries a different twisting. Let $\Sigma$ be a section of $\pi$ with $\Sigma\equiv C_0-f$. By Proposition 2.9, $\Sigma$ corresponds to a surjection $\mathcal E\to L\to0$ with $\deg L=C_0\cdot\Sigma=0$, and by Proposition 2.6,
 $$
-H^0(X,\OO_X(\Sigma))=H^0(C,\mathcal E(-P))=0
+\OO_X(\Sigma)\cong\OO_X(1)\tensor\pi^*M,\qquad M=L\tensor\OO_C(-\mathfrak e),
 $$
-by step [](#s6){.pf-ref}, and no such $\Sigma$ is effective: the class holds $Y$, not a triple of a section. The distinction is exactly the hypothesis $\xi\ne0$. For the split bundle $\OO_C\oplus\OO_C(P)$ a section of that class does exist and the unique member is $3\Sigma$, which is why the count taken over the split bundle does not compute this member.
+where $\OO_C(\mathfrak e)=\wedge^2\mathcal E$ has degree $-e=1$; so $\deg M=\deg L+\deg(\OO_C(-\mathfrak e))=0-1=-1$. Every line bundle $M$ of degree $-1$ on $C$ has
+$$
+H^0(X,\OO_X(1)\tensor\pi^*M)=H^0(C,\mathcal E\tensor M)=0,
+$$
+because $0\to M(-P)\to\mathcal E\tensor M\to M\to0$ is exact and $H^0(M)=0$ and $H^0(M(-P))=0$ at degrees $-1$ and $-2$. So no section of $\pi$ lies in the class $C_0-f$, no such $\Sigma$ exists, and $Y$ is not a triple: the class $3C_0-3f$ holds $Y$ and not $3\Sigma$. The distinction is exactly the hypothesis $\xi\ne0$. For the split bundle $\OO_C\oplus\OO_C(P)$ the class $C_0-f$ does hold a section and the unique member of $3C_0-3f$ is three times it, which is why a count taken over the split bundle does not compute this member.
 
 Finally $h^0(\OO_X(3C_0-3f))=1$, so $Y$ is the only effective member. A divisor of $\OO_X(3)\otimes f^*\OO_C(-3P)$ is a section of that line bundle, and $H^0(X,\OO_X(3)\otimes f^*\OO_C(-3P))=H^0(C,S^3\mathcal E\otimes\OO_C(-3P))$; the subbundle $\OO_C\subset\mathcal E$ of step [](#s6){.pf-ref}, whose quotient is $\OO_C(P)$, gives $S^3\mathcal E$ a filtration whose successive quotients are $\OO_C(3P)$, $\OO_C(2P)$, $\OO_C(P)$ and $\OO_C$, so the twisted bundle has quotients $\OO_C$, $\OO_C(-P)$, $\OO_C(-2P)$ and $\OO_C(-3P)$, and
 $$
@@ -790,9 +845,13 @@ The curve $Y$ is integral, and $\restrictionof{\pi}{Y}:Y\to C$ is purely insepar
 ::: pf-proof
 Degree: $Y\cdot f=3$ by step [](#s7){.pf-ref}, and a fibre meets $Y$ in $\deg(\restrictionof{\pi}{Y})$ points counted with multiplicity, so the map is finite of degree $3$.
 
-Pure inseparability: by step [](#s7){.pf-ref}, over an open $U\subseteq C$ the form of $Y$ is $\beta^3+a\alpha^3$ with $a\in\OO_C(U)$, a cubic in the fibre coordinate whose zero locus is one point, of multiplicity $3$, over the algebraic closure. It is one point of residue degree $3$ over $k(C)$: the form $\beta^3+a\alpha^3$ has a root in $k(C)$ only if $-a$ is a cube there, and if $-a=b^3$ then $\restrictionof{t}{U}=(f_2+bf_1)^3$ would be the cube of a section of $\OO_X(1)\otimes f^*\OO_C(-P)$ over $U$, which cannot happen since that bundle has no nonzero section by step [](#s6){.pf-ref}. So the generic fibre of $\restrictionof{\pi}{Y}$ is a single point of residue degree $3$, the map is radicial, and being finite of degree $3=p$ it is purely inseparable.
+The local shape. By step [](#s7){.pf-ref}, over an open $U\subseteq C$ the equation of $Y$ in the fibre coordinate $[\alpha:\beta]$ is the cubic form $\beta^3+a\alpha^3$ with $a\in\OO_C(U)$, and over the algebraic closure of $k(C)$ that form is $(\beta+a^{1/3}\alpha)^3$: $Y$ meets each fibre over $U$ in one point, of multiplicity $3$.
 
-Integrality: the same argument shows $k(C)[\alpha,\beta]/(\beta^3+a\alpha^3)$ is a field of degree $3$ over $k(C)$, so $Y$ is integral, and it is reduced because $\beta^3+a\alpha^3$ is not a cube in $k(C)[\alpha,\beta]$.
+The coefficient $a$ is not a cube in $k(C)$, in the frame of step [](#s7){.pf-ref}; equivalently, $t$ is not the cube of a section of $\mathcal E\tensor\OO_C(-P)$ over any nonempty open subset of $C$, since a section $v=pf_1+qf_2$ has $v^3=q^3f_2^3+p^3f_1^3$ in characteristic $3$, so that $v^3=f_2^3+a\,f_1^3$ forces $q^3=1$, which forces $q=1$ because $x^3-1=(x-1)^3$ there, and $p^3=a$. This has to be proved over $U$ directly. Step [](#s6){.pf-ref} gives the vanishing of $H^0$ of one line bundle on $C$, and a line bundle on $X$ with no nonzero global section can still have a nonzero section over an open subset; so that vanishing says nothing about sections over the open set $U$. Suppose then that $a=b^3$ with $b\in k(C)$, and let $V\subseteq U$ be a nonempty open set on which $b$ is regular. Over $V$ one has $t=(f_2+bf_1)^3$, the cross terms vanishing in characteristic $3$, and $f_2+bf_1$ is a nowhere vanishing section of $\mathcal E\tensor\OO_C(-P)$ over $V$; so over $\pi^{-1}(V)$ the divisor $Y$ is three times the graph of $p\mapsto\langle f_2(p)+b(p)f_1(p)\rangle$ in $\PP(\mathcal E_p)$; the point is read off from the cubic form $t=(f_2+bf_1)^3$ in $S^3(\mathcal E\tensor\OO_C(-P))(V)$, not from the section $u$ of the Frobenius pullback. Let $\Sigma$ be the closure of that graph in $X$. The morphism $\Sigma\to C$ is finite, birational and of degree $1$, hence an isomorphism onto $C$, since $X$ is proper over the smooth curve $C$; so $\Sigma$ is a section of $\pi$. Now $Y$ and $3\Sigma$ agree on the dense open set $\pi^{-1}(V)$. The divisor $Y$ contains no fibre, because $t(p)\ne0$ in $S^3(\mathcal E\tensor\OO_C(-P))_p$ for every $p\in C$: the section $u$ of step [](#s7){.pf-ref} is nowhere vanishing and $\psi$ carries a nonzero vector to a nonzero form. The divisor $3\Sigma$ contains no fibre either, because $\Sigma$ is a section. Hence $Y=3\Sigma$, so $\Sigma\equiv C_0-f$, which step [](#s7){.pf-ref} excludes. So $a$ is not a cube in $k(C)$.
+
+Irreducibility and pure inseparability. A reducible cubic form in two variables over a field $K$ has a linear factor, hence a $K$-rational zero, and if $[1:x]$ is one then $x^3=-a$ and $\beta^3+a\alpha^3=(\beta-x\alpha)^3$, because $(\beta-x\alpha)^3=\beta^3-x^3\alpha^3$ in characteristic $3$; conversely a cube root of $-a$ makes the form a cube. So the form is reducible exactly when $-a$ is a cube in $k(C)$, that is exactly when $a$ is a cube, since $-1=(-1)^3$. Neither holds, so $\beta^3+a\alpha^3$ is irreducible over $k(C)$, and $k(Y)=k(C)[x]/(x^3+a)$ is a field of degree $3$ over $k(C)$: $Y$ is integral, hence reduced. The class $x$ of $\beta/\alpha$ satisfies $x^3=-a\in k(C)$, so $k(Y)/k(C)$ is purely inseparable of degree $3$, and $\restrictionof{\pi}{Y}$ is finite of that degree and purely inseparable.
+
+The normalization. By Example IV.2.4.3 the $k$-linear Frobenius twist $C^{(1)}$ of $C$ has function field $k(C)^{1/p}$, of degree $p=3$ over $k(C)$, and the purely inseparable extension $k(Y)$ of degree $3=p$ lies in $k(C)^{1/p}$, so $k(Y)=k(C)^{1/p}$ and the normalization of $Y$ is $C^{(1)}$. By Proposition IV.2.5 that twist is isomorphic to $C$ as an abstract scheme and has genus $3$.
 
 Its arithmetic genus is $4$ by step [](#s9){.pf-ref}.
 :::
@@ -800,7 +859,7 @@ Its arithmetic genus is $4$ by step [](#s9){.pf-ref}.
 :::
 
 ::: {.pf-step #s9}
-Every effective divisor $Y\equiv3C_0-3f$ on a ruled surface over a curve of genus $3$ has $p_a(Y)=1-3e$, and on the exercise's surface, where $e=-1$ and so $p_a=4$, no nonsingular curve lies in the class. The unique member $Y$ of step [](#s7){.pf-ref} is therefore singular: it is an integral curve whose normalization is $C$, and its genus defect is $1$, concentrated at one point.
+Every effective divisor $Y\equiv3C_0-3f$ on a ruled surface over a curve of genus $3$ has $p_a(Y)=1-3e$, and on the exercise's surface, where $e=-1$ and so $p_a=4$, no nonsingular curve lies in the class. The unique member $Y$ of step [](#s7){.pf-ref} is therefore singular: it is an integral curve whose normalization is the Frobenius twist $C^{(1)}$, isomorphic to $C$ as an abstract scheme, and its genus defect is $1$, at one singular point.
 
 ::: pf-proof
 This step is this card's own, and no source read carries it.
@@ -812,7 +871,7 @@ $$
 $$
 Y\cdot K_X=(3C_0-3f)\cdot\qty(-2C_0+(2g-2-e)f)=-6C_0^2+3(2g-2-e)(C_0\cdot f)+6(f\cdot C_0)=3e+6g,
 $$
-the terms in $f^2$ vanishing. Adjunction, Proposition 1.5, then gives
+the terms in $f^2$ vanishing. The arithmetic genus of an effective divisor on a nonsingular surface is $2p_a(D)-2=D\cdot(D+K_X)$, with $p_a(D)=1-\chi(\OO_D)$; that is Exercise 1.3(a), and it is the statement used here, because $Y$ need not be nonsingular. Proposition 1.5 states the same formula for a nonsingular curve only, and is used below on the hypothetical nonsingular $Y$. Exercise 1.3(a) gives
 $$
 2p_a(Y)-2=Y^2+Y\cdot K_X=-6e+6g-18,\qquad p_a(Y)=3g-8-3e,
 $$
@@ -820,11 +879,11 @@ which for $g=3$ is $p_a(Y)=1-3e$. In particular $2p_a(Y)-2=-6e$ is divisible by 
 
 A nonsingular curve in the class can be excluded in both cases of the projection. Purely inseparably: if $\restrictionof{\pi}{Y}$ is purely inseparable, then $g(Y)=g(C)=3$ by Proposition IV.2.5, which makes a purely inseparable finite morphism of curves an isomorphism of abstract schemes; then $2g(Y)-2=4$, which is not divisible by $3$, while $-6e$ is. So on no ruled surface of this kind, for any $e$, does the class hold a nonsingular curve whose projection to $C$ is purely inseparable. Separably: if $\restrictionof{\pi}{Y}$ is separable, Riemann--Hurwitz, Corollary IV.2.4, gives $2g(Y)-2=3(2g(C)-2)+\deg R=12+\deg R\ge12$; on the exercise's surface $e=-1$, so $2p_a(Y)-2=6$, which is below $12$. Since $Y\cdot f=3$, the projection is finite of degree $3$ and one of the two cases holds, so no nonsingular curve has the class at all. This is the failure of the printed statement of (c).
 
-The genus defect of the member. By step [](#s8){.pf-ref} the curve $Y$ is integral and $\restrictionof{\pi}{Y}$ is purely inseparable of degree $3=p$, so $k(D)/k(C)$ is purely inseparable of degree $3$. A purely inseparable extension of degree $p$ satisfies $k(D)^p\subseteq k(C)$, and $[k(C):k(C)^p]=p$ for the function field of a curve in characteristic $p$, so $k(D)^p=k(C)$ and $k(D)=k(C)^{1/p}$. The curve with function field $k(C)^{1/p}$ is the Frobenius twist $C^{(1)}$, which is $C$ with its structure morphism composed with the Frobenius of the base field, hence a curve of genus $3$. Therefore the normalization of $Y$ is $C$, and with $p_a(Y)=4$ from the count above,
+The genus defect of the member. By step [](#s8){.pf-ref} the curve $Y$ is integral and $\restrictionof{\pi}{Y}$ is purely inseparable of degree $3=p$, so $k(Y)/k(C)$ is purely inseparable of degree $3$. The curve with function field $k(C)^{1/p}$ is the Frobenius twist $C^{(1)}$ of Example IV.2.4.3, of degree $p$ over $C$, and by Proposition IV.2.5 it is isomorphic to $C$ as an abstract scheme, hence of genus $3$; step [](#s8){.pf-ref} identifies it with the normalization of $Y$. So the normalization of $Y$ is $C$, and with $p_a(Y)=4$ from the count above,
 $$
 \delta:=p_a(Y)-p_a(C)=4-3=1 .
 $$
-This is a definitional identity for an integral curve, and the content lies in its two inputs, both computed here: $p_a(Y)=4$ by adjunction on the surface, and $p_a(C)=3$ as the genus of the normalization, which the purely inseparable projection supplies. The value $\delta$ is the sum $\sum_P\delta_P$ of the local invariants $\delta_P=\operatorname{length}(\widetilde{\OO}_{D,P}/\OO_{D,P})$ over the singular points of $Y$, and each $\delta_P\ge1$; since the sum is $1$, the singular locus of $Y$ is exactly one point, of $\delta$-invariant $1$.
+This is the genus defect of an integral curve, and the content lies in its two inputs, both computed here: $p_a(Y)=4$ by the arithmetic-genus form of adjunction on the surface, and $p_a(C)=3$ as the genus of the normalization, which the purely inseparable projection supplies. By Exercise IV.1.8(a) the arithmetic genus of an integral projective curve splits as $p_a(Y)=p_a(\widetilde Y)+\sum_P\delta_P$, the sum over the points of $Y$, with $\delta_P=\operatorname{length}(\widetilde{\OO}_{Y,P}/\OO_{Y,P})$ and $\delta_P=0$ at a nonsingular point; so $\delta=\sum_P\delta_P$ is the sum of the local invariants at the singular points, each at least $1$, and since the sum is $1$, the singular locus of $Y$ is exactly one point, of $\delta$-invariant $1$.
 
 So the class holds an integral curve, singular in one point, with purely inseparable degree-$3$ projection to $C$: the curve the exercise asks for, except that it is not nonsingular, which is why the printed adjective fails.
 :::
@@ -873,9 +932,9 @@ Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 7
 
 Qihong Xie, *Counterexamples to the Kawamata-Viehweg Vanishing on Ruled Surfaces in Positive Characteristic*, arXiv:math/0702554v5 (8 October 2008): Example 3.1, is the construction of part (c), the section with $\OO_X(E)\cong\OO_X(1)$ and $E^2=\deg\mathcal E$, the split Frobenius pullback, and the curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$ disjoint from the section, which he calls irreducible and smooth; step [](#s7){.pf-ref} identifies it as the unique member $Y$ of the class, integral and singular in one point by steps [](#s8){.pf-ref} and [](#s9){.pf-ref}, so his irreducibility is right and his smoothness claim is false; Lemma 4.4(iii) is the pure inseparability of $\restrictionof{f}{R}$ for an irreducible $R$ with $R^2<0$. His Example 3.1 is stated for a base curve satisfying the Tango condition, which is how he produces the extension class; here the class is $\xi$ of part (b), so the construction applies as it stands with $p=3$ and $\mathcal L=\OO_C(P)$. His assertion that $C'$ is smooth over $k$ is false in this case, by the adjunction count of step [](#s9){.pf-ref}; for $p=3$, $\deg\mathcal L=1$ and $g(C)=3$ his curve has arithmetic genus $4$ and normalization $C$ of genus $3$.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2". Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15 reproduces (a) and has garbled (b) and (c). Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.15, computes (a) as Hartshorne 1971 does, and for (c) writes only "To see the curve $Y\equiv3C_0-3f$ is inseparable is Miyanishi, *Open Algebraic Surfaces*, lemma 2.5.2.2", adding that $Y$ is "some section of $C$"; that is a pointer to another book and a remark, and it does not prove the curve exists. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.15 reproduces (a) and draws the two-dimensional count of (b); its (c) reads "Clearly $\deg\pi=Y.f=3$. So $\pi$ is not separable with inseparable degree $3$", which infers inseparability from the degree alone, and then concludes that $Y$ is a set-theoretic section of $C$. A curve in the class $3C_0-3f$ that is isomorphic to $C$ would have $p_a=3$, against $p_a=4$ of step [](#s9){.pf-ref}, so that conclusion cannot hold either. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 15 of §2. The record here is bounded to the sources named: it establishes that no retained solution set proves (c), and makes no claim about a proof outside them.
 :::
 
 ::: {.remark}
-The book's (c), Exercise V.2.15(c), reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the word that is false is "nonsingular". The counterexample is the curve of Xie's Example 3.1. Pulling his extension back by Frobenius, he obtains a section $t$ of $\OO_X(p)\otimes f^*\mathcal L^{-p}$ and a curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$, which for $p=3$ and $\mathcal L=\OO_C(P)$ is the class $3C_0-3f$; step [](#s7){.pf-ref} shows that this curve is the class's only effective member, and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} that it is integral, that $\pi$ restricts to it as a purely inseparable morphism of degree $3$, and that its arithmetic genus is $4$ while its normalization is $C$ of genus $3$. An integral curve whose normalization has genus $3$ and whose arithmetic genus is $4$ is singular, with $\delta=1$ at one point, so Xie's $C'$ is the curve the exercise asks for except in the one respect the exercise names. Independently, no nonsingular curve can lie in the class: $2p_a(Y)-2=-6e$ is divisible by $3$ for every invariant $e$, while a purely inseparable degree-$3$ projection would give $g(Y)=g(C)=3$ and $2g(Y)-2=4$, and at $e=-1$ a separable projection would need $2g(Y)-2=6$ to be at least $12$. The statement above therefore asks for an integral curve, and the printed "nonsingular" is recorded here as false. Xie's Example 3.1 asserts the smoothness of his $C'$ as well, and it fails by the same computation.
+The book's (c), Exercise V.2.15(c), reads "Show that $X$ contains a nonsingular curve $Y\equiv3C_0-3f$, such that $\pi:Y\to C$ is purely inseparable", and the word that is false is "nonsingular". The counterexample is the curve of Xie's Example 3.1. Pulling his extension back by Frobenius, he obtains a section $t$ of $\OO_X(p)\otimes f^*\mathcal L^{-p}$ and a curve $C'$ with $\OO_X(C')\cong\OO_X(p)\otimes f^*\mathcal L^{-p}$, which for $p=3$ and $\mathcal L=\OO_C(P)$ is the class $3C_0-3f$; step [](#s7){.pf-ref} shows that this curve is the class's only effective member, and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} that it is integral, that $\pi$ restricts to it as a purely inseparable morphism of degree $3$, and that its arithmetic genus is $4$ while its normalization is the Frobenius twist $C^{(1)}$, of genus $3$. An integral curve whose normalization has genus $3$ and whose arithmetic genus is $4$ is singular, with $\delta=1$ at one point, so Xie's $C'$ is the curve the exercise asks for except in the one respect the exercise names. Independently, no nonsingular curve can lie in the class: $2p_a(Y)-2=-6e$ is divisible by $3$ for every invariant $e$, while a purely inseparable degree-$3$ projection would give $g(Y)=g(C)=3$ and $2g(Y)-2=4$, and at $e=-1$ a separable projection would need $2g(Y)-2=6$ to be at least $12$. The statement above therefore asks for an integral curve, and the printed "nonsingular" is recorded here as false. Xie's Example 3.1 asserts the smoothness of his $C'$ as well, and it fails by the same computation.
 :::
