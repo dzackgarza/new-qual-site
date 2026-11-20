@@ -12,10 +12,12 @@ topics:
 ::: {.proposition}
 For $f\colon I\to\RR$ on an interval $I$:
 $$
-f \text{ differentiable with bounded } f' \implies f \text{ Lipschitz} \implies f \text{ absolutely continuous} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
+f \text{ differentiable with bounded } f' \iff f \text{ Lipschitz} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
 $$
 
 :::
+
+The equivalence is [[PR-LTRLV]], a Lipschitz function is uniformly continuous with $\delta=\varepsilon/C$ ([[PR-SX6NO]]), and a uniformly continuous function is continuous ([[D-WGYSB]]).
 
 ## Discontinuity sets
 
