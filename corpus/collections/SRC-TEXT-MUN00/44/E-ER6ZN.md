@@ -97,6 +97,28 @@ audit:
     only finitely many nonzero coordinates, so the preimage of a box-open set is a finite
     intersection of open sets together with all of I or the empty set. What was not re-read: the
     search record for published solutions, which the audit events above carry.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read of (a), (b) and (c), with one repair. (a): $\RR$ is a countable union of the
+    compact intervals $[-n,n]$, so a continuous image of it is a countable union of compact
+    subspaces; and $\RR^\omega$ is not, since for a countable closed cover by compact sets the
+    $n$-th projection of the $n$-th set misses some $x_n$, and the point $(x_n)$ lies in none of
+    them. (b): the cubes $K_m$ exhaust $\RR^\infty$, each receives a surjection from $I$ ending
+    and beginning at $\mathbf 0$, and the pasting over the locally finite closed cover
+    $\{[m-1,m]\}$ gives a surjection from $[0,\infty)$, composed with $t\mapsto\abs t$. (c): the
+    repair is to the separability step. It read "a separable space has a countable dense subset
+    and hence, being metrizable here, a countable basis", a route available for the uniform
+    topology only, while the conclusion is claimed for the box topology as well; a separable
+    space has countably many pairwise disjoint nonempty open sets outright, each containing a
+    point of the dense set and no point lying in two of them. With that, $\RR$ separable rules out
+    a continuous surjection in either topology, and the $q_m$ are continuous into the box
+    topology because a box-open set's trace on $\RR^\infty$ constrains only finitely many
+    coordinates of $K_m$. Citation by number: §44 Exercise 3, Theorem 26.5, Theorem 27.3,
+    Exercise 18.9 and §44 Exercise 1 (card E-SADP0), read in
+    `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
@@ -166,7 +188,7 @@ Compose the surjection $F$ of step [](#paste){.pf-ref} with $t\mapsto\abs{t}$, w
 $\RR^{\omega}$ with the uniform topology, and hence also with the box topology, is not separable.
 
 ::: pf-proof
-The set $D=\theset{0,1}^{\omega}$ is uncountable, and distinct points of $D$ differ in some coordinate, so their uniform distance is $1$. Hence the balls $B_{\bar\rho}(d,1/3)$ for $d\in D$ are pairwise disjoint and nonempty, and they are open in the uniform topology. That topology is coarser than the box topology, so these sets are box-open as well. A separable space has a countable dense subset and hence, being metrizable here, a countable basis; in a space with a countable basis every family of pairwise disjoint nonempty open sets is countable, since each member contains a basis element and distinct members contain distinct ones. So neither the uniform nor the box topology on $\RR^{\omega}$ is separable.
+The set $D=\theset{0,1}^{\omega}$ is uncountable, and distinct points of $D$ differ in some coordinate, so their uniform distance is $1$. Hence the balls $B_{\bar\rho}(d,1/3)$ for $d\in D$ are pairwise disjoint and nonempty, and they are open in the uniform topology. That topology is coarser than the box topology, so these sets are box-open as well. In a separable space every family of pairwise disjoint nonempty open sets is countable: each member contains a point of the countable dense set, and a point lies in at most one member of such a family. So neither topology on $\RR^\omega$ is separable. So neither the uniform nor the box topology on $\RR^{\omega}$ is separable.
 :::
 :::
 
