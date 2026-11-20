@@ -23,6 +23,21 @@ audit:
     p. 108, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk the print sets before "1." was read from the page image of printed p. 108 (PDF
+    p. 127), and the seven-part statement was compared with the printed item on pp. 108--109: the
+    wording is the print's, including the three hints and the paragraph that introduces the
+    Koebe--Bieberbach theorem. The seven arguments were read and hold: (a) $f_n(z)=z/n$ and (b)
+    $f_\epsilon(z)=\epsilon(e^{z/\epsilon}-1)$ are the two counterexample families; (c) is the area
+    theorem, with $\abs{K_\rho}=\pi(\rho^{-2}-\sum_{n\ge1}n\abs{c_n}^2\rho^{2n})$ correctly obtained
+    from $\frac{1}{2i}\int_\gamma\overline w\,dw$ with the sign of the clockwise boundary; (d) the
+    square root $\psi$ and $g(z)=z\psi(z^2)$; (e) $\abs{b_2}\le1$ from (c) applied to $1/g$ and the
+    equality case $\abs{c_n}=0$ for $n\ge2$; (f) $\abs{z_j-c_0}\le2$ for the two omitted values; (g)
+    $1/f$ avoiding $0$ and $1/w$. Not checked: whether the nested step labels under `s1`, `s3`, `s7`
+    render as intended, which was not part of this pass.
 ---
 
 ::: {.exercise}
@@ -61,6 +76,10 @@ $$
 
 (g) Complete the proof of the theorem.
 [Hint: If $f$ avoids $w$, then $1/f$ avoids $0$ and $1/w$.]
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 3, Problem 1, printed p. 108).
 :::
 
 ::: {.solution}
