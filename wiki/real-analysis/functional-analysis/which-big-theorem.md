@@ -25,14 +25,14 @@ The bounded inverse theorem is the open mapping theorem for a bijection: [[T-FO2
 ## Consequences
 
 ::: {.corollary}
-If $X$ is a Banach space and $T_n\colon X\to Y$ are bounded linear maps such that $Tx\coloneqq\lim_n T_nx$ exists for every $x\in X$, then $T$ is a bounded linear map.
+If $X$ is a Banach space and $T_n\colon X\to Y$ are bounded linear maps such that $Tx\coloneqq\lim_n T_nx$ exists for every $x\in X$, then $T$ is a bounded linear map ([[FT-JRRRW|uniform boundedness]]; [@Fol99, Theorem 5.13]).
 
 :::
 
 The sequential test for a closed graph, and its use to prove boundedness without an explicit estimate, is on [[real-analysis/appendices/functional-analysis|Appendix: Functional analysis]].
 
 ::: {.corollary}
-If $X$ is a normed space and $x\neq y$ in $X$, there is $f\in X^*$ with $f(x)\neq f(y)$.
+If $X$ is a normed space and $x\neq y$ in $X$, there is $f\in X^*$ with $f(x)\neq f(y)$ ([[T-OW2QG]]; [@Fol99, Theorem 5.8(c)]).
 In particular, the weak topology on $X$ is Hausdorff.
 
 :::
