@@ -30,6 +30,16 @@ audit:
     tmp/sources/hatcher-2002-algebraic-topology.pdf, printed page = PDF page - 9: Theorem 4D.1 on
     p. 432 (PDF 441), the Gysin sequence on p. 438 (PDF 447) and the identification of the Euler
     class with the top Chern class on p. 444 (PDF 453), each as cited.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; Theorem 4D.1 (Leray--Hirsch), the Gysin sequence of §4.D and Corollary 4D.3 are cited by
+    number, and the Gysin sequence, which the book leaves unnumbered, by the section that
+    states it, each read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier
+    events keep their text (QUAL-11); these citations supersede their page locators. No step
+    changes.
+
 ---
 
 ::: {.problem}
@@ -37,7 +47,7 @@ Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\CC^k); 
 :::
 
 ::: {.solution}
-This is Hatcher Exercise 4.D.3, computed as in Corollary 4D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 4D.1 (Leray--Hirsch, p. 432), the Gysin sequence (p. 438) and the identification of the Euler class with the top Chern class (p. 444).
+This is Hatcher Exercise 4.D.3, computed as in Corollary 4D.3. No published solution set is transcribed: the argument is the card's own, and the numbered results are Hatcher's Theorem 4D.1 (Leray--Hirsch), the Gysin sequence (p. 438) and the identification of the Euler class with the top Chern class (p. 444).
 
 ::: pf
 
@@ -61,7 +71,7 @@ The tautological $(n-1)$-frame trivializes the orthogonal complement of $E$: the
 There is a class $x_{2k-2n+1}\in H^{2k-2n+1}(V_{n}(\CC^{k});\ZZ)$ restricting to a generator of the cohomology of each fibre, and the Gysin sequence of the oriented sphere bundle splits into short exact sequences.
 
 ::: pf-proof
-The Euler class is the obstruction to a class restricting to a generator on every fibre, so its vanishing produces such an $x$; this is read off the Gysin sequence of the oriented sphere bundle $S(E)\to V_{n-1}(\CC^{k})$ (p. 438), whose fibre sphere is $S^{2k-2n+1}$ and whose Euler class is zero by step [](#trivial){.pf-ref}. With the Euler class zero the multiplication by it in the Gysin sequence is the zero map, and the sequence breaks into short exact sequences $0\to H^{q}(V_{n-1})\to H^{q}(V_{n})\to H^{q-(2k-2n+1)}(V_{n-1})\to0$.
+The Euler class is the obstruction to a class restricting to a generator on every fibre, so its vanishing produces such an $x$; this is read off the Gysin sequence of the oriented sphere bundle $S(E)\to V_{n-1}(\CC^{k})$ (§4.D), whose fibre sphere is $S^{2k-2n+1}$ and whose Euler class is zero by step [](#trivial){.pf-ref}. With the Euler class zero the multiplication by it in the Gysin sequence is the zero map, and the sequence breaks into short exact sequences $0\to H^{q}(V_{n-1})\to H^{q}(V_{n})\to H^{q-(2k-2n+1)}(V_{n-1})\to0$.
 :::
 :::
 
@@ -69,7 +79,7 @@ The Euler class is the obstruction to a class restricting to a generator on ever
 $H^{*}(V_{n}(\CC^{k});\ZZ)$ is a free module over $H^{*}(V_{n-1}(\CC^{k});\ZZ)$ with basis $\{1,x_{2k-2n+1}\}$.
 
 ::: pf-proof
-Leray--Hirsch (Theorem 4D.1, p. 432) applies to a fibre bundle whose fibre cohomology is free on classes restricting to generators: here the fibre is a sphere, so its cohomology is free on $1$ and the generator, and step [](#gysin){.pf-ref} supplies a global class restricting to the generator. The theorem concludes that $H^{*}$ of the total space is free over $H^{*}$ of the base with those classes as a basis.
+Leray--Hirsch (Theorem 4D.1) applies to a fibre bundle whose fibre cohomology is free on classes restricting to generators: here the fibre is a sphere, so its cohomology is free on $1$ and the generator, and step [](#gysin){.pf-ref} supplies a global class restricting to the generator. The theorem concludes that $H^{*}$ of the total space is free over $H^{*}$ of the base with those classes as a basis.
 :::
 :::
 
@@ -77,7 +87,7 @@ Leray--Hirsch (Theorem 4D.1, p. 432) applies to a fibre bundle whose fibre cohom
 $H^{*}(V_{n}(\CC^{k});\ZZ)\cong\Lambda_{\ZZ}[x_{2k-2n+1},x_{2k-2n+3},\dots,x_{2k-1}]$.
 
 ::: pf-proof
-Induct on $n$ from $V_{1}(\CC^{k})=S^{2k-1}$, whose cohomology is the exterior algebra on one generator in degree $2k-1$, as in the computation of Corollary 4D.3 (p. 434). At each step step [](#hirsch){.pf-ref} multiplies the number of additive generators by two, adjoining a generator in degree $2k-2i+1$ for the step from $V_{i-1}$ to $V_{i}$. Each such generator has odd degree, so graded commutativity gives $x^{2}=-x^{2}$, that is $x^{2}=0$; together with freeness this says the products of distinct generators form an additive basis and the algebra is the exterior algebra on them.
+Induct on $n$ from $V_{1}(\CC^{k})=S^{2k-1}$, whose cohomology is the exterior algebra on one generator in degree $2k-1$, as in the computation of Corollary 4D.3. At each step step [](#hirsch){.pf-ref} multiplies the number of additive generators by two, adjoining a generator in degree $2k-2i+1$ for the step from $V_{i-1}$ to $V_{i}$. Each such generator has odd degree, so graded commutativity gives $x^{2}=-x^{2}$, that is $x^{2}=0$; together with freeness this says the products of distinct generators form an additive basis and the algebra is the exterior algebra on them.
 :::
 :::
 

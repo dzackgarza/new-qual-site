@@ -60,6 +60,16 @@ audit:
     Phi(e) = U^2, and since e generates, U^2 generates, so the integer in alpha^2 = H(p) beta can
     be taken as +-1. The n = 1 case is separated, as the card had it, because the vanishing used
     for n > 1 fails there. Statement and hint unchanged; Adams' theorem is quoted, not used.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; the Gysin sequence of §4.D and Corollaries 4D.9 and 4D.3 are cited by
+    number, and the Gysin sequence, which the book leaves unnumbered, by the section that
+    states it, each read in `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier
+    events keep their text (QUAL-11); these citations supersede their page locators. No step
+    changes.
+
 ---
 
 ::: {.problem}
@@ -87,7 +97,7 @@ If $k=0$ the bundle is a two-sheeted covering of the simply connected $S^n$, so 
 Cup product with the Euler class $e\in H^{k+1}(S^n;\ZZ)$ is an isomorphism $H^0(S^n)\to H^{k+1}(S^n)$, and $H^{k+1}(S^n)\cong\ZZ$.
 
 ::: pf-proof
-The Gysin sequence of the oriented sphere bundle (printed p.~438) reads
+The Gysin sequence of the oriented sphere bundle (§4.D) reads
 $$
 \cdots\to H^k(S^m)\xrightarrow{p_!}H^0(S^n)\xrightarrow{\smile e}H^{k+1}(S^n)\xrightarrow{p^*}H^{k+1}(S^m)\to\cdots
 $$
@@ -121,7 +131,7 @@ Coning off each fiber of the sphere bundle gives a disc bundle: over each trivia
 The Thom class $U$, regarded as a class in $H^n(C_p;\ZZ)$, generates.
 
 ::: pf-proof
-The Thom isomorphism of Corollary 4D.9 (printed p.~441) is $\Phi\colon H^i(S^n)\to H^{i+n}(V,S(V))$, $\Phi(b)=p^*(b)\smile U$. At $i=0$ with $b=1$ this gives $\Phi(1)=U$, so $U$ is the image under an isomorphism of a generator of $H^0(S^n)=\ZZ$, hence generates $H^n(V,S(V))\cong H^n(C_p)\cong\ZZ$. A generator of the middle cohomology of the cone is what the definition of the Hopf invariant requires.
+The Thom isomorphism of Corollary 4D.9 is $\Phi\colon H^i(S^n)\to H^{i+n}(V,S(V))$, $\Phi(b)=p^*(b)\smile U$. At $i=0$ with $b=1$ this gives $\Phi(1)=U$, so $U$ is the image under an isomorphism of a generator of $H^0(S^n)=\ZZ$, hence generates $H^n(V,S(V))\cong H^n(C_p)\cong\ZZ$. A generator of the middle cohomology of the cone is what the definition of the Hopf invariant requires.
 :::
 
 :::
@@ -131,7 +141,7 @@ The Thom isomorphism of Corollary 4D.9 (printed p.~441) is $\Phi\colon H^i(S^n)\
 $\Phi(e)=U\smile U$ in $H^{2n}(V,S(V);\ZZ)$, and $H(p)=\pm1$.
 
 ::: pf-proof
-The identity at the end of §4.D (printed p.~444) says that under the Thom isomorphism the Euler class corresponds to the square of the Thom class, $\Phi(e)=U\smile U$. Since $\Phi$ is an isomorphism and $e$ generates $H^n(S^n)$ by step [](#gysin){.pf-ref}, $U^2$ generates $H^{2n}(C_p;\ZZ)\cong\ZZ$. The Hopf invariant of $p$ is defined (printed p.~427) by writing $\alpha^2=H(p)\beta$ for a generator $\alpha$ of $H^n(C_p)$ and a generator $\beta$ of $H^{2n}(C_p)$; taking $\alpha=U$ makes $\alpha^2=U^2$ a generator, so the integer $H(p)$ is $\pm1$.
+The identity at the end of §4.D says that under the Thom isomorphism the Euler class corresponds to the square of the Thom class, $\Phi(e)=U\smile U$. Since $\Phi$ is an isomorphism and $e$ generates $H^n(S^n)$ by step [](#gysin){.pf-ref}, $U^2$ generates $H^{2n}(C_p;\ZZ)\cong\ZZ$. The Hopf invariant of $p$ is defined (printed p.~427) by writing $\alpha^2=H(p)\beta$ for a generator $\alpha$ of $H^n(C_p)$ and a generator $\beta$ of $H^{2n}(C_p)$; taking $\alpha=U$ makes $\alpha^2=U^2$ a generator, so the integer $H(p)$ is $\pm1$.
 :::
 
 :::
