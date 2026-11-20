@@ -47,6 +47,18 @@ audit:
     2006), covers a selection of the Exercises of Chapters 1--10 and not the Problems, and no
     published solution of this Problem was located, so the sentence now states that and its
     consequence, that the argument is the card's own. Statement and argument are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search the sentence above asserts, which the reader asked for where no published
+    solution set covers the Problem. Read: the head of R. C. Rhoades, *Solutions/Hints to the
+    Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose abstract describes it as
+    solutions or hints to "many of the exercises", with one part per chapter. Searched the open web
+    for a set answering the end-of-chapter Problems of this book: no document answering Chapter 8,
+    Problem 3 was found. This search located no published set answering this Problem, and none is
+    retained in this repository. Not checked: whether such a set exists outside what a web search
+    reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
