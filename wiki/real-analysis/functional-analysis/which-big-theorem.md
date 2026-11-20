@@ -40,6 +40,4 @@ In particular, the weak topology on $X$ is Hausdorff.
 
 ## Hilbert spaces
 
-In a Hilbert space $H$, every closed subspace $M$ has an orthogonal projection $P\colon H\to M$ with $H = M\oplus M^\perp$, the Riesz representation theorem identifies $H^*$ with $H$, and for an orthonormal basis $\theset{e_n}$ Parseval's identity gives $\norm x^2 = \sum_n\abs{\inner x{e_n}}^2$.
-In particular, for a bounded linear functional $f$ on a closed subspace $M$, $f\circ P$ extends $f$ to $H$ with $\norm{f\circ P}=\norm f$.
-See [[real-analysis/functional-analysis/banach-and-hilbert|Banach and Hilbert spaces]].
+The Hilbert-space forms of these theorems are on [[real-analysis/functional-analysis/banach-and-hilbert|Banach and Hilbert spaces]].
