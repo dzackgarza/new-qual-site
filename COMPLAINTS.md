@@ -9935,3 +9935,46 @@ Not linked, because no card states them, and the page states the result instead:
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card. The page image was produced with `pdftoppm -f 15 -l 15 -r 200` and its folio, 335, read at the head of the page.
 
 **Uncertainty.** Read: the page image, Definition 3, and the visible context (Definition 4 on centres and finite transforms, Lemma 11). Not read: the card's five remaining steps, Lemma 12, and the use the card makes of Lemma 10 at printed pp. 334--335, which I have taken from its own event. #168's acceptance remains unmet for V.5.6, and V.5.8(b) and V.4.16's unread steps are not reached.
+
+**2026-11-19, seventh item: which §4.2 cards carry a reading on main, and the twenty-four that do not.** Lane hlg7
+owns §4.2; this records what the cards themselves show, so that the two lanes do not read the same card twice.
+
+Measured from the audit blocks on `main`, counting a card as read where it carries a `solution-reviewed` event with a
+note dated 2026-11-18 or later: **fifteen do.** `E-HAT-4.2-3`, `-11`, `-12`, `-14`, `-18`, `-20`, `-22`, `-23`,
+`-24`, `-26`, `-28`, `-31`, `-34`, `-38`, `-39`. Of those, hlg7's are `-3`, `-11` and `-34` plus the ones its commits
+of 2026-11-19 restructured; the other ten are this stream's, each repaired or transcribed from a published set, with
+its commit named in the previous item's table.
+
+**Twenty-four carry no such event**, and their latest review note is from 2026-11-01 or 2026-11-02 — the statement
+layer's pass, not a reading of the proof. They are:
+
+| card | printed p. | this stream's reading |
+| --- | --- | --- |
+| `E-HAT-4.2-1` | 389 | read correct |
+| `E-HAT-4.2-2` | 389 | read correct |
+| `E-HAT-4.2-4` | 389 | read correct (the shrinking union of spheres, with Eda–Kawamura cited for the vanishing) |
+| `E-HAT-4.2-5` | 389 | read correct ($f_*=\begin{psmallmatrix}1&1\\0&1\end{smallmatrix}$, the cover as a telescope, the sequence and the three actions) |
+| `E-HAT-4.2-6` | 389 | read correct |
+| `E-HAT-4.2-7` | 389 | read correct ($G_1$-CW construction, no $B$ field) |
+| `E-HAT-4.2-8` | 389 | read correct |
+| `E-HAT-4.2-9` | 389 | read correct |
+| `E-HAT-4.2-10` | 389 | read correct ($\pi_n'=\ZZ/(p(1))$, with the four examples) |
+| `E-HAT-4.2-13` | 390 | read correct, and it already cites Sam with the right caveat about the relative Hurewicz step |
+| `E-HAT-4.2-15` | 390 | read correct |
+| `E-HAT-4.2-16` | 390 | read correct |
+| `E-HAT-4.2-17` | 390 | read correct in structure: the cellular model, $C_n=Z_n$, the extension over $X^{n+1}$, and Whitehead on $X\times I$ |
+| `E-HAT-4.2-19` | 391 | read correct ($\widetilde X$ contractible, pair $n$-connected, $\pi_n(\widetilde X^n)\cong H_{n+1}(\widetilde X,\widetilde X^n)$ free) |
+| `E-HAT-4.2-21` | 390 | read correct, and its note that Sam's entry is not a proof is accurate |
+| `E-HAT-4.2-25` | 391 | read correct |
+| `E-HAT-4.2-27` | 390 | read correct (exactness gives $\operatorname{im}j_*=\ker\partial$; Lemma 4.39 gives centrality) |
+| `E-HAT-4.2-29` | 391 | read correct (parts (a), (b), (c) of the lens-space classification) |
+| `E-HAT-4.2-30` | 392 | read correct (Proudfoot's four shapes; the card's uniform $h_t$ trivialisation) |
+| `E-HAT-4.2-32` | 392 | read correct; the printed citation added at `c0c2c5dd6e` |
+| `E-HAT-4.2-33` | 392 | read correct (Sam's double induction through Exercise 31) |
+| `E-HAT-4.2-35` | 392 | read correct ($S^1$ inside the right $S^3$ action, $\CC$ central, fibres $S^3/S^1$) |
+| `E-HAT-4.2-36` | 392 | read correct (the Whitehead product as the attaching map; the lift to the cover gives $g-fg$) |
+| `E-HAT-4.2-37` | 392 | read correct ($F(x,y)=\mu(f(x),g(y))$ extends $f\vee g$ over the product) |
+
+None of the twenty-four needed repair, which is why none carries a review event: an unchanged card is not a commit.
+The reading is real — each was checked against its printed page — and this table is where it is recorded, under this
+stream's own lines, so that hlg7 can take anything in §4.2 that this list does not cover without duplicating it.

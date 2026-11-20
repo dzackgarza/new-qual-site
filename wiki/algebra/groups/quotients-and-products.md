@@ -11,8 +11,6 @@ topics:
 
 ## The isomorphism theorems
 
-The three isomorphism theorems are the whole of the quotient calculus this chapter uses: a homomorphism is read through the quotient by its kernel, and a subgroup statement is carried through a quotient by the correspondence theorem.
-
 [[T-I5N43]]
 
 [[T-NFQBO]]
@@ -21,7 +19,7 @@ The three isomorphism theorems are the whole of the quotient calculus this chapt
 
 ## Direct products
 
-A direct product decomposition is exhibited by subgroups rather than by a map, and the recognition theorem turns the subgroup hypotheses into the isomorphism; classifying a group up to isomorphism becomes the search for normal subgroups of prescribed orders and intersections.
+Classifying a group up to isomorphism becomes the search for normal subgroups of prescribed orders and intersections.
 
 [[E-R6I7G]]
 
