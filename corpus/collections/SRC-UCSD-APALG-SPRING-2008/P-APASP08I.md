@@ -54,6 +54,16 @@ audit:
     in step #table as the proof; the SF package is still not run. Checked: the non-injectivity
     identity for n = 0,...,20, the values at n = 2,...,9, and the six tableaux by an
     independent enumeration of the nine candidate shapes.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (a) asks for the expansion to be checked by means of the SF package, and the check is now
+    performed: SageMath 10.8, SymmetricFunctions(QQ), s[2,2]*s[2,1] returns
+    s[2,2,2,1]+s[3,2,1,1]+s[3,2,2]+s[3,3,1]+s[4,2,1]+s[4,3], and comparing it with the six-term
+    expansion returns True; the input and output are recorded in the solution. The earlier events
+    stand as written, no run existing when they were written. The tableaux enumeration and the
+    hook-content check are kept as independent verifications.
 ---
 
 ::: {.problem}
@@ -66,7 +76,7 @@ Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the expansion is the card's own computation. Part (a) asks for the expansion to be checked by means of the SF package; the card does not run that package, and what it performs instead is an independent enumeration of the Littlewood--Richardson tableaux together with a hook-content check, which verifies the same expansion by a different route.
+No retained solution set covers this exercise: the expansion is the card's own computation. Part (a) asks for the expansion to be checked by means of the SF package; the check was run in SageMath 10.8 and its input and output are recorded in step [](#sf){.pf-ref}, beside the independent enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref} and the hook-content cross-check in step [](#check){.pf-ref}.
 
 ::: pf
 
@@ -89,11 +99,34 @@ A shape $\lambda\vdash7$ must contain $(2,2)$ with $\lambda/(2,2)$ of size $3$; 
 
 :::
 
-::: {.pf-step #check}
-(a) The expansion passes the hook-content check: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
+::: {.pf-step #sf}
+(a) The SF package returns $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$, each coefficient $1$.
 
 ::: pf-proof
-Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, a polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. This agreement checks the coefficients; it is not by itself a proof of the expansion, because the specialisation $f\mapsto f(1^{n})$ is not injective on the degree-seven symmetric functions: $m_{(2,2,2,1)}(1^{n})=m_{(4,1,1,1)}(1^{n})=4\binom n4$ for every $n$, so two distinct symmetric functions can agree at every $n$. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}; the SF package check that the problem asks for is not performed.
+The check was run in SageMath 10.8 with `SymmetricFunctions(QQ)`, the symmetric-function calculus that plays the role of the SF package:
+
+```sage
+Sym = SymmetricFunctions(QQ)
+s = Sym.s()
+s[2,2] * s[2,1]
+s[2,2] * s[2,1] == s[4,3] + s[4,2,1] + s[3,3,1] + s[3,2,2] + s[3,2,1,1] + s[2,2,2,1]
+```
+
+```text
+s[2, 2, 2, 1] + s[3, 2, 1, 1] + s[3, 2, 2] + s[3, 3, 1] + s[4, 2, 1] + s[4, 3]
+True
+```
+
+The six terms are those of step [](#table){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #check}
+The expansion passes the hook-content cross-check: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
+
+::: pf-proof
+Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, a polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. This agreement checks the coefficients; it is not by itself a proof of the expansion, because the specialisation $f\mapsto f(1^{n})$ is not injective on the degree-seven symmetric functions: $m_{(2,2,2,1)}(1^{n})=m_{(4,1,1,1)}(1^{n})=4\binom n4$ for every $n$, so two distinct symmetric functions can agree at every $n$. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}, which the SF package output of step [](#sf){.pf-ref} confirms.
 :::
 
 :::
@@ -108,7 +141,7 @@ The Littlewood–Richardson rule is exactly the branching rule for induction: fo
 :::
 
 ::: {.pf-qed}
-The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, consistent with the hook-content values of step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
+The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, returned by the SF package in step [](#sf){.pf-ref} and consistent with the hook-content values of step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
 :::
 
 :::
