@@ -34,6 +34,8 @@ This justifies the terminology: it means that $\mcf$ is an invertible element of
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.7, printed p. 124. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.7, printed p. 52, proves it by lifting a basis of $M_{\mathfrak p}$ over $A_{\mathfrak p}$ to elements of $M$ and showing that the resulting map $A^k\to M$ is an isomorphism after localizing, hence on a neighbourhood.
+
 All sheaf tensor products are over $\OO_X$.
 
 ::: pf
