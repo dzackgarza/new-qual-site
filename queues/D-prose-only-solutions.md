@@ -1,6 +1,6 @@
 # Document queue D: Prose-only solutions
 
-179 of the 12429 problem cards that have a solution
+137 of the 12428 problem cards that have a solution
 section hold no numbered step in it. These are the cards issue #2 targets once
 `queues/C-unsolved-cards.md` is empty: issue #2 asks for a Lamport-style
 structured proof, and a correct prose solution is not grandfathered.
@@ -15,21 +15,16 @@ not survive the next regeneration, and writing the steps removes the line.
 
 ## Count
 
-- Problems: 179
-- Problem cards with a solution: 12429
+- Problems: 137
+- Problem cards with a solution: 12428
 
-## Problems (179)
+## Problems (137)
 
 - [ ] E-1CMTE — "Paracompactness and topological completeness in the basics review"
 - [ ] E-81J56 — "Simply connected planar open sets contain the bounded complements of their curves"
-- [ ] E-AMD-DQCYAQBD — "Quotients of dihedral groups are dihedral"
 - [ ] E-AMD-H7JVMMY4 — "Algebraicity of $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$"
 - [ ] E-APRPU — "Higher-dimensional separation theorems from the no-retraction theorem"
-- [ ] E-BAZND — "Uncountable powers of the line are not normal"
-- [ ] E-CCLL5 — "Normal subgroups and regular coverings"
 - [ ] E-CJGFE — "Heredity of the seventeen basic properties"
-- [ ] E-F01YX — "Arbitrary products of connected spaces are connected"
-- [ ] E-HAT-3.2-15 — "Poincaré series and products"
 - [ ] E-HAT-3.3-16 — "Associativity of cap product"
 - [ ] E-HAT-3.3-19 — "Countability of homology of open subsets of $\RR^n$"
 - [ ] E-HAT-3.3-22 — "Compactly supported cohomology and $\times \RR$"
@@ -49,44 +44,20 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-HAT-4.2-15 — "Simply-connected closed 3-manifolds are $S^3$"
 - [ ] E-HAT-4.2-16 — "Surfaces with infinite $\pi_1$ are $K(\pi, 1)$'s"
 - [ ] E-HAT-4.2-19 — "$\pi_n(X^n)$ is free abelian for $K(\pi,1)$'s"
-- [ ] E-HAT-4.2-2 — "Action of $\pi_1$ on $\pi_n$ of $\RP^n$"
 - [ ] E-HAT-4.2-22 — "$H_{n+1}(K(G,n); \ZZ) = 0$ for $n > 1$"
-- [ ] E-HAT-4.2-25 — "Hurewicz cokernel for spaces with few nonzero $\pi_i$"
 - [ ] E-HAT-4.2-31 — "Split sequences from nullhomotopic fiber inclusions"
 - [ ] E-HAT-4.2-36 — "Whitehead product for $S^1$ and $S^n$"
 - [ ] E-HAT-4.2-9 — "Contractible mapping cone implies homotopy equivalence"
-- [ ] E-HAT-4.3-16 — "Whitehead theorem via homotopy fiber"
-- [ ] E-HAT-4.3-18 — "Long exact sequence for $\langle X, - \rangle$"
-- [ ] E-HAT-4.3-2 — "Group structure on $\langle X, S^1 \rangle$"
-- [ ] E-HAT-4.3-21 — "H-space Postnikov towers"
-- [ ] E-HAT-4.3-22 — "Principal fibrations with sections split"
-- [ ] E-HAT-4.3-9 — "Linear projection is fibration but not fiber bundle"
-- [ ] E-HAT-4.A-2 — "$\pi_1$-action on $\langle X, Y \rangle$ and Eilenberg--MacLane spaces"
-- [ ] E-HAT-4.B-2 — "Fiber bundles $S^k \to S^m \to S^n$ and the Hopf invariant"
 - [ ] E-HAT-4.D-2 — "Cohomology of $K(\ZZ_p, 1)$ via Leray--Hirsch"
 - [ ] E-HAT-4.D-9 — "Diagonal inclusion factors up to homotopy through multiplication"
-- [ ] E-HAT-4.F-2 — "Suspension sequences of CW complexes"
 - [ ] E-HAT-4.K-2 — "Contractible fibers of a simplicial map"
 - [ ] E-HAT-4.L-2 — "Cohomology operations distinguish quotients"
 - [ ] E-HK-7GHO — "Simultaneous row and column reduction to diagonal form"
 - [ ] E-HM213A17-118 — "Chain rule for the nonlinearity of a holomorphic map"
 - [ ] E-J7FPE — "Coverings of the torus are classified by rank"
-- [ ] E-KS2BT — "Completeness of the compact convergence topology over $\sigma$-compact domains"
 - [ ] E-ML7VU — "The topologist's sine curve has dimension one"
-- [ ] E-MPUGI — "Products with a locally compact Hausdorff factor preserve quotient maps"
 - [ ] E-MVB8P — "The dimension of a $\sigma$-compact Hausdorff space is bounded by that of its compact subspaces"
-- [ ] E-OD5RT — "Countable products of compact metrizable spaces are compact"
 - [ ] E-OHHSA — "A regular space that is not completely regular"
-- [ ] E-PEXB6 — "A rational fan and a nowhere locally connected path-connected set"
-- [ ] E-PFQIX — "Separation properties of topological groups and coset spaces"
-- [ ] E-PKY0P — "Closure of the eventually-zero sequences in box and product topologies"
-- [ ] E-QGR6H — "Compact unions of closed metrizable subspaces are metrizable"
-- [ ] E-QNT4A — "Perfect maps and paracompactness"
-- [ ] E-QR3SP — "The countable complement topology and an infinite complement collection"
-- [ ] E-RIGIX — "Complete normality of standard spaces and constructions"
-- [ ] E-RZTZT — "Components of R^omega in product, uniform, and box topologies"
-- [ ] E-S4J3T — "Unions of closed paracompact subspaces"
-- [ ] E-S57IX — "Products of quotient maps with locally compact Hausdorff factors"
 - [ ] E-SS1.EX-24 — "Reversing orientation negates a contour integral"
 - [ ] E-SS10.EX-9 — "Sums of two squares from the formula for $r_2(n)$"
 - [ ] E-SS3.EX-18 — "The Cauchy integral formula via homotopy"
@@ -98,12 +69,7 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] E-SS8.EX-19 — "The plane slit along parallel rays is simply connected"
 - [ ] E-SS8.EX-21 — "Schwarz--Christoffel maps onto triangles"
 - [ ] E-SS8.EX-24 — "Identities between the elliptic integrals $K$ and $K'$"
-- [ ] E-SSA.PR-4 — "Coefficients of a generating function with poles on the unit circle"
-- [ ] E-TTTSP — "Compactifications of the minimal uncountable well-ordered set"
 - [ ] E-XJMHL — "Separation by topologist's sine curve variants on the sphere"
-- [ ] E-Y4MFU — "Perfect maps transfer separation and countability properties"
-- [ ] E-ZXEH5 — "Generalized tube lemma for compact rectangles"
-- [ ] P-8CA15 — "Hurwitz: a locally uniform limit of injective analytic functions is injective or constant"
 - [ ] P-8CA19 — "$\int_0^\infty\frac{\log x}{1+x^4}\,dx=-\frac{\pi^2}{8\sqrt{2}}$"
 - [ ] P-8CA25 — "$\operatorname{Aut}(\CC_\infty)$ consists of the Möbius transformations"
 - [ ] P-8XT25 — "Sum of two positive measure sets contains an interval"
@@ -115,12 +81,9 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-AGHDIMTOPOLOGY — "Dimension under subspaces, open covers, and closed subsets"
 - [ ] P-AGHGENSBOUND — "$r$ generators bound the codimension of every component by $r$"
 - [ ] P-AGHPRODTOP — "The Zariski topology on $\AA^2$ against the product topology"
-- [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
 - [ ] P-APAS11E — "Induction from Young subgroups of $S_7$ and a Kronecker product on $S_4$"
-- [ ] P-APAS13D — "Unique positive semidefinite square root; orthogonal projection via $\widehat{X}=X\operatorabs{X}^{-1}$"
 - [ ] P-APAS13H — "Induced trivial and alternating characters; Kronecker and outer products of Specht modules"
 - [ ] P-APAS20D — "Conjugacy class sizes from a character table of a group of order $360$"
-- [ ] P-APAS23D — "SVD; variational characterization of $\sigma_1$; field of values and numerical radius"
 - [ ] P-APAS23H — "Invariant inner products for the unipotent $\ZZ$-representation on $\CC^2$"
 - [ ] P-APAS24D — "Diagonal similarity making a matrix norm close to the spectral radius"
 - [ ] P-APASP07H — "Young diagrams with nonzero character on an (n-1)-cycle in S_n"
@@ -149,9 +112,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-CH7-16 — "Orders of an intermediate subgroup between groups of orders $42$ and $420$"
 - [ ] P-CH7-2 — "Index of the Klein four-subgroup in $S_4$"
 - [ ] P-CH7-30 — "Groups of order $8$ have an element of order $2$"
-- [ ] P-CH8-30 — "Subgroups of order $4$ in $\ZZ_4\oplus\ZZ_4$"
-- [ ] P-CH8-36 — "A subgroup of order $9$ in $\ZZ_{12}\oplus\ZZ_4\oplus\ZZ_{15}$"
-- [ ] P-CH8-56 — "Preimage of $1$ under an isomorphism $\ZZ_3\oplus\ZZ_5\to\ZZ_{15}$"
 - [ ] P-EMORY-CA-MAXPRINCIPLE — "The maximum modulus principle from the Cauchy integral formula"
 - [ ] P-F03AL — "Convergence of series, and the alternating series test"
 - [ ] P-HCAX20 — "Argument principle as a winding-number statement"
@@ -160,7 +120,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-JHUFA09ANC — "Dyadic averages of an $L^1$ function converge almost everywhere"
 - [ ] P-JHUSP07ANH — "A function and its Fourier transform cannot both have compact support"
 - [ ] P-JHUSP08ANC — "Absolute convergence of the Fourier series of a C1 periodic function"
-- [ ] P-JHUU51RA1 — "Quantitative Riemann-Lebesgue decay under vanishing endpoint conditions"
 - [ ] P-JVAGD — "Layer-cake formula with an absolutely continuous weight: $\int_{\RR}\varphi\circ f\,dx=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$"
 - [ ] P-LL7UL — "A Galois extension of degree $2015$ is an extension by radicals"
 - [ ] P-M504F03-2 — "Abelian Galois extensions of degree 540 and their index-2 intermediate fields"
@@ -174,7 +133,6 @@ not survive the next regeneration, and writing the steps removes the line.
 - [ ] P-MBHKT — "Groups of order 18"
 - [ ] P-MMAQ-DNT3HIFV7M — "A projective resolution of $k\simeq R/(x,y)$ over $R=k[x,y]$ and $\Tor_i^R((x,y),k)$"
 - [ ] P-MMAQ-MLE74H7M42 — "Classification of finite fields"
-- [ ] P-MSLD5 — "Negation of a mixed-quantifier statement and a flawed inductive characterization"
 - [ ] P-MT5824-7-02 — "Central series of S3 and a nilpotent extension"
 - [ ] P-NIC7C — "Every functional on $X$ factors through an injective closed-range operator $T:X\to Y$"
 - [ ] P-NV44D — "$\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}=\frac{\pi}{2\sqrt{a(a+1)}}$ for $a>0$"
