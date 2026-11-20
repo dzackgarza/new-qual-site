@@ -546,6 +546,8 @@ $$
 $$
 
 
+that is, every weakly convergent sequence in $\ell^1$ converges in norm.
+
 ::: pf-proof
 
 The assumption in step [](#s1-16){.pf-ref} is impossible, and
@@ -557,22 +559,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-23}
-
-Thus every weakly convergent sequence in $\ell^1$ converges in norm.
-
-
-::: pf-proof
-
-This is step [](#s1-22){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-14){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
+Step [](#s1-14){.pf-ref} proves part (a), and step [](#s1-22){.pf-ref} proves part (b).
 
 :::
 
