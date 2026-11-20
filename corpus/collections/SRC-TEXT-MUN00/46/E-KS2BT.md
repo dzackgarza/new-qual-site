@@ -84,16 +84,31 @@ audit:
   note: >-
     The card stood in queue D: its solution was prose with no numbered step. It is now a `pf` with
     nine steps covering (a) and (b), each carrying a `pf-proof`. Cited by numbered statement only:
-    Munkres, Topology, §46 Exercise 9, Theorem 26.1 (a finite union of compact subspaces is
+    Munkres, Topology, §46 Exercise 9, §26 Exercise 3 (a finite union of compact subspaces is
     compact), §21 (the bounded uniform metric), §46 (the basis $B_C(f,\varepsilon)$ of the topology
-    of compact convergence), Theorem 17.8 (metric spaces are Hausdorff, so diagonals are closed) and
-    §43 (a closed subspace of a complete metric space is complete). The proof remains the card's
+    of compact convergence) and Exercise 17.13 (a space is Hausdorff exactly when its diagonal is
+    closed); the two facts the book gives no numbered statement for are proved in the steps that use
+    them, that a closed subspace of a complete metric space is complete and that a $\rho_i$-Cauchy
+    sequence is uniformly Cauchy on $A_i$. The proof remains the card's
     own: the self-study notes that reach Chapter 7 state this exercise without answering it.
     Checked: that the countable family of basis elements chosen in (a) has compact supersets whose
     interiors cover, that $C\subseteq A_N$ for some $N$ because the interiors increase and cover the
     compact $C$, the two inclusions between $\rho$-balls and $B_C(f,\varepsilon)$-balls with the
     truncation at $1$ accounted for, and that the compatibility set is an intersection of preimages
     of diagonals.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Reread step by step on the owner's instruction, since the card carries the fallback proof rather
+    than a transcription. All nine steps stand, and three citations written in the event above were
+    wrong and are corrected here: the finite union of compact subspaces is Munkres §26 Exercise 3,
+    not a numbered theorem of §26; the closed diagonal is Exercise 17.13, not Theorem 17.8, whose
+    statement is that finite point sets in a Hausdorff space are closed; and the closedness of a
+    subspace of a complete metric space carries no numbered statement in the book, so step
+    `complete` now proves it instead of citing one. One reason inside a step was also wrong and is
+    replaced: a $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$ because an inequality below
+    $1$ in $\rho_i$ is the same inequality for $\sup_{A_i}d$, not because $\rho_i$ is bounded by $1$.
 ---
 
 ::: {.exercise}
@@ -127,7 +142,7 @@ Let $\mathcal B$ be a countable basis. For $x\in X$ local compactness gives an o
 (b) There are compact subspaces $A_1\subseteq A_2\subseteq\cdots$ of $X$ whose interiors cover $X$.
 
 ::: pf-proof
-$\sigma$-compactness gives compact subspaces $C_1,C_2,\dots$ whose interiors cover $X$. Put $A_i=C_1\cup\cdots\cup C_i$; a finite union of compact subspaces is compact (Munkres, Theorem 26.1 for the finite case), the family increases, and $\operatorname{Int}C_j\subseteq\operatorname{Int}A_i$ for $j\le i$, so the interiors of the $A_i$ cover $X$.
+$\sigma$-compactness gives compact subspaces $C_1,C_2,\dots$ whose interiors cover $X$. Put $A_i=C_1\cup\cdots\cup C_i$; a finite union of compact subspaces is compact (Munkres, §26 Exercise 3), the family increases, and $\operatorname{Int}C_j\subseteq\operatorname{Int}A_i$ for $j\le i$, so the interiors of the $A_i$ cover $X$.
 :::
 
 :::
@@ -180,7 +195,7 @@ By Munkres, §46, the topology of compact convergence has as a basis the sets $B
 (b) The restriction map $R:Y^X\to\prod_iY^{A_i}$, $R(f)=(f\restrict_{A_i})_i$, is injective with closed image, and it is an isometry onto that image when the product carries the metric $\sum_i2^{-i}\rho_i$.
 
 ::: pf-proof
-Injectivity: functions agreeing on every $A_i$ agree on their union, which is $X$. The image consists of the points $u$ with $u_{i+1}\restrict_{A_i}=u_i$ for every $i$. For fixed $i$ the restriction $\varphi_i:Y^{A_{i+1}}\to Y^{A_i}$ is $1$-Lipschitz because $\sup_{A_i}d\le\sup_{A_{i+1}}d$ after truncation at $1$, hence continuous; so $u\mapsto(u_i,\varphi_i(u_{i+1}))$ is continuous into $Y^{A_i}\times Y^{A_i}$, whose diagonal is closed because $Y^{A_i}$ is metric (Munkres, Theorem 17.8 for metric spaces being Hausdorff); the $i$-th compatibility set is the preimage of that diagonal, hence closed, and the image of $R$ is the intersection of countably many closed sets. The isometry statement is the definition of $\rho$ as the sum of the coordinate metrics.
+Injectivity: functions agreeing on every $A_i$ agree on their union, which is $X$. The image consists of the points $u$ with $u_{i+1}\restrict_{A_i}=u_i$ for every $i$. For fixed $i$ the restriction $\varphi_i:Y^{A_{i+1}}\to Y^{A_i}$ is $1$-Lipschitz because $\sup_{A_i}d\le\sup_{A_{i+1}}d$ after truncation at $1$, hence continuous; so $u\mapsto(u_i,\varphi_i(u_{i+1}))$ is continuous into $Y^{A_i}\times Y^{A_i}$, whose diagonal is closed because $Y^{A_i}$ is metric and every metric space is Hausdorff, a Hausdorff space having closed diagonal (Munkres, Exercise 17.13); the $i$-th compatibility set is the preimage of that diagonal, hence closed, and the image of $R$ is the intersection of countably many closed sets. The isometry statement is the definition of $\rho$ as the sum of the coordinate metrics.
 :::
 
 :::
@@ -189,7 +204,7 @@ Injectivity: functions agreeing on every $A_i$ agree on their union, which is $X
 (b) If $(Y,d)$ is complete, then $Y^{A_i}$ is complete in $\rho_i$, and $\prod_iY^{A_i}$ is complete in $\sum_i2^{-i}\rho_i$.
 
 ::: pf-proof
-A $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$, hence pointwise Cauchy, hence pointwise convergent by completeness of $Y$; the pointwise limit is the uniform limit of a uniformly Cauchy sequence, so the sequence $\rho_i$-converges and $Y^{A_i}$ is complete. For the product, a Cauchy sequence in the sum metric is Cauchy in each coordinate because $2^{-i}\rho_i\le\rho$, so it converges coordinatewise to some $u$; given $\varepsilon>0$ choose $N$ with $2^{-N}<\varepsilon/2$ and then $k$ large enough that the first $N$ coordinates are within $\varepsilon/2$ of their limits, giving $\rho(u_k,u)\le\sum_{i\le N}2^{-i}\varepsilon/2+\sum_{i>N}2^{-i}<\varepsilon$.
+A $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$, because for $\varepsilon<1$ the inequality $\rho_i(u_m,u_n)<\varepsilon$ says $\sup_{A_i}d(u_m,u_n)<\varepsilon$; it is hence pointwise Cauchy, hence pointwise convergent by completeness of $Y$; the pointwise limit is the uniform limit of a uniformly Cauchy sequence, so the sequence $\rho_i$-converges and $Y^{A_i}$ is complete. For the product, a Cauchy sequence in the sum metric is Cauchy in each coordinate because $2^{-i}\rho_i\le\rho$, so it converges coordinatewise to some $u$; given $\varepsilon>0$ choose $N$ with $2^{-N}<\varepsilon/2$ and then $k$ large enough that the first $N$ coordinates are within $\varepsilon/2$ of their limits, giving $\rho(u_k,u)\le\sum_{i\le N}2^{-i}\varepsilon/2+\sum_{i>N}2^{-i}<\varepsilon$.
 :::
 
 :::
@@ -198,7 +213,7 @@ A $\rho_i$-Cauchy sequence is uniformly Cauchy on $A_i$, hence pointwise Cauchy,
 (b) If $(Y,d)$ is complete, then $Y^X$ is complete in $\rho$.
 
 ::: pf-proof
-By step [](#closed-image){.pf-ref} $Y^X$ is isometric to a closed subspace of the complete space $\prod_iY^{A_i}$, and a closed subspace of a complete metric space is complete (Munkres, Theorem 43.1's statement that closed subspaces of complete spaces are complete), so $Y^X$ is complete. With step [](#induces){.pf-ref} this gives a metric for the compact-convergence topology in which $Y^X$ is complete, which is (b).
+By step [](#closed-image){.pf-ref} $Y^X$ is isometric to a closed subspace of the complete space $\prod_iY^{A_i}$, and a closed subspace $S$ of a complete metric space $(M,\rho)$ is complete in $\rho$: a $\rho$-Cauchy sequence in $S$ is $\rho$-Cauchy in $M$, hence converges to some $m$ whose distance to $S$ is $0$, that is, $m\in\overline S=S$; so $Y^X$ is complete. With step [](#induces){.pf-ref} this gives a metric for the compact-convergence topology in which $Y^X$ is complete, which is (b).
 :::
 
 :::
