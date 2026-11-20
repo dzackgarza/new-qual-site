@@ -546,12 +546,10 @@ at most one-dimensional locus $r=1$ this part of $Z$ has dimension at most $1+(N
 $r(x)=0$ every hyperplane through $\varphi(x)$ satisfies $(x,H)\in Z$. Each component $C$ of the
 closed locus $r=0$ is contracted by $\varphi$: if $\restrictionof{\varphi}{C}$ were non-constant, then on the
 normalization of $C$ it would be a finite morphism of smooth curves with identically zero
-differential, hence not separable by Theorem II.8.6A, printed p. 174. A finite morphism of curves
-is a separable morphism followed by a purely inseparable one, and a separable one has nonzero
-differential at the generic point by Proposition IV.2.1, printed p. 300, so the separable part is
-trivial and $\restrictionof{\varphi}{C}$ is purely inseparable, a composition of Frobenius morphisms by Proposition
-IV.2.5, printed p. 302; the pullback of a local parameter of $\varphi(C)$ would then be a $p$-th
-power, so
+differential, hence not separable by Theorem II.8.6A, printed p. 174. In the factorization of a
+finite morphism of curves as a purely inseparable morphism followed by a separable one, the purely
+inseparable part has degree $p^m>1$ here, and the pullback of a local parameter of $\varphi(C)$
+along it is a $p^m$-th power by Proposition IV.2.5, printed p. 302; so
 for a general hyperplane $H$ meeting $\varphi(C)$ the equation $\ell_H\circ\varphi$ would have
 multiplicity at least $p$ at the corresponding point of $C$, and $\varphi^{-1}(H)$ would be
 non-reduced, contradicting the reducedness of the general member. Hence $\varphi$ maps the locus
