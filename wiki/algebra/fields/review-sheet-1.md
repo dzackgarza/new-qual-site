@@ -54,7 +54,7 @@ The field of $p^n$ elements exists and is unique, its subfields are the $\FF_{p^
 
 [[PR-OGUA5]]
 
-## The problems of the sheet
+## Exercises on field extensions
 
 [[SRC-FIELDS-HOMEWORK-1|Homework 1: field extensions]]
 
