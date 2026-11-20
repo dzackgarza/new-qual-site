@@ -45,6 +45,18 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the SO(5) argument, which is what Queue D asks for on this card. The setup, the two rings with the Kunneth isomorphism, the distribution of the two indecomposables between the factors, the Bockstein computation and the trivial-intersection contradiction are separate steps. Three places where the prose was too quick are now argued: that the factor carrying the degree-1 indecomposable actually contains beta_1 (it has a nonzero H^1 inside the one-dimensional H^1 of SO(5)); that the degree-3 generator of the other factor cannot be beta_1^3 or beta_1^3+beta_3 (its square, times beta_1^7 in the other factor, would be a nonzero tensor mapping to the vanishing H^13); and that x and x^2 lie in the images claimed, which is naturality of the Bockstein applied to p_X and p_Y. The integral ring and both Bocksteins are Hatcher's Example 3E.7, printed p. 301, and were re-read there; the exercise is printed p. 310. No retained set covers it. No statement repair.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, Algebraic Topology, Section 3.E, printed p. 310, which carries the
+    exercise. The printed words are
+      Exercise 4. Using the cup product structure in H*(SO(5); Z), show that SO(5) is not homotopy
+      equivalent to the product of any two CW complexes with nontrivial cohomology.
+    and the card's statement is that text, so the exercise is identified and no repair is needed.
+    NOT checked in this pass: the argument, which this read does not touch and about which no
+    claim is made.
+
 ---
 
 ::: {.problem}
