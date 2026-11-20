@@ -90,7 +90,8 @@ The function
 $$
 d:X\times X\longrightarrow\RR
 $$
-is continuous for the product topology on $X\times X$.
+is continuous for the product topology on $X\times X$. Hence the answer is yes for
+every metric space, not merely for $X=\RR$.
 
 ::: pf-proof
 Fix $(x,y)\in X\times X$ and let $\epsilon>0$.
@@ -116,15 +117,6 @@ d(U\times V)\subseteq
 (d(x,y)-\epsilon,d(x,y)+\epsilon).
 $$
 This is continuity of $d$ at $(x,y)$, and the point was arbitrary.
-:::
-
-:::
-
-::: pf-step
-Hence the answer is yes for every metric space, not merely for $X=\RR$.
-
-::: pf-proof
-This is exactly step [](#metric-continuous){.pf-ref}.
 :::
 
 :::
