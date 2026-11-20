@@ -38,7 +38,7 @@ What is the rank of the linear operator $R$?
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the problem is Part B, Problem 2, of the Spring 2023 Applied Algebra Qualifying Exam, printed p. 2 of the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf` — the earlier text cited the Part A paper, which holds the first four questions of the same examination — and no solutions sheet accompanies it, so the argument below is the card's own. The earlier version of the card asserted both that $\operatorname{im}R$ is the invariant subspace and that there are three orbits; each is argued here, the orbit count through a distance invariant of the square symmetries.
+No retained solution set covers this exercise: the problem is Part B, Problem 2, of the Spring 2023 Applied Algebra Qualifying Exam, in the Part B paper retained at `assets/attachments/Applied_Algebra_Part_B_SP23.pdf` — the earlier text cited the Part A paper, which holds the first four questions of the same examination — and no solutions sheet accompanies it, so the argument below is the card's own. The earlier version of the card asserted both that $\operatorname{im}R$ is the invariant subspace and that there are three orbits; each is argued here, the orbit count through a distance invariant of the square symmetries.
 
 Throughout, $X=\theset{(i,j)\mid i,j\in\theset{1,2,3}}$ is the set of nine positions of the board, $D_{4}$ acts on $X$ through its action on the plane, $\CC[X]$ is the permutation representation with basis $(e_{x})_{x\in X}$, on which $g\cdot e_{x}=e_{gx}$, and $R=\frac{1}{\abs{D_{4}}}\sum_{g\in D_{4}}g$.
 
