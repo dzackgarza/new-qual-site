@@ -9421,3 +9421,51 @@ the printed book itself. The citation of (2.5) inside 4.4.20(b) was taken from t
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Not read this round: `puiseux-pair` and `c1-c2-equivalent`, the two steps that compute the characteristic exponents of the two germs and match the systems; so #168's acceptance is not yet met for them. V.3.7 is not reached. Still unread: V.3.7, IV.2.3(h), IV.3.11(b), V.2.12, V.2.13, V.4.16, V.5.6, V.5.8(b). The pages of Greuel--Lossen--Shustin were taken as the card quotes them and were not re-opened.
+
+## 2026-11-19, Yang sweep: IV.5.1--IV.5.3 cited at printed p. 95
+
+**Object.** Three cards of `SRC-TEXT-HART77`, against Yang Pi-Yeh, *Hartshorne Solutions*
+(9 June 2019), retained as `tmp/sources/lfwin-hartshorne-solutions.pdf`, whose PDF page is its
+printed page. Section 4.5, *The Canonical Embedding*, opens on printed p. 95 and carries 4.5.1--4.5.3
+there; 4.4.22 closes §4.4 on the same page.
+
+**`P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION`, IV.5.1 — cited, printed p. 95, no defect.** The
+entry is two citations and no more: "By 4.3.3 and proposition 5.2, trivial." That is the right
+argument --- a complete intersection of genus $\geq2$ has very ample $K$ by (4.3.3), and on a
+hyperelliptic curve $\abs K=(g-1)g^1_2$ is not very ample by (5.2) --- and it is the card's own
+`#s3`--`#s4`. What it does not do is prove either ingredient. Commit `948ff31da7`.
+
+**`P-AGH452AUTOMORPHISMGROUPFINITE`, IV.5.2 — cited, printed p. 95, one step invalid as printed.**
+Hyperelliptic case: the unique $g^1_2$ gives $f:X\to\PP^1$ of degree two with $2g+2$ ramified points;
+$f\circ\phi$ is again of degree two, so differs from $f$ by an automorphism of $\PP^1$; hence $\phi$
+permutes the ramified points and $\#\Aut X\le(2g+2)!$. Its last sentence, "if $\phi$ fixed all
+$2g+2$ ramified points, by Lefschetz's theorem it is just identity", is wrong: the hyperelliptic
+involution fixes exactly those $2g+2$ points, which is the extremal case of the bound invoked. The
+conclusion survives with the kernel of $\Aut X\to\Sigma_{2g+2}$ of order at most $2$. Nonhyperelliptic
+case: with $n=g-1$ and $d=2g-2$ the count of 4.4.6 is $g(g-1)^2+2g(g-1)$, which exceeds $2g+2$ for
+$g\ge3$, so here Lefschetz does apply and $\Aut X$ embeds in a symmetric group. Recorded on the card
+that the second use is legitimate and the first is not. Commit `81b5f6a8bb`.
+
+**`P-AGH453MODULIGENUSFOUR`, IV.5.3 — cited, printed p. 95, no defect.** Hyperelliptic: $2g-1=7$ by
+(5.5.5). Nonhyperelliptic: $(2,3)$ complete intersections by (5.2.2), quadrics $\PP^9$, cubics
+modulo those through $Q$ of dimension $20-4-1=15$, so $9+15-15=9$ after quotienting by
+$\mathrm{PGL}_4$. Unique trigonal: quadric cones, i.e. rank-three symmetric $4\times4$ matrices, a
+hypersurface in $\PP^9$ of dimension $8$, giving $8+15-15=8$. The three answers are the exercise's.
+The one slip is notational: $h^0(Q,\OO_Q(3))=16$, and the printed $-1$ has already projectivised, so
+$\dim H^0$ and $\dim\PP H^0$ are used interchangeably within one line. Commit `0da77f8919`.
+
+**Checks, per card.** `./.venv/bin/python -m qualc.authoring check <id>` printed
+`schema and Markdown parsing OK (single card)`; `bash tmp/lam.sh <file>` numbered $1$--$5$, $1$--$7$
+and $1$--$10$ with `(QED labels present)`, resolving the two `pf-ref`s this batch adds to
+`P-AGH451`; `qualc.card_completeness.check_card` returned `[]`; `qualc.authoring.raw_notation`
+returned `None` on all three at the first attempt; the macro sweep reported nothing undefined.
+
+**Not checked.** Yang's Solutions outside printed p. 95; the Hartshorne pages of the three exercises,
+not reopened in this pass, the comparison being against the statements the cards carry; and the
+printed book itself. The three cited propositions --- (4.3.3), (5.2) and (5.5.5), (5.2.2), (5.5.2)
+--- were taken from the text.
+
+**The remainder.** Eight cards still lack Yang: IV.5.4 `P-AGH454PLANEMODELSGENUSFOUR`, IV.5.5
+`P-AGH455CURVESOFGENUSFIVE`, IV.5.7 `P-AGH457AUTOMORPHISMSGENUSTHREE`, IV.6.1 and the rest of §IV.6.
+Four of the eight were closed by other work between the last batch and this one; the count is
+measured, not carried.
