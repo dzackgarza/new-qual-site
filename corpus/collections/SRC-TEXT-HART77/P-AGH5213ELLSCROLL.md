@@ -210,6 +210,19 @@ audit:
     text of his Remark 2.9 item 4, whose condition on the divisor reads
     inconsistently in the extraction and which this card does not cite; and no
     solution set other than the two the remark names.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repairs on the reader's second report of this date, none changing a step's
+    claim. The remark's count of Yang Pi-Yeh's wrong values said two and listed
+    three; it now lists all four, the two return computations with 2 and 4 and
+    both zeros, with the reason each is wrong: at e = -1 and deg b = 1 the count
+    on the surface is 3 and not the 2 he takes from the curve, at deg b = 2 it
+    is 5 and not 4, and the two zeros cannot hold, one summand of each count
+    having positive degree on the elliptic curve. The solution's preamble no
+    longer promises a printed page with each citation, the citations now being
+    by numbered statement.
 ---
 
 ::: {.problem}
@@ -218,7 +231,7 @@ In particular, there is an elliptic scroll of degree 5 in $\PP^4$.
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source, numbered statement and printed page: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Theorems 1.7, 2.7 and 2.13 and Remark 2.9; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.2(1), Theorem 3.9(3), and Theorem 3.10(1), which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, of [2]; over an elliptic curve the image is an elliptic scroll.
+Every step below transcribes a published argument and names the source and numbered statement: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Theorems 1.7, 2.7 and 2.13 and Remark 2.9; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.2(1), Theorem 3.9(3), and Theorem 3.10(1), which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, of [2]; over an elliptic curve the image is an elliptic scroll.
 
 ::: pf
 
@@ -328,5 +341,5 @@ Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1): 
 
 Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is Fuentes' reference [2], cited there in an earlier numbering: its Theorem 3.2(1), is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.9(3), is the very-ampleness criterion for a decomposable surface, cited as [2, Theorem 2.8]; its Theorem 3.10(1), is $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ with degree $2\deg\mfb-e$, cited as [2, Theorem 2.9].
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries two absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$, and its later $4$ and $0$ are $5$ and $1$. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, counts $h^0\bigl(\OO_C(n)\oplus\OO_C(n-e)\bigr)$ by taking the second summand to contribute $n-1$, so writes the count as $2n-1$ and the ambient space as $\PP^{d-2}$; the second summand has degree $n-e>0$ and so contributes $n-e$, the count is $2n-e=d$ and the space $\PP^{d-1}$. His $2n-1$ is $d-1$ only at $e=0$, where the two agree, and is two short at $e=-1$. The count used in step [](#s5){.pf-ref} is the correct one. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 13 of §2.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$; at $\deg\mfb=2$ its $4$ is $5$; and both of its $0$s are at least $1$, one summand being a divisor of positive degree on the elliptic curve. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, counts $h^0\bigl(\OO_C(n)\oplus\OO_C(n-e)\bigr)$ by taking the second summand to contribute $n-1$, so writes the count as $2n-1$ and the ambient space as $\PP^{d-2}$; the second summand has degree $n-e>0$ and so contributes $n-e$, the count is $2n-e=d$ and the space $\PP^{d-1}$. His $2n-1$ is $d-1$ only at $e=0$, where the two agree, and is two short at $e=-1$. The count used in step [](#s5){.pf-ref} is the correct one. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 13 of §2.
 :::
