@@ -106,7 +106,7 @@ Every map $\RP^{2n} \to \RP^{2n}$ has a fixed point.
 For a map $g: \RP^{2n} \to \RP^{2n}$ there is a map $\tilde g: S^{2n} \to S^{2n}$ with $p \circ \tilde g = g \circ p$, where $p: S^{2n} \to \RP^{2n}$ is the quotient map.
 
 ::: pf-proof
-The map $g \circ p: S^{2n} \to \RP^{2n}$ lifts through the covering $p$ by the lifting criterion (Hatcher, Proposition 1.33, p. 61), whose hypotheses hold because $S^{2n}$ is path connected and locally path connected and $\pi_1(S^{2n}) = 0$ for $2n\ge2$ (Proposition 1.14, p. 35).
+The map $g \circ p: S^{2n} \to \RP^{2n}$ lifts through the covering $p$ by the lifting criterion (Hatcher, Proposition 1.33), whose hypotheses hold because $S^{2n}$ is path connected and locally path connected and $\pi_1(S^{2n}) = 0$ for $2n\ge2$ (Proposition 1.14).
 :::
 
 :::

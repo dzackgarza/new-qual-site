@@ -689,13 +689,11 @@ For part (c) the inequality $\cardinality{\mathbf E_6}\le51840$ is proved and no
 Step [](#weyl-faithful){.pf-ref} disposes of it: the geometric representation of a Coxeter group
 is faithful, which is J. E. Humphreys, *Reflection Groups and Coxeter Groups*, Cambridge Studies in
 Advanced Mathematics 29 (1990), Corollary on printed p. 113 --- the last item of §5.4, stated there
-as "The representation $\sigma:W\to\operatorname{GL}(V)$ is faithful" and proved from Theorem 5.4 on
-printed p. 111, whose statement is the criterion on the sign of $w(\alpha_s)$ against the length of
+as "The representation $\sigma:W\to\operatorname{GL}(V)$ is faithful" and proved from Theorem 5.4, whose statement is the criterion on the sign of $w(\alpha_s)$ against the length of
 $ws$ --- so the group presented in part (c) injects into the reflection group of the $\mathbf E_6$
 root lattice, and its order is at most that of $W(\mathbf E_6)$. Steps
 [](#weyl-order){.pf-ref}, [](#sixers){.pf-ref} and [](#group-order-g){.pf-ref} evaluate that order
-as $51840$, from Dolgachev's Corollary 8.2.16 at printed pp. 261--262, from the sixers of §9.1 at
-printed pp. 319--321, and from Remark 4.10.1 at printed pp. 404--405 respectively. Part (b) gives
+as $51840$, from Dolgachev's Corollary 8.2.16, from the sixers of §9.1, and from Remark 4.10.1 respectively. Part (b) gives
 the surjection onto $G$, so part (c) concludes with
 $\cardinality{\mathbf E_6}=\cardinality{W(\mathbf E_6)}=51840=\cardinality{G}$, and $\mathbf E_6$ is
 the Weyl group.

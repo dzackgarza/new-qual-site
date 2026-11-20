@@ -36,7 +36,7 @@ III. $\{ h : h \text{ is twice differentiable and } h''(x) = h(x) + 1 \text{ for
 :::
 
 ::: {.solution}
-The argument is transcribed from the retained solution set for this collection, Week 4 solutions (`assets/attachments/Week4_solns.pdf`), Problem 10, p. 4, with one point made explicit. The question asks which of
+The argument is transcribed from the retained solution set for this collection, Week 4 solutions (`assets/attachments/Week4_solns.pdf`), Problem 10, with one point made explicit. The question asks which of
 $$
 \mathrm{I}:\ f''=2f'-3f,\qquad \mathrm{II}:\ g''=3g',\qquad \mathrm{III}:\ h''=h+1
 $$

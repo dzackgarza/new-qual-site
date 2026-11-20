@@ -64,7 +64,7 @@ The quotient CW structure has one $0$-cell and one cell in each dimension
 $$
 m+1,m+2,\dots,n.
 $$
-The cells of $\RP^n$ are one in each dimension (Example 0.4, p. 6, and Example 2.42, p. 144) and $\RP^m$ is a subcomplex, so $Y$ is a CW complex and $(Y,\ast)$ is a good pair; by Proposition 2.22 (p. 124), $H_i(Y)=H_i(\RP^n,\RP^m)$.
+The cells of $\RP^n$ are one in each dimension (Example 0.4, and Example 2.42) and $\RP^m$ is a subcomplex, so $Y$ is a CW complex and $(Y,\ast)$ is a good pair; by Proposition 2.22, $H_i(Y)=H_i(\RP^n,\RP^m)$.
 Thus its reduced cellular chain groups are
 $$
 \widetilde C_i(Y)\cong
@@ -81,7 +81,7 @@ d_i=
 0,&i\text{ odd},
 \end{cases}
 $$
-which is $d_i=1+(-1)^i$ in Example 2.42 (p. 144); it is unchanged by the collapse because the Cellular Boundary Formula (p. 141) computes its entries as degrees of maps into the $(i-1)$-skeleton, which for $i-1\ge m+1$ is the same in $Y$ as in $\RP^n$. On the other hand $d_{m+1}=0$ because its target chain group has been collapsed away.
+which is $d_i=1+(-1)^i$ in Example 2.42; it is unchanged by the collapse because the Cellular Boundary Formula (p. 141) computes its entries as degrees of maps into the $(i-1)$-skeleton, which for $i-1\ge m+1$ is the same in $Y$ as in $\RP^n$. On the other hand $d_{m+1}=0$ because its target chain group has been collapsed away.
 
 ::: pf
 
@@ -161,7 +161,7 @@ Finally $Y$ is connected, so
 $$
 H_0(Y)\cong\ZZ,
 $$
-and for $1\le i\le m$ there are no $i$-chains at all, so $\widetilde H_i(Y)=0$. The cellular groups computed above are the singular homology groups by Theorem 2.35 (p. 139). Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
+and for $1\le i\le m$ there are no $i$-chains at all, so $\widetilde H_i(Y)=0$. The cellular groups computed above are the singular homology groups by Theorem 2.35. Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
 :::
 
 :::

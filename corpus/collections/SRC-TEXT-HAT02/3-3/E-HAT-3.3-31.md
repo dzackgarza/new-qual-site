@@ -203,7 +203,7 @@ $$
 \partial_*[M]_{\\ZZ}=[\partial M]_{\\ZZ}.
 $$
 
-The same argument with $\\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\\ZZ_2)$ and $H_{n-1}(A;\\ZZ_2)$ are $\\ZZ_2$, so the beginning of the exact sequence is $0\to\\ZZ_2\to\\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\\ZZ_2$ case that Bredon also records in Theorem 9.2 on p. 357. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
+The same argument with $\\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\\ZZ_2)$ and $H_{n-1}(A;\\ZZ_2)$ are $\\ZZ_2$, so the beginning of the exact sequence is $0\to\\ZZ_2\to\\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\\ZZ_2$ case that Bredon also records in Theorem 9.2. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
 
 For general $R$, use naturality of connecting homomorphisms under change of coefficients. If $M$ is $\\ZZ$-orientable, apply $\\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
 $$

@@ -113,7 +113,7 @@ That $\ker\varphi=0$ is immediate, since a chain of $A\cap B$ that is zero as a 
 
 ::: {.pf-step #s3}
 
-Theorem 2.16 (p. 117) applied to this short exact sequence gives the exact sequence
+Theorem 2.16 applied to this short exact sequence gives the exact sequence
 $$
 \cdots\to H_n(A\cap B)\xrightarrow{\ \Phi\ }H_n(A)\oplus H_n(B)\xrightarrow{\ \Psi\ }H_n(X)\xrightarrow{\ \partial\ }H_{n-1}(A\cap B)\to\cdots
 $$
@@ -132,7 +132,7 @@ This is the Mayer--Vietoris sequence of $X=A\cup B$.
 
 ::: pf-proof
 
-The sequence of step [](#s3){.pf-ref} has the form displayed in the subsection on Mayer--Vietoris sequences beginning on p. 149, with the same maps $\Phi$ and $\Psi$. The derivation here is elementary in that no subdivision is needed: for the singular theory one must invoke Proposition 2.21 (p. 119) to know that a class of $X$ is represented by a sum of chains in $A$ and in $B$, whereas for a $\Delta$-complex with $A$ and $B$ subcomplexes every simplex already lies in one of them, which is step [](#s1){.pf-ref}.
+The sequence of step [](#s3){.pf-ref} has the form displayed in the subsection on Mayer--Vietoris sequences beginning on p. 149, with the same maps $\Phi$ and $\Psi$. The derivation here is elementary in that no subdivision is needed: for the singular theory one must invoke Proposition 2.21 to know that a class of $X$ is represented by a sum of chains in $A$ and in $B$, whereas for a $\Delta$-complex with $A$ and $B$ subcomplexes every simplex already lies in one of them, which is step [](#s1){.pf-ref}.
 
 :::
 

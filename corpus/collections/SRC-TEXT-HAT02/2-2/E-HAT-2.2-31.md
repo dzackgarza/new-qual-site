@@ -72,7 +72,7 @@ $$
 
 ::: pf-proof
 
-Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their union $U\cup V$ is contractible. Each of these inclusions is a homotopy equivalence, and so induces isomorphisms on homology in every degree by Corollary 2.11 (p. 111).
+Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their union $U\cup V$ is contractible. Each of these inclusions is a homotopy equivalence, and so induces isomorphisms on homology in every degree by Corollary 2.11.
 
 :::
 

@@ -68,7 +68,7 @@ Show that the tensor product of two Hopf algebras is a Hopf algebra.
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher's definition of a Hopf algebra in Section 3.C (p. 283): a graded algebra with $A^0\cong R$ (connected) and a coproduct $\Delta:A\to A\otimes A$ that is a homomorphism of graded algebras with $\Delta(\alpha)=\alpha\otimes1+1\otimes\alpha+\sum_i\alpha_i'\otimes\alpha_i''$ where $\abs{\alpha_i'}>0$ and $\abs{\alpha_i''}>0$ whenever $\abs{\alpha}>0$. Hatcher assumes neither associativity, commutativity, a counit nor an antipode, so none of them is proved here.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher's definition of a Hopf algebra in Section 3.C : a graded algebra with $A^0\cong R$ (connected) and a coproduct $\Delta:A\to A\otimes A$ that is a homomorphism of graded algebras with $\Delta(\alpha)=\alpha\otimes1+1\otimes\alpha+\sum_i\alpha_i'\otimes\alpha_i''$ where $\abs{\alpha_i'}>0$ and $\abs{\alpha_i''}>0$ whenever $\abs{\alpha}>0$. Hatcher assumes neither associativity, commutativity, a counit nor an antipode, so none of them is proved here.
 
 ::: pf
 

@@ -92,7 +92,7 @@ $V-E+F=2$.
 
 ::: pf-proof
 
-By the definition of the Euler characteristic of a finite CW complex as the alternating sum of the numbers of its cells (p. 146), $\chi(S^2)=V-E+F$. By Theorem 2.44 (p. 146), $\chi(S^2)$ is the alternating sum of the ranks of the homology groups, and $H_0(S^2)=\ZZ$, $H_1(S^2)=0$, $H_2(S^2)=\ZZ$ by Corollary 2.14 (p. 114), so
+By the definition of the Euler characteristic of a finite CW complex as the alternating sum of the numbers of its cells (p. 146), $\chi(S^2)=V-E+F$. By Theorem 2.44, $\chi(S^2)$ is the alternating sum of the ranks of the homology groups, and $H_0(S^2)=\ZZ$, $H_1(S^2)=0$, $H_2(S^2)=\ZZ$ by Corollary 2.14, so
 $$
 \chi(S^2)=1-0+1=2.
 $$

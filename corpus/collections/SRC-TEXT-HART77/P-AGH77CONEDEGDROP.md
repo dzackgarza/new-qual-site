@@ -390,7 +390,7 @@ Proposition 2.5 states
 $$
 e_L(\mathcal I_A)=\deg Y-\deg p_A(Y).
 $$
-By Definition 2.2 on printed p. 55, $e_L(\mathcal I_A)$ is the normalized leading coefficient of $\chi(L^n/\mathcal I_A^nL^n)$, and the examples following that definition say that when $Z$ is set-theoretically a point $x$, then $P$ "is the Hilbert-Samuel polynomial of $\mathcal I$ as an ideal of $\OO_{x,X}$ and $e(\mathcal I)$ is its multiplicity there", independently of $L$.
+By Definition 2.2, $e_L(\mathcal I_A)$ is the normalized leading coefficient of $\chi(L^n/\mathcal I_A^nL^n)$, and the examples following that definition say that when $Z$ is set-theoretically a point $x$, then $P$ "is the Hilbert-Samuel polynomial of $\mathcal I$ as an ideal of $\OO_{x,X}$ and $e(\mathcal I)$ is its multiplicity there", independently of $L$.
 So $e_L(\mathcal I_A)$ is the multiplicity of $Y$ at $P$.
 
 That this multiplicity is $1$ is the card's own step: neither source states it. The multiplicity of a point is the multiplicity of the maximal ideal of the local ring, and $\OO_{Y,P}$ is a regular local ring of dimension $r$ with maximal ideal $\mathfrak m$, because $P$ is nonsingular; the associated graded ring of a regular local ring is a polynomial ring in $r$ variables, so the length of $\OO_{Y,P}/\mathfrak m^m$ is $\binom{m+r-1}{r}$ for every $m\ge1$, a polynomial in $m$ whose leading coefficient is $1/r!$ and whose normalized leading coefficient is therefore $1$. Harris's account of the same count on printed p. 235 is geometrical: "it's immediate that a general $k$-tuple of hyperplanes $H_i$ through $p$ will intersect $X$ transversely at $p$".

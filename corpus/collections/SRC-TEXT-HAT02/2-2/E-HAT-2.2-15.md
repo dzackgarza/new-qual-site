@@ -78,13 +78,13 @@ is injective.
 
 ::: pf-proof
 
-The long exact sequence of the pair $(X^{n-1},X^{n-2})$ is that of Theorem 2.16 (p. 117), applied to the short exact sequence of chain complexes $0\to C_*(X^{n-2})\to C_*(X^{n-1})\to C_*(X^{n-1},X^{n-2})\to 0$ of p. 115, and it contains
+The long exact sequence of the pair $(X^{n-1},X^{n-2})$ is that of Theorem 2.16, applied to the short exact sequence of chain complexes $0\to C_*(X^{n-2})\to C_*(X^{n-1})\to C_*(X^{n-1},X^{n-2})\to 0$ of p. 115, and it contains
 $$
 H_{n-1}(X^{n-2})
 \longrightarrow H_{n-1}(X^{n-1})
 \xrightarrow{j}H_{n-1}(X^{n-1},X^{n-2}).
 $$
-Since $X^{n-2}$ is a CW complex of dimension at most $n-2$, Lemma 2.34(b) (p. 137) gives
+Since $X^{n-2}$ is a CW complex of dimension at most $n-2$, Lemma 2.34(b) gives
 $$
 H_{n-1}(X^{n-2})=0.
 $$
@@ -104,14 +104,14 @@ is injective and identifies $H_n(X^n)$ with $\ker d_n$.
 
 ::: pf-proof
 
-The long exact sequence of $(X^n,X^{n-1})$, again that of Theorem 2.16 (p. 117), begins in this range as
+The long exact sequence of $(X^n,X^{n-1})$, again that of Theorem 2.16, begins in this range as
 $$
 0=H_n(X^{n-1})
 \longrightarrow H_n(X^n)
 \longrightarrow H_n(X^n,X^{n-1})
 \xrightarrow{\partial}H_{n-1}(X^{n-1}),
 $$
-the vanishing on the left being Lemma 2.34(b) (p. 137) for the skeleton $X^{n-1}$.
+the vanishing on the left being Lemma 2.34(b) for the skeleton $X^{n-1}$.
 Hence $H_n(X^n)$ injects into the relative group with image $\ker\partial$. By step [](#s1){.pf-ref}, $j$ is injective, so
 $$
 \ker d_n=\ker(j\partial)=\ker\partial.
@@ -135,7 +135,7 @@ The relative group
 $$
 H_n(X^n,X^{n-1})
 $$
-is free abelian with basis the $n$-cells of $X$ by Lemma 2.34(a) (p. 137). By step [](#s2){.pf-ref}, $H_n(X^n)$ is a subgroup of this free abelian group. Every subgroup of a free abelian group is free abelian, the standard structure theorem for finitely generated abelian groups applied as Hatcher applies it in (ii) on p. 140. Hence $H_n(X^n)$ is free.
+is free abelian with basis the $n$-cells of $X$ by Lemma 2.34(a). By step [](#s2){.pf-ref}, $H_n(X^n)$ is a subgroup of this free abelian group. Every subgroup of a free abelian group is free abelian, the standard structure theorem for finitely generated abelian groups applied as Hatcher applies it in (ii) on p. 140. Hence $H_n(X^n)$ is free.
 
 :::
 

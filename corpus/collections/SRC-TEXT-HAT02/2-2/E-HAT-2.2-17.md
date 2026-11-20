@@ -97,7 +97,7 @@ H_{n-1}(X^{n-1})
 \longrightarrow
 H_{n-1}(X^{n-1},X^{n-2}),
 $$
-that is, $d_n=j_{n-1}\partial_n$ in the notation of p. 139, where the diagram defining the cellular complex is drawn. Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence of Theorem 2.16 (p. 117), as stated in the subsection on naturality (p. 127), and the second by functoriality of relative homology (p. 115). Therefore the square
+that is, $d_n=j_{n-1}\partial_n$ in the notation of p. 139, where the diagram defining the cellular complex is drawn. Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence of Theorem 2.16, as stated in the subsection on naturality (p. 127), and the second by functoriality of relative homology (p. 115). Therefore the square
 $$
 \begin{array}{ccc}
 C_n^{CW}(X)&\xrightarrow{d_n}&C_{n-1}^{CW}(X)\\
@@ -123,13 +123,13 @@ the homomorphism induced by the cellular chain map is the ordinary singular-homo
 
 ::: pf-proof
 
-The comparison is the one made in the proof of Theorem 2.35 (pp. 139–140). There $H_n(X)$ is identified with $H_n(X^n)/\operatorname{Im}\partial_{n+1}$, using the exact sequence of the pair $(X^{n+1},X^n)$ together with the isomorphism $H_n(X^{n+1})\cong H_n(X)$ of Lemma 2.34(c) (p. 137), and $H_n^{CW}(X)=\ker d_n/\operatorname{Im}d_{n+1}$ is identified with that quotient through the injective maps $j_n$ and $j_{n-1}$; the isomorphism is $H_n^{CW}(X)\cong H_n(X)$ of Theorem 2.35 (p. 139).
+The comparison is the one made in the proof of Theorem 2.35. There $H_n(X)$ is identified with $H_n(X^n)/\operatorname{Im}\partial_{n+1}$, using the exact sequence of the pair $(X^{n+1},X^n)$ together with the isomorphism $H_n(X^{n+1})\cong H_n(X)$ of Lemma 2.34(c), and $H_n^{CW}(X)=\ker d_n/\operatorname{Im}d_{n+1}$ is identified with that quotient through the injective maps $j_n$ and $j_{n-1}$; the isomorphism is $H_n^{CW}(X)\cong H_n(X)$ of Theorem 2.35.
 
 Every object and every map in that computation is built from the long exact sequences of the three pairs
 $$
 (X^{n+1},X^n),\qquad (X^n,X^{n-1}),\qquad (X^{n-1},X^{n-2})
 $$
-by connecting homomorphisms, inclusion-induced maps, and the injective maps $j$ supplied by exactness. Each of these is natural: the long exact sequences by Theorem 2.16 (p. 117) and the subsection on naturality (p. 127), inclusions by functoriality (p. 115). A cellular $f$ maps each of the three sequences for $X$ to the corresponding one for $Y$, since $f(X^i)\subseteq Y^i$. Hence the comparison isomorphism commutes with the maps induced by $f$, and the diagram below commutes. Consequently the diagram
+by connecting homomorphisms, inclusion-induced maps, and the injective maps $j$ supplied by exactness. Each of these is natural: the long exact sequences by Theorem 2.16 and the subsection on naturality (p. 127), inclusions by functoriality (p. 115). A cellular $f$ maps each of the three sequences for $X$ to the corresponding one for $Y$, since $f(X^i)\subseteq Y^i$. Hence the comparison isomorphism commutes with the maps induced by $f$, and the diagram below commutes. Consequently the diagram
 $$
 \begin{array}{ccc}
 H_n^{CW}(X)&\xrightarrow{(f_\#)_*}&H_n^{CW}(Y)\\

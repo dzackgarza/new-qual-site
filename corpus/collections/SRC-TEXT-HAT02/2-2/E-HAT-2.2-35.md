@@ -74,7 +74,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 $H_1(N)\cong H_1(X)$ and $H_1(N\setminus X)\cong H_1(S)$.
 
 ::: pf-proof
-The mapping cylinder of $f$ deformation retracts onto its base $X$, and homotopy equivalent spaces have isomorphic homology (Corollary 2.11, p. 111); so $H_1(N)\cong H_1(X)$. The complement of the base in the mapping cylinder is $S\times[0,1)$, which deformation retracts onto $S\times\{0\}=S$, so $H_1(N\setminus X)\cong H_1(S)$.
+The mapping cylinder of $f$ deformation retracts onto its base $X$, and homotopy equivalent spaces have isomorphic homology (Corollary 2.11); so $H_1(N)\cong H_1(X)$. The complement of the base in the mapping cylinder is $S\times[0,1)$, which deformation retracts onto $S\times\{0\}=S$, so $H_1(N\setminus X)\cong H_1(S)$.
 :::
 
 :::
@@ -92,7 +92,7 @@ $X$ is compact, hence closed in $\RR^3$, so $\RR^3\setminus X$ is open; $N$ cont
 $H_1(S)$ is free abelian, and $H_1(X)$ is a finitely generated direct summand of it.
 
 ::: pf-proof
-$S$ is a closed orientable surface, so $H_1(S)\cong\ZZ^{2g}$ for its genus $g$, by the computation of Example 2.36 (p. 141); in particular it is free abelian. By step [](#mayer-vietoris){.pf-ref} the group $H_1(X)$ is a direct summand of $H_1(S)$, and it is finitely generated because $X$ is a finite simplicial complex. A finitely generated direct summand of a free abelian group is free abelian.
+$S$ is a closed orientable surface, so $H_1(S)\cong\ZZ^{2g}$ for its genus $g$, by the computation of Example 2.36; in particular it is free abelian. By step [](#mayer-vietoris){.pf-ref} the group $H_1(X)$ is a direct summand of $H_1(S)$, and it is finitely generated because $X$ is a finite simplicial complex. A finitely generated direct summand of a free abelian group is free abelian.
 :::
 
 :::
@@ -101,7 +101,7 @@ $S$ is a closed orientable surface, so $H_1(S)\cong\ZZ^{2g}$ for its genus $g$, 
 $\boxed{\text{No such embedding exists when }H_1(X)\text{ has torsion}}$.
 
 ::: pf-proof
-Under the hypotheses of the exercise, step [](#free){.pf-ref} makes $H_1(X)$ free abelian, contradicting the assumption that $H_1(X)$ contains torsion. A nonorientable closed surface has torsion in $H_1$, since $H_1(N_g)$ has a $\ZZ_2$ summand by Example 2.37 (p. 141), so the stated case of a nonorientable closed surface is included. The bracketed remark that Alexander duality in §3.3 removes the hypothesis on the neighbourhood is recorded and not proved here.
+Under the hypotheses of the exercise, step [](#free){.pf-ref} makes $H_1(X)$ free abelian, contradicting the assumption that $H_1(X)$ contains torsion. A nonorientable closed surface has torsion in $H_1$, since $H_1(N_g)$ has a $\ZZ_2$ summand by Example 2.37, so the stated case of a nonorientable closed surface is included. The bracketed remark that Alexander duality in §3.3 removes the hypothesis on the neighbourhood is recorded and not proved here.
 :::
 
 :::

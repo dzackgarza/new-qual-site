@@ -49,7 +49,7 @@ Show that for a covering space action of a group $G$ on a simply-connected space
 :::
 
 ::: {.solution}
-This is Hatcher, Algebraic Topology, §1.3 Exercise 28 (PDF p. 91), where it reads "Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$." No retained solution set covers this exercise: Guanyu Li's §1.3 block stops at Exercise 25, Sam's set carries only Exercises 1, 2, 14 and 26 of §1.3, and Koukpari and the Math 538 homework have nothing for it — so the argument is the card's own.
+This is Hatcher, Algebraic Topology, §1.3 Exercise 28, where it reads "Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$." No retained solution set covers this exercise: Guanyu Li's §1.3 block stops at Exercise 25, Sam's set carries only Exercises 1, 2, 14 and 26 of §1.3, and Koukpari and the Math 538 homework have nothing for it — so the argument is the card's own.
 Let
 $$
 q:Y\to Y/G

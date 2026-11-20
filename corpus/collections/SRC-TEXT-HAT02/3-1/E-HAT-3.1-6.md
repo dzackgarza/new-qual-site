@@ -91,7 +91,7 @@ $$
 
 ::: pf-proof
 
-The $\Delta$-complex structure is the one obtained from a square as on Hatcher p.102, and Example 2.3 (p.106) prints $\partial_2 U = a+b-c = \partial_2 L$ for it. The displayed $\delta^1$ is its dual in the sense of p.191.
+The $\Delta$-complex structure is the one obtained from a square as on Hatcher p.102, and Example 2.3 prints $\partial_2 U = a+b-c = \partial_2 L$ for it. The displayed $\delta^1$ is its dual in the sense of p.191.
 
 :::
 
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-These are obtained by evaluating cochains on the boundaries of Example 2.4 (p.106), which prints $\partial_2 U = -a+b+c$, $\partial_2 L = a-b+c$ and $\operatorname{im}\partial_1 = \ZZ(w-v)$, so that $\partial a = \partial b = w-v$ and $\partial c = 0$ (the same example notes that $a-b$ and $c$ form a basis of $\ker\partial_1$).
+These are obtained by evaluating cochains on the boundaries of Example 2.4, which prints $\partial_2 U = -a+b+c$, $\partial_2 L = a-b+c$ and $\operatorname{im}\partial_1 = \ZZ(w-v)$, so that $\partial a = \partial b = w-v$ and $\partial c = 0$ (the same example notes that $a-b$ and $c$ form a basis of $\ker\partial_1$).
 
 :::
 
@@ -230,7 +230,7 @@ $$
 
 ::: pf-proof
 
-Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one. Every answer on this card agrees with Theorem 3.2 (p.195), which computes $H^n$ of a complex of free abelian groups from $\operatorname{Hom}(H_n,\ZZ)$ and $\operatorname{Ext}(H_{n-1},\ZZ)$: for $\RP^2$ one gets $H^1=0$ and $H^2=\Ext(\ZZ_2,\ZZ)=\ZZ_2$ with $\ZZ$ coefficients, $H^1=\Hom(\ZZ_2,\ZZ_2)=\ZZ_2$ and $H^2=\Ext(\ZZ_2,\ZZ_2)=\ZZ_2$ with $\ZZ_2$ coefficients, and likewise for the Klein bottle with $H_1=\ZZ\oplus\ZZ_2$.
+Modulo $2$, both components of $\delta^1$ are $p+q+r$, so $\delta^1$ has rank one. Since $\delta^0=0$, the kernel has dimension two and the cokernel dimension one. Every answer on this card agrees with Theorem 3.2, which computes $H^n$ of a complex of free abelian groups from $\operatorname{Hom}(H_n,\ZZ)$ and $\operatorname{Ext}(H_{n-1},\ZZ)$: for $\RP^2$ one gets $H^1=0$ and $H^2=\Ext(\ZZ_2,\ZZ)=\ZZ_2$ with $\ZZ$ coefficients, $H^1=\Hom(\ZZ_2,\ZZ_2)=\ZZ_2$ and $H^2=\Ext(\ZZ_2,\ZZ_2)=\ZZ_2$ with $\ZZ_2$ coefficients, and likewise for the Klein bottle with $H_1=\ZZ\oplus\ZZ_2$.
 
 :::
 

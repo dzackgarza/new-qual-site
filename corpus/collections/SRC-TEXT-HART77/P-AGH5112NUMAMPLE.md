@@ -330,8 +330,7 @@ $$
 
 Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces*
 (arXiv:math/0006204v3), text version
-`tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed
-p. 18, states that on a decomposable ruled surface the complete system
+`tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), states that on a decomposable ruled surface the complete system
 $\linearsystem{X_0+\mfb f}$ is very ample if and only if $\mfb$ and
 $\mfb+\mfe$ are very ample on the base curve. Here $\mfb=L$ and $\mfe=0$, so
 the criterion asks that $L$ be very ample, which is step [](#s3){.pf-ref}.
@@ -426,7 +425,7 @@ Two published sets give a surface example by the external product $D\times\PP^1$
 
 An external product $D\times\PP^1$ is the pullback $p_1^*D$, and a fibre of $p_1$ is $\{c\}\times\PP^1$, on which $p_1^*D$ has degree zero; a very ample divisor meets every curve positively, a positive multiple of it being a hyperplane section, so $p_1^*D$ is not even ample. On the other fibre, $C\times\{t\}$, its degree is $\deg D=2g$, so the defect is not a vanishing degree on every curve: it is that the fibre the divisor must meet positively is the one of $p_1$. Adding the degree-one class of $\PP^1$ to both sides, as in $M$ and $M'$ of step [](#s5){.pf-ref}, makes the $p_1$-fibre degree one and leaves the failure of very ampleness in the curve factor, where step [](#s7){.pf-ref} reads it off a $p_2$-fibre.
 
-Read as a decomposable ruled surface of invariant $e=0$, the same example is settled by Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3), printed p. 18: $\linearsystem{X_0+\mfb f}$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are, which at $e=0$ is very ampleness of $\mfb$ alone, and $M=X_0+Lf$ and $M'=X_0+L'f$ carry $\mfb=L$ and $\mfb=L'=K_C(P+Q)$, very ample by step [](#s3){.pf-ref} and not by step [](#s4){.pf-ref}. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} use that criterion and keep the card's direct arguments beside it.
+Read as a decomposable ruled surface of invariant $e=0$, the same example is settled by Fuentes and Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), text version `tmp/sources/projective-theory-ruled-surfaces.md`, Theorem 3.9(3): $\linearsystem{X_0+\mfb f}$ is very ample exactly when $\mfb$ and $\mfb+\mfe$ are, which at $e=0$ is very ampleness of $\mfb$ alone, and $M=X_0+Lf$ and $M'=X_0+L'f$ carry $\mfb=L$ and $\mfb=L'=K_C(P+Q)$, very ample by step [](#s3){.pf-ref} and not by step [](#s4){.pf-ref}. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} use that criterion and keep the card's direct arguments beside it.
 
 The criterion rests on the paper's Corollary 2.13, and that corollary is proved. Its forward direction is Theorem 2.11; its converse is Proposition 2.3, applied to the system $\linearsystem{H-Pf}$: if the map defined by $\linearsystem{H}$ is not an isomorphism at a point, Theorem 2.11, makes that point a base point of some $\linearsystem{H-Pf}$, and Proposition 2.3 then produces $Q$ with $h^0(H-(P+Q)f)\ge h^0(H-Pf)-1$, which is $h^0(H)-3$ once $\linearsystem{H}$ is base-point-free. The case $Q=P$ is the one Theorem 2.11 covers through tangent directions, so the two-fibre condition does test a tangent direction transverse to a fibre. Proposition 2.15, rests on the same corollary and is sound for the same reason.
 :::

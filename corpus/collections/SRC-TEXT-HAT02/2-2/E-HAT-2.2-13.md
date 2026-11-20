@@ -94,7 +94,7 @@ and
 $$
 0\to\ZZ\xrightarrow{3}\ZZ\to\ZZ\to0,
 $$
-which give the stated groups. The groups for $X$ follow from the cellular complex above, and for all five complexes cellular homology is singular homology by Theorem 2.35 (p. 139).
+which give the stated groups. The groups for $X$ follow from the cellular complex above, and for all five complexes cellular homology is singular homology by Theorem 2.35.
 
 :::
 
@@ -114,7 +114,7 @@ X/A_3\cong S^2,
 \qquad
 X/X=\mathrm{pt}.
 $$
-Thus, the homology of the wedge being the direct sum of the summands by Corollary 2.25 (p. 126) and that of $S^2$ being $\ZZ$ in degree $2$ by Corollary 2.14 (p. 114),
+Thus, the homology of the wedge being the direct sum of the summands by Corollary 2.25 and that of $S^2$ being $\ZZ$ in degree $2$ by Corollary 2.14,
 $$
 \widetilde H_2(X/S^1)\cong\ZZ^2,
 \quad

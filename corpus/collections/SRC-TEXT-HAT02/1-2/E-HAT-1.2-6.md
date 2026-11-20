@@ -142,7 +142,7 @@ induces an isomorphism on fundamental groups.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref} and the preceding step, $\RR^n$ is obtained from the path connected space $Z$ by attaching a collection of $n$-cells with $n>2$. Proposition 1.26(b) (p. 50) applies to the whole collection at once and gives
+By step [](#s3){.pf-ref} and the preceding step, $\RR^n$ is obtained from the path connected space $Z$ by attaching a collection of $n$-cells with $n>2$. Proposition 1.26(b) applies to the whole collection at once and gives
 $$
 \pi_1(Z)\cong\pi_1(\RR^n).
 $$

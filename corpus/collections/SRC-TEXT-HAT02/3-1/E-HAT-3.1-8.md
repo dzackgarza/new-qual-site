@@ -92,7 +92,7 @@ with the usual interpretation for $S^0$.
 
 ::: pf-proof
 
-The reduced long exact sequence of the pair (Theorem 2.16, p.117) runs $\widetilde H^i(D^{n+1})\to\widetilde H^i(S^n)\to H^{i+1}(D^{n+1},S^n)\to\widetilde H^{i+1}(D^{n+1})$, and both outer groups vanish because $D^{n+1}$ is contractible, so $\widetilde H^i(S^n)\cong H^{i+1}(D^{n+1},S^n)$. Write $S^{n+1}$ as the union of its closed hemispheres $D^{n+1}_+\cup D^{n+1}_-$ with intersection $S^n$; the same sequence for the pair $(S^{n+1},D^{n+1}_+)$, whose first term vanishes, identifies $\widetilde H^{i+1}(S^{n+1})$ with $H^{i+1}(S^{n+1},D^{n+1}_+)$, and excision (Theorem 2.20, p.119) identifies the latter with $H^{i+1}(D^{n+1}_-,S^n)$, where $D^{n+1}_-$ is a disk and so contractible. Hence $\widetilde H^i(S^n)\cong\widetilde H^{i+1}(S^{n+1})$. Starting from $\widetilde H^0(S^0;G)=G$ and $\widetilde H^i(S^0;G)=0$ for $i>0$, induction gives $\widetilde H^i(S^n;G)=G$ for $i=n$ and $0$ otherwise, and since $S^n$ is path-connected for $n>0$ this is the displayed unreduced answer.
+The reduced long exact sequence of the pair (Theorem 2.16) runs $\widetilde H^i(D^{n+1})\to\widetilde H^i(S^n)\to H^{i+1}(D^{n+1},S^n)\to\widetilde H^{i+1}(D^{n+1})$, and both outer groups vanish because $D^{n+1}$ is contractible, so $\widetilde H^i(S^n)\cong H^{i+1}(D^{n+1},S^n)$. Write $S^{n+1}$ as the union of its closed hemispheres $D^{n+1}_+\cup D^{n+1}_-$ with intersection $S^n$; the same sequence for the pair $(S^{n+1},D^{n+1}_+)$, whose first term vanishes, identifies $\widetilde H^{i+1}(S^{n+1})$ with $H^{i+1}(S^{n+1},D^{n+1}_+)$, and excision (Theorem 2.20) identifies the latter with $H^{i+1}(D^{n+1}_-,S^n)$, where $D^{n+1}_-$ is a disk and so contractible. Hence $\widetilde H^i(S^n)\cong\widetilde H^{i+1}(S^{n+1})$. Starting from $\widetilde H^0(S^0;G)=G$ and $\widetilde H^i(S^0;G)=0$ for $i>0$, induction gives $\widetilde H^i(S^n;G)=G$ for $i=n$ and $0$ otherwise, and since $S^n$ is path-connected for $n>0$ this is the displayed unreduced answer.
 
 :::
 
@@ -108,7 +108,7 @@ as two slightly enlarged hemispheres with $U,V$ contractible and $U\cap V\simeq 
 
 ::: pf-proof
 
-The reduced Mayer--Vietoris sequence of §2.2 (p.149) applied to $S^n=U\cup V$ gives
+The reduced Mayer--Vietoris sequence of §2.2 applied to $S^n=U\cup V$ gives
 $$
 \widetilde H^i(S^n;G)\cong\widetilde H^{i-1}(S^{n-1};G),
 $$
@@ -128,11 +128,11 @@ for all $n$.
 
 ::: pf-proof
 
-Proposition 2.22 (p.124) applies to a nonempty closed subspace $A$ that is a deformation retract of a neighborhood: the quotient map induces
+Proposition 2.22 applies to a nonempty closed subspace $A$ that is a deformation retract of a neighborhood: the quotient map induces
 $$
 H_j(X,A;\ZZ)\xrightarrow{\cong}\widetilde H_j(X/A;\ZZ)
 $$
-for every $j$. For a complex of free abelian groups the universal coefficient sequence of Theorem 3.2 (p.195) is $0\to\operatorname{Ext}(H_{j-1},G)\to H^j(-;G)\to\operatorname{Hom}(H_j,G)\to0$, and it is natural in the chain complex (p.196). Applying it to the singular chains of $(X,A)$ and of $(X/A,\mathrm{pt})$ and using the homology isomorphism on $H_n$ and $H_{n-1}$ gives isomorphisms of both outer terms in the induced ladder; the five lemma gives the isomorphism in the middle. For $A=\emptyset$ the statement follows from the split sequence of the pair $(X\sqcup\mathrm{pt},\mathrm{pt})$: here $X/A=X\sqcup\mathrm{pt}$ and $H^n(X,\emptyset;G)=H^n(X;G)$, while $H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)\oplus H^n(\mathrm{pt};G)$ with the second summand $G$ in degree $0$ and $0$ otherwise, so $\widetilde H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)$.
+for every $j$. For a complex of free abelian groups the universal coefficient sequence of Theorem 3.2 is $0\to\operatorname{Ext}(H_{j-1},G)\to H^j(-;G)\to\operatorname{Hom}(H_j,G)\to0$, and it is natural in the chain complex (p.196). Applying it to the singular chains of $(X,A)$ and of $(X/A,\mathrm{pt})$ and using the homology isomorphism on $H_n$ and $H_{n-1}$ gives isomorphisms of both outer terms in the induced ladder; the five lemma gives the isomorphism in the middle. For $A=\emptyset$ the statement follows from the split sequence of the pair $(X\sqcup\mathrm{pt},\mathrm{pt})$: here $X/A=X\sqcup\mathrm{pt}$ and $H^n(X,\emptyset;G)=H^n(X;G)$, while $H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)\oplus H^n(\mathrm{pt};G)$ with the second summand $G$ in degree $0$ and $0$ otherwise, so $\widetilde H^n(X\sqcup\mathrm{pt};G)\cong H^n(X;G)$.
 
 :::
 
@@ -151,7 +151,7 @@ Let $i:A\hookrightarrow X$ and $r:X\to A$ satisfy $ri=\operatorname{id}_A$. Cont
 $$
 i^*r^*=(ri)^*=\operatorname{id}_{H^n(A)},
 $$
-so $i^*:H^n(X)\to H^n(A)$ is split surjective and $r^*$ is a section of it. In the long exact sequence of the pair (Theorem 2.16, p.117) each connecting map $\delta$ satisfies $\delta i^*=0$, so $\delta=\delta i^*r^*=0$; hence the map $H^n(X,A)\to H^n(X)$ is injective and one gets a short exact sequence
+so $i^*:H^n(X)\to H^n(A)$ is split surjective and $r^*$ is a section of it. In the long exact sequence of the pair (Theorem 2.16) each connecting map $\delta$ satisfies $\delta i^*=0$, so $\delta=\delta i^*r^*=0$; hence the map $H^n(X,A)\to H^n(X)$ is injective and one gets a short exact sequence
 $$
 0\to H^n(X,A)\to H^n(X)\xrightarrow{i^*}H^n(A)\to0.
 $$
