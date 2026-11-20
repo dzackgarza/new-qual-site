@@ -16,7 +16,7 @@ review: draft
 
 ::: {.theorem}
 Let $p\colon\tilde X \to X$ be a [[D-ANO2D|covering space]], $F\colon Y \cross I \to X$ a homotopy, and $\tilde F_0\colon Y\to \tilde X$ a lift of $F_0 = F(-, 0)$.
-Then there is a unique homotopy $\tilde F\colon Y\cross I\to \tilde X$ with $\tilde F(y, 0) = \tilde F_0(y)$ for all $y\in Y$ and $p\circ\tilde F = F$ [@Hat02]:
+Then there is a unique homotopy $\tilde F\colon Y\cross I\to \tilde X$ with $\tilde F(y, 0) = \tilde F_0(y)$ for all $y\in Y$ and $p\circ\tilde F = F$ [@Hat02, Proposition 1.30]:
 
 \begin{tikzcd}
 	{Y} && {\tilde X} \\
