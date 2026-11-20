@@ -42,6 +42,22 @@ audit:
     multiplication restricts to the identity on each factor up to homotopy, hence induces
     $(a,b)\mapsto a+b$, which determines it up to homotopy. Nothing changed. Not claimed: a
     published solution, and no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 6, printed p. 419, with Exercise 4 (printed p. 419),
+    Theorem 4.57 (printed p. 393), and the retained solution of Steven V. Sam, §4.3 Exercise 6,
+    printed p. 25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Two defects repaired. The
+    card attributed the bijection $[B,K(G,n)]\cong H^{n}(B;G)$ for all CW complexes $B$ to
+    Exercise 4, which gives only the case $B=K(G',n)$; it now cites Theorem 4.57 for the
+    general statement and Exercise 4 for the case at hand. And it read $H^{n}(B;G)\cong
+    \Hom(H_{n}(B),G)$ off the universal coefficient theorem without the Ext term; the sequence
+    is now written out and the vanishing of $\Ext(H_{n-1}(B),G)$ is argued separately for
+    $n\ge2$ and $n=1$. The lead claimed the argument was the card's own; Sam's solution covers
+    the exercise and is now named, with the coefficient computation identified as what the card
+    adds. Statement unchanged. Not checked: Exercise 4 itself was not re-derived, and there is
+    no certificate.
 ---
 
 ::: {.problem}
@@ -51,7 +67,7 @@ Show also that the H-space multiplication $\mu$ is unique up to homotopy.
 
 ::: {.solution}
 
-The construction and the uniqueness are the card's own, both resting on Exercise 4: homotopy classes of maps into $K(G,n)$ are the cohomology group $H^{n}(-;G)$, so on a product of Eilenberg--MacLane spaces they are homomorphisms on $\pi_{n}$. Write $K=K(G,n)$ with $G$ abelian.
+The construction and the uniqueness follow the retained solution set of **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.3 Exercise 6**, printed p. 25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`: $K(G,n)\times K(G,n)\simeq K(G\times G,n)$, Exercise 4 turns maps out of that product into homomorphisms $G\times G\to G$, and the addition homomorphism gives the multiplication. The steps below write out the coefficient computation that solution leaves implicit. Write $K=K(G,n)$ with $G$ abelian.
 
 ::: pf
 
@@ -59,7 +75,7 @@ The construction and the uniqueness are the card's own, both resting on Exercise
 $K\times K$ is a $K(G\oplus G,n)$, and homotopy classes of maps $K\times K\to K$ correspond to homomorphisms $G\oplus G\to G$.
 
 ::: pf-proof
-A product of Eilenberg--MacLane spaces is again one: $\pi_{n}(K\times K)=G\oplus G$ and the other homotopy groups vanish. By Exercise 4, $[B,K(G,n)]\cong H^{n}(B;G)$ for CW complexes $B$; for $B=K\times K$ the Hurewicz and universal coefficient theorems give $H^{n}(B;G)\cong\Hom(H_{n}(B),G)=\Hom(G\oplus G,G)$, the higher homology of a $K(G\oplus G,n)$ being confined to degree $n$ and $H_{n}=G\oplus G$.
+A product of Eilenberg--MacLane spaces is again one: $\pi_{n}(K\times K)=G\oplus G$ and the other homotopy groups vanish. Theorem 4.57 (printed p. 393) identifies $\langle B,K(G,n)\rangle$ with $H^{n}(B;G)$ for every CW complex $B$, and for $B=K\times K=K(G\oplus G,n)$ Exercise 4 (printed p. 419) identifies that set with $\Hom(G\oplus G,G)$. The coefficient computation is the universal coefficient sequence $0\to\Ext(H_{n-1}(B),G)\to H^{n}(B;G)\to\Hom(H_{n}(B),G)\to0$: $H_{n}(B)$ is $G\oplus G$, by Hurewicz for $n\ge2$ and as the abelianization of $\pi_{1}$ for $n=1$, and $\Ext(H_{n-1}(B),G)$ vanishes, since $H_{n-1}(B)=0$ for $n\ge2$ while $H_{0}(B)=\ZZ$ is free for $n=1$. Hence $H^{n}(B;G)=\Hom(G\oplus G,G)$.
 :::
 
 :::
