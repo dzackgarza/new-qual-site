@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Pages and one claim corrected, after an independent read. The sentence "a fiber-preserving map
@@ -87,7 +97,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 It suffices to prove the statement for the pullback $q\colon f^*(PC)\to B$ of the path fibration along a map $f\colon B\to C$.
 
 ::: pf-proof
-By the definition of a principal fibration (printed p.~412) there is a commutative diagram whose second row is the fibration sequence $\Omega C\to PC\to C$ and whose vertical maps are weak homotopy equivalences; the map $E\to B$ therefore compares with $PC\to C$ over $C$, and the universal property of the pullback gives a map $E\to f^*(PC)$ over $B$, again a weak homotopy equivalence. Replacing the spaces by CW approximations as Hatcher does on printed p.~412 --- the CW hypothesis cannot be asserted of the total space of an arbitrary fibration over a CW base, since $B\times\QQ\to B$ is one and $\QQ$ is not of CW type --- a fibre-preserving weak homotopy equivalence of total spaces is a homotopy equivalence by Whitehead's theorem (Theorem 4.5, printed p.~346) these vertical maps are homotopy equivalences; a fibre-preserving homotopy equivalence is a fibre homotopy equivalence by the fact recorded on printed p.~406, whose deferred proof is §4.H Exercise 3, printed p.~466. Both properties compared by the exercise --- having a section, and being fibre homotopy equivalent to the product --- are invariant under fibre homotopy equivalence over $B$, so it is enough to treat $q$.
+By the definition of a principal fibration there is a commutative diagram whose second row is the fibration sequence $\Omega C\to PC\to C$ and whose vertical maps are weak homotopy equivalences; the map $E\to B$ therefore compares with $PC\to C$ over $C$, and the universal property of the pullback gives a map $E\to f^*(PC)$ over $B$, again a weak homotopy equivalence. Replacing the spaces by CW approximations as Hatcher does --- the CW hypothesis cannot be asserted of the total space of an arbitrary fibration over a CW base, since $B\times\QQ\to B$ is one and $\QQ$ is not of CW type --- a fibre-preserving weak homotopy equivalence of total spaces is a homotopy equivalence by Whitehead's theorem (Theorem 4.5) these vertical maps are homotopy equivalences; a fibre-preserving homotopy equivalence is a fibre homotopy equivalence by the fact recorded, whose deferred proof is §4.H Exercise 3. Both properties compared by the exercise --- having a section, and being fibre homotopy equivalent to the product --- are invariant under fibre homotopy equivalence over $B$, so it is enough to treat $q$.
 :::
 
 :::

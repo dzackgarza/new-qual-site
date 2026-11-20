@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -65,7 +75,7 @@ audit:
 ---
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own. Let $X$ be a path-connected CW complex with basepoint a $0$-cell, equipped with an H-space multiplication $\mu\colon X\times X\to X$; an H-space that is not a CW complex is replaced by a CW approximation, which carries an H-space structure (printed p.~281). Everything rests on two numbered results: Example 4.16 (printed p.~354) builds the Postnikov stage $P_nX$ from $X$ by attaching cells of dimension at least $n+2$, so that $\pi_i(P_nX)=0$ for $i>n$ and $X\to P_nX$ is an isomorphism on $\pi_i$ for $i\le n$; and Lemma 4.7 (printed p.~348) extends maps from a CW complex over cells of dimension at least $n+2$ into a space whose homotopy vanishes above degree $n$, uniquely up to homotopy.
+No retained solution set covers this exercise, so the argument is the card's own. Let $X$ be a path-connected CW complex with basepoint a $0$-cell, equipped with an H-space multiplication $\mu\colon X\times X\to X$; an H-space that is not a CW complex is replaced by a CW approximation, which carries an H-space structure. Everything rests on two numbered results: Example 4.16 builds the Postnikov stage $P_nX$ from $X$ by attaching cells of dimension at least $n+2$, so that $\pi_i(P_nX)=0$ for $i>n$ and $X\to P_nX$ is an isomorphism on $\pi_i$ for $i\le n$; and Lemma 4.7 extends maps from a CW complex over cells of dimension at least $n+2$ into a space whose homotopy vanishes above degree $n$, uniquely up to homotopy.
 
 ::: pf
 
@@ -73,7 +83,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 $P_nX$ is obtained from $X$ by attaching cells of dimension at least $n+2$; hence $\pi_i(P_nX)=0$ for $i>n$ and $X\to P_nX$ induces isomorphisms on $\pi_i$ for $i\le n$.
 
 ::: pf-proof
-This is Example 4.16, printed p.~354, together with conditions (1) and (2) of the definition of a Postnikov tower on printed p.~410.
+This is Example 4.16, together with conditions (1) and (2) of the definition of a Postnikov tower.
 :::
 
 :::
@@ -82,7 +92,7 @@ This is Example 4.16, printed p.~354, together with conditions (1) and (2) of th
 Let $W$ be obtained from a CW complex $A$ by attaching cells of dimension at least $n+2$, and let $Y$ satisfy $\pi_i(Y)=0$ for $i>n$. Then every map $A\to Y$ extends to a map $W\to Y$, and two maps $W\to Y$ whose restrictions to $A$ are homotopic rel the basepoint are homotopic rel $A$.
 
 ::: pf-proof
-For the extension, apply Lemma 4.7 (printed p.~348) to the CW pair $(W,A)$: a cell of $W-A$ has dimension $k\ge n+2$, so $k-1\ge n+1>n$ and $\pi_{k-1}(Y)=0$. For the uniqueness, let $F\colon A\times I\to Y$ be a homotopy between the two restrictions and consider the subcomplex $B=A\times I\cup W\times\partial I$ of $W\times I$; the given maps on $W\times\partial I$ and $F$ on $A\times I$ define a map $B\to Y$, and the cells of $W\times I$ outside $B$ have dimension at least $n+2$, so Lemma 4.7 extends it to $W\times I$. That extension is the required homotopy rel $A$.
+For the extension, apply Lemma 4.7 to the CW pair $(W,A)$: a cell of $W-A$ has dimension $k\ge n+2$, so $k-1\ge n+1>n$ and $\pi_{k-1}(Y)=0$. For the uniqueness, let $F\colon A\times I\to Y$ be a homotopy between the two restrictions and consider the subcomplex $B=A\times I\cup W\times\partial I$ of $W\times I$; the given maps on $W\times\partial I$ and $F$ on $A\times I$ define a map $B\to Y$, and the cells of $W\times I$ outside $B$ have dimension at least $n+2$, so Lemma 4.7 extends it to $W\times I$. That extension is the required homotopy rel $A$.
 :::
 
 :::

@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Provenance corrected. The body's sentence "none of the retained Hatcher sets solves Section 4.3
@@ -106,7 +116,7 @@ Show that by applying the loop space functor to a Postnikov tower for $X$ one ob
 :::
 
 ::: {.solution}
-The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 20**, printed p.~28 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise through the discussion of printed p. 409: looping a Postnikov tower gives a tower whose fibrations are principal. The steps below follow that argument and are checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 20, printed p. 420, and against the Postnikov tower theory of pp. 410--412 and Theorem 4.69 there.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 20** of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise through the discussion in §4.3: looping a Postnikov tower gives a tower whose fibrations are principal. The steps below follow that argument and are checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 20, and against the Postnikov tower theory of §4.3 and Theorem 4.69 there.
 
 ::: pf
 
@@ -141,7 +151,7 @@ $\pi_i(\Omega X_n)=\pi_{i+1}(X_n)$. For $i+1\le n$, that is $\pi_{i+1}(X)=\pi_i(
 The fibrations $p_n:X_n\to X_{n-1}$ of the tower for $X$ need not be principal.
 
 ::: pf-proof
-Theorem 4.69 (printed p. 412) states that a connected CW complex has a Postnikov tower of principal fibrations if and only if $\pi_1$ acts trivially on $\pi_n$ for all $n>1$, so principality of the individual fibrations is exactly the hypothesis that can fail. It fails for $X=\RP^2$: there $\pi_1=\ZZ_2$, $\pi_2=\ZZ$ and $\pi_i=0$ for $i\ge3$, so the tower is $\RP^2\to K(\ZZ_2,1)$, and the fibration $p_2:\RP^2\to K(\ZZ_2,1)$ has fibre $K(\ZZ,2)$ while the generator of $\pi_1$ acts on $\pi_2$ by $-1$ (Exercise 2 of §4.2, printed p. 389). So nothing may be assumed about $p_n$, and what the exercise asserts concerns the looped tower.
+Theorem 4.69 states that a connected CW complex has a Postnikov tower of principal fibrations if and only if $\pi_1$ acts trivially on $\pi_n$ for all $n>1$, so principality of the individual fibrations is exactly the hypothesis that can fail. It fails for $X=\RP^2$: there $\pi_1=\ZZ_2$, $\pi_2=\ZZ$ and $\pi_i=0$ for $i\ge3$, so the tower is $\RP^2\to K(\ZZ_2,1)$, and the fibration $p_2:\RP^2\to K(\ZZ_2,1)$ has fibre $K(\ZZ,2)$ while the generator of $\pi_1$ acts on $\pi_2$ by $-1$ (Exercise 2 of §4.2). So nothing may be assumed about $p_n$, and what the exercise asserts concerns the looped tower.
 :::
 
 :::
@@ -150,7 +160,7 @@ Theorem 4.69 (printed p. 412) states that a connected CW complex has a Postnikov
 $\Omega X$ is an abelian space, and by Theorem 4.69 it therefore has a Postnikov tower of principal fibrations.
 
 ::: pf-proof
-$\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for an H-space, the action of $\pi_1$ on $\pi_n$ is trivial for every $n$ (Example 4A.3, printed p. 422; the point is that the multiplication makes left and right translation by a loop agree up to homotopy). So $\pi_1(\Omega X)=\pi_2(X)$ acts trivially on every $\pi_n(\Omega X)$. The loop space is not in general a CW complex, and Theorem 4.69 is stated for a connected CW complex, so apply it to a CW approximation $W\to\Omega X$, which is a weak homotopy equivalence: $W$ inherits an H-space structure up to homotopy, hence is abelian, and Theorem 4.69 gives a Postnikov tower of $W$ whose fibrations are all principal. A Postnikov tower of $W$ is one of $\Omega X$, since a weak equivalence induces isomorphisms on all homotopy groups, so $\Omega X$ has a Postnikov tower of principal fibrations.
+$\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for an H-space, the action of $\pi_1$ on $\pi_n$ is trivial for every $n$ (Example 4A.3; the point is that the multiplication makes left and right translation by a loop agree up to homotopy). So $\pi_1(\Omega X)=\pi_2(X)$ acts trivially on every $\pi_n(\Omega X)$. The loop space is not in general a CW complex, and Theorem 4.69 is stated for a connected CW complex, so apply it to a CW approximation $W\to\Omega X$, which is a weak homotopy equivalence: $W$ inherits an H-space structure up to homotopy, hence is abelian, and Theorem 4.69 gives a Postnikov tower of $W$ whose fibrations are all principal. A Postnikov tower of $W$ is one of $\Omega X$, since a weak equivalence induces isomorphisms on all homotopy groups, so $\Omega X$ has a Postnikov tower of principal fibrations.
 :::
 
 :::
@@ -159,7 +169,7 @@ $\Omega X$ is an H-space under loop concatenation, and H-spaces are abelian: for
 The looped tower is a Postnikov tower of $\Omega X$, hence is a tower of principal fibrations.
 
 ::: pf-proof
-Steps [](#loop){.pf-ref} and [](#stages){.pf-ref} show that $\Omega X_n$ is the $(n-1)$-st Postnikov stage of $\Omega X$ and that $\Omega X\to\Omega X_n$ has the required effect on homotopy groups, so the looped tower is a Postnikov tower for $\Omega X$ in Hatcher's sense. Postnikov towers of a connected CW complex are unique: the $n$-th stage is determined up to homotopy equivalence under the space by its homotopy groups and the truncation property, which is the uniqueness statement of Hatcher's construction (printed p. 410), and the comparison is an isomorphism on all homotopy groups, hence a homotopy equivalence by Whitehead. Two towers of $\Omega X$ are therefore connected by fibre homotopy equivalences level by level, and principality is a fibre homotopy invariant of a fibration, being a property of its fibre homotopy type; so the looped tower, being a Postnikov tower of $\Omega X$, consists of principal fibrations, with fibre $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$ at the stage $\Omega X_n\to\Omega X_{n-1}$.
+Steps [](#loop){.pf-ref} and [](#stages){.pf-ref} show that $\Omega X_n$ is the $(n-1)$-st Postnikov stage of $\Omega X$ and that $\Omega X\to\Omega X_n$ has the required effect on homotopy groups, so the looped tower is a Postnikov tower for $\Omega X$ in Hatcher's sense. Postnikov towers of a connected CW complex are unique: the $n$-th stage is determined up to homotopy equivalence under the space by its homotopy groups and the truncation property, which is the uniqueness statement of Hatcher's construction, and the comparison is an isomorphism on all homotopy groups, hence a homotopy equivalence by Whitehead. Two towers of $\Omega X$ are therefore connected by fibre homotopy equivalences level by level, and principality is a fibre homotopy invariant of a fibration, being a property of its fibre homotopy type; so the looped tower, being a Postnikov tower of $\Omega X$, consists of principal fibrations, with fibre $\Omega K(\pi_nX,n)=K(\pi_nX,n-1)$ at the stage $\Omega X_n\to\Omega X_{n-1}$.
 :::
 
 :::
