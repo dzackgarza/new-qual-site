@@ -22,6 +22,7 @@ To prove $x=y$ in a metric space it suffices to show $\rho(x,y)<\varepsilon$ for
 ::: {.example}
 Uniform convergence implies pointwise convergence, and $x^n$ on $[0,1]$ converges pointwise but not uniformly.
 
+Pointwise convergence is [@Rud76, ch. 7, Definition 7.1]; for $x^n$ the limit is $0$ on $[0,1)$ and $1$ at $1$, so the limit is discontinuous while every $x^n$ is continuous, and uniform convergence would preserve continuity by [@Rud76, ch. 7, Theorem 7.12].
 :::
 
 [[T-ERNLN]]
@@ -87,6 +88,7 @@ Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not 
 Let $f\geq0$ on $\RR^d$ and $\mathcal A\coloneqq\theset{(x,y)\in\RR^d\times\RR \st 0\leq y\leq f(x)}$.
 Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$.
 
+The computation is [[FT-4JRQX|Tonelli's theorem]] applied to the indicator of $\mathcal A$: $\mathcal A$ is measurable exactly when every slice $\mathcal A_x=[0,f(x)]$ is, which is the section criterion of [[D-SLICES]], and Tonelli gives $m(\mathcal A)=\int_{\RR^d}\int_0^{f(x)}\dy\,\dx=\int_{\RR^d}f(x)\dx$. The statement is not printed in either retained book, so no numbered source is cited for it.
 :::
 
 ## Qual problems
