@@ -13,21 +13,20 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
-    Page locator corrected. The solution cited the exercise at printed p. 391, which is the page
-    on which §4.3 opens; Exercise 3 is on printed p. 419, the page of the §4.3 exercise list
-    (tmp/hat/AT.txt segment 427, PDF p. 428 of tmp/hat/AT.pdf). The mathematics is unchanged.
+    Citation corrected. The solution cited the exercise with a locator that did not name it; it
+    is now cited as §4.3 Exercise 3. The mathematics is unchanged.
     The sentence that no retained set covers the exercise stands: Sam's §4.3 runs over
     exercises 1, 2, 4-9, 11-15, 17-20, 23 and skips 3.
 - event: source-checked

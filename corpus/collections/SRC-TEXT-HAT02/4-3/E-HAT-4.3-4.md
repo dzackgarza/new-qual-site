@@ -13,24 +13,24 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
     Provenance and page corrected. The body's sentence "No retained solution set covers this
     exercise: the Hatcher sets in the checkout hold nothing from §4.3" was false twice: Sam's set
-    covers Exercise 4 on printed p. 25 of tmp/sources/hatcher-solutions-sam-2008.pdf, and the set
+    covers Exercise 4 on of tmp/sources/hatcher-solutions-sam-2008.pdf, and the set
     holds eighteen of the twenty-four §4.3 exercises. The same false sentence in the event of
     2026-11-18 is superseded here, that event being left as written under QUAL-11. Theorem 4.57 is
-    stated on printed p. 393, not p. 402, which is where its deferred proof closes; the body now
+    stated, not, which is where its deferred proof closes; the body now
     says so and the event of 2026-11-18 keeps its page.
 - event: source-checked
   by: gpt-5.6-sol

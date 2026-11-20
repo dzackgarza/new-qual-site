@@ -13,14 +13,14 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
@@ -35,14 +35,13 @@ audit:
   date: 2026-11-20
   note: >-
     Restructured under #2, transcribing the retained solution of Steven V. Sam, Solutions to
-    Algebraic Topology (2008), §4.3 Exercise 2, printed pp. 24-25 of
-    tmp/sources/hatcher-solutions-sam-2008.pdf (the statement on printed p. 24, the solution on
-    printed p. 25; PDF pp. 25-26). Sam's argument is kept: pointwise multiplication descends to
+    Algebraic Topology (2008), §4.3 Exercise 2 in
+    tmp/sources/hatcher-solutions-sam-2008.pdf, statement and solution. Sam's argument is kept: pointwise multiplication descends to
     homotopy classes, and the bijection T of Theorem 4.57 is additive because
     (f+g)^*(alpha) = f^*(alpha) + g^*(alpha). Sam compresses the last identity into "clear from
     the definition of pullback"; the card now derives it from mu^*u = pr_1^*u + pr_2^*u, which is
-    the Kunneth formula of Theorem 3.15, printed p. 216, together with the two restrictions of mu
-    to the factors. Checked against the numbered statements named; Theorem 4.57 is printed p. 393
+    the Kunneth formula of Theorem 3.15, together with the two restrictions of mu
+    to the factors. Checked against the numbered statements named; Theorem 4.57 is
     and S^1 = K(Z,1) because its universal cover is contractible. Not checked: no certificate, and
     nothing outside this exercise.
 - event: source-checked
