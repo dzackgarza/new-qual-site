@@ -18,6 +18,8 @@ review: draft
 Let $\zeta$ be the [[D-HJYH3|Riemann zeta function]], continued meromorphically to $\CC$.
 The only [[D-65VIK|zeros]] of $\zeta$ outside the critical strip $\theset{s\st0\le\Re s\le1}$ are the simple zeros at $s=-2,-4,-6,\ldots$.
 Moreover, $\zeta$ has no zeros on the line $\Re s=1$.
+
+The first sentence is [@SS03, ch. 7, Theorem 1.1], the second [@SS03, ch. 7, Theorem 1.2].
 :::
 
 ::: {.remark}
