@@ -25,7 +25,7 @@ Each sequence also converges almost everywhere without converging in $L^1$.
 
 ::: {.example title="Convergence in $L^p$ does not imply almost-everywhere convergence"}
 For $n = 2^k + j$ with $0\leq j < 2^k$, let $f_n \coloneqq \chi_{[j2^{-k},\,(j+1)2^{-k}]}$ on $[0,1]$ (the typewriter sequence).
-Then $\norm{f_n}_p = 2^{-k/p}\to 0$ for every $p<\infty$, but for every $x\in[0,1]$ the sequence $f_n(x)$ takes the value $1$ infinitely often and the value $0$ infinitely often, so it converges at no point.
+Then $\norm{f_n}_p = 2^{-k/p}\to 0$ for every $p<\infty$, but for every $x\in[0,1)$ the sequence $f_n(x)$ takes the value $1$ infinitely often and the value $0$ infinitely often, so it converges at no point of $[0,1)$; at $x=1$ every $f_n$ vanishes.
 Every sequence converging in $L^p$ has a subsequence converging almost everywhere; here $f_{2^k}=\chi_{[0,2^{-k}]}\to 0$ on $(0,1]$.
 
 :::
