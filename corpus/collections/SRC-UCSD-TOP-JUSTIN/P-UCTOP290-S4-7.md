@@ -109,6 +109,34 @@ audit:
     the covering condition and by the spanning-tree recipe for their subgroups. Not checked:
     the covers of part (b) are not compared with any published drawing, the notebook's own
     being lost.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Check of the report (issue #173) that the third picture of Problem 7 is misread. Its two
+    b-arrowheads were read from the sheet's drawing operators, not from a rendering:
+    assets/attachments/UCSD_290_F14_sheet4.pdf, page 1 (printed p. 253), has filled triangles at
+    (387.4, 506.6) and (404.5, 510.3) whose tips point down-left and up-right, on the outer and
+    the inner arc of the lens respectively. The printed b-arrows therefore run in opposite
+    directions, outer from the top vertex to the lower left and inner from the lower left to the
+    top. The picture is a covering graph, and 0->2, 2->0 are the printed edges, not a
+    replacement for them. The report's reading, both arrows from the lower left to the top,
+    would leave the lower left with two outgoing and no incoming b-edge, against the sheet's
+    premise that the five pictures are covers; it would also make the two arcs spell the same
+    word ba^-2, so that the graph yields at most three independent loops, while the retained
+    third list has four generators and an index-3 subgroup of F2 has rank four. The report is
+    right on one point: the sentence "one arrow of each label" was too general, since this
+    picture draws two b-arrows. That sentence is withdrawn here (the source-checked event of
+    2026-11-06 carries the same wording and is superseded there), the step counts the arrows
+    picture by picture, and the #right proof names the printed directions instead of calling the
+    two b-edges an involution. No mathematical statement changes. Checked, step by step: the
+    statement against the extracted text and the printed page; all eleven arrowheads of the five
+    pictures against the drawing operators; the bases of all five pictures recomputed from the
+    printed edges by the tree recipe; the index and rank counts; every word identity of the
+    retained step re-reduced in F2; the three finite part-(b) cores vertex by vertex and by
+    their spanning-tree bases; and the conjugation identities and normal-closure identifications
+    of steps hfourth and hfifth. Not checked: the part-(b) covers against any published drawing,
+    the notebook's own being lost.
 ---
 
 ::: {.problem}
@@ -147,7 +175,7 @@ Collapsing $T$ is a homotopy equivalence of $\Gamma$ with the one-vertex graph $
 :::
 
 ::: {.pf-step #figures}
-In the printed pictures one arrow of each label is drawn, and the covering condition fixes the rest. The first three pictures have three vertices and one $a$-cycle through all three; the last two are the infinite $4$-valent tree, drawn with horizontal $a$-edges and vertical $b$-edges, in which the $b$-edge at one spine vertex (fourth picture) is drawn as a circle tangent to the spine and the $b$-edge at two consecutive spine vertices (fifth picture) as a circle crossing the spine.
+Each printed picture draws one $a$-arrow; the first, second, fourth and fifth draw one $b$-arrow each, and the third draws two, one on each arc of the lens, pointing in opposite directions. The covering condition fixes the direction of every edge that carries no arrow. The first three pictures have three vertices and one $a$-cycle through all three; the last two are the infinite $4$-valent tree, drawn with horizontal $a$-edges and vertical $b$-edges, in which the $b$-edge at one spine vertex (fourth picture) is drawn as a circle tangent to the spine and the $b$-edge at two consecutive spine vertices (fifth picture) as a circle crossing the spine.
 
 ::: pf-proof
 In the last two pictures every vertex is a crossing of one horizontal and one vertical segment, giving two $a$-half-edges and two $b$-half-edges, and no cycle closes, so the segments form an infinite tree, the branches cut off at the edge of the drawing continuing. In the fourth picture the circle touches the spine at a vertex that carries no vertical segment, so the circle supplies that vertex's two $b$-germs and the tree together with the circle is a covering graph. In the fifth the circle meets the spine at two vertices, neither carrying a vertical segment, and its two arcs are the two $b$-edges between them, one in each direction; the tree with those two arcs removed is a maximal forest. The drawn arrows fix the reading: the $a$-arrow points right along the spine, and the covering condition then gives one incoming and one outgoing $a$-edge at every vertex, so a horizontal path is read in a single direction, and the same holds for the vertical $b$-edges.
@@ -181,7 +209,7 @@ Each circle of the picture is one $b$-loop and the three joining arcs are the $a
 In the right picture the $a$-edges are the $3$-cycle $0\to1\to2\to0$, the $b$-edges are $0\to2$, $2\to0$ and a loop at $1$, and the subgroup at $0$ is $\langle a^3,\ ba^{-2},\ aba^{-1},\ a^2b\rangle$.
 
 ::: pf-proof
-The two arcs of the left-hand lens are the two $b$-edges joining the lower left and top vertices, and the right-hand circle is the $b$-loop at the lower right vertex, so the $b$-edges interchange $0$ and $2$ and fix $1$. With the tree $0\xrightarrow{a}1\xrightarrow{a}2$ the non-forest edges are $2\xrightarrow{a}0$, $0\xrightarrow{b}2$, $2\xrightarrow{b}0$ and $1\xrightarrow{b}1$, which give $a^2\cdot a$, $b\cdot a^{-2}$, $a^2\cdot b\cdot 1$ and $a\cdot b\cdot a^{-1}$ by step [](#basis){.pf-ref}. Since the $b$-edges are an involution here, no choice of their sense changes the answer.
+The two arcs of the left-hand lens are the two $b$-edges joining the lower left and top vertices, and the right-hand circle is the $b$-loop at the lower right vertex, so the $b$-edges interchange $0$ and $2$ and fix $1$. With the tree $0\xrightarrow{a}1\xrightarrow{a}2$ the non-forest edges are $2\xrightarrow{a}0$, $0\xrightarrow{b}2$, $2\xrightarrow{b}0$ and $1\xrightarrow{b}1$, which give $a^2\cdot a$, $b\cdot a^{-2}$, $a^2\cdot b\cdot 1$ and $a\cdot b\cdot a^{-1}$ by step [](#basis){.pf-ref}. As printed, the two $b$-arrows run in opposite directions, the outer arc from the top vertex $2$ to the lower left $0$ and the inner arc from $0$ to $2$; reversing both would only exchange the two words $ba^{-2}$ and $a^2b$ in the basis, so the subgroup is the same.
 :::
 
 :::
