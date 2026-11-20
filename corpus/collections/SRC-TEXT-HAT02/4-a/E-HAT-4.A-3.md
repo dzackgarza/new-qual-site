@@ -34,6 +34,22 @@ audit:
     the inverse outer automorphism makes both composites induce the identity outer automorphism,
     hence freely homotopic to the identity by the classification of free homotopy classes. Not
     re-read this session: the printed pages cited (341, 342, 90, 422).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.A Exercise 3, with Proposition 1B.9, Theorem 1B.8, Proposition 4A.2
+    and the change-of-basepoint map of §4.1. The argument is correct: a self-homotopy equivalence
+    induces an automorphism of $\pi$, the free classes are the orbits of the based ones under the
+    $\pi_1$-action, which conjugates the induced homomorphism, and the resulting map
+    $\operatorname{Aut}(K)\to\operatorname{Out}(\pi)$ is a bijective homomorphism in both
+    directions as the steps argue. No mathematics changed. Two changes: the text named printed
+    pages for §4.1, Proposition 1B.9, Proposition 4A.2 and Theorem 1B.8, and by the owner's
+    correction of this date it now cites the numbered statements only; and the lead's claim that
+    no retained solution set covers the exercise was re-checked, Sam's set having no §4.A. Not
+    checked: no certificate; the statement's hypothesis that $K$ is a CW complex is used only in
+    citing the classification of free homotopy classes.
+
 ---
 
 ::: {.problem}
@@ -43,7 +59,7 @@ Show that for a CW complex $K(\pi, 1)$, $\operatorname{Aut}(K(\pi, 1))$ is isomo
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.A Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.A Exercise 3.
+The argument is the card's own; no retained solution set covers Section 4.A Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.A Exercise 3.
 
 Let $K=K(\pi,1)$ be a CW complex with $\pi_{1}(K,x_{0})=\pi$ and vanishing higher homotopy groups, and let $\operatorname{Aut}(K)$ be the group of homotopy classes of homotopy equivalences $K\to K$, and $\operatorname{Out}(\pi)=\operatorname{Aut}(\pi)/\operatorname{Inn}(\pi)$.
 
@@ -53,7 +69,7 @@ Let $K=K(\pi,1)$ be a CW complex with $\pi_{1}(K,x_{0})=\pi$ and vanishing highe
 Basepoints are immaterial: for any path $\gamma$ from $x_{1}$ to $x_{0}$ the change-of-basepoint map $\beta_{\gamma}\colon\pi_{1}(K,x_{1})\to\pi_{1}(K,x_{0})$ is an isomorphism, and $\beta_{\gamma\eta}=\beta_{\gamma}\beta_{\eta}$.
 
 ::: pf-proof
-Hatcher introduces the change-of-basepoint map in §4.1 (printed pp. 341--342): $\beta_{\gamma}([\omega])=[\gamma\cdot\omega\cdot\bar\gamma]$ is a group isomorphism, and $\beta_{\gamma\eta}=\beta_{\gamma}\beta_{\eta}$ for composable paths. Consequently $\pi_{1}$ at any two points of $K$ is identified with $\pi$, and a comparison of two identifications differs by conjugation.
+Hatcher introduces the change-of-basepoint map in §4.1: $\beta_{\gamma}([\omega])=[\gamma\cdot\omega\cdot\bar\gamma]$ is a group isomorphism, and $\beta_{\gamma\eta}=\beta_{\gamma}\beta_{\eta}$ for composable paths. Consequently $\pi_{1}$ at any two points of $K$ is identified with $\pi$, and a comparison of two identifications differs by conjugation.
 :::
 
 :::
@@ -71,7 +87,7 @@ If $f$ is a homotopy equivalence with homotopy inverse $f'$, then $f'f\simeq\mat
 Based homotopy classes $\langle K,K\rangle$ correspond bijectively to homomorphisms $\pi\to\pi$, and free homotopy classes $[K,K]$ to homomorphisms modulo inner automorphisms.
 
 ::: pf-proof
-$K$ is a $K(\pi,1)$ and $\langle K,K\rangle\to\operatorname{Hom}(\pi,\pi)$, $[f]\mapsto f_{*}$, is a bijection by Proposition 1B.9 (printed p. 90). By Proposition 4A.2 (printed p. 422) the free homotopy classes are the orbits of the based ones under the action of $\pi_{1}(K)=\pi$, and a path $\gamma$ from $x_{0}$ to itself sends $f_{*}$ to $\beta_{\gamma}f_{*}\beta_{\gamma}^{-1}$, i.e. conjugates the homomorphism by the element $[\gamma]$. Hence $[K,K]\cong\operatorname{Hom}(\pi,\pi)/\operatorname{Inn}(\pi)$.
+$K$ is a $K(\pi,1)$ and $\langle K,K\rangle\to\operatorname{Hom}(\pi,\pi)$, $[f]\mapsto f_{*}$, is a bijection by Proposition 1B.9. By Proposition 4A.2 the free homotopy classes are the orbits of the based ones under the action of $\pi_{1}(K)=\pi$, and a path $\gamma$ from $x_{0}$ to itself sends $f_{*}$ to $\beta_{\gamma}f_{*}\beta_{\gamma}^{-1}$, i.e. conjugates the homomorphism by the element $[\gamma]$. Hence $[K,K]\cong\operatorname{Hom}(\pi,\pi)/\operatorname{Inn}(\pi)$.
 :::
 
 :::
@@ -107,7 +123,7 @@ If $\Phi([f])$ is the class of the identity, then $f_{*}$ is inner, that is $f_{
 $\operatorname{Aut}(K(\pi,1))\cong\operatorname{Out}(\pi)$.
 
 ::: pf-proof
-Steps [](#phi){.pf-ref}, [](#surjective){.pf-ref} and [](#injective){.pf-ref} exhibit $\Phi$ as a bijective homomorphism, hence an isomorphism. The homotopy type of $K(\pi,1)$ is determined by $\pi$ (Theorem 1B.8, printed p. 90), so the group depends on $\pi$ alone.
+Steps [](#phi){.pf-ref}, [](#surjective){.pf-ref} and [](#injective){.pf-ref} exhibit $\Phi$ as a bijective homomorphism, hence an isomorphism. The homotopy type of $K(\pi,1)$ is determined by $\pi$ (Theorem 1B.8), so the group depends on $\pi$ alone.
 :::
 
 :::
