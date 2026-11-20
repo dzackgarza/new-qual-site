@@ -105,7 +105,7 @@ with respect to $x,y,z$.
 
 ::: {.pf-step #s1-3}
 
-Therefore the Cartesian components are
+Part (a): therefore the Cartesian components are
 $$
 \boxed{
 \vec A
@@ -122,19 +122,6 @@ $$
 ::: pf-proof
 
 Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -193,7 +180,7 @@ differentiate with respect to $\rho$ and $z$.
 
 ::: {.pf-step #s1-7}
 
-Hence the cylindrical components are
+Part (b): hence the cylindrical components are
 $$
 \boxed{
 (A_\rho,A_\phi,A_z)
@@ -220,19 +207,6 @@ e_\phi\frac1\rho\frac{\partial f}{\partial\phi}
 e_z\frac{\partial f}{\partial z}.
 $$
 Use step [](#s1-6){.pf-ref} and $\partial f/\partial\phi=0$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-8}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -279,7 +253,7 @@ $\theta$ or $\phi$.
 
 ::: {.pf-step #s1-11}
 
-Hence the spherical components are
+Part (c): hence the spherical components are
 $$
 \boxed{
 (A_R,A_\theta,A_\phi)
@@ -301,22 +275,9 @@ Use the standard spherical-coordinate gradient formula and step [](#s1-10){.pf-r
 
 :::
 
-::: {.pf-step #s1-12}
-
-Part (c) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-11){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} give the components in Cartesian, cylindrical,
+Steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref} give the components in Cartesian, cylindrical,
 and spherical coordinates.
 
 :::
