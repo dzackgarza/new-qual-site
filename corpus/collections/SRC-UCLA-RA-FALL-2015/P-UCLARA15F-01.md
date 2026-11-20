@@ -341,7 +341,7 @@ $$
 
 ::: pf-proof
 
-This is step [](#s1-7){.pf-ref}.
+Step [](#s1-7){.pf-ref} gives $(\varphi*g_n)(x)\to0$ for every fixed $x\in\RR^d$, so it applies at each of the finitely many points $x_1,\dots,x_m$ of the preceding step.
 
 :::
 
