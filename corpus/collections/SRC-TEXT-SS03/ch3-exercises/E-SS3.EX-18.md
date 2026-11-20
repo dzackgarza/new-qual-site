@@ -27,6 +27,8 @@ using homotopy of curves.
 :::
 
 ::: {.solution}
+The statement is Exercise 18 of [@SS03, ch. 3 (p. 106)], printed beginning "Give another proof of the Cauchy integral formula".
+
 Let $C$ be positively oriented and let $z$ lie in its interior. Since
 $$
 \frac{f(\zeta)}{\zeta-z}
