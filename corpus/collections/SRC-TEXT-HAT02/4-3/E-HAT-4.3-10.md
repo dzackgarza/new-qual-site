@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The body's clause "the Hatcher sets in the checkout hold nothing from §4.3" was false: Sam's
+    set holds eighteen of the twenty-four exercises. The claim that no retained set covers
+    Exercise 10 is true, Sam skipping it. Only the false clause is removed; the argument is
+    unchanged.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -58,7 +66,7 @@ Deduce that if $\pi_1(E) = 0$, then the action of $\pi_1(F)$ on $\pi_n(F)$ is tr
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.3. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 10, printed p. 419, and it uses only the homotopy lifting property of the fibration.
+No retained solution set covers this exercise; Sam's §4.3 skips Exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 10, printed p. 419, and it uses only the homotopy lifting property of the fibration.
 
 Fix $e_0\in F=p^{-1}(b_0)$ and let $p:E\to B$ be the fibration.
 
