@@ -70,6 +70,28 @@ audit:
     covers the exercise: Sam's set stops at §4.3. Not checked: no certificate; no obstruction-theory
     input is used, so none was verified.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The orientability step the previous pass left as a citation is now derived from Hatcher's
+    numbered statements, and the citation it carried is removed. It cited the Whitney sum formula
+    for $w_1$ of a disc bundle, $w_1(D(E))=\pi^*(w_1(S^n)+w_1(\xi))$ — a statement Hatcher's book
+    does not develop, so the card was resting on an outside result while presenting its argument as
+    an argument from the book. The replacement uses only Theorem 3.26: for a closed connected
+    $m$-manifold, $H_m(M;\ZZ)\cong\ZZ$ when $M$ is orientable and $H_m(M;\ZZ)=0$ when it is not, so a
+    nonzero top homology group forces orientability and, by part (a) of the theorem, supplies the
+    fundamental class. The top homology is read from the cellular chain complex, which the card
+    already computes: $C_p$ has one cell in each of the dimensions $0$, $n$ and $2n$ and no boundary
+    can be nonzero, so $H_{2n}(C_p;\ZZ)\cong\ZZ$. That complex is defined combinatorially, so the
+    argument does not presuppose orientability; the two steps are exchanged so that the cohomology
+    computation precedes the orientability step that consumes it. The duality step now names the
+    fundamental class and records that the equivalence in Corollary 3.39 is what the proof of that
+    corollary establishes, its printed statement giving only one direction. Connectedness of $C_p$,
+    needed for Theorem 3.26, is now derived from connectedness of $D(E)$. No statement changed.
+    Not checked: no certificate; the Hopf-invariant half is unchanged apart from the citation of the
+    fundamental class.
+
 ---
 
 ::: {.problem}
@@ -78,7 +100,7 @@ Show that if $S^k \to S^m \xrightarrow{p} S^n$ is a fiber bundle, then $m = 2n-1
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise — Sam's set stops at §4.3 and the other sets retained for this project have no §4.B solution — so the argument is the card's own, following the hint printed with the exercise. It uses Corollary 4.9, Corollary 4.25, the homotopy exact sequence of a fibration (Theorem 4.41), the cellular chain complex of $C_p$ (the cellular boundary formula of §2.2 with Theorem 2.35), and Poincaré duality in the form of Theorem 3.30 with Corollary 3.39.
+No retained solution set covers this exercise — Sam's set stops at §4.3 and the other sets retained for this project have no §4.B solution — so the argument is the card's own, following the hint printed with the exercise. It uses Corollary 4.9, Corollary 4.25, the homotopy exact sequence of a fibration (Theorem 4.41), the cellular chain complex of $C_p$ (the cellular boundary formula of §2.2 with Theorem 2.35), Theorem 3.26 for orientability, and Poincaré duality in the form of Theorem 3.30 with Corollary 3.39.
 
 Let $S^k\to S^m\xrightarrow{p}S^n$ be a fibre bundle. A bundle is locally a product, so $m=n+k$.
 
@@ -147,15 +169,6 @@ The disc bundle $D(E)$ is a compact $2n$-manifold whose boundary is the sphere b
 
 :::
 
-::: {.pf-step #orientable}
-$C_p$ is orientable.
-
-::: pf-proof
-$D(E)$ carries the stable splitting $T D(E)\cong\pi^*(TS^n\oplus\xi)$ for the rank-$n$ vector bundle $\xi$ with $D(\xi)=E$, so $w_1(D(E))=\pi^*\bigl(w_1(S^n)+w_1(\xi)\bigr)$. Here $w_1(S^n)=0$ because $S^n$ is orientable, and $w_1(\xi)\in H^1(S^n;\ZZ_2)=0$ because $n>1$; hence $D(E)$ is orientable as a manifold with boundary, and collapsing the boundary preserves orientability.
-:::
-
-:::
-
 ::: {.pf-step #cohomology}
 $H^n(C_p;\ZZ)\cong\ZZ$ and $H^{2n}(C_p;\ZZ)\cong\ZZ$, with $H^k(C_p;\ZZ)=0$ for the other $k>0$ other than $0$ and $n$.
 
@@ -165,11 +178,20 @@ As the mapping cone of $p$, $C_p$ has exactly one cell in each of the dimensions
 
 :::
 
+::: {.pf-step #orientable}
+$C_p$ is orientable, and it carries a fundamental class $[C_p]\in H_{2n}(C_p;\ZZ)$.
+
+::: pf-proof
+$C_p$ is a closed connected $2n$-manifold by step [](#manifold){.pf-ref}: it is connected because it is a quotient of the connected space $D(E)$, whose base $S^n$ is connected for $n>1$ and whose fibre $D^n$ is connected. By step [](#cohomology){.pf-ref} its homology in the top degree is $H_{2n}(C_p;\ZZ)\cong\ZZ$, in particular nonzero. Theorem 3.26 states, for a closed connected $m$-manifold $M$, that $H_m(M;\ZZ)$ is $\ZZ$ if $M$ is orientable and $0$ if it is not: part (b) of that theorem says that for a non-$R$-orientable $M$ the map $H_m(M;R)\to H_m(M\mid x;R)\cong R$ is injective with image $\{r\in R\mid 2r=0\}$, which is $0$ when $R=\ZZ$. So $H_{2n}(C_p;\ZZ)\neq0$ forces $C_p$ to be orientable, and part (a) of the same theorem identifies the fundamental class: an element of $H_{2n}(C_p;\ZZ)$ whose image in $H_{2n}(C_p\mid x;\ZZ)$ is a generator at every point. Nothing here presupposes orientability, because the cellular chain complex of step [](#cohomology){.pf-ref} is defined combinatorially, from the cells and the attaching maps, and no Stiefel--Whitney class is used.
+:::
+
+:::
+
 ::: {.pf-step #duality}
 The cup product pairing $H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)\to H^{2n}(C_p;\ZZ)$ is perfect.
 
 ::: pf-proof
-$C_p$ is a closed connected orientable $2n$-manifold by steps [](#manifold){.pf-ref} and [](#orientable){.pf-ref}, so Poincaré duality, Theorem 3.30, applies with any coefficients. Corollary 3.39 is its consequence for a closed orientable $n$-manifold: an element of $H^k$ is a generator of an infinite cyclic direct summand exactly when it pairs to a generator of $H^n$ with some element of $H^{n-k}$. Taking the complementary degrees to be $n$ and $2n-n=n$, this says that $\alpha\in H^n(C_p;\ZZ)$ generates the free group $H^n$ exactly when there is some $\alpha''\in H^n(C_p;\ZZ)$ with $\alpha\smile\alpha''$ a generator of $H^{2n}$.
+$C_p$ is a closed connected orientable $2n$-manifold with fundamental class $[C_p]$ by steps [](#manifold){.pf-ref} and [](#orientable){.pf-ref}, so Poincaré duality, Theorem 3.30, applies with $R=\ZZ$: cap product with $[C_p]$ is an isomorphism $H^k(C_p;\ZZ)\to H_{2n-k}(C_p;\ZZ)$. Corollary 3.39 is the consequence for a closed connected orientable $n$-manifold: an element of $H^k$ generates an infinite cyclic direct summand exactly when it pairs to a generator of $H^n$ with some element of $H^{n-k}$, the equivalence being what the proof of that corollary establishes. Taking the complementary degrees to be $n$ and $2n-n=n$, and using step [](#cohomology){.pf-ref} to know that $H^n(C_p;\ZZ)\cong\ZZ$ has no summands other than itself, this says that a generator $\alpha$ of $H^n(C_p;\ZZ)$ is one exactly when there is some $\alpha''\in H^n(C_p;\ZZ)$ with $\alpha\smile\alpha''$ a generator of $H^{2n}(C_p;\ZZ)$.
 :::
 
 :::
