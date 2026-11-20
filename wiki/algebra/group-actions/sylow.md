@@ -15,10 +15,8 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^a m$ with $p\not
 
 ::: {.remark title="Intersections of Sylow subgroups"}
 If $a=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$.
-For $a>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
+For $a>1$ two distinct Sylow $p$-subgroups can intersect nontrivially: in $S_4$, where $a=3$ and $n_2=3$, the three Sylow $2$-subgroups of order $8$ meet pairwise in a subgroup of order $4$.
 :::
-
-The counting consequence is a congruence for the size of a fixed-point set that needs no group structure on the set.
 
 [[L-DJKXL]]
 
@@ -39,13 +37,10 @@ The counting consequence is a congruence for the size of a fixed-point set that 
 ## Applications
 
 A normal Sylow subgroup $P$ gives a quotient $G/P$ of order $m$ coprime to $p$, so the classification arguments proceed by induction on $\size G$ through that quotient.
-When the normal subgroup is not a Sylow subgroup, Frattini's argument writes $G=N\,N_G(P)$ for $P\in\Syl_p(N)$, so the Sylow subgroup of the normal subgroup controls the normalizer in $G$.
 
 [[T-4XKGD]]
 
 [[P-2BYEN]]
-
-A finite group is nilpotent exactly when all of its Sylow subgroups are normal, and then it is their direct product.
 
 [[T-GM7EB]]
 
