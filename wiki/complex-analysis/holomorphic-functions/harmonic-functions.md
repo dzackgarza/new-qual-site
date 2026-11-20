@@ -26,10 +26,10 @@ The real and imaginary parts of a holomorphic function are harmonic, and a harmo
 
 The circular form is the mean value property of the real part of a holomorphic function [@SS03, Corollary 7.3 (p. 103)]; the disc form follows from it by integrating the circular average over $0\leq s\leq r$ in polar coordinates.
 
-::: {.remark title="Converse"}
-A continuous $u$ satisfying the mean value property on every disc in its domain is harmonic, so the mean value property characterizes harmonic functions among continuous functions.
-The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
+[[T-HMVPC]]
 
+::: {.remark}
+The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
 :::
 
 ::: {.example title="The mean value property for $u = x^2-y^2$"}
