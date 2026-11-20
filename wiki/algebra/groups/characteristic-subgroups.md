@@ -8,7 +8,7 @@ topics:
 
 # Characteristic subgroups, normal closures, and cores
 
-A characteristic subgroup is invariant under the whole automorphism group of $G$ rather than under conjugation alone, which is what lets it pass through a normal subgroup; normality is not transitive, and the standard counterexample is on [[algebra/counterexamples|Counterexamples]].
+Normality is not transitive, and the standard counterexample is on [[algebra/counterexamples|Counterexamples]]. Two corrections: a stronger invariance on $H$ itself, and the normal subgroups of $G$ that $H$ determines.
 
 ## Characteristic subgroups
 
@@ -23,8 +23,6 @@ A characteristic subgroup is invariant under the whole automorphism group of $G$
 [[P-5UUNM]]
 
 ## Normal closures and cores
-
-$H$ is normal exactly when its normal closure $H^G$ equals $H$, and exactly when its core $H_G$ equals $H$: these are the smallest normal subgroup of $G$ containing $H$ and the largest contained in $H$.
 
 [[D-BPRD3]]
 
