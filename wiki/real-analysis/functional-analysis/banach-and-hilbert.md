@@ -23,8 +23,7 @@ Recall that a [[D-BG455|Banach space]] is a normed space that is complete in its
 [[T-J3AN3]]
 
 ::: {.proposition title="Parallelogram law"}
-A norm on a vector space is induced by an inner product if and only if it satisfies $\norm{x+y}^2+\norm{x-y}^2 = 2\norm x^2+2\norm y^2$ for all $x, y$ [@Rud74, ch. 4].
-
+If a norm on a vector space is induced by an inner product, then it satisfies $\norm{x+y}^2+\norm{x-y}^2 = 2\norm x^2+2\norm y^2$ for all $x, y$ [@Fol99, Proposition 5.22].
 :::
 
 ::: {.example title="$L^p$ is a Hilbert space only for $p=2$"}
