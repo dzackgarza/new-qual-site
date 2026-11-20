@@ -155,7 +155,7 @@ for every $x\in X$.
 :::
 
 ::: {.remark}
-The examination paper is retained at `assets/attachments/j15.pdf`, and problem 10 stands on printed p. 2; it prints the problem with a subspace $Y$ and no closedness hypothesis.
+The examination paper is retained at `assets/attachments/j15.pdf`, and problem 10 is printed there with a subspace $Y$ and no closedness hypothesis.
 As printed, statement (i) fails: for $X=C[0,1]$ with the sup norm, $Y$ the polynomials and $\norm y_1=2\norm y$, every $\varphi\in S$ is bounded and vanishes on a dense subspace, so $S=\{0\}$ and $\norm x_2=0$ for every $x$.
 The statement above adds closedness, and that replacement is certified: <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/Tamuras15_10.lean> proves `corrected_statement`, which says that for `Y` closed the supremum norm of the problem is a norm on `X`, agrees with the given norm on `Y`, and satisfies `K^-1 * ||x|| <= ||x||_2 <= K * ||x||`, and its `#print axioms` lines report only `propext`, `Classical.choice` and `Quot.sound`, with no `sorryAx`.
 :::
