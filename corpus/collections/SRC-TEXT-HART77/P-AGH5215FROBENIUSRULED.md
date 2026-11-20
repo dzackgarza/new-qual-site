@@ -755,6 +755,36 @@ audit:
     computation of s9. Not checked: the printed copies of Hartshorne or Xie, only
     the retained text layers; Miyanishi's book, which is not retained; and no
     example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #168, the reader's follow-up to the repair of step s10: three defects
+    in the proof, one relation, one inference and one cross-reference, none of
+    which moves a conclusion.
+    (i) Step s7 stated the relation in the Frobenius pullback in the wrong
+    direction. The balanced tensor gives $1\tensor gv=g^3(1\tensor v)$ in
+    $F^*(\mathcal E\tensor\OO_C(-P))$, not $g\tensor v=1\tensor g^3v$; with the
+    printed relation, $\psi(g\tensor v)=g\,v^3$ would have to equal
+    $\psi(1\tensor g^3v)=g^9v^3$. The step now states the relation in the
+    direction the tensor gives, derives
+    $\psi(1\tensor gv)=g^3v^3=g^3\psi(1\tensor v)$ and
+    $\psi(g\tensor v)=g\,v^3$ from the $\OO_C$-linearity of $\psi$, and this is
+    the inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ recorded by
+    Hartshorne 1971, Example 3.2.
+    (ii) Step s8 concluded that $\restrictionof{\pi}{Y}$ is finite of degree $3$
+    from a count phrased with $\deg(\restrictionof{\pi}{Y})$, before finiteness
+    was known. The sentence now derives finite fibres from the $0$-cycle
+    $Y\cap f$ of degree $Y\cdot f=3$, observes that $\restrictionof{\pi}{Y}$ is
+    projective, $Y$ being a closed subscheme of the projective surface $X$, and
+    concludes finiteness by Exercise III.11.2, of degree the length of a fibre.
+    (iii) Step s10 cited step s7 for the integrality of $Y$ and did not name
+    irreducibility where Theorem V.1.10 is applied. It now cites step s8 for
+    both, and keeps Proposition V.2.21(b) and Remark V.2.21.1 as the statements
+    of the numerical criterion and of the remaining case.
+    Citations are by numbered statement and no page locator is added. Not
+    checked: the printed book and the printed Hartshorne 1971, only the retained
+    text layers, and no example was computed.
 
 ---
 
@@ -918,7 +948,7 @@ $$
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$. That $t\ne0$, that nothing else lies in the class, and the shape of $Y$ are this card's own, and no source read carries them.
 
-The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the relation $g\tensor v=1\tensor g^3v$ in the Frobenius pullback, whose $\OO_C$-module structure is twisted by $g\mapsto g^3$, makes $\psi(g\tensor v)=g\,v^3$ well defined, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Hartshorne 1971, Example 3.2, records the same map as an inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ and uses it only to conclude that $S^3(\mathcal E)$ is not semistable; he draws no consequence for a curve on $X$. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
+The bundle $F^*\mathcal E\otimes\OO_C(-3P)$ is $F^*(\mathcal E\otimes\OO_C(-P))$, since $F^*\OO_C(-P)=\OO_C(-3P)$, and the second arrow of the chain is the $\OO_C$-linear map $\psi:F^*(\mathcal E\otimes\OO_C(-P))\to S^3(\mathcal E\otimes\OO_C(-P))=\OO_X(3)\otimes f^*\OO_C(-3P)$ which sends $1\tensor v$ to $v^3$; the twist by $g\mapsto g^3$ appears in the comparison with sections of $\mathcal E\tensor\OO_C(-P)$, where $1\tensor gv=g^3(1\tensor v)$, so that $\psi(1\tensor gv)=g^3v^3=g^3\psi(1\tensor v)$ and $\psi(g\tensor v)=g\,v^3$, so a section $u$ expressed in a frame goes to the same expression with each $f_i^F$ replaced by $f_i^3$ and each coefficient kept as it stands. Hartshorne 1971, Example 3.2, records the same map as an inclusion $F^*\mathcal E\subseteq S^3(\mathcal E)$ and uses it only to conclude that $S^3(\mathcal E)$ is not semistable; he draws no consequence for a curve on $X$. Over an open $U\subseteq C$ choose a frame $f_1,f_2$ of $\mathcal E\otimes\OO_C(-P)$ in which $f_1$ spans the subbundle $\OO_C(-P)$ and $f_2$ maps to a generator of the quotient $\OO_C$, and let $f_1^F,f_2^F$ be the induced frame of $F^*(\mathcal E\otimes\OO_C(-P))$. The sequence $0\to\OO_C(-3P)\to F^*(\mathcal E\otimes\OO_C(-P))\to\OO_C\to0$ splits, and a splitting carries $1\in H^0(\OO_C)$ to a section $u$ whose expression in this frame is
 $$
 \restrictionof{u}{U}=f_2^F+a\,f_1^F,\qquad a\in\OO_C(U),
 $$
@@ -957,7 +987,7 @@ because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is n
 The curve $Y$ is integral, and $\restrictionof{\pi}{Y}:Y\to C$ is purely inseparable of degree $3$.
 
 ::: pf-proof
-Degree: $Y\cdot f=3$ by step [](#s7){.pf-ref}, and a fibre meets $Y$ in $\deg(\restrictionof{\pi}{Y})$ points counted with multiplicity, so the map is finite of degree $3$.
+Degree: $Y\cdot f=3$ by step [](#s7){.pf-ref}. Since $Y$ is effective, a fibre meets $Y$ in a $0$-cycle of degree $Y\cdot f=3$, so $\restrictionof{\pi}{Y}$ has finite fibres; it is a projective morphism, $Y$ being a closed subscheme of the projective surface $X$, hence finite by Exercise III.11.2, of degree the length of a fibre, $3$.
 
 The local shape. By step [](#s7){.pf-ref}, over an open $U\subseteq C$ the equation of $Y$ in the fibre coordinate $[\alpha:\beta]$ is the cubic form $\beta^3+a\alpha^3$ with $a\in\OO_C(U)$, and over the algebraic closure of $k(C)$ that form is $(\beta+a^{1/3}\alpha)^3$: $Y$ meets each fibre over $U$ in one point, of multiplicity $3$.
 
@@ -1020,7 +1050,7 @@ satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, 
 ::: pf-proof
 Proposition 2.21(b) reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold. The proposition itself cannot be applied to $X$: its hypothesis $e<0$ holds, since $e=-1$, while char $k=3\ne0$ and $g=3>1$ fail the alternative char $k=0$ or $g\le1$. That is the case Remark 2.21.1 sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample, but it is possible to get some partial results (Ex. 2.14) and (Ex. 2.15)".
 
-For non-ampleness, step [](#s7){.pf-ref} gives an integral curve $Y$ in the class $3C_0-3f$, and
+For non-ampleness, step [](#s7){.pf-ref} gives the curve $Y$ in the class $3C_0-3f$, integral by step [](#s8){.pf-ref}, and
 $$
 Y\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0,
 $$
@@ -1028,7 +1058,7 @@ with $C_0^2=1$ by step [](#s6){.pf-ref}; this is Xie's $E\cap C'=\emptyset$ in i
 $$
 D\cdot Y=2\,C_0\cdot Y=0
 $$
-for the divisor $D=2C_0$ of the statement, and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon (1.10) [[T-SRFNAKAI]]. Therefore
+for the divisor $D=2C_0$ of the statement. The curve $Y$ is irreducible by step [](#s8){.pf-ref}, and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon (1.10) [[T-SRFNAKAI]]. Therefore
 $$
 \boxed{D\text{ is not ample}.}
 $$
