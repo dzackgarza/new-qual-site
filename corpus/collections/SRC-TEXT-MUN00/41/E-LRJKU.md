@@ -31,6 +31,19 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 41 Exercise 1, printed p. 260, with Theorem 41.4 (every metrizable space is paracompact) and the definition of local finiteness. No correction was needed; the cover is the family of intervals $(-n,n)$ of $\RR$, every member of which contains $0$.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. The example is right: $\RR$ is
+    paracompact because it is metrizable (Theorem 41.4); $\mathcal U=\{(-n,n)\}$ is an open
+    cover, since $n>\abs{x}$ puts $x$ in $(-n,n)$; a finite subcollection has a largest index
+    $N$ and union $(-N,N)$, a proper subset of $\RR$; and every member contains $0$, so an
+    infinite subcollection meets every neighbourhood of $0$ in infinitely many members and is
+    not locally finite. Citation by number: §41 Exercise 1, read in
+    `tmp/sources/munkres-2000-topology.md`; the 2026-11-10 event's page locator is superseded,
+    its text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
