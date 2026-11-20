@@ -10935,3 +10935,15 @@ and says they are inverse. They are not: for $z=y^{2}-(x/2y)^{2}$ one has $\sqrt
 **Checks.** `qualc.authoring check` on all three cards, `tmp/lam.sh` on each — six, seven and five steps numbered with the QED labels present. Two of the edits first produced a fenced-div opener directly after text, which `qualc.authoring check` caught and I corrected before committing. No whole-corpus gate this turn.
 
 **Batch state.** With these three, every §4.2 card this stream was assigned has been read: the eight split off first, the eleven of the previous rounds, and these three. The §4.3 cards are hlg7's lane and are not in this count.
+
+## 2026-11-20: the transitivity duplicate is closed by supersession, not by deletion
+
+**Object and need:** the two records above of this day — the merge into `P-FHW1-02` and its withdrawal when the gate refused the deletion — left the duplicate open and called it an owner decision.
+
+**Repair:** it is closed without deleting a record. `E-AMD-CY7I27YM` and `P-MUABR` keep their files and gain one `solution-reviewed` event of this day stating that each is superseded by `P-FHW1-02`, with what was re-read to establish it; both entries are removed from `SRC-UNSORTED-ALGEBRA`, so neither card is listed by a collection or appears in a source-order problem list, and no page transcludes either. Card commit `f987b7bf39`. The gate that refused the deletion accepts this: the pre-commit check reports the three changed files with no errors, and no event was edited or removed.
+
+**Impact and owner:** the theorem now reaches a reader once, from `P-FHW1-02`. The two retired cards remain readable by id and remain in the corpus count.
+
+**Uncertainty:** a card listed by no collection is an orphan under the audit's `orphans` check, which this lane did not run; whether an orphan retained for its dated events should be exempted from that check is not settled here.
+
+**Repair of the record:** this record supersedes the two above it in effect, and neither is rewritten.
