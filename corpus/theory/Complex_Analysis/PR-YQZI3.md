@@ -16,4 +16,6 @@ review: draft
 
 ::: {.proposition}
 The [[D-Q3MYK|Gamma function]], defined by $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\dt$ for $\Re s>0$, extends to a [[D-7DFVJ|meromorphic]] function on $\CC$ whose only singularities are simple [[D-AUD6K|poles]] at $s=0,-1,-2,\ldots$.
+
+This is [@SS03, ch. 6, Theorem 1.3], which also gives the residue $(-1)^n/n!$ at $s=-n$.
 :::
