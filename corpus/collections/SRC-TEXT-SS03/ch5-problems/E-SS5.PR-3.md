@@ -40,6 +40,19 @@ audit:
     unchanged. The rest was read and holds: the ratio $1/(n+1)^\alpha$, the Stirling lower bound,
     the maximum of $x(1+\log R-\log x)$ at $x=R$, the split at $\lceil2eR\rceil$, and the upper
     bound $M_F(r)\le Ce^{C'r^{1/\alpha}}$.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance: a published solution of this Problem was located, so the sentence saying that no
+    source text or solution set existed is replaced. The set is Wang Zirui, *Complete Solutions for
+    Chapter 5*, in the public repository
+    `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its Problem 3 and
+    checked against Chapter 5, Problem 3: the coefficient asymptotics from Stirling's formula, the
+    maximal-term estimate at $n\asymp r^{1/\alpha}$, the upper bound from the neighbouring geometric
+    tails and the lower bound from the single maximal term. The card's argument takes the same route
+    and supplies the constants; its statement is unchanged. Not checked: anything in the published
+    document outside its Problem 3.
 
 ---
 
@@ -59,7 +72,7 @@ The book marks this problem with an asterisk (Chapter 5, Problem 3).
 
 ::: {.solution}
 
-The argument is the card's own; the statement is the exercise stored on the card, and no source text or solution set is retained for it.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 5* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 5, Problem 3, it carries the computation: Stirling's formula in the coefficients gives $\bigl((n!)^{-\alpha}\bigr)^{1/n}\asymp n^{-\alpha}$, the maximal term of $M(r)=\sum_n r^n/(n!)^\alpha$ occurs at $n\asymp r^{1/\alpha}$, the neighbouring geometric tails bound $M(r)$ above by $Ce^{Cr^{1/\alpha}}$, and the single term at $n=\lfloor r^{1/\alpha}\rfloor$ bounds it below. The proof below follows that route and supplies the constants, as the audit trail records.
 
 Let $\alpha>0$, $a_{n}=(n!)^{-\alpha}$ and $F(z)=\sum_{n\geq0}a_{n}z^{n}$. Recall that the order of an entire $F$ is $\rho=\limsup_{r\to\infty}\frac{\log\log M_{F}(r)}{\log r}$ with $M_{F}(r)=\max_{\abs{z}\leq r}\abs{F(z)}$; $\rho\leq\sigma$ holds exactly when $M_{F}(r)\leq Ae^{Br^{\sigma}}$ for some constants and all large $r$.
 
