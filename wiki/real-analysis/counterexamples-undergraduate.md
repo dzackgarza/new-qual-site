@@ -106,14 +106,14 @@ Since $D_f$ is countable, hence null, and $f$ is bounded, $f$ is Riemann integra
 
 ## The Weierstrass function
 
-::: {.example title="The Weierstrass function"}
-For $a \in (0, 1)$ and an odd integer $b\geq1$ with $ab > 1 + {3\pi \over 2}$, let
+::: {.example title="A Weierstrass-type function that is differentiable nowhere"}
+Let $\varphi\colon\RR\to\RR$ be the $2$-periodic function with $\varphi(x)=\abs x$ for $-1\leq x\leq1$, and let
 $$
-f(x)\coloneqq\sum_{n=0}^{\infty} a^{n} \cos \left(b^{n} \pi x\right).
+f(x)\coloneqq\sum_{n=0}^{\infty}\qty({3\over4})^{n}\varphi(4^{n}x).
 $$
-The $n$th term is bounded by $a^n$, so the series converges uniformly by the Weierstrass $M$-test, $f$ is continuous, and $\abs f\leq(1-a)^{-1}$.
-Weierstrass's theorem states that $f$ is differentiable nowhere [@Rud76, ch. 7].
-$f$ is Riemann integrable on every compact interval, and not Lebesgue integrable on $\RR$, since it is continuous, $2$-periodic, and not almost everywhere zero.
+Since $0\leq\varphi\leq1$, the series converges uniformly by the Weierstrass $M$-test [@Rud76, Theorem 7.10], so $f$ is continuous, and $\abs f\leq 4$.
+By [@Rud76, Theorem 7.18], $f$ is differentiable nowhere.
+$f$ is Riemann integrable on every compact interval, and not Lebesgue integrable on $\RR$, since it is continuous, $2$-periodic, and $f(1/2)=1/2$.
 
 :::
 
@@ -126,4 +126,4 @@ $f$ is Riemann integrable on every compact interval, and not Lebesgue integrable
 | $x^2\chi_\QQ$ | No | $\RR\smz$ | $\RR\smz$ | No | Yes, $\int \abs f=0$ |
 | $x\qty{\chi_\QQ - \chi_{\RR\setminus\QQ}}$ | No | $\RR\smz$ | $\RR$ | No | No, $\abs{f}=\abs{x}$ |
 | Thomae | Yes | $\QQ$ | $\RR$ | Yes, $\int f = 0$ | Yes, $\int f=0$ |
-| Weierstrass | Yes, $\abs f\le (1-a)^{-1}$ | $\emptyset$ | $\RR$ | Yes | No |
+| Weierstrass | Yes, $\abs f\le 4$ | $\emptyset$ | $\RR$ | Yes | No |
