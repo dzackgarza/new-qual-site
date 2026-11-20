@@ -102,7 +102,9 @@ $$
 
 Therefore
 $$
-I_n=n!.
+\boxed{
+\int_0^\infty x^n e^{-x}\,dx=n!.
+}
 $$
 
 
@@ -120,27 +122,9 @@ Use step [](#s1-1){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-4}
-
-Hence
-$$
-\boxed{
-\int_0^\infty x^n e^{-x}\,dx=n!.
-}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-3){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} is the required value.
+Step [](#s1-3){.pf-ref} is the required value.
 
 :::
 
