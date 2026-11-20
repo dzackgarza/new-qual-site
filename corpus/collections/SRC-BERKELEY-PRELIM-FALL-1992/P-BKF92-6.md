@@ -67,7 +67,7 @@ Thus $p=q$. Since $f$ is surjective by hypothesis, it is bijective.
 
 ::: {.pf-step #s2}
 
-If $X_1$ is complete, then $X_2$ is complete.
+If $X_1$ is complete, then $X_2$ is complete, so the answer to part (a) is yes.
 
 ::: pf-proof
 
@@ -92,21 +92,6 @@ $$
 y_n=f(x_n)\longrightarrow f(x)\in X_2.
 $$
 Thus every Cauchy sequence in $X_2$ converges.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Therefore the answer to part (a) is
-$$
-\boxed{\text{yes}}.
-$$
-
-::: pf-proof
-
-This is exactly step [](#s2){.pf-ref}.
 
 :::
 
@@ -189,7 +174,7 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give a counterexample satisfying eve
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
+Step [](#s2){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
 
 :::
 
