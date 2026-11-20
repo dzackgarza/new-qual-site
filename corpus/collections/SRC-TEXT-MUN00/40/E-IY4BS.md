@@ -50,6 +50,17 @@ audit:
     number: §40 Exercise 2; the phrase "printed p. 246" is removed from the solution, and the
     earlier events' page locators are superseded, their text kept as written (QUAL-11).
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The closing step
+    said the two implications were #f-sigma and #g-delta "the second applied to the set X-W in
+    place of W", which is the wrong direction: with $X-W$ substituted for $W$, #g-delta concludes
+    that $X-W$ is an $F_\sigma$ from $W$ a $G_\delta$, not that $W$ is an $F_\sigma$ from $X-W$ a
+    $G_\delta$. The two implications are #f-sigma and #g-delta as they stand, and the step now
+    states both. The mathematics of the two steps was already right; only this sentence changed.
+
 ---
 
 ::: {.exercise}
@@ -87,7 +98,7 @@ By De Morgan's law, $W=X-\bigcap_{n}U_{n}=\bigcup_{n}(X-U_{n})$. Each complement
 $W$ is $F_{\sigma}$ in $X$ if and only if $X-W$ is $G_{\delta}$ in $X$.
 
 ::: pf-proof
-Steps [](#f-sigma){.pf-ref} and [](#g-delta){.pf-ref} are the two implications, the second applied to the set $X-W$ in place of $W$.
+Assume $W=\bigcup_nF_n$ with every $F_n$ closed; step [](#f-sigma){.pf-ref} makes $X-W$ a $G_\delta$. Conversely, if $X-W=\bigcap_nU_n$ with every $U_n$ open, that is the hypothesis of step [](#g-delta){.pf-ref}, which makes $W$ an $F_\sigma$.
 :::
 
 :::
