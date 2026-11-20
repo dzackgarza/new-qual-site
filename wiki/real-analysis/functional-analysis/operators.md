@@ -9,10 +9,8 @@ topics:
 
 # Operators and their norms
 
-For normed spaces $X$ and $Y$ and a linear map $T\colon X\to Y$, the operator norm is
-$$
-\norm{T}\coloneqq\sup_{\norm{x}\le 1}\norm{Tx}.
-$$
+Recall that a [[D-EPSKF|linear functional]] $L$ is bounded when $\abs{L(x)}\leq c\norm x$ for some $c\geq0$, and that its [[D-T4LOC|operator norm]] is $\norm L=\sup_{\norm x\leq1}\abs{L(x)}$.
+For a linear map $T\colon X\to Y$ the same definitions with $\abs{L(x)}$ replaced by $\norm{Tx}_Y$ give boundedness and the operator norm.
 
 [[T-5IWCG]]
 
@@ -23,7 +21,6 @@ $$
 [[FF-BSYDE]]
 
 ::: {.example}
-Every compact operator is bounded, since a relatively compact set is bounded.
 The identity map of an infinite-dimensional Banach space is bounded and not compact, since its closed unit ball is not compact.
 
 :::
