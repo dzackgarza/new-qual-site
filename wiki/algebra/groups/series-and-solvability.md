@@ -62,7 +62,10 @@ Throughout, $G$ is a group, and the theorems that read a chain off Sylow or maxi
 
 [[P-6HWPF]]
 
-::: {.remark title="The chain of classes"}
-$$\text{cyclic}\implies\text{abelian}\implies\text{nilpotent}\implies\text{solvable},$$
-and no implication reverses: $\ZZ/2\times\ZZ/2$ is abelian and not cyclic, $Q_8$ is nilpotent and not abelian, and $S_3$ is solvable and not nilpotent: its derived series reaches $1$, while its lower central series stops at $A_3$ ([[P-MMYH6]]).
+::: {.proposition title="The chain of classes"}
+$$\text{cyclic}\implies\text{abelian}\implies\text{nilpotent}\implies\text{solvable}.$$
+:::
+
+::: {.example title="None of the three implications reverses"}
+$\ZZ/2\times\ZZ/2$ is abelian and not cyclic, $Q_8$ is nilpotent and not abelian, and $S_3$ is solvable and not nilpotent: its derived series reaches $1$, while its lower central series stops at $A_3$ ([[P-MMYH6]]).
 :::
