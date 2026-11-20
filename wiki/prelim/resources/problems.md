@@ -32,6 +32,15 @@ Problem collections held here, and problem banks at other institutions.
 - [UCLA, basic examination problems in analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf) --
   problems of past Basic Examinations, sorted by topic, in analysis.
 
+- [Berkeley, preliminary examinations](https://math.berkeley.edu/programs/graduate/prelim-exams/archive) --
+  the department's archive of past preliminary examinations.
+
+- [Harvard, qualifying examinations](http://www.math.harvard.edu/graduate/index.html#past) --
+  the department's archive of past qualifying examinations.
+
+- [UCLA, basic and qualifying examinations](https://secure.math.ucla.edu/gradquals/hbquals.php) --
+  the department's archive of past Basic and qualifying examinations.
+
 ## Multiple-choice review questions by chapter
 
 [[SRC-GRE-MATH-SUBJECT|Cracking the GRE Mathematics Subject Test]] has a section of multiple-choice review questions for each chapter, and a practice test:
