@@ -31,6 +31,8 @@ order: 5
 
 ## Standard results
 
+[[PR-WUZSG]]
+
 [[PR-IGVTV]]
 
 [[T-ERNLN]]
