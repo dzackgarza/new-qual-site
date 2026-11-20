@@ -222,7 +222,7 @@ $$
 
 ::: {.pf-step #s1-8}
 
-Hence
+Part (b): hence
 $$
 \boxed{
 \widetilde f(k)
@@ -242,22 +242,9 @@ Substitute step [](#s1-7){.pf-ref} into step [](#s1-6){.pf-ref} and rationalize 
 
 :::
 
-::: {.pf-step #s1-9}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-8){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 
