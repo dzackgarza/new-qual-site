@@ -91,6 +91,19 @@ audit:
     needed for Theorem 3.26, is now derived from connectedness of $D(E)$. No statement changed.
     Not checked: no certificate; the Hopf-invariant half is unchanged apart from the citation of the
     fundamental class.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The duality step rested on Corollary 3.39 read as an equivalence, and its printed statement gives
+    only the direction from a pairing to a summand; the proof of that corollary does give the
+    converse, but the statement this step needs is Proposition 3.38, which Hatcher states outright:
+    the cup product pairing is nonsingular for a closed Z-orientable manifold once torsion is
+    factored out. Since H^n(C_p;Z) and H^{2n}(C_p;Z) are infinite cyclic by the cohomology step, the
+    pairing is nonsingular with values in Z, so a generator alpha has an alpha'' with
+    alpha cup alpha'' a generator. The step now argues from Proposition 3.38 and says what Corollary
+    3.39 contributes. Independent checks of this card reached the same conclusion. No statement
+    changed. Not checked: no certificate.
 
 ---
 
@@ -188,10 +201,10 @@ $C_p$ is a closed connected $2n$-manifold by step [](#manifold){.pf-ref}: it is 
 :::
 
 ::: {.pf-step #duality}
-The cup product pairing $H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)\to H^{2n}(C_p;\ZZ)$ is perfect.
+The cup product pairing $H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)\to H^{2n}(C_p;\ZZ)$ is nonsingular in the sense of §3.3: for a generator $\alpha$ of the first factor there is an element pairing with it to a generator of the second.
 
 ::: pf-proof
-$C_p$ is a closed connected orientable $2n$-manifold with fundamental class $[C_p]$ by steps [](#manifold){.pf-ref} and [](#orientable){.pf-ref}, so Poincaré duality, Theorem 3.30, applies with $R=\ZZ$: cap product with $[C_p]$ is an isomorphism $H^k(C_p;\ZZ)\to H_{2n-k}(C_p;\ZZ)$. Corollary 3.39 is the consequence for a closed connected orientable $n$-manifold: an element of $H^k$ generates an infinite cyclic direct summand exactly when it pairs to a generator of $H^n$ with some element of $H^{n-k}$, the equivalence being what the proof of that corollary establishes. Taking the complementary degrees to be $n$ and $2n-n=n$, and using step [](#cohomology){.pf-ref} to know that $H^n(C_p;\ZZ)\cong\ZZ$ has no summands other than itself, this says that a generator $\alpha$ of $H^n(C_p;\ZZ)$ is one exactly when there is some $\alpha''\in H^n(C_p;\ZZ)$ with $\alpha\smile\alpha''$ a generator of $H^{2n}(C_p;\ZZ)$.
+$C_p$ is a closed connected orientable $2n$-manifold with fundamental class $[C_p]$ by steps [](#manifold){.pf-ref} and [](#orientable){.pf-ref}, so Poincaré duality, Theorem 3.30, applies with $R=\ZZ$: cap product with $[C_p]$ is an isomorphism $H^k(C_p;\ZZ)\to H_{2n-k}(C_p;\ZZ)$. Proposition 3.38 states that the cup product pairing is nonsingular for a closed $\ZZ$-orientable manifold once torsion in $H^*(M;\ZZ)$ is factored out, and by step [](#cohomology){.pf-ref} both $H^n(C_p;\ZZ)$ and $H^{2n}(C_p;\ZZ)$ are infinite cyclic, hence torsion-free; so the map $H^n(C_p;\ZZ)\to\operatorname{Hom}\bigl(H^n(C_p;\ZZ),H^{2n}(C_p;\ZZ)\bigr)$ sending $\alpha$ to the functional $\beta\mapsto\alpha\smile\beta$ is an isomorphism, and the target is $\operatorname{Hom}(\ZZ,\ZZ)\cong\ZZ$. A generator $\alpha$ therefore corresponds to a generator of $\operatorname{Hom}(\ZZ,\ZZ)$, which is to say that some $\alpha''$ has $\alpha\smile\alpha''$ a generator of $H^{2n}(C_p;\ZZ)$. Corollary 3.39 is the statement in the complementary degrees $k$ and $n-k$; its printed form gives the direction from a pairing to a summand, and the direction needed here is the nonsingularity of Proposition 3.38, which is what the line above uses.
 :::
 
 :::
