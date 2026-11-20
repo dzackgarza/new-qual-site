@@ -35,9 +35,9 @@ If $V$ were Lebesgue measurable, translation invariance and countable additivity
 
 :::
 
-::: {.remark}
-The construction is not specific to $[0,1]$: it applies inside any Lebesgue measurable set of positive measure, so every such set contains a non-measurable subset.
-
+::: {.proposition}
+Let $E\subseteq\RR$ be [[D-MDJII|Lebesgue measurable]] with $m(E)>0$.
+Then $E$ contains a subset that is not Lebesgue measurable [@Fol99, Exercise 1.29(b)].
 :::
 
 ## Problems
