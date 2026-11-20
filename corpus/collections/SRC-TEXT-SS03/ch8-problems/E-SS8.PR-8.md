@@ -138,6 +138,22 @@ audit:
     where the card had "meets the hypotheses and has $\abs{a_n}=n$ for every $n$". The mathematical
     content of the three parts is unchanged, parts (a), (b) and (e) are untouched, and the asterisk
     remark is untouched.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Solution replaced by a transcription, on the reader's report that the card called its argument
+    its own. The proof now follows Wang Zirui, *Complete Solutions for Chapter 8*, Problem 8 (file
+    `stein-shakarchi-book2-chapter08-solutions.tex`, commit `876542f9cea2`), sentence by sentence:
+    sine orthogonality for (a), induction from the addition formula for (b), reflection symmetry plus
+    injectivity for (c), the series of $v$ at small $r$ for (d), the integral bound for (e), the Koebe
+    function for (f), and each step names the published sentence it transcribes and says where it
+    supplies the detail that sentence compresses. The published part-(d) sentence infers
+    $v\sin\theta\ge0$ from $v=r\sin\theta[1+O(r)]$ with no factor $\sin\theta$, so that step is kept
+    as published, and the correction -- the bound $\abs{v-r\sin\theta}\le Cr^2\sin\theta$ that
+    Chapter 8, Problem 8(b) yields -- is stated in a remark after the solution that cites the printed
+    part (d). The sentences of the earlier events saying that the argument is the card's own record
+    the state at their dates and no longer describe the solution.
 
 ---
 
@@ -169,7 +185,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 8).
 :::
 
 ::: {.solution}
-No published solution carries part (d). The only located published solution of this Problem — Wang Zirui, *Complete Solutions for Chapter 8* (Problem 8), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions` — says of part (d) only that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, "so" $v\sin\theta\ge0$ for all $r$: the very inference a reader rejected on this card, because a bound without the factor $\sin\theta$ cannot be divided by it near $\theta=0$ and $\theta=\pi$. The argument below is therefore the card's own, following the printed hints, and steps s2--s4 are where it does the work the printed hint leaves implicit.
+This solution is a transcription of Wang Zirui, *Complete Solutions for Chapter 8*, Problem 8, in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions` (file `stein-shakarchi-book2-chapter08-solutions.tex`, read at commit `876542f9cea2`). The published outline disposes of the six parts in a few sentences: part (a) by sine orthogonality, part (b) by induction from the addition formula, part (c) by reflection symmetry together with injectivity, part (d) from the series of $v$ at small $r$, part (e) from (a), (b) and the sign of $v\sin\theta$, and part (f) by exhibiting the Koebe function. Each step below is one of those sentences, and says where the sentence compresses an estimate that its claim needs. The set is not retained in this checkout and was read at its source. Part (d) is the one place where the published sentence does not establish what the book asks, and the remark after this solution records the correction.
 
 Let $f(z)=z+a_2z^2+a_3z^3+\cdots$ be injective and holomorphic on $\DD$ with $f(0)=0$, $f'(0)=1$, and suppose every $a_n\in\RR$. For $0<r<1$ and $z=re^{i\theta}$ put $v(r,\theta)=\operatorname{Im}f(re^{i\theta})$.
 
@@ -177,15 +193,14 @@ Let $f(z)=z+a_2z^2+a_3z^3+\cdots$ be injective and holomorphic on $\DD$ with $f(
 
 ::: {.pf-step #s1}
 
-Part (a): $a_nr^n=\dfrac2\pi\displaystyle\int_0^\pi v(r,\theta)\sin(n\theta)\,d\theta$ for $n\ge1$.
+Part (a): $v(r,\theta)=\sum_{k\ge1}a_kr^k\sin(k\theta)$, and sine orthogonality gives
+$$
+a_nr^n=\frac2\pi\int_0^\pi v(r,\theta)\sin(n\theta)\,d\theta .
+$$
 
 ::: pf-proof
 
-Since the $a_k$ are real, $f(re^{i\theta})=\sum_k a_kr^k(\cos k\theta+i\sin k\theta)$ with $a_1=1$, so $v(r,\theta)=\sum_{k\ge1}a_kr^k\sin k\theta$, uniformly convergent in $\theta$. Hence
-$$
-\frac2\pi\int_0^\pi v(r,\theta)\sin(n\theta)\,d\theta=\sum_{k\ge1}a_kr^k\cdot\frac2\pi\int_0^\pi\sin(k\theta)\sin(n\theta)\,d\theta=a_nr^n,
-$$
-because $\frac2\pi\int_0^\pi\sin(k\theta)\sin(n\theta)d\theta=\delta_{kn}$.
+Since every $a_k$ is real, $f(re^{i\theta})=\sum_k a_kr^k(\cos k\theta+i\sin k\theta)$ with $a_1=1$, so $v(r,\theta)=\sum_{k\ge1}a_kr^k\sin(k\theta)$, and the series converges uniformly in $\theta$ for fixed $r<1$ because $\sum_k\abs{a_k}r^k$ converges. Termwise integration is therefore legitimate, and $\frac2\pi\int_0^\pi\sin(k\theta)\sin(n\theta)\,d\theta=\delta_{kn}$ gives the display.
 
 :::
 
@@ -197,7 +212,7 @@ Part (b): $\abs{\sin(n\theta)}\le n\sin\theta$ for $0\le\theta\le\pi$ and $n\ge1
 
 ::: pf-proof
 
-For $n=1$ it is an equality. If it holds for $n-1$, then
+The published sentence is "induction from the addition formula". For $n=1$ the inequality is an equality. If it holds for $n-1$, then
 $$
 \abs{\sin(n\theta)}=\abs{\sin((n-1)\theta)\cos\theta+\cos((n-1)\theta)\sin\theta}\le(n-1)\sin\theta\abs{\cos\theta}+\abs{\cos((n-1)\theta)}\sin\theta\le n\sin\theta
 $$
@@ -209,23 +224,13 @@ on $[0,\pi]$, where $\sin\theta\ge0$.
 
 ::: {.pf-step #s3}
 
-Part (c): $f(\DD)$ is symmetric about the real axis; $f$ carries the upper half-disc $\DD^+$ into one of the two components of $\CC\setminus\RR$, namely the upper half-plane; hence $v(r,\theta)>0$ for $0<r<1$ and $0<\theta<\pi$.
+Part (c): real coefficients give $f(\overline z)=\overline{f(z)}$, so $f(\DD)$ is symmetric with respect to the real axis; and injectivity makes the upper half-disc map wholly into one of the two components of $\CC\setminus\RR$.
 
 ::: pf-proof
 
-Since every $a_k$ is real, $f(\overline z)=\overline{f(z)}$ for $\abs z<1$, because the series converges at $\overline z$ and conjugation is continuous. Hence $f(\DD)$ is invariant under $z\mapsto\overline z$, that is, symmetric about $\RR$.
+Because every $a_k$ is real, $f(\overline z)=\sum_k a_k\overline z^k=\overline{\sum_k a_kz^k}=\overline{f(z)}$ for $\abs z<1$, conjugation being continuous; hence $f(\DD)$ is invariant under $z\mapsto\overline z$, that is, symmetric with respect to $\RR$.
 
-Two facts about $f(\DD^+)$, where $\DD^+=\{z:\abs z<1,\ \operatorname{Im}z>0\}$. First, $f(\DD^+)\cap\RR=\varnothing$: if $z\in\DD^+$ and $f(z)\in\RR$, then $\overline z\in\DD$ with $\overline z\ne z$ and $\operatorname{Im}\overline z<0$, while $f(\overline z)=\overline{f(z)}=f(z)$, contradicting injectivity. Second, $f(\DD^+)$ is connected, being the image of the connected set $\DD^+$ under the continuous map $f$.
-
-The set $\CC\setminus\RR$ has exactly two components, the open upper and lower half-planes. A connected subset of the union of two disjoint open sets lies in one of them, so $f(\DD^+)$ is contained in one component.
-
-Which component it is, the point $i r$ decides. Since $f(0)=0$ and $f'(0)=1$, one has $f(z)=z+z^2h(z)$ with $h$ holomorphic on $\DD$; then
-$$
-\operatorname{Im}f(ir)=r-r^2\operatorname{Im}h(ir),
-$$
-so $\operatorname{Im}f(ir)>0$ for all $0<r$ with $r\operatorname{Im}h(ir)<1$, which holds for small $r$ because $h$ is bounded on a neighbourhood of $0$. That point of $f(\DD^+)$ lies in the upper half-plane, so the component is the upper half-plane.
-
-Therefore $\operatorname{Im}f(z)>0$ on $\DD^+$, that is, $v(r,\theta)>0$ for $0<r<1$ and $0<\theta<\pi$. Also $v(r,0)=v(r,\pi)=0$, because $f$ maps $\DD\cap\RR$ into $\RR$ by the reality of the coefficients.
+For the second assertion let $\DD^+=\{z:\abs z<1,\ \operatorname{Im}z>0\}$. First, $f(\DD^+)\cap\RR=\varnothing$: if $z\in\DD^+$ and $f(z)\in\RR$, then $\overline z\in\DD$ with $\overline z\ne z$ and $\operatorname{Im}\overline z<0$, while $f(\overline z)=\overline{f(z)}=f(z)$, contradicting injectivity. Second, $f(\DD^+)$ is connected, being the image of the connected set $\DD^+$ under the continuous map $f$. A connected subset of $\CC\setminus\RR$, the union of the two disjoint open half-planes, lies in one of them.
 
 :::
 
@@ -233,33 +238,17 @@ Therefore $\operatorname{Im}f(z)>0$ on $\DD^+$, that is, $v(r,\theta)>0$ for $0<
 
 ::: {.pf-step #s4}
 
-Part (d): there are constants $C<\infty$ and $r_0>0$ such that
-$$
-\abs{v(r,\theta)-r\sin\theta}\le Cr^2\sin\theta
-$$
-for $0<r\le r_0$ and every $\theta\in[0,\pi]$. Hence $v(r,\theta)=r\sin\theta\,(1+O(r))$ as $r\to0$, with the $O(r)$ uniform in $\theta$, and consequently $v(r,\theta)\sin\theta\ge0$ for $0<r<1$ and $0\le\theta\le\pi$.
+Part (d): $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, and it is the upper side, so $v(r,\theta)\sin\theta\ge0$ for all $0<r<1$ and $0\le\theta\le\pi$.
 
 ::: pf-proof
 
-Since every $a_k$ is real and $a_1=1$,
+The published sentence is "since $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, it is the upper side, so $v\sin\theta\ge0$ for all $r$". Its two ingredients are these. Since $a_1=1$ and every $a_k$ is real,
 $$
-v(r,\theta)=\sum_{k\ge1}a_kr^k\sin(k\theta),\qquad v(r,\theta)-r\sin\theta=\sum_{k\ge2}a_kr^k\sin(k\theta).
+v(r,\theta)-r\sin\theta=\sum_{k\ge2}a_kr^k\sin(k\theta),
 $$
-Fix $0<r_0<1$. The series $\sum_k a_kz^k$ has radius of convergence at least $1$, because $f$ is holomorphic on $\DD$, so its termwise derivative $\sum_k ka_kz^{k-1}$ converges absolutely at $z=r_0$, that is,
-$$
-C\coloneqq\sum_{k\ge2}k\abs{a_k}r_0^{k-2}<\infty .
-$$
-In particular $\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}$ converges for $0<r\le r_0$, so the difference may be estimated term by term; and step [](#s2){.pf-ref} gives $\abs{\sin(k\theta)}\le k\sin\theta$ for $0\le\theta\le\pi$. Therefore
-$$
-\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}\le\sin\theta\sum_{k\ge2}k\abs{a_k}r^k\le Cr^2\sin\theta
-$$
-for $0<r\le r_0$ and $0\le\theta\le\pi$, the last step because $k\abs{a_k}r^k=r^2\bigl(k\abs{a_k}r^{k-2}\bigr)\le r^2k\abs{a_k}r_0^{k-2}$.
+and for fixed $0<r\le r_0<1$ the right-hand side is bounded by $r^2\sum_{k\ge2}\abs{a_k}r_0^{k-2}$, a finite sum because $\sum_k\abs{a_k}r_0^k$ converges; hence $v(r,\theta)=r\sin\theta[1+O(r)]$ as $r\to0$ for each fixed $\theta$. Next, $f(ir)=ir+O(r^2)$ has positive imaginary part for small $r>0$, so the component of step [](#s3){.pf-ref} that contains $f(\DD^+)$ is the upper half-plane, which is what "it is the upper side" names; in particular $v(r,\theta)>0$ for $0<\theta<\pi$.
 
-Writing $R(r,\theta)=v(r,\theta)-r\sin\theta$, dividing the display by $r\sin\theta$ for $0<\theta<\pi$ gives $v=r\sin\theta\,(1+\varepsilon)$ with $\abs{\varepsilon}\le Cr$; at $\theta=0$ and $\theta=\pi$ both $v(r,\theta)$ and $r\sin\theta$ vanish, so the display still holds there. Multiplying by $\sin\theta\ge0$,
-$$
-v(r,\theta)\sin\theta=r\sin^2\theta+R(r,\theta)\sin\theta\ge r\sin^2\theta-Cr^2\sin^2\theta=r\sin^2\theta\,(1-Cr),
-$$
-which is non-negative for $0<r\le r_0$ with $Cr\le1$ (and for every $0<r\le r_0$ when $C=0$). For the remaining $r$, step [](#s3){.pf-ref} gives $v(r,\theta)>0$ whenever $0<\theta<\pi$ and $0<r<1$, while $v(r,\theta)\sin\theta=0$ at $\theta=0$ and $\theta=\pi$ because $\sin\theta=0$. Hence $v(r,\theta)\sin\theta\ge0$ for all $0<r<1$ and $0\le\theta\le\pi$.
+The published text then reads the sign off the display. That last passage is not valid as it stands, and the remark after this solution states the correction that the printed part (d) needs.
 
 :::
 
@@ -271,11 +260,11 @@ Part (e): $\abs{a_n}r^n\le nr$ for $0<r<1$, hence $\abs{a_n}\le n$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, steps [](#s2){.pf-ref} and [](#s4){.pf-ref},
+The published sentence is "consequently $\abs{a_n}r^n\le\frac{2n}\pi\int_0^\pi v(r,\theta)\sin\theta\,d\theta=nr$". By step [](#s1){.pf-ref}, steps [](#s2){.pf-ref} and [](#s4){.pf-ref},
 $$
-\abs{a_n}r^n=\abs{\frac2\pi\int_0^\pi v\sin(n\theta)\,d\theta}\le\frac2\pi\int_0^\pi\abs{v}\abs{\sin(n\theta)}\,d\theta\le\frac{2n}{\pi}\int_0^\pi v\sin\theta\,d\theta .
+\abs{a_n}r^n=\abs{\frac2\pi\int_0^\pi v\sin(n\theta)\,d\theta}\le\frac2\pi\int_0^\pi\abs{v}\abs{\sin(n\theta)}\,d\theta\le\frac{2n}\pi\int_0^\pi v\sin\theta\,d\theta,
 $$
-By step [](#s1){.pf-ref} with $n=1$ and $a_1=1$, the last integral equals $\frac\pi2\cdot r$. Hence $\abs{a_n}r^n\le nr$, that is $\abs{a_n}\le n/r^{n-1}$ for every $0<r<1$. Letting $r\to1$ gives $\abs{a_n}\le n$.
+the last step because $v\sin\theta\ge0$ and $\abs{\sin(n\theta)}\le n\sin\theta$ with $\sin\theta\ge0$. By step [](#s1){.pf-ref} with $n=1$ and $a_1=1$, the last integral equals $\frac\pi2r$, so $\abs{a_n}r^n\le nr$ and $\abs{a_n}\le n/r^{n-1}$ for every $0<r<1$; letting $r\uparrow1$ gives $\abs{a_n}\le n$.
 
 :::
 
@@ -283,17 +272,15 @@ By step [](#s1){.pf-ref} with $n=1$ and $a_1=1$, the last integral equals $\frac
 
 ::: {.pf-step #s6}
 
-Part (f): $f(z)=\dfrac{z}{(1-z)^2}$ satisfies the hypotheses, with $a_n=n$ for every $n$.
+Part (f): the Koebe function $f(z)=\dfrac{z}{(1-z)^2}$ is injective, has real coefficients, and $\abs{a_n}=n$ for every $n$.
 
 ::: pf-proof
 
-The expansion $\frac{z}{(1-z)^2}=\sum_{n\ge1}nz^n$ holds for $\abs z<1$, so $f(0)=0$, $f'(0)=1$ and $a_n=n\in\RR$.
-
-For injectivity, write
+The published sentence is that $z/(1-z)^2=\sum_{n\ge1}nz^n$ "is injective, has real coefficients, and attains equality for every $n$". The expansion $\frac{z}{(1-z)^2}=\sum_{n\ge1}nz^n$ holds for $\abs z<1$, so $f(0)=0$, $f'(0)=1$ and $a_n=n\in\RR$ with $\abs{a_n}=n$. For injectivity, write
 $$
 f(z)=\frac{z}{(1-z)^2}=\frac14\Bigl(\frac{1+z}{1-z}\Bigr)^2-\frac14 .
 $$
-The map $z\mapsto\frac{1+z}{1-z}$ is a biholomorphism of $\DD$ onto the right half-plane $\{\Re w>0\}$, and squaring is injective there: if $w_1^2=w_2^2$ with $\Re w_j>0$, then $w_1=\pm w_2$, and the sign must be positive because both have positive real part. Hence $f$ is injective on $\DD$.
+The map $z\mapsto\frac{1+z}{1-z}$ is a biholomorphism of $\DD$ onto the right half-plane $\{\Re w>0\}$, and squaring is injective there: if $w_1^2=w_2^2$ with $\Re w_j>0$, then $w_1=\pm w_2$, and the sign is positive because both have positive real part.
 
 :::
 
@@ -301,4 +288,12 @@ The map $z\mapsto\frac{1+z}{1-z}$ is a biholomorphism of $\DD$ onto the right ha
 
 :::
 
+:::
+
+::: {.remark title="Correction to the published argument for part (d)"}
+The published solution concludes $v\sin\theta\ge0$ from $v(r,\theta)=r\sin\theta[1+O(r)]$ alone. That inference needs a factor $\sin\theta$ the display does not carry: the $O(r)$ is an estimate at fixed $\theta$, and even a bound $\abs{v-r\sin\theta}\le Cr^2$ holding uniformly in $\theta$ cannot be divided by $\sin\theta$ near $\theta=0$ and $\theta=\pi$, where both sides vanish. What the book's part (d) asks for is the inequality on the closed rectangle, and its part (b) supplies the missing factor. With $C=\sum_{k\ge2}k\abs{a_k}r_0^{k-2}<\infty$ for a fixed $0<r_0<1$, which is finite because $\sum_k ka_kz^{k-1}$ is the termwise derivative of a series whose radius of convergence is at least $1$,
+$$
+\abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}\le\sin\theta\sum_{k\ge2}k\abs{a_k}r^k\le Cr^2\sin\theta
+$$
+for $0<r\le r_0$ and $0\le\theta\le\pi$, so that $v\sin\theta\ge r\sin^2\theta(1-Cr)\ge0$ once $Cr\le1$. For the remaining $r$ the argument of part (c) puts $v$ on the upper side, so $v>0$ on $(0,\pi)$ and $v\sin\theta\ge0$ there, while $v\sin\theta=0$ at $\theta=0$ and $\theta=\pi$. This is the estimate that completes Chapter 8, Problem 8(d) as printed; the transcription above is left as the published text has it.
 :::
