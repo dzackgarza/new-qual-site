@@ -16,7 +16,7 @@ topics:
 # The standard spaces
 
 The fundamental groups and homology groups of the spaces from which exam problems are built.
-The computations of the table are the examples of Hatcher, §§1.1 and 2.2 [@Hat02].
+The computations of the table are the examples of Hatcher [@Hat02, §§1.1 and 2.2].
 
 | $X$ | $\pi_1$ | $H_*$ | Notes |
 | --- | --- | --- | --- |
