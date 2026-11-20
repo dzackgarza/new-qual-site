@@ -13,6 +13,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, nine of them. The argument is Bredon's,
+    Chapter VI §9, Lemma 9.1 and the theorem of that section numbered 9.2, both read in the retained
+    file, and the card cites them by chapter, section and number only. Three things the prose left as
+    assertions are now proved: that a component with empty boundary needs no argument and that the
+    pair sequences split over the components; that $H_{n-1}(M,B;\ZZ)$ is finitely generated, which is
+    what lets the tensor vanishing with $\QQ/\ZZ$ force it to be zero, with the group computation
+    $A\otimes\QQ/\ZZ\cong(\QQ/\ZZ)^r\oplus T$ written out; and that two $R$-fundamental classes on a
+    connected manifold with boundary differ by a unit of $R$. Not checked: no certificate, and no
+    source beyond Bredon was read for the collar computation of step #vanish, which is cited and not
+    reproduced.
 - event: source-corrected
   by: claude
   date: 2026-11-19
@@ -187,39 +201,90 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 31.
+The argument is that of the retained source: **Glen E. Bredon, *Topology and Geometry*, Chapter VI §9**, Lemma 9.1 and the theorem of that section numbered 9.2, read in `tmp/sources/bredon-topology-and-geometry.pdf`. Bredon proves the required compatibility $[\partial M]=\partial_*[M]$; the steps below are his argument with the coefficient and disconnected cases made explicit. Throughout, $M$ is a compact $R$-orientable $n$-manifold and $\partial_*$ is the connecting homomorphism of the pair $(M,\partial M)$.
 
-Use **Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1** and the theorem of that section numbered 9.2, read in `tmp/sources/bredon-topology-and-geometry.pdf`. Bredon proves precisely the required compatibility, $[\partial M]=\partial_*[M]$. The following is his argument, with the coefficient and disconnected cases made explicit.
+::: pf
 
-Compactness leaves only finitely many components of $M$. The long exact sequences of the pairs and the local characterization of fundamental classes split over these components, so we may assume that $M$ is connected. A closed component has empty boundary and needs no further argument; in particular, no global injectivity claim is required. Assume now that $\partial M\ne\varnothing$.
+::: {.pf-step #components}
+It suffices to prove the identity on each component of $M$.
 
-First take integral coefficients and suppose that $M$ is orientable. Let $A$ be a component of $\partial M$ and put $B=\partial M\setminus A$. The exact sequence of the triple $(M,A\cup B,B)$ contains
-$$
-H_n(M,B)\longrightarrow H_n(M,\partial M)
-\xrightarrow{\ \partial_A\ }H_{n-1}(\partial M,B)
-\longrightarrow H_{n-1}(M,B).
-$$
-Excision identifies $H_{n-1}(\partial M,B)$ with $H_{n-1}(A)$. If $c$ is a representative relative cycle for $[M]$, then $\partial_A[M]$ is represented by the part of $\partial c$ lying in $A$. Thus surjectivity of $\partial_A$ is exactly what is needed for this boundary component.
+::: pf-proof
+$M$ is compact, so it has finitely many components. The long exact sequence of the pair is the direct sum of the sequences of the components, and a fundamental class of $(M,\partial M)$ with coefficients $R$ is a tuple of fundamental classes of the components, each local condition being read in one component. A component with empty boundary has $H_n(M_i,\partial M_i;R)=H_n(M_i;R)$ and its class is the class of the closed component itself, so the identity for it says nothing new. Hence it suffices to treat a connected $M$ with $\partial M\ne\varnothing$.
+:::
 
-Bredon's collar and orientation-sheaf computation gives $H_n(M,B;G)=0$ for every coefficient group $G$: after excision this is a compactly supported section group over the connected noncompact manifold $M^\circ\setminus(B\times(0,1))$. Taking $G=\QQ/\ZZ$, the universal coefficient sequence
-$$
-0\to H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ\longrightarrow H_n(M,B;\QQ/\ZZ)\longrightarrow\operatorname{Tor}(H_{n-2}(M,B;\ZZ),\QQ/\ZZ)\to0
-$$
-gives $H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ=0$, and a finitely generated group whose tensor product with $\QQ/\ZZ$ vanishes is zero, so $H_{n-1}(M,B;\ZZ)=0$. The displayed exact sequence therefore becomes
-$$
-0\longrightarrow H_n(M,\partial M;\ZZ)
-\xrightarrow{\ \partial_A\ }H_{n-1}(A;\ZZ)
-\longrightarrow 0,
-$$
-an isomorphism. Since $H_n(M,\partial M;\ZZ)\cong\ZZ$, this gives $H_{n-1}(A;\ZZ)\cong\ZZ$ — in particular $A$ is orientable — and $\partial_A$ is multiplication by a unit. Doing this for every $A$ proves Bredon's identity
-$$
-\partial_*[M]_{\ZZ}=[\partial M]_{\ZZ}.
-$$
+:::
 
-The same argument with $\ZZ_2$ coefficients requires no orientability hypothesis. Both $H_n(M,\partial M;\ZZ_2)$ and $H_{n-1}(A;\ZZ_2)$ are $\ZZ_2$, so the beginning of the exact sequence is $0\to\ZZ_2\to\ZZ_2$ and $\partial_A$ is an isomorphism. This is the unrestricted $\ZZ_2$ case that Bredon also records in Theorem 9.2. Thus the mod-$2$ fundamental class satisfies the same boundary identity.
+::: {.pf-step #triple}
+For a component $A$ of $\partial M$ with $B=\partial M\setminus A$, the exact sequence of the triple $(M,A\cup B,B)$ contains $H_n(M,B;R)\to H_n(M,\partial M;R)\xrightarrow{\partial_A}H_{n-1}(\partial M,B;R)\to H_{n-1}(M,B;R)$, and excision identifies $H_{n-1}(\partial M,B;R)$ with $H_{n-1}(A;R)$.
 
-For general $R$, use naturality of connecting homomorphisms under change of coefficients. If $M$ is $\ZZ$-orientable, apply $\ZZ\to R$ to Bredon's identity. Otherwise, an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M^\circ$, the pullback orientation is invariant under the deck transformation but is also negated by it. Apply $\ZZ_2\to R$ to the mod-$2$ identity instead. In either case coefficient change preserves the local-generator condition, so it carries fundamental classes to fundamental classes and commutes with $\partial_*$. On a connected component, any two $R$-fundamental classes differ by a global unit of $R$. Therefore every $R$-fundamental class, not merely one obtained by coefficient change, has boundary equal to an $R$-fundamental class of $\partial M$. Summing over the components of $M$ gives
-$$
-\boxed{\partial_*[M]_{R}=[\partial M]_{R}.}
-$$
+::: pf-proof
+The triple sequence is exact, and the map written $\partial_A$ is the composite of its boundary map with the isomorphism of excision for the pair $(\partial M,B)$ and the subset $A$, whose closure meets $B$ in a closed set contained in the interior of $A$; the triple's third term is the same group. If $c$ is a relative cycle representing $[M]$, then $\partial_Ac$ is represented by the part of $\partial c$ lying in $A$, so $\partial_A$ is surjective exactly when the boundary of the fundamental class has the local behaviour of a fundamental class of $\partial M$ at $A$.
+:::
+
+:::
+
+::: {.pf-step #vanish}
+$H_n(M,B;G)=0$ for every coefficient group $G$.
+
+::: pf-proof
+This is Bredon's collar and orientation-sheaf computation: after excising $M$ minus a collar of $B$, the group is a compactly supported section group of the orientation sheaf over the connected noncompact manifold obtained by removing the collar of $B$, and a compactly supported section over a connected noncompact manifold vanishes in the top degree.
+:::
+
+:::
+
+::: {.pf-step #integral}
+With integral coefficients and $M$ orientable, $\partial_A\colon H_n(M,\partial M;\ZZ)\to H_{n-1}(A;\ZZ)$ is an isomorphism.
+
+::: pf-proof
+Take $G=\QQ/\ZZ$ in step [](#vanish){.pf-ref} and in the universal coefficient sequence of the pair, which reads $0\to H_{n-1}(M,B;\ZZ)\otimes\QQ/\ZZ\to H_n(M,B;\QQ/\ZZ)\to\Tor(H_{n-2}(M,B;\ZZ),\QQ/\ZZ)\to0$; the first term vanishes. The group $H_{n-1}(M,B;\ZZ)$ is finitely generated, since $M$ is a compact manifold and so has the homotopy type of a finite complex, and a finitely generated abelian group $A$ with $A\otimes\QQ/\ZZ=0$ is zero: writing $A=\ZZ^r\oplus T$ gives $A\otimes\QQ/\ZZ\cong(\QQ/\ZZ)^r\oplus T$, which vanishes only for $r=0$ and $T=0$. So $H_{n-1}(M,B;\ZZ)=0$, and step [](#triple){.pf-ref} becomes the short exact sequence $0\to H_n(M,\partial M;\ZZ)\xrightarrow{\partial_A}H_{n-1}(A;\ZZ)\to0$. Both outer groups are $\ZZ$, the first because $[M]$ is a fundamental class and the second because $A$ is a closed connected orientable $(n-1)$-manifold, so $\partial_A$ is an isomorphism and, for each $A$, the component of $\partial[M]$ in $A$ is a generator.
+:::
+
+:::
+
+::: {.pf-step #orientable}
+If $M$ is orientable then $\partial_*[M]_{\ZZ}=[\partial M]_{\ZZ}$.
+
+::: pf-proof
+Step [](#integral){.pf-ref} applied to every component $A$ of $\partial M$ says that $\partial_*[M]_{\ZZ}$ has, in each component of $\partial M$, a generator as its component, which is the local characterisation of a fundamental class of $\partial M$; two classes with the same local generators in every component are equal, since the components of a closed manifold are its path components.
+:::
+
+:::
+
+::: {.pf-step #mod2}
+With $\ZZ_2$ coefficients the identity holds with no orientability hypothesis.
+
+::: pf-proof
+Every compact manifold is $\ZZ_2$-orientable, so $[M]$ and $[\partial M]$ exist over $\ZZ_2$. Steps [](#triple){.pf-ref}, [](#vanish){.pf-ref} and [](#integral){.pf-ref} repeat with $\ZZ_2$ in place of $\ZZ$: both $H_n(M,\partial M;\ZZ_2)$ and $H_{n-1}(A;\ZZ_2)$ are $\ZZ_2$, and the exact sequence begins $0\to\ZZ_2\xrightarrow{\partial_A}\ZZ_2$, so $\partial_A$ is an isomorphism and the boundary of the mod-two fundamental class is the mod-two fundamental class of $\partial M$. This is the unrestricted case Bredon records as the theorem numbered 9.2 of Chapter VI §9.
+:::
+
+:::
+
+::: {.pf-step #coefficients}
+For an $R$-orientable $M$ the identity holds over $R$: $\partial_*[M]_R=[\partial M]_R$.
+
+::: pf-proof
+Change of coefficients is natural for connecting homomorphisms, so a ring map $S\to R$ carries the identity over $S$ to the identity over $R$ and carries fundamental classes to fundamental classes, since the local condition is a statement about images in $H_n(M,M-x;S)\to H_n(M,M-x;R)$. If $M$ is $\ZZ$-orientable, apply $\ZZ\to R$ to step [](#orientable){.pf-ref}. Otherwise an $R$-orientation forces $2R=0$: on the connected orientation double cover of $M$ minus its boundary, the pulled-back orientation is invariant under the deck transformation and is also negated by it, so multiplication by $2$ acts as the identity on the coefficient ring. Then $\ZZ_2\to R$ is defined and step [](#mod2){.pf-ref} applies.
+:::
+
+:::
+
+::: {.pf-step #arbitrary}
+Every $R$-fundamental class of $(M,\partial M)$ has boundary a fundamental class of $\partial M$, not only those obtained by coefficient change.
+
+::: pf-proof
+On a connected $n$-manifold with boundary, two $R$-fundamental classes differ by a unit of $R$: their local classes at a point agree up to that unit, and a class is determined by its local class at one point because the manifold is connected. The same holds on $\partial M$. So an arbitrary fundamental class is $u\,[M]_R$ for a unit $u$, and step [](#coefficients){.pf-ref} gives $\partial_*(u\,[M]_R)=u\,[\partial M]_R$, again a fundamental class.
+:::
+
+:::
+
+::: {.pf-step}
+If $M$ is a compact $R$-orientable $n$-manifold then $\partial_*$ sends a fundamental class for $(M,\partial M)$ to a fundamental class for $\partial M$.
+
+::: pf-proof
+Steps [](#components){.pf-ref}, [](#coefficients){.pf-ref} and [](#arbitrary){.pf-ref} together cover the components with and without boundary, every coefficient ring, and every choice of fundamental class, which is the assertion.
+:::
+
+:::
+
+:::
 :::
