@@ -45,7 +45,7 @@ which holds for $\abs{x} < 1$.
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 10, Exercise 7. Here the Jacobi triple product is used in the form $\sum_{n\in\ZZ}z^{n}q^{n(n+1)/2}=\prod_{m\geq1}(1-q^{m})(1+zq^{m})(1+z^{-1}q^{m-1})$ for $\abs{q}<1$; the form was checked numerically at $q=1/2$, $z=3$, where both sides agree to twelve digits.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 10, Exercise 7. Here the Jacobi triple product is used in the form $\sum_{n\in\ZZ}z^{n}q^{n(n+1)/2}=\prod_{m\geq1}(1-q^{m})(1+zq^{m})(1+z^{-1}q^{m-1})$ for $\abs{q}<1$; the form was checked numerically at $q=1/2$, $z=3$, where both sides agree to twelve digits.
 
 ::: pf
 
