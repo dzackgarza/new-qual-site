@@ -1024,6 +1024,28 @@ audit:
     identifications, and locates the formula of s2 in the $(d,d)$-component under
     them. No step, statement or citation changes, and no other sentence of the
     body.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two points where a reader of s2 and s6 can go wrong are now closed on the
+    card. (i) Step s6 justified its transition convention by saying it is "the
+    one Hartshorne's Čech complex carries", which the sign of the Čech
+    differential does not determine: both $e_i=g_{ij}e_j$ and $e_j=g_{ij}e_i$
+    give closed cocycles, and they are inverse classes. The step now derives
+    $g_{ij}=f_j/f_i$ from Hartshorne's definition of $\OO_X(Y)$, whose local
+    generator is $f_i^{-1}$ (II.6), and fixes the choice by the book's own
+    assertions: with the opposite convention the curve computation gives
+    $-df/f$ and the value $-1$, against part (a), $t_X(\eta(P))=1$, and part
+    (d), $\eta(Y)=c(\mcl(Y))$, at $Y=\{P\}$; the residue input is Theorem
+    III.7.14.1(c), read in the text version as
+    $\operatorname{res}_P(f^{-1}df)=v_P(f)\cdot1$. (ii) Step s2's local
+    computation now says why a form with poles along all of $D$ is nevertheless
+    a class supported at the chosen point $Q$: multiplied by
+    $t_1\cdots t_n$ it is holomorphic, and its residue is $a$ by (0.6)(a) and
+    Theorem (0.4). Without that clause a reader can take the form to vanish in
+    $H^n_Q$, which it does not. No statement changes and no other step is
+    touched.
 ---
 
 ::: {.problem}
@@ -1160,7 +1182,7 @@ $$
 \operatorname{res}_D\bigl(c(\mcl(D))\smile\nu\bigr)=\restrictionof{\nu}{D}.
 $$
 
-**The residues.** Both sides are computed by residues at the closed points. At a closed point $Q\notin D$ the class $c(\mcl(D))\smile\nu$ has a holomorphic representative, so its residue at $Q$ vanishes, and $t_D$ contributes nothing there. At a closed point $Q\in D$ choose coordinates $t_1,\ldots,t_n$ with $f=t_1$, and let $a\,dt_2\cdots dt_n/(t_2\cdots t_n)$ be the local class of $\restrictionof{\nu}{D}$ at $Q$, with $a\in k$; by the previous paragraph the local class of $c(\mcl(D))\smile\nu$ at $Q$ is $a\,dt_1\cdots dt_n/(t_1\cdots t_n)$, and the residues of the two classes at $Q$ are both $a$. So for every closed point $Q$ the two residues agree, those of the class $c(\mcl(D))\smile\nu$ at the points of $D$ being the numbers $a_Q$ and those of $\restrictionof{\nu}{D}$ the same numbers.
+**The residues.** Both sides are computed by residues at the closed points. At a closed point $Q\notin D$ the class $c(\mcl(D))\smile\nu$ has a holomorphic representative, so its residue at $Q$ vanishes, and $t_D$ contributes nothing there. At a closed point $Q\in D$ choose coordinates $t_1,\ldots,t_n$ with $f=t_1$, and let $a\,dt_2\cdots dt_n/(t_2\cdots t_n)$ be the local class of $\restrictionof{\nu}{D}$ at $Q$, with $a\in k$; by the previous paragraph the local class of $c(\mcl(D))\smile\nu$ at $Q$ is $a\,dt_1\cdots dt_n/(t_1\cdots t_n)$, and the residues of the two classes at $Q$ are both $a$. The first of these forms has poles along the whole divisor and not only at $Q$, but it is a class supported at $Q$: multiplied by $t_1\cdots t_n$ it becomes the holomorphic $a\,dt_1\cdots dt_n$, and it is the class $a\,\gamma^{0,0}_{Q/X}(1)$ up to the unit $t_2\cdots t_n$, whose residue at $Q$ is $a$ by (0.6)(a) and Theorem (0.4). So for every closed point $Q$ the two residues agree, those of the class $c(\mcl(D))\smile\nu$ at the points of $D$ being the numbers $a_Q$ and those of $\restrictionof{\nu}{D}$ the same numbers.
 
 **The two traces.** The formula is the residue theorem for the pair $(D,X)$, and three statements of Lipman's compose to it. The first presents a class of $X$ by local data and computes its trace from the data: for a complex $C$ exact outside a finite set and a map $\psi:C_n\to\Omega_X^n$, (12.1) attaches to the class a family of local classes $[\psi/C]_Q$, Proposition (12.2) says that the sum of their residues vanishes when the class vanishes, and Remark (12.2.3) reads (0.6)(d) as the consequence, that the sum of the residues of a presentation is the trace of the class presented; (12.2.2) allows $\omega$ and $\operatorname{res}$ to be replaced by their smooth-local counterparts. The second is the presentation of a class carried from $D$: the fundamental local homomorphism (13.1) with Theorem (13.5) identifies $\omega_D$ with $\operatorname{Ext}^1_{\OO_X}(\OO_D,\omega_X)$ and realizes the adjunction as (13.4). The third is the local agreement of the constants, Theorem (13.12): the residue at a closed point of the adjunction-lift of a class is the residue at that point of the class itself, which is the identity $\operatorname{res}_D(c(\mcl(D))\smile\nu)=\restrictionof{\nu}{D}$ computed in the previous paragraph. Composing, the class $c(\mcl(D))\smile\nu$ satisfies
 $$
@@ -1341,12 +1363,7 @@ $$
 
 ::: pf-proof
 
-The invertible sheaf $\mcl(Y)=\OO_X(Y)$ has local generator $e_i=f_i^{-1}$ on $U_i$.
-Use the convention $s_i=g_{ij}s_j$ for the transition functions of a line
-bundle, which is the one Hartshorne's Čech complex carries:
-its differential is $(d\alpha)_{i_0i_1}=\alpha_{i_1}-\alpha_{i_0}$, and
-$g_{ij}g_{jk}=g_{ik}$ is the multiplicative form of
-$(d\alpha)_{ijk}=0$. With $s_i=e_i$ this gives
+The invertible sheaf $\mcl(Y)=\OO_X(Y)$ has local generator $e_i=f_i^{-1}$ on $U_i$, this being Hartshorne's definition of the sheaf attached to a divisor (II.6). Write the transition functions in the convention $e_i=g_{ij}e_j$, so that $g_{ij}g_{jk}=g_{ik}$, the multiplicative form of $(d\alpha)_{ijk}=0$ for the differential $(d\alpha)_{i_0i_1}=\alpha_{i_1}-\alpha_{i_0}$ of the Čech complex. With $e_i=f_i^{-1}$ this gives
 $f_i^{-1}=g_{ij}f_j^{-1}$, that is
 $$
 g_{ij}=\frac{f_j}{f_i},
@@ -1356,9 +1373,7 @@ $$
 d\log\!\left(\frac{f_j}{f_i}\right)
 =\frac{df_j}{f_j}-\frac{df_i}{f_i}.
 $$
-This is the displayed cocycle. On a curve with $Y=\{P\}$, on the cover $U_1=X\setminus P$, where $f_1=1$, and $U_2$ a neighbourhood of $P$ on which $f_2=f$ is a local parameter, it reads $c_{12}=df/f$, whose residue at $P$ is $1$ by Theorem III.7.14.1(c) . The opposite convention $e_j=g_{ij}e_i$ gives
-$g_{ij}=f_i/f_j$ and the cocycle with both signs reversed, $-df/f$, which is the class of
-the inverse line bundle $\OO(-P)$; the sign matters, and step [](#s2){.pf-ref} fixes it.
+This is the displayed cocycle. The convention is not free, and the book fixes it: on a curve with $Y=\{P\}$, on the cover $U_1=X\setminus P$, where $f_1=1$, and $U_2$ a neighbourhood of $P$ on which $f_2=f$ is a local parameter, it reads $c_{12}=df/f$, whose residue at $P$ is $+v_P(f)=1$ by Theorem III.7.14.1(c). The opposite convention $e_j=g_{ij}e_i$ gives $g_{ij}=f_i/f_j$ and the cocycle $-df/f$, whose value is $-1$, and that contradicts part (a) of the exercise, $t_X(\eta(P))=1$, and part (d), $\eta(Y)=c(\mcl(Y))$, at $Y=\{P\}$; the class of $-df/f$ is that of the inverse line bundle $\OO(-P)$. Step [](#s2){.pf-ref} fixes the sign the same way.
 
 **A second check of the sign, in codimension two.** For the lines $L_1=\{x_0=0\}$ and $L_2=\{x_1=0\}$ of $\PP^2$, on the affine opens $U_i=\{x_i\ne0\}$, the local equations $f^1=(1,x_0/x_1,x_0/x_2)$ and $f^2=(x_1/x_0,1,x_1/x_2)$ give, by the formula above, the same cocycle
 $$
