@@ -64,6 +64,19 @@ audit:
     document answering Chapter 7, Problem 3 was found. This search located no published set answering
     this Problem, and none is retained in this repository. Not checked: whether such a set exists
     outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 7*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 3 and checked against Chapter 7, Problem 3: both implications, the Perron contour moved
+    to $\Re s=\alpha+\epsilon$ giving $\psi_1(x)=x^2/2+O_\epsilon(x^{\alpha+1+\epsilon})$, difference
+    quotients for the monotone $\psi$, partial summation to $\pi-\operatorname{Li}$, and the Mellin
+    identity for $-\zeta'/\zeta$ in the converse. Its text is an outline; the card's steps supply the
+    difference-quotient estimate and the bookkeeping of $\epsilon$ that the outline compresses. Not
+    checked: anything in the published document outside its Problem 3.
 ---
 
 ::: {.exercise}
@@ -79,7 +92,7 @@ The book marks this problem with an asterisk (Chapter 7, Problem 3).
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the printed hint.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 7* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 7, Problem 3, it carries both directions: shifting the Perron contour to $\Re s=\alpha+\epsilon$ gives $\psi_1(x)=x^2/2+O_\epsilon(x^{\alpha+1+\epsilon})$, difference quotients give $\psi(x)=x+O_\epsilon(x^{\alpha+\epsilon})$ and partial summation gives $\pi(x)-\operatorname{Li}(x)=O_\epsilon(x^{\alpha+\epsilon})$; conversely that estimate gives the same bound for $\psi(x)-x$, and the Mellin identity for $-\zeta'/\zeta$ then continues it holomorphically to $\Re s>\alpha$, so a zero there is impossible. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
 Let
 $$
 \psi(x)=\sum_{n\le x}\Lambda(n),\qquad
