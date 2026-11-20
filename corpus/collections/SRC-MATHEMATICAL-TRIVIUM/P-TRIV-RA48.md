@@ -68,7 +68,7 @@ This is the definition of the Fourier transform applied to $f$.
 
 ::: {.pf-step #s1-2}
 
-With
+Part (a): with
 $$
 u=ax,
 $$
@@ -109,19 +109,6 @@ minus sign that changes $1/a$ to $1/\abs{a}$. The argument remains $k/a$.
 
 :::
 
-::: {.pf-step #s1-3}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-2){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-step
 
 Suppose
@@ -149,7 +136,7 @@ Again this is the Fourier-transform definition.
 
 ::: {.pf-step #s1-5}
 
-Set
+Part (b): set
 $$
 u=x-x_0.
 $$
@@ -195,22 +182,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-6}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} establish parts (a) and (b), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 
