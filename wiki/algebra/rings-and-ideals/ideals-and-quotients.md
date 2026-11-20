@@ -13,7 +13,7 @@ topics:
 
 Throughout, rings are commutative with identity, except where stated otherwise.
 
-The kernel of a ring homomorphism is an ideal, and every ideal is such a kernel, since $I=\ker(R\to R/I)$. The quotient is the universal ring in which $I$ vanishes, so a presentation of a ring is the choice of a generating set together with the ideal of relations among them.
+## Subrings and generated ideals
 
 [[PR-PZZUO]]
 
@@ -32,8 +32,6 @@ The kernel of a ring homomorphism is an ideal, and every ideal is such a kernel,
 [[E-VFEWT]]
 
 ## Prime and maximal ideals
-
-The quotient ring decides the property of the ideal, and the two spectra collect the prime and the maximal ones.
 
 [[PR-76BDN]]
 
@@ -58,8 +56,6 @@ The quotient ring decides the property of the ideal, and the two spectra collect
 [[E-HOJKE]]
 
 ## Radicals
-
-The nilradical is an intersection of prime ideals and the Jacobson radical an intersection of maximal ideals, so each is a statement about one of the two spectra.
 
 [[D-JLCOX]]
 
