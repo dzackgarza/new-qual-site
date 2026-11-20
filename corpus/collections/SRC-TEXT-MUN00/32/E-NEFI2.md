@@ -88,7 +88,7 @@ $X$ and $\varnothing$ are open and disjoint, and they contain $A$ and $B$ whatev
 There are countable families of open sets $U_{n}\supseteq A$, $V_{n}\supseteq B$ with $\overline{U_{n}}\cap B=\varnothing$ and $\overline{V_{n}}\cap A=\varnothing$.
 
 ::: pf-proof
-Regularity applied to $a\in A$ and the closed set $B$ not containing $a$ gives an open $W_{a}\ni a$ with $\overline{W_{a}}\cap B=\varnothing$. The traces $W_{a}\cap A$ form an open cover of the subspace $A$, and $A$ is Lindelöf: a closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9, printed p. 194). So countably many of them, indexed $U_{n}$, cover $A$, and each satisfies $\overline{U_{n}}\cap B=\varnothing$. The same construction with the roles of $A$ and $B$ exchanged gives the $V_{n}$, using that $B$ is closed hence Lindelöf.
+Regularity applied to $a\in A$ and the closed set $B$ not containing $a$ gives an open $W_{a}\ni a$ with $\overline{W_{a}}\cap B=\varnothing$. The traces $W_{a}\cap A$ form an open cover of the subspace $A$, and $A$ is Lindelöf: a closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9). So countably many of them, indexed $U_{n}$, cover $A$, and each satisfies $\overline{U_{n}}\cap B=\varnothing$. The same construction with the roles of $A$ and $B$ exchanged gives the $V_{n}$, using that $B$ is closed hence Lindelöf.
 :::
 
 :::
