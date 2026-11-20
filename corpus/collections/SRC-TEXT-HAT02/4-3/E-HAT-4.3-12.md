@@ -42,6 +42,22 @@ audit:
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 12, printed p. 420, and the retained solution of
+    Steven V. Sam, §4.3 Exercise 12, printed p. 27 of
+    `tmp/sources/hatcher-solutions-sam-2008.pdf`. The maps $\Phi$ and $\Psi$, their being
+    fibre-preserving and the two composites are correct, and the repair of 2026-11-19 states
+    the right contraction; one error remained in its parametrization. At $s=0$ the three pieces
+    occupied $[0,\tfrac14]$, $[\tfrac14,\tfrac12]$ and $[\tfrac12,1]$, a reparametrized
+    $(H_a*\overline{H_a})*\gamma$ and not the composite $H_a*(\overline{H_a}*\gamma)$ the card
+    said it started from. The breakpoints are now $(1-s)/2$ and $3(1-s)/4$, so the $s=0$ path
+    is exactly $H_a*(\overline{H_a}*\gamma)$ and the $s=1$ path is $\gamma$. The lead said the
+    argument was the card's own; Sam's set covers the exercise and is now cited. Not checked:
+    no certificate, and only the $\Psi\Phi$ composite was recomputed, $\Phi\Psi$ being the same
+    argument with $H$ replaced by its reverse.
 
 ---
 
@@ -51,7 +67,7 @@ Show that for homotopic maps $f, g: A \to B$ the fibrations $E_f \to B$ and $E_g
 
 ::: {.solution}
 
-The argument is the card's own: the homotopy is used to prepend paths, and a path followed by its reverse is contracted by a reparametrisation.
+The construction is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 12**, printed p. 27 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which sends $(a,\gamma)$ to $(a,\overline{H_{a}}\cdot\gamma)$ and states that the two composites are fiber homotopic to the identities. The explicit contraction, with its parametrization, is the card's own.
 
 Let $f,g:A\to B$ be homotopic and let
 $$
@@ -87,7 +103,7 @@ The endpoint of $\overline{H_{a}}*\gamma$ is the endpoint of $\gamma$, so $p_{g}
 $\Psi\Phi\simeq1_{E_{f}}$ and $\Phi\Psi\simeq1_{E_{g}}$ through fiber-preserving homotopies.
 
 ::: pf-proof
-On $E_{f}$, the composite sends $(a,\gamma)$ to $(a,\,H_{a}*(\overline{H_{a}}*\gamma))$, which is the path $\gamma$ preceded by the backtracking path $H_{a}*\overline{H_{a}}$ from $f(a)$ to $f(a)$. The loop $H_{a}*\overline{H_{a}}$ is contracted inside a shrinking initial segment while $\gamma$ keeps the rest of the interval: at time $s\in[0,1]$ the path traverses $H_{a}$ on $\bigl[0,(1-s)/4\bigr]$, then $\overline{H_{a}}$ on $\bigl[(1-s)/4,(1-s)/2\bigr]$, then $\gamma$ reparametrized affinely onto $\bigl[(1-s)/2,1\bigr]$. At $s=0$ this is $H_{a}*\overline{H_{a}}$ followed by $\gamma$, which is $(\Psi\Phi)(a,\gamma)$; at $s=1$ the first two pieces have length zero and the path is $\gamma$ itself; and at every $s$ it runs from $f(a)$ to $\gamma(1)$, because the contracted piece is a loop at $f(a)$. Reparametrization and concatenation are continuous in $(a,\gamma,s)$, so this is a homotopy
+On $E_{f}$, the composite sends $(a,\gamma)$ to $(a,\,H_{a}*(\overline{H_{a}}*\gamma))$, which is the path $H_{a}*(\overline{H_{a}}*\gamma)$, a loop at $f(a)$ followed by $\gamma$. The loop $H_{a}*\overline{H_{a}}$ is contracted inside a shrinking initial segment while $\gamma$ keeps the rest of the interval: at time $s\in[0,1]$ the path traverses $H_{a}$ on $\bigl[0,(1-s)/2\bigr]$, then $\overline{H_{a}}$ on $\bigl[(1-s)/2,3(1-s)/4\bigr]$, then $\gamma$ reparametrized affinely onto $\bigl[3(1-s)/4,1\bigr]$. At $s=0$ the three pieces occupy $\bigl[0,\tfrac12\bigr]$, $\bigl[\tfrac12,\tfrac34\bigr]$ and $\bigl[\tfrac34,1\bigr]$, which is exactly the concatenation $H_{a}*(\overline{H_{a}}*\gamma)=(\Psi\Phi)(a,\gamma)$; at $s=1$ the first two pieces have length zero and the path is $\gamma$ itself; and at every $s$ it runs from $f(a)$ to $\gamma(1)$, because the contracted piece is a loop at $f(a)$. Reparametrization and concatenation are continuous in $(a,\gamma,s)$, so this is a homotopy
 $$
 (a,\gamma,s)\longmapsto\bigl(a,\ \text{the reparametrized concatenation at time } s\bigr)
 $$
