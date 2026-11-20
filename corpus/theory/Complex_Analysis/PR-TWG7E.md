@@ -22,6 +22,8 @@ F\colon\DD\to\HH_R,\qquad F(z)=\frac{1+z}{1-z},
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $F^{-1}(w)=\frac{w-1}{w+1}$.
 It sends $-1,0,1$ to $0,1,\infty$ respectively.
+
+The inverse is the map of [@Ahl73, ch. 3, §4.1, The Use of Level Curves], which states that $w=(\zeta-1)/(\zeta+1)$ maps the half plane $\xi>0$ onto $\abs w<1$; the card states the same correspondence with the roles of $z$ and $w$ exchanged.
 :::
 
 ::: {.remark}

@@ -21,6 +21,8 @@ $$
 \varphi\colon\HH_R\to\DD,\qquad \varphi(z)=\frac{1-z}{1+z},
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $\varphi^{-1}\colon\DD\to\HH_R$, $\varphi^{-1}(w)=\frac{1-w}{1+w}$.
+
+This is [@Ahl73, ch. 3, §4.1, The Use of Level Curves], where $w=(\zeta-1)/(\zeta+1)$ maps $\xi>0$ onto $\abs w<1$: the map above is that one followed by a rotation of $\DD$ by $\pi$, through $\varphi(z)=-(z-1)/(z+1)$, and the rotation is a biholomorphism, so the correspondence of the two regions is the same.
 :::
 
 ::: {.remark}

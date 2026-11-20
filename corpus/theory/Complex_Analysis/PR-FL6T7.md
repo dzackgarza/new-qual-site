@@ -23,6 +23,8 @@ z &\mapsto {i-z \over i+z}
 \end{aligned}
 $$
 is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto i \qty{1-w \over 1+w}$.
+
+This is [@SS03, ch. 8, Theorem 1.2], which states that $F(z)=(i-z)/(i+z)$ maps $\HH$ conformally onto $\DD$ with inverse $G(w)=i(1-w)/(1+w)$.
 :::
 
 ::: {.remark}

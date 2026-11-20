@@ -25,6 +25,8 @@ z &\mapsto z^n
 $$
 is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto w^{1/n}$, the [[D-4CSPM|principal branch]].
 
+This is the sector correspondence of [@Ahl73, ch. 3, §4.1, The Use of Level Curves]: for the sector $S_0(\varphi_1,\varphi_2)$ defined by (14) there, the map $w=z^\alpha$ is one-to-one when $\alpha(\varphi_2-\varphi_1)\le2\pi$ and carries it onto $S_0(\alpha\varphi_1,\alpha\varphi_2)$. Part (a) is the case $\alpha=n$ and $(\varphi_1,\varphi_2)=(0,\pi/n)$, whose image is $S_0(0,\pi)=\HH$.
+
 (b) For $0 < \alpha \le 2\pi$,
 $$
 \begin{aligned}
