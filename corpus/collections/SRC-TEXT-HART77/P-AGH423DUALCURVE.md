@@ -537,7 +537,7 @@ numerator have valuation at least $2$, the image of $t$ has valuation at least
 $2$, and $\varphi$ is ramified at $P$.
 
 Suppose now that $P\notin L$. Then $L=V(z)$ is the line at infinity. Reiser's
-case, printed p. 356: homogenizing the tangent line at $Q$,
+case in part (a) of his Exercise IV.2.3: homogenizing the tangent line at $Q$,
 $$
 \frac{\partial f}{\partial x}(Q)\,x+\frac{\partial f}{\partial y}(Q)\,y
 -\Bigl(\frac{\partial f}{\partial x}(Q)Q_x+\frac{\partial f}{\partial y}(Q)Q_y\Bigr)z=0,
@@ -893,7 +893,7 @@ $$
 $$
 x-(3ut^2+u't^3)y+(2ut^3+u't^4)z=0,
 $$
-whose dual point is $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, the point the card's computation above gives as $-3a_3t^2$ and $2a_3t^3$ to leading order. It is also what his own recipe at printed p. 356 gives when applied to a contact of order $3$ rather than $2$: his $[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$ is that recipe for $x-uy^2$. His conclusion stands either way, since both points give a branch of multiplicity $2$ with tangent contact $3$; only the printed coordinates are wrong. The multiplicities read off here are the definition the card uses.
+whose dual point is $[1:-(3ut^2+u't^3):2ut^3+u't^4]$, the point the card's computation above gives as $-3a_3t^2$ and $2a_3t^3$ to leading order. It is also what his own recipe in part (b) of his Exercise IV.2.3 gives when applied to a contact of order $3$ rather than $2$: his $[1:-(u't^2+2u(t)t):u't^3+u(t)t^2]$ is that recipe for $x-uy^2$. His conclusion stands either way, since both points give a branch of multiplicity $2$ with tangent contact $3$; only the printed coordinates are wrong. The multiplicities read off here are the definition the card uses.
 :::
 
 :::
@@ -959,7 +959,7 @@ that $\varphi:X\to X^*$ is actually the normalization". The clause "since we're
 in characteristic zero" is what makes the inference valid, and the paraphrase
 carries it as the separability of $\gamma$. The second paragraph, the local form
 of $X^*$ at a hyperflex and its $\delta$-invariant, is the card's own: Reiser's
-part (h), printed p. 358, only substitutes $d=4$ in part (f), and Bergvall's
+part (h) only substitutes $d=4$ in part (f), and Bergvall's
 §2.2, counts hyperflex lines as bitangents but says nothing
 about the singularity of the dual curve there.
 :::
@@ -1087,9 +1087,9 @@ contact order $4$ at one point", a line of the second kind being a hyperflex lin
 For such a line the divisor $L.C=2P+2Q$ is canonical, with $P=Q$ allowed, so the
 class of $P+Q$ is a theta characteristic, and "this construction yields a bijection
 between the set of bitangents of $C$ and the set of odd theta characteristics of
-$C$" (printed p. 4); a curve of genus $g$ has $2^{2g}$ theta characteristics, of
+$C$" (§2.2); a curve of genus $g$ has $2^{2g}$ theta characteristics, of
 which $2^{g-1}(2^g-1)$ are odd, so for $g=3$ there are $64$ and $28$. That is
-Theorem 2.2 there, printed p. 4, attributed to Plücker and Jacobi, and it counts
+Theorem 2.2 there, attributed to Plücker and Jacobi, and it counts
 $28$ for every smooth quartic, hyperflex or not.
 
 For the formula, write $f$ for the number of ordinary flexes. Then $f+2h=24$ by
@@ -1148,11 +1148,11 @@ case $d=3$ of the weighted count.
 :::
 
 ::: {.remark title="Published solution"}
-B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, solves parts (a)--(g) and the count of (h), and says nothing about the printed parenthetical of (h), which step [](#s11){.pf-ref} carries: (a) at printed pp. 355--356, by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) at pp. 356--357, by a formal parametrization of $X$ and its dual; (c) and (d) at p. 357, by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) at p. 357, by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) at p. 357, by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) at p. 358, by the group law on the cubic and (II, Ex. 6.6); and (h) at p. 358, by substituting $d=4$ in (f).
+B. Reiser, *Hartshorne Solutions* (15 February 2022), Exercise IV.2.3, solves parts (a)--(g) and the count of (h), and says nothing about the printed parenthetical of (h), which step [](#s11){.pf-ref} carries: (a) by the local equation $f=x+ax^2+bxy+cy^2+\cdots$; (b) by a formal parametrization of $X$ and its dual; (c) and (d) by Riemann--Hurwitz for the projection from a point off $X$ and from a general point of $X$; (e) by the degree of the Gauss map $d(d-1)$ and the weighted count $3d(d-2)$; (f) by $X\to X^*$ being the normalization and $p_a(X^*)$ computed twice; (g) by the group law on the cubic and (II, Ex. 6.6); and (h) by substituting $d=4$ in (f).
 
-O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (printed p. 4, after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
+O. Bergvall, *Arithmetic and topology of classical structures associated to plane quartics* (arXiv:2106.13072v1, 24 June 2021), §2.2, states the count of part (h) in the convention part (h) needs: a bitangent is a line tangent at two points *or* of contact order $4$ at one point, and Theorem 2.2 (after Plücker and Jacobi) counts $28$ for every smooth quartic. He also records the bijection with the odd theta characteristics, $2^{g-1}(2^g-1)=28$ of them for $g=3$, which is why a hyperflex does not change the count.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3, printed pp. 212--215, identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.3 identifies the multiple points of the dual curve with the lines tangent at several points or tangent with higher contact, so that the dual map is ramified exactly at inflection points, and counts inflection points and bitangents by projecting from a general point.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.3 (Plane Curves), printed p. 85, takes part (a) locally: at $P=(0,0)$ with $L=(y=0)$ and $T_P=(x=0)$, the tangent at $Q=(a,b)$ meets $L$ at $\bigl(a+\frac{f_y(Q)}{f_x(Q)}b,0\bigr)$, so if $t$ is a local parameter at $0\in\AA^1$ the dual map is $\varphi^*t=\frac{f_y}{f_x}y+x$, which is what makes the dual map a morphism and identifies the dual curve as the closure of the image.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.3 (Plane Curves) takes part (a) locally: at $P=(0,0)$ with $L=(y=0)$ and $T_P=(x=0)$, the tangent at $Q=(a,b)$ meets $L$ at $\bigl(a+\frac{f_y(Q)}{f_x(Q)}b,0\bigr)$, so if $t$ is a local parameter at $0\in\AA^1$ the dual map is $\varphi^*t=\frac{f_y}{f_x}y+x$, which is what makes the dual map a morphism and identifies the dual curve as the closure of the image.
 :::

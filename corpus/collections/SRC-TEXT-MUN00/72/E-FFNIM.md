@@ -102,7 +102,7 @@ $V=X-A$ is simply connected and $U\cap V$ is simply connected, since $n>2$.
 
 ::: pf-proof
 
-By the book's step 2 (printed p. 440), $\pi$ restricts to a homeomorphism of $\operatorname{Int}B^n$ onto $V=X-A$, so $V$ is homeomorphic to an open ball, which is convex and hence contractible. Similarly $U\cap V=V-h(\mathbf{0})$ is homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$, which deformation retracts onto $S^{n-1}$; and $S^{n-1}$ is simply connected for $n-1\ge2$ by Theorem 59.3. So $\pi_1(U\cap V)=0$.
+By step 2 of the proof of Theorem 72.1, $\pi$ restricts to a homeomorphism of $\operatorname{Int}B^n$ onto $V=X-A$, so $V$ is homeomorphic to an open ball, which is convex and hence contractible. Similarly $U\cap V=V-h(\mathbf{0})$ is homeomorphic to $\operatorname{Int}B^n-\mathbf{0}$, which deformation retracts onto $S^{n-1}$; and $S^{n-1}$ is simply connected for $n-1\ge2$ by Theorem 59.3. So $\pi_1(U\cap V)=0$.
 
 :::
 

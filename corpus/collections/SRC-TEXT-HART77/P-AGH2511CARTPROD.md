@@ -33,7 +33,7 @@ This is just the image of $X \times Y \subseteq \PP^r \times \PP^s$ in its Segre
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.11, printed p. 42 of the held scan, transcribed and checked against the exercise as printed at printed p. 125, part by part.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.11, transcribed and checked against Exercise II.5.11, part by part.
 Put $R=\bigoplus_{d\ge0}S_d\otimes_A T_d$, $Z=\Proj R$, and $P=X\times_A Y$.
 The multiplication of $R$ is induced by $(s\otimes t)(s'\otimes t')=ss'\otimes tt'$.
 Write $p_1:P\to X$ and $p_2:P\to Y$ for the projections.

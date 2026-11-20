@@ -129,7 +129,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove exactness of the sheaf sequenc
 :::
 
 ::: {.remark title="Published proof"}
-The exercise stands on printed p. 224 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, the square-zero ideal $\mci$ and the exact sequence of sheaves $0\to\mci\to\mco_X^*\to\mco_{X_0}^*\to0$ included.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), III.4.6, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is that exercise's text, the square-zero ideal $\mci$ and the exact sequence of sheaves $0\to\mci\to\mco_X^*\to\mco_{X_0}^*\to0$ included.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.4.6, p. 165, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves it in the same two moves: exactness of $0\to\mci\to\OO_X^*\to\OO_{X_0}^*\to0$ is checked on stalks, and the conclusion is then read off the long exact sequence using (III.4.5). Steps s1 and s2 above carry out that stalk check, including the inverse $c(1-a)$ of a lifted unit $b$ across $B\to B/J$ with $J^2=0$.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), III.4.6, text version `tmp/sources/hartshorne-solutions-egbert.md`, proves it in the same two moves: exactness of $0\to\mci\to\OO_X^*\to\OO_{X_0}^*\to0$ is checked on stalks, and the conclusion is then read off the long exact sequence using (III.4.5). Steps s1 and s2 above carry out that stalk check, including the inverse $c(1-a)$ of a lifted unit $b$ across $B\to B/J$ with $J^2=0$.
 :::

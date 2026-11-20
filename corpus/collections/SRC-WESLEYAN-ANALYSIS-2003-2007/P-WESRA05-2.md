@@ -48,8 +48,7 @@ Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be
 ::: {.solution}
 The item is item 2 of the Real Analysis Preliminary Examination, 2005 (four Lebesgue
 measures on $[0,1]$; the monotone convergence theorem; and measurability and integral of
-the Cantor-stage function), whose statement begins on PDF p. 31 and continues on PDF p. 32
-of the retained scan assets/attachments/analysis_2003-2007.pdf.
+the Cantor-stage function), retained in the scan assets/attachments/analysis_2003-2007.pdf.
 
 ::: pf
 

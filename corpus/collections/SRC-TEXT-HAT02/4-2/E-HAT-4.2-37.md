@@ -86,7 +86,7 @@ By definition $[f,g]=(f\vee g)_{*}[w]$, the class represented by the composite $
 The map $F(x,y)=\mu\bigl(f(x),g(y)\bigr)$ satisfies $F(x,e)\simeq f(x)$ and $F(e,y)\simeq g(y)$.
 
 ::: pf-proof
-$F(x,e)=\mu\bigl(f(x),g(e)\bigr)=\mu\bigl(f(x),e\bigr)$, and by the H-space axioms (printed p. 281) the map $u\mapsto\mu(u,e)$ is homotopic to the identity through maps $(X,e)\to(X,e)$; composing with $f$ gives $F(-,e)\simeq f$. The other axis is the same with the roles of the two variables exchanged.
+$F(x,e)=\mu\bigl(f(x),g(e)\bigr)=\mu\bigl(f(x),e\bigr)$, and by the H-space axioms of §3.C the map $u\mapsto\mu(u,e)$ is homotopic to the identity through maps $(X,e)\to(X,e)$; composing with $f$ gives $F(-,e)\simeq f$. The other axis is the same with the roles of the two variables exchanged.
 :::
 
 :::

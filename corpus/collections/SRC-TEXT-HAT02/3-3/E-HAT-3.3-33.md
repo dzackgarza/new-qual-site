@@ -47,7 +47,7 @@ Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a h
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33. No retained solution set covers this exercise — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's at Exercise 32, and no other set in `tmp/sources` reaches §3.3 — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, and the orientable double cover of pp. 234–235.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33. No retained solution set covers this exercise — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's at Exercise 32, and no other set in `tmp/sources` reaches §3.3 — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, and the orientable double cover of §3.3.
 
 Throughout $M$ is a compact contractible $n$-manifold with $n\ge1$, homology is taken with $\ZZ$ coefficients unless written otherwise, and $\widetilde H$ denotes reduced homology.
 
@@ -57,7 +57,7 @@ Throughout $M$ is a compact contractible $n$-manifold with $n\ge1$, homology is 
 $M$ is orientable.
 
 ::: pf-proof
-Every manifold has an orientable two-sheeted covering space $\widehat M\to M$ (printed p. 234), and for $M$ connected that cover has either one or two components (printed p. 235). A covering space of a simply connected space is a disjoint union of copies of the base: over a point of $M$ the fibre has two points, the cover is connected and locally path connected, and its components are the images of the lifts of $M$ at each point of the fibre, each a homeomorphic copy of $M$ by the lifting criterion (printed p. 61). So $\widehat M$ is two copies of $M$, which is what orientability of $M$ means.
+Every manifold has an orientable two-sheeted covering space $\widehat M\to M$ (§3.3), and for $M$ connected that cover has either one or two components (Proposition 3.25). A covering space of a simply connected space is a disjoint union of copies of the base: over a point of $M$ the fibre has two points, the cover is connected and locally path connected, and its components are the images of the lifts of $M$ at each point of the fibre, each a homeomorphic copy of $M$ by the lifting criterion, Proposition 1.33. So $\widehat M$ is two copies of $M$, which is what orientability of $M$ means.
 :::
 
 :::
@@ -75,7 +75,7 @@ $M$ is contractible, hence path connected, so $H^0(M;\ZZ)=\ZZ$ and every cohomol
 $H_i(M,\partial M;\ZZ)=\ZZ$ for $i=n$ and $0$ for $i\ne n$.
 
 ::: pf-proof
-Apply Theorem 3.43 (Lefschetz duality, printed p. 254) with $A=\varnothing$ and $B=\partial M$, which is the case the theorem calls Lefschetz duality: cap product with a fundamental class gives $H^{j}(M;\ZZ)\cong H_{n-j}(M,\partial M;\ZZ)$ for all $j$. A fundamental class exists because $M$ is compact and orientable, by step [](#orientable){.pf-ref}. By step [](#contractible-cohomology){.pf-ref} the left side is $\ZZ$ for $j=0$ and $0$ otherwise, so $H_i(M,\partial M;\ZZ)=\ZZ$ when $i=n-j=n$ and $0$ when $i\ne n$.
+Apply Theorem 3.43 (Lefschetz duality) with $A=\varnothing$ and $B=\partial M$, which is the case the theorem calls Lefschetz duality: cap product with a fundamental class gives $H^{j}(M;\ZZ)\cong H_{n-j}(M,\partial M;\ZZ)$ for all $j$. A fundamental class exists because $M$ is compact and orientable, by step [](#orientable){.pf-ref}. By step [](#contractible-cohomology){.pf-ref} the left side is $\ZZ$ for $j=0$ and $0$ otherwise, so $H_i(M,\partial M;\ZZ)=\ZZ$ when $i=n-j=n$ and $0$ when $i\ne n$.
 :::
 
 :::
@@ -84,7 +84,7 @@ Apply Theorem 3.43 (Lefschetz duality, printed p. 254) with $A=\varnothing$ and 
 $\widetilde H_i(\partial M;\ZZ)=\ZZ$ for $i=n-1$ and $0$ otherwise.
 
 ::: pf-proof
-The reduced homology of $M$ vanishes, since $M$ is contractible. The reduced long exact sequence of the pair $(M,\partial M)$ (printed p. 118) therefore reads
+The reduced homology of $M$ vanishes, since $M$ is contractible. The reduced long exact sequence of the pair $(M,\partial M)$ (§2.1) therefore reads
 $$
 0= \widetilde H_i(M)\longrightarrow H_i(M,\partial M)\xrightarrow{\ \partial\ } \widetilde H_{i-1}(\partial M)\longrightarrow \widetilde H_{i-1}(M)=0 ,
 $$

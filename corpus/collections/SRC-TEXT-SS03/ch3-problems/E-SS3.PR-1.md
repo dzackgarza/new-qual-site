@@ -41,7 +41,7 @@ audit:
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 108; the statement below is its wording.
+This is Problem 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Consider a holomorphic map on the unit disc $f : \DD \to \CC$ which satisfies $f(0) = 0$.
 By the open mapping theorem, the image $f(\DD)$ contains a small disc centered at the origin.

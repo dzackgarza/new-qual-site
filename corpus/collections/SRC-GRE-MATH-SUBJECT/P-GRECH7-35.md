@@ -35,7 +35,7 @@ In how many ways can a company separate its 12 employees into 4 equally-sized co
 :::
 
 ::: {.solution}
-This is question 35 of the Chapter 7 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 336; the statement below is its wording.
+This is question 35 of the Chapter 7 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`; the statement below is its wording.
 
 ::: pf
 

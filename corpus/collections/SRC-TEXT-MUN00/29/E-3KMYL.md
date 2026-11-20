@@ -85,7 +85,7 @@ Local compactness at $\mathbf{x}$ supplies a compact $C$ containing a neighbourh
 $X_\beta$ is compact for every $\beta\notin F$.
 
 ::: pf-proof
-The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (printed p. 182).
+The projection $\pi_\beta$ is continuous, so $\pi_\beta(C)$ is compact (Theorem 26.5), and it is a subspace of $X_\beta$. On the other hand $U_\beta=X_\beta$ for $\beta\notin F$, and $\pi_\beta\big(\prod_\alpha U_\alpha\big)=U_\beta$, so $X_\beta\subset\pi_\beta(C)$. Hence $X_\beta=\pi_\beta(C)$ is compact, and a compact space is locally compact at each of its points (Munkres, §29, where he notes that a compact space is automatically locally compact).
 :::
 
 :::

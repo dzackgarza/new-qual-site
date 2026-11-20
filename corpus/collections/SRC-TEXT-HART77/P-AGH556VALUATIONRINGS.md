@@ -436,8 +436,7 @@ R=\OO_{X,x_0}.
 $$
 This is the first surface construction in Exercise II.4.12.
 
-Yang Pi-Yeh, solution 5.5.6, printed p. 114, and Egbert, V.5.6, printed
-p. 299, argue this case the same way: $X$ is projective and hence proper, the
+Yang Pi-Yeh, solution 5.5.6, and Egbert, V.5.6, argue this case the same way: $X$ is projective and hence proper, the
 valuation criterion gives $\Spec R\to X$ whose closed-point image is the
 centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one
 leaves two discrete valuation rings, so $R=\OO_P$.
@@ -518,8 +517,7 @@ Thus $R$ is exactly the local ring at the generic point of a curve on a
 birational model which is contracted to a closed point of $X$, the second
 construction of Exercise II.4.12.
 
-Yang Pi-Yeh, solution 5.5.6, printed p. 114, and Egbert, V.5.6, printed
-p. 299, reach this case the same way: the closed centre is blown up, and the
+Yang Pi-Yeh, solution 5.5.6, and Egbert, V.5.6, reach this case the same way: the closed centre is blown up, and the
 centre of $\nu$ on the blowup is either the exceptional curve, which is what
 this step computes, or a point of it, where one repeats.
 :::
@@ -754,9 +752,9 @@ excluded exactly as in Exercise II.4.12.
 :::
 
 ::: {.remark title="Published solutions"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6, printed p. 420. Exercise II.4.12, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.5, exercise 5.6. Exercise II.4.12, builds the ring $R_0=\bigcup_i\OO_{x_i,X_i}$ of the third kind, shows that it is a local ring dominated by some valuation ring of $K/k$, and its Note after the exercise defers to the present one both that $R_0$ is itself a valuation ring and that every valuation ring of $K/k$ is one of the three kinds.
 
-Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, printed p. 114, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, printed p. 299, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
+Kinds (1) and (2) are published twice. Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.5.6, and A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.5.6, argue from the centre: $X$ is projective and therefore proper, so the valuation criterion gives $\varphi:\Spec R\to X$ whose closed-point image is the centre $P$ of $\nu$, and $R$ dominates $\OO_P$; a centre of dimension one leaves two discrete valuation rings, so $R=\OO_P$, which is kind (1); a closed centre is blown up, and the centre on the blowup is either the exceptional curve, which is kind (2), or a point of it, where one repeats. Steps [](#codim-one-center-type-one){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} transcribe that argument.
 
 Kind (3) is proved above by the route the printed hint names, with Exercise V.5.1: for $f\in R$ the rational map $[f:1]$ is resolved by point blowups, and comparing the centres of $\nu$ along that resolution with the rings $\OO_{X_i,x_i}$ places $f$ in some $A_i$ (step [](#element-eventually-regular){.pf-ref}); with $R_0\subseteq R$ (step [](#union-contained-in-r){.pf-ref}) this gives $R=R_0$ (step [](#r-equals-union-type-three){.pf-ref}).
 :::

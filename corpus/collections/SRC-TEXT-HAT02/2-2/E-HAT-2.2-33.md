@@ -75,7 +75,7 @@ Show that $\tilde{H}_i(X) = 0$ for $i \geq n-1$, and give an example showing thi
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 33. The induction on the number of sets and the acyclic open cover of $\partial\Delta^{n-1}$ are **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021), Hatcher 2.2.33, printed pp. 79–80** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`); the card replaces his small open face-neighbourhoods by the explicit barycentric sets $\theset{\lambda_j>0}$ and verifies that their intersections have exactly the contractible form the induction needs.
+The statement is Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 33. The induction on the number of sets and the acyclic open cover of $\partial\Delta^{n-1}$ are **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021), Hatcher 2.2.33** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`); the card replaces his small open face-neighbourhoods by the explicit barycentric sets $\theset{\lambda_j>0}$ and verifies that their intersections have exactly the contractible form the induction needs.
 
 Throughout, "acyclic" means having trivial reduced homology in every degree, and a cover is a finite family of open subsets of $X$ whose union is $X$. The claim to be proved, for $n\ge1$, is: if $X=A_1\cup\cdots\cup A_n$ with each nonempty intersection $A_{i_1}\cap\cdots\cap A_{i_k}$ acyclic, then $\widetilde H_i(X)=0$ for $i\ge n-1$.
 
@@ -115,7 +115,7 @@ With $Z$ empty, $Y$ and $A_n$ are disjoint open subsets covering $X$, so $X$ is 
 If $Z\ne\varnothing$, then $\widetilde H_i(X)=0$ for $i\ge n-1$.
 
 ::: pf-proof
-$X=Y\cup A_n$ with $Y,A_n$ open and $Y\cap A_n=Z$, so the reduced Mayer–Vietoris sequence (printed pp. 149–150) applies and contains the segment
+$X=Y\cup A_n$ with $Y,A_n$ open and $Y\cap A_n=Z$, so the reduced Mayer–Vietoris sequence of §2.2 applies and contains the segment
 $$
 \widetilde H_i(Y)\oplus\widetilde H_i(A_n)\longrightarrow\widetilde H_i(X)\longrightarrow\widetilde H_{i-1}(Z)\longrightarrow\widetilde H_{i-1}(Y)\oplus\widetilde H_{i-1}(A_n)
 $$

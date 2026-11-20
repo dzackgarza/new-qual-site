@@ -49,7 +49,7 @@ Find a system of free generators for the subgroup $q_*(\pi_1(E, e_0))$, where $e
 
 ::: {.solution}
 
-Write $x_0 = (b_0, b_0)$ for the base point of $X$ and $H = q_*(\pi_1(E, e_0)) \le \pi_1(X, x_0)$; the map $q_*$ is injective, so a free basis of $\pi_1(E,e_0)$ maps to one of $H$ (printed p. 477).
+Write $x_0 = (b_0, b_0)$ for the base point of $X$ and $H = q_*(\pi_1(E, e_0)) \le \pi_1(X, x_0)$; the map $q_*$ is injective, so a free basis of $\pi_1(E,e_0)$ maps to one of $H$ (Theorem 54.6(a)).
 
 ::: pf
 

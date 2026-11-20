@@ -58,7 +58,7 @@ For part (e), given a section $s$ on $U$, apply (d) to the subsheaf of $\mcf\res
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.15 (Extension of Coherent Sheaves), printed p. 43 of the held scan, transcribed and checked against the exercise as printed at printed p. 126, read from the page markers of `tmp/sources/hartshorne-1977-algebraic-geometry.md`, part by part. The page is bracketed on the leaf by two headings read on it: Solution 2.5.14 opens p. 43 and Solution 2.5.16 (Tensor Operations on Sheaves) stands near its foot, with this entry's part (e) ending immediately above it.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.15 (Extension of Coherent Sheaves), transcribed and checked against Hartshorne, II.5, exercise 5.15, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`, part by part. Two further entries of that solution set bracket it: Solution 2.5.14 precedes it and Solution 2.5.16 (Tensor Operations on Sheaves) follows, with this entry's part (e) ending immediately above it.
 For an open inclusion $i:U\hookrightarrow X$ of noetherian schemes, direct image takes [[D-QNTZY|quasi-coherent]] sheaves to [[D-QNTZY|quasi-coherent]] sheaves [@Har77, Proposition II.5.8(c)].
 Indeed, $i$ is quasi-compact because every open subset of a noetherian space is quasi-compact, and it is separated.
 Kernels, cokernels, and images of morphisms of quasi-coherent sheaves are quasi-coherent [@Har77, Proposition II.5.7].

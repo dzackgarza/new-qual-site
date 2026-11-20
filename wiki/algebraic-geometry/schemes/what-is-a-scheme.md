@@ -15,8 +15,8 @@ A scheme is a locally ringed space covered by open subspaces isomorphic to spect
 
 [[D-VKR54]]
 
-A morphism of schemes is a morphism of locally ringed spaces, which is a pair $(f,f^\sharp)$ with $f^\sharp\colon\OO_Y\to f_*\OO_X$ and the induced maps on stalks local: $(f^\sharp_p)^{-1}(\mfm_p)=\mfm_{f(p)}$ for every $p\in X$ [@Har77, §II.2, p. 72] ([[D-AN662]]).
-For affine schemes this recovers the anti-equivalence with rings: every morphism $\Spec B\to\Spec A$ is induced by a ring homomorphism $A\to B$ [@Har77, §II.2, p. 73] ([[T-SK599]]).
+A morphism of schemes is a morphism of locally ringed spaces, which is a pair $(f,f^\sharp)$ with $f^\sharp\colon\OO_Y\to f_*\OO_X$ and the induced maps on stalks local: $(f^\sharp_p)^{-1}(\mfm_p)=\mfm_{f(p)}$ for every $p\in X$ [@Har77, §II.2] ([[D-AN662]]).
+For affine schemes this recovers the anti-equivalence with rings: every morphism $\Spec B\to\Spec A$ is induced by a ring homomorphism $A\to B$ [@Har77, §II.2] ([[T-SK599]]).
 
 ## First examples
 
@@ -44,4 +44,4 @@ By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a 
 
 [[T-AFFCOMM]]
 
-A property of schemes is local for the Zariski topology when it holds for $X$ exactly when it holds on the members of one affine open cover; the cards above apply that principle to reducedness, integrality and the singularity classes [@Har77, §II.3, pp. 82--85].
+A property of schemes is local for the Zariski topology when it holds for $X$ exactly when it holds on the members of one affine open cover; the cards above apply that principle to reducedness, integrality and the singularity classes [@Har77, §II.3].

@@ -676,7 +676,7 @@ Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [
 :::
 
 ::: {.remark}
-The exercise stands on printed pp. 68--69 of Hartshorne, headed "Some Examples of Sheaves on Varieties", its head and part (a) beginning at the foot of p. 68 and parts (b)--(e) on p. 69; read off those pages (100 dpi renders of PDF pp. 83 and 84, printed p. $N$ being PDF p. $N+15$, the text layer of this stretch dropping numbered lines).  The statement above is that text, parts (a)--(e) including the sheaf of ideals of $Y$, the quotient of part (b), and the exact sequences of (c), (d) and (e).
+The exercise is Hartshorne, II.1, exercise 1.21, "Some Examples of Sheaves on Varieties", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`.  The statement above is that text, parts (a)--(e) including the sheaf of ideals of $Y$, the quotient of part (b), and the exact sequences of (c), (d) and (e).
 
 Part (e) is an analogue of the first Cousin problem in several complex variables; see Gunning and Rossi.
 :::
