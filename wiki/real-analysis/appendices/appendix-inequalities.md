@@ -35,6 +35,8 @@ $$
 
 [[PR-XUVZY]]
 
+For $p=\infty$, the triangle inequality is the statement that $\norm{\cdot}_\infty$ is a norm on $L^\infty$ [@Fol99, Theorem 6.8(b)].
+
 [[PR-2C3SZ]]
 
 ## Elementary inequalities
