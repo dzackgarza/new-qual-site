@@ -26,11 +26,11 @@ $\mcf$ is \dfn{flasque}, or \dfn{flabby}, if every restriction $\mcf(U) \to \mcf
 :::
 
 ::: {.proposition}
-Injective implies flasque, flasque implies $\globsec{X;\wait}\dash$acyclic, and for a short exact sequence with flasque left term the sequence of global sections stays exact.
+Injective implies flasque, flasque implies $\globsec{X;-}\dash$acyclic, and for a short exact sequence with flasque left term the sequence of global sections stays exact.
 :::
 
 ::: {.remark}
-Every sheaf $\mcf$ embeds in the flasque sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections, so every sheaf has a resolution by flasque, hence $\globsec{X;\wait}\dash$acyclic, sheaves.
+Every sheaf $\mcf$ embeds in the flasque sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections, so every sheaf has a resolution by flasque, hence $\globsec{X;-}\dash$acyclic, sheaves.
 
 The proof of acyclicity is induction on the sequence $0 \to \mcf \to \mci \to \mcg \to 0$ with $\mci$ injective: flasqueness of $\mcf$ forces $\mcg$ flasque and the global sections exact, so $H^1(\mcf) = 0$ and the higher groups shift down.
 :::
