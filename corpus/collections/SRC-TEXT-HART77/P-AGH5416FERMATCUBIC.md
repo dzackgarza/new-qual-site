@@ -331,6 +331,58 @@ audit:
     coefficient analysis, the vanishing-coefficient argument it leaves out, and
     its three line families matched to step twenty-seven-lines. No step,
     statement or hypothesis of the card changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168 and recomputed: steps twenty-seven-lines,
+    incidence-ten-and-sixteen, the two bodies ac-family-incidence and
+    bc-family-incidence, automorphism-group-not-two-three, and the closing
+    paragraph of automorphism-group-characteristic-two.
+
+    Gathmann's Lemma 11.1 and Corollary 11.2 were re-read in the retained
+    extraction and carry the coefficient argument and the four-three-three list
+    that the two incidence steps transcribe, together with the reduction by
+    permuting coordinates and multiplying them by cube roots of unity.
+    Recomputed over F_7, in which 2 is a primitive cube root of unity: the three
+    families of step three-line-families are 27 distinct lines, each of them on
+    the Fermat cubic; every line meets exactly ten of the other twenty-six; the
+    four criteria of steps same-family-incidence, ab-family-incidence,
+    ac-family-incidence and bc-family-incidence hold on every pair they cover,
+    108 same-family pairs and 81 in each of the three mixed cases, so the two
+    bodies ac and bc are right; the ten lines meeting C_00 are C_01, C_02, C_10,
+    C_20, B_00, B_12, B_21, A_00, A_12, A_21, which is the four-three-three list
+    of step incidence-ten-and-sixteen; every skew pair has exactly five common
+    transversals; and the orbit of A_00 under coordinate permutations and
+    cube-root scalings is all 27 lines, the transitivity that step
+    incidence-ten-and-sixteen uses. The coefficient argument of step
+    twenty-seven-lines was recomputed from the four relations
+    a_2^3+b_2^3=-1, a_3^3+b_3^3=-1, a_2^2a_3=-b_2^2b_3 and
+    a_2a_3^2=-b_2b_3^2, with the vanishing of one coefficient argued as the step
+    argues it.
+
+    For automorphism-group-not-two-three: Dolgachev and Duncan's Lemma 5.1 was
+    read in the retained extraction and states both groups; their Lemma 5.2 with
+    its Hessian display was read too. The Hessian of x_0^3+x_1^3+x_2^3+x_3^3 was
+    computed as 6^4 x_0x_1x_2x_3, a nonzero scalar multiple of that display, and
+    the monomial maps x_i -> z_i x_sigma(i) preserving the cubic were counted
+    over F_7: 1944 of them, which is 648 projectively, that is 3^3 times 4!, the
+    order the step asserts. The step's reading of Lemma 5.2's indexing, that the
+    display d^{n-1} rtimes S_n is the group for n coordinates in P^{n-1}, was
+    checked against the printed formula and is the only reading under which the
+    formula is consistent, as the step says.
+
+    For the closing paragraph of automorphism-group-characteristic-two: PSU_4(2)
+    was computed of order 77760/3 = 25920, the incidence graph of the 27 lines
+    was built and its automorphism group computed, of order 51840, and 25920 is
+    half of that, so the index-two statement holds. The paragraph's argument was
+    read and is valid: a subgroup of W(E_6) containing a subgroup of index two is
+    one of the two, and the larger alternative would make the Frobenius
+    geometric, which it is not. The same conclusion is the last sentence of the
+    retained passage, that the automorphism group of the Fermat cubic cannot be
+    larger than PSU_4(2). Not checked: nothing outside the retained files was
+    read in this pass, and the parenthetical of the printed exercise's part (c)
+    is not part of what these steps claim.
 ---
 
 ::: {.problem}
