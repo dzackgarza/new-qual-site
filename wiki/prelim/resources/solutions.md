@@ -10,9 +10,7 @@ packets, with the material each document covers.
 
 ## Berkeley preliminary examinations
 
-- [Berkeley preliminary examination archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive) --
-  the department's archive of past preliminary examinations, with the solutions
-  the department publishes.
+The sittings held here are one collection each, listed by institution, subject, and date on [[archives/card-archives|the Sources listing]] under Berkeley.
 
 - [Fall 2020 online graduate preliminary examination, Part A, with solutions](attachments/prelimsolutions.pdf) --
   one sitting's Part A, solved.
@@ -46,9 +44,7 @@ packets, with the material each document covers.
 
 ## Harvard Math 21b, Spring 2018
 
-- [Course examination archive](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html) --
-  the examinations of one course in linear algebra and differential equations,
-  with the practice finals below.
+The course's own examinations are collections here, listed on [[archives/card-archives|the Sources listing]] under Harvard applied algebra; the local documents in this section are its final examination and practice finals.
 
 - [Final examination with solutions](attachments/solution.pdf)
 

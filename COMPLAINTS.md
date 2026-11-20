@@ -10147,3 +10147,17 @@ none needing repair.
 
 With this, all eight cards of the split are read step by step: `-5`, `-17`, `-21`, `-25`, `-27`, `-29`, `-32`, `-33`,
 none of them needing repair.
+
+## 2026-11-20, #179: the external links left on the resource pages, and the two that RES-01 removed
+
+**Object and need:** the external URLs that #179 lists under CITE-2 on `wiki/prelim/resources/problems.md`, `wiki/prelim/resources/solutions.md` and `wiki/archives/solution-compendia.md`, and the rule that decides which of them stay.
+
+**Observed evidence:** RES-01 names the case that decided two of them — "duplicate raw-PDF navigation when a collection owns the source" — and RES-19's preferred form for a solution directory is "`[Author], [title]: solutions to [identified exercises], [link]`", so a described link is navigation under SOURCE-02, not a URL standing in for a citation.
+The Berkeley preliminary-examination archive and the Harvard Math 21b course archive are both owned by collections here (91 `SRC-BERKELEY-PRELIM-*`, and `SRC-HARVARD-MATH21B-SPRING-2018-*` with `institution: harvard, area: applied-algebra`), so both links were redundant with the site's own pages and are removed in favour of [[archives/card-archives|the Sources listing]].
+The seven that remain — Duke's qualifying examinations, two UCLA topic-sorted problem banks and the GRE practice set, Kureh's and Pantone's algebra solutions, the Maryland and Vermont sittings, and the Cambridge Part III papers — are documents the site does not hold, and each entry names its institution or author, the document, and what it covers.
+
+**Impact and owner:** if the issue's reading is that any external URL on a resource page is a CITE-2 violation regardless of description, the seven go too, and each becomes a link-free bibliographic entry under RESOURCE-20, which a reader cannot follow. Restoring navigation would then need either a bibliography key for each work or an intake of the documents as collections; the bibliography is generated from Zotero and has no second source here.
+
+**Uncertainty:** the seven are identified and described; that they are the *right* seven and not more is a reading of RES-01, not a measurement.
+
+**Repair:** none outstanding if the described-link reading holds; otherwise one line of direction and a link-free rewrite of four pages.
