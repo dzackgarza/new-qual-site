@@ -11,6 +11,15 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected. The body's sentence "none of the retained Hatcher sets solves Section 4.3
+    Exercise 8" was false: Sam, Solutions to Algebraic Topology (2008), solves Exercise 8 on
+    printed pp. 25-26, by both directions of the iff. The body now cites it. The event of
+    2026-11-18 that repeated the false sentence is superseded. The exercise is on printed p. 419;
+    the event of 2026-11-18 that gives p. 420 is corrected by this one.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -56,7 +65,7 @@ Show that a map $p: E \to B$ is a fibration if and only if the map $\pi: E^I \to
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.3 Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, printed p. 419, and against the homotopy lifting property as defined there.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 8**, printed pp.~25--26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise by both directions of the equivalence: a section of $\pi$ gives a lift of any homotopy by evaluating it, and a fibration gives a section by lifting the path of a point. The steps below follow that argument. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, printed p. 419, and against the homotopy lifting property as defined there.
 
 ::: pf
 
