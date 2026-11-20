@@ -22,6 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-07
   note: Re-derived the classification from Cayley-Hamilton and the elementary-divisor theorem over R[x], including all degree-three partitions and the irreducible-quadratic case.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Three of the card's nine steps --- the three families 4.1, 4.2 and 4.3 --- listed their
+    elementary divisors with no proof body; each now carries a `pf-proof` giving the real
+    dimension of each summand and naming the elementary divisors it produces. No claim was
+    changed; step 4.4, which carries the argument that the list is exhaustive, keeps its own
+    proof. Checked: that each of the four families has real dimension $3$; that the
+    elementary-divisor multisets of the four families are pairwise distinct, so no two of them
+    are isomorphic; and that $\RR[x]/(x-\lambda)$ is one-dimensional over $\RR$. Not checked:
+    the printed examination paper, the statement being vouched for by the `source-checked`
+    event of 2026-09-07; no published solution was consulted.
 ---
 
 ::: {.problem}
@@ -106,6 +119,8 @@ Therefore every $3$-dimensional $\RR[x]$-module is isomorphic to exactly one mod
 
 ::: pf-proof
 
+The degree equation of step 2 has the partitions $3=1+1+1=2+1=3$, and step 3 says the irreducibles are linear or quadratic; the four cases are enumerated in steps 4.1--4.4, each of which is a module of real dimension $3$.
+
 ::: {.pf-step #s4-1}
 
 Three linear elementary divisors:
@@ -117,6 +132,12 @@ $$
 \RR[x]/(x-\lambda_3),
 $$
 with $\lambda_i\in\RR$.
+
+::: pf-proof
+
+Each $\RR[x]/(x-\lambda_i)$ is a field, hence a one-dimensional real vector space (a basis is the class of $1$), on which $x$ acts as multiplication by $\lambda_i$; the direct sum is therefore a real vector space of dimension $1+1+1=3$. Its elementary divisors are the three monic linear polynomials $x-\lambda_1,x-\lambda_2,x-\lambda_3$, and every module whose elementary divisors are three linear polynomials arises this way.
+
+:::
 
 :::
 
@@ -130,6 +151,12 @@ $$
 $$
 with $\lambda,\mu\in\RR$.
 
+::: pf-proof
+
+The quotient $\RR[x]/((x-\lambda)^2)$ has the real basis the classes of $1$ and $x-\lambda$, so its dimension is $2=2\deg(x-\lambda)$; with the one-dimensional second summand the dimension is $2+1=3$. Its elementary divisors are $(x-\lambda)^2$ and $x-\mu$, both powers of linear polynomials, and every module with that multiset of elementary divisors is this direct sum by the elementary-divisor theorem.
+
+:::
+
 :::
 
 ::: {.pf-step #s4-3}
@@ -139,6 +166,12 @@ $$
 \RR[x]/((x-\lambda)^3),
 $$
 with $\lambda\in\RR$.
+
+::: pf-proof
+
+The quotient $\RR[x]/((x-\lambda)^3)$ has the real basis the classes of $1,x-\lambda,(x-\lambda)^2$, so its dimension is $3=3\deg(x-\lambda)$, and its single elementary divisor is $(x-\lambda)^3$; conversely a module with that elementary divisor is this quotient.
+
+:::
 
 :::
 
@@ -183,5 +216,4 @@ These are precisely the rational/Jordan forms associated to the elementary divis
 :::
 
 :::
-
 :::
