@@ -11176,3 +11176,38 @@ homeomorphism, and is not a homotopy equivalence. The step now derives the case 
 consequence stated after Proposition 1A.2, the deformation retraction in the proof of Proposition 1A.1,
 Proposition 4.1 and Theorem 4.5, and records the counterexample. The entry above counts two repairs on this
 card; it took three. The two reported there stand. Commit `2c469a0de4`.
+
+## 2026-11-20, twelfth item: `E-HAT-1.2-1` and `E-HAT-1.B-5` read, and the page-locator count corrected upward
+
+**`E-HAT-1.2-1` read step by step and correct; no commit, per `QUAL-03`.** Every element of $G*H$ has a unique
+reduced word. For the centre: with $w=a_1\cdots a_n$ reduced, $a_1\in G$ and $1\ne h\in H$, the word $hw$ is
+reduced with first letter in $H$, while $wh$ reduces to a word with first letter $a_1\in G$ — in the case
+$a_n\in H$ the reduction eats $a_nh$ and leaves $a_1\cdots a_{n-1}$, nonempty because $n\ge2$ — so the two
+differ by uniqueness of reduced words. For torsion: conjugation reduces the length until the first and last
+letters lie in different factors, and such a word of even length $m\ge2$ has $v^k$ reduced of length $km$, hence
+infinite order. Both conclusions therefore hold, and the card is unchanged.
+
+**`E-HAT-1.B-5` read and correct, with two locators repaired** (`c33ad878d0`). The presentation is the HNN
+extension of Example 1B.13 with $\varphi(c)=a$ and $\psi(c)=a^2$, giving $bab^{-1}=a^2$, the Baumslag--Solitar
+group of the exercise; the edge injections are both injective, so Theorem 1B.11 makes $K_\Gamma$ a $K(G,1)$, the
+lifted vertex spaces are copies of $\RR$ and the lifted edge cylinders are strips $\RR\times I$, and the
+incidence graph is the tree of Theorem 1B.11's proof. Two pages remained — "at p. 93" and "on p. 95" — which the
+earlier sweep missed because it matched only parenthesised forms; they are now Example 1B.13 and the proof of
+Theorem 1B.11.
+
+**The count was wrong and is corrected.** The earlier scan reported 31 cards carrying a page citation in the
+body. That pattern matched only `(p. N)`, `printed p. N` and `PDF page`; a second scan for a bare `p. N` after
+a preposition finds **32 cards and 54 locators**, of which the earlier pass repaired none of the bare ones. The
+cards are `E-HAT-1.1-9`, `-1.2-6`, `-1.2-7`, `-1.B-5`, `-2.1-1`, `-2.1-10`, `-2.1-29`, `-2.2-1`, `-2.2-5`,
+`-2.2-6`, `-2.2-10`, `-2.2-13`, `-2.2-15`, `-2.2-16`, `-2.2-17`, `-2.2-18`, `-2.2-23`, `-2.2-24`, `-2.2-29`,
+`-2.2-30`, `-2.2-31`, `-2.2-36`, `-2.2-37`, `-2.2-40`, `-2.2-41`, `-2.2-43`, `-2.3-1`, `-2.3-3`, `-2.B-6`,
+`-2.B-10`, `-2.C-2`, `-2.C-5`, `-2.C-9`. That is the Chapter 2 batch, and only `E-HAT-2.1-1` was opened this turn.
+
+**Not reached.** The Chapter 2 proofs from `E-HAT-2.1-1` on were not read in this turn. The brief asked for them
+after the two Chapter 1 cards; the two were done, and the Chapter 2 batch is opened but not begun.
+
+**Policy note taken from this turn's reading of `CONTRIBUTING.md`.** `QUAL-03` says a card whose mathematics is
+already correct gets no commit and no audit event; the earlier turns of this stream added events to correct
+cards, which that rule does not sanction. From here a correct card is read and left alone, and an event is
+written only where the card changes. `just commit-card` is the commit route, and it is what carried
+`c33ad878d0`.
