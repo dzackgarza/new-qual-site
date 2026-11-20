@@ -97,7 +97,7 @@ Show that if $\prod X_\alpha$ is Hausdorff, or regular, or normal, then so is $X
 :::
 
 ::: {.solution}
-The published solution is reported on this card's earlier audit note from **dbFin, "Section 32: Problem 2 Solution"** (`tmp/sources/dbfin/section-32-normal-spaces/problem-2-solution.txt`); the slice argument below is the standard one and is checked against Munkres §32 Exercise 2, printed p. 205, Theorem 31.2 and Exercise 32.1.
+The published solution is reported on this card's earlier audit note from **dbFin, "Section 32: Problem 2 Solution"** (`tmp/sources/dbfin/section-32-normal-spaces/problem-2-solution.txt`); the slice argument below is the standard one and is checked against Munkres §32 Exercise 2, Theorem 31.2 and Exercise 32.1.
 
 Fix an index $\alpha$ and choose a basepoint $a_{\beta}\in X_{\beta}$ for every $\beta\ne\alpha$; the spaces are nonempty.
 
@@ -107,7 +107,7 @@ Fix an index $\alpha$ and choose a basepoint $a_{\beta}\in X_{\beta}$ for every 
 The map $i:X_{\alpha}\to\prod_{\beta}X_{\beta}$, with $i(x)_{\alpha}=x$ and $i(x)_{\beta}=a_{\beta}$ for $\beta\ne\alpha$, is an imbedding onto the slice $S=i(X_{\alpha})$.
 
 ::: pf-proof
-$i$ is injective, since $x$ is recovered as the $\alpha$-coordinate of $i(x)$. It is continuous because each coordinate function $\pi_{\beta}\circ i$ is either the identity of $X_{\alpha}$ or a constant map, and a map into a product with the product topology is continuous as soon as all its coordinate functions are: that is Theorem 19.6, printed p. 117, and its two-factor case, Theorem 18.4, does not cover an arbitrary index set. Its inverse on $S$ is the restriction of $\pi_{\alpha}$, which is continuous, the projections of a product being continuous, as the proof of the same theorem records; so $i$ is a homeomorphism onto $S$ and an imbedding.
+$i$ is injective, since $x$ is recovered as the $\alpha$-coordinate of $i(x)$. It is continuous because each coordinate function $\pi_{\beta}\circ i$ is either the identity of $X_{\alpha}$ or a constant map, and a map into a product with the product topology is continuous as soon as all its coordinate functions are: that is Theorem 19.6, and its two-factor case, Theorem 18.4, does not cover an arbitrary index set. Its inverse on $S$ is the restriction of $\pi_{\alpha}$, which is continuous, the projections of a product being continuous, as the proof of the same theorem records; so $i$ is a homeomorphism onto $S$ and an imbedding.
 :::
 
 :::
