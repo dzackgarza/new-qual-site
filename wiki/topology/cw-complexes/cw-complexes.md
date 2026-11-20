@@ -59,6 +59,8 @@ Reading the boundary word of the polygon gives a presentation of $\pi_1$ with on
 
 ## Simplicial complexes
 
+[[D-NJ2Y6]]
+
 ::: {.remark}
 With the vertices labelled by integers, a simplicial complex is determined by its list of simplices, each $n$-simplex being recorded as the set of the $n+1$ labels of its vertices.
 
