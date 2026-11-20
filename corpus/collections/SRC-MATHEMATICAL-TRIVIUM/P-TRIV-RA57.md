@@ -241,7 +241,7 @@ imaginary parts are $n+1$ and $0$.
 
 ::: pf-qed
 
-Steps [](#s1-2){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} give all three finite sums in every case.
+Steps [](#s1-1){.pf-ref}, [](#s1-5){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-9){.pf-ref} give all three finite sums in every case.
 
 :::
 
