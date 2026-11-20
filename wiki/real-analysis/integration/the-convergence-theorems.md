@@ -43,8 +43,7 @@ On a measure space with $\mu(X)<\infty$, uniform convergence of integrable funct
 
 ::: {.example title="Uniform convergence alone does not commute with the integral"}
 On $\RR$ with Lebesgue measure, $f_n\coloneqq\frac1n\chi_{[0,n]}$ converges to $0$ uniformly, since $\sup_x\abs{f_n(x)}=1/n$, every $f_n$ is in [[real-analysis/integration/l1|$L^1$]], and $\int f_n=1$ for every $n$.
-So the hypothesis $\mu(X)<\infty$ in [[PR-L7LNZ]] cannot be dropped.
-The integral $1$ also survives the pointwise, non-uniform sequences $n\chi_{(0,1/n)}$ and $\chi_{[n,n+1]}$ on $\RR$.
+So the hypothesis $\mu(X)<\infty$ in [[PR-L7LNZ]] cannot be dropped; further sequences with $f_n\to0$ pointwise and $\int f_n=1$ are on [[real-analysis/counterexamples|Counterexamples]].
 :::
 
 [[T-MN6WQ]]
