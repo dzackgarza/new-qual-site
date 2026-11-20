@@ -42,8 +42,3 @@ Let $f\colon[a,b]\to\RR$ be bounded.
 If $f\colon[a,b]\to\RR$ is Riemann integrable, then $f$ is Lebesgue integrable on $[a,b]$ and the two integrals are equal [@Rud76, ch. 11].
 
 :::
-
-::: {.remark}
-The converse fails: $\chi_{\QQ\cap[0,1]}$ is Lebesgue integrable with integral $0$ and not Riemann integrable.
-
-:::
