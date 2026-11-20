@@ -20,6 +20,16 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source prints $x^\rho/(\rho(\rho+1))$ and $E(x)=c_1x+c_0+\cdots$; the statement now has $x^{\rho+1}/(\rho(\rho+1))$ and $E(x)=c_1x-c_0+\cdots$.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk the print sets before "2." was read from the page image of printed p. 204 (PDF
+    p. 223), and the printed display was re-read there in the text layer: $\psi_1(x)=x^2/2-\sum_\rho
+    x^\rho/(\rho(\rho+1))-E(x)$ with $E(x)=c_1x+c_0+\sum_k x^{1-2k}/(2k(2k-1))$, so the discrepancy
+    the two events above record is in the print and the remark's version is the card's. Not checked:
+    the contour shift and the residues at $s=0$ and $s=-1$ were read for consistency with the two
+    earlier notes but were not recomputed in this pass.
 ---
 
 ::: {.exercise}
@@ -31,7 +41,7 @@ where the sum is taken over all zeros $\rho$ of the zeta function in the critica
 :::
 
 ::: {.remark}
-The source prints the zero terms as $x^{\rho}/(\rho(\rho+1))$ and the error term as $c_1x + c_0 + \cdots$. The residues of $\frac{x^{s+1}}{s(s+1)}\left(-\frac{\zeta'}{\zeta}(s)\right)$ at $s = \rho$ and $s = -1$ are $-\frac{x^{\rho+1}}{\rho(\rho+1)}$ and $+c_0$, which give the statement above.
+The book marks this problem with an asterisk (Chapter 7, Problem 2, printed p. 204). The source prints the zero terms as $x^{\rho}/(\rho(\rho+1))$ and the error term as $c_1x + c_0 + \cdots$. The residues of $\frac{x^{s+1}}{s(s+1)}\left(-\frac{\zeta'}{\zeta}(s)\right)$ at $s = \rho$ and $s = -1$ are $-\frac{x^{\rho+1}}{\rho(\rho+1)}$ and $+c_0$, which give the statement above.
 :::
 
 ::: {.solution}
