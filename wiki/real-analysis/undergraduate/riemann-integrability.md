@@ -39,6 +39,6 @@ Let $f\colon[a,b]\to\RR$ be bounded.
 ## Relation to the Lebesgue integral
 
 ::: {.proposition}
-If $f\colon[a,b]\to\RR$ is Riemann integrable, then $f$ is Lebesgue integrable on $[a,b]$ and the two integrals are equal [@Rud76, ch. 11].
+If $f\colon[a,b]\to\RR$ is Riemann integrable, then $f$ is Lebesgue integrable on $[a,b]$ and the two integrals are equal [@Rud76, ch. 11, Theorem 11.33(a)].
 
 :::
