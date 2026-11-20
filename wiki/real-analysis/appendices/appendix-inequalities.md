@@ -56,4 +56,5 @@ For $p=\infty$, the triangle inequality is the statement that $\norm{\cdot}_\inf
 ::: {.fact}
 For $x,y\geq0$, $\sqrt{x + y} \leq \sqrt{x} + \sqrt{y}$, since $\qty{\sqrt x+\sqrt y}^2 = x+y+2\sqrt{xy}\geq x+y$.
 
+The inequality is the argument displayed, and it is also the case $p=2$ of the subadditivity of $t\mapsto t^p$ on $[0,\infty)$ for $p\geq1$; it is the comparison Rudin uses when he proves $\abs{x+y}\le\abs x+\abs y$ from the Schwarz inequality, [@Rud76, ch. 1, Theorem 1.35].
 :::
