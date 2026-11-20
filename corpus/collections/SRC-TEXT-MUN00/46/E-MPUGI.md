@@ -40,6 +40,20 @@ audit:
     GitHub and web searches of this pass found no other treatment of the product of a quotient map
     with the identity on a locally compact space; they are recorded in the COMPLAINTS.md entry for
     §43--§50. The card keeps its own proof.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf` with
+    eight steps covering (a), (b) and (c), each carrying a `pf-proof`. Cited by numbered statement
+    only: Munkres, Topology, §46 Exercise 9, Theorem 46.11 (adjunction of a map on a product with a
+    locally compact Hausdorff factor), §22 (quotient maps) and Theorem 22.2 (the quotient criterion
+    for an induced map). The proof remains the card's own: the self-study notes for Chapter 7 that
+    reach this exercise state it without answering it, and no retained set answers it, as the
+    earlier event records. Checked: that $i_X\times p$ is surjective, that the induced $f$ is a
+    bijection carrying saturated sets, that $f^{-1}(U)=q((i_X\times p)^{-1}(U))$ with the inner set
+    saturated and open, that $q=g\circ(i_X\times p)$ gives $Q=G\circ p$ pointwise in the first
+    variable, and that the adjunction applies twice, to $q$ and to $G$.
 ---
 
 ::: {.exercise}
@@ -61,27 +75,83 @@ Show that $Q = G \circ p$.
 :::
 
 ::: {.solution}
-Let $q:X\times A\to Y$ be the quotient induced by $i_X\times p$.
 
-(a) The map $i_X\times p$ is constant exactly on the fibers of $q$, hence factors uniquely as
-$$
-X\times A\xrightarrow qY\xrightarrow fX\times B.
-$$
-The induced $f$ is bijective and continuous by the defining property of the quotient topology.
+No retained published solution of Munkres, *Topology*, §46 Exercise 9 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`, and the self-study notes that do reach Chapter 7 state this exercise without answering it. The proof is the card's own, checked against the numbered statements of §22 and §46 it cites, and the adjunction it uses is Theorem 46.11.
 
-(b) Let $g=f^{-1}$. Give $C(X,Y)$ the compact-open topology. Theorem 46.11 states that, for $X$ locally compact Hausdorff and any space $Z$, a map $F:X\times Z\to Y$ is continuous if and only if the induced map $\hat F:Z\to C(X,Y)$, $\hat F(z)(x)=F(x,z)$, is continuous. The map $g$ induces
-$$
-G:B\to C(X,Y),\qquad G(b)(x)=g(x,b),
-$$
-and $q$ induces
-$$
-Q:A\to C(X,Y),\qquad Q(a)(x)=q(x,a).
-$$
-Since $f q=i_X\times p$, equivalently $q=g(i_X\times p)$, we have
-$$
-Q(a)(x)=g(x,p(a))=G(p(a))(x),
-$$
-so $Q=G\circ p$.
+::: pf
 
-(c) The map $q:X\times A\to Y$ is continuous. Since $X$ is locally compact Hausdorff, Theorem 46.11 says its adjoint $Q:A\to C(X,Y)$ is continuous. Because $p$ is quotient and $Q=G\circ p$, the quotient criterion implies $G$ is continuous. Applying Theorem 46.11 again, the adjoint $g:X\times B\to Y$ is continuous. Hence the continuous bijection $f$ has continuous inverse, so $f$ is a homeomorphism. Therefore $i_X\times p$ is the composite of the quotient map $q$ with a homeomorphism, and is quotient.
+::: {.pf-step #quotient-adjunction}
+Theorem 46.11 (used in (b) and (c)): for $X$ locally compact Hausdorff and any space $Z$, a map $F:X\times Z\to W$ is continuous if and only if its adjoint $\widehat F:Z\to\mathcal C(X,W)$, $\widehat F(z)(x)=F(x,z)$, is continuous, the function space carrying the compact-open topology.
+
+::: pf-proof
+This is the statement of Munkres, Theorem 46.11.
+:::
+
+:::
+
+::: {.pf-step #bijection}
+(a) $i_X\times p$ is surjective and $q$ identifies exactly its fibres, so there is a bijection $f:Y\to X\times B$ with $f\circ q=i_X\times p$.
+
+::: pf-proof
+$i_X$ is surjective and $p$ is surjective, so $i_X\times p$ is surjective. The quotient space $Y$ induced by a surjection $i_X\times p$ has its quotient map $q$ constant on each fibre and separating distinct fibres, so the induced map on the set of fibres is a bijection; $f$ is that bijection read on $X\times B$, and $f\circ q=i_X\times p$ holds by construction.
+:::
+
+:::
+
+::: {.pf-step #continuity-of-f}
+(a) $f$ is continuous.
+
+::: pf-proof
+Let $U\subseteq X\times B$ be open. Then $f^{-1}(U)=q((i_X\times p)^{-1}(U))$, and $(i_X\times p)^{-1}(U)$ is open and saturated for $q$ because $i_X\times p$ is constant on the fibres of $q$. A quotient map carries a saturated open set to an open set, so $f^{-1}(U)$ is open.
+:::
+
+:::
+
+::: {.pf-step #Q-equals-Gp}
+(b) $Q=G\circ p$.
+
+::: pf-proof
+$f\circ q=i_X\times p$ and $g=f^{-1}$ give $q=g\circ(i_X\times p)$. Evaluating at $(x,a)$, $Q(a)(x)=q(x,a)=g(x,p(a))=G(p(a))(x)$ for every $x$, that is, $Q(a)=G(p(a))$ for every $a\in A$.
+:::
+
+:::
+
+::: {.pf-step #Q-continuous}
+(c) $Q:A\to\mathcal C(X,Y)$ is continuous.
+
+::: pf-proof
+$q:X\times A\to Y$ is continuous and $X$ is locally compact Hausdorff, so its adjoint $Q$ is continuous by step [](#quotient-adjunction){.pf-ref}. Note that $\mathcal C(X,Y)$ here carries the compact-open topology of the function space on $X$, in which $Q$ is the adjoint of $q$.
+:::
+
+:::
+
+::: {.pf-step #G-continuous}
+(c) $G:B\to\mathcal C(X,Y)$ is continuous.
+
+::: pf-proof
+$Q=G\circ p$ by step [](#Q-equals-Gp){.pf-ref} with $Q$ continuous by step [](#Q-continuous){.pf-ref}, and $p$ is a quotient map. By the quotient criterion (Munkres, Theorem 22.2, applied with the target $\mathcal C(X,Y)$), $G$ is continuous.
+:::
+
+:::
+
+::: {.pf-step #g-continuous}
+(c) $g=f^{-1}$ is continuous, so $f$ is a homeomorphism.
+
+::: pf-proof
+$G$ is continuous and $X$ is locally compact Hausdorff, so by step [](#quotient-adjunction){.pf-ref} the adjoint $g:X\times B\to Y$ of $G$ is continuous. Steps [](#bijection){.pf-ref} and [](#continuity-of-f){.pf-ref} make $f$ a continuous bijection with continuous inverse, that is, a homeomorphism.
+:::
+
+:::
+
+::: {.pf-step #quotient}
+$i_X\times p:X\times A\to X\times B$ is a quotient map.
+
+::: pf-proof
+$i_X\times p$ equals $f\circ q$, the composite of the quotient map $q$ with a homeomorphism, and a homeomorphism composed with a quotient map on either side is a quotient map. So $i_X\times p$ is a quotient map, which is the theorem of the exercise.
+:::
+
+:::
+
+:::
+
 :::
