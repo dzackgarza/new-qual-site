@@ -11591,3 +11591,17 @@ corrected, they being of this date.
 **What would close it.** A run of Stembridge's `SF` package in Maple, which this system does not have. Until then ST.4(a) is answered by an independent computation and by the card's statement that the requested package check is missing.
 
 **Uncertainty.** The retained paper, `assets/attachments/Applied-Algebra-Qual-Spring-2008_extracted.md`, prints only "the SF package" and names neither the author nor Maple; the identification with Stembridge's package is the subject's reading, not a line of the paper. No Maple run was attempted and no other package was substituted for it.
+
+## 2026-11-20, #179: ST.4(a) is the paper's own line, read off the rendered page; `P-APASP08I` keeps it and drops the Sage run
+
+**The paper, quoted exactly.** `assets/attachments/Applied-Algebra-Qual-Spring-2008.pdf` is a scan without a text layer, three pages, whose pages come back empty from a text read; the problem was therefore read from page 2 rendered at 220 dpi. It prints, indented under the problem number and with the page's own spacing:
+
+> ST.4 Compute the the Schur function expansion of s_22 x s_2,1 by constructing the standard tableaux yielded by the Littlewood Richardson rule. (20)
+> a) Check your result by means of the SF package.
+> b) Give a representation theoretical interpretation of the coefficients in this expansion. (20)
+
+The same page's ST.1 opens "Use the SF package to compute the two scalar products", so the request is the paper's idiom and not an OCR artefact. The checked-in extraction `assets/attachments/Applied-Algebra-Qual-Spring-2008_extracted.md` reads the same at this location; the transcription was faithful and the statement has nothing to correct.
+
+**Repair.** `P-APASP08I` keeps the statement as the paper prints it. The SageMath session of the earlier repair is removed from the solution, with the step that presented it as the check of part (a): the examination is written without a computer, the answer to the problem is the expansion constructed in step `#table` and interpreted in part (b) at step `#interpretation`, and part (a)'s package check is a software errand outside an exam answer, which the solution now records in one sentence. No software is run in its place, and the card no longer names any system as the SF package. The earlier events that describe the removed run stand as written (`QUAL-11`); a dated event of this day appends the correction.
+
+**Status of the reader's row.** It is not closed by a computation on this card, and it should not be: ST.4(a) asks for a software check, which the exam does not ask the candidate to write out, and no run of Stembridge's SF package exists on this system. What the card owes is the mathematics of ST.4 — the six-term Littlewood--Richardson expansion and the representation-theoretic reading of its coefficients — and that is what it carries.
