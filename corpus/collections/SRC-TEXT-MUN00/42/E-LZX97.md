@@ -41,6 +41,21 @@ audit:
     read in `tmp/sources/munkres-2000-topology.md`. The earlier events keep their text (QUAL-11);
     these numbered citations supersede their page locators. No step changes.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read. The comparison is right. Smirnov's theorem (Theorem 42.1) is
+    stated as metrizable iff paracompact Hausdorff and locally metrizable; the compact criterion,
+    §34 Exercise 7, is derived from it because a compact space is paracompact, as the
+    introduction to §41 records; the Lindelöf criterion, §34 Exercise 8, is derived through
+    Theorem 41.5 and the fact that regularity in the sense of §31 includes closed one-point sets,
+    so a regular space is Hausdorff. Strictness is right: an uncountable discrete space is
+    metrizable, hence satisfies Smirnov's hypothesis, and is neither compact nor Lindelöf, since
+    the cover by singletons has no countable subcover. Checked against §42 Exercise 1, Theorem
+    42.1, Theorems 41.4 and 41.5, and §34 Exercises 7 and 8, all read in
+    `tmp/sources/munkres-2000-topology.md`. No defect found; no step changed.
+
 ---
 
 ::: {.exercise}
