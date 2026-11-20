@@ -38,7 +38,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-If $z\neq1$, then
+Part (a): if $z\neq1$, then
 $$
 \boxed{
 \sum_{k=0}^{n}r^ke^{ik\phi}
@@ -62,19 +62,6 @@ $$
 1-z^{n+1}.
 $$
 Divide by $1-z$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Part (a) follows for $z\neq1$.
-
-
-::: pf-proof
-
-This is step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -138,7 +125,7 @@ expression.
 
 ::: {.pf-step #s1-5}
 
-Taking real parts gives
+Part (b): taking real parts gives
 $$
 \boxed{
 \sum_{k=0}^{n}r^k\cos(k\phi)
@@ -170,22 +157,9 @@ Take real parts of step [](#s1-4){.pf-ref} term by term.
 
 :::
 
-::: {.pf-step #s1-6}
-
-Part (b) follows for $z\neq1$.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-7}
 
-Taking imaginary parts of step [](#s1-4){.pf-ref} gives
+Part (c): taking imaginary parts of step [](#s1-4){.pf-ref} gives
 $$
 \boxed{
 \sum_{k=0}^{n}r^k\sin(k\phi)
@@ -219,19 +193,6 @@ $$
 =
 r^k\sin(k\phi).
 $$
-
-:::
-
-:::
-
-::: {.pf-step #s1-8}
-
-Part (c) follows for $z\neq1$.
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
 
 :::
 
