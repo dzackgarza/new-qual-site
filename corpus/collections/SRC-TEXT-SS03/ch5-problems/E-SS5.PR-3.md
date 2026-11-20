@@ -26,6 +26,20 @@ audit:
     r = (n/(B sigma))^{1/sigma} together with the two Stirling asymptotics that are compared.
     Every macro used is one the preamble defines. Not checked this session: the printed statement
     page.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The printed statement page is now read: Chapter 5, Problem 3 on printed p. 157 (PDF p. 176)
+    reads "Show that $\sum z^n/(n!)^\alpha$ is an entire function of order $1/\alpha$", with the
+    asterisk before "3.", and the card's block is that sentence. One repair in step s6: the
+    minimisation of $Ae^{Br^\sigma}r^{-n}$ at $r_n=(n/(B\sigma))^{1/\sigma}$ gives $Br^\sigma=n/\sigma$,
+    and the card printed $+n$ where the substitution yields $+n/\sigma$; for $\sigma<1$, which is the
+    case the step is used in when $\alpha>1$, that is a stronger bound than the estimate delivers.
+    The term is now $n/\sigma$, and the conclusion $\log(n!)^\alpha\ge(n/\sigma)\log n+O(n)$ is
+    unchanged. The rest was read and holds: the ratio $1/(n+1)^\alpha$, the Stirling lower bound,
+    the maximum of $x(1+\log R-\log x)$ at $x=R$, the split at $\lceil2eR\rceil$, and the upper
+    bound $M_F(r)\le Ce^{C'r^{1/\alpha}}$.
 
 ---
 
@@ -37,6 +51,10 @@ $$
 $$
 
 is an entire function of order $1/\alpha$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 5, Problem 3, printed p. 157).
 :::
 
 ::: {.solution}
@@ -107,7 +125,7 @@ If $M_{F}(r)\leq Ae^{Br^{\sigma}}$ for all large $r$, then $\alpha\geq1/\sigma$.
 ::: pf-proof
 Cauchy's estimate for the Taylor coefficient gives $\frac{1}{(n!)^{\alpha}}=\abs{a_{n}}\leq\frac{M_{F}(r)}{r^{n}}\leq\frac{Ae^{Br^{\sigma}}}{r^{n}}$ for every $r>0$. The right side, as a function of $r$, has logarithmic derivative $B\sigma r^{\sigma-1}-n/r$, which vanishes at $r_{n}=(n/(B\sigma))^{1/\sigma}$ and changes sign from negative to positive there, so $r_{n}$ gives the minimum. Substituting,
 $$
-\log\frac{1}{(n!)^{\alpha}}\leq\log A+n-\frac{n}{\sigma}\log n+\frac{n}{\sigma}\log(B\sigma),
+\log\frac{1}{(n!)^{\alpha}}\leq\log A+\frac{n}{\sigma}-\frac{n}{\sigma}\log n+\frac{n}{\sigma}\log(B\sigma),
 $$
 that is $\log(n!)^{\alpha}\geq\frac{n}{\sigma}\log n+O(n)$. Stirling's formula gives $\log(n!)^{\alpha}=\alpha n\log n+O(n)$, so
 $$
