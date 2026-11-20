@@ -10232,3 +10232,66 @@ the one the exercise cites.
 **Uncertainty:** the survivor choice is a reading decision, not a measurement. `P-FHW1-02` is the one whose statement was checked against a page image of `assets/attachments/fields-homework-1.pdf` (its `source-checked` event of 2026-10-30); the other two carry no source check.
 
 **Repair:** not done. Merging repoints `SRC-UNSORTED-ALGEBRA`'s two list entries to the survivor and deletes the two cards, which is a card-corpus pass rather than a wiki read; [#174](https://github.com/dzackgarza/new-qual-site/issues/174) leaves it here and the page edit is the commit that carries this record.
+
+## 2026-11-20: residue 8 of the unproved-step count is empty — fifteen cards, 117 steps, one commit each
+
+**Object and need.** The dispatch for this chat named residue 8 of the 2266 unproved steps counted
+above (partition `int(CARD_ID.rsplit("-", 1)[1], 36) % 16`), with the instruction to take the next
+unclaimed residue of 8--15 if 8 were already held. **No entry in this file claims residue 8.** The
+claims recorded for the range are lane l6lf's on 14 and the provenance of one residue-11 entry
+("residue 11 — one false answer corrected", with its own commit `5b6bf48201`); a search for the
+strings "residue 8", "residue-8" and for l6lf over the corpus finds nothing else. So residue 8 is
+this chat's, and it is now empty.
+
+**The measurement, before and after, by the parser and not by a scanner.** `.scratch/r3/measure_parser.py`
+parses every card in the residue through `qualc.model.parse_cards_with` and counts what
+`qualc.lamport.apply_lamport` itself produced. At the start of the session: **117 unproved steps in
+15 cards**, out of 4585 steps over 1017 cards. On the tree of `45b9efae70`: **0 unproved steps, 0
+orphans, 0 blank proof bodies, 0 filter errors**, the same 4585 steps over the same 1017 cards.
+
+**The fifteen cards, one commit each, each pushed before the next.** The column "blank" is the count
+of numbered steps with no `pf-proof` child before the repair.
+
+| card | source and page | blank | repair | commit |
+| --- | --- | --- | --- | --- |
+| `E-9OT3C` | Munkres, *Topology* (2000), §37 Exercise 4, printed p. 236 | 21 | every step of parts (a)--(c) proved; Theorem 26.2, 26.9, 32.3 and 25.1 named; claims unchanged | `ea0c63c9a5` |
+| `E-HK-52-8` | Hoffman--Kunze, *Linear Algebra*, 2nd ed., §5.2 Exercise 8, printed p. 149 | 15 | all fifteen proved; the `**Goal.**` paragraph replaced by a plan sentence | `6c0432d304` |
+| `E-8VZD4` | Munkres, §30 Exercise 1, printed p. 194 | 12 | both parts proved, the diagonal box re-derived; claims unchanged | `dd36a911ae` |
+| `P-OWBTK` | UGA algebra qualifying examination, Fall 2019 | 13 | both computations proved, with the distributivity and cancellation named; the back-referencing `pf-qed` removed | `fdd7fbedd1` |
+| `E-SS8.EX-8` | Stein--Shakarchi, Chapter 8 Exercise 8 | 10 | all ten proved; the `**Goal.**` paragraph replaced; the construction unchanged | `4c3b4acf05` |
+| `P-5YLZS` | UGA real analysis qualifying examination, Fall 2018 | 9 | all nine proved, including the mean-value domination that licenses the theorem | `419e9dadf3` |
+| `P-AMD-6KL53YZC` | UCSD 290 F14 sheet 7, problem 3 (per the card's `source-checked` event) | 8 | all eight proved; two back-referencing `pf-qed` steps removed | `0da3b9e623` |
+| `P-OKDFC` | UGA topology qualifying examination, Spring 2015, problem 4 | 8 | all eight proved; claims unchanged | `3f96be5d34` |
+| `P-ANJIW` | ART integral practice sheet | 6 | all six proved; both answers unchanged | `c2c7adc0e3` |
+| `E-HK-64-8` | Hoffman--Kunze, §6.4 Exercise 8, printed p. 205 | 6 | all six proved, the two degenerate dimensions covered; the printed page recorded | `b4e6243a96` |
+| `P-ALGS07C` | UCSD algebra qualifying examination, Spring 2007, problem 3, p. 5 | 3 | the three bare families 4.1--4.3 proved (real dimension and elementary divisors) | `311ebd2548` |
+| `P-G6GOO` | Justin sheet 4, problem 6 (per the card's `source-checked` event) | 3 | the construction, the tree-to-cover step and the cubic-graph identification proved | `24393c30c5` |
+| `P-ARTALG-JU03-8` | July 2003 algebra preliminary, problem 8 | 1 | the structure-theorem step proved by its citation to Dummit and Foote §12.1; the back-referencing `pf-qed` removed | `a15a307863` |
+| `P-JXIIG` | UW algebra qualifying examination, 2009 | 1 | the tower-law step proved from the minimal polynomial of $\sqrt{D_2}$ over $F(\sqrt{D_1})$ | `289da2835f` |
+| `P-QYKXK` | UW algebra qualifying examination, 2013 | 1 | the quotient identification proved from reduction modulo $5$ and the third isomorphism theorem | `da8654456b` |
+
+**What was and was not changed.** No statement and no claim was altered on any of the fifteen; the
+work is the derivation of each numbered step from the preceding ones and from the theorems the card
+names. Four `pf-qed` steps whose whole content was to point back at earlier parts were removed
+(`P-OWBTK`, `P-AMD-6KL53YZC` two, `P-ARTALG-JU03-8`), STYLE-08 forbidding them, and two
+`**Goal.**` paragraphs that restated the statement were replaced by sentences naming the plan.
+
+**Checks, per card and once at the end.** `.scratch/report_check.py` over all fifteen: **15 card(s)
+checked, 0 diagnostic(s)**; `qualc.authoring check` on each: schema and Markdown parsing OK; the
+parser measurement quoted above; `tools/extraction_detector.py` over the corpus: **0** problem cards
+with extraction residue; `tools/sync_macros.py --check`: exit 0. Each card's audit list carries a
+`solution-written` event of 2026-11-20 saying what was checked and what was not. Every one of the
+fifteen commits was confirmed on `main` by `git merge-base --is-ancestor` against `git ls-remote omm
+main`, not by the push reply.
+
+**What this closes and what it does not.** It closes residue 8's unproved steps and nothing else. It
+does not re-read the residue's other 1002 cards, which had no unproved step and were not touched; it
+does not supply the provenances a separate sweep owes; and it runs no whole-corpus gate, which is
+CI's. The corpus-wide figure in the entry above falls by 117; whatever remains in residues 0, 1, 2,
+9--15 is still to be counted on the tree, not inferred from this entry.
+
+**Uncertainty.** Two of the fifteen source locators are the cards' own `source-checked` events
+(UCSD 290 F14 sheet 7; Justin sheet 4) rather than pages this session read, and the examinations of
+`P-OWBTK`, `P-5YLZS`, `P-OKDFC`, `P-ARTALG-JU03-8`, `P-JXIIG`, `P-QYKXK` and `P-ANJIW` are not in
+the checkout at all, so their statements are taken as the cards have them. The five Hoffman--Kunze
+and Munkres locators were read in the retained text at the printed page named.
