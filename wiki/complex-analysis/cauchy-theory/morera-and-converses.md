@@ -20,10 +20,7 @@ A continuous function whose integral over every triangle vanishes is holomorphic
 
 :::
 
-::: {.remark title="Rectangles"}
-The conclusion also holds for continuous $f$ whose integrals over the boundaries of all closed rectangles in $\Omega$ with sides parallel to the axes vanish.
-
-:::
+[[T-LHSMY]]
 
 ## Locally uniform limits
 
