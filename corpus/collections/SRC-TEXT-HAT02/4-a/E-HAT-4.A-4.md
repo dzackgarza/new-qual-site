@@ -70,6 +70,20 @@ audit:
     phrases 'functoriality of induced maps' and 'cellular structure of a wedge of spheres' remain
     sentence fragments in their proofs, which is a wording defect and not a gap.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The provenance sentence at the head of the solution now states the search result with its date: no
+    published solution set covering §4.A was located, and the searches run on 2026-11-20 are recorded
+    with their queries and negative results in the entry of that date in COMPLAINTS.md. Read again
+    against the exercise: the space X = the wedge of n copies of S^k with k > 1 is (k-1)-connected,
+    since a map S^i -> X with i < k is homotopic to a cellular one, whose image lies in the single
+    0-cell when i < k, with the case i = 1 also following from van Kampen; Hurewicz (Theorem 4.32)
+    then gives pi_k(X) = H_k(X) = Z^n, cellular homology computing the latter by the chain complex of
+    Theorem 2.35; and the inclusion classes of the n spheres form a basis of pi_k(X) by naturality of
+    the Hurewicz isomorphism. Not re-read in this pass: steps s2 onward, where the realisation of
+    GL_n(Z) by self-maps of the wedge is argued; that part was read on 2026-11-19.
 ---
 
 ::: {.problem}
@@ -78,7 +92,7 @@ With the notation of the preceding problem, show that $\operatorname{Aut}(\bigve
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4; the argument below is the card's own, no retained solution set covering §4.A.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 4. No published solution set covering §4.A was located: the retained solution sets stop before it, and the searches run on 2026-11-20, recorded with their queries and their negative results in the entry of that date in `COMPLAINTS.md`, found nothing that states or proves it. The argument below is therefore the card's own, checked against Hatcher's statement and the results it uses.
 
 ::: pf
 
