@@ -55,7 +55,7 @@ For $n\geq2$ the covering $S^n\to\RP^n$ gives $\pi_k(\RP^n)\cong\pi_k(S^n)$ for 
 | $\RP^3$ | 2 | 0 | $\ZZ$ | 2 | 2 | 12 | 2 | 2 | 3 | 15 | 2 | $2\oplus 2$ |
 | $\RP^4$ | 2 | 0 | 0 | $\ZZ$ | 2 | 2 | $\ZZ\oplus 12$ | $2\oplus 2$ | $2\oplus 2$ | $24\oplus 3$ | 15 | 2 |
 
-For complex projective space the fibration $S^1\to S^{2n+1}\to\CP^n$ gives $\pi_2(\CP^n)\cong\ZZ$ and $\pi_k(\CP^n)\cong\pi_k(S^{2n+1})$ for $k\geq3$:
+For complex projective space the fibration $S^1\to S^{2n+1}\to\CP^n$ of [@Hat02, Example 4.44] gives $\pi_2(\CP^n)\cong\ZZ$ and $\pi_k(\CP^n)\cong\pi_k(S^{2n+1})$ for $k\geq3$ by the long exact sequence of homotopy groups of a fibration [@Hat02, Theorem 4.41]:
 
 |       | $\pi_1$ | $\pi_2$ | $\pi_3$ | $\pi_4$ | $\pi_5$ | $\pi_6$ | $\pi_7$ | $\pi_8$ | $\pi_9$ | $\pi_{10}$ | $\pi_{11}$ | $\pi_{12}$ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
