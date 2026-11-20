@@ -119,18 +119,7 @@ Let $z_j\in\CC$ with $z_j\neq -1$ for every $j$, and let $\Log$ be the principal
 
 [[E-DR5LY]]
 
-::: {.proposition title="Summing series by residues"}
-Let $f$ be meromorphic on $\CC$ with finitely many poles, none at the points where the series below are sampled, and suppose $\abs{z^2 f(z)}$ is bounded for $\abs z$ large.
-Then, with each sum on the right taken over the poles of $f$,
-$$
-\begin{aligned}
-\sum_{n=-\infty}^{\infty} f(n) &= -\sum \Res\qty{\pi \cot (\pi z) f(z)}, \\
-\sum_{n=-\infty}^{\infty}(-1)^{n} f(n) &= -\sum \Res\qty{\pi \csc (\pi z) f(z)}, \\
-\sum_{n=-\infty}^{\infty} f\qty{\frac{2 n+1}{2}} &= \sum \Res\qty{\pi \tan (\pi z) f(z)}, \\
-\sum_{n=-\infty}^{\infty}(-1)^{n} f\qty{\frac{2 n+1}{2}} &= \sum \Res\qty{\pi \sec (\pi z) f(z)}.
-\end{aligned}
-$$
-:::
+[[T-RSM4V]]
 
 [[E-SS3.EX-12]]
 [[P-CM16-S2-14]]
