@@ -512,14 +512,14 @@ M=\left[\frac{d-1}{N-2}\right],
 \varepsilon=d-1-M(N-2).
 $$
 The generic hyperplane section is a nondegenerate curve $C$ of degree $d$ in
-$\PP^{N-1}$ (Harris, printed p. 42), and Riemann--Roch with the count
+$\PP^{N-1}$ (Harris, §2), and Riemann--Roch with the count
 $h^0(C,\OO_C(l))-h^0(C,\OO_C(l-1))\ge l(N-2)+1$ for $l\le M$ gives
 $$
 h^0(C,\omega_C(-M+l))
 \le
 l\varepsilon+\binom{l}{2}(N-2)
 $$
-(Harris, printed p. 43).
+(Harris, §2).
 
 The Poincaré residue sequence of the pair $C\subset X$,
 $$
@@ -535,7 +535,7 @@ h^0(X,\Omega^2_X(-M+l))
 \le
 \sum_{i=1}^{l-1}h^0(C,\omega_C(-M+i))
 $$
-(Harris, printed p. 43). At $l=M$ this reads
+(Harris, §2). At $l=M$ this reads
 $$
 p_g(X)
 =
@@ -543,7 +543,7 @@ h^0(X,\Omega^2_X)
 \le
 \binom{M}{3}(N-2)+\binom{M}{2}\varepsilon,
 $$
-which is Harris's bound at printed p. 44 for dimension two.
+which is Harris's bound, §2, for dimension two.
 
 Now $d<2n$ means $d\le2N-3$, so
 $$
@@ -639,7 +639,7 @@ $$
 p_g(X)=h^0(X,\omega_X)=0.
 $$
 
-Yang Pi-Yeh, printed p. 115, and Egbert, printed p. 303, reach the
+Yang Pi-Yeh, solution 5.6.2, and Egbert, V.6.2, reach the
 non-special case by different routes. Yang writes
 $h^2(X,\OO_X)=h^1(C,\OO_C(1))$, so a nonzero $p_g(X)$ makes $L$ special,
 and Clifford's theorem with $h^0(C,L)\ge n+1$ gives $d\ge2n$, so that
@@ -702,8 +702,7 @@ $$
 L\cong\omega_C.
 $$
 
-Clifford's theorem with its equality clause is Hartshorne, Theorem 5.4, printed
-p. 343 and proved on pp. 343--345; the exclusion of the hyperelliptic case by
+Clifford's theorem with its equality clause is Hartshorne, Theorem IV.5.4; the exclusion of the hyperelliptic case by
 very ampleness is the one-line argument above.
 :::
 
@@ -731,8 +730,7 @@ $$
 K_X\cdot A.
 $$
 
-Yang Pi-Yeh, solution 5.6.2, and Egbert, V.6.2, printed
-p. 303, reach this case too, and both assert $d=2g-2$ in it rather than
+Yang Pi-Yeh, solution 5.6.2, and Egbert, V.6.2, reach this case too, and both assert $d=2g-2$ in it rather than
 deriving it. Yang reads $2g-2=d+H\cdot K_X\ge d$ off adjunction, $K_X$ being
 effective because $p_g(X)\ne0$, together with $n+1\le h^0(C,L)$ off
 Clifford's theorem, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$. Egbert
@@ -788,7 +786,7 @@ h^0(X,\omega_X)
 =1.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, both cite "theorem 6.2" for the nonemptiness of $\linearsystem{12K_X}$ on a surface that is not ruled --- Yang's "Then by theorem 6.2., we have $\abs{12K}\neq0$" and Egbert's "$\abs{12K}\neq\emptyset$ by thm 6.2" --- and that statement is the book's Theorem 6.1, $\kappa=-1\Leftrightarrow\linearsystem{12K}=\emptyset\Leftrightarrow X$ rational or ruled, while Theorem 6.2 on the same page is Castelnuovo's criterion. With it $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3" and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
+Yang, solution 5.6.2, and Egbert, V.6.2, both cite "theorem 6.2" for the nonemptiness of $\linearsystem{12K_X}$ on a surface that is not ruled --- Yang's "Then by theorem 6.2., we have $\abs{12K}\neq0$" and Egbert's "$\abs{12K}\neq\emptyset$ by thm 6.2" --- and that statement is the book's Theorem 6.1, $\kappa=-1\Leftrightarrow\linearsystem{12K}=\emptyset\Leftrightarrow X$ rational or ruled, while Theorem 6.2 is Castelnuovo's criterion. With it $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3" and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
 from an effective divisor of class $K_X$ meeting the ample class $A$ in zero
 to $\omega_X\cong\OO_X$ and $p_g(X)=1$, is the card's own.
 :::
@@ -869,7 +867,7 @@ $$
 q=0.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, close as follows. By
+Yang, solution 5.6.2, and Egbert, V.6.2, close as follows. By
 Nakai--Moishezon $H-K_X$ is ample, and Kodaira vanishing and Serre duality
 give $H^1(X,\OO_X(H))=H^1(X,\OO_X(K_X-H))=0$, since
 $\omega_X\otimes\OO_X(H-K_X)\cong\OO_X(H)$. Since $(K_X-H)\cdot H=-d<0$ with
@@ -928,9 +926,9 @@ The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, with
 
 The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
 $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
-and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
+and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (Harris, §2). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, both in §2 of that paper.
 
-The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, having got $\linearsystem{12K}$ nonempty by Theorem 6.1; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
+The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, having got $\linearsystem{12K}$ nonempty by Theorem 6.1; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, that is Theorem 1.6) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
 
-The equality case itself is the book's own Theorem 5.4: its statement, including the classification of equality as $D=0$, $D=K$, or $C$ hyperelliptic with $D$ a multiple of the $g^1_2$, is printed on p. 343 and its proof on pp. 343--345. Step [](#clifford-equality-canonical){.pf-ref} applies it and excludes the hyperelliptic alternative because $\OO_C(1)$ is very ample. Neither entry above supplies that argument: Yang's chain in the equality case reads $2g-2=d+H\cdot K_X\ge d$ against $n+1\le h^0(\OO_H(d))=1-g+d$, which at $d=2n$ gives $g\le n$ and $g\ge n+1$ and so refutes only the non-special case, while Egbert's $d=2(g-1)$ is the Clifford equality step left unstated.
+The equality case itself is the book's own Theorem 5.4: its statement, including the classification of equality as $D=0$, $D=K$, or $C$ hyperelliptic with $D$ a multiple of the $g^1_2$, is Theorem IV.5.4, and step [](#clifford-equality-canonical){.pf-ref} applies it and excludes the hyperelliptic alternative because $\OO_C(1)$ is very ample. Neither entry above supplies that argument: Yang's chain in the equality case reads $2g-2=d+H\cdot K_X\ge d$ against $n+1\le h^0(\OO_H(d))=1-g+d$, which at $d=2n$ gives $g\le n$ and $g\ge n+1$ and so refutes only the non-special case, while Egbert's $d=2(g-1)$ is the Clifford equality step left unstated.
 :::
