@@ -21,4 +21,6 @@ For every $z\in\CC$,
 $$
 \cosh z=1+\frac{z^{2}}{2 !}+\frac{z^{4}}{4 !}+\frac{z^{6}}{6 !}+\cdots=\sum_{n=0}^{\infty} \frac{z^{2 n}}{(2 n) !}.
 $$
+
+This is the even part of the exponential series of [@Ahl73, ch. 5, §1.2, The Taylor Series], where $e^z=\sum z^n/n!$ is listed, together with the definition $\cosh z=(e^z+e^{-z})/2$ of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions]: adding the series for $z$ and for $-z$ cancels the odd terms and leaves the display.
 :::
