@@ -256,6 +256,36 @@ audit:
     Also checked, in the first proof, that its nonvanishing is not claimed from the duality
     pairing and that step `#normal-generator` names `#schoenflies-pair` as what supplies it. Not
     claimed: a published solution of Exercise 2.B.5.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the bicollar step of the second proof and what
+    it rests on. The bicollar is an embedding as written: for $\norm{x}=\tfrac12$ the point
+    $(1+t/2)x$ has norm $\tfrac12+\tfrac t4\in[\tfrac14,\tfrac34]$, so $(x,t)\mapsto(1+t/2)x$ is a
+    homeomorphism of $S^{k-1}(\tfrac12)\times[-1,1]$ onto the annulus $\{\tfrac14\le\norm{y}\le
+    \tfrac34\}$ with inverse $y\mapsto(y/2\norm{y},\,4\norm{y}-2)$, and composing it with the
+    embedding $h'$ gives an embedding $\beta:\Sigma\times[-1,1]\to
+    h'(\operatorname{int}D^k)\subset S$ whose restriction to $\Sigma\times\{0\}$ is the identity.
+    That is exactly the hypothesis Bredon states: Theorem 19.11, printed p. 236, "Suppose
+    $f:S^{n-1}\times[-1,1]\to S^n$ is an embedding. Then the closure of each component of
+    $S^n-f(S^{n-1}\times\{0\})$ is homeomorphic to $D^n$", read in the text layer of
+    `tmp/sources/bredon-topology-and-geometry.pdf` (PDF page 131 = printed pp. 236--237), the proof
+    ending on printed p. 239 (PDF page 132) immediately above the section's Problems, which is the
+    extent the card claims. Brown's Theorem 5, printed p. 76 of
+    `tmp/sources/brown-1960-generalized-schoenflies.md`, is the same statement in the same form, so
+    the citation pair is not a mismatched pair. That the two components of $S-\Sigma$ are $\ell$ and
+    $S-\bar\ell$ was checked: both are open in $S$, nonempty, disjoint, and cover $S-\Sigma$, and
+    $\widetilde H_0(S-\Sigma)\cong\ZZ$ by Proposition 2B.1(b), printed p. 169, so there are exactly
+    two; hence $D'$ is the closure of the component $S-\bar\ell$ and the theorem makes it a $k$-disk.
+    Re-read in the same step and unchanged: $D\cap S=\ell$ and $D\cap D'=\varnothing$; the
+    star-shaped contraction of $D^n-L$ to $0$, which keeps a nonzero last coordinate nonzero; the
+    compact $k$-manifold structure of $D'$ near $\Sigma$ through $h'^{-1}$ and the half-space
+    $\{\norm{x}\ge\tfrac12\}$; the excision hypotheses $\overline\ell^{\,X}=\ell$ and
+    $\ell\subset U=h'(\operatorname{int}D^n)\setminus h'(L)\subset A$; the vanishing of $H_j(X,A)$
+    in every degree, degree one through $\ker(H_0(A)\to H_0(X))=0$; the deformation retraction of
+    $D^n-D^k$ onto $\{0\}^k\times S^{n-k-1}$; and the case $k=0$, where no Schoenflies theorem is
+    used. Not claimed: a published solution of Exercise 2.B.5, none located.
 ---
 
 ::: {.problem}
