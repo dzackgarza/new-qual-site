@@ -31,6 +31,15 @@ audit:
     generates a proper ideal, the poset of proper ideals containing (x) is nonempty,
     a chain union is a proper ideal because 1 in the union puts 1 in a member, and a
     maximal element of the poset is a maximal ideal containing x. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 10, midterm 1(a),(b). Zorn's
+    lemma is stated correctly; a nonunit $x$ gives a proper $(x)$; the poset of proper ideals
+    containing $(x)$ is nonempty; a chain union is an ideal containing $(x)$ and is proper
+    because $1$ in the union lies in a member; a maximal element is a maximal ideal containing
+    $x$. No defect.
 ---
 
 ::: {.exercise}
