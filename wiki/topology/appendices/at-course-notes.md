@@ -7,7 +7,7 @@ title: Summary of standard topics
 
 * Algebraic topology topics:
 
-  * Classification of compact surfaces
+  * [[T-NBARV|Classification of compact surfaces]]
 
   * [[D-QK5BM|Euler characteristic]]
 
@@ -27,7 +27,7 @@ title: Summary of standard topics
 
   * [[D-6CI7D|Orientability]] and [[D-EILKJ|compactness]]
 
-  * Top homology and cohomology of manifolds
+  * [[PR-LR35S|Top homology of a closed manifold]]
 
   * Reduced homology and cohomology
 
@@ -41,7 +41,7 @@ title: Summary of standard topics
 
   * [[D-455S6|Excision]]
 
-  * Künneth formula
+  * [[T-TZ3X7|Künneth formula]]
 
   * Factoring maps
 
@@ -49,21 +49,21 @@ title: Summary of standard topics
 
 * Algebraic topology theorems:
 
-  * Brouwer fixed point theorem
+  * [[T-S2OLJ|Brouwer fixed point theorem]]
 
   * Poincaré lemma
 
-  * Poincaré duality
+  * [[D-QP7WI|Poincaré duality]]
 
   * de Rham theorem
 
-  * Seifert--van Kampen theorem
+  * [[T-BTPU4|Seifert--van Kampen theorem]]
 
 * Covering space theory topics:
 
   * [[D-ANO2D|Covering maps]]
 
-  * Free actions
+  * [[D-2PNEG|Free actions]]
 
   * [[D-2PNEG|Properly discontinuous actions]]
 
@@ -77,6 +77,6 @@ title: Summary of standard topics
 
   * [[D-SI6OM|Deck transformations]]
 
-  * The action of the fundamental group on fibers
+  * [[D-6BK54|The action of the fundamental group on fibers]]
 
   * [[D-MWD2L|Normal (regular) covers]]
