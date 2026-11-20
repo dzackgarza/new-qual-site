@@ -9,7 +9,7 @@ topics:
 
 # Smooth, unramified, and étale
 
-A morphism locally of finite presentation is étale exactly when it is smooth of relative dimension $0$, and exactly when it is flat and unramified.
+A morphism locally of finite presentation is étale exactly when it is smooth of relative dimension $0$, and exactly when it is flat and unramified ([[D-MORETALE]]).
 
 ## Unramified and étale
 
