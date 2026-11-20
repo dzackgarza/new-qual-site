@@ -95,7 +95,7 @@ $$
 \psi=\iota_1\ \text{multiplication by }2.
 $$
 This is the one-vertex one-loop-edge graph of groups of Example 1B.13, whose $K_\Gamma$ is obtained from $K(A,1)$ by attaching $K(C,1)\times I$ along $K(C,1)\times\partial I$ by maps realizing $\varphi$ and $\psi$; with $K(C,1)$ having a single $0$-cell this is the one-vertex one-edge complex of Example 1B.13.
-The relation of that extension is stated there, at p. 93, as
+The relation of that extension is stated there, in Example 1B.13, as
 $$
 t\,\varphi(c)\,t^{-1}=\psi(c),
 $$
@@ -125,7 +125,7 @@ The lifted edge space is therefore the universal cover $\RR$ of that circle, and
 $$
 \RR\times I.
 $$
-The incidence graph of these lifted vertex and edge spaces is the tree $T_\Gamma$ constructed on p. 95: it has one vertex for each lifted vertex space, two vertices being joined when the corresponding lines are joined by a lifted segment of an edge cylinder, and it is built there as a union
+The incidence graph of these lifted vertex and edge spaces is the tree $T_\Gamma$ constructed in the proof of Theorem 1B.11: it has one vertex for each lifted vertex space, two vertices being joined when the corresponding lines are joined by a lifted segment of an edge cylinder, and it is built there as a union
 $$
 T_1\subset T_2\subset\cdots
 $$
