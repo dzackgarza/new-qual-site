@@ -27,6 +27,14 @@ audit:
       printed p. 103, and its printed words are the card's. The chapter, the exercise number and
       the page are now named in the solution's opening sentence. Not checked in this pass: the
       argument, which the edit does not touch.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence carried the printed page. It now cites the numbered statement
+      alone, Chapter 3, Exercise 1, which is what the corpus rule asks for, and the page is gone
+      from the rendered text. The statement is unchanged and the argument was not re-read in this
+      pass.
 ---
 
 ::: {.exercise}
@@ -42,7 +50,7 @@ Calculate the residue of $1/\sin \pi z$ at $z = n \in \ZZ$.
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 103 [@SS03, ch. 3, Exercise 1 ]; the statement below is its wording.
+This is Exercise 1 of Chapter 3 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` [@SS03, ch. 3, Exercise 1]; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. Both assertions were checked: the zeros of $\sin\pi z$ are exactly the integers, each is simple, and the residue of $1/\sin\pi z$ there is $(-1)^n/\pi$.
 
 ::: pf
