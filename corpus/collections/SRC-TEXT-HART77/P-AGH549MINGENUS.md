@@ -505,8 +505,9 @@ Take $r=2$. For even $d$ put $g=(d-6)/2$; then $F_d(2)-g=5/2$ and
 $8(F_d(2)-g)=20=2^2+2^2+2^2+2^2+2^2$. For odd $d$ put $g=(d-5)/2$; then $F_d(2)-g=2$ and
 $8(F_d(2)-g)=16=2^2+2^2+2^2+2^2+0^2$. In both cases $0\le r=2\le2d/3$ for $d\ge3$, $F_d(1)=5/8<g$,
 and $g\le F_d(2)=(d-1)/2$; Proposition 2.1 therefore produces a smooth connected curve of the
-stated degree and genus. Since an irreducible nonsingular curve is connected and smooth, this is
-the exercise's attainment clause.
+stated degree and genus. A smooth connected curve is irreducible, because a regular local ring is a
+domain and two components of a connected curve would meet at a point whose local ring would then
+have two minimal primes (Remark III.7.9.1); this is the exercise's attainment clause.
 :::
 
 :::
