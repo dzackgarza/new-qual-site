@@ -28,6 +28,19 @@ audit:
     union is connected since they share the base point; and the union is dense because a
     product basis element constrains only finitely many coordinates, so Theorem 23.4
     applies. (tmp/sources/munkres-solutions-positron-ch3.pdf).
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
+    with six steps covering the three parts, each carrying a `pf-proof`; the claims are the
+    prose's own and the published-solution attribution is kept above the proof. Cited by number
+    only: Munkres Theorem 23.6 (a finite product of connected spaces is connected), Theorem
+    23.3 (a union of connected subspaces with a common point is connected) and Theorem 23.4
+    (a space between a connected subspace and its closure is connected). Checked: that the
+    restriction of the projection is a homeomorphism onto the finite product, that $\mathbf a$
+    lies in every $X_K$, and that the point $\mathbf y$ of step 4 lies in both $X_K$ and the
+    given basis element.
 ---
 
 ::: {.exercise}
@@ -49,13 +62,84 @@ Show that $X_K$ is connected.
 :::
 
 ::: {.solution}
+
 The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.10, PDF p. 3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs.
 
 Let $X=\prod_{\alpha\in J}X_{\alpha}$ with each $X_{\alpha}$ connected, fix $\mathbf{a}\in X$, and for finite $K\subset J$ let $X_{K}=\{\mathbf{x}\mid x_{\alpha}=a_{\alpha}\ \text{for}\ \alpha\notin K\}$.
 
-(a) If $K=\{\alpha_{1},\dots,\alpha_{n}\}$, the map $X_{K}\to X_{\alpha_{1}}\times\cdots\times X_{\alpha_{n}}$, $\mathbf{x}\mapsto(x_{\alpha_{1}},\dots,x_{\alpha_{n}})$, is a homeomorphism (it is a bijective continuous map with continuous inverse given by inserting the $a_{\alpha}$). The finite product is connected by Theorem 23.6, hence so is $X_{K}$.
+::: pf
 
-(b) All the $X_{K}$ contain $\mathbf{a}$, so their union $Y$ is connected by Theorem 23.3.
+::: pf-step
 
-(c) Let $\mathbf{x}\in X$ and let $U=\prod U_{\alpha}$ be a product basis element containing $\mathbf{x}$, with $U_{\alpha}=X_{\alpha}$ except for $\alpha\in K$, $K$ finite. Define $\mathbf{y}$ by $y_{\alpha}=x_{\alpha}$ for $\alpha\in K$ and $y_{\alpha}=a_{\alpha}$ otherwise; then $\mathbf{y}\in X_{K}\subset Y$, and $\mathbf{y}\in U$ because $y_{\alpha}=x_{\alpha}\in U_{\alpha}$ on $K$ and $y_{\alpha}=a_{\alpha}\in U_{\alpha}=X_{\alpha}$ off $K$. So every neighbourhood of $\mathbf{x}$ meets $Y$ and $\mathbf{x}\in\overline Y$. Hence $X=\overline Y$, and by Theorem 23.4 (with $Y\subset X\subset\overline Y$) $X$ is connected.
+(a) If $K=\{\alpha_{1},\dots,\alpha_{n}\}$, the map $X_{K}\to X_{\alpha_{1}}\times\cdots\times X_{\alpha_{n}}$, $\mathbf{x}\mapsto(x_{\alpha_{1}},\dots,x_{\alpha_{n}})$, is a homeomorphism.
+
+::: pf-proof
+
+The map is the restriction to $X_K$ of the projection of $X$ onto the coordinates in $K$, hence continuous. It is injective because a point of $X_K$ is determined by those $n$ coordinates, the other coordinates being fixed at $a_\alpha$, and it is surjective because any $(x_{\alpha_1},\dots,x_{\alpha_n})$ extends to a point of $X_K$ by setting $x_\alpha=a_\alpha$ off $K$. The inverse, inserting the $a_\alpha$ in the other coordinates, is continuous because each of its coordinate functions is either a projection or constant. So the map is a bijective continuous map with continuous inverse.
+
+:::
+
+:::
+
+::: pf-step
+
+The finite product $X_{\alpha_{1}}\times\cdots\times X_{\alpha_{n}}$ is connected, hence so is $X_{K}$.
+
+::: pf-proof
+
+A finite product of connected spaces is connected (Munkres, Theorem 23.6), applied $n-1$ times to the binary products. By step 1, $X_K$ is homeomorphic to it, and connectedness is a topological property.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) All the $X_{K}$ contain $\mathbf{a}$, so their union $Y$ is connected.
+
+::: pf-proof
+
+A point of $X_K$ agrees with $a_\alpha$ off $K$; the point $\mathbf{a}$ agrees everywhere, so $\mathbf{a}\in X_K$ for every $K$, including $K=\varnothing$. A union of connected subspaces that have a point in common is connected (Munkres, Theorem 23.3), applied to the family $\{X_K\}$.
+
+:::
+
+:::
+
+::: pf-step
+
+(c) Let $\mathbf{x}\in X$ and let $U=\prod U_{\alpha}$ be a product basis element containing $\mathbf{x}$, with $U_{\alpha}=X_{\alpha}$ except for $\alpha\in K$, $K$ finite. Then $\mathbf{y}$, defined by $y_{\alpha}=x_{\alpha}$ for $\alpha\in K$ and $y_{\alpha}=a_{\alpha}$ otherwise, lies in $X_{K}\subset Y$ and in $U$.
+
+::: pf-proof
+
+A basis element of the product topology constrains only finitely many coordinates, which is the finite set $K$; off $K$ we have $U_\alpha=X_\alpha$ and $a_\alpha\in X_\alpha$. On $K$ the point $\mathbf y$ copies $\mathbf x$, so $y_\alpha=x_\alpha\in U_\alpha$ there; off $K$ it satisfies $y_\alpha=a_\alpha\in X_\alpha=U_\alpha$. Hence $\mathbf y\in U$, and $\mathbf y\in X_K$ by its definition.
+
+:::
+
+:::
+
+::: pf-step
+
+So every neighbourhood of $\mathbf{x}$ meets $Y$ and $\mathbf{x}\in\overline Y$; hence $X=\overline Y$.
+
+::: pf-proof
+
+Step 4 produces, inside any basis element $U$ containing $\mathbf x$, a point $\mathbf y\in Y$. A point of the closure of $Y$ is exactly a point every neighbourhood of which meets $Y$, so $\mathbf x\in\overline Y$; and $\mathbf x$ was arbitrary, so $X\subseteq\overline Y\subseteq X$.
+
+:::
+
+:::
+
+::: pf-step
+
+By Theorem 23.4, with $Y\subset X\subset\overline Y$, the space $X$ is connected, and the three parts are proved.
+
+::: pf-proof
+
+$Y$ is connected by step 3, and $Y\subseteq X\subseteq\overline Y$ by the definition of $Y$ and step 5. Munkres, Theorem 23.4 says that if $Y$ is connected and $Y\subseteq Z\subseteq\overline Y$ then $Z$ is connected; with $Z=X$ this gives that $X$ is connected. Part (a) is steps 1--2, part (b) is step 3, and part (c) is steps 4--6.
+
+:::
+
+:::
+
+:::
 :::
