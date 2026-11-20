@@ -31,8 +31,10 @@ Classifying a group up to isomorphism becomes the search for normal subgroups of
 
 ## Semidirect products
 
-With one normal factor only, the same construction produces a semidirect product whose multiplication is twisted by the conjugation map $H\to\Aut(N)$, and two twisting maps give isomorphic groups when they differ by an automorphism of $H$.
-A normal Sylow subgroup $N$ of $G$ with a complement $H$ is the case this arises in: $N\intersect H=1$ and $NH=G$, so the recognition theorem applies to the pair.
+::: {.example title="A normal Sylow subgroup with a complement"}
+Let $N$ be a normal Sylow subgroup of $G$ with a complement $H$, so that $N\intersect H=1$ and $NH=G$.
+The recognition theorem below applies to the pair, and $G$ is the semidirect product of $N$ by $H$ with twisting map $H\to\Aut(N)$ given by conjugation.
+:::
 
 [[T-SB6AV]]
 
@@ -40,15 +42,11 @@ A normal Sylow subgroup $N$ of $G$ with a complement $H$ is the case this arises
 
 ## Automorphism groups
 
-An automorphism of a cyclic group is multiplication by a unit of $\ZZ/n$, so the automorphism group is a unit group, and when $N$ is cyclic the twisting maps $H\to\Aut(N)$ of the semidirect products are counted there.
-
 [[PR-N6S6P]]
 
 [[D-JX3YC]]
 
 ## Finitely generated abelian groups
-
-The two standard decompositions of a finitely generated abelian group differ only in the grouping of the same cyclic factors: the invariant factors are ordered by divisibility and the elementary divisors are the prime powers, and the count of groups of a given order is a product of partition numbers.
 
 [[D-SS34F]]
 
