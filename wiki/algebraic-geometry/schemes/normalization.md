@@ -24,16 +24,12 @@ In dimension one that collapse is total: a noetherian local domain of dimension 
 
 [[D-DEFINTEG]]
 
-Integrality is the algebra behind the definition: the integral closure of $A$ in its fraction field is the largest integral extension inside that field, and it need not be a finite $A$-algebra in general, though it is when $A$ is finitely generated over a field.
+The integral closure of $A$ in its fraction field is the largest integral extension inside that field, and it need not be a finite $A$-algebra in general, though it is when $A$ is finitely generated over a field ([[D-DEFINTEG]]).
 That finiteness is what makes the geometric statement useful: for an integral extension $B\subseteq A$, lying over and going up hold, so $\Spec A\to\Spec B$ is surjective and closed with zero-dimensional fibres [@AM18, Chapter 5].
 
 ## Integrally closed domains
 
 [[D-DEFINTCL]]
-
-The cusp is the example to keep: $k[t^2,t^3]\subseteq k[t]$ is a domain whose fraction field contains $t=t^3/t^2$, which is integral over the ring and not in it, so the ring is not integrally closed and the inclusion $k[t^2,t^3]\subseteq k[t]$ is the integral closure.
-Geometrically that inclusion is the map $\AA^1_k\to V(y^2-x^3)$ that is a homeomorphism onto its image and not an isomorphism, which is the standard example of a bijective morphism that is not a closed immersion ([[D-MORIMM]]).
-Unique factorization domains are integrally closed, so the chain regular $\implies$ UFD $\implies$ normal is the chain of hypotheses one weakens when a theorem is stated for normal schemes.
 
 ## Rational functions on a non-integral scheme
 
@@ -49,7 +45,7 @@ That sheaf is also what the normalization is glued from: the integral closure of
 ## Normalization of curves
 
 On a curve nothing is lost, because normal and regular agree there: the normalization of an integral curve is its nonsingular model, and for a projective curve it is the unique smooth projective curve with the same function field ([[T-CRVMINMOD]]).
-That uniqueness is what makes the function field the complete invariant of a smooth projective curve, and it is the reason the theory of curves can be conducted with function fields and then read geometrically ([[algebraic-geometry/varieties/nonsingular-curves|nonsingular curves]]).
+That uniqueness makes the function field a complete invariant of a smooth projective curve ([[T-CRVMINMOD]]).
 The failure of the singular curve to be normal is also visible in its Picard group: comparison with the normalization computes $\Pic$ of a nodal and of a cuspidal cubic ([[FE-ADOKK]]), and the quotient is the local unit group at the singular point.
 
 A different face of the same condition appears in toric geometry, where the semigroup of a cone is saturated exactly when the affine toric variety is normal, so the normalization of an affine toric variety is the toric variety of the saturation ([[D-FULSAT]]).

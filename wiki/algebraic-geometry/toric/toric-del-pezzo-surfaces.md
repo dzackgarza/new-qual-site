@@ -43,7 +43,7 @@ So the degrees of the five are $9, 8, 8, 7, 6$: the plane has $K^2=9$, and each 
 [[FE-TORBLOW]]
 
 Blowing up a torus-fixed point is a star subdivision of the fan at the corresponding maximal cone, so the blowup of a toric surface at a fixed point is again toric and its fan has one more ray.
-That is the whole reason the list above can be generated: each of $\Bl_1\PP^2$, $\Bl_2\PP^2$, $\Bl_3\PP^2$ is a blowup of the previous one at a torus-fixed point, so their fans are the plane's fan subdivided once, twice and three times, while the quadric surface is not a blowup of the plane at all and enters the list as the normal fan of the square.
+Each of $\Bl_1\PP^2$, $\Bl_2\PP^2$, $\Bl_3\PP^2$ is a blowup of the previous one at a torus-fixed point, so their fans are the plane's fan subdivided once, twice and three times ([[FE-TORBLOW]]); the quadric surface is not a blowup of the plane and enters the list as the normal fan of the square.
 The exceptional curves of these blowups are the divisors of the new rays, each with self-intersection $-1$, and contracting them returns the previous surface ([[PR-VAREM1]], [[T-SRFCAST]]).
 
 [[D-VARFANO]]

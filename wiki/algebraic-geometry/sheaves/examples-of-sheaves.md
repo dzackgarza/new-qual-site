@@ -16,7 +16,7 @@ The families on this page are the constant and locally constant sheaves, the sky
 [[D-SHFLOCSYS]]
 
 A constant sheaf records nothing about $X$: its sections over an open set are the continuous maps to a discrete group, so on a connected open set there is exactly one section per element.
-A locally constant sheaf does record something, and the monodromy theorem above says exactly what — a representation of the fundamental group — which is why local systems are the geometric form of a group representation and why they appear wherever a family is locally trivial but globally twisted.
+A locally constant sheaf on a connected, locally path-connected and semilocally simply connected space corresponds to a finite-dimensional representation of the fundamental group, its monodromy ([[D-SHFLOCSYS]]).
 On an irreducible space, and in particular on the underlying space of an irreducible scheme, every constant sheaf is flabby, and this is the fact behind the vanishing of higher cohomology of a constant sheaf on an irreducible noetherian space.
 
 ## Skyscraper sheaves
@@ -28,8 +28,6 @@ Every open cover of $X$ splits into the sets containing $p$, on which the sectio
 On an affine scheme the skyscraper at a closed point is the quasicoherent sheaf attached to $A/\mfm$, so it is also the standard example of a quasicoherent sheaf whose support is a single point ([[D-UDIVH]]).
 
 [[FE-SHFPONE]]
-
-The sequence in that example is the standard way a skyscraper arises in practice: a section of a line bundle vanishes at a point, and the quotient by the subsheaf of sections vanishing there is the skyscraper at that point.
 
 ## Sheaves of functions
 

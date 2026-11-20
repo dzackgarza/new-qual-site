@@ -16,7 +16,7 @@ These are the two functors that every continuous map has. Extension by zero $j_!
 
 [[D-MODPULL]]
 
-The two functors behave oppositely on stalks: the inverse image has stalk $(\inverseof{f}\mcg)_x=\mcg_{f(x)}$, which is why it is the one that can be computed pointwise, while a stalk of the direct image is a colimit over the neighbourhoods of the image point and is not the stalk of $\mcg$ anywhere.
+The two functors behave oppositely on stalks: the inverse image has stalk $(\inverseof{f}\mcg)_x=\mcg_{f(x)}$ ([[D-MODPULL]]), while a stalk of the direct image is a colimit over the neighbourhoods of the image point and is not the stalk of $\mcg$ anywhere.
 The inverse image is exact and $f_*$ is only left exact: for $f\colon X\to\Spec k$ the direct image $f_*$ is $\Gamma(X,-)$, so the failure of exactness of $f_*$ is what the higher direct images measure ([[D-COHRIF]]).
 The module-theoretic pullback $f^*$ base changes the exact $f^{-1}$ along $\inverseof f\OO_Y\to\OO_X$, hence is only right exact, and has left derived functors ([[D-MODPULL]]).
 

@@ -22,7 +22,9 @@ For affine schemes this recovers the anti-equivalence with rings: every morphism
 
 [[FE-O12TX]]
 
-The spectra of the standard rings give the first list: $\Spec k$, the one-point scheme with residue field $k$; $\Spec\ZZ$; $\Spec k[t]$, the affine line; and $\Spec k[t,t^{-1}]$, the punctured line, which is affine although it is not a closed subscheme of the line.
+::: {.example title="Spectra of the standard rings"}
+The one-point scheme $\Spec k$ has residue field $k$; $\Spec\ZZ$ is the affine scheme of the integers; $\Spec k[t]$ is the affine line; and $\Spec k[t,t^{-1}]$ is the punctured line, which is affine although it is not a closed subscheme of the line ([[D-MORIMM]]).
+:::
 
 ## Recognising an affine scheme
 

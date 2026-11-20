@@ -30,9 +30,9 @@ The equivalence is not an equivalence with all finitely generated rings: a non-d
 
 [[PR-VA4S3]]
 
-The Segre embedding turns a product of projective spaces into a projective variety, and it is the reason $\PP^m\times\PP^n$ is allowed at all: the product of two varieties is a variety, but the product of two projective ones need not come with an embedding, and the Segre map supplies one whose image is defined by the vanishing of the two-by-two minors of a matrix of coordinates.
+The Segre embedding carries $\PP^m\times\PP^n$ to a closed subvariety of $\PP^{(m+1)(n+1)-1}$ cut out by the two-by-two minors of a matrix of coordinates, so the product of two projective varieties is projective ([[PR-VA4S3]]).
 
 [[FE-VARVERONESE]]
 
-The Veronese is the standard example of a variety that is isomorphic to $\PP^n$ and embedded so that its homogeneous coordinate ring is not $k[x_0,\ldots,x_n]$: the embedding, not the variety, decides the ring, and what the ring retains is the Hilbert function ([[algebraic-geometry/varieties/projective-varieties|projective varieties]]).
+The Veronese image is isomorphic to $\PP^n$ and has homogeneous coordinate ring the Veronese subring $k[x_0,\ldots,x_n]^{(d)}$, which is not $k[x_0,\ldots,x_n]$ ([[FE-VARVERONESE]]).
 Both constructions are written as maps given by sections of a line bundle, which is the general recipe: a base-point-free linear system on $X$ gives a morphism to projective space, and it is a closed immersion exactly when the linear system separates points and tangent vectors ([[T-DIVMAPPN]]).

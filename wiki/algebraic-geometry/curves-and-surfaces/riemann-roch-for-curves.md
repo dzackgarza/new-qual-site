@@ -56,5 +56,5 @@ The canonical model therefore determines the genus and whether $C$ is hyperellip
 
 ## Riemann--Roch as a vanishing theorem
 
-The equality $\chi(\OO_C(D))=\deg D+1-g$ holds for every divisor, but it is the vanishing of $h^1$ above degree $2g-2$ that makes it readable as a dimension.
-That is Serre vanishing in dimension one, and it is the same phenomenon as $H^i(\PP^n,\OO(d))=0$ for $i>0$ and $d$ large ([[T-IJW1K]]): on a curve there is only one interesting cohomology group, and Riemann–Roch is the statement that it can be traded for a degree.
+The equality $\chi(\OO_C(D))=\deg D+1-g$ holds for every divisor, and above degree $2g-2$ the vanishing of $h^1$ makes it a dimension ([[T-MWDVL]]).
+That vanishing is Serre vanishing in dimension one, the case $i>0$ with $d$ large of $H^i(\PP^n,\OO(d))=0$ ([[T-IJW1K]]).

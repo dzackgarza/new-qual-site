@@ -32,8 +32,7 @@ A closed subvariety of an affine variety is affine, and a complete connected aff
 ## Examples
 
 [[FE-VARSEGREPROD]]
+
 [[FE-VARAFFHYPER]]
 
-The complement of a curve in $\PP^2$ is a hypersurface complement, hence affine and not projective, which follows from the example above together with the criterion of [[PR-EFW6B]].
-
-[[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]] characterizes affineness cohomologically: a noetherian scheme $X$ is affine exactly when $H^1(X,\mcf)=0$ for every quasicoherent $\mcf$.
+Serre's criterion characterizes affineness cohomologically: a noetherian scheme $X$ is affine exactly when $H^1(X,\mcf)=0$ for every quasicoherent $\mcf$ ([[T-5IOUR]]).

@@ -9,7 +9,7 @@ topics:
 
 # Quasicoherence and twisting
 
-A quasicoherent sheaf is locally the sheaf associated to a module on each affine chart ([[D-QNTZY]]); the sheaf of differentials and the twisting sheaves on projective space are basic examples ([[D-4GCH6]], [[D-CB9XS]]).
+A quasicoherent sheaf is locally the sheaf associated to a module on each affine chart ([[D-QNTZY]]); the sheaf of differentials ([[D-4GCH6]]) and the twisting sheaves $\OO(n)$ ([[D-CB9XS]]) are quasicoherent.
 
 [[D-QNTZY]]
 
