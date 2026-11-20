@@ -49,7 +49,7 @@ $$
 :::
 
 ::: {.solution}
-The statement is Exercise 20 of [@SS03, ch. 3 (p. 107)], printed beginning "This exercise shows how the mean square convergence dominates the uniform one".
+The statement is Exercise 20 of Stein--Shakarchi, *Complex Analysis* [@SS03, ch. 3, §8, Exercise 20], printed beginning "This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions".
 
 The argument is the card's own; no retained solution set is cited on the card, and none was located for this exercise among the retained sets. It is checked against Stein and Shakarchi, Complex Analysis (2003), Chapter 3 Exercise 20, and follows the printed hint to use the mean-value property.
 
