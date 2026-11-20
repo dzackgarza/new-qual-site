@@ -43,6 +43,7 @@ The harmonic series $\sum_n 1/n$ diverges, though $1/n\to0$: its partial sums sa
 
 ::: {.example title="Convergence does not imply absolute convergence"}
 $\sum_n (-1)^{n+1}/n$ converges by the alternating series test, and $\sum_n 1/n$ diverges.
+By [[T-REARR|Riemann's rearrangement theorem]] the terms of a series that converges but not absolutely can be rearranged to any prescribed pair of limit points, so the sum of this one is a property of the order of its terms and not of the set of them.
 
 :::
 
