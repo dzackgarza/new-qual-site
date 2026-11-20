@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step covering the case $x_1\le x_2<1/n$ in the Lipschitz argument was the card's only
+    step with no proof body; it now carries one, using that $f_n$ is defined to be identically
+    $0$ on $[0,1/n]$. Nothing else on the card is changed; the other two cases, the
+    Arzelà--Ascoli step and the passage to the limit stand as they were.
 ---
 
 ::: {.problem}
@@ -95,8 +103,11 @@ $f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $\abs{f_n(x_2)} \leq x_2 - 1/n$ 
 
 ::: {.pf-step #lipschitz-case-both-below}
 For $x_1 \leq x_2 < 1/n$, both values are $0$.
-:::
 
+::: pf-proof
+On $[0,1/n]$ the function $f_n$ is defined to be identically $0$, and both $x_1$ and $x_2$ lie in that interval, so $f_n(x_1)=f_n(x_2)=0$ and $\abs{f_n(x_2)-f_n(x_1)}=0\le x_2-x_1$.
+:::
+:::
 
 ::: pf-qed
 Taking $x_1 \leq x_2$, steps [](#lipschitz-case-both-above){.pf-ref}, [](#lipschitz-case-straddle){.pf-ref}, and [](#lipschitz-case-both-below){.pf-ref} cover the three possible positions of $x_1, x_2$ relative to $1/n$.
