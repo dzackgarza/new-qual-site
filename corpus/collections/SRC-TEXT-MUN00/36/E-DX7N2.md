@@ -145,14 +145,14 @@ audit:
 
 ::: {.exercise}
 
-Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics), printed p. 228.
+Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics).
 
 Which of these properties are preserved by continuous maps?
 :::
 
 ::: {.solution}
 
-The survey is the card's own; no published solution of supplementary Exercise 3 of §36 was located, and the sets searched are recorded in the audit trail. The properties are numbered as in Exercise 1 of the Supplementary Exercises (Review of the Basics), printed p. 228.
+The survey is the card's own; no published solution of supplementary Exercise 3 of §36 was located, and the sets searched are recorded in the audit trail. The properties are numbered as in Exercise 1 of the Supplementary Exercises (Review of the Basics).
 
 ::: pf
 
