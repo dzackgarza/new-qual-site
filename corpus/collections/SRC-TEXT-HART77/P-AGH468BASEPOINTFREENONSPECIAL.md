@@ -35,6 +35,38 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: Hartshorne IV.6.8 prints the equivalence for every degree d, which fails for the zero divisor on P^1 (g=d=0). The statement now assumes d>0.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The gap in step s3 is closed by numbered statements, and the citation that did not carry it is
+    gone. s3 asserted that Pic^0(X) = Jac(X) is an irreducible variety of dimension g, citing the
+    internal card T-CRVJACFUN; that card's own citations are a definition of the Picard functor and
+    Riemann-Roch, and neither gives existence, completeness or the dimension, so the step was
+    resting on an unproved result. Hartshorne states the Jacobian by a universal property in
+    IV.4.10 and proves existence only for genus one, in Theorem IV.4.11.
+
+    The step now cites Milne, *Jacobian Varieties*, Chapter VII of *Arithmetic Geometry*: Theorem
+    1.1 for existence and representability of Pic^0, with Corollary 4.3 and the closing paragraph
+    of its section 4 for the construction and for the morphism C^(r) -> J that steps s4 and s5 take
+    images of; Proposition 2.1 for the tangent space H^1(C, O_C) and hence dim J = g; and
+    Proposition 7.4 with Theorem 7.6 for completeness. Irreducibility is that of a variety, and the
+    genus is dim_k H^1(X, O_X) by Hartshorne's Proposition IV.1.1. Smoothness of the Jacobian is not
+    used by this card and is not claimed: it appears in the sources only as prose or through a
+    separate representability theorem, and the dimension count here needs no tangent space of
+    Pic^d beyond its dimension.
+
+    What was checked and what was not. The numbered statements were read in Milne's own TeX file
+    (jmilne.org/math/xnotes/JVs.pdf), whose abstract states that the numbering is unchanged from the
+    published chapter; the published scan is image-only and was not OCR'd. Theorem 1.1, Corollary
+    4.3, Proposition 2.1, Proposition 7.4 and Theorem 7.6 were each opened at their numbers. Not
+    checked: the printed volume itself, and Boschi-Lutkebohmert-Raynaud, whose Chapter 9 supplies the
+    same facts as Proposition 3 of 9.2 and Theorem 3 of 8.4 and which is retained here but was not
+    needed once Milne's statements did the work.
+
+    Unchanged and still correct: s1 (the only-if direction), s2, s4, s5, s6 and s7, which were read
+    in this pass; Riemann-Roch is Theorem IV.1.3 and Serre duality Theorem III.7.6, cited by their
+    numbers. No page, PDF page or page offset appears on this card.
 ---
 
 ::: {.problem}
@@ -153,11 +185,27 @@ $$
 \xrightarrow{\sim}
 \Pic^d(X).
 $$
-By [[T-CRVJACFUN]],
-$$
-\Pic^0(X)=\Jac(X)
-$$
-is an irreducible variety of dimension $g$.  Hence the same is true of
+
+That $\Pic^0(X)$ is an irreducible complete variety of dimension $g$ is the
+existence theorem for the Jacobian, which the book states and does not prove.
+The numbered statements used are Milne's, in *Jacobian Varieties*, Chapter VII
+of *Arithmetic Geometry*:
+
+- **Theorem 1.1.** There is an abelian variety $J$ over $k$ and a morphism of
+  functors $\gamma\colon P^0_C\to J$ that is an isomorphism whenever $C(T)$ is
+  nonempty, so $J$ represents $\Pic^0$; the construction is the one of
+  Corollary 4.3, whose closing paragraph also records that the natural
+  transformations $\operatorname{Div}^r_C\to P^r_C\to P^0_C$ induce a morphism
+  $C^{(r)}\to J$, which is the morphism steps [](#s4){.pf-ref} and
+  [](#s5){.pf-ref} take images of.
+- **Proposition 2.1.** The tangent space to $J$ at $0$ is canonically
+  $H^1(C,\OO_C)$, and consequently $\dim J=g$, where $g=\dim_k H^1(X,\OO_X)$
+  is the genus by Hartshorne's Proposition IV.1.1.
+- **Proposition 7.4**, with **Theorem 7.6** identifying the two constructions,
+  the variety $J$ is complete.
+
+An abelian variety is a variety, hence irreducible, so $\Pic^0(X)=\Jac(X)$ is
+an irreducible complete variety of dimension $g$, and the same is true of
 $\Pic^d(X)$.
 
 :::
@@ -177,7 +225,7 @@ $\Pic^d(X)$.
 
 ::: pf-proof
 
-By Serre duality,
+By Serre duality, Theorem III.7.6,
 $$
 h^1(X,L)=h^0(X,K\otimes L^{-1}).
 $$
