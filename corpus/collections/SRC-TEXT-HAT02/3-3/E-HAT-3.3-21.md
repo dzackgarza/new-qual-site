@@ -398,6 +398,30 @@ audit:
     the question — the point the rejected Stanford paragraph missed. Not claimed: a published
     solution of the bracketed question; the reading here is of the card's own assembly from those
     three theorems.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the answer to the bracketed question. Checked
+    that the two sides really separate in degree two. Left: $H_c^2(\ZZ\times\RR;\ZZ)$ is the direct
+    limit of $H^2(X,X\setminus K)$ over compact $K$; the rectangles $K_N$ are cofinal and
+    $X\setminus K_N$ meets every line, so the pair splits over the lines and only the $2N+1$ lines
+    meeting $K_N$ contribute, each by $H^q(\RR,\RR\setminus J_N)$, which is $\ZZ$ at $q=1$ and $0$
+    at $q=0,2$ because $\RR$ is connected and contractible; every stage of the degree-two limit is
+    therefore $0$, not merely eventually $0$. Right: $X^+$ is the Hawaiian earring, since a
+    neighbourhood of $\infty$ contains all but finitely many whole lines and each line closes up to a
+    circle through $\infty$; in the pair sequence of $(E,\infty)$ the terms $H^q(\{\infty\})$
+    vanish for $q\ge1$, so $H^2(E,\infty)\to H^2(E)$ is injective and, the next term being
+    $H^2(\{\infty\})=0$, also surjective; universal coefficients injects
+    $\operatorname{Ext}(H_1(E;\ZZ),\ZZ)$ into $H^2(E;\ZZ)$; and if $H_1(E)\cong\QQ\oplus K$, which is
+    what Eda--Kawamura's Theorem 3.1, printed p. 307, gives with the $\kappa=\abs{I^{\NN}}$ terms
+    $\QQ$, then $\operatorname{Ext}(H_1(E),\ZZ)\cong\operatorname{Ext}(\QQ,\ZZ)\oplus
+    \operatorname{Ext}(K,\ZZ)$, and $\operatorname{Ext}(\QQ,\ZZ)\cong\RR\ne0$ by Wiegold, printed
+    pp. 341--342. So the two groups differ and the evident map is not an isomorphism: the answer to
+    the bracketed question is no. Checked that this is the degree in which the card claims it and
+    that nothing is claimed in degree one, where both sides are free on countably many generators
+    (Frankland, Theorem 1.3, printed p. 2, for the right-hand side) and the card says only that the
+    question cannot be decided there. Not claimed: a published solution of the bracketed question.
 - event: source-corrected
   by: claude
   date: 2026-11-19
