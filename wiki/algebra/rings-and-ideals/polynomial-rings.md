@@ -24,7 +24,7 @@ Throughout, $R$ is a commutative ring with identity.
 
 ## Evaluation
 
-For $a\in R$, evaluation at $a$ is the ring homomorphism $R[x]\to R$ that fixes $R$ and sends $x$ to $a$; its kernel is the ideal of polynomials vanishing at $a$.
+[[D-RZ3WP]]
 
 [[P-CH10-55]]
 
