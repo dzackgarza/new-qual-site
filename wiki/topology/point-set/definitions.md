@@ -363,8 +363,6 @@ If spaces $X$ and $Y$ both deformation retract onto a common subspace $A$, then 
 
 [[D-OH4ON]]
 
-[[D-4VGAW]]
-
 [[D-6B77N]]
 
 [[D-NODFN]]
