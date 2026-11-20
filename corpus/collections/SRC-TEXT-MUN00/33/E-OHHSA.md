@@ -58,6 +58,19 @@ audit:
     not completely regular. What the repair changes in the audit trail: the earlier note's "four
     types" are three headings here, types (iii) and (iv) being handled together. Not checked: the
     folio, the checkout's extraction carrying only three page-range markers at this pass.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (a) is converted to numbered steps, the first of three commits on this card; parts (b) and (c)
+    remain prose and are converted in the next two commits. Part (a) is now three steps, each with a
+    `pf-proof`: the four basis families (i)--(iv) cover $X$; the intersection condition in its four
+    cases, the type-(iii) and type-(iv) cutoffs at $a$ and $b$, the finite exceptional sets at a top
+    point $p_{n,k}$, a short horizontal segment at any other point, and the half-plane shortening when
+    a type-(iii) or type-(iv) set meets a type-(i) or type-(ii) one; and the conclusion that these are
+    the two conditions for a basis (Munkres, §13). The statement and the four basis types are cited by
+    number, no page. Not checked in this commit: nothing of parts (b) and (c) was touched or re-read.
+
 ---
 
 ::: {.exercise}
@@ -102,9 +115,36 @@ Conclude that $f(a) = f(b)$.
 :::
 
 ::: {.solution}
-(a) The four families cover $X$: ordinary points of the line segments and semicircles have type-(i) neighborhoods, each top point $p_{n,k}$ has type-(ii) neighborhoods, and $a,b$ have type-(iii) and type-(iv) neighborhoods.
+::: pf
 
-We verify the basis-intersection condition. At $a$, type-(iii) neighborhoods are nested after decreasing the even cutoff; similarly type-(iv) neighborhoods at $b$. At a top point $p_{n,k}$, intersecting any two basis neighborhoods containing it can be refined by deleting the union of the two finite exceptional sets from $C_{n,k}$. At any other point of $X$, a sufficiently short horizontal open segment avoids all finitely many excluded points and all top points involved, and lies inside the intersection. Intersections involving a type-(iii) or type-(iv) set and an ordinary or type-(ii) neighborhood are handled by shortening the latter within the relevant half-plane. Hence the stated sets form a basis.
+::: {.pf-step #basis-covers}
+(a) The four families (i)--(iv) cover $X$.
+
+::: pf-proof
+An ordinary point of a segment $L_m$ or of a set $C_{n,k}$, other than a top point $p_{n,k}$, lies in a basis element of type (i): a short horizontal open segment about it contains no $p_{n,k}$. Each top point $p_{n,k}$ lies in the type-(ii) set $C_{n,k}$ itself, which is that set with no points deleted. The point $a$ lies in the type-(iii) set $B_m$ for every even $m$ larger than the first coordinate of every point considered so far, and in particular for $m$ larger than any given first coordinate, and $b$ lies in the type-(iv) sets similarly.
+:::
+
+:::
+
+::: {.pf-step #basis-intersection}
+(a) The intersection of two basis elements containing a point $x$ contains a basis element containing $x$, so the four families form a basis for a topology on $X$.
+
+::: pf-proof
+Four cases. If $x=a$, the type-(iii) sets $B_m$ decrease with $m$, so the smaller of the two cutoffs gives a $B_m$ inside both; the case $x=b$ with type-(iv) sets is the same with the order reversed. If $x=p_{n,k}$, intersecting two basis elements containing it can be refined by deleting from $C_{n,k}$ the union of the two finite exceptional sets, which is again a type-(ii) set containing $p_{n,k}$. If $x$ is any other point of $X$, a sufficiently short horizontal open segment about $x$ avoids the finitely many excluded points and the finitely many top points of the two basis elements, and lies inside their intersection; that is a type-(i) set containing $x$. An intersection of a type-(iii) or type-(iv) set with an ordinary or type-(ii) neighbourhood is handled by shortening the latter inside the half-plane the former prescribes, which keeps a type-(i) or type-(ii) set containing $x$.
+:::
+
+:::
+
+::: {.pf-step #part-a}
+(a) The families (i)--(iv) are a basis for a topology on $X$.
+
+::: pf-proof
+Step [#basis-covers]{.pf-ref} gives the covering condition and step [#basis-intersection]{.pf-ref} the intersection condition, which are the two conditions for a basis of a topology (Munkres, §13).
+:::
+
+:::
+
+:::
 
 (b) For any continuous $f:X\to\RR$ and $c\in\RR$,
 $$
