@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Page corrected. Example 4.11, "Cellular Approximation for Pairs", is on printed p. 351, not
@@ -101,7 +111,7 @@ Show that $[X, S^n] \approx H^n(X; \ZZ)$ if $X$ is an $n$-dimensional CW complex
 :::
 
 ::: {.solution}
-Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$ built as the hint prescribes, so that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Cellular approximation makes every map out of the $n$-dimensional $X$ land in $S^n$, which gives surjectivity, and makes every homotopy out of $X\times I$ land in $K(\ZZ,n)^{n+1}=S^n$, which gives injectivity; representability of $H^n(-;\ZZ)$ finishes. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 5**, printed p. 25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which builds $K(\ZZ,n)$ from $S^n$ by attaching cells of dimension $\ge n+2$, obtains injectivity and surjectivity from cellular approximation, and concludes through $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$. The card states the identification of the unbased and based class sets that the argument uses.
+Take $j\colon S^n\to K(\ZZ,n)$ the inclusion of the $n$-skeleton in a $K(\ZZ,n)$ built as the hint prescribes, so that $K(\ZZ,n)^k=S^n$ for $n\le k\le n+1$. Cellular approximation makes every map out of the $n$-dimensional $X$ land in $S^n$, which gives surjectivity, and makes every homotopy out of $X\times I$ land in $K(\ZZ,n)^{n+1}=S^n$, which gives injectivity; representability of $H^n(-;\ZZ)$ finishes. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 5** of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which builds $K(\ZZ,n)$ from $S^n$ by attaching cells of dimension $\ge n+2$, obtains injectivity and surjectivity from cellular approximation, and concludes through $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$. The card states the identification of the unbased and based class sets that the argument uses.
 
 ::: pf
 
@@ -119,7 +129,7 @@ Begin with $S^n$, whose only nonzero homotopy group is $\pi_n=\ZZ$. Inductively,
 $j_*\colon[X,S^n]\to[X,K(\ZZ,n)]$ is surjective.
 
 ::: pf-proof
-Let $f\colon X\to K(\ZZ,n)$ be any map, with $X$ $n$-dimensional. By cellular approximation (Theorem 4.8, printed p.~349) $f$ is homotopic to a cellular map $f'$, and a cellular map out of an $n$-dimensional complex lands in the $n$-skeleton of the target, which is $S^n$ by step [](#build){.pf-ref}. So $f'$ is a map $X\to S^n$ with $j\,f'\simeq f$, i.e. $j_*[f']=[f]$.
+Let $f\colon X\to K(\ZZ,n)$ be any map, with $X$ $n$-dimensional. By cellular approximation (Theorem 4.8) $f$ is homotopic to a cellular map $f'$, and a cellular map out of an $n$-dimensional complex lands in the $n$-skeleton of the target, which is $S^n$ by step [](#build){.pf-ref}. So $f'$ is a map $X\to S^n$ with $j\,f'\simeq f$, i.e. $j_*[f']=[f]$.
 :::
 
 :::
@@ -129,7 +139,7 @@ Let $f\colon X\to K(\ZZ,n)$ be any map, with $X$ $n$-dimensional. By cellular ap
 $j_*$ is injective.
 
 ::: pf-proof
-Let $c_0,c_1\colon X\to S^n$ be cellular with $j\,c_0\simeq j\,c_1$, and let $G\colon X\times I\to K(\ZZ,n)$ be a homotopy. On the subcomplex $X\times\partial I$ the map $G$ is $j\,c_0$ and $j\,c_1$, hence cellular. Since $X\times I$ is $(n+1)$-dimensional, cellular approximation for the pair (Example 4.11, printed p.~351) gives a cellular $G'$ homotopic to $G$ relative to $X\times\partial I$, and a cellular map out of an $(n+1)$-dimensional complex lands in $K(\ZZ,n)^{n+1}=S^n$ by step [](#build){.pf-ref}. So $G'$ is a homotopy in $S^n$ from $c_0$ to $c_1$, and the two classes agree.
+Let $c_0,c_1\colon X\to S^n$ be cellular with $j\,c_0\simeq j\,c_1$, and let $G\colon X\times I\to K(\ZZ,n)$ be a homotopy. On the subcomplex $X\times\partial I$ the map $G$ is $j\,c_0$ and $j\,c_1$, hence cellular. Since $X\times I$ is $(n+1)$-dimensional, cellular approximation for the pair (Example 4.11) gives a cellular $G'$ homotopic to $G$ relative to $X\times\partial I$, and a cellular map out of an $(n+1)$-dimensional complex lands in $K(\ZZ,n)^{n+1}=S^n$ by step [](#build){.pf-ref}. So $G'$ is a homotopy in $S^n$ from $c_0$ to $c_1$, and the two classes agree.
 :::
 
 :::
@@ -149,7 +159,7 @@ Surjective by step [](#surj){.pf-ref} and injective by step [](#inj){.pf-ref}; a
 $[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$ for a CW complex $X$ and $n\ge1$.
 
 ::: pf-proof
-Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of §4.3 (printed p.~393).
+Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natural bijection $[X,K(\ZZ,n)]\to H^n(X;\ZZ)$, where $\iota\in H^n(K(\ZZ,n);\ZZ)$ is the fundamental class; this is the representability theorem of §4.3.
 :::
 
 :::
@@ -159,7 +169,7 @@ Eilenberg--MacLane spaces represent cohomology: $[f]\mapsto f^*\iota$ is a natur
 $[X,S^n]\cong H^n(X;\ZZ)$ for every $n$-dimensional CW complex $X$ and every $n\ge1$.
 
 ::: pf-proof
-Composing the bijection of step [](#bij){.pf-ref} with step [](#represent){.pf-ref} gives $[X,S^n]\cong[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$, which is the assertion of the exercise. Two brackets are in play and coincide here: Theorem 4.57 (printed p. 393) is stated for based homotopy classes $\langle X,K(\ZZ,n)\rangle$, while the exercise writes $[X,S^n]$ for unbased ones. For a CW complex $X$ and a path-connected $Y$ the unbased classes are the orbits of $\langle X,Y\rangle$ under the action of $\pi_1(Y)$, and here that action is trivial: $\pi_1(S^n)=0$ for $n\ge2$, and for $n=1$ the action is conjugation in the abelian group $\pi_1(S^1)=\ZZ$. So $[X,S^n]=\langle X,S^n\rangle$, and the bijections above identify all three. The hypothesis $n\ge1$ is the one under which the hint's construction starts from $S^n$ and under which representability is stated; the exercise is posed for $n$-dimensional complexes with $n\ge1$.
+Composing the bijection of step [](#bij){.pf-ref} with step [](#represent){.pf-ref} gives $[X,S^n]\cong[X,K(\ZZ,n)]\cong H^n(X;\ZZ)$, which is the assertion of the exercise. Two brackets are in play and coincide here: Theorem 4.57 is stated for based homotopy classes $\langle X,K(\ZZ,n)\rangle$, while the exercise writes $[X,S^n]$ for unbased ones. For a CW complex $X$ and a path-connected $Y$ the unbased classes are the orbits of $\langle X,Y\rangle$ under the action of $\pi_1(Y)$, and here that action is trivial: $\pi_1(S^n)=0$ for $n\ge2$, and for $n=1$ the action is conjugation in the abelian group $\pi_1(S^1)=\ZZ$. So $[X,S^n]=\langle X,S^n\rangle$, and the bijections above identify all three. The hypothesis $n\ge1$ is the one under which the hint's construction starts from $S^n$ and under which representability is stated; the exercise is posed for $n$-dimensional complexes with $n\ge1$.
 :::
 
 :::

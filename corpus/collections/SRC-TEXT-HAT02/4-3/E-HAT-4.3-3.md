@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Page locator corrected. The solution cited the exercise at printed p. 391, which is the page
@@ -57,7 +67,7 @@ Show that $S^1$ is a retract of $X$.
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.3 Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 3, printed p. 419.
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.3 Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 3.
 
 Let $i\colon S^{1}\hookrightarrow X$ be the inclusion of the given subcomplex and $i_{*}\colon H_{1}(S^{1};\ZZ)\to H_{1}(X;\ZZ)$ the induced map, which by hypothesis is injective with image a direct summand isomorphic to $\ZZ$. Fix a generator $\iota\in H^{1}(S^{1};\ZZ)$.
 

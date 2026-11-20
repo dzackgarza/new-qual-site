@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: source-checked
   by: claude
   date: 2026-11-20
@@ -82,7 +92,7 @@ audit:
 ---
 
 ::: {.solution}
-Steven V. Sam's retained set covers this exercise: *Solutions to Algebraic Topology* (2008), §4.3 Exercise 1, printed p.~24 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam computes both reduced homology groups, represents homotopy classes of maps into $\CP^\infty$ by $H^2(\RP^\infty;\ZZ)$ through Theorem 4.57, and states the consistency as $\Hom(\ZZ/2,\ZZ)=0$, that is, the class is seen by $\Ext$ and not by $\Hom$. He does not write out the naturality argument, which is the content of steps [](#natural){.pf-ref} and [](#coefficients){.pf-ref}; Hatcher's own pointer on printed p.~196 to an exercise at the end of §3.1 is to Exercise 11 there, printed p.~205, the Moore-space version of this same example. Write $\nu$ for the nonzero class of $H^2(\RP^\infty;\ZZ)\cong\ZZ/2$ and $c$ for the generator of $H^2(\CP^\infty;\ZZ)\cong\ZZ$.
+Steven V. Sam's retained set covers this exercise: *Solutions to Algebraic Topology* (2008), §4.3 Exercise 1, in `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam computes both reduced homology groups, represents homotopy classes of maps into $\CP^\infty$ by $H^2(\RP^\infty;\ZZ)$ through Theorem 4.57, and states the consistency as $\Hom(\ZZ/2,\ZZ)=0$, that is, the class is seen by $\Ext$ and not by $\Hom$. He does not write out the naturality argument, which is the content of steps [](#natural){.pf-ref} and [](#coefficients){.pf-ref}; Hatcher's own pointer to an exercise at the end of §3.1 is to Exercise 11 there, the Moore-space version of this same example. Write $\nu$ for the nonzero class of $H^2(\RP^\infty;\ZZ)\cong\ZZ/2$ and $c$ for the generator of $H^2(\CP^\infty;\ZZ)\cong\ZZ$.
 
 ::: pf
 
@@ -90,7 +100,7 @@ Steven V. Sam's retained set covers this exercise: *Solutions to Algebraic Topol
 $\widetilde H_i(\RP^\infty;\ZZ)$ is $\ZZ/2$ for $i$ odd and $0$ for $i$ even, and $\widetilde H_i(\CP^\infty;\ZZ)$ is $\ZZ$ for $i$ even and positive and $0$ for $i$ odd.
 
 ::: pf-proof
-$\RP^\infty$ has a CW structure with one cell in each dimension and $\CP^\infty$ one with a single cell in each even dimension (Example 0.5, printed pp.~6--7). For $\RP^\infty$ the cellular boundary is multiplication by $2$ in each even degree and zero in each odd degree, so the cellular chain complex is $\cdots\to\ZZ\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ\xrightarrow{2}\ZZ\to0$, whose homology is $\ZZ/2$ in odd degrees and $0$ in even positive degrees; this is the computation of Example 2.42, printed p.~144, for $\RP^n$, and $\RP^\infty$ is the union of the $\RP^n$. For $\CP^\infty$ there are no odd-dimensional cells, so every boundary map is zero and the homology is $\ZZ$ in each even positive degree. Both spaces are path connected, so $\widetilde H_0=0$ for both.
+$\RP^\infty$ has a CW structure with one cell in each dimension and $\CP^\infty$ one with a single cell in each even dimension (Example 0.5--7). For $\RP^\infty$ the cellular boundary is multiplication by $2$ in each even degree and zero in each odd degree, so the cellular chain complex is $\cdots\to\ZZ\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ\xrightarrow{2}\ZZ\to0$, whose homology is $\ZZ/2$ in odd degrees and $0$ in even positive degrees; this is the computation of Example 2.42, for $\RP^n$, and $\RP^\infty$ is the union of the $\RP^n$. For $\CP^\infty$ there are no odd-dimensional cells, so every boundary map is zero and the homology is $\ZZ$ in each even positive degree. Both spaces are path connected, so $\widetilde H_0=0$ for both.
 :::
 
 :::
@@ -99,7 +109,7 @@ $\RP^\infty$ has a CW structure with one cell in each dimension and $\CP^\infty$
 In degree $2$ the universal coefficient sequence reads $0\to\ZZ/2\to H^2(\RP^\infty;\ZZ)\to0\to0$ and $0\to0\to H^2(\CP^\infty;\ZZ)\to\ZZ\to0$.
 
 ::: pf-proof
-Theorem 3.2 (printed p.~195) gives the split exact sequence $0\to\Ext(H_{n-1}(X),G)\to H^n(X;G)\to\Hom(H_n(X),G)\to0$, and the paragraph following Corollary 3.3 (printed p.~196) records that the sequence is natural in $X$ while its splitting is not. Take $n=2$, $G=\ZZ$ and use step [](#homology){.pf-ref}: for $\RP^\infty$, $H_2=0$ and $H_1=\ZZ/2$, so the outer groups are $\Ext(\ZZ/2,\ZZ)\cong\ZZ/2$ and $\Hom(0,\ZZ)=0$; for $\CP^\infty$, $H_2=\ZZ$ and $H_1=0$, so they are $\Ext(0,\ZZ)=0$ and $\Hom(\ZZ,\ZZ)\cong\ZZ$. The class $c$ is the image of $\id_\ZZ$ under the surjection onto $\Hom(\ZZ,\ZZ)$, and $\nu$ generates the $\Ext$ group of $\RP^\infty$.
+Theorem 3.2 gives the split exact sequence $0\to\Ext(H_{n-1}(X),G)\to H^n(X;G)\to\Hom(H_n(X),G)\to0$, and the paragraph following Corollary 3.3 records that the sequence is natural in $X$ while its splitting is not. Take $n=2$, $G=\ZZ$ and use step [](#homology){.pf-ref}: for $\RP^\infty$, $H_2=0$ and $H_1=\ZZ/2$, so the outer groups are $\Ext(\ZZ/2,\ZZ)\cong\ZZ/2$ and $\Hom(0,\ZZ)=0$; for $\CP^\infty$, $H_2=\ZZ$ and $H_1=0$, so they are $\Ext(0,\ZZ)=0$ and $\Hom(\ZZ,\ZZ)\cong\ZZ$. The class $c$ is the image of $\id_\ZZ$ under the surjection onto $\Hom(\ZZ,\ZZ)$, and $\nu$ generates the $\Ext$ group of $\RP^\infty$.
 :::
 
 :::
@@ -108,7 +118,7 @@ Theorem 3.2 (printed p.~195) gives the split exact sequence $0\to\Ext(H_{n-1}(X)
 There is a map $f\colon\RP^\infty\to\CP^\infty$ with $f^*(c)=\nu\ne0$.
 
 ::: pf-proof
-$\CP^\infty$ is a $K(\ZZ,2)$ (Example 4.50, printed p.~380) and $\RP^\infty$ is a CW complex, so Theorem 4.57 (printed p.~393) gives a bijection $T\colon\langle\RP^\infty,\CP^\infty\rangle\to H^2(\RP^\infty;\ZZ)$ of the form $T([g])=g^*(\alpha)$ for a distinguished class $\alpha\in H^2(\CP^\infty;\ZZ)$. By step [](#uct){.pf-ref}, $H^2(\CP^\infty;\ZZ)\cong\ZZ$, so $\alpha=\pm c$; choose $f$ with $T([f])=\nu$, so that $f^*(c)=\pm\nu$, and replace $f$ by a representative of $T^{-1}(-\nu)$ if the sign is negative. Since $\nu\ne0$, this $f$ is nontrivial on integral cohomology in degree $2$.
+$\CP^\infty$ is a $K(\ZZ,2)$ (Example 4.50) and $\RP^\infty$ is a CW complex, so Theorem 4.57 gives a bijection $T\colon\langle\RP^\infty,\CP^\infty\rangle\to H^2(\RP^\infty;\ZZ)$ of the form $T([g])=g^*(\alpha)$ for a distinguished class $\alpha\in H^2(\CP^\infty;\ZZ)$. By step [](#uct){.pf-ref}, $H^2(\CP^\infty;\ZZ)\cong\ZZ$, so $\alpha=\pm c$; choose $f$ with $T([f])=\nu$, so that $f^*(c)=\pm\nu$, and replace $f$ by a representative of $T^{-1}(-\nu)$ if the sign is negative. Since $\nu\ne0$, this $f$ is nontrivial on integral cohomology in degree $2$.
 :::
 
 :::
@@ -126,7 +136,7 @@ By step [](#homology){.pf-ref}, in each degree the source is either $\ZZ/2$ and 
 No splitting of the universal coefficient sequence is natural in $X$, and this example proves it.
 
 ::: pf-proof
-A natural splitting would give, for every space $X$, a homomorphism $s_X\colon\Hom(H_2(X),\ZZ)\to H^2(X;\ZZ)$ with $h_Xs_X=\id$ and $s$ natural in $X$. Apply naturality to $f$: the square relating $f^*$ on cohomology to precomposition with $f_*$ on $\Hom$ commutes. The map $\Hom(H_2(\CP^\infty),\ZZ)=\ZZ\to\Hom(H_2(\RP^\infty),\ZZ)=0$ is zero because $H_2(\RP^\infty)=0$ by step [](#homology){.pf-ref}. Naturality would therefore give $f^*(c)=f^*s_{\CP^\infty}(\id)=s_{\RP^\infty}(0)=0$, contradicting $f^*(c)=\nu\ne0$ from step [](#map){.pf-ref}. The other outer group gives the same conclusion: the natural map $\Ext(H_1(\CP^\infty),\ZZ)=\Ext(0,\ZZ)=0\to\Ext(\ZZ/2,\ZZ)$ is also zero, so under any splitting both components of $c$ would map to zero. What holds is naturality of the exact sequence, as Theorem 3.2 and the paragraph on printed p.~196 assert; what fails is naturality of any splitting, which is the topological example Hatcher promises at that point and which this exercise supplies.
+A natural splitting would give, for every space $X$, a homomorphism $s_X\colon\Hom(H_2(X),\ZZ)\to H^2(X;\ZZ)$ with $h_Xs_X=\id$ and $s$ natural in $X$. Apply naturality to $f$: the square relating $f^*$ on cohomology to precomposition with $f_*$ on $\Hom$ commutes. The map $\Hom(H_2(\CP^\infty),\ZZ)=\ZZ\to\Hom(H_2(\RP^\infty),\ZZ)=0$ is zero because $H_2(\RP^\infty)=0$ by step [](#homology){.pf-ref}. Naturality would therefore give $f^*(c)=f^*s_{\CP^\infty}(\id)=s_{\RP^\infty}(0)=0$, contradicting $f^*(c)=\nu\ne0$ from step [](#map){.pf-ref}. The other outer group gives the same conclusion: the natural map $\Ext(H_1(\CP^\infty),\ZZ)=\Ext(0,\ZZ)=0\to\Ext(\ZZ/2,\ZZ)$ is also zero, so under any splitting both components of $c$ would map to zero. What holds is naturality of the exact sequence, as Theorem 3.2 and the paragraph following Corollary 3.3 assert; what fails is naturality of any splitting, which is the topological example Hatcher promises at that point and which this exercise supplies.
 :::
 
 :::

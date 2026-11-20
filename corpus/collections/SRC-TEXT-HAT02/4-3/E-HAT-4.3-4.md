@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Provenance and page corrected. The body's sentence "No retained solution set covers this
@@ -50,7 +60,7 @@ Given abelian groups $G$ and $H$ and CW complexes $K(G, n)$ and $K(H, n)$, show 
 :::
 
 ::: {.solution}
-The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 4**, printed p.~25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise: surjectivity from Lemma 4.31, and injectivity by producing homotopies on the characteristic maps of the $n$-cells and extending them with Lemma 4.7. The steps below follow that argument, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 4, printed p. 419.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 4** of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise: surjectivity from Lemma 4.31, and injectivity by producing homotopies on the characteristic maps of the $n$-cells and extending them with Lemma 4.7. The steps below follow that argument, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 4.
 
 ::: pf
 
@@ -58,7 +68,7 @@ The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* 
 $\langle K(G,n),K(H,n)\rangle\cong H^n(K(G,n);H)$.
 
 ::: pf-proof
-Theorem 4.57, printed p. 393, gives natural bijections $T:\langle X,K(H,n)\rangle\to H^n(X;H)$ for every CW complex $X$ and $n>0$, so the set of homotopy classes is in bijection with the cohomology of the source with coefficients in $H$.
+Theorem 4.57, gives natural bijections $T:\langle X,K(H,n)\rangle\to H^n(X;H)$ for every CW complex $X$ and $n>0$, so the set of homotopy classes is in bijection with the cohomology of the source with coefficients in $H$.
 :::
 
 :::
@@ -76,7 +86,7 @@ A $K(G,n)$ is $(n-1)$-connected by definition, so the Hurewicz theorem applies i
 $H^n(K(G,n);H)\cong\operatorname{Hom}(G,H)$.
 
 ::: pf-proof
-The universal coefficient theorem, Theorem 3.2 printed p. 195, gives the split exact sequence
+The universal coefficient theorem, Theorem 3.2, gives the split exact sequence
 $$
 0\to\operatorname{Ext}\bigl(H_{n-1}(K(G,n)),H\bigr)\to H^n(K(G,n);H)\to\operatorname{Hom}\bigl(H_n(K(G,n)),H\bigr)\to0,
 $$

@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Two clauses added after an independent read. Theorem 4.57 gives T([f]) = f^*(alpha) for a
@@ -66,7 +76,7 @@ audit:
 ---
 
 ::: {.solution}
-The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 2**, printed pp.~24--25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam multiplies maps pointwise into $S^1\subset\CC^\times$, observes that the product descends to homotopy classes, and concludes through the identity $(f+g)^*(\alpha)=f^*(\alpha)+g^*(\alpha)$ for the bijection $T([f])=f^*(\alpha)$ of Theorem 4.57; the identity itself he leaves to the definition of pullback, and step [](#kunneth){.pf-ref} supplies the computation. Let $u$ generate $H^1(S^1;\ZZ)\cong\ZZ$ and let $\mu\colon S^1\times S^1\to S^1$ be the multiplication. Take $X$ to be a based CW complex, the setting of Theorem 4.57; a general based space is replaced by a CW approximation.
+The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 2** in `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam multiplies maps pointwise into $S^1\subset\CC^\times$, observes that the product descends to homotopy classes, and concludes through the identity $(f+g)^*(\alpha)=f^*(\alpha)+g^*(\alpha)$ for the bijection $T([f])=f^*(\alpha)$ of Theorem 4.57; the identity itself he leaves to the definition of pullback, and step [](#kunneth){.pf-ref} supplies the computation. Let $u$ generate $H^1(S^1;\ZZ)\cong\ZZ$ and let $\mu\colon S^1\times S^1\to S^1$ be the multiplication. Take $X$ to be a based CW complex, the setting of Theorem 4.57; a general based space is replaced by a CW approximation.
 
 ::: pf
 
@@ -83,7 +93,7 @@ $S^1\subset\CC^\times$ is an abelian topological group with identity $1$. For ba
 $\mu^*u=\operatorname{pr}_1^*u+\operatorname{pr}_2^*u$ in $H^1(S^1\times S^1;\ZZ)$.
 
 ::: pf-proof
-$H^*(S^1;\ZZ)$ is free and finitely generated in each degree, so the Künneth formula (Theorem 3.15, printed p.~216) identifies $H^*(S^1\times S^1;\ZZ)$ with $H^*(S^1;\ZZ)\otimes H^*(S^1;\ZZ)$, and $H^1(S^1\times S^1;\ZZ)$ has the basis $\operatorname{pr}_1^*u,\operatorname{pr}_2^*u$. So $\mu^*u=a\operatorname{pr}_1^*u+b\operatorname{pr}_2^*u$ for integers $a,b$. Let $i_1(s)=(s,1)$ and $i_2(t)=(1,t)$. Since $\mu\,i_1=\id=\mu\,i_2$, applying $i_1^*$ gives $u=i_1^*\mu^*u=a\,i_1^*\operatorname{pr}_1^*u+b\,i_1^*\operatorname{pr}_2^*u=a\,u$, the second term vanishing because $\operatorname{pr}_2i_1$ is the constant map at $1$; hence $a=1$, and applying $i_2^*$ in the same way gives $b=1$.
+$H^*(S^1;\ZZ)$ is free and finitely generated in each degree, so the Künneth formula (Theorem 3.15) identifies $H^*(S^1\times S^1;\ZZ)$ with $H^*(S^1;\ZZ)\otimes H^*(S^1;\ZZ)$, and $H^1(S^1\times S^1;\ZZ)$ has the basis $\operatorname{pr}_1^*u,\operatorname{pr}_2^*u$. So $\mu^*u=a\operatorname{pr}_1^*u+b\operatorname{pr}_2^*u$ for integers $a,b$. Let $i_1(s)=(s,1)$ and $i_2(t)=(1,t)$. Since $\mu\,i_1=\id=\mu\,i_2$, applying $i_1^*$ gives $u=i_1^*\mu^*u=a\,i_1^*\operatorname{pr}_1^*u+b\,i_1^*\operatorname{pr}_2^*u=a\,u$, the second term vanishing because $\operatorname{pr}_2i_1$ is the constant map at $1$; hence $a=1$, and applying $i_2^*$ in the same way gives $b=1$.
 :::
 
 :::
@@ -101,7 +111,7 @@ By definition $fg=\mu\circ(f,g)$, so $(fg)^*u=(f,g)^*\mu^*u=(f,g)^*(\operatornam
 $T\colon\langle X,S^1\rangle\to H^1(X;\ZZ)$, $T([f])=f^*u$, is an isomorphism of groups.
 
 ::: pf-proof
-$S^1$ is a $K(\ZZ,1)$, its universal cover $\RR$ being contractible, so Theorem 4.57 (printed p.~393) with $G=\ZZ$ and $n=1$ gives a bijection $T([f])=f^*(\alpha)$ for a distinguished class $\alpha\in H^1(S^1;\ZZ)$. Since $H^1(S^1;\ZZ)=\ZZ u$, $\alpha=\pm u$, and steps [](#kunneth){.pf-ref} and [](#pullback){.pf-ref} hold with $u$ replaced by $\alpha$ throughout. By step [](#pullback){.pf-ref}, $T([f][g])=(fg)^*u=f^*u+g^*u=T([f])+T([g])$, so $T$ is a homomorphism, and a bijective homomorphism is an isomorphism.
+$S^1$ is a $K(\ZZ,1)$, its universal cover $\RR$ being contractible, so Theorem 4.57 with $G=\ZZ$ and $n=1$ gives a bijection $T([f])=f^*(\alpha)$ for a distinguished class $\alpha\in H^1(S^1;\ZZ)$. Since $H^1(S^1;\ZZ)=\ZZ u$, $\alpha=\pm u$, and steps [](#kunneth){.pf-ref} and [](#pullback){.pf-ref} hold with $u$ replaced by $\alpha$ throughout. By step [](#pullback){.pf-ref}, $T([f][g])=(fg)^*u=f^*u+g^*u=T([f])+T([g])$, so $T$ is a homomorphism, and a bijective homomorphism is an isomorphism.
 :::
 
 :::
