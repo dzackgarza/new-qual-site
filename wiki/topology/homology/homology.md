@@ -14,11 +14,7 @@ topics:
 
 ## Basic properties
 
-::: {.fact}
-$H_0(X)$ is a free abelian group on the set of path components of $X$.
-In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$ if $X$ has finitely many path components [@Hat02, Proposition 2.7].
-
-:::
+[[FF-2Q7RD]]
 
 [[PR-B6BB2]]
 
@@ -67,10 +63,7 @@ $$
 
 ## Mayer--Vietoris
 
-::: {.fact title="Splitting over a free quotient"}
-Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits, so $A\cong \ZZ^{n}\oplus \ZZ^m$.
-
-:::
+Since $\ZZ^m$ is free, the exact sequence splits by the [[D-SIUWU|splitting lemma]], so $A\cong \ZZ^{n}\oplus \ZZ^m$.
 
 [[D-FAIJX]]
 
