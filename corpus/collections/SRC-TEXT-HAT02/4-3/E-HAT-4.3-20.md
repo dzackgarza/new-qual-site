@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected. The body's sentence "none of the retained Hatcher sets solves Section 4.3
+    Exercise 20" was false: Sam solves Exercise 20 on printed p. 28, citing the discussion on
+    p. 409, and the body now cites him. The event of 2026-11-19 repeating the false sentence is
+    superseded. The repair of step #principal recorded in that event stands.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -98,7 +106,7 @@ Show that by applying the loop space functor to a Postnikov tower for $X$ one ob
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.3 Exercise 20. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 20, printed p. 420, and against the Postnikov tower theory of pp. 410--412 and Theorem 4.69 there.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 20**, printed p.~28 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise through the discussion of printed p. 409: looping a Postnikov tower gives a tower whose fibrations are principal. The steps below follow that argument and are checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 20, printed p. 420, and against the Postnikov tower theory of pp. 410--412 and Theorem 4.69 there.
 
 ::: pf
 
