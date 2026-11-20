@@ -75,11 +75,11 @@ The University of Georgia [study guide for the topology exam](https://math.uga.e
 
 - Simplicial, singular, cellular; computations and applications [@Hat02, chap. 2]; [@Mun84, chap. 4]
 
-- Degree of a map $S^n\to S^n$ [@Hat02, p. 134]; [@Mun84, sec. 21]
+- Degree of a map $S^n\to S^n$ [@Hat02, §2.2]; [@Mun84, sec. 21]
 
-- Euler characteristic [@Hat02, p. 146]
+- Euler characteristic [@Hat02, §2.2, Theorem 2.44]
 
-- Lefschetz fixed point theorem [@Hat02, p. 179]; [@Mun84, sec. 22]
+- Lefschetz fixed point theorem [@Hat02, Theorem 2C.3]; [@Mun84, sec. 22]
 
 ### References
 
