@@ -7,8 +7,7 @@ topics:
 
 # Sample syllabi
 
-Topic lists from algebraic geometry qualifying and oral examination syllabi.
-Each section names the syllabus document it transcribes; the reading pointers at its end are the texts that document recommends.
+Topic lists from algebraic geometry qualifying and oral examination syllabi, with the reading pointers each list recommends.
 Past examinations with transcribed questions are linked from [[algebraic-geometry/resources|Resources]].
 
 ## Harvard qualifying examination
@@ -67,7 +66,7 @@ Reading pointers: [@Har77, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1
 
 ## Schemes and cohomology, by Hartshorne section
 
-Source: the syllabus crops `Pasted image 20220517142240.png` and `Pasted image 20220517142250.png`.
+Source: Hartshorne, *Algebraic Geometry*, Chapters II.1--II.8 and III.1--III.7; the numbered items are the sections of those chapters.
 
 Schemes:
 
@@ -103,11 +102,9 @@ Cohomology:
 
 7. Serre duality: the dualizing sheaf and duality for a projective scheme, invertibility of the dualizing sheaf for a local complete intersection, the isomorphism between the dualizing sheaf and the canonical sheaf for a nonsingular projective variety.
 
-Reading pointers: [@Har77, Chapters II.1--II.8 and III.1--III.7].
-
 ## Schemes, cohomology and formal schemes
 
-Source: the syllabus crop `Pasted image 20220517142303.png`.
+Source: Hartshorne, *Algebraic Geometry*, Chapters II.1--II.9 and III.1--III.9; the numbered items are the sections of those chapters.
 
 Schemes:
 
@@ -149,11 +146,7 @@ Cohomology of sheaves:
 
 9. Flat morphisms.
 
-Reading pointers: [@Har77, Chapters II.1--II.8 and III.1--III.11].
-
 ## Varieties, schemes, cohomology and curves
-
-Source: the syllabus crops `Pasted image 20220517142612.png` and `Pasted image 20221012002702.png`.
 
 1. Varieties: quasiprojective varieties, regular and rational maps, the definition of singularities and analytic isomorphism, abstract nonsingular curves, intersections in projective space.
 
@@ -166,8 +159,6 @@ Source: the syllabus crops `Pasted image 20220517142612.png` and `Pasted image 2
 Reading pointers: [@Har77, Chapters I--IV; @Mir95, Chapters I--VIII].
 
 ## Complex algebraic surfaces
-
-Source: the syllabus crop `Pasted image 20220517142338.png`.
 
 1. Cohomology: the Riemann–Roch theorem, Noether's formula, the genus formula.
 
@@ -187,7 +178,7 @@ Reading pointers: [@GH94, Chapters 0--4; @Mir95, Chapters XI--XII; @Har92, Chapt
 
 ## Toric varieties
 
-Source: the syllabus crop `Pasted image 20220517142403.png`.
+Source: Fulton, *Introduction to Toric Varieties*, Sections 1.1--1.5, 2.1--2.6, 3.1--3.4, 5.0--5.2; the numbered items follow those sections.
 
 1. Definitions: convex polyhedral cones, geometry of convex sets, affine toric varieties, fans and toric varieties, toric varieties from polytopes.
 
@@ -197,11 +188,7 @@ Source: the syllabus crop `Pasted image 20220517142403.png`.
 
 4. Cohomology of smooth toric varieties: the Stanley–Reisner relation, self-intersection of invariant divisors.
 
-Reading pointers: [@Ful93, Sections 1.1--1.4, 2.1--2.6, 3.1--3.4, 5.0--5.2].
-
 ## Complex algebraic geometry (minor topic)
-
-Source: the syllabus crops `Pasted image 20220517142548.png` and `Pasted image 20221012003451.png`.
 
 Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
 
