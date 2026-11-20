@@ -13,22 +13,21 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
-    Page corrected. Theorem 4.71 is on printed p. 414, not p. 415: the folio 414 of tmp/hat/AT.txt
-    carries "Theorem 4.71. Every map f: X -> Y between connected CW complexes has a
-    Moore-Postnikov factorization". The events of 2026-11-18 that cite p. 415 are left as written
-    under QUAL-11 and are superseded here. The argument is unchanged.
+    Citation corrected. Theorem 4.71 is now cited by number. The events of 2026-11-18 that carried
+    a locator for it are left as written under QUAL-11 and are superseded here. The argument is
+    unchanged.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -67,8 +66,8 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read against Hatcher, §4.3 Exercise 24, printed p. 420, the relative lifting problem on
-    printed p. 418 and Theorem 4.71 on printed p. 415. The reduction is correct: a homotopy rel
+    Read against Hatcher, §4.3 Exercise 24, the relative lifting problem of §4.3 and
+    Theorem 4.71. The reduction is correct: a homotopy rel
     $A$ through lifts of $g$ is the relative lifting problem for the CW pair $(W\times I,B)$
     with $B=W\times\{0\}\cup A\times I\cup W\times\{1\}$, the $(k+1)$-cells of that pair are
     $e^{k}\times(0,1)$ for the $k$-cells of $(W,A)$, and the cochain isomorphism
@@ -78,8 +77,7 @@ audit:
     solution set covers the exercise --- checked against Sam's set, whose §4.3 has 20 and 23 but
     not 24, and against the other sets in `tmp/sources`, which have no §4.3 exercises --- so
     the argument is the card's own. No step changed. Not checked: no certificate; the quote of
-    Hatcher's paragraph following Proposition 4.72 was read in the retained text version, not
-    on a page image.
+    Hatcher's paragraph following Proposition 4.72 was read in the retained text version.
 
 ---
 

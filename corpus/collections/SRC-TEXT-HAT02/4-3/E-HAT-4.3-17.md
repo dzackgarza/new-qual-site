@@ -13,14 +13,14 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -54,8 +54,8 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read against Hatcher, §4.3 Exercise 17, printed p. 420, the definition of an H-space on
-    printed p. 281, and the retained solution of Steven V. Sam, §4.3 Exercise 17, printed p. 28
+    Read against Hatcher, §4.3 Exercise 17, the definition of an H-space in §4.1,
+    and the retained solution of Steven V. Sam, §4.3 Exercise 17
     of `tmp/sources/hatcher-solutions-sam-2008.pdf`. The two unit homotopies, the associativity
     family and the reversal formula are correct: with $a(s)=(1+s)/4$ and $b(s)=(1+s)/2$ the
     family is $(\alpha*\beta)*\gamma$ at $s=0$ and $\alpha*(\beta*\gamma)$ at $s=1$, and

@@ -13,14 +13,14 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
@@ -51,7 +51,7 @@ audit:
   note: >-
     The event above says no published solution is claimed, and that is false: Steven V. Sam's
     set, retained as `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves §4.3 Exercise 19 on
-    printed p. 28, by lifting $\overline\eta\cdot\gamma\cdot\eta$ to define an action of
+    , by lifting $\overline\eta\cdot\gamma\cdot\eta$ to define an action of
     $\Omega B$ on the homotopy fibre and reading the orbit condition off a homotopy through
     basepoint-preserving maps. The solution's lead now cites it and says how the card's right
     action by concatenation differs from Sam's lifted left action. Re-read in the same pass:

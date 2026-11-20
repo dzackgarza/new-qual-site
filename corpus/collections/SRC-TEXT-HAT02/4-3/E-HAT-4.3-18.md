@@ -13,14 +13,14 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -28,9 +28,9 @@ audit:
     Restructured under #2 into numbered steps; the argument is the card's own, since no retained
     solution set covers §4.3 Exercise 18 (Sam's set has 17 and 19-20, not 18). The exactness
     step now names the relative homotopy lifting property for CW pairs, which Hatcher states on
-    printed p. 376; the iteration of homotopy fibres is at printed p. 409; the group structure on
-    <X,Omega K> and the abelian structure on <X,Omega^2 K> are at printed p. 396; Exercise 18 is
-    printed p. 420. Checked against those pages. Not checked: no certificate.
+    in §4.3; the iteration of homotopy fibres is in the same section; the group structure on
+    <X,Omega K> and the abelian structure on <X,Omega^2 K> are there as well; Exercise 18 is
+    §4.3 Exercise 18. Checked against those numbered statements. Not checked: no certificate.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19

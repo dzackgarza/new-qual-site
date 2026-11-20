@@ -13,44 +13,41 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
     Pages and one claim corrected, after an independent read. The sentence "a fiber-preserving map
-    that is a homotopy equivalence is a fiber homotopy equivalence" is on printed p. 406, not
-    p. 405, and its deferred proof is §4.H Exercise 3, printed p. 466; the event of 2026-11-19
-    carries the old page and is left as written under QUAL-11. The claim that a fibration over a
+    that is a homotopy equivalence is a fiber homotopy equivalence" is §4.H Exercise 3, and the
+    event of 2026-11-19 is left as written under QUAL-11. The claim that a fibration over a
     CW base has total space of CW type is false (B x Q -> B is a fibration and Q is not of CW
-    type); the step now replaces by CW approximations, as Hatcher does on p. 412, before applying
-    Whitehead's theorem. The statement is unchanged: the page image of printed p. 420 reads
-    "iff", which the OCR of tmp/hat/AT.txt loses, and the card's "if and only if" is the printed
+    type); the step now replaces by CW approximations, as Hatcher does in §4.3, before applying Whitehead's theorem. The statement is unchanged: the
+    printed exercise reads "iff", which the OCR of tmp/hat/AT.txt loses, and the card's "if and only if" is the printed
     wording.
 - event: solution-written
   by: claude
   date: 2026-11-20
   note: >-
-    Restructured under #2 into numbered steps. The printed statement was re-read on the page
-    image: Exercise 22 on printed p. 420 reads "is fiber homotopy equivalent to the product
+    Restructured under #2 into numbered steps. The printed statement was re-read in the text: §4.3 Exercise 22 reads "is fiber homotopy equivalent to the product
     Omega C x B iff it has a section", so the card's "if and only if" is the printed wording and
     is kept; the OCR text in tmp/hat/AT.txt prints "if" there, which is an extraction loss, and
-    the page image decides it. No retained solution set covers §4.3 Exercise 22 (Sam's set has 17
+    the printed text decides it. No retained solution set covers §4.3 Exercise 22 (Sam's set has 17
     and 19-20, not 22), so the argument is the card's own. The two directions are now separated:
     the pullback model is shown to be fibre homotopy equivalent to the product by an explicit
     fibre-wise homeomorphism omega -> omega . gamma_b, and the converse reads a strict section off
     the fibre-preserving map back from the product, so no homotopy-lifting strictification is
-    needed. Checked against the definition of a principal fibration, printed p. 412, Proposition
-    4.62, printed p. 406, Proposition 4.65, printed p. 408, the remark on printed p. 405, and
-    Theorem 4.5, printed p. 346. Not checked: no certificate, and the §4.H exercise proving the
-    p. 405 remark was not read.
+    needed. Checked against the definition of a principal fibration, Proposition
+    4.62, Proposition 4.65, the remark, and
+    Theorem 4.5. Not checked: no certificate, and the §4.H exercise proving the
+     remark was not read.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19

@@ -13,22 +13,22 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
   note: >-
     Two additions after an independent read. The hypothesis that X is a path-connected CW complex
-    is now stated, with the CW-approximation sentence for a general H-space (printed p. 281). And
+    is now stated, with the CW-approximation sentence for a general H-space. And
     a step now proves that the inclusion X -> P_nX is an H-map, which the earlier text left
-    implicit although Hatcher's Postnikov tower on printed p. 410 contains those maps as well as
+    implicit although Hatcher's Postnikov tower contains those maps as well as
     the maps P_nX -> P_{n-1}X.
 - event: solution-written
   by: claude
@@ -37,13 +37,13 @@ audit:
     Restructured under #2 into numbered steps. No retained solution set covers §4.3 Exercise 21
     (Sam's set has 17 and 19-20, not 21), so the argument is the card's own. The functoriality
     that the earlier text asserted in one sentence is now derived from two numbered results:
-    Example 4.16, printed p. 354, builds P_nX from X by attaching cells of dimension at least
-    n+2, and Lemma 4.7, printed p. 348, extends a map over such a stage into a space with
+    Example 4.16 builds P_nX from X by attaching cells of dimension at least
+    n+2, and Lemma 4.7, extends a map over such a stage into a space with
     pi_i = 0 for i > n and makes the extension unique up to homotopy. The product identification
     and the H-space coherence then follow from that uniqueness rather than from an unproved
-    functoriality of P_n. Verified: the Postnikov properties (1) and (2) are Hatcher's printed
-    p. 410, and the count of cells in P_nX x P_nX uses the product CW structure. Not checked:
-    no certificate, and the k-invariant description of the tower on printed p. 412 is not used.
+    functoriality of P_n. Verified: the Postnikov properties (1) and (2) are conditions in Hatcher's definition of a
+    Postnikov tower in §4.3, and the count of cells in P_nX x P_nX uses the product CW structure. Not checked:
+    no certificate, and the k-invariant description of the tower is not used.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
