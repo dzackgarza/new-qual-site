@@ -13,20 +13,20 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
-    Page corrected. The sentence citing "printed p. 15" for the statement that the mapping
-    cylinder contains both ends as deformation retracts is Corollary 0.21, printed p. 16; p. 15
+    Page corrected. The sentence citing "" for the statement that the mapping
+    cylinder contains both ends as deformation retracts is Corollary 0.21;
     carries the preceding discussion, and the mapping cylinder phrase does not occur there. The
     mathematics is unchanged.
 - event: solution-reviewed

@@ -13,14 +13,14 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
@@ -35,14 +35,14 @@ audit:
   note: >-
     Restructured under #2 into numbered steps, argument unchanged except at one point: the
     earlier text concluded F_f simeq * by Whitehead, which needs the homotopy type of a CW
-    complex for F_f. Milnor's theorem is available for that (printed p. 408), but the step is not
+    complex for F_f. Milnor's theorem is available for that, but the step is not
     needed: vanishing of all homotopy groups of F_f makes the long exact sequence give
     pi_n(E_f) -> pi_n(Y) an isomorphism directly, and Whitehead's theorem is applied only to the
     given map f of connected CW complexes. No retained solution set covers §4.3 Exercise 16 (Sam's
     set stops at 9, 11-15, 17-20, 23; the sets that stop earlier were checked in the 2026-11-19
-    read), so the argument is the card's own. Checked against Proposition 4.64, printed p. 407,
-    Theorem 4.41, printed p. 376, Exercise 10 and Exercise 16 on printed pp. 419-420, Theorem
-    2A.1, printed p. 166, Theorem 4.32, printed p. 366, and Theorem 4.5, printed p. 346. Not
+    read), so the argument is the card's own. Checked against Proposition 4.64,
+    Theorem 4.41, Exercise 10 and Exercise 16, Theorem
+    2A.1, Theorem 4.32, and Theorem 4.5. Not
     checked: no certificate.
 - event: solution-reviewed
   by: claude

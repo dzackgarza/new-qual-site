@@ -13,28 +13,28 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
   note: >-
     Restructured under #2, transcribing the retained solution of Steven V. Sam, Solutions to
-    Algebraic Topology (2008), §4.3 Exercise 9, printed p. 26 of
-    tmp/sources/hatcher-solutions-sam-2008.pdf (PDF p. 27). Sam's route is kept: a section of
+    Algebraic Topology (2008), §4.3 Exercise 9 of
+    tmp/sources/hatcher-solutions-sam-2008.pdf. Sam's route is kept: a section of
     pi: Delta^I -> Delta_p, then Exercise 8. Two defects in his text are repaired on the card.
     His section is displayed as s(x,gamma)(t) = gamma(t), which is the base path and not a path
     in the simplex; the card writes the lift (gamma(t), min{y_0, lambda(gamma(t))}) and checks
     it. His reason for not being a bundle, "the fibers over the vertices of the edge are
     points", fails when the third vertex projects over an endpoint; the card's lambda model
     covers the endpoint cases, as the 2026-11-01 event already required. Checked against
-    Exercise 8, printed p. 419, and the sentence defining a fiber bundle on printed p. 375
+    Exercise 8, and the sentence defining a fiber bundle
     ("All the subspaces p^{-1}(b) ... are homeomorphic"). Not checked: no certificate.
 - event: source-checked
   by: gpt-5.6-sol

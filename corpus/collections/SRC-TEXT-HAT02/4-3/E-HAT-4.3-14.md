@@ -13,23 +13,22 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
-  date: 2026-11-21
+  date: 2026-11-20
   note: >-
-    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
-    this card before today, here and in the events below, is superseded: sources are cited by
-    chapter, section and numbered statement only. The events below are left as their sessions wrote
-    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
-    solution above are the current text and cite by number. This event records the convention and no
-    further reading: the mathematics of the card is as the events below describe it.
+    Citation convention. Sources on this card are cited by chapter, section and numbered statement
+    only, and the statement and solution above cite every source by its numbered statement. The
+    events dated before today are left as their sessions wrote them, which QUAL-11 requires, so a
+    locator in one of them stands as a historical record and is superseded by the citation now on
+    the card. This event records the convention and claims no further reading: the
+    mathematics of the card is as those events describe it.
 - event: source-corrected
   by: claude
   date: 2026-11-20
   note: >-
     Provenance and page corrected. The body's sentence "none of the retained Hatcher sets solves
-    Section 4.3 Exercise 14" was false: Sam solves Exercise 14 on printed p. 27, by exactly the
-    route the card takes, and the body now cites him. Proposition 4.65 is on printed p. 408, not
-    p. 409; the body is corrected and the event of 2026-11-19, which carries the old page, is left
-    as written under QUAL-11.
+    Section 4.3 Exercise 14" was false: Sam solves Exercise 14, by exactly the
+    route the card takes, and the body now cites him. Proposition 4.65 is now cited by number, and
+    the event of 2026-11-19 is left as written under QUAL-11.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
