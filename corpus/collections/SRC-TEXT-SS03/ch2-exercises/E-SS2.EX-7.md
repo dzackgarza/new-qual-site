@@ -41,7 +41,7 @@ Note. In connection with this result, see the relationship between the diameter 
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 2, Exercise 7. Here $\DD=\theset{\abs{z}<1}$, $f$ is holomorphic on a neighbourhood of the closed disc $\overline{D_r}$ for each $r<1$, and $d=\sup_{z,w\in\DD}\abs{f(z)-f(w)}$ is the diameter of the image; $d<\infty$ is not assumed in advance, and the steps below show the bound only has content when it is finite.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 2, Exercise 7. Here $\DD=\theset{\abs{z}<1}$, $f$ is holomorphic on a neighbourhood of the closed disc $\overline{D_r}$ for each $r<1$, and $d=\sup_{z,w\in\DD}\abs{f(z)-f(w)}$ is the diameter of the image; $d<\infty$ is not assumed in advance, and the steps below show the bound only has content when it is finite.
 
 ::: pf
 
