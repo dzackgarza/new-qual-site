@@ -35,12 +35,6 @@ $$
 
 [[PR-XUVZY]]
 
-::: {.remark}
-For $p=\infty$, $\abs{f+g}\leq\norm f_\infty+\norm g_\infty$ almost everywhere, so $\norm{f+g}_\infty\leq\norm f_\infty+\norm g_\infty$.
-Together with the case $1\leq p<\infty$, Minkowski's inequality is the triangle inequality for $\norm{\wait}_p$, so $L^p$ is a normed space for $1\leq p\leq\infty$.
-
-:::
-
 [[PR-2C3SZ]]
 
 ## Elementary inequalities
