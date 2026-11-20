@@ -464,6 +464,47 @@ audit:
     QUAL-11, and they remain the record of what was read. Checked: the divisibility for both
     parities, the six tuple sums, and that no other step asserts divisibility by $8$. Not checked:
     no source was re-read for this event, and no geometric step of either solution was touched.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read the whole card as it now stands, the problem statement, the published solution, the
+    independent proof and the remark, against Hartshorne V.4.9 and the numbered statements of the
+    two articles and of the companion cards it cites, and found the proof correct; no step changed
+    in this pass. Checked in the published solution: that Exercise V.4.8 gives D.L >= 0 on the 27
+    lines and D^2 > 0; that the Hodge index theorem (V.1.9) gives 3D^2 <= (D.H)^2 = d^2 and hence
+    g <= 1 + d(d-3)/6, which is the hypothesis of Theorem 2.5; that r >= 2 because F_d(1) = 5/8 < 1
+    <= g; the repaired congruence, that 8(F_d(2)-g) = 4((d-1)-2g) is divisible by 4 and so is 0 or 4
+    modulo 8 and never 5, so that five integers of one parity are even, each square is 0 or 4, and
+    g = (d-1-j)/2 with j in 0..5, with the six values and their parities recomputed; that the two
+    printed triples other than (9,1,2) have g > F_d(2) and so fall under r >= 3, and that d = 9 is
+    excluded by the exercise's d >= 13; and, in the attainment step, the decompositions
+    20 = 2^2+2^2+2^2+2^2+2^2 and 16 = 2^2+2^2+2^2+2^2+0^2 with F_d(2)-g equal to 5/2 and to 2, the
+    bounds 0 <= r = 2 <= 2d/3 and F_d(1) < g <= F_d(2), and the passage from a smooth connected
+    curve to an irreducible one. Checked in the independent proof: the reduction to alternative (c)
+    by Exercise V.4.8, lines and conics being rational; the contraction step, with Castelnuovo's
+    criterion (V.5.7), D = sigma^*D', the canonical formula -K = sigma^*(-K') - E, and the
+    invariance of d, D^2 and g; the induction that the descended class stays nonnegative on the
+    lines, including m = 0 from ampleness of -K, and the del Pezzo classification that ends the
+    process (V.4.7 and Remark V.4.7.1); the bound D^2 >= 2d - 6 on X_r with r >= 3, with N = D + K
+    effective from h^2 = h^0(-D) = 0 and chi(N) = g, nef by the (-1)-curve argument, and N^2 >= 0;
+    the X_2 parametrization d = 3c + 2s, D^2 = c^2 + 2cs + 2p and g = 1 + c(c-3)/2 + (c-1)s + p,
+    with c = D.F_12 and b_i = D.E_i nonnegative; the parity c = d modulo 2; the four bound steps,
+    including the two subtractions from g and the arithmetic of the cases c = 0, c >= 2 and c = 1,
+    c >= 3; and, in the attainment, the classes M_ev and M_odd with their degrees, genera and
+    squares, their base-point-freeness and dimensions, the quadric model with
+    M_ev = psi^*O_Y(2,s-2), very ampleness of O_Y(2,s-2) from II Ex. 7.5, the 1-jet computation that
+    makes the morphism of |M_odd| immersive, ampleness of M_odd by Nakai's criterion (V.1.10),
+    connectedness of the members from Corollary III.7.9, irreducibility from Remark III.7.9.1,
+    reduced nonsingular members from Theorem 5.1 of the expose through the almost-very-ampleness
+    conditions on the loci Sigma_i, and the pullback to the cubic surface. Also checked: the
+    statements of V.1.6, V.1.9, V.1.10, V.5.7, V.4.7, Remark V.4.7.1, II Ex. 7.5, Corollary
+    III.7.9, Remark III.7.9.1, Proposition V.4.1, Corollary V.4.2(a) and Exercise V.4.1, and that
+    the companion card P-AGH541CONICSQUADRIC proves the exercise cited for the quadric model. Not
+    checked: no printed copy of the book or of either article was read in this pass, the text
+    versions retained in tmp/sources were; no certificate or computation is claimed for this card;
+    and the evidence for the statements of the two articles and of Bourbaki's Theorem 5.1 is the
+    earlier source-checked events on this card, not a new reading of the sources.
 ---
 
 ::: {.problem}
