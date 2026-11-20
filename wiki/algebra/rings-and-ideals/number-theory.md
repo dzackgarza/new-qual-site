@@ -7,19 +7,17 @@ topics:
 
 # Number theory
 
-Euler's theorem is Lagrange's theorem applied to the class of $a$ in the group $(\ZZ/n)^\times$, whose order is $\phi(n)$; Fermat's little theorem is its case of prime modulus.
+Throughout, $n\geq1$ is an integer and $a$ is an integer.
+
+## Units modulo $n$
+
+The group $(\ZZ/n)^\times$ is what makes the two congruences below instances of one theorem: its order is $\phi(n)$, and $\ZZ/n\ZZ$ splits over the prime powers dividing $n$, so the unit group and $\phi$ are computed prime by prime.
 
 [[D-JX3YC]]
 
 [[FF-SOE5P]]
 
-[[P-BXBHJ]]
-
-## Units modulo $n$
-
-The Chinese remainder theorem splits $\ZZ/n\ZZ$ over the prime powers dividing $n$, and a product of rings has the product of their unit groups as its units, so $\phi$ is multiplicative over coprime factors and is computed from the prime factorization.
-
-[[T-TTZ2Y]]
+[[E-DAS3L]]
 
 ## The theorems of Euler and Fermat
 
@@ -27,18 +25,12 @@ The Chinese remainder theorem splits $\ZZ/n\ZZ$ over the prime powers dividing $
 
 [[FT-RVIGS]]
 
-The order of the class of $a$ in $(\ZZ/n)^\times$ divides $\phi(n)$ by Lagrange's theorem, and Euler's congruence is that statement with the order of $a$ replaced by the multiple $\phi(n)$.
-
 ## Totients and their values
 
-[[P-CZEY5]]
+[[P-BXBHJ]]
 
-[[P-BZMTE]]
+[[P-G2KO6]]
 
 ## Norms in number fields
 
-[[PR-2ZW5Z]]
-
 ## Primes in arithmetic progressions
-
-[[P-NQTGP]]
