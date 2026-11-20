@@ -26,6 +26,18 @@ for every $\rho>R$, the circle $\abs{z}=\rho$ being oriented counterclockwise.
 Equivalently, if $f(z) = \sum_{k\in\ZZ}a_kz^k$ is the Laurent expansion on $\abs z>R$, then $\Res_{z=\infty}f = -a_{-1}$, the coefficient of $z^{-1}$ with the sign that the orientation of the circle gives.
 :::
 
+::: {.corollary}
+Let $f$ be [[D-E7A5W|holomorphic]] on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, and let $\Res_{z=\infty}f$ be its residue at infinity.
+Then
+$$
+\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0.
+$$
+:::
+
+::: {.remark}
+This is the two displays above read at a circle $\abs z=\rho$ enclosing every $z_j$: the [[T-HRPNO|residue theorem]] gives $2\pi i\sum_j\Res_{z=z_j}f$ for the integral, and the residue at infinity gives $-2\pi i\Res_{z=\infty}f$ for the same integral.
+:::
+
 ::: {.remark}
 Residues belong to the differential form $f(z)\dz$ rather than to the function $f$.
 Under $w=1/z$ the form $f(z)\dz$ becomes $f(1/w)\,d(1/w)=-\frac{1}{w^2}f(1/w)\dw=g(w)\dw$, and the counterclockwise circle $\abs{z}=\rho$ becomes the clockwise circle $\abs{w}=1/\rho$, which accounts for the sign.
