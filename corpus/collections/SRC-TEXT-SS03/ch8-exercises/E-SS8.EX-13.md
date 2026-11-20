@@ -54,7 +54,7 @@ $$\frac{\abs{f'(z)}}{1 - \abs{f(z)}^2} \le \frac{1}{1 - \abs{z}^2} \quad \text{f
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 8, Exercise 13. Here $\DD=\theset{\abs{z}<1}$, $\rho(z,w)=\abs{\frac{z-w}{1-\overline{w}z}}$, and for $a\in\DD$ the disk automorphism is $\phi_a(\zeta)=\frac{\zeta-a}{1-\overline{a}\zeta}$ with inverse $\phi_a^{-1}(\zeta)=\frac{\zeta+a}{1+\overline{a}\zeta}$; Schwarz's lemma is that a holomorphic $g:\DD\to\DD$ with $g(0)=0$ satisfies $\abs{g(\zeta)}\leq\abs{\zeta}$ and $\abs{g'(0)}\leq1$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 8, Exercise 13. Here $\DD=\theset{\abs{z}<1}$, $\rho(z,w)=\abs{\frac{z-w}{1-\overline{w}z}}$, and for $a\in\DD$ the disk automorphism is $\phi_a(\zeta)=\frac{\zeta-a}{1-\overline{a}\zeta}$ with inverse $\phi_a^{-1}(\zeta)=\frac{\zeta+a}{1+\overline{a}\zeta}$; Schwarz's lemma is that a holomorphic $g:\DD\to\DD$ with $g(0)=0$ satisfies $\abs{g(\zeta)}\leq\abs{\zeta}$ and $\abs{g'(0)}\leq1$.
 
 ::: pf
 
