@@ -149,7 +149,9 @@ Each Pauli matrix is Hermitian and traceless, so $i$ times it is skew-Hermitian 
 
 [[PR-UQ3XJ]]
 
-Since $\det\colon \GL_n(\FF_q)\to \FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, the order of $\SL_n(\FF_q)$ is that of $\GL_n(\FF_q)$ divided by $q-1$.
+::: {.fact title="Order of the special linear group"}
+Since $\det\colon \GL_n(\FF_q)\to \FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, the first isomorphism theorem gives $\GL_n(\FF_q)/\SL_n(\FF_q)\cong \FF_q^\times$, so the order of $\SL_n(\FF_q)$ is that of $\GL_n(\FF_q)$ divided by $q-1$.
+:::
 
 ## Problems
 
