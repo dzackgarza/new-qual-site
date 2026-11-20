@@ -59,12 +59,6 @@ $$
 whose residue at the origin is $1$, so $\Res_{z=\infty}f = -1$, and $1/2+1/2-1 = 0$: the residues of $f$ on the sphere sum to zero.
 :::
 
-If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
-$$
-\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0,
-$$
-which is [[T-HRPNO|the residue theorem]] applied to a circle containing every $z_j$: its integral is $2\pi i\sum_j\Res_{z=z_j}f$ and also $-2\pi i\Res_{z=\infty}f$.
-
 ## Exercises
 
 Doing it without a formula:
