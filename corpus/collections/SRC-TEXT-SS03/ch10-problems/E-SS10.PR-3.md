@@ -14,6 +14,13 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 10 sets its asterisks before Problems 1, 5 and 6
+    only, so none stands before Problem 3. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -22,6 +29,10 @@ $$
 S(\tau) = -1/\tau \leftrightarrow \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \quad \text{and} \quad T_2(\tau) = \tau + 2 \leftrightarrow \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}.
 $$
 Prove that every fractional linear transformation corresponding to $g \in G$ is a composition of finitely many $S$, $T_2$ and their inverses, in analogy with the previous problem.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 10, Problem 3).
 :::
 
 ::: {.solution}
