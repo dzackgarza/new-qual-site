@@ -56,6 +56,8 @@ The coherent-sheaf formalism used in Chapter III of [@Har77] is developed in [@S
 [@Bor12] assigns a selected sequence of exercises from [@Har77] and includes written solutions to the first several assignments.
 [@PA12] is a written solution set for a scheme-theory course, including computations with $\Spec$ and Čech cohomology.
 
+[[attachments/AG Solutions (1).pdf|Homework exercises in commutative algebra and algebraic geometry]] -- a consecutively numbered list of more than ninety exercises, with occasional remarks and hints and no solutions; the sheet names no author or course.
+
 ## Exercise selections from Hartshorne
 
 A selection of exercises from [@Har77] recommended by Elham Izadi, by chapter and section:

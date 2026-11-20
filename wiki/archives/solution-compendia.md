@@ -33,9 +33,6 @@ author of the solutions, and the material the document covers.
   solutions to the algebra qualifying examinations of one mathematics
   department, collected in one document.
 
-- [Pantone, *First-year algebra notes*](http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf) --
-  course notes for the first-year graduate algebra sequence.
-
 - [Maryland Math 600 algebra examination solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf) --
   solutions to one sitting of a graduate algebra qualifying examination.
 
@@ -51,8 +48,16 @@ author of the solutions, and the material the document covers.
 
 ## Algebraic geometry
 
-- [[attachments/AG Solutions (1).pdf|Algebraic geometry solution notes]] --
-  solutions to exercises in algebraic geometry.
+- [[attachments/Richard Borcherds.pdf|Borcherds, *Hartshorne, Chapter 1: answers to exercises* (1994)]] --
+  answers to the exercises of Chapter I of [@Har77], keyed by exercise number.
+
+- [[attachments/Bryden R Cais.pdf|Cais, *Solutions to Hartshorne, Chapter 2*]] --
+  solutions to the exercises of Chapter II of [@Har77] from II.1 onwards, keyed by section and
+  exercise number.
+
+- [[attachments/Andrew Egbert.pdf|Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013)]] --
+  solutions to the exercises of [@Har77], with the starred exercises and those on formal schemes
+  omitted, as the note at the head of the document states.
 
 The examination and course collections that these documents solve are listed on
 [[archives/card-archives|the Sources listing]]; problem banks with no solution
