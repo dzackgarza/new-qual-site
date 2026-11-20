@@ -413,6 +413,44 @@ audit:
     case. That part of step s7 is now marked as the card's own, as step s9 and
     the last paragraph of s10 already were. Not checked: the printed paper,
     only the two arXiv PDFs.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #164, the demand that the proof of V.2.15 be transcribed from a
+    published solution set. No such set exists, and none can prove the printed
+    statement. The retained Hartshorne sets were swept: Egbert, Exercise
+    V.2.15, PDF pp. 271-273, writes for (c) only "To see the curve
+    Y = 3C_0-3f is inseparable is Miyanishi, Open Algebraic Surfaces, lemma
+    2.5.2.2" and then calls Y "some section of C", which is a pointer and not a
+    proof; Yang Pi-Yeh, Exercise 5.2.15, printed pp. 105-106, begins (c) with
+    "Clearly deg pi = Y.f = 3" and concludes that pi is not separable, which
+    assumes the curve and does not follow; Park has only V.5; Reiser's Chapter
+    V is "Coming soon"; the remaining retained sets stop before Chapter V
+    (Borcherds and Troiani at I, Cais, Cutrone-Marshburn, Lomont and Sam at IV,
+    Kim at III, Stein and Saglam-Chris at III, Okamoto at II.9); NTU AG II 2020
+    has no entry for Exercise 15 of section 2. Searched online beyond them, with
+    no solution set containing a proof of (c) found: the GitHub repositories of
+    Hartshorne solutions checked (mikeleew, corn-muffin, nilaykumar,
+    jmoellermath, maths644311798, reiserb) stop before Chapter V or omit
+    V.2.15, as do the web-compiled manuals checked. The only other treatment of
+    (c) is Xie's own Example 3.1, printed p. 5, which asserts that C' is
+    irreducible and smooth and proves neither, and Math StackExchange 4553266,
+    which has no answer. That no correct proof can exist is step s9: the class
+    3C_0-3f has p_a = 4 by adjunction, while a purely inseparable degree-3 map
+    to C forces g(Y) = g(C) = 3 by IV.2.5 and a separable one is excluded by
+    Riemann-Hurwitz, so the printed "nonsingular" cannot hold. What this pass
+    changed: step s7's own argument named "the section of E \otimes L^{-1}
+    mapping to 1 in H^0(O_C)", and no such section exists, because the
+    connecting map of 0 -> L^{-1} -> E \otimes L^{-1} -> O_C -> 0 sends 1 to the
+    nonzero extension class xi, so H^0(E \otimes L^{-1}) = 0. The step now
+    computes t locally as the cube of the local section e_2 + a e_1 of
+    F^*E \otimes L^{-3} and reads off its zero locus as the section Sigma
+    directly; the conclusion Y = 3 Sigma and all the numbers after it are
+    unchanged. The rendered remark no longer says that part (c) is published in
+    the form the steps correct. Not checked: the printed copies of Xie, Egbert
+    or Yang, only the retained text layers and, for Xie, the arXiv v5, v6 and
+    v7 PDF text.
 
 ---
 
@@ -581,11 +619,13 @@ $$
 
 Here $p=3$ and $\mathcal L=\OO_C(P)$ has degree $1$.
 
-Everything from here to the end of the step is this card's own, and no source read carries it: Xie prints only that $t$ determines an irreducible curve $C'$ of that class, and in this case the divisor is three times a section, so his irreducibility can only name the support while his smoothness claim is false.
+Everything from here to the end of the step is this card's own, and no source read carries it: Xie prints only that $t$ determines an irreducible curve $C'$ of that class, and in this case the divisor is three times a section, so his irreducibility can only name the support while his smoothness claim is false. The local computation that follows replaces an earlier argument of this card which named a section of $\mathcal E\otimes\mathcal L^{-1}$ mapping to $1\in H^0(\OO_C)$: no such section exists, because the connecting map of $0\to\mathcal L^{-1}\to\mathcal E\otimes\mathcal L^{-1}\to\OO_C\to0$ sends $1$ to the nonzero extension class $\xi$ of step [](#s5){.pf-ref}, so $H^0(\mathcal E\otimes\mathcal L^{-1})=0$.
 
-The second arrow in that chain is the adjoint of the cube map $M\to S^3M$, so the section $t$ is the cube of one section of a line bundle, not a general section of $\OO_X(3)\otimes f^*\OO_C(-3P)$. The copy of $\OO_C$ that the first arrow maps into is the quotient of $0\to\mathcal L^{-3}\to F^*\mathcal E\otimes\mathcal L^{-3}\to\OO_C\to0$, whose space of sections is $k$, and the section of $\mathcal E\otimes\mathcal L^{-1}$ mapping to $1\in H^0(\OO_C)$ is unique up to a scalar because $H^0(\mathcal L^{-1})=0$. Call it $s$, and let $\Sigma$ be the zero locus of the section of $\OO_X(1)\otimes f^*\mathcal L^{-1}$ it induces: $t=s^3$, so $Y=\operatorname{div}(t)=3\Sigma$.
-
-If $s$ never vanished, it would generate a copy of $\OO_C$ inside $\mathcal E\otimes\mathcal L^{-1}$ and the extension $0\to\mathcal L^{-1}\to\mathcal E\otimes\mathcal L^{-1}\to\OO_C\to0$ would split, which step [](#s5){.pf-ref} forbids; so $\Sigma$ is a nonempty curve, of class $C_0-f$ and of degree $\Sigma\cdot f=1$ over $C$. Since $C_0\cdot\Sigma=1-1=0$ while a fibre meets $C_0$ once, $\Sigma$ has no fibre as a component, so its components each meet a fibre, and the total $\Sigma\cdot f=1$ forces exactly one component, meeting every fibre once: $\Sigma$ is irreducible and is a section, hence isomorphic to $C$. Then $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $\OO_X(\Sigma)=\OO_X(1)\otimes f^*\mathcal L^{-1}$ gives $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, whose class in the basis $C_0$, $f$ of $\operatorname{Num}(X)$ is $3C_0-3f$; and $C_0\cdot\Sigma=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
+The second arrow in that chain is the cube map $F^*\mathcal E\to S^3\mathcal E$, $e\mapsto e^3$. Let $U\subseteq C$ be an open set on which $\mathcal L$ is trivial, with local generator $l$, and choose a local frame $e_1,e_2$ of $\restrictionof{F^*\mathcal E}{U}$ in which $e_1$ spans the subbundle $\OO_C$ and $e_2$ maps to $l^3$. The sequence $0\to\mathcal L^{-3}\to F^*\mathcal E\otimes\mathcal L^{-3}\to\OO_C\to0$ splits, and a splitting carries $1$ to a section $u=(e_2+a e_1)\otimes l^{-3}$ with $a\in\OO_C(U)$; since $H^0(\mathcal L^{-3})=0$ the lift is unique. Then
+$$
+t=u^3=(e_2^3+a^3e_1^3)\otimes l^{-3}=\bigl((e_2+ae_1)\otimes l^{-1}\bigr)^3 .
+$$
+In the fibre coordinate $[\alpha:\beta]$ for $\alpha e_1+\beta e_2$ over $U$, the section $t$ vanishes exactly where $\beta+a\alpha=0$, one point in each fibre, and these local equations agree on overlaps because they cut out the zero locus of $t$. So the zero locus is a section $\Sigma$ of $X\to C$, isomorphic to $C$, and $t$ vanishes to order $3$ along it: $Y=\operatorname{div}(t)=3\Sigma$. Since $\OO_X(Y)=\OO_X(3)\otimes f^*\mathcal L^{-3}$, the class of $\Sigma$ is $C_0-f$, so $\Sigma^2=(C_0-f)^2=1+2(-1)=-1$, and $C_0\cdot\Sigma=1-1=0$ with both curves effective and irreducible gives $C_0\cap Y=\emptyset$, Xie's $E\cap C'=\emptyset$ with his $E$ the section $C_0$ of step [](#s6){.pf-ref}.
 :::
 
 :::
@@ -607,7 +647,7 @@ This step is this card's own, and no source read carries it. The class has exact
 $$
 h^0(C,S^3\mathcal E\otimes\OO_C(-3P))\le h^0(\OO_C)+h^0(\OO_C(-P))+h^0(\OO_C(-2P))+h^0(\OO_C(-3P))=1+0+0+0=1,
 $$
-because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is not zero, since $t=s^3\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
+because $\deg\OO_C(-P)=-1$ makes each of the last three negative. The space is not zero, since $t\ne0$ by step [](#s7){.pf-ref}; so it is one-dimensional and $3\Sigma=\operatorname{div}(t)$ is its only effective divisor.
 
 Independently, for an effective divisor $Y$ in the class, adjunction gives
 $$
@@ -657,7 +697,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), st
 :::
 
 ::: {.remark title="Published solution"}
-Parts (a) and (b) have complete published arguments, and part (c) is published too, in the form steps [](#s7){.pf-ref} to [](#s9){.pf-ref} correct.
+Parts (a) and (b) have complete published arguments. For part (c) the published record contains the construction but no proof: Xie asserts that his $C'$ is an irreducible smooth curve, and both assertions fail here, steps [](#s7){.pf-ref} to [](#s9){.pf-ref} identifying his divisor as $3\Sigma$, the triple of a section, and correcting the printed statement.
 
 Robin Hartshorne, *Ample vector bundles on curves*, Nagoya Math. J. 43 (1971), 73--89: Lemma 3.1, printed pp. 84--85, is part (a), the vanishing of Frobenius on $H^1(C,\OO_C)$ through the identification with $H^2(\PP^2,\OO(-4))$ and the multiplication by $g^2$; Example 3.2, printed pp. 85--86, is part (b), the bundle, the two Riemann--Roch dimensions and the dimension count, together with the reason $E$ is not ample. He does not construct the curve $Y$ of part (c) and says nothing about $D=2C_0$.
 
