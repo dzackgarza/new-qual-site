@@ -1646,7 +1646,7 @@ $$
 =t_{[1:0:0]}(1)+t_{[0:1:0]}(1)
 =2=0 ,
 $$
-where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ and $H^1(\PP^2,\Omega_{\PP^2}^1)$ is one-dimensional, this forces $\eta(C)=0=\deg C\cdot1_{\PP^2}$, which is part (b) for this conic. The nonvanishing of $\alpha_0$ used here is the computation of step [](#s4){.pf-ref} with the class of a point, which reads no degree.
+where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ and $H^1(\PP^2,\Omega_{\PP^2}^1)$ is one-dimensional, this forces $\eta(C)=0=\deg C\cdot1_{\PP^2}$, which is part (b) for this conic. Part (d) gives the same class by a different route: there $p=1$, and $\mcl(C)\cong\OO_{\PP^2}(2)$, the conic being the zero locus of a form of degree $2$, so $\eta(C)=c(\mcl(C))=c(\OO_{\PP^2}(2))=2\,c(\OO_{\PP^2}(1))=0$, the class $c$ being a homomorphism and $2=0$ in $k$. The nonvanishing of $\alpha_0$ used here is the computation of step [](#s4){.pf-ref} with the class of a point, which reads no degree.
 :::
 
 ::: {.remark title="Published solutions"}
