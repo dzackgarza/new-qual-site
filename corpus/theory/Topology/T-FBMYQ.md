@@ -19,5 +19,5 @@ $$
 H_n(X\sm Z,\, A\sm Z) \mapsvia{\sim} H_n(X, A) \qquad \text{for all } n
 .$$
 Equivalently, for subspaces $A, B\subseteq X$ with $X = \interiorof{A} \union \interiorof{B}$, the inclusion $(B, A\intersect B)\injects (X, A)$ induces isomorphisms $H_n(B, A\intersect B)\mapsvia{\sim} H_n(X,A)$ for all $n$.
-The two forms are related by $B = X\sm Z$ [@Hat02].
+The two forms are related by $B = X\sm Z$ [@Hat02, Theorem 2.20].
 :::
