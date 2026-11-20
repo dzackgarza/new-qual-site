@@ -37,6 +37,8 @@ for all $R > 0$, and for some integer $k \geq 0$ and some constants $A, B > 0$, 
 :::
 
 ::: {.solution}
+The statement is Exercise 15 of [@SS03, ch. 3 (pp. 105--106)], printed as: use the Cauchy inequalities or the maximum modulus principle to show that an entire $f$ with $\sup_{\abs z=R}\abs{f(z)}\le AR^k+B$ for all $R>0$ is a polynomial of degree at most $k$.
+
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
 ::: pf
