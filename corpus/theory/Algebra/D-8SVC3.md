@@ -22,7 +22,7 @@ m_u\colon L &\to L \\
 x &\mapsto ux,
 \end{aligned}
 $$
-and the \dfn{norm of $u$} is $N_{L/K}(u)\coloneqq \det(m_u)$, an element of $K$ [@Hun74, chapter VII, §1, exercise 9(b)].
+and the \dfn{norm of $u$} is $N_{L/K}(u)\coloneqq \det(m_u)$, an element of $K$ [@Hun74, chapter VII, §5, Exercise 9(b)].
 :::
 
 ::: {.remark}
