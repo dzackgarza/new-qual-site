@@ -134,7 +134,7 @@ give the product with the sign determined by the Levi-Civita symbol.
 
 ::: {.pf-step #s1-5}
 
-The commutator is
+Part (a): the commutator is
 $$
 \boxed{
 [\sigma_i,\sigma_j]
@@ -156,22 +156,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-6}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-7}
 
-The anticommutator is
+Part (b): the anticommutator is
 $$
 \boxed{
 \{\sigma_i,\sigma_j\}
@@ -185,19 +172,6 @@ $$
 
 Add the formula in step [](#s1-4){.pf-ref} to the same formula with $i,j$ interchanged.
 The Levi-Civita terms cancel and the two Kronecker-delta terms add.
-
-:::
-
-:::
-
-::: {.pf-step #s1-8}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -232,7 +206,7 @@ Every monomial cancels with its opposite.
 
 ::: {.pf-step #s1-10}
 
-Hence
+Part (c): hence
 $$
 \boxed{
 [\sigma_i,[\sigma_j,\sigma_k]]
@@ -260,22 +234,9 @@ $$
 
 :::
 
-::: {.pf-step #s1-11}
-
-Part (c) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-10){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-11){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-10){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 
