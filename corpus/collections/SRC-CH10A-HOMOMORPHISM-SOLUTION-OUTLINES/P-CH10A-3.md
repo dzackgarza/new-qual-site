@@ -42,7 +42,7 @@ Prove that the mapping given in Example 4, the map $\phi : \RR[x] \to \RR[x]$ de
 
 ::: {.solution}
 
-The argument is the outline's, written out; the statement was checked against Gallian, *Contemporary Abstract Algebra* (7th edition), Chapter 10, Example 4, printed p. 201, where $\RR[x]$ is the group of polynomials with real coefficients **under addition** and the map is $f\mapsto f'$.
+The argument is the outline's, written out; the statement was checked against Gallian, *Contemporary Abstract Algebra* (7th edition), Chapter 10, Example 4, where $\RR[x]$ is the group of polynomials with real coefficients **under addition** and the map is $f\mapsto f'$.
 
 ::: pf
 
