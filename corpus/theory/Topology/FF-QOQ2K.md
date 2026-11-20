@@ -19,11 +19,11 @@ review: draft
 ::: {.fact}
 The integral homology groups of the Klein bottle $\KK$ are
 $$
-H_k(K;\ZZ) \cong \begin{cases}
+H_k(\KK;\ZZ) \cong \begin{cases}
 \ZZ & k = 0,\\
 \ZZ\oplus\ZZ/2 & k = 1,\\
 0 & \text{otherwise}
 \end{cases}
 $$
-[@Hat02].
+[@Hat02, Example 2.47].
 :::
