@@ -64,7 +64,7 @@ If $n_2 = 1$, the Sylow $2$-subgroup is normal.
 
 ## Index the smallest prime
 
-A subgroup of index the smallest prime dividing $\size G$ is normal, so a subgroup of index $2$ is normal and the search for a proper nontrivial normal subgroup ends there.
+A subgroup of index the smallest prime dividing $n$ is normal, so a subgroup of index $2$ is normal and the search for a proper nontrivial normal subgroup ends there.
 
 [[PR-PADL7]]
 
