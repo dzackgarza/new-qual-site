@@ -35,6 +35,21 @@ audit:
     retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
     PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
     carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step `watson` on the reader's report. The step set $R=B\chi-P$ and called
+    $R\in C_c^\infty(\RR)$ with support in $[-2\rho,2\rho]$; that is false, because $B\chi$ is
+    compactly supported but the polynomial $P$ is not, so outside $\operatorname{supp}\chi$ the
+    function $R$ equals $-P$ and does not have compact support. The step now sets $B_1=B\chi$, notes
+    that $B_1\in C_c^\infty$ with the same support and the same Taylor coefficients at $0$ as $B$,
+    and forms $R=B_1-P$, which is compactly supported, vanishes to order $2K+2$ at $0$, and is the
+    function whose Gaussian integral is estimated; the integral is unchanged because $B\chi=B_1$.
+    The integration-by-parts estimate and the finiteness of $\int\abs{D^{K+1}R}$ then follow as
+    written. No other step changed. Provenance: no published solution set covers this Problem
+    (Rhoades, *Solutions/Hints to the Exercises*, 2006, covers a selection of the Exercises), so the
+    argument is the card's own.
 ---
 
 ::: {.exercise}
@@ -46,6 +61,8 @@ This can be proved by using the results of Problem 1 in place of Proposition 1.3
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
+
 We write $\log$ for the principal branch, $s^{\alpha}$ for the power defined by it (so that $s^{1/2}$ and $s^{-j}$ are the principal powers), $\delta>0$ and $S_\delta=\{s:\abs{\arg s}\le\pi-\delta\}$ as in the text (printed p. 326), and $F$ for the normalized gamma function
 $$
 F(s)=\sqrt{\frac{s}{2\pi}}\,\Gamma(s)\,e^{-s\log s+s},
@@ -145,7 +162,7 @@ $$
 the constant in $O$ depending only on $\rho,\sigma_0,K,B$ and $\chi$, uniformly for $\Re(s)\ge\sigma_0$.
 
 ::: pf-proof
-Let $P(v)=\sum_{n=0}^{2K+1}\beta_nv^n$ and $R=B\chi-P$. Then $R\in C_c^\infty(\RR)$, $\operatorname{supp}R\subset[-2\rho,2\rho]$, and $R$ vanishes at $v=0$ together with its derivatives of order $\le 2K+1$, because $\chi\equiv1$ on $[-\rho,\rho]$ and $B-P$ vanishes to order $2K+2$ at $0$ there.
+Let $B_1=B\chi$, let $P(v)=\sum_{n=0}^{2K+1}\beta_nv^n$, and put $R=B_1-P$. Then $B_1\in C_c^\infty(\RR)$ with $\operatorname{supp}B_1\subset[-2\rho,2\rho]$, hence $R\in C_c^\infty(\RR)$ with $\operatorname{supp}R\subset[-2\rho,2\rho]$, and $R$ vanishes at $v=0$ together with its derivatives of order $\le 2K+1$, because $\chi\equiv1$ on $[-\rho,\rho]$ and $B-P$ vanishes to order $2K+2$ at $0$ there. The integral to be estimated is $\int_{\RR}e^{-sv^{2}/2}R\,dv$, since $B\chi=B_1$ by definition.
 By step [](#moments){.pf-ref} applied with $\lambda=s$ (legitimate since $\Re(s)\ge\sigma_0>0$),
 $$
 \int_{\RR}e^{-sv^{2}/2}P(v)\,dv=\sum_{k=0}^{K}\beta_{2k}\int_{\RR}e^{-sv^{2}/2}v^{2k}\,dv=\sum_{k=0}^{K}\beta_{2k}(2k-1)!!\sqrt{2\pi}s^{-k-1/2},
