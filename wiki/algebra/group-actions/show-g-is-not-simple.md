@@ -51,7 +51,7 @@ Hence $n_5 = 1$ or $n_3 = 1$.
 
 If $G$ is simple and $H < G$ has index $k > 1$, then the action of $G$ on the $k$ left cosets of $H$ has kernel a proper normal subgroup, hence trivial, so $G$ embeds in $S_k$ and
 $$
-\size G \divides k!.
+n \divides k!.
 $$
 The subgroup $H$ can be a Sylow subgroup or the normalizer $N_G(P)$ of a Sylow subgroup $P$.
 
@@ -81,18 +81,18 @@ Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, sa
 [[PR-IGLFV]]
 
 Groups of order $p^2$ are abelian, so $D \coloneqq P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
-Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $\size G\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $\size G\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
+Hence $[G:N_G(D)]$ is a proper divisor of $m$. If $N_G(D) = G$, then $D$ is a proper nontrivial normal subgroup. If $N_G(D) < G$ and $k=[G:N_G(D)]$, then simplicity would force $n\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]], so any possible $k$ with $n\notdivides k!$ also rules out simplicity. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
 ## The action on the Sylow subgroups
 
 $G$ acts by conjugation on its $n_p$ Sylow $p$-subgroups, giving a homomorphism $\rho\colon G \to S_{n_p}$.
 By Sylow's second theorem the action is transitive, so $\ker\rho$ is a proper normal subgroup when $n_p > 1$.
-If $G$ is simple and $n_p>1$, then $\rho$ is injective and $\size G \divides n_p!$.
+If $G$ is simple and $n_p>1$, then $\rho$ is injective and $n \divides n_p!$.
 This is the action of $G$ on the cosets of $N_G(P)$.
 
 [[T-EF2MZ]]
 
-## Arguments and conclusions
+## What each argument needs
 
 The order in which the arguments are tried is itself a strategy: the Sylow count first, because it is the only one that needs no element count, and the counting arguments only for the primes the count leaves open.
 
@@ -102,11 +102,11 @@ The order in which the arguments are tried is itself a strategy: the Sylow count
 | --- | --- | --- |
 | Sylow count | the factorization of $n$ | $n_p = 1$, so a Sylow $p$-subgroup is normal |
 | element count | Sylow subgroups of prime order | some $n_p = 1$ |
-| small index | a proper subgroup of index $k$ | $G$ simple implies $\size G \divides k!$ |
+| small index | a proper subgroup of index $k$ | $G$ simple implies $n \divides k!$ |
 | smallest prime index | a subgroup of index the least prime dividing $n$ | that subgroup is normal |
 | normalizer | $n_p = [G:N_G(P)]$ | a subgroup of index $n_p$ |
 | intersecting Sylow subgroups | $\size{P\intersect Q} = p$ for Sylow subgroups of order $p^2$ | a subgroup $N_G(P\intersect Q)$ of index a proper divisor of $m$ |
-| action on Sylow subgroups | $n_p > 1$ | $G$ simple implies $\size G \divides n_p!$ |
+| action on Sylow subgroups | $n_p > 1$ | $G$ simple implies $n \divides n_p!$ |
 
 ## Simple groups
 
