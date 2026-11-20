@@ -75,6 +75,22 @@ audit:
     document answering Appendix A, Problem 2 was found. This search located no published set
     answering this Problem, and none is retained in this repository. Not checked: whether such a set
     exists outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Appendix A*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 2 and checked against Appendix A, Problem 2: it applies Euler--Maclaurin to $\log\Gamma$
+    in a fixed sector, uses its Problem 1 for the endpoint remainder, exponentiates the resulting
+    finite expansion, and identifies $a_1=1/12$ from $B_2/(2s)$. That answers the Problem, which asks
+    only for the expansion and for the constants. The card's proof reaches the same expansion by a
+    different route, the Laplace method of Appendix A section 5 on the integral representation, with
+    the local expansion, Watson's lemma and the reflection formula for the left half-plane; it is
+    therefore not a transcription, and is labelled as the card's own here. Not checked: anything in
+    the published document outside its Problem 2, and no claim that the two routes' constants agree
+    beyond $a_1$, which both state.
 ---
 
 ::: {.exercise}
@@ -90,7 +106,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 2), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`; it reaches the expansion by Euler--Maclaurin applied to $\log\Gamma$, with Problem 1's cutoff estimate controlling the remainder, and reads $a_1=1/12$ off the $B_2/(2s)$ term. The proof below takes the book's own route instead, expanding the integrand of Appendix A's integral representation at the saddle and applying Watson's lemma, so it is not a transcription of that text; the audit trail records the comparison.
 
 We write $\log$ for the principal branch, $s^{\alpha}$ for the power defined by it (so that $s^{1/2}$ and $s^{-j}$ are the principal powers), $\delta>0$ and $S_\delta=\{s:\abs{\arg s}\le\pi-\delta\}$ as in Appendix A, §5, and $F$ for the normalized gamma function
 $$
