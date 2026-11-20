@@ -27,6 +27,18 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the presentation of the flag-manifold cohomology, which is what Queue D asks for on this card. The relations, the induced map, the computation of the cohomology by the Leray-Hirsch tower, the algebraic side with its monomial basis and rank n!, and the final isomorphism are separate steps. Two things the prose asserted are now argued: that the evaluation map kills exactly the elementary symmetric polynomials (from the multiplicativity of the total Chern class of the trivial bundle), and that the elementary symmetric polynomials form a regular sequence whose successive reductions give the monomial basis with 0 <= a_i <= n-i; the rank comparison is stated as the reason a surjection of free graded groups is an isomorphism. No retained set covers this exercise; the card now says so. Locators checked: Theorem 4D.1 on printed p. 432, Corollary 4D.3 on p. 434, the exercise on p. 447. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.D Exercise 4, Theorem 4D.1
+    (Leray-Hirsch) and Corollary 4D.3. One repair: step `algebra` evaluated the Poincare polynomial at
+    t = 1 and wrote the product of n! over j, which is not the number of monomials; the product of j
+    over j = 1 to n is n!, and that is what the basis count gives. The rest is correct as written: the
+    fibration F_n -> F_{n-1} with fibre CP^{n-1} and Leray-Hirsch over the tautological quotient give
+    H^*(F_n) free over H^*(F_{n-1}) on 1, x_n, ..., x_n^{n-1}; the monomials with 0 <= a_i <= n-i are
+    the Artin basis, n! of them; and surjectivity plus equality of Poincare polynomials forces the
+    isomorphism. The pair (x_{n-i+1}, i-1) in the proof matches the bound a_i <= n-i.
 ---
 
 ::: {.problem}
@@ -71,7 +83,7 @@ Forgetting the last line of a flag gives a fiber bundle $F_n\to F_{n-1}$ with fi
 $\ZZ[x_1,\dots,x_n]/(\sigma_1,\dots,\sigma_n)$ is free abelian with basis $x_1^{a_1}\cdots x_n^{a_n}$, $0\le a_i\le n-i$, hence with the same Poincaré polynomial and total rank $n!$.
 
 ::: pf-proof
-The $\sigma_k$ form a regular sequence: $\sigma_k$ involves the variable $x_{n-k+1}$ to the first power and no other variable of lower index does in $\sigma_k$ once the earlier relations have been used, which is the usual triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^nn!=n!$.
+The $\sigma_k$ form a regular sequence: $\sigma_k$ involves the variable $x_{n-k+1}$ to the first power and no other variable of lower index does in $\sigma_k$ once the earlier relations have been used, which is the usual triangular form of the elementary symmetric functions. Reducing successively by the monic relations $\sigma_1,\dots,\sigma_n$ therefore leaves a free abelian group on the monomials whose exponents satisfy $0\le a_i\le n-i$: the $i$-th reduction caps the exponent of $x_{n-i+1}$ at $i-1$. The number of such monomials in degree $2d$ gives the polynomial $\prod_{j=1}^n(1+t^2+\cdots+t^{2(j-1)})$, and its value at $t=1$ is $\prod_{j=1}^n j=n!$.
 :::
 
 :::
