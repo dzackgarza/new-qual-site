@@ -1029,6 +1029,21 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    reporting numbered steps and QED labels on the three converted cards, `tools/check_macros.py` clean.
    No whole-corpus gate this turn.
 
+   **2026-11-20, second record on the §3.3 and §3.C lanes.** §3.3 is finished: `E-HAT-3.3-31` is converted
+   to nine steps from Bredon, Chapter VI §9, Lemma 9.1 and the theorem numbered 9.2, with the finite
+   generation of $H_{n-1}(M,B;\ZZ)$, the group computation $A\otimes\QQ/\ZZ\cong(\QQ/\ZZ)^r\oplus T$ and the
+   unit-scaling of fundamental classes now proved rather than assumed; and `E-HAT-3.3-22` is converted to
+   eight steps transcribing Stanford Math 215C, *Solution Set 4*, the solution of Hatcher §3.3 Exercise 22,
+   cited by exercise number with its URLs and locator gone from the body, and with the side-pair
+   deformations written out and the cases $x\notin K$ and $x\in K$ separated. With `-16`, `-19` and `-25`
+   from the record above, all five prose-only §3.3 cards carry numbered steps, one commit each. The next
+   block of `queues/D-prose-only-solutions.md` that no other stream holds is §3.C, three cards
+   (`E-HAT-3.C-2`, `-15`, `-16`); §4.D, §4.K, §4.L and §4.A/§4.B/§4.F are other lanes' as the split above
+   records. `E-HAT-3.C-2` is converted, four steps, with $r(e)=e$ the step that makes the unit homotopies
+   based; `-15` and `-16` are the next items, `-16` being the long one. Checks on each card:
+   `qualc.authoring check` clean, `tmp/lam.sh` reporting numbered steps and QED labels,
+   `tools/check_macros.py` clean. No whole-corpus gate this turn.
+
    **2026-11-21, §4.3 finished and re-cited by numbered statement.** All twenty-four cards of `4-3/` carry a
    structured proof, and six of them --- `E-HAT-4.3-2`, `-9`, `-16`, `-18`, `-21`, `-22` --- were converted from
    prose to numbered steps in this lane; the rest were already read and repaired on 2026-11-19. The
