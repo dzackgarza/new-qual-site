@@ -59,7 +59,7 @@ audit:
 :::
 
 ::: {.solution}
-Part (a) is the card's own argument. Part (b) is not proved on this card: it is the published lemma cited below, whose hypotheses are checked here — **Benedetti, *On ideal triangulations of surfaces up to branched transit equivalences*, arXiv:1903.12596v1, Lemma 2.14, p. 7** (with the definitions of p. 1).
+Part (a) is the card's own argument. Part (b) is not proved on this card: it is the published lemma cited below, whose hypotheses are checked here — **Benedetti, *On ideal triangulations of surfaces up to branched transit equivalences*, arXiv:1903.12596v1, Lemma 2.14** (with the definitions the paper fixes at its opening for these objects).
 
 Write $X$ for the quotient of the finite disjoint union of $2$-simplices by the chosen pairs of edges, and for a point $x\in X$ let $L_v$, at a quotient vertex $v$, be the graph whose vertices are the germs at $v$ of the edges of the triangulation and whose edges are the corners of the triangles at $v$.
 
@@ -114,7 +114,7 @@ The $6k$ edge-sides are paired, so $E=3k$; $F=2k$; hence $\chi=V-E+F=V-3k+2k=V-k
 The edges can be oriented so as to define a $\Delta$-complex structure on $X$.
 
 ::: pf-proof
-Benedetti's *branching* of a triangulation is "a system of edge orientations which lifted to every abstract triangle of $T$ is induced by a (local) ordering of the vertices, so that every edge goes towards the biggest endpoint", and he notes that this is "equivalently $b$ promotes $T$ to be a $\Delta$-complex accordingly with Chapter 2 of [Hatcher]" (p. 1). His ideal triangulation is exactly the data here: abstract triangles glued along their abstract edges in pairs with no edge left unglued, self- and multiple adjacencies allowed, viewed together with its vertex set (p. 1). So each component of $X$ with its quotient vertices is an ideal triangulation of a closed surface, and by step [](#hypothesis){.pf-ref} the paper's standing hypothesis $\chi(S)-\#V<0$ holds for it. Lemma 2.14 of the paper (p. 7) states that every ideal triangulation of $(S,V)$ can be branched; applying it to each component and orienting the edges accordingly gives exactly Hatcher's $\Delta$-complex condition, which is part (b). The proof of the lemma — flips and b-flips from one branched triangulation per surface with few vertices, then b-bubbles — is not reproduced here.
+Benedetti's *branching* of a triangulation is "a system of edge orientations which lifted to every abstract triangle of $T$ is induced by a (local) ordering of the vertices, so that every edge goes towards the biggest endpoint", and he notes that this is "equivalently $b$ promotes $T$ to be a $\Delta$-complex accordingly with Chapter 2 of [Hatcher]". His ideal triangulation is exactly the data here: abstract triangles glued along their abstract edges in pairs with no edge left unglued, self- and multiple adjacencies allowed, viewed together with its vertex set. So each component of $X$ with its quotient vertices is an ideal triangulation of a closed surface, and by step [](#hypothesis){.pf-ref} the paper's standing hypothesis $\chi(S)-\#V<0$ holds for it. Lemma 2.14 of the paper states that every ideal triangulation of $(S,V)$ can be branched; applying it to each component and orienting the edges accordingly gives exactly Hatcher's $\Delta$-complex condition, which is part (b). The proof of the lemma — flips and b-flips from one branched triangulation per surface with few vertices, then b-bubbles — is not reproduced here.
 :::
 
 :::
