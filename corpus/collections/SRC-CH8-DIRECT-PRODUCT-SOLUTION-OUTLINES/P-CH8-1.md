@@ -50,7 +50,7 @@ Prove that the external direct product of any finite number of groups is a group
 :::
 
 ::: {.solution}
-In the seventh edition this is Chapter 8 Exercise 1, printed p. 167, where the printed words are the statement below.
+In the seventh edition this is Chapter 8 Exercise 1, where the printed words are the statement below.
 
 Let $G_1,\dots,G_n$ be groups with identities $e_1,\dots,e_n$, and let
 $G=G_1\oplus\cdots\oplus G_n$ be their external direct product: the set of

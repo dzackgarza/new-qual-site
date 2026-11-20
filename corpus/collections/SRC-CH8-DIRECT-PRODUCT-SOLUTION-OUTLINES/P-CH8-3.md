@@ -43,7 +43,7 @@ Let $G$ be a group with identity $e_{G}$ and let $H$ be a group with identity $e
 
 ::: {.solution}
 
-In the seventh edition this is Chapter 8 Exercise 3, printed p. 167, where the printed
+In the seventh edition this is Chapter 8 Exercise 3, where the printed
 words are the statement below.
 
 Let $G,H$ be groups with identities $e_G,e_H$, and let $G\oplus\{e_H\}$ and
