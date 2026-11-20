@@ -27,5 +27,5 @@ In particular, if $n_\gamma(z_j)=1$ for every $j$, then
 $$
 \frac{1}{2\pi i}\int_\gamma f(z)\dz=\sum_{j=1}^N\Res_{z=z_j}f.
 $$
-For a toy contour enclosing the poles, each with winding number $1$, this is [@SS03, Corollary 2.3 of Chapter 3 (p. 77)], after [@SS03, Theorem 2.1 (p. 76)] for a single pole; the statement above allows any closed piecewise smooth curve whose winding number vanishes outside $\Omega$.
+For a toy contour enclosing the poles, each with winding number $1$, this is [@SS03, Corollary 2.3 of Chapter 3], after [@SS03, Theorem 2.1] for a single pole; the statement above allows any closed piecewise smooth curve whose winding number vanishes outside $\Omega$.
 :::

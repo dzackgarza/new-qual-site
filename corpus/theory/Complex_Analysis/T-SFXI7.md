@@ -23,5 +23,5 @@ $$
 \abs{\int_\gamma f(z)\dz}\leq ML.
 $$
 
-For a curve of length $L$ and a continuous $f$ on it, this is [@SS03, ch. 1, sec. 3 (p. 22)].
+For a curve of length $L$ and a continuous $f$ on it, this is [@SS03, ch. 1, sec. 3].
 :::

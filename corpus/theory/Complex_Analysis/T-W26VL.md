@@ -26,5 +26,5 @@ Written out, the group is the set of maps
 $$
 z\mapsto e^{i\theta}\,{\alpha-z\over 1-\overline{\alpha}z}, \qquad \theta\in\RR,\ \alpha\in\DD,
 $$
-the rotations composed with the Blaschke factors; this is [@SS03, Theorem 2.2 of Chapter 8 (p. 220)], where the proof runs the Schwarz lemma on $f\circ\psi_\alpha$ and on its inverse.
+the rotations composed with the Blaschke factors; this is [@SS03, Theorem 2.2 of Chapter 8], where the proof runs the Schwarz lemma on $f\circ\psi_\alpha$ and on its inverse.
 :::

@@ -29,7 +29,7 @@ $$
 v_d\colon\PP^n\longrightarrow\PP^N,\qquad
 \thevector{x_0:\cdots:x_n}\longmapsto\thevector{M_0(x):\cdots:M_N(x)}
 $$
-is a morphism, and it is an isomorphism onto its image [@Har77, Exercise I.2.12, p. 13 and Exercise I.3.4, p. 21].
-The image is the vanishing locus of the quadratic relations among the monomials of degree $d$, and its homogeneous coordinate ring is the Veronese subring $k[x_0,\ldots,x_n]^{(d)}$ [@Har77, Exercise I.2.12, p. 13].
-For $d=2$ and $n=2$ the image is the Veronese surface in $\PP^5$ [@Har77, Exercise I.2.13, p. 13].
+is a morphism, and it is an isomorphism onto its image [@Har77, Exercise I.2.12 and Exercise I.3.4].
+The image is the vanishing locus of the quadratic relations among the monomials of degree $d$, and its homogeneous coordinate ring is the Veronese subring $k[x_0,\ldots,x_n]^{(d)}$ [@Har77, Exercise I.2.12].
+For $d=2$ and $n=2$ the image is the Veronese surface in $\PP^5$ [@Har77, Exercise I.2.13].
 :::

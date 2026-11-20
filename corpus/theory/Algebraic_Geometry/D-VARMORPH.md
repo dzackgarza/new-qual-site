@@ -24,13 +24,13 @@ prompts:
 
 ::: {.definition title="morphism of varieties"}
 Let $k$ be an algebraically closed field and let $X$ and $Y$ be varieties over $k$.
-A \dfn{morphism} $\varphi\colon X\to Y$ is a continuous map such that for every open $U\subseteq Y$ and every regular function $f\in\OO_Y(U)$, the composite $f\circ\varphi$ is a regular function on $\varphi^{-1}(U)$ [@Har77, §I.3, p. 15].
-An \dfn{isomorphism} of varieties is a morphism with a two-sided inverse, and composition of morphisms is a morphism [@Har77, §I.3, p. 16].
+A \dfn{morphism} $\varphi\colon X\to Y$ is a continuous map such that for every open $U\subseteq Y$ and every regular function $f\in\OO_Y(U)$, the composite $f\circ\varphi$ is a regular function on $\varphi^{-1}(U)$ [@Har77, §I.3].
+An \dfn{isomorphism} of varieties is a morphism with a two-sided inverse, and composition of morphisms is a morphism [@Har77, §I.3].
 :::
 
 ::: {.lemma title="Morphisms to affine space"}
 Let $X$ be a variety and $Y\subseteq\AA^n$ an affine variety.
-A map of sets $\psi\colon X\to Y$ is a morphism if and only if each $x_i\circ\psi$ is a regular function on $X$ [@Har77, Lemma I.3.6, p. 20].
+A map of sets $\psi\colon X\to Y$ is a morphism if and only if each $x_i\circ\psi$ is a regular function on $X$ [@Har77, Lemma I.3.6].
 A morphism between quasi-projective varieties is therefore given locally by polynomials, homogeneous of the same degree in the projective coordinates, with no common zero ([[D-VARREG]]).
 :::
 

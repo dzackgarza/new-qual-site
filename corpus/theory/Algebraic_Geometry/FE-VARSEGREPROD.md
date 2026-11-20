@@ -22,6 +22,6 @@ prompts:
 ::: {.example}
 Let $k$ be an algebraically closed field.
 The Segre embedding exhibits $\PP^1_k\times_k\PP^1_k$ as a closed subvariety of $\PP^3_k$, so it is projective ([[PR-VA4S3]]).
-An affine variety isomorphic to a projective variety consists of a single point [@Har77, Exercise I.3, p. 21], so $\PP^1\times\PP^1$ is not affine.
+An affine variety isomorphic to a projective variety consists of a single point [@Har77, Exercise I.3], so $\PP^1\times\PP^1$ is not affine.
 Equivalently, it contains the complete curve $\PP^1\times\set{p}$, which no affine variety of positive dimension does ([[D-VARCOMP]]).
 :::

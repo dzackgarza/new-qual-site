@@ -24,17 +24,17 @@ prompts:
 
 ::: {.definition title="rational map"}
 Let $X$ and $Y$ be varieties over a field $k$.
-A \dfn{rational map} $\varphi\colon X\dashrightarrow Y$ is an equivalence class of pairs $(U,\varphi_U)$ with $U\subseteq X$ a nonempty open subset and $\varphi_U\colon U\to Y$ a morphism, two pairs being equivalent when they agree on the intersection of their domains [@Har77, Definition I.4, p. 24].
+A \dfn{rational map} $\varphi\colon X\dashrightarrow Y$ is an equivalence class of pairs $(U,\varphi_U)$ with $U\subseteq X$ a nonempty open subset and $\varphi_U\colon U\to Y$ a morphism, two pairs being equivalent when they agree on the intersection of their domains [@Har77, Definition I.4].
 The rational map is \dfn{dominant} if its image is dense in $Y$.
 :::
 
 ::: {.definition title="birational"}
 A \dfn{birational map} $\varphi\colon X\dashrightarrow Y$ is a rational map admitting a rational inverse: a rational map $\psi\colon Y\dashrightarrow X$ with $\psi\circ\varphi=\id_X$ and $\varphi\circ\psi=\id_Y$.
-Two varieties are \dfn{birational}, or birationally equivalent, when such a map exists between them [@Har77, Definition I.4, p. 24].
+Two varieties are \dfn{birational}, or birationally equivalent, when such a map exists between them [@Har77, Definition I.4].
 :::
 
 ::: {.theorem title="Function fields and birational equivalence"}
-Two varieties $X$ and $Y$ over $k$ are birational if and only if $k(X)\cong k(Y)$ as extensions of $k$ [@Har77, Corollary I.4.5, p. 26].
+Two varieties $X$ and $Y$ over $k$ are birational if and only if $k(X)\cong k(Y)$ as extensions of $k$ [@Har77, Corollary I.4.5].
 The dominant rational maps $X\dashrightarrow Y$ correspond to the $k$-algebra homomorphisms $k(Y)\to k(X)$, so varieties with dominant rational maps are contravariantly equivalent to finitely generated field extensions of $k$ [@Har77, Theorem I.4.4, pp. 25--26].
 :::
 

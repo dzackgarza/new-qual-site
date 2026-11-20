@@ -23,5 +23,5 @@ $$
 \int_\gamma f(z)\dz=0.
 $$
 
-A closed curve in a simply connected region is homotopic to a point, so this is [@SS03, Theorem 5.1 of Chapter 3 (p. 93)].
+A closed curve in a simply connected region is homotopic to a point, so this is [@SS03, Theorem 5.1 of Chapter 3].
 :::

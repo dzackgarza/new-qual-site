@@ -23,8 +23,8 @@ prompts:
 ---
 
 ::: {.example title="Sheaves of functions"}
-On a topological space $X$ the assignment $U\mapsto C^0(U,\RR)$ of continuous real-valued functions is a sheaf of rings; on a differentiable manifold $U\mapsto C^\infty(U)$ is a subsheaf of it, and on a complex manifold $U\mapsto\OO_X^{an}(U)$ of holomorphic functions is a subsheaf of that [@Har77, Example II.1.0.2, p. 62].
-On an open subset of a variety the same assignment with regular functions is the structure sheaf $\OO_X$ [@Har77, Example II.1.0.1, p. 62] ([[D-VARREG]]).
+On a topological space $X$ the assignment $U\mapsto C^0(U,\RR)$ of continuous real-valued functions is a sheaf of rings; on a differentiable manifold $U\mapsto C^\infty(U)$ is a subsheaf of it, and on a complex manifold $U\mapsto\OO_X^{an}(U)$ of holomorphic functions is a subsheaf of that [@Har77, Example II.1.0.2].
+On an open subset of a variety the same assignment with regular functions is the structure sheaf $\OO_X$ [@Har77, Example II.1.0.1] ([[D-VARREG]]).
 :::
 
 ::: {.remark}

@@ -26,5 +26,5 @@ The hypothesis that $f$ has no zeros is needed: $f(z) = z$ on $\DD$ has $\min_{\
 :::
 
 ::: {.remark}
-This is the maximum modulus principle [@SS03, Theorem 4.5 and Corollary 4.6 of Chapter 3 (p. 92)] applied to $1/f$, which is holomorphic because $f$ is nonvanishing.
+This is the maximum modulus principle [@SS03, Theorem 4.5 and Corollary 4.6 of Chapter 3] applied to $1/f$, which is holomorphic because $f$ is nonvanishing.
 :::

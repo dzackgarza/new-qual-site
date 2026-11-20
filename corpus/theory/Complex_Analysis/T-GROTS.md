@@ -24,7 +24,7 @@ where for every $n\geq0$ and every $r\in(0,R]$,
 $$
 a_n=\frac{f^{(n)}(z_0)}{n!}=\frac{1}{2\pi i}\int_{\abs{w-z_0}=r}\frac{f(w)}{(w-z_0)^{n+1}}\dw=\frac{1}{2\pi r^n}\int_0^{2\pi}f(z_0+re^{i\theta})e^{-in\theta}\dtheta.
 $$
-In particular, $f$ is [[D-V6UQJ|analytic]] at every point of $\Omega$ [@SS03, Theorem 4.4 of Chapter 2 (p. 49)].
+In particular, $f$ is [[D-V6UQJ|analytic]] at every point of $\Omega$ [@SS03, Theorem 4.4 of Chapter 2].
 :::
 
 ::: {.remark}

@@ -24,7 +24,7 @@ Then $P$ has exactly $n$ zeros in $\CC$, counted with multiplicity, and
 $$
 P(z) = a_n\prod_{k=1}^{n}(z-z_k)
 $$
-for its zeros $z_1,\ldots,z_n$ listed with multiplicity [@SS03, Corollary 4.7 (p. 51)].
+for its zeros $z_1,\ldots,z_n$ listed with multiplicity [@SS03, Corollary 4.7].
 :::
 
 ::: {.remark}

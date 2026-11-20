@@ -17,7 +17,7 @@ review: draft
 
 ::: {.proposition}
 Let $V$ be a finite-dimensional vector space over a field $k$, and let $\theset{A_i}_{i \in I}$ be a family of [[FD-K6FVX|diagonalizable]] linear operators on $V$.
-The $A_i$ pairwise commute if and only if they are simultaneously diagonalizable: there is a basis of $V$ in which every $A_i$ is diagonal [@HK71, §6.5, p. 207].
+The $A_i$ pairwise commute if and only if they are simultaneously diagonalizable: there is a basis of $V$ in which every $A_i$ is diagonal [@HK71, §6.5].
 :::
 
 ::: {.remark}

@@ -24,5 +24,5 @@ $$
 the integral taken along any piecewise smooth path in $\Omega$ from $z_0$ to $z$.
 Then $g$ is well defined and holomorphic on $\Omega$, $g'=f'/f$, and $e^{g}=f$ on $\Omega$.
 
-This is the construction behind [@SS03, Theorem 6.2 of Chapter 3 (p. 100)], which asserts the existence of $g$ under the hypothesis that $\Omega$ is simply connected.
+This is the construction behind [@SS03, Theorem 6.2 of Chapter 3], which asserts the existence of $g$ under the hypothesis that $\Omega$ is simply connected.
 :::

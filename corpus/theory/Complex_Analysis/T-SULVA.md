@@ -19,5 +19,5 @@ review: draft
 Let $\Omega\subseteq\CC$ be a connected open set and let $(f_k)_{k\geq1}$ be [[D-OHFRH|univalent]] functions on $\Omega$ converging [[D-AIQG3|locally uniformly]] on $\Omega$ to $f$.
 Then $f$ is either univalent or constant.
 
-This is [@SS03, Proposition 3.5 of Chapter 8 (p. 227)].
+This is [@SS03, Proposition 3.5 of Chapter 8].
 :::

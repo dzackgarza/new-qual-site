@@ -31,5 +31,5 @@ $$
 c_k=\frac{f^{(k)}(z_0)}{k!}=\frac{1}{2\pi i}\int_\gamma\frac{f(\xi)}{(\xi-z_0)^{k+1}}\dxi.
 $$
 
-This is [@SS03, Theorem 4.1 (p. 47)].
+This is [@SS03, Theorem 4.1].
 :::
