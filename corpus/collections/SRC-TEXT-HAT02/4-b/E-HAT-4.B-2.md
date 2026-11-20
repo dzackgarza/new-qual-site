@@ -44,6 +44,32 @@ audit:
     $H^{2n}$ are $\ZZ$, and Poincare duality in the form of Corollary 3.39 makes the cup product
     pairing nonsingular, so $\alpha^2=H(p)\gamma$ with $\gamma$ a generator forces $H(p)=\pm1$.
     Nothing changed. Not claimed: a published solution, and no certificate.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.B Exercise 2 and its hint, with Corollary 4.9, Corollary 4.25, the
+    homotopy sequence of a fibration (§4.2, Theorem 4.41), the cellular chain complex of $C_p$ and
+    Poincaré duality for a closed orientable manifold (Theorem 3.30 and Corollary 3.39). The
+    dimension argument is correct: $m=n+k$; for $n>1$ the fibre is not $S^0$ over a simply connected
+    base, so $k>0$ and $m>n$; $\pi_n(S^m)=0\to\pi_n(S^n)=\ZZ\to\pi_{n-1}(S^k)$ forces
+    $k\le n-1$, while $k<n-1$ would give the exact segment $0=\pi_{k+1}(S^n)\to\pi_k(S^k)=\ZZ
+    \to\pi_k(S^m)=0$; and for $n=1$ the segment $\pi_1(S^m)\to\pi_1(S^1)\to\pi_0(S^k)$ forces
+    $k=0$, the double cover $S^0\to S^1\to S^1$. The Hopf-invariant half is also correct in
+    substance: $C_p$ is a closed orientable $2n$-manifold, its $H^n$ and $H^{2n}$ are $\ZZ$, and
+    Poincaré duality makes the cup product pairing perfect, so $\alpha^2=H(p)\beta$ with
+    $H(p)=\pm1$. Four repairs. (1) $C_p$ was identified with a cone-on-the-fibre picture without
+    saying what its boundary is; it is now the Thom space $D(E)/S(E)$ of the associated rank-$n$
+    disc bundle, a closed $2n$-manifold, which is what makes both the manifold statement and the
+    orientability argument work. (2) The cohomology of $C_p$ was asserted; it is now derived from
+    which cells exist, as on `E-HAT-4.B-1`. (3) The symbol $\beta$ was used for the generator of
+    $H^{2n}$ and then for an arbitrary element of $H^n$; the second is now $\alpha'=c\alpha$.
+    (4) The text cited pages for Theorem 4.41, Corollaries 4.9 and 4.25, Theorem 3.30 and
+    Corollary 3.39, and by the owner's correction of this date it cites the numbered statements
+    only. The prose is now a structured proof. No statement changed. No retained solution set
+    covers the exercise: Sam's set stops at §4.3. Not checked: no certificate; no obstruction-theory
+    input is used, so none was verified.
+
 ---
 
 ::: {.problem}
@@ -52,99 +78,119 @@ Show that if $S^k \to S^m \xrightarrow{p} S^n$ is a fiber bundle, then $m = 2n-1
 :::
 
 ::: {.solution}
-Suppose
-$$
-S^k\longrightarrow S^m\xrightarrow{p}S^n
-$$
-is a fiber bundle.
+No retained solution set covers this exercise — Sam's set stops at §4.3 and the other sets retained for this project have no §4.B solution — so the argument is the card's own, following the hint printed with the exercise. It uses Corollary 4.9, Corollary 4.25, the homotopy exact sequence of a fibration (Theorem 4.41), the cellular chain complex of $C_p$ (the cellular boundary formula of §2.2 with Theorem 2.35), and Poincaré duality in the form of Theorem 3.30 with Corollary 3.39.
 
-First compare dimensions. Since a fiber bundle is locally a product, the total space is locally modeled on
-$$
-\RR^n\times\RR^k,
-$$
-so
-$$
-m=n+k.
-\tag{1}
-$$
+Let $S^k\to S^m\xrightarrow{p}S^n$ be a fibre bundle. A bundle is locally a product, so $m=n+k$.
 
-Assume first that $n>1$. Then the base is simply connected. The fiber cannot be $S^0$, since a bundle with discrete two-point fiber over a simply connected base is the trivial double cover, whose total space is disconnected. Hence $k>0$, and by (1), $m>n$ and $m>k$.
+::: pf
 
-The long exact homotopy sequence of the bundle (Theorem 4.41, p. 376) contains
-$$
-\pi_n(S^m)\longrightarrow\pi_n(S^n)
-\longrightarrow\pi_{n-1}(S^k).
-$$
-Since $m>n$, the first group is zero (Corollary 4.9, p. 349), while
-$$
-\pi_n(S^n)\cong\ZZ
-$$
-(Corollary 4.25, p. 361). Exactness makes the map $\ZZ\to\pi_{n-1}(S^k)$ injective, so $\pi_{n-1}(S^k)\ne0$; but $\pi_i(S^k)=0$ whenever $i<k$ (Corollary 4.9, p. 349), forcing
-$$
-k\le n-1.
-\tag{2}
-$$
-On the other hand, if $k<n-1$, then by Corollary 4.9 (p. 349) the segment
-$$
-\pi_{k+1}(S^n)\longrightarrow\pi_k(S^k)
-\longrightarrow\pi_k(S^m)
-$$
-of the same sequence would be
-$$
-0\longrightarrow\ZZ\longrightarrow0
-$$
-(with $\pi_k(S^k)\cong\ZZ$ by Corollary 4.25, p. 361, and $\pi_k(S^m)=0$ because $k<m$); exactness would make the middle group a quotient of $0$, a contradiction. Hence
-$$
-k\ge n-1.
-\tag{3}
-$$
-From (2) and (3),
-$$
-\boxed{k=n-1},
-$$
-and then (1) gives
-$$
-\boxed{m=2n-1}.
-$$
-For $n=1$, the same dimension relation $m=1+k$ and the segment $\pi_1(S^m)\to\pi_1(S^1)\to\pi_0(S^k)$ force $k=0$: if $k>0$ then $\pi_0(S^k)=0$, so $\pi_1(S^m)\to\pi_1(S^1)=\ZZ$ would be onto, whereas $m=1+k\ge2$ gives $\pi_1(S^m)=0$. Hence $m=1$, which is the exceptional double-cover case $S^0\to S^1\to S^1$.
+::: {.pf-step #dimensions}
+$m=n+k$.
 
-Now suppose $n>1$, so the bundle has the form
-$$
-S^{n-1}\longrightarrow S^{2n-1}\xrightarrow{p}S^n.
-$$
-Consider the mapping cone
-$$
-C_p=S^n\cup_p CS^{2n-1}.
-$$
-This is a closed $2n$-manifold. Indeed, away from the copy of $S^n$ and the cone point this is clear. Near a point of the copy of $S^n$, choose a bundle trivialization over a small ball $U\subset S^n$. Coning each fiber $S^{n-1}$ produces a disk $D^n$, so a neighborhood is
-$$
-U\times D^n\cong\RR^{2n}.
-$$
-A neighborhood of the cone point is the cone on $S^{2n-1}$, hence a $2n$-disk. It is orientable: $C_p$ is the one-point compactification of the interior of the associated disk bundle $D^n\to D(E)\to S^n$, and the tangent bundle of $D(E)$ is $\pi^*TS^n\oplus\pi^*\xi$ for the rank $n$ vector bundle $\xi$ of the bundle; since $H^1(S^n;\ZZ_2)=0$ for $n>1$, every vector bundle over $S^n$ has $w_1(\xi)=0$, so $D(E)$ and hence $C_p$ are orientable.
+::: pf-proof
+A point of $S^n$ has a neighbourhood $U$ with $p^{-1}(U)$ homeomorphic to $U\times S^k$, so $m=\dim S^m=n+k$.
+:::
 
-The cellular cohomology of the mapping cone has
-$$
-H^n(C_p;\ZZ)\cong\ZZ,
-\qquad
-H^{2n}(C_p;\ZZ)\cong\ZZ.
-$$
-Let $\alpha$ and $\beta$ be generators in these degrees. By definition of the Hopf invariant,
-$$
-\alpha^2=H(p)\,\beta.
-$$
-Since $C_p$ is a closed connected orientable $2n$-manifold, Poincaré duality (Theorem 3.30, p. 241) makes the cup product pairing
-$$
-H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)
-\longrightarrow H^{2n}(C_p;\ZZ)\cong\ZZ
-$$
-nonsingular, in the form of Corollary 3.39 (p. 250): an element of $H^n$ generates an infinite cyclic summand if and only if it pairs to a generator with some element of the complementary degree. Write $\alpha^2=H(p)\,\gamma$ with $\gamma$ a generator of $H^{2n}(C_p;\ZZ)\cong\ZZ$. Since $H^n(C_p;\ZZ)\cong\ZZ=\ZZ\langle\alpha\rangle$, every element of $H^n$ is $\beta=m\alpha$, so $\alpha\smile\beta=mH(p)\,\gamma$; Corollary 3.39 supplies such a $\beta$ for which this is a generator of $H^{2n}$, forcing $mH(p)=\pm1$ and hence
-$$
-\boxed{H(p)=\pm1}.
-$$
+:::
 
-Thus every such sphere bundle satisfies
-$$
-\boxed{m=2n-1,\qquad k=n-1,}
-$$
-and for $n>1$ its projection has Hopf invariant $\pm1$.
+::: {.pf-step #nonzero-fibre}
+If $n>1$ then $k>0$, hence $m>n$.
+
+::: pf-proof
+For $n>1$ the base $S^n$ is simply connected. A bundle with fibre $S^0$ over a simply connected base is trivial, since the two possible images of a point in the fibre define a continuous local system with trivial monodromy, so its total space is $S^n\times S^0$, which is disconnected, whereas $S^m$ is connected. Hence $k\ne0$, that is $k>0$, and $m=n+k>n$.
+:::
+
+:::
+
+::: {.pf-step #upper}
+$k\le n-1$.
+
+::: pf-proof
+The fibration gives the exact segment $\pi_n(S^m)\to\pi_n(S^n)\to\pi_{n-1}(S^k)$. By step [](#nonzero-fibre){.pf-ref} $m>n$, so $\pi_n(S^m)=0$ by Corollary 4.9, while $\pi_n(S^n)\cong\ZZ$ by Corollary 4.25. Exactness makes $\ZZ\to\pi_{n-1}(S^k)$ injective, so $\pi_{n-1}(S^k)\ne0$; by Corollary 4.9 again, $\pi_i(S^k)=0$ for $i<k$, so $n-1\ge k$.
+:::
+
+:::
+
+::: {.pf-step #lower}
+$k\ge n-1$.
+
+::: pf-proof
+Suppose $k<n-1$. Then $k+1<n$, so $\pi_{k+1}(S^n)=0$ by Corollary 4.9, and $k<m$, so $\pi_k(S^m)=0$ by Corollary 4.9; also $\pi_k(S^k)\cong\ZZ$ by Corollary 4.25. The exact segment $\pi_{k+1}(S^n)\to\pi_k(S^k)\to\pi_k(S^m)$ is then $0\to\ZZ\to0$, which is impossible: exactness makes $\ZZ$ both a subgroup of $0$ and the image of $0$. Hence $k\ge n-1$.
+:::
+
+:::
+
+::: {.pf-step #exceptional}
+For $n=1$ the bundle is the double cover $S^0\to S^1\to S^1$, so $k=0$ and $m=1$.
+
+::: pf-proof
+Here $m=1+k$ and the exact segment is $\pi_1(S^m)\to\pi_1(S^1)\to\pi_0(S^k)$. If $k>0$ then $S^k$ is connected, so $\pi_0(S^k)$ is a single point and the map $\pi_1(S^1)\to\pi_0(S^k)$ is onto; exactness then makes $\pi_1(S^m)\to\pi_1(S^1)$ onto, whereas $m=1+k\ge2$ gives $\pi_1(S^m)=0$ and $\pi_1(S^1)=\ZZ$. Hence $k=0$ and $m=1$, which is the covering $S^0\to S^1\to S^1$.
+:::
+
+:::
+
+::: {.pf-step #dimension-conclusion}
+For $n>1$, $\boxed{m=2n-1,\ k=n-1}$.
+
+::: pf-proof
+Steps [](#upper){.pf-ref} and [](#lower){.pf-ref} give $k=n-1$, and step [](#dimensions){.pf-ref} gives $m=n+k=2n-1$. Step [](#exceptional){.pf-ref} treats $n=1$ separately, where the same two conclusions hold.
+:::
+
+:::
+
+::: {.pf-step #manifold}
+Let $n>1$, so the bundle is $S^{n-1}\to S^{2n-1}\xrightarrow{p}S^n$ with associated disc bundle $D^n\to D(E)\xrightarrow{\pi}S^n$ and sphere bundle $S(E)=S^{2n-1}$. Then $C_p$, the mapping cone of $p$, is the closed $2n$-manifold $D(E)/S(E)$.
+
+::: pf-proof
+The disc bundle $D(E)$ is a compact $2n$-manifold whose boundary is the sphere bundle $S(E)$, the total space of the bundle of unit vectors, which is $S^{2n-1}$ by step [](#dimension-conclusion){.pf-ref} and the hypothesis. Collapsing the boundary of a compact manifold with boundary gives a closed manifold of the same dimension, so $D(E)/S(E)$ is a closed $2n$-manifold. It is the mapping cone of $p$: the quotient of $D(E)$ by its boundary is the space obtained from $S^n$ by attaching the cone on each fibre, which is exactly $S^n\cup_p CS^{2n-1}$, and the homeomorphism is the identity on the zero section, which is a copy of $S^n$.
+:::
+
+:::
+
+::: {.pf-step #orientable}
+$C_p$ is orientable.
+
+::: pf-proof
+$D(E)$ carries the stable splitting $T D(E)\cong\pi^*(TS^n\oplus\xi)$ for the rank-$n$ vector bundle $\xi$ with $D(\xi)=E$, so $w_1(D(E))=\pi^*\bigl(w_1(S^n)+w_1(\xi)\bigr)$. Here $w_1(S^n)=0$ because $S^n$ is orientable, and $w_1(\xi)\in H^1(S^n;\ZZ_2)=0$ because $n>1$; hence $D(E)$ is orientable as a manifold with boundary, and collapsing the boundary preserves orientability.
+:::
+
+:::
+
+::: {.pf-step #cohomology}
+$H^n(C_p;\ZZ)\cong\ZZ$ and $H^{2n}(C_p;\ZZ)\cong\ZZ$, with $H^k(C_p;\ZZ)=0$ for the other $k>0$ other than $0$ and $n$.
+
+::: pf-proof
+As the mapping cone of $p$, $C_p$ has exactly one cell in each of the dimensions $0$, $n$ and $2n$, and none in any other dimension; its cellular chain complex is therefore $\ZZ$ in those three degrees and $0$ elsewhere. A boundary can be nonzero only between two of these degrees, which for $n>1$ never happens: the numbers $1$, $n+1$ and $2n+1$ are not in $\{0,n,2n\}$. So all boundaries vanish, the homology is $\ZZ$ in the three degrees, and the universal coefficient theorem, Theorem 3.2, gives the same for integral cohomology.
+:::
+
+:::
+
+::: {.pf-step #duality}
+The cup product pairing $H^n(C_p;\ZZ)\times H^n(C_p;\ZZ)\to H^{2n}(C_p;\ZZ)$ is perfect.
+
+::: pf-proof
+$C_p$ is a closed connected orientable $2n$-manifold by steps [](#manifold){.pf-ref} and [](#orientable){.pf-ref}, so Poincaré duality, Theorem 3.30, applies with any coefficients. Corollary 3.39 is its consequence for a closed orientable $n$-manifold: an element of $H^k$ is a generator of an infinite cyclic direct summand exactly when it pairs to a generator of $H^n$ with some element of $H^{n-k}$. Taking the complementary degrees to be $n$ and $2n-n=n$, this says that $\alpha\in H^n(C_p;\ZZ)$ generates the free group $H^n$ exactly when there is some $\alpha''\in H^n(C_p;\ZZ)$ with $\alpha\smile\alpha''$ a generator of $H^{2n}$.
+:::
+
+:::
+
+::: {.pf-step #hopf}
+$H(p)=\pm1$.
+
+::: pf-proof
+Let $\alpha$ generate $H^n(C_p;\ZZ)$ and $\beta$ generate $H^{2n}(C_p;\ZZ)$; then $\alpha^2=H(p)\beta$ defines the Hopf invariant of $p$, by §4.B. By step [](#cohomology){.pf-ref} $H^n=\ZZ\alpha$, so an element pairing with $\alpha$ to a generator has the form $c\alpha$ with $c\in\ZZ$, and by step [](#duality){.pf-ref} there is such a $c$ with $\alpha\smile c\alpha=c\,H(p)\beta$ a generator of $H^{2n}(C_p;\ZZ)\cong\ZZ$. A multiple $c\,H(p)\beta$ is a generator exactly when $c\,H(p)=\pm1$, which forces $H(p)=\pm1$.
+:::
+
+:::
+
+::: {.pf-step}
+Every sphere bundle $S^k\to S^m\to S^n$ satisfies $\boxed{m=2n-1,\ k=n-1}$, and when $n>1$ its projection has $\boxed{H(p)=\pm1}$.
+
+::: pf-proof
+The dimension statements are step [](#dimension-conclusion){.pf-ref}, the case $n=1$ being step [](#exceptional){.pf-ref}, and the Hopf invariant statement is step [](#hopf){.pf-ref}, which applies to every bundle with base $S^n$ for $n>1$ through the manifold $C_p$ of step [](#manifold){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
