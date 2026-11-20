@@ -64,7 +64,7 @@ audit:
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.13 (Properties of Morphisms of Finite Type), printed p. 30 of the held scan, transcribed and checked against the exercise as printed: part (a), that a closed immersion is of finite type; part (b), the affine restatement with $f^{-1}(U)=\Spec A$ for $A$ a finitely generated $k$-algebra; part (c), that $f$ finite type and $Y$ quasi-compact give quasi-compactness; and (i) to (vi), that the property is local on the target.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.13 (Properties of Morphisms of Finite Type), transcribed and checked against the exercise as printed: part (a), that a closed immersion is of finite type; part (b), the affine restatement with $f^{-1}(U)=\Spec A$ for $A$ a finitely generated $k$-algebra; part (c), that $f$ finite type and $Y$ quasi-compact give quasi-compactness; and (i) to (vi), that the property is local on the target.
 
 ::: pf
 

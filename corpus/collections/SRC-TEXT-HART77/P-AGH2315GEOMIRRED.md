@@ -262,7 +262,7 @@ Give examples of integral schemes which are neither geometrically irreducible no
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.15, printed p. 31 of the held scan, transcribed and checked against the exercise as printed: that (i) and (ii) are equivalent and (iii) is trivial, the implication (ii) to (iii) by reducing to the purely inseparable case, the series of simple extensions, and the homeomorphism $X_k\cong X_{k'}$ for finite $k'/k$ which carries the general case.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.15, transcribed and checked against the exercise as printed: that (i) and (ii) are equivalent and (iii) is trivial, the implication (ii) to (iii) by reducing to the purely inseparable case, the series of simple extensions, and the homeomorphism $X_k\cong X_{k'}$ for finite $k'/k$ which carries the general case.
 The proof is the Stacks Project's, transcribed step by step below. The
 statements and proofs were read in the tag files
 `tmp/sources/stacks-tags/<TAG>.md`, which are the site's build from

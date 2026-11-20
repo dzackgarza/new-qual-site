@@ -33,7 +33,7 @@ Show that $I$ and $I'$ determine the same closed subscheme.
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.12 (Closed Subschemes of $\Proj S$), printed p. 30 of the held scan, transcribed and checked against the exercise as printed: that $\varphi$ preserves degrees so $S_+\subseteq T_+$, the one-to-one correspondence between homogeneous prime ideals of $T$ containing $\varphi(S_+)$ and homogeneous prime ideals of $S$ containing $S_+$, the identification $\Proj(T)\cong V(\ker\varphi)$, and part (b) on the quotients $S/I$.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.12 (Closed Subschemes of $\Proj S$), transcribed and checked against the exercise as printed: that $\varphi$ preserves degrees so $S_+\subseteq T_+$, the one-to-one correspondence between homogeneous prime ideals of $T$ containing $\varphi(S_+)$ and homogeneous prime ideals of $S$ containing $S_+$, the identification $\Proj(T)\cong V(\ker\varphi)$, and part (b) on the quotients $S/I$.
 
 ::: pf
 

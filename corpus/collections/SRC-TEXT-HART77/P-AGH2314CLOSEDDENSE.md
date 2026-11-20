@@ -28,7 +28,7 @@ Give an example to show that this is not true for arbitrary schemes.
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.14, printed p. 31 of the held scan, transcribed and checked against the exercise as printed: the reduction to $X=\Spec A$ with $A$ a finitely generated $k$-algebra, hence a Jacobson ring, the set $\operatorname{Spm}A$ of maximal ideals identified with the closed points, and the argument that a proper open subset meets no maximal ideal in a dense subset, together with the counterexample $\Spec A=\{(0),\mathfrak m\}$ over a non-Jacobson ring.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.14, transcribed and checked against the exercise as printed: the reduction to $X=\Spec A$ with $A$ a finitely generated $k$-algebra, hence a Jacobson ring, the set $\operatorname{Spm}A$ of maximal ideals identified with the closed points, and the argument that a proper open subset meets no maximal ideal in a dense subset, together with the counterexample $\Spec A=\{(0),\mathfrak m\}$ over a non-Jacobson ring.
 
 ::: pf
 

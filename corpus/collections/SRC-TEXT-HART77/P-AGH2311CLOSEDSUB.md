@@ -46,7 +46,7 @@ A second proof using sheaves of ideals is given in [@Har77, Corollary II.5.10].
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.11 (Closed Subschemes), printed p. 29 of the held scan, transcribed and checked against the exercise as printed: the entry is headed (b) and proves first that a closed subscheme $Y\hookrightarrow X=\Spec A$ is affine locally, taking a neighbourhood $U\cap Y=\Spec A'$ at each point, then the comparison of the two ring homomorphisms through $\theta:A/\mathfrak a\to B$, the conclusion that $\theta$ is a homeomorphism on the underlying space, and parts (a) and (c) -- that $f^{-1}(U)$ is a closed immersion with $f^{-1}(U)=\Spec A/I$ and the affine case with $I=\sqrt I$.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.11 (Closed Subschemes), transcribed and checked against the exercise as printed: the entry is headed (b) and proves first that a closed subscheme $Y\hookrightarrow X=\Spec A$ is affine locally, taking a neighbourhood $U\cap Y=\Spec A'$ at each point, then the comparison of the two ring homomorphisms through $\theta:A/\mathfrak a\to B$, the conclusion that $\theta$ is a homeomorphism on the underlying space, and parts (a) and (c) -- that $f^{-1}(U)$ is a closed immersion with $f^{-1}(U)=\Spec A/I$ and the affine case with $I=\sqrt I$.
 
 ::: pf
 

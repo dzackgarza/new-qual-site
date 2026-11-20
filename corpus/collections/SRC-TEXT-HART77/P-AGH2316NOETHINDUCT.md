@@ -30,7 +30,7 @@ Then $\mcp$ holds for $X$.
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.16 (Noetherian Induction), printed p. 31 of the held scan, transcribed and checked against the exercise as printed: the set $\mathcal S$ of closed subsets failing the property, a minimal element of it by noetherianness, and the contradiction from the proper closed subsets, which is the induction the exercise asks for.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.3.16 (Noetherian Induction), transcribed and checked against the exercise as printed: the set $\mathcal S$ of closed subsets failing the property, a minimal element of it by noetherianness, and the contradiction from the proper closed subsets, which is the induction the exercise asks for.
 
 ::: pf
 

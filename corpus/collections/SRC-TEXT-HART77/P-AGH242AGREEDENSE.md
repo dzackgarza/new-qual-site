@@ -37,7 +37,7 @@ Give examples to show that this result fails if either
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.2, printed p. 34 of the held scan, transcribed and checked against the exercise as printed at printed p. 105: the fibre product $X\times_YX$ with the diagonal, equalisers in the category of $S$-schemes, and the observation that the set where two $S$-morphisms agree is the inverse image of the diagonal, closed when $Y$ is separated over $S$; the counterexample without separatedness is the two inclusions of the affine line into the affine line with the doubled origin.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.2, transcribed and checked against the exercise as printed: the fibre product $X\times_YX$ with the diagonal, equalisers in the category of $S$-schemes, and the observation that the set where two $S$-morphisms agree is the inverse image of the diagonal, closed when $Y$ is separated over $S$; the counterexample without separatedness is the two inclusions of the affine line into the affine line with the doubled origin.
 
 ::: pf
 
