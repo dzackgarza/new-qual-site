@@ -45,6 +45,15 @@ audit:
     earlier steps ('Step s4 and the ring homomorphism property', 'Step s5', 'Step s1') and the card
     closed with a `pf-qed` naming one label, which STYLE-08 forbids. Four steps now, one per claim,
     each carrying its argument. Not claimed: a certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; Exercise 3.2.6, Example 3.12 and Proposition 3.10 are cited
+    by number (or, where Hatcher prints none, by the section that carries them), each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.problem}
@@ -53,7 +62,7 @@ Use cup products to compute the map $H^*(\CP^n; \ZZ) \to H^*(\CP^n; \ZZ)$ induce
 :::
 
 ::: {.solution}
-Write $f$ for the map induced by $(z_0,\dots,z_n)\mapsto(z_0^d,\dots,z_n^d)$. The exercise is Exercise 6 of §3.2, printed p.~229, and the answer is
+Write $f$ for the map induced by $(z_0,\dots,z_n)\mapsto(z_0^d,\dots,z_n^d)$. The exercise is Exercise 6 of §3.2, and the answer is
 $$
 f^*(x^k)=d^k x^k\quad\text{on }H^{2k}(\CP^n;\ZZ),
 $$
@@ -79,7 +88,7 @@ $H^*(\CP^n;\ZZ)=\ZZ[x]/(x^{n+1})$ with $\gradeddegree{x}=2$, so $H^{2k}=\ZZ$ for
 
 ::: pf-proof
 
-This is Example 3.12 on printed p.~213.
+This is Example 3.12.
 
 :::
 
@@ -91,7 +100,7 @@ $f^*(x)=dx$ for every $n$.
 
 ::: pf-proof
 
-Let $i\colon\CP^1\hookrightarrow\CP^n$ be the inclusion of a coordinate line; $f$ preserves it, and $fi$ is the map of the first step. Naturality of $i^*$ (Proposition 3.10, printed p.~210) gives $i^*f^*(x)=(fi)^*(x)=d\,i^*(x)$, and $i^*\colon H^2(\CP^n)\to H^2(\CP^1)$ is an isomorphism of copies of $\ZZ$, so $f^*(x)=dx$.
+Let $i\colon\CP^1\hookrightarrow\CP^n$ be the inclusion of a coordinate line; $f$ preserves it, and $fi$ is the map of the first step. Naturality of $i^*$ (Proposition 3.10) gives $i^*f^*(x)=(fi)^*(x)=d\,i^*(x)$, and $i^*\colon H^2(\CP^n)\to H^2(\CP^1)$ is an isomorphism of copies of $\ZZ$, so $f^*(x)=dx$.
 
 :::
 

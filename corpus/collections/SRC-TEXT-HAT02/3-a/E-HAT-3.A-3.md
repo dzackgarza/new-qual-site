@@ -70,6 +70,15 @@ audit:
     (PDF 204) and the topological form for a space X on printed p. 198 (PDF 207), while printed
     p. 197 (PDF 206) is the section's title page and states nothing. The citation is corrected to
     those two pages.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; Corollary 3A.7(a), Theorem 3A.3, Proposition 3A.5(3) and Corollary 3A.6(a) are cited
+    by number (or, where Hatcher prints none, by the section that carries them), each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.problem}
@@ -77,7 +86,7 @@ Show that if $\tilde{H}^n(X; \QQ)$ and $\tilde{H}^n(X; \ZZ_p)$ are zero for all 
 :::
 
 ::: {.solution}
-The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a complete proof of that corollary on pp. 266--267; the four steps below are that proof, with each step's reference supplied. This is the complete published argument the card relies on, not an independently assembled proof.
+The exercise is Hatcher's Corollary 3A.7(a) verbatim, and the book prints a complete proof of that corollary; the four steps below are that proof, with each step's reference supplied. This is the complete published argument the card relies on, not an independently assembled proof.
 
 ::: pf
 
@@ -93,7 +102,7 @@ For a field $F$, $C^{n}(X;F)=\Hom_{\ZZ}(C_{n}(X),F)\cong\Hom_{F}(C_{n}(X)\otimes
 For $A_{n}=\widetilde H_{n}(X;\ZZ)$, multiplication by every nonzero integer is bijective; hence $A_{n}$ is a vector space over $\QQ$.
 
 ::: pf-proof
-The universal coefficient theorem, Theorem 3A.3 (p. 264), applied to the augmented singular chain complex, which is a complex of free abelian groups, gives for each prime $p$ the exact sequence
+The universal coefficient theorem, Theorem 3A.3, applied to the augmented singular chain complex, which is a complex of free abelian groups, gives for each prime $p$ the exact sequence
 $$0\to A_{n}\otimes\ZZ_{p}\to\widetilde H_{n}(X;\ZZ_{p})\to\Tor(A_{n-1},\ZZ_{p})\to0 .$$
 Since $A_{n}\otimes\ZZ_{p}=A_{n}/pA_{n}$ and the middle term vanishes by step [](#fields){.pf-ref}, the sequence in degree $n$ gives $A_{n}/pA_{n}=0$, so multiplication by $p$ is surjective; the sequence in degree $n+1$ gives $\Tor(A_{n},\ZZ_{p})=A_{n}[p]=0$ by Proposition 3A.5(5) (p. 265), so multiplication by $p$ is injective. Hence multiplication by $p$ is bijective for every prime, and therefore by every nonzero integer. A torsionfree divisible abelian group is a vector space over $\QQ$: divisibility supplies the rational scalars and torsionfreeness makes them well defined.
 :::
@@ -103,7 +112,7 @@ Since $A_{n}\otimes\ZZ_{p}=A_{n}/pA_{n}$ and the middle term vanishes by step []
 $A_{n}=0$ for every $n$.
 
 ::: pf-proof
-By the universal coefficient theorem with $\QQ$ coefficients, whose $\Tor$ term vanishes by Proposition 3A.5(3), $\widetilde H_{n}(X;\QQ)\cong A_{n}\otimes\QQ$, which is Corollary 3A.6(a) (p. 266) in unreduced form. For a $\QQ$-vector space $A_{n}$ the map $a\mapsto a\otimes1$ is an isomorphism $A_{n}\to A_{n}\otimes\QQ$, and $\widetilde H_{n}(X;\QQ)=0$ by step [](#fields){.pf-ref}; so $A_{n}=0$.
+By the universal coefficient theorem with $\QQ$ coefficients, whose $\Tor$ term vanishes by Proposition 3A.5(3), $\widetilde H_{n}(X;\QQ)\cong A_{n}\otimes\QQ$, which is Corollary 3A.6(a) in unreduced form. For a $\QQ$-vector space $A_{n}$ the map $a\mapsto a\otimes1$ is an isomorphism $A_{n}\to A_{n}\otimes\QQ$, and $\widetilde H_{n}(X;\QQ)=0$ by step [](#fields){.pf-ref}; so $A_{n}=0$.
 :::
 :::
 

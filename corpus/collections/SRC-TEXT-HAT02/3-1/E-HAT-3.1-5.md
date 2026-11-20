@@ -49,6 +49,15 @@ audit:
     f$ as the card already had it, and the map $H^1(X;G)\to\operatorname{Hom}(\pi_1(X,x_0),G)$
     that the printed bracket asserts, with Theorem 3.2 (printed p. 195) cited rather than
     re-proved. Not claimed: a certificate.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; the definition of the cochain complex and its coboundary in §3.1 are cited
+    by number (or, where Hatcher prints none, by the section that carries them), each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.problem}
@@ -66,7 +75,7 @@ Regarding a cochain $\varphi \in C^1(X; G)$ as a function from paths in $X$ to $
 :::
 
 ::: {.solution}
-Hatcher defines $C^n(X;G)=\operatorname{Hom}(C_n(X),G)$ with $\delta=\partial^*$ on printed p.~191. So a $1$-cochain $\varphi$ is a function from paths in $X$ to $G$, and it is a cocycle exactly when $\varphi(\partial\sigma)=0$ for every singular $2$-simplex $\sigma$. The exercise is Exercise 5 of §3.1, printed p.~205.
+Hatcher defines $C^n(X;G)=\operatorname{Hom}(C_n(X),G)$ with $\delta=\partial^*$ (§3.1). So a $1$-cochain $\varphi$ is a function from paths in $X$ to $G$, and it is a cocycle exactly when $\varphi(\partial\sigma)=0$ for every singular $2$-simplex $\sigma$. The exercise is Exercise 5 of §3.1, printed p.~205.
 
 ::: pf
 
@@ -116,7 +125,7 @@ where $c_{x}$ is the constant path at $x$ (the four outer edges are the bottom $
 
 ::: pf-proof
 
-A $0$-cochain is a function $\psi$ on the vertices, and $\delta\psi(f)=\psi(\partial f)=\psi(f(1))-\psi(f(0))$ by the definition on printed p.~191, which involves the endpoints only.
+A $0$-cochain is a function $\psi$ on the vertices, and $\delta\psi(f)=\psi(\partial f)=\psi(f(1))-\psi(f(0))$ by the definition of §3.1, which involves the endpoints only.
 
 :::
 
