@@ -42,7 +42,7 @@ where $B_k = B_k(0)$ are the Bernoulli numbers. For the definition of $B_k(x)$ a
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 6, Problem 4, printed p. 180).
+The book marks this problem with an asterisk (Chapter 6, Problem 4).
 :::
 
 ::: {.solution}
