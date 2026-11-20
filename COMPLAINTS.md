@@ -10108,3 +10108,15 @@ Three remain from the eight and are not recorded here as read: `E-HAT-4.2-5`, `-
 **Checks, on the two cards touched.** `./.venv/bin/python -m qualc.authoring check` on both, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh` on both, steps 1 to 8 and 1 to 12 with QED labels present; `tools/sync_macros.py --check`, silent after a raw `|K_C\otimes\mathcal L|` was replaced by `\linearsystem{K_C\otimes\mathcal L}` (STYLE-04); `.scratch/report_check.py` on both, "2 card(s) checked, 0 diagnostic(s)". Not run: whole-corpus `qualc check` and `tools/backlog.py --with-queues`.
 
 **Repair.** The card commits are `a0f4d9db08`, `c2f490f474`, `4616cc3c62` and `a4a1b420b7`; this record in the COMPLAINTS commit that carries it, which changes no card.
+
+## 2026-11-19: #168's twenty-fourth round — Lemma 12 located, and what it does and does not give
+
+**Object and need.** The twenty-third round read Lemma 10; this round went after Lemma 12, which the brief pairs with it. No card is changed.
+
+**Lemma 12 is not where the earlier estimate put it, and its hypothesis is the point.** PDF p. 27 does not carry it. The text version has its statement beginning at its line 289: "LEMMA 12. Let $R_0<R_1<R_2<\cdots$ be a strictly ascending sequence of two dimensional regular local domains with a common quotient field $K$, let $\ldots$" — so the lemma is about a strictly ascending chain of **two-dimensional** regular local domains, and its proof begins by inserting the intermediate successive quadratic transforms between $R_i$ and $R_{i+1}$, "we may assume without loss of generality", and then computes $R_i\cap M_{v^\bullet}=R_i\cap\bigl(\bigcup_{j}M_j\bigr)=R_i\cap\bigl(\bigcup_{j=i+1}^\infty M_j\bigr)$.
+
+**That is why the card is right to say Lemma 12 does not close the exercise.** By Lemma 10 the quadratic transforms along $v$ satisfy $s-t=d-d^*$, so their dimensions fall with the $R$-dimension of $v$; the chain in the third kind is therefore not a chain of two-dimensional rings in general, and Lemma 12's hypothesis is about exactly the case in which the dimension stays at two throughout. The card's event records the same judgement in its own words: Abhyankar's quadratic transform is defined for a regular local domain along a valuation and not for the local centre of a blowup, "and his Lemma 12 needs that identification, so it does not close this exercise".
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: Lemma 12's statement down to the point where the extraction truncates it, and its proof's opening; not the whole statement or proof. PDF p. 27 is rendered at `.scratch/abhy-p27-27.png` but was not needed. The five steps of V.5.6 remain unread, so #168's acceptance is still unmet for that card; V.5.8(b), V.4.16's named steps, IV.2.3 and IV.3.11 are not reached.
