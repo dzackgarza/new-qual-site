@@ -87,7 +87,7 @@ The fundamental group of the Poincaré homology sphere is perfect and nontrivial
 ::: {.example title="A homology isomorphism need not be a homotopy equivalence"}
 Collapsing the complement of an open $3$-ball in the Poincaré homology sphere $P$ gives a map $P\to S^3$ of degree $1$, which induces isomorphisms on all homology groups.
 It is not a homotopy equivalence, since $\pi_1(P)\neq 1$.
-By [[T-SDEOY|Whitehead's theorem]], a map between simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence.
+By [[T-SDEOY|Whitehead's theorem]] in its homology form [@Hat02, Corollary 4.33], a map between simply connected CW complexes inducing isomorphisms on all homology groups is a homotopy equivalence.
 
 :::
 
