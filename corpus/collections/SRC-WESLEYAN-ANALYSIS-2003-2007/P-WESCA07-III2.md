@@ -49,7 +49,7 @@ Hint: represent $f(z)$ as a path integral along a convenient path.
 :::
 
 ::: {.solution}
-The item is Section 3 item 2 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 ($\abs{f'(z)}<1$ with $f(0)=f'(0)=0$ forces $\abs{f(z)}\le\abs{z}^2/2$), on PDF p. 11 (printed p. 4 of the 2007 complex-analysis paper) of the retained scan
+The item is Section 3 item 2 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 ($\abs{f'(z)}<1$ with $f(0)=f'(0)=0$ forces $\abs{f(z)}\le\abs{z}^2/2$), in the retained scan
 assets/attachments/analysis_2003-2007.pdf.
 
 

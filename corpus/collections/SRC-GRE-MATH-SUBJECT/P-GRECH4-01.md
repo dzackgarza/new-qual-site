@@ -43,7 +43,7 @@ such that $y = 0$ when $x = 0$. What is the value of $f(1)$?
 :::
 
 ::: {.solution}
-This is question 1 of the Chapter 4 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`, on PDF p. 188; the statement below is its wording.
+This is question 1 of the Chapter 4 Review Questions of *Cracking the GRE Mathematics Subject Test*, retained in this repository as `assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf`; the statement below is its wording.
 
 ::: pf
 

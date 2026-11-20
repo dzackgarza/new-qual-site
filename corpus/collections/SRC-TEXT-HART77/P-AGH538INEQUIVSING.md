@@ -200,7 +200,7 @@ $$
 \delta_0(C_a)=\binom42+\binom22=7,\qquad
 \delta_0(C_b)=\binom42+\binom32=9.
 $$
-The two multiplicities and the two values of $\delta_0$ are computed in Exercise 8 of §3 of Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions (solution by Yi-Heng), PDF p. 13 for (a) and PDF p. 14 for (b), and the first blowup of (a) is Math StackExchange question 2867504, "Configuration of infinitely near points", comment 5918658. That the two germs are not equivalent is step [](#claim-false){.pf-ref}.
+The two multiplicities and the two values of $\delta_0$ are computed in Exercise 8 of §3 of Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions (solution by Yi-Heng), in parts (a) and (b), and the first blowup of (a) is Math StackExchange question 2867504, "Configuration of infinitely near points", comment 5918658. That the two germs are not equivalent is step [](#claim-false){.pf-ref}.
 
 ::: pf
 
@@ -249,7 +249,7 @@ $$
 Q=(u,v)=(0,0).
 $$
 
-This is the first blowup of Exercise 8 of §3, part (a), PDF p. 13, done there in the coordinates $xy_1=x_1y$ and in the chart $y_1=1$, where the curve is $x_1^4-x_1y$; and it is Math StackExchange comment 5918658, whose substitution $(x,y)\mapsto(xy,y)$ gives $x^4y^4-xy^5$ and the proper transform $x^4-xy$. The letters are the only difference: this card's $u$ is their $x_1$ and its $v$ is their $y$.
+This is the first blowup of Exercise 8 of §3, part (a), done there in the coordinates $xy_1=x_1y$ and in the chart $y_1=1$, where the curve is $x_1^4-x_1y$; and it is Math StackExchange comment 5918658, whose substitution $(x,y)\mapsto(xy,y)$ gives $x^4y^4-xy^5$ and the proper transform $x^4-xy$. The letters are the only difference: this card's $u$ is their $x_1$ and its $v$ is their $y$.
 :::
 
 :::
@@ -277,7 +277,7 @@ The two strict branches are already smooth at $Q$: they are the line
 $u=0$ and the branch $v=u^3$, with distinct tangent directions $u=0$ and
 $v=0$.
 
-Math StackExchange comment 5918658 puts the multiplicity as "the singular point $(0,0)$ has multiplicity $2$" for this proper transform, and Exercise 8 of §3, part (a), PDF p. 13, calls the same curve a node.
+Math StackExchange comment 5918658 puts the multiplicity as "the singular point $(0,0)$ has multiplicity $2$" for this proper transform, and Exercise 8 of §3, part (a), calls the same curve a node.
 :::
 
 :::
@@ -323,7 +323,7 @@ $$
 =7.
 $$
 
-Exercise 8 of §3, part (a), PDF p. 13, prints the value: "which is a node. Thus, $\delta=7$".
+Exercise 8 of §3, part (a), prints the value: "which is a node. Thus, $\delta=7$".
 :::
 
 :::
@@ -348,7 +348,7 @@ Removing the exceptional factor $v^4$ gives the displayed strict transform.
 On $E_1:(v=0)$ its equation is $u^4=0$, so again its unique point over the
 origin is $Q=(0,0)$.
 
-This blowup is that of Exercise 8 of §3, part (b), PDF p. 14, in the same coordinates $xy_1=x_1y$ and the chart $y_1=1$. The source prints the strict transform as $x_1^4-x_1^2y^3-x_1^2y^3+y^4$, the middle term being repeated where the chart requires $x_1^2y$ and $x_1^2y^3$; the equation above is the one the substitution gives.
+This blowup is that of Exercise 8 of §3, part (b), in the same coordinates $xy_1=x_1y$ and the chart $y_1=1$. The source prints the strict transform as $x_1^4-x_1^2y^3-x_1^2y^3+y^4$, the middle term being repeated where the chart requires $x_1^2y$ and $x_1^2y^3$; the equation above is the one the substitution gives.
 :::
 
 :::
@@ -433,7 +433,7 @@ $$
 =9.
 $$
 
-Exercise 8 of §3, part (b), PDF p. 14, prints the value: "then the strict transformation is non-singular. Thus, $\delta=9$".
+Exercise 8 of §3, part (b), prints the value: "then the strict transformation is non-singular. Thus, $\delta=9$".
 :::
 
 :::
@@ -454,7 +454,7 @@ $$
 $$
 Consequently they do not have the same configuration with the same
 multiplicities, and in particular they are not equivalent in the sense of
-(3.9.4), printed p. 393: that equivalence preserves multiplicities and incidence at every step, while by (3.9.3), printed p. 393, $\delta_P$ is the sum of $\binom{r_Q}{2}$ over the infinitely near singular points, so the two values $7$ and $9$ separate the germs.
+(3.9.4): that equivalence preserves multiplicities and incidence at every step, while by (3.9.3) $\delta_P$ is the sum of $\binom{r_Q}{2}$ over the infinitely near singular points, so the two values $7$ and $9$ separate the germs.
 
 The inference from the difference of the two invariants to non-equivalence is the card's own.
 :::
@@ -470,13 +470,13 @@ invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.8, printed p. 395, with (3.9.3) and (3.9.4) on printed p. 393. The printed assertion that the two germs have the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, is false: the multiplicity sequences are $4,2$ and $4,3$, with $\delta_0=7$ and $9$.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.8, with (3.9.3) and (3.9.4). The printed assertion that the two germs have the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, is false: the multiplicity sequences are $4,2$ and $4,3$, with $\delta_0=7$ and $9$.
 
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), PDF pp. 13--14, blows up both germs in the coordinates $xy_1=x_1y$. For (a) the chart $y_1=1$ gives $x_1^4-x_1y$, "which is a node. Thus, $\delta=7$". For (b) the same chart gives a point of multiplicity $3$, and after one more blowup the strict transform is nonsingular, "Thus, $\delta=9$". The equation the entry prints for (b) is $x_1^4-x_1^2y^3-x_1^2y^3+y^4$, whose middle term is repeated where the chart requires $x_1^2y$ and $x_1^2y^3$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up, it has a cusp. As a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and asserts, without computing either, that the two $\delta$'s agree for the replaced pair.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 8 of §3 (solution by Yi-Heng), blows up both germs in the coordinates $xy_1=x_1y$. For (a) the chart $y_1=1$ gives $x_1^4-x_1y$, "which is a node. Thus, $\delta=7$". For (b) the same chart gives a point of multiplicity $3$, and after one more blowup the strict transform is nonsingular, "Thus, $\delta=9$". The equation the entry prints for (b) is $x_1^4-x_1^2y^3-x_1^2y^3+y^4$, whose middle term is repeated where the chart requires $x_1^2y$ and $x_1^2y^3$. The entry then adds "I guess the equation in (b) should be $x^4-x^2y^2-x^2y^5+y^8$, then after the first blowing up, it has a cusp. As a result, (a) and (b) is not equivalent while their $\delta$'s are both 7", which replaces the printed equation by a different one and asserts, without computing either, that the two $\delta$'s agree for the replaced pair.
 
 Math StackExchange question 2867504, "Configuration of infinitely near points", is the same observation asked about this exercise. Comment 5918658 by the asker computes the proper transform of the first curve after $(x,y)\mapsto(xy,y)$ as $x^4-xy$, with a singular point of multiplicity $2$, which is step [](#a-first-blowup-transform){.pf-ref} and step [](#a-infinitely-near-mult-two){.pf-ref}; comment 5918691 by Asal Beag Dubh withdraws his earlier reply that both proper transforms have a point of multiplicity $3$.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.3.8: "Clearly these two singularities have the same multiplicity by looking at the lowest term (it's 4). The configuration of infinitely near singular points can be seen as in 3.7 ... To see they are not equivalent, note to compute the multiplicity sequence, we use the list `L=resolve(I,1)` command as in 3.7 which gives 3 charts for (a) yet (4) for (b)." He asserts the equality of configurations without computing the sequences; his chart count is three for (a) against four for (b).
 
-Yang Pi-Yeh, *Hartshorne Solutions* (2019), Solution 5.3.8, printed pp. 108--109, its (a) on p. 108 and its (b) on p. 109: in each germ he sets $x=x_1y_1$, $y=y_1$, records the singular point of $x_1^4-x_1y_1$ as of multiplicity $2$ and that of $x_1^4-x_1^2y_1-x_1^2y_1^3+y_1^4$ as of multiplicity $3$, blows up once more, calls the result smooth in (a), where one further blowup is asked for the normal crossings, and nonsingular at the origin in (b), and closes "So on these two curves, $\delta_{(0,0)}$ are the same. But two curves are not equivalent." The sequences his two charts produce are $4,2$ and $4,3$, so the two $\delta$'s are $7$ and $9$, and the equality he states is asserted without either being computed.
+Yang Pi-Yeh, *Hartshorne Solutions* (2019), Solution 5.3.8, its (a) and its (b): in each germ he sets $x=x_1y_1$, $y=y_1$, records the singular point of $x_1^4-x_1y_1$ as of multiplicity $2$ and that of $x_1^4-x_1^2y_1-x_1^2y_1^3+y_1^4$ as of multiplicity $3$, blows up once more, calls the result smooth in (a), where one further blowup is asked for the normal crossings, and nonsingular at the origin in (b), and closes "So on these two curves, $\delta_{(0,0)}$ are the same. But two curves are not equivalent." The sequences his two charts produce are $4,2$ and $4,3$, so the two $\delta$'s are $7$ and $9$, and the equality he states is asserted without either being computed.
 :::

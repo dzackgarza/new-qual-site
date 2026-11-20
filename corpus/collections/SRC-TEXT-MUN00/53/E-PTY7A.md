@@ -56,7 +56,7 @@ Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $
 
 The argument is the retained published solution of dbFin, "Section 53: Problem 1 Solution" (`tmp/sources/dbfin/section-53-covering-spaces/problem-1-solution.txt`, read 2026-11-11): $p$ is continuous and surjective, and $p^{-1}(X)=\bigcup_{y\in Y}X\times\{y\}$, each slice $X\times\{y\}$ being open in $X\times Y$ because $Y$ is discrete and homeomorphic to $X$. The printed statement is kept as printed, and the hypothesis it omits is named in step [](#hypothesis){.pf-ref}, with a counterexample: for $X$ a one-point space and $Y$ empty the projection is not surjective, so it is not a covering map.
 
-Let $Y$ be discrete and $p:X\times Y\to X$ the projection on the first coordinate. In Munkres a covering map is a continuous surjection $p:E\to B$ such that every point of $B$ has an evenly covered neighbourhood (printed p. 336).
+Let $Y$ be discrete and $p:X\times Y\to X$ the projection on the first coordinate. In Munkres a covering map is a continuous surjection $p:E\to B$ such that every point of $B$ has an evenly covered neighbourhood (§53).
 
 ::: pf
 

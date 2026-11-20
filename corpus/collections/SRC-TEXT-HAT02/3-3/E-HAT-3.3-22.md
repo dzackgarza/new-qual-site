@@ -207,5 +207,5 @@ $$
 H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G).
 $$
 
-This is **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, printed pp. 1--2, from [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`. The fixed overlap is $(-1,1)$, with the side-pair homotopies and cofinal compact products proved above.
+This is **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, from [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`. The fixed overlap is $(-1,1)$, with the side-pair homotopies and cofinal compact products proved above.
 :::

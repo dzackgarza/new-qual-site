@@ -72,9 +72,9 @@ Show that the wedge axiom for homology theories follows from the other axioms in
 :::
 
 ::: {.solution}
-It suffices to prove the binary case and then induct. This is the deduction Hatcher points out on p. 160, where the third axiom is said to follow from the first two for finite wedge sums, and not in general for infinite ones.
+It suffices to prove the binary case and then induct. This is the deduction Hatcher points out in §2.3, where the third axiom is said to follow from the first two for finite wedge sums, and not in general for infinite ones.
 
-The binary case and the induction are transcribed from **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4. The exercise is Exercise 4 of §2.3; the axioms used are (1) and (2) of printed p. 160.
+The binary case and the induction are transcribed from **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4. The exercise is Exercise 4 of §2.3; the axioms used are (1) and (2) of §2.3.
 
 Let $X\vee Y$ be the wedge at the common basepoint $*$. Regard $X$ as a subcomplex of $X\vee Y$. Then
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-The exactness axiom, axiom (2) of p. 160, uses the quotient $(X\vee Y)/X\cong Y$ directly.
+The exactness axiom, axiom (2) of §2.3, uses the quotient $(X\vee Y)/X\cong Y$ directly.
 The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Also the inclusion $Y\subset X\vee Y$ is a section of the quotient-induced map $j_*$, so $j_*$ is surjective and the connecting map out of $\widetilde h_n(Y)$ is zero. These two facts cut the long exact sequence into the displayed short exact sequences.
 
 :::

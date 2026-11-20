@@ -156,7 +156,7 @@ $$
 J^{n-1}=\partial I^{n-1}\times I\cup I^{n-1}\times\{0\}\subset\partial I^n,
 $$
 
-and Remark (6.1.4), printed p. 125 of tom Dieck, identifies this set with the homotopy classes of pointed maps $(D^n,S^{n-1})\to(X,A)$, which is the model the exercise uses. Put $B_0=A$ and $E_0=p^{-1}(A)=\tilde A$, and let $\epsilon\in E_0$ be a point over $b=p(\epsilon)\in B_0$; in the exercise's notation $\epsilon=\tilde x_0$ and $b=x_0$.
+and Remark (6.1.4) of tom Dieck, identifies this set with the homotopy classes of pointed maps $(D^n,S^{n-1})\to(X,A)$, which is the model the exercise uses. Put $B_0=A$ and $E_0=p^{-1}(A)=\tilde A$, and let $\epsilon\in E_0$ be a point over $b=p(\epsilon)\in B_0$; in the exercise's notation $\epsilon=\tilde x_0$ and $b=x_0$.
 
 ::: pf
 
@@ -238,7 +238,7 @@ In the notation of the exercise, $E=\tilde X$, $E_0=\tilde A=p^{-1}(A)$, $\epsil
 
 ::: {.remark title="Source"}
 
-The exercise is Exercise 6 of §4.1 (Hatcher read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`). The proof above is transcribed from **Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**: Theorem (6.3.1), stated on printed p. 129 and proved on printed p. 130, with the input that a covering is a fibration from Theorem (3.2.2), the lifting lemma Proposition (3.2.4), the definition of a Serre fibration in §5.5, and the identification of the cube model with the disk model in Remark (6.1.4). The reading copy is the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`. The theorem is stronger than the exercise in one direction and more general in another: it holds for $n\ge1$ rather than $n>1$, and it takes an arbitrary subspace $B_0\subset B$ with $E_0=p^{-1}(B_0)$, the exercise being the case $B_0=A$.
+The exercise is Exercise 6 of §4.1 (Hatcher read in the text version `tmp/sources/hatcher-2002-algebraic-topology.md`). The proof above is transcribed from **Tammo tom Dieck, *Algebraic Topology*, EMS Textbooks in Mathematics, European Mathematical Society 2008**: Theorem (6.3.1), stated and proved in §6.3, with the input that a covering is a fibration from Theorem (3.2.2), the lifting lemma Proposition (3.2.4), the definition of a Serre fibration in §5.5, and the identification of the cube model with the disk model in Remark (6.1.4). The reading copy is the text of the Ranicki translation held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`. The theorem is stronger than the exercise in one direction and more general in another: it holds for $n\ge1$ rather than $n>1$, and it takes an arbitrary subspace $B_0\subset B$ with $E_0=p^{-1}(B_0)$, the exercise being the case $B_0=A$.
 
 Hatcher's Proposition 4.1 with its proof there, is the absolute statement only: for a covering space projection $p:(\tilde X,\tilde x_0)\to(X,x_0)$, the map $p_*:\pi_n(\tilde X,\tilde x_0)\to\pi_n(X,x_0)$ is an isomorphism for all $n\ge2$. The relative statement is not a proposition of the book, and it does not follow from Proposition 4.1 by the five-lemma on the ladder of Theorem 4.3: the map $p_*:\pi_1(\tilde A,\tilde x_0)\to\pi_1(A,x_0)$ is injective and in general not surjective, so at $\pi_2$ the five-lemma gives injectivity and not surjectivity. The source's proof avoids the ladder: it lifts the cube and the relative homotopy themselves, which is what replaces the simply connected $D^n$ of Proposition 4.1's argument by the lifting lemma (3.2.4) for the pair of subspaces $J^n\subset I^{n+1}$.
 

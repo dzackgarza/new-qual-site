@@ -241,7 +241,7 @@ Step [](#s7){.pf-ref} is exactly the required conclusion.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.1, printed p. 210, text version `tmp/sources/hartshorne-solutions-egbert.md`, retypes the $\PP^1$ case ($2g(X)-2=n(-2)$ with $g\ge0$ forces $g=0$, $n=1$) and then inducts: pulling back an étale cover of $\PP^n$ to a hyperplane gives a connected cover by ampleness and (III.7.9), so the cover has degree one.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.2.1, text version `tmp/sources/hartshorne-solutions-egbert.md`, retypes the $\PP^1$ case ($2g(X)-2=n(-2)$ with $g\ge0$ forces $g=0$, $n=1$) and then inducts: pulling back an étale cover of $\PP^n$ to a hyperplane gives a connected cover by ampleness and (III.7.9), so the cover has degree one.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.1, printed p. 85, runs the induction on $n$ that (2.5.3) asks for: for an étale covering $f:X\to\PP^n$ and a hyperplane $H$, the pullback $f^*H$ is ample, so it is connected by (III, 7.9); $f$ restricts to an étale covering $f^*H\to H$, which is trivial by the induction hypothesis, so $f$ is an isomorphism over $H$, hence $\deg f=1$ and $f$ is an isomorphism.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.2.1 runs the induction on $n$ that (2.5.3) asks for: for an étale covering $f:X\to\PP^n$ and a hyperplane $H$, the pullback $f^*H$ is ample, so it is connected by (III, 7.9); $f$ restricts to an étale covering $f^*H\to H$, which is trivial by the induction hypothesis, so $f$ is an isomorphism over $H$, hence $\deg f=1$ and $f$ is an isomorphism.
 :::

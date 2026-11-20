@@ -65,8 +65,8 @@ audit:
 :::
 
 ::: {.solution}
-This is Hatcher, Algebraic Topology, §2.2 Exercise 28 (PDF p. 166), where part (a) reads "Use the Mayer--Vietoris sequence to compute the homology groups of the space…". No retained solution set covers this exercise: Guanyu Li's §2.2 selection carries the book's 2, 3, 5, 7, 8, 9, 12, 14, 19--22, 24, 29, 32, 40 and 41 and not 28, Koukpari's carries 1, 3, 4, 6, 19--21, 27, 32, 34, 37 and 41 and not 28, and Sam's §2.2 block and DeMason's Chapter 4 sheets carry neither — so the argument is the card's own, with the book's own numbered results cited inline below.
-For each attachment, use Mayer--Vietoris with the original space and the Möbius band, whose intersection is the common attaching circle. The Mayer--Vietoris sequence is the one in the subsection of that name beginning on p. 149, derived there from Theorem 2.16 (p. 117) and Proposition 2.21 (p. 119); it applies because in each case the space is the union of the interiors of the surface and of a collar of the Möbius band. The Möbius band deformation retracts onto its core circle, and its boundary circle represents twice the core generator in $H_1$: the boundary is a connected $2$-sheeted covering of the core, so the inclusion $\partial M\to M$ has degree $2$ on $H_1$ by Proposition 2.30 (p. 136), the degree being the sum of local degrees over the two preimages. The Möbius band and its core circle are described in §1.3, where the band is the quotient of $S^1\times[0,1]$ by $(z,0)\sim(-z,0)$.
+This is Hatcher, Algebraic Topology, §2.2 Exercise 28, where part (a) reads "Use the Mayer--Vietoris sequence to compute the homology groups of the space…". No retained solution set covers this exercise: Guanyu Li's §2.2 selection carries the book's 2, 3, 5, 7, 8, 9, 12, 14, 19--22, 24, 29, 32, 40 and 41 and not 28, Koukpari's carries 1, 3, 4, 6, 19--21, 27, 32, 34, 37 and 41 and not 28, and Sam's §2.2 block and DeMason's Chapter 4 sheets carry neither — so the argument is the card's own, with the book's own numbered results cited inline below.
+For each attachment, use Mayer--Vietoris with the original space and the Möbius band, whose intersection is the common attaching circle. The Mayer--Vietoris sequence is the one in the subsection of that name in §2.2, derived there from Theorem 2.16 and Proposition 2.21; it applies because in each case the space is the union of the interiors of the surface and of a collar of the Möbius band. The Möbius band deformation retracts onto its core circle, and its boundary circle represents twice the core generator in $H_1$: the boundary is a connected $2$-sheeted covering of the core, so the inclusion $\partial M\to M$ has degree $2$ on $H_1$ by Proposition 2.30, the degree being the sum of local degrees over the two preimages. The Möbius band and its core circle are described in §1.3, where the band is the quotient of $S^1\times[0,1]$ by $(z,0)\sim(-z,0)$.
 
 ::: pf
 
@@ -96,7 +96,7 @@ with $a$ represented by the attaching circle, and let $c$ generate
 $$
 H_1(M)\cong\ZZ.
 $$
-The torus's homology is that of Example 2.36 (p. 141) with $g=1$: $H_1(T^2)=\ZZ^2$ and $H_2(T^2)=\ZZ$.
+The torus's homology is that of Example 2.36 with $g=1$: $H_1(T^2)=\ZZ^2$ and $H_2(T^2)=\ZZ$.
 The Mayer--Vietoris map from the intersection is
 $$
 H_1(S^1)=\ZZ
@@ -141,7 +141,7 @@ Let $u$ generate
 $$
 H_1(\RP^2)\cong\ZZ_2
 $$
-and let $c$ generate $H_1(M)\cong\ZZ$. The group $H_1(\RP^2)=\ZZ_2$ and its generator the class of the 1-skeleton $\RP^1$ are those of Example 2.42 (p. 144); the standard circle $\RP^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
+and let $c$ generate $H_1(M)\cong\ZZ$. The group $H_1(\RP^2)=\ZZ_2$ and its generator the class of the 1-skeleton $\RP^1$ are those of Example 2.42; the standard circle $\RP^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
 $$
 \ZZ\longrightarrow\ZZ_2\oplus\ZZ,
 \qquad
@@ -161,7 +161,7 @@ Thus $H_1(Z)\cong\ZZ_4$, and connectedness gives $H_0(Z)=\ZZ$.
 :::
 
 :::
-Both computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.28, printed pp. 66--67. The boundary circle of the Möbius band is twice the core generator on $H_1$. For (a), the generator $1\in H_1(S^1)\cong\ZZ$ has image $(a,-2c)$, giving $H_2=\ZZ$ and cokernel $\ZZ^2$; for (b), the same generator has image $(u,-2c)$ with $2u=0$, so $H_2=0$ and cokernel $\langle c\mid4c=0\rangle=\ZZ_4$.
+Both computations are in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.2.28. The boundary circle of the Möbius band is twice the core generator on $H_1$. For (a), the generator $1\in H_1(S^1)\cong\ZZ$ has image $(a,-2c)$, giving $H_2=\ZZ$ and cokernel $\ZZ^2$; for (b), the same generator has image $(u,-2c)$ with $2u=0$, so $H_2=0$ and cokernel $\langle c\mid4c=0\rangle=\ZZ_4$.
 
 
 :::
