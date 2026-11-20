@@ -15,6 +15,13 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 8 sets its asterisks before Problems 3, 4, 6, 7, 8
+    and 9 only, so none stands before Problem 2. The remark records that. Not checked in this pass:
+    the wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -35,6 +42,10 @@ $$
 ]
 
 (b) Conversely, prove the following: suppose $f \colon \Omega \to \CC$ is a complex-valued function, that is real-differentiable at $z_0 \in \Omega$, and $J_f(z_0) \neq 0$. If $f$ preserves angles at $z_0$, then $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 8, Problem 2).
 :::
 
 ::: {.solution}
