@@ -31,6 +31,14 @@ audit:
     E/L is finite Galois (separable since k ⊆ L ⊆ E, normal by transport of the k-
     normality), and |H| ≤ [E : E^H] ≤ [E : L] with L ⊆ E^H forces equality, hence
     E^H = L, which is exactly surjectivity of the fixed-field map. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 12, final part G(i). For
+    $L$ intermediate, $H=\operatorname{Gal}(E/L)$ and $F=E^H$, the extension $E/L$ is finite
+    Galois, so $\cardinality{H}=[E:L]$; $\cardinality{H}\le[E:F]\le[E:L]$ forces equality and
+    $F=L$. No defect.
 ---
 
 ::: {.exercise}
