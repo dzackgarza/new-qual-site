@@ -544,6 +544,22 @@ audit:
     integrality of N, and both intersection numbers (H + E_1).E_1 = -1 and
     (H + F_56).F_56 = 0. Not checked: any printing of the book, only the text
     version retained in tmp/sources.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    One arithmetic claim of the event above is corrected, and that event is left as written. For a
+    line E on the cubic surface H.E = 1, a line having degree 1, and E^2 = -1 by adjunction with
+    K = -H and genus 0; hence (H + E_1).E_1 = 0, not -1. The class D = H + E_1 therefore has
+    D.E_1 = 0, D.L at least 1 on each of the other 26 lines, and D^2 = 4, so it lies in alternative
+    (c) and E_1 is contracted by the morphism of the system; E_1 is not a fixed component, and a
+    base-point-free system has none, E_1 being disjoint from every member because D.E_1 = 0. So
+    E_1 and F_56 are both valid instances of a contracted curve, and the body keeps F_56, which is
+    equally valid. Nothing else changes: the rank-zero step does not depend on which class is
+    named, a curve contracted by the morphism having rank 1 in either case. Checked: H.E = 1 and
+    E^2 = -1, the value (H + E_1)^2 = 4, the intersections of H + E_1 with the other 26 lines, and
+    the corresponding values (H + F_56)^2 = 4 and (H + F_56).F_56 = 0. Not checked: no source was
+    read for this event, and neither intersection table was recomputed from a printed copy.
 ---
 
 ::: {.problem}
