@@ -11112,3 +11112,15 @@ The three changed lines were verified in the remote blobs, not only locally. No 
 this turn. No source obligation moves: none of the eleven has a located complete published solution.
 
 **Commit.** `a8e5acdf5b`, landed on `main` (the remote tip `1a65b10a51` contains it).
+
+## 2026-11-20: the Stacks locator is confirmed against the retained book and given its tag
+
+**Object and need:** the parenthesis in the record above, and its claim that a chapter-and-section number is not a stable locator.
+
+**Observed evidence:** the retained `tmp/sources/stacks-project-book.pdf` settles the first half: its line 201789 is the heading "32.14. Universally closed morphisms", the section carries the tag `05JW`, and its Lemma 32.14.1 is tagged `05BD`, so the page's locator was right for the snapshot the corpus holds. `https://stacks.math.columbia.edu/tag/05JW` answers 200 and titles itself "Section 32.14". The reference is now `(compare Stacks Project, Tag 05JW, with Lemma 32.14.1 on universally closed morphisms)`, which is the form `CITE-3` asks for and does not depend on the chapter number staying where it is.
+
+**Impact and owner:** the page. Nothing else cited the locator.
+
+**Uncertainty:** the site's own warning that chapter numbers move still stands, so the lemma number is the fragile part of the sentence and the tag is the durable one; the tag is what a later reader should follow.
+
+**Repair:** this entry and the commit that carries it.
