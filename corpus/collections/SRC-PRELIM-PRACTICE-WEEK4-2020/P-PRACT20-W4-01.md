@@ -36,7 +36,7 @@ Which of the following most closely represents the graph of the solution to $y' 
 :::
 
 ::: {.solution}
-The collection retains its solution sheet, `assets/attachments/Week4_solns.pdf`: this is Problem 1, on PDF p. 1 of Christian Parkinson, *Week 4: Differential Equations & Linear Algebra Practice Problem Solutions*. The argument below is that sheet's, with the two inequalities it appeals to checked and its "slope always bigger than $1$" corrected to $\ge1$.
+The collection retains its solution sheet, `assets/attachments/Week4_solns.pdf`: this is Problem 1 of Christian Parkinson, *Week 4: Differential Equations & Linear Algebra Practice Problem Solutions*. The argument below is that sheet's, with the two inequalities it appeals to checked and its "slope always bigger than $1$" corrected to $\ge1$.
 
 ::: pf
 
