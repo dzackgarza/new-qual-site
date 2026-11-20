@@ -32,6 +32,16 @@ audit:
     only two normal subgroups, left action with the two axioms, and the semidirect
     product with (k,h)(k',h') = (k c(h)(k'), hh'), whose identity and inverse are as
     displayed. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 11, final part A(i)--(v).
+    Normal subgroup $gNg^{-1}=N$; Sylow subgroup of order the full $p$-part; simple
+    nontrivial with only $1$ and $G$ normal; left action with $1\cdot s=s$ and
+    $(gh)\cdot s=g\cdot(h\cdot s)$; and $K\rtimes_cH$ with
+    $(k,h)(k',h')=(kc(h)(k'),hh')$, identity $(1,1)$ and inverse
+    $(c(h^{-1})(k^{-1}),h^{-1})$, whose conjugation by $h$ is $c(h)$. No defect.
 ---
 
 ::: {.exercise}
