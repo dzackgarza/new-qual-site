@@ -322,7 +322,7 @@ Indecomposable $X$ with $e=-1$, $n\ge2$: Fuentes, Theorem 2.13(2)(b), "then $R$ 
 
 Indecomposable $X$ with $e=0$, $n\ge3$: Fuentes, Theorem 2.13(2)(c), "then $R$ is a smooth elliptic scroll of degree $2b$ in $\mathbf P^{2b-1}$", which at $e=0$ is degree $2n-e$ in $\PP^{2n-1}=\PP^{2n-e-1}$.
 
-That the image is a scroll in the papers' sense is the identity $D\cdot f=1$ of step [](#s2){.pf-ref}: $\linearsystem{D}$ is unisecant, and the image of each ruling fibre is a line. Its genus is that of $C$, by Definition 1.5 of [2], so it is an elliptic scroll.
+That the image is a scroll in the papers' sense is the identity $D\cdot f=1$ of step [](#s2){.pf-ref}: $\linearsystem{D}$ is unisecant, and the image of each ruling fibre is a line, so the image is a scroll in the sense of Definition 1.5 of [2], and Proposition 1.7 with Definition 1.8 identify it with the image of $X$ under a base-point-free unisecant complete linear system. Its genus is that of $C$, by the paragraph following Definition 1.5 of [2], which defines the genus of a scroll as the geometric genus of the generic hyperplane section; so it is an elliptic scroll.
 :::
 
 :::
