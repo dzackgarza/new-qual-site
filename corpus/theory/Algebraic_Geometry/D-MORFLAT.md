@@ -34,7 +34,7 @@ Flatness is a condition on stalks and therefore checkable on affines, where it i
 Over a Dedekind domain, a module is flat if and only if it is torsion-free; hence every dominant morphism from an integral scheme to a regular integral curve is flat.
 Over a regular base of dimension two this fails: the blowup $\operatorname{Bl}_0\AA^2\to\AA^2$ is dominant with integral source, and it is not flat, since its fibre over $0$ has dimension $1$ while its other fibres are points, whereas a flat morphism $f$ of schemes of finite type over a field satisfies $\dim_x X_{f(x)}=\dim_x X-\dim_{f(x)} Y$ at every point $x$ [@Har77, Proposition III.9.5].
 
-For $A\to B$ faithfully flat, an $A$-module $M$ is zero if and only if $M\tensor_AB=0$, and a complex of $A$-modules is exact if and only if it is exact after $\wait\tensor_AB$ ([[D-DEFFFLAT]]).
+For $A\to B$ faithfully flat, an $A$-module $M$ is zero if and only if $M\tensor_AB=0$, and a complex of $A$-modules is exact if and only if it is exact after $-\tensor_AB$ ([[D-DEFFFLAT]]).
 :::
 
 ::: {.remark}
