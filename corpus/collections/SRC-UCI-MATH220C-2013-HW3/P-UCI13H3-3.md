@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: claude
   date: 2026-10-31
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. With h = z^n f^(n) the hypothesis says |h| <= 1 on the punctured disc,
+    so h is bounded and 0 is removable for it; hence f^(n) has at most a pole of order n at 0, and
+    therefore f has at most a pole there (order at most 2n). If that order were m >= 1, then
+    |f^(n)(z)| would grow like |z|^-(m+n), contradicting |f^(n)(z)| <= |z|^-n for small z since
+    |z|^m -> 0. So no pole, and no essential singularity either, an essential singularity of f being
+    one of f^(n). Checked that both exclusions are needed and that the boundedness of h is what the
+    hypothesis supplies.
 ---
 
 ::: {.problem}
