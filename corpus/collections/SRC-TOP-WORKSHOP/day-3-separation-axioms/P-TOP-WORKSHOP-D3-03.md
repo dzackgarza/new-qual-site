@@ -51,7 +51,7 @@ This is Problem 3 (June '04 #A3) of the retained Day 3 separation-axioms problem
 A space is regular if and only if for every $x$ and every open $U\ni x$ there is an open $V$ with $x\in V$ and $\overline{V}\subset U$.
 
 ::: pf-proof
-This is the neighbourhood form of regularity (Munkres Lemma 31.1(a), printed p. 196): in a regular space a point and a neighbourhood of it can be separated by a neighbourhood whose closure is contained in the given one. Conversely, if the displayed property holds and $x\notin B$ with $B$ closed, apply it to the open set $X\setminus B$ to get $V$ with $x\in V$ and $\overline{V}\cap B=\varnothing$, which is the separation demanded of a regular space.
+This is the neighbourhood form of regularity (Munkres Lemma 31.1(a)): in a regular space a point and a neighbourhood of it can be separated by a neighbourhood whose closure is contained in the given one. Conversely, if the displayed property holds and $x\notin B$ with $B$ closed, apply it to the open set $X\setminus B$ to get $V$ with $x\in V$ and $\overline{V}\cap B=\varnothing$, which is the separation demanded of a regular space.
 :::
 :::
 
