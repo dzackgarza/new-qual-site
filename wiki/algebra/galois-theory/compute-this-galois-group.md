@@ -82,8 +82,6 @@ Similarly, $x^7-x-1$ is irreducible modulo $2$ and factors modulo $3$ into irred
 
 ## Distinguishing the remaining candidates
 
-### Distinguishing the candidates
-
 For $n=4$, $C_4$ contains a $4$-cycle and $C_2^2$ does not, while both contain elements of type $(2,2)$; $A_4$ contains neither a transposition nor a $4$-cycle, so exhibiting either one excludes it, and the discriminant separates $S_4$ from $A_4$.
 
 For $n=5$, a transposition together with a $5$-cycle generates $S_5$, and in general a transposition $(a\,b)$ together with an $n$-cycle generates $S_n$ exactly when $\gcd(b-a,n)=1$.
