@@ -39,7 +39,7 @@ Show that the equation $e^z - z = 0$ has infinitely many solutions in $\CC$.
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 5, Exercise 13. Here $F(z)=e^{z}-z$ is entire of order $1$, and Hadamard's factorization theorem for an entire function of order $\leq1$ with finitely many zeros $z_1,\dots,z_m$ states that $F(z)=e^{az+b}Q(z)$ with $Q(z)=\prod_{j}(1-z/z_j)$ a polynomial of degree $m$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 5, Exercise 13. Here $F(z)=e^{z}-z$ is entire of order $1$, and Hadamard's factorization theorem for an entire function of order $\leq1$ with finitely many zeros $z_1,\dots,z_m$ states that $F(z)=e^{az+b}Q(z)$ with $Q(z)=\prod_{j}(1-z/z_j)$ a polynomial of degree $m$.
 
 ::: pf
 
