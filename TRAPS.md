@@ -49,3 +49,28 @@ print('final depth',d)"
 Depth must return to $0$, each `pf-step` opens exactly one level under its `pf` or `pf-proof`,
 and a `pf-qed` is the last step of its own level — so it is a sibling of the `pf-step`s, never
 inside one.
+
+## A container step has three closers and a leaf step two
+
+A step whose proof is substeps is a *container*: it opens the step, opens a `pf-proof`, holds the
+substeps, and closes the `pf-proof` and the step — and each of those substeps closes itself. A step
+whose proof is prose is a *leaf*: it opens the step, opens a `pf-proof`, closes both. Replacing a
+container by a leaf (which is what collapsing a run of one-line fragments into a single derived
+claim amounts to) therefore removes exactly one `:::` from the file, and replacing a leaf by a
+container adds one. Nothing in the replacement text says which happened.
+
+**Symptom.** After a whole-part replacement the depth listing ends at $+1$ or $-1$ rather than $0$,
+or `report_check.py` says `unclosed fenced div` naming the enclosing section, or — the quiet one —
+the depth returns to $0$ because a compensating closer is also wrong, and a later step silently
+nests inside the step before it, which the filter then calls `lamport proof: unknown div inside a
+proof step`.
+
+**Repair.** Count before and after. Take the depth listing of the region being replaced, note the
+depth the region ends at, and check the replacement ends at the same depth; then take the listing
+again over the whole file. A container ends one level shallower than the step it replaced only if
+the replacement also drops the substeps' own closers, so the arithmetic is: an old block closing
+$n$ fences must be replaced by a block closing $n$ fences. When the count is wrong, decide which
+closer is wrong by following the levels, not by deleting the last one — on `P-UMAQ5` deleting the
+trailing closer instead of the stray one left the next step nested inside its predecessor and cost
+two further repair rounds.
+
