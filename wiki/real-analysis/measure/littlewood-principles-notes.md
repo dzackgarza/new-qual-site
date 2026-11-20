@@ -17,19 +17,15 @@ In both theorems the remaining set is closed, and it depends on $\varepsilon$.
 
 [[FT-OGS76]]
 
-[[FR-GG457]]
+On a set of finite measure, almost everywhere convergence implies [[FD-D7HOH|convergence in measure]] ([[FR-GG457]], [@Fol99, Theorem 2.33 and Exercise 2.39]).
 
-::: {.remark}
-The finite-measure hypothesis is not a technical convenience: on $\RR$, $f_n \coloneqq \chi_{[n,n+1]}$ converges pointwise to $0$, while every set on which the convergence is uniform has complement of infinite measure ([[real-analysis/measure/littlewoods-principles|Littlewood's three principles]]).
-On a set of finite measure, almost everywhere convergence therefore implies [[FD-D7HOH|convergence in measure]].
-:::
+The finite-measure hypothesis is needed: [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]] gives a sequence for which no set of finite complement carries uniform convergence.
 
 ## Lusin: almost continuity
 
 [[T-CGFCU]]
 
 ::: {.remark}
-The exceptional set cannot be removed altogether: for $f \coloneqq \chi_{\QQ\cap[0,1]}$ on $E=[0,1]$, the restriction $\restrictionof{f}{E}$ is discontinuous at every point, so $F_\varepsilon = E$ is impossible.
 Continuity of $\restrictionof{f}{F_\varepsilon}$ is a statement about the relative topology of $F_\varepsilon$, not about the continuity of $f$ at the points of $F_\varepsilon$.
 :::
 
