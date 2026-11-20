@@ -236,6 +236,18 @@ audit:
     changes other than the deletion of the locator. Page numbers remain inside
     this card's earlier dated events, where they are records of what was read
     and QUAL-11 forbids changing them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    One repair on the third report of this date, in the solution's preamble and
+    not in a step: the description of a scroll was credited to Definition 1.5 of
+    Fuentes--Pedreira, which defines a scroll as an algebraic surface carrying a
+    line through its generic point. The preamble now separates the three
+    statements it was run together: that definition, Proposition 1.7 with
+    Definition 1.8 identifying a linearly normal scroll with the image of a
+    ruled surface under a base-point-free unisecant complete linear system, and
+    the paragraph after Definition 1.5 giving the genus. No step changes.
 ---
 
 ::: {.problem}
@@ -244,7 +256,7 @@ In particular, there is an elliptic scroll of degree 5 in $\PP^4$.
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source and numbered statement: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Theorems 1.7, 2.7 and 2.13 and Remark 2.9; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.2(1), Theorem 3.9(3), and Theorem 3.10(1), which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. A scroll is the image of a ruled surface by a unisecant complete linear system, and its genus is that of the base curve, in the sense of Definition 1.5 and the paragraph after it, of [2]; over an elliptic curve the image is an elliptic scroll.
+Every step below transcribes a published argument and names the source and numbered statement: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Theorems 1.7, 2.7 and 2.13 and Remark 2.9; and Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.2(1), Theorem 3.9(3), and Theorem 3.10(1), which Fuentes cites as his paper [2]. Notation is the book's: $\mathcal E$ normalized, $\mfe$ the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ the section of minimum self-intersection, $f$ a ruling fibre. Definition 1.5 of [2] defines a scroll as an algebraic surface carrying a line through its generic point, Proposition 1.7 with Definition 1.8 identifies a linearly normal scroll with the image of a ruled surface under a base-point-free unisecant complete linear system, and the paragraph after Definition 1.5 gives the genus of a scroll as the genus of that curve; over an elliptic curve the image is an elliptic scroll.
 
 ::: pf
 

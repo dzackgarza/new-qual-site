@@ -293,6 +293,18 @@ audit:
     changes other than the deletion of the locator. Page numbers remain inside
     this card's earlier dated events, where they are records of what was read
     and QUAL-11 forbids changing them.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repairs on the third report of this date, none changing a step's claim. Step
+    s7 now carries the book's own sufficient criterion: Exercise V.2.11(b) asks
+    that b and b+mathfrak e be very ample on C, which on a curve of genus one is
+    degree at least 3 by Corollary IV.3.2, so at e = -1 it covers m >= 3 and
+    leaves m = 2 to Proposition 2.11, that being the case where the degree is 5
+    in P^4. The qed paragraph now says what steps s5 and s6 do: they are the two
+    cases of part (b), decomposable and indecomposable, each in both directions,
+    and not the two directions of one statement.
 ---
 
 ::: {.problem}
@@ -410,13 +422,13 @@ which is part (b); and the case $e=-1$ of the Note is the case $e=-1$ of steps [
 ::: pf-proof
 By step [](#s4){.pf-ref}, $X$ is decomposable or indecomposable with $e\in\{0,-1\}$. Very ampleness for $m\ge e+3$ is step [](#s5){.pf-ref} in the first case and step [](#s6){.pf-ref} in the second, and the converse in each case is the same step, both cited as equivalences.
 
-For $e=-1$ the two bounds read $m\ge1$ for base-point freeness and $m\ge2$ for very ampleness, and at $m=1$ step [](#s6){.pf-ref} and Proposition 2.11 deny very ampleness while step [](#s3){.pf-ref} grants base-point freeness. That one-step gap is not itself peculiar to $e=-1$: at $m=e+2$ it occurs at every $e\ge-1$. What singles $e=-1$ out is that the surface is then indecomposable, by Theorem V.2.12(a), so that the splitting which carries the arguments of Propositions 1.3, 1.4 and 1.5 and of Fuentes--Pedreira's Proposition 3.4 and Theorem 3.9(3) is unavailable and the indecomposable statements Propositions 2.10 and 2.11 must serve; that is the special attention the exercise's Note asks for.
+For $e=-1$ the two bounds read $m\ge1$ for base-point freeness and $m\ge2$ for very ampleness, and at $m=1$ step [](#s6){.pf-ref} and Proposition 2.11 deny very ampleness while step [](#s3){.pf-ref} grants base-point freeness. That one-step gap is not itself peculiar to $e=-1$: at $m=e+2$ it occurs at every $e\ge-1$. What singles $e=-1$ out is that the surface is then indecomposable, by Theorem V.2.12(a), so that the splitting which carries the arguments of Propositions 1.3, 1.4 and 1.5 and of Fuentes--Pedreira's Proposition 3.4 and Theorem 3.9(3) is unavailable and the indecomposable statements Propositions 2.10 and 2.11 must serve. The book's own sufficient criterion, Exercise V.2.11(b), asks that $\mfb$ and $\mfb+\mfe$ be very ample on $C$, which on a curve of genus one is degree at least $3$ by Corollary IV.3.2; at $e=-1$ that covers $m\ge3$ and leaves $m=2$, where very ampleness does hold and where the degree is $5$ in $\PP^4$, to Proposition 2.11. That is the special attention the exercise's Note asks for.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s5){.pf-ref} and [](#s6){.pf-ref} the two directions of part (b) case by case, and step [](#s7){.pf-ref} assembles part (b).
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a); steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (b) in its two cases, decomposable and indecomposable, each in both directions; and step [](#s7){.pf-ref} assembles part (b).
 :::
 
 :::
