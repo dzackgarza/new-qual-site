@@ -31,6 +31,16 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 42 Exercise 1, printed p. 262, with Theorem 42.1, Theorem 41.4 and Theorem 41.5 (which supply the paracompactness that Exercises 34.7 and 34.8 do not state), and the two exercises themselves. What was corrected: the card now names Theorem 41.5 for the paracompactness of a regular Lindelof space, where it previously referred only to the construction on the card of E-KVFCT.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed and the citation is made by
+    number --- §42 Exercise 1, Theorem 42.1 (Smirnov), Theorems 41.4 and 41.5, the remark on
+    compact spaces in the introduction to §41, and the definition of regularity in §31 --- each
+    read in `tmp/sources/munkres-2000-topology.md`. The earlier events keep their text (QUAL-11);
+    these numbered citations supersede their page locators. No step changes.
+
 ---
 
 ::: {.exercise}
@@ -40,7 +50,7 @@ Compare Theorem 42.1 (the Smirnov metrization theorem) with Exercises 7 and 8 of
 
 ::: {.solution}
 
-No retained solution set covers this exercise: it is a comparison the book asks for and no sheet in `tmp/sources` treats §42 Exercise 1, so the comparison below is the card's own. The statements compared were checked against Munkres, *Topology* (2000), §42 Exercise 1, printed p. 262, the Smirnov metrization theorem, Theorem 42.1, on printed p. 261, Theorem 41.5 on printed p. 257, the remark that every compact space is paracompact in the introduction to §41 on printed p. 252, and the definition of regularity on printed p. 195.
+No retained solution set covers this exercise: it is a comparison the book asks for and no sheet in `tmp/sources` treats §42 Exercise 1, so the comparison below is the card's own. The statements compared were checked against Munkres, *Topology* (2000), §42 Exercise 1, the Smirnov metrization theorem, Theorem 42.1, Theorem 41.5, the remark that every compact space is paracompact in the introduction to §41, and the definition of regularity in §31.
 
 Throughout, the two criteria of §34 are those of [[E-MQTBP]] (compact Hausdorff and locally metrizable) and [[E-KK77N]] (regular, Lindelöf and locally metrizable).
 
@@ -50,7 +60,7 @@ Throughout, the two criteria of §34 are those of [[E-MQTBP]] (compact Hausdorff
 Smirnov's theorem reads: $X$ is metrizable if and only if $X$ is paracompact Hausdorff and locally metrizable.
 
 ::: pf-proof
-This is Theorem 42.1 (printed p. 261). Its forward implication uses that a metrizable space is paracompact, Theorem 41.4, and locally metrizable; its converse is the substance of the theorem.
+This is Theorem 42.1. Its forward implication uses that a metrizable space is paracompact, Theorem 41.4, and locally metrizable; its converse is the substance of the theorem.
 :::
 
 :::
@@ -64,7 +74,7 @@ A compact Hausdorff space that is locally metrizable is metrizable.
 Every compact space is paracompact.
 
 ::: pf-proof
-Given an open cover of a compact space, it contains a finite subcover, and a finite family of open sets is a locally finite open refinement of any cover it refines: each point has the neighbourhood $X$ itself, which meets only the finitely many members of the family. Munkres records this fact in the introduction to §41 (printed p. 252) as an immediate consequence of the definition.
+Given an open cover of a compact space, it contains a finite subcover, and a finite family of open sets is a locally finite open refinement of any cover it refines: each point has the neighbourhood $X$ itself, which meets only the finitely many members of the family. Munkres records this fact in the introduction to §41 as an immediate consequence of the definition.
 :::
 
 :::
@@ -91,7 +101,7 @@ A regular Lindelöf space that is locally metrizable is metrizable.
 A regular Lindelöf space is paracompact.
 
 ::: pf-proof
-This is Theorem 41.5 (printed p. 257).
+This is Theorem 41.5.
 :::
 
 :::
@@ -100,7 +110,7 @@ This is Theorem 41.5 (printed p. 257).
 A regular space is Hausdorff.
 
 ::: pf-proof
-In Munkres's sense regularity presupposes that one-point sets are closed (§31, printed p. 195). Given distinct points $x\neq y$, the set $\theset{y}$ is closed and does not contain $x$, so regularity gives disjoint open sets containing $x$ and $\theset{y}$ respectively, which separates the two points.
+In Munkres's sense regularity presupposes that one-point sets are closed (§31). Given distinct points $x\neq y$, the set $\theset{y}$ is closed and does not contain $x$, so regularity gives disjoint open sets containing $x$ and $\theset{y}$ respectively, which separates the two points.
 :::
 
 :::
