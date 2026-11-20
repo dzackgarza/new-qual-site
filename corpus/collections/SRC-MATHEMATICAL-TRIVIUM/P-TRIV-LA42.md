@@ -122,7 +122,10 @@ $3\times3$ matrix with these vectors as columns has nonzero determinant.
 
 ::: {.pf-step #s1-5}
 
-Therefore the four points do not lie in one plane.
+Therefore
+$$
+\boxed{\text{the four points are not coplanar}.}
+$$
 
 
 ::: pf-proof
@@ -135,25 +138,9 @@ they are linearly independent.
 
 :::
 
-::: {.pf-step #s1-6}
-
-Hence
-$$
-\boxed{\text{the four points are not coplanar}.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 
