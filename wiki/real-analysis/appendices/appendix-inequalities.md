@@ -56,5 +56,7 @@ For $p=\infty$, the triangle inequality is the statement that $\norm{\cdot}_\inf
 ::: {.fact}
 For $x,y\geq0$, $\sqrt{x + y} \leq \sqrt{x} + \sqrt{y}$, since $\qty{\sqrt x+\sqrt y}^2 = x+y+2\sqrt{xy}\geq x+y$.
 
-The inequality is the argument displayed, and it is also the case $p=2$ of the subadditivity of $t\mapsto t^p$ on $[0,\infty)$ for $p\geq1$; it is the comparison Rudin uses when he proves $\abs{x+y}\le\abs x+\abs y$ from the Schwarz inequality, [@Rud76, ch. 1, Theorem 1.35].
+This is the case $p=\frac12$ of the subadditivity of $t\mapsto t^p$ on $[0,\infty)$: $(x+y)^p\leq x^p+y^p$ holds for every $0<p\leq1$ and fails for every $p>1$, where subadditivity at $x=y=1$ would read $2^p\leq2$.
+For $p\geq1$ the correct companion is the convexity estimate $(x+y)^p\leq2^{p-1}\qty{x^p+y^p}$, which is equality at $p=1$.
+Rudin's derivation of $\abs{x+y}\leq\abs x+\abs y$ uses neither: [@Rud76, ch. 1, Theorem 1.35] is the Schwarz inequality, [@Rud76, ch. 1, Theorem 1.37(e)] is the triangle inequality, and its proof squares $\abs{x+y}$ and compares it with $\qty{\abs x+\abs y}^2$.
 :::
