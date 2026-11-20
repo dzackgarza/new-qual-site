@@ -20,14 +20,18 @@ from collections import Counter
 from pathlib import Path
 
 MARKERS = (
-    "transcrib", "published", "solutions", "the argument is", "the proof is",
+    # "solutions" alone was too loose: a card with no provenance statement passes
+    # on an incidental "the solutions of ...", which is how the whole of II.5 was
+    # screened as covered. Require the word next to a set name instead.
+    "transcrib", "published", "the argument is", "the proof is",
     "the proof below is", "is that of", "are those of", "outline", "card's own",
+    "solutions, printed", "solutions (chapters", "solutions to hartshorne",
+    # a citation key alone is the book's statement, not the proof's source, so
+    # "[@" is not a marker; II.5's cards all cite [@Har77] and state no source.
     "the card's own", "following the", "follows the", "re-deriv",
     # retained Hartshorne sets and the other solution writers the corpus cites
     "kim", "cais", "sam", "egbert", "yang", "shafarevich", "haiman", "zinger",
     "murayama", "pearse", "xie", "eisenbud", "miyanishi", "stacks project",
-    # a citation key is a pointer to a source even without prose
-    "[@",
 )
 
 
