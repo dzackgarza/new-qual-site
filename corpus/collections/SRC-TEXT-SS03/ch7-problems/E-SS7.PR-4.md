@@ -11,6 +11,22 @@ classification:
   - Prime Number Theorem
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 7, Problem 4 on printed p. 204 (PDF p. 223): the
+    statement is the print's, including the reduction it invites to the prime number theorem and to
+    the proof of Dirichlet's theorem in Book I, and the asterisk the print sets before "4." is
+    recorded in the remark. The argument was read and holds: the orthogonality relation on
+    $(\ZZ/q\ZZ)^\times$ with the primes dividing $q$ contributing nothing, the principal character
+    reducing to $\pi(x)+O(1)$, the $3$-$4$-$1$ inequality $3\log\abs{L(\sigma,\chi_0)}+4\log\abs{L(\sigma+it,\chi)}+\log\abs{L(\sigma+2it,\chi^2)}\ge0$
+    from $3+4\Re z+\Re z^2\ge0$, the explicit formula for $\psi(x,\chi)$ with $T=e^{c'\sqrt{\log x}}$,
+    the bound $O(xe^{-c''\sqrt{\log x}})$ from the zero-free region, and the partial summation from
+    $\psi$ to $\pi$ with $O(x^{1/2})$ for the prime powers. Not proved here and cited as the print
+    allows: $L(1,\chi)\ne0$ (Book I, Chapter 8) and the explicit formula itself, which the card
+    derives "exactly as in the proof of the prime number theorem" without repeating that proof.
 ---
 
 ::: {.exercise}
@@ -18,6 +34,10 @@ One can combine ideas from the prime number theorem with the proof of Dirichlet'
 $$
 \pi_{q,\ell}(x) \sim \frac{x}{\varphi(q)\log x} \quad \text{as } x \to \infty.
 $$
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 7, Problem 4, printed p. 204).
 :::
 
 ::: {.solution}
