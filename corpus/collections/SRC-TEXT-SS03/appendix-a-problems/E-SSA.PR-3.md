@@ -33,6 +33,14 @@ audit:
     x^n. Proved rather than asserted: S'' = zS from (n+2)(n+3)a_{n+3} = a_n, Ai satisfies the same
     equation (Appendix A, (15) and (17)), and a_0 = 3^{-2/3}/Gamma(2/3) = Ai(0),
     a_1 = -3^{-1/3}Gamma(1/3) = Ai'(0), so S = Ai by uniqueness for y'' = zy.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the events above: Appendix A's Problems occupy PDF pp. 360--362 of the
+    retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
+    PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
+    carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
 ---
 
 ::: {.exercise}
