@@ -41,6 +41,17 @@ audit:
     $\psi(x)-x=O(x^{\alpha+\epsilon})$. All other steps are unchanged; the constants were not
     recomputed. Provenance: no published solution set covers this Problem (Rhoades, *Solutions/Hints
     to the Exercises*, 2006, covers a selection of the Exercises), so the argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second component of the same step repaired, on a referee's report of this session: the step also
+    needed $\alpha+\epsilon<1$. As written, "for $x$ large, $h=x^{\alpha+\epsilon}<x/2$" is false for
+    $\epsilon\ge(1-\alpha)/2$ — with $\alpha=9/10$ and $\epsilon=1/2$ one gets $h=x^{7/5}>x$, so
+    $x-h<0$, $\psi_1$ is evaluated below $1$ and $T=x/h<1$. The step now opens by restricting to
+    $0<\epsilon<(1-\alpha)/2$, which loses nothing because a bound with a smaller exponent implies
+    one with a larger, and then $h\le x^{(1+\alpha)/2}<x/2$ and $x-h\ge1$. The closing substitution is
+    correspondingly legitimate. The body's estimates are unchanged.
 ---
 
 ::: {.exercise}
@@ -125,7 +136,7 @@ $$
 $$
 
 ::: pf-proof
-Fix $\epsilon>0$ and put $h=x^{\alpha+\epsilon}$. For $x$ large, $h<x/2$. By [[E-SS7.PR-2|the previous problem]],
+Fix $\epsilon>0$. Since a bound $O(x^{\alpha+\epsilon'})$ with $0<\epsilon'\le\epsilon$ implies $O(x^{\alpha+\epsilon})$, we may assume $\epsilon<(1-\alpha)/2$; put $h=x^{\alpha+\epsilon}$. Then $h\le x^{(1+\alpha)/2}<x/2$ for $x$ large, and $x-h\ge x/2\ge1$. By [[E-SS7.PR-2|the previous problem]],
 $$
 \psi_1(x)=\frac{x^2}{2}-\sum_\rho\frac{x^{\rho+1}}{\rho(\rho+1)}+O(x).
 $$
@@ -172,7 +183,7 @@ Hence the average differs from $\psi(x)$ by $O(h\log x)=O(x^{\alpha+2\epsilon})$
 $$
 \psi(x)-x=O(x^{\alpha+2\epsilon}).
 $$
-Since $\epsilon>0$ was arbitrary, applying the argument with $\epsilon/2$ in place of $\epsilon$ — so that $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$ — gives $\psi(x)-x=O(x^{\alpha+\epsilon})$, which is the claim.
+Since $\epsilon>0$ was arbitrary and $\epsilon/2<(1-\alpha)/2$ as well, applying the argument with $\epsilon/2$ in place of $\epsilon$ — so that $h=x^{\alpha+\epsilon/2}$ and the average is $x+O(x^{\alpha+\epsilon/2})$ — gives $\psi(x)-x=O(x^{\alpha+\epsilon})$, which is the claim.
 :::
 
 :::
