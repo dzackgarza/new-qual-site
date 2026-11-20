@@ -69,7 +69,7 @@ Show that for the product $K(G, 1) \times X$ the action of $\pi_1$ on $\pi_n$ is
 :::
 
 ::: {.solution}
-A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 20, PDF p. 22**, whose argument is the one below — an element of $\pi_n$ of the product is a pair of maps, a loop in the product is a pair of loops, and the action inserts the two loops into the two factors, where the first acts trivially because $\pi_n(K(G,1))=0$ for $n>1$ and the second because $\pi_1(X)=0$. The card's steps are that argument written out, checked against Hatcher, Algebraic Topology, Section 4.2, printed p. 390, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 20**, whose argument is the one below — an element of $\pi_n$ of the product is a pair of maps, a loop in the product is a pair of loops, and the action inserts the two loops into the two factors, where the first acts trivially because $\pi_n(K(G,1))=0$ for $n>1$ and the second because $\pi_1(X)=0$. The card's steps are that argument written out, checked against Hatcher, Algebraic Topology, Section 4.2, and against the description of the action of $\pi_1$ on higher homotopy groups by deck transformations (Section 4.1, p. 345).
 
 ::: pf
 

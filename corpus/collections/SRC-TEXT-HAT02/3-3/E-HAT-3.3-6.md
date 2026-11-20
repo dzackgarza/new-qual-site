@@ -112,7 +112,7 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 6, printed p. 257.
+The exercise is §3.3 Exercise 6.
 
 The solution is the one printed in the Math 538 homework solutions, HMW 3, handwritten pages 2--4 (PDF pages 14, 15 and 16 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #6: the same identification $M_1\sharp M_2/S^{n-1}=M_1\vee M_2$, the same pair sequence, the same three cases with Corollary 3.28 for the torsion, and part (b) by a degree-by-degree count of ranks. Two things that sheet leaves implicit are supplied here: the case $n=2$, where $H_{n-2}(S^{n-1})\ne0$ and the sequence must be read in reduced homology, and the good-pair justification of $H_i(M,S^{n-1})\cong\widetilde H_i(M_1\vee M_2)$. Coefficients are $\ZZ$ throughout.
 

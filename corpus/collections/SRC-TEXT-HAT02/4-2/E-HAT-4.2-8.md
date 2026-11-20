@@ -45,7 +45,7 @@ Show the suspension of an acyclic CW complex is contractible.
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 8, printed p. 389.
+The exercise is §4.2 Exercise 8.
 
 Let $X$ be an acyclic CW complex, so $\widetilde H_n(X) = 0$ for all $n$. Write $\Sigma X = X \times I / {\sim}$, with $X \times \{0\}$ and $X \times \{1\}$ each collapsed to a point.
 

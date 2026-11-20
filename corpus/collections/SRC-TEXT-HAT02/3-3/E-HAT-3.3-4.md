@@ -57,7 +57,7 @@ Given a covering space action of a group $G$ on an orientable manifold $M$ by or
 :::
 
 ::: {.solution}
-The published solution is **Math 538 homework solutions, HMW 3, handwritten page 2 = PDF p. 14** (`tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher §3.3 Exercise 4: the same disjointness of translates, the observation that an orientation-preserving $g$ carries $\mu_x$ to $\mu_{gx}$, both excisions, and the conclusion that local consistency holds in $B_{(x)}$ because it holds in $B_x$. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 4, printed p. 257.
+The published solution is **Math 538 homework solutions, HMW 3, handwritten page 2 = PDF p. 14** (`tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher §3.3 Exercise 4: the same disjointness of translates, the observation that an orientation-preserving $g$ carries $\mu_x$ to $\mu_{gx}$, both excisions, and the conclusion that local consistency holds in $B_{(x)}$ because it holds in $B_x$. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 4.
 
 ::: pf
 

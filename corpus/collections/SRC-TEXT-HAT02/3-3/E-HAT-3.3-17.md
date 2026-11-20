@@ -75,7 +75,7 @@ More generally, show that homology commutes with direct limits: If $\{C_\alpha, 
 :::
 
 ::: {.solution}
-Throughout $\theset{A_{\alpha}, f_{\alpha\beta}}$ is a directed system of abelian groups over a directed set $\Lambda$, and $\varinjlim A_{\alpha}$ is the filtered colimit: the disjoint union of the $A_{\alpha}$ modulo the relation that $a_{\alpha} \in A_{\alpha}$ and $a_{\beta} \in A_{\beta}$ are equal when $f_{\alpha\gamma}(a_{\alpha}) = f_{\beta\gamma}(a_{\beta})$ for some $\gamma \ge \alpha, \beta$. The argument is the card's, and matches the two published treatments it cites: Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 17, printed pp. 15--16, and the Math 538 homework solutions, HMW 4, handwritten page 3.
+Throughout $\theset{A_{\alpha}, f_{\alpha\beta}}$ is a directed system of abelian groups over a directed set $\Lambda$, and $\varinjlim A_{\alpha}$ is the filtered colimit: the disjoint union of the $A_{\alpha}$ modulo the relation that $a_{\alpha} \in A_{\alpha}$ and $a_{\beta} \in A_{\beta}$ are equal when $f_{\alpha\gamma}(a_{\alpha}) = f_{\beta\gamma}(a_{\beta})$ for some $\gamma \ge \alpha, \beta$. The argument is the card's, and matches the two published treatments it cites: Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 17, and the Math 538 homework solutions, HMW 4, handwritten page 3.
 
 ::: pf
 

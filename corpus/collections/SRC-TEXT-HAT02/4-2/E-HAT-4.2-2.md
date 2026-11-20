@@ -51,7 +51,7 @@ Show the action of $\pi_1(\RP^n)$ on $\pi_n(\RP^n) \approx \ZZ$ is trivial for $
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 2, printed p. 389.
+The exercise is §4.2 Exercise 2.
 
 For $n=1$, $\RP^1\cong S^1$ and the action of $\pi_1$ on itself is conjugation in $\ZZ$, hence trivial.
 

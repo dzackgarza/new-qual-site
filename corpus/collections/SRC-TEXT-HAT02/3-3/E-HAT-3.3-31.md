@@ -174,9 +174,9 @@ Show that if $M$ is a compact $R$-orientable $n$-manifold, then the boundary map
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 31, printed p. 260.
+The exercise is §3.3 Exercise 31.
 
-Use **Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1, printed pp. 356--357** (PDF page 193 of `tmp/sources/bredon-topology-and-geometry.pdf`). Bredon proves precisely the required compatibility, $[\partial M]=\partial_*[M]$. The following is his argument, with the coefficient and disconnected cases made explicit.
+Use **Glen E. Bredon, *Topology and Geometry*, Chapter VI, §9, Lemma 9.1** (PDF page 193 of `tmp/sources/bredon-topology-and-geometry.pdf`). Bredon proves precisely the required compatibility, $[\partial M]=\partial_*[M]$. The following is his argument, with the coefficient and disconnected cases made explicit.
 
 Compactness leaves only finitely many components of $M$. The long exact sequences of the pairs and the local characterization of fundamental classes split over these components, so we may assume that $M$ is connected. A closed component has empty boundary and needs no further argument; in particular, no global injectivity claim is required. Assume now that $\partial M\ne\varnothing$.
 

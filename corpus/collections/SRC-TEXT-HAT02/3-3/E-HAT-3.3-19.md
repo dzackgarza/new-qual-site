@@ -55,7 +55,7 @@ Apply this to show that if $X$ is an open set in $\RR^n$ then $H_i(X; \ZZ)$ is c
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 19, printed p. 259.
+The exercise is §3.3 Exercise 19.
 
 If the indexing set is countable and every $G_\alpha$ is countable, then the disjoint union
 $$

@@ -47,7 +47,7 @@ Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a h
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33, printed p. 260. No retained solution set covers this exercise — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's at Exercise 32, and no other set in `tmp/sources` reaches §3.3 — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, printed p. 254, and the orientable double cover of pp. 234–235.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 33. No retained solution set covers this exercise — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's at Exercise 32, and no other set in `tmp/sources` reaches §3.3 — so the argument below is the card's own; it uses Lefschetz duality, Theorem 3.43, and the orientable double cover of pp. 234–235.
 
 Throughout $M$ is a compact contractible $n$-manifold with $n\ge1$, homology is taken with $\ZZ$ coefficients unless written otherwise, and $\widetilde H$ denotes reduced homology.
 
@@ -97,7 +97,7 @@ so $\partial$ is an isomorphism $\widetilde H_{i-1}(\partial M;\ZZ)\cong H_i(M,\
 $\partial M\ne\varnothing$, and $H_0(\partial M;\ZZ)=\ZZ\oplus\widetilde H_0(\partial M;\ZZ)$.
 
 ::: pf-proof
-If $\partial M$ were empty, $M$ would be a closed connected orientable $n$-manifold, so $H_n(M;\ZZ)\cong\ZZ$ (Theorem 3.26, printed p. 236), contradicting the vanishing of the reduced homology of a contractible space in degree $n\ge1$. Hence $\partial M\ne\varnothing$, and a nonempty space has $H_0=\ZZ\oplus\widetilde H_0$ by the definition of reduced homology in degree $0$.
+If $\partial M$ were empty, $M$ would be a closed connected orientable $n$-manifold, so $H_n(M;\ZZ)\cong\ZZ$ (Theorem 3.26), contradicting the vanishing of the reduced homology of a contractible space in degree $n\ge1$. Hence $\partial M\ne\varnothing$, and a nonempty space has $H_0=\ZZ\oplus\widetilde H_0$ by the definition of reduced homology in degree $0$.
 :::
 
 :::
@@ -106,7 +106,7 @@ If $\partial M$ were empty, $M$ would be a closed connected orientable $n$-manif
 $\widetilde H_i(S^{n-1};\ZZ)=\ZZ$ for $i=n-1$ and $0$ otherwise.
 
 ::: pf-proof
-For $n\ge2$ this is the standard computation of the homology of spheres (Theorem 2.1 and Exercise 2.1.15, printed pp. 106 and 114); for $n=1$ the sphere $S^0$ is two points, so $H_0=\ZZ^2$ and $\widetilde H_0=\ZZ$, which is the same description.
+For $n\ge2$ this is the standard computation of the homology of spheres (Theorem 2.1 and Exercise 2.1.15 and 114); for $n=1$ the sphere $S^0$ is two points, so $H_0=\ZZ^2$ and $\widetilde H_0=\ZZ$, which is the same description.
 :::
 
 :::

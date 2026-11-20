@@ -47,7 +47,7 @@ For an $n$-manifold $M$ and a compact subspace $A \subset M$, show that $H_n(M, 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 15, printed p. 259. The two maps between $H_n(M,M-A;R)$ and the sections over $A$ are the local-homology map and Hatcher's Lemma 3.27(a) applied to a compact $A$.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 15. The two maps between $H_n(M,M-A;R)$ and the sections over $A$ are the local-homology map and Hatcher's Lemma 3.27(a) applied to a compact $A$.
 
 ::: pf
 

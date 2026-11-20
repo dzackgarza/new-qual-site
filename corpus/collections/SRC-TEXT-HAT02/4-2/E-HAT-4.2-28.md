@@ -81,7 +81,7 @@ Show that the group $\ZZ_p \times \ZZ_p$ with $p$ prime cannot act freely on any
 :::
 
 ::: {.solution}
-A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 28, PDF p. 24**, whose argument is the skeleton of the one below — a free action gives a covering $S^n\to M$ with $M$ a closed $n$-manifold and $\pi_1(M)=G$, a $K(G,1)$ is built from $M$ by one $(n+1)$-cell and then higher cells, so $H^{n+1}(K(G,1);\FF_p)$ has $\FF_p$-dimension at most $1$, while the Künneth formula for $K(\ZZ_p,1)\times K(\ZZ_p,1)$ gives dimension $n+2$; Sam's last step cites the group cohomology of $\ZZ_p\times\ZZ_p$ where the card computes it. The card's argument is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 28, printed p. 391, against the covering space theory of Section 1.3, and againstst the cohomology of Eilenberg--MacLane spaces in Section 4.3.
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 28**, whose argument is the skeleton of the one below — a free action gives a covering $S^n\to M$ with $M$ a closed $n$-manifold and $\pi_1(M)=G$, a $K(G,1)$ is built from $M$ by one $(n+1)$-cell and then higher cells, so $H^{n+1}(K(G,1);\FF_p)$ has $\FF_p$-dimension at most $1$, while the Künneth formula for $K(\ZZ_p,1)\times K(\ZZ_p,1)$ gives dimension $n+2$; Sam's last step cites the group cohomology of $\ZZ_p\times\ZZ_p$ where the card computes it. The card's argument is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 28, against the covering space theory of Section 1.3, and againstst the cohomology of Eilenberg--MacLane spaces in Section 4.3.
 
 ::: pf
 

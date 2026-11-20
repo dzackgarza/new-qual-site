@@ -75,7 +75,7 @@ Show that $\tilde{H}_i(X) = 0$ for $i \geq n-1$, and give an example showing thi
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 33, printed p. 158. The induction on the number of sets and the acyclic open cover of $\partial\Delta^{n-1}$ are **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021), Hatcher 2.2.33, printed pp. 79–80** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`); the card replaces his small open face-neighbourhoods by the explicit barycentric sets $\theset{\lambda_j>0}$ and verifies that their intersections have exactly the contractible form the induction needs.
+The statement is Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 33. The induction on the number of sets and the acyclic open cover of $\partial\Delta^{n-1}$ are **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021), Hatcher 2.2.33, printed pp. 79–80** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`); the card replaces his small open face-neighbourhoods by the explicit barycentric sets $\theset{\lambda_j>0}$ and verifies that their intersections have exactly the contractible form the induction needs.
 
 Throughout, "acyclic" means having trivial reduced homology in every degree, and a cover is a finite family of open subsets of $X$ whose union is $X$. The claim to be proved, for $n\ge1$, is: if $X=A_1\cup\cdots\cup A_n$ with each nonempty intersection $A_{i_1}\cap\cdots\cap A_{i_k}$ acyclic, then $\widetilde H_i(X)=0$ for $i\ge n-1$.
 
@@ -105,7 +105,7 @@ $Y$ is covered by the $n-1$ open sets $A_1,\dots,A_{n-1}$, and every nonempty fi
 If $Z=\varnothing$, then $\widetilde H_i(X)=0$ for $i\ge n-2$, in particular for $i\ge n-1$.
 
 ::: pf-proof
-With $Z$ empty, $Y$ and $A_n$ are disjoint open subsets covering $X$, so $X$ is their disjoint union as a space. Then $\widetilde H_i(X)\cong\widetilde H_i(Y)\oplus\widetilde H_i(A_n)$ (Proposition 2.6, printed p. 109), and both summands vanish for $i\ge n-2$ by step [](#induction-hypothesis){.pf-ref}.
+With $Z$ empty, $Y$ and $A_n$ are disjoint open subsets covering $X$, so $X$ is their disjoint union as a space. Then $\widetilde H_i(X)\cong\widetilde H_i(Y)\oplus\widetilde H_i(A_n)$ (Proposition 2.6), and both summands vanish for $i\ge n-2$ by step [](#induction-hypothesis){.pf-ref}.
 
 :::
 
@@ -139,7 +139,7 @@ $X=\theset{\lambda_j\ge0,\ \sum_j\lambda_j=1,\ \lambda_j=0\text{ for some }j}$ w
 With $X=\partial\Delta^{n-1}$ as in step [](#sharp-cover){.pf-ref}, $\widetilde H_{n-2}(X)\cong\ZZ\ne0$.
 
 ::: pf-proof
-$\partial\Delta^{n-1}$ is homeomorphic to $S^{n-2}$, so $\widetilde H_{n-2}(X)\cong\widetilde H_{n-2}(S^{n-2})\cong\ZZ$ (Corollary 2.14, printed p. 114). The cover of step [](#sharp-cover){.pf-ref} satisfies the hypothesis of the claim, so the claim would force $\widetilde H_i(X)=0$ for $i\ge n-1$; it gives nothing in degree $n-2$, and there the group is nonzero. Hence the vanishing range $i\ge n-1$ cannot be improved to $i\ge n-2$, and the inequality is best possible for each $n\ge2$.
+$\partial\Delta^{n-1}$ is homeomorphic to $S^{n-2}$, so $\widetilde H_{n-2}(X)\cong\widetilde H_{n-2}(S^{n-2})\cong\ZZ$ (Corollary 2.14). The cover of step [](#sharp-cover){.pf-ref} satisfies the hypothesis of the claim, so the claim would force $\widetilde H_i(X)=0$ for $i\ge n-1$; it gives nothing in degree $n-2$, and there the group is nonzero. Hence the vanishing range $i\ge n-1$ cannot be improved to $i\ge n-2$, and the inequality is best possible for each $n\ge2$.
 
 :::
 

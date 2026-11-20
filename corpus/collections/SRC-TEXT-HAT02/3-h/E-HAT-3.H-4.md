@@ -71,7 +71,7 @@ Give $\widetilde W,\widetilde Z$ the CW structures lifting those of $W,Z$, as in
 For compact $C\subset\widetilde Z$ and a cell $e$ of $W$, only finitely many cells $\alpha\tilde e$ of $\widetilde W$ meet $\widetilde h^{-1}(C)$.
 
 ::: pf-proof
-$C$ lies in a finite subcomplex $c_1\cup\cdots\cup c_m$ by Proposition A.1, printed p. 520, hence meets only finitely many cells. Put $L_e=\widetilde h(\tilde e)$, compact. If $\alpha\tilde e$ meets $\widetilde h^{-1}(C)$ then by equivariance $\emptyset\ne h_*(\alpha)L_e\cap C$, so $L_e$ meets $\alpha^{-1}c_j$ for some $j$; $L_e$ is compact so it meets only finitely many cells $d_1,\dots,d_r$, and writing $d_k=\beta_k\tilde e_k$, $c_j=\gamma_k\tilde e_k$ uniquely, the equation $\alpha^{-1}c_j=d_k$ forces $\alpha=\gamma_k\beta_k^{-1}$, which gives only finitely many $\alpha$. Since $W$ has finitely many cells $e$, only finitely many cells in total occur.
+$C$ lies in a finite subcomplex $c_1\cup\cdots\cup c_m$ by Proposition A.1, hence meets only finitely many cells. Put $L_e=\widetilde h(\tilde e)$, compact. If $\alpha\tilde e$ meets $\widetilde h^{-1}(C)$ then by equivariance $\emptyset\ne h_*(\alpha)L_e\cap C$, so $L_e$ meets $\alpha^{-1}c_j$ for some $j$; $L_e$ is compact so it meets only finitely many cells $d_1,\dots,d_r$, and writing $d_k=\beta_k\tilde e_k$, $c_j=\gamma_k\tilde e_k$ uniquely, the equation $\alpha^{-1}c_j=d_k$ forces $\alpha=\gamma_k\beta_k^{-1}$, which gives only finitely many $\alpha$. Since $W$ has finitely many cells $e$, only finitely many cells in total occur.
 :::
 
 :::
@@ -103,7 +103,7 @@ A homotopy equivalence induces an isomorphism on $\pi_1$, so $f_*$ is an isomorp
 A homotopy $H:gf\simeq\mathrm{id}_X$ lifts to a proper homotopy $\widetilde H:\widetilde X\times I\to\widetilde X$ from $\widetilde g\widetilde f$ to a deck transformation $\gamma$.
 
 ::: pf-proof
-$X\times I$ is again a finite CW complex by Theorem A.6, printed p. 524; its universal cover is $\widetilde X\times I$ because $I$ is simply connected; and $H_*$ on $\pi_1(X\times I)\cong\pi_1(X)$ is an isomorphism, so the lemma gives that the lift $\widetilde H$ of $H$ is proper. For existence, the homotopy $\widetilde X\times I\to X$, $(x,t)\mapsto H(p(x),t)$, has $t=0$ term $H_0\circ p=gf\circ p$, which is covered by the lift $\widetilde g\widetilde f$, so by the homotopy lifting property (Proposition 1.30) it lifts with $\widetilde H_0=\widetilde g\widetilde f$. For each $x$ the point $\widetilde H_1(x)$ lies over $p(x)$, so $\widetilde H_1$ is a deck transformation, and it is a single one because a deck transformation is determined by its value at one point.
+$X\times I$ is again a finite CW complex by Theorem A.6; its universal cover is $\widetilde X\times I$ because $I$ is simply connected; and $H_*$ on $\pi_1(X\times I)\cong\pi_1(X)$ is an isomorphism, so the lemma gives that the lift $\widetilde H$ of $H$ is proper. For existence, the homotopy $\widetilde X\times I\to X$, $(x,t)\mapsto H(p(x),t)$, has $t=0$ term $H_0\circ p=gf\circ p$, which is covered by the lift $\widetilde g\widetilde f$, so by the homotopy lifting property (Proposition 1.30) it lifts with $\widetilde H_0=\widetilde g\widetilde f$. For each $x$ the point $\widetilde H_1(x)$ lies over $p(x)$, so $\widetilde H_1$ is a deck transformation, and it is a single one because a deck transformation is determined by its value at one point.
 :::
 
 :::

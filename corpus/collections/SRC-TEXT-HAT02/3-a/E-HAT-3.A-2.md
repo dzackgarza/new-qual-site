@@ -138,7 +138,7 @@ Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
-Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, printed pp. 66--67, in the book's own steps; the §3.1 text is read in `tmp/sources/weibel-03-tor-and-ext.md` and the §2.6--2.7 colimit corollaries in `tmp/sources/weibel-02-derived-functors.md`.
+Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, in the book's own steps; the §3.1 text is read in `tmp/sources/weibel-03-tor-and-ext.md` and the §2.6--2.7 colimit corollaries in `tmp/sources/weibel-02-derived-functors.md`.
 
 *Cyclic groups.* (Calculation 3.1.1, printed p. 66.) The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of the complex $0\to B\xrightarrow{n}B\to0$, so
 $$
@@ -147,7 +147,7 @@ $$
 \operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0\ \ (i\ge2).
 $$
 
-*The torsion subgroup in the second variable.* (Proposition 3.1.3, printed p. 67.) $\QQ/\ZZ$ is the direct limit of its finite subgroups, each isomorphic to some $\ZZ/n$, and $\operatorname{Tor}$ commutes with direct limits, so
+*The torsion subgroup in the second variable.* (Proposition 3.1.3.) $\QQ/\ZZ$ is the direct limit of its finite subgroups, each isomorphic to some $\ZZ/n$, and $\operatorname{Tor}$ commutes with direct limits, so
 $$
 \operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong\varinjlim_n\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)\cong\varinjlim_n B[n]=\bigcup_n B[n],
 $$
@@ -161,7 +161,7 @@ $$
 $$
 the second isomorphism being the Proposition above with $B$ replaced by $A$. The book draws the same conclusion in one sentence in the Remark. This is the exercise's first sentence: $\operatorname{Tor}(A,\QQ/\ZZ)\cong T(A)$. Balancing is the step that matters for it, since the Proposition computes $\operatorname{Tor}$ with $\QQ/\ZZ$ in the first slot and the exercise asks for it in the second.
 
-*The second sentence of the exercise.* (Proposition 3.1.4 and Corollary 3.1.5, printed p. 67.) If $A$ is torsionfree then $A$ is the direct limit of its finitely generated subgroups, each isomorphic to some $\ZZ^m$, so by the same colimit formula
+*The second sentence of the exercise.* (Proposition 3.1.4 and Corollary 3.1.5.) If $A$ is torsionfree then $A$ is the direct limit of its finitely generated subgroups, each isomorphic to some $\ZZ^m$, so by the same colimit formula
 $$
 \operatorname{Tor}_n^{\ZZ}(A,B)\cong\varinjlim_m\operatorname{Tor}_n^{\ZZ}(\ZZ^m,B)=0\qquad(n\neq0,\ \text{all } B),
 $$
@@ -171,5 +171,5 @@ $$
 $$
 as Corollary 3.1.5, without a separate proof, and obtains it from Proposition 3.1.4 and the Remark. The two implications the exercise asks for are these: if $A$ is torsionfree then $\operatorname{Tor}(A,B)=0$ for every $B$, which is Proposition 3.1.4 in degree $1$; and if $\operatorname{Tor}(A,B)=0$ for every $B$ then taking $B=\QQ/\ZZ$ gives $T(A)\cong\operatorname{Tor}(A,\QQ/\ZZ)=0$, so $A$ is torsionfree.
 
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1), printed p. 265.
+Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1), printed p. 265.
 :::

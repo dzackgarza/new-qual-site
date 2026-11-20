@@ -77,7 +77,7 @@ Show that a map between connected $n$-dimensional CW complexes is a homotopy equ
 :::
 
 ::: {.solution}
-The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.13, PDF p. 22**: the passage to universal covers, the reduction to proving that $\widetilde f$ is a homology isomorphism, and the closing appeal to Exercise 4.2.12 are that solution's. What the card supplies is the step the set elides: the absolute Hurewicz theorem does not apply to $\widetilde X$, whose own homotopy groups need not vanish below $n$, so the argument runs through the relative Hurewicz theorem for the mapping-cylinder pair, Theorem 4.37, printed p. 371, and needs its surjectivity in degree $n+1$. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, printed p. 390, and the hint followed is the exercise's own.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.13**: the passage to universal covers, the reduction to proving that $\widetilde f$ is a homology isomorphism, and the closing appeal to Exercise 4.2.12 are that solution's. What the card supplies is the step the set elides: the absolute Hurewicz theorem does not apply to $\widetilde X$, whose own homotopy groups need not vanish below $n$, so the argument runs through the relative Hurewicz theorem for the mapping-cylinder pair, Theorem 4.37, and needs its surjectivity in degree $n+1$. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 13, and the hint followed is the exercise's own.
 
 Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducing isomorphisms $f_*:\pi_i(X)\to\pi_i(Y)$ for $i\le n$, and $p_X:\widetilde X\to X$, $p_Y:\widetilde Y\to Y$ are the universal covers.
 
@@ -87,7 +87,7 @@ Throughout $f:X\to Y$ is a map of connected $n$-dimensional CW complexes inducin
 $f_*$ is an isomorphism on $\pi_1$, so $f$ lifts to a map of universal covers $\widetilde f:\widetilde X\to\widetilde Y$ with $p_Y\widetilde f=fp_X$, and $\widetilde f_*:\pi_i(\widetilde X)\to\pi_i(\widetilde Y)$ is an isomorphism for $2\le i\le n$.
 
 ::: pf-proof
-A map lifts to the universal covers exactly when it carries $\pi_1$ of the domain into the subgroup $\pi_1(\widetilde Y)=0$ of $\pi_1(Y)$, that is, when $f_*\pi_1(X)=0$; here $f_*$ is an isomorphism onto $\pi_1(Y)$, so this holds only after choosing the basepoints in the same path component, which is the case. For $i\ge2$ the covering projection induces an isomorphism $\pi_i(\widetilde X)\cong\pi_i(X)$ and likewise for $Y$ (Proposition 4.1, printed p. 342), so $\widetilde f_*$ is the conjugate of $f_*$ and is an isomorphism in the stated range.
+A map lifts to the universal covers exactly when it carries $\pi_1$ of the domain into the subgroup $\pi_1(\widetilde Y)=0$ of $\pi_1(Y)$, that is, when $f_*\pi_1(X)=0$; here $f_*$ is an isomorphism onto $\pi_1(Y)$, so this holds only after choosing the basepoints in the same path component, which is the case. For $i\ge2$ the covering projection induces an isomorphism $\pi_i(\widetilde X)\cong\pi_i(X)$ and likewise for $Y$ (Proposition 4.1), so $\widetilde f_*$ is the conjugate of $f_*$ and is an isomorphism in the stated range.
 
 :::
 
@@ -97,7 +97,7 @@ A map lifts to the universal covers exactly when it carries $\pi_1$ of the domai
 The claim holds for $n\le1$.
 
 ::: pf-proof
-For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomorphism. For $n=1$ the universal covers of connected graphs are trees (Proposition 1A.2, printed p. 84), hence contractible, so $\widetilde f$ is a homotopy equivalence; a map whose lift to universal covers is a homotopy equivalence is itself a homotopy equivalence, and $\widetilde f$ is one because it is a map between contractible spaces.
+For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomorphism. For $n=1$ the universal covers of connected graphs are trees (Proposition 1A.2), hence contractible, so $\widetilde f$ is a homotopy equivalence; a map whose lift to universal covers is a homotopy equivalence is itself a homotopy equivalence, and $\widetilde f$ is one because it is a map between contractible spaces.
 
 :::
 
@@ -163,7 +163,7 @@ For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step
 $f$ is a homotopy equivalence.
 
 ::: pf-proof
-$f_*:\pi_1(X)\to\pi_1(Y)$ is an isomorphism by hypothesis and $\widetilde f$ is a homology isomorphism by step [](#homology-iso){.pf-ref}; Exercise 12 of §4.2, printed p. 389, then gives that $f$ is a homotopy equivalence. (Equivalently, $\widetilde f$ is a homotopy equivalence by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, and a map with that lift and an isomorphism on $\pi_1$ is a homotopy equivalence.)
+$f_*:\pi_1(X)\to\pi_1(Y)$ is an isomorphism by hypothesis and $\widetilde f$ is a homology isomorphism by step [](#homology-iso){.pf-ref}; Exercise 12 of §4.2, then gives that $f$ is a homotopy equivalence. (Equivalently, $\widetilde f$ is a homotopy equivalence by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, and a map with that lift and an isomorphism on $\pi_1$ is a homotopy equivalence.)
 
 :::
 

@@ -50,7 +50,7 @@ Show that an H-space or topological group structure on a path-connected, locally
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §3.C only in Li and Sam, each of which solves exercise 5 there and nothing else. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.C Exercise 4, printed p. 291, and uses only the lifting criterion for covering spaces and the uniqueness of lifts.
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §3.C only in Li and Sam, each of which solves exercise 5 there and nothing else. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.C Exercise 4, and uses only the lifting criterion for covering spaces and the uniqueness of lifts.
 
 Let $p:\widetilde X\to X$ be the universal cover of the path-connected, locally path-connected space $X$, and choose $\widetilde e\in p^{-1}(e)$ for a basepoint $e\in X$. The spaces $\widetilde X$, $\widetilde X\times\widetilde X$ and $\widetilde X\times\widetilde X\times\widetilde X$ are simply connected, a product of simply connected spaces being simply connected, and every map from a simply connected space into $X$ with a prescribed lift of one point has a unique lift.
 

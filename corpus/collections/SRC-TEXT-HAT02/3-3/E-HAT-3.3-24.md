@@ -63,7 +63,7 @@ Using Exercise 6, construct examples showing there are no other restrictions on 
 :::
 
 ::: {.solution}
-The published solution is **Stanford Math 215C, Spring 2009, Solution Set 4, Hatcher 3.3.24, printed p. 2** ([`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf)): the rank and torsion computation for both orientability cases and the connected-sum examples are its. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 24, printed p. 259. In the set's typography "$\dim H^1(M;\ZZ)$" has to be read as rank, not as a vector-space dimension, since the finite summand $F$ contributes no rank.
+The published solution is **Stanford Math 215C, Spring 2009, Solution Set 4, Hatcher 3.3.24, printed p. 2** ([`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf)): the rank and torsion computation for both orientability cases and the connected-sum examples are its. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 24. In the set's typography "$\dim H^1(M;\ZZ)$" has to be read as rank, not as a vector-space dimension, since the finite summand $F$ contributes no rank.
 
 Throughout, $M$ is a closed connected $3$-manifold and $H_1(M;\ZZ)\cong\ZZ^r\oplus F$ with $F$ finite.
 
@@ -73,7 +73,7 @@ Throughout, $M$ is a closed connected $3$-manifold and $H_1(M;\ZZ)\cong\ZZ^r\opl
 If $M$ is orientable then $H_2(M;\ZZ)\cong\ZZ^r$.
 
 ::: pf-proof
-Poincaré duality for the closed orientable $3$-manifold $M$ gives $H_2(M;\ZZ)\cong H^{3-2}(M;\ZZ)=H^1(M;\ZZ)$ (Theorem 3.30, printed p. 241). The universal coefficient theorem gives $H^1(M;\ZZ)\cong\operatorname{Hom}(H_1(M;\ZZ),\ZZ)\oplus\operatorname{Ext}(H_0(M;\ZZ),\ZZ)$, and $H_0(M;\ZZ)\cong\ZZ$ is free, so the Ext term vanishes (Theorem 3.2, printed p. 195). Finally $\operatorname{Hom}(\ZZ^r\oplus F,\ZZ)\cong\ZZ^r$, because a homomorphism kills the finite group $F$.
+Poincaré duality for the closed orientable $3$-manifold $M$ gives $H_2(M;\ZZ)\cong H^{3-2}(M;\ZZ)=H^1(M;\ZZ)$ (Theorem 3.30). The universal coefficient theorem gives $H^1(M;\ZZ)\cong\operatorname{Hom}(H_1(M;\ZZ),\ZZ)\oplus\operatorname{Ext}(H_0(M;\ZZ),\ZZ)$, and $H_0(M;\ZZ)\cong\ZZ$ is free, so the Ext term vanishes (Theorem 3.2). Finally $\operatorname{Hom}(\ZZ^r\oplus F,\ZZ)\cong\ZZ^r$, because a homomorphism kills the finite group $F$.
 :::
 
 :::
@@ -87,7 +87,7 @@ If $M$ is nonorientable then $H_2(M;\ZZ)\cong\ZZ^{r-1}\oplus\ZZ_2$, and in parti
 The torsion subgroup of $H_2(M;\ZZ)$ is $\ZZ_2$.
 
 ::: pf-proof
-Corollary 3.28, printed p. 238, states that for a closed connected $n$-manifold the torsion subgroup of $H_{n-1}(M;\ZZ)$ is trivial if $M$ is orientable and $\ZZ_2$ if not; with $n=3$ this is the claim.
+Corollary 3.28, states that for a closed connected $n$-manifold the torsion subgroup of $H_{n-1}(M;\ZZ)$ is trivial if $M$ is orientable and $\ZZ_2$ if not; with $n=3$ this is the claim.
 :::
 
 :::

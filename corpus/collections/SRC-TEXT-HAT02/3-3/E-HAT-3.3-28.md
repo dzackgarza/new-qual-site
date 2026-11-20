@@ -61,7 +61,7 @@ Show that a nonsingular symmetric or skew-symmetric bilinear pairing over a fiel
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 28, printed p. 260, and uses only nonsingularity of the pairing, not its symmetry: the symmetry hypothesis of the exercise is not needed.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 28, and uses only nonsingularity of the pairing, not its symmetry: the symmetry hypothesis of the exercise is not needed.
 
 ::: pf
 

@@ -46,7 +46,7 @@ If $X$ is a $K(G, 1)$ CW complex, show that $\pi_n(X^n)$ is free abelian for $n 
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 19, printed p. 390.
+The exercise is §4.2 Exercise 19.
 
 Let $p:\widetilde X\to X$ be the universal cover. Since $X$ is a $K(G,1)$, $\widetilde X$ is contractible. The inverse image $\widetilde X^{\,n}=p^{-1}(X^n)$ is the $n$-skeleton of $\widetilde X$.
 

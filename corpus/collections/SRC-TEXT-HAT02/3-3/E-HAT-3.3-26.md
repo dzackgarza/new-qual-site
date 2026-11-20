@@ -71,7 +71,7 @@ Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; 
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 26, printed p. 259.
+The exercise is §3.3 Exercise 26.
 
 Let
 $$

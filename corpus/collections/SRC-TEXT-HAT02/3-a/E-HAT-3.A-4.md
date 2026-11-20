@@ -100,16 +100,16 @@ Show that $\otimes$ and Tor commute with direct limits: $(\varinjlim_\alpha A_\a
 ::: {.solution}
 No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §3.A. The argument below is the card's own, and it is an application, not a re-proof, of four printed results of Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), read in `tmp/sources/weibel-02-derived-functors.md`:
 
-(i) Theorem 2.6.15, printed p. 57: filtered colimits of $R$-modules are exact, considered as functors from $(\mathbf{mod}\text{-}R)^I$ to $\mathbf{mod}\text{-}R$. That is axiom (AB5) of Exercise 2.6.5, printed p. 57; $\ZZ$-mod also has enough projectives, free abelian groups being projective.
+(i) Theorem 2.6.15: filtered colimits of $R$-modules are exact, considered as functors from $(\mathbf{mod}\text{-}R)^I$ to $\mathbf{mod}\text{-}R$. That is axiom (AB5) of Exercise 2.6.5; $\ZZ$-mod also has enough projectives, free abelian groups being projective.
 
-(ii) Corollary 2.6.16, printed p. 58: if $\mathcal A=\mathbf{mod}\text{-}R$, or $\mathcal A$ is any abelian category with enough projectives satisfying (AB5), and $F:\mathcal A\to\mathcal B$ is a left adjoint, then for every $A:I\to\mathcal A$ with $I$ filtered,
+(ii) Corollary 2.6.16: if $\mathcal A=\mathbf{mod}\text{-}R$, or $\mathcal A$ is any abelian category with enough projectives satisfying (AB5), and $F:\mathcal A\to\mathcal B$ is a left adjoint, then for every $A:I\to\mathcal A$ with $I$ filtered,
 $$
 L_*F\bigl(\varinjlim A_i\bigr)\cong\varinjlim L_*F(A_i).
 $$
 
-(iii) Theorem 2.7.2, printed p. 58: $L_n(A\otimes_R-)(B)\cong L_n(-\otimes_RB)(A)=\operatorname{Tor}_n^R(A,B)$, the balancing of the two left derived functors of the tensor product.
+(iii) Theorem 2.7.2: $L_n(A\otimes_R-)(B)\cong L_n(-\otimes_RB)(A)=\operatorname{Tor}_n^R(A,B)$, the balancing of the two left derived functors of the tensor product.
 
-(iv) Corollary 2.6.17, printed p. 58, gives the same colimit theorem for $\operatorname{Tor}$ in the second variable. It is not the step the exercise needs, and the remark after the proof says why.
+(iv) Corollary 2.6.17, gives the same colimit theorem for $\operatorname{Tor}$ in the second variable. It is not the step the exercise needs, and the remark after the proof says why.
 
 Throughout, $\Lambda$ is a directed index set, $(A_\alpha)_{\alpha\in\Lambda}$ a directed system of abelian groups with colimit $A=\varinjlim_\alpha A_\alpha$. A directed set is a filtered index category, so (i) and (ii) apply.
 

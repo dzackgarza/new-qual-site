@@ -52,7 +52,7 @@ Thus $\pi_7(S^4)$ and $\pi_{15}(S^8)$ contain $\ZZ$ summands.
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 31, printed p. 392. The proof below is transcribed from Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 31, and checked against the book: the exact sequence used is that of Theorem 4.41, printed p. 376, and the identification $\pi_n(E,F,x_0)\cong\pi_n(B,b_0)$ is the one that sequence supplies.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 31. The proof below is transcribed from Proudfoot, *Math 634: Algebraic Topology I*, Fall 2015, Homework #7, Problem 31, and checked against the book: the exact sequence used is that of Theorem 4.41, and the identification $\pi_n(E,F,x_0)\cong\pi_n(B,b_0)$ is the one that sequence supplies.
 
 Take a basepoint $x_0\in F$ with image $b_0\in B$. The hypothesis says that the inclusion $i:F\to E$ is homotopic to a constant map, so $i_*:\pi_n(F,x_0)\to\pi_n(E,x_0)$ is trivial for every $n>0$. In the long exact sequence of the fibration
 $$

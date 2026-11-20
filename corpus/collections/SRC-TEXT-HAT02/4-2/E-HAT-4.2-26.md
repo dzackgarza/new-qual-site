@@ -47,7 +47,7 @@ Generalizing the example of $\RP^2$ and $S^2 \times \RP^\infty$, show that if $X
 :::
 
 ::: {.solution}
-The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 26, PDF p. 23**, and the argument below is that one, checked against the book: the homotopy groups agree because the universal cover has the same $\pi_i$ for $i\ge2$ and $\pi_1(X)$ is recovered from $K(\pi_1(X),1)$; the two spaces cannot be homotopy equivalent because a connected finite-dimensional CW complex has only finitely many nonzero homology groups, while $K(\pi_1(X),1)$ for a group with an element of finite order is infinite dimensional (Proposition 2.45, printed p. 146) and has infinitely many nonzero homology groups — its homology is the group homology of $\pi_1(X)$, whose torsion shows in infinitely many degrees.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 26**, and the argument below is that one, checked against the book: the homotopy groups agree because the universal cover has the same $\pi_i$ for $i\ge2$ and $\pi_1(X)$ is recovered from $K(\pi_1(X),1)$; the two spaces cannot be homotopy equivalent because a connected finite-dimensional CW complex has only finitely many nonzero homology groups, while $K(\pi_1(X),1)$ for a group with an element of finite order is infinite dimensional (Proposition 2.45) and has infinitely many nonzero homology groups — its homology is the group homology of $\pi_1(X)$, whose torsion shows in infinitely many degrees.
 
 
 

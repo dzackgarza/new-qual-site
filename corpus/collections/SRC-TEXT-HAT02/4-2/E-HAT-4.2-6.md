@@ -53,7 +53,7 @@ Show that the relative form of the Hurewicz theorem in dimension $n$ implies the
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 6, printed p. 389.
+The exercise is §4.2 Exercise 6.
 
 
 The argument is the card's own: the cone pair has the homotopy of a suspension of $X$, so the relative theorem applied to it is the absolute theorem one degree down. One hypothesis is checked here that the original left implicit, namely that the relative Hurewicz theorem applies in its isomorphism form to this pair.

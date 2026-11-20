@@ -59,7 +59,7 @@ If $E$ is the product bundle $B \times D^n$ with $B$ a CW complex, show that the
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.D Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.D Exercise 8, printed p. 447, against the Thom isomorphism theorem of pp. 441--442 and against the reduced cross product of Section 3.2. The printed exercise asks for the cohomology statement $\tilde H^i(B;R)\approx\tilde H^{n+i}(\Sigma^nB;R)$; the homology analogue at the end is additional and is marked as such.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.D Exercise 8. It is checked against Hatcher, Algebraic Topology, Section 4.D Exercise 8, against the Thom isomorphism theorem of pp. 441--442 and against the reduced cross product of Section 3.2. The printed exercise asks for the cohomology statement $\tilde H^i(B;R)\approx\tilde H^{n+i}(\Sigma^nB;R)$; the homology analogue at the end is additional and is marked as such.
 
 ::: pf
 

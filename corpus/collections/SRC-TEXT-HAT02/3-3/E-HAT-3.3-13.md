@@ -68,7 +68,7 @@ Show there is no retraction $M_g \to M_h'$ if $h > g/2$.
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 13, printed p. 258, with the exercise's own hint. No retained solution set covers it — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's contains Exercise 8, 17 and 32 of that section — and the argument below is the card's own: it replaces the printed hint by the cup-product bound and records that the hint also works.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 13, with the exercise's own hint. No retained solution set covers it — Guanyu Li's set stops at §3.3 Exercise 11 and Steven V. Sam's contains Exercise 8, 17 and 32 of that section — and the argument below is the card's own: it replaces the printed hint by the cup-product bound and records that the hint also works.
 
 Throughout $F$ is a field, $M_g$ is the closed orientable surface of genus $g$, and $M_h'\subset M_g$ is a compact genus-$h$ subsurface with one boundary circle, so that $M_h'$ is $M_h$ with an open disk removed.
 
@@ -88,7 +88,7 @@ $r\circ i=\operatorname{id}$ gives $i^*\circ r^*=\operatorname{id}$ on $H^1(M_h'
 $\dim_F H^1(M_h';F)=2h$ and $H^2(M_h';F)=0$.
 
 ::: pf-proof
-$M_h'$ is a compact surface with one boundary circle, so it is homotopy equivalent to a wedge of $2h$ circles: collapsing the complement of $2h$ arcs cutting $M_h$ into a disk gives a deformation retraction onto such a wedge (§1.1, printed p. 10, or Exercise 1.2.4's picture). Hence $H_1(M_h';\ZZ)\cong\ZZ^{2h}$ and $H_i(M_h';\ZZ)=0$ for $i\ge2$; over the field $F$, $H^1(M_h';F)\cong\operatorname{Hom}(H_1,F)$ has dimension $2h$ by the universal coefficient theorem, and $H^2(M_h';F)=0$.
+$M_h'$ is a compact surface with one boundary circle, so it is homotopy equivalent to a wedge of $2h$ circles: collapsing the complement of $2h$ arcs cutting $M_h$ into a disk gives a deformation retraction onto such a wedge (§1.1, or Exercise 1.2.4's picture). Hence $H_1(M_h';\ZZ)\cong\ZZ^{2h}$ and $H_i(M_h';\ZZ)=0$ for $i\ge2$; over the field $F$, $H^1(M_h';F)\cong\operatorname{Hom}(H_1,F)$ has dimension $2h$ by the universal coefficient theorem, and $H^2(M_h';F)=0$.
 
 :::
 
@@ -108,7 +108,7 @@ $\dim V=2h$ since $r^*$ is injective by step [](#injective){.pf-ref}. For $u,v\i
 The cup product pairing $H^1(M_g;F)\times H^1(M_g;F)\to H^2(M_g;F)\cong F$ is a nondegenerate alternating bilinear form.
 
 ::: pf-proof
-Bilinearity is the bilinearity of $\smile$; nondegeneracy is Poincaré duality: for $0\ne u\in H^1(M_g;F)$ there is $v$ with $u\smile v\ne0$, because cap product with the fundamental class is an isomorphism $H^1(M_g;F)\cong H_{2-1}(M_g;F)=H_1(M_g;F)$ and the Kronecker pairing is nondegenerate (Theorem 3.30, printed p. 250). Alternating: $u\smile u=0$ for every $u\in H^1$, since $u\smile u=-u\smile u$ by graded commutativity in odd degree, so $2(u\smile u)=0$ in the torsion-free group $H^2(M_g;\ZZ)\cong\ZZ$; this holds integrally and hence after tensoring with any field, and in particular in characteristic $2$, where a symmetric form with zero diagonal is alternating.
+Bilinearity is the bilinearity of $\smile$; nondegeneracy is Poincaré duality: for $0\ne u\in H^1(M_g;F)$ there is $v$ with $u\smile v\ne0$, because cap product with the fundamental class is an isomorphism $H^1(M_g;F)\cong H_{2-1}(M_g;F)=H_1(M_g;F)$ and the Kronecker pairing is nondegenerate (Theorem 3.30). Alternating: $u\smile u=0$ for every $u\in H^1$, since $u\smile u=-u\smile u$ by graded commutativity in odd degree, so $2(u\smile u)=0$ in the torsion-free group $H^2(M_g;\ZZ)\cong\ZZ$; this holds integrally and hence after tensoring with any field, and in particular in characteristic $2$, where a symmetric form with zero diagonal is alternating.
 
 :::
 
@@ -118,7 +118,7 @@ Bilinearity is the bilinearity of $\smile$; nondegeneracy is Poincaré duality: 
 An isotropic subspace of a nondegenerate alternating form on a space of dimension $2g$ has dimension at most $g$.
 
 ::: pf-proof
-The form has a symplectic basis $e_1,f_1,\dots,e_g,f_g$, obtained by choosing $e_1\ne0$, finding $f_1$ with $e_1\cdot f_1\ne0$ by nondegeneracy, and restricting to the orthogonal complement of the span, which has dimension $2g-2$ and again carries a nondegenerate alternating form; this is the usual induction, and the resulting basis is the symplectic basis of §3.3, printed p. 249. In such a basis the form is a direct sum of $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ blocks, and an isotropic subspace $W$ meets the span of each block in at most one dimension: if $W$ contained two independent elements of $\langle e_i,f_i\rangle$ it would contain a vector pairing nontrivially with an element of $W$. Hence $\dim W\le g$.
+The form has a symplectic basis $e_1,f_1,\dots,e_g,f_g$, obtained by choosing $e_1\ne0$, finding $f_1$ with $e_1\cdot f_1\ne0$ by nondegeneracy, and restricting to the orthogonal complement of the span, which has dimension $2g-2$ and again carries a nondegenerate alternating form; this is the usual induction, and the resulting basis is the symplectic basis of §3.3. In such a basis the form is a direct sum of $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ blocks, and an isotropic subspace $W$ meets the span of each block in at most one dimension: if $W$ contained two independent elements of $\langle e_i,f_i\rangle$ it would contain a vector pairing nontrivially with an element of $W$. Hence $\dim W\le g$.
 
 :::
 
