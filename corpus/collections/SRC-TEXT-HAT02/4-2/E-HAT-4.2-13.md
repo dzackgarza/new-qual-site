@@ -110,6 +110,22 @@ audit:
     vanishing because the map on $\pi_n$ is injective, `homology-iso` and the closing
     Whitehead and Hurewicz applications, and the two low-dimensional cases. Not claimed:
     anything beyond this exercise, and no page locator is written here.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second pass on the same card, from six reader reports that flagged the low-dimensional
+    step. The proof of step `low-dimensions` asserted that "a map whose lift to universal
+    covers is a homotopy equivalence is itself a homotopy equivalence", which is false:
+    $z\mapsto z^2$ on $S^1$ lifts to $t\mapsto2t$ on $\RR$, a homeomorphism, and is
+    not a homotopy equivalence. The step now proves the case $n=1$ from numbered statements:
+    the universal covers are connected graphs (Lemma 1A.3) and, being simply connected,
+    trees, as the consequence stated after Proposition 1A.2 records; the deformation
+    retraction in the proof of Proposition 1A.1 contracts a tree to a vertex, so $\pi_i$
+    vanishes above degree $1$ (Proposition 4.1), $f_*$ is an isomorphism on every $\pi_i$,
+    and Theorem 4.5 makes $f$ a homotopy equivalence. The clause in the preceding event of
+    this date that listed the low-dimensional case among the steps read and left unchanged is
+    superseded by this one; the two repairs that event records stand.
 ---
 
 ::: {.problem}
@@ -137,7 +153,7 @@ Choose basepoints with $f(x_0)=y_0$. The composite $fp_X:\widetilde X\to Y$ carr
 The claim holds for $n\le1$.
 
 ::: pf-proof
-For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomorphism. For $n=1$ the universal covers of connected graphs are trees (Proposition 1A.2), hence contractible, so $\widetilde f$ is a homotopy equivalence; a map whose lift to universal covers is a homotopy equivalence is itself a homotopy equivalence, and $\widetilde f$ is one because it is a map between contractible spaces.
+For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomorphism. For $n=1$ the universal covers $\widetilde X$ and $\widetilde Y$ are connected graphs by Lemma 1A.3, and being simply connected they are trees, as the consequence stated after Proposition 1A.2 records; the deformation retraction constructed in the proof of Proposition 1A.1 then contracts each onto a vertex, so both are contractible. Hence $\pi_i(\widetilde X)=\pi_i(\widetilde Y)=0$ for $i\ge2$, and Proposition 4.1 gives $\pi_i(X)=\pi_i(Y)=0$ for $i\ge2$. With $f_*$ an isomorphism on $\pi_1$ by hypothesis, $f_*$ is an isomorphism on every $\pi_i$, and Whitehead's theorem (Theorem 4.5) makes $f$ a homotopy equivalence. The lift $\widetilde f$ is a map between contractible spaces and so is itself a homotopy equivalence, but that alone does not give the conclusion: $z\mapsto z^2$ on $S^1$ lifts to $t\mapsto2t$ on $\RR$, a homeomorphism, and is not a homotopy equivalence.
 
 :::
 
