@@ -180,11 +180,11 @@ For $m=2$ the chain forces $\nu_2=2$ and $\nu_1+\nu_3=4$ with $0\le\nu_3\le2$, s
 $s_{(2,2)}s_{(2)}s_{(1)}=s_{(5,2)}+s_{(4,3)}+2s_{(4,2,1)}+s_{(3,3,1)}+2s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$.
 
 ::: pf-proof
-Pieri's formula [@FH91, (A.7)] with $m=1$ allows a single box in every row the chain
+Pieri's formula [@FH91, (A.7)] with $m=1$ allows a single box in each row the chain
 $$\nu_1\ge\lambda_1\ge\nu_2\ge\lambda_2\ge\cdots\ge\nu_k\ge\lambda_k\ge0$$
-admits:
+admits, which gives
 $$s_{(4,2)}s_{(1)}=s_{(5,2)}+s_{(4,3)}+s_{(4,2,1)},\qquad s_{(3,2,1)}s_{(1)}=s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)},\qquad s_{(2,2,2)}s_{(1)}=s_{(3,2,2)}+s_{(2,2,2,1)}.$$
-The shape $(2,2,2)$ admits boxes only in its first and fourth rows, since a box in row $2$ or row $3$ would give the non-partition $(2,3,2)$ or $(2,2,3)$. Adding the three displays and collecting equal terms gives the claim.
+A box can be added to $(2,2,2)$ only in its first or fourth row, since a box in row $2$ or row $3$ would give the non-partition $(2,3,2)$ or $(2,2,3)$. Adding the three displays and collecting equal terms gives the claim.
 :::
 
 :::
