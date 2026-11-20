@@ -10,6 +10,19 @@ classification:
   - Irreducible Elements
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Norm N(a + b sqrt(-5)) = a^2 + 5b^2 is multiplicative and positive, with
+    N(x) = 1 exactly for the units +-1. Since N(7) = 49, a factorisation 7 = xy forces N(x) in {1, 7,
+    49}, and a^2 + 5b^2 = 7 has no integer solution (b = 0 gives 7, b = +-1 gives a^2 = 2, and larger
+    b make the second term exceed 7), so 7 is irreducible. It is not prime because 7 divides
+    (3 + sqrt(-5))(3 - sqrt(-5)) = 14 while dividing neither factor, the quotients not lying in the
+    ring. For (b), a PID has every irreducible prime, so the ring is not a PID. Checked the
+    nonexistence of a norm-7 element, which is the step the irreducibility rests on, and the
+    computation (3+sqrt(-5))(3-sqrt(-5)) = 9 + 5 = 14.
 ---
 
 ::: {.problem}
