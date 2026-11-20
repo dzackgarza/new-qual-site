@@ -87,31 +87,31 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 ### Solution collections for Hartshorne
 
-- [Andrew Egbert](/assets/algebraic-geometry/resources/Andrew%20Egbert.pdf): solutions to exercises from Chapters I–V (2013).
+- [Andrew Egbert](/assets/attachments/Andrew%20Egbert.pdf): solutions to exercises from Chapters I–V (2013).
 
-- [Bryden R. Cais](/assets/algebraic-geometry/resources/Bryden%20R%20Cais.pdf): selected solutions for Chapters II–IV (2004).
+- [Bryden R. Cais](/assets/attachments/Bryden%20R%20Cais.pdf): selected solutions for Chapters II–IV (2004).
 
-- [Chris Lomont](/assets/algebraic-geometry/resources/Chris%20Lomont.pdf): selected solutions for Chapters II–IV (1999).
+- [Chris Lomont](/assets/attachments/Chris%20Lomont.pdf): selected solutions for Chapters II–IV (1999).
 
-- [Ismail Saglam and Chris](/assets/algebraic-geometry/resources/ismail%20saglam%20and%20Chris.pdf): solutions for Chapters II and III (2008–2009).
+- [Ismail Saglam and Chris](/assets/attachments/ismail%20saglam%20and%20Chris.pdf): solutions for Chapters II and III (2008–2009).
 
-- [Jinhyun Park](/assets/algebraic-geometry/resources/Jinhyun%20Park.pdf): selected solutions for Chapters I–V.
+- [Jinhyun Park](/assets/attachments/Jinhyun%20Park.pdf): selected solutions for Chapters I–V.
 
-- [Joe Cutrone and Nick Marshburn](/assets/algebraic-geometry/resources/Joe%20Cutrone%20and%20Nick%20Marshburn.pdf): selected solutions for Chapters I–IV.
+- [Joe Cutrone and Nick Marshburn](/assets/attachments/Joe%20Cutrone%20and%20Nick%20Marshburn.pdf): selected solutions for Chapters I–IV.
 
-- [Richard Borcherds](/assets/algebraic-geometry/resources/Richard%20Borcherds.pdf): Berkeley Math 256A solutions for Chapters I and IV (1994).
+- [Richard Borcherds](/assets/attachments/Richard%20Borcherds.pdf): Berkeley Math 256A solutions for Chapters I and IV (1994).
 
-- [Steven V. Sam](/assets/algebraic-geometry/resources/Steven%20V%20Sam.pdf): selected solutions for Chapters I–IV (2008).
+- [Steven V. Sam](/assets/attachments/Steven%20V%20Sam.pdf): selected solutions for Chapters I–IV (2008).
 
-- [William Stein](/assets/algebraic-geometry/resources/W%20Stein.pdf): selected solutions for Chapters II and III.
+- [William Stein](/assets/attachments/W%20Stein.pdf): selected solutions for Chapters II and III.
 
 ### Course notes and exam papers
 
-- [Yujiro Kawamata, Introduction to the Minimal Model Problem](/assets/algebraic-geometry/resources/Kawamata%20Intro%20MMP.pdf): lecture notes on the minimal model program.
+- [Yujiro Kawamata, Introduction to the Minimal Model Problem](/assets/attachments/Kawamata%20Intro%20MMP.pdf): lecture notes on the minimal model program.
 
-- [Cambridge Tripos Part III Algebraic Geometry Collection](/assets/algebraic-geometry/resources/Algebraic%20Geometry%20All%20Tripos.pdf): examination problems and course material.
+- [Cambridge Tripos Part III Algebraic Geometry Collection](/assets/attachments/Algebraic%20Geometry%20All%20Tripos.pdf): examination problems and course material.
 
-- [UW Spring 2016 Introduction to Algebraic Geometry](/assets/algebraic-geometry/resources/iag.pdf): lecture notes from affine varieties through schemes.
+- [UW Spring 2016 Introduction to Algebraic Geometry](/assets/attachments/iag.pdf): lecture notes from affine varieties through schemes.
 
 - [Cambridge Part III past papers](https://www.maths.cam.ac.uk/postgrad/part-iii/pastpapers/2016/index.html): examination papers by year.
 
