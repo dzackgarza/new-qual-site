@@ -47,7 +47,7 @@ The reduced homology of a quotient $X/A$ of a good pair is therefore computed fr
 | a cell complex, or a polygon with identifications | cellular homology |
 | a union of two subspaces with known homology | Mayer--Vietoris |
 | a quotient $X/A$ of a good pair, or a pair | the long exact sequence of the pair |
-| a product | the Künneth theorem |
+| a product | the [[T-TZ3X7|Künneth theorem]] |
 
 ## Consistency checks
 
