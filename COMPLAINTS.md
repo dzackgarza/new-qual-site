@@ -10556,3 +10556,21 @@ every step and found the QED labels in each.
 **Checks.** `./.venv/bin/python -m qualc.authoring check`, run from the repository root, reports "schema and Markdown parsing OK (single card)" for all five, and `tmp/lam.sh` finds the QED labels, numbering 5, 5, 7, 4 (with sub-steps 1.1–3.3) and 4 steps. Commits were made with `--no-verify` because the pre-commit hook refuses while a worktree exists (`QUAL-09` reports `wt161` at `47d7d0cc58`, detached and not this lane's); `QUAL-06` sanctions `--no-verify` for authored content, and the card blobs were checked with `qualc.authoring check` and the Lamport filter before the commit. **The corpus report check did not run**: `tools/backlog.py --with-queues` has never completed on this VM in any recorded session (killed with exit 137), so no claim of a corpus-wide green is made for these commits.
 
 **Uncertainty.** No certificate on any of the five. `4.A-1`'s Davis–Kirk pagination and `4.A-5`'s octahedral cell counts were read from the card's own text and the retained text versions rather than recounted on page images. `4.A-2`'s repair was checked against Lemma 1.19 and against $\pi_1(S^1\vee S^1)$; the rest of that card is a re-reading, not a re-derivation. With this batch §4.A is complete for this lane, and the next section in order is §4.B.
+
+
+## 2026-11-20: the four complex-analysis theorem cards Ahlfors does not state — three cited from the available texts, Jordan's lemma unread
+
+**Object.** `T-ZO5UU`, `T-SSNLT`, `FT-FZERI` and `T-ZAEWG`, the four of the ten uncited theorem cards whose statements the retained Ahlfors, *Complex Analysis*, second edition (1966), `tmp/sources/ahlfors-1966-complex-analysis.md`, does not state. The predecessor's table named an Ahlfors section for all four; none held.
+
+**What the 1966 edition has.** Read in the text version: no Jordan's lemma (the word Jordan occurs only for Jordan arcs, Jordan curves and the Jordan curve theorem); no Estermann and only the corollary of Theorem 20 in the form $\abs{f-g}<\abs{f}$ (ch. 4, §5.2); one semicircle instance $\pi iB$ inside an example (ch. 4, §5.3); and no uniformization theorem (ch. 8 is Analytic Continuation, Algebraic Functions, Picard's Theorem, Linear Differential Equations).
+
+**Searched further.** Every `.md` text in `tmp/sources` and the extracted texts under `assets/attachments`, for "Jordan's lemma", "fractional residue", "Rouché" and "uniformization theorem"; Rudin, *Principles of Mathematical Analysis* (3e, 1976), has no complex analysis and states none of the four. The remaining uniformization hits in `tmp/sources` are research papers that mention the theorem, not statements of it. The statements are held by:
+
+- `FT-FZERI`: Robert Won, *Complex Analysis Qual Sheet*, §3 item 25 — the symmetric form $\abs{f+g}<\abs{f}+\abs{g}$ giving $Z_f-P_f=Z_g-P_g$; with $g\mapsto-g$ and $f,g$ holomorphic this is the card's disc statement. Cited.
+- `T-SSNLT`: the same sheet, §3 item 27 — at a simple pole the integral over an arc of angle $\theta$ tends to $\theta i\Res$; the card's arc has $\theta=\beta-\alpha$. Cited.
+- `T-ZAEWG`: C. McMullen, *Advanced Complex Analysis* (Harvard Math 213a course notes, 2017), §2 Theorem 2.1 — every simply connected Riemann surface is isomorphic to $\HH$, $\CC$ or $\CP^1$. Cited; the covering-space half of the card is the standard theory of the universal cover.
+- `T-ZO5UU`: **no available text states the card's quantitative bound** $\abs{\int_{C_R}e^{i\alpha z}g}\leq\pi M_R/\alpha$. Won §3 item 26 states only the vanishing, for an analytic $f$ with $M_R\to0$, and the UCLA problem 9 exercise states $100/k$ on a quarter circle. The card stays unread for its stated form.
+
+**Also open on the same search.** The proposition "Summing series by residues" on `wiki/complex-analysis/appendices/special-functions` states the four cotangent, cosecant, tangent and secant summation formulas with no card and no retained text stating them; no text in either set states them.
+
+**Uncertainty.** Won's sheet and McMullen's notes are a qual-review sheet and course notes, not textbooks; both citations name section and item and carry no page. No textbook statement of the symmetric Rouché or of the general fractional residue is retained.
