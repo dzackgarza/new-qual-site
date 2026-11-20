@@ -34,6 +34,18 @@ audit:
     identity for $\sigma_3^*$ in the even case, the modularity of the book's $E_4$ from its defining
     series, and the four properties of $\theta^8$ used at the end. No new formalization was
     undertaken; nothing is deferred.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 10, Problem 6, which begins on printed p. 316 (PDF
+    p. 335) and runs to p. 317 (PDF p. 336). The asterisk the print sets before "6." is recorded in
+    the remark. Two clauses of the statement were brought back to the print: part (f) printed the
+    book's $\approx$ where the card had strengthened it to $\asymp$, and part (e) printed
+    "as $\tau\to\infty$" where the card had sharpened it to "as $\Im\tau\to\infty$". The two-sided
+    form that the argument proves is still what the steps below establish, and that is stronger than
+    the printed claim. Not checked: the printed opening sentence on $r_8$ and $r_4$ and the closing
+    paragraph, which the card compresses; the argument itself was not re-derived in this pass.
 ---
 
 ::: {.exercise}
@@ -56,11 +68,15 @@ $$
 
 (d) Show that $E_4^*(\tau)=\tau^{-4}E_4^*(-1/\tau)$.
 
-(e) Show that $(48/\pi^4)E_4^*(\tau)\to1$ as $\Im\tau\to\infty$.
+(e) Show that $(48/\pi^4)E_4^*(\tau)\to1$ as $\tau\to\infty$.
 
-(f) Show that $\abs{E_4^*(1-1/\tau)}\asymp\abs{\tau}^4\abs{e^{2\pi i\tau}}$ as $\Im\tau\to\infty$.
+(f) Show that $\abs{E_4^*(1-1/\tau)}\approx\abs{\tau}^4\abs{e^{2\pi i\tau}}$ as $\Im\tau\to\infty$.
 
 Use these properties and the corresponding properties of $\theta^8$ to conclude that $48\pi^{-4}E_4^*/\theta^8$ is identically $1$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 10, Problem 6, printed pp. 316--317).
 :::
 
 ::: {.hint}
@@ -235,7 +251,7 @@ $\frac{48}{\pi^4}E_4^*(\tau)\to1$ as $\operatorname{Im}(\tau)\to\infty$.
 
 By step [](#s5){.pf-ref},
 $$
-\Bigl|\frac{48}{\pi^4}E_4^*(\tau)-1\Bigr|\le 256\sum_{r\ge1}\sigma_3(r)\abs{q}^{2r}+16\sum_{r\ge1}\sigma_3(r)\abs{q}^{r}.
+\abs{\frac{48}{\pi^4}E_4^*(\tau)-1}\le 256\sum_{r\ge1}\sigma_3(r)\abs{q}^{2r}+16\sum_{r\ge1}\sigma_3(r)\abs{q}^{r}.
 $$
 Since $\sigma_3(r)\le r\cdot r^3=r^4$ and $\abs{q}=e^{-\pi\operatorname{Im}\tau}<1$, both series are dominated by $\sum_r r^4\abs{q}^{r}$, which is finite and tends to $0$ as $\abs{q}\to0$, that is, as $\operatorname{Im}(\tau)\to\infty$.
 
