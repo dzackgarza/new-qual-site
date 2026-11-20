@@ -424,6 +424,17 @@ audit:
     iff Y is nonsingular. No statement, hypothesis or alternative of the exercise changes; the
     step's conclusion is the one it stated before. Not checked: no certificate or computation is
     claimed, and no printing of the book was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card's citations now name numbered statements and carry no page locator, as CONTRIBUTING
+    requires. Every page reference in the solution and the remark was deleted and the numbered
+    statement it accompanied kept, so a citation reads "Theorem V.1.9", "Corollary II.3",
+    "Lemma II.6(b)", "Theorem III.1(a)" or "Lemma 8.1.3" where it previously also gave a printed
+    or preprint page. No statement, hypothesis, step or citation target changes: only the page
+    locators are removed. The audit events above are left as written, and the pages they name
+    remain the record of what was read.
 ---
 
 ::: {.problem}
@@ -482,8 +493,7 @@ $$
 $$
 so $2p_a(C)=2-H\cdot C$. Since $H$ is ample, $d=H\cdot C\ge1$, and since $p_a(C)=h^1(C,\OO_C)\ge0$
 this gives $d\le2$; $d=1$ would give $2p_a(C)=1$. Hence $d=2$ and $p_a(C)=0$, so $C$ is a conic of
-self-intersection $0$. The computation is the one in the proof of Dolgachev's Lemma 8.1.3, printed
-p. 248, at $C^2=0$.
+self-intersection $0$. The computation is the one in the proof of Dolgachev's Lemma 8.1.3, at $C^2=0$.
 :::
 
 :::
@@ -528,31 +538,30 @@ Then the complete linear system $\linearsystem{D}$ has an irreducible nonsingula
 First, $D$ is numerically effective, and this needs no hypothesis on the characteristic: let
 $H=-K_X$ be the hyperplane class and put $D_n=nD+H$ for an integer $n\ge1$. Each of the $27$ lines
 $L$ has $D_n\cdot L=n(D\cdot L)+1>0$ because $H\cdot L=1$, and
-$D_n^2=n^2D^2+2nD\cdot H+H^2=n^2D^2+2nD\cdot H+3>0$. By Theorem 4.11 of the book, printed
-pp. 405--406, whose proof is Lemma 4.12 and the enumeration of the $27$ lines and which uses no
+$D_n^2=n^2D^2+2nD\cdot H+H^2=n^2D^2+2nD\cdot H+3>0$. By Theorem 4.11 of the book, whose proof is Lemma 4.12 and the enumeration of the $27$ lines and which uses no
 hypothesis on the field, $D_n$ is very ample. Hence for every irreducible curve $E$ on $X$,
 $0<D_n\cdot E=n(D\cdot E)+H\cdot E$ for every $n\ge1$, which forces $D\cdot E\ge0$: if $D\cdot E<0$,
 the left side is negative for $n>H\cdot E$. So $D$ meets every effective class nonnegatively.
 
 Second, $D$ is effective: by B. Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
-arXiv:alg-geom/9509001v2), Corollary II.3, preprint p. 3, a numerically effective divisor meeting the
+arXiv:alg-geom/9509001v2), Corollary II.3, a numerically effective divisor meeting the
 anticanonical class nonnegatively lies in $\mathrm{Eff}$, and here $-K_X\cdot D=D\cdot H>0$, while
 $D\cdot H\ge2$: the Hodge index inequality, Theorem V.1.9 of the book, gives
 $3D^2\le(D\cdot H)^2$ with $D^2>0$, so $(D\cdot H)^2\ge4$ and $D\cdot H$ is a positive integer.
 
 Third, the system is base point free and $h^1$ vanishes: since $-K_X\cdot D=D\cdot H\ge2$,
-Harbourne's Theorem III.1(a), preprint p. 7, gives $h^1(X,\OO_X(D))=0$ and that the sections of $D$
+Harbourne's Theorem III.1(a) gives $h^1(X,\OO_X(D))=0$ and that the sections of $D$
 are base point (and hence fixed component) free.
 
 Fourth, a general member is reduced and irreducible: since $D^2>0$ the system is not composed with a
-pencil, and Harbourne's Lemma II.6(b), preprint p. 4, then gives $D^2>0$ and that the general section
+pencil, and Harbourne's Lemma II.6(b) then gives $D^2>0$ and that the general section
 of $D$ is reduced and irreducible.
 
 Finally, it is nonsingular, in every characteristic, by the genus identity below. Put
 $H=\OO_X(1)=-K_X$, so $H^2=3$. Since $X$ is a cubic surface in $\PP^3$, the sequence
 $0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
 $p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
-printed p. 364, gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
+gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
 the integer $D\cdot H$ has absolute value at least $2$ and is positive because $D$ is nef and $H$
 is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, gives
 $h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
@@ -689,11 +698,11 @@ existence conditions.
 
 ::: {.remark title="Published solution"}
 Brian Harbourne, *Anticanonical Rational Surfaces* (24 January 1996, arXiv:alg-geom/9509001v2):
-Corollary II.3, preprint p. 3, that a numerically effective divisor meeting $-K$ nonnegatively is
-effective; Lemma II.6, preprint p. 4, that a fixed-component-free class whose system is not composed
+Corollary II.3, that a numerically effective divisor meeting $-K$ nonnegatively is
+effective; Lemma II.6, that a fixed-component-free class whose system is not composed
 with a pencil has $D^2>0$ and reduced irreducible general section, and that a class whose system is
 composed with a pencil is a multiple of a class with reduced irreducible general section; and Theorem
-III.1(a), preprint p. 7, that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
+III.1(a), that $-K_X\cdot D\ge2$ makes the system base point free with $h^1=0$. The
 paper works over an algebraically closed field of arbitrary characteristic, so its Lemma II.6 gives
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
 the third alternative is then the genus identity of the step: for a general member $Y$,
