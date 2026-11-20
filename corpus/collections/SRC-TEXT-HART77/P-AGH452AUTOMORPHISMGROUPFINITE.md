@@ -27,6 +27,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.5.2, printed p. 95,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.5.2, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the count $n(n+1)(g-1)+(n+1)d$ of 4.4.6 at $n=g-1$, $d=2g-2$, giving $g(g-1)^2+2g(g-1)$, and checked it against $2g+2$ at $g=3$ ($24$ against $8$) and in general; and checked that the hyperelliptic involution achieves the Lefschetz bound exactly.
+    Not checked: Yang's Solutions outside printed p. 95; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.5.2 at printed p. 95; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -371,4 +391,8 @@ These exhaust all curves of genus at least $2$.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.2, printed p. 95, splits as the hint does. In the hyperelliptic case it takes the unique degree-two $f:X\to\PP^1$, notes the $2g+2$ ramified points, and observes that $f\circ\phi$ is again of degree two, hence differs from $f$ by an automorphism of $\PP^1$ by uniqueness of the $g^1_2$, so $\phi$ permutes the ramified points and $\#\Aut X$ is bounded by $(2g+2)!$. The last sentence of that case is wrong as printed: 'if $\phi$ fixed all $2g+2$ ramified points, by Lefschetz's theorem it is just identity' --- the hyperelliptic involution fixes exactly those $2g+2$ points, which is the extremal case of the very bound the sentence invokes. The conclusion survives, with the kernel of $\Aut X\to\Sigma_{2g+2}$ of order at most $2$ rather than trivial. In the nonhyperelliptic case it embeds $X$ canonically in $\PP^{g-1}$ and counts hyperosculation points by 4.4.6: with $n=g-1$ and $d=2g-2$ their number is $n(n+1)(g-1)+(n+1)d=g(g-1)^2+2g(g-1)$, which exceeds $2g+2$ for $g\ge3$, so an automorphism fixing all of them is the identity by Lefschetz and $\Aut X$ embeds in a finite symmetric group. That second use of Lefschetz is legitimate, since the count is strictly larger than the bound; it is only the first, where the count equals the bound, that is not.
 :::
