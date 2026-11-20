@@ -70,6 +70,21 @@ audit:
     explicit epsilons. The answers are stated as answers: the failure set is {1} in (a) and {0} in (b).
     No published solution was located; the card keeps its own argument and says so. Checked against
     Munkres, Topology (2000), Section 45 Exercise 4, printed p. 280, and the definition on printed p. 277.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read of both parts, with the #184 repair. (a): for $x_0<1$ choose $x_0<a<1$ and $N$
+    with $a^N,x_0^N<\varepsilon/2$; on $[0,a]$ and for $n\ge N$ both terms are below those bounds,
+    and for the finitely many $n<N$ continuity gives neighbourhoods whose intersection with
+    $[0,a]$ serves the whole family at once, which is what equicontinuity asks. At $1$ it fails:
+    with $\varepsilon=1/2$ every neighbourhood contains an $x<1$ with $x^n<1/2$ for large $n$.
+    (b): the $g_n$ are the functions of §21 Exercise 9; $0<g_n\le1$ gives pointwise boundedness,
+    $g_n(1/n)=1$ while $g_n\to0$ pointwise excludes a uniformly convergent subsequence, and
+    equicontinuity fails at $0$ because $g_n(1/n)-g_n(0)=n/(n+1)>1/2$. The page locators of the
+    solution are replaced by the section and exercise numbers. Citation by number: §45 Exercise
+    4, §21 Exercise 9, read in `tmp/sources/munkres-2000-topology.md`.
+
 ---
 
 ::: {.exercise}
@@ -82,13 +97,13 @@ The collection $\mathcal{F} = \theset{f_n}$ is pointwise bounded but the sequenc
 
 ::: {.solution}
 
-No complete published solution of this exercise was located; the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument is therefore the card's own, checked against the book's definition of equicontinuity on printed p. 277 and against Exercise 9 of §21 (printed p. 134), whose functions are those of part (b).
+No complete published solution of this exercise was located; the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument is therefore the card's own, checked against the book's definition of equicontinuity (§45) and against Exercise 9 of §21, whose functions are those of part (b).
 
-The statement was checked against Munkres, *Topology* (2000), §45 Exercise 4, printed p. 280. Throughout $I=[0,1]$, $\mathcal{F}=\theset{f_{n}\mid n\in\ZZ_{+}}$ with $f_{n}(x)=x^{n}$ on $I$, and $\mathcal{G}=\theset{g_{n}\mid n\in\ZZ_{+}}$ with
+The statement was checked against §45 Exercise 4. Throughout $I=[0,1]$, $\mathcal{F}=\theset{f_{n}\mid n\in\ZZ_{+}}$ with $f_{n}(x)=x^{n}$ on $I$, and $\mathcal{G}=\theset{g_{n}\mid n\in\ZZ_{+}}$ with
 $$
 g_{n}(x)=\frac{1}{n^{3}\big(x-1/n\big)^{2}+1}
 $$
-on $\RR$, the functions of Exercise 9 of §21. A family $\mathcal{F}\subset\mathcal{C}(X,\RR)$ is *equicontinuous at* $x_{0}$ when for each $\varepsilon>0$ there is a neighbourhood $U$ of $x_{0}$ such that $\abs{f(x)-f(x_{0})}<\varepsilon$ for every $x\in U$ and every $f\in\mathcal{F}$ (printed p. 277) --- one neighbourhood serving the whole family at once --- and *pointwise bounded* when $\theset{f(x)\mid f\in\mathcal{F}}$ is bounded for each $x$.
+on $\RR$, the functions of Exercise 9 of §21. A family $\mathcal{F}\subset\mathcal{C}(X,\RR)$ is *equicontinuous at* $x_{0}$ when for each $\varepsilon>0$ there is a neighbourhood $U$ of $x_{0}$ such that $\abs{f(x)-f(x_{0})}<\varepsilon$ for every $x\in U$ and every $f\in\mathcal{F}$ --- one neighbourhood serving the whole family at once --- and *pointwise bounded* when $\theset{f(x)\mid f\in\mathcal{F}}$ is bounded for each $x$.
 
 ::: pf
 
