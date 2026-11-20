@@ -38,10 +38,19 @@ audit:
     p. 203, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 7 sets its asterisks before Problems 2, 3 and 4
+    only, so none stands before Problem 1. The remark records that. The locator by numbered
+    statement is Chapter 7, Problem 1; the page readings recorded in the earlier events are
+    superseded by it, the events themselves standing as written. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 7 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 203; the statement below is its wording.
+This is Problem 1 of Chapter 7 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Let $F(s) = \sum_{n=1}^{\infty} a_n/n^s$, where $\abs{a_n} \leq M$ for all $n$.
 
@@ -57,6 +66,10 @@ Hint: For part (a) use the fact that
 $$
 \frac{1}{2T} \int_{-T}^{T} (nm)^{-\sigma} n^{-it} m^{it}\, dt \to \begin{cases} n^{-2\sigma} & \text{if } n = m, \\ 0 & \text{if } n \neq m. \end{cases}
 $$
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 7, Problem 1).
 :::
 
 ::: {.solution}
