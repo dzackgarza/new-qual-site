@@ -11,6 +11,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, six of them, each with its proof, transcribing
+    Weibel, *An Introduction to Homological Algebra*, §3.1: Calculation 3.1.1 for the cyclic groups,
+    Proposition 3.1.3 for the second variable read through the direct limit, the Balancing Remark for
+    the first, Proposition 3.1.4 and Corollary 3.1.5 for the torsionfree equivalence. The colimit
+    corollary is cited as Corollary 2.6.16 with the balancing theorem 2.7.2, which is the form the
+    first-variable limit needs; the card's earlier paragraph arguing that point is folded into the
+    step. Every locator is gone from the body: the passage now cites Lemma 3A.2, Calculation 3.1.1,
+    Propositions 3.1.3 and 3.1.4 and Corollaries 2.6.16 and 3.1.5 by number, with no page. Not
+    checked: no certificate, and Weibel's printed statements were used as the card already recorded
+    them rather than re-read in this pass.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -138,38 +152,65 @@ Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A, B) = 0$ for all $B$.
 :::
 
 ::: {.solution}
-Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$; Hatcher notes on printed p. 263, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$. So the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The proof is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, in the book's own steps; the §3.1 text is read in `tmp/sources/weibel-03-tor-and-ext.md` and the §2.6--2.7 colimit corollaries in `tmp/sources/weibel-02-derived-functors.md`.
+Write $\operatorname{Tor}=\operatorname{Tor}_1^{\ZZ}$. Hatcher records, immediately after Lemma 3A.2, that $\operatorname{Tor}_n^{\ZZ}(H,G)=0$ for $n>1$ because a free resolution $0\to F_1\to F_0\to H\to0$ always exists, and that $\operatorname{Tor}_1$ is written $\operatorname{Tor}$; so the two groups below are $\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)$ and $\operatorname{Tor}_1^{\ZZ}(A,B)$. The argument is Weibel, *An Introduction to Homological Algebra* (Cambridge Studies in Advanced Mathematics 38, 1994), §3.1, in the book's own steps, read in `tmp/sources/weibel-03-tor-and-ext.md` and, for the colimit corollaries of §2.6 and the balancing of §2.7, in `tmp/sources/weibel-02-derived-functors.md`.
 
-*Cyclic groups.* (Calculation 3.1.1, printed p. 66.) The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of the complex $0\to B\xrightarrow{n}B\to0$, so
-$$
-\operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB,\qquad
-\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]:=\{b\in B: nb=0\},\qquad
-\operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0\ \ (i\ge2).
-$$
+::: pf
 
-*The torsion subgroup in the second variable.* (Proposition 3.1.3.) $\QQ/\ZZ$ is the direct limit of its finite subgroups, each isomorphic to some $\ZZ/n$, and $\operatorname{Tor}$ commutes with direct limits, so
-$$
-\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong\varinjlim_n\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)\cong\varinjlim_n B[n]=\bigcup_n B[n],
-$$
-which is the torsion subgroup $T(B)$ of $B$. The union is over all $n\ge1$ and not over the primes only: $B[n]$ is the set of elements whose order divides $n$, so every element of finite order lies in some $B[n]$, whereas over the primes alone the union would be only the elements of prime order. The index set is the finite cyclic subgroups of $\QQ/\ZZ$ ordered by divisibility, which is directed.
+::: {.pf-step #cyclic}
+For $n\ge1$ and any $B$, $\operatorname{Tor}_0^{\ZZ}(\ZZ/n,B)=B/nB$, $\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)=B[n]\coloneqq\{b\in B:nb=0\}$, and $\operatorname{Tor}_i^{\ZZ}(\ZZ/n,B)=0$ for $i\ge2$.
 
-The colimit corollary Weibel invokes is printed as Corollary 2.6.17, in the second variable, $\operatorname{Tor}_*^R(A,\varinjlim B_\alpha)\cong\varinjlim\operatorname{Tor}_*^R(A,B_\alpha)$. The form used here has the colimit in the first variable, which is Corollary 2.6.16 on the same page applied to the left adjoint $-\otimes_\ZZ B$ over $\ZZ$-mod, an abelian category with enough projectives in which filtered colimits are exact (Theorem 2.6.15), and whose left derived functors are $\operatorname{Tor}_*^{\ZZ}(-,B)$ (Theorem 2.7.2, the balancing of the two derived functors of the tensor product, p. 58). Weibel cites 2.6.17 for that same first-variable statement in the proof of Proposition 3.1.2.
-
-*The first sentence of the exercise.* (Remark (Balancing Tor), printed p. 67.) For a commutative ring $R$, $\operatorname{Tor}_1^R(A,B)\cong\operatorname{Tor}_1^R(B,A)$, because for fixed $B$ both are universal $\delta$-functors over $F(A)=A\otimes_RB=B\otimes_RA$. For $R=\ZZ$ this gives
-$$
-\operatorname{Tor}_1^{\ZZ}(A,\QQ/\ZZ)\cong\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,A)\cong T(A),
-$$
-the second isomorphism being the Proposition above with $B$ replaced by $A$. The book draws the same conclusion in one sentence in the Remark. This is the exercise's first sentence: $\operatorname{Tor}(A,\QQ/\ZZ)\cong T(A)$. Balancing is the step that matters for it, since the Proposition computes $\operatorname{Tor}$ with $\QQ/\ZZ$ in the first slot and the exercise asks for it in the second.
-
-*The second sentence of the exercise.* (Proposition 3.1.4 and Corollary 3.1.5.) If $A$ is torsionfree then $A$ is the direct limit of its finitely generated subgroups, each isomorphic to some $\ZZ^m$, so by the same colimit formula
-$$
-\operatorname{Tor}_n^{\ZZ}(A,B)\cong\varinjlim_m\operatorname{Tor}_n^{\ZZ}(\ZZ^m,B)=0\qquad(n\neq0,\ \text{all } B),
-$$
-because $\ZZ^m$ is free and hence projective. The book then prints, for every abelian group $A$,
-$$
-\operatorname{Tor}_1^{\ZZ}(A,-)=0\iff A\text{ is torsionfree}\iff\operatorname{Tor}_1^{\ZZ}(-,A)=0
-$$
-as Corollary 3.1.5, without a separate proof, and obtains it from Proposition 3.1.4 and the Remark. The two implications the exercise asks for are these: if $A$ is torsionfree then $\operatorname{Tor}(A,B)=0$ for every $B$, which is Proposition 3.1.4 in degree $1$; and if $\operatorname{Tor}(A,B)=0$ for every $B$ then taking $B=\QQ/\ZZ$ gives $T(A)\cong\operatorname{Tor}(A,\QQ/\ZZ)=0$, so $A$ is torsionfree.
-
-Checked against Hatcher, *Algebraic Topology* (2002), §3.A Exercise 2, read in `tmp/sources/hatcher-2002-algebraic-topology.md`: "Show that $\operatorname{Tor}(A,\QQ/\ZZ)$ is isomorphic to the torsion subgroup of $A$. Deduce that $A$ is torsionfree iff $\operatorname{Tor}(A,B)=0$ for all $B$." Hatcher's $\operatorname{Tor}$ is $\operatorname{Tor}_1^{\ZZ}$ (printed p. 263, where $\operatorname{Tor}_n=0$ for $n>1$ is noted), and the symmetry that the Remark supplies is his Proposition 3A.5(1).
+::: pf-proof
+This is Weibel's Calculation 3.1.1. The free resolution $0\to\ZZ\xrightarrow{n}\ZZ\to\ZZ/n\to0$ computes $\operatorname{Tor}_*^{\ZZ}(\ZZ/n,B)$ as the homology of $0\to B\xrightarrow{n}B\to0$, which is $B/nB$ in degree $0$, the kernel $B[n]$ in degree $1$, and zero above.
 :::
+
+:::
+
+::: {.pf-step #torsion-second}
+$\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong T(B)$, the torsion subgroup of $B$.
+
+::: pf-proof
+$\QQ/\ZZ$ is the direct limit of its finite cyclic subgroups, indexed by the finite cyclic subgroups ordered by divisibility, and $\operatorname{Tor}$ commutes with direct limits: Corollary 2.6.16, applied to the left adjoint $-\otimes_\ZZ B$ in $\ZZ$-mod, whose left derived functors are $\operatorname{Tor}_*^{\ZZ}(-,B)$ by the balancing theorem 2.7.2. So $\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong\varinjlim_n\operatorname{Tor}_1^{\ZZ}(\ZZ/n,B)\cong\varinjlim_nB[n]=\bigcup_{n\ge1}B[n]=T(B)$, by step [](#cyclic){.pf-ref}. The union is over all $n\ge1$ rather than the primes, since $B[n]$ is the set of elements of order dividing $n$.
+:::
+
+:::
+
+::: {.pf-step #first}
+$\operatorname{Tor}^{\ZZ}(A,\QQ/\ZZ)\cong T(A)$, the torsion subgroup of $A$.
+
+::: pf-proof
+This is Weibel's Proposition 3.1.3 with $B$ replaced by $A$, that $\operatorname{Tor}_1^{\ZZ}(\QQ/\ZZ,B)\cong T(B)$ for every $B$; step [](#torsion-second){.pf-ref} is the same statement with the roles of the variables kept apart. The book draws the conclusion in one sentence in its Remark on the Proposition.
+:::
+
+:::
+
+::: {.pf-step #torsionfree}
+If $A$ is torsionfree then $\operatorname{Tor}_n^{\ZZ}(A,B)=0$ for every $n\ne0$ and every $B$.
+
+::: pf-proof
+A torsionfree abelian group is the direct limit of its finitely generated subgroups, each isomorphic to some $\ZZ^m$; by the same colimit formula of step [](#torsion-second){.pf-ref}, $\operatorname{Tor}_n^{\ZZ}(A,B)\cong\varinjlim_m\operatorname{Tor}_n^{\ZZ}(\ZZ^m,B)$, and each term vanishes for $n\ne0$ because $\ZZ^m$ is free and hence projective. This is Weibel's Proposition 3.1.4.
+:::
+
+:::
+
+::: {.pf-step #converse}
+If $\operatorname{Tor}^{\ZZ}(A,B)=0$ for every $B$ then $A$ is torsionfree.
+
+::: pf-proof
+Take $B=\QQ/\ZZ$. Step [](#first){.pf-ref} identifies $\operatorname{Tor}^{\ZZ}(A,\QQ/\ZZ)$ with $T(A)$, so the hypothesis gives $T(A)=0$, which says that no nonzero element of $A$ has finite order. This is the converse half of Weibel's Corollary 3.1.5, which the book prints for both variables without a separate proof, deriving it from Proposition 3.1.4 and the Remark.
+:::
+
+:::
+
+::: {.pf-step}
+$\operatorname{Tor}(A,\QQ/\ZZ)\cong T(A)$, and $A$ is torsionfree if and only if $\operatorname{Tor}(A,B)=0$ for all $B$.
+
+::: pf-proof
+The first assertion is step [](#first){.pf-ref}; the two implications of the equivalence are steps [](#torsionfree){.pf-ref} and [](#converse){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
