@@ -30,6 +30,8 @@ Let $f\colon[a,b]\to\RR$ be bounded.
 
 - If $f$ has finitely many discontinuities, then $f$ is Riemann integrable.
 
+The three cases are read off the Lebesgue criterion above: a continuous $f$ has $D_f=\varnothing$, a monotone $f$ has $D_f$ countable, and a function with finitely many discontinuities has $D_f$ finite and hence null. The first two are also [@Rud76, ch. 6, Theorem 6.8] and [@Rud76, ch. 6, Theorem 6.9], which prove them from the definition rather than through the criterion.
+
 :::
 
 ## A function that is not Riemann integrable
