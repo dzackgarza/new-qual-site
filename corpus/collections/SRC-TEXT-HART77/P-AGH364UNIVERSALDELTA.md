@@ -25,11 +25,11 @@ audit:
 ::: {.problem}
 Let $X$ be a noetherian scheme, and suppose that every coherent sheaf on $X$ is a quotient of a locally free sheaf of finite rank.
 In this case we say $\Coh(X)$ has enough locally frees.
-Then for any $\mcg \in \Mod(X)$, show that the $\delta$-functor $(\mathcal{E}xt^i(\wait, \mcg))$, from $\Coh(X)$ to $\Mod(X)$ is a contravariant universal $\delta$-functor.
+Then for any $\mcg \in \Mod(X)$, show that the $\delta$-functor $(\mathcal{E}xt^i(-, \mcg))$, from $\Coh(X)$ to $\Mod(X)$ is a contravariant universal $\delta$-functor.
 :::
 
 ::: {.hint}
-Show $\mathcal{E}xt^i(\wait, \mcg)$ is coeffaceable for $i>0$.
+Show $\mathcal{E}xt^i(-, \mcg)$ is coeffaceable for $i>0$.
 :::
 
 ::: {.solution}
