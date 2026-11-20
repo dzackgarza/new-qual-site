@@ -60,7 +60,7 @@ Can you define an injective function $f: \ZZ_+ \to A$ without using the choice a
 
 ::: {.solution}
 
-The device of always taking a least index, which is what avoids the choice axiom, is **Dan Whitman's**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.3, printed pp. 102--103 (`tmp/sources/munkres-solutions-whitman.pdf`), applied here to an explicit enumeration of the pairs $(n,k)$.
+The device of always taking a least index, which is what avoids the choice axiom, is **Dan Whitman's**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 9.3 (`tmp/sources/munkres-solutions-whitman.pdf`), applied here to an explicit enumeration of the pairs $(n,k)$.
 
 Suppose $A$ is a set and $\{f_{n}\}_{n\in\ZZ_{+}}$ is an indexed family of injective functions $f_{n}\colon\{1,\dots,n\}\to A$.
 

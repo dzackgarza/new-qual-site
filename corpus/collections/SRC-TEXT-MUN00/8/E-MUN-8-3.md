@@ -44,7 +44,7 @@ Obtain the definitions of $a^n$ and $n!$ for $n \in \ZZ_+$ as special cases of E
 
 ::: {.solution}
 
-Both specializations and their verifications are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.3, printed p. 95** (`tmp/sources/munkres-solutions-whitman.pdf`).
+Both specializations and their verifications are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.3** (`tmp/sources/munkres-solutions-whitman.pdf`).
 
 By Exercise 8.2, applied through Theorem 8.4 to a sequence $(b_{1},b_{2},\dots)$, there is a unique function $p\colon\ZZ_{+}\to\RR$ with
 $$

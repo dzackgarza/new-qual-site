@@ -57,7 +57,7 @@ Show that $\bigl(I(\wp(z+\alpha))\bigr)'=\pm1$ and use that $\wp$ is even.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 9, Problem 3, printed p. 281). The inverse identity is local: it holds on a neighborhood where $\wp(z+\alpha)$ takes values in $\Omega$ and the chosen branch of the square root gives the required sign. The statement does not specify a global domain for the inverse.
+The book marks this problem with an asterisk (Chapter 9, Problem 3). The inverse identity is local: it holds on a neighborhood where $\wp(z+\alpha)$ takes values in $\Omega$ and the chosen branch of the square root gives the required sign. The statement does not specify a global domain for the inverse.
 :::
 
 ::: {.solution}

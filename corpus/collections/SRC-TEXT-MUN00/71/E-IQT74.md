@@ -64,7 +64,7 @@ Assume there is a point $p$ of $X$ such that $S_i \cap S_j = \theset{p}$ for $i 
 
 ::: pf-proof
 
-$S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspace of $\RR^2$, hence compact by Theorem 27.3 (printed p. 173), and the continuous image of a compact space is compact (Theorem 26.5, printed p. 166). A compact subspace of a Hausdorff space is closed (Theorem 26.3, printed p. 165).
+$S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspace of $\RR^2$, hence compact by Theorem 27.3 , and the continuous image of a compact space is compact (Theorem 26.5). A compact subspace of a Hausdorff space is closed (Theorem 26.3).
 
 :::
 
@@ -76,7 +76,7 @@ $S_i$ is compact: it is homeomorphic to $S^1$, which is a closed bounded subspac
 
 ::: pf-proof
 
-By Exercise 13 of §17 (printed p. 101) it suffices to show that the diagonal $\Delta=\theset{x\times x\mid x\in X}$ is closed in $X\times X$. Each $S_i\times S_i$ is closed in $X\times X$, and $\Delta_{S_i}=\Delta\cap(S_i\times S_i)$ is closed in $S_i\times S_i$ because $S_i$ is Hausdorff, being a subspace of the Hausdorff space $\RR^2$ (Theorem 17.11, printed p. 100), hence closed in $X\times X$. Finally $\Delta=\bigcup_i\Delta_{S_i}$: a point of $\Delta$ is $x\times x$, and $x$ lies in some $S_i$, so $x\times x\in\Delta_{S_i}$; the reverse inclusion is clear. A finite union of closed sets is closed.
+By Exercise 13 of §17  it suffices to show that the diagonal $\Delta=\theset{x\times x\mid x\in X}$ is closed in $X\times X$. Each $S_i\times S_i$ is closed in $X\times X$, and $\Delta_{S_i}=\Delta\cap(S_i\times S_i)$ is closed in $S_i\times S_i$ because $S_i$ is Hausdorff, being a subspace of the Hausdorff space $\RR^2$ (Theorem 17.11), hence closed in $X\times X$. Finally $\Delta=\bigcup_i\Delta_{S_i}$: a point of $\Delta$ is $x\times x$, and $x$ lies in some $S_i$, so $x\times x\in\Delta_{S_i}$; the reverse inclusion is clear. A finite union of closed sets is closed.
 
 :::
 
@@ -100,7 +100,7 @@ Let $C\subseteq X$ with $C\cap S_i$ closed in $S_i$ for every $i$. Since $S_i$ i
 
 ::: pf-proof
 
-Fix $i$ and consider $S_i\subseteq X$. For every $j$, $S_i\cap S_j$ equals $S_i$ if $j=i$ and $\theset{p}$ if $j\ne i$; both are closed in $S_j$, the second because a finite point set in the Hausdorff space $S_j$ is closed (Theorem 17.8, printed p. 99). By coherence $S_i$ is closed in $X$, for every $i$, and step 2 gives that $X$ is Hausdorff. Conversely, if $X$ is Hausdorff then the $S_i$ are closed by step 1 and the topology is coherent by step 3. This proves (b) in both directions.
+Fix $i$ and consider $S_i\subseteq X$. For every $j$, $S_i\cap S_j$ equals $S_i$ if $j=i$ and $\theset{p}$ if $j\ne i$; both are closed in $S_j$, the second because a finite point set in the Hausdorff space $S_j$ is closed (Theorem 17.8). By coherence $S_i$ is closed in $X$, for every $i$, and step 2 gives that $X$ is Hausdorff. Conversely, if $X$ is Hausdorff then the $S_i$ are closed by step 1 and the topology is coherent by step 3. This proves (b) in both directions.
 
 :::
 

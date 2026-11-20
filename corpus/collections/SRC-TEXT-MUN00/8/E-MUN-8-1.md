@@ -44,7 +44,7 @@ Let $A$ be the set of real numbers; choose $\rho$ so that Theorem 8.4 applies to
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.1, printed p. 94** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice of $\rho$ below is his. The statement is Munkres, *Topology* (2000), §8 Exercise 1, printed pp. 55--56.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice of $\rho$ below is his. The statement is Munkres, *Topology* (2000), §8 Exercise 1.
 
 ::: pf
 

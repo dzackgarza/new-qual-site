@@ -44,9 +44,9 @@ If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.5, printed p. 78** (`tmp/sources/munkres-solutions-whitman.pdf`); the counterexample with an empty factor and the argument for nonempty factors, with the two injections into the product, are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the counterexample with an empty factor and the argument for nonempty factors, with the two injections into the product, are his.
 
-Throughout, a set is finite when it is empty or in bijection with a section $\{1,\dots,n\}$ of $\ZZ_+$ (definition, printed p. 39), and a subset of a finite set is finite (Corollary 6.6, printed p. 43); the exercise is on printed p. 44.
+Throughout, a set is finite when it is empty or in bijection with a section $\{1,\dots,n\}$ of $\ZZ_+$ (definition, printed p. 39), and a subset of a finite set is finite (Corollary 6.6); the exercise is on printed p. 44.
 
 ::: pf
 
@@ -69,7 +69,7 @@ If $A\times B$ is finite and both $A$ and $B$ are nonempty, then $A$ and $B$ are
 For $b_0\in B$ and $a_0\in A$ the maps $a\mapsto(a,b_0)$ and $b\mapsto(a_0,b)$ are injective, with images in $A\times B$.
 
 ::: pf-proof
-$(a,b_0)=(a',b_0)$ gives $a=a'$, and $(a_0,b)=(a_0,b')$ gives $b=b'$; equal ordered pairs have equal coordinates (§1, printed p. 11).
+$(a,b_0)=(a',b_0)$ gives $a=a'$, and $(a_0,b)=(a_0,b')$ gives $b=b'$; equal ordered pairs have equal coordinates (§1).
 
 :::
 
@@ -79,7 +79,7 @@ $(a,b_0)=(a',b_0)$ gives $a=a'$, and $(a_0,b)=(a_0,b')$ gives $b=b'$; equal orde
 $A$ and $B$ are each in bijection with a subset of the finite set $A\times B$, hence are finite.
 
 ::: pf-proof
-The first injection of step [](#injections){.pf-ref} identifies $A$ with its image, a subset of $A\times B$, and a subset of a finite set is finite (Corollary 6.6, printed p. 43); the same holds for $B$ with the second injection.
+The first injection of step [](#injections){.pf-ref} identifies $A$ with its image, a subset of $A\times B$, and a subset of a finite set is finite (Corollary 6.6); the same holds for $B$ with the second injection.
 
 :::
 

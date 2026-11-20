@@ -58,13 +58,13 @@ Compare [[E-PBG3W]].
 
 ::: {.solution}
 
-By the Convention of Chapter 13 (printed p. 477) all covering maps of this chapter have path connected and locally path connected total space and base, and $c_*$ is injective for a covering map $c$ (printed p. 477). Let $\rho: \widetilde Z \to Z$ be a universal covering of $Z$, that is, $\widetilde Z$ is simply connected.
+By the Convention of Chapter 13  all covering maps of this chapter have path connected and locally path connected total space and base, and $c_*$ is injective for a covering map $c$ (printed p. 477). Let $\rho: \widetilde Z \to Z$ be a universal covering of $Z$, that is, $\widetilde Z$ is simply connected.
 
-Part (a) is David Yang's proof, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 79--100 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L79-L100. By Theorem 80.3 (printed p. 486), applied to the covering $\rho:\widetilde Z\to Z$ with $\widetilde Z$ simply connected and to $r:Y\to Z$, there is a covering map $t:\widetilde Z\to Y$ with $r\circ t=\rho$; applied again to $t$ and to $q:X\to Y$, there is a covering map $u:\widetilde Z\to X$ with $q\circ u=t$. Then
+Part (a) is David Yang's proof, *MATH104: Topology, Fall 2023*, Homework 11, in `HW/hw11.tex` lines 79--100 of `dyang5/MATH104-Topology` at commit 12686a815d58f29aeaadb90a30449ae85c0a613f (2024-05-04), https://github.com/dyang5/MATH104-Topology/blob/12686a815d58f29aeaadb90a30449ae85c0a613f/HW/hw11.tex#L79-L100. By Theorem 80.3 , applied to the covering $\rho:\widetilde Z\to Z$ with $\widetilde Z$ simply connected and to $r:Y\to Z$, there is a covering map $t:\widetilde Z\to Y$ with $r\circ t=\rho$; applied again to $t$ and to $q:X\to Y$, there is a covering map $u:\widetilde Z\to X$ with $q\circ u=t$. Then
 $$
 p\circ u=r\circ q\circ u=r\circ t=\rho,
 $$
-and $u$ and $\rho$ are covering maps, so $p$ is a covering map by Lemma 80.2(b) (printed p. 485). The steps below give a second proof of (a), from the definition of a covering map and the lifting criterion alone, and they supply part (b), which the source does not treat.
+and $u$ and $\rho$ are covering maps, so $p$ is a covering map by Lemma 80.2(b) . The steps below give a second proof of (a), from the definition of a covering map and the lifting criterion alone, and they supply part (b), which the source does not treat.
 
 ::: pf
 
@@ -80,7 +80,7 @@ For each $e \in c^{-1}(U)$ there is a lift $s_e: U \to E$ of the inclusion with 
 
 ::: pf-proof
 
-$U$ is open in the locally path connected space $B$, hence locally path connected. It is path connected by hypothesis, and the image of $\pi_1(U,u)$ in $\pi_1(B,u)$ is trivial, so it lies in $c_*\pi_1(E,e)$. The lifting criterion of Lemma 79.1 (printed p. 478) gives the lift.
+$U$ is open in the locally path connected space $B$, hence locally path connected. It is path connected by hypothesis, and the image of $\pi_1(U,u)$ in $\pi_1(B,u)$ is trivial, so it lies in $c_*\pi_1(E,e)$. The lifting criterion of Lemma 79.1  gives the lift.
 
 :::
 
@@ -92,7 +92,7 @@ $s_e(U)$ is the path component of $c^{-1}(U)$ that contains $e$, and $c$ maps it
 
 ::: pf-proof
 
-$s_e(U)$ is the continuous image of the path connected space $U$, hence path connected: the composite of a path in $U$ with $s_e$ is a path in $E$. A path $\gamma$ in $c^{-1}(U)$ from $e$ is a lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; the two agree by the uniqueness of path liftings (Lemma 54.1, printed p. 342). Hence every such path stays in $s_e(U)$, and $s_e(U)$ is the path component of $e$ in $c^{-1}(U)$. Because $c \circ s_e = \id_U$, the restriction $c\restrict_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$, so it is a homeomorphism.
+$s_e(U)$ is the continuous image of the path connected space $U$, hence path connected: the composite of a path in $U$ with $s_e$ is a path in $E$. A path $\gamma$ in $c^{-1}(U)$ from $e$ is a lift of $c \circ \gamma$ starting at $e$, and so is $s_e \circ c \circ \gamma$; the two agree by the uniqueness of path liftings (Lemma 54.1). Hence every such path stays in $s_e(U)$, and $s_e(U)$ is the path component of $e$ in $c^{-1}(U)$. Because $c \circ s_e = \id_U$, the restriction $c\restrict_{s_e(U)}$ is a continuous bijection onto $U$ with continuous inverse $s_e$, so it is a homeomorphism.
 
 :::
 
@@ -126,7 +126,7 @@ Each $z \in Z$ has a path-connected open neighborhood $U$ such that $\pi_1(U, z)
 
 ::: pf-proof
 
-By Lemma 80.4 (printed p. 486) applied to the simply connected covering $\rho$, the point $z$ has a neighborhood $U_0$ such that $\pi_1(U_0,z) \to \pi_1(Z,z)$ is trivial; a section of $\rho$ over $U_0$ exists, and the inclusion of $U_0$ factors through the simply connected space $\widetilde Z$. Replacing $U_0$ by a path-connected neighborhood $U \subseteq U_0$ of $z$, which exists because $Z$ is locally path connected, keeps the induced map trivial, since it factors through the trivial map of $\pi_1(U_0,z)$.
+By Lemma 80.4  applied to the simply connected covering $\rho$, the point $z$ has a neighborhood $U_0$ such that $\pi_1(U_0,z) \to \pi_1(Z,z)$ is trivial; a section of $\rho$ over $U_0$ exists, and the inclusion of $U_0$ factors through the simply connected space $\widetilde Z$. Replacing $U_0$ by a path-connected neighborhood $U \subseteq U_0$ of $z$, which exists because $Z$ is locally path connected, keeps the induced map trivial, since it factors through the trivial map of $\pi_1(U_0,z)$.
 
 :::
 

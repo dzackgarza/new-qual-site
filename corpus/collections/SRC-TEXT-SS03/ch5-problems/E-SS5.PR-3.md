@@ -54,7 +54,7 @@ is an entire function of order $1/\alpha$.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 5, Problem 3, printed p. 157).
+The book marks this problem with an asterisk (Chapter 5, Problem 3).
 :::
 
 ::: {.solution}

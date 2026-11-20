@@ -45,9 +45,9 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.5, printed p. 96** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice of $\rho$ and the uniqueness induction are his.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 8.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the choice of $\rho$ and the uniqueness induction are his.
 
-Throughout, $\RR_+$ is the set of positive reals, and the principle of recursive definition is Theorem 8.4 (printed pp. 54--55): if $A$ is a set, $a_0\in A$, and $\rho$ assigns to each function on a nonempty section $\{1,\dots,m\}$ of $\ZZ_+$ into $A$ an element of $A$, then there is a unique $h:\ZZ_+\to A$ with $h(1)=a_0$ and $h(i)=\rho(h\restriction\{1,\dots,i-1\})$ for $i>1$. The exercise is on printed p. 56.
+Throughout, $\RR_+$ is the set of positive reals, and the principle of recursive definition is Theorem 8.4 : if $A$ is a set, $a_0\in A$, and $\rho$ assigns to each function on a nonempty section $\{1,\dots,m\}$ of $\ZZ_+$ into $A$ an element of $A$, then there is a unique $h:\ZZ_+\to A$ with $h(1)=a_0$ and $h(i)=\rho(h\restriction\{1,\dots,i-1\})$ for $i>1$. The exercise is on printed p. 56.
 
 ::: pf
 

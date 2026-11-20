@@ -112,7 +112,7 @@ $$
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 3, Problem 5, printed p. 110).
+The book marks this problem with an asterisk (Chapter 3, Problem 5).
 :::
 
 ::: {.solution}

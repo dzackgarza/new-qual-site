@@ -58,7 +58,7 @@ Give an example to show that the second part of Lemma 84.2 need not hold if $T$ 
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §84 Exercise 1(b), printed p. 525, with the definitions of a linear graph (printed p. 502) and of a tree (printed p. 507), and the second part of Lemma 84.2 (printed p. 507), whose finiteness hypothesis it shows cannot be dropped.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §84 Exercise 1(b), with the definitions of a linear graph (printed p. 502) and of a tree (printed p. 507), and the second part of Lemma 84.2 , whose finiteness hypothesis it shows cannot be dropped.
 
 ::: pf
 
@@ -75,7 +75,7 @@ This is a linear graph: its vertex space is $\ZZ$ with the discrete topology, ea
 $T$ is connected.
 
 ::: pf-proof
-Any two vertices $m<n$ are joined by the edge path that traverses the edges joining $k$ to $k+1$ for $k=m,\dots,n-1$ (Lemma 84.1, printed p. 506). Since the vertex set meets every component and is path connected in this sense, $T$ is path connected, hence connected.
+Any two vertices $m<n$ are joined by the edge path that traverses the edges joining $k$ to $k+1$ for $k=m,\dots,n-1$ (Lemma 84.1). Since the vertex set meets every component and is path connected in this sense, $T$ is path connected, hence connected.
 :::
 
 :::

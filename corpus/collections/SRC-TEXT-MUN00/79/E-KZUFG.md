@@ -85,9 +85,9 @@ are equal.
 :::
 
 ::: {.solution}
-The proof is the card's own, with two steps drawn from published answers and credited in those steps: the two-sided identity argument is **Jack Lee's, Math Stack Exchange answer 5414**, and the associativity comparison is **José Carlos Santos', answer 3967971**. Nothing else is taken from a retained set; the exercise is the theorem of §79, printed p. 496.
+The proof is the card's own, with two steps drawn from published answers and credited in those steps: the two-sided identity argument is **Jack Lee's, Math Stack Exchange answer 5414**, and the associativity comparison is **José Carlos Santos', answer 3967971**. Nothing else is taken from a retained set; the exercise is the theorem of §79.
 
-By the Convention of Chapter 13 (printed p. 477), $\overline{G}$ and $G$ are path connected and locally path connected, and a finite product of such spaces is again path connected and locally path connected. The multiplication $m$ and the inversion $I$ are continuous by the definition of a topological group (§22 supplementary exercises, printed p. 145).
+By the Convention of Chapter 13 , $\overline{G}$ and $G$ are path connected and locally path connected, and a finite product of such spaces is again path connected and locally path connected. The multiplication $m$ and the inversion $I$ are continuous by the definition of a topological group (§22 supplementary exercises, printed p. 145).
 
 ::: pf
 
@@ -95,7 +95,7 @@ By the Convention of Chapter 13 (printed p. 477), $\overline{G}$ and $G$ are pat
 Put $H=p_{*}\pi_{1}(\overline{G},\tilde{e})\le\pi_{1}(G,e)$. Under the isomorphism $\pi_{1}(\overline{G},\tilde{e})\times\pi_{1}(\overline{G},\tilde{e})\cong\pi_{1}(\overline{G}\times\overline{G},(\tilde{e},\tilde{e}))$ of Theorem 60.1, the image of $(p\times p)_{*}$ is $H\times H$, the map $m_{*}$ sends $(u,v)$ to the product $u\cdot v$, and the image of $(I\circ p)_{*}$ is $H^{-1}$; since $H$ is a subgroup, $H\cdot H=H$ and $H^{-1}=H$.
 
 ::: pf-proof
-$\pi_{1}$ of a product is the product of the fundamental groups, the inclusions of the factors inducing the isomorphism (Theorem 60.1, printed p. 371); under it $(p\times p)_{*}$ acts coordinatewise as $p_{*}$, so its image is $H\times H$. For classes $u$, $v$ represented by loops $\alpha$, $\beta$ at $e$, the composite $m\circ(\alpha\times\beta)$ is the loop $t\mapsto\alpha(t)\beta(t)$, which is homotopic to the concatenation $\alpha*\beta$ by the standard reparametrization of a product of loops; so $m_{*}(u,v)=u\cdot v$, the product in $\pi_{1}(G,e)$. Similarly $I\circ\alpha$ represents $u^{-1}$. Since $H$ is a subgroup it contains products and inverses of its elements.
+$\pi_{1}$ of a product is the product of the fundamental groups, the inclusions of the factors inducing the isomorphism (Theorem 60.1); under it $(p\times p)_{*}$ acts coordinatewise as $p_{*}$, so its image is $H\times H$. For classes $u$, $v$ represented by loops $\alpha$, $\beta$ at $e$, the composite $m\circ(\alpha\times\beta)$ is the loop $t\mapsto\alpha(t)\beta(t)$, which is homotopic to the concatenation $\alpha*\beta$ by the standard reparametrization of a product of loops; so $m_{*}(u,v)=u\cdot v$, the product in $\pi_{1}(G,e)$. Similarly $I\circ\alpha$ represents $u^{-1}$. Since $H$ is a subgroup it contains products and inverses of its elements.
 :::
 
 :::
@@ -110,7 +110,7 @@ $$
 \qquad
 (I\circ p)_{*}\pi_{1}(\overline{G},\tilde{e})=H^{-1}=H .
 $$
-The lifting criterion of Lemma 79.1 (printed p. 478) applies to each, since the domains are path connected and locally path connected, and gives based lifts $\overline{m}$ and $\overline{I}$; the uniqueness assertion of the same lemma, again by path connectedness of the domains, gives uniqueness of each lift.
+The lifting criterion of Lemma 79.1  applies to each, since the domains are path connected and locally path connected, and gives based lifts $\overline{m}$ and $\overline{I}$; the uniqueness assertion of the same lemma, again by path connectedness of the domains, gives uniqueness of each lift.
 :::
 
 :::

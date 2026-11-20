@@ -93,7 +93,7 @@ $$
 :::
 
 ::: {.solution}
-The proof is the card's own, following the printed outline: no complete published solution of Munkres §82 Supplementary Exercise 2 (printed pp. 499--500) was located, and the searches are recorded in the audit above. The numbered results cited are the Urysohn metrization theorem (Theorem 34.1, printed p. 215), the Lebesgue number lemma (Lemma 27.5, printed p. 175), the algebra of path-homotopy classes (Theorem 51.2, printed p. 326), and the countability theorems of §7 (Theorem 7.5, printed p. 48, and Theorem 7.6, printed p. 49); the definition of semilocal simple connectedness is on printed p. 494.
+The proof is the card's own, following the printed outline: no complete published solution of Munkres §82 Supplementary Exercise 2  was located, and the searches are recorded in the audit above. The numbered results cited are the Urysohn metrization theorem (Theorem 34.1), the Lebesgue number lemma (Lemma 27.5), the algebra of path-homotopy classes (Theorem 51.2), and the countability theorems of §7 (Theorem 7.5, and Theorem 7.6); the definition of semilocal simple connectedness is on printed p. 494.
 
 Throughout, $\mathcal{A}$ is the cover of $X$ by path-connected open sets with $\pi_{1}(A,a)\to\pi_{1}(X,a)$ trivial, $\mathcal{B}$ is the countable cover of the statement satisfying the conditions of [[E-8Q9TN]], $p(B)\in B$ is the chosen point, $g(B,B')$ is the select path in $B\cup B'$, $B_{0}\in\mathcal{B}$ is fixed and $x_{0}=p(B_{0})$.
 
@@ -111,7 +111,7 @@ For $x\in X$ let $N$ be a neighbourhood of $x$ such that every loop in $N$ at $x
 There is a countable open cover $\mathcal{B}$ of $X$ by nonempty path-connected sets such that $B,B'\in\mathcal{B}$ with $B\cap B'\neq\varnothing$ implies $B\cup B'\subset A$ for some $A\in\mathcal{A}$.
 
 ::: pf-proof
-$X$ is regular with a countable basis, so it is metrizable by the Urysohn metrization theorem (Theorem 34.1, printed p. 215). By [[E-8Q9TN]] (a) the cover $\mathcal{A}$ of the metrizable space $X$ has an open refinement $\mathcal{A}'$ with the pairwise-union property. The path components of members of $\mathcal{A}'$ are open, because $X$ is locally path connected, and path connected; they refine $\mathcal{A}$, so they have the trivial-$\pi_{1}$ property, and they inherit the pairwise-union property. Select, for each element $M$ of the fixed countable basis of $X$ that is contained in one of these components, one such component $C_{M}$. Every point $x$ lies in some member of $\mathcal{A}'$, hence in one of its path components $C$, and $C$ is open, so the basis contains $M$ with $x\in M\subset C$; thus the selected components cover $X$, and there are countably many of them. They are the members of $\mathcal{B}$.
+$X$ is regular with a countable basis, so it is metrizable by the Urysohn metrization theorem (Theorem 34.1). By [[E-8Q9TN]] (a) the cover $\mathcal{A}$ of the metrizable space $X$ has an open refinement $\mathcal{A}'$ with the pairwise-union property. The path components of members of $\mathcal{A}'$ are open, because $X$ is locally path connected, and path connected; they refine $\mathcal{A}$, so they have the trivial-$\pi_{1}$ property, and they inherit the pairwise-union property. Select, for each element $M$ of the fixed countable basis of $X$ that is contained in one of these components, one such component $C_{M}$. Every point $x$ lies in some member of $\mathcal{A}'$, hence in one of its path components $C$, and $C$ is open, so the basis contains $M$ with $x\in M\subset C$; thus the selected components cover $X$, and there are countably many of them. They are the members of $\mathcal{B}$.
 :::
 :::
 
@@ -127,7 +127,7 @@ Both are path components of members of $\mathcal{A}'$, and $\mathcal{A}'$ has th
 (a) There is a subdivision $0=t_{0}<\cdots<t_{n}=1$ of $[0,1]$ with $f([t_{n-1},t_{n}])\subset B_{0}$ and $f([t_{i-1},t_{i}])\subset B_{i}$ for $i=1,\ldots,n-1$, with $B_{n}=B_{0}$.
 
 ::: pf-proof
-The sets $f^{-1}(B)$ for $B\in\mathcal{B}$ are open and cover the compact metric space $[0,1]$, so the Lebesgue number lemma (Lemma 27.5, printed p. 175) gives $\delta>0$ such that every subset of diameter less than $\delta$ lies in one of them. Continuity of $f$ at $1$ and $f(1)=x_{0}\in B_{0}$ with $B_{0}$ open give $\eta>0$ with $f([1-\eta,1])\subset B_{0}$. Choose $n$ with $1/n<\min(\delta,\eta)$ and $t_{i}=i/n$. Each $[t_{i-1},t_{i}]$ has diameter $1/n<\delta$, so $f([t_{i-1},t_{i}])$ has diameter less than $\delta$ and lies in some $B_{i}\in\mathcal{B}$; the last interval satisfies $[t_{n-1},t_{n}]\subset[1-\eta,1]$, so $B_{n}=B_{0}$ serves. Consecutive members meet: for $i\geq2$ both $B_{i-1}$ and $B_{i}$ contain $f(t_{i-1})$, and $B_{0}$ and $B_{1}$ both contain $f(0)=x_{0}=f(1)$.
+The sets $f^{-1}(B)$ for $B\in\mathcal{B}$ are open and cover the compact metric space $[0,1]$, so the Lebesgue number lemma (Lemma 27.5) gives $\delta>0$ such that every subset of diameter less than $\delta$ lies in one of them. Continuity of $f$ at $1$ and $f(1)=x_{0}\in B_{0}$ with $B_{0}$ open give $\eta>0$ with $f([1-\eta,1])\subset B_{0}$. Choose $n$ with $1/n<\min(\delta,\eta)$ and $t_{i}=i/n$. Each $[t_{i-1},t_{i}]$ has diameter $1/n<\delta$, so $f([t_{i-1},t_{i}])$ has diameter less than $\delta$ and lies in some $B_{i}\in\mathcal{B}$; the last interval satisfies $[t_{n-1},t_{n}]\subset[1-\eta,1]$, so $B_{n}=B_{0}$ serves. Consecutive members meet: for $i\geq2$ both $B_{i-1}$ and $B_{i}$ contain $f(t_{i-1})$, and $B_{0}$ and $B_{1}$ both contain $f(0)=x_{0}=f(1)$.
 :::
 :::
 
@@ -135,7 +135,7 @@ The sets $f^{-1}(B)$ for $B\in\mathcal{B}$ are open and cover the compact metric
 (b) $[f_{i}]*[\alpha_{i}]=[\alpha_{i-1}]*[g_{i}]$ for $i=1,\ldots,n$.
 
 ::: pf-proof
-The paths $f_{i}*\alpha_{i}$ and $\alpha_{i-1}*g_{i}$ have the same initial point $f(t_{i-1})$ and the same terminal point $p(B_{i})$. Their concatenation with one of them reversed is a loop lying in $B_{i-1}\cup B_{i}$, since $f_{i}$ takes values in $B_{i-1}$, $\alpha_{i-1}$ in $B_{i-1}$, $\alpha_{i}$ in $B_{i}$ and $g_{i}$ in $B_{i-1}\cup B_{i}$. By step [](#pairwise){.pf-ref} that union lies in some $A\in\mathcal{A}$, so the loop is nullhomotopic in $X$ because the inclusion-induced map $\pi_{1}(A)\to\pi_{1}(X)$ is trivial. Theorem 51.2 (printed p. 326) now gives $[f_{i}]*[\alpha_{i}]=[\alpha_{i-1}]*[g_{i}]$.
+The paths $f_{i}*\alpha_{i}$ and $\alpha_{i-1}*g_{i}$ have the same initial point $f(t_{i-1})$ and the same terminal point $p(B_{i})$. Their concatenation with one of them reversed is a loop lying in $B_{i-1}\cup B_{i}$, since $f_{i}$ takes values in $B_{i-1}$, $\alpha_{i-1}$ in $B_{i-1}$, $\alpha_{i}$ in $B_{i}$ and $g_{i}$ in $B_{i-1}\cup B_{i}$. By step [](#pairwise){.pf-ref} that union lies in some $A\in\mathcal{A}$, so the loop is nullhomotopic in $X$ because the inclusion-induced map $\pi_{1}(A)\to\pi_{1}(X)$ is trivial. Theorem 51.2  now gives $[f_{i}]*[\alpha_{i}]=[\alpha_{i-1}]*[g_{i}]$.
 :::
 :::
 
@@ -143,7 +143,7 @@ The paths $f_{i}*\alpha_{i}$ and $\alpha_{i-1}*g_{i}$ have the same initial poin
 (c) $[f]=[g_{1}]*\cdots*[g_{n}]$, so $\pi_{1}(X,x_{0})$ is countable.
 
 ::: pf-proof
-Rearranging part (b) gives $[f_{i}]=[\alpha_{i-1}]*[g_{i}]*[\alpha_{i}]^{-1}$; multiplying these for $i=1,\ldots,n$ cancels the intermediate $[\alpha_{i}]$, and $[\alpha_{0}]$ and $[\alpha_{n}]$ are the class of the constant path at $x_{0}$, so $[f_{1}]*\cdots*[f_{n}]=[g_{1}]*\cdots*[g_{n}]$. By part (a), $[f]=[f_{1}]*\cdots*[f_{n}]$ (Theorem 51.2 again). Since $\mathcal{B}$ is countable, there are countably many select paths, and the set of finite words in a countable alphabet is countable, the words of each length forming a finite product of countable sets and the lengths a countable family (Theorem 7.6, printed p. 49, and Theorem 7.5, printed p. 48); every element of $\pi_{1}(X,x_{0})$ is $[f]$ for a loop $f$ and so is one of these countably many products.
+Rearranging part (b) gives $[f_{i}]=[\alpha_{i-1}]*[g_{i}]*[\alpha_{i}]^{-1}$; multiplying these for $i=1,\ldots,n$ cancels the intermediate $[\alpha_{i}]$, and $[\alpha_{0}]$ and $[\alpha_{n}]$ are the class of the constant path at $x_{0}$, so $[f_{1}]*\cdots*[f_{n}]=[g_{1}]*\cdots*[g_{n}]$. By part (a), $[f]=[f_{1}]*\cdots*[f_{n}]$ (Theorem 51.2 again). Since $\mathcal{B}$ is countable, there are countably many select paths, and the set of finite words in a countable alphabet is countable, the words of each length forming a finite product of countable sets and the lengths a countable family (Theorem 7.6, and Theorem 7.5); every element of $\pi_{1}(X,x_{0})$ is $[f]$ for a loop $f$ and so is one of these countably many products.
 :::
 :::
 :::

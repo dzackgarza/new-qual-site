@@ -40,7 +40,7 @@ $$
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 10, Problem 5, printed p. 316).
+The book marks this problem with an asterisk (Chapter 10, Problem 5).
 :::
 
 ::: {.hint}

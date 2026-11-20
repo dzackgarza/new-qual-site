@@ -63,7 +63,7 @@ for every $\epsilon > 0$, where $\alpha$ is fixed and $1/2 \leq \alpha < 1$ if a
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 7, Problem 3, printed p. 204).
+The book marks this problem with an asterisk (Chapter 7, Problem 3).
 :::
 
 ::: {.solution}

@@ -65,7 +65,7 @@ is continuous.
 
 ::: {.pf-proof}
 
-Multiplication $\overline G\times\overline G\to\overline G$ and inversion $\overline G\to\overline G$ are continuous by the definition of a topological group (supplementary exercises of §22, printed p. 145), and a composite of continuous maps is continuous.
+Multiplication $\overline G\times\overline G\to\overline G$ and inversion $\overline G\to\overline G$ are continuous by the definition of a topological group (supplementary exercises of §22), and a composite of continuous maps is continuous.
 
 :::
 
@@ -121,7 +121,7 @@ $\overline G\times\overline G$ is path connected.
 
 ::: {.pf-proof}
 
-By the Convention of Chapter 13 (printed p. 477), $\overline G$ is path connected. Given points $(x,y)$ and $(x',y')$ of $\overline G\times\overline G$, choose paths $\alpha$ from $x$ to $x'$ and $\beta$ from $y$ to $y'$; then $t\mapsto(\alpha(t),\beta(t))$ is a path from $(x,y)$ to $(x',y')$, because a map into a product is continuous when its coordinate functions are.
+By the Convention of Chapter 13 , $\overline G$ is path connected. Given points $(x,y)$ and $(x',y')$ of $\overline G\times\overline G$, choose paths $\alpha$ from $x$ to $x'$ and $\beta$ from $y$ to $y'$; then $t\mapsto(\alpha(t),\beta(t))$ is a path from $(x,y)$ to $(x',y')$, because a map into a product is continuous when its coordinate functions are.
 
 :::
 
@@ -133,7 +133,7 @@ A path in a discrete space is constant.
 
 ::: {.pf-proof}
 
-Let $\gamma:[0,1]\to D$ be a path with $D$ discrete. Its image is connected, being the image of the connected space $[0,1]$ (Theorem 24.1, printed p. 153) under a continuous map (Theorem 23.5, printed p. 150). A subspace of a discrete space with more than one point is a separation of itself into two nonempty open singletons, so it is not connected (definition of connectedness, §23); hence $\gamma([0,1])$ is a single point.
+Let $\gamma:[0,1]\to D$ be a path with $D$ discrete. Its image is connected, being the image of the connected space $[0,1]$ (Theorem 24.1) under a continuous map (Theorem 23.5). A subspace of a discrete space with more than one point is a separation of itself into two nonempty open singletons, so it is not connected (definition of connectedness, §23); hence $\gamma([0,1])$ is a single point.
 
 :::
 

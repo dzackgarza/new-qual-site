@@ -68,7 +68,7 @@ Show that $A$ does not separate $S^2$.
 
 The argument is problem (10) of **"MATH 4530 -- Topology. Practice Problems For Final solutions"**, the course solutions of Cornell's MATH 4530 (Fall 2010), printed p. 3 of the file, text at `tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt`: for arbitrary $a$ and $b$ in $S^{2}-A$ take $f$ the identity on $A$, apply the Borsuk lemma, and conclude that any two points of $S^{2}-A$ lie in one component. The step that source leaves as a clause --- that the inclusion $A\to S^{2}-\{a,b\}$ is nullhomotopic --- is written out here, since it is what the lemma needs and what the contractibility of $A$ supplies.
 
-The statement was checked against Munkres, *Topology* (2000), §62 Exercise 2, printed p. 384, with the Borsuk lemma (Lemma 62.2) on printed p. 382, the definition of a set separating a space on printed p. 381, the definition of contractibility in §51 (printed p. 332) and Theorem 18.2 on printed p. 107. Throughout, $A$ is a compact contractible subspace of $S^{2}$, so that $S^{2}-A$ is nonempty as soon as $A\neq S^{2}$, and $j\colon A\to S^{2}-\{a,b\}$ denotes the map $j(x)\coloneqq x$ for fixed points $a,b\in S^{2}-A$.
+The statement was checked against Munkres, *Topology* (2000), §62 Exercise 2, with the Borsuk lemma (Lemma 62.2) on printed p. 382, the definition of a set separating a space on printed p. 381, the definition of contractibility in §51  and Theorem 18.2 on printed p. 107. Throughout, $A$ is a compact contractible subspace of $S^{2}$, so that $S^{2}-A$ is nonempty as soon as $A\neq S^{2}$, and $j\colon A\to S^{2}-\{a,b\}$ denotes the map $j(x)\coloneqq x$ for fixed points $a,b\in S^{2}-A$.
 
 ::: pf
 
@@ -78,7 +78,7 @@ $j\colon A\to S^{2}-\theset{a,b}$, $j(x)\coloneqq x$, is a continuous injective 
 
 ::: pf-proof
 
-Since $a,b\notin A$, every $x\in A$ satisfies $j(x)=x\in S^{2}-\theset{a,b}$, so $j$ takes its values in the stated codomain. It is the restriction of the identity of $S^{2}$ to the subspace $A$, hence continuous (Theorem 18.2(b), printed p. 107), and it is injective because it is the identity. The space $A$ is compact by hypothesis.
+Since $a,b\notin A$, every $x\in A$ satisfies $j(x)=x\in S^{2}-\theset{a,b}$, so $j$ takes its values in the stated codomain. It is the restriction of the identity of $S^{2}$ to the subspace $A$, hence continuous (Theorem 18.2(b)), and it is injective because it is the identity. The space $A$ is compact by hypothesis.
 
 :::
 
@@ -90,7 +90,7 @@ There are a point $c\in A$ and a homotopy $H\colon A\times I\to A$ with $H(x,0)=
 
 ::: pf-proof
 
-$A$ is contractible, that is, its identity map is nullhomotopic (§51, printed p. 332): nullhomotopic means homotopic to a constant map, so such an $H$ and such a $c$ exist.
+$A$ is contractible, that is, its identity map is nullhomotopic (§51): nullhomotopic means homotopic to a constant map, so such an $H$ and such a $c$ exist.
 
 :::
 
@@ -106,7 +106,7 @@ Let $H$ and $c$ be as in step [](#contraction){.pf-ref} and let $\iota\colon A\t
 $$
 H^{\prime}\coloneqq\iota\circ H\colon A\times I\to S^{2}-\theset{a,b}
 $$
-is continuous, being a composite of continuous maps (Theorem 18.2(c), printed p. 107), and it takes values in $S^{2}-\theset{a,b}$ because its values lie in $A$ and $a,b\notin A$. Moreover $H^{\prime}(x,0)=\iota(x)=j(x)$ and $H^{\prime}(x,1)=\iota(c)$, a constant. So $H^{\prime}$ is a homotopy from $j$ to the constant map at $c$, all of whose values avoid $a$ and $b$; that is exactly what nullhomotopy of $j$ as a map into the punctured sphere requires.
+is continuous, being a composite of continuous maps (Theorem 18.2(c)), and it takes values in $S^{2}-\theset{a,b}$ because its values lie in $A$ and $a,b\notin A$. Moreover $H^{\prime}(x,0)=\iota(x)=j(x)$ and $H^{\prime}(x,1)=\iota(c)$, a constant. So $H^{\prime}$ is a homotopy from $j$ to the constant map at $c$, all of whose values avoid $a$ and $b$; that is exactly what nullhomotopy of $j$ as a map into the punctured sphere requires.
 
 :::
 
@@ -118,7 +118,7 @@ For all $a,b\in S^{2}-A$ the points $a$ and $b$ lie in the same component of $S^
 
 ::: pf-proof
 
-The Borsuk lemma (Lemma 62.2, printed p. 382) states that if $A$ is a compact space and $f\colon A\to S^{2}-\{a,b\}$ is continuous, injective and nullhomotopic, then $a$ and $b$ lie in the same component of $S^{2}-f(A)$. Steps [](#map){.pf-ref} and [](#nullhomotopic){.pf-ref} supply those three hypotheses for $f=j$, and $j(A)=A$; so $a$ and $b$ lie in the same component of $S^{2}-A$.
+The Borsuk lemma (Lemma 62.2) states that if $A$ is a compact space and $f\colon A\to S^{2}-\{a,b\}$ is continuous, injective and nullhomotopic, then $a$ and $b$ lie in the same component of $S^{2}-f(A)$. Steps [](#map){.pf-ref} and [](#nullhomotopic){.pf-ref} supply those three hypotheses for $f=j$, and $j(A)=A$; so $a$ and $b$ lie in the same component of $S^{2}-A$.
 
 :::
 

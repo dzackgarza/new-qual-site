@@ -54,7 +54,7 @@ Let $X$ be the two-element set $\{0,1\}$ . Find a bijective correspondence betwe
 
 ::: {.solution}
 
-The proper subset and the one-place shift behind a leading $0$ are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.3, printed p. 76** (`tmp/sources/munkres-solutions-whitman.pdf`); the maps are written out below together with both composites.
+The proper subset and the one-place shift behind a leading $0$ are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the maps are written out below together with both composites.
 
 Let $X=\{0,1\}$ and let $X^{\omega}$ be the set of sequences $x=(x_{1},x_{2},\dots)$ with $x_{i}\in X$.
 

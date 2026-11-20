@@ -26,7 +26,7 @@ No retained solution set covers this question, and the collection carries no pro
 $X$ is compact when every cover of $X$ by open sets has a finite subcover: if $X=\bigcup_{i\in I}U_{i}$ with each $U_{i}$ open, then $X=U_{i_{1}}\cup\cdots\cup U_{i_{r}}$ for some finitely many indices.
 
 ::: pf-proof
-This is the definition of compactness (§26, printed p. 163). It is a property of the space with its topology: the condition quantifies only over the open sets, so it is preserved by any homeomorphism.
+This is the definition of compactness (§26). It is a property of the space with its topology: the condition quantifies only over the open sets, so it is preserved by any homeomorphism.
 :::
 
 :::

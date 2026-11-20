@@ -46,7 +46,7 @@ Show that $j_*$ is trivial if $0$ lies in the unbounded component of $\RR^2 - C$
 
 ::: {.solution}
 
-$C$ is the image of $S^1$ under an imbedding, hence compact. As in Lemma 61.2 (printed p. 377), identify $\RR^2\cup\theset{\infty}$ with $S^2$ and take the two punctures to be $0$ and $\infty$; the components of $\RR^2-C$ are the components of $S^2-C$ other than the one containing $\infty$ (Lemma 61.1, printed p. 377).
+$C$ is the image of $S^1$ under an imbedding, hence compact. As in Lemma 61.2 , identify $\RR^2\cup\theset{\infty}$ with $S^2$ and take the two punctures to be $0$ and $\infty$; the components of $\RR^2-C$ are the components of $S^2-C$ other than the one containing $\infty$ (Lemma 61.1).
 
 ::: pf
 

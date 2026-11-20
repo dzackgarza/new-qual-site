@@ -84,7 +84,7 @@ Using this algorithm, reduce each of the following schemes to one of the standar
 :::
 
 ::: {.solution}
-The eight reductions below are the card's own work; the only retained trace is Angina Seng's computation of the first homology of scheme (g), MSE answer 2880663, which does not run this algorithm, and no retained set reduces these schemes. The four standard forms of Theorem 77.5 (printed p. 462) are
+The eight reductions below are the card's own work; the only retained trace is Angina Seng's computation of the first homology of scheme (g), MSE answer 2880663, which does not run this algorithm, and no retained set reduces these schemes. The four standard forms of Theorem 77.5  are
 $$
 (1)\ a a^{-1} b b^{-1},\qquad (2)\ abab,\qquad (3)\ (a_{1}a_{1})\dots(a_{m}a_{m}),\ m\ge2,\qquad (4)\ (a_{1}b_{1}a_{1}^{-1}b_{1}^{-1})\dots(a_{n}b_{n}a_{n}^{-1}b_{n}^{-1}),\ n\ge1,
 $$

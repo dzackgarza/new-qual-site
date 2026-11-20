@@ -52,7 +52,7 @@ Suppose $n=4^a(8k+7)$, where $a$ and $k$ are positive integers. Show that $n$ ca
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 10, Problem 1, printed p. 314). Its converse is false as literally printed: with $a=k=0$ the number $7=4^0(8\cdot0+7)$ is not of the printed form, and $7$ is not a sum of three squares. The argument below proves the statement for $a,k\ge0$, which is the form in which both halves are true.
+The book marks this problem with an asterisk (Chapter 10, Problem 1). Its converse is false as literally printed: with $a=k=0$ the number $7=4^0(8\cdot0+7)$ is not of the printed form, and $7$ is not a sum of three squares. The argument below proves the statement for $a,k\ge0$, which is the form in which both halves are true.
 :::
 
 ::: {.solution}

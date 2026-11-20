@@ -132,8 +132,7 @@ three alternatives holds for each of the twelve spaces. The proofs for (a),
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §58 Exercise 2,
 his pp. 20--22, read in `tmp/sources/cornell-erin-munkres.md`; each of them
 exhibits a deformation retraction and applies Theorem 58.3,
-together with the computation $\pi_1(S^1)\cong\ZZ$ of Theorem 54.5 (printed
-p. 345) and the two deformation retracts of the doubly punctured plane listed as
+together with the computation $\pi_1(S^1)\cong\ZZ$ of Theorem 54.5  and the two deformation retracts of the doubly punctured plane listed as
 Examples 2 and 3 on printed p. 362.
 
 Three parts of that answer are not taken over.
@@ -372,8 +371,7 @@ $H(x,t)$ is a positive multiple of $x$ and so again lies in $\RR\times 0
 \subseteq X$, while for $\norm x\le1$ the map is the identity. Thus $H$ is a
 deformation retraction of $X$ onto
 $S^1\cup([-1,1]\times 0)$, which is the theta space of Example 3 under a
-rotation, and $\pi_1(X)\cong\pi_1(\theta)$ by Theorem 58.3. Example 3, printed
-p. 362, records that the theta space is a deformation retract of the doubly
+rotation, and $\pi_1(X)\cong\pi_1(\theta)$ by Theorem 58.3. Example 3, records that the theta space is a deformation retract of the doubly
 punctured plane, of which the figure eight is a deformation retract by Example 2;
 two applications of Theorem 58.3 give
 $\pi_1(\theta)\cong\pi_1(\RR^2-p-q)\cong\pi_1(\text{figure eight})$.

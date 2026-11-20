@@ -96,12 +96,12 @@ Since $S^2 - \theset{p}$ is homeomorphic with $\RR^2$, and $\RR^2$ is simply con
 :::
 
 ::: {.solution}
-The exercise is §59 Exercise 2, printed p. 370, and it asks for a criticism of a
+The exercise is §59 Exercise 2, and it asks for a criticism of a
 proposed proof, not for a proof. The criticism is transcribed from Pearse,
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §59 Exercise 2,
 his p. 24, read in `tmp/sources/cornell-erin-munkres.md`: the step that chooses
 $p\notin f(I)$ has no justification, because a loop can be surjective, and the
-source points to Munkres's Theorem 44.1 (printed p. 272) for a continuous map of
+source points to Munkres's Theorem 44.1  for a continuous map of
 $I$ onto $I^2$ to compose with.
 
 The load-bearing step of the proposed proof is "choose a point $p$ of $S^2$ not
@@ -111,7 +111,7 @@ $\RR^2$ is simply connected, so $f$ is path homotopic to a constant loop. What
 fails is that the point need not exist: a loop is a continuous map of an
 interval, and a continuous map of an interval can fill the whole sphere. The rest
 of the exercise's conclusion happens to be true -- $S^2$ is simply connected by
-Theorem 59.3 (printed p. 369) -- but the proposed proof does not establish it,
+Theorem 59.3  -- but the proposed proof does not establish it,
 because its hypothesis can fail.
 
 ::: pf
@@ -120,7 +120,7 @@ because its hypothesis can fail.
 There is a loop in $S^2$ whose image is all of $S^2$.
 
 ::: pf-proof
-Let $\pi:I\to I^2$ be the continuous surjection of Theorem 44.1 (printed p. 272),
+Let $\pi:I\to I^2$ be the continuous surjection of Theorem 44.1 ,
 the Peano curve. Let $q:B^2\to B^2/\partial B^2$ be the map collapsing the
 boundary circle to a point, and let $g:B^2\to S^2$ be
 $$
@@ -152,8 +152,7 @@ for $z=-1$, then $\sin\pi\abs x$ as the positive square root of $1-z^2$, and hen
 $x=u\,\abs x/\sin\pi\abs x$ when $z\ne-1$, while $z=-1$ forces $x=\mathbf 0$. So
 the fibres of $g$ are the fibres of $q$, and $g$ induces a continuous bijection
 $\bar g:B^2/\partial B^2\to S^2$, which is a homeomorphism because
-$B^2/\partial B^2$ is compact and $S^2$ is Hausdorff (Theorem 26.6, printed
-p. 167); the construction is the one pictured in Figure 22.2 of the book (printed
+$B^2/\partial B^2$ is compact and $S^2$ is Hausdorff (Theorem 26.6); the construction is the one pictured in Figure 22.2 of the book (printed
 p. 136).
 
 The step needs a continuous surjection $I^2\to B^2$, and not a homeomorphism:

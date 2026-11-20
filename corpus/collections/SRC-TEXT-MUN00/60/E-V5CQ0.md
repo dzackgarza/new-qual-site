@@ -58,7 +58,7 @@ Show that $X$ is homeomorphic to the projective plane $P^2$.
 :::
 
 ::: {.solution}
-The exercise is §60 Exercise 2, printed p. 375, with the projective plane defined
+The exercise is §60 Exercise 2, with the projective plane defined
 on printed p. 372 as the quotient of $S^2$ by the identification of each point
 with its antipode; write $p:S^2\to P^2$ for that quotient map, and
 $q:B^2\to X=B^2/\!\sim$ for the quotient of the exercise.
@@ -108,9 +108,9 @@ $X$ is compact and $P^2$ is Hausdorff.
 
 ::: pf-proof
 $B^2$ is closed and bounded in $\RR^2$, hence compact by the Heine--Borel theorem
-(Theorem 27.3, printed p. 173); $q$ is continuous and onto, so $X=q(B^2)$ is
-compact by Theorem 26.5 (printed p. 166). The projective plane $P^2$ is Hausdorff
-by Theorem 60.3 (printed pp. 372--373), whose proof gives both the Hausdorff
+(Theorem 27.3); $q$ is continuous and onto, so $X=q(B^2)$ is
+compact by Theorem 26.5 . The projective plane $P^2$ is Hausdorff
+by Theorem 60.3 , whose proof gives both the Hausdorff
 property and the covering property of $p$.
 :::
 
@@ -122,7 +122,7 @@ $\boxed{X\ \text{is homeomorphic to}\ P^2}$.
 ::: pf-proof
 By steps [](#well-defined){.pf-ref} and [](#compact-hausdorff){.pf-ref}, $g$ is a
 continuous bijection from the compact space $X$ onto the Hausdorff space $P^2$, so
-$g$ is a homeomorphism by Theorem 26.6 (printed p. 167). This is the source's
+$g$ is a homeomorphism by Theorem 26.6 . This is the source's
 argument with the theorem applied to the continuous map $g$ rather than to
 $f^{-1}$; the source's $f:P^2\to X$, given by $f(\theset{x,-x})=q(x_1,x_2)$ when
 $x_3\ge0$ and $q(-x_1,-x_2)$ when $x_3\le0$ and continuous by the pasting lemma,

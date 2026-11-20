@@ -57,7 +57,7 @@ of the utilities graph?
 
 ::: {.solution}
 
-The counts are the card's own; the one published thread on the utilities graph (Math Stack Exchange question 64192, answers 64200 and 64204) computes it from the $1-\chi$ corollary of May but neither computes the complete graph nor proves the formula, as the card's audit records. The statement was checked against Munkres, *Topology* (2000), §84 Exercise 2, printed p. 513, and the theorems used are of that section.
+The counts are the card's own; the one published thread on the utilities graph (Math Stack Exchange question 64192, answers 64200 and 64204) computes it from the $1-\chi$ corollary of May but neither computes the complete graph nor proves the formula, as the card's audit records. The statement was checked against Munkres, *Topology* (2000), §84 Exercise 2, and the theorems used are of that section.
 
 A graph means a $1$-dimensional CW complex, with $V$ vertices and $E$ edges.
 
@@ -76,7 +76,7 @@ Induction on $V$: for $V=1$ there are no edges. For $V>1$ a finite tree has a ve
 For a finite connected graph $X$ with $V$ vertices and $E$ edges, $\operatorname{rank}\pi_{1}(X)=E-V+1$.
 
 ::: pf-proof
-By Theorem 84.4 (printed p. 509) a maximal tree $T\subset X$ contains every vertex of $X$, so by step [](#tree){.pf-ref} it has $V-1$ edges. By Theorem 84.7 (printed p. 511) $\pi_{1}(X)$ is free with a system of free generators in bijection with the edges of $X$ outside $T$, of which there are $E-(V-1)=E-V+1$.
+By Theorem 84.4  a maximal tree $T\subset X$ contains every vertex of $X$, so by step [](#tree){.pf-ref} it has $V-1$ edges. By Theorem 84.7  $\pi_{1}(X)$ is free with a system of free generators in bijection with the edges of $X$ outside $T$, of which there are $E-(V-1)=E-V+1$.
 :::
 
 :::

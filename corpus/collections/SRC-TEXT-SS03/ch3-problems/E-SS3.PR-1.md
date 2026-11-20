@@ -79,7 +79,7 @@ $$
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 3, Problem 1, printed p. 108).
+The book marks this problem with an asterisk (Chapter 3, Problem 1).
 :::
 
 ::: {.solution}
