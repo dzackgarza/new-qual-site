@@ -72,6 +72,32 @@ audit:
     disturbing lower groups by cellular approximation, the colimit computes homotopy groups by
     compactness, and the Borel construction EG_1 x_{G_1} F has the stated fundamental group, homotopy
     groups and action. No page locator remains in the card text.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Independent referee read of the card's own construction, step by step against Hatcher,
+    Algebraic Topology (2002), §4.2 Exercise 7, Theorem 4.8 and the long exact sequence of a
+    fibration. Two defects repaired, both in a proof's justification, neither in the
+    construction or in a step statement. (1) The proof of step `induction` claimed that the
+    surjections onto $G_k$ for $k>m+1$ survive attaching the cells that kill the kernel in
+    degree $m+1$, through a composite $\pi_k(F_{m+1})\to\pi_k(F_m)\twoheadrightarrow G_k$.
+    No such map exists, the inclusion inducing $\pi_k(F_m)\to\pi_k(F_{m+1})$, and attaching
+    $(m+2)$-cells can destroy classes in $\pi_k$ for $k\ge m+2$, so the claim is false for a
+    starting space with excess; the solution block's sentence that the excess left by the
+    approximation is killed in increasing degree is corrected with it, a weak equivalence
+    leaving none. The proof is now the induction that shows no cell is ever
+    attached: step `start` gives $\pi_k(F_0)\cong G_k$ in every degree, so the kernel at each
+    stage is empty and $F_{m+1}=F_m$ serves. (2) The proof of step `borel` named the deck
+    transformation $g\cdot(e,y)=(ge,y)$; that map sends $[e,y]$ to $[e,g^{-1}y]$, so it does
+    not cover the identity of $EG_1\times_{G_1}F$ and is not a deck transformation, and the
+    action it induces on $\pi_k(F)$ is trivial, which contradicts the step's conclusion. It
+    now reads $g\cdot(e,y)=(ge,gy)$, which is equivariant for the diagonal action, covers the
+    identity and induces the prescribed action. Steps `kill`, `start`, `colimit` and
+    `conclusion` were read and are unchanged. Not checked: the existence of the equivariant
+    CW approximation $F_0\to P$ in step `start`, which holds for a discrete group but is not
+    a numbered statement of the book and is not built on the card. No retained solution set
+    covers this exercise, so nothing here is transcribed.
 ---
 
 ::: {.problem}
@@ -79,7 +105,7 @@ Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescr
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 7. No retained solution set covers this exercise, so the construction and its verification below are the card's own. It replaces the previous prose construction, which took $F=\prod_{i>1}K(G_i,i)$. That product does have the prescribed homotopy groups: $\pi_i$ of a product is the product of the $\pi_i$ of the factors, and $\pi_i(K(G_j,j))=0$ for $i\ne j$, so $\pi_i(F)=G_i$ exactly. What it is not is a CW complex: an infinite product of CW complexes carrying cells in unboundedly many dimensions is not one, and the construction here needs a CW complex, both to attach cells and to take the colimit. The repair is to replace the product by an equivariant CW approximation of it, which is a weak $G_1$-equivalence and so carries the same homotopy groups and the same action, and then to kill, in increasing degree, whatever excess the approximation leaves in the degrees above the ones already fixed. The killing is done equivariantly so that the prescribed $\pi_1$-action survives.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 7. No retained solution set covers this exercise, so the construction and its verification below are the card's own. It replaces the previous prose construction, which took $F=\prod_{i>1}K(G_i,i)$. That product does have the prescribed homotopy groups: $\pi_i$ of a product is the product of the $\pi_i$ of the factors, and $\pi_i(K(G_j,j))=0$ for $i\ne j$, so $\pi_i(F)=G_i$ exactly. What it is not is a CW complex: an infinite product of CW complexes carrying cells in unboundedly many dimensions is not one, and the construction here needs a CW complex, both to attach cells and to take the colimit. The repair is to replace the product by an equivariant CW approximation of it, which is a weak $G_1$-equivalence and so carries the same homotopy groups and the same action. A weak equivalence leaves no excess in any degree, so no cell is ever attached: the killing lemma is stated in general below, and the induction shows that its kernel is empty at every stage.
 
 Throughout, $G_1$ is a group, $G_i$ for $i>1$ is an abelian group with a homomorphism $\rho_i:G_1\to\operatorname{Aut}(G_i)$, and "prescribed action" means the action of $G_1$ on $\pi_i$ through $\rho_i$; $EG_1$ is a free contractible $G_1$-CW complex.
 
@@ -109,7 +135,7 @@ Take a $G_1$-CW model of $K(G_k,k)$ on which $G_1$ acts through $\rho_k$; such a
 There is a chain $F_0\subset F_1\subset F_2\subset\cdots$ of $G_1$-CW complexes with: $\pi_k(F_m)=G_k$ for $2\le k\le m$ as $G_1$-modules, and $\pi_k(F_m)\twoheadrightarrow G_k$ a $G_1$-equivariant surjection for $k>m$.
 
 ::: pf-proof
-Induction on $m$. The case $m=0$ is step [](#start){.pf-ref}, where already $\pi_k(F_0)\cong G_k$ for every $k\ge2$, so the kernel below is trivial and one may take $F_{m+1}=F_m$; the construction is stated for the general case so that it also covers a starting space with excess in the degrees above those already fixed. For the step, let $A\subset\pi_{m+1}(F_m)$ be the kernel of the surjection onto $G_{m+1}$; it is a $G_1$-invariant subset, and its normal closure is a $G_1$-invariant subgroup, so step [](#kill){.pf-ref} applies with $m+1$ in place of $m$ and produces $F_{m+1}$ with $\pi_{m+1}(F_{m+1})=G_{m+1}$ and $\pi_k(F_{m+1})\cong\pi_k(F_m)$ for $k\le m$. Those isomorphisms give $\pi_k(F_{m+1})=G_k$ for $2\le k\le m$, and the surjections onto $G_k$ for $k>m+1$ survive because the composite $\pi_k(F_{m+1})\to\pi_k(F_m)\twoheadrightarrow G_k$ is still onto.
+Induction on $m$, with the stronger claim that $F_m$ may be taken equal to $F_0$ at every stage. The case $m=0$ is step [](#start){.pf-ref}, which gives $\pi_k(F_0)\cong G_k$ for every $k\ge2$. For the step, let $A\subset\pi_{m+1}(F_m)$ be the kernel of the map onto $G_{m+1}$; by the induction hypothesis $F_m=F_0$, and $\pi_{m+1}(F_0)\cong G_{m+1}$, so $A$ is empty. Step [](#kill){.pf-ref}, applied with $m+1$ in place of $m$, therefore attaches no cell and returns $F_{m+1}=F_m=F_0$. Then $\pi_k(F_{m+1})=G_k$ for $2\le k\le m+1$ and $\pi_k(F_{m+1})\cong G_k$ for $k>m+1$, the last because $F_{m+1}=F_0$ and step [](#start){.pf-ref} identifies $\pi_k(F_0)$ with $G_k$ in every degree; each of these isomorphisms is compatible with the $G_1$-action, by the induction hypothesis and by step [](#start){.pf-ref}.
 
 :::
 
@@ -129,7 +155,7 @@ Homotopy groups of a CW colimit are the colimit of the homotopy groups of the st
 For a simply connected $G_1$-space $F$ with $\pi_k(F)\cong G_k$ as $G_1$-modules, the Borel construction $X=EG_1\times_{G_1}F$ satisfies $\pi_1(X)\cong G_1$, $\pi_k(X)\cong G_k$ for $k\ge2$, and the action of $\pi_1(X)$ on $\pi_k(X)$ is $\rho_k$.
 
 ::: pf-proof
-$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of the bundle gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,y)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
+$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of the bundle gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,gy)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
 
 :::
 
