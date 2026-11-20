@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.example}
-Let $k$ be an algebraically closed field and let $f\in k[x_0,\ldots,x_n]$ be a nonzero homogeneous form.
+Let $k$ be an algebraically closed field and let $f\in k[x_0,\ldots,x_n]$ be a nonzero homogeneous form of positive degree.
 Then $\PP^n_k\sm V(f)$ is an affine variety.
 :::
 
