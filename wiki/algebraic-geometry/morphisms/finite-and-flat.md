@@ -17,7 +17,7 @@ A nonconstant morphism of smooth projective curves is finite and flat.
 
 [[D-MORFLAT]]
 
-For a finite flat morphism $f\colon X\to Y$ with $Y$ noetherian and connected, $f_*\OO_X$ is locally free of constant rank $d$, and every fibre has length $d$.
+For a finite flat morphism $f\colon X\to Y$ with $Y$ noetherian and connected, $f_*\OO_X$ is locally free of constant rank $d$ and every fibre has length $d$ ([[D-MORFLAT]]).
 
 ## Where flatness fails
 
