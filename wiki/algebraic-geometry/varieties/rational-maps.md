@@ -18,12 +18,12 @@ A rational map is a morphism defined on a dense open subset ([[D-VARBIRAT]]), so
 [[D-VARBIRAT]]
 
 For the rule $\thevector{x:y:z}\mapsto\thevector{x:y}$ on $\PP^2$, the indeterminacy locus is the single point $\thevector{0:0:1}$.
-The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Har77, §I.4, pp. 24--27]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
+The indeterminacy locus is small: a rational map from a normal variety to a projective variety is undefined only in codimension at least two [@Har77, Section I.4]: at a point of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so a tuple of rational functions can be cleared of denominators there. In particular a rational map from a nonsingular curve to a projective variety is a morphism ([[T-CRVMINMOD]]).
 A rational map is dominant when its image is dense; a dominant rational map $X\dashrightarrow Y$ pulls functions back along the inclusion $k(Y)\into k(X)$ of function fields.
 
 ## Rational maps to projective space
 
-For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$ not all zero, modulo multiplication by a single element of $k(X)^\times$ [@Har77, Definition I.4].
+For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$ not all zero, modulo multiplication by a single element of $k(X)^\times$ [@Har77, Section I.4].
 The tuple may be chosen with no common factor, and then the indeterminacy locus is the common zero locus of $f_0,\ldots,f_n$ in the largest open set on which all of them are regular.
 A rational map to $\PP^n$ is a linear system on $X$ with no requirement that it be base-point-free, and the morphisms are the base-point-free linear systems ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
