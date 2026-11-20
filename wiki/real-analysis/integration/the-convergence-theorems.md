@@ -39,7 +39,7 @@ For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_
 
 ## Interchanging limits, sums, and integrals
 
-The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly, the $f_n$ and $f$ are integrable, and all $f_n$ vanish outside one set of finite measure.
+The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly and the $f_n$ and $f$ are integrable: choosing $N$ with $\abs{f_n-f}\leq1$ for $n\geq N$, the integrable $g\coloneqq\max\qty{\abs{f_1},\dots,\abs{f_N},\abs f+1}$ dominates every $f_n$, so the [[T-IJQQG|dominated convergence theorem]] applies.
 It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on $\RR$, all in [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
 
 [[T-MN6WQ]]
