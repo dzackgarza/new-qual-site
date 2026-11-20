@@ -26,7 +26,7 @@ topics:
 
 [[T-LDJNS]]
 
-::: {.remark title="Strictness in Fatou's lemma"}
+::: {.example title="Strictness in Fatou's lemma"}
 For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$ of Fatou's lemma can be strict: $f_n\coloneqq n\chi_{(0,1/n)}$ on $\RR$ gives $0<1$.
 
 :::
@@ -39,7 +39,7 @@ For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_
 
 ## Interchanging limits, sums, and integrals
 
-The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly and all $f_n$ vanish outside one set of finite measure.
+The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly, the $f_n$ and $f$ are integrable, and all $f_n$ vanish outside one set of finite measure.
 It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on $\RR$, all in [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
 
 [[T-MN6WQ]]
