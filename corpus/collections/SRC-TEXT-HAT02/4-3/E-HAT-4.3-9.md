@@ -11,6 +11,21 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Restructured under #2, transcribing the retained solution of Steven V. Sam, Solutions to
+    Algebraic Topology (2008), §4.3 Exercise 9, printed p. 26 of
+    tmp/sources/hatcher-solutions-sam-2008.pdf (PDF p. 27). Sam's route is kept: a section of
+    pi: Delta^I -> Delta_p, then Exercise 8. Two defects in his text are repaired on the card.
+    His section is displayed as s(x,gamma)(t) = gamma(t), which is the base path and not a path
+    in the simplex; the card writes the lift (gamma(t), min{y_0, lambda(gamma(t))}) and checks
+    it. His reason for not being a bundle, "the fibers over the vertices of the edge are
+    points", fails when the third vertex projects over an endpoint; the card's lambda model
+    covers the endpoint cases, as the 2026-11-01 event already required. Checked against
+    Exercise 8, printed p. 419, and the sentence defining a fiber bundle on printed p. 375
+    ("All the subspaces p^{-1}(b) ... are homeomorphic"). Not checked: no certificate.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -61,34 +76,64 @@ audit:
     Not claimed: a published solution, and no certificate.
 ---
 
-::: {.problem}
-Show that a linear projection of a 2-simplex onto one of its edges is a fibration but not a fiber bundle. [Use the preceding problem.]
+::: {.solution}
+The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 9**, printed p.~26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam's route is kept: exhibit a section of $\pi\colon\Delta^I\to\Delta_p$, $\pi(\sigma)=(\sigma(0),p\sigma)$, and apply Exercise 8. His displayed section is the base path where the lifted path is meant, and step [](#section){.pf-ref} writes the lift; his reason for the failure of the bundle property assumes that the third vertex projects to an interior point of the edge, and step [](#notbundle){.pf-ref} covers the endpoint cases as well.
+
+::: pf
+
+::: {.pf-step #model}
+In affine coordinates the simplex is $\Delta=\{(x,y):0\le x\le1,\ 0\le y\le\lambda(x)\}$ and $p(x,y)=x$, where $\lambda\ge0$ is continuous and piecewise linear, $\lambda(s)=h>0$ at the image $s$ of the third vertex, and $\lambda(x)=0$ at each endpoint $x\in\{0,1\}$ with $x\ne s$.
+
+::: pf-proof
+Identify the target edge with $I=[0,1]$ by $p$. In coordinates $(x,y)$ with $x=p$ the third vertex is $v=(s,h)$ with $h>0$ and $s\in[0,1]$, and $\Delta$ is the convex hull of $(0,0)$, $(1,0)$ and $(s,h)$. For $x\in[0,1]$ the points of $\Delta$ over $x$ form the interval $\{x\}\times[0,\lambda(x)]$, where $\lambda$ is affine on $[0,s]$ and on $[s,1]$ because those are the projections of the two edges through $v$; thus $\lambda$ is continuous and piecewise linear, $\lambda(s)=h$, and $\lambda$ vanishes at an endpoint unless $v$ projects to that endpoint.
 :::
 
-::: {.solution}
-Choose affine coordinates in which the simplex is
-$$
-\Delta=\{(x,y):0\le x\le1,\ 0\le y\le \lambda(x)\}
-$$
-for a continuous piecewise-linear function $\lambda\ge0$, and the projection is
-$$
-p(x,y)=x
-$$
-onto the base edge $I=[0,1]$. Embed $\Delta$ in the trivial bundle
-$$
-I\times[0,M]\to I
-$$
-for $M\ge\max\lambda$. There is a fiber-preserving retraction
-$$
-r:I\times[0,M]\to\Delta,
-\qquad
-r(x,y)=(x,\min\{y,\lambda(x)\}).
-$$
+:::
 
-Given any homotopy lifting problem for $p:\Delta\to I$, first regard the initial lift as a map into the product bundle. Lift the base homotopy there, then compose the lift with $r$. Since $r$ preserves the base coordinate and restricts to the identity on $\Delta$, this gives a lift with the prescribed initial map. Thus
-$$
-\boxed{p:\Delta\to I\text{ is a fibration}.}
-$$
+::: {.pf-step #section}
+$\pi\colon\Delta^I\to\Delta_p$ has a section.
 
-It is not a fiber bundle. In the coordinates above the fiber over $x\in[0,1]$ is the interval $\{x\}\times[0,\lambda(x)]$, because $p$ is linear and convexity makes the fiber the convex hull of the vertices lying over $x$. The third vertex $v_2$ projects to a point $s\in[0,1]$ with $\lambda(s)>0$, so the fiber over $s$ is a nondegenerate interval. A vertex of the base edge lies over an endpoint of the base edge, and since $s$ is a single point at least one endpoint $x_0\in\{0,1\}$ satisfies $x_0\ne s$; then $v_2$ does not lie over $x_0$, and the only vertex of $\Delta$ lying over $x_0$ is the vertex of the base edge itself, so the fiber over $x_0$ is that single point. Hence some fiber is a point and some fiber is a nondegenerate interval. These fibers are not homeomorphic, whereas all fibers of a bundle over the connected edge would be homeomorphic. Hence $p$ is not a fiber bundle.
+::: pf-proof
+For $x=(x_0,y_0)\in\Delta$ and $\gamma\colon I\to I$ with $\gamma(0)=x_0$, set $s(x,\gamma)(t)=(\gamma(t),\min\{y_0,\lambda(\gamma(t))\})$. Since $0\le y_0\le\lambda(x_0)$ and $0\le\min\{y_0,\lambda(\gamma(t))\}\le\lambda(\gamma(t))$, the path lies in $\Delta$ by step [](#model){.pf-ref}; it is continuous in $(x,\gamma,t)$ because evaluation $(\gamma,t)\mapsto\gamma(t)$ is continuous and $\lambda$ and $\min$ are continuous; at $t=0$ it is $(x_0,\min\{y_0,\lambda(x_0)\})=(x_0,y_0)=x$; and $p\,s(x,\gamma)(t)=\gamma(t)$. Hence $\pi\,s=\id$.
+:::
+
+:::
+
+::: {.pf-step #fibration}
+$p\colon\Delta\to I$ is a fibration.
+
+::: pf-proof
+Exercise 8 (printed p.~419) states that $p$ is a fibration if and only if $\pi\colon E^I\to E_p$ has a section; step [](#section){.pf-ref} provides one for $E=\Delta$, $B=I$.
+:::
+
+:::
+
+::: {.pf-step #fibres}
+The fibre of $p$ over $x\in I$ is $\{x\}\times[0,\lambda(x)]$.
+
+::: pf-proof
+Immediate from the description of $\Delta$ in step [](#model){.pf-ref}: a point of $\Delta$ over $x$ is a pair $(x,y)$ with $0\le y\le\lambda(x)$.
+:::
+
+:::
+
+::: {.pf-step #notbundle}
+$p$ is not a fibre bundle.
+
+::: pf-proof
+By step [](#model){.pf-ref}, $\lambda(s)=h>0$, so the fibre over $s$ is a nondegenerate interval. Choose an endpoint $x_0\in\{0,1\}$ with $x_0\ne s$, possible since $\{0,1\}$ has two elements; then $\lambda(x_0)=0$, so the fibre over $x_0$ is the single point $(x_0,0)$. A point is not homeomorphic to a nondegenerate interval, so the fibres of $p$ are not all homeomorphic, whereas the fibres of a fibre bundle are all homeomorphic (printed p.~375). Hence $p$ is not a fibre bundle.
+:::
+
+:::
+
+::: {.pf-step}
+A linear projection of a $2$-simplex onto one of its edges is a fibration and not a fibre bundle.
+
+::: pf-proof
+Step [](#fibration){.pf-ref} gives the fibration, step [](#notbundle){.pf-ref} the failure of the bundle property.
+:::
+
+:::
+
+:::
 :::
