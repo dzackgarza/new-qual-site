@@ -45,6 +45,20 @@ audit:
     printed p. 143, Proposition 2.22 on printed p. 123, the exercise on printed p. 320. Not
     claimed: a retained solution set — the sets in `tmp/sources` cover §3.1–§3.3 and §4.1–§4.3
     — so the argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §3.F Exercise 7, Example 2.40,
+    Proposition 2.22 and Theorem 3.2. The construction is correct: extending a generating set of A to
+    one of B by lifts of generators of C makes the square commute; K_B meets F_A in K_A exactly; a
+    lift of a basis of the free group K_B/K_A together with a basis of K_A is a basis of K_B; the
+    cellular boundary of the Moore space is the inclusion K_B -> F_B, giving H_n = B; and in the
+    quotient the boundary d_{n+1} on the T'-cells is injective because a combination of T' lying in
+    F_A lies in K_A and meets it trivially, so H_n(Q) = F_B/(K_B+F_A) = B/A = C and every other
+    reduced homology vanishes. Three page locators removed from the body: Example 2.40, Proposition
+    2.22 and the exercise are cited by number, in the opening paragraph, in step `free-presentation`
+    and in the cohomology step. No mathematics changed.
 ---
 
 ::: {.problem}
@@ -55,7 +69,7 @@ $$0 \to \operatorname{Hom}(C,G) \to \operatorname{Hom}(B,G) \to \operatorname{Ho
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 7, printed p. 320. No retained solution set covers it — the Hatcher sets in `tmp/sources` treat §3.1–§3.3 and §4.1–§4.3 only, and none reaches §3.F — so the construction and the exact sequence below are the card's own. The construction of Moore spaces used is Example 2.40, printed p. 143.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 7. No retained solution set covers it — the Hatcher sets in `tmp/sources` treat §3.1–§3.3 and §4.1–§4.3 only, and none reaches §3.F — so the construction and the exact sequence below are the card's own. The construction of Moore spaces used is Example 2.40.
 
 Throughout $0\to A\xrightarrow{i}B\xrightarrow{q}C\to0$ is a short exact sequence of abelian groups, $n\ge1$, and $G$ is any coefficient group.
 
@@ -65,7 +79,7 @@ Throughout $0\to A\xrightarrow{i}B\xrightarrow{q}C\to0$ is a short exact sequenc
 There are free abelian groups $F_A\subset F_B$ with $F_B/F_A$ free and surjections $F_A\twoheadrightarrow A$, $F_B\twoheadrightarrow B$ compatible with $i$, and kernels $K_A\subset K_B$ with $K_B\cap F_A=K_A$.
 
 ::: pf-proof
-Choose a generating set $S_A$ of $A$ and extend it to a generating set $S_B=S_A\sqcup S'$ of $B$ by adjoining lifts of the elements of a generating set of $C$: choosing $s'\in B$ with $q(s')$ a chosen generator of $C$ and using that $q$ is onto makes every element of $B$ a combination of $S_A$ and the chosen lifts, since $q$ of a combination of the lifts differs from a given element by an element of $\ker q=\operatorname{im}i$. Let $F_A=\ZZ^{(S_A)}\subset F_B=\ZZ^{(S_B)}$ and let $F_A\to A$, $F_B\to B$ send each basis element to the corresponding element; these are surjective by construction, and the square with $i$ and the inclusion commutes because both composites send $s\in S_A$ to $i(s)\in B$. Put $K_A=\ker(F_A\to A)$ and $K_B=\ker(F_B\to B)$. If $x\in K_B\cap F_A$ then $x$ maps to $0$ in $B$ and lies in $F_A$, hence maps to $0$ in the composite $F_A\to A\xrightarrow{i}B$, so $x\in K_A$; the converse inclusion is clear. Since $F_B/F_A\cong\ZZ^{(S')}$ is free, so is the subgroup $K_B/K_A\cong(K_B+F_A)/F_A\subseteq F_B/F_A$, by the subgroup theorem for free abelian groups (Example 2.40, printed p. 143).
+Choose a generating set $S_A$ of $A$ and extend it to a generating set $S_B=S_A\sqcup S'$ of $B$ by adjoining lifts of the elements of a generating set of $C$: choosing $s'\in B$ with $q(s')$ a chosen generator of $C$ and using that $q$ is onto makes every element of $B$ a combination of $S_A$ and the chosen lifts, since $q$ of a combination of the lifts differs from a given element by an element of $\ker q=\operatorname{im}i$. Let $F_A=\ZZ^{(S_A)}\subset F_B=\ZZ^{(S_B)}$ and let $F_A\to A$, $F_B\to B$ send each basis element to the corresponding element; these are surjective by construction, and the square with $i$ and the inclusion commutes because both composites send $s\in S_A$ to $i(s)\in B$. Put $K_A=\ker(F_A\to A)$ and $K_B=\ker(F_B\to B)$. If $x\in K_B\cap F_A$ then $x$ maps to $0$ in $B$ and lies in $F_A$, hence maps to $0$ in the composite $F_A\to A\xrightarrow{i}B$, so $x\in K_A$; the converse inclusion is clear. Since $F_B/F_A\cong\ZZ^{(S')}$ is free, so is the subgroup $K_B/K_A\cong(K_B+F_A)/F_A\subseteq F_B/F_A$, by the subgroup theorem for free abelian groups (Example 2.40).
 
 :::
 
@@ -109,7 +123,7 @@ $M(D,n)$ has $H_n=D$, $H_{n+1}=0$ and no other homology, so the universal coeffi
 $H^k(M(B,n),M(A,n);G)\cong\widetilde H^k(M(C,n);G)$ for every $k$.
 
 ::: pf-proof
-$(M(B,n),M(A,n))$ is a CW pair, so the quotient map induces isomorphisms $H^k(M(B,n),M(A,n))\cong\widetilde H^k(Q)$ (Proposition 2.22, printed p. 123), and $Q$ is the Moore space $M(C,n)$ by step [](#quotient){.pf-ref}.
+$(M(B,n),M(A,n))$ is a CW pair, so the quotient map induces isomorphisms $H^k(M(B,n),M(A,n))\cong\widetilde H^k(Q)$ (Proposition 2.22), and $Q$ is the Moore space $M(C,n)$ by step [](#quotient){.pf-ref}.
 
 :::
 
