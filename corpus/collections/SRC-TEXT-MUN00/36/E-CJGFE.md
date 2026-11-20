@@ -78,6 +78,30 @@ audit:
     mathematics having been re-derived and compared with the published key in the two passes recorded
     above.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against the Supplementary Exercises: Review of the Basics, Exercise 4, and found
+    correct in all fifty-one entries. Checked row by row against the numbered results the card
+    cites, each read in the book: Theorem 25.3 and Theorem 25.4 for the open column of (3) and
+    (4), with Example 3 of §25 -- "the topologist's sine curve is connected but not locally
+    connected" -- as the closed-column witness; Theorem 26.2 and Exercise 28.3(b), whose part (b)
+    is exactly the closed-subspace question, for (5) and (6), with the open interval $(0,1)$
+    inside $[0,1]$ for the open column; Corollary 29.3, which reads "if $A$ is closed in $X$ or
+    open in $X$, then $A$ is locally compact", for the two affirmative entries of (7), with
+    Example 1 of §29 for $\QQ$; Theorems 31.2(a) and 31.2(b) and 33.2 for (8), (9) and (10);
+    Exercise 32.1 and Example 2 of §32 for (11), the witness being $S_\Omega\times\overline
+    S_\Omega$ inside the compact Hausdorff $\overline S_\Omega\times\overline S_\Omega$, in
+    which $S_\Omega$ is open; Theorem 30.2 for (12) and (13); Exercise 30.9 with Example 5 of §30
+    for (14), whose witness $I\times(0,1)$ is open in the ordered square; Example 3 of §31 for
+    the closed, discrete, uncountable anti-diagonal of the separable Sorgenfrey plane, which
+    settles (15)'s two negative columns; and Exercise 21.1, which is exactly "$d|A\times A$ is a
+    metric for the subspace topology", for (16) and (17). The one entry whose reason is not a
+    citation is (15) in the open column, and it is right: the trace of a countable dense set on an
+    open subspace is countable and dense there, since a nonempty open subset of the subspace is
+    open in the whole space. Not checked: no published key to these exercises was located, and
+    none is claimed here.
 ---
 
 ::: {.exercise}
