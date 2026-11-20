@@ -78,6 +78,20 @@ audit:
     solution was located, so the argument remains the card's own. No statement,
     argument or citation changes.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with two repairs. The card's part (a)--(d) are correct, with closedness of
+    $A$ and $B$ used exactly in the identity of indiscernibles, the telescoping sum
+    $\sum_{k\ge n}2^{-k}=2^{-(n-1)}$, and Theorem 45.1 at the end. Repaired: from $d(x_n,x)\le2^{-(n-1)}$
+    the step inferred $x\in\overline{U(A_n,2^{-(n-1)})}$, which does not follow from the distance
+    alone (in $\{0,1\}$ with $A_n=\{0\}$ and $x=1$ at $n=1$ it fails); what is true, and now
+    written, is that $x_k\in A_k\subseteq U(A_n,2^{-(n-1)})$ for $k>n$ and $x$ is a limit of those
+    points. And $d(y_n,y)\le2^{-(n-1)}$ was used to conclude $y_n\in U(A,2^{-(n-1)})$, an open
+    ball, which needs a strict bound; the sum of the strict inequalities $d(y_k,y_{k+1})<2^{-k}$
+    gives one. Citation by number: §45 Exercise 7, §27 Exercise 2 and Theorem 45.1.
+
 ---
 
 ::: {.exercise}
@@ -174,13 +188,13 @@ Choose $x_1\in A_1$. Since $D(A_n,A_{n+1})<2^{-n}$, choose successively $x_{n+1}
 
 ::: pf-step
 
-For any $x = \lim x_k \in A_\infty$, $d(x_n, x) \le 2^{-(n-1)}$, which implies $x \in \overline{U(A_n, 2^{-(n-1)})} \subseteq U(A_n, 2^{-(n-2)})$, so $A \subseteq U(A_n, 2^{-(n-2)})$.
+For any $x = \lim_k x_k \in A_\infty$ and any $k>n$ one has $x_k\in A_k\subseteq U(A_n, 2^{-(n-1)})$, so $x$, a limit of those $x_k$, lies in $\overline{U(A_n, 2^{-(n-1)})}\subseteq U(A_n, 2^{-(n-2)})$, and $A \subseteq U(A_n, 2^{-(n-2)})$.
 
 :::
 
 ::: pf-step
 
-Conversely, given $y_n \in A_n$, inductively choose $y_{k+1} \in A_{k+1}$ with $d(y_k, y_{k+1}) < 2^{-k}$ for all $k \ge n$, and $y_k \in A_k$ with $d(y_k, y_{k+1}) < 2^{-k}$ for $k = n-1, \ldots, 1$; both choices exist because $D(A_k, A_{k+1}) < 2^{-k}$. The limit $y = \lim y_k \in A_\infty \subseteq A$ satisfies $d(y_n, y) \le 2^{-(n-1)}$, so $A_n \subseteq U(A, 2^{-(n-1)})$.
+Conversely, given $y_n \in A_n$, inductively choose $y_{k+1} \in A_{k+1}$ with $d(y_k, y_{k+1}) < 2^{-k}$ for all $k \ge n$, and $y_k \in A_k$ with $d(y_k, y_{k+1}) < 2^{-k}$ for $k = n-1, \ldots, 1$; both choices exist because $D(A_k, A_{k+1}) < 2^{-k}$. The limit $y = \lim y_k \in A_\infty \subseteq A$ satisfies $d(y_n, y)\le\sum_{k\ge n}d(y_k,y_{k+1})<\sum_{k\ge n}2^{-k}=2^{-(n-1)}$, the inequality being strict because every term of the sum is, so $A_n \subseteq U(A, 2^{-(n-1)})$.
 
 :::
 
