@@ -125,7 +125,7 @@ $$
 $$
 The kernel is the same over $\QQ$ and over $\ZZ$ here, because $\ker_\ZZ = \ker_\QQ\intersect\ZZ^4$ and row reduction does not change $\ker_\QQ$.
 The image of the transpose is different: over $\QQ$ it is spanned by the nonzero rows $(1,2,0,2)$ and $(0,0,1,-1)$, but over $\ZZ$ the row lattice of the original matrix can be a proper sublattice of their span, for example when $(2,4,0,4)$ is a row of the original matrix.
-The integer row lattice is read off from the Hermite normal form, which uses only invertible integer row operations, and $H_n$ from the Smith normal form as in item 5 above.
+The integer row lattice is read off from the Hermite normal form, which uses only invertible integer row operations, and $H_n$ from the Smith normal form of $\del_{n+1}$: if its nonzero diagonal entries are $d_1,\ldots,d_r$ and $\ker\del_n$ has rank $s$, then $H_n(X)\cong\ZZ^{s-r}\oplus\bigoplus_{i=1}^r\ZZ/d_i$.
 
 :::
 
@@ -133,16 +133,10 @@ The integer row lattice is read off from the Hermite normal form, which uses onl
 
 ::: {.proposition}
 For finitely generated abelian groups $G_1, G_2, \ldots$, there is a connected CW complex $X$ with $H_n(X)\cong G_n$ for all $n\geq 1$.
+The space is the wedge of the [[D-KC4BS|Moore spaces]] $M(G_n,n)$, whose reduced homology is additive over the wedge [[PR-B6BB2]].
 
 :::
 
-::: {.proof}
-By the structure theorem for finitely generated abelian groups, each $G_n$ is a finite direct sum of copies of $\ZZ$ and $\ZZ/d$.
-Attaching an $n$-cell to a point gives $S^n$ with $\tilde H_n = \ZZ$ and no other reduced homology.
-Attaching an $(n+1)$-cell to $S^n$ along a map of degree $d$ gives a space with $\tilde H_n = \ZZ/d$ and no other reduced homology.
-For good pointed spaces $X_i$, $\tilde H_n(\bigvee_i X_i) \cong \bigoplus_i \tilde H_n(X_i)$, so the wedge of these spaces over all summands of all $G_n$ has the required homology.
-
-:::
 
 ## Exercises
 
