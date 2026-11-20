@@ -89,7 +89,7 @@ $$
 \correspond{\text{subgroups } H\leq\pi_1(X,x_0)}/\text{conjugacy},
 \end{aligned}
 $$
-under which normal covering spaces correspond to normal subgroups $H\normal\pi_1(X,x_0)$.
+under which normal covering spaces correspond to normal subgroups $H\normal\pi_1(X,x_0)$ [@Hat02, Theorem 1.38].
 
 :::
 
@@ -127,7 +127,6 @@ Any subgroup $H \leq \pi_1(S^1; 1) = \ZZ$ is of the form $H = n\ZZ$, and the cor
 	\arrow[dotted, from=4-3, to=3-4]
 \end{tikzcd}
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMSwwLCJcXFpaIl0sWzMsMCwiXFxoYXR7U14xfSA9IFxcUlIiXSxbMywyLCJTXjEiXSxbMCwxLCJuXFxaWiJdLFsyLDEsIlxcaGF0e1NeMX0vblxcWlogXFxjb25nIFNeMSJdLFsyLDMsIlNeMSJdLFswLDFdLFsxLDJdLFszLDRdLFs0LDVdLFszLDAsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs0LDEsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs1LDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
 
 \begin{tikzcd}
 \ZZ/n
@@ -285,7 +284,3 @@ In the tree describing the universal cover, each red vertex is a copy of $S^2$ c
 A one-sheeted covering map $f\colon X\to Y$ is a homeomorphism: it is a bijective local homeomorphism, hence an open continuous bijection.
 
 :::
-
-## Exercises
-
-- [Patrikis's Math 6520 homework 4 (Utah)](https://www.math.utah.edu/~patrikis/6520Spring2018/6520hw4.pdf).
