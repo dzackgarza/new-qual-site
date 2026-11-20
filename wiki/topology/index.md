@@ -14,7 +14,6 @@ order: 40
 | What is this space, and what are its invariants | [[topology/the-standard-spaces\|The standard spaces]] |
 | Is this true for all spaces | [[topology/counterexamples\|Counterexamples]] |
 
-The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedges, products, and punctured surfaces are built.
 
 ## Chapters
 
@@ -34,7 +33,7 @@ The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedge
 
 Pages collecting material from several chapters:
 
-- [[topology/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
+- [[topology/review|Theorems of the topology chapters]] -- the statements of the chapters' theorems, on one page.
 
 - [[topology/the-standard-spaces|The standard spaces]] -- the table, with $\pi_1$ and $H_*$.
 
