@@ -43,6 +43,23 @@ audit:
     countable basis", the same position as Doug's World, printed p. 6; the card's proof is that
     sentence carried out, with the A <= U and B <= V checks. This exercise stays in the
     COMPLAINTS.md entry.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 32 Exercise 4, printed p. 205, and
+    found correct. The countable families $U_n\supseteq A$ and $V_n\supseteq B$ exist because a
+    closed subspace of a Lindelöf space is Lindelöf (Exercise 30.9) and regularity separates
+    each point of $A$ from the closed set $B$ by an open set whose closure misses $B$; the sets
+    $U$ and $V$ are open and contain $A$ and $B$ because $a\notin\overline{V_i}$ for every $i$;
+    and they are disjoint, a point of $U_m\setminus\bigcup_{i\le m}\overline{V_i}$ that also lay
+    in $V_n\setminus\bigcup_{i\le n}\overline{U_i}$ contradicting $m\le n$ through
+    $\overline{U_m}$ and $n\le m$ through $\overline{V_n}$. The two inclusions and the
+    disjointness are those of the construction in Theorem 32.1, with a countable subcover in place
+    of a countable basis. Not checked: the printed folio, the checkout holding only the extraction
+    `tmp/sources/munkres-2000-topology.md`, which records page ranges and not folios; and no
+    published solution was located in this pass, the two retained sets that reach the exercise
+    giving the one-sentence reduction recorded in the earlier events.
 ---
 
 ::: {.exercise}
