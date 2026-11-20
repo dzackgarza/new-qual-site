@@ -607,7 +607,7 @@ for $\mu\in k$ with $\mu\notin\{0,1,\lambda,a,b\}$, so that the six points are d
 Write $[A,B,C,D]$ for the image of $D$ under the unique fractional linear transformation carrying $A,B,C$ to $\infty,0,1$. Kock, *Abstract Projective Lines* (4 December 2009), Theorem 1, is that existence and uniqueness in general form, for the projective line over any field: for three distinct points of one projective line and three distinct points of another there is a unique projectivity carrying them to one another in order.
 The case needed here, which is the card's own: a fractional linear transformation $x\mapsto(\alpha x+\beta)/(\gamma x+\delta)$ fixing $\infty$ forces $\gamma=0$, then fixing $0$ forces $\beta=0$, and then fixing $1$ forces $\alpha=\delta$; so the transformation fixing $\infty$, $0$ and $1$ is the identity, and an element of $\PGL(1)$ is determined by its values at three distinct points.
 
-That cross ratios are preserved is Kock's, printed p. 5: "projectivities, in the sense defined here, commute with composition, since they are functors. Hence it is clear that projectivities preserve cross ratios."
+That cross ratios are preserved is Kock's, in the paragraph preceding display (8): "projectivities, in the sense defined here, commute with composition, since they are functors. Hence it is clear that projectivities preserve cross ratios."
 Here is the computation for four points $A,B,C,D$ of $\PP^1$. Let $\rho$ carry $A,B,C$ to $\infty,0,1$, and let $\phi$ be fractional linear; then $\rho\circ\phi^{-1}$ carries $\phi A,\phi B,\phi C$ to $\infty,0,1$, so it is the normalizing transformation of $[\phi A,\phi B,\phi C,\phi D]$ and sends $\phi D$ to $\rho(D)$. Hence
 $$
 [\phi A,\phi B,\phi C,\phi D]=[A,B,C,D].
@@ -626,7 +626,7 @@ $$
 \qquad
 [A,B,D,C]=\frac{\rho(C)}{\lambda}=\frac1\lambda
 $$
-where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $B,A,C$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $A,C,B$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $A,B,D$ to $\infty,0,1$. These are Kock's permutation laws (4)--(6) on printed p. 4 and (7) on printed p. 5, stated there for $\mu=(A,B;C,D)$:
+where the three right-hand sides use that $x\mapsto1/\rho(x)$ carries $B,A,C$ to $\infty,0,1$, that $x\mapsto1-\rho(x)$ carries $A,C,B$ to $\infty,0,1$, and that $x\mapsto\rho(x)/\lambda$ carries $A,B,D$ to $\infty,0,1$. These are Kock's permutation laws (4)--(7), stated there for $\mu=(A,B;C,D)$:
 $$
 (A,B;C,D)=(B,A;D,C)=(C,D;A,B)=(D,C;B,A),
 $$
@@ -673,11 +673,11 @@ Step [](#r-equals-s){.pf-ref} proves the required invariant, while steps [](#iso
 :::
 
 ::: {.remark title="Published solution"}
-The facts used are printed in Anders Kock, *Abstract Projective Lines* (4 December 2009): Theorem 1 on printed p. 6, that a projectivity is determined by the images of three distinct points; the paragraph before display (8) on printed p. 5, that projectivities preserve cross ratios; the permutation laws (4)--(7) on printed p. 4, giving the six values; and Section 4 on printed pp. 8--11, the identification of $\PP^1$ with an abstract projective line with its projectivities the fractional linear transformations. The accepted answer 834758 to Mathematics Stack Exchange question 834693 computes the same six values from three transpositions generating $S_4$.
+The facts used are printed in Anders Kock, *Abstract Projective Lines* (4 December 2009): Theorem 1, that a projectivity is determined by the images of three distinct points; the paragraph before display (8), that projectivities preserve cross ratios; the permutation laws (4)--(7), giving the six values; and Section 4, the identification of $\PP^1$ with an abstract projective line with its projectivities the fractional linear transformations. The accepted answer 834758 to Mathematics Stack Exchange question 834693 computes the same six values from three transpositions generating $S_4$.
 
 Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 6.7, and Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise I.6.7, answer $r=s$ and state the threshold as $r\le3$: Borcherds's reason is "because any set of at most $3$ distinct points in $\PP^1$ can be mapped to any other set of the same size under $\operatorname{Aut}(\PP^1)$", and Egbert's is "by virtue of the fact that mobius transformations can take at most $3$ distinct points in $\PP^1$ to any other $3$ distinct points". Joe Cutrone and Nick Marshburn, *Algebraic Geometry by Robin Hartshorne: Solutions*, Exercise I.6.7, state it as $r>3$ and add that "any isomorphism between $\PP^1$ and $\PP^1$ fixes at most $2$ points, so if $r>3$, the map must be the identity isomorphism".
 
 The threshold $r\le3$ is wrong, and $r=3$ is where it fails: the automorphism of $\PP^1$ produced in step [](#isomorphism-iff-fractional-linear-equivalent){.pf-ref} carries the $(r+1)$-point set $\{\infty\}\cup P$ onto $\{\infty\}\cup Q$ as a set, sending $\infty$ to whatever point of that set is its image, and for $r=3$ the two four-point sets of step [](#converse-fails){.pf-ref} are already separated by the cross ratio. So the converse of $r=s$ holds for $r\le2$, where $3$-transitivity of $\PGL(1)$ carries $\{\infty\}\cup P$ to $\{\infty\}\cup Q$, and fails for $r\ge3$. Cutrone--Marshburn's premise, that a non-identity automorphism of $\PP^1$ fixes at most two points, is true; the inference is not, since an isomorphism carrying $\{\infty\}\cup P$ to $\{\infty\}\cup Q$ need not fix either set pointwise, and on four points acts as a permutation of them.
 
-Shichijo's converse, printed p. 6, is that an element of $\PGL(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element; that is the assertion rather than a proof, and his footnote replaces it by a configuration in $\AA^3$.
+Shichijo's converse, Exercise 6.7, is that an element of $\PGL(1)$ is determined by the images of three points and that, $\AA^1$ being infinite, one may choose the two finite sets outside the reach of any one element; that is the assertion rather than a proof, and his footnote replaces it by a configuration in $\AA^3$.
 :::
