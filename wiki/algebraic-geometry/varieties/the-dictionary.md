@@ -9,7 +9,7 @@ topics:
 
 # The dictionary
 
-Over an algebraically closed field $k$, $I\mapsto V(I)$ and $Z\mapsto I(Z)$ are inclusion-reversing bijections between radical ideals of $k[x_1,\ldots,x_n]$ and closed subsets of $\AA^n$; prime ideals correspond to irreducible closed subsets and maximal ideals to points.
+Over an algebraically closed field $k$, $I\mapsto V(I)$ and $Z\mapsto I(Z)$ are inclusion-reversing bijections between radical ideals of $k[x_1,\ldots,x_n]$ and closed subsets of $\AA^n$; prime ideals correspond to irreducible closed subsets and maximal ideals to points ([[T-JRTS2]], [[PR-7OT2Z]]).
 
 [[D-BIVAU]]
 
@@ -17,7 +17,7 @@ Over an algebraically closed field $k$, $I\mapsto V(I)$ and $Z\mapsto I(Z)$ are 
 
 [[PR-7OT2Z]]
 
-The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as closed subschemes of $\AA^1$, $V(x)$ and $V(x^2)$ are distinct.
+The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as closed subschemes of $\AA^1$, $V(x)$ and $V(x^2)$ are distinct, $V(x)$ being the reduced structure on the closed point ([[D-SCHRED]]).
 
 ## Irreducibility, and decomposition
 
@@ -25,7 +25,7 @@ The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as close
 
 [[PR-TNVSI]]
 
-In an irreducible space any two nonempty open subsets meet, so an irreducible Hausdorff space has at most one point.
+In an irreducible space any two nonempty open subsets meet, so an irreducible Hausdorff space has at most one point ([[D-9DIKB]]).
 
 [[FE-ISIPR]]
 
