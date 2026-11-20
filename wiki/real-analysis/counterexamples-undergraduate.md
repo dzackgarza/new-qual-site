@@ -20,7 +20,7 @@ The convergence is not uniform on $(0,\infty)$: at $x = 1/N^2$ the $N$th term eq
 ## Variations on the Dirichlet function
 
 For $f\colon\RR\to\RR$, $D_f$ denotes the set of points where $f$ is discontinuous and $D_f'$ the set of points where $f$ is not differentiable.
-Every function $f\colon\RR\to\RR$ has $D_f$ an $F_\sigma$ set, since $D_f = \bigcup_{k\geq1}\theset{x \st \operatorname{osc}_f(x)\geq 1/k}$ and each of these sets is closed.
+Every function $f\colon\RR\to\RR$ has $D_f$ an $F_\sigma$ set, since $D_f = \bigcup_{k\geq1}\theset{x \st \operatorname{osc}_f(x)\geq 1/k}$ and each of these sets is closed ([[FF-AVBFU]]).
 
 ::: {.example title="The Dirichlet function"}
 $$
@@ -112,7 +112,7 @@ $$
 f(x)\coloneqq\sum_{n=0}^{\infty} a^{n} \cos \left(b^{n} \pi x\right).
 $$
 The $n$th term is bounded by $a^n$, so the series converges uniformly by the Weierstrass $M$-test, $f$ is continuous, and $\abs f\leq(1-a)^{-1}$.
-Weierstrass's theorem states that $f$ is differentiable nowhere.
+Weierstrass's theorem states that $f$ is differentiable nowhere [@Rud76, ch. 7].
 $f$ is Riemann integrable on every compact interval, and not Lebesgue integrable on $\RR$, since it is continuous, $2$-periodic, and not almost everywhere zero.
 
 :::
