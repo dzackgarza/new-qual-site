@@ -10,8 +10,6 @@ topics:
 
 ## Polynomial rings and Gauss's lemma
 
-For a field $k$ the division algorithm makes $k[x]$ a Euclidean domain under the degree, so $k[x]$ is a principal ideal domain and a unique factorization domain as well; over a general unique factorization domain $R$ with fraction field $F$, Gauss's lemma passes irreducibility between $R[x]$ and $F[x]$.
-
 [[FD-CI4NB]]
 
 [[FD-24RNF]]
@@ -63,8 +61,6 @@ The characteristic decides the arithmetic of the field, and perfectness is decid
 [[PR-IK6AM]]
 
 ## Cyclotomic polynomials
-
-The recursion $x^n-1=\prod_{d\mid n}\Phi_d(x)$ computes each cyclotomic polynomial from the preceding ones, and the irreducibility of $\Phi_n$ over $\QQ$ is what makes the Galois group of $\QQ(\zeta_n)$ the unit group modulo $n$.
 
 [[D-BLV6F]]
 
