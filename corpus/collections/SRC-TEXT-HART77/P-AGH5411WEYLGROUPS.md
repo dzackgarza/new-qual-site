@@ -346,6 +346,23 @@ audit:
     the card as it stood before the 2026-11-19 work and are superseded on that
     point; they are left in place as the log they are, and the bound is not open
     on this card.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The closing block of the proof now carries part (c)'s inequality instead of
+    naming the steps and leaving it to be added from outside. It previously read
+    that steps weyl-order, sixers, group-order-g and e6-isomorphic-g "reduce
+    part (c) to the inequality |E6| <= 51840", and after that was replaced by an
+    index of the steps it named them without the page. It now states the
+    inequality's proof: faithfulness of the geometric representation of a
+    Coxeter group, Humphreys, Reflection Groups and Coxeter Groups, Corollary on
+    printed p. 113, the last item of 5.4, proved there from Theorem 5.4 on
+    printed p. 111, so the presented group injects into W(E6) and
+    |E6| <= |W(E6)| = 51840, with the three evaluations of that order named by
+    page. No step, statement, hypothesis or number of the card changes; the
+    block at the end of the proof is what changes. Not checked in this pass: any
+    source beyond those already named on the card.
 ---
 
 ::: {.problem}
@@ -666,8 +683,23 @@ isomorphism.
 ::: pf-qed
 Steps [](#an-homomorphism){.pf-ref}, [](#an-cosets){.pf-ref} and [](#an-isomorphism){.pf-ref} are
 part (a); steps [](#e6-homomorphism){.pf-ref} and [](#e6-surjective){.pf-ref} are part (b); steps
-[](#weyl-order){.pf-ref}, [](#weyl-faithful){.pf-ref}, [](#sixers){.pf-ref},
+[](#weyl-faithful){.pf-ref}, [](#weyl-order){.pf-ref}, [](#sixers){.pf-ref},
 [](#group-order-g){.pf-ref} and [](#e6-isomorphic-g){.pf-ref} are part (c).
+
+For part (c) the inequality $\cardinality{\mathbf E_6}\le51840$ is proved and not assumed.
+Step [](#weyl-faithful){.pf-ref} disposes of it: the geometric representation of a Coxeter group
+is faithful, which is J. E. Humphreys, *Reflection Groups and Coxeter Groups*, Cambridge Studies in
+Advanced Mathematics 29 (1990), Corollary on printed p. 113 --- the last item of §5.4, stated there
+as "The representation $\sigma:W\to\operatorname{GL}(V)$ is faithful" and proved from Theorem 5.4 on
+printed p. 111, whose statement is the criterion on the sign of $w(\alpha_s)$ against the length of
+$ws$ --- so the group presented in part (c) injects into the reflection group of the $\mathbf E_6$
+root lattice, and its order is at most that of $W(\mathbf E_6)$. Steps
+[](#weyl-order){.pf-ref}, [](#sixers){.pf-ref} and [](#group-order-g){.pf-ref} evaluate that order
+as $51840$, from Dolgachev's Corollary 8.2.16 at printed pp. 261--262, from the sixers of §9.1 at
+printed pp. 319--321, and from Remark 4.10.1 at printed pp. 404--405 respectively. Part (b) gives
+the surjection onto $G$, so part (c) concludes with
+$\cardinality{\mathbf E_6}=\cardinality{W(\mathbf E_6)}=51840=\cardinality{G}$, and $\mathbf E_6$ is
+the Weyl group.
 :::
 
 :::
