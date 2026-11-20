@@ -333,8 +333,11 @@ audit:
     both open and closed in the connected interior, hence onto; and step `collar-extension` builds the
     proper disks F and G with F(x) = f(2x) for |x| <= 1/2 and 2|x| f(x/|x|) for 1/2 <= |x| <= 1, which is
     well defined at |x| = 1/2, embeds D^p, and has F(partial D^p) = 2S^{p-1} on the boundary of the
-    radius-2 ball, the two outer cones meeting only at the origin and so disjoint. Not re-read in this
-    pass: the final homology contradiction of step `proper-case`, which was read on 2026-11-07.
+    radius-2 ball, the two outer cones meeting only at the origin and so disjoint. The final homology
+    contradiction of step `proper-case` was then read as well: Exercise 3 of §2.B gives the isomorphism
+    H_{q-1}(S^{n-1} - S^{p-1}) = H_{q-1}(D^n - D) for the proper disk D = f(D^p), the class [S^{q-1}]
+    generates the source by step s3, and S^{q-1} bounds E = g(D^q) lying in D^n - D, which is
+    contractible, so that class dies in the target. That is the contradiction, and it is correct.
 ---
 
 ::: {.problem}
