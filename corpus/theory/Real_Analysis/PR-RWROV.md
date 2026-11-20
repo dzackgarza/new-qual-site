@@ -20,5 +20,5 @@ Let $C([0,1])$ be the space of continuous functions $f\colon[0,1]\to\RR$ with th
 $$
 \norm{f}_\infty \coloneqq \sup_{x\in [0, 1]} \abs{f(x)} .
 $$
-Then $C([0,1])$ with the metric $d(f,g)\coloneqq\norm{f-g}_\infty$ is a [[D-G5N6I|complete]] metric space.
+Then $C([0,1])$ with the metric $d(f,g)\coloneqq\norm{f-g}_\infty$ is a [[D-G5N6I|complete]] metric space [@Rud76, ch. 7].
 :::
