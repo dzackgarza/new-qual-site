@@ -45,7 +45,7 @@ and make the change of variables $s = ur$, $t = u(1 - r)$.]
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 6, Exercise 7. Here $B(\alpha,\beta)=\int_{0}^{1}(1-t)^{\alpha-1}t^{\beta-1}\,dt$ and $\Gamma(\alpha)=\int_{0}^{\infty}t^{\alpha-1}e^{-t}\,dt$ for $\Re\alpha,\Re\beta>0$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 6, Exercise 7. Here $B(\alpha,\beta)=\int_{0}^{1}(1-t)^{\alpha-1}t^{\beta-1}\,dt$ and $\Gamma(\alpha)=\int_{0}^{\infty}t^{\alpha-1}e^{-t}\,dt$ for $\Re\alpha,\Re\beta>0$.
 
 ::: pf
 
