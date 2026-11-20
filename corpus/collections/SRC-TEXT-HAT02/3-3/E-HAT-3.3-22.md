@@ -13,6 +13,19 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, eight of them, transcribing the retained
+    solution of Hatcher §3.3 Exercise 22 in Stanford Math 215C's Solution Set 4 and checking it
+    against the book. The set cites nothing by number and asserts the side-pair deformations; they
+    are now steps, with the homotopy written out and the two cases $x\notin K$ and $x\in K$ of the
+    condition that $C$ be preserved separated, and with the vanishing of $H^n(X,X;G)$ named as the
+    reason the Mayer--Vietoris middle term disappears. The citation is by exercise number only: the
+    URLs and the printed locator are gone from the body, and the retained file is named. Not checked:
+    no certificate, and no second source for the relative Mayer--Vietoris sequence beyond Hatcher
+    §2.2, where it is stated.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -149,63 +162,87 @@ Show that $H_c^n(X \times \RR; G) \approx H_c^{n-1}(X; G)$ for all $n$.
 :::
 
 ::: {.solution}
-For each compact $K\subset X$ and integer $N\ge1$, set $I_N=[-N,N]$, and use Stanford's fixed cover
-$$
-A=X\times(-1,\infty),\qquad B=X\times(-\infty,1).
-$$
-Define
-$$
-C=A\cap((X\times\RR)-(K\times I_N)),\qquad
-D=B\cap((X\times\RR)-(K\times I_N)).
-$$
-Then $A\cup B=X\times\RR$, $C\cup D=(X\times\RR)-(K\times I_N)$, $A\cap B=X\times(-1,1)$ and, because $N\ge1$ gives $(-1,1)\subset I_N$,
-$$
-C\cap D=(X-K)\times(-1,1).
-$$
+The argument is that of the retained solution set: **Stanford Math 215C, *Solution Set 4*, the solution of Hatcher §3.3 Exercise 22**, read in `tmp/sources/stanford-math215c-spring2009-solution4.pdf`, and checked against Hatcher's relative Mayer--Vietoris sequence and the definition of compactly supported cohomology in §3.1 and §3.3. Fix a coefficient group $G$ and, for a compact $K\subset X$ and an integer $N\ge1$, put $I_N=[-N,N]$ and
+$$A=X\times(-1,\infty),\qquad B=X\times(-\infty,1),$$
+$$C=A\cap((X\times\RR)-(K\times I_N)),\qquad D=B\cap((X\times\RR)-(K\times I_N)).$$
 
-I prove that $(A,C)$ has zero cohomology. The projection $\pi:A\to X$ and the inclusion $g:X\to A$ onto the slice $\{N+1\}$ give maps of pairs $(A,C)\to(X,X)$ and $(X,X)\to(A,C)$: $g(X)\subset C$ because $N+1\notin I_N$. Plainly $\pi g=\operatorname{id}_X$, and $g\pi$ is homotopic to $\operatorname{id}_A$ by straight-line homotopy in the second coordinate. This respects $C$: if $x\notin K$, all points on the slice belong to $C$; if $x\in K$ and $(x,t)\in C$, then $t>N$, so the segment from $t$ to $N+1$ remains outside $I_N$. There is no lower component with $t<-N$, because points of $A$ have $t>-1$ and $N\ge1$. Similarly $(B,D)\simeq(X,X)$ using the slice $\{-N-1\}$.
+::: pf
 
-Projection also gives the pair homotopy equivalence
-$$
-(A\cap B,C\cap D)\simeq(X,X-K).
-$$
-Relative Mayer--Vietoris therefore reads
-$$
-\cdots\to H^n(A,C;G)\oplus H^n(B,D;G)=0
-\to H^n(A\cap B,C\cap D;G)
-\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots .
-$$
-Consequently,
-$$
-H^{n-1}(A\cap B,C\cap D;G)
-\cong H^n(X\times\RR,(X\times\RR)-(K\times I_N);G).
-$$
-In particular,
-$$
-H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)
-\cong H^{n-1}(X,X-K;G).
-$$
-The comparison is **not** with $H^n$ of the intersection.
+::: {.pf-step #cover}
+$A\cup B=X\times\RR$, $C\cup D=(X\times\RR)-(K\times I_N)$, $A\cap B=X\times(-1,1)$ and $C\cap D=(X-K)\times(-1,1)$.
 
-For naturality, let $K\subset L$ and $N\le M$, and distinguish the objects by writing $C_{K,N}$ and $D_{K,N}$ on the left and $C_{L,M}$ and $D_{L,M}$ next:
-$$
-C_{L,M}\subset C_{K,N},\qquad D_{L,M}\subset D_{K,N}.
-$$
-These inclusions are immediate from $(L\times I_M)\supset(K\times I_N)$. The same holds for the total pair:
-$$
-(X\times\RR)-(L\times I_M)\subset (X\times\RR)-(K\times I_N).
-$$
-On the intersections, both inclusions and their targets agree:
-$$
-C_{L,M}\cap D_{L,M}=(X-L)\times(-1,1)
-\;\subset\; (X-K)\times(-1,1)=C_{K,N}\cap D_{K,N}.
-$$
-Each such inclusion is induced by the identity on the ambient space. The resulting restrictions are exactly the maps used to form the filtered compact-support limit, and relative Mayer--Vietoris is functorial in these inclusions. Thus the whole diagrams, not merely their cohomology groups, commute.
-
-The sets $K\times I_N$ with $K$ compact and $N\ge1$ are cofinal among compact subsets of $X\times\RR$: a compact set has compact projection $K$ in $X$ and bounded projection in $\RR$, contained in some $I_N$. Taking the filtered direct limit yields
-$$
-H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G).
-$$
-
-This is **Stanford Math 215C, Solution Set 4**, Hatcher 3.3.22, from [Ralph Cohen's Math 215C page](https://math.stanford.edu/~ralph/math215c/), [`solution4.pdf`](https://math.stanford.edu/~ralph/math215c/solution4.pdf), held at `tmp/sources/stanford-math215c-spring2009-solution4.pdf`. The fixed overlap is $(-1,1)$, with the side-pair homotopies and cofinal compact products proved above.
+::: pf-proof
+The first two are immediate from the definitions, since $(X\times\RR)-(K\times I_N)$ meets $A$ and $B$ in $C$ and $D$ and is covered by them. For the third, $t>-1$ and $t<1$ give $A\cap B=X\times(-1,1)$. For the fourth, a point of $C\cap D$ lies in $A\cap B$, so it is $(x,t)$ with $-1<t<1$, and it lies in $(X\times\RR)-(K\times I_N)$; since $N\ge1$ gives $(-1,1)\subset I_N$, the condition $(x,t)\notin K\times I_N$ is exactly $x\notin K$. So $C\cap D=(X-K)\times(-1,1)$.
 :::
+
+:::
+
+::: {.pf-step #sides}
+$(A,C)$ and $(B,D)$ are homotopy equivalent to $(X,X)$ as pairs.
+
+::: pf-proof
+The projection $\pi\colon A\to X$ sends $C$ into $X$ and the inclusion $g\colon X\to A$ onto the slice $\{N+1\}$ lands in $C$, because $N+1\notin I_N$; so both are maps of pairs. Clearly $\pi g=\id_X$. The straight-line homotopy $H((x,t),s)=(x,(1-s)t+s(N+1))$ deforms $g\pi$ to $\id_A$ and keeps $C$ inside $C$: if $x\notin K$ every point of the slice lies in $C$, and if $x\in K$ and $(x,t)\in C$ then $t>N$, so the segment from $t$ to $N+1$ stays outside $I_N$; there is no lower component to arrange because points of $A$ have $t>-1\ge-N$ when $N\ge1$. The same argument with $B$ and the slice $\{-N-1\}$ gives $(B,D)\simeq(X,X)$.
+:::
+
+:::
+
+::: {.pf-step #intersection}
+$(A\cap B,C\cap D)$ is homotopy equivalent to $(X,X-K)$ as pairs.
+
+::: pf-proof
+$A\cap B=X\times(-1,1)$ and $C\cap D=(X-K)\times(-1,1)$ by step [](#cover){.pf-ref}, and the projection to $X$ carries the first pair onto the second by a homotopy equivalence of pairs, the fibre $(-1,1)$ being contractible and the homotopy $(x,t,s)\mapsto(x,(1-s)t)$ preserving membership in $(X-K)\times(-1,1)$.
+:::
+
+:::
+
+::: {.pf-step #mv}
+The relative Mayer--Vietoris sequence gives an isomorphism $H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)\cong H^{n-1}(A\cap B,C\cap D;G)$.
+
+::: pf-proof
+Apply the relative Mayer--Vietoris sequence of the excisive pair $(A,B)$ with the subsets $C\subset A$ and $D\subset B$: it reads
+$$\cdots\to H^n(A,C;G)\oplus H^n(B,D;G)\to H^n(A\cap B,C\cap D;G)\to H^{n+1}(X\times\RR,(X\times\RR)-(K\times I_N);G)\to\cdots,$$
+using $A\cup B=X\times\RR$ and $C\cup D=(X\times\RR)-(K\times I_N)$ from step [](#cover){.pf-ref}. The first term vanishes in every degree because $(A,C)\simeq(X,X)$ by step [](#sides){.pf-ref} and $H^n(X,X;G)=0$, so exactness makes the map out of $H^n(A\cap B,C\cap D;G)$ an isomorphism, and a map that is an isomorphism of abelian groups is an isomorphism.
+:::
+
+:::
+
+::: {.pf-step #reduce}
+Hence $H^n(X\times\RR,(X\times\RR)-(K\times I_N);G)\cong H^{n-1}(X,X-K;G)$.
+
+::: pf-proof
+Combine step [](#mv){.pf-ref} with step [](#intersection){.pf-ref}, which identifies the group on the right of that isomorphism with $H^{n-1}(X,X-K;G)$.
+:::
+
+:::
+
+::: {.pf-step #naturality}
+The isomorphisms of step [](#reduce){.pf-ref} are compatible with inclusions of the indexing pairs: for compact $K\subset L$ and $N\le M$ the horizontal maps of the two Mayer--Vietoris diagrams commute.
+
+::: pf-proof
+$(L\times I_M)\supset(K\times I_N)$ gives $C_{L,M}\subset C_{K,N}$, $D_{L,M}\subset D_{K,N}$, $(X\times\RR)-(L\times I_M)\subset(X\times\RR)-(K\times I_N)$, and on the intersections $C_{L,M}\cap D_{L,M}=(X-L)\times(-1,1)\subset(X-K)\times(-1,1)$, all by step [](#cover){.pf-ref}. Each inclusion is induced by the identity of the ambient space, and relative Mayer--Vietoris is natural for maps of excisive pairs, so the resulting diagrams commute, not merely their cohomology groups.
+:::
+
+:::
+
+::: {.pf-step #cofinal}
+The sets $K\times I_N$ with $K\subset X$ compact and $N\ge1$ are cofinal among the compact subsets of $X\times\RR$.
+
+::: pf-proof
+A compact $L\subset X\times\RR$ has compact projection $K\subset X$ and bounded second projection, contained in some $[-N,N]$ with $N\ge1$; then $L\subset K\times I_N$. Passing to a larger compact set and a larger interval gives the directed structure that step [](#naturality){.pf-ref} uses.
+:::
+
+:::
+
+::: {.pf-step}
+$H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G)$.
+
+::: pf-proof
+By definition $H_c^n(X\times\RR;G)$ is the direct limit of $H^n(X\times\RR,(X\times\RR)-L;G)$ over the compact $L\subset X\times\RR$, and step [](#cofinal){.pf-ref} says that the sub-indexing by the sets $K\times I_N$ is cofinal, so the limit may be computed over them. Step [](#reduce){.pf-ref} identifies each term with $H^{n-1}(X,X-K;G)$ and step [](#naturality){.pf-ref} says the identifications are compatible with the maps of the system, so the limit is the direct limit of $H^{n-1}(X,X-K;G)$ over the compact $K\subset X$, which is $H_c^{n-1}(X;G)$.
+:::
+
+:::
+
+:::
+
+:::
+
