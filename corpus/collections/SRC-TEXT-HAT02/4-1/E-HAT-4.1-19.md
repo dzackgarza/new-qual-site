@@ -67,7 +67,7 @@ Show that $X \simeq_w Y$ if and only if $X$ and $Y$ have a common CW approximati
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 19, printed p. 359, where the claim is printed as "iff" and not only as one implication.
+The exercise is §4.1 Exercise 19, where the claim is printed as "iff" and not only as one implication.
 
 Recall that a **CW approximation** of a space $X$ is a CW complex $K$ together with a weak homotopy equivalence $K\to X$, and that every space has one.
 
