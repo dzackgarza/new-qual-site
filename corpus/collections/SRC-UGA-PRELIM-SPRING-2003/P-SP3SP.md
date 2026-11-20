@@ -14,6 +14,16 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 1, the definition in part (a), was the card's only step with no proof body; it now
+    carries one showing that the displayed set is a subspace containing each $v_i$ and that it
+    is contained in every such subspace, which is what makes it the span. No claim of part (b)
+    is changed and steps 2 to 4 stand as they were. Checked: that the zero vector arises with
+    all $a_i=0$, that a sum of two combinations is a combination, that a scalar multiple of one
+    is a combination, and that a subspace containing the $v_i$ contains every combination.
 ---
 
 ::: {.problem}
@@ -32,6 +42,11 @@ $$
 \operatorname{span}(v_1,\dots,v_k)
 =\left\{\sum_{i=1}^k a_i v_i : a_1,\dots,a_k\in\RR\right\}.
 $$
+
+::: pf-proof
+The displayed set contains $0$, taking all $a_i=0$; it is closed under addition, since $\sum a_iv_i+\sum a'_iv_i=\sum(a_i+a'_i)v_i$; and it is closed under scalar multiplication, since $c\sum a_iv_i=\sum(ca_i)v_i$. So it is a subspace of $\RR^n$, and it contains each $v_j$, taking $a_j=1$ and the other coefficients $0$. Conversely, a subspace $W$ containing every $v_i$ contains each $a_iv_i$ and hence their sum, so $W$ contains the displayed set. It is therefore the smallest subspace containing $v_1,\dots,v_k$, which is what the span is.
+:::
+
 :::
 
 ::: {.pf-step #s2}
