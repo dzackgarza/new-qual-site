@@ -48,6 +48,22 @@ audit:
     $D(B)$ must be shown to be open and the family $\mathcal B_{n+1}$ to refine $\mathcal B_n$ and to have
     order at most $m+1$ at points of $X_{n+1}$ while its elements are unchanged off $X_{n-1}$; the card works
     through (a)--(d) in that form. Nothing needed correction.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card stood in queue D: its solution was prose in four headed parts with no `pf` structure. It
+    is now a `pf` with eight steps, each carrying a `pf-proof`, following the four steps the exercise
+    prescribes. Cited by numbered statement only: Munkres, Topology, §50 Exercise 8, §26 Exercise 3 (a
+    finite union of compact subspaces is compact) and the definition of topological dimension in §50.
+    No retained published set answers the exercise, and the card's preamble says so and names the
+    search record. Checked: that the exhaustion can be made increasing with each $X_n$ inside the
+    interior of the next, that $B_x$ misses $X_{r-2}$ and therefore forces $n\ge r-1$ when $B_x$ meets
+    $X_n$, that the property of $\mathcal B_0$ is inherited by every later family through refinement,
+    that $\mathcal C$ covers $X$ by the two kinds of member, that distinct members of
+    $\mathcal B_{n+1}$ at $x\in X_n$ have distinct $\mathcal B_n$-preimages, that no retained member
+    meets $X_{n+1}-X_n$, and that a member of $\mathcal B$ through $x\in X_n$ already occurs in
+    $\mathcal B_{n+1}$.
 ---
 
 ::: {.exercise}
@@ -78,41 +94,87 @@ Given a set $B$, it belongs to $\mathcal{B}$ if there is an $N$ such that $B \in
 :::
 
 ::: {.solution}
-Let $\mathcal A$ be an open cover of $X$.
 
-(a) By $\sigma$-compactness choose compact sets $K_1,K_2,\dots$ whose interiors cover $X$. We construct integers
-$$
-1\le r_1<r_2<\cdots
-$$
-so that
-$$
-X_n=K_1\cup\cdots\cup K_{r_n}
-$$
-satisfies $X_n\subset\operatorname{Int}X_{n+1}$. Once $r_n$ is chosen, the compact set $X_n$ is covered by the family $\{\operatorname{Int}K_j\}$; a finite subfamily suffices, and taking $r_{n+1}$ larger than all its indices gives the desired inclusion. Since $r_n\ge n$, $X_n\supseteq K_n$, so the $X_n$'s cover $X$. Put $X_0=\varnothing$.
+No retained published solution of Munkres, *Topology*, §50 Exercise 8 was located: the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`, and the self-study notes that reach Chapter 7 state the exercise without answering it. The proof is the card's own, checked against the numbered statements it cites, and it follows the four steps the exercise prescribes.
 
-(b) For each $x\in X$, let $r\ge1$ be least such that $x\in\operatorname{Int}X_r$. Choose $A_x\in\mathcal A$ with $x\in A_x$, and choose an open neighborhood
-$$
-x\in B_x\subset A_x\cap\operatorname{Int}X_r
-$$
-that is disjoint from $X_{r-2}$ (with $X_{-1}=X_0=\varnothing$). Let $\mathcal B_0=\{B_x:x\in X\}$. If $B_x\cap X_n\ne\varnothing$, then $n\ge r-1$, hence
-$$
-B_x\subset X_r\subset X_{n+1}.
-$$
-Thus $\mathcal B_0$ has the required property and refines $\mathcal A$.
+::: pf
 
-(c) Assume $\mathcal B_n$ has order at most $m+1$ at points of $X_n$. Since $X_{n+1}$ is compact and has dimension at most $m$, the restriction of $\mathcal B_n$ to $X_{n+1}$ has an open refinement of order at most $m+1$. For each member $V$ of that refinement, choose $B_V\in\mathcal B_n$ with $V\subset B_V\cap X_{n+1}$, and choose an open $O_V\subset X$ with $O_V\cap X_{n+1}=V$. The sets $O_V\cap B_V$, together with all $B\setminus X_{n+1}$ for $B\in\mathcal B_n$, form an open cover $\mathcal C$ of $X$ refining $\mathcal B_n$. The added sets miss $X_{n+1}$, so $\mathcal C$ has order at most $m+1$ there.
+::: {.pf-step #exhaustion}
+(a) There are compact $X_1\subseteq X_2\subseteq\cdots$ with $X_n\subseteq\operatorname{Int}X_{n+1}$ for every $n$ and $\bigcup_nX_n=X$; put $X_0=\varnothing$.
 
-Choose $f:\mathcal C\to\mathcal B_n$ with $C\subset f(C)$, and set
+::: pf-proof
+$\sigma$-compactness gives compact subspaces $K_1,K_2,\dots$ whose interiors cover $X$. Choose integers $1\le r_1<r_2<\cdots$ and put $X_n=K_1\cup\cdots\cup K_{r_n}$, a finite union of compact subspaces and hence compact (Munkres, §26 Exercise 3). Given $r_n$, the compact set $X_n$ is covered by the open family $\{\operatorname{Int}K_j\}_j$, so finitely many members cover it; taking $r_{n+1}$ above all their indices gives $X_n\subseteq\operatorname{Int}X_{n+1}$. Since $r_n\ge n$ one has $X_n\supseteq K_n$, so the $X_n$ cover $X$.
+:::
+
+:::
+
+::: {.pf-step #base-cover}
+(b) There is an open cover $\mathcal B_0$ refining $\mathcal A$ such that $B\cap X_n\ne\varnothing$ implies $B\subseteq X_{n+1}$ for every $B\in\mathcal B_0$ and every $n$, and every member of every later $\mathcal B_k$ inherits that property.
+
+::: pf-proof
+For $x\in X$ let $r\ge1$ be least with $x\in\operatorname{Int}X_r$; choose $A_x\in\mathcal A$ with $x\in A_x$ and an open $B_x$ with $x\in B_x\subseteq A_x\cap\operatorname{Int}X_r$, disjoint from $X_{r-2}$ (here $X_{-1}=X_0=\varnothing$). Put $\mathcal B_0=\{B_x:x\in X\}$; it is an open cover refining $\mathcal A$. If $B_x\cap X_n\ne\varnothing$ then $n\ge r-1$, since $B_x$ misses $X_{r-2}$ and the $X_k$ increase; hence $B_x\subseteq X_r\subseteq X_{n+1}$. Inheritance: a member of $\mathcal B_k$ lies in some member of $\mathcal B_0$ because $\mathcal B_k$ refines $\mathcal B_0$, and if it meets $X_n$ so does that member, which therefore lies in $X_{n+1}$.
+:::
+
+:::
+
+::: {.pf-step #refine-next}
+(c) If $\mathcal B_n$ is an open cover refining $\mathcal B_0$ with order at most $m+1$ at points of $X_n$, there is an open cover $\mathcal C$ of $X$ refining $\mathcal B_n$ with order at most $m+1$ at points of $X_{n+1}$.
+
+::: pf-proof
+$X_{n+1}$ is compact and $\dim X_{n+1}\le m$ by hypothesis, and the traces $\{B\cap X_{n+1}:B\in\mathcal B_n\}$ form an open cover of $X_{n+1}$; by the definition of dimension in Munkres §50 it has an open refinement $\mathcal V$ of order at most $m+1$. For $V\in\mathcal V$ choose $B_V\in\mathcal B_n$ with $V\subseteq B_V\cap X_{n+1}$ and an open $O_V\subseteq X$ with $O_V\cap X_{n+1}=V$. Let $\mathcal C$ consist of the sets $O_V\cap B_V$ for $V\in\mathcal V$ together with the sets $B-X_{n+1}$ for $B\in\mathcal B_n$. Each is open, each is contained in the member of $\mathcal B_n$ named in its definition, and $\mathcal C$ covers $X$: a point of $X_{n+1}$ lies in some $V$, hence in $O_V\cap B_V$, and a point outside $X_{n+1}$ lies in some $B-X_{n+1}$. The sets $B-X_{n+1}$ miss $X_{n+1}$, and the trace of $O_V\cap B_V$ on $X_{n+1}$ is $V$, so the order of $\mathcal C$ at a point of $X_{n+1}$ is that of $\mathcal V$, at most $m+1$.
+:::
+
+:::
+
+::: {.pf-step #next-cover}
+(c) With $f:\mathcal C\to\mathcal B_n$ chosen so that $C\subseteq f(C)$ and $D(B)=\bigcup\{C\in\mathcal C:f(C)=B\}$, the family
 $$
-D(B)=\bigcup\{C\in\mathcal C:f(C)=B\}.
+\mathcal B_{n+1}=\{B\in\mathcal B_n:B\cap X_{n-1}\ne\varnothing\}\cup\{D(B):B\in\mathcal B_n,\ B\cap X_{n-1}=\varnothing\}
 $$
-Each $D(B)$ is open and contained in $B$. Define $\mathcal B_{n+1}$ as in the exercise. It is an open refinement of $\mathcal B_n$. It covers $X$: points lying in a retained $B$ remain covered; otherwise a point lies in some $C\in\mathcal C$, hence in $D(f(C))$.
+is an open cover of $X$ refining $\mathcal B_n$.
 
-For the order bound, let $x\in X_{n+1}$. If $x\in X_n$, every member of $\mathcal B_{n+1}$ containing $x$ is contained in a distinct member of $\mathcal B_n$ containing $x$, so there are at most $m+1$. If $x\in X_{n+1}-X_n$, no retained $B$ can contain $x$: a retained $B$ meets $X_{n-1}$, hence by the property inherited from $\mathcal B_0$ it lies in $X_n$. Thus only sets $D(B)$ occur at $x$. Distinct such sets yield distinct elements $C\in\mathcal C$ through $x$, so their number is at most $m+1$. Hence $\mathcal B_{n+1}$ has order at most $m+1$ on $X_{n+1}$.
+::: pf-proof
+Such an $f$ exists because $\mathcal C$ refines $\mathcal B_n$. Each $D(B)$ is a union of open sets and is contained in $B$, so it is open and lies in $B$; the retained members are themselves members of $\mathcal B_n$. So $\mathcal B_{n+1}$ is an open refinement of $\mathcal B_n$. It covers $X$: a point lying in a retained member is covered, and otherwise it lies in some $C\in\mathcal C$, hence in $D(f(C))$, which is a member of $\mathcal B_{n+1}$ unless $f(C)$ was retained, in which case the point is covered by that retained member.
+:::
 
-(d) Let $\mathcal B$ consist of the sets that eventually remain unchanged in all $\mathcal B_n$. Every such set refines $\mathcal B_0$, hence $\mathcal A$. To see that $\mathcal B$ covers $X$, take $x\in X_n$ and choose $B\in\mathcal B_{n+1}$ containing $x$. At every later stage this $B$ meets the corresponding retention set $X_{k-1}$, so it is retained forever; hence $B\in\mathcal B$.
+:::
 
-Finally fix $x\in X_n$. Any member of $\mathcal B$ containing $x$ must already occur by stage $n+1$: after that stage, a set containing $x$ can never be newly created as a $D(B)$, because its predecessor meets $X_n$ and is therefore retained. Thus the members of $\mathcal B$ through $x$ are among those of $\mathcal B_{n+1}$ through $x$, at most $m+1$ of them. Therefore $\mathcal B$ has order at most $m+1$ everywhere.
+::: {.pf-step #next-order}
+(c) $\mathcal B_{n+1}$ has order at most $m+1$ at every point of $X_{n+1}$.
 
-Hence every open cover of $X$ has an open refinement of order at most $m+1$, so $\dim X\le m$.
+::: pf-proof
+Let $x\in X_{n+1}$ and let $\mathcal M$ be the members of $\mathcal B_{n+1}$ containing $x$. If $x\in X_n$, map each member of $\mathcal M$ to a member of $\mathcal B_n$ containing $x$: a retained member to itself, and $D(B)$ to $B$. Distinct members have distinct images, because $D(B)\subseteq B$ and the retained members are distinct members of $\mathcal B_n$; since $\mathcal B_n$ has order at most $m+1$ at $x\in X_n$, $\abs{\mathcal M}\le m+1$. If $x\in X_{n+1}-X_n$, no retained member contains $x$: a retained member meets $X_{n-1}$ and therefore lies in $X_n$ by the inherited property of step [#base-cover]{.pf-ref}, and $x\notin X_n$. So every member of $\mathcal M$ is some $D(B)$; distinct such sets give distinct $C\in\mathcal C$ containing $x$ (choose $C$ with $f(C)=D(B)$'s indexing member and $x\in C$), and $\mathcal C$ has order at most $m+1$ at $x\in X_{n+1}$ by step [#refine-next]{.pf-ref}. Hence $\abs{\mathcal M}\le m+1$ in either case.
+:::
+
+:::
+
+::: {.pf-step #family-covers}
+(d) The family $\mathcal B$ of sets that belong to $\mathcal B_n$ for all sufficiently large $n$ is an open cover of $X$ refining $\mathcal A$.
+
+::: pf-proof
+Every member of $\mathcal B$ belongs to some $\mathcal B_n$, which refines $\mathcal B_0$, which refines $\mathcal A$; so $\mathcal B$ refines $\mathcal A$. For the cover let $x\in X$ and take $n$ with $x\in X_n$; step [#next-cover]{.pf-ref} gives $B\in\mathcal B_{n+1}$ with $x\in B$. For every $k\ge n+2$ the set $B$ meets $X_{k-1}$, because $x\in B\cap X_n$ and $X_n\subseteq X_{k-1}$, so $B$ is retained at stage $k$ and therefore belongs to $\mathcal B_k$. Hence $B\in\mathcal B_k$ for all $k\ge n+1$ and $B\in\mathcal B$.
+:::
+
+:::
+
+::: {.pf-step #order-everywhere}
+(d) $\mathcal B$ has order at most $m+1$.
+
+::: pf-proof
+Let $x\in X$ and take $n$ with $x\in X_n$. Every member of $\mathcal B$ containing $x$ already belongs to $\mathcal B_{n+1}$: such a set cannot be newly created as a $D(B)$ at any stage $k>n+1$, because its predecessor $B$ contains $x$, hence meets $X_n$, hence lies in $X_{n+1}$ by the inherited property of step [#base-cover]{.pf-ref} and is retained at stage $k=n+2$, and all later stages retain it in turn. So the members of $\mathcal B$ through $x$ are members of $\mathcal B_{n+1}$ through $x$, of which there are at most $m+1$ by step [#next-order]{.pf-ref} since $x\in X_n\subseteq X_{n+1}$.
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+$\dim X\le m$.
+
+::: pf-proof
+Given the arbitrary open cover $\mathcal A$ of $X$, steps [#family-covers]{.pf-ref} and [#order-everywhere]{.pf-ref} produce an open refinement of order at most $m+1$. That is the definition of $\dim X\le m$ in Munkres §50, so the theorem holds.
+:::
+
+:::
+
+:::
+
 :::
