@@ -18,7 +18,7 @@ review: draft
 ::: {.proposition}
 Let $k$ be a field, let $V$ be a nonzero finite-dimensional $k$-vector space, and let $T\colon V \to V$ be a $k$-linear map.
 Make $V$ a $k[x]$-module by $f(x) \cdot v \coloneqq f(T)v$, and let $\min_T(x)$ be the [[D-GK5SF|minimal polynomial]] of $T$.
-The following are equivalent [@Hun74, chapter VII, §4, Theorems 4.2, 4.3 and 4.6, and chapter VII, §5, Theorem 5.2(i); @DF04, §12.1 and §12.2, Proposition 20]:
+The following are equivalent [@Hun74, chapter VII, §4, Theorems 4.2, 4.3 and 4.6, and chapter VII, §5, Theorem 5.2(i); @DF04, §12.1, Theorem 5 and §12.2, Proposition 20]:
 
 - $V \cong k[x]/\generators{\min_T}$ as $k[x]$-modules.
 
