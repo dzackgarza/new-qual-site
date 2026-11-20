@@ -26,8 +26,7 @@ The basic properties of a covering map, the lifting criteria, deck transformatio
 
 [[PR-UBJ6P]]
 
-::: {.remark}
-A Galois cover $\tilde X\to X$ with $\Deck(\tilde X) = G$ is equivalently a principal $G\dash$bundle for a discrete $G$:
+A [[D-MWD2L|Galois cover]] $\tilde X\to X$ with deck group $G=\Deck(\tilde X)$ is a principal $G$-bundle for discrete $G$: the group acts freely on $\tilde X$ with quotient $X$, and the covering trivializes over an evenly covered neighborhood [@Hat02, §1.3].
 
 \begin{tikzcd}
 G 
@@ -39,8 +38,6 @@ G
 & 
 X 
 \end{tikzcd}
-
-:::
 
 [[T-SKJB2]]
 
