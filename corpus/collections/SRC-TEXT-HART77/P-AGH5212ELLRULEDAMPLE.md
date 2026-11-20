@@ -258,6 +258,28 @@ audit:
     Not checked: Fuentes' Theorem 2.1, from which his Theorem 2.7 is proved and
     which the steps do not use; and no solution set other than those the remark
     names.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repairs on the reader's second report of this date, none changing a step's
+    claim. In the remark, Yang Pi-Yeh's exercise 5.2.12 prints two zeros and the
+    earlier text of today corrected only one of them; both are corrected now,
+    for the same reason, that one summand of the count has positive degree on
+    the elliptic curve and carries a section, so neither value can be 0. The
+    remark's sentence that every number Fuentes cites points at one of the
+    Fuentes--Pedreira statements is narrowed to the numbers this card's steps
+    use, and its sentence that every one of those statements is proved in that
+    paper now excepts Theorem 3.2(1), whose proof there is a reference to the
+    book's Theorem V.2.12. In step s7 the sentence claiming the Note's special
+    attention for the one-step gap between base-point freeness and very
+    ampleness is corrected: that gap occurs at m = e+2 for every e >= -1, and
+    what is special at e = -1 is that the surface is indecomposable, by Theorem
+    V.2.12(a), so the splitting that carries Propositions 1.3, 1.4 and 1.5 and
+    Fuentes--Pedreira's Proposition 3.4 and Theorem 3.9(3) is unavailable and
+    Propositions 2.10 and 2.11 must serve. The solution's preamble no longer
+    promises a printed page with each citation, the citations now being by
+    numbered statement.
 ---
 
 ::: {.problem}
@@ -272,7 +294,7 @@ The case $e=-1$ will require special attention.
 :::
 
 ::: {.solution}
-Every step below transcribes a published argument and names the source, numbered statement and printed page it transcribes: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Lemma 1.2 and Propositions 1.3, 1.4, 2.3, 2.10 and 2.11, printed pp. 3--15; and, for the very-ampleness criterion on a decomposable surface, Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.9(3), with Corollary 2.13, and Corollary 2.9, which prove it. Fuentes numbers the second paper [2], and his notation is the book's: $\mfe$ is the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ is the section of minimum self-intersection, and he writes $X_0$ and $\mathfrak b$ for $C_0$ and $\mfb$.
+Every step below transcribes a published argument and names the source and numbered statement it transcribes: Luis Fuentes, *Classification of elliptic line scrolls*, arXiv:math/0009050v1, Lemma 1.2 and Propositions 1.3, 1.4, 2.3, 2.10 and 2.11, printed pp. 3--15; and, for the very-ampleness criterion on a decomposable surface, Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces*, arXiv:math/0006204v3, Theorem 3.9(3), with Corollary 2.13, and Corollary 2.9, which prove it. Fuentes numbers the second paper [2], and his notation is the book's: $\mfe$ is the divisor with $\OO_C(\mfe)\cong\bigwedge^2\mathcal E$ and $\deg\mfe=-e$, $C_0$ is the section of minimum self-intersection, and he writes $X_0$ and $\mathfrak b$ for $C_0$ and $\mfb$.
 
 Put
 $$
@@ -375,7 +397,7 @@ which is part (b); and the case $e=-1$ of the Note is the case $e=-1$ of steps [
 ::: pf-proof
 By step [](#s4){.pf-ref}, $X$ is decomposable or indecomposable with $e\in\{0,-1\}$. Very ampleness for $m\ge e+3$ is step [](#s5){.pf-ref} in the first case and step [](#s6){.pf-ref} in the second, and the converse in each case is the same step, both cited as equivalences.
 
-For $e=-1$ the two bounds read $m\ge1$ for base-point freeness and $m\ge2$ for very ampleness, and at $m=1$ step [](#s6){.pf-ref} and Proposition 2.11 deny very ampleness while step [](#s3){.pf-ref} grants base-point freeness; that is the special attention the exercise's Note asks for.
+For $e=-1$ the two bounds read $m\ge1$ for base-point freeness and $m\ge2$ for very ampleness, and at $m=1$ step [](#s6){.pf-ref} and Proposition 2.11 deny very ampleness while step [](#s3){.pf-ref} grants base-point freeness. That one-step gap is not itself peculiar to $e=-1$: at $m=e+2$ it occurs at every $e\ge-1$. What singles $e=-1$ out is that the surface is then indecomposable, by Theorem V.2.12(a), so that the splitting which carries the arguments of Propositions 1.3, 1.4 and 1.5 and of Fuentes--Pedreira's Proposition 3.4 and Theorem 3.9(3) is unavailable and the indecomposable statements Propositions 2.10 and 2.11 must serve; that is the special attention the exercise's Note asks for.
 :::
 
 :::
@@ -393,7 +415,7 @@ The four statements transcribed above are Fuentes' own classification of base-po
 
 Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1, 6 September 2000), printed pp. 3--15: Lemma 1.2, is the degree criterion on an elliptic curve; Proposition 1.3, is base-point freeness on a decomposable surface, with the exceptions $\mfb\sim0$ at $\mfe\sim0$ and $\mfb\sim-\mfe$ at $e\ge2$; Proposition 1.4, is very ampleness on a decomposable surface; Proposition 2.10, is base-point freeness on an indecomposable one; Proposition 2.11, is very ampleness on an indecomposable one. The exercise's hypotheses $m\ge e+2$ and $m\ge e+3$ fall in the main alternatives of Propositions 1.3 and 2.10, since $e\ge0$ there and $m\ge e+2$ excludes $\mfb\sim0$ at $e=0$ and $\mfb\sim-\mfe$ at $e\ge2$. Theorem 2.7, which reduces the indecomposable case to $e=0$ and $e=-1$, is proved there from Theorem 2.1 with Propositions 2.5 and 2.6, as its page 13 says in introducing it; the book's Theorem V.2.15, proves the same reduction independently. Steps [](#s4){.pf-ref} cites both, and Proposition 1.5 with Propositions 2.2 and 2.3 supply the irreducible member that makes the member of the system a section.
 
-Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is the paper Fuentes cites as [2] throughout, in an earlier numbering: its Theorem 3.9(3), is the very-ampleness criterion $\linearsystem{X_0+\mfb f}$ very ample if and only if $\mfb$ and $\mfb+\mfe$ are, which Fuentes cites as [2, Theorem 2.8]; its Corollary 2.13, is the criterion $h^0(H-(P+Q)f)=h^0(H)-4$, cited as [2, Theorem 1.10]; its Corollary 2.4, is the base-point-free criterion $h^0(H-Pf)=h^0(H)-2$, cited as [2, Corollary 1.4]; its Corollary 2.9, is the base-point-free criterion for a section $\linearsystem{X_0+\mfb f}$, cited as [2, Corollary 1.8]; its Theorem 3.2(1), is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.6, is the irreducible-element criterion, cited as [2, Theorem 2.5]; and its Proposition 3.4, is the base-point criterion on a decomposable surface, cited as [2, Proposition 2.3]. Each number Fuentes cites, including [2, Corollary 1.8] in Propositions 2.2 and 2.10, points at one of these. Every one of those is proved in that paper, and Corollary 2.13's two directions are Theorem 2.11, and the two base-point criteria.
+Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is the paper Fuentes cites as [2] throughout, in an earlier numbering: its Theorem 3.9(3), is the very-ampleness criterion $\linearsystem{X_0+\mfb f}$ very ample if and only if $\mfb$ and $\mfb+\mfe$ are, which Fuentes cites as [2, Theorem 2.8]; its Corollary 2.13, is the criterion $h^0(H-(P+Q)f)=h^0(H)-4$, cited as [2, Theorem 1.10]; its Corollary 2.4, is the base-point-free criterion $h^0(H-Pf)=h^0(H)-2$, cited as [2, Corollary 1.4]; its Corollary 2.9, is the base-point-free criterion for a section $\linearsystem{X_0+\mfb f}$, cited as [2, Corollary 1.8]; its Theorem 3.2(1), is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.6, is the irreducible-element criterion, cited as [2, Theorem 2.5]; and its Proposition 3.4, is the base-point criterion on a decomposable surface, cited as [2, Proposition 2.3]. Each number Fuentes cites that the steps of this card use, including [2, Corollary 1.8] in Propositions 2.2 and 2.10, points at one of these. Every one of those is proved in that paper except Theorem 3.2(1), whose proof there is a reference to the book's Theorem V.2.12 and to another source; and Corollary 2.13's two directions are Theorem 2.11, and the two base-point criteria.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, where he equates the count on the surface with the count $h^0(\OO_C(\mfe+\mfb))=2$ on the curve and drops the other summand; at $\deg\mfb=2$ his $4$ is $5$; and his $0$ for $h^0(\OO_X(C_0+(\mfb-P-Q)f))$ cannot hold for any $P,Q$: one summand of the count, $h^0(\OO_C(\mfb-P-Q+\mfe))$, is a divisor of degree $1$ on the elliptic curve and so has a section, which makes the value at least $1$. The hypotheses of the two cases are otherwise as he states them. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 12 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, where he equates the count on the surface with the count $h^0(\OO_C(\mfe+\mfb))=2$ on the curve and drops the other summand; at $\deg\mfb=2$ his $4$ is $5$; and neither of his two $0$s can hold: for $h^0(\OO_X(C_0+(\mfb-P)f))$ and $h^0(\OO_X(C_0+(\mfb-P-Q)f))$ alike, one summand of the count is a divisor of positive degree on the elliptic curve and so has a section, which makes the value at least $1$. The hypotheses of the two cases are otherwise as he states them. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 12 of §2.
 :::
