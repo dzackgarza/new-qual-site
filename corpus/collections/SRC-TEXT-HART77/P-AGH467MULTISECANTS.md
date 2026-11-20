@@ -473,9 +473,10 @@ audit:
     (2) Page locators. The card's statement, remark and steps carry none: every
     reference is to a numbered statement, and the transcription added under (3) is
     cited as Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry, Exercise
-    IV.6.7, with no page. The reader's line numbers 159, 182--187 and 247--252
-    are not in the card's text: they lie inside the dated events of 2026-11-19,
-    which record what those passes read and where. A dated event is append-only
+    IV.6.7, with no page. The page locators that the reader's report finds are not
+    in the card's text: every one of them lies inside a dated event of 2026-11-19
+    or 2026-11-20, which records what that pass read and where, and this event
+    names none of them by page or by line, since both would rot. A dated event is append-only
     under QUAL-11, and tools/qualc/authoring.py refuses a commit that changes or
     deletes one, so those locators remain as the record of their day; this event
     is the card's statement that no page locator stands in its own text.
@@ -543,10 +544,13 @@ it is needed.
 The exercise is Hartshorne IV.6.7. The published solution transcribed here is
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 Exercise IV.6.7, and this block follows his argument in his order and with his
-claims. Every result he invokes is cited below by the book's numbered statement;
-the paragraph after the proof records what that check found, including the two
-places where his text is terse rather than complete. The second solution on this
-card is the card's own, and it supplies those two places.
+claims, adding the citations by numbered statement and the sentences that check a
+claim against the book. He proves the exercise's second sentence, that every curve
+other than the four listed has multisecants, in the contrapositive form; the first
+sentence is steps s1--s3 of the second solution. The paragraph after the proof
+records what the check found, including the three places where his text is terse
+or wrong. The second solution on this card is the card's own, and it supplies
+them.
 
 ::: pf
 
@@ -554,12 +558,14 @@ card is the card's own, and it supplies those two places.
 A curve with no multisecants that lies in a plane is a line or a conic.
 
 ::: pf-proof
-Egbert's reason is that a plane curve of degree at least $3$ "would have at least
-one inflection and thus a trisecant". An inflection point is not a trisecant, so
-that sentence is not a proof of the step; the conclusion is true, and the book's
-route is the dual curve of Exercise I.7.3, which step s4 of the second solution
-follows. A plane curve of degree $1$ is a line and one of degree $2$ is a conic,
-which is the rest of the claim.
+Egbert writes "any degree term higher than $3$", read here as degree at least
+$3$, since his conclusion is a line or a conic and a plane cubic has trisecants.
+His reason is that such a curve "would have at least one inflection and thus a
+trisecant". An inflection point is not a trisecant, so that sentence is not a
+proof of the step; the conclusion is true, and the book's route is the dual curve
+of Exercise I.7.3, which step s4 of the second solution follows. A plane curve of
+degree $1$ is a line and one of degree $2$ is a conic, which is the rest of the
+claim.
 :::
 
 :::
@@ -630,8 +636,9 @@ sentence of the exercise, and step s3 of the second solution proves it.
 :::
 
 ::: {.pf-step #egbert-rational-quartic}
-A rational quartic in $\PP^3$ has trisecants, so the genus-$0$ case of degree $4$
-is no exception.
+The rational quartic of Example II.7.8.6 lies on a smooth quadric surface as a
+curve of type $(1,3)$, and the lines of one ruling meet it in three points, so the
+genus-$0$ case of degree $4$ is no exception.
 
 ::: pf-proof
 Egbert writes that a rational quartic lies on a smooth quadric surface as a curve
@@ -649,8 +656,8 @@ curve is of type $(1,3)$ in the sense of Remark IV.6.4.1(c).
 :::
 
 ::: pf-qed
-Steps [](#egbert-planar){.pf-ref}--[](#egbert-degree-four){.pf-ref} show that a
-curve with no multisecants is a line, a conic, the twisted cubic or the elliptic
+Steps [](#egbert-planar){.pf-ref}--[](#egbert-rational-quartic){.pf-ref} show that
+a curve with no multisecants is a line, a conic, the twisted cubic or the elliptic
 quartic. Egbert assumes that there are no multisecants where the exercise's second
 sentence needs only finitely many, and takes the point of projection general on
 $X$; with "no" read as "finitely many" and the point taken outside the finitely
@@ -666,12 +673,20 @@ IV.6.4, whose hypotheses are degree $d$ and genus $g$ in $\PP^3$ not contained i
 any plane, and whose conclusion carries $d\ge3$; both branches are the ones Egbert
 writes, and both of his simplifications are correct. The classifications of the
 degree-$3$ and degree-$4$ cases are Exercise IV.3.4(b) and Exercise IV.3.6(a) and
-(b). Two claims his text does not prove are named here rather than supplied: the
-planar case of step [](#egbert-planar){.pf-ref}, where an inflection point is not
-an argument, the book's route being the dual curve of Exercise I.7.3, and the
-isomorphism of step [](#egbert-projection){.pf-ref}, which is the content of steps
-s5--s9 of the second solution under the finiteness hypothesis. Those two are why
-the second solution is kept.
+(b). Three places where his text is terse or wrong are named here rather than
+supplied. The planar case of step [](#egbert-planar){.pf-ref}: his "higher than
+$3$" is read as "at least $3$" and an inflection point is not an argument, the
+book's route being the dual curve of Exercise I.7.3. The isomorphism of step
+[](#egbert-projection){.pf-ref}: it is the content of steps s5--s9 of the second
+solution under the finiteness hypothesis, and the book's numbered results do not
+give it without the characteristic-zero tangent input of step tangent-char-zero. A
+rational quartic's type $(1,3)$: what is checked in step
+[](#egbert-rational-quartic){.pf-ref} is the model the book exhibits in Example
+II.7.8.6, and the general sentence is not among the results the book states at
+this point. Egbert's degree-$4$ sentence "the genus is $0,1$ depending on nodes" is
+wrong of $X$, since his own projection formula gives $g=1$ there; the genus-$0$
+alternative is not a node count but the rational quartic of Exercise IV.3.6(a),
+which the same step treats. Those places are why the second solution is kept.
 :::
 
 ::: {.solution title="The card's own proof"}
