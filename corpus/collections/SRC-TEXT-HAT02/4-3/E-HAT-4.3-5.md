@@ -11,6 +11,13 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page corrected. Example 4.11, "Cellular Approximation for Pairs", is on printed p. 351, not
+    p. 349; the body's two citations now read 351. The event of 2026-11-19 carries the old page
+    and is left as written under QUAL-11. Theorem 4.8, cited with p. 349, is correct there.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -122,7 +129,7 @@ Let $f\colon X\to K(\ZZ,n)$ be any map, with $X$ $n$-dimensional. By cellular ap
 $j_*$ is injective.
 
 ::: pf-proof
-Let $c_0,c_1\colon X\to S^n$ be cellular with $j\,c_0\simeq j\,c_1$, and let $G\colon X\times I\to K(\ZZ,n)$ be a homotopy. On the subcomplex $X\times\partial I$ the map $G$ is $j\,c_0$ and $j\,c_1$, hence cellular. Since $X\times I$ is $(n+1)$-dimensional, cellular approximation for the pair (Example 4.11, printed p.~349) gives a cellular $G'$ homotopic to $G$ relative to $X\times\partial I$, and a cellular map out of an $(n+1)$-dimensional complex lands in $K(\ZZ,n)^{n+1}=S^n$ by step [](#build){.pf-ref}. So $G'$ is a homotopy in $S^n$ from $c_0$ to $c_1$, and the two classes agree.
+Let $c_0,c_1\colon X\to S^n$ be cellular with $j\,c_0\simeq j\,c_1$, and let $G\colon X\times I\to K(\ZZ,n)$ be a homotopy. On the subcomplex $X\times\partial I$ the map $G$ is $j\,c_0$ and $j\,c_1$, hence cellular. Since $X\times I$ is $(n+1)$-dimensional, cellular approximation for the pair (Example 4.11, printed p.~351) gives a cellular $G'$ homotopic to $G$ relative to $X\times\partial I$, and a cellular map out of an $(n+1)$-dimensional complex lands in $K(\ZZ,n)^{n+1}=S^n$ by step [](#build){.pf-ref}. So $G'$ is a homotopy in $S^n$ from $c_0$ to $c_1$, and the two classes agree.
 :::
 
 :::
