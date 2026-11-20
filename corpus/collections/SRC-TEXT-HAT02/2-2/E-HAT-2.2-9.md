@@ -35,6 +35,16 @@ audit:
     glued preserving clockwise orientation; the sum of three signs is odd in any convention, so the
     connecting map is an isomorphism and $H_2=0$, $H_1\cong\ZZ^2$. (d) the attaching word is
     $a^mb^na^{-m}b^{-n}$, so both exponent sums vanish and $d_2=0$.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the page locators in the card's text are removed; Example 0.8, Theorem 2.13,
+    Corollary 2.14, Proposition 2.22, Corollary 2.25 and Theorem 2.35 are cited by number and the
+    unnumbered cellular boundary formula as 'of §2.2', each read in
+    `tmp/sources/hatcher-2002-algebraic-topology.md`. The earlier events keep their text
+    (QUAL-11); these citations supersede their page locators. No computation or step changes.
+
 ---
 
 ::: {.problem}
@@ -72,7 +82,7 @@ $$
 
 ::: pf-proof
 
-Example 0.8 (Hatcher p. 12) shows $S^2/S^0\simeq S^1\vee S^2$, and Corollary 2.25 (p. 126) gives $\widetilde H_n(S^1\vee S^2)\cong\widetilde H_n(S^1)\oplus\widetilde H_n(S^2)$, which is $\ZZ$ for $n=1,2$ and $0$ otherwise by Corollary 2.14 (p. 114). Equivalently $Y$ has a CW structure with one $0$ cell, one $1$ cell and one $2$ cell, the $2$ cell attached by a constant map, so both cellular boundary maps vanish.
+Example 0.8 shows $S^2/S^0\simeq S^1\vee S^2$, and Corollary 2.25 gives $\widetilde H_n(S^1\vee S^2)\cong\widetilde H_n(S^1)\oplus\widetilde H_n(S^2)$, which is $\ZZ$ for $n=1,2$ and $0$ otherwise by Corollary 2.14. Equivalently $Y$ has a CW structure with one $0$ cell, one $1$ cell and one $2$ cell, the $2$ cell attached by a constant map, so both cellular boundary maps vanish.
 
 :::
 
@@ -97,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Take the product CW structure of $S^1$ with one $0$ cell and one $1$ cell and of $S^1\vee S^1$ with one $0$ cell and two $1$ cells. Then $Y$ has one $0$ cell, three $1$ cells and two $2$ cells. The cellular boundary of a product cell is $\partial(a\times b)=\partial a\times b+(-1)^{\dim a}a\times\partial b$ (the cellular boundary formula, Hatcher p. 141), and $\partial$ of the one-cell of $S^1$ and of the two one-cells of $S^1\vee S^1$ is zero; hence all cellular boundary maps vanish and the chain groups themselves are the homology, by Theorem 2.35 (p. 139).
+Take the product CW structure of $S^1$ with one $0$ cell and one $1$ cell and of $S^1\vee S^1$ with one $0$ cell and two $1$ cells. Then $Y$ has one $0$ cell, three $1$ cells and two $2$ cells. The cellular boundary of a product cell is $\partial(a\times b)=\partial a\times b+(-1)^{\dim a}a\times\partial b$ (the cellular boundary formula of §2.2), and $\partial$ of the one-cell of $S^1$ and of the two one-cells of $S^1\vee S^1$ is zero; hence all cellular boundary maps vanish and the chain groups themselves are the homology, by Theorem 2.35.
 
 :::
 
@@ -117,8 +127,8 @@ $$
 
 ::: pf-proof
 
-Let $C\subset Y$ be the common image of the three boundary circles, a circle which is a deformation retract of its image of a closed collar of $\partial P$. Then $Y/C\cong P/\partial P$, so the quotient maps of the good pairs $(Y,C)$ and $(P,\partial P)$ induce isomorphisms $H_*(Y,C)\cong\widetilde H_*(Y/C)\cong\widetilde H_*(P/\partial P)\cong H_*(P,\partial P)$ by Proposition 2.22 (Hatcher p. 124).
-For an oriented pair of pants, the exact sequence of the pair (Theorem 2.13, p. 114),
+Let $C\subset Y$ be the common image of the three boundary circles, a circle which is a deformation retract of its image of a closed collar of $\partial P$. Then $Y/C\cong P/\partial P$, so the quotient maps of the good pairs $(Y,C)$ and $(P,\partial P)$ induce isomorphisms $H_*(Y,C)\cong\widetilde H_*(Y/C)\cong\widetilde H_*(P/\partial P)\cong H_*(P,\partial P)$ by Proposition 2.22.
+For an oriented pair of pants, the exact sequence of the pair (Theorem 2.13),
 $$
 0=H_2(P)\to H_2(P,\partial P)\to H_1(\partial P)\xrightarrow{\alpha}H_1(P)\to H_1(P,\partial P)\to H_0(\partial P)\to H_0(P),
 $$
@@ -159,7 +169,7 @@ The cellular boundary $d_2:C_2\to C_1$ records exponent sums in the two $1$ cell
 $$
 0\longrightarrow\ZZ\xrightarrow{0}\ZZ^2\xrightarrow{0}\ZZ\longrightarrow0,
 $$
-and Theorem 2.35 (Hatcher p. 139) yields the displayed groups.
+and Theorem 2.35 yields the displayed groups.
 
 :::
 
