@@ -39,8 +39,13 @@ For measurable $f_n\geq0$, the inequality $\int\liminf_n f_n\leq\liminf_n\int f_
 
 ## Interchanging limits, sums, and integrals
 
-The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly and the $f_n$ and $f$ are integrable: no finiteness of the measure enters, since a finite sum of integrable functions is integrable, and with $N$ such that $\abs{f_n-f}\leq1$ for $n\geq N$ the integrable $g\coloneqq\sum_{k\leq N}\abs{f_k}+\abs f+1$ dominates every $f_n$, so the [[T-IJQQG|dominated convergence theorem]] applies.
-It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on $\RR$, all in [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
+On a measure space with $\mu(X)<\infty$, uniform convergence of integrable functions carries the integrals with it, by the estimate $\abs{\int f_n-\int f}\leq\mu(X)\sup_x\abs{f_n(x)-f(x)}$ ([[PR-L7LNZ]]).
+
+::: {.example title="Uniform convergence alone does not commute with the integral"}
+On $\RR$ with Lebesgue measure, $f_n\coloneqq\frac1n\chi_{[0,n]}$ converges to $0$ uniformly, since $\sup_x\abs{f_n(x)}=1/n$, every $f_n$ is in [[real-analysis/integration/l1|$L^1$]], and $\int f_n=1$ for every $n$.
+So the hypothesis $\mu(X)<\infty$ in [[PR-L7LNZ]] cannot be dropped.
+The integral $1$ also survives the pointwise, non-uniform sequences $n\chi_{(0,1/n)}$ and $\chi_{[n,n+1]}$ on $\RR$.
+:::
 
 [[T-MN6WQ]]
 
