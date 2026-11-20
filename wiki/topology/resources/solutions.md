@@ -5,7 +5,7 @@ order: 30
 
 # Solution sources
 
-Solution sets for qualifying-exam problems in topology and for the exercises of Munkres, *Topology*, 2nd ed. (2000) and Hatcher, *Algebraic Topology* (2002). Each entry names the work, its author or handle, where it is published, and the sections and exercises it treats. A set's own printed page is cited where it has one; a web page has no printed page, so the date it was read is given instead.
+Solution sets for qualifying-exam problems in topology and for the exercises of Munkres, *Topology*, 2nd ed. (2000) and Hatcher, *Algebraic Topology* (2002). Each entry names the work, its author or handle, where it is published, and the sections and exercises it treats.
 
 ## Qualifying examinations
 
