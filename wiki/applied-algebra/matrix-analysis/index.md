@@ -49,5 +49,4 @@ A matrix norm is submultiplicative when $\norm{AB}\leq\norm A\norm B$ for all $A
 The entrywise maximum norm $\norm A_{\max} = \max_{i,j}\abs{a_{ij}}$ is not submultiplicative: for $A = \matt{1}{1}{1}{1}$, $\norm{A^2}_{\max} = 2 > 1 = \norm A_{\max}^2$.
 :::
 
-For every submultiplicative norm, $\rho(A)\leq\norm A$, and $\rho(A) = \lim_{k\to\infty}\norm{A^k}^{1/k}$.
-The inequality follows from $\rho(A)^k = \rho(A^k)\leq\norm{A^k}$; for the limit, the Jordan form supplies for every $\varepsilon>0$ a norm with $\norm A\leq\rho(A)+\varepsilon$, and equivalence of the norms on a finite-dimensional space gives $\norm{A^k}^{1/k}\leq(\rho(A)+\varepsilon)(1+o(1))$, so the limit is at most $\rho(A)$.
+[[T-GELFND|Gelfand's formula]] gives $\rho(A) = \lim_{k\to\infty}\norm{A^k}^{1/k}$ for every norm on $M_n(\CC)$, and for a submultiplicative norm also $\rho(A)\leq\norm A$ and $\rho(A)=\inf_k\norm{A^k}^{1/k}$: the infimum is the sharper bound, which the limit attains.
