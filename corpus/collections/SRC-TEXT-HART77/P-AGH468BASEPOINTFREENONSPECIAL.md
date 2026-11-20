@@ -66,7 +66,7 @@ audit:
 
     Unchanged and still correct: s1 (the only-if direction), s2, s4, s5, s6 and s7, which were read
     in this pass; Riemann-Roch is Theorem IV.1.3 and Serre duality Theorem III.7.6, cited by their
-    numbers. No page, PDF page or page offset appears on this card.
+    numbers, and every reference the card makes is to a numbered statement.
 - event: source-corrected
   by: claude
   date: 2026-11-20
