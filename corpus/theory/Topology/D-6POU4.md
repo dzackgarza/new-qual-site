@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $M$ be a closed, connected, oriented $2k$-manifold with [[D-TS7TZ|fundamental class]] $[M]\in H_{2k}(M;\ZZ)$.
-The \dfn{intersection form} of $M$ [@Hat02] is the bilinear form
+The \dfn{intersection form} of $M$ [@Hat02, §3.3] is the bilinear form
 $$
 I\colon H^k(M;\ZZ)\cross H^k(M;\ZZ) \to \ZZ, \qquad I(a, b)\coloneqq \inner{a\smile b}{[M]}
 ,$$
