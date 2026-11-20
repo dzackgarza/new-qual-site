@@ -27,4 +27,4 @@ order: 20
 
 - [[SRC-ALGEBRA-TEST-REVIEW-1|Abstract algebra test review: direct products and quotient groups]]
 
-The MIT algebra qual preparation page, with a problem bank organised by subject, is [here](https://www.mit.edu/~fengt/AlgebraPrep.html).
+- [MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html) -- a problem bank organised by subject.
