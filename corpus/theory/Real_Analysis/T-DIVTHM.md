@@ -15,12 +15,12 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $M\subseteq\RR^n$ be a compact $n$-manifold, let $N$ be the unit normal vector field to $\bd M$ that points outwards from $M$, and let $G$ be a vector field defined on an open set of $\RR^n$ containing $M$.
+Let $M\subseteq\RR^n$ be a compact $n$-manifold, let $N$ be the unit normal vector field to $\bd M$ that points outwards from $M$, and let $G$ be a $C^1$ vector field defined on an open set of $\RR^n$ containing $M$.
 Then
 $$
 \int_M (\operatorname{div}G)\,dV = \int_{\bd M}\inner{G}{N}\,dS,
 $$
 the first integral with respect to $n$-volume and the second with respect to $(n-1)$-volume.
 
-This is [@Mun91, Theorem 38.8].
+This is [@Mun91, Theorem 38.8], stated there for a vector field, of class $C^\infty$ by the convention of §30, recalled at the head of his Stokes' theorem chapter; the hypothesis above is the weaker $C^1$. Without differentiability of $G$ the divergence $\operatorname{div}G$ in the integrand is not defined.
 :::
