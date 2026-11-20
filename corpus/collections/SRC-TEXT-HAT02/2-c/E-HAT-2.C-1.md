@@ -259,6 +259,26 @@ audit:
     reads as a total: the minimum of $e(K)+e(L)$ is $3\max\{1,\abs{n}\}+3$, from the same bound.
     Not changed: the statement as printed on p. 184 and the status of the two Math StackExchange
     answers, which are user posts.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the case $n\le0$ and the agreement of the two
+    forms of the count. For $n<0$: the lift satisfies $\bar f(t+1)=\bar f(t)+n$ with $n$ negative, so
+    the interval between $\bar f(w_1)=w'_1$ and $\bar f(w_{k+1})=w'_1+n$ is $[w'_1+n,w'_1]$, which
+    carries exactly $\abs{n}\ell+1$ vertices of $\bar\tau'$, and the same intermediate-value clause
+    as in the positive case puts each of them in the image of one of the $k+1$ source vertices; hence
+    $k\ge\abs{n}\ell$, so $e(K)\ge\abs{n}\,e(L)$ and, since a simplicial structure on $S^1$ has no
+    loop edge and no two edges with the same endpoints, $e(L)\ge3$ and $e(K)\ge3\abs{n}$. Attainment
+    is the $3\abs{n}$-gon over the triangle of step `attain` traversed with the reverse orientation,
+    which has degree $n$ equal to $\abs{n}$ with a minus sign. For $n=0$: a constant map from a
+    triangle to a triangle is simplicial and of degree zero, and $e(K),e(L)\ge3$ is the same floor,
+    so $e(K)=e(L)=3$; the total reading $3\max\{1,\abs{n}\}+3$ then gives $6$ at $n=0$, which the
+    same two triangles attain. Checked that the two routes agree: the vertex count $k\ge n\ell$ of
+    step `cover` and the fundamental-cycle count of step `bound` are the same inequality, since a
+    simplicial structure on $S^1$ has as many edges as vertices and the coefficient of a target edge
+    in $f_*(z_K)$ is the number of domain edges mapping onto it with sign. Not claimed: a published
+    argument for any step; the two answers are user posts and the card marks every step as its own.
 - event: source-checked
   by: claude
   date: 2026-11-19
