@@ -47,6 +47,27 @@ audit:
     p. 239, PDF p. 254, which was read here on that page. Example 4 of §38 is therefore printed p. 239.
     Nothing else changes: the exercise answered is Exercise 1 of §38 (printed p. 241), and the proof's
     own citations -- Examples 1 to 3 of §38, Theorem 29.1, Theorem 21.3, Theorem 23.3 -- are unaffected.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §38 Exercise 1 and the three statements of Example 4 of §38, and found
+    correct. Searched first for a published proof: Poulsen's §38 sheet covers Exercises 38.4 to
+    38.9 and stops there, dbFin's index stops at §67 with a gap before it, and no other retained
+    set reaches §38; so nothing is transcribed and the verification is the card's own. (1) The
+    one-point compactification: the card proves both directions, and the only-if direction turns on
+    the neighbourhoods of the point at infinity, a sequence converging to $0$ in $(0,1)$ leaving
+    every compact subset of $(0,1)$, each of which is closed and bounded in $\RR$ by Theorem 27.3
+    and hence bounded away from $0$. (2) The two-point compactification $[0,1]$: the same argument
+    with the two ends separated, the limits need not agree. (3) The compactification $Y$ of
+    Example 3, the closure of $e(X)$ for $e(x)=(x,\sin(1/x))$: a function whose two limits exist
+    extends by the values $a$ and $b$ prescribed on $\{0\}\times[-1,1]$ and at $(1,\sin 1)$, which
+    is continuous because $f(x)$ tends to those values as $x$ tends to the ends; and
+    $\sin(1/x)=\pi_2\circ e$ extends as the restriction of the second projection, although it has
+    no limit at $0^{+}$. That is Example 4's claim that the class of functions extending grows
+    from (1) to (2) to (3), and the card also records the step from (3) to the construction of
+    Theorem 38.2, where the coordinates of an imbedding are exactly the bounded continuous
+    functions that extend. Not checked: no published solution was located, and none is claimed.
 ---
 
 ::: {.exercise}
