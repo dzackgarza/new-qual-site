@@ -140,8 +140,10 @@ $$
 
 ::: {.pf-step #s1-3}
 
-The Taylor series of $f$ at $0$ is constant.
-
+The Taylor series of $f$ at $0$ is constant, so
+$$
+\boxed{f\text{ is constant}.}
+$$
 
 ::: pf-proof
 
@@ -166,25 +168,9 @@ for every $z$.
 
 :::
 
-::: {.pf-step #s1-4}
-
-Thus
-$$
-\boxed{f\text{ is constant}.}
-$$
-
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1-3){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} proves the claim.
+Step [](#s1-3){.pf-ref} proves the claim.
 
 :::
 
