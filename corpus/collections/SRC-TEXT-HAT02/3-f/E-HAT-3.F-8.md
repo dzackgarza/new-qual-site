@@ -48,7 +48,7 @@ $$0 \to \operatorname{Hom}(G,A) \to \operatorname{Hom}(G,B) \to \operatorname{Ho
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 8, printed p. 320; the argument below is the card's own.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.F Exercise 8; the argument below is the card's own.
 
 ::: pf
 

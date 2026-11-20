@@ -64,7 +64,7 @@ Use the **extension lemma** (Lemma 4.7: for a CW pair $(X,A)$, a map $f\colon A\
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 13, printed p. 359, and the extension lemma it names is Lemma 4.7, printed p. 348: a map $f:A\to Y$ on a CW pair $(X,A)$, with $Y$ path-connected and $\pi_{n-1}(Y)=0$ for every $n$ such that $X-A$ has cells of dimension $n$, extends to $X$.
+The exercise is §4.1 Exercise 13, and the extension lemma it names is Lemma 4.7: a map $f:A\to Y$ on a CW pair $(X,A)$, with $Y$ path-connected and $\pi_{n-1}(Y)=0$ for every $n$ such that $X-A$ has cells of dimension $n$, extends to $X$.
 
 ::: pf
 

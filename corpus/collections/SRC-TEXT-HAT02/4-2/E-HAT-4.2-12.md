@@ -65,7 +65,7 @@ Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence
 
 ::: {.solution}
 
-The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 12, PDF p. 22**. Sam's argument is exactly the three moves needed — the lift to universal covers is a homotopy equivalence by the homology form of Whitehead's theorem (Corollary 4.33, printed p. 368), so $\tilde f_*$ is an isomorphism on every homotopy group, and Proposition 4.1 (printed p. 348) carries that down through the covering maps to $f_*$ for $i>1$. The card's steps are that argument written out.
+The proof below is the published one, transcribed and checked against the book: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 12**. Sam's argument is exactly the three moves needed — the lift to universal covers is a homotopy equivalence by the homology form of Whitehead's theorem (Corollary 4.33), so $\tilde f_*$ is an isomorphism on every homotopy group, and Proposition 4.1 carries that down through the covering maps to $f_*$ for $i>1$. The card's steps are that argument written out.
 
 Let $f:X\to Y$ be a map of connected CW complexes inducing an isomorphism on $\pi_{1}$, and let $\widetilde f:\widetilde X\to\widetilde Y$ be a lift of $f$ to the universal covers (its existence is part of the data).
 

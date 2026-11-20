@@ -62,7 +62,7 @@ If $X$ and $Y$ are simply-connected CW complexes such that $\tilde{H}_i(X)$ and 
 :::
 
 ::: {.solution}
-A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 18, PDF p. 22**, which argues exactly this way — Künneth kills the mixed terms because the orders are relatively prime, the inclusion $X\vee Y\to X\times Y$ is then a homology isomorphism, and $X\wedge Y$ has vanishing reduced homology. The card's steps are that argument written out and checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 18, printed p. 390, with the Künneth formula of §3.B (printed p. 291) and Whitehead's theorem (printed p. 346). (An earlier note on this card said no retained set covers the exercise; that was wrong — Proudfoot's Homework #7 is not the only §4.2 set in the checkout.)
+A published solution covers this exercise: **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.2 Exercise 18**, which argues exactly this way — Künneth kills the mixed terms because the orders are relatively prime, the inclusion $X\vee Y\to X\times Y$ is then a homology isomorphism, and $X\wedge Y$ has vanishing reduced homology. The card's steps are that argument written out and checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 18, with the Künneth formula of §3.B and Whitehead's theorem. (An earlier note on this card said no retained set covers the exercise; that was wrong — Proudfoot's Homework #7 is not the only §4.2 set in the checkout.)
 
 ::: pf
 
@@ -88,7 +88,7 @@ A finite abelian group whose order is $m$ tensored with one whose order is $n$ w
 $X\wedge Y$ is contractible.
 
 ::: pf-proof
-$X\wedge Y$ is a CW complex, being a quotient of the CW pair $(X\times Y,X\vee Y)$ by a subcomplex, and it is simply connected: $X$ and $Y$ are simply connected, so $X\times Y$ is, and a quotient of a simply connected space by a connected subcomplex is simply connected because the quotient map is a homotopy equivalence away from the collapsed part. Its reduced homology vanishes by step [](#vanish){.pf-ref}, so the map $X\wedge Y\to\ast$ is a homology equivalence between simply connected CW complexes, and Corollary 4.33, printed p. 367, makes it a homotopy equivalence.
+$X\wedge Y$ is a CW complex, being a quotient of the CW pair $(X\times Y,X\vee Y)$ by a subcomplex, and it is simply connected: $X$ and $Y$ are simply connected, so $X\times Y$ is, and a quotient of a simply connected space by a connected subcomplex is simply connected because the quotient map is a homotopy equivalence away from the collapsed part. Its reduced homology vanishes by step [](#vanish){.pf-ref}, so the map $X\wedge Y\to\ast$ is a homology equivalence between simply connected CW complexes, and Corollary 4.33, makes it a homotopy equivalence.
 :::
 
 :::
@@ -97,7 +97,7 @@ $X\wedge Y$ is a CW complex, being a quotient of the CW pair $(X\times Y,X\vee Y
 The inclusion $X\vee Y\hookrightarrow X\times Y$ is a homotopy equivalence.
 
 ::: pf-proof
-The inclusion of a subcomplex is a cofibration with quotient $X\wedge Y$, so $H_*(X\times Y,X\vee Y)\cong\widetilde H_*(X\wedge Y)=0$ by step [](#smash-contractible){.pf-ref}: the inclusion induces an isomorphism on homology in every degree. Both spaces are simply connected CW complexes, so Corollary 4.33, printed p. 367, applies and the inclusion is a homotopy equivalence. With the contractibility of $X\wedge Y$ this is the exercise.
+The inclusion of a subcomplex is a cofibration with quotient $X\wedge Y$, so $H_*(X\times Y,X\vee Y)\cong\widetilde H_*(X\wedge Y)=0$ by step [](#smash-contractible){.pf-ref}: the inclusion induces an isomorphism on homology in every degree. Both spaces are simply connected CW complexes, so Corollary 4.33, applies and the inclusion is a homotopy equivalence. With the contractibility of $X\wedge Y$ this is the exercise.
 :::
 
 :::

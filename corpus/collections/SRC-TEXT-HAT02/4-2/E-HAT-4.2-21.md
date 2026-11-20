@@ -49,7 +49,7 @@ Show $\pi_n(X) \approx G_n$ for all $n$.
 :::
 
 ::: {.solution}
-Hatcher, *Algebraic Topology*, §4.2 Exercise 21, printed p. 390. The retained set of Steven V. Sam has an entry for this exercise (PDF p. 23) but not a proof of it: it builds a $K(\pi_{n}(X),n)$ from $X$ by attaching cells and computes $H_{n+1}(X)/h(\pi_{n+1}(X))$, and never identifies $\pi_{n}(X)$ with $G_{n}$, so it is not used below. The argument is the card's own, from the product formula and compactness. Write $X_{N}=\prod_{i=1}^{N}K(G_{i},i)$ and $X=\bigcup_{N}X_{N}$.
+Hatcher, *Algebraic Topology*, §4.2 Exercise 21. The retained set of Steven V. Sam has an entry for this exercise but not a proof of it: it builds a $K(\pi_{n}(X),n)$ from $X$ by attaching cells and computes $H_{n+1}(X)/h(\pi_{n+1}(X))$, and never identifies $\pi_{n}(X)$ with $G_{n}$, so it is not used below. The argument is the card's own, from the product formula and compactness. Write $X_{N}=\prod_{i=1}^{N}K(G_{i},i)$ and $X=\bigcup_{N}X_{N}$.
 
 ::: pf
 

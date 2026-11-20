@@ -54,7 +54,7 @@ Show that the closed surfaces with infinite fundamental group are $K(\pi, 1)$'s 
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 16, printed p. 390.
+The exercise is §4.2 Exercise 16.
 
 Let $M$ be a closed surface with infinite fundamental group, and let
 $$

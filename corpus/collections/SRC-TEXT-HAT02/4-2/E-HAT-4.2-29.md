@@ -72,7 +72,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 29 of Section 4.2 of Hatcher, *Algebraic Topology* (2002), printed p. 391, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 29 of Section 4.2 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Finish the homotopy classification of lens spaces begun in Exercise 2 of §3.E by showing that two lens spaces $L_m(\ell_1, \ldots, \ell_n)$ and $L_m(\ell_1', \ldots, \ell_n')$ are homotopy equivalent if $\ell_1 \cdots \ell_n \equiv \pm k^n \ell_1' \cdots \ell_n' \pmod{m}$ for some integer $k$, via the following steps:
 

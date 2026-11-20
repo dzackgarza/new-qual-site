@@ -47,7 +47,7 @@ Give examples showing that the group $\pi_n(X)$ can be finitely generated or not
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 10, printed p. 389.
+No retained solution set covers this exercise: the Hatcher sets in the checkout reach §4.2 only in Proudfoot's Homework #7, whose coverage line reads "Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 10.
 
 Let $R=\ZZ[t,t^{-1}]$ and $M=\pi_n(X)\cong R/(p(t))$, which is a module over $R$ because $\pi_n(S^1\vee S^n)$ is free on one generator as a $\ZZ[t,t^{-1}]$-module.
 

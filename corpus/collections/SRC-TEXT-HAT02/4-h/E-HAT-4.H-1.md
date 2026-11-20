@@ -55,7 +55,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.H of Hatcher, *Algebraic Topology* (2002), printed p. 466, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.H of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Show that if $A \hookrightarrow X$ is a cofibration of compact Hausdorff spaces, then for any space $Y$, the map $Y^X \to Y^A$ obtained by restriction of functions is a fibration.
 [If $A \hookrightarrow X$ is a cofibration, so is $A \times Y \hookrightarrow X \times Y$ for any space $Y$.]

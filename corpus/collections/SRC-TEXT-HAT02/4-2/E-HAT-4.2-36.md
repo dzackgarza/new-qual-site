@@ -45,7 +45,7 @@ For basepoint-preserving maps $f: S^1 \to X$ and $g: S^n \to X$ with $n > 1$, sh
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 36, printed p. 392.
+The exercise is §4.2 Exercise 36.
 
 Let
 $$

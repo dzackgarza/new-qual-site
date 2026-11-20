@@ -64,7 +64,7 @@ Show that the image of the map $\pi_2(X, x_0) \to \pi_2(X, A, x_0)$ lies in the 
 :::
 
 ::: {.solution}
-The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.27, PDF p. 24**, whose argument this is verbatim in substance: the image is the kernel of $\partial$ by exactness, and Lemma 4.39 gives $xbx^{-1}=e$ for $x$ in that kernel. The card adds only the bookkeeping — that the action of $\partial x=0$ is trivial and that the resulting identity is $x+b=b+x$ in a group not assumed abelian. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 27, printed p. 391, with the parenthetical remark the book prints beside it, and Lemma 4.39 is printed on p. 373.
+The published solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.2.27**, whose argument this is verbatim in substance: the image is the kernel of $\partial$ by exactness, and Lemma 4.39 gives $xbx^{-1}=e$ for $x$ in that kernel. The card adds only the bookkeeping — that the action of $\partial x=0$ is trivial and that the resulting identity is $x+b=b+x$ in a group not assumed abelian. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 27, with the parenthetical remark the book prints beside it, and Lemma 4.39 is printed on p. 373.
 
 Throughout $(X,A,x_0)$ is a pointed pair with $A\subset X$, $j:(X,x_0)\to(X,A)$ the inclusion of pairs, and $\partial:\pi_2(X,A,x_0)\to\pi_1(A,x_0)$ the boundary map of the long exact sequence. The set $\pi_2(X,A,x_0)$ is a group, written additively but not assumed abelian, on which $\pi_1(A,x_0)$ acts, and $\pi_2(X,x_0)$ is abelian.
 
@@ -84,7 +84,7 @@ The long exact sequence of the pair (printed p. 344) is exact at $\pi_2(X,A,x_0)
 For all $a,b\in\pi_2(X,A,x_0)$, the identity $a+b-a=(\partial a)b$ holds, where $(\partial a)b$ is the action of the element $\partial a\in\pi_1(A,x_0)$ on $b$.
 
 ::: pf-proof
-This is Lemma 4.39, printed p. 373, obtained by an explicit homotopy from $a+b-a$ to $(\partial a)b$ carried by the boundary circle of the class $a$.
+This is Lemma 4.39, obtained by an explicit homotopy from $a+b-a$ to $(\partial a)b$ carried by the boundary circle of the class $a$.
 
 :::
 

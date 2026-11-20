@@ -67,7 +67,7 @@ If an $n$-dimensional CW complex $X$ contains a subcomplex $Y$ homotopy equivale
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 14, printed p. 390, and uses the Hurewicz theorem as the printed hint directs.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 14, and uses the Hurewicz theorem as the printed hint directs.
 
 ::: pf
 

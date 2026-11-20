@@ -47,7 +47,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.L of Hatcher, *Algebraic Topology* (2002), printed p. 517, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.L of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Determine all cohomology operations $H^1(X; \ZZ) \to H^n(X; \ZZ)$, $H^2(X; \ZZ) \to H^n(X; \ZZ)$, and $H^1(X; \ZZ_p) \to H^n(X; \ZZ_p)$ for $p$ prime.
 :::

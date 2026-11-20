@@ -72,13 +72,13 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.J of Hatcher, *Algebraic Topology* (2002), printed p. 475, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.J of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Show that $\Omega\Sigma X$ for a nonconnected CW complex $X$ reduces to the connected case by showing that each path-component of $\Omega\Sigma X$ is homotopy equivalent to $\Omega\Sigma(\bigvee_\alpha X_\alpha)$ where the $X_\alpha$'s are the components of $X$.
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.J Exercise 1, printed p. 475. The printed claim needs no qualification, and the argument below proves it as it stands: the suspension of one point is a point — or, in the unreduced convention, an interval, which is contractible — so a component that is a single point contributes nothing to either side.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.J Exercise 1. The printed claim needs no qualification, and the argument below proves it as it stands: the suspension of one point is a point — or, in the unreduced convention, an interval, which is contractible — so a component that is a single point contributes nothing to either side.
 
 ::: pf
 

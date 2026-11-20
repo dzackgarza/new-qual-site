@@ -46,7 +46,7 @@ For $X$ a connected CW complex with $\pi_i(X) = 0$ for $1 < i < n$ for some $n \
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 25, printed p. 391.
+The exercise is §4.2 Exercise 25.
 
 Let $G=\pi_1(X)$. Since
 $$

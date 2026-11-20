@@ -60,7 +60,7 @@ Show that $pq: T^3 \to S^2$ induces the trivial map on $\pi_*$ and $\tilde{H}_*$
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 34. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 34, printed p. 392, and uses the mapping cone and the cofiber sequence of Section 4.2.
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.2 Exercise 34. It is checked against Hatcher, Algebraic Topology, Section 4.2 Exercise 34, and uses the mapping cone and the cofiber sequence of Section 4.2.
 
 ::: pf
 

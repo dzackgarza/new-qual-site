@@ -52,7 +52,7 @@ For fibrations $E_1 \to B$ and $E_2 \to B$, show that a fiber-preserving map $E_
 
 ::: {.solution}
 
-The argument is the card's own, following the printed remark that the statement is Eckmann--Hilton dual to Proposition 0.19 (printed p. 16); no retained solution set in `tmp/sources` covers Section 4.H Exercise 3. A fibration is a map with the homotopy lifting property for all spaces (printed p. 375), and $\simeq_{B}$ denotes a homotopy through fiber-preserving maps.
+The argument is the card's own, following the printed remark that the statement is Eckmann--Hilton dual to Proposition 0.19; no retained solution set in `tmp/sources` covers Section 4.H Exercise 3. A fibration is a map with the homotopy lifting property for all spaces, and $\simeq_{B}$ denotes a homotopy through fiber-preserving maps.
 
 Let $p_{1}\colon E_{1}\to B$ and $p_{2}\colon E_{2}\to B$ be fibrations and let $f\colon E_{1}\to E_{2}$ satisfy $p_{2}f=p_{1}$.
 

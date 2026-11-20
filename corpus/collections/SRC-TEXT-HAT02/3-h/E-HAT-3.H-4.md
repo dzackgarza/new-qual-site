@@ -38,7 +38,7 @@ Show that if finite connected CW complexes $X$ and $Y$ are homotopy equivalent, 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §3.H. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.H Exercise 4, printed p. 336. A map is *proper* when the preimage of every compact set is compact, and a *proper homotopy* is a homotopy that is itself a proper map.
+No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §3.H. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.H Exercise 4. A map is *proper* when the preimage of every compact set is compact, and a *proper homotopy* is a homotopy that is itself a proper map.
 
 Let $f:X\to Y$ and $g:Y\to X$ be homotopy inverses between finite connected CW complexes, and let $\widetilde f:\widetilde X\to\widetilde Y$, $\widetilde g:\widetilde Y\to\widetilde X$ be lifts to universal covers.
 
@@ -48,7 +48,7 @@ Let $f:X\to Y$ and $g:Y\to X$ be homotopy inverses between finite connected CW c
 $\widetilde f(\alpha x)=f_*(\alpha)\widetilde f(x)$ for $\alpha\in\pi_1(X,x_0)$, after identifying $\pi_1$ with the deck groups; likewise for $\widetilde g$.
 
 ::: pf-proof
-Both sides of the displayed identity are maps $\widetilde X\to\widetilde Y$ covering $f\circ p_X=p_Y\circ\widetilde f$: the left side because $\alpha$ is a deck transformation of $\widetilde X$ and $\widetilde f$ is equivariant up to the induced map, the right because $f_*(\alpha)$ is a deck transformation of $\widetilde Y$. They agree at a chosen $\widetilde x_0$, so Proposition 1.34, printed p. 62, gives equality. That a deck transformation is determined by its value at one point is the same proposition.
+Both sides of the displayed identity are maps $\widetilde X\to\widetilde Y$ covering $f\circ p_X=p_Y\circ\widetilde f$: the left side because $\alpha$ is a deck transformation of $\widetilde X$ and $\widetilde f$ is equivariant up to the induced map, the right because $f_*(\alpha)$ is a deck transformation of $\widetilde Y$. They agree at a chosen $\widetilde x_0$, so Proposition 1.34, gives equality. That a deck transformation is determined by its value at one point is the same proposition.
 :::
 
 :::
@@ -62,7 +62,7 @@ If $W,Z$ are finite CW complexes, $h:W\to Z$ is a map, and $h_*:\pi_1(W)\to\pi_1
 Every cell of $\widetilde Z$ is $\beta\tilde e$ for a unique $\beta\in\pi_1(Z)$ and a unique cell $e$ of $Z$, and likewise for $\widetilde W$.
 
 ::: pf-proof
-Give $\widetilde W,\widetilde Z$ the CW structures lifting those of $W,Z$, as in Hatcher's proof of Proposition 3H.5, printed p. 334. Fix one lift $\tilde e$ of each cell $e$. A deck transformation is determined by its value at one point and a nontrivial one fixes no point (Proposition 1.34, printed p. 62), so the translates $\beta\tilde e$ cover all cells and the pair $(\beta,e)$ is unique. Injectivity of $h_*$ is what makes the deck group of $\widetilde W$ sit inside that of $\widetilde Z$ under $h_*$, so the equivariance of step [](#equivariance){.pf-ref} relates the two cell structures.
+Give $\widetilde W,\widetilde Z$ the CW structures lifting those of $W,Z$, as in Hatcher's proof of Proposition 3H.5. Fix one lift $\tilde e$ of each cell $e$. A deck transformation is determined by its value at one point and a nontrivial one fixes no point (Proposition 1.34), so the translates $\beta\tilde e$ cover all cells and the pair $(\beta,e)$ is unique. Injectivity of $h_*$ is what makes the deck group of $\widetilde W$ sit inside that of $\widetilde Z$ under $h_*$, so the equivariance of step [](#equivariance){.pf-ref} relates the two cell structures.
 :::
 
 :::
@@ -103,7 +103,7 @@ A homotopy equivalence induces an isomorphism on $\pi_1$, so $f_*$ is an isomorp
 A homotopy $H:gf\simeq\mathrm{id}_X$ lifts to a proper homotopy $\widetilde H:\widetilde X\times I\to\widetilde X$ from $\widetilde g\widetilde f$ to a deck transformation $\gamma$.
 
 ::: pf-proof
-$X\times I$ is again a finite CW complex by Theorem A.6, printed p. 524; its universal cover is $\widetilde X\times I$ because $I$ is simply connected; and $H_*$ on $\pi_1(X\times I)\cong\pi_1(X)$ is an isomorphism, so the lemma gives that the lift $\widetilde H$ of $H$ is proper. For existence, the homotopy $\widetilde X\times I\to X$, $(x,t)\mapsto H(p(x),t)$, has $t=0$ term $H_0\circ p=gf\circ p$, which is covered by the lift $\widetilde g\widetilde f$, so by the homotopy lifting property (Proposition 1.30, printed p. 60) it lifts with $\widetilde H_0=\widetilde g\widetilde f$. For each $x$ the point $\widetilde H_1(x)$ lies over $p(x)$, so $\widetilde H_1$ is a deck transformation, and it is a single one because a deck transformation is determined by its value at one point.
+$X\times I$ is again a finite CW complex by Theorem A.6, printed p. 524; its universal cover is $\widetilde X\times I$ because $I$ is simply connected; and $H_*$ on $\pi_1(X\times I)\cong\pi_1(X)$ is an isomorphism, so the lemma gives that the lift $\widetilde H$ of $H$ is proper. For existence, the homotopy $\widetilde X\times I\to X$, $(x,t)\mapsto H(p(x),t)$, has $t=0$ term $H_0\circ p=gf\circ p$, which is covered by the lift $\widetilde g\widetilde f$, so by the homotopy lifting property (Proposition 1.30) it lifts with $\widetilde H_0=\widetilde g\widetilde f$. For each $x$ the point $\widetilde H_1(x)$ lies over $p(x)$, so $\widetilde H_1$ is a deck transformation, and it is a single one because a deck transformation is determined by its value at one point.
 :::
 
 :::

@@ -52,7 +52,7 @@ Use Steenrod powers for the prime 3 to show that such a bundle cannot exist. [Th
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.L Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.L Exercise 3, and the tools used are the Gysin sequence (printed p. 438) and the Steenrod power operations at the prime 3 (Theorem 4L.12, printed p. 504).
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.L Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.L Exercise 3, and the tools used are the Gysin sequence and the Steenrod power operations at the prime 3 (Theorem 4L.12).
 
 Throughout cohomology has coefficients $\ZZ_{3}$, and $P^{1}$ is the reduced power operation, which raises degree by $2\cdot1\cdot(3-1)=4$.
 

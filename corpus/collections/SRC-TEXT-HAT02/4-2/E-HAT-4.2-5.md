@@ -66,7 +66,7 @@ In particular, show the action of $\pi_1(A)$ is trivial on $\pi_2(A)$ and $\pi_2
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 5, printed p. 389.
+The exercise is §4.2 Exercise 5.
 
 ::: pf
 

@@ -68,7 +68,7 @@ A retraction satisfies $r\circ i=\operatorname{id}_{\RP^k}$, so functoriality gi
 If $k\ge2$ there is no retraction $\RP^n\to\RP^k$ with $n>k$.
 
 ::: pf-proof
-For $k\ge2$ the universal cover $S^k\to\RP^k$ gives $\pi_k(\RP^k)\cong\pi_k(S^k)=\ZZ$ by Proposition 4.1 (printed p. 348), while for $n>k\ge2$ the covering $S^n\to\RP^n$ gives $\pi_k(\RP^n)\cong\pi_k(S^n)=0$, since $k<n$. So $i_*$ would be a map $\ZZ\to0$, which is not injective, contradicting step [](#retraction-injective){.pf-ref}.
+For $k\ge2$ the universal cover $S^k\to\RP^k$ gives $\pi_k(\RP^k)\cong\pi_k(S^k)=\ZZ$ by Proposition 4.1, while for $n>k\ge2$ the covering $S^n\to\RP^n$ gives $\pi_k(\RP^n)\cong\pi_k(S^n)=0$, since $k<n$. So $i_*$ would be a map $\ZZ\to0$, which is not injective, contradicting step [](#retraction-injective){.pf-ref}.
 :::
 
 :::

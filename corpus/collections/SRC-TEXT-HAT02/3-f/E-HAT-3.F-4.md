@@ -45,7 +45,7 @@ Show that a group is divisible if and only if it is a quotient of a direct sum o
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout stop inside §3.3 (§3.C at the latest) and hold nothing from §3.F. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.F Exercise 4, printed p. 320; the "previous problem" it appeals to is Exercise 3 of that section, printed p. 320, "Show that $\operatorname{Ext}(A,\QQ)=0$ for all $A$".
+No retained solution set covers this exercise: the Hatcher sets in the checkout stop inside §3.3 (§3.C at the latest) and hold nothing from §3.F. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.F Exercise 4; the "previous problem" it appeals to is Exercise 3 of that section, "Show that $\operatorname{Ext}(A,\QQ)=0$ for all $A$".
 
 ::: pf
 

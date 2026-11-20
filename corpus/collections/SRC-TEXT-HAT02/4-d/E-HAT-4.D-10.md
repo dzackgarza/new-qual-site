@@ -39,7 +39,7 @@ But by the preceding problem and Exercise 10(b) in §3.C, this map represents $n
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.D. The argument is the card's own filling-in of the sketch the exercise gives, checked against Hatcher, *Algebraic Topology* (2002), §4.D Exercise 10, printed p. 447.
+No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.D. The argument is the card's own filling-in of the sketch the exercise gives, checked against Hatcher, *Algebraic Topology* (2002), §4.D Exercise 10.
 
 ::: pf
 
@@ -65,7 +65,7 @@ $H$ is continuous and takes values in $GL_n(\HH)$ by step [](#invertible){.pf-re
 $\lambda\mapsto\lambda I$ represents $n$ times a generator of $\pi_3(GL_n(\HH))$.
 
 ::: pf-proof
-$GL_n(\HH)$ deformation retracts onto $Sp(n)$, and the preceding exercise homotopes $\operatorname{diag}(\lambda,\dots,\lambda)$ to $\operatorname{diag}(\lambda^n,1,\dots,1)$ inside $Sp(n)$; so $\lambda\mapsto\lambda I$ is homotopic to the composite of $\lambda\mapsto\lambda^n$ in the first coordinate with the inclusion $Sp(1)\hookrightarrow Sp(n)$. By §3.C Exercise 10(b) the power map $S^3\to S^3$ has degree $n$, and degree is an isomorphism $\pi_3(S^3)\to\ZZ$ by Corollary 4.25, printed p. 361; the inclusion $Sp(1)\hookrightarrow Sp(n)$ induces an isomorphism on $\pi_3$. Hence the class is $n\in\ZZ\cong\pi_3(GL_n(\HH))$.
+$GL_n(\HH)$ deformation retracts onto $Sp(n)$, and the preceding exercise homotopes $\operatorname{diag}(\lambda,\dots,\lambda)$ to $\operatorname{diag}(\lambda^n,1,\dots,1)$ inside $Sp(n)$; so $\lambda\mapsto\lambda I$ is homotopic to the composite of $\lambda\mapsto\lambda^n$ in the first coordinate with the inclusion $Sp(1)\hookrightarrow Sp(n)$. By §3.C Exercise 10(b) the power map $S^3\to S^3$ has degree $n$, and degree is an isomorphism $\pi_3(S^3)\to\ZZ$ by Corollary 4.25; the inclusion $Sp(1)\hookrightarrow Sp(n)$ induces an isomorphism on $\pi_3$. Hence the class is $n\in\ZZ\cong\pi_3(GL_n(\HH))$.
 :::
 
 :::

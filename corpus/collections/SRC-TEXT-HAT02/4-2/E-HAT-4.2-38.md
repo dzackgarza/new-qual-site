@@ -52,7 +52,7 @@ Show $\pi_3(S^1 \vee S^2)$ is not finitely generated as a module over $\ZZ[\pi_1
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: of the two §4.2 sets in the checkout, Sam's reaches exercise 32 and Proudfoot's Homework #7 covers 1, 2, 30, 31, 32 and 39, so neither reaches 38. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, printed p. 392, and it rests on Example 4.52, printed p. 380, which computes $\pi_3$ of a wedge of $2$-spheres.
+No retained solution set covers this exercise: of the two §4.2 sets in the checkout, Sam's reaches exercise 32 and Proudfoot's Homework #7 covers 1, 2, 30, 31, 32 and 39, so neither reaches 38. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 38, and it rests on Example 4.52, which computes $\pi_3$ of a wedge of $2$-spheres.
 
 Let $X=S^1\vee S^2$. Its universal cover $\widetilde X$ is an infinite string of copies $S^2_k$ of $S^2$, one attached at each integer $k\in\ZZ$; write $\iota_k\in\pi_2(\widetilde X)$ for the class of the inclusion of the $k$-th sphere, and $t$ for the deck transformation generating the deck group.
 
@@ -62,7 +62,7 @@ Let $X=S^1\vee S^2$. Its universal cover $\widetilde X$ is an infinite string of
 $\pi_3(\widetilde X)$ is free abelian on the classes $\eta_k$ ($k\in\ZZ$), the Hopf maps on the summands, together with the Whitehead products $[\iota_a,\iota_b]$ for $a<b$.
 
 ::: pf-proof
-$\widetilde X$ is the wedge of the countably many $2$-spheres $S^2_k$ at their common basepoints, so it is $\bigvee_{\alpha}S^2_\alpha$ for a countable index set. Example 4.52, printed p. 380, computes $\pi_3$ of a wedge of $2$-spheres: it is free abelian with basis the Hopf maps $S^3\to S^2_\alpha$ together with the Whitehead products $[\iota_\alpha,\iota_\beta]$ for distinct summands, the products of the form $[\iota_\alpha,\iota_\beta]$ and $[\iota_\beta,\iota_\alpha]$ being negatives of each other so that one sign for each unordered pair suffices.
+$\widetilde X$ is the wedge of the countably many $2$-spheres $S^2_k$ at their common basepoints, so it is $\bigvee_{\alpha}S^2_\alpha$ for a countable index set. Example 4.52, computes $\pi_3$ of a wedge of $2$-spheres: it is free abelian with basis the Hopf maps $S^3\to S^2_\alpha$ together with the Whitehead products $[\iota_\alpha,\iota_\beta]$ for distinct summands, the products of the form $[\iota_\alpha,\iota_\beta]$ and $[\iota_\beta,\iota_\alpha]$ being negatives of each other so that one sign for each unordered pair suffices.
 :::
 
 :::

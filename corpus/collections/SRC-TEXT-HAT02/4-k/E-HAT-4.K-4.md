@@ -35,7 +35,7 @@ Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the de
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.K. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.K Exercise 4, printed p. 486, and it refers to Example 4K.5 on printed p. 482.
+No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.K. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.K Exercise 4, and it refers to Example 4K.5 on printed p. 482.
 
 ::: pf
 
@@ -70,7 +70,7 @@ The parametrization of step [](#coordinates){.pf-ref} is continuous in both dire
 This agrees with the mapping-cone description of $SP_2(S^n)$ in Example 4K.5.
 
 ::: pf-proof
-In Example 4K.5, printed p. 482, $SP_2(S^n)$ is the mapping cone of the map $S^n\to S^n/\RP^{n-1}$ written there as attaching the cone on $S^n\RP^{n-1}$ — the $n$-fold unreduced suspension of $\RP^{n-1}$ — to the diagonal $S^n$ along the identification induced by interchanging the two points. For $n=1$ the space $\RP^{0}$ is a point, so its unreduced suspension is an interval, and the map identifies the two endpoints, giving the interval bundle over $S^1$ with monodromy $-1$; the mapping cone of a map from the two endpoints of an interval onto $S^1$ is obtained by gluing a strip to the circle with a half-twist, which is exactly the Möbius band of step [](#mobius){.pf-ref}. So the two descriptions coincide, which is the consistency the exercise asks for.
+In Example 4K.5, $SP_2(S^n)$ is the mapping cone of the map $S^n\to S^n/\RP^{n-1}$ written there as attaching the cone on $S^n\RP^{n-1}$ — the $n$-fold unreduced suspension of $\RP^{n-1}$ — to the diagonal $S^n$ along the identification induced by interchanging the two points. For $n=1$ the space $\RP^{0}$ is a point, so its unreduced suspension is an interval, and the map identifies the two endpoints, giving the interval bundle over $S^1$ with monodromy $-1$; the mapping cone of a map from the two endpoints of an interval onto $S^1$ is obtained by gluing a strip to the circle with a half-twist, which is exactly the Möbius band of step [](#mobius){.pf-ref}. So the two descriptions coincide, which is the consistency the exercise asks for.
 :::
 
 :::

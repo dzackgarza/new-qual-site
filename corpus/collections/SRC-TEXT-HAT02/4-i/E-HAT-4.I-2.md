@@ -49,7 +49,7 @@ Thus to determine stable splittings of $K(\ZZ_n, 1)$ it suffices to do the case 
 :::
 
 ::: {.solution}
-Write $X=K(\ZZ_m,1)$ and $Y=K(\ZZ_n,1)$. The exercise is Exercise 2 of §4.I, printed p. 470, and the proof uses the Künneth formula as its hint directs.
+Write $X=K(\ZZ_m,1)$ and $Y=K(\ZZ_n,1)$. The exercise is Exercise 2 of §4.I, and the proof uses the Künneth formula as its hint directs.
 
 ::: pf
 
@@ -83,7 +83,7 @@ $\widetilde H_i(X)$ is annihilated by $m$ and $\widetilde H_j(Y)$ by $n$, so for
 
 ::: pf-proof
 
-$K(\ZZ_m,1)$ is the infinite lens space, whose integral homology is $\ZZ_m$ in odd positive degrees and $0$ in even positive degrees by the computation for lens spaces in Example 2.43 (printed pp. 144--145), so $m\cdot\widetilde H_i(X)=0$ for every $i$; symmetrically $n\cdot\widetilde H_j(Y)=0$. Choose $u,v$ with $um+vn=1$. Then $a\otimes b=u(ma\otimes b)+v(a\otimes nb)=0$ for $a\in A$, $b\in B$. And $\operatorname{Tor}_1^\ZZ(A,B)$ is annihilated by $m$, because multiplication by $m$ is zero on $A$ and Tor is a functor in each variable, and annihilated by $n$ for the same reason on $B$; hence it is annihilated by $um+vn=1$, so it is zero.
+$K(\ZZ_m,1)$ is the infinite lens space, whose integral homology is $\ZZ_m$ in odd positive degrees and $0$ in even positive degrees by the computation for lens spaces in Example 2.43, so $m\cdot\widetilde H_i(X)=0$ for every $i$; symmetrically $n\cdot\widetilde H_j(Y)=0$. Choose $u,v$ with $um+vn=1$. Then $a\otimes b=u(ma\otimes b)+v(a\otimes nb)=0$ for $a\in A$, $b\in B$. And $\operatorname{Tor}_1^\ZZ(A,B)$ is annihilated by $m$, because multiplication by $m$ is zero on $A$ and Tor is a functor in each variable, and annihilated by $n$ for the same reason on $B$; hence it is annihilated by $um+vn=1$, so it is zero.
 
 :::
 
@@ -95,7 +95,7 @@ $\widetilde H_k(X\wedge Y)=0$ for all $k$.
 
 ::: pf-proof
 
-By the Künneth formula of Theorem 3B.6 (printed p. 275) applied to $X\times Y$, and the identification of $\widetilde H_*(X\wedge Y)$ with the quotient of $\widetilde H_*(X\times Y)$ by $\widetilde H_*(X\vee Y)=\widetilde H_*(X)\oplus\widetilde H_*(Y)$, which removes exactly the terms with $i=0$ or $j=0$ because reduced homology vanishes in degree $0$,
+By the Künneth formula of Theorem 3B.6 applied to $X\times Y$, and the identification of $\widetilde H_*(X\wedge Y)$ with the quotient of $\widetilde H_*(X\times Y)$ by $\widetilde H_*(X\vee Y)=\widetilde H_*(X)\oplus\widetilde H_*(Y)$, which removes exactly the terms with $i=0$ or $j=0$ because reduced homology vanishes in degree $0$,
 $$
 \widetilde H_k(X\wedge Y)\cong\bigoplus_{i+j=k}\widetilde H_i(X)\otimes\widetilde H_j(Y)\ \oplus\bigoplus_{i+j=k-1}\operatorname{Tor}_1^\ZZ\bigl(\widetilde H_i(X),\widetilde H_j(Y)\bigr),
 $$

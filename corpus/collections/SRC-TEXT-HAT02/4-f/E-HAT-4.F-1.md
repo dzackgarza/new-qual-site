@@ -38,14 +38,14 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.F of Hatcher, *Algebraic Topology* (2002), printed p. 455, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 4.F of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom.
 Show that the converse also holds for countable CW complexes.
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, using only the first two axioms and the two facts Hatcher records on pp. 160 and 455. The statement is Hatcher, *Algebraic Topology* (2002), §4.F Exercise 1, printed p. 455.
+No retained solution set covers this exercise; the argument is the card's own, using only the first two axioms and the two facts Hatcher records on pp. 160 and 455. The statement is Hatcher, *Algebraic Topology* (2002), §4.F Exercise 1.
 
 ::: pf
 
