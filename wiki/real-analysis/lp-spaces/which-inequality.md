@@ -53,6 +53,6 @@ With the Borel--Cantelli lemma ([[T-OTR5M]]): if $\sum_n\norm{f_n}_p^p<\infty$, 
 - $p=\infty$: $\norm f_\infty$ is the [[D-YWRVG|essential supremum]], the least $M$ with $\abs f\leq M$ almost everywhere.
 
 ::: {.example title="The triangle inequality fails for $0<p<1$"}
-On $[0,2]$, $\norm{\chi_{[0,1]}+\chi_{[1,2]}}_p = 2^{1/p}>2 = \norm{\chi_{[0,1]}}_p+\norm{\chi_{[1,2]}}_p$, so $\norm{\wait}_p$ is not a norm.
+On $[0,2]$, $\norm{\chi_{[0,1]}+\chi_{[1,2]}}_p = 2^{1/p}>2 = \norm{\chi_{[0,1]}}_p+\norm{\chi_{[1,2]}}_p$, so $\norm{\cdot}_p$ is not a norm.
 
 :::
