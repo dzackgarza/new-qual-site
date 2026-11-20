@@ -12,8 +12,8 @@ The first takes up the undergraduate prerequisites; the second develops Lebesgue
 
 The first week is organized around the implications that a qualifying problem usually asks for.
 A continuous function on a compact metric space is uniformly continuous ([[T-O4UD3]]), and a uniformly Cauchy sequence in $C([0,1])$ has a continuous limit ([[PR-RWROV]]); these two facts turn compactness and completeness into statements about uniform convergence.
-The Weierstrass $M$-test converts a summable numerical bound into uniform convergence of a series of functions, and the same estimates give the continuity of the sum.
-The Baire category theorem supplies the existence statements in the functional-analysis part of the review.
+The Weierstrass $M$-test ([[FF-IAUQG]]) converts a summable numerical bound into uniform convergence of a series of functions, and the same estimates give the continuity of the sum ([[T-ERNLN]]).
+The [[FT-6WPJI|Baire category theorem]] supplies the existence statements in the functional-analysis part of the review.
 The week's topics and review problems are on [[real-analysis/workshops/real-week-1-preliminaries|Week 1: preliminaries]].
 
 ## Week 2: measure theory and Fubini--Tonelli
