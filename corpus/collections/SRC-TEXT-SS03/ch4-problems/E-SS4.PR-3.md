@@ -29,6 +29,21 @@ audit:
     gives $|F(x+iy)|\le M_0^{1-y}M_1^y$; (c) is (b) applied to $w\mapsto F(w+iy_1)$ on a strip of
     height $y_2-y_1$. The degenerate cases $M_j=0$ and $M_j=\infty$ are treated by a limiting
     argument and the triviality of the right-hand side; no other case is left open.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    One correction to the first event above: this item is Chapter 4, Problem 3, on printed p. 133
+    (PDF p. 152), not an "exercise" of "§5.5" -- Chapter 4's §5 is "Further applications" of the
+    text and the Problems are a separate section after it. Re-read there today: the statement is
+    the print's, (a)--(c) with the single bracketed hint that the card carries as its hint block,
+    and the asterisk the print sets before "3." is recorded in the remark. The argument was read and
+    holds: the $\epsilon$-truncation $F e^{-\epsilon z^2}$ on the rectangle $\abs{\operatorname{Re}z}\le T$
+    with the vertical side bounded by $Me^{\epsilon}e^{-\epsilon T^2}$, the rotation $\zeta=-iz$
+    carrying $0<\operatorname{Im}z<1$ to $0<\operatorname{Re}\zeta<1$, the normalisation
+    $M_0^{\zeta-1}M_1^{-\zeta}$ giving $\abs{G}\le1$ on both boundary lines, and (c) from (b) at
+    height $h=y_2-y_1$ with $M_0^{\zeta/h-1}M_1^{-\zeta/h}$. Not checked: the degenerate cases
+    $M_j=0$ and $M_j=\infty$, which were read as the limiting argument they claim to be.
 ---
 
 ::: {.exercise}
@@ -136,5 +151,5 @@ If $m(y_1)$ or $m(y_2)$ vanishes the same limiting argument as in part [](#s2){.
 :::
 
 ::: {.remark}
-The hint for part (b) names the factor $M_0^{z-1}M_1^{-z}$. That is the normalization for a strip in the $\operatorname{Re}z$ variable; for the strip $0<\operatorname{Im}z<1$ used here it becomes $M_0^{\zeta-1}M_1^{-\zeta}$ after the rotation $\zeta=-iz$, which is how step [](#s2){.pf-ref} uses it.
+The book marks this problem with an asterisk (Chapter 4, Problem 3, printed p. 133). The hint for part (b) names the factor $M_0^{z-1}M_1^{-z}$. That is the normalization for a strip in the $\operatorname{Re}z$ variable; for the strip $0<\operatorname{Im}z<1$ used here it becomes $M_0^{\zeta-1}M_1^{-\zeta}$ after the rotation $\zeta=-iz$, which is how step [](#s2){.pf-ref} uses it.
 :::
