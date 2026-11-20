@@ -535,6 +535,26 @@ audit:
     edited there. Not checked: the printed book, only the retained text layer;
     and no example was computed. This correction came from a check of the
     card's own step s6 against step s7.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement of part (c) is the repaired one again, which the event of
+    2026-11-16 made and the event of 2026-11-19 reverted. The book's printed
+    sentence is "X contains a nonsingular curve Y = 3C_0-3f, such that
+    pi: Y -> C is purely inseparable", and the word that fails is
+    "nonsingular": by steps s7 to s9 the class has one effective member, it is
+    integral, its normalization is C, and its arithmetic genus is 4, so no
+    nonsingular curve lies in the class at all. The reason the 2026-11-19 event
+    gave for reverting, that "integral" is not what the construction gives
+    because the member is three times a section, is withdrawn: the member is
+    not three times a section, since a section of class C_0-f would give a
+    nonzero section of E tensor O_C(-P), which step s6 shows does not exist.
+    The statement now reads "an integral curve Y = 3C_0-3f such that
+    pi: Y -> C is purely inseparable", which steps s7, s8 and s9 prove, and
+    the printed sentence is recorded here as the source's text so that the
+    change can be checked against the book. QUAL-01 asked for this repair and
+    for this record; nothing else on the card changed in this commit.
 
 ---
 
@@ -549,7 +569,7 @@ Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteris
 $$
 0 \rightarrow \OO_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(P) \rightarrow 0,
 $$
-and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains a nonsingular curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
+and let $X$ be the corresponding ruled surface over $C$. Show that $X$ contains an integral curve $Y \equiv 3 C_0-3 f$, such that $\pi: Y \rightarrow C$ is purely inseparable.
 
     Show that the divisor $D=2 C_0$ satisfies the hypotheses of (2.21.b), but is not ample.
 :::
