@@ -102,6 +102,23 @@ audit:
     automated request with a human check. The sentence now says that, so a reader of the solution
     alone learns which retained document covers the exercise and why the card keeps its own proof.
     No step of the proof changed, and no claim about the post beyond the recorded one is added.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with one duplicated sentence removed and the #184 repair. (a): $I$ compact and
+    connected give the same for $X$; a closed subset of $I$ is compact, its image is compact hence
+    closed in the Hausdorff $X$, and a fibre is closed, so $f$ is perfect; weak local connectedness
+    is witnessed by $C=\bigcup_if(V_i)$, connected through the common point $x$ and containing the
+    open neighbourhood $X-f(I-W)$ of $x$; and $X$ is second countable as the image of a perfect map,
+    E-Y4MFU (d), with Theorem 34.1 metrizing it. (b): the Hilbert cube is compact (Theorem 37.3),
+    metrizable (Theorem 20.5) and connected, the union of the connected sets $X_F$ being connected
+    and dense; each basic neighbourhood is connected by the same argument, so the cube is weakly
+    locally connected and hence locally connected by §25 Exercise 6, whose statement is as quoted;
+    Hahn--Mazurkiewicz then applies. The solution's own citation of [H-Y] by page is replaced by
+    the exercise's reference to it. Citation by number: §44 Exercise 4, Theorems 20.5, 23.3, 23.5,
+    23.6, 24.1, 26.2, 26.3, 26.5, 27.1, 34.1 and 37.3, and §25 Exercise 6.
+
 ---
 
 ::: {.exercise}
@@ -116,7 +133,7 @@ A Hausdorff space that is the continuous image of the closed unit interval is of
 :::
 
 ::: {.solution}
-The retained solution that answers this exercise is the AoPS blog post by cinnamon_e, *Topology by Munkres Chapter 7 | Day 16* (2025-09-09), at its item 4 of §44, held as `tmp/sources/aops-shooting-star-munkres-ch7-day16.md`; the extraction drops every inline formula, so its answer reads as the words between blanks and cannot be transcribed, and the blog's site answers an automated request with a human check that is not worked around. The argument below is therefore the card's own, and the audit events record the search that located that post. The argument is therefore the card's own, checked against the book's numbered theorems.
+The retained solution that answers this exercise is the AoPS blog post by cinnamon_e, *Topology by Munkres Chapter 7 | Day 16* (2025-09-09), at its item 4 of §44, held as `tmp/sources/aops-shooting-star-munkres-ch7-day16.md`; the extraction drops every inline formula, so its answer reads as the words between blanks and cannot be transcribed, and the blog's site answers an automated request with a human check that is not worked around. The argument below is therefore the card's own, checked against the book's numbered theorems; the audit events record the search that located that post.
 
 ::: pf
 
@@ -192,7 +209,7 @@ Compactness is Tychonoff's theorem (Theorem 37.3). Metrizability is Theorem 20.5
 (b) The Hahn--Mazurkiewicz theorem, assumed as the exercise directs, applies.
 
 ::: pf-proof
-That theorem states that a Hausdorff space which is compact, connected, locally connected and metrizable is a continuous image of $I$ (see [H-Y], p. 129, as the exercise cites it). Step [](#cube-facts){.pf-ref} supplies compactness, connectedness and metrizability, and supplies weak local connectedness at each point, which by §25 Exercise 6 implies local connectedness; so the hypotheses hold and there is a continuous surjection $I\to I^\omega$.
+That theorem states that a Hausdorff space which is compact, connected, locally connected and metrizable is a continuous image of $I$ (the exercise cites [H-Y] for it). Step [](#cube-facts){.pf-ref} supplies compactness, connectedness and metrizability, and supplies weak local connectedness at each point, which by §25 Exercise 6 implies local connectedness; so the hypotheses hold and there is a continuous surjection $I\to I^\omega$.
 :::
 
 :::
