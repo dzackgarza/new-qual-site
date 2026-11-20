@@ -14,8 +14,6 @@ The classes of commutative rings are totally ordered by inclusion, and the examp
 
 [[PR-LLBRB]]
 
-The three classes the chain orders are defined on their own cards.
-
 [[D-NKRGN]]
 
 [[D-HTIL5]]
@@ -37,5 +35,5 @@ For a field $k$ and a nonconstant $f\in k[x]$, the ideal $\generators f$ is maxi
 A property of $R$ that is defined by its ideals passes to quotients and to localizations; the two implications used most often are that a quotient by a maximal ideal is a field and that a finite integral domain is a field.
 
 ::: {.fact}
-If $\mfm\subseteq R$ is a maximal ideal and $x\in R\sm\mfm$, then $\mfm + Rx = R$, because the class of $x$ in the field $R/\mfm$ is a unit; so $1 = m + rx$ for some $m\in\mfm$ and $r\in R$.
+If $\mfm\subseteq R$ is a maximal ideal and $x\in R\sm\mfm$, then $\mfm + Rx = R$.
 :::
