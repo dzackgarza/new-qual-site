@@ -21,10 +21,10 @@ review: draft
 $$
 \sum_{k=1}^\infty \mu(E_k) < \infty .
 $$
-Then the [[D-PAEDW|limit superior]] $\limsup_k E_k$ lies in $\mcm$ and $\mu\qty{\limsup_{k\to\infty} E_k} = 0$; equivalently, almost every $x\in X$ lies in only finitely many of the sets $E_k$ [@Fol99, Theorem 10.10(a)].
+Then the [[D-PAEDW|limit superior]] $\limsup_k E_k$ lies in $\mcm$ and $\mu\qty{\limsup_{k\to\infty} E_k} = 0$; equivalently, almost every $x\in X$ lies in only finitely many of the sets $E_k$ [@Fol99, Lemma 10.10(a)].
 
 (b) Let $(\Omega,\mcf,P)$ be a probability space and let $(E_n)_{n\geq1}$ be independent events with $\sum_{n\geq1} P(E_n) = \infty$.
-Then $P\qty{\limsup_n E_n} = 1$ [@Fol99, Theorem 10.10(b)].
+Then $P\qty{\limsup_n E_n} = 1$ [@Fol99, Lemma 10.10(b)].
 :::
 
 ::: {.proof}
