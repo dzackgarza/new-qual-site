@@ -1066,6 +1066,41 @@ audit:
     $H^q(X,\Omega^p)\cong H^{n-q}(X,\Omega^{n-p})^{\prime}$ for a nonsingular
     projective $X$ of dimension $n$. Not checked: nothing else, and no other
     sentence of the card changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step s4 no longer infers that alpha_0 is nonzero from deg Y = d being
+    nonzero in k. The reader's report on #156 is right that the inference fails
+    when char k divides d: for a conic Y in P^2 over a field of characteristic 2
+    one has d = 2 = 0 in k, so the functional u |-> <u, alpha_0> is zero on the
+    one-dimensional H^p, nothing pins eta(Y), and the class 1_{P^n} is not even
+    defined by the characterization the exercise gives it. The step now proves
+    alpha_0 != 0 directly: it pairs alpha_0 with the class eta_{P^n}(L') of a
+    linear subspace L' of dimension n-p chosen so that each intersection
+    L' cap H_1 cap ... cap H_k has dimension m-k, reads the pairing as
+    t_{L'}(alpha_0 restricted to L') by the definition of eta(L'), computes the
+    restriction as c(O_{L'}(1))^m, and
+    evaluates t_{L'}(c(O_{L'}(1))^m) by iterating the divisor formula s2 along
+    L' = L'_0 sup ... sup L'_m = one point, which is t_P(1) = 1 by (N) in every
+    characteristic; the case m = 0 is recorded as the same display with no
+    iteration. The count on Y now ends at <eta(Y), alpha_0> = d, and the scalar
+    paragraph reads eta(Y) = d . 1_{P^n} off the perfect pairing by comparing
+    the two pairings with alpha_0, so no step inverts d and the identity stands
+    as printed when d = 0 in k. A new remark works the conic in characteristic 2
+    out: C: xy + xz + z^2 = 0 with k of characteristic 2, the line L = {z = 0},
+    C cap L = {[1:0:0], [0:1:0]} two points met transversely, the count giving
+    <eta(C), alpha_0> = 2 = 0, hence eta(C) = 0 = deg C . 1. Checked in this
+    pass: the printed exercise's part (b) and its hint; Bertini II.8.18 and
+    Bezout I.7.7 as used at the head of s4; Lipman (0.6)(d) and (0.4) as s2
+    cites them; Corollary III.7.13 and Exercise III.7.3 in the text version of
+    the book; and the conic's smoothness, its partial derivatives and its
+    intersection with the line, computed by hand in characteristic 2. Not
+    checked: no statement of the exercise changed, no other step or citation
+    changed, and the proofs of Lipman (0.6) and of II.8.18 were not re-derived
+    here, only their statements and hypotheses. Still not established, and not
+    claimed on the card: that Yang's Solution 3.7.4(b) closes the transfer he
+    asserts through his citation of 3.7.3.
 ---
 
 ::: {.problem}
@@ -1304,6 +1339,28 @@ $$
 $$
 the empty product for $m=0$ being $1$.
 
+**The nonvanishing of $\alpha_0$.** The identity $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d$ of the count below does not itself show that $\alpha_0$ is nonzero, because $d$ may be $0$ in $k$. The class is proved nonzero by pairing it with the class of a linear subspace of the complementary dimension. Let $L'\subseteq\PP^n$ be a linear subspace of dimension $m=n-p$, so that $\dim L+\dim L'=n$, chosen general enough that
+$$\dim\bigl(L'\cap H_1\cap\cdots\cap H_k\bigr)=m-k
+\qquad\text{for } 0\le k\le m ;$$
+each of these finitely many conditions is open and nonempty in the Grassmannian of $m$-planes, because $H_1\cap\cdots\cap H_k$ has dimension $n-k$ and $m\ge k$, so such $L'$ exist. Then $L\cap L'$ is the case $k=m$, a single reduced point $P$, and
+$$
+L'=L'_0\supseteq L'_1\supseteq\cdots\supseteq L'_m=\{P\},
+\qquad L'_k=L'\cap H_1\cap\cdots\cap H_k ,
+$$
+is a chain of nonsingular linear subspaces of dimensions $m,m-1,\ldots,0$, each $L'_k$ being a nonsingular divisor of $L'_{k-1}$ cut out by $H_k$. By the definition of $\eta(L')$ in the exercise,
+$$
+\langle\eta(L'),\alpha_0\rangle_{\PP^n}
+=t_{\PP^n}\bigl(\eta(L')\smile\alpha_0\bigr)
+=t_{L'}\bigl(\restrictionof{\alpha_0}{L'}\bigr) ,
+$$
+and $\restrictionof{c(\mcl(H_k))}{L'}=c(\OO_{L'}(1))$ for every $k$, restriction being a ring homomorphism and $\restrictionof{\mcl(H_k)}{L'}=\OO_{L'}(H_k\cap L')=\OO_{L'}(1)$, so $\restrictionof{\alpha_0}{L'}=c(\OO_{L'}(1))^{\,m}$ by the display for $\alpha_0$. Applying step [](#s2){.pf-ref} to the divisor $L'_k$ of $L'_{k-1}$, with $\nu=c(\OO_{L'}(1))^{\,m-k}$, for $k=1,\ldots,m$ in turn, gives
+$$
+t_{L'}\bigl(c(\OO_{L'}(1))^{\,m}\bigr)
+=t_{L'_1}\bigl(c(\OO_{L'_1}(1))^{\,m-1}\bigr)
+=\cdots=t_{L'_{m}}(1)=t_P(1)=1 ,
+$$
+the equality $t_{L'_{m}}(1)=t_P(1)$ because $L'_m=\{P\}$ is a single reduced point, and the last one by (N). Hence $\langle\eta(L'),\alpha_0\rangle_{\PP^n}=1\ne0$ and $\alpha_0\ne0$ in $H^m(\PP^n,\Omega_{\PP^n}^m)$, whatever the characteristic of $k$ and whatever $d$ is. The case $m=0$ is the same display with no iteration and empty products: $L=\PP^n$, $L'=\{P\}$ is a point, $\alpha_0=1$, and $t_P(1)=1$.
+
 **The pairing of the two classes.** Write $D_k=Y\cap H_k$, which is a nonsingular divisor of $Y$ for every $k$, write $c_Y=c(\OO_Y(D_k))\in H^1(Y,\Omega_Y)$, the same class for every $k$ because $\OO_Y(D_k)\cong\OO_Y(1)$, and write $c_Y^{\,m}$ for its $m$-fold cup power. Since $\eta(Y)$ is the class of the functional $w\mapsto t_Y(\restrictionof{w}{Y})$, for every $w\in H^m(\PP^n,\Omega_{\PP^n}^m)$,
 $$
 \langle\eta(Y),w\rangle_{\PP^n}=t_{\PP^n}\bigl(\eta(Y)\smile w\bigr)=t_Y\bigl(\restrictionof{w}{Y}\bigr).
@@ -1321,7 +1378,7 @@ Repeating this along $Y_1\supseteq Y_2\supseteq\cdots\supseteq Y_m$, whose membe
 $$
 t_Y\bigl(c_Y^{\,m}\bigr)=t_{Y_m}(1)=\sum_{a=1}^d t_{P_a}(1)=d .
 $$
-The case $m=0$, where $Y=Y_m$ is already the set of $d$ points and the products are empty, is the same computation starting from $t_Y(1)=d$. In either case $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d\ne0$, and in particular $\alpha_0\ne0$.
+The case $m=0$, where $Y=Y_m$ is already the set of $d$ points and the products are empty, is the same computation starting from $t_Y(1)=d$. In either case $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d$ as an element of $k$, and no step of the argument inverts $d$.
 
 **The scalar.** By Exercise III.7.3 the space $H^p(\PP^n,\Omega_{\PP^n}^p)$ is one-dimensional, and by (III.7.13) the pairing is perfect. Since $\alpha_0\ne0$, the functional $u\mapsto\langle u,\alpha_0\rangle_{\PP^n}$ on that one-dimensional space is nonzero, hence injective, and the class $1_{\PP^n}$ of the statement, characterized by $t_{\PP^n}(1_{\PP^n}\smile\alpha_0)=1$, is the unique class pairing to $1$ with $\alpha_0$. Now $\langle d\cdot1_{\PP^n},\alpha_0\rangle_{\PP^n}=d=\langle\eta(Y),\alpha_0\rangle_{\PP^n}$, so $\eta(Y)-d\cdot1_{\PP^n}$ pairs to $0$ with $\alpha_0$ and vanishes:
 $$
@@ -1566,6 +1623,18 @@ As printed, the exercise names no normalization of the trace, and the numerical 
 III.7.1(a) is the assertion $H^n(X,\omega_X)\cong k$ for $X=\PP^n_k$, and it continues "Fix one such isomorphism"; the isomorphism is a choice, so the trace $t$ it determines is defined only up to a nonzero scalar. III.7.2 makes the trace part of the data: a dualizing sheaf is a *pair* $(\omega_X^\circ,t)$, uniqueness is uniqueness of the pair, and replacing $t$ by $ct$ gives a different pair representing the same functor. Corollary III.7.12  then says only that for $X$ projective and nonsingular $\omega_X^\circ$ is *isomorphic* to $\omega_X$; it does not normalize the isomorphism. Remark III.7.14  states the position: "even for a nonsingular projective variety $X$, we don't have much information about the trace map $t:H^n(X,\omega)\to k$. We know only that it exists."
 
 A canonical normalization does exist, and the statement carries it: the trace is fixed by the point comparison (C), which singles out one trace because $H^n(X,\Omega_X^n)$ is one-dimensional and $\gamma^{0,0}_{Q/X}(1)\ne0$. This is the trace constructed from residues by Lipman (Residue Theorem (0.6)), so the normalization is realized and not merely imposed. The other side, part (d), is canonical without any convention: Appendix A defines the Chern classes in the Chow ring $A(X)$, with the normalization C1, "If $\mathcal E\cong\mathcal L(D)$ for a divisor $D$, $c_t(\mathcal E)=1+Dt$", so $c_1$ of a line bundle is the class of its divisor with no scalar freedom. Part (a) uses (N) alone, with $Y=P$ a closed point; part (b) uses the class of a linear subspace from step [](#s3){.pf-ref} and the divisor formula of step [](#s2){.pf-ref} iterated along the hyperplane sections of $Y$; part (d) is the class form of step [](#s2){.pf-ref}.
+:::
+
+::: {.remark title="Degree divisible by the characteristic"}
+Part (b) is an identity in $k$, so when $\operatorname{char}k$ divides $\deg Y$ it reads $\eta(Y)=0$. The conic $C\colon xy+xz+z^2=0$ in $\PP^2$ over an algebraically closed field $k$ of characteristic $2$ is such a case. Its partial derivatives are $y+z$, $x$ and $x$, which vanish simultaneously only at points with $x=0$, and on $C$ the equation then forces $z=0$ and $y\ne0$, where $y+z=y\ne0$; so $C$ is nonsingular, and $\deg C=2=0$ in $k$. For the line $L=\{z=0\}$ the intersection is $C\cap L=\{[1:0:0],[0:1:0]\}$, two distinct points, at which the tangent lines to $C$ are $y+z=0$ and $x=0$ and so are not $L$; hence $C\cap L$ is a nonsingular divisor of $C$ and the count of step [](#s4){.pf-ref} with $m=1$ gives
+$$
+\langle\eta(C),\alpha_0\rangle_{\PP^2}
+=t_C\bigl(c(\OO_C(1))\bigr)
+=t_{C\cap L}(1)
+=t_{[1:0:0]}(1)+t_{[0:1:0]}(1)
+=2=0 ,
+$$
+where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ and $H^1(\PP^2,\Omega_{\PP^2}^1)$ is one-dimensional, this forces $\eta(C)=0=\deg C\cdot1_{\PP^2}$, which is part (b) for this conic. The nonvanishing of $\alpha_0$ used here is the complementary-subspace computation of step [](#s4){.pf-ref}, which reads no degree.
 :::
 
 ::: {.remark title="Published solutions"}
