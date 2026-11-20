@@ -47,6 +47,20 @@ audit:
     remark. The defect the remark records was re-read in the print: part (d) does ask for a square
     root $S$ of $\psi_\alpha$ with $S(0)=0$, and $\psi_\alpha(0)=\alpha\ne0$. Not checked: the
     argument, which this pass did not re-derive.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s5 on the reader's report. The step proved $F(K_0)\supseteq\DD$ through the
+    identity $\operatorname{int}(\overline{K_0})=K_0$, which is false for a general Koebe domain:
+    $K_0=\DD\setminus[1/2,1)$ is simply connected, proper, contains $0$, and has closure the closed
+    disc, whose interior is $\DD$. The step now argues by Hurwitz's theorem instead: for every
+    $\rho<1$ and all large $n$ the set $D(0,\rho)$ lies in $F_n(K_0)$, so $F_n-w$ has a zero in
+    $K_0$ for each $w\in D(0,\rho)$; since $F_n\to F$ locally uniformly and $F-w$ is not identically
+    zero, $F-w$ must have a zero as well, whence $\DD\subseteq F(K_0)$. The inverse family, Montel's
+    theorem and the appeal to $\operatorname{int}(\overline{K_0})$ are removed, and no other step
+    depends on them. Not checked in this pass: steps s1--s4 and s6--s7 beyond step s4's
+    $F'(0)=L>0$, which the new argument uses.
 
 ---
 
@@ -77,6 +91,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 7, printed pp. 
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the book's hints.
 
 Throughout $K$ is a Koebe domain, $r_K=\sup\{\rho:D(0,\rho)\subseteq K\}$, and $f:K\to\DD$ is an expansion: $f(0)=0$ and $\abs{f(z)}>\abs z$ for $z\in K\setminus\{0\}$.
 
@@ -158,19 +173,11 @@ Part (c), second part: $F(K_0)\supseteq\DD$, hence $F(K_0)=\DD$.
 
 ::: pf-proof
 
-Fix $\rho<1$. Since $r_{K_{n+1}}\to1$ by hypothesis, $D(0,\rho)\subseteq K_{n+1}=F_n(K_0)$ for all $n\ge N$. For such $n$ the inverse $h_n:=F_n^{-1}$ is defined on $D(0,\rho)$ and maps it into $K_0\subseteq\DD$; it is holomorphic and injective, with $h_n(0)=0$ and
-$$
-h_n'(0)=\frac{1}{P_n}\longrightarrow\frac1L .
-$$
-The family $(h_n)_{n\ge N}$ is uniformly bounded by $1$, so by Montel a subsequence $h_{n_j}$ converges uniformly on compact subsets of $D(0,\rho)$ to a holomorphic $h$ with $h(0)=0$ and $h'(0)=1/L\ne0$; in particular $h$ is not constant, so $h(D(0,\rho))$ is open. Each $h_{n_j}$ takes values in $K_0$, so $h(D(0,\rho))\subseteq\overline{K_0}$.
+Fix $\rho<1$. Since $r_{K_{n+1}}\to1$ by hypothesis, $D(0,\rho)\subseteq K_{n+1}=F_n(K_0)$ for all $n\ge N$. Hence for every $n\ge N$ and every $w\in D(0,\rho)$ the function $F_n-w$ has a zero in $K_0$, namely $F_n^{-1}(w)$.
 
-Now $\operatorname{int}(\overline{K_0})=K_0$: the inclusion $\supseteq$ is clear, and if $z\in\operatorname{int}(\overline{K_0})$ then $z\in\overline{K_0}$ while some ball about $z$ is contained in $\overline{K_0}$, so $z$ is not a boundary point of $K_0$ and hence $z\in K_0$. Since $h(D(0,\rho))$ is open and contained in $\overline{K_0}$, it is contained in $\operatorname{int}(\overline{K_0})=K_0$.
+By step [](#s4){.pf-ref} the sequence $(F_n)$ converges to $F$ uniformly on compact subsets of $K_0$, and $F$ is not constant because $F'(0)=L>0$. Fix $w\in D(0,\rho)$ and suppose $F-w$ had no zero in $K_0$. Hurwitz's theorem, applied on the domain $K_0$ to the locally uniformly convergent sequence $F_n-w\to F-w$, then gives that $F_n-w$ is zero-free on $K_0$ for all sufficiently large $n$ — the limit being non-constant, hence not identically zero — and that contradicts the zeros found above. Therefore $F(w')=w$ for some $w'\in K_0$, that is $w\in F(K_0)$.
 
-Finally, for $w\in D(0,\rho)$, the points $h_{n_j}(w)$ lie in $K_0$ and converge to $h(w)\in K_0$; as $F_{n_j}\to F$ uniformly on a compact neighbourhood of $h(w)$ inside $K_0$,
-$$
-F(h(w))=\lim_jF_{n_j}\bigl(h_{n_j}(w)\bigr)=w .
-$$
-Hence $w\in F(K_0)$. As $\rho<1$ was arbitrary, $\DD\subseteq F(K_0)$, and the reverse inclusion holds by step [](#s4){.pf-ref}.
+As $\rho<1$ was arbitrary, $\DD\subseteq F(K_0)$, and the reverse inclusion holds by step [](#s4){.pf-ref}.
 
 :::
 
