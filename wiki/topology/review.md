@@ -5,8 +5,6 @@ order: 7
 
 # Theorems of the topology chapters
 
-The theorems each chapter of the topology wiki states, collected in one place for review.
-
 ## Point-set
 
 [[T-HH3YP]]

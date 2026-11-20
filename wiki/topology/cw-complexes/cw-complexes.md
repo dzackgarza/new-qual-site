@@ -55,7 +55,7 @@ Reading the boundary word of the polygon gives a presentation of $\pi_1$ with on
 - the projective plane: $\generators{a \st aa}$, or $\generators{a, b \st abab}$;
 - the Klein bottle: $\generators{a, b \st abab^{-1}}$.
 
-![Square fundamental domains for S^2, T^2, RP^2, and the Klein bottle K, with edges labeled a and b and arrows giving the identifications](../../../../assets/assets/Topology/figures/1513064067523.png)
+![Square fundamental domains for S^2, T^2, RP^2, and the Klein bottle K, with edges labeled a and b and arrows giving the identifications](/assets/figures/1513064067523.png)
 
 :::
 
@@ -67,17 +67,17 @@ With the vertices labelled by integers, a simplicial complex is determined by it
 :::
 
 ::: {.example title="Torus"}
-![A triangulation of the torus with 9 vertices: a square cut into 18 triangles, with boundary vertices labeled 1 to 5 and opposite sides identified](../../../../assets/assets/Topology/figures/1513062466927.png)
+![A triangulation of the torus with 9 vertices: a square cut into 18 triangles, with boundary vertices labeled 1 to 5 and opposite sides identified](/assets/figures/1513062466927.png)
 
 :::
 
 ::: {.example title="Klein bottle and $\RP^2$"}
-![9-vertex triangulations of the Klein bottle and RP^2 on a square: the same interior, with the right side labeled 4, 5 for the Klein bottle and 5, 4 for RP^2](../../../../assets/assets/Topology/figures/1513062526623.png)
+![9-vertex triangulations of the Klein bottle and RP^2 on a square: the same interior, with the right side labeled 4, 5 for the Klein bottle and 5, 4 for RP^2](/assets/figures/1513062526623.png)
 
 :::
 
 ::: {.example title="A labelling of the torus that is not a triangulation"}
-![A labelling of the torus with every triangle on the vertices $1,1,2$](../../../../assets/assets/Topology/figures/1513062599096.png)
+![A labelling of the torus with every triangle on the vertices $1,1,2$](/assets/figures/1513062599096.png)
 
 In this picture a triangle has two vertices with the same label $1$, so the vertex set $\theset{1,2}$ does not determine a unique triangle, and the picture is not a simplicial complex.
 

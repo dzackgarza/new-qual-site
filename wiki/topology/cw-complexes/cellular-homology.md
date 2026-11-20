@@ -37,11 +37,7 @@ The integer row lattice is read off from the Hermite normal form, which uses onl
 
 ## Constructing a CW complex with prescribed homology
 
-::: {.proposition}
-For finitely generated abelian groups $G_1, G_2, \ldots$, there is a connected CW complex $X$ with $H_n(X)\cong G_n$ for all $n\geq 1$.
-The space is the wedge of the [[D-KC4BS|Moore spaces]] $M(G_n,n)$, whose reduced homology is additive over the wedge [[PR-B6BB2]].
-
-:::
+[[PR-CWPRH]]
 
 
 ## Exercises

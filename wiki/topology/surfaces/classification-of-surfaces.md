@@ -29,7 +29,7 @@ The classification of closed surfaces, the Euler characteristic, connected sums,
 
 The Möbius band, the annulus $S^1\cross I$, $T^2$, $\KK$, and $\RP^2$ are quotients of a square by the edge identifications in these pasting diagrams:
 
-![Pasting diagrams for the Möbius band, the annulus, $T^2$, $\KK$, and $\RP^2$](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
+![Pasting diagrams for the Möbius band, the annulus, $T^2$, $\KK$, and $\RP^2$](/assets/figures/PastingDiagrams.png)
 
 :::
 

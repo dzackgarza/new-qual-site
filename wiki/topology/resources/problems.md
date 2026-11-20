@@ -23,7 +23,7 @@ Math 871 problem sets, Fall 2013: [[SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS]].
 
 ## Qualifying-exam collections
 
-The UNL topology qualifying exams from 2002--2020 are the source collections of this chapter, each an exam page with its problems in order.
+Each qualifying examination is an exam page with its problems in order.
 
 Compiled scans of earlier exams:
 

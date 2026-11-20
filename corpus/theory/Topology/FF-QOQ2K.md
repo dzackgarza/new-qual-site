@@ -17,7 +17,7 @@ review: draft
 ---
 
 ::: {.fact}
-The integral homology groups of the Klein bottle $K$ are
+The integral homology groups of the Klein bottle $\KK$ are
 $$
 H_k(K;\ZZ) \cong \begin{cases}
 \ZZ & k = 0,\\
