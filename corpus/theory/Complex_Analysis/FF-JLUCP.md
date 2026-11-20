@@ -23,4 +23,6 @@ $$
 \cos(2t) &= {1-\tan^2(t) \over 1+\tan^2(t)}.
 \end{aligned}
 $$
+
+These are the addition formulas of [@Ahl73, ch. 2, §3.2, The Trigonometric Functions] taken at $a=b=t$ — the section's $\cos(a+b)=\cos a\cos b-\sin a\sin b$ and $\sin(a+b)=\cos a\sin b+\sin a\cos b$, which it derives from the addition theorem for the exponential — together with the section's definition of $\tan z$ as the quotient of $\sin$ and $\cos$: dividing $\sin 2t=2\sin t\cos t$ and $\cos 2t=\cos^2t-\sin^2t$ by $\cos^2t$ gives the two displays, and the hypothesis $\cos t\neq0$ is what that division needs.
 :::
