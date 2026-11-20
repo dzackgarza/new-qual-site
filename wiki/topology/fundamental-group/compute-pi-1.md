@@ -15,8 +15,10 @@ topics:
 
 ## Deformation retracts
 
-::: {.fact}
-If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces an isomorphism of [[D-EBNUE|fundamental groups]] $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$ [@Hat02, Proposition 1.17].
+[[PR-9K4MV]]
+
+::: {.example title="Standard deformation retracts"}
+\envlist
 
 - $\RR^n \sm \theset{0}$ deformation retracts onto $S^{n-1}$.
 - A torus minus a point deformation retracts onto $S^1\vee S^1$.
