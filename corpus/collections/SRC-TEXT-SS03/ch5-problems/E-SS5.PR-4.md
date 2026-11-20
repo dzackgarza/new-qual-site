@@ -28,6 +28,21 @@ audit:
     of Stein and Shakarchi is retained in this checkout; the statement is as transcribed on
     the card. No retained solution set covers the exercise (the collection's provenance is a
     Google Books record), so the argument is the card's own. No statement repair.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The sentence of the event above that says "no copy of Stein and Shakarchi is retained in this
+    checkout" is wrong: the book is at
+    assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf, and the item was read there today. It is
+    Chapter 5, Problem 4, beginning on printed p. 157 (PDF p. 176) and running over to printed p. 158
+    (PDF p. 177), where the hint ends with "This reduces the problem to Problem 3." The asterisk the
+    print sets before "4." is recorded in the remark. The card's block keeps the printed parts (a),
+    (b) and the whole hint. The argument was read and holds: the Cauchy estimate and the minimisation
+    of $u^{-n}e^{u^\rho}$ giving $e^{n/\rho}(\rho/n)^{n/\rho}$, and part (b) by the split at
+    $N=\lceil r^{\rho+2\varepsilon}\rceil$ with the factorial comparison $n^n\ge n!$. Not checked:
+    the printed hint's inequality range, printed as $0<u<\rho$ in a notation that reads oddly and is
+    written $u>0$ on the card, which is what the minimum needs.
 ---
 
 ::: {.exercise}
@@ -86,6 +101,10 @@ $$
 
 for some constant $c$, since $n^n\geq n!$.
 This reduces the problem to Problem 3.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 5, Problem 4, printed pp. 157--158).
 :::
 
 ::: {.solution}
