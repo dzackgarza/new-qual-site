@@ -15,18 +15,19 @@ audit:
   by: claude
   date: 2026-11-10
   note: >-
-    Checked against Munkres, Topology (2000), Section 32 Exercise 7, with the
+    Checked against Munkres, Topology (2000), Section 32 Exercise 7, printed pp. 205-206, with the
     answers of "Doug's World", "Munkres - Topology - Chapter 4 Solutions" (30 August 2017; the file
-    names no author), Problem 32.7, (tmp/sources/munkres-solutions-dougsworld-ch4.pdf),
+    names no author), Problem 32.7, printed p. 7 (tmp/sources/munkres-solutions-dougsworld-ch4.pdf),
     which are Yes, No, Yes, Yes, No, Yes, Yes. Corrections: (b) is now the source's own example --
     S_Omega and S_bar_Omega are completely normal by Theorem 32.4, while S_Omega x S_bar_Omega is not
-    normal by Example 2 of Section 32 -- instead of the Sorgenfrey plane, which
+    normal by Example 2 of Section 32 (printed p. 203) -- instead of the Sorgenfrey plane, which
     would use part (g) of the same exercise; (c) was a citation to "linearly ordered topological
     spaces are hereditarily normal" with no argument, and now proves that a subspace of a
-    well-ordered set carries the order topology of its induced well-order and applies Theorem 32.4; (e) was quoted from Stone's theorem on R^J for uncountable J, which needs
+    well-ordered set carries the order topology of its induced well-order and applies Theorem 32.4
+    (printed p. 202); (e) was quoted from Stone's theorem on R^J for uncountable J, which needs
     Tychonoff for the compactness of [0,1]^J, and is now the book's own witness
-    S_bar_Omega x S_bar_Omega, compact by Theorem 26.7 and Hausdorff by Theorem
-    19.4, containing the non-normal subspace S_Omega x S_bar_Omega. The source's
+    S_bar_Omega x S_bar_Omega, compact by Theorem 26.7 (printed p. 167) and Hausdorff by Theorem
+    19.4 (printed p. 116), containing the non-normal subspace S_Omega x S_bar_Omega. The source's
     own answers to (c) and (e) are the bare sentences "Remember that in fact every set in the order
     topology is completely normal!" and "No, but I haven't been able to find a counterexample I
     understand", so no complete published argument exists for those two parts; the search is
@@ -39,9 +40,10 @@ audit:
     Solution", https://dbfin.com/topology/munkres/chapter-4/section-32-normal-spaces/problem-7-solution/
     (read 2026-11-10; kept at
     tmp/sources/dbfin/section-32-normal-spaces/problem-7-solution.txt), together with "Doug's World",
-    "Munkres - Topology - Chapter 4 Solutions", Problem 32.7, for the seven answers,
+    "Munkres - Topology - Chapter 4 Solutions", Problem 32.7, printed p. 7, for the seven answers,
     which agree (Yes, No, Yes, Yes, No, Yes, Yes). Checked against Munkres, Topology (2000), Section
-    32 Exercise 7, Theorem 32.4, Example 2 of Section 32, Theorems 26.7, 19.4 and 32.3. What was changed:
+    32 Exercise 7, printed pp. 205-206, Theorem 32.4 (printed p. 202), Example 2 of Section 32
+    (printed p. 203), Theorems 26.7 (p. 167), 19.4 (p. 116) and 32.3 (p. 202). What was changed:
     (c) is now dbFin's argument -- every interval (a,b] is open in a well-ordered set, as in the
     proof of Theorem 32.4, and the sets {(x,a]} and {(y,b]} chosen to miss the other of a separated
     pair are automatically disjoint, by the ordering, which the source asserts ("Moreover, the
@@ -61,9 +63,9 @@ audit:
   note: >-
     The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
     with twelve steps, one or more for each of the seven parts, each carrying a `pf-proof`; the
-    seven answers are unchanged and every argument is the card's own. The page citations in the
-    two earlier events are removed, the locators now being chapter, section and statement
-    numbers only. Cited by number only: Theorem 32.4 (well-ordered sets are normal in the order
+    seven answers are unchanged and every argument is the card's own. The rendered text cites
+    by numbered statement only; the two earlier events are left as that session wrote them
+    (QUAL-11), the pages they name remaining the record of what was read. Cited by number only: Theorem 32.4 (well-ordered sets are normal in the order
     topology), Exercise 32.6 (complete normality as separation of separated sets), Theorem
     26.7, Theorem 19.4, Theorem 32.3, Theorem 30.3, Exercise 32.4 (regular Lindelöf spaces are
     normal), and Example 2 of §32. Parts (d) and (g) are proved outright rather than cited:
