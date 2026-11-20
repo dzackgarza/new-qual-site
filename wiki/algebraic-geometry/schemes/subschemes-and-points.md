@@ -9,7 +9,8 @@ topics:
 
 # Subschemes and points
 
-A subscheme of $X$ is a closed subset together with a sheaf of ideals, so two subschemes can share a closed set and differ in their functions: the reduced structure on a closed subset, and the multiple of it that carries nilpotents, are different schemes with the same underlying space ([[D-SCHSUB]], [[D-SCHRED]]).
+A subscheme of $X$ is a locally closed subscheme, a closed subscheme of an open subscheme: an open subscheme is an open subset with the restricted structure sheaf, and a closed subscheme is a closed subset together with a sheaf of ideals ([[D-SCHSUB]]).
+Two closed subschemes can share a closed set and differ in their functions: the reduced structure on a closed subset, and the multiple of it that carries nilpotents, are different schemes with the same underlying space ([[D-SCHSUB]], [[D-SCHRED]]).
 
 [[D-SCHSUB]]
 
