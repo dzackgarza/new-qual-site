@@ -63,7 +63,9 @@ $$
 
 ## Mayer--Vietoris
 
-Since $\ZZ^m$ is free, the exact sequence splits by the [[D-SIUWU|splitting lemma]], so $A\cong \ZZ^{n}\oplus \ZZ^m$.
+::: {.fact title="Splitting over a free quotient"}
+Since $\ZZ^m$ is free, every exact sequence of abelian groups $0\to\ZZ^n\to A\to\ZZ^m\to 0$ splits by the [[D-SIUWU|splitting lemma]], so $A\cong \ZZ^{n}\oplus \ZZ^m$.
+:::
 
 [[D-FAIJX]]
 
