@@ -57,6 +57,8 @@ which together with the product expansion gives a product expansion of $\sin(\pi
 In terms of the Laplace transform $\mcl$, $\mcl(t^{z-1})(1) = \Gamma(z)$ for $\Re z>0$, and $\mcl(t^n)(1) = \Gamma(n+1) = n!$.
 
 By the reflection formula, $1/\Gamma(z) = \Gamma(1-z)\sin(\pi z)/\pi$ is entire, and its zeros are exactly the simple zeros at $z=0,-1,-2,\ldots$.
+
+These are [@SS03, ch. 6, §1].
 :::
 
 ## The Beta function
