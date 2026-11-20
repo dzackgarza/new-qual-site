@@ -113,6 +113,18 @@ audit:
     "Deduce that" in (d) and "and that" in (c), which drops the instruction to use part (c) -- the
     very step the repair of step s3 supplies -- so the wording now follows the print. No mathematics
     changed; the solution already uses part (c) for the sign.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (f) restored to the printed wording: the print asks to check that $f(z)=z/(1-z)^2$
+    "satisfies all the hypotheses and that $\abs{a_n}=n$ for all $n$", and the card had written
+    $a_n=n$. Step s6 proves the stronger $a_n=n$, which implies the printed claim. Two corrections to
+    earlier events of this card, which stand as written: the event of 2026-11-01 places the item in
+    "Chapter 8, §3", whereas the Problems of Chapter 8 are §6; and the event above says the Wang
+    Zirui set covers "parts (a)--(c) and (f)" in outline, whereas it covers all six parts -- (a), (b),
+    (c), (d) with the defective inference, (e) and (f) -- as read in
+    `stein-shakarchi-book2-chapter08-solutions.tex` at its Problem 8. No mathematics changed.
 
 ---
 
@@ -132,7 +144,7 @@ $$
 
 (e) Prove that $\abs{a_nr^n}\leq nr$, and let $r\to1$ to conclude that $\abs{a_n}\leq n$.
 
-(f) Check that $f(z)=z/(1-z)^2$ meets the hypotheses and has $a_n=n$ for every $n$.
+(f) Check that $f(z)=z/(1-z)^2$ meets the hypotheses and has $\abs{a_n}=n$ for every $n$.
 :::
 
 ::: {.remark}
