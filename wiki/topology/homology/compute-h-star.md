@@ -18,7 +18,7 @@ topics:
 ::: {.example}
 \envlist
 
-- If $X$ has no cells in any two adjacent dimensions, then every cellular boundary map is zero, so $H_n(X)$ is free on the $n$-cells; for $\CP^n$ this gives $\ZZ$ in each even degree $0,2,\ldots,2n$.
+- If $X$ has no cells in any two adjacent dimensions, then every cellular boundary map is zero, so $H_n(X)$ is free on the $n$-cells [[D-CELLHM]]; for $\CP^n$ this gives $\ZZ$ in each even degree $0,2,\ldots,2n$.
 - If $X$ has no cells above dimension $d$, then $H_n(X) = 0$ for $n>d$.
 
 :::
