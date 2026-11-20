@@ -32,6 +32,24 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the classification, which is what Queue D asks for on this card. The fibers, the shape of a subspace of R homeomorphic to R, the family h_t and the local trivialization are separate steps; the necessity is argued from the connectedness of the base rather than asserted, and the sufficiency now produces one family of homeomorphisms covering all four admissible shapes instead of the two representative cases the published solution works out. The exercise is covered by Proudfoot's Homework #7, §4.2 Exercise 30, printed p. 1, which lists the same four shapes; the uniform construction is the card's own and the card says so. Locators checked against the book: the exercise on printed p. 392. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 30, and against the
+    published solution, Proudfoot, Solutions to Homework #7, §4.2 Exercise 30, transcribed in the step
+    `proudfoot`. The card's own argument is correct: the fiber over a nonzero x is R and the fiber over
+    0 is R - A, so a fiber bundle forces R - A to be homeomorphic to R, hence an open interval with
+    possibly infinite endpoints; conversely for R - A = I the map H(x,y) = (x, h_{|x|}(y)) with the
+    family h_t compressing the ends of R onto I is a fiber-preserving bijection, continuous at the
+    central fiber because h_t(y) -> y as t -> 0. That gives exactly the four shapes of A: empty, a
+    closed half-line, or the union of two closed half-lines. The published solution lists the same four
+    and handles two of them. Its first computation is defective as printed: with
+    phi(x,y) = (x, y^2 - (x/2y)^2) and psi(x,z) = (x, (z + sqrt(x^2+z^2))/2) one gets
+    psi(phi(x,y)) = (x, y^2), not (x, y), because sqrt(x^2+z^2) = y^2 + (x/2y)^2 for that z; the
+    inverse needs one more radical, psi_corr(x,z) = (x, sqrt((z + sqrt(x^2+z^2))/2)), which is stated
+    and checked on the card. That defect is in the retained set, not in the card, and no step of the
+    card's proof changed for it; the transcription step and its correction are new.
 ---
 
 ::: {.problem}
@@ -40,7 +58,7 @@ For which such spaces $E$ is the projection $E \to \RR$, $(x, y) \mapsto x$, a f
 :::
 
 ::: {.solution}
-The published solution covering this exercise is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30** (`tmp/sources/uoregon-proudfoot-634-hw7.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw7.md`); its coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". It lists the four admissible shapes of the deleted set and exhibits explicit fiber-preserving homeomorphisms for two representative cases, with the rest "easily derived". The uniform construction below — one family $h_t$ of homeomorphisms of the interval covering all four shapes at once — is the card's own. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 30.
+The published solution covering this exercise is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30** (`tmp/sources/uoregon-proudfoot-634-hw7.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw7.md`); its coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". It lists the four admissible shapes of the deleted set and exhibits explicit fiber-preserving homeomorphisms for two representative cases, with the rest "easily derived"; the first of the two is misprinted by one radical and is corrected in step [](#proudfoot){.pf-ref} below. The uniform construction below — one family $h_t$ of homeomorphisms of the interval covering all four shapes at once — is the card's own. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 30.
 
 Write $E=\RR^2-\bigl(\{0\}\times A\bigr)$ and $p(x,y)=x$.
 
@@ -69,6 +87,20 @@ For $I=(a,b)$ and small $t>0$ there is an increasing homeomorphism $h_t:\RR\to I
 
 ::: pf-proof
 At a finite left endpoint $a$ put $h_t(y)=a+t\exp\bigl((y-a-t)/t\bigr)$ for $y\le a+t$ and $h_t(y)=y$ for $y\ge a+t$: the two formulas agree at $y=a+t$, the first is strictly increasing with image $(a,a+t]$, and it sends the left tail onto the tail of $I$. At a finite right endpoint $b$ put $h_t(y)=b-t\exp\bigl(-(y-b+t)/t\bigr)$ for $y\ge b-t$ and $h_t(y)=y$ for $y\le b-t$, symmetrically. For $t$ so small that $a+t<b-t$ the two regions are disjoint and the identity holds in between; if an endpoint is infinite no compression is needed there. The result is a strictly increasing surjection $\RR\to I$, hence a homeomorphism, and the formulas are jointly continuous in $(t,y)$ with the stated limit.
+:::
+
+:::
+
+::: {.pf-step #proudfoot}
+For $A=(-\infty,0]$, so that $I=(0,\infty)$, the published solution writes the trivialization out explicitly; transcribed here with the defect it carries.
+
+::: pf-proof
+**Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30**, whose coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39", takes $A=(-\infty,0]$ and exhibits
+$$\varphi:\RR\times\RR_{>0}\to\RR^2-\bigl(\{0\}\times(-\infty,0]\bigr),\qquad \varphi(x,y)=\Bigl(x,\ y^{2}-\Bigl(\tfrac{x}{2y}\Bigr)^{2}\Bigr),$$
+$$\psi:\RR^2-\bigl(\{0\}\times(-\infty,0]\bigr)\to\RR\times\RR_{>0},\qquad \psi(x,z)=\Bigl(x,\ \tfrac{z+\sqrt{x^{2}+z^{2}}}{2}\Bigr),$$
+with the sentence that they are inverse to each other. They are not, as printed: substituting $z=y^{2}-(x/2y)^{2}$ into $\psi$ gives $\sqrt{x^{2}+z^{2}}=y^{2}+(x/2y)^{2}$, since the difference of the squares of those two quantities is $4y^{2}(x/2y)^{2}=x^{2}$, so $\psi(\varphi(x,y))=(x,y^{2})$. The omission is one radical: writing $w=(z+\sqrt{x^{2}+z^{2}})/2$ one has $4w^{2}-4zw-x^{2}=0$, so $w=y^{2}$ exactly when $z=y^{2}-(x/2y)^{2}$, and the inverse of $\varphi$ is
+$$\psi_{\mathrm{corr}}(x,z)=\Bigl(x,\ \sqrt{\tfrac{z+\sqrt{x^{2}+z^{2}}}{2}}\Bigr),$$
+which is continuous, fiber preserving, and inverse to $\varphi$ on both sides, the outer root being legitimate because $z+\sqrt{x^{2}+z^{2}}>0$ for every $(x,z)$. With that correction the published computation is a fiber-preserving homeomorphism $\RR\times\RR_{>0}\to\RR^{2}-(\{0\}\times(-\infty,0])$, which is what the case $A=(-\infty,0]$ needs. The solution proves the two-sided case $A=(-\infty,-\pi/2]\cup[\pi/2,\infty)$ by a second explicit formula and leaves the remaining shapes to be derived from these two. The uniform family $h_{t}$ of step [](#transition){.pf-ref} covers all four shapes at once and is the card's own.
 :::
 
 :::
