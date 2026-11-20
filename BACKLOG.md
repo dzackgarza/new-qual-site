@@ -87,7 +87,7 @@ ok
 
 ## prose-only-solutions (1)
 
-- 175 of the 12428 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
+- 169 of the 12428 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
 
 ## empty-provenance (6)
 
@@ -103,7 +103,9 @@ ok
 
 - SRC-UNSORTED-TOPOLOGY
 
-## dead-provenance-hrefs (1)
+## dead-provenance-hrefs (2)
+
+- SRC-GATHMANN-AG: https://web.archive.org/web/20210507030827/https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019.pdf -> error: _ssl.c:1063: The handshake operation timed out
 
 - SRC-TEXT-HK71: https://www.gbv.de/dms/hbz/toc/ht000627471.pdf -> error: timed out
 

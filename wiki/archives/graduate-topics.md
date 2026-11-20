@@ -57,7 +57,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[algebra/group-theory/factor-groups|factor groups]]
 
-- [[algebra/group-theory/finitely-generated-groups-and-their|finitely generated groups and their presentations]]
+- [[algebra/group-theory/finitely-generated-groups|finitely generated groups and their presentations]]
 
 - [[algebra/group-theory/free-groups|free groups]]
 
@@ -89,7 +89,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[algebra/group-theory/simple-groups|simple groups]]
 
-- [[algebra/group-theory/simplicity-of|simplicity of $A_n$]]
+- [[algebra/group-theory/simplicity|simplicity of $A_n$]]
 
 - [[algebra/group-theory/solvable-groups|solvable groups]]
 
@@ -226,7 +226,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 ### Galois theory
 
-- [[algebra/galois-theory/abelian-extensions-of|abelian extensions of $\QQ$]]
+- [[algebra/galois-theory/abelian-extensions|abelian extensions of $\QQ$]]
 
 - [[algebra/galois-theory/galois-groups-of-polynomials-of-small-degree|Galois groups of polynomials of small degree]]
 
@@ -305,7 +305,7 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[algebra/representations/matrix-coefficients|matrix coefficients]]
 
-- [[algebra/representations/parametrization-of-complex-representations-by|parametrization of complex representations by characters]]
+- [[algebra/representations/parametrization-of-complex-representations|parametrization of complex representations by characters]]
 
 - [[algebra/representations/peter-weyl-theorem|Peter--Weyl theorem]]
 
@@ -315,43 +315,43 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[real-analysis/lp-spaces/index|$L^p$ spaces]]
 
-- [[real-analysis/real-analysis/approximate-identities|approximate identities]]
+- [[real-analysis/approximate-identities|approximate identities]]
 
-- [[real-analysis/real-analysis/arzel-ascoli-theorem|Arzelà--Ascoli theorem]]
+- [[real-analysis/arzel-ascoli-theorem|Arzelà--Ascoli theorem]]
 
 - [[T-TTLXS|closed graph theorem]]
 
-- [[real-analysis/real-analysis/compact-subsets-of|compact subsets of $C(X)$]]
+- [[real-analysis/compact-subsets|compact subsets of $C(X)$]]
 
-- [[real-analysis/real-analysis/convergence-theorems|convergence theorems]]
+- [[real-analysis/convergence-theorems|convergence theorems]]
 
-- [[real-analysis/real-analysis/convolutions-on|convolutions on $\RR^n$]]
+- [[real-analysis/convolutions|convolutions on $\RR^n$]]
 
-- [[real-analysis/real-analysis/covering-lemmas|covering lemmas]]
+- [[real-analysis/covering-lemmas|covering lemmas]]
 
-- [[real-analysis/real-analysis/differentiation-of-measures|differentiation of measures]]
+- [[real-analysis/differentiation-of-measures|differentiation of measures]]
 
-- [[real-analysis/real-analysis/distribution-functions|distribution functions]]
+- [[real-analysis/distribution-functions|distribution functions]]
 
 - [[T-IJQQG|dominated convergence theorem]]
 
-- [[real-analysis/real-analysis/egorovs-theorem|Egorov's theorem]]
+- [[real-analysis/egorovs-theorem|Egorov's theorem]]
 
-- [[real-analysis/real-analysis/fatous-lemma|Fatou's lemma]]
+- [[real-analysis/fatous-lemma|Fatou's lemma]]
 
-- [[real-analysis/real-analysis/fourier-analysis|Fourier analysis]]
+- [[real-analysis/fourier-analysis|Fourier analysis]]
 
-- [[real-analysis/real-analysis/fubinis-theorem|Fubini's theorem]]
+- [[real-analysis/fubinis-theorem|Fubini's theorem]]
 
 - [[real-analysis/appendices/functional-analysis|functional analysis]]
 
-- [[real-analysis/real-analysis/functions-of-bounded-variation|functions of bounded variation]]
+- [[real-analysis/functions-of-bounded-variation|functions of bounded variation]]
 
-- [[real-analysis/real-analysis/hahn-decompositions|Hahn decompositions]]
+- [[real-analysis/hahn-decompositions|Hahn decompositions]]
 
 - [[T-OW2QG|Hahn--Banach theorem]]
 
-- [[real-analysis/real-analysis/hausdorff-measures|Hausdorff measures]]
+- [[real-analysis/hausdorff-measures|Hausdorff measures]]
 
 - [[D-7QQUO|Hilbert space]]
 
@@ -359,124 +359,124 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[PR-W4ICW|Jensen's inequality]]
 
-- [[real-analysis/real-analysis/jordan-decomposition-theorem|Jordan decomposition theorem]]
+- [[real-analysis/jordan-decomposition-theorem|Jordan decomposition theorem]]
 
-- [[real-analysis/real-analysis/lebesgue-decomposition-theorem|Lebesgue decomposition theorem]]
+- [[real-analysis/lebesgue-decomposition-theorem|Lebesgue decomposition theorem]]
 
-- [[real-analysis/real-analysis/lebesgue-integration|Lebesgue integration]]
+- [[real-analysis/lebesgue-integration|Lebesgue integration]]
 
 - [[D-EPSKF|linear functionals]]
 
-- [[real-analysis/real-analysis/linear-operators|linear operators]]
+- [[real-analysis/linear-operators|linear operators]]
 
 - [[T-CGFCU|Lusin's theorem]]
 
-- [[real-analysis/real-analysis/measure-theory|measure theory]]
+- [[real-analysis/measure-theory|measure theory]]
 
-- [[real-analysis/real-analysis/minkowski-inequalities|Minkowski inequalities]]
+- [[real-analysis/minkowski-inequalities|Minkowski inequalities]]
 
 - [[T-5K3IO|monotone convergence theorem]]
 
 - [[T-KQTPR|open mapping theorem]]
 
-- [[real-analysis/real-analysis/orthonormal-systems|orthonormal systems]]
+- [[real-analysis/orthonormal-systems|orthonormal systems]]
 
-- [[real-analysis/real-analysis/plancherels-theorem|Plancherel's theorem]]
+- [[real-analysis/plancherels-theorem|Plancherel's theorem]]
 
-- [[real-analysis/real-analysis/poisson-summation-formula|Poisson summation formula]]
+- [[real-analysis/poisson-summation-formula|Poisson summation formula]]
 
-- [[real-analysis/real-analysis/radon-nikodym-theorem|Radon--Nikodym theorem]]
+- [[real-analysis/radon-nikodym-theorem|Radon--Nikodym theorem]]
 
-- [[real-analysis/real-analysis/riemann-lebesgue-lemma|Riemann--Lebesgue lemma]]
+- [[real-analysis/riemann-lebesgue-lemma|Riemann--Lebesgue lemma]]
 
-- [[real-analysis/real-analysis/riesz-representation-theorem|Riesz representation theorem]]
+- [[real-analysis/riesz-representation-theorem|Riesz representation theorem]]
 
-- [[real-analysis/real-analysis/self-adjoint-linear-operators-and-their-spectra|self-adjoint linear operators and their spectra]]
+- [[real-analysis/self-adjoint-linear-operators-and-their-spectra|self-adjoint linear operators and their spectra]]
 
-- [[real-analysis/real-analysis/signed-measures|signed measures]]
+- [[real-analysis/signed-measures|signed measures]]
 
-- [[real-analysis/real-analysis/strong-weak-and-weak-topologies|strong, weak, and weak-$*$ topologies]]
+- [[real-analysis/strong-weak-and-weak-topologies|strong, weak, and weak-$*$ topologies]]
 
-- [[real-analysis/real-analysis/baire-category-theorem|Baire category theorem]]
+- [[real-analysis/baire-category-theorem|Baire category theorem]]
 
-- [[real-analysis/real-analysis/the-spaces|the spaces $C(X)$]]
+- [[real-analysis/the-spaces|the spaces $C(X)$]]
 
 - [[T-RA-WORKSHOP-D7-6-7|Stone--Weierstrass theorem]]
 
-- [[real-analysis/real-analysis/tychonoff-theorem|Tychonoff theorem]]
+- [[real-analysis/tychonoff-theorem|Tychonoff theorem]]
 
-- [[real-analysis/real-analysis/trigonometric-series|trigonometric series]]
+- [[real-analysis/trigonometric-series|trigonometric series]]
 
 - [[T-F2THV|uniform boundedness principle]]
 
 - [[complex-analysis/basics/uniform-convergence|uniform convergence]]
 
-- [[real-analysis/real-analysis/urysohns-lemma|Urysohn's lemma]]
+- [[real-analysis/urysohns-lemma|Urysohn's lemma]]
 
-- [[real-analysis/real-analysis/weak-spaces|weak $L^p$ spaces]]
+- [[real-analysis/weak-spaces|weak $L^p$ spaces]]
 
 ## Complex analysis
 
-- [[complex-analysis/complex-analysis/analytic-functions|analytic functions]]
+- [[complex-analysis/analytic-functions|analytic functions]]
 
 - [[T-C5VEI|Casorati--Weierstrass theorem]]
 
-- [[complex-analysis/complex-analysis/cauchys-theorem-on-multiply-connected-domains|Cauchy's theorem on multiply connected domains]]
+- [[complex-analysis/cauchys-theorem-on-multiply-connected-domains|Cauchy's theorem on multiply connected domains]]
 
-- [[complex-analysis/complex-analysis/cauchys-theorem-goursats-proof|Cauchy's theorem: Goursat's proof]]
+- [[complex-analysis/cauchys-theorem-goursats-proof|Cauchy's theorem: Goursat's proof]]
 
-- [[complex-analysis/complex-analysis/compact-families-of-analytic-and-harmonic|compact families of analytic and harmonic functions]]
+- [[complex-analysis/compact-families-of-analytic-and-harmonic|compact families of analytic and harmonic functions]]
 
-- [[complex-analysis/complex-analysis/conformal-mappings|conformal mappings]]
+- [[complex-analysis/conformal-mappings|conformal mappings]]
 
-- [[complex-analysis/complex-analysis/conjugate-functions|conjugate functions]]
+- [[complex-analysis/conjugate-functions|conjugate functions]]
 
-- [[complex-analysis/complex-analysis/consequences-of-the-cauchy-integral-formula|consequences of the Cauchy integral formula, such as Liouville's theorem]]
+- [[complex-analysis/consequences-of-the-cauchy-integral-formula|consequences of the Cauchy integral formula, such as Liouville's theorem]]
 
-- [[complex-analysis/complex-analysis/dirichlet-problem-for-a-disk|Dirichlet problem for a disk]]
+- [[complex-analysis/dirichlet-problem-for-a-disk|Dirichlet problem for a disk]]
 
-- [[complex-analysis/complex-analysis/elementary-mappings|elementary mappings]]
+- [[complex-analysis/elementary-mappings|elementary mappings]]
 
-- [[complex-analysis/complex-analysis/elliptic-functions|elliptic functions]]
+- [[complex-analysis/elliptic-functions|elliptic functions]]
 
-- [[complex-analysis/complex-analysis/exponential-and-logarithm-functions|exponential and logarithm functions]]
+- [[complex-analysis/exponential-and-logarithm-functions|exponential and logarithm functions]]
 
-- [[complex-analysis/complex-analysis/fractional-linear-transformations|fractional linear transformations]]
+- [[complex-analysis/fractional-linear-transformations|fractional linear transformations]]
 
 - [[complex-analysis/holomorphic-functions/harmonic-functions|harmonic functions]]
 
-- [[complex-analysis/complex-analysis/harnacks-principle|Harnack's principle]]
+- [[complex-analysis/harnacks-principle|Harnack's principle]]
 
 - [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]]
 
-- [[complex-analysis/complex-analysis/infinite-products|infinite products]]
+- [[complex-analysis/infinite-products|infinite products]]
 
-- [[complex-analysis/complex-analysis/isolated-singularities|isolated singularities]]
+- [[complex-analysis/isolated-singularities|isolated singularities]]
 
-- [[complex-analysis/complex-analysis/mapping-of-polygons|mapping of polygons]]
+- [[complex-analysis/mapping-of-polygons|mapping of polygons]]
 
-- [[complex-analysis/complex-analysis/mappings-of-finitely-connected-domains|mappings of finitely connected domains]]
+- [[complex-analysis/mappings-of-finitely-connected-domains|mappings of finitely connected domains]]
 
 - [[T-BYNL5|maximum modulus principle]]
 
-- [[complex-analysis/complex-analysis/maximum-principle|maximum principle]]
+- [[complex-analysis/maximum-principle|maximum principle]]
 
-- [[complex-analysis/complex-analysis/mean-value-property|mean value property]]
+- [[complex-analysis/mean-value-property|mean value property]]
 
-- [[complex-analysis/complex-analysis/mittag-leffler-theorem|Mittag-Leffler theorem]]
+- [[complex-analysis/mittag-leffler-theorem|Mittag-Leffler theorem]]
 
-- [[complex-analysis/complex-analysis/m-bius-transformations-and-the-spherical|Möbius transformations and the spherical representation]]
+- [[complex-analysis/m-bius-transformations-and-the-spherical|Möbius transformations and the spherical representation]]
 
 - [[T-LHSMY|Morera's theorem]]
 
 
-- [[complex-analysis/complex-analysis/picards-theorem|Picard's theorem]]
+- [[complex-analysis/picards-theorem|Picard's theorem]]
 
-- [[complex-analysis/complex-analysis/poisson-integrals|Poisson integrals]]
+- [[complex-analysis/poisson-integrals|Poisson integrals]]
 
-- [[complex-analysis/complex-analysis/poisson-jensen-formula|Poisson--Jensen formula]]
+- [[complex-analysis/poisson-jensen-formula|Poisson--Jensen formula]]
 
-- [[complex-analysis/complex-analysis/reflections-across-analytic-boundaries|reflections across analytic boundaries]]
+- [[complex-analysis/reflections-across-analytic-boundaries|reflections across analytic boundaries]]
 
 - [[T-HRPNO|residue theorem]]
 
@@ -488,23 +488,23 @@ Each topic links the page that treats it, or its entry page if that page is not 
 
 - [[T-Q3GGF|Schwarz reflection principle]]
 
-- [[complex-analysis/complex-analysis/series-and-product-developments|series and product developments]]
+- [[complex-analysis/series-and-product-developments|series and product developments]]
 
-- [[complex-analysis/complex-analysis/subharmonic-functions|subharmonic functions]]
+- [[complex-analysis/subharmonic-functions|subharmonic functions]]
 
-- [[complex-analysis/complex-analysis/sums-of-power-series|sums of power series]]
+- [[complex-analysis/sums-of-power-series|sums of power series]]
 
-- [[complex-analysis/complex-analysis/argument-principle|argument principle]]
+- [[complex-analysis/argument-principle|argument principle]]
 
-- [[complex-analysis/complex-analysis/dirichlet-problem|Dirichlet problem]]
+- [[complex-analysis/dirichlet-problem|Dirichlet problem]]
 
-- [[complex-analysis/complex-analysis/evaluation-of-definite-integrals|evaluation of definite integrals]]
+- [[complex-analysis/evaluation-of-definite-integrals|evaluation of definite integrals]]
 
-- [[complex-analysis/complex-analysis/hyperbolic-metric|hyperbolic metric]]
+- [[complex-analysis/hyperbolic-metric|hyperbolic metric]]
 
-- [[complex-analysis/complex-analysis/monodromy-theorem|monodromy theorem]]
+- [[complex-analysis/monodromy-theorem|monodromy theorem]]
 
-- [[complex-analysis/complex-analysis/weierstrass-product-theorem|Weierstrass product theorem]]
+- [[complex-analysis/weierstrass-product-theorem|Weierstrass product theorem]]
 
 ## Differential topology
 
@@ -544,7 +544,7 @@ Reference: [@Spi99].
 
 - [[topology/differential-geometry/de-rham-cohomology|de Rham cohomology]]
 
-- [[topology/differential-geometry/degree-theory-and-euler-characteristic-from-the|degree theory and Euler characteristic from the viewpoint of de Rham cohomology]]
+- [[topology/differential-geometry/degree-theory-and-euler-characteristic|degree theory and Euler characteristic from the viewpoint of de Rham cohomology]]
 
 - [[topology/differential-geometry/differential-forms|differential forms]]
 
@@ -574,7 +574,7 @@ Reference: [@Spi99].
 
 - [[topology/algebraic-topology/axioms-of-homology-theory|axioms of homology theory]]
 
-- [[topology/algebraic-topology/calculation-of-homology-and-cohomology-of|calculation of homology and cohomology of standard spaces]]
+- [[topology/algebraic-topology/calculation-of-homology-and-cohomology|calculation of homology and cohomology of standard spaces]]
 
 - [[topology/algebraic-topology/cell-complexes-and-cellular-homology|cell complexes and cellular homology]]
 
