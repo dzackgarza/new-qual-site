@@ -40,6 +40,16 @@ audit:
     Part (b) prints "a bounded function", which the card renders "a bounded holomorphic function";
     that is the intended reading of the item and the card's wording is kept. Not checked: the
     argument, which the event above records and this pass did not re-derive.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the source-corrected event above, on the reader's report: Chapter 8,
+    Problem 5 stands on printed p. 258 (PDF p. 277) of the retained scan, not on "printed p. 277
+    (PDF p. 276)", which turned a PDF page number into a printed one. Checked on the retained PDF:
+    the folios of PDF pp. 276 and 278 read 257 and 259, so the page between them, which carries the
+    opening sentence of Problem 5, is printed p. 258. The statement, the restored opening sentence
+    and the argument are unchanged.
 ---
 
 ::: {.exercise}
