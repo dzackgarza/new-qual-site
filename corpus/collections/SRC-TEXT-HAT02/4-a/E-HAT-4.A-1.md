@@ -220,6 +220,27 @@ audit:
     Not checked: the pagination of the 2001 bound volume of Davis--Kirk, and no certificate.
 
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #170's item for this card, the normalisation beyond tom Dieck's circle lemma, read step by step
+    and found correct. $H$ is a homotopy of pointed maps, so $\gamma(t)=H(z_0,t)$ is a loop at $x_0$
+    because $f(z_0)=g(z_0)=x_0$; $F(z,t)=H(z,t)\gamma(t)^{-1}$ is continuous as the composite of
+    $(z,t)\mapsto(H(z,t),\gamma(t))$ with multiplication and inversion, which a topological group has
+    continuous; $F(z,0)=f(z)x_0^{-1}=f(z)$ and $F(z,1)=g(z)x_0^{-1}=g(z)$ because $x_0$ is the identity;
+    $F(z_0,t)=\gamma(t)\gamma(t)^{-1}=x_0$; so $F$ is the basepoint-preserving homotopy the exercise asks
+    for, with no hypothesis on $Z$ beyond that $f$ and $g$ are pointed and homotopic. The statement is
+    Hatcher's §4.A Exercise 1 word for word. tom Dieck's Lemma (2.7.4) proves this for the unit circle
+    only — the pointed homotopy in its proof is $(x,t)\mapsto H(x,t)H(1,t)^{-1}$ — and its other half,
+    surjectivity on unbased classes, is the path $w$ from $1$ to $f(1)^{-1}$ and is not what the exercise
+    asks; the card's derivation is that argument for an arbitrary topological group and an arbitrary
+    pointed space. Davis--Kirk is stated as their §6.16 states it: the source of the maps is assumed to lie
+    in $\kappa_\ast$, a based space with non-degenerate basepoint, which Hatcher's §4.A convention — $Z$ a
+    CW complex with basepoint a $0$-cell — supplies; Theorem 6.57's path-connectedness of the target enters
+    only its quotient statement, and the implication this card uses is Lemma 6.56's existence clause. No
+    step changed. Not claimed: a published solution of the exercise itself, which is not in the retained
+    sets, so the #123 source obligation stays open.
 ---
 
 ::: {.problem}
