@@ -21,4 +21,6 @@ $$
 f^\lambda = \frac{n!}{\prod_{c\in\lambda}h(c)},
 $$
 and this is the dimension of the irreducible representation $S^\lambda$ of $S_n$ indexed by $\lambda$.
+
+This is [@FH91, Hook Length Formula 4.12].
 :::
