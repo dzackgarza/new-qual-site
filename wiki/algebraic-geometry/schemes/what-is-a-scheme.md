@@ -44,4 +44,4 @@ By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a 
 
 [[T-AFFCOMM]]
 
-A property of schemes is local for the Zariski topology when it holds for $X$ exactly when it holds on the members of one affine open cover; the cards above apply that principle to reducedness, integrality and the singularity classes [@Har77, §II.3].
+A property of schemes is local for the Zariski topology when it holds for $X$ exactly when it holds on the members of one affine open cover; this principle is how reducedness, integrality and the singularity classes are checked [@Har77, §II.3].
