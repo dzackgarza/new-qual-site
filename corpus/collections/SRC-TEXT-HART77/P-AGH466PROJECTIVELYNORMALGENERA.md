@@ -39,7 +39,7 @@ audit:
     s3. The inference from projective normality to the surjectivity of the restriction map
     H^0(P^3, O(n)) -> H^0(X, O_X(n)), which s1 and s4 make, is the one Hartshorne makes in Example
     IV.6.4.3, and the definition of projective normality the card uses is the one of Exercise
-    II.5.14; both are named on the card now. No page, PDF page or page offset appears in its text.
+    II.5.14; both are named on the card now, and every reference the card makes is to a numbered statement.
 
     The mathematics is unchanged: s1's h^0(H) = 4 and g >= d-3, s2's 3 <= g <= 4 at d = 6, s3's
     4 <= g <= 6 at d = 7, and s4's exclusion of g = 4 at d = 7 by h^0(X, 2H) = 11 > 10 =
