@@ -191,7 +191,7 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 [[D-B2JER]]
 
 ::: {.example title="The cup product distinguishes the torus from a wedge"}
-$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge ([[D-B2JER|cup product]]).
+$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge, whose reduced cohomology ring is a product ring ([[D-B2JER|cup product]]) [@Hat02, §3.2].
 :::
 
 [[D-ZOU5G]]
