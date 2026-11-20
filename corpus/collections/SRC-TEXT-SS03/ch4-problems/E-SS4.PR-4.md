@@ -61,6 +61,18 @@ audit:
     today: that sign defect was neither re-derived nor re-evaluated in this pass and the earlier
     note's numerical check was not re-run; step s1's estimate (Cauchy's estimates at
     $R=n/(2\pi\tau)$ and Stirling) was read and is correct.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s6 on the reader's report. The two boundary limits were displayed with the signs
+    interchanged: for $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\hat f(\xi)/(z-\xi)\,d\xi$ the
+    distributional identity $1/(u+i\varepsilon)\to P.V.(1/u)-i\pi\delta$ gives
+    $\Phi(x+i\varepsilon)\to\frac{1}{2\pi i}P.V.\int\hat f(\xi)/(x-\xi)d\xi-\hat f(x)/2$ and
+    $\Phi(x-i\varepsilon)\to\frac{1}{2\pi i}P.V.\int+\hat f(x)/2$, so that the difference in the
+    displayed orientation is $+\hat f(x)$, which is what the step concludes. The limits are corrected
+    and the sign convention stated in the step; the conclusion, step s5 and the rest of the card are
+    unchanged. Not checked in this pass: the numerical counterexample recorded in the second event.
 ---
 
 ::: {.exercise}
@@ -84,6 +96,7 @@ See Problem 5 in Chapter 3.
 :::
 
 ::: {.solution}
+No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
 
 Write $f(z)=\sum_{n\ge0}a_nz^n$ and $A_n=\dfrac{a_n\,n!}{(2\pi i)^{n+1}}$, so that the series proposed for $g$ is $g(w)=\sum_{n\ge0}A_nw^{-n-1}$.
 
@@ -210,11 +223,11 @@ $$
 $$
 As $\varepsilon\to0+$, $\frac{1}{u\mp i\varepsilon}=P.V.\frac1u\pm\pi i\delta$, so
 $$
-\Phi(x+i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi+\frac{\hat f(x)}{2},
+\Phi(x+i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi-\frac{\hat f(x)}{2},
 \qquad
-\Phi(x-i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi-\frac{\hat f(x)}{2},
+\Phi(x-i\varepsilon)\longrightarrow\frac{1}{2\pi i}P.V.\!\int_{-M}^{M}\frac{\hat f(\xi)}{x-\xi}d\xi+\frac{\hat f(x)}{2},
 $$
-and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extension in the displayed orientation.
+and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extension in the displayed orientation. The lower sign of the distributional identity is the one that applies to $1/(u+i\varepsilon)$, hence to $z=x+i\varepsilon$, and the upper sign to $z=x-i\varepsilon$.
 
 :::
 
