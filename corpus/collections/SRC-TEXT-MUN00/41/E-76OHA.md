@@ -25,6 +25,19 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 41 Exercise 4, printed p. 260, with the discrete topology, the definition of paracompactness, and part (b) of Exercise 41.2 (card E-94C75) for the failure of paracompactness in the image. What was corrected: part (b) deduced the non-paracompactness of $S_\Omega=[0,\omega_1)$ from the general assertion that a paracompact countably compact Hausdorff space is compact, which the book does not prove and the card did not; the card now cites part (b) of Exercise 41.2, where the non-paracompactness of $S_\Omega$ is proved.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. Part (a) is right: the singleton
+    cover refines any open cover, and $\{p\}$ meets only itself in that cover, so it is a locally
+    finite open refinement. Part (b) is right: with $Y=S_\Omega$ and $X$ the same set discrete,
+    $X$ is paracompact by part (a) and the identity $X\to Y$ is continuous because $X$ is
+    discrete, while $Y$ is not paracompact by Exercise 41.2(b). The step now also names the two
+    numbered results behind that non-paracompactness, part (a) of Exercise 41.2 and Theorem 41.1.
+    Citation by number: §41 Exercise 4, read in `tmp/sources/munkres-2000-topology.md`; the
+    2026-11-10 event's page locator is superseded, its text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
@@ -85,7 +98,7 @@ Let $Y = S_\Omega = [0, \Omega)$ be the space of countable ordinals with the ord
 :::
 
 ::: pf-step
-$Y$ is not paracompact: this is part (b) of Exercise 41.2, proved on the card of [[E-94C75]], where $S_\Omega$ is shown not to be paracompact by exhibiting $S_\Omega \times \overline{S}_\Omega$ as a non-normal product of a paracompact space with a compact one.
+$Y$ is not paracompact: this is part (b) of Exercise 41.2, proved on the card of [[E-94C75]], where $S_\Omega$ is shown not to be paracompact by exhibiting $S_\Omega \times \overline{S}_\Omega$ as a non-normal product of a paracompact space with a compact one. A paracompact $S_\Omega$ would make that product paracompact by part (a) of the exercise and normal by Theorem 41.1, contradicting its non-normality.
 :::
 
 ::: pf-step
