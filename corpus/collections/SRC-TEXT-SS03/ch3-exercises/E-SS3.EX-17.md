@@ -39,7 +39,7 @@ Let $f$ be non-constant and holomorphic in an open set containing the closed uni
 :::
 
 ::: {.solution}
-The statement is Exercise 17 of [@SS03, ch. 3 (p. 106)], printed beginning "Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc".
+The statement is Exercise 17 of Stein--Shakarchi, *Complex Analysis* [@SS03, ch. 3, §8, Exercise 17], printed beginning "Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc".
 
 Throughout $\DD = \theset{\abs{z} < 1}$, $f$ is holomorphic and non-constant on an open set containing the closed disc, and $f(\DD) \supseteq \DD$ is what both parts assert. The exercise is Exercise 17 of Stein--Shakarchi, *Complex Analysis*, Chapter 3.
 
