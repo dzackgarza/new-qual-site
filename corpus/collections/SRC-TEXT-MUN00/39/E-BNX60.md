@@ -40,6 +40,17 @@ audit:
     neighbourhood at each point, and the failure at 0 in R for the two shrink-to-zero
     collections. The argument is the card's own; no retained set is cited. The printed
     statements needed no repair.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §39 Exercise 1 and found correct; the page in the head is gone, and the
+    negative search for a published set is recorded once for §39--§42 in `COMPLAINTS.md`. The
+    book's first collection, $\{(n,n+2)\}$, is locally finite in $\RR$; the two interval
+    collections that follow, $\{(0,1/n)\}$ and $\{(1/(n+1),1/n)\}$, are locally finite in
+    $(0,1)$, a neighbourhood $(a,1)\cap(0,1)$ of a point meeting only those members with
+    $1/n\ge a$, and neither is locally finite in $\RR$, where every neighbourhood of $0$ meets
+    every member.
 ---
 
 ::: {.exercise}
@@ -60,7 +71,7 @@ are locally finite in $(0, 1)$ but not in $\RR$.
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It checks the three statements of Example 1 of §39, printed p. 244.
+The argument is the card's own; no retained solution set is cited on the card. It checks the statements of Example 1 of §39.
 
 ::: pf
 
