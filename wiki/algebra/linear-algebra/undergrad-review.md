@@ -47,9 +47,15 @@ The permutation expansion, the adjugate inverse, and the identification of the t
 
 ## Inner products and forms
 
+Recall that a bilinear form is read by its [[D-H4TDM|Gram matrix]] $G$, that the form is nondegenerate exactly when $G$ is invertible, and that a change of basis sends $G$ to $P^tGP$.
+
 [[D-O4WWN]]
 
 [[D-H4TDM]]
+
+Recall that a subspace whose restricted form is nondegenerate has an orthogonal complement of complementary dimension, and that then $V=W\oplus W^\perp$.
+
+[[PR-UGRV4]]
 
 [[PR-WDPF7]]
 
