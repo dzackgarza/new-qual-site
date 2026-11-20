@@ -38,6 +38,18 @@ audit:
     Restructured into Lamport steps; checked both De Morgan identities and the openness or
     closedness of the complementary sets. The argument is the card's own; no retained set is
     cited. Munkres §40, printed p. 246. The printed statement needed no repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. Both directions are the two
+    De Morgan identities, stated correctly: $\bigcup_n F_n$ has complement $\bigcap_n(X-F_n)$
+    with each $X-F_n$ open, and $\bigcap_n U_n$ has complement $\bigcup_n(X-U_n)$ with each
+    $X-U_n$ closed. The closing step applies the second implication with $X-W$ in place of $W$,
+    which is legitimate because $X-W$ is an arbitrary subset. Nothing else is used. Citation by
+    number: §40 Exercise 2; the phrase "printed p. 246" is removed from the solution, and the
+    earlier events' page locators are superseded, their text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
@@ -49,7 +61,7 @@ Show that $W$ is an $F_\sigma$ set in $X$ if and only if $X - W$ is a $G_\delta$
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is the two De Morgan identities behind the definitions of $F_\sigma$ and $G_\delta$ sets in Munkres §40, printed p. 246.
+The argument is the card's own; no retained solution set is cited on the card. It is the two De Morgan identities behind the definitions of $F_\sigma$ and $G_\delta$ sets in Munkres §40.
 
 ::: pf
 
