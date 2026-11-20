@@ -15,6 +15,13 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 3 sets its asterisks before Problems 1, 4 and 5
+    only, so none stands before Problem 2. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -33,6 +40,10 @@ $$
 T(z) = \frac{z_0 - z}{1 - \overline{z_0} z}.
 $$
 Prove that $u_0$ is harmonic. Then apply the mean value theorem to $u_0$, and make a change of variables in the integral.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 3, Problem 2).
 :::
 
 ::: {.solution}
