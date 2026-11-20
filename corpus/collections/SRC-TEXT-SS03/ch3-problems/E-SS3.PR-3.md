@@ -82,6 +82,16 @@ audit:
     document answering Chapter 3, Problem 3 was found. This search located no published set answering
     this Problem, and none is retained in this repository. Not checked: whether such a set exists
     outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to one clause of the source-checked event above, which says the page it names first
+    "carries Problem 1 and the start of Problem 2". Read on the pages themselves: that page carries
+    the end of Exercise 22 and Problem 1(a)--(f), the last of which ends with the bound
+    $\abs{z_1-z_2}\le4$, and nothing of Problem 2; Problem 1(g) and the opening of Problem 2 stand
+    on the next page, which is the page the same event records for Chapter 3, Problem 3. That
+    locator is right, and the card's statement and argument are unchanged.
 ---
 
 ::: {.exercise}
