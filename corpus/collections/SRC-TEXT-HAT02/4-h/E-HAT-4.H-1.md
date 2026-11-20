@@ -52,10 +52,26 @@ audit:
     Re-confirmed in this pass rather than copied: PDF p. 475 carries the running head 466.
     The durable part of the locator is that printed page; the file path names this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher's definitions and numbered statements: the homotopy extension property of
+    Chapter 0, the homotopy lifting property of §4.2, Proposition A.16 (the exponential law, for
+    $X^{Y\times Z}\cong(X^Y)^Z$ when $Y$ is locally compact Hausdorff and $Z$ is Hausdorff) and
+    Proposition A.18 (a pair has the homotopy extension property exactly when
+    $X\times\{0\}\cup A\times I$ is a retract of $X\times I$). The argument is correct: the two
+    adjoint maps agree on $Z\times\{0\}\times A$, the product of the cofibration with $Z$ has the
+    extension property, the two formulas agree on their overlap, and adjunction returns the lift.
+    Changes are in the citations only: the two page references in the body are replaced by the
+    numbered statements they name, the sentence naming the retained file is removed by the
+    numbering convention in force, and the last step is given a label. No mathematics changed. Not
+    checked: no certificate; the hypothesis that $A$ and $X$ are compact Hausdorff is used exactly
+    at the exponential law.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.H of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
+This is Exercise 1 of Section 4.H of Hatcher, *Algebraic Topology* (2002); the statement below is its wording.
 
 Show that if $A \hookrightarrow X$ is a cofibration of compact Hausdorff spaces, then for any space $Y$, the map $Y^X \to Y^A$ obtained by restriction of functions is a fibration.
 [If $A \hookrightarrow X$ is a cofibration, so is $A \times Y \hookrightarrow X \times Y$ for any space $Y$.]
@@ -70,7 +86,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 A cofibration is a map with the homotopy extension property and a fibration is a map with the homotopy lifting property for all spaces.
 
 ::: pf-proof
-These are the definitions of §0.4 and of p. 375 respectively. The pair $(X,A)$ has the homotopy extension property exactly when the inclusion $(X\times\{0\})\cup(A\times I)\hookrightarrow X\times I$ has the extension property for maps into every space, which is the form used below.
+A cofibration is a map with the homotopy extension property, the notion introduced in Chapter 0 and used in §4.H; a fibration is a map with the homotopy lifting property with respect to every space, defined at the start of §4.2. Proposition A.18 records that $(X,A)$ has the homotopy extension property exactly when $X\times\{0\}\cup A\times I$ is a retract of $X\times I$, equivalently when the inclusion $(X\times\{0\})\cup(A\times I)\hookrightarrow X\times I$ has the extension property for maps into every space, which is the form used below.
 :::
 
 :::
@@ -79,7 +95,7 @@ These are the definitions of §0.4 and of p. 375 respectively. The pair $(X,A)$ 
 Given $Z$, a map $f_0\colon Z\to Y^X$ and a homotopy $g\colon Z\times I\to Y^A$ with $g(z,0)=r(f_0(z))$, there are adjoint maps $F_0\colon Z\times X\to Y$ and $G\colon Z\times I\times A\to Y$ agreeing on $Z\times\{0\}\times A$.
 
 ::: pf-proof
-$X$ and $A$ are compact Hausdorff, so the exponential law (Proposition A.16, p. 531) identifies maps $Z\to Y^X$ with maps $Z\times X\to Y$ and maps $Z\times I\to Y^A$ with maps $Z\times I\times A\to Y$. Under these identifications $f_0$ corresponds to $F_0$ and $g$ to $G$, and the condition $g(z,0)=r(f_0(z))$ says that both restrict to the same map on $Z\times\{0\}\times A$, since $r$ is restriction of functions.
+$X$ and $A$ are compact Hausdorff, so the exponential law (Proposition A.16) identifies maps $Z\to Y^X$ with maps $Z\times X\to Y$ and maps $Z\times I\to Y^A$ with maps $Z\times I\times A\to Y$. Under these identifications $f_0$ corresponds to $F_0$ and $g$ to $G$, and the condition $g(z,0)=r(f_0(z))$ says that both restrict to the same map on $Z\times\{0\}\times A$, since $r$ is restriction of functions.
 :::
 
 :::
@@ -102,7 +118,7 @@ Define a map on $(Z\times X\times\{0\})\cup(Z\times A\times I)$ by $(z,x,0)\maps
 
 :::
 
-::: {.pf-step}
+::: {.pf-step #conclusion}
 $\boxed{Y^X\to Y^A\text{ is a fibration}}$.
 
 ::: pf-proof
