@@ -565,6 +565,8 @@ d=s(\mathcal E)\le2n-d\le d+2-d=2=g,
 $$
 the middle inequality because $2n\le2+d$, a contradiction with $d\ge3$. So $d\le2$, that is $e=-d\ge-2$.
 
+The Lemma is stated in the paper under its standing supposition $d>3$, but its proof uses only the embedding by $\linearsystem{K_C\otimes\mathcal L}$ and Serre duality, and that embedding exists from $d=3$ on, its degree being $2g+1$; so the case $d=3$ is covered as well, and it has to be, since $d=3$ is the first case the contradiction must exclude.
+
 The proof of the theorem in Lange's paper opens by supposing without loss of generality that $\mathcal E$ sits in an extension with quotient of degree $d>3$, a reduction it states and does not argue; that reduction is not used here. What is used is the part of his proof that is argued, the dimension theorem of §1 and the Lemma of §2, over the algebraically closed field of arbitrary characteristic that the paper names in its introduction, and the hypothesis $d\ge3$ of the contradiction is exactly the case in which the reduction would have been needed.
 :::
 
