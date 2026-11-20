@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -77,7 +87,7 @@ audit:
 ---
 
 ::: {.solution}
-The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 9**, printed p.~26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam's route is kept: exhibit a section of $\pi\colon\Delta^I\to\Delta_p$, $\pi(\sigma)=(\sigma(0),p\sigma)$, and apply Exercise 8. His displayed section is the base path where the lifted path is meant, and step [](#section){.pf-ref} writes the lift; his reason for the failure of the bundle property assumes that the third vertex projects to an interior point of the edge, and step [](#notbundle){.pf-ref} covers the endpoint cases as well.
+The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 9** of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam's route is kept: exhibit a section of $\pi\colon\Delta^I\to\Delta_p$, $\pi(\sigma)=(\sigma(0),p\sigma)$, and apply Exercise 8. His displayed section is the base path where the lifted path is meant, and step [](#section){.pf-ref} writes the lift; his reason for the failure of the bundle property assumes that the third vertex projects to an interior point of the edge, and step [](#notbundle){.pf-ref} covers the endpoint cases as well.
 
 ::: pf
 
@@ -103,7 +113,7 @@ For $x=(x_0,y_0)\in\Delta$ and $\gamma\colon I\to I$ with $\gamma(0)=x_0$, set $
 $p\colon\Delta\to I$ is a fibration.
 
 ::: pf-proof
-Exercise 8 (printed p.~419) states that $p$ is a fibration if and only if $\pi\colon E^I\to E_p$ has a section; step [](#section){.pf-ref} provides one for $E=\Delta$, $B=I$.
+Exercise 8 states that $p$ is a fibration if and only if $\pi\colon E^I\to E_p$ has a section; step [](#section){.pf-ref} provides one for $E=\Delta$, $B=I$.
 :::
 
 :::
@@ -121,7 +131,7 @@ Immediate from the description of $\Delta$ in step [](#model){.pf-ref}: a point 
 $p$ is not a fibre bundle.
 
 ::: pf-proof
-By step [](#model){.pf-ref}, $\lambda(s)=h>0$, so the fibre over $s$ is a nondegenerate interval. Choose an endpoint $x_0\in\{0,1\}$ with $x_0\ne s$, possible since $\{0,1\}$ has two elements; then $\lambda(x_0)=0$, so the fibre over $x_0$ is the single point $(x_0,0)$. A point is not homeomorphic to a nondegenerate interval, so the fibres of $p$ are not all homeomorphic, whereas the fibres of a fibre bundle are all homeomorphic (printed p.~375). Hence $p$ is not a fibre bundle.
+By step [](#model){.pf-ref}, $\lambda(s)=h>0$, so the fibre over $s$ is a nondegenerate interval. Choose an endpoint $x_0\in\{0,1\}$ with $x_0\ne s$, possible since $\{0,1\}$ has two elements; then $\lambda(x_0)=0$, so the fibre over $x_0$ is the single point $(x_0,0)$. A point is not homeomorphic to a nondegenerate interval, so the fibres of $p$ are not all homeomorphic, whereas the fibres of a fibre bundle are all homeomorphic. Hence $p$ is not a fibre bundle.
 :::
 
 :::

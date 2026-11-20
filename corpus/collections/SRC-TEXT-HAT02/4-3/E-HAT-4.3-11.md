@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -71,7 +81,7 @@ Show that a map $f: B_1 \to B_2$ induces $f^*: \mathcal{F}(B_2) \to \mathcal{F}(
 :::
 
 ::: {.solution}
-Everything follows from the pullback construction: pulling a fibration back along $f$ gives a fibration over $B_1$, and pullback respects fiber-preserving maps and fiber homotopies, so it induces a map on fiber homotopy classes; a homotopy $f_0\simeq f_1$ is handled by pulling back along the homotopy and using fiber transport along the interval, and functoriality plus the homotopy invariance then make $f^*$ invertible when $f$ is a homotopy equivalence. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 11**, printed p. 26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, where the pullback and its universal property give well-definedness on fiber homotopy classes and the composition law for $f^*$, Proposition 4.62 gives homotopy invariance, and functoriality gives the bijection for a homotopy equivalence. The steps below follow that route.
+Everything follows from the pullback construction: pulling a fibration back along $f$ gives a fibration over $B_1$, and pullback respects fiber-preserving maps and fiber homotopies, so it induces a map on fiber homotopy classes; a homotopy $f_0\simeq f_1$ is handled by pulling back along the homotopy and using fiber transport along the interval, and functoriality plus the homotopy invariance then make $f^*$ invertible when $f$ is a homotopy equivalence. The argument is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 11** of `tmp/sources/hatcher-solutions-sam-2008.pdf`, where the pullback and its universal property give well-definedness on fiber homotopy classes and the composition law for $f^*$, Proposition 4.62 gives homotopy invariance, and functoriality gives the bijection for a homotopy equivalence. The steps below follow that route.
 
 ::: pf
 
@@ -99,7 +109,7 @@ A map $u\colon E\to E'$ over $B_2$ gives $f^*u$ over $B_1$ by acting on the seco
 If $f_0\simeq f_1\colon B_1\to B_2$ then $f_0^*=f_1^*$ on $\mathcal F(B_2)$.
 
 ::: pf-proof
-Let $H\colon B_1\times I\to B_2$ be a homotopy and $p\colon E\to B_2$ a fibration; then $H^*E\to B_1\times I$ is a fibration whose restriction to $B_1\times\{t\}$ is $f_t^*E$. This is the situation of Proposition 4.62 (printed p. 406): for a fibration $p:E\to B$ and a homotopy $f_t:A\to B$, the pullbacks $f_0^*(E)$ and $f_1^*(E)$ over $A$ are fibre homotopy equivalent. Applying it to the fibration $H^*E\to B_1\times I$ with $A=B_1$ gives a fibre homotopy equivalence $f_0^*E\simeq_f f_1^*E$ over $B_1$; the construction uses only the pullback and the homotopy lifting property, so it is natural in $E$, and $f_0^*=f_1^*$. (Proposition 4.62 is not a consequence of this exercise but its proof: for a fibration over $B\times I$ the restrictions $E_s\to B$ are all fibre homotopy equivalent, by lifting the deformation retraction $B\times I\to B\times\{s\}$. Quoting it avoids arguing the special case as though it were immediate.)
+Let $H\colon B_1\times I\to B_2$ be a homotopy and $p\colon E\to B_2$ a fibration; then $H^*E\to B_1\times I$ is a fibration whose restriction to $B_1\times\{t\}$ is $f_t^*E$. This is the situation of Proposition 4.62: for a fibration $p:E\to B$ and a homotopy $f_t:A\to B$, the pullbacks $f_0^*(E)$ and $f_1^*(E)$ over $A$ are fibre homotopy equivalent. Applying it to the fibration $H^*E\to B_1\times I$ with $A=B_1$ gives a fibre homotopy equivalence $f_0^*E\simeq_f f_1^*E$ over $B_1$; the construction uses only the pullback and the homotopy lifting property, so it is natural in $E$, and $f_0^*=f_1^*$. (Proposition 4.62 is not a consequence of this exercise but its proof: for a fibration over $B\times I$ the restrictions $E_s\to B$ are all fibre homotopy equivalent, by lifting the deformation retraction $B\times I\to B\times\{s\}$. Quoting it avoids arguing the special case as though it were immediate.)
 :::
 
 :::

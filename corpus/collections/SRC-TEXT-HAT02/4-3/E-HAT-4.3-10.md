@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     The body's clause "the Hatcher sets in the checkout hold nothing from §4.3" was false: Sam's
@@ -66,7 +76,7 @@ Deduce that if $\pi_1(E) = 0$, then the action of $\pi_1(F)$ on $\pi_n(F)$ is tr
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; Sam's §4.3 skips Exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 10, printed p. 419, and it uses only the homotopy lifting property of the fibration.
+No retained solution set covers this exercise; Sam's §4.3 skips Exercise 10. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 10, and it uses only the homotopy lifting property of the fibration.
 
 Fix $e_0\in F=p^{-1}(b_0)$ and let $p:E\to B$ be the fibration.
 
@@ -103,7 +113,7 @@ Concatenate $\beta$ then $\gamma$ and lift the resulting homotopy as in step [](
 $[\beta]\mapsto T_{\beta^{-1}}$ is a homomorphism $\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$, and $T_{\beta^{-1}}$ is Hatcher's change-of-basepoint map $\beta_{\beta}$.
 
 ::: pf-proof
-By step [](#homomorphism){.pf-ref}, $T_{(\beta\gamma)^{-1}}=T_{\gamma^{-1}\beta^{-1}}=T_{\beta^{-1}}T_{\gamma^{-1}}$, so $\Phi([\beta]):=T_{\beta^{-1}}$ is multiplicative; it is bijective with inverse $\Phi([\beta^{-1}])$ and depends only on $[\beta]$ by step [](#well-defined){.pf-ref}. For the identification, Hatcher defines $\gamma f$ for a path $\gamma$ from $x_0$ to $x_1$ and $f$ based at $x_1$ by shrinking $f$ to a concentric cube and inserting $\gamma$ on the radial shell (printed p. 341), with $(\gamma\eta)f\simeq\gamma(\eta f)$ and, for $n=1$, $\gamma f=\gamma\cdot f\cdot\gamma^{-1}$; the action of p. 342 is $[\alpha]\mapsto[\gamma\alpha]$. The transport of step [](#transport){.pf-ref} is the same construction with the basepoint track run backwards: for $n=1$ its defining square has boundary $\alpha\cdot\beta\cdot\alpha_1^{-1}\cdot\beta^{-1}\simeq1$, so $\alpha_1\simeq\beta^{-1}\alpha\beta=(\beta^{-1})\alpha$, and the two constructions agree for every $n$ because both are the unique lift of the same homotopy of the basepoint track, so $T_\beta[\alpha]=[(\beta^{-1})\alpha]=\beta_{\beta^{-1}}[\alpha]$ and $T_{\beta^{-1}}=\beta_{(\beta^{-1})^{-1}}=\beta_\beta$.
+By step [](#homomorphism){.pf-ref}, $T_{(\beta\gamma)^{-1}}=T_{\gamma^{-1}\beta^{-1}}=T_{\beta^{-1}}T_{\gamma^{-1}}$, so $\Phi([\beta]):=T_{\beta^{-1}}$ is multiplicative; it is bijective with inverse $\Phi([\beta^{-1}])$ and depends only on $[\beta]$ by step [](#well-defined){.pf-ref}. For the identification, Hatcher defines $\gamma f$ for a path $\gamma$ from $x_0$ to $x_1$ and $f$ based at $x_1$ by shrinking $f$ to a concentric cube and inserting $\gamma$ on the radial shell, with $(\gamma\eta)f\simeq\gamma(\eta f)$ and, for $n=1$, $\gamma f=\gamma\cdot f\cdot\gamma^{-1}$; the action of is $[\alpha]\mapsto[\gamma\alpha]$. The transport of step [](#transport){.pf-ref} is the same construction with the basepoint track run backwards: for $n=1$ its defining square has boundary $\alpha\cdot\beta\cdot\alpha_1^{-1}\cdot\beta^{-1}\simeq1$, so $\alpha_1\simeq\beta^{-1}\alpha\beta=(\beta^{-1})\alpha$, and the two constructions agree for every $n$ because both are the unique lift of the same homotopy of the basepoint track, so $T_\beta[\alpha]=[(\beta^{-1})\alpha]=\beta_{\beta^{-1}}[\alpha]$ and $T_{\beta^{-1}}=\beta_{(\beta^{-1})^{-1}}=\beta_\beta$.
 :::
 
 :::
@@ -112,7 +122,7 @@ By step [](#homomorphism){.pf-ref}, $T_{(\beta\gamma)^{-1}}=T_{\gamma^{-1}\beta^
 The composite $\pi_1(F,e_0)\to\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$ is the usual action, so if $\pi_1(E)=0$ that action is trivial.
 
 ::: pf-proof
-For $\beta$ a loop in $F$ the class $[\beta]$ lies in the image of $\pi_1(F,e_0)\to\pi_1(E,e_0)$, and the composite sends it to $T_{\beta^{-1}}=\beta_{(\beta^{-1})^{-1}}=\beta_\beta$, which is by definition the usual action of $[\beta]$ on $\pi_n(F,e_0)$ (printed p. 342). So the composite $\pi_1(F,e_0)\to\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$ is the usual action, and it is trivial whenever $\pi_1(E,e_0)=0$, the homomorphism then having trivial domain.
+For $\beta$ a loop in $F$ the class $[\beta]$ lies in the image of $\pi_1(F,e_0)\to\pi_1(E,e_0)$, and the composite sends it to $T_{\beta^{-1}}=\beta_{(\beta^{-1})^{-1}}=\beta_\beta$, which is by definition the usual action of $[\beta]$ on $\pi_n(F,e_0)$. So the composite $\pi_1(F,e_0)\to\pi_1(E,e_0)\to\operatorname{Aut}(\pi_n(F,e_0))$ is the usual action, and it is trivial whenever $\pi_1(E,e_0)=0$, the homomorphism then having trivial domain.
 :::
 
 :::

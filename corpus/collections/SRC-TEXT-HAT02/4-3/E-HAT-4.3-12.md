@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19

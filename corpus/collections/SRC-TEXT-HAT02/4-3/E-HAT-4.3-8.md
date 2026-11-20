@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Provenance corrected. The body's sentence "none of the retained Hatcher sets solves Section 4.3
@@ -65,7 +75,7 @@ Show that a map $p: E \to B$ is a fibration if and only if the map $\pi: E^I \to
 :::
 
 ::: {.solution}
-The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 8**, printed pp.~25--26 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise by both directions of the equivalence: a section of $\pi$ gives a lift of any homotopy by evaluating it, and a fibration gives a section by lifting the path of a point. The steps below follow that argument. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, printed p. 419, and against the homotopy lifting property as defined there.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 8** in `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise by both directions of the equivalence: a section of $\pi$ gives a lift of any homotopy by evaluating it, and a fibration gives a section by lifting the path of a point. The steps below follow that argument. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 8, and against the homotopy lifting property as defined there.
 
 ::: pf
 
