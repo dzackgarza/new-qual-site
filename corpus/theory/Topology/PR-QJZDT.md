@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-QJZDT
 kind: proposition
-title: Product CW structure
+title: Product CW structure and the Künneth formula
 slogan: 'Cellular chains of $X\times Y$ are the graded tensor product of cellular chains, with boundary $d(e^i\times e^j) = de^i\times e^j + (-1)^i e^i\times de^j$.'
 classification:
   areas:
@@ -16,15 +16,16 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $X$ and $Y$ be CW complexes such that $X\cross Y$ with the product topology is a CW complex with cells $e^i_\alpha\cross e^j_\beta$; this holds if $X$ or $Y$ is locally compact, or if both have countably many cells [@Hat02].
+Let $X$ and $Y$ be CW complexes such that $X\cross Y$ with the product topology is a CW complex with cells $e^i_\alpha\cross e^j_\beta$; this holds if $X$ or $Y$ is locally compact, or if both have countably many cells [@Hat02, Theorem A.6].
 Then the cellular chain complexes satisfy
 $$
-C_n(X \cross Y) \cong \bigoplus_{i+j=n} C_i(X) \tensor_\ZZ C_j(Y), \qquad e^i\cross e^j\mapsto e^i\tensor e^j
-,$$
+C_n(X \cross Y) \cong \bigoplus_{i+j=n} C_i(X) \tensor_\ZZ C_j(Y), \qquad e^i\cross e^j\mapsto e^i\tensor e^j,
+$$
 with boundary
 $$
 d(e^i\cross e^j) = de^i\cross e^j + (-1)^{i} e^i\cross de^j
 $$
-[@Hat02].
+[@Hat02, Proposition 3B.1]; this chain isomorphism is the Eilenberg--Zilber theorem.
+Consequently $H_*(X\cross Y)$ is computed from $H_*(X)$ and $H_*(Y)$ by the algebraic Künneth theorem [@Hat02, Theorem 3B.5].
 In particular, if $X$ and $Y$ have finitely many cells in each dimension and $p_X(t) = \sum_n a_n t^n$, $p_Y(t)$ count their $n$-cells, then $p_{X\cross Y}(t) = p_X(t)\,p_Y(t)$.
 :::
