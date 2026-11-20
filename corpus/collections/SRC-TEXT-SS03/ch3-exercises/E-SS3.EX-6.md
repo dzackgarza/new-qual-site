@@ -13,6 +13,13 @@ audit:
   - event: solution-written
     by: gpt-5.6-sol
     date: 2026-09-11
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed page. It now cites the
+      numbered statement, Chapter 3, Exercise 6, and the page is gone from the rendered text. The
+      statement is unchanged and the recursion argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -24,7 +31,7 @@ $$
 
 ::: {.solution}
 
-The statement is Exercise 6 of [@SS03, ch. 3 (p. 104)], printed as $\int_{-\infty}^\infty\frac{dx}{(1+x^2)^{n+1}}=\frac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\pi$.
+The statement is Exercise 6 of [@SS03, ch. 3], printed as $\int_{-\infty}^\infty\frac{dx}{(1+x^2)^{n+1}}=\frac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\pi$.
 The argument is the card's own: an integration by parts on $x/(1+x^{2})^{m-1}$ gives a two-term recursion, and iterating it from $J_{1}=\pi$ gives the product.
 
 ::: pf
