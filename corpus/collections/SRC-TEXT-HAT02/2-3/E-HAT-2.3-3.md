@@ -66,7 +66,7 @@ Deduce that there are suspension isomorphisms $\tilde{h}_n(X) \approx \tilde{h}_
 
 ::: {.solution}
 
-The argument is that of **Kenneth DeMason, *M382C Full Credit HW Problems* (2021), Hatcher 2.3.3, PDF p. 83** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`): exactness for the pair $(X,X)$, then the two-cone decomposition of the suspension. The statement was checked against Hatcher, *Algebraic Topology* (2002), §2.3 Exercise 3, printed p. 165.
+The argument is that of **Kenneth DeMason, *M382C Full Credit HW Problems* (2021), Hatcher §2.3 Exercise 3** (`tmp/sources/demason-m382c-hatcher-20210404.pdf`): exactness for the pair $(X,X)$, then the two-cone decomposition of the suspension. The statement was checked against Hatcher, *Algebraic Topology* (2002), §2.3 Exercise 3.
 
 Let $\tilde h$ be a reduced homology theory: functors on CW pairs, homotopy invariant, with the exactness axiom for a CW pair $(X,A)$,
 $$
