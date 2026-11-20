@@ -39,9 +39,9 @@ Then $\prod A_\alpha$ is a subspace of $\prod X_\alpha$ if both products are giv
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.2, printed p. 190** (`tmp/sources/munkres-solutions-whitman.pdf`); the two inclusions of bases are his, kept as separate steps because the theorem is exactly their coincidence.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.2** (`tmp/sources/munkres-solutions-whitman.pdf`); the two inclusions of bases are his, kept as separate steps because the theorem is exactly their coincidence.
 
-Let $A_{\alpha}$ be a subspace of $X_{\alpha}$ for each $\alpha\in J$, and write $\prod A_{\alpha}$ for the product of the subspaces. The subspace topology that $\prod A_{\alpha}$ inherits from $\prod X_{\alpha}$ has as a basis the traces $B\cap\prod A_{\alpha}$ of the basis elements $B$ of the ambient space (Lemma 16.1, printed p. 89).
+Let $A_{\alpha}$ be a subspace of $X_{\alpha}$ for each $\alpha\in J$, and write $\prod A_{\alpha}$ for the product of the subspaces. The subspace topology that $\prod A_{\alpha}$ inherits from $\prod X_{\alpha}$ has as a basis the traces $B\cap\prod A_{\alpha}$ of the basis elements $B$ of the ambient space (Lemma 16.1).
 
 ::: pf
 

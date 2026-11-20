@@ -44,7 +44,7 @@ Show that the topologies of $\RR_\ell$ and $\RR_K$ are not comparable.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.6, printed pp. 145--146** (`tmp/sources/munkres-solutions-whitman.pdf`); both halves below are his.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.6** (`tmp/sources/munkres-solutions-whitman.pdf`); both halves below are his.
 
 Throughout, $\mathcal{B}_\ell=\{[a,b)\mid a<b\}$ and $\mathcal{B}_K=\{(a,b)\mid a<b\}\cup\{(a,b)-K\mid a<b\}$, with $K=\{1/n\mid n\in\ZZ_+\}$, are the bases for the lower limit topology and the $K$-topology given in Examples 1 and 2 of §13, and $\mathcal{T}_\ell$, $\mathcal{T}_K$ are the topologies they generate.
 

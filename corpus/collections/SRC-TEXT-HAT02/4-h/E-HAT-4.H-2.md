@@ -37,7 +37,7 @@ Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B\
 :::
 
 ::: {.solution}
-Write $P=B\sqcup_fX$ for the pushout, with inclusions $j\colon B\to P$ and $q\colon X\to P$, so that $j f=q i$ for $i\colon A\hookrightarrow X$. By §0.4 (printed p. 14) a cofibration is an inclusion with the homotopy extension property, so it is enough to produce, for every space $Y$, every $u\colon P\to Y$ and every homotopy $H\colon B\times I\to Y$ with $H(b,0)=u(j(b))$, a homotopy $\widetilde H\colon P\times I\to Y$ with $\widetilde H(p,0)=u(p)$ that extends $H$ on $B\times I$. The exercise is Exercise 2 of §4.H, printed p. 458.
+Write $P=B\sqcup_fX$ for the pushout, with inclusions $j\colon B\to P$ and $q\colon X\to P$, so that $j f=q i$ for $i\colon A\hookrightarrow X$. By §0.4  a cofibration is an inclusion with the homotopy extension property, so it is enough to produce, for every space $Y$, every $u\colon P\to Y$ and every homotopy $H\colon B\times I\to Y$ with $H(b,0)=u(j(b))$, a homotopy $\widetilde H\colon P\times I\to Y$ with $\widetilde H(p,0)=u(p)$ that extends $H$ on $B\times I$. The exercise is Exercise 2 of §4.H.
 
 ::: pf
 

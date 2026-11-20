@@ -48,7 +48,7 @@ The operations of closure $A \to \overline{A}$ and complementation $A \to X - A$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.21, printed pp. 175--178** (`tmp/sources/munkres-solutions-whitman.pdf`); the list of identities, the enumeration of at most fourteen sets and the example of (b) are his. The proofs of his identities (h) and (i) are replaced below by their two-line arguments, which are what his chains of substitutions amount to. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.21, PDF p. 10, proves (a) by the same route.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.21** (`tmp/sources/munkres-solutions-whitman.pdf`); the list of identities, the enumeration of at most fourteen sets and the example of (b) are his. The proofs of his identities (h) and (i) are replaced below by their two-line arguments, which are what his chains of substitutions amount to. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.21, proves (a) by the same route.
 
 Write $c(A)=\overline{A}$, $i(A)=\operatorname{Int}A$ and $x(A)=X-A$; these are operations on subsets of a fixed space $X$, and a word in $c$ and $x$ applied to $A$ means the successive application, so that $xcA=X-\overline{A}$.
 

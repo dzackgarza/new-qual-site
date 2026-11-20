@@ -56,7 +56,7 @@ Recall that $\RR_K$ denotes the real line in the $K$-topology.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 22.6, printed pp. 257--258** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 22.6, PDF p. 28, has the same two arguments but prints $\RR_{\ell}$ for $\RR_{K}$ and asserts without proof that $K$ is closed in $\RR_{K}$; that computation is supplied below, and the earlier version of it on this card, which used the minimum of $\abs{x-1/m}$ over $m$, is replaced: that set has no minimum when $x<0$, since its values decrease to $\abs{x}$.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 22.6** (`tmp/sources/munkres-solutions-whitman.pdf`); both parts are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 22.6, has the same two arguments but prints $\RR_{\ell}$ for $\RR_{K}$ and asserts without proof that $K$ is closed in $\RR_{K}$; that computation is supplied below, and the earlier version of it on this card, which used the minimum of $\abs{x-1/m}$ over $m$, is replaced: that set has no minimum when $x<0$, since its values decrease to $\abs{x}$.
 
 Let $p:\RR_{K}\to Y$ be the quotient map collapsing $K=\{1/n\mid n\in\ZZ_{+}\}$ to the point $k=p(K)$, so that $Y=\{k\}\cup\big\{\{x\}\mid x\in\RR-K\big\}$ and $p^{-1}(\{k\})=K$.
 

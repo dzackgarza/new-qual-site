@@ -38,7 +38,7 @@ The quotient $\RR/\ZZ$ is a familiar topological group; what is it?
 
 ::: {.solution}
 
-**Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.6, manual p. 270, PDF p. 273 (`tmp/sources/munkres-solutions-whitman.pdf`), states the identification but expressly does not prove it ("We shall not show this rigorously as doing so would be tedious"); the argument below is therefore the card's own, and it replaces the card's earlier attribution of the argument to that set. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 6, printed p. 146, with the definition of a topological group on printed p. 145, Theorem 22.2 and Corollary 22.3 on printed p. 142, and Theorem 18.4 on printed p. 110.
+**Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.6, manual p. 270, PDF p. 273 (`tmp/sources/munkres-solutions-whitman.pdf`), states the identification but expressly does not prove it ("We shall not show this rigorously as doing so would be tedious"); the argument below is therefore the card's own, and it replaces the card's earlier attribution of the argument to that set. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 6, with the definition of a topological group on printed p. 145, Theorem 22.2 and Corollary 22.3 on printed p. 142, and Theorem 18.4 on printed p. 110.
 
 Throughout, $\ZZ<\RR$ is the subgroup of integers, $\RR/\ZZ$ is the quotient group with the quotient topology, $S^{1}=\theset{z\in\CC\mid\abs{z}=1}$ is the circle group under multiplication, and
 $$
@@ -60,7 +60,7 @@ $\ZZ$ is a subgroup of $(\RR,+)$ under addition, and $(\RR,+)$ is abelian, so $x
 $q$ is continuous and surjective.
 
 ::: pf-proof
-The maps $t\mapsto\cos 2\pi t$ and $t\mapsto\sin 2\pi t$ are continuous real-valued functions of $t$, so $t\mapsto(\cos 2\pi t,\sin 2\pi t)=e^{2\pi it}$ is continuous into $\RR^{2}\cong\CC$ by Theorem 18.4 (printed p. 110), and $\cos^{2}2\pi t+\sin^{2}2\pi t=1$ puts its values in $S^{1}$. For surjectivity, every point of $S^{1}$ has polar coordinates $(\cos\theta,\sin\theta)$ for some angle $\theta$ (each unit vector of the plane has a polar angle), and then $q(\theta/2\pi)$ is that point.
+The maps $t\mapsto\cos 2\pi t$ and $t\mapsto\sin 2\pi t$ are continuous real-valued functions of $t$, so $t\mapsto(\cos 2\pi t,\sin 2\pi t)=e^{2\pi it}$ is continuous into $\RR^{2}\cong\CC$ by Theorem 18.4 , and $\cos^{2}2\pi t+\sin^{2}2\pi t=1$ puts its values in $S^{1}$. For surjectivity, every point of $S^{1}$ has polar coordinates $(\cos\theta,\sin\theta)$ for some angle $\theta$ (each unit vector of the plane has a polar angle), and then $q(\theta/2\pi)$ is that point.
 :::
 
 :::
@@ -87,7 +87,7 @@ Let $U\subset\RR$ be open and write it as a union of open intervals of length at
 $q$ is a quotient map, and it induces a bijection $f\colon\RR/\ZZ\to S^{1}$, $f(t+\ZZ)\coloneqq q(t)$.
 
 ::: pf-proof
-$q$ is surjective and continuous by step [](#q-continuous){.pf-ref} and open by step [](#q-open){.pf-ref}; a surjective continuous open map is a quotient map (§22, printed p. 137). By step [](#fibres){.pf-ref} the map $q$ is constant on each fibre of the quotient map $p\colon\RR\to\RR/\ZZ$ and separates distinct fibres, so it induces a well-defined bijection $f$ with $f\circ p=q$; well-definedness and injectivity are exactly the statement that the fibres of $q$ are the members of $\RR/\ZZ$, and surjectivity is that of $q$.
+$q$ is surjective and continuous by step [](#q-continuous){.pf-ref} and open by step [](#q-open){.pf-ref}; a surjective continuous open map is a quotient map (§22). By step [](#fibres){.pf-ref} the map $q$ is constant on each fibre of the quotient map $p\colon\RR\to\RR/\ZZ$ and separates distinct fibres, so it induces a well-defined bijection $f$ with $f\circ p=q$; well-definedness and injectivity are exactly the statement that the fibres of $q$ are the members of $\RR/\ZZ$, and surjectivity is that of $q$.
 :::
 
 :::
@@ -96,7 +96,7 @@ $q$ is surjective and continuous by step [](#q-continuous){.pf-ref} and open by 
 $f$ is a homeomorphism.
 
 ::: pf-proof
-$f$ is continuous by Theorem 22.2 (printed p. 142) applied to the quotient map $p$ and the map $q$, which is constant on the fibres of $p$. It is open: if $V\subset\RR/\ZZ$ is open, then $p^{-1}(V)$ is open in $\RR$ because $p$ is a quotient map and hence continuous, and
+$f$ is continuous by Theorem 22.2  applied to the quotient map $p$ and the map $q$, which is constant on the fibres of $p$. It is open: if $V\subset\RR/\ZZ$ is open, then $p^{-1}(V)$ is open in $\RR$ because $p$ is a quotient map and hence continuous, and
 $$
 f(V)=f\big(p(p^{-1}(V))\big)=q\big(p^{-1}(V)\big)
 $$

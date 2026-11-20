@@ -37,7 +37,7 @@ Show that if $f$ may be extended to a continuous function $g: \overline{A} \to Y
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.13, PDF p. 13 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); Whitman, *Solutions Manual* (30 November 2019), Exercise 18.13, manual p. 189, has the same proof. The statement was checked against Munkres, *Topology* (2000), §18 Exercise 13.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.13 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); Whitman, *Solutions Manual* (30 November 2019), Exercise 18.13, manual p. 189, has the same proof. The statement was checked against Munkres, *Topology* (2000), §18 Exercise 13.
 
 ::: pf
 

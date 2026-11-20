@@ -44,7 +44,7 @@ Therefore, $x \in \bigcup \overline{A}_\alpha$.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.7, printed pp. 162--163** (`tmp/sources/munkres-solutions-whitman.pdf`); the diagnosis and the counterexample it points to are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.7, PDF p. 7, states the same diagnosis.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.7** (`tmp/sources/munkres-solutions-whitman.pdf`); the diagnosis and the counterexample it points to are his. "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.7, states the same diagnosis.
 
 The criticized argument runs: every neighbourhood $U$ of $x$ meets $\bigcup_{\alpha}A_{\alpha}$, therefore $U$ meets some $A_{\alpha}$, "so that $x$ must belong to the closure of some $A_{\alpha}$".
 

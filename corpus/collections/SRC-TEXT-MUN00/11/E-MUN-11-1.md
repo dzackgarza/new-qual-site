@@ -40,7 +40,7 @@ If $a$ and $b$ are real numbers, define $a \prec b$ if $b - a$ is positive and r
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.1, printed pp. 118--119** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of the maximal simply ordered subsets as the cosets of $\QQ$ is his, and the statement is Munkres, *Topology* (2000), §11 Exercise 1, printed p. 71.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the identification of the maximal simply ordered subsets as the cosets of $\QQ$ is his, and the statement is Munkres, *Topology* (2000), §11 Exercise 1.
 
 ::: pf
 

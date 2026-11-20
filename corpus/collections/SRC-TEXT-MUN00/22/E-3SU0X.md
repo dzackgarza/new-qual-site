@@ -60,7 +60,7 @@ determine the quotient topology on $A$ induced by $p$.
 :::
 
 ::: {.solution}
-The retained published solution is **positron0802, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.1, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the computation of the six preimages is its, with its list of the proper subsets of $A$ corrected.
+The retained published solution is **positron0802, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.1** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the computation of the six preimages is its, with its list of the proper subsets of $A$ corrected.
 
 ::: pf
 

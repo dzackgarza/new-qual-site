@@ -52,7 +52,7 @@ is a bounded metric that gives the topology of $X$.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 20.11, printed p. 231** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer is his. The subadditivity proved below replaces the book's mean-value-theorem hint and gives the same estimate.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 20.11** (`tmp/sources/munkres-solutions-whitman.pdf`); the answer is his. The subadditivity proved below replaces the book's mean-value-theorem hint and gives the same estimate.
 
 Let $d$ be a metric for $X$ and $d'(x,y)=d(x,y)/\big(1+d(x,y)\big)$.
 

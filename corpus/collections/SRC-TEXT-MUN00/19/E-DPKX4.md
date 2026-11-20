@@ -45,7 +45,7 @@ Show that $(X_1 \times \cdots \times X_{n-1}) \times X_n$ is homeomorphic with $
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.4, printed p. 191** (`tmp/sources/munkres-solutions-whitman.pdf`); the map and the two continuity arguments are his. Since the index set $\{1,\dots,n\}$ is finite, the box and product topologies on these finite products coincide, and the box description is used throughout.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.4** (`tmp/sources/munkres-solutions-whitman.pdf`); the map and the two continuity arguments are his. Since the index set $\{1,\dots,n\}$ is finite, the box and product topologies on these finite products coincide, and the box description is used throughout.
 
 ::: pf
 

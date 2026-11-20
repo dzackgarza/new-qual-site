@@ -63,7 +63,7 @@ $$
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.18, printed pp. 171--172** (`tmp/sources/munkres-solutions-whitman.pdf`); the five answers are his, and "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.18, PDF p. 9, gives the same five. His reduction to the limit points of a horizontal slice is stated below in a form that separates the two exceptional heights $0$ and $1$, which is where the dictionary order behaves differently from a product.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.18** (`tmp/sources/munkres-solutions-whitman.pdf`); the five answers are his, and "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.18, gives the same five. His reduction to the limit points of a horizontal slice is stated below in a form that separates the two exceptional heights $0$ and $1$, which is where the dictionary order behaves differently from a product.
 
 Let $I_{o}^{2}=[0,1]\times[0,1]$ carry the dictionary order topology, and let
 $$

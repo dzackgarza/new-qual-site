@@ -54,7 +54,7 @@ Show that $q$ is a quotient map that is neither open nor closed.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.3, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the retraction argument and both witnesses are theirs. Write $A=\theset{x\times y\mid x\ge0\text{ or }y=0}\subset\RR^{2}$ and $q=\pi_{1}\restrict_{A}:A\to\RR$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.3** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the retraction argument and both witnesses are theirs. Write $A=\theset{x\times y\mid x\ge0\text{ or }y=0}\subset\RR^{2}$ and $q=\pi_{1}\restrict_{A}:A\to\RR$.
 
 ::: pf
 

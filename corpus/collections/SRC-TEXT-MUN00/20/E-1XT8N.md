@@ -41,9 +41,9 @@ a homeomorphism?
 
 ::: {.solution}
 
-The three answers are those of **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.7, PDF pp. 19--20 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the $\varepsilon$-$\delta$ and the counterexample at $\mathbf{0}$ are its arguments, the second checked below with the constant sequence $(r,r,\ldots)$ rather than an arbitrary point. The statement was checked against Munkres, *Topology* (2000), §20 Exercise 7, printed p. 127, the map $h$ being the one of §19 Exercise 8, printed p. 118, and the uniform metric the one of §20, printed p. 124.
+The three answers are those of **"positron0802"**, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.7 (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the $\varepsilon$-$\delta$ and the counterexample at $\mathbf{0}$ are its arguments, the second checked below with the constant sequence $(r,r,\ldots)$ rather than an arbitrary point. The statement was checked against Munkres, *Topology* (2000), §20 Exercise 7, the map $h$ being the one of §19 Exercise 8, and the uniform metric the one of §20.
 
-Throughout, $h(\mathbf{x})\coloneqq(a_{1}x_{1}+b_{1},a_{2}x_{2}+b_{2},\ldots)$ with $a_{i}>0$ and $b_{i}$ real, $\mathbb{R}^{\omega}$ carries the uniform metric
+Throughout, $h(\mathbf{x})\coloneqq(a_{1}x_{1}+b_{1},a_{2}x_{2}+b_{2},\ldots)$ with $a_{i}>0$ and $b_{i}$ real, $\RR^{\omega}$ carries the uniform metric
 $$
 \bar\rho(\mathbf{x},\mathbf{y})\coloneqq\sup_{i}\min\theset{\abs{x_{i}-y_{i}},1},
 $$
@@ -78,7 +78,7 @@ If $(a_{i})$ is bounded, say $a_{i}\leq M$ for all $i$, then $h$ is continuous.
 :::: pf-proof
 
 ::: {.pf-step #delta}
-Let $\mathbf{x}\in\mathbb{R}^{\omega}$ and $\varepsilon>0$, and put $\delta\coloneqq\min\theset{\varepsilon/M,1/M}$, where $M>0$ because $a_{i}>0$.
+Let $\mathbf{x}\in\RR^{\omega}$ and $\varepsilon>0$, and put $\delta\coloneqq\min\theset{\varepsilon/M,1/M}$, where $M>0$ because $a_{i}>0$.
 
 ::: pf-proof
 $M\geq a_{1}>0$ under the hypothesis that $a_{i}\leq M$ for all $i$, and $\varepsilon>0$, so both quotients are positive and so is their minimum.

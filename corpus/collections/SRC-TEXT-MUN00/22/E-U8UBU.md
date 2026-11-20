@@ -57,7 +57,7 @@ Conclude that $G/H$ is a homogeneous space.
 :::
 
 ::: {.solution}
-The retained solution set is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.5, printed pp. 266--268** (`tmp/sources/munkres-solutions-whitman.pdf`), which treats all four parts; the steps below are its arguments, with the left-coset conventions of this card. Write $p:G\to G/H$ for the quotient map.
+The retained solution set is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.5** (`tmp/sources/munkres-solutions-whitman.pdf`), which treats all four parts; the steps below are its arguments, with the left-coset conventions of this card. Write $p:G\to G/H$ for the quotient map.
 
 ::: pf
 

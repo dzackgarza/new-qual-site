@@ -51,7 +51,7 @@ Is this fact true if one uses the box topology instead of the product topology?
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.6, printed p. 193** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions of the product statement and the box counterexample are his. Card repair: his array $x_{ij}$ is indexed with $i$ the coordinate and $j$ the position in the sequence, and the statement below says so; an earlier version of this card read the two indices the other way round, which falsifies the convergence of the coordinate sequences.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.6** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions of the product statement and the box counterexample are his. Card repair: his array $x_{ij}$ is indexed with $i$ the coordinate and $j$ the position in the sequence, and the statement below says so; an earlier version of this card read the two indices the other way round, which falsifies the convergence of the coordinate sequences.
 
 Throughout, $(\mathbf{x}_{n})$ is a sequence of points of $\prod_{\alpha\in J}X_{\alpha}$ and $\pi_{\alpha}$ is the projection to $X_{\alpha}$.
 

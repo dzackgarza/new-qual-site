@@ -52,7 +52,7 @@ Let $f: A \to B$ . Let $A_0 \subset A$ and $B_0 \subset B$ .
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.1, printed p. 11** (`tmp/sources/munkres-solutions-whitman.pdf`), whose two arguments are the steps below; the statement is Munkres, *Topology* (2000), §2 Exercise 1, printed p. 20.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.1** (`tmp/sources/munkres-solutions-whitman.pdf`), whose two arguments are the steps below; the statement is Munkres, *Topology* (2000), §2 Exercise 1.
 
 ::: pf
 

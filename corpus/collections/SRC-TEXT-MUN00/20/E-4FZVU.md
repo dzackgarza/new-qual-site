@@ -74,7 +74,7 @@ $$
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts and all four sequences are theirs, and the box and uniform criteria used in (b) are made explicit in steps [](#hier){.pf-ref} and [](#b-box){.pf-ref}.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.4** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts and all four sequences are theirs, and the box and uniform criteria used in (b) are made explicit in steps [](#hier){.pf-ref} and [](#b-box){.pf-ref}.
 
 Write $\mathbf{0}=(0,0,\ldots)$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i}\min\theset{\abs{x_{i}-y_{i}},1}$ for the uniform metric.
 
@@ -84,7 +84,7 @@ Write $\mathbf{0}=(0,0,\ldots)$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_{i}\m
 The product topology is contained in the uniform topology, which is contained in the box topology; all three are Hausdorff; and if a sequence converges in one of them then it converges to the same point in each coarser one.
 
 ::: pf-proof
-The inclusions are Theorem 20.4 (printed p. 124). The product of Hausdorff spaces is Hausdorff, and adding open sets preserves the Hausdorff property, so all three are Hausdorff. If $\mathbf{x}_{n}\to\mathbf{x}$ in a topology and every open set of a coarser topology is open in it, then every neighbourhood of $\mathbf{x}$ in the coarser topology is one in the finer, so $\mathbf{x}_{n}\to\mathbf{x}$ there too; and limits in a Hausdorff space are unique, since two distinct limits would have disjoint neighbourhoods that the sequence would eventually have to lie in at once.
+The inclusions are Theorem 20.4 . The product of Hausdorff spaces is Hausdorff, and adding open sets preserves the Hausdorff property, so all three are Hausdorff. If $\mathbf{x}_{n}\to\mathbf{x}$ in a topology and every open set of a coarser topology is open in it, then every neighbourhood of $\mathbf{x}$ in the coarser topology is one in the finer, so $\mathbf{x}_{n}\to\mathbf{x}$ there too; and limits in a Hausdorff space are unique, since two distinct limits would have disjoint neighbourhoods that the sequence would eventually have to lie in at once.
 :::
 
 :::
@@ -93,7 +93,7 @@ The inclusions are Theorem 20.4 (printed p. 124). The product of Hausdorff space
 (a) In the product topology $f$, $g$ and $h$ are continuous.
 
 ::: pf-proof
-For each $i$ the $i$-th coordinate function of $f$ is $t\mapsto i\,t$, of $g$ is $t\mapsto t$, and of $h$ is $t\mapsto t/i$; each is continuous, since $\abs{ct-cs}=\abs{c}\abs{t-s}$. A map into a product is continuous exactly when all its coordinate functions are (Theorem 19.6, printed p. 117).
+For each $i$ the $i$-th coordinate function of $f$ is $t\mapsto i\,t$, of $g$ is $t\mapsto t$, and of $h$ is $t\mapsto t/i$; each is continuous, since $\abs{ct-cs}=\abs{c}\abs{t-s}$. A map into a product is continuous exactly when all its coordinate functions are (Theorem 19.6).
 :::
 
 :::
@@ -129,7 +129,7 @@ For $s,t\in\RR$ the $i$-th coordinate difference of $g(s),g(t)$ is $\abs{s-t}$, 
 (b) All four sequences converge to $\mathbf{0}$ in the product topology.
 
 ::: pf-proof
-Fix a coordinate $j$. In the four sequences the $j$-th coordinate is: for $\mathbf{w}$, $j$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{x}$ and $\mathbf{y}$, $1/n$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{z}$, $1/n$ for $n\le2$ and $0$ for $n>2$. In every case the $j$-th coordinates tend to $0$. A sequence in a product space converges to $\mathbf{x}$ exactly when each of its coordinate sequences converges to $x_{j}$ (Exercise 19.6, printed p. 118).
+Fix a coordinate $j$. In the four sequences the $j$-th coordinate is: for $\mathbf{w}$, $j$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{x}$ and $\mathbf{y}$, $1/n$ for $n\le j$ and $0$ for $n>j$; for $\mathbf{z}$, $1/n$ for $n\le2$ and $0$ for $n>2$. In every case the $j$-th coordinates tend to $0$. A sequence in a product space converges to $\mathbf{x}$ exactly when each of its coordinate sequences converges to $x_{j}$ (Exercise 19.6).
 :::
 
 :::

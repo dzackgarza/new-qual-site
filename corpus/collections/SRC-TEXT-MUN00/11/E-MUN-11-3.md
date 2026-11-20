@@ -68,7 +68,7 @@ But this will not always work. In which of Examples 1 and 2 will this procedure 
 
 ::: {.solution}
 
-The answer and the printed-set observation are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.3, printed pp. 120--121** (`tmp/sources/munkres-solutions-whitman.pdf`); the verification of Example 1 below replaces his reason by an incomparable pair, which is what the failure of the procedure actually requires, and the maximality in Example 2 is verified in full.
+The answer and the printed-set observation are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 11.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the verification of Example 1 below replaces his reason by an incomparable pair, which is what the failure of the procedure actually requires, and the maximality in Example 2 is verified in full.
 
 First, the set as printed omits $x$: since $\prec$ is a strict partial order, $x\prec x$ never holds, and $y=x$ satisfies neither clause. The candidate is therefore the set printed together with $x$, and it is that repaired set that is judged below.
 

@@ -62,9 +62,9 @@ More than one right inverse?
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.5, printed pp. 16--17** (`tmp/sources/munkres-solutions-whitman.pdf`), all five parts; part (e) is Lemma 2.1 of Munkres, which the book leaves to the exercises.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.5** (`tmp/sources/munkres-solutions-whitman.pdf`), all five parts; part (e) is Lemma 2.1 of Munkres, which the book leaves to the exercises.
 
-Throughout $f:A\to B$ is a function and $i_C:C\to C$ is the identity map of a set $C$; $g:B\to A$ is a left inverse of $f$ when $g\circ f=i_A$, and $h:B\to A$ a right inverse when $f\circ h=i_B$ (§2, printed p. 21).
+Throughout $f:A\to B$ is a function and $i_C:C\to C$ is the identity map of a set $C$; $g:B\to A$ is a left inverse of $f$ when $g\circ f=i_A$, and $h:B\to A$ a right inverse when $f\circ h=i_B$ (§2).
 
 ::: pf
 

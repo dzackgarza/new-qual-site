@@ -58,7 +58,7 @@ Show that (b), (c), (f), and (g) of Exercise 2 hold for arbitrary unions and int
 
 ::: {.solution}
 
-The four parts are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.3, printed pp. 13--14** (`tmp/sources/munkres-solutions-whitman.pdf`); the index set is written $I$ below rather than as a collection $\mathcal{A}$, and the two additions are an explicit counterexample in (g) and the empty-index case.
+The four parts are those of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the index set is written $I$ below rather than as a collection $\mathcal{A}$, and the two additions are an explicit counterexample in (g) and the empty-index case.
 
 Let $f\colon A\to B$, let $\{B_{i}\}_{i\in I}$ be a family of subsets of $B$ and $\{A_{i}\}_{i\in I}$ a family of subsets of $A$. Recall $f^{-1}(S)=\{x\in A\mid f(x)\in S\}$ and $f(T)=\{f(x)\mid x\in T\}$.
 

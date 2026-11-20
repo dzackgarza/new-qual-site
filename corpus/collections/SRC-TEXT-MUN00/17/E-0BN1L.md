@@ -40,9 +40,9 @@ Show that every order topology is Hausdorff.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.10, PDF p. 7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two-ray argument is theirs. Whitman, printed pp. 164--165, gives a longer proof by cases on basis elements; the argument below is the shorter one.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 17.10** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two-ray argument is theirs. Whitman, printed pp. 164--165, gives a longer proof by cases on basis elements; the argument below is the shorter one.
 
-Let $X$ be an ordered set carrying the order topology, and let $x<y$ in $X$. An open ray of $X$ is a basis element of the order topology (§14, printed p. 84).
+Let $X$ be an ordered set carrying the order topology, and let $x<y$ in $X$. An open ray of $X$ is a basis element of the order topology (§14).
 
 ::: pf
 

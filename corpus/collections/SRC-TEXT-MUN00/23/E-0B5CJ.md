@@ -43,7 +43,7 @@ is connected.
 
 ::: {.solution}
 
-The argument is the published solution of **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9, PDF p. 2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the T-shaped sets $U_{x}$ and $V_{y}$ and their union are that solution's, and every step below is checked against Munkres, *Topology* (2000), §23 Exercise 9, with Theorem 23.3 and Theorem 23.5 on printed p. 150. Throughout, $X$ and $Y$ are connected spaces, $A\subsetneq X$ and $B\subsetneq Y$, and $X-A$, $Y-B$ denote complements in $X$ and $Y$.
+The argument is the published solution of **positron0802**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.9 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the T-shaped sets $U_{x}$ and $V_{y}$ and their union are that solution's, and every step below is checked against Munkres, *Topology* (2000), §23 Exercise 9, with Theorem 23.3 and Theorem 23.5 on printed p. 150. Throughout, $X$ and $Y$ are connected spaces, $A\subsetneq X$ and $B\subsetneq Y$, and $X-A$, $Y-B$ denote complements in $X$ and $Y$.
 
 ::: pf
 

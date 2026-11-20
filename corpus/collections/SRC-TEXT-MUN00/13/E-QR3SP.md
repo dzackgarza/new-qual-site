@@ -55,7 +55,7 @@ a topology on $X$?
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.3, printed p. 142** (`tmp/sources/munkres-solutions-whitman.pdf`); both halves are his. He writes $\mathcal{T}_{\alpha}$ for the collection the book calls $\mathcal{T}_{c}$; the notation of the book is kept below.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.3** (`tmp/sources/munkres-solutions-whitman.pdf`); both halves are his. He writes $\mathcal{T}_{\alpha}$ for the collection the book calls $\mathcal{T}_{c}$; the notation of the book is kept below.
 
 Recall from Example 4 of §12 that
 $$

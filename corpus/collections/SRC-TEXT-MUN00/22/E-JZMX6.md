@@ -35,7 +35,7 @@ Show that if $A$ is open in $X$, then the map $q: A \to p(A)$ obtained by restri
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.5, PDF p. 28** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, with the two uses of openness separated below.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.5** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, with the two uses of openness separated below.
 
 Let $p:X\to Y$ be an open map, let $A$ be open in $X$, and put $q=p\restriction_{A}:A\to p(A)$.
 

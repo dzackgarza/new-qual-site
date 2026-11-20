@@ -63,7 +63,7 @@ Find the boundary and the interior of each of the following subsets of $\RR^2$.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.20, printed pp. 174--175** (`tmp/sources/munkres-solutions-whitman.pdf`); the six answers are his, and "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.20, PDF p. 9, gives the same six. Both texts state the answers with the verification abbreviated ("it is easy to show", "would be tedious"); the verifications are supplied below, since the card's obligation is a proof.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.20** (`tmp/sources/munkres-solutions-whitman.pdf`); the six answers are his, and "positron0802", *Solutions to Topology, Chapter 2*, Exercise 17.20, gives the same six. Both texts state the answers with the verification abbreviated ("it is easy to show", "would be tedious"); the verifications are supplied below, since the card's obligation is a proof.
 
 Throughout, a condition such as $x>0$ abbreviates the set $\{(x,y)\in\RR^{2}:x>0\}$, and $\operatorname{Bd}S=\overline{S}\cap\overline{(\RR^{2}-S)}$ as in Exercise 17.19. We use that a point is interior exactly when some ball around it is contained in the set, and that a point lies in the closure of a set exactly when every ball around it meets the set; a ball around $(x,y)$ contains points $(x',y')$ with $x'$ and $y'$ arbitrarily close to $x$ and $y$.
 

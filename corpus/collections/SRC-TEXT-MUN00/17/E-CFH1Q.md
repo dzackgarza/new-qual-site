@@ -48,7 +48,7 @@ is a topology on $X$.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.1, printed p. 158** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his, in the book's notation.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 17.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument is his, in the book's notation.
 
 Let $\mathcal{C}$ be a collection of subsets of $X$ containing $\varnothing$ and $X$ and closed under finite unions and arbitrary intersections, and put $\mathcal{T}=\{X-C\mid C\in\mathcal{C}\}$.
 

@@ -43,7 +43,7 @@ Show that $A$ is open in $X$.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.1, printed p. 141** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument below is his, with the selection of the sets $U_x$ stated as its own step.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 13.1** (`tmp/sources/munkres-solutions-whitman.pdf`); the argument below is his, with the selection of the sets $U_x$ stated as its own step.
 
 ::: pf
 

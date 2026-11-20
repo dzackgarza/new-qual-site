@@ -50,7 +50,7 @@ is not empty.
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.9, printed p. 197** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions are his.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.9** (`tmp/sources/munkres-solutions-whitman.pdf`); both directions are his.
 
 ::: pf
 
@@ -58,7 +58,7 @@ The published solution is **Dan Whitman, *Topology, Second Edition by James Munk
 The choice axiom implies that $\prod_{\alpha\in J}A_{\alpha}\ne\varnothing$ for every indexed family of nonempty sets with $J\ne\varnothing$.
 
 ::: pf-proof
-By the choice axiom in the form of Lemma 9.2 (printed p. 60) there is a choice function $c$ on the collection $\mathcal{A}=\{A_{\alpha}\mid\alpha\in J\}$, that is a function with domain $\mathcal{A}$ and $c(A)\in A$ for every $A\in\mathcal{A}$; the collection is nonempty because $J\ne\varnothing$ and every $A_{\alpha}$ is nonempty. Put $x_{\alpha}=c(A_{\alpha})$. Then $x_{\alpha}\in A_{\alpha}$ for every $\alpha\in J$, so $\mathbf{x}=(x_{\alpha})_{\alpha\in J}$ is an element of $\prod_{\alpha\in J}A_{\alpha}$.
+By the choice axiom in the form of Lemma 9.2  there is a choice function $c$ on the collection $\mathcal{A}=\{A_{\alpha}\mid\alpha\in J\}$, that is a function with domain $\mathcal{A}$ and $c(A)\in A$ for every $A\in\mathcal{A}$; the collection is nonempty because $J\ne\varnothing$ and every $A_{\alpha}$ is nonempty. Put $x_{\alpha}=c(A_{\alpha})$. Then $x_{\alpha}\in A_{\alpha}$ for every $\alpha\in J$, so $\mathbf{x}=(x_{\alpha})_{\alpha\in J}$ is an element of $\prod_{\alpha\in J}A_{\alpha}$.
 :::
 
 :::
