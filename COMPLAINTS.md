@@ -11014,3 +11014,15 @@ unchanged, so none was needed on them. No whole-corpus gate this turn.
 **Uncertainty:** removal is the disposition where a live copy could not be verified, so the reader loses a lead that may still exist in a checkout of the old host. The four unproven timeouts may be dead too; a later pass from a different address would settle them.
 
 **Repair:** this entry and the commit that carries it.
+
+## 2026-11-20: the two residuals on `wiki/algebraic-geometry/resources.md` — one settled by the file, one shown to be stale
+
+**Object and need:** the two items the record above left to a reader and to a tag.
+
+**Observed evidence:** the Borcherds entry dates the 256A answers to 1994 while `- id: Bor12` in `vocabularies/references.yaml` carries `issued: 2012` with the course page as its URL. The retained file settles it: `assets/attachments/Richard Borcherds.pdf` opens "Hartshorne, Chapter 1 Answers to exercises. REB 1994", so 1994 is the date printed on the document and 2012 dates the web page the record points at. The page is right and the record dates something else; nothing on the page changes, and correcting the record needs Zotero, which does not answer. The Stacks locator is the reverse case: `(compare Stacks Project 32.14 on universally closed morphisms)` cannot be confirmed, and the site itself gives the reason — the landing page for `chapter/32` states that "chapter numbers ... can change over time when new results are added" and that chapter 32 currently refers to Chapter 32, *Limits of Schemes*. A section number is therefore not a stable locator, and the parenthesis should be replaced by the tag of the result once that result is identified, or deleted.
+
+**Impact and owner:** the page, in one parenthesis. A tag-bearing reference is the repair `CITE-3` asks for, and the tag cannot be guessed from the chapter number.
+
+**Uncertainty:** the parenthesis may have been right when written, against an older chapter numbering. Its being unverifiable now is evidence about the locator's form, not about whether the underlying comparison holds.
+
+**Repair:** this entry. The remaining page work is that one reference and the four hosts that timeout from this address and are unproven either way.
