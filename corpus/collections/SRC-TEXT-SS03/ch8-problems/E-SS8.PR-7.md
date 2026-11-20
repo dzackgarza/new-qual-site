@@ -36,6 +36,18 @@ audit:
     the Schwarz lemma applied to the extension $\Phi=\psi_\alpha\circ(\cdot)^2\circ\psi_\beta$ of
     $f^{-1}$ to $\DD$, with the derivative computed. (e) the iteration with $r_{K_n}\to1$. Nothing is
     left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 8, Problem 7, which begins on printed p. 258 (PDF p. 277)
+    and ends on p. 259 (PDF p. 278): parts (a)--(e), the paragraph defining $F_n=f_n\circ\cdots\circ f_0$,
+    the paragraph introducing $\psi_\alpha=(\alpha-z)/(1-\overline\alpha z)$, and the printed data
+    $\abs{f'(0)}=(1+r_K)/(2\sqrt{r_K})$. The asterisk the print sets before "7." is recorded in the
+    remark. The defect the remark records was re-read in the print: part (d) does ask for a square
+    root $S$ of $\psi_\alpha$ with $S(0)=0$, and $\psi_\alpha(0)=\alpha\ne0$. Not checked: the
+    argument, which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
@@ -61,7 +73,7 @@ For (a), write $f(z)=zg(z)$ and use the maximum principle. For (b), use the Schw
 :::
 
 ::: {.remark}
-Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
+The book marks this problem with an asterisk (Chapter 8, Problem 7, printed pp. 258--259). Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
 :::
 
 ::: {.solution}
