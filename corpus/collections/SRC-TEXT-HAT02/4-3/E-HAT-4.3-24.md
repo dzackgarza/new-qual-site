@@ -45,6 +45,23 @@ audit:
   date: 2026-11-02
   note: >-
     Cards read. Verdict record is m6__proofs-4-3-1-12.md (1-12: 10 correct, 5 a dimension slip, 9 a wrong assertion; both repaired) and m2__proofs-4-3-13-24.md (13-24: 10 correct, 20 a display misalignment repaired by identifying the principal fibration, 22 the missing converse of an iff, later restated and proved, and 24, whose whole proof was then written). No card in this slice has an unmet piece.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 24, printed p. 420, the relative lifting problem on
+    printed p. 418 and Theorem 4.71 on printed p. 415. The reduction is correct: a homotopy rel
+    $A$ through lifts of $g$ is the relative lifting problem for the CW pair $(W\times I,B)$
+    with $B=W\times\{0\}\cup A\times I\cup W\times\{1\}$, the $(k+1)$-cells of that pair are
+    $e^{k}\times(0,1)$ for the $k$-cells of $(W,A)$, and the cochain isomorphism
+    $c\mapsto\tilde c$, $\tilde c(e^{k})=c(e^{k}\times(0,1))$, carries the cellular coboundary
+    to the coboundary because the product boundary formula's other two terms lie in $B$; hence
+    $H^{n+1}(W\times I,B;\pi_{n}F)\cong H^{n}(W,A;\pi_{n}F)$. The lead now says that no retained
+    solution set covers the exercise --- checked against Sam's set, whose §4.3 has 20 and 23 but
+    not 24, and against the other sets in `tmp/sources`, which have no §4.3 exercises --- so
+    the argument is the card's own. No step changed. Not checked: no certificate; the quote of
+    Hatcher's paragraph following Proposition 4.72 was read in the retained text version, not
+    on a page image.
 
 ---
 
@@ -55,7 +72,7 @@ Show that the obstructions to finding a homotopy rel $A$ between these two lifts
 
 ::: {.solution}
 Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. "The situation of the relative lifting problem" is the one set up on printed p. 418, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 (printed p. 415) holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
-Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
+No retained solution set covers this exercise, so the argument is the card's own. Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
 
 $$
 B=(W\times\{0\})\cup(A\times I)\cup(W\times\{1\})\subset W\times I .
