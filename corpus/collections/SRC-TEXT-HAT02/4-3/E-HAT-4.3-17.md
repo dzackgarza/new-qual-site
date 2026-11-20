@@ -40,6 +40,21 @@ audit:
     associativity up to homotopy, and the reversal formula. Also noted that associativity and
     inverses are not part of the H-space definition, so they are recorded as extra structure rather
     than as needed hypotheses.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.3 Exercise 17, printed p. 420, the definition of an H-space on
+    printed p. 281, and the retained solution of Steven V. Sam, §4.3 Exercise 17, printed p. 28
+    of `tmp/sources/hatcher-solutions-sam-2008.pdf`. The two unit homotopies, the associativity
+    family and the reversal formula are correct: with $a(s)=(1+s)/4$ and $b(s)=(1+s)/2$ the
+    family is $(\alpha*\beta)*\gamma$ at $s=0$ and $\alpha*(\beta*\gamma)$ at $s=1$, and
+    $\alpha((1-s)\min(2t,2-2t))$ contracts $\alpha*\alpha^{-1}$. One structural repair: the
+    closing step only pointed back at the three steps above it, which STYLE-08 refuses, so it is
+    removed and the H-space conclusion, with its argument from the definition, is now the last
+    step; the associativity and inverse steps keep their claims and lose identifiers nothing
+    cites. No mathematics changed. Not checked: no certificate, and the homotopies were checked
+    at their endpoints and for continuity rather than against another written proof.
 
 ---
 
@@ -86,16 +101,7 @@ Define $H(t,s)=\alpha\bigl(\max(0,\,(2t-s)/(2-s))\bigr)$. At $s=0$ the argument 
 
 :::
 
-::: {.pf-step #hspace}
-$(\Omega X,\mu,e)$ is an H-space.
-
-::: pf-proof
-By Hatcher's definition (printed p. 281) an H-space is a space with basepoint $e$ and a continuous multiplication $\mu$ such that $x\mapsto\mu(x,e)$ and $x\mapsto\mu(e,x)$ are homotopic to the identity through maps $(X,e)\to(X,e)$. Here $\mu$ is continuous by step [](#concat){.pf-ref}, and steps [](#right-unit){.pf-ref} and [](#left-unit){.pf-ref} give the two based homotopies from $\mu(-,e)$ and $\mu(e,-)$ to the identity of $\Omega X$.
-:::
-
-:::
-
-::: {.pf-step #assoc}
+::: {.pf-step}
 $\mu$ is associative up to homotopy: $(\alpha*\beta)*\gamma\simeq\alpha*(\beta*\gamma)$ through based loops.
 
 ::: pf-proof
@@ -104,7 +110,7 @@ $(\alpha*\beta)*\gamma$ runs through $\alpha$ on $[0,\tfrac14]$, $\beta$ on $[\t
 
 :::
 
-::: {.pf-step #inverse}
+::: {.pf-step}
 The reversal $\alpha^{-1}(t)=\alpha(1-t)$ satisfies $\alpha*\alpha^{-1}\simeq e\simeq\alpha^{-1}*\alpha$ through based loops.
 
 ::: pf-proof
@@ -114,10 +120,10 @@ $\alpha*\alpha^{-1}$ traverses $\alpha$ and then back along it, that is $(\alpha
 :::
 
 ::: {.pf-step}
-$\Omega X$ is an H-space with multiplication the composition of loops; it is moreover associative and has homotopy inverses, which the definition of an H-space does not require.
+$(\Omega X,\mu,e)$ is an H-space with multiplication the composition of loops.
 
 ::: pf-proof
-Step [](#hspace){.pf-ref} is the assertion of the exercise. Steps [](#assoc){.pf-ref} and [](#inverse){.pf-ref} give the extra structure, recorded because the exercise's multiplication has it; neither is used in step [](#hspace){.pf-ref}, whose hypothesis is only the unit condition.
+By Hatcher's definition (printed p. 281) an H-space is a space with basepoint $e$ and a continuous multiplication $\mu$ such that $x\mapsto\mu(x,e)$ and $x\mapsto\mu(e,x)$ are homotopic to the identity through maps $(X,e)\to(X,e)$. Here $\mu$ is continuous by step [](#concat){.pf-ref}, and steps [](#right-unit){.pf-ref} and [](#left-unit){.pf-ref} give the two based homotopies from $\mu(-,e)$ and $\mu(e,-)$ to the identity of $\Omega X$; that is exactly the definition.
 :::
 
 :::
