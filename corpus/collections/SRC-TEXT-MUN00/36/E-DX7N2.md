@@ -116,6 +116,31 @@ audit:
     Supplementary Exercises, before Exercise 1, on printed p. 228, and Exercise 6 is printed on
     p. 229. The five positive entries and the other ten negative ones were re-read and kept.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against the Supplementary Exercises: Review of the Basics, Exercise 6, and found
+    correct: exactly (1), (2), (5), (14) and (15) are preserved, and each of the other twelve has a
+    continuous surjection whose domain has the property and whose image does not. The positive
+    entries are Theorem 23.5, the path construction of §24, Theorem 26.5, the pullback of a cover
+    and $f(\overline D)\subseteq\overline{f(D)}$. Two negative entries were checked with
+    particular care because they are the ones a reader is likely to doubt. (13): a continuous image
+    of a second countable space need not be second countable, and the card's witness is right --
+    the identity from $\RR$ with its usual topology onto $\RR$ with the finite complement
+    topology is continuous because finite sets are closed in $\RR$, and the target is not second
+    countable, since for a countable family $B_n$ with finite complements some $y$ lies in every
+    nonempty $B_n$ and then $\RR\setminus\{y\}$ is open and contains none of them; what fails in
+    the naive argument is that a continuous map does not carry open sets to open sets, so the images
+    of a basis need not be open in the target. (6): the witness $\ZZ_+\times Y$ with $Y$ two points
+    carrying the indiscrete topology is Example 1 of §28, limit point compact though not compact,
+    and its projection onto the discrete $\ZZ_+$ destroys limit point compactness, which answers
+    Exercise 28.3(a) in the negative and shows that the $T_1$ equivalence of limit point
+    compactness with countable compactness is what the example evades. Also checked: (16) and (17)
+    by the identity from $\RR$ with the discrete topology onto the Sorgenfrey line, regular and
+    Lindelöf but not metrizable by Exercise 30.6, hence not locally metrizable by Exercise 34.8;
+    and (11) by the transfer of cardinality, $\abs{\RR_\ell^2}=\abs{\RR}$. Not checked: no
+    published key to these exercises was located, and none is claimed.
 ---
 
 ::: {.exercise}
