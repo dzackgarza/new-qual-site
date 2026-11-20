@@ -449,6 +449,55 @@ audit:
     The remark now names Yang Pi-Yeh's Solution 4.3.11 at printed
     p. 89 beside the entries already there. No step, statement or
     hypothesis of the card changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168: steps centre, lemma-criterion, corollary,
+    veronese-conic, secant-dim-lower, and the bodies of secant-dim and
+    closed-immersion-b.
+
+    Harris's Proposition 11.24 and the Veronese paragraph of his Example 11.22
+    were re-read in the retained extraction: the bound 2k+1 with its equality
+    criterion, and the passage concluding that the secant variety of the Veronese
+    surface is at most four-dimensional, with the parenthetical that it cannot be
+    smaller. Shafarevich's Lemma, his Corollary 2.7 and the proof of his Theorem
+    2.25 were re-read in the retained extraction and are as the steps quote them,
+    including the tangent-locus count and the final step of the dimension count;
+    the remark's observation that the printed Gamma contains the diagonal, and so
+    has image all of P^N, is right, since for b=c every a is collinear with them.
+    centre: with dim Sec(X) at most 2r+1 and dim U_2 at most 2r, the union of X,
+    Sec(X) and the closure of U_2 is a proper closed subset when n>2r+1, and a
+    point outside it is a centre of the kind required.
+    lemma-criterion: the Nakayama argument was read line by line and is a
+    faithful transcription: m_x=f^*(m_y)O_x follows from Nakayama, O_x is finite
+    over f^*(O_y) by the Nullstellensatz argument separating y from f(V(alpha)),
+    the quotient O_x/f^*(m_y)O_x is the residue field so the second Nakayama step
+    gives f^*(O_y)=O_x, and a principal open set then carries a basis to the
+    smaller ring. corollary: the three hypotheses on O were checked against the
+    three closed sets removed; the projection is finite by the cited Theorem
+    1.15, so the lemma applies, and the image is closed because X is projective.
+    veronese-conic: recomputed. The restriction of the quadratic Veronese
+    embedding to a line is [s:t] -> [s^2:st:t^2], a smooth conic spanning a
+    plane, so the secant line joining two of its points lies in that plane.
+    secant-dim-lower: recomputed. For a reducible conic Q in P^2, h^0(P^2,O(2))
+    is 6 and h^0(Q,O_Q(2)) is 5, so the span of nu_2(Q) is a P^4; that span is
+    the span of the planes of the two lines, which therefore meet only in p; the
+    planes over the pencil of lines through p_0 form a three-dimensional union;
+    were the secant variety three-dimensional it would equal that union for every
+    p, so joining a point of Sec(X) to a point of X would stay inside it, and
+    adjoining the points of X one at a time would put the linear span of X, which
+    is P^5, inside Sec(X). One wording repair was made here: the step read "for k
+    large enough that p_0,...,p_k span X", which a finite set of points cannot
+    do, and now reads "span P^5", which is what the next clause uses.
+    secant-dim and closed-immersion-b: both bodies were read; the first is the
+    conjunction of the two bounds with both sources' statements of them, and the
+    second chooses a point outside the four-dimensional secant variety, notes
+    that secant lines and embedded tangent planes both lie inside it, and applies
+    the criterion of step corollary, the image being closed because X is proper.
+    Not checked: Shafarevich's Theorem 1.15 and the earlier chapters, cited for
+    the finiteness of the projection and not retained; and the entries of Egbert
+    and of Yang Pi-Yeh, quoted in the bodies and recorded by earlier events.
 ---
 
 ::: {.problem}
@@ -704,7 +753,7 @@ That span is $\langle\Pi_\ell,\Pi_{\ell'}\rangle$, hence four-dimensional, so $\
 The pencil through $p_0$ is one-dimensional, and the planes $\Pi_\ell$ are pairwise distinct; their union $C_p$ is the cone over $X$ with vertex $p$, hence is three-dimensional.
 Were $\dim\operatorname{Sec}(X)$ equal to $3$, $C_p$ would therefore be all of $\operatorname{Sec}(X)$ for every $p\in X$: the secant variety would be a cone with vertex at each point of $X$, and for $x\in\operatorname{Sec}(X)$ and $p\in X$ the line $\overline{px}$ would lie in $\operatorname{Sec}(X)$, since $x$ lies in one of the planes $\Pi_\ell$ of $C_p$ and that plane contains $p$.
 Now let $\Lambda\subseteq\operatorname{Sec}(X)$ be a linear subspace and $p\in X$; the span $\langle\Lambda,p\rangle$ lies in $\operatorname{Sec}(X)$, being the union of the lines $\overline{py}$ over $y\in\Lambda$, or $\Lambda$ itself when $p\in\Lambda$.
-Adjoining points of $X$ one at a time to a first point $p_0\in X$, each span $\langle p_0,p_1,\dots,p_k\rangle$ therefore lies in $\operatorname{Sec}(X)$; for $k$ large enough that $p_0,\dots,p_k$ span $X$, which exists because $X$ spans $\PP^5$, the whole of $\PP^5$ lies in $\operatorname{Sec}(X)$, against $\dim\operatorname{Sec}(X)=3$.
+Adjoining points of $X$ one at a time to a first point $p_0\in X$, each span $\langle p_0,p_1,\dots,p_k\rangle$ therefore lies in $\operatorname{Sec}(X)$; for $k$ large enough that $p_0,\dots,p_k$ span $\PP^5$, which exists because $X$ spans $\PP^5$, the whole of $\PP^5$ lies in $\operatorname{Sec}(X)$, against $\dim\operatorname{Sec}(X)=3$.
 Hence $\dim\operatorname{Sec}(X)\ge4$.
 
 :::
