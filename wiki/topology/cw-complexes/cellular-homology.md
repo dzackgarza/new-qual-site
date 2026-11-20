@@ -9,10 +9,7 @@ topics:
 
 # Cellular homology
 
-The cellular chain complex of a [[D-ZOU5G|CW complex]] $X$ has differentials lowering degree:
-$$
-C_*(X) = \qty{0 \leftarrow C_0 \xleftarrow{\ \del_1\ } C_1 \xleftarrow{\ \del_2\ } C_2 \leftarrow \cdots }.
-$$
+The cellular chain complex computes the singular homology of a [[D-ZOU5G|CW complex]] from its cell structure, with differentials that lower degree.
 
 ## The cellular chain complex
 
