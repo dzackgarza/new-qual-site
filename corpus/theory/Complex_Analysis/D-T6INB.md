@@ -19,6 +19,8 @@ For such $L$ and $\alpha\in\CC$, the \dfn{branch of $z^\alpha$} determined by $L
 $$
 z^\alpha\coloneqq e^{\alpha L(z)},\qquad z\in\Omega.
 $$
+
+This is the construction of [@SS03, ch. 3, §6, The complex logarithm], which after defining a logarithm on a simply connected domain defines $z^\alpha=e^{\alpha\log z}$ there, with $\log 1=0$; the card states it for an arbitrary branch $L$ rather than the one normalised at $1$, which gives the same family of branches.
 :::
 
 ::: {.remark}
