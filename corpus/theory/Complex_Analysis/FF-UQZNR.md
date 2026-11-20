@@ -22,4 +22,6 @@ For $0<\abs{z}<\pi$,
 $$
 {1\over \sin(z)} = \frac{1}{z}+\frac{1}{3 !} z+\frac{7}{360} z^{3}+O\qty{z^{5}}.
 $$
+
+This is the Laurent development of [@Ahl73, ch. 5, §1.3, The Laurent Series] on the annulus $0<\abs z<\pi$: the section gives the coefficients of $\sum A_n(z-a)^n$ by its formula (3) and those of the negative powers by the integral that follows it, both taken on a circle about $a=0$ inside the annulus. The principal part is the single term $1/z$ because $\sin z$ has a simple zero at $0$, and the odd coefficients are those integrals evaluated on a small circle.
 :::
