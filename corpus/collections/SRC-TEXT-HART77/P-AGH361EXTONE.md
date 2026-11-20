@@ -30,7 +30,7 @@ $$
 $$
 in $\Mod(X)$.
 Two extensions are isomorphic if there is an isomorphism of the short exact sequences, inducing the identity maps on $\mcf'$ and $\mcf''$.
-Given an extension as above, consider the long exact sequence arising from $\Hom(\mcf'', \wait)$, in particular the map
+Given an extension as above, consider the long exact sequence arising from $\Hom(\mcf'', -)$, in particular the map
 $$
 \delta: \Hom(\mcf'', \mcf'') \to \Ext^1(\mcf'', \mcf'),
 $$
