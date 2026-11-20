@@ -10,9 +10,9 @@ topics:
 # Morphisms
 
 Let $f,g\colon X\to Y$ be morphisms of $S$-schemes with $X$ reduced and $Y$ separated over $S$.
-If $f$ and $g$ agree on a dense open subset of $X$, then $f=g$.
-Separatedness is needed: the two open immersions of $\AA^1_k$ into the line with doubled origin agree on $\AA^1_k\setminus\{0\}$.
-Reducedness is needed: on $X=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon)$, the morphisms $X\to\AA^1_k$ given by $0$ and $\varepsilon$ agree on the dense open subset $D(x)$, where $\varepsilon=0$.
+If $f$ and $g$ agree on a dense open subset of $X$, then $f=g$ ([[P-AGH242AGREEDENSE]]).
+Separatedness is needed: the two open immersions of $\AA^1_k$ into the line with doubled origin agree on $\AA^1_k\setminus\{0\}$ ([[FE-SCHLINE]]).
+Reducedness is needed: on $X=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon)$, the morphisms $X\to\AA^1_k$ given by $0$ and $\varepsilon$ agree on the dense open subset $D(x)$, where $\varepsilon=0$ ([[P-AGH242AGREEDENSE]]).
 
 ## Syllabus
 

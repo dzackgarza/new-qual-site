@@ -9,8 +9,8 @@ topics:
 
 # Divisors
 
-On a noetherian integral separated scheme $X$ whose local rings are unique factorization domains, Weil and Cartier divisors agree and $\Cl X\cong\Pic X$; a rational function $f\in K(X)^\times$ has Weil divisor $\operatorname{div}f=\sum_Yv_Y(f)\,Y$, the sum over prime divisors $Y$ with valuation $v_Y$.
-For a singular curve, $\Pic$ is computed by comparison with the normalization: over an algebraically closed field $k$, the nodal plane cubic has $\Pic^0\cong k^\times$ and the cuspidal plane cubic has $\Pic^0\cong k$.
+On a noetherian integral separated scheme $X$ whose local rings are unique factorization domains, Weil and Cartier divisors agree and $\Cl X\cong\Pic X$ ([[D-5PQ5W]], [[PR-DIVLB]]); a rational function $f\in K(X)^\times$ has Weil divisor $\operatorname{div}f=\sum_Yv_Y(f)\,Y$, the sum over prime divisors $Y$ with valuation $v_Y$ ([[D-5PQ5W]]).
+For a singular curve, $\Pic$ is computed by comparison with the normalization: over an algebraically closed field $k$, the nodal plane cubic has $\Pic^0\cong k^\times$ and the cuspidal plane cubic has $\Pic^0\cong k$ ([[FE-ADOKK]]).
 
 ## Syllabus
 

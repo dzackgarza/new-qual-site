@@ -9,7 +9,7 @@ topics:
 
 # Schemes
 
-This chapter covers $\Spec$ and $\Proj$, gluing, fibre products, and the properties of a scheme (reduced, irreducible, integral, noetherian) that are read off its rings.
+$\Spec A$ is the set of prime ideals of $A$ with the Zariski topology and a structure sheaf ([[D-VKR54]]), $\Proj S$ is the corresponding construction for a graded ring ([[T-SCHPRJC]]), and gluing along open subschemes ([[D-SCHGLUE]]) and fibre products ([[D-SCHFPR]]) assemble the schemes the chapter uses.
 
 ## Syllabus
 

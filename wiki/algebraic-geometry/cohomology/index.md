@@ -9,8 +9,8 @@ topics:
 
 # Cohomology
 
-$H^1(X,\OO_X^\times)\cong\Pic X$, and for $\OO_X$-modules $\mcf,\mcg$ with $\mcg$ locally free, $\Ext^1(\mcg,\mcf)\cong H^1(X,\mcf\otimes\mcg^\vee)$ classifies extensions of $\mcg$ by $\mcf$.
-By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a noetherian scheme $X$ is affine if and only if $H^1(X,\mci)=0$ for every coherent ideal sheaf $\mci\subseteq\OO_X$.
+$\Ext^1(\mcg,\mcf)$ classifies extensions of $\mcg$ by $\mcf$ ([[D-DEFEXT]]), and $H^1(X,\OO_X^\times)\cong\Pic X$ ([[D-MODPIC]]).
+By Serre's criterion, a noetherian scheme $X$ is affine if and only if $H^1(X,\mci)=0$ for every coherent ideal sheaf $\mci\subseteq\OO_X$ ([[T-5IOUR]]).
 
 ## Syllabus
 
