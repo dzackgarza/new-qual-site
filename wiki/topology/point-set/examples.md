@@ -101,11 +101,11 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 
 - [[D-JKH35|Cartesian product]] $A\cross B$
 - [[D-IGUUS|Wedge sum]] $A \vee B$
-- Connected sum $A\# B$, gluing $A$ and $B$ with open discs removed along their boundary spheres [[D-SPHER|discs and spheres]]
+- [[D-CSUMM|Connected sum]] $A\# B$
 - [[D-ITBUT|Quotient]] $A/B$ by a subspace
 - Puncturing, the [[D-LB2LS|subspace]] $A\sm \theset{a_{1},\ldots,a_k}$
 - [[D-R4ZCL|Smash product]] $A\wedge B$
-- Join $A\ast B$, the quotient of $A\cross B\cross I$ collapsing $A\cross B\cross\theset{0}$ and $A\cross B\cross\theset{1}$ to points
+- [[D-JOINX|Join]] $A\ast B$
 - [[D-II4M4|Cone]] $CA$
 - [[D-RZKQD|Suspension]] $\Sigma A$
 - [[D-T5Q3V|Loop space]] $\Omega A$
