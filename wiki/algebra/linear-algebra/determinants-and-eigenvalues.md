@@ -120,8 +120,6 @@ A product of upper-triangular matrices is upper triangular, and its $i$th diagon
 
 ## Matrix groups
 
-The classical groups are the invertible matrices preserving one form: the orthogonal group preserves the standard symmetric form, the unitary group the standard Hermitian one, and the symplectic group the standard alternating one, with the special linear, special orthogonal and special unitary groups cut out by determinant $1$.
-
 [[D-J5AAX]]
 
 [[D-P5D3T]]
