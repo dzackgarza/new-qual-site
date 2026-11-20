@@ -34,6 +34,7 @@ by additivity of reduced homology over a wedge [[PR-B6BB2]], with $\tilde H_n(S^
 ## Computed homology groups
 
 ::: {.example title="Spheres"}
+For $n\geq 1$,
 $$
 H_{i}(S^n) = 
 \begin{cases}
@@ -42,6 +43,7 @@ H_{i}(S^n) =
 0 & \text{else}.
 \end{cases}
 $$
+The reduced groups are [@Hat02, Corollary 2.14], and $S^n$ is path connected.
 
 :::
 
@@ -89,7 +91,7 @@ The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which def
 
 [[PR-P222G]]
 
-For the cellular filtration of a CW complex, $H_j(X^{(k)},X^{(k-1)})\cong\ZZ[\theset{\text{$k$-cells of $X$}}]$ for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
+For the cellular filtration of a CW complex, the [[D-CELLHM|cellular chain group]] $H_j(X^{(k)},X^{(k-1)})$ is free abelian on the $k$-cells for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
 
 ## Exercises
 
