@@ -85,6 +85,18 @@ audit:
     outline carried out. Citation by number: §43 Exercise 9, read in
     `tmp/sources/munkres-2000-topology.md`.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The last step of
+    part (c) drew membership of $h(x_k)$ in the open ball of radius $\varepsilon$ about
+    $[\mathbf x]$ from the bound $D\le\varepsilon$, and an open ball asks for strict inequality.
+    The Cauchy condition is now run at $\varepsilon/2$, so the limit satisfies
+    $D(h(x_k),[\mathbf x])\le\varepsilon/2<\varepsilon$. Convergence and density stand. Not
+    changed: the five part headings read as labels rather than claims; each of their proofs
+    carries the corresponding assertions.
+
 ---
 
 ::: {.exercise}
@@ -239,7 +251,7 @@ This is the definition of $D$ applied to the constant sequence at $x_k$ and to $
 :::
 
 ::: pf-step
-Given $\varepsilon > 0$, choose $N$ such that $d(x_k, x_n) < \varepsilon$ for all $k, n \ge N$.
+Given $\varepsilon > 0$, choose $N$ such that $d(x_k, x_n) < \varepsilon/2$ for all $k, n \ge N$.
 
 ::: pf-proof
 This is the Cauchy condition for the sequence $\mathbf{x}$, read with $\varepsilon$ as the bound.
@@ -248,7 +260,7 @@ This is the Cauchy condition for the sequence $\mathbf{x}$, read with $\varepsil
 :::
 
 ::: pf-step
-Taking $n \to \infty$ yields $D(h(x_k), [\mathbf{x}]) \le \varepsilon$ for all $k \ge N$.
+Taking $n \to \infty$ yields $D(h(x_k), [\mathbf{x}]) \le \varepsilon/2 < \varepsilon$ for all $k \ge N$.
 
 ::: pf-proof
 For fixed $k\ge N$ every term $d(x_k,x_n)$ with $n\ge N$ is less than $\varepsilon$, and a limit of real numbers all less than $\varepsilon$ is at most $\varepsilon$; the limit is $D(h(x_k),[\mathbf{x}])$ by the second subclaim.
