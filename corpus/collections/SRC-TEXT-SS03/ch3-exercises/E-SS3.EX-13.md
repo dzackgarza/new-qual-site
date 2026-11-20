@@ -23,6 +23,15 @@ audit:
       collection provenance is the Google Books ISBN link), so the printed statement and page were
       not re-read; the exercise number is the one the collection index records. No published
       solution is transcribed; the argument remains the card's own, as its solution section says.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The book is retained in this repository, and it was read for this edit: Chapter 3, Exercise 13
+      is the removable-singularity problem with hypothesis $\abs{f(z)}\le A\abs{z-z_0}^{-1+\epsilon}$,
+      as the card prints it. The solution's opening sentence now cites that numbered statement and
+      the printed page is gone from the rendered text. Statement unchanged; the argument was not
+      re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -34,7 +43,7 @@ for some $\epsilon > 0$, and all $z$ near $z_0$. Show that the singularity of $f
 :::
 
 ::: {.solution}
-The statement is Exercise 13 of [@SS03, ch. 3 (p. 105)], printed with the hypothesis $\abs{f(z)}\le A\abs{z-z_0}^{-1+\epsilon}$ for some $\epsilon>0$ and all $z$ near $z_0$.
+The statement is Exercise 13 of [@SS03, ch. 3], printed with the hypothesis $\abs{f(z)}\le A\abs{z-z_0}^{-1+\epsilon}$ for some $\epsilon>0$ and all $z$ near $z_0$.
 
 
 The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 3, Exercise 13. Here $f$ is holomorphic on a punctured disc $D_r(z_0)-\theset{z_0}$ and satisfies $\abs{f(z)}\leq A\abs{z-z_0}^{-1+\epsilon}$ for some $\epsilon>0$, some $A$ and all $z$ near $z_0$; after translating, $z_0=0$, and $f(z)=\sum_{n\in\ZZ}a_nz^{n}$ is its Laurent expansion on an annulus $0<\abs{z}<\rho$.
