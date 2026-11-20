@@ -22,5 +22,5 @@ Then the [[D-QK5BM|Euler characteristics]] satisfy
 $$
 \chi(A \# B) = \chi(A) + \chi(B) - 2
 $$
-[@Hat02].
+[@Hat02, §2.2].
 :::
