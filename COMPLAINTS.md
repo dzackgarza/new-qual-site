@@ -9597,3 +9597,19 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: the three steps named, and the arithmetic of the counts. Not read: `twenty-seven-lines`, `incidence-ten-and-sixteen`, `three-line-families`, the four family criteria, and the four steps after `incidence-relations-open`. So #168's acceptance is not met for V.4.16, and V.5.6 and V.5.8(b) are not reached. The next round on this card should re-derive `ab-family-incidence` from the equation and check it against Gathmann's printed p. 90 before anything built on it is accepted.
+
+## 2026-11-19: #168's eighteenth round — V.4.16's family criteria re-derived from the equations
+
+**Object and need.** The seventeenth round checked V.4.16's two counts and said plainly that the four family criteria behind them were not re-derived. This round derived them. No card is changed: the criteria are correct as printed on the card.
+
+**The 27 lines are the lines, and they lie on $S$.** With $\omega$ a primitive cube root, $A_{ab}=V(x_0+\omega^ax_1,\ x_2+\omega^bx_3)$ and the two analogous families with the other pairings. On $A_{ab}$ one has $x_0^3=-\omega^{3a}x_1^3=-x_1^3$ and $x_2^3=-x_3^3$, so $x_0^3+x_1^3+x_2^3+x_3^3=0$ identically on it; the same computation with the pairings of $B_{ab}$ and $C_{ab}$ puts those on $S$ too. Nine in each family, three pairings of four coordinates, $27$.
+
+**`same-family-incidence` is correct.** For $a=c$ and $b\ne d$ the two $x_2,x_3$ equations give $(\omega^b-\omega^d)x_3=0$, so $x_3=x_2=0$, and the common $x_0,x_1$ equation leaves the point $[-\omega^a:1:0:0]$; for $b=d$ and $a\ne c$ the same argument leaves $[0:0:-\omega^b:1]$; for $a\ne c$ and $b\ne d$ the first pair forces $x_0=x_1=0$ and the second $x_2=x_3=0$, so nothing. That is four meetings per line in its own family.
+
+**`ab-family-incidence` is correct, and I recomputed the congruence.** A common point forces $x_1=-\omega^dx_3$ and $x_2=-\omega^bx_3$ from the $B$- and $A$-equations, and the two expressions for $x_0$ are $-\omega^ax_1=\omega^{a+d}x_3$ and $-\omega^cx_2=\omega^{b+c}x_3$; they agree exactly when $a+d\equiv b+c\pmod 3$, and then $x_3=1$ gives the unique point. So each $A_{ab}$ meets one $B$-line for each $c$, three in all.
+
+**The two remaining criteria have the same shape and give the same count.** For $A_{ab}$ against $C_{cd}=V(x_0+\omega^cx_3,\ x_1+\omega^dx_2)$ the two expressions for $x_0$ are $-\omega^{a+b+d}x_3$ and $-\omega^cx_3$, so the condition is $a+b+d\equiv c$, one $C$-line for each $d$; the $B$-$C$ pairing is the coordinate permutation of the $A$-$B$ one. Hence $4+3+3=10$ and skewness to $16$, as `incidence-count-ten-sixteen` concludes, and the counts are now anchored in criteria I have derived rather than taken.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read and re-derived: `three-line-families`, `same-family-incidence`, `ab-family-incidence`, with `ac` and `bc` reproduced by the same computation but not read in their step bodies. Not read: `twenty-seven-lines`, `incidence-ten-and-sixteen`, the bodies of `ac-family-incidence` and `bc-family-incidence`, `two-skew-lines-meet-five` beyond the count checked last round, and the four trailing steps. Gathmann's printed p. 90 was not re-opened; the criteria above are checked against the equations, not against his page. So #168's acceptance is closer for V.4.16 but not met, and V.5.6 and V.5.8(b) remain unread.
