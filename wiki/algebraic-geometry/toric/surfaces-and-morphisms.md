@@ -42,6 +42,7 @@ Contracting reverses all four ([[T-TORSURF]]).
 
 The fan of a weighted projective space is simplicial ([[FE-TORWPS]]), so it is $\QQ$-factorial, with $\Pic$ of finite index in $\Cl$ ([[PR-FULCRIT]], [[T-TORDIV]]); $\PP(1,1,2)$ is singular, being the projective cone over a conic ([[FE-TORWPS]]).
 The three-dimensional cone on $(1,0,0)$, $(0,1,0)$, $(1,0,1)$, $(0,1,1)$ is not simplicial, and its affine toric variety is $V(xy-zw)$, the cone over the quadric surface ([[T-TORDIV]]).
+That cone has two small resolutions, each an isomorphism away from the vertex with a $\PP^1$ over it, and they are not isomorphic over the cone ([[FE-207WC]]).
 
 ## Cohomology of smooth toric varieties
 

@@ -52,9 +52,6 @@ The Betti number formula is the Hilbert series of that presentation, and in the 
 [[D-TORMOMENT]]
 
 Over $\CC$ the projective toric variety $X_P$ of a lattice polytope $P$ carries the action of the compact torus $T_c\cong(S^1)^n$, and the moment map $\mu\colon X_P\to P$ has image $P$ ([[D-TORMOMENT]]).
-The map $\mu$ is not a torus bundle over $P$: over the relative interior of a face $F$ of dimension $k$ the fibre is the compact torus of the orbit $O(F)$, of real dimension $k$, so $X_P$ is a union of torus bundles over the relative interiors of the faces, and the orbit stratification of $X_P$ is the face stratification of $P$.
-
-## What the topology does not see
+The map $\mu$ is not a torus bundle over $P$: over the relative interior of a face $F$ of dimension $k$ the fibre is the orbit attached to $F$ ([[D-TORMOMENT]]), a compact torus of real dimension $2k$, because the cone $\sigma_F$ of the normal fan has dimension $n-k$ ([[D-TORPOLY]]) and an orbit of dimension $n-\dim\sigma$ corresponds to a cone $\sigma$ ([[PR-O8V3I]]); so $X_P$ is a union of torus bundles over the relative interiors of the faces, and the orbit stratification of $X_P$ is the face stratification of $P$.
 
 The Euler characteristic and the Betti numbers are blind to the lattice embedding except through the cone counts, so $\FF_0$ and $\FF_1$ have the same Betti numbers and are not isomorphic; the finer invariant is the intersection form, which sees $a$ ([[FE-TORHIRZ]]).
-The fundamental group computation is a statement about $X_\Sigma(\CC)$ with its classical topology ([[PR-TORMOR]]).

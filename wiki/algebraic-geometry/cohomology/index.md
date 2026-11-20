@@ -10,6 +10,7 @@ topics:
 # Cohomology
 
 $\Ext^1(\mcg,\mcf)$ classifies extensions of $\mcg$ by $\mcf$ ([[D-DEFEXT]]), and $H^1(X,\OO_X^\times)\cong\Pic X$ ([[D-MODPIC]]).
+For a locally free $\mcg$ of finite rank, $\Ext^1(\mcg,\mcf)\cong H^1(X,\mcf\otimes\dualof{\mcg})$ ([[T-D8DMU]]).
 By Serre's criterion, a noetherian scheme $X$ is affine if and only if $H^1(X,\mci)=0$ for every coherent ideal sheaf $\mci\subseteq\OO_X$ ([[T-5IOUR]]).
 
 ## Syllabus
