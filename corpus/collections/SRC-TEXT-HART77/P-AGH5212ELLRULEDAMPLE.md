@@ -229,6 +229,35 @@ audit:
     tmp/sources/hartshorne-1977-algebraic-geometry.md. No citation, page or
     statement changed.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168, all seven steps, against Hartshorne's Exercise V.2.12,
+    its Theorem V.2.12 and Theorem V.2.15, Fuentes' Lemma 1.2, Propositions
+    1.3, 1.4, 1.5, 2.2, 2.3, 2.10 and 2.11 and Theorem 2.7, and
+    Fuentes--Pedreira's Proposition 3.4, Theorem 3.9(3) and Corollaries 2.4, 2.9
+    and 2.13. Read and checked: s1's two criteria on an elliptic curve, which is
+    Lemma 1.2 in full; s2's transcription of Proposition 1.3 with both cases and
+    the correction of its printed case (d), where deg(mathfrak e) <= 0 is meant;
+    s3's use of Proposition 2.10 and its four low-degree cases, and of
+    Fuentes--Pedreira's Corollary 2.4; s4's reduction, where Hartshorne's
+    Theorem V.2.12(a) and Theorem V.2.15 are genuine numbered theorems of the
+    book and not the exercise numbering, and the irreducible-member arguments of
+    Proposition 1.5, Proposition 2.2 and Proposition 2.3; s5's and s6's two
+    directions, noting that Proposition 1.4's printed proof gives only the
+    sufficiency; and s7's assembly, where at e = -1 the bounds are m >= 1 and
+    m >= 2 and the Note's special case is m = 1.
+    One repair, in the remark and not in a step: its account of Yang Pi-Yeh's
+    exercise 5.2.12 gave his three values as 2, 4 and 0 and the corrections as
+    3, 5 and 1 without saying what each correction rests on. It now says that
+    his 2 equates the count on the surface with the count 2 on the curve and
+    drops the second summand, that his 4 is 5, and that his 0 cannot hold: one
+    summand of that count is a divisor of degree 1 on the elliptic curve and
+    carries a section, so the value is at least 1.
+    Not checked: Fuentes' Theorem 2.1, from which his Theorem 2.7 is proved and
+    which the steps do not use; and no solution set other than those the remark
+    names.
 ---
 
 ::: {.problem}
@@ -366,5 +395,5 @@ Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1, 6
 
 Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is the paper Fuentes cites as [2] throughout, in an earlier numbering: its Theorem 3.9(3), is the very-ampleness criterion $\linearsystem{X_0+\mfb f}$ very ample if and only if $\mfb$ and $\mfb+\mfe$ are, which Fuentes cites as [2, Theorem 2.8]; its Corollary 2.13, is the criterion $h^0(H-(P+Q)f)=h^0(H)-4$, cited as [2, Theorem 1.10]; its Corollary 2.4, is the base-point-free criterion $h^0(H-Pf)=h^0(H)-2$, cited as [2, Corollary 1.4]; its Corollary 2.9, is the base-point-free criterion for a section $\linearsystem{X_0+\mfb f}$, cited as [2, Corollary 1.8]; its Theorem 3.2(1), is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.6, is the irreducible-element criterion, cited as [2, Theorem 2.5]; and its Proposition 3.4, is the base-point criterion on a decomposable surface, cited as [2, Proposition 2.3]. Each number Fuentes cites, including [2, Corollary 1.8] in Propositions 2.2 and 2.10, points at one of these. Every one of those is proved in that paper, and Corollary 2.13's two directions are Theorem 2.11, and the two base-point criteria.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its two absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, and the values $4$ and $0$ it gives are $5$ and $1$. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 12 of §2.
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.12, gives one line per part, "This is Fuentes, Pedreira Prop 1.3" and "Fuentes, Predeira prop 1.4", and no argument. Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.12, printed pp. 104--105, disposes of $e\ge0$ as "trivial by corollary 3.2 in chapter IV and 5.2.11" and its $e=-1$ computation is garbled; its absolute values are wrong: $h^0(\OO_X(C_0+\mfb f))$ is 3 and not 2 at $e=-1$ with $\deg\mfb=1$, where he equates the count on the surface with the count $h^0(\OO_C(\mfe+\mfb))=2$ on the curve and drops the other summand; at $\deg\mfb=2$ his $4$ is $5$; and his $0$ for $h^0(\OO_X(C_0+(\mfb-P-Q)f))$ cannot hold for any $P,Q$: one summand of the count, $h^0(\OO_C(\mfb-P-Q+\mfe))$, is a divisor of degree $1$ on the elliptic curve and so has a section, which makes the value at least $1$. The hypotheses of the two cases are otherwise as he states them. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 12 of §2.
 :::
