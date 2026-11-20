@@ -73,6 +73,19 @@ audit:
     $z\equiv\pm w\pmod\Lambda$ since $\wp$ is even with a double pole at $0$ as its only pole, so
     $2\operatorname{Im}z\in t\ZZ$ or $2\operatorname{Re}z\in\ZZ$, neither of which holds on $R$.
     The rest of the step is unchanged.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Steps s1 and s2 repaired, on the same referee's report. Step s1's second identity read
+    $\wp(z+it)=\wp(\bar z)$, which is false: the left side is $\wp(z)$ by periodicity while the right
+    side is $\overline{\wp(z)}$, so it would make $\wp$ real everywhere. It now states the three
+    facts actually used — conjugation, evenness, $it$-periodicity — and the proof closes with
+    evenness instead of the false composition. Step s2's line $x=0$ asserted $z+it=\bar z$, which for
+    $z=iy$ would say $i(y+t)=-iy$; it now writes $w=i(y+t)=\overline w$ and passes through evenness.
+    Its line $x=1/2$ asserted $-1/2+iy=\overline{1/2+iy}-1$, whose right side is $-1/2-iy$; it now
+    reads $-1/2+iy=-\overline{1/2+iy}$, again with evenness. The conclusions, and the lines
+    $y=0$ and $y=t/2$, are unchanged.
 ---
 
 ::: {.exercise}
@@ -96,7 +109,7 @@ Let $\tau=it$ with $t>0$, $\Lambda=\ZZ+\ZZ it$, and $\wp$ the Weierstrass functi
 
 ::: {.pf-step #s1}
 
-$\wp(\bar z)=\overline{\wp(z)}$ and $\wp(z+it)=\wp(\bar z)$.
+$\wp(\bar z)=\overline{\wp(z)}$, $\wp(-z)=\wp(z)$, and $\wp(z+it)=\wp(z)$.
 
 ::: pf-proof
 
@@ -106,7 +119,7 @@ $$
 $$
 gives $\wp(\bar z)=\overline{\wp(z)}$, because $\overline{\Lambda}=\Lambda$ and the series converges absolutely.
 
-$\wp$ is $\Lambda$-periodic, so $\wp(z+it)=\wp(z)$ since $it\in\Lambda$. Composing with the first identity, $\wp(z+it)=\wp(\bar z)$.
+$\wp$ is even and $\Lambda$-periodic: $-\Lambda=\Lambda$, and $(-z+\omega)^2=(z-\omega)^2$ runs through the same terms, so $\wp(-z)=\wp(z)$; and $\wp(z+it)=\wp(z)$ since $it\in\Lambda$.
 
 :::
 
@@ -120,15 +133,15 @@ $\wp$ is real-valued on the lines $x=n/2$ and $y=tm/2$.
 
 *On $y=0$*, i.e. $z=x$ real: $\bar z=z$, so $\wp(x)=\overline{\wp(x)}$ by step [](#s1){.pf-ref}, hence $\wp(x)\in\RR$.
 
-*On $x=0$*, i.e. $z=iy$: write $z+it=i(y+t)$. Then $z+it=\overline{z}$, so by step [](#s1){.pf-ref}
+*On $x=0$*, i.e. $z=iy$: write $w=i(y+t)$, so that $\wp(iy)=\wp(i(y+t))=\wp(w)$ by $it$-periodicity and $\overline w=-w$. By step [](#s1){.pf-ref},
 $$
-\wp(iy)=\wp(i(y+t))=\wp(\overline{iy})=\overline{\wp(iy)},
+\wp(iy)=\wp(w)=\wp(-w)=\wp(\overline w)=\overline{\wp(w)}=\overline{\wp(iy)},
 $$
 so $\wp(iy)\in\RR$.
 
-*On $x=1/2$*: $\wp(x+iy)$ is $1$-periodic in $x$, so $\wp(1/2+iy)=\wp(-1/2+iy)$. Now $-1/2+iy=\overline{1/2+iy}-1$, so using periodicity and step [](#s1){.pf-ref},
+*On $x=1/2$*: $\wp(x+iy)$ is $1$-periodic in $x$, so $\wp(1/2+iy)=\wp(-1/2+iy)$, and $-1/2+iy=-\overline{1/2+iy}$. Using step [](#s1){.pf-ref},
 $$
-\wp(1/2+iy)=\wp(-1/2+iy)=\wp(\overline{1/2+iy})=\overline{\wp(1/2+iy)},
+\wp(1/2+iy)=\wp(-1/2+iy)=\wp(-\overline{1/2+iy})=\wp(\overline{1/2+iy})=\overline{\wp(1/2+iy)},
 $$
 hence real.
 
