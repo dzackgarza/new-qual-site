@@ -10356,3 +10356,45 @@ this file's own rule.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card. The step and proof counts were read from the card with `rg -c`.
 
 **Uncertainty.** Settled here: III.11.7's status. Not done in this round: the five steps of V.5.6, V.5.8(b), and the five unread items of V.4.16, IV.2.3 and IV.3.11 — a batch larger than this session's remaining context, so it is left open and named rather than reported as read.
+
+## 2026-11-20, third item: §4.1 11 and 16-23 re-read step by step — five defects repaired
+
+The second item of this date recorded nine of the fourteen §4.1 cards as "read in full earlier". Read step
+by step is what QUAL-03 requires, so those nine are re-read here: `4.1-11`, `-16`, `-17`, `-18`, `-19`,
+`-20`, `-21`, `-22`, `-23`. Five of them held a defect. Read against Hatcher, *Algebraic Topology* (2002),
+§4.1 Exercises 11 and 16-23, printed pp. 358-360, and the numbered results the steps cite: Proposition A.1
+(printed p. 520), Theorem 4.5 (Whitehead), Corollary 4.12 and Example 4.11 (printed p. 351), Example 4.20
+(Whitehead towers, printed p. 356) together with the §4.3 sentence identifying the $n$ connected covering
+with the homotopy fibre of the $n$th Postnikov stage.
+
+| card | printed p. | verdict | how read |
+| --- | --- | --- | --- |
+| `E-HAT-4.1-11` | 358 | repaired, `826e6b5c49` | step by step: `path` (two points meet in one $X_k$, and the nullhomotopy of $X_k\to X_{k+1}$ gives both paths to a common point), `finite` (Proposition A.1, then the finitely many cells lie in one $X_i$), `null` (compose the nullhomotopy of the inclusion with the inclusion into $X$), `groups`, `whitehead`, `examples` ($Y\to\Sigma Y$ factors through the cone $CY$), `conclusion`. Defect in `groups`: it drew $\pi_n(X)=0$ from a nullhomotopy that step `null` produces only freely, and for $n\ge1$ a free nullhomotopy of a based map is not yet a vanishing based class. The step now runs the passage, by the change-of-basepoint isomorphism along the path the nullhomotopy traces at the basepoint |
+| `E-HAT-4.1-16` | 359 | read correct | every stage re-read. The point the proof turns on is stated: the $(n+1)$-cells are attached by constant maps, so the first stage is $X\vee\bigvee S^{n+1}$ and $\pi_n$ is unchanged — this is what upgrades Corollary 4.12's surjection at $i=n$ to an isomorphism, and the card has it. Later cells have dimension at least $n+2$; the passage to the union uses Proposition A.1, giving an isomorphism of each $\pi_i$ with the colimit over the stages, where every stage from $i$ on is already isomorphic to $\pi_i(Y)$ |
+| `E-HAT-4.1-17` | 358 | repaired, `ef75068e85` | steps `product-cells`, `dimension`, `pair`, `smash-cells`, `smash` correct: the relative cells are $e^p\times e^q$ with $p,q\ge1$, hence of dimension at least $m+n+2$, and Corollary 4.12 in its printed form gives the pair and, with $A$ a point, the smash product. Two gaps closed: the CW-approximation induction was asserted rather than run, and the proof silently replaced $X,Y$ by the models while the conclusion is about the given $X,Y$ |
+| `E-HAT-4.1-18` | 359 | read correct | the order complex of the pseudocircle is the four-cycle $a-c-b-d-a$, so its realization is $S^1$ and McCord's map is a weak equivalence; every map $P\to S^1$ has finite image, which is discrete in the Hausdorff circle, and $P$ is path-connected as the weak equivalence gives bijection on $\pi_0$, so the image is a point and the map induces the zero map on $\pi_1\cong\ZZ$ |
+| `E-HAT-4.1-19` | 359 | read correct | both directions. The step needing care is the claim that a zigzag of weak equivalences between CW complexes is a zigzag of homotopy equivalences, which is Theorem 4.5 arrow by arrow; the converse direction builds one common approximation from the $K_i$ and transitivity of homotopy equivalence |
+| `E-HAT-4.1-20` | 359 | repaired, `29cc7313b2` | two defects, both in the proofs. `postnikov` justified the vanishing of the obstructions with "for $i\ge d+1$ the coefficients vanish", which is false — above degree $d$ the fibre of $Y\to Y^d$ carries $\pi_i(Y)$, and the statement assumes nothing there; the step now separates the two ranges, $\pi_i$ of the fibre vanishing for $i\le d$ and the cohomology vanishing for $i\ge d+1$ because $X$ is $d$-dimensional. `percell` stated its count for the whole $k$-skeleton, where the number of extensions is the product over the cells, while its own sub-step `independent` and the step `induction` both read it per cell; it is now about a single $k$-cell |
+| `E-HAT-4.1-21` | 359 | read correct | the two constructions compared through the homotopy-fibre models, with the case $n<m-1$ and the case $n=m-1$ checked separately: at $n=m-1$ both iterands are contractible, the $(m-1)$-connected cover killing $\pi_i$ for $i\le m-1$ and $X_m$ already having none there. The citation is right: Example 4.20 names $Z_n\to X$ an $n$ connected cover, and §4.3 identifies it with the homotopy fibre of $Y\to Y_n$ |
+| `E-HAT-4.1-22` | 359 | repaired, `f28a72f5e5` | `s2` justified "a compact subset of a CW complex lies in a finite subcomplex" by saying the cells it misses have an open complement. That is false — the complement of one open cell is not open, and the cells a compact set misses are not what bounds their number. The step now carries Proposition A.1's own argument: one point in each of infinitely many cells is an infinite closed discrete subset of a compact space. `s1`, `s3`, `s4` and the forward direction correct as written. The card keeps its two directions in two solution blocks; merging them is a formatting change and none was made |
+| `E-HAT-4.1-23` | 360 | repaired, `c71441ff41` | the cell list in `cw-cylinder` named the cells of $Y'$ and the cells $e^k\times(0,1)$ but not the cells $e^k\times\{0\}$, so the closure of $e^k\times(0,1)$ met points of $X'\times\{0\}$ that were not cells: the decomposition was not a CW structure and $X'\times\{0\}$ was not a subcomplex of it. The step also described the image of $X'$ as $X'\times\{0\}$ together with the cylinders on its cells, which is $X'\times[0,1]$, not the image. The $k$-cells are now in the list, closure-finiteness is checked, and $X'\times\{0\}$ is identified as the subcomplex they form. `models`, `cellular`, `square`, `pushout`, `pair`, `cone` correct |
+
+Of the nine, five needed a repair and four are correct as written. The line "read in full earlier" in the
+second item of this date is superseded for these nine by the verdicts above.
+
+**On the published solution for Exercise 11.** Sam's set, retained as
+`tmp/sources/hatcher-solutions-sam-2008.md`, solves it at line 459 of the extraction by concluding
+$\pi_n(X)=0$ from a nullhomotopy with the same omission, and it also lets the compact image meet only
+$n$-cells, where the image can meet cells of lower dimension as well. The card's step is now stronger than
+the published solution at that point, and its `finite` step handles the lower cells.
+
+**Checks.** `./.venv/bin/python -m qualc.authoring check` on each of the five repaired cards, run from the
+repository root, reporting "schema and Markdown parsing OK (single card)" for `E-HAT-4.1-11`, `-17`, `-20`,
+`-22` and `-23`. `tmp/lam.sh` on the same five files numbers 7, 7, 8 (with sub-steps 3.1-3.3), 4 and 7
+steps and finds the QED labels. One commit per card, each staged by path.
+
+**Uncertainty.** Nothing was recomputed and no cardinality or homotopy group was recalculated; the reading
+is of the written steps against the printed pages and the numbered results. The retained solution sets were
+opened only for Exercise 11. Cards `4.1-16`, `-18`, `-19` and `-21` carry no audit event for this pass,
+following the practice of the earlier §4.1 items, which record read-correct verdicts here rather than on the
+card.
