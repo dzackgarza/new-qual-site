@@ -12,6 +12,19 @@ classification:
   - Homotopy
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found, and the H_2 = Z is right against a first reading that suggests 0. X is
+    R^3 minus the graph, not S^3 minus the graph: S^3 - Gamma is homotopy equivalent to a genus-3
+    handlebody (H_2 = 0), while removing the point at infinity, placed inside the outer 3-ball, adds an
+    S^2 summand, so X is homotopy equivalent to a wedge of three circles and a 2-sphere. Hence
+    pi_1 = F_3 and H_* = Z, Z^3, Z, 0 as the card says, and the Alexander duality line
+    H~_2(S^3 - (Gamma u {infty})) = H~^0(Gamma u {infty}) = Z agrees, the set having two components.
+    Checked the genus count 1 - chi(Gamma) = 1 - (4-6) = 3 and that the tetrahedron graph is unknotted
+    so the two balls give the handlebody description.
 ---
 
 ::: {.problem}
