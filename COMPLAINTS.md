@@ -9651,3 +9651,54 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: `r-equals-union-type-three` and `element-eventually-regular`. Not read: the rest of V.5.6 (`unique-center-exists` to `trichotomy-established`), and Abhyankar at the pages named. So #168's acceptance is not met for V.5.6, and V.5.8(b), the unread steps of V.4.16, IV.2.3 and IV.3.11 remain.
+
+## 2026-11-19, #158 closed on the card: part (c) of V.4.11 rests on a read, paged published proof
+
+**Object.** One card, `P-AGH5411WEYLGROUPS`, on the owner's direction that #158 asks for one thing
+only: part (c) of Hartshorne V.4.11, i.e. that the presented Coxeter group $\mathbf E_6$ is the
+Weyl group of the $E_6$ lattice, which needs the missing inequality $\cardinality{\mathbf E_6}\le
+51840$. The Chapter IV sweep was set aside for this turn.
+
+**What was read, at its printed pages.** J. E. Humphreys, *Reflection Groups and Coxeter Groups*,
+Cambridge Studies in Advanced Mathematics 29 (1990), in the retained scan
+`tmp/sources/humphreys-reflection-groups-coxeter-groups.pdf` --- 186 pages, no text layer, so every
+page was rendered from the PDF and read as an image, each at its own folio: printed p. 111 (PDF
+p. 128) opens §5.4 "Positive and negative roots" and carries Theorem 5.4 verbatim, "Let $w\in W$ and
+$s\in S$. If $\ell(ws)>\ell(w)$, then $w(\alpha_s)>0$. If $\ell(ws)<\ell(w)$, then $w(\alpha_s)<0$";
+its proof begins there and runs through printed p. 112 (PDF p. 129, the induction on $\ell(w)$ with
+the set $A$ and the two cases $m(s,s')$ infinite and finite) to the top of printed p. 113 (PDF
+p. 130); and the Corollary at the head of printed p. 113 reads "The representation
+$\sigma:W\to\operatorname{GL}(V)$ is faithful", with the two-line proof printed under it --- if
+$w\ne1$ lies in the kernel, choose $s$ with $\ell(ws)<\ell(w)$, so $w(\alpha_s)<0$ by the theorem
+while $w(\alpha_s)=\alpha_s>0$. §5.5 "Parabolic subgroups" begins below it, so the Corollary is the
+last item of §5.4. The offset printed p. $N$ = PDF p. $N+17$ was verified on each of the three
+folios, not assumed. Commit `c591b240f3`.
+
+**The acceptance, closed on the card.** A `source-checked` event records that reading, and a
+`solution-written` event closes #158's acceptance item for part (c): the bound $\cardinality{\mathbf
+E_6}\le51840$ now rests on Humphreys' Corollary at printed p. 113, so the presented group injects into
+the reflection group of the $E_6$ root lattice, and the card's own steps identify that image with
+$W(\mathbf E_6)$ and evaluate the order $51840$ from Dolgachev's Corollary 8.2.16 at printed
+pp. 261--262 and again from Humphreys §2.11 at printed p. 44.
+
+**The stale sentence, and why it was still there.** The card carried two events dated 2026-11-16
+saying the inequality "is not supplied by any source read". Those describe the card as it stood
+before the 2026-11-19 work, in which the citation, the quotation and the identification of the image
+were all added; nothing in the card's body has claimed the bound open since. They are left in place
+--- an audit list is a log, and its earlier entries are superseded by later ones, not rewritten ---
+and the closing event names them and says so, so that a reader arriving at the card does not take
+the 11-16 sentences for its current state.
+
+**One correction to the card's own description.** Step `weyl-faithful` said that "Theorem 5.4 with the
+Corollary that follows it, printed pp. 111--113, proves that $\sigma$ is injective". The pages are
+right but the division is not: the theorem's *statement* is on printed p. 111 alone, and it is the
+*proof* that spans pp. 111--113, with the Corollary on p. 113. The closing event says this.
+
+**Checks.** `./.venv/bin/python -m qualc.authoring check P-AGH5411WEYLGROUPS` printed
+`schema and Markdown parsing OK (single card)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None`; `bash tmp/lam.sh` numbered the steps $1$--$11$ with
+`(QED labels present)`; the front matter reparses with 19 audit events.
+
+**Not done.** No source beyond the files named was searched for a published proof, and Humphreys was
+not read outside §§2.11 and 5.3--5.4; the printed book itself was not consulted. The Chapter IV queue
+(IV.5.4 onward, eight cards) stands where the last report left it.
