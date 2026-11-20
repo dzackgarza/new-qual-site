@@ -98,6 +98,21 @@ audit:
     document answering Chapter 9, Problem 4 was found. This search located no published set answering
     this Problem, and none is retained in this repository. Not checked: whether such a set exists
     outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 9*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 4 and checked against Chapter 9, Problem 4: conjugation invariance of the lattice
+    $\ZZ+\ZZ i t$ gives $\wp(\overline z)=\overline{\wp(z)}$, reflection in each line $x=n/2$ and
+    $y=mt/2$ plus evenness and periodicity gives $\wp(z)=\overline{\wp(z)}$ on them, the zeros of
+    $\wp'$ are the three nonzero half-periods, and the argument principle gives one preimage per
+    half-plane. Its text is an outline; the card's steps supply the argument-principle count on a
+    boundary avoiding the branch values, the treatment of infinity as a fourth branch value, and the
+    alternation of adjacent rectangles. Not checked: anything in the published document outside its
+    Problem 4.
 ---
 
 ::: {.exercise}
@@ -113,7 +128,7 @@ The book marks this problem with an asterisk (Chapter 9, Problem 4).
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 9* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 9, Problem 4, it makes the same three moves: conjugation invariance of the lattice for $\wp(\overline z)=\overline{\wp(z)}$ and the reflection in each line $x=n/2$, $y=mt/2$; the location of the zeros of $\wp'$ at the three nonzero half-periods, so that no critical point lies inside the rectangle; and the argument principle to count preimages, which gives a conformal map of the rectangle onto a half-plane with adjacent rectangles alternating. The proof below follows that route and supplies the detail it compresses, as the audit trail records.
 
 Let $\tau=it$ with $t>0$, $\Lambda=\ZZ+\ZZ it$, and $\wp$ the Weierstrass function of $\Lambda$.
 
