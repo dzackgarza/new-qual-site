@@ -294,7 +294,7 @@ of earlier rows. This is exactly a lower-triangular row transformation.
 
 ::: {.pf-step #s1-11}
 
-Therefore
+Part (b): therefore
 $$
 \boxed{
 W_x(y_1,\ldots,y_n)
@@ -328,19 +328,6 @@ $$
 \frac{n(n-1)}2,
 $$
 the formula follows.
-
-:::
-
-:::
-
-::: {.pf-step #s1-12}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -403,7 +390,7 @@ rows.
 
 ::: {.pf-step #s1-15}
 
-Hence
+Part (c): hence
 $$
 \boxed{
 W_x(yy_1,\ldots,yy_n)
@@ -422,22 +409,9 @@ The determinant of the lower-triangular row-transformation matrix in step
 
 :::
 
-::: {.pf-step #s1-16}
-
-Part (c) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-15){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-15){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 
