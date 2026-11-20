@@ -19,7 +19,7 @@ Throughout, $G$ is a group, $H\leq G$ is a subgroup, and $g,h,x\in G$.
 | $C_G(H)$ | [[D-PX64W\|centralizer]] of a subset | $\theset{g\in G \st [g,h]=1 \text{ for all } h\in H} = \Intersect_{h\in H} C_G(h)$ |
 | $\Cl_G(x)$ | [[D-HLDEY\|conjugacy class]] | $\theset{gx\inverseof{g} \st g\in G}\subseteq G$ |
 | $N_G(H)$ | [[D-OZ2RR\|normalizer]] | $\theset{g\in G \st gH\inverseof{g} = H}\leq G$ |
-| $\Inn(G)$ | [[PR-IN9ZP\|inner automorphisms]] | the image of $g\mapsto (x\mapsto gx\inverseof{g})$, a subgroup of $\Aut(G)$ |
+| $\Inn(G)$ | [[D-MER2X\|inner automorphism group]] | the image of $g\mapsto (x\mapsto gx\inverseof{g})$, a subgroup of $\Aut(G)$ |
 | $\Out(G)$ | [[D-XIKE1\|outer automorphism group]] | the quotient of $\Aut(G)$ by the inner automorphism group |
 
 ## Group actions

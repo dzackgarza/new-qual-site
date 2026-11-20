@@ -53,7 +53,7 @@ $G$ acts on itself by $g\cdot x = gx$.
 
 - The stabilizer $G_x$ is trivial, and the fixed-point set is empty unless $G$ is trivial.
 
-- The kernel is trivial, so $G$ embeds in the symmetric group on the set $G$, which is Cayley's theorem.
+- The kernel is trivial, so $G$ embeds in the symmetric group on the set $G$, which is [[T-Y6RSP|Cayley's theorem]].
 
 - Orbit-stabilizer gives the bijection $G/\theset e\to G$.
 :::
