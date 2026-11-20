@@ -248,7 +248,7 @@ v(r,\theta)-r\sin\theta=\sum_{k\ge2}a_kr^k\sin(k\theta),
 $$
 and for fixed $0<r\le r_0<1$ the right-hand side is bounded by $r^2\sum_{k\ge2}\abs{a_k}r_0^{k-2}$, a finite sum because $\sum_k\abs{a_k}r_0^k$ converges; hence $v(r,\theta)=r\sin\theta[1+O(r)]$ as $r\to0$ for each fixed $\theta$. Next, $f(ir)=ir+O(r^2)$ has positive imaginary part for small $r>0$, so the component of step [](#s3){.pf-ref} that contains $f(\DD^+)$ is the upper half-plane, which is what "it is the upper side" names; in particular $v(r,\theta)>0$ for $0<\theta<\pi$.
 
-The published text then reads the sign off the display. That last passage is not valid as it stands, and the remark after this solution states the correction that the printed part (d) needs.
+The published text then reads the sign off the display. Read at fixed $\theta$ that reading is complete, and the step's last two sentences supply what it compresses: for $0<\theta<\pi$ the quotient $v(r,\theta)/(r\sin\theta)$ tends to $1$, so $v>0$ for small $r$; the component is therefore the upper one; and step [](#s3){.pf-ref} then gives $v>0$ at every $0<r<1$. At $\theta=0$ and $\theta=\pi$ one has $v(r,\theta)=0$, because $f$ maps $\DD\cap\RR$ into $\RR$ by the reality of the coefficients. Hence $v(r,\theta)\sin\theta\ge0$ on the whole rectangle. What the display does not carry is an estimate uniform in $\theta$, and the remark after this solution states the $\sin\theta$-weighted form of it that the printed part (b) yields.
 
 :::
 
@@ -290,10 +290,10 @@ The map $z\mapsto\frac{1+z}{1-z}$ is a biholomorphism of $\DD$ onto the right ha
 
 :::
 
-::: {.remark title="Correction to the published argument for part (d)"}
-The published solution concludes $v\sin\theta\ge0$ from $v(r,\theta)=r\sin\theta[1+O(r)]$ alone. That inference needs a factor $\sin\theta$ the display does not carry: the $O(r)$ is an estimate at fixed $\theta$, and even a bound $\abs{v-r\sin\theta}\le Cr^2$ holding uniformly in $\theta$ cannot be divided by $\sin\theta$ near $\theta=0$ and $\theta=\pi$, where both sides vanish. What the book's part (d) asks for is the inequality on the closed rectangle, and its part (b) supplies the missing factor. With $C=\sum_{k\ge2}k\abs{a_k}r_0^{k-2}<\infty$ for a fixed $0<r_0<1$, which is finite because $\sum_k ka_kz^{k-1}$ is the termwise derivative of a series whose radius of convergence is at least $1$,
+::: {.remark title="Correction to the published estimate in part (d)"}
+The published sentence draws the sign of $v\sin\theta$ from the display $v(r,\theta)=r\sin\theta[1+O(r)]$, whose error carries no factor $\sin\theta$. Read at fixed $\theta$ the display is enough, and the argument of part (d) records how; what it does not give is an estimate uniform in $\theta$, for its implied constant may depend on $\theta$, and even a bound $\abs{v-r\sin\theta}\le Cr^2$ holding uniformly in $\theta$ cannot be divided by $\sin\theta$ near $\theta=0$ and $\theta=\pi$, where both sides vanish. The printed part (b) supplies the missing factor. With $C=\sum_{k\ge2}k\abs{a_k}r_0^{k-2}<\infty$ for a fixed $0<r_0<1$, which is finite because $\sum_kka_kz^{k-1}$ is the termwise derivative of a series whose radius of convergence is at least $1$,
 $$
 \abs{v(r,\theta)-r\sin\theta}\le\sum_{k\ge2}\abs{a_k}r^k\abs{\sin(k\theta)}\le\sin\theta\sum_{k\ge2}k\abs{a_k}r^k\le Cr^2\sin\theta
 $$
-for $0<r\le r_0$ and $0\le\theta\le\pi$, so that $v\sin\theta\ge r\sin^2\theta(1-Cr)\ge0$ once $Cr\le1$. For the remaining $r$ the argument of part (c) puts $v$ on the upper side, so $v>0$ on $(0,\pi)$ and $v\sin\theta\ge0$ there, while $v\sin\theta=0$ at $\theta=0$ and $\theta=\pi$. This is the estimate that completes Chapter 8, Problem 8(d) as printed; the transcription above is left as the published text has it.
+for $0<r\le r_0$ and $0\le\theta\le\pi$, so that $v\sin\theta\ge r\sin^2\theta(1-Cr)\ge0$ once $Cr\le1$, the remaining $r$ being covered by part (c). That is the $\sin\theta$-weighted form of the estimate, and it proves Chapter 8, Problem 8(d) as printed from the display alone; the transcription above is left as the published text has it.
 :::
