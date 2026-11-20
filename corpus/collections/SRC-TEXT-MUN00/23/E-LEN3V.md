@@ -36,7 +36,7 @@ Show that $\bigcup A_n$ is connected.
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the induction below is that solution's, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 2, with Lemma 23.1 and Lemma 23.2 on printed pp. 148--149. The card's earlier page reference, is corrected to p. 1.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.2 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the induction below is that solution's, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 2, with Lemma 23.1 and Lemma 23.2. The card's earlier page reference, is corrected to p. 1.
 
 ::: pf
 

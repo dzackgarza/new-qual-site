@@ -95,7 +95,7 @@ products end at different points, so by Theorem 54.3  the products
 are not path homotopic.
 
 *The covering space.* Let $X=A\cup B$ be the figure eight, two circles meeting in
-the single point $x_0$. The covering space of Figure 60.3 (printed p. 375) has
+the single point $x_0$. The covering space of Figure 60.3 has
 three points over $x_0$, written $e_0,e_1,e_2$, and four circles: the circle $A_1$
 passes through $e_0$ and $e_2$, the circle $B_1$ passes through $e_0$ and $e_1$,
 the circle $A_0$ is attached to $B_1$ at $e_1$, and the circle $B_0$ is attached

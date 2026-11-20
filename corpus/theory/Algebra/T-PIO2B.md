@@ -17,5 +17,5 @@ review: draft
 
 ::: {.theorem}
 Let $G$ be a finite group and $k$ a field with $\ch(k)\nmid \abs G$.
-Then every finite-dimensional representation of $G$ over $k$ is a direct sum of irreducible representations [@DF04, Theorem 1, p. 849].
+Then every finite-dimensional representation of $G$ over $k$ is a direct sum of irreducible representations [@DF04, Theorem 1].
 :::

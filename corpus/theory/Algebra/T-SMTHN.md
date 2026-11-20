@@ -22,9 +22,9 @@ Two $m\times n$ matrices over $R$ are [[D-JRPTK|equivalent]] if and only if they
 :::
 
 ::: {.remark}
-The matrices $P$ and $Q$ are the products of the elementary row and column operations that clear the entries of $A$ below and to the right of each pivot in turn, so the form is computed by the same algorithm that computes a basis adapted to a submodule; the entries $a_i$ are the invariant factors of the [[PR-UVUS6|module]] $R^n/\im(A)$. The theorem is the matrix form of the structure theorem for finitely generated modules over a PID [@DF04, Theorem 5, p. 462]: apply that theorem to $R^n/\im(A)$ and lift the direct sum decomposition to bases of $R^n$ and $R^m$, which is what $P$ and $Q$ record.
+The matrices $P$ and $Q$ are the products of the elementary row and column operations that clear the entries of $A$ below and to the right of each pivot in turn, so the form is computed by the same algorithm that computes a basis adapted to a submodule; the entries $a_i$ are the invariant factors of the [[PR-UVUS6|module]] $R^n/\im(A)$. The theorem is the matrix form of the structure theorem for finitely generated modules over a PID [@DF04, Theorem 5]: apply that theorem to $R^n/\im(A)$ and lift the direct sum decomposition to bases of $R^n$ and $R^m$, which is what $P$ and $Q$ record.
 :::
 
 ::: {.remark}
-Dummit and Foote carry the case of the matrix $xI-A$ over $F[x]$: for $A$ an $n\times n$ matrix over a field $F$, the matrix $xI-A$ can be put in Smith normal form, with monic diagonal entries $a_1(x)\divides\cdots\divides a_m(x)$ of degree at least one that are the invariant factors of $A$ [@DF04, Theorem 21, p. 479], and the formula $a_i=d_i/d_{i-1}$ in terms of the greatest common divisors of the $i\times i$ minors of $xI-A$ is Exercise 35, printed at p. 502.
+Dummit and Foote carry the case of the matrix $xI-A$ over $F[x]$: for $A$ an $n\times n$ matrix over a field $F$, the matrix $xI-A$ can be put in Smith normal form, with monic diagonal entries $a_1(x)\divides\cdots\divides a_m(x)$ of degree at least one that are the invariant factors of $A$ [@DF04, Theorem 21], and the formula $a_i=d_i/d_{i-1}$ in terms of the greatest common divisors of the $i\times i$ minors of $xI-A$ is Exercise 35, printed at p. 502.
 :::

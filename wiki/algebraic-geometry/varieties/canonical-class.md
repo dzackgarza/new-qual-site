@@ -21,7 +21,7 @@ For a nonsingular divisor $D$ in a nonsingular variety $X$, adjunction computes 
 $$
 \omega_D\cong\omega_X\tensor\OO_X(D)\tensor\OO_D
 $$
-[@Har77, Proposition II.8.20, p. 182].
+[@Har77, Proposition II.8.20].
 For a hypersurface $D=V(f)\subseteq\PP^n$ of degree $d$ this gives $K_D=\OO_D(d-n-1)$, so $D$ is Fano, Calabi--Yau, or of general type according as $d<n+1$, $d=n+1$, or $d>n+1$ ([[FE-VARADJ]], [[D-VARFANO]]).
 The line is sharp: a smooth plane curve of degree $d$ has genus $\binom{d-1}{2}$, which is $0$ for $d=1,2$ and at least $1$ for $d\ge3$ ([[algebraic-geometry/curves-and-surfaces/genus|genus]]).
 

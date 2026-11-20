@@ -15,7 +15,7 @@ $$
 2g_X-2=n(2g_Y-2)+\deg R
 $$
 [@Har77, Corollary IV.2.4].
-At a tamely ramified point $\length(\Omega_{X/Y})_p=e_p-1$, and at a wildly ramified point $\length(\Omega_{X/Y})_p\ge e_p$; so $\deg R=\sum_p(e_p-1)$ holds exactly when no point is wildly ramified [@Har77, Proposition IV.2.2 and Corollary IV.2.4, pp. 300--301].
+At a tamely ramified point $\length(\Omega_{X/Y})_p=e_p-1$, and at a wildly ramified point $\length(\Omega_{X/Y})_p\ge e_p$; so $\deg R=\sum_p(e_p-1)$ holds exactly when no point is wildly ramified [@Har77, Proposition IV.2.2 and Corollary IV.2.4].
 
 ## Ramification
 

@@ -56,7 +56,7 @@ Put $q=e^{2\pi i\tau}$, so $q\to0$ as $\operatorname{Im}\tau\to\infty$.
 Both $\Delta$ and $\eta^{24}$ are holomorphic on $\halfplane$ and transform with weight $12$ under $\tau\mapsto\tau+1$ and $\tau\mapsto-1/\tau$.
 
 ::: pf-proof
-[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.1, Theorem 2.1 (p. 274), gives $E_j(\tau+1)=E_j(\tau)$ and $E_j(-1/\tau)=\tau^jE_j(\tau)$ for $j=4,6$. Thus $g_2^3$ and $g_3^2$, and hence $\Delta$, are periodic and acquire the factor $\tau^{12}$ under inversion. The product definition gives $\eta(\tau+1)=e^{\pi i/12}\eta(\tau)$; the same book's §10.1, Proposition 1.9 (p. 292), gives $\eta(-1/\tau)=\sqrt{\tau/i}\,\eta(\tau)$. Taking twenty-fourth powers gives the same two laws for $\eta^{24}$, since $e^{2\pi i}=1$ and $i^{-12}=1$.
+[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.1, Theorem 2.1, gives $E_j(\tau+1)=E_j(\tau)$ and $E_j(-1/\tau)=\tau^jE_j(\tau)$ for $j=4,6$. Thus $g_2^3$ and $g_3^2$, and hence $\Delta$, are periodic and acquire the factor $\tau^{12}$ under inversion. The product definition gives $\eta(\tau+1)=e^{\pi i/12}\eta(\tau)$; the same book's §10.1, Proposition 1.9, gives $\eta(-1/\tau)=\sqrt{\tau/i}\,\eta(\tau)$. Taking twenty-fourth powers gives the same two laws for $\eta^{24}$, since $e^{2\pi i}=1$ and $i^{-12}=1$.
 :::
 
 :::
@@ -65,7 +65,7 @@ Both $\Delta$ and $\eta^{24}$ are holomorphic on $\halfplane$ and transform with
 $\Delta(\tau)=(2\pi)^{12}q+O(q^2)$ and $\eta(\tau)^{24}=q+O(q^2)$ as $q\to0$.
 
 ::: pf-proof
-[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.2, Theorem 2.5 (p. 277), and $\zeta(4)=\pi^4/90$, $\zeta(6)=\pi^6/945$ give
+[[SRC-TEXT-SS03|Stein and Shakarchi, Complex Analysis]], §9.2.2, Theorem 2.5, and $\zeta(4)=\pi^4/90$, $\zeta(6)=\pi^6/945$ give
 $$
 g_2=\frac{4\pi^4}{3}(1+240q+O(q^2)),\qquad
 g_3=\frac{8\pi^6}{27}(1-504q+O(q^2)).

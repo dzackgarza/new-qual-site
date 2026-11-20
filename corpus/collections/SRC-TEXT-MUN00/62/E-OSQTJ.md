@@ -68,7 +68,7 @@ Show that $A$ does not separate $S^2$.
 
 The argument is problem (10) of **"MATH 4530 -- Topology. Practice Problems For Final solutions"**, the course solutions of Cornell's MATH 4530 (Fall 2010), printed p. 3 of the file, text at `tmp/sources/munkres-cornell-math4530-2010-practice-final-solutions.txt`: for arbitrary $a$ and $b$ in $S^{2}-A$ take $f$ the identity on $A$, apply the Borsuk lemma, and conclude that any two points of $S^{2}-A$ lie in one component. The step that source leaves as a clause --- that the inclusion $A\to S^{2}-\{a,b\}$ is nullhomotopic --- is written out here, since it is what the lemma needs and what the contractibility of $A$ supplies.
 
-The statement was checked against Munkres, *Topology* (2000), §62 Exercise 2, with the Borsuk lemma (Lemma 62.2) on printed p. 382, the definition of a set separating a space on printed p. 381, the definition of contractibility in §51  and Theorem 18.2 on printed p. 107. Throughout, $A$ is a compact contractible subspace of $S^{2}$, so that $S^{2}-A$ is nonempty as soon as $A\neq S^{2}$, and $j\colon A\to S^{2}-\{a,b\}$ denotes the map $j(x)\coloneqq x$ for fixed points $a,b\in S^{2}-A$.
+The statement was checked against Munkres, *Topology* (2000), §62 Exercise 2, with the Borsuk lemma (Lemma 62.2), the definition of a set separating a space on printed p. 381, the definition of contractibility in §51 and Theorem 18.2. Throughout, $A$ is a compact contractible subspace of $S^{2}$, so that $S^{2}-A$ is nonempty as soon as $A\neq S^{2}$, and $j\colon A\to S^{2}-\{a,b\}$ denotes the map $j(x)\coloneqq x$ for fixed points $a,b\in S^{2}-A$.
 
 ::: pf
 

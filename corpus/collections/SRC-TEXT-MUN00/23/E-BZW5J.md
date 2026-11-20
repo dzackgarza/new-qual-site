@@ -35,7 +35,7 @@ Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (
 
 ::: {.solution}
 
-The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.3 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); its two applications of Theorem 23.3 are the ones below, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 3, with Theorem 23.3 on printed p. 150.
+The argument is **"positron0802"**, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.3 (`tmp/sources/munkres-solutions-positron-ch3.pdf`); its two applications of Theorem 23.3 are the ones below, and the statement was checked against Munkres, *Topology* (2000), §23 Exercise 3, with Theorem 23.3.
 
 ::: pf
 

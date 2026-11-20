@@ -40,8 +40,8 @@ $\Gamma(X,-)$ is left exact and not exact: on $X=\CC\sm\theset{0}$ the exponenti
 
 [[D-DEFPROJO]]
 
-Every ringed space has $\mods{\OO_X}$ with enough injectives, so the right derived functors of a left exact functor on $\mods{\OO_X}$ exist [@Har77, Proposition III.2.2, p. 207].
-For $X=\PP^1_k$ over an infinite field there is no projective $\mcp\in\mods{\OO_X}$ admitting a surjection onto $\OO_X$, so $\mods{\OO_X}$ does not have enough projectives and $\Hom$ has no right derived functors in its first variable [@Har77, Caution III.6.5.2, p. 235 and Exercise III.6.2, p. 237]; sheaf cohomology is therefore a right derived functor and $\Tor$ a left one.
+Every ringed space has $\mods{\OO_X}$ with enough injectives, so the right derived functors of a left exact functor on $\mods{\OO_X}$ exist [@Har77, Proposition III.2.2].
+For $X=\PP^1_k$ over an infinite field there is no projective $\mcp\in\mods{\OO_X}$ admitting a surjection onto $\OO_X$, so $\mods{\OO_X}$ does not have enough projectives and $\Hom$ has no right derived functors in its first variable [@Har77, Caution III.6.5.2, p. 235 and Exercise III.6.2]; sheaf cohomology is therefore a right derived functor and $\Tor$ a left one.
 
 ## Derived functors
 

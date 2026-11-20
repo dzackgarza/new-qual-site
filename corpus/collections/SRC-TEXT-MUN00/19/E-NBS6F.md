@@ -46,7 +46,7 @@ Prove Theorem 19.4: if each space $X_\alpha$ is a Hausdorff space, then $\prod X
 
 ::: {.solution}
 
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof is his, separated at the index where the two points differ. The statement was checked against Munkres, *Topology* (2000), §19 Exercise 3, which asks for Theorem 19.4 on printed p. 116; the box topology and the product topology on $\prod_{\alpha}X_{\alpha}$ are as defined in §19 , and a product of open sets that differs from the whole product at only finitely many indices is a basis element of the product topology.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 19.3** (`tmp/sources/munkres-solutions-whitman.pdf`); the proof is his, separated at the index where the two points differ. The statement was checked against Munkres, *Topology* (2000), §19 Exercise 3, which asks for Theorem 19.4; the box topology and the product topology on $\prod_{\alpha}X_{\alpha}$ are as defined in §19, and a product of open sets that differs from the whole product at only finitely many indices is a basis element of the product topology.
 
 ::: pf
 

@@ -38,7 +38,7 @@ Show that $H$ is a topological group if and only if the map of $H \times H$ into
 
 ::: {.solution}
 
-Both directions are due to **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.1, manual p. 259, PDF p. 262 (`tmp/sources/munkres-solutions-whitman.pdf`); "positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Supplementary Exercise 1, has the same. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 1, with the definition of a topological group there, Exercise 18.4 on printed p. 111, Exercise 18.10 and Exercise 18.11 on printed p. 112.
+Both directions are due to **Dan Whitman**, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise TG.1, manual p. 259, PDF p. 262 (`tmp/sources/munkres-solutions-whitman.pdf`); "positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Supplementary Exercise 1, has the same. The statement was checked against Munkres, *Topology* (2000), §22 Supplementary Exercise 1, with the definition of a topological group there, Exercise 18.4, Exercise 18.10 and Exercise 18.11.
 
 Throughout, $H$ is a group and a $T_{1}$ space, $e$ is its identity, and
 $$

@@ -36,7 +36,7 @@ There is a continuous function $f: X \to [0, 1]$ such that $f(x) = 0$ for $x \in
 
 ::: {.solution}
 
-No retained solution set covers this exercise: it is the book's exercise and no sheet in `tmp/sources` treats §33 Exercise 5, so the argument below is the card's own. The construction by which the converse is usually stated — a function vanishing precisely on a closed $G_{\delta}$ set, which the book sets as Exercise 4 on the same page — is not quoted; the sum $\sum_{n}a_{n}$ below proves that step instead, so the argument depends only on Urysohn's lemma. The statement was checked against Munkres, *Topology* (2000), §33 Exercise 5, with the reminder of what a $G_{\delta}$ set is on the same page, Urysohn's lemma, Theorem 33.1, on printed p. 207, Theorem 21.5 on printed p. 131, the uniform limit theorem, Theorem 21.6, on printed p. 132, and Theorem 18.1(3) on printed p. 107.
+No retained solution set covers this exercise: it is the book's exercise and no sheet in `tmp/sources` treats §33 Exercise 5, so the argument below is the card's own. The construction by which the converse is usually stated — a function vanishing precisely on a closed $G_{\delta}$ set, which the book sets as Exercise 4 on the same page — is not quoted; the sum $\sum_{n}a_{n}$ below proves that step instead, so the argument depends only on Urysohn's lemma. The statement was checked against Munkres, *Topology* (2000), §33 Exercise 5, with the reminder of what a $G_{\delta}$ set is on the same page, Urysohn's lemma, Theorem 33.1, Theorem 21.5, the uniform limit theorem, Theorem 21.6, and Theorem 18.1(3).
 
 Throughout, $X$ is a normal space, and a $G_{\delta}$ set in $X$ is one that is the intersection of a countable collection of open sets of $X$ (§33).
 
@@ -46,7 +46,7 @@ Throughout, $X$ is a normal space, and a $G_{\delta}$ set in $X$ is one that is 
 If $f\colon X\to[0,1]$ is continuous with $f=0$ on $A$ and $f=1$ on $B$ and $0<f<1$ off $A\cup B$, then $A$ and $B$ are closed and disjoint.
 
 ::: pf-proof
-$A=f^{-1}(\theset{0})$ and $B=f^{-1}(\theset{1})$: a point of $A$ has $f=0$, a point with $f=0$ lies in $A$ because $f>0$ off $A$, and likewise for $B$. The sets $\theset{0}$ and $\theset{1}$ are closed in $[0,1]$, so by the closed set formulation of continuity, Theorem 18.1(3) (printed p. 107), $A$ and $B$ are closed in $X$. They are disjoint because no point has $f$ equal to $0$ and to $1$.
+$A=f^{-1}(\theset{0})$ and $B=f^{-1}(\theset{1})$: a point of $A$ has $f=0$, a point with $f=0$ lies in $A$ because $f>0$ off $A$, and likewise for $B$. The sets $\theset{0}$ and $\theset{1}$ are closed in $[0,1]$, so by the closed set formulation of continuity, Theorem 18.1(3), $A$ and $B$ are closed in $X$. They are disjoint because no point has $f$ equal to $0$ and to $1$.
 :::
 
 :::
