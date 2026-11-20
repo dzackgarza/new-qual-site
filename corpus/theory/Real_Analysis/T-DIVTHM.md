@@ -15,9 +15,12 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $V\subseteq\RR^n$ be a compact region whose boundary $\bd V$ is a finite union of smooth pieces, let $\nu$ be the outward unit normal of $\bd V$, and let $F$ be a $C^1$ vector field on an open set containing $V$.
+Let $M\subseteq\RR^n$ be a compact $n$-manifold, let $N$ be the unit normal vector field to $\bd M$ that points outwards from $M$, and let $G$ be a vector field defined on an open set of $\RR^n$ containing $M$.
 Then
 $$
-\int_{\bd V} F\cdot\nu\,dS = \int_V \nabla\cdot F\,dV .
+\int_M (\operatorname{div}G)\,dV = \int_{\bd M}\inner{G}{N}\,dS,
 $$
+the first integral with respect to $n$-volume and the second with respect to $(n-1)$-volume.
+
+This is [@Mun91, Theorem 38.8].
 :::
