@@ -15,11 +15,7 @@ Manifolds and their local homology, Poincaré duality and the orientation of clo
 
 ## Manifolds
 
-::: {.fact title="Local homology"}
-If $M$ is an $n$-manifold and $x\in M$ is an interior point, then by excision $H_k(M, M\sm\theset x) \cong H_k(\RR^n,\RR^n\sm\theset 0) \cong \tilde H_{k-1}(S^{n-1})$, which is $\ZZ$ for $k=n$ and $0$ otherwise.
-A space with a point at which these local homology groups differ from those of every $\RR^n$ is not a manifold near that point.
-
-:::
+[[FF-6WY3L]]
 
 [[PR-ZCPDD]]
 
