@@ -71,7 +71,7 @@ Recall that a [[D-ZFRV4|Hausdorff space]] is one in which distinct points have d
 ## Maps and homeomorphisms
 
 ::: {.example title="Retractions onto points"}
-For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$.
+For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$ [@Hat02, Chapter 0].
 
 :::
 
