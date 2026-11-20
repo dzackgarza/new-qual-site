@@ -29,6 +29,14 @@ audit:
     exists for this paper to compare the argument with, and no other card of the collection in this
     pass.
 - event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step 4, which introduces the image $J=\rho(S_5)$, was the card's only step with no proof
+    body; it now carries one, deducing $J\cong S_5$ from the injectivity of step 3, the index
+    $[S_6:J]=6$ from the two orders, and transitivity of the $J$-action from transitivity of the
+    coset action. Nothing else on the card is changed.
+- event: solution-written
   by: OpenAI
   date: 2026-09-10
 ---
@@ -114,6 +122,14 @@ $$
 J=\rho(S_5)\le S_6.
 $$
 Then $J\cong S_5$, has index $6$ in $S_6$, and is transitive in the natural action on six letters.
+
+::: pf-proof
+$\rho$ is injective by step [](#s3){.pf-ref}, so it is an isomorphism of $S_5$ onto its image $J$. Hence $\cardinality{J}=\cardinality{S_5}=120$, and the index is
+$$
+[S_6:J]=\frac{720}{120}=6.
+$$
+The action of $S_5$ on the cosets is transitive — given cosets $xH$ and $yH$, the element $yx^{-1}$ carries the first to the second — and the action of $J$ on the same set is the action of $S_5$ read through the isomorphism $\rho$, so it is transitive as well.
+:::
 
 :::
 
