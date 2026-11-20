@@ -35,6 +35,25 @@ audit:
     printed p. 441, orientability printed p. 442, transport for a fibration printed p. 405,
     exercise printed p. 447. Not claimed: a retained solution set; the Hatcher sets in
     `tmp/sources` do not reach §4.D, so the argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.D Exercise 7, printed p. 447,
+    with the Thom class defined on printed p. 441, orientability and Theorem 4D.10 on printed p. 442,
+    and the transport of Proposition 4.61 on printed p. 405. All four steps correct as written. The
+    reading checked in the book: Hatcher's own sentence that the coboundary map identifies
+    H^n(D^n,S^{n-1};Z) with H^{n-1}(S^{n-1};Z), which is the direction step `orientation-of-fibre`
+    uses for delta; the definition of orientability by L_gamma acting as the identity on
+    H^{n-1}(S^{n-1};Z); the sentence that a disk bundle is called orientable when its boundary
+    sphere bundle is; and the exercise's own framing, Hatcher writing "an exercise at the end of the
+    section is to show that the converse of the last statement is also true". In the steps: the
+    connecting map is an isomorphism because the fibre disk is contractible; the trivialized class on
+    I x D^n restricts equally to both slices because the slice inclusions are homotopic; L_gamma is
+    the composite of the two trivializations, so it pulls c_{b_1} back to c_{b_0}; naturality of
+    delta then makes L_gamma act as the identity on an infinite cyclic group. Not checked: no
+    retained solution set covers §4.D, so nothing was compared against one, and no hypothesis on the
+    base beyond those of §4.D (paracompact base, homotopy lifting) was examined.
 ---
 
 ::: {.problem}
