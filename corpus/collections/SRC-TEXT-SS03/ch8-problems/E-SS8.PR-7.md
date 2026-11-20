@@ -75,6 +75,21 @@ audit:
     of $F_{n_j}-w$ to $F-w$ by Rouché's theorem on $\partial U_{n_j}$, where
     $\abs{F_{n_j}-w}\ge\rho'-\rho>\abs{F-F_{n_j}}$. This is the printed hint's route, $r_{F(K_0)}\ge1$,
     and it uses neither simple connectivity of $K_0$ nor $\operatorname{int}(\overline{K_0})$.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: the
+    one document whose text quoted Chapter 8, Problem 7 is a course assignment solution sheet
+    (MATH 246A, assignment 8) uploaded to a document-sharing site, and that site answered with a
+    human check, so its solution could not be read, checked or transcribed. This search located no
+    published set answering this Problem that could be read, and none is retained in this
+    repository. Not checked: whether such a set exists outside what a web search reaches. The
+    mathematics of the card is unchanged.
 
 ---
 
