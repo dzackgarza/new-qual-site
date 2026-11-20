@@ -85,7 +85,7 @@ ok
 
 ## prose-only-solutions (1)
 
-- 178 of the 12429 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
+- 175 of the 12428 problem cards with a solution hold no numbered step; see queues/D-prose-only-solutions.md
 
 ## empty-provenance (6)
 

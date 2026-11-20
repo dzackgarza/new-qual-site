@@ -15,4 +15,4 @@ References, topic lists, problem banks, and solutions for the preliminary exam.
 
 - [[prelim/resources/solutions|Solutions]] -- solutions to prelim exams, practice packets, and course exams.
 
-Practice material on this site: [[prelim/useful-tricks|Useful tricks]], [[prelim/problems/integral-practice|Integral practice]], [[prelim/problems/ucla-prelims|UCLA prelims]], and [[prelim/problems/berkeley-prelims|Berkeley prelims]].
+Practice material on this site: [[prelim/useful-tricks|Useful tricks]] for the tabular method and the standard series, [[prelim/problems/integral-practice|Integral practice]] for integrals grouped by technique, [[prelim/problems/ucla-prelims|UCLA prelims]] and [[prelim/problems/berkeley-prelims|Berkeley prelims]] for the two examination archives.

@@ -77,6 +77,7 @@ Every derivative has the intermediate value property ([[P-BKF15-3A|Darboux's the
 
 ::: {.example title="A bounded function need not be Riemann integrable"}
 The indicator function of $\QQ\intersect[0,1]$ is bounded by $1$, and on every subinterval of a partition it has supremum $1$ and infimum $0$, so every upper sum is $1$ and every lower sum is $0$.
+Its set of discontinuities is all of $[0,1]$, of measure $1$, which is also what excludes it from the Riemann integrable functions under [[PR-TDH2A|Lebesgue's criterion for Riemann integrability]].
 
 :::
 
