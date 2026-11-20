@@ -19,4 +19,6 @@ Then there is a function $R_n$ analytic on $\Omega$ such that for all $z\in\Omeg
 $$
 f(z)=\sum_{k=0}^{n-1}\frac{f^{(k)}(z_0)}{k!}(z-z_0)^k+R_n(z)(z-z_0)^n.
 $$
+
+This is [@Ahl73, ch. 4, §3, Theorem 8], which writes the last term as $f_n(z)(z-a)^n$ with $f_n$ analytic in the region.
 :::
