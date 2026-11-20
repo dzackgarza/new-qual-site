@@ -29,6 +29,14 @@ audit:
     printed p. 248, and its printed words are the card's. The chapter, the exercise number and
     the page are now named in the solution's opening sentence. Not checked in this pass: the
     argument, which the edit does not touch.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The solution's opening sentence carried the printed page. It now cites the numbered statement
+    alone, Chapter 8, Exercise 1, and the page is gone from the rendered text. Statement unchanged;
+    the argument, which the printed hint directs through Rouche's theorem as in Proposition 1.1 of
+    that chapter, was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -40,7 +48,7 @@ Prove that a holomorphic map $f \colon U \to V$ is a local bijection on $U$ if a
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 8 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 248; the statement below is its wording.
+This is Exercise 1 of Chapter 8 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf` [@SS03, ch. 8, Exercise 1]; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own, using Rouché's theorem as the printed hint directs.
 
 ::: pf
