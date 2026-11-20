@@ -9,9 +9,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
 - Subgroups
 
-  - The one-step subgroup test
-
-    - A nonempty subset $H\subseteq G$ with $x\inverseof{y} \in H$ for all $x,y\in H$ is a subgroup
+  - The [[PR-U5CHT|one-step subgroup test]]
 
   - Cosets: the [[D-VJGH5|index of a subgroup]], and [[PR-VUKHO|left cosets are equal or disjoint]]
 
