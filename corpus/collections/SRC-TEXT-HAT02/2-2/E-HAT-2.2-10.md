@@ -82,7 +82,7 @@ and the other integral homology groups vanish.
 
 ::: pf-proof
 
-This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. Hatcher's CW boundary map (Theorem 2.35, p. 139) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
+This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. Hatcher's CW boundary map (Theorem 2.35) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
 :::
 
 :::

@@ -168,7 +168,7 @@ On the other hand,
 $$
 \pi_1(S^1\vee S^1)\cong F(a,b)
 $$
-is the free group on two generators (Example 1.21, p. 43) and is nontrivial.
+is the free group on two generators (Example 1.21) and is nontrivial.
 Thus the inclusion-induced map is not injective, contradicting step [](#s1){.pf-ref}.
 
 :::

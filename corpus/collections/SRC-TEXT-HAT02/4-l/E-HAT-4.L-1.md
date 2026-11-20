@@ -97,7 +97,7 @@ $K(\ZZ_2,1)$ has $H^*(K(\ZZ_2,1);\ZZ_2)=\ZZ_2[x]$ with $\abs x=1$, the polynomia
 For odd $p$, the operations $H^1(-;\ZZ_p)\to H^n(-;\ZZ_p)$ are the scalar multiples of $u\mapsto(\beta u)^j$ in degree $2j$ and of $u\mapsto u(\beta u)^j$ in degree $2j+1$.
 
 ::: pf-proof
-For odd $p$, $H^*(K(\ZZ_p,1);\ZZ_p)=\Lambda(x)\otimes\ZZ_p[y]$ with $\abs x=1$, $\abs y=2$ and $y=\beta x$ the mod-$p$ Bockstein: additively this is the cohomology of the infinite lens space (Example 2.43, p. 144) and multiplicatively the Bockstein of §3.E (p. 303) gives $y=\beta x$. So $H^{2j}$ is spanned by $y^j$ and $H^{2j+1}$ by $xy^j$, each one-dimensional; evaluating on the fundamental class $u$ gives the two displayed families, and every operation is a $\ZZ_p$-multiple of one of them.
+For odd $p$, $H^*(K(\ZZ_p,1);\ZZ_p)=\Lambda(x)\otimes\ZZ_p[y]$ with $\abs x=1$, $\abs y=2$ and $y=\beta x$ the mod-$p$ Bockstein: additively this is the cohomology of the infinite lens space (Example 2.43) and multiplicatively the Bockstein of §3.E (p. 303) gives $y=\beta x$. So $H^{2j}$ is spanned by $y^j$ and $H^{2j+1}$ by $xy^j$, each one-dimensional; evaluating on the fundamental class $u$ gives the two displayed families, and every operation is a $\ZZ_p$-multiple of one of them.
 :::
 
 :::

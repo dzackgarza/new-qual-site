@@ -112,7 +112,7 @@ For odd $n$, the top cellular boundary in $\RP^n$ is zero, so the unique top cel
 $$
 c_*:H_n(\RP^n)\xrightarrow{\cong}H_n(S^n).
 $$
-Given any $k\in\ZZ$, a map $h_k:S^n\to S^n$ of degree $k$ exists: for $k\ge1$ and $n\ge1$ the suspension of $z\mapsto z^k$ on $S^1$ has degree $k$, since $\deg Sf=\deg f$ by Proposition 2.33 and $z\mapsto z^k$ has $k$ preimages of a regular value, each of local degree $+1$ by Proposition 2.30, while $k\le0$ is obtained by composing with the reflection of degree $-1$ (property (e) of degree, p. 134). Put
+Given any $k\in\ZZ$, a map $h_k:S^n\to S^n$ of degree $k$ exists: for $k\ge1$ and $n\ge1$ the suspension of $z\mapsto z^k$ on $S^1$ has degree $k$, since $\deg Sf=\deg f$ by Proposition 2.33 and $z\mapsto z^k$ has $k$ preimages of a regular value, each of local degree $+1$ by Proposition 2.30, while $k\le0$ is obtained by composing with the reflection of degree $-1$ (property (e) of degree of §2.2). Put
 $$
 h_k:S^n\to S^n.
 $$

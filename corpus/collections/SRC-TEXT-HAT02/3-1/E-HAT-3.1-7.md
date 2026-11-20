@@ -110,7 +110,7 @@ One has $\operatorname{Hom}(\ZZ_m,\ZZ)=0$ and $\operatorname{Hom}(\ZZ,\ZZ)=\ZZ$.
 
 ::: pf-step
 
-If the $h^n$ formed a cohomology theory in the sense of the axioms on p.160, the long exact sequence of the pair (Theorem 2.16, p.117) would contain
+If the $h^n$ formed a cohomology theory in the sense of the axioms on p.160, the long exact sequence of the pair (Theorem 2.16) would contain
 $$
 0=h^1(X)\longrightarrow h^1(A)=\ZZ
 \xrightarrow{\,m\,}h^2(X,A)=\ZZ

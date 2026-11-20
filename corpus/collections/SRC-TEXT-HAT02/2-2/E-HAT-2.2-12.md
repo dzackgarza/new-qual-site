@@ -85,7 +85,7 @@ so the unique $2$-cell represents a generator of $H_2(T^2)\cong\ZZ$ by Theorem 2
 $$
 q_*:H_2(T^2)\xrightarrow{\cong}H_2(S^2).
 $$
-A nullhomotopic map induces the same homomorphism on homology as a constant map (Theorem 2.10, p. 111), which is not surjective onto $S^2$ and so is zero on $H_2$ by property (b) of degree (p. 134); hence $q$ is not nullhomotopic.
+A nullhomotopic map induces the same homomorphism on homology as a constant map (Theorem 2.10), which is not surjective onto $S^2$ and so is zero on $H_2$ by property (b) of degree (p. 134); hence $q$ is not nullhomotopic.
 
 :::
 
