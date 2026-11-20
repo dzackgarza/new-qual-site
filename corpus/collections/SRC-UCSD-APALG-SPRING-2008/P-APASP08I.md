@@ -64,6 +64,20 @@ audit:
     expansion returns True; the input and output are recorded in the solution. The earlier events
     stand as written, no run existing when they were written. The tableaux enumeration and the
     hook-content check are kept as independent verifications.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (a) asks for the check to be made by means of the SF package, Stembridge's package for
+    Maple, and SageMath's SymmetricFunctions is a different system, so the event above that reads
+    that the check is now performed is corrected here, appended rather than edited (QUAL-11).
+    The solution states the Sage run as what it is, a run of Sage's own symmetric-function
+    calculus, re-run in SageMath 10.8 for this event with the same six-term output and True, and
+    says that the package check the problem requests is not performed on this system;
+    COMPLAINTS.md records that absence under #179. Checked: the six-term expansion, the tableaux
+    enumeration of step #table, and the hook-content values 2, 48, 400, 2000, 7350, 21952,
+    56448, 129600 at n = 2,...,9, all unchanged. Not checked: no run of the SF package, which is
+    not installed here.
 ---
 
 ::: {.problem}
@@ -76,7 +90,7 @@ Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing
 
 ::: {.solution}
 
-No retained solution set covers this exercise: the expansion is the card's own computation. Part (a) asks for the expansion to be checked by means of the SF package; the check was run in SageMath 10.8 and its input and output are recorded in step [](#sf){.pf-ref}, beside the independent enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref} and the hook-content cross-check in step [](#check){.pf-ref}.
+No retained solution set covers this exercise: the expansion is the card's own computation. Part (a) asks for the expansion to be checked by means of the SF package, Stembridge's package for Maple, and that check is not performed here: the computation recorded in step [](#sf){.pf-ref} is SageMath's own symmetric-function calculus, a different system, and is recorded as the independent computation it is. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}, and step [](#check){.pf-ref} is a hook-content cross-check of its six coefficients.
 
 ::: pf
 
@@ -100,10 +114,10 @@ A shape $\lambda\vdash7$ must contain $(2,2)$ with $\lambda/(2,2)$ of size $3$; 
 :::
 
 ::: {.pf-step #sf}
-(a) The SF package returns $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$, each coefficient $1$.
+(a) SageMath returns $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$, each coefficient $1$.
 
 ::: pf-proof
-The check was run in SageMath 10.8 with `SymmetricFunctions(QQ)`, the symmetric-function calculus that plays the role of the SF package:
+The check was run in SageMath 10.8 with `SymmetricFunctions(QQ)`:
 
 ```sage
 Sym = SymmetricFunctions(QQ)
@@ -117,7 +131,7 @@ s[2, 2, 2, 1] + s[3, 2, 1, 1] + s[3, 2, 2] + s[3, 3, 1] + s[4, 2, 1] + s[4, 3]
 True
 ```
 
-The six terms are those of step [](#table){.pf-ref}.
+That calculus is Sage's own, not Stembridge's SF package for Maple, which is the package part (a) names, so this output is an independent computation of the expansion and not the package check the problem asks for. Its six terms are those of step [](#table){.pf-ref}.
 :::
 
 :::
@@ -126,7 +140,7 @@ The six terms are those of step [](#table){.pf-ref}.
 The expansion passes the hook-content cross-check: for every $n=2,\dots,9$ one has $s_{(2,2)}(1^{n})\,s_{(2,1)}(1^{n})=\sum_{\lambda}s_{\lambda}(1^{n})$ over the six listed $\lambda$ and no others.
 
 ::: pf-proof
-Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, a polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. This agreement checks the coefficients; it is not by itself a proof of the expansion, because the specialisation $f\mapsto f(1^{n})$ is not injective on the degree-seven symmetric functions: $m_{(2,2,2,1)}(1^{n})=m_{(4,1,1,1)}(1^{n})=4\binom n4$ for every $n$, so two distinct symmetric functions can agree at every $n$. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}, which the SF package output of step [](#sf){.pf-ref} confirms.
+Each $s_{\lambda}(1^{n})$ is computed by the hook-content formula $s_{\lambda}(1^{n})=\prod_{(i,j)\in\lambda}\frac{n+j-i}{h(i,j)}$, a polynomial in $n$ of degree $7$, one linear factor for each cell. The products and sums agree at $n=2,3,4,5,6,7,8,9$ — for instance $2,48,400,2000,7350,21952,56448,129600$ on both sides. This agreement checks the coefficients; it is not by itself a proof of the expansion, because the specialisation $f\mapsto f(1^{n})$ is not injective on the degree-seven symmetric functions: $m_{(2,2,2,1)}(1^{n})=m_{(4,1,1,1)}(1^{n})=4\binom n4$ for every $n$, so two distinct symmetric functions can agree at every $n$. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step [](#table){.pf-ref}, which the Sage output of step [](#sf){.pf-ref} confirms.
 :::
 
 :::
@@ -141,7 +155,7 @@ The Littlewood–Richardson rule is exactly the branching rule for induction: fo
 :::
 
 ::: {.pf-qed}
-The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, returned by the SF package in step [](#sf){.pf-ref} and consistent with the hook-content values of step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
+The expansion is $s_{(2,2)}s_{(2,1)}=s_{(4,3)}+s_{(4,2,1)}+s_{(3,3,1)}+s_{(3,2,2)}+s_{(3,2,1,1)}+s_{(2,2,2,1)}$ by step [](#table){.pf-ref}, returned by SageMath in step [](#sf){.pf-ref} and consistent with the hook-content values of step [](#check){.pf-ref}, with the representation-theoretic meaning of the coefficients in step [](#interpretation){.pf-ref}.
 :::
 
 :::

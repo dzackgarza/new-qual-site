@@ -11579,3 +11579,15 @@ corrected, they being of this date.
 **Issue.** This is the residue of #164 and belongs in the issue tree #83 as a work item of its own; the connector of this session writes no issues, so the record is here and the same facts stand on the card's audit trail. What would close it is a published proof of any one of the three steps, and the card's provenance sentences are the place that would name it.
 
 **Uncertainty.** Read for this record: the five numbered statements above in the retained text of Hartshorne's book, and the card `P-AGH5215FROBENIUSRULED` whole. Not read: the printed Hartshorne, only the extraction; Miyanishi's monograph, which is not retained; and no search outside the retained sets was made in this pass for a published proof of the three steps. The negative claim is therefore bounded to the sources named, as the card's own remark says.
+
+## 2026-11-20, #179: the SF-package check of ST.4(a) on `P-APASP08I` is not performed on this system
+
+**Object and need.** Spring 2008 ST.4(a) asks for the Schur function expansion of $s_{2,2}\times s_{2,1}$ to be checked "by means of the SF package". In symmetric functions that is Stembridge's `SF` package for Maple, and the problem gives no other description of it. This system has no Maple and no `SF` package: `command -v maple` finds nothing, and SageMath 10.8 at `/opt/math/bin/sage` is the only computer algebra with a symmetric-function calculus on it.
+
+**What is performed, and what it is not.** The run recorded in `P-APASP08I`, step `#sf`, is SageMath's `SymmetricFunctions(QQ)`: `s[2,2] * s[2,1]` returns `s[2,2,2,1] + s[3,2,1,1] + s[3,2,2] + s[3,3,1] + s[4,2,1] + s[4,3]` and the comparison with the six terms is `True`. Re-run for this record on 2026-11-20 with the same input and the same output, `True`. Sage's own calculus is not Stembridge's package, so the run does not perform the check ST.4(a) asks for; it is an independent computation of the same expansion. The proof of the expansion is the enumeration of the Littlewood--Richardson tableaux in step `#table`, with the hook-content values of step `#check` as a cross-check of the six coefficients.
+
+**Repair.** `P-APASP08I`: the preamble and steps `#sf`, `#check` and `#qed` state the Sage computation as Sage's and say that the package check is not performed, instead of calling the run the SF package; a dated `solution-written` event appends this correction to the event of the same day that read "the check is now performed". The six-term expansion, the tableaux enumeration and the hook-content values are unchanged.
+
+**What would close it.** A run of Stembridge's `SF` package in Maple, which this system does not have. Until then ST.4(a) is answered by an independent computation and by the card's statement that the requested package check is missing.
+
+**Uncertainty.** The retained paper, `assets/attachments/Applied-Algebra-Qual-Spring-2008_extracted.md`, prints only "the SF package" and names neither the author nor Maple; the identification with Stembridge's package is the subject's reading, not a line of the paper. No Maple run was attempted and no other package was substituted for it.
