@@ -67,7 +67,7 @@ Show that for homotopic maps $f, g: A \to B$ the fibrations $E_f \to B$ and $E_g
 
 ::: {.solution}
 
-The construction is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 12**, printed p. 27 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, which sends $(a,\gamma)$ to $(a,\overline{H_{a}}\cdot\gamma)$ and states that the two composites are fiber homotopic to the identities. The explicit contraction, with its parametrization, is the card's own.
+The construction is that of the retained solution set: **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 12**, which sends $(a,\gamma)$ to $(a,\overline{H_{a}}\cdot\gamma)$ and states that the two composites are fiber homotopic to the identities. The explicit contraction, with its parametrization, is the card's own.
 
 Let $f,g:A\to B$ be homotopic and let
 $$

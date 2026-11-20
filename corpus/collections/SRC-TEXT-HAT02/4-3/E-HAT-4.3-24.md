@@ -71,7 +71,7 @@ Show that the obstructions to finding a homotopy rel $A$ between these two lifts
 :::
 
 ::: {.solution}
-Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. "The situation of the relative lifting problem" is the one set up on printed p. 418, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 (printed p. 415) holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
+Let $p\colon X\to Y$ be a fibration with fibre $F$, let $(W,A)$ be a CW pair, let $g\colon W\to Y$ be a map, and let $f_0,f_1\colon W\to X$ be two lifts of $g$ with $\restrictionof{f_0}{A}=\restrictionof{f_1}{A}$. "The situation of the relative lifting problem" is the one set up in §4.3, and it includes an assumption the exercise does not restate: that $p$ has a Moore–Postnikov tower of principal fibrations, which by Theorem 4.71 holds as soon as $\pi_1(X)$ acts trivially on $\pi_n(M_p,X)$ for all $n>1$. Without it there is no sequence of obstruction classes to speak of, so it is part of the hypothesis throughout.
 No retained solution set covers this exercise, so the argument is the card's own. Set $I=[0,1]$, let $\mathrm{pr}_W\colon W\times I\to W$ be the projection, put $G=g\circ \mathrm{pr}_W$, and set
 
 $$

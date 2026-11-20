@@ -57,7 +57,7 @@ Given a fibration $F \to E \xrightarrow{p} B$, define a natural action of $\Omeg
 :::
 
 ::: {.solution}
-The exercise is solved in the retained set **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 19**, printed p. 28 of `tmp/sources/hatcher-solutions-sam-2008.pdf`: Sam defines an action of $\Omega B$ on $F_p$ by lifting the loop $\overline\eta\cdot\gamma\cdot\eta$, and shows that two elements of $\langle X,F_p\rangle$ have the same image in $\langle X,E\rangle$ exactly when they lie in one orbit. The action used below is the right action by concatenation, $(e,\gamma)\cdot\lambda=(e,\gamma\cdot\lambda)$; the criterion proved is the same, and the loop carrying $g$ to $f$ is constructed explicitly.
+The exercise is solved in the retained set **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 19**: Sam defines an action of $\Omega B$ on $F_p$ by lifting the loop $\overline\eta\cdot\gamma\cdot\eta$, and shows that two elements of $\langle X,F_p\rangle$ have the same image in $\langle X,E\rangle$ exactly when they lie in one orbit. The action used below is the right action by concatenation, $(e,\gamma)\cdot\lambda=(e,\gamma\cdot\lambda)$; the criterion proved is the same, and the loop carrying $g$ to $f$ is constructed explicitly.
 
 Fix the basepoint $b_0 \in B$ and let $\Omega B$ be the loops at $b_0$. The homotopy fiber is
 $$F_p = \theset{(e, \gamma) \suchthat e \in E,\ \gamma: I \to B,\ \gamma(0) = p(e),\ \gamma(1) = b_0},$$

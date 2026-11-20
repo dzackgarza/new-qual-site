@@ -123,7 +123,7 @@ $\alpha*\alpha^{-1}$ traverses $\alpha$ and then back along it, that is $(\alpha
 $(\Omega X,\mu,e)$ is an H-space with multiplication the composition of loops.
 
 ::: pf-proof
-By Hatcher's definition (printed p. 281) an H-space is a space with basepoint $e$ and a continuous multiplication $\mu$ such that $x\mapsto\mu(x,e)$ and $x\mapsto\mu(e,x)$ are homotopic to the identity through maps $(X,e)\to(X,e)$. Here $\mu$ is continuous by step [](#concat){.pf-ref}, and steps [](#right-unit){.pf-ref} and [](#left-unit){.pf-ref} give the two based homotopies from $\mu(-,e)$ and $\mu(e,-)$ to the identity of $\Omega X$; that is exactly the definition.
+By Hatcher's definition in §3.C an H-space is a space with basepoint $e$ and a continuous multiplication $\mu$ such that $x\mapsto\mu(x,e)$ and $x\mapsto\mu(e,x)$ are homotopic to the identity through maps $(X,e)\to(X,e)$. Here $\mu$ is continuous by step [](#concat){.pf-ref}, and steps [](#right-unit){.pf-ref} and [](#left-unit){.pf-ref} give the two based homotopies from $\mu(-,e)$ and $\mu(e,-)$ to the identity of $\Omega X$; that is exactly the definition.
 :::
 
 :::

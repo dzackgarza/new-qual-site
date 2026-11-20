@@ -74,7 +74,7 @@ Using an H-space multiplication $\mu$ on $K(G, n)$, define an addition in $\lang
 :::
 
 ::: {.solution}
-The retained solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.3.7, PDF p. 26**, which disposes of the exercise in one line — "this follows as in (Ex. 4.3.2)", the case $K(\ZZ,1)=S^1$ — and so gives no argument in degree $n>1$; the proof below is the card's own generalization. It rests on the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ proved in §4.3, printed pp. 393–395, and on the fact that $K(G,n)$ is $(n-1)$-connected with a single $0$-cell. The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 7, printed p. 419.
+The retained solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), §4.3 Exercise 7**, which disposes of the exercise in one line — "this follows as in (Ex. 4.3.2)", the case $K(\ZZ,1)=S^1$ — and so gives no argument in degree $n>1$; the proof below is the card's own generalization. It rests on the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ proved in §4.3 and on the fact that $K(G,n)$ is $(n-1)$-connected with a single $0$-cell. The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 7.
 
 Throughout $K=K(G,n)$, $K\times K$ carries the product cell structure of two copies of a CW structure on $K$ with one $0$-cell, $\mu:K\times K\to K$ is the $H$-space multiplication and $u\in H^n(K;G)$ corresponds to the identity of $G$ under $H^n(K;G)\approx\operatorname{Hom}(G,G)$.
 
@@ -84,7 +84,7 @@ Throughout $K=K(G,n)$, $K\times K$ carries the product cell structure of two cop
 There is a class $u\in H^n(K;G)$ such that for every CW complex $X$ the map $\Phi:\langle X,K\rangle\to H^n(X;G)$, $\Phi([f])=f^*u$, is a bijection, natural in $X$.
 
 ::: pf-proof
-By the universal coefficient theorem $H^n(K;G)$ is an extension of $\operatorname{Hom}(H_n(K),G)=\operatorname{Hom}(G,G)$ by $\Ext(H_{n-1}(K),G)$, and the Ext term vanishes: $H_{n-1}(K)=0$ for $n\ge2$ because $K$ is $(n-1)$-connected, and $H_0(K)=\ZZ$ is free for $n=1$. So $H^n(K;G)\approx\operatorname{Hom}(G,G)$, and $u$ is the class of the identity. That $\Phi$ is a bijection for every CW complex $X$ is the isomorphism $H^n(X;G)\approx\langle X,K(G,n)\rangle$ of §4.3, printed pp. 393–395; naturality, $\Phi([f\circ h])=h^*\Phi([f])$, is the functoriality of $H^n$ together with $(f\circ h)^*u=h^*f^*u$.
+By the universal coefficient theorem $H^n(K;G)$ is an extension of $\operatorname{Hom}(H_n(K),G)=\operatorname{Hom}(G,G)$ by $\Ext(H_{n-1}(K),G)$, and the Ext term vanishes: $H_{n-1}(K)=0$ for $n\ge2$ because $K$ is $(n-1)$-connected, and $H_0(K)=\ZZ$ is free for $n=1$. So $H^n(K;G)\approx\operatorname{Hom}(G,G)$, and $u$ is the class of the identity. That $\Phi$ is a bijection for every CW complex $X$ is Theorem 4.57; naturality, $\Phi([f\circ h])=h^*\Phi([f])$, is the functoriality of $H^n$ together with $(f\circ h)^*u=h^*f^*u$.
 
 :::
 
@@ -128,7 +128,7 @@ using functoriality $\operatorname{pr}_1\circ(f,g)=f$ and $\operatorname{pr}_2\c
 Under $\Phi$ the addition $[f]+[g]=[\mu(f,g)]$ on $\langle X,K(G,n)\rangle$ corresponds to the usual addition in $H^n(X;G)$; in particular the $H$-space addition is abelian, with $[\,\mathrm{const}\,]$ as identity and $[f]\mapsto[\mu(f,\iota f)]$ as inverse for a homotopy inverse $\iota$ of the multiplication.
 
 ::: pf-proof
-Step [](#homomorphism){.pf-ref} says $\Phi$ carries the $H$-space addition to addition of cohomology classes, and step [](#universal){.pf-ref} says $\Phi$ is a bijection. A bijection carrying one composition law to another makes the first a group law exactly when the second is, so $\langle X,K\rangle$ with $[\mu(f,g)]$ is an abelian group isomorphic to $(H^n(X;G),+)$, the constant map corresponding to $0$ and the inverse supplied by the homotopy inverse of $\mu$ that an $H$-space structure provides (§4.3 Exercise 6, printed p. 419).
+Step [](#homomorphism){.pf-ref} says $\Phi$ carries the $H$-space addition to addition of cohomology classes, and step [](#universal){.pf-ref} says $\Phi$ is a bijection. A bijection carrying one composition law to another makes the first a group law exactly when the second is, so $\langle X,K\rangle$ with $[\mu(f,g)]$ is an abelian group isomorphic to $(H^n(X;G),+)$, the constant map corresponding to $0$ and the inverse supplied by the homotopy inverse of $\mu$ that an $H$-space structure provides (§4.3 Exercise 6).
 
 :::
 
