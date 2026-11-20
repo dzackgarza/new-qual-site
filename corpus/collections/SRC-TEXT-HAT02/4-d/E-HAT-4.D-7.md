@@ -39,9 +39,8 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.D Exercise 7, printed p. 447,
-    with the Thom class defined on printed p. 441, orientability and Theorem 4D.10 on printed p. 442,
-    and the transport of Proposition 4.61 on printed p. 405. All four steps correct as written. The
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.D Exercise 7, with the Thom class of §4.D, orientability and Theorem 4D.10 of §4.D, and the
+    transport of Proposition 4.61. All four steps correct as written. The
     reading checked in the book: Hatcher's own sentence that the coboundary map identifies
     H^n(D^n,S^{n-1};Z) with H^{n-1}(S^{n-1};Z), which is the direction step `orientation-of-fibre`
     uses for delta; the definition of orientability by L_gamma acting as the identity on
@@ -61,9 +60,9 @@ Show that if a disk bundle $D^n \to E \to B$ has a Thom class with $\ZZ$ coeffic
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.D Exercise 7, printed p. 447, and it is the converse of Theorem 4D.10, printed p. 442. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` do not reach §4.D — so the argument below is the card's own; the definitions used are the Thom class on printed p. 441 and the orientability of a sphere bundle on printed p. 442.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.D Exercise 7, and it is the converse of Theorem 4D.10. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` do not reach §4.D — so the argument below is the card's own; the definitions used are the Thom class and the orientability of a sphere bundle, both in §4.D.
 
-Throughout, $(D^n,S^{n-1})\to(E,E')\xrightarrow{p}B$ is a disk bundle over a base $B$ with boundary sphere bundle $S^{n-1}\to E'\xrightarrow{p}B$, and $c\in H^n(E,E';\ZZ)$ is a Thom class: its restriction $c_b$ to the fibre pair $(D^n_b,S^{n-1}_b)$ is a generator of $H^n(D^n_b,S^{n-1}_b;\ZZ)\cong\ZZ$ (printed p. 441).
+Throughout, $(D^n,S^{n-1})\to(E,E')\xrightarrow{p}B$ is a disk bundle over a base $B$ with boundary sphere bundle $S^{n-1}\to E'\xrightarrow{p}B$, and $c\in H^n(E,E';\ZZ)$ is a Thom class: its restriction $c_b$ to the fibre pair $(D^n_b,S^{n-1}_b)$ is a generator of $H^n(D^n_b,S^{n-1}_b;\ZZ)\cong\ZZ$ (the definition of a Thom class in §4.D).
 
 ::: pf
 
@@ -85,7 +84,7 @@ The pullback bundle $\gamma^*E\to I$ is trivial, since $I$ is contractible, so t
 $$
 \Phi:\gamma^*E\longrightarrow I\times D^n
 $$
-respecting the pairs, and its restrictions $\Phi_t:D_{\gamma(t)}\to D^n$ are homeomorphisms of pairs. The class $\Phi^*c$ restricts to the slice $\{t\}\times D^n$ as a generator of $H^n(D^n,S^{n-1};\ZZ)$, and the inclusions of the slices $\{0\}\times D^n\to I\times D^n$ and $\{1\}\times D^n\to I\times D^n$ are homotopic, so these generators coincide under the identification: $\Phi_0^*c_{b_0}=\Phi_1^*c_{b_1}$. The transport $L_\gamma$ of the fibration $E\to B$ is the composite $\Phi_1\circ\Phi_0^{-1}$ up to homotopy (the construction of Proposition 4.61, printed p. 405, applied to the bundle), so $L_\gamma^*c_{b_1}=c_{b_0}$.
+respecting the pairs, and its restrictions $\Phi_t:D_{\gamma(t)}\to D^n$ are homeomorphisms of pairs. The class $\Phi^*c$ restricts to the slice $\{t\}\times D^n$ as a generator of $H^n(D^n,S^{n-1};\ZZ)$, and the inclusions of the slices $\{0\}\times D^n\to I\times D^n$ and $\{1\}\times D^n\to I\times D^n$ are homotopic, so these generators coincide under the identification: $\Phi_0^*c_{b_0}=\Phi_1^*c_{b_1}$. The transport $L_\gamma$ of the fibration $E\to B$ is the composite $\Phi_1\circ\Phi_0^{-1}$ up to homotopy (the construction of Proposition 4.61 applied to the bundle), so $L_\gamma^*c_{b_1}=c_{b_0}$.
 
 :::
 
@@ -109,7 +108,7 @@ Since $\delta c_{b_0}$ is a generator of $H^{n-1}(S_{b_0};\ZZ)\cong\ZZ$ by step 
 The sphere bundle $E'\to B$ is orientable, and therefore so is the disk bundle $E\to B$.
 
 ::: pf-proof
-Hatcher's definition, printed p. 442, calls the sphere bundle orientable when $L_\gamma$ induces the identity on $H^{n-1}(S^{n-1};\ZZ)$ for each loop $\gamma$ in $B$; that is step [](#loop){.pf-ref}, after identifying $H^{n-1}(S_{b_0};\ZZ)$ with $H^{n-1}(S^{n-1};\ZZ)$ through a trivialization. A disk bundle is defined to be orientable when its boundary sphere bundle is, again printed p. 442. So an integral Thom class forces orientability of the bundle, which is the assertion.
+Hatcher's definition in §4.D calls the sphere bundle orientable when $L_\gamma$ induces the identity on $H^{n-1}(S^{n-1};\ZZ)$ for each loop $\gamma$ in $B$; that is step [](#loop){.pf-ref}, after identifying $H^{n-1}(S_{b_0};\ZZ)$ with $H^{n-1}(S^{n-1};\ZZ)$ through a trivialization. A disk bundle is defined to be orientable when its boundary sphere bundle is, again in §4.D. So an integral Thom class forces orientability of the bundle, which is the assertion.
 
 :::
 
