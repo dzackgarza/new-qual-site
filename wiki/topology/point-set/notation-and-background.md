@@ -42,7 +42,7 @@ The identity element of a group $G$ is written $e_G$, $1_G$, or $0_G$.
 [[D-JDDCP]]
 
 ::: {.remark title="Indexing conventions and list notation"}
-For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$. Homology and cohomology written as a list start in degree $0$, and homotopy groups written as a list start in degree $1$:
+For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$ [[FF-2Q7RD|the zeroth homology is free on the path components]]. Homology and cohomology written as a list start in degree $0$, and homotopy groups written as a list start in degree $1$:
 $$
 \begin{aligned}
 H_*(X) &= [H_0(X), H_1(X), H_2(X), \ldots], \\
