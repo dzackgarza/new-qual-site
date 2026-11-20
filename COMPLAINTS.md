@@ -10485,3 +10485,15 @@ again and remains as recorded.
 `q` matches question titles and bodies, so an answer inside a question whose title and body do not mention
 the exercise would be missed. The intitle sweep is the check against that, and it covered every question
 with "wedge of spheres" in the title.
+
+## 2026-11-19: the citation requirement is by numbered statement, not by page
+
+**Object and need.** The owner's brief for this lane has required, for several rounds, that a source be cited by printed page or folio, and rounds of this session spent effort rendering pages, reading folios and correcting page arithmetic — including a whole round establishing that Abhyankar's paper is printed pp. 321--348 and that a brief's pp. 398 and 412--413 are not in it. The owner has corrected the requirement: **cite by numbered statement only — chapter, section, theorem, lemma, definition or exercise number.** A printed page or folio is never required, and no page markers are needed in any text version.
+
+**What this changes.** A card, a record or a report in this lane satisfies the source requirement when it names the numbered statement it uses: *Hartshorne, Algebraic Geometry, Theorem V.2.15*, not "printed p. 377"; *Abhyankar, Lemma 10*, not "printed p. 334"; *Greuel--Lossen--Shustin, Proposition 3.41*, not "printed pp. 216--217". Page and folio readings already recorded stay as they are — they are evidence of where something was read, they are not errors — but they are not to be demanded, produced or corrected as though the requirement rested on them, and a later round must not spend itself on page arithmetic when the numbered statement is what is being asked for.
+
+**What is unaffected.** The rest of the standard is unchanged: read the step, transcribe a published proof where one exists, cite it by author and numbered statement, mark a step no source carries as the card's own, and say what was not read. The corrections this lane has made on page numbers remain correct as facts — Abhyankar's paper is pp. 321--348, and Definition 3 is its Definition 3, Lemma 10 its Lemma 10, Lemma 12 its Lemma 12 — and are now cited that way.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** The open items of #168 are unchanged: V.5.6's five steps, V.5.8(b), the five unread V.4.16 items, IV.2.3 and IV.3.11. They are to be read against numbered statements from here on.
