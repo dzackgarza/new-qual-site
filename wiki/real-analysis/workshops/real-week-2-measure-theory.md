@@ -90,8 +90,6 @@ Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not 
 ::: {.corollary}
 Let $f\geq0$ on $\RR^d$ and $\mathcal A\coloneqq\theset{(x,y)\in\RR^d\times\RR \st 0\leq y\leq f(x)}$.
 Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$, and in that case $\int_{\RR^d}f(x)\dx = m(\mathcal A)$.
-
-The argument is the remark below: $\mathcal A$ is cut out from the measurable set $\{y\ge0\}$ by $\{y\le f(x)\}$, and conversely [[FT-4JRQX|Tonelli's theorem]] applied to $\chi_{\mathcal A}$ gives $m(\mathcal A)=\int_{\RR^d}m(\mathcal A_x)\dx=\int_{\RR^d}f(x)\dx$ with $\mathcal A_x=[0,f(x)]$.
 :::
 
 ::: {.remark}
