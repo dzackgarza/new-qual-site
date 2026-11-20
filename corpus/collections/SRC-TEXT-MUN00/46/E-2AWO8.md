@@ -40,6 +40,17 @@ audit:
     GitHub and web searches of this pass found no other treatment; they are recorded in the
     COMPLAINTS.md entry for §43--§50. The card keeps its own proof, which is the proof of Theorem
     46.7 carried out for the three topologies.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. The four steps are correct: singletons are compact, so the pointwise
+    subbasis lies in the compact-convergence basis; a uniform ball of radius $\varepsilon\le1$ is
+    a compact-convergence ball because $\bar d=d$ below $1$; for compact $X$ the two bases agree
+    with $C=X$; and a compact subset of a discrete space is finite, so $B_C(f,\varepsilon)$ is the
+    finite intersection of the singletons' balls. The exercise is Theorem 46.7 as printed.
+    Citation by number: §46 Exercise 3 (Theorem 46.7).
+
 ---
 
 ::: {.exercise}
