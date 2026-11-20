@@ -48,7 +48,7 @@ No retained solution set covers this exercise: the card's own example follows, w
 $\RR$ is paracompact.
 
 ::: pf-proof
-$\RR$ is metrizable, and every metrizable space is paracompact (Theorem 41.4, printed p. 257).
+$\RR$ is metrizable, and every metrizable space is paracompact (Theorem 41.4).
 :::
 
 :::

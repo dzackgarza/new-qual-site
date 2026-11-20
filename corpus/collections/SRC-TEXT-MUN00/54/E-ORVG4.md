@@ -64,7 +64,7 @@ What goes wrong with the "path-lifting lemma" (Lemma 54.1) for the local homeomo
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 54: Problem 1 Solution": the subdivision step of the path-lifting lemma fails at $b_0=(1,0)$, whose neighbourhoods have an incomplete sheet over an initial interval, and the clockwise loop from $1$ lifts initially as $1-t$ and dies at $0\notin\RR_+$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 1, printed p. 347; Lemma 54.1 is on printed p. 342, Example 2 of §53 is the map described below, and an evenly covered set and a covering map are defined on printed p. 336.
+The argument is that of the published solution of dbFin, "Section 54: Problem 1 Solution": the subdivision step of the path-lifting lemma fails at $b_0=(1,0)$, whose neighbourhoods have an incomplete sheet over an initial interval, and the clockwise loop from $1$ lifts initially as $1-t$ and dies at $0\notin\RR_+$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 1; Lemma 54.1 is on printed p. 342, Example 2 of §53 is the map described below, and an evenly covered set and a covering map are defined on printed p. 336.
 
 In Example 2 of §53 the map
 $$

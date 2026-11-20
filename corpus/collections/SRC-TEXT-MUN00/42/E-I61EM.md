@@ -76,7 +76,7 @@ Let $S_{\Omega}=[0,\Omega)$ and, for $x\in S_{\Omega}$, let $S_{x}=\{y:y<x\}$ be
 $S_{x}$ is countable and its subspace topology is its order topology.
 
 ::: pf-proof
-By Lemma 10.2 (printed p. 66) every section of $S_{\Omega}$ other than the one by $\Omega$ is countable, and $S_{x}=[0,x)$ is the section of $S_{\Omega}$ by its element $x$; so $S_{x}$ is countable. The set $S_{x}=[0,x)$ is a ray of the ordered set $S_{\Omega}$, hence convex, so the order topology of $S_{x}$ is the topology it inherits as a subspace (Theorem 16.4, printed p. 91).
+By Lemma 10.2 every section of $S_{\Omega}$ other than the one by $\Omega$ is countable, and $S_{x}=[0,x)$ is the section of $S_{\Omega}$ by its element $x$; so $S_{x}$ is countable. The set $S_{x}=[0,x)$ is a ray of the ordered set $S_{\Omega}$, hence convex, so the order topology of $S_{x}$ is the topology it inherits as a subspace (Theorem 16.4).
 :::
 
 :::
@@ -85,7 +85,7 @@ By Lemma 10.2 (printed p. 66) every section of $S_{\Omega}$ other than the one b
 $S_{x}$ has a countable basis.
 
 ::: pf-proof
-The sets $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$, together with $[0,x)=S_{x}$ itself, form a basis for the order topology on $S_{x}$ (§14, printed p. 84): $S_{x}$ is well ordered with least element $0$, so the rays $[0,b)$ are the neighbourhoods of the form $[a_0,b)$ and the intervals $(a,b)$, $(a,x)$ are the remaining basic sets, and $[0,x)$ is a basis element because $S_{x}$ is open in itself. The last one is needed: if $S_{x}=\{0\}$ then $[0,b)=(a,b)=(a,x)=\varnothing$ for every admissible $a,b$, and $[0,x)=\{0\}$ is the only member of the family that is nonempty. All these sets are determined by pairs $a,b\in S_{x}$, so there are countably many of them because $S_{x}$ is countable by step [](#countable){.pf-ref}; hence $S_{x}$ is second countable.
+The sets $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$, together with $[0,x)=S_{x}$ itself, form a basis for the order topology on $S_{x}$ (§14): $S_{x}$ is well ordered with least element $0$, so the rays $[0,b)$ are the neighbourhoods of the form $[a_0,b)$ and the intervals $(a,b)$, $(a,x)$ are the remaining basic sets, and $[0,x)$ is a basis element because $S_{x}$ is open in itself. The last one is needed: if $S_{x}=\{0\}$ then $[0,b)=(a,b)=(a,x)=\varnothing$ for every admissible $a,b$, and $[0,x)=\{0\}$ is the only member of the family that is nonempty. All these sets are determined by pairs $a,b\in S_{x}$, so there are countably many of them because $S_{x}$ is countable by step [](#countable){.pf-ref}; hence $S_{x}$ is second countable.
 :::
 
 :::
@@ -94,7 +94,7 @@ The sets $(a,b)$, $[0,b)$ and $(a,x)$ with $a,b\in S_{x}$, together with $[0,x)=
 $S_{x}$ is metrizable.
 
 ::: pf-proof
-A well-ordered set is normal in its order topology (Theorem 32.4, printed p. 202), hence regular, and $S_{x}$ is a well-ordered set in the order topology by step [](#countable){.pf-ref}; with the countable basis of step [](#basis){.pf-ref} the Urysohn metrization theorem (Theorem 34.1, printed p. 215) gives a metric for $S_{x}$ that induces its topology.
+A well-ordered set is normal in its order topology (Theorem 32.4), hence regular, and $S_{x}$ is a well-ordered set in the order topology by step [](#countable){.pf-ref}; with the countable basis of step [](#basis){.pf-ref} the Urysohn metrization theorem (Theorem 34.1) gives a metric for $S_{x}$ that induces its topology.
 :::
 
 :::
@@ -130,7 +130,7 @@ This is Example 2 of §28: an infinite $A\subset S_{\Omega}$ contains a countabl
 If $S_{\Omega}$ were paracompact it would be metrizable, which is impossible.
 
 ::: pf-proof
-By the Smirnov metrization theorem (Theorem 42.1, printed p. 261) a space is metrizable if and only if it is a paracompact Hausdorff space that is locally metrizable. The space $S_{\Omega}$ is Hausdorff in its order topology, being a simply ordered set (Theorem 17.11), and step [](#locally-metrizable){.pf-ref} gives local metrizability; so a paracompact $S_{\Omega}$ would be metrizable. Were $S_{\Omega}$ metrizable, it would be compact by Theorem 28.2 (printed p. 179), since it is limit point compact by step [](#limit-point-compact){.pf-ref}; but step [](#limit-point-compact){.pf-ref} also shows it is not compact. So $S_{\Omega}$ is not paracompact.
+By the Smirnov metrization theorem (Theorem 42.1) a space is metrizable if and only if it is a paracompact Hausdorff space that is locally metrizable. The space $S_{\Omega}$ is Hausdorff in its order topology, being a simply ordered set (Theorem 17.11), and step [](#locally-metrizable){.pf-ref} gives local metrizability; so a paracompact $S_{\Omega}$ would be metrizable. Were $S_{\Omega}$ metrizable, it would be compact by Theorem 28.2, since it is limit point compact by step [](#limit-point-compact){.pf-ref}; but step [](#limit-point-compact){.pf-ref} also shows it is not compact. So $S_{\Omega}$ is not paracompact.
 :::
 
 :::

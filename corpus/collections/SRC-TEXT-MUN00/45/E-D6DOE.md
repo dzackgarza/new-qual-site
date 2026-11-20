@@ -64,7 +64,7 @@ Show that our proof of Ascoli's theorem goes through if $\RR^n$ is replaced by a
 
 ::: {.solution}
 
-The argument is the card's own, following the four steps of the proof of Theorem 45.4 (printed pp. 279--280) with $\RR^{n}$ replaced by a metric space $Y$ in which every closed bounded subspace is compact; no published solution of this exercise was located, and the sets searched are recorded in the audit trail.
+The argument is the card's own, following the four steps of the proof of Theorem 45.4 with $\RR^{n}$ replaced by a metric space $Y$ in which every closed bounded subspace is compact; no published solution of this exercise was located, and the sets searched are recorded in the audit trail.
 
 Let $(Y,d)$ be a metric space in which every closed bounded subspace is compact, let $X$ be compact, and let $\mathcal{C}(X,Y)$ carry the uniform metric $\rho(f,g)=\max_{x\in X}d\big(f(x),g(x)\big)$.
 
@@ -74,7 +74,7 @@ Let $(Y,d)$ be a metric space in which every closed bounded subspace is compact,
 $Y$ is complete, and the closure of a bounded subset of $Y$ is compact.
 
 ::: pf-proof
-A Cauchy sequence in $Y$ is bounded, so it lies in a closed ball $\overline{B}(a,r)$, which is closed and bounded, hence compact; a compact metric space is complete (Theorem 45.1, printed p. 275), so the sequence has a limit in $Y$ and $Y$ is complete. A bounded $B\subset Y$ lies in a closed ball $\overline{B}(a,r)$, whose closure $\overline{B}$ of $B$ is then a closed subset of that compact ball, hence compact by Theorem 26.2.
+A Cauchy sequence in $Y$ is bounded, so it lies in a closed ball $\overline{B}(a,r)$, which is closed and bounded, hence compact; a compact metric space is complete (Theorem 45.1), so the sequence has a limit in $Y$ and $Y$ is complete. A bounded $B\subset Y$ lies in a closed ball $\overline{B}(a,r)$, whose closure $\overline{B}$ of $B$ is then a closed subset of that compact ball, hence compact by Theorem 26.2.
 :::
 
 :::
@@ -87,7 +87,7 @@ A compact subspace of a metric space is totally bounded (Theorem 45.1), so for $
 $$
 d\big(g(x),g(y)\big)\le d\big(g(x),g_{i}(x)\big)+d\big(g_{i}(x),g_{i}(y)\big)+d\big(g_{i}(y),g(y)\big)<\varepsilon
 $$
-for $x,y\in U$. So $\mathcal{G}$ is equicontinuous (Lemma 45.2, printed p. 277). And $\mathcal{G}$ is bounded under $\rho$, so for a fixed $a\in X$ the set $\mathcal{G}_{a}=\{g(a)\}$ is bounded, since $d\big(f(a),g(a)\big)\le\rho(f,g)$; so $\mathcal{G}$ is pointwise bounded.
+for $x,y\in U$. So $\mathcal{G}$ is equicontinuous (Lemma 45.2). And $\mathcal{G}$ is bounded under $\rho$, so for a fixed $a\in X$ the set $\mathcal{G}_{a}=\{g(a)\}$ is bounded, since $d\big(f(a),g(a)\big)\le\rho(f,g)$; so $\mathcal{G}$ is pointwise bounded.
 :::
 
 :::
@@ -122,7 +122,7 @@ so $\mathcal{G}\subset\mathcal{C}(X,Y_{0})$ with $Y_{0}=\overline{B}(y_{0},N+1)$
 If $\mathcal{F}\subset\mathcal{C}(X,Y)$ is equicontinuous and pointwise bounded, then $\overline{\mathcal{F}}$ is compact; hence a subspace of $\mathcal{C}(X,Y)$ has compact closure exactly when it is equicontinuous and pointwise bounded.
 
 ::: pf-proof
-Let $\mathcal{G}=\overline{\mathcal{F}}$, which is equicontinuous and pointwise bounded by step [](#closure){.pf-ref} and lies in $\mathcal{C}(X,Y_{0})$ with $Y_{0}$ compact by step [](#compact-target){.pf-ref}. Lemma 45.3 (printed p. 278) uses only the compactness of the target space and gives that $\mathcal{G}$ is totally bounded under $\rho$. The space $\mathcal{C}(X,Y)$ is complete because $Y$ is complete (Theorem 43.6, printed p. 267), and $\mathcal{G}$ is closed in it, hence complete; a complete totally bounded metric space is compact (Theorem 45.1). So $\mathcal{F}$ has compact closure. Conversely a compact $\mathcal{G}$ gives the two properties by step [](#only-if){.pf-ref}, and steps [](#only-if){.pf-ref} and this one together are Ascoli's theorem with $\RR^{n}$ replaced by $Y$.
+Let $\mathcal{G}=\overline{\mathcal{F}}$, which is equicontinuous and pointwise bounded by step [](#closure){.pf-ref} and lies in $\mathcal{C}(X,Y_{0})$ with $Y_{0}$ compact by step [](#compact-target){.pf-ref}. Lemma 45.3 uses only the compactness of the target space and gives that $\mathcal{G}$ is totally bounded under $\rho$. The space $\mathcal{C}(X,Y)$ is complete because $Y$ is complete (Theorem 43.6), and $\mathcal{G}$ is closed in it, hence complete; a complete totally bounded metric space is compact (Theorem 45.1). So $\mathcal{F}$ has compact closure. Conversely a compact $\mathcal{G}$ gives the two properties by step [](#only-if){.pf-ref}, and steps [](#only-if){.pf-ref} and this one together are Ascoli's theorem with $\RR^{n}$ replaced by $Y$.
 :::
 
 :::

@@ -60,7 +60,7 @@ Let $X$ be compact Hausdorff, and for each $x$ let $U_{x}\ni x$ be a neighbourho
 There are finitely many points $x_{1},\dots,x_{m}$ and open sets $V_{i}\subseteq\overline{V_{i}}\subseteq W_{i}\subseteq\overline{W_{i}}\subseteq U_{i}$ with $\bigcup_{i}V_{i}=X$.
 
 ::: pf-proof
-$X$ is compact Hausdorff, hence normal (Theorem 32.3, printed p. 202). Given $x\in U_{x}$ with $U_{x}$ open, normality gives an open $W_{x}$ with $x\in W_{x}\subseteq\overline{W_{x}}\subseteq U_{x}$; applying normality again to $x$ and $X\setminus W_{x}$ gives open $V_{x}$ with $x\in V_{x}\subseteq\overline{V_{x}}\subseteq W_{x}$. The sets $V_{x}$ cover $X$, so finitely many $V_{1},\dots,V_{m}$ do, and we relabel the corresponding $W,U,e$.
+$X$ is compact Hausdorff, hence normal (Theorem 32.3). Given $x\in U_{x}$ with $U_{x}$ open, normality gives an open $W_{x}$ with $x\in W_{x}\subseteq\overline{W_{x}}\subseteq U_{x}$; applying normality again to $x$ and $X\setminus W_{x}$ gives open $V_{x}$ with $x\in V_{x}\subseteq\overline{V_{x}}\subseteq W_{x}$. The sets $V_{x}$ cover $X$, so finitely many $V_{1},\dots,V_{m}$ do, and we relabel the corresponding $W,U,e$.
 :::
 
 :::
@@ -96,7 +96,7 @@ Suppose $\Psi(y)=\Psi(z)$ with $y\ne z$. Since the $V_{i}$ cover $X$, some $i$ h
 $\Psi$ is an imbedding of $X$ into $\RR^{N}$ for $N=m+k_{1}+\cdots+k_{m}$.
 
 ::: pf-proof
-$\Psi$ is continuous, and injective by step [](#injective){.pf-ref}; a continuous injection from the compact space $X$ to the Hausdorff space $\RR^{N}$ is an imbedding (Theorem 26.6, printed p. 167).
+$\Psi$ is continuous, and injective by step [](#injective){.pf-ref}; a continuous injection from the compact space $X$ to the Hausdorff space $\RR^{N}$ is an imbedding (Theorem 26.6).
 :::
 
 :::

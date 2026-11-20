@@ -52,7 +52,7 @@ Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 55: Problem 2 Solution": a nullhomotopic map of the circle extends over the disc, Brouwer's theorem applied to that extension gives the fixed point, and the same theorem applied to the map followed by the half-turn gives the point sent to its antipode. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 2, printed p. 353; the extension lemma is Lemma 55.3, printed p. 349, and Brouwer's fixed-point theorem for the disc is Theorem 55.6, printed p. 351.
+The argument is that of the published solution of dbFin, "Section 55: Problem 2 Solution": a nullhomotopic map of the circle extends over the disc, Brouwer's theorem applied to that extension gives the fixed point, and the same theorem applied to the map followed by the half-turn gives the point sent to its antipode. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 2; the extension lemma is Lemma 55.3, and Brouwer's fixed-point theorem for the disc is Theorem 55.6.
 
 Let $j\colon S^1\to B^2$ be the inclusion, and $\tau\colon S^1\to S^1$ the half-turn $\tau(x)=-x$.
 
@@ -62,7 +62,7 @@ Let $j\colon S^1\to B^2$ be the inclusion, and $\tau\colon S^1\to S^1$ the half-
 A nullhomotopic map $u\colon S^1\to S^1$ extends to a continuous map $B^2\to S^1$, and $\tau\circ u$ is nullhomotopic.
 
 ::: pf-proof
-The first clause is the equivalence of (1) and (2) in Lemma 55.3, printed p. 349: a continuous $u\colon S^1\to X$ is nullhomotopic exactly when it extends to a continuous $k\colon B^2\to X$. For the second, if $H\colon S^1\times I\to S^1$ is a homotopy from $u$ to a constant map, then $\tau\circ H$ is a homotopy from $\tau\circ u$ to a constant map.
+The first clause is the equivalence of (1) and (2) in Lemma 55.3: a continuous $u\colon S^1\to X$ is nullhomotopic exactly when it extends to a continuous $k\colon B^2\to X$. For the second, if $H\colon S^1\times I\to S^1$ is a homotopy from $u$ to a constant map, then $\tau\circ H$ is a homotopy from $\tau\circ u$ to a constant map.
 :::
 
 :::
@@ -71,7 +71,7 @@ The first clause is the equivalence of (1) and (2) in Lemma 55.3, printed p. 349
 Every nullhomotopic map $u\colon S^1\to S^1$ has a fixed point.
 
 ::: pf-proof
-By step [](#extension){.pf-ref} let $k\colon B^2\to S^1$ extend $u$. The composite $j\circ k\colon B^2\to B^2$ is continuous, so by Theorem 55.6, printed p. 351, there is $x\in B^2$ with $(j\circ k)(x)=x$. Then $x=j(k(x))$ lies in $j(S^1)=S^1$, and on $S^1$ the map $k$ agrees with $u$, so $x=u(x)$.
+By step [](#extension){.pf-ref} let $k\colon B^2\to S^1$ extend $u$. The composite $j\circ k\colon B^2\to B^2$ is continuous, so by Theorem 55.6, there is $x\in B^2$ with $(j\circ k)(x)=x$. Then $x=j(k(x))$ lies in $j(S^1)=S^1$, and on $S^1$ the map $k$ agrees with $u$, so $x=u(x)$.
 :::
 
 :::

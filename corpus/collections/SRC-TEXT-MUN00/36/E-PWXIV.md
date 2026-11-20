@@ -241,7 +241,7 @@ Column 9 of the table, *Regular*: Y for (a) $S_\Omega$, (b) $\overline S_\Omega$
 
 ::: pf-proof
 
-Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (j) are products of regular spaces in the product topology, Theorem 31.2(b); (h) is metrizable, so normal by Theorem 32.2 (printed p. 197) and hence regular. For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9 (printed p. 213), which shows that $\RR^J$ in the box topology is completely regular, together with the remark on printed p. 211 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
+Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (j) are products of regular spaces in the product topology, Theorem 31.2(b); (h) is metrizable, so normal by Theorem 32.2 and hence regular. For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9, which shows that $\RR^J$ in the box topology is completely regular, together with the remark on printed p. 211 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
 
 :::
 
@@ -253,7 +253,7 @@ Column 10 of the table, *Completely regular*: Y for (a) $S_\Omega$, (b) $\overli
 
 ::: pf-proof
 
-Y for all but (k). A normal space is completely regular by the Urysohn lemma, Theorem 33.1, which settles (a), (b), (d), (e) through their normality, entry 11; and a product of completely regular spaces is completely regular, Theorem 33.2, which settles (c), (f), (g) and (j) in the product topology; (h) is metrizable, so normal by Theorem 32.2 and hence completely regular by the Urysohn lemma. That theorem's product clause is again about the product topology, so (i) is settled by Exercise 33.9 (printed p. 213), the result that $\RR^J$ in the box topology is completely regular. N for (k): a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets, and (k) is not regular.
+Y for all but (k). A normal space is completely regular by the Urysohn lemma, Theorem 33.1, which settles (a), (b), (d), (e) through their normality, entry 11; and a product of completely regular spaces is completely regular, Theorem 33.2, which settles (c), (f), (g) and (j) in the product topology; (h) is metrizable, so normal by Theorem 32.2 and hence completely regular by the Urysohn lemma. That theorem's product clause is again about the product topology, so (i) is settled by Exercise 33.9, the result that $\RR^J$ in the box topology is completely regular. N for (k): a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets, and (k) is not regular.
 
 :::
 

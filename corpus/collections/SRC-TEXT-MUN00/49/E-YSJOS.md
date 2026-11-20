@@ -81,13 +81,13 @@ Check the stated properties of the functions $f$, $g$, and $k$ of Example 1 of �
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the collection's provenance is the textbook, and the searches for this exercise are recorded on the card and in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument below is the card's own, following Example 1 of §49, printed p. 301, and the definitions on the same page.
+No retained solution set covers this exercise: the collection's provenance is the textbook, and the searches for this exercise are recorded on the card and in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`. The argument below is the card's own, following Example 1 of §49, and the definitions on the same page.
 
 Write $I=[0,1]$ and let $\alpha>0$. For $f:I\to\RR$ continuous, $x\in I$ and $0<h\le1/2$, let
 $$
 \Delta f(x,h)=\max\Big\{\frac{\abs{f(x+h)-f(x)}}{h},\ \frac{\abs{f(x-h)-f(x)}}{h}\Big\},
 $$
-each term taken only when defined, and let $\Delta_h f=\inf\{\Delta f(x,h)\mid x\in I\}$. For $n\ge2$, $f\in U_n$ means that $\Delta_h f>n$ for some $0<h\le1/n$ (Definition and Example 1, printed p. 301).
+each term taken only when defined, and let $\Delta_h f=\inf\{\Delta f(x,h)\mid x\in I\}$. For $n\ge2$, $f\in U_n$ means that $\Delta_h f>n$ for some $0<h\le1/n$ (Definition and Example 1).
 
 ::: pf
 
@@ -253,7 +253,7 @@ Put $h=\min\{1/n,1/8\}$, so that $0<h\le1/n$ and $h\le1/8$. By step [](#sawtooth
 The three functions satisfy exactly the properties that Example 1 of §49 states for them: $\Delta f(x,1/4)\ge\alpha$ with $f\in U_4$ when $\alpha>4$; $\Delta g(x,h)\ge\alpha$ for $h\le1/4$ with $g\in U_n$ when $\alpha>n$; and $\Delta k(x,h)\ge\alpha$ for $h\le1/8$ with $k\in U_n$ when $\alpha>n$.
 
 ::: pf-proof
-Steps [](#parabola){.pf-ref}, [](#parabolamember){.pf-ref}, [](#tent){.pf-ref}, [](#tentmember){.pf-ref}, [](#sawtoothbound){.pf-ref} and [](#sawtoothmember){.pf-ref} prove the six assertions, which are those of Example 1 (printed p. 301) word for word: "$\Delta f(x,h)\ge\alpha$ for $h=1/4$ and all $x$", "if $\alpha>4$ the function $f$ belongs to $U_4$", "$\Delta g(x,h)\ge\alpha$ for any $h\le1/4$", "hence $g$ belongs to $U_n$ provided $\alpha>n$", and the same two statements for $k$ with $1/8$ in place of $1/4$.
+Steps [](#parabola){.pf-ref}, [](#parabolamember){.pf-ref}, [](#tent){.pf-ref}, [](#tentmember){.pf-ref}, [](#sawtoothbound){.pf-ref} and [](#sawtoothmember){.pf-ref} prove the six assertions, which are those of Example 1 word for word: "$\Delta f(x,h)\ge\alpha$ for $h=1/4$ and all $x$", "if $\alpha>4$ the function $f$ belongs to $U_4$", "$\Delta g(x,h)\ge\alpha$ for any $h\le1/4$", "hence $g$ belongs to $U_n$ provided $\alpha>n$", and the same two statements for $k$ with $1/8$ in place of $1/4$.
 :::
 
 :::

@@ -55,7 +55,7 @@ Show that if every point $x$ of $X$ has a neighborhood that is a Baire space, th
 :::
 
 ::: {.solution}
-The proof is the one in "Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, answer to Munkres §48 Exercise 4, printed p. 6 of that set. The exercise is Munkres, *Topology* (2000), Section 48, Exercise 4, printed p. 299; the open-set formulation of the Baire condition is Lemma 48.1, printed p. 296, and the fact that an open subspace of a Baire space is Baire is Lemma 48.4, printed p. 297.
+The proof is the one in "Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), Part 3, answer to Munkres §48 Exercise 4, printed p. 6 of that set. The exercise is Munkres, *Topology* (2000), Section 48, Exercise 4; the open-set formulation of the Baire condition is Lemma 48.1, and the fact that an open subspace of a Baire space is Baire is Lemma 48.4.
 
 ::: pf
 

@@ -66,8 +66,8 @@ Show that a retract of a contractible space is contractible.
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 6, printed p. 367, with *contractible* as recalled
-in Exercise 5 of the same list and defined in §51 Exercise 3, printed p. 330:
+The exercise is §58 Exercise 6, with *contractible* as recalled
+in Exercise 5 of the same list and defined in §51 Exercise 3:
 $X$ is contractible when $\operatorname{id}_X$ is nulhomotopic, that is,
 homotopic to a constant map.
 
@@ -77,7 +77,7 @@ The proof is transcribed from UC Riverside Math 205A, Fall 2014, Solutions Part
 the constant map the homotopy ends at may be taken with its value in $A$, so that
 composing with the retraction produces a constant map of $A$; that is step
 [](#value-in-A){.pf-ref}, and it uses the path connectedness of a contractible
-space, which is §51 Exercise 3(b), printed p. 330.
+space, which is §51 Exercise 3(b).
 
 ::: pf
 
@@ -96,7 +96,7 @@ it is contractible. Choose $a\in A$.
 By contractibility there is $x\in X$ with $\operatorname{id}_X\simeq c_x$. Since
 $X$ is path connected there is a path $\gamma:I\to X$ from $x$ to $a$, and
 $(y,t)\mapsto\gamma(t)$ is a homotopy from $c_x$ to $c_a$; by Lemma 51.1
-(printed p. 324) we get $\operatorname{id}_X\simeq c_a$, and $a\in A$.
+ we get $\operatorname{id}_X\simeq c_a$, and $a\in A$.
 :::
 
 :::

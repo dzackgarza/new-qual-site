@@ -71,7 +71,7 @@ Show that if $A$ is a deformation retract of $X$, and $B$ is a deformation retra
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 1, printed p. 366, and the notion is the book's
+The exercise is §58 Exercise 1, and the notion is the book's
 definition of a deformation retract on printed p. 360: $A\subseteq X$ is a
 deformation retract of $X$ when there is a continuous $H:X\times I\to X$ with
 $H(x,0)=x$ and $H(x,1)\in A$ for all $x\in X$, and $H(a,t)=a$ for all $a\in A$.
@@ -132,7 +132,7 @@ $B\subseteq A$, so $r(x)\in B$ and $G(x,t)=r(x)=x$.
 Second, $H$ is a homotopy from $\operatorname{id}_X$ to $r$ and it fixes $A$,
 hence fixes $B$.
 
-Homotopy is transitive, by the argument of Lemma 51.1 (printed p. 324) applied to
+Homotopy is transitive, by the argument of Lemma 51.1 applied to
 homotopies that fix $B$ pointwise, so the two compose to a homotopy from
 $e\circ\rho$ to $\operatorname{id}_X$ fixing $B$ pointwise.
 :::
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 The two formulas agree at $t=\tfrac12$, where $H(x,1)=r(x)=K(r(x),0)$, so $F$ is
-continuous by the pasting lemma (Theorem 18.3, printed p. 108) on the two closed
+continuous by the pasting lemma (Theorem 18.3) on the two closed
 sets $X\times[0,\tfrac12]$ and $X\times[\tfrac12,1]$. Further $F(x,0)=H(x,0)=x$
 and $F(x,1)=K(r(x),1)=s(r(x))=\rho(x)\in B$; and for $b\in B$ we have
 $F(b,t)=H(b,2t)=b$ for $t\le\tfrac12$, while $F(b,t)=K(r(b),2t-1)=K(b,2t-1)=b$

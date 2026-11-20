@@ -69,7 +69,7 @@ Show that the collection $\mathcal{B} = \bigcup \mathcal{B}_n$ is countably loca
 ::: {.solution}
 The construction and the three claims are those of the retained published solution, **Feryll, *Praying For Stockholm*, "Countable Local Finiteness (6.39.5-6)" (26 December 2014), http://feryll.blogspot.com/2014/12/countable-local-finiteness-6395-6.html**, read 2026-11-10; being a web page it has no printed page, and it is cited by its URL and the date read. The steps below are its argument, with the ball of radius $1/3$ used where the post's remark speaks of the $1/2$-neighbourhood (see the audit).
 
-Throughout, $\RR^\omega$ carries the uniform metric $\bar\rho(x,y)=\sup_i\min\{\abs{x_i-y_i},1\}$ (Munkres, *Topology* (2000), §20, printed p. 124), the exercise is §39 Exercise 6 (printed p. 248), and $\mathcal{B}=\bigcup_{n\ge1}\mathcal{B}_n$ is the collection defined there.
+Throughout, $\RR^\omega$ carries the uniform metric $\bar\rho(x,y)=\sup_i\min\{\abs{x_i-y_i},1\}$ (Munkres, *Topology* (2000), §20), the exercise is §39 Exercise 6, and $\mathcal{B}=\bigcup_{n\ge1}\mathcal{B}_n$ is the collection defined there.
 
 ::: pf
 
@@ -122,7 +122,7 @@ Each point of $\RR^\omega$ has the neighbourhood $B_{\bar\rho}(x,1/3)$, which me
 $\mathcal{B}$ is not countable.
 
 ::: pf-proof
-By step [](#parametrise){.pf-ref} the subcollection $\mathcal{B}_1$ is in bijection with the set of binary sequences indexed by the integers $i>1$, which is in bijection with the power set of $\ZZ_+$; that power set admits no surjection from $\ZZ_+$ (Theorem 7.8, printed p. 50), so $\mathcal{B}_1$ has cardinality $2^{\aleph_0}$ and $\mathcal{B}$ is uncountable.
+By step [](#parametrise){.pf-ref} the subcollection $\mathcal{B}_1$ is in bijection with the set of binary sequences indexed by the integers $i>1$, which is in bijection with the power set of $\ZZ_+$; that power set admits no surjection from $\ZZ_+$ (Theorem 7.8), so $\mathcal{B}_1$ has cardinality $2^{\aleph_0}$ and $\mathcal{B}$ is uncountable.
 :::
 
 :::

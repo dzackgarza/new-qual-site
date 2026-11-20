@@ -64,7 +64,7 @@ This result holds without assuming $G$ is connected, but the proof requires more
 :::
 
 ::: {.solution}
-The argument is the card's own, following the book's hint; no retained solution set is cited on the card. It is checked against Munkres §41 Exercise 7, printed p. 257, with [[E-KVFCT]](a) (a regular $\sigma$-compact space is paracompact).
+The argument is the card's own, following the book's hint; no retained solution set is cited on the card. It is checked against Munkres §41 Exercise 7, with [[E-KVFCT]](a) (a regular $\sigma$-compact space is paracompact).
 
 ::: pf
 

@@ -64,7 +64,7 @@ Sketch these paths and their liftings.
 :::
 
 ::: {.solution}
-The lifts are those of the published solution of dbFin, "Section 54: Problem 4 Solution", which writes the covering as $p(\alpha,r)=(r\cos2\pi\alpha,r\sin2\pi\alpha)$ and gives $\tilde f(t)=(z,2-t)$, $\tilde g(t)=(t+z,1+t)$ and $\tilde h(t)=(\max(0,2t-1)+z,\,1+\abs{1-2t})$ for $z\in\ZZ$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 4, printed p. 348; the covering is Example 6 of §53, printed p. 340, and the uniqueness of lifts used below is Lemma 54.1, printed p. 342.
+The lifts are those of the published solution of dbFin, "Section 54: Problem 4 Solution", which writes the covering as $p(\alpha,r)=(r\cos2\pi\alpha,r\sin2\pi\alpha)$ and gives $\tilde f(t)=(z,2-t)$, $\tilde g(t)=(t+z,1+t)$ and $\tilde h(t)=(\max(0,2t-1)+z,\,1+\abs{1-2t})$ for $z\in\ZZ$. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 4; the covering is Example 6 of §53, and the uniqueness of lifts used below is Lemma 54.1.
 
 Throughout, $p\colon\RR\times\RR_+\to\RR^2\setminus\{0\}$ is $p(\theta,r)=(r\cos2\pi\theta,r\sin2\pi\theta)$; the fibre over $(2,0)$ is $\{(n,2):n\in\ZZ\}$ and the fibre over $(1,0)$ is $\{(m,1):m\in\ZZ\}$.
 

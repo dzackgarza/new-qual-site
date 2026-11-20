@@ -79,7 +79,7 @@ The degree of $h$ is independent of the choice of the generator $\gamma$; choosi
 :::
 
 ::: {.solution}
-The five parts are proved as Zinger does in **Aleksey Zinger, MAT 530, Fall 2005, Problem Set 9, "Solution to Problem p366, #9", PDF pp. 3--6**, which defines $\deg h$ by $h_*(\gamma)=(\deg h)\gamma$ and proves the same properties; the exercise is Munkres, *Topology* (2000), Section 58 Exercise 9, printed p. 366.
+The five parts are proved as Zinger does in **Aleksey Zinger, MAT 530, Fall 2005, Problem Set 9, "Solution to Problem p366, #9"**, which defines $\deg h$ by $h_*(\gamma)=(\deg h)\gamma$ and proves the same properties; the exercise is Munkres, *Topology* (2000), Section 58 Exercise 9.
 
 Throughout, $\gamma(x)$ denotes the preferred generator of $\pi_1(S^1,x)$ built from $\gamma=\gamma(b_0)$ in the exercise, and $\hat\alpha$ denotes the change-of-basepoint isomorphism along a path $\alpha$, so that $\hat\alpha:\pi_1(S^1,x)\to\pi_1(S^1,y)$ for $\alpha$ from $x$ to $y$.
 
@@ -127,7 +127,7 @@ where the second equality is step [](#naturality){.pf-ref} and the third and fou
 Part (b): if $h\simeq k$, then $\deg h=\deg k$.
 
 ::: pf-proof
-Let $H:S^1\times I\to S^1$ be a homotopy from $h$ to $k$, fix $x_0$, and let $\eta(t)=H(x_0,t)$, a path from $h(x_0)$ to $k(x_0)$. The homotopy lemma in the proof of Theorem 54.3 (Munkres, printed p. 342) states that for every loop $f$ at $x_0$ the loops $\eta*(h\circ f)*\overline\eta$ and $k\circ f$ are homotopic rel $\{0,1\}$, that is,
+Let $H:S^1\times I\to S^1$ be a homotopy from $h$ to $k$, fix $x_0$, and let $\eta(t)=H(x_0,t)$, a path from $h(x_0)$ to $k(x_0)$. The homotopy lemma in the proof of Theorem 54.3 (Munkres) states that for every loop $f$ at $x_0$ the loops $\eta*(h\circ f)*\overline\eta$ and $k\circ f$ are homotopic rel $\{0,1\}$, that is,
 $$
 k_{*,x_0}=\widehat\eta\circ h_{*,x_0}.
 $$
@@ -172,7 +172,7 @@ On the circle $\rho$ is $z\mapsto\bar z$, and with $\omega(t)=e^{2\pi it}$ one h
 :::
 
 ::: {.pf-step #power}
-With $h(z)=z^n$ one has $h\circ\omega=\omega_n$, where $\omega_n(t)=e^{2\pi int}$, and $\omega_n$ is the $n$-fold concatenation of $\omega$ with itself, so $[\omega_n]=n[\omega]$ and $d=n$; in the loop model $[\omega]$ corresponds to $1\in\ZZ$ under the isomorphism of Theorem 54.5 (printed p. 345), which sends a class to the endpoint of its lift starting at $0$, and $\omega_n$ lifts to $t\mapsto nt$.
+With $h(z)=z^n$ one has $h\circ\omega=\omega_n$, where $\omega_n(t)=e^{2\pi int}$, and $\omega_n$ is the $n$-fold concatenation of $\omega$ with itself, so $[\omega_n]=n[\omega]$ and $d=n$; in the loop model $[\omega]$ corresponds to $1\in\ZZ$ under the isomorphism of Theorem 54.5, which sends a class to the endpoint of its lift starting at $0$, and $\omega_n$ lifts to $t\mapsto nt$.
 :::
 
 :::
@@ -199,7 +199,7 @@ If $\deg h=\deg k=d$, then $h\simeq k$.
 
 ::: pf-proof
 For $s\in I$ define $\widetilde L_s(t)=(1-s)\tilde h(t)+s\tilde k(t)$. By step [](#period){.pf-ref}, $\widetilde L_s(t+1)=\widetilde L_s(t)+d$ for all $s,t$.
-Set $\widetilde F(t,s)=q\big(\widetilde L_s(t)\big)=e^{2\pi i\widetilde L_s(t)}$, continuous on $\RR\times I$. It is invariant under $t\mapsto t+1$: $\widetilde F(t+1,s)=e^{2\pi i(\widetilde L_s(t)+d)}=\widetilde F(t,s)$. The map $\pi:\RR\times I\to S^1\times I$, $\pi(t,s)=(q(t),s)$, is a quotient map, being the product of the quotient map $q$ and the identity of the compact space $I$ (Theorem 22.2, printed p. 141), so $\widetilde F$ factors through it: there is a continuous $F:S^1\times I\to S^1$ with $F\big(q(t),s\big)=q(\widetilde L_s(t))$. At $s=0$, $F(q(t),0)=q(\tilde h(t))=h(q(t))$; at $s=1$, $F(q(t),1)=k(q(t))$. Since $q$ is onto, $F(-,0)=h$ and $F(-,1)=k$, so $F$ is a homotopy from $h$ to $k$.
+Set $\widetilde F(t,s)=q\big(\widetilde L_s(t)\big)=e^{2\pi i\widetilde L_s(t)}$, continuous on $\RR\times I$. It is invariant under $t\mapsto t+1$: $\widetilde F(t+1,s)=e^{2\pi i(\widetilde L_s(t)+d)}=\widetilde F(t,s)$. The map $\pi:\RR\times I\to S^1\times I$, $\pi(t,s)=(q(t),s)$, is a quotient map, being the product of the quotient map $q$ and the identity of the compact space $I$ (Theorem 22.2), so $\widetilde F$ factors through it: there is a continuous $F:S^1\times I\to S^1$ with $F\big(q(t),s\big)=q(\widetilde L_s(t))$. At $s=0$, $F(q(t),0)=q(\tilde h(t))=h(q(t))$; at $s=1$, $F(q(t),1)=k(q(t))$. Since $q$ is onto, $F(-,0)=h$ and $F(-,1)=k$, so $F$ is a homotopy from $h$ to $k$.
 :::
 
 :::

@@ -87,7 +87,7 @@ Show that $\RR^J$ is a Baire space in the box, product, and uniform topologies.
 :::
 
 ::: {.solution}
-The argument is the card's own: no published solution set is transcribed. Math StackExchange 2344060 states this exercise and proves it through Frolík's countably complete spaces, resting on two theorems of a paper the card does not cite, so it is recorded in the audit and not used here. The book's §48 Exercise 12 is printed on p. 300, and the numbered results cited are Theorem 48.2 (printed p. 296), that a complete metric space is Baire, and Theorem 43.5 of §43, the completeness of the uniform metric on the function space, whose page is not recorded here.
+The argument is the card's own: no published solution set is transcribed. Math StackExchange 2344060 states this exercise and proves it through Frolík's countably complete spaces, resting on two theorems of a paper the card does not cite, so it is recorded in the audit and not used here. The book's §48 Exercise 12 is printed on p. 300, and the numbered results cited are Theorem 48.2, that a complete metric space is Baire, and Theorem 43.5 of §43, the completeness of the uniform metric on the function space, whose page is not recorded here.
 
 ::: pf
 
@@ -143,7 +143,7 @@ Let $(x^{k})$ be $\bar\rho$-Cauchy. For each $j$ one has $\min\{\abs{x^{k}_{j}-x
 $\RR^{J}$ is a Baire space in the uniform topology.
 
 ::: pf-proof
-The uniform topology is the topology of the complete metric $\bar\rho$ by step [](#uniform-complete){.pf-ref}, and a complete metric space is a Baire space (Theorem 48.2, printed p. 296).
+The uniform topology is the topology of the complete metric $\bar\rho$ by step [](#uniform-complete){.pf-ref}, and a complete metric space is a Baire space (Theorem 48.2).
 :::
 :::
 

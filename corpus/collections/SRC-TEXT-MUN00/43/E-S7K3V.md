@@ -64,7 +64,7 @@ Show by means of an example that $X$ need not be complete.
 
 ::: {.solution}
 
-Part (a) is the argument of **"Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), the Munkres §43 answers, printed pp. 4--5 of that part** (`tmp/sources/munkres-solutions-ucr-math205-gentop.pdf`, PDF pp. 45--46); part (b) is the card's own example. The statement was checked against Munkres, *Topology* (2000), §43 Exercise 1, printed p. 270.
+Part (a) is the argument of **"Solutions to exercises for Mathematics 205A" (University of California, Riverside, Fall 2014), the Munkres §43 answers, printed pp. 4--5 of that part** (`tmp/sources/munkres-solutions-ucr-math205-gentop.pdf`); part (b) is the card's own example. The statement was checked against Munkres, *Topology* (2000), §43 Exercise 1.
 
 ::: pf
 

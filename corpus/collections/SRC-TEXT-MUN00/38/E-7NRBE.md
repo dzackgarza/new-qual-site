@@ -57,7 +57,7 @@ $I^{I}$ has a countable dense subset.
 $(0,1)^{I}$ has a countable dense subset.
 
 ::: pf-proof
-$(0,1)$ is homeomorphic to $\RR$ (the map $t\mapsto\tan\big(\pi(t-1/2)\big)$), so the product $(0,1)^{I}$ is homeomorphic to $\RR^{I}$, which has a countable dense subset (Exercise 30.16(a), printed p. 195). A homeomorphism carries a countable dense subset to one.
+$(0,1)$ is homeomorphic to $\RR$ (the map $t\mapsto\tan\big(\pi(t-1/2)\big)$), so the product $(0,1)^{I}$ is homeomorphic to $\RR^{I}$, which has a countable dense subset (Exercise 30.16(a)). A homeomorphism carries a countable dense subset to one.
 :::
 
 :::
@@ -79,7 +79,7 @@ $I^{I}$ is the product $\prod_{i\in I}[0,1]$, and the closure of the subset $(0,
 $I^{I}$ is a compactification of $\ZZ_{+}$.
 
 ::: pf-proof
-$I^{I}$ is compact and Hausdorff (Theorem 37.3, Tychonoff's theorem, printed p. 233). Let $D$ be the countable dense subset of step [](#dense){.pf-ref}; $I^{I}$ is infinite, so $D$ is infinite, and enumerating $D=\theset{y_{n}\mid n\in\ZZ_{+}}$ gives a bijection $f:\ZZ_{+}\to D$. The subspace $\ZZ_{+}$ of $\RR$ is discrete, so every map out of it is continuous, and $f$ is injective: $f$ is an imbedding with dense image $D$. So $I^{I}$ is a compact Hausdorff space containing a dense homeomorphic copy of $\ZZ_{+}$, that is, a compactification of it.
+$I^{I}$ is compact and Hausdorff (Theorem 37.3, Tychonoff's theorem). Let $D$ be the countable dense subset of step [](#dense){.pf-ref}; $I^{I}$ is infinite, so $D$ is infinite, and enumerating $D=\theset{y_{n}\mid n\in\ZZ_{+}}$ gives a bijection $f:\ZZ_{+}\to D$. The subspace $\ZZ_{+}$ of $\RR$ is discrete, so every map out of it is continuous, and $f$ is injective: $f$ is an imbedding with dense image $D$. So $I^{I}$ is a compact Hausdorff space containing a dense homeomorphic copy of $\ZZ_{+}$, that is, a compactification of it.
 :::
 
 :::
@@ -88,7 +88,7 @@ $I^{I}$ is compact and Hausdorff (Theorem 37.3, Tychonoff's theorem, printed p. 
 There is a continuous surjection $\beta(\ZZ_{+})\to I^{I}$.
 
 ::: pf-proof
-$I^{I}$ is a compactification of $\ZZ_{+}$ by step [](#compactification){.pf-ref}, and every compactification $Y$ of a space $X$ receives a continuous surjection from $\beta(X)$ (Exercise 38.4, printed p. 243; card [[E-QZUV0]]).
+$I^{I}$ is a compactification of $\ZZ_{+}$ by step [](#compactification){.pf-ref}, and every compactification $Y$ of a space $X$ receives a continuous surjection from $\beta(X)$ (Exercise 38.4; card [[E-QZUV0]]).
 :::
 
 :::

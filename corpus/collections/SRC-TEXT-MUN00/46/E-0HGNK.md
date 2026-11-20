@@ -83,7 +83,7 @@ is continuous, then $\mathcal{T}$ contains the compact-open topology.
 :::
 
 ::: {.solution}
-The exercise is Munkres, *Topology* (2000), Section 46, Exercise 8, printed p. 289. The argument is the card's own — no complete published solution of this exercise was located, as the audit of 2026-11-15 records — and it uses the Tube Lemma, Lemma 26.8.
+The exercise is Munkres, *Topology* (2000), Section 46, Exercise 8. The argument is the card's own — no complete published solution of this exercise was located, as the audit of 2026-11-15 records — and it uses the Tube Lemma, Lemma 26.8.
 
 ::: pf
 

@@ -35,7 +35,7 @@ Show that if $X$ is a nonempty Baire space, at least one of the sets $\overline{
 
 ::: {.solution}
 
-The argument is that of the retained set **"Yougi", *Munkres Chapter 8* (2025), §48 Exercise 1** (`tmp/sources/yougi-2025-munkres-chapter-8.md`), which states the same three lines; the intermediate identifications it compresses are written out below. The card's earlier prose carried no citation, so this one is added. The statement was checked against Munkres, *Topology* (2000), §48 Exercise 1, printed p. 298, with the definition of a Baire space on printed p. 295. Closures and interiors are taken in $X$.
+The argument is that of the retained set **"Yougi", *Munkres Chapter 8* (2025), §48 Exercise 1** (`tmp/sources/yougi-2025-munkres-chapter-8.md`), which states the same three lines; the intermediate identifications it compresses are written out below. The card's earlier prose carried no citation, so this one is added. The statement was checked against Munkres, *Topology* (2000), §48 Exercise 1, with the definition of a Baire space on printed p. 295. Closures and interiors are taken in $X$.
 
 ::: pf
 
@@ -79,7 +79,7 @@ This is the negation of the conclusion, which asserts that some $\overline{B_{n}
 Under the supposition of step [](#supposition){.pf-ref} the union $\bigcup_{n}\overline{B_{n}}$ has empty interior in $X$.
 
 ::: pf-proof
-Each $\overline{B_{n}}$ is closed in $X$ and, by the supposition, has empty interior; the defining condition of a Baire space (§48, printed p. 295) is that the union of any countable collection of closed sets with empty interior has empty interior, and $\theset{\overline{B_{n}}}$ is such a collection.
+Each $\overline{B_{n}}$ is closed in $X$ and, by the supposition, has empty interior; the defining condition of a Baire space (§48) is that the union of any countable collection of closed sets with empty interior has empty interior, and $\theset{\overline{B_{n}}}$ is such a collection.
 :::
 
 :::

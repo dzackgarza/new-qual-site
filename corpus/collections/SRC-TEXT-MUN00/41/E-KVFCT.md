@@ -86,9 +86,9 @@ If $X$ is a countable union of compact subspaces of $X$, then $X$ is paracompact
 :::
 
 ::: {.solution}
-The argument is the card's own: no retained set solves this exercise, as the searches recorded in the audit and in the COMPLAINTS.md entry for §39--§42 show. Part (a) is a direct proof of Munkres' Theorem 41.5 (printed p. 257), whose own route is the countably locally finite subcover together with the shrinking lemma of his Lemma 41.3; the direct route below is kept because every step of it is checked here.
+The argument is the card's own: no retained set solves this exercise, as the searches recorded in the audit and in the COMPLAINTS.md entry for §39--§42 show. Part (a) is a direct proof of Munkres' Theorem 41.5, whose own route is the countably locally finite subcover together with the shrinking lemma of his Lemma 41.3; the direct route below is kept because every step of it is checked here.
 
-Throughout, $X$ is regular, $X=\bigcup_{n\in\ZZ_+}K_n$ with each $K_n$ compact, an open cover $\mathcal{U}$ of $X$ is given, and paracompact means that every open cover has an open locally finite refinement (§41, printed p. 254). In part (b), $\RR^\infty$ is the subspace of eventually zero sequences of $\RR^\omega$ with the box topology, and $K_{n,m}=[-m,m]^n\times\{0\}\times\{0\}\times\cdots$.
+Throughout, $X$ is regular, $X=\bigcup_{n\in\ZZ_+}K_n$ with each $K_n$ compact, an open cover $\mathcal{U}$ of $X$ is given, and paracompact means that every open cover has an open locally finite refinement (§41). In part (b), $\RR^\infty$ is the subspace of eventually zero sequences of $\RR^\omega$ with the box topology, and $K_{n,m}=[-m,m]^n\times\{0\}\times\{0\}\times\cdots$.
 
 ::: pf
 
@@ -150,7 +150,7 @@ Let $x\in X$; by step [](#shrinking){.pf-ref} there is $m$ with $x\in V_m$, and 
 (b) Each $K_{n,m}$ is compact.
 
 ::: pf-proof
-A basic open set of the box topology on $\RR^\omega$ is a product $\prod_i G_i$ of open subsets of $\RR$; its trace on $K_{n,m}$ is $\big(\prod_{i\le n}(G_i\cap[-m,m])\big)\times\prod_{i>n}(G_i\cap\{0\})$, and the second factor is either $\{0\}$ or empty, because every coordinate of $K_{n,m}$ after the $n$-th is the fixed point $0$. So the subspace topology on $K_{n,m}$ is the finite product topology on $\prod_{i\le n}[-m,m]$, and $[-m,m]$ is compact (Theorem 27.1, printed p. 172). A finite product of compact spaces is compact (Theorem 26.7, printed p. 167), so $K_{n,m}$ is compact.
+A basic open set of the box topology on $\RR^\omega$ is a product $\prod_i G_i$ of open subsets of $\RR$; its trace on $K_{n,m}$ is $\big(\prod_{i\le n}(G_i\cap[-m,m])\big)\times\prod_{i>n}(G_i\cap\{0\})$, and the second factor is either $\{0\}$ or empty, because every coordinate of $K_{n,m}$ after the $n$-th is the fixed point $0$. So the subspace topology on $K_{n,m}$ is the finite product topology on $\prod_{i\le n}[-m,m]$, and $[-m,m]$ is compact (Theorem 27.1). A finite product of compact spaces is compact (Theorem 26.7), so $K_{n,m}$ is compact.
 :::
 
 :::

@@ -49,7 +49,7 @@ Show there is a bijective correspondence of $A \times B$ with $B \times A$ .
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.1, printed p. 67** (`tmp/sources/munkres-solutions-whitman.pdf`), which checks injectivity and surjectivity of $(a,b)\mapsto(b,a)$ separately and notes that the case $A\times B=\varnothing$ is vacuous; since the map below is its own inverse, one check gives both. The statement is Munkres, *Topology* (2000), §5 Exercise 1, printed p. 28.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 5.1, printed p. 67** (`tmp/sources/munkres-solutions-whitman.pdf`), which checks injectivity and surjectivity of $(a,b)\mapsto(b,a)$ separately and notes that the case $A\times B=\varnothing$ is vacuous; since the map below is its own inverse, one check gives both. The statement is Munkres, *Topology* (2000), §5 Exercise 1.
 
 ::: pf
 

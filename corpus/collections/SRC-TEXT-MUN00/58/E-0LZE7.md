@@ -108,7 +108,7 @@ Describe maps $f: X \to Y$ and $g: Y \to X$ that are homotopy inverse to each ot
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 4, printed p. 366. It asks for maps $f:X\to Y$ and
+The exercise is §58 Exercise 4. It asks for maps $f:X\to Y$ and
 $g:Y\to X$ that are homotopy inverse to each other, and both maps and both
 homotopies are written out below.
 
@@ -116,7 +116,7 @@ Fix the spaces. Let
 $$
 Y=S^1\cup\bigl(\theset 0\times[-1,1]\bigr)\ \subseteq\ \RR^2
 $$
-be the theta space of Example 3 (printed p. 362), write $J=\theset
+be the theta space of Example 3, write $J=\theset
 0\times[-1,1]$ for its bar, $y_1=(0,1)$ and $y_2=(0,-1)$ for the two points where
 the bar meets the circle, and $R$, $L$ for the closed right and left semicircles,
 so that $Y=R\cup L\cup J$ and $R\cap L=\theset{y_1,y_2}$. Parametrize the two
@@ -154,7 +154,7 @@ $\rho(1)=\lambda(1)=y_1$ give $g(y_2)=\alpha(0)=x_0=\beta(0)$ and
 $g(y_1)=\alpha(1)=x_0=\beta(1)$, and $x_0$ is the value prescribed on $J$ as well;
 and $R\cap J=\theset{y_1}$, $L\cap J=\theset{y_2}$, where the value prescribed on
 the semicircle is again $x_0$. So $g$ is well defined, and it is continuous by the
-pasting lemma (Theorem 18.3, printed p. 108).
+pasting lemma (Theorem 18.3).
 :::
 
 :::
@@ -176,7 +176,7 @@ $3-4t=1$, and the second line ends at $(0,-1)=y_2$; so they give a well-defined
 map of $A=\alpha(I)$ into $Y$, and the two lines for $\beta$ a map of
 $B=\beta(I)$. Each is continuous: $I$ is compact and $A$ is Hausdorff, so
 $\alpha:I\to A$ is a closed surjection and therefore a quotient map, and by
-Theorem 22.2 (printed p. 142) a map out of $A$ is continuous as soon as its
+Theorem 22.2 a map out of $A$ is continuous as soon as its
 composite with $\alpha$ is; the composite here is the piecewise formula, which is
 continuous on the two closed halves of $I$, agrees at their common point, and
 takes the value $y_2$ at both $t=0$ and $t=1$, so it is constant on the fibre
@@ -211,7 +211,7 @@ $A\cap B=\theset{x_0}$, and on $A$ alone the two parameters over $x_0$ also give
 single value, $\alpha(\Phi(0,u))=\alpha(0)=x_0=\alpha(1)=\alpha(\Phi(1,u))$, so
 $H$ is well defined; and each prescription is continuous: $\alpha\times\operatorname{id}_I$
 is a quotient map, since $\alpha$ is one and $I$ is compact Hausdorff and
-therefore locally compact Hausdorff (§29 Exercise *11(a), printed p. 186), and
+therefore locally compact Hausdorff (§29 Exercise *11(a)), and
 the composite $H\circ(\alpha\times\operatorname{id}_I)$, namely
 $(t,u)\mapsto\alpha(\Phi(t,u))$, is continuous. So $H:X\times I\to X$ is
 continuous by the pasting lemma on the closed cover

@@ -48,7 +48,7 @@ Show that if $A$ is a retract of $B^2$, then every continuous map $f: A \to A$ h
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 55: Problem 1 Solution": compose the retraction, the given map and the inclusion into a self-map of the disc, apply Brouwer's theorem to that self-map, and read the fixed point back on $A$. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 1, printed p. 353, and Brouwer's fixed-point theorem for the disc is Theorem 55.6, printed p. 351.
+The argument is that of the published solution of dbFin, "Section 55: Problem 1 Solution": compose the retraction, the given map and the inclusion into a self-map of the disc, apply Brouwer's theorem to that self-map, and read the fixed point back on $A$. The exercise is Munkres, *Topology* (2000), Section 55, Exercise 1, and Brouwer's fixed-point theorem for the disc is Theorem 55.6.
 
 Let $r\colon B^2\to A$ be a retraction, so that $r$ is continuous and $r(a)=a$ for every $a\in A$, and let $j\colon A\to B^2$ be the inclusion.
 
@@ -67,7 +67,7 @@ The maps $r$, $f$ and $j$ are continuous, so their composite is continuous, and 
 $g$ has a fixed point $x$, and every fixed point $x$ of $g$ lies in $A$ and satisfies $f(x)=x$.
 
 ::: pf-proof
-By Theorem 55.6, printed p. 351, there is a point $x\in B^2$ with $g(x)=x$. Now $g(x)=j(f(r(x)))$ lies in $j(A)=A$, so $x\in A$; since $r$ is a retraction, $r(x)=x$, and therefore $f(x)=f(r(x))=x$, which is the same equation $g(x)=j(f(r(x)))=x$ read in $B^2$.
+By Theorem 55.6, there is a point $x\in B^2$ with $g(x)=x$. Now $g(x)=j(f(r(x)))$ lies in $j(A)=A$, so $x\in A$; since $r$ is a retraction, $r(x)=x$, and therefore $f(x)=f(r(x))=x$, which is the same equation $g(x)=j(f(r(x)))=x$ read in $B^2$.
 :::
 
 :::

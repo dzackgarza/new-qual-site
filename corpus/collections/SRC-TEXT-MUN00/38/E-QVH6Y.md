@@ -56,7 +56,7 @@ No retained solution set covers this exercise: the card's own characterisation f
 If a metrizable space $X$ is dense in a compact metrizable space $Y$, then $X$ is second countable.
 
 ::: pf-proof
-A compact metrizable space is second countable, and a subspace of a second-countable space is second countable (Theorem 30.2, printed p. 194). So $Y$ is second countable and $X$, a subspace of $Y$, is too.
+A compact metrizable space is second countable, and a subspace of a second-countable space is second countable (Theorem 30.2). So $Y$ is second countable and $X$, a subspace of $Y$, is too.
 :::
 
 :::
@@ -65,7 +65,7 @@ A compact metrizable space is second countable, and a subspace of a second-count
 If $X$ is metrizable and second countable, then $X$ has a metrizable compactification.
 
 ::: pf-proof
-A metrizable space is normal (Theorem 32.2, printed p. 202), hence regular. By the Urysohn metrization theorem with its imbedding proof (Theorems 34.1 and 34.2) a second-countable regular space admits an imbedding $e:X\to[0,1]^{\ZZ_{+}}$ into the Hilbert cube. The Hilbert cube is a countable product of compact metrizable spaces, hence compact (Theorem 37.3, Tychonoff) and metrizable (Theorem 20.5, printed p. 125, applied coordinatewise); put $Y=\overline{e(X)}$. A closed subspace of a compact space is compact (Theorem 26.2, printed p. 165) and a subspace of a metrizable space is metrizable, so $Y$ is compact metrizable, and $e(X)$ is dense in $Y$ by construction. Then $e:X\to Y$ is an imbedding with dense image, so $Y$ is a metrizable compactification of $X$.
+A metrizable space is normal (Theorem 32.2), hence regular. By the Urysohn metrization theorem with its imbedding proof (Theorems 34.1 and 34.2) a second-countable regular space admits an imbedding $e:X\to[0,1]^{\ZZ_{+}}$ into the Hilbert cube. The Hilbert cube is a countable product of compact metrizable spaces, hence compact (Theorem 37.3, Tychonoff) and metrizable (Theorem 20.5, applied coordinatewise); put $Y=\overline{e(X)}$. A closed subspace of a compact space is compact (Theorem 26.2) and a subspace of a metrizable space is metrizable, so $Y$ is compact metrizable, and $e(X)$ is dense in $Y$ by construction. Then $e:X\to Y$ is an imbedding with dense image, so $Y$ is a metrizable compactification of $X$.
 :::
 
 :::
@@ -74,7 +74,7 @@ A metrizable space is normal (Theorem 32.2, printed p. 202), hence regular. By t
 For metrizable spaces, second countable is the same as separable.
 
 ::: pf-proof
-A second-countable space has a countable dense subset (Theorem 30.3(a), printed p. 194), and a separable metrizable space has a countable basis (Exercise 30.5(a), printed p. 194).
+A second-countable space has a countable dense subset (Theorem 30.3(a)), and a separable metrizable space has a countable basis (Exercise 30.5(a)).
 :::
 
 :::

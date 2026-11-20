@@ -67,7 +67,7 @@ Every $m$-manifold has topological dimension at most $m$.
 :::
 
 ::: {.solution}
-Throughout $M$ is an $m$-manifold in Munkres's sense — a second-countable Hausdorff space each point of which has a neighbourhood homeomorphic to an open subset of $\RR^{m}$ — and dimension is the covering dimension of Munkres, *Topology* (2000), §50, whose definitions of order and of topological dimension are on printed p. 305: a family refines another when each of its members lies in a member of the other, an open cover has order at most $m$ when no point lies in more than $m$ of its members, and $\dim X \le n$ when every open cover of $X$ has an open refinement of order at most $n+1$. The exercise is §50 Exercise 9, printed p. 315.
+Throughout $M$ is an $m$-manifold in Munkres's sense — a second-countable Hausdorff space each point of which has a neighbourhood homeomorphic to an open subset of $\RR^{m}$ — and dimension is the covering dimension of Munkres, *Topology* (2000), §50, whose definitions of order and of topological dimension are on printed p. 305: a family refines another when each of its members lies in a member of the other, an open cover has order at most $m$ when no point lies in more than $m$ of its members, and $\dim X \le n$ when every open cover of $X$ has an open refinement of order at most $n+1$. The exercise is §50 Exercise 9.
 
 ::: pf
 

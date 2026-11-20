@@ -68,7 +68,7 @@ Show that if $B$ is simply connected, then $p$ is a homeomorphism.
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 54: Problem 8 Solution": Theorem 54.4 makes the lifting correspondence a bijection onto the fibre, so the fibre over a point of a simply connected base has one element, and a covering map that is an open bijection is a homeomorphism. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 8, printed p. 348; Theorem 54.4 is on printed p. 345, and Exercise 3 of §53, which makes the fibre cardinality the same over every point of a connected base, is on printed p. 341.
+The argument is that of the published solution of dbFin, "Section 54: Problem 8 Solution": Theorem 54.4 makes the lifting correspondence a bijection onto the fibre, so the fibre over a point of a simply connected base has one element, and a covering map that is an open bijection is a homeomorphism. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 8; Theorem 54.4 is on printed p. 345, and Exercise 3 of §53, which makes the fibre cardinality the same over every point of a connected base, is on printed p. 341.
 
 ::: pf
 
@@ -76,7 +76,7 @@ The argument is that of the published solution of dbFin, "Section 54: Problem 8 
 For every $b\in B$ the fibre $p^{-1}(b)$ has exactly one point.
 
 ::: pf-proof
-Fix $e_0\in E$ and put $b_0=p(e_0)$. Since $E$ is path connected, the lifting correspondence $\phi\colon\pi_1(B,b_0)\to p^{-1}(b_0)$ is surjective (Theorem 54.4, printed p. 345); since $B$ is simply connected, $\pi_1(B,b_0)$ is the trivial group, so $\phi$ takes a single value and $p^{-1}(b_0)=\{e_0\}$. The base $B$ is path connected, being simply connected, so Exercise 3 of §53, printed p. 341, gives the same cardinality over every point of $B$; every fibre is a single point.
+Fix $e_0\in E$ and put $b_0=p(e_0)$. Since $E$ is path connected, the lifting correspondence $\phi\colon\pi_1(B,b_0)\to p^{-1}(b_0)$ is surjective (Theorem 54.4); since $B$ is simply connected, $\pi_1(B,b_0)$ is the trivial group, so $\phi$ takes a single value and $p^{-1}(b_0)=\{e_0\}$. The base $B$ is path connected, being simply connected, so Exercise 3 of §53, gives the same cardinality over every point of $B$; every fibre is a single point.
 :::
 
 :::

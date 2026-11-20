@@ -52,7 +52,7 @@ Show that $X$ is connected if and only if $\beta(X)$ is connected.
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §38 Exercise 1, printed p. 241, with Theorem 23.4 (the closure of a connected set is connected) and Theorem 38.4 (the Stone--Čech extension property).
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §38 Exercise 1, with Theorem 23.4 (the closure of a connected set is connected) and Theorem 38.4 (the Stone--Čech extension property).
 
 Let $i:X\to\beta(X)$ be the inclusion of $X$ as a dense subspace of its Stone--Čech compactification.
 

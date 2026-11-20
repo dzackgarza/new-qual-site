@@ -71,7 +71,7 @@ Show that $X$ is Hausdorff if and only if $X$ is completely regular.
 
 No complete published solution was located; the sets searched are listed in the `COMPLAINTS.md` entry for §43--§50 of `SRC-TEXT-MUN00`, and the argument is the card's own. Two steps of it are written out here rather than described: the transfer of the compact ball of a chart into a compact subspace of $X$, and the passage from local compactness to complete regularity through the one-point compactification. The earlier prose said that shrinking inside a chart gives "a neighbourhood whose closure in the chart is compact", which names neither the compact subspace of $X$ that Munkres' definition needs nor the neighbourhood inside it; the card now produces both.
 
-The statement was checked against Munkres, *Topology* (2000), the supplementary Exercise 7 of §50, printed p. 318, with the definition of locally $m$-euclidean printed on p. 316, that of local compactness printed on p. 182, Theorem 29.1 on printed p. 183, Theorem 32.3 on printed p. 202, the Urysohn lemma (Theorem 33.1) on printed p. 207 and Theorem 33.2 on printed p. 211. Throughout, $X$ is locally $m$-euclidean: each $x\in X$ has a neighbourhood homeomorphic to an open set of $\RR^{m}$ (printed p. 316), a condition that already gives the $T_{1}$ axiom but not the Hausdorff axiom, which is the hypothesis the exercise varies. Complete regularity is as defined on printed p. 211: one-point sets are closed, and each point can be separated from a closed set not containing it by a continuous map to $[0,1]$ taking the value $1$ at the point and $0$ on the set.
+The statement was checked against Munkres, *Topology* (2000), the supplementary Exercise 7 of §50, with the definition of locally $m$-euclidean printed on p. 316, that of local compactness printed on p. 182, Theorem 29.1 on printed p. 183, Theorem 32.3 on printed p. 202, the Urysohn lemma (Theorem 33.1) on printed p. 207 and Theorem 33.2 on printed p. 211. Throughout, $X$ is locally $m$-euclidean: each $x\in X$ has a neighbourhood homeomorphic to an open set of $\RR^{m}$, a condition that already gives the $T_{1}$ axiom but not the Hausdorff axiom, which is the hypothesis the exercise varies. Complete regularity is as defined on printed p. 211: one-point sets are closed, and each point can be separated from a closed set not containing it by a continuous map to $[0,1]$ taking the value $1$ at the point and $0$ on the set.
 
 ::: pf
 
@@ -125,7 +125,7 @@ $C\coloneqq\varphi^{-1}\big(\overline{B}(\varphi(x),\varepsilon/2)\big)$ is a co
 
 ::: pf-proof
 
-$\overline{B}(\varphi(x),\varepsilon/2)$ is closed and bounded in $\RR^{m}$, hence compact (Theorem 27.3, printed p. 173). The restriction of $\varphi$ is a homeomorphism of $C$ onto that closed ball, since a homeomorphism carries a subset onto its image homeomorphically; so $C$ is compact as a subspace of $X$. The set $V$ is the image under $\varphi^{-1}$ of an open subset of $W$, hence is open in $U$ and therefore in $X$, because $U$ is open in $X$; and $x\in V$ because $0<\varepsilon/2$. Finally $V\subset C$, since the open ball lies in the closed one of the same radius.
+$\overline{B}(\varphi(x),\varepsilon/2)$ is closed and bounded in $\RR^{m}$, hence compact (Theorem 27.3). The restriction of $\varphi$ is a homeomorphism of $C$ onto that closed ball, since a homeomorphism carries a subset onto its image homeomorphically; so $C$ is compact as a subspace of $X$. The set $V$ is the image under $\varphi^{-1}$ of an open subset of $W$, hence is open in $U$ and therefore in $X$, because $U$ is open in $X$; and $x\in V$ because $0<\varepsilon/2$. Finally $V\subset C$, since the open ball lies in the closed one of the same radius.
 
 :::
 
@@ -153,7 +153,7 @@ If $X$ is locally compact Hausdorff, then $X$ is completely regular.
 
 ::: pf-proof
 
-By Theorem 29.1 (printed p. 183) the space $X$ has a one-point compactification $X^{*}$, which contains $X$ as a subspace and is compact Hausdorff. A compact Hausdorff space is normal (Theorem 32.3, printed p. 202), and a normal space is completely regular by the Urysohn lemma (Theorem 33.1, printed p. 207); a subspace of a completely regular space is completely regular (Theorem 33.2, printed p. 211). Hence $X$ is completely regular.
+By Theorem 29.1 the space $X$ has a one-point compactification $X^{*}$, which contains $X$ as a subspace and is compact Hausdorff. A compact Hausdorff space is normal (Theorem 32.3), and a normal space is completely regular by the Urysohn lemma (Theorem 33.1); a subspace of a completely regular space is completely regular (Theorem 33.2). Hence $X$ is completely regular.
 
 :::
 

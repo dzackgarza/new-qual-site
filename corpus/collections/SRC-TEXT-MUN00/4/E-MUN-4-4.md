@@ -53,7 +53,7 @@ audit:
 :::
 
 ::: {.solution}
-The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.4, printed p. 50** (`tmp/sources/munkres-solutions-whitman.pdf`); the induction and the answer to (b) are his. The statement is Munkres, *Topology*, 2nd ed. (2000), §4 Exercise 4, printed p. 34.
+The published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.4, printed p. 50** (`tmp/sources/munkres-solutions-whitman.pdf`); the induction and the answer to (b) are his. The statement is Munkres, *Topology*, 2nd ed. (2000), §4 Exercise 4.
 
 ::: pf
 

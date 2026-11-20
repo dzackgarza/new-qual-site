@@ -158,7 +158,7 @@ Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted 
 :::
 
 ::: {.solution}
-The exercise is §58 Exercise 10, printed p. 367, and its hypotheses are the
+The exercise is §58 Exercise 10, and its hypotheses are the
 three numbered axioms printed there. Parts (a) and (c) are transcribed from
 Takumi Murayama's *Selected Solutions to Munkres's Topology, 2nd Ed.*, Exercise
 58.10; the title, author and course are those the file gives at its lines
@@ -172,9 +172,9 @@ the line numbers below are that file's, the exercise at line 1631, the proof of
 radius $\rho=t$; the card states the same map in Cartesian coordinates, as
 $H(x,t)=r(tx)$. Parts (b) and (d) are
 transcribed from Hatcher, *Algebraic Topology* (2002): (b) is property (g) of
-degree in §2.2 with its proof, printed p. 134, and (d) is the first half of the
-proof of Theorem 2.28, printed pp. 134--135; the preliminary degree of the
-antipodal map is Hatcher's property (f), printed p. 134, and it is re-derived
+degree in §2.2 with its proof, and (d) is the first half of the
+proof of Theorem 2.28; the preliminary degree of the
+antipodal map is Hatcher's property (f), and it is re-derived
 here from the axioms because the exercise supplies the axioms and not Hatcher's
 homology.
 

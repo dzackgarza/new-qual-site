@@ -79,10 +79,10 @@ Show that if $A$ is a nonsingular 3 by 3 matrix having nonnegative entries, then
 :::
 
 ::: {.solution}
-The exercise is §55 Exercise 3, printed p. 353. The proof is transcribed from
+The exercise is §55 Exercise 3. The proof is transcribed from
 Erin P. J. Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell,
-2005, §55 Exercise 3, printed pp. 18–19. It is the book's proof of Corollary
-55.7 (printed p. 352) run on the part of $S^2$ in the closed first octant
+2005, §55 Exercise 3. It is the book's proof of Corollary
+55.7 run on the part of $S^2$ in the closed first octant
 instead of on all of it, so that nonnegative matrices are covered; the entries
 of $A$ being nonnegative is what keeps that octant invariant, and the
 nonsingularity of $A$ is what keeps the image away from $\mathbf 0$ there. The
@@ -100,7 +100,7 @@ $$
 
 ::: {.pf-step #ball}
 $B$ is homeomorphic to $B^2$, so the Brouwer fixed-point theorem (Theorem
-55.6, printed p. 351) holds for continuous self-maps of $B$.
+55.6) holds for continuous self-maps of $B$.
 
 ::: pf-proof
 Let
@@ -148,7 +148,7 @@ is injective, since on each ray $c+tu$ the parameter $\abs x\,\rho(x/\abs x)$
 increases strictly with $t$, and it is surjective, since a point $c+tu$ of $K$
 with $t>0$ is $\Phi\bigl((t/\rho(u))u\bigr)$ and $t/\rho(u)\le1$. A continuous
 bijection of the compact space $B^2$ onto the Hausdorff space $K$ is a
-homeomorphism (Theorem 26.6, printed p. 167).
+homeomorphism (Theorem 26.6).
 
 The simplex $\Delta^2$ lies in the plane $x_1+x_2+x_3=1$, which a linear isometry
 carries onto $\RR^2$, and in that plane $\Delta^2$ is compact, convex, and has
