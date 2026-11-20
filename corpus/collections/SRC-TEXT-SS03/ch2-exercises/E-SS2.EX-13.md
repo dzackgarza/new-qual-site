@@ -39,7 +39,7 @@ is equal to $0$. Prove that $f$ is a polynomial.
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 2, Exercise 13. Here $f$ is entire and at every $z_0\in\CC$ at least one Taylor coefficient $c_n=f^{(n)}(z_0)/n!$ vanishes; $Z_n=\theset{z\in\CC\mid f^{(n)}(z)=0}$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 2, Exercise 13. Here $f$ is entire and at every $z_0\in\CC$ at least one Taylor coefficient $c_n=f^{(n)}(z_0)/n!$ vanishes; $Z_n=\theset{z\in\CC\mid f^{(n)}(z)=0}$.
 
 ::: pf
 
