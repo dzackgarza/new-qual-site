@@ -10,7 +10,7 @@ topics:
 # Normal schemes and normalization
 
 Normality is the weakest of the smoothness conditions, and it is the one that survives the operations of the chapter: it is local, it is checked on local rings, and every integral scheme has a best normal scheme mapping to it.
-The construction of that best scheme is the normalization, and on a curve it is the map that removes the singularities, which makes this page the supply of hypotheses for everything later that needs a smooth curve or a finite map between smooth curves.
+The construction of that best scheme is the normalization; on a curve it is the map that removes the singularities, and a smooth projective curve is its own normalization ([[T-CRVMINMOD]]).
 
 ## Normality
 

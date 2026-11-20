@@ -9,7 +9,7 @@ topics:
 
 # Examples of sheaves
 
-The families on this page are the constant and locally constant sheaves, the skyscraper sheaves, the sheaves of functions, and a presheaf that fails an axiom ([[D-SHFLOCSYS]], [[D-SHFSKYSCRAPER]], [[FE-SHFFUNCS]], [[FE-AM5Z8]]).
+A constant sheaf records nothing of the space, a locally constant sheaf records its monodromy, and a skyscraper sheaf records one group at one point ([[D-SHFLOCSYS]], [[D-SHFSKYSCRAPER]]).
 
 ## Constant and locally constant sheaves
 

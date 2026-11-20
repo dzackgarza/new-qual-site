@@ -10,7 +10,6 @@ topics:
 # Projective varieties
 
 Projective space is affine space with the points at infinity put back, and a projective variety is a closed subset of it; the algebra that describes one is the algebra of homogeneous forms, which is the affine algebra of the cone over the variety with the origin deleted.
-This page states the correspondence between homogeneous ideals and closed subsets, gives the standard affine cover that reduces every question to the affine case, and records what does and does not survive as an invariant: the homogeneous coordinate ring depends on the embedding, the variety does not.
 
 ## Homogeneous ideals and the projective Nullstellensatz
 
@@ -25,7 +24,7 @@ The second is that the values of a form are not functions on $\PP^n$ — only it
 [[D-VARQAP]]
 
 Each chart $U_i=\theset{x_i\neq0}$ is an affine space, and a projective variety is covered by its intersections with them, each cut out by the dehomogenisations of the homogeneous ideal.
-Everything local — smoothness, dimension, the local rings — is therefore affine-local and can be checked chart by chart, which is how the projective results in this chapter are proved.
+Everything local — smoothness, dimension, the local rings — is therefore affine-local and can be checked chart by chart.
 The passage back is the projective closure, and it is the first place where a generating set is not enough: homogenising generators of $I(Z)$ can produce a strictly larger closed set, and one homogenises the whole ideal (the card's twisted cubic is the standard warning).
 
 ## The homogeneous coordinate ring
