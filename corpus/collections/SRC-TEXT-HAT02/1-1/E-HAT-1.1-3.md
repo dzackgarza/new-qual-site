@@ -23,6 +23,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Reduced the forward implication to conjugation by the loop h k-bar and the reverse implication to comparison with the constant path.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two page citations removed from the body: the definition of the change-of-basepoint map is located as
+    the paragraph preceding Proposition 1.5, and the rules of concatenation as those of §1.1 that
+    Proposition 1.5 uses. No mathematics changed.
 ---
 
 ::: {.problem}
@@ -35,7 +42,7 @@ Recall that
 $$
 \beta_h([f])=[h\cdot f\cdot\bar h]
 $$
-for $[f]\in\pi_1(X,x_1)$, with $h$ a path from $x_0$ to $x_1$ (p. 28); composition of path classes is associative up to homotopy and $\bar h\cdot h\simeq c$ (p. 27).
+for $[f]\in\pi_1(X,x_1)$, with $h$ a path from $x_0$ to $x_1$, as in the paragraph preceding Proposition 1.5; composition of path classes is associative up to homotopy and $\bar h\cdot h\simeq c$, which are the rules of §1.1 that Proposition 1.5 uses.
 
 ::: pf
 
