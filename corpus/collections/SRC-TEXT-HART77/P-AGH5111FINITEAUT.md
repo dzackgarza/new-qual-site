@@ -282,7 +282,7 @@ N_\RR=\RR H\oplus H^\perp .
 $$
 
 ::: pf-proof
-Hartshorne, *Algebraic Geometry* (1977), Theorem V.1.9 (Hodge index theorem), printed p. 364, states that $D^2<0$ for every $D\not\equiv0$ with $D\cdot H=0$, which is the negative definiteness named by the printed hint to Exercise V.1.11, printed p. 368. The divisor $H$ is ample, so $H^2>0$ and $H\cdot C>0$ for every irreducible curve $C$ by the Nakai--Moishezon criterion, Theorem V.1.10, printed p. 365, and every $v\in N_\RR$ decomposes as
+Hartshorne, *Algebraic Geometry* (1977), Theorem V.1.9 (Hodge index theorem), states that $D^2<0$ for every $D\not\equiv0$ with $D\cdot H=0$, which is the negative definiteness named by the printed hint to Exercise V.1.11. The divisor $H$ is ample, so $H^2>0$ and $H\cdot C>0$ for every irreducible curve $C$ by the Nakai--Moishezon criterion, Theorem V.1.10, and every $v\in N_\RR$ decomposes as
 $$
 v=\frac{v\cdot H}{H^2}H+\qty(v-\frac{v\cdot H}{H^2}H)
 $$
@@ -303,7 +303,7 @@ D^2\ge\sum_ib_i^2D_i^2\ge-\sum_ib_i^2\qty(D_i\cdot K_X+2).
 $$
 
 ::: pf-proof
-The three displays are the first three steps of Math StackExchange answer 4775583 to question 4449474. Each $D_i$ is an integral curve and $H$ is ample, so $D_i\cdot H\ge1$, and $d=D\cdot H=\sum_jb_j(D_j\cdot H)$ gives $b_i\le d$ and $\sum_ib_i^2\le\qty(\sum_ib_i)^2\le d^2$. For the last display, Exercise V.1.3(a), printed p. 366, gives $2p_a(D_i)-2=D_i\cdot(D_i+K_X)$ for the effective divisor $D_i$, with $p_a$ as in III, Exercise 5.3; an integral projective curve has $p_a(D_i)\ge0$, so $D_i^2\ge-D_i\cdot K_X-2$. Two distinct irreducible curves on a surface meet in a finite set of points with positive multiplicities, so $D_i\cdot D_j\ge0$ for $i\ne j$ and
+The three displays are the first three steps of Math StackExchange answer 4775583 to question 4449474. Each $D_i$ is an integral curve and $H$ is ample, so $D_i\cdot H\ge1$, and $d=D\cdot H=\sum_jb_j(D_j\cdot H)$ gives $b_i\le d$ and $\sum_ib_i^2\le\qty(\sum_ib_i)^2\le d^2$. For the last display, Exercise V.1.3(a), gives $2p_a(D_i)-2=D_i\cdot(D_i+K_X)$ for the effective divisor $D_i$, with $p_a$ as in III, Exercise 5.3; an integral projective curve has $p_a(D_i)\ge0$, so $D_i^2\ge-D_i\cdot K_X-2$. Two distinct irreducible curves on a surface meet in a finite set of points with positive multiplicities, so $D_i\cdot D_j\ge0$ for $i\ne j$ and
 $$
 D^2=\sum_ib_i^2D_i^2+2\sum_{i<j}b_ib_jD_i\cdot D_j\ge\sum_ib_i^2D_i^2 .
 $$
@@ -401,7 +401,7 @@ $$
 $$
 
 ::: pf-proof
-This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6, printed p. 367. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
+This step is the card's own: its source is the post of the remark, which is not a publication. Bragg, *Automorphisms of curves* (2015), Proof 2, reads $\Delta^2$ off the conormal bundle of the diagonal embedding, computing $\Delta^2=\deg\mathcal N_{C/C\times C}=2-2g$; the same number is Exercise V.1.6. Bragg asserts $\Gamma^2=2-2g$ for the graph of any automorphism; the reason is that the quotient of $T_C\oplus u^*T_C$ by the graph of $du$ identifies the normal bundle of the graph of a morphism $u$ with $u^*T_C$, and $u$ an automorphism makes $\deg u^*T_C=\deg T_C=2-2g$.
 
 :::
 
@@ -435,7 +435,7 @@ $$
 in $4g-4$, and $K$ is ample.
 
 ::: pf-proof
-This step is the card's own: its source is the post of the remark, which is not a publication. That the canonical divisor of $C\times C$ is the sum of the two pullbacks of $K_C$ is (II, Ex. 8.3(b)), printed p. 187, where $\omega_{X\times Y}\cong p_1^*\omega_X\tensor p_2^*\omega_Y$ for nonsingular varieties is the same statement in divisor notation. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, printed p. 361, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10, printed p. 365: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
+This step is the card's own: its source is the post of the remark, which is not a publication. That the canonical divisor of $C\times C$ is the sum of the two pullbacks of $K_C$ is (II, Ex. 8.3(b)), where $\omega_{X\times Y}\cong p_1^*\omega_X\tensor p_2^*\omega_Y$ for nonsingular varieties is the same statement in divisor notation. Bragg, Proof 2, the paragraph beginning "Next, consider the canonical divisor $K$ of $C\times C$", computes $\Gamma\cdot K=4g-4$ for the graph of an automorphism, independent of $\Gamma$; adjunction, Proposition V.1.5, with $\Gamma^2=2-2g$ and $p_a(\Gamma)=g$ gives the same number. Bragg takes $K$ as his fixed ample divisor; that it is ample follows from Nakai--Moishezon, Theorem V.1.10: $K\cdot l=K\cdot m=2g-2>0$ for the rulings, $K^2=2(2g-2)^2>0$, and for an irreducible curve $D\subseteq C\times C$ the projection formula gives
 $$
 K\cdot D=(2g-2)\qty(\deg\qty(\restrictionof{p_1}{D})+\deg\qty(\restrictionof{p_2}{D}))>0,
 $$
@@ -483,6 +483,6 @@ Math StackExchange answer 4775583 by KReiser, to question 4449474, gives (a) in 
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 11 (solution by Shuang-Yen Lee), printed p. 4 of that set, takes the same route for (a) but displays the estimate $\sum_ic_i^2\le c_0^2+c_0k_0+2+\frac12k_0^2$ from an adjunction identity that bounds $\sum_i(c_i^2+c_ik_i)$; reaching $\sum_ic_i^2$ through $2\abs{c_ik_i}\le c_i^2+k_i^2$ costs a factor $2$ and adds $\sum_ik_i^2$. Its (b) is the printed hint, and proves only that no automorphism other than the identity has a graph numerically equivalent to the diagonal.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.11, printed p. 101, takes an orthogonal basis $R_1,\dots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$". The unknown that must be bounded is not $a_i$ but the coefficients of the curves occurring in $D+\sum a_iR_i$, which step [](#s4){.pf-ref} bounds through adjunction.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.1.11, takes an orthogonal basis $R_1,\dots,R_k$ of $H^\perp$ and concludes from $(\sum a_iR_i)^2+(\text{lower terms})>0$ that "the inequality above has only finite solution of $a_i$". The unknown that must be bounded is not $a_i$ but the coefficients of the curves occurring in $D+\sum a_iR_i$, which step [](#s4){.pf-ref} bounds through adjunction.
 
 :::

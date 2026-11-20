@@ -55,7 +55,7 @@ Cf. (Ex. 3.3).
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise IV.5.1, printed p. 348. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.5.1, printed p. 95, gives it in one line from (4.3.3) and Proposition 5.2; the steps below write out the argument those two results carry, starting from the hyperelliptic involution.
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.5.1. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.5.1, gives it in one line from (4.3.3) and Proposition 5.2; the steps below write out the argument those two results carry, starting from the hyperelliptic involution.
 
 Let $X$ be hyperelliptic of genus $g\ge2$.  Choose a finite morphism
 $$
@@ -206,5 +206,5 @@ very-ampleness theorem.
 :::
 
 ::: {.remark title="Published solution"}
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.1, printed p. 95, is the whole entry: 'By 4.3.3 and proposition 5.2, trivial.' The composition is exact --- a complete intersection of genus $\geq2$ has $K$ very ample by (4.3.3), while on a hyperelliptic curve $\abs K=(g-1)g^1_2$ is not very ample by (5.2) --- and it is the argument the card carries, its step [](#s3){.pf-ref} being the non-very-ampleness and [](#s4){.pf-ref} the conclusion. What the entry does not do is exhibit either ingredient: both are quoted, and a reader who wants the computation has to take it from the book's own propositions.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.1, is the whole entry: 'By 4.3.3 and proposition 5.2, trivial.' The composition is exact --- a complete intersection of genus $\geq2$ has $K$ very ample by (4.3.3), while on a hyperelliptic curve $\abs K=(g-1)g^1_2$ is not very ample by (5.2) --- and it is the argument the card carries, its step [](#s3){.pf-ref} being the non-very-ampleness and [](#s4){.pf-ref} the conclusion. What the entry does not do is exhibit either ingredient: both are quoted, and a reader who wants the computation has to take it from the book's own propositions.
 :::

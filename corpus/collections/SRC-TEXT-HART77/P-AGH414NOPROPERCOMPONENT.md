@@ -229,7 +229,7 @@ Step [](#s7){.pf-ref} is the required conclusion.
 :::
 
 ::: {.remark title="Published solution"}
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.4, printed p. 207, text version `tmp/sources/hartshorne-solutions-egbert.md`, reduces by (III.3.1) to reduced schemes and by (III.3.2) to irreducible components, notes the normalization is not proper since the image of a proper scheme is proper, gets $\tilde X$ affine from IV.1.3, and descends affineness by Chevalley (III.4.2) along the finite surjection $\tilde X\to X$.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.1.4, text version `tmp/sources/hartshorne-solutions-egbert.md`, reduces by (III.3.1) to reduced schemes and by (III.3.2) to irreducible components, notes the normalization is not proper since the image of a proper scheme is proper, gets $\tilde X$ affine from IV.1.3, and descends affineness by Chevalley (III.4.2) along the finite surjection $\tilde X\to X$.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.4, printed p. 84, reduces to the integral case: by (III, 3.3.1) and (III, 3.3.2) one may assume $X$ integral, the normalization $\widetilde X$ is then not proper either, so (4.1.3) makes $\widetilde X$ affine, and $\widetilde X\to X$ is finite by (III, 3.4.2), hence $X$ is affine.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.1.4, reduces to the integral case: by (III, 3.3.1) and (III, 3.3.2) one may assume $X$ integral, the normalization $\widetilde X$ is then not proper either, so (4.1.3) makes $\widetilde X$ affine, and $\widetilde X\to X$ is finite by (III, 3.4.2), hence $X$ is affine.
 :::

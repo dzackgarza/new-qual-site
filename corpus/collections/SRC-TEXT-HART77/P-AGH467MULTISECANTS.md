@@ -339,7 +339,7 @@ Hint: Consider a projection from a point of the curve to $\PP^2$.
 Hartshorne IV.6.7 states the converse without a characteristic restriction.
 It fails in characteristic $p\ge3$, as the final step shows.
 
-As in Hartshorne IV.3, printed p. 310, a multisecant is a line meeting $X$ in
+As in Hartshorne IV.3, a multisecant is a line meeting $X$ in
 at least three distinct points, and a tangent with intersection length $3$ at
 one point is not a multisecant under that definition. The printed definition
 does not exclude the line $X$ itself when $X$ is a line, and a line meets

@@ -36,7 +36,7 @@ If $X$ is a complete intersection of surfaces of degrees $a, b$ in $\PP^3$, then
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.5, printed p. 355. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.5, printed p. 98, proves it from projective normality and the Hilbert-polynomial count of (2.8.4) for $h^0(\OO_X(l))$, which cannot agree with the complete intersection's for $l<\min(a,b)$.
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.5. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.5, proves it from projective normality and the Hilbert-polynomial count of (2.8.4) for $h^0(\OO_X(l))$, which cannot agree with the complete intersection's for $l<\min(a,b)$.
 
 Let
 $$

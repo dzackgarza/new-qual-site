@@ -404,7 +404,7 @@ A curve of degree 3 in any $\PP^n$ must be either a plane cubic curve, or the tw
 :::
 
 ::: {.solution}
-Each step names the published argument it transcribes, or says that it is the card's own. The transcription is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou — part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10 — and, for the degree and the genus of part (b), A. Egbert's *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b), printed p. 220. One of the nine steps is wholly the card's own, and three transcribed steps carry expansions marked as the card's own.
+Each step names the published argument it transcribes, or says that it is the card's own. The transcription is Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou — part (a) on printed pp. 8--9 and parts (b)--(d) on printed p. 10 — and, for the degree and the genus of part (b), A. Egbert's *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4(b). One of the nine steps is wholly the card's own, and three transcribed steps carry expansions marked as the card's own.
 
 Write $S(X)=k[x_0,\ldots,x_d]/I(X)$ for the homogeneous coordinate ring of
 $$
@@ -420,7 +420,7 @@ $X$ is projectively normal.
 
 ::: pf-proof
 
-This step transcribes Hou, §3 Exercise 4(a), printed pp. 8--9, in the second of
+This step transcribes Hou, §3 Exercise 4(a), in the second of
 his two arguments.
 
 $S(X)=k[t_0^d,t_0^{d-1}t_1,\ldots,t_1^d]$ is the semigroup algebra of the monoid
@@ -476,7 +476,7 @@ vanishes on $X$.
 
 ::: pf-proof
 
-Hou, §3 Exercise 4(a), printed p. 9: "obviously $g_{ij}\in\ker(\theta)$". Under
+Hou, §3 Exercise 4(a): "obviously $g_{ij}\in\ker(\theta)$". Under
 $x_i\mapsto t_0^{d-i}t_1^i$ both $x_ix_{j+1}$ and $x_{i+1}x_j$ map to
 $t_0^{2d-i-j-1}t_1^{i+j+1}$.
 
@@ -490,7 +490,7 @@ The $g_{ij}$ generate $I(X)$.
 
 ::: pf-proof
 
-This step transcribes Hou, §3 Exercise 4(a), printed p. 9. His false exclusion
+This step transcribes Hou, §3 Exercise 4(a). His false exclusion
 of pure powers is named, and the completion with pure powers included is marked
 as the card's own.
 
@@ -549,7 +549,7 @@ $(n+1)$-dimensional subspace of $H^0(X,\mco_X(1))$ and
 $$
 \dim\abs{D}=h^0(X,\mco_X(1))-1\ge n.
 $$
-Hou, §3 Exercise 4(b), printed p. 10, states $\dim\abs{D}=n$ and justifies it by
+Hou, §3 Exercise 4(b), states $\dim\abs{D}=n$ and justifies it by
 the remark that otherwise "there exists a proper subspace
 $V\subset h^0(X,\mco_X(D))$ such that $X\subset\PP(V^*)\subsetneq\PP^n$";
 injectivity of the restriction gives $\dim\abs{D}\ge n$ and not completeness,
@@ -570,7 +570,7 @@ $$
 ::: pf-proof
 
 This step transcribes A. Egbert, *Solutions to Hartshorne's Algebraic Geometry*
-(2013), IV.3.4(b), printed p. 220: "We have
+(2013), IV.3.4(b): "We have
 $\dim\abs{D}=n$, $\deg(D)=d$ and
 $l(D)=n+1\le\deg(D)+1=d+1\le n+1$. Thus $n=d$." With step
 [](#hyperplane-divisor){.pf-ref}, $d\le n$ is his last inequality and his
@@ -582,10 +582,10 @@ $H^0(\PP^n,\mco_{\PP^n}(1))\to H^0(X,\mco_X(1))$ is injective because $X$ lies
 in no hyperplane (step [](#hyperplane-divisor){.pf-ref}), so $l(D)\ge n+1$.
 Read that way his chain is $n+1\le l(D)\le d+1\le n+1$ and yields the same
 conclusion; printed with $l(D)=n+1$ first, as he writes it, the line asserts
-what it proves. Hou, §3 Exercise 4(b), printed p. 10, writes the same equality
+what it proves. Hou, §3 Exercise 4(b), writes the same equality
 for the same inequality, which step [](#hyperplane-divisor){.pf-ref} names.
 
-Hou's own route to $d=n$, §3 Exercise 4(b), printed p. 10, removes the fixed
+Hou's own route to $d=n$, §3 Exercise 4(b), removes the fixed
 points of $\abs{D}$ one at a time, reaching
 $\dim\abs{D-P_1-\cdots-P_d}=n-d>0$ against degree $0$; that is a contradiction
 only if $\dim\abs{D}=n$, which his remark there does not establish.
@@ -605,7 +605,7 @@ $$
 
 ::: pf-proof
 
-This step transcribes Egbert, IV.3.4(b), printed p. 220, who continues:
+This step transcribes Egbert, IV.3.4(b), who continues:
 "Since $\deg(D)=\dim(D)$, and $d\ne0$, then by exc IV.1.5, $g=0$." Step
 [](#strict-inequality){.pf-ref} gives $d=n$ and its chain gives $l(D)=n+1$, so
 $\dim\abs{D}=n=\deg D$ with $D\ne0$; that is the equality case of
@@ -617,7 +617,7 @@ $\deg D=\dim\abs{D}$, the equality step [](#strict-inequality){.pf-ref} leaves.
 He closes, "Thus $D$ corresponds to an $(n+1)$ dimensional subspace in
 $\Gamma(\PP^1,\mco(n))$", which is the identification step
 [](#is-rational-normal){.pf-ref} states, and
-Hou, §3 Exercise 4(b), printed p. 10, states both conclusions as well: "we then
+Hou, §3 Exercise 4(b), states both conclusions as well: "we then
 must have $g(X)=0$ and $\mco_X(H)=\mco_{\PP^1}(dH)$".
 
 :::
@@ -631,7 +631,7 @@ of $\PP^1$, up to an automorphism of $\PP^d$.
 
 ::: pf-proof
 
-Hou, §3 Exercise 4(b), printed p. 10: "Therefore $X\cong\nu_d(\PP^1)$ up to
+Hou, §3 Exercise 4(b): "Therefore $X\cong\nu_d(\PP^1)$ up to
 $\Aut(\PP^n)$." The following expansion of that sentence is the card's own.
 $g(X)=0$ forces $X\cong\PP^1$ (IV.1.3.5); on $\PP^1$ a divisor of degree $d$ is
 linearly equivalent to $dP$ for a point $P$, so
@@ -654,7 +654,7 @@ A curve of degree $2$ in any $\PP^n$ is a conic in some $\PP^2$.
 
 ::: pf-proof
 
-Hou, §3 Exercise 4(c), printed p. 10: if $X$ is not contained in any hyperplane,
+Hou, §3 Exercise 4(c): if $X$ is not contained in any hyperplane,
 then $n=2$ by part (b) as proved in steps
 [](#hyperplane-divisor){.pf-ref}--[](#is-rational-normal){.pf-ref}; if a
 hyperplane $H\cong\PP^{n-1}$ contains $X$, replace $n$ by $n-1$ and repeat. So
@@ -671,7 +671,7 @@ cubic in $\PP^3$.
 
 ::: pf-proof
 
-Hou, §3 Exercise 4(d), printed p. 10: the descent of step
+Hou, §3 Exercise 4(d): the descent of step
 [](#degree-two){.pf-ref} shows $X\subseteq\PP^3$. If $X$ is not contained in any
 plane, then $X\cong\nu_3(\PP^1)$ by part (b), "It is indeed the twisted
 cubic curve up to a projective transform"; if $X$ lies in a plane, it is a plane
@@ -699,9 +699,9 @@ consequences.
 
 
 ::: {.remark title="Published solution"}
-Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, printed pp. 8--10, solves the exercise: (a) at pp. 8--9, by the toric argument that $\Spec S(X)$ is the affine toric variety of the cone $\sigma=\RR_{\ge0}\langle e_1,e_1+de_2\rangle$, whose monoid $\ZZ^2\cap\sigma$ is isomorphic to the exponent monoid of $S(X)$ and is saturated, and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^n$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card carries both of Hou's arguments in (a), with his false first observation named, and takes part (b)'s degree and genus from Egbert's solutions of the same exercise, printed p. 220, with Exercise IV.1.5 for the bound that chain uses and IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
+Chin-Lung Wang's Algebraic Geometry II (National Taiwan University, 2020 Spring), Chapter IV homework, §3 Exercise 4 by Yu-Chi Hou, solves the exercise: (a) at pp. 8--9, by the toric argument that $\Spec S(X)$ is the affine toric variety of the cone $\sigma=\RR_{\ge0}\langle e_1,e_1+de_2\rangle$, whose monoid $\ZZ^2\cap\sigma$ is isomorphic to the exponent monoid of $S(X)$ and is saturated, and by division of the ideal by the quadrics $g_{ij}$, and (b) with its degree-$2$ and degree-$3$ consequences at p. 10. Three statements of its part (a) are false and are named where they would otherwise be used: $\Frac S(X)=k(t_0,t_1)$, the conclusion $d\mid\deg f$ drawn from a degree comparison (for $d=2$, $t_0$ is integral over $S(X)$ and has degree $1$), and the claim that a lexicographic remainder by the $g_{ij}$ contains no pure power $x_i^n$, whose leading monomial under $g_{i-1,i}$ is $x_{i-1}x_{i+1}$. Its part (b) states $g(X)=0$ and the identification with the $d$-uple embedding, and states $\dim\abs{D}=n$ without proving it. The card carries both of Hou's arguments in (a), with his false first observation named, and takes part (b)'s degree and genus from Egbert's solutions of the same exercise, printed p. 220, with Exercise IV.1.5 for the bound that chain uses and IV.1.3.5, an Example of the text, for $X\cong\PP^1$.
 
-A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, printed pp. 219--220, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal. If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
+A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), IV.3.4, asserts both halves of part (a) without proof on printed p. 219 — "Since $\PP^1$ is projectively normal, then $d$-uple is projectively normal. If $\theta$ is the corresponding ring homomorphism, then the kernel is generated by quadrics" — and proves part (b) on printed p. 220 by the chain $l(D)=n+1\le\deg(D)+1=d+1\le n+1$ and Exercise IV.1.5, with the identification in the one closing sentence quoted in step [](#genus-zero){.pf-ref}.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.4, printed p. 88, does (a) by pulling projective normality back along the embedding: $\PP^1$ is projectively normal and the $d$-uple embedding is projectively normal (2.5.14), so the rational normal curve of degree $d$ in $\PP^d$ is projectively normal, and the kernel of its homogeneous coordinate ring is generated by the quadrics $x_ix_j-x_kx_l$ with $i+j=k+l$. Part (b) is the four-term chain: for $D=X.H$ one has $\dim\abs D=n$ and $\deg D=d$, so $\ell(D)=n+1\leq\deg D+1=d+1\leq n+1$, the first inequality being (4.1.5) and the second the exercise's hypothesis $d\leq n$. Hence $d=n$ and $\ell(D)=\deg D+1$; the entry reads $g(X)=0$ off that by (4.1.5), and the reading is right, since Riemann--Roch turns $\ell(D)=\deg D+1$ into $\ell(K-D)=g$, which no nonzero effective $D$ satisfies when $g\geq1$ --- $\abs K$ is base-point-free for $g\geq2$, and $\ell(-D)=0$ for $g=1$. With $X$ in no $\PP^{n-1}$ the restriction $H^0(\PP^n,\OO(1))\to H^0(X,\OO_X(1))$ is injective, and both sides now have dimension $n+1$, so $X\to\PP^n$ is induced by the complete linear system $\abs{\OO_{\PP^1}(n)}$ --- the rational normal curve of degree $n=d$, up to an automorphism of $\PP^d$.
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.3.4, does (a) by pulling projective normality back along the embedding: $\PP^1$ is projectively normal and the $d$-uple embedding is projectively normal (2.5.14), so the rational normal curve of degree $d$ in $\PP^d$ is projectively normal, and the kernel of its homogeneous coordinate ring is generated by the quadrics $x_ix_j-x_kx_l$ with $i+j=k+l$. Part (b) is the four-term chain: for $D=X.H$ one has $\dim\abs D=n$ and $\deg D=d$, so $\ell(D)=n+1\leq\deg D+1=d+1\leq n+1$, the first inequality being (4.1.5) and the second the exercise's hypothesis $d\leq n$. Hence $d=n$ and $\ell(D)=\deg D+1$; the entry reads $g(X)=0$ off that by (4.1.5), and the reading is right, since Riemann--Roch turns $\ell(D)=\deg D+1$ into $\ell(K-D)=g$, which no nonzero effective $D$ satisfies when $g\geq1$ --- $\abs K$ is base-point-free for $g\geq2$, and $\ell(-D)=0$ for $g=1$. With $X$ in no $\PP^{n-1}$ the restriction $H^0(\PP^n,\OO(1))\to H^0(X,\OO_X(1))$ is injective, and both sides now have dimension $n+1$, so $X\to\PP^n$ is induced by the complete linear system $\abs{\OO_{\PP^1}(n)}$ --- the rational normal curve of degree $n=d$, up to an automorphism of $\PP^d$.
 :::
