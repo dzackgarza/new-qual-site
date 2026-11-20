@@ -13,6 +13,19 @@ relations: []
 review: draft
 audit:
 - event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Converted from prose to numbered steps under #2, three of them, one per part of the exercise,
+    each with its proof kept: the substitution $x=(1-k'^2y^2)^{-1/2}$ giving $K'(k)=K(k')$, the
+    rational substitution $x=2t/(1+k'+(1-k')t^2)$ giving $K(k)=\frac{2}{1+k'}K(\frac{1-k'}{1+k'})$,
+    and Euler's beta integral giving $K(k)=\frac\pi2{}_2F_1(\frac12,\frac12;1;k^2)$. The
+    computations are the card's own, since no retained solution set covers this collection; they were
+    checked against the definitions of $K$ and $K'$ printed on the card, including the branch
+    $0<k'<1$ and the monotonicity of the substitution in part (b). Nothing paginated is written, and
+    the card names no other source. Not checked: no certificate and no numerical evaluation of the
+    three identities in this pass.
+- event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
 ---
@@ -44,8 +57,14 @@ where $F$ the hypergeometric series. [Hint: This follows from the integral repre
 :::
 
 ::: {.solution}
-Write $k'^2=1-k^2$, with $0<k'<1$.
+Write $k'^2=1-k^2$ with $0<k'<1$; this is the exercise's $\tilde k$. The three computations below are direct ones from the definitions of $K$ and $K'$ given on the card, and each part is a step.
 
+::: pf
+
+::: {.pf-step #part-a}
+$K'(k)=K(k')$.
+
+::: pf-proof
 For (a), in $K'(k)$ make the substitution
 $$
 x=(1-k'^2y^2)^{-1/2}.
@@ -64,6 +83,14 @@ $$
 K'(k)=\int_0^1\frac{dy}{\sqrt{(1-y^2)(1-k'^2y^2)}}=K(k').
 $$
 
+:::
+
+:::
+
+::: {.pf-step #part-b}
+$K(k)=\dfrac{2}{1+k'}\,K\!\left(\dfrac{1-k'}{1+k'}\right)$.
+
+::: pf-proof
 For (b), set
 $$
 x=\frac{2t}{1+k'+(1-k')t^2}.
@@ -96,6 +123,14 @@ $$
 K(k)=\frac2{1+k'}K\left(\frac{1-k'}{1+k'}\right).
 $$
 
+:::
+
+:::
+
+::: {.pf-step #part-c}
+$K(k)=\dfrac{\pi}{2}\,{}_2F_1\!\left(\dfrac12,\dfrac12;1;k^2\right)$.
+
+::: pf-proof
 For (c), Euler's beta-integral representation of the hypergeometric function gives, for $\abs{u}<1$,
 $$
 {}_2F_1\left(\frac12,\frac12;1;u\right)
@@ -112,3 +147,10 @@ $$
 K(k)=\frac\pi2\,{}_2F_1\left(\frac12,\frac12;1;k^2\right).
 $$
 :::
+
+:::
+
+:::
+
+:::
+
