@@ -254,31 +254,6 @@ This contradiction proves that no generator $f$ can exist.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Therefore
-$$
-\boxed{
-(x,y)
-\text{ is not a principal ideal of }F[x,y].
-}
-$$
-
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} is the required conclusion.
-
-:::
-
 :::
 
 :::
