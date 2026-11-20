@@ -280,6 +280,19 @@ audit:
     Propositions 2.10 and 2.11 must serve. The solution's preamble no longer
     promises a printed page with each citation, the citations now being by
     numbered statement.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The four page locators that stood in this card's solution text are replaced
+    by the numbered statements they belong to, on the standing rule that a
+    citation names a numbered statement and not a page. The statements are
+    Fuentes--Pedreira's Theorem 3.2(1) with Remark 3.3, Corollary 2.4, Theorem
+    3.9(3) and the paragraph after their projection formula giving
+    C_0^2 = -e; each is already named where its locator stood, so no sentence
+    changes other than the deletion of the locator. Page numbers remain inside
+    this card's earlier dated events, where they are records of what was read
+    and QUAL-11 forbids changing them.
 ---
 
 ::: {.problem}
@@ -324,7 +337,7 @@ the complete system $\linearsystem{L}$ has no base points.
 ::: pf-proof
 Fuentes, Proposition 1.3, over a decomposable surface. Its criterion is that $\linearsystem{X_0+\mfb f}$ is base-point-free exactly when $\mfb$ and $\mfb+\mfe$ are, which is Proposition 3.4, of [2], cited there as [2, Proposition 2.3]. Splitting on $\mfe$ the paper proves two cases: if $\mfe\sim0$, then $\linearsystem{X_0+\mfb f}$ is base-point-free if and only if $\deg\mfb\ge2$ or $\mfb\sim0$; and if $\mfe\not\sim0$, if and only if $\deg\mfb\ge e+2$, or $\mfb\sim-\mfe$ with $e\ge2$. The reductions are Lemma 1.2 of the same paper, which is step [](#s1){.pf-ref}, together with $e=-\deg\mfe\ge0$.
 
-His case (d) prints "since $\deg(\mathfrak b)\le0$" where $\deg(\mfe)\le0$ is meant: a decomposable normalized bundle is $\OO_C\oplus\OO_C(\mfe)$ with $\deg(\mfe)\le0$ by Theorem 3.2(1) of [2] with Remark 3.3, both printed p. 15, so that $e\ge0$ and $\deg(\mfb+\mfe)=m-e$, which is at least $2$ once $m\ge e+2$.
+His case (d) prints "since $\deg(\mathfrak b)\le0$" where $\deg(\mfe)\le0$ is meant: a decomposable normalized bundle is $\OO_C\oplus\OO_C(\mfe)$ with $\deg(\mfe)\le0$ by Theorem 3.2(1) of [2] with Remark 3.3, so that $e\ge0$ and $\deg(\mfb+\mfe)=m-e$, which is at least $2$ once $m\ge e+2$.
 
 With $m\ge e+2$: if $\mfe\sim0$ then $e=0$ and $m\ge2$, which is the first case; otherwise $m\ge e+2$, which is the second. Hence $\mfb$ and $\mfb+\mfe$ are base-point-free, and so is $\linearsystem{L}$.
 :::
@@ -337,7 +350,7 @@ If $X$ is indecomposable with $e\in\{0,-1\}$ and $m\ge e+2$, then $\linearsystem
 ::: pf-proof
 Fuentes, Proposition 2.10, with its proof. There are two cases, $e=0$ and $e=-1$. If $m\ge2$ then $\mfb$ is nonspecial and $\mfb$, $\mfb+\mfe$ are base-point-free by Lemma 1.2, step [](#s1){.pf-ref}, and the base-point-free criterion of [2] gives that $\linearsystem{L}$ is base-point-free. The paper cites that criterion as [2, Corollary 1.8]; in the numbering of [2] read here it is Corollary 2.9, and it states both of the facts he uses: if $\mfb$ and $\mfb+\mfe$ are effective without common base points and $\mfb$ is nonspecial, there is a section $D\sim X_0+\mfb f$; and if both are base-point-free, so is $\linearsystem{X_0+\mfb f}$. His Proposition 1.5 cites the irreducible-element criterion of [2] as [2, Theorem 2.5].
 
-For $m\le1$ he treats each case. At $e=0$ and $m\le0$ one has $h^0(\OO_S(X_0+\mfb f))\le h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))$ and $h^0(\OO_S(X_0))=1$, so $h^0\le1$ and the system has base points; at $e=0$ and $m=1$ the divisor $\mfb+\mfe\sim\mfb$ has a base point. At $e=-1$ and $m\le0$ the system has at most one curve, by his Proposition 2.3, and so has base points; at $e=-1$ and $m=1$ he has $h^0(\OO_S(X_0+Pf))=h^0(\OO_X(P))+h^0(\OO_X(P+\mfe))=1+2=3$, and $h^0(\OO_S(X_0+(P-Q)f))=1$ for every $Q$, again by Proposition 2.3, so that $h^0(\OO_S(H-Qf))=h^0(\OO_S(H))-2$ for every $Q$ and Corollary 2.4 of [2], printed p. 9, makes $\linearsystem{L}$ base-point-free.
+For $m\le1$ he treats each case. At $e=0$ and $m\le0$ one has $h^0(\OO_S(X_0+\mfb f))\le h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))$ and $h^0(\OO_S(X_0))=1$, so $h^0\le1$ and the system has base points; at $e=0$ and $m=1$ the divisor $\mfb+\mfe\sim\mfb$ has a base point. At $e=-1$ and $m\le0$ the system has at most one curve, by his Proposition 2.3, and so has base points; at $e=-1$ and $m=1$ he has $h^0(\OO_S(X_0+Pf))=h^0(\OO_X(P))+h^0(\OO_X(P+\mfe))=1+2=3$, and $h^0(\OO_S(X_0+(P-Q)f))=1$ for every $Q$, again by Proposition 2.3, so that $h^0(\OO_S(H-Qf))=h^0(\OO_S(H))-2$ for every $Q$ and Corollary 2.4 of [2] makes $\linearsystem{L}$ base-point-free.
 
 In part (a) the hypothesis is $m\ge e+2$, and $e\ge-1$. At $e=0$ it reads $m\ge2$, and at $e=-1$ it reads $m\ge1$, which are the two subcases above.
 :::
@@ -368,7 +381,7 @@ Fuentes, Proposition 1.4, states the equivalence for a decomposable surface. Its
 
 The other direction is the same equivalence read backwards, which the paper's statement carries and its proof does not spell out: very ampleness of $\linearsystem{L}$ forces $\mfb$ and $\mfb+\mfe$ very ample, so $m\ge3$ and $m-e\ge3$ by Lemma 1.2, that is $m\ge e+3$.
 
-Theorem 3.9(3) of [2] is proved on printed p. 18 from Corollary 2.13, whose criterion is $h^0(H-(P+Q)f)=h^0(H)-4$ for all $P,Q$ in the base, and from $h^0(\OO_S(H))=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))$; both directions of Corollary 2.13 are proved there, the forward one through Theorem 2.11.
+Theorem 3.9(3) of [2] is proved from Corollary 2.13, whose criterion is $h^0(H-(P+Q)f)=h^0(H)-4$ for all $P,Q$ in the base, and from $h^0(\OO_S(H))=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))$; both directions of Corollary 2.13 are proved there, the forward one through Theorem 2.11.
 :::
 
 :::
