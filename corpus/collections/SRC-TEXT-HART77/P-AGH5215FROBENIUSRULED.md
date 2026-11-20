@@ -812,6 +812,24 @@ audit:
     version of 28 October 2000, the file del_pezzo.pdf on his Düsseldorf
     publications page; the printed journal version was not read. Nothing else on
     the card changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The extraction filed as tmp/sources/miyanishi-2001-open-algebraic-surfaces.md
+    is not the book that Egbert cites, and no statement number is taken from it.
+    It is Miyanishi's survey "Recent Topics on Open Algebraic Surfaces", the
+    article reprinted in Selected Papers on Number Theory and Algebraic
+    Geometry, AMS Translations Series 2, volume 172 (1996): four sections, the
+    complex field as ground field, eighty references, and no lemma in it, with
+    no mention of ruled surfaces, Frobenius or purely inseparable morphisms.
+    Egbert's Exercise V.2.15 cites the monograph Open Algebraic Surfaces, CRM
+    Monograph Series 12, American Mathematical Society (2001), ISBN
+    0-8218-0504-5, DOI 10.1090/crmm/012, whose section 2.5 is "Log del Pezzo
+    Surfaces of Rank 1" by its contents page and by the review Zbl 0964.14030.
+    That monograph is still not retained, and the pointer remains recorded as
+    not a proof. Nothing mathematical on the card changes; the rendered remark
+    and step s8 are unaffected.
 
 ---
 
