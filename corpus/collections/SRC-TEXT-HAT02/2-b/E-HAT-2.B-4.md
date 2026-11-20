@@ -317,6 +317,24 @@ audit:
     are cited by number, and no page number remains in the problem, the solution or a remark. The dated
     events above keep the text their sessions wrote, page references included, as QUAL-11 requires. No
     claim changed; `qualc.authoring check` passes.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The provenance sentence at the head of the solution now states the search result with its date: part
+    (a) is transcribed from the two published solutions named in the Sources remark, and searches run on
+    2026-11-20, recorded with their queries and negative results in the entry of that date in
+    COMPLAINTS.md, found no published proof of part (b) as printed, so the obligation recorded there on
+    2026-11-16 stands. The Sources remark carries the same later date. Read again against the exercise:
+    step s1's homeomorphism phi(u,v) = (v,u)/sqrt(1+|v|^2) with inverse (x,y) -> (y/|y|, x/|y|), and the
+    two composites are the identity because |x|^2 + |y|^2 = 1; step s2 reads the deformation retraction
+    off S^{q-1} x R^p; step s3 makes [S^{q-1}] a generator; step `degenerate` settles p = 0 and q = 0 by
+    Invariance of Domain, Theorem 2B.3, where an embedding g with g(partial D^q) = S^{q-1} has image
+    both open and closed in the connected interior, hence onto; and step `collar-extension` builds the
+    proper disks F and G with F(x) = f(2x) for |x| <= 1/2 and 2|x| f(x/|x|) for 1/2 <= |x| <= 1, which is
+    well defined at |x| = 1/2, embeds D^p, and has F(partial D^p) = 2S^{p-1} on the boundary of the
+    radius-2 ball, the two outer cones meeting only at the origin and so disjoint. Not re-read in this
+    pass: the final homology contradiction of step `proper-case`, which was read on 2026-11-07.
 ---
 
 ::: {.problem}
@@ -329,6 +347,8 @@ In the unit sphere $S^{p+q-1} \subset \RR^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be 
 :::
 
 ::: {.solution}
+The argument for part (a) is transcribed from the two published solutions named in the Sources remark at the end; the argument for part (b) is the card's own. Searches run on 2026-11-20 found no published proof of part (b) as printed — the queries and their negative results are recorded in the entry of that date in `COMPLAINTS.md` — so the obligation recorded there on 2026-11-16 stands. The book results used are Hatcher, *Algebraic Topology* (2002), §2.B Exercise 4, its printed hint §2.B Exercise 3, and Invariance of Domain, Theorem 2B.3.
+
 Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$ and put $n=p+q$. Then
 $$
 S^{p-1}=\{(x,0):\norm{x}=1\},
@@ -533,5 +553,5 @@ Part (a) is transcribed from two published solutions.
 
 **Tiam Koukpari, *Hatcher's Algebraic Topology - Solutions*** (IMPA), solution to §2.B Exercise 4, read in `tmp/sources/koukpari-hatcher-solutions.md`. It displays the homeomorphism $\phi(u,v)=(v,u)/\sqrt{1+\norm v^2}$ from $S^{q-1}\times\RR^p$ onto $S^{p+q-1}-S^{p-1}$, checks that the image misses $S^{p-1}$ and that the denominator in it does not vanish, and reads the deformation retraction off $S^{q-1}\times\RR^p\to S^{q-1}\times\{0\}=S^{q-1}$. Both sources display $\phi$, and the inverse and the two composites in step [](#s1){.pf-ref} are the check this one leaves as evident.
 
-Part (b) has no located published proof of the statement as printed, and its proof on this card is the card's own. Koukpari's solution to Exercise 2.B.4(b) assumes the inclusion $S^{p-1}=D^p\cap S^{p+q-1}$ as "the assumption of the question", which Hatcher's printed statement does not give, and under that hypothesis its ladder is the argument of step [](#proper-case){.pf-ref}. tom Dieck's §2.8.3 continues with the two standard circles in $S^3$, that $W=S^1\times\{0\}$ spans no disk in the complement of the axis $Z$ because it is a nonzero class in $\pi_1$ of that complement, which is the linking obstruction in its $\pi_1$ form and not the exercise. The one Math StackExchange thread on part (b), question 666444, carries a commutative-diagram sketch as its accepted answer and no complete argument. The published-solution obligation of issue #123 for part (b) therefore remains open, and `COMPLAINTS.md` records it on 2026-11-16.
+Part (b) has no located published proof of the statement as printed, and its proof on this card is the card's own. Koukpari's solution to Exercise 2.B.4(b) assumes the inclusion $S^{p-1}=D^p\cap S^{p+q-1}$ as "the assumption of the question", which Hatcher's printed statement does not give, and under that hypothesis its ladder is the argument of step [](#proper-case){.pf-ref}. tom Dieck's §2.8.3 continues with the two standard circles in $S^3$, that $W=S^1\times\{0\}$ spans no disk in the complement of the axis $Z$ because it is a nonzero class in $\pi_1$ of that complement, which is the linking obstruction in its $\pi_1$ form and not the exercise. The one Math StackExchange thread on part (b), question 666444, carries a commutative-diagram sketch as its accepted answer and no complete argument. The published-solution obligation of issue #123 for part (b) therefore remains open, and `COMPLAINTS.md` records it on 2026-11-16 and again on 2026-11-20, the later entry carrying the queries run that day and their negative results.
 :::
