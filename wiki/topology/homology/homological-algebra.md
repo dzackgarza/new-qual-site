@@ -1,11 +1,12 @@
 ---
+title: Homological algebra
 order: 298
 topics:
 - Homological Algebra
 - Exact Sequences
 ---
 
-# Appendix: homological algebra
+# Homological algebra
 
 ## Exact sequences
 

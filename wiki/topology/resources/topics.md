@@ -1,8 +1,9 @@
 ---
+title: Qualifying-exam topics
 order: 10
 ---
 
-# Topics
+# Qualifying-exam topics
 
 ## Scheduling
 

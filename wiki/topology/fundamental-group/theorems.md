@@ -1,4 +1,5 @@
 ---
+title: Homotopy and homotopy groups
 order: 202
 topics:
 - Homotopy Equivalence
@@ -10,7 +11,7 @@ topics:
 
 ---
 
-# Theorems: algebraic topology
+# Homotopy and homotopy groups
 
 ## General homotopies
 

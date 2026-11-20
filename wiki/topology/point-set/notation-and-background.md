@@ -1,8 +1,9 @@
 ---
+title: Notation and background
 order: 0
 ---
 
-# Preface
+# Notation and background
 
 References:
 

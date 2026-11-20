@@ -1,4 +1,5 @@
 ---
+title: Surfaces, manifolds, and knots
 order: 250
 topics:
 - Surfaces

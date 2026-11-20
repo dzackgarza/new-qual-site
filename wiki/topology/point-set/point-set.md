@@ -1,4 +1,5 @@
 ---
+title: Continuity, compactness, and separation
 order: 100
 topics:
 - Compactness

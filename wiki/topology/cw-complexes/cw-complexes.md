@@ -1,4 +1,5 @@
 ---
+title: CW and simplicial complexes
 order: 225
 topics:
 - CW Complexes

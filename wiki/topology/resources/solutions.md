@@ -1,8 +1,9 @@
 ---
+title: Solution sources
 order: 30
 ---
 
-# Solutions (Topology)
+# Solution sources
 
 [Oregon topology qualifying-exam solutions, Fall 2019](attachments/TopologySept19solutions.pdf)
 

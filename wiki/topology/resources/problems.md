@@ -1,8 +1,9 @@
 ---
+title: Problem sources
 order: 20
 ---
 
-# Problems (Topology)
+# Problem sources
 
 Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 

@@ -1,4 +1,5 @@
 ---
+title: Point-set examples
 order: 1
 topics:
 - Metric Spaces
@@ -11,7 +12,7 @@ topics:
 - Topological Groups
 ---
 
-# Examples
+# Point-set examples
 
 ## Point-set
 

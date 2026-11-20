@@ -1,8 +1,9 @@
 ---
+title: Homotopy, $\pi_1$, and surfaces
 order: 290
 ---
 
-# Extra problems: algebraic topology
+# Homotopy, $\pi_1$, and surfaces
 
 ## Homotopy
 

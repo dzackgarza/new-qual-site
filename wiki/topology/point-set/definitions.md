@@ -1,4 +1,5 @@
 ---
+title: Point-set definitions
 order: 1
 topics:
 - Point-Set Topology
@@ -15,7 +16,7 @@ topics:
 - Countability
 ---
 
-# Definitions
+# Point-set definitions
 
 ## Point-set topology
 
