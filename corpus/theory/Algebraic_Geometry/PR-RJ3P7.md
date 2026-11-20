@@ -37,9 +37,8 @@ In particular $f$ is a closed map.
 
 ::: {.theorem title="Going down"}
 Let $A \subseteq B$ be domains with $A$ integrally closed and $B$ integral over $A$.
-If $\mfp_1 \supseteq \cdots \supseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \supseteq \cdots \supseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\mfq_i \cap A = \mfp_i$, then it extends to a chain $\mfq_1 \supseteq \cdots \supseteq \mfq_n$ with $\mfq_i \cap A = \mfp_i$.
-Going down also holds for every flat ring map $A \to B$.
-[@AM18]
+If $\mfp_1 \supseteq \cdots \supseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \supseteq \cdots \supseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\mfq_i \cap A = \mfp_i$, then it extends to a chain $\mfq_1 \supseteq \cdots \supseteq \mfq_n$ with $\mfq_i \cap A = \mfp_i$ [@AM18].
+Going down also holds for every flat ring map $A \to B$ (Stacks Project, Lemma 10.39.19, tag 00HS).
 :::
 
 ::: {.remark}
