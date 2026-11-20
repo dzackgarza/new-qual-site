@@ -27,9 +27,24 @@ audit:
     $\{r_n\}$ is bounded. (a) is the Blaschke necessity $\sum(1-\abs{z_n})<\infty$ obtained from
     Jensen's formula, so divergence of the sum forces $F\equiv0$; (b) is the Blaschke product of the
     image sequence, which converges exactly under $\sum r_n<\infty$. Nothing is left in outline.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The printed item opens with a sentence the card's block had dropped: "The following result is
+    relevant to Problem 4 in Chapter 10 which treats modular functions." It is restored at the head
+    of the statement, so the block is now Chapter 8, Problem 5 on printed p. 277 (PDF p. 276) entire.
+    Checked against the print in the same pass: parts (a) and (b) as the card has them, the closing
+    cross-reference to Problems 1 and 2 of Chapter 5, and the fact that this item carries no
+    asterisk -- the book's asterisks in Chapter 8 stand before Problems 3, 4, 6, 7, 8 and 9 only.
+    Part (b) prints "a bounded function", which the card renders "a bounded holomorphic function";
+    that is the intended reading of the item and the card's wording is kept. Not checked: the
+    argument, which the event above records and this pass did not re-derive.
 ---
 
 ::: {.exercise}
+The following result is relevant to Problem 4 in Chapter 10, which treats modular functions.
+
 Let $\{r_n\}_{n=1}^{\infty}$ be a bounded sequence of positive numbers and let $\halfplane$ be the upper half-plane.
 
 (a) Suppose $F:\halfplane\to\CC$ is bounded and holomorphic and vanishes at $ir_n$ for every $n$. Prove that $\sum_{n=1}^{\infty}r_n=\infty$ implies $F=0$.
