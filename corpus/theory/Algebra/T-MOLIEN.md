@@ -20,4 +20,6 @@ Then the Hilbert series of the invariant ring is
 $$
 \sum_{d\geq0}\dim_\CC(\CC[V]^G)_d\,t^d = \frac{1}{\size G}\sum_{g\in G}\frac{1}{\det(1-tg)} .
 $$
+
+This is Molien's theorem: Cox--Little--O'Shea, *Ideals, Varieties, and Algorithms*, Chapter 7, §3 names it and refers for its proof to Benson--Grove, *Finite Reflection Groups*, Chapter 7, and Sturmfels, *Algorithms in Invariant Theory*, Chapter 2.
 :::
