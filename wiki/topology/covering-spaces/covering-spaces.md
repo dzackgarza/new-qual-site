@@ -166,7 +166,7 @@ The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen's theore
 
 ![The universal cover of $S^1 \vee S^1$](/assets/figures/image_2021-01-10-13-19-32.png)
 
-[@Hat02, p. 58] draws further covering spaces of $S^1\vee S^1$.
+[@Hat02, §1.3] tabulates further covering spaces of $S^1\vee S^1$.
 
 :::
 
