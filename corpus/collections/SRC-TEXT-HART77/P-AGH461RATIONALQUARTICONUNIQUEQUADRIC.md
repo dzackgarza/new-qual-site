@@ -61,6 +61,32 @@ audit:
 
     Not checked: the proof on FE-CRVQUAD (read, not re-derived), and Hartshorne V. Ex. 2.9, to
     which Remark 6.4.1(d) is deferred and which is not read here.
+- event: source-corrected
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Three repairs in s3 and s1, all prompted by a review that read the two steps' reasons rather
+    than their conclusions; no statement of the card changes.
+
+    s3's uniqueness argument ended "the complete-intersection curve Y is Cohen-Macaulay of pure
+    dimension 1, so O_Y has no nonzero zero-dimensional subsheaf". That inference is not available:
+    Cohen--Macaulay gives unmixedness of the associated primes, but a nonzero zero-dimensional
+    subsheaf is killed by a power of the maximal ideal of a point, so what rules it out is O_Y being
+    a domain at each point, that is S1 and reducedness, which a (2,2) complete intersection need not
+    have -- V(xy, z^2) in P^3 has no common factor between its two quadrics and is non-reduced along
+    both of its lines. The step now compares Hilbert polynomials instead, which needs neither
+    property: X lies in Y and is reduced, so the two sheaves agree at the generic point and the
+    kernel K of O_Y -> O_X is zero-dimensional; a zero-dimensional sheaf of length l has Euler
+    characteristic l for every twist, so P_Y = P_X + l, while P_X = 4t + 1 - g(X) = 4t + 1 and
+    P_Y = 4t + 1 - p_a(Y) = 4t. Hence 4t = 4t + 1 + l, so l = -1, impossible, the kernel is zero and
+    Y = X, which contradicts g(X) = 0 with p_a(Y) = 1. The same conclusion, now with a proof that
+    covers the non-reduced and embedded-point cases the earlier sentence did not.
+
+    s1 and s3 now cite the printed formulas they use: the plane-curve genus to II.8.20.3 at printed
+    p. 183 and II. Ex. 8.4(f), and the complete-intersection genus to II. Ex. 8.4(g) at printed
+    p. 188. Those references were used and not named.
+
+    Not checked: the same two items as above, FE-CRVQUAD's proof and Hartshorne V. Ex. 2.9.
 ---
 
 ::: {.problem}
@@ -82,8 +108,10 @@ The curve $X$ is not contained in a plane.
 If $X$ lay in a plane, then, being a nonsingular plane curve of degree $4$,
 it would have genus
 $$
-\frac{(4-1)(4-2)}2=3.
+\frac{(4-1)(4-2)}2=3
 $$
+by the plane-curve genus formula, Hartshorne II.8.20.3 at printed p. 183 and
+II. Ex. 8.4(f).
 But $X$ is rational, so its genus is $0$.  Hence $X$ is nondegenerate in
 $\PP^3$.
 
@@ -143,20 +171,32 @@ By Bezout,
 $$
 \deg Y=2\cdot2=4=\deg X.
 $$
-The surjection $\OO_Y\twoheadrightarrow\OO_X$ therefore has kernel supported
-in dimension $0$: its Hilbert polynomial has zero leading coefficient because
-$X$ and $Y$ have the same degree.  But the complete-intersection curve $Y$ is
-Cohen--Macaulay of pure dimension $1$, so $\OO_Y$ has no nonzero
-zero-dimensional subsheaf.  Thus the kernel is zero and
-$Y=X$ scheme-theoretically.
-But the complete-intersection genus formula gives
+The surjection $\OO_Y\twoheadrightarrow\OO_X$ has kernel supported in
+dimension $0$: the two sheaves agree at the generic point of $X$, since $X$
+is a reduced curve and lies in $Y$.  Comparing Hilbert polynomials, a
+zero-dimensional sheaf of length $\ell$ has $\chi=\ell$ constant in $t$, so
+$$
+P_Y(t)=P_X(t)+\ell
+\qquad\text{for all }t,
+$$
+while
+$$
+P_X(t)=4t+1-g(X)=4t+1,
+\qquad
+P_Y(t)=4t+1-p_a(Y)=4t,
+$$
+the second by the complete-intersection genus formula, Hartshorne II. Ex.
+8.4(g) at printed p. 188, which gives
 $$
 p_a(Y)
 =1+\frac{(2)(2)(2+2-4)}2
-=1,
+=1.
 $$
-whereas the nonsingular rational curve $X$ has $p_a(X)=0$.  This
-contradiction proves uniqueness.
+The two displays give $4t=4t+1+\ell$, so $\ell=-1$, which is impossible;
+hence the kernel is zero and
+$Y=X$ scheme-theoretically.
+This contradicts the genus: the nonsingular rational curve $X$ has
+$p_a(X)=0$, while $p_a(Y)=1$.
 
 :::
 
