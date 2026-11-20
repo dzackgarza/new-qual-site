@@ -71,6 +71,8 @@ Hint: Show that it would have to lie on a quadric surface, then use (6.4.1).
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.4, printed p. 355. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.4, printed p. 98, argues by the same Riemann--Roch and Clifford count on $|2D|$ that forces the quadric, and then applies (6.4.1) as the printed hint directs.
+
 Suppose for contradiction that
 $$
 X\subseteq\PP^3
