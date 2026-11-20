@@ -119,10 +119,9 @@ $[0,1]$.
 
 Therefore
 $$
-\boxed{
-f(c)=c}.
+\boxed{f(c)=c},
 $$
-
+so statement (a) is necessarily true.
 
 ::: pf-proof
 
@@ -134,19 +133,6 @@ means
 $$
 f(c)-c=0.
 $$
-
-:::
-
-:::
-
-::: {.pf-step #s1-6}
-
-Hence statement (a) is necessarily true.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -192,10 +178,9 @@ This is the mean value theorem.
 
 Using the endpoint values,
 $$
-\boxed{
-f'(c)=-1}.
+\boxed{f'(c)=-1},
 $$
-
+so statement (b) is necessarily true.
 
 ::: pf-proof
 
@@ -206,19 +191,6 @@ $$
 =
 -1.
 $$
-
-:::
-
-:::
-
-::: {.pf-step #s1-10}
-
-Hence statement (b) is necessarily true.
-
-
-::: pf-proof
-
-This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -337,7 +309,7 @@ $$
 
 ::: pf-proof
 
-Statement (a) is step [](#s1-6){.pf-ref}, statement (b) is step [](#s1-10){.pf-ref}, and statement (c)
+Statement (a) is step [](#s1-5){.pf-ref}, statement (b) is step [](#s1-9){.pf-ref}, and statement (c)
 is disproved in step [](#s1-15){.pf-ref}.
 
 :::
