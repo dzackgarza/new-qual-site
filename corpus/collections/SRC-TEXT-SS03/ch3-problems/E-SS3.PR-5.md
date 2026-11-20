@@ -69,6 +69,20 @@ audit:
     $\int_{-M}^{M}dx/(x-M-i\epsilon)=-\log(1/\epsilon)+O(1)$ makes
     $\abs{g(M+i\epsilon)}=\frac{\abs{h(M)}}{2\pi}\log(1/\epsilon)+O(1)$. Not checked: the
     Plemelj estimates and the uniqueness argument were read for sense but not re-derived today.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Repair of step s5 on the reader's report. It concluded "in particular $g$ is bounded on
+    $\Omega$" from $g(z)\to0$ at infinity, which does not follow: the estimate proves boundedness only
+    on $\Omega\cap\{\abs z\ge2M\}$, and step s11 exhibits logarithmic divergence of
+    $g(M+i\varepsilon)$ when $h(M)\ne0$. The clause now states the boundedness it proves, namely
+    $\abs{g(z)}\le B/\pi$ for $\abs z\ge2M$, and names step s11 as the reason the whole of $\Omega$ is
+    not claimed. No other step changed. Provenance: a search outside the checkout was made for this
+    pass and changed the provenance sentence of 2026-11-19 — Rhoades, *Solutions/Hints to the
+    Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the
+    Exercises and not the end-of-chapter Problems, so no published solution of this Problem was
+    located.
 ---
 
 ::: {.exercise}
@@ -108,7 +122,7 @@ $$
 g(z)\coloneqq\frac{1}{2\pi i}\int_{-M}^{M}\frac{h(y)}{y-z}\,dy,\qquad z\in\Omega\coloneqq\CC\setminus[-M,M].
 $$
 
-The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated. The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, the checkout holding the text of the book and no solution set for it, so the derivation below is the card's throughout.
+The only results of the book used below are Theorem 5.4, Theorem 5.5 and Corollary 4.5 of Chapter 2, and Theorem 3.1 and Corollary 4.6 of Chapter 3 [@SS03]. The two elementary lemmas they are applied through are proved first. Nothing about the behaviour of $h$ at the endpoints $\pm M$ is assumed unless it is stated. The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, and the published set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, so the derivation below is the card's throughout.
 
 ::: pf
 
@@ -175,7 +189,7 @@ $$
 \abs{g(z)}\le\frac{1}{2\pi}\int_{-M}^{M}\frac{\abs{h(y)}}{\abs{y-z}}\,dy\le\frac{1}{2\pi}\cdot 2M\cdot\frac{B}{\abs{z}/2}=\frac{2MB}{\pi\abs{z}},
 $$
 
-so $\abs{g(z)}\to0$ as $\abs{z}\to\infty$; in particular $g$ is bounded on $\Omega$.
+so $\abs{g(z)}\to0$ as $\abs{z}\to\infty$; in particular $g$ is bounded on $\Omega\cap\{\abs z\ge2M\}$, where $\abs{g(z)}\le B/\pi$. Boundedness on the whole of $\Omega$ is not claimed and is false in general: step [](#s11){.pf-ref} shows that $g(M+i\varepsilon)$ grows like $\frac{\abs{h(M)}}{2\pi}\log\frac1\varepsilon$ when $h(M)\ne0$.
 :::
 
 :::
