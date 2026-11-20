@@ -57,7 +57,7 @@ Show that a map $f: X \to Y$ between connected CW complexes factors as a composi
 :::
 
 ::: {.solution}
-The exercise is §4.1 Exercise 16, printed p. 359. Use the cell-attachment construction printed on p. 353, the two steps preceding Proposition 4.13. Starting with
+The exercise is §4.1 Exercise 16. Use the cell-attachment construction preceding Proposition 4.13, the two steps before it. Starting with
 $$
 f:X\longrightarrow Y,
 $$
