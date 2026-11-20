@@ -45,6 +45,12 @@ audit:
     is what makes the choices consistent — giving `T\times\RR` with `T` trivalent. Cited and not
     proved here: the normal-form theorem that the incidence graph of the lifted pieces is a tree,
     which the card names. No correction was needed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Four page citations removed from the body; Example 1B.13, Exercise 4 of §1.B, Theorem 1B.11 and the
+    graph of groups are cited by their numbers and names only. No mathematics changed.
 ---
 
 ::: {.problem}
@@ -88,12 +94,12 @@ $$
 \qquad
 \psi=\iota_1\ \text{multiplication by }2.
 $$
-This is the one-vertex one-loop-edge graph of groups of Example 1B.13 (p. 93), whose $K_\Gamma$ is obtained from $K(A,1)$ by attaching $K(C,1)\times I$ along $K(C,1)\times\partial I$ by maps realizing $\varphi$ and $\psi$; with $K(C,1)$ having a single $0$-cell this is the one-vertex one-edge complex of Example 1B.13.
+This is the one-vertex one-loop-edge graph of groups of Example 1B.13, whose $K_\Gamma$ is obtained from $K(A,1)$ by attaching $K(C,1)\times I$ along $K(C,1)\times\partial I$ by maps realizing $\varphi$ and $\psi$; with $K(C,1)$ having a single $0$-cell this is the one-vertex one-edge complex of Example 1B.13.
 The relation of that extension is stated there, at p. 93, as
 $$
 t\,\varphi(c)\,t^{-1}=\psi(c),
 $$
-and its proof is deferred to Exercise 4 of §1.B (p. 96), which is [[E-HAT-1.B-4|Exercise 1.B.4]].
+and its proof is deferred to Exercise 4 of §1.B, which is [[E-HAT-1.B-4|Exercise 1.B.4]].
 With $\varphi(c)=a$, $\psi(c)=a^2$ and the stable letter named $b$ it reads
 $$
 bab^{-1}=a^2,
@@ -114,7 +120,7 @@ The universal cover of the graph of spaces is a tree of spaces whose vertex spac
 ::: pf-proof
 
 The universal cover of the vertex circle $K(A,1)=S^1$ is $\RR$.
-Both edge homomorphisms are injective, so by Theorem 1B.11 (p. 92) $K_\Gamma$ is a $K(G,1)$ and the inclusion of the edge circle $K(C,1)=S^1$ induces an injection on $\pi_1$.
+Both edge homomorphisms are injective, so by Theorem 1B.11 $K_\Gamma$ is a $K(G,1)$ and the inclusion of the edge circle $K(C,1)=S^1$ induces an injection on $\pi_1$.
 The lifted edge space is therefore the universal cover $\RR$ of that circle, and the lifted mapping cylinder for an edge is a strip
 $$
 \RR\times I.
@@ -123,7 +129,7 @@ The incidence graph of these lifted vertex and edge spaces is the tree $T_\Gamma
 $$
 T_1\subset T_2\subset\cdots
 $$
-of subtrees, each step attaching an asterisk at every outer vertex of the previous one. A union of an increasing chain of trees along single new vertices is a tree, and the action of $\pi_1(K_\Gamma)$ on it has orbit space the underlying graph $\Gamma$ (p. 95).
+of subtrees, each step attaching an asterisk at every outer vertex of the previous one. A union of an increasing chain of trees along single new vertices is a tree, and the action of $\pi_1(K_\Gamma)$ on it has orbit space the underlying graph $\Gamma$.
 
 :::
 
