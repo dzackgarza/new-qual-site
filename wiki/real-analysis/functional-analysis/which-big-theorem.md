@@ -30,22 +30,11 @@ If $X$ is a Banach space and $T_n\colon X\to Y$ are bounded linear maps such tha
 
 :::
 
-::: {.proof}
-$T$ is linear as a pointwise limit of linear maps.
-Each sequence $(T_nx)_n$ converges, hence is bounded, so the uniform boundedness principle gives $C\coloneqq\sup_n\norm{T_n}<\infty$, and $\norm{Tx} = \lim_n\norm{T_nx}\leq C\norm x$.
-
-:::
-
 The sequential test for a closed graph, and its use to prove boundedness without an explicit estimate, is on [[real-analysis/appendices/functional-analysis|Appendix: Functional analysis]].
 
 ::: {.corollary}
 If $X$ is a normed space and $x\neq y$ in $X$, there is $f\in X^*$ with $f(x)\neq f(y)$.
 In particular, the weak topology on $X$ is Hausdorff.
-
-:::
-
-::: {.proof}
-By the Hahn--Banach theorem there is $f\in X^*$ with $\norm f = 1$ and $f(x-y) = \norm{x-y}\neq0$.
 
 :::
 
