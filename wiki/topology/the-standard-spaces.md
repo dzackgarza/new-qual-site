@@ -43,11 +43,10 @@ $F_m$ is the free group of rank $m$, and $D(k,X)$ is $X$ with $k$ points deleted
 For $n\geq 0$,
 $$
 \begin{aligned}
-\DD^n &\coloneqq \theset{ \vector x \in \RR^{n} \st \norm{\vector x} \leq 1}, \\
-\SS^n &\coloneqq \theset{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd \DD^{n+1}.
+D^n &\coloneqq \theset{ \vector x \in \RR^{n} \st \norm{\vector x} \leq 1}, \\
+S^n &\coloneqq \theset{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd D^{n+1}.
 \end{aligned}
 $$
-Outside this block the blackboard-bold is dropped, and $D^n\coloneqq\DD^n$, $S^n\coloneqq\SS^n$.
 
 The sphere $S^n$ is an $n$-manifold, and
 $$
@@ -55,27 +54,7 @@ S^n \cong D^n / \bd D^n \cong D^n \Disjoint_{\bd D^n} D^n,
 $$
 the quotient collapsing the boundary to a point and the union of two discs glued by the identity of their boundaries.
 
-![The discs $\DD^1,\DD^2,\DD^3$ and their boundary spheres $\SS^0,\SS^1,\SS^2$](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
-
-:::
-
-::: {.example title="Real projective space"}
-For $n\geq 1$, $\RP^n$ is the quotient of $S^n$ by the antipodal identification $\vector x \sim -\vector x$; equivalently, it is the space of lines through $0$ in $\RR^{n+1}$.
-The inclusions $\RP^n\injects\RP^{n+1}$ define $\RP^\infty \coloneqq \injectivelim_{n} \RP^n$.
-The quotient map $S^n\to\RP^n$ is a $2$-sheeted covering map, a fiber bundle with fiber $S^0$:
-$$
-S^0 \to S^n \to \RP^n.
-$$
-
-:::
-
-::: {.example title="Complex projective space"}
-For $n\geq 1$, $\CP^n$ is the quotient of the unit sphere $S^{2n+1}\subseteq\CC^{n+1}$ by the action of $S^1\subseteq \CC^\times$ by scalar multiplication, $\vector z\sim\lambda\vector z$ for $\abs\lambda=1$; equivalently, it is the space of complex lines through $0$ in $\CC^{n+1}$.
-The inclusions $\CP^n\injects\CP^{n+1}$ define $\CP^\infty \coloneqq \injectivelim_n \CP^n$.
-The quotient map is a fiber bundle, the Hopf fibration when $n=1$:
-$$
-S^1 \to S^{2n+1} \to \CP^n.
-$$
+![The discs $D^1,D^2,D^3$ and their boundary spheres $S^0,S^1,S^2$](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
 
 :::
 
@@ -84,18 +63,6 @@ For $n\geq 1$, the $n$-torus is
 $$
 T^n \coloneqq \prod_{j=1}^n S^1.
 $$
-
-:::
-
-::: {.example title="Grassmannians"}
-The real Grassmannian $\Gr(k,\RR^n)$ is the space of $k$-dimensional linear subspaces of $\RR^n$, and $\Gr(k,\CC^n)$ is the space of complex $k$-dimensional subspaces of $\CC^n$.
-In particular, $\RP^{n-1}=\Gr(1,\RR^n)$ and $\CP^{n-1}=\Gr(1,\CC^n)$.
-
-:::
-
-::: {.example title="Stiefel manifolds"}
-The real Stiefel manifold $V_k(\RR^n)$ is the space of ordered orthonormal $k$-frames in $\RR^n$, topologized as a subspace of $(S^{n-1})^k$.
-$V_1(\RR^n)=S^{n-1}$ and $V_n(\RR^n)=O(n)$.
 
 :::
 
@@ -112,49 +79,14 @@ The following are topological groups, with the subspace topology from the space 
 
 :::
 
-::: {.example title="Eilenberg--MacLane spaces"}
-For a group $G$ when $n=1$, or an abelian group $G$ when $n\geq2$, an [[D-MENR4|Eilenberg--MacLane space]] $K(G,n)$ is a path-connected space with
-$$
-\pi_{k}(K(G, n)) \cong
-\begin{cases}
-G & k=n, \\
-0 & k\neq n.
-\end{cases}
-$$
-Such a space exists as a CW complex, and any two CW complexes of type $K(G,n)$ are homotopy equivalent.
+[[D-MENR4]]
 
-- $S^1$ is a $K(\ZZ, 1)$.
-
-- $\CP^\infty$ is a $K(\ZZ, 2)$.
-
-- $\RP^\infty$ is a $K(\ZZ/2, 1)$.
-
-:::
-
-::: {.example title="Moore spaces"}
-For an abelian group $G$ and $n\geq 1$, a [[D-KC4BS|Moore space]] $M(G,n)$ is a CW complex with
-$$
-\tilde H_{k}(M(G,n);\ZZ) \cong
-\begin{cases}
-G & k=n, \\
-0 & k\neq n,
-\end{cases}
-$$
-simply connected when $n\geq 2$.
-For $n\geq 2$ it is unique up to homotopy equivalence.
-
-- $S^n$ is an $M(\ZZ, n)$.
-
-- $\RP^2$ is an $M(\ZZ/2, 1)$.
-
-- For $p\geq 2$, attaching an $(n+1)$-cell to $S^n$ by a map of degree $p$ gives an $M(\ZZ/p,n)$.
-
-:::
+[[D-KC4BS]]
 
 ::: {.fact title="Low-dimensional identifications"}
 \envlist
 
-- The Möbius band $\mcm$ deformation retracts onto its core circle, so $\mcm \homotopic S^1$.
+- The Möbius band $\mobiusband$ deformation retracts onto its core circle, so $\mobiusband \homotopic S^1$.
 
 - As a set, $\CP^n = \CC^n \Disjoint \CP^{n-1} = \coprod_{i=0}^n \CC^i$, which gives a CW structure with one cell in each even dimension $0,2,\ldots,2n$.
 
