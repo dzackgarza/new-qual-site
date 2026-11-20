@@ -58,7 +58,7 @@ $$
 \qquad
 \Res_{z=2i}f=\frac{(2i)^2}{((2i)^2+1)\,4i}=\frac{-4}{-12i}=-\frac{i}{3}.
 $$
-By the residue theorem the contour integral is $2\pi i\qty(\frac i6-\frac i3)=2\pi i\cdot\qty(-\frac i6)=\frac\pi3$.
+By the [[T-HRPNO|residue theorem]] the contour integral is $2\pi i\qty(\frac i6-\frac i3)=2\pi i\cdot\qty(-\frac i6)=\frac\pi3$.
 
 :::
 
