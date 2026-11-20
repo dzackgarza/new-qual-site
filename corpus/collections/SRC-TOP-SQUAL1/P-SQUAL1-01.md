@@ -245,12 +245,12 @@ The set $U$ in step [](#s1-6){.pf-ref} was arbitrary.
 
 Thus
 $$
-\boxed{
-\overline{D\cap A}^{\,A}
-=
-A}.
+\boxed{D\cap A\text{ is dense in }A},
 $$
-
+that is,
+$$
+\boxed{\overline{D\cap A}^{\,A}=A}.
+$$
 
 ::: pf-proof
 
@@ -260,27 +260,9 @@ Step [](#s1-12){.pf-ref} is exactly the open-set characterization of density in 
 
 :::
 
-::: {.pf-step #s1-14}
-
-Therefore
-$$
-\boxed{
-D\cap A
-\text{ is dense in }A}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-13){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-5){.pf-ref} answers (a), and step [](#s1-14){.pf-ref} proves (b).
+Step [](#s1-5){.pf-ref} answers (a), and step [](#s1-13){.pf-ref} proves (b).
 
 :::
 
