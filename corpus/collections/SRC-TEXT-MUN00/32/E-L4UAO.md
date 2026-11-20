@@ -59,6 +59,35 @@ audit:
     normal space is normal (Exercise 32.1). dbFin, Section 32 Problem 2 Solution, as the
     earlier audit note records; Munkres §32 Exercise 2, printed p. 205. The printed
     statement needed no repair.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 32 Exercise 2, printed p. 205, and
+    repaired in two places. (i) The imbedding step cited Theorem 18.4 twice. That theorem is
+    "Maps into products" for two factors, $f:A\to X\times Y$, and the map here goes into
+    $\prod_{\beta}X_{\beta}$ over an arbitrary index set; the statement the step uses is
+    Theorem 19.6, printed p. 117, whose proof also records that the projections $\pi_{\beta}$ are
+    continuous, which is the second of the two citations. Both now name Theorem 19.6. (ii) The
+    normal case concluded that each $\{a_{\beta}\}$ is closed in $X_{\beta}$ from "$X$ is
+    normal, hence $T_{1}$", which says nothing about the factors; what supplies it is the
+    Hausdorff case already proved on this card, the product being Hausdorff, so the step now cites
+    the earlier step. Re-read and unchanged: the slice $S$ is closed as
+    $\bigcap_{\beta\ne\alpha}\pi_{\beta}^{-1}(\{a_{\beta}\})$ over an arbitrary index set,
+    which is closed being an intersection of closed sets; a closed subspace of a normal space is
+    normal, which is Exercise 32.1, printed p. 205, read on the page and exactly that sentence;
+    subspaces of Hausdorff and of regular spaces are Hausdorff and regular by Theorem 31.2,
+    printed p. 197, whose (a) and (b) say so; and the nonemptiness of the factors is what supplies
+    the basepoints $a_{\beta}$. Also checked and kept: dbFin's normal step, projecting arbitrary
+    disjoint open sets of the product, is not a proof, since projections of disjoint open sets of a
+    product can meet -- the closed-slice argument is the card's and is the one that works. Page
+    note: the folios 205, 205, 197 and 117 above were read from a copy of
+    `tmp/sources/munkres-2000-topology.md` carrying `<!-- page pdf=N folio=M -->` markers at every
+    page, which existed in the checkout during this pass and was replaced afterwards by the
+    version carrying only the three page-range markers; the agreement of Exercise 32.2 and
+    Exercise 32.1 with printed p. 205, of Theorem 31.2 with p. 197 and of Theorem 19.6 with p. 117
+    is therefore an observation of this pass that a later reader cannot repeat from the current
+    file.
 ---
 
 ::: {.exercise}
@@ -78,7 +107,7 @@ Fix an index $\alpha$ and choose a basepoint $a_{\beta}\in X_{\beta}$ for every 
 The map $i:X_{\alpha}\to\prod_{\beta}X_{\beta}$, with $i(x)_{\alpha}=x$ and $i(x)_{\beta}=a_{\beta}$ for $\beta\ne\alpha$, is an imbedding onto the slice $S=i(X_{\alpha})$.
 
 ::: pf-proof
-$i$ is injective, since $x$ is recovered as the $\alpha$-coordinate of $i(x)$. It is continuous because each coordinate function $\pi_{\beta}\circ i$ is either the identity of $X_{\alpha}$ or a constant map (Theorem 18.4). Its inverse on $S$ is the restriction of $\pi_{\alpha}$, which is continuous (Theorem 18.4); so $i$ is a homeomorphism onto $S$ and an imbedding.
+$i$ is injective, since $x$ is recovered as the $\alpha$-coordinate of $i(x)$. It is continuous because each coordinate function $\pi_{\beta}\circ i$ is either the identity of $X_{\alpha}$ or a constant map, and a map into a product with the product topology is continuous as soon as all its coordinate functions are: that is Theorem 19.6, printed p. 117, and its two-factor case, Theorem 18.4, does not cover an arbitrary index set. Its inverse on $S$ is the restriction of $\pi_{\alpha}$, which is continuous, the projections of a product being continuous, as the proof of the same theorem records; so $i$ is a homeomorphism onto $S$ and an imbedding.
 :::
 
 :::
@@ -101,7 +130,7 @@ If the product is normal, then so is $X_{\alpha}$.
 $S$ is closed in the product.
 
 ::: pf-proof
-A normal space is $T_{1}$ and hence Hausdorff, so each singleton $\{a_{\beta}\}$ is closed in $X_{\beta}$. Then
+A normal space is $T_{1}$ and hence Hausdorff, and by step [](#hausdorff-regular){.pf-ref} each factor $X_{\beta}$ is Hausdorff as well, so each singleton $\{a_{\beta}\}$ is closed in $X_{\beta}$. Then
 $$
 S=\bigcap_{\beta\ne\alpha}\pi_{\beta}^{-1}\big(\{a_{\beta}\}\big)
 $$
