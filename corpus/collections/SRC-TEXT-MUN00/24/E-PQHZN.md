@@ -91,7 +91,7 @@ For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval 
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.12, PDF pp. 6--7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all six parts are theirs, and each step below is theirs unless it says otherwise. Part (f) is stated on the card through the counting lemma behind the second countability of subspaces of $\RR^{n}$, which is the book's hint, rather than through Theorem 30.3, which comes later in the book.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all six parts are theirs, and each step below is theirs unless it says otherwise. Part (f) is stated on the card through the counting lemma behind the second countability of subspaces of $\RR^{n}$, which is the book's hint, rather than through Theorem 30.3, which comes later in the book.
 
 Throughout, $S_{\Omega}$ is the minimal uncountable well-ordered set, $a_{0}$ its least element, and $L$ is the long line: $S_{\Omega}\times[0,1)$ in the dictionary order with its least element $a_{0}\times0$ deleted.
 
@@ -135,7 +135,7 @@ Transfinite induction covers every $a\in S_{\Omega}$ above $a_{0}$.
 (d) $L$ is path connected.
 
 ::: pf-proof
-Let $a_{1}=a_{0}^{+}$, so that $a_{1}\times0\in L$. Two facts about order type are used. A subset of an ordered set that has the order type of $[0,1)$ or of $(0,1)$ carries the order topology of its ordering, and so is homeomorphic to that interval of $\RR$; intervals of $\RR$ are path connected (Theorem 24.1, printed p. 153). Hence by part [](#partc){.pf-ref} each $[a_{0}\times0,\ a\times0)$ with $a>a_{0}$ is homeomorphic to $[0,1)$ and each $\{a\}\times[0,1)$ is homeomorphic to $[0,1)$.
+Let $a_{1}=a_{0}^{+}$, so that $a_{1}\times0\in L$. Two facts about order type are used. A subset of an ordered set that has the order type of $[0,1)$ or of $(0,1)$ carries the order topology of its ordering, and so is homeomorphic to that interval of $\RR$; intervals of $\RR$ are path connected (Theorem 24.1). Hence by part [](#partc){.pf-ref} each $[a_{0}\times0,\ a\times0)$ with $a>a_{0}$ is homeomorphic to $[0,1)$ and each $\{a\}\times[0,1)$ is homeomorphic to $[0,1)$.
 
 First, a point $a_{0}\times t$ with $t\in(0,1)$ can be joined to $a_{1}\times0$ by a path in $L$: both lie in $[a_{0}\times0,\ a_{2}\times0)$ with $a_{2}=a_{1}^{+}$, which has the order type of $[0,1)$ by part [](#partc){.pf-ref} and is path connected.
 

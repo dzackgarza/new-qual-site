@@ -54,7 +54,7 @@ If $C$ is a relation on a set $A$, define a new relation $D$ on $A$ by letting $
 :::
 
 ::: {.solution}
-The argument is transcribed from the published solution of Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.14, printed pp. 35--36 (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts are his. It is checked against Munkres, Topology (2000), §3 Exercise 14.
+The argument is transcribed from the published solution of Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 3.14 (`tmp/sources/munkres-solutions-whitman.pdf`); the three parts are his. It is checked against Munkres, Topology (2000), §3 Exercise 14.
 
 ::: pf
 

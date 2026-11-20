@@ -101,7 +101,7 @@ Prove the following "laws of algebra" for $\RR$, using only axioms (1)--(5):
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.1, printed pp. 38--44** (`tmp/sources/munkres-solutions-whitman.pdf`), which proves the twenty parts in order from axioms (1)--(5) alone, citing the earlier parts as they are established. The steps below are his argument; the statement is Munkres, *Topology* (2000), §4 Exercise 1, printed p. 34, all twenty parts as printed.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.1** (`tmp/sources/munkres-solutions-whitman.pdf`), which proves the twenty parts in order from axioms (1)--(5) alone, citing the earlier parts as they are established. The steps below are his argument; the statement is Munkres, *Topology* (2000), §4 Exercise 1, all twenty parts as printed.
 
 ::: pf
 

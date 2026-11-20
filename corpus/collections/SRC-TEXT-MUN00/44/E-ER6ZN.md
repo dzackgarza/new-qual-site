@@ -110,7 +110,7 @@ audit:
 :::
 
 ::: {.solution}
-Part (a) is the argument of Math StackExchange 74766's answer 74779 (2011), recorded in the audit above, and it is the exercise's own hint; parts (b) and (c) have no published treatment that was located and are the card's own, as the audit records. The book's numbering is §44 Exercise 3, printed p. 275.
+Part (a) is the argument of Math StackExchange 74766's answer 74779 (2011), recorded in the audit above, and it is the exercise's own hint; parts (b) and (c) have no published treatment that was located and are the card's own, as the audit records. The book's numbering is §44 Exercise 3.
 
 ::: pf
 
@@ -118,7 +118,7 @@ Part (a) is the argument of Math StackExchange 74766's answer 74779 (2011), reco
 $\RR$ is $\sigma$-compact, so every continuous image of $\RR$ is a countable union of compact subspaces.
 
 ::: pf-proof
-$\RR=\bigcup_{n\geq1}[-n,n]$, a countable union of compact subspaces. If $g\colon\RR\to Y$ is continuous then $Y=\bigcup_{n\geq1}g([-n,n])$, and each $g([-n,n])$ is compact as the continuous image of a compact space (Theorem 26.5, printed p. 167).
+$\RR=\bigcup_{n\geq1}[-n,n]$, a countable union of compact subspaces. If $g\colon\RR\to Y$ is continuous then $Y=\bigcup_{n\geq1}g([-n,n])$, and each $g([-n,n])$ is compact as the continuous image of a compact space (Theorem 26.5).
 :::
 :::
 
@@ -126,7 +126,7 @@ $\RR=\bigcup_{n\geq1}[-n,n]$, a countable union of compact subspaces. If $g\colo
 $\RR^{\omega}$ with the product topology is not a countable union of compact subspaces.
 
 ::: pf-proof
-Suppose $\RR^{\omega}=\bigcup_{n\geq1}K_{n}$ with each $K_{n}$ compact. The coordinate projection $\pi_{n}(K_{n})$ is compact as the continuous image of a compact space, hence closed and bounded in $\RR$ (Theorem 27.3, printed p. 172), so there is $x_{n}\in\RR-\pi_{n}(K_{n})$. For the point $x=(x_{1},x_{2},\ldots)$ one has $\pi_{n}(x)=x_{n}\notin\pi_{n}(K_{n})$, so $x\notin K_{n}$ for every $n$, contradicting $\RR^{\omega}=\bigcup_{n}K_{n}$.
+Suppose $\RR^{\omega}=\bigcup_{n\geq1}K_{n}$ with each $K_{n}$ compact. The coordinate projection $\pi_{n}(K_{n})$ is compact as the continuous image of a compact space, hence closed and bounded in $\RR$ (Theorem 27.3), so there is $x_{n}\in\RR-\pi_{n}(K_{n})$. For the point $x=(x_{1},x_{2},\ldots)$ one has $\pi_{n}(x)=x_{n}\notin\pi_{n}(K_{n})$, so $x\notin K_{n}$ for every $n$, contradicting $\RR^{\omega}=\bigcup_{n}K_{n}$.
 :::
 :::
 
@@ -142,7 +142,7 @@ Such a surjection would make $\RR^{\omega}=f(\RR)$ a countable union of compact 
 For each $m\geq1$ there is a continuous surjection $q_{m}\colon I\to K_{m}=[-m,m]^{m}\times\{(0,0,\ldots)\}$ with $q_{m}(0)=q_{m}(1)=\mathbf{0}$.
 
 ::: pf-proof
-By [[E-SADP0]] there is a continuous surjection $h_{m}\colon I\to I^{m}$. The map $x\mapsto(2mx_{i}-m)_{i}$ carries $I^{m}$ homeomorphically onto $[-m,m]^{m}$, sending $(0,\ldots,0)$ to $(-m,\ldots,-m)$ and $(1,\ldots,1)$ to $(m,\ldots,m)$; the inclusion $y\mapsto(y,0,0,\ldots)$ of $[-m,m]^{m}$ into $\RR^{\omega}$ is continuous, each of its coordinate functions being a coordinate of $y$ or the constant $0$. So the composite $q_{m}\colon I\to K_{m}$ is a continuous surjection. Reparametrize it: use the first third of $I$ for a straight path from $\mathbf{0}$ to $q_{m}(0)$, the middle third for $q_{m}$ composed with the affine map of $[1/3,2/3]$ onto $I$, and the last third for a straight path from $q_{m}(1)$ to $\mathbf{0}$; the three pieces agree at the two junction points, and the pasting lemma (Theorem 18.3, printed p. 108) makes the result continuous. The added paths end at $\mathbf{0}$, so the reparametrized map is still onto $K_{m}$ and it begins and ends at $\mathbf{0}$.
+By [[E-SADP0]] there is a continuous surjection $h_{m}\colon I\to I^{m}$. The map $x\mapsto(2mx_{i}-m)_{i}$ carries $I^{m}$ homeomorphically onto $[-m,m]^{m}$, sending $(0,\ldots,0)$ to $(-m,\ldots,-m)$ and $(1,\ldots,1)$ to $(m,\ldots,m)$; the inclusion $y\mapsto(y,0,0,\ldots)$ of $[-m,m]^{m}$ into $\RR^{\omega}$ is continuous, each of its coordinate functions being a coordinate of $y$ or the constant $0$. So the composite $q_{m}\colon I\to K_{m}$ is a continuous surjection. Reparametrize it: use the first third of $I$ for a straight path from $\mathbf{0}$ to $q_{m}(0)$, the middle third for $q_{m}$ composed with the affine map of $[1/3,2/3]$ onto $I$, and the last third for a straight path from $q_{m}(1)$ to $\mathbf{0}$; the three pieces agree at the two junction points, and the pasting lemma (Theorem 18.3) makes the result continuous. The added paths end at $\mathbf{0}$, so the reparametrized map is still onto $K_{m}$ and it begins and ends at $\mathbf{0}$.
 :::
 :::
 

@@ -59,7 +59,7 @@ Which are linear continua?
 :::
 
 ::: {.solution}
-A set with the dictionary order is a linear continuum when it has more than one element, has the least upper bound property, and has no consecutive elements: for $x < y$ there is $z$ with $x < z < y$ (Munkres, *Topology* (2000), §24, printed p. 153; the exercise is §24 Exercise 5 on printed p. 158). Elements of a product are written $x \times y$, and $\ZZ_{+} = \theset{1,2,3,\ldots}$.
+A set with the dictionary order is a linear continuum when it has more than one element, has the least upper bound property, and has no consecutive elements: for $x < y$ there is $z$ with $x < z < y$ (Munkres, *Topology* (2000), §24; the exercise is §24 Exercise 5 on printed p. 158). Elements of a product are written $x \times y$, and $\ZZ_{+} = \theset{1,2,3,\ldots}$.
 
 ::: pf
 

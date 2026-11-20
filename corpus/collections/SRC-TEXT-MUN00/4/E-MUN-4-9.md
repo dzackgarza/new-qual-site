@@ -57,7 +57,7 @@ audit:
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.9, printed pp. 60--62** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) is his reduction of a set of integers bounded above to the well-ordering of $\ZZ_+$, and (b)--(d) are built from it in the order the book asks. The statement is Munkres, *Topology* (2000), §4 Exercise 9, printed p. 35.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.9** (`tmp/sources/munkres-solutions-whitman.pdf`); (a) is his reduction of a set of integers bounded above to the well-ordering of $\ZZ_+$, and (b)--(d) are built from it in the order the book asks. The statement is Munkres, *Topology* (2000), §4 Exercise 9.
 
 ::: pf
 

@@ -73,7 +73,7 @@ $p^{-1}(U)$ consists of the pairs $(u,y)$ with $u\in U$, which is the union of t
 For each $y\in Y$ the restriction $p\restriction_{U\times\{y\}}:U\times\{y\}\to U$ is a homeomorphism.
 
 ::: pf-proof
-It is the restriction of the continuous projection, hence continuous, and it is a bijection with inverse $u\mapsto(u,y)$, which is continuous as the map $U\to X\times Y$ whose coordinates are the identity and the constant map $u\mapsto y$ (Theorem 18.4, printed p. 110).
+It is the restriction of the continuous projection, hence continuous, and it is a bijection with inverse $u\mapsto(u,y)$, which is continuous as the map $U\to X\times Y$ whose coordinates are the identity and the constant map $u\mapsto y$ (Theorem 18.4).
 :::
 
 :::

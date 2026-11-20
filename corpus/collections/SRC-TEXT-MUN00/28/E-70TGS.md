@@ -76,7 +76,7 @@ Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is no
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.7, PDF pp. 20--21** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); parts (b), (c) and (d) are theirs, and part (a), which their sheet leaves implicit as the special case, is proved here from (b).
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); parts (b), (c) and (d) are theirs, and part (a), which their sheet leaves implicit as the special case, is proved here from (b).
 
 Throughout, $(X,d)$ is a nonempty compact metric space and $f^{1}=f$, $f^{n+1}=f\circ f^{n}$.
 

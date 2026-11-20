@@ -36,7 +36,7 @@ Show that if $X$ is a well-ordered set, then $X \times [0, 1)$ in the dictionary
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.6, PDF p. 5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the greatest-lower-bound verification written out in its two cases.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs, with the greatest-lower-bound verification written out in its two cases.
 
 Let $X$ be well ordered and let $L=X\times[0,1)$ carry the dictionary order; write $x\times t$ for an element, and let $\pi_{1}$ be the first projection.
 

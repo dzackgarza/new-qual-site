@@ -57,7 +57,7 @@ audit:
 
 ::: {.solution}
 
-The argument for (a) is that of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.3, printed p. 50** (`tmp/sources/munkres-solutions-whitman.pdf`); part (b) is read off the definition of $\ZZ_{+}$ as the intersection of all inductive subsets of $\RR$, with the empty-collection case and the nonemptiness of that family supplied below.
+The argument for (a) is that of **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.3** (`tmp/sources/munkres-solutions-whitman.pdf`); part (b) is read off the definition of $\ZZ_{+}$ as the intersection of all inductive subsets of $\RR$, with the empty-collection case and the nonemptiness of that family supplied below.
 
 A subset $A\subset\RR$ is inductive when $1\in A$ and $x\in A$ implies $x+1\in A$. By definition $\ZZ_{+}$ is the intersection of all inductive subsets of $\RR$.
 

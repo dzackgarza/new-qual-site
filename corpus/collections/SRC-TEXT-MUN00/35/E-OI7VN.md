@@ -54,7 +54,7 @@ Can you define a specific retraction $r: \RR^2 \to C$?
 
 ::: {.solution}
 
-Both parts are those of **Jesper Michael Moller, "Solutions to exercises in Munkres", S35 Exercise 35.7, page 2 of that file** (`tmp/sources/munkres-solutions-poulsen-S35.pdf`), with the composite in (b) written out. The statement was checked against Munkres, *Topology* (2000), §35 Exercise 7, printed p. 224.
+Both parts are those of **Jesper Michael Moller, "Solutions to exercises in Munkres", S35 Exercise 35.7, page 2 of that file** (`tmp/sources/munkres-solutions-poulsen-S35.pdf`), with the composite in (b) written out. The statement was checked against Munkres, *Topology* (2000), §35 Exercise 7.
 
 ::: pf
 

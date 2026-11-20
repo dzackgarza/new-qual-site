@@ -97,7 +97,7 @@ Imbed $Y$ in $[0, 1]^J$.]
 :::
 
 ::: {.solution}
-Part (b) is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S35.pdf, Exercise 35.6, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S35.pdf`, Internet Archive snapshot 20220130234235); part (a) is the card's, since a homeomorphism from the closed copy $Y_0$ extends to $Z$ and postcomposition with its inverse retracts $Z$ onto $Y_0$. It is checked against Munkres, Topology (2000), §35 Exercise 6, printed p. 223, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3. Where the card departs from Moller: he cites Exercise 31.5 for the retract step, which is the equalizer exercise, and the card cites Exercise 35.5(b) instead.
+Part (b) is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S35.pdf, Exercise 35.6, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S35.pdf`, Internet Archive snapshot 20220130234235); part (a) is the card's, since a homeomorphism from the closed copy $Y_0$ extends to $Z$ and postcomposition with its inverse retracts $Z$ onto $Y_0$. It is checked against Munkres, Topology (2000), §35 Exercise 6, with the Tietze theorem (§35), the Tychonoff theorem (§37) and Theorem 32.3. Where the card departs from Moller: he cites Exercise 31.5 for the retract step, which is the equalizer exercise, and the card cites Exercise 35.5(b) instead.
 
 ::: pf
 
@@ -159,7 +159,7 @@ Step [](#extension){.pf-ref} proves the universal extension property for $Y$: ev
 Parts (a) and (b) hold, and only those two implications are proved here.
 
 ::: pf-proof
-Step [](#a){.pf-ref} proves (a) for every normal $Y$, and step [](#b){.pf-ref} proves (b) for a compact absolute retract $Y$. These are the two assertions of the exercise. They are not the two halves of an equivalence for an arbitrary normal $Y$: the converse of (a) without the compactness hypothesis is the starred Exercise 35.8, printed p. 224, and is proved on [[E-Z964O]] by the adjunction-space argument, not here.
+Step [](#a){.pf-ref} proves (a) for every normal $Y$, and step [](#b){.pf-ref} proves (b) for a compact absolute retract $Y$. These are the two assertions of the exercise. They are not the two halves of an equivalence for an arbitrary normal $Y$: the converse of (a) without the compactness hypothesis is the starred Exercise 35.8, and is proved on [[E-Z964O]] by the adjunction-space argument, not here.
 :::
 
 :::

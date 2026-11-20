@@ -67,7 +67,7 @@ If $X$ is Hausdorff, or regular, or normal, or locally compact, or second-counta
 
 ::: {.solution}
 
-No complete published solution of Munkres §31 Exercise 8, printed p. 200, was located; the argument is the card's own, following the hint there to Exercise 13 of §26, and the sets searched are recorded in the audit trail.
+No complete published solution of Munkres §31 Exercise 8, was located; the argument is the card's own, following the hint there to Exercise 13 of §26, and the sets searched are recorded in the audit trail.
 
 Let $G$ be a compact topological group acting continuously on $X$, let $p:X\to X/G$ be the quotient map, and for $S\subset X$ write $G\cdot S=\{g\cdot x:g\in G,\ x\in S\}$.
 
@@ -77,7 +77,7 @@ Let $G$ be a compact topological group acting continuously on $X$, let $p:X\to X
 $p$ is open.
 
 ::: pf-proof
-For $g\in G$ the map $x\mapsto g\cdot x$ is a homeomorphism of $X$, being the restriction of the continuous action to $\{g\}\times X$ with inverse $x\mapsto g^{-1}\cdot x$; so $gU$ is open for open $U$. Hence $p^{-1}\big(p(U)\big)=G\cdot U=\bigcup_{g\in G}gU$ is open, and $p(U)$ is open because $p$ is a quotient map (§22, printed p. 137).
+For $g\in G$ the map $x\mapsto g\cdot x$ is a homeomorphism of $X$, being the restriction of the continuous action to $\{g\}\times X$ with inverse $x\mapsto g^{-1}\cdot x$; so $gU$ is open for open $U$. Hence $p^{-1}\big(p(U)\big)=G\cdot U=\bigcup_{g\in G}gU$ is open, and $p(U)$ is open because $p$ is a quotient map (§22).
 :::
 
 :::
@@ -100,7 +100,7 @@ The map $\Phi:G\times X\to G\times X$, $\Phi(g,x)=(g,g\cdot x)$, is a homeomorph
 $p(C)$ is closed for every closed $C\subset X$.
 
 ::: pf-proof
-$p^{-1}\big(p(C)\big)=G\cdot C$ is closed by step [](#orbit-closed){.pf-ref}, and a quotient map is closed exactly when the image of every closed saturated set is closed (§22, printed p. 137).
+$p^{-1}\big(p(C)\big)=G\cdot C$ is closed by step [](#orbit-closed){.pf-ref}, and a quotient map is closed exactly when the image of every closed saturated set is closed (§22).
 :::
 
 :::

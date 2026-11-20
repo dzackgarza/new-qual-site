@@ -45,7 +45,7 @@ Show that if $f$ is an isometry and $X$ is compact, then $f$ is bijective and he
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.6, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the book's hint as they use it, with the imbedding step and the separating distance as separate steps.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the book's hint as they use it, with the imbedding step and the separating distance as separate steps.
 
 Let $(X,d)$ be compact and let $f:X\to X$ satisfy $d\big(f(x),f(y)\big)=d(x,y)$ for all $x,y$.
 
@@ -55,7 +55,7 @@ Let $(X,d)$ be compact and let $f:X\to X$ satisfy $d\big(f(x),f(y)\big)=d(x,y)$ 
 $f$ is injective and continuous, hence an imbedding of $X$ onto $f(X)$.
 
 ::: pf-proof
-If $f(x)=f(y)$ then $d(x,y)=d(f(x),f(y))=0$, so $x=y$. For continuity, given $\varepsilon>0$ the choice $\delta=\varepsilon$ gives $d(f(x),f(y))=d(x,y)<\delta\Rightarrow<\varepsilon$; and $f^{-1}:f(X)\to X$ is continuous by the same computation, so $f$ is an imbedding (Exercise 21.2, printed p. 136).
+If $f(x)=f(y)$ then $d(x,y)=d(f(x),f(y))=0$, so $x=y$. For continuity, given $\varepsilon>0$ the choice $\delta=\varepsilon$ gives $d(f(x),f(y))=d(x,y)<\delta\Rightarrow<\varepsilon$; and $f^{-1}:f(X)\to X$ is continuous by the same computation, so $f$ is an imbedding (Exercise 21.2).
 :::
 
 :::
@@ -64,7 +64,7 @@ If $f(x)=f(y)$ then $d(x,y)=d(f(x),f(y))=0$, so $x=y$. For continuity, given $\v
 If $f$ were not surjective, there would be $a\in X\setminus f(X)$ and $\varepsilon>0$ with $B_{d}(a,\varepsilon)\cap f(X)=\varnothing$.
 
 ::: pf-proof
-$f(X)$ is compact, being the continuous image of the compact space $X$ (Theorem 26.5, printed p. 166), hence closed in the metric space $X$; a point outside a closed set has positive distance from it, so such an $\varepsilon$ exists.
+$f(X)$ is compact, being the continuous image of the compact space $X$ (Theorem 26.5), hence closed in the metric space $X$; a point outside a closed set has positive distance from it, so such an $\varepsilon$ exists.
 :::
 
 :::
@@ -82,13 +82,13 @@ For $n<m$ the isometry property iterated gives $d(x_{n},x_{m})=d\big(f^{n-1}(a),
 The sequence $(x_{n})$ has no convergent subsequence, contradicting sequential compactness of $X$.
 
 ::: pf-proof
-A convergent subsequence would have its terms eventually within $\varepsilon/2$ of the limit, hence within $\varepsilon$ of each other, contradicting step [](#orbits){.pf-ref}. A compact metric space is sequentially compact (Theorem 28.2, printed p. 181).
+A convergent subsequence would have its terms eventually within $\varepsilon/2$ of the limit, hence within $\varepsilon$ of each other, contradicting step [](#orbits){.pf-ref}. A compact metric space is sequentially compact (Theorem 28.2).
 :::
 
 :::
 
 ::: {.pf-qed}
-$f$ is surjective by step [](#contradiction){.pf-ref} and injective by step [](#imbedding){.pf-ref}, so it is bijective; a continuous bijection from the compact space $X$ to the Hausdorff space $X$ is a homeomorphism (Theorem 26.6, printed p. 167).
+$f$ is surjective by step [](#contradiction){.pf-ref} and injective by step [](#imbedding){.pf-ref}, so it is bijective; a continuous bijection from the compact space $X$ to the Hausdorff space $X$ is a homeomorphism (Theorem 26.6).
 :::
 
 :::

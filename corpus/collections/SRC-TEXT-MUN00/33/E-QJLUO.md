@@ -62,7 +62,7 @@ Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ su
 :::
 
 ::: {.solution}
-The argument is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S33.pdf, Exercise 33.8, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S33.pdf`, Internet Archive snapshot 20200331153844), with one change of detail: where Moller sums the finitely many functions $g_i$ the card takes their maximum, which keeps the values in $[0,1]$ without dividing by the number of terms. It is checked against Munkres, Topology (2000), §33 Exercise 8, printed p. 213, with the definition of complete regularity in §33 and Exercise 18.8 for the continuity of a maximum of finitely many real-valued continuous functions.
+The argument is transcribed from the retained solution of Jesper Michael Moller, *Solutions to exercises in Munkres*, file S33.pdf, Exercise 33.8, page 2 of the file (`tmp/sources/munkres-solutions-poulsen-S33.pdf`, Internet Archive snapshot 20200331153844), with one change of detail: where Moller sums the finitely many functions $g_i$ the card takes their maximum, which keeps the values in $[0,1]$ without dividing by the number of terms. It is checked against Munkres, Topology (2000), §33 Exercise 8, with the definition of complete regularity in §33 and Exercise 18.8 for the continuity of a maximum of finitely many real-valued continuous functions.
 
 ::: pf
 

@@ -53,7 +53,7 @@ Show that $\RR^J$ in the box topology is completely regular.
 
 ::: {.solution}
 
-The argument follows the retained published solution of dbFin, "Section 33: Problem 9 Solution" (`tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-9-solution.txt`, read 2026-11-10): it is enough to separate the origin from the complement of the box neighbourhood $(-1,1)^{J}$, which is the printed hint. The card separates that into steps and supplies what the source leaves unproved, as the audit records: the source asserts that a product of continuous functions is continuous, which is what its coordinatewise affine change of coordinates needs, and the card instead states the map $y\mapsto (y_{\alpha}-x_{\alpha})/\varepsilon_{\alpha}$ and proves that it carries boxes to boxes, so that it is a homeomorphism of the box topology. The statement is Munkres, *Topology* (2000), Section 33 Exercise 9, printed p. 213, with its printed hint.
+The argument follows the retained published solution of dbFin, "Section 33: Problem 9 Solution" (`tmp/sources/dbfin/section-33-the-urysohn-lemma/problem-9-solution.txt`, read 2026-11-10): it is enough to separate the origin from the complement of the box neighbourhood $(-1,1)^{J}$, which is the printed hint. The card separates that into steps and supplies what the source leaves unproved, as the audit records: the source asserts that a product of continuous functions is continuous, which is what its coordinatewise affine change of coordinates needs, and the card instead states the map $y\mapsto (y_{\alpha}-x_{\alpha})/\varepsilon_{\alpha}$ and proves that it carries boxes to boxes, so that it is a homeomorphism of the box topology. The statement is Munkres, *Topology* (2000), Section 33 Exercise 9, with its printed hint.
 
 ::: pf
 
@@ -79,7 +79,7 @@ Since $A$ is closed and $x\notin A$, there is a basis element $\prod_{\alpha}(x_
 The function $g(y)=\sup_{\alpha}\min\theset{\abs{y_{\alpha}},1}$ is continuous for the box topology, with $g(0)=0$ and $g(y)=1$ for $y\notin(-1,1)^{J}$.
 
 ::: pf-proof
-$g$ is the distance from $y$ to $0$ in the uniform metric $\bar\rho$ on $\RR^{J}$, hence is continuous for the uniform topology, i.e. $\bar\rho$-continuous (its inverse image of $[0,t)$ is the ball of radius $t$ about $0$). The uniform topology is coarser than the box topology (§20, printed p. 124), so a function continuous for the uniform topology is continuous for the finer box topology: the box-preimage of an open set is the same set and is box-open. Also $g(0)=0$, and if $y\notin(-1,1)^{J}$ then some coordinate satisfies $\abs{y_{\alpha}}\ge1$, so $g(y)\ge1$ while $g\le1$ always.
+$g$ is the distance from $y$ to $0$ in the uniform metric $\bar\rho$ on $\RR^{J}$, hence is continuous for the uniform topology, i.e. $\bar\rho$-continuous (its inverse image of $[0,t)$ is the ball of radius $t$ about $0$). The uniform topology is coarser than the box topology (§20), so a function continuous for the uniform topology is continuous for the finer box topology: the box-preimage of an open set is the same set and is box-open. Also $g(0)=0$, and if $y\notin(-1,1)^{J}$ then some coordinate satisfies $\abs{y_{\alpha}}\ge1$, so $g(y)\ge1$ while $g\le1$ always.
 :::
 
 :::

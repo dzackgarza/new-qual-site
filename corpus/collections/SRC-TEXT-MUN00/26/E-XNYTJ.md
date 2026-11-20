@@ -57,9 +57,9 @@ If $f$ is continuous, and if the sequence $f_n$ is monotone increasing, and if $
 
 ::: {.solution}
 
-Both parts are **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.10, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the finite subcover of the neighbourhoods on which the first $N_{x}$ terms are already within $\varepsilon$ is that solution's, and the two examples are its choices. Verified here against the book and, for the first example, added to: the functions of Exercise 9 of §21 are defined on all of $\RR$, and the card restricts them to $[0,1]$ and shows that the restriction is *not* monotone increasing, which is the hypothesis this example is meant to drop.
+Both parts are **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the finite subcover of the neighbourhoods on which the first $N_{x}$ terms are already within $\varepsilon$ is that solution's, and the two examples are its choices. Verified here against the book and, for the first example, added to: the functions of Exercise 9 of §21 are defined on all of $\RR$, and the card restricts them to $[0,1]$ and shows that the restriction is *not* monotone increasing, which is the hypothesis this example is meant to drop.
 
-The statement was checked against Munkres, *Topology* (2000), §26 Exercise 10, printed p. 171, with Exercise 9 of §21 on printed p. 134, Theorem 21.5 on printed p. 131 and Theorem 18.1 on printed p. 104. Throughout $X$ is a topological space, $f_{n},f\colon X\to\RR$, convergence is pointwise unless stated, and the sequence $(f_{n})$ is *monotone increasing* when $f_{n}(x)\leq f_{n+1}(x)$ for all $n$ and all $x$, as the exercise defines it; a sequence of functions converges uniformly to $f$ when for each $\varepsilon>0$ some $N$ makes $\abs{f_{n}(x)-f(x)}<\varepsilon$ for every $n\geq N$ and every $x\in X$.
+The statement was checked against Munkres, *Topology* (2000), §26 Exercise 10, with Exercise 9 of §21 on printed p. 134, Theorem 21.5 on printed p. 131 and Theorem 18.1 on printed p. 104. Throughout $X$ is a topological space, $f_{n},f\colon X\to\RR$, convergence is pointwise unless stated, and the sequence $(f_{n})$ is *monotone increasing* when $f_{n}(x)\leq f_{n+1}(x)$ for all $n$ and all $x$, as the exercise defines it; a sequence of functions converges uniformly to $f$ when for each $\varepsilon>0$ some $N$ makes $\abs{f_{n}(x)-f(x)}<\varepsilon$ for every $n\geq N$ and every $x\in X$.
 
 ::: pf
 
@@ -89,7 +89,7 @@ For $\varepsilon>0$ and $x\in X$ there is $N_{x}$ with $f(x)-f_{n}(x)<\varepsilo
 
 ::: pf-proof
 
-The first claim follows from step [](#differences){.pf-ref}: choose $N_{x}$ with $f(x)-f_{N_{x}}(x)<\varepsilon$, and monotonicity extends it to $n\geq N_{x}$. For the second, the map $g\coloneqq f-f_{N_{x}}$ is continuous, being a difference of continuous real-valued functions (Theorem 21.5, printed p. 131), and $g(x)<\varepsilon$; so $x$ lies in the open set $g^{-1}\big((-\infty,\varepsilon)\big)$ (Theorem 18.1), which is the neighbourhood $U_{x}$ wanted.
+The first claim follows from step [](#differences){.pf-ref}: choose $N_{x}$ with $f(x)-f_{N_{x}}(x)<\varepsilon$, and monotonicity extends it to $n\geq N_{x}$. For the second, the map $g\coloneqq f-f_{N_{x}}$ is continuous, being a difference of continuous real-valued functions (Theorem 21.5), and $g(x)<\varepsilon$; so $x$ lies in the open set $g^{-1}\big((-\infty,\varepsilon)\big)$ (Theorem 18.1), which is the neighbourhood $U_{x}$ wanted.
 
 :::
 
@@ -169,7 +169,7 @@ For every $n$ one has $h_{n}(-n)=\arctan(0)=0$, so $\big(h_{n}-\pi/2\big)(-n)=-\
 
 :::: pf-proof
 
-Take $g_{n}$ to be the function of Exercise 9 of §21 (printed p. 134), $g_{n}(x)\coloneqq 1/\big(n^{3}(x-1/n)^{2}+1\big)$, restricted to $X=[0,1]$.
+Take $g_{n}$ to be the function of Exercise 9 of §21 , $g_{n}(x)\coloneqq 1/\big(n^{3}(x-1/n)^{2}+1\big)$, restricted to $X=[0,1]$.
 
 ::: {.pf-step #monotone-example-pointwise}
 

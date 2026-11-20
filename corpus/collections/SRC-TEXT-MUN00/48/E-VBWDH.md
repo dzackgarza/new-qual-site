@@ -63,9 +63,9 @@ Then there is a nonempty open set $U$ of $X$ on which the functions in $\mathcal
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **Arthur Lei Qiu, *MAT 327 Problem Set 4 Solutions* (University of Toronto, 2023), Question 1, Problem 1(b), PDF p. 1** (`tmp/sources/munkres-solutions-mat327-ps6sol.pdf`), restructured into steps; that sheet proves the statement at once for a locally compact Hausdorff space or a complete metric space, of which the exercise is the second case. The empty space is dealt with first, as it must be: the printed hypothesis omits that $X$ is nonempty.
+The argument is the retained published solution, **Arthur Lei Qiu, *MAT 327 Problem Set 4 Solutions* (University of Toronto, 2023), Question 1, Problem 1(b)** (`tmp/sources/munkres-solutions-mat327-ps6sol.pdf`), restructured into steps; that sheet proves the statement at once for a locally compact Hausdorff space or a complete metric space, of which the exercise is the second case. The empty space is dealt with first, as it must be: the printed hypothesis omits that $X$ is nonempty.
 
-Throughout, $X$ is a complete metric space and $\mathcal{F}\subset\mathcal{C}(X,\RR)$ is such that $\mathcal{F}_a=\theset{f(a) \mid f\in\mathcal{F}}$ is bounded for every $a\in X$; the exercise is §48 Exercise 10 (printed p. 299), and the tool is the Baire category theorem, that a compact Hausdorff space or a complete metric space is a Baire space (Theorem 48.2, printed p. 296), a Baire space being one in which every countable collection of closed sets with empty interior has a union with empty interior (the definition of §48, printed p. 294).
+Throughout, $X$ is a complete metric space and $\mathcal{F}\subset\mathcal{C}(X,\RR)$ is such that $\mathcal{F}_a=\theset{f(a) \mid f\in\mathcal{F}}$ is bounded for every $a\in X$; the exercise is §48 Exercise 10 , and the tool is the Baire category theorem, that a compact Hausdorff space or a complete metric space is a Baire space (Theorem 48.2), a Baire space being one in which every countable collection of closed sets with empty interior has a union with empty interior (the definition of §48).
 
 ::: pf
 
@@ -100,7 +100,7 @@ Let $x\in X$. The set $\mathcal{F}_x$ is bounded, so there is $M$ with $\abs{f(x
 Some $A_N$ has nonempty interior.
 
 ::: pf-proof
-Suppose not, that every $A_N$ has empty interior. The family $\{A_N\}$ is countable and consists of closed sets with empty interior, so by the definition of a Baire space its union has empty interior in $X$. But that union is $X$ by step [](#cover){.pf-ref}, and $X$ has nonempty interior in itself because it is nonempty and open; this contradiction shows that some $A_N$ has nonempty interior. Completeness of $X$ is used exactly here, through Theorem 48.2 (printed p. 296).
+Suppose not, that every $A_N$ has empty interior. The family $\{A_N\}$ is countable and consists of closed sets with empty interior, so by the definition of a Baire space its union has empty interior in $X$. But that union is $X$ by step [](#cover){.pf-ref}, and $X$ has nonempty interior in itself because it is nonempty and open; this contradiction shows that some $A_N$ has nonempty interior. Completeness of $X$ is used exactly here, through Theorem 48.2 .
 :::
 
 :::

@@ -38,7 +38,7 @@ Show that $[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.2, PDF p. 18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the infinite subset and both cases are theirs. The statement is Munkres, *Topology* (2000), §28 Exercise 2, printed p. 181.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the infinite subset and both cases are theirs. The statement is Munkres, *Topology* (2000), §28 Exercise 2.
 
 ::: pf
 

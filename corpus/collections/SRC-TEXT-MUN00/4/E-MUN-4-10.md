@@ -58,7 +58,7 @@ Let $b = \sup B$; show that $b^2 = a$.
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.10, printed pp. 63--65** (`tmp/sources/munkres-solutions-whitman.pdf`), whose steps are the card's: the two quadratic estimates, the choice of $h$ in (b), the supremum in (c) and the factorisation in (d). He also says, and the card states, that (b)'s second half must be read with $0<h<x$.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 4.10** (`tmp/sources/munkres-solutions-whitman.pdf`), whose steps are the card's: the two quadratic estimates, the choice of $h$ in (b), the supremum in (c) and the factorisation in (d). He also says, and the card states, that (b)'s second half must be read with $0<h<x$.
 
 ::: pf
 

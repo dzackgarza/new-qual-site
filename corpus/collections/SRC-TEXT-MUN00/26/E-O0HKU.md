@@ -35,7 +35,7 @@ Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdor
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.6, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
 Let $f:X\to Y$ be continuous with $X$ compact and $Y$ Hausdorff, and let $C\subseteq X$ be closed.
 
@@ -45,7 +45,7 @@ Let $f:X\to Y$ be continuous with $X$ compact and $Y$ Hausdorff, and let $C\subs
 $C$ is compact.
 
 ::: pf-proof
-$C$ is a closed subspace of the compact space $X$, and every closed subspace of a compact space is compact (Theorem 26.2, printed p. 165).
+$C$ is a closed subspace of the compact space $X$, and every closed subspace of a compact space is compact (Theorem 26.2).
 :::
 
 :::
@@ -54,7 +54,7 @@ $C$ is a closed subspace of the compact space $X$, and every closed subspace of 
 $f(C)$ is compact.
 
 ::: pf-proof
-$f(C)$ is the image of the compact space $C$ under the continuous map $f\restriction_C$, and the image of a compact space under a continuous map is compact (Theorem 26.5, printed p. 166).
+$f(C)$ is the image of the compact space $C$ under the continuous map $f\restriction_C$, and the image of a compact space under a continuous map is compact (Theorem 26.5).
 :::
 
 :::
@@ -63,7 +63,7 @@ $f(C)$ is the image of the compact space $C$ under the continuous map $f\restric
 $f(C)$ is closed in $Y$.
 
 ::: pf-proof
-Every compact subspace of a Hausdorff space is closed (Theorem 26.3, printed p. 165), and $Y$ is Hausdorff.
+Every compact subspace of a Hausdorff space is closed (Theorem 26.3), and $Y$ is Hausdorff.
 :::
 
 :::

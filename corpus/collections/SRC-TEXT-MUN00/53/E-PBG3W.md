@@ -47,7 +47,7 @@ Show that if $r^{-1}(z)$ is finite for each $z \in Z$, then $p$ is a covering ma
 :::
 
 ::: {.solution}
-The argument follows the published solution **dbFin, "Section 53: Problem 4 Solution"** (Munkres, *Topology*, Section 53, Problem 4), which shrinks an evenly covered neighbourhood of $z$ to a finite intersection of images of evenly covered neighbourhoods upstairs; the implicit slice identity is stated below. The exercise is Munkres, *Topology* (2000), Section 53 Exercise 4, printed p. 341, and the definition of a covering map is on printed p. 336.
+The argument follows the published solution **dbFin, "Section 53: Problem 4 Solution"** (Munkres, *Topology*, Section 53, Problem 4), which shrinks an evenly covered neighbourhood of $z$ to a finite intersection of images of evenly covered neighbourhoods upstairs; the implicit slice identity is stated below. The exercise is Munkres, *Topology* (2000), Section 53 Exercise 4, and the definition of a covering map is on printed p. 336.
 
 ::: pf
 

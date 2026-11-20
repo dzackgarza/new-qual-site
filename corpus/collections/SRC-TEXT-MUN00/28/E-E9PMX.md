@@ -47,7 +47,7 @@ Show that $X$ is countably compact if and only if every nested sequence $C_1 \su
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.5, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both directions are theirs. Recall that $X$ is countably compact when every countable open cover of $X$ has a finite subcover.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both directions are theirs. Recall that $X$ is countably compact when every countable open cover of $X$ has a finite subcover.
 
 ::: pf
 

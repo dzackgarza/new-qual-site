@@ -127,8 +127,7 @@ $$
 $$
 so that $\rho(I)=R$, $\lambda(I)=L$, $\rho(0)=\lambda(0)=y_2$ and
 $\rho(1)=\lambda(1)=y_1$. Let $X=A\cup B$ be the figure eight, the union of two
-circles of $\RR^2$ whose intersection is the single point $x_0$ (Lemma 60.5,
-printed p. 373), and let $\alpha,\beta:I\to X$ be loops with $\alpha(I)=A$ and
+circles of $\RR^2$ whose intersection is the single point $x_0$ (Lemma 60.5), and let $\alpha,\beta:I\to X$ be loops with $\alpha(I)=A$ and
 $\beta(I)=B$, each injective off the endpoints and carrying $0$ and $1$ to $x_0$;
 such loops exist, a circle being a continuous image of $I$ that identifies the two
 endpoints.

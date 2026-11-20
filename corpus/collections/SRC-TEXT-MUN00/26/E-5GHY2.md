@@ -35,7 +35,7 @@ Show that if $Y$ is compact, then the projection $\pi_1: X \times Y \to X$ is a 
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.7, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the tube-lemma argument is theirs, with the two inclusions separated below.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the tube-lemma argument is theirs, with the two inclusions separated below.
 
 Let $Y$ be compact and let $C\subseteq X\times Y$ be closed.
 
@@ -54,7 +54,7 @@ $N$ is the complement of a closed set, hence open. If $(x_{0},y)\in C$ for some 
 There is a neighbourhood $W$ of $x_{0}$ in $X$ with $W\times Y\subseteq N$.
 
 ::: pf-proof
-$Y$ is compact, so the tube lemma (Lemma 26.8, printed p. 168) applies to the open set $N$ containing the slice $\{x_{0}\}\times Y$ and yields a neighbourhood $W$ of $x_{0}$ with $W\times Y\subseteq N$.
+$Y$ is compact, so the tube lemma (Lemma 26.8) applies to the open set $N$ containing the slice $\{x_{0}\}\times Y$ and yields a neighbourhood $W$ of $x_{0}$ with $W\times Y\subseteq N$.
 :::
 
 :::

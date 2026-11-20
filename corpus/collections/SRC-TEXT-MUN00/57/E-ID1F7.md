@@ -57,12 +57,12 @@ Prove the following "theorem of meteorology": at any given moment in time, there
 :::
 
 ::: {.solution}
-The exercise is §57 Exercise 1, printed p. 359. The proof is transcribed from
+The exercise is §57 Exercise 1. The proof is transcribed from
 Harvard Math 131 (2000--01), Solution Set 10, item 9.57.1, the first page of the
 set, held at `tmp/sources/harvard131-soln10.md`: model the earth by $S^2$, take
 the temperature $t(p)$ and the barometric pressure $b(p)$ at a point $p$, note
 that $p\mapsto(t(p),b(p))$ is a continuous map of $S^2$ into $\RR^2$, and apply
-the Borsuk--Ulam theorem (Theorem 57.3, printed p. 358). The one hypothesis the
+the Borsuk--Ulam theorem (Theorem 57.3). The one hypothesis the
 argument uses and the exercise leaves to the reader is that both quantities vary
 continuously over the surface at the fixed moment; the solution states it.
 
@@ -74,7 +74,7 @@ $F=(t,b):S^2\to\RR^2$ is continuous.
 ::: pf-proof
 By hypothesis $t$ and $b$ are continuous real-valued functions on $S^2$, so
 $F$ is continuous because a map into a product is continuous exactly when its
-coordinate functions are (Theorem 18.4, printed p. 110).
+coordinate functions are (Theorem 18.4).
 :::
 
 :::
@@ -84,8 +84,8 @@ There is $x\in S^2$ with $F(x)=F(-x)$.
 
 ::: pf-proof
 $F$ is a continuous map of $S^2$ into $\RR^2$, so the Borsuk--Ulam theorem for
-$S^2$ (Theorem 57.3, printed p. 358) supplies such an $x$; the point $-x$ is
-the antipode of $x$ in the sense of the definition opening §57, printed p. 356.
+$S^2$ (Theorem 57.3) supplies such an $x$; the point $-x$ is
+the antipode of $x$ in the sense of the definition opening §57.
 :::
 
 :::

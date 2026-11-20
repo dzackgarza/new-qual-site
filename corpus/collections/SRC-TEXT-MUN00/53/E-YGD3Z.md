@@ -71,7 +71,7 @@ Let $p: E \to B$ be a covering map.
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 53: Problem 6 Solution", for the four separation properties of part (a) and for the compactness of part (b), following the book's own hint. The exercise is Munkres, *Topology* (2000), Section 53, Exercise 6, printed p. 341; its hint uses Lemma 31.1, printed p. 196, Theorem 18.2(f), printed p. 107, Theorem 29.2, printed p. 185, and Theorem 33.2, printed p. 211. Throughout, $p\colon E\to B$ is a covering map; an evenly covered open set $U\subset B$ has $p^{-1}(U)$ partitioned into slices, each mapped homeomorphically onto $U$ by $p$, and a slice $V$ over $U$ means an open set with $p(V)=U$ on which $p$ is a homeomorphism (Munkres, printed p. 336).
+The argument is that of the published solution of dbFin, "Section 53: Problem 6 Solution", for the four separation properties of part (a) and for the compactness of part (b), following the book's own hint. The exercise is Munkres, *Topology* (2000), Section 53, Exercise 6; its hint uses Lemma 31.1, Theorem 18.2(f), Theorem 29.2, and Theorem 33.2. Throughout, $p\colon E\to B$ is a covering map; an evenly covered open set $U\subset B$ has $p^{-1}(U)$ partitioned into slices, each mapped homeomorphically onto $U$ by $p$, and a slice $V$ over $U$ means an open set with $p(V)=U$ on which $p$ is a homeomorphism (Munkres, printed p. 336).
 
 ::: pf
 
@@ -105,7 +105,7 @@ Let $e\in E$ and let $O$ be an open neighbourhood of $e$. Choose a slice $V$ ove
 $$
 \overline N\subset V\cap p^{-1}(\overline W)\subset V\subset O .
 $$
-The middle containment uses the hint: $\overline W$ is closed in $B$ and lies in $U$, so $p^{-1}(\overline W)\cap V$ is a closed set of $E$, and it contains $N$, whence it contains $\overline N$; and $p^{-1}(\overline W)\cap V\subset p^{-1}(U)\cap V=V$ because $V$ lies over $U$. So every neighbourhood of a point contains the closure of a neighbourhood, and $E$ has closed one-point sets by step [](#hausdorff){.pf-ref}; with those two, Lemma 31.1(a) (printed p. 196) makes $E$ regular.
+The middle containment uses the hint: $\overline W$ is closed in $B$ and lies in $U$, so $p^{-1}(\overline W)\cap V$ is a closed set of $E$, and it contains $N$, whence it contains $\overline N$; and $p^{-1}(\overline W)\cap V\subset p^{-1}(U)\cap V=V$ because $V$ lies over $U$. So every neighbourhood of a point contains the closure of a neighbourhood, and $E$ has closed one-point sets by step [](#hausdorff){.pf-ref}; with those two, Lemma 31.1(a)  makes $E$ regular.
 
 :::
 
@@ -137,7 +137,7 @@ $V-N$ is closed in $V$, and there is a continuous $\varphi\colon V\to[0,1]$ with
 
 ::: pf-proof
 
-$N$ is open in $E$, so $E-N$ is closed in $E$, and $V-N=V\cap(E-N)$ is closed in the subspace $V$. The slice $V$ is homeomorphic to $U$, a subspace of the completely regular space $B$, and a subspace of a completely regular space is completely regular (Theorem 33.2, printed p. 211); so $V$ is completely regular, and applying it to the point $e$ and the closed set $V-N$, which does not contain $e$, gives such a $\varphi$, with the values $0$ and $1$ interchanged, which the remark on printed p. 211 allows.
+$N$ is open in $E$, so $E-N$ is closed in $E$, and $V-N=V\cap(E-N)$ is closed in the subspace $V$. The slice $V$ is homeomorphic to $U$, a subspace of the completely regular space $B$, and a subspace of a completely regular space is completely regular (Theorem 33.2); so $V$ is completely regular, and applying it to the point $e$ and the closed set $V-N$, which does not contain $e$, gives such a $\varphi$, with the values $0$ and $1$ interchanged, which the remark on printed p. 211 allows.
 
 :::
 
@@ -149,7 +149,7 @@ $\Phi\colon E\to[0,1]$, defined by $\Phi\coloneqq\varphi$ on $V$ and $\Phi\colon
 
 ::: pf-proof
 
-The sets $V$ and $E-\overline N$ are open: $V$ is a slice, and $\overline N$ is closed. They cover $E$, because $\overline N\subset V$ by step [](#neighbourhood){.pf-ref}. Their intersection is $V\cap(E-\overline N)=V-\overline N$, which lies in $V-N$, so $\varphi=1$ there by step [](#function){.pf-ref}: the restriction of $\Phi$ to $V$ is $\varphi$ and its restriction to $E-\overline N$ is the constant $1$, and the two agree on the overlap. A map continuous on each member of an open cover of its domain is continuous (Theorem 18.2(f), printed p. 107), so $\Phi$ is continuous. Finally $\Phi(e)=\varphi(e)=0$ because $e\in V$, and $\Phi=1$ on $F$ because $F\cap\overline N=\varnothing$ by step [](#neighbourhood){.pf-ref}, so $F\subset E-\overline N$.
+The sets $V$ and $E-\overline N$ are open: $V$ is a slice, and $\overline N$ is closed. They cover $E$, because $\overline N\subset V$ by step [](#neighbourhood){.pf-ref}. Their intersection is $V\cap(E-\overline N)=V-\overline N$, which lies in $V-N$, so $\varphi=1$ there by step [](#function){.pf-ref}: the restriction of $\Phi$ to $V$ is $\varphi$ and its restriction to $E-\overline N$ is the constant $1$, and the two agree on the overlap. A map continuous on each member of an open cover of its domain is continuous (Theorem 18.2(f)), so $\Phi$ is continuous. Finally $\Phi(e)=\varphi(e)=0$ because $e\in V$, and $\Phi=1$ on $F$ because $F\cap\overline N=\varnothing$ by step [](#neighbourhood){.pf-ref}, so $F\subset E-\overline N$.
 
 :::
 
@@ -165,7 +165,7 @@ If $B$ is locally compact Hausdorff, then $E$ is locally compact.
 
 ::: pf-proof
 
-Let $e\in E$ and choose a slice $V$ over an open $U$ with $e\in V$. By local compactness of $B$ at $p(e)$ and Theorem 29.2 (printed p. 185) there is an open $W$ with $p(e)\in W$ and $\overline W$ compact and $\overline W\subset U$. Then $V\cap p^{-1}(\overline W)$ is homeomorphic to $\overline W$, hence compact, and it contains the open neighbourhood $V\cap p^{-1}(W)$ of $e$. So $E$ is locally compact at each point, and it is Hausdorff by step [](#hausdorff){.pf-ref}.
+Let $e\in E$ and choose a slice $V$ over an open $U$ with $e\in V$. By local compactness of $B$ at $p(e)$ and Theorem 29.2  there is an open $W$ with $p(e)\in W$ and $\overline W$ compact and $\overline W\subset U$. Then $V\cap p^{-1}(\overline W)$ is homeomorphic to $\overline W$, hence compact, and it contains the open neighbourhood $V\cap p^{-1}(W)$ of $e$. So $E$ is locally compact at each point, and it is Hausdorff by step [](#hausdorff){.pf-ref}.
 
 :::
 

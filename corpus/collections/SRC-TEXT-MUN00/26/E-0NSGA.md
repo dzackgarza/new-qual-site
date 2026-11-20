@@ -52,7 +52,7 @@ Show that if $G/H$ is compact, then $G$ is compact.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.13, PDF p. 15** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); parts (b) and (c) are transcribed from it as they stand. Its one sentence for (a) separates $A$ from $c\cdot B^{-1}$ by Exercise 26.5, which requires *both* subspaces compact, whereas $A$ is only closed; step [](#a-tube){.pf-ref} runs the book's hint instead and separates the two sets directly by the tube lemma.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); parts (b) and (c) are transcribed from it as they stand. Its one sentence for (a) separates $A$ from $c\cdot B^{-1}$ by Exercise 26.5, which requires *both* subspaces compact, whereas $A$ is only closed; step [](#a-tube){.pf-ref} runs the book's hint instead and separates the two sets directly by the tube lemma.
 
 Let $G$ be a topological group with identity $e$, and put $A\cdot B=\theset{a\cdot b\mid a\in A,\ b\in B}$ and $B^{-1}=\theset{b^{-1}\mid b\in B}$.
 
@@ -62,7 +62,7 @@ Let $G$ be a topological group with identity $e$, and put $A\cdot B=\theset{a\cd
 If $B\subseteq G$ is compact then $g\cdot B$ and $B^{-1}$ are compact, and $(x,y)\mapsto x\cdot y^{-1}$ is continuous; also $G$ is Hausdorff.
 
 ::: pf-proof
-Multiplication $m:G\times G\to G$ and inversion $\iota:G\to G$ are continuous, so $m\circ(\mathrm{id}\times\iota)$ is continuous, which is $(x,y)\mapsto x\cdot y^{-1}$. Left translation $h\mapsto g\cdot h$ is a homeomorphism with inverse $h\mapsto g^{-1}\cdot h$, and inversion is its own inverse homeomorphism, so $g\cdot B$ and $B^{-1}$ are continuous images of the compact space $B$, hence compact (Theorem 26.5, printed p. 166). A topological group is Hausdorff (Supplementary Exercise TG.7(b), printed p. 146).
+Multiplication $m:G\times G\to G$ and inversion $\iota:G\to G$ are continuous, so $m\circ(\mathrm{id}\times\iota)$ is continuous, which is $(x,y)\mapsto x\cdot y^{-1}$. Left translation $h\mapsto g\cdot h$ is a homeomorphism with inverse $h\mapsto g^{-1}\cdot h$, and inversion is its own inverse homeomorphism, so $g\cdot B$ and $B^{-1}$ are continuous images of the compact space $B$, hence compact (Theorem 26.5). A topological group is Hausdorff (Supplementary Exercise TG.7(b)).
 :::
 
 :::
@@ -76,7 +76,7 @@ Multiplication $m:G\times G\to G$ and inversion $\iota:G\to G$ are continuous, s
 For $c\notin A\cdot B$ there is a neighbourhood $W$ of $c$ with $W\cdot B^{-1}\cap A=\varnothing$.
 
 ::: pf-proof
-Let $\Omega=\theset{(g,b)\in G\times B \mid g\cdot b^{-1}\notin A}$. It is open in $G\times B$, being the preimage of the open set $G\setminus A$ under the continuous map $(g,b)\mapsto g\cdot b^{-1}$ of step [](#compact-images){.pf-ref}, and it contains the slice $\{c\}\times B$: if $c\cdot b^{-1}\in A$ for some $b\in B$, then $c=(c\cdot b^{-1})\cdot b\in A\cdot B$, contrary to the choice of $c$. As $B$ is compact, the tube lemma (Lemma 26.8, printed p. 168) applies to $\Omega$ in $G\times B$ and gives a neighbourhood $W$ of $c$ with $W\times B\subseteq\Omega$, that is $W\cdot B^{-1}\subseteq G\setminus A$.
+Let $\Omega=\theset{(g,b)\in G\times B \mid g\cdot b^{-1}\notin A}$. It is open in $G\times B$, being the preimage of the open set $G\setminus A$ under the continuous map $(g,b)\mapsto g\cdot b^{-1}$ of step [](#compact-images){.pf-ref}, and it contains the slice $\{c\}\times B$: if $c\cdot b^{-1}\in A$ for some $b\in B$, then $c=(c\cdot b^{-1})\cdot b\in A\cdot B$, contrary to the choice of $c$. As $B$ is compact, the tube lemma (Lemma 26.8) applies to $\Omega$ in $G\times B$ and gives a neighbourhood $W$ of $c$ with $W\times B\subseteq\Omega$, that is $W\cdot B^{-1}\subseteq G\setminus A$.
 :::
 
 :::
@@ -107,7 +107,7 @@ Let $A\subseteq G$ be closed. By step [](#part-a){.pf-ref} with $B=H$ compact, $
 (c) If $H$ is a compact subgroup and $G/H$ is compact, then $G$ is compact.
 
 ::: pf-proof
-By step [](#part-b){.pf-ref} the quotient map $p$ is closed; it is continuous and surjective, and for $x\in G$ the fibre $p^{-1}\big(\{xH\}\big)=xH$ is a homeomorphic image of $H$ under left translation, hence compact (Supplementary Exercise TG.4, printed p. 145, and step [](#compact-images){.pf-ref}). So $p$ is a perfect map, and Exercise 26.12 (printed p. 172) gives that $G$ is compact because $G/H$ is.
+By step [](#part-b){.pf-ref} the quotient map $p$ is closed; it is continuous and surjective, and for $x\in G$ the fibre $p^{-1}\big(\{xH\}\big)=xH$ is a homeomorphic image of $H$ under left translation, hence compact (Supplementary Exercise TG.4, and step [](#compact-images){.pf-ref}). So $p$ is a perfect map, and Exercise 26.12  gives that $G$ is compact because $G/H$ is.
 :::
 
 :::

@@ -41,7 +41,7 @@ What happens if $X$ equals $[0, 1)$ or $(0, 1)$?
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.3, PDF p. 4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the fixed-point argument and both counterexamples are theirs, with the second counterexample written with its formula. The statement is Munkres, *Topology* (2000), §24 Exercise 3, printed p. 158.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the fixed-point argument and both counterexamples are theirs, with the second counterexample written with its formula. The statement is Munkres, *Topology* (2000), §24 Exercise 3.
 
 ::: pf
 
