@@ -9862,3 +9862,22 @@ check` on the card alone. Page numbers are the printed folios.
 
 That is 58 cards: 16 repaired in 18 commits, 42 read correct with no change. §4.2's 39 cards are not listed here
 and are not this stream's reading; `E-HAT-4.2-32` and the rest belong to lane hlg7.
+
+## 2026-11-20, #179: eleven named theorems and three notions on the prelim and applied-algebra wiki pages have no card to link
+
+**Object and need:** the theorems named on `wiki/prelim/counterexamples.md`, `wiki/prelim/which-technique.md` and the five `wiki/applied-algebra/` pages, which #179 reads under THEOREM-01, XREF-5 and CITE-8. Each needs a card whose statement block states it, so that the page links or transcludes the statement instead of writing a paraphrase beside the name.
+
+**Observed evidence:** an index of every card under `corpus/` (14,410 files) by `id:`, `title:` and statement block, statement blocks only — solutions, proofs, `pf-step` and `pf-proof` excluded — matched against each theorem's name, and every candidate opened and read.
+
+Linked, because the card states the theorem: Darboux's theorem P-BKF15-3A (the general property; P-MMAQ-RML5AHHINX states only the instance $f'(x_0)=2$); Lebesgue's criterion PR-TDH2A; Green's theorem T-4M73O; Buchberger's criterion P-APA17G; Hilbert's Nullstellensatz T-JRTS2; the Hilbert basis theorem T-YYLPH; Hilbert finiteness for $k[V]^G$ P-PUS07; the singular value decomposition P-U547U; the Cholesky factorization P-BKF20-6A; the QR decomposition P-BKS83-11; the Gershgorin disc inclusion P-APAS24B; the Courant--Fischer characterization P-UCLAB10S-02; the Littlewood--Richardson rule P-APASP08I (in the solution, not the statement); the Reynolds operator P-APAS18D.
+
+Not linked, because no card states them, and the page states the result instead: Riemann's rearrangement theorem, the divergence theorem, l'Hôpital's rule, Dickson's lemma, Noether's degree bound, Molien's formula, Gelfand's formula for the spectral radius, the Jacobi--Trudi identity, the Frobenius characteristic map, the Frobenius--Schur indicator, and the hook length formula; and, as notions with no definition card, positive definiteness, normality, and Gröbner basis (P-HCAO28 defines the last inside a solution).
+**Searched:** the statement blocks of every card under `corpus/collections`, `corpus/theory` and `corpus/problems`, for the name and for the formula — "Gelfand" occurs in no card; "Frobenius" and "Schur" never occur together; "Trudi" occurs in three cards, each inside a proof; "hook length" occurs in two, each inside a solution; "Molien" occurs only as an instruction to use it.
+**Found:** the fourteen cards named above.
+**Conclusion:** the eleven theorems have no stating card and the three notions have no definition card.
+**Confidence:** high for absence as a statement; the formulas do occur inside solutions, which is not a stating occurrence.
+**Gaps:** `build/catalog.sqlite` lists a card `T-JH6VL` titled "Green's theorem" with no file under `corpus/`, so the index is stale; it does not affect the list above, which is read from the files.
+
+**Impact and owner:** the pages of the three subtrees state these results without a link, and `wiki/prelim/counterexamples.md` no longer carries the rearrangement theorem at all. Where the argument is one line the page carries it — Dickson's lemma in the termination of Buchberger's algorithm, Gelfand's limit in the norms section, the trace and determinant identities. A card that states any item makes its page linkable in one edit.
+
+**Repair:** card authoring in the `applied-algebra` and `prelim` areas, one theorem or definition card per item, after which the page sentence is replaced by a link to it.
