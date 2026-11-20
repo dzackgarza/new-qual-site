@@ -9,7 +9,6 @@ topics:
 # Banach and Hilbert spaces
 
 Recall that a [[D-BG455|Banach space]] is a normed space that is complete in its norm, and a [[D-7QQUO|Hilbert space]] is an inner product space that is complete in the norm $\norm x\coloneqq\inner xx^{1/2}$; every Hilbert space is a Banach space.
-In a Hilbert space $H$, closed subspaces have orthogonal complements and orthogonal projections.
 
 [[PR-L35O7]]
 
@@ -24,7 +23,7 @@ In a Hilbert space $H$, closed subspaces have orthogonal complements and orthogo
 [[T-J3AN3]]
 
 ::: {.proposition title="Parallelogram law"}
-A norm on a vector space is induced by an inner product if and only if it satisfies $\norm{x+y}^2+\norm{x-y}^2 = 2\norm x^2+2\norm y^2$ for all $x, y$.
+A norm on a vector space is induced by an inner product if and only if it satisfies $\norm{x+y}^2+\norm{x-y}^2 = 2\norm x^2+2\norm y^2$ for all $x, y$ [@Rud74, ch. 4].
 
 :::
 
