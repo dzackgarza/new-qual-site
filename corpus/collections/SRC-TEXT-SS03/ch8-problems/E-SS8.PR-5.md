@@ -64,6 +64,10 @@ Let $\{r_n\}_{n=1}^{\infty}$ be a bounded sequence of positive numbers and let $
 For related results in the unit disc, see Problems 1 and 2 in Chapter 5.
 :::
 
+::: {.remark}
+Chapter 8 sets its asterisks before Problems 3, 4, 6, 7, 8 and 9 only, so none stands before Problem 5.
+:::
+
 ::: {.solution}
 
 Let $\HH$ be the upper half-plane and $\varphi(z)=\dfrac{z-i}{z+i}$, a biholomorphism of $\HH$ onto the unit disc $\DD$ with inverse $\varphi^{-1}(w)=i\dfrac{1+w}{1-w}$. For $r>0$,
