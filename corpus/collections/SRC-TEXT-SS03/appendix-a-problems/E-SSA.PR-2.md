@@ -134,6 +134,32 @@ audit:
     proof of Theorem 2.3. Checked in the retained book: Appendix A, Theorem 2.3 and its proof;
     Chapter 6, Exercise 1, Theorem 1.4 and Lemma 1.2. No problem statement changed and no citation
     changed except the one in item (3).
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two items of the #172 reader's report at `437a029321` repaired; the choice $M=\max(N,2)$, the
+    citation of Chapter 6, Exercise 1, the provenance markings and every other citation are
+    unchanged. (1) Step `left` no longer infers a lower bound for the polynomial $\Psi_N$ from
+    continuity: the report is right that "$F$ having no zeros" bounds $F(-s)$ only, and
+    $\Psi_N(-1/s)$ may vanish on the compact remainder, so the reciprocal estimate did not follow.
+    The step now sets $A_N=\sum_j\abs{a_j}$ in the preamble, chooses $R_N\ge4+2A_N$ so large that
+    the remainder of step `right` at $-s$ is at most $1/4$, and proves $\abs{\Psi_N(-1/s)-1}\le
+    A_N/\abs{s}\le\frac12$ and $\abs{F(-s)}\ge\frac14$ uniformly on the whole set
+    $\{\Re(s)\le0,\ \abs{s}\ge R_N\}$; the split into an infinity argument and a compact remainder,
+    and with it the appeal to continuity, is gone, and steps `identify` and the final qed now use
+    $R_N$ in place of $4$. The published sentence "Apply the Euler--Maclaurin formula to
+    $\log\Gamma(s)$ in the fixed sector $S_\delta$" is quoted at the step's head and the step says
+    that it asserts the sectorial expansion without a word about the reciprocal of $\Psi_N$, so the
+    bound is the card's own. (2) The logarithmic identity is no longer carried from $(0,\infty)$ to
+    $\Re(s)>0$ "by continuity": the step defines $L_n(s)=\log n!+s\Log n-\sum_k\Log(s+k)$, shows
+    $L_{n+1}-L_n=s/(n(n+1))+O(\abs{s}^2/n^2)$ so that $L=\lim L_n$ is holomorphic, obtains
+    $e^L=\Gamma$ from Chapter 6, Exercise 1 -- hence $\Gamma$ has no zeros on the half-plane and a
+    branch of $\log\Gamma$ exists there -- and concludes from agreement on the open set
+    $(0,\infty)$ by the identity theorem, Corollary 4.9 of Chapter 2. Read in the retained book for
+    this pass: Chapter 2, Theorem 4.8 and Corollary 4.9; Chapter 6, Exercise 1, which states the
+    Euler limit for $s\ne0,-1,-2,\ldots$; and Wang's Appendix A, Problem 2 solution. The $A_N$ and
+    $R_N$ bound, the normal-convergence estimate and the continuation are the card's own.
 ---
 
 ::: {.exercise}
@@ -171,7 +197,7 @@ where $a_0=1$ and, for $N\ge1$, the numbers $a_1,\ldots,a_N$ are those of the Ta
 $$
 \exp\Bigl(\sum_{k=1}^{N}c_ku^{2k-1}\Bigr)=\sum_{j=0}^{N}a_ju^{j}+O\bigl(\abs{u}^{N+1}\bigr)\qquad(u\to0),
 $$
-so $a_j$ depends only on $c_1,\ldots,c_j$. Finally $F(s)\coloneqq\sqrt{s/(2\pi)}\,\Gamma(s)e^{-s\Log s+s}$, which is meromorphic on $\CC\setminus(-\infty,0]$, with poles at the non-positive integers and no zeros.
+so $a_j$ depends only on $c_1,\ldots,c_j$. For $N\ge1$ put $A_N\coloneqq\sum_{j=1}^{N}\abs{a_j}$, so that $\abs{\Psi_N(u)-1}\le A_N\abs{u}$ whenever $\abs{u}\le1$. Finally $F(s)\coloneqq\sqrt{s/(2\pi)}\,\Gamma(s)e^{-s\Log s+s}$, which is meromorphic on $\CC\setminus(-\infty,0]$, with poles at the non-positive integers and no zeros.
 
 ::: pf
 
@@ -231,10 +257,20 @@ $$
 $$
 and $\abs{R'_n}\le\frac{\abs{B_{2M}}}{2M(2M-1)}$ for every $n$, so $R'_n$ tends to the constant $R'_\infty=\frac1{2M}\int_1^\infty P_{2M}(x)x^{-2M}dx$.
 
-For $\Re(s)>0$, Exercise 1 of Chapter 6 gives $\Gamma(s)=\lim_{n\to\infty}n!\,n^s/\bigl(s(s+1)\cdots(s+n)\bigr)$, and taking logarithms of the positive quantities for real $s>0$, then extending by continuity, gives
+For $\Re(s)>0$, Exercise 1 of Chapter 6 gives $\Gamma(s)=\lim_{n\to\infty}n!\,n^s/\bigl(s(s+1)\cdots(s+n)\bigr)$. For real $s>0$ every factor is positive, so taking logarithms there gives
 $$
-\log\Gamma(s)=\lim_{n\to\infty}\Bigl(\log n!+s\log n-\sum_{k=0}^{n}\log(s+k)\Bigr).
+\log\Gamma(s)=\lim_{n\to\infty}\Bigl(\log n!+s\log n-\sum_{k=0}^{n}\log(s+k)\Bigr)
+\tag{$\dagger$}
 $$
+on $(0,\infty)$, with the real logarithm on the left. Carrying $(\dagger)$ from $(0,\infty)$ to the half-plane is an analytic continuation, not a continuity argument, and runs as follows. Write
+$$
+L_n(s)\coloneqq\log n!+s\Log n-\sum_{k=0}^{n}\Log(s+k)\qquad(n\ge1),
+$$
+holomorphic on $\Re(s)>0$ because $\Re(s+k)>0$ there. Its increments are, for $\abs{s/(n+1)}\le\frac12$,
+$$
+L_{n+1}(s)-L_n(s)=\log(n+1)+s\Log\Bigl(1+\frac1n\Bigr)-\Log(s+n+1)=s\Log\Bigl(1+\frac1n\Bigr)-\Log\Bigl(1+\frac{s}{n+1}\Bigr)=\frac{s}{n(n+1)}+O\Bigl(\frac{\abs{s}^2}{n^2}\Bigr),
+$$
+the last equality because $\Log(1+w)=w+O(\abs{w}^2)$ for $\abs{w}\le\frac12$; for $\abs{s}\le\rho$ the $O$-constant is uniform once $n+1\ge2\rho$, so $\sum_n\abs{L_{n+1}-L_n}$ converges uniformly on every compact subset of $\Re(s)>0$ and $L\coloneqq\lim_{n\to\infty}L_n$ is holomorphic there. Since $e^{L_n(s)}=n!\,n^s/\bigl(s(s+1)\cdots(s+n)\bigr)$, Exercise 1 of Chapter 6 gives $e^{L(s)}=\Gamma(s)$, so $\Gamma$ has no zeros on $\Re(s)>0$ and $L$ is a branch of $\log\Gamma$ there. The half-plane is simply connected, so a holomorphic branch of $\log\Gamma$ on it exists, and it is unique once its value at one point of $(0,\infty)$ is fixed: any two branches differ by a constant in $2\pi i\ZZ$. Both sides of $(\dagger)$ are therefore holomorphic on $\Re(s)>0$ -- the right side is $L$, the left side the branch of $\log\Gamma$ that is real on $(0,\infty)$ -- and they agree on the open set $(0,\infty)$, where each is the real logarithm, $L$ because every $L_n$ is real there and $e^{L}=\Gamma>0$. Hence by the identity theorem, Corollary 4.9 of Chapter 2, they agree on the whole connected half-plane, which is $(\dagger)$ for $\Re(s)>0$.
 Substituting the two displays above and using $(s+n)\log(s+n)=(s+n)\log n+(s+n)\log(1+s/n)$, the terms $n\log n$, $n$ and $s\log n$ cancel, and the bracket equals
 $$
 -(s+n)\log\Bigl(1+\frac sn\Bigr)+s\Log s+1-\frac12\Log s-\frac12\log\Bigl(1+\frac sn\Bigr)-\sum_{r=1}^{M}c_r+\sum_{r=1}^{M}c_rs^{1-2r}
@@ -356,18 +392,28 @@ and $2\sin\pi s=(e^{i\pi s}-e^{-i\pi s})/i$ gives $\frac{ie^{-i\pi s}}{2\sin\pi 
 :::
 
 ::: {.pf-step #left}
-For $s\in S_\delta$ with $\Re(s)<0$ and $\abs{s}\ge4$, and for every integer $N\ge1$,
+For every integer $N\ge1$ there is a constant $R_N\ge4+2A_N$, depending only on $N$, such that for $s\in S_\delta$ with $\Re(s)<0$ and $\abs{s}\ge R_N$,
 $$
 F(s)=\frac{1}{\Psi_N(-1/s)}+O\bigl(\abs{s}^{-N-1}\bigr),
 $$
-uniformly on $\{s\in S_\delta:\Re(s)\le0,\ \abs{s}\ge4\}$.
+uniformly on $\{s\in S_\delta:\Re(s)\le0,\ \abs{s}\ge R_N\}$.
 
 ::: pf-proof
-This step is the card's own. Such $s$ satisfy $\Re(-s)>0$, so by step [](#right){.pf-ref} applied at $-s$, $F(-s)=\Psi_N(-1/s)+O(\abs{s}^{-N-1})$. Since $\Psi_N(-1/s)\to1$ as $\abs{s}\to\infty$, the two functions $\Psi_N(-1/s)$ and $F(-s)$ are bounded away from $0$ on the set in question: at infinity because $F(-s)-\Psi_N(-1/s)=O(\abs{s}^{-N-1})$ while $\Psi_N(-1/s)\to1$, and on the remaining compact part by continuity, $F$ having no zeros. Hence
+This step is the card's own. The published solution asserts the expansion on the whole sector in one sentence -- "Apply the Euler--Maclaurin formula to $\log\Gamma(s)$ in the fixed sector $S_\delta$" -- and says nothing about the reciprocal of $\Psi_N$; both the passage to the half-plane $\Re(s)<0$ and the lower bound that the reciprocal needs are supplied here.
+
+Choose $R_N\ge4+2A_N$ so large that the estimate of step [](#right){.pf-ref} applied at $-s$ gives
+$$
+\abs{F(-s)-\Psi_N(-1/s)}\le\frac14\qquad\text{for}\qquad \Re(s)\le0,\ \abs{s}\ge R_N ;
+$$
+such an $R_N$ exists, and depends on $N$ alone, because that remainder is $O(\abs{s}^{-N-1})$ uniformly on $\Re(-s)\ge0$ with $\abs{s}\ge1$. Let $s$ lie in the set of the claim and put $u\coloneqq-1/s$, so that $\abs{u}=1/\abs{s}\le1/(4+2A_N)\le1/(2A_N)$; the preamble's bound then gives $\abs{\Psi_N(u)-1}\le A_N\abs{u}\le\frac12$, the number $A_N$ being at least $\abs{a_1}=\frac1{12}>0$ by step [](#coefficients){.pf-ref}. Hence
+$$
+\abs{\Psi_N(-1/s)}\ge\frac12,\qquad\text{and}\qquad\abs{F(-s)}\ge\abs{\Psi_N(-1/s)}-\abs{F(-s)-\Psi_N(-1/s)}\ge\frac14 .
+$$
+Both bounds hold uniformly on the whole set, so the reciprocal below needs no separate argument at infinity and none on a compact remainder, and nothing about $\Psi_N$ is inferred from continuity or from the non-vanishing of $F$. Hence
 $$
 \frac{1}{F(-s)}=\frac{1}{\Psi_N(-1/s)}+O\bigl(\abs{s}^{-N-1}\bigr),
 $$
-the difference of the two sides being $(F(-s)-\Psi_N(-1/s))/\bigl(F(-s)\Psi_N(-1/s)\bigr)$.
+the difference of the two sides being $(F(-s)-\Psi_N(-1/s))/\bigl(F(-s)\Psi_N(-1/s)\bigr)$, whose modulus is at most $8\abs{F(-s)-\Psi_N(-1/s)}$.
 
 By step [](#reflection){.pf-ref}, $F(s)=1/\bigl(\varepsilon(s)F(-s)\bigr)$ with $\varepsilon(s)=1-e^{2\pi is}$ if $\Im(s)>0$ and $\varepsilon(s)=1-e^{-2\pi is}$ if $\Im(s)<0$. In both cases $\abs{e^{\mp2\pi is}}=e^{-2\pi\abs{\Im s}}$, and $\abs{\Im s}=\abs{s}\abs{\sin(\arg s)}\ge\abs{s}\sin\delta$ for $s\in S_\delta$ because $\abs{\arg s}\le\pi-\delta$; thus $e^{-2\pi\abs{\Im s}}\le e^{-2\pi\abs{s}\sin\delta}\le c_\delta<1$ for $\abs{s}\ge4$, so $\abs{1/\varepsilon(s)}\le1/(1-c_\delta)$ and $1/\varepsilon(s)=1+O(e^{-2\pi\abs{\Im s}})=1+O(\abs{s}^{-N-1})$ for every $N$. Multiplying the two estimates gives $F(s)=1/\Psi_N(-1/s)+O(\abs{s}^{-N-1})$.
 
@@ -378,12 +424,13 @@ By step [](#reflection){.pf-ref}, $F(s)=1/\bigl(\varepsilon(s)F(-s)\bigr)$ with 
 ::: {.pf-step #identify}
 $\Psi_N(u)\Psi_N(-u)=1+O\bigl(\abs{u}^{N+1}\bigr)$ as $u\to0$, and consequently
 $$
-F(s)=\Psi_N(1/s)+O\bigl(\abs{s}^{-N-1}\bigr)\qquad\text{for } s\in S_\delta,\ \Re(s)<0,\ \abs{s}\ge4 .
+F(s)=\Psi_N(1/s)+O\bigl(\abs{s}^{-N-1}\bigr)\qquad\text{for } s\in S_\delta,\ \Re(s)<0,\ \abs{s}\ge R_N ,
 $$
+with $R_N$ the constant of step [](#left){.pf-ref}.
 
 ::: pf-proof
-This step is the card's own. If $\delta>\pi/2$ then $S_\delta\subset\{\Re(s)>0\}$ and there is nothing to prove, so assume $\delta\le\pi/2$; then the imaginary axis lies in $S_\delta$, and every $it$ with $t\ge4$ belongs to the sets on which the estimates of steps [](#right){.pf-ref} and [](#left){.pf-ref} are uniform.
-Let $t\ge4$ and put $s=it$. By step [](#right){.pf-ref}, $F(it)=\Psi_N(1/(it))+O(t^{-N-1})=\Psi_N(-i/t)+O(t^{-N-1})$. On the other hand, $\Re(s)\le0$ and the estimates of step [](#left){.pf-ref} are uniform on that set; taking the limit of the identity of step [](#left){.pf-ref} along $s\to it$ with $\Re(s)<0$ (both sides being continuous at $it\ne0$) gives $F(it)=1/\Psi_N(-1/(it))+O(t^{-N-1})=1/\Psi_N(i/t)+O(t^{-N-1})$.
+This step is the card's own. If $\delta>\pi/2$ then $S_\delta\subset\{\Re(s)>0\}$ and there is nothing to prove, so assume $\delta\le\pi/2$; then the imaginary axis lies in $S_\delta$, and every $it$ with $t\ge R_N$ belongs to the sets on which the estimates of steps [](#right){.pf-ref} and [](#left){.pf-ref} are uniform.
+Let $t\ge R_N$ and put $s=it$. By step [](#right){.pf-ref}, $F(it)=\Psi_N(1/(it))+O(t^{-N-1})=\Psi_N(-i/t)+O(t^{-N-1})$. On the other hand, $\Re(s)\le0$ and the estimates of step [](#left){.pf-ref} are uniform on that set; taking the limit of the identity of step [](#left){.pf-ref} along $s\to it$ with $\Re(s)<0$ (both sides being continuous at $it\ne0$) gives $F(it)=1/\Psi_N(-1/(it))+O(t^{-N-1})=1/\Psi_N(i/t)+O(t^{-N-1})$.
 Subtracting, $\Psi_N(-i/t)-1/\Psi_N(i/t)=O(t^{-N-1})$. Write $1/\Psi_N(u)=\sum_{j=0}^{N}b_ju^{j}+O(u^{N+1})$ for $\abs{u}\le1/2$, which exists because $\Psi_N(0)=1$; then $1/\Psi_N(i/t)=\sum_{j=0}^{N}b_ji^{j}t^{-j}+O(t^{-N-1})$ and $\Psi_N(-i/t)=\sum_{j=0}^{N}a_j(-i)^{j}t^{-j}+O(t^{-N-1})$, so
 $$
 \sum_{j=0}^{N}\bigl(a_j(-i)^{j}-b_ji^{j}\bigr)t^{-j}=O(t^{-N-1}).
@@ -398,7 +445,7 @@ Substituting this into step [](#left){.pf-ref}, with $u=-1/s$, gives $1/\Psi_N(-
 ::: pf-qed
 The display is the published expansion; the half of the sector with $\Re(s)<0$, which the case below takes from step [](#identify){.pf-ref}, is the card's own.
 
-Let $N\ge1$ and let $\abs{s}\ge4$ with $s\in S_\delta$. If $\Re(s)\ge0$, step [](#right){.pf-ref} gives $\Gamma(s)=e^{s\log s}e^{-s}\frac{\sqrt{2\pi}}{s^{1/2}}\bigl(1+\sum_{j=1}^{N}a_js^{-j}+O(s^{-N})\bigr)$; if $\Re(s)<0$, step [](#identify){.pf-ref} gives the same, since $F(s)=\Psi_N(1/s)+O(\abs{s}^{-N-1})$ translates into exactly that display. The constants $a_j$ are real and $a_1=1/12$ by step [](#coefficients){.pf-ref}. As for every $N>0$ one may take the integer $N$ above replaced by $\lceil N\rceil$, this is the assertion of the problem.
+Let $N\ge1$ and let $\abs{s}\ge R_N$ with $s\in S_\delta$, the constant $R_N$ being that of step [](#left){.pf-ref}. If $\Re(s)\ge0$, step [](#right){.pf-ref} gives $\Gamma(s)=e^{s\log s}e^{-s}\frac{\sqrt{2\pi}}{s^{1/2}}\bigl(1+\sum_{j=1}^{N}a_js^{-j}+O(s^{-N})\bigr)$; if $\Re(s)<0$, step [](#identify){.pf-ref} gives the same, since $F(s)=\Psi_N(1/s)+O(\abs{s}^{-N-1})$ translates into exactly that display. The constants $a_j$ are real and $a_1=1/12$ by step [](#coefficients){.pf-ref}. As for every $N>0$ one may take the integer $N$ above replaced by $\lceil N\rceil$, this is the assertion of the problem.
 
 :::
 
