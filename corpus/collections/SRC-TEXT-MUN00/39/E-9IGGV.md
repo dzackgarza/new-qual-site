@@ -26,6 +26,20 @@ audit:
     "positron0802", "shenapse", "9beach", "kyp44", the seven further GitHub manuals, dbfin and Gardner's
     ETSU notes --- none of which solves this exercise.
     Checked against Munkres, Topology (2000), Section 39 Exercise 3, printed p. 247, with Lemma 39.1(b) (the closures of a locally finite family are locally finite) and its converse, which is what the exercise tests. No correction was needed; the example is the card's own, a family of sets with a single point removed from a common open interval, whose closures all coincide.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. The example is right: each
+    $A_n=(0,1)\setminus\{1/n\}$ is dense in $(0,1)$, so every closure is $[0,1]$ and the family
+    $\mathcal B$ has a single member, which is locally finite; and a neighbourhood $U$ of $1/2$
+    contains an interval around $1/2$, which meets $A_n$ for every $n\ge3$, so $\mathcal A$ is
+    not locally finite there. The count in step a-not-locally-finite is sound. Lemma 39.1(b) is
+    the statement that local finiteness passes to the family of closures; this exercise is the
+    failure of its converse. Citation by number: §39 Exercise 3, read in
+    `tmp/sources/munkres-2000-topology.md`; the 2026-11-10 event's page locator is superseded,
+    its text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
