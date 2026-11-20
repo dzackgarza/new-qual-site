@@ -160,18 +160,11 @@ $$
 
 ::: {.pf-step #s1-6}
 
-Hence every point
-$$
-n+\frac13
-$$
-is a genuine simple pole of $f$, and there are no other poles.
-
-
-Thus the pole set is
+Hence the pole set is
 $$
 \boxed{f(z)=\infty\iff z-\frac13\in\ZZ};
 $$
-that is, every point $n+\frac13$ is a genuine simple pole of $f$, and there are no other poles.
+every point $n+\frac13$ is a genuine simple pole of $f$, and there are no other poles.
 
 ::: pf-proof
 
