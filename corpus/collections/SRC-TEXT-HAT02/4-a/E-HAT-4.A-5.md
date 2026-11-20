@@ -37,6 +37,23 @@ audit:
     conjugation relations, together with the argument that H_2 is finitely generated but not
     finitely presented because H_2(X~_2) is not finitely generated. Statement unchanged; the card
     does not claim a retained solution set covers this exercise.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.A Exercise 5, parts (a), (b) and (c), with Theorem 2A.1 and
+    van Kampen's theorem. The claims match the printed parts: (a) $H_0(Z)=\ZZ$, $H_1(Z)=\ZZ^5$,
+    $H_2(Z)=\ZZ^9$ and nothing above degree two, consistent with the model's twelve $1$-cells and
+    sixteen $2$-cells giving $\chi=1-12+16=5$; (b) the inductive description of $\widetilde X_n$ as
+    two mapping tori of the deck transformation, with the two copies of $\widetilde X_{n-1}$
+    identified, hence a bundle over $S^1\vee S^1$; (c) two stable letters and finitely many
+    conjugation relations at each stage, finite for $n>2$, finitely generated but not finitely
+    presentable for $n=2$ because $H_2(\widetilde X_2)$ is not finitely generated. No mathematics
+    changed. Citation repaired under the owner's correction of this date: the text named printed
+    pages for the exercise and for Theorems 4A's assertion (∗), 1.20 and 2A.1, and now cites the
+    numbered statements only. Not checked: no certificate, and the cell counts of the octahedral
+    model were read from the card's own description rather than recounted from a page image.
+
 ---
 
 ::: {.problem}
@@ -52,7 +69,7 @@ In the latter case, deduce that $\pi_1(\tilde{X}_2)$ has no finite presentation 
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 5, printed p. 426; the argument below is the card's own.
+The statement is Hatcher, *Algebraic Topology* (2002), §4.A Exercise 5; the argument below is the card's own.
 
 ::: pf
 
@@ -68,7 +85,7 @@ and let
 $$
 \phi_n:\pi_1(X_n)=F_2^n\longrightarrow\ZZ
 $$
-send each of the $2n$ standard generators to $1$, exactly as does $f_*$ for $f:T^{2n}\to S^1$, $f(\theta_1,\dots,\theta_{2n})=\theta_1+\cdots+\theta_{2n}$ (p. 423). Let
+send each of the $2n$ standard generators to $1$, exactly as does $f_*$ for $f:T^{2n}\to S^1$, $f(\theta_1,\dots,\theta_{2n})=\theta_1+\cdots+\theta_{2n}$. Let
 $$
 \widetilde X_n\to X_n
 $$
@@ -76,11 +93,11 @@ be the corresponding infinite cyclic cover, with deck generator $T$. Hatcher's l
 $$
 Z=X_3\cap f^{-1}(0)
 $$
-lifts homeomorphically to a subcomplex of $\widetilde X_3$ (p. 423, the subspace $\widetilde f^{-1}(0)\cap\widetilde X$), and assertion (∗) on p. 423, proved on pp. 424-425, shows that $\widetilde X_3$ is homotopy equivalent to a complex $Y$ obtained from $Z$ by attaching only $3$-cells. Consequently
+lifts homeomorphically to a subcomplex of $\widetilde X_3$ (the subspace $\widetilde f^{-1}(0)\cap\widetilde X$), and assertion (∗) of §4.A shows that $\widetilde X_3$ is homotopy equivalent to a complex $Y$ obtained from $Z$ by attaching only $3$-cells. Consequently
 $$
 \pi_1(Z)\cong\pi_1(\widetilde X_3),
 $$
-attaching cells of dimension $3$ leaving $\pi_1$ unchanged (van Kampen, Theorem 1.20, p. 43).
+attaching cells of dimension $3$ leaving $\pi_1$ unchanged (van Kampen, Theorem 1.20).
 :::
 
 :::
@@ -90,7 +107,7 @@ attaching cells of dimension $3$ leaving $\pi_1$ unchanged (van Kampen, Theorem 
 (a) For $n=3$, $H_0(Z)\cong\ZZ$, $H_1(Z)\cong\ZZ^5$, $H_2(Z)\cong\ZZ^9$, and $H_i(Z)=0$ for $i>2$.
 
 ::: pf-proof
-In Hatcher's octahedral model of $Z$ (p. 426: the regular octahedron inscribed in the cube with vertices $(\pm1,\pm1,\pm1)$, each triangular face taken twice, once for each normal direction, each edge likewise doubled and opposite directed edges identified), the six vertices are all identified to one vertex. Each of the twelve edges of the octahedron occurs with two choices of normal direction, and opposite directed edges are identified, leaving twelve 1-cells. Each of the eight triangular faces occurs with two normal directions, giving sixteen 2-cells. Thus
+In Hatcher's octahedral model of $Z$ (the regular octahedron inscribed in the cube with vertices $(\pm1,\pm1,\pm1)$, each triangular face taken twice, once for each normal direction, each edge likewise doubled and opposite directed edges identified), the six vertices are all identified to one vertex. Each of the twelve edges of the octahedron occurs with two choices of normal direction, and opposite directed edges are identified, leaving twelve 1-cells. Each of the eight triangular faces occurs with two normal directions, giving sixteen 2-cells. Thus
 $$
 C_0(Z)\cong\ZZ,
 \qquad
@@ -103,7 +120,7 @@ $$
 \chi(Z)=1-12+16=5.
 $$
 
-We compute $H_1$ from the fundamental group. By Theorem 2A.1 (p. 166), $H_1$ of a path-connected space is the abelianization of $\pi_1$; the presentation obtained in part (c) below for $\pi_1(\widetilde X_3)$ has five generators and only conjugacy/commutator-type relators, so every relator becomes trivial in the abelianization, which is therefore free abelian on those five generators. Therefore
+We compute $H_1$ from the fundamental group. By Theorem 2A.1, $H_1$ of a path-connected space is the abelianization of $\pi_1$; the presentation obtained in part (c) below for $\pi_1(\widetilde X_3)$ has five generators and only conjugacy/commutator-type relators, so every relator becomes trivial in the abelianization, which is therefore free abelian on those five generators. Therefore
 $$
 H_1(Z;\ZZ)\cong\ZZ^5.
 $$
@@ -176,7 +193,7 @@ If
 $$
 H_{n-1}=\langle S\mid R\rangle,
 $$
-then van Kampen's theorem (Theorem 1.20, p. 43) applied to the union of the two mapping tori, which meet in the connected subspace $\widetilde X_{n-1}$, gives
+then van Kampen's theorem (Theorem 1.20) applied to the union of the two mapping tori, which meet in the connected subspace $\widetilde X_{n-1}$, gives
 $$
 H_n=
 \left\langle
@@ -239,7 +256,7 @@ $$
 $$
 while $H_2$ has a presentation with finitely many generators.
 
-Finally $\widetilde X_2$ is a 2-dimensional $K(H_2,1)$: $\widetilde X$ is stated on p. 423 to be a subcomplex of a $K(\pi,1)$, and for $n=2$ the complex $\widetilde X_2=\widetilde X$ is $2$-dimensional. Hatcher's construction gives that
+Finally $\widetilde X_2$ is a 2-dimensional $K(H_2,1)$: $\widetilde X$ is stated in §4.A to be a subcomplex of a $K(\pi,1)$, and for $n=2$ the complex $\widetilde X_2=\widetilde X$ is $2$-dimensional. Hatcher's construction gives that
 $$
 H_2(\widetilde X_2;\ZZ)
 $$
