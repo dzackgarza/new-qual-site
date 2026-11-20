@@ -53,7 +53,7 @@ See [S-S], Example 112.
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.3, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three answers are theirs.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three answers are theirs.
 
 ::: pf
 

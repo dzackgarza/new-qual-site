@@ -54,7 +54,7 @@ is a metric for the product space $\prod X_i$.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.3, PDF pp. 23--24** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, with the metric axioms and the two inclusions of neighbourhood bases separated.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.3** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, with the metric axioms and the two inclusions of neighbourhood bases separated.
 
 ::: pf
 

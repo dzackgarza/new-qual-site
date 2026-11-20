@@ -56,7 +56,7 @@ $$
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.9, PDF p. 13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.9** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
 Let $A\subset X$, $B\subset Y$ be compact with $N\supset A\times B$ open in $X\times Y$. It is to be shown that there are open sets $U\supset A$ in $X$ and $V\supset B$ in $Y$ with $U\times V\subset N$.
 

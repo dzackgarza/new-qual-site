@@ -41,7 +41,7 @@ Show that a finite union of compact subspaces of $X$ is compact.
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.3, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
 ::: pf
 

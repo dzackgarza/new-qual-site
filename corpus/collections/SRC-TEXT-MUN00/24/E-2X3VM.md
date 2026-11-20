@@ -41,7 +41,7 @@ audit:
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.8, PDF pp. 5--6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all four parts are theirs, and (d) uses the pasting lemma explicitly where their sentence stops at "concatenation".
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 24.8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all four parts are theirs, and (d) uses the pasting lemma explicitly where their sentence stops at "concatenation".
 
 Part (c) is proved first, since the counterexample of (b) uses it.
 

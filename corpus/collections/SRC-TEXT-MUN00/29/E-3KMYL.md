@@ -61,7 +61,7 @@ Let $\theset{X_\alpha}$ be an indexed family of nonempty spaces.
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.2, PDF pp. 21--22** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 29.2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps.
 
 Throughout, a space is locally compact at a point when some compact subspace contains a neighbourhood of that point (Munkres, *Topology* (2000), §29), the topologies on products are the product topologies, and $\pi_\beta$ is the projection to the factor $X_\beta$.
 

@@ -47,7 +47,7 @@ Show that every connected open set in $X$ is path connected.
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.4, PDF p. 9** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; one step of it is supplied, where that text passes from "each path component of $U$ is open in $U$" to "thus each path component is both open and closed in $U$" without saying why a path component is closed, which is false in general.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; one step of it is supplied, where that text passes from "each path component of $U$ is open in $U$" to "thus each path component is both open and closed in $U$" without saying why a path component is closed, which is false in general.
 
 Throughout, $X$ is locally path connected: at each point and for each neighbourhood $U$ of it there is a path-connected neighbourhood contained in $U$ (§25), and $U$ is an open connected subset of $X$.
 

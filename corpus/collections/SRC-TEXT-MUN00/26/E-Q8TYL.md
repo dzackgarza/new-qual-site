@@ -53,7 +53,7 @@ What does compactness of $X$ under one of these topologies imply about compactne
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.1, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; its counterexample for the converse in part (a) is replaced, the one given there being false.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.1** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; its counterexample for the converse in part (a) is replaced, the one given there being false.
 
 Throughout, $\mathcal{T}\subset\mathcal{T}'$ are topologies on a set $X$; a subset is called $\mathcal{T}$-compact when it is compact as a subspace of $(X,\mathcal{T})$. The exercise is §26 Exercise 1.
 

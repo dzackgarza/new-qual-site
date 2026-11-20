@@ -69,7 +69,7 @@ Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\RR^\omega
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.2, PDF pp. 7--8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs, with one citation corrected: the connectedness of $\RR^{\omega}$ in the product topology is Example 7 of §23, not of §13.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs, with one citation corrected: the connectedness of $\RR^{\omega}$ in the product topology is Example 7 of §23, not of §13.
 
 ::: pf
 

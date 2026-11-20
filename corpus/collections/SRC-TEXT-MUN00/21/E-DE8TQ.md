@@ -43,7 +43,7 @@ It is called an isometric imbedding of $X$ in $Y$.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2, PDF p. 23** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three steps are theirs. Dan Whitman, *Solutions Manual*, runs the same three.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.2** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three steps are theirs. Dan Whitman, *Solutions Manual*, runs the same three.
 
 Let $f:X\to Y$ satisfy $d_{Y}\big(f(x_{1}),f(x_{2})\big)=d_{X}(x_{1},x_{2})$ for all $x_{1},x_{2}\in X$, and let $f':X\to f(X)$ be $f$ with its range restricted.
 

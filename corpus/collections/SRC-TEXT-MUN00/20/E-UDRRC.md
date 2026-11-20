@@ -62,7 +62,7 @@ $$
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.9, PDF p. 22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all four parts are theirs, following the book's hints.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.9** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); all four parts are theirs, following the book's hints.
 
 Write $\mathbf{x}\cdot\mathbf{y}=\sum_{i=1}^{n}x_{i}y_{i}$ and $\norm{\mathbf{x}}=(\mathbf{x}\cdot\mathbf{x})^{1/2}$.
 

@@ -63,7 +63,7 @@ Show that for a $T_1$ space $X$, countable compactness is equivalent to limit po
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.4, PDF pp. 18--19** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps and following the printed hint; one step it leaves implicit is supplied below, the infinitude of the sequence chosen against the cover.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 28.4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps and following the printed hint; one step it leaves implicit is supplied below, the infinitude of the sequence chosen against the cover.
 
 Throughout, $X$ is a space; it is countably compact when every countable open cover has a finite subcover, and limit point compact when every infinite subset has a limit point (§28, where both definitions are printed). The exercise is §28 Exercise 4, and the form of the $T_1$ axiom used is that of Exercise 17.15: any two distinct points have neighbourhoods each omitting the other.
 

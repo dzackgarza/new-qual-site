@@ -46,7 +46,7 @@ Show that the sequence $(f_n)$ converges uniformly to the function $f: X \to \RR
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.7, PDF p. 25** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.7** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both directions are theirs.
 
 Recall that $\bar\rho(f,g)=\sup_{x\in X}\min\{\abs{f(x)-g(x)},1\}$ is the uniform metric on $\RR^{X}$, so that $\bar\rho(f,g)\le1$ always.
 

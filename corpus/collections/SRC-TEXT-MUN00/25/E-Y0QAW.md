@@ -45,7 +45,7 @@ Show that if $X$ is locally connected, then $Y$ is locally connected.
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.8, PDF p. 10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the book's hint.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 25.8** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument follows the book's hint.
 
 Recall (Theorem 25.3) that a space is locally connected exactly when the components of each of its open sets are open.
 

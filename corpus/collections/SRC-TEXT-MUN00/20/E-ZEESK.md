@@ -53,7 +53,7 @@ One can summarize the result of this exercise as follows: if $X$ has a metric $d
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.3, PDF pp. 17--18** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, argues the same two points.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.3** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, argues the same two points.
 
 ::: pf
 

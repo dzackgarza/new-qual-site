@@ -46,7 +46,7 @@ If $\mathcal{T}' \supset \mathcal{T}$, what does connectedness of $X$ in one top
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.1, PDF p. 1** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.1** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs.
 
 A separation of a space is a pair of disjoint nonempty open sets whose union is the space (§23).
 

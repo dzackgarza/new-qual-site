@@ -46,7 +46,7 @@ audit:
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.2, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both parts are theirs, and the label of part (b) is corrected below: the topology with countable complements is the cocountable topology, not the finite complement topology.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both parts are theirs, and the label of part (b) is corrected below: the topology with countable complements is the cocountable topology, not the finite complement topology.
 
 ::: pf
 

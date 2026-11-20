@@ -35,7 +35,7 @@ Justify your answer.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.7, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the witness pair is theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.7** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the witness pair is theirs.
 
 $\RR_{\ell}$ is the set $\RR$ with the topology having as a basis the sets $[a,b)$ with $a<b$ (Example 3); a subset is open exactly when it is a union of such sets.
 

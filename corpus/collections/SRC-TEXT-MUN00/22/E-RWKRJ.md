@@ -48,7 +48,7 @@ Show that a retraction is a quotient map.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.2, PDF p. 27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, gives the same two arguments. The statement was checked against Munkres, *Topology* (2000), §22 Exercise 2, with the definition of a quotient map printed on p. 137; the set $A$ of part (b) carries the subspace topology, that being the topology the exercise gives it. Throughout, $p^{-1}(U)=\theset{x\in X\mid p(x)\in U}$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.2** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are theirs, and Whitman, gives the same two arguments. The statement was checked against Munkres, *Topology* (2000), §22 Exercise 2, with the definition of a quotient map printed on p. 137; the set $A$ of part (b) carries the subspace topology, that being the topology the exercise gives it. Throughout, $p^{-1}(U)=\theset{x\in X\mid p(x)\in U}$.
 
 ::: pf
 

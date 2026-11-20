@@ -52,7 +52,7 @@ is not empty.]
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.11, PDF pp. 13--15** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the finite-intersection argument is theirs, and its use of the hint is the book's.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.11** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the finite-intersection argument is theirs, and its use of the hint is the book's.
 
 Let $X$ be compact Hausdorff, let $\mathcal{A}$ be a nonempty collection of closed connected subsets of $X$ simply ordered by proper inclusion, and put $Y=\bigcap_{A\in\mathcal{A}}A$.
 

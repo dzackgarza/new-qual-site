@@ -96,7 +96,7 @@ Compare the four topologies that $H$ inherits as a subspace of $X$.
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.8, PDF pp. 20--22** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; one step is repaired, where that text exhibits a point with $Nt^{2}+s^{2}>4\varepsilon^{2}$ and the earlier transcription of this card had written $Nt^{2}+\varepsilon^{2}$.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`), restructured into steps; one step is repaired, where that text exhibits a point with $Nt^{2}+s^{2}>4\varepsilon^{2}$ and the earlier transcription of this card had written $Nt^{2}+\varepsilon^{2}$.
 
 Throughout, $X$ is the set of sequences with $\sum x_i^2$ convergent, $d_{\ell^2}(\mathbf{x},\mathbf{y})=\big(\sum_i (x_i-y_i)^2\big)^{1/2}$, and $\bar\rho(\mathbf{x},\mathbf{y})=\sup_i\min\{\abs{x_i-y_i},1\}$ is the uniform metric of §20; $B_{\ell^2}$ and $B_{\bar\rho}$ are the balls of these two metrics, and $\RR^\infty$ is the set of eventually zero sequences.
 

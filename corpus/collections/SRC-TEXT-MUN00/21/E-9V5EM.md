@@ -38,7 +38,7 @@ Show that the sequence $(f_n(x))$ converges for each $x \in [0,1]$, but that the
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.6, PDF p. 25** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both halves are theirs. Their printed limit function is corrected on this card: it is $f(x)=0$ for $0\le x<1$ and $f(1)=1$, as computed in step [](#pointwise){.pf-ref}.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both halves are theirs. Their printed limit function is corrected on this card: it is $f(x)=0$ for $0\le x<1$ and $f(1)=1$, as computed in step [](#pointwise){.pf-ref}.
 
 Let $f_{n}(x)=x^{n}$ on $[0,1]$.
 

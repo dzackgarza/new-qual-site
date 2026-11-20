@@ -35,7 +35,7 @@ Prove that if $X$ is an ordered set in which every closed interval is compact, t
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.1, PDF pp. 15--16** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the extremal-point argument is theirs. Their last paragraph uses intervals $(c-\varepsilon,c+\varepsilon)$, which a general ordered set does not have; the open ray $(c,\infty)$ replaces it below, and that is the whole of the change.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.1** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the extremal-point argument is theirs. Their last paragraph uses intervals $(c-\varepsilon,c+\varepsilon)$, which a general ordered set does not have; the open ray $(c,\infty)$ replaces it below, and that is the whole of the change.
 
 Let $X$ be an ordered set in the order topology in which every closed interval is compact, let $A\subseteq X$ be nonempty and let $u$ be an upper bound of $A$.
 

@@ -63,7 +63,7 @@ Show that $X_K$ is connected.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.10, PDF p. 3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.10** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all three parts are theirs.
 
 Let $X=\prod_{\alpha\in J}X_{\alpha}$ with each $X_{\alpha}$ connected, fix $\mathbf{a}\in X$, and for finite $K\subset J$ let $X_{K}=\{\mathbf{x}\mid x_{\alpha}=a_{\alpha}\ \text{for}\ \alpha\notin K\}$.
 

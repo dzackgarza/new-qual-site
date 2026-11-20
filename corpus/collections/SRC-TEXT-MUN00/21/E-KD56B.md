@@ -49,7 +49,7 @@ Show that $\RR_\ell$ and the ordered square satisfy the first countability axiom
 
 ::: {.solution}
 
-The countable bases at each kind of point are those of **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.4, PDF p. 24** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the verifications that each family is a basis at its point are written out below.
+The countable bases at each kind of point are those of **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.4** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the verifications that each family is a basis at its point are written out below.
 
 A space is first countable when each of its points has a countable basis of neighbourhoods: a countable family $\{B_{n}\}$ of neighbourhoods of $x$ such that every neighbourhood of $x$ contains some $B_{n}$.
 

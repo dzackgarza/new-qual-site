@@ -72,7 +72,7 @@ Show that some $\epsilon$-neighborhood of $A$ is contained in $U$.
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.2, PDF p. 16** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; part (d) is proved here by the minimum of $d(\cdot,X-U)$ rather than by the Lebesgue number, the argument given there needing a diameter that is strictly smaller than the number and a cover of $A$ alone.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps; part (d) is proved here by the minimum of $d(\cdot,X-U)$ rather than by the Lebesgue number, the argument given there needing a diameter that is strictly smaller than the number and a cover of $A$ alone.
 
 Throughout $X$ is a metric space with metric $d$, $A\subset X$ is nonempty, $d(x,A)=\inf\theset{d(x,a) \mid a\in A}$, and $U(A,\varepsilon)=\theset{x \mid d(x,A)<\varepsilon}$; the exercise is §27 Exercise 2. Two facts are used repeatedly and proved where they are needed: for fixed $x$ the function $a\mapsto d(x,a)$ is continuous, and so is $a\mapsto d(a,B)$ for a fixed set $B\ne\varnothing$; and a continuous real-valued function on a compact space attains its minimum (the extreme value theorem, Theorem 27.4).
 

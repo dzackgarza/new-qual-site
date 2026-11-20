@@ -39,7 +39,7 @@ Let $f: \RR \to \RR$ be the function $f(x) = x^3 - x$ . By restricting the domai
 :::
 
 ::: {.solution}
-The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.6, printed pp. 18--19** (`tmp/sources/munkres-solutions-whitman.pdf`), which takes the branch $[1,\infty)\to[0,\infty)$; the card takes the branch beginning at the critical point, whose image is exactly the closed ray below.
+The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 2.6** (`tmp/sources/munkres-solutions-whitman.pdf`), which takes the branch $[1,\infty)\to[0,\infty)$; the card takes the branch beginning at the critical point, whose image is exactly the closed ray below.
 
 Put $c=1/\sqrt3$, so that $f(c)=c^3-c=\frac1{3\sqrt3}-\frac1{\sqrt3}=-\frac2{3\sqrt3}$.
 

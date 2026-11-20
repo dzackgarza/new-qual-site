@@ -60,7 +60,7 @@ is called the Cantor set; it is a subspace of $[0, 1]$.
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.6, PDF pp. 17--18** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all five parts are theirs. Part (a) below adds the step their sentence omits: that the complement of an interval of $A_{n}$ is a finite union of closed sets of $C$, so the interval's trace is clopen in $C$.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 27.6** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); all five parts are theirs. Part (a) below adds the step their sentence omits: that the complement of an interval of $A_{n}$ is a finite union of closed sets of $C$, so the interval's trace is clopen in $C$.
 
 Let $A_{0}=[0,1]$ and let $A_{n}$ be obtained from $A_{n-1}$ by deleting the open middle third of each of its closed intervals, so that $A_{n}$ is a finite disjoint union of closed intervals of length $3^{-n}$; let $C=\bigcap_{n}A_{n}$.
 

@@ -45,7 +45,7 @@ Show that if each set $p^{-1}(\theset{y})$ is connected, and if $Y$ is connected
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.11, PDF p. 3** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the saturation argument is theirs.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.11** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the saturation argument is theirs.
 
 ::: pf
 

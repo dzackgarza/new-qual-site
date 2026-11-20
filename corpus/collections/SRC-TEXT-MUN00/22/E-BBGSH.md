@@ -63,7 +63,7 @@ $$
 :::
 
 ::: {.solution}
-The retained published solution is **positron0802, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.4, PDF pp. 27--28** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are its, with the second written out with the right inverse $t\mapsto(\sqrt t,0)$. Write $\RR_+=[0,\infty)$.
+The retained published solution is **positron0802, *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 22.4** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); both parts are its, with the second written out with the right inverse $t\mapsto(\sqrt t,0)$. Write $\RR_+=[0,\infty)$.
 
 ::: pf
 

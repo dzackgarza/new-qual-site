@@ -77,7 +77,7 @@ $$
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.12, PDF pp. 26--27** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the four parts, the $\delta=\varepsilon/2$ of (a), the three-term expansion of (b) and the five cases of (c) are that solution's, and Whitman, printed pp. 249--250, gives the same four. One slip is repaired: the table of preimages in (c) listed the case $a=0<b$ with a superfluous " $=f^{-1}((a,b))$" and left the five cases unseparated from their justifications, so the cases are now computed one by one, each from the inequalities.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 21.12** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the four parts, the $\delta=\varepsilon/2$ of (a), the three-term expansion of (b) and the five cases of (c) are that solution's, and Whitman, printed pp. 249--250, gives the same four. One slip is repaired: the table of preimages in (c) listed the case $a=0<b$ with a superfluous " $=f^{-1}((a,b))$" and left the five cases unseparated from their justifications, so the cases are now computed one by one, each from the inequalities.
 
 The statement was checked against Munkres, *Topology* (2000), §21 Exercise 12, with Lemma 21.4 on printed p. 131, Theorem 18.2 on printed p. 107, Theorem 18.4 on printed p. 110 and Exercises 18.10 and 18.11 on printed p. 112. Throughout $d(a,b)=\abs{a-b}$ on $\RR$ and
 $$

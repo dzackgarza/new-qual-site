@@ -43,7 +43,7 @@ Show that if $X$ is an infinite set, it is connected in the finite complement to
 :::
 
 ::: {.solution}
-The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.4, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps, with the cardinal count made explicit.
+The argument is the retained published solution, **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`), restructured into steps, with the cardinal count made explicit.
 
 Throughout, $X$ is an infinite set carrying the finite complement topology, in which a set is open when it is empty or has finite complement (§12, Example 3), and a separation of $X$ is a pair of disjoint nonempty open sets whose union is $X$.
 

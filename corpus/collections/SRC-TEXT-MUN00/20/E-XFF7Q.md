@@ -51,7 +51,7 @@ $$
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.6, PDF p. 19** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three parts are theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 20.6** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the three parts are theirs.
 
 Fix $\mathbf{x}\in\RR^{\omega}$ and $0<\varepsilon<1$, and put $U(\mathbf{x},\varepsilon)=\prod_{n}(x_{n}-\varepsilon,x_{n}+\varepsilon)$.
 

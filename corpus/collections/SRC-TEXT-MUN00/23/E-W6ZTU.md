@@ -37,7 +37,7 @@ Does the converse hold?
 
 ::: {.solution}
 
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.5, PDF p. 2** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs. Their sentence "any subspace with two points is separated the same way" is replaced below by the argument that does it for an arbitrary subspace with two points, which is what total disconnectedness requires.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 23.5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); both halves are theirs. Their sentence "any subspace with two points is separated the same way" is replaced below by the argument that does it for an arbitrary subspace with two points, which is what total disconnectedness requires.
 
 Recall that $X$ is totally disconnected when its only connected subspaces are one-point sets.
 

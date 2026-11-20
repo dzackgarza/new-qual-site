@@ -51,7 +51,7 @@ Find a metric space in which not every closed bounded subspace is compact.
 :::
 
 ::: {.solution}
-The retained published solution is **positron0802, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.4, PDF p. 12** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument and the counterexample below are its, with the citations to Munkres's §26 theorems checked against the book.
+The retained published solution is **positron0802, *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.4** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument and the counterexample below are its, with the citations to Munkres's §26 theorems checked against the book.
 
 ::: pf
 

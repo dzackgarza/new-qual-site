@@ -43,7 +43,7 @@ Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $B$, res
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.5, PDF pp. 12--13** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 3* (1 January 2021), Exercise 26.5** (`tmp/sources/munkres-solutions-positron-ch3.pdf`); the argument is theirs.
 
 Throughout, $X$ is a Hausdorff space, $A,B\subset X$ are compact and disjoint, and Lemma 26.4 says that if $Y$ is a compact subspace of the Hausdorff space $X$ and $x_0\in X-Y$, then there are disjoint open sets containing $x_0$ and $Y$ respectively; the exercise is on printed p. 171.
 
