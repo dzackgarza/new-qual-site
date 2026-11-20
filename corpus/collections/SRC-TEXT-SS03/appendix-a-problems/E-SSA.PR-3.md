@@ -67,7 +67,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 :::
 
 ::: {.solution}
-No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3, printed pp. 341--343.
+No retained solution set covers this problem: the argument below is the card's own, with the printed sources it uses named at each step, and the defect in the printed display is dealt with first. The statement was checked against Stein--Shakarchi, *Complex Analysis*, Appendix A, §5, Problem 3.
 
 **The defect in the printed display, and the statement that replaces it.** Everything below is proved; nothing is asserted by editing a formula.
 
@@ -117,13 +117,13 @@ $$
 $$
 i.e. $(n+2)(n+3)a_{n+3}=a_n$ for all $n\ge0$; this is the coefficient form of $S''=zS$.
 
-(A3) *$\operatorname{Ai}$ is entire and $\operatorname{Ai}''=s\operatorname{Ai}$.* This is Appendix A, §3: with $\operatorname{Ai}(s)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x^{3}/3+sx)}dx$ (display (15), printed p. 328), the contour deformation to $L_\delta=\{x+i\delta\}$ shows that $\operatorname{Ai}$ extends to an entire function, and equation (17), printed p. 329, states and proves $\operatorname{Ai}''(s)=s\operatorname{Ai}(s)$.
+(A3) *$\operatorname{Ai}$ is entire and $\operatorname{Ai}''=s\operatorname{Ai}$.* This is Appendix A, §3: with $\operatorname{Ai}(s)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x^{3}/3+sx)}dx$ (display (15) of Appendix A, §3), the contour deformation to $L_\delta=\{x+i\delta\}$ shows that $\operatorname{Ai}$ extends to an entire function, and equation (17) of Appendix A, §3 states and proves $\operatorname{Ai}''(s)=s\operatorname{Ai}(s)$.
 
 (A4) *The initial values.* Let $K=\int_0^\infty e^{-r^3/3}dr=3^{-2/3}\Gamma(\tfrac13)$ and $I=\int_0^\infty re^{-r^3/3}dr=3^{-1/3}\Gamma(\tfrac23)$ (substitute $t=r^3/3$). In (15) with $s=0$, rotate the contour to the ray $\arg z=\pi/6$: there $z^3=ir^3$, so $\abs{e^{iz^3/3}}=e^{-r^3/3}$; on the arc $z=Re^{i\theta}$, $0\le\theta\le\pi/6$, one has $\abs{e^{iz^3/3}}=e^{-R^3\sin(3\theta)/3}\le e^{-(2/\pi)R^3\theta}$ because $\sin t\ge2t/\pi$ on $[0,\pi/2]$ (with $t=3\theta$), so the arc integral is $O(R^{-2})\to0$. Cauchy's theorem on the sector gives $\int_0^\infty e^{ix^3/3}dx=e^{i\pi/6}K$, and conjugating gives $\int_{-\infty}^0e^{ix^3/3}dx=e^{-i\pi/6}K$. Hence
 $$
 \operatorname{Ai}(0)=\frac1{2\pi}\int_{-\infty}^{\infty}e^{ix^3/3}dx=\frac{2\cos(\pi/6)K}{2\pi}=\frac{\sqrt3\,3^{-2/3}\Gamma(\frac13)}{2\pi}=\frac{3^{-1/6}\Gamma(\frac13)}{2\pi}.
 $$
-Differentiating (15) in $s$ is legitimate: in the rotated representation $\operatorname{Ai}(s)=\frac1{2\pi}\int_{L_\delta}e^{i(z^3/3+sz)}dz$ (Appendix A §3, p. 329) one has, for $\abs s\le S$ and $z=x+i\delta$, $\abs{e^{i(z^3/3+sz)}}=e^{-\delta x^2+\delta^3/3+x\operatorname{Im}s+\delta\operatorname{Re}s}\le Ce^{-\delta x^2/2}$, so $\operatorname{Ai}'(s)=\frac1{2\pi}\int_{L_\delta}iz\,e^{i(z^3/3+sz)}dz$, and Cauchy's theorem lets this be computed on the rotated sectors. The same two sectors applied to $ze^{iz^3/3}$ (the extra factor $R$ on the arc gives $O(R^{-1})\to0$) give $\int_0^\infty xe^{ix^3/3}dx=e^{i\pi/3}I$ and $\int_{-\infty}^0xe^{ix^3/3}dx=-e^{-i\pi/3}I$, so
+Differentiating (15) in $s$ is legitimate: in the rotated representation $\operatorname{Ai}(s)=\frac1{2\pi}\int_{L_\delta}e^{i(z^3/3+sz)}dz$ (Appendix A, §3) one has, for $\abs s\le S$ and $z=x+i\delta$, $\abs{e^{i(z^3/3+sz)}}=e^{-\delta x^2+\delta^3/3+x\operatorname{Im}s+\delta\operatorname{Re}s}\le Ce^{-\delta x^2/2}$, so $\operatorname{Ai}'(s)=\frac1{2\pi}\int_{L_\delta}iz\,e^{i(z^3/3+sz)}dz$, and Cauchy's theorem lets this be computed on the rotated sectors. The same two sectors applied to $ze^{iz^3/3}$ (the extra factor $R$ on the arc gives $O(R^{-1})\to0$) give $\int_0^\infty xe^{ix^3/3}dx=e^{i\pi/3}I$ and $\int_{-\infty}^0xe^{ix^3/3}dx=-e^{-i\pi/3}I$, so
 $$
 \operatorname{Ai}'(0)=\frac{i}{2\pi}\int_{-\infty}^{\infty}xe^{ix^3/3}dx=\frac{i\cdot2i\sin(\pi/3)I}{2\pi}=-\frac{\sqrt3\,3^{-1/3}\Gamma(\frac23)}{2\pi}=-\frac{3^{1/6}\Gamma(\frac23)}{2\pi}.
 $$
