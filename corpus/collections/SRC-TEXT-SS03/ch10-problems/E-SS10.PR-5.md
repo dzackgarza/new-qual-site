@@ -11,10 +11,23 @@ classification:
   - Modular Forms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 10, Problem 5 on printed p. 316 (PDF p. 335): the
+    statement is the print's, the cubic equation with $g_2=60E_4$ and $g_3=140E_6$, the discriminant
+    $\Delta=g_2^3-27g_3^2$ and the identity $\Delta=(2\pi)^{12}\eta^{24}$; the opening clause "In
+    Chapter 9 we proved that" was missing from the card's block and is now restored, and the asterisk
+    the print sets before "5." is recorded in the remark. The printed bracketed hint is on the card
+    as its hint block, so a report that this card drops the hint does not hold. Not checked: the
+    argument, which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
-The Weierstrass function satisfies
+In Chapter 9 we proved that the Weierstrass $\wp$ function satisfies the cubic equation
 $$
 (\wp')^2=4\wp^3-g_2\wp-g_3,
 \qquad g_2=60E_4,\quad g_3=140E_6,
@@ -24,6 +37,10 @@ $$
 \Delta(\tau)=(2\pi)^{12}\eta(\tau)^{24}
 \qquad(\tau\in\halfplane).
 $$
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 10, Problem 5, printed p. 316).
 :::
 
 ::: {.hint}
