@@ -490,6 +490,23 @@ audit:
     being off C, which the card states and Fulton leaves implicit. Not
     checked: any printing other than that text version, and Problem 4.16, to
     which Lemma 1 defers the change of coordinates.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Page correction to the event immediately above, and no change of
+    mathematics. That event gave (1) to (3) as printed pp. 88-89 and (4) and
+    (6) as printed pp. 89-90. Checked page by page in the retained PDF, whose
+    folios stand at the foot of each page: PDF p. 96 carries folio 88 and the
+    statements (1), (2), (3) and (4); PDF p. 97 is the next page, printed
+    p. 89, and carries (5) and (6); PDF p. 98 carries folio 90 and the
+    definition of excellent position, (7), (8) and Lemma 1; PDF p. 99 is
+    printed p. 91 and carries Theorem 2. The correct attributions are (1) to
+    (4) on printed p. 88, (5) and (6) on p. 89, (7), (8) and Lemma 1 on
+    p. 90, and Theorem 2 on p. 91, which is what the card's steps already
+    cite. Read for this: the folios of
+    tmp/sources/fulton-2008-algebraic-curves.pdf at PDF pp. 96-100. Not
+    checked: any printing other than that PDF.
 
 ---
 
