@@ -84,7 +84,7 @@ i_*:H_1(M_g)=\ZZ^{2g}\twoheadrightarrow H_1(R)=\ZZ^g
 $$
 whose kernel has rank $g$: the meridians bound disks in $R$ and so die, while the longitudes are the core circles of the $g$ one-handles and form a basis of $H_1(R)$. This is the usual symplectic basis of $H_1(M_g)$, $g$ meridians and $g$ longitudes.
 
-The Mayer--Vietoris sequence for the decomposition is the one in the subsection of that name beginning on p. 149, which applies because the interiors of $R_1$ and $R_2$ together with a collar of $M_g$ cover $X$.
+The Mayer--Vietoris sequence for the decomposition is the one in the subsection of that name in §2.2, which applies because the interiors of $R_1$ and $R_2$ together with a collar of $M_g$ cover $X$.
 
 Let
 $$
