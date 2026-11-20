@@ -55,11 +55,9 @@ order: 7
 
 [[FF-2Q7RD]]
 
-[[PR-B6BB2]]
-
-[[PR-6PENU]]
-
 [[PR-LR35S]]
+
+[[C-CT2NX]]
 
 ## Counterexamples
 
