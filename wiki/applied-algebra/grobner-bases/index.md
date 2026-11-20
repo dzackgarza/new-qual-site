@@ -10,7 +10,7 @@ topics:
 # Gröbner bases and varieties
 
 Throughout, $k$ is a field, $R = k[x_1,\ldots,x_n]$, and $J\subseteq R$ is an ideal.
-Term orders, initial ideals, and Gröbner bases are defined on [[P-HCAO28|Gröbner bases, term orders, and initial ideals]], and the division algorithm they use is division of a polynomial by a finite set of polynomials with respect to a monomial order.
+Recall that a [[D-GRBNR|Gröbner basis]] of $J$ is a finite generating set whose initial monomials generate the initial ideal of $J$, for a fixed term order on the monomials. The division algorithm divides a polynomial by a finite set of polynomials with respect to the same order.
 
 ## Buchberger's algorithm
 
