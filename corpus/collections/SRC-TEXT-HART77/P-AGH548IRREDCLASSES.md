@@ -305,6 +305,27 @@ audit:
     H + F_56 as the instance the strict criterion excludes. No step, statement
     or hypothesis of the card changes, and the entries (a) and (b) that this
     card proves are untouched.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The relative-differential rank in the nonsingularity proof is corrected,
+    and with it the smoothness citation; the mathematics of the step is
+    unchanged, since the conclusion drawn from Proposition 10.4 is the one its
+    condition (iii) states. The step said Omega_{X/phi(X)} has rank 2 at the
+    generic point and is locally free of rank 2 on an open set, so that phi is
+    smooth of relative dimension 2. The map is generically finite between
+    surfaces, so the relative dimension is dim X - dim phi(X) = 0, and
+    II.8.6A, printed p. 174, gives dim_{k(X)} Omega_{k(X)/k(phi(X))} = 0 for a
+    finite separable extension of function fields of transcendence degree 0;
+    Exercise II.5.7(a), printed p. 125, then makes the sheaf locally free of
+    rank 0 near the generic point, and Proposition 10.4, printed p. 270, gives
+    smoothness of relative dimension 0 there, that is surjectivity of the
+    differential, which is what the transversality argument uses. Read for
+    this: II.8.6A with its proof's use at III.10.5, Exercise II.5.7 and
+    Proposition III.10.4 in tmp/sources/hartshorne-1977-algebraic-geometry.md
+    at the printed pages named. Not checked: any printing of the book, only
+    the text version retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -431,15 +452,17 @@ subset of pairs $(x,H)$ with $\varphi(x)\in H$ and either $\varphi$ is not smoot
 tangent to $\varphi(X)$ at $\varphi(x)$, or $\varphi(X)\subseteq H$. The morphism $\varphi$ is
 separable: the general member is reduced by Harbourne's Lemma II.6(b), preprint p. 4, and an
 inseparable morphism onto its image pulls a general hyperplane back to a non-reduced divisor. Hence
-$\Omega_{X/\varphi(X)}$ has rank $2$ at the generic point by II.8.6A, printed p. 174, and is locally
-free of rank $2$ on a nonempty open set by Exercise II.5.7(a), printed p. 125, the stalk at the
-generic point being a two-dimensional vector space over the function field $k(X)$, and it stays so
+$\Omega_{X/\varphi(X)}$ is zero at the generic point: the extension of function fields
+$k(X)/k(\varphi(X))$ is finite and separable of transcendence degree $0$, so
+$\dim_{k(X)}\Omega_{k(X)/k(\varphi(X))}=0$ by II.8.6A, printed p. 174, and is locally free of rank
+$0$ on a nonempty open set by Exercise II.5.7(a), printed p. 125, the stalk at the generic point
+being free of rank $0$ over the function field $k(X)$, and it stays so
 after shrinking that set. Let $U$ be the open set of points at which $\Omega_{X/\varphi(X)}$ is
-locally free of rank $2$ and $\varphi(x)$ is a nonsingular point of the surface $\varphi(X)$; it is
+locally free of rank $0$ and $\varphi(x)$ is a nonsingular point of the surface $\varphi(X)$; it is
 nonempty, both conditions holding at the generic point of $X$, whose image is the generic point of
-$\varphi(X)$, and on it $\varphi$ is smooth of relative dimension $2$ by Proposition 10.4, printed
+$\varphi(X)$, and on it $\varphi$ is smooth of relative dimension $0$ by Proposition 10.4, printed
 p. 270, applied to the morphism $U\to\varphi(U)$, whose source and target are nonsingular varieties
-there. At $x\in U$ the differential $T_xX\to T_{\varphi(x)}\varphi(X)$ is onto, so a hyperplane $H$
+there, the relative dimension being $\dim U-\dim\varphi(U)=0$. At $x\in U$ the differential $T_xX\to T_{\varphi(x)}\varphi(X)$ is onto, so a hyperplane $H$
 through $\varphi(x)$ meets $\varphi(X)$ transversally there exactly when
 $T_{\varphi(x)}H\cap T_{\varphi(x)}\varphi(X)$ is a line, and for such an $H$ the tangent space
 $T_x\varphi^{-1}(H)$ is the inverse image of that line, of dimension $1$, which is the dimension of
