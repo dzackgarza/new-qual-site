@@ -57,6 +57,18 @@ audit:
     theorem, including that the Hom term vanishes because the homology is torsion, and that the
     degrees kn and above kn+k-1 give nothing. Not checked: the exercise's printed hint, which was not
     re-read in this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, Algebraic Topology, Section 3.E, printed p. 310, which carries the
+    exercise. The printed words are
+      Exercise 3. Let X be the smash product of k copies of a Moore space M(Z_p, n) with p prime.
+      Compute the Bockstein homomorphisms in H*(X; Z_p) and use this to describe H*(X; Z).
+    and the card's statement is that text, so the exercise is identified and no repair is needed.
+    NOT checked in this pass: the argument, which this read does not touch and about which no
+    claim is made.
+
 ---
 
 ::: {.problem}
