@@ -55,6 +55,21 @@ audit:
     unreadable, the site answering an automated request with a Cloudflare human check, which is not
     worked around.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with one false inequality repaired. The proof of the only-if direction chose
+    an $\varepsilon/3$-net $g_1,\ldots,g_k$ and neighbourhoods on which each $g_i$ moves by less
+    than $\varepsilon/3$, then bounded $d(g(x),g(y))$ by three terms and called the sum less than
+    $\varepsilon$. The middle term is only known to be below $2\varepsilon/3$ on $U$, so $4\varepsilon/3$
+    is what follows; the step now estimates $d(g(x),g(a))$ at the base point, where the middle term
+    is below $\varepsilon/3$, which is exactly equicontinuity at $a$. Added also: $\mathcal G$ is
+    bounded under $\rho$ because it is compact, and on a bounded family $\rho$ and
+    $\bar\rho=\min(\rho,1)$ have the same balls below radius $1$, so Lemma 45.2, stated for
+    $\bar\rho$, applies to the card's supremum metric. The rest was checked and stands. Citation by
+    number: §45 Exercise 6, Theorem 45.1, Lemma 45.2 and Lemma 45.3.
+
 ---
 
 ::: {.exercise}
@@ -83,11 +98,11 @@ A Cauchy sequence in $Y$ is bounded, so it lies in a closed ball $\overline{B}(a
 If $\mathcal{G}\subset\mathcal{C}(X,Y)$ is compact, then $\mathcal{G}$ is equicontinuous and pointwise bounded.
 
 ::: pf-proof
-A compact subspace of a metric space is totally bounded (Theorem 45.1), so for $\varepsilon>0$ there are $g_{1},\ldots,g_{k}\in\mathcal{G}$ with $\mathcal{G}\subset\bigcup_{i}B_{\rho}(g_{i},\varepsilon/3)$; each $g_{i}$ is continuous, so each point $a\in X$ has a neighbourhood $U_{i}$ on which $d\big(g_{i}(x),g_{i}(a)\big)<\varepsilon/3$. On the intersection $U$ of the finitely many $U_{i}$, for $g\in\mathcal{G}$ with $\rho(g,g_{i})<\varepsilon/3$ one gets
+A compact subspace of a metric space is totally bounded (Theorem 45.1), so for $\varepsilon>0$ there are $g_{1},\ldots,g_{k}\in\mathcal{G}$ with $\mathcal{G}\subset\bigcup_{i}B_{\rho}(g_{i},\varepsilon/3)$; each $g_{i}$ is continuous, so each point $a\in X$ has a neighbourhood $U_{i}$ on which $d\big(g_{i}(x),g_{i}(a)\big)<\varepsilon/3$. On the intersection $U$ of the finitely many $U_{i}$, let $g\in\mathcal{G}$ and choose $i$ with $\rho(g,g_{i})<\varepsilon/3$; then for $x\in U$
 $$
-d\big(g(x),g(y)\big)\le d\big(g(x),g_{i}(x)\big)+d\big(g_{i}(x),g_{i}(y)\big)+d\big(g_{i}(y),g(y)\big)<\varepsilon
+d\big(g(x),g(a)\big)\le d\big(g(x),g_{i}(x)\big)+d\big(g_{i}(x),g_{i}(a)\big)+d\big(g_{i}(a),g(a)\big)<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon,
 $$
-for $x,y\in U$. So $\mathcal{G}$ is equicontinuous (Lemma 45.2). And $\mathcal{G}$ is bounded under $\rho$, so for a fixed $a\in X$ the set $\mathcal{G}_{a}=\{g(a)\}$ is bounded, since $d\big(f(a),g(a)\big)\le\rho(f,g)$; so $\mathcal{G}$ is pointwise bounded.
+the first and third terms being below $\varepsilon/3$ because $\rho(g,g_{i})<\varepsilon/3$ and the second by the choice of $U_{i}$. So $\mathcal{G}$ is equicontinuous at $a$ (Lemma 45.2). Since $\mathcal{G}$ is compact it is bounded under $\rho$, and on a bounded family the supremum metric $\rho$ and the uniform metric $\bar\rho=\min(\rho,1)$ have the same balls of radius below $1$, so the lemma, stated for $\bar\rho$, applies. And $\mathcal{G}$ is bounded under $\rho$, so for a fixed $a\in X$ the set $\mathcal{G}_{a}=\{g(a)\}$ is bounded, since $d\big(f(a),g(a)\big)\le\rho(f,g)$; so $\mathcal{G}$ is pointwise bounded.
 :::
 
 :::
