@@ -157,7 +157,7 @@ which is the displayed Gamma value.
 
 ::: {.pf-step #s1-5}
 
-Hence
+Part (a): hence
 $$
 \boxed{
 \operatorname{Area}(S^n)
@@ -171,19 +171,6 @@ $$
 ::: pf-proof
 
 Solve the identity in step [](#s1-3){.pf-ref} for $A_n$ using step [](#s1-4){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s1-6}
-
-Part (a) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -252,7 +239,7 @@ Rearrange step [](#s1-8){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-Using step [](#s1-5){.pf-ref} with $n-1$ in place of $n$,
+Part (b): using step [](#s1-5){.pf-ref} with $n-1$ in place of $n$,
 $$
 \boxed{
 V_n
@@ -286,19 +273,6 @@ $$
 \frac n2\Gamma\left(\frac n2\right)
 $$
 gives the formula.
-
-:::
-
-:::
-
-::: {.pf-step #s1-11}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -451,7 +425,7 @@ into step [](#s1-15){.pf-ref}.
 
 ::: {.pf-step #s1-19}
 
-Numerically,
+Part (d): numerically,
 $$
 0.9^{20}
 =
@@ -476,22 +450,9 @@ Evaluate the expression in step [](#s1-18){.pf-ref}.
 
 :::
 
-::: {.pf-step #s1-20}
-
-Part (d) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-19){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-6){.pf-ref}, [](#s1-11){.pf-ref}, and [](#s1-17){.pf-ref}, and [](#s1-20){.pf-ref} establish parts (a)--(d).
+Steps [](#s1-5){.pf-ref}, [](#s1-10){.pf-ref}, and [](#s1-17){.pf-ref}, and [](#s1-19){.pf-ref} establish parts (a)--(d).
 
 :::
 
