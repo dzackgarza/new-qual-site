@@ -82,8 +82,10 @@ audit:
     0-cell when i < k, with the case i = 1 also following from van Kampen; Hurewicz (Theorem 4.32)
     then gives pi_k(X) = H_k(X) = Z^n, cellular homology computing the latter by the chain complex of
     Theorem 2.35; and the inclusion classes of the n spheres form a basis of pi_k(X) by naturality of
-    the Hurewicz isomorphism. Not re-read in this pass: steps s2 onward, where the realisation of
-    GL_n(Z) by self-maps of the wedge is argued; that part was read on 2026-11-19.
+    the Hurewicz isomorphism. Steps s2 onward were then read as well: the wedge's universal property
+    gives [X,X]_* = product over j of pi_k(X), and pi_k(X) = Z^n for k > 1, so [X,X]_* = M_n(Z) with
+    composition matrix multiplication, whose group of units is GL_n(Z); k > 1 is what makes pi_k
+    abelian and free, and that is why the argument does not extend to k = 1. Correct as written.
 ---
 
 ::: {.problem}
