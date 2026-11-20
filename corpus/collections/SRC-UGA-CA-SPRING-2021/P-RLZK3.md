@@ -12,6 +12,16 @@ classification:
   - Geometry
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Expanding, |1 - z1-bar z2|^2 = 1 - 2 Re(z1-bar z2) + |z1|^2|z2|^2 and
+    |z1 - z2|^2 = |z1|^2 - 2 Re(z1-bar z2) + |z2|^2, whose difference is
+    1 + |z1|^2|z2|^2 - |z1|^2 - |z2|^2 = (1 - |z1|^2)(1 - |z2|^2). I recomputed the identity rather than
+    reading it, and checked that both sides are real and that the right side is nonnegative exactly
+    when both points lie in the disc, which is what the later parts need.
 ---
 
 ::: {.warnings}

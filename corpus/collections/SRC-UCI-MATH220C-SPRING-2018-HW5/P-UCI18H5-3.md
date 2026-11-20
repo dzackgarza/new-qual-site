@@ -17,6 +17,17 @@ audit:
 - event: solution-written
   by: claude
   date: 2026-10-31
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. Schwarz gives |f(z)| <= |z|, with equality somewhere in the open disc
+    only when f is a rotation; otherwise M(r) = max on |z| = r satisfies M(r) < r for every r < 1. Then
+    on |z| <= r the iterates satisfy |f^n(z)| <= M(r)^n -> 0, which is uniform on that disc, and
+    compact subsets of the disc lie in some disc of radius r < 1; so f^n -> 0 uniformly on compacts.
+    Checked that the dichotomy is exclusive as stated (equality in Schwarz at one point already forces
+    a rotation), which is what makes 'either' a genuine alternative rather than a case split of
+    convenience.
 ---
 
 ::: {.problem}
