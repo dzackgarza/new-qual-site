@@ -11,6 +11,22 @@ classification:
   - Prime Number Theorem
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 7, Problem 3 on printed p. 204 (PDF p. 223): the
+    statement is the print's, both directions and the closing sentence that $\alpha=1/2$ is the
+    Riemann hypothesis, and the asterisk the print sets before "3." is recorded in the remark. The
+    argument was read and checked: the partial-summation identities between $\pi$, $\theta$ and
+    $\psi$; the Tauberian step from $\psi_1(x)=x^2/2-\sum_\rho x^{\rho+1}/(\rho(\rho+1))+O(x)$,
+    whose error terms are $O(x^\alpha\log^2T)$, $O(x^\alpha\log T)$, $O(x^\alpha)$ and
+    $O(x^{1-\alpha-\epsilon})$ with $h=x^{\alpha+\epsilon}$ and $T=x/h$, all $O(x^{\alpha+\epsilon})$
+    for $\alpha\ge1/2$; the variation bound $\sum_{x-h<n\le x+h}\Lambda(n)=O(h\log x)$; the Mellin
+    identity $\int_1^\infty(\psi(x)-x)x^{-s-1}dx=-\frac1s\frac{\zeta'}{\zeta}(s)-\frac1{s-1}$ and its
+    holomorphic extension; and the pole argument at a zero $\rho$ with $\Re\rho>\alpha$. Not checked:
+    the zero-counting estimate $N(T)=O(T\log T)$, which is cited as standard and not proved here.
 ---
 
 ::: {.exercise}
@@ -19,6 +35,10 @@ $$
 \pi(x) - \operatorname{Li}(x) = O(x^{\alpha + \epsilon}) \quad \text{as } x \to \infty
 $$
 for every $\epsilon > 0$, where $\alpha$ is fixed and $1/2 \leq \alpha < 1$ if and only if $\zeta(s)$ has no zeros in the strip $\alpha < \Re(s) < 1$. The case $\alpha = 1/2$ corresponds to the Riemann hypothesis.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 7, Problem 3, printed p. 204).
 :::
 
 ::: {.solution}
