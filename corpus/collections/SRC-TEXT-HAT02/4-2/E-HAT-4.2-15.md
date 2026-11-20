@@ -58,28 +58,49 @@ Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$. 
 :::
 
 ::: {.solution}
-The exercise is §4.2 Exercise 15.
+No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set has §4.2 Exercises 1, 2, 14 and 27 only (recorded from an earlier reading of the retained PDF), and the Stanford 215C sets cover §3.B and §3.3. So the argument is the card own, from Poincaré duality (Theorem 3.30), Corollary A.12, the Hurewicz theorem (Theorem 4.32) and Corollary 4.33.
 
-Let $M$ be a closed simply-connected $3$-manifold. Poincaré duality gives
-$$
-H_i(M;\ZZ)\cong
-\begin{cases}
-\ZZ,&i=0,3,\\
-0,&i=1,2.
-\end{cases}
-$$
-Thus $M$ is a homology $3$-sphere.
+::: pf
 
-Since $M$ is simply connected and $H_2(M)=0$, the Hurewicz theorem implies $\pi_2(M)=0$: otherwise $\pi_2$ would be the first nonzero higher homotopy group and would map isomorphically to $H_2$. Hence $M$ is $2$-connected. Hurewicz now gives
-$$
-\pi_3(M)\xrightarrow{\cong}H_3(M)\cong\ZZ.
-$$
-Choose
-$$
-f:S^3\to M
-$$
-representing a generator. Then $f_*$ is an isomorphism on $H_3$, and it is automatically an isomorphism on all other homology groups as well. Both spaces are simply connected CW complexes (or have CW type), so the homology Whitehead theorem implies
-$$
-\boxed{M\simeq S^3.}
-$$
+::: {.pf-step #homology}
+$H_0(M;\ZZ)\cong H_3(M;\ZZ)\cong\ZZ$ and $H_1(M;\ZZ)=H_2(M;\ZZ)=0$.
+
+::: pf-proof
+$M$ is a closed connected orientable $3$-manifold, so Poincaré duality, Theorem 3.30, gives $H_i(M;\ZZ)\cong H_{3-i}(M;\ZZ)$; in particular $H_0\cong H_3$ and $H_1\cong H^2$. Since $M$ is simply connected, $H_1(M;\ZZ)=0$ by the Hurewicz theorem, so $H^2\cong\operatorname{Hom}(H_2,\ZZ)\oplus\operatorname{Ext}(H_1,\ZZ)$ vanishes by the universal coefficient theorem, Theorem 3.2, together with $H_1=0$.
+:::
+:::
+
+::: {.pf-step #pi-two}
+$\pi_2(M)=0$.
+
+::: pf-proof
+$M$ is simply connected, so the Hurewicz theorem in the form of Theorem 4.32 identifies $\pi_2(M)$ with $H_2(M;\ZZ)$, which vanishes by step [](#homology){.pf-ref}.
+:::
+:::
+
+::: {.pf-step #pi-three}
+$\pi_3(M)\cong H_3(M;\ZZ)\cong\ZZ$.
+
+::: pf-proof
+By steps [](#homology){.pf-ref} and [](#pi-two){.pf-ref} the space $M$ is $2$-connected, so Theorem 4.32 applies in degree $3$ and gives $\pi_3(M)\cong H_3(M;\ZZ)\cong\ZZ$.
+:::
+:::
+
+::: {.pf-step #map}
+There is a map $f:S^3\to M$ inducing an isomorphism on $H_3$ and hence on every homology group.
+
+::: pf-proof
+Choose $f$ representing a generator of $\pi_3(M)\cong\ZZ$; under the Hurewicz isomorphism of step [](#pi-three){.pf-ref} this class corresponds to a generator of $H_3(M;\ZZ)$, so $f_*:H_3(S^3)\to H_3(M)$ is an isomorphism. In the remaining degrees $H_0$ is $\ZZ$ for both and $H_1,H_2$ vanish for both by step [](#homology){.pf-ref}, so $f_*$ is an isomorphism in every degree.
+:::
+:::
+
+::: {.pf-step #whitehead}
+$M\simeq S^3$.
+
+::: pf-proof
+$M$ is homotopy equivalent to a CW complex by Corollary A.12, and $S^3$ is one; both are simply connected, so Corollary 4.33 applies to $f$ and gives a homotopy equivalence.
+:::
+:::
+
+:::
 :::
