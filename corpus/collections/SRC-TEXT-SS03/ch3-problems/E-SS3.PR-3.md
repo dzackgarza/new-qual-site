@@ -92,6 +92,19 @@ audit:
     $\abs{z_1-z_2}\le4$, and nothing of Problem 2; Problem 1(g) and the opening of Problem 2 stand
     on the next page, which is the page the same event records for Chapter 3, Problem 3. That
     locator is right, and the card's statement and argument are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 3*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 3 and checked against Chapter 3, Problem 3: the two boundary integrals from Cauchy's
+    theorem on the annulus, the two geometric expansions, $f(z)=\sum_{n\in\ZZ}a_n(z-z_0)^n$ with
+    $a_n$ the integral over any circle between the two radii, and absolute and locally uniform
+    convergence. Its text is an outline; the card's steps supply the uniform convergence on compact
+    subannuli that licenses termwise integration and the estimate that gives the coefficients'
+    integral formula. Not checked: anything in the published document outside its Problem 3.
 ---
 
 ::: {.exercise}
@@ -117,7 +130,7 @@ The book sets no asterisk before this problem (Chapter 3, Problem 3).
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the book's printed hint.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 3* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 3, Problem 3, it carries both halves: Cauchy's theorem on the annulus writes $f$ as the difference of the two boundary integrals, the outer circle expands $({\zeta-z})^{-1}$ in powers of $z-z_0$ and the inner one in powers of $(z-z_0)^{-1}$, termwise integration gives $f(z)=\sum_{n\in\ZZ}a_n(z-z_0)^n$ with $a_n$ the integral over any intermediate circle, and geometric estimates give absolute and locally uniform convergence. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
 
 Let $0<r_1<r_2$, let $A=\{z:r_1<\abs{z-z_0}<r_2\}$ be the open annulus and $\bar A=\{z:r_1\le\abs{z-z_0}\le r_2\}$, on which $f$ is holomorphic. Fix $z\in A$.
 
