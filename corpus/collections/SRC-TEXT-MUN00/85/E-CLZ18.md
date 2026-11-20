@@ -119,7 +119,7 @@ If $H\beta^{m}=H\beta^{n}$ then $\beta^{m-n}\in H$ by step [](#coset-criterion){
 If $H$ had finite index $k$, then $k+1=1$.
 
 ::: pf-proof
-$F$ is free on the two generators $\alpha,\beta$. If $[F:H]=k$ were finite, Theorem 85.3 (printed p. 515) with $n+1=2$ free generators for $F$ would give $H$ a system of $k+1$ free generators; but $H=\langle\alpha\rangle\cong\ZZ$ has a system of one free generator. The number of elements in a system of free generators of a free group is the same for every such system (Corollary 69.5, printed p. 423), so $k+1=1$. This is the index count of the cited source, which states the comparison without naming Corollary 69.5.
+$F$ is free on the two generators $\alpha,\beta$. If $[F:H]=k$ were finite, Theorem 85.3 with $n+1=2$ free generators for $F$ would give $H$ a system of $k+1$ free generators; but $H=\langle\alpha\rangle\cong\ZZ$ has a system of one free generator. The number of elements in a system of free generators of a free group is the same for every such system (Corollary 69.5), so $k+1=1$. This is the index count of the cited source, which states the comparison without naming Corollary 69.5.
 :::
 
 :::

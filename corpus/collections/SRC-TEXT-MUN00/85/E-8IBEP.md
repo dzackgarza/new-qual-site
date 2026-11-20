@@ -59,7 +59,7 @@ $X$ is the wedge of the two circles $b_0\times S^1$ and $S^1\times b_0$ at $x_0$
 
 ::: pf-proof
 
-The two circles meet exactly in $x_0$, so $X$ is a wedge of two circles in the sense of the Definition of §71, and Theorem 71.1 (printed p. 434) gives that $\pi_1(X,x_0)$ is free with free generators the classes of a loop in each circle.
+The two circles meet exactly in $x_0$, so $X$ is a wedge of two circles in the sense of the Definition of §71, and Theorem 71.1 gives that $\pi_1(X,x_0)$ is free with free generators the classes of a loop in each circle.
 
 :::
 
@@ -71,7 +71,7 @@ $E=(p\times p)^{-1}(X)=(\RR\times\ZZ)\cup(\ZZ\times\RR)$, and $q:E\to X$ is a co
 
 ::: pf-proof
 
-A point $(s,t)\in\RR^2$ lies in $(p\times p)^{-1}(X)$ exactly when $p(s)=1$ or $p(t)=1$, that is, when $s\in\ZZ$ or $t\in\ZZ$. The restriction of a covering map to the preimage of a subspace is a covering map (Theorem 53.2, printed p. 338), so $q$ is a covering map. The space $E$ is a union of arcs meeting only in end points, with the coherent topology, which is the Definition of a linear graph (printed p. 502); its vertices are the points of $\ZZ^2$.
+A point $(s,t)\in\RR^2$ lies in $(p\times p)^{-1}(X)$ exactly when $p(s)=1$ or $p(t)=1$, that is, when $s\in\ZZ$ or $t\in\ZZ$. The restriction of a covering map to the preimage of a subspace is a covering map (Theorem 53.2), so $q$ is a covering map. The space $E$ is a union of arcs meeting only in end points, with the coherent topology, which is the Definition of a linear graph; its vertices are the points of $\ZZ^2$.
 
 :::
 
@@ -83,7 +83,7 @@ $H=[F,F]$, the commutator subgroup of $F=\pi_1(X,x_0)$.
 
 ::: pf-proof
 
-Let $w$ be a word in $\alpha^{\pm1},\beta^{\pm1}$ and let $\tilde w$ be the lift of the corresponding loop to a path in $E$ starting at $e_0=(0,0)$. A horizontal edge, whose first coordinate varies and whose second is an integer, projects to a loop in $S^1\times b_0$ and changes the first coordinate by $1$; a vertical edge changes the second coordinate by $1$ and projects to a loop in $b_0\times S^1$. So $\tilde w$ ends at $(a,b)\in\ZZ^2$, where $a$ and $b$ are the total exponents of $\beta$ and of $\alpha$ in $w$. Hence $w\in H$ exactly when both total exponents vanish, that is, exactly when $w$ lies in the kernel of the homomorphism $F\to\ZZ^2$ taking $\alpha$ and $\beta$ to the standard basis. Since $F/[F,F]$ is free abelian with basis the images of $\alpha$ and $\beta$ (Theorem 69.4, printed p. 423), that kernel is $[F,F]$.
+Let $w$ be a word in $\alpha^{\pm1},\beta^{\pm1}$ and let $\tilde w$ be the lift of the corresponding loop to a path in $E$ starting at $e_0=(0,0)$. A horizontal edge, whose first coordinate varies and whose second is an integer, projects to a loop in $S^1\times b_0$ and changes the first coordinate by $1$; a vertical edge changes the second coordinate by $1$ and projects to a loop in $b_0\times S^1$. So $\tilde w$ ends at $(a,b)\in\ZZ^2$, where $a$ and $b$ are the total exponents of $\beta$ and of $\alpha$ in $w$. Hence $w\in H$ exactly when both total exponents vanish, that is, exactly when $w$ lies in the kernel of the homomorphism $F\to\ZZ^2$ taking $\alpha$ and $\beta$ to the standard basis. Since $F/[F,F]$ is free abelian with basis the images of $\alpha$ and $\beta$ (Theorem 69.4), that kernel is $[F,F]$.
 
 :::
 
@@ -95,7 +95,7 @@ $T=(\RR\times\{0\})\cup(\ZZ\times\RR)$ is a maximal tree in $E$.
 
 ::: pf-proof
 
-$T$ is connected: it is the union of the connected set $\RR\times\{0\}$ and the lines $\{m\}\times\RR$, each of which meets it in the point $(m,0)$. It contains all the vertices $\ZZ^2$, since $(m,n)\in\{m\}\times\RR$. It contains no closed reduced edge path. A reduced edge path in a single line $\RR\times\{0\}$ or $\{m\}\times\RR$ moves strictly in one direction of that line, so it visits no vertex twice. A path in $T$ that changes from one of these lines to another must pass through their single common vertex, and having left it along the second line it can meet the first line again only at that same vertex, which would make the path closed and not reduced. So no reduced edge path in $T$ is closed. So $T$ is a tree containing all vertices, and it is maximal by Theorem 84.4 (printed p. 509).
+$T$ is connected: it is the union of the connected set $\RR\times\{0\}$ and the lines $\{m\}\times\RR$, each of which meets it in the point $(m,0)$. It contains all the vertices $\ZZ^2$, since $(m,n)\in\{m\}\times\RR$. It contains no closed reduced edge path. A reduced edge path in a single line $\RR\times\{0\}$ or $\{m\}\times\RR$ moves strictly in one direction of that line, so it visits no vertex twice. A path in $T$ that changes from one of these lines to another must pass through their single common vertex, and having left it along the second line it can meet the first line again only at that same vertex, which would make the path closed and not reduced. So no reduced edge path in $T$ is closed. So $T$ is a tree containing all vertices, and it is maximal by Theorem 84.4.
 
 :::
 
@@ -110,7 +110,7 @@ $$
 
 ::: pf-proof
 
-The edges of $E$ are the unit segments of the grid. The vertical segments and the horizontal segments at height $0$ lie in $T$; the horizontal segment $e_{m,n}=[m,m+1]\times\{n\}$ lies in $T$ exactly when $n=0$. So the edges not in $T$ are exactly the $e_{m,n}$ with $m\in\ZZ$ and $n\in\ZZ\setminus\{0\}$. By Theorem 84.7 (printed p. 511) the classes of the loops $g_{m,n}=\gamma_{x}*(f_{e_{m,n}}*\overline{\gamma}_{y})$ form a system of free generators of $\pi_1(E,e_0)$, where $\gamma_x$ is the tree path from $e_0$ to the initial vertex $x=(m,n)$ of $e_{m,n}$ and $\gamma_y$ the tree path to its final vertex $y=(m+1,n)$. The tree path from $(0,0)$ to $(m,n)$ runs along $\RR\times\{0\}$ to $(m,0)$ and then up $\{m\}\times\RR$ to $(m,n)$, and projects to $\beta^m\alpha^n$. The edge $e_{m,n}$ from $(m,n)$ to $(m+1,n)$ projects to $\beta$. The reverse of the tree path from $(0,0)$ to $(m+1,n)$ projects to the reverse of $\beta^{m+1}\alpha^n$, which is $\alpha^{-n}\beta^{-(m+1)}$. Concatenating,
+The edges of $E$ are the unit segments of the grid. The vertical segments and the horizontal segments at height $0$ lie in $T$; the horizontal segment $e_{m,n}=[m,m+1]\times\{n\}$ lies in $T$ exactly when $n=0$. So the edges not in $T$ are exactly the $e_{m,n}$ with $m\in\ZZ$ and $n\in\ZZ\setminus\{0\}$. By Theorem 84.7 the classes of the loops $g_{m,n}=\gamma_{x}*(f_{e_{m,n}}*\overline{\gamma}_{y})$ form a system of free generators of $\pi_1(E,e_0)$, where $\gamma_x$ is the tree path from $e_0$ to the initial vertex $x=(m,n)$ of $e_{m,n}$ and $\gamma_y$ the tree path to its final vertex $y=(m+1,n)$. The tree path from $(0,0)$ to $(m,n)$ runs along $\RR\times\{0\}$ to $(m,0)$ and then up $\{m\}\times\RR$ to $(m,n)$, and projects to $\beta^m\alpha^n$. The edge $e_{m,n}$ from $(m,n)$ to $(m+1,n)$ projects to $\beta$. The reverse of the tree path from $(0,0)$ to $(m+1,n)$ projects to the reverse of $\beta^{m+1}\alpha^n$, which is $\alpha^{-n}\beta^{-(m+1)}$. Concatenating,
 $$
 q\circ g_{m,n}\sim\beta^m\alpha^n\beta\alpha^{-n}\beta^{-(m+1)} .
 $$
