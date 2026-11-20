@@ -53,17 +53,7 @@ For example, the torus and the annulus both have Euler characteristic $0$ and ar
 
 [[FF-W3AIU]]
 
-::: {.fact title="Closed surfaces by Euler characteristic"}
-With $N_k \coloneqq \#_{i=1}^k\RP^2$, the closed surfaces by Euler characteristic are:
-
-| Orientable | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
-| ---------- | ---        | ----        | ----       | ---         | ---     | ---     | ---         |
-| Yes | $\Sigma_3$ | none | $\Sigma_2$ | none | $T^2$ | none | $S^2$ |
-| No | $N_6$ | $N_5$ | $N_4$ | $N_3$ | $\KK$ | $\RP^2$ | none |
-
-With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band $\mobiusband$, and $\chi=1$ includes the disc $\DD^2$.
-
-:::
+[[D-SURFCH]]
 
 [[FF-23V5J]]
 
