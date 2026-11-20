@@ -52,7 +52,7 @@ has cohomology sequence
 $$
 K^\times\longrightarrow\Div_{\mathrm{Ca}}(X)\longrightarrow\Pic(X)\longrightarrow H^1(X,\mck^\times).
 $$
-For integral $X$, the sheaf $\mck^\times$ is flasque, so $H^1(X,\mck^\times)=0$; this recovers $\CaCl(X)\cong\Pic(X)$.
+For integral $X$ the sheaf $\mck$ is the constant sheaf with value the function field $K$, as the proof of [@Har77, Proposition II.6.15] records, so $\units{\mck}$ is the constant sheaf with value $\units K$. $X$ is irreducible, so a constant sheaf on $X$ is flasque [@Har77, Exercise II.1.16(a)], whence $H^1(X,\units{\mck})=0$ by the acyclicity of flasque sheaves ([[D-COHFLQ]]); this recovers $\CaCl(X)\cong\Pic(X)$.
 :::
 
 ::: {.proposition title="Divisors, line bundles with sections, and class groups"}
