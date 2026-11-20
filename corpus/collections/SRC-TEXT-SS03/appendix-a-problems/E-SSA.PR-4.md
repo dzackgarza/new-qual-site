@@ -58,6 +58,18 @@ audit:
     of the Exercises of Chapters 1--10 and not the Appendix A Problems, and no published solution of
     this Problem was located. The sentence now says so; its claim that the argument is the card's own
     is unchanged, as are the statement and the two recorded corrections to it.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search the sentence above asserts, which the reader asked for where no published
+    solution set covers the Problem. Read: the head of R. C. Rhoades, *Solutions/Hints to the
+    Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose abstract describes it as
+    solutions or hints to "many of the exercises", with one part per chapter. Searched the open web
+    for a set answering the Appendix A Problems of this book: no document answering Appendix A,
+    Problem 4 was found. This search located no published set answering this Problem, and none is
+    retained in this repository. Not checked: whether such a set exists outside what a web search
+    reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
