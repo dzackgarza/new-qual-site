@@ -12,6 +12,18 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card carried no audit list; this one records the change. Part (a)'s definition was the single
+    step without a justification, and it now gives the equivalence of the three clauses: a splitting
+    field of a separable polynomial is normal and separable and has $\abs{\Aut} = [E:F]$, and the general
+    inequality $\abs{\Aut(E/F)} \le [E:F]$ turns equality into normality and separability. Parts (b) and
+    (c), the splitting field $L$, the group $S_3$ and the six subfields, were already justified and are
+    unchanged. The collection is the UGA algebra qualifying exam of Fall 2020, without a retained
+    solution sheet, so the argument is the card's own. The statement is unchanged.
 ---
 
 ::: {.problem}
@@ -31,6 +43,11 @@ Let $\omega=\sqrt[3]{7}\in\RR$, let $\zeta=\zeta_3=e^{2\pi i/3}$, and let $L=\QQ
 ::: {.pf-step #def}
 
 A finite extension $E/F$ is Galois when it is normal and separable. Equivalently, $\cardinality{\Aut(E/F)}=[E:F]$, or $E$ is the splitting field over $F$ of a separable polynomial.
+
+
+::: pf-proof
+The three clauses are equivalent for a finite extension. Normal and separable says that the minimal polynomial of a generator of $E$ over $F$ splits in $E$ with distinct roots, so $E$ is the splitting field of that separable polynomial; conversely the splitting field of a separable polynomial is normal, since an $F$-isomorphism of the splitting field carries roots of the polynomial to roots of the polynomial, and separable, since the polynomial has distinct roots. When these hold, every $F$-embedding of $E$ into an algebraic closure is an automorphism of $E$ with image $E$, so there are exactly $[E:F]$ of them and $\abs{\Aut(E/F)} = [E:F]$. In general a finite extension satisfies $\abs{\Aut(E/F)} \le [E:F]$, because an automorphism is determined by the images of a basis and the count of $F$-embeddings is at most the degree, so equality of the two numbers forces $E/F$ to be normal and separable.
+:::
 
 :::
 
