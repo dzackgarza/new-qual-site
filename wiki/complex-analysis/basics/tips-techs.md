@@ -70,6 +70,7 @@ $$
 $$
 The standard expansions, generalized binomial coefficients, Cauchy products, and inverses of power series are on [[complex-analysis/basics/series-reference|Series reference]].
 
+The first two items are [@Ahl73, ch. 1, §1.4, Conjugation, Absolute Value], which records $\abs z^2=z\bar z$ and the characterisations of the real and purely imaginary numbers by $\bar z=\pm z$; the third is the real identity $\log\abs z=\frac12\log\abs z^2$ applied to $\abs z^2=x^2+y^2$, with $\log$ the real logarithm of [[D-4CSPM]]; the fourth is the geometric series $\frac{1}{1-\zeta}=\sum\zeta^n$ for $\abs\zeta<1$ with $\zeta=\frac{w-a}{z-a}$, which is the expansion [@Ahl73, ch. 5, §1.3, The Laurent Series] carries out for the negative powers of a Laurent development.
 :::
 
 ## Holomorphy
@@ -81,6 +82,7 @@ A function $f$ on an open set $U$ is holomorphic if any of the following holds:
 - $f$ has a holomorphic primitive on $U$;
 - $f$ is locally the sum of a convergent power series.
 
+The first is [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]; the second holds because the derivative of a holomorphic function is holomorphic, which is [@Ahl73, ch. 4, §2.3, Higher Derivatives], so a primitive of $f$ is holomorphic and hence so is $f$; the third is part (iii) of [@Ahl73, ch. 2, §2.2, Theorem 2], that a power series is an analytic function on its disc of convergence.
 :::
 
 ::: {.fact}
@@ -178,4 +180,5 @@ In the criterion that a zero-free $f$ with $\abs f$ constant on $\bd U$ is const
 An entire function $f$ is a polynomial if and only if $f^{(n)} = 0$ for all sufficiently large $n$, if and only if $f$ has a pole or a removable singularity at $\infty$.
 Cauchy's inequality shows $f^{(n)} = 0$ for $n>d$ when $\abs{f(z)}\leq C\abs z^d$ for large $\abs z$.
 
+The three conditions are equivalent because a function with a removable singularity or a pole at $\infty$ has the growth $\abs{f(z)}\le C\abs z^d$ there, which is the hypothesis of the Cauchy-inequality argument displayed; and an entire function whose $n$-th derivative vanishes for all large $n$ has a Taylor series that terminates, so it is a polynomial. The inequality used is [[T-22RQZ|Cauchy's inequality]].
 :::
