@@ -43,5 +43,5 @@ Since $\rho_d$ is an isomorphism onto its image, $\PP^n_k\sm V(f)$ is affine.
 ::: {.remark title="Published solution"}
 The argument is transcribed from William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise I.3.5, text version `tmp/sources/hartshorne-solutions-troiani.md`: he writes $f=\sum_j\alpha_jM_j$, observes that $\theta^{-1}(f)=\sum_j\alpha_jy_j$ is linear, and applies a linear change of coordinates in $\PP^N$ carrying that hyperplane to a coordinate hyperplane.
 The printed statement and hint are [@Har77, Exercise I.3.5]; the embedding and its isomorphism property are [@Har77, Exercise I.2.12] and [@Har77, Exercise I.3.4].
-The hypothesis $d>0$ is needed: for $f$ a nonzero constant, $\PP^n_k\sm V(f)$ is empty, and the $d$-uple embedding exists only for $d>0$.
+The hypothesis $d>0$ is needed: for a nonzero constant $f$ one has $V(f)=\emptyset$ and hence $\PP^n_k\sm V(f)=\PP^n_k$, which is not affine when $n\ge1$ --- every regular function on $\PP^n_k$ is constant, so an affine $\PP^n_k$ would have coordinate ring $k$ and consist of one point. The $d$-uple embedding exists only for $d>0$.
 :::
