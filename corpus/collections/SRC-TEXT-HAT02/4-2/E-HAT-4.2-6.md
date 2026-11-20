@@ -46,6 +46,24 @@ audit:
     naturality of the Hurewicz homomorphism makes the comparison square commute, so the bottom map is
     an isomorphism. The restriction $n\ge3$ is right and necessary, the absolute theorem in dimension
     $n-1$ beginning at $2$. No defect; the printed page is added.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 6, the relative
+    Hurewicz theorem (Theorem 4.37), Corollary 4.12, the long exact sequences of the pair, and
+    Theorem 4.5. The reduction for n >= 3 is correct as written: the pair (CX,X) is (n-1)-connected
+    through pi_i(CX,X) = pi_{i-1}(X) and the vanishing of pi_1(CX,X) from simple connectivity of CX
+    plus connectedness of X; the relative theorem's isomorphism form applies because both spaces are
+    simply connected, which removes the pi_1-action; the boundary map of the pair is an isomorphism
+    on homology because CX is contractible; and naturality of the Hurewicz map turns the relative
+    isomorphism into the absolute one. One gap repaired. The exercise asks for dimension n-1 for
+    every n, and the card took n >= 3 without saying what happens at n = 2, which is the absolute
+    Hurewicz theorem in dimension 1. That case cannot use the isomorphism form, since X is only
+    path-connected and pi_1(X) acts; the card now states the conclusion for n = 2 and argues it from
+    the coinvariant form of the relative theorem, the boundary isomorphism pi_2(CX,X) = pi_1(X)
+    carrying the action to conjugation, whose coinvariants are the abelianization. Statement
+    unchanged; the n = 2 paragraph is inside the step that already carried the n >= 3 conclusion.
 ---
 
 ::: {.problem}
@@ -58,7 +76,7 @@ The exercise is §4.2 Exercise 6.
 
 The argument is the card's own: the cone pair has the homotopy of a suspension of $X$, so the relative theorem applied to it is the absolute theorem one degree down. One hypothesis is checked here that the original left implicit, namely that the relative Hurewicz theorem applies in its isomorphism form to this pair.
 
-Take $n\ge3$ and assume the relative Hurewicz theorem in dimension $n$; let $X$ be $(n-2)$-connected, which is the hypothesis of the absolute Hurewicz theorem in dimension $n-1$.
+Take $n\ge3$ and assume the relative Hurewicz theorem in dimension $n$; let $X$ be $(n-2)$-connected, which is the hypothesis of the absolute Hurewicz theorem in dimension $n-1$. The case $n=2$ is settled at the end of the proof, where the same square is read with coinvariants.
 
 ::: pf
 
@@ -114,6 +132,9 @@ $$
 \boxed{\pi_{n-1}(X)\cong H_{n-1}(X)\ \text{for } X\ (n-2)\text{-connected},\ n\ge3,}
 $$
 together with $H_{i}(X)=0$ for $i<n-1$, which is the absolute Hurewicz theorem in dimension $n-1$.
+
+The case $n=2$ gives the absolute theorem in dimension $1$, and it needs the coinvariant form of the relative theorem rather than the isomorphism form. For $n=2$ the pair $(CX,X)$ is $1$-connected by step [](#pair){.pf-ref}, and $X$ need not be simply connected, so $\pi_1(X)$ acts on $\pi_2(CX,X)$; the relative Hurewicz theorem then identifies $H_2(CX,X)$ with the coinvariants $\pi_2(CX,X)_{\pi_1(X)}$, and $H_i(CX,X)=0$ for $i<2$. The boundary map $\pi_2(CX,X)\to\pi_1(X)$ is an isomorphism by the long exact sequence, and naturality of the Hurewicz map makes the square of step [](#absolute){.pf-ref} commute with the coinvariants taken on both sides, in the sense that the lower right corner is $H_1(X)$ and the lower left is $\pi_1(X)$ modulo the action, that is $\pi_1(X)^{\mathrm{ab}}$. So $H_1(X)\cong\pi_1(X)^{\mathrm{ab}}$ for path-connected $X$, which is the absolute Hurewicz theorem in dimension $1$.
+ Naturality is what does the work: the Hurewicz map of the pair is natural for maps of pairs, and the boundary isomorphism $\pi_2(CX,X)\cong\pi_1(X)$ carries the action of $\pi_1(X)$ on $\pi_2(CX,X)$ to conjugation on $\pi_1(X)$, whose coinvariants are the abelianization; with $H_2(CX,X)\cong H_1(X)$ by step [](#homology){.pf-ref}, the identification reads $H_1(X)\cong\pi_1(X)^{\mathrm{ab}}$.
 :::
 
 :::
