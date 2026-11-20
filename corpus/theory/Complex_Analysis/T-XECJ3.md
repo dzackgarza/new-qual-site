@@ -29,4 +29,6 @@ $$
 
 (iii) Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $p\in\Omega$ with $f'(p)\neq0$.
 Then there is an open set $V\ni p$ such that $f(V)$ is open and $f\restrict_V\colon V\to f(V)$ is a [[D-TM4TE|biholomorphism]].
+
+This is [@Rud76, ch. 9, Theorem 9.24], the inverse function theorem: the case $n=1$ is (i), the case of general $n$ is (ii), and (iii) is (ii) applied to $f$ as a map $\RR^2\to\RR^2$, whose Jacobian determinant at $p$ is $\abs{f'(p)}^2\neq0$, the inverse being holomorphic because its derivative at $f(p)$ is multiplication by $1/f'(p)$.
 :::
