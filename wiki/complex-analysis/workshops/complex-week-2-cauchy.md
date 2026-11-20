@@ -55,8 +55,6 @@ with $G$ holomorphic near $z_0$ [@SS03, Theorem 1.3 of Chapter 3], the sum of th
 
 [[T-WFXQP]]
 
-If $f(z)\to0$ as $\abs z\to\infty$, then $\Res_\infty f = -\lim_{\abs z\to\infty}zf(z)$, since $g(w)\coloneqq f(1/w)$ then extends holomorphically to $w=0$ with $g(0)=0$.
-
 ### Bounds
 
 [[T-SFXI7]]
