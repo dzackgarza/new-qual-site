@@ -245,25 +245,6 @@ $$
 
 :::
 
-::: {.pf-step #s1-6}
-
-In particular,
-$$
-\boxed{
-f_n\to f
-\text{ uniformly on }\overline D.
-}
-$$
-
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-step
 
 Moreover, the limit $f$ is holomorphic on $D$.
