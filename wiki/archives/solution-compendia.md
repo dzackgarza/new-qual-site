@@ -30,14 +30,14 @@ document covers.
 - [[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]] --
   solutions to a sample comprehensive examination in algebra.
 
-- [Kureh, *Algebra qualifying-exam solutions* (UCLA)](https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf) --
+- [Kureh, *Algebra qualifying-exam solutions* (UCLA)](https://web.archive.org/web/20200928132026/https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf) --
   solutions to the algebra qualifying examinations of one mathematics
   department, collected in one document.
 
 - [Maryland Math 600 algebra examination solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf) --
   solutions to one sitting of a graduate algebra qualifying examination.
 
-- [Vermont algebra qualifying-exam solutions, September 2008](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf) --
+- [Vermont algebra qualifying-exam solutions, September 2008](https://web.archive.org/web/20221202124052/https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf) --
   solutions to one sitting of a graduate algebra qualifying examination.
 
 - [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1--5 (2003)]] --
