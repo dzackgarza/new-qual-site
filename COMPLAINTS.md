@@ -11413,3 +11413,38 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Residual papercuts, recorded and not repaired.** (i) Step `s6` invokes Hartshorne V.2.8's normalization, whose definition has two clauses; the paragraph proves the vanishing clause for negative twists, while `H^0(C,\mathcal E)\ne0` follows from the displayed `0\to\OO_C\to\mathcal E` and is not written. (ii) Step `s9` uses `C_0^2=-e` (Proposition V.2.9), `C_0\cdot f=1` and `f^2=0` (Proposition V.2.3), `p_a=g` for a nonsingular curve, and `\delta_P\ge1` at a singular point and only there, without naming the statements. (iii) Step `s7` uses `\mathcal L` for Xie's degree-1 base bundle and `L` for the degree-0 quotient of Proposition V.2.9; the quotation in `s6` writes `\mathcal L=\OO_C(L)` with `L` both a sheaf and a divisor, and the argument that `\deg M=-1` holds only under the degree-0 reading. (iv) Step `s7` writes `f^*` for the ruling in `\OO_X(3)\otimes f^*\OO_C(-3P)` while `f` is the fibre class and, in parts (a) and (b), the Frobenius morphism; the card's symbol for the ruling is `\pi`. (v) The dated audit event of 2026-11-20 (the eight-direction pass) calls the `e37ba753ce` dense-open inference invalid; that paragraph also proves "the divisor `Y` contains no fibre" and "the divisor `3\Sigma` contains no fibre either", which force every fibre coefficient of `Y-3\Sigma` to vanish, so the inference is valid and the event misdescribes it. (vi) The dated audit event of 2026-11-16 lists `e=-1` among the failed hypotheses of Proposition V.2.21(b) and puts Remark 2.21.1 on the same page as (b); the corrected reading is in the `s10` event of 2026-11-20. The dated events are left as written (QUAL-11).
 
 **Repair.** `P-AGH5215FROBENIUSRULED` in `fd62568aeb`; `a1ce615ed8` before it; this record changes no card.
+
+## 2026-11-20, thirteenth item: `E-HAT-2.B-4` and `E-HAT-4.A-4` searched again — no published solution, and where this record sits
+
+**Object.** The two cards of #163 that still lack a published solution: `E-HAT-2.B-4` (the linked spheres
+$S^{p-1}\sqcup S^{q-1}$ in $S^n$ bound disjoint properly embedded disks $D^p,D^q$, Hatcher §2.B Exercise 4) and
+`E-HAT-4.A-4` ($\operatorname{Aut}(\bigvee_n S^k)\cong GL_n(\ZZ)$ for $k>1$, Hatcher §4.A Exercise 4). Both
+carry a checked proof on the card; neither carries a published solution to cite.
+
+**Searched this turn, with the negative results.**
+
+| source | query | result |
+| --- | --- | --- |
+| Ceramic | `automorphism group of wedge of spheres GL_n(Z) Hatcher exercise 4.A.4 proof` | no items |
+| Ceramic | `"wedge of spheres" "GL_n(Z)" automorphisms homotopy classes self maps k greater than 1` | only unrelated dataset dumps and papers on configuration spaces of wedges; nothing stating or proving the automorphism group |
+| Linkup | `Hatcher Algebraic Topology exercise solutions "2.B" linked spheres properly embedded disk` | Hatcher's own errata sheet (which corrects §2.B Exercise **3**, not 4), Guanyu Li's solutions, Poulsen's, Sam's, Weiss's, Zeng's Math 601 HW 5 — none of them touches §2.B Exercise 4 |
+| Linkup | `"automorphisms of a wedge of spheres" OR "self-maps of a wedge of spheres" GL(n,Z) theorem lecture notes` | Gadish--Hainaut, a note on self-maps inducing identity on homology, Vogtmann's survey on $\mathrm{Out}(F_n)$, and papers on homotopy groups of wedges; none states $\operatorname{Aut}(\bigvee_n S^k)\cong GL_n(\ZZ)$ as a proved result |
+| Linkup | `course homework solutions Hatcher section 4.A exercises automorphisms wedge of spheres "4.A.4"` | Zeng's Math 601 HW 5, a PDF mirror of gathered Hatcher solutions, Hatcher's book, Weiss's notes, a Math 527 homework sheet; §4.A is not covered by any of them |
+| Stack Exchange API, `math` | `q=automorphism wedge of spheres GL_n` | no items |
+| Stack Exchange API, `math` | `q=Hatcher 2.B.4 linked spheres` | no items |
+| Stack Exchange API, `mathoverflow` | `q=automorphism wedge of spheres` | two unrelated questions (a splitting question and a monodromy trace formula); nothing on the automorphism group |
+
+Quota on the Stack Exchange API read 119 of 300 remaining after these calls, so the queries were answered rather
+than throttled.
+
+**Where this record is, and why.** The instruction was to state each search on the card's issue thread. That is
+not possible from here: the connected GitHub repository is read-only for issues, so no comment can be posted to
+#163 or elsewhere. The repository's own rule for this is `QUAL-05`, "capture issues when encountered", which
+puts the evidence in this file; the entry is written here for that reason, not as a request for a decision and
+not as a substitute for the search.
+
+**What would close either card.** A published exercise solution — a course solution sheet, lecture notes, or a
+post that proves the statement — naming the file and the numbered statement, to be transcribed and checked
+against the book. Until one exists the card's own checked proof stands and the source obligation stays open.
+Two negative results already recorded for `4.A-4` (the 2026-11-19 record and the Math Stack Exchange sweep) are
+joined by these; no further search of the same places is warranted without a new place to search.
