@@ -40,7 +40,7 @@ For which such spaces $E$ is the projection $E \to \RR$, $(x, y) \mapsto x$, a f
 :::
 
 ::: {.solution}
-The published solution covering this exercise is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30, printed p. 1** (`tmp/sources/uoregon-proudfoot-634-hw7.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw7.md`); its coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". It lists the four admissible shapes of the deleted set and exhibits explicit fiber-preserving homeomorphisms for two representative cases, with the rest "easily derived". The uniform construction below — one family $h_t$ of homeomorphisms of the interval covering all four shapes at once — is the card's own. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 30.
+The published solution covering this exercise is **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #7, §4.2 Exercise 30** (`tmp/sources/uoregon-proudfoot-634-hw7.pdf`, text version `tmp/sources/uoregon-proudfoot-634-hw7.md`); its coverage line reads "Exercises from Hatcher: Chapter 4.2, Problems 1, 2, 30, 31, 32, 39". It lists the four admissible shapes of the deleted set and exhibits explicit fiber-preserving homeomorphisms for two representative cases, with the rest "easily derived". The uniform construction below — one family $h_t$ of homeomorphisms of the interval covering all four shapes at once — is the card's own. The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 30.
 
 Write $E=\RR^2-\bigl(\{0\}\times A\bigr)$ and $p(x,y)=x$.
 

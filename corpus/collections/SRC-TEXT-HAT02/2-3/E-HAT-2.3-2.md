@@ -126,7 +126,7 @@ Show that the axioms for a homology theory are satisfied except that the wedge a
 :::
 
 ::: {.solution}
-The complete published argument is **Pau Casassas Massana, *Acyclic Classes of Nonrepresentable Homologies*, §2.1, printed pp. 7--9** (`tmp/sources/casassas-acyclic-classes-2014.pdf`, Universitat de Barcelona, 30 June 2014, director Carles Casacuberta, [repository record](https://hdl.handle.net/2445/65313)). Casassas defines exactly Hatcher's candidate, which he writes $JW_k(X)$, proves exactness using his Proposition 2.1.2, and gives the same counterexample of an infinite wedge of spheres. This is the published proof, not an independently assembled product/difference construction. The finite-support dimension calculation is made explicit below.
+The complete published argument is **Pau Casassas Massana, *Acyclic Classes of Nonrepresentable Homologies*, §2.1** (`tmp/sources/casassas-acyclic-classes-2014.pdf`, Universitat de Barcelona, 30 June 2014, director Carles Casacuberta, [repository record](https://hdl.handle.net/2445/65313)). Casassas defines exactly Hatcher's candidate, which he writes $JW_k(X)$, proves exactness using his Proposition 2.1.2, and gives the same counterexample of an infinite wedge of spheres. This is the published proof, not an independently assembled product/difference construction. The finite-support dimension calculation is made explicit below.
 
 Put
 $$

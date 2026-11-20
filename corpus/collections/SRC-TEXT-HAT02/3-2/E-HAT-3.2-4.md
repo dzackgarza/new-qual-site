@@ -53,7 +53,7 @@ When $n$ is odd show there is a fixed point unless $f^*(\alpha) = -\alpha$, for 
 :::
 
 ::: {.solution}
-The published solutions are **Guanyu Li, *Hatcher.pdf*, §3.2 Exercise 4, PDF p. 54** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`) and **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 4, printed pp. 13--14** (`tmp/sources/hatcher-solutions-sam-2008.pdf`); the Lefschetz computation, the two sign cases and the exceptional case $f^*(\alpha)=-\alpha$ are theirs. The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 4. One locator in both sets is corrected here: the ring structure is Hatcher's **Theorem 3.19**, not his Example 3.12, which only announces it on printed p. 213 (Sam cites it as "Theorem 3.12", which Hatcher does not have).
+The published solutions are **Guanyu Li, *Hatcher.pdf*, §3.2 Exercise 4** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`) and **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 4** (`tmp/sources/hatcher-solutions-sam-2008.pdf`); the Lefschetz computation, the two sign cases and the exceptional case $f^*(\alpha)=-\alpha$ are theirs. The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 4. One locator in both sets is corrected here: the ring structure is Hatcher's **Theorem 3.19**, not his Example 3.12, which only announces it on printed p. 213 (Sam cites it as "Theorem 3.12", which Hatcher does not have).
 
 ::: pf
 
