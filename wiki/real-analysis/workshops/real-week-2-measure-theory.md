@@ -76,7 +76,7 @@ Then $\mu^*$ is an [[D-79EWM|outer measure]] [@Fol99, §1.4].
 
 [[PR-6NDTF]]
 
-::: {.remark}
+::: {.example title="A set with measurable slices that is not measurable"}
 The converse fails: a set whose slices are all measurable need not be measurable.
 For a non-measurable $\mathcal N\subseteq[0,1]$, let $E\coloneqq\mathcal N\times[0,1]$.
 Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: if it were, [[PR-6NDTF]] would make $x\mapsto m(E_x)=\chi_{\mathcal N}(x)$ measurable.
