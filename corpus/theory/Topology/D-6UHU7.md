@@ -23,7 +23,7 @@ $$
 F_0 = \id_X, \qquad F_1(X) \subseteq A, \qquad F_t(a) = a \text{ for all } a\in A
 .$$
 A homotopy $F$ with $F_0 = \id_X$ alone is a \dfn{deformation} of $X$.
-The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$ [@Hat02].
+The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$ [@Hat02, Chapter 0].
 :::
 
 ::: {.remark}
