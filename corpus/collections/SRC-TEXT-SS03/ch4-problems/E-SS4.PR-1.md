@@ -87,6 +87,19 @@ audit:
     document answering Chapter 4, Problem 1 was found. This search located no published set answering
     this Problem, and none is retained in this repository. Not checked: whether such a set exists
     outside what a web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 4*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 1 and checked against Chapter 4, Problem 1: Fourier inversion for every $z$, the decay
+    dominating $e^{2\pi\abs{y}\abs{\xi}}$ locally uniformly so that $f$ is entire, Young's inequality
+    giving $-a\abs{\xi}^p+2\pi\abs{y}\abs{\xi}\le C\abs{y}^q$, and the resulting
+    $\abs{f(z)}\le Ae^{C\abs{z}^q}$. It is the printed hint's route; the card's steps supply the
+    constants and the splitting of the exponent that make the estimate uniform. Not checked: anything
+    in the published document outside its Problem 1.
 ---
 
 ::: {.exercise}
@@ -112,7 +125,7 @@ The print states the growth as $\abs{f(z)}\le Ae^{a\abs{z}^q}$ with the same con
 :::
 
 ::: {.solution}
-No published solution set covers this problem: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the end-of-chapter Problems, and no other set was located; the argument is the card's own, and it is the printed hint, namely Young's inequality, applied to the Fourier inversion integral. Let $q$ satisfy $1/p+1/q=1$.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 4* (Problem 1), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 4, Problem 1, it carries the argument: Fourier inversion defines $f(z)$ for every $z$, the assumed decay $e^{-a\abs{\xi}^p}$ dominates the factor $e^{2\pi\abs{y}\abs{\xi}}$ locally uniformly, so $f$ is entire, and Young's inequality for conjugate exponents gives $-a\abs{\xi}^p+2\pi\abs{y}\abs{\xi}\le C\abs{y}^q$, whence $\abs{f(z)}\le Ae^{C\abs{z}^q}$. That is the printed hint, applied to the inversion integral; the proof below follows it and supplies the constants, as the audit trail records. Let $q$ satisfy $1/p+1/q=1$.
 
 ::: pf
 
