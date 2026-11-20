@@ -29,5 +29,5 @@ topics:
 
 [[D-UDIVH]]
 
-The support of a sheaf need not be closed: for an open immersion $j\colon U\hookrightarrow X$, extension by zero gives $\supp(j_!\ZZ_U)=U$.
-For a coherent sheaf on a noetherian scheme, the support is closed.
+The support of a sheaf need not be closed: for an open immersion $j\colon U\hookrightarrow X$, extension by zero gives $\supp(j_!\ZZ_U)=U$ ([[D-SHFSIX]], [[D-UDIVH]]).
+For a coherent sheaf on a noetherian scheme, the support is closed ([[D-UDIVH]]).
