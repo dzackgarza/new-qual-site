@@ -335,6 +335,31 @@ audit:
     only the retained text version, whose scan carries no per-page markers, so
     the printed pages 266-267 are the ones the card's earlier events recorded;
     and no other proof of Nagata's bound was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The event above quoted the reduction that opens Lange's proof as "a line
+    bundle L of degree d > 3". That was a regression: the card's event of
+    2026-11-16 had already read printed p. 267 as an image and recorded that
+    the page prints "d >= 3", the bar being lost in the text version's OCR, and
+    the step it corrected quoted d >= 3; rewriting the step in this pass took
+    the OCR reading instead. Re-read here from a rendering of the retained PDF
+    at 220 dpi: PDF p. 6 of
+    tmp/sources/lange-1984-higher-secant-varieties-nagata.pdf is printed
+    p. 267 and carries §2's Theorem "s(E) <= g", the sentence "For the proof
+    we may suppose without loss of generality that there is an exact sequence
+    O -> O_X -> E -> L -> 0 (e) with a line bundle L of degree d >= 3 on X",
+    and the Lemma "If (e) in Sec_n(X) for an n in N, then s(E) <= 2n-d";
+    PDF p. 5 is printed p. 266 and carries the theorem of §1,
+    dim Sec_n(X) = min(2n-1, N). The step now quotes d >= 3, and the separate
+    sentence about a standing supposition d > 3 and the coverage of d = 3 is
+    withdrawn, since the Lemma is stated for the same d >= 3 as the
+    contradiction assumes. No mathematics changes: the proof assumes d >= 3
+    and the Lemma applies there. Read for this: the same rendering at PDF
+    pp. 5-6, and the field statement "an algebraically closed field of
+    arbitrary characteristic" on printed p. 263. Not checked: any printing of
+    the paper other than the retained PDF.
 ---
 
 ::: {.problem}
@@ -565,9 +590,9 @@ d=s(\mathcal E)\le2n-d\le d+2-d=2=g,
 $$
 the middle inequality because $2n\le2+d$, a contradiction with $d\ge3$. So $d\le2$, that is $e=-d\ge-2$.
 
-The Lemma is stated in the paper under its standing supposition $d>3$, but its proof uses only the embedding by $\linearsystem{K_C\otimes\mathcal L}$ and Serre duality, and that embedding exists from $d=3$ on, its degree being $2g+1$; so the case $d=3$ is covered as well, and it has to be, since $d=3$ is the first case the contradiction must exclude.
+The Lemma is stated in the paper after that reduction, so for $d\ge3$, which is the case here; no separate argument for $d=3$ is needed.
 
-The proof of the theorem in Lange's paper opens by supposing without loss of generality that $\mathcal E$ sits in an extension with quotient of degree $d>3$, a reduction it states and does not argue; that reduction is not used here. What is used is the part of his proof that is argued, the dimension theorem of §1 and the Lemma of §2, over the algebraically closed field of arbitrary characteristic that the paper names in its introduction, and the hypothesis $d\ge3$ of the contradiction is exactly the case in which the reduction would have been needed.
+The proof of the theorem in Lange's paper opens by supposing without loss of generality that $\mathcal E$ sits in an extension with quotient of degree $d\ge3$, a reduction it states and does not argue; that reduction is not used here. What is used is the part of his proof that is argued, the dimension theorem of §1 and the Lemma of §2, stated for $d\ge3$ as the paper's reduction gives it, over the algebraically closed field of arbitrary characteristic that the paper names in its introduction, and the hypothesis $d\ge3$ of the contradiction is exactly the case in which the reduction would have been needed.
 :::
 
 :::
