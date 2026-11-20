@@ -46,7 +46,7 @@ source:
   - id: E-AMD-BYJBCLC5
   - id: E-AMD-CCULHKQJ
   - id: E-AMD-CM4ZVMMU
-  - id: P-FHW1-02
+  - id: E-AMD-CY7I27YM
   - id: E-AMD-CZJRDRNT
   - id: E-AMD-DCVAD27P
   - id: E-AMD-DGMOEV2O
@@ -417,7 +417,7 @@ source:
   - id: P-MQ2YD
   - id: P-MQ3H7
   - id: P-MQK32
-  - id: P-FHW1-02
+  - id: P-MUABR
   - id: P-MVETM
   - id: P-MWSPM
   - id: P-MZIFW
