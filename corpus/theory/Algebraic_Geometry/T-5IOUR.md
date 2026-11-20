@@ -36,6 +36,11 @@ The following are equivalent:
 [@Har77, Theorem III.3.7]
 :::
 
+::: {.proof}
+The implication (i) $\Rightarrow$ (ii) is Serre vanishing on an affine scheme, [[T-COHAFF]], which is [@Har77, Theorem III.3.5]; (ii) $\Rightarrow$ (iii) is immediate, a coherent sheaf of ideals being quasicoherent.
+The substance is (iii) $\Rightarrow$ (i), proved in [@Har77, Theorem III.3.7] by Serre's criterion for affineness [@Har77, Exercise II.2.17]: one first covers $X$ by open affines of the form $X_f$, which uses only (iii) applied to the ideal sheaf of the complement of an affine open set, and then applies the criterion to conclude that $X$ is affine.
+:::
+
 ::: {.remark title="Scope of the hypotheses"}
 For a quasicompact quasi-separated scheme $X$, affineness is equivalent to
 $$
