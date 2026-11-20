@@ -130,6 +130,27 @@ audit:
     book's numbering in the card, since the exercise refers to them by position. The
     argument is the card's own; no published solution of this supplementary exercise was
     located. Page numbers not verifiable from the extraction are not asserted.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against the Supplementary Exercises: Review of the Basics, Exercise 3, and
+    against Munkres' numbered results, and found correct in all seventeen entries. The eight
+    affirmative ones: (5) and (8) are the hypothesis; (7) because $X$ itself is the compact
+    subspace containing a neighbourhood of any point, which is the definition of local
+    compactness in §29; (6) by Theorem 28.1; (11) by Theorem 32.3; (9) and (10) because a normal
+    space is regular and, by Urysohn's lemma in §33, completely regular; and (14) because a finite
+    subcover is a countable one. The two witnesses: the Cantor set, compact Hausdorff and failing
+    (1) to (4) -- totality of disconnection and the absence of isolated points are §27 Exercise
+    6(a) and (d), whose exercise is exactly the Cantor set, and the argument that no point has a
+    connected neighbourhood is the one on the card -- and $\overline{S}_{\Omega}$, which fails
+    (12) by the countable-supremum argument at $\Omega$, (15) by the same bound applied to a
+    countable dense set, and (13), (16), (17) because each would give a countable base at
+    $\Omega$ inside a final segment; that $\overline{S}_{\Omega}$ is compact Hausdorff is
+    Theorem 29.1 with §29 Exercise 7. Checked in passing that §25 Example 3 is the sentence "the
+    topologist's sine curve is connected but not locally connected", which is the citation the
+    neighbouring card makes. Not checked: no published key to these exercises was located, and
+    none is claimed here.
 ---
 
 ::: {.exercise}
