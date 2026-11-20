@@ -9721,3 +9721,44 @@ not read outside §§2.11 and 5.3--5.4; the printed book itself was not consulte
 **Not checked.** Neither card has a retained solution set; the identification $\operatorname{rank}f=\operatorname{rank}L_f$ and the induced-form argument in the degenerate step are used as the book states them.
 
 **What remains in the residue.** Three cards: `E-HK-103-5`, `E-HK-103-11` (§10.3) and `E-HK-104-5` (§10.4); `E-HK-104-11` was repaired in the provenance batch.
+
+## 2026-11-19, #158: the closing block of V.4.11(c) now carries the inequality's proof, not a reduction
+
+**Object.** One card, `P-AGH5411WEYLGROUPS`, on the owner's direction that the turn belongs to #158 and
+not to Chapter IV, which was left alone.
+
+**What was wrong.** The proof's closing block `pf-qed` said that steps `weyl-order`, `sixers`,
+`group-order-g` and `e6-isomorphic-g` "reduce part (c) to the inequality
+$\cardinality{\mathbf E_6}\le51840$" --- that sentence stood at lines 448--453 of the card at commit
+`9f4df289a6`, which is the state the owner named. In the current file the sentence had been replaced
+by an index of which step belongs to which part, so the block named the steps and carried neither the
+inequality nor the page it comes from. Either way the closing block never discharged the one thing
+part (c) was missing.
+
+**What it says now.** The block keeps the index and then states the proof: the geometric
+representation of a Coxeter group is faithful --- J. E. Humphreys, *Reflection Groups and Coxeter
+Groups*, Cambridge Studies in Advanced Mathematics 29 (1990), the Corollary on printed p. 113, last
+item of §5.4, reading "The representation $\sigma:W\to\operatorname{GL}(V)$ is faithful" and proved
+there from Theorem 5.4 on printed p. 111 --- so the group of the presentation injects into the
+reflection group of the $\mathbf E_6$ root lattice and $\cardinality{\mathbf E_6}\le
+\cardinality{W(\mathbf E_6)}=51840$, with the three evaluations of that order named by page
+(Dolgachev Corollary 8.2.16 at printed pp. 261--262, the sixers of §9.1 at pp. 319--321, Hartshorne
+Remark 4.10.1 at pp. 404--405). With part (b)'s surjection this gives
+$\cardinality{\mathbf E_6}=51840=\cardinality{G}$.
+
+**The page was read, not assumed.** Humphreys' scan has no text layer, so printed p. 113 (PDF p. 130)
+and printed p. 111 (PDF p. 128) were rendered as images and read at their folios in the previous turn,
+and printed p. 112 (PDF p. 129) with them; the offset printed $N$ = PDF $N+17$ was checked on each of
+the three pages. The Corollary's wording in the block is that page's.
+
+**Checks.** `./.venv/bin/python -m qualc.authoring check P-AGH5411WEYLGROUPS` printed
+`schema and Markdown parsing OK (single card)`; `qualc.card_completeness.check_card` returned `[]`;
+`qualc.authoring.raw_notation` returned `None`; `bash tmp/lam.sh` numbered the steps $1$--$11$ with
+`(QED labels present)`; the front matter reparses with 20 audit events. The card diff is 16 insertions
+and 1 deletion at the closing block, plus the audit event.
+
+**Not done.** No source beyond those already named on the card was read for this pass, and Bourbaki
+is still not in `tmp/sources` --- only `bourbaki-algebra-ch9-1959.pdf` is, so *Lie Groups and Lie
+Algebras* Chapters 4--6 would have to be supplied if a second printed route is wanted. Chapter IV was
+not touched; its queue stands at IV.5.4 with eight cards, and the IV.5.2 Lefschetz finding stays
+recorded where it is.
