@@ -51,6 +51,16 @@ audit:
     Problems of Stein--Shakarchi (R. C. Rhoades, *Solutions/Hints to the Exercises from Complex
     Analysis by Stein and Shakarchi*, 2006, covers a selection of the Exercises only), so the
     argument is the card's own.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Second half of the step s4 sign repaired, on a referee's report of this session. The claim
+    sentence also read "the second integral equals $\sum b_n(z-z_0)^{-n}$", while the proof of the
+    same step displays $-\frac{1}{2\pi i}\int_{C_{r_1}}f/(\zeta-z)d\zeta=\sum b_n(z-z_0)^{-n}$ and
+    step s5 adds that display to the first integral. The sentence now reads "minus the second
+    integral equals", which is what is proved and what s5 uses; the coefficient $b_n=a_{-n}$ and
+    everything else are unchanged.
 ---
 
 ::: {.exercise}
@@ -131,7 +141,7 @@ the geometric series converging uniformly in $\zeta\in C_{r_2}$ by step [](#s2){
 
 ::: {.pf-step #s4}
 
-The second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
+Minus the second integral equals $\sum_{n\ge1}b_n(z-z_0)^{-n}$ with $b_n=\frac{1}{2\pi i}\int_{C_{r_1}}f(\zeta)(\zeta-z_0)^{n-1}d\zeta$, and $b_n=a_{-n}$ with $a_{-n}$ given by the same formula with $C_{r_2}$.
 
 ::: pf-proof
 
