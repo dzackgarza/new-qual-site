@@ -52,6 +52,13 @@ audit:
     $f_n(x)\to n(n+1)/2$ while $f(x)\to+\infty$; under the bounded metric the distance is $1$.
     Citation by number: §46 Exercise 3.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Correction to this card's event of the same date: the exercise is §46 Exercise 5, as the
+    collection index records (§46.5), not Exercise 3. The mathematics of that event is unaffected.
+
 ---
 
 ::: {.exercise}
