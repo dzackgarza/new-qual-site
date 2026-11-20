@@ -19,9 +19,11 @@ topics:
 
 [[T-COHBC]]
 
+::: {.example title="The Euler characteristic need not be locally constant without flatness"}
 Without flatness, $\chi$ need not be locally constant.
 For distinct points $p,q\in\PP^1$, let $X=(\AA^1\times\{p\})\cup(\{0\}\times\{q\})\subset\AA^1\times\PP^1$ with the projection $f\colon X\to\AA^1$.
 Then $f$ is projective, $\chi(\OO_{X_t})=1$ for $t\neq0$, and $\chi(\OO_{X_0})=2$; the sheaf $\OO_X$ is not flat over $\AA^1$.
+:::
 
 ## Base change theorems
 
