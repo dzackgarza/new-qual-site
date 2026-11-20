@@ -48,6 +48,19 @@ audit:
   date: 2026-11-18
   note: >-
     Lamport structure for the octonionic bundle obstruction, which is what Queue D asks for on this card. Five steps: the closed 24-manifold and its cohomology by duality for the disk bundle, the top class, the instability axiom, the Adem relation, and the contradiction. Two additions the prose needed: the cohomology computation now says which duality it uses and why E deformation retracts to OP^2, and the vanishing of P^3 x is justified by the universal coefficient theorem from the integral groups rather than by quoting H^20(C_p;Z_3) = 0 bare. The Adem coefficient -5 = 1 mod 3 was recomputed from Hatcher's odd-primary formula with a = 1, b = 3, p = 3, where floor(a/p) = 0 leaves the single term j = 0. No retained set covers this exercise; the card now says so. Locators checked: Corollary 4D.9 on printed p. 441, Theorem 4L.12 on p. 504, the Adem relations on p. 506, the exercise on p. 517. No statement repair.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.L Exercise 4, Corollary 4D.9 and
+    Theorem 4L.12. Correct: the disk bundle of S^7 -> S^23 -> OP^2 is a closed 24-manifold with the
+    boundary the sphere bundle, Poincare-Lefschetz duality gives the integral cohomology in degrees
+    0, 8, 16, 24, the top class x^3 is a generator by unimodularity, instability forces P^4 x = x^3,
+    and the Adem relation P^1 P^3 = P^4 with coefficient -binomial(5,1) = 1 mod 3 writes x^3 as
+    P^1(P^3 x) with P^3 x in the vanishing degree 20. I recomputed the Adem coefficient from the
+    odd-primary formula with a = 1, b = 3, p = 3: floor(a/p) = 0, so only j = 0 contributes and the
+    coefficient is -binomial((a+b), a) = -5 = 1 mod 3. One page locator removed from the body; the
+    theorems are cited by number.
 ---
 
 ::: {.problem}
@@ -92,7 +105,7 @@ Theorem 4L.12, gives the instability axiom $P^ix=x^p$ when $2i=\abs{x}$ and $x$ 
 In the Steenrod algebra $\mathcal A_3$, $P^1P^3=P^4$.
 
 ::: pf-proof
-The Adem relation for odd $p$ (printed p. 506) is
+The Adem relation for odd $p$ is
 $$
 P^aP^b=\sum_j(-1)^{a+j}\binom{(p-1)(b-j)-1}{a-pj}P^{a+b-j}P^j,
 $$
