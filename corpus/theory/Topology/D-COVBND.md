@@ -14,6 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $B$ be a manifold with boundary and $p\colon A\to B$ a covering map.
+Let $B$ be a [[D-MN6QW|manifold with boundary]] and $p\colon A\to B$ a covering map.
 Then $A$ is a manifold with boundary and $p^{-1}(\bd B)=\bd A$ [@Hat02, §3.3].
 :::
