@@ -64,7 +64,7 @@ Show the action of $\pi_1(\RP^n)$ on $\pi_n(\RP^n) \approx \ZZ$ is trivial for $
 :::
 
 ::: {.solution}
-The argument is the card's own, from Theorem 1.38 and Proposition 1.30 in §1.3, Proposition 4.1, Corollary 4.25 and the degree of the antipodal map.
+No retained solution set covers this exercise: Guanyu Li's set ends with §3.3, DeMason's M382C problem set covers sections up to part of §4.1, the Stanford 215C sets cover §3.B and §3.3 exercises, and the retained Casassas, Putman and Bredon material is not a set of Hatcher solutions. So the argument is the card own, from Theorem 1.38 and Proposition 1.30 in §1.3, Proposition 4.1, Corollary 4.25 and the degree of the antipodal map.
 
 ::: pf
 
