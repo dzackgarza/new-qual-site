@@ -22,4 +22,4 @@ Separatedness is encoded by the diagonal morphism and by uniqueness in the valua
 [[D-8XX95]]
 
 A projective morphism is proper.
-A projective variety $Y$ over an algebraically closed field has $\OO(Y)=k$: every regular function on $Y$ is constant [@Har77, Theorem I.3.4, p. 18].
+A projective variety $Y$ over an algebraically closed field has $\OO(Y)=k$: every regular function on $Y$ is constant [@Har77, Theorem I.3.4].

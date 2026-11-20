@@ -34,7 +34,7 @@ Everything said about projectivity over a field therefore applies fibrewise over
 [[D-MORPROJ]]
 
 Properness of a projective morphism is a composition of three facts: a closed immersion is proper, properness is stable under composition, and $\PP^N_\ZZ\to\Spec\ZZ$ is universally closed by elimination theory — given a closed subset of $\PP^N_Y$ defined by homogeneous equations, the locus of $y$ where it meets the fibre is closed because it is cut out by the coefficients of the resultant of those equations.
-The converse fails: a nonsingular complete threefold over $\CC$ that admits no embedding in any projective space exists [@Har77, Appendix B, Example 3.4.1, p. 443].
+The converse fails: a nonsingular complete threefold over $\CC$ that admits no embedding in any projective space exists [@Har77, Appendix B, Example 3.4.1].
 
 ## Ample and very ample sheaves
 
@@ -45,8 +45,8 @@ The converse fails: a nonsingular complete threefold over $\CC$ that admits no e
 The certificate is a sheaf rather than a map: $\mcl$ is very ample over $Y$ when some $\iota\colon X\to\PP^n_Y$ has $\iota^*\OO(1)\cong\mcl$, so a morphism is projective exactly when such an $\mcl$ exists.
 In practice the map is written down from sections: a generating set $s_0,\ldots,s_n\in H^0(X,\mcl)$ gives $\varphi\colon X\to\PP^n_Y$, and $\varphi$ is a closed immersion exactly when the sections separate points and tangent directions.
 A very ample sheaf is ample, and on a scheme of finite type over a noetherian ring $\mcl$ is ample exactly when some power of $\mcl$ is very ample [@Har77, Chapter II, §7].
-Ampleness is preserved by restriction to a closed subscheme and by pullback along a finite surjective morphism: for $f\colon X\to Y$ finite and surjective, $\mcl$ is ample on $Y$ if and only if $f^*\mcl$ is ample on $X$ [@Har77, Exercise III.5.7, p. 232].
-It is not preserved by pullback along an arbitrary morphism: for $\pi\colon\widetilde X\to X$ the blowup of a point of a surface, $\pi^*\mcl$ restricts to the trivial sheaf on the exceptional curve $E$, since $\pi$ maps $E$ to a point, so $\pi^*\mcl\cdot E=0$ and an ample divisor has positive intersection with every irreducible curve [@Har77, Theorem V.1.10, p. 365].
+Ampleness is preserved by restriction to a closed subscheme and by pullback along a finite surjective morphism: for $f\colon X\to Y$ finite and surjective, $\mcl$ is ample on $Y$ if and only if $f^*\mcl$ is ample on $X$ [@Har77, Exercise III.5.7].
+It is not preserved by pullback along an arbitrary morphism: for $\pi\colon\widetilde X\to X$ the blowup of a point of a surface, $\pi^*\mcl$ restricts to the trivial sheaf on the exceptional curve $E$, since $\pi$ maps $E$ to a point, so $\pi^*\mcl\cdot E=0$ and an ample divisor has positive intersection with every irreducible curve [@Har77, Theorem V.1.10].
 
 ## Consequences used later
 

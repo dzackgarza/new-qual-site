@@ -26,7 +26,7 @@ A quantity unchanged by one blowup at a point is therefore a birational invarian
 
 [[FE-SRFCUBIC]]
 
-A smooth cubic surface contains exactly $27$ lines, each of self-intersection $-1$, and they are its only irreducible curves of negative self-intersection [@Har77, Theorem V.4.9, p. 402].
+A smooth cubic surface contains exactly $27$ lines, each of self-intersection $-1$, and they are its only irreducible curves of negative self-intersection [@Har77, Theorem V.4.9].
 
 [[T-SRFKOD]]
 

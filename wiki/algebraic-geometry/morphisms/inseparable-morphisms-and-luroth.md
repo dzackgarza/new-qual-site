@@ -27,7 +27,7 @@ For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega
 
 [[T-IV2LUROTH]]
 
-Lüroth's theorem is that a finitely generated subfield of $k(t)$ of transcendence degree one is of the form $k(u)$, so a curve dominated by $\PP^1$ is rational [@Har77, Example IV.2.5.5, p. 303]; it uses that a finite morphism of smooth projective curves satisfies $g(X)\ge g(Y)$ [@Har77, Example IV.2.5.4, p. 303].
+Lüroth's theorem is that a finitely generated subfield of $k(t)$ of transcendence degree one is of the form $k(u)$, so a curve dominated by $\PP^1$ is rational [@Har77, Example IV.2.5.5]; it uses that a finite morphism of smooth projective curves satisfies $g(X)\ge g(Y)$ [@Har77, Example IV.2.5.4].
 
 Restated as geometry, Lüroth says unirational implies rational in dimension $1$.
 In higher dimension this is the Lüroth problem: unirational implies rational for surfaces over an algebraically closed field of characteristic $0$, and fails for surfaces in characteristic $p$ (Zariski surfaces) and for threefolds over $\CC$ (cubic threefolds, by the intermediate Jacobian).

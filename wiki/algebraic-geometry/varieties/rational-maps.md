@@ -23,13 +23,13 @@ A rational map is dominant when its image is dense; a dominant rational map $X\d
 
 ## Rational maps to projective space
 
-For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$ not all zero, modulo multiplication by a single element of $k(X)^\times$ [@Har77, Definition I.4, p. 24].
+For an irreducible variety $X$ over $k$, a rational map $X\dashrightarrow\PP^n_k$ is the same thing as an $(n+1)$-tuple $(f_0:\cdots:f_n)$ of rational functions on $X$ not all zero, modulo multiplication by a single element of $k(X)^\times$ [@Har77, Definition I.4].
 The tuple may be chosen with no common factor, and then the indeterminacy locus is the common zero locus of $f_0,\ldots,f_n$ in the largest open set on which all of them are regular.
 A rational map to $\PP^n$ is a linear system on $X$ with no requirement that it be base-point-free, and the morphisms are the base-point-free linear systems ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
 ## Birational equivalence
 
-Two varieties are birational when there is a birational map between them ([[D-VARBIRAT]]), and this is the same as an isomorphism $k(X)\cong k(Y)$ of fields over $k$ [@Har77, Corollary I.4.5, p. 26].
+Two varieties are birational when there is a birational map between them ([[D-VARBIRAT]]), and this is the same as an isomorphism $k(X)\cong k(Y)$ of fields over $k$ [@Har77, Corollary I.4.5].
 So the birational classes of varieties over $k$ are the finitely generated field extensions of $k$ of finite transcendence degree, and a variety is a model of its function field.
 Invariants of the field alone are therefore birational invariants, and a birational question may be asked of the field.
 
