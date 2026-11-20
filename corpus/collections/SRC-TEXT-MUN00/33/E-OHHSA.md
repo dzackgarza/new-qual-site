@@ -70,6 +70,20 @@ audit:
     a type-(iii) or type-(iv) set meets a type-(i) or type-(ii) one; and the conclusion that these are
     the two conditions for a basis (Munkres, §13). The statement and the four basis types are cited by
     number, no page. Not checked in this commit: nothing of parts (b) and (c) was touched or re-read.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (b) is converted to numbered steps, the second of three commits on this card; part (c) remains
+    prose and is converted in the next commit. Part (b) is now three steps, each with a `pf-proof`: the
+    level set of a continuous real-valued function is a $G_\delta$; the countability of $S_{n,k}$, from
+    the fact that a basis element through $p_{n,k}$ is of type (ii), (iii) or (iv) and the last two
+    contain all of $C_{n,k}$ by the parity of $m$ against $n\pm1$, so that each $U_r$ contains
+    $C_{n,k}$ minus a finite set; and the choice of $d$ outside countably many ordinates, the two
+    sequences $q^\pm_{n,k}$, their limits by the type-(i) neighbourhoods, and the conclusion
+    $f(a)=f(b)$ through the type-(iii) and type-(iv) neighbourhoods. The statement and the basis types
+    are cited by number, no page. Not checked in this commit: nothing of part (c) was touched or
+    re-read.
 
 ---
 
@@ -146,39 +160,36 @@ Step [#basis-covers]{.pf-ref} gives the covering condition and step [#basis-inte
 
 :::
 
-(b) For any continuous $f:X\to\RR$ and $c\in\RR$,
-$$
-f^{-1}(c)=\bigcap_{r=1}^\infty f^{-1}((c-1/r,c+1/r)),
-$$
-so every level set is a $G_\delta$.
+::: pf
 
-Fix odd $n$ and $k\ge2$, and put $c=f(p_{n,k})$. Since $f^{-1}(c)$ is a $G_\delta$ containing $p_{n,k}$, write it as $\bigcap_r U_r$ with each $U_r$ open and containing $p_{n,k}$. For each $r$, a basis element containing $p_{n,k}$ is of type (ii), or a type-(iii) or type-(iv) set, and the last two contain all of $C_{n,k}$: a type-(iii) set $B_m$ containing $p_{n,k}$ has $n<m$ with $m$ even, hence $m\ge n+1>n+1-1/k$, so every point of $C_{n,k}$ has first coordinate below $m$, and a type-(iv) set containing $p_{n,k}$ has $m<n$, hence $m\le n-1<n-1+1/k$, so every point of $C_{n,k}$ has first coordinate above $m$. In every case $C_{n,k}$ minus a finite set $F_r$ lies in $U_r$. Therefore
-$$
-S_{n,k}=\{p\in C_{n,k}:f(p)\ne f(p_{n,k})\}
-\subset\bigcup_{r=1}^\infty F_r,
-$$
-so $S_{n,k}$ is countable.
+::: {.pf-step #level-gdelta}
+(b) For every continuous $f:X\to\RR$ and every $c$ the level set $f^{-1}(c)$ is a $G_\delta$ in $X$.
 
-There are only countably many pairs $(n,k)$, so the set of $y$-coordinates of all points in all $S_{n,k}$ is countable. Choose
-$$
-d\in[-1,0]
-$$
-outside this countable set. Then for every odd $n$ and every $k\ge2$, the two points
-$$
-q^-_{n,k}=(n-1+1/k,d),\qquad q^+_{n,k}=(n+1-1/k,d)
-$$
-lie in $C_{n,k}\setminus S_{n,k}$. Hence
-$$
-f(q^-_{n,k})=f(p_{n,k})=f(q^+_{n,k}).
-$$
-As $k\to\infty$, the points $q^-_{n,k}$ converge to $(n-1,d)$ and $q^+_{n,k}$ converge to $(n+1,d)$: this is immediate from the type-(i) horizontal neighborhoods. Continuity gives
-$$
-f((n-1,d))=\lim_{k\to\infty}f(p_{n,k})=f((n+1,d)).
-$$
-Thus the values of $f$ at all points $(m,d)$ with even $m$ are equal to one common constant $c_0$. As $m\to-\infty$ through even integers, $(m,d)\to a$ by the type-(iii) neighborhood definition; as $m\to+\infty$, $(m,d)\to b$. Hence
-$$
-f(a)=c_0=f(b).
-$$
+::: pf-proof
+$f^{-1}(c)=\bigcap_{r=1}^{\infty}f^{-1}((c-1/r,c+1/r))$, an intersection of countably many open sets, each inverse image of an open interval under the continuous $f$.
+:::
+
+:::
+
+::: {.pf-step #countable-exceptions}
+(b) For odd $n$ and $k\ge2$, the set $S_{n,k}=\{p\in C_{n,k}:f(p)\ne f(p_{n,k})\}$ is countable.
+
+::: pf-proof
+Put $c=f(p_{n,k})$ and write the $G_\delta$ set $f^{-1}(c)=\bigcap_rU_r$ with each $U_r$ open and containing $p_{n,k}$, which step [#level-gdelta]{.pf-ref} allows. A basis element containing $p_{n,k}$ is of type (ii), (iii) or (iv): type (i) is excluded because a horizontal open segment through $p_{n,k}$ contains that point, and types (iii) and (iv) contain all of $C_{n,k}$, since a type-(iii) element $B_m$ containing $p_{n,k}$ has $n<m$ with $m$ even, hence $m\ge n+1>n+1-1/k$, so every point of $C_{n,k}$ has first coordinate below $m$, while a type-(iv) element containing $p_{n,k}$ has $m<n$, hence $m\le n-1<n-1+1/k$, so every point of $C_{n,k}$ has first coordinate above $m$. Each $U_r$ therefore contains $C_{n,k}$ minus a finite set $F_r$, and $S_{n,k}\subseteq\bigcup_rF_r$ is a countable union of finite sets.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) Choosing $d\in[-1,0]$ outside the countably many ordinates occurring in the sets $S_{n,k}$, one has $f((n-1)\times d)=f((n+1)\times d)$ for odd $n$, and consequently $f(a)=f(b)$.
+
+::: pf-proof
+The pairs $(n,k)$ are countable and each $S_{n,k}$ is countable by step [#countable-exceptions]{.pf-ref}, so the set of ordinates of points of $\bigcup S_{n,k}$ is countable and some $d\in[-1,0]$ avoids it. For that $d$ the points $q^-_{n,k}=(n-1+1/k,d)$ and $q^+_{n,k}=(n+1-1/k,d)$ lie in $C_{n,k}\setminus S_{n,k}$, so $f(q^-_{n,k})=f(p_{n,k})=f(q^+_{n,k})$; as $k\to\infty$ these converge to $(n-1,d)$ and $(n+1,d)$, by the type-(i) horizontal neighbourhoods, and continuity gives $f((n-1)\times d)=\lim_kf(p_{n,k})=f((n+1)\times d)$. Hence $f$ takes one value $c_0$ at all points $(m,d)$ with $m$ even, and $(m,d)\to a$ as $m\to-\infty$ through even integers while $(m,d)\to b$ as $m\to+\infty$, by the type-(iii) and type-(iv) definitions; so $f(a)=c_0=f(b)$.
+:::
+
+:::
+
+:::
 
 (c) First, one-point sets are closed, so $X$ is $T_1$: given distinct points $y\ne z$, a short horizontal segment through $z$ avoiding both $y$ and the points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ when $z$ is an ordinary point, a type-(ii) neighbourhood with $F$ enlarged by $y$ does the same when $z=p_{n,k}$, and the type-(iii) sets $B_m$ with $m$ large contain $z$ but not $y$ while the type-(iv) sets with $m$ small do the same for $z=b$.
 
