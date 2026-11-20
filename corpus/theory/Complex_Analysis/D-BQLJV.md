@@ -16,6 +16,8 @@ review: draft
 ::: {.definition}
 Let $z_0\in\CC$, let $r>0$, and let $f$ be [[D-E7A5W|holomorphic]] on the punctured disc $\DD_r(z_0)\setminus\{z_0\}$.
 The point $z_0$ is a \dfn{removable singularity} of $f$ if there exist $0<\rho\le r$ and a holomorphic function $g\colon \DD_\rho(z_0)\to\CC$ such that $f(z)=g(z)$ for $0<\abs{z-z_0}<\rho$.
+
+This is the extension condition of [@Ahl73, ch. 4, §3.1, Removable Singularities. Taylor's Theorem], Theorem 7 of which states that an analytic function on a region with a point removed extends analytically across that point if and only if $(z-a)f(z)\to0$ there; the definition above names the extension, and the theorem supplies the test.
 :::
 
 ::: {.remark}

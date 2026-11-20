@@ -24,6 +24,8 @@ $$
 f(z)=(z-z_0)^{-n}h(z)\qquad\text{for } 0<\abs{z-z_0}<\rho.
 $$
 $f$ has a \dfn{pole} at $z_0$ if it has a pole of some order $n\ge1$ there, and a pole of order $1$ is a \dfn{simple pole}.
+
+This is [@Ahl73, ch. 4, §3.2, Zeros and Poles], where a pole is a point at which $f(z)\to\infty$, the order $h$ is the order of the zero of $1/f$ there, and $f$ has the representation $f(z)=(z-a)^{-h}f_h(z)$ with $f_h$ analytic and nonzero at $a$ --- the display of the definition above.
 :::
 
 ::: {.proposition}

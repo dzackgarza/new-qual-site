@@ -20,6 +20,8 @@ review: draft
 ::: {.definition}
 Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $\DD_r(z_0)\setminus\{z_0\}$.
 The [[D-IWIA5|isolated singularity]] $z_0$ is an \dfn{essential singularity} of $f$ if it is neither a [[D-BQLJV|removable singularity]] nor a [[D-AUD6K|pole]] of $f$.
+
+This is case (iii) of [@Ahl73, ch. 4, §3.2, Zeros and Poles], which calls $a$ an essential isolated singularity when it is neither removable nor a pole, cases (i) and (ii) there.
 :::
 
 ::: {.proposition}

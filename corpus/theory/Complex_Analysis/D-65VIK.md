@@ -20,6 +20,8 @@ $$
 f(z)=(z-z_0)^n g(z)\qquad\text{for all } z\in U.
 $$
 A zero of order $1$ is a \dfn{simple zero}.
+
+This is [@Ahl73, ch. 4, §3.2, Zeros and Poles], where a zero of order $h$ is one at which $f$ and its first $h-1$ derivatives vanish and $f^{(h)}$ does not, and (30) of that section is the factorisation $f(z)=f_h(z)(z-a)^h$ with $f_h(a)\neq0$.
 :::
 
 ::: {.proposition}
