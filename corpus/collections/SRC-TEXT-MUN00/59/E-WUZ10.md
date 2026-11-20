@@ -67,7 +67,7 @@ Prove that your answer is correct.
 The exercise is §59 Exercise 1, with the warning in its bracket
 that a union of two simply connected spaces with a point in common need not be
 simply connected. The proof is transcribed from Pearse, *Topology (2nd ed.) —
-James R. Munkres*, solutions, Cornell 2005, §59 Exercise 1, his p. 24, read in
+James R. Munkres*, solutions, Cornell 2005, §59 Exercise 1, his, read in
 `tmp/sources/cornell-erin-munkres.md`: it exhibits $X$ as the union of two open
 subspaces with simply connected parts and path connected intersection, so that
 Corollary 59.2  applies. The bracket's warning is answered by the

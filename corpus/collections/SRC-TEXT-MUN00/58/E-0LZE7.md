@@ -133,7 +133,7 @@ such loops exist, a circle being a continuous image of $I$ that identifies the t
 endpoints.
 
 Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §58
-Exercise 4, his pp. 22--23, read in `tmp/sources/cornell-erin-munkres.md`,
+Exercise 4, his, read in `tmp/sources/cornell-erin-munkres.md`,
 describes the two maps in words: its $f$ maps the points of the figure eight
 inside its dotted line to the vertical bar of the theta space, and its $g$ maps
 the vertical bar to the "centre point" of the figure eight where the two loops

@@ -45,7 +45,7 @@ $$
 
 ::: {.solution}
 
-The argument is Problem 6A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 2--3 of that file, transcribed: write $a$, $b$, $c$ as products of prime powers, so that the $\gcd$ takes the smaller exponent and the $\lcm$ the larger at each prime, and the identity follows from $\min(x,\max(y,z))=\max(\min(x,y),\min(x,z))$, whose two sides agree unless $x$ is largest. The card writes the exponents as valuations $v_p$ and adds the case check; the packet's sentence prints "max" where the $\gcd$ needs "min", an evident slip that the card's $\min$ corrects.
+The argument is Problem 6A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: write $a$, $b$, $c$ as products of prime powers, so that the $\gcd$ takes the smaller exponent and the $\lcm$ the larger at each prime, and the identity follows from $\min(x,\max(y,z))=\max(\min(x,y),\min(x,z))$, whose two sides agree unless $x$ is largest. The card writes the exponents as valuations $v_p$ and adds the case check; the packet's sentence prints "max" where the $\gcd$ needs "min", an evident slip that the card's $\min$ corrects.
 
 ::: pf
 

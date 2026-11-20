@@ -44,7 +44,7 @@ Since this problem is part of the proof of Schwarz's lemma, quoting that lemma d
 
 ::: {.solution}
 
-The argument is Problem 7B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 6--7 of that file, transcribed: put $g=f/z$, so that the claim is $\abs{g(0)}\le1$; by the maximum modulus principle $\abs{g(0)}$ is at most the maximum of $\abs{g}$ on the circle of radius $1-\varepsilon$, which is at most $1/(1-\varepsilon)$ because $\abs{f}\le1$ and $\abs{1/z}\le1/(1-\varepsilon)$; and $\varepsilon>0$ is arbitrary. The card adds the removal of the singularity at $0$, which makes $g$ analytic on the disc, and the step structure.
+The argument is Problem 7B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: put $g=f/z$, so that the claim is $\abs{g(0)}\le1$; by the maximum modulus principle $\abs{g(0)}$ is at most the maximum of $\abs{g}$ on the circle of radius $1-\varepsilon$, which is at most $1/(1-\varepsilon)$ because $\abs{f}\le1$ and $\abs{1/z}\le1/(1-\varepsilon)$; and $\varepsilon>0$ is arbitrary. The card adds the removal of the singularity at $0$, which makes $g$ analytic on the disc, and the step structure.
 Let
 $$
 D\coloneqq\{z\in\CC:\abs{z}<1\}.

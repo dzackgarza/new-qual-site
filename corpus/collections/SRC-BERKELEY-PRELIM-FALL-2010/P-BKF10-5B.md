@@ -59,7 +59,7 @@ Differentiate.
 
 ::: {.solution}
 
-The argument is Problem 5B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed pp. 5--6 of that file, transcribed: $g'(x)=(xf'(x)-f(x))/x^2$ by the quotient rule, so it suffices to show $xf'(x)>f(x)$; the mean value theorem on $[0,x]$ gives $c\in(0,x)$ with $f'(c)=f(x)/x$; and $f'$ increasing gives $xf'(x)>xf'(c)=f(x)$. What the card adds is the step structure and the endpoint discussion at $x=0$, not the argument.
+The argument is Problem 5B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: $g'(x)=(xf'(x)-f(x))/x^2$ by the quotient rule, so it suffices to show $xf'(x)>f(x)$; the mean value theorem on $[0,x]$ gives $c\in(0,x)$ with $f'(c)=f(x)/x$; and $f'$ increasing gives $xf'(x)>xf'(c)=f(x)$. What the card adds is the step structure and the endpoint discussion at $x=0$, not the argument.
 
 ::: pf
 

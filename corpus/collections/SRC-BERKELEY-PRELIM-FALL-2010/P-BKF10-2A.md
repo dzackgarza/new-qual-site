@@ -39,7 +39,7 @@ Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x
 
 ::: {.solution}
 
-The argument is Problem 2A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 1 of that file, transcribed: the functions $x\mapsto x^k$ form an infinite list of functions from the finite set $R$ to itself, so two of them coincide by the pigeonhole principle, and that equality is the required $x^m=x^n$. What the card adds is the step structure and the explicit $f_k$, not the argument.
+The argument is Problem 2A of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: the functions $x\mapsto x^k$ form an infinite list of functions from the finite set $R$ to itself, so two of them coincide by the pigeonhole principle, and that equality is the required $x^m=x^n$. What the card adds is the step structure and the explicit $f_k$, not the argument.
 
 ::: pf
 

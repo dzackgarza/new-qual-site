@@ -114,7 +114,7 @@ If $Y$ is a closed subset of $\PP^r$, and if $Z$ is a linear subspace of dimensi
 :::
 
 ::: {.solution}
-Part (b) below is transcribed from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, printed p. 10, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, where the citation is placed; parts (a), (c) and (d) are this card's own proofs, which the same pages reach by the same means.
+Part (b) below is transcribed from A. Shichijo, *R.Hartshorne "Algebraic Geometry" 演習問題への解答* (Solutions to the exercises in Hartshorne's *Algebraic Geometry*), 2020/March version, <https://shitijyou-a.github.io/math/alg-geo/har-ag-solutions/>, Chapter 1 section 5, read in `tmp/sources/shitijyou-ch1-section5.md`, the MinerU extraction of `tmp/sources/shitijyou-ch1-section5.pdf`, where the citation is placed; parts (a), (c) and (d) are this card's own proofs, which the same pages reach by the same means.
 
 Let $V=k^{n+1}$.
 Because $\operatorname{char}k\ne2$, the quadratic polynomial $f$ has an associated symmetric bilinear form

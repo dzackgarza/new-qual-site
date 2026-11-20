@@ -53,7 +53,7 @@ show that the absolute difference between $G(x)$ and the sum of the first $n$ te
 
 ::: {.solution}
 
-The argument is Problem 9B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 7 of that file, transcribed: (a) the terms $n!/x^{n+1}$ do not tend to $0$, so the series diverges; (b) repeated integration by parts writes $G(x)$ as the $n$-th partial sum plus $(-1)^nn!x^{-n}\int_0^\infty e^{-tx}(1+t)^{-n-1}dt$, whose sign is $(-1)^n$, so the partial sums alternate about $G(x)$ and the error is at most the first omitted term; (c) at $x=100$ that term is $10!/100^{11}<10^{-11}$. What the card adds is the step structure and the divergence of $n!/x^{n+1}$ verified by the ratio, not the argument.
+The argument is Problem 9B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: (a) the terms $n!/x^{n+1}$ do not tend to $0$, so the series diverges; (b) repeated integration by parts writes $G(x)$ as the $n$-th partial sum plus $(-1)^nn!x^{-n}\int_0^\infty e^{-tx}(1+t)^{-n-1}dt$, whose sign is $(-1)^n$, so the partial sums alternate about $G(x)$ and the error is at most the first omitted term; (c) at $x=100$ that term is $10!/100^{11}<10^{-11}$. What the card adds is the step structure and the divergence of $n!/x^{n+1}$ verified by the ratio, not the argument.
 
 ::: pf
 

@@ -99,7 +99,7 @@ Since $S^2 - \theset{p}$ is homeomorphic with $\RR^2$, and $\RR^2$ is simply con
 The exercise is §59 Exercise 2, and it asks for a criticism of a
 proposed proof, not for a proof. The criticism is transcribed from Pearse,
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §59 Exercise 2,
-his p. 24, read in `tmp/sources/cornell-erin-munkres.md`: the step that chooses
+his, read in `tmp/sources/cornell-erin-munkres.md`: the step that chooses
 $p\notin f(I)$ has no justification, because a loop can be surjective, and the
 source points to Munkres's Theorem 44.1  for a continuous map of
 $I$ onto $I^2$ to compose with.

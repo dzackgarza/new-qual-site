@@ -41,7 +41,7 @@ Show that $f$ achieves either a minimum value or a maximum value.
 
 ::: {.solution}
 
-The argument is Problem 1B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 4 of that file, transcribed: some $f^{-1}([-n,n])$ is nonempty and compact, hence lies in a closed ball $D_R$; $\RR^2\setminus D_R$ is connected and maps into $\RR\setminus[-n,n]$, so it maps into $(-\infty,-n)$ or into $(n,\infty)$; and then the supremum or the infimum of $f$ is attained on the compact $D_R$. What the card adds is the step structure and the Heine--Borel verification that $K$ is compact, not the argument.
+The argument is Problem 1B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, transcribed: some $f^{-1}([-n,n])$ is nonempty and compact, hence lies in a closed ball $D_R$; $\RR^2\setminus D_R$ is connected and maps into $\RR\setminus[-n,n]$, so it maps into $(-\infty,-n)$ or into $(n,\infty)$; and then the supremum or the infimum of $f$ is attained on the compact $D_R$. What the card adds is the step structure and the Heine--Borel verification that $K$ is compact, not the argument.
 
 ::: pf
 

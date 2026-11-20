@@ -44,8 +44,7 @@ Suppose that $a$ has order $15$. Find all of the left cosets of $\langle a^{5} \
 
 ::: {.solution}
 
-The exercise is Gallian, *Contemporary Abstract Algebra* (7th ed.), Chapter 7 exercise 8,
-printed p. 149, and is item 8 of the retained Chapter 7 solution outline
+The exercise is Gallian, *Contemporary Abstract Algebra* (7th ed.), Chapter 7 exercise 8, and is item 8 of the retained Chapter 7 solution outline
 (`assets/attachments/Ch7Sltns.pdf`). The outline's five cosets are proved below to
 be distinct and exhaustive.
 

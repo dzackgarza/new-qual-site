@@ -130,7 +130,7 @@ The exercise is §58 Exercise 2, and its question is which of
 three alternatives holds for each of the twelve spaces. The proofs for (a),
 (b), (c), (d), (f), (g), (h), (k) and (l) are transcribed from Pearse,
 *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005, §58 Exercise 2,
-his pp. 20--22, read in `tmp/sources/cornell-erin-munkres.md`; each of them
+his, read in `tmp/sources/cornell-erin-munkres.md`; each of them
 exhibits a deformation retraction and applies Theorem 58.3,
 together with the computation $\pi_1(S^1)\cong\ZZ$ of Theorem 54.5  and the two deformation retracts of the doubly punctured plane listed as
 Examples 2 and 3 on printed p. 362.

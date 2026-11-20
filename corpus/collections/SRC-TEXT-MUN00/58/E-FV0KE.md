@@ -107,8 +107,7 @@ its hint: $X$ is the union of the segments $\theset{1/n}\times I$ for
 $n\in\ZZ_+$, of $0\times I$ and of $I\times 0$ in $\RR^2$, and $x_0=(0,1)$.
 
 The proof is transcribed from Cameron Gordon, *Algebraic Topology*, Fall 2019,
-notes by Jackson Van Dyke, Example 1.11 with Claim 1.1 and its proof, printed
-pp. 12--13, read in `tmp/sources/utexas-gordon-algtop-notes.md`. The claim there
+notes by Jackson Van Dyke, Example 1.11 with Claim 1.1 and its proof, read in `tmp/sources/utexas-gordon-algtop-notes.md`. The claim there
 is that the comb space does not strong deformation retract to $(0,1)$, which in
 this book's terminology (printed p. 360) is the assertion that $\theset{x_0}$ is
 not a deformation retract of $X$; the contractibility of the comb is part of the

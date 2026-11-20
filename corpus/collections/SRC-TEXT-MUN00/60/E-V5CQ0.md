@@ -64,7 +64,7 @@ with its antipode; write $p:S^2\to P^2$ for that quotient map, and
 $q:B^2\to X=B^2/\!\sim$ for the quotient of the exercise.
 
 The proof is transcribed from Pearse, *Topology (2nd ed.) — James R. Munkres*,
-solutions, Cornell 2005, §60 Exercise 2, his pp. 26--27, read in
+solutions, Cornell 2005, §60 Exercise 2, his, read in
 `tmp/sources/cornell-erin-munkres.md`: the two maps $f$ and $g$ below are the
 source's, the pasting check that $f$ is well defined is the source's, and the
 final step is the compact-to-Hausdorff theorem. That final step is where the

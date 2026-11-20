@@ -41,7 +41,7 @@ Give an example of a conformal map from the unit disk $\{z:\abs{z}<1\}$ onto the
 
 ::: {.solution}
 
-The problem is Problem 3B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, printed p. 5 of that file, but this is not a transcription: the packet reaches the sector $0<\arg z<\pi/4$ by $z\mapsto z-i$, then $z\mapsto1/z$, then $z\mapsto z-i/2$, then a fourth root, while the card goes to the upper half-plane by the single Möbius map $C(z)=i(1+z)/(1-z)$ and takes the principal fourth root there. Both are conformal bijections onto that sector and they are different maps, so the verification of conformality in each step is the card's own; the packet's route is recorded here as the source of the problem and of the method.
+The problem is Problem 3B of the retained Berkeley preliminary-exam solution packet, `assets/attachments/f10solutions.pdf`, but this is not a transcription: the packet reaches the sector $0<\arg z<\pi/4$ by $z\mapsto z-i$, then $z\mapsto1/z$, then $z\mapsto z-i/2$, then a fourth root, while the card goes to the upper half-plane by the single Möbius map $C(z)=i(1+z)/(1-z)$ and takes the principal fourth root there. Both are conformal bijections onto that sector and they are different maps, so the verification of conformality in each step is the card's own; the packet's route is recorded here as the source of the problem and of the method.
 Let
 $$
 D\coloneqq\{z\in\CC:\abs{z}<1\},

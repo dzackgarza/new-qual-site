@@ -88,7 +88,7 @@ Use this covering space to show that the fundamental group of the figure eight i
 The exercise is §60 Exercise 5, and the answer is that the
 fundamental group of the figure eight is not abelian. The proof is transcribed
 from Pearse, *Topology (2nd ed.) — James R. Munkres*, solutions, Cornell 2005,
-§60 Exercise 5, his pp. 27--28, read in
+§60 Exercise 5, his, read in
 `tmp/sources/cornell-erin-munkres.md`: take two loops, lift them from one point of
 the covering space the exercise names, and find that the two lifts of the two
 products end at different points, so by Theorem 54.3  the products

@@ -61,7 +61,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 35 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), printed p. 260, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 35 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
 
 If $M$ is a noncompact $R$-orientable $n$-manifold with boundary $\partial M$ having a collar neighborhood in $M$, show that there are Poincaré duality isomorphisms $H_c^k(M;R)\approx H_{n-k}(M,\partial M;R)$ for all $k$, using the five-lemma and the following diagram:
 

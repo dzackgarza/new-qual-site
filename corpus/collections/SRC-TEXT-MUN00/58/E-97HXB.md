@@ -72,7 +72,7 @@ $X$ is contractible when $\operatorname{id}_X$ is nulhomotopic, that is,
 homotopic to a constant map.
 
 The proof is transcribed from UC Riverside Math 205A, Fall 2014, Solutions Part
-7, Munkres §58 Exercise 6, the sheet's p. 5, read in
+7, Munkres §58 Exercise 6, the sheet's, read in
 `tmp/sources/ucr-math205A-2014-solutions07.md`. Its one substantive point is that
 the constant map the homotopy ends at may be taken with its value in $A$, so that
 composing with the retraction produces a constant map of $A$; that is step
