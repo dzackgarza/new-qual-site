@@ -15,7 +15,9 @@ Throughout, $G$ is a group with identity $e$, and $H$ and $K$ are subgroups of $
 
 ## Subgroups
 
-An inclusion $\generators S\leq H$ is checked on the generators alone.
+::: {.fact title="A subgroup containing $S$ contains $\generators S$"}
+If $S\subseteq H$, then $\generators S\leq H$: the subgroup $\generators S$ is the intersection of all the subgroups of $G$ that contain $S$, and $H$ is one of them.
+:::
 
 [[D-IQ4OX]]
 
@@ -37,7 +39,9 @@ Lagrange's theorem applies to an element through the cyclic subgroup it generate
 
 ## Commutators and the derived series
 
-$[x,y]=e$ exactly when $x$ and $y$ commute.
+::: {.fact title="The commutator measures noncommutation"}
+$[x,y]=x y \inverseof{x} \inverseof{y}$, so $[x,y]=e$ exactly when $xy=yx$, and the commutator is trivial on every pair exactly when $G$ is abelian.
+:::
 
 [[D-BQ4BQ]]
 
@@ -47,7 +51,9 @@ $[x,y]=e$ exactly when $x$ and $y$ commute.
 
 ## Conjugacy
 
-Conjugation by $g$ is an automorphism of $G$, so conjugate elements have the same order.
+::: {.fact title="Conjugation preserves order"}
+For $g\in G$, $c_g\colon x\mapsto gx\inverseof{g}$ is an automorphism with inverse $c_{\inverseof{g}}$, so conjugate elements have the same order.
+:::
 
 [[D-HLDEY]]
 
@@ -87,7 +93,9 @@ Normality is weaker than being characteristic: see [[algebra/groups/characterist
 
 ## Cosets and the index
 
-All cosets of $H$ have $\size{H}$ elements.
+::: {.fact title="All cosets of $H$ have $\size H$ elements"}
+Left multiplication by $g$ is a bijection $H\to gH$ with inverse left multiplication by $\inverseof{g}$, so $\size{gH}=\size H$, and $G$ is the disjoint union of the $\size{G}/\size{H}$ left cosets when $G$ is finite.
+:::
 
 [[FD-JI2RH]]
 
