@@ -74,6 +74,22 @@ audit:
     by the radial computation. Its text is an outline; the card's steps supply the differentiability
     of the distance along a path, the metric differentiation, and the completeness argument. Not
     checked: anything in the published document outside its Problem 3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A complete published solution of this Problem was located and now heads the solution's opening
+    paragraph: the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British
+    Columbia (instructor Malabika Pramanik), *Homework 6 Solutions*,
+    `https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_6_Solutions.pdf`,
+    at its Chapter 8, Problem 3. Read there and checked against Chapter 8, Problem 3: it states the
+    hyperbolic length $\abs{w}_z=\abs{w}/(1-\abs z^2)$ and the distance as the infimum of the integral
+    of that length, proves the contraction by Schwarz--Pick under the integral sign, the equality for
+    automorphisms and the converse that a distance-preserving self-map is an automorphism or its
+    conjugate, the normalization of a pair of points to $0$ and $s\in[0,1)$, the radial computation
+    $d(0,s)=\frac12\log\frac{1+s}{1-s}$, and the general formula. The card's steps (a)--(e) and its
+    converse step are that argument; the Wang Zirui outline, cited in the previous event, remains as
+    the secondary source. Not checked: anything in the UBC set outside its Chapter 8, Problem 3.
 ---
 
 ::: {.exercise}
@@ -136,7 +152,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 3).
 :::
 
 ::: {.solution}
-This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). A published solution of it is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`; checked against this Problem it carries the hyperbolic metric and distance on the disc, the contraction of the distance by Schwarz--Pick, the identification of the distance isometries with automorphisms or their conjugates, and the formula $d(z_1,z_2)=\frac12\log\frac{1+\rho(z_1,z_2)}{1-\rho(z_1,z_2)}$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records; the Schwarz--Pick lemma in the infinitesimal form (Exercise 13 of the same chapter) is used as given.
+This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). The published solution of it is the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British Columbia (instructor Malabika Pramanik), *Homework 6 Solutions*, at its Chapter 8, Problem 3: it works all five bullets and the converse, namely the Schwarz--Pick contraction of the hyperbolic distance, the equality for automorphisms and the converse that a distance-preserving self-map is an automorphism or its conjugate, the normalization of a pair of points to $0$ and $s\in[0,1)$, the computation $d(0,s)=\frac12\log\frac{1+s}{1-s}$, and the formula for $d(z_1,z_2)$ in general. The steps below follow that solution; the set is not retained in this checkout and was read at its source, and Wang Zirui's *Complete Solutions for Chapter 8* covers the same Problem in outline.
 
 ::: pf
 
