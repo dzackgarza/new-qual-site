@@ -43,6 +43,11 @@ U\setminus\supp s
 =\{P\in U \st s_P=0\}.
 $$
 
+Hence
+$$
+\boxed{\supp s\text{ is closed in }U.}
+$$
+
 ::: pf-proof
 
 Let $P\in U$ satisfy
@@ -66,21 +71,6 @@ $$
 V\subseteq U\setminus\supp s.
 $$
 Every point of the complement has an open neighborhood contained in the complement, so the complement is open.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Hence
-$$
-\boxed{\supp s\text{ is closed in }U.}
-$$
-
-::: pf-proof
-
-This is exactly the conclusion of step [](#s1){.pf-ref}.
 
 :::
 
@@ -155,7 +145,7 @@ $$
 
 ::: pf-proof
 
-The first assertion is step [](#s2){.pf-ref} and the second is the example in step [](#s3){.pf-ref}.
+The first assertion is step [](#s1){.pf-ref} and the second is the example in step [](#s3){.pf-ref}.
 
 :::
 
