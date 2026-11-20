@@ -15,6 +15,15 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
+    Two additions after an independent read. The hypothesis that X is a path-connected CW complex
+    is now stated, with the CW-approximation sentence for a general H-space (printed p. 281). And
+    a step now proves that the inclusion X -> P_nX is an H-map, which the earlier text left
+    implicit although Hatcher's Postnikov tower on printed p. 410 contains those maps as well as
+    the maps P_nX -> P_{n-1}X.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
     Restructured under #2 into numbered steps. No retained solution set covers §4.3 Exercise 21
     (Sam's set has 17 and 19-20, not 21), so the argument is the card's own. The functoriality
     that the earlier text asserted in one sentence is now derived from two numbered results:
@@ -56,7 +65,7 @@ audit:
 ---
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own. Everything rests on two numbered results: Example 4.16 (printed p.~354) builds the Postnikov stage $P_nX$ from $X$ by attaching cells of dimension at least $n+2$, so that $\pi_i(P_nX)=0$ for $i>n$ and $X\to P_nX$ is an isomorphism on $\pi_i$ for $i\le n$; and Lemma 4.7 (printed p.~348) extends maps from a CW complex over cells of dimension at least $n+2$ into a space whose homotopy vanishes above degree $n$, uniquely up to homotopy.
+No retained solution set covers this exercise, so the argument is the card's own. Let $X$ be a path-connected CW complex with basepoint a $0$-cell, equipped with an H-space multiplication $\mu\colon X\times X\to X$; an H-space that is not a CW complex is replaced by a CW approximation, which carries an H-space structure (printed p.~281). Everything rests on two numbered results: Example 4.16 (printed p.~354) builds the Postnikov stage $P_nX$ from $X$ by attaching cells of dimension at least $n+2$, so that $\pi_i(P_nX)=0$ for $i>n$ and $X\to P_nX$ is an isomorphism on $\pi_i$ for $i\le n$; and Lemma 4.7 (printed p.~348) extends maps from a CW complex over cells of dimension at least $n+2$ into a space whose homotopy vanishes above degree $n$, uniquely up to homotopy.
 
 ::: pf
 
@@ -105,6 +114,15 @@ Let $e_n$ be the basepoint of $P_nX$. The maps $\mu_n(\id\times e_n)$ and $\id$ 
 
 :::
 
+::: {.pf-step #inclusion-hmap}
+The inclusion $i\colon X\to P_nX$ is an H-map: $\mu_n(i\times i)\simeq i\mu$.
+
+::: pf-proof
+By step [](#mult){.pf-ref}, $\mu_n=\tilde\mu\,\eta$, and $\eta$ restricts to the inclusion $j\colon X\times X\to P_n(X\times X)$ on $X\times X$ by step [](#product){.pf-ref}, so $\mu_n(i\times i)=\tilde\mu\,\eta(i\times i)\simeq\tilde\mu\,j$. The map $\tilde\mu$ extends the composite $X\times X\xrightarrow{\mu}X\xrightarrow{i}P_nX$ over $P_n(X\times X)$, so $\tilde\mu\,j\simeq i\mu$.
+:::
+
+:::
+
 ::: {.pf-step #tower}
 Every tower map $p\colon P_nX\to P_{n-1}X$ is an H-map.
 
@@ -118,7 +136,7 @@ Both $p\,\mu_n$ and $\mu_{n-1}(p\times p)$ are maps $P_nX\times P_nX\to P_{n-1}X
 In the Postnikov tower of an H-space all stages are H-spaces and all tower maps are H-maps.
 
 ::: pf-proof
-Step [](#hspace){.pf-ref} gives the H-space structure on each $P_nX$ and step [](#tower){.pf-ref} the multiplicativity of each $P_nX\to P_{n-1}X$ up to homotopy.
+Step [](#hspace){.pf-ref} gives the H-space structure on each $P_nX$, step [](#inclusion-hmap){.pf-ref} shows that each $X\to P_nX$ is an H-map, and step [](#tower){.pf-ref} the multiplicativity of each $P_nX\to P_{n-1}X$ up to homotopy.
 :::
 
 :::
