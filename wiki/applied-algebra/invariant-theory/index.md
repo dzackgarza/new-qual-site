@@ -9,7 +9,7 @@ topics:
 # Invariant theory
 
 Let $G$ be a group acting linearly on a finite-dimensional vector space $V$ over a field $k$, so that $G$ acts on the polynomial ring $k[V]$ by $k$-algebra automorphisms.
-The [[D-INVRING|invariant ring]] $k[V]^G$ is the graded subring of the polynomials fixed by every element of $G$, and $k[V]^G_d$ is its degree-$d$ part.
+The [[D-INVRING|invariant ring]] $k[V]^G$ is the graded subring of the polynomials fixed by every element of $G$, and $(k[V]^G)_d$ is its degree-$d$ part.
 
 ## Finite generation
 
