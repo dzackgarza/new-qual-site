@@ -5,116 +5,20 @@ order: 10
 
 # Qualifying-exam topics
 
-## Scheduling
+The topics a topology qualifying examination covers, in the order the chapters develop them.
 
-Fridays 12--2 PM EST.
+- [[topology/point-set/index|Point-set topology]]: topologies, continuity, subspaces and products, closures, bases, retracts; compactness, metric spaces, completeness and boundedness; connectedness; the separation axioms; the tube lemma; the topologist's sine curve.
 
-- Week 1 (May 21): Preliminary review (point-set)
+- [[topology/fundamental-group/index|The fundamental group]]: van Kampen's theorem, homotopic maps and change of basepoint, nullhomotopic maps.
 
-  - Topologies, continuity, homeomorphisms, subspaces and products, closures, open/closed/clopen, bases, retracts
+- [[topology/covering-spaces/index|Covering spaces]]: lifting criteria, deck transformations, regular covers, the universal cover, the classification of covers by subgroups of $\pi_1$.
 
-  - Compactness, metric spaces, completeness, boundedness
+- [[topology/cw-complexes/index|CW complexes]]: the cellular chain complex, Euler characteristic, simplicial complexes, the Euler characteristic of a product.
 
-  - Connectedness (path-connected & "locally" versions), totally disconnected
+- [[topology/homology/index|Homology and cohomology]]: singular, cellular and relative homology; Mayer--Vietoris; the universal coefficient theorem; Künneth; Poincaré duality; the Lefschetz fixed point formula.
 
-  - Separation axioms, Hausdorff spaces, normal, regular
+- [[topology/surfaces/index|Surfaces and manifolds]]: manifolds and boundary, connected sums, fundamental polygons, the classification of surfaces.
 
-  - The tube lemma
+- [[topology/degree/index|Degree and fixed points]]: degree, the Lefschetz and Brouwer theorems, the hairy ball theorem, Borsuk--Ulam.
 
-  - Common counterexamples, such as the topologist's sine curve
-
-- Week 2 (May 28): The fundamental group
-
-  - Van Kampen
-
-  - Homotopic maps and conjugacy, change of base point
-
-  - Nullhomotopic maps
-
-- Week 3 (June 4): Covering spaces
-
-  - Definitions, HLP, deck transformations, regular covers, universal cover
-
-  - Classifications of covers, applications to subgroups of free groups
-
-  - Lifting criterion, Galois correspondence
-
-- Week 4 (June 11): CW complexes, pushouts
-
-  - Cellular chain complex
-
-  - Euler characteristic
-
-  - Hurewicz, LES in homotopy
-
-  - Simplicial complexes
-
-- Week 5 (June 18): Homology
-
-  - Mayer--Vietoris, Künneth, UCT
-
-  - Cellular homology (direct definition)
-
-  - Relative homology
-
-  - Facts for manifolds (dim 3 and 4), Poincaré duality
-
-- Week 6 (June 25): Surfaces
-
-  - Definition of manifolds (sphere, torus, projective spaces)
-
-  - Connect sum, fundamental polygons and gluing
-
-  - Classification of surfaces, boundary components
-
-- Week 7 (July 2): Fixed points and degree theory
-
-  - Degree theory
-
-  - Lefschetz, Brouwer, hairy ball theorem, Borsuk--Ulam
-
-- Week 8 (July 9): Buffer
-
-- Week 9 (July 16): Buffer
-
-- Week 10  (July 23): Buffer
-
-- Week 11 (July 30): Buffer
-
-- Week 12 (August 6): Buffer
-
-- Week 13 (August 13): Timed practice exam
-
-- Qualifying exams: Monday and Tuesday, August 16--17
-
-## Topics
-
-- Fundamental groups
-
-- Covering spaces
-
-- Higher homotopy groups
-
-- Fibrations and the long exact sequence of a fibration
-
-- Singular homology and cohomology
-
-- Relative homology
-
-- CW complexes and the homology of CW complexes
-
-- Mayer--Vietoris
-
-- Universal coefficient theorem
-
-- Künneth formula
-
-- Poincaré duality
-
-- Lefschetz fixed point formula
-
-- Hopf index theorem
-
-- Čech cohomology and de Rham cohomology
-
-- Equivalence between singular, Čech and de Rham cohomology
+- [[topology/appendices/appendix|Higher homotopy]]: fibrations and their long exact sequence, the Hurewicz and Freudenthal theorems, homotopy groups of spheres, Bott periodicity.
