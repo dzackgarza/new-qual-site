@@ -686,6 +686,36 @@ audit:
     C_0.f = 1 and f^2 = 0 gives 6e+6g-6-3e+6 = 3e+6g, and
     p_a = 1+(Y^2+Y.K_X)/2 = 3g-8-3e. Not checked: the printed book, Xie and
     Miyanishi, only the retained text layers, and no example was computed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #168, the reader's report of 2026-11-20: step s10 used one letter for
+    two divisors. The step's display defines $D=2C_0$, and the paragraph
+    proving non-ampleness called the curve of step s7, which lies in the class
+    $3C_0-3f$, by the same letter; its display
+    $D\cdot C_0=(3C_0-3f)\cdot C_0$ then named the divisor on the left and the
+    curve on the right. The curve is now $Y$ throughout: the step proves
+    $Y\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0$, with $C_0^2=1$ from step s6,
+    hence $D\cdot Y=2C_0\cdot Y=0$ for $D=2C_0$, and concludes that $D$ is not
+    ample because an ample divisor meets every irreducible curve positively,
+    the easy direction of the Nakai--Moishezon criterion, Theorem 1.10 of
+    chapter V. No number changes.
+    The step also said that $e=-1$, char $k=3$ and $g=3$ all fail the hypotheses
+    of Proposition 2.21(b). That is false for $e=-1$: the hypotheses are $e<0$
+    together with char $k=0$ or $g\le1$, and $e=-1$ satisfies the first while
+    char $k=3$ and $g=3>1$ fail the second. The step now says so, and it quotes
+    Remark 2.21.1 through the clause that names Exercise 2.15, which the earlier
+    truncated quotation had dropped. The event of 2026-11-16 that lists $e=-1$
+    among the failed hypotheses is left as written; the reading of this event is
+    the corrected one.
+    The report's other item, step s8's inference of $Y=3\Sigma$ from agreement
+    on a dense open set, is not changed here: the paragraph carrying it is the
+    one of e37ba753ce, and bd31ce799d, an ancestor of this commit, replaced it
+    by the order-of-a-rational-section argument the card now carries.
+    Citations in this event and in the step are by numbered statement, and no
+    page locator is added. Not checked: the printed book, only the retained
+    text layer, and no example was computed.
 
 ---
 
@@ -943,21 +973,21 @@ $$
 satisfies the numerical hypotheses of (2.21.b), namely $a>0$ and $b>\frac12ae$, but is not ample.
 
 ::: pf-proof
-Proposition 2.21(b), reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold, and the proposition cannot be applied to $X$, whose $e=-1$, char $k=3$ and $g=3$ fail its hypotheses. That is the case its Remark 2.21.1, sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample".
+Proposition 2.21(b) reads: a divisor $D\equiv aC_0+bf$ is ample if and only if $a>0$ and $b>\frac12ae$; the proposition's own hypotheses are $e<0$ together with char $k=0$ or $g\le1$. The numerics are the book's, and the passage from the disjoint curve to non-ampleness is this card's own. For $D=2C_0$ one has $a=2$, $b=0$ and $e=-1$, so $a>0$ and $b=0>-1=\frac12\cdot2\cdot(-1)$: the two numerical conditions hold. The proposition itself cannot be applied to $X$: its hypothesis $e<0$ holds, since $e=-1$, while char $k=3\ne0$ and $g=3>1$ fail the alternative char $k=0$ or $g\le1$. That is the case Remark 2.21.1 sets aside: "In the remaining case $e<0$, char $k=p>0$, $g\ge2$, we cannot get necessary and sufficient conditions for $D$ to be ample, but it is possible to get some partial results (Ex. 2.14) and (Ex. 2.15)".
 
-For non-ampleness, step [](#s7){.pf-ref} gives an integral curve $D$ in the class $3C_0-3f$, and
+For non-ampleness, step [](#s7){.pf-ref} gives an integral curve $Y$ in the class $3C_0-3f$, and
 $$
-D\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0,
+Y\cdot C_0=(3C_0-3f)\cdot C_0=3C_0^2-3=0,
 $$
-which is Xie's $E\cap C'=\emptyset$ in intersection numbers. Hence
+with $C_0^2=1$ by step [](#s6){.pf-ref}; this is Xie's $E\cap C'=\emptyset$ in intersection numbers. Hence
 $$
 D\cdot Y=2\,C_0\cdot Y=0
 $$
-for the divisor $D=2C_0$ of the statement and the curve $Y$ of step [](#s7){.pf-ref}, and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon [[T-SRFNAKAI]]. Therefore
+for the divisor $D=2C_0$ of the statement, and an ample divisor meets every irreducible curve positively, by Nakai--Moishezon (1.10) [[T-SRFNAKAI]]. Therefore
 $$
 \boxed{D\text{ is not ample}.}
 $$
-Hartshorne 1971 announces the same failure for the bundle: its Example 3.2, is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
+Hartshorne 1971 announces the same failure for the bundle: its Example 3.2 is "A bundle $E$ of rank 2 on $X$, such that every quotient bundle of $E$ has positive degree, but $E$ is not ample", the bundle whose projectivization is $X$.
 :::
 
 :::
