@@ -10173,3 +10173,29 @@ The seven that remain — Duke's qualifying examinations, two UCLA topic-sorted 
 **Checks, on the one card touched.** `./.venv/bin/python -m qualc.authoring check P-AGH543ORDINARYSING`, "schema and Markdown parsing OK (single card)"; `tmp/lam.sh`, steps 1 to 8 with QED labels present; `.scratch/report_check.py`, "1 card(s) checked, 0 diagnostic(s)". Not run: whole-corpus `qualc check`; a `tools/backlog.py` run was started in the background in this pass and its result is reported separately.
 
 **Repair.** `6d5534d6f3`, and this record in the COMPLAINTS commit that carries it, which changes no card.
+
+## 2026-11-20, item: §3.F re-read step by step, the state at `90ed51bf2e`
+
+The five §3.F cards that were read but not, in the earlier pass, statement by numbered statement, are now read
+that way against Hatcher, *Algebraic Topology* (2002), §3.F, printed pp. 320-321, and §3.F Exercise 3 (p. 320) for
+the one the exercise cites.
+
+- `E-HAT-3.F-4`, every step. A direct sum of copies of $\QQ$ is divisible coordinatewise and a quotient of a
+  divisible group is divisible; divisibility gives an $n$-th root of $g_{(n-1)!}$ for each $n$, hence $m!\,g_m=g$
+  for all $m$ and a well-defined $\phi:\QQ\to G$ with $\phi(1)=g$ (two expressions for the same rational are
+  compared over a common denominator $N!$, where $k!\,g_k=N!\,g_N=g$); a generating set then makes $G$ a quotient
+  of $\bigoplus_I\QQ$; and $\operatorname{Ext}(A,-)$ of the sequence $0\to K\to\bigoplus_I\QQ\to G\to0$ ends in
+  $\operatorname{Ext}(A,\bigoplus_I\QQ)=\prod_I\operatorname{Ext}(A,\QQ)=0$ by Exercise 3, so
+  $\operatorname{Ext}(A,G)=0$. Correct.
+- `E-HAT-3.F-5`, every step. $\operatorname{Hom}(A,-)$ of $0\to\ZZ\to\QQ\to\QQ/\ZZ\to0$ gives
+  $\operatorname{Hom}(A,\QQ)\to\operatorname{Hom}(A,\QQ/\ZZ)\to\operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}(A,\QQ)=0$,
+  so $\operatorname{Ext}(A,\ZZ)$ is the stated cokernel; for $A=\ZZ_{p^\infty}$ the first Hom vanishes because the
+  target is torsion-free and the second is $\operatorname{End}(\ZZ_{p^\infty})=\varprojlim\ZZ/p^n$. Correct.
+- `E-HAT-3.F-7`, every step. Free presentations $F_A\subset F_B$ with $K_B\cap F_A=K_A$; the two-stage Moore
+  complex on $(S_B,T)$ has $H_n\cong F_B/K_B=B$ and no other reduced homology, and its subcomplex on $(S_A,T_A)$ is
+  $M(A,n)$; the quotient has $d_{n+1}$ injective, so its $H_n$ is $F_B/(K_B+F_A)\cong C$ and its other reduced
+  homology vanishes; the universal coefficient theorem and the exact sequence of the CW pair then give the
+  six-term sequence. Correct.
+- `E-HAT-3.F-6`, `-8`, `-9` were repaired in this stream's earlier pass (`6b9c906473`, `5ad4fec69b`, `8035ccd488`),
+  and each repair was itself read step by step when it was made: the telescoping identity, the $n=1$ end of the
+  Bockstein collapse, and the converse of printed (a) for infinite-dimensional ${}_pA$.
