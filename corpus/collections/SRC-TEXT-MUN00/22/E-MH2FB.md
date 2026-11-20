@@ -51,7 +51,7 @@ $$
 If $H$ is a topological group, then $h$ is continuous.
 
 ::: pf-proof
-Multiplication $m\colon H\times H\to H$, $m(x,y)=x\cdot y$, and inversion $\iota\colon H\to H$, $\iota(y)=y^{-1}$, are continuous by the definition of a topological group (printed p. 145), so $\mathrm{id}_{H}\times\iota$ is continuous by Exercise 18.10; and $h=m\circ(\mathrm{id}_{H}\times\iota)$ since $m(x,\iota(y))=x\cdot y^{-1}$. A composite of continuous maps is continuous.
+Multiplication $m\colon H\times H\to H$, $m(x,y)=x\cdot y$, and inversion $\iota\colon H\to H$, $\iota(y)=y^{-1}$, are continuous by the definition of a topological group (§21), so $\mathrm{id}_{H}\times\iota$ is continuous by Exercise 18.10; and $h=m\circ(\mathrm{id}_{H}\times\iota)$ since $m(x,\iota(y))=x\cdot y^{-1}$. A composite of continuous maps is continuous.
 :::
 
 :::
@@ -82,7 +82,7 @@ the middle equality because inversion is an involution. So $m$ is the composite 
 Therefore $H$ is a topological group if and only if $h$ is continuous.
 
 ::: pf-proof
-If $H$ is a topological group then $h$ is continuous by step [](#forward){.pf-ref}. Conversely, if $h$ is continuous then inversion is continuous by step [](#inversion){.pf-ref} and multiplication is continuous by step [](#multiplication){.pf-ref}, which with the $T_{1}$ hypothesis is exactly the definition of a topological group (printed p. 145).
+If $H$ is a topological group then $h$ is continuous by step [](#forward){.pf-ref}. Conversely, if $h$ is continuous then inversion is continuous by step [](#inversion){.pf-ref} and multiplication is continuous by step [](#multiplication){.pf-ref}, which with the $T_{1}$ hypothesis is exactly the definition of a topological group (§21).
 :::
 
 :::

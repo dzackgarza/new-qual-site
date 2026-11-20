@@ -56,7 +56,7 @@ If $0$ lies in the unbounded component of $\RR^2-C$, then $j$ is nullhomotopic a
 
 ::: pf-proof
 
-Apply Lemma 61.2 (nulhomotopy lemma, printed pp. 377--378) with $A=C$ and $g=j$. Its hypothesis is that $0$ and $\infty$ lie in the same component of $S^2-C$, which is exactly the hypothesis that $0$ lies in the unbounded component of $\RR^2-C$; its conclusion is that $j:C\to\RR^2-\theset{0}$ is nullhomotopic. A map inducing a homomorphism of fundamental groups is trivial when it is nullhomotopic, so $j_*$ is trivial.
+Apply Lemma 61.2 (nulhomotopy lemma) with $A=C$ and $g=j$. Its hypothesis is that $0$ and $\infty$ lie in the same component of $S^2-C$, which is exactly the hypothesis that $0$ lies in the unbounded component of $\RR^2-C$; its conclusion is that $j:C\to\RR^2-\theset{0}$ is nullhomotopic. A map inducing a homomorphism of fundamental groups is trivial when it is nullhomotopic, so $j_*$ is trivial.
 
 :::
 
@@ -68,7 +68,7 @@ If $0$ lies in a bounded component of $\RR^2-C$, then $j$ is not nullhomotopic a
 
 ::: pf-proof
 
-Then $0$ and $\infty$ lie in different components of $S^2-C$. The map $j:C\to S^2-\theset{0,\infty}$ is continuous and injective, and $C$ is compact. If $j$ were nullhomotopic, Lemma 62.2 (the Borsuk lemma, printed p. 382) would put $0$ and $\infty$ in the same component of $S^2-j(C)=S^2-C$, contrary to the choice of the component. So $j$ is not nullhomotopic. A homeomorphism $\gamma:S^1\to C$ exists, and $j_*$ sends the class of $\gamma$ to the class of the loop $j\circ\gamma$, which is the class represented by $j$; since $j$ is not nullhomotopic, that class is not the identity.
+Then $0$ and $\infty$ lie in different components of $S^2-C$. The map $j:C\to S^2-\theset{0,\infty}$ is continuous and injective, and $C$ is compact. If $j$ were nullhomotopic, Lemma 62.2 (the Borsuk lemma) would put $0$ and $\infty$ in the same component of $S^2-j(C)=S^2-C$, contrary to the choice of the component. So $j$ is not nullhomotopic. A homeomorphism $\gamma:S^1\to C$ exists, and $j_*$ sends the class of $\gamma$ to the class of the loop $j\circ\gamma$, which is the class represented by $j$; since $j$ is not nullhomotopic, that class is not the identity.
 
 :::
 

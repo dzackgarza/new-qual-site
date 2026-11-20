@@ -47,7 +47,7 @@ Show that if $r^{-1}(z)$ is finite for each $z \in Z$, then $p$ is a covering ma
 :::
 
 ::: {.solution}
-The argument follows the published solution **dbFin, "Section 53: Problem 4 Solution"** (Munkres, *Topology*, Section 53, Problem 4), which shrinks an evenly covered neighbourhood of $z$ to a finite intersection of images of evenly covered neighbourhoods upstairs; the implicit slice identity is stated below. The exercise is Munkres, *Topology* (2000), Section 53 Exercise 4, and the definition of a covering map is on printed p. 336.
+The argument follows the published solution **dbFin, "Section 53: Problem 4 Solution"** (Munkres, *Topology*, Section 53, Problem 4), which shrinks an evenly covered neighbourhood of $z$ to a finite intersection of images of evenly covered neighbourhoods upstairs; the implicit slice identity is stated below. The exercise is Munkres, *Topology* (2000), Section 53 Exercise 4, and the definition of a covering map is in §53.
 
 ::: pf
 
@@ -59,7 +59,7 @@ $$
 where the $V_i$ are open and disjoint, each $r\restrict_{V_i}:V_i\to U$ is a homeomorphism, and $m=\cardinality{r^{-1}(z)}<\infty$.
 
 ::: pf-proof
-Because $r$ is a covering map, $z$ has an evenly covered neighbourhood $U$: $r^{-1}(U)$ is a disjoint union of open sets $V_i$, each mapped homeomorphically onto $U$ by $r$ (Definition, printed p. 336, which requires the map to be continuous and surjective). Each $V_i$ meets $r^{-1}(z)$ in exactly one point, since $r\restrict_{V_i}$ is a bijection onto $U\ni z$; the $V_i$ cover $r^{-1}(U)\supseteq r^{-1}(z)$, so $r^{-1}(z)$ has exactly $m$ points. The hypothesis that $r^{-1}(z)$ is finite is therefore exactly the statement that the union has $m<\infty$ members.
+Because $r$ is a covering map, $z$ has an evenly covered neighbourhood $U$: $r^{-1}(U)$ is a disjoint union of open sets $V_i$, each mapped homeomorphically onto $U$ by $r$ (Definition, §53, which requires the map to be continuous and surjective). Each $V_i$ meets $r^{-1}(z)$ in exactly one point, since $r\restrict_{V_i}$ is a bijection onto $U\ni z$; the $V_i$ cover $r^{-1}(U)\supseteq r^{-1}(z)$, so $r^{-1}(z)$ has exactly $m$ points. The hypothesis that $r^{-1}(z)$ is finite is therefore exactly the statement that the union has $m<\infty$ members.
 :::
 
 :::
@@ -111,7 +111,7 @@ $p^{-1}(U')=q^{-1}\big(r^{-1}(U')\big)$. Since $r^{-1}(U)=\bigsqcup_i V_i$, we h
 $p=r\circ q$ is surjective.
 
 ::: pf-proof
-$q:X\to Y$ and $r:Y\to Z$ are covering maps, hence surjective by the definition (printed p. 336). For $z\in Z$ choose $y\in Y$ with $r(y)=z$ and then $x\in X$ with $q(x)=y$; then $p(x)=r\big(q(x)\big)=r(y)=z$. So $p(X)=Z$.
+$q:X\to Y$ and $r:Y\to Z$ are covering maps, hence surjective by the definition (§53). For $z\in Z$ choose $y\in Y$ with $r(y)=z$ and then $x\in X$ with $q(x)=y$; then $p(x)=r\big(q(x)\big)=r(y)=z$. So $p(X)=Z$.
 :::
 
 :::
@@ -129,7 +129,7 @@ $q$ and $r$ are continuous by the definition of a covering map, and a composite 
 $p=r\circ q$ is a covering map.
 
 ::: pf-proof
-$p$ is continuous and surjective by steps [](#continuous){.pf-ref} and [](#surjective){.pf-ref}. For each $z\in Z$, step [](#shrink){.pf-ref} produces an open neighbourhood $U'$ of $z$ and steps [](#preimage){.pf-ref} and [](#slices){.pf-ref} exhibit $p^{-1}(U')$ as a disjoint union of open sets each mapped homeomorphically onto $U'$ by $p$. So every point of $Z$ has an evenly covered neighbourhood, and with continuity and surjectivity this is the definition of a covering map (printed p. 336).
+$p$ is continuous and surjective by steps [](#continuous){.pf-ref} and [](#surjective){.pf-ref}. For each $z\in Z$, step [](#shrink){.pf-ref} produces an open neighbourhood $U'$ of $z$ and steps [](#preimage){.pf-ref} and [](#slices){.pf-ref} exhibit $p^{-1}(U')$ as a disjoint union of open sets each mapped homeomorphically onto $U'$ by $p$. So every point of $Z$ has an evenly covered neighbourhood, and with continuity and surjectivity this is the definition of a covering map (§53).
 :::
 
 :::

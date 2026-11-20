@@ -115,7 +115,7 @@ $G$ is cyclic by definition, and $\cardinality G=n$ by step [](#ordern){.pf-ref}
 $S^3$ is a $3$-manifold: each of its points has a neighbourhood homeomorphic to an open subset of $\RR^3$.
 
 ::: pf-proof
-Let $y\in S^3$ and let $W=\{z\in S^3:z\cdot y>0\}$, an open neighbourhood of $y$ in $S^3$. Orthogonal projection $z\mapsto z-(z\cdot y)y$ maps $W$ bijectively onto the open unit ball of the hyperplane $y^\perp\cong\RR^3$: writing $z=ty+u$ with $u\in y^\perp$ gives $\abs z^2=t^2+\abs u^2=1$ and $z\cdot y=t>0$, so $t=\sqrt{1-\abs u^2}>0$ and $\abs u<1$, with inverse $u\mapsto\sqrt{1-\abs u^2}\,y+u$. Both maps are continuous, so $W$ is homeomorphic to the open ball. This is the definition of a $3$-manifold (printed p. 225).
+Let $y\in S^3$ and let $W=\{z\in S^3:z\cdot y>0\}$, an open neighbourhood of $y$ in $S^3$. Orthogonal projection $z\mapsto z-(z\cdot y)y$ maps $W$ bijectively onto the open unit ball of the hyperplane $y^\perp\cong\RR^3$: writing $z=ty+u$ with $u\in y^\perp$ gives $\abs z^2=t^2+\abs u^2=1$ and $z\cdot y=t>0$, so $t=\sqrt{1-\abs u^2}>0$ and $\abs u<1$, with inverse $u\mapsto\sqrt{1-\abs u^2}\,y+u$. Both maps are continuous, so $W$ is homeomorphic to the open ball. This is the definition of a $3$-manifold (§36).
 :::
 
 :::
@@ -216,7 +216,7 @@ $S^3\subseteq\RR^4$ is second countable, so let $\{B_m\}$ be a countable basis f
 $L(n,k)$ is a compact $3$-manifold.
 
 ::: pf-proof
-$L(n,k)$ is a Hausdorff space with a countable basis (steps [](#hausdorff){.pf-ref}, [](#countable){.pf-ref}) in which every point has a neighbourhood homeomorphic to an open subset of $\RR^3$ (step [](#locallyeuclid){.pf-ref}), and it is compact (step [](#compact){.pf-ref}). That is the definition of a compact $3$-manifold (printed p. 225). This is part (c).
+$L(n,k)$ is a Hausdorff space with a countable basis (steps [](#hausdorff){.pf-ref}, [](#countable){.pf-ref}) in which every point has a neighbourhood homeomorphic to an open subset of $\RR^3$ (step [](#locallyeuclid){.pf-ref}), and it is compact (step [](#compact){.pf-ref}). That is the definition of a compact $3$-manifold (§36). This is part (c).
 :::
 
 :::

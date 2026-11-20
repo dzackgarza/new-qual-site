@@ -63,7 +63,7 @@ Show that $h$ is continuous.
 :::
 
 ::: {.solution}
-The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two cases of (a) and the pasting argument of (b) are theirs, one step of their second case is supplied below, and one index set is corrected: their union is taken over $c\in Y$, not over $c\in X$. Whitman, printed pp. 184--185, proves (a) with the set of elements having an immediate successor and the same two cases, and (b) by the same pasting lemma.
+The published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.8** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the two cases of (a) and the pasting argument of (b) are theirs, one step of their second case is supplied below, and one index set is corrected: their union is taken over $c\in Y$, not over $c\in X$. Whitman, §18 Exercise 8, proves (a) with the set of elements having an immediate successor and the same two cases, and (b) by the same pasting lemma.
 
 Throughout, $Y$ is an ordered set in the order topology and $f,g:X\to Y$ are continuous.
 

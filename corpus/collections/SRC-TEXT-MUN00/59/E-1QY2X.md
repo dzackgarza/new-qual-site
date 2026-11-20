@@ -152,8 +152,7 @@ for $z=-1$, then $\sin\pi\abs x$ as the positive square root of $1-z^2$, and hen
 $x=u\,\abs x/\sin\pi\abs x$ when $z\ne-1$, while $z=-1$ forces $x=\mathbf 0$. So
 the fibres of $g$ are the fibres of $q$, and $g$ induces a continuous bijection
 $\bar g:B^2/\partial B^2\to S^2$, which is a homeomorphism because
-$B^2/\partial B^2$ is compact and $S^2$ is Hausdorff (Theorem 26.6); the construction is the one pictured in Figure 22.2 of the book (printed
-p. 136).
+$B^2/\partial B^2$ is compact and $S^2$ is Hausdorff (Theorem 26.6); the construction is the one pictured in Figure 22.2 of the book.
 
 The step needs a continuous surjection $I^2\to B^2$, and not a homeomorphism:
 take $p(s,t)=(s\cos2\pi t,\,s\sin2\pi t)$, which is continuous and onto, the point

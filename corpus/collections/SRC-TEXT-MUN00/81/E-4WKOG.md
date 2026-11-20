@@ -82,7 +82,7 @@ Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact H
 
 ::: {.solution}
 
-Write $p:X\to X/G$ for the quotient map; a subset $O$ of $X/G$ is open exactly when $p^{-1}(O)$ is open in $X$ (Definition of the quotient topology, printed p. 137), and $p(W)=\{Gx\mid x\in W\}$.
+Write $p:X\to X/G$ for the quotient map; a subset $O$ of $X/G$ is open exactly when $p^{-1}(O)$ is open in $X$ (Definition of the quotient topology (§22)), and $p(W)=\{Gx\mid x\in W\}$.
 
 The argument of this part is the one Daniel Fischer's answer 801561 (https://math.stackexchange.com/a/801561), posted 2014-05-19 to Math Stack Exchange question 801446, which is this exercise (https://math.stackexchange.com/questions/801446, asked by Akt904 on the same day), points to: the family $\{g(C)\}_{g\in G}$ is locally finite by the exercise's hypothesis and the hint, and a locally finite union of closed sets is closed. That answer states that proposition and leaves its proof as an exercise, so what it supplies is the route; the proof of the proposition, and parts (b), (c) and (d), which the thread does not reach, are below.
 
@@ -101,7 +101,7 @@ Let $x\in X$ with $x\notin\bigcup_{g\in G}g(C)$. There is an open neighbourhood 
 
 ::: {.pf-proof}
 
-$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (definition, printed p. 182); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
+$X$ is locally compact, so $x$ lies in a compact subspace $C_x$ of $X$ that contains a neighbourhood of $x$ (§29, definition); take $U$ inside that neighbourhood, so that $K=\overline{U}$ is a closed subspace of the compact space $C_x$, hence compact (Theorem 26.2). The set $K\cup C$ is compact, being a union of two compact subspaces, and the hypothesis applied to it gives that $F$ is finite.
 
 :::
 
@@ -139,7 +139,7 @@ $p$ is an open map.
 
 ::: {.pf-proof}
 
-For open $W\subseteq X$ the set $p^{-1}p(W)=\bigcup_{g\in G}g(W)$ is a union of open sets, hence open, so $p(W)$ is open by the definition of the quotient topology (printed p. 137).
+For open $W\subseteq X$ the set $p^{-1}p(W)=\bigcup_{g\in G}g(W)$ is a union of open sets, hence open, so $p(W)$ is open by the definition of the quotient topology (§22).
 
 :::
 
@@ -183,7 +183,7 @@ is finite by hypothesis. For $g\in F$ the action is fixed-point free and $g$ is 
 $$
 U=U_0\cap\bigcap_{g\in F}\left(V_g\cap g^{-1}(W_g)\right),
 $$
-an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\subseteq W_g$, so $g(U)\cap U=\varnothing$; for $g\notin F$ with $g\ne e$ one has $U\subseteq C$ and $g(U)\subseteq g(C)$, so $g(U)\cap U\subseteq g(C)\cap C=\varnothing$. Hence $g(U)\cap U=\varnothing$ for every $g\ne e$, which is the definition of a properly discontinuous action (printed p. 490).
+an open neighbourhood of $x$. For $g\in F$ one has $U\subseteq V_g$ and $g(U)\subseteq W_g$, so $g(U)\cap U=\varnothing$; for $g\notin F$ with $g\ne e$ one has $U\subseteq C$ and $g(U)\subseteq g(C)$, so $g(U)\cap U\subseteq g(C)\cap C=\varnothing$. Hence $g(U)\cap U=\varnothing$ for every $g\ne e$, which is the definition of a properly discontinuous action (§81).
 
 :::
 

@@ -68,7 +68,7 @@ Show that if $B$ is simply connected, then $p$ is a homeomorphism.
 :::
 
 ::: {.solution}
-The argument is that of the published solution of dbFin, "Section 54: Problem 8 Solution": Theorem 54.4 makes the lifting correspondence a bijection onto the fibre, so the fibre over a point of a simply connected base has one element, and a covering map that is an open bijection is a homeomorphism. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 8; Theorem 54.4 is on printed p. 345, and Exercise 3 of §53, which makes the fibre cardinality the same over every point of a connected base, is on printed p. 341.
+The argument is that of the published solution of dbFin, "Section 54: Problem 8 Solution": Theorem 54.4 makes the lifting correspondence a bijection onto the fibre, so the fibre over a point of a simply connected base has one element, and a covering map that is an open bijection is a homeomorphism. The exercise is Munkres, *Topology* (2000), Section 54, Exercise 8; Theorem 54.4 and Exercise 3 of §53 make the fibre cardinality the same over every point of a connected base.
 
 ::: pf
 

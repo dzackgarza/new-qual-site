@@ -47,7 +47,7 @@ Prove that for functions $f: \RR \to \RR$, the $\epsilon$-$\delta$ definition of
 :::
 
 ::: {.solution}
-The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.1** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, and Whitman's printed p. 179 is the same proof phrased through Theorem 18.1(4). (The symbol for $\varepsilon$ in the stored statement of the exercise is a lost glyph in the extraction; it is $\varepsilon$.)
+The complete published solution is **"positron0802", *Solutions to Topology, Chapter 2* (1 January 2021), Exercise 18.1** (`tmp/sources/munkres-solutions-positron-ch2.pdf`); the argument is theirs, and Whitman's §18 Exercise 1 is the same proof phrased through Theorem 18.1(4). (The symbol for $\varepsilon$ in the stored statement of the exercise is a lost glyph in the extraction; it is $\varepsilon$.)
 
 Write the $\varepsilon$-$\delta$ hypothesis as: for every $x_{0}\in\RR$ and every $\varepsilon>0$ there is $\delta>0$ such that $\abs{x-x_{0}}<\delta$ implies $\abs{f(x)-f(x_{0})}<\varepsilon$.
 

@@ -88,6 +88,6 @@ $$
 H_{1}=\langle a,b,c\rangle/\langle a+b-c,\ a-b+c\rangle
 =\langle b,c\rangle/\langle 2b-2c\rangle\cong\ZZ\oplus\ZZ/2 .
 $$
-That answer computes the singular homology of a $\Delta$-complex, an invariant the book does not develop, and its agreement with the $H_{1}$ of §75 is the Hurewicz theorem, which the book states without proof (printed p. 455); the computation on this card uses only Theorem 74.2 and Corollary 75.2.
+That answer computes the singular homology of a $\Delta$-complex, an invariant the book does not develop, and its agreement with the $H_{1}$ of §75 is the Hurewicz theorem, which the book states without proof (§75); the computation on this card uses only Theorem 74.2 and Corollary 75.2.
 
 :::
