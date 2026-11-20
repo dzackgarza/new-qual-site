@@ -22,5 +22,5 @@ Then for each $k$ the cross product gives an isomorphism
 $$
 \bigoplus_{i+j=k}H_{i}(X;R)\tensor_R H_{j}(Y;R) \xrightarrow{\ \sim\ } H_{k}(X\times Y;R)
 $$
-[@Hat02].
+[@Hat02, Theorem 3B.5].
 :::
