@@ -82,7 +82,7 @@ and the other integral homology groups vanish.
 
 ::: pf-proof
 
-This is DeMason's computation for Hatcher 2.2.10, printed p. 76 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. Hatcher's CW boundary map (Theorem 2.35) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
+This is DeMason's computation for Hatcher, §2.2 Exercise 10. Hatcher's CW boundary map (Theorem 2.35) is the one used above; no assertion is made that $\ZZ\to\ZZ_2\oplus\ZZ_2$ is injective.
 :::
 
 :::
@@ -100,7 +100,7 @@ $$
 
 ::: pf-proof
 
-The attaching maps and opposite orientations are shown by DeMason on printed p. 77 of `tmp/sources/demason-m382c-hatcher-20210404.pdf`. The relation $\partial_2[e]=2[e]$ and $\partial_3=0$ then give the displayed homology directly. These answers also agree with the repaired Mayer--Vietoris computation using two $\RP^3$ hemispheres with intersection $\RP^2$: $H_2(\RP^3)=0$, while $H_3(\RP^3)=\ZZ$ accounts for the two free summands in degree $3$.
+The attaching maps and opposite orientations are shown by DeMason in his solution to §2.2 Exercise 10. The relation $\partial_2[e]=2[e]$ and $\partial_3=0$ then give the displayed homology directly. These answers also agree with the repaired Mayer--Vietoris computation using two $\RP^3$ hemispheres with intersection $\RP^2$: $H_2(\RP^3)=0$, while $H_3(\RP^3)=\ZZ$ accounts for the two free summands in degree $3$.
 :::
 
 :::
