@@ -31,7 +31,7 @@ Then $H^0(X, \mcf) = \globsec{X;\mcf}$ and $H^i(X, \mcf) = 0$ for all $i > 0$.
 ::: {.remark title="Proof sketch"}
 Put $M = \globsec{X;\mcf}$, so $\mcf \cong \tilde M$.
 Take an injective resolution $M \injects I^\bullet$ in $\amod$ and sheafify: each $\tilde{I^j}$ is flasque, hence acyclic, so $\tilde{I^\bullet}$ computes the cohomology.
-Applying $\globsec{X;\wait}$ returns the original exact complex $M \injects I^\bullet$, and its higher cohomology is zero.
+Applying $\globsec{X;-}$ returns the original exact complex $M \injects I^\bullet$, and its higher cohomology is zero.
 :::
 
 ::: {.proposition title="Čech computation"}
