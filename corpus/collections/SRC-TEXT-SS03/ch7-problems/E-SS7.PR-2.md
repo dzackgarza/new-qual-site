@@ -41,7 +41,7 @@ where the sum is taken over all zeros $\rho$ of the zeta function in the critica
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 7, Problem 2, printed p. 204). The source prints the zero terms as $x^{\rho}/(\rho(\rho+1))$ and the error term as $c_1x + c_0 + \cdots$. The residues of $\frac{x^{s+1}}{s(s+1)}\left(-\frac{\zeta'}{\zeta}(s)\right)$ at $s = \rho$ and $s = -1$ are $-\frac{x^{\rho+1}}{\rho(\rho+1)}$ and $+c_0$, which give the statement above.
+The book marks this problem with an asterisk (Chapter 7, Problem 2). The source prints the zero terms as $x^{\rho}/(\rho(\rho+1))$ and the error term as $c_1x + c_0 + \cdots$. The residues of $\frac{x^{s+1}}{s(s+1)}\left(-\frac{\zeta'}{\zeta}(s)\right)$ at $s = \rho$ and $s = -1$ are $-\frac{x^{\rho+1}}{\rho(\rho+1)}$ and $+c_0$, which give the statement above.
 :::
 
 ::: {.solution}

@@ -62,7 +62,7 @@ and that the invariance follows from Chapter 8, Exercise 24(b).
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 8, Problem 9, printed pp. 259--260).
+The book marks this problem with an asterisk (Chapter 8, Problem 9).
 :::
 
 ::: {.hint}

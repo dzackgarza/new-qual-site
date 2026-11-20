@@ -151,5 +151,5 @@ If $m(y_1)$ or $m(y_2)$ vanishes the same limiting argument as in part [](#s2){.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 4, Problem 3, printed p. 133). The hint for part (b) names the factor $M_0^{z-1}M_1^{-z}$. That is the normalization for a strip in the $\operatorname{Re}z$ variable; for the strip $0<\operatorname{Im}z<1$ used here it becomes $M_0^{\zeta-1}M_1^{-\zeta}$ after the rotation $\zeta=-iz$, which is how step [](#s2){.pf-ref} uses it.
+The book marks this problem with an asterisk (Chapter 4, Problem 3). The hint for part (b) names the factor $M_0^{z-1}M_1^{-z}$. That is the normalization for a strip in the $\operatorname{Re}z$ variable; for the strip $0<\operatorname{Im}z<1$ used here it becomes $M_0^{\zeta-1}M_1^{-\zeta}$ after the rotation $\zeta=-iz$, which is how step [](#s2){.pf-ref} uses it.
 :::

@@ -49,7 +49,7 @@ and a $k$-fold integration by parts gives the analytic continuation for $\zeta(s
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 6, Problem 3, printed p. 180).
+The book marks this problem with an asterisk (Chapter 6, Problem 3).
 :::
 
 ::: {.solution}

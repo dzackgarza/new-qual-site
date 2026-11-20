@@ -70,7 +70,7 @@ Show also that $\abs{f(z)}\leq 1$.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 5, Problem 2, printed p. 157).
+The book marks this problem with an asterisk (Chapter 5, Problem 2).
 :::
 
 ::: {.solution}

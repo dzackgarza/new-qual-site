@@ -76,7 +76,7 @@ Use these properties and the corresponding properties of $\theta^8$ to conclude 
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 10, Problem 6, printed pp. 316--317).
+The book marks this problem with an asterisk (Chapter 10, Problem 6).
 :::
 
 ::: {.hint}

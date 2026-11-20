@@ -50,7 +50,7 @@ Describe geometrically the sets of points $z$ in the complex plane defined by th
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 1 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 24; the statement below is its wording.
+This is Exercise 1 of Chapter 1 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 ::: pf
 

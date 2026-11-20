@@ -48,7 +48,7 @@ Suppose $\Omega$ is a bounded region. Let $L$ be a (two-way infinite) line that 
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 3, Problem 4, printed p. 110).
+The book marks this problem with an asterisk (Chapter 3, Problem 4).
 :::
 
 ::: {.solution}

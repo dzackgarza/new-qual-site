@@ -101,7 +101,7 @@ $$
 $$
 
 ::: pf-proof
-For $\Re(s)>0$ substitute $x=st$ in $\Gamma(s)=\int_0^\infty e^{-x}x^{s-1}dx$; this is the computation in the proof of Theorem 2.3, printed p. 326. It gives
+For $\Re(s)>0$ substitute $x=st$ in $\Gamma(s)=\int_0^\infty e^{-x}x^{s-1}dx$; this is the computation in the proof of Theorem 2.3. It gives
 $$
 \Gamma(s)=s^{s}\int_0^\infty e^{-st}t^{s-1}dt=e^{s\log s-s}\int_0^\infty e^{-s(t-1-\log t)}\,\frac{dt}{t},
 $$
@@ -286,7 +286,7 @@ Multiplying by $e^{-s\log s+s}s^{1/2}(2\pi)^{-1/2}$ gives $\Gamma(s)=e^{s\log s-
 The conclusion of step [](#right){.pf-ref} holds uniformly for $\Re(s)\ge0$, $\abs{s}\ge4$, with the same constants $a_j$.
 
 ::: pf-proof
-By Lemma 1.2 of Chapter 6 (printed p. 161), $\Gamma(s+1)=s\Gamma(s)$; substituting the definition of $F$ gives, for $\abs{s}>1$ and $s\neq0$,
+By Lemma 1.2 of Chapter 6, $\Gamma(s+1)=s\Gamma(s)$; substituting the definition of $F$ gives, for $\abs{s}>1$ and $s\neq0$,
 $$
 \frac{F(s)}{F(s+1)}
 =\frac{\Gamma(s)}{\Gamma(s+1)}\cdot\frac{s^{1/2}}{(s+1)^{1/2}}\cdot e^{-s\log s+s+(s+1)\log(s+1)-(s+1)}
@@ -314,7 +314,7 @@ F(s)F(-s)=\frac{1}{1-e^{-2\pi is}}\ \text{ if }\ \Im(s)<0 .
 $$
 
 ::: pf-proof
-By Theorem 1.4 of Chapter 6 (printed p. 164) and Lemma 1.2 of Chapter 6, $\Gamma(s)\Gamma(1-s)=\pi/\sin\pi s$ and $\Gamma(1-s)=-s\Gamma(-s)$, hence
+By Theorem 1.4 of Chapter 6 and Lemma 1.2 of Chapter 6, $\Gamma(s)\Gamma(1-s)=\pi/\sin\pi s$ and $\Gamma(1-s)=-s\Gamma(-s)$, hence
 $$
 \Gamma(s)\Gamma(-s)=\frac{\pi}{-s\sin\pi s},
 \tag{$\ast$}

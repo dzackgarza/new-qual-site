@@ -40,7 +40,7 @@ $$
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 5 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 153; the statement below is its wording.
+This is Exercise 1 of Chapter 5 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. The proof is the standard Blaschke-factor argument for Jensen's formula; each property of the factor and each evaluation was checked.
 
 ::: pf

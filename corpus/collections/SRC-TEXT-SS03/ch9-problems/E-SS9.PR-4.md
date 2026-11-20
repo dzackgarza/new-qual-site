@@ -97,7 +97,7 @@ Suppose $\tau$ is purely imaginary, say $\tau=it$ with $t>0$. Consider the divis
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 9, Problem 4, printed p. 282).
+The book marks this problem with an asterisk (Chapter 9, Problem 4).
 :::
 
 ::: {.solution}

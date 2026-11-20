@@ -104,7 +104,7 @@ This reduces the problem to Problem 3.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 5, Problem 4, printed pp. 157--158).
+The book marks this problem with an asterisk (Chapter 5, Problem 4).
 :::
 
 ::: {.solution}

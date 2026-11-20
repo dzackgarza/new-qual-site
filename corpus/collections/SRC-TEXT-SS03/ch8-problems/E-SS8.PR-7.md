@@ -101,7 +101,7 @@ For (a), write $f(z)=zg(z)$ and use the maximum principle. For (b), use the Schw
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 8, Problem 7, printed pp. 258--259). Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
+The book marks this problem with an asterisk (Chapter 8, Problem 7). Part (d) is inconsistent as printed: $\psi_\alpha(0)=\alpha\neq0$, so a square root of $\psi_\alpha$ cannot satisfy $S(0)=0$. The composition also requires $S$ to be defined on $\psi_\alpha(K)$. A coherent choice is a square root on $\psi_\alpha(K)$ with $S(\alpha)=\beta$.
 :::
 
 ::: {.solution}

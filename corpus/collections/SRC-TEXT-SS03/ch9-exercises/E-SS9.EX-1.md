@@ -40,7 +40,7 @@ Suppose that a meromorphic function $f$ has two periods $\omega_1$ and $\omega_2
 :::
 
 ::: {.solution}
-This is Exercise 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 278; the statement below is its wording.
+This is Exercise 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own. Part (a) is the Bezout identity for $p,q$; part (b) uses the density of $\{m-n\tau\}$ and the isolatedness of poles.
 
 ::: pf
