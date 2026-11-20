@@ -51,7 +51,7 @@ Show that for a prime ideal $\mathfrak p \subset A$, the following are equivalen
 
 ::: {.solution}
 
-The problem is Problem 5 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies the cycle of implications through $M_{\mathfrak p}=0$, the identification of $M\otimes_A k(\mathfrak p)$ with $M_{\mathfrak p}/\mathfrak p A_{\mathfrak p}M_{\mathfrak p}$, and Nakayama's lemma in the direction that needs $M$ finitely generated.
+The problem is Problem 5 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies the cycle of implications through $M_{\mathfrak p}=0$, the identification of $M\otimes_A k(\mathfrak p)$ with $M_{\mathfrak p}/\mathfrak p A_{\mathfrak p}M_{\mathfrak p}$, and Nakayama's lemma in the direction that needs $M$ finitely generated.
 
 Let $S=A\setminus\mathfrak p$, so $A_{\mathfrak p}=S^{-1}A$ and $M_{\mathfrak p}=S^{-1}M$.
 

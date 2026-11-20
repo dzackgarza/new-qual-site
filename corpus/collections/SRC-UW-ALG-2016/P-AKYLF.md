@@ -50,7 +50,7 @@ Show that $\ZZ[x_1,\ldots,x_n]/\mathfrak m$ is a finite field.
 
 ::: {.solution}
 
-The problem is Problem 3 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is Zariski's lemma applied to $F=\ZZ[a_1,\dots,a_n]$ together with the exclusion of characteristic $0$, where a finite extension of $\QQ$ whose generators become integral after clearing one denominator $D$ cannot contain $1/p$ for a prime $p\nmid D$.
+The problem is Problem 3 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is Zariski's lemma applied to $F=\ZZ[a_1,\dots,a_n]$ together with the exclusion of characteristic $0$, where a finite extension of $\QQ$ whose generators become integral after clearing one denominator $D$ cannot contain $1/p$ for a prime $p\nmid D$.
 
 Let $R=\ZZ[x_1,\dots,x_n]$, let $\mathfrak m$ be a maximal ideal, and put $F=R/\mathfrak m$, a field. Write $a_i$ for the image of $x_i$ in $F$, so that $F=\ZZ[a_1,\dots,a_n]$.
 

@@ -47,7 +47,7 @@ An outer automorphism is an automorphism that is not inner.
 
 ::: {.solution}
 
-The problem is Problem 4 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies all three parts — the affine group of the line over $\FF_5$ as the subgroup of order $20$, its coset action as the transitive embedding into $S_6$, and the action of $S_6$ on the six cosets of that subgroup as an automorphism carrying a transitive subgroup to an intransitive one, hence outer.
+The problem is Problem 4 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and it supplies all three parts — the affine group of the line over $\FF_5$ as the subgroup of order $20$, its coset action as the transitive embedding into $S_6$, and the action of $S_6$ on the six cosets of that subgroup as an automorphism carrying a transitive subgroup to an intransitive one, hence outer.
 
 ::: pf
 

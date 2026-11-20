@@ -51,7 +51,7 @@ $$
 
 ::: {.solution}
 
-The problem is Problem 10 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 20 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 10 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 Throughout $G$ is finite, $H \le G$, and $\mathcal{C}(G) \coloneqq \CC[G]$ is the complex group algebra of $G$, with $\mathcal{C}(H) = \CC[H]$ embedded in it; $\theset{V^{\lambda}}$ and $\theset{W^{\mu}}$ are the irreducible unitary representations of $G$ and of $H$ up to isomorphism, and $m_{\lambda\mu}$ is the multiplicity of $W^{\mu}$ in $\restrictionof{V^{\lambda}}{H}$. The collection's `provenance` is the Spring 2026 preliminary examination, and no solutions sheet accompanies it, so the argument below is the card's own.
 

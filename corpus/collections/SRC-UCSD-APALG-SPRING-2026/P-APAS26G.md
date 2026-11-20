@@ -46,7 +46,7 @@ Find the eigenvalues of $A$, and give an orthonormal basis for each eigenspace.
 
 ::: {.solution}
 
-The problem is Problem 7 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 14 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 7 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 The argument is the card's own; no retained solution set is cited on it. Write $S=(\ZZ/2\ZZ)^{3}$ and $\mathcal{F}(S)$ for the complex-valued functions on $S$, with the inner product $\langle f,g\rangle=2^{-3}\sum_{x\in S}\overline{f(x)}g(x)$.
 

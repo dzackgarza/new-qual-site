@@ -39,7 +39,7 @@ Compute the Galois group of the splitting field of the polynomial $x^5-5a^4x+a$ 
 
 ::: {.solution}
 
-The problem is Problem 2 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the whole computation — irreducibility of $x^5-5a^4x+a$ from a rational-root check and a quadratic-factor check, exactly three real roots, hence complex conjugation acting as a transposition on the roots, and a transitive subgroup of $S_5$ containing a transposition being all of $S_5$.
+The problem is Problem 2 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the whole computation — irreducibility of $x^5-5a^4x+a$ from a rational-root check and a quadratic-factor check, exactly three real roots, hence complex conjugation acting as a transposition on the roots, and a transitive subgroup of $S_5$ containing a transposition being all of $S_5$.
 
 Let
 $$

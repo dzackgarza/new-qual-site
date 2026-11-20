@@ -39,7 +39,7 @@ Write out the character table of $S_3$.
 
 ::: {.solution}
 
-The problem is Problem 9 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 18 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 9 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 No retained solution set covers this exercise: the card's own argument follows, with the two summands, the irreducibility of the standard piece and the character table as separate steps.
 

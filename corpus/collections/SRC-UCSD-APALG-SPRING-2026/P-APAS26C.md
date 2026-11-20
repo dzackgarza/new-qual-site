@@ -43,7 +43,7 @@ is a subrepresentation of $(V, \varphi)$.
 
 ::: {.solution}
 
-The problem is Problem 3 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 6 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 3 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 The collection's provenance is the examination paper alone, so no retained solution set covers this exercise; the argument is the card's own.
 

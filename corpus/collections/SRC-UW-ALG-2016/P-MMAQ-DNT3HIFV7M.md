@@ -46,7 +46,7 @@ where $\phi(a) = (-ya,xa)$, $\psi((a,b)) = xa+yb$ for $a,b \in R$, is a projecti
 
 ::: {.solution}
 
-The problem is Problem 7 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 2 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is exactness of the displayed sequence checked term by term, and the truncated resolution that computes $\Tor_1^R(I,k)\cong k$, which rules out flatness.
+The problem is Problem 7 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is exactness of the displayed sequence checked term by term, and the truncated resolution that computes $\Tor_1^R(I,k)\cong k$, which rules out flatness.
 
 Write $\varepsilon:R\to k=R/(x,y)$ for the quotient map.
 

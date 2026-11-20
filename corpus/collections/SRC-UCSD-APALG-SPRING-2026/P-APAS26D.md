@@ -47,7 +47,7 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 
 ::: {.solution}
 
-The problem is Problem 4 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 8 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 4 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 One direction is immediate. For the other, the normality of $a+b$ and of $a+ib$ gives two linear relations among the four products $ab^*$, $ba^*$, $a^*b$, $b^*a$, and adding and subtracting them separates $ab^*=b^*a$; since the involution is onto, that says every element commutes with every other. Nothing about a norm or a $C^*$-condition is used, only that the conjugation is antilinear, antimultiplicative and involutive. The argument is this card's own: no retained solution set covers this exam.
 

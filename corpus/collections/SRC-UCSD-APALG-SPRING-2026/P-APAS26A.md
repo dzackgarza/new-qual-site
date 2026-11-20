@@ -35,7 +35,7 @@ Note: On this exam, a Hilbert space is a finite-dimensional complex vector space
 
 ::: {.solution}
 
-The problem is Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 2 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 1 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 No retained solution set covers this exercise: the card's own parallelogram counterexample follows, with the choices, the four norms and the failure as separate steps.
 

@@ -42,7 +42,7 @@ Prove that then $G$ is cyclic of prime order.
 
 ::: {.solution}
 
-The problem is Problem 1 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the proof that no nonabelian simple group has all proper subgroups abelian — the normalizer of a Sylow $p$-subgroup is proper and hence abelian, a special case of Burnside's normal $p$-complement theorem proved on the card gives a normal $p$-complement, and simplicity kills the nonabelian case.
+The problem is Problem 1 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is the proof that no nonabelian simple group has all proper subgroups abelian — the normalizer of a Sylow $p$-subgroup is proper and hence abelian, a special case of Burnside's normal $p$-complement theorem proved on the card gives a normal $p$-complement, and simplicity kills the nonabelian case.
 
 ::: pf
 

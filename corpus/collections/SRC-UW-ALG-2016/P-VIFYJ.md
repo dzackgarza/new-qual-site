@@ -55,7 +55,7 @@ Recall that for an integral domain $A$ with fraction field $K$, the integral clo
 :::
 
 ::: {.solution}
-Throughout $A = \CC[x,y]/(y^{2} - (x-1)^{3} - (x-1)^{2})$, $f \coloneqq y^{2} - (x-1)^{3} - (x-1)^{2} = y^{2} - x(x-1)^{2}$ is the defining polynomial, and $K \coloneqq \operatorname{Frac}(A)$. The problem is Problem 6 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), printed p. 1 of the two-page paper retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`; the paper prints no solutions and no solutions sheet accompanies it, so the argument below is the card's own.
+Throughout $A = \CC[x,y]/(y^{2} - (x-1)^{3} - (x-1)^{2})$, $f \coloneqq y^{2} - (x-1)^{3} - (x-1)^{2} = y^{2} - x(x-1)^{2}$ is the defining polynomial, and $K \coloneqq \operatorname{Frac}(A)$. The problem is Problem 6 of the Algebra Preliminary Examination, Autumn 2016 (University of Washington), retained at `assets/attachments/UW-Algebra-Qual-2016.pdf`; the paper prints no solutions and no solutions sheet accompanies it, so the argument below is the card's own.
 
 ::: pf
 

@@ -43,7 +43,7 @@ Note: On this exam, an algebra is a finite-dimensional complex vector space equi
 
 ::: {.solution}
 
-The problem is Problem 8 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 16 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 8 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 Write $\delta_g$ for the indicator function of $g\in G$, so that $\delta_g*\delta_h=\delta_{gh}$, the unit is $\delta_e$, and $\delta_g^*=\delta_{g^{-1}}$.
 

@@ -50,7 +50,7 @@ Determine the **nonzero singular values** of $A$, and give explicit **orthonorma
 
 ::: {.solution}
 
-The problem is Problem 2 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), printed p. 4 of the paper — the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
+The problem is Problem 2 of the Spring 2026 Applied Algebra Qualifying Exam (Math 202 A/B/C), the retained file `assets/attachments/SP26_202_Applied_Algebra_Qual.pdf` numbers the blank versos too, so the problems stand on its even pages.
 
 ::: pf
 
