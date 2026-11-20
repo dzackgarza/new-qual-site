@@ -11385,3 +11385,11 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Conclusion and repair.** All three cards are skipped rather than cited from memory. Placing Cox--Little--O'Shea, *Toric Varieties*, and a Brauer-group text in `tmp/sources` would let each statement be cited at its number.
 
 **Amendment, same day.** `PR-D2F15` is repaired and no longer needs a source: Cox--Little--Schenck, *Toric Varieties*, now sits in `tmp/sources`, and the card cites Theorem 1.3.12 for the smoothness criterion, Proposition 11.1.7 for the refinement, and Theorem 11.4.8 with the $\QQ$-factorial remark that follows it. `D-VARSEVBRAUER` and `D-VARTWIST` remain skipped rather than cited from memory; placing a Brauer-group text (Giraud, or Milne's *Étale Cohomology*) in `tmp/sources` would let each statement be cited at its number.
+
+## 2026-11-20, #179: the retained Rudin *Functional Analysis* and Cox--Little--O'Shea do state the two "uncitable" theorems
+
+**Correction to the two records above on Molien, Noether and Gelfand.** The retained texts include `tmp/sources/rudin-1991-functional-analysis.md` (17,575 lines), whose Theorem 10.13(b) states $\rho(x)=\lim_{n\to\infty}\norm{x^n}^{1/n}=\inf_{n\geq1}\norm{x^n}^{1/n}$ and $\rho(x)\leq\norm x$ for an element of a Banach algebra. And "No retained text states Noether's degree bound" does not hold: `tmp/sources/cox-little-oshea-2007-ideals-varieties-algorithms.md`, Chapter 7, §3, Theorem 5, states $k[x_1,\ldots,x_n]^G=k[R_G(x^\beta):\abs\beta\leq\size G]$ over a field of characteristic zero.
+
+**Repair.** `T-GELFND` cites Rudin, *Functional Analysis*, Theorem 10.13(b) for the submultiplicative clauses, with the arbitrary-norm limit argued from the equivalence of norms on $M_n(\CC)$; `T-NOETHD`'s existing Cox--Little--O'Shea locator is exact. `T-MOLIEN` remains the one without a stated theorem in any retained text: Cox--Little--O'Shea, Chapter 7, §3 names Molien's theorem and refers to Benson--Grove (1985), Chapter 7 and Sturmfels (1993), Chapter 2, neither of which is retained, and the card records that referral.
+
+**Uncertainty.** `vocabularies/references.yaml` has no entry for Rudin's *Functional Analysis* or for Cox--Little--O'Shea, so both citations are prose locators rather than `[@key]` citations; adding the works to Zotero and regenerating the file would close that gap.
