@@ -380,6 +380,55 @@ audit:
     event of this date missed. Not checked: no Sage or Lean computation; the
     characteristic-p attainment is unchanged; the source pages are those of the
     earlier events.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The published-solution question of issue #171 is settled. Read in Gruson-Peskine II, text
+    version tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md and the printed
+    pages of the retained PDF: footnote (1), printed p. 401, which fixes an algebraically closed
+    field of characteristic 0; the invariants d(L), r(L) and the genus formula, printed pp. 406-407;
+    Proposition 2.1, printed p. 407; Theorem 2.5 with its three exceptions, printed p. 409, and the
+    derivation of the exception (9,1,2) at printed p. 410. Read Hartshorne's Exercise V.4.9, printed
+    p. 408, Exercise V.4.8, Theorem V.1.9, printed p. 364, and Theorem V.4.11 with its proof,
+    printed pp. 405-406, in tmp/sources/hartshorne-1977-algebraic-geometry.md. Searched the
+    retained solution sets: among those in tmp/sources only Egbert's entry (printed pp. 290-291)
+    and Yang Pi-Yeh's Solution 5.4.9 (printed pp. 110-111) reach V.4.9, and both are the draft and
+    the sketch the remark records; the other retained sets stop before Chapter V. The public sets
+    checked in the same search (NTU Algebraic Geometry II 2020 Chapter V, Wikibooks, Park, the
+    dokumen.pub and wordpress mirrors) have no V.4.9. Not checked: no printed copy of either
+    article or of Hartshorne was read, only the retained text version and scan; no solution set
+    outside those named was searched.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card now carries the transcription the reader asked for and corrects the sentence that
+    denied it. A first solution, "Published solution", transcribes Gruson-Peskine's argument at
+    r = 2, citing Proposition 2.1 and Theorem 2.5 by printed page and naming Hartshorne Exercise
+    V.4.9, printed p. 408: its first step is the necessity half with the r = 2 five-squares
+    computation and the exception (9,1,2), its second the two attainer tuples and Proposition 2.1.
+    The former solution becomes the second, titled "Independent proof, in every characteristic",
+    with a head saying that it is the card's own and uses neither r nor the criterion. The remark's
+    sentence "The proof above is independent of both articles" is replaced: the independent proof
+    uses Bourbaki's Theorem 5.1, printed p. 312, for the characteristic-p smoothness, so the
+    sentence was false as written. The remark also records that no published solution set contains
+    a complete proof, gives the characteristic-0 footnote of Gruson-Peskine, and connects the
+    exception (9,1,2) to the exercise's hypothesis d >= 13, with the class 3l on X_6 as the actual
+    curve. No statement, bound or equality class of the exercise changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read both solutions. Checked the transcription against the printed statements: d(L) and
+    r(L) on p. 406, F_d on p. 407, the hypotheses and conclusions of 2.1 and 2.5 on pp. 407 and
+    409, the derivation of the exception on p. 410, and the r = 2 arithmetic (F_d(1) = 5/8,
+    F_d(2) = (d-1)/2, 8(F_d(2)-g) = 4((d-1)-2g), the tuples (2,2,2,2,2) and (2,2,2,2,0)). Checked
+    the Hodge-index bound 3D^2 <= d^2 that makes 2.5 applicable, and that "positive" in 2.1 is
+    read as nonnegative, from the proof of 2.1 on p. 407. Re-read the independent proof's
+    unchanged steps. Not checked: no certificate or computation was run in this pass; the
+    characteristic-p attainment remains the independent proof's; no printed copy of a source was
+    read.
 ---
 
 ::: {.problem}
@@ -390,7 +439,92 @@ $$
 and this minimum value of $g>0$ is achieved for each $d$ in the range given.
 :::
 
-::: {.solution}
+::: {.solution title="Published solution"}
+The exercise is Hartshorne V.4.9, printed p. 408. Its published solution is the case $r=2$ of
+Gruson--Peskine [@GP82], Proposition 2.1 (printed p. 407) and Theorem 2.5 (printed p. 409). That
+article works over an algebraically closed field of characteristic $0$ (footnote (1), printed
+p. 401), and the transcription below follows its argument at $r=2$; the characteristic-$p$
+attainment, which its Bertini step does not give, is supplied by the second solution on this card,
+which is the card's own.
+
+::: pf
+
+::: {.pf-step #published-lower-bound}
+For an irreducible nonsingular curve $C$ of degree $d$ and genus $g>0$ on the cubic surface,
+$$
+g\ge \frac{d-6}{2}\ \text{for even } d,
+\qquad
+g\ge \frac{d-5}{2}\ \text{for odd } d .
+$$
+
+::: pf-proof
+Let $D=[C]$. By Exercise V.4.8 the class $D$ meets every one of the $27$ lines nonnegatively and
+$D^2>0$; in the notation of [@GP82], §2, printed p. 406,
+$$
+d(\OO_S(D))=-D\cdot K_S=d,
+\qquad
+r(D)=d-\max\{D\cdot E:E^2=E\cdot K_S=-1\}.
+$$
+The Hodge index theorem, Theorem V.1.9, printed p. 364, gives $3D^2=(D\cdot H)^2\le d^2$ with
+$H=-K_S$, so $g=1+\frac12(D^2-d)\le 1+\frac16d(d-3)$. Theorem 2.5 of [@GP82], printed p. 409,
+therefore applies: with $r$ the least positive integer such that $g\le F_d(r)$, where
+$F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$, and except for the three triples $(9,1,2)$,
+$(23,22,4)$ and $(27,28,4)$, the number $8(F_d(r)-g)$ is a sum of squares of five integers of one
+parity and of absolute value at most $r$. Since $F_d(1)=5/8<1\le g$, one has $r\ge2$, and since
+$g\le F_d(2d/3)$ one has $r\le 2d/3$, since $F_d$ is increasing on that interval.
+
+If $r=2$, the five integers are even: five odd squares sum to $5$ modulo $8$, whereas
+$8(F_d(2)-g)$ is divisible by $8$. Each square is then $0$ or $4$, so
+$$
+8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)=4j,\qquad j\in\{0,\dots,5\},
+$$
+that is, $g=(d-1-j)/2$ with $j\equiv d-1\pmod 2$. For even $d$ this gives
+$g\in\{(d-2)/2,(d-4)/2,(d-6)/2\}$, and for odd $d$ it gives
+$g\in\{(d-1)/2,(d-3)/2,(d-5)/2\}$; hence the two bounds. If $r\ge3$, then
+$g>F_d(r-1)\ge F_d(2)=(d-1)/2$, and since $g$ is an integer this already exceeds both bounds. The
+triple $(9,1,2)$ is the only exception with $g\le F_d(2)$, and $d=9$ is excluded by the exercise's
+hypothesis that $d\ge13$ when $d$ is odd; the other two exceptions have $g=22>F_{23}(2)=11$ and
+$g=28>F_{27}(2)=13$, so they fall under the case $r\ge3$.
+:::
+
+:::
+
+::: {.pf-step #published-attainment}
+For every even $d\ge8$ the cubic surface contains an irreducible nonsingular curve of degree $d$
+and genus $(d-6)/2$, and for every odd $d\ge13$ one of degree $d$ and genus $(d-5)/2$.
+
+::: pf-proof
+Proposition 2.1 of [@GP82], printed p. 407, states that for integers $d,r$ with $0\le r\le2d/3$ and
+a positive integer $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of
+five integers of one parity and of absolute value at most $r$, there is a smooth connected curve on
+$S$ of degree $d$, genus $g$ and $r(\OO_S(C))=r$. "Positive" is read as nonnegative: the proof of
+2.1 on the same page runs with $0\le\alpha_i\le r/2$, the five integers being $2\alpha_i$ in the
+even case, so they may vanish.
+
+Take $r=2$. For even $d$ put $g=(d-6)/2$; then $F_d(2)-g=5/2$ and
+$8(F_d(2)-g)=20=2^2+2^2+2^2+2^2+2^2$. For odd $d$ put $g=(d-5)/2$; then $F_d(2)-g=2$ and
+$8(F_d(2)-g)=16=2^2+2^2+2^2+2^2+0^2$. In both cases $0\le r=2\le2d/3$ for $d\ge3$, $F_d(1)=5/8<g$,
+and $g\le F_d(2)=(d-1)/2$; Proposition 2.1 therefore produces a smooth connected curve of the
+stated degree and genus. Since an irreducible nonsingular curve is connected and smooth, this is
+the exercise's attainment clause.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#published-lower-bound){.pf-ref} and [](#published-attainment){.pf-ref} are Theorem 2.5 and
+Proposition 2.1 of [@GP82], printed pp. 409 and 407, at $r=2$; they prove Exercise V.4.9, printed
+p. 408, over an algebraically closed field of characteristic $0$.
+:::
+
+:::
+:::
+
+::: {.solution title="Independent proof, in every characteristic"}
+This proof is the card's own. It uses neither the invariant $r$ nor the five-squares criterion of
+[@GP82], and it covers every characteristic, in particular the characteristic-$p$ attainment that
+the published argument above does not give.
+
 Let
 $$
 S=X_6=\operatorname{Bl}_{P_1,\ldots,P_6}\PP^2
@@ -1371,13 +1505,13 @@ for every odd $d\ge13$.
 :::
 
 ::: {.remark title="Published solution"}
-The published proof is [@GP82], read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case. The $M_d(r)$ that the proof uses is the maximum of $\frac12\sum_2^6\alpha_i^2$: the definition on printed p. 409 prints the sum without the factor, but the genus formula on printed p. 407 is $g=F_d(r)-\frac12\sum_2^6\alpha_i^2$ and the proof of Proposition 2.1 there sets $2\eta=\sum_2^6\alpha_i^2$ with $\eta=F_d(r)-g$, while Lemma 2.6(1) gives $m_d(t)=5t^2/8$, half of the maximum $5t^2/4$ of the sum over five $\alpha_i\le t/2$; the factor is therefore forced, its absence is the print's, and no statement above uses $M_d$. The printed Lemma 2.6 is inconsistent for the same reason: its item (1) is in the halved normalization, items (2) and (4) are in the unhalved one, and item (3) is misprinted; no statement above uses any of them.
+The published argument is [@GP82], read in the text version `tmp/sources/gruson-peskine-1982-genre-courbes-espace-projectif-ii.md`; it is characteristic $0$ by footnote (1), printed p. 401, and the transcription of it at $r=2$ is the first solution above. No published solution set contains a complete proof of the exercise: the two retained sets that reach Chapter V, Egbert and Yang Pi-Yeh, are dealt with at the end of this remark, and every other retained set stops before Chapter V. For a class on a smooth cubic surface they set $d=-C\cdot K_S$, $r=d-\max\{C\cdot E: E^2=E\cdot K_S=-1\}$ and $F_d(r)=1+\frac12\bigl((r-1)d-\frac34r^2\bigr)$. Proposition 2.1, statement on printed p. 407, is the existence half: for integers $0\le r\le 2d/3$ and $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of five integers of one parity and of absolute value at most $r$, there is a nonsingular connected curve of degree $d$ and genus $g$ on $S$. Theorem 2.5, statement on printed p. 409, is the converse, so the two decide every pair $(d,g)$ with $g\le1+d(d-3)/6$, the printed exceptions being $(d,g,r)=(9,1,2)$, $(23,22,4)$ and $(27,28,4)$. The five integers of the criterion are read as nonnegative: the proof of 2.1 runs with $0\le\alpha_i\le r/2$ in the even case, where the five entries are $2\alpha_i$ and may vanish, and with five odd $\beta_i$ of absolute value at most $r$ in the odd case. The $M_d(r)$ that the proof uses is the maximum of $\frac12\sum_2^6\alpha_i^2$: the definition on printed p. 409 prints the sum without the factor, but the genus formula on printed p. 407 is $g=F_d(r)-\frac12\sum_2^6\alpha_i^2$ and the proof of Proposition 2.1 there sets $2\eta=\sum_2^6\alpha_i^2$ with $\eta=F_d(r)-g$, while Lemma 2.6(1) gives $m_d(t)=5t^2/8$, half of the maximum $5t^2/4$ of the sum over five $\alpha_i\le t/2$; the factor is therefore forced, its absence is the print's, and no statement above uses $M_d$. The printed Lemma 2.6 is inconsistent for the same reason: its item (1) is in the halved normalization, items (2) and (4) are in the unhalved one, and item (3) is misprinted; no statement above uses any of them.
 
-Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$; this is divisible by $4$, while five odd squares sum to $5$, so the five integers are even and each square is $0$ or $4$. Hence $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. The arithmetic of these six assignments --- the squared sums and the identity $\sum x_i^2=8(F_d(2)-g)$ for $d=2m$ and $d=2m+1$ --- is certified exactly in [the certificate script](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage), whose recorded run, with the interpreter, the source revision and the timings, is [its recorded output](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.out); there the rejected $(2,2,0,0,0)$ has squared sum $8$, which is $8(F_d(2)-g)$ at $g=(d-3)/2$ and not at the minimum, while the minimum $(d-5)/2$ is where $8(F_d(2)-g)$ equals the squared sum $16$ of $(2,2,2,2,0)$. That certificate covers this arithmetic and no more: the squared-sum condition is one hypothesis of (2.1) and of (2.5), it proves neither statement, and it says nothing about the existence of a curve, about the lower bound, or about the classification. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus.
+Both halves of the exercise are the case $r=2$. Since $F_d(1)=5/8$, a genus $g>0$ has $r\ge2$; and if $g\le F_d(2)=(d-1)/2$, the criterion reads $8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)$; this is divisible by $4$, while five odd squares sum to $5$, so the five integers are even and each square is $0$ or $4$. Hence $(d-1)-2g\in\{0,\dots,5\}$ and $g\in\{(d-1)/2-j/2\}$. For even $d$ only $j=1,3,5$ give an integer, so the genera at most $(d-1)/2$ are $(d-2)/2$, $(d-4)/2$ and $(d-6)/2$, attained by the tuples $(2,0,0,0,0)$, $(2,2,2,0,0)$ and $(2,2,2,2,2)$; for odd $d$ only $j=0,2,4$ do, giving $(d-1)/2$, $(d-3)/2$ and $(d-5)/2$, attained by $(0,0,0,0,0)$, $(2,2,0,0,0)$ and $(2,2,2,2,0)$. In each parity it is the last tuple that has $\sum x_i^2=8(F_d(2)-g)$ with $g$ the printed minimum, $(d-6)/2$ and $(d-5)/2$ respectively, and the two smaller tuples give the genera above it. The arithmetic of these six assignments --- the squared sums and the identity $\sum x_i^2=8(F_d(2)-g)$ for $d=2m$ and $d=2m+1$ --- is certified exactly in [the certificate script](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.sage), whose recorded run, with the interpreter, the source revision and the timings, is [its recorded output](https://github.com/dzackgarza/new-qual-site/blob/d4122f28c509b86fb8f1ad5e9c80e7b72ccbae75/proofs/cards/V49FiveSquaresTuples.out); there the rejected $(2,2,0,0,0)$ has squared sum $8$, which is $8(F_d(2)-g)$ at $g=(d-3)/2$ and not at the minimum, while the minimum $(d-5)/2$ is where $8(F_d(2)-g)$ equals the squared sum $16$ of $(2,2,2,2,0)$. That certificate covers this arithmetic and no more: the squared-sum condition is one hypothesis of (2.1) and of (2.5), it proves neither statement, and it says nothing about the existence of a curve, about the lower bound, or about the classification. A genus above $F_d(2)$ is at least $\lfloor(d-1)/2\rfloor+1$, which already exceeds both bounds. So (2.5) gives the lower bound for every even $d\ge8$ and every odd $d\ge13$, and (2.1) the attainment; of the three exceptional triples only $(9,1,2)$ lies below $F_d(2)$, at the odd degree $9$ that the printed range excludes. The table on printed p. 411 is the independent check: its rows begin at $d=10$ --- no degree at most $9$ has a gap --- and in each of the $32$ rows the column headed $F_d(2)$ reads $\{1,\dots,(d-6)/2-1\}$ for even $d$ and $\{1,\dots,(d-5)/2-1\}$ for odd $d$, which leaves the bound itself as the least genus. The exception $(9,1,2)$ is the only one of the three with $g\le F_d(2)$: on $X_6$ the class $3l$ has $d=-K\cdot3l=9$, square $9$ and genus $1$, and it meets the $27$ lines nonnegatively, since $3l\cdot E_i=0$, $3l\cdot F_{ij}=3$ and $3l\cdot G_j=6$, so V.4.8(c) gives it an irreducible nonsingular member; the bound $(d-5)/2$ therefore fails at $d=9$, and the exercise's hypothesis $d\ge13$ in the odd case is exactly what excludes it. The article derives this exception at printed p. 410.
 
 The Bourbaki exposé [@Har82], text version `tmp/sources/hartshorne-1982-genre-courbes-bourbaki-592.md`, treats a different question and does not close the exercise. Theorem 0.1, printed pp. 301--302, classifies the pairs $(d,g)$ of a curve in $\PP^3$ according to the surface containing it, and Theorem 0.2, printed p. 302, produces a curve of degree $d$ and genus $g$ on a smooth cubic surface only for $g>\frac{1}{\sqrt3}d^{3/2}-d+1$, which for $d\ge10$ exceeds $(d-6)/2$: it says nothing about the bottom of the range, where the exercise's minimum sits. What it supplies is the framework. Its §1 quotes the class criterion of Hartshorne's Lemma V.4.12 and Ex. V.4.8 in the form $a\ge b_1+b_2+b_3$, $b_1\ge\cdots\ge b_6\ge0$ imply an irreducible nonsingular member, except for the classes $(n;n,0,\dots,0)$ with $n>1$, a criterion the proof above does not invoke, since it uses the explicit classes on $X_2$ and Theorem 5.1 instead; and Remark 2, closing that section, states that the converse of its Lemma 1.1 is what computes the list of gaps for a given degree, and that converse is (2.5). Its §5 records that Gruson and Peskine assumed characteristic $0$ in order to apply Bertini, and supplies a characteristic-free substitute, Theorem 5.1 (printed p. 312), which produces reduced nonsingular members of a system that is almost very ample --- the locus where the differential of the associated morphism has kernel of dimension at least $i$ being of codimension at least $i$, for every $i>0$ --- and says nothing about their irreducibility. The lower bound above uses no Bertini and holds in every characteristic. The attainment needs both properties, and the hypotheses that Theorem 5.1 does not check are supplied in the steps above: that $\OO_Y(2,s-2)$ is very ample, which makes the even system's general member smooth by the theorem applied on the quadric, and that the morphism of $\linearsystem{M_{\mathrm{odd}}}$ is immersive, which makes that system almost very ample. Connectedness comes from Hartshorne's Corollary III.7.9, whose proof rests on the lemma of Enriques--Severi--Zariski (III.7.8) and which is stated over an algebraically closed field of any characteristic, applied to the ample classes $\OO_Y(2,s-2)$ and $M_{\mathrm{odd}}$, the latter ample by Nakai's criterion (V.1.10); connectedness together with regularity gives irreducibility by the argument of Remark III.7.9.1. The one step of that chain that is not proved in Hartshorne's text is the identification of $X_2$ with a blowup of a quadric, which is his Exercise V.4.1; it is proved in the corpus at [[P-AGH541CONICSQUADRIC]], which the quadric-model step of the proof above cites, and the exceptional curve and the two rulings are derived from it there and on this card rather than quoted. Hartshorne's standing convention is that a variety is over an algebraically closed field, with no characteristic fixed, which is the setting of the exercise.
 
-The proof above is independent of both articles: it contracts the zero-intersection lines to $X_2$, uses Ex. V.4.8 once, on $X_6$, for the case (c) alternatives, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table.
+The card's independent proof, the second solution above, does not use either article's classification of the pairs $(d,g)$: it contracts the zero-intersection lines to $X_2$, uses Ex. V.4.8 once, on $X_6$, for the case (c) alternatives, and exhibits the equality curves as explicit classes on $X_2$ pulled back to $X_6$. It uses neither the invariant $r$, nor the five-squares criterion, nor the table. It does use Theorem 5.1 of Bourbaki's exposé 592, printed p. 312, in its step on smoothness, for the smoothness of the equality members in every characteristic, in place of the characteristic-zero Corollary III.10.9.
 
 A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, V.4.9, printed p. 290, is a working draft and not a proof: its lower-bound half is a chain of unattributed algebraic manipulations that does not close, and its existence half fixes $b_6^2=3$ and then applies the five-squares lemma of Bourbaki's Proposition 2.1 with $k=a$, which does not respect the degree $d=3a-\sum b_i$ that it is meant to realize.
 
