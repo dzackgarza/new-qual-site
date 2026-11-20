@@ -117,9 +117,9 @@ Number of elements of each cycle type in each transitive subgroup of $S_4$, with
 
 [[PR-JY4PV]]
 
-## Structural facts
+## Constraints on the Galois group
 
-::: {.fact title="Structural facts"}
+::: {.fact title="Constraints from the factorization and the roots"}
 \envlist
 
 - If $f = f_1\cdots f_k$ with the $f_i$ irreducible, then $G$ permutes the roots of each $f_i$ among themselves, so $G$ embeds in $\prod_i\Gal(\SF(f_i)/\QQ)$.
