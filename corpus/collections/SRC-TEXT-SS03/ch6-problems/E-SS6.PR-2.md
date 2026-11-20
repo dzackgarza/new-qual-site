@@ -38,7 +38,7 @@ where $\{x\} = x - \lfloor x \rfloor$ is the fractional part of $x$.
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 6, Problem 2, printed p. 180). Both sides have a simple pole at $s=1$, so the identity is read on $\operatorname{Re}(s)>0$ with $s\ne1$.
+The book marks this problem with an asterisk (Chapter 6, Problem 2). Both sides have a simple pole at $s=1$, so the identity is read on $\operatorname{Re}(s)>0$ with $s\ne1$.
 :::
 
 ::: {.solution}
