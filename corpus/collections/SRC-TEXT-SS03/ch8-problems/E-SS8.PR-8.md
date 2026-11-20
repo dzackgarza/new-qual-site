@@ -82,6 +82,24 @@ audit:
     closing it, and step s4, which estimates $\abs{v-r\sin\theta}\le Cr^2\sin\theta$ term by term
     through $\abs{\sin(k\theta)}\le k\sin\theta$, remains the card's own. Checked: the quotation, read
     at the document's Problem 8. Not checked: anything in that document outside its Problem 8.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Step s3 rewritten, and the card now states that no published solution carries part (d). Step s3's
+    proof said the set where $\operatorname{Im}f\ne0$ is $\DD^+\setminus f^{-1}(\RR)$ and that
+    connectedness of $\DD^+$ gives the sign; the complement of a closed subset of a connected set need
+    not be connected, so that was an assertion, not a proof. The step now argues on the image: an
+    $f(z)\in\RR$ with $\operatorname{Im}z>0$ would give $f(\overline z)=\overline{f(z)}=f(z)$ at the
+    distinct points $z,\overline z$ of the disc, against injectivity, so $f(\DD^+)$ misses the real
+    axis; it is connected as a continuous image of the connected $\DD^+$; a connected subset of
+    $\CC\setminus\RR$, which is a union of two disjoint open half-planes, lies in one of them; and
+    $f(ir)=ir+r^2h(ir)$ has positive imaginary part for small $r$, which names the component as the
+    upper half-plane. No nonvanishing derivative is used, only injectivity, continuity and the reality
+    of the coefficients. Checked against Chapter 8, Problem 8(c) read in the book: the print asks for
+    symmetry of $f(\DD)$ and for $f$ to carry the upper half-disc into one of the two parts of $f(\DD)$,
+    and the step proves both, plus positivity of $v$ on the open rectangle. Not re-read in this pass:
+    steps s1, s2 and s5--s6, and the argument of step s4 beyond its use of s3.
 
 ---
 
@@ -109,7 +127,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 8).
 :::
 
 ::: {.solution}
-A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 8), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. It is not a source for part (d) as printed: it argues that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$ "so" $v\sin\theta\ge0$ for all $r$, which is the inference this card repairs — see the audit trail, where the published text is recorded as repeating that step rather than closing it. The argument below follows the book's hints and is the card's own.
+No published solution carries part (d). The only located published solution of this Problem — Wang Zirui, *Complete Solutions for Chapter 8* (Problem 8), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions` — says of part (d) only that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, "so" $v\sin\theta\ge0$ for all $r$: the very inference a reader rejected on this card, because a bound without the factor $\sin\theta$ cannot be divided by it near $\theta=0$ and $\theta=\pi$. The argument below is therefore the card's own, following the printed hints, and steps s2--s4 are where it does the work the printed hint leaves implicit.
 
 Let $f(z)=z+a_2z^2+a_3z^3+\cdots$ be injective and holomorphic on $\DD$ with $f(0)=0$, $f'(0)=1$, and suppose every $a_n\in\RR$. For $0<r<1$ and $z=re^{i\theta}$ put $v(r,\theta)=\operatorname{Im}f(re^{i\theta})$.
 
@@ -149,13 +167,23 @@ on $[0,\pi]$, where $\sin\theta\ge0$.
 
 ::: {.pf-step #s3}
 
-Part (c): $f(\DD)$ is symmetric about the real axis, and $v(r,\theta)>0$ for $0<\theta<\pi$.
+Part (c): $f(\DD)$ is symmetric about the real axis; $f$ carries the upper half-disc $\DD^+$ into one of the two components of $\CC\setminus\RR$, namely the upper half-plane; hence $v(r,\theta)>0$ for $0<r<1$ and $0<\theta<\pi$.
 
 ::: pf-proof
 
-Since the coefficients are real, $f(\bar z)=\overline{f(z)}$, so $f(\DD)$ is invariant under conjugation, i.e. symmetric about $\RR$.
+Since every $a_k$ is real, $f(\overline z)=\overline{f(z)}$ for $\abs z<1$, because the series converges at $\overline z$ and conjugation is continuous. Hence $f(\DD)$ is invariant under $z\mapsto\overline z$, that is, symmetric about $\RR$.
 
-Since $f$ is injective with $f(0)=0$ and $f'(0)=1$, one has $f(z)=z(1+O(z))$, so for small $z$ in the upper half-disc, $\operatorname{Im}f(z)>0$. The upper half-disc $\DD^+$ is connected, and the set where $\operatorname{Im}f\ne0$ is $\DD^+\setminus f^{-1}(\RR)$; by continuity and connectedness, $\operatorname{Im}f>0$ on all of $\DD^+$. Also $f$ does not vanish on $\DD^+$ (injectivity and $f(0)=0$). Hence $v(r,\theta)>0$ for $0<\theta<\pi$.
+Two facts about $f(\DD^+)$, where $\DD^+=\{z:\abs z<1,\ \operatorname{Im}z>0\}$. First, $f(\DD^+)\cap\RR=\varnothing$: if $z\in\DD^+$ and $f(z)\in\RR$, then $\overline z\in\DD$ with $\overline z\ne z$ and $\operatorname{Im}\overline z<0$, while $f(\overline z)=\overline{f(z)}=f(z)$, contradicting injectivity. Second, $f(\DD^+)$ is connected, being the image of the connected set $\DD^+$ under the continuous map $f$.
+
+The set $\CC\setminus\RR$ has exactly two components, the open upper and lower half-planes. A connected subset of the union of two disjoint open sets lies in one of them, so $f(\DD^+)$ is contained in one component.
+
+Which component it is, the point $i r$ decides. Since $f(0)=0$ and $f'(0)=1$, one has $f(z)=z+z^2h(z)$ with $h$ holomorphic on $\DD$; then
+$$
+\operatorname{Im}f(ir)=r-r^2\operatorname{Im}h(ir),
+$$
+so $\operatorname{Im}f(ir)>0$ for all $0<r$ with $r\operatorname{Im}h(ir)<1$, which holds for small $r$ because $h$ is bounded on a neighbourhood of $0$. That point of $f(\DD^+)$ lies in the upper half-plane, so the component is the upper half-plane.
+
+Therefore $\operatorname{Im}f(z)>0$ on $\DD^+$, that is, $v(r,\theta)>0$ for $0<r<1$ and $0<\theta<\pi$. Also $v(r,0)=v(r,\pi)=0$, because $f$ maps $\DD\cap\RR$ into $\RR$ by the reality of the coefficients.
 
 :::
 
