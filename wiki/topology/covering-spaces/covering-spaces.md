@@ -275,40 +275,9 @@ In the tree describing the universal cover, each red vertex is a copy of $S^2$ c
 
 [[T-TQ4J3]]
 
-::: {.proof}
-If $X$ is contractible, there is a homotopy $H\colon X\cross I \to X$ from $\id_X$ to the constant map $c\colon x \mapsto x_0$.
-Define $H'\colon Y\cross I \to X$ by $H'(y,t)\coloneqq H(f(y),t)$.
-Then $H'(y,0)=f(y)$ and $H'(y,1)=x_0$, so $H'$ is a homotopy from $f$ to a constant map.
-
-:::
-
 [[C-GJRYO]]
 
-::: {.proof}
-Suppose $f = p \circ \tilde f$ with $\tilde f\colon X\to Z$, $p\colon Z\to Y$, and $Z$ contractible, so that the following triangle commutes.
-
-\begin{tikzcd}
-	&& {Z} \\
-	\\
-	{X} && {Y}
-	\arrow["{p}", from=1-3, to=3-3]
-	\arrow["{\tilde f}", from=3-1, to=1-3]
-	\arrow["{f}"', from=3-1, to=3-3]
-\end{tikzcd}
-
-By [[T-TQ4J3]], there is a homotopy $\tilde H\colon X\cross I \to Z$ from $\tilde f$ to a constant map $x\mapsto z_0$.
-Then $p\circ \tilde H\colon X \cross I \to Y$ is a homotopy from $f$ to the constant map $x\mapsto p(z_0)$.
-
-:::
-
 [[PR-TRSHQ]]
-
-::: {.proof}
-Suppose $p\colon\RP^2\to\TT^2$ is a covering map.
-By [[PR-R5EN3]], $p_*\colon\pi_1(\RP^2)\to\pi_1(\TT^2)$ is injective.
-But $\pi_1(\RP^2)\cong\ZZ/2$ has an element of order $2$, and $\pi_1(\TT^2)\cong\ZZ^2$ is torsion-free, a contradiction.
-
-:::
 
 [[T-O44GI]]
 
