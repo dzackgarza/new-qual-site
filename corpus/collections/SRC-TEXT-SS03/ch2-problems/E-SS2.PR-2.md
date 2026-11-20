@@ -61,6 +61,24 @@ audit:
     denotes the number of divisors of n", which is this Problem, while the page it names as the PDF
     page holds Problem 3(a) with its displayed (16) and nothing of Problem 2. The card cites
     Chapter 2, Problem 2, and its statement and argument are unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 2* (SJTU),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, file
+    `book-2-complex/tex/stein-shakarchi-book2-chapter02-solutions.tex`, read at its Problem 2 and
+    checked against Chapter 2, Problem 2: it proves the Lambert identity by rearrangement of
+    $\sum_{n,m\ge1}z^{nm}$, bounds $F(r)$ below by $c\,h^{-1}\log(1/h)$ from the terms with
+    $n\le h^{-1}$ at $r=1-h$, splits the Lambert series at multiples of $q$ for $\zeta=e^{2\pi
+    ip/q}$, and gets $\abs{F(r\zeta)}\ge c_{p/q}h^{-1}\log(1/h)$ there, which is the divergence the
+    card's third step states. Its last step is the card's fourth: a regular boundary point would make
+    a whole arc regular, and roots of unity are dense. The card supplies the detail the published
+    text compresses: the uniform bound $\abs{1-r^n\zeta^n}\ge\delta_q/2$ for $q\nmid n$ once
+    $r\ge1-\delta_q/2$, the real-part estimate, and the vacuous case $q=1$. Checked against the book:
+    all four claims are the printed Problem's, and the identity is the printed one. Not checked:
+    anything in the published document outside its Problem 2.
 ---
 
 ::: {.exercise}
@@ -88,7 +106,7 @@ The book marks this problem with an asterisk (Chapter 2, Problem 2).
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, with the book's numbered results cited where used.
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 2* (Problem 2), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, and its four claims are the four steps below: the Lambert-series identity $\sum_{n\ge1}z^n/(1-z^n)=\sum_{k\ge1}d(k)z^k$ by rearrangement of an absolutely convergent double series, the lower bound $F(r)\ge c(1-r)^{-1}\log\frac1{1-r}$, the same bound at a root of unity with a constant depending on its order $q$, and the conclusion that no continuation crosses the circle. The steps below supply the detail that text compresses, which the audit trail records.
 
 ::: pf
 
