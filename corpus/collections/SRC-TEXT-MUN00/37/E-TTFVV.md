@@ -40,6 +40,22 @@ audit:
     Added: closedness of the complement sets is now used explicitly in the converse, which
     replaces the arbitrary subsets of the hypothesis by their closures; and the derivation of
     the countable subcover from Lindelöfness is written out rather than summarised.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against the Supplementary-exercise-free §37 Exercise 2 and found correct in both
+    directions. Forward: if the intersection of the closures were empty, the complements
+    $X\setminus\overline A$ would be an open cover, a countable subcover would give
+    $\bigcap_n\overline{A_n}=\varnothing$ and hence $\bigcap_n A_n=\varnothing$, against the
+    countable intersection property. Converse: an open cover with no countable subcover gives closed
+    sets $A_i=X\setminus U_i$ whose countable intersections are nonempty, so the hypothesis makes
+    $\bigcap_i\overline{A_i}=\bigcap_iA_i$ nonempty, while it equals $X\setminus\bigcup_iU_i=\varnothing$
+    because the $U_i$ cover. One citation corrected: the card attributed the definition of Lindelöf
+    to §37 with a page; Munkres gives it in §30, in the paragraph after Theorem 30.3, and the card
+    now cites it there with no page. The empty space needs no separate case, since no collection of
+    its subsets has the countable intersection property. Not checked: no published solution of this
+    exercise was searched for in this pass.
 ---
 
 ::: {.exercise}
@@ -55,7 +71,7 @@ is nonempty.
 :::
 
 ::: {.solution}
-A collection $\mathcal{A}$ of subsets of $X$ has the countable intersection property when the intersection of any countable subcollection is nonempty, and $X$ is Lindelöf when every open cover of $X$ has a countable subcover (Munkres, *Topology* (2000), §37, printed p. 235).
+A collection $\mathcal{A}$ of subsets of $X$ has the countable intersection property when the intersection of any countable subcollection is nonempty, and $X$ is Lindelöf when every open cover of $X$ has a countable subcover, the definition Munkres gives in §30 after Theorem 30.3.
 
 ::: pf
 
