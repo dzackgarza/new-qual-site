@@ -238,6 +238,36 @@ audit:
     Not checked: nothing new in this pass; the charts were not recomputed.
     The fourth and later blows of Yang's entry are recorded in the event above
     of this date, which is where the reading of them belongs.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (b) read for issue #168 and recomputed with a sympy script that carries
+    out the eight point blowups in the card's own order, starting from
+    x^2+y^3+z^5, in all three charts of every step, forming each strict
+    transform by substitution and division by the exceptional coordinate. Every
+    strict transform displayed in steps first-blowup-singular-locus,
+    second-blowup-singular-locus, third-blowup-two-points,
+    resolve-ordinary-double-point-e1e3, e5-three-double-points,
+    resolve-remaining-three-points and eight-blowups-e8-diagram was reproduced
+    and agrees. The script also gives: after the first blowup the only singular
+    point lies on E_1; after the second it is E_1 cap E_2; after the third there
+    are exactly two, at E_1 cap E_3 and at E_2 cap E_3; the fourth removes the
+    first and leaves none on E_4; the fifth leaves exactly three points on E_5,
+    one at E_3 cap E_5, one at E_2 cap E_5 and one free point, which is what
+    step e5-three-double-points asserts; and the sixth, seventh and eighth leave
+    no singular point on the exceptional line. The multiplicity of every
+    exceptional divisor in its total transform is 2, so every E_i^2 = -2, and
+    the curves through each centre, a blowup at an intersection separating the
+    two curves through it, give exactly the edges E_1E_4, E_3E_4, E_3E_7,
+    E_5E_7, E_5E_6, E_2E_6 and E_5E_8, that is the seven-curve chain
+    E_1-E_4-E_3-E_7-E_5-E_6-E_2 with E_8 attached to the fifth of them, which is
+    the E_8 diagram. The same computation over GF(2), GF(3) and GF(5) reproduces
+    the strict transforms, one singular point after each of the first three
+    blowups and none after the fourth, so nothing in part (b) degenerates at 2,
+    3 or 5. Not checked: whether the eight blowups are minimal, which no event
+    above settled either; and Brieskorn's Satz 2.11 row by row, which this card
+    does not cite.
 ---
 
 ::: {.problem}
