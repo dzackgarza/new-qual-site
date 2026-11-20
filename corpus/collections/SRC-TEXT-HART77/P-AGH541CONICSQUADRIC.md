@@ -57,6 +57,19 @@ audit:
     says that the correction of the two false composition claims, recorded
     there for Egbert, applies to it word for word. No step, statement or
     hypothesis of the card changes.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The body of the card is checked against the citation rule and carries no printed or PDF page
+    locator: the solution and the remark name the numbered statements they use, and no sentence of
+    either quotes a page or an offset. The page locators inside the dated events above are left as
+    written under QUAL-11, where they remain the record of what was read and of which rendering of
+    each source was consulted, and they are not citations of the body; the rule that a body cites
+    numbered statements only is met by the solution and the remark as they stand. Checked: the
+    whole body, by search for page references and by reading it; no statement, step or hypothesis
+    changes. Not checked: no source was re-read for this event, and nothing in the mathematics of
+    the card is touched.
 ---
 
 ::: {.problem}

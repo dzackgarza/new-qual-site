@@ -446,6 +446,24 @@ audit:
     [@GP82] applicable is drawn from the inequality. Checked against Theorem V.1.9, which states
     $(D\cdot H)^2\ge D^2H^2$ for $H$ ample and $D^2>0$. Not checked: no printed copy of any source
     was read.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The congruence that rules out odd squares in the $r=2$ case of the published lower bound is
+    corrected, and the last page locator in the body is deleted. The step claimed that
+    $8(F_d(2)-g)$ is divisible by $8$, which is false: it equals $4((d-1)-2g)$, so at even $d$,
+    where $(d-1)-2g$ is odd, it is $4$ modulo $8$, and $(d,g)=(8,1)$ gives $20$. What the argument
+    needs is only that the value is not $5$ modulo $8$, and that holds: the value is divisible by
+    $4$, while five odd squares sum to $5$ modulo $8$. Hence the five integers, which have one
+    parity, are even; each square is then $0$ or $4$ because they are of absolute value at most
+    $r=2$. The six tuples, the two bounds and both equality families are unchanged, and the remark
+    below already stated the divisibility by $4$. The phrase "on the same page" after Proposition
+    2.1 is replaced by the proof of the proposition, so the body of the card carries no printed or
+    PDF page locator; the page locators inside the earlier dated events are left as written under
+    QUAL-11, and they remain the record of what was read. Checked: the divisibility for both
+    parities, the six tuple sums, and that no other step asserts divisibility by $8$. Not checked:
+    no source was re-read for this event, and no geometric step of either solution was touched.
 ---
 
 ::: {.problem}
@@ -490,8 +508,13 @@ $(23,22,4)$ and $(27,28,4)$, the number $8(F_d(r)-g)$ is a sum of squares of fiv
 parity and of absolute value at most $r$. Since $F_d(1)=5/8<1\le g$, one has $r\ge2$, and since
 $g\le F_d(2d/3)$ one has $r\le 2d/3$, since $F_d$ is increasing on that interval.
 
-If $r=2$, the five integers are even: five odd squares sum to $5$ modulo $8$, whereas
-$8(F_d(2)-g)$ is divisible by $8$. Each square is then $0$ or $4$, so
+If $r=2$ the five integers all have the same parity, and that parity is not odd: five odd squares
+sum to $5$ modulo $8$, whereas
+$$
+8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)
+$$
+is divisible by $4$, hence congruent to $0$ or $4$ modulo $8$, and never to $5$. So all five are
+even, and each square is $0$ or $4$ because the integers are of absolute value at most $r=2$:
 $$
 8(F_d(2)-g)=4\bigl((d-1)-2g\bigr)=4j,\qquad j\in\{0,\dots,5\},
 $$
@@ -515,7 +538,7 @@ Proposition 2.1 of [@GP82] states that for integers $d,r$ with $0\le r\le2d/3$ a
 a positive integer $g$ with $F_d(r-1)<g\le F_d(r)$ such that $8(F_d(r)-g)$ is a sum of squares of
 five integers of one parity and of absolute value at most $r$, there is a smooth connected curve on
 $S$ of degree $d$, genus $g$ and $r(\OO_S(C))=r$. "Positive" is read as nonnegative: the proof of
-2.1 on the same page runs with $0\le\alpha_i\le r/2$, the five integers being $2\alpha_i$ in the
+2.1 runs with $0\le\alpha_i\le r/2$, the five integers being $2\alpha_i$ in the
 even case, so they may vanish.
 
 Take $r=2$. For even $d$ put $g=(d-6)/2$; then $F_d(2)-g=5/2$ and
