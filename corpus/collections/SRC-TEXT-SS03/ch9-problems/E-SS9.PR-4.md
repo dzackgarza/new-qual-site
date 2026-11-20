@@ -33,6 +33,19 @@ audit:
     all of which lie on the grid, so the open rectangle carries no critical point and wp is a local
     homeomorphism there; its image is an open connected set whose boundary lies in the real axis, hence
     one of the two half-planes, and injectivity follows. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two corrections to the first event above. Its locator "(PDF page 300)" is wrong: Problem 4 is on
+    PDF p. 301, printed p. 282; PDF p. 300 is printed p. 281 and carries Problems 1--3. And its
+    sentence that "the asterisk marking a starred problem ... [is] preserved" is wrong: nothing on
+    the card recorded the mark, which the remark below now does. Re-read on printed p. 282 today,
+    the statement is the print's, both parts and the parenthetical example of the rectangle; the
+    asterisk stands before "4." Not checked: the two parts of the argument were read for sense (the
+    conjugation symmetry $\wp(\bar z)=\overline{\wp(z)}$ for a real lattice, the period $\tau$
+    giving $\wp(z+\tau)=\wp(z)$, the critical points at the three half-periods lying on the grid,
+    and the image open with boundary in $\mathbb{R}$) but were not re-derived in this pass.
 ---
 
 ::: {.exercise}
@@ -41,6 +54,10 @@ Suppose $\tau$ is purely imaginary, say $\tau=it$ with $t>0$. Consider the divis
 (a) Show that $\wp$ is real-valued on all these lines, and hence on the boundaries of all these rectangles.
 
 (b) Prove that $\wp$ maps the interior of each rectangle conformally to the upper (or lower) half-plane.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 9, Problem 4, printed p. 282).
 :::
 
 ::: {.solution}
@@ -117,7 +134,7 @@ $\wp$ maps $R$ bijectively onto either the upper or the lower half-plane, hence 
 
 $\wp(R)$ is open (step [](#s3){.pf-ref} and the open mapping theorem) and connected. Its boundary is contained in $\wp(\partial R)\subseteq\RR$ by step [](#s2){.pf-ref}: for a sequence $z_k\in R$ with $z_k\to z\in\partial R$, the values $\wp(z_k)$ have limit points in $\RR$ (including possibly $\infty$ at the corners, which are not in $\Lambda$, so the limit is finite unless $z\in\Lambda$; the corners $0,\tfrac12,\tfrac{it}{2},\tfrac{1+it}{2}$ are the half-periods and $0$, and $0\in\Lambda$ gives the pole).
 
-An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$. Since $\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points, $\wp|_R$ is injective, so it is a conformal map onto that half-plane.
+An open connected subset of $\CC\setminus\RR$ whose boundary lies in $\RR$ is contained in, and hence equals, one of the two half-planes: it is a connected component of $\CC\setminus\RR$. Since $\wp$ is a local homeomorphism on $R$ and $R$ is simply connected without critical points, $\restrictionof{\wp}{R}$ is injective, so it is a conformal map onto that half-plane.
 
 Which half-plane depends on the rectangle: adjacent rectangles give opposite signs, because the values on a shared edge are real and $\wp$ is a local homeomorphism there, so the images lie on opposite sides.
 
