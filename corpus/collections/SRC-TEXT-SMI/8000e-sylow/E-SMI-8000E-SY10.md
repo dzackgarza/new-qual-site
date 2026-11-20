@@ -32,6 +32,14 @@ audit:
     using a central subgroup of order p and the preimage of a subgroup of P/C. The
     hint's two ingredients (induction, nontrivial centre) are exactly those used.
     No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 8, Sylow problem 10, with its
+    hint. It suffices to work in a Sylow $p$-subgroup; a $p$-group of order $p^r$ has a central
+    subgroup $C$ of order $p$, and induction on $r$ applied to $P/C$ gives a subgroup of order
+    $p^{s-1}$ whose preimage has order $p^s$. No defect.
 ---
 
 ::: {.exercise}
