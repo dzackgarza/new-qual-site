@@ -13,6 +13,20 @@ classification:
   - Spheres
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The computation is correct. The two sphere summands are simply connected, so
+    the fundamental group of the wedge is that of the projective plane, of order
+    two, and the universal cover is the double cover of that summand, a sphere,
+    with two copies of each of the two lifted sphere summands attached at the two
+    lifts of the wedge point; the resulting space is homotopy equivalent to a wedge
+    of five spheres, with second homology of rank five. That cover is simply
+    connected, so Hurewicz identifies its second homotopy group with its second
+    homology, and covering maps induce isomorphisms on homotopy above degree one.
+    Nothing was changed.
 ---
 
 ::: {.problem}
