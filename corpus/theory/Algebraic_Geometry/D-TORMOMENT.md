@@ -25,7 +25,7 @@ A projective toric variety $X_P$ carries an action of the compact torus $T_c \co
 $$
 \mu : X_P \to M_\RR \cong \RR^n
 $$
-has image exactly $P$: over the relative interior of a $k$-dimensional face $F$, the fibre of $\mu$ is the compact torus $(S^1)^k$ contained in the orbit attached to $F$, and that orbit has complex dimension $k$ [@Ful93, §4.2].
+has image exactly $P$: the preimage of the relative interior of a $k$-dimensional face $F$ is the orbit attached to $F$, which has complex dimension $k$, and the fibre over a point of that interior is the compact torus $(S^1)^k$ [@Ful93, §4.2].
 So $P$ is the quotient $X_P / T_c$, and the orbit-cone correspondence is visible as the face structure of $P$.
 :::
 
