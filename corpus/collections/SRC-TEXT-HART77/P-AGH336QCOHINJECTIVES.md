@@ -30,7 +30,7 @@ Thus $\QCoh(X)$ has enough injectives.
 
 (b) Show that any injective object of $\QCoh(X)$ is flasque.
 
-(c) Conclude that one can compute cohomology as the derived functors of $\Gamma(X,\wait)$, considered as a functor from $\QCoh(X)$ to $\Ab$.
+(c) Conclude that one can compute cohomology as the derived functors of $\Gamma(X,-)$, considered as a functor from $\QCoh(X)$ to $\Ab$.
 :::
 
 ::: {.hint}
