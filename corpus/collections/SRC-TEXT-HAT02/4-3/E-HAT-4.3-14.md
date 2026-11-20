@@ -11,6 +11,15 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance and page corrected. The body's sentence "none of the retained Hatcher sets solves
+    Section 4.3 Exercise 14" was false: Sam solves Exercise 14 on printed p. 27, by exactly the
+    route the card takes, and the body now cites him. Proposition 4.65 is on printed p. 408, not
+    p. 409; the body is corrected and the event of 2026-11-19, which carries the old page, is left
+    as written under QUAL-11.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -71,7 +80,7 @@ Show the natural map $\mathcal{F}(B) \to \mathcal{M}(B)$ is a bijection. [See Ex
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.3 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 14, printed p. 420, and uses Exercises 11--13 of the same section, which the exercise points to; here $\mathcal F(B)$ is the set of fibre homotopy equivalence classes of fibrations over $B$.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 14**, printed p.~27 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise by the same route: surjectivity from the inclusion $A\hookrightarrow E_f$, injectivity from Exercise 13 and Proposition 4.65. The steps below follow that argument and are checked against Hatcher, Algebraic Topology, Section 4.3 Exercise 14, printed p. 420, and uses Exercises 11--13 of the same section, which the exercise points to; here $\mathcal F(B)$ is the set of fibre homotopy equivalence classes of fibrations over $B$.
 
 ::: pf
 
@@ -138,7 +147,7 @@ Then there is a homotopy equivalence $g:E_1\to E_2$ with $p_1\simeq p_2 g$, by t
 $p_1$ and $p_2$ are fibre homotopy equivalent.
 
 ::: pf-proof
-Each $p_i$ is fibre homotopy equivalent to its mapping path replacement $E_{p_i}\to B$ (Proposition 4.65, printed p. 409: for a fibration $p$ the inclusion $E\hookrightarrow E_p$ is a fibre homotopy equivalence, whose construction is the one of step [](#replacement){.pf-ref} applied to $p_i$). A homotopy $p_1\simeq p_2g$ together with the homotopy equivalence $g$ gives a fibre homotopy equivalence $E_{p_1}\simeq_f E_{p_2 g}$, and composing with $g$ gives $E_{p_2g}\simeq_f E_{p_2}$; this is the content of Exercise 13 of this section. Chaining the three fibre homotopy equivalences gives $p_1\simeq_f p_2$.
+Each $p_i$ is fibre homotopy equivalent to its mapping path replacement $E_{p_i}\to B$ (Proposition 4.65, printed p. 408: for a fibration $p$ the inclusion $E\hookrightarrow E_p$ is a fibre homotopy equivalence, whose construction is the one of step [](#replacement){.pf-ref} applied to $p_i$). A homotopy $p_1\simeq p_2g$ together with the homotopy equivalence $g$ gives a fibre homotopy equivalence $E_{p_1}\simeq_f E_{p_2 g}$, and composing with $g$ gives $E_{p_2g}\simeq_f E_{p_2}$; this is the content of Exercise 13 of this section. Chaining the three fibre homotopy equivalences gives $p_1\simeq_f p_2$.
 :::
 
 :::
