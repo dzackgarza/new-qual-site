@@ -78,14 +78,14 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 \envlist
 
 - Knot complements in $S^3$
-- Covering spaces
-- Lens spaces
+- [[D-ANO2D|Covering spaces]]
+- [[D-UI3FE|Lens spaces]]
 - Matrix groups
 - Prism manifolds
 - The pair of pants
 - Seifert surfaces
 - Surgery on manifolds
-- Simplicial complexes, such as the following:
+- [[D-NJ2Y6|Simplicial complexes]], such as the following:
 
   ![A simplicial complex X on vertices 1, 2, 3, 4: the shaded triangle 234 and the edges 12 and 13](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
 
@@ -99,16 +99,16 @@ where $\mobiusband$ is the Möbius band, $\KK$ the Klein bottle, and $\Sigma_g$ 
 ::: {.example title="Operations on spaces"}
 \envlist
 
-- Cartesian product $A\cross B$
-- Wedge sum $A \vee B$
+- [[D-JKH35|Cartesian product]] $A\cross B$
+- [[D-IGUUS|Wedge sum]] $A \vee B$
 - Connected sum $A \# B$
-- Quotient $A/B$ by a subspace
+- [[D-ITBUT|Quotient]] $A/B$ by a subspace
 - Puncturing, $A\sm \theset{a_{1},\ldots,a_k}$
-- Smash product $A\wedge B$
+- [[D-R4ZCL|Smash product]] $A\wedge B$
 - Join $A\ast B$
-- Cone $CA$
-- Suspension $\Sigma A$
-- Loop space $\Omega A$
+- [[D-II4M4|Cone]] $CA$
+- [[D-RZKQD|Suspension]] $\Sigma A$
+- [[D-T5Q3V|Loop space]] $\Omega A$
 - Identifying finitely many points
 
 :::
@@ -122,12 +122,6 @@ Then $X$ is compact, and if $X$ is infinite, then $X$ is not Hausdorff, since an
 :::
 
 [[PR-NJTN5]]
-
-::: {.proof}
-If the topology is discrete, every singleton is open.
-Conversely, if $\theset x$ is open for each $x \in X$, then every $U\subseteq X$ is the union $\bigcup_{x\in U}\theset x$ of open sets, so $U$ is open.
-
-:::
 
 ::: {.example title="The discrete topology"}
 In the discrete topology on $X$, every subset is open.
