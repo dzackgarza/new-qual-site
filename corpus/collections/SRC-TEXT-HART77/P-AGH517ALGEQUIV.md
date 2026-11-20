@@ -349,7 +349,7 @@ prove part (c).
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 367 of Hartshorne, under its printed italic heading "Algebraic Equivalence of Divisors", read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 367 in the footer); the statement above is that page's text, parts (a)--(c), the hint to (III, 9.9) and the printed Note on Néron and Severi included.
+The exercise is V.1.7 of Hartshorne, under its printed italic heading "Algebraic Equivalence of Divisors", read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, parts (a)--(c), the hint to (III, 9.9) and the printed Note on Néron and Severi included.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.7: (a) closure under inverses by negating a chain and under sums by concatenating a chain from $0$ to $D$ with its translate by $D$; (b) "since the difference of linearly equivalent divisors is principal, we just need to show $(f)\equiv0$ ... $(tf-u)$ restricts to $(f)$ over $(1,0)$ and to $0$ over $(0,1)$; thus $(f)=0$", printing equality where prealgebraic equivalence is meant; (c) "by Bertini we can consider differences of very ample divisors", then equality of the degrees in $\PP^n$ of the two fibres of a flat family by III.9.9, and $D\cdot H$ is that degree. Step [](#s3){.pf-ref} writes (b) as the pencil $ts_0+us_1$ on $X\times\PP^1$, which is the printed hint, and step [](#s4){.pf-ref} and step [](#s5){.pf-ref} are his (c). Matches.
 

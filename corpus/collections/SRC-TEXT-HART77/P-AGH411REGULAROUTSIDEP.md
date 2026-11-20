@@ -97,7 +97,7 @@ Fix $n$ as in step [](#s2){.pf-ref}. The constants form a one-dimensional subspa
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 297 of Hartshorne, the first of the EXERCISES opening §IV.1, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text.
+The exercise is IV.1.1 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text.
 
 Jinhyun Park, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1, text version `tmp/sources/hartshorne-solutions-park.md`, takes $Q\neq P$ and $n>\max\{2g-2,g,1\}$ so that $\ell(n(2P-Q))>1$, giving an effective $D\in\linearsystem{n(2P-Q)}$ whose principal divisor forces a pole only at $P$; the same argument is in Lomont, *Solutions to Hartshorne's Algebraic Geometry*, Chapter IV §1, Exercise 1.1, text version `tmp/sources/hartshorne-solutions-lomont.md`.
 

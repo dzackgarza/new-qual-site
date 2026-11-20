@@ -276,7 +276,7 @@ formula for every curve $C\subseteq X$.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 366 of Hartshorne, the second of the EXERCISES opening §V.1, read off that page of `tmp/sources/hartshorne-1977-algebraic-geometry.pdf` (printed p. $N$ is PDF p. $N+15$; the pages of §V.1 carry no text layer and were read as a 110 dpi render, folio 366 in the footer); the statement above is that page's text, which prints the polynomial as $F(z)$ and the embedding as $X\subseteq\PP^n$, both rendered here with the card's letters.
+The exercise is V.1.2 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, which prints the polynomial as $F(z)$ and the embedding as $X\subseteq\PP^n$, both rendered here with the card's letters.
 
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), text version `tmp/sources/hartshorne-solutions-egbert.md`, Exercise V.1.2: by surface Riemann--Roch, $\chi(nH)=\frac12(nH)\cdot(nH-K_X)+1+p_a$, so $a=H^2$ and $c=1+p_a$; adjunction on a nonsingular member of $\abs{H}$ gives $H\cdot K_X=2\pi-2-H^2$, which is the linear coefficient; "by I.7, the degree is $\dim(X)!$ times the first coefficient, so it's $H^2$". For the degree of a curve he plugs the two exact sequences $0\to\OO_X(-C)\to\OO_X\to\OO_C\to0$ and $0\to\OO_X(-C-H)\to\OO_X(-H)\to\OO_C(-H\restrict_C)\to0$ back into exercise V.1.2 itself, so that paragraph argues in a circle. Step [](#s6){.pf-ref} obtains $\deg C=C\cdot H$ from $\OO_C(1)\cong\OO_X(H)\restrict_C$. Matches on the two coefficients and the degree of $X$; the degree formula is supplied here.
 
