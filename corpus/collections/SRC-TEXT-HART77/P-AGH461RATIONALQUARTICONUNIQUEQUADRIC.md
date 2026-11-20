@@ -95,7 +95,7 @@ audit:
     statement: Exercise IV.6.1; Exercise IV.3.4(a), (b); Exercise IV.3.6(b); Example II.8.20.3 and
     Exercise II.8.4(f) for the plane-curve genus; Exercise II.8.4(g) for the (2,2)
     complete-intersection genus; Remark IV.6.4.1(d) with Exercise V.2.9 for the quadric-cone genus.
-    No page, PDF page or page offset appears in the card's text; the locators inside the events of
+    Every reference in the card's text is to a numbered statement; the locators inside the events of
     2026-09-18 and 2026-11-19 are records of those passes and are left as written (QUAL-11). The
     mathematics is unchanged in this pass.
 ---
