@@ -98,6 +98,21 @@ audit:
     CW approximation $F_0\to P$ in step `start`, which holds for a discrete group but is not
     a numbered statement of the book and is not built on the card. No retained solution set
     covers this exercise, so nothing here is transcribed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read against the numbered statements it cites. One citation defect repaired: the card used G-CW
+    complexes, equivariant CW approximation and EG without saying that Hatcher does not treat them, so a
+    reader would take them for the book's. The opening now states that this machinery is standard
+    equivariant homotopy theory used on the card's own authority, and separates it from what the card
+    does take from Hatcher — Theorem 4.8, the cellular approximation theorem, in the killing lemma, and
+    the long exact sequence of a fibration in the last step, which is now cited there as Theorem 4.41
+    rather than referred to as "the long exact sequence of the bundle". The mathematics is unchanged:
+    the product has pi_i = G_i exactly, the equivariant approximation is a weak equivalence, the
+    killing lemma attaches a free orbit of cells and leaves lower groups alone by Theorem 4.8, the
+    colimit computes homotopy groups by compactness, and the Borel construction has the stated
+    fundamental group, homotopy groups and action.
 ---
 
 ::: {.problem}
@@ -106,6 +121,8 @@ Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescr
 
 ::: {.solution}
 The statement is Hatcher, *Algebraic Topology* (2002), §4.2 Exercise 7. No retained solution set covers this exercise, so the construction and its verification below are the card's own. It replaces the previous prose construction, which took $F=\prod_{i>1}K(G_i,i)$. That product does have the prescribed homotopy groups: $\pi_i$ of a product is the product of the $\pi_i$ of the factors, and $\pi_i(K(G_j,j))=0$ for $i\ne j$, so $\pi_i(F)=G_i$ exactly. What it is not is a CW complex: an infinite product of CW complexes carrying cells in unboundedly many dimensions is not one, and the construction here needs a CW complex, both to attach cells and to take the colimit. The repair is to replace the product by an equivariant CW approximation of it, which is a weak $G_1$-equivalence and so carries the same homotopy groups and the same action. A weak equivalence leaves no excess in any degree, so no cell is ever attached: the killing lemma is stated in general below, and the induction shows that its kernel is empty at every stage.
+
+The equivariant machinery is not from Hatcher, who treats CW complexes and CW approximation without a group acting: $G$-CW complexes, their equivariant approximation, and $EG$ are standard material of equivariant homotopy theory, and the card uses them as such rather than citing them to the book. What the card does take from Hatcher is Theorem 4.8, the cellular approximation theorem, in the killing lemma, and the long exact sequence of a fibration, Theorem 4.41, in the last step.
 
 Throughout, $G_1$ is a group, $G_i$ for $i>1$ is an abelian group with a homomorphism $\rho_i:G_1\to\operatorname{Aut}(G_i)$, and "prescribed action" means the action of $G_1$ on $\pi_i$ through $\rho_i$; $EG_1$ is a free contractible $G_1$-CW complex.
 
@@ -155,7 +172,7 @@ Homotopy groups of a CW colimit are the colimit of the homotopy groups of the st
 For a simply connected $G_1$-space $F$ with $\pi_k(F)\cong G_k$ as $G_1$-modules, the Borel construction $X=EG_1\times_{G_1}F$ satisfies $\pi_1(X)\cong G_1$, $\pi_k(X)\cong G_k$ for $k\ge2$, and the action of $\pi_1(X)$ on $\pi_k(X)$ is $\rho_k$.
 
 ::: pf-proof
-$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of the bundle gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,gy)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
+$X$ is the total space of the fiber bundle $F\to X\to BG_1=K(G_1,1)$ associated to $EG_1\to BG_1$. Its fibre is simply connected, so the long exact sequence of a fibration, Theorem 4.41, gives $\pi_1(X)\cong\pi_1(BG_1)=G_1$ and $\pi_k(X)\cong\pi_k(F)$ for $k\ge2$. The total space $EG_1\times F$ of the pullback over $EG_1$ is homotopy equivalent to $F$, hence simply connected, and it is the universal cover of $X$; its group of deck transformations is $G_1$, acting by $g\cdot(e,y)=(ge,gy)$, so the action of $\pi_1(X)$ on $\pi_k(X)=\pi_k(F)$ is the given action of $G_1$ on $\pi_k(F)$, which is $\rho_k$ by step [](#colimit){.pf-ref}.
 
 :::
 
