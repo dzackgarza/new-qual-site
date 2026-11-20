@@ -15,6 +15,7 @@ $$
 f \text{ differentiable with bounded } f' \iff f \text{ Lipschitz} \implies f \text{ uniformly continuous} \implies f \text{ continuous}.
 $$
 
+The equivalence is [[PR-LTRLV]], the middle implication [[PR-SX6NO]], and the last the definition of [[D-WGYSB|uniform continuity]].
 :::
 
 The equivalence is [[PR-LTRLV]].
