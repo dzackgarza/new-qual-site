@@ -442,6 +442,68 @@ audit:
     the case g = 1, that Theorem IV.6.4 itself carries "Then d >= 3" so s11 assumes nothing, and
     that s9 says the criterion's conditions are "equivalently" the two injectivities.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The three items of issue #162, from the reader's report on this card at
+    141b8c9c4d.
+
+    (1) The kernel of d/dx. The step tangent-char-zero inferred that the kernel is
+    k because it is a subfield of k(X) containing k and not containing the
+    nonconstant x, hence of transcendence degree 0. That inference is false, and
+    the reader's counterexample is the one to keep: k(t^2) is a subfield of k(t)
+    of transcendence degree 1 that omits t. The step now proves the equality. If
+    f in k(X) has df/dx = 0 and f is not in k, then f is transcendental over k
+    because k is algebraically closed, so k(f) has transcendence degree 1 and
+    k(X) is a finite separable extension of k(f), finite because a finitely
+    generated extension of transcendence degree 0 is finite and separable because
+    the characteristic is 0; d/dx vanishes on k(f); and a derivation of a finite
+    separable extension that vanishes on the base field is zero, by the
+    primitive-element argument now written on the card. That contradicts
+    d(x)/dx = 1, so the kernel is k, and the rest of the step -- dy/dx and dz/dx
+    in k, hence y = cx+d and z = ex+f, hence X on a line -- is unchanged. The
+    existence of d/dx is now attributed to the separability of k(X)/k(x) alone,
+    which is what gives it; the sentence had offered that separability as the
+    reason x is a local parameter at the generic point, which it is not. With
+    this, step s13 rests on a proved step: the second finiteness hypothesis of s5
+    is what tangent-char-zero supplies, and the first is the Kaji citation,
+    unchanged.
+
+    (2) Page locators. The card's statement, remark and steps carry none: every
+    reference is to a numbered statement, and the transcription added under (3) is
+    cited as Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry, Exercise
+    IV.6.7, with no page. The reader's line numbers 159, 182--187 and 247--252
+    are not in the card's text: they lie inside the dated events of 2026-11-19,
+    which record what those passes read and where. A dated event is append-only
+    under QUAL-11, and tools/qualc/authoring.py refuses a commit that changes or
+    deletes one, so those locators remain as the record of their day; this event
+    is the card's statement that no page locator stands in its own text.
+
+    (3) The published solution. The event of 2026-11-19 recorded that no retained
+    solution set contains a solution of IV.6.7 itself. That is false, and it is
+    superseded. Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry
+    (October 3, 2013), Exercise IV.6.7, is a solution of the exercise, retained at
+    assets/attachments/Andrew Egbert.pdf and extracted at
+    tmp/sources/hartshorne-solutions-egbert.md. It is now transcribed as the first
+    solution on the card, in Egbert's order and with his claims, and checked
+    against the book: Remark IV.6.4.1(a) for the plane-curve genus, Theorem IV.6.4
+    for Castelnuovo's bound, Exercise IV.3.4(b) for degree 3, Exercise IV.3.6(a)
+    and (b) for degree 4, Example II.7.8.6 for the rational quartic and Remark
+    IV.6.4.1(c) for its type (1,3) on the quadric, whose rulings are the fibres of
+    the two projections. Two claims of his text are terse rather than proved -- the planar
+    case, where an inflection point is not an argument, and the projection from a
+    general point being an isomorphism onto a nonsingular plane curve of degree
+    d-1 -- and the card's own proof, now the second solution and labelled as
+    such, supplies both. What the transcription does not do is derive Egbert's
+    argument afresh: it is his steps in his order.
+
+    Checked for this pass: each numbered statement above in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md, and Egbert's text of the
+    exercise in tmp/sources/hartshorne-solutions-egbert.md. Not checked: the body
+    of Kaji 1986, as before, the step resting on the restatement in Fukasawa,
+    arXiv:2108.00650v3, section 1.
+
 ---
 
 ::: {.problem}
@@ -477,7 +539,148 @@ printed second sentence is characteristic zero, and the final step shows that
 it is needed.
 :::
 
-::: {.solution}
+::: {.solution title="Published solution"}
+The exercise is Hartshorne IV.6.7. The published solution transcribed here is
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
+Exercise IV.6.7, and this block follows his argument in his order and with his
+claims. Every result he invokes is cited below by the book's numbered statement;
+the paragraph after the proof records what that check found, including the two
+places where his text is terse rather than complete. The second solution on this
+card is the card's own, and it supplies those two places.
+
+::: pf
+
+::: {.pf-step #egbert-planar}
+A curve with no multisecants that lies in a plane is a line or a conic.
+
+::: pf-proof
+Egbert's reason is that a plane curve of degree at least $3$ "would have at least
+one inflection and thus a trisecant". An inflection point is not a trisecant, so
+that sentence is not a proof of the step; the conclusion is true, and the book's
+route is the dual curve of Exercise I.7.3, which step s4 of the second solution
+follows. A plane curve of degree $1$ is a line and one of degree $2$ is a conic,
+which is the rest of the claim.
+:::
+
+:::
+
+::: {.pf-step #egbert-projection}
+Let $X\subseteq\PP^3$ be a nonplanar curve of degree $d$ with no multisecants.
+Then the projection of $X$ from a general point of $X$ is an isomorphism onto a
+nonsingular plane curve of degree $d-1$, whose genus is $\frac12(d-2)(d-3)$.
+
+::: pf-proof
+The projection from a point $P\in X$ is given by the planes through $P$ and has
+degree $d-1$, since a general plane through $P$ meets $X$ in $d$ points, one of
+them $P$. Egbert takes the point general on $X$ and the projection an isomorphism
+onto its image, and this is the claim his text does not prove; granted it, the
+image is a nonsingular plane curve of degree $d-1$ isomorphic to $X$, and its
+genus is $\frac12(d-2)(d-3)$ by Remark IV.6.4.1(a), which states the genus of a
+nonsingular plane curve of degree $e$ for every $e\ge1$.
+:::
+
+:::
+
+::: {.pf-step #egbert-castelnuovo}
+Castelnuovo's bound forces $d=3$ or $d=4$.
+
+::: pf-proof
+By Theorem IV.6.4, a curve of degree $d$ and genus $g$ in $\PP^3$ not contained
+in any plane has $d\ge3$ and
+$$
+g\le
+\begin{cases}
+\frac14d^2-d+1, & d\ \text{even},\\[2pt]
+\frac14(d^2-1)-d+1, & d\ \text{odd}.
+\end{cases}
+$$
+With $g=\frac12(d-2)(d-3)$ from step [](#egbert-projection){.pf-ref}, the even
+case gives $\frac12(d-2)(d-3)\le\frac14d^2-d+1$, that is $d^2-6d+8\le0$, so
+$2\le d\le4$ and $d=4$; the odd case gives
+$\frac12(d-2)(d-3)\le\frac14(d^2-1)-d+1$, that is $(d-3)^2\le0$, so $d=3$.
+:::
+
+:::
+
+::: {.pf-step #egbert-degree-three}
+If $d=3$, then $X$ is the twisted cubic.
+
+::: pf-proof
+By step [](#egbert-projection){.pf-ref} the genus is $0$, and a curve of degree
+$3$ in $\PP^3$ not contained in any plane differs from the rational normal curve
+of degree $3$ only by an automorphism of $\PP^3$, by Exercise IV.3.4(b); that
+curve is the twisted cubic.
+:::
+
+:::
+
+::: {.pf-step #egbert-degree-four}
+If $d=4$, then $X$ is the elliptic quartic.
+
+::: pf-proof
+By step [](#egbert-projection){.pf-ref} the genus is $1$, and a curve of degree
+$4$ and genus $1$ in $\PP^3$ is a complete intersection of two irreducible quadric
+surfaces, by Exercise IV.3.6(b), that is the elliptic quartic. Exercise IV.3.6(a)
+is what exhausts the alternatives: a curve of degree $4$ in $\PP^3$ has genus $0$
+or $1$, the genus-$0$ case being the rational quartic, which is the next step.
+Egbert adds that the elliptic quartic "has no trisecants"; that is the first
+sentence of the exercise, and step s3 of the second solution proves it.
+:::
+
+:::
+
+::: {.pf-step #egbert-rational-quartic}
+A rational quartic in $\PP^3$ has trisecants, so the genus-$0$ case of degree $4$
+is no exception.
+
+::: pf-proof
+Egbert writes that a rational quartic lies on a smooth quadric surface as a curve
+of type $(1,3)$ and that its trisecants are the lines of one of the two rulings.
+The parametrization $(t^4:t^3u:tu^3:u^4)$ of the rational quartic in Example
+II.7.8.6 satisfies $X_0X_3=X_1X_2=t^4u^4$, so the curve lies on the smooth quadric
+$X_0X_3=X_1X_2$, whose two rulings are the fibres of the two projections to
+$\PP^1$ that read off $[X_0:X_1]$ and $[X_1:X_3]$. On the curve those two
+projections are $[t:u]\mapsto[t:u]$ and $[t:u]\mapsto[t^3:u^3]$, of degrees $1$
+and $3$, so a line of the first ruling meets the curve in one point and a line of
+the second in three: the lines of the second ruling are its trisecants, and the
+curve is of type $(1,3)$ in the sense of Remark IV.6.4.1(c).
+:::
+
+:::
+
+::: pf-qed
+Steps [](#egbert-planar){.pf-ref}--[](#egbert-degree-four){.pf-ref} show that a
+curve with no multisecants is a line, a conic, the twisted cubic or the elliptic
+quartic. Egbert assumes that there are no multisecants where the exercise's second
+sentence needs only finitely many, and takes the point of projection general on
+$X$; with "no" read as "finitely many" and the point taken outside the finitely
+many exceptional lines, the argument gives that sentence.
+:::
+
+:::
+
+Checked against the book. The genus of a nonsingular plane curve of degree $e$ is
+$\frac12(e-1)(e-2)$ by Remark IV.6.4.1(a), which states it for every $e\ge1$, and
+that is the formula Egbert applies with $e=d-1$. Castelnuovo's bound is Theorem
+IV.6.4, whose hypotheses are degree $d$ and genus $g$ in $\PP^3$ not contained in
+any plane, and whose conclusion carries $d\ge3$; both branches are the ones Egbert
+writes, and both of his simplifications are correct. The classifications of the
+degree-$3$ and degree-$4$ cases are Exercise IV.3.4(b) and Exercise IV.3.6(a) and
+(b). Two claims his text does not prove are named here rather than supplied: the
+planar case of step [](#egbert-planar){.pf-ref}, where an inflection point is not
+an argument, the book's route being the dual curve of Exercise I.7.3, and the
+isomorphism of step [](#egbert-projection){.pf-ref}, which is the content of steps
+s5--s9 of the second solution under the finiteness hypothesis. Those two are why
+the second solution is kept.
+:::
+
+::: {.solution title="The card's own proof"}
+This proof is the card's own, and it is what the transcription above leaves out:
+the planar case, in its step s4, and the projection being a closed immersion, in
+its steps s6--s9, both under the hypothesis that there are only finitely many
+multisecants and finitely many exceptional tangents. It also proves the
+counterexample in characteristic $p$ that the exercise, stated without a
+characteristic hypothesis, requires.
 
 ::: pf
 
@@ -669,19 +872,31 @@ $P$ means that $X(P)$, $X'(P)$ and $X''(P)$ are linearly dependent, which is the
 vanishing of the $3\times3$ minors of the $4\times3$ matrix with those three
 columns, and in a local parameter $t$ those minors are power series in $t$.
 Suppose the condition held at the generic point $\eta$ of $X$. Fix affine
-coordinates $x,y,z$ on a chart that $X$ meets, with $x$ nonconstant; then $x$
-is a local parameter at $\eta$, because in characteristic $0$ the extension
-$k(X)/k(x)$ is separable. There is therefore a derivation $d/dx$ of $k(X)$ with
-$d(x)/dx=1$, and at $\eta$ the condition is
+coordinates $x,y,z$ on a chart that $X$ meets, with $x$ nonconstant. Since $x$ is nonconstant, $k(X)$ is finite over
+$k(x)$, and it is separable because the characteristic is $0$; the derivation of
+$k(x)$ carrying $x$ to $1$ therefore extends uniquely to a derivation $d/dx$ of
+$k(X)$, and at $\eta$ the condition is
 $$
 \frac{d^2y}{dx^2}=\frac{d^2z}{dx^2}=0 ,
 $$
 because $X''(\eta)$ is a multiple of $X'(\eta)$ exactly when
 $y''x'-y'x''=z''x'-z'x''=0$, where $'=d/dt$, and $x'\ne0$ at $\eta$. The kernel
-of $d/dx$ is $k$: it is a subfield containing $k$ and not containing the
-nonconstant $x$, so it has transcendence degree $0$ over $k$, since $k(X)$ has
-transcendence degree $1$; a subfield of $k(X)$ algebraic over $k$ is $k$
-itself, because $k$ is algebraically closed in $k(X)$. Hence
+of $d/dx$ is $k$. It does not follow from the kernel omitting the nonconstant $x$:
+a subfield of a function field of transcendence degree $1$ can omit a nonconstant
+element and still have transcendence degree $1$, as $k(t^2)$ does in $k(t)$. Let
+$f\in k(X)$ satisfy $df/dx=0$ and suppose that $f\notin k$. Then $f$ is
+transcendental over $k$, since $k$ is algebraically closed, so $k(f)$ has
+transcendence degree $1$ over $k$, equal to that of $k(X)$, and $k(X)$ is a
+finite extension of $k(f)$, because a finitely generated extension of
+transcendence degree $0$ is finite; that extension is separable, the
+characteristic being $0$. The derivation $d/dx$ vanishes on $k(f)$, on $k$ by
+definition and on $f$ by hypothesis, and a derivation of a finite separable
+extension that vanishes on the base field is zero: if $k(X)=k(f)(\alpha)$ and
+$g\in k(f)[T]$ is the minimal polynomial of $\alpha$, then applying $d/dx$ to
+$g(\alpha)=0$ gives $g'(\alpha)\,d\alpha/dx=0$, because the coefficients of $g$
+lie in $k(f)$, and $g'(\alpha)\ne0$ because $\alpha$ is separable over $k(f)$;
+hence $d\alpha/dx=0$ and $d/dx=0$ on $k(X)$, contradicting $d(x)/dx=1$. So no such
+$f$ exists and the kernel is $k$. Hence
 $$
 \frac{dy}{dx}=c\in k,
 \qquad
