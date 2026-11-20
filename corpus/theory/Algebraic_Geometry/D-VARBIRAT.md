@@ -35,7 +35,7 @@ Two varieties are \dfn{birational}, or birationally equivalent, when such a map 
 
 ::: {.theorem title="Function fields and birational equivalence"}
 Two varieties $X$ and $Y$ over $k$ are birational if and only if $k(X)\cong k(Y)$ as extensions of $k$ [@Har77, Corollary I.4.5].
-The dominant rational maps $X\dashrightarrow Y$ correspond to the $k$-algebra homomorphisms $k(Y)\to k(X)$, so varieties with dominant rational maps are contravariantly equivalent to finitely generated field extensions of $k$ [@Har77, Theorem I.4.4, pp. 25--26].
+The dominant rational maps $X\dashrightarrow Y$ correspond to the $k$-algebra homomorphisms $k(Y)\to k(X)$, so varieties with dominant rational maps are contravariantly equivalent to finitely generated field extensions of $k$ [@Har77, Theorem I.4.4].
 :::
 
 ::: {.proposition title="Indeterminacy in codimension two"}
@@ -43,5 +43,5 @@ A rational map from a nonsingular variety $X$ to a projective variety $Y$ is def
 :::
 
 ::: {.proof}
-A rational map to $\PP^n$ is given on a dense open set by an $(n+1)$-tuple of rational functions; at a point $\eta$ of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so multiplying the tuple by a common denominator gives a regular tuple at $\eta$, and a closed immersion $Y\subseteq\PP^n$ pulls the map back to $Y$ [@Har77, §I.4, pp. 24--27].
+A rational map to $\PP^n$ is given on a dense open set by an $(n+1)$-tuple of rational functions; at a point $\eta$ of codimension one the local ring $\OO_{X,\eta}$ is a discrete valuation ring, so multiplying the tuple by a common denominator gives a regular tuple at $\eta$, and a closed immersion $Y\subseteq\PP^n$ pulls the map back to $Y$ [@Har77, §I.4].
 :::
