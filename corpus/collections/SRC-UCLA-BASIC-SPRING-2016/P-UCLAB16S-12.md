@@ -82,7 +82,7 @@ $$
 
 ::: {.pf-step #s1-2}
 
-In particular,
+Every term on the right-hand side of step [](#s1-3){.pf-ref} vanishes; in particular
 $$
 v_1\perp v_3,
 \qquad
@@ -92,7 +92,6 @@ v_2\perp v_3,
 \qquad
 v_2\perp v_4.
 $$
-
 
 ::: pf-proof
 
@@ -131,19 +130,6 @@ Expand the inner product bilinearly.
 
 :::
 
-::: {.pf-step #s1-4}
-
-Every term on the right-hand side of step [](#s1-3){.pf-ref} vanishes.
-
-
-::: pf-proof
-
-This is exactly step [](#s1-2){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-5}
 
 Therefore
@@ -158,7 +144,7 @@ $$
 
 ::: pf-proof
 
-Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-2){.pf-ref}.
 Thus
 $$
 v_1+2v_2
