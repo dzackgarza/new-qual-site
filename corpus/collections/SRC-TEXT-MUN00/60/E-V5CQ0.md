@@ -59,7 +59,7 @@ Show that $X$ is homeomorphic to the projective plane $P^2$.
 
 ::: {.solution}
 The exercise is §60 Exercise 2, with the projective plane defined
-on printed p. 372 as the quotient of $S^2$ by the identification of each point
+in §60 as the quotient of $S^2$ by the identification of each point
 with its antipode; write $p:S^2\to P^2$ for that quotient map, and
 $q:B^2\to X=B^2/\!\sim$ for the quotient of the exercise.
 

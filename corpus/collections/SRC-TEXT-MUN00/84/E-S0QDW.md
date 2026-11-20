@@ -58,7 +58,7 @@ Give an example to show that the second part of Lemma 84.2 need not hold if $T$ 
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §84 Exercise 1(b), with the definitions of a linear graph (printed p. 502) and of a tree (printed p. 507), and the second part of Lemma 84.2 , whose finiteness hypothesis it shows cannot be dropped.
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Munkres §84 Exercise 1(b), with the definitions in §84 of a linear graph and of a tree, and the second part of Lemma 84.2 , whose finiteness hypothesis it shows cannot be dropped.
 
 ::: pf
 
@@ -66,7 +66,7 @@ The argument is the card's own; no retained solution set is cited on the card. I
 Let $T$ be the linear graph with vertex set $\ZZ$ and one edge joining $n$ to $n+1$ for each $n\in\ZZ$.
 
 ::: pf-proof
-This is a linear graph: its vertex space is $\ZZ$ with the discrete topology, each edge is a copy of $[0,1]$ with its endpoints glued to the two vertices it joins, and the topology is the coherent one (definition, printed p. 502).
+This is a linear graph: its vertex space is $\ZZ$ with the discrete topology, each edge is a copy of $[0,1]$ with its endpoints glued to the two vertices it joins, and the topology is the coherent one (§84, definition).
 :::
 
 :::

@@ -241,7 +241,7 @@ Column 9 of the table, *Regular*: Y for (a) $S_\Omega$, (b) $\overline S_\Omega$
 
 ::: pf-proof
 
-Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (j) are products of regular spaces in the product topology, Theorem 31.2(b); (h) is metrizable, so normal by Theorem 32.2 and hence regular. For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9, which shows that $\RR^J$ in the box topology is completely regular, together with the remark on printed p. 211 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
+Y for all but (k): (a) and (b) are normal, Theorem 32.4, and a normal space is regular; (d) is Exercise 31.3; (e) is Example 2 of §31; and (c), (f), (g), (j) are products of regular spaces in the product topology, Theorem 31.2(b); (h) is metrizable, so normal by Theorem 32.2 and hence regular. For (i) the theorem does not apply, the box topology being strictly finer than the product topology; the entry rests instead on Exercise 33.9, which shows that $\RR^J$ in the box topology is completely regular, together with the remark in §33 that a completely regular space is regular, the preimages of $[0,\frac{1}{2})$ and $(\frac{1}{2},1]$ under a separating function being disjoint open sets. N for (k) by Example 1 of §31.
 
 :::
 

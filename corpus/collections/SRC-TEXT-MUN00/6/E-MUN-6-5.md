@@ -46,7 +46,7 @@ If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 ::: {.solution}
 The complete published solution is **Dan Whitman, *Topology, Second Edition by James Munkres: Solutions Manual* (30 November 2019), Exercise 6.5** (`tmp/sources/munkres-solutions-whitman.pdf`); the counterexample with an empty factor and the argument for nonempty factors, with the two injections into the product, are his.
 
-Throughout, a set is finite when it is empty or in bijection with a section $\{1,\dots,n\}$ of $\ZZ_+$ (definition, printed p. 39), and a subset of a finite set is finite (Corollary 6.6); the exercise is on printed p. 44.
+Throughout, a set is finite when it is empty or in bijection with a section $\{1,\dots,n\}$ of $\ZZ_+$ (§6, definition), and a subset of a finite set is finite (Corollary 6.6); the exercise is.
 
 ::: pf
 
@@ -54,7 +54,7 @@ Throughout, a set is finite when it is empty or in bijection with a section $\{1
 The answer to the question as asked is no: $A\times B$ can be finite with $A$ infinite.
 
 ::: pf-proof
-Take $A=\ZZ_+$ and $B=\varnothing$. Then $A\times B=\varnothing$ because there is no pair with second coordinate in $B$, and $\varnothing$ is finite, being in bijection with the section $\{1,\dots,0\}$. The set $A=\ZZ_+$ is infinite, since it is not in bijection with any of its sections, as $\ZZ_+$ is not finite (printed p. 39).
+Take $A=\ZZ_+$ and $B=\varnothing$. Then $A\times B=\varnothing$ because there is no pair with second coordinate in $B$, and $\varnothing$ is finite, being in bijection with the section $\{1,\dots,0\}$. The set $A=\ZZ_+$ is infinite, since it is not in bijection with any of its sections, as $\ZZ_+$ is not finite (§6).
 
 :::
 

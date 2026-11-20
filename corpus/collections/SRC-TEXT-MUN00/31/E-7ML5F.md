@@ -102,7 +102,7 @@ The two failures are exhibited by different pairs of topologies, one using the $
 **Forward failure:** The standard Euclidean topology $\mathcal{T}$ on $\RR$ is regular (and metric). The $K$-topology $\mathcal{T}' = \mathcal{T}_K$ is strictly finer than $\mathcal{T}$, but $(\RR, \mathcal{T}_K)$ is not regular because the closed set $K = \{1/n \mid n \in \ZZ_+\}$ and the point $0 \notin K$ cannot be separated by disjoint open sets in $\mathcal{T}_K$.
 
 ::: pf-proof
-This is Example 31.1 of Munkres (printed p. 197): $\RR_K$ is Hausdorff but not regular, the witness being the closed set $K$ and the point $0$, which admit no disjoint open neighbourhoods.
+This is Example 31.1 of Munkres: $\RR_K$ is Hausdorff but not regular, the witness being the closed set $K$ and the point $0$, which admit no disjoint open neighbourhoods.
 :::
 
 :::

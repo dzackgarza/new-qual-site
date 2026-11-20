@@ -104,7 +104,7 @@ $\mathcal{T}$ is a topology on $X$.
 
 ::: pf-proof
 
-Steps [](#emptyset){.pf-ref}, [](#unions){.pf-ref} and [](#finite-intersections){.pf-ref} establish the three defining properties of a topology on $X$ (printed p. 94).
+Steps [](#emptyset){.pf-ref}, [](#unions){.pf-ref} and [](#finite-intersections){.pf-ref} establish the three defining properties of a topology on $X$ (§12).
 
 :::
 

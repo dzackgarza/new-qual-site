@@ -91,7 +91,7 @@ $p$ is closed.
 $G\cdot C$ is closed for every closed $C\subset X$.
 
 ::: pf-proof
-The map $\Phi:G\times X\to G\times X$, $\Phi(g,x)=(g,g\cdot x)$, is a homeomorphism, with inverse $(g,y)\mapsto(g,g^{-1}\cdot y)$, continuous because the action and the inversion of $G$ are continuous. So $\Phi(G\times C)$ is closed. The projection $\pi_{X}:G\times X\to X$ is closed because $G$ is compact: if $A\subset G\times X$ is closed and $x\notin\pi_{X}(A)$, then $(G\times X)\setminus A$ is an open set containing the slice $G\times\{x\}$, so by the tube lemma it contains a tube $G\times W$ with $W$ a neighbourhood of $x$, and then $W\cap\pi_{X}(A)=\varnothing$ (Lemma 26.8 and its use, printed p. 167). Hence $G\cdot C=\pi_{X}\big(\Phi(G\times C)\big)$ is closed.
+The map $\Phi:G\times X\to G\times X$, $\Phi(g,x)=(g,g\cdot x)$, is a homeomorphism, with inverse $(g,y)\mapsto(g,g^{-1}\cdot y)$, continuous because the action and the inversion of $G$ are continuous. So $\Phi(G\times C)$ is closed. The projection $\pi_{X}:G\times X\to X$ is closed because $G$ is compact: if $A\subset G\times X$ is closed and $x\notin\pi_{X}(A)$, then $(G\times X)\setminus A$ is an open set containing the slice $G\times\{x\}$, so by the tube lemma it contains a tube $G\times W$ with $W$ a neighbourhood of $x$, and then $W\cap\pi_{X}(A)=\varnothing$ (Lemma 26.8 and its use). Hence $G\cdot C=\pi_{X}\big(\Phi(G\times C)\big)$ is closed.
 :::
 
 :::
