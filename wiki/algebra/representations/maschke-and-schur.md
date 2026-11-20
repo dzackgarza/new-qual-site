@@ -10,7 +10,7 @@ topics:
 
 # Maschke and Schur
 
-The two theorems make the category of finite-dimensional representations of a finite group over $\CC$ semisimple: every representation splits into irreducibles, and between non-isomorphic irreducibles there are no maps other than zero.
+Semisimplicity makes the character a complete invariant: a complex representation of a finite group is determined by its irreducible constituents.
 
 [[D-FHUV5]]
 
@@ -30,13 +30,17 @@ If $G$ is infinite, the conclusion can fail: $\ZZ$ acting on $\CC^2$ by $n\mapst
 
 [[T-YHH3M]]
 
-For irreducible complex representations the consequence is a dimension count: $\dim\Hom_G(V,W)=0$ when $V\not\cong W$ and $\dim\Endo_G(V)=1$.
+::: {.fact title="Schur's lemma in dimension form"}
+For irreducible complex representations, $\dim\Hom_G(V,W)=0$ when $V\not\cong W$ and $\dim\Endo_G(V)=1$: a $G$-map between irreducibles is either zero or an isomorphism, and a $G$-endomorphism of an irreducible is a scalar by [[T-YHH3M|Schur's lemma]].
+:::
 
 [[P-2JVYE]]
 
 ## Consequences
 
-The group algebra is the product of the endomorphism algebras of the irreducible representations, which gives the degree and class-number counts.
+[[T-ZOTWN]]
+
+Over $\CC$ each division ring in that decomposition is $\CC$, so the group algebra of a finite group is a product of full matrix algebras, and the degree and class-number counts below are the dimensional bookkeeping of that decomposition.
 
 [[P-UIXFV]]
 
