@@ -646,6 +646,60 @@ audit:
     root, and the inequality -2 - a^2 >= -2 sum c_j^2 - a^2 of step
     properness-r-nine. Not checked: the cuspidal case in characteristic p,
     and r >= 10, for which no proof and no published statement was found.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #180, a second round on this date, after a reader's report on the
+    event above. (1) Step no-minus-two-curve is stated for n points and its
+    descent used a third centre without showing that one exists; its proof now
+    shows m_i <= d from the pencil of lines through R_i, hence n >= 3 and
+    m_3 >= 1, and writes out the repetition on the new configuration. (2) Step
+    bad-locus-proper-closed claimed a closed subset of P^2 while its proof
+    worked on the open set where the word is defined; the statement now names
+    that set W_w, the proof shows by induction on the word that W_w is open in
+    U and that the terminal configuration is locally a morphism on it, and the
+    bad set B(w,T) is closed in W_w, so locally closed in P^2. (3) New step
+    effective-line-class-is-not-general: for P in U the r+1 points are in
+    general position exactly when no class alpha_{w,T}, the class
+    h' - e'_a - e'_b - e'_c of a terminal basis written in the original one, is
+    effective on Y_P; the converse direction is new, and it makes part (c) for
+    P_1,...,P_r equivalent to Z_alpha != U for these classes. (4) New step
+    properness-on-a-cubic: part (c) for every r >= 9 when the points lie on a
+    cubic that is not cuspidal, or in characteristic 0. It uses the irreducible
+    terminal line L: L is not the anticanonical curve E' through P, so
+    0 <= L.E' = 3 - |S|, the line carries exactly three points, is disjoint
+    from E', and gives the relation nP ~ M on the cubic with n >= 1. (5) New
+    step cuspidal-cubic-every-point-fails: in characteristic 5, the points
+    P(t_i) of y^2 z = x^3 with t_1,...,t_8 independent over F_5 and
+    t_9 = t_1 - t_2 - ... - t_8 are in general position, and for every tenth
+    point P of the cubic the class 8h - 3e_1 - 2(e_2+...+e_9) - 5e restricts
+    trivially to the cubic, is effective, and gives a (-2)-curve; so the
+    cuspidal case cannot be decided with P on the cubic. (6) Step
+    effective-root-for-every-point: by (4), part (c) holds for its points and
+    its root is none of the classes alpha_{w,T}. Step part-c-open had drawn
+    from that root that the remaining statement does not concern the
+    effectivity of a root; that sentence is replaced by the equivalence of (3).
+    The head, the density step, step part-c-open and the qed are reworded to
+    the new ranges. Read for this event: Hartshorne, Example II.6.11.4 with its
+    proof, and Theorem V.1.6, Corollary III.7.7, Proposition V.1.4 and Exercise
+    V.1.3 at their statements, in the text version of the book; Cantat and
+    Dolgachev, Rational surfaces with a large group of automorphisms,
+    arXiv:1106.0930, Sections 1.3 to 1.5, Section 3.3 with its lemma on
+    effective divisors, Proposition 4.5 and Section 6.1 with its two lemmas on
+    effective roots; Totaro, Hilbert's fourteenth problem over finite fields,
+    arXiv:0808.0695, Section 2 and Corollary 3.2; Dolgachev, Topics in
+    Classical Algebraic Geometry, Sections 8.2.7 and 8.2.8, on effective roots
+    and Cremona isometries of weak Del Pezzo surfaces, with a search of the
+    text version of the whole book for "unnodal", "nodal root" and "Cremona
+    general". None of them states part (c) for a fixed configuration. Recomputed: the two intersection numbers of the
+    class in (5) and its restriction to the cubic, and the sums
+    sum nu_i = 3 d_0 and sum nu_i^2 = d_0^2 + 2 of that step. Not proved, and
+    no published statement found: part (c) for r >= 10 points on no cubic, and
+    for points whose one cubic is cuspidal in characteristic p. Not read:
+    Harbourne, Blowings-up of P^2 and their blowings-down, of which no copy
+    was found, and Dolgachev and Ortland, Point sets in projective spaces and
+    theta functions, beyond its introduction.
 
 ---
 
@@ -689,7 +743,7 @@ The two conditions the exercise's parts (d) and (e) turn on are Nagata's:
 - a virtual linear system $L$ is exceptional exactly when it is irreducible with $I(L)=-1$ and $vg(L)=0$, by Proposition 2; for an irreducible curve $C$ on $X$ its class is exceptional exactly when $C\cong\PP^1$ and $C^2=-1$, which is the definition of an irreducible curve of the first kind;
 - a numerical type $(d,m_1,\ldots,m_r)$ is *pre-exceptional* when it is similar to $(1,1,1,0,\ldots,0)$ with $r-2$ zeros, which is the type of $r$ base points with $d=1$, $m_1=m_2=1$ and $m_3=\cdots=m_r=0$, the class of a line through two of the points, so that $I=-1$ and $vg=0$; and by Theorem 3a  a virtually connected system with $I=-1$ and $vg=0$ is of pre-exceptional type.
 
-The transcription below proves (a), (b), (d) and (e). It proves (c) for $r\le8$ in every characteristic in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}, and for $r=9$ in step [](#properness-r-nine){.pf-ref} when $k$ has characteristic $0$ or the nine points lie on a cubic that is not cuspidal. For $r\ge10$ part (c) is not proved here: its steps prove it only given the properness of the bad locus --- the set of points $P$ for which some fixed finite word of admissible transformations makes a specified terminal triple collinear --- and step [](#part-c-open){.pf-ref} states what remains. No source listed for the card proves part (c) for any $r$.
+The transcription below proves (a), (b), (d) and (e). It proves (c) for $r\le8$ in every characteristic in step [](#properness-r-at-most-eight){.pf-ref}, with a second proof for $r\le7$ in step [](#properness-r-at-most-seven){.pf-ref}, and for every $r\ge9$ in step [](#properness-on-a-cubic){.pf-ref} when the points lie on a cubic and either $k$ has characteristic $0$ or that cubic is not cuspidal. Nine points always lie on a cubic, and step [](#properness-r-nine){.pf-ref} is a second proof for $r=9$. Part (c) is not proved here in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. Step [](#effective-line-class-is-not-general){.pf-ref} turns part (c) into a statement about countably many divisor classes, and step [](#part-c-open){.pf-ref} states it for these two cases. No source listed for the card proves part (c) for any $r$.
 
 For part (c), fix $P_1,\ldots,P_r$ in general position, let $X_r$ be their blow-up, and let $U\subseteq\PP^2$ be the complement of the points $P_i$ and of the lines $P_iP_j$; $U$ is open and dense, and it is also an open subset of $X_r$. For $P\in U$ let $Y_P=\Bl_PX_r$, with $\Pic Y_P$ free on $h,e_1,\ldots,e_r,e$, where $e$ is the class of the exceptional curve over $P$, so that $K_{Y_P}=-3h+\sum_ie_i+e$ (Hartshorne, Propositions V.3.2 and V.3.3). A root is a class $\alpha$ with $\alpha^2=-2$ and $K\cdot\alpha=0$, and for a root $\alpha$ we put $Z_\alpha=\{P\in U:\alpha\text{ is the class of an effective divisor on }Y_P\}$.
 
@@ -750,22 +804,18 @@ is countable. But $\ell(k)\cong\PP^1(k)$ is uncountable, and $U\cap\ell$ is the 
 :::
 
 ::: {.pf-step #bad-locus-proper-closed}
-Fix $P_1,\ldots,P_r$ in general position. For every fixed finite word $w$ of admissible transformations and every fixed triple of labels, the set of points
+Fix $P_1,\ldots,P_r$ in general position. For a finite word $w$ of triples of labels let $W_w\subseteq U$ be the set of points $P$ at which $w$ is admissible on
 $$
-P\in\PP^2
+(P_1,\ldots,P_r,P),
 $$
-for which the word is defined on
-$$
-(P_1,\ldots,P_r,P)
-$$
-and the specified terminal triple is collinear is a closed subset of $\PP^2$. It is a proper subset whenever the determinant written below is not identically zero, which this step asserts and does not prove; steps [](#properness-r-at-most-eight){.pf-ref} and [](#properness-r-nine){.pf-ref} prove under their hypotheses that the set lies in a proper closed subset, and for $r\ge10$ that is the one point of part (c) that this card leaves open.
+which means that before each step of $w$ no three of the current $r+1$ points are collinear. Then $W_w$ is open in $U$, and for every triple $T$ of labels the set $B(w,T)$ of points $P\in W_w$ for which the terminal triple $T$ is collinear is closed in $W_w$. So $B(w,T)$ is a locally closed subset of $\PP^2$, and it lies in a proper closed subset of $\PP^2$ exactly when $W_w=\emptyset$ or $B(w,T)\ne W_w$. This step does not prove that in general; steps [](#properness-r-at-most-eight){.pf-ref}, [](#properness-r-nine){.pf-ref} and [](#properness-on-a-cubic){.pf-ref} prove under their hypotheses that $B(w,T)$ lies in a proper closed subset, and in the cases of step [](#part-c-open){.pf-ref} that is the one point of part (c) that this card leaves open.
 
 ::: pf-proof
-Work on the open subset on which the successive centers occurring in $w$ are noncollinear and all quadratic transformations are defined at the remaining labeled points. The standard quadratic formula [[P-AGH46CREMONA]] shows inductively that every terminal point has homogeneous coordinates which are rational functions of the coordinates of $P$. Collinearity of a specified terminal triple is therefore the vanishing of a rational determinant. Clearing denominators gives a closed condition on the initial point $P$.
+The proof is by induction on the length of $w$, together with the statement that the terminal configuration of $w$ is given on $W_w$, locally, by a morphism to $(\PP^2)^{r+1}$. For the empty word $W_w=U$ and the configuration is $(P_1,\ldots,P_r,P)$. Let $A,B,C$ be the centres of a step. On an open set where coordinate vectors of $A,B,C$ are chosen regularly, let $M$ be the matrix with those columns; it is invertible because $A,B,C$ are not collinear. In the coordinates $M^{-1}x$ the centres are the coordinate points and the quadratic transformation is $(x:y:z)\mapsto(yz:zx:xy)$ [[P-AGH46CREMONA]]. The three new points $Q_A,Q_B,Q_C$ are the coordinate points of the target, and a point on none of the lines $AB$, $BC$, $CA$ has an image whose coordinates are polynomials in the coordinates of $A,B,C$ and of the point. Another choice of coordinate vectors changes the target by a projective transformation, which preserves collinearity. So on $W_w$ the configuration after each step is locally a morphism to $(\PP^2)^{r+1}$. Collinearity of the triple $T$ is the vanishing of a $3\times3$ determinant in the coordinates of the terminal points, so $B(w,T)$ is closed in $W_w$. For a further step $\tau$ the set $W_{w\tau}$ is the complement in $W_w$ of the finite union of the sets $B(w,T)$ over all triples $T$, so it is open in $W_w$, hence in $U$.
 
-The determinant is not identically zero, and the proof of that is the one point of this step that the card does not carry out.
+$U$ is irreducible, so a nonempty $W_w$ is dense in $\PP^2$, and a closed subset of $W_w$ is dense in $\PP^2$ exactly when it is $W_w$. This gives the criterion for $B(w,T)$ to lie in a proper closed subset of $\PP^2$.
 
-What the argument gives is the closedness, which is all the rest of (c) uses: the terminal coordinates are rational functions of $P$, so after clearing denominators a specified terminal collinearity is the vanishing of a polynomial in $P$. Properness is a separate assertion, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this step asserts properness and does not prove it in general: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and for $r\ge10$ part (c) is therefore not proved on this card. The case $r\le7$ is proved in step [](#properness-r-at-most-seven){.pf-ref}, where the Del Pezzo criterion turns every one of these sets proper, the case $r\le8$ in step [](#properness-r-at-most-eight){.pf-ref} and the case $r=9$ in step [](#properness-r-nine){.pf-ref}. What is proved without it is (a), (b), and everything in (d) and (e).
+Whether $B(w,T)\ne W_w$ is a separate question, and one case of it is proved here. If no centre triple of $w$ contains the label of $P$, then $w$ acts on the fixed configuration by part (b), so the terminal positions of $P_1,\ldots,P_r$ have no three collinear, and the terminal position of $P$ is $T(P)$ for the composite $T$ of the quadratic transformations of $w$, a birational map of $\PP^2$. A terminal triple not containing $P$ therefore imposes a condition independent of $P$, which is empty; one containing $P$ imposes $T(P)\in L$ for the line $L$ through the other two terminal points, and $T^{-1}(L)$ is a proper closed subset because $T$ is dominant and $L$ is proper. The same conclusion holds if $P$ occurs as a centre only in the last step. Let that step be centred at $Q,X,Y$ with $Q$ the image of $P$ and $X,Y$ the images of fixed labels; by part (b) the configuration before it is $(C_0,Q)$ with $C_0$ in general position and $Q$ a birational function of $P$. In adapted coordinates $Q=(1:0:0)$, $X=(0:1:0)$, $Y=(0:0:1)$, the images of the three centres are $(1:0:0),(0:1:0),(0:0:1)$, and the image of a point $a$ is $(y_az_a:z_ax_a:x_ay_a)$. A terminal triple containing $Q$ and two points $a,b$ of $C_0$ imposes that $a,b,Q$ be collinear, a line in $Q$; one containing $Q,X$ and $a$ imposes $x_a y_a=0$, that is $a\in XY$ or $a\in QY$ --- the first false because $a,X,Y$ are three points of the general-position configuration $C_0$, the second a line in $Q$ --- and one containing $X,Y,a$ imposes $y_a z_a=0$, the same two alternatives with $QX$ in place of $QY$; one containing only points of $C_0$ imposes that $Q$ lie on the conic through those points and $X,Y$, five points of a general-position configuration, which is a conic. Each is a proper closed condition in $Q$, hence in $P$. A word that uses $P$ as a centre and then continues past that step is not treated here. The natural route for it is induction on the length of $w$, pulling a terminal collinearity back through the last quadratic transformation --- a target line meets the inverse images of the three target base points as a conic, so the condition becomes one of a triple of configuration points lying on a conic through three others, of which collinearity is the degenerate case --- and that forces a stronger induction hypothesis, on incidences with curves of every degree, which is not written out here. So this step does not prove in general that $B(w,T)$ lies in a proper closed subset: step [](#dense-general-position-extension){.pf-ref} is complete *given* it, and in the cases of step [](#part-c-open){.pf-ref} part (c) is therefore not proved on this card. The case $r\le7$ is proved in step [](#properness-r-at-most-seven){.pf-ref}, where the Del Pezzo criterion puts every one of these sets in a proper closed subset, the case $r\le8$ in step [](#properness-r-at-most-eight){.pf-ref}, the case $r=9$ in step [](#properness-r-nine){.pf-ref}, and the case of points on a cubic in step [](#properness-on-a-cubic){.pf-ref}. What is proved without it is (a), (b), and everything in (d) and (e).
 :::
 
 :::
@@ -814,11 +864,26 @@ Let $\Gamma\subseteq X_r\times U$ be the graph of the inclusion $U\hookrightarro
 
 :::
 
+::: {.pf-step #effective-line-class-is-not-general}
+For a finite word $w$ of triples of labels and a triple $T$ of labels, let $\alpha_{w,T}\in\ZZ^{r+2}$ be the class $h'-\sum_{s\in T}e'_s$, where $h',e'_1,\ldots,e'_{r+1}$ is obtained from the basis $h,e_1,\ldots,e_r,e$ of $\Pic Y_P$ by applying the integer formulas of step [](#bad-locus-root-class){.pf-ref} along $w$. Let $P\in U$. Then $P_1,\ldots,P_r,P$ are in general position if and only if no class $\alpha_{w,T}$ is the class of an effective divisor on $Y_P$. If $k$ is uncountable, part (c) holds for $P_1,\ldots,P_r$ if and only if $Z_{\alpha_{w,T}}\ne U$ for every $w$ and $T$.
+
+::: pf-proof
+If the points are not in general position, the proof of step [](#bad-locus-root-class){.pf-ref} gives a pair $(w,T)$ for which $\alpha_{w,T}$ is effective on $Y_P$.
+
+Conversely, let $P_1,\ldots,P_r,P$ be in general position and fix $(w,T)$. By the definition of general position every step of $w$ is an admissible transformation, so by Example V.4.2.3 the terminal basis $h',e'_1,\ldots,e'_{r+1}$ consists of the class of the pullback of a line and the classes of the exceptional curves $E'_j$ for a blowing-down of $Y_P$ to a plane with centres $R_1,\ldots,R_{r+1}$, distinct ordinary points no three of which are collinear. Suppose that $D$ is an effective divisor of class $\alpha_{w,T}$. Write $D=D_0+\sum_ja_jE'_j$ with $a_j\ge0$ and no $E'_j$ a component of $D_0$. The image of $D_0$ in the plane is an effective divisor of degree $D\cdot h'=1$, so it is a line $\Lambda$, and $D_0$ is the strict transform of $\Lambda$, of class $h'-\sum_{R_j\in\Lambda}e'_j$ (Proposition V.3.6). For $s\in T$, comparing the coefficients of $e'_s$ in the two expressions for the class of $D$ gives $a_s=0$ and $R_s\in\Lambda$. So the three points $R_s$ with $s\in T$ are collinear, a contradiction.
+
+Let $k$ be uncountable. If $Z_{\alpha_{w,T}}\ne U$ for every $(w,T)$, then each of these sets is a proper closed subset of the irreducible set $U$ by step [](#bad-locus-closed){.pf-ref}, each set $B(w,T)$ of step [](#bad-locus-proper-closed){.pf-ref} lies in $Z_{\alpha_{w,T}}$ by the proof of step [](#bad-locus-root-class){.pf-ref}, and step [](#dense-general-position-extension){.pf-ref} gives part (c). If $Z_{\alpha_{w,T}}=U$ for some $(w,T)$, then no point of $U$ makes $P_1,\ldots,P_r,P$ a set in general position, and no point outside $U$ does, because such a point is one of the $P_i$ or lies on a line $P_iP_j$. So no dense set $V$ exists.
+:::
+
+:::
+
 ::: {.pf-step #no-minus-two-curve}
 Let $R_1,\ldots,R_n$ be ordinary points of $\PP^2$, no three collinear, and $X$ their blow-up. If $X$ carries an irreducible curve $C$ with $C^2=-2$ and $K\cdot C=0$, then $R_1,\ldots,R_n$ are not in general position.
 
 ::: pf-proof
-$C$ is not exceptional, so $C=dh-\sum m_ie_i$ with $d\ge1$ and $m_i\ge0$ the multiplicities of its image (Proposition V.3.6), and $\sum m_i=3d$, $\sum m_i^2=d^2+2$. Order $m_1\ge m_2\ge m_3\ge\cdots$ and put $a=m_1$, $b=m_2$, $c=m_3$. If $a+b+c\le d$ then $\sum m_i^2\le a^2+b^2+c(3d-a-b)$; the function $d^2-3cd-(a^2+b^2-ac-bc)$ of $d$ increases for $d\ge 3c/2$, and at $d=a+b+c$ it equals $2ab-2c^2\ge0$, so $\sum m_i^2\le d^2$, a contradiction. Hence $a+b+c>d$. If $R_1,R_2,R_3$ are collinear the points are not in general position. Otherwise the admissible transformation centred at them carries $C$ to an irreducible curve of degree $2d-a-b-c<d$ (Exercise V.4.2) with the same two identities, and of degree $\ge1$ because $C$, of square $-2$, is none of the new exceptional curves. The degree cannot decrease forever, so at some stage the three centres are collinear.
+$C$ is not exceptional, so $C=dh-\sum m_ie_i$ with $d\ge1$ and $m_i\ge0$ the multiplicities of its image (Proposition V.3.6), and $\sum m_i=3d$, $\sum m_i^2=d^2+2$. Each $m_i$ is at most $d$: the strict transforms of the lines through $R_i$ have class $h-e_i$ and cover $X$, so one of them is not $C$, and $C\cdot(h-e_i)=d-m_i\ge0$. Order the points so that $m_1\ge m_2\ge\cdots\ge m_n$. Then $n\ge3$ and $m_3\ge1$: otherwise $3d=m_1+m_2\le2d$, which contradicts $d\ge1$. Put $a=m_1$, $b=m_2$, $c=m_3$. If $a+b+c\le d$ then $\sum m_i^2\le a^2+b^2+c(3d-a-b)$, because $m_i\le c$ for $i\ge3$ and $\sum_{i\ge3}m_i=3d-a-b$; the function $d^2-3cd-(a^2+b^2-ac-bc)$ of $d$ increases for $d\ge 3c/2$, and at $d=a+b+c\ge3c$ it equals $2ab-2c^2\ge0$, so $\sum m_i^2\le d^2$, a contradiction. Hence $a+b+c>d$.
+
+If three of the points $R_1,\ldots,R_n$ are collinear, they are not in general position. Otherwise the transformation centred at $R_1,R_2,R_3$ is admissible. It produces $n$ ordinary points of a plane whose blow-up is $X$ (Example V.4.2.3). On this blow-up $C$ is again an irreducible curve with $C^2=-2$ and $K\cdot C=0$. Its degree in the new plane is $2d-a-b-c<d$ (Exercise V.4.2), and this degree is at least $1$ because $C$, of square $-2$, is none of the exceptional curves of the new blow-up. So the argument applies to the new points and $C$. The degree is a positive integer that decreases at each repetition, so after finitely many admissible transformations three of the points are collinear, and $R_1,\ldots,R_n$ are not in general position.
 :::
 
 :::
@@ -889,8 +954,57 @@ When the characteristic is $p>0$ and $E_0$ is cuspidal, every nonsingular point 
 
 :::
 
+::: {.pf-step #properness-on-a-cubic}
+Let $r\ge9$ and let $k$ be uncountable. Suppose that $P_1,\ldots,P_r$ lie on a cubic $E_0$, and that $k$ has characteristic $0$ or $E_0$ is not cuspidal. Then $Z_{\alpha_{w,T}}\ne U$ for every class $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and part (c) holds.
+
+::: pf-proof
+The first paragraph of the proof of step [](#properness-r-nine){.pf-ref} uses only nine of the points, so $E_0$ is irreducible and reduced and is nonsingular at each $P_i$. The strict transform $E\subseteq X_r$ of $E_0$ therefore has class $-K_{X_r}$, and $E\cong E_0$. All but finitely many points of $E_0$ lie in $U$, because $E_0$ meets each line $P_iP_j$ in at most three points.
+
+Let $P\in U$ be a nonsingular point of $E_0$ and $E'\subseteq Y_P$ the strict transform of $E$. Then $E'$ is irreducible of class $-K_{Y_P}$ (Proposition V.3.6), its arithmetic genus is $1$ by adjunction (Exercise V.1.3), and the blowing-down maps $E'$ isomorphically onto $E$. Suppose that $P_1,\ldots,P_r,P$ are not in general position. As in the proof of step [](#bad-locus-root-class){.pf-ref}, there are a word $w$, a set $S$ of at least three terminal labels and a triple $T\subseteq S$ such that the strict transform $L\subseteq Y_P$ of a terminal line is an irreducible curve, isomorphic to $\PP^1$, of class $h'-\sum_{s\in S}e'_s$. The curve $L$ is not $E'$, because its arithmetic genus is $0$. In the terminal basis $K_{Y_P}=-3h'+\sum_je'_j$, so
+$$
+0\le L\cdot E'=-K_{Y_P}\cdot L=3-\abs{S}.
+$$
+Hence $S=T$ and $L\cdot E'=0$. By Proposition V.1.4, $L\cap E'=\emptyset$, so $\mathcal O_{Y_P}(L)$ is trivial on $E'$. The class of $L$ is $\alpha_{w,T}$. Write it as $c-ne$ with $c\in\Pic X_r$; then $n=L\cdot e\ge0$, because $L$, of square $-2$, is not the exceptional curve over $P$.
+
+If $n=0$, then $L$ does not meet the exceptional curve over $P$, so it is the pullback of an irreducible curve on $X_r$ with square $-2$ and $K$-degree $0$, which step [](#no-minus-two-curve){.pf-ref} excludes. So $n\ge1$, and restricting $\mathcal O_{Y_P}(L)$ to $E'\cong E$, where $e$ restricts to the point $P$, gives
+$$
+\mathcal O_{X_r}(c)\otimes\mathcal O_E\cong\mathcal O_E(nP).
+$$
+The class $c$ and the integer $n\ge1$ depend on $(w,T)$ alone. For a fixed pair $(w,T)$, two points $P$ and $P'$ that satisfy this relation have $\mathcal O_E(n(P-P'))\cong\mathcal O_E$, and the proof of step [](#properness-r-nine){.pf-ref} shows that only finitely many points $P$ satisfy it for a given class $c$ and integer $n\ge1$: under the hypothesis on $E_0$ the elements of $\Pic^\circ E$ killed by $n$ are finite in number. There are countably many pairs $(w,T)$. So the nonsingular points $P\in E_0\cap U$ for which $P_1,\ldots,P_r,P$ are not in general position form a countable set $N$.
+
+Now fix $(w,T)$. By step [](#effective-line-class-is-not-general){.pf-ref} every nonsingular point of $E_0$ in $Z_{\alpha_{w,T}}$ lies in $N$. The curve $E_0$ has uncountably many nonsingular points in $U$, because $k$ is uncountable. So $Z_{\alpha_{w,T}}\ne U$, and the last assertion of step [](#effective-line-class-is-not-general){.pf-ref} gives part (c).
+:::
+
+:::
+
+::: {.pf-step #cuspidal-cubic-every-point-fails}
+Let $k$ have characteristic $5$, let $E_0$ be the cuspidal cubic $y^2z=x^3$ with nonsingular points $P(t)=(t:1:t^3)$, let $t_1,\ldots,t_8\in k$ be linearly independent over $\FF_5$, and put $t_9=t_1-t_2-\cdots-t_8$ and $P_i=P(t_i)$. Then $P_1,\ldots,P_9$ are in general position, and for every nonsingular point $P$ of $E_0$ in $U$ the points $P_1,\ldots,P_9,P$ are not in general position. So the hypothesis on $E_0$ in step [](#properness-on-a-cubic){.pf-ref} is needed for an argument that takes $P$ on $E_0$.
+
+::: pf-proof
+By Example II.6.11.4, $t\mapsto\mathcal O_{E_0}(P(t)-P(0))$ is an isomorphism from the additive group of $k$ to $\Pic^\circ E_0$. The line $z=0$ meets $E_0$ only at $P(0)$, so $\mathcal O_{E_0}(1)\cong\mathcal O_{E_0}(3P(0))$. Hence, for integers $d$ and $\nu_j$ with $\sum_j\nu_j=3d$ and parameters $s_j\in k$,
+$$
+\mathcal O_{E_0}(d)\otimes\mathcal O_{E_0}\Big(-\sum_j\nu_jP(s_j)\Big)\cong\mathcal O_{E_0}\quad\Longleftrightarrow\quad\sum_j\nu_js_j=0 .
+$$
+
+The points $P_1,\ldots,P_9$ are distinct, because $t_9$ is none of $t_1,\ldots,t_8$. Let $X_9$ be their blow-up and $E\subseteq X_9$ the strict transform of $E_0$; it is irreducible of class $-K_{X_9}$, of arithmetic genus $1$, and $E\cong E_0$. Suppose that $P_1,\ldots,P_9$ are not in general position. A word of minimal length after which three points are collinear gives, as in the proof of step [](#bad-locus-root-class){.pf-ref}, an irreducible curve $L\subseteq X_9$, isomorphic to $\PP^1$, of class $h'-\sum_{s\in S}e'_s$ with $\abs{S}\ge3$. As in the proof of step [](#properness-on-a-cubic){.pf-ref}, $0\le L\cdot E=3-\abs{S}$, so $L^2=-2$, $K\cdot L=0$, and $\mathcal O_{X_9}(L)$ is trivial on $E$. Write $L=dh-\sum_i\mu_ie_i$. Then $\sum_i\mu_i=3d$, $\sum_i\mu_i^2=d^2+2$ and $\sum_i\mu_it_i=0$. Substituting $t_9$ gives $(\mu_1+\mu_9)t_1+\sum_{i=2}^8(\mu_i-\mu_9)t_i=0$, so $5$ divides $\mu_i-\mu_9$ for $2\le i\le8$, because $t_1,\ldots,t_8$ are linearly independent over $\FF_5$. Put $\nu_i=\mu_i-\mu_9$ for $i\le8$ and $d_0=d-3\mu_9$. Then $\sum_{i\le8}\nu_i=3d_0$ and $\sum_{i\le8}\nu_i^2=d_0^2+2$. The Cauchy--Schwarz inequality gives $9d_0^2\le8(d_0^2+2)$, so $d_0^2\le16$ and $\sum_{i\le8}\nu_i^2\le18$. So $\abs{\nu_i}\le4$, and $\nu_i=0$ for $2\le i\le8$. Then $\nu_1=3d_0$ and $9d_0^2=d_0^2+2$, which no integer satisfies. So $P_1,\ldots,P_9$ are in general position.
+
+Let $P=P(t)\in U$ be a nonsingular point of $E_0$, and let $E'\subseteq Y_P$ be the strict transform of $E$, an irreducible curve of class $-K_{Y_P}$ with $E'^2=-1$ and $E'\cong E_0$. Put
+$$
+\gamma=8h-3e_1-2(e_2+\cdots+e_9)-5e,\qquad\gamma^2=64-9-32-25=-2,\qquad K_{Y_P}\cdot\gamma=-24+3+16+5=0 .
+$$
+The restriction of $\mathcal O_{Y_P}(\gamma)$ to $E'\cong E_0$ is $\mathcal O_{E_0}(8)\otimes\mathcal O_{E_0}(-3P_1-2(P_2+\cdots+P_9)-5P)$, and
+$$
+3t_1+2(t_2+\cdots+t_8)+2t_9+5t=5t_1+5t=0 ,
+$$
+so the restriction is trivial. The class $\gamma$ is effective. Otherwise the sequence $0\to\mathcal O_{Y_P}(\gamma+K_{Y_P})\to\mathcal O_{Y_P}(\gamma)\to\mathcal O_{E'}\to0$ gives $h^1(\gamma+K_{Y_P})\ge1$, so $h^1(-\gamma)\ge1$ by Serre duality (Corollary III.7.7). The Riemann--Roch theorem V.1.6 gives $\chi(-\gamma)=\tfrac12\gamma\cdot(\gamma+K_{Y_P})+1=0$, so $h^0(-\gamma)+h^2(-\gamma)\ge1$. But $h^0(-\gamma)=0$, because $-\gamma\cdot h=-8$ and the strict transforms of lines cover $Y_P$, and $h^2(-\gamma)=h^0(\gamma+K_{Y_P})\le h^0(\gamma)=0$, because $\gamma$ is the sum of $\gamma+K_{Y_P}$ and the class of $E'$.
+
+Let $D$ be an effective divisor of class $\gamma$. The proof of step [](#properness-r-nine){.pf-ref} shows that an effective divisor $D$ of the class of a root has a component $\Gamma$ that is an irreducible curve with $\Gamma^2=-2$ and $K_{Y_P}\cdot\Gamma=-\Gamma\cdot E'=0$; that part of the proof uses only that $E'$ is irreducible of class $-K_{Y_P}$ with $E'^2=-1$. By step [](#no-minus-two-curve){.pf-ref} the points $P_1,\ldots,P_9,P$ are not in general position.
+:::
+
+:::
+
 ::: {.pf-step #effective-root-for-every-point}
-For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which carries part (c) for $r\le9$, is false.
+For every $r\ge15$ there are points $P_1,\ldots,P_r$ in general position and a root $\alpha$ with $Z_\alpha=U$. For such $r$ the statement "$Z_\alpha\ne U$ for every root $\alpha$", which step [](#properness-r-at-most-eight){.pf-ref} proves for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis, is false. The root $\alpha$ is none of the classes $\alpha_{w,T}$ of step [](#effective-line-class-is-not-general){.pf-ref}, and part (c) holds for these points.
 
 ::: pf-proof
 Let $E_0$ be a nonsingular plane cubic. Call points $P_1,\ldots,P_r$ of $E_0$ *independent* when $\mathcal O_{E_0}(d)\otimes\mathcal O_{E_0}(-\sum_im_iP_i)$ is not trivial for any nonzero $(d;m_1,\ldots,m_r)\in\ZZ^{r+1}$ with $3d=\sum_im_i$. Since $k$ is uncountable, independent points exist for every $r$: choose them one at a time. If $P_1,\ldots,P_{j-1}$ are independent, a relation with $m_j\ne0$ fixes the class of $\mathcal O(m_jP_j)$, which leaves finitely many $P_j$ (Example IV.1.3.7 and Milne, *Abelian Varieties* v2.00, Theorem I.7.2); there are countably many relations, and one with $m_j=0$ is a relation among the earlier points.
@@ -902,6 +1016,8 @@ $$
 \alpha=\Big(3h-\sum_{i\le15}e_i\Big)+4(h-e_1-e)+2(h-e_2-e)=9h-5e_1-3e_2-\sum_{i=3}^{15}e_i-6e
 $$
 is effective on $Y_P$. It is a root: $\alpha^2=81-25-9-13-36=-2$ and $K\cdot\alpha=-27+5+3+13+6=0$. So $Z_\alpha\supseteq U\setminus E_0$, and $Z_\alpha=U$ by step [](#bad-locus-closed){.pf-ref}.
+
+The points $P_1,\ldots,P_r$ lie on the nonsingular cubic $E_0$. By step [](#properness-on-a-cubic){.pf-ref}, part (c) holds for them and $Z_{\alpha_{w,T}}\ne U$ for every $w$ and $T$. So $\alpha$ is none of the classes $\alpha_{w,T}$.
 :::
 
 :::
@@ -921,18 +1037,18 @@ Also exclude the finitely many original lines through pairs of the fixed points 
 $$
 V=\PP^2\setminus B.
 $$
-Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word, which is the definition of general position. Every point of $V$ therefore satisfies (c) --- given that each of the countably many bad sets lies in a proper closed subset, which for $r\le8$ is step [](#properness-r-at-most-eight){.pf-ref}, for $r=9$ is step [](#properness-r-nine){.pf-ref} under its hypothesis, and for $r\ge10$ is what step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive; without that properness the intersection $V$ can be empty. Part (c) is therefore proved on this card for $r\le8$, for $r=9$ under the hypothesis of step [](#properness-r-nine){.pf-ref}, and not for $r\ge10$.
+Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or after any finite admissible word, which is the definition of general position. Every point of $V$ therefore satisfies (c) --- given that each of the countably many bad sets lies in a proper closed subset, which for $r\le8$ is step [](#properness-r-at-most-eight){.pf-ref}, for $r\ge9$ points on a cubic is step [](#properness-on-a-cubic){.pf-ref} under its hypothesis, and in the cases of step [](#part-c-open){.pf-ref} is not derived on this card. When one of the bad sets is dense in $\PP^2$, the closed set $Z_{\alpha_{w,T}}$ that contains it is all of $U$, and by step [](#effective-line-class-is-not-general){.pf-ref} no point $P_{r+1}$ gives a set in general position. Part (c) is therefore proved on this card for $r\le8$ and for $r\ge9$ under the hypothesis of step [](#properness-on-a-cubic){.pf-ref}, and not in the cases of step [](#part-c-open){.pf-ref}.
 :::
 
 :::
 
 ::: {.pf-step #part-c-open}
-For $r\ge10$, and for $r=9$ in characteristic $p>0$ when the only cubic through the nine points is cuspidal, part (c) is not proved on this card. It follows once, for every word $w$ and every terminal triple $T$, the set of step [](#bad-locus-proper-closed){.pf-ref} is not dense in $\PP^2$. No source listed for this card proves part (c).
+Part (c) is not proved on this card in two cases: $r\ge10$ points that lie on no cubic, and, in characteristic $p>0$, $r\ge9$ points that lie on exactly one cubic when that cubic is cuspidal. In both cases part (c) for $P_1,\ldots,P_r$ is equivalent to the following statement: for every word $w$ and every triple $T$ there is a point $P\in U$ such that the class $\alpha_{w,T}$ is not the class of an effective divisor on $Y_P$. No source listed for this card proves part (c).
 
 ::: pf-proof
-Steps [](#bad-locus-root-class){.pf-ref}, [](#bad-locus-closed){.pf-ref} and [](#uncountable-field-lemma){.pf-ref} hold for every $r$, and the closure of a set that is not dense in $\PP^2$ is a proper closed subset, so step [](#dense-general-position-extension){.pf-ref} applies to it. For $r\le9$ the set is shown not dense by showing that the closed set $Z_\alpha$ containing its part in $U$ is not $U$. By step [](#effective-root-for-every-point){.pf-ref} that route is closed for $r\ge15$, where some $Z_\alpha$ is all of $U$: the remaining statement concerns the irreducible curve of class $h'-\sum_{s\in S}e'_s$ of step [](#bad-locus-root-class){.pf-ref}, and not the effectivity of a root.
+The equivalence is the last assertion of step [](#effective-line-class-is-not-general){.pf-ref}, which holds for every $r$. Steps [](#properness-r-at-most-eight){.pf-ref} and [](#properness-r-nine){.pf-ref} prove, under their hypotheses, more than part (c) needs: $Z_\alpha\ne U$ for every root $\alpha$. By step [](#effective-root-for-every-point){.pf-ref} that stronger statement is false for $r\ge15$, for a root that is none of the classes $\alpha_{w,T}$; so a proof for large $r$ has to use that the class has the form $\alpha_{w,T}$. Step [](#properness-on-a-cubic){.pf-ref} uses it through the irreducible curve of class $\alpha_{w,T}$, and it needs a cubic through $P_1,\ldots,P_r$ and $P$, which exists for some $P$ only when $P_1,\ldots,P_r$ lie on a cubic. When that cubic is cuspidal and the characteristic is positive, step [](#cuspidal-cubic-every-point-fails){.pf-ref} shows that the points of the cubic can all fail, so the point $P$ has to be taken off the cubic. If two cubics pass through all of $P_1,\ldots,P_r$, then $r=9$ and they span the pencil of cubics through eight of the points, whose general member is nonsingular by the proof of step [](#smooth-cubic){.pf-ref}; so the second case is that of a single cubic through the points, which is cuspidal.
 
-What the sources print is the generic-point statement, Lemma 2.5 of Nagata, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c) is the countable-union lemma for an uncountable field, which neither source prints. The proof above is therefore the card's own, and it is complete for $r\le8$, for $r=9$ under the hypothesis of step [](#properness-r-nine){.pf-ref}, and otherwise given the properness that step [](#bad-locus-proper-closed){.pf-ref} asserts and does not derive. Of the solution sets retained for the book, two print part (c), and neither proves it: Egbert, V.4.15, which treats the tuple $(P_1,\ldots,P_r)$ as a point of $(\PP^2)^r$ and does not address the fibre over a fixed tuple, and Yang Pi-Yeh, solution 5.4.15, whose argument uses part (a), the criterion for six points, for general $r$. The other sets retained for the book stop before Chapter V: Borcherds and Troiani at Chapter I, Cais, Sam, Lomont and Park at Chapter IV, and Stein, Saglam--Chris and Kim in Chapter III.
+What the sources print is the generic-point statement, Lemma 2.5 of Nagata, that independent generic points over the prime field are non-special with respect to Cremona transformations; its proof keeps the transformed points generic over the prime field and says nothing about the position of one further point with the first $r$ fixed. Hartshorne's hint for (c) is the countable-union lemma for an uncountable field, which neither source prints. The proof of part (c) on this card is therefore the card's own, and it is complete for $r\le8$ and for $r\ge9$ under the hypothesis of step [](#properness-on-a-cubic){.pf-ref}. Of the solution sets retained for the book, two print part (c), and neither proves it: Egbert, V.4.15, which treats the tuple $(P_1,\ldots,P_r)$ as a point of $(\PP^2)^r$ and does not address the fibre over a fixed tuple, and Yang Pi-Yeh, solution 5.4.15, whose argument uses part (a), the criterion for six points, for general $r$. The other sets retained for the book stop before Chapter V: Borcherds and Troiani at Chapter I, Cais, Sam, Lomont and Park at Chapter IV, and Stein, Saglam--Chris and Kim in Chapter III.
 :::
 
 :::
@@ -991,7 +1107,7 @@ This is the second half of Theorem 4a of Nagata: if $r\ge9$ and the $P_i$ are no
 :::
 
 ::: pf-qed
-Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c): the properness they rest on is step [](#properness-r-at-most-eight){.pf-ref} for $r\le8$ and step [](#properness-r-nine){.pf-ref} for $r=9$ under its hypothesis; for $r\ge10$ it is not derived, step [](#part-c-open){.pf-ref} states what remains, and part (c) is not proved on this card for $r\ge10$. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
+Steps [](#general-position-six-points){.pf-ref} and [](#general-position-preserved-under-sequence){.pf-ref} prove (a) and (b). Steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref} carry (c): the properness they rest on is step [](#properness-r-at-most-eight){.pf-ref} for $r\le8$ and step [](#properness-on-a-cubic){.pf-ref} for $r\ge9$ under its hypothesis; in the two cases of step [](#part-c-open){.pf-ref} it is not derived, and part (c) is not proved on this card in those cases. Steps [](#every-negative-curve-is-exceptional){.pf-ref}, [](#classes-are-pre-exceptional){.pf-ref}, [](#count-fifty-six-and-two-forty){.pf-ref} and [](#part-d){.pf-ref} prove (d), and step [](#part-e){.pf-ref} proves the starred (e).
 :::
 
 :::
