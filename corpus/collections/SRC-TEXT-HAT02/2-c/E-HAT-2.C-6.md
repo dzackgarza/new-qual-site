@@ -296,6 +296,28 @@ audit:
     $\beta_1\leftrightarrow\beta_3$ contribute zero, $\alpha_2$ and $\beta_2$ contribute one each)
     and $+1$ on $H_2$, so $\tau=1-2+1=0$ there, which is the genus-3 case and not this one. Not
     claimed: a published solution of Exercise 2.C.6.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the Lefschetz computation. Checked degree by
+    degree. $H_0$: $M_{2m}$ is connected, so $f_*=\operatorname{id}$ and the trace is $1$.
+    $H_1$: in the Mayer--Vietoris sequence for $M_{2m}=A\cup B$ with $A$ the sphere carrying $2m$
+    holes and $B=\bigsqcup_iT_i$, the intersection is the $2m$ boundary circles; each is a commutator
+    in its punctured torus and so is zero in $H_1(T_i;\ZZ)$, while their classes generate
+    $H_1(A;\ZZ)$ with the single relation that their sum vanishes, so the connecting relations kill
+    $H_1(A)$ and $H_1(M_{2m})\cong\bigoplus_{i=1}^{2m}H_1(T_i;\ZZ)$, free of rank $4m=2g$; $f$ carries
+    $T_i$ onto $T_{i'}$, so on this basis $f_*$ is a block permutation matrix with zero diagonal
+    blocks, and its trace is $0$. $H_2$: at a point $p$ of the central sphere outside the attaching
+    regions $f$ is the antipodal map of $S^2$, of local degree $-1$, and $f$ is injective, so by the
+    local-degree formula $\deg f=\sum_{x\in f^{-1}(f(p))}\deg(f,x)=-1$; for a homeomorphism of a
+    closed orientable connected surface $f_*$ on $H_2\cong\ZZ$ is multiplication by $\deg f$, hence
+    by $-1$. Therefore $\tau(f)=1-0+(-1)=0$, which is also what the Lefschetz fixed point theorem
+    demands of the fixed-point-free $f$, so the three traces are consistent with one another; the
+    orientation-reversing character has the independent confirmation recorded on the card, that the
+    quotient is $N_{2m+1}$, nonorientable. Checked that the statement is the exercise's: the even
+    genus analogue of Example 2C.4, printed p. 181, whose own contributions are $1$, $-2$ and $+1$.
+    Not claimed: a published solution of Exercise 2.C.6, none located.
 ---
 
 ::: {.problem}
