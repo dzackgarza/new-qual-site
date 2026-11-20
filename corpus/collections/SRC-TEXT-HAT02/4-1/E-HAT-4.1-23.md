@@ -47,6 +47,23 @@ audit:
     Also supplied the reason the quotient of a CW complex by a subcomplex is a CW complex. Not
     checked this session: the printed page of the exercise, and no explicit pair homotopy
     equivalence was constructed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 23, printed p. 360,
+    Example 4.11 (cellular approximation for pairs) and Corollary 4.12. One repair, in step
+    `cw-cylinder`: its cell list named the cells of Y' and the cells e^k x (0,1) but not the cells
+    e^k x {0}, so the closure of e^k x (0,1) contained points of X' x {0} that were not cells; the
+    decomposition was therefore not a CW structure, and the claim that X' x {0} is a subcomplex did
+    not follow — the step also described the image of X' as X' x {0} together with the cylinders on
+    its cells, which is X' x [0,1] and not the image. The step now lists e^k x {0} as a k-cell,
+    checks closure-finiteness, and identifies X' x {0} as the subcomplex they form. Steps `models`,
+    `cellular`, `square`, `pushout`, `pair` and `cone` are unchanged and correct: f' = v^{-1} f u is
+    homotopic to a cellular map with the same mapping-cylinder homotopy type, the homotopy-commutative
+    square gives a homotopy equivalence of homotopy pushouts and hence of pairs, and a homotopy
+    equivalence of CW pairs induces one of the quotients. Not checked: no pair equivalence was
+    constructed explicitly, and no page number for the exercise is claimed.
 
 ---
 
@@ -103,7 +120,7 @@ The mapping cylinder $M_{g}$ of $g\colon A\to B$ is the homotopy pushout of the 
 For cellular $f'\colon X'\to Y'$, the pair $(M_{f'},X')$ is a CW pair.
 
 ::: pf-proof
-Take as cells of $M_{f'}$ the cells of $Y'$ and, for each cell $e^{k}$ of $X'$, the cell $e^{k}\times(0,1)$ of dimension $k+1$. The attaching maps come from those of $Y'$ together with the characteristic maps of the cells of $X'$ and the map $f'$; cellularity of $f'$ is exactly the condition that these attach along the appropriate skeleta, so $M_{f'}$ is a CW complex. The image of $X'$ is $X'\times\{0\}$ together with the cylinders on its cells, which is a subcomplex.
+Take as cells of $M_{f'}$ the cells of $Y'$, the cells $e^{k}\times\{0\}$ for the cells $e^{k}$ of $X'$, of dimension $k$, and the cells $e^{k}\times(0,1)$, of dimension $k+1$. The attaching maps come from those of $Y'$ together with the characteristic maps of the cells of $X'$ and the map $f'$; cellularity of $f'$ is exactly the condition that the $(k+1)$-cell $e^{k}\times(0,1)$ attaches to the $k$-skeleton, along $e^{k}\times\{0\}$ and $\partial e^{k}\times(0,1)$ through the characteristic map of $e^{k}$ and along $e^{k}\times\{1\}$ through $f'$, which lands in the $k$-skeleton of $Y'$. Closure-finiteness holds because the closure of $e^{k}\times(0,1)$ meets only the cells $e^{j}\times\{0\}$ and $e^{j}\times(0,1)$ with $j\le k$ and the finitely many cells of $Y'$ in the closure of $f'(e^{k})$. So $M_{f'}$ is a CW complex, and $X'\times\{0\}$ is the subcomplex that is the union of the cells $e^{k}\times\{0\}$.
 :::
 
 :::
