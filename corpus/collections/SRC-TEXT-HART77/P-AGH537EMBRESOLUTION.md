@@ -201,7 +201,7 @@ $$
 where only singular points $Q$ of the successive strict transforms
 contribute, since a smooth point has multiplicity one.
 
-The blowups of the five germs, the multiplicities they produce and the five values of $\delta_P$ are Exercise 7 of §3 of Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions (course of Chin-Lung Wang), the solution of parts (a) to (e) by Ping-Hsun Chuang, PDF pp. 12--13; each step below that computes a transform or a value of $\delta_P$ cites that entry and quotes its equation.
+The blowups of the five germs, the multiplicities they produce and the five values of $\delta_P$ are Exercise 7 of §3 of Algebraic Geometry II, National Taiwan University, 2020 Spring, *Chapter V Surfaces* homework solutions (course of Chin-Lung Wang), the solution of parts (a) to (e) by Ping-Hsun Chuang; each step below that computes a transform or a value of $\delta_P$ cites that entry and quotes its equation.
 
 ::: pf
 
@@ -728,7 +728,7 @@ equivalence classification for every singularity in the exercise.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, with (3.9.3) and (3.9.4) on printed p. 393.
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.3, exercise 3.7, with (3.9.3) and (3.9.4).
 
 Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 7 of §3, the solution of the five parts by Ping-Hsun Chuang: in the chart $x=sy$ it prints $s^3+y^2$, $s^3+s^4y+y^2$, $s^3+y+y^2$, $s^3+y^2+y^3$ and $s^3+sy+y^2$ for (a) to (e), and in the chart $(v,s)=(y/s,s)$ the equations $s+v^2$, $s+vs^3+v^2$, $s+v^2+sv^3$ and $s+v+v^2$; it reads the multiplicities $3$ and $2$ off them, computes $\delta_P=\tfrac12\cdot3\cdot2+\tfrac12\cdot2\cdot1=4$ for (a), (b), (d) and (e) and $\tfrac12\cdot3\cdot2=3$ for (c), and concludes "By the resolution graph, we conclude that the sigularity of (0,0) of (a) (b) (d) are equivalent and (c) (e) are different from the others". Its letters differ from the ones above: its $s$ is $u$, and in the second chart its $v$ is $w$.
 
