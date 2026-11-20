@@ -14,7 +14,7 @@ The Jordan canonical form of $A$ exists if and only if the characteristic polyno
 
 [[L-CD6QT]]
 
-## Where the form comes from
+## Jordan blocks from the elementary divisors
 
 Make $V=k^n$ a $k[x]$-module with $x$ acting by $A$.
 If $\chi_A$ splits, every invariant factor of $V$ is a power of a linear polynomial, so every elementary divisor is some $(x-\lambda)^e$, and that summand $k[x]/\generators{(x-\lambda)^e}$ is the Jordan block $J_e(\lambda)$ in the basis $(x-\lambda)^{e-1},\ldots,(x-\lambda),1$. The generalized eigenspace $\ker(A-\lambda I)^n$, with $n=\dim V$, is the largest of the subspaces $\ker(A-\lambda I)^m$, and these are the primary components of $V$ as a $k[x]$-module: the summands the Jordan blocks are written in.
