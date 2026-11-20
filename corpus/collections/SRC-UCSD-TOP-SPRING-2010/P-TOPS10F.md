@@ -69,7 +69,9 @@ $$
 $$
 
 ::: pf-proof
-This is step [](#weak-equivalence-upgraded-by-whitehead){.pf-ref}.
+
+Step [](#weak-equivalence-upgraded-by-whitehead){.pf-ref} makes $f$ a homotopy equivalence when $X$ has CW type. The source of $f$ is $\bigvee_{s\in S}S^1$, so under that hypothesis the two spaces are homotopy equivalent.
+
 :::
 
 :::
