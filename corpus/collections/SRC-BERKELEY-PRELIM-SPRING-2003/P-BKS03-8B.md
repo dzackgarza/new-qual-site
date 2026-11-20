@@ -36,7 +36,7 @@ $$
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2003, solutions** (`assets/attachments/s03solution.pdf`), Problem 8B, PDF p. 6. Throughout $N = 30030 = 2\cdot3\cdot5\cdot7\cdot11\cdot13$ and $\mathcal{P} \coloneqq \theset{2,3,5,7,11,13}$.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2003, solutions** (`assets/attachments/s03solution.pdf`), Problem 8B. Throughout $N = 30030 = 2\cdot3\cdot5\cdot7\cdot11\cdot13$ and $\mathcal{P} \coloneqq \theset{2,3,5,7,11,13}$.
 
 ::: pf
 

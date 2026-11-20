@@ -34,7 +34,7 @@ $$
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 1B, PDF p. 5** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): the split into $\beta\le0$, $0<\beta\le3$ and $\beta>3$, the substitution $u=x^\beta$, and the integration by parts are that solution's. The card adds the estimate that shows the oscillations do not cancel when $0<\beta\le3$, which the sheet states without proof.
+The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 1B** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): the split into $\beta\le0$, $0<\beta\le3$ and $\beta>3$, the substitution $u=x^\beta$, and the integration by parts are that solution's. The card adds the estimate that shows the oscillations do not cancel when $0<\beta\le3$, which the sheet states without proof.
 
 Throughout $\beta$ is real and
 $$

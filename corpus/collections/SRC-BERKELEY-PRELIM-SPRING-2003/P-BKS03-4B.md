@@ -33,7 +33,7 @@ Show that $A$ contains a normal subgroup isomorphic to $G$.
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2003, solutions** (`assets/attachments/s03solution.pdf`), Problem 4B, PDF p. 5. Throughout $G$ is nonabelian and simple, $A \coloneqq \Aut(G)$, and $c_{g} \in A$ is conjugation by $g$, $c_{g}(h) = ghg^{-1}$.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2003, solutions** (`assets/attachments/s03solution.pdf`), Problem 4B. Throughout $G$ is nonabelian and simple, $A \coloneqq \Aut(G)$, and $c_{g} \in A$ is conjugation by $g$, $c_{g}(h) = ghg^{-1}$.
 
 ::: pf
 

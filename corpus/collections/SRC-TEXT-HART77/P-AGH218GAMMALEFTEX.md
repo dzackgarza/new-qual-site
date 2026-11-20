@@ -158,7 +158,7 @@ The functor $\Gamma(U, \mathcal{F})$ is not exact in general; Hartshorne II.1.21
 :::
 
 ::: {.remark title="Published solution"}
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.8, PDF p. 4, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he observes that the kernel sheaf of $\mathcal{F}\to\mathcal{F}''$ is the kernel presheaf, so its sections over $U$ are exactly the kernel of $\Gamma(U,\mathcal{F})\to\Gamma(U,\mathcal{F}'')$, and left exactness follows.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.8, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he observes that the kernel sheaf of $\mathcal{F}\to\mathcal{F}''$ is the kernel presheaf, so its sections over $U$ are exactly the kernel of $\Gamma(U,\mathcal{F})\to\Gamma(U,\mathcal{F}'')$, and left exactness follows.
 The proof above is that identity, together with the injectivity of $\Gamma(U,\mathcal{F}')\to\Gamma(U,\mathcal{F})$ taken from the definition of injectivity for a morphism of sheaves (Hartshorne's Caution 1.2.1).
 Agree.
 :::

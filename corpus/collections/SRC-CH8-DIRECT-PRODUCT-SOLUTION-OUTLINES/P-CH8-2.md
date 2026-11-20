@@ -43,7 +43,7 @@ Show that $\ZZ_{2} \oplus \ZZ_{2} \oplus \ZZ_{2}$ has seven subgroups of order $
 
 ::: {.solution}
 
-In the seventh edition this is Chapter 8 Exercise 2, printed p. 167, where the printed
+In the seventh edition this is Chapter 8 Exercise 2, where the printed
 words are the statement below.
 
 Let $G=\ZZ_2\oplus\ZZ_2\oplus\ZZ_2$, an abelian group of order $8$ written

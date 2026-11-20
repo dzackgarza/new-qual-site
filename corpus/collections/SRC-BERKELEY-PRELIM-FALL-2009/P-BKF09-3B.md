@@ -34,7 +34,7 @@ What is the maximal disk $B_r(0)=\{w\in\CC\mid\abs{w}<r\}$ such that $B_r(0)\sub
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 3B, PDF pp. 5–6** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): injectivity, the Taylor series, the radius, the bound $\abs{f(z)}\ge\rho/(1+\rho)^2$ on the circle $\abs z=\rho$, and the conclusion that every $\abs a<1/4$ is attained are that solution's. The card adds two things: the zero-count is replaced by Rouché's theorem, which is what the sheet's appeal to the argument principle amounts to, and the *maximality* of the radius $1/4$ is proved, which neither the sheet nor the previous version of this card did.
+The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 3B** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): injectivity, the Taylor series, the radius, the bound $\abs{f(z)}\ge\rho/(1+\rho)^2$ on the circle $\abs z=\rho$, and the conclusion that every $\abs a<1/4$ is attained are that solution's. The card adds two things: the zero-count is replaced by Rouché's theorem, which is what the sheet's appeal to the argument principle amounts to, and the *maximality* of the radius $1/4$ is proved, which neither the sheet nor the previous version of this card did.
 
 Throughout $f(z)=z/(1-z)^2$ on the unit disk $\DD=\theset{\abs z<1}$.
 

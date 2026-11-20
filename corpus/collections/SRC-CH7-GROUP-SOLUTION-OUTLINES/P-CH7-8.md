@@ -110,8 +110,7 @@ An element of $G$ is $a^{m}$ with $0\le m\le14$. Write $m=5t+k$ with $0\le k\le4
 $a^{m}=a^{k}(a^{5})^{t}\in a^{k}H$. So every element of $G$ lies in one of the five cosets,
 hence every left coset — being $a^{m}H\subseteq G$ and nonempty, since it contains
 $a^{m}$ — equals the coset $a^{k}H$ containing its element $a^{m}$. This also agrees with
-the count $\cardinality{G}/\cardinality{H}=15/3=5$ of Lagrange's Theorem (Theorem 7.1,
-printed p. 141).
+the count $\cardinality{G}/\cardinality{H}=15/3=5$ of Lagrange's Theorem (Theorem 7.1).
 
 :::
 

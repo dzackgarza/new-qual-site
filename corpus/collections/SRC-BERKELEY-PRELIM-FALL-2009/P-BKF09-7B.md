@@ -36,7 +36,7 @@ by integrating $(z-\alpha)^{-1}(z-\alpha^{-1})^{-1}$ over the unit circle.
 :::
 
 ::: {.solution}
-The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 7B, PDF p. 7** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): the parametrization, the residue computation in the two cases, and the separate treatment of $\alpha=0$ are that solution's. The card writes the answer in the single form $2\pi/\abs{1-\alpha^2}$, where the sheet's final display is the product $2\pi(\abs\alpha-1)/((\alpha^2-1)\abs{\abs\alpha-1})$ and so hides the sign it is computing.
+The published solution is the collection's own retained sheet, **Fall 2009 preliminary examination solutions, Problem 7B** (`assets/attachments/f09solutions.pdf`, the file named in this collection's `provenance`): the parametrization, the residue computation in the two cases, and the separate treatment of $\alpha=0$ are that solution's. The card writes the answer in the single form $2\pi/\abs{1-\alpha^2}$, where the sheet's final display is the product $2\pi(\abs\alpha-1)/((\alpha^2-1)\abs{\abs\alpha-1})$ and so hides the sign it is computing.
 
 Throughout $\alpha\in\CC$ with $\abs\alpha\ne1$, $C$ is the unit circle traversed once counterclockwise, and
 $$

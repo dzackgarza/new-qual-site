@@ -63,7 +63,7 @@ Show that the induced map $\varphi^{+}: \mcf^{+} \to \mcg^{+}$ of associated she
 :::
 
 ::: {.solution}
-The published solution is **Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II–III), Chapter II §1, Exercise 1.4, PDF p. 3** (`tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, the revision the card's remark records): he passes to stalks, where the map is a filtered colimit of the injective section maps and hence injective, and then uses that sheafification preserves stalks; (b) is the injection of the presheaf image into $\mcg$ taken after sheafification. The proof below is that argument with the filtered-colimit statement named rather than used silently.
+The published solution is **Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II–III), Chapter II §1, Exercise 1.4** (`tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`, the revision the card's remark records): he passes to stalks, where the map is a filtered colimit of the injective section maps and hence injective, and then uses that sheafification preserves stalks; (b) is the injection of the presheaf image into $\mcg$ taken after sheafification. The proof below is that argument with the filtered-colimit statement named rather than used silently.
 
 Throughout $\varphi:\mcf\to\mcg$ is a morphism of presheaves on a space $X$, $\mcf^{+}$ denotes the associated sheaf, and $\varphi_P$ is the induced map of stalks at $P$.
 
@@ -115,7 +115,7 @@ Apply part (a) to $\psi$: since each $\psi(U)$ is injective by step [](#presheaf
 ::: {.remark title="Published solution"}
 The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, both parts -- the criterion for a morphism of presheaves to be injective on every open set, and the description of the image presheaf and its sheafification.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.4, PDF p. 3, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he passes to stalks, where the map is a filtered colimit of the injective section maps and hence injective, and then uses that sheafification preserves stalks; (b) is the injection of the presheaf image into $\mcg$ taken after sheafification.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §1, Exercise 1.4, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: he passes to stalks, where the map is a filtered colimit of the injective section maps and hence injective, and then uses that sheafification preserves stalks; (b) is the injection of the presheaf image into $\mcg$ taken after sheafification.
 The proof above is that argument, with the filtered-colimit statement named rather than proved.
 Agree.
 :::

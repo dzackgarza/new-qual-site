@@ -29,7 +29,7 @@ Prove, by comparing orders of elements, that $\ZZ_{8} \oplus \ZZ_{2}$ is not iso
 
 ::: {.solution}
 
-In the seventh edition this is Chapter 8 Exercise 6, printed p. 167, where the printed
+In the seventh edition this is Chapter 8 Exercise 6, where the printed
 words are the statement below.
 
 The argument is the card's own: the two groups have different sets of element orders.

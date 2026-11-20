@@ -44,7 +44,7 @@ State the general case.
 
 ::: {.solution}
 
-In the seventh edition this is Chapter 8 Exercise 4, printed p. 167, where the printed
+In the seventh edition this is Chapter 8 Exercise 4, where the printed
 words are the statement below.
 
 Let $G,H$ be groups and $G\oplus H$ their external direct product with the
