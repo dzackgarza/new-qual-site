@@ -523,6 +523,27 @@ audit:
     h^1(D-H) = h^1(-D), the vanishing of h^1(O_X(-D)), and the failure of the inclusion, by the four
     generating functions named. Not checked: no printing of the book was read, only the text version
     retained in tmp/sources; no certificate or computation is claimed for this step.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two corrections to the written step; the rank-zero argument itself is unchanged.
+    (i) The case split by characteristic is removed. It cited Bertini's Corollary
+    III.10.9 in characteristic 0 and then proved that no point has rank 0 in
+    characteristic p, but that proof uses only Euler's relation for the polar
+    quadric, the Hodge index theorem, two Riemann-Roch computations, Serre duality
+    and the vanishing of h^1(O_X(-D)) for a reduced connected member of the system,
+    and none of these has a hypothesis on the characteristic; the step now runs in
+    every characteristic and the citation is dropped. (ii) The example of a curve
+    contracted by the morphism was E_1 with D = H + E_1, and that class is not in
+    alternative (c): (H + E_1).E_1 = -1, so E_1 is a fixed component of the system
+    and not a contracted curve. The example is now F_56 with D = H + F_56, which
+    has square 4, meets every one of the 27 lines nonnegatively and meets F_56 in 0.
+    Checked in this pass: each of the six steps of the rank-zero argument, the value
+    chi(D-H) = p_a, the inequality D.H >= 3 from the Hodge index theorem and the
+    integrality of N, and both intersection numbers (H + E_1).E_1 = -1 and
+    (H + F_56).F_56 = 0. Not checked: any printing of the book, only the text
+    version retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -697,9 +718,8 @@ where $\ell_H$ is a linear form defining $H$. The local equation of the member $
 point $x$ of it is $\ell_H\circ\varphi$; if its differential is nonzero at $x$ it is part of a
 regular system of parameters of the local ring of the nonsingular surface $X$, so the quotient local
 ring is regular of dimension $1$ and the member is nonsingular at $x$ by Theorem I.5.1. It is
-therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset. In
-characteristic $0$ that is Bertini's corollary, Corollary III.10.9 of the book, $\linearsystem{D}$
-having no base point; so suppose from here on that $\operatorname{char}k=p>0$.
+therefore enough to show that the image of $Z$ in $\PP^{N\vee}$ is a proper closed subset, and no
+hypothesis on the characteristic is used below.
 
 Where $r(x)=2$ the image $d\varphi_x(T_xX)$ is a $2$-plane in $T_{\varphi(x)}\PP^N$ when $N\ge3$, and
 the hyperplanes $H$ with $(x,H)\in Z$ are those containing it, a linear subspace of $\PP^{N\vee}$ of
@@ -737,8 +757,8 @@ $h^1(D-H)=h^1(-D)$, hence $h^1(\OO_X(-D))\ge1$. But that group vanishes: for a r
 member $A$ of $\linearsystem{D}$ the sequence $0\to\OO_X(-D)\to\OO_X\to\OO_A\to0$ gives
 $0\to H^0(\OO_X)\to H^0(\OO_A)\to H^1(\OO_X(-D))\to H^1(\OO_X)=0$, and $h^0(\OO_X)=h^0(\OO_A)=1$
 because $X$ is rational and $A$ is a reduced connected curve. So $r(x)\ge1$ at every point of $X$,
-and a curve contracted by $\varphi$, such as $E_1$ when $D=H+E_1$, is a curve of rank $1$ and is
-covered by the preceding paragraph.
+and a curve contracted by $\varphi$, such as $F_{56}$ when $D=H+F_{56}$, is a curve of rank $1$ and
+is covered by the preceding paragraph.
 
 Thus the image of $Z$ has dimension at most $N-1$, and it is closed because
 $X$ is proper. A general hyperplane $H$ therefore lies outside that image, and for such $H$ no point
@@ -845,9 +865,9 @@ paper works over an algebraically closed field of arbitrary characteristic, so i
 reduced irreducible members in every characteristic. The nonsingularity of the member of a class of
 the third alternative is then the incidence count of Vakil's proof of Theorem 13.4.2, carried out
 for the morphism defined by $\linearsystem{D}$: Riemann--Roch and the degree of a surface spanning
-$\PP^N$ make that morphism birational; in characteristic $0$ Bertini's corollary, Corollary
-III.10.9, then gives the nonsingularity, and in characteristic $p$ there is no point of rank zero at all
-and the bad hyperplanes form a closed subset of the dual of dimension at most $N-1$.
+$\PP^N$ make that morphism birational, no point of $X$ has rank $0$ --- the argument is
+characteristic-free --- and the bad hyperplanes form a closed subset of the dual of dimension at most
+$N-1$.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
 proof, on irreducible curves of negative self-intersection on a weak Del Pezzo
