@@ -48,6 +48,21 @@ audit:
     since it contains a point of W and lies in the refinement. A hypothesis noted and not
     used: the lemma's Hausdorff assumption plays no part in this argument, and the card now
     says so. No repair to the statement.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair. The expansion lemma is proved
+    correctly: $N_x$ is taken open because a neighbourhood contains an open set; the locally
+    finite open refinement $\mathcal V$ of the cover by the $N_x$ meets only finitely many
+    $B_\alpha$ at each of its members; $U_\alpha$ is open as a union of members of $\mathcal V$
+    and contains $B_\alpha$ through the member of $\mathcal V$ through a point of $B_\alpha$; and
+    local finiteness at $x$ is checked with the neighbourhood $W$ meeting only $V_1,\ldots,V_k$,
+    any member of $\mathcal V$ meeting $W$ being one of these. The page locators are removed from
+    the solution: the two definitions are cited by section and the exercise by number (§41
+    Exercise 5), read in `tmp/sources/munkres-2000-topology.md`; the earlier events' page
+    locators are superseded, their text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
@@ -64,7 +79,7 @@ Then there is a locally finite indexed family $\theset{U_\alpha}_{\alpha \in J}$
 ::: {.solution}
 The argument is the card's own: no retained set solves this exercise, as the audit and the COMPLAINTS.md entry for §39--§42 record.
 
-Throughout, $X$ is paracompact and Hausdorff, $\{B_\alpha\}_{\alpha\in J}$ is a locally finite indexed family of subsets of $X$, and $\mathcal{V}$ will be a locally finite open refinement of a given open cover. A family of subsets is locally finite when each point has a neighbourhood meeting only finitely many of its members (§39, printed p. 244), and $X$ is paracompact when every open cover has an open locally finite refinement that covers $X$ (§41, printed p. 254); the exercise is §41 Exercise 5 (printed p. 260). The Hausdorff hypothesis is not used below.
+Throughout, $X$ is paracompact and Hausdorff, $\{B_\alpha\}_{\alpha\in J}$ is a locally finite indexed family of subsets of $X$, and $\mathcal{V}$ will be a locally finite open refinement of a given open cover. A family of subsets is locally finite when each point has a neighbourhood meeting only finitely many of its members (§39), and $X$ is paracompact when every open cover has an open locally finite refinement that covers $X$ (§41); the exercise is §41 Exercise 5. The Hausdorff hypothesis is not used below.
 
 ::: pf
 
