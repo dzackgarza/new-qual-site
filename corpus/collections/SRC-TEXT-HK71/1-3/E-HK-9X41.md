@@ -43,7 +43,7 @@ find all solutions of $AX = 2X$ and all solutions of $AX = 3X$. (The symbol $cX$
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hoffman--Kunze, *Linear Algebra* (1971), §1.3 Exercise 3, printed p. 11.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hoffman--Kunze, *Linear Algebra* (1971), §1.3 Exercise 3.
 
 The equation $AX=cX$ is equivalent to
 $$
