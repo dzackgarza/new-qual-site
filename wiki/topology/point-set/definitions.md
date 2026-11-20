@@ -105,11 +105,6 @@ Local connectedness and local path connectedness use the second.
 
 [[D-NCLVD]]
 
-::: {.remark}
-If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion, then $r\circ\iota=\id_A$, so $\iota_*$ is injective on $\pi_1$ and on homology.
-For every point $x_0$ of a space $X$, the constant map $X\to\theset{x_0}$ is a retraction.
-:::
-
 [[D-KWWVL]]
 
 [[D-3O6QH]]
