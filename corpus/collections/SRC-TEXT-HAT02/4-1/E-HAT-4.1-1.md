@@ -215,6 +215,30 @@ audit:
     the printed page is the one the card's earlier event claimed. The durable part of the locator is
     that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
     reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, referee read of this card's own part, the four-quarter interchange. Recomputed from
+    the two formulas with $+_1$ on coordinate $1$ and $+_2$ on coordinate $2$: in the quadrant
+    $s_1\le\tfrac12$, $s_2\le\tfrac12$ both sides are $f(2s_1,2s_2,\ldots)$; in
+    $s_1\le\tfrac12$, $s_2\ge\tfrac12$ both are $h(2s_1,2s_2-1,\ldots)$; in $s_1\ge\tfrac12$,
+    $s_2\le\tfrac12$ both are $g(2s_1-1,2s_2,\ldots)$; and in $s_1\ge\tfrac12$, $s_2\ge\tfrac12$
+    both are $k(2s_1-1,2s_2-1,\ldots)$ --- the two maps agree at every point of $I^n$, not only up to
+    homotopy, and on $\partial I^n$ every quadrant lands in $x_0$ because each argument pair has a
+    coordinate in $\{0,1\}$ where the corresponding map is based. Checked the unit homotopy
+    $H_t(s)=f(\ldots,2s_i/(1+t),\ldots)$: at $t=0$ it is $f+_i0$, at $t=1$ it is $f$, it is
+    continuous at $s_i=(1+t)/2$ because there $2s_i/(1+t)=1$ and $f$ is based, and it is stationary on
+    $\partial I^n$. Checked the deductions: substituting constants and the unit laws into the
+    interchange gives $f+'k\simeq f+k$ and $g+'h\simeq h+g$, and the proposition's Eckmann--Hilton
+    argument is sound, the two units coinciding because $e_1=e_1+_2e_2=e_2$, after which
+    $a+_2b=(a+_1e)+_2(e+_1b)=(a+_2e)+_1(e+_2b)=a+_1b$ gives $+_1=+_2$ and the same interchange gives
+    commutativity and associativity. Checked the statement against the book: printed p. 358 = PDF page
+    367 of the author's copy, whose Exercise 1 is the card's wording verbatim. The PDF path named in
+    the statement is no longer in `tmp/sources` this session, so the page was re-read from the
+    author's posted file; the page arithmetic is unchanged. Not claimed: a complete published
+    solution of the exercise; tom Dieck prints the laws and the identity, not the four-quarter
+    verification.
 review: draft
 ---
 
