@@ -40,7 +40,7 @@ Assuming the mixing is instantaneous, how many grams of salt are in the tank aft
 :::
 
 ::: {.solution}
-This is Problem 3 of the retained Week 4 preliminary-practice solutions (`assets/attachments/Week4_solns.pdf`, PDF p. 1), and the argument is that solution's, with its sign convention made explicit: it writes $S(t)=2-Ce^{-t/25}$ with $C=-1$, which is the same function as $S(t)=2+e^{-t/25}$ below.
+This is Problem 3 of the retained Week 4 preliminary-practice solutions (`assets/attachments/Week4_solns.pdf`), and the argument is that solution's, with its sign convention made explicit: it writes $S(t)=2-Ce^{-t/25}$ with $C=-1$, which is the same function as $S(t)=2+e^{-t/25}$ below.
 
 ::: pf
 
