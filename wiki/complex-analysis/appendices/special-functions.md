@@ -111,6 +111,8 @@ Let $z_j\in\CC$ with $z_j\neq -1$ for every $j$, and let $\Log$ be the principal
 - $\prod_{j=1}^\infty(1+z_j)$ converges to a nonzero limit if and only if $\sum_{j=1}^\infty\Log(1+z_j)$ converges.
 
 - $\prod_{j=1}^\infty(1+z_j)$ converges absolutely, meaning that $\sum_{j=1}^\infty\abs{\Log(1+z_j)}$ converges, if and only if $\sum_{j=1}^\infty\abs{z_j}$ converges.
+
+The first is [@Ahl73, ch. 5, §2.2, Theorem 5], that $\prod(1+a_n)$ converges simultaneously with the series $\sum\log(1+a_n)$ whose terms are the principal values of the logarithm, which is the $\Log$ above. The second is the observation following that theorem in the same section, that the logarithmic series converges absolutely at the same time as the simpler series $\sum\abs{a_n}$.
 :::
 
 [[T-IEJFA]]
