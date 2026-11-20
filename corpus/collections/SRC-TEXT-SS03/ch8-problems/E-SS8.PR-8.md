@@ -68,6 +68,20 @@ audit:
     for the remaining $r$ the step invokes step s3, which gives $v>0$ on $(0,\pi)$ for every
     $0<r<1$. No other step changed, and the provenance sentence above stands: the argument is the
     card's own.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Published solution read and found not to repair the defect this card repairs. Wang Zirui,
+    *Complete Solutions for Chapter 8* (SJTU), in the public repository
+    `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, Problem 8, covers parts
+    (a)--(c) and (f) in outline and then, for part (d), states only that
+    $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, "it is the upper side, so $v\sin\theta\ge0$ for
+    all $r$" -- the same uniform inference from a bound without the factor $\sin\theta$ that the
+    reader's report rejected. The published text is therefore recorded as carrying the defect, not as
+    closing it, and step s4, which estimates $\abs{v-r\sin\theta}\le Cr^2\sin\theta$ term by term
+    through $\abs{\sin(k\theta)}\le k\sin\theta$, remains the card's own. Checked: the quotation, read
+    at the document's Problem 8. Not checked: anything in that document outside its Problem 8.
 
 ---
 
@@ -95,7 +109,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 8).
 :::
 
 ::: {.solution}
-No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own, following the printed hints.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 8), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. It is not a source for part (d) as printed: it argues that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$ "so" $v\sin\theta\ge0$ for all $r$, which is the inference this card repairs — see the audit trail, where the published text is recorded as repeating that step rather than closing it. The argument below follows the book's hints and is the card's own.
 
 Let $f(z)=z+a_2z^2+a_3z^3+\cdots$ be injective and holomorphic on $\DD$ with $f(0)=0$, $f'(0)=1$, and suppose every $a_n\in\RR$. For $0<r<1$ and $z=re^{i\theta}$ put $v(r,\theta)=\operatorname{Im}f(re^{i\theta})$.
 
