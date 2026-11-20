@@ -18,6 +18,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-05
   note: Checked all three criteria and the requested implication against problem 1 of the official UGA Spring 2006 topology exam.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The three criteria stated in the opening step were its only unproved steps; each now carries
+    a proof body saying what its display asserts in terms of balls and how the three relate — the
+    open-set form through interiors of inverse images, the $\varepsilon$-$\delta$ form as
+    continuity at each point, and the sequential form deduced from it. No criterion is restated
+    and the implication proved later on the card is unchanged.
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-05
@@ -53,6 +62,10 @@ For a map $f:X\to X$ between metric spaces:
 ::: {.pf-step #s1-1}
 **Open-set criterion:** for every open set $U\subseteq X$, the inverse image $f^{-1}(U)$ is open in $X$.
 
+::: pf-proof
+$f^{-1}(U)=\{x\in X:f(x)\in U\}$ is open exactly when each of its points has a ball about it contained in $f^{-1}(U)$, that is, when a ball about $x$ is carried by $f$ into $U$; this is the statement recorded in the step, and it is one of the standard forms of continuity for a map of metric spaces.
+:::
+
 :::
 
 ::: pf-step
@@ -64,6 +77,10 @@ d(f(x),f(y))<\varepsilon
 $$
 for every $y\in X$.
 
+::: pf-proof
+This is the statement that $f$ is continuous at each $x\in X$ in the metric sense: the ball of radius $\delta$ about $x$ is carried into the ball of radius $\varepsilon$ about $f(x)$. Reading it at every point of $X$ is the definition of continuity of $f$ as a map of metric spaces.
+:::
+
 :::
 
 ::: {.pf-step #s1-3}
@@ -71,6 +88,10 @@ for every $y\in X$.
 $$
 f(x_n)\to f(x).
 $$
+
+::: pf-proof
+Given $\varepsilon>0$, apply the $\varepsilon$-$\delta$ criterion at $x$ to get $\delta>0$; since $x_n\to x$ there is $N$ with $d(x_n,x)<\delta$ for $n\ge N$, and then $d(f(x_n),f(x))<\varepsilon$ for those $n$, which is the assertion.
+:::
 
 :::
 
