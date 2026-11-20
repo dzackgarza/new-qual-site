@@ -9,7 +9,7 @@ topics:
 
 # The class equation
 
-Class sizes divide $\size{G}$, and the $p$-group statements below all come from counting the classes of size one: the count is what forces a $p$-group to have a nontrivial center.
+Class sizes divide $\size{G}$, and the $p$-group statements on this page all come from counting the classes of size one: the count is what forces a $p$-group to have a nontrivial center.
 
 [[C-O7CP3]]
 
