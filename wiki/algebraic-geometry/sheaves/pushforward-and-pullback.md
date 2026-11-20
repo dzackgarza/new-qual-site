@@ -25,7 +25,8 @@ The module-theoretic pullback $f^*$ base changes the exact $f^{-1}$ along $\inve
 [[D-DEFADJ]]
 
 The pair $\inverseof{f}\dashv f_*$ is an adjunction of additive functors between abelian categories, so general facts about adjoint pairs apply without further hypotheses: the left adjoint preserves colimits and the right adjoint preserves limits ([[T-DEFRAPL]]).
-So $f^{-1}$ preserves colimits and $f_*$ preserves limits, and the same adjunction gives the computation rules for $f_*$ and $f^*$: a pushforward of a direct sum is a direct sum, and a pullback of a cokernel is the cokernel ([[T-DEFRAPL]]).
+So $f^{-1}$ preserves direct sums and cokernels, and $f_*$ preserves products, kernels, and fibre products ([[T-DEFRAPL]]).
+The right adjoint need not preserve coproducts: a direct sum of pushforwards need not be the pushforward of the direct sum, since a coproduct is not a limit ([[T-DEFRAPL]]).
 
 ## Exactness of the two functors
 
