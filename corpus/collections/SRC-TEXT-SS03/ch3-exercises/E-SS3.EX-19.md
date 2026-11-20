@@ -28,6 +28,8 @@ $$
 :::
 
 ::: {.solution}
+The statement is Exercise 19 of [@SS03, ch. 3 (p. 106)], printed beginning "Prove the maximum principle for harmonic functions".
+
 (a) Let $u$ be harmonic and suppose it has a local maximum at $z_0$. On a small disc $D$ about $z_0$, choose a harmonic conjugate $v$, so that
 $$
 F=u+iv
