@@ -39,11 +39,15 @@ This is the two displays above read at a circle $\abs z=\rho$ enclosing every $z
 :::
 
 ::: {.corollary}
-Let $f$ be holomorphic on $\{z : \abs z>R\}$ and suppose $f(z)=a_{-1}z^{-1}+O(z^{-2})$ as $\abs z\to\infty$ — in particular this holds when $f(z)\to0$ and $zf(z)$ has a limit there.
-Then
+Let $f$ be holomorphic on $\{z : \abs z>R\}$ and suppose $f(z)\to0$ as $\abs z\to\infty$.
+Then $\lim_{\abs z\to\infty} zf(z)$ exists and
 $$
-\Res_{z=\infty}f = -a_{-1} = -\lim_{\abs z\to\infty} zf(z).
+\Res_{z=\infty}f = -\lim_{\abs z\to\infty} zf(z).
 $$
+:::
+
+::: {.remark}
+Vanishing at infinity removes the nonnegative powers from the Laurent expansion on $\abs z>R$, so $zf(z)=a_{-1}+O(1/z)$ there and the limit is $a_{-1}$; the sign is the one the theorem above gives.
 :::
 
 ::: {.remark}
