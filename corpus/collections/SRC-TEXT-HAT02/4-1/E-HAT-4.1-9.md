@@ -17,6 +17,31 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
+    #161, the acceptance's second clause, sentence by sentence. The clause is read as the card's own
+    claim, and QUAL-11 governs the record: each of the six sentences below stands in a dated event as
+    what that session found on its day and is not edited, and each is named here with the step of the
+    present solution that supersedes it. (1) The third pass of 2026-11-16, "the surjectivity half is
+    open there", of the window centred at $\pi_2(X,A,x_0)$: superseded by that window's coset lemma,
+    the paragraph opening "The surjectivity half needs a fact about the boundary map that the abstract
+    five-lemma does not see", together with the paragraph opening "Now let $c'\in\pi_2(Y,C)$", which
+    closes the window with $c'=\gamma(g(b)a)$. (2) The same event, "Printed part (b) remains unproved
+    at the two $\pi_1$ pointed-set windows": superseded by the *Surjectivity* paragraphs of the
+    windows centred at $\pi_1(A,B,x_0)$ and at $\pi_1(X,B,x_0)$, which lift a relative $2$-disk and a
+    reversed starting edge respectively. (3) The third pass continued of 2026-11-16, "neither
+    direction of the exercise's claim is proved": superseded by the *Injectivity* and *Surjectivity*
+    paragraphs of both those windows, four arguments in all. (4) The fourth pass of 2026-11-16,
+    "remain unproved as claims": superseded by the same four arguments. (5) The fifth pass of
+    2026-11-16, "their surjectivity halves are not proved": superseded by the two *Surjectivity*
+    paragraphs. (6) The sixth pass of 2026-11-16, "The surjectivity halves remain unproved":
+    superseded by the same two. The prose of the solution and of the remark asserts no open half at
+    any window, and the four set-valued windows of the triple ladder are proved in both directions.
+    Checked: each of the six phrases against the event that carries it, and each superseding step
+    against the solution's own heading for it. Not checked: the Lean declarations linked on the card
+    were not re-elaborated.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
     #161, the 2026-11-20 reader's report, the two items that name a line of the proof. (1) The
     converse of the coset lemma justified $q(\alpha')=q(\alpha)$ for $\alpha'=\beta\cdot\alpha$ by
     calling $\beta\cdot\alpha$ and $\alpha$ homotopic rel endpoints in $A$; that is false, and the
