@@ -39,9 +39,9 @@ So $\sheafhom(\mcf,\mcg)$ exists with no sheafification, its sections over $U$ a
 [[D-VJFAP]]
 
 Sheafification can be described without the axiom: turn each stalk into a point over the point it came from, topologise the disjoint union so that every germ has a neighbourhood of germs of one section, and the continuous sections of the resulting local homeomorphism are the sheaf.
-In that description a morphism of sheaves is a continuous map of the étale spaces over $X$, and injective, surjective, and bijective on stalks become injective, surjective, and bijective on the étale spaces — which is the geometric form of the stalk criterion above.
+In that description a morphism of sheaves is a continuous map of the étale spaces over $X$, and injective, surjective, and bijective on stalks become injective, surjective, and bijective on the étale spaces — which is the geometric form of [[PR-C9ZEK|the stalk criterion]].
 
 ## Where a morphism that is onto fails to split
 
-A surjection of sheaves of $\OO_X$-modules is onto on every stalk and need not be onto on the sections over $X$: the exponential above is the example, and on an affine scheme the failure disappears for quasicoherent sheaves.
+A surjection of sheaves of $\OO_X$-modules is onto on every stalk and need not be onto on the sections over $X$: the [[FE-DNTT6|exponential]] is the example, and on an affine scheme the failure disappears for quasicoherent sheaves.
 Splitting is a separate condition, and it is what $\Ext^1$ measures: the extensions of $\mcf$ by $\mcg$ are in bijection with $\Ext^1(\mcg,\mcf)$, with the split extension as the zero class, so a surjection splits exactly when its class vanishes ([[D-DEFEXT]]).
