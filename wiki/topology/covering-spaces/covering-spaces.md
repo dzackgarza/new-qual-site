@@ -66,7 +66,7 @@ S^1
 \end{tikzcd}
 
 \begin{tikzcd}
- \ZZ^{\times n}
+ \ZZ^n
   \ar[r] 
 & 
 \hat{T}^n =\RR^n
@@ -152,15 +152,15 @@ For $n\geq 2$, the universal cover of $\RP^n$ is $S^n$, a two-sheeted cover whos
 :::
 
 ::: {.example title="The torus $S^1 \cross S^1$"}
-The universal cover of $T = S^1 \cross S^1$ is $\RR \cross \RR\to T$, $(s,t)\mapsto(e^{2\pi i s},e^{2\pi i t})$.
-The fiber over the base point is the integer lattice $\ZZ \cross \ZZ$, and $\Deck(\RR^2\to T)\cong\ZZ\cross\ZZ\cong \pi_1(T)$ acts by translations.
+The universal cover of $T^2 = S^1 \cross S^1$ is $\RR \cross \RR\to T^2$, $(s,t)\mapsto(e^{2\pi i s},e^{2\pi i t})$.
+The fiber over the base point is the integer lattice $\ZZ^2$, and $\Deck(\RR^2\to T^2)\cong\ZZ^2\cong \pi_1(T^2)$ acts by translations.
 
 :::
 
 [[PR-BXAA5]]
 
 ::: {.example title="Wedge of circles"}
-The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen's theorem, and the universal cover is the $4$-valent Cayley graph of $\ZZ\ast\ZZ$:
+The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ [[PR-3APOT|by the wedge formula]], and the universal cover is the $4$-valent Cayley graph of $\ZZ\ast\ZZ$:
 
 ![The universal cover of $S^1 \vee S^1$](/assets/figures/image_2021-01-10-13-19-32.png)
 
