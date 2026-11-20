@@ -55,7 +55,7 @@ $$
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 4, Exercise 7. Here $\Im\tau>0$, $k\geq2$ is an integer, $f(x)=(\tau+x)^{-k}$, and $\widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}\,dx$ is the Fourier transform in the normalization for which Poisson summation reads $\sum_{n\in\ZZ}f(n)=\sum_{m\in\ZZ}\widehat f(m)$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 4, Exercise 7. Here $\Im\tau>0$, $k\geq2$ is an integer, $f(x)=(\tau+x)^{-k}$, and $\widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}\,dx$ is the Fourier transform in the normalization for which Poisson summation reads $\sum_{n\in\ZZ}f(n)=\sum_{m\in\ZZ}\widehat f(m)$.
 
 ::: pf
 
