@@ -87,7 +87,7 @@ Further pages: [[complex-analysis/resources/index|resources]], the [[complex-ana
 
 - Maximum modulus principle and Schwarz's lemma: [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|maximum modulus]] and [[complex-analysis/conformal-maps/the-schwarz-lemma|the Schwarz lemma]].
 
-- Liouville's theorem and the fundamental theorem of algebra: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]] and [[complex-analysis/appendices/appendix-fta-proofs|proofs of the fundamental theorem]].
+- Liouville's theorem and the fundamental theorem of algebra: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]] and [[complex-analysis/appendices/appendix-fta-proofs|routes to the fundamental theorem]].
 
 - Residue theorem and applications: [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]].
 
