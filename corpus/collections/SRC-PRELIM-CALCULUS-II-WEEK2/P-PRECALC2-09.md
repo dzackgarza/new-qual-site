@@ -218,6 +218,11 @@ I
 $$
 
 
+that is,
+$$
+\boxed{\int_0^\infty\frac{\log t}{1+t^2}\,dt=0}.
+$$
+
 ::: pf-proof
 
 Substitute step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and rename the dummy variable $u$ as
@@ -227,29 +232,9 @@ $t$.
 
 :::
 
-::: {.pf-step #s1-8}
-
-Therefore
-$$
-\boxed{
-\int_0^\infty
-\frac{\log t}{1+t^2}\,dt
-=
-0}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-7){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} is the requested value.
+Step [](#s1-7){.pf-ref} is the requested value.
 
 :::
 
