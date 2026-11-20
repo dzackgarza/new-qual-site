@@ -23,6 +23,20 @@ audit:
     summability on closed discs, the standard product criterion, the zeros, and the bound $\abs{f}\le1$. No
     retained solution set covers this exercise (the collection retains the textbook, not a solutions manual),
     so the argument is the card's own; the identity for $1-b_{\alpha}$ was recomputed for this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The asterisk the print sets before "2." was read from the page image of printed p. 157 (PDF
+    p. 176), and the two parts were compared there with the printed words: (a) with the conjugate in
+    the denominator, which the text layer loses because the bar is a separate glyph, confirmed on
+    the image as an absolute value of a quotient bounded by $(1+r)/(1-r)$, and (b) with the
+    nonvanishing and the Blaschke condition. The argument was read and holds: the separate bounds
+    on numerator and denominator with monotonicity of $(1+t)/(1-\rho t)$, the identity for
+    $1-b_\alpha$ recomputed here, the summability of the majorant, the standard product criterion,
+    the zeros, and
+    $\abs{1-\overline\alpha z}^2-\abs{\alpha-z}^2=(1-\rho^2)(1-\abs z^2)$. Not checked: nothing
+    outstanding; the item carries no hint.
 ---
 
 ::: {.exercise}
@@ -53,6 +67,10 @@ $$
 
 converges uniformly for $\abs{z}\leq r<1$ and defines a holomorphic function on the unit disc with precisely the zeros $\alpha_n$.
 Show also that $\abs{f(z)}\leq 1$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 5, Problem 2, printed p. 157).
 :::
 
 ::: {.solution}
