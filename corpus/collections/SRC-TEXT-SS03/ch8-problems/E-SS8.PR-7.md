@@ -61,6 +61,20 @@ audit:
     theorem and the appeal to $\operatorname{int}(\overline{K_0})$ are removed, and no other step
     depends on them. Not checked in this pass: steps s1--s4 and s6--s7 beyond step s4's
     $F'(0)=L>0$, which the new argument uses.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The Hurwitz repair of this step, recorded above, did not close the gap, and is replaced on a
+    referee's report of this session. Hurwitz's theorem gives zero-freeness on compact subsets of
+    $K_0$, not on $K_0$ itself, and the zeros $F_n^{-1}(w)$ are confined only to
+    $K_0\cap\overline{D(0,\abs w)}$, whose closure meets $\partial K_0$; they can escape to the
+    boundary, as the disc automorphisms $(z-p_n)/(1-\overline{p_n}z)$ with $p_n\to\partial\DD$ show.
+    The step now works on the decreasing domains $U_n=F_n^{-1}(D(0,\rho'))$, whose closures lie in
+    the fixed compact $\overline{U_N}\subseteq K_0$ by the expansion property, and transfers the zero
+    of $F_{n_j}-w$ to $F-w$ by Rouché's theorem on $\partial U_{n_j}$, where
+    $\abs{F_{n_j}-w}\ge\rho'-\rho>\abs{F-F_{n_j}}$. This is the printed hint's route, $r_{F(K_0)}\ge1$,
+    and it uses neither simple connectivity of $K_0$ nor $\operatorname{int}(\overline{K_0})$.
 
 ---
 
@@ -169,15 +183,37 @@ by Weierstrass's theorem on derivatives, using step [](#s3){.pf-ref}. In particu
 
 ::: {.pf-step #s5}
 
-Part (c), second part: $F(K_0)\supseteq\DD$, hence $F(K_0)=\DD$.
+Part (c), second part: every subsequential limit $F$ of step [](#s4){.pf-ref} satisfies $r_{F(K_0)}\ge1$, hence $F(K_0)=\DD$.
 
 ::: pf-proof
 
-Fix $\rho<1$. Since $r_{K_{n+1}}\to1$ by hypothesis, $D(0,\rho)\subseteq K_{n+1}=F_n(K_0)$ for all $n\ge N$. Hence for every $n\ge N$ and every $w\in D(0,\rho)$ the function $F_n-w$ has a zero in $K_0$, namely $F_n^{-1}(w)$.
+Let $F_{n_j}\to F$ be the subsequence of step [](#s4){.pf-ref}. Fix $\rho$ with $0<\rho<1$ and choose $\rho',\rho''$ with $\rho<\rho'<\rho''<1$. Since $r_{K_{n+1}}\to1$, there is $N$ such that $D(0,\rho'')\subseteq K_{n+1}$ for every $n\ge N$; for such $n$ put
+$$
+U_n:=F_n^{-1}\bigl(D(0,\rho')\bigr).
+$$
+Because $F_n:K_0\to K_{n+1}$ is a biholomorphism, $U_n$ is a domain and $F_n$ restricts to a biholomorphism of $U_n$ onto $D(0,\rho')$; hence $\partial U_n=F_n^{-1}(\{\abs\zeta=\rho'\})$ is an analytic Jordan curve on which $\abs{F_n}=\rho'$, and
+$$
+\overline{U_n}=F_n^{-1}\bigl(\overline{D(0,\rho')}\bigr)\subseteq F_n^{-1}\bigl(D(0,\rho'')\bigr)\subseteq K_0,
+$$
+so $\overline{U_n}$ is compact and lies in the open subset $F_n^{-1}(D(0,\rho''))$ of $K_0$.
 
-By step [](#s4){.pf-ref} the sequence $(F_n)$ converges to $F$ uniformly on compact subsets of $K_0$, and $F$ is not constant because $F'(0)=L>0$. Fix $w\in D(0,\rho)$ and suppose $F-w$ had no zero in $K_0$. Hurwitz's theorem, applied on the domain $K_0$ to the locally uniformly convergent sequence $F_n-w\to F-w$, then gives that $F_n-w$ is zero-free on $K_0$ for all sufficiently large $n$ — the limit being non-constant, hence not identically zero — and that contradicts the zeros found above. Therefore $F(w')=w$ for some $w'\in K_0$, that is $w\in F(K_0)$.
+The domains $U_n$ decrease in $n$. For $m<n$ the composite $f_n\circ\cdots\circ f_{m+1}:K_{m+1}\to K_{n+1}$ is an expansion, like any composite of expansions in step [](#s3){.pf-ref}, and $F_n=(f_n\circ\cdots\circ f_{m+1})\circ F_m$; since $F_m$ is injective with $F_m(0)=0$, so that $F_m(z)\ne0$ for $z\in K_0\setminus\{0\}$,
+$$
+\abs{F_n(z)}>\abs{F_m(z)},\qquad z\in K_0\setminus\{0\},
+$$
+which gives $U_n\subseteq U_m$. In particular $\overline{U_{n_j}}\subseteq\overline{U_N}$ for every $j$ with $n_j\ge N$, and $\overline{U_N}$ is a fixed compact subset of $K_0$.
 
-As $\rho<1$ was arbitrary, $\DD\subseteq F(K_0)$, and the reverse inclusion holds by step [](#s4){.pf-ref}.
+Fix $w$ with $\abs w<\rho$. By step [](#s4){.pf-ref} the subsequence converges to $F$ uniformly on the compact set $\overline{U_N}\subseteq K_0$, so $j$ can be chosen with $n_j\ge N$ and
+$$
+\sup_{z\in\overline{U_N}}\abs{F(z)-F_{n_j}(z)}<\rho'-\rho .
+$$
+For $z\in\partial U_{n_j}$ this gives, with $\abs{F_{n_j}(z)}=\rho'$,
+$$
+\abs{F_{n_j}(z)-w}\ge\abs{F_{n_j}(z)}-\abs w\ge\rho'-\rho>\abs{F(z)-F_{n_j}(z)} .
+$$
+The functions $F-w$ and $F_{n_j}-w$ are holomorphic on the open set $K_0$, which contains $\overline{U_{n_j}}$, so Rouché's theorem on the bounded domain $U_{n_j}$ — in the form that holomorphic $g,h$ on a neighbourhood of $\overline U$ with $\abs{g-h}<\abs h$ on $\partial U$ have equally many zeros in $U$ — gives that $F-w$ and $F_{n_j}-w$ have equally many zeros in $U_{n_j}$. The function $F_{n_j}-w$ has exactly one, at $F_{n_j}^{-1}(w)$, which lies in $U_{n_j}$ because $w\in D(0,\rho)\subseteq D(0,\rho')=F_{n_j}(U_{n_j})$ and $F_{n_j}$ is injective. Hence $F-w$ has a zero in $U_{n_j}\subseteq K_0$, that is, $w\in F(K_0)$.
+
+Since $\rho<1$ was arbitrary, $D(0,\rho)\subseteq F(K_0)$ for every $\rho<1$, which is $r_{F(K_0)}\ge1$. The reverse inclusion $F(K_0)\subseteq\DD$ holds because $F$ takes its values in $\DD$, so $F(K_0)=\DD$.
 
 :::
 
