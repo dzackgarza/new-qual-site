@@ -11605,3 +11605,15 @@ The same page's ST.1 opens "Use the SF package to compute the two scalar product
 **Repair.** `P-APASP08I` keeps the statement as the paper prints it. The SageMath session of the earlier repair is removed from the solution, with the step that presented it as the check of part (a): the examination is written without a computer, the answer to the problem is the expansion constructed in step `#table` and interpreted in part (b) at step `#interpretation`, and part (a)'s package check is a software errand outside an exam answer, which the solution now records in one sentence. No software is run in its place, and the card no longer names any system as the SF package. The earlier events that describe the removed run stand as written (`QUAL-11`); a dated event of this day appends the correction.
 
 **Status of the reader's row.** It is not closed by a computation on this card, and it should not be: ST.4(a) asks for a software check, which the exam does not ask the candidate to write out, and no run of Stembridge's SF package exists on this system. What the card owes is the mathematics of ST.4 — the six-term Littlewood--Richardson expansion and the representation-theoretic reading of its coefficients — and that is what it carries.
+
+## 2026-11-20 (#177): Munkres's divergence theorem prints "vector field", and §30 makes that of class $C^\infty$
+
+**Object and need.** `T-DIVTHM` (the divergence theorem) cites Munkres, *Analysis on Manifolds*, Theorem 38.8. The #177 verdict at `2a469975a3` (comment 7046046834) called the card NOT MET because $G$ is a "vector field" with no differentiability hypothesis while the conclusion uses $\operatorname{div}G$, and attributed to the cited theorem the word "$C^1$".
+
+**Observed evidence.** Read in `tmp/sources/munkres-1991-analysis-on-manifolds.md`. Theorem 38.8 reads: "Let $M$ be a compact $n$-manifold in $R^n$. Let $N$ be the unit normal vector field to $\partial M$ that points outwards from $M$. If $G$ is a vector field defined in an open set of $R^n$ containing $M$, then ..." — no regularity class is written in the statement. The class comes from the standing convention of §30, "Henceforth, we restrict ourselves to manifolds, maps, vector fields, and forms that are of class $C^\infty$", recalled at the head of the Stokes' theorem chapter. The printed hypothesis is therefore $C^\infty$, not $C^1$: the verdict's $C^1$ is not what the book prints, while its underlying objection — that differentiability is needed and unstated — is correct.
+
+**Impact and owner.** `T-DIVTHM` now states $G$ as a $C^1$ vector field and records that the source's hypothesis is $C^\infty$ under that convention, so the card's hypothesis is the weaker of the two. A later reader comparing the verdict's wording with the book should not delete $C^1$ from the card, and should not read "$C^1$" back into Theorem 38.8.
+
+**Uncertainty.** The extraction has no page images, so the convention is read as text, not from a render. Not checked: whether any later theorem of Munkres's §38 relaxes the convention to $C^1$.
+
+**Repair.** `T-DIVTHM`, in the commit that carries this record, under issue #177.
