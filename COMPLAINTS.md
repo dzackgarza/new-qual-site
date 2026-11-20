@@ -10692,3 +10692,40 @@ path-connectedness under the hypothesis it names.
 **Checks.** `qualc.authoring check` on each of the eleven cards touched. No whole-corpus gate was run in this
 turn. The ten locator commits reached `main` through a sibling push; all are ancestors of the remote tip
 `dc47ffe33d`, checked with `git merge-base --is-ancestor` after a fetch.
+
+## 2026-11-20, #179: `T-JTRUDI` and `T-FROBCH` written from Fulton--Harris; the other five cards' locator state re-derived
+
+**Written, cited by numbered statement.** `T-JTRUDI` [@FH91, (A.5)] and `T-FROBCH` [@FH91, (A.27), Lemma
+A.28 and Proposition 4.37]. Neither was briefed as a Fulton--Harris card; both were briefed to wait on
+Macdonald, which is absent from `tmp/sources` and from `assets/attachments`, so the briefed locator was
+searched for and not found. What the text actually holds:
+(A.5) states $S_\lambda=|H_{\lambda_i+j-i}|$ and is named the Jacobi--Trudy identity in the sentence
+introducing it, and the remark after it — that when $\lambda_{p+1}=\cdots=\lambda_k=0$ the determinant is
+that of the upper-left $p\times p$ corner — is the card's independence of $n$. The card's convention
+$h_k=0$ for $k<0$ is the one (A.34) and (A.35) use.
+For `T-FROBCH`: (A.27) expands $P^{(\mathbf i)}=p_1^{i_1}\cdots p_d^{i_d}$ as $\sum_\lambda\omega_\lambda(\mathbf i)S_\lambda$;
+Lemma A.28 gives $\sum_{\mathbf i}\frac1{z_{\mathbf i}}\omega_\lambda(\mathbf i)\omega_\mu(\mathbf i)=\delta_{\lambda\mu}$
+with $z_{\mathbf i}=1^{i_1}i_1!\cdots d^{i_d}i_d!$, which is the isometry because $\abs{C_{\mathbf i}}=n!/z_{\mathbf i}$;
+and Proposition 4.37, $\chi_\lambda(C_{\mathbf i})=\omega_\lambda(\mathbf i)$, carries $\chi^\lambda$ to $s_\lambda$.
+The name "Frobenius characteristic" is not in the book: the content is those three statements, and the card's
+locator sentence names them rather than a name the source does not use.
+
+**Tested and rejected as substitutes.** Hungerford's only "Dickson" is the division-ring theorem that two
+algebraic elements with the same minimal polynomial are conjugate, not the monomial-ideal lemma; Fulton--Harris'
+"ring of invariants" is $\ZZ[\Lambda]^{\mathfrak W}$ for a Weyl group, not the definition of $k[V]^G$ for a
+finite matrix group. Neither supports `T-DICKSN` or `D-INVRING`.
+
+**Still waiting on the orchestrator.** `T-DICKSN`, `D-INVRING` and `T-NOETHD` are all held only by the absent
+Zotero entry for Cox--Little--O'Shea, *Ideals, Varieties, and Algorithms*, 3rd ed., and one entry unblocks all
+three: ch. 2 §4 **Theorem 5** (Dickson's Lemma, verified verbatim in the text), ch. 7 §2 **Definition 7** (the
+ring of invariants), and ch. 7 §3 **Theorem 5**, which is Noether's bound —
+$k[x_1,\dots,x_n]^G=k[R_G(x^\beta):\abs\beta\leq\abs G]$, so the generators have degree at most $\abs G$.
+The third needs a caveat when it is cited: the book works over a field of characteristic zero throughout
+ch. 7 §3, while the card's hypothesis is that $\abs G!$ is invertible, so a locator sentence must not present
+the book's hypothesis as the card's.
+`T-MOLIEN` has no source on the machine: the book mentions Molien's theorem only to point at Benson--Grove
+ch. 7 and Sturmfels ch. 2, and neither is present. `T-GELFND` has none either: the string "spectral radius"
+does not occur in any of the 654 files in `tmp/sources`.
+
+**Checks.** `qualc.authoring check` on both cards, each green; the key `FH91` is in
+`vocabularies/references.yaml`. No whole-corpus `qualc check` was run in this turn.

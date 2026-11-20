@@ -21,4 +21,6 @@ $$
 s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq n},
 $$
 the right-hand side being independent of $n\geq\ell(\lambda)$.
+
+This is [@FH91, (A.5)].
 :::

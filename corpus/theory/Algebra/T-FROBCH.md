@@ -24,4 +24,6 @@ $$
 $$
 where $m_i$ is the number of parts of $\lambda$ equal to $i$ and $C_\lambda$ the class of cycle type $\lambda$.
 It is an isometry from $\mathrm{Cl}(S_n)$ with the inner product $\frac{1}{n!}\sum_{g\in S_n}\chi(g)\overline{\psi(g)}$, and it sends the irreducible character $\chi^\lambda$ to $s_\lambda$.
+
+This is [@FH91, (A.27), Lemma A.28 and Proposition 4.37].
 :::
