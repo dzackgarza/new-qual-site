@@ -390,6 +390,21 @@ audit:
     steps s4, s7 and s12, read in earlier rounds; and the printed exercise's part
     (d) beyond step s7.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The erratum of the event of 2026-10-29 is given the book's own numbered
+    statement, on the four-finding pass of issue #168: a tacnode is defined in
+    Hartshorne's Exercise I.5.14(d), where a double point analytically
+    isomorphic to the curve y^2=x^4 is called a tacnode, so a tacnode is a
+    point of multiplicity two with delta = 1. The point of the dual curve
+    carried by a line of four-fold contact has multiplicity three and delta = 3,
+    by step [](#s11) of this card, so it is not one, and the printed
+    parenthetical of part (h) naming it a tacnode is false. The card's statement
+    keeps the corrected form and no step changes. No other part of the exercise
+    was re-read in this pass.
+
 review: draft
 ---
 
