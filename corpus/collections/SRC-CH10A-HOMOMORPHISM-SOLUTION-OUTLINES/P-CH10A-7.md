@@ -31,7 +31,7 @@ If $\phi$ is a homomorphism from $G$ to $H$ and $\sigma$ is a homomorphism from 
 
 ::: {.solution}
 
-The argument is that of the retained solution outline for Chapter 10, Part A, Exercise 7, PDF pp. 1-2 of `assets/attachments/Ch10PtASltns.pdf`, restructured into numbered steps, with the exact description of $\ker(\sigma\phi)$ supplied: the outline records only the inclusion and the remark that more elements of $H$ could map to the identity.
+The argument is that of the retained solution outline for Chapter 10, Part A, Exercise 7, in `assets/attachments/Ch10PtASltns.pdf`, restructured into numbered steps, with the exact description of $\ker(\sigma\phi)$ supplied: the outline records only the inclusion and the remark that more elements of $H$ could map to the identity.
 
 ::: pf
 
