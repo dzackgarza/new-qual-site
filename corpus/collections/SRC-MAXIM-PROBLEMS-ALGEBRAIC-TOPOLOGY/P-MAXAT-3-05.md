@@ -36,7 +36,7 @@ Find the ring structure on $H^{*}(SU(n))$, $H^{*}(U(n))$, $H^{*}(V_{k}(\CC^{n}))
 
 ::: {.solution}
 
-The printed source states this problem twice: as Problem 3.5 in the section "Cohomology ring" and verbatim again as Problem 4.1 in the section "Spectral Sequences and Applications", both on printed p. 2 of `assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf`. This card answers the first printing, by the cellular and fibration computation that section asks for; the second printing has its own card, `P-MAXAT-4-01`, whose statement is identical because the source's is. The two cards therefore share a body by design, and the corpus audit's `duplicate-bodies` violation on that pair is this duplication, not a transcription error.
+The printed source states this problem twice: as Problem 3.5 in the section "Cohomology ring" and verbatim again as Problem 4.1 in the section "Spectral Sequences and Applications", both in `assets/attachments/Problems_in_Algebraic_Topology_-_Unknown.pdf`. This card answers the first printing, by the cellular and fibration computation that section asks for; the second printing has its own card, `P-MAXAT-4-01`, whose statement is identical because the source's is. The two cards therefore share a body by design, and the corpus audit's `duplicate-bodies` violation on that pair is this duplication, not a transcription error.
 
 All cohomology groups are taken with integral coefficients. The rings are exterior algebras on odd-degree generators.
 
