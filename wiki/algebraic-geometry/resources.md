@@ -126,8 +126,6 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 
 - [Oprea, UC San Diego Math 145 (Spring 2008)](https://mathweb.ucsd.edu/~doprea/145s08/): course page.
 
-- [Osserman, UC Davis Math 248A and 248B](https://www.math.ucdavis.edu/~osserman/classes/): course pages.
-
 ### Foundational texts: links to editions and scans
 
 - [Grothendieck, *Fondements de la géométrie algébrique* (FGA)](https://web.archive.org/web/20121109150626/http://www.math.jussieu.fr/~leila/grothendieckcircle/FGA.pdf): the collected Bourbaki exposés.
@@ -141,8 +139,6 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 - Serre, *Faisceaux algébriques cohérents* [@Ser55].
 
 ### Lecture notes
-
-- [Dolgachev, lecture notes](http://www.math.lsa.umich.edu/~idolga/lecturenotes.html), including [*Classical Algebraic Geometry*](http://www.math.lsa.umich.edu/~idolga/CAG.pdf)
 
 - [ETH Zürich, sheaf cohomology](https://metaphor.ethz.ch/x/2017/fs/401-4142-17L/ex/SheafCohomology.pdf)
 
@@ -162,13 +158,11 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 
 - MIT OpenCourseWare 18.726 [(Spring 2009)](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/lecture-notes/) and 18.725 [(Fall 2015)](https://ocw.mit.edu/courses/mathematics/18-725-algebraic-geometry-fall-2015/lecture-notes/) lecture notes
 
-- McKernan, UCSD Math 203A–C (2013–14) lectures: 203A lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_1.pdf) through [18](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_18.pdf), 203B lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_1.pdf) through [16](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_16.pdf), and 203C lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_1.pdf) through [23](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_23.pdf), each at `l_<n>.pdf` in the same directory
+- McKernan, UCSD Math 203A–C (2013–14) lectures: 203A lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_1.pdf) through [18](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_18.pdf), 203B lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_1.pdf) through [16](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_16.pdf), and 203C lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_1.pdf) through [23](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_23.pdf)
 
 ### Advanced topics
 
 - [MSRI summer school on toric varieties](https://www.msri.org/summer_schools/455)
-
-- [Harvard seminar on ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
 
 - [Hartshorne, deformation theory notes](https://math.berkeley.edu/~robin/math274root.pdf)
 
@@ -177,8 +171,6 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 - [Princeton learning seminar on the minimal model program](https://web.math.princeton.edu/~jmoraga/Learning-Seminar-MMP)
 
 ### Stacks and moduli
-
-- [Alper, University of Washington Math 582C](https://sites.math.washington.edu/~jarod/math582C.html): course page on stacks and moduli.
 
 - [Edidin, "What is a stack?"](http://www.ams.org/notices/200304/what-is.pdf)
 
@@ -200,11 +192,9 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 
 - [Cambridge Part III algebraic geometry exercises](https://www.maths.cam.ac.uk/postgrad/part-iii/files/misc/AlgebraicGeometryExercises.pdf)
 
-- [Feng, algebraic geometry problems](https://www.mit.edu/~fengt/AGProblems.pdf)
+- [MIT 18.726 (Spring 2009) problem sets](https://ocw.mit.edu/courses/18-726-algebraic-geometry-spring-2009/pages/assignments/)
 
-- MIT 18.726 (Spring 2009) problem sets [1](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/assignments/MIT18_726s09_pset01.pdf) through [12](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/assignments/MIT18_726s09_pset12.pdf), each at `MIT18_726s09_pset<nn>.pdf` in the same directory.
-
-- [MIT 18.721 (Fall 2021)](https://math.mit.edu/classes/18.721/Fall2021/index.html) problem sets 1 through 12, each as [`ProblemSet<n>.pdf`](https://math.mit.edu/classes/18.721/Fall2021/ProblemSet1.pdf) with its LaTeX source [`ProblemSet<n>.tex`](https://math.mit.edu/classes/18.721/Fall2021/ProblemSet1.tex).
+- [MIT 18.721 (Fall 2021)](https://math.mit.edu/classes/18.721/Fall2021/index.html) problem sets 1 through 12, with their LaTeX sources.
 
 - [Wisconsin Math 764 homeworks](https://hilbert.math.wisc.edu/wiki/index.php/Math_764_--_Algebraic_Geometry_II_--_Homeworks)
 
@@ -215,8 +205,6 @@ Solutions to I.1.1–1.7, IV.4.1 and IV.4.3 are on the course page cited at [@Bo
 - [Migliore, Notre Dame (Spring 2018), problem set 1 solutions](https://www3.nd.edu/~jmiglior/S2018%20PS1%20solutions.pdf)
 
 - [Tramel, Illinois Math 418 (Spring 2016), homework 12 solutions](https://faculty.math.illinois.edu/~rtramel/Math418Spring2016HW12Sol.pdf)
-
-- [Humboldt-Universität Berlin, solutions on schemes](http://didaktik1.mathematik.hu-berlin.de/files/solnsalgeom.pdf)
 
 ### Past examinations
 
