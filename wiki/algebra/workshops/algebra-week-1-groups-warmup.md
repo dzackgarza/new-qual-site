@@ -57,7 +57,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - cyclic $\implies$ abelian $\implies$ nilpotent $\implies$ solvable
 
-## The definitions the sheet uses
+## Homomorphisms, centralizers, normalizers, and commutators
 
 - Group homomorphisms, and the first isomorphism theorem they give: [[T-I5N43]]
 
