@@ -60,7 +60,7 @@ as $r \to 1$. Conclude that $F$ cannot be continued analytically past the unit d
 :::
 
 ::: {.remark}
-The book marks this problem with an asterisk (Chapter 2, Problem 2, printed p. 68).
+The book marks this problem with an asterisk (Chapter 2, Problem 2).
 :::
 
 ::: {.solution}
