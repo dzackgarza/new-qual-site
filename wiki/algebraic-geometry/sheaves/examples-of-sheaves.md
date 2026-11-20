@@ -23,7 +23,7 @@ On an irreducible space, and in particular on the underlying space of an irreduc
 
 [[D-SHFSKYSCRAPER]]
 
-Its stalk is $A$ at $p$ and $0$ at every other point, which is the whole of its local information: a skyscraper is determined by one group at one point.
+The skyscraper sheaf at $p$ with group $A$ has stalk $A$ at $p$ and $0$ at every other point, which is the whole of its local information: a skyscraper is determined by one group at one point.
 Every open cover of $X$ splits into the sets containing $p$, on which the sections are all of $A$, so the sheaf is flabby, and a flabby sheaf is acyclic for global sections ([[D-COHFLQ]]); hence $H^i(X,A_p)=0$ for $i>0$.
 On an affine scheme the skyscraper at a closed point is the quasicoherent sheaf attached to $A/\mfm$, so it is also the standard example of a quasicoherent sheaf whose support is a single point ([[D-UDIVH]]).
 
@@ -41,7 +41,7 @@ The sheaf of holomorphic functions is a proper subsheaf of the sheaf of continuo
 
 [[FE-AM5Z8]]
 
-The card above separates the two failures: the constant presheaf fails to glue on a disconnected open set, the presheaf of continuous functions modulo bounded ones is not determined by its local data, and the presheaf $U\mapsto\mcf(U)\tensor\mcg(U)$ has sections on the two standard charts of $\PP^1$ that agree on the overlap and glue nowhere.
+The example separates the two failures: the constant presheaf fails to glue on a disconnected open set, the presheaf of continuous functions modulo bounded ones is not determined by its local data, and the presheaf $U\mapsto\mcf(U)\tensor\mcg(U)$ has sections on the two standard charts of $\PP^1$ that agree on the overlap and glue nowhere.
 A presheaf is a sheaf exactly when both axioms hold, and sheafification repairs the gluing one ([[T-3VX80]]).
 
 ## Stalks do not determine a sheaf
