@@ -59,6 +59,21 @@ audit:
     Problem 3 was found. This search located no published set answering this Problem, and none is
     retained in this repository. Not checked: whether such a set exists outside what a web search
     reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance corrected: a published solution of this Problem was located, so the sentence saying
+    that none existed is replaced. The set is Wang Zirui, *Complete Solutions for Chapter 8*, in the
+    public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`, read at its
+    Problem 3 and checked against Chapter 8, Problem 3: Schwarz--Pick gives the contraction
+    $\abs{(f\circ\gamma)'}/(1-\abs{f\circ\gamma}^2)\le\abs{\gamma'}/(1-\abs{\gamma}^2)$, whose
+    integration and infimum over paths give distance contraction; a distance isometry has an
+    isotropic nonsingular real derivative, hence is holomorphic or antiholomorphic, and its image is
+    open and complete, hence all of the disc; and the distance is $\frac12\log\frac{1+\rho}{1-\rho}$
+    by the radial computation. Its text is an outline; the card's steps supply the differentiability
+    of the distance along a path, the metric differentiation, and the completeness argument. Not
+    checked: anything in the published document outside its Problem 3.
 ---
 
 ::: {.exercise}
@@ -121,7 +136,7 @@ The book marks this problem with an asterisk (Chapter 8, Problem 3).
 :::
 
 ::: {.solution}
-This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). No published solution set covers it: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the end-of-chapter Problems, and no other set was located, so the argument is the card's own; the Schwarz--Pick lemma in the infinitesimal form (Exercise 13 of the same chapter) is used as given.
+This is Stein--Shakarchi, Chapter 8, Problem 3, parts (a)--(e). A published solution of it is Wang Zirui, *Complete Solutions for Chapter 8* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`; checked against this Problem it carries the hyperbolic metric and distance on the disc, the contraction of the distance by Schwarz--Pick, the identification of the distance isometries with automorphisms or their conjugates, and the formula $d(z_1,z_2)=\frac12\log\frac{1+\rho(z_1,z_2)}{1-\rho(z_1,z_2)}$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records; the Schwarz--Pick lemma in the infinitesimal form (Exercise 13 of the same chapter) is used as given.
 
 ::: pf
 
