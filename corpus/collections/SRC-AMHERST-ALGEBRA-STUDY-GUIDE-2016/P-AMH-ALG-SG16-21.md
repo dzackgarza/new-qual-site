@@ -67,18 +67,6 @@ Thus any two elements of $R/I$ commute.
 
 :::
 
-::: pf-step
-Therefore
-$$
-\boxed{R/I\text{ is commutative}.}
-$$
-
-::: pf-proof
-This is exactly the conclusion of step [](#s1-2){.pf-ref}.
-:::
-
-:::
-
 :::
 
 :::
