@@ -41,6 +41,17 @@ audit:
     Murayama's selection stops at Chapter 4, dbFin has no chapter-7 page, and the Math StackExchange,
     GitHub and web searches of this pass found no other treatment of this series; they are recorded
     in the COMPLAINTS.md entry for §43--§50. The card keeps its own proof.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read. The limit is $x/(1-x)^2$; on a compact $K$ with $r=\max_K|x|<1$ the tail is
+    bounded by $\sum_{k>n}kr^k$, which tends to $0$, so the convergence is uniform on $K$ and the
+    limit is continuous there, continuity being local. Uniform convergence would give the
+    pointwise limit, and no $f_n$ is within any finite distance of $f$ near $1$, since
+    $f_n(x)\to n(n+1)/2$ while $f(x)\to+\infty$; under the bounded metric the distance is $1$.
+    Citation by number: §46 Exercise 3.
+
 ---
 
 ::: {.exercise}
