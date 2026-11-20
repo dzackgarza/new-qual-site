@@ -28,6 +28,26 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude
+  date: 2026-11-19
+  note: >-
+    A retained solution read at this exercise. Read Yang Pi-Yeh, Hartshorne
+    Solutions (9 June 2019), Solution 4.5.3, printed p. 95,
+    rendered as page images from
+    tmp/sources/lfwin-hartshorne-solutions.pdf, whose PDF page is the printed
+    page. Checked against the book: Hartshorne IV.5.3, whose printed page
+    the card's earlier events record; this pass did not reopen it, and the
+    comparison is against the statement the card carries. Recomputed the three counts: $2g-1=7$; $20-4=16$ for $h^0(Q,\OO_Q(3))$ and hence $15$ projectively, with $9+15-15=9$; and the rank-three symmetric matrices as a hypersurface in $\PP^9$, of dimension $8$, with $8+15-15=8$.
+    Not checked: Yang's Solutions outside printed p. 95; the
+    book's own page in this pass; and the printed book itself.
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    The card now carries a published-solution remark naming Yang Pi-Yeh's
+    Solution 4.5.3 at printed p. 95; it had none before. No
+    step, statement or hypothesis of the card changes.
 ---
 
 ::: {.problem}
@@ -390,4 +410,8 @@ with a unique $g^1_3$.
 
 :::
 
+:::
+
+::: {.remark title="Published solution"}
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 4.5.3, printed p. 95, gets all three dimensions. Hyperelliptic: $2g-1=7$ at $g=4$ by (5.5.5). Nonhyperelliptic: every such curve is a $(2,3)$ complete intersection $Q\cap F_3$ in $\PP^3$ and conversely by (5.2.2); the quadrics fill a $\PP^9$, and the cubics modulo those vanishing on $Q$ fill $\PP H^0(Q,\OO_Q(3))$ of dimension $20-4-1=15$, so the family has dimension $9+15$ and, quotiented by $\mathrm{PGL}_4$ of dimension $15$, dimension $9$. Unique trigonal: by (5.5.2) these are the $Q\cap F_3$ with $Q$ a quadric cone, i.e. a symmetric $4\times4$ matrix of rank $3$ up to scalar, a closed condition of dimension $10-1-1=8$, giving $8+15-15=8$. The three answers are the exercise's. The one notational slip is in the middle count: $h^0(Q,\OO_Q(3))=16$, and the printed $20-4-1=15$ has already projectivised by subtracting the scaling, so $\dim H^0$ and $\dim\PP H^0$ are used interchangeably in one line.
 :::
