@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $A$ be a commutative [[D-GURUB|ring]] and let $S\subseteq A$ be a subset with $1\in S$ that is closed under multiplication.
 On $A\times S$ put $(x,s)\sim(y,t)$ when $(xt-ys)u=0$ for some $u\in S$, and write $a/s$ for the class of $(a,s)$.
-The \dfn{localization of $A$ at $S$}, written $A\localize{S}$ or $S^{-1}A$, is the ring $(A\times S)/{\sim}$, and $a\mapsto a/1$ is a ring map $A\to A\localize{S}$ [Stacks, Tag 00CN; Stacks, Tag 00CO].
+The \dfn{localization of $A$ at $S$}, written $A\localize{S}$, is the ring $(A\times S)/{\sim}$, and $a\mapsto a/1$ is a ring map $A\to A\localize{S}$ [Stacks, Tag 00CN; Stacks, Tag 00CO].
 :::
 
 ::: {.proposition}
