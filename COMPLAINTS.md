@@ -10729,3 +10729,15 @@ does not occur in any of the 654 files in `tmp/sources`.
 
 **Checks.** `qualc.authoring check` on both cards, each green; the key `FH91` is in
 `vocabularies/references.yaml`. No whole-corpus `qualc check` was run in this turn.
+
+## 2026-11-20: the transitivity merge is withdrawn — the push gate refuses to delete the two cards' dated events
+
+**Object and need:** the record above, "the three transitivity cards are merged into `P-FHW1-02`", claimed the merge as commit `34d8e3eea7`. It was made with `--no-verify`, and the gate that the hook runs was not executed on it.
+
+**Observed evidence:** `./.venv/bin/python -m qualc.authoring check-range` over the range holding `34d8e3eea7` reports four refusals, one per event: `E-AMD-CY7I27YM`'s `solution-written` by gemini-3.7-flash of 2026-08-16 and by OpenAI GPT-5.6 Sol of 2026-09-09, and `P-MUABR`'s `solution-written` by Gemini 3.7 Flash of 2026-08-30 and by OpenAI GPT-5.6 Sol of 2026-09-09, each "was changed or deleted; a dated event records what that session found, so a correction is a new event dated 2026-11-20 (QUAL-11)".
+
+**Impact and owner:** the merge is withdrawn in `f5052a1cb0`: both cards are restored byte for byte from `34d8e3eea7^`, and so is `SRC-UNSORTED-ALGEBRA/index.md`, which keeps its intake order. Nothing on the public site changes with the withdrawal, because `wiki/algebra/fields/extensions.md` transcluded `P-FHW1-02` alone already (`927889f6f8`) and still does.
+
+**Uncertainty:** the two rules as they stand cannot both be met by a lane. `CARD-04` says the retired duplicate is deleted and keeps no alias; `QUAL-11` as `tools/qualc/authoring.py` enforces it refuses any commit that removes an audit event dated before the commit, and a deleted card has no file in which to hold the new record the rule asks for. One of them needs the owner's decision: either an exemption in the gate for a card retired as a duplicate, naming the survivor, or authorisation to delete a record.
+
+**Repair:** the withdrawal above, and this record. The duplicate itself stands open, and the page-level half of `#174`'s item is met: the theorem is transcluded once from `P-FHW1-02`.
