@@ -71,6 +71,20 @@ audit:
     assets/attachments. No search outside the checkout was made for this step. The mathematics of
     the card, including the two proved corrections to the printed statement and the statement that
     part (iii) is not proved here, is unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Re-read against the printed item, Appendix A, Problem 5 on printed p. 343 (PDF p. 362). Two
+    corrections to the first event above: its locator "PDF pages 359--363" is wider than the
+    section, which occupies PDF pp. 360--362 = printed pp. 341--343, since PDF p. 359 is printed
+    p. 340 and PDF p. 363 is the Appendix B title page; and nothing on the card recorded the
+    asterisk, which the remark below now does. The statement is the print's: the failure of $f_1$
+    off $z=0$, the generalised transformation law at $p/q$ with $pp'\equiv1\pmod q$ and the $24$th
+    root of unity $\omega_{p/q}$, the displayed contribution, and the closing sentence about the
+    exact formula. Not checked: the argument, whose open last sentence the third event records and
+    which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
@@ -87,6 +101,10 @@ $$
 c_{p/q}\frac{1}{2\pi\sqrt{2}}\frac{d}{dn}\Bigl[\frac{e^{\frac{K}{q}(n-\frac{1}{24})^{1/2}}}{(n-\frac{1}{24})^{1/2}}\Bigr]
 $$
 to the asymptotic formula for $p(n)$. When suitably modified, the resulting series, summed over all proper fractions $p/q$ in $[0,1)$, actually converges and gives an exact formula for $p(n)$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Appendix A, Problem 5, printed p. 343).
 :::
 
 ::: {.solution}
