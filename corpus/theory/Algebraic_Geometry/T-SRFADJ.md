@@ -35,6 +35,18 @@ $$
 $$
 :::
 
+::: {.proof}
+Apply [@Har77, II.8.20] to the Cartier divisor $C$ on $X$: it identifies the canonical sheaf of $C$ with the restriction of the adjunction sheaf,
+$$
+\omega_C\cong(\omega_X\otimes\OO_X(C))\restrict_C .
+$$
+The degree of $\omega_C$ is $2g(C)-2$ [@Har77, Example IV.1.3.3], and for a divisor $D$ meeting $C$ transversally the degree of $\OO_X(D)\restrict_C$ is the intersection number $C\cdot D$ [@Har77, Lemma V.1.3]. Taking $D=C+K_X$, which may be moved into transverse position by the definition of the intersection pairing through the very ample case [@Har77, the proof of Proposition V.1.1], gives
+$$
+2g(C)-2=\deg_C\bigl((\omega_X\otimes\OO_X(C))\restrict_C\bigr)=C\cdot(C+K_X).
+$$
+For a general effective divisor the same display is taken as the definition of its arithmetic genus $p_a(C)\coloneqq1+\tfrac12\,C\cdot(C+K_X)$; for a nonsingular $C$ it is the computation above, and it agrees with the arithmetic genus of a projective variety defined as $(-1)^r(P(0)-1)$ from the Hilbert polynomial [@Har77, Exercise I.7.2].
+:::
+
 ::: {.remark}
 Adjunction converts genus calculations on surfaces into intersection-number calculations.
 
