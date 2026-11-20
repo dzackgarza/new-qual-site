@@ -18,5 +18,7 @@ For $z,w\in\CC$ with $\operatorname{Re}z>0$ and $\operatorname{Re}w>0$, the \dfn
 $$
 B(z,w)\coloneqq\int_0^1 t^{z-1}(1-t)^{w-1}\dt,
 $$
+
+This is the function of [@SS03, ch. 6, §3, Exercise 7], defined there by $B(\alpha,\beta)=\int_0^1(1-t)^{\alpha-1}t^{\beta-1}\dd t$ for $\Re\alpha>0$ and $\Re\beta>0$, which is the same integral with the two exponents interchanged.
 where $t^{s}\coloneqq e^{s\log t}$ for $t>0$, with $\log$ the real natural logarithm.
 :::

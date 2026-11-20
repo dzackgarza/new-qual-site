@@ -18,6 +18,8 @@ review: draft
 ::: {.definition}
 Let $\Omega\subseteq\CC$ be a domain and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$.
 A point $a\in\bd\Omega$ is a \dfn{branch point} of $f$ if no holomorphic function on a punctured disc $\DD_r^*(a)$ agrees with $f$ on $\Omega\cap\DD_r^*(a)$.
+
+This is the condition studied in [@Ahl73, ch. 8, §1.6, Branch Points], which continues a branch of a global analytic function along the closed curves of a punctured disk and separates two cases: the continuation never returns to the initial branch, or there is a smallest $h$ with the return after $h$ turns. A single-valued holomorphic function on the punctured disk is exactly what rules both out, so the definition above is that section's dichotomy stated as a property of the point; the book attaches the name to the second case, where it writes the function in the local variable $\zeta=z^{1/h}$ and speaks of an algebraic singularity or branch point.
 :::
 
 ::: {.remark}
