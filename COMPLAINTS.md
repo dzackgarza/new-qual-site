@@ -10322,3 +10322,23 @@ numbered results each step cites: Lemma 4.10 (pp. 350-351), Theorem 4.8 and Exam
 
 No card in the fourteen needed a change in this pass; `4.1-15` is the one whose repair was made earlier and is
 re-checked here rather than re-repaired.
+
+## 2026-11-20: `git commit --amend -- <path>` on this clone amends whatever HEAD is, which may be another lane's commit
+
+**What happened.** A sentence inside the residue-8 entry above was corrected minutes after it was
+committed and before it was pushed, and the correction was made with
+`git commit --amend --no-edit -- COMPLAINTS.md`. By then another lane had committed in the same
+clone, so the amend attached the correction to *that* lane's commit (`89924abccb`, "E-H6CCW:
+reviewed; ...") rather than to the residue-8 entry. Nothing was lost: the tree carries the corrected
+sentence, and that commit's diff for `COMPLAINTS.md` is exactly the correction. But the correction to
+one record now rides in a commit whose subject is another lane's card, and the residue-8 commit
+`938f9b2494` still contains the sentence it corrects.
+
+**Why it happens.** Every lane shares one worktree and one index (QUAL-09 forbids worktrees here), so
+`HEAD` at the instant of an amend is whatever was last committed by anybody; `--no-edit` then keeps
+that commit's message. No lock is held across the read of `HEAD` and the amend.
+
+**What to do instead.** Treat `--amend` as unavailable in this clone, even for an unpushed commit:
+correct text with a *new* commit that says what it corrects, or, if the sentence is not yet
+committed, fix the file before committing. Pushed commits are never amended in any case, which is
+this file's own rule.
