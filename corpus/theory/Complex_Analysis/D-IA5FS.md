@@ -27,3 +27,11 @@ Let $f$ be as in the definition and let $z_0\in\Omega$ be a [[D-65VIK|zero of or
 Then $f'/f$ has a simple pole at $z_0$ with residue $m$ in the first case and $-m$ in the second.
 At every other point of $\Omega$, $f'/f$ is holomorphic.
 :::
+
+::: {.proposition}
+Let $f\in\CC(x)$ be a nonzero rational function and $p\in\CC$.
+Then the residue at $p$ of the logarithmic derivative is the valuation of $f$ at the prime ideal $\generators{x-p}\subseteq\CC[x]$:
+$$
+\Res_{z=p}\qty(d\log f) = v_p(f).
+$$
+:::
