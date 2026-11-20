@@ -10,7 +10,7 @@ classification:
   - Cubic Surfaces
   - Intersection Theory
 relations: []
-review: draft
+review: reviewed
 audit:
 - event: source-checked
   by: chatgpt
@@ -360,6 +360,48 @@ audit:
     from the printed hypotheses, with the two instances above. The statement,
     the steps and the card's own argument are unchanged; nothing moves from
     proved to open or the reverse.
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The two reductions that the sources state in one clause each and that the
+    2026-11-19 event of this card describes as proved, but that the steps
+    themselves still asserted, are now proved in the steps. In case-small,
+    b_2=b_3=b_4 at a maximiser with b_5+b_6=a and b_4<=a/3: if b_4<a/3 the
+    constraint b_2+...+b_6<=2a is slack because b_2+b_3+b_4<=3b_4<a and
+    b_5+b_6=a, so any of b_2,b_3 smaller than b_4 can be increased (raising
+    b_1 with b_2 when b_2<b_3), while at b_4=a/3 the bound b_2+b_3+b_4<=a is
+    tight only when the three are equal. In case-large, b_2+b_3+b_4=a at a
+    maximiser with b_5+b_6=a and b_4>=a/3: if t+u+v<a with t=b_2, u=b_3,
+    v=b_4, then either u<v and increasing u raises 2t^2+u^2, or u=v and t<v,
+    so increasing t does; the ordering and the constraints are preserved and
+    the sum of squares rises. These are the card's own; the sources give the
+    one-clause reasons. No statement, hypothesis or conclusion changes.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read the whole proof against Hartshorne V.4.10, printed p. 408, with
+    (4.13)(a) on printed p. 406, and against the two published arguments it
+    transcribes: answer 2476483 to Math StackExchange 2475661 (the maximiser
+    analysis of steps ordered-hypotheses to case-open) and NTU Algebraic
+    Geometry II, Chapter V Section 4 Exercise 10, printed p. 17 (the second
+    argument). Checked: the reordering and the two weak inequalities; the
+    strict-to-weak reduction; the four properties of a maximiser; the
+    case-small reduction b_2=b_3=b_4 and the endpoint values a^2, a^2 of
+    5v^2+(a-v)^2; the case-large reduction b_2+b_3+b_4=a, the interval
+    [a-2b_4,(a-b_4)/2], the two endpoint sums 7/4(a-b_4)^2+2b_4^2 and
+    2(a-2b_4)^2+3b_4^2+(a-b_4)^2, both at most a^2 on [a/3,a/2]; the case-open
+    substitution x=b_3-b_2, y=b_4-b_3, its polygon, four vertices and values
+    a^2, a^2, 24a^2/25, 15a^2/16; and the second argument's identity, its
+    replacement step, its endpoint values 2b_4b_5-2b_5^2 and 2b_4b_5-b_5^2,
+    and its downward quadratic in b_1 with the vertex at or left of the
+    midpoint. Found no error and changed no other step. The printed defects
+    named in the remark stand: answer 2476483 writes 4b_4^2 for 5b_4^2, NTU's
+    vertex term carries one factor of 2 too few, and Yang's Case II does not
+    follow; the card does not rest on any of them. Not checked: no source
+    outside these three and the book was read, and no Sage or Lean
+    computation was run for this event.
 ---
 
 ::: {.problem}
@@ -465,7 +507,11 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2=b_3=b_4$. Write $t=b_1=b_2$, $u=b_3$ and $v=b_4=b_5$, so that
+At such a maximiser $b_2=b_3=b_4$: if $b_4<a/3$, then $b_2+b_3+b_4\le3b_4<a$ and
+$b_5+b_6=a$, so the constraint $b_2+\cdots+b_6\le2a$ is slack, and any of
+$b_2,b_3$ smaller than $b_4$ can be increased (raising $b_1$ with $b_2$ when
+$b_2<b_3$), while at $b_4=a/3$ the bound $b_2+b_3+b_4\le3b_4=a$ is tight only
+when $b_2=b_3=b_4$. Write $t=b_1=b_2$, $u=b_3$ and $v=b_4=b_5$, so that
 $b_6=a-v$ and $0\le t\le u\le v\le a/3$. The second constraint is $t+u+v\le a$, and it is
 automatic on this range because $t+u\le2v\le a-v$; for fixed $v$ the function $2t^2+u^2$ is
 increasing in $t$ and in $u$ on $0\le t\le u\le v$, so its maximum there is at $t=u=v$. Hence
@@ -490,7 +536,10 @@ $$
 $$
 
 ::: pf-proof
-At such a maximiser $b_2+b_3+b_4=a$. If $t=b_2$, $u=b_3$ and $v=b_4=b_5$, then $b_6=a-v$, and the
+At such a maximiser $b_2+b_3+b_4=a$: if $t+u+v<a$ with $t=b_2$, $u=b_3$ and
+$v=b_4$, then either $u<v$ and increasing $u$ raises $2t^2+u^2$, or $u=v$ and
+$t<v$, so increasing $t$ does; in either case the ordering and the constraints
+are preserved and the sum of squares rises. If $t=b_2$, $u=b_3$ and $v=b_4=b_5$, then $b_6=a-v$, and the
 constraints are $0\le t\le u\le v$, $v\in[a/3,a/2]$ and $t+u+v\le a$. If $t+u+v<a$, then either
 $u<v$, and increasing $u$ preserves the ordering and raises $2t^2+u^2$, or $u=v$, and then $t<v$
 because $t+2v<a$, so increasing $t$ raises the sum; in neither case is the point a maximiser. Hence
