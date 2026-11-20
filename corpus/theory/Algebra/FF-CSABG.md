@@ -24,5 +24,5 @@ $$
 I^nM\cap N=I^{n-c}\qty{I^cM\cap N}.
 $$
 
-See [@AM18].
+See [@AM18, Proposition 10.9].
 :::
