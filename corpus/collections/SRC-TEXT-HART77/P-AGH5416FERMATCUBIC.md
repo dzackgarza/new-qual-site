@@ -720,7 +720,7 @@ The source's last step, unpacked: the action on the $27$ lines gives an injectio
 If $\operatorname{char}k=3$, the equation defines a nonreduced triple plane and the exercise's question has no smooth surface to ask it of.
 
 ::: pf-proof
-In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_0+x_1+x_2+x_3)^3$. Dolgachev and Duncan record this at the opening of Section 5, and in Section 1.3, where the Fermat cubic is named as the unique surface carrying an automorphism of class $3C$ and is said not to be reduced when $p=3$, the $3C$ stratum then being empty. Their Table 1, printed p. 4, gives the $3C$ row the group $3^3\rtimes\Sigma_4$ of order $648$ in characteristic not $2$ or $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$, and has no entry in characteristic $3$.
+In characteristic $3$ the Frobenius is additive, so $x_0^3+x_1^3+x_2^3+x_3^3=(x_0+x_1+x_2+x_3)^3$. Dolgachev and Duncan record this at the opening of Section 5, and in Section 1.3, where the Fermat cubic is named as the unique surface carrying an automorphism of class $3C$ and is said not to be reduced when $p=3$, the $3C$ stratum then being empty. Their Table 1 gives the $3C$ row the group $3^3\rtimes\Sigma_4$ of order $648$ in characteristic not $2$ or $3$ and $\operatorname{PSU}_4(2)$ of order $25920$ in characteristic $2$, and has no entry in characteristic $3$.
 :::
 
 :::
