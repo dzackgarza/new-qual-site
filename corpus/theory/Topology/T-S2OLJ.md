@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.theorem}
-Every continuous map $f\colon D^n \to D^n$ has a fixed point [@Hat02].
+Every continuous map $f\colon D^n \to D^n$ has a fixed point [@Hat02, Corollary 2.15].
 :::
