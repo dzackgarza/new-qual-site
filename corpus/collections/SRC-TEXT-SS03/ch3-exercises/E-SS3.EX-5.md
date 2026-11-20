@@ -39,7 +39,7 @@ for all real $\xi$.
 :::
 
 ::: {.solution}
-The statement is Exercise 5 of [@SS03, ch. 3 (p. 103)], printed as $\int_{-\infty}^{\infty}\frac{e^{-2\pi ix\xi}}{(1+x^2)^2}\,dx=\frac{\pi}{2}(1+2\pi\abs{\xi})e^{-2\pi\abs{\xi}}$ for real $\xi$.
+The statement is Exercise 5 of [@SS03, ch. 3], printed as $\int_{-\infty}^{\infty}\frac{e^{-2\pi ix\xi}}{(1+x^2)^2}\,dx=\frac{\pi}{2}(1+2\pi\abs{\xi})e^{-2\pi\abs{\xi}}$ for real $\xi$.
 
 Write $I(\xi)$ for the integral. For $\xi>0$ the exponential decays in the lower half-plane, so the contour is closed there and the enclosed singularity is the double pole at $z=-i$; for $\xi<0$ the substitution $x\mapsto-x$ gives $I(\xi)=I(-\xi)$ at once. The estimate on the closing arc, the residue, and the cases $\xi>0$ and $\xi=0$ are separated below. The argument is this card's own: no retained solution set covers the exercises of Stein--Shakarchi. The two tools used are the residue theorem (Theorem 4.1 of Chapter 3) and the standard extension of the residue theorem to a rational function times an exponential on a semicircle, which is the estimate in step [](#arc){.pf-ref}.
 

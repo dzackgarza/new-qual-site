@@ -43,7 +43,7 @@ $$
 :::
 
 ::: {.solution}
-The statement is Exercise 9 of [@SS03, ch. 3 (p. 104)], printed as $\int_0^1\log(\sin\pi x)\,dx=-\log 2$, with the contour of its Figure 9.
+The statement is Exercise 9 of [@SS03, ch. 3], printed as $\int_0^1\log(\sin\pi x)\,dx=-\log 2$, with the contour of its Figure 9.
 
 No retained solution set covers this exercise; the argument is the card's own and does not follow the printed hint, which points at a contour in the book's Figure 9. Write $\log$ for the real logarithm.
 

@@ -36,7 +36,7 @@ Show that if $\epsilon$ is sufficiently small, then
 :::
 
 ::: {.solution}
-The statement is Exercise 16 of [@SS03, ch. 3 (p. 106)], printed for $f,g$ holomorphic in a region containing $\abs z\le1$ with $f$ having a simple zero at $0$ and none elsewhere in the disc, $f_\epsilon \coloneqq f+\epsilon g$: show that for small $\epsilon$ the perturbation has a unique zero there and that $\epsilon\mapsto z_\epsilon$ is continuous.
+The statement is Exercise 16 of [@SS03, ch. 3], printed for $f,g$ holomorphic in a region containing $\abs z\le1$ with $f$ having a simple zero at $0$ and none elsewhere in the disc, $f_\epsilon \coloneqq f+\epsilon g$: show that for small $\epsilon$ the perturbation has a unique zero there and that $\epsilon\mapsto z_\epsilon$ is continuous.
 
 No retained solution set covers this exercise; the collection retains the textbook (`assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`) and no solutions manual, so the argument is the card's own.
 

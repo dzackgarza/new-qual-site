@@ -30,7 +30,7 @@ Note. Two other derivations of this identity, using Fourier series, were given i
 :::
 
 ::: {.solution}
-The statement is Exercise 12 of [@SS03, ch. 3 (p. 105)], printed with the prescribed integrand $\pi\cot\pi z/(u+z)^2$ and the circles $\abs{z}=R_N=N+\tfrac12$.
+The statement is Exercise 12 of [@SS03, ch. 3], printed with the prescribed integrand $\pi\cot\pi z/(u+z)^2$ and the circles $\abs{z}=R_N=N+\tfrac12$.
 
 
 The argument is the card's own: the residues of $\pi\cot(\pi z)/(u+z)^{2}$ inside the circle give the sum minus the cotangent term, and the contour integral is bounded and tends to $0$.

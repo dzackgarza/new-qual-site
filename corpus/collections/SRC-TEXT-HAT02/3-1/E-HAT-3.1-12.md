@@ -94,7 +94,7 @@ The claim holds when $Y$ is finite-dimensional.
 ::: pf-proof
 
 $H^k(Y^m,Y^{m-1})\cong\widetilde H^k(Y^m/Y^{m-1})$ vanishes for $k\ne m$: the quotient is a wedge of $m$-spheres, so its cellular cochain complex has $G$ in degree $0$, one factor $G$ per sphere in degree $m$ and nothing else, and Theorem 3.5 gives $H^k=0$ for $0<k\ne m$ (and $\prod G$ for $k=m$).
-For $m>n$ and $k\le n$, the exact sequence of the pair (p.200)
+For $m>n$ and $k\le n$, the exact sequence of the pair (Theorem 2.13)
 $$
 H^k(Y^m,Y^{m-1})\to\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})
 $$
@@ -111,7 +111,7 @@ $\widetilde H^k(Z)=0$ for $k\le n$.
 
 ::: pf-proof
 
-$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so in the sequence of the pair (p.200) the last term of $H^k(Z,R)\to\widetilde H^k(Z)\to\widetilde H^k(R)=0$ vanishes and $\widetilde H^k(Z)$ is a quotient of $H^k(Z,R)$. Proposition 2.22 gives $H^k(Z,R)\cong\widetilde H^k(Z/R)$, and the quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}. Hence $\widetilde H^k(Z)=0$.
+$R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so in the sequence of the pair (Theorem 2.13) the last term of $H^k(Z,R)\to\widetilde H^k(Z)\to\widetilde H^k(R)=0$ vanishes and $\widetilde H^k(Z)$ is a quotient of $H^k(Z,R)$. Proposition 2.22 gives $H^k(Z,R)\cong\widetilde H^k(Z/R)$, and the quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}. Hence $\widetilde H^k(Z)=0$.
 
 :::
 

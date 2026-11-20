@@ -60,7 +60,7 @@ Compute the homology groups of the following 2 complexes:
 :::
 
 ::: {.solution}
-The four spaces are computed separately, each with the cellular chain complex of a CW structure and Theorem 2.35 (Hatcher p. 139), which identifies cellular and singular homology.
+The four spaces are computed separately, each with the cellular chain complex of a CW structure and Theorem 2.35, which identifies cellular and singular homology.
 
 ::: pf
 

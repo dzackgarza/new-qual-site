@@ -37,7 +37,7 @@ Prove that all entire functions that are also injective take the form $f(z) = az
 :::
 
 ::: {.solution}
-The statement is Exercise 14 of [@SS03, ch. 3 (p. 105)], printed with its hint to apply the Casorati--Weierstrass theorem to $f(1/z)$.
+The statement is Exercise 14 of [@SS03, ch. 3], printed with its hint to apply the Casorati--Weierstrass theorem to $f(1/z)$.
 
 The argument is the card's own; no retained solution set is cited on the card, and none was located for this exercise among the retained sets. It is checked against Stein and Shakarchi, Complex Analysis (2003), Chapter 3 Exercise 14, and follows the hint to apply Casorati--Weierstrass to $f(1/z)$.
 
