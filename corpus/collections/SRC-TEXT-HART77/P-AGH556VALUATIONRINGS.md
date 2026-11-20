@@ -293,6 +293,55 @@ audit:
     read in this pass: Lemma 12's proof entire, whose opening was read only as
     far as the insertion of intermediate quadratic transforms, and
     Proposition 3, printed pp. 336--337, was not re-opened.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168, all nine steps of the pf block, including the five that
+    no event above re-derived: successive-centers-on-blowups,
+    union-contained-in-r, element-eventually-regular,
+    r-equals-union-type-three and trichotomy-established.
+
+    successive-centers-on-blowups: the blowup of a nonsingular projective
+    surface at a closed point is one, so the centre x_{i+1} exists and is
+    unique; the two maps Spec R to X_i agree on the generic point, so x_{i+1}
+    maps to x_i; and the fibre of the blowup over x_i is the exceptional curve,
+    so x_{i+1} lies on it. union-contained-in-r: A_i is contained in R because R
+    dominates it, and A_i is contained in A_{i+1} because x_{i+1} lies above x_i
+    and the two are local rings of one function field.
+    element-eventually-regular: read line by line against the printed hint. A
+    blowup of the resolution of [f:1] that misses the centre y_{j-1} leaves the
+    local ring at the centre unchanged, and one at y_{j-1} is the blowup of A_i
+    at its maximal ideal along v, so it advances A_i to A_{i+1}; hence
+    O_{Y_m,y_m} is A_N for some N. The two morphisms Spec R to P^1, one from f
+    in R and one from the resolved map, agree on Spec K and hence everywhere,
+    P^1 being separated, so the closed point maps into A^1 and f is regular at
+    y_m. r-equals-union-type-three: the two inclusions, and the consequence that
+    R_0 is itself a valuation ring. trichotomy-established: on the exceptional
+    curve of a nonsingular surface every point is either a closed point or the
+    generic point of that curve, so the two cases are exhaustive, and the other
+    steps give the three kinds. The remaining four steps,
+    unique-center-exists, center-not-generic-point, codim-one-center-type-one and
+    divisorial-center-type-two, were re-read as well.
+
+    Correction to the two events of 2026-11-19 above, stated on Abhyankar's
+    numbered statements. Lemma 12 is indeed stated for a strictly ascending
+    sequence of two-dimensional regular local domains, and the sequence this card
+    uses for the third kind is such a sequence: each x_i is a closed point of the
+    nonsingular surface X_i, so O_{X_i,x_i} is two-dimensional, and that is
+    unaffected by the chain being infinite. The sentence of those events saying
+    that in the infinite closed-centre case the chain is not in general a chain
+    of two-dimensional rings is therefore withdrawn, and with it the reason there
+    given for Lemma 12 not closing the third kind. What Lemma 12 gives, once the
+    quadratic transform of Definition 3 is identified with the local ring of the
+    centre on the blowup, is that the union of the A_i is the valuation ring of a
+    valuation centred at every x_i and that every valuation centred at every x_i
+    equals it, which is R = R_0: a published proof of the third kind, resting on
+    Definition 3, Lemma 10 and Lemma 12. That identification is a two-chart
+    computation for a nonsingular surface and is no numbered statement of the
+    paper, and the card's own proof above does not use Lemma 12 and is unchanged
+    by this. Not checked: no source outside those named in the earlier events was
+    read, and the identification just mentioned was not written out in full.
 ---
 
 ::: {.problem}
