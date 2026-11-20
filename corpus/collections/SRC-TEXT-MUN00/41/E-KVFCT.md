@@ -75,6 +75,24 @@ audit:
     prod (c_i,d_i), and prove closure V inside prod [c_i,d_i] inside U by exhibiting, for a
     point y off prod [c_i,d_i], the box neighbourhood with i-th factor (y_i - 1, c_i) or
     (d_i, y_i + 1), which misses V. No other step of the card changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 correctness read, with the #184 citation repair and one hypothesis supplied.
+    Part (a) is right: the compact $K_n$ are covered by finitely many members of any open cover,
+    so the cover has a countable subcover; regularity gives $V_x$ with closure inside $U_x$; and
+    $W_n=U_n-\bigcup_{i<n}\overline{V_i}$ is open, covers $X$ at the least $i$ with
+    $x\in\overline{V_i}$, and is locally finite at $x$ through the first $V_m$ containing $x$.
+    Part (b): $K_{n,m}$ carries the finite product topology because its coordinates after the
+    $n$-th are fixed at $0$, so it is compact; $\RR^\infty$ is their countable union; and the
+    regularity step shrinks every coordinate, which is what the box topology needs. That step
+    proved only the closed-neighbourhood property, while regularity in the sense of §31 also
+    asks one-point sets to be closed: the step now records that $\RR^\infty$ is $T_1$ as a
+    subspace of the Hausdorff box product $\RR^\omega$. Citation by number: §41 Exercise 6, read
+    in `tmp/sources/munkres-2000-topology.md`; the earlier events' page locators are superseded,
+    their text kept as written (QUAL-11).
+
 ---
 
 ::: {.exercise}
@@ -168,7 +186,7 @@ A point of $\RR^\infty$ is a sequence that is zero from some index $n$ on, and i
 $\RR^\infty$ is regular.
 
 ::: pf-proof
-Let $x\in\RR^\infty$ and let $U$ be a neighbourhood of $x$ in $\RR^\infty$. Then $U$ contains a basic neighbourhood $\RR^\infty\cap\prod_iU_i$, where each $U_i$ is an open subset of $\RR$ containing $x_i$: a basic open set of the box topology is such a product, and infinitely many of its factors may be proper subsets of $\RR$, so every coordinate is treated below and no factor is assumed to be $\RR$. For each $i$ choose an open interval $(c_i,d_i)$ with $x_i\in(c_i,d_i)$ and $\closure{(c_i,d_i)}\subset U_i$, which is possible because $U_i$ is a neighbourhood of $x_i$ in $\RR$; put $V=\RR^\infty\cap\prod_i(c_i,d_i)$, which is open in $\RR^\infty$ and contains $x$. Then $\closure{V}\subset U$, by the chain $\closure{V}\subset\RR^\infty\cap\prod_i[c_i,d_i]\subset\RR^\infty\cap\prod_iU_i\subset U$: for the first inclusion, if $y\in\RR^\infty$ has $y_i\notin[c_i,d_i]$, say $y_i<c_i$ (the case $y_i>d_i$ is symmetric), then $\RR^\infty\cap\big(G\times\prod_{j\ne i}\RR\big)$ with $G=(y_i-1,c_i)$ is a neighbourhood of $y$ disjoint from $V$, because its $i$-th factor misses $(c_i,d_i)$. Hence every neighbourhood of every point of $\RR^\infty$ contains a closed neighbourhood, and $\RR^\infty$ is regular.
+Let $x\in\RR^\infty$ and let $U$ be a neighbourhood of $x$ in $\RR^\infty$. Then $U$ contains a basic neighbourhood $\RR^\infty\cap\prod_iU_i$, where each $U_i$ is an open subset of $\RR$ containing $x_i$: a basic open set of the box topology is such a product, and infinitely many of its factors may be proper subsets of $\RR$, so every coordinate is treated below and no factor is assumed to be $\RR$. For each $i$ choose an open interval $(c_i,d_i)$ with $x_i\in(c_i,d_i)$ and $\closure{(c_i,d_i)}\subset U_i$, which is possible because $U_i$ is a neighbourhood of $x_i$ in $\RR$; put $V=\RR^\infty\cap\prod_i(c_i,d_i)$, which is open in $\RR^\infty$ and contains $x$. Then $\closure{V}\subset U$, by the chain $\closure{V}\subset\RR^\infty\cap\prod_i[c_i,d_i]\subset\RR^\infty\cap\prod_iU_i\subset U$: for the first inclusion, if $y\in\RR^\infty$ has $y_i\notin[c_i,d_i]$, say $y_i<c_i$ (the case $y_i>d_i$ is symmetric), then $\RR^\infty\cap\big(G\times\prod_{j\ne i}\RR\big)$ with $G=(y_i-1,c_i)$ is a neighbourhood of $y$ disjoint from $V$, because its $i$-th factor misses $(c_i,d_i)$. Hence every neighbourhood of every point of $\RR^\infty$ contains a closed neighbourhood. The space is $T_1$, being a subspace of the Hausdorff space $\RR^\omega$ in the box topology --- two points differing in one coordinate are separated by boxes whose factors in that coordinate are disjoint intervals --- so with the closed-neighbourhood property just proved it is regular in the sense of §31.
 :::
 
 :::
