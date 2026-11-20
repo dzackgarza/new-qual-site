@@ -203,6 +203,11 @@ Thus $1/B+\ZZ$ has order $B$.
 
 Every finitely generated subgroup of $\QQ/\ZZ$ is cyclic.
 
+Hence the answer to part (b) is
+$$
+\boxed{\text{Yes.}}
+$$
+
 ::: pf-proof
 
 By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, $\bar H$ is a subgroup of a finite cyclic group.
@@ -212,24 +217,9 @@ Every subgroup of a cyclic group is cyclic. Hence $\bar H$ is cyclic.
 
 :::
 
-::: {.pf-step #s7}
-
-The answer to part (b) is
-$$
-\boxed{\text{Yes.}}
-$$
-
-::: pf-proof
-
-This is exactly step [](#s6){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} answers part (b).
+Step [](#s3){.pf-ref} proves part (a), and step [](#s6){.pf-ref} answers part (b).
 
 :::
 
