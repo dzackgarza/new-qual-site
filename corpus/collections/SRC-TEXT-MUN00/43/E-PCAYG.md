@@ -89,6 +89,16 @@ audit:
     contraction; the argument is the card's own, and no retained solution set covers the exercise.
     Citation by number: §43 Exercise 5, read in `tmp/sources/munkres-2000-topology.md`.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. The induction step
+    multiplied $d(x_{n+1},x_n)\le\alpha^nc$ by $\alpha$, which preserves the inequality only for
+    $\alpha\ge0$, while the exercise assumes only $\alpha<1$. The step now begins by noting that
+    $\alpha<0$ forces $d(f(x),f(y))<0$ for $x\ne y$, hence a space with at most one point, where
+    the claim is trivial, and then assumes $\alpha\ge0$. Nothing else changed.
+
 ---
 
 ::: {.exercise}
@@ -113,7 +123,7 @@ The argument is the card's own; no retained solution set is cited on it. This is
 With $x_{0}\in X$ arbitrary and $x_{n+1}=f(x_{n})$, one has $d(x_{n+1},x_{n})\le\alpha^{n}c$ for all $n\ge0$, where $c=d(x_{1},x_{0})$.
 
 ::: pf-proof
-For $n=0$ this reads $d(x_{1},x_{0})\le c$, an equality. If it holds for $n$, then $d(x_{n+2},x_{n+1})=d\big(f(x_{n+1}),f(x_{n})\big)\le\alpha\,d(x_{n+1},x_{n})\le\alpha^{n+1}c$; so it holds for all $n$ by induction.
+If $\alpha<0$ then $d(f(x),f(y))\le\alpha d(x,y)<0$ for every $x\ne y$, which is impossible, so in that case $X$ has at most one point and the claim is trivial; assume $\alpha\ge0$, which the multiplication by $\alpha$ below uses. For $n=0$ this reads $d(x_{1},x_{0})\le c$, an equality. If it holds for $n$, then $d(x_{n+2},x_{n+1})=d\big(f(x_{n+1}),f(x_{n})\big)\le\alpha\,d(x_{n+1},x_{n})\le\alpha^{n+1}c$; so it holds for all $n$ by induction.
 :::
 
 :::
