@@ -26,6 +26,19 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Part (b) asserted the three generators from Noether's bound and a Reynolds-operator
+    computation, which shows that they are invariants of degree at most four but not that
+    they generate. The solution now proves the generation: in the basis u = x+iy,
+    v = x-iy the generator acts by u -> iu and v -> -iv, a monomial u^a v^b is invariant
+    exactly when a = b mod 4, so the invariant ring is C[uv, u^4, v^4], which in x and y
+    is C[x^2+y^2, x^4-6x^2y^2+y^4, xy(x^2-y^2)] and equals C[x^2+y^2, x^2y^2, xy(x^2-y^2)].
+    Checked: the eigenvalues, the congruence, both inclusions of the last equality, the
+    card's schema and Markdown, and the Lamport numbering with tmp/lam.sh (steps through
+    2.5 with the QED). Not checked: no retained solution set exists for this paper.
 ---
 
 ::: {.problem}
@@ -42,7 +55,7 @@ and let $G$ be the cyclic subgroup of $\mathrm{GL}_2(\CC)$ of order $4$ generate
 
 ::: {.solution}
 
-The problem is Problem 8 of the Qualifying Exam in Applied Algebra of May 30, 2017, printed p. 8 of the nine-page paper retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: Molien's formula giving the Hilbert series $\frac{1+t^4}{(1-t^2)(1-t^4)}$, and the generating set $x^2+y^2$, $x^2y^2$, $xy(x^2-y^2)$
+The problem is Problem 8 of the Qualifying Exam in Applied Algebra of May 30, 2017, retained at `assets/attachments/APPLIED-ALGEBRA-EXAM.pdf`. The paper prints no solutions, so nothing below is transcribed: the argument is the card's own, and what it supplies is both parts: Molien's formula giving the Hilbert series $\frac{1+t^4}{(1-t^2)(1-t^4)}$, and the generating set $x^2+y^2$, $x^2y^2$, $xy(x^2-y^2)$
 
 
 ::: pf
@@ -85,7 +98,7 @@ $$
 $$
 
 ::: pf-proof
-Molien's Theorem for invariant rings of finite groups in characteristic 0.
+[[T-MOLIEN|Molien's formula]] for invariant rings of finite groups in characteristic $0$.
 :::
 
 :::
@@ -110,37 +123,50 @@ algebraic simplification.
 :::
 
 ::: {.pf-step #s2}
-Describe a finite set of algebra generators for $\CC[x, y]^G$:
+Describe a finite set of $\CC$-algebra generators for $\CC[x, y]^G$:
 
 ::: pf-proof
 
 ::: {.pf-step #s2-1}
-By Noether’s Degree Bound, the invariant ring of a finite group $G$ acting linearly on a polynomial ring over $\CC$ is generated as a $\CC$-algebra by invariants of degree at most $\cardinality{G} = 4$.
+By [[T-NOETHD|Noether's bound]], since $\cardinality{G}! = 24$ is invertible in $\CC$, the invariant ring is generated as a $\CC$-algebra by its invariants of degree at most $\cardinality{G} = 4$; this answers (b) with a finite set that need not be computed.
 
 ::: pf-proof
-Noether's Theorem on polynomial invariants of finite groups.
+Noether's bound requires $\cardinality{G}!$ invertible in the field and bounds the degree of a generating set by $\cardinality{G}$, both of which hold here.
 :::
 
 :::
 
-::: pf-step
-The group action on the variables is given by $A \cdot x = -y$ and $A \cdot y = x$.
+::: {.pf-step #s2-2}
+Let $u = x + iy$ and $v = x - iy$, so that $x = (u+v)/2$, $y = (u-v)/(2i)$ and $\CC[x,y] = \CC[u,v]$. Then $A\cdot u = iu$ and $A\cdot v = -iv$.
 
 ::: pf-proof
-dual representation $(A \cdot f)(v) = f(A^{-1} v)$.
+The change of variables is invertible because $2$ and $i$ are units of $\CC$. On the generators, $A\cdot u = A\cdot x + i\,A\cdot y = -y + ix = i(x+iy) = iu$, and $A\cdot v = A\cdot x - i\,A\cdot y = -y - ix = -i(x-iy) = -iv$.
 :::
 
 :::
 
 ::: {.pf-step #s2-3}
-Applying the Reynolds operator $\mathcal{R}(f) = \frac{1}{4} \sum_{g \in G} g \cdot f$ to monomials of degree $\le 4$ produces explicit generators:
-
-- Degree 2: $f_1 = x^2 + y^2$.
-
-- Degree 4: $f_2 = x^2 y^2$ (or $x^4 + y^4$), and $f_3 = x y (x^2 - y^2) = x^3 y - x y^3$.
+A monomial $u^av^b$ is fixed by $A$ if and only if $a\equiv b\pmod 4$, and the invariant monomials span $\CC[uv, u^4, v^4]$ over $\CC$.
 
 ::: pf-proof
-checking $A \cdot f_1 = (-y)^2 + x^2 = f_1$, $A \cdot f_2 = (-y)^2 x^2 = f_2$, and $A \cdot f_3 = (-y) x ((-y)^2 - x^2) = -xy(y^2 - x^2) = f_3$.
+By step [](#s2-2){.pf-ref}, $A\cdot u^av^b = i^a(-i)^b\,u^av^b = (-1)^b i^{a+b}\,u^av^b$, which equals $u^av^b$ exactly when $i^{a+b} = (-1)^b = i^{2b}$, that is, $a\equiv b\pmod 4$.
+
+If $a\equiv b\pmod 4$, write $a = b + 4j$. For $j\geq0$, $u^av^b = (u^4)^j(uv)^b$; for $j\leq0$, $u^av^b = (v^4)^{-j}(uv)^a$. So every invariant monomial lies in $\CC[uv,u^4,v^4]$, and $uv$, $u^4$ and $v^4$ are themselves fixed by $A$. Since the monomials $u^av^b$ are a basis of $\CC[u,v]$ on which $A$ acts by scalars, a polynomial is fixed by $G = \langle A\rangle$ exactly when it is a linear combination of invariant monomials.
+:::
+
+:::
+
+::: {.pf-step #s2-4}
+$\CC[x,y]^G = \CC[x^2+y^2,\ x^4-6x^2y^2+y^4,\ xy(x^2-y^2)] = \CC[x^2+y^2,\ x^2y^2,\ xy(x^2-y^2)]$.
+
+::: pf-proof
+Put $g_1 = uv$, $g_2 = u^4+v^4$ and $g_3 = u^4-v^4$. Then $\CC[uv,u^4,v^4] = \CC[g_1,g_2,g_3]$, because $u^4 = (g_2+g_3)/2$ and $v^4 = (g_2-g_3)/2$ and $2$ is a unit. Now $g_1 = uv = x^2+y^2$, while $u^2+v^2 = 2(x^2-y^2)$ and $u^2-v^2 = 4ixy$, so
+$$
+g_2 = (u^2+v^2)^2 - 2(uv)^2 = 2(x^4-6x^2y^2+y^4),\qquad g_3 = (u^2+v^2)(u^2-v^2) = 8ixy(x^2-y^2).
+$$
+Since nonzero scalars generate nothing new, step [](#s2-3){.pf-ref} gives $\CC[x,y]^G = \CC[x^2+y^2,\ x^4-6x^2y^2+y^4,\ xy(x^2-y^2)]$.
+
+For the second equality, $x^4-6x^2y^2+y^4 = (x^2+y^2)^2 - 8x^2y^2$ lies in $\CC[x^2+y^2,\,x^2y^2,\,xy(x^2-y^2)]$, and conversely $x^2y^2 = \bigl((x^2+y^2)^2 - (x^4-6x^2y^2+y^4)\bigr)/8$ lies in the first ring, so the two triples generate the same $\CC$-algebra.
 :::
 
 :::
@@ -149,7 +175,7 @@ checking $A \cdot f_1 = (-y)^2 + x^2 = f_1$, $A \cdot f_2 = (-y)^2 x^2 = f_2$, a
 Thus the finite set $\{x^2 + y^2, \; x^2 y^2, \; xy(x^2 - y^2)\}$ generates $\CC[x, y]^G$ as a $\CC$-algebra.
 
 ::: pf-proof
-step [](#s2-1){.pf-ref} and step [](#s2-3){.pf-ref}.
+Step [](#s2-4){.pf-ref}.
 :::
 
 :::

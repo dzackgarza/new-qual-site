@@ -39,7 +39,7 @@ $$
 
 ::: {.solution}
 
-The problem is Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024's numbered pages — the retained file `assets/attachments/SP24_math_202_exam.pdf` puts a cover page before them.
+The problem is Problem 2 of the Qualifier Exam in Applied Algebra of May 23, 2024, retained at `assets/attachments/SP24_math_202_exam.pdf`.
 
 No retained solution set covers this exercise: the collection's provenance is the exam paper `assets/attachments/SP24_math_202_exam.pdf` and no solutions sheet accompanies it, so the argument below is the card's own; it is the standard proof of the first half of the Gershgorin circle theorem. The earlier version of the card left two points unstated: that the maximum modulus coordinate exists and is nonzero, and that every $\abs{x_{j}}$ is at most $\abs{x_{i}}$ — which is the inequality the estimate turns on.
 
