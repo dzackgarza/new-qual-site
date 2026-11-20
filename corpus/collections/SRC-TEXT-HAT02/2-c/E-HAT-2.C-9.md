@@ -102,7 +102,7 @@ $$
 \boxed{\text{the set of homotopy types of finite CW complexes is countable}.}
 $$
 
-The count is in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.C.9, printed p. 88. A finite CW complex has the homotopy type of a finite simplicial complex by Theorem 2C.5. Once the finite vertex set is fixed, only finitely many closed-under-subsets collections are possible; taking the union over all finite vertex sets counts the homotopy types.
+The count is in **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher §2.C Exercise 9. A finite CW complex has the homotopy type of a finite simplicial complex by Theorem 2C.5. Once the finite vertex set is fixed, only finitely many closed-under-subsets collections are possible; taking the union over all finite vertex sets counts the homotopy types.
 
 
 :::
