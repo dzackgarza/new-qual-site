@@ -51,7 +51,7 @@ $$
 0 \to \mci_Y \to \OO_X \to \mcf \to 0.
 $$
 Show however that the induced map on global sections $\Gamma(X, \OO_X) \to \Gamma(X, \mcf)$ is not surjective.
-This shows that the global section functor $\Gamma(X, \wait)$ is not exact.
+This shows that the global section functor $\Gamma(X, -)$ is not exact.
 
 (d) Again let $X = \PP^1$ and let $\OO$ be the sheaf of regular functions.
 Let $\mck$ be the constant sheaf on $X$ associated to the function field $K$ of $X$.
