@@ -51,7 +51,7 @@ Show that a finite simple group cannot have a 2-dimensional irreducible represen
 
 
 ::: {.solution}
-No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/UW-Algebra-Qual-2017.pdf`, the question paper of the Algebra Preliminary Examination 2017 (University of Washington) (it opens "Do as many of the eight problems as you can", and this is Problem 7, printed p. 1), and it contains no solutions. The argument below is the card's own; it is the card's previous prose with the character-degree divisibility made a separate step and its conclusion used in the place it is needed.
+No retained solution set covers this problem: the collection's `provenance` names `assets/attachments/UW-Algebra-Qual-2017.pdf`, the question paper of the Algebra Preliminary Examination 2017 (University of Washington) (it opens "Do as many of the eight problems as you can", and this is Problem 7), and it contains no solutions. The argument below is the card's own; it is the card's previous prose with the character-degree divisibility made a separate step and its conclusion used in the place it is needed.
 
 Throughout $G$ is a finite simple group, $\rho:G\to\GL(V)$ is an irreducible complex representation with $\dim_\CC V=2$, and $\cardinality{\cdot}$ denotes order.
 
