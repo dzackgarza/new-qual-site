@@ -14,7 +14,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space.
-A \dfn{covering space} of $X$ is a topological space $\tilde X$ together with a [[D-AEAAD|continuous map]] $p\colon \tilde X\to X$ such that every $x\in X$ has an open [[D-JMRPA|neighborhood]] $U$ for which $\inverseof{p}(U)$ is a union of pairwise disjoint open sets $V_i\subseteq\tilde X$, each mapped [[D-9KQZT|homeomorphically]] onto $U$ by $p$ [@Hat02].
+A \dfn{covering space} of $X$ is a topological space $\tilde X$ together with a [[D-AEAAD|continuous map]] $p\colon \tilde X\to X$ such that every $x\in X$ has an open [[D-JMRPA|neighborhood]] $U$ for which $\inverseof{p}(U)$ is a union of pairwise disjoint open sets $V_i\subseteq\tilde X$, each mapped [[D-9KQZT|homeomorphically]] onto $U$ by $p$ [@Hat02, §1.3].
 The sets $V_i$ are the \dfn{sheets} of $\tilde X$ over $U$.
 :::
 
