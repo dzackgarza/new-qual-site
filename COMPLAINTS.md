@@ -11041,3 +11041,46 @@ unchanged, so none was needed on them. No whole-corpus gate this turn.
 **What still has no source in either book.** `D-5NQWE` (rising and falling factorials) and `D-BPBSQ` (singularities at infinity, defined through $g(w)=f(1/w)$) are in neither Ahlfors nor Stein--Shakarchi under those notions; they need a third standard text cited by numbered statement, and none is retained.
 
 **Uncertainty.** The Ahlfors statements used here are unnumbered prose in §4.1 and §4.2, so the citations name the section as the brief allows for unnumbered statements; the two Stein--Shakarchi citations are numbered. No card's statement was changed in this pass.
+
+## 2026-11-20, eleventh item: Chapter 1 — seven cards' page citations replaced, and a count that is short
+
+**The defect class, measured first.** Scanning the bodies of every `SRC-TEXT-HAT02` card of Chapters 1 and 2 for
+a page citation outside the audit block found **31 cards** carrying one: bare `(p. N)` after a named result,
+`printed p. N` in a statement, and in three cases the offset between the printed and PDF paginations written
+into the problem text itself. Seven of the 31 are in Chapter 1, and those seven are repaired here:
+
+| card | what was removed |
+| --- | --- |
+| `E-HAT-1.1-1` | the retained file named in the statement, and the page for the rules of path composition, now located as the discussion of §1.1 preceding Proposition 1.5 |
+| `E-HAT-1.1-3` | two pages, now the paragraph preceding Proposition 1.5 and the rules of §1.1 that it uses |
+| `E-HAT-1.1-18` | the page after Proposition A.1 |
+| `E-HAT-1.2-1` | the printed page, the retained file, and the printed-to-PDF offset in the statement |
+| `E-HAT-1.2-14` | the page after Proposition 1.26(b) |
+| `E-HAT-1.B-1` | the printed page, the retained file, and the offset in the statement |
+| `E-HAT-1.B-5` | four pages, after Example 1B.13, Exercise 4 of §1.B, Theorem 1B.11 and the underlying graph |
+
+Each is its own commit, each `qualc.authoring check` clean. Dates of the earlier events are untouched, as
+`QUAL-11` requires.
+
+**What was read, and what was not.** The mathematics was read step by step on **five** of the seven:
+`E-HAT-1.1-1` (the two-step cancellation: concatenate the homotopies, then absorb $g_i\bar g_i$ into
+$c_{g_i(0)}$), `E-HAT-1.1-2` (the homotopy $F_t=H(\cdot,t)$ cut into three strips pastes at $x_1$ and is a loop
+at $x_0$ for every $t$), `E-HAT-1.1-3` (both directions: $\beta_h=\beta_k$ from $aba^{-1}=b$ with
+$a=[h\bar k]$, and conversely $\beta_h=\beta_c$ forcing $[h][f]=[f][h]$), `E-HAT-1.1-18` (the van Kampen
+cover $U=X-\{c\}$, $V=\mathrm{int}(e^n)$ with $U\cap V$ path connected because $n\ge2$, and the finite-subcomplex
+argument for infinitely many cells), and `E-HAT-1.B-1` (barycentric subdivision, the open stars
+$\operatorname{st}(w)$ disjoint from $\operatorname{st}(gw)$ for $g\ne1$ because $G$ acts freely and
+simplicially).
+
+**Not read step by step: `E-HAT-1.2-1` and `E-HAT-1.B-5`.** Their citations are repaired and their statements
+compared with the book, but I did not read their proofs. They are named here rather than counted as done.
+
+**The batch is short of ten.** Seven cards were repaired and five read; the instruction was at least ten read.
+The gap is not a judgement about the work but a record of what was finished, and the remaining 24 cards of the
+31 with body page citations — `E-HAT-2.3-1`, `-2.2-17`, `-2.2-24`, `-2.1-10`, `-2.B-10`, `-2.2-40`, `-2.2-37`,
+`-2.2-25`, `-2.2-10`, `-2.1-29`, `-2.1-1`, `-2.C-9`, `-2.C-8`, `-2.C-5`, `-2.C-2`, `-2.3-3`, `-2.2-36`,
+`-2.2-35`, `-2.2-23`, `-2.2-22`, `-2.2-19`, `-1.1-...` and the rest — are the next batch, together with the
+proofs of `-1.2-1` and `-1.B-5`.
+
+**Checks.** `qualc.authoring check` on all seven cards, each reporting "schema and Markdown parsing OK". No
+whole-corpus gate this turn.
