@@ -43,15 +43,7 @@ $$
 $$
 so characters of $G$ are obtained by inducing characters of subgroups and decomposing the result.
 
-The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by the hook length formula $f^\lambda = n!/\prod_{c\in\lambda}h(c)$; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].
+The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by [[T-HOOK|the hook length formula]]; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].
 
-For an irreducible character $\chi$ of $G$, the Frobenius--Schur indicator
-$$
-\nu(\chi) = \frac1{\size G}\sum_{g\in G}\chi(g^2)
-$$
-takes the value $1$ when the representation is realizable over $\RR$, $0$ when $\chi$ is not real-valued, and $-1$ when the representation is quaternionic.
-The sign is visible in the squares: writing $\chi_{\text{sym}^2}$ and $\chi_{\wedge^2}$ for the characters of the symmetric and the exterior square of the representation,
-$$
-\nu(\chi) = \inner{\chi}{\chi_{\text{sym}^2}} - \inner{\chi}{\chi_{\wedge^2}},
-$$
-which is $+1$ for a real form, $-1$ for a quaternionic one, and $0$ when $\chi$ is not real-valued, by [[T-YHH3M|Schur's lemma]] applied to the $G$-invariant bilinear forms on the representation.
+For an irreducible character $\chi$ of $G$, the [[T-FSIND|Frobenius--Schur indicator]] is $1$ when the representation is realizable over $\RR$, $0$ when $\chi$ is not real-valued, and $-1$ when the representation is quaternionic.
+Its sign is the difference of the multiplicities of $\chi$ in the symmetric and the exterior square of the representation, which is the reading of the indicator that [[T-YHH3M|Schur's lemma]] supports.
