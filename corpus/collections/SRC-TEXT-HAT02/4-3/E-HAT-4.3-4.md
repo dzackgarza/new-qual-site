@@ -11,6 +11,17 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance and page corrected. The body's sentence "No retained solution set covers this
+    exercise: the Hatcher sets in the checkout hold nothing from §4.3" was false twice: Sam's set
+    covers Exercise 4 on printed p. 25 of tmp/sources/hatcher-solutions-sam-2008.pdf, and the set
+    holds eighteen of the twenty-four §4.3 exercises. The same false sentence in the event of
+    2026-11-18 is superseded here, that event being left as written under QUAL-11. Theorem 4.57 is
+    stated on printed p. 393, not p. 402, which is where its deferred proof closes; the body now
+    says so and the event of 2026-11-18 keeps its page.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -39,7 +50,7 @@ Given abelian groups $G$ and $H$ and CW complexes $K(G, n)$ and $K(H, n)$, show 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the Hatcher sets in the checkout hold nothing from §4.3. The argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 4, printed p. 419.
+The retained solution set of **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §4.3 Exercise 4**, printed p.~25 of `tmp/sources/hatcher-solutions-sam-2008.pdf`, solves this exercise: surjectivity from Lemma 4.31, and injectivity by producing homotopies on the characteristic maps of the $n$-cells and extending them with Lemma 4.7. The steps below follow that argument, checked against Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 4, printed p. 419.
 
 ::: pf
 
@@ -47,7 +58,7 @@ No retained solution set covers this exercise: the Hatcher sets in the checkout 
 $\langle K(G,n),K(H,n)\rangle\cong H^n(K(G,n);H)$.
 
 ::: pf-proof
-Theorem 4.57, printed p. 402, gives natural bijections $T:\langle X,K(H,n)\rangle\to H^n(X;H)$ for every CW complex $X$ and $n>0$, so the set of homotopy classes is in bijection with the cohomology of the source with coefficients in $H$.
+Theorem 4.57, printed p. 393, gives natural bijections $T:\langle X,K(H,n)\rangle\to H^n(X;H)$ for every CW complex $X$ and $n>0$, so the set of homotopy classes is in bijection with the cohomology of the source with coefficients in $H$.
 :::
 
 :::
