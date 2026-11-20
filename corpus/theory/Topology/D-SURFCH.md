@@ -20,12 +20,12 @@ $$
 $$
 where $\Sigma_g$ is the closed orientable surface of genus $g$ and $N_k$ is the connected sum of $k$ projective planes.
 Each value is the alternating sum $\sum_n(-1)^n\operatorname{rank}H_n$ of the homology computed from the cell structure [@Hat02, Theorem 2.44].
-By the classification of surfaces, the closed surfaces with a given Euler characteristic are:
+By [[T-NBARV|the classification of compact surfaces]], whose closed members are the sphere $S^2$, the tori $T_g$ and the connected sums $N_k$ of projective planes [@Mun00, Theorem 77.5], the closed surfaces with a given Euler characteristic are:
 
 | Orientable | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Yes | $\Sigma_3$ | none | $\Sigma_2$ | none | $T^2$ | none | $S^2$ |
 | No | $N_6$ | $N_5$ | $N_4$ | $N_3$ | $\KK$ | $\RP^2$ | none |
 
-With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band, and $\chi=1$ includes the disc $D^2$.
+With boundary, the formula of [[T-NBARV]] admits $\chi=0$ for the annulus $S^1\cross I$ and the Möbius band, and $\chi=1$ for the disc $D^2$.
 :::
