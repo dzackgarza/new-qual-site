@@ -100,6 +100,19 @@ audit:
     symmetry of $f(\DD)$ and for $f$ to carry the upper half-disc into one of the two parts of $f(\DD)$,
     and the step proves both, plus positivity of $v$ on the open rectangle. Not re-read in this pass:
     steps s1, s2 and s5--s6, and the argument of step s4 beyond its use of s3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Parts (c) and (d) of the statement restored to the printed wording, which the card had compressed.
+    Read in the book: the print's (c) is "Use the fact that $a_n\in\RR$ to show that $f(\DD)$ is
+    symmetric with respect to the real axis, and use this fact to show that $f$ maps the upper
+    half-disc into either the upper or lower part of $f(\DD)$", and its (d) is "Show that for $r$
+    small, $v(r,\theta)=r\sin\theta[1+O(r)]$, and use the previous part to conclude that
+    $v(r,\theta)\sin\theta\ge0$ for all $0<r<1$ and $0\le\theta\le\pi$". The card had written
+    "Deduce that" in (d) and "and that" in (c), which drops the instruction to use part (c) -- the
+    very step the repair of step s3 supplies -- so the wording now follows the print. No mathematics
+    changed; the solution already uses part (c) for the sign.
 
 ---
 
@@ -113,9 +126,9 @@ $$
 
 (b) Show that $\abs{\sin(n\theta)}\leq n\sin\theta$ for $0\leq\theta\leq\pi$ and $n\geq1$.
 
-(c) Use $a_n\in\RR$ to show that $f(\DD)$ is symmetric about the real axis and that $f$ maps the upper half-disc into either the upper or lower part of $f(\DD)$.
+(c) Use $a_n\in\RR$ to show that $f(\DD)$ is symmetric about the real axis, and use this fact to show that $f$ maps the upper half-disc into either the upper or lower part of $f(\DD)$.
 
-(d) Show that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$. Deduce that $v(r,\theta)\sin\theta\geq0$ for all $0<r<1$ and $0\leq\theta\leq\pi$.
+(d) Show that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$, and use the previous part to conclude that $v(r,\theta)\sin\theta\geq0$ for all $0<r<1$ and $0\leq\theta\leq\pi$.
 
 (e) Prove that $\abs{a_nr^n}\leq nr$, and let $r\to1$ to conclude that $\abs{a_n}\leq n$.
 
