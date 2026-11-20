@@ -239,7 +239,7 @@ coordinate-change matrix is $P^{-1}$.
 
 ::: {.pf-step #s1-8}
 
-In the eigenbasis,
+Part (b): in the eigenbasis,
 $$
 \boxed{
 P^{-1}AP
@@ -263,19 +263,6 @@ P
 \operatorname{diag}(-1,0,9).
 $$
 Multiply on the left by $P^{-1}$.
-
-:::
-
-:::
-
-::: {.pf-step #s1-9}
-
-Part (b) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -354,7 +341,7 @@ eigendirections that occur in it.
 
 ::: {.pf-step #s1-12}
 
-Hence the invariant subspaces are exactly
+Part (c): hence the invariant subspaces are exactly
 $$
 \boxed{
 \begin{gathered}
@@ -380,22 +367,9 @@ shows that no others occur.
 
 :::
 
-::: {.pf-step #s1-13}
-
-Part (c) follows.
-
-
-::: pf-proof
-
-This is step [](#s1-12){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-13){.pf-ref} establish parts (a), (b), and (c), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 
