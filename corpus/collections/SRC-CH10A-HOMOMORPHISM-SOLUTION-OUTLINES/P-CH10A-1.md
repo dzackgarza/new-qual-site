@@ -54,7 +54,7 @@ Prove that the mapping given in Example 2, the map $\phi : GL(2, \RR) \to \RR^*$
 :::
 
 ::: {.solution}
-The collection retains the source's own solution as `assets/attachments/Ch10PtASltns.pdf`, page 1, which carries this Example 2 map and its two-line check. The card states it in its own notation, and that notation is the wording below. In the seventh edition the exercise is **Chapter 10 Exercise 1**, and the Example 2 it names is printed on p. 201; both are read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
+The collection retains the source's own solution as `assets/attachments/Ch10PtASltns.pdf`, page 1, which carries this Example 2 map and its two-line check. The card states it in its own notation, and that notation is the wording below. In the seventh edition the exercise is **Chapter 10 Exercise 1**, and the Example 2 it names is Example 2 of Chapter 10; both are read in the retained scan `tmp/sources/Gallian-Contemporary-Abstract-Algebra-7e.pdf`. Write $\phi(A)=\det(A)$ for $A\in\GL(2,\RR)$, and $\RR^*$ for the group of nonzero reals under multiplication.
 
 ::: pf
 
