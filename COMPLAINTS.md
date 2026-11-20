@@ -9637,3 +9637,17 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: the two steps and the identities above. Not read: the full text of the last sentence of the characteristic-two step, `automorphism-group-not-two-three`, `twenty-seven-lines`, `incidence-ten-and-sixteen`, the bodies of `ac`/`bc-family-incidence`, and Dolgachev--Duncan at the printed pages named, which are the card's citations. So #168's acceptance is not met for V.4.16 as a whole; V.5.6 and V.5.8(b) remain unread.
+
+## 2026-11-19: #168's twentieth round — V.5.6's third-kind step read, its source pages not reached
+
+**Object and need.** The nineteenth round closed V.4.16's characteristic steps; #168's next item is V.5.6 (`P-AGH556VALUATIONRINGS`), where the issue names the third kind $R$ in $R_0$ and cites Abhyankar's Definition 3 and Lemma 12 at printed pp. 398, 412--413. This round read the card's `r-equals-union-type-three` and `element-eventually-regular`, and began on the source. No card is changed.
+
+**`r-equals-union-type-three` is a two-inclusion step and is sound as written.** `union-contained-in-r` gives $R_0\subseteq R$, and `element-eventually-regular` gives $R\subseteq R_0$; the conclusion $R=R_0$ then says the local union of the third construction is already a valuation ring, with no dominating ring needed, which is the assertion Exercise II.4.12 defers to this one.
+
+**`element-eventually-regular` carries the weight, and its shape is right.** For $f\in R\subseteq K^\times$ it regards $f$ as the rational map $X\dashrightarrow\PP^1$, $x\mapsto[f(x):1]$, and invokes Exercise V.5.1 for a resolution by finitely many point blowups. What the argument needs, and what I did not verify, is the passage from that finite resolution to an index $N$ with $f\in A_i$ for all $i\ge N$: it requires that the resolution's sequence of centres is an initial segment of the admissible sequence $x_0,x_1,\dots$ defining $R$, which is the content of Abhyankar's Lemma 12 and not something the card's visible sentences establish by themselves.
+
+**What I reached of the source, and what I did not.** The text version `tmp/sources/abhyankar-1956-valuations-centered-local-domain.md` is a partial extraction. It carries the construction the step needs in the form "Let $R_0=R$ and $M_0=M$. Let $(x_0,y)$ be a basis of $M_0$ and let $(R_i,M_i)$ be the $i$-th ...", and it refers to Lemma 12 at its line 118. I did not read Abhyankar's Definition 3 or Lemma 12 at printed pp. 398, 412--413 on the PDF's folios, and the page arithmetic used earlier in this file for that paper is printed page $=$ PDF page plus $320$, so those are PDF pp. 78, 92 and 93; opening them is the next step of this item.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: `r-equals-union-type-three` and `element-eventually-regular`. Not read: the rest of V.5.6 (`unique-center-exists` to `trichotomy-established`), and Abhyankar at the pages named. So #168's acceptance is not met for V.5.6, and V.5.8(b), the unread steps of V.4.16, IV.2.3 and IV.3.11 remain.
