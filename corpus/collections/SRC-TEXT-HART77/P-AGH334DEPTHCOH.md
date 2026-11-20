@@ -183,7 +183,7 @@ Thus the equivalence in (b) holds for every finite module in the statement.
 :::
 
 ::: {.remark title="The exceptional depth convention"}
-The exercise stands on printed p. 217 of Hartshorne, under its printed italic heading "Cohomological Interpretation of Depth", read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$, and the statement above is that page's text with one convention made explicit: the page defines $\depth_\mfa M$ as the maximum length of an $M$-regular sequence in $\mfa$ and says nothing about the case $\mfa M=M$, which the statement fixes as $\depth_\mfa M=\infty$ so that the equivalence of (a) covers $M$ of finite length.
+The exercise is III.3.4 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text with one convention made explicit: the page defines $\depth_\mfa M$ as the maximum length of an $M$-regular sequence in $\mfa$ and says nothing about the case $\mfa M=M$, which the statement fixes as $\depth_\mfa M=\infty$ so that the equivalence of (a) covers $M$ of finite length.
 
 The maximum-length definition without the exceptional convention is insufficient for arbitrary ideals.
 For $A=k$, $\mfa=A$ and $M=k$, the functor $\Gamma_{\mfa}$ is zero on every module and all its derived functors vanish.

@@ -174,7 +174,7 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}
 :::
 
 ::: {.remark title="A product of generators can vanish on the open set"}
-The exercise stands on printed p. 217 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text.
+The exercise is III.3.7 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text.
 
 For $A=k[x,y]/(xy)$ and $\mfa=(x,y)$, the open set $U=D(x)\cup D(y)$ is nonempty, but $xy=0$ in $A$.
 Multiplication by any positive power of $xy$ therefore sends the nonzero section $1\in\Gamma(U,\OO_U)$ to zero.

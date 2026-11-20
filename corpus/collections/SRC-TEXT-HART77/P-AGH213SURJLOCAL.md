@@ -174,7 +174,7 @@ The function $f(z) = 1/z$ is analytic on $U$, but has no antiderivative, since t
 :::
 
 ::: {.remark title="Published solution"}
-The exercise stands on printed p. 66 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$; the statement above is that page's text, part for part.
+The exercise is II.1.3 of Hartshorne, read in `tmp/sources/hartshorne-1977-algebraic-geometry.md`; the statement above is its text, part for part.
 
 The proof above is Steven V. Sam's, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §1, Exercise 3, printed p. 2 (PDF p. 15 of `tmp/sources/hartshorne-solutions-sam.pdf`). He proves part (a) in both directions, the converse by the index $i$ with $P \in U_i$, and for part (b) takes differentiation of analytic functions: it is surjective on stalks because an analytic function has an antiderivative on a simply connected neighbourhood, and $1/z$ on $\CC^\times$ has none, its integral over the unit circle being $2\pi i$.
 
