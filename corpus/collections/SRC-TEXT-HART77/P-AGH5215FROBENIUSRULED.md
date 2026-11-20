@@ -420,10 +420,10 @@ audit:
     Issue #164, the demand that the proof of V.2.15 be transcribed from a
     published solution set. No such set exists, and none can prove the printed
     statement. The retained Hartshorne sets were swept: Egbert, Exercise
-    V.2.15, PDF pp. 271-273, writes for (c) only "To see the curve
+    V.2.15, writes for (c) only "To see the curve
     Y = 3C_0-3f is inseparable is Miyanishi, Open Algebraic Surfaces, lemma
     2.5.2.2" and then calls Y "some section of C", which is a pointer and not a
-    proof; Yang Pi-Yeh, Exercise 5.2.15, printed pp. 105-106, begins (c) with
+    proof; Yang Pi-Yeh, Exercise 5.2.15, begins (c) with
     "Clearly deg pi = Y.f = 3" and concludes that pi is not separable, which
     assumes the curve and does not follow; Park has only V.5; Reiser's Chapter
     V is "Coming soon"; the remaining retained sets stop before Chapter V
@@ -434,7 +434,7 @@ audit:
     Hartshorne solutions checked (mikeleew, corn-muffin, nilaykumar,
     jmoellermath, maths644311798, reiserb) stop before Chapter V or omit
     V.2.15, as do the web-compiled manuals checked. The only other treatment of
-    (c) is Xie's own Example 3.1, printed p. 5, which asserts that C' is
+    (c) is Xie's own Example 3.1, which asserts that C' is
     irreducible and smooth and proves neither, and Math StackExchange 4553266,
     which has no answer. That no correct proof can exist is step s9: the class
     3C_0-3f has p_a = 4 by adjunction, while a purely inseparable degree-3 map
@@ -452,7 +452,14 @@ audit:
     L^{-3} identifies F^*E \otimes L^{-3} with F^*(E \otimes L^{-1}); cubing a
     section of E \otimes L^{-1} directly would land in L^{-9} and is wrong. The
     rendered remark no longer says that part (c) is published in
-    the form the steps correct. Not checked: the printed copies of Xie, Egbert
+    the form the steps correct. Citations on the rendered page are by numbered
+    statement --- the exercise number in Hartshorne's book, Example 3.1 and
+    Lemma 2.5.2.2 of Xie, Lemma 3.1 and Example 3.2 of Hartshorne 1971, and
+    IV.2.4, IV.2.5, V.1.5, Corollary V.2.11, Proposition 2.21(b) of the book ---
+    and this event's own locators were replaced by the statements in the commit
+    that follows it; the earlier dated events of this card keep the printed
+    pages they were read in and are left as they were written. Not checked: the
+    printed copies of Xie, Egbert
     or Yang, only the retained text layers and, for Xie, the arXiv v5, v6 and
     v7 PDF text.
 
