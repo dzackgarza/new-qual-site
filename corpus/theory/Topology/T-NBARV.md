@@ -35,7 +35,7 @@ $$
 \end{cases}
 $$
 
-Thus compact connected surfaces are classified up to homeomorphism by orientability, the number $b$ of boundary components, and $\chi(X)$; equivalently, by $(g,b)$ in the orientable case and $(k,b)$ in the nonorientable case [@Mun00, Theorem 77.5].
+Thus compact connected surfaces are classified up to homeomorphism by orientability, the number $b$ of boundary components, and $\chi(X)$; equivalently, by $(g,b)$ in the orientable case and $(k,b)$ in the nonorientable case [@Mun00, Theorem 77.5; §78, Exercise 5].
 :::
 
 ::: {.remark title="Variations"}
