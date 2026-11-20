@@ -11,8 +11,6 @@ topics:
 
 [[D-ANO2D]]
 
-The covering maps below are the standard ones: the universal cover of a circle, the two-sheeted covers of projective space and of the Klein bottle, and the universal covers of wedges.
-
 ## Examples
 
 ::: {.example title="Common covering spaces"}
