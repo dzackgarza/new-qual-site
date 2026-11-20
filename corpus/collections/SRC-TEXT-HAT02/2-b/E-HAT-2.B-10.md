@@ -159,7 +159,7 @@ The degree-zero group is $\ZZ_2$ because $\RP^\infty$ is connected. Apply the is
 :::
 
 :::
-The transfer argument for the double cover is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.1 (Hatcher 2.B.10), printed p. 43 of `tmp/sources/hatcher-solutions-guanyu-li.pdf`, and a second published solution of the same exercise is **Morten Poulsen, *Algebraic Topology — Exercise Solutions*, Ex. 2.B.10, printed p. 30** of `tmp/sources/poulsen-at-ex.pdf`, which draws the low-degree exact sequence out in full. The card elaborates the low-degree step that the sources abridge: since $p_*$ is an isomorphism on $H_0$, exactness gives $\tau_*=0$ there and the connecting map is an isomorphism as well as in degrees at least $2$.
+The transfer argument for the double cover is in **Guanyu Li, [`Hatcher.pdf`](https://guanyulee.github.io/Hatcher.pdf)**, Exercise 2.B.1 (Hatcher §2.B Exercise 10) of `tmp/sources/hatcher-solutions-guanyu-li.pdf`, and a second published solution of the same exercise is **Morten Poulsen, *Algebraic Topology — Exercise Solutions*, Ex. 2.B.10** of `tmp/sources/poulsen-at-ex.pdf`, which draws the low-degree exact sequence out in full. The card elaborates the low-degree step that the sources abridge: since $p_*$ is an isomorphism on $H_0$, exactness gives $\tau_*=0$ there and the connecting map is an isomorphism as well as in degrees at least $2$.
 
 
 :::
