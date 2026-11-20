@@ -5,11 +5,7 @@ order: 530
 
 # Undergraduate review
 
-The undergraduate facts a qualifying exam assumes without stating them, each with the statement that carries it and the page that uses it.
-
 ## Dimension and rank
-
-A basis gives every vector a unique coordinate expression, a linear map is determined by its values on a basis, and the rank-nullity theorem is the statement that a map loses exactly the dimension of its kernel.
 
 [[E-GEVBZ]]
 
@@ -25,8 +21,6 @@ Similar matrices are the matrices of one operator in two bases, and equivalent m
 
 ## Eigenvalues
 
-Recall that the characteristic polynomial has the eigenvalues as roots with algebraic multiplicity, that the minimal polynomial is the monic polynomial of least degree annihilating the operator, and that the operator is diagonalizable over $F$ exactly when its minimal polynomial splits over $F$ with distinct roots.
-
 [[D-QFYAC]]
 
 [[D-GK5SF]]
@@ -36,8 +30,6 @@ Recall that the characteristic polynomial has the eigenvalues as roots with alge
 [[FD-K6FVX]]
 
 [[D-B4VTH]]
-
-Recall also that an operator over an algebraically closed field has an eigenvector in every nonzero invariant subspace, which is the step the triangularizability arguments use.
 
 [[L-C5DDK]]
 
@@ -54,8 +46,6 @@ expanding along the first row gives $\det A = 2\cdot(3\cdot2 - 1\cdot1) - 1\cdot
 The permutation expansion, the adjugate inverse, and the identification of the trace and the determinant with the elementary symmetric functions of the eigenvalues are on [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]], and factoring a cubic by the rational root theorem is on [[algebra/linear-algebra/minimal-and-characteristic-polynomials|Minimal and characteristic polynomials]].
 
 ## Inner products and forms
-
-A bilinear form is read by its Gram matrix, nondegeneracy is invertibility of that matrix, and the orthogonal complement of a subspace has complementary dimension when the form is nondegenerate.
 
 [[D-O4WWN]]
 
