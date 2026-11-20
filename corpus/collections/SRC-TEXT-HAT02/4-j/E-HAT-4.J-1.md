@@ -94,7 +94,7 @@ The reduced suspension is the smash product $X\wedge S^1$, computed componentwis
 $S(X_\alpha)\simeq\Sigma X_\alpha$ for every $\alpha\neq\alpha_0$, whether or not the component is a point.
 
 ::: pf-proof
-For each such $\alpha$ the pair $(S(X_\alpha),\{*_\alpha\}\times I)$ has contractible second term and is a CW pair, so collapsing that interval, which carries $S(X_\alpha)$ to the reduced suspension $\Sigma X_\alpha$, is a homotopy equivalence by Proposition 0.17 (p. 15).
+For each such $\alpha$ the pair $(S(X_\alpha),\{*_\alpha\}\times I)$ has contractible second term and is a CW pair, so collapsing that interval, which carries $S(X_\alpha)$ to the reduced suspension $\Sigma X_\alpha$, is a homotopy equivalence by Proposition 0.17.
 :::
 :::
 

@@ -78,7 +78,7 @@ Let
 $$
 L=L_m(\ell_1,\ldots,\ell_n)
 $$
-be the $(2n-1)$-dimensional lens space. By Example 2.43 (pp.144-145) its standard CW structure has one cell in every dimension $0,1,\ldots,2n-1$, with cellular boundary
+be the $(2n-1)$-dimensional lens space. By Example 2.43 its standard CW structure has one cell in every dimension $0,1,\ldots,2n-1$, with cellular boundary
 $$
 d_k=\begin{cases}
 0,&k\text{ odd},\\
@@ -111,7 +111,7 @@ where $G[m]=\ker(m:G\to G)$.
 
 ::: pf-proof
 
-The cochain complex of Theorem 3.5 (p.203) has one copy of $G$ in each degree $0\le k\le2n-1$ and $\delta^k=(d_{k+1})^*$, which is $0$ for $k$ even and multiplication by $m$ for $k$ odd. Hence $H^k=\ker\delta^k/\operatorname{im}\delta^{k-1}$ is $G$ for $k=0$ and for $k=2n-1$ (an incoming differential that vanishes, $d_{2n-1}$ being zero), $G/mG$ for even interior $k$ (kernel $G$, image $mG$) and $G[m]$ for odd interior $k$ (kernel $G[m]$, image $0$).
+The cochain complex of Theorem 3.5 has one copy of $G$ in each degree $0\le k\le2n-1$ and $\delta^k=(d_{k+1})^*$, which is $0$ for $k$ even and multiplication by $m$ for $k$ odd. Hence $H^k=\ker\delta^k/\operatorname{im}\delta^{k-1}$ is $G$ for $k=0$ and for $k=2n-1$ (an incoming differential that vanishes, $d_{2n-1}$ being zero), $G/mG$ for even interior $k$ (kernel $G$, image $mG$) and $G[m]$ for odd interior $k$ (kernel $G[m]$, image $0$).
 
 :::
 
@@ -206,7 +206,7 @@ H_k(L;\ZZ)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-The cohomological universal coefficient sequence of Theorem 3.2 (p.195),
+The cohomological universal coefficient sequence of Theorem 3.2,
 $$
 0\to\operatorname{Ext}(H_{k-1}(L),G)
 \to H^k(L;G)

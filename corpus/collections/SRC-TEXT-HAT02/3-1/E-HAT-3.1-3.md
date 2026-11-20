@@ -79,7 +79,7 @@ For multiplication by $2$ on $\ZZ_4$,
 $$
 \ker(\times2)=\{0,2\}=\operatorname{im}(\times2).
 $$
-At the right end, the quotient map $\ZZ_4\to\ZZ_2$ has kernel $\{0,2\}$, again the image of multiplication by $2$. Every term before $\ZZ_2$ is free over $\ZZ_4$, so this is a free resolution, and a free resolution computes $\operatorname{Ext}_{\ZZ_4}^n$ as the cohomology of its Hom-complex by the argument of Lemma 3.1(b) (p.194), which uses only freeness and so applies over any ring.
+At the right end, the quotient map $\ZZ_4\to\ZZ_2$ has kernel $\{0,2\}$, again the image of multiplication by $2$. Every term before $\ZZ_2$ is free over $\ZZ_4$, so this is a free resolution, and a free resolution computes $\operatorname{Ext}_{\ZZ_4}^n$ as the cohomology of its Hom-complex by the argument of Lemma 3.1(b), which uses only freeness and so applies over any ring.
 
 :::
 

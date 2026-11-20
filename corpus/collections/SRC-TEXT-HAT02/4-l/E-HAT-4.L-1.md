@@ -79,7 +79,7 @@ $K(\ZZ,1)=S^1$, so the representing group is $H^n(S^1;\ZZ)$, which is $\ZZ$ for 
 Every operation $H^2(-;\ZZ)\to H^{2j}(-;\ZZ)$ is $u\mapsto au^j$ for $a\in\ZZ$, and there are no nonzero operations into odd degree.
 
 ::: pf-proof
-$K(\ZZ,2)=\CP^\infty$ with $H^*(\CP^\infty;\ZZ)=\ZZ[x]$, $\abs x=2$, by Example 3.12 (p. 213); so $H^n$ is $\ZZ x^j$ for $n=2j$ and $0$ for $n$ odd. A class $ax^j$ evaluated on the fundamental class $u$ of $\CP^\infty$ gives $au^j$, and there is no class in odd degree.
+$K(\ZZ,2)=\CP^\infty$ with $H^*(\CP^\infty;\ZZ)=\ZZ[x]$, $\abs x=2$, by Example 3.12; so $H^n$ is $\ZZ x^j$ for $n=2j$ and $0$ for $n$ odd. A class $ax^j$ evaluated on the fundamental class $u$ of $\CP^\infty$ gives $au^j$, and there is no class in odd degree.
 :::
 
 :::

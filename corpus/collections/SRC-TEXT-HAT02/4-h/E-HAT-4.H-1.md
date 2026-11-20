@@ -70,7 +70,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 A cofibration is a map with the homotopy extension property and a fibration is a map with the homotopy lifting property for all spaces.
 
 ::: pf-proof
-These are the definitions of §0.4 (p. 14) and of p. 375 respectively. The pair $(X,A)$ has the homotopy extension property exactly when the inclusion $(X\times\{0\})\cup(A\times I)\hookrightarrow X\times I$ has the extension property for maps into every space, which is the form used below.
+These are the definitions of §0.4 and of p. 375 respectively. The pair $(X,A)$ has the homotopy extension property exactly when the inclusion $(X\times\{0\})\cup(A\times I)\hookrightarrow X\times I$ has the extension property for maps into every space, which is the form used below.
 :::
 
 :::

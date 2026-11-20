@@ -73,7 +73,7 @@ The inclusion
 $$
 A_n\cong X\hookrightarrow X\times S^n
 $$
-has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair, that of Theorem 2.16 (p. 117), therefore breaks by the Splitting Lemma (pp. 147--148) into split short exact sequences
+has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair, that of Theorem 2.16, therefore breaks by the Splitting Lemma (pp. 147--148) into split short exact sequences
 $$
 0\to H_i(X)\to H_i(P_n)\to H_i(P_n,A_n)\to0.
 $$

@@ -84,7 +84,7 @@ which vanishes above degree $1$, and
 $$
 \operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_*,G))=\operatorname{Hom}(F_1,G)\big/d_1^*\operatorname{Hom}(F_0,G)
 $$
-by the definition on p. 195. Lemma 3.1(b) (p. 194) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1.
+by the definition on p. 195. Lemma 3.1(b) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1.
 
 ::: pf
 
@@ -94,7 +94,7 @@ Let $\alpha\colon H\to H'$ be a homomorphism and let $F_*$, $F_*'$ be free resol
 
 ::: pf-proof
 
-Lemma 3.1(a) (p. 194) chooses $\alpha_0$ on a free basis of $F_0$ by taking preimages under the surjection $\varepsilon'$, and then $\alpha_1$ on a free basis of $F_1$ by taking preimages under $d_1'$, which is possible because $\alpha_0d_1$ takes values in $\ker\varepsilon'=\operatorname{im}d_1'$: indeed $\varepsilon'\alpha_0d_1=\alpha\varepsilon d_1=0$.
+Lemma 3.1(a) chooses $\alpha_0$ on a free basis of $F_0$ by taking preimages under the surjection $\varepsilon'$, and then $\alpha_1$ on a free basis of $F_1$ by taking preimages under $d_1'$, which is possible because $\alpha_0d_1$ takes values in $\ker\varepsilon'=\operatorname{im}d_1'$: indeed $\varepsilon'\alpha_0d_1=\alpha\varepsilon d_1=0$.
 
 :::
 
@@ -118,7 +118,7 @@ $\alpha^*$ is independent of the lift.
 
 ::: pf-proof
 
-Let $(\alpha_0',\alpha_1')$ be a second lift. By Lemma 3.1(a) (p. 194) there is $\lambda\colon F_0\to F_1'$ with $\alpha_0-\alpha_0'=d_1'\lambda$ and $\alpha_1-\alpha_1'=\lambda d_1$; this is the chain homotopy formula $\beta_i=d_1'\lambda_i+\lambda_{i-1}d_i$ for a two-term complex, with $\lambda_{-1}=0$. Then for $\psi\in\operatorname{Hom}(F_1',G)$,
+Let $(\alpha_0',\alpha_1')$ be a second lift. By Lemma 3.1(a) there is $\lambda\colon F_0\to F_1'$ with $\alpha_0-\alpha_0'=d_1'\lambda$ and $\alpha_1-\alpha_1'=\lambda d_1$; this is the chain homotopy formula $\beta_i=d_1'\lambda_i+\lambda_{i-1}d_i$ for a two-term complex, with $\lambda_{-1}=0$. Then for $\psi\in\operatorname{Hom}(F_1',G)$,
 $$
 (\alpha_1^*-\alpha_1'^*)(\psi)=\psi\circ(\alpha_1-\alpha_1')=\psi\circ\lambda\circ d_1=d_1^*(\psi\circ\lambda),
 $$
@@ -146,7 +146,7 @@ A homomorphism $\beta\colon G\to G'$ induces $\beta_*\colon\operatorname{Ext}(H,
 
 ::: pf-proof
 
-Fix one free resolution $F_*$ of $H$; by Lemma 3.1(b) (p. 194) any other gives the same group, so it is enough to define the map on $\operatorname{Hom}(F_1,G)/\operatorname{im}d_1^*$. Post-composition $\beta_*(\psi)=\beta\circ\psi$ defines $\operatorname{Hom}(F_k,G)\to\operatorname{Hom}(F_k,G')$ for $k=0,1$, and $\beta_*d_1^*=d_1^*\beta_*$ because $\beta\circ(\psi\circ d_1)=(\beta\circ\psi)\circ d_1$; hence $\beta_*$ preserves $\operatorname{im}d_1^*$ and descends to the quotients.
+Fix one free resolution $F_*$ of $H$; by Lemma 3.1(b) any other gives the same group, so it is enough to define the map on $\operatorname{Hom}(F_1,G)/\operatorname{im}d_1^*$. Post-composition $\beta_*(\psi)=\beta\circ\psi$ defines $\operatorname{Hom}(F_k,G)\to\operatorname{Hom}(F_k,G')$ for $k=0,1$, and $\beta_*d_1^*=d_1^*\beta_*$ because $\beta\circ(\psi\circ d_1)=(\beta\circ\psi)\circ d_1$; hence $\beta_*$ preserves $\operatorname{im}d_1^*$ and descends to the quotients.
 
 :::
 
