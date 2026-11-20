@@ -10652,3 +10652,20 @@ The wiki proposition states the four summation formulas for the kernels $\pi\cot
 **Checks.** `./.venv/bin/python -m qualc.authoring check`, from the repository root, reports "schema and Markdown parsing OK (single card)" for all five; `tmp/lam.sh` finds the QED labels, numbering 6, 12, 8, 8 and 7 steps. Commits used `--no-verify` as `QUAL-06` sanctions for authored content, the other lane's worktree `wt161` still blocking the hook; each card was checked before the commit. No page locator remains in the text of any of the five, and no new one was written; the owner's correction of this date applies to the text of a card, and the earlier audit events are append-only under `QUAL-11`. The corpus report check was not run, as instructed: CI runs it.
 
 **Uncertainty.** No certificate on any of the five. `4.B-2`'s orientation argument cites the Whitney-sum formula for $w_1$ of a disc bundle rather than deriving it from the splitting of the tangent bundle; the splitting itself is standard and was not written out. `4.F-1`'s Mayer–Vietoris decomposition of the telescope is a citation of the standard argument, not a rebuilding from the two axioms, and that is the one step a reader should attack. `4.F-2`'s five-lemma application is exact only in the range where every entry is a group, which is $r\ge1$ in the range stated. The next sections in order for this lane are §4.G and §4.H.
+
+
+## 2026-11-20: V.4.15(c) on `P-AGH5415GENPOSITION`, issue #180 — two defects of the day's first round repaired, one false inference removed, and the statement part (c) is equivalent to
+
+**Object.** `P-AGH5415GENPOSITION` (Hartshorne V.4.15), part (c), as left by `f16aee2c`, and the reader's report on that commit in issue #180.
+
+**Defects, each repaired on the card in the commit that adds this record.**
+
+- Step `no-minus-two-curve` is stated for $n$ points, and its descent chose a third centre $R_3$ without showing that $n\ge3$ and $m_3\ge1$. The proof now derives $m_i\le d$ from the pencil of lines through $R_i$, so $3d=\sum m_i$ forces three positive multiplicities.
+- Step `bad-locus-proper-closed` claimed a closed subset of $\PP^2$ and proved a determinant condition on the open set where the word is defined. The statement now names that open set $W_w$, proves it open by induction on the word, and says that the bad set is closed in $W_w$.
+- Step `part-c-open` said that, because some root $\alpha$ has $Z_\alpha=U$ for $r\ge15$, the remaining statement "concerns the irreducible curve ... and not the effectivity of a root". That inference is false. For $P\in U$ the $r+1$ points are in general position exactly when no class $\alpha_{w,T}$ (the class $h'-e'_a-e'_b-e'_c$ of a terminal basis) is effective on $Y_P$: one direction is step `bad-locus-root-class`, the other is the new step `effective-line-class-is-not-general`. So part (c) for $P_1,\ldots,P_r$ is equivalent to $Z_{\alpha_{w,T}}\ne U$ for every $w$ and $T$, an effectivity statement, and the root of step `effective-root-for-every-point` is none of the classes $\alpha_{w,T}$.
+
+**What the card proves after this commit.** Part (c) for $r\le8$ in every characteristic, and for every $r\ge9$ when the points lie on a cubic that is not cuspidal, or in characteristic $0$ (step `properness-on-a-cubic`).
+
+**What stays open, with the evidence.** Part (c) for $r\ge10$ points on no cubic, and for $r\ge9$ points whose one cubic is cuspidal in characteristic $p>0$. Step `cuspidal-cubic-every-point-fails` gives nine points in general position on $y^2z=x^3$ in characteristic $5$ for which every tenth point of the cubic fails, so the cuspidal case cannot be decided with the added point on the cubic. No published statement of part (c) for a fixed configuration was found; the sources read are in the card's audit event of this date and in issue #180.
+
+**Uncertainty.** The new steps are the card's own and no certificate covers them. Harbourne, *Blowings-up of $\PP^2$ and their blowings-down* (Duke Math. J. 52, 1985), was not read: no copy was found.
