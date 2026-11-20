@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Restructured under #2 into numbered steps; the argument is the card's own, since no retained
+    solution set covers §4.3 Exercise 18 (Sam's set has 17 and 19-20, not 18). The exactness
+    step now names the relative homotopy lifting property for CW pairs, which Hatcher states on
+    printed p. 376; the iteration of homotopy fibres is at printed p. 409; the group structure on
+    <X,Omega K> and the abelian structure on <X,Omega^2 K> are at printed p. 396; Exercise 18 is
+    printed p. 420. Checked against those pages. Not checked: no certificate.
 - event: solution-reviewed
   by: claude
   date: 2026-11-19
@@ -43,39 +53,64 @@ audit:
 
 ---
 
-::: {.problem}
-Show that a fibration sequence $\cdots \to \Omega B \to F \to E \to B$ induces a long exact sequence $\cdots \to \langle X, \Omega B \rangle \to \langle X, F \rangle \to \langle X, E \rangle \to \langle X, B \rangle$, with groups and group homomorphisms except for the last three terms, abelian groups except for the last six terms.
+::: {.solution}
+No retained solution set covers this exercise, so the argument is the card's own. The exactness is proved once for an arbitrary fibration and then applied to each consecutive triple of the fibration sequence; the group and abelian bookkeeping is read off from the loopspace structure, at the printed places named in the steps.
+
+::: pf
+
+::: {.pf-step #lemma}
+Let $q\colon E'\to B'$ be a fibration with fibre $F'=q^{-1}(b'_0)$, and let $X$ be a CW complex with basepoint a $0$-cell. Then $\langle X,F'\rangle\to\langle X,E'\rangle\to\langle X,B'\rangle$ is exact at $\langle X,E'\rangle$, and its composite is the constant map at the basepoint.
+
+::: pf-proof
+The composite sends a class represented by $g\colon X\to F'$ to $q\circ g$, which is the constant map at $b'_0$, so it is the basepoint of $\langle X,B'\rangle$. For exactness, let $f\colon X\to E'$ be based with $qf$ based-nullhomotopic, and let $h\colon X\times I\to B'$ be a based nullhomotopy: $h(x,0)=qf(x)$, $h(x,1)=b'_0$ and $h(x_0,t)=b'_0$. On the subcomplex $A=X\times\{0\}\cup\{x_0\}\times I\subset X\times I$ prescribe the lift $\tilde h$ to be $f$ on $X\times\{0\}$ and the constant $e'_0=q^{-1}(b'_0)$ on $\{x_0\}\times I$; the prescription is compatible with $h$ because $qf=qf$ on $X\times\{0\}$ and $q(e'_0)=b'_0=h(x_0,t)$. The relative homotopy lifting property for the CW pair $(X\times I,A)$ (printed p.~376) extends $\tilde h$ to a lift $H\colon X\times I\to E'$ with $qH=h$. Then $g=H(-,1)$ maps $X$ into $F'$ because $qg=h(-,1)=b'_0$, it is based because $g(x_0)=H(x_0,1)=e'_0$, and $H$ is a based homotopy from $f$ to $g$. So the class of $f$ lies in the image of $\langle X,F'\rangle$.
 :::
 
-::: {.solution}
-For a fibration
-$$
-F\to E\xrightarrow p B,
-$$
-the sequence of pointed sets
-$$
-\langle X,F\rangle\longrightarrow\langle X,E\rangle
-\longrightarrow\langle X,B\rangle
-$$
-is exact. Exactness at $\langle X,B\rangle$ is immediate: the composite $pf$ is nullhomotopic. Exactness at $\langle X,E\rangle$ is the assertion: a based map $f:X\to E$ with $pf$ based-nullhomotopic is based homotopic to a map into $F$. Take a based nullhomotopy $h:X\times I\to B$ of $pf$, so $h(x,0)=pf(x)$, $h(x,1)=b_0$ and $h(x_0,t)=b_0$. The map $(x,0)\mapsto f(x)$, $(x_0,t)\mapsto e_0$ on $X\times\{0\}\cup\{x_0\}\times I$ is a lift of $h$ restricted to that subcomplex, and $(X\times I,X\times\{0\}\cup\{x_0\}\times I)$ is a CW pair because $X$ is a CW complex with basepoint a $0$-cell; the homotopy lifting property applied to this cofibration extends the lift to $\tilde h:X\times I\to E$ with $\tilde h(x,0)=f(x)$ and $\tilde h(x_0,t)=e_0$. Then $\tilde h(-,1)$ is based — it lies in $F$ since $p\tilde h(x,1)=h(x,1)=b_0$, and it sends $x_0$ to $e_0$ — and $\tilde h$ is a homotopy through based maps from $f$ to it. Applying this to every looped fibration in the fibration sequence
-$$
-\cdots\to\Omega B\to F\to E\to B
-$$
-gives the long exact sequence
-$$
-\cdots\to\langle X,\Omega B\rangle
-\to\langle X,F\rangle
-\to\langle X,E\rangle
-\to\langle X,B\rangle.
-$$
+:::
 
-For every space $K$, the set
-$$
-\langle X,\Omega K\rangle
-$$
-is a group using pointwise concatenation of loops, and maps induced by loop maps preserve this operation. Thus every term except the last three is a group and every corresponding map is a homomorphism. After two loopings, the loop multiplication is homotopy-commutative by the Eckmann--Hilton argument, so
-$$
-\langle X,\Omega^rK\rangle
-$$
-is abelian for $r\ge2$. Reading this along the fibration sequence gives exactly Hatcher's count: all terms except the last six are abelian groups. Hence the sequence has the asserted group and abelian-group structure.
+::: {.pf-step #seq}
+The sequence $\cdots\to\langle X,\Omega B\rangle\to\langle X,F\rangle\to\langle X,E\rangle\to\langle X,B\rangle$ is exact at every term.
+
+::: pf-proof
+Iterating homotopy fibres of the fibration $F\to E\to B$ gives the sequence $\cdots\to\Omega^2B\to\Omega F\to\Omega E\to\Omega B\to F\to E\to B$ in which each consecutive triple is, up to homotopy equivalence of its maps, a fibration and its fibre (printed p.~409): $\Omega B\to F$ is the boundary map, its homotopy fibre is $\Omega E$, and looping repeats the pattern. Step [](#lemma){.pf-ref} applied to each consecutive triple, using that $\langle X,-\rangle$ depends only on homotopy type, gives exactness at the middle term of each triple, which is every term of the displayed sequence.
+:::
+
+:::
+
+::: {.pf-step #groups}
+For every space $K$, $\langle X,\Omega K\rangle$ is a group, and the map induced by a loop map $\Omega K\to\Omega L$ is a homomorphism.
+
+::: pf-proof
+$\Omega K$ is the space of based loops in $K$ with the compact-open topology, and concatenation of loops is a continuous multiplication with a strict identity and inverses up to homotopy; the argument that $\pi_1(K)$ is a group therefore applies verbatim to $\langle X,\Omega K\rangle$ (printed p.~396). A loop map carries the concatenation of loops in $\Omega K$ to the concatenation of their images, so the induced map on homotopy classes is a homomorphism.
+:::
+
+:::
+
+::: {.pf-step #abelian}
+$\langle X,\Omega^2K\rangle$ is abelian, and hence $\langle X,\Omega^nK\rangle$ is abelian for every $n\ge2$.
+
+::: pf-proof
+$\Omega^2K=\Omega(\Omega K)$ is the space of maps $I^2\to K$ sending $\partial I^2$ to the basepoint, and the argument that $\pi_2(K)$ is abelian, composing in the two coordinates of $I^2$, shows that the group $\langle X,\Omega^2K\rangle$ is abelian (printed p.~396). For $n\ge2$, $\Omega^nK=\Omega^2(\Omega^{n-2}K)$.
+:::
+
+:::
+
+::: {.pf-step #count}
+In the sequence of step [](#seq){.pf-ref} the last three terms are pointed sets, the three terms before them are groups, and every earlier term is an abelian group; the maps between group-valued terms are homomorphisms.
+
+::: pf-proof
+Reading from the right, the terms are $\langle X,B\rangle$, $\langle X,E\rangle$, $\langle X,F\rangle$, then $\langle X,\Omega B\rangle$, $\langle X,\Omega E\rangle$, $\langle X,\Omega F\rangle$, then $\langle X,\Omega^2B\rangle$ and its further loopings. The first three carry only the pointed-set structure, since $B$, $E$ and $F$ need not be loop spaces. The next three are groups by step [](#groups){.pf-ref}, and are not asserted to be abelian because $\Omega B$, $\Omega E$ and $\Omega F$ are only loop spaces. From $\langle X,\Omega^2B\rangle$ leftwards the terms are abelian by step [](#abelian){.pf-ref}. The maps between terms that are groups are induced by loop maps, hence are homomorphisms by step [](#groups){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step}
+A fibration sequence $\cdots\to\Omega B\to F\to E\to B$ induces a long exact sequence $\cdots\to\langle X,\Omega B\rangle\to\langle X,F\rangle\to\langle X,E\rangle\to\langle X,B\rangle$, with groups and homomorphisms except for the last three terms and abelian groups except for the last six terms.
+
+::: pf-proof
+Exactness is step [](#seq){.pf-ref}; the group, abelian-group and homomorphism statements are step [](#count){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
