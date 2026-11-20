@@ -179,6 +179,37 @@ audit:
     statement changed, and what this card's preamble asserts of its steps, that
     each transcribes a published argument, holds of the six steps it has.
 
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for issue #168, all six steps, against Hartshorne's Exercise V.2.13
+    and its Theorem V.2.15, Fuentes' Lemma 1.2, Theorems 1.7, 2.1, 2.7 and 2.13
+    and Remark 2.9, and Fuentes--Pedreira's Proposition 1.3, Theorem 3.2(1),
+    Theorem 3.9(3), Theorem 3.10(1) and Corollaries 2.4, 2.9 and 2.13. Read and
+    checked: s2's D.f = 1 and D^2 = 2n-e from C_0.f = 1, f^2 = 0 and C_0^2 = -e,
+    the last from Fuentes--Pedreira's paragraph after their projection formula;
+    s5's count h^0(O_X(D)) = h^0(O_C(b)) + h^0(O_C(b+mathfrak e)) = n + (n-e) =
+    2n-e = d on the two positive-degree summands, so the scroll lies in
+    P^{d-1}; s6's e = -1, n = 2 giving degree 5 in P^4; s1's existence for
+    e >= 0 from Theorem 3.2(1) and for e = -1 from Theorem 2.7 with Remark
+    2.9's item 5; s3's very ampleness imported from part (b) of
+    P-AGH5212ELLRULEDAMPLE; and s4's three model descriptions, Theorem 1.7(2)(d)
+    for a decomposable surface and Theorem 2.13(2)(b) and (2)(c) for the
+    indecomposable ones, at e = -1 and e = 0. Each cited statement was found at
+    its number and says what the step says.
+    Two repairs, both of citation scope, no step's claim changing. In s5,
+    Fuentes--Pedreira's Theorem 3.10(1) is stated for a decomposable ruled
+    surface and was cited for a count asserted of every ruled surface; the step
+    now says which case that theorem covers and takes the indecomposable case
+    from Fuentes' Theorem 2.13, whose proof computes N as the same sum. In the
+    remark, Egbert's count is reported as what he does: he takes the second
+    summand to contribute n-1 and writes the count as 2n-1 and the space as
+    P^{d-2}; 2n-1 equals d-1 only at e = 0, and the count is 2n-e = d.
+    Not checked: Fuentes' Lemma 2.12, which the steps do not use; the printed
+    text of his Remark 2.9 item 4, whose condition on the divisor reads
+    inconsistently in the extraction and which this card does not cite; and no
+    solution set other than the two the remark names.
 ---
 
 ::: {.problem}
@@ -262,7 +293,7 @@ That the image is a scroll in the papers' sense is the identity $D\cdot f=1$ of 
 The dimension is the one the exercise states: $\linearsystem{D}$ maps $X$ into $\PP^{d-1}$, with $d=2n-e$.
 
 ::: pf-proof
-Theorem 3.10(1) of [2], gives $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ for the projective space containing the scroll, together with $\deg(S)=2\deg\mfb-e$; Fuentes' Theorem 2.13, in its proof printed p. 17, computes the same: "R lies in $\mathbf P^N$ with $N=h^0(\OO_S(X_0+\mfb f))$ ... and $N=2b-e-1$", where the paper's $N$ is the dimension of the projective space and not the number of sections.
+Theorem 3.10(1) of [2], is stated for a decomposable ruled surface, and there gives $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ for the projective space containing the scroll, together with $\deg(S)=2\deg\mfb-e$. Fuentes' Theorem 2.13, which covers the indecomposable surface and whose proof computes the same thing, gives $N$ by the identical sum: "R lies in $\mathbf P^N$ with $N=h^0(\OO_S(X_0+\mfb f))$ ... and $N=2b-e-1$", where the paper's $N$ is the dimension of the projective space and not the number of sections.
 
 On the elliptic curve, $h^0(\OO_C(\mfa))=\deg\mfa$ for $\deg\mfa>0$, by Riemann--Roch with $K_C\cong\OO_C$. Here $n\ge e+3>0$ and $n-e\ge3>0$, so the two counts are $n$ and $n-e$ and
 $$
@@ -297,5 +328,5 @@ Luis Fuentes, *Classification of elliptic line scrolls* (arXiv:math/0009050v1): 
 
 Luis Fuentes and Manuel Pedreira, *The Projective Theory of Ruled Surfaces* (arXiv:math/0006204v3), is Fuentes' reference [2], cited there in an earlier numbering: its Theorem 3.2(1), is $e\ge0$ with every $e\ge0$ occurring; its Theorem 3.9(3), is the very-ampleness criterion for a decomposable surface, cited as [2, Theorem 2.8]; its Theorem 3.10(1), is $N=h^0(\OO_X(\mfb))+h^0(\OO_X(\mfb+\mfe))-1$ with degree $2\deg\mfb-e$, cited as [2, Theorem 2.9].
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries two absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$, and its later $4$ and $0$ are $5$ and $1$. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, computes $h^0=2n-1=d-1$ and so places the scroll in $\PP^{d-2}$; the correct count is $2n-e=d$, which step [](#s5){.pf-ref} takes from Theorem 3.10(1) of [2]. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 13 of §2.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.2.13, argues as steps [](#s3){.pf-ref} to [](#s5){.pf-ref} do --- very ampleness from 5.2.12(b), $D\cdot f=1$, $D^2=2n-e$, and the count $h^0(\OO_C(n))+h^0(\OO_C(n-e))=2n-e$ --- and takes $e=-1$, $n=2$ for the degree-five example, but it does not construct the surface of invariant $e$, and the very-ampleness step it imports, its 5.2.12, carries two absolute values that are wrong: at $e=-1$ with $\deg\mfb=1$ it gives $h^0(\OO_X(C_0+\mfb f))=2$ where the value is $3$, and its later $4$ and $0$ are $5$ and $1$. Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.2.13, counts $h^0\bigl(\OO_C(n)\oplus\OO_C(n-e)\bigr)$ by taking the second summand to contribute $n-1$, so writes the count as $2n-1$ and the ambient space as $\PP^{d-2}$; the second summand has degree $n-e>0$ and so contributes $n-e$, the count is $2n-e=d$ and the space $\PP^{d-1}$. His $2n-1$ is $d-1$ only at $e=0$, where the two agree, and is two short at $e=-1$. The count used in step [](#s5){.pf-ref} is the correct one. Algebraic Geometry II, National Taiwan University, 2020 Spring, has no entry for Exercise 13 of §2.
 :::
