@@ -11323,3 +11323,15 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Repair.** `e0caf3f679` cites Exercise 2.5 for the two-piece argument and leaves the countable step as the displayed union of preimages.
 
 **Uncertainty.** Folland's printed book is not retained; the numbers rest on the repository's OCR of the exercise pages and the statement-preserving text, which agree.
+
+## 2026-11-20, #179: Molien's formula and Gelfand's formula — the statements to cite, and no retained text that states them
+
+**Object and need.** `corpus/theory/Algebra/T-MOLIEN.md:17-23` and `corpus/theory/Algebra/T-GELFND.md:17-24` remain uncited under CITE-8 after the reader's report on #179. Their companion `T-NOETHD` is now cited to Cox--Little--O'Shea, *Ideals, Varieties, and Algorithms*, Chapter 7, §3, Theorem 5, which I read in the retained extraction `tmp/sources/cox-little-oshea-2007-ideals-varieties-algorithms.md`.
+
+**Molien's formula.** Searched that extraction, Chapter 7 §2 ("Finite Matrix Groups and Rings of Invariants") and §3 ("Generators for the Ring of Invariants") and the exercise sets of both sections, by name and by the Hilbert-series formula. Found: §3 names the theorem only — "The main tool is Molien's Theorem … This theorem can be found in Chapter 7 of BENSON and GROVE (1985) and Chapter 2 of STURMFELS (1993)" — and Exercise 12 of §3 uses it. The book never states it. Fulton--Harris, *Representation Theory*, mentions only the Burnside--Molien theorem on tensor powers, not the Hilbert series.
+
+**Gelfand's formula.** Searched every extraction in `tmp/sources/` for "spectral radius" and "Gelfand"; no text there states the formula. The statement needed is Rudin, *Functional Analysis*, Theorem 10.13 (2nd edition), which is not retained, so I did not read it and do not cite it.
+
+**Statements to be cited.** (i) Molien: for a finite subgroup $G\subseteq\GL_n(\CC)$ acting on $\CC[V]$, the Hilbert series of the invariant ring is $\sum_{d\geq0}\dim_\CC(\CC[V]^G)_d\,t^d=\frac1{\size G}\sum_{g\in G}\det(1-tg)^{-1}$; the works Cox--Little--O'Shea name are D. Benson and C. Grove, *Finite Reflection Groups* (1985), Chapter 7, and B. Sturmfels, *Algorithms in Invariant Theory* (1993), Chapter 2, neither of which is retained. (ii) Gelfand: for $A\in M_n(\CC)$ and a norm $\norm{\cdot}$ on $M_n(\CC)$, $\rho(A)=\lim_{k\to\infty}\norm{A^k}^{1/k}$, with $\rho(A)=\inf_{k\geq1}\norm{A^k}^{1/k}$ for a submultiplicative norm; the statement to read is Rudin, *Functional Analysis*, Theorem 10.13.
+
+**Conclusion and repair.** Both cards stay uncited rather than carrying a locator taken from memory. Adding Benson--Grove, Sturmfels, and Rudin's *Functional Analysis* to Zotero and regenerating `vocabularies/references.yaml` — or placing a text version of any of them in `tmp/sources/` — would let each card cite a numbered statement that has been read.
