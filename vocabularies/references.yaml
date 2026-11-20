@@ -1097,25 +1097,6 @@ references:
   source: Library of Congress ISBN
   title: Linear Representations of Finite Groups
   type: book
-- id: Ser79
-  author:
-  - family: Serre
-    given: Jean-Pierre
-  call-number: QA247 .S4613
-  citation-key: Ser79
-  collection-number: '67'
-  collection-title: Graduate Texts in Mathematics
-  DOI: 10.1007/978-1-4757-5673-9
-  ISBN: 978-1-4757-5673-9
-  issued:
-  - year: 1979
-  language: en
-  publisher: Springer-Verlag
-  publisher-place: New York
-  source: DOI.org (Crossref)
-  title: Local Fields
-  type: book
-  URL: https://link.springer.com/10.1007/978-1-4757-5673-9
 - id: Sha13
   accessed:
   - year: 2026
