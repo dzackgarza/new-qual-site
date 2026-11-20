@@ -49,6 +49,24 @@ audit:
     $[0,1]^J$ on the ground that it is not locally compact; that is withdrawn. The $\sigma$-compact part of
     the proof below is unchanged and is what the printed skeleton yields. Not checked here: nothing beyond
     the printed exercise's own proof outline is claimed.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against §41 Exercise 10 and found correct, with the printed statement itself the
+    only source and it false. Searched the retained sets first: Poulsen's sheets are §31, §33, §34,
+    §35 and §38, dbFin's index stops at §67 with a gap between §56 and it, and no other set in the
+    checkout reaches §41, so there is nothing to transcribe and none is claimed. The
+    counterexample: for uncountable $J$ the space $X=[0,1]^J$ is Hausdorff and compact by the
+    Tychonoff theorem, hence locally compact and paracompact, and connected by Theorem 23.6, so it
+    is its own component; and it has no countable basis, so the printed conclusion fails. The
+    corrected statement is that each component is a countable union of compact subspaces, and the
+    card proves it: with a locally finite cover of the component by open sets with compact closures,
+    only finitely many members meet a compact closure, so $U_n$ is a finite union of sets with
+    compact closures and its closure is compact by induction, while the union of the $U_n$ is open
+    and closed in the component and hence all of it. Both halves were re-read; the induction and the
+    open-and-closed argument are the printed proof's, carried out. Not checked: whether the book
+    records this erratum anywhere, no errata sheet being in the checkout.
 ---
 
 ::: {.exercise}
