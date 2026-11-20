@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. If the series converged absolutely then a_k tends to 0, so eventually
+    |a_k| <= 1 and hence a_k^2 <= |a_k|; comparison with the convergent series of absolute values
+    would make the squares summable, contradicting the hypothesis. Checked that only eventual
+    boundedness of a_k is needed (not monotonicity), and that the implication runs in the direction
+    that gives the stated conclusion: absolute convergence is excluded, which is what the problem
+    asks.
 ---
 ::: {.problem}
 Let $\{a_k\}$ be a sequence of real numbers such that the series $\sum_{k=1}^{\infty}a_k$ converges and $\sum_{k=1}^{\infty}a_k^2$ diverges.
