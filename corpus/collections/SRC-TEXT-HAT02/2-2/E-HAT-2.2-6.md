@@ -58,7 +58,7 @@ The maps $f_t=R_t\circ f$ form a homotopy from $f$ to a map having $x_0$ as a fi
 
 ::: pf-proof
 
-A homotopy is a continuous family of maps indexed by $t\in[0,1]$ with the stated endpoints (Hatcher p. 3), and $R_t\circ f$ is such a family. At $t=0$ it is $f$, and at $t=1$ it sends $x_0$ to $R_1(f(x_0))=x_0$.
+A homotopy is a continuous family of maps indexed by $t\in[0,1]$ with the stated endpoints, as the definition of homotopy in §1.1 gives it, and $R_t\circ f$ is such a family. At $t=0$ it is $f$, and at $t=1$ it sends $x_0$ to $R_1(f(x_0))=x_0$.
 
 :::
 
