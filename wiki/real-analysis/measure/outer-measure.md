@@ -57,7 +57,7 @@ The [[D-TWUBM|Carathéodory measurable]] subsets of $X$ form a $\sigma$-algebra 
 [[PR-UHWNM]]
 
 ::: {.remark}
-A $\sigma$-finite measure space is a countable union of sets of finite measure ([[D-BXAUS]]), so a theorem proved for finite measures extends to $\sigma$-finite measures by exhaustion.
+A $\sigma$-finite measure space is a countable union of sets of finite measure ([[D-BXAUS]]), so a theorem proved for finite measures can be applied on each set of an exhausting sequence; passing to the union needs its own argument.
 
 :::
 
