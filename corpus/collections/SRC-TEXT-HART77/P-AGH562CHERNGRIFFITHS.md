@@ -486,7 +486,7 @@ h^0(X,A)-1\ge n+1.
 $$
 Hence $h^0(C,L)\ge n+1$.
 
-This is the opening move of the book's hint for V.6.2, printed p. 423: cut
+This is the opening move of the book's hint for V.6.2: cut
 $X$ with a hyperplane and count sections of $\OO_C(1)$.
 :::
 
@@ -501,7 +501,7 @@ $$
 ::: pf-proof
 This is Harris's bound on the geometric genus. J. Harris, *A bound on the
 geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl.
-Sci. (4) 8 (1981), §2, printed pp. 42--44.
+Sci. (4) 8 (1981), §2.
 Written for a surface in $\PP^{n+1}$, with $N=n+1$, the argument is as
 follows.
 
@@ -570,7 +570,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction (Hartshorne, Proposition 8.20, printed p. 182) gives
+Adjunction (Hartshorne, Proposition 8.20) gives
 $$
 \omega_C
 \cong
@@ -658,7 +658,7 @@ $$
 $$
 
 ::: pf-proof
-Clifford's theorem (Hartshorne, Theorem 5.4, printed p. 343) and step [](#hyperplane-restriction-sections){.pf-ref} give
+Clifford's theorem (Hartshorne, Theorem 5.4) and step [](#hyperplane-restriction-sections){.pf-ref} give
 $$
 n+1
 \le
@@ -716,7 +716,7 @@ $$
 $$
 
 ::: pf-proof
-Adjunction in its sheaf form, Proposition II.8.20, printed p. 182, gives
+Adjunction in its sheaf form, Proposition II.8.20, gives
 $$
 \omega_X\restrict_C
 \cong
@@ -731,7 +731,7 @@ $$
 K_X\cdot A.
 $$
 
-Yang Pi-Yeh, solution 5.6.2, printed p. 115, and Egbert, V.6.2, printed
+Yang Pi-Yeh, solution 5.6.2, and Egbert, V.6.2, printed
 p. 303, reach this case too, and both assert $d=2g-2$ in it rather than
 deriving it. Yang reads $2g-2=d+H\cdot K_X\ge d$ off adjunction, $K_X$ being
 effective because $p_g(X)\ne0$, together with $n+1\le h^0(C,L)$ off
@@ -788,7 +788,7 @@ h^0(X,\omega_X)
 =1.
 $$
 
-Yang, printed p. 115, and Egbert, printed p. 303, both cite "theorem 6.2" for the nonemptiness of $\linearsystem{12K_X}$ on a surface that is not ruled --- Yang's "Then by theorem 6.2., we have $\abs{12K}\neq0$" and Egbert's "$\abs{12K}\neq\emptyset$ by thm 6.2" --- and that statement is the book's Theorem 6.1, printed p. 422, $\kappa=-1\Leftrightarrow\linearsystem{12K}=\emptyset\Leftrightarrow X$ rational or ruled, while Theorem 6.2 on the same page is Castelnuovo's criterion. With it $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3, printed p. 422; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3" and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
+Yang, printed p. 115, and Egbert, printed p. 303, both cite "theorem 6.2" for the nonemptiness of $\linearsystem{12K_X}$ on a surface that is not ruled --- Yang's "Then by theorem 6.2., we have $\abs{12K}\neq0$" and Egbert's "$\abs{12K}\neq\emptyset$ by thm 6.2" --- and that statement is the book's Theorem 6.1, $\kappa=-1\Leftrightarrow\linearsystem{12K}=\emptyset\Leftrightarrow X$ rational or ruled, while Theorem 6.2 on the same page is Castelnuovo's criterion. With it $12K_X\sim0$, and $\kappa(X)=0$ by Theorem 6.3; Yang writes "So since $12K=0$, we have $\kappa=0$ by theorem 6.3" and Egbert "But then $12K\sim0$ so at least $\kappa=0$". The passage above,
 from an effective divisor of class $K_X$ meeting the ample class $A$ in zero
 to $\omega_X\cong\OO_X$ and $p_g(X)=1$, is the card's own.
 :::
@@ -815,7 +815,7 @@ $$
 2-q.
 $$
 
-Apply surface Riemann--Roch (Hartshorne, Theorem 1.6, printed p. 362)
+Apply surface Riemann--Roch (Hartshorne, Theorem 1.6)
 [[T-SRFRR]] to $A$.
 Since $K_X\sim0$ and
 $$
@@ -832,7 +832,7 @@ $$
 n+2-q.
 $$
 
-By Kodaira vanishing (Hartshorne, Remark 7.15, printed p. 248)
+By Kodaira vanishing (Hartshorne, Remark 7.15)
 [[T-KODVAN]], using
 $$
 A\cong\omega_X\otimes A
@@ -876,7 +876,7 @@ $\omega_X\otimes\OO_X(H-K_X)\cong\OO_X(H)$. Since $(K_X-H)\cdot H=-d<0$ with
 $H$ ample, $H^0(X,\OO_X(K_X-H))=0$; Riemann--Roch then gives $p_a(X)=1$, in
 Yang's words "then by 5.1.6, $p_a(X)=1$, hence $X$ is a K3 surface by
 theorem 6.3" and in Egbert's "using thm V.1.6, Riemann--Roch we get that
-$p_a(X)=1$", after which Theorem 6.3, printed p. 422, makes $X$ a K3
+$p_a(X)=1$", after which Theorem 6.3, makes $X$ a K3
 surface. With $p_a=p_g-q$ and $p_g=1$ this gives $q=0$. The count of
 $h^0(X,A)$ above is the card's own route to the same number, and it uses
 $K_X\sim\OO_X$ from step [](#trivial-canonical-pg-one){.pf-ref}.
@@ -907,7 +907,7 @@ p_g(X)=1,
 q(X)=0.
 $$
 A smooth projective surface over $\CC$ with trivial canonical bundle and
-$H^1(X,\OO_X)=0$ is a K3 surface, which is how Theorem 6.3, printed p. 422,
+$H^1(X,\OO_X)=0$ is a K3 surface, which is how Theorem 6.3,
 defines one. Hence the second alternative is exactly that $X$ is K3. This
 step is the card's own.
 :::
@@ -924,13 +924,13 @@ in the theorem.
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, printed p. 423, with the hint printed there: cut $X$ with a hyperplane and use Clifford's theorem (IV, 5.4, printed p. 343), and for the last statement use Riemann--Roch on $X$ (Theorem 1.6, printed p. 362) and Kodaira vanishing (Remark 7.15, printed p. 248).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.6, exercise 6.2, with the hint printed there: cut $X$ with a hyperplane and use Clifford's theorem (IV, 5.4), and for the last statement use Riemann--Roch on $X$ (Theorem 1.6) and Kodaira vanishing (Remark 7.15).
 
-The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, printed pp. 42--44, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
+The strict inequality is Harris's theorem. J. Harris, *A bound on the geometric genus of projective varieties*, Ann. Scuola Norm. Sup. Pisa Cl. Sci. (4) 8 (1981), §2, bounds the geometric genus of a nondegenerate variety of dimension $k$ and degree $d$ in $\PP^N$ by
 $$p_g\le\binom{M}{k+1}(N-k)+\binom{M}{k}\varepsilon,\qquad M=\left[\frac{d-1}{N-k}\right],\quad \varepsilon=d-1-M(N-k),$$
 and records that the geometric genus vanishes whenever $d\le k(N-k)+1$ (printed p. 44). For a surface, $k=2$ and $N=n+1$, so $d<2n$ is $d\le2n-1=2(N-2)+1$ and gives $p_g(X)=0$; step [](#harris-bound){.pf-ref} transcribes the two displays this uses, at printed pp. 42--44.
 
-The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, printed p. 115, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2, printed p. 303. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, printed p. 422, having got $\linearsystem{12K}$ nonempty by Theorem 6.1, printed p. 422; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
+The equality case $d=2n$ is treated by Yang Pi-Yeh, *Hartshorne Solutions*, solution 5.6.2, and by A. Egbert, *Solutions to Hartshorne's Algebraic Geometry* (2013), V.6.2. Yang reads $h^2(X,\OO_X)=h^1(C,\OO_C(1))$ and applies Clifford's theorem to get $d\ge2n$ when that group is nonzero; for $d=2n$ he writes $2g-2=d+H\cdot K_X\ge d$ from adjunction and $n+1\le h^0(\OO_H(d))=1-g+d$, and takes $d=2g-2$, $g=n+1$ and $H\cdot K_X=0$; he records $12K\sim0$ and $\kappa(X)=0$ by Theorem 6.3, having got $\linearsystem{12K}$ nonempty by Theorem 6.1; and he closes with $(K_X-H)\cdot H<0$, Exercise V.1.1, $H-K_X$ ample by Nakai--Moishezon, Kodaira vanishing, Serre duality, Riemann--Roch on $X$ (his 5.1.6, Theorem 1.6 printed p. 362) giving $p_a(X)=1$, and Theorem 6.3. Egbert splits on $\OO_H(d)$ itself, takes a nonzero effective $D\sim rK_X$ for $X$ not ruled, and reads $2g-2=d+(1/r)H\cdot D\ge d$ from adjunction; he writes $d=2n$, $g=n+1$ and $d=2(g-1)$, gets $H\cdot K_X=0$ from the genus formula $n+1=p_a(H)=1+\frac12(2n+H\cdot K_X)$, and closes through Theorem V.1.6 with $p_a(X)=1$ and Theorem 6.3.
 
 The equality case itself is the book's own Theorem 5.4: its statement, including the classification of equality as $D=0$, $D=K$, or $C$ hyperelliptic with $D$ a multiple of the $g^1_2$, is printed on p. 343 and its proof on pp. 343--345. Step [](#clifford-equality-canonical){.pf-ref} applies it and excludes the hyperelliptic alternative because $\OO_C(1)$ is very ample. Neither entry above supplies that argument: Yang's chain in the equality case reads $2g-2=d+H\cdot K_X\ge d$ against $n+1\le h^0(\OO_H(d))=1-g+d$, which at $d=2n$ gives $g\le n$ and $g\ge n+1$ and so refutes only the non-special case, while Egbert's $d=2(g-1)$ is the Clifford equality step left unstated.
 :::

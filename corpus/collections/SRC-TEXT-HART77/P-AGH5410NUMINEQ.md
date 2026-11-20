@@ -422,7 +422,7 @@ increasingly and supplies the maximiser analysis of steps [](#ordered-hypotheses
 [](#case-open){.pf-ref}; the three reductions in that analysis are its own one-clause reasons, and
 each is proved on the card.
 Chapter V §4 Exercise 10 of the National Taiwan University *Algebraic Geometry II* homework (2020
-Spring), by Shuang-Yen Lee, printed p. 17, orders them decreasingly and supplies the argument of step
+Spring), by Shuang-Yen Lee, orders them decreasingly and supplies the argument of step
 [](#second-argument){.pf-ref}, which is transcribed in that order.
 
 ::: pf
@@ -707,14 +707,14 @@ writes $4b_4^2$ in place of $5b_4^2$ in its first case, and its equalities $b_2=
 $b_2+b_3+b_4=a$ are stated with the reason that otherwise $b_3$ or $b_2$ could be increased.
 
 National Taiwan University, *Algebraic Geometry II* (2020 Spring, Chin-Lung Wang), Chapter V §4,
-Exercise 10, by Shuang-Yen Lee, printed p. 17: the observation on $x+y=z+w$ and $\abs{x-y}>\abs{z-w}$, the
+Exercise 10, by Shuang-Yen Lee: the observation on $x+y=z+w$ and $\abs{x-y}>\abs{z-w}$, the
 reduction to $a=\max\{b_1+b_2,\frac12(b_1+\cdots+b_5)\}$ in the decreasing order, and the two cases;
 the first is carried out at the two endpoint values of the quadratic in $b_2$, and its initial
 increase of $b_3,b_4,b_5$ to $b_1+b_2=b_3+b_4+b_5$ needs $b_1\le2b_2$; the second compares the vertex
 of a downward quadratic with the midpoint of its range, the printed line carrying one factor of $2$
 too few in that vertex term.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.10, printed p. 111, reduces the
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.10, reduces the
 printed hypotheses to $a-b_1-b_2>0$ and $2a-b_1-\cdots-b_5>0$ in the order $b_1\ge\cdots\ge b_6$, as
 step [](#ordered-hypotheses){.pf-ref} does, and splits into two cases. Its Case I, $b_1\ge b_2+b_5$,
 is a proof: $2b_1b_2\ge2b_2^2+2b_2b_5\ge b_3^2+b_4^2+b_5^2+b_6^2$ together with $a>b_1+b_2$ gives

@@ -50,7 +50,7 @@ Describe them and find their prime ideals.
 :::
 
 ::: {.solution}
-The two-case split and the prime ideals are those of the retained published solutions Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.3, PDF p. 1, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.3, PDF p. 2, both read in their text versions under `tmp/sources/`; the irreducibility is read off the three quotient rings, as Park does.
+The two-case split and the prime ideals are those of the retained published solutions Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 1.3, and Jinhyun Park, *Algebraic Geometry by Robin Hartshorne: Exercises solutions*, Exercise 1.3, both read in their text versions under `tmp/sources/`; the irreducibility is read off the three quotient rings, as Park does.
 
 ::: pf
 

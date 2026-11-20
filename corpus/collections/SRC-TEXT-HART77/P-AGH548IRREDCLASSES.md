@@ -458,7 +458,7 @@ p_a(C)=h^1(C,\OO_C)\ge0,
 $$
 and $H\cdot C\ge1$ because $H$ is ample and $C$ is a curve. If $C^2<0$ then $C^2-H\cdot C\le-2$, so
 $p_a(C)=0$ and $C^2=H\cdot C-2\ge-1$, since $H\cdot C\ge1$; hence $C^2=-1$ and $H\cdot C=1$. A curve of
-degree $1$ on $X$ is a line, and by Theorem 4.9 of the book, printed pp. 402--403, the irreducible
+degree $1$ on $X$ is a line, and by Theorem 4.9 of the book, the irreducible
 curves on $X$ of negative self-intersection are the $27$ lines $E_i,F_{ij},G_j$. Only the ampleness of
 $H$ and the nonnegativity of $p_a$ are used, in every characteristic; the first paragraph of the
 proof of Theorem 4.9 draws the same conclusion in the same way.
@@ -509,7 +509,7 @@ $C\ne L$ for each of the $27$ lines $L$, so $C\cdot L\ge0$.
 Every class in alternative (a) contains an irreducible nonsingular curve.
 
 ::: pf-proof
-By Theorem 4.9 of the book, printed pp. 402--403, the $27$ classes $E_i,F_{ij},G_j$ are the classes
+By Theorem 4.9 of the book, the $27$ classes $E_i,F_{ij},G_j$ are the classes
 of the $27$ lines of $X$, each isomorphic to $\PP^1$.
 :::
 
@@ -537,7 +537,7 @@ the left side is negative for $n>H\cdot E$. So $D$ meets every effective class n
 Second, $D$ is effective: by B. Harbourne, *Anticanonical Rational Surfaces* (24 January 1996,
 arXiv:alg-geom/9509001v2), Corollary II.3, preprint p. 3, a numerically effective divisor meeting the
 anticanonical class nonnegatively lies in $\mathrm{Eff}$, and here $-K_X\cdot D=D\cdot H>0$, while
-$D\cdot H\ge2$: the Hodge index inequality, Theorem V.1.9 of the book, printed p. 364, gives
+$D\cdot H\ge2$: the Hodge index inequality, Theorem V.1.9 of the book, gives
 $3D^2\le(D\cdot H)^2$ with $D^2>0$, so $(D\cdot H)^2\ge4$ and $D\cdot H$ is a positive integer.
 
 Third, the system is base point free and $h^1$ vanishes: since $-K_X\cdot D=D\cdot H\ge2$,
@@ -554,12 +554,12 @@ $0\to\OO_{\PP^3}(-3)\to\OO_{\PP^3}\to\OO_X\to0$ gives $q(X)=h^1(\OO_X)=0$, and
 $p_g(X)=h^0(K_X)=h^0(\OO_X(-1))=0$. Also $D\cdot H\ge2$: the Hodge index theorem, Theorem V.1.9,
 printed p. 364, gives $3D^2\le(D\cdot H)^2$ with $H^2=3$, and $D^2>0$ makes $(D\cdot H)^2\ge3$, so
 the integer $D\cdot H$ has absolute value at least $2$ and is positive because $D$ is nef and $H$
-is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, printed p. 244, gives
+is ample. And $h^2(X,\OO_X(D))=0$: Serre duality, Corollary III.7.7, gives
 $h^2(D)=h^0(K_X-D)=h^0(-H-D)$, and $(-H-D)\cdot H=-3-D\cdot H<0$ with $H$ ample, so $-H-D$ is not
 effective.
 
 Let $Y\in\linearsystem{D}$ be a general member; by the fourth paragraph $Y$ is reduced and
-irreducible. Since $Y$ is a divisor in the smooth surface $X$, Theorem III.7.11, printed p. 245,
+irreducible. Since $Y$ is a divisor in the smooth surface $X$, Theorem III.7.11,
 gives $\omega_Y\cong\restrictionof{(K_X+Y)}{Y}=\restrictionof{(D-H)}{Y}$. From
 $$
 0\longrightarrow\OO_X(K_X)\longrightarrow\OO_X(K_X+D)\longrightarrow\omega_Y\longrightarrow0
@@ -568,15 +568,15 @@ and $h^0(K_X)=p_g(X)=0$, $h^1(K_X)=q(X)=0$, we get
 $$
 p_g(Y)=h^0(Y,\omega_Y)=h^0(X,\OO_X(D-H)).
 $$
-Riemann--Roch on the surface, Theorem V.1.6, printed p. 362, and $h^1(D)=h^2(D)=0$ give
+Riemann--Roch on the surface, Theorem V.1.6, and $h^1(D)=h^2(D)=0$ give
 $$
 h^0(X,\OO_X(D))=\chi(\OO_X(D))=1+\tfrac12(D^2+D\cdot H),
 $$
-and the adjunction formula, Proposition V.1.5, printed p. 361, gives
+and the adjunction formula, Proposition V.1.5, gives
 $$
 p_a(Y)=1+\tfrac12(D^2-D\cdot H).
 $$
-By Bertini's theorem for hyperplane sections, Theorem II.8.18, printed p. 179, a general plane
+By Bertini's theorem for hyperplane sections, Theorem II.8.18, a general plane
 section $H\in\linearsystem{-K_X}$ is a smooth plane cubic, of genus $1$; since
 $\deg\OO_H(D)=D\cdot H\ge2>0$, Riemann--Roch on $H$ gives $h^0(H,\OO_H(D))=D\cdot H$. From
 $$
@@ -626,7 +626,7 @@ since each $b_i(b_i-1)\ge0$ for an integer $b_i$, every entry is $0$ or $1$: wit
 is one entry $1$, and with $\sum_ib_i=4$ it is four entries $1$. For $a=3$ the sum is $2$ and
 $\sum_ib_i=7$; since $b_i(b_i-1)=2$ only for $b_i=2$ and for $b_i=-1$, and an entry $-1$ would leave
 $\sum_ib_i\le4$, exactly one entry is $2$ and the other five are $1$. These are the classes
-$H-G_i$, $H-F_{ij}$ and $H-E_i$, by the classes of those lines in Theorem 4.9, printed pp. 402--403.
+$H-G_i$, $H-F_{ij}$ and $H-E_i$, by the classes of those lines in Theorem 4.9.
 This enumeration of the degree $2$ classes of square $0$ from the two equations is the card's own, in
 the manner of the proof of Theorem 4.9, which finds the $b_i$ of a line by trial.
 
@@ -702,18 +702,18 @@ $p_a(Y)-p_g(Y)=-h^1(X,\OO_X(D-H))\le0$ together with $p_g(Y)\le p_a(Y)$ for a re
 $Y$ nonsingular.
 
 I. V. Dolgachev, *Topics in Classical Algebraic Geometry* (September 27, 2010): Lemma 8.1.3 and its
-proof, printed p. 248, on irreducible curves of negative self-intersection on a weak Del Pezzo
+proof, on irreducible curves of negative self-intersection on a weak Del Pezzo
 surface, whose computation step positive-square-satisfies-the-third-condition repeats. The book
-takes $\CC$ as its base field, so its Theorem 8.2.19, printed p. 265, on the effective cone is not
+takes $\CC$ as its base field, so its Theorem 8.2.19, on the effective cone is not
 used: the numerical effectivity of step third-condition-contains-nonsingular-curve is proved from
-Hartshorne's Theorem 4.11, printed pp. 405--406, which has no hypothesis on the characteristic.
+Hartshorne's Theorem 4.11, which has no hypothesis on the characteristic.
 
-Theorem 4.9 of Hartshorne, printed pp. 402--403, for the $27$ lines and for the curves of negative
-self-intersection; Hartshorne, Theorem III.7.11, printed p. 245, Corollary III.7.7, printed p. 244,
-Theorem V.1.6, printed p. 362, Proposition V.1.5, printed p. 361, Theorem V.1.9, printed p. 364, and
-Theorem II.8.18, printed p. 179, for the genus identity that makes the general member nonsingular.
+Theorem 4.9 of Hartshorne, for the $27$ lines and for the curves of negative
+self-intersection; Hartshorne, Theorem III.7.11, Corollary III.7.7,
+Theorem V.1.6, Proposition V.1.5, Theorem V.1.9, and
+Theorem II.8.18, for the genus identity that makes the general member nonsingular.
 
-Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, printed p. 110, argues both
+Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 5.4.8, argues both
 implications through the blowups $X_r$, $2\le r\le5$: it lists the lines of $X_r$, the $E_i$ and
 $F_{ij}$ with $G$ added at $r=5$, takes the classes $D_0,\ldots,D_5$ of Lemma 4.12 and Corollaries
 4.1 and 4.3, and reads off that $a>b_1+b_2$ for $r<5$ and $a>b_1+b_2+b_5$ for $r=5$ make a class very

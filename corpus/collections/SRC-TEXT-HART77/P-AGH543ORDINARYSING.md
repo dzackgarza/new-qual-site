@@ -519,11 +519,11 @@ Then there exists a finite sequence of quadratic transformations, centered at su
 ::: {.solution}
 Let $C\subseteq\PP^2$ be an irreducible curve of degree $n$, and for a point $Q$ of the plane write $r_Q=\mu_Q(C)$ for the multiplicity of $C$ at $Q$. A point is *bad* if it is not an ordinary multiple point, that is, if its tangent cone is not a product of distinct lines, each with multiplicity one; the exercise asks for a finite sequence of quadratic transformations after which the strict transform has no bad point.
 
-The argument is that of Fulton, *Algebraic Curves* (2008), §7.4, printed pp. 87--91, with Appendix A of that book, printed p. 113, for a field of positive characteristic. It takes successive quadratic transformations, each centred at a bad point of the current curve, and follows the invariant
+The argument is that of Fulton, *Algebraic Curves* (2008), §7.4, with Appendix A of that book, for a field of positive characteristic. It takes successive quadratic transformations, each centred at a bad point of the current curve, and follows the invariant
 $$
 g^*(C)=\binom{n-1}{2}-\sum_{Q}\binom{r_Q}{2},
 $$
-the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2, printed p. 91: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and it is not a reduction to another theorem: the preliminary transformation it prescribes is neutral for $N$ and for $g^*$, and it restores the separability that the count needs, so the same count runs in every characteristic with the bound doubled.
+the sum being taken over the multiple points of $C$. The terminating count is Fulton's Theorem 2: a curve with $N$ non-ordinary multiple points reaches one whose singularities are all ordinary after at most $N+g^*(C)$ steps. In characteristic $p>0$ the reduction is that of his Appendix A, printed p. 113, and it is not a reduction to another theorem: the preliminary transformation it prescribes is neutral for $N$ and for $g^*$, and it restores the separability that the count needs, so the same count runs in every characteristic with the bound doubled.
 
 ::: pf
 
@@ -571,7 +571,7 @@ $$
 with the symmetric formulas $\mu_{P'}(C')=n-r-r''$ and $\mu_{P''}(C')=n-r-r'$; $F'$ is irreducible, $(F')'=F$, and $C'=V(F')$ is the strict transform of $C$.
 
 ::: pf-proof
-This is the opening of Fulton, §7.4, printed p. 87, with (1), (2) and (3) of that section, all three printed p. 88. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
+This is the opening of Fulton, §7.4, with (1), (2) and (3) of that section, all three printed p. 88. On $U=\PP^2-V(XYZ)$ the map $Q$ is its own inverse, so $Q$ is a birational map of $\PP^2$ with itself, and $C'=\overline{Q^{-1}(C\cap U)}$.
 
 For (1), write $F=F_r(X,Y)Z^{n-r}+\cdots+F_n(X,Y)$ with $F_i$ a form of degree $i$; substituting $YZ$, $XZ$, $XY$ for $X$, $Y$, $Z$ gives
 $$
@@ -622,7 +622,7 @@ Part (b) is the case in which the reading is not immediate. Fulton obtains it by
 Let $F$ be irreducible and let $P\in F$ be a point whose projection $\pi_P$ is separable. Then there is a projective change of coordinates $T$ such that $F^T$ is in excellent position and $T([0:0:1])=P$. In characteristic $0$ the hypothesis is automatic, every projection from a point being separable.
 
 ::: pf-proof
-This is Lemma 1 of Fulton, §7.4, printed p. 90, and its input is Problem 5.26 of the same book, printed p. 60: for an irreducible curve of degree $n$ over a field of characteristic $0$ and a point $P$, all but finitely many lines through $P$ meet $C$ in $n-r$ distinct points other than $P$. Fulton's proof of the lemma chooses lines
+This is Lemma 1 of Fulton, §7.4, and its input is Problem 5.26 of the same book: for an irreducible curve of degree $n$ over a field of characteristic $0$ and a point $P$, all but finitely many lines through $P$ meet $C$ in $n-r$ distinct points other than $P$. Fulton's proof of the lemma chooses lines
 $$
 L'\cdot C=rP+P'_{r+1}+\cdots+P'_n,
 \qquad
@@ -632,7 +632,7 @@ L\cdot C=P_1+\cdots+P_n,
 $$
 with all the named points distinct, and then a change of coordinates carrying $L$, $L'$, $L''$ to $Z$, $Y$, $X$; the last step he defers to Problem 4.16 of the book.
 
-Problem 5.26 is outlined there in three parts, printed p. 60: take $P=[0:1:0]$, as one may after a projective change of coordinates, and the lines $L_\lambda=\{[\lambda:t:1]\}\cup\{P\}$, and write
+Problem 5.26 is outlined there in three parts: take $P=[0:1:0]$, as one may after a projective change of coordinates, and the lines $L_\lambda=\{[\lambda:t:1]\}\cup\{P\}$, and write
 $$
 F=A_r(X,Z)Y^{n-r}+\cdots+A_n(X,Z),
 \qquad
@@ -647,11 +647,11 @@ then $G_\lambda(t)=F(\lambda,t,1)$ has degree $n-r$ whenever $A_r(\lambda,1)\neq
 $g^*(C)$ is a nonnegative integer.
 
 ::: pf-proof
-The sum is an integer. Fulton, Theorem 2 of §5.4, printed p. 60, proves
+The sum is an integer. Fulton, Theorem 2 of §5.4, proves
 $$
 \sum_{Q}\binom{r_Q}{2}\le\binom{n-1}{2}
 $$
-for an irreducible plane curve of degree $n$, by counting the conditions that a form $G$ of degree $n-1$ is made to satisfy at the multiple points of $C$ and at further simple points of $C$, applying Corollary 1 of Bézout to $C$ and $G$, and reading the resulting inequality backwards. Rüd's Proposition 22, printed p. 27, states the same nonnegativity, but its first case, $\partial F/\partial z\ne0$, applies Bézout to $F$ and $\partial F/\partial z$ and gets only $\sum_Q r_Q(r_Q-1)\le n(n-1)$, which gives $g^*(C)\ge-(n-1)$ and not $g^*(C)\ge0$; the nonnegativity used here is Fulton's.
+for an irreducible plane curve of degree $n$, by counting the conditions that a form $G$ of degree $n-1$ is made to satisfy at the multiple points of $C$ and at further simple points of $C$, applying Corollary 1 of Bézout to $C$ and $G$, and reading the resulting inequality backwards. Rüd's Proposition 22, states the same nonnegativity, but its first case, $\partial F/\partial z\ne0$, applies Bézout to $F$ and $\partial F/\partial z$ and gets only $\sum_Q r_Q(r_Q-1)\le n(n-1)$, which gives $g^*(C)\ge-(n-1)$ and not $g^*(C)\ge0$; the nonnegativity used here is Fulton's.
 :::
 
 :::
@@ -687,7 +687,7 @@ both sides of which are $\tfrac12(n^2-r^2-3n+r+2)$, as $2\binom{k}{2}=k(k-1)$ sh
 Let $N$ be the number of non-ordinary multiple points of $C$. Then a finite sequence of quadratic transformations, of length at most $N+g^*(C)$, carries $C$ to a curve whose only singularities are ordinary multiple points.
 
 ::: pf-proof
-This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic transformations, centring each one at a non-ordinary multiple point, and observes from (7) and (8) of the same section that "at each step, either $C'$ has one less non-ordinary multiple point than $C$, or $g^*(C')=g^*(C)-\sum_i\frac{r_i(r_i-1)}{2}<g^*(C)$", the second alternative being (8) in the form step [](#genus-invariant-drops){.pf-ref} states it, with $r_i=\mu_{P_i}(C')$, and concluding that "if the original curve $C$ has $N$ non-ordinary multiple points, we reach the desired curve after at most $N+g^*(C)$ steps". The nonnegativity of $g^*$ that his argument uses is his Theorem 2 of §5.4, printed p. 60, which step [](#genus-invariant-nonnegative){.pf-ref} transcribes.
+This is Fulton, Theorem 2 of §7.4. He takes successive quadratic transformations, centring each one at a non-ordinary multiple point, and observes from (7) and (8) of the same section that "at each step, either $C'$ has one less non-ordinary multiple point than $C$, or $g^*(C')=g^*(C)-\sum_i\frac{r_i(r_i-1)}{2}<g^*(C)$", the second alternative being (8) in the form step [](#genus-invariant-drops){.pf-ref} states it, with $r_i=\mu_{P_i}(C')$, and concluding that "if the original curve $C$ has $N$ non-ordinary multiple points, we reach the desired curve after at most $N+g^*(C)$ steps". The nonnegativity of $g^*$ that his argument uses is his Theorem 2 of §5.4, which step [](#genus-invariant-nonnegative){.pf-ref} transcribes.
 :::
 
 :::
@@ -696,7 +696,7 @@ This is Fulton, Theorem 2 of §7.4, printed p. 91. He takes successive quadratic
 Assume $\operatorname{char}k=p>0$. Then the transformation sequence of step [](#termination){.pf-ref} exists in this characteristic, at most $2(N+g^*(C))$ transformations sufficing: where the projection from the chosen point is inseparable, one preliminary quadratic transformation, centred at a point of multiplicity $0$ or $1$ and two points off $C$, changes neither $N$ nor $g^*$, creates only ordinary points, and makes the projection from the image of that point separable.
 
 ::: pf-proof
-This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$. A terrible $P$ forces $p\mid(n-r)$: the projection $\pi_P\colon C\to\PP^1$ has degree $n-r$, a general line through $P$ meeting $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity; if $\pi_P$ were separable its general fibre would consist of $n-r$ distinct reduced points, whereas a terrible $P$ has non-reduced fibres over infinitely many lines, so the general fibre is not reduced and $\pi_P$ is not separable, and the inseparable degree of a finite morphism of curves is then a power $p^e>1$ dividing its degree $n-r$. Fulton states this at the head of Appendix A, "P can only be terrible if $p$ divides $n-r$", from Problem 5.26, printed p. 60. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
+This is Appendix A of Fulton, printed p. 113. Call $P$ *terrible* for $F$ if infinitely many lines through $P$ meet $C$ in fewer than $n-r$ distinct points other than $P$. A terrible $P$ forces $p\mid(n-r)$: the projection $\pi_P\colon C\to\PP^1$ has degree $n-r$, a general line through $P$ meeting $C$ in $P$ with multiplicity $r$ and in $n-r$ further points counted with multiplicity; if $\pi_P$ were separable its general fibre would consist of $n-r$ distinct reduced points, whereas a terrible $P$ has non-reduced fibres over infinitely many lines, so the general fibre is not reduced and $\pi_P$ is not separable, and the inseparable degree of a finite morphism of curves is then a power $p^e>1$ dividing its degree $n-r$. Fulton states this at the head of Appendix A, "P can only be terrible if $p$ divides $n-r$", from Problem 5.26. The lines through $P$ form a line of the dual plane, so for a terrible $P$ the dual curve of $C$ contains infinitely many points of a line and, being irreducible, is that line; hence $F$ has at most one terrible point, and lines meeting $C$ in $n$ distinct points always exist.
 
 If the chosen bad point $P$ is terrible for $F$, Fulton takes a quadratic transformation centred at a point $Q$ of multiplicity $m=0$ or $m=1$, so that $P$ lies on no fundamental line, and writes $F'$ for the transform; the two remaining centres are taken off $C$, so that $n'=\deg F'=2n-m$. Since $p$ divides $n-r$,
 $$
@@ -727,17 +727,17 @@ Steps [](#algebraic-transform-multiplicities){.pf-ref} and [](#excellent-positio
 :::
 
 ::: {.remark title="Published solution"}
-The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, printed p. 407, and its notion of ordinary singularity is that of (I, Ex. 5.14).
+The exercise is Hartshorne, *Algebraic Geometry* (1977), V.4, exercise 4.3, and its notion of ordinary singularity is that of (I, Ex. 5.14).
 
 The proof is William Fulton, *Algebraic Curves: An Introduction to Algebraic Geometry* (2008), §7.4 "Quadratic Transformations": the standard quadratic transformation on printed p. 87, the formulas (1), (2) and (3) on printed p. 88, good and excellent position with (4) to (7) on printed pp. 88--90, the invariant $g^*$ and (8) on printed p. 90, Lemma 1 on printed p. 90, resting on Problem 5.26 and on Theorem 2 of §5.4, both printed p. 60, Theorem 2 of §7.4 on printed p. 91, and Appendix A "Nonzero Characteristic" on printed p. 113. Appendix A is where the characteristic-$p$ case is settled, once it is observed that the preliminary transformation Fulton prescribes there is neutral for $N$ and for $g^*$ and restores the hypothesis of his Lemma 1: that observation is step [](#positive-characteristic){.pf-ref}, and with it his Theorem 2 runs unchanged in every characteristic.
 
-Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, printed p. 25, states excellent position; Propositions 20 and 21, printed pp. 26--27, prove the sum $\sum_i I(P_i,C'\cap L)=n$ and the multiplicities $n$, $n-r$, $n-r$, and Proposition 21 states the ordinariness of $P$, $P'$ and $P''$ in its second part while its proof reaches only those multiplicities, so that passage stays the card's own; the invariant $g^*$ is defined in the paragraph before his Remark 23, printed p. 27, and Proposition 22, printed p. 27, states that it is a nonnegative integer; Theorem 13, printed p. 28, gives the finite sequence; and §7.3, printed p. 40, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, printed p. 27, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
+Thomas Rüd, *Resolution of singularities on projective curves* (2015), treats the same theorem: Proposition 19, states excellent position; Propositions 20 and 21, prove the sum $\sum_i I(P_i,C'\cap L)=n$ and the multiplicities $n$, $n-r$, $n-r$, and Proposition 21 states the ordinariness of $P$, $P'$ and $P''$ in its second part while its proof reaches only those multiplicities, so that passage stays the card's own; the invariant $g^*$ is defined in the paragraph before his Remark 23, and Proposition 22, states that it is a nonnegative integer; Theorem 13, gives the finite sequence; and §7.3, treats a field of positive characteristic. Three of its arguments do not hold as printed, and the proof above uses none of the three: Proposition 19 infers from the irreducibility of $F$ that the section $G_\lambda$ is irreducible and therefore has no multiple root, which does not follow --- an irreducible polynomial over an algebraically closed field is linear. Theorem 13 uses Remark 23, which says that an ordinary multiple point contributes nothing to $g^*$, whereas an ordinary double point contributes $1$. And Proposition 22's first case, $\partial F/\partial z\ne0$, reaches only $\sum_Q r_Q(r_Q-1)\le n(n-1)$.
 :::
 
 ::: {.remark title="Other published treatments"}
-Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 3 of §4, PDF pp. 15--16, chooses the two auxiliary points through the bad point and analyses the multiplicity at the image point in the chart $x=(t+\mu)y$; its case analysis ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ … induction on this then we are done", and it does not show that the three contracted points are ordinary.
+Algebraic Geometry II, National Taiwan University, 2020 Spring (course of Chin-Lung Wang), *Chapter V Surfaces* homework solutions, Exercise 3 of §4, chooses the two auxiliary points through the bad point and analyses the multiplicity at the image point in the chart $x=(t+\mu)y$; its case analysis ends "if there's a $k$ such that $e'_k+k=e$ since we can factor into linear equations such that every direction has multiplicity less than $e$ … induction on this then we are done", and it does not show that the three contracted points are ordinary.
 
-Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, printed p. 109, states the termination criterion: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
+Yang Pi-Yeh, *Hartshorne Solutions*, exercise 5.4.3, states the termination criterion: with $P_2,P_3$ chosen so that $P_1P_i$ meets $C$ transversally at $P_1$, the image point $R_i$ lies on neither fundamental line and $\mu(R_i)<\mu(P_1)$, so the process stops. It does not show that the images at the three contraction points are ordinary, and it separates no characteristic.
 
-Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, PDF p. 286, is the single sentence "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27".
+Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013), Exercise V.4.3, is the single sentence "See Algebraic Curves over Finite Fields by Hirschfeld, Theorem 3.27".
 :::
