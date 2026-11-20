@@ -13,6 +13,8 @@ topics:
 
 # Homotopy and homotopy groups
 
+Homotopies and homotopy equivalence, the fundamental group and van Kampen's theorem, and the higher homotopy groups.
+
 ## Homotopies and homotopy equivalence
 
 [[D-Z7I7F]]
