@@ -283,7 +283,7 @@ Step [](#condition-implies-finite){.pf-ref} proves one implication and steps [](
 ::: {.remark title="Published solution"}
 The exercise is II.3.4, printed p. 91 of Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$.
 
-Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.4, PDF p. 20, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim localizes ($A\to B$ finite implies $A_f\to B_f$ finite), obtains affineness of $f^{-1}(\Spec A)$ from 2.17, and then recovers module finiteness over $A$ from finiteness over the localizations by multiplying generators by powers of the localizing elements.
+Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.4, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim localizes ($A\to B$ finite implies $A_f\to B_f$ finite), obtains affineness of $f^{-1}(\Spec A)$ from 2.17, and then recovers module finiteness over $A$ from finiteness over the localizations by multiplying generators by powers of the localizing elements.
 The proof above is the same three moves, with the module statement isolated as a lemma for $B\to A$ and the common distinguished cover proved explicitly.
 Agree.
 :::

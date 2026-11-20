@@ -124,7 +124,7 @@ In particular $\dim Y_{i}=\dim Y$ for every nonempty $Y_{i}$, as the hint also a
 :::
 
 ::: {.remark title="Published solution"}
-Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.6, PDF p. 2, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.6, PDF p. 4, text version `tmp/sources/hartshorne-solutions-troiani.md`: both identify the degree-zero part of $S(Y)_{x_i}$ with $A(Y_i)$, obtain $S(Y)_{x_i}\cong A(Y_i)[x_i,x_i^{-1}]$, and conclude through transcendence degrees that $\dim S(Y)=1+\dim Y_i$, then use that the $Y_i$ cover $Y$ to get $\dim S(Y)=1+\dim Y$; Troiani isolates the two ring facts as lemmas, one of them a criterion for a polynomial extension to be injective.
+Richard E. Borcherds, *Hartshorne, Chapter 1: Answers to exercises* (1994), Exercise 2.6, text version `tmp/sources/hartshorne-solutions-borcherds.md`, and William Troiani, *Hartshorne Exercise Solutions* (October 2020), Exercise 2.6, text version `tmp/sources/hartshorne-solutions-troiani.md`: both identify the degree-zero part of $S(Y)_{x_i}$ with $A(Y_i)$, obtain $S(Y)_{x_i}\cong A(Y_i)[x_i,x_i^{-1}]$, and conclude through transcendence degrees that $\dim S(Y)=1+\dim Y_i$, then use that the $Y_i$ cover $Y$ to get $\dim S(Y)=1+\dim Y$; Troiani isolates the two ring facts as lemmas, one of them a criterion for a polynomial extension to be injective.
 The proof above writes the two isomorphisms through the substitutions $y_j\mapsto x_j/x_i$, checks that $\bar x_i$ is transcendental over the degree-zero part by the degree of $c_j\bar x_i^j$, and takes the cover step from Exercise I.1.10(b).
 Agree.
 :::

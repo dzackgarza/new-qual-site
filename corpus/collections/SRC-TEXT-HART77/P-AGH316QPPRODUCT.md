@@ -209,7 +209,7 @@ $$
 S\subseteq\PP^N,\qquad N=nm+n+m,
 $$
 be the Segre variety of [[P-AGH214SEGRE]], with homogeneous coordinates $z_{ij}=x_iy_j$, and let $\sigma:\PP^n\times\PP^m\to S$ be the Segre map; we identify $\PP^n\times\PP^m$ with $S$ through $\sigma$.
-Harris, *Algebraic Geometry: A First Course* (1992), Example 2.21, printed p. 28: "The Segre embedding, however, gives it one, which we will adopt as a definition of the product as a variety."
+Harris, *Algebraic Geometry: A First Course* (1992), Example 2.21: "The Segre embedding, however, gives it one, which we will adopt as a definition of the product as a variety."
 
 ::: pf
 
@@ -319,7 +319,7 @@ The restricted projections make $X\times Y$ a categorical product of $X$ and $Y$
 
 ::: pf-proof
 
-Harris, Example 2.21, printed pp. 28--29: "this is actually a categorical product, i.e., the projection maps $\pi_X:X\times Y\to X$ and $\pi_Y:X\times Y\to Y$ are regular and the variety $X\times Y$, together with these projection maps, satisfies the conditions for a product in the category of quasi-projective varieties and regular maps. What this means is that given an arbitrary variety $Z$ and a pair of maps $\alpha:Z\to X$ and $\beta:Z\to Y$, there is a unique map $\alpha\times\beta:Z\to X\times Y$ whose compositions with the projections $\pi_X$ and $\pi_Y$ are $\alpha$ and $\beta$, respectively.
+Harris, Example 2.21: "this is actually a categorical product, i.e., the projection maps $\pi_X:X\times Y\to X$ and $\pi_Y:X\times Y\to Y$ are regular and the variety $X\times Y$, together with these projection maps, satisfies the conditions for a product in the category of quasi-projective varieties and regular maps. What this means is that given an arbitrary variety $Z$ and a pair of maps $\alpha:Z\to X$ and $\beta:Z\to Y$, there is a unique map $\alpha\times\beta:Z\to X\times Y$ whose compositions with the projections $\pi_X$ and $\pi_Y$ are $\alpha$ and $\beta$, respectively.
 It is not hard to see that this is the case: to begin with, the map $\alpha\times\beta$ is certainly uniquely determined by $\alpha$ and $\beta$; we have to check simply that it is regular.
 This we do locally: say $r_0\in Z$ is any point, mapping via $\alpha$ and $\beta$ to points $p\in X$ and $q\in Y$.
 Suppose $p$ lies in the open set $Z_0\ne0$ in $\PP^n$, so that in a neighborhood of $r_0$ the map $\alpha$ is given by
@@ -361,7 +361,7 @@ The Math Stack Exchange answers, which have no printed page and are cited by ans
 - Parakee, accepted answer 1527360 to question 1527108, *The product of quasi-projective varieties is a quasi-projective variety*: the irreducibility argument of step [](#s2){.pf-ref}, from the fibres of the first projection.
 - Fnark Man, accepted answer 5099544 to question 5099541, *Product of varieties is categorical product (Hartshorne)*: the affine-chart route to part (c).
 
-Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 2.21, printed pp. 28--29: the definition of the product as the Segre image, and the categorical product with the regularity computation in the coordinates $[1,\ldots,f_i,\ldots,g_j,\ldots,f_ig_j,\ldots]$.
+Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133, Springer, 1992, Example 2.21: the definition of the product as the Segre image, and the categorical product with the regularity computation in the coordinates $[1,\ldots,f_i,\ldots,g_j,\ldots,f_ig_j,\ldots]$.
 
 Aaron Bertram, *Algebraic Geometry* (Math 6130, University of Utah), Section 4, Proposition 4.3 with the paragraphs following it, printed pp. 5--6, states the universality "in the category of prevarieties" and proves it for $W\to\PP^m\times\PP^n$; the extension to subvarieties is one sentence, and the display that follows it,
 $$
