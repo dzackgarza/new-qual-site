@@ -52,6 +52,26 @@ audit:
     and covers X, that local finiteness of W passes to R, that the fibres of two distinct points are
     closed and disjoint, and that the neighbourhood N = Y - p(X - O) meets only the members of F that
     O meets.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 read, with two citation repairs. The solution named the retained file
+    `tmp/sources/feryll-2015-munkres-58-9-10.md` as the text of Feryll's "Paracompactness and
+    Perfect Maps (6.41.8)"; that file is his post on §58 Exercises 9--10, on degrees of maps
+    $S^n\to S^n$, and contains nothing on perfect maps. The post was fetched at the URL now in
+    the solution and read: it states the exercise as "if $X$ is Hausdorff, $X$ is paracompact if
+    and only if $Y$ is", proves the forward direction with the families $p^{-1}(A)\cap B$ over a
+    locally finite refinement of $\{p(V_y)\}$, and the reverse with a locally finite refinement of
+    the pullback cover and its images under $p$; it does not prove $Y$ Hausdorff. Part (a) of the
+    card is that argument; part (b) is the card's own, and the solution now says so. The step
+    separating two fibres cited "Theorem 33.2", which is the heredity and productivity of complete
+    regularity; the separation is the definition of normality (§32), and the step now cites that.
+    Everything else was checked and stands: the lemma on $W=Y-p(X-U)$, the cover and local
+    finiteness of part (a), and in part (b) the closed refinement of Lemma 41.3 (3), the
+    closedness and refinement of the images $p(F)$, and their local finiteness through the compact
+    fibre. Citation by number: §41 Exercise 8, §31 Exercise 7, Lemma 41.3 and Theorem 41.1.
+
 ---
 
 ::: {.exercise}
@@ -68,7 +88,7 @@ Let $p: X \to Y$ be a perfect map.
 
 ::: {.solution}
 
-The argument is Feryll's, *Praying For Stockholm*, "Paracompactness and Perfect Maps (6.41.8)", read in the retained text `tmp/sources/feryll-2015-munkres-58-9-10.md`, with the two points the card states where that post compresses them: the closed refinement of part (b) and the local finiteness of the images $p(F)$.
+Part (a) is the argument of Feryll, *Praying For Stockholm*, "Paracompactness and Perfect Maps (6.41.8)" (31 December 2014), http://feryll.blogspot.com/2014/12/paracompactness-and-perfect-maps-6418.html, read 2026-11-20; that post states the exercise in the combined form "if $X$ is Hausdorff, $X$ is paracompact if and only if $Y$ is" and does not ask for $Y$ to be Hausdorff. Part (b) here is the card's own: the closed refinement $\mathcal F$ of the pullback cover, the closed images $p(F)$, their local finiteness through the compact fibre, and the separate proofs that $Y$ is Hausdorff and regular.
 
 ::: pf
 
@@ -125,7 +145,7 @@ Given an open cover $\mathcal U$ of $X$, step [](#part-a-local){.pf-ref} produce
 (b) If $X$ is paracompact Hausdorff, then $Y$ is Hausdorff.
 
 ::: pf-proof
-$X$ is normal by Munkres, Theorem 41.1. Let $y_1\ne y_2$ and put $F_i=p^{-1}(y_i)$; the fibres are compact, hence closed in the Hausdorff space $X$, and disjoint, so normality gives disjoint open sets $O_1\supseteq F_1$ and $O_2\supseteq F_2$ (Munkres, Theorem 33.2). Step [](#lemma){.pf-ref} gives open $W_i\ni y_i$ with $p^{-1}(W_i)\subseteq O_i$, and $W_1\cap W_2=\varnothing$ because a point of the intersection would have a nonempty fibre inside $O_1\cap O_2$.
+$X$ is normal by Munkres, Theorem 41.1. Let $y_1\ne y_2$ and put $F_i=p^{-1}(y_i)$; the fibres are compact, hence closed in the Hausdorff space $X$, and disjoint, so normality gives disjoint open sets $O_1\supseteq F_1$ and $O_2\supseteq F_2$ (the definition of normality, §32). Step [](#lemma){.pf-ref} gives open $W_i\ni y_i$ with $p^{-1}(W_i)\subseteq O_i$, and $W_1\cap W_2=\varnothing$ because a point of the intersection would have a nonempty fibre inside $O_1\cap O_2$.
 :::
 
 :::
