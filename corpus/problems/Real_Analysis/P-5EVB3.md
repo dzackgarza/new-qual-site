@@ -28,7 +28,7 @@ $$
 \norm{fg}_1 \leq \norm{f}_1 \norm{g}_{\infty }.
 $$
 
-(b) $\norm{\wait}_{\infty }$ is a norm on $L^{\infty }$ making it a Banach space.
+(b) $\norm{\cdot}_{\infty }$ is a norm on $L^{\infty }$ making it a Banach space.
 
 (c) $\norm{f_n - f}_{\infty } \converges{n\to \infty }\to 0 \iff$ there exists an $E\in \mathcal{M}$ such that $\mu(X\sm E) = 0$ and $f_n \to f$ uniformly on $E$.
 
