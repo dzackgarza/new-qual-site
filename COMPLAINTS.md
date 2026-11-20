@@ -10497,3 +10497,19 @@ with "wedge of spheres" in the title.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** The open items of #168 are unchanged: V.5.6's five steps, V.5.8(b), the five unread V.4.16 items, IV.2.3 and IV.3.11. They are to be read against numbered statements from here on.
+
+## 2026-11-20, #179: five of the twelve new cards cite a read source, seven cannot, and two briefed sources do not contain the theorem
+
+**Object and need:** the twelve cards written for #179 (`T-DIVTHM`, `T-LHOP`, `T-REARR`, `T-DICKSN`, `T-NOETHD`, `T-MOLIEN`, `T-GELFND`, `T-JTRUDI`, `T-FROBCH`, `T-HOOK`, `T-FSIND`, `D-INVRING`) and the locator each should carry.
+
+**Read and cited**, from the text versions in `tmp/sources`: `T-DIVTHM` [@Mun91, Theorem 38.8] — the statement was corrected to Munkres' hypotheses (a compact $n$-manifold in $\RR^n$, $G$ a vector field on an open set containing $M$), not a "region whose boundary is a finite union of smooth pieces"; `T-LHOP` [@Rud76, Theorem 5.13] — corrected: the second case needs $g\to+\infty$ with $f$ unrestricted, not $\lvert f\rvert\to\infty$ and $\lvert g\rvert\to\infty$; `T-REARR` [@Rud76, Theorem 3.54] — the trailing claim is narrowed to the $\alpha=\beta$ corollary that 3.54 gives; `T-FSIND` [@Ser77, sec. 13.2, Theorem 31 and Proposition 38] — rewritten: Serre states the theorem by the invariant bilinear form and its symmetry, and the three types, and never the averaged indicator $\frac1{\lvert G\rvert}\sum_g\chi(g^2)$, which the card had asserted; `T-HOOK` [@FH91, Hook Length Formula 4.12] — confirmed as stated.
+
+**Tested and false in the brief:** Serre contains no Molien formula — `Molien` occurs nowhere in `serre-1977-linear-representations-finite-groups.md`, and §12.2 is "Schur indices", not the indicator; `T-MOLIEN` therefore has no read source among the six books. The other five books were searched too: Fulton–Harris mentions Molien only in the index entry "Molien, 24--25" for the Burnside–Molien theorem (Problem 2.37), and Cox–Little–O'Shea mentions "Molien's Theorem" only as a pointer to Benson–Grove and Sturmfels without stating it.
+
+**Read but not citable:** `T-DICKSN` and `D-INVRING` are supported by Cox–Little–O'Shea, *Ideals, Varieties, and Algorithms*, 3rd ed. — ch. 2 §4 Theorem 5 (Dickson's Lemma) and ch. 7 §2 Definition 7 (the ring of invariants) — but that work has no key in `vocabularies/references.yaml`, whose header states "Do not edit: add the work to Zotero instead", and the export has no second source here. Adding the key by hand is refused by that instruction; the two cards carry the statement and no locator.
+
+**No read source at all:** `T-NOETHD`, `T-GELFND`, `T-JTRUDI`, `T-FROBCH`, as briefed, and `T-MOLIEN` for the reason above.
+
+**Uncertainty:** the five locators are read off the OCR text in `tmp/sources`, whose numbering is the printed numbering where the OCR preserves it; `[@FH91, Hook Length Formula 4.12]` is a named display rather than a numbered theorem, and Serre's three types are section prose cited through Proposition 38.
+
+**Repair:** add Cox–Little–O'Shea to Zotero and re-export to cite `T-DICKSN` and `D-INVRING`; obtain Benson–Grove or Sturmfels for `T-MOLIEN`, and Derksen–Kemper, Horn–Johnson, Macdonald and Isaacs for the remaining five.
