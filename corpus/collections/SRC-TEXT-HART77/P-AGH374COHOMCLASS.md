@@ -1076,15 +1076,17 @@ audit:
     one has d = 2 = 0 in k, so the functional u |-> <u, alpha_0> is zero on the
     one-dimensional H^p, nothing pins eta(Y), and the class 1_{P^n} is not even
     defined by the characterization the exercise gives it. The step now proves
-    alpha_0 != 0 directly: it pairs alpha_0 with the class eta_{P^n}(L') of a
-    linear subspace L' of dimension n-p chosen so that each intersection
-    L' cap H_1 cap ... cap H_k has dimension m-k, reads the pairing as
-    t_{L'}(alpha_0 restricted to L') by the definition of eta(L'), computes the
-    restriction as c(O_{L'}(1))^m, and
-    evaluates t_{L'}(c(O_{L'}(1))^m) by iterating the divisor formula s2 along
-    L' = L'_0 sup ... sup L'_m = one point, which is t_P(1) = 1 by (N) in every
-    characteristic; the case m = 0 is recorded as the same display with no
-    iteration. The count on Y now ends at <eta(Y), alpha_0> = d, and the scalar
+    alpha_0 != 0 from the class of a point: writing c for the class of a
+    hyperplane, the display of the step reads alpha_0 = c^m for the linear
+    subspace L; a point Q cut out by n hyperplanes in general position has
+    eta(Q) = c^n by s3 and t_{P^n}(eta(Q)) = 1 by s1, so c^n != 0, and then
+    c^m != 0 because c^m cup c^{n-m} = c^n; the cases m = 0 and m = n are the
+    empty power and the point itself. Neither d nor a genericity condition on a
+    second subspace enters, and the two lines are the same in every
+    characteristic. An earlier form of this repair paired alpha_0 with the class
+    of a complementary linear subspace L' and iterated s2 along a flag in L'; the
+    power of c replaces it because it needs no genericity, and the card carries
+    that form. The count on Y now ends at <eta(Y), alpha_0> = d, and the scalar
     paragraph reads eta(Y) = d . 1_{P^n} off the perfect pairing by comparing
     the two pairings with alpha_0, so no step inverts d and the identity stands
     as printed when d = 0 in k. A new remark works the conic in characteristic 2
@@ -1365,27 +1367,11 @@ $$
 $$
 the empty product for $m=0$ being $1$.
 
-**The nonvanishing of $\alpha_0$.** The identity $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d$ of the count below does not itself show that $\alpha_0$ is nonzero, because $d$ may be $0$ in $k$. The class is proved nonzero by pairing it with the class of a linear subspace of the complementary dimension. Let $L'\subseteq\PP^n$ be a linear subspace of dimension $m=n-p$, so that $\dim L+\dim L'=n$, chosen general enough that
-$$\dim\bigl(L'\cap H_1\cap\cdots\cap H_k\bigr)=m-k
-\qquad\text{for } 0\le k\le m ;$$
-each of these finitely many conditions is open and nonempty in the Grassmannian of $m$-planes, because $H_1\cap\cdots\cap H_k$ has dimension $n-k$ and $m\ge k$, so such $L'$ exist. Then $L\cap L'$ is the case $k=m$, a single reduced point $P$, and
+**The nonvanishing of $\alpha_0$.** The identity $\langle\eta(Y),\alpha_0\rangle_{\PP^n}=d$ of the count below does not itself show that $\alpha_0$ is nonzero, because $d$ may be $0$ in $k$. Write $c=c(\mcl(H))$ for the class of a hyperplane, which does not depend on the hyperplane because $\mcl(H)\cong\OO_{\PP^n}(1)$ for every hyperplane $H$; then the display above reads $\alpha_0=c^{\smile m}$. Let $Q=K_1\cap\cdots\cap K_n$ be a point cut out by $n$ hyperplanes in general position, so that every partial intersection $K_1\cap\cdots\cap K_k$ is a linear subspace of codimension $k$, hence nonsingular, and $\mcl(K_k)\cong\OO_{\PP^n}(1)$ for every $k$. Step [](#s3){.pf-ref} applied to $K_1,\ldots,K_n$ gives $\eta(Q)=c^{\smile n}$, and step [](#s1){.pf-ref} gives
 $$
-L'=L'_0\supseteq L'_1\supseteq\cdots\supseteq L'_m=\{P\},
-\qquad L'_k=L'\cap H_1\cap\cdots\cap H_k ,
+t_{\PP^n}\bigl(c^{\smile n}\bigr)=t_{\PP^n}\bigl(\eta(Q)\bigr)=1 .
 $$
-is a chain of nonsingular linear subspaces of dimensions $m,m-1,\ldots,0$, each $L'_k$ being a nonsingular divisor of $L'_{k-1}$ cut out by $H_k$. By the definition of $\eta(L')$ in the exercise,
-$$
-\langle\eta(L'),\alpha_0\rangle_{\PP^n}
-=t_{\PP^n}\bigl(\eta(L')\smile\alpha_0\bigr)
-=t_{L'}\bigl(\restrictionof{\alpha_0}{L'}\bigr) ,
-$$
-and $\restrictionof{c(\mcl(H_k))}{L'}=c(\OO_{L'}(1))$ for every $k$, restriction being a ring homomorphism and $\restrictionof{\mcl(H_k)}{L'}=\OO_{L'}(H_k\cap L')=\OO_{L'}(1)$, so $\restrictionof{\alpha_0}{L'}=c(\OO_{L'}(1))^{\,m}$ by the display for $\alpha_0$. Applying step [](#s2){.pf-ref} to the divisor $L'_k$ of $L'_{k-1}$, with $\nu=c(\OO_{L'}(1))^{\,m-k}$, for $k=1,\ldots,m$ in turn, gives
-$$
-t_{L'}\bigl(c(\OO_{L'}(1))^{\,m}\bigr)
-=t_{L'_1}\bigl(c(\OO_{L'_1}(1))^{\,m-1}\bigr)
-=\cdots=t_{L'_{m}}(1)=t_P(1)=1 ,
-$$
-the equality $t_{L'_{m}}(1)=t_P(1)$ because $L'_m=\{P\}$ is a single reduced point, and the last one by (N). Hence $\langle\eta(L'),\alpha_0\rangle_{\PP^n}=1\ne0$ and $\alpha_0\ne0$ in $H^m(\PP^n,\Omega_{\PP^n}^m)$, whatever the characteristic of $k$ and whatever $d$ is. The case $m=0$ is the same display with no iteration and empty products: $L=\PP^n$, $L'=\{P\}$ is a point, $\alpha_0=1$, and $t_P(1)=1$.
+Hence $c^{\smile n}\ne0$ in $H^n(\PP^n,\Omega_{\PP^n}^n)$, and since $c^{\smile m}\smile c^{\smile(n-m)}=c^{\smile n}$, no power of $c$ is zero. So $\alpha_0=c^{\smile m}\ne0$ in $H^m(\PP^n,\Omega_{\PP^n}^m)$, in every characteristic and for every $d$; the cases $m=0$ and $m=n$ are the empty power $1$ and the computation just made.
 
 **The pairing of the two classes.** Write $D_k=Y\cap H_k$, which is a nonsingular divisor of $Y$ for every $k$, write $c_Y=c(\OO_Y(D_k))\in H^1(Y,\Omega_Y)$, the same class for every $k$ because $\OO_Y(D_k)\cong\OO_Y(1)$, and write $c_Y^{\,m}$ for its $m$-fold cup power. Since $\eta(Y)$ is the class of the functional $w\mapsto t_Y(\restrictionof{w}{Y})$, for every $w\in H^m(\PP^n,\Omega_{\PP^n}^m)$,
 $$
@@ -1660,7 +1646,7 @@ $$
 =t_{[1:0:0]}(1)+t_{[0:1:0]}(1)
 =2=0 ,
 $$
-where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ and $H^1(\PP^2,\Omega_{\PP^2}^1)$ is one-dimensional, this forces $\eta(C)=0=\deg C\cdot1_{\PP^2}$, which is part (b) for this conic. The nonvanishing of $\alpha_0$ used here is the complementary-subspace computation of step [](#s4){.pf-ref}, which reads no degree.
+where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ and $H^1(\PP^2,\Omega_{\PP^2}^1)$ is one-dimensional, this forces $\eta(C)=0=\deg C\cdot1_{\PP^2}$, which is part (b) for this conic. The nonvanishing of $\alpha_0$ used here is the computation of step [](#s4){.pf-ref} with the class of a point, which reads no degree.
 :::
 
 ::: {.remark title="Published solutions"}
