@@ -49,6 +49,28 @@ audit:
     there are no (n+1)-cells. The same argument is applied to Y. Not claimed: the result for
     skeleta of a single complex, or any statement about the maps themselves rather than the
     skeleta.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The card said no retained solution set solves §4.1 Exercise 14, and that is false. Proudfoot's
+    Homework #6, retained as `tmp/sources/uoregon-proudfoot-634-hw6.pdf`, solves exactly this exercise,
+    by the same argument: replace f and g by cellular maps, then apply cellular approximation to the
+    homotopy g f = id_X so that it restricts to X_n x [0,1] -> X_{n+1} = X_n. The rendered sentence now
+    cites that solution by set and exercise number and says what the card adds — the relative form of
+    cellular approximation keeping the ends fixed, and where the hypothesis on the (n+1)-cells is used.
+    The proof steps are unchanged. Page locators removed from the same paragraph; Theorem 4.8 and
+    Example 4.11 are cited by number.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 14, Theorem 4.8,
+    Example 4.11 and the published solution named above. Correct: cellular maps carry n-skeleta into
+    n-skeleta; the restricted homotopy is homotopic rel X^n x boundary to a cellular one by the
+    relative form, so it lands in the (n+1)-skeleton, which is the n-skeleton because there are no
+    (n+1)-cells; and the same argument with X and Y exchanged gives the other composite. No step
+    changed in this pass.
 ---
 
 ::: {.problem}
@@ -56,7 +78,7 @@ Use cellular approximation to show that the $n$-skeleta of homotopy equivalent C
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves Section 4.1 Exercise 14. It is checked against Hatcher, Algebraic Topology, Section 4.1 Exercise 14, printed p. 359, and against the cellular approximation theorem of Section 4.1 (p. 349).
+The argument is that of a retained published solution: **Nicholas Proudfoot, *Math 634: Algebraic Topology I* (University of Oregon, Fall 2015), Solutions to Homework #6, §4.1 Exercise 14**, which replaces $f$ and $g$ by cellular maps and then applies cellular approximation to the homotopy $g\circ f\simeq\operatorname{id}_X$ to land it in $X_n\times[0,1]\to X_{n+1}=X_n$. Checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 14, and against the cellular approximation theorem of §4.1, Theorem 4.8, together with its relative form for homotopies, Example 4.11. The card's own contribution is the explicit statement that the relative form is what keeps the ends fixed, and the identification of where the hypothesis on the $(n+1)$-cells is used.
 
 ::: pf
 
