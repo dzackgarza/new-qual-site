@@ -94,7 +94,9 @@ $$
 $$
 
 ::: pf-proof
-This is the conclusion of step [](#boundary-simply-connected){.pf-ref}.
+
+Step [](#boundary-simply-connected){.pf-ref} shows the quotient is simply connected. A path-connected space is simply connected exactly when its fundamental group is trivial, so $\pi_1=1$.
+
 :::
 
 :::
