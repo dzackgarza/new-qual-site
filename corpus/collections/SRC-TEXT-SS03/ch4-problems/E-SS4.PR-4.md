@@ -49,6 +49,18 @@ audit:
     $\rho>M$. (b) uses Paley--Wiener (Theorem 3.3) for $\operatorname{supp}\hat f\subseteq[-M,M]$, the
     Cauchy-type integral $\Phi$, and the geometric series to identify $\Phi=g$ on $\abs{w}>M$, which
     extends $g$ across $\CC\setminus[-M,M]$. No part is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the first event: this is Chapter 4, Problem 4, on printed p. 133 (PDF
+    p. 152), not an "exercise" of "§5.5". Re-read there today: the asterisk the print sets before
+    "4." is recorded in the remark, and the two parts of the card's statement are the printed ones,
+    including the printed form of (b) with the sign that the card's remark repairs. The two
+    displayed formulas of the print do differ in sign, as the second event above states. Not checked
+    today: that sign defect was neither re-derived nor re-evaluated in this pass and the earlier
+    note's numerical check was not re-run; step s1's estimate (Cauchy's estimates at
+    $R=n/(2\pi\tau)$ and Stirling) was read and is correct.
 ---
 
 ::: {.exercise}
@@ -213,5 +225,5 @@ and subtracting gives $\hat f(x)$. That is, $\hat f$ is the jump of the extensio
 :::
 
 ::: {.remark}
-The printed exercise writes $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\frac{\hat f(\xi)}{\xi-z}d\xi$ together with $\hat f(x)=\lim(g(x+i\varepsilon)-g(x-i\varepsilon))$. Those two displays differ in sign from part (a): with the normalization $A_n=a_nn!/(2\pi i)^{n+1}$ of part (a) and the book's convention $\hat f(\xi)=\int f(x)e^{-2\pi ix\xi}dx$, the identity that holds is $g(w)=\frac{1}{2\pi i}\int\frac{\hat f(\xi)}{w-\xi}d\xi$, whose jump is $-\hat f$. The correction is recorded in this card's audit events; the mathematics above is self-consistent and is the version proved.
+The book marks this problem with an asterisk (Chapter 4, Problem 4, printed p. 133). The printed exercise writes $\Phi(z)=\frac{1}{2\pi i}\int_{-M}^{M}\frac{\hat f(\xi)}{\xi-z}d\xi$ together with $\hat f(x)=\lim(g(x+i\varepsilon)-g(x-i\varepsilon))$. Those two displays differ in sign from part (a): with the normalization $A_n=a_nn!/(2\pi i)^{n+1}$ of part (a) and the book's convention $\hat f(\xi)=\int f(x)e^{-2\pi ix\xi}dx$, the identity that holds is $g(w)=\frac{1}{2\pi i}\int\frac{\hat f(\xi)}{w-\xi}d\xi$, whose jump is $-\hat f$. The correction is recorded in this card's audit events; the mathematics above is self-consistent and is the version proved.
 :::
