@@ -38,6 +38,14 @@ audit:
       sentence naming the source of the logarithm's power series wrote `\S6`, a section sign
       written as a TeX command outside a math span, which the HTML writer drops; it now reads
       the character `§6`. Mathematics and wording unchanged.
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed pages of the two halves of
+      the exercise. It now cites Chapter 3, Exercise 11, and says the extension is part of that
+      exercise, so no page number remains in the rendered text. The statement is unchanged and the
+      argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -49,7 +57,7 @@ Then, prove that the above result remains true if we assume only that $\abs{a} \
 :::
 
 ::: {.solution}
-The statement is Exercise 11 of [@SS03, ch. 3 (p. 104)], printed for $\abs{a}<1$ and then extended on the next page: "prove that the above result remains true if we assume only that $\abs{a}\le1$" (p. 105).
+The statement is Exercise 11 of [@SS03, ch. 3], printed for $\abs{a}<1$ and then extended in the same exercise: "prove that the above result remains true if we assume only that $\abs{a}\le1$".
 
 For $\abs a<1$ the logarithm is expanded in a uniformly convergent power series on the circle, and every exponential term integrates to $0$; for $\abs a=1$ the integral is reduced by a rotation to $a=1$, and then obtained as the limit of the case $\abs a=r<1$ as $r\uparrow1$, the limit being taken under the integral sign by dominated convergence with an integrable majorant. The argument is this card's own: no retained solution set covers the exercises of Stein--Shakarchi.
 
