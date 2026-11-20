@@ -39,7 +39,7 @@ Use Nakayama's lemma to prove the following.
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.8, printed p. 41 of the held scan, transcribed and checked against the exercise as printed at printed p. 125, part by part.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.5.8, transcribed and checked against the exercise as printed, part by part.
 The fibers in the definition of $\varphi$ are finite-dimensional because $\mcf$ is [[D-QNTZY|coherent]].
 
 ::: pf

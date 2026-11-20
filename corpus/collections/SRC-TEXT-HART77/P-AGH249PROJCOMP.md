@@ -32,7 +32,7 @@ Use the Segre embedding of I.2.14 to give a closed immersion $\PP^r \times \PP^s
 :::
 
 ::: {.solution}
-The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.9, p. 37 of the held scan, transcribed and checked against the exercise as printed at printed p. 107: the reduction to closed immersions into projective space over $Y$ and over $Z$, the Segre immersion composing them, and the case $S=\Spec\ZZ$ handled on the open pieces $D_+(x_i)$. The page carries the folio 37 and the running heads of that set.
+The proof is Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.4.9, transcribed and checked against the exercise as printed: the reduction to closed immersions into projective space over $Y$ and over $Z$, the Segre immersion composing them, and the case $S=\Spec\ZZ$ handled on the open pieces $D_+(x_i)$. The page carries the folio 37 and the running heads of that set.
 
 ::: pf
 
