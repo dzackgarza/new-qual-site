@@ -19,7 +19,7 @@ order: 23
 
 [[T-5AALA]]
 
-::: {.remark title="Parseval's identity for Fourier series"}
+::: {.example title="Parseval's identity for Fourier series"}
 For the orthonormal basis $\theset{e^{ikx}/\sqrt{2\pi}}_{k\in\ZZ}$ of $L^2(-\pi,\pi)$, Parseval's identity ([[T-5AALA]]) reads
 $$
 {1\over 2\pi} \int_{(-\pi, \pi)} \abs{f}^2 = \sum_{k\in \ZZ} \abs{c_k}^2, \qquad c_k \coloneqq {1\over 2\pi } \int_{(-\pi, \pi)} f(x) e^{-ikx} \dx.
