@@ -27,7 +27,7 @@ An example of a series of continuous functions that converges non-uniformly to a
 ## Sequences of numbers
 
 ::: {.slogan}
-$\limsup_n a_n$ is the largest limit of a convergent subsequence of $(a_n)$ in $[-\infty,\infty]$, and $\liminf_n a_n$ is the smallest.
+The [[D-HOKQD|limit superior]] $\limsup_n a_n$ is the largest limit of a convergent subsequence of $(a_n)$ in $[-\infty,\infty]$, and the limit inferior $\liminf_n a_n$ is the smallest [@Rud76, ch. 3, Definition 3.16 and Theorem 3.17].
 
 :::
 
