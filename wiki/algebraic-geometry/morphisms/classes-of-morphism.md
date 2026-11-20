@@ -13,7 +13,9 @@ topics:
 
 [[D-MORIMM]]
 
-A homeomorphism onto a closed subset need not be a closed immersion: the normalization $\AA^1_k\to V(y^2-x^3)$, $t\mapsto(t^2,t^3)$, is a homeomorphism, and $k[t^2,t^3]\to k[t]$ is not surjective.
+::: {.example title="A homeomorphism onto a closed subset that is not a closed immersion"}
+The normalization $\AA^1_k\to V(y^2-x^3)$, $t\mapsto(t^2,t^3)$, is a homeomorphism onto a closed subset, and $k[t^2,t^3]\to k[t]$ is not surjective.
+:::
 
 ## Affine, finite, and finite type
 
