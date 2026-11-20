@@ -43,6 +43,22 @@ audit:
     inside the lemma is the one step kept as a citation of the standard argument, and the card says
     so at that step. Not re-read this session: printed pp. 16 and 375, cited by the statement and the
     argument.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher §4.H Exercise 3, Proposition 0.19, the homotopy lifting property of §4.2 and
+    the relative form of it stated immediately before Theorem 4.41. The argument is right where it is
+    written: the lift of $p_1g\simeq p_2$ producing a fiber-preserving $g'$, the lemma's lift of
+    $ph_t$ producing a fiber-preserving $k_1$, and the final cancellation that turns $m\ell$ and
+    $\ell f$ into $f\ell\simeq_B\mathrm{id}$. One step is still not written out and is now named
+    exactly instead of described: the lifting of the two-parameter homotopy $pJ$ over the square,
+    which is the relative form of the homotopy lifting property — stated in §4.2 for CW pairs and
+    available to a fibration for every CW pair by the paragraph following Theorem 4.41, but not
+    thereby for total spaces that are not CW complexes. The card does not claim to close that
+    passage. Changes are otherwise in citations: the sentence naming a retained file is replaced by
+    the statement that no retained set covers the exercise. No statement changed. Not checked: no
+    certificate.
 ---
 
 ::: {.problem}
@@ -52,7 +68,7 @@ For fibrations $E_1 \to B$ and $E_2 \to B$, show that a fiber-preserving map $E_
 
 ::: {.solution}
 
-The argument is the card's own, following the printed remark that the statement is Eckmann--Hilton dual to Proposition 0.19; no retained solution set in `tmp/sources` covers Section 4.H Exercise 3. A fibration is a map with the homotopy lifting property for all spaces, and $\simeq_{B}$ denotes a homotopy through fiber-preserving maps.
+No retained solution set covers this exercise: Sam's set stops at §4.3, and the retained sets that reach further record no solution for §4.H. The argument is the card's own, following the remark printed with the exercise that the statement is Eckmann--Hilton dual to Proposition 0.19. A fibration is a map with the homotopy lifting property for all spaces, and $\simeq_{B}$ denotes a homotopy through fiber-preserving maps.
 
 Let $p_{1}\colon E_{1}\to B$ and $p_{2}\colon E_{2}\to B$ be fibrations and let $f\colon E_{1}\to E_{2}$ satisfy $p_{2}f=p_{1}$.
 
@@ -103,7 +119,7 @@ Lift the homotopy $ph_{t}$ of maps $E\to B$, which starts at $ph_{0}=p=p\,\mathr
 The homotopy $J$ from $k_{1}u$ to $\mathrm{id}_{E}$ obtained by concatenating $k_{1}u\simeq u$, $h_{0}=u$, $h_{1}=\mathrm{id}_{E}$ has $pJ$ homotopic rel endpoints to the constant homotopy at $p$.
 
 ::: pf-proof
-$k_{1}u\simeq k_{0}u=u$ and $h$ runs from $u$ to $\mathrm{id}_{E}$, so concatenation gives $J$. The two-parameter family made of $h_{t}$ and the lifted $k_{t}$ has both boundary homotopies equal to $ph_{t}$, so it provides a homotopy from $pJ$ to the constant homotopy at $p$ fixing the end maps. This is the one step taken as the standard two-parameter bookkeeping of the dual of Proposition 0.19 rather than expanded.
+$k_{1}u\simeq k_{0}u=u$ and $h$ runs from $u$ to $\mathrm{id}_{E}$, so concatenation gives $J$. The two-parameter family made of $h_{t}$ and the lifted $k_{t}$ has both boundary homotopies equal to $ph_{t}$, so it provides a homotopy from $pJ$ to the constant homotopy at $p$ fixing the end maps. Concretely, the homotopy of maps $E\to B$ that has to be lifted is $(x,r)\mapsto pJ(x,r(1-s))$ read on the square $E\times I\times I$, with the lift prescribed on $E\times\{0\}\times I$ and $E\times I\times\{0\}$; this is the relative form of the homotopy lifting property, which §4.2 states for a CW pair by the lift extension property of $(X\times I,X\times\{0\}\cup A\times I)$ and which a fibration has for every CW pair by the paragraph following Theorem 4.41. When the total spaces are not CW complexes that paragraph does not apply directly, and the passage from the ordinary homotopy lifting property to this lifting problem on a square is the one step of the card not written out.
 :::
 
 :::
