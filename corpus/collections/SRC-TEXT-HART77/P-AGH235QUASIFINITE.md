@@ -207,6 +207,8 @@ Step [](#s3){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), an
 :::
 
 ::: {.remark title="Published solution"}
+The exercise is II.3.5, printed p. 91 of Hartshorne, *Algebraic Geometry* (1977), read in `tmp/sources/hartshorne-1977-algebraic-geometry.pdf`, where printed p. $N$ is PDF p. $N+15$.
+
 Dongryul Kim, *Solutions to Hartshorne's Algebraic Geometry* (Chapters II--III), Chapter II §3, Exercise 3.5, PDF pp. 20--21, text version `tmp/sources/hartshorne-solutions-kim.md`, source revision `6c627eed7b0226249df79b8777f5ac450f17885a`: Kim identifies the fibre as $\Spec(\kappa(y)\otimes_B A)$ and counts its points from Artinianness of a finite-dimensional algebra, proves that a finite morphism is closed by reducing to a surjection of spectra via Nakayama and going up, and takes $X=\AA^1\sqcup(\AA^1-\{0\})\to\AA^1$ for (c).
 The proof above uses lying over in place of Nakayama for (b), and for (c) the disjoint union of $\Gm$ with one point over the origin, which is Kim's example with the two components reordered.
 Agree.
