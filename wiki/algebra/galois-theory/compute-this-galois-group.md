@@ -50,8 +50,6 @@ For $a=1$ the substitution $x = t-b/3$ gives $t^3+pt+q$ with the same discrimina
 Dedekind's theorem applies only to $f\in\ZZ[x]$ and to primes $p$ not dividing the leading coefficient for which $f \bmod p$ is squarefree.
 :::
 
-For such a prime $p$, if $f \bmod p$ factors into irreducibles of degrees $d_1,\ldots,d_k$, then $G$ contains an element of cycle type $(d_1,\ldots,d_k)$.
-
 ::: {.example title="A transposition and a $5$-cycle"}
 Let $f$ be irreducible of degree $5$ with exactly two nonreal roots.
 Complex conjugation restricts to a transposition $\tau\in G$, and $5\divides\size G$, so $G$ contains a $5$-cycle $\sigma$.
