@@ -338,6 +338,18 @@ audit:
     H_{q-1}(S^{n-1} - S^{p-1}) = H_{q-1}(D^n - D) for the proper disk D = f(D^p), the class [S^{q-1}]
     generates the source by step s3, and S^{q-1} bounds E = g(D^q) lying in D^n - D, which is
     contractible, so that class dies in the target. That is the contradiction, and it is correct.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read correct, and recorded as standing under the decision the orchestrator posted on issue #163 for
+    this exercise: no published solution of part (b) as printed was found, so the card's own proof stands
+    once a reader reads it correct. The reading: part (a) is the two transcribed published solutions of the
+    Sources remark; part (b) is the card's, and every step of it was read — the degenerate cases p = 0 and
+    q = 0 by Invariance of Domain, Theorem 2B.3; the generator [S^{q-1}] by steps s1 to s3; the proper
+    disks by the collar extension; and the final contradiction, where §2.B Exercise 3 identifies
+    H_{q-1}(D^n - D) with H_{q-1}(S^{n-1} - S^{p-1}) and the class dies because S^{q-1} bounds the disk E
+    inside D^n - D. The source obligation is closed by the decision, not by a citation.
 ---
 
 ::: {.problem}
