@@ -78,8 +78,4 @@ The fundamental groups of quotients such as projective spaces and closed surface
 
 ## Relation to homology
 
-::: {.fact}
-For a path-connected space $X$, the Hurewicz map induces $\pi_1(X)^{\mathrm{ab}} \cong H_1(X)$.
-A computation of $\pi_1(X)$ therefore determines $H_1(X)$.
-
-:::
+[[T-GL7E6]]
