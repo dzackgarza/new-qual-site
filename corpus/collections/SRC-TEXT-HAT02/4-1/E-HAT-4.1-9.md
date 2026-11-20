@@ -17,6 +17,21 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
+    #161, the pointed-set action, cited to Hatcher. Hatcher's §4.1 records that $\pi_1(A,x_0)$ acts on
+    $\pi_n(X,A,x_0)$ for every $n\ge1$ and on the whole long exact sequence, the action commuting with
+    its maps: printed p. 345, read in the page's own text, whose folio on that leaf reads 345. The
+    solution now states, before the windows, the two instances it uses --- the left action of
+    $\pi_1(B,x_0)$ on $\pi_1(A,x_0)$ through $i_*$, whose orbits are the fibres of $q$ and which is the
+    coset lemma at $\pi_2(X,A,x_0)$, and the action of $\pi_1(A,x_0)$ on $\pi_1(A,B,x_0)$ and
+    $\pi_1(X,B,x_0)$ by concatenation at the endpoint, in which the surjectivity corrections
+    $c\cdot\bar\nu$ and $\rho\cdot r$ are taken --- and that the vertical maps preserve these actions.
+    Exactness at a pointed-set term is recorded there as the image-equals-fibre statement, the fibre
+    being a union of orbits. Nothing else changed: the two $\pi_1$ windows keep the full injectivity and
+    surjectivity proofs of the previous pass. No half at any set-valued window is open.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
     #161, the state of the record, and the reconciliation the acceptance asks for. The notes below this
     one which assert a half of a set-valued window to be open, with the phrase each uses: 2026-11-14,
     "The windows centred at $\pi_1(A,x_0)$ and $\pi_1(X,x_0)$ are not [settled]"; 2026-11-14, "is not
@@ -712,6 +727,8 @@ is exact as a sequence of pointed sets: the components mapping to the distinguis
 
 Throughout, a map of pairs $\varphi:(X,A,x_0)\to(Y,B,y_0)$ induces a ladder between the two sequences, commutative by naturality of the long exact sequence (p. 345), and "exact" for pointed sets means that the image of one map is the fiber of the next over the distinguished element.
 
+*The actions, and the form exactness takes at the pointed-set terms.* Hatcher records at printed p. 345 that $\pi_1(A,x_0)$ acts on $\pi_n(X,A,x_0)$ for every $n\ge1$ and on the whole long exact sequence, the action commuting with its maps; in degree one the action of a loop $\nu$ at $x_0$ on a class $c$ of paths from $A$ to $x_0$ is the class $c\cdot\nu$ of $c$ followed by $\nu$. Two instances are used below. The group $\pi_1(B,x_0)$ acts on $\pi_1(A,x_0)$ by left multiplication through $i_*$, and its orbits are exactly the fibres of $q:\pi_1(A,x_0)\to\pi_1(A,B,x_0)$ --- that is the coset lemma of the $\pi_2(X,A,x_0)$ window. And $\pi_1(A,x_0)$ acts on the pointed sets $\pi_1(A,B,x_0)$ and $\pi_1(X,B,x_0)$ by concatenation at the endpoint, which is the product taken in the two surjectivity corrections $c\cdot\bar\nu$ and $\rho\cdot r$. Each vertical map is induced by a map of triples and preserves these actions, so each square of the ladder is a square of action sets; exactness at a pointed-set term says that the image of the incoming map is the fibre of the outgoing map over the distinguished element, and by equivariance that fibre is a union of orbits of the group acting on the term.
+
 ### (a) The five-lemma
 
 *Terms of degree $\ge2$: the group case.* The standard five-lemma argument applies verbatim in a window of five group terms, since every map there is a homomorphism. Write the ladder as
@@ -849,7 +866,7 @@ Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(
   $$
   \partial\eta=[\ell]\in\pi_1(C,y_0),\qquad \ell=p^{-1}\cdot\lambda\cdot q .
   $$
-  Since $\beta:\pi_2(X,A,x_0)\to\pi_2(Y,C,y_0)$ is onto, choose $\mu$ with $\beta(\mu)=\eta$. Let $\nu=\partial\mu\in\pi_1(A,x_0)$, and write $\bar\nu$ for its image in $\pi_1(A,B,x_0)$. Naturality of the pair boundary gives $\gamma(\bar\nu)=q_C([\ell])$, where $q_C:\pi_1(C,y_0)\to\pi_1(C,D,y_0)$ is induced by inclusion. Concatenation with the loop $\nu$ at the endpoint is well-defined on relative classes, and the corrected class $c\cdot\bar\nu$ has image $[p\cdot\ell]$ in $\pi_1(C,D,y_0)$.
+  Since $\beta:\pi_2(X,A,x_0)\to\pi_2(Y,C,y_0)$ is onto, choose $\mu$ with $\beta(\mu)=\eta$. Let $\nu=\partial\mu\in\pi_1(A,x_0)$, and write $\bar\nu$ for its image in $\pi_1(A,B,x_0)$. Naturality of the pair boundary gives $\gamma(\bar\nu)=q_C([\ell])$, where $q_C:\pi_1(C,y_0)\to\pi_1(C,D,y_0)$ is induced by inclusion. Concatenation with the loop $\nu$ at the endpoint is well-defined on relative classes, and the corrected class $c\cdot\bar\nu$ has image $[p\cdot\ell]$ in $\pi_1(C,D,y_0)$. The product $c\cdot\bar\nu$ is taken in the action of $\pi_1(A,x_0)$ on $\pi_1(A,B,x_0)$ by concatenation at the endpoint (printed p. 345), an action that $\gamma$ preserves because it is induced by a map of triples.
 
   The usual endpoint-fixed cancellation of $p\cdot p^{-1}$ in $C$ gives $[p\cdot\ell]=[\lambda\cdot q]$. The remaining initial segment lies in $D$ and can be absorbed into the varying start point. Explicitly, parametrize $\lambda\cdot q$ by $\lambda(2s)$ on $0\le s\le1/2$ and $q(2s-1)$ on $1/2\le s\le1$, and define
   $$
@@ -894,7 +911,7 @@ Now let $c'\in\pi_2(Y,C)$ and put $y=h'(c')$. Since $\delta$ is onto, $y=\delta(
   $$
   gives a class $b$ with $\gamma_{b_0}(b)=[\lambda^{-1}]$. Choose a representative path $\rho$ of $b$; it lies in $A$, starts at a point of $B$, and ends at $b_0$. If $\rho'$ is its image path in $C$, the equality $\gamma_{b_0}(b)=[\lambda^{-1}]$ supplies a homotopy from $\rho'$ to $\lambda^{-1}$ whose starting point stays in $D$ and whose endpoint is fixed at $p(0)$. Concatenating that homotopy with $p$ shows that $[\rho'\cdot p]=[\lambda^{-1}\cdot p]$ in $\pi_1(Y,D,y_0)$.
 
-  The concatenation $\rho\cdot r$ is defined because $\rho$ ends at $b_0=r(0)$, and it represents a class in $\pi_1(X,B,x_0)$. Its image is $[\rho'\cdot p]$. Since $q\simeq\lambda^{-1}\cdot p$ with endpoints fixed,
+  The concatenation $\rho\cdot r$ is defined because $\rho$ ends at $b_0=r(0)$, and it represents a class in $\pi_1(X,B,x_0)$. Its image is $[\rho'\cdot p]$, the product taken in the same action of $\pi_1(X,x_0)$ on $\pi_1(X,B,x_0)$ by concatenation at the endpoint. Since $q\simeq\lambda^{-1}\cdot p$ with endpoints fixed,
   $$
   \delta([\rho\cdot r])=[\rho'\cdot p]=[\lambda^{-1}\cdot p]=[q]=c'.
   $$
