@@ -195,9 +195,8 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-B2JER]]
 
-::: {.example title="Applications of the cup product"}
-On a closed oriented manifold, the cup product of the Poincaré duals of transversely intersecting closed oriented submanifolds is the Poincaré dual of their intersection.
-$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge.
+::: {.example title="The cup product distinguishes the torus from a wedge"}
+$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge ([[D-B2JER|cup product]]).
 :::
 
 [[D-ZOU5G]]
@@ -219,10 +218,6 @@ If spaces $X$ and $Y$ both deformation retract onto a common subspace $A$, then 
 [[D-QK5BM]]
 
 [[D-S7L6M]]
-
-::: {.example title="A right exact functor"}
-For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right exact, and it is exact if and only if $M$ is flat.
-:::
 
 [[D-455S6]]
 
