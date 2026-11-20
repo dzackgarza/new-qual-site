@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -50,7 +60,7 @@ If the fibration $p: E \to B$ is a homotopy equivalence, show that $p$ is a fibe
 :::
 
 ::: {.solution}
-The exercise is solved in the retained set **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Section 4.3 Exercise 15, PDF p. 29** (`tmp/sources/hatcher-solutions-sam-2008.pdf`): $p$ is fiber-preserving, and a homotopy inverse of $p$ is fiber-preserving by Exercise 14. The steps below are that answer, with the class computation it leaves implicit written out.
+The exercise is solved in the retained set **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Section 4.3 Exercise 15** (`tmp/sources/hatcher-solutions-sam-2008.pdf`): $p$ is fiber-preserving, and a homotopy inverse of $p$ is fiber-preserving by Exercise 14. The steps below are that answer, with the class computation it leaves implicit written out.
 
 ::: pf
 
@@ -67,7 +77,7 @@ By Exercise 14, two maps $f_1:A_1\to B$ and $f_2:A_2\to B$ are equivalent when t
 The natural map $\mathcal{F}(B)\to\mathcal{M}(B)$ is a bijection, so two fibrations over $B$ with the same class in $\mathcal{M}(B)$ have the same class in $\mathcal{F}(B)$.
 
 ::: pf-proof
-This is Exercise 14 (printed p. 420), and only its injectivity is used. In the retained set's solution of that exercise, surjectivity comes from the inclusion $A\hookrightarrow E_f$ being a homotopy equivalence, and injectivity from Exercise 4.3.13 together with Proposition 4.65: if $p_1\simeq p_2 g$ with $g$ a homotopy equivalence, the two fibrations are fiber homotopic, hence $E_1\to B$ and $E_2\to B$ are fiber homotopy equivalent.
+This is Exercise 14, and only its injectivity is used. In the retained set's solution of that exercise, surjectivity comes from the inclusion $A\hookrightarrow E_f$ being a homotopy equivalence, and injectivity from Exercise 4.3.13 together with Proposition 4.65: if $p_1\simeq p_2 g$ with $g$ a homotopy equivalence, the two fibrations are fiber homotopic, hence $E_1\to B$ and $E_2\to B$ are fiber homotopy equivalent.
 :::
 
 :::
@@ -76,7 +86,7 @@ This is Exercise 14 (printed p. 420), and only its injectivity is used. In the r
 The fibration $p:E\to B$ is fiber homotopy equivalent over $B$ to the trivial fibration $1_B:B\to B$.
 
 ::: pf-proof
-By Exercise 11 (printed p. 420) the set $\mathcal{F}(B)$ is the set of fiber homotopy equivalence classes of fibrations $E\to B$. Both $p:E\to B$ and $1_B:B\to B$ are fibrations over $B$: the first by hypothesis, and the identity has the homotopy lifting property trivially, a homotopy being its own lift. Step [](#class-in-M){.pf-ref} puts them in one class in $\mathcal{M}(B)$, and step [](#bijection){.pf-ref} transfers that to one class in $\mathcal{F}(B)$, which is the assertion: there are fiber-preserving maps $E\to B$ and $B\to E$ over $B$ whose two composites are homotopic to the identities through fiber-preserving maps.
+By Exercise 11 the set $\mathcal{F}(B)$ is the set of fiber homotopy equivalence classes of fibrations $E\to B$. Both $p:E\to B$ and $1_B:B\to B$ are fibrations over $B$: the first by hypothesis, and the identity has the homotopy lifting property trivially, a homotopy being its own lift. Step [](#class-in-M){.pf-ref} puts them in one class in $\mathcal{M}(B)$, and step [](#bijection){.pf-ref} transfers that to one class in $\mathcal{F}(B)$, which is the assertion: there are fiber-preserving maps $E\to B$ and $B\to E$ over $B$ whose two composites are homotopic to the identities through fiber-preserving maps.
 :::
 
 :::
@@ -85,7 +95,7 @@ By Exercise 11 (printed p. 420) the set $\mathcal{F}(B)$ is the set of fiber hom
 $\boxed{p:E\to B\text{ is a fiber homotopy equivalence of }E\text{ with the trivial fibration }1_B:B\to B.}$
 
 ::: pf-proof
-The map $p$ is fiber-preserving over $B$, since $1_B\circ p=p$, and it is a homotopy equivalence by hypothesis; a fiber-preserving map between fibrations over $B$ that is a homotopy equivalence is a fiber homotopy equivalence, which is Exercise 4.H.3 (printed p. 466), dual to Proposition 0.19. With the class computation of step [](#fiber-equivalent){.pf-ref} this is the retained set's answer, and it is the exercise's assertion.
+The map $p$ is fiber-preserving over $B$, since $1_B\circ p=p$, and it is a homotopy equivalence by hypothesis; a fiber-preserving map between fibrations over $B$ that is a homotopy equivalence is a fiber homotopy equivalence, which is Exercise 4.H.3, dual to Proposition 0.19. With the class computation of step [](#fiber-equivalent){.pf-ref} this is the retained set's answer, and it is the exercise's assertion.
 :::
 
 :::

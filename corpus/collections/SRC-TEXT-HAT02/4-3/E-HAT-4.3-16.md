@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     The connectedness step said H~_0 is "the reduced group Z^{pi_0}", which is not the reduced
@@ -67,7 +77,7 @@ audit:
 ---
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own. It uses the mapping-path fibration of Proposition 4.64, the long exact sequence of Theorem 4.41, the action of Exercise 10, the Hurewicz theorem in degrees $1$ and $n\ge2$, and Whitehead's theorem, each at the printed place named in its step.
+No retained solution set covers this exercise, so the argument is the card's own. It uses the mapping-path fibration of Proposition 4.64, the long exact sequence of Theorem 4.41, the action of Exercise 10, the Hurewicz theorem in degrees $1$ and $n\ge2$, and Whitehead's theorem, each cited by the numbered statement named in its step.
 
 ::: pf
 
@@ -75,7 +85,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 There is a fibration $p\colon E_f\to Y$ with $E_f\simeq X$, fibre $F_f=p^{-1}(y_0)$, and $\pi_1(E_f)\to\pi_1(Y)$ an isomorphism.
 
 ::: pf-proof
-Let $E_f=\{(x,\gamma):x\in X,\ \gamma\colon I\to Y,\ \gamma(0)=f(x)\}$ and $p(x,\gamma)=\gamma(1)$; Proposition 4.64 (printed p.~407) says $p$ is a fibration. The map $x\mapsto(x,\mathrm{const}_{f(x)})$ includes $X$ in $E_f$, and $H_s(x,\gamma)=(x,\gamma_s)$ with $\gamma_s(t)=\gamma(st)$ is a deformation retraction of $E_f$ onto the image of $X$, so $E_f\simeq X$. The hypothesis that $f$ induces an isomorphism on $\pi_1$ therefore says that $\pi_1(E_f)\to\pi_1(Y)$ is an isomorphism.
+Let $E_f=\{(x,\gamma):x\in X,\ \gamma\colon I\to Y,\ \gamma(0)=f(x)\}$ and $p(x,\gamma)=\gamma(1)$; Proposition 4.64 says $p$ is a fibration. The map $x\mapsto(x,\mathrm{const}_{f(x)})$ includes $X$ in $E_f$, and $H_s(x,\gamma)=(x,\gamma_s)$ with $\gamma_s(t)=\gamma(st)$ is a deformation retraction of $E_f$ onto the image of $X$, so $E_f\simeq X$. The hypothesis that $f$ induces an isomorphism on $\pi_1$ therefore says that $\pi_1(E_f)\to\pi_1(Y)$ is an isomorphism.
 :::
 
 :::
@@ -93,7 +103,7 @@ $F_f$ is nonempty, since it contains the pair $(x_0,\mathrm{const}_{y_0})$. The 
 $\pi_1(F_f)=0$.
 
 ::: pf-proof
-The fibration of step [](#setup){.pf-ref} has long exact sequence $\cdots\to\pi_1(F_f)\to\pi_1(E_f)\to\pi_1(Y)\to\pi_0(F_f)$ (Theorem 4.41, printed p.~376). Since $\pi_1(E_f)\to\pi_1(Y)$ is injective, the image of $\pi_1(F_f)$ in $\pi_1(E_f)$ is zero. Exercise 10 (printed p.~419) provides a homomorphism $\pi_1(E_f)\to\operatorname{Aut}(\pi_n(F_f))$ whose composite with $\pi_1(F_f)\to\pi_1(E_f)$ is the usual action of $\pi_1(F_f)$ on $\pi_n(F_f)$; the composite is zero here, so that action is trivial for every $n\ge1$. For $n=1$ the usual action is conjugation, so $\pi_1(F_f)$ is abelian. Since $F_f$ is path connected by step [](#connected){.pf-ref}, Hurewicz in degree $1$ (Theorem 2A.1, printed p.~166) identifies $H_1(F_f;\ZZ)$ with the abelianization of $\pi_1(F_f)$, which is $\widetilde H_1(F_f;\ZZ)=0$ by hypothesis; an abelian group with zero abelianization is zero.
+The fibration of step [](#setup){.pf-ref} has long exact sequence $\cdots\to\pi_1(F_f)\to\pi_1(E_f)\to\pi_1(Y)\to\pi_0(F_f)$ (Theorem 4.41). Since $\pi_1(E_f)\to\pi_1(Y)$ is injective, the image of $\pi_1(F_f)$ in $\pi_1(E_f)$ is zero. Exercise 10 provides a homomorphism $\pi_1(E_f)\to\operatorname{Aut}(\pi_n(F_f))$ whose composite with $\pi_1(F_f)\to\pi_1(E_f)$ is the usual action of $\pi_1(F_f)$ on $\pi_n(F_f)$; the composite is zero here, so that action is trivial for every $n\ge1$. For $n=1$ the usual action is conjugation, so $\pi_1(F_f)$ is abelian. Since $F_f$ is path connected by step [](#connected){.pf-ref}, Hurewicz in degree $1$ (Theorem 2A.1) identifies $H_1(F_f;\ZZ)$ with the abelianization of $\pi_1(F_f)$, which is $\widetilde H_1(F_f;\ZZ)=0$ by hypothesis; an abelian group with zero abelianization is zero.
 :::
 
 :::
@@ -102,7 +112,7 @@ The fibration of step [](#setup){.pf-ref} has long exact sequence $\cdots\to\pi_
 $\pi_n(F_f)=0$ for every $n\ge2$.
 
 ::: pf-proof
-$F_f$ is simply connected by step [](#pi1){.pf-ref} and has $\widetilde H_i(F_f;\ZZ)=0$ for all $i$ by hypothesis. Suppose $\pi_n(F_f)\ne0$ for some $n\ge2$ and take the least such $n$. Then $F_f$ is $(n-1)$-connected, so the Hurewicz theorem (Theorem 4.32, printed p.~366) gives $\pi_n(F_f)\cong\widetilde H_n(F_f;\ZZ)=0$, a contradiction.
+$F_f$ is simply connected by step [](#pi1){.pf-ref} and has $\widetilde H_i(F_f;\ZZ)=0$ for all $i$ by hypothesis. Suppose $\pi_n(F_f)\ne0$ for some $n\ge2$ and take the least such $n$. Then $F_f$ is $(n-1)$-connected, so the Hurewicz theorem (Theorem 4.32) gives $\pi_n(F_f)\cong\widetilde H_n(F_f;\ZZ)=0$, a contradiction.
 :::
 
 :::
@@ -111,7 +121,7 @@ $F_f$ is simply connected by step [](#pi1){.pf-ref} and has $\widetilde H_i(F_f;
 $\pi_n(E_f)\to\pi_n(Y)$ is an isomorphism for every $n\ge1$.
 
 ::: pf-proof
-The long exact sequence of the fibration (Theorem 4.41, printed p.~376) reads $\pi_n(F_f)\to\pi_n(E_f)\to\pi_n(Y)\to\pi_{n-1}(F_f)$ for $n\ge1$. The outer groups vanish for all $n$ by steps [](#pi1){.pf-ref} and [](#higher){.pf-ref}, so the middle map has zero kernel and zero cokernel.
+The long exact sequence of the fibration (Theorem 4.41) reads $\pi_n(F_f)\to\pi_n(E_f)\to\pi_n(Y)\to\pi_{n-1}(F_f)$ for $n\ge1$. The outer groups vanish for all $n$ by steps [](#pi1){.pf-ref} and [](#higher){.pf-ref}, so the middle map has zero kernel and zero cokernel.
 :::
 
 :::
@@ -120,7 +130,7 @@ The long exact sequence of the fibration (Theorem 4.41, printed p.~376) reads $\
 $f$ is a homotopy equivalence.
 
 ::: pf-proof
-Under the homotopy equivalence $E_f\simeq X$ of step [](#setup){.pf-ref}, the map $\pi_n(E_f)\to\pi_n(Y)$ of step [](#les){.pf-ref} is the map induced by $f$. So $f_*\colon\pi_n(X)\to\pi_n(Y)$ is an isomorphism for every $n\ge1$. Both $X$ and $Y$ are connected CW complexes by hypothesis, so Whitehead's theorem (Theorem 4.5, printed p.~346) gives that $f$ is a homotopy equivalence.
+Under the homotopy equivalence $E_f\simeq X$ of step [](#setup){.pf-ref}, the map $\pi_n(E_f)\to\pi_n(Y)$ of step [](#les){.pf-ref} is the map induced by $f$. So $f_*\colon\pi_n(X)\to\pi_n(Y)$ is an isomorphism for every $n\ge1$. Both $X$ and $Y$ are connected CW complexes by hypothesis, so Whitehead's theorem (Theorem 4.5) gives that $f$ is a homotopy equivalence.
 :::
 
 :::

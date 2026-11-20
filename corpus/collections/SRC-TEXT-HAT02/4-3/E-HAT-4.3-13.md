@@ -13,6 +13,16 @@ review: draft
 audit:
 - event: source-corrected
   by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
+- event: source-corrected
+  by: claude
   date: 2026-11-20
   note: >-
     Page corrected. The sentence citing "printed p. 15" for the statement that the mapping
@@ -92,7 +102,7 @@ Given a map $f: A \to B$ and a homotopy equivalence $g: C \to A$, show that the 
 :::
 
 ::: {.solution}
-The retained solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.3.13, PDF p. 28**, whose one-line argument this proof carries out: reduce by Corollary 0.21 to the case where $g$ is the inclusion of a deformation retract, where the claim is immediate because $f(g(C))$ is a deformation retract of $f(A)$. The card proves the deformation-retract case explicitly and performs the reduction through the mapping cylinder rather than by quoting Corollary 0.21. The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 13, printed p. 420, and the hint followed is the exercise's own.
+The retained solution is **Steven V. Sam, *Solutions to Hatcher's Algebraic Topology* (2008), Exercise 4.3.13**, whose one-line argument this proof carries out: reduce by Corollary 0.21 to the case where $g$ is the inclusion of a deformation retract, where the claim is immediate because $f(g(C))$ is a deformation retract of $f(A)$. The card proves the deformation-retract case explicitly and performs the reduction through the mapping cylinder rather than by quoting Corollary 0.21. The statement is Hatcher, *Algebraic Topology* (2002), §4.3 Exercise 13, and the hint followed is the exercise's own.
 
 Throughout $f:A\to B$ is a map, and for a map $u:X\to B$ the mapping path fibration is
 $$
@@ -135,7 +145,7 @@ Set $\widehat f[c,t]=f(g(c))$ for $(c,t)\in C\times I$ and $\widehat f[a]=f(a)$ 
 $i_A:A\to M_g$ and $i_C:C\to M_g$ are both inclusions of deformation retracts.
 
 ::: pf-proof
-For $i_A$: define $D:M_g\times I\to M_g$ by $D([c,t],s)=[c,\ t+s(1-t)]$ and $D([a],s)=[a]$. The two formulas agree on the glued sets — at $t=1$ the first gives $[c,1]=[g(c)]$, which is the point of $A$ that the second fixes — so $D$ is well defined and continuous by the gluing lemma for closed covers of the cone coordinate. It fixes $A$ pointwise, $D(-,0)=\mathrm{id}$, and the image of $D(-,1)$ lies in $A$ with $\restrictionof{D(-,1)}{A}=\mathrm{id}$; so $A$ is a deformation retract of $M_g$. For $i_C$: the book states that for a homotopy equivalence $g$ the mapping cylinder $M_g$ contains *both* $C$ and $A$ as deformation retracts (Corollary 0.21, printed p. 16); that is the form quoted by Sam, and it applies because $g$ is a homotopy equivalence by hypothesis.
+For $i_A$: define $D:M_g\times I\to M_g$ by $D([c,t],s)=[c,\ t+s(1-t)]$ and $D([a],s)=[a]$. The two formulas agree on the glued sets — at $t=1$ the first gives $[c,1]=[g(c)]$, which is the point of $A$ that the second fixes — so $D$ is well defined and continuous by the gluing lemma for closed covers of the cone coordinate. It fixes $A$ pointwise, $D(-,0)=\mathrm{id}$, and the image of $D(-,1)$ lies in $A$ with $\restrictionof{D(-,1)}{A}=\mathrm{id}$; so $A$ is a deformation retract of $M_g$. For $i_C$: the book states that for a homotopy equivalence $g$ the mapping cylinder $M_g$ contains *both* $C$ and $A$ as deformation retracts (Corollary 0.21); that is the form quoted by Sam, and it applies because $g$ is a homotopy equivalence by hypothesis.
 :::
 
 :::

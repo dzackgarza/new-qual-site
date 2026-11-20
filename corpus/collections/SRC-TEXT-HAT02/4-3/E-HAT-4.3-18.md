@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-corrected
+  by: claude
+  date: 2026-11-21
+  note: >-
+    Citation convention. Every locator of the form "printed page N" or "PDF page N" written into
+    this card before today, here and in the events below, is superseded: sources are cited by
+    chapter, section and numbered statement only. The events below are left as their sessions wrote
+    them, as QUAL-11 requires, so their locators stand as a historical record; the statement and the
+    solution above are the current text and cite by number. This event records the convention and no
+    further reading: the mathematics of the card is as the events below describe it.
 - event: solution-written
   by: claude
   date: 2026-11-20
@@ -54,7 +64,7 @@ audit:
 ---
 
 ::: {.solution}
-No retained solution set covers this exercise, so the argument is the card's own. The exactness is proved once for an arbitrary fibration and then applied to each consecutive triple of the fibration sequence; the group and abelian bookkeeping is read off from the loopspace structure, at the printed places named in the steps.
+No retained solution set covers this exercise, so the argument is the card's own. The exactness is proved once for an arbitrary fibration and then applied to each consecutive triple of the fibration sequence; the group and abelian bookkeeping is read off from the loopspace structure, by the numbered statements named in the steps.
 
 ::: pf
 
@@ -62,7 +72,7 @@ No retained solution set covers this exercise, so the argument is the card's own
 Let $q\colon E'\to B'$ be a fibration with fibre $F'=q^{-1}(b'_0)$, and let $X$ be a CW complex with basepoint a $0$-cell. Then $\langle X,F'\rangle\to\langle X,E'\rangle\to\langle X,B'\rangle$ is exact at $\langle X,E'\rangle$, and its composite is the constant map at the basepoint.
 
 ::: pf-proof
-The composite sends a class represented by $g\colon X\to F'$ to $q\circ g$, which is the constant map at $b'_0$, so it is the basepoint of $\langle X,B'\rangle$. For exactness, let $f\colon X\to E'$ be based with $qf$ based-nullhomotopic, and let $h\colon X\times I\to B'$ be a based nullhomotopy: $h(x,0)=qf(x)$, $h(x,1)=b'_0$ and $h(x_0,t)=b'_0$. On the subcomplex $A=X\times\{0\}\cup\{x_0\}\times I\subset X\times I$ prescribe the lift $\tilde h$ to be $f$ on $X\times\{0\}$ and the constant $e'_0=q^{-1}(b'_0)$ on $\{x_0\}\times I$; the prescription is compatible with $h$ because $qf=qf$ on $X\times\{0\}$ and $q(e'_0)=b'_0=h(x_0,t)$. The relative homotopy lifting property for the CW pair $(X\times I,A)$ (printed p.~376) extends $\tilde h$ to a lift $H\colon X\times I\to E'$ with $qH=h$. Then $g=H(-,1)$ maps $X$ into $F'$ because $qg=h(-,1)=b'_0$, it is based because $g(x_0)=H(x_0,1)=e'_0$, and $H$ is a based homotopy from $f$ to $g$. So the class of $f$ lies in the image of $\langle X,F'\rangle$.
+The composite sends a class represented by $g\colon X\to F'$ to $q\circ g$, which is the constant map at $b'_0$, so it is the basepoint of $\langle X,B'\rangle$. For exactness, let $f\colon X\to E'$ be based with $qf$ based-nullhomotopic, and let $h\colon X\times I\to B'$ be a based nullhomotopy: $h(x,0)=qf(x)$, $h(x,1)=b'_0$ and $h(x_0,t)=b'_0$. On the subcomplex $A=X\times\{0\}\cup\{x_0\}\times I\subset X\times I$ prescribe the lift $\tilde h$ to be $f$ on $X\times\{0\}$ and the constant $e'_0=q^{-1}(b'_0)$ on $\{x_0\}\times I$; the prescription is compatible with $h$ because $qf=qf$ on $X\times\{0\}$ and $q(e'_0)=b'_0=h(x_0,t)$. The relative homotopy lifting property for the CW pair $(X\times I,A)$ extends $\tilde h$ to a lift $H\colon X\times I\to E'$ with $qH=h$. Then $g=H(-,1)$ maps $X$ into $F'$ because $qg=h(-,1)=b'_0$, it is based because $g(x_0)=H(x_0,1)=e'_0$, and $H$ is a based homotopy from $f$ to $g$. So the class of $f$ lies in the image of $\langle X,F'\rangle$.
 :::
 
 :::
@@ -71,7 +81,7 @@ The composite sends a class represented by $g\colon X\to F'$ to $q\circ g$, whic
 The sequence $\cdots\to\langle X,\Omega B\rangle\to\langle X,F\rangle\to\langle X,E\rangle\to\langle X,B\rangle$ is exact at every term.
 
 ::: pf-proof
-Iterating homotopy fibres of the fibration $F\to E\to B$ gives the sequence $\cdots\to\Omega^2B\to\Omega F\to\Omega E\to\Omega B\to F\to E\to B$ in which each consecutive triple is, up to homotopy equivalence of its maps, a fibration and its fibre (printed p.~409): $\Omega B\to F$ is the boundary map, its homotopy fibre is $\Omega E$, and looping repeats the pattern. Step [](#lemma){.pf-ref} applied to each consecutive triple, using that $\langle X,-\rangle$ depends only on homotopy type, gives exactness at the middle term of each triple, which is every term of the displayed sequence.
+Iterating homotopy fibres of the fibration $F\to E\to B$ gives the sequence $\cdots\to\Omega^2B\to\Omega F\to\Omega E\to\Omega B\to F\to E\to B$ in which each consecutive triple is, up to homotopy equivalence of its maps, a fibration and its fibre: $\Omega B\to F$ is the boundary map, its homotopy fibre is $\Omega E$, and looping repeats the pattern. Step [](#lemma){.pf-ref} applied to each consecutive triple, using that $\langle X,-\rangle$ depends only on homotopy type, gives exactness at the middle term of each triple, which is every term of the displayed sequence.
 :::
 
 :::
@@ -80,7 +90,7 @@ Iterating homotopy fibres of the fibration $F\to E\to B$ gives the sequence $\cd
 For every space $K$, $\langle X,\Omega K\rangle$ is a group, and the map induced by a loop map $\Omega K\to\Omega L$ is a homomorphism.
 
 ::: pf-proof
-$\Omega K$ is the space of based loops in $K$ with the compact-open topology, and concatenation of loops is a continuous multiplication with a strict identity and inverses up to homotopy; the argument that $\pi_1(K)$ is a group therefore applies verbatim to $\langle X,\Omega K\rangle$ (printed p.~396). A loop map carries the concatenation of loops in $\Omega K$ to the concatenation of their images, so the induced map on homotopy classes is a homomorphism.
+$\Omega K$ is the space of based loops in $K$ with the compact-open topology, and concatenation of loops is a continuous multiplication with a strict identity and inverses up to homotopy; the argument that $\pi_1(K)$ is a group therefore applies verbatim to $\langle X,\Omega K\rangle$. A loop map carries the concatenation of loops in $\Omega K$ to the concatenation of their images, so the induced map on homotopy classes is a homomorphism.
 :::
 
 :::
@@ -89,7 +99,7 @@ $\Omega K$ is the space of based loops in $K$ with the compact-open topology, an
 $\langle X,\Omega^2K\rangle$ is abelian, and hence $\langle X,\Omega^nK\rangle$ is abelian for every $n\ge2$.
 
 ::: pf-proof
-$\Omega^2K=\Omega(\Omega K)$ is the space of maps $I^2\to K$ sending $\partial I^2$ to the basepoint, and the argument that $\pi_2(K)$ is abelian, composing in the two coordinates of $I^2$, shows that the group $\langle X,\Omega^2K\rangle$ is abelian (printed p.~396). For $n\ge2$, $\Omega^nK=\Omega^2(\Omega^{n-2}K)$.
+$\Omega^2K=\Omega(\Omega K)$ is the space of maps $I^2\to K$ sending $\partial I^2$ to the basepoint, and the argument that $\pi_2(K)$ is abelian, composing in the two coordinates of $I^2$, shows that the group $\langle X,\Omega^2K\rangle$ is abelian. For $n\ge2$, $\Omega^nK=\Omega^2(\Omega^{n-2}K)$.
 :::
 
 :::
