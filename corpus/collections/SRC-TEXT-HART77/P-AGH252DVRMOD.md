@@ -53,7 +53,7 @@ Let $R$ be a discrete valuation ring with quotient field $K$, and let $X=\Spec R
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.2, printed p. 124. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.2, stated on printed p. 49 with its solution on p. 50, proves it by the same reduction to the two-point space $\{\eta,\xi\}$: an $\OO_X$-module is a $K$-vector space $M$, an $R$-module $L$ and an $R$-linear map $M\to L$, and quasi-coherence is exactly the resulting map $M\otimes_RK\to L$ being an isomorphism.
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.5.2. Kim, *Solutions to Hartshorne's Algebraic Geometry*, Chapter II §5, Exercise 2.5.2, stated on printed p. 49 with its solution on p. 50, proves it by the same reduction to the two-point space $\{\eta,\xi\}$: an $\OO_X$-module is a $K$-vector space $M$, an $R$-module $L$ and an $R$-linear map $M\to L$, and quasi-coherence is exactly the resulting map $M\otimes_RK\to L$ being an isomorphism.
 
 Choose a uniformizer $\pi\in R$ and write $\mathfrak m=(\pi)$.
 Let $x\in X$ correspond to $\mathfrak m$, and let $\eta\in X$ correspond to $(0)$.

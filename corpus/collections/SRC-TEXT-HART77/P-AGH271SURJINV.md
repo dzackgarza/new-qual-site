@@ -55,7 +55,7 @@ Reduce to a question of modules over a local ring by looking at the stalks.
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise II.7.1, printed p. 169. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.7.1, printed p. 50, proves it by the same reduction the steps make: on an affine neighbourhood both sheaves are trivial, so the question becomes that of a surjective endomorphism of $A_{\mathfrak p}$, hence of $A_{\mathfrak p}\to A_{\mathfrak p}$ sending $1$ to a unit.
+The argument is the card's own, and it is checked against Hartshorne's Exercise II.7.1. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 2.7.1, proves it by the same reduction the steps make: on an affine neighbourhood both sheaves are trivial, so the question becomes that of a surjective endomorphism of $A_{\mathfrak p}$, hence of $A_{\mathfrak p}\to A_{\mathfrak p}$ sending $1$ to a unit.
 
 ::: pf
 

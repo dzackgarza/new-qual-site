@@ -44,7 +44,7 @@ Use (3.7), and for any coherent sheaf $\mcf$ on $X$, consider the filtration $\m
 :::
 
 ::: {.solution}
-The argument is the card's own, and it is checked against Hartshorne's Exercise III.3.1, printed p. 216. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 3.3.1, printed p. 61, proves the converse with the same device the steps use: the nilpotent ideal sheaf $\mathcal N$ of $X$, the filtration $\mathcal F\supseteq\mathcal N\mathcal F\supseteq\mathcal N^2\mathcal F\supseteq\cdots$ with quotients that are coherent on $X_{\mathrm{red}}$, and the vanishing of cohomology there, descended step by step to $\mathcal F$.
+The argument is the card's own, and it is checked against Hartshorne's Exercise III.3.1. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 3.3.1, proves the converse with the same device the steps use: the nilpotent ideal sheaf $\mathcal N$ of $X$, the filtration $\mathcal F\supseteq\mathcal N\mathcal F\supseteq\mathcal N^2\mathcal F\supseteq\cdots$ with quotients that are coherent on $X_{\mathrm{red}}$, and the vanishing of cohomology there, descended step by step to $\mathcal F$.
 
 Let $\mcn \subseteq \OO_X$ be the sheaf of nilpotent sections, the ideal sheaf of the closed immersion $X_{\mathrm{red}} \to X$.
 
