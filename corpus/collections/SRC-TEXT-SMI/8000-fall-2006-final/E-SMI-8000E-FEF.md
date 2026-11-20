@@ -32,6 +32,15 @@ audit:
     chain argument, and a maximal element must have domain E, since for alpha outside
     it the transported minimal polynomial has a root beta in the algebraically closed
     F and L[x]/(m) = L(alpha) → F extends the embedding. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 12, final part F(ii).
+    Partial $k$-embeddings of subfields of $E$ into $F$ are ordered by extension; a chain
+    has the union as upper bound; a maximal $(L,\varphi)$ with $L\ne E$ and
+    $\alpha\in E\setminus L$ has $m^\varphi$ a root $\beta\in F$, and
+    $L[X]/(m)\cong L(\alpha)\to F$ extends $\varphi$, contradicting maximality. No defect.
 ---
 
 ::: {.exercise}
