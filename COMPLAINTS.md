@@ -11241,3 +11241,32 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **`D-BPBSQ`, singularities at infinity.** The card defines the three types at $\infty$ by transporting along $w=1/z$. Ahlfors's ch. 4 §3.2 classifies the singularity at a finite point only, and its ch. 1 §2.4 gives the extended plane and its neighbourhoods; Stein--Shakarchi states nothing at $\infty$. The definition is therefore the construction that applies the retained classification in the coordinate $w=1/z$, and the card claims no printed definition of the notion.
 
 **`FF-2ABHQ`, `FF-7KQCC`, `FF-WDDTM`, `FF-Y6IOA`, `FF-A7OEY`, the five arctangent values.** No retained text states $\arctan\sqrt3=\pi/3$, $\arctan(1/\sqrt3)=\pi/6$, $\arctan 1=\pi/4$, $\arctan 0=0$, or $\lim_{x	o+\infty}\arctan x=\pi/2$. Searched: Ahlfors's trigonometric and cyclometric sections, ch. 2 §3.2 and §3.4, and the arctangent series of ch. 5 §1.2, which gives the series and not the values; Stein--Shakarchi's ch. 1. The nearest retained statement is Exercise 3 of Ahlfors ch. 5 §2.1, which derives $\pi/4=1-1/3+1/5-\cdots$, the Leibniz series and not the value of $\arctan 1$. Each of the five is the elementary real identity $	an$ of the named angle together with the range $(-\pi/2,\pi/2)$ of $\arctan$, and each card states that reasoning; what they lack is a printed statement of the value.
+
+
+## 2026-11-20 (#176): three more fact cards whose content no retained text states
+
+**Why here.** As recorded above, `audit:` is a problem-card key only, so a `fact` card cannot carry the note. These three are of that kind.
+
+**`FF-JKLWM`, coefficients of the reciprocal of a power series.** Searched Ahlfors, ch. 2 §2.2 and ch. 5 §1.2, whose Theorem 2 and Theorem 3 give the radius and the Taylor representation, and ch. 4 §3.2, which notes that $1/f$ is analytic where $f\neq0$; and Stein–Shakarchi ch. 1, whose only statement about a quotient is the definition of the derivative. Neither book states the recursion $b_n=-c_0^{-1}\sum_{k=1}^{n}c_kb_{n-k}$. The card's coefficients are the comparison of the coefficients in $A\cdot(1/A)=1$, and the card claims no printed statement of them.
+
+**`FF-2OHYV`, rational parametrization of the unit circle.** Searched Ahlfors's ch. 3 §3, on linear transformations and the cross ratio, and its §4.2, whose map $(\zeta-1)/(\zeta+1)$ carries $\xi>0$ onto $\abs w<1$ and so carries the imaginary axis onto the circle minus $1$; and Stein–Shakarchi's ch. 1. Neither displays the parametrization $x\mapsto(1+ix)/(1-ix)$ or the identity with $e^{2i\arctan x}$. The card's map is the boundary restriction of that linear transformation, and the card says so nowhere as a citation because the book does not print it.
+
+**`FF-ENSFJ`, Taylor series of $\sech z$.** Searched Ahlfors ch. 2 §3.2, which defines $\tan$, $\cot$, $\sec$ and $\operatorname{cosec}$ in terms of $\sin$ and $\cos$ and does not define $\sech$; and ch. 5 §1.2, whose list of series stops at $e^z$, $\cos$, $\sin$, $(1+z)^\mu$, $\log(1+z)$, $\arctan$ and $\arcsin$. The coefficients $1,-1/2,5/24,-61/720$ are a division of the known series, and the radius $\pi/2$ is the distance to the zeros $\pm i\pi/2$ of $\cosh$, which the book bounds below but does not identify with the radius. The card's computation is its own.
+
+**Uncertainty.** Each search covered the sections named and no others; a statement elsewhere in either book was not excluded.
+
+## 2026-11-20, #179: three theorem cards named by the reader's report still have no citable source in the bibliography
+
+**Object and need.** `T-NOETHD` (Noether's degree bound), `T-MOLIEN` (Molien's formula) and `T-GELFND` (Gelfand's formula for the spectral radius) are the theorem cards that the applied-algebra pages link for those three results. The reader's report on #179 records their theorem blocks as uncited under CITE-8, which asks an assertion to carry an argument, a referent, or a citation with a locator.
+
+**Searched.** All 74 entries of `vocabularies/references.yaml` by title, for a text stating the three results; and the retained full texts under `tmp/sources/` — Cox--Little--O'Shea 2007, Rudin 1976, Munkres 1991, Serre 1977, Fulton--Harris 1991, Hungerford 1974, Ahlfors 1966 — for the statements by name and by formula.
+
+**Found.** No bibliography entry states any of the three. Cox--Little--O'Shea (§3 of Chapter 7 of the 2007 extraction) mentions Molien's Theorem without stating it and refers to Benson--Grove (1985) and Sturmfels (1993); that book is retained but has no entry in the bibliography. No retained text states Noether's degree bound. Rudin, *Real and Complex Analysis* (Rud74) has a chapter on Banach algebras in which the spectral radius formula is standard, but that book is not retained here, so its chapter and theorem numbers were not verified and are not cited.
+
+**Conclusion.** The three cards cannot be given a CITE-1 citation from the current bibliography. `T-DICKSN` was cited to [@DF04, §9.6], whose title and content — *Polynomials in Several Variables over a Field and Gröbner Bases* — were verified against the publisher's listing of the third edition.
+
+**Impact and owner.** `wiki/applied-algebra/invariant-theory/index.md` at the Noether-bound and Molien sentences, and `wiki/applied-algebra/matrix-analysis/index.md` at the Gelfand sentence, link these cards, which are the corpus's only statement of the three results.
+
+**Uncertainty.** Absence from the bibliography is verified by reading all its entries. Absence from the retained texts is verified for the seven named; the other books the bibliography lists are not retained, so a statement in one of them was not excluded.
+
+**Repair.** Add the works to Zotero and regenerate `vocabularies/references.yaml`: an entry for Cox--Little--O'Shea, *Ideals, Varieties, and Algorithms*, which covers Molien's formula and the Gröbner material the `grobner-bases` page uses, and a text with Noether's bound and the spectral radius formula. `references.yaml` is generated and hand-editing it is forbidden, and Zotero is not reachable from this session (`127.0.0.1:23119` refuses the connection).
