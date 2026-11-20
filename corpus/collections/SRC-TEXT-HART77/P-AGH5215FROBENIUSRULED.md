@@ -555,6 +555,41 @@ audit:
     the printed sentence is recorded here as the source's text so that the
     change can be checked against the book. QUAL-01 asked for this repair and
     for this record; nothing else on the card changed in this commit.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Every published solution set read for Exercise 15 of §2 of chapter V, and
+    none answers it. Two carry an entry at the exercise and neither proves it:
+    Andrew Egbert, Solutions to Hartshorne's Algebraic Geometry, Exercise
+    V.2.15, whose part (c) is the sentence "To see the curve Y = 3C_0-3f is
+    inseparable is Miyanishi, Open Algebraic Surfaces, lemma 2.5.2.2" followed
+    by the remark that Y is some section of C, a citation and a remark rather
+    than a proof; and Yang Pi-Yeh, Hartshorne Solutions, Solution 5.2.15, whose
+    part (c) begins "Clearly deg pi = Y.f = 3" and concludes that pi is not
+    separable, which assumes the curve it is meant to construct. The rest have
+    no entry at the exercise and none treats §2 of chapter V: Reiser, Solutions
+    to Hartshorne's Algebraic Geometry, reaches chapter IV and marks chapter V
+    as not yet written; Jinhyun Park covers §5 of chapter V only; Richard
+    Borcherds covers chapters I and IV; Bryden Cais, Joe Cutrone and Nick
+    Marshburn, Chris Lomont, and Steven Sam cover chapters II to IV; W. Stein
+    and Ismail Saglam and Chris cover chapters II and III; Dongryul Kim covers
+    chapters II and III; Andrea Troiani covers chapter I; Okamoto covers §9 of
+    chapter II; and the Algebraic Geometry II notes of the National Taiwan
+    University, 2020, treat the elliptic ruled surface of Theorem 2.15 without
+    giving Exercise 15 of §2. Citations of "Theorem 2.15" in several of these
+    sets are to that theorem, the elliptic ruled surface, and not to the
+    exercise. Searched beyond the retained sets and found no solution set with a
+    proof of the exercise either: the repositories of Hartshorne solutions
+    examined (mikeleew, corn-muffin, nilaykumar, jmoellermath,
+    maths644311798, reiserb) stop before §2 of chapter V or omit the exercise,
+    and the two places where it is discussed, Math StackExchange question
+    4553266 and Math Overflow question 442391, carry no answer. So the published
+    record establishes parts (a) and (b) and the numbered statement of (c), and
+    supplies no proof of (c) in either the printed or the repaired form. Not
+    checked: the printed copies of any of these sets, only the retained text
+    layers; and the search outside the retained sets is bounded by the
+    repositories and threads named here.
 
 ---
 
