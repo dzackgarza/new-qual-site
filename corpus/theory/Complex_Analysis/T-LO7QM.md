@@ -25,4 +25,6 @@ For $\omega=f(z)\dz$ one has $d\omega=\frac{\partial f}{\partial\overline z}\,d\
 $$
 \int_{\bd\Omega}f(z)\dz=2i\iint_\Omega\frac{\partial f}{\partial\overline z}\dA.
 $$
+
+This is [@Rud76, ch. 10, Theorem 10.33] in the Euclidean case, which states that $\int_\Psi d\omega=\int_{\partial\Psi}\omega$ for a $k$-chain $\Psi$ in an open set $V\subseteq\RR^m$ and a $(k-1)$-form $\omega$ of class $C'$ in $V$; the general manifold statement above is the chart-and-partition-of-unity reduction to it, and the second display is the case $k=m=2$ with $\omega=f\dz$.
 :::
