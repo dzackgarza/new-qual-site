@@ -23,7 +23,7 @@ Then
 $$
 \bigcap_{n\ge0}I^n=0.
 $$
-In particular, $\bigcap_{n\ge0}\mfm^n=0$ for every Noetherian [[D-TGB4R|local ring]] $(R,\mfm)$ [@AM18].
+In particular, $\bigcap_{n\ge0}\mfm^n=0$ for every Noetherian [[D-TGB4R|local ring]] $(R,\mfm)$ [@AM18, Theorem 10.17 and Corollary 10.19].
 :::
 
 ::: {.proof}
