@@ -20,6 +20,8 @@ $$
 u(z_0) = {1\over2\pi}\int_0^{2\pi}u\qty(z_0+re^{i\theta})\,d\theta
 $$
 for every $z_0\in U$ and every $r>0$ with $\overline{\DD_r(z_0)}\subseteq U$, then $u$ is harmonic on $U$.
+
+This is [@Ahl73, ch. 6, §3, Theorem 6]: a continuous function satisfying the mean value condition is necessarily harmonic. The book states and uses the condition for small $r$ only, allowing $r_0$ to depend on $z_0$, so the hypothesis above is the stronger form.
 :::
 
 ::: {.remark}
