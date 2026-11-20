@@ -368,6 +368,21 @@ audit:
     Not checked: steps s3 to s9 were read for their field hypotheses only, not
     re-derived, and no printing other than the text versions beside the
     retained PDFs.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A sign in the remark on the printed part (c) is corrected, and no
+    mathematics of the proof changes. The remark wrote det E = L^{-1} of
+    degree -e, which is inconsistent with its own data: part (c) gives L of
+    degree -e and xi in H^1(L^v), the extension 0 -> O_C -> E -> L -> 0
+    attached to xi has det E = L, as step s12 also states, so the degree of
+    the determinant is -e and the range [-2g+2,-1] is the range of -e. The
+    corrected sentence is what the twisting comparison uses: det(E tensor M) =
+    L tensor M^2, of degree -e + 2 deg M. Read for this: the printed exercise
+    on printed p. 384 and steps s10, s11, s12, s12b and s13 of this card, in
+    tmp/sources/hartshorne-1977-algebraic-geometry.md. Not checked: any
+    printing of the book, only the text version retained in tmp/sources.
 ---
 
 ::: {.problem}
@@ -621,5 +636,5 @@ Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 :::
 
 ::: {.remark}
-The printed (c), on printed p. 384, reads "Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, **up to isomorphism**, by giving (1) an integer $0<e\leq 2g-2$, (2) an element $\mathcal{L}\in\Pic C$ of degree $-e$, and (3) a nonzero $\xi\in H^1\left(\dualof{\mathcal{L}}\right)$, determined up to a nonzero scalar multiple", and the phrase "up to isomorphism" is what the statement above replaces.  The three data carry $\det\mathcal{E}=\mathcal{L}^{-1}$, of degree $-e$ lying in $[-2g+2,-1]$, so they classify the normalized representative of a twist class: for an invertible $\mathcal{M}$ of nonzero degree, $\mathcal{E}\otimes\mathcal{M}$ is indecomposable and, in rank two, semistable exactly when $\mathcal{E}$ is, while $\det(\mathcal{E}\otimes\mathcal{M})=\det\mathcal{E}\otimes\mathcal{M}^2$ has degree $-e+2\deg\mathcal{M}$, so it is not isomorphic to $\mathcal{E}$ and carries different data.  The classification is therefore up to tensoring with an invertible sheaf, and not up to isomorphism with $e$ ranging freely.  Yang Pi-Yeh, printed pp. 103--104, states the printed clause and argues it for the normalized model, as the published-solution remark above records.
+The printed (c), on printed p. 384, reads "Show that the indecomposable locally free sheaves $\mathcal{E}$ of rank 2 that are not semistable are classified, **up to isomorphism**, by giving (1) an integer $0<e\leq 2g-2$, (2) an element $\mathcal{L}\in\Pic C$ of degree $-e$, and (3) a nonzero $\xi\in H^1\left(\dualof{\mathcal{L}}\right)$, determined up to a nonzero scalar multiple", and the phrase "up to isomorphism" is what the statement above replaces.  The three data carry $\det\mathcal{E}=\mathcal{L}$, of degree $-e$ lying in $[-2g+2,-1]$, so they classify the normalized representative of a twist class: for an invertible $\mathcal{M}$ of nonzero degree, $\mathcal{E}\otimes\mathcal{M}$ is indecomposable and, in rank two, semistable exactly when $\mathcal{E}$ is, while $\det(\mathcal{E}\otimes\mathcal{M})=\det\mathcal{E}\otimes\mathcal{M}^2$ has degree $-e+2\deg\mathcal{M}$, so it is not isomorphic to $\mathcal{E}$ and carries different data.  The classification is therefore up to tensoring with an invertible sheaf, and not up to isomorphism with $e$ ranging freely.  Yang Pi-Yeh, printed pp. 103--104, states the printed clause and argues it for the normalized model, as the published-solution remark above records.
 :::
