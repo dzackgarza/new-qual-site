@@ -127,6 +127,18 @@ audit:
     steps his assertion needs are absent from his set and are not used above.
     Not checked: the printed Sam, only the retained PDF's page image; and
     Kim's set only in its retained text version.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Corrects the event above at part (a), direction (<=). Sam proves that
+    direction for a global section s in G(X) and a covering of X, which gives
+    surjectivity of phi_P only on germs of global sections of G; Hartshorne's
+    condition quantifies over every open set U, and the proof must apply it to
+    the neighbourhood on which the germ s_P is represented. The edit is one
+    line, it is marked on the card as the card's adaptation, and the statement
+    of (a) and the transcription of (b) are unchanged. Found by the
+    source-verification run on this issue, not by the reader.
 ---
 
 
@@ -146,10 +158,11 @@ Let $U \subseteq X$ be an open set and $s \in \mcg(U)$.
 There exists an element $t_P \in \mcf_P$ such that $\varphi_P(t_P) = s_P$, which means that $t_P$ has a representative $t$ on some neighbourhood $U_P$ of $P$ with $\varphi(\restrictionof{t}{U_P}) = \restrictionof{s}{U_P}$.
 Then $\theset{U_P}$ is a covering of $U$, and the condition holds.
 
-($\Leftarrow$) Conversely, suppose that the condition holds and let $s \in \mcg(X)$.
-For any point $P \in X$ there is an open covering $\theset{U_i}$ of $X$ and elements $t_i \in \mcf(U_i)$ such that $\varphi(t_i) = \restrictionof{s}{U_i}$ for all $i$.
-There is some $i$ such that $P \in U_i$, which gives $\varphi_P((t_i)_P) = s_P$.
+($\Leftarrow$) Conversely, suppose that the condition holds.
+Let $P \in X$ and let $s_P \in \mcg_P$ be represented by a section $s$ on an open neighbourhood $U$ of $P$.
+The condition applied to $U$ gives an open covering $\theset{U_i}$ of $U$ and elements $t_i \in \mcf(U_i)$ such that $\varphi(t_i) = \restrictionof{s}{U_i}$ for all $i$, and some $i$ has $P \in U_i$, which gives $\varphi_P((t_i)_P) = s_P$.
 So each $\varphi_P$ is surjective, and thus $\varphi$ is surjective.
+Sam writes this direction with a global section $s \in \mcg(X)$ and a covering of $X$; the condition is stated for every open set, and applying it to the neighbourhood on which the germ is represented is the one adaptation made here, and is the card's.
 
 **Part (b).** Also Sam, on the same page. Let $\mcf$ be the sheaf on $\CC$ with the usual topology that sends an open set $U$ to the group of all analytic functions on $U$, with the obvious restriction maps, and let $D: \mcf \to \mcf$ be differentiation: for an open set $U$, $D(U)$ sends $f$ to its derivative, which is also analytic.
 An analytic function $f$ on an open set $U$ has an antiderivative if and only if the integral of $f$ over any closed contour in $U$ is $0$; in particular the integral over a closed contour $C$ is $0$ if $f$ is analytic in the region bounded by $C$.
