@@ -15,6 +15,16 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
+- event: solution-written
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The step that writes $T(v) = bp$ asserted it with no justification; it now derives it by linearity
+    from the prescriptions on $L$ and $P$ and from the decomposition that the previous numbered step
+    establishes, cited by label. Checked independently: $T(\ell) = 0$ and $T(p) = p$ for the displayed
+    matrix, so the matrix is the projection onto $x + 2y = 0$ along $L$. The set is the exam paper of
+    the UGA prelim Spring 2006 and retains no solution sheet, so the argument is the card's own. The
+    statement is unchanged.
 ---
 
 ::: {.problem}
@@ -28,7 +38,7 @@ Find the standard matrix for the linear transformation $T : \RR^2 \to \RR^2$ suc
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #basis}
 The vectors
 $$
 \ell=\begin{pmatrix}1\\2\end{pmatrix},
@@ -47,7 +57,7 @@ so $\ell,p$ are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #decomposition}
 Every vector $(x,y)^t$ has a unique decomposition
 $$
 \begin{pmatrix}x\\y\end{pmatrix}
@@ -77,6 +87,11 @@ T\begin{pmatrix}x\\y\end{pmatrix}
 =b p
 =\frac{2x-y}{5}\begin{pmatrix}2\\-1\end{pmatrix}.
 $$
+
+
+::: pf-proof
+Step [](#basis){.pf-ref} exhibits $\ell, p$ as a basis, so the vector has exactly one such description. Writing $v = a\ell + bp$ puts $a\ell$ in $L$ and $bp$ in $P$, and $T$ is linear, so $T(v) = aT(\ell) + bT(p) = a \cdot 0 + b p = b p$, with $b = (2x-y)/5$ by step [](#decomposition){.pf-ref}.
+:::
 
 :::
 
