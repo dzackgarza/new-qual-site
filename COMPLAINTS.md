@@ -9565,3 +9565,21 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: `s1` to `s7` of V.2.12, and the arithmetic of each checked against `s1` and the degree bookkeeping. Not opened: Fuentes, Fuentes--Pedreira and Hartshorne at the printed pages named, which are the card's citations as its earlier events record them. Not read: V.2.13's `s1` to `s6`, so #168's acceptance is not met for that card; and V.4.16, V.5.6 and V.5.8(b) remain unread.
+
+## 2026-11-19: #168's sixteenth round — V.2.13's six steps read, all correct
+
+**Object and need.** The fifteenth round closed V.2.12 and left V.2.13's six steps unread. This round read them against Fuentes at the printed pages the card names, and recomputed the two counts they rest on. No card is changed.
+
+**`s1` is correct.** For $e\ge0$ the decomposable normalized bundle $\OO_C\oplus\mathcal L$ with $\deg\mathcal L\le0$ gives every $e\ge0$ ([2, Theorem 3.2(1)], printed p. 15). For $e=-1$ the two models of indecomposable elliptic ruled surfaces have invariants $0$ and $-1$ (Fuentes, Theorem 2.7, printed p. 13, from Theorem 2.1 with Propositions 2.5 and 2.6; Hartshorne's Theorem V.2.15, printed p. 377). So every $e\ge-1$ occurs and no other does, which is the range the exercise asks for.
+
+**`s2` is correct, and I recomputed it rather than reading it off.** With $C_0\cdot f=1$, $f^2=0$ and $C_0^2=-e$: $D\cdot f=1$ and $D^2=C_0^2+2n\,C_0\cdot f=-e+2n$. The same formula is [2, Theorem 3.10(1)], printed p. 19.
+
+**`s3` is correct** and is V.2.12(b), which the fifteenth round read: very ampleness for $n\ge e+3$, being Fuentes Proposition 1.4, printed p. 3, on a decomposable surface and Proposition 2.11, printed p. 15, on an indecomposable one.
+
+**`s4` and `s5` are correct, and their count agrees with surface Riemann--Roch.** The image of a very ample $|D|$ is a smooth curve of degree $D^2=d$, and the ambient dimension is $h^0(D)-1$. The card counts $h^0(\OO_X(D))=h^0(\OO_C(\mathfrak b))+h^0(\OO_C(\mathfrak b+\mathfrak e))=n+(n-e)=2n-e$, using $h^0(\OO_C(\mathfrak a))=\deg\mathfrak a$ for $\deg\mathfrak a>0$ on an elliptic curve, which holds since $n\ge e+3\ge2$ and $n-e\ge3$. I checked the same number a second way: with $K_X\equiv-2C_0-ef$ and $\chi(\OO_X)=0$, $D\cdot K_X=e-2n$, so $\chi(D)=\frac12(D^2-D\cdot K_X)=2n-e$. The two agree, so the scroll lies in $\PP^{d-1}$ with $d=2n-e$.
+
+**`s6` is correct.** At $e=-1$, $n=2$ one has $n=e+3$, and $d=2\cdot2+1=5$, so the scroll of the exercise's second sentence is the $e=-1$, $n=2$ case of Theorem 2.13(2)(b), printed pp. 16--17, in $\PP^{d-1}=\PP^4$.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: `s1` to `s6` of V.2.13, with `s2`, `s4` and `s5` recomputed here. Not opened: Fuentes, Fuentes--Pedreira, Hartshorne and Yang at the printed pages named, which are the card's citations as its earlier events record them. Both V.2.12 and V.2.13 are now read in full and correct. What remains of #168 is V.4.16, V.5.6 and V.5.8(b), together with the steps of IV.2.3, IV.3.11 and III.11.7 that earlier rounds record as unread.
