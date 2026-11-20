@@ -31,7 +31,7 @@ Certain sets have geometric properties that guarantee they are simply connected.
 :::
 
 ::: {.solution}
-The statement is Exercise 21 of [@SS03, ch. 3 (p. 107)], printed beginning "Certain sets have geometric properties that guarantee they are simply connected".
+The statement is Exercise 21 of Stein--Shakarchi, *Complex Analysis* [@SS03, ch. 3, §8, Exercise 21], printed beginning "Certain sets have geometric properties that guarantee that they are simply connected".
 
 No retained text and no retained solution set for this collection: its provenance is the publisher's catalogue record, so the statement is taken as the card prints it, and the argument is the card's own.
 
