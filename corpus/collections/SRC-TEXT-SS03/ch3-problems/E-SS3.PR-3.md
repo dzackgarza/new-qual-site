@@ -105,6 +105,22 @@ audit:
     convergence. Its text is an outline; the card's steps supply the uniform convergence on compact
     subannuli that licenses termwise integration and the estimate that gives the coefficients'
     integral formula. Not checked: anything in the published document outside its Problem 3.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A complete published solution of this Problem was located and now heads the solution's opening
+    paragraph: the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British
+    Columbia (instructor Malabika Pramanik), *Homework 4 Solutions*,
+    `https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf`,
+    at its Chapter 3, Problem 3. Read there and checked against Chapter 3, Problem 3: the annulus is
+    cut along a narrow segment, the Cauchy formula is applied on the resulting contour and the cut is
+    let shrink, $(\zeta-z)^{-1}$ is expanded on the outer circle and $(\zeta-z_0)^k/(z-z_0)^{k+1}$ on
+    the inner one, the interchange of sum and integral is justified by dominated convergence, and the
+    two series and the coefficient formula follow. The card's steps s1--s5 are that argument; the set
+    also notes that the book's printed coefficient display drops the factor $f(\zeta)$, which the card
+    carries. The Wang Zirui outline, cited in the previous event, remains as the secondary source. Not
+    checked: anything in the UBC set outside its Chapter 3, Problem 3.
 ---
 
 ::: {.exercise}
@@ -130,7 +146,7 @@ The book sets no asterisk before this problem (Chapter 3, Problem 3).
 :::
 
 ::: {.solution}
-A published solution of this Problem is Wang Zirui, *Complete Solutions for Chapter 3* (Problem 3), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against Chapter 3, Problem 3, it carries both halves: Cauchy's theorem on the annulus writes $f$ as the difference of the two boundary integrals, the outer circle expands $({\zeta-z})^{-1}$ in powers of $z-z_0$ and the inner one in powers of $(z-z_0)^{-1}$, termwise integration gives $f(z)=\sum_{n\in\ZZ}a_n(z-z_0)^n$ with $a_n$ the integral over any intermediate circle, and geometric estimates give absolute and locally uniform convergence. The proof below follows that route and supplies the estimates it compresses, as the audit trail records.
+The published solution of this Problem is the solution set of Math 440/508, Complex Analysis, Fall 2017, University of British Columbia (instructor Malabika Pramanik), *Homework 4 Solutions*, at its Chapter 3, Problem 3: it cuts the annulus along a narrow radial segment, applies the Cauchy formula on the contour that results, lets the cut shrink, expands $(\zeta-z)^{-1}$ on the outer circle and on the inner one, interchanges sum and integral by dominated convergence, and reads off the two series and the coefficient formula. The proof below is that argument, step for step. The set is not retained in this checkout and was read at its source; Wang Zirui's *Complete Solutions for Chapter 3* covers the same Problem in outline only.
 
 Let $0<r_1<r_2$, let $A=\{z:r_1<\abs{z-z_0}<r_2\}$ be the open annulus and $\bar A=\{z:r_1\le\abs{z-z_0}\le r_2\}$, on which $f$ is holomorphic. Fix $z\in A$.
 
