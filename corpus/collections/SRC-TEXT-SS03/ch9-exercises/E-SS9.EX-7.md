@@ -45,7 +45,7 @@ These results were already obtained using Fourier series in the exercises at the
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 9, Exercise 7. Here the identity used is $\sum_{m\in\ZZ}(m+\tau)^{-2}=\pi^{2}/\sin^{2}(\pi\tau)$ for $\Im\tau>0$, and $\zeta(s)=\sum_{r\geq1}r^{-s}$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 9, Exercise 7. Here the identity used is $\sum_{m\in\ZZ}(m+\tau)^{-2}=\pi^{2}/\sin^{2}(\pi\tau)$ for $\Im\tau>0$, and $\zeta(s)=\sum_{r\geq1}r^{-s}$.
 
 ::: pf
 
