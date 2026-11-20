@@ -27,11 +27,11 @@ topics:
 
 [[D-QJ5M9]]
 
-A normal variety is regular in codimension one: its singular locus has codimension at least two.
+A normal variety is regular in codimension one: its singular locus has codimension at least two ([[D-QJ5M9]]).
 
 ## Where the singular points are
 
-The singular points of a hypersurface $V(f)\subseteq\PP^n$ are the points of $V(f)$ at which every partial derivative of $f$ vanishes.
+The singular points of a hypersurface $V(f)\subseteq\PP^n$ are the points of $V(f)$ at which every partial derivative of $f$ vanishes, the Jacobian criterion for the local ring of a hypersurface ([[D-0SYCY]]).
 The Euler relation
 $$
 \sum_i x_i \frac{\partial f}{\partial x_i} = (\deg f) \cdot f
