@@ -15,8 +15,8 @@ topics:
 
 # The standard spaces
 
-Definitions, fundamental groups, homology, cell structures, and cohomology rings of the spaces from which exam problems are built: spheres, tori, projective spaces, closed surfaces, wedges of spheres, and punctured spaces.
-$F_m$ is the free group of rank $m$, and $D(k,X)$ is $X$ with $k$ points deleted, as in [Deleting points](#deleting-points).
+The fundamental groups and homology groups of the spaces from which exam problems are built, with the definitions, cell structures and constructions in the cards below.
+The computations of the table are the examples of Hatcher, §§1.1 and 2.2 [@Hat02].
 
 | $X$ | $\pi_1$ | $H_*$ | Notes |
 | --- | --- | --- | --- |
@@ -32,166 +32,62 @@ $F_m$ is the free group of rank $m$, and $D(k,X)$ is $X$ with $k$ points deleted
 | $\bigvee_n S^1$ | free on $n$ | $\ZZ, \ZZ^n$ | $\pi_1$ free, homology free |
 | $\bigvee_n S^2$ | $1$ | $\ZZ, 0, \ZZ^n$ |  |
 | Möbius band | $\ZZ$ | $\ZZ, \ZZ$ | deformation retracts to its core circle |
-| $S^1\times S^2$ | $\ZZ$ | $\ZZ, \ZZ, \ZZ, \ZZ$ |  |
-| $D(k,\RR^n)$, $n\geq 2$ | $F_k$ if $n=2$; $1$ if $n\geq 3$ | $\ZZ$ in degree $0$, $\ZZ^k$ in degree $n-1$ | $\homotopic\bigvee_k S^{n-1}$ |
-| $D(k,S^n)$, $n\geq 2$ | $F_{k-1}$ if $n=2$; $1$ if $n\geq 3$ | $\ZZ$ in degree $0$, $\ZZ^{k-1}$ in degree $n-1$ | $\homotopic\bigvee_{k-1} S^{n-1}$ |
-| $D(k,T^2)$ | $F_{k+1}$ | $\ZZ, \ZZ^{k+1}$ | $\homotopic\bigvee_{k+1} S^1$ |
+| $S^1\cross S^2$ | $\ZZ$ | $\ZZ, \ZZ, \ZZ, \ZZ$ |  |
 
 ## Definitions
 
-::: {.example title="Spheres and balls"}
-For $n\geq 0$,
-$$
-\begin{aligned}
-D^n &\coloneqq \theset{ \vector x \in \RR^{n} \st \norm{\vector x} \leq 1}, \\
-S^n &\coloneqq \theset{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd D^{n+1}.
-\end{aligned}
-$$
+[[D-SPHER]]
 
-The sphere $S^n$ is an $n$-manifold, and
-$$
-S^n \cong D^n / \bd D^n \cong D^n \Disjoint_{\bd D^n} D^n,
-$$
-the quotient collapsing the boundary to a point and the union of two discs glued by the identity of their boundaries.
+[[D-TORUS]]
 
-![The discs $D^1,D^2,D^3$ and their boundary spheres $S^0,S^1,S^2$](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
+[[D-RPROJ]]
 
-:::
+[[D-CPROJ]]
 
-::: {.example title="Tori"}
-For $n\geq 1$, the $n$-torus is
-$$
-T^n \coloneqq \prod_{j=1}^n S^1.
-$$
+[[D-GRASS]]
 
-:::
-
-::: {.example title="Matrix groups"}
-The following are topological groups, with the subspace topology from the space of matrices:
-
-- the general linear group $\GL_n(\RR)$ and the special linear group $\SL_n(\RR)$;
-
-- the orthogonal group $O(n)$ and the special orthogonal group $\SO(n)$;
-
-- the unitary group $U(n)$ and the special unitary group $\SU(n)$ of complex unitary matrices of determinant $1$;
-
-- the real symplectic group $\operatorname{Sp}(2n,\RR)$.
-
-:::
+[[D-STIEF]]
 
 [[D-MENR4]]
 
 [[D-KC4BS]]
 
-::: {.fact title="Low-dimensional identifications"}
-\envlist
-
-- The Möbius band $\mobiusband$ deformation retracts onto its core circle, so $\mobiusband \homotopic S^1$.
-
-- As a set, $\CP^n = \CC^n \Disjoint \CP^{n-1} = \coprod_{i=0}^n \CC^i$, which gives a CW structure with one cell in each even dimension $0,2,\ldots,2n$.
-
-- For $0\leq k<n$ and the standard inclusion $S^k\subseteq S^n$, $S^n / S^k \homotopic S^n \vee S^{k+1}$.
-
-:::
-
-::: {.remark title="Exceptional homeomorphisms"}
-$\RP^1 \cong S^1$, $\CP^1 \cong S^2$, and $\SO(3) \cong \RP^3$.
-
-:::
-
-## Deleting points
-
-::: {.example title="Punctured spaces"}
-For a space $X$ and $k\geq 1$ distinct points $x_1,\ldots,x_k\in X$, write $D(k, X)\coloneqq X \sm \theset{x_{1}, \ldots, x_{k}}$.
-For $n\geq 2$,
-$$
-\begin{aligned}
-D(k,\RR^n) &\homotopic \bigvee_{i=1}^k S^{n-1}, \\
-D(k,S^n) &\homotopic \bigvee_{i=1}^{k-1} S^{n-1}, \\
-D(k,T^2) &\homotopic \bigvee_{i=1}^{k+1} S^{1},
-\end{aligned}
-$$
-where an empty wedge is a point.
-The second follows from the first because $D(1,S^n)\cong\RR^n$ by stereographic projection.
-
-:::
-
 ## Cell structures and cohomology
 
-::: {.fact title="Cell structures and cohomology rings"}
-In the cell column, $c_0 + c_1 x + c_2 x^2 + \cdots$ records a CW structure with $c_i$ cells of dimension $i$; for a space listed up to homotopy equivalence it records a CW complex of that homotopy type.
-In the cohomology column $\abs{x}$ is the degree of a generator.
+[[D-ZOU5G]]
 
-| $X$ | Cells | $H^*(X;\ZZ)$ |
-| --- | --- | --- |
-| $\RR^n$, $D^n$ | $1$ | $\ZZ$ |
-| $D(k,\RR^n)$, $n\geq 2$ | $1+kx^{n-1}$ | $\ZZ$ in degree $0$, $\ZZ^k$ in degree $n-1$, zero products |
-| $S^n$, $n\geq 1$ | $1+x^n$ | $\ZZ[x]/(x^2)$, $\abs x=n$ |
-| $D(k,S^n)$, $n\geq 2$ | $1+(k-1)x^{n-1}$ | $\ZZ$ in degree $0$, $\ZZ^{k-1}$ in degree $n-1$, zero products |
-| $T^n$ | $(1+x)^n$ | exterior algebra on $x_1,\ldots,x_n$, $\abs{x_i}=1$ |
-| $D(k,T^2)$ | $1+(k+1)x$ | $\ZZ$, $\ZZ^{k+1}$, zero products |
-| $\bigvee^n S^1$ | $1+nx$ | $\ZZ$, $\ZZ^n$, zero products |
-| $\RP^n$, $n\geq 2$ even | $1+x+\cdots+x^n$ | $\ZZ$ in degree $0$, $\ZZ/2$ in even degrees $2,\ldots,n$ |
-| $\RP^n$, $n\geq 3$ odd | $1+x+\cdots+x^n$ | $\ZZ$ in degrees $0,n$, $\ZZ/2$ in even degrees $2,\ldots,n-1$ |
-| $\CP^n$ | $1+x^2+\cdots+x^{2n}$ | $\ZZ[x]/(x^{n+1})$, $\abs x=2$ |
-| Möbius band | $1+x$ | $\ZZ[x]/(x^2)$, $\abs x=1$ |
-| Klein bottle | $1+2x+x^2$ | $\ZZ$, $\ZZ$, $\ZZ/2$ |
+[[D-MEPE3]]
 
-With $\ZZ/2$ coefficients, $H^*(\RP^n;\ZZ/2)\cong\FF_2[a]/(a^{n+1})$ with $\abs a=1$.
+[[D-QK5BM]]
 
-:::
+[[FF-SYCKI]]
 
-## Higher homotopy groups
+[[FF-MJEUU]]
 
-::: {.fact title="Higher homotopy groups"}
-\envlist
+[[FF-7LLAF]]
 
-- A covering map induces isomorphisms on $\pi_k$ for $k\geq 2$, so $\pi_k(\RP^n)\cong\pi_k(S^n)$ for $k\geq 2$.
+[[FF-QOQ2K]]
 
-- $T^n$, the Klein bottle, and $\bigvee^n S^1$ have contractible universal covers ($\RR^n$, $\RR^2$, and a tree), so their $\pi_k$ vanish for $k\geq 2$.
+[[FF-NEJ3S]]
 
-- The long exact sequence of the fibration $S^1\to S^{2n+1}\to\CP^n$ gives $\pi_2(\CP^n)\cong\ZZ$ and $\pi_k(\CP^n)\cong\pi_k(S^{2n+1})$ for $k\geq 3$.
+[[FF-UBJ3S]]
 
-- $\RR^n$ and $D^n$ are contractible, so all their homotopy groups vanish.
+## Homotopy groups
 
-:::
+[[D-EUX36]]
+
+[[PR-FG4DK]]
+
+[[T-HZUM7]]
 
 ## Constructions
 
-::: {.fact}
-\envlist
+[[D-IGUUS]]
 
-- **Wedges.** For good pointed spaces, $\tilde H_*(X\vee Y) \cong \tilde H_*(X)\oplus\tilde H_*(Y)$, and if $X$ and $Y$ are CW complexes wedged at $0$-cells, $\pi_1(X\vee Y)\cong\pi_1(X)*\pi_1(Y)$ by van Kampen's theorem.
+[[PR-B6BB2]]
 
-- **Products.** $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$, and by the Künneth theorem for CW complexes
-  $$
-  H_n(X\times Y)\cong \bigoplus_{i+j=n} H_i(X)\tensor H_j(Y)\ \oplus \bigoplus_{i+j=n-1}\Tor(H_i(X),H_j(Y)).
-  $$
+[[PR-OO3DH]]
 
-- **Deleting a point.** If a closed $n$-manifold $M$ has a CW structure with a single $n$-cell, then $M$ minus a point in that cell deformation retracts onto the $(n-1)$-skeleton; a closed surface minus a point deformation retracts onto a wedge of circles.
+[[T-TZ3X7]]
 
-- **Connected sums.** For closed $n$-manifolds with $n\geq 2$, the homology of $M\# N$ is computed by the Mayer--Vietoris sequence for the decomposition along the separating $S^{n-1}$; $\Sigma_g\#\Sigma_h\cong\Sigma_{g+h}$.
-
-:::
-
-## Spaces distinguished by one invariant
-
-::: {.example title="$T^2$ and the Klein bottle"}
-$H_1(T^2)\cong\ZZ^2$ and $H_1(K)\cong\ZZ\oplus\ZZ/2$, and $H_2(T^2)\cong\ZZ$ while $H_2(K)=0$.
-
-:::
-
-::: {.example title="$\RP^2$ and $S^2$"}
-$\pi_1(\RP^2)\cong\ZZ/2$ and $\pi_1(S^2)=1$.
-
-:::
-
-::: {.example title="$\RP^3$ and $S^1\times S^2$"}
-$\pi_1(\RP^3)\cong\ZZ/2$ and $\pi_1(S^1\times S^2)\cong\ZZ$; also $H_1(\RP^3)\cong\ZZ/2$ and $H_1(S^1\times S^2)\cong\ZZ$.
-
-:::
-
-::: {.example title="$S^1\vee S^1\vee S^2$ and $T^2$"}
-Both have homology $\ZZ,\ZZ^2,\ZZ$, and $\pi_1(S^1\vee S^1\vee S^2)$ is free of rank $2$ while $\pi_1(T^2)\cong\ZZ^2$ is abelian, so they are not homotopy equivalent.
-
-:::
+[[PR-QV4U5]]
