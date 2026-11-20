@@ -15,17 +15,17 @@ The classification of closed surfaces, the Euler characteristic, connected sums,
 ::: {.example title="Standard surfaces"}
 \envlist
 
-- the sphere $S^2$;
+- the sphere $S^2$ [[D-SPHER|spheres and discs]];
 
-- the torus $T^2 \coloneqq  S^1\cross S^1$;
+- the torus $T^2 = S^1\cross S^1$ [[D-TORUS|torus]];
 
-- the real projective plane $\RP^2$;
+- the real projective plane $\RP^2$ [[D-RPROJ|real projective space]];
 
 - the Klein bottle $\KK$;
 
 - the Möbius band $\mobiusband$;
 
-- the closed orientable surface of genus $g$, $\Sigma_g \coloneqq \#_{i=1}^g T^2$.
+- the closed orientable surface of genus $g$, $\Sigma_g$, the [[D-CSUMM|connected sum]] of $g$ copies of $T^2$.
 
 The Möbius band, the annulus $S^1\cross I$, $T^2$, $\KK$, and $\RP^2$ are quotients of a square by the edge identifications in these pasting diagrams:
 
