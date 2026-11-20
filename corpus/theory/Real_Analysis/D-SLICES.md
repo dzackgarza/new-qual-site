@@ -32,5 +32,5 @@ $$
 :::
 
 ::: {.remark}
-For a Lebesgue measurable $E\subseteq\RR^{n_1}\times\RR^{n_2}$, the slices are measurable for almost every value of the fixed coordinate, and their measures integrate to the measure of $E$ ([[PR-6NDTF]]).
+For a Lebesgue measurable $E\subseteq\RR^{n_1}\times\RR^{n_2}$, the slices are measurable for [[D-ALMOSTEVERY|almost every]] value of the fixed coordinate, and their measures integrate to the measure of $E$ ([[PR-6NDTF]]).
 :::
