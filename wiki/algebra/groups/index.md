@@ -18,9 +18,9 @@ topics:
 
 - [[algebra/groups/groups-of-small-order|Groups of small order]] -- the groups of orders $p$, $p^2$, and $pq$, and of each composite order up to $20$.
 
-- [[algebra/groups/characteristic-subgroups|Characteristic subgroups, normal closures, and cores]].
-
 - [[algebra/groups/series-and-solvability|Series and solvability]] -- composition series, central and derived series, nilpotent and solvable groups.
+
+- [[algebra/groups/characteristic-subgroups|Characteristic subgroups, normal closures, and cores]].
 
 - [[algebra/groups/notation|Notation]].
 
