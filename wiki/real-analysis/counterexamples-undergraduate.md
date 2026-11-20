@@ -112,7 +112,7 @@ $$
 f(x)\coloneqq\sum_{n=0}^{\infty}\qty({3\over4})^{n}\varphi(4^{n}x).
 $$
 Since $0\leq\varphi\leq1$, the series converges uniformly by the Weierstrass $M$-test [@Rud76, Theorem 7.10], so $f$ is continuous, and $\abs f\leq 4$.
-By [@Rud76, Theorem 7.18], $f$ is differentiable nowhere.
+By [@Rud76, Theorem 7.18], whose function (37) is this one with its $\varphi$, $f$ is differentiable nowhere.
 $f$ is Riemann integrable on every compact interval, and not Lebesgue integrable on $\RR$, since it is continuous, $2$-periodic, and $f(1/2)=1/2$.
 
 :::
