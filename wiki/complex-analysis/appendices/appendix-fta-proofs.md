@@ -40,9 +40,9 @@ The same extension is nonconstant and $\CP^1$ is compact, so the extension is su
 
 ::: {.proposition}
 The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
-:::
 
-This is [[T-SVF2W|the identity principle]].
+This is [[T-SVF2W|the identity principle]]: if $fg\equiv0$ with $f\not\equiv0$, the zeros of $f$ are isolated, so $g$ vanishes on a set with a limit point in the domain and $g\equiv0$.
+:::
 
 ## A Banach space of holomorphic functions
 
