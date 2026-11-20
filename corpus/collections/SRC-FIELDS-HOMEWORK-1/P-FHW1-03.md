@@ -16,6 +16,17 @@ audit:
 - event: solution-written
   by: claude
   date: 2026-10-31
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. (a) a cubic is irreducible over Q exactly when it has no rational root,
+    and the candidates +-1, +-3 give f(1) = 6, f(-1) = 2, f(3) = 42, f(-3) = -18, none zero. (b) I
+    recomputed the inverse by the Euclidean algorithm: f = (x^2 - x + 2)(x + 2) + (x - 1) and
+    x^2 - x + 2 = (x - 1)x + 2, so 2 = (x^2 - x + 2) - x(x - 1) and substituting
+    x - 1 = f - (x^2 - x + 2)(x + 2) gives 2 = (x^2 - x + 2)(x + 1)^2 - x f, that is the inverse of
+    2 - alpha + alpha^2 is (1 + 2 alpha + alpha^2)/2, which is the card's answer. Checked the
+    arithmetic of that substitution rather than taking the displayed answer on trust.
 ---
 
 ::: {.problem}

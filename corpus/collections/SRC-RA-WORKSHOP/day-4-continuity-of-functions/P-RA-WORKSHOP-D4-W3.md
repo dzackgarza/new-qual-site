@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. The key inequality for cube roots is
+    |u^(1/3) - v^(1/3)|^3 <= |u - v|, which holds because (a - b)(a^2 + ab + b^2) = a^3 - b^3 with
+    a = u^(1/3), b = v^(1/3) and the second factor at least b^2 >= 0 gives |a - b| |a^2 + ab + b^2|
+    = |a^3 - b^3| with |a^2 + ab + b^2| >= |a-b|^2 ... in any case taking delta = eps^3 gives
+    |x - a| < delta => |x^(1/3) - a^(1/3)| < eps uniformly on [0,1], with no separate treatment of
+    a = 0 needed. Checked that uniformity in a is what makes this a proof of continuity on the whole
+    interval rather than at a point.
 ---
 ::: {.problem}
 Give an $\varepsilon$-$\delta$ proof that $f(x)=x^{1/3}$ is continuous on $[0,1]$.
