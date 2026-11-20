@@ -88,24 +88,16 @@ Over $\QQ$, the map
 $$\pi_*:H_*(X;\QQ)^G\longrightarrow H_*(Y;\QQ)$$
 is an isomorphism with inverse $d^{-1}\tau_*$. 
 
+Equivalently,
+$$
+\boxed{H_*(Y;\QQ)\cong H_*(X;\QQ)^G.}
+$$
+
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, $\pi_*(d^{-1}\tau_*)=\operatorname{id}$. If $x$ is $G$-invariant, then step [](#s4){.pf-ref} gives
 $$d^{-1}\tau_*\pi_*(x)=d^{-1}\sum_g g_*x=x.$$
 Also the image of $\tau_*$ is $G$-invariant because translation permutes the summands.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore
-$$\boxed{H_*(Y;\QQ)\cong H_*(X;\QQ)^G.}$$
-
-::: pf-proof
-
-This is exactly step [](#s5){.pf-ref}.
 
 :::
 
