@@ -84,7 +84,22 @@ audit:
     root of unity $\omega_{p/q}$, the displayed contribution, and the closing sentence about the
     exact formula. Not checked: the argument, whose open last sentence the third event records and
     which this pass did not re-derive.
-
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Reader's defect at steps 2 and 3 (`#thm3`) examined and not sustained; no line of the proof is
+    changed. The report compared the arc length $\asymp q^{-1}n^{-1/2}$ with the Gaussian width
+    $s_q^{-1/2}\asymp q^{1/2}n^{-1/4}$ and concluded that the arc does not reach beyond the width.
+    The two numbers are measured in different variables. In the rescaled variable $\zeta=\xi/\mu_q$,
+    $\mu_q\asymp q^{-1}n^{-1/2}$, the image of the arc has length $\asymp1$ and contains the saddle
+    $\zeta=i$, while the width is $s_q^{-1/2}\to0$; measured in $\xi$, the same width is
+    $\mu_q s_q^{-1/2}\asymp q^{-1/2}n^{-3/4}$, below the arc's $q^{-1}n^{-1/2}$. Either comparison
+    gives the arc far beyond the width, as the step says, and the Laplace evaluation is not affected
+    by the report. Provenance sentence corrected in the same pass: it now names the published set
+    searched, Rhoades, *Solutions/Hints to the Exercises* (2006), and its coverage — the Exercises,
+    not the Appendix A Problems. Not checked: the book's own derivation of Theorem 3 beyond what the
+    steps quote.
 ---
 
 ::: {.exercise}
@@ -117,7 +132,7 @@ Below, (i) is proved (Theorem 2), with the corrections to the printed statement 
 forces; (ii) is proved (Theorem 3), including the exact constant $1/(2\pi\sqrt2)$ and the
 $q$-dependence; (iii) is *not* proved, neither here nor in the book — the last section lists
 precisely what is missing. So the block is complete for (i) and (ii) and explicitly incomplete
-for (iii). The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, the checkout holding the book and no solution set for it, so the two theorems below rest only on the three numbered facts of the book quoted next and on the citations named in the steps.
+for (iii). The argument is this card's own: no retained solution set in the checkout covers the problems of Stein--Shakarchi, and the published set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Appendix A Problems, so the two theorems below rest only on the three numbered facts of the book quoted next and on the citations named in the steps.
 
 ::: pf
 
