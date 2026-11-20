@@ -96,6 +96,8 @@ Thus $P$ is flat.
 
 Every projective $A$-module is flat.
 
+Hence every projective module over a commutative ring is flat.
+
 ::: pf-proof
 
 Let $P$ be projective.
@@ -105,18 +107,6 @@ F\cong P\oplus Q.
 $$
 By step [](#s1){.pf-ref}, $F$ is flat.
 By step [](#s2){.pf-ref}, its direct summand $P$ is flat.
-
-:::
-
-:::
-
-::: pf-step
-
-Therefore every projective module over a commutative ring is flat.
-
-::: pf-proof
-
-This is exactly step [](#s3){.pf-ref}.
 
 :::
 
