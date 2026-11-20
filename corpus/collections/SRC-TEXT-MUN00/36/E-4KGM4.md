@@ -155,13 +155,13 @@ audit:
 
 ::: {.exercise}
 
-Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics), printed p. 228.
+Consider the seventeen properties listed at the head of the Supplementary Exercises (Review of the Basics).
 
 Which of these properties does a compact Hausdorff space have?
 :::
 
 ::: {.solution}
-No published solution of this supplementary exercise was located; the argument is the card's own, checked against the numbered results cited in each step. The seventeen properties, with the numbering the book uses at the head of the Supplementary Exercises (Review of the Basics), printed p. 228, are: (1) connected, (2) path connected, (3) locally connected, (4) locally path connected, (5) compact, (6) limit point compact, (7) locally compact Hausdorff, (8) Hausdorff, (9) regular, (10) completely regular, (11) normal, (12) first-countable, (13) second-countable, (14) Lindelöf, (15) has a countable dense subset, (16) locally metrizable, (17) metrizable.
+No published solution of this supplementary exercise was located; the argument is the card's own, checked against the numbered results cited in each step. The seventeen properties, with the numbering the book uses at the head of the Supplementary Exercises (Review of the Basics), are: (1) connected, (2) path connected, (3) locally connected, (4) locally path connected, (5) compact, (6) limit point compact, (7) locally compact Hausdorff, (8) Hausdorff, (9) regular, (10) completely regular, (11) normal, (12) first-countable, (13) second-countable, (14) Lindelöf, (15) has a countable dense subset, (16) locally metrizable, (17) metrizable.
 
 Let $X$ be a compact Hausdorff space throughout.
 
