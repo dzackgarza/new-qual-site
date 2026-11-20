@@ -68,6 +68,10 @@ $$
 where each $P_j$ is a polynomial of degree $r_j-1$.
 :::
 
+::: {.remark}
+Appendix A sets its asterisk before Problem 5 only, so none stands before this problem (Appendix A, Problem 4).
+:::
+
 ::: {.solution}
 No published solution set covers this problem: the collection's provenance is the book, quoted through the OCR transcription of its Appendix A Problems, and the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Appendix A Problems; no other set was located, and the argument on the card is its own. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$.
 
