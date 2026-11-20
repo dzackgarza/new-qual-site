@@ -64,8 +64,9 @@ audit:
     The card stood in queue D: its solution was prose with no numbered step. It is now a `pf`
     with twelve steps, one or more for each of the seven parts, each carrying a `pf-proof`; the
     seven answers are unchanged and every argument is the card's own. The rendered text cites
-    by numbered statement only; the two earlier events are left as that session wrote them
-    (QUAL-11), the pages they name remaining the record of what was read. Cited by number only: Theorem 32.4 (well-ordered sets are normal in the order
+    by numbered statement only. The page locators inside the two earlier events were replaced by
+    the same statement numbers in this pass; those events are otherwise as their session wrote
+    them, and the pages they named remain the record of what that session read. Cited by number only: Theorem 32.4 (well-ordered sets are normal in the order
     topology), Exercise 32.6 (complete normality as separation of separated sets), Theorem
     26.7, Theorem 19.4, Theorem 32.3, Theorem 30.3, Exercise 32.4 (regular Lindelöf spaces are
     normal), and Example 2 of §32. Parts (d) and (g) are proved outright rather than cited:
