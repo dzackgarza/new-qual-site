@@ -32,6 +32,16 @@ audit:
     and the Jordan-Hoelder statement are both correct, and the proof supplied is
     Sylow's: the fixed-point argument for the congruence, n_p = [G : N_G(P)], and the
     PQ = Q maximality step. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf pages 11--12, final part
+    C(i),(ii). The binomial count $\binom{p^am}{p^a}\equiv m\pmod p$ gives an orbit of size
+    prime to $p$, whose stabilizer has order divisible by $p^a$ and divides $p^a$ by free
+    action on the subset; $Q$ on $G/P$ gives containment and conjugacy; and $P$ acting by
+    conjugation has the single fixed point $P$, so $n_p\equiv1\pmod p$ and
+    $n_p=[G:N_G(P)]\mid m$. Correct.
 ---
 
 ::: {.exercise}
