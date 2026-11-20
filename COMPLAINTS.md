@@ -607,11 +607,11 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    Theorem 4.1(ii), and the finite check that truncating at $N=\lfloor\sqrt n\rfloor$ and rounding gives
    $p(n)$ for $n\le12$. **Not claimed:** a re-proof of Rademacher's theorem — that is the book's
    omission, and it is cited, not reproduced.
-2. **37 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
+2. **36 proofs never read.** The statement layer of all 137 previously unread HAT02 cards was audited,
    but 97 of their proofs were marked unread, not correct: §3.F 4–9, §4.A-4, §4.A-5, §4.1 10–23,
    §4.2 (39), §4.3 (24), §4.D (10), §4.L-4, §4.L-5. The known defects inside that set are the ones
-   reported and repaired above. Sixty of the 97 have since been read; the record of that reading is the
-   paragraph below, and the remaining 37 stand as this item lists them.
+   reported and repaired above. Sixty-one of the 97 have since been read; the record of that reading is the
+   paragraph below, and the remaining 36 stand as this item lists them.
 
    **2026-11-19: §3.F 4 to 9 and §4.A-4, §4.A-5 read, and no proof in the eight needed repair.** Each card was read
    against the printed exercise it states, and each proof was read for correctness. The six exercises
@@ -983,7 +983,12 @@ a full replacement proof for `E-HAT-4.3-24`, which had none; solutions for `E-SS
    argument, so it is named here as deferred rather than opened and left: with `-5` this makes two cards in
    §4.2 that want a session of their own, and the short cards behind them should be taken first.
 
-   Remaining unread in this item's set: §4.2 (12 more, incl. -5 and -29), §4.3 (24) --- 37 proofs.
+   **§4.2-30, read the same day.** Correct, no card changed; Proudfoot's published solution covers it and
+   is cited. For $E=\RR^2-(\{0\}\times A)$ the fibre of $x\mapsto x$ is $\RR$ away from $0$ and $\RR-A$ at
+   $0$, so the fibres are homeomorphic only when $A=\varnothing$; the card then checks local triviality for
+   the remaining case, which is the whole of $\RR^2$.
+
+   Remaining unread in this item's set: §4.2 (11 more, incl. -5 and -29), §4.3 (24) --- 36 proofs.
 
    **2026-11-19, a second reader: §4.1 12–23 and §4.2 1–10, 15, 16 read against the book; four proofs repaired.** Each
    repair is its own commit. `E-HAT-3.F-6` (`6b9c906473`) displayed, as the exactness proof of the standard free
