@@ -545,9 +545,9 @@ The exercise is Hartshorne IV.6.7. The published solution transcribed here is
 Andrew Egbert, *Solutions to Hartshorne's Algebraic Geometry* (October 3, 2013),
 Exercise IV.6.7, and this block follows his argument in his order and with his
 claims, adding the citations by numbered statement and the sentences that check a
-claim against the book. He proves the exercise's second sentence, that every curve
-other than the four listed has multisecants, in the contrapositive form; the first
-sentence is steps s1--s3 of the second solution. The paragraph after the proof
+claim against the book. He argues for the exercise's second sentence in the
+contrapositive form, that every curve other than the four listed has multisecants;
+the first sentence is steps s1--s3 of the second solution. The paragraph after the proof
 records what the check found, including the three places where his text is terse
 or wrong. The second solution on this card is the card's own, and it supplies
 them.
