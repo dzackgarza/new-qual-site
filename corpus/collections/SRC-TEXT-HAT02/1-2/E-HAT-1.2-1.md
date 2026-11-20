@@ -37,10 +37,16 @@ audit:
     Re-confirmed in this pass rather than copied: PDF p. 62 carries the running head 53.
     The durable part of the locator is that printed page; the file path names this machine's copy and
     `tmp/sources` does not survive a VM reset. No mathematics changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The statement carried a printed page, the name of the retained file and the offset between the printed
+    and PDF pagination. All three removed; the exercise is cited as §1.2 Exercise 1. No mathematics changed.
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 1.2 of Hatcher, *Algebraic Topology* (2002), printed p. 53, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §1.2 Exercise 1; the statement below is its wording.
 
 Show that the free product $G * H$ of nontrivial groups $G$ and $H$ has trivial center, and that the only elements of $G * H$ of finite order are the conjugates of finite-order elements of $G$ and $H$.
 :::
