@@ -11,7 +11,7 @@ topics:
 
 # Manifolds and knot complements
 
-Manifolds and their local homology, Poincaré duality and the orientation of closed manifolds, and the topology of knot complements in $S^3$.
+Manifolds and their [[D-BNCTG|local homology]], Poincaré duality and the orientation of closed manifolds, and the topology of knot complements in $S^3$.
 
 ## Manifolds
 
