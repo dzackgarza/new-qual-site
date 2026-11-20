@@ -52,6 +52,35 @@ audit:
     [0,1/2] fails at x = 0; only the existence of one is used and is what the step now
     states. Part (a) is Lee Mosher's MSE answer 4999568 with the two computations supplied;
     part (b) is the card's own, Conrad's handout having been located and not read.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Conrad's handout read for #169, the item #146 left open, and it confirms part (b). The copy
+    fetched on this date from
+    `virtualmath1.stanford.edu/~conrad/diffgeomPage/handouts/qtmanifold.pdf` is 17 pages whose
+    printed folio equals the PDF page. Example 2.6, printed pp. 3--4, is the action
+    $(z,w)\mapsto(1/z,-w)$ on $S^1\times S^1$, checked there to be free and properly discontinuous,
+    with quotient called the set-theoretic Klein bottle; Example 2.14, printed p. 8, identifies the
+    induced self-map of $\RR^2/\ZZ^2$ as $(x,y)\mapsto(-x,1/2+y)$ and calls the quotient the
+    topological Klein bottle, compact and Hausdorff; Remark 2.15, printed pp. 8--9, is the
+    rectangle model. That model is the card's: his involution $\iota$ is $\sigma$ after the
+    coordinate swap $(x,y)\mapsto(y,x)$ and the translation by $(-1/2,0)$ of $T$, which carry the
+    card's fundamental domain $[0,1/2]\times[0,1]$ onto his $[-1/2,1/2]\times[0,1/2]$ and carry
+    the card's relations $(0,y)\sim(1/2,1-y)$ and $(x,0)\sim(x,1)$ to his $(x_0,0)\sim(-x_0,1/2)$
+    and $(-1/2,y_0)\sim(1/2,y_0)$ -- the same two pairings, one in the same direction and one in
+    the opposite. Two things were added to the card in consequence: the step that describes the
+    domain now says that all four corners are identified and derives Conrad's two corner
+    identifications from the card's own relations, and the head of the solution now cites his
+    examples instead of recording them as unread. Recorded as a difference of method and not as a
+    defect: Conrad obtains freeness and proper discontinuity by exhibiting small neighbourhoods,
+    where the card uses Exercise 4 of §81, printed p. 493, and Theorem 81.5, printed p. 490; and he
+    reduces the quotient-topology step to a continuous surjection between compact Hausdorff
+    spaces, where the card uses that $\pi$ is closed and $G$ finite, the two being the same
+    reduction through his "it suffices to check closedness". What is not checked here: whether any
+    other part of his handout bears on the card, and his definition of the Klein bottle as a
+    quotient rather than through the labelling scheme, the card continuing to take the scheme
+    $aba^{-1}b$ as the definition from §74 Exercise 3, printed p. 454.
 ---
 
 ::: {.exercise}
@@ -63,7 +92,7 @@ audit:
 :::
 
 ::: {.solution}
-Part (a) is **Lee Mosher's answer 4999568** to Math Stack Exchange question 4999221 (https://math.stackexchange.com/a/4999568, posted 2024-11-17), whose map $f(z_{1},z_{2})=(z_{1}^{2},z_{2})$ is the $\psi$ below; the argument is stated here with the fibre computation and the deck-group computation that his answer leaves implicit. Part (b) is the card's own: the thread does not treat it, and the one source located for it, B. Conrad, *Quotients by group actions* (Stanford handout), Example 2.14 and Remark 2.15, was not read here, so nothing is taken from it.
+Part (a) is **Lee Mosher's answer 4999568** to Math Stack Exchange question 4999221 (https://math.stackexchange.com/a/4999568, posted 2024-11-17), whose map $f(z_{1},z_{2})=(z_{1}^{2},z_{2})$ is the $\psi$ below; the argument is stated here with the fibre computation and the deck-group computation that his answer leaves implicit. Part (b) is the card's own: the thread does not treat it. B. Conrad, *Quotients by group actions* (Stanford Math 396 handout, `virtualmath1.stanford.edu/~conrad/diffgeomPage/handouts/qtmanifold.pdf`), Example 2.14 and Remark 2.15, printed pp. 8--9, derives the same rectangle with the same two edge identifications for the involution conjugate to $\sigma$ below, and is cited at the step that describes the domain.
 
 Write $T=\RR^{2}/\ZZ^{2}$ and a point as $[x,y]$.
 
@@ -136,7 +165,7 @@ Replacing $(x,y)$ by $(x+m,y+n)$ changes the image by $(m,-n)\in\ZZ^{2}$, so $\s
 In (b), $D=\{[x,y]\mid 0\le x\le\tfrac12,\ 0\le y\le1\}$ meets every orbit, and a point of the interior of $D$ is the only point of its orbit in $D$; the only further coincidences are $(0,y)\sim(\tfrac12,1-y)$ and $(x,0)\sim(x,1)$.
 
 ::: pf-proof
-The orbit of $[x,y]$ is $\{[x,y],[x+\tfrac12,-y]\}$. If the representative $x$ of $x\bmod 1$ lies in $[0,\tfrac12]$, then $[x,y]$ itself with $y$ replaced by its representative in $[0,1]$ lies in $D$; if $x\bmod1\in(\tfrac12,1)$, then $x+\tfrac12\bmod1\in(0,\tfrac12)$ and the partner lies in $D$. So every orbit meets $D$. If $[x,y]$ is in the interior of $D$, so that $0<x<\tfrac12$ and $0<y<1$, then the first coordinate of the partner is $x+\tfrac12\bmod1\in(\tfrac12,1)$, not in $[0,\tfrac12]$; so no other point of the orbit lies in $D$. On the boundary: two boundary points of $D$ represent the same class of $T$ when they differ by an integer vector, which happens only for $(x,0)$ and $(x,1)$; and they represent the same point of one orbit when one is the partner of the other, which happens only for the pairs $(0,y)$ and $(\tfrac12,-y)$, the latter written in $D$ with the second coordinate replaced by $1-y$. The earlier prose's claim that exactly one of the classes of $x$ and $x+\tfrac12$ lies in $[0,\tfrac12]$ fails at $x\equiv0$, where both $0$ and $\tfrac12$ do; what is used is only that one of them does.
+The orbit of $[x,y]$ is $\{[x,y],[x+\tfrac12,-y]\}$. If the representative $x$ of $x\bmod 1$ lies in $[0,\tfrac12]$, then $[x,y]$ itself with $y$ replaced by its representative in $[0,1]$ lies in $D$; if $x\bmod1\in(\tfrac12,1)$, then $x+\tfrac12\bmod1\in(0,\tfrac12)$ and the partner lies in $D$. So every orbit meets $D$. If $[x,y]$ is in the interior of $D$, so that $0<x<\tfrac12$ and $0<y<1$, then the first coordinate of the partner is $x+\tfrac12\bmod1\in(\tfrac12,1)$, not in $[0,\tfrac12]$; so no other point of the orbit lies in $D$. On the boundary: two boundary points of $D$ represent the same class of $T$ when they differ by an integer vector, which happens only for $(x,0)$ and $(x,1)$; and they represent the same point of one orbit when one is the partner of the other, which happens only for the pairs $(0,y)$ and $(\tfrac12,-y)$, the latter written in $D$ with the second coordinate replaced by $1-y$. The earlier prose's claim that exactly one of the classes of $x$ and $x+\tfrac12$ lies in $[0,\tfrac12]$ fails at $x\equiv0$, where both $0$ and $\tfrac12$ do; what is used is only that one of them does. All four corners of $D$ are identified: $(0,0)\sim(\tfrac12,1)$ and $(\tfrac12,0)\sim(0,1)$ by the first of the two relations, and $(0,0)\sim(0,1)$ by the second. Conrad's Remark 2.15, printed pp. 8--9, obtains the same pattern from the rectangle $[-\tfrac12,\tfrac12]\times[0,\tfrac12]$ for the involution $\iota(x,y)=(-x,\tfrac12+y)$: the left and right edges in the same direction, $(-\tfrac12,y_0)\sim(\tfrac12,y_0)$, and the bottom and top in the opposite one, $(x_0,0)\sim(-x_0,\tfrac12)$, together with the two corner identifications that make the relation transitive. The two descriptions agree, $\iota$ being $\sigma$ after the coordinate swap $(x,y)\mapsto(y,x)$ followed by the translation $(x,y)\mapsto(x-\tfrac12,y)$ of $T$, which carries $D$ onto his rectangle and carries the relation $(0,y)\sim(\tfrac12,1-y)$ to $(y-\tfrac12,0)\sim(\tfrac12-y,\tfrac12)$ and the relation $(x,0)\sim(x,1)$ to $(-\tfrac12,x)\sim(\tfrac12,x)$.
 :::
 
 :::
