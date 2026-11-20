@@ -86,6 +86,22 @@ audit:
     outline, and the card's steps supply the residue computation, the estimate on the outer circle
     and the bookkeeping of the polynomial degree. Not checked: anything in the published document
     outside its Problem 4.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    A second, textbook statement of the corrected form was read at its source and is now named in the
+    solution's opening paragraph: Philippe Flajolet and Robert Sedgewick, *Analytic Combinatorics*,
+    Cambridge University Press, 2009, part B, chapter IV, section IV.5, Theorem IV.10 (the author's
+    PDF at `https://algo.inria.fr/flajolet/Publications/book.pdf`, text extracted and read here).
+    Its equation (29) reads $f_n\equiv[z^n]f(z)=\sum_{j=1}^m\varpi_j(n)\alpha_j^{-n}+O(R^{-n})$ for
+    $f$ meromorphic on $|z|\le R$ with poles $\alpha_1,\dots,\alpha_m$ and analytic on $|z|=R$ and
+    at $0$, with $\deg\varpi_j$ one less than the order of the pole; its second proof is Cauchy's
+    coefficient formula with the contour pushed past the poles, that is, the residue computation the
+    book's hint names. Checked against the card: the minus sign and the factor $\alpha_j^{-n}$ are
+    both in the printed theorem, so the card's two corrections agree with a textbook statement.
+    Not checked: the error bound's constant, which Flajolet and Sedgewick give in their Note IV.27
+    and the card derives from its own estimate, and nothing outside Theorem IV.10.
 ---
 
 ::: {.exercise}
@@ -101,7 +117,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 :::
 
 ::: {.solution}
-A published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against the printed Problem, it reaches the same two corrected forms the card states: Cauchy's formula on $|w|=R$ with $1<R$ inside the meromorphic region gives $F_n$ as the outer integral $O(R^{-n})$ minus the sum of the residues of $F(w)w^{-n-1}$, which is $-\sum_jP_j(n)+O(e^{-\varepsilon n})$, and it too records that the printed plus sign is an error, with the counterexample $F(w)=1/(1-w)$, where $F_n=1$ while the printed residue term is $-1$. The proof below follows that route and supplies the estimates it compresses, as the audit trail records. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$.
+A published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 4), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Checked against the printed Problem, it reaches the same two corrected forms the card states: Cauchy's formula on $|w|=R$ with $1<R$ inside the meromorphic region gives $F_n$ as the outer integral $O(R^{-n})$ minus the sum of the residues of $F(w)w^{-n-1}$, which is $-\sum_jP_j(n)+O(e^{-\varepsilon n})$, and it too records that the printed plus sign is an error, with the counterexample $F(w)=1/(1-w)$, where $F_n=1$ while the printed residue term is $-1$. The corrected form is also published as Theorem IV.10 of Philippe Flajolet and Robert Sedgewick, *Analytic Combinatorics* (Cambridge University Press, 2009), §IV.5: its equation (29) states $f_n=\sum_j\varpi_j(n)\alpha_j^{-n}+O(R^{-n})$ with $\deg\varpi_j$ one less than the order of the pole, and its second proof is the residue computation that the book's hint names. The proof below follows that route and supplies the estimates it compresses, as the audit trail records. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$. **Two corrections to the printed statement are part of the card**, and the proof below establishes the corrected form: the sum $\sum_jP_j(n)$ carries a **minus** sign in front of each residue, and each $P_j$ is $\alpha_j^{-n}$ times a polynomial in $n$ rather than a polynomial in $n$ (which is the same thing only when every pole is at $1$). Write $\DD=\{\abs w<1\}$, let $\Omega\supset\overline\DD$ be a region on which $F$ is meromorphic with poles exactly the distinct $\alpha_1,\dots,\alpha_k\in\partial\DD$ of orders $r_1,\dots,r_k$, and write $F(w)=\sum_{n\ge0}F_nw^n$.
 
 ::: pf
 
