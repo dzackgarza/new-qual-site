@@ -50,6 +50,17 @@ audit:
     the Rhoades set, and course pages. This search located no published set answering this Problem,
     and none is retained in this repository. Not checked: whether such a set exists outside what a
     web search reaches. The mathematics of the card is unchanged.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the source-checked event of 2026-11-20 above, whose pair of page numbers is
+    off by one on the second number: the printed folio it names is the right one for this Problem,
+    and the PDF page it names is the page after that folio. Read on the pages themselves: the page
+    carrying the folio the event names holds "2. Let F(z) = sum_{n>=1} d(n) z^n ... where d(n)
+    denotes the number of divisors of n", which is this Problem, while the page it names as the PDF
+    page holds Problem 3(a) with its displayed (16) and nothing of Problem 2. The card cites
+    Chapter 2, Problem 2, and its statement and argument are unchanged.
 ---
 
 ::: {.exercise}
