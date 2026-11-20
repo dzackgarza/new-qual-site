@@ -359,6 +359,26 @@ audit:
     Proposition II.7.3; Example II.8.20.3; Remark IV.6.4.1(d) with Exercise V.2.9; and Fukasawa,
     arXiv:2108.00650v3, section 1. No page locator appears in the card's own text.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two corrections found by an independent audit of this card's citations, both mine.
+
+    (i) The step tangent-char-zero cited Fukasawa's definition as "§1, p. 1". That is a page
+    locator in the body of the card, which the citation rule forbids: the reference is now
+    "§1" alone, which is where both sentences the step uses stand. A sweep of every card of this
+    section for the same form, including "pp." and bare "p. <number>", finds no other occurrence in
+    a card's body.
+
+    (ii) An event of 2026-11-01 records that the solution block was moved out of a remark block and
+    says that block has "sixteen steps". The card has fifteen: s1--s13, tangent-char-zero and
+    positive-char-counterexample. The count in that dated record is wrong and is left as written
+    (QUAL-11); this event is the correction of record.
+
+    Nothing mathematical changes: the steps, their claims and their proofs are the ones read in the
+    events above.
+
 ---
 
 ::: {.problem}
@@ -550,7 +570,7 @@ In characteristic zero, the tangent-line finiteness assumption in step
 
 ::: pf-proof
 
-Kaji's theorem in characteristic zero, in the form stated and cited by Fukasawa (*A generalization of Esteves--Homma's example of tangentially degenerate curves*, [arXiv:2108.00650v3](https://arxiv.org/abs/2108.00650v3), §1, p. 1, where both sentences used here stand): an irreducible projective curve $C\subset\PP^N$ with $N\ge3$, not contained in any plane, over an algebraically closed field of characteristic $0$, is *tangentially degenerate* when $T_PC$ meets $C$ away from $P$ for a general $P\in C$, and **no such curve is tangentially degenerate when the morphism $X\to\PP^N$ induced by the normalization $\phi\colon X\to C$ is unramified**. Each hypothesis holds here: $\PP^3$ has $N=3$, the field is algebraically closed of characteristic zero, $X$ is nonplanar, and $X$ is smooth, so its normalization is an isomorphism and hence unramified. So the tangent line at a general point does not meet the curve at a second point. (Kaji's original is *On the tangentially degenerate curves*, J. London Math. Soc. (2) **33** (1986) 430--440, [doi:10.1112/jlms/s2-33.3.430](https://doi.org/10.1112/jlms/s2-33.3.430); the restatement above is the source consulted.) That statement is about a general point; passing to
+Kaji's theorem in characteristic zero, in the form stated and cited by Fukasawa (*A generalization of Esteves--Homma's example of tangentially degenerate curves*, [arXiv:2108.00650v3](https://arxiv.org/abs/2108.00650v3), §1, where both sentences used here stand): an irreducible projective curve $C\subset\PP^N$ with $N\ge3$, not contained in any plane, over an algebraically closed field of characteristic $0$, is *tangentially degenerate* when $T_PC$ meets $C$ away from $P$ for a general $P\in C$, and **no such curve is tangentially degenerate when the morphism $X\to\PP^N$ induced by the normalization $\phi\colon X\to C$ is unramified**. Each hypothesis holds here: $\PP^3$ has $N=3$, the field is algebraically closed of characteristic zero, $X$ is nonplanar, and $X$ is smooth, so its normalization is an isomorphism and hence unramified. So the tangent line at a general point does not meet the curve at a second point. (Kaji's original is *On the tangentially degenerate curves*, J. London Math. Soc. (2) **33** (1986) 430--440, [doi:10.1112/jlms/s2-33.3.430](https://doi.org/10.1112/jlms/s2-33.3.430); the restatement above is the source consulted.) That statement is about a general point; passing to
 "all but finitely many" needs the second-point incidence, and the distinctness
 $Q\ne P$ is essential to it. In homogeneous coordinates put
 $$
