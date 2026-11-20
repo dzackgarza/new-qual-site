@@ -14,7 +14,7 @@ $$
 \CaCl(X)\iso\Pic(X),\qquad [D]\longmapsto[\OO_X(D)]
 $$
 [@Har77, Proposition II.6.15].
-Let $X$ be noetherian, integral and separated. The Weil divisors modulo principal divisors form the group $\Cl(X)$, and a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16 and 145], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
+Let $X$ be noetherian, integral and separated. The Weil divisors modulo principal divisors form the group $\Cl(X)$, and a Cartier divisor is a locally principal Weil divisor, so $\CaCl(X)\into\Cl(X)$; the inclusion is an isomorphism, hence $\Cl(X)\cong\Pic(X)$, when every local ring $\OO_{X,x}$ is a unique factorization domain [@Har77, Proposition II.6.11 and Corollary II.6.16], and in particular for a regular $X$ [@Har77, Remark II.6.11.1A].
 On a scheme that is not locally factorial the inclusion is strict, and [[D-5PQ5W]] records both groups on the affine quadric cone.
 
 ## The Picard group
@@ -33,7 +33,7 @@ Let $D$ be a divisor on an integral scheme $X$ with rational-function sheaf $\mc
 $$
 \Gamma(X,\OO_X(D))=\theset{f\in\mck(X)^\times:\operatorname{div}(f)+D\ge0}\cup\theset{0}
 $$
-[@Har77, Definition II.6].
+[@Har77, Section II.6].
 For a nonsingular projective variety $X$ over an algebraically closed field, the nonzero global sections of $\OO_X(D)$, modulo multiplication by $k^\times$, are the effective divisors linearly equivalent to $D$, so the complete linear system $\linearsystem{D}$ is the projective space of $\Gamma(X,\OO_X(D))$ [@Har77, Proposition II.7.7].
 An effective divisor is thus a nonzero section of an invertible sheaf, and a linear system is a linear subspace of sections ([[algebraic-geometry/divisors/line-bundles-and-linear-systems|line bundles and linear systems]]).
 
