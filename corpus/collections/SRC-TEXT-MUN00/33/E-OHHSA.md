@@ -29,6 +29,35 @@ audit:
     countability of S_{n,k} from the G_delta property of the level set and the finiteness of the
     deleted sets, which is the step the printed text leaves to the reader. This exercise is in the
     COMPLAINTS.md entry.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 33 Exercise 11, printed p. 214, and
+    repaired in parts (b) and (c), where the argument had been asserted rather than proved. Part
+    (b): for an arbitrary open $U_r$ containing $p_{n,k}$ the step took a type-(ii) neighbourhood
+    $C_{n,k}\setminus F_r$ inside it, which needs the refinement that a basis element containing
+    $p_{n,k}$ and not of type (ii) contains all of $C_{n,k}$ -- true of type (iii) because $n<m$
+    with $m$ even gives $m\ge n+1>n+1-1/k$, and of type (iv) because $m<n$ gives
+    $m\le n-1<n-1+1/k$ -- and the refinement is now written. Part (c): the regularity argument
+    rested on "$C_{n,k}$ is closed in $X$", which was asserted, and its two closure claims for a
+    type-(i) segment and for a type-(iii) set were asserted too. All three are now proved. $C_{n,k}$
+    is closed: a point of the complement on a line $L_m$ has horizontal distance at least $1/k$
+    from it and a short type-(i) segment about it meets it nowhere; a point on another circle, or
+    a top point of another circle, is separated by deleting the finite intersection
+    $C_{n',k'}\cap C_{n,k}$, which is finite because two distinct circles meet twice, a circle
+    meets a vertical segment twice, and the segments are disjoint for distinct pairs; and $a$ and
+    $b$ are separated by the one-sided basis sets with $m\le n-1$ and $m\ge n+1$. The closure of a
+    type-(i) segment inside a larger one is settled by separating each point outside the larger one
+    in four cases, of which the top point is the one that needs a type-(ii) neighbourhood, the
+    others being a horizontal segment at the point's own height or the one-sided sets for $a$ and
+    $b$. The closure of $B_{m'}$ inside $B_m$ is settled by a basis element about any point outside
+    $B_m$ that misses $B_{m'}$, the top-point case using $n\ge m$ and $n-1+1/k>m'$. Re-read and
+    unchanged: the countability of each $S_{n,k}$ from the $G_\delta$ property, the choice of $d$,
+    the two limits and $f(a)=f(b)$; the $T_1$ argument; and the conclusion that $X$ is regular but
+    not completely regular. What the repair changes in the audit trail: the earlier note's "four
+    types" are three headings here, types (iii) and (iv) being handled together. Not checked: the
+    folio, the checkout's extraction carrying only three page-range markers at this pass.
 ---
 
 ::: {.exercise}
@@ -83,11 +112,7 @@ f^{-1}(c)=\bigcap_{r=1}^\infty f^{-1}((c-1/r,c+1/r)),
 $$
 so every level set is a $G_\delta$.
 
-Fix odd $n$ and $k\ge2$, and put $c=f(p_{n,k})$. Since $f^{-1}(c)$ is a $G_\delta$ containing $p_{n,k}$, write it as $\bigcap_r U_r$ with each $U_r$ open and containing $p_{n,k}$. For each $r$, choose a type-(ii) neighborhood
-$$
-C_{n,k}\setminus F_r\subset U_r
-$$
-with $F_r$ finite. Therefore
+Fix odd $n$ and $k\ge2$, and put $c=f(p_{n,k})$. Since $f^{-1}(c)$ is a $G_\delta$ containing $p_{n,k}$, write it as $\bigcap_r U_r$ with each $U_r$ open and containing $p_{n,k}$. For each $r$, a basis element containing $p_{n,k}$ is of type (ii), or a type-(iii) or type-(iv) set, and the last two contain all of $C_{n,k}$: a type-(iii) set $B_m$ containing $p_{n,k}$ has $n<m$ with $m$ even, hence $m\ge n+1>n+1-1/k$, so every point of $C_{n,k}$ has first coordinate below $m$, and a type-(iv) set containing $p_{n,k}$ has $m<n$, hence $m\le n-1<n-1+1/k$, so every point of $C_{n,k}$ has first coordinate above $m$. In every case $C_{n,k}$ minus a finite set $F_r$ lies in $U_r$. Therefore
 $$
 S_{n,k}=\{p\in C_{n,k}:f(p)\ne f(p_{n,k})\}
 \subset\bigcup_{r=1}^\infty F_r,
@@ -117,17 +142,17 @@ $$
 
 (c) First, one-point sets are closed, so $X$ is $T_1$: given distinct points $y\ne z$, a short horizontal segment through $z$ avoiding both $y$ and the points $p_{n,k}$ is a type-(i) neighbourhood of $z$ missing $y$ when $z$ is an ordinary point, a type-(ii) neighbourhood with $F$ enlarged by $y$ does the same when $z=p_{n,k}$, and the type-(iii) sets $B_m$ with $m$ large contain $z$ but not $y$ while the type-(iv) sets with $m$ small do the same for $z=b$.
 
-We prove regularity by shrinking basis neighborhoods.
+We prove regularity by shrinking basis neighbourhoods: for a point $x$ and a basis element $B\ni x$, a basis element $V$ with $x\in V$ and $\overline{V}\subseteq B$ is produced, which is the form the axiom takes in a space whose one-point sets are closed.
 
-- For a type-(i) horizontal segment $B$ containing $x$, choose a shorter horizontal segment $B'\ni x$ whose horizontal closure is still contained in $B$ and avoids all top points. Then $\overline{B'}\subset B$.
-- If $x=p_{n,k}$ and $B=C_{n,k}\setminus F$ is type (ii), then $p_{n,k}\notin F$. Every point of $F$ is an ordinary point of $C_{n,k}$ and is isolated in $C_{n,k}$ by a sufficiently short horizontal type-(i) neighborhood. Hence $F$ is open in the subspace $C_{n,k}$, while $C_{n,k}$ is closed in $X$. Therefore $B=C_{n,k}\setminus F$ is closed in $X$, so it already has closure contained in itself.
-- For a type-(iii) neighborhood
-$$
-B_m=\{a\}\cup\{(x,y)\in X:x<m\},
-$$
-choose an even $m'<m$. Then the closure of $B_{m'}$ can add only points with first coordinate $m'$, all of which still lie in $B_m$. Hence $\overline{B_{m'}}\subset B_m$. The type-(iv) case at $b$ is symmetric.
+**The sets $C_{n,k}$ are closed.** Let $z\in X-C_{n,k}$. If $z=(m,y)$ lies on a line $L_m$, with $m$ even, then every point of $C_{n,k}$ has first coordinate in $[n-1+1/k,n+1-1/k]$ and $\abs{m-n}\ge1$, so the horizontal distance from $z$ to $C_{n,k}$ is at least $1/k$; a horizontal segment about $z$ of half-width less than $1/k$ and less than $1$, which contains no $p_{n',k'}$ because the top points on the horizontal line through $z$ lie at odd integers, is a type-(i) neighbourhood of $z$ missing $C_{n,k}$. If $z$ is an ordinary point of some $C_{n',k'}$, or a top point $p_{n',k'}$, with $(n',k')\ne(n,k)$, then $C_{n',k'}\cap C_{n,k}$ is finite --- two distinct circles meet in at most two points, a circle meets one of these vertical segments in at most two, and two of the segments are either disjoint or equal, the latter impossible for distinct pairs --- and $p_{n',k'}\notin C_{n,k}$; so $C_{n',k'}$ minus that finite intersection is a type-(ii) neighbourhood of $z$ missing $C_{n,k}$. Finally $a$ has the type-(iii) neighbourhood $B_m$ for any even $m\le n-1$, which misses $C_{n,k}$ because every point of $C_{n,k}$ has first coordinate greater than $n-1$, and $b$ has the type-(iv) neighbourhood with $m\ge n+1$, which misses it for the same reason on the other side.
 
-Thus every point and basis neighborhood admit a smaller neighborhood with closure inside the given one, so $X$ is regular.
+**Type (i).** Let $B=X\cap((x_0-\epsilon,x_0+\epsilon)\times\{y_0\})$ contain $x$ and contain no $p_{n,k}$, and let $B'=X\cap((x_0-\epsilon',x_0+\epsilon')\times\{y_0\})$ with $0<\epsilon'<\epsilon$. Then $\overline{B'}\subseteq B$, because a point $z\in X-B$ is separated from $B'$ by a basis element containing it: if $z$ has second coordinate $y_0$ and $\abs{x_z-x_0}\ge\epsilon$, a horizontal segment about $z$ at height $y_0$, short enough to miss $B'$ and to contain no $p_{n,k}$, which is possible because the top points on that line lie at odd integers; if $z$ has second coordinate $y_z\ne y_0$ and is an ordinary point of its line or its circle, a short horizontal segment at height $y_z$ misses $B'$; if $z=p_{n,k}$, the set obtained from $C_{n,k}$ by deleting the finitely many of its points that lie in $B'$ is a type-(ii) neighbourhood of $z$ missing $B'$, and it contains $z$ because $z\notin B'$; and $a$ is separated from $B'$ by $B_m$ for an even $m<x_0-\epsilon'$, and $b$ by the type-(iv) set for an even $m>x_0+\epsilon'$.
+
+**Type (ii).** Let $x=p_{n,k}$ and $B=C_{n,k}\setminus F$ with $F$ finite and $p_{n,k}\notin F$. No point of $F$ is a top point, since $C_{n,k}$ meets $\{p_{n',k'}\}$ only at $p_{n,k}$; so each $z\in F$ is an ordinary point of $C_{n,k}$, and a horizontal segment through $z$ short enough to contain no $p_{n',k'}$ meets $C_{n,k}$ in $z$ alone, a horizontal line meeting $C_{n,k}$ in at most four points, pairwise separated. Such a segment is a type-(i) basis element, so $F$ is open in the subspace $C_{n,k}$ and $B$ is closed in $C_{n,k}$; and $C_{n,k}$ is closed in $X$, so $B$ is closed in $X$. Since $x\in B$, the set $B$ itself is a basis element with $\overline{B}=B\subseteq B$.
+
+**Types (iii) and (iv).** Let $B_m=\{a\}\cup\{(x,y)\in X:x<m\}$ with $m$ even and take an even $m'<m$. If $z\notin B_m$ then $z\ne a$ and $x_z\ge m$, and $z$ has a basis element containing it and missing $B_{m'}$: for an ordinary point $z$ a horizontal segment at its own height and of half-width less than $m-m'$ stays at first coordinate greater than $m'$; for $z=p_{n,k}$ one has $n\ge m$, so every point of $C_{n,k}$ has first coordinate at least $n-1+1/k\ge m-1+1/k>m'$, and the type-(ii) set $C_{n,k}$ itself is a neighbourhood of $z$ missing $B_{m'}$. Hence $\overline{B_{m'}}\subseteq B_m$. The type-(iv) case at $b$ is symmetric, with $m'>m$.
+
+Thus every point and every basis element containing it admit a basis element with closure inside the given one, so $X$ is regular.
 
 It is not completely regular. The points $a\ne b$ are closed, but part (b) shows that every continuous real-valued function on $X$ satisfies $f(a)=f(b)$. Complete regularity would provide a continuous $f:X\to[0,1]$ separating $a$ from the closed set $\{b\}$, impossible. Hence $X$ is regular but not completely regular.
 :::
