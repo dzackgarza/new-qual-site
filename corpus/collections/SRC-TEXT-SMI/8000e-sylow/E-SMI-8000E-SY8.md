@@ -38,6 +38,15 @@ audit:
     orbits on np < p^2 letters have size 1 or p; each nontrivial orbit gives an
     image of order p inside S_p; the product map is injective, so p^n ≤ p^k and
     k = n; hence P embeds in C_p^n and is abelian. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 8, with the
+    restored $p>2$ in (i) (a Sylow $2$-subgroup of $S_4$ is $D_8$). For $p>n$, $v_p((np)!)=n$;
+    orbits on $np<p^2$ letters have size $1$ or $p$; each nontrivial orbit has cyclic image of
+    order $p$; the product map is injective, so $p^n\le p^k$ and $k=n$; hence $P\hookrightarrow
+    C_p^n$ is abelian. No defect.
 ---
 
 ::: {.exercise}
