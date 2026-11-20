@@ -379,6 +379,34 @@ audit:
     Nothing mathematical changes: the steps, their claims and their proofs are the ones read in the
     events above.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Five results the steps use were named without a number, and two earlier events of today
+    overstated the citation state of the card. Both are corrected here.
+
+    The five, now cited as numbered statements: Bezout's theorem, Corollary I.7.8, in s1; the dual
+    curve, Exercise I.7.3, in s4; Chevalley's theorem, Exercise II.3.19, in tangent-char-zero; the
+    closed-immersion criterion, Proposition II.7.3 with Remark II.7.8.2, in s9, where the step had
+    only an internal card link; and the bound that a line not contained in a quadric surface meets
+    it in at most two points, Theorem I.7.7, in the positive-characteristic counterexample. Also
+    changed for accuracy: the remark now attributes the book's use of the word curve to the opening
+    paragraph of IV.1, which states it, instead of to a section heading.
+
+    The overstatement, recorded because it was mine. The two events of today each listed the
+    references of the card and said that every one was a numbered statement. The lists named
+    Proposition IV.3.1 and Exercise V.2.9, which this card does not cite, and they omitted the five
+    results above, so the claim was false when written; and the first of them also asserted that no
+    page locator appeared in the card's text while the Kaji restatement was still cited as "section
+    1, p. 1", which the event of the same day removes. The card's references are now: Exercise
+    IV.6.7; the definition of multisecant in IV.3 with Proposition IV.3.7; Exercise IV.3.4(a), (b);
+    Exercise IV.3.6(b); Theorem IV.6.4; Proposition II.7.3 with Remark II.7.8.2;
+    Remark IV.6.4.1(a) with Exercise II.8.4(f) for the plane-curve genus; Corollary I.7.8;
+    Exercise I.7.3; Exercise II.3.19; Theorem I.7.7; and Fukasawa, arXiv:2108.00650v3, section 1.
+
+    Not checked: the body of Kaji 1986, as before.
+
 ---
 
 ::: {.problem}
@@ -397,8 +425,8 @@ Hint: Consider a projection from a point of the curve to $\PP^2$.
 Hartshorne IV.6.7 states the converse without a characteristic restriction.
 It fails in characteristic $p\ge3$, as the final step shows.
 
-As in Hartshorne IV.3, a multisecant is a line meeting $X$ in
-at least three distinct points, and a tangent with intersection length $3$ at
+As in Hartshorne IV.3, in the definition that precedes Proposition IV.3.7, a multisecant is a
+line meeting $X$ in at least three distinct points, and a tangent with intersection length $3$ at
 one point is not a multisecant under that definition. The printed definition
 does not exclude the line $X$ itself when $X$ is a line, and a line meets
 itself in every one of its points, so under the letter of the definition the
@@ -408,7 +436,7 @@ sentence holds for all four curves, and without it the line is the one
 exception. The clause changes nothing for
 a planar curve of degree at least $2$ or for a nonplanar curve, since no line
 is contained in one of those. Smoothness and integrality are not extra
-hypotheses: the Terminology of the book reserves the word curve, in Chapter IV,
+hypotheses: the opening paragraph of IV.1 reserves the word curve, in that chapter,
 for a nonsingular projective curve. The only hypothesis this card adds to the
 printed second sentence is characteristic zero, and the final step shows that
 it is needed.
@@ -432,7 +460,7 @@ $X$ in three distinct points is $X$ itself.
 
 Let $X$ be a nonsingular plane conic.  No line is contained in $X$, and any
 line meets the degree-$2$ plane curve $X$ in scheme-theoretic length at most
-$2$ by Bezout.  Hence no line is a multisecant.
+$2$ by Bezout's theorem, Corollary I.7.8.  Hence no line is a multisecant.
 
 :::
 
@@ -501,7 +529,7 @@ multisecants.  If $X$ is planar, then $X$ is a line or a conic.
 Let $X$ lie in a plane and have degree $d$.  If $d\ge3$, then a general line
 in that plane meets the smooth curve $X$ transversely in $d$ distinct points:
 the lines meeting $X$ non-transversely are exactly the tangent lines, and these
-form the dual curve, a proper closed subset of the dual plane.  Hence the set of
+form the dual curve, a proper closed subset of the dual plane by Exercise I.7.3.  Hence the set of
 transverse lines is a nonempty open subset of the dual plane, so
 there are infinitely many such lines.  Each is a multisecant, contrary to
 the finiteness hypothesis.
@@ -592,7 +620,7 @@ B=\operatorname{pr}_1(Z^{*})
 $$
 be the set of points whose tangent line meets $X$ again at a point other than
 $P$. Since $Z^{*}$ is constructible, $B$ is constructible, by Chevalley's
-theorem that the image of a constructible set under a morphism of varieties is
+theorem, Exercise II.3.19, that the image of a constructible set under a morphism of varieties is
 constructible; this is where the diagonal having been removed matters, since the
 image of $Z$ itself is $X$. Kaji's theorem says that no point of $Z^{*}$ lies
 over the generic point of $X$, so $B$ does not contain that generic point. A
@@ -750,7 +778,8 @@ separates points and tangent vectors: the two conditions of the closed-immersion
 criterion are, equivalently, the injectivity of $\pi_P$ on closed points and the
 injectivity of its differential at each closed point, which is the form in which
 steps [](#s7){.pf-ref} and [](#s8){.pf-ref} establish them.  By the
-[[T-DIVMAPPN|closed-immersion criterion for a linear system]], $\pi_P$ is a
+[[T-DIVMAPPN|closed-immersion criterion for a linear system]], Proposition II.7.3
+with Remark II.7.8.2, $\pi_P$ is a
 closed immersion.
 
 Moreover,
@@ -778,8 +807,8 @@ $$
 ::: pf-proof
 
 By step [](#s9){.pf-ref}, $X$ is isomorphic to a nonsingular plane curve of degree
-$d-1$.  The plane-curve genus formula (II.8.20.3, and Remark 6.4.1 for the
-statement in this chapter) gives
+$d-1$.  The plane-curve genus formula, Remark IV.6.4.1(a), which states it for every
+$d\ge1$, and Exercise II.8.4(f), gives
 $$
 g(X)
 =
@@ -801,7 +830,7 @@ $$
 
 ::: pf-proof
 
-The curve is nonplanar, so [[T-CRVCAST|Castelnuovo's bound]], IV.6.4, applies.
+The curve is nonplanar, so [[T-CRVCAST|Castelnuovo's bound]], Theorem IV.6.4, applies.
 
 If $d$ is even, steps [](#s10){.pf-ref} and Castelnuovo give
 $$
@@ -906,7 +935,7 @@ $$
 
 A line meeting $C$ in three distinct points meets $Q$ in three distinct
 points, and a line not contained in a quadric surface meets it in at most two
-points, so it must lie on $Q$. Write a point of $Q$ as a rank-one matrix
+points by Theorem I.7.7, so it must lie on $Q$. Write a point of $Q$ as a rank-one matrix
 $$
 \begin{pmatrix}X_0&X_1\\X_2&X_3\end{pmatrix}
 =
