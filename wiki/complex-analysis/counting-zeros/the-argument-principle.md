@@ -12,19 +12,7 @@ topics:
 
 [[D-IA5FS]]
 
-::: {.fact}
-Every zero of a [[D-7DFVJ|meromorphic]] $f$ is a simple pole of $\logd f$ whose [[D-C3JIU|residue]] is its multiplicity, and every pole of order $m$ is a simple pole of $\logd f$ whose residue is $-m$.
-So $\logd f$ has no other singularities, and [[T-HRPNO|the residue theorem]] applied to it counts zeros minus poles.
-
-:::
-
-::: {.remark}
-For a nonzero rational function $f\in\CC(x)$ and $p\in\CC$, the residue of the logarithmic derivative at $p$ is the valuation $v_p(f)$ of $f$ at the prime ideal $\generators{x-p} \subseteq \CC[x]$:
-$$
-d \qty{ \log(f) } = {f'\over f}\dz \implies \Res_{z=p}(d \log(f) ) = v_p(f)
-.$$
-
-:::
+Zeros and poles of $f$ are the only singularities of $\logd f$, so [[T-HRPNO|the residue theorem]] applied to it counts zeros minus poles.
 
 ## The statement
 
