@@ -13,6 +13,13 @@ audit:
   - event: solution-written
     by: muse-spark-1.2
     date: 2026-08-30
+  - event: source-corrected
+    by: claude
+    date: 2026-11-20
+    note: >-
+      The solution's opening sentence cited the book through the printed page. It now cites the
+      numbered statement, Chapter 3, Exercise 8, and the page is gone from the rendered text. The
+      statement is unchanged and the contour argument was not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -24,7 +31,7 @@ if $a > \abs{b}$ and $a, b \in \RR$.
 :::
 
 ::: {.solution}
-The statement is Exercise 8 of [@SS03, ch. 3 (p. 104)], printed as $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ for $a>\abs{b}$.
+The statement is Exercise 8 of [@SS03, ch. 3], printed as $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ for $a>\abs{b}$.
 
 
 ::: pf
