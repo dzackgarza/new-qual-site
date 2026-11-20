@@ -258,18 +258,6 @@ $$
 f=\nu\circ\widetilde f.
 $$
 
-::: pf-proof
-
-On overlaps of affine opens of $X$, the factorizations from step [](#s7){.pf-ref} are all induced by the same map of function fields and the same canonical transition isomorphisms of step [](#s2){.pf-ref}.  They therefore agree and glue to a morphism $\widetilde f$.
-
-The composite $\nu\circ\widetilde f$ agrees with $f$ over every affine open of $X$, hence globally.  If another morphism had the same property, its restriction over every affine open would equal the unique local factorization from step [](#s7){.pf-ref}, so it would equal $\widetilde f$.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
 Thus $\nu:\widetilde X\to X$ has the universal property of normalization:
 $$
 \boxed{
@@ -284,7 +272,9 @@ $$
 
 ::: pf-proof
 
-This is exactly step [](#s8){.pf-ref}.
+On overlaps of affine opens of $X$, the factorizations from step [](#s7){.pf-ref} are all induced by the same map of function fields and the same canonical transition isomorphisms of step [](#s2){.pf-ref}.  They therefore agree and glue to a morphism $\widetilde f$.
+
+The composite $\nu\circ\widetilde f$ agrees with $f$ over every affine open of $X$, hence globally.  If another morphism had the same property, its restriction over every affine open would equal the unique local factorization from step [](#s7){.pf-ref}, so it would equal $\widetilde f$.
 
 :::
 
@@ -331,7 +321,7 @@ and step [](#s10){.pf-ref} shows that $\widetilde A$ is finite as an $A$-module.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the normal integral scheme $\widetilde X$ and its morphism to $X$; steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove the universal property; steps [](#s10){.pf-ref} and [](#s11){.pf-ref} prove finiteness over a field.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the normal integral scheme $\widetilde X$ and its morphism to $X$; steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s8){.pf-ref} prove the universal property; steps [](#s10){.pf-ref} and [](#s11){.pf-ref} prove finiteness over a field.
 
 :::
 
