@@ -27,10 +27,28 @@ audit:
   date: 2026-11-01
   note: >-
     Solution installed from a source-verified pass over the printed problem: the region is normalised so the line is the real axis, every curve is homotoped to a polygon crossing the line finitely often, a crosscut lemma inside a convex tube replaces the line segment by a loop in one of the two simply connected halves, and the remaining loop in the line is null-homotopic by convexity. Boundedness is not used; the printed item does not need it.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two corrections to the first event above. Its locator "PDF pages 129--130" is wrong: the item is
+    wholly on PDF p. 129 of the retained scan, printed p. 110, which is where it was re-read today,
+    and PDF p. 130 is the Chapter 4 title page. Its sentence that "the asterisk marking a starred
+    problem ... [is] preserved" is also wrong: nothing on the card recorded the mark, and the remark
+    below now does. The statement otherwise matches the printed words, boundedness hypothesis
+    included. The argument was read in full and holds: the reduction to $L=\RR$, the polygonal
+    approximation inside a convex tube around the compact image, the perturbation off the line, the
+    tube $W$ around $[p,q]$ with $W\cap\Omega_l$ convex, the crosscut step that replaces each half of
+    a crossing arc by the segment, and the final concatenation over $I$. Not checked: nothing further,
+    since the item carries no hint.
 ---
 
 ::: {.exercise}
 Suppose $\Omega$ is a bounded region. Let $L$ be a (two-way infinite) line that intersects $\Omega$. Assume that $\Omega\cap L$ is an interval $I$. Choosing an orientation for $L$, we can define $\Omega_l$ and $\Omega_r$ to be the subregions of $\Omega$ lying strictly to the left or right of $L$, with $\Omega=\Omega_l\cup I\cup\Omega_r$ a disjoint union. If $\Omega_l$ and $\Omega_r$ are simply connected, then $\Omega$ is simply connected.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 3, Problem 4, printed p. 110).
 :::
 
 ::: {.solution}
