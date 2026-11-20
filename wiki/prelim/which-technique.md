@@ -48,11 +48,7 @@ For the value, a geometric series, a telescoping series, or a known power series
 
 ## Limits
 
-For an indeterminate form of type $0/0$ or $\infty/\infty$ the rule of l'Hôpital gives
-$$
-\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g'(x)}
-$$
-whenever the second limit exists, $f$ and $g$ being differentiable near $a$ with $g'$ nonzero there; Taylor expansion replaces it when repeated differentiation does not simplify the quotient, and the squeeze theorem applies when the function is bounded between two functions of known limit.
+For an indeterminate form of type $0/0$ or $\infty/\infty$, [[T-LHOP|l'Hôpital's rule]] passes to the quotient of the derivatives; Taylor expansion replaces it when repeated differentiation does not simplify the quotient, and the squeeze theorem applies when the function is bounded between two functions of known limit.
 
 A recursively defined sequence that is monotone and bounded converges, and if $a_{n+1}=g(a_n)$ with $g$ continuous and $a_n\to L$, then $L = g(L)$.
 
@@ -62,9 +58,6 @@ For a conservative field $F = \nabla\phi$ on an open set containing the curve $C
 
 For a closed curve $\partial\Omega$ bounding a plane region $\Omega$, [[T-4M73O|Green's theorem]] turns the line integral into the double integral of $\partial g/\partial x - \partial f/\partial y$.
 
-For a closed surface $\partial V$ bounding a solid $V$ with outward normal $n$, the divergence theorem turns the surface integral into the triple integral of the divergence:
-$$
-\iint_{\partial V} F\cdot n\,dS = \iiint_V \nabla\cdot F\,dV.
-$$
+For a closed surface $\partial V$ bounding a solid $V$, [[T-DIVTHM|the divergence theorem]] turns the surface integral against the outward normal into the integral of the divergence over $V$.
 
 Otherwise, parametrize the curve or the surface, in coordinates adapted to the symmetry of the region.
