@@ -22,7 +22,7 @@ The pair $(\wp,\wp')$ satisfies $\wp'^2=4\wp^3-g_2\wp-g_3$ with $g_2,g_3$ determ
 
 [[T-CRVUNIF]]
 
-Two lattices give isomorphic curves exactly when they are related by an element of $\GL_2(\ZZ)$, that is, exactly when their values of the modular function $j$ agree [@Har77, Theorem IV.4.15B].
+Two lattices give isomorphic elliptic curves exactly when one is a nonzero complex multiple of the other after a change of basis by $\GL_2(\ZZ)$, equivalently exactly when their values of the modular function $j$ agree [@Har77, Theorem IV.4.15B].
 As an abstract group, an elliptic curve over $\CC$ is $\RR/\ZZ\times\RR/\ZZ$ [@Har77, Theorem IV.4.16].
 
 ## The modular function
