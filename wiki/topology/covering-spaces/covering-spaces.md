@@ -7,10 +7,10 @@ topics:
 - Group Actions
 - Free Groups
 - Free Products
-title: Covering spaces (detailed)
+title: Covering spaces and deck transformations
 ---
 
-# Covering spaces (detailed)
+# Covering spaces and deck transformations
 
 ![An evenly covered open set $U$: $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto $U$ by $p$](../../../../assets/assets/Topology/figures/image_2021-01-10-13-45-42.png)
 

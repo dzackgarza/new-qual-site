@@ -10,4 +10,4 @@ topics:
 Cell structures, attaching maps, cellular homology, and the chain complex.
 Simplicial complexes, cell counts of products, and spaces with prescribed homology.
 
-The statements and examples are on [[topology/cw-complexes/cw-complexes|CW complexes (detailed)]].
+The statements and examples are on [[topology/cw-complexes/cw-complexes|CW and simplicial complexes]].

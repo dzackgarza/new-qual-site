@@ -10,4 +10,4 @@ topics:
 
 The classification of surfaces (orientable and nonorientable), Euler characteristic, connected sums, and polygon decompositions; manifolds, local homology, and knot complements.
 
-The statements and examples are on [[topology/surfaces/surfaces-and-manifolds|Surfaces and manifolds (detailed)]].
+The statements and examples are on [[topology/surfaces/surfaces-and-manifolds|Surfaces, manifolds, and knots]].
