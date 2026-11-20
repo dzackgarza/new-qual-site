@@ -9583,3 +9583,17 @@ measured, not carried.
 **Checks.** No card changed, so no `qualc.authoring check` was run on a card.
 
 **Uncertainty.** Read: `s1` to `s6` of V.2.13, with `s2`, `s4` and `s5` recomputed here. Not opened: Fuentes, Fuentes--Pedreira, Hartshorne and Yang at the printed pages named, which are the card's citations as its earlier events record them. Both V.2.12 and V.2.13 are now read in full and correct. What remains of #168 is V.4.16, V.5.6 and V.5.8(b), together with the steps of IV.2.3, IV.3.11 and III.11.7 that earlier rounds record as unread.
+
+## 2026-11-19: #168's seventeenth round — V.4.16's counts checked, the four family criteria not re-derived
+
+**Object and need.** The sixteenth round closed V.2.12 and V.2.13; #168's remaining items are V.4.16, V.5.6 and V.5.8(b). This round read V.4.16's `incidence-count-ten-sixteen`, `two-skew-lines-meet-five` and `incidence-relations-open` and checked their arithmetic. **It did not re-derive the four family criteria** `same-family-incidence`, `ab-family-incidence`, `ac-family-incidence` and `bc-family-incidence`, which the two counts rest on, so the card is not accepted here. No card is changed.
+
+**The two counts are consistent.** Fixing $A_{ab}$: four other $A$-lines meet it (two sharing the first exponent, two the second); for each of the three values of $c$ exactly one $B$-line meets it, and for each of the three values of $d$ exactly one $C$-line, giving $4+3+3=10$ and skewness to the remaining $26-10=16$. Since each family is carried to the others by a coordinate symmetry of $x^3+y^3+z^3+w^3$, the same count holds for every line, and the incidence graph is $27$-regular of valency $10$, which is Gathmann's Corollary 11.2(a), printed pp. 90--91.
+
+**The count of five splits correctly.** Two skew lines in one family, $A_{ab}$ and $A_{cd}$ with $a\ne c$ and $b\ne d$, meet exactly the two further $A$-lines $A_{ad}$ and $A_{cb}$; the $B$- and $C$-lines meeting both are then the intersections of two three-element sets in each family, and the total is $5$, which is Corollary 11.2(b) as printed and is why the card derives it: Gathmann prints "The proof of part (b) is analogous" and no proof.
+
+**What is not checked.** The four family criteria themselves — the congruences deciding $A_{ab}\cap B_{cd}\ne\emptyset$ and the other five pairings — are the card's own, were repaired at `f553152b8a` after the two-family reduction was found wrong at `98523c3f07`, and are exactly what this round did not recompute. Until they are, the sentence "the congruences decide every possible pair" and the two counts that follow from it are unchecked in their premise.
+
+**Checks.** No card changed, so no `qualc.authoring check` was run on a card.
+
+**Uncertainty.** Read: the three steps named, and the arithmetic of the counts. Not read: `twenty-seven-lines`, `incidence-ten-and-sixteen`, `three-line-families`, the four family criteria, and the four steps after `incidence-relations-open`. So #168's acceptance is not met for V.4.16, and V.5.6 and V.5.8(b) are not reached. The next round on this card should re-derive `ab-family-incidence` from the equation and check it against Gathmann's printed p. 90 before anything built on it is accepted.
