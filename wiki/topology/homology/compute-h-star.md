@@ -36,8 +36,8 @@ $S^n$ as the union of two open hemispherical caps meeting in a band $\homotopic 
 
 A pair $(X,A)$ has the [[D-UEWPN|long exact sequence of the pair]].
 
-::: {.theorem}
-If $(X,A)$ is a good pair, that is, $A$ is a nonempty closed subspace that is a deformation retract of some neighborhood in $X$, the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
+::: {.proposition title="Good pairs"}
+If $(X,A)$ is a good pair, that is, $A$ is a nonempty closed subspace that is a deformation retract of some neighborhood in $X$, the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$ [@Hat02, Proposition 2.22].
 
 :::
 
@@ -54,13 +54,8 @@ The reduced homology of a quotient $X/A$ of a good pair is therefore computed fr
 
 ## Consistency checks
 
-::: {.fact}
-\envlist
+[[T-GL7E6]]
 
-- If $X$ has finitely many path components, $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$.
-- For path-connected $X$, $H_1(X)$ is the abelianization of $\pi_1(X)$, which can be compared with [[topology/fundamental-group/compute-pi-1|a fundamental group computation]].
-- For a finite CW complex $X$ with $c_n$ cells of dimension $n$, $\chi(X)=\sum_n (-1)^n \operatorname{rank} H_n(X) = \sum_n (-1)^n c_n$.
-- For a connected closed $n$-manifold $M$: if $M$ is orientable, $H_n(M) \cong \ZZ$ and $H_{n-1}(M)$ is free; if $M$ is non-orientable, $H_n(M) = 0$ and the torsion subgroup of $H_{n-1}(M)$ is $\ZZ/2$.
-  The torus and the Klein bottle have $H_1\cong\ZZ^2$ and $H_1\cong\ZZ\oplus\ZZ/2$.
+[[D-QK5BM]]
 
-:::
+[[PR-LR35S]]
