@@ -167,6 +167,12 @@ $$
 is a genuine simple pole of $f$, and there are no other poles.
 
 
+Thus the pole set is
+$$
+\boxed{f(z)=\infty\iff z-\frac13\in\ZZ};
+$$
+that is, every point $n+\frac13$ is a genuine simple pole of $f$, and there are no other poles.
+
 ::: pf-proof
 
 The zeros of the denominator are simple because
@@ -182,25 +188,6 @@ $$
 \right),
 $$
 which equals $\pm\pi$ at those zeros. Step [](#s1-5){.pf-ref} prevents cancellation.
-
-:::
-
-:::
-
-::: {.pf-step #s1-7}
-
-Therefore
-$$
-\boxed{
-f(z)=\infty
-\iff
-z-\frac13\in\ZZ}.
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -457,7 +444,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-3){.pf-ref} proves the zero set, step [](#s1-7){.pf-ref} proves the pole set, and step [](#s1-16){.pf-ref} proves the required bound.
+Step [](#s1-3){.pf-ref} proves the zero set, step [](#s1-6){.pf-ref} proves the pole set, and step [](#s1-16){.pf-ref} proves the required bound.
 
 :::
 
