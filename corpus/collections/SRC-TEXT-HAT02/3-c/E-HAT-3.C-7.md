@@ -52,9 +52,9 @@ What are the primitive elements of the Hopf algebra $\ZZ_p[x]$ for $p$ prime?
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.C Exercise 7, printed p. 291. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` (Guanyu Li, DeMason, Sam 2008, Koukpari, the Stanford Math 215C sets) reach parts of Chapters 1–3 and none treats §3.C — so the argument below is the card's own.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.C Exercise 7. No retained solution set covers this exercise — the Hatcher sets in `tmp/sources` (Guanyu Li, DeMason, Sam 2008, Koukpari, the Stanford Math 215C sets) reach parts of Chapters 1–3 and none treats §3.C — so the argument below is the card's own.
 
-Throughout $A=\ZZ_p[x]$ with $x$ primitive, $\Delta x=x\otimes1+1\otimes x$, products in $A\otimes A$ taken with the Koszul sign $(a\otimes b)(c\otimes d)=(-1)^{\abs{b}\abs{c}}ac\otimes bd$, and $d=\abs{x}>0$; $\binom nk$ denotes the binomial coefficient reduced modulo $p$. Two conventions are read off the exercise: the polynomial algebra structure on $x^n$ is the *product* under consideration, which for the Hopf algebra $H_*J(S^n)$ of Example 3C.7, printed p. 288, carries no sign in odd degrees, so $x^2\ne0$ even when $d$ is odd.
+Throughout $A=\ZZ_p[x]$ with $x$ primitive, $\Delta x=x\otimes1+1\otimes x$, products in $A\otimes A$ taken with the Koszul sign $(a\otimes b)(c\otimes d)=(-1)^{\abs{b}\abs{c}}ac\otimes bd$, and $d=\abs{x}>0$; $\binom nk$ denotes the binomial coefficient reduced modulo $p$. Two conventions are read off the exercise: the polynomial algebra structure on $x^n$ is the *product* under consideration, which for the Hopf algebra $H_*J(S^n)$ of Example 3C.7, carries no sign in odd degrees, so $x^2\ne0$ even when $d$ is odd.
 
 ::: pf
 

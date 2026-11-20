@@ -39,7 +39,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 1.A of Hatcher, *Algebraic Topology* (2002), printed p. 86, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 1.A of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Let $X$ be a graph in which each vertex is an endpoint of only finitely many edges.
 Show that the weak topology on $X$ is a metric topology.

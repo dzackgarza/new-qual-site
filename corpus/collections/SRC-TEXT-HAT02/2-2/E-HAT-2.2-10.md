@@ -108,6 +108,6 @@ The attaching maps and opposite orientations are shown by DeMason on printed p. 
 :::
 
 
-The cited source is **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.2.10, printed pp. 76--77, obtained from [the author's resources page](https://math.mcmaster.ca/~demasonk/resources.html), which links [`DeMason, Kenneth M382C HW Full Credit 20210404.pdf`](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf), and held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
+The cited source is **Kenneth DeMason, *M382C Full Credit HW Problems* (4 April 2021)**, Hatcher 2.2.10, obtained from [the author's resources page](https://math.mcmaster.ca/~demasonk/resources.html), which links [`DeMason, Kenneth M382C HW Full Credit 20210404.pdf`](https://math.mcmaster.ca/~demasonk/files/exercises/DeMason%2C%20Kenneth%20M382C%20HW%20Full%20Credit%2020210404.pdf), and held locally as `tmp/sources/demason-m382c-hatcher-20210404.pdf`.
 :::
 

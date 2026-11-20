@@ -60,7 +60,7 @@ How does this ring compare with $H^*(S^6 \times \quatprojective^\infty; \ZZ)$?
 :::
 
 ::: {.solution}
-The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 13, printed p. 230. No retained solution set covers it — Guanyu Li's set stops at §3.2 Exercise 11 and Stephen V. Sam's at Exercise 11 as well, so neither reaches Exercise 13 — and the argument below is the card's own.
+The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 13. No retained solution set covers it — Guanyu Li's set stops at §3.2 Exercise 11 and Stephen V. Sam's at Exercise 11 as well, so neither reaches Exercise 13 — and the argument below is the card's own.
 
 Write $Q=\CP^\infty/\CP^1$ and let $u\in H^2(\CP^\infty;\ZZ)$ be the standard generator, so $H^*(\CP^\infty;\ZZ)=\ZZ[u]$.
 
@@ -70,7 +70,7 @@ Write $Q=\CP^\infty/\CP^1$ and let $u\in H^2(\CP^\infty;\ZZ)$ be the standard ge
 $\widetilde H^*(Q;\ZZ)\cong H^*(\CP^\infty,\CP^1;\ZZ)$ as rings.
 
 ::: pf-proof
-$(\CP^\infty,\CP^1)$ is a CW pair, so the quotient map $\CP^\infty\to Q$ collapsing $\CP^1$ to a point induces isomorphisms $\widetilde H^n(Q)\cong H^n(\CP^\infty,\CP^1)$ for all $n$ (Proposition 2.22, printed p. 123); the cup product is carried over because the collapsing map is a map of pairs and the relative cup product restricts to the absolute one.
+$(\CP^\infty,\CP^1)$ is a CW pair, so the quotient map $\CP^\infty\to Q$ collapsing $\CP^1$ to a point induces isomorphisms $\widetilde H^n(Q)\cong H^n(\CP^\infty,\CP^1)$ for all $n$ (Proposition 2.22); the cup product is carried over because the collapsing map is a map of pairs and the relative cup product restricts to the absolute one.
 
 :::
 
@@ -80,7 +80,7 @@ $(\CP^\infty,\CP^1)$ is a CW pair, so the quotient map $\CP^\infty\to Q$ collaps
 $H^n(\CP^\infty,\CP^1;\ZZ)=\ZZ$ for even $n\ge4$ and $0$ otherwise.
 
 ::: pf-proof
-$\CP^\infty$ has exactly one cell in each even dimension and none in odd dimensions, and $\CP^1$ consists of the cells in dimensions $0$ and $2$ (the cell structure of projective space, printed p. 7). Hence the relative cellular chain complex has $\ZZ$ in each even degree $\ge4$ and zero elsewhere, and all its boundary maps vanish because they land in odd degrees. Cohomology with $\ZZ$ coefficients of this complex is computed by Theorem 3.5, printed p. 203, giving the stated groups.
+$\CP^\infty$ has exactly one cell in each even dimension and none in odd dimensions, and $\CP^1$ consists of the cells in dimensions $0$ and $2$ (the cell structure of projective space, printed p. 7). Hence the relative cellular chain complex has $\ZZ$ in each even degree $\ge4$ and zero elsewhere, and all its boundary maps vanish because they land in odd degrees. Cohomology with $\ZZ$ coefficients of this complex is computed by Theorem 3.5, giving the stated groups.
 
 :::
 
@@ -110,7 +110,7 @@ By steps [](#relative){.pf-ref} and [](#generators){.pf-ref} the positive-degree
 $H^*(S^6\times\HP^\infty;\ZZ)\cong\ZZ[x,y]/(x^2)$ with $\abs x=6$ and $\abs y=4$.
 
 ::: pf-proof
-$H^*(\HP^\infty;\ZZ)=\ZZ[y]$ with $\abs y=4$ (Example 3.12, printed p. 213), and $H^*(S^6;\ZZ)=\ZZ\oplus\ZZ$ in degrees $0$ and $6$. Since the cohomology of both factors is free and finitely generated in each degree, the cross product $H^*(S^6;\ZZ)\otimes H^*(\HP^\infty;\ZZ)\to H^*(S^6\times\HP^\infty;\ZZ)$ is a ring isomorphism by Theorem 3.15, printed p. 216. The tensor product $\ZZ[y]\otimes\ZZ[x]/(x^2)$ with $\abs x=6$ is $\ZZ[x,y]/(x^2)$.
+$H^*(\HP^\infty;\ZZ)=\ZZ[y]$ with $\abs y=4$ (Example 3.12), and $H^*(S^6;\ZZ)=\ZZ\oplus\ZZ$ in degrees $0$ and $6$. Since the cohomology of both factors is free and finitely generated in each degree, the cross product $H^*(S^6;\ZZ)\otimes H^*(\HP^\infty;\ZZ)\to H^*(S^6\times\HP^\infty;\ZZ)$ is a ring isomorphism by Theorem 3.15. The tensor product $\ZZ[y]\otimes\ZZ[x]/(x^2)$ with $\abs x=6$ is $\ZZ[x,y]/(x^2)$.
 
 :::
 

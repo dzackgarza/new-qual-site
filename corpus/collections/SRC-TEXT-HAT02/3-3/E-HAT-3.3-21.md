@@ -523,7 +523,7 @@ Assume that $X$ is locally compact Hausdorff, so that $X^+$ is a compact Hausdor
 Excision identifies $H_c^n(X;G)$ with the direct limit of $H^n(X^+,U;G)$ over all neighborhoods $U$ of $\infty$.
 
 ::: pf-proof
-This step is the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1; C. Kottke, *Math 2420 Problem Set 3 solutions*, Spring 2012, Problem 2, printed p. 2, reaches the same limit over a cofinal family built the other way round. For a compact $K\subset X$, let $U_K=X^+\setminus K$, an open neighborhood of $\infty$. Excision of the point $\infty$, whose closure lies in the interior of $U_K$, gives
+This step is the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21; C. Kottke, *Math 2420 Problem Set 3 solutions*, Spring 2012, Problem 2, reaches the same limit over a cofinal family built the other way round. For a compact $K\subset X$, let $U_K=X^+\setminus K$, an open neighborhood of $\infty$. Excision of the point $\infty$, whose closure lies in the interior of $U_K$, gives
 $$
 H^n(X^+,U_K;G)\cong H^n(X,X\setminus K;G).
 $$
@@ -539,7 +539,7 @@ $$
 If $\infty$ has a cone neighborhood in $X^+$, then the evident map $H_c^n(X;G)\to H^n(X^+,\infty;G)$ is an isomorphism for all $n$.
 
 ::: pf-proof
-This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, printed p. 1, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2, printed p. 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, uses that each $U_K$ is a cone and therefore contractible, so that $\widetilde H^m(U_K;G)=0$ for all $m$, and then reads the isomorphism off the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood $W$ of the cone point contains a smaller cone-shaped neighborhood: choose on each ray of the cone an interval ending at the cone point and lying in $W$, and reparametrize the ray by that interval, which turns their union with the cone point into a subspace homeomorphic to the cone, contained in $W$, and contracting to the cone point along the rays. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
+This is the remainder of the first paragraph of Stanford Math 215C, Spring 2009, *Solution Set 4*, Hatcher 3.3.21, and of C. Kottke, *Math 2420 Problem Set 3 solutions*, Problem 2: the Stanford set restricts to those compact sets whose complement is cone-shaped, notes that they are cofinal among the compact subsets, uses that each $U_K$ is a cone and therefore contractible, so that $\widetilde H^m(U_K;G)=0$ for all $m$, and then reads the isomorphism off the exact sequence of the pair $(X^+,U_K)$; Kottke absorbs each compact $K$ into a compact $L=X\setminus V$ with $V$ a cone neighbourhood of $\infty$ that deformation retracts to $\infty$, which is the cofinality assertion read backwards. Inside the cone neighborhood from the hypothesis, every neighborhood $W$ of the cone point contains a smaller cone-shaped neighborhood: choose on each ray of the cone an interval ending at the cone point and lying in $W$, and reparametrize the ray by that interval, which turns their union with the cone point into a subspace homeomorphic to the cone, contained in $W$, and contracting to the cone point along the rays. These contractible neighborhoods are cofinal among the neighborhoods of $\infty$. For each such $U$, the inclusion $\{\infty\}\hookrightarrow U$ is a homotopy equivalence. The map of long exact sequences for the pairs $(X^+,U)$ and $(X^+,\{\infty\})$ therefore shows that restriction is an isomorphism
 $$
 H^n(X^+,U;G)\xrightarrow{\cong}H^n(X^+,\infty;G).
 $$
@@ -573,7 +573,7 @@ That the one-point compactification of $\ZZ\times\RR$ is the Hawaiian earring is
 $$
 \operatorname{Ext}_{\ZZ}(H_1(E;\ZZ),\ZZ)\hookrightarrow H^2(E;\ZZ).
 $$
-By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with the proof on printed p. 310**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring*, printed p. 3**. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
+By **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with the proof on printed p. 310**, $H_1(E;\ZZ)$ has a direct summand isomorphic to $\QQ$, the index $\kappa$ of the statement being $\abs{I^{\NN}}$ and so the continuum; the same summand is stated as Theorem 2.1 of **Martin Frankland, *Cohomology of the Hawaiian Earring***. Consequently $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)$ is a direct summand of the left-hand group above. By **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR\ne0$. The target group is therefore nonzero.
 :::
 
 :::
@@ -584,7 +584,7 @@ For $X=\ZZ\times\RR$ and integer coefficients, $H_c^1(X;\ZZ)$ and $H^1(X^+,\inft
 
 ::: pf-proof
 
-The comparison of the two values is the card's own. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it, printed p. 2**, gives
+The comparison of the two values is the card's own. Step [](#compact-degree-two){.pf-ref} computes $H^q(X,X\setminus K_N;\ZZ)=\ZZ^{2N+1}$ for $q=1$ and $0$ otherwise, and the family $\{K_N\}$ is cofinal, so the direct limit of step [](#excision-limit){.pf-ref} in degree one is the free abelian group on countably many generators. For the right-hand side, step [](#earring-degree-two){.pf-ref} identifies $X^+$ with the Hawaiian earring $E$, and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 1.3 with the sentence following it**, gives
 
 $$
 H^1(E;\ZZ)\cong\bigoplus_{n\in\NN}\ZZ,
@@ -600,7 +600,7 @@ $$
 The answer to the bracketed question is no, already for $G=\ZZ$ and $n=2$.
 
 ::: pf-proof
-The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with its proof on printed p. 310**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers*, printed pp. 341--342**, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 on printed p. 3 and Theorem 1.3 with the sentence after it on printed p. 2**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
+The argument of this step is the card's own, on three published theorems: **K. Eda and K. Kawamura, *The Singular Homology of the Hawaiian Earring*, Theorem 3.1, printed p. 307 with its proof on printed p. 310**, for the $\QQ$ direct summand of $H_1(E;\ZZ)$; **James Wiegold, *Ext(Q,Z) is the additive group of real numbers***, for $\operatorname{Ext}_{\ZZ}(\QQ,\ZZ)\cong\RR$; and **Martin Frankland, *Cohomology of the Hawaiian Earring* (2017), Theorem 2.1 on printed p. 3 and Theorem 1.3 with the sentence after it on printed p. 2**, for the same summand and for the degree-one value. Steps [](#compact-degree-two){.pf-ref} and [](#earring-degree-two){.pf-ref} give
 $$
 \boxed{H_c^2(\ZZ\times\RR;\ZZ)=0,\qquad H^2((\ZZ\times\RR)^+,\infty;\ZZ)\ne0,}
 $$
@@ -611,12 +611,12 @@ so the evident map cannot be an isomorphism, and the cone-neighborhood hypothesi
 
 :::
 
-A second route to the first part, which absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$, is Kottke's, Problem 2, printed p. 2. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
+A second route to the first part, which absorbs each compact set into a larger one instead of using the vanishing of $\widetilde H^m(U_K;G)$, is Kottke's, Problem 2. Let $K\subset X$ be compact. Since $X^+$ is Hausdorff there are disjoint open sets $U\supset K$ and $V\ni\infty$; shrinking $V$ inside the cone-shaped neighbourhood of the hypothesis, one may assume that $V$ deformation retracts to $\infty$. Put $L=X\setminus V$. Then $L$ is compact and $K\subset L$, and since $X\setminus L=V\setminus\{\infty\}$,
 $$
 H^n(X,X\setminus L)=H^n(X,V\setminus\{\infty\})\cong H^n(X^+,V)\cong H^n(X^+,\infty),
 $$
 the first group by the identity just written, the middle isomorphism by excision of the point $\infty$ — closed in $X^+$ and contained in the open set $V$, so that its closure lies in the interior of $V$ — and the last by the deformation retraction of $V$ onto $\infty$. The $L$ so obtained are cofinal among the compact subsets of $X$, so the direct limit over them is $H_c^n(X;G)$, and the isomorphisms are compatible with inclusions, which is the theorem. Kottke writes the middle group as $H^n(X,V)$, where $V$ is an open set of $X^+$ containing $\infty$ and so is not a subspace of $X$; the excision removes $\infty$ from it, and the group meant is the one written above.
 
-Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, stated as Theorem 1.2 of Frankland, *Cohomology of the Hawaiian Earring*, printed p. 2. The bracketed question is settled above, in degree two with $G=\ZZ$.
+Stanford's closing paragraph on $X=\ZZ\times\RR$ concludes that $H^1$ of the compactification is uncountable from a surjection $H_1\twoheadrightarrow\prod_\NN\ZZ$. That inference does not hold: dualizing a surjection gives an injection, and $\operatorname{Hom}(\prod_\NN\ZZ,\ZZ)\cong\bigoplus_\NN\ZZ$ is countable by Specker's theorem, stated as Theorem 1.2 of Frankland, *Cohomology of the Hawaiian Earring*. The bracketed question is settled above, in degree two with $G=\ZZ$.
 
 :::

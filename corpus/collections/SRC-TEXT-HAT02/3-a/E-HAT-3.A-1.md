@@ -189,13 +189,13 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 3.A of Hatcher, *Algebraic Topology* (2002), printed p. 267, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 3.A of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely generated, so the Euler characteristic $\chi(X) = \sum_n (-1)^n \operatorname{rank} H_n(X; \ZZ)$ is defined, then for any coefficient field $F$ we have $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$.
 :::
 
 ::: {.solution}
-The proof below is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: a pair $(X,A)$ is of finite $R$-type for a principal ideal domain $R$ when the modules $H_i(X,A;R)$ are finitely generated and only finitely many are nonzero, with $\chi(X,A;R)=\sum_i(-1)^i\rank_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis. The source proves the statement for every principal ideal domain and every pair, by replacing $S_*(X)$ with a finite free model and comparing ranks along the alternating sum, without the universal coefficient theorem; the route the exercise names is given in the last step. The exercise is Exercise 1 of §3.A, printed p. 267, read in `tmp/sources/hatcher-2002-algebraic-topology.md`.
+The proof below is tom Dieck's, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in `tmp/sources/tomdieck-algebraic-topology-ranicki.md`: a pair $(X,A)$ is of finite $R$-type for a principal ideal domain $R$ when the modules $H_i(X,A;R)$ are finitely generated and only finitely many are nonzero, with $\chi(X,A;R)=\sum_i(-1)^i\rank_RH_i(X,A;R)$ (printed p. 310); with $A=\emptyset$ and $R=\ZZ$ that is the exercise's hypothesis. The source proves the statement for every principal ideal domain and every pair, by replacing $S_*(X)$ with a finite free model and comparing ranks along the alternating sum, without the universal coefficient theorem; the route the exercise names is given in the last step. The exercise is Exercise 1 of §3.A, read in `tmp/sources/hatcher-2002-algebraic-topology.md`.
 
 ::: pf
 
@@ -251,5 +251,5 @@ Take $R=F$ a field in step [](#euler){.pf-ref}, where $\rank_F=\dim_F$ and $F$ i
 :::
 :::
 ::: {.remark title="Published solution"}
-tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in the text of the book held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, whose file name carries "ranicki" and names no translator, the book being tom Dieck's own English text: the definition of finite $R$-type and of $\chi(X,A;R)$ on printed p. 310; Proposition (12.4.1), the alternating sum along a chain complex, on printed p. 309; Propositions (12.4.3) and (12.4.4) on printed p. 310, the second being the exercise's statement for every principal ideal domain and proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives; and Proposition (11.6.4) on printed p. 289 for the finite free model, with Theorem (11.6.3) on printed p. 288. The exercise is Exercise 1 of §3.A, printed p. 267.
+tom Dieck, *Algebraic Topology* (EMS Textbooks in Mathematics, 2008), read in the text of the book held as `tmp/sources/tomdieck-algebraic-topology-ranicki.md`, whose file name carries "ranicki" and names no translator, the book being tom Dieck's own English text: the definition of finite $R$-type and of $\chi(X,A;R)$ on printed p. 310; Proposition (12.4.1), the alternating sum along a chain complex, on printed p. 309; Propositions (12.4.3) and (12.4.4) on printed p. 310, the second being the exercise's statement for every principal ideal domain and proved without the universal coefficient theorem, whose route the exercise names and which the solution's last paragraph gives; and Proposition (11.6.4) on printed p. 289 for the finite free model, with Theorem (11.6.3) on printed p. 288. The exercise is Exercise 1 of §3.A.
 :::

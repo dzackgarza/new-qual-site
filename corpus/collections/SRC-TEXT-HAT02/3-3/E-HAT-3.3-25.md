@@ -64,7 +64,7 @@ Show that if a closed orientable manifold $M$ of dimension $2k$ has $H_{k-1}(M; 
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 25, printed p. 259.
+The exercise is §3.3 Exercise 25.
 
 Since $M$ is a closed manifold, all its homology groups are finitely generated. Thus the hypothesis that $H_{k-1}(M;\ZZ)$ is torsionfree implies that it is free abelian, and therefore
 $$

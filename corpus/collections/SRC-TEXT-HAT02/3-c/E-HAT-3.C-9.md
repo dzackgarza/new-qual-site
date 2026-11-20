@@ -52,7 +52,7 @@ Apply the theorems of Hopf and Borel to show that for an H-space $X$ that is a c
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.C Exercise 9, printed p. 291. It is the two-theorem argument the exercise names: Hopf's theorem over $\QQ$ and Borel's over $\FF_p$.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.C Exercise 9. It is the two-theorem argument the exercise names: Hopf's theorem over $\QQ$ and Borel's over $\FF_p$.
 
 ::: pf
 

@@ -60,7 +60,7 @@ audit:
 ---
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.C Exercise 14, printed p. 292, and against the definition of the cup product as the composite $H^*(X\times X)\to H^*(X)$ induced by the diagonal (Section 3.2, p. 206).
+The argument is the card's own; no retained solution set is cited on the card. It is checked against Hatcher, Algebraic Topology, Section 3.C Exercise 14, and against the definition of the cup product as the composite $H^*(X\times X)\to H^*(X)$ induced by the diagonal (Section 3.2, p. 206).
 
 ::: pf
 

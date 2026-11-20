@@ -97,7 +97,7 @@ $$
 :::
 
 ::: {.solution}
-The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves this exercise. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 34, printed p. 260, and against the cap product formulas of pp. 239--240, in particular
+The argument is the card's own; no retained solution set is cited on the card, and none of the retained Hatcher sets solves this exercise. It is checked against Hatcher, Algebraic Topology, Section 3.3 Exercise 34, and against the cap product formulas of pp. 239--240, in particular
 $$
 \partial(\sigma\frown\varphi)=(-1)^{\ell}\bigl(\partial\sigma\frown\varphi-\sigma\frown\delta\varphi\bigr)
 $$

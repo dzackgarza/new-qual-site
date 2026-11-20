@@ -54,13 +54,13 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), printed p. 257, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 3.3 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Show that there exist nonorientable 1-dimensional manifolds if the Hausdorff condition is dropped from the definition of a manifold.
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 1, printed p. 257. The point of the construction is the pair of origins: they are distinct, so the quotient is not Hausdorff, while the glued lines make it a connected 1-dimensional manifold with an orientation-reversing transition.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 1. The point of the construction is the pair of origins: they are distinct, so the quotient is not Hausdorff, while the glued lines make it a connected 1-dimensional manifold with an orientation-reversing transition.
 
 ::: pf
 

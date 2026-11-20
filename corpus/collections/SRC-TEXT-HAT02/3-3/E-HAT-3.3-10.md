@@ -70,7 +70,7 @@ Show that for a degree 1 map $f: M \to N$ of connected closed orientable manifol
 :::
 
 ::: {.solution}
-The published solution is **Stanford Math 215C, Spring 2009, Solution Set 3, problem 10, printed p. 1** ([`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf)): the lift, the two cases for the sheet number of the cover, and the passage to abelianizations are its. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 10, printed p. 258, and the hint followed is the exercise's own.
+The published solution is **Stanford Math 215C, Spring 2009, Solution Set 3, problem 10, printed p. 1** ([`solution3.pdf`](https://math.stanford.edu/~ralph/math215c/solution3.pdf)): the lift, the two cases for the sheet number of the cover, and the passage to abelianizations are its. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 10, and the hint followed is the exercise's own.
 
 ::: pf
 
@@ -87,7 +87,7 @@ The lifting criterion applies: $M$ is a connected manifold, hence connected and 
 $p$ does not have infinitely many sheets.
 
 ::: pf-proof
-If it did, $\widetilde N$ would be a connected noncompact $n$-manifold: it is connected because it corresponds to the subgroup $H$, and if it were compact then a fiber, a discrete closed subset, would be finite. Hence $H_n(\widetilde N;\ZZ)=0$ by Proposition 3.29, printed p. 239, which says $H_i$ vanishes for $i\ge n$ on a connected noncompact $n$-manifold. Then
+If it did, $\widetilde N$ would be a connected noncompact $n$-manifold: it is connected because it corresponds to the subgroup $H$, and if it were compact then a fiber, a discrete closed subset, would be finite. Hence $H_n(\widetilde N;\ZZ)=0$ by Proposition 3.29, which says $H_i$ vanishes for $i\ge n$ on a connected noncompact $n$-manifold. Then
 $$
 f_*[M]=p_*\widetilde f_*[M]=0 ,
 $$

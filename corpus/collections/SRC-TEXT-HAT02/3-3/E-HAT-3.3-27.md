@@ -104,7 +104,7 @@ Show that after a suitable change of basis, a skew-symmetric nonsingular bilinea
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 27, printed p. 260.
+The exercise is §3.3 Exercise 27.
 
 Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular bilinear form
 $$

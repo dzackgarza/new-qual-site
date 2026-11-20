@@ -55,7 +55,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 3.C of Hatcher, *Algebraic Topology* (2002), printed p. 291, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 3.C of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Suppose that $X$ is a CW complex with basepoint $e \in X$ a 0-cell.
 Show that $X$ is an H-space if there is a map $\mu: X \times X \to X$ such that the maps $X \to X$, $x \mapsto \mu(x, e)$ and $x \mapsto \mu(e, x)$, are homotopic to the identity.
@@ -63,7 +63,7 @@ Show that $X$ is an H-space if there is a map $\mu: X \times X \to X$ such that 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own. The stiffening of a homotopy unit into a strict one is the unit-strictification theorem for well-pointed spaces, cited on the card as tom Dieck--Kamps--Puppe, *Homotopy Theory*, Theorem 3.37 and Proposition 3.38; what the steps verify is that its hypotheses hold here, namely that $e$ is a nondegenerate basepoint of the CW complex and that $\mu$ has a two-sided homotopy unit. The statement is Hatcher, *Algebraic Topology* (2002), §3.C Exercise 1, printed p. 291.
+No retained solution set covers this exercise; the argument is the card's own. The stiffening of a homotopy unit into a strict one is the unit-strictification theorem for well-pointed spaces, cited on the card as tom Dieck--Kamps--Puppe, *Homotopy Theory*, Theorem 3.37 and Proposition 3.38; what the steps verify is that its hypotheses hold here, namely that $e$ is a nondegenerate basepoint of the CW complex and that $\mu$ has a two-sided homotopy unit. The statement is Hatcher, *Algebraic Topology* (2002), §3.C Exercise 1.
 
 ::: pf
 

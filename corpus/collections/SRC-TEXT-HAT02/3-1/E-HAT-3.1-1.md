@@ -65,7 +65,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 3.1 of Hatcher, *Algebraic Topology* (2002), printed p. 204, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 3.1 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Show that $\operatorname{Ext}(H, G)$ is a contravariant functor of $H$ for fixed $G$, and a covariant functor of $G$ for fixed $H$.
 :::
@@ -84,7 +84,7 @@ which vanishes above degree $1$, and
 $$
 \operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_*,G))=\operatorname{Hom}(F_1,G)\big/d_1^*\operatorname{Hom}(F_0,G)
 $$
-by the definition on p. 195. Lemma 3.1(b) (p. 194) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1, printed p. 204.
+by the definition on p. 195. Lemma 3.1(b) (p. 194) identifies this group for any two free resolutions of $H$, so it depends on $H$ and $G$ only. The exercise is Exercise 1 of §3.1.
 
 ::: pf
 

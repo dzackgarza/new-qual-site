@@ -59,7 +59,7 @@ Show that if the closed orientable surface $M_g$ of genus $g$ is a covering spac
 
 ::: {.solution}
 
-The computation is the card's own, from the three cited inputs. The statement was checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 23, printed p. 157, including the bracketed converse.
+The computation is the card's own, from the three cited inputs. The statement was checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 23, including the bracketed converse.
 
 Write $\chi(K)=\sum_{k}(-1)^{k}(\text{number of }k\text{-cells})$ for a finite CW complex $K$.
 
@@ -69,7 +69,7 @@ Write $\chi(K)=\sum_{k}(-1)^{k}(\text{number of }k\text{-cells})$ for a finite C
 $\chi(M_{g})=2-2g$.
 
 ::: pf-proof
-The standard CW structure of Example 2.36 (printed p. 141) has one $0$-cell, $2g$ $1$-cells and one $2$-cell; the alternating sum of those numbers, which is the definition of $\chi$ on printed p. 146, is $1-2g+1=2-2g$.
+The standard CW structure of Example 2.36 has one $0$-cell, $2g$ $1$-cells and one $2$-cell; the alternating sum of those numbers, which is the definition of $\chi$ on printed p. 146, is $1-2g+1=2-2g$.
 :::
 
 :::
@@ -87,7 +87,7 @@ A fibre $p^{-1}(y)$ is discrete: each of its points has an open neighbourhood on
 $\chi(M_{g})=n\,\chi(M_{h})$.
 
 ::: pf-proof
-This is Exercise 22 of §2.2 (printed p. 157), multiplicativity of the Euler characteristic in finite-sheeted coverings: the covering restricts to a covering of each open cell of $M_{h}$ by $n$ open cells of $M_{g}$ of the same dimension, so the alternating cell count of $M_{g}$ is $n$ times that of $M_{h}$.
+This is Exercise 22 of §2.2, multiplicativity of the Euler characteristic in finite-sheeted coverings: the covering restricts to a covering of each open cell of $M_{h}$ by $n$ open cells of $M_{g}$ of the same dimension, so the alternating cell count of $M_{g}$ is $n$ times that of $M_{h}$.
 :::
 
 :::
@@ -105,7 +105,7 @@ Substituting steps [](#chi){.pf-ref} and [](#multiplicative){.pf-ref} gives $2-2
 If $M_{g}$ is an $n$-sheeted covering space of $M_{h}$, then $g=n(h-1)+1$.
 
 ::: pf-proof
-Steps [](#finite){.pf-ref}, [](#multiplicative){.pf-ref} and [](#formula){.pf-ref}. The bracketed converse in the printed exercise is not proved here: it is the construction of Example 1.41 (printed p. 73), in which a free action of a cyclic group of order $n$ on $M_{n(h-1)+1}$ produces the $n$-sheeted covering of $M_{h}$, and the card quotes it.
+Steps [](#finite){.pf-ref}, [](#multiplicative){.pf-ref} and [](#formula){.pf-ref}. The bracketed converse in the printed exercise is not proved here: it is the construction of Example 1.41, in which a free action of a cyclic group of order $n$ on $M_{n(h-1)+1}$ produces the $n$-sheeted covering of $M_{h}$, and the card quotes it.
 :::
 
 :::

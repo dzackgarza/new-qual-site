@@ -69,7 +69,7 @@ Show that $X$ and $Y$ have isomorphic cohomology rings with $\ZZ$ coefficients b
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: Guanyu Li's set stops at Section 3.2 Exercise 7 (its numbering 3.2.1 through 3.2.7), and the other retained Hatcher sets hold no Section 3.2 solutions. The argument is therefore the card's own, checked against Hatcher, Algebraic Topology, Section 3.2 Exercise 8, printed p. 229, with the Cellular Boundary Formula (p. 141), the universal coefficient theorem (Theorem 3.2, p. 195) and the relative cup product (p. 209).
+No retained solution set covers this exercise: Guanyu Li's set stops at Section 3.2 Exercise 7 (its numbering 3.2.1 through 3.2.7), and the other retained Hatcher sets hold no Section 3.2 solutions. The argument is therefore the card's own, checked against Hatcher, Algebraic Topology, Section 3.2 Exercise 8, with the Cellular Boundary Formula (p. 141), the universal coefficient theorem (Theorem 3.2, p. 195) and the relative cup product (p. 209).
 
 ::: pf
 

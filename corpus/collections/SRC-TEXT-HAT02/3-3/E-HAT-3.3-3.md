@@ -67,7 +67,7 @@ Show that every covering space of an orientable manifold is an orientable manifo
 
 The argument is that of the **Math 538 homework solutions, HMW 3, handwritten page 1 (PDF page 13 of `tmp/sources/hatcher-math538-homework4-solutions.pdf`), Hatcher 3.3 #3**, which runs the chain of excision and local-homeomorphism isomorphisms and concludes by the local compatibility condition; the steps below make the two uses of injectivity explicit. The statement was checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 3.
 
-An orientation of an $n$-manifold $M$ is a function $x\mapsto\mu_{x}$ choosing a generator $\mu_{x}$ of $H_{n}(M,M-\{x\})\cong\ZZ$ at each point, locally consistent in the sense of Hatcher's definition (printed p. 233): every point has a ball $B$ and a class $\mu_{B}\in H_{n}(M\mid B)$ restricting to $\mu_{y}$ at each $y\in B$, and that class is unique (Lemma 3.27(a), printed p. 236).
+An orientation of an $n$-manifold $M$ is a function $x\mapsto\mu_{x}$ choosing a generator $\mu_{x}$ of $H_{n}(M,M-\{x\})\cong\ZZ$ at each point, locally consistent in the sense of Hatcher's definition (printed p. 233): every point has a ball $B$ and a class $\mu_{B}\in H_{n}(M\mid B)$ restricting to $\mu_{y}$ at each $y\in B$, and that class is unique (Lemma 3.27(a)).
 
 Let $p\colon\widetilde M\to M$ be a covering map with $M$ an orientable $n$-manifold.
 

@@ -68,13 +68,13 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 41 of Section 2.2 of Hatcher, *Algebraic Topology* (2002), printed p. 159, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 41 of Section 2.2 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 For $X$ a finite CW complex and $F$ a field, show that the Euler characteristic $\chi(X)$ can also be computed by the formula $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$, the alternating sum of the dimensions of the vector spaces $H_n(X; F)$.
 :::
 
 ::: {.solution}
-The retained published solution is Guanyu Li's *Hatcher solutions*, which answers this exercise under the older numbering "Exercise 2.2.19 (2.2.41)": it takes the $F$-coefficient cellular complex, notes each $C_i$ is finite dimensional because $X$ is a finite CW complex, and cancels the boundary dimensions in the alternating sum. The card states the same count with the two short exact sequences written out. Checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 41, printed p. 159. The point is the dimension count over a field: $\dim C_n=\dim B_n+\dim H_n+\dim B_{n-1}$, whose boundary terms cancel in the alternating sum.
+The retained published solution is Guanyu Li's *Hatcher solutions*, which answers this exercise under the older numbering "Exercise 2.2.19 (2.2.41)": it takes the $F$-coefficient cellular complex, notes each $C_i$ is finite dimensional because $X$ is a finite CW complex, and cancels the boundary dimensions in the alternating sum. The card states the same count with the two short exact sequences written out. Checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 41. The point is the dimension count over a field: $\dim C_n=\dim B_n+\dim H_n+\dim B_{n-1}$, whose boundary terms cancel in the alternating sum.
 
 ::: pf
 

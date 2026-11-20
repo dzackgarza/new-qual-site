@@ -57,7 +57,7 @@ More generally, show that any finitely generated subgroup of $\varinjlim G_\alph
 :::
 
 ::: {.solution}
-The published solution is **Guanyu Li, *Hatcher.pdf*, §3.3 Exercise 8 (Hatcher §3.3 Exercise 18), PDF p. 58** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`), which uses the same passage to a later stage for the generators and for the relations. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 18, printed p. 259. The relation lattice argument below is the card's own addition, and makes explicit why a finitely generated subgroup is isomorphic to a subgroup of one stage rather than merely checking that one generator keeps its order.
+The published solution is **Guanyu Li, *Hatcher.pdf*, §3.3 Exercise 8 (Hatcher §3.3 Exercise 18), PDF p. 58** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`), which uses the same passage to a later stage for the generators and for the relations. The statement is Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 18. The relation lattice argument below is the card's own addition, and makes explicit why a finitely generated subgroup is isomorphic to a subgroup of one stage rather than merely checking that one generator keeps its order.
 
 Let $G=\varinjlim G_\alpha$ over the directed index set, and for $\alpha\le\beta$ let $\iota_{\alpha\beta}:G_\alpha\to G_\beta$ and $\iota_\alpha:G_\alpha\to G$ be the structure maps; an element of $G$ is represented by $g_\alpha\in G_\alpha$, and $x=0$ in $G$ exactly when $\iota_{\alpha\beta}(g_\alpha)=0$ for some $\beta\ge\alpha$.
 

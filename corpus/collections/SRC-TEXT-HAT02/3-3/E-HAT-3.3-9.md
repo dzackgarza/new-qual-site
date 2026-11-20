@@ -73,7 +73,7 @@ Show that a $p$-sheeted covering space projection $M \to N$ has degree $\pm p$, 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 9, printed p. 258. The covering map is written $q$ so that the letter $p$ can count the sheets.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §3.3 Exercise 9. The covering map is written $q$ so that the letter $p$ can count the sheets.
 
 ::: pf
 

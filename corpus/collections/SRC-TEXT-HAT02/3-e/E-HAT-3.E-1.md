@@ -85,7 +85,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 3.E of Hatcher, *Algebraic Topology* (2002), printed p. 310, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 3.E of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 Show that $H^*(K(\ZZ_m, 1); \ZZ_k)$ is isomorphic as a ring to $H^*(K(\ZZ_m, 1); \ZZ_m) \otimes \ZZ_k$ if $k$ divides $m$.
 In particular, if $m/k$ is even, this is $\Lambda_{\ZZ_k}[x] \otimes \ZZ_k[y]$.

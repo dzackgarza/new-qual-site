@@ -75,7 +75,7 @@ As an algebraic application of the preceding problem, show that in a free group 
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 12, printed p. 258.
+The exercise is §3.3 Exercise 12.
 
 
 The argument is the card's own, built on the converse of the preceding exercise: a relation of $r_{k}$ as $j$ commutators produces a map $M_{j}\to M_{k}$ of nonzero degree, which is impossible for $j<k$.

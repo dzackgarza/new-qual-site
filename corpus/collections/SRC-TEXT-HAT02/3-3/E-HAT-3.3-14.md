@@ -80,7 +80,7 @@ Let $X$ be the shrinking wedge of circles in Example 1.25, the subspace of $\RR^
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 14, printed p. 258.
+The exercise is §3.3 Exercise 14.
 
 Let
 $$

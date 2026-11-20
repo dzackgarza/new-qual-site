@@ -53,7 +53,7 @@ When $n$ is odd show there is a fixed point unless $f^*(\alpha) = -\alpha$, for 
 :::
 
 ::: {.solution}
-The published solutions are **Guanyu Li, *Hatcher.pdf*, §3.2 Exercise 4, PDF p. 54** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`) and **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 4, printed pp. 13--14** (`tmp/sources/hatcher-solutions-sam-2008.pdf`); the Lefschetz computation, the two sign cases and the exceptional case $f^*(\alpha)=-\alpha$ are theirs. The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 4, printed p. 229. One locator in both sets is corrected here: the ring structure is Hatcher's **Theorem 3.19, printed p. 220**, not his Example 3.12, which only announces it on printed p. 213 (Sam cites it as "Theorem 3.12", which Hatcher does not have).
+The published solutions are **Guanyu Li, *Hatcher.pdf*, §3.2 Exercise 4, PDF p. 54** (`tmp/sources/hatcher-solutions-guanyu-li.pdf`) and **Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.2 Exercise 4, printed pp. 13--14** (`tmp/sources/hatcher-solutions-sam-2008.pdf`); the Lefschetz computation, the two sign cases and the exceptional case $f^*(\alpha)=-\alpha$ are theirs. The statement is Hatcher, *Algebraic Topology* (2002), §3.2 Exercise 4. One locator in both sets is corrected here: the ring structure is Hatcher's **Theorem 3.19**, not his Example 3.12, which only announces it on printed p. 213 (Sam cites it as "Theorem 3.12", which Hatcher does not have).
 
 ::: pf
 
@@ -61,7 +61,7 @@ The published solutions are **Guanyu Li, *Hatcher.pdf*, §3.2 Exercise 4, PDF p.
 $H^*(\CP^n;\ZZ)=\ZZ[\alpha]/(\alpha^{n+1})$ with $\abs{\alpha}=2$, so $H^{2j}(\CP^n;\ZZ)=\ZZ\cdot\alpha^j$ for $0\le j\le n$ and $H^{k}(\CP^n;\ZZ)=0$ for odd $k$.
 
 ::: pf-proof
-This is Theorem 3.19 of §3.2, printed p. 220: the cohomology ring of $\CP^n$ with $\ZZ$ coefficients is the truncated polynomial ring on a class of degree $2$, and a truncated polynomial ring is free on $1,\alpha,\dots,\alpha^n$ in the degrees $0,2,\dots,2n$.
+This is Theorem 3.19 of §3.2: the cohomology ring of $\CP^n$ with $\ZZ$ coefficients is the truncated polynomial ring on a class of degree $2$, and a truncated polynomial ring is free on $1,\alpha,\dots,\alpha^n$ in the degrees $0,2,\dots,2n$.
 :::
 
 :::
@@ -70,7 +70,7 @@ This is Theorem 3.19 of §3.2, printed p. 220: the cohomology ring of $\CP^n$ wi
 There is an integer $d$ with $f^*(\alpha)=d\alpha$, and then $f^*(\alpha^j)=d^j\alpha^j$ for $0\le j\le n$.
 
 ::: pf-proof
-$H^2(\CP^n;\ZZ)=\ZZ\cdot\alpha$ is infinite cyclic, so the homomorphism $f^*$ in degree $2$ is multiplication by a unique integer $d$. $f^*$ is a ring homomorphism by Proposition 3.10, printed p. 210, so $f^*(\alpha^j)=f^*(\alpha)^j=(d\alpha)^j=d^j\alpha^j$; the classes $\alpha^j$ generate the free group in each even degree by step [](#ring){.pf-ref}.
+$H^2(\CP^n;\ZZ)=\ZZ\cdot\alpha$ is infinite cyclic, so the homomorphism $f^*$ in degree $2$ is multiplication by a unique integer $d$. $f^*$ is a ring homomorphism by Proposition 3.10, so $f^*(\alpha^j)=f^*(\alpha)^j=(d\alpha)^j=d^j\alpha^j$; the classes $\alpha^j$ generate the free group in each even degree by step [](#ring){.pf-ref}.
 :::
 
 :::
@@ -92,7 +92,7 @@ If $d\ge0$ then every term $d^j$ is nonnegative and the first is $1$, so $L(f)\g
 $$
 L(f)=1-r+r^2-\cdots-r^n=\frac{1-(-r)^{n+1}}{1+r}=\frac{1+r^{n+1}}{1+r}>0 .
 $$
-So $L(f)\ne0$ in either case. $\CP^n$ is a finite CW complex, so the Lefschetz fixed point theorem, Theorem 2C.3, printed p. 179, applies and gives a point $x$ with $f(x)=x$.
+So $L(f)\ne0$ in either case. $\CP^n$ is a finite CW complex, so the Lefschetz fixed point theorem, Theorem 2C.3, applies and gives a point $x$ with $f(x)=x$.
 :::
 
 :::
@@ -105,7 +105,7 @@ Let $n$ be odd. If $d\ge0$ then $L(f)\ge1$ as in step [](#even){.pf-ref}. If $d=
 $$
 L(f)=1-r+r^2-\cdots-r^n=(1-r)\bigl(1+r^2+r^4+\cdots+r^{n-1}\bigr),
 $$
-since expanding the right side telescopes to the alternating sum. The second factor is at least $1$, so $L(f)=0$ exactly when $r=1$, that is $d=-1$; and $d=-1$ is precisely $f^*(\alpha)=-\alpha$ by step [](#pullback){.pf-ref}. For all other $d$ the number $L(f)$ is nonzero, and Theorem 2C.3, printed p. 179, gives a fixed point. The one case left open is the exceptional $f^*(\alpha)=-\alpha$, for which the argument says nothing; §2.C Exercise 3 exhibits a map of that kind without fixed points.
+since expanding the right side telescopes to the alternating sum. The second factor is at least $1$, so $L(f)=0$ exactly when $r=1$, that is $d=-1$; and $d=-1$ is precisely $f^*(\alpha)=-\alpha$ by step [](#pullback){.pf-ref}. For all other $d$ the number $L(f)$ is nonzero, and Theorem 2C.3, gives a fixed point. The one case left open is the exceptional $f^*(\alpha)=-\alpha$, for which the argument says nothing; §2.C Exercise 3 exhibits a map of that kind without fixed points.
 :::
 
 :::

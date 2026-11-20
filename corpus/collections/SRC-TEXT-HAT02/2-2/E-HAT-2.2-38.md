@@ -61,7 +61,7 @@ with the two sequences across the top and bottom exact and the vertical maps at 
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise: the checkout's Hatcher sets reach §2.2 in Poulsen (exercises 2, 4, 7, 9, 13, 17, 20, 21, 22, 23, 32, 36) and Li (whose section-2.2 entries are the exercises printed as 2.2.1--2.2.9, 2.2.12, 2.2.14, 2.2.19--2.2.22, 2.2.24, 2.2.29, 2.2.32, 2.2.40 and 2.2.41), and neither holds exercise 38. The argument is therefore the card's own, written out below and checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 38, printed p. 159: the only inputs are the exactness of the two printed rows and the commutativity of its six squares.
+No retained solution set covers this exercise: the checkout's Hatcher sets reach §2.2 in Poulsen (exercises 2, 4, 7, 9, 13, 17, 20, 21, 22, 23, 32, 36) and Li (whose section-2.2 entries are the exercises printed as 2.2.1--2.2.9, 2.2.12, 2.2.14, 2.2.19--2.2.22, 2.2.24, 2.2.29, 2.2.32, 2.2.40 and 2.2.41), and neither holds exercise 38. The argument is therefore the card's own, written out below and checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 38: the only inputs are the exactness of the two printed rows and the commutativity of its six squares.
 
 Name the maps in one period of the upper row
 $$

@@ -53,7 +53,7 @@ If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 21, printed p. 157. The proof is inclusion--exclusion on the sets of $i$-cells, which is legitimate because the cells of a CW complex are disjoint and each lies in $A$ or in $B$.
+No retained solution set covers this exercise; the argument is the card's own, checked against Hatcher, *Algebraic Topology* (2002), §2.2 Exercise 21. The proof is inclusion--exclusion on the sets of $i$-cells, which is legitimate because the cells of a CW complex are disjoint and each lies in $A$ or in $B$.
 
 ::: pf
 

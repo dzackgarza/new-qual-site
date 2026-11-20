@@ -69,9 +69,9 @@ Show that a compact manifold does not retract onto its boundary.
 :::
 
 ::: {.solution}
-The exercise is §3.3 Exercise 32, printed p. 260.
+The exercise is §3.3 Exercise 32.
 
-The argument is the one in Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 32, printed p. 16: coefficients $\ZZ_{2}$ so that orientability is free, Exercise 31 to make the boundary map nonzero on the fundamental class, and exactness to make $i_{*}$ kill that class. Sam's text prints "$r\circ i$ is the identity on $M$" where the composite is the identity on $\partial M$; the slip is not reproduced here.
+The argument is the one in Steven V. Sam, *Solutions to Algebraic Topology* (2008), §3.3 Exercise 32: coefficients $\ZZ_{2}$ so that orientability is free, Exercise 31 to make the boundary map nonzero on the fundamental class, and exactness to make $i_{*}$ kill that class. Sam's text prints "$r\circ i$ is the identity on $M$" where the composite is the identity on $\partial M$; the slip is not reproduced here.
 
 Let $M$ be a compact $n$-manifold with boundary, $i:\partial M\to M$ the inclusion, and $R=\ZZ_{2}$.
 

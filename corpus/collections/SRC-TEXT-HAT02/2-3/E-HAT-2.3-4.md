@@ -74,7 +74,7 @@ Show that the wedge axiom for homology theories follows from the other axioms in
 ::: {.solution}
 It suffices to prove the binary case and then induct. This is the deduction Hatcher points out on p. 160, where the third axiom is said to follow from the first two for finite wedge sums, and not in general for infinite ones.
 
-The binary case and the induction are transcribed from **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4, printed pp. 83--84. The exercise is Exercise 4 of §2.3, printed p. 165; the axioms used are (1) and (2) of printed p. 160.
+The binary case and the induction are transcribed from **Kenneth DeMason, *M382C Full Credit HW Problems* (2021)**, Hatcher 2.3.4. The exercise is Exercise 4 of §2.3; the axioms used are (1) and (2) of printed p. 160.
 
 Let $X\vee Y$ be the wedge at the common basepoint $*$. Regard $X$ as a subcomplex of $X\vee Y$. Then
 $$

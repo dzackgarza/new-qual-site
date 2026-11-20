@@ -49,7 +49,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 1.3 of Hatcher, *Algebraic Topology* (2002), printed p. 79, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Exercise 1 of Section 1.3 of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
 
 For a covering space $p: \tilde{X} \to X$ and a subspace $A \subset X$, let $\tilde{A} = p^{-1}(A)$.
 Show that the restriction $p: \tilde{A} \to A$ is a covering space.

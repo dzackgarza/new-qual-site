@@ -187,7 +187,7 @@ $$
 \longrightarrow\prod_iB_i\big/\bigoplus_iB_i
 \longrightarrow\prod_iC_i\big/\bigoplus_iC_i\longrightarrow0.
 $$
-This is **Casassas's Proposition 2.1.2(1), printed pp. 8--9**. Applying it to the displayed family of $B_*^j$ yields exactness for $Q$.
+This is **Casassas's Proposition 2.1.2(1)**. Applying it to the displayed family of $B_*^j$ yields exactness for $Q$.
 
 :::
 
@@ -199,7 +199,7 @@ The candidate vanishes on finite-dimensional complexes, in particular at a point
 
 ::: pf-proof
 
-If $X$ is a finite-dimensional CW complex, then $\widetilde H_i(X)=0$ for $i<0$ and for $i>\dim X$ (this is Theorem 2.35, printed p. 139, whose cellular chain groups vanish above the dimension), so all but finitely many of the groups $\widetilde H_i(X)$ are zero. For such a family the direct sum already fills the product, so the quotient $Q(X)$ is trivial. This finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is an isomorphism when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs; that file does not assert an isomorphism between the sum and the product for a family with infinite support, and there the quotient need not vanish, which is the failure exhibited in the next step. The point is the case of dimension $0$ with every $\widetilde H_i$ zero, and $S^0$ is the case in which only $\widetilde H_0(S^0)=\ZZ$ is nonzero. This is the vanishing the exercise asserts for finite-dimensional $X$; it is not the Eilenberg--Steenrod dimension axiom, which Hatcher omits from his axioms (printed p. 161) and which ordinary homology would supply with $\widetilde H_0(S^0)=\ZZ\ne Q(S^0)$.
+If $X$ is a finite-dimensional CW complex, then $\widetilde H_i(X)=0$ for $i<0$ and for $i>\dim X$ (this is Theorem 2.35, whose cellular chain groups vanish above the dimension), so all but finitely many of the groups $\widetilde H_i(X)$ are zero. For such a family the direct sum already fills the product, so the quotient $Q(X)$ is trivial. This finite-support implication, that the canonical map $\bigoplus_i f_i\to\prod_i f_i$ is an isomorphism when all but finitely many $f_i$ vanish, is what <https://github.com/dzackgarza/new-qual-site/blob/16c09abaa4/proofs/cards/FamilyQuotient.lean> certifies, and it is exactly what the vanishing of the quotient needs; that file does not assert an isomorphism between the sum and the product for a family with infinite support, and there the quotient need not vanish, which is the failure exhibited in the next step. The point is the case of dimension $0$ with every $\widetilde H_i$ zero, and $S^0$ is the case in which only $\widetilde H_0(S^0)=\ZZ$ is nonzero. This is the vanishing the exercise asserts for finite-dimensional $X$; it is not the Eilenberg--Steenrod dimension axiom, which Hatcher omits from his axioms (printed p. 161) and which ordinary homology would supply with $\widetilde H_0(S^0)=\ZZ\ne Q(S^0)$.
 
 :::
 

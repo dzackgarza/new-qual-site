@@ -70,7 +70,7 @@ Use these calculations to determine which subsets $A \subset X$ have the propert
 :::
 
 ::: {.solution}
-This is Hatcher, Algebraic Topology, §2.1 Exercise 28, printed p. 133 (PDF p. 142), where it reads "Let $X$ be the cone on the 1-skeleton of $\Delta^3$…". No retained solution set covers this exercise: Guanyu Li's §2.1 block stops at Exercise 27, Sam's carries Exercises 8, 12, 18 and 27 of §2.1, and Koukpari's carries 1--7, 9, 11, 12, 15, 19, 20, 25 and 29--31 of §2.1 — so the argument is the card's own.
+This is Hatcher, Algebraic Topology, §2.1 Exercise 28, where it reads "Let $X$ be the cone on the 1-skeleton of $\Delta^3$…". No retained solution set covers this exercise: Guanyu Li's §2.1 block stops at Exercise 27, Sam's carries Exercises 8, 12, 18 and 27 of §2.1, and Koukpari's carries 1--7, 9, 11, 12, 15, 19, 20, 25 and 29--31 of §2.1 — so the argument is the card's own.
 Let $G$ be the $1$-skeleton of $\Delta^3$, so $G\cong K_4$, and write
 $$
 X=CG
