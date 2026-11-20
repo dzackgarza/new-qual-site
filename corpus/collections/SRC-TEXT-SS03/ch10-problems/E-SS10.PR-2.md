@@ -27,6 +27,13 @@ audit:
     termination, the case analysis of part (b) by $c=0$ and $c=\pm1$, and the stabilizer argument of part (c).
     No retained solution set covers this exercise (the collection retains the textbook, not a solutions
     manual), so the argument is the card's own; the case checks were re-read for this pass.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 10 sets its asterisks before Problems 1, 5 and 6
+    only, so none stands before Problem 2. The remark records that. Not checked in this pass: the
+    wording of the statement and the argument.
 ---
 
 ::: {.exercise}
@@ -53,6 +60,10 @@ respectively. Let $\mathfrak{g}$ be the subgroup of $\operatorname{SL}_2(\ZZ)$ g
 (c) Prove that $S$ and $T_1$ generate the modular group in the sense that every fractional linear transformation corresponding to $g \in \operatorname{SL}_2(\ZZ)$ is a composition of finitely many $S$'s and $T_1$'s, and their inverses.
 
 Strictly speaking, the matrices associated to $S$ and $T_1$ generate the projective special linear group $\operatorname{PSL}_2(\ZZ)$, which equals $\operatorname{SL}_2(\ZZ)$ modulo $\{\pm I\}$. [Hint: Observe that $2i$ is in the interior of $\mathcal{F}_1$. Now map $g(2i)$ back into $\mathcal{F}_1$ by using part (a). Use part (b) to conclude.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 10, Problem 2).
 :::
 
 ::: {.remark}
