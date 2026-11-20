@@ -38,6 +38,8 @@ Show that for any abstract curve $X$ of genus 2, there exist embeddings of degre
 :::
 
 ::: {.solution}
+The argument is the card's own, and it is checked against Hartshorne's Exercise IV.6.3, printed p. 355. Yang Pi-Yeh, *Hartshorne Solutions*, Solution 4.6.3, printed p. 97, proves the containment by $h^0(\OO_X(2))=9$ against $h^0(\OO_{\PP^3}(2))=10$, and uniqueness from Remark 6.4.1(d) once the quadric is nonsingular, with projective normality supplying the rest.
+
 Write line-bundle classes additively, and let $K$ denote a canonical divisor.
 For an embedding $X\subseteq\PP^3$, put $H=\OO_X(1)$.
 
