@@ -52,11 +52,11 @@ An effective divisor $D$ in a smooth variety $X$ has ideal sheaf locally generat
 
 For a nonsingular subvariety $Y$ of codimension $r$ in a nonsingular variety $X$,
 $$
-\omega_Y\cong\omega_X\otimes\bigwedge^r\mcn_{Y/X},
+\omega_Y\cong\restrictionof{\omega_X}{Y}\otimes\bigwedge^r\mcn_{Y/X},
 $$
 and for $r=1$, with $Y$ a divisor and $\mcl$ its associated invertible sheaf,
 $$
-\omega_Y\cong\omega_X\otimes\mcl\otimes\OO_Y
+\omega_Y\cong\restrictionof{(\omega_X\otimes\mcl)}{Y}
 $$
 [@Har77, Proposition II.8.20].
 Smooth divisors therefore satisfy $K_Y=\restrictionof{(K_X+Y)}{Y}$, which computes the canonical class of a smooth hypersurface of degree $d$ in $\PP^n$ as $\OO(d-n-1)$ ([[FE-VARADJ]]).
