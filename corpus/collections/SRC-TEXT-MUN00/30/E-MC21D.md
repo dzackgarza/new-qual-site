@@ -62,6 +62,24 @@ audit:
     event's spelling of the file page only in this solution's citation: the retained dbFin text now
     sits at `tmp/sources/dbfin/section-30-the-countability-axioms/problem-16-solution.txt`. Not
     claimed: a published solution of part (a), which the earlier events already record as absent.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 30 Exercise 16, printed p. 195, and
+    found correct in both parts. Part (a): the injection $I\to\mathcal{P}(\ZZ_+)$ exists because
+    $\abs{I}=2^{\aleph_0}$; each $d_{F,\phi}(t)=\phi(\iota(t)\cap F)$ is a well-defined element of
+    $\RR^I$; $D$ is countable as the image of the countable set of pairs $(F,\phi)$; and for a
+    basic open set the witnesses $m_{ij}$ in the symmetric differences make the traces
+    $\iota(t_i)\cap F$ pairwise distinct, so $\phi$ is well defined and $d_{F,\phi}$ takes the
+    prescribed value at each of the finitely many coordinates. The argument uses nothing about the
+    coordinates outside $\{t_1,\ldots,t_n\}$, which is where the product topology enters. Part
+    (b): the two-coordinate set $\pi_\alpha^{-1}((0,1))\cap\pi_\beta^{-1}((2,3))$ is a nonempty
+    basic open set, so a dense $D$ meets it and separates $F(\alpha)$ from $F(\beta)$; for
+    countable $D$, $\abs{J}\le\abs{\mathcal{P}(D)}\le\abs{\mathcal{P}(\ZZ_+)}$. Not checked: the
+    printed folio, the checkout holding only the extraction
+    `tmp/sources/munkres-2000-topology.md`, which records page ranges and not folios; and no
+    search for a published solution of part (a) was run in this pass.
 ---
 
 ::: {.exercise}
