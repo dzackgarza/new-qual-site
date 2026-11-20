@@ -35,17 +35,37 @@ audit:
     the printed page is the one the card's earlier event claimed. The durable part of the locator is
     that printed page; the file path names this machine's copy and `tmp/sources` does not survive a VM
     reset. No mathematics changed.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.F Exercise 1, the axioms for a reduced homology theory in §4.F, the
+    direct limit axiom as that section states it (over the finite subcomplexes), the wedge-sum
+    splitting for two summands from the axioms for homology in §2.3, and Mayer--Vietoris as a
+    consequence of the exactness axiom. The mathematics is right in both directions. Two repairs.
+    The step concluding $\widetilde h_n(T)\cong\operatorname{coker}(1-s_*)$ used the injectivity of
+    $1-s_*$ without saying in which degree: the connecting map out of $\widetilde h_n(T)$ is
+    followed by $1-s_*$ on $\bigoplus\widetilde h_{n-1}(X_i)$, so it vanishes only because that map
+    is injective, and the step now says so and derives the surjectivity onto
+    $\widetilde h_n(T)$. And the colimit in the second direction was over one exhaustion, while the
+    axiom asks for the direct limit over all finite subcomplexes; the step now identifies the two,
+    every finite subcomplex lying in some member of a countable exhaustion. The text cited pages for
+    Hatcher's two remarks and for the direct limit axiom; by the owner's correction of this date it
+    cites §2.3 and §4.F and no page. No statement changed. Not checked: no certificate; the
+    Mayer--Vietoris decomposition of the telescope is a citation of the standard argument and was
+    not rebuilt from the axioms in this pass.
+
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 4.F of Hatcher, *Algebraic Topology* (2002), read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf`; the statement below is its wording.
+This is Exercise 1 of Section 4.F of Hatcher, *Algebraic Topology* (2002); the statement below is its wording.
 
 Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom.
 Show that the converse also holds for countable CW complexes.
 :::
 
 ::: {.solution}
-No retained solution set covers this exercise; the argument is the card's own, using only the first two axioms and the two facts Hatcher records on pp. 160 and 455. The statement is Hatcher, *Algebraic Topology* (2002), §4.F Exercise 1.
+No retained solution set covers this exercise; the argument is the card's own, using only the first two axioms of §4.F and the definitions of the other two proved in section 4.F of Hatcher. The statement is §4.F Exercise 1.
 
 ::: pf
 
@@ -53,7 +73,7 @@ No retained solution set covers this exercise; the argument is the card's own, u
 Let $\widetilde h_*$ satisfy the homotopy and exactness axioms (1) and (2) of Hatcher's list; the wedge sum axiom (3) and the direct limit axiom are the two statements to be compared.
 
 ::: pf-proof
-These are the axioms as Hatcher states them: (1) homotopy invariance, (2) exactness for a CW pair, (3) $\widetilde h_n(\bigvee_\alpha X_\alpha)\cong\bigoplus_\alpha\widetilde h_n(X_\alpha)$; the direct limit axiom identifies $\widetilde h_n(X)$ with the colimit over the finite subcomplexes of $X$ (p. 455).
+These are the axioms as Hatcher states them: (1) homotopy invariance, (2) exactness for a CW pair, (3) $\widetilde h_n(\bigvee_\alpha X_\alpha)\cong\bigoplus_\alpha\widetilde h_n(X_\alpha)$; the direct limit axiom identifies $\widetilde h_n(X)$ with the direct limit of $\widetilde h_n$ over the finite subcomplexes of $X$, as §4.F states it.
 :::
 :::
 
@@ -61,7 +81,7 @@ These are the axioms as Hatcher states them: (1) homotopy invariance, (2) exactn
 Axioms (1) and (2) already give the wedge sum axiom for finite wedge sums.
 
 ::: pf-proof
-Apply exactness to the pair $(X_1\vee X_2,X_1)$: the quotient is $X_2$ and the pair is a CW pair, so the long exact sequence splits because the inclusion of $X_1$ into the wedge is a retract up to homotopy; the splitting gives $\widetilde h_n(X_1\vee X_2)\cong\widetilde h_n(X_1)\oplus\widetilde h_n(X_2)$, and induction extends this to finitely many summands. This is Hatcher's remark on p. 160.
+Apply exactness to the pair $(X_1\vee X_2,X_1)$: the quotient is $X_2$ and the pair is a CW pair, so the long exact sequence splits because the inclusion of $X_1$ into the wedge is a retract up to homotopy; the splitting gives $\widetilde h_n(X_1\vee X_2)\cong\widetilde h_n(X_1)\oplus\widetilde h_n(X_2)$, and induction extends this to finitely many summands. Hatcher records this in the axioms for homology in §2.3.
 :::
 :::
 
@@ -98,10 +118,10 @@ Let $x$ be a finite-support element with $(1-s_*)x=0$ and let $i$ be the least i
 :::
 
 ::: {.pf-step #colimit}
-$\widetilde h_n(X)\cong\varinjlim_i\widetilde h_n(X_i)$.
+$\widetilde h_n(X)\cong\varinjlim_i\widetilde h_n(X_i)$, and this colimit is also the colimit over all finite subcomplexes of $X$.
 
 ::: pf-proof
-By step [](#mv){.pf-ref} and injectivity of $1-s_*$ from step [](#injective){.pf-ref}, $\widetilde h_n(T)\cong\operatorname{coker}(1-s_*)$, which is the colimit of the sequence $\widetilde h_n(X_1)\to\widetilde h_n(X_2)\to\cdots$; with step [](#telescope){.pf-ref} this is $\widetilde h_n(X)$, the direct limit axiom for the countable case.
+In the sequence of step [](#mv){.pf-ref} the connecting map out of $\widetilde h_n(T)$ is followed by $1-s_*$ on $\bigoplus_i\widetilde h_{n-1}(X_i)$, which is injective by step [](#injective){.pf-ref} applied in degree $n-1$; its image is therefore $0$, so the map $\bigoplus_i\widetilde h_n(X_i)\to\widetilde h_n(T)$ is onto and $\widetilde h_n(T)\cong\operatorname{coker}(1-s_*)$ in degree $n$. That cokernel is $\bigoplus_i\widetilde h_n(X_i)$ modulo the classes of $x-s_*x$, which is the colimit of $\widetilde h_n(X_1)\to\widetilde h_n(X_2)\to\cdots$, and with step [](#telescope){.pf-ref} it is $\widetilde h_n(X)$. For a countable CW complex the exhaustion can be taken by finite subcomplexes, and every finite subcomplex lies in one of them, so this colimit is the direct limit over all finite subcomplexes, which is the axiom's form.
 :::
 :::
 
