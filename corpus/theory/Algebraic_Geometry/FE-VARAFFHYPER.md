@@ -34,9 +34,9 @@ is an isomorphism of $\PP^n_k$ onto its image [@Har77, Exercise I.2.12; @Har77, 
 Write $f=\sum_{j=0}^N\alpha_jM_j$ and let $\ell=\sum_{j=0}^N\alpha_jy_j$ be the corresponding linear form on $\PP^N_k$; since $f\ne0$, the form $\ell$ is not zero.
 For $P\in\PP^n_k$ one has $\ell(\rho_d(P))=f(P)$, so
 $$\rho_d\bigl(V(f)\bigr)=\rho_d(\PP^n_k)\cap Z(\ell).$$
-Choose $i$ with $\alpha_i\ne0$.
-The linear automorphism of $\PP^N_k$ sending $y_i$ to $\ell$ and fixing $y_j$ for $j\ne i$ carries $Z(\ell)$ to the coordinate hyperplane $Z(y_i)$, so it suffices to show that $\rho_d(\PP^n_k)\sm Z(y_i)$ is affine.
-That set is $\rho_d(\PP^n_k)\cap U_i$, and $U_i=\theset{y_i\ne0}$ is isomorphic to $\AA^N_k$ ([[D-VARQAP]]); hence it is a closed subset of an affine variety and is affine.
+Choose $i$ with $\alpha_i\ne0$ and let $\phi$ be the linear automorphism of $\PP^N_k$ sending $y_i$ to $\ell$ and fixing $y_j$ for $j\ne i$.
+Then $\phi$ carries $Z(\ell)$ to the coordinate hyperplane $Z(y_i)$, hence carries $\rho_d(\PP^n_k)\sm Z(\ell)$ isomorphically onto $\phi(\rho_d(\PP^n_k))\cap U_i$, where $U_i=\theset{y_i\ne0}$ is isomorphic to $\AA^N_k$ ([[D-VARQAP]]).
+That intersection is a closed subset of an affine variety, hence affine.
 Since $\rho_d$ is an isomorphism onto its image, $\PP^n_k\sm V(f)$ is affine.
 :::
 
