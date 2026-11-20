@@ -10199,3 +10199,16 @@ the one the exercise cites.
 - `E-HAT-3.F-6`, `-8`, `-9` were repaired in this stream's earlier pass (`6b9c906473`, `5ad4fec69b`, `8035ccd488`),
   and each repair was itself read step by step when it was made: the telescoping identity, the $n=1$ end of the
   Bockstein collapse, and the converse of printed (a) for infinite-dimensional ${}_pA$.
+
+## 2026-11-20: #170's `E-HAT-2.B-9` item reopened by an independent reader — the $\ZZ$ transfer is the sum of the lifts, not the anti-diagonal
+
+**Object and need:** card `E-HAT-2.B-9` and [#170](https://github.com/dzackgarza/new-qual-site/issues/170). The 2026-11-19 record above claims this card's acceptance item — work beyond Hausmann's Proposition 4.3.9 — met, with three false statements around the proof repaired. The remark was a fourth: it said that §3.G's transfer, being defined for every coefficient group, gives over $\ZZ$ a transfer sequence for the trivial covering which is exact and split, with $\tau(c)=(c,-c)$ in place of the diagonal.
+
+**Observed evidence:** §3.G, printed p. 321, defines $\tau$ as the sum of the $n$ lifts for any coefficient group, so over $\ZZ$ the transfer of $X\times S^0\to X$ is $\tau(c)=(c,c)$, the same map as over $\ZZ_2$, and $p_\sharp\tau=2\cdot\operatorname{id}\ne0$: the untwisted sequence is not a complex, so it has no exactness to ask for, and $(0,c)$ in the kernel of addition and not in the diagonal for $c\ne0$ is the symptom rather than the cause. Hatcher says at printed p. 175 that a generalisation to other coefficients needs local coefficients, §3.H, and the two-sheeted case is Example 3H.3, printed pp. 329--330: the chains carry the eigenspaces $C_n^\pm$ spanned by the sums and differences $\sigma\pm T\sigma$ of the deck involution, and in the trivial cover's coordinates the two exact and split sequences read $0\to C_*(X;\ZZ)\xrightarrow{c\mapsto(c,-c)}C_*(X;\ZZ)^2\xrightarrow{(a,b)\mapsto a+b}C_*(X;\ZZ)\to0$ and $0\to C_*(X;\ZZ)\xrightarrow{c\mapsto(c,c)}C_*(X;\ZZ)^2\xrightarrow{(a,b)\mapsto a-b}C_*(X;\ZZ)\to0$. The transfer is the first map of the second, whose projection is subtraction; $c\mapsto(c,-c)$ is the inclusion of the anti-invariant chains, not the transfer.
+
+**Impact and owner:** the reader's verdict is that ten of the eleven items of the 2026-11-19 table stand and this one did not, so the correctness read of the eleven was not closed at that date. No other card is touched by this repair.
+
+**Uncertainty:** the identification $C_n^-\approx C_n(\tilde X)\otimes_\pi\ZZ$ at printed p. 330 is the book's and is quoted rather than re-proved for this cover; no published solution of Exercise 2.B.9 has been located, so the source obligation stays open exactly as [#123](https://github.com/dzackgarza/new-qual-site/issues/123) left it.
+
+**Repair:** the remark is corrected on the card, and a `solution-written` entry of this date withdraws the 2026-11-19 referee note that repeated the claim, with the book's pages checked in its own text layer (printed page $=$ PDF page $-9$): §3.G printed p. 321, §2.B printed pp. 174--175, Example 3H.3 printed pp. 329--330, §3.H opening printed p. 327, Proposition 3H.4 printed p. 331, Exercise 9 printed p. 177. Card commit `a6ff1e6bbe`. The card passes `qualc.authoring check E-HAT-2.B-9`, the macro check and the extraction detector; no whole-corpus `qualc check` was run for it.
+
