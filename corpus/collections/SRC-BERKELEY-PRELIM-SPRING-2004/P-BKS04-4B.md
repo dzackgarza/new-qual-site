@@ -42,7 +42,7 @@ Prove that the function $\log\left(\prod_{i=1}^nx_i\right)$ has a unique maximum
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2004, solutions** (`assets/attachments/s04solution.pdf`), Problem 4B, PDF p. 7, which gives both a Lagrange-multiplier and an AM-GM route. Throughout $a_{1},\ldots,a_{n} > 0$, $\Delta = \theset{\mathbf{x} \in \RR^{n} \mid \sum_{i}a_{i}x_{i} = 1,\ x_{i} > 0}$ and $F(\mathbf{x}) \coloneqq \log\bigl(\prod_{i}x_{i}\bigr) = \sum_{i}\log x_{i}$.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2004, solutions** (`assets/attachments/s04solution.pdf`), Problem 4B, which gives both a Lagrange-multiplier and an AM-GM route. Throughout $a_{1},\ldots,a_{n} > 0$, $\Delta = \theset{\mathbf{x} \in \RR^{n} \mid \sum_{i}a_{i}x_{i} = 1,\ x_{i} > 0}$ and $F(\mathbf{x}) \coloneqq \log\bigl(\prod_{i}x_{i}\bigr) = \sum_{i}\log x_{i}$.
 
 ::: pf
 

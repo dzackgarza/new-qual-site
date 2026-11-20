@@ -39,7 +39,7 @@ $$
 :::
 
 ::: {.solution}
-The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2004, solutions** (`assets/attachments/s04solution.pdf`), Problem 8B, PDF p. 8. Throughout $x$ is a fixed real number, $n$ tends to infinity, and $O(n^{-k})$ denotes a quantity bounded by $C_{x}n^{-k}$ for large $n$ with a constant that depends on $x$ but not on $n$.
+The argument is the retained solution sheet's: **Berkeley preliminary examination, Spring 2004, solutions** (`assets/attachments/s04solution.pdf`), Problem 8B. Throughout $x$ is a fixed real number, $n$ tends to infinity, and $O(n^{-k})$ denotes a quantity bounded by $C_{x}n^{-k}$ for large $n$ with a constant that depends on $x$ but not on $n$.
 
 ::: pf
 
