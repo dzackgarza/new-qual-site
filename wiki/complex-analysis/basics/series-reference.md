@@ -35,6 +35,7 @@ $$
 $$
 When $\alpha\in\ZZ_{\geq 0}$ the series terminates and is the binomial theorem.
 
+This is the binomial series of [@Ahl73, ch. 5, §1.2, The Taylor Series], where ${\mu\choose n}=\frac{\mu(\mu-1)\cdots(\mu-n+1)}{1\cdot2\cdots n}$ is defined and $(1+z)^\mu=1+\mu z+{\mu\choose2}z^2+\cdots+{\mu\choose n}z^n+\cdots$ is listed with its radius of convergence.
 :::
 
 ::: {.fact title="Power series"}
@@ -56,6 +57,7 @@ $$
 \qty{\frac{d}{dz}}^k \sum_{n\geq 0} c_n z^n = \sum_{n\geq k} \falling{n}{k} \, c_n z^{n-k}.
 $$
 
+The developments are those listed in [@Ahl73, ch. 5, §1.2, The Taylor Series] — $e^z$, $\cos z$ and $\sin z$ there as the definitions of the functions, $(1+z)^\mu$ with the binomial coefficients defined on the same page, and $\log(1+z)$, which is the series above at $-z$ — and the geometric series with its termwise derivative is [@Ahl73, ch. 2, §2.2, Theorem 2], whose third part gives the derivative by termwise differentiation with the same radius of convergence.
 :::
 
 [[FF-LF5ND]] [[FF-XKATS]]
