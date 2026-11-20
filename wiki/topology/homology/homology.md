@@ -16,7 +16,7 @@ topics:
 
 ::: {.fact}
 $H_0(X)$ is a free abelian group on the set of path components of $X$.
-In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$ if $X$ has finitely many path components.
+In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$ if $X$ has finitely many path components [@Hat02, Proposition 2.7].
 
 :::
 
@@ -31,34 +31,9 @@ by additivity of reduced homology over a wedge [[PR-B6BB2]], with $\tilde H_n(S^
 
 :::
 
-
-::: {.remark}
-In general $H_{n} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{n} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_n$.
-If the integral homology groups of $A$ are free, then
-$$
-H_{n} (A\cross B) \cong \bigoplus_{i+j=n} H_{i}(A) \tensor_\ZZ H_{j}(B)
-$$
-and if the integral homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
-$$
-H_{n}\qty{\prod_{j=1}^k X_{j}} \cong
-\bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)}
-H_{x_1}(X_1) \tensor_\ZZ \cdots \tensor_\ZZ H_{x_k}(X_k),
-$$
-where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of nonnegative integers with $x_1+\cdots+x_k=n$.
-
-:::
-
 [[FF-UBJ3S]]
 
 [[T-FBMYQ]]
-
-::: {.fact title="Cellular-chain quick checks"}
-\envlist
-
-- If a CW complex has no $n\dash$cells, then its cellular chain group $C_n(X)$ is zero, hence $H_n(X)=0$.
-- If a CW complex has a single $0\dash$cell, then its cellular differential $d_1\colon C_1(X)\to C_0(X)$ is zero.
-
-:::
 
 ## Computed homology groups
 
@@ -115,30 +90,9 @@ The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which def
 
 ## Relative homology
 
-::: {.fact title="Relative and cellular homology"}
-\envlist
+[[D-UEWPN]]
 
-- If $(X,A)$ is a good pair, then the quotient map induces
-  $$
-  H_n(X,A)\cong \widetilde H_n(X/A).
-  $$
-
-- The long exact sequence of a pair is
-  $$
-  \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots.
-  $$
-
-- For a CW complex $X$, the cellular filtration satisfies
-  $$
-  H_j(X^{(k)},X^{(k-1)}) \cong
-  \begin{cases}
-  \ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
-  0 & j\neq k,
-  \end{cases}
-  $$
-  since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
-
-:::
+For a good pair $(X,A)$, the quotient map induces $H_n(X,A)\cong\tilde H_n(X/A)$ [@Hat02, Proposition 2.22]. The cellular filtration has $H_j(X^{(k)},X^{(k-1)})\cong\ZZ[\theset{\text{$k$-cells of $X$}}]$ for $j=k$ and $0$ otherwise, since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres.
 
 ## Exercises
 
