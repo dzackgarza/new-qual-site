@@ -18,6 +18,8 @@ The basic properties of a covering map, the lifting criteria, deck transformatio
 
 [[D-COVORI]]
 
+[[D-COVBND]]
+
 ## Universal covers
 
 [[D-MWD2L]]
