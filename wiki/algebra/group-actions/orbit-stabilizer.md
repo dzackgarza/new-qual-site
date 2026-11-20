@@ -28,8 +28,6 @@ Cauchy's theorem is the converse for prime divisors.
 
 ## The orbit-stabilizer theorem
 
-The orbit of a point is the quotient of $G$ by its stabilizer, so for a finite group the orbit size is the index of the stabilizer.
-
 [[PR-GSDKO]]
 
 [[PR-KGHJ2]]
