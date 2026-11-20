@@ -35,6 +35,16 @@ audit:
     "(c) refined" in the same way as the printed (b) means $O((\log\abs{t})^2)$ at $\sigma=1$.
     This item carries no asterisk, and the remark that the card already had records the same history.
     Not checked: the printed (e) locus of part (d) beyond the text quoted, and the argument itself.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The body now states the print's difficulty marking where a reader sees it: a remark after the
+    statement reads "The book sets no asterisk before this problem (Chapter 6, Problem 1)." Read
+    again in the retained book at the head of the Chapter 6 Problems: item 1 carries no mark, while
+    items 2 and 3 carry one before the number. The sentence uses the same wording as the twenty
+    unstarred Problem cards that already carried it. No mathematics changed and the argument was
+    not re-read in this pass.
 ---
 
 ::: {.exercise}
@@ -57,6 +67,10 @@ for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta
 
 ::: {.remark}
 The source prints the middle term as $-\frac{N^{s-1}}{s-1}$; summing $\int_n^{n+1} x^{-s}\,dx$ over $n \ge N$ gives $+\frac{N^{1-s}}{s-1}$. Part (c) in the source says only that the second conclusion of Proposition 2.7, the bound for $\zeta'$, can be refined in the same way; the statement gives that refinement.
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 6, Problem 1).
 :::
 
 ::: {.solution}
