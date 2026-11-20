@@ -52,6 +52,18 @@ audit:
     $0<\epsilon<(1-\alpha)/2$, which loses nothing because a bound with a smaller exponent implies
     one with a larger, and then $h\le x^{(1+\alpha)/2}<x/2$ and $x-h\ge1$. The closing substitution is
     correspondingly legitimate. The body's estimates are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Record of the search behind the solution's provenance sentence, which the reader asked for where
+    no published solution set covers the Problem. Read: the head of R. C. Rhoades,
+    *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), whose
+    abstract describes it as solutions or hints to "many of the exercises", with one part per
+    chapter. Searched the open web for a set answering the end-of-chapter Problems of this book: no
+    document answering Chapter 7, Problem 3 was found. This search located no published set answering
+    this Problem, and none is retained in this repository. Not checked: whether such a set exists
+    outside what a web search reaches. The mathematics of the card is unchanged.
 ---
 
 ::: {.exercise}
