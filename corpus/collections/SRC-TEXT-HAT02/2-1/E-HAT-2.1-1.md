@@ -59,7 +59,7 @@ audit:
 ---
 
 ::: {.problem}
-This is Exercise 1 of Section 2.1 of Hatcher, *Algebraic Topology* (2002), printed p. 131, read in the copy retained on this machine as `tmp/sources/hatcher-2002-algebraic-topology.pdf` (printed page = PDF page - 9); the statement below is its wording.
+This is Hatcher, *Algebraic Topology* (2002), §2.1 Exercise 1; the statement below is its wording.
 
 What familiar space is the quotient $\Delta$-complex of a 2 simplex $[v_0, v_1, v_2]$ obtained by identifying the edges $[v_0, v_1]$ and $[v_1, v_2]$, preserving the ordering of vertices?
 :::
