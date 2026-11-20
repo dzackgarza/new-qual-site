@@ -20,5 +20,9 @@ Then $I$ is a finite intersection of [[D-JGYK4|primary ideals]], namely
 $$
 \generators a = \bigcap_{i=1}^k \generators{p_i^{e_i}},
 $$
-where $a = u\,p_1^{e_1}\cdots p_k^{e_k}$ is the factorization of a generator $a$ into a unit and powers of distinct primes.
+where $a = u\,p_1^{e_1}\cdots p_k^{e_k}$ is the factorization of a generator $a$ into a unit and powers of distinct primes [@Hun74, chapter III, §3, Exercise 5(b)--(d)].
+:::
+
+::: {.remark}
+Part (b) of that exercise identifies the primary ideals of a principal ideal domain as the ideals $\generators{p^n}$ with $p$ prime, part (c) says that for distinct primes $p_1,\ldots,p_k$ the product $\generators{p_1^{e_1}}\cdots\generators{p_k^{e_k}}$ equals the intersection $\bigcap_i\generators{p_i^{e_i}}$, and part (d) says that every proper ideal is an intersection of finitely many primary ideals, unique up to order.
 :::
