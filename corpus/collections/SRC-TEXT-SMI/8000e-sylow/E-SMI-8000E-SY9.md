@@ -37,6 +37,15 @@ audit:
     2n_2 ≥ 42 and n_2 | 21; the five exhibited representatives have orders
     2, 3, 4, 7, 7 as stated; and no nontrivial proper normal subgroup exists because
     none of 23, 27, 41, 55, 83 is a subset sum of 21, 42, 56, 24, 24. No defect.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Read again against the printed problem, Smith 8000e.pdf page 7, Sylow problem 9. Brute-force
+    enumeration of the 168 invertible $3\times3$ matrices over $\mathbf F_2$ gives element orders
+    $1,21,56,42,48$ at orders $1,2,3,4,7$, six conjugacy classes of sizes $1,21,56,42,24,24$, and
+    $n_7=48/6=8$, $n_3=56/2=28$; $n_2\ge21$ from $2n_2\ge42$ and $n_2\mid21$ gives $n_2=21$.
+    The proper-divisor argument excludes every nontrivial proper normal subgroup. No defect.
 ---
 
 ::: {.exercise}
