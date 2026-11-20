@@ -10947,3 +10947,42 @@ and says they are inverse. They are not: for $z=y^{2}-(x/2y)^{2}$ one has $\sqrt
 **Uncertainty:** a card listed by no collection is an orphan under the audit's `orphans` check, which this lane did not run; whether an orphan retained for its dated events should be exempted from that check is not settled here.
 
 **Repair of the record:** this record supersedes the two above it in effect, and neither is rewritten.
+
+## 2026-11-20, tenth item: `E-HAT-4.2-13`'s dimension argument withdrawn, and two Chapter 1 cards read
+
+**The correction.** The `conclusion` step I wrote in `70336fb64e` argued that $\pi_i(X)=\pi_i(Y)=0$ for $i>n$
+"because both are $n$-dimensional CW complexes". That is false, and $S^2$ at $n=2$ refutes it:
+$\pi_3(S^2)=\ZZ$ while $H_i(S^2)=0$ for $i>2$. Only homology vanishes above the dimension. The step now closes
+on the argument that was already in the paragraph beside it: step `homology-iso` makes the lift a homology
+isomorphism of simply connected CW complexes, so it is a homotopy equivalence by **Hatcher, Corollary 4.33**;
+hence it is an isomorphism on $\pi_i$ for every $i\ge2$, which transfers to $f$ through the covering
+identifications, and $f$ is an isomorphism on $\pi_1$ by hypothesis; **Theorem 4.5** then makes $f$ a homotopy
+equivalence. The same-day audit event repeated the false reason and is corrected with it, and it now records
+that the first version of the repair is withdrawn. `1583239ced`.
+
+**Re-read for the same error.** `E-HAT-4.2-7` and `E-HAT-4.2-30` carry no claim of that shape: the only
+dimension statement in `-7` is that an infinite product of CW complexes carrying cells in unboundedly many
+dimensions is not a CW complex, which is about the space and not about its homotopy groups, and `-30` makes no
+dimension claim at all.
+
+**Two Chapter 1 cards read.** The remaining never-revised cards of this collection are in Chapters 1 and 2;
+these two are the start of that block, each read step by step against Hatcher, *Algebraic Topology* (2002).
+
+`E-HAT-1.1-10` correct. The construction is right: $G(u,v)=(a(u),b(v))$ on the square carries the
+bottom-then-right edge path to $\alpha\cdot\beta$ and the left-then-top one to $\beta\cdot\alpha$, both running
+from $(0,0)$ to $(1,1)$, and the straight-line homotopy $p_t=(1-t)p_0+tp_1$ stays in the convex square, so
+$H(s,t)=G(p_t(s))$ is a homotopy rel endpoints. The statement's reference to the isomorphism is **Proposition
+1.12**, which is the statement being demonstrated concretely, and the card says so.
+
+`E-HAT-1.1-13` correct, both directions. Forward: for a path $\gamma$ in $X$ between points of $A$, choose
+$a$ and $b$ in $A$ and set $\ell=a\cdot\gamma\cdot b$; surjectivity of $i_*$ gives a loop $c$ in $A$ with
+$[c]=[\ell]$, and concatenating the homotopy with $\bar a$ and $\bar b$ and cancelling reduces $\gamma$ to
+$\bar a\cdot c\cdot\bar b$, a path in $A$. Converse: a loop at $x_0$ has both endpoints in $A$, so the
+hypothesis homotopes it rel endpoints to a loop in $A$, which is surjectivity. The cancellation step is the
+only place that needs care, and the card states it.
+
+**Checks.** `qualc.authoring check` on `E-HAT-4.2-13` after the correction; the two Chapter 1 cards are
+unchanged, so none was needed on them. No whole-corpus gate this turn.
+
+**Open in this lane.** Chapters 1 and 2 of `SRC-TEXT-HAT02` hold the 129 cards whose newest audit event predates
+2026-11-18; two of them are read above and the rest are not. §4.2 is complete, and §4.3 remains hlg7's lane.
