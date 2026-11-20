@@ -70,6 +70,24 @@ audit:
     that the set does not: the pair $(M_{\widetilde f},\widetilde X)$ and the relative
     Hurewicz step in degree $n+1$. Mathematics unchanged and re-read; the exercise is on
     printed p. 390.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.2 Exercise 13, Proposition 4.1,
+    Theorem 4.37, Theorem 4.5 and Corollary 2.34. Two repairs. (1) Step `conclusion` deduced the
+    homotopy equivalence from "Exercise 12 of §4.2", which is a different exercise and is not proved on
+    this card, so the proof did not close on its own. It now closes directly: f is an isomorphism on
+    pi_1 by hypothesis, on pi_i for 2 <= i <= n through the identification of the homotopy groups of a
+    space with those of its universal cover, and on pi_i for i > n because both complexes are
+    n-dimensional and those groups vanish; Whitehead's theorem then gives the homotopy equivalence.
+    (2) Step `n-connected` said the pair is "(n-1)-connected" while giving the vanishing for i <= n,
+    which is n-connectedness; the wording now matches the claim, and the step relying on it in the
+    Hurewicz argument says which degrees follow from the vanishing of pi and which from the isomorphism
+    form. The remaining steps are correct as written: the lift to universal covers exists because f_*
+    on pi_1 is an isomorphism, the maps on pi_i for 2 <= i <= n agree under the covers, the pair
+    sequence makes the relative groups vanish in degrees at most n, and the boundary map in
+    pi_{n+1} is killed by the vanishing of H_{n+1} of the n-dimensional cover.
 ---
 
 ::: {.problem}
@@ -104,7 +122,7 @@ For $n=0$ a connected $0$-dimensional CW complex is a point, so $f$ is a homeomo
 :::
 
 ::: {.pf-step #n-connected}
-For $n\ge2$ the pair $(M_{\widetilde f},\widetilde X)$, where $M_{\widetilde f}$ is the mapping cylinder of $\widetilde f$, is $(n-1)$-connected: $\pi_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
+For $n\ge2$ the pair $(M_{\widetilde f},\widetilde X)$, where $M_{\widetilde f}$ is the mapping cylinder of $\widetilde f$, is $n$-connected: $\pi_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
 
 ::: pf-proof
 The pair is path connected. Its homotopy exact sequence (§4.1) reads
@@ -121,7 +139,7 @@ for $i\ge2$, using $M_{\widetilde f}\simeq\widetilde Y$. For $2\le i\le n$ both 
 $H_i(M_{\widetilde f},\widetilde X;\ZZ)=0$ for $i\le n$.
 
 ::: pf-proof
-Theorem 4.37 (relative Hurewicz, Theorem 4.37) for the $(n-1)$-connected pair of step [](#n-connected){.pf-ref} gives $H_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
+The relative Hurewicz theorem (Theorem 4.37) applies to the $n$-connected pair of step [](#n-connected){.pf-ref}, whose spaces are simply connected, so the $\pi_1$-action is trivial; it gives $H_i(M_{\widetilde f},\widetilde X)=0$ for $i<n$, and $H_n(M_{\widetilde f},\widetilde X)=0$ as well because $\pi_n(M_{\widetilde f},\widetilde X)=0$ and the Hurewicz map is an isomorphism in degree $n$. So $H_i(M_{\widetilde f},\widetilde X)=0$ for $i\le n$.
 
 :::
 
@@ -163,7 +181,7 @@ For $i\le n$ the outer groups vanish by step [](#hurewicz-low){.pf-ref} and step
 $f$ is a homotopy equivalence.
 
 ::: pf-proof
-$f_*:\pi_1(X)\to\pi_1(Y)$ is an isomorphism by hypothesis and $\widetilde f$ is a homology isomorphism by step [](#homology-iso){.pf-ref}; Exercise 12 of §4.2, then gives that $f$ is a homotopy equivalence. (Equivalently, $\widetilde f$ is a homotopy equivalence by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, and a map with that lift and an isomorphism on $\pi_1$ is a homotopy equivalence.)
+$f$ induces an isomorphism on every homotopy group, and no further input is needed: on $\pi_1$ by hypothesis, and on $\pi_i$ for $i\ge2$ because the covering projections identify $\pi_i(\widetilde X)=\pi_i(X)$ and $\pi_i(\widetilde Y)=\pi_i(Y)$ with the maps conjugated, while $\widetilde f_*$ is an isomorphism on $\pi_i$ for $2\le i\le n$ by step [](#lift){.pf-ref} and $\pi_i(X)=\pi_i(Y)=0$ for $i>n$ because both are $n$-dimensional CW complexes. So $f$ is a weak homotopy equivalence between CW complexes, and Whitehead's theorem (Theorem 4.5) makes it a homotopy equivalence. The same conclusion follows from step [](#homology-iso){.pf-ref} by Whitehead's theorem applied to the simply connected complexes $\widetilde X,\widetilde Y$, since a homology isomorphism between simply connected CW complexes is a homotopy equivalence.
 
 :::
 
