@@ -132,6 +132,11 @@ The first Stiefel--Whitney class lies in the zero group from step [](#s1-4){.pf-
 Hence $\xi$ is orientable.
 
 
+Hence $\xi$ is orientable, and $\xi$ was arbitrary, so
+$$
+\boxed{\text{every real vector bundle over a simply connected base is orientable}.}
+$$
+
 ::: pf-proof
 
 Apply the criterion in step [](#s1-1){.pf-ref} to the vanishing established in step [](#s1-5){.pf-ref}.
@@ -157,25 +162,9 @@ Since $\pi_1(X)=0$, this character is trivial. Thus an orientation chosen in one
 
 :::
 
-::: {.pf-step #s1-8}
-
-Therefore
-$$
-\boxed{\text{every real vector bundle over a simply connected base is orientable}.}
-$$
-
-
-::: pf-proof
-
-This is step [](#s1-6){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 
