@@ -74,7 +74,7 @@ Since $\abs f = \abs x$ everywhere, $f$ is not Lebesgue integrable on $\RR$.
 
 :::
 
-::: {.proposition title="Non-integrability of $x\qty{\chi_\QQ - \chi_{\RR\setminus\QQ}}$ on $[0,1]$"}
+::: {.proposition title="The Darboux integrals of $x\qty{\chi_\QQ - \chi_{\RR\setminus\QQ}}$ on $[0,1]$"}
 For $f(x) \coloneqq x\qty{\chi_\QQ(x) - \chi_{\RR\setminus\QQ}(x)}$, the upper Darboux integral of $f$ on $[0,1]$ is $1/2$ and the lower Darboux integral is $-1/2$.
 
 :::
