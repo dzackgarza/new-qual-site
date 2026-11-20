@@ -40,7 +40,3 @@ Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$.
 Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$, and let $r\colon X\to A$ be a retraction.
 Then $r_*\circ\iota_* = \id$ on $\pi_1(A, a_0)$ for every $a_0\in A$ and on $H_n(A)$ for every $n$, so $\iota_*\colon \pi_1(A, a_0)\to\pi_1(X, a_0)$ and $\iota_*\colon H_n(A)\to H_n(X)$ are injective [@Hat02, Proposition 1.17; §2.2].
 :::
-
-::: {.example}
-For every point $x_0$ of a topological space $X$, the subspace $\theset{x_0}$ is a retract of $X$, via the constant map $X\to\theset{x_0}$ [@Hat02, Chapter 0].
-:::
