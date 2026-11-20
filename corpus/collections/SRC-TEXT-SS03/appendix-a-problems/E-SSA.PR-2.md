@@ -80,7 +80,7 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 ::: {.solution}
 No published solution set covers the end-of-chapter Problems of Stein--Shakarchi: the set of R. C. Rhoades, *Solutions/Hints to the Exercises from Complex Analysis by Stein and Shakarchi* (2006), covers a selection of the chapter Exercises and not the Problems, and no other set was located. The argument is the card's own.
 
-We write $\log$ for the principal branch, $s^{\alpha}$ for the power defined by it (so that $s^{1/2}$ and $s^{-j}$ are the principal powers), $\delta>0$ and $S_\delta=\{s:\abs{\arg s}\le\pi-\delta\}$ as in the text (printed p. 326), and $F$ for the normalized gamma function
+We write $\log$ for the principal branch, $s^{\alpha}$ for the power defined by it (so that $s^{1/2}$ and $s^{-j}$ are the principal powers), $\delta>0$ and $S_\delta=\{s:\abs{\arg s}\le\pi-\delta\}$ as in Appendix A, §5, and $F$ for the normalized gamma function
 $$
 F(s)=\sqrt{\frac{s}{2\pi}}\,\Gamma(s)\,e^{-s\log s+s},
 $$
@@ -323,7 +323,7 @@ $$
 \Gamma(s)\Gamma(-s)=\frac{\pi}{-s\sin\pi s},
 \tag{$\ast$}
 $$
-which is identity (14) of the text, printed p. 327. Assume first that $\Im(s)>0$, so that $\theta=\arg s\in(0,\pi)$; then $-s$ has argument $\theta-\pi\in(-\pi,0)$, and therefore
+which is identity (14) of Appendix A, §5. Assume first that $\Im(s)>0$, so that $\theta=\arg s\in(0,\pi)$; then $-s$ has argument $\theta-\pi\in(-\pi,0)$, and therefore
 $$
 \log(-s)=\log s-i\pi,\qquad (-s)^{1/2}=s^{1/2}e^{-i\pi/2}=-i\,s^{1/2}.
 $$
