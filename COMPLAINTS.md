@@ -10625,3 +10625,12 @@ The wiki proposition states the four summation formulas for the kernels $\pi\cot
 **Also repaired, same day, in the same neighbourhood.** The residue-sum identity that `residues-and-contours/computing-residues` stated in page prose with a justification is now a corollary on `T-WFXQP`, the card that already owns the residue at infinity; the page transcludes that card once and states nothing further. The card version is the same identity at a circle enclosing every singularity, with the residue theorem and the residue at infinity as its two terms.
 
 **Uncertainty.** The scanned-not-read claim for the ten and seven hits: each was opened far enough to see it is not a statement of the result, not read whole. No textbook statement of the symmetric Rouché or of the general fractional residue is retained; the two cards stand on a qual-review sheet.
+
+
+## 2026-11-20 (#176): a defect I claimed on the workshop page is withdrawn — vanishing at infinity already gives the limit
+
+**Withdrawn.** Commit `0fcaeb930d`, which removed a sentence from `wiki/complex-analysis/workshops/complex-week-2-cauchy`, says the sentence was a false conditional. It was not. The sentence read: if $f(z)\to0$ as $\abs z\to\infty$ then $\Res_\infty f=-\lim zf(z)$. The card `T-WFXQP` is the reason it holds: vanishing at infinity removes the nonnegative powers from the Laurent expansion on $\abs z>R$, so $zf(z)=a_{-1}+O(1/z)$ and the limit exists and equals $a_{-1}$, whose negative is the residue at infinity. The hypothesis I substituted for it in the same commit — $f(z)=a_{-1}z^{-1}+O(z^{-2})$ — is stronger than the truth and was added for a reason that does not hold.
+
+**What stands.** The page sentence was a primary result stated in page prose, which is the def-use defect the issue lists for that page, and the card `T-WFXQP` now carries the statement with its correct hypothesis and the reason the limit exists. The page transcludes the card and states nothing further, so the page repair stands and only my description of it is corrected.
+
+**Uncertainty.** I did not check the other sentences the same commit left on that page against their sources; only the residue-at-infinity sentence was under review here.
