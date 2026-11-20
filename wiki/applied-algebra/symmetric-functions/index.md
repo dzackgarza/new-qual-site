@@ -33,18 +33,13 @@ p_k - e_1p_{k-1} + \cdots + (-1)^{k-1}e_{k-1}p_1 + (-1)^k k e_k = 0,
 $$
 which is the expansion of $\sum_i \prod_{j\neq i}(t - x_j)$ evaluated at $t = x_i$ and summed over $i$; over a field in which $k$ is invertible, it expresses $e_k$ in terms of $p_1,\ldots,p_k$, so the two bases determine one another.
 
-By the Jacobi--Trudi identity, $s_\lambda = \det(h_{\lambda_i - i + j})_{1\leq i,j\leq \ell(\lambda)}$: the determinant is the signed sum over the ways of choosing, for each row $i$, one entry $h_{\lambda_i - i + j_i}$ with the $j_i$ distinct, and the choices that do not weakly increase along the rows cancel in pairs, leaving the semistandard tableaux of shape $\lambda$ with coefficient $1$.
+By [[T-JTRUDI|the Jacobi--Trudi identity]], $s_\lambda$ is the determinant $\det(h_{\lambda_i - i + j})$ of complete homogeneous symmetric functions, of size $\ell(\lambda)$ and independent of the size of the determinant once that exceeds $\ell(\lambda)$.
 
 The coefficients of $s_\mu s_\nu = \sum_\lambda c^\lambda_{\mu\nu}s_\lambda$ are the Littlewood--Richardson coefficients, which [[P-APASP08I|one card computes for $s_{2,2}s_{2,1}$ by the Littlewood--Richardson rule]]: $c^\lambda_{\mu\nu}$ counts the semistandard skew tableaux of shape $\lambda/\mu$ and content $\nu$ whose word is a lattice word, read right to left along the rows from the top. These coefficients are the multiplicities in the tensor products of polynomial representations of $\GL_n$ and in the inductions from $S_k\times S_{n-k}$ to $S_n$.
 
 ## The characteristic map
 
-The Frobenius characteristic map $\operatorname{ch}$ takes a class function $\chi$ on $S_n$ to the symmetric function
-$$
-\operatorname{ch}(\chi) \coloneqq \sum_{\lambda\vdash n} \frac{\chi(C_\lambda)}{z_\lambda}p_\lambda,
-\qquad z_\lambda \coloneqq \prod_i i^{m_i}m_i!,
-$$
-with $m_i$ the number of parts of $\lambda$ equal to $i$; it is an isometry from the class functions with the inner product $\frac1{n!}\sum_g\chi(g)\overline{\psi(g)}$ to $\Lambda^n$ with the Hall inner product, in which the Schur functions are orthonormal, and it sends the irreducible character $\chi^\lambda$ to $s_\lambda$.
+The [[T-FROBCH|Frobenius characteristic map]] $\operatorname{ch}$ takes a class function on $S_n$ to the symmetric function of degree $n$; it is an isometry from the class functions with the inner product $\frac1{n!}\sum_g\chi(g)\overline{\psi(g)}$ to $\Lambda^n$ with the Hall inner product, in which the Schur functions are orthonormal, and it sends the irreducible character $\chi^\lambda$ to $s_\lambda$.
 
 For partitions $\mu$ of $k$ and $\nu$ of $n-k$, it sends $\Indcat_{S_k\times S_{n-k}}^{S_n}(\chi^\mu\times\chi^\nu)$ to $s_\mu s_\nu$, so the multiplicity of $\chi^\lambda$ in that induced character is the Littlewood--Richardson coefficient $c^\lambda_{\mu\nu}$.
 
@@ -53,4 +48,4 @@ $$
 p_\rho = \sum_\lambda \chi^\lambda(\rho)\, s_\lambda,
 $$
 where $\chi^\lambda(\rho)$ is the value of $\chi^\lambda$ on the permutations of cycle type $\rho$; the Murnaghan--Nakayama rule computes these values by removing border strips from $\lambda$, one for each part of $\rho$, with the sign $(-1)^{\text{height}}$.
-For $\rho = (1^n)$ the coefficient $\chi^\lambda(1) = \dim\chi^\lambda$ of $s_\lambda$ in $p_1^n$ is the number of standard Young tableaux of shape $\lambda$, which the hook length formula evaluates as $n!/\prod_{c\in\lambda}h(c)$, the product running over the cells $c$ of $\lambda$ with $h(c)$ the number of cells weakly to the right and weakly below $c$.
+For $\rho = (1^n)$ the coefficient $\chi^\lambda(1) = \dim\chi^\lambda$ of $s_\lambda$ in $p_1^n$ is the number of standard Young tableaux of shape $\lambda$, which [[T-HOOK|the hook length formula]] evaluates as the quotient of $n!$ by the product of the hook lengths.
