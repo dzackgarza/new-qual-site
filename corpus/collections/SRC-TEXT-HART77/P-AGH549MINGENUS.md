@@ -1164,7 +1164,9 @@ be chosen to avoid any prescribed finite set of points of $X_2$, in particular
 the four points that step [](#contraction-pullback-preserves-invariants){.pf-ref} contracts to.
 
 ::: pf-proof
-Both classes are base-point-free, so the members through a prescribed point
+Both classes are base-point-free --- $M_{\mathrm{ev}}$ is the pullback of the
+very ample $\OO_Y(2,s-2)$, and $M_{\mathrm{odd}}=A+B$ is a sum of two
+base-point-free classes --- so the members through a prescribed point
 form a hyperplane of the linear system. The two systems have dimension at least
 two: $M_{\mathrm{ev}}=\psi^*\OO_Y(2,s-2)$ has $h^0=3(s-1)$ and
 $\dim\linearsystem{M_{\mathrm{ev}}}=3s-4\ge8$, while
