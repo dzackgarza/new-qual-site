@@ -342,6 +342,21 @@ audit:
     paper, and the card's own proof above does not use Lemma 12 and is unchanged
     by this. Not checked: no source outside those named in the earlier events was
     read, and the identification just mentioned was not written out in full.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Two repairs in this pass, both inside steps, neither changing a statement.
+    The closing sentence of center-not-generic-point cited itself as the source
+    of the dichotomy it states; it now states the dichotomy directly, the centre
+    being neither the generic point of X nor a point of dimension greater than
+    one, hence either the generic point of an irreducible curve or a closed
+    point. In element-eventually-regular the finite sequence of point blowups
+    was attributed to Exercise V.5.1, whose printed statement asks only for a
+    birational morphism making [f:1] a morphism; the step now says that the
+    printed hint constructs that morphism as embedded resolution of the union of
+    the curves of zeros and poles followed by blowups wherever a zero curve
+    meets a pole curve, which is the sequence used.
 ---
 
 ::: {.problem}
@@ -407,8 +422,8 @@ R=K,
 $$
 contrary to the nontriviality assumption.
 
-Because $\dim X=2$, step [](#center-not-generic-point){.pf-ref} leaves two possibilities: $x_0$ is the
-generic point of an irreducible curve, or $x_0$ is a closed point.
+Because $\dim X=2$, the centre $x_0$, which is neither the generic point of $X$ nor a point of
+dimension greater than one, is the generic point of an irreducible curve or a closed point.
 :::
 
 :::
@@ -591,8 +606,11 @@ $$
 \qquad
 x\longmapsto[f(x):1].
 $$
-Exercise V.5.1 [[P-AGH551RESOLVERATFN]] gives a finite sequence of point
-blowups
+Exercise V.5.1 [[P-AGH551RESOLVERATFN]] gives a birational morphism
+$Y_m\to X$ making $[f:1]$ a morphism, and its hint constructs that morphism as
+a finite sequence of point blowups, embedded resolution of the union of the
+curves of zeros and poles followed by blowups wherever a curve of zeros still
+meets a curve of poles; that sequence is what is used here:
 $$
 Y_m
 \xrightarrow{g_m}
