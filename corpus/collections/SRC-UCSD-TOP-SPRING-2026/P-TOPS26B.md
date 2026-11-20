@@ -11,6 +11,16 @@ classification:
   - Cell Complexes
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Refereed, no defect found. A finite presentation gives a wedge of r circles with one 2-cell
+    attached along each relator, and van Kampen computes the fundamental group of that 2-complex as the
+    free group on the generators modulo the normal closure of the relators, which is G. Checked that
+    the complex is finite because both sets are finite, two dimensional by construction, and that the
+    attaching maps are loops in the 1-skeleton, which is what van Kampen's hypothesis needs.
 ---
 
 ::: {.problem}
