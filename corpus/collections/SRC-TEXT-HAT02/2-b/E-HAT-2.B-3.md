@@ -161,6 +161,23 @@ audit:
     isomorphism; and the case $k=n$ through Invariance of Domain. Not claimed: a published solution
     of Exercise 2.B.3, none having been located.
 
+- event: solution-written
+  by: claude
+  date: 2026-11-19
+  note: >-
+    Issue #170, the assembly. The closing step, which concludes the exercise for all $0\le k\le n$,
+    was proved by naming the three case steps and nothing else — a back-reference, which STYLE-08
+    forbids. Its statement is unchanged; its proof now assembles the cases substantively: the range
+    of $k$ is exactly one of $k=0$, $0<k<n$, $k=n$; the first is the radial retraction of
+    $D^n\setminus\{p\}$ onto $S^{n-1}$ with its straight-line homotopy, the second the cover of $W$
+    plus reduced Mayer--Vietoris plus the two Alexander-duality values in degree $d=n-k-1$ plus the
+    cokernel argument forcing $i_*$ to be a unit, together with the passage from reduced to ordinary
+    homology because both spaces are nonempty there, and the third Invariance of Domain forcing
+    $D=D^n$. Reading the assembly also checked that no hypothesis is used outside its range: the
+    nonemptiness needed for the reduced-to-ordinary passage is exactly the hypothesis $0<k<n$ (for
+    $k=n$ both spaces are empty and both groups are trivial), and the duality computations are
+    applied only to the embedded spheres $S^{k-1}\subset S^{n-1}$ and $S^k\subset S^n$ that exist in
+    that same range. Not claimed: a published solution of the exercise, none located.
 ---
 
 ::: {.problem}
@@ -273,7 +290,7 @@ Here $(D,S)\subset(D^{n},S^{n-1})$ is a homeomorphic copy of the whole pair, so 
 For every $0\leq k\leq n$ the inclusion $S^{n-1}\setminus S\hookrightarrow D^{n}\setminus D$ induces an isomorphism on homology.
 
 ::: pf-proof
-The cases are steps [](#k0){.pf-ref} ($k=0$), [](#middledegree){.pf-ref} with [](#ordinary){.pf-ref} ($0<k<n$) and [](#kn){.pf-ref} ($k=n$), which exhaust the possible $k$.
+The pair $(D,S)$ is a copy of $(D^{k},S^{k-1})$ with $0\le k\le n$, so $k$ falls in exactly one of three ranges, and each is settled above: $k=0$ by the radial retraction of $D^{n}\setminus\{p\}$ onto $S^{n-1}$ and its straight-line homotopy; $0<k<n$ by the cover of $W$, the reduced Mayer--Vietoris sequence it gives, the two Alexander-duality values $\ZZ$ in degree $d=n-k-1$ and nowhere else, and the cokernel argument forcing $i_{*}$ to be multiplication by a unit, with the passage from reduced to ordinary homology because both spaces are then nonempty; and $k=n$ by Invariance of Domain, which forces $D=D^{n}$ and $B=\varnothing$. In each range the inclusion induces an isomorphism, and no hypothesis is used outside its range.
 :::
 
 :::
