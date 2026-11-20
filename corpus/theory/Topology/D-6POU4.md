@@ -20,7 +20,7 @@ The \dfn{intersection form} of $M$ [@Hat02] is the bilinear form
 $$
 I\colon H^k(M;\ZZ)\cross H^k(M;\ZZ) \to \ZZ, \qquad I(a, b)\coloneqq \inner{a\smile b}{[M]}
 ,$$
-where $\smile$ is the [[D-B2JER|cup product]] and $\inner{\wait}{\wait}$ is the [[D-VP4LC|Kronecker pairing]].
+where $\smile$ is the [[D-B2JER|cup product]] and $\inner{\cdot}{\cdot}$ is the [[D-VP4LC|Kronecker pairing]].
 :::
 
 ::: {.remark}
