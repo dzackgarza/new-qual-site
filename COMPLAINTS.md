@@ -11313,3 +11313,13 @@ where the card changes. just commit-card is the commit route, and it carried c33
 **Not closed.** The transcription item of the same verdict: no retained published solution set proves V.2.15(c), and the bounded search stands as recorded on the card's audit event of 2026-11-20; the printed "nonsingular" remains false with the argument of step `s9`.
 
 **Uncertainty.** The printed book, Xie and Miyanishi were not read in print; only the retained text layers, and Miyanishi's *Open Algebraic Surfaces* is not retained at all.
+
+## 2026-11-20, #177: the measurable-union criterion cited Folland Exercise 2.21, which is an $L^1$ statement
+
+**`wiki/real-analysis/measure/is-it-measurable.md`, the countable-union clause.** The page cited `[@Fol99, Exercise 2.21]` for "if $X=\bigcup_{k\geq1}E_k$ with $E_k$ measurable and $h\restrict_{E_k}$ measurable for every $k$, then $h$ is measurable". Folland Exercise 2.21 is the statement that for $f_n,f\in L^1$ with $f_n\to f$ a.e., $\int\abs{f_n-f}\to0$ iff $\int\abs{f_n}\to\int\abs f$. The two-piece union criterion is Folland Exercise 2.5, and the countable case is the same union computation.
+
+**Evidence.** `assets/attachments/extracted/Folland_Clipped_Questions.md`, chapter-2 list opened by "In Exercises 1–7, $(X,\mathfrak M)$ is a measurable space": item 5 is the union criterion and item 21 the $L^1$ statement. The statement-preserving text used for the other Folland numbers (Greyson Wesley, *Notes Following Folland's Real Analysis*, 30 April 2024) numbers its own Exercise 21 and attaches Folland's number 2.21 at "Exercise 2.47: Folland Exercise 2.21", which is the $L^1$ statement.
+
+**Repair.** `e0caf3f679` cites Exercise 2.5 for the two-piece argument and leaves the countable step as the displayed union of preimages.
+
+**Uncertainty.** Folland's printed book is not retained; the numbers rest on the repository's OCR of the exercise pages and the statement-preserving text, which agree.
