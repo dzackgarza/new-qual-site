@@ -57,6 +57,22 @@ audit:
     NOT checked in this pass: the argument, which this read does not touch and about which no
     claim is made.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read the argument against its two printed inputs on 2026-11-20. Exercise 4 is on printed p. 310;
+    the inputs are Hatcher's Example 3E.7 in Section 3.D, printed p. 301, quoted on the card.
+    Checked: the mod 2 ring is F_2[b1,b3]/(b1^8, b3^2) of dimension 16 with top class b1^7 b3 in
+    degree 10, which is dim SO(5); the indecomposables of a tensor product split as QA + QB over a
+    field, which is what puts b1 in one factor and forces the degree 3 class b3 into the other; the
+    degree 3 classes and their squares are as listed, so gamma^2 = 0 forces gamma = b3; and
+    delta(b1) = x, delta(b3) = x^2 with 2x = 0 and x^2 != 0 are Hatcher's Bockstein computation.
+    With x in the image from one factor and x^2 in the image from the other, the tensor
+    decomposition makes x^2 = a^2 (x) 1 and also 1 (x) b, which cannot hold with both nonzero; that
+    is the contradiction the exercise asks for. I did not re-derive the displayed ring of Example
+    3E.7 from the spectral sequence, and say so here.
+
 ---
 
 ::: {.problem}
