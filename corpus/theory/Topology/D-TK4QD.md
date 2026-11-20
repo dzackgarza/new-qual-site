@@ -20,7 +20,7 @@ The \dfn{intersection product} is the bilinear map
 $$
 H_i(M;\ZZ)\times H_j(M;\ZZ)\to H_{i+j-n}(M;\ZZ),\qquad \alpha\cdot\beta\coloneqq[M]\frown\qty{\inverseof{D}(\alpha)\smile \inverseof{D}(\beta)},
 $$
-using the [[D-B2JER|cup product]] and the [[D-RQS4J|cap product]]. For $j=n-i$, composing with $H_0(M;\ZZ)\cong\ZZ$ gives the \dfn{intersection pairing} $H_i(M;\ZZ)\times H_{n-i}(M;\ZZ)\to\ZZ$.
+using the [[D-B2JER|cup product]] and the [[D-RQS4J|cap product]]. For $j=n-i$, composing with $H_0(M;\ZZ)\cong\ZZ$ gives the \dfn{intersection pairing} $H_i(M;\ZZ)\times H_{n-i}(M;\ZZ)\to\ZZ$ [@Hat02, §3.3].
 :::
 
 ::: {.proposition}
@@ -29,7 +29,7 @@ $$
 H_i(M;\ZZ)/\mathrm{torsion}\times H_{n-i}(M;\ZZ)/\mathrm{torsion}\to\ZZ
 $$
 is nondegenerate: its adjoint is an isomorphism onto $\Hom(H_{n-i}(M;\ZZ)/\mathrm{torsion},\ZZ)$.
-This is the cup product pairing of [@Hat02] transported by $D$.
+This is the cup product pairing of [@Hat02, Proposition 3.38] transported by $D$.
 :::
 
 ::: {.remark}
