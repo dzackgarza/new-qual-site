@@ -119,6 +119,20 @@ audit:
     the exercise's reference to it. Citation by number: §44 Exercise 4, Theorems 20.5, 23.3, 23.5,
     23.6, 24.1, 26.2, 26.3, 26.5, 27.1, 34.1 and 37.3, and §25 Exercise 6.
 
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #169 second read, on the verification member's report of this card. Five one-line
+    repairs, none affecting a conclusion. The base of $I$ is not the family of open intervals but
+    the sets $I\cap(c,d)$, the rays included: for the quotient $I\to S^1$ the fibre $\{0,1\}$ over
+    the image of the endpoints lies in no open interval of $I$ contained in the preimage of a
+    neighbourhood of that point. The second countability sentence inverted the exercise: what is
+    used is that the image of a second countable space under a perfect map is second countable.
+    Perfect maps are defined in §31 Exercise 7, not in §46. Theorem 20.5 metrizes
+    $\RR^\omega$ in the uniform metric, not $\RR^\omega$ as a product, so $I^\omega$ is metrizable
+    as a subspace of it. And $X_F$ is homeomorphic to, not equal to, a finite product of intervals.
+
 ---
 
 ::: {.exercise}
@@ -150,7 +164,7 @@ $I$ is compact (Theorem 27.1), and a continuous image of a compact space is comp
 (a) $f$ is a closed map and each of its fibres is compact.
 
 ::: pf-proof
-A closed subset $F$ of $I$ is compact, being a closed subset of a compact space (Theorem 26.2); its image $f(F)$ is compact (Theorem 26.5) and therefore closed in the Hausdorff space $X$ (Theorem 26.3). A fibre $f^{-1}(x)$ is closed in $I$ because $\{x\}$ is closed in $X$ and $f$ is continuous, hence compact. So $f$ is a perfect map in the sense of §46.
+A closed subset $F$ of $I$ is compact, being a closed subset of a compact space (Theorem 26.2); its image $f(F)$ is compact (Theorem 26.5) and therefore closed in the Hausdorff space $X$ (Theorem 26.3). A fibre $f^{-1}(x)$ is closed in $I$ because $\{x\}$ is closed in $X$ and $f$ is continuous, hence compact. So $f$ is a perfect map in the sense of §31 Exercise 7.
 :::
 
 :::
@@ -164,7 +178,7 @@ A closed subset $F$ of $I$ is compact, being a closed subset of a compact space 
 For $x\in X$ and an open neighbourhood $U$ of $x$ there are finitely many connected open intervals $V_1,\ldots,V_m$ with $f^{-1}(x)\subseteq V_1\cup\cdots\cup V_m\subseteq f^{-1}(U)$.
 
 ::: pf-proof
-$f^{-1}(x)$ is compact by step [](#perfect){.pf-ref} and lies in the open set $f^{-1}(U)$, since $f(f^{-1}(x))=\{x\}\subseteq U$. The open intervals of $I$ form a base, so each point of $f^{-1}(x)$ lies in an open interval contained in $f^{-1}(U)$, and compactness extracts a finite subcover; each interval is connected.
+$f^{-1}(x)$ is compact by step [](#perfect){.pf-ref} and lies in the open set $f^{-1}(U)$, since $f(f^{-1}(x))=\{x\}\subseteq U$. The sets $I\cap(c,d)$, the rays $[0,b)$ and $(a,1]$ among them, form a base for $I$, so each point of $f^{-1}(x)$ lies in one of them contained in $f^{-1}(U)$, and compactness extracts a finite subcover; each is connected.
 :::
 
 :::
@@ -186,7 +200,7 @@ Each $f(V_i)$ is connected, being a continuous image of a connected set, and con
 (a) If there is a continuous surjection $f\colon I\to X$ and $X$ is Hausdorff, then $X$ is metrizable.
 
 ::: pf-proof
-$I$ is second countable, and a perfect map onto a second countable space has second countable image, which is [[E-Y4MFU]](d): $f$ is closed with compact fibres by step [](#perfect){.pf-ref}. A compact Hausdorff space is normal, hence regular, so the Urysohn metrization theorem (Theorem 34.1) applies to the second countable regular space $X$ and gives a metric inducing its topology. With steps [](#compact-connected){.pf-ref} and [](#weakly-locally-connected){.pf-ref}, this proves (a).
+$I$ is second countable, and the image of a second countable space under a perfect map is second countable, which is [[E-Y4MFU]](d): $f$ is closed with compact fibres by step [](#perfect){.pf-ref}. A compact Hausdorff space is normal, hence regular, so the Urysohn metrization theorem (Theorem 34.1) applies to the second countable regular space $X$ and gives a metric inducing its topology. With steps [](#compact-connected){.pf-ref} and [](#weakly-locally-connected){.pf-ref}, this proves (a).
 :::
 
 :::
@@ -200,7 +214,7 @@ $I$ is second countable, and a perfect map onto a second countable space has sec
 The Hilbert cube $I^\omega=\prod_{n\ge1}I$ is compact, connected, metrizable and weakly locally connected.
 
 ::: pf-proof
-Compactness is Tychonoff's theorem (Theorem 37.3). Metrizability is Theorem 20.5, a countable product of metrizable spaces being metrizable. For connectedness: fix $a\in I^\omega$; for each finite $F\subseteq\ZZ_+$ the set $X_F=\{x:x_i=a_i\text{ for }i\notin F\}$ is a finite product of intervals, hence connected (Theorem 23.6), and all the $X_F$ contain $a$, so their union $Y$ is connected (Theorem 23.3); $Y$ is dense in $I^\omega$ because a basic open set constrains only finitely many coordinates, and the closure of a connected set is connected, so $I^\omega$ is connected. For weak local connectedness: a basic neighbourhood of a point is $\prod_{i\le N}J_i\times\prod_{i>N}I$ with $J_i$ open intervals containing the coordinates, and this is a product of connected spaces, hence connected by the same union-of-$X_F$ argument; basic sets form a neighbourhood base, so every neighbourhood of a point contains a connected one.
+Compactness is Tychonoff's theorem (Theorem 37.3). Metrizability: $I^\omega$ is a subspace of $\RR^\omega$, which is metrizable by Theorem 20.5, and a subspace of a metrizable space is metrizable. For connectedness: fix $a\in I^\omega$; for each finite $F\subseteq\ZZ_+$ the set $X_F=\{x:x_i=a_i\text{ for }i\notin F\}$ is homeomorphic to a finite product of intervals, hence connected (Theorem 23.6), and all the $X_F$ contain $a$, so their union $Y$ is connected (Theorem 23.3); $Y$ is dense in $I^\omega$ because a basic open set constrains only finitely many coordinates, and the closure of a connected set is connected, so $I^\omega$ is connected. For weak local connectedness: a basic neighbourhood of a point is $\prod_{i\le N}J_i\times\prod_{i>N}I$ with $J_i$ open intervals containing the coordinates, and this is a product of connected spaces, hence connected by the same union-of-$X_F$ argument; basic sets form a neighbourhood base, so every neighbourhood of a point contains a connected one.
 :::
 
 :::
