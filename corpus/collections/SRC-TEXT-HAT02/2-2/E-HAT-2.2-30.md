@@ -69,7 +69,7 @@ $$
 \to\ker(1-f_*:H_{n-1}(X)\to H_{n-1}(X))
 \to0.
 $$
-In the cases below the kernel term is free, so each sequence splits as an abstract group. The homology of the spaces that occur is $H_0(S^2)=\ZZ$, $H_2(S^2)=\ZZ$, $H_1(S^2)=0$ by Corollary 2.14, and $H_1(T^2)=\ZZ^2$, $H_2(T^2)=\ZZ$ by Example 2.36 with $g=1$. For $S^2$ the induced map on $H_2$ is multiplication by $\deg f$ by the definition of degree on p. 134, and for the torus it is multiplication by $+1$ or $-1$ according as the homeomorphism preserves or reverses orientation, that integer being the degree (properties (a) and (e) of degree, p. 134).
+In the cases below the kernel term is free, so each sequence splits as an abstract group. The homology of the spaces that occur is $H_0(S^2)=\ZZ$, $H_2(S^2)=\ZZ$, $H_1(S^2)=0$ by Corollary 2.14, and $H_1(T^2)=\ZZ^2$, $H_2(T^2)=\ZZ$ by Example 2.36 with $g=1$. For $S^2$ the induced map on $H_2$ is multiplication by $\deg f$ by the definition of degree of §2.2, and for the torus it is multiplication by $+1$ or $-1$ according as the homeomorphism preserves or reverses orientation, that integer being the degree (properties (a) and (e) of degree, p. 134).
 
 ::: pf
 
