@@ -13,7 +13,7 @@ Past examinations with transcribed questions are linked from [[algebraic-geometr
 
 ## Harvard qualifying examination
 
-Source: the syllabus crop `Pasted image 20220517141232.png`.
+Source: [The Qualifying Exam Syllabus](https://www.math.harvard.edu/graduate/study-the-qualifying-exam/the-qualifying-exam-syllabus/), Harvard Mathematics Department.
 
 - Affine and projective varieties; regular functions and maps; cones and projections.
 
