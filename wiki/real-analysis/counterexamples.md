@@ -60,13 +60,13 @@ A fat Cantor set, obtained from $[0,1]$ by removing at stage $n\geq1$ an open mi
 
 ::: {.example title="Neither of $L^1(\RR)$ and $L^2(\RR)$ contains the other"}
 The function $x^{-1/2}\chi_{(0,1)}$ is in $L^1(\RR)$ and not in $L^2(\RR)$, and $x^{-1}\chi_{(1,\infty)}$ is in $L^2(\RR)$ and not in $L^1(\RR)$.
-On a space of finite measure, $L^q\subseteq L^p$ for $p<q$.
+On a space of finite measure, $L^q\subseteq L^p$ for $p<q$ ([[FT-GQRV2]]).
 
 :::
 
 ::: {.example title="The dual of $L^\infty$ is not $L^1$"}
 The map $L^1([0,1])\to (L^\infty([0,1]))^*$, $g\mapsto\qty{f\mapsto\int fg}$, is not surjective: a Hahn--Banach extension $\varphi$ of $f\mapsto f(0)$ from $C([0,1])\subseteq L^\infty([0,1])$ is not of this form, since continuous $f_n$ with $0\leq f_n\leq 1$, $f_n(0)=1$, and $f_n\to0$ on $(0,1]$ give $\varphi(f_n)=1$ while $\int f_ng\to0$ by dominated convergence.
-For a $\sigma$-finite measure, $(L^1)^* \cong L^\infty$.
+For a $\sigma$-finite measure, $(L^1)^* \cong L^\infty$ ([[T-5BFVS]]).
 
 :::
 
@@ -81,7 +81,7 @@ $f_n(x)\coloneqq x^n$ on $[0,1]$ converges pointwise to $\chi_{\theset{1}}$.
 
 ::: {.example title="A uniform limit of differentiable functions need not be differentiable"}
 $f_n(x)\coloneqq\sqrt{x^2+1/n}$ converges uniformly on $\RR$ to $\abs x$, which is not differentiable at $0$.
-If $f_n$ are differentiable on $[a,b]$, $f_n'$ converges uniformly, and $f_n(x_0)$ converges for some $x_0\in[a,b]$, then $f_n$ converges uniformly to a differentiable $f$ with $f' = \lim f_n'$.
+The converse hypothesis that rules this out is on [[T-RA-WORKSHOP-D7-6-4|uniform convergence of derivatives]].
 
 :::
 
@@ -92,7 +92,7 @@ $f(x)\coloneqq x^2\sin(1/x)$ for $x\neq0$ and $f(0)\coloneqq0$ is differentiable
 
 ::: {.example title="A continuous function on a bounded set need not be uniformly continuous"}
 $f(x)\coloneqq 1/x$ is continuous on $(0,1)$ and not uniformly continuous: $\abs{f(1/n)-f(1/(n+1))}=1$ while $\abs{1/n-1/(n+1)}\to0$.
-A continuous function on a compact metric space is uniformly continuous.
+A continuous function on a compact metric space is uniformly continuous ([[T-O4UD3]]).
 
 :::
 
