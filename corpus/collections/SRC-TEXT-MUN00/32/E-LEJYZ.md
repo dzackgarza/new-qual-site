@@ -49,6 +49,26 @@ audit:
     printed text leaves undefined, so the finiteness of the bridge components near a point of A,
     which is the substance of (b), is not established there. The card keeps its proof of (b), and
     this exercise stays in the COMPLAINTS.md entry for part (b).
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read for #169 against Munkres, Topology (2000), Section 32 Exercise 8, printed p. 206, and
+    repaired in part (b). That part chose a convex neighbourhood $O$ of a point $x\in A$ disjoint
+    from $B$ and then wrote it $(p,q)$ with $x$ strictly between $p$ and $q$, which is not
+    available when $x$ is an end of $X$; $[0,1]$ is a linear continuum and has both ends. The step
+    now names the one-sided forms $[x,q)$ and $(p,x]$, records that $O\ne X$ because $B$ is
+    nonempty and disjoint from $O$, and draws the bound in those cases from the single half of $O$
+    that meets a chosen point. The count "at most two points of $C_0$ in $O$" is now argued
+    instead of asserted: of three chosen points the component of the middle one contains the other
+    two. Re-read and unchanged: part (a), a component of $X-C$ being a connected subspace of a
+    linear continuum hence an interval, open because $X$ is locally connected, with its ends in
+    $C$; part (c), the least point $s$ of $B\cap[a,b]$, the exclusion of $(a,s)\subseteq A$ by
+    closedness of $A$, the type function on $(a,s)$ and the contradiction from a counted component
+    whose chosen point would lie in $V$; and the closing step, $U$ and $V$ open and disjoint with
+    $A\subseteq U$ and $B\subseteq V$, one-point sets being closed because the rays are open. Not
+    checked: the printed folio, the checkout holding only the extraction
+    `tmp/sources/munkres-2000-topology.md`, which records page ranges and not folios.
 ---
 
 ::: {.exercise}
@@ -90,7 +110,7 @@ We show that each $x\in X-C_0$ has a neighbourhood meeting $C_0$ in no point.
 
 If $x\notin A\cup B$, let $W$ be the component of $X-(A\cup B)$ containing $x$; it is open, and it contains at most the one chosen point $c_W$, so an interval about $x$ inside $W$ avoiding $c_W$ avoids $C_0$.
 
-Let $x\in A$. Since $B$ is closed and $x\notin B$, choose a convex neighbourhood $O$ of $x$ with $O\cap B=\varnothing$, written $(p,q)$ when $x$ has points of $O$ on both sides. Let $W=(u,v)$ be a component of $X-(A\cup B)$ whose chosen point $c_W$ lies in $O$; its ends lie in $A\cup B$, one in $A$ and one in $B$, and its $B$-end is not in $O$. If the $B$-end is $v>q$, then by convexity $(c_W,v)\subset W$, so $W$ contains every point of $O$ above $c_W$, and no second component whose chosen point lies above $c_W$ in $O$ can exist. If the $B$-end is $u<p$, then symmetrically $(u,c_W)\subset W$ contains every point of $O$ below $c_W$, and no second component whose chosen point lies below $c_W$ in $O$ can exist. Hence $O$ contains at most two points of $C_0$, and a smaller convex neighbourhood of $x$ inside $O$ avoids both. The case $x\in B$ is symmetric, with the roles of $A$ and $B$ exchanged.
+Let $x\in A$. Since $B$ is closed and $x\notin B$, choose a convex neighbourhood $O$ of $x$ with $O\cap B=\varnothing$. Write $O=(p,q)$ when $x$ has points of $O$ on both sides; when $x$ is the least element of $X$ write $O=[x,q)$ and when $x$ is the greatest write $O=(p,x]$, the other end being absent. Since $B$ is nonempty and $O\cap B=\varnothing$, $O\ne X$, so in the one-sided cases $q$, respectively $p$, is a point of $X$ or a ray end. Let $W=(u,v)$ be a component of $X-(A\cup B)$ whose chosen point $c_W$ lies in $O$; its ends lie in $A\cup B$, one in $A$ and one in $B$, and its $B$-end is not in $O$. If the $B$-end is $v>q$, then by convexity $(c_W,v)\subset W$, so $W$ contains every point of $O$ above $c_W$, and no second component whose chosen point lies above $c_W$ in $O$ can exist. If the $B$-end is $u<p$, then symmetrically $(u,c_W)\subset W$ contains every point of $O$ below $c_W$, and no second component whose chosen point lies below $c_W$ in $O$ can exist. Hence $O$ contains at most two points of $C_0$: two chosen points $c<c'$ in $O$ are both on one side of the chosen point whose component is the one examined, so three of them would put the outer two on the same side of the middle one's component. In the one-sided cases only one side of $c_W$ meets $O$, so at most one point of $C_0$ lies there. Finally $x\notin C_0$, a chosen point lying in $X-(A\cup B)$; so a convex neighbourhood of $x$ inside $O$ small enough to miss those one or two points is a neighbourhood of $x$ disjoint from $C_0$. The case $x\in B$ is symmetric, with the roles of $A$ and $B$ exchanged.
 :::
 
 :::
