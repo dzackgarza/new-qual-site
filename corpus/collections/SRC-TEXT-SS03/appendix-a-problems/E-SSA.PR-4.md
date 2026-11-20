@@ -40,6 +40,14 @@ audit:
     F = 1/((w-1)^2(w+1)) the partial fractions give F_n = n/2 + 3/4 + (-1)^n/4, matching the two P_j. Not checked:
     the book's own text of the problem beyond the card's OCR transcription of PDF pages 359-363; the statement is
     unchanged here. No statement repair beyond the two corrections the card already documents.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Locator correction to the events above: Appendix A's Problems occupy PDF pp. 360--362 of the
+    retained scan, printed pp. 341--343, not PDF pp. 359--363; PDF p. 359 is printed p. 340 and
+    PDF p. 363 is the Appendix B title page. This item was not otherwise re-read in this pass, and it
+    carries no asterisk -- the print's Appendix A mark is before Problem 5 only.
 ---
 
 ::: {.exercise}
