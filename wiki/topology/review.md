@@ -53,5 +53,16 @@ order: 7
 
 ## The standard computations
 
+[[FF-2Q7RD]]
+
+[[PR-B6BB2]]
+
+[[PR-6PENU]]
+
+[[PR-LR35S]]
+
 ## Counterexamples
+
+[[topology/counterexamples|Counterexamples]] collects, for each statement that fails without a hypothesis, the space or map that witnesses the failure.
+The ones used most often in solutions are the line with two origins, for a compact subset that is not closed and for a quotient of a Hausdorff space that is not Hausdorff; the closed unit ball of an infinite-dimensional normed space, for a closed and bounded set that is not compact; the topologist's sine curve, for a connected space that is not path connected; and the Hawaiian earring, for a path-connected space with no universal cover.
 
