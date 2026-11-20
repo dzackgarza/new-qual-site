@@ -9,8 +9,8 @@ topics:
 
 # Homological algebra
 
-Let $\Gamma(X,\wait)$ be the global-sections functor on $\mods{\OO_X}$ for a ringed space $X$.
-Sheaf cohomology is its right derived functor, so computing $H^i(X,\mcf)$ means resolving $\mcf$, applying $\Gamma(X,\wait)$, and taking cohomology ([[D-DEFDERIV]]).
+Let $\Gamma(X,-)$ be the global-sections functor on $\mods{\OO_X}$ for a ringed space $X$.
+Sheaf cohomology is its right derived functor, so computing $H^i(X,\mcf)$ means resolving $\mcf$, applying $\Gamma(X,-)$, and taking cohomology ([[D-DEFDERIV]]).
 
 ## Abelian categories
 
@@ -28,7 +28,7 @@ In $\mods{A}$ the cokernel of $f\colon M\to N$ is the quotient $N/\im f$ on unde
 [[D-DEFEXACT]]
 
 An additive functor carries a complex to a complex and a homotopy to a homotopy, which is the hypothesis under which $R^iF$ is defined ([[D-DEFCPLX]]).
-$\Gamma(X,\wait)$ is left exact and not exact: on $X=\CC\sm\theset{0}$ the exponential is an epimorphism of sheaves whose global sections are not all logarithms, and $H^1(X,\ZZ)$ measures the failure ([[FE-DNTT6]]).
+$\Gamma(X,-)$ is left exact and not exact: on $X=\CC\sm\theset{0}$ the exponential is an epimorphism of sheaves whose global sections are not all logarithms, and $H^1(X,\ZZ)$ measures the failure ([[FE-DNTT6]]).
 
 ## Complexes and homotopy
 
@@ -64,4 +64,4 @@ The two definitions of $\Ext$ agree, and the long exact sequence of a short exac
 
 [[D-DEFTOR]]
 
-$\Ext^1_A(M,N)$ is the group of extensions of $M$ by $N$, and $\Tor_1^A(M,N)$ measures the failure of $\wait\tensor_A N$ to be exact; over $\ZZ$ they are $\Ext^1_\ZZ(\ZZ/n,N)\cong N/nN$ and $\Tor_1^\ZZ(\ZZ/m,B)\cong\theset{b\in B:mb=0}$ ([[D-DEFEXT]], [[D-DEFTOR]]).
+$\Ext^1_A(M,N)$ is the group of extensions of $M$ by $N$, and $\Tor_1^A(M,N)$ measures the failure of $-\tensor_A N$ to be exact; over $\ZZ$ they are $\Ext^1_\ZZ(\ZZ/n,N)\cong N/nN$ and $\Tor_1^\ZZ(\ZZ/m,B)\cong\theset{b\in B:mb=0}$ ([[D-DEFEXT]], [[D-DEFTOR]]).
