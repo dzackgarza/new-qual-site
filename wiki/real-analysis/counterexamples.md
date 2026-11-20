@@ -18,8 +18,8 @@ On $\RR$ with Lebesgue measure, each of the following sequences converges pointw
 
 - $f_n \coloneqq \chi_{[n,n+1]}$, whose mass escapes to infinity.
 
-In each case $\sup_n f_n$ is not integrable, so no integrable function dominates the sequence, and the dominated convergence theorem does not apply.
-Each sequence also converges almost everywhere without converging in $L^1$.
+In each case $\sup_n f_n$ is not integrable, so no integrable function dominates the sequence, the dominated convergence theorem does not apply, and the inequality of Fatou's lemma is strict.
+Each sequence also converges almost everywhere without converging in $L^1$, and the second converges uniformly as well, so neither almost-everywhere convergence nor uniform convergence carries the integrals.
 
 :::
 

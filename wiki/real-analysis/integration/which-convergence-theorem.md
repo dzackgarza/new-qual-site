@@ -32,20 +32,11 @@ Bounded convergence is dominated convergence with $g\equiv M$, which is integrab
 
 3. On a finite measure space, a uniformly bounded sequence satisfies the hypotheses of [[T-TRW6N|bounded convergence]].
 
-4. Without a dominating function, [[T-LDJNS|Fatou's lemma]] gives only an inequality, and it is strict for each of $n\chi_{(0,1/n)}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
+4. Without a dominating function, [[T-LDJNS|Fatou's lemma]] gives only an inequality.
 
 ## Failure of the interchange
 
-::: {.example title="Sequences with $f_n\to0$ pointwise and $\int f_n = 1$"}
-- $f_n \coloneqq n\chi_{(0,1/n)}$ on $[0,1]$: the mass concentrates near $0$, and $\sup_n f_n\notin L^1$.
-
-- $f_n \coloneqq \frac1n \chi_{[0,n]}$ on $\RR$: $\abs{f_n}\leq1$, so bounded convergence fails on a space of infinite measure.
-
-- $f_n \coloneqq \chi_{[n, n+1]}$ on $\RR$: the mass moves to infinity.
-
-In each case no integrable $g$ dominates $(f_n)$, and $0 = \int\lim_n f_n<\lim_n\int f_n = 1$.
-
-:::
+Without an integrable dominating function the interchange can fail, and the inequality of Fatou's lemma can be strict; [[real-analysis/counterexamples#Convergence and integration|Counterexamples]] carries the three sequences that witness this.
 
 ## Other interchanges
 
