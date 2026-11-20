@@ -11,7 +11,7 @@ topics:
 
 # Fixed point theorems
 
-Brouwer's theorem, the Lefschetz fixed point theorem, the Borsuk--Ulam theorem, the ham sandwich theorem, and the hairy ball theorem.
+[[T-S2OLJ|Brouwer's theorem]], the [[T-BX4LD|Lefschetz fixed point theorem]], the [[T-WNOWY|Borsuk--Ulam theorem]], the [[T-HAMS1|ham sandwich theorem]], and the [[T-VQTR6|hairy ball theorem]].
 
 [[T-S2OLJ]]
 
@@ -38,6 +38,6 @@ For $n=1$, [[T-WNOWY|Borsuk--Ulam]] says that every continuous odd function $S^1
 [[T-VQTR6]]
 
 ::: {.example}
-Every odd-dimensional sphere $S^{2n+1}\subseteq\CC^{n+1}$ admits the nonvanishing tangent vector field $v(z)=iz$.
+Every odd-dimensional sphere $S^{2n+1}\subseteq\CC^{n+1}$ admits the nonvanishing tangent vector field $v(z)=iz$, the construction behind the [[T-VQTR6|hairy ball theorem]].
 
 :::
