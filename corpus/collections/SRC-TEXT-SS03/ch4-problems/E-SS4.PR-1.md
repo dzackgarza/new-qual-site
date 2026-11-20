@@ -66,10 +66,19 @@ audit:
     and no published solution of this Problem was located, so the sentence now says that and keeps
     the claim that the argument is the card's own application of the printed hint. The mathematics
     and the statement are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Asterisk status read from the book: Chapter 4 sets its asterisks before Problems 3 and 4 only,
+    so none stands before Problem 1. The remark records that. The locator by numbered statement is
+    Chapter 4, Problem 1; the page readings recorded in the earlier events are superseded by it, the
+    events themselves standing as written. Not checked in this pass: the wording of the statement
+    and the argument.
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 4 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 131; the statement below is its wording.
+This is Problem 1 of Chapter 4 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Suppose $\hat{f}(\xi) = O(e^{-a\abs{\xi}^p})$ as $\abs{\xi} \to \infty$, for some $p > 1$. Then $f$ is holomorphic for all $z$ and satisfies the growth condition
 $$
@@ -80,6 +89,10 @@ for some $A, C > 0$, where $1/p + 1/q = 1$.
 Note that on the one hand, when $p \to \infty$ then $q \to 1$, and this limiting case can be interpreted as part of Theorem 3.3. On the other hand, when $p \to 1$ then $q \to \infty$, and this limiting case in a sense brings us back to Theorem 2.1.
 
 [Hint: To prove the result, use the inequality $-\xi^p + \xi u \leq u^q$, which is valid when $\xi$ and $u$ are non-negative. To establish this inequality, examine separately the cases $\xi^p \geq \xi u$ and $\xi^p < \xi u$; note also that the functions $\xi = u^{q-1}$ and $u = \xi^{p-1}$ are inverses of each other because $(p - 1)(q - 1) = 1$.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 4, Problem 1).
 :::
 
 ::: {.remark}
