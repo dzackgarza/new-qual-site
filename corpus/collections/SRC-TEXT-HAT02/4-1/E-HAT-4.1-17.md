@@ -52,9 +52,9 @@ audit:
   by: claude
   date: 2026-11-20
   note: >-
-    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 17, printed p. 358,
-    Corollary 4.12 (printed p. 351, statement "A CW pair (X,A) is n connected if all the cells in
-    X - A have dimension greater than n"), and the CW approximation construction of pp. 352-353. Two
+    Read step by step against Hatcher, Algebraic Topology (2002), §4.1 Exercise 17,
+    Corollary 4.12 (statement "A CW pair (X,A) is n connected if all the cells in
+    X - A have dimension greater than n"), and the CW approximation construction of §4.1. Two
     repairs. (1) Step `model` asserted that no (i+1)-cells are needed at stage i <= m without saying
     why the kernel being killed is trivial; the step now runs the induction: a Z_i with no cells of
     dimension <= i has one 0-cell and trivial pi_i by cellular approximation, so the kernel is trivial
@@ -75,7 +75,7 @@ Show that if $X$ and $Y$ are CW complexes with $X$ $m$-connected and $Y$ $n$-con
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.1 Exercise 17. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 17, printed p. 358, and Corollary 4.12 was read in the retained text in the form used below.
+The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.1 Exercise 17. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.1 Exercise 17, and Corollary 4.12 was read in the retained text in the form used below.
 
 Say that a CW complex $Z$ is $k$-connected if $\pi_{i}(Z)=0$ for $0\leq i\leq k$, and that a CW pair $(Z,A)$ is $k$-connected if $\pi_{i}(Z,A)=0$ for $i\leq k$.
 
