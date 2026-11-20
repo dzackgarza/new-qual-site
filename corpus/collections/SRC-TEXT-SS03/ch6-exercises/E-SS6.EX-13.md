@@ -36,7 +36,7 @@ whenever $s$ is a positive number. Show that if the left-hand side is interprete
 
 ::: {.solution}
 
-The argument is the card's own: no copy of Stein and Shakarchi and no published solution set for this book is retained in `tmp/sources`, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 6, Exercise 13. Here $\gamma$ is Euler's constant and the Weierstrass product used is $1/\Gamma(s)=se^{\gamma s}\prod_{n\geq1}(1+s/n)e^{-s/n}$, which converges locally uniformly on $\CC$.
+The argument is the card's own: the book is retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, and no published solution set of this exercise is retained, so nothing below is transcribed. The statement is the exercise the collection index records as Stein and Shakarchi, *Complex Analysis* (2003), Ch. 6, Exercise 13. Here $\gamma$ is Euler's constant and the Weierstrass product used is $1/\Gamma(s)=se^{\gamma s}\prod_{n\geq1}(1+s/n)e^{-s/n}$, which converges locally uniformly on $\CC$.
 
 ::: pf
 
