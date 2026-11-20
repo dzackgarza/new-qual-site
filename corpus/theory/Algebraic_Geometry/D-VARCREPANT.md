@@ -22,7 +22,12 @@ prompts:
 
 ::: {.definition title="Crepant morphism"}
 Let $X$ and $Y$ be normal varieties whose canonical divisors are $\QQ$-Cartier.
-A proper birational morphism $f \colon Y \to X$ is \dfn{crepant} if $K_Y = f^* K_X$ as $\QQ$-divisor classes, that is, every $f$-exceptional prime divisor has discrepancy $0$.
+For a proper birational morphism $f \colon Y \to X$, write
+$$
+K_Y = f^* K_X + \sum_i a_i E_i
+$$
+over the $f$-exceptional prime divisors $E_i$; the numbers $a_i$ are the \dfn{discrepancies} of $f$.
+The morphism $f$ is \dfn{crepant} if $K_Y = f^* K_X$ as $\QQ$-divisor classes, that is, every $f$-exceptional prime divisor has discrepancy $0$.
 A \dfn{crepant resolution} is a crepant $f$ with $Y$ smooth.
 :::
 
