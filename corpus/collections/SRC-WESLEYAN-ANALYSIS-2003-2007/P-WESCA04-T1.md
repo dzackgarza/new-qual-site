@@ -31,6 +31,14 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -39,8 +47,7 @@ State the Casorati–Weierstrass theorem.
 
 ::: {.solution}
 The item is section 1.1 item 1 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (statement of the Casorati--Weierstrass theorem), on PDF p. 33 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 1.
+August 2, 2004 (statement of the Casorati--Weierstrass theorem).
 
 
 ::: pf

@@ -39,6 +39,14 @@ audit:
     sigma-algebra as well, and the solution now says so. The statement is otherwise
     unchanged.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -52,8 +60,7 @@ is a measure.
 
 ::: {.solution}
 The item is Part II item 1 of the Preliminary Exam in Analysis, Wesleyan University,
-August 4, 2003 (for a nonnegative $f$ the set function $A\mapsto\int_A f\,dm$ is a measure), on PDF p. 38 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 4, 2003 (for a nonnegative $f$ the set function $A\mapsto\int_A f\,dm$ is a measure).
 
 The printed item writes the Lebesgue measure space as $(\RR,\tau(\RR),m)$, with
 $\tau(\RR)$ generic notation for its $\sigma$-algebra. The argument below uses only

@@ -36,6 +36,14 @@ audit:
     constant 2m/r, which that hypothesis does not give: h of norm exactly r was needed.
     The bound is taken over the closed ball, which lies in the closed set E_m, and the
     scaling is written out. The constant 2m/r and the statement are unchanged.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -53,7 +61,7 @@ Let $B$ be a real vector space.
 ::: {.solution}
 The item is item 3 of the Real Analysis Preliminary Examination, 2005 (norms, the metric
 they induce, Banach spaces, and the uniform boundedness theorem with the idea of its
-proof), on PDF p. 32 of the retained scan assets/attachments/analysis_2003-2007.pdf.
+proof).
 
 ::: pf
 

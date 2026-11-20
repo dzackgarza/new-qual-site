@@ -41,6 +41,14 @@ audit:
     ends at a positive multiple of 2 pi lying between (2N-1) pi and (2N+1) pi, namely 2 pi N.
     The winding numbers 2 and 1 and the integral are unchanged.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -57,8 +65,7 @@ $$
 
 ::: {.solution}
 The item is section 1.3 item 3 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (the integral of $(z^2+1)/((z+1)(z+4))$ along the spiral $t e^{it}$ closed by the segment $[4\pi,0]$), on PDF p. 34 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 2, 2004 (the integral of $(z^2+1)/((z+1)(z+4))$ along the spiral $t e^{it}$ closed by the segment $[4\pi,0]$).
 
 
 Set

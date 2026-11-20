@@ -28,6 +28,14 @@ audit:
     Examination, 2006, item 2. The page had cited only the extraction; it now names the
     examination, its item and the page of the scan. The statement is unchanged.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -50,8 +58,7 @@ Let $N$ be a real vector space.
 :::
 
 ::: {.solution}
-The item is item 2 of the Real Analysis Preliminary Examination, 2006 (On normed spaces: definition of a norm, |x|^p, Banach spaces, Hahn-Banach, and the open-mapping pullback), on the first page
-of that paper, PDF p. 17 of the retained scan assets/attachments/analysis_2003-2007.pdf.
+The item is item 2 of the Real Analysis Preliminary Examination, 2006 (On normed spaces: definition of a norm, |x|^p, Banach spaces, Hahn-Banach, and the open-mapping pullback).
 
 
 ::: pf

@@ -33,6 +33,14 @@ audit:
     answered the question, which STYLE-08 forbids; it is dropped, and the step that
     carries the result is now the QED step. No argument or statement changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -47,8 +55,7 @@ Prove that $f$ is a polynomial of degree at most $n$.
 
 ::: {.solution}
 The item is Section 2 item 4 of the Complex Analysis Section of the Analysis Qualifier, Wesleyan
-University, Summer 2005 (entire f with |f(z)| <= M|z|^n is a polynomial of degree at most n), on PDF p. 29 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+University, Summer 2005 (entire f with |f(z)| <= M|z|^n is a polynomial of degree at most n).
 
 
 ::: pf

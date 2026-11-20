@@ -31,6 +31,14 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -44,8 +52,7 @@ Using the Maximum Principle, show that $f$ maps $D$ onto $D$.
 :::
 
 ::: {.solution}
-The item is Section 3 item 1 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the map $(z-a)/(1-\overline a z)$ carries the unit disk onto itself, by the maximum principle), on PDF p. 11 (printed p. 4 of the 2007 complex-analysis paper) of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+The item is Section 3 item 1 of the Complex Analysis section of the Analysis Qualifier, Wesleyan University, Summer 2007 (the map $(z-a)/(1-\overline a z)$ carries the unit disk onto itself, by the maximum principle).
 
 
 ::: pf

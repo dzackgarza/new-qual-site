@@ -30,6 +30,14 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the step that carries the
     result is now the QED step. No argument or statement changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -52,8 +60,7 @@ $$
 
 ::: {.solution}
 The item is Part II item 5 of the Preliminary Exam in Analysis, Wesleyan University,
-August 4, 2003 (the two iterated integrals of the indicator of the diagonal, Lebesgue measure in one variable and counting measure in the other, differ), on PDF p. 38 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 4, 2003 (the two iterated integrals of the indicator of the diagonal, Lebesgue measure in one variable and counting measure in the other, differ).
 
 
 Let

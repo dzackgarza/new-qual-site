@@ -41,6 +41,14 @@ audit:
     printed, and the solution records that its maximum-modulus step yields the stronger
     conclusion on the closure.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -51,8 +59,7 @@ If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniforml
 
 ::: {.solution}
 The item is section 1.3 item 5 of the Preliminary Examination in Analysis, Wesleyan University,
-August 2, 2004 (uniform convergence on the boundary of a bounded domain gives uniform convergence on the domain), on PDF p. 34 of the retained scan
-assets/attachments/analysis_2003-2007.pdf, printed page 2.
+August 2, 2004 (uniform convergence on the boundary of a bounded domain gives uniform convergence on the domain).
 The printed conclusion is uniform convergence on $D$; the maximum-modulus step below gives it on
 $\overline D$, which is the stronger statement, so the printed conclusion follows.
 

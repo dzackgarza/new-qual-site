@@ -33,6 +33,14 @@ audit:
     the question, which STYLE-08 forbids; it is dropped, and the last step that carries
     content is now the QED step. No argument or statement changes.
 
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Issue #184: the PDF-page locator in the card's text is removed; the item is cited by its
+    examination, section and item number only, which the retained scan prints as its heading.
+    The earlier events keep their text (QUAL-11). No statement or step changes.
+
 ---
 
 ::: {.problem}
@@ -41,8 +49,7 @@ Define the multiplicity of an analytic function $f$ at a point $z_0$ in the doma
 
 ::: {.solution}
 The item is Section 1 item 2 of the Complex Analysis Preliminary Examination of August 9, 2006
-(Define the multiplicity of an analytic function at a point), on the first page of that paper, PDF p. 15 of the retained scan
-assets/attachments/analysis_2003-2007.pdf.
+(Define the multiplicity of an analytic function at a point).
 
 
 Let
