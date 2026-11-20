@@ -83,6 +83,8 @@ $$
 \qty{1-e^{2\pi i\alpha}}\int_0^\infty x^\alpha f(x)\dx = 2\pi i\sum\Res\qty{z^\alpha f(z)},
 $$
 the sum over all poles of $f$.
+
+The two circles vanish by [[T-SFXI7|the ML estimate]] and the enclosed sum is that of [[T-HRPNO|the residue theorem]].
 :::
 
 ![The keyhole contour: the circle C_R of radius R, the two edges of the cut along the positive real axis from r to R, and the small circle C_r of radius r about 0.](/assets/figures/2021-12-14_17-19-31.png)
@@ -102,6 +104,8 @@ $$
 \zeta\int_0^\infty\log(\zeta x)g(\zeta x)\dx = \zeta\int_0^\infty\ln(x)g(x)\dx + i\theta\,\zeta\int_0^\infty g(x)\dx,
 $$
 so a contour made of $[0,\infty)$ and this ray gives a linear relation between $\int_0^\infty\ln(x)g(x)\dx$ and $\int_0^\infty g(x)\dx$.
+
+The relation is the residue sum of [[T-HRPNO|the residue theorem]] on the contour, the two limits displayed being what the edges and the small circle contribute.
 :::
 
 ![The indented semicircle: the segment from -R to R with a small half-circle C_r of radius r above 0, closed by the upper semicircle C_R.](/assets/figures/2021-12-14_17-20-48.png)
@@ -147,6 +151,8 @@ If the arc integral tends to $0$, the ray $z = \zeta x$, traversed toward $0$, c
 For $f(x) = 1/(1+x^n)$ and $\zeta = e^{2\pi i/n}$ this gives $\int_0^\infty {\dx\over 1+x^n} = {\pi/n\over\sin(\pi/n)}$.
 For a rational $f$ on the keyhole, the two edges of the cut are the case $\zeta = e^{2\pi i} = 1$ and their integrals cancel; inserting a factor $\log z$ breaks the cancellation, as in [the logarithm case](#a-branch-cut-a-logarithm).
 For $f$ even, $\int_0^\infty f = \frac12\int_\RR f$ and a contour for $\int_\RR f$ applies; for $f$ not even with $f(\zeta z) = f(z)$ for a root of unity $\zeta$, the sector with edge $\zeta[0,\infty)$ applies.
+
+The closure of the contour is the computation above, and the two theorems it uses are [[T-HRPNO|the residue theorem]] for the residues in the sector and [[T-SFXI7|the ML estimate]] for the vanishing of the arc.
 :::
 
 ::: {.example title="$\displaystyle\int_\RR {e^{ax}\over 1+e^x}\dx = {\pi\over\sin(\pi a)}$, $0<a<1$"}
@@ -155,11 +161,15 @@ Since $f(z+2\pi i) = e^{2\pi ia}f(z)$, the top edge, traversed from $R+2\pi i$ t
 On the vertical edges $\abs f\leq e^{aR}/(e^{R}-1)$ at $\Re z = R$ and $\abs f\leq e^{-aR}/(1-e^{-R})$ at $\Re z = -R$, so both vanish as $R\to\infty$ because $0<a<1$.
 The only enclosed pole is $z = i\pi$, where $1+e^z$ has a simple zero with derivative $e^{i\pi} = -1$, so the residue is $e^{i\pi a}/(-1) = -e^{i\pi a}$.
 Hence $(1-e^{2\pi ia})\int_\RR f = -2\pi i\,e^{i\pi a}$, and $1-e^{2\pi ia} = -2i\,e^{i\pi a}\sin(\pi a)$ gives $\pi/\sin(\pi a)$.
+
+The contour is closed by [[T-HRPNO|the residue theorem]] on the rectangle, the vertical edges vanish by the estimate displayed, and the residue at $i\pi$ is the simple-pole value of [[PR-L4Y5F]].
 :::
 
 ::: {.example title="A rectangle for a translation symmetry"}
 If $f(z+ib) = cf(z)$ for real $b$ and constant $c$, use the rectangle with vertices $\pm R$ and $\pm R+ib$.
 If the vertical edges contribute integrals tending to $0$, the top edge contributes $-c\int_\RR f$, so $(1-c)\int_\RR f$ is $2\pi i$ times the sum of the residues in the strip $0<\Im z<b$.
+
+The residues are those of [[T-HRPNO|the residue theorem]] and the vanishing of the vertical edges is [[T-SFXI7|the ML estimate]].
 :::
 
 ## Bounding denominators
@@ -170,4 +180,6 @@ $$
 \abs{z-w}\geq\abs{\abs z-\abs w} \implies {1\over\abs{z-w}}\leq{1\over\abs{\abs z-\abs w}},
 $$
 and the same bound holds for $\abs{z+w} = \abs{z-(-w)}$.
+
+This is the reverse triangle inequality of [@Ahl73, ch. 1, §1.5, Inequalities], applied to $\abs{z-w}$ and to $\abs{z+w}=\abs{z-(-w)}$.
 :::
