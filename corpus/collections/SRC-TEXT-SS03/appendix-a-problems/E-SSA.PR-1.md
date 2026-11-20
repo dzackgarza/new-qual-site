@@ -79,6 +79,20 @@ audit:
     statement meant is Appendix A, Proposition 1.2, whose equation (5) is the truncated integral
     $\int_0^a e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)+O(e^{-cs})$; the sentence now names Appendix A.
     Nothing else changed.
+- event: source-corrected
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Provenance sentence added to the solution's opening paragraph, which the card lacked: the
+    published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 1),
+    in the public repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`. Read
+    at its Problem 1 and checked against Appendix A, Problem 1: the case $-1<m\le0$ from the identity
+    $\int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)$ plus repeated integration by parts on the cutoff
+    remainder with vanishing boundary terms, and the general case by differentiating $x^m$ $k$ times,
+    the constant relation $c_{k,m}\Gamma(m-k+1)=\Gamma(m+1)$, and a further $k$ integrations by parts,
+    the terms in which a derivative hits $\eta$ being supported away from zero and $O(s^{-N})$. The
+    card's steps are that argument with the estimates written out. Not checked: anything in the
+    published document outside its Problem 1.
 ---
 
 ::: {.exercise}
@@ -107,6 +121,8 @@ Appendix A sets its asterisk before Problem 5 only, so none stands before this p
 
 ::: {.solution}
 This is Problem 1 of Section 5 of Appendix A of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
+
+The published solution of this Problem is Wang Zirui, *Complete Solutions for Appendix A* (Problem 1), in the repository `wzr-0831/stein-shakarchi-princeton-lectures-in-analysis-solutions`: it treats $-1<m\le0$ by the identity $\int_0^\infty e^{-sx}x^m\,dx=s^{-m-1}\Gamma(m+1)$ and repeated integration by parts on the cutoff remainder with all endpoint terms zero, uniform in the closed half-plane, and passes to general $m>-1$ by choosing $k$ with $k-1<m\le k$, differentiating $x^m$ $k$ times, using $c_{k,m}\Gamma(m-k+1)=\Gamma(m+1)$, and integrating by parts $k$ times, the derivatives that hit $\eta$ being $O(s^{-N})$ to every order. The proof below is that argument; the audit trail records where it is checked against the printed statement.
 Throughout, $\eta\in C^\infty(\RR)$ is supported in a finite interval $[-b,b]$ with $b>0$, and $\eta=1$ on $(-a,a)$ for some $0<a\le b$; put $\chi=1-\eta$, so that $\chi\equiv 0$ on $(-a,a)$ and $\chi\equiv 1$ on $(b,\infty)$. We write $s^{-m-1}$ for the branch of the power on $\CC\setminus(-\infty,0]$ that is positive on $(0,\infty)$, and $\Gamma$ for Euler's gamma function, so that $\Gamma(m+1)=\int_0^\infty e^{-t}t^m\,dt$ for $m>-1$ (Chapter 6, equation (1) and Proposition 1.1). Since $N>0$ is arbitrary, it suffices to prove, for each integer $n\ge 1$, the estimate $O(\abs{s}^{-n})$ with a constant depending only on $m$, $n$ and $\eta$; the assertion for a given $N$ then follows with $n=\max(1,\lceil N\rceil)$. All estimates below are uniform for $\Re(s)\ge 0$ and $\abs{s}\ge 1$, and $s\ne 0$.
 
 ::: pf
