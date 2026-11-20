@@ -10462,3 +10462,26 @@ With this card, every card this stream still owns — the six of §3.F, the two 
 — has a reading recorded at first hand; §4.3 is hlg7's lane and is not in that count. The two open items
 of this stream are the source obligations on `E-HAT-2.B-4` and `E-HAT-4.A-4`, which are searches rather
 than readings.
+
+## 2026-11-20, fifth item: Math Stack Exchange searched for the `E-HAT-4.A-4` solution — nothing there either, and the throttle is over
+
+The search record of 2026-11-19 for `E-HAT-4.A-4` lists two web queries through Ceramic and Linkup, Hatcher's
+own text at two mirrors, Zeng's Penn homework, and the retained solution sets. Math Stack Exchange is not in
+it, and the throttle recorded on 2026-11-15 expired on 2026-11-16, so it is a place not yet searched.
+
+**Searched, 2026-11-20.** `api.stackexchange.com/2.3/search/advanced` on `site=math` with
+`q=automorphisms of a wedge of spheres`: no items. `/2.3/search` with `intitle=wedge of spheres`, twenty
+questions by votes: fourteen questions, none of them about $\operatorname{Aut}$ of a wedge, its self-maps, or
+$\operatorname{GL}_n(\ZZ)$ — they are homology of wedges, homotopy groups of wedges, and embeddings of wedges.
+Quota reads 295 of 300 remaining, so no throttle is in force; the queries were answered, and the answer was
+that the site holds nothing on the exercise.
+
+**Consequence, unchanged.** `E-HAT-4.A-4` stays open as a source obligation. The card's own proof is checked
+and stands, so this closes nothing and blocks nothing; it adds one place to the record with a negative
+result, which is what a later session needs in order not to search it again. `E-HAT-2.B-4` was not searched
+again and remains as recorded.
+
+**Uncertainty.** A text search of one site's index is not a proof that no answer exists there: the API's
+`q` matches question titles and bodies, so an answer inside a question whose title and body do not mention
+the exercise would be missed. The intitle sweep is the check against that, and it covered every question
+with "wedge of spheres" in the title.
