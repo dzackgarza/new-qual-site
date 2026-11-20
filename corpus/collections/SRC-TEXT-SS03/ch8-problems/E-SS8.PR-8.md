@@ -28,10 +28,21 @@ audit:
     $\abs{a_n}\le n/r^{n-1}\to n$; (f) the Koebe function is univalent because
     $z/(1-z)^2=\frac14\bigl(\frac{1+z}{1-z}\bigr)^2-\frac14$ and squaring is injective on the right
     half-plane. Nothing is left in outline.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against the printed item, Chapter 8, Problem 8 on printed p. 259 (PDF p. 278): the asterisk
+    the print sets before "8." is recorded in the remark, and two clauses of the print that the
+    statement had dropped are restored -- the attribution "Bieberbach conjectured that in fact
+    $\abs{a_n}\le n$ for all $n\ge2$; this was proved by deBranges", and the conclusion
+    $\abs{a_n}\le n$ of part (e). The rest of the statement is the print's, parts (a)--(f). Not
+    checked: the argument, which this pass did not re-derive.
+
 ---
 
 ::: {.exercise}
-Let $f$ be injective and holomorphic on the unit disc, with $f(0)=0$ and $f'(0)=1$. Write $f(z)=z+a_2z^2+a_3z^3+\cdots$. This problem proves $\abs{a_n}\leq n$ under the additional assumption that every $a_n$ is real.
+Let $f$ be injective and holomorphic on the unit disc, with $f(0)=0$ and $f'(0)=1$. Write $f(z)=z+a_2z^2+a_3z^3+\cdots$. Problem 1 in Chapter 3 shows that $\abs{a_2}\leq2$. Bieberbach conjectured that in fact $\abs{a_n}\leq n$ for all $n\geq2$; this was proved by deBranges. This problem outlines an argument to prove the conjecture under the additional assumption that the coefficients $a_n$ are real.
 
 (a) For $z=re^{i\theta}$ with $0<r<1$, let $v(r,\theta)=\Im f(re^{i\theta})$. Show that
 $$
@@ -44,9 +55,13 @@ $$
 
 (d) Show that $v(r,\theta)=r\sin\theta[1+O(r)]$ for small $r$. Deduce that $v(r,\theta)\sin\theta\geq0$ for all $0<r<1$ and $0\leq\theta\leq\pi$.
 
-(e) Prove that $\abs{a_nr^n}\leq nr$, then let $r\to1$.
+(e) Prove that $\abs{a_nr^n}\leq nr$, and let $r\to1$ to conclude that $\abs{a_n}\leq n$.
 
 (f) Check that $f(z)=z/(1-z)^2$ meets the hypotheses and has $a_n=n$ for every $n$.
+:::
+
+::: {.remark}
+The book marks this problem with an asterisk (Chapter 8, Problem 8, printed p. 259).
 :::
 
 ::: {.solution}
@@ -123,7 +138,7 @@ Part (e): $\abs{a_n}r^n\le nr$ for $0<r<1$, hence $\abs{a_n}\le n$.
 
 By step [](#s1){.pf-ref}, steps [](#s2){.pf-ref} and [](#s4){.pf-ref},
 $$
-\abs{a_n}r^n=\Bigl|\frac2\pi\int_0^\pi v\sin(n\theta)\,d\theta\Bigr|\le\frac2\pi\int_0^\pi\abs{v}\abs{\sin(n\theta)}\,d\theta\le\frac{2n}{\pi}\int_0^\pi v\sin\theta\,d\theta .
+\abs{a_n}r^n=\abs{\frac2\pi\int_0^\pi v\sin(n\theta)\,d\theta}\le\frac2\pi\int_0^\pi\abs{v}\abs{\sin(n\theta)}\,d\theta\le\frac{2n}{\pi}\int_0^\pi v\sin\theta\,d\theta .
 $$
 By step [](#s1){.pf-ref} with $n=1$ and $a_1=1$, the last integral equals $\frac\pi2\cdot r$. Hence $\abs{a_n}r^n\le nr$, that is $\abs{a_n}\le n/r^{n-1}$ for every $0<r<1$. Letting $r\to1$ gives $\abs{a_n}\le n$.
 
