@@ -27,6 +27,8 @@ Near a zero of order $n$ of the limit, the $n$ zeros of $f_k$ for large $k$ conv
 ::: {.corollary}
 Let $\Omega$ be a connected open set and let $f_k\to f$ [[D-AIQG3|locally uniformly]] on $\Omega$, with each $f_k$ holomorphic and nowhere zero on $\Omega$.
 Then $f$ is nowhere zero on $\Omega$ or identically zero.
+
+This is [@Ahl73, ch. 5, §1.1, Theorem 2], Hurwitz's theorem in the book's numbering: analytic functions that vanish nowhere in a region, converging uniformly on every compact subset, have a limit that is identically zero or vanishes nowhere. The connectedness above is what the region of the theorem provides.
 :::
 
 ::: {.remark}
