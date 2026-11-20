@@ -5,11 +5,15 @@ topics:
 - Finite Morphisms
 - Flatness
 - Going Up
+- Going Down
+- Integral Extensions
 ---
 
 # Finite and flat
 
 A nonconstant morphism of smooth projective curves is finite and flat.
+
+## Going up and going down
 
 [[PR-RJ3P7]]
 
