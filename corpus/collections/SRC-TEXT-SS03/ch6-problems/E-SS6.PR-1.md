@@ -23,6 +23,18 @@ audit:
     p. 179, and its printed words are the card's. The chapter, the problem number and the page
     are now named in the solution's opening sentence. Not checked in this pass: the argument, which
     the edit does not touch.
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Chapter 6, Problem 1 on printed p. 179 (PDF p. 198), running to p. 180 for parts (c) and (d).
+    Part (c) as printed is the one sentence "The second conclusion of Proposition 2.7 can be
+    similarly refined."; the card's block now carries that sentence and then the refinement it asks
+    for, since a bare cross-reference is not a problem statement. The refinement is the right one:
+    Proposition 2.7(ii) is $\abs{\zeta'(s)}\le c_\epsilon\abs{t}^\epsilon$ for $1\le\sigma$, and
+    "(c) refined" in the same way as the printed (b) means $O((\log\abs{t})^2)$ at $\sigma=1$.
+    This item carries no asterisk, and the remark that the card already had records the same history.
+    Not checked: the printed (e) locus of part (d) beyond the text quoted, and the argument itself.
 ---
 
 ::: {.exercise}
@@ -38,7 +50,7 @@ for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta
 
 (b) Show that $\abs{\zeta(1+it)} = O(\log \abs{t})$ as $\abs{t} \to \infty$ by using the previous result with $N = \lfloor \abs{t} \rfloor$.
 
-(c) Show that $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
+(c) The second conclusion of Proposition 2.7 can be similarly refined: show that $\abs{\zeta'(1+it)} = O((\log \abs{t})^2)$ as $\abs{t} \to \infty$.
 
 (d) Show that if $t \neq 0$ and $t$ is fixed, then the partial sums of the series $\sum_{n=1}^\infty n^{-1-it}$ are bounded, but the series does not converge.
 :::
