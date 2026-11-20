@@ -32,6 +32,22 @@ audit:
     kappa is defined explicitly, and the comparison of the two direct limits is carried out with the
     loop-space identity pi_j(Omega Z) = pi_{j+1}(Z). Every macro used is one the preamble defines.
     Not checked this session: the printed page 455 of Hatcher that the card cites.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    Read against Hatcher, §4.F Exercise 3. No defect found, and no step changed. Checked: the
+    mapping telescope's finite sub-telescopes are a closed cover and the open blocks
+    $Z_k\times(k-1,k)$ are pairwise disjoint, so a compact image meets only finitely many of them;
+    the finite telescope deformation retracts onto its last space; hence
+    $\pi_j(T)\cong\varinjlim_n\pi_j(Z_n)$ for $j\ge0$ and the same for $\Omega Z_n$, which with
+    $\pi_j(\Omega Z)=\pi_{j+1}(Z)$ identifies both sides of $\kappa_*$ with
+    $\varinjlim_n\pi_{j+1}(Z_n)$ and makes $\kappa_*$ the identity of that direct limit; $\pi_0$ is
+    handled by the same argument with $j=0$ unbased. That is a weak homotopy equivalence on
+    $\pi_j$ for every $j\ge0$ together with a bijection on path components. One wording change: the
+    lead named the directory holding the retained sets, which the owner's correction of this date
+    replaces by the citation of the exercise. Not checked: no certificate.
+
 ---
 
 ::: {.problem}
@@ -40,7 +56,7 @@ Show that for any sequence $Z_1 \to Z_2 \to \cdots$, the natural map $\varinjlim
 
 ::: {.solution}
 
-The argument is the card's own; no retained solution set in `tmp/sources` covers Section 4.F Exercise 3. The statement was checked against Hatcher, *Algebraic Topology* (2002), §4.F Exercise 3.
+The argument is the card's own; no retained solution set covers §4.F Exercise 3, Sam's set stopping at §4.3, and the statement is §4.F Exercise 3 of Hatcher, *Algebraic Topology* (2002).
 
 For a sequence $Z_{1}\to Z_{2}\to\cdots$ with maps $i_{n}\colon Z_{n}\to Z_{n+1}$, the mapping telescope is $T=\bigsqcup_{n}Z_{n}\times[n-1,n]/\sim$ with $(z,n)\sim(i_{n}z,n)$ where the first copy of $n$ is an endpoint of the $n$-th block and the second of the $(n+1)$-st.
 
