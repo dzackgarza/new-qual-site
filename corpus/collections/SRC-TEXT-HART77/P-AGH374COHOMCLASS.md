@@ -1101,6 +1101,32 @@ audit:
     here, only their statements and hypotheses. Still not established, and not
     claimed on the card: that Yang's Solution 3.7.4(b) closes the transfer he
     asserts through his citation of 3.7.3.
+- event: solution-reviewed
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The remark on published proofs no longer presents de Rham cohomology as a
+    second proof of the divisor formula of step s2. The reader's report on #156
+    is right that the paragraph claimed a proof it did not give: Axiom (A9) of
+    Section 50.22 is a square in total de Rham cohomology, and reaching the
+    identity of s2 from it takes the identification of the de Rham traces
+    lambda with the trace t of III.7.2 and of c_1^{dR} with the dlog class c of
+    part (c), neither of which the remark supplied. The paragraph now states
+    the axiom, says that it concerns the total de Rham groups, names the two
+    identifications, and says that the residue theorem of step s2 is the proof
+    of the formula, in every characteristic. Removed with that claim: the
+    survey of the proof of (A9) - the kernel of restriction killed by
+    c_1^{dR}, the reduction to the class c_1^{dR}(L)^{d-1}, the cycle identity -
+    and the citation of Lemma 50.15.6, which belonged to that survey. Read in
+    this pass: Section 50.22 (tag 0FWC) at its current revision, whose statement
+    of (A9) is the commutativity of the square for a nonempty smooth divisor Y
+    of a nonempty smooth equidimensional projective X of dimension d with
+    lambda_X, lambda_Y as in Axiom (A6), and whose opening paragraph fixes the
+    ground field to be of characteristic 0. Not checked: the proof of (A9) was
+    not re-read in this pass, no statement or step of the exercise changes, and
+    nothing else of the remark is touched. Still not available on the card: a
+    published proof of the formula in every characteristic other than the
+    residue theorem of Lipman.
 ---
 
 ::: {.problem}
@@ -1640,5 +1666,5 @@ where $\alpha_0=\eta_{\PP^2}(L)$ is the class of the line. Since $\alpha_0\ne0$ 
 ::: {.remark title="Published solutions"}
 Parts (a) and (c) are published with complete arguments.  For (a): Yang Pi-Yeh, *Hartshorne Solutions* (9 June 2019), Solution 3.7.4(a), the two-line argument through $H^0(X,\OO_X)\cong H^0(P,\OO_P)\cong k$; Dongryul Kim, Exercise 3.7.4(a), the same argument as the Yoneda pairing evaluated at $1$; and Math StackExchange 1794757, answer by the account S.M. (2016-05-22), which supplies what the other two leave implicit, that $t_P(1)$ can be any element of $k^*$ and that $t_P(1)=1$ is the normalization the answer needs.  For (c): Yang, Solution 3.7.4(c), and Kim, Exercise 3.7.4(c), both verify $d\log(fg)=d\log(f)+d\log(g)$; Kim alone cites Exercise III.4.5 for $\Pic X=H^1(X,\OO_X^*)$, and the citation is the book's own in its statement of III.7.4(c).
 
-Parts (b) and (d) rest on the residue formula of step [](#s2){.pf-ref}, which is the residue theorem of Lipman's Astérisque 117 in the form needed here: (0.6)(a) and (0.6)(d) identify the trace with the sum of the residues at the closed points, and the local computation at a point of the divisor identifies the residue of the $d\log$ class with that of the restricted class. In characteristic zero there is a second proof in the de Rham theory, in the Stacks Project's verification that de Rham cohomology is a Weil cohomology theory: Axiom (A9) of Section 50.22 is the commutativity of the square joining restriction $H^{2d-2}_{dR}(X/k)\to H^{2d-2}_{dR}(Y/k)$, cup product with $c_1^{dR}(\mathcal O_X(Y))$ and the two traces $\lambda_X,\lambda_Y$. That is a statement about the total de Rham group, not about its $(d,d)$ piece, and passing to the piece that carries $\nu$, namely $H^{d-1}(X,\Omega^{d-1}_X)$, takes two identifications the tags read do not make: of $\lambda$ with the trace $t$ of (III.7.2), and of $c_1^{dR}$ with the class $c$ of part (c). Under those identifications the $(d,d)$-component of (A9) is the formula of step [](#s2){.pf-ref}. Its proof uses that the kernel of restriction is killed by $c_1^{dR}(\mathcal O_X(Y))$ (Lemma 50.15.6), reduces to the one class $c_1^{dR}(L)^{d-1}$ for ample $L$, where $H^{2d-2}_{dR}(Y/k)$ is one-dimensional by Poincaré duality for $Y$, and closes with the cycle identity $(Y\to X)_*(c_1(\restrictionof{L}{Y})^{d-1}\cap[Y])=c_1(\mathcal O_X(Y))\cap c_1(L)^{d-1}\cap[X]$. That section works over a field of characteristic $0$, so the residue proof remains the one that holds in every characteristic. Yang's (b) cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; step [](#s4){.pf-ref} carries that argument out, and the transfer his proof asserts is supplied there by pairing the class of the linear subspace, which step [](#s3){.pf-ref} computes, with the class of $Y$, which step [](#s2){.pf-ref} evaluates on the points. His (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s4){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.
+Parts (b) and (d) rest on the residue formula of step [](#s2){.pf-ref}, which is the residue theorem of Lipman's Astérisque 117 in the form needed here: (0.6)(a) and (0.6)(d) identify the trace with the sum of the residues at the closed points, and the local computation at a point of the divisor identifies the residue of the $d\log$ class with that of the restricted class. The Stacks Project's verification that de Rham cohomology is a Weil cohomology theory, which works over a field of characteristic $0$, states a square of the same shape: Axiom (A9) of Section 50.22 is the commutativity of the square joining restriction $H^{2d-2}_{dR}(X/k)\to H^{2d-2}_{dR}(Y/k)$, cup product with $c_1^{dR}(\mathcal O_X(Y))$ and the two traces $\lambda_X,\lambda_Y$. That is a statement about the total de Rham groups. The formula of step [](#s2){.pf-ref} is an identity on the piece that carries $\nu$, namely $H^{d-1}(X,\Omega^{d-1}_X)$, paired with $H^{d-2}(Y,\Omega^{d-2}_Y)$, and passing from (A9) to it takes two identifications: of $\lambda$ with the trace $t$ of (III.7.2), and of $c_1^{dR}$ with the $d\log$ class $c$ of part (c). The proof of the formula is therefore the residue theorem above, in every characteristic. Yang's (b) cuts $Y$ down to its $\deg Y$ points by a general linear subspace, computes the factor there, and closes with the identification that carries the count back to $X$; step [](#s4){.pf-ref} carries that argument out, and the transfer his proof asserts is supplied there by pairing the class of the linear subspace, which step [](#s3){.pf-ref} computes, with the class of $Y$, which step [](#s2){.pf-ref} evaluates on the points. His (b) reads: cut $Y$ down to its $\deg Y$ points by a general linear subspace, which he writes as "a hyperplane $H$ of dimension $n-p$" where the dimension that leaves points is $p$, as $L\cong\PP^p$ of step [](#s4){.pf-ref}; compute the factor there; and then assert, of the morphism $k\cong H^p(H,\Omega_H^p)\cong H^p(X,\Omega_X^p)\cong k$, that it "is just identity from the proof in 3.7.3", a citation to a different identification. His (d) writes $c(\mathcal L_Y)$ as a Čech cocycle and evaluates it in homogeneous coordinates by $\sum f_ix_k\,\partial f_i/\partial x_k=d$, which uses Euler's formula and so treats $X=\PP^n$ only.
 :::
