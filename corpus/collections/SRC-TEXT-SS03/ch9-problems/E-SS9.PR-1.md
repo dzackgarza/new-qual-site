@@ -41,10 +41,19 @@ audit:
       p. 281, and its printed words are the card's. The chapter, the problem number and the page
       are now named in the solution's opening sentence. Not checked in this pass: the argument, which
       the edit does not touch.
+  - event: source-checked
+    by: claude
+    date: 2026-11-20
+    note: >-
+      Asterisk status read from the book: Chapter 9 sets its asterisks before Problems 3 and 4 only,
+      so none stands before Problem 1. The remark records that. The locator by numbered statement is
+      Chapter 9, Problem 1; the page readings recorded in the earlier events are superseded by it,
+      the events themselves standing as written. Not checked in this pass: the wording of the
+      statement and the argument.
 ---
 
 ::: {.exercise}
-This is Problem 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`, printed p. 281; the statement below is its wording.
+This is Problem 1 of Chapter 9 of Stein and Shakarchi, *Complex Analysis*, retained in this repository as `assets/attachments/Stein-Shakarchi-Complex-Analysis.pdf`; the statement below is its wording.
 
 Besides the approach in Section 1.2, there are several alternate ways of dealing with the sum $\sum 1/(z+\omega)^2$, where $\omega = n + m\tau$. For example, one may sum either (a) circularly, (b) first in $n$ then in $m$, (c) or first in $m$ then in $n$.
 
@@ -73,6 +82,10 @@ $$
 exists with $S_3(z) = \wp(z) + c_3$, and $c_3 = \tilde{F}(\tau)$, the reverse of $F$.
 
 [Hint: To prove (a), it suffices to show that $\displaystyle\lim_{R\to\infty}\sum_{1 \leq n^2 + m^2 \leq R^2} 1/(n + m\tau)^2 = c_1$ exists. This is proved by a comparison with $\displaystyle\int_{1 \leq x^2 + y^2 \leq R^2} \frac{dx\,dy}{(x + y\tau)^2} = I(R)$. It can be shown that $I(R) = 0$, which follows because $(x + y\tau)^{-2} = -(\partial/\partial x)(x + y\tau)^{-1}$.]
+:::
+
+::: {.remark}
+The book sets no asterisk before this problem (Chapter 9, Problem 1).
 :::
 
 ::: {.solution}
