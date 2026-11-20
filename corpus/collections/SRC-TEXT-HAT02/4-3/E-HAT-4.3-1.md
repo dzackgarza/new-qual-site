@@ -11,6 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: claude
+  date: 2026-11-20
+  note: >-
+    The sentence in the 2026-11-20 solution-written event, that the §3.1 exercise Hatcher's
+    p. 196 pointer names was not located, is now resolved: it is §3.1 Exercise 11, printed p. 205,
+    the Moore space M(Z_m,n) version of this example, whose part (a) asks for the same conclusion,
+    that the cohomology splitting cannot be natural, and whose part (b) is the dual statement for
+    the inclusion of S^n. Read on printed p. 205; the body now names it. Not checked: part (b)
+    beyond its statement.
 - event: source-corrected
   by: claude
   date: 2026-11-20
@@ -72,7 +82,7 @@ audit:
 ---
 
 ::: {.solution}
-Steven V. Sam's retained set covers this exercise: *Solutions to Algebraic Topology* (2008), §4.3 Exercise 1, printed p.~24 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam computes both reduced homology groups, represents homotopy classes of maps into $\CP^\infty$ by $H^2(\RP^\infty;\ZZ)$ through Theorem 4.57, and states the consistency as $\Hom(\ZZ/2,\ZZ)=0$, that is, the class is seen by $\Ext$ and not by $\Hom$. He does not write out the naturality argument, which is the content of steps [](#natural){.pf-ref} and [](#coefficients){.pf-ref}. Write $\nu$ for the nonzero class of $H^2(\RP^\infty;\ZZ)\cong\ZZ/2$ and $c$ for the generator of $H^2(\CP^\infty;\ZZ)\cong\ZZ$.
+Steven V. Sam's retained set covers this exercise: *Solutions to Algebraic Topology* (2008), §4.3 Exercise 1, printed p.~24 of `tmp/sources/hatcher-solutions-sam-2008.pdf`. Sam computes both reduced homology groups, represents homotopy classes of maps into $\CP^\infty$ by $H^2(\RP^\infty;\ZZ)$ through Theorem 4.57, and states the consistency as $\Hom(\ZZ/2,\ZZ)=0$, that is, the class is seen by $\Ext$ and not by $\Hom$. He does not write out the naturality argument, which is the content of steps [](#natural){.pf-ref} and [](#coefficients){.pf-ref}; Hatcher's own pointer on printed p.~196 to an exercise at the end of §3.1 is to Exercise 11 there, printed p.~205, the Moore-space version of this same example. Write $\nu$ for the nonzero class of $H^2(\RP^\infty;\ZZ)\cong\ZZ/2$ and $c$ for the generator of $H^2(\CP^\infty;\ZZ)\cong\ZZ$.
 
 ::: pf
 
