@@ -12,14 +12,14 @@ topics:
 Let $(X,\mu)$ be a measure space and $f_n, f$ measurable functions on $X$.
 The following theorems justify $\lim_n\int f_n = \int\lim_n f_n$ or an inequality between them.
 
-## Hypotheses and conclusions
+## Which theorem applies?
 
-| Theorem | Hypotheses | Conclusion |
-| --- | --- | --- |
-| Monotone convergence | $0 \leq f_1\leq f_2\leq\cdots$ and $f_n \to f$ a.e. | $\int f_n \to \int f$ |
-| Fatou's lemma | $f_n \geq 0$ | $\int \liminf f_n \leq \liminf \int f_n$ |
-| Dominated convergence | $f_n \to f$ a.e. and $\abs{f_n}\leq g$ with $g \in L^1$ | $\int f_n \to \int f$ and $\norm{f_n - f}_1 \to 0$ |
-| Bounded convergence | $\mu(X)<\infty$, $\abs{f_n} \leq M$, and $f_n \to f$ a.e. | $\int f_n \to \int f$ |
+| Question | Theorem |
+| --- | --- |
+| Is the sequence increasing? | [[T-5K3IO|Monotone convergence]] |
+| Is it nonnegative, with no monotonicity available? | [[T-LDJNS|Fatou's lemma]] |
+| Is one integrable function a bound for every term? | [[T-IJQQG|Dominated convergence]] |
+| Is it uniformly bounded on a space of finite measure? | [[T-TRW6N|Bounded convergence]] |
 
 Bounded convergence is dominated convergence with $g\equiv M$, which is integrable if and only if $\mu(X)<\infty$ (for $M>0$).
 
